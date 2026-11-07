@@ -1,23 +1,23 @@
-// Module ID: 15213
-// Function ID: 15214
+// Module ID: 15247
+// Function ID: 15248
 // Name: UserProfilePrivateInfoBanner
-// Dependencies: [17, 21, 5170, 575, 5781, 1113, 2]
+// Dependencies: [17, 21, 5140, 575, 5751, 1113, 2]
 // Exports: default
 
-// Module 15213 (UserProfilePrivateInfoBanner)
+// Module 15247 (UserProfilePrivateInfoBanner)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5781 */;
-import createStyles from "createStyles" /* 5170 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let obj = { banner: obj2 };
-obj2 = { padding: nativeDefault.space.PX_12, borderRadius: nativeDefault.radii.lg, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_MUTED, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
+obj2 = { padding: nativeDefault.space.PX_12, borderRadius: nativeDefault.radii.md, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_MUTED, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
 let closure_4 = createStyles.createStyles(obj);
 const result = size.fileFinishedImporting("modules/user_profile/native/UserProfilePrivateInfoBanner.tsx");
 

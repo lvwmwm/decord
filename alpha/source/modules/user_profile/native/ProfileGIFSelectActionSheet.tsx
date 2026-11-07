@@ -1,22 +1,22 @@
-// Module ID: 16714
-// Function ID: 16715
+// Module ID: 16762
+// Function ID: 16763
 // Name: ProfileGIFSelectActionSheet
-// Dependencies: [32, 5, 19, 17, 21, 5170, 575, 7241, 16704, 8832, 8830, 8827, 8829, 7247, 5404, 5418, 7405, 1113, 9630, 10378, 2]
+// Dependencies: [32, 5, 19, 17, 21, 5140, 575, 7216, 16752, 8811, 8809, 8806, 8808, 7222, 5374, 5388, 7382, 1113, 9612, 10361, 2]
 // Exports: default
 
-// Module 16714 (ProfileGIFSelectActionSheet)
+// Module 16762 (ProfileGIFSelectActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5418 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7405 */;
-import NitroWheelIcon from "NitroWheelIcon" /* 9630 */;
-import GIFPickerDefault from "GIFPicker" /* 10378 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5388 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7382 */;
+import NitroWheelIcon from "NitroWheelIcon" /* 9612 */;
+import GIFPickerDefault from "GIFPicker" /* 10361 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5;
@@ -52,7 +52,7 @@ export default function ProfileGIFSelectActionSheet(arg0) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -194,7 +194,7 @@ export default function ProfileGIFSelectActionSheet(arg0) {
             const obj10 = src(closure_2[14]);
             obj10.hideActionSheet();
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp53) {
           c5 = 3;

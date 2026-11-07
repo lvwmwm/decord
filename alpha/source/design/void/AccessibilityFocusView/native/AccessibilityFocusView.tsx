@@ -1,12 +1,12 @@
-// Module ID: 16255
-// Function ID: 16256
+// Module ID: 16303
+// Function ID: 16304
 // Name: AccessibilityFocusView
-// Dependencies: [19, 21, 16256, 2]
+// Dependencies: [19, 21, 16304, 2]
 // Exports: default
 
-// Module 16255 (AccessibilityFocusView)
+// Module 16303 (AccessibilityFocusView)
 import Fragment from "Fragment" /* 21 */;
-import AccessibilityFocusNativeComponentDefault from "AccessibilityFocusNativeComponent" /* 16256 */;
+import AccessibilityFocusNativeComponentDefault from "AccessibilityFocusNativeComponent" /* 16304 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

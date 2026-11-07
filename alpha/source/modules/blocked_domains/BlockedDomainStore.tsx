@@ -1,9 +1,9 @@
-// Module ID: 9038
-// Function ID: 9039
+// Module ID: 9020
+// Function ID: 9021
 // Name: BlockedDomainStore
 // Dependencies: [1072, 1363, 1252, 2]
 
-// Module 9038 (BlockedDomainStore)
+// Module 9020 (BlockedDomainStore)
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import shim from "shim" /* 1363 */;

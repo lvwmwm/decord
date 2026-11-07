@@ -1,28 +1,28 @@
-// Module ID: 17048
-// Function ID: 17049
+// Module ID: 17096
+// Function ID: 17097
 // Name: FamilyCenterFeatureRow
-// Dependencies: [19, 17, 21, 5170, 575, 13569, 1113, 2664, 17049, 17050, 14142, 7189, 9264, 17045, 6185, 5781, 7151, 7063, 2]
+// Dependencies: [19, 17, 21, 5140, 575, 13593, 1113, 2664, 17097, 17098, 14167, 7164, 9246, 17093, 6159, 5751, 7126, 7038, 2]
 // Exports: default
 
-// Module 17048 (FamilyCenterFeatureRow)
+// Module 17096 (FamilyCenterFeatureRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl11 from "intl" /* 1113 */;
 import _modDef2664 from "module_2664" /* 2664 */;
-import Text_Text from "Text/Text" /* 5781 */;
-import Stack_Stack from "Stack/Stack" /* 6185 */;
-import TableRow2 from "TableRow" /* 7063 */;
-import TableRowGroup2 from "TableRowGroup" /* 7151 */;
-import EyeIcon from "EyeIcon" /* 7189 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9264 */;
-import useAgeSpecificText4 from "useAgeSpecificText" /* 13569 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 14142 */;
-import QrCodeIcon from "QrCodeIcon" /* 17045 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 17049 */;
-import ChatCheckIcon from "ChatCheckIcon" /* 17050 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import Stack_Stack from "Stack/Stack" /* 6159 */;
+import TableRow2 from "TableRow" /* 7038 */;
+import TableRowGroup2 from "TableRowGroup" /* 7126 */;
+import EyeIcon from "EyeIcon" /* 7164 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9246 */;
+import useAgeSpecificText4 from "useAgeSpecificText" /* 13593 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 14167 */;
+import QrCodeIcon from "QrCodeIcon" /* 17093 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 17097 */;
+import ChatCheckIcon from "ChatCheckIcon" /* 17098 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let header;

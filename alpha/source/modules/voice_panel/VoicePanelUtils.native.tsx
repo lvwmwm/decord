@@ -1,15 +1,15 @@
-// Module ID: 11344
-// Function ID: 11345
+// Module ID: 11326
+// Function ID: 11327
 // Name: VoicePanelUtils
-// Dependencies: [5019, 5920, 6955, 563, 11345, 2]
+// Dependencies: [4989, 5893, 6930, 563, 11327, 2]
 // Exports: useIsAnyVoicePanelOpen, useIsVoicePanelFullscreen, useIsVoicePanelMounted, useIsVoicePanelOpen, useIsVoicePanelShowing
 
-// Module 11344 (VoicePanelUtils)
+// Module 11326 (VoicePanelUtils)
 import useStateFromStores from "useStateFromStores" /* 563 */;
-import StageChannelUnifiedCallExperiment from "StageChannelUnifiedCallExperiment" /* 11345 */;
-import ChannelStore from "ChannelStore" /* 5019 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5920 */;
-import VoicePanelStore from "VoicePanelStore" /* 6955 */;
+import StageChannelUnifiedCallExperiment from "StageChannelUnifiedCallExperiment" /* 11327 */;
+import ChannelStore from "ChannelStore" /* 4989 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5893 */;
+import VoicePanelStore from "VoicePanelStore" /* 6930 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/voice_panel/VoicePanelUtils.native.tsx");

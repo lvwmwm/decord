@@ -1,15 +1,15 @@
-// Module ID: 14908
-// Function ID: 14909
+// Module ID: 14941
+// Function ID: 14942
 // Name: OrbsRewardBackground
-// Dependencies: [32, 19, 5171, 2117, 21, 504, 1092, 5872, 14909, 8965, 14910, 2]
+// Dependencies: [32, 19, 5141, 2117, 21, 504, 1092, 5842, 14942, 8947, 14943, 2]
 // Exports: OrbsRewardBackground
 
-// Module 14908 (OrbsRewardBackground)
-import FastImageDefault from "FastImage" /* 5872 */;
-import _modDef14909 from "module_14909" /* 14909 */;
+// Module 14941 (OrbsRewardBackground)
+import FastImageDefault from "FastImage" /* 5842 */;
+import _modDef14942 from "module_14942" /* 14942 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5171 */;
+import AccessibilityStore from "AccessibilityStore" /* 5141 */;
 import AppStateStore from "AppStateStore" /* 2117 */;
 import Fragment_mod from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -19,7 +19,7 @@ let dependencyMap, importDefault;
 let metroImportAll;
 let metroImportDefault;
 let tmp15;
-const _modDef14910 = tmp15(14910);
+const _modDef14943 = tmp15(14943);
 let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
 let Fragment = Fragment_mod;
@@ -72,7 +72,7 @@ export function OrbsRewardBackground(arg0) {
   }, items2);
   const Fragment = obj3.Fragment;
   const obj4 = { source: obj5, style, resizeMode: "cover", onLoad: callback };
-  obj5 = { uri: _modDef14909 };
+  obj5 = { uri: _modDef14942 };
   const tmp16 = FastImageDefault;
   const children = [closure_7(tmp16, obj4), ];
   let tmp14Result = !stateFromStores && stateFromStores1 === ACTIVE;
@@ -80,8 +80,8 @@ export function OrbsRewardBackground(arg0) {
   const tmp14 = closure_7;
   if (tmp14Result) {
     const obj6 = { source: obj7, style, resizeMode: "cover", onLoad: callback1, disableFocus: true, playInBackground: true, preventsDisplaySleepDuringVideoPlayback: false };
-    obj7 = { uri: _modDef14910 };
-    const VideoComponent = tmp(8965).VideoComponent;
+    obj7 = { uri: _modDef14943 };
+    const VideoComponent = tmp(8947).VideoComponent;
     tmp14Result = tmp14(VideoComponent, obj6);
   }
   children[1] = tmp14Result;

@@ -1,17 +1,17 @@
-// Module ID: 5121
-// Function ID: 5122
+// Module ID: 5091
+// Function ID: 5092
 // Name: EmojiPackStore
-// Dependencies: [1246, 5122, 5123, 504, 572, 2]
+// Dependencies: [1246, 5092, 5093, 504, 572, 2]
 
-// Module 5121 (EmojiPackStore)
+// Module 5091 (EmojiPackStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import DefaultEmojisExperiment2 from "DefaultEmojisExperiment" /* 5122 */;
-import emojiPacksFromServer from "emojiPacksFromServer" /* 5123 */;
+import DefaultEmojisExperiment2 from "DefaultEmojisExperiment" /* 5092 */;
+import emojiPacksFromServer from "emojiPacksFromServer" /* 5093 */;
 import ApexExperimentStore from "ApexExperimentStore" /* 1246 */;
 import size from "module_2" /* 2 */;
 
-const f87998 = (available) => {
+const f88328 = (available) => {
   let found;
   if (available.available) {
     const emojis = available.emojis;
@@ -21,7 +21,7 @@ const f87998 = (available) => {
   }
   return found;
 };
-const f87999 = (id) => id.id;
+const f88329 = (id) => id.id;
 function handleExperimentChange() {
   const DefaultEmojisExperiment = DefaultEmojisExperiment2.DefaultEmojisExperiment;
   enabled = DefaultEmojisExperiment.getConfig({ location: "emoji_pack_store" }, { autoTrackExposure: false }).enabled;
@@ -30,7 +30,7 @@ function handleExperimentChange() {
     let flatMapResult;
     if (enabled) {
       const packs = obj.packs;
-      flatMapResult = packs.flatMap(f87998);
+      flatMapResult = packs.flatMap(f88328);
     } else {
       flatMapResult = items;
     }
@@ -41,7 +41,7 @@ function handleExperimentChange() {
     const _Set = Set;
     const self = this;
     const self2 = this;
-    new Set(items.map(f87999));
+    new Set(items.map(f88329));
     flag = true;
   }
   return flag;
@@ -67,7 +67,7 @@ class EmojiPackStore extends PersistedStore {
     enabled = DefaultEmojisExperiment.getConfig({ location: "emoji_pack_store" }, { autoTrackExposure: false }).enabled;
     if (enabled) {
       packs = obj.packs;
-      flatMapResult = packs.flatMap(f87998);
+      flatMapResult = packs.flatMap(f88328);
     } else {
       flatMapResult = items;
     }
@@ -75,7 +75,7 @@ class EmojiPackStore extends PersistedStore {
       flatMapResult = items;
     }
     items = flatMapResult;
-    new Set(items.map(f87999));
+    new Set(items.map(f88329));
     items = [ApexExperimentStore];
     this.syncWith(items, handleExperimentChange);
   }
@@ -125,7 +125,7 @@ let obj2 = {
     const tmp = enabled;
     if (tmp) {
       const packs = obj.packs;
-      flatMapResult = packs.flatMap(f87998);
+      flatMapResult = packs.flatMap(f88328);
     } else {
       flatMapResult = items;
     }
@@ -133,7 +133,7 @@ let obj2 = {
       flatMapResult = items;
     }
     items = flatMapResult;
-    new Set(items.map(f87999));
+    new Set(items.map(f88329));
   },
   EMOJI_PACKS_FETCH_START: function handleFetchStart() {
     if ("FETCHING" === obj.fetchState) {
@@ -152,7 +152,7 @@ let obj2 = {
     const tmp2 = enabled;
     if (tmp2) {
       const packs2 = obj.packs;
-      flatMapResult = packs2.flatMap(f87998);
+      flatMapResult = packs2.flatMap(f88328);
     } else {
       flatMapResult = items;
     }
@@ -160,7 +160,7 @@ let obj2 = {
       flatMapResult = items;
     }
     items = flatMapResult;
-    new Set(items.map(f87999));
+    new Set(items.map(f88329));
   },
   EMOJI_PACKS_FETCH_FAIL: function handleFetchFail() {
     obj = { fetchState: "FAILED" };

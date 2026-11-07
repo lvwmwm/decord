@@ -1,20 +1,20 @@
-// Module ID: 11530
-// Function ID: 11531
+// Module ID: 11512
+// Function ID: 11513
 // Name: GiftCodeActionCreators
-// Dependencies: [5, 2162, 7819, 7827, 1072, 1387, 572, 6602, 6961, 7818, 6604, 4991, 1242, 1282, 11531, 11532, 2]
+// Dependencies: [5, 2162, 7796, 7804, 1072, 1387, 572, 6577, 6936, 7795, 6579, 4961, 1242, 1282, 11513, 11514, 2]
 // Exports: deliverGiftCodes, reportUnexpectedGiftCodeError, resolveGiftCode
 
-// Module 11530 (GiftCodeActionCreators)
+// Module 11512 (GiftCodeActionCreators)
 import SentryUtilsDefault from "SentryUtils" /* 1242 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
-import errors_V6OrEarlierAPIErrorDefault from "errors/V6OrEarlierAPIError" /* 4991 */;
-import UnknownCollectiblesItemRecord from "UnknownCollectiblesItemRecord" /* 7827 */;
-import CodedLinkActionCreatorsDefault from "CodedLinkActionCreators" /* 11531 */;
-import actions_GiftCodeActionCreators from "actions/GiftCodeActionCreators" /* 11532 */;
+import errors_V6OrEarlierAPIErrorDefault from "errors/V6OrEarlierAPIError" /* 4961 */;
+import UnknownCollectiblesItemRecord from "UnknownCollectiblesItemRecord" /* 7804 */;
+import CodedLinkActionCreatorsDefault from "CodedLinkActionCreators" /* 11513 */;
+import actions_GiftCodeActionCreators from "actions/GiftCodeActionCreators" /* 11514 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ApplicationStore from "ApplicationStore" /* 2162 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7819 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7796 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -47,7 +47,7 @@ let obj = function _resolveGiftCode() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -263,7 +263,7 @@ obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c3;
@@ -314,7 +314,7 @@ obj = {
               c3 = 0;
             }
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp20) {
           closure_2 = tmp20;
@@ -379,7 +379,7 @@ obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c3;
@@ -428,7 +428,7 @@ obj = {
               c3 = 0;
             }
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp16) {
           closure_2 = tmp16;

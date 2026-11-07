@@ -1,12 +1,12 @@
-// Module ID: 15418
-// Function ID: 15419
+// Module ID: 15453
+// Function ID: 15454
 // Name: VoiceActionSheetManager
-// Dependencies: [2130, 5833, 2120, 572, 8030, 2]
+// Dependencies: [2130, 5803, 2120, 572, 8008, 2]
 
-// Module 15418 (VoiceActionSheetManager)
+// Module 15453 (VoiceActionSheetManager)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import MediaEngineStore from "MediaEngineStore" /* 2130 */;
-import VoiceStateStore from "VoiceStateStore" /* 5833 */;
+import VoiceStateStore from "VoiceStateStore" /* 5803 */;
 import LifecycleManager from "LifecycleManager" /* 2120 */;
 import size from "module_2" /* 2 */;
 

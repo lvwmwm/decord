@@ -1,16 +1,16 @@
-// Module ID: 19837
-// Function ID: 19838
+// Module ID: 19906
+// Function ID: 19907
 // Name: JSWatchdogManager
-// Dependencies: [5, 1072, 3, 1089, 7373, 19838, 1242, 1252, 7753, 7750, 7740, 2]
+// Dependencies: [5, 1072, 3, 1089, 7350, 19907, 1242, 1252, 7730, 7727, 7717, 2]
 
-// Module 19837 (JSWatchdogManager)
+// Module 19906 (JSWatchdogManager)
 import LoggerDefault from "Logger" /* 3 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 7753 */;
+import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 7730 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Constants from "Constants" /* 1072 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7373 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7350 */;
 import size from "module_2" /* 2 */;
 
 let c2, c4, c5, closure_2;
@@ -72,7 +72,7 @@ class JSWatchdogManager extends AutomaticLifecycleManager {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c3;
@@ -187,7 +187,7 @@ class JSWatchdogManager extends AutomaticLifecycleManager {
             c3 = 0;
             closure_129_1._pingCompleted = true;
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp80) {
           closure_2 = tmp80;
@@ -217,7 +217,7 @@ class JSWatchdogManager extends AutomaticLifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -274,7 +274,7 @@ class JSWatchdogManager extends AutomaticLifecycleManager {
             }
           }
           c3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp31) {
           c3 = 3;
           throw tmp31;
@@ -315,7 +315,7 @@ class JSWatchdogManager extends AutomaticLifecycleManager {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {

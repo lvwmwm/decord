@@ -1,24 +1,24 @@
-// Module ID: 9568
-// Function ID: 9569
+// Module ID: 9550
+// Function ID: 9551
 // Name: SKUPreview
-// Dependencies: [19, 17, 7823, 1072, 21, 5170, 9569, 575, 8834, 9595, 2111, 9608, 9597, 9620, 9622, 9623, 5754, 5329, 1380, 2]
+// Dependencies: [19, 17, 7800, 1072, 21, 5140, 9551, 575, 8813, 9577, 2111, 9590, 9579, 9602, 9604, 9605, 5724, 5299, 1380, 2]
 // Exports: default
 
-// Module 9568 (SKUPreview)
+// Module 9550 (SKUPreview)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import GlobalUtils from "GlobalUtils" /* 1380 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 2111 */;
-import useToken from "useToken" /* 5754 */;
-import CollectiblesItemRecord from "CollectiblesItemRecord" /* 7823 */;
-import useShopProductItems from "useShopProductItems" /* 8834 */;
-import WishlistItemCardBase from "WishlistItemCardBase" /* 9569 */;
-import ProfileFrameSamplePreviewDefault from "ProfileFrameSamplePreview" /* 9620 */;
-import SlayerStorefrontItemCardDefault from "SlayerStorefrontItemCard" /* 9623 */;
+import useToken from "useToken" /* 5724 */;
+import CollectiblesItemRecord from "CollectiblesItemRecord" /* 7800 */;
+import useShopProductItems from "useShopProductItems" /* 8813 */;
+import WishlistItemCardBase from "WishlistItemCardBase" /* 9551 */;
+import ProfileFrameSamplePreviewDefault from "ProfileFrameSamplePreview" /* 9602 */;
+import SlayerStorefrontItemCardDefault from "SlayerStorefrontItemCard" /* 9605 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 class CollectiblesPreview {
@@ -66,7 +66,7 @@ function CollectiblesSKUPreview(sku) {
   sku = sku.sku;
   let DEFAULT_ITEM_SIZE = sku.size;
   if (DEFAULT_ITEM_SIZE === undefined) {
-    DEFAULT_ITEM_SIZE = sku(9569).DEFAULT_ITEM_SIZE;
+    DEFAULT_ITEM_SIZE = sku(9551).DEFAULT_ITEM_SIZE;
   }
   const items = [sku];
   const memo = react.useMemo(() => closure_5(sku), items);

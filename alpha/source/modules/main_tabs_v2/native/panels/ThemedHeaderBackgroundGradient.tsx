@@ -1,17 +1,17 @@
-// Module ID: 18894
-// Function ID: 18895
+// Module ID: 18944
+// Function ID: 18945
 // Name: ThemedHeaderBackgroundGradient
-// Dependencies: [19, 17, 21, 5170, 575, 1627, 5754, 1090, 5745, 2]
+// Dependencies: [19, 17, 21, 5140, 575, 1627, 5724, 1090, 5715, 2]
 
-// Module 18894 (ThemedHeaderBackgroundGradient)
+// Module 18944 (ThemedHeaderBackgroundGradient)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1090 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import useToken from "useToken" /* 5754 */;
+import useToken from "useToken" /* 5724 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let c3;

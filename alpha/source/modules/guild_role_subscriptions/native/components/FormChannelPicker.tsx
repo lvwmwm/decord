@@ -1,16 +1,16 @@
-// Module ID: 20295
-// Function ID: 20296
+// Module ID: 20364
+// Function ID: 20365
 // Name: FormChannelPicker
-// Dependencies: [19, 5019, 21, 504, 5806, 17494, 8744, 7063, 5781, 1113, 5404, 20296, 2118, 2]
+// Dependencies: [19, 4989, 21, 504, 5776, 17543, 8723, 7038, 5751, 1113, 5374, 20365, 2118, 2]
 // Exports: default
 
-// Module 20295 (FormChannelPicker)
+// Module 20364 (FormChannelPicker)
 import Fragment from "Fragment" /* 21 */;
 import asyncRequire from "asyncRequire" /* 2118 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5404 */;
-import useChannelNameDefault from "useChannelName" /* 5806 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
+import useChannelNameDefault from "useChannelName" /* 5776 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 5019 */;
+import ChannelStore from "ChannelStore" /* 4989 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
@@ -31,15 +31,15 @@ export default function FormChannelPicker(channelId) {
   stateFromStores = obj.useStateFromStores(items, () => ChannelStore.getChannel(channelId), items1);
   let tmp5Result = useChannelNameDefault(stateFromStores);
   if (null != stateFromStores) {
-    const tmpResult = tmp(17494);
+    const tmpResult = tmp(17543);
     let TextIcon = tmpResult.getChannelIconComponentOrDefault(stateFromStores);
   } else {
-    TextIcon = tmp(8744).TextIcon;
+    TextIcon = tmp(8723).TextIcon;
   }
-  const TableRow = tmp(7063).TableRow;
+  const TableRow = tmp(7038).TableRow;
   if (tmp5Result == null) {
     const obj3 = { variant: "body-md/medium", color: "text-muted", children: intl.string(tmp(1113).t.r2ptsz) };
-    const Text = tmp(5781).Text;
+    const Text = tmp(5751).Text;
     intl = tmp(1113).intl;
     tmp5Result = tmp5(Text, obj3);
   }
@@ -49,7 +49,7 @@ export default function FormChannelPicker(channelId) {
     const obj = { guildId: importDefault, selectedChannelId: id, onChannelSelected: dependencyMap };
     id = undefined;
     ActionSheetActionCreatorsDefault;
-    const tmp2 = asyncRequire(20296, dependencyMap.paths);
+    const tmp2 = asyncRequire(20365, dependencyMap.paths);
     if (stateFromStores != null) {
       id = stateFromStores.id;
     }

@@ -1,11 +1,11 @@
-// Module ID: 6058
-// Function ID: 6059
+// Module ID: 6031
+// Function ID: 6032
 // Name: NetworkQuality
-// Dependencies: [6059, 1072, 5928, 2]
+// Dependencies: [6032, 1072, 5901, 2]
 
-// Module 6058 (NetworkQuality)
-import TimeUtils from "TimeUtils" /* 5928 */;
-import NetworkStore from "NetworkStore" /* 6059 */;
+// Module 6031 (NetworkQuality)
+import TimeUtils from "TimeUtils" /* 5901 */;
+import NetworkStore from "NetworkStore" /* 6032 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 

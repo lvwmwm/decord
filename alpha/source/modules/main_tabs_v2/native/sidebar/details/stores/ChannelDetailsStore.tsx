@@ -1,10 +1,10 @@
-// Module ID: 9931
-// Function ID: 9932
+// Module ID: 9915
+// Function ID: 9916
 // Name: ChannelDetailsStore
 // Dependencies: [560, 1259, 2]
 // Exports: deleteChannelDetailsSearchState, deleteChannelStates, getIsChannelDetailsSearchActive, setIsChannelDetailsSearchActive, useChannelDetailsSearchActiveSource, useIsChannelDetailsSearchActive
 
-// Module 9931 (ChannelDetailsStore)
+// Module 9915 (ChannelDetailsStore)
 import react_native from "react-native" /* 1259 */;
 import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;
@@ -31,7 +31,7 @@ export function deleteChannelStates() {
 }
 export function useIsChannelDetailsSearchActive(arg0) {
   let closure_0 = arg0;
-  const f96769 = (isSearchActive) => isSearchActive.isSearchActive;
+  const f97114 = (isSearchActive) => isSearchActive.isSearchActive;
   return obj((states) => {
     states = states.states;
     let value = states.get(closure_0);
@@ -40,13 +40,13 @@ export function useIsChannelDetailsSearchActive(arg0) {
       const merged = Object.assign(closure_2);
       value = obj;
     }
-    return f96770(value);
+    return f97115(value);
   });
 }
 export function useChannelDetailsSearchActiveSource(arg0) {
   let obj;
   let closure_0 = arg0;
-  const f96770 = (searchActiveSource) => searchActiveSource.searchActiveSource;
+  const f97115 = (searchActiveSource) => searchActiveSource.searchActiveSource;
   return obj((states) => {
     states = states.states;
     let value = states.get(closure_0);
@@ -55,7 +55,7 @@ export function useChannelDetailsSearchActiveSource(arg0) {
       const merged = Object.assign(closure_2);
       value = obj;
     }
-    return f96770(value);
+    return f97115(value);
   });
 }
 export function setIsChannelDetailsSearchActive(arg0, isSearchActive, searchActiveSource) {

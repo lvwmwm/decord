@@ -1,10 +1,10 @@
-// Module ID: 16570
-// Function ID: 16571
+// Module ID: 16618
+// Function ID: 16619
 // Name: CertifiedDeviceActionCreators
 // Dependencies: [572, 2]
 // Exports: setCertifiedDevices
 
-// Module 16570 (CertifiedDeviceActionCreators)
+// Module 16618 (CertifiedDeviceActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 

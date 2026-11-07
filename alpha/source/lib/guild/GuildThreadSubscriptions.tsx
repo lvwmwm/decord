@@ -1,9 +1,9 @@
-// Module ID: 7537
-// Function ID: 7538
+// Module ID: 7514
+// Function ID: 7515
 // Name: GuildThreadSubscriptions
 // Dependencies: [1453, 2]
 
-// Module 7537 (GuildThreadSubscriptions)
+// Module 7514 (GuildThreadSubscriptions)
 import LRUCacheDefault from "LRUCache" /* 1453 */;
 import size from "module_2" /* 2 */;
 

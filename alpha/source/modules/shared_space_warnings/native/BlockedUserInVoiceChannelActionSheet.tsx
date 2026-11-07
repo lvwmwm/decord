@@ -1,24 +1,24 @@
-// Module ID: 15876
-// Function ID: 15877
+// Module ID: 15926
+// Function ID: 15927
 // Name: BlockedUserInVoiceChannelActionSheet
-// Dependencies: [19, 17, 5019, 5112, 1385, 15873, 15875, 1072, 21, 5170, 575, 504, 1113, 7449, 5872, 11431, 5781, 7151, 7063, 1187, 12295, 12147, 5788, 5404, 6786, 1252, 2]
+// Dependencies: [19, 17, 4989, 5082, 1385, 15923, 15925, 1072, 21, 5140, 575, 504, 1113, 7426, 5842, 11413, 5751, 7126, 7038, 1187, 12286, 12138, 5758, 5374, 6761, 1252, 2]
 // Exports: default
 
-// Module 15876 (BlockedUserInVoiceChannelActionSheet)
+// Module 15926 (BlockedUserInVoiceChannelActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5404 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6786 */;
-import SharedSpacesWarningStore from "SharedSpacesWarningStore" /* 15873 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6761 */;
+import SharedSpacesWarningStore from "SharedSpacesWarningStore" /* 15923 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 5019 */;
-import RelationshipStore from "RelationshipStore" /* 5112 */;
+import ChannelStore from "ChannelStore" /* 4989 */;
+import RelationshipStore from "RelationshipStore" /* 5082 */;
 import UserStore from "UserStore" /* 1385 */;
-import SharedSpaceWarningConstants from "SharedSpaceWarningConstants" /* 15875 */;
+import SharedSpaceWarningConstants from "SharedSpaceWarningConstants" /* 15925 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

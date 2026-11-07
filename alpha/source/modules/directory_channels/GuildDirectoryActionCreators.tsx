@@ -1,18 +1,18 @@
-// Module ID: 14072
-// Function ID: 14073
+// Module ID: 14097
+// Function ID: 14098
 // Name: GuildDirectoryActionCreators
-// Dependencies: [5, 14059, 14061, 1072, 551, 572, 1282, 6827, 1260, 2]
+// Dependencies: [5, 14084, 14086, 1072, 551, 572, 1282, 6802, 1260, 2]
 // Exports: addDirectoryGuildEntry, clearDirectorySearch, fetchGuildEntriesForIds, removeDirectoryGuildEntry, selectDirectoryCategory, updateDirectoryEntry
 
-// Module 14072 (GuildDirectoryActionCreators)
+// Module 14097 (GuildDirectoryActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6827 */;
-import GuildDirectoryConstants from "GuildDirectoryConstants" /* 14061 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6802 */;
+import GuildDirectoryConstants from "GuildDirectoryConstants" /* 14086 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GuildDirectorySearchStore from "GuildDirectorySearchStore" /* 14059 */;
+import GuildDirectorySearchStore from "GuildDirectorySearchStore" /* 14084 */;
 import debounce_mod from "debounce" /* 551 */;
 import size from "module_2" /* 2 */;
 
@@ -104,7 +104,7 @@ obj = function _fetchGuildEntriesForIds() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -148,7 +148,7 @@ obj = function _fetchGuildEntriesForIds() {
               c5 = 0;
             }
             c7 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp13) {
           closure_4 = tmp13;
@@ -182,7 +182,7 @@ _asyncToGenerator(async (channelId, category_id) => {
       } else if (arg0 === 2) {
         return { value, done: true };
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -230,7 +230,7 @@ _asyncToGenerator(async (channelId, category_id) => {
             c5 = 0;
           }
           c7 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp17) {
         closure_4 = tmp17;
@@ -262,7 +262,7 @@ _asyncToGenerator(async (channelId) => {
       } else if (arg0 === 2) {
         return { value, done: true };
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -304,7 +304,7 @@ _asyncToGenerator(async (channelId) => {
             c4 = 0;
           }
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp17) {
         closure_3 = tmp17;
@@ -338,7 +338,7 @@ let closure_0 = _asyncToGenerator(async (channelId, query) => {
       } else if (arg0 === 2) {
         return { value, done: true };
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -391,7 +391,7 @@ let closure_0 = _asyncToGenerator(async (channelId, query) => {
           c5 = 0;
         }
         c7 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp27) {
         if (0 === c5) {
           c7 = 3;

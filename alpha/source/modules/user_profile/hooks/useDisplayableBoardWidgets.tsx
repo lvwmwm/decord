@@ -1,11 +1,11 @@
-// Module ID: 15143
-// Function ID: 15144
+// Module ID: 15175
+// Function ID: 15176
 // Name: useDisplayableBoardWidgets
-// Dependencies: [19, 7876, 7877, 7873, 15144, 2]
+// Dependencies: [19, 7853, 7854, 7850, 15176, 2]
 // Exports: useDisplayableBoardWidgets
 
-// Module 15143 (useDisplayableBoardWidgets)
-import useUserProfileWidgetsDefault from "useUserProfileWidgets" /* 15144 */;
+// Module 15175 (useDisplayableBoardWidgets)
+import useUserProfileWidgetsDefault from "useUserProfileWidgets" /* 15176 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

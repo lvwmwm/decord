@@ -1,15 +1,15 @@
-// Module ID: 16485
-// Function ID: 16486
+// Module ID: 16533
+// Function ID: 16534
 // Name: AnalyticsLogStore
-// Dependencies: [502, 7963, 1265, 1266, 504, 572, 2]
+// Dependencies: [502, 7941, 1265, 1266, 504, 572, 2]
 
-// Module 16485 (AnalyticsLogStore)
+// Module 16533 (AnalyticsLogStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import FingerprintUtils from "FingerprintUtils" /* 1265 */;
 import v1 from "v1" /* 1266 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import DeveloperExperimentStore from "DeveloperExperimentStore" /* 7963 */;
+import DeveloperExperimentStore from "DeveloperExperimentStore" /* 7941 */;
 import size from "module_2" /* 2 */;
 
 let closure_4 = 0;

@@ -1,22 +1,22 @@
-// Module ID: 11204
-// Function ID: 11205
+// Module ID: 5881
+// Function ID: 5882
 // Name: Spoiler
-// Dependencies: [32, 19, 17, 1072, 11199, 21, 5170, 1377, 575, 561, 560, 5229, 1187, 2]
+// Dependencies: [32, 19, 17, 1072, 5882, 21, 1377, 5140, 575, 561, 560, 5199, 1187, 2]
 // Exports: SpoilerRevealProvider, default
 
-// Module 11204 (Spoiler)
+// Module 5881 (Spoiler)
 import Fragment from "Fragment" /* 21 */;
 import _mod560 from "module_560" /* 560 */;
 import _mod561 from "module_561" /* 561 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import native from "native" /* 5229 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11199 */;
+import native from "native" /* 5199 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 5882 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles from "createStyles" /* 5170 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
+import createStyles from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -65,16 +65,17 @@ function SharedSpoiler(arg0) {
 const EMOJI_CHAT_SIZE = Constants.EMOJI_CHAT_SIZE;
 const MUTED_OPACITY_CONTENT = RedesignChannelListConstants.MUTED_OPACITY_CONTENT;
 const jsx = Fragment.jsx;
-const createLegacyClassComponentStyles = createStyles.createLegacyClassComponentStyles;
 let str = "transparent";
 if (PlatformUtils.isAndroid()) {
   str = "rgba(0,0,0,0.0019607844)";
 }
+let context = react.createContext(false);
 let obj = { spoiler: obj2, placeholder: size, spoilerRevealed: { color: nativeDefault.colors.TEXT_DEFAULT, backgroundColor: nativeDefault.colors.SPOILER_REVEALED_BACKGROUND }, muted: { opacity: MUTED_OPACITY_CONTENT } };
 obj2 = { color: str, backgroundColor: nativeDefault.colors.SPOILER_HIDDEN_BACKGROUND };
+const createLegacyClassComponentStyles = createStyles.createLegacyClassComponentStyles;
 size = { width: EMOJI_CHAT_SIZE, height: EMOJI_CHAT_SIZE, backgroundColor: nativeDefault.colors.SPOILER_HIDDEN_BACKGROUND };
 ({ color: nativeDefault.colors.TEXT_DEFAULT, backgroundColor: nativeDefault.colors.SPOILER_REVEALED_BACKGROUND });
-const metroImportDefault = createLegacyClassComponentStyles(obj);
+const metroImportAll = createLegacyClassComponentStyles(obj);
 const redux = react.createContext(null);
 const PureComponent = react.PureComponent;
 class Spoiler extends PureComponent {
@@ -103,10 +104,11 @@ class Spoiler extends PureComponent {
   render() {
     let handleTap;
     let items1;
+    let obj2;
     let placeholder;
     let tmp2;
     const self = this;
-    let tmp = closure_7(this.context);
+    let tmp = closure_8(this.context);
     _require = tmp;
     let revealed = this.props.revealed;
     if (revealed == null) {
@@ -125,9 +127,10 @@ class Spoiler extends PureComponent {
       return null;
     } else {
       const Children1 = tmp4.Children;
+      let tmp10 = revealed;
       let mapped = Children1.map(children, (type) => {
         let validElement;
-        const f99956 = (props) => {
+        const f89643 = (props) => {
           let Children;
           let cloneElement;
           let items;
@@ -139,7 +142,7 @@ class Spoiler extends PureComponent {
             if (Array.isArray(style)) {
               flattenResult = closure_2_5.flatten(style);
             }
-            const obj = { children: Children.map(props.props.children, f99956), style: items, onPress: "Array" };
+            const obj = { children: Children.map(props.props.children, f89643), style: items, onPress: "r" };
             ({ Children, cloneElement } = tmp);
             items = [flattenResult, spoiler.spoiler];
             return cloneElement(props, obj);
@@ -175,7 +178,7 @@ class Spoiler extends PureComponent {
             mapped = type;
             if (!revealed) {
               const Children = tmp.Children;
-              mapped = Children.map(type, f99956);
+              mapped = Children.map(type, f89643);
             }
           }
           tmp10 = mapped;
@@ -185,17 +188,18 @@ class Spoiler extends PureComponent {
       const items2 = [items1, ];
       let muted = self.props.muted;
       const LegacyText = require("native").LegacyText;
-      const tmp7 = jsx;
       if (muted) {
         muted = tmp.muted;
       }
-      let obj = { accessibilityRole: "button", style: items2, onPress: handleTap, children: mapped };
+      let obj = { accessibilityRole: "button", style: items2, onPress: handleTap, children: tmp8(context.Provider, obj2) };
       items2[1] = muted;
       handleTap = undefined;
       if (!self.props.disableReveal) {
         handleTap = self.handleTap;
       }
-      return tmp7(LegacyText, obj);
+      let tmp6 = context;
+      obj2 = { value: !revealed, children: mapped };
+      return jsx(LegacyText, obj);
     }
   }
 }
@@ -207,7 +211,7 @@ const result = size.fileFinishedImporting("modules/markup/native/Spoiler.tsx");
 export default function NativeSpoiler(id) {
   id = id.id;
   const merged = Object.assign(id, Object.assign({ id: 0 }));
-  const context = react.useContext(redux);
+  context = react.useContext(redux);
   if (null != id) {
     let tmp4;
     if (null != context) {
@@ -219,6 +223,8 @@ export default function NativeSpoiler(id) {
   const merged2 = Object.assign(merged);
   tmp4 = <Spoiler />;
 };
+export const SPOILER_HIDDEN_TEXT_COLOR = str;
+export const SpoilerHiddenContext = context;
 export function SpoilerRevealProvider(children) {
   return <redux.Provider value={_slicedToArray(react.useState(createSpoilerStore), 1)[0]}>{arg0.children}</redux.Provider>;
 }

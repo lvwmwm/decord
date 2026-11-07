@@ -1,12 +1,12 @@
-// Module ID: 7200
-// Function ID: 7201
+// Module ID: 7175
+// Function ID: 7176
 // Name: FreeFormLabel
-// Dependencies: [19, 21, 5781, 2]
+// Dependencies: [19, 21, 5751, 2]
 // Exports: default
 
-// Module 7200 (FreeFormLabel)
+// Module 7175 (FreeFormLabel)
 import Fragment from "Fragment" /* 21 */;
-import Text_Text from "Text/Text" /* 5781 */;
+import Text_Text from "Text/Text" /* 5751 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -1,18 +1,18 @@
-// Module ID: 16768
-// Function ID: 16769
+// Module ID: 16816
+// Function ID: 16817
 // Name: UserProfilePrimaryGuildEditButton
-// Dependencies: [19, 5041, 8485, 21, 5170, 575, 504, 16769, 14934, 8828, 8827, 1113, 1377, 5781, 16734, 5404, 16770, 2118, 7045, 9393, 2]
+// Dependencies: [19, 5011, 8464, 21, 5140, 575, 504, 16817, 14967, 8807, 8806, 1113, 1377, 5751, 16782, 5374, 16818, 2118, 7020, 9375, 2]
 // Exports: default
 
-// Module 16768 (UserProfilePrimaryGuildEditButton)
+// Module 16816 (UserProfilePrimaryGuildEditButton)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import asyncRequire from "asyncRequire" /* 2118 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5404 */;
-import GuildTagConstants from "GuildTagConstants" /* 8485 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
+import GuildTagConstants from "GuildTagConstants" /* 8464 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 5041 */;
-import createStyles from "createStyles" /* 5170 */;
+import GuildStore from "GuildStore" /* 5011 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -142,7 +142,7 @@ export default function UserProfilePrimaryGuildEditButton(arg0) {
     return <UserProfileEditFormButton label={intl2.string(pendingPrimaryGuildId(handleSelectPrimaryGuild[11]).t["DUD+5n"])} buttonText={name} accessibilityValue={obj5} onPress={function handleOpenSelectPrimaryGuild() {
       const obj = ActionSheetActionCreatorsDefault;
       const obj2 = { availableGuilds: userAvailableGuildsWithTags, selectedGuildId: pendingPrimaryGuildId, onSelectGuild: handleSelectPrimaryGuild };
-      obj.openLazy(asyncRequire(16770, dependencyMap.paths), "UserPrimaryGuildListBottomSheet", obj2);
+      obj.openLazy(asyncRequire(16818, dependencyMap.paths), "UserPrimaryGuildListBottomSheet", obj2);
     }} leading={tmp23Result} trailing={tmp23Result2} disabled={disabled} />;
   }
   return null;

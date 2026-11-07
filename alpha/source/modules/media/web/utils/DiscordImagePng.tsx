@@ -1,9 +1,9 @@
-// Module ID: 8367
-// Function ID: 8368
+// Module ID: 8346
+// Function ID: 8347
 // Name: DiscordImagePng
-// Dependencies: [5, 2114, 8368, 2]
+// Dependencies: [5, 2114, 8347, 2]
 
-// Module 8367 (DiscordImagePng)
+// Module 8346 (DiscordImagePng)
 import _modDef2114 from "module_2114" /* 2114 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
@@ -65,7 +65,7 @@ class DiscordImagePng {
           const obj = { value, done: true };
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         while (true) {

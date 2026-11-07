@@ -1,18 +1,18 @@
-// Module ID: 11313
-// Function ID: 11314
+// Module ID: 11295
+// Function ID: 11296
 // Name: SavedMessageUtils
-// Dependencies: [5, 19, 5023, 502, 5019, 1072, 1113, 2166, 504, 7572, 7508, 2]
+// Dependencies: [5, 19, 4993, 502, 4989, 1072, 1113, 2166, 504, 7549, 7485, 2]
 // Exports: savedMessageJumpToMessage, useDueInString, useSavedMessageChannel
 
-// Module 11313 (SavedMessageUtils)
+// Module 11295 (SavedMessageUtils)
 import intl2 from "intl" /* 1113 */;
 import _modDef2166 from "module_2166" /* 2166 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7572 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7549 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ChannelRecord from "ChannelRecord" /* 5023 */;
+import ChannelRecord from "ChannelRecord" /* 4993 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 5019 */;
+import ChannelStore from "ChannelStore" /* 4989 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -38,7 +38,7 @@ let obj = function _savedMessageJumpToMessage() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c5;
@@ -85,11 +85,11 @@ let obj = function _savedMessageJumpToMessage() {
             if (null == guildId.recipients) {
               c5 = 0;
               c7 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             } else if (guildId.recipients.length > 1) {
               c5 = 0;
               c7 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             } else {
               const recipients = guildId.recipients;
               const obj2 = closure_131_1(closure_131_2[9]);
@@ -121,7 +121,7 @@ let obj = function _savedMessageJumpToMessage() {
         }
         guildId = tmp16(CHANNEL(guildId1, closure_0.saveData.channelId, closure_0.saveData.messageId), { openChannel: true });
         c7 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp24) {
         let closure_4 = tmp24;
         if (0 === c5) {

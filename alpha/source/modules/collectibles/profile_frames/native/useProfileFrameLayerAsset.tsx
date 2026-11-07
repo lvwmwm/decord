@@ -1,11 +1,11 @@
-// Module ID: 8887
-// Function ID: 8888
+// Module ID: 8868
+// Function ID: 8869
 // Name: useProfileFrameLayerAsset
-// Dependencies: [5, 32, 19, 17, 7460, 2105, 2022, 8888, 8889, 2]
+// Dependencies: [5, 32, 19, 17, 7437, 2105, 2022, 8869, 8870, 2]
 // Exports: default, isProfileFrameLayerShown, usePreloadLayerImages
 
-// Module 8887 (useProfileFrameLayerAsset)
-import Constants from "Constants" /* 7460 */;
+// Module 8868 (useProfileFrameLayerAsset)
+import Constants from "Constants" /* 7437 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -16,7 +16,7 @@ let c4, c5;
 
 let metroImportDefault;
 let metroRequire;
-const f94439 = (arg0) => {
+const f94778 = (arg0) => {
   closure_0 = arg0;
   size = size.getSize(closure_0, (arg0, arg1) => {
     if (arg0 > 0) {
@@ -43,7 +43,7 @@ function measureProfileFrameLayer(arg0) {
     if (null == value2) {
       const self = this;
       const self2 = this;
-      const promise = new Promise(f94439);
+      const promise = new Promise(f94778);
       const cleanupPromise = promise.finally(() => set.delete(closure_0));
       const result = obj.set(arg0, cleanupPromise);
       value2 = cleanupPromise;
@@ -70,7 +70,7 @@ let obj = function _preloadLayer() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -125,7 +125,7 @@ let obj = function _preloadLayer() {
             closure_131_11.add(uri);
           }
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp22) {
         c5 = 3;
@@ -189,7 +189,7 @@ export default function useProfileFrameLayerAsset(width) {
             if (null == resolved) {
               const self = this;
               const self2 = this;
-              const promise = new Promise(f94439);
+              const promise = new Promise(f94778);
               const cleanupPromise = promise.finally(() => set.delete(closure_0));
               let result = obj.set(tmp, cleanupPromise);
               resolved = cleanupPromise;

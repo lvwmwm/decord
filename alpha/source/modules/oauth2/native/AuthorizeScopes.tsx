@@ -1,16 +1,16 @@
-// Module ID: 14818
-// Function ID: 14819
+// Module ID: 14851
+// Function ID: 14852
 // Name: AuthorizeScopes
-// Dependencies: [19, 17, 21, 5170, 1113, 7183, 575, 7424, 5781, 5769, 9849, 5805, 9002, 2]
+// Dependencies: [19, 17, 21, 5140, 1113, 7158, 575, 7401, 5751, 5739, 9833, 5775, 8984, 2]
 // Exports: default
 
-// Module 14818 (AuthorizeScopes)
+// Module 14851 (AuthorizeScopes)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -46,17 +46,17 @@ function Scope(arg0) {
   const obj2 = { style: tmp.iconWrapper, accessible: false, importantForAccessibility: "no-hide-descendants", children: tmp10Result };
   if (isFake) {
     const obj3 = { style: tmp.fakeScopeIcon, color: nativeDefault.colors.TEXT_MUTED, size: "refresh_sm" };
-    const CircleXIcon = tmp6(7183).CircleXIcon;
+    const CircleXIcon = tmp6(7158).CircleXIcon;
     tmp10Result = tmp10(CircleXIcon, obj3);
   } else {
     const obj4 = { color: nativeDefault.colors.TEXT_MUTED, size: "refresh_sm" };
-    const CircleCheckIcon = tmp6(7424).CircleCheckIcon;
+    const CircleCheckIcon = tmp6(7401).CircleCheckIcon;
     tmp10Result = tmp10(CircleCheckIcon, obj4);
   }
   items = [React3(View, obj2), ];
   let str3;
   const obj5 = { style: tmp.scope, children: items1 };
-  const Text = tmp6(5781).Text;
+  const Text = tmp6(5751).Text;
   if (isFake) {
     str3 = "text-muted";
   }
@@ -64,7 +64,7 @@ function Scope(arg0) {
   let tmp10Result2 = null;
   if (null != error) {
     const obj6 = { variant: "body-xs/normal", children: error };
-    tmp10Result2 = tmp10(tmp6(5781).Text, obj6);
+    tmp10Result2 = tmp10(tmp6(5751).Text, obj6);
   }
   items1[1] = tmp10Result2;
   items[1] = hasOwnProperty(View, obj5);
@@ -108,14 +108,14 @@ export default function AuthorizeScopes(accountScopes) {
       PZpY9c = t["1Hz+Sl"];
       tmp5 = tmp15;
     }
-    let hasItem = integrationType === tmp5(5805).ApplicationIntegrationType.USER_INSTALL;
+    let hasItem = integrationType === tmp5(5775).ApplicationIntegrationType.USER_INSTALL;
     if (hasItem) {
-      hasItem = requestedScopes.includes(tmp5(9002).OAuth2Scopes.APPLICATIONS_COMMANDS);
+      hasItem = requestedScopes.includes(tmp5(8984).OAuth2Scopes.APPLICATIONS_COMMANDS);
     }
     const tmp8 = closure_5;
     let obj = { style: tmp.scopesContainer, children: items };
     const obj2 = { variant: "heading-xs/medium", color: "text-default", children: intl.format(PZpY9c, obj3) };
-    const Text = tmp5(5781).Text;
+    const Text = tmp5(5751).Text;
     intl = tmp5(1113).intl;
     obj3 = { application: application.name };
     items = [closure_4(Text, obj2), ];

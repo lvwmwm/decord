@@ -1,13 +1,13 @@
-// Module ID: 9605
-// Function ID: 9606
+// Module ID: 9587
+// Function ID: 9588
 // Name: ProfileEffectLayer
-// Dependencies: [19, 17, 21, 9606, 9602, 2]
+// Dependencies: [19, 17, 21, 9588, 9584, 2]
 
-// Module 9605 (ProfileEffectLayer)
+// Module 9587 (ProfileEffectLayer)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import ProfileEffectUtils from "ProfileEffectUtils" /* 9602 */;
-import APNGPlayer2 from "APNGPlayer" /* 9606 */;
+import ProfileEffectUtils from "ProfileEffectUtils" /* 9584 */;
+import APNGPlayer2 from "APNGPlayer" /* 9588 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 

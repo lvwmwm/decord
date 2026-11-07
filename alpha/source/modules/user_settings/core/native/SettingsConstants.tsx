@@ -1,9 +1,9 @@
-// Module ID: 8524
-// Function ID: 8525
+// Module ID: 8503
+// Function ID: 8504
 // Name: SettingsConstants
 // Dependencies: [2]
 
-// Module 8524 (SettingsConstants)
+// Module 8503 (SettingsConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/user_settings/core/native/SettingsConstants.tsx");

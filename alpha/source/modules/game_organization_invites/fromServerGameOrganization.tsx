@@ -1,10 +1,10 @@
-// Module ID: 11524
-// Function ID: 11525
+// Module ID: 11506
+// Function ID: 11507
 // Name: fromServerGameOrganization
 // Dependencies: [2]
 // Exports: fromServerGameOrganizationApplication, fromServerGameOrganizationCharacter, fromServerGameOrganizationGuild
 
-// Module 11524 (fromServerGameOrganization)
+// Module 11506 (fromServerGameOrganization)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/game_organization_invites/fromServerGameOrganization.tsx");

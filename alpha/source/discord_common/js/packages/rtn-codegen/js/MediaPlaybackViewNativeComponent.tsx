@@ -1,9 +1,9 @@
-// Module ID: 8970
-// Function ID: 8971
+// Module ID: 8952
+// Function ID: 8953
 // Name: MediaPlaybackViewNativeComponent
 // Dependencies: [106, 65, 114, 2]
 
-// Module 8970 (MediaPlaybackViewNativeComponent)
+// Module 8952 (MediaPlaybackViewNativeComponent)
 import renderElement from "renderElement" /* 114 */;
 import DynamicallyInjectedByGestureHandler from "DynamicallyInjectedByGestureHandler" /* 106 */;
 import module_65 from "module_65" /* 65 */;

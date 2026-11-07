@@ -1,15 +1,15 @@
-// Module ID: 9610
-// Function ID: 9611
+// Module ID: 9592
+// Function ID: 9593
 // Name: CutoutableAvatarDecoration
-// Dependencies: [19, 17, 5171, 21, 563, 1411, 1377, 9611, 9607, 5872, 2]
+// Dependencies: [19, 17, 5141, 21, 563, 1411, 1377, 9593, 9589, 5842, 2]
 // Exports: default
 
-// Module 9610 (CutoutableAvatarDecoration)
+// Module 9592 (CutoutableAvatarDecoration)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import AvatarUtils from "AvatarUtils" /* 1411 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5171 */;
+import AccessibilityStore from "AccessibilityStore" /* 5141 */;
 import size_mod from "module_2" /* 2 */;
 
 const View = react_native.View;

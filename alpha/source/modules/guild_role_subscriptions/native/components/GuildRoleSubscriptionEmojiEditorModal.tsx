@@ -1,21 +1,21 @@
-// Module ID: 20299
-// Function ID: 20300
+// Module ID: 20368
+// Function ID: 20369
 // Name: GuildRoleSubscriptionEmojiEditorModal
-// Dependencies: [5, 32, 19, 17, 5125, 21, 5170, 575, 20291, 504, 5872, 1411, 20297, 1113, 6116, 6188, 7062, 20287, 5781, 2]
+// Dependencies: [5, 32, 19, 17, 5095, 21, 5140, 575, 20360, 504, 5842, 1411, 20366, 1113, 6090, 6162, 7037, 20356, 5751, 2]
 // Exports: default
 
-// Module 20299 (GuildRoleSubscriptionEmojiEditorModal)
+// Module 20368 (GuildRoleSubscriptionEmojiEditorModal)
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 6116 */;
-import AlertDefault from "Alert" /* 6188 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 6090 */;
+import AlertDefault from "Alert" /* 6162 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SubscriptionRoleStore from "SubscriptionRoleStore" /* 5125 */;
+import SubscriptionRoleStore from "SubscriptionRoleStore" /* 5095 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let c1, c4, roles, set;
@@ -71,7 +71,7 @@ export default function GuildRoleSubscriptionEmojiEditorModal(guildId) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c3;
@@ -109,7 +109,7 @@ export default function GuildRoleSubscriptionEmojiEditorModal(guildId) {
               c3 = 0;
             }
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp11) {
           let closure_2 = tmp11;

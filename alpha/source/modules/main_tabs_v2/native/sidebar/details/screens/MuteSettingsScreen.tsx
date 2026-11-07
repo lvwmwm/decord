@@ -1,22 +1,22 @@
-// Module ID: 19249
-// Function ID: 19250
+// Module ID: 19308
+// Function ID: 19309
 // Name: MuteSettingsScreen
-// Dependencies: [19, 17, 5019, 5041, 5112, 1385, 9919, 1072, 21, 5170, 575, 8292, 7374, 7369, 11221, 7063, 1187, 11223, 5781, 1113, 5806, 11224, 1499, 11291, 11220, 1500, 563, 1377, 9918, 1627, 2]
+// Dependencies: [19, 17, 4989, 5011, 5082, 1385, 9903, 1072, 21, 5140, 575, 8271, 7351, 7346, 11203, 7038, 1187, 11205, 5751, 1113, 5776, 11206, 1499, 11273, 11202, 1500, 563, 1377, 9902, 1627, 2]
 
-// Module 19249 (MuteSettingsScreen)
+// Module 19308 (MuteSettingsScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import react_native2 from "react-native" /* 9919 */;
-import MuteSettingsUtils from "MuteSettingsUtils" /* 11221 */;
-import threadActionSheets from "threadActionSheets" /* 11291 */;
+import react_native2 from "react-native" /* 9903 */;
+import MuteSettingsUtils from "MuteSettingsUtils" /* 11203 */;
+import threadActionSheets from "threadActionSheets" /* 11273 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 5019 */;
-import GuildStore from "GuildStore" /* 5041 */;
-import RelationshipStore_mod from "RelationshipStore" /* 5112 */;
+import ChannelStore from "ChannelStore" /* 4989 */;
+import GuildStore from "GuildStore" /* 5011 */;
+import RelationshipStore_mod from "RelationshipStore" /* 5082 */;
 import UserStore from "UserStore" /* 1385 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -52,21 +52,21 @@ function UnmuteOptions(channel) {
     obj.handleUnmutePress(channel.id, channel.guild_id);
   }, items);
   const obj2 = { icon: closure_10(Icon, obj3), label: closure_10(Text, obj4), onPress: callback, start: true, end: true };
-  const TableRow = channel(7063).TableRow;
-  obj3 = { disableColor: true, source: navigation(11223) };
+  const TableRow = channel(7038).TableRow;
+  obj3 = { disableColor: true, source: navigation(11205) };
   Icon = channel(1187).Icon;
   obj4 = { variant: "body-md/semibold", color: "mobile-text-heading-primary", children: format(prop, obj5) };
-  Text = channel(5781).Text;
+  Text = channel(5751).Text;
   const intl = channel(1113).intl;
   format = intl.format;
   obj5 = { name: obj6.computeChannelName(channel, UserStore, RelationshipStore, true) };
   prop = channel(1113).t["eC+9rj"];
-  obj6 = channel(5806);
+  obj6 = channel(5776);
   items1 = [closure_10(TableRow, obj2), ];
   const obj7 = { muteConfig, type: isPrivateResult ? MuteSettingType.DM : MuteSettingType.CHANNEL };
-  const tmp7 = navigation(11224);
+  const tmp7 = navigation(11206);
   isPrivateResult = channel.isPrivate();
-  MuteSettingType = channel(11224).MuteSettingType;
+  MuteSettingType = channel(11206).MuteSettingType;
   items1[1] = closure_10(tmp7, obj7);
   return closure_11(View, obj);
 }

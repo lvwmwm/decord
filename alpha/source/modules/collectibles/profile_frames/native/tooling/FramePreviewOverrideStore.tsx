@@ -1,15 +1,15 @@
-// Module ID: 8868
-// Function ID: 8869
+// Module ID: 8847
+// Function ID: 8848
 // Name: FramePreviewOverrideStore
-// Dependencies: [5, 17, 8869, 3, 8870, 1149, 8871, 8875, 560, 2]
+// Dependencies: [5, 17, 8848, 3, 8849, 1149, 8850, 8854, 560, 2]
 
-// Module 8868 (FramePreviewOverrideStore)
+// Module 8847 (FramePreviewOverrideStore)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
 import react_nativeDefault from "react-native" /* 1149 */;
-import FileManagerUtils from "FileManagerUtils" /* 8870 */;
+import FileManagerUtils from "FileManagerUtils" /* 8849 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import FrameOverrideConstants from "FrameOverrideConstants" /* 8869 */;
+import FrameOverrideConstants from "FrameOverrideConstants" /* 8848 */;
 import module_560 from "module_560" /* 560 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -53,7 +53,7 @@ let obj = function _readManifest() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -117,7 +117,7 @@ obj = function _buildOverride() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       while (true) {
@@ -317,7 +317,7 @@ obj = module_560.create((arg0) => {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c3;
@@ -359,7 +359,7 @@ obj = module_560.create((arg0) => {
             const message2 = closure_2;
             if (isStale()) {
               c5 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             } else {
               const _Error = Error;
               message = message2 instanceof Error;
@@ -388,7 +388,7 @@ obj = module_560.create((arg0) => {
               if (isStale()) {
                 c3 = 0;
                 c5 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               } else if (null == closure_2) {
                 message = closure_129_0;
                 closure_129_0({ status: "error", error: "No frame on device. Ask Cap to push one (or run pushFrameOverride.mjs)." });
@@ -417,7 +417,7 @@ obj = module_560.create((arg0) => {
             if (isStale()) {
               c3 = 0;
               c5 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             } else {
               message = closure_129_0;
               obj = { override, status: "idle", error: null };
@@ -426,7 +426,7 @@ obj = module_560.create((arg0) => {
             }
           }
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp36) {
         closure_2 = tmp36;

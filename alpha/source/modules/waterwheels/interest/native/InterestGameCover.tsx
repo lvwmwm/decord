@@ -1,19 +1,20 @@
-// Module ID: 18706
-// Function ID: 18707
+// Module ID: 18753
+// Function ID: 18754
 // Name: InterestGameCover
-// Dependencies: [32, 19, 17, 18705, 21, 575, 5170, 18707, 5872, 18708, 2]
+// Dependencies: [32, 19, 17, 18752, 21, 575, 5752, 5140, 18754, 5842, 18755, 2]
 // Exports: default
 
-// Module 18706 (InterestGameCover)
+// Module 18753 (InterestGameCover)
 import nativeDefault from "native" /* 575 */;
-import FastImageDefault from "FastImage" /* 5872 */;
-import InterestGamePickerConstants from "InterestGamePickerConstants" /* 18705 */;
-import useInterestCoverColor from "useInterestCoverColor" /* 18707 */;
+import TextVariants from "TextVariants" /* 5752 */;
+import FastImageDefault from "FastImage" /* 5842 */;
+import InterestGamePickerConstants from "InterestGamePickerConstants" /* 18752 */;
+import useInterestCoverColor from "useInterestCoverColor" /* 18754 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let StyleSheet;
@@ -27,29 +28,26 @@ let obj4;
 let obj5;
 let rect;
 let rect1;
-function NoCover(arg0) {
+function NoCover(imageWidth) {
   let PX_32;
-  let c1;
   let compact;
   let game;
   let items1;
   let items2;
   let items3;
+  let num;
   let obj10;
   let obj3;
   let obj5;
   let obj6;
   let obj8;
-  let tmp11;
-  let tmp13;
-  let tmp14;
-  let tmp32;
   let tmp4;
   let tmp4Result;
   let width;
-  ({ game, width, compact } = arg0);
+  ({ game, width, compact } = imageWidth);
   let iconURL;
-  c1 = undefined;
+  let closure_1;
+  imageWidth = imageWidth.imageWidth;
   const _Math = Math;
   const space = nativeDefault.space;
   if (compact) {
@@ -60,107 +58,107 @@ function NoCover(arg0) {
     tmp4 = tmp;
   }
   const minResult = min(PX_32, Math.max(0, width - tmp4(575).space.PX_16));
-  const tmp6 = closure_13();
-  let tmp7 = width;
-  const getIconURL = game.getIconURL;
-  if (compact) {
-    tmp7 = minResult;
-  }
-  iconURL = getIconURL(tmp7);
+  const tmp6 = closure_11();
+  iconURL = game.getIconURL(Math.min(1024 / hasOwnProperty.get(), imageWidth));
   const iconURL1 = game.getIconURL(16);
-  [tmp11, c1] = react.useState(null);
-  _slicedToArray(react.useState(null), 2);
-  let tmp15 = null != iconURL;
-  [tmp13, tmp14] = react.useState(0);
-  _slicedToArray(react.useState(0), 2);
-  if (tmp15) {
-    tmp15 = iconURL !== tmp11;
-  }
-  const tmp16 = tmp4(18707)(game.id, iconURL1);
-  const tmp18 = closure_14(width, minResult, Math.max(width / TILE_ASPECT_RATIO - width + closure_12, tmp13 + PX_6 + PX_8), tmp16);
+  const tmp9 = _slicedToArray(react.useState(null), 2);
+  closure_1 = tmp9[1];
+  let tmp10 = null != iconURL && iconURL !== tmp9[0];
+  const tmp11 = tmp4(18754)(game.id, iconURL1);
+  const tmp13 = closure_12(width, minResult, Math.max(width / TILE_ASPECT_RATIO - width, c10), tmp11);
   const items = [tmp6.fallback, , ];
-  let titleOnly = tmp21;
-  const tmp19 = React4;
-  if (!tmp15) {
+  let titleOnly = tmp16;
+  const tmp14 = React4;
+  if (!tmp10) {
     titleOnly = tmp6.titleOnly;
   }
   items[1] = titleOnly;
-  let background = tmp22;
-  if (!(!compact && tmp15)) {
-    background = tmp18.background;
+  let background = tmp17;
+  if (!(!compact && tmp10)) {
+    background = tmp13.background;
   }
   const obj = { style: items, children: items1 };
   items[2] = background;
-  let tmp23 = tmp15 && null != tmp16 && tmp22;
-  if (tmp23) {
+  let tmp18 = tmp10 && null != tmp11 && tmp17;
+  if (tmp18) {
     const obj2 = { accessible: false, source: obj3, style: tmp6.texture, blurRadius: 32, resizeMode: "cover", fadeDuration: 0 };
     obj3 = { uri: iconURL };
-    tmp23 = metroImportAll(tmp4(5872), obj2);
+    tmp18 = metroImportAll(tmp4(5842), obj2);
   }
-  items1 = [tmp23, , , ];
-  let tmp25 = tmp17;
-  if (tmp25) {
-    const obj4 = { style: items2, children: metroImportAll(tmp4(5872), obj5) };
-    items2 = [tmp6.art, tmp18.art];
+  items1 = [tmp18, , , ];
+  let tmp20 = tmp12;
+  if (tmp20) {
+    const obj4 = { style: items2, children: metroImportAll(tmp4(5842), obj5) };
+    items2 = [tmp6.art, tmp13.art];
     obj5 = {
       source: obj6,
-      style: tmp18.image,
+      style: tmp13.image,
       resizeMode: "contain",
       onError() {
-          return _undefined(iconURL);
+          return closure_1(iconURL);
         }
     };
     obj6 = { uri: iconURL };
-    tmp25 = metroImportAll(tmp20, obj4);
+    tmp20 = metroImportAll(tmp15, obj4);
   }
-  items1[1] = tmp25;
-  if (tmp15) {
-    tmp15 = tmp22;
+  items1[1] = tmp20;
+  if (tmp10) {
+    tmp10 = tmp17;
   }
-  if (tmp15) {
+  if (tmp10) {
     const obj7 = {
       source: obj8,
       style: items3,
       resizeMode: "contain",
       onError() {
-          return _undefined(iconURL);
+          return closure_1(iconURL);
         }
     };
-    items3 = [tmp6.icon, tmp18.icon];
+    items3 = [tmp6.icon, tmp13.icon];
     obj8 = { uri: iconURL };
-    tmp15 = metroImportAll(tmp4(5872), obj7);
+    tmp10 = metroImportAll(tmp4(5842), obj7);
   }
-  items1[2] = tmp15;
-  let tmp29Result = !compact;
+  items1[2] = tmp10;
+  let tmp24Result = !compact;
   if (compact) {
-    tmp29Result = tmp21;
+    tmp24Result = tmp16;
   }
-  if (tmp29Result) {
-    let tmp30;
-    if (!compact && tmp15) {
+  if (tmp24Result) {
+    let tmp25;
+    if (!compact && tmp10) {
       const items4 = [tmp6.banner, , ];
-      ({ banner: arr5[1], background: arr5[2] } = tmp18);
-      tmp30 = items4;
+      ({ banner: arr5[1], background: arr5[2] } = tmp13);
+      tmp25 = items4;
     }
-    const obj9 = { style: tmp30, children: metroImportAll(tmp4Result, obj10) };
+    const obj9 = { style: tmp25, children: metroImportAll(tmp4Result, obj10) };
     const _Math2 = Math;
-    obj10 = { name: game.name, width: Math.max(0, width - tmp4(575).space.PX_16), alignLastBaseline: !compact && tmp15, onHeightChange: tmp32 };
-    tmp32 = undefined;
-    tmp4Result = tmp4(18708);
-    if (!compact && tmp15) {
-      tmp32 = tmp14;
+    obj10 = { name: game.name, width: Math.max(0, width - tmp4(575).space.PX_16), maxLines: num };
+    num = undefined;
+    tmp4Result = tmp4(18755);
+    if (!compact && tmp10) {
+      num = 2;
     }
-    tmp29Result = tmp29(tmp20, obj9);
+    tmp24Result = tmp24(tmp15, obj9);
   }
-  items1[3] = tmp29Result;
-  return tmp19(metroRequire, obj);
+  items1[3] = tmp24Result;
+  return tmp14(metroRequire, obj);
 }
 ({ PixelRatio: hasOwnProperty, StyleSheet, View: metroRequire } = react_native);
 const TILE_ASPECT_RATIO = InterestGamePickerConstants.TILE_ASPECT_RATIO;
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);
 const PX_6 = nativeDefault.space.PX_6;
 const PX_8 = nativeDefault.space.PX_8;
-let closure_12 = nativeDefault.space.PX_4 / 2;
+const TextVariantsFlat = TextVariants.TextVariantsFlat;
+const found = TextVariantsFlat.find((name) => "body-xs/semibold" === name.name);
+let num;
+if (found != null) {
+  num = found.lineHeight;
+}
+if (num == null) {
+  num = 16;
+}
+const sum = 2 * num + PX_6 + PX_8;
+let c10 = sum;
 let createStyles = createStyles_mod;
 let obj = { cover: obj2, image: StyleSheet.absoluteFillObject, fallback: obj3, titleOnly: { paddingBottom: 0 }, icon: obj4, texture: obj5, art: rect, banner: rect1 };
 obj2 = { overflow: "hidden", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST };
@@ -171,10 +169,10 @@ obj4 = { borderRadius: nativeDefault.radii.xs };
 obj5 = { opacity: useInterestCoverColor.COVER_TEXTURE_OPACITY };
 const merged1 = Object.assign(StyleSheet.absoluteFillObject);
 rect = { position: "absolute", top: 0, left: 0, right: 0, overflow: "hidden", alignItems: "center", justifyContent: "center", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST };
-rect1 = { position: "absolute", left: 0, right: 0, bottom: 0, justifyContent: "flex-end", alignItems: "center", paddingHorizontal: nativeDefault.space.PX_8, paddingTop: PX_6, paddingBottom: PX_8, backgroundColor: nativeDefault.colors.BACKGROUND_ACCENT };
-let closure_13 = createStyles(obj);
+rect1 = { position: "absolute", left: 0, right: 0, bottom: 0, justifyContent: "center", alignItems: "center", paddingHorizontal: nativeDefault.space.PX_8, paddingTop: PX_6, paddingBottom: PX_8, backgroundColor: nativeDefault.colors.BACKGROUND_ACCENT };
+let closure_11 = createStyles(obj);
 createStyles = createStyles_mod;
-let closure_14 = createStyles.createStyles((height, width, height2, backgroundColor) => {
+let closure_12 = createStyles.createStyles((height, width, minHeight, backgroundColor) => {
   let obj;
   let obj3;
   let obj4;
@@ -184,7 +182,7 @@ let closure_14 = createStyles.createStyles((height, width, height2, backgroundCo
   } else {
     obj = { backgroundColor };
   }
-  const obj2 = { background: obj, art: obj3, image: { width: height, height }, icon: { width, height: width }, banner: { height: height2 } };
+  const obj2 = { background: obj, art: obj3, image: { width: height, height }, icon: { width, height: width }, banner: { minHeight } };
   obj3 = { height };
   if (null == backgroundColor) {
     obj4 = {};
@@ -197,18 +195,22 @@ let closure_14 = createStyles.createStyles((height, width, height2, backgroundCo
 });
 const result = size.fileFinishedImporting("modules/waterwheels/interest/native/InterestGameCover.tsx");
 
-export default function InterestGameCover(arg0) {
+export default function InterestGameCover(imageWidth) {
   let compact;
   let game;
   let items;
   let obj3;
   let width;
-  ({ game, width, compact } = arg0);
+  ({ game, width, compact } = imageWidth);
   if (compact === undefined) {
     compact = false;
   }
-  const tmp = closure_13();
-  const coverURL = game.getCoverURL(Math.ceil(width * hasOwnProperty.get()));
+  imageWidth = imageWidth.imageWidth;
+  if (imageWidth === undefined) {
+    imageWidth = width;
+  }
+  const tmp = closure_11();
+  const coverURL = game.getCoverURL(Math.ceil(imageWidth * hasOwnProperty.get()));
   const tmp3 = _slicedToArray(react.useState(null), 2);
   let closure_1 = tmp3[1];
   let tmp4 = null == coverURL || coverURL === tmp3[0];
@@ -231,7 +233,7 @@ export default function InterestGameCover(arg0) {
   }
   items = [tmp7, ];
   if (tmp4) {
-    const obj4 = { game, width, compact };
+    const obj4 = { game, width, compact, imageWidth };
     tmp4 = metroImportAll(NoCover, obj4);
   }
   items[1] = tmp4;
@@ -239,4 +241,6 @@ export default function InterestGameCover(arg0) {
 };
 export const BIG_ICON_BANNER_PADDING_TOP = PX_6;
 export const BIG_ICON_BANNER_PADDING_BOTTOM = PX_8;
+export const BIG_ICON_TITLE_LINES = 2;
+export const BIG_ICON_TITLE_AREA_HEIGHT = sum;
 export const COVER_TEXTURE_BLUR_RADIUS = 32;

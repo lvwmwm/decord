@@ -1,39 +1,60 @@
-// Module ID: 5201
-// Function ID: 5202
+// Module ID: 5171
+// Function ID: 5172
 // Name: SelectedGuildStore
-// Dependencies: [5202, 502, 5205, 5041, 1072, 1099, 504, 5206, 5219, 572, 2]
+// Dependencies: [5172, 502, 5175, 5011, 1072, 1099, 504, 5176, 5189, 572, 2]
 
-// Module 5201 (SelectedGuildStore)
+// Module 5171 (SelectedGuildStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import router_utils from "router_utils" /* 1099 */;
-import matchPathCompat from "matchPathCompat" /* 5206 */;
-import RouteUtils from "RouteUtils" /* 5219 */;
-import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 5202 */;
+import matchPathCompat from "matchPathCompat" /* 5176 */;
+import RouteUtils from "RouteUtils" /* 5189 */;
+import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 5172 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import DefaultRouteStore from "DefaultRouteStore" /* 5205 */;
-import GuildStore from "GuildStore" /* 5041 */;
+import DefaultRouteStore from "DefaultRouteStore" /* 5175 */;
+import GuildStore from "GuildStore" /* 5011 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
+let c9;
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 function handleConnectionOpen() {
-  const tmp = null != selectedGuildId && selectedGuildId !== metroImportDefault && null == GuildStore.getGuild(selectedGuildId) && null == UserGuildJoinRequestStore.getRequest(selectedGuildId);
-  if (tmp) {
+  let tmp = null == selectedGuildId;
+  if (!tmp) {
+    tmp = selectedGuildId === metroImportDefault || tmp2 === React4;
+    const tmp4 = selectedGuildId === metroImportDefault || tmp2 === React4;
+  }
+  if (!tmp) {
+    tmp = null != GuildStore.getGuild(selectedGuildId);
+  }
+  if (!tmp) {
+    tmp = null != UserGuildJoinRequestStore.getRequest(selectedGuildId);
+  }
+  if (!tmp) {
     selectedGuildId = null;
   }
-  const tmp8 = null != lastSelectedGuildId && lastSelectedGuildId !== metroImportDefault && null == GuildStore.getGuild(lastSelectedGuildId) && null == UserGuildJoinRequestStore.getRequest(lastSelectedGuildId);
-  if (tmp8) {
+  let tmp10 = null == lastSelectedGuildId;
+  if (!tmp10) {
+    tmp10 = lastSelectedGuildId === metroImportDefault || tmp11 === React4;
+    const tmp13 = lastSelectedGuildId === metroImportDefault || tmp11 === React4;
+  }
+  if (!tmp10) {
+    tmp10 = null != GuildStore.getGuild(lastSelectedGuildId);
+  }
+  if (!tmp10) {
+    tmp10 = null != UserGuildJoinRequestStore.getRequest(lastSelectedGuildId);
+  }
+  if (!tmp10) {
     lastSelectedGuildId = null;
   }
   if (null != selectedGuildId) {
     const _Date = Date;
-    prop[tmp15] = Date.now();
+    prop[tmp19] = Date.now();
   }
 }
-({ ME: metroRequire, MOBILE_GUILD_UPSELL_LIST: metroImportDefault, Routes: metroImportAll } = Constants);
+({ ME: metroRequire, MOBILE_GUILD_UPSELL_LIST: metroImportDefault, Routes: metroImportAll, WATERWHEELS: c9 } = Constants);
 let selectedGuildId = null;
 let lastSelectedGuildId = null;
 let prop = {};

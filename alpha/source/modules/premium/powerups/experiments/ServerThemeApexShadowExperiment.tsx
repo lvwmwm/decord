@@ -1,9 +1,9 @@
-// Module ID: 5393
-// Function ID: 5394
+// Module ID: 5363
+// Function ID: 5364
 // Name: ServerThemeApexShadowExperiment
 // Dependencies: [1449, 2]
 
-// Module 5393 (ServerThemeApexShadowExperiment)
+// Module 5363 (ServerThemeApexShadowExperiment)
 import ApexExperiment from "ApexExperiment" /* 1449 */;
 import size from "module_2" /* 2 */;
 

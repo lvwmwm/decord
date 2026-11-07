@@ -1,177 +1,82 @@
 // Module ID: 13349
 // Function ID: 13350
-// Dependencies: [13262, 13264, 13311]
+// Dependencies: [13274, 13277, 13306, 13292, 13305, 13326, 13296, 13297, 13283, 13314, 13291, 13290, 13278]
+// Exports: getTraceData
 
 // Module 13349
-import _mod13262 from "module_13262" /* 13262 */;
-import _mod13264 from "module_13264" /* 13264 */;
-import module_13311 from "module_13311" /* 13311 */;
+import _mod13283 from "module_13283" /* 13283 */;
+import _mod13290 from "module_13290" /* 13290 */;
+import BAGGAGE_HEADER_NAME from "BAGGAGE_HEADER_NAME" /* 13291 */;
+import _mod13296 from "module_13296" /* 13296 */;
+import _mod13297 from "module_13297" /* 13297 */;
+import _mod13305 from "module_13305" /* 13305 */;
+import _mod13314 from "module_13314" /* 13314 */;
+import _mod13326 from "module_13326" /* 13326 */;
+import registerSpanErrorInstrumentation from "module_13274" /* 13274 */;
+import "module_13277";
+import DEBUG_BUILD from "module_13306" /* 13306 */;
+import _browserPerformanceTimeOriginMode from "_browserPerformanceTimeOriginMode" /* 13292 */;
 
-let set;
 
-function flattenIssue(path) {
-  let joined;
-  let json;
-  let json1;
-  const obj = { path: joined, keys: json, unionErrors: json1 };
-  const merged = Object.assign(path);
-  joined = undefined;
-  if ("path" in path) {
-    const _Array = Array;
-    if (Array.isArray(path.path)) {
-      path = path.path;
-      joined = path.join(".");
-    }
-  }
-  json = undefined;
-  if ("keys" in path) {
-    const _JSON = JSON;
-    json = JSON.stringify(path.keys);
-  }
-  json1 = undefined;
-  if ("unionErrors" in path) {
-    const _JSON2 = JSON;
-    json1 = JSON.stringify(path.unionErrors);
-  }
-  return obj;
-}
-function flattenIssuePath(arr) {
-  const mapped = arr.map((item) => {
-    let str = "<array>";
-    if (typeof item !== "number") {
-      str = item;
-    }
-    return str;
-  });
-  return mapped.join(".");
-}
-function formatIssueMessage(issues) {
-  set = new Set();
-  const tmp = issues.issues[Symbol.iterator]();
-  while (tmp !== undefined) {
-    let arr = flattenIssuePath(tmp2.path);
-    if (arr.length > 0) {
-      let addResult = set.add(tmp4);
-    }
-    continue;
-  }
-  const arr2 = Array.from(set);
-  if (0 === arr2.length) {
-    let str4 = "variable";
-    if (issues.issues.length > 0) {
-      const first = issues.issues[0];
-      str4 = "variable";
-      const tmp10 = undefined !== first && "expected" in first && typeof first.expected === "string";
-      if (tmp10) {
-        str4 = first.expected;
-      }
-    }
-    const _HermesInternal2 = HermesInternal;
-    return "Failed to validate " + str4;
-  } else {
-    const _HermesInternal = HermesInternal;
-    const obj2 = _mod13264;
-    return "Failed to validate keys: " + obj2.truncate(arr2.join(", "), 100);
-  }
-}
-function applyZodErrorsToEvent(arg0, arg1, exception, originalException) {
-  let items;
-  let obj2;
-  let obj4;
-  let obj6;
-  let obj8;
-  function originalExceptionIsZodError(originalException) {
-    const obj = _mod13262;
-    let isErrorResult = obj.isError(originalException) && "ZodError" === originalException.name;
-    if (isErrorResult) {
-      const _Array = Array;
-      isErrorResult = Array.isArray(originalException.issues);
-    }
-    return isErrorResult;
-  }
-  let flag = arg1;
-  if (arg1 === undefined) {
-    flag = false;
-  }
-  if (exception.exception) {
-    if (exception.exception.values) {
-      const tmp2 = originalException;
-      if (tmp2) {
-        if (originalException.originalException) {
-          if (originalExceptionIsZodError(originalException.originalException)) {
-            if (0 !== originalException.originalException.issues.length) {
-              try {
-                let substr;
-                const issues = originalException.originalException.issues;
-                if (flag) {
-                  substr = issues;
-                } else {
-                  substr = issues.slice(0, arg0);
-                }
-                const mapped = substr.map(flattenIssue);
-                if (flag) {
-                  let _Array = Array;
-                  if (!Array.isArray(originalException.attachments)) {
-                    originalException.attachments = [];
-                  }
-                  const attachments = originalException.attachments;
-                  let obj = { filename: "zod_issues.json", data: JSON.stringify(obj2) };
-                  const _JSON = JSON;
-                  const push = attachments.push;
-                  obj2 = { issues: mapped };
-                  push(obj);
-                }
-                const obj3 = { exception: obj4, extra: obj6 };
-                const merged = Object.assign(exception);
-                obj4 = { values: items };
-                const merged1 = Object.assign(exception.exception);
-                const obj5 = { value: formatIssueMessage(originalException.originalException) };
-                const merged2 = Object.assign(exception.exception.values[0]);
-                items = [obj5];
-                const values = exception.exception.values;
-                HermesBuiltin.arraySpread(items, values.slice(1), 1);
-                obj6 = { "zoderror.issues": mapped.slice(0, arg0) };
-                const merged3 = Object.assign(exception.extra);
-                return obj3;
-              } catch (error) {
-                const obj7 = { extra: obj8 };
-                const merged4 = Object.assign(exception);
-                obj8 = { "zoderrors sentry integration parse error": obj9 };
-                const merged5 = Object.assign(exception.extra);
-                const _Error = Error;
-                let str = "unknown";
-                if (error instanceof Error) {
-                  const _HermesInternal = HermesInternal;
-                  str = "" + error.name + ": " + error.message + "\n" + error.stack;
-                }
-                return obj7;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-  return exception;
-}
-
-export { applyZodErrorsToEvent };
-export { flattenIssue };
-export { flattenIssuePath };
-export { formatIssueMessage };
-export const zodErrorsIntegration = module_13311.defineIntegration(() => {
+export function getTraceData() {
+  let sampled;
+  let spanId;
+  let traceId;
   let obj = arg0;
   if (arg0 === undefined) {
     obj = {};
   }
-  let num = 10;
-  if (undefined !== obj.limit) {
-    num = obj.limit;
-  }
-  return {
-    name: "ZodErrors",
-    processEvent(arg0, arg1) {
-      return applyZodErrorsToEvent(num, obj.saveZodIssuesAsAttachment, arg0, arg1);
+  const obj2 = _mod13305;
+  const client = obj2.getClient();
+  const obj3 = _mod13326;
+  if (obj3.isEnabled()) {
+    if (client) {
+      const tmpResult = _mod13296;
+      const mainCarrier = tmpResult.getMainCarrier();
+      const tmpResult8 = _mod13297;
+      const asyncContextStrategy = tmpResult8.getAsyncContextStrategy(mainCarrier);
+      if (asyncContextStrategy.getTraceData) {
+        return asyncContextStrategy.getTraceData(obj);
+      } else {
+        let spanToTraceHeaderResult;
+        let dynamicSamplingContextFromSpan;
+        let obj5;
+        const tmpResult9 = _mod13305;
+        const currentScope = tmpResult9.getCurrentScope();
+        let span = obj.span;
+        if (!span) {
+          const tmpResult10 = _mod13283;
+          span = tmpResult10.getActiveSpan();
+        }
+        if (span) {
+          const tmpResult11 = _mod13283;
+          spanToTraceHeaderResult = tmpResult11.spanToTraceHeader(span);
+        } else {
+          const propagationContext = currentScope.getPropagationContext();
+          ({ traceId, sampled, spanId } = propagationContext);
+          const tmpResult12 = _mod13290;
+          spanToTraceHeaderResult = tmpResult12.generateSentryTraceHeader(traceId, spanId, sampled);
+        }
+        const tmpResult13 = _mod13314;
+        if (span) {
+          dynamicSamplingContextFromSpan = tmpResult13.getDynamicSamplingContextFromSpan(span);
+        } else {
+          dynamicSamplingContextFromSpan = tmpResult13.getDynamicSamplingContextFromScope(client, currentScope);
+        }
+        const tmpResult14 = BAGGAGE_HEADER_NAME;
+        const result = tmpResult14.dynamicSamplingContextToSentryBaggageHeader(dynamicSamplingContextFromSpan);
+        const TRACEPARENT_REGEXP = tmp(13290).TRACEPARENT_REGEXP;
+        if (TRACEPARENT_REGEXP.test(spanToTraceHeaderResult)) {
+          obj5 = { "sentry-trace": spanToTraceHeaderResult, baggage: result };
+          const obj4 = { "sentry-trace": spanToTraceHeaderResult, baggage: result };
+        } else {
+          const logger = tmp(13278).logger;
+          logger.warn("Invalid sentry-trace data. Cannot generate trace data");
+          obj5 = {};
+        }
+        return obj5;
+      }
     }
-  };
-});
+  }
+  return {};
+}

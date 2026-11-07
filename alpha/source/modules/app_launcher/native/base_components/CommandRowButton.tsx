@@ -1,10 +1,10 @@
-// Module ID: 12624
-// Function ID: 12625
+// Module ID: 12637
+// Function ID: 12638
 // Name: CommandRowButton
-// Dependencies: [5, 32, 19, 21, 12625, 9867, 12626, 5837, 7072, 5788, 1113, 5884, 575, 2]
+// Dependencies: [5, 32, 19, 21, 12638, 9851, 12639, 5807, 7047, 5758, 1113, 5853, 575, 2]
 // Exports: default, useCommandRowSend
 
-// Module 12624 (CommandRowButton)
+// Module 12637 (CommandRowButton)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
@@ -23,13 +23,13 @@ export default function CommandRowIcon(hasOptions) {
   let intl;
   let tmp3Result;
   if (hasOptions.hasOptions) {
-    tmp3Result = tmp3(tmp4(7072).TableRowArrow, {});
+    tmp3Result = tmp3(tmp4(7047).TableRowArrow, {});
   } else {
     const obj = { size: "sm", text: intl.string(intl2.t.TXNS7S), onPress: tmp2, icon: null, iconPosition: "end", grow: false, variant: "tertiary", disabled: tmp };
-    const Button = tmp4(5788).Button;
+    const Button = tmp4(5758).Button;
     intl = tmp4(1113).intl;
     ({ size: "sm", color: nativeDefault.colors.REDESIGN_BUTTON_TERTIARY_TEXT });
-    const SendMessageIcon = tmp4(5884).SendMessageIcon;
+    const SendMessageIcon = tmp4(5853).SendMessageIcon;
     tmp3Result = tmp3(Button, obj);
   }
   return tmp3Result;
@@ -71,7 +71,7 @@ export function useCommandRowSend(command) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c3;
@@ -120,7 +120,7 @@ export function useCommandRowSend(command) {
           c3 = 0;
           closure_128_5(false);
           c4 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp25) {
         onExecuteCommand = tmp25;

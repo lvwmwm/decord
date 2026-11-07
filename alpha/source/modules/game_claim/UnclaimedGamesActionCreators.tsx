@@ -1,16 +1,16 @@
-// Module ID: 18524
-// Function ID: 18525
+// Module ID: 18571
+// Function ID: 18572
 // Name: UnclaimedGamesActionCreators
-// Dependencies: [5, 18525, 1072, 1282, 572, 504, 1089, 559, 2]
+// Dependencies: [5, 18572, 1072, 1282, 572, 504, 1089, 559, 2]
 // Exports: useHasUnclaimedGames, useUnclaimedGameIdsForGuild
 
-// Module 18524 (UnclaimedGamesActionCreators)
+// Module 18571 (UnclaimedGamesActionCreators)
 import BackoffDefault from "Backoff" /* 559 */;
 import Constants from "Constants" /* 1072 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UnclaimedGamesStore from "UnclaimedGamesStore" /* 18525 */;
+import UnclaimedGamesStore from "UnclaimedGamesStore" /* 18572 */;
 import get_initialized from "get initialized" /* 504 */;
 import size from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ let obj = function _fetchUnclaimedGames() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -69,7 +69,7 @@ let obj = function _fetchUnclaimedGames() {
           obj = closure_129_1(closure_129_2[4]);
           obj.dispatch(obj7);
           c3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp14) {
         c3 = 3;

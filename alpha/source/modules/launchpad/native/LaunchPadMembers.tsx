@@ -1,17 +1,17 @@
-// Module ID: 19392
-// Function ID: 19393
+// Module ID: 19451
+// Function ID: 19452
 // Name: LaunchPadMembers
-// Dependencies: [19, 17, 5019, 5073, 21, 5170, 563, 12711, 19068, 11788, 5781, 1113, 2]
+// Dependencies: [19, 17, 4989, 5043, 21, 5140, 563, 12724, 19118, 11779, 5751, 1113, 2]
 
-// Module 19392 (LaunchPadMembers)
+// Module 19451 (LaunchPadMembers)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import intl2 from "intl" /* 1113 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 5019 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5073 */;
-import createStyles from "createStyles" /* 5170 */;
+import ChannelStore from "ChannelStore" /* 4989 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5043 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let channel, currentlySelectedChannelId;
@@ -45,7 +45,7 @@ const memoResult = react.memo(function LaunchPadMembers() {
         }
       }
     }
-    return { channelId: "channel", type: null };
+    return { channelId: "channel", type: "<string:3142648740>" };
   });
   if ("private" === stateFromStoresObject.type) {
     tmp8 = <View style={tmp.wrapper}>{null}</View>;
@@ -57,7 +57,7 @@ const memoResult = react.memo(function LaunchPadMembers() {
     tmp8 = <View style={tmp.wrapper}>{null}</View>;
   } else {
     ({ style: tmp.emptyText, variant: "body-md/semibold", children: intl.string(intl2.t["+7wtJq"]) });
-    const Text = tmp2(5781).Text;
+    const Text = tmp2(5751).Text;
     intl = tmp2(1113).intl;
     tmp8 = <View style={tmp.emptyWrapper}>{null}</View>;
   }

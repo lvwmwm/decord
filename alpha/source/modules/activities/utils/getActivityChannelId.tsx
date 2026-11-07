@@ -1,13 +1,13 @@
-// Module ID: 15091
-// Function ID: 15092
+// Module ID: 15123
+// Function ID: 15124
 // Name: getActivityChannelId
-// Dependencies: [5023, 5019, 5833, 2]
+// Dependencies: [4993, 4989, 5803, 2]
 // Exports: default
 
-// Module 15091 (getActivityChannelId)
-import ChannelRecord from "ChannelRecord" /* 5023 */;
-import ChannelStore from "ChannelStore" /* 5019 */;
-import VoiceStateStore from "VoiceStateStore" /* 5833 */;
+// Module 15123 (getActivityChannelId)
+import ChannelRecord from "ChannelRecord" /* 4993 */;
+import ChannelStore from "ChannelStore" /* 4989 */;
+import VoiceStateStore from "VoiceStateStore" /* 5803 */;
 import size from "module_2" /* 2 */;
 
 const isTextChannel = ChannelRecord.isTextChannel;

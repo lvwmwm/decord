@@ -1,201 +1,93 @@
 // Module ID: 13305
 // Function ID: 13306
-// Dependencies: [13280, 13261, 13260, 13291]
-// Exports: applyScopeDataToEvent, mergeAndOverwriteScopeData, mergeScopeData
+// Dependencies: [13296, 13297, 13279, 13299, 13284]
+// Exports: getClient, getCurrentScope, getGlobalScope, getIsolationScope, getTraceContextFromScope, withIsolationScope, withScope
 
 // Module 13305
-import _mod13260 from "module_13260" /* 13260 */;
-import _mod13261 from "module_13261" /* 13261 */;
-import _mod13280 from "module_13280" /* 13280 */;
-import _mod13291 from "module_13291" /* 13291 */;
+import _mod13279 from "module_13279" /* 13279 */;
+import _mod13284 from "module_13284" /* 13284 */;
+import _mod13296 from "module_13296" /* 13296 */;
+import _mod13297 from "module_13297" /* 13297 */;
+import _mod13299 from "module_13299" /* 13299 */;
 
 
-export function applyScopeDataToEvent(extra, arg1) {
-  let breadcrumbs;
-  let contexts;
-  let fingerprint;
-  let items1;
-  let level;
-  let sdkProcessingMetadata;
-  let span;
-  let tags;
-  let tmpResult10;
-  let tmpResult9;
-  let transactionName;
-  let user;
-  ({ fingerprint, span, breadcrumbs, sdkProcessingMetadata, level, transactionName } = arg1);
-  ({ extra, tags, user, contexts } = arg1);
-  const obj = _mod13261;
-  const dropUndefinedKeysResult = obj.dropUndefinedKeys(extra);
-  let length = dropUndefinedKeysResult;
-  if (length) {
-    const _Object = Object;
-    length = Object.keys(dropUndefinedKeysResult).length;
-  }
-  const tmp5 = extra;
-  if (length) {
-    const obj2 = {};
-    const merged = Object.assign(dropUndefinedKeysResult);
-    const merged1 = Object.assign(extra.extra);
-    extra.extra = obj2;
-  }
-  const tmpResult = _mod13261;
-  const dropUndefinedKeysResult1 = tmpResult.dropUndefinedKeys(tags);
-  let length2 = dropUndefinedKeysResult1;
-  if (length2) {
-    const _Object2 = Object;
-    length2 = Object.keys(dropUndefinedKeysResult1).length;
-  }
-  if (length2) {
-    const obj3 = {};
-    const merged2 = Object.assign(dropUndefinedKeysResult1);
-    const merged3 = Object.assign(extra.tags);
-    extra.tags = obj3;
-  }
-  const tmpResult7 = _mod13261;
-  const dropUndefinedKeysResult2 = tmpResult7.dropUndefinedKeys(user);
-  let length3 = dropUndefinedKeysResult2;
-  if (length3) {
-    const _Object3 = Object;
-    length3 = Object.keys(dropUndefinedKeysResult2).length;
-  }
-  if (length3) {
-    const obj4 = {};
-    const merged4 = Object.assign(dropUndefinedKeysResult2);
-    const merged5 = Object.assign(extra.user);
-    extra.user = obj4;
-  }
-  const tmpResult8 = _mod13261;
-  const dropUndefinedKeysResult3 = tmpResult8.dropUndefinedKeys(contexts);
-  let length4 = dropUndefinedKeysResult3;
-  if (length4) {
-    const _Object4 = Object;
-    length4 = Object.keys(dropUndefinedKeysResult3).length;
-  }
-  if (length4) {
-    const obj5 = {};
-    const merged6 = Object.assign(dropUndefinedKeysResult3);
-    const merged7 = Object.assign(extra.contexts);
-    extra.contexts = obj5;
-  }
-  if (level) {
-    extra.level = level;
-  }
-  const tmp32 = transactionName && "transaction" !== extra.type;
-  if (tmp32) {
-    extra.transaction = transactionName;
-  }
-  if (span) {
-    const obj6 = { trace: tmpResult9.spanToTraceContext(span) };
-    tmpResult9 = _mod13260;
-    const merged8 = Object.assign(extra.contexts);
-    extra.contexts = obj6;
-    const obj7 = { dynamicSamplingContext: tmpResult10.getDynamicSamplingContextFromSpan(span) };
-    tmpResult10 = _mod13291;
-    const merged9 = Object.assign(extra.sdkProcessingMetadata);
-    extra.sdkProcessingMetadata = obj7;
-    const tmpResult11 = _mod13260;
-    const rootSpan = tmpResult11.getRootSpan(span);
-    const tmpResult12 = _mod13260;
-    const description = tmpResult12.spanToJSON(rootSpan).description;
-    const tmp38 = description && !extra.transaction && "transaction" === extra.type;
-    if (tmp38) {
-      extra.transaction = description;
-    }
-  }
-  if (extra.fingerprint) {
-    let items;
-    const _Array = Array;
-    const fingerprint2 = extra.fingerprint;
-    if (Array.isArray(extra.fingerprint)) {
-      items = fingerprint2;
+export function getClient() {
+  const obj = _mod13296;
+  const mainCarrier = obj.getMainCarrier();
+  const obj2 = _mod13297;
+  const asyncContextStrategy = obj2.getAsyncContextStrategy(mainCarrier);
+  const currentScope = asyncContextStrategy.getCurrentScope();
+  return currentScope.getClient();
+}
+export function getCurrentScope() {
+  const obj = _mod13296;
+  const mainCarrier = obj.getMainCarrier();
+  const obj2 = _mod13297;
+  const asyncContextStrategy = obj2.getAsyncContextStrategy(mainCarrier);
+  return asyncContextStrategy.getCurrentScope();
+}
+export function getGlobalScope() {
+  const obj = _mod13279;
+  return obj.getGlobalSingleton("globalScope", () => {
+    const scope = new _mod13299.Scope();
+    return scope;
+  });
+}
+export function getIsolationScope() {
+  const obj = _mod13296;
+  const mainCarrier = obj.getMainCarrier();
+  const obj2 = _mod13297;
+  const asyncContextStrategy = obj2.getAsyncContextStrategy(mainCarrier);
+  return asyncContextStrategy.getIsolationScope();
+}
+export function getTraceContextFromScope(getPropagationContext) {
+  let parentSpanId;
+  let spanId;
+  let traceId;
+  const propagationContext = getPropagationContext.getPropagationContext();
+  ({ traceId, spanId, parentSpanId } = propagationContext);
+  const obj = _mod13284;
+  return obj.dropUndefinedKeys({ trace_id, span_id, parent_span_id });
+}
+export function withIsolationScope() {
+  let tmp2;
+  let tmp3;
+  const items = [...arguments];
+  const obj = _mod13296;
+  const mainCarrier = obj.getMainCarrier();
+  const obj2 = _mod13297;
+  const asyncContextStrategy = obj2.getAsyncContextStrategy(mainCarrier);
+  if (2 === items.length) {
+    let result;
+    [tmp2, tmp3] = items;
+    if (tmp2) {
+      result = asyncContextStrategy.withSetIsolationScope(tmp2, tmp3);
     } else {
-      items = [fingerprint2];
+      result = asyncContextStrategy.withIsolationScope(tmp3);
     }
-    items1 = items;
+    return result;
   } else {
-    items1 = [];
+    return asyncContextStrategy.withIsolationScope(items[0]);
   }
-  extra.fingerprint = items1;
-  if (fingerprint) {
-    const fingerprint3 = extra.fingerprint;
-    extra.fingerprint = fingerprint3.concat(fingerprint);
-  }
-  const tmp40 = extra.fingerprint && !extra.fingerprint.length;
-  if (tmp40) {
-    delete tmp5["fingerprint"];
-  }
-  const items2 = [...breadcrumbs];
-  let tmp42;
-  if (items2.length) {
-    tmp42 = items2;
-  }
-  extra.breadcrumbs = tmp42;
-  const obj8 = {};
-  const merged10 = Object.assign(extra.sdkProcessingMetadata);
-  const merged11 = Object.assign(sdkProcessingMetadata);
-  extra.sdkProcessingMetadata = obj8;
 }
-export function mergeAndOverwriteScopeData(arg0, arg1, arg2) {
-  const obj = _mod13280;
-  arg0[arg1] = obj.merge(arg0[arg1], arg2, 1);
-}
-export function mergeScopeData(extra, arg1) {
-  let attachments;
-  let breadcrumbs;
-  let contexts;
-  let eventProcessors;
-  let fingerprint;
-  let level;
-  let propagationContext;
-  let sdkProcessingMetadata;
-  let span;
-  let tags;
-  let transactionName;
-  let user;
-  ({ level, breadcrumbs, fingerprint, eventProcessors, attachments, propagationContext, transactionName, span } = arg1);
-  ({ extra, tags, user, contexts, sdkProcessingMetadata } = arg1);
-  const obj = _mod13280;
-  extra.extra = obj.merge(extra.extra, extra, 1);
-  const obj2 = _mod13280;
-  extra.tags = obj2.merge(extra.tags, tags, 1);
-  const obj3 = _mod13280;
-  extra.user = obj3.merge(extra.user, user, 1);
-  const obj4 = _mod13280;
-  extra.contexts = obj4.merge(extra.contexts, contexts, 1);
-  const obj5 = _mod13280;
-  extra.sdkProcessingMetadata = obj5.merge(extra.sdkProcessingMetadata, sdkProcessingMetadata, 2);
-  if (level) {
-    extra.level = level;
+export function withScope() {
+  let tmp2;
+  let tmp3;
+  const items = [...arguments];
+  const obj = _mod13296;
+  const mainCarrier = obj.getMainCarrier();
+  const obj2 = _mod13297;
+  const asyncContextStrategy = obj2.getAsyncContextStrategy(mainCarrier);
+  if (2 === items.length) {
+    let withSetScopeResult;
+    [tmp2, tmp3] = items;
+    if (tmp2) {
+      withSetScopeResult = asyncContextStrategy.withSetScope(tmp2, tmp3);
+    } else {
+      withSetScopeResult = asyncContextStrategy.withScope(tmp3);
+    }
+    return withSetScopeResult;
+  } else {
+    return asyncContextStrategy.withScope(items[0]);
   }
-  if (transactionName) {
-    extra.transactionName = transactionName;
-  }
-  if (span) {
-    extra.span = span;
-  }
-  if (breadcrumbs.length) {
-    const items = [];
-    HermesBuiltin.arraySpread(items, breadcrumbs, HermesBuiltin.arraySpread(items, extra.breadcrumbs, 0));
-    extra.breadcrumbs = items;
-  }
-  if (fingerprint.length) {
-    const items1 = [];
-    HermesBuiltin.arraySpread(items1, fingerprint, HermesBuiltin.arraySpread(items1, extra.fingerprint, 0));
-    extra.fingerprint = items1;
-  }
-  if (eventProcessors.length) {
-    const items2 = [];
-    HermesBuiltin.arraySpread(items2, eventProcessors, HermesBuiltin.arraySpread(items2, extra.eventProcessors, 0));
-    extra.eventProcessors = items2;
-  }
-  if (attachments.length) {
-    const items3 = [];
-    HermesBuiltin.arraySpread(items3, attachments, HermesBuiltin.arraySpread(items3, extra.attachments, 0));
-    extra.attachments = items3;
-  }
-  const obj6 = {};
-  const merged = Object.assign(extra.propagationContext);
-  const merged1 = Object.assign(propagationContext);
-  extra.propagationContext = obj6;
 }

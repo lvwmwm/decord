@@ -1,10 +1,10 @@
-// Module ID: 13999
-// Function ID: 14000
+// Module ID: 14024
+// Function ID: 14025
 // Name: useChatInputHeightWorklet
-// Dependencies: [19, 1377, 1652, 13003, 13004, 13005, 2]
+// Dependencies: [19, 1377, 1652, 13026, 13027, 13028, 2]
 // Exports: default, getIsChatInputHeightWorkletEnabled
 
-// Module 13999 (useChatInputHeightWorklet)
+// Module 14024 (useChatInputHeightWorklet)
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -44,7 +44,7 @@ export default function useChatInputHeightWorklet(arg0) {
   const items = [closure_4, sharedValue, textFieldHeight, , ];
   const useEvent = sharedValue(1652).useEvent;
   const tmp4 = sharedValue(1652);
-  items[3] = sharedValue(13003).getChatInputHeightAnimationTimingWorklet;
+  items[3] = sharedValue(13026).getChatInputHeightAnimationTimingWorklet;
   items[4] = textFieldMinHeight;
   [tmp5, tmp6, tmp7, tmp8, tmp9] = items;
   function useChatInputHeightWorkletNativeTsx1(height) {
@@ -58,12 +58,12 @@ export default function useChatInputHeightWorklet(arg0) {
   const event = useEvent(useChatInputHeightWorkletNativeTsx1, ["onChangeContentSize"]);
   const tmpResult = tmp(1377);
   const isAndroidResult = tmpResult.isAndroid();
-  const tmp12 = event(13004)();
-  const items2 = [closure_5, tmp12, event(13005)({ ignoreKeyboard: true }), ];
-  const tmp13 = event(13005)({ ignoreKeyboard: true });
+  const tmp12 = event(13027)();
+  const items2 = [closure_5, tmp12, event(13028)({ ignoreKeyboard: true }), ];
+  const tmp13 = event(13028)({ ignoreKeyboard: true });
   const useAnimatedReaction = tmp(1652).useAnimatedReaction;
   tmp(1652);
-  items2[3] = tmp(13003).getChatInputMaxHeightWorklet;
+  items2[3] = tmp(13026).getChatInputMaxHeightWorklet;
   [tmp15, tmp16, tmp17, tmp18] = items2;
   function useChatInputHeightWorkletNativeTsx2() {
     const value = _undefined.get();
@@ -74,7 +74,7 @@ export default function useChatInputHeightWorklet(arg0) {
   useChatInputHeightWorkletNativeTsx2.__closure = items3;
   useChatInputHeightWorkletNativeTsx2.__workletHash = 9634242494291;
   useChatInputHeightWorkletNativeTsx2.__initData = tmp15;
-  const items4 = [closure_6, isAndroidResult, sharedValue, textFieldHeight, tmp(13003).getChatInputHeightAnimationTimingWorklet, textFieldMinHeight];
+  const items4 = [closure_6, isAndroidResult, sharedValue, textFieldHeight, tmp(13026).getChatInputHeightAnimationTimingWorklet, textFieldMinHeight];
   let c0;
   let c1;
   let c2;

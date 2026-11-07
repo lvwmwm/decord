@@ -1,14 +1,14 @@
-// Module ID: 7808
-// Function ID: 7809
+// Module ID: 7785
+// Function ID: 7786
 // Name: FavoritesSuggestionStore
-// Dependencies: [5019, 5073, 6855, 504, 572, 2]
+// Dependencies: [4989, 5043, 6830, 504, 572, 2]
 
-// Module 7808 (FavoritesSuggestionStore)
+// Module 7785 (FavoritesSuggestionStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import ChannelStore from "ChannelStore" /* 5019 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5073 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6855 */;
+import ChannelStore from "ChannelStore" /* 4989 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5043 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6830 */;
 import size from "module_2" /* 2 */;
 
 let set;

@@ -1,18 +1,18 @@
-// Module ID: 11610
-// Function ID: 11611
+// Module ID: 11592
+// Function ID: 11593
 // Name: BadgeArtImage
-// Dependencies: [32, 5, 19, 17, 21, 5288, 1089, 5928, 8122, 1377, 9606, 5872, 2]
+// Dependencies: [32, 5, 19, 17, 21, 5258, 1089, 5901, 8101, 1377, 9588, 5842, 2]
 // Exports: default
 
-// Module 11610 (BadgeArtImage)
+// Module 11592 (BadgeArtImage)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
-import utils_FunctionUtils from "utils/FunctionUtils" /* 5288 */;
-import FastImageDefault from "FastImage" /* 5872 */;
-import TimeUtils from "TimeUtils" /* 5928 */;
-import inlineStyles from "inlineStyles" /* 8122 */;
+import utils_FunctionUtils from "utils/FunctionUtils" /* 5258 */;
+import FastImageDefault from "FastImage" /* 5842 */;
+import TimeUtils from "TimeUtils" /* 5901 */;
+import inlineStyles from "inlineStyles" /* 8101 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -39,7 +39,7 @@ let obj = function _timeOut() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -120,7 +120,7 @@ function SvgArt(url) {
               const obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } else {
             try {
@@ -194,7 +194,7 @@ function SvgArt(url) {
                   c2 = 0;
                 }
                 c4 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               }
             } catch (tmp18) {
               if (0 === c2) {
@@ -236,7 +236,7 @@ function SvgArt(url) {
       let tmp11 = url;
       let tmp12 = dependencyMap;
       size = { width, height };
-      tmp9 = jsx(url(8122).SvgAst, { ast: tmp2, override: size });
+      tmp9 = jsx(url(8101).SvgAst, { ast: tmp2, override: size });
     }
     fallback = tmp9;
   }
@@ -286,7 +286,7 @@ export default function BadgeArtImage(style) {
         const obj7 = PlatformUtils;
         const tmp10 = require;
         if (obj7.isAndroid()) {
-          jsx(tmp10(9606).APNGPlayer, { url: fallbackUrl, style: size, autoplay: true, onLoad });
+          jsx(tmp10(9588).APNGPlayer, { url: fallbackUrl, style: size, autoplay: true, onLoad });
         }
       }
       const obj4 = { uri: fallbackUrl };
@@ -308,7 +308,7 @@ export default function BadgeArtImage(style) {
       const obj3 = PlatformUtils;
       const tmp = require;
       if (obj3.isAndroid()) {
-        tmp6 = jsx(tmp(9606).APNGPlayer, { url, style: size, autoplay: true, onLoad });
+        tmp6 = jsx(tmp(9588).APNGPlayer, { url, style: size, autoplay: true, onLoad });
         tmp3 = jsx;
       }
     }

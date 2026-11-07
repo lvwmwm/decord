@@ -1,18 +1,18 @@
-// Module ID: 8622
-// Function ID: 8623
+// Module ID: 8601
+// Function ID: 8602
 // Name: UserOfferActionCreators
-// Dependencies: [5, 8623, 7733, 7729, 1387, 1072, 1377, 572, 1252, 1282, 8624, 1242, 5200, 5003, 5000, 2]
+// Dependencies: [5, 8602, 7710, 7706, 1387, 1072, 1377, 572, 1252, 1282, 8603, 1242, 5170, 4973, 4970, 2]
 // Exports: acknowledgeUserOffer, fetchChurnDiscountOffer, fetchExistingChurnDiscountOffer, fetchUserOffer, triggerUserOffer
 
-// Module 8622 (UserOfferActionCreators)
+// Module 8601 (UserOfferActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserDiscountOfferRecord from "UserDiscountOfferRecord" /* 8623 */;
-import UserTrialOfferRecord from "UserTrialOfferRecord" /* 7733 */;
-import UserOfferStore from "UserOfferStore" /* 7729 */;
+import UserDiscountOfferRecord from "UserDiscountOfferRecord" /* 8602 */;
+import UserTrialOfferRecord from "UserTrialOfferRecord" /* 7710 */;
+import UserOfferStore from "UserOfferStore" /* 7706 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -58,7 +58,7 @@ let obj = function _fetchUserOffer() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c11;
@@ -90,7 +90,7 @@ let obj = function _fetchUserOffer() {
               }
               obj6 = closure_2;
               if (closure_2 === undefined) {
-                obj6 = { offerId: "Array", paymentGatewayOverride: "channel" };
+                obj6 = { offerId: "Array", paymentGatewayOverride: "flexDirection" };
               }
               offerId = undefined;
               paymentGatewayOverride = undefined;

@@ -1,12 +1,12 @@
-// Module ID: 14080
-// Function ID: 14081
+// Module ID: 14105
+// Function ID: 14106
 // Name: ListSelectionItem
-// Dependencies: [19, 21, 7063, 2]
+// Dependencies: [19, 21, 7038, 2]
 // Exports: default
 
-// Module 14080 (ListSelectionItem)
+// Module 14105 (ListSelectionItem)
 import Fragment from "Fragment" /* 21 */;
-import TableRow2 from "TableRow" /* 7063 */;
+import TableRow2 from "TableRow" /* 7038 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

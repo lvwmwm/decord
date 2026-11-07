@@ -1,10 +1,10 @@
-// Module ID: 15665
-// Function ID: 15666
+// Module ID: 15707
+// Function ID: 15708
 // Name: PremiumPlanSelect
-// Dependencies: [5, 32, 19, 17, 7708, 5041, 2175, 2176, 7696, 15666, 1387, 1072, 7716, 5903, 21, 5170, 6803, 6858, 575, 6185, 15667, 5781, 1113, 2171, 15671, 15672, 15673, 15674, 15675, 15676, 9630, 5754, 504, 15677, 15461, 5399, 1187, 1252, 15499, 15500, 7063, 15678, 5872, 7040, 5450, 5177, 1357, 7691, 10696, 6117, 15679, 2118, 7151, 5745, 7692, 4983, 6824, 7694, 10716, 7410, 7518, 5769, 5751, 10813, 10703, 1499, 7701, 15512, 7435, 10704, 6614, 11535, 15475, 7686, 10047, 2182, 10812, 2]
+// Dependencies: [5, 32, 19, 17, 7685, 5011, 2175, 2176, 7673, 15708, 1387, 1072, 7693, 5872, 21, 5140, 6778, 6833, 575, 6159, 15709, 5751, 1113, 2171, 15713, 15714, 15715, 15716, 15717, 15718, 9612, 5724, 504, 15719, 15496, 5369, 1187, 1252, 15534, 15535, 7038, 15720, 5842, 7015, 5420, 5147, 1357, 7668, 10679, 6091, 15721, 2118, 7126, 5715, 7669, 4953, 6799, 7671, 10699, 7387, 7495, 5739, 5721, 10796, 10686, 1499, 7678, 15547, 7412, 10687, 6589, 11517, 15510, 7663, 10031, 2182, 10795, 2]
 // Exports: default
 
-// Module 15665 (PremiumPlanSelect)
+// Module 15707 (PremiumPlanSelect)
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
@@ -12,43 +12,43 @@ import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1357 */;
 import PremiumUtils from "PremiumUtils" /* 2171 */;
 import PremiumSubscription from "PremiumSubscription" /* 2182 */;
-import LinearGradientDefault from "LinearGradient" /* 5745 */;
-import Text_Text from "Text/Text" /* 5781 */;
-import PaymentConstants from "PaymentConstants" /* 5903 */;
-import Stack_Stack from "Stack/Stack" /* 6185 */;
-import actions_BillingActionCreators from "actions/BillingActionCreators" /* 6614 */;
-import TextStylesDefault from "TextStyles" /* 6803 */;
-import LegacyTokens from "LegacyTokens" /* 6858 */;
-import SubscriptionPlanActionCreators from "SubscriptionPlanActionCreators" /* 7518 */;
-import PremiumBundledPlansUtils from "PremiumBundledPlansUtils" /* 7691 */;
-import ProductIds from "ProductIds" /* 7692 */;
-import NativeCheckoutStore from "NativeCheckoutStore" /* 7708 */;
-import NitroWheelIcon2 from "NitroWheelIcon" /* 9630 */;
-import PremiumAnalyticsUtils from "PremiumAnalyticsUtils" /* 10696 */;
-import PaymentFlowStartedTriggerPoint from "PaymentFlowStartedTriggerPoint" /* 10813 */;
-import openPremiumPlanWhatYouLoseActionSheetDefault from "openPremiumPlanWhatYouLoseActionSheet" /* 15499 */;
-import PremiumPlanWhatYouLoseActionSheet from "PremiumPlanWhatYouLoseActionSheet" /* 15500 */;
-import TreasureChestBannerSpotIllustration from "TreasureChestBannerSpotIllustration" /* 15667 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15671 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 15672 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 15673 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 15674 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 15675 */;
-import AssetRegistryDefault6 from "AssetRegistry" /* 15676 */;
+import LinearGradientDefault from "LinearGradient" /* 5715 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import PaymentConstants from "PaymentConstants" /* 5872 */;
+import Stack_Stack from "Stack/Stack" /* 6159 */;
+import actions_BillingActionCreators from "actions/BillingActionCreators" /* 6589 */;
+import TextStylesDefault from "TextStyles" /* 6778 */;
+import LegacyTokens from "LegacyTokens" /* 6833 */;
+import SubscriptionPlanActionCreators from "SubscriptionPlanActionCreators" /* 7495 */;
+import PremiumBundledPlansUtils from "PremiumBundledPlansUtils" /* 7668 */;
+import ProductIds from "ProductIds" /* 7669 */;
+import NativeCheckoutStore from "NativeCheckoutStore" /* 7685 */;
+import NitroWheelIcon2 from "NitroWheelIcon" /* 9612 */;
+import PremiumAnalyticsUtils from "PremiumAnalyticsUtils" /* 10679 */;
+import PaymentFlowStartedTriggerPoint from "PaymentFlowStartedTriggerPoint" /* 10796 */;
+import openPremiumPlanWhatYouLoseActionSheetDefault from "openPremiumPlanWhatYouLoseActionSheet" /* 15534 */;
+import PremiumPlanWhatYouLoseActionSheet from "PremiumPlanWhatYouLoseActionSheet" /* 15535 */;
+import TreasureChestBannerSpotIllustration from "TreasureChestBannerSpotIllustration" /* 15709 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15713 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 15714 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 15715 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 15716 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 15717 */;
+import AssetRegistryDefault6 from "AssetRegistry" /* 15718 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildStore from "GuildStore" /* 5041 */;
+import GuildStore from "GuildStore" /* 5011 */;
 import SubscriptionPlanStore from "SubscriptionPlanStore" /* 2175 */;
 import SubscriptionStore from "SubscriptionStore" /* 2176 */;
-import IAPStore from "IAPStore" /* 7696 */;
-import PremiumPlanSelectStore from "PremiumPlanSelectStore" /* 15666 */;
+import IAPStore from "IAPStore" /* 7673 */;
+import PremiumPlanSelectStore from "PremiumPlanSelectStore" /* 15708 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
 import Constants from "Constants" /* 1072 */;
-import ColorConstants from "ColorConstants" /* 7716 */;
+import ColorConstants from "ColorConstants" /* 7693 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -542,7 +542,7 @@ function PlanSection(label) {
                                             const obj2 = { value, done: true };
                                             return obj2;
                                           } else {
-                                            return { value: "HermesInternal", done: null };
+                                            return { value: "HermesInternal", done: "HermesInternal" };
                                           }
                                         } else {
                                           try {
@@ -572,7 +572,7 @@ function PlanSection(label) {
                                               return obj;
                                             } else {
                                               productId = 3;
-                                              return { value: "HermesInternal", done: null };
+                                              return { value: "HermesInternal", done: "HermesInternal" };
                                             }
                                           } catch (tmp4) {
                                             productId = 3;
@@ -591,7 +591,7 @@ function PlanSection(label) {
                                             const obj3 = { value, done: true };
                                             return obj3;
                                           } else {
-                                            return { value: "HermesInternal", done: null };
+                                            return { value: "HermesInternal", done: "HermesInternal" };
                                           }
                                         } else {
                                           try {
@@ -623,7 +623,7 @@ function PlanSection(label) {
                                               return obj;
                                             } else {
                                               c0 = 3;
-                                              return { value: "HermesInternal", done: null };
+                                              return { value: "HermesInternal", done: "HermesInternal" };
                                             }
                                           } catch (tmp11) {
                                             c0 = 3;
@@ -665,7 +665,7 @@ function PlanSection(label) {
   });
   if (shouldShowModernBoostFlow) {
     let obj2 = { title: label, hasIcons: true, children: mapped };
-    tmp7Result = tmp7(tmp2(7151).TableRowGroup, obj2);
+    tmp7Result = tmp7(tmp2(7126).TableRowGroup, obj2);
   } else {
     let tmp8 = closure_6;
     let obj3 = { children: mapped };
@@ -869,7 +869,7 @@ function PlanSections(isBoostPurchaseFlow) {
             const tmp8 = require;
             if (result) {
               const interval = productId.interval;
-              const tmp8Result = tmp8(7691);
+              const tmp8Result = tmp8(7668);
               result = interval === tmp8Result.getPremiumBundledItemsFromProductId(tmp).interval;
             }
             tmp7 = result;
@@ -1136,7 +1136,7 @@ function PremiumPlanSelect(isBoostPurchaseFlow) {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -1228,7 +1228,7 @@ function PremiumPlanSelect(isBoostPurchaseFlow) {
                 c5 = 0;
               }
               c7 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
             closure_2_13(false);
           }

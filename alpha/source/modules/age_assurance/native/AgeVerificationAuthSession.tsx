@@ -1,13 +1,13 @@
-// Module ID: 8080
-// Function ID: 8081
+// Module ID: 8059
+// Function ID: 8060
 // Name: AgeVerificationAuthSession
-// Dependencies: [5, 3, 560, 5899, 1377, 2]
+// Dependencies: [5, 3, 560, 5868, 1377, 2]
 // Exports: closeAgeVerificationAuthSession, getIsAgeVerificationAuthSessionAwaitingResult, getIsAgeVerificationAuthSessionOpen, openAgeVerificationAuthSession, useIsAgeVerificationAuthSessionOpen
 
-// Module 8080 (AgeVerificationAuthSession)
+// Module 8059 (AgeVerificationAuthSession)
 import LoggerDefault from "Logger" /* 3 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
-import react_nativeDefault from "react-native" /* 5899 */;
+import react_nativeDefault from "react-native" /* 5868 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;
@@ -58,7 +58,7 @@ let obj = function _openAgeVerificationAuthSession() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {

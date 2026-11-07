@@ -1,17 +1,17 @@
-// Module ID: 7427
-// Function ID: 7428
+// Module ID: 7404
+// Function ID: 7405
 // Name: ProviderConnectionCard
-// Dependencies: [5, 19, 1072, 21, 5399, 6654, 1113, 7428, 7429, 1252, 5916, 1411, 5177, 1187, 5882, 7423, 2]
+// Dependencies: [5, 19, 1072, 21, 5369, 6629, 1113, 7405, 7406, 1252, 5889, 1411, 5147, 1187, 5851, 7400, 2]
 // Exports: default
 
-// Module 7427 (ProviderConnectionCard)
+// Module 7404 (ProviderConnectionCard)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import native from "native" /* 1187 */;
 import AvatarUtils from "AvatarUtils" /* 1411 */;
-import shared from "shared" /* 5177 */;
-import LinkIcon from "LinkIcon" /* 5882 */;
-import PlatformsDefault from "Platforms" /* 6654 */;
+import shared from "shared" /* 5147 */;
+import LinkIcon from "LinkIcon" /* 5851 */;
+import PlatformsDefault from "Platforms" /* 6629 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -75,7 +75,7 @@ export default function ProviderConnectionCard(connection) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -111,7 +111,7 @@ export default function ProviderConnectionCard(connection) {
             return obj;
           } else {
             guildId = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp8) {
           guildId = 3;

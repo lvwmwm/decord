@@ -1,10 +1,10 @@
-// Module ID: 13512
-// Function ID: 13513
+// Module ID: 13537
+// Function ID: 13538
 // Name: useUserIsConsideredAdult
 // Dependencies: [1385, 504, 2]
 // Exports: default
 
-// Module 13512 (useUserIsConsideredAdult)
+// Module 13537 (useUserIsConsideredAdult)
 import get_initialized from "get initialized" /* 504 */;
 import UserStore from "UserStore" /* 1385 */;
 import size from "module_2" /* 2 */;

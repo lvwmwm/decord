@@ -1,26 +1,26 @@
-// Module ID: 14557
-// Function ID: 14558
+// Module ID: 14590
+// Function ID: 14591
 // Name: HubEmailConnectionGuildSelectSearch
-// Dependencies: [5, 32, 19, 17, 14531, 21, 5170, 575, 5872, 14558, 5781, 1113, 1499, 6979, 1627, 14544, 6604, 7089, 7652, 7380, 1187, 14553, 2]
+// Dependencies: [5, 32, 19, 17, 14564, 21, 5140, 575, 5842, 14591, 5751, 1113, 1499, 6954, 1627, 14577, 6579, 7064, 7629, 7357, 1187, 14586, 2]
 // Exports: default
 
-// Module 14557 (HubEmailConnectionGuildSelectSearch)
+// Module 14590 (HubEmailConnectionGuildSelectSearch)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
 import useNavigation from "useNavigation" /* 1499 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import Text_Text from "Text/Text" /* 5781 */;
-import FastImageDefault from "FastImage" /* 5872 */;
-import fuzzysearchDefault from "fuzzysearch" /* 6979 */;
-import HubConstants from "HubConstants" /* 14531 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14558 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import FastImageDefault from "FastImage" /* 5842 */;
+import fuzzysearchDefault from "fuzzysearch" /* 6954 */;
+import HubConstants from "HubConstants" /* 14564 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14591 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -33,9 +33,9 @@ let obj2;
 let obj3;
 let tmp2;
 let tmp9;
-const NavigatorHeader = tmp2(7089);
-const defaultMVCPConfig = tmp2(7380);
-const SearchBarNavDefault = tmp9(7652);
+const NavigatorHeader = tmp2(7064);
+const defaultMVCPConfig = tmp2(7357);
+const SearchBarNavDefault = tmp9(7629);
 function EmptyState() {
   let intl;
   let items;
@@ -148,7 +148,7 @@ export default function HubEmailConnectionGuildSelectSearch(arg0) {
               const obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } else {
             let c3;
@@ -205,7 +205,7 @@ export default function HubEmailConnectionGuildSelectSearch(arg0) {
                 c3 = 0;
                 constants(false);
                 c5 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               }
             } catch (tmp42) {
               closure_2 = tmp42;

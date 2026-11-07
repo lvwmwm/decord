@@ -1,18 +1,18 @@
-// Module ID: 12948
-// Function ID: 12949
+// Module ID: 12959
+// Function ID: 12960
 // Name: ConjureClarificationCard
-// Dependencies: [32, 19, 17, 21, 5170, 575, 1113, 4024, 12949, 12950, 12777, 7173, 12306, 5781, 8119, 7145, 12951, 7151, 7062, 7065, 12944, 5788, 12955, 2]
+// Dependencies: [32, 19, 17, 21, 5140, 575, 1113, 4026, 12960, 12961, 12790, 7148, 12304, 5751, 8098, 7120, 12962, 7126, 7037, 7040, 12955, 5758, 12966, 2]
 // Exports: default
 
-// Module 12948 (ConjureClarificationCard)
+// Module 12959 (ConjureClarificationCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ConjureClarification from "ConjureClarification" /* 12777 */;
-import ConjureImageOptions from "ConjureImageOptions" /* 12949 */;
+import ConjureClarification from "ConjureClarification" /* 12790 */;
+import ConjureImageOptions from "ConjureImageOptions" /* 12960 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;
@@ -85,7 +85,7 @@ export default function ConjureClarificationCard(projectId) {
   let tmp71;
   let tmp72;
   let tmp8;
-  const f104214 = () => {
+  const f104616 = () => {
     const questions = clarification.questions;
     return Object.fromEntries(questions.flatMap((default_entities) => {
       let items2;
@@ -130,8 +130,8 @@ export default function ConjureClarificationCard(projectId) {
   [tmp6, c7] = tmp5;
   let tmp7 = _slicedToArray(react.useState({}), 2);
   [tmp8, c8] = tmp7;
-  [tmp10, c9] = _slicedToArray(react.useState(f104214), 2);
-  const tmp9 = _slicedToArray(react.useState(f104214), 2);
+  [tmp10, c9] = _slicedToArray(react.useState(f104616), 2);
+  const tmp9 = _slicedToArray(react.useState(f104616), 2);
   [tmp12, c10] = _slicedToArray(react.useState({}), 2);
   const tmp11 = _slicedToArray(react.useState({}), 2);
   [first1, closure_12] = react.useState({});
@@ -172,7 +172,7 @@ export default function ConjureClarificationCard(projectId) {
       const result = obj.followingClarificationStep(clarification, arg0, bound);
       const tmp3 = require;
       if (null == result) {
-        const tmp3Result = tmp3(12777);
+        const tmp3Result = tmp3(12790);
         result1 = tmp3Result.submitClarificationAnswers(projectId, tmp5, arg0, first1, tmp);
       } else {
         closure_13(result);

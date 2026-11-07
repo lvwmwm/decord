@@ -1,17 +1,16 @@
 // Module ID: 16439
 // Function ID: 16440
-// Dependencies: [16386, 16437, 16420]
+// Dependencies: [16435]
 
 // Module 16439
-import _mod16386 from "module_16386" /* 16386 */;
-import _mod16420 from "module_16420" /* 16420 */;
-import defineProperty2 from "defineProperty2" /* 16437 */;
+import _mod16435 from "module_16435" /* 16435 */;
 
 
-export default _mod16386 ? ((arg0, arg1, arg2) => {
-  const obj = defineProperty2;
-  return obj.f(arg0, arg1, _mod16420(1, arg2));
-}) : ((arg0, arg1, arg2) => {
-  arg0[arg1] = arg2;
-  return arg0;
+export default !_mod16435(() => {
+  const fn = () => {
+
+  };
+  const bindResult = fn.bind();
+  const hasOwnPropertyResult = typeof bindResult !== "function" || bindResult.hasOwnProperty("prototype");
+  return hasOwnPropertyResult;
 });

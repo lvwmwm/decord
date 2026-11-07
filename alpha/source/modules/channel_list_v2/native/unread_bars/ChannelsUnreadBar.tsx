@@ -1,20 +1,20 @@
-// Module ID: 18514
-// Function ID: 18515
+// Module ID: 18561
+// Function ID: 18562
 // Name: ChannelsUnreadBar
-// Dependencies: [32, 19, 17, 11199, 1072, 21, 1652, 5170, 575, 1377, 9928, 5796, 11195, 5916, 17339, 1705, 5791, 5792, 8754, 13247, 13245, 5781, 1113, 2]
+// Dependencies: [32, 19, 17, 5882, 1072, 21, 1652, 5140, 575, 1377, 9912, 5766, 5883, 5889, 17387, 1705, 5761, 5762, 8733, 13270, 13268, 5751, 1113, 2]
 
-// Module 18514 (ChannelsUnreadBar)
+// Module 18561 (ChannelsUnreadBar)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5916 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5889 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11199 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 5882 */;
 import Fragment from "Fragment" /* 21 */;
 import module_1652 from "module_1652" /* 1652 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let bodyxssemibold;

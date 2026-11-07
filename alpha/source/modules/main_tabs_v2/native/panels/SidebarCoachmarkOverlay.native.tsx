@@ -1,13 +1,13 @@
-// Module ID: 18345
-// Function ID: 18346
+// Module ID: 18392
+// Function ID: 18393
 // Name: SidebarCoachmarkOverlay
-// Dependencies: [32, 19, 17, 1072, 21, 5769, 5770, 2]
+// Dependencies: [32, 19, 17, 1072, 21, 5739, 5740, 2]
 // Exports: SidebarCoachmarkOverlay
 
-// Module 18345 (SidebarCoachmarkOverlay)
+// Module 18392 (SidebarCoachmarkOverlay)
 import Constants from "Constants" /* 1072 */;
-import reactDefault from "react" /* 5769 */;
-import LayerContext from "LayerContext" /* 5770 */;
+import reactDefault from "react" /* 5739 */;
+import LayerContext from "LayerContext" /* 5740 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

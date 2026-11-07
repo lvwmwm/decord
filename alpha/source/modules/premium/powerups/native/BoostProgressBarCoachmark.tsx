@@ -1,18 +1,18 @@
-// Module ID: 18499
-// Function ID: 18500
+// Module ID: 18546
+// Function ID: 18547
 // Name: BoostProgressBarCoachmark
-// Dependencies: [19, 17, 5016, 21, 5170, 9172, 1113, 2696, 5293, 10092, 2]
+// Dependencies: [19, 17, 4986, 21, 5140, 9154, 1113, 2696, 5263, 10076, 2]
 // Exports: default
 
-// Module 18499 (BoostProgressBarCoachmark)
+// Module 18546 (BoostProgressBarCoachmark)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import intl4 from "intl" /* 1113 */;
 import _modDef2696 from "module_2696" /* 2696 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 5016 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9172 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4986 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9154 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -66,7 +66,7 @@ export default function BoostProgressBarCoachmark(guild) {
     intl3 = intl4.intl;
     return obj;
   }, items2);
-  let obj = guild(10092);
+  let obj = guild(10076);
   const coachmark = obj.useCoachmark(targetRef, memo);
   return null;
 };

@@ -1,13 +1,13 @@
-// Module ID: 8079
-// Function ID: 8080
+// Module ID: 8058
+// Function ID: 8059
 // Name: AgeVerificationCustomTab
-// Dependencies: [5, 3, 560, 5898, 1377, 2]
+// Dependencies: [5, 3, 560, 5867, 1377, 2]
 // Exports: getIsAgeVerificationCustomTabAwaitingResult, openAgeVerificationCustomTab, resumeAgeVerificationCustomTab, setAgeVerificationCustomTabCopy, useAgeVerificationCustomTabCopy, useIsAgeVerificationCustomTabOpen
 
-// Module 8079 (AgeVerificationCustomTab)
+// Module 8058 (AgeVerificationCustomTab)
 import LoggerDefault from "Logger" /* 3 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
-import react_nativeDefault from "react-native" /* 5898 */;
+import react_nativeDefault from "react-native" /* 5867 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;
@@ -65,7 +65,7 @@ let obj = function _openAgeVerificationCustomTab() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -151,7 +151,7 @@ obj = function _resumeAgeVerificationCustomTab() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c3;
@@ -203,10 +203,10 @@ obj = function _resumeAgeVerificationCustomTab() {
         } else {
           c3 = 0;
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
         c5 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp20) {
         closure_2 = tmp20;
         if (0 === c3) {

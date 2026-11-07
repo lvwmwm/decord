@@ -1,28 +1,28 @@
-// Module ID: 19624
-// Function ID: 19625
+// Module ID: 19696
+// Function ID: 19697
 // Name: VoicePanelMicButton
-// Dependencies: [32, 19, 5921, 5075, 502, 5019, 2130, 5102, 1385, 5833, 21, 3, 5170, 504, 7621, 12145, 12178, 11380, 1652, 19505, 5406, 11369, 5450, 1705, 19625, 19626, 1113, 12147, 5781, 9338, 12146, 2]
+// Dependencies: [32, 19, 5894, 5045, 502, 4989, 2130, 5072, 1385, 5803, 21, 3, 5140, 504, 7598, 12136, 12169, 11362, 1652, 19564, 5376, 11351, 5420, 1705, 19697, 19698, 1113, 12138, 5751, 9320, 12137, 2]
 // Exports: MicButton, PTTButton
 
-// Module 19624 (VoicePanelMicButton)
+// Module 19696 (VoicePanelMicButton)
 import LoggerDefault from "Logger" /* 3 */;
 import _mod1705 from "module_1705" /* 1705 */;
-import HapticUtils from "HapticUtils" /* 5406 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5450 */;
-import MediaEngineActionCreators from "MediaEngineActionCreators" /* 11369 */;
-import VoiceActionUtils from "VoiceActionUtils" /* 12145 */;
+import HapticUtils from "HapticUtils" /* 5376 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5420 */;
+import MediaEngineActionCreators from "MediaEngineActionCreators" /* 11351 */;
+import VoiceActionUtils from "VoiceActionUtils" /* 12136 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import GameConsoleStore from "GameConsoleStore" /* 5921 */;
-import ImpersonateStore from "ImpersonateStore" /* 5075 */;
+import GameConsoleStore from "GameConsoleStore" /* 5894 */;
+import ImpersonateStore from "ImpersonateStore" /* 5045 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 5019 */;
+import ChannelStore from "ChannelStore" /* 4989 */;
 import MediaEngineStore from "MediaEngineStore" /* 2130 */;
-import PermissionStore from "PermissionStore" /* 5102 */;
+import PermissionStore from "PermissionStore" /* 5072 */;
 import UserStore from "UserStore" /* 1385 */;
-import VoiceStateStore from "VoiceStateStore" /* 5833 */;
+import VoiceStateStore from "VoiceStateStore" /* 5803 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -335,10 +335,10 @@ export function MicButton(arg0) {
     let tmp3Result;
     if (dominantMuteState === VoiceActionUtils.DominantMuteState.SERVER_MUTE) {
       const obj2 = { color: voicePanelButtonStyles.iconFillRed.color };
-      tmp3Result = map1(tmp(9338).MicrophoneDenyIcon, obj2);
+      tmp3Result = map1(tmp(9320).MicrophoneDenyIcon, obj2);
     } else {
       let color;
-      const VoicePanelRiveMicButton = tmp(12146).VoicePanelRiveMicButton;
+      const VoicePanelRiveMicButton = tmp(12137).VoicePanelRiveMicButton;
       const tmp3 = map1;
       if (mute) {
         color = tmp5.iconFillRed.color;

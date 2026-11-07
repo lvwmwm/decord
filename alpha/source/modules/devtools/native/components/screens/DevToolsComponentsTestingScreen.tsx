@@ -1,28 +1,28 @@
-// Module ID: 17989
-// Function ID: 17990
+// Module ID: 18036
+// Function ID: 18037
 // Name: DevToolsComponentsTestingScreen
-// Dependencies: [32, 19, 17, 5073, 21, 5170, 575, 6223, 2116, 8788, 7065, 5781, 17990, 17993, 5788, 6185, 17994, 572, 2]
+// Dependencies: [32, 19, 17, 5043, 21, 5140, 575, 6198, 2116, 8767, 7040, 5751, 18037, 18040, 5758, 6159, 18041, 572, 2]
 // Exports: default
 
-// Module 17989 (DevToolsComponentsTestingScreen)
+// Module 18036 (DevToolsComponentsTestingScreen)
 import react_native from "react-native" /* 17 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import nativeDefault from "native" /* 575 */;
 import Server from "Server" /* 2116 */;
-import Text_Text from "Text/Text" /* 5781 */;
-import components_Button_Button from "components/Button/Button" /* 5788 */;
-import Stack_Stack from "Stack/Stack" /* 6185 */;
-import Card_Card from "Card/Card" /* 7065 */;
-import ComponentStateContext from "ComponentStateContext" /* 8788 */;
-import StringSelectActionComponentDefault from "StringSelectActionComponent" /* 17990 */;
-import SearchableSelectActionComponentDefault from "SearchableSelectActionComponent" /* 17993 */;
-import TextDisplayComponentDefault from "TextDisplayComponent" /* 17994 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import components_Button_Button from "components/Button/Button" /* 5758 */;
+import Stack_Stack from "Stack/Stack" /* 6159 */;
+import Card_Card from "Card/Card" /* 7040 */;
+import ComponentStateContext from "ComponentStateContext" /* 8767 */;
+import StringSelectActionComponentDefault from "StringSelectActionComponent" /* 18037 */;
+import SearchableSelectActionComponentDefault from "SearchableSelectActionComponent" /* 18040 */;
+import TextDisplayComponentDefault from "TextDisplayComponent" /* 18041 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5073 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5043 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
-import InteractionComponentUtils from "InteractionComponentUtils" /* 6223 */;
+import createStyles_mod from "createStyles" /* 5140 */;
+import InteractionComponentUtils from "InteractionComponentUtils" /* 6198 */;
 import size from "module_2" /* 2 */;
 
 let closure_12;
@@ -74,7 +74,7 @@ function Select(type) {
   }
   if (type1 === obj.type) {
     let mapped;
-    const Text = tmp4(5781).Text;
+    const Text = tmp4(5751).Text;
     if ("values" in state) {
       mapped = state.values;
     } else {
@@ -85,11 +85,11 @@ function Select(type) {
     items1 = ["Selected values: ", mapped.join(", ")];
     tmp7Result1 = tmp6(Text, obj6);
   } else {
-    tmp7Result1 = tmp7(tmp4(5781).Text, { variant: "body-md/normal", children: "Nothing selected" });
+    tmp7Result1 = tmp7(tmp4(5751).Text, { variant: "body-md/normal", children: "Nothing selected" });
   }
   items[2] = tmp7Result1;
   let str3 = "off";
-  const Button = tmp4(5788).Button;
+  const Button = tmp4(5758).Button;
   if (tmp2) {
     str3 = "on";
   }

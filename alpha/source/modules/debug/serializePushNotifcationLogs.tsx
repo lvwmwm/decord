@@ -1,10 +1,10 @@
-// Module ID: 11244
-// Function ID: 11245
+// Module ID: 11226
+// Function ID: 11227
 // Name: serializePushNotifcationLogs
 // Dependencies: [1072, 510, 2]
 // Exports: default
 
-// Module 11244 (serializePushNotifcationLogs)
+// Module 11226 (serializePushNotifcationLogs)
 import Storage3 from "Storage" /* 510 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;

@@ -1,31 +1,15 @@
-// Module ID: 19636
-// Function ID: 19637
+// Module ID: 19708
+// Function ID: 19709
 // Name: VoicePanelVideoButton
-// Dependencies: [19, 17, 11877, 5019, 5041, 2130, 5102, 5924, 21, 11380, 19625, 504, 6804, 14770, 6118, 14773, 1113, 19637, 9319, 11896, 19626, 14792, 5299, 11186, 15104, 2]
+// Dependencies: [19, 17, 21, 11362, 19697, 19571, 19698, 1113, 14825, 5269, 11172, 15136, 2]
 // Exports: default
 
-// Module 19636 (VoicePanelVideoButton)
+// Module 19708 (VoicePanelVideoButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import intl2 from "intl" /* 1113 */;
-import CameraRive2 from "CameraRive" /* 5299 */;
-import Constants from "Constants" /* 5924 */;
-import useAlertStore from "useAlertStore" /* 6118 */;
-import StreamPermissionUtils from "StreamPermissionUtils" /* 6804 */;
-import CallsUtils from "CallsUtils" /* 9319 */;
-import openIgnoreThermalStateAlert from "openIgnoreThermalStateAlert" /* 11896 */;
-import VoicePanelVideoGuardErrorAlert from "VoicePanelVideoGuardErrorAlert" /* 14773 */;
-import VoicePanelNoVideoPermissionsAlert from "VoicePanelNoVideoPermissionsAlert" /* 19637 */;
+import CameraRive2 from "CameraRive" /* 5269 */;
 import react from "react" /* 19 */;
-import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 11877 */;
-import ChannelStore from "ChannelStore" /* 5019 */;
-import GuildStore from "GuildStore" /* 5041 */;
-import MediaEngineStore from "MediaEngineStore" /* 2130 */;
-import PermissionStore from "PermissionStore" /* 5102 */;
 import size from "module_2" /* 2 */;
-
-const VoicePanelVideoGuardErrorAlertDefault = VoicePanelVideoGuardErrorAlert;
-const VoicePanelNoVideoPermissionsAlertDefault = VoicePanelNoVideoPermissionsAlert;
 
 function VideoButtonRive(arg0) {
   let color;
@@ -37,103 +21,37 @@ function VideoButtonRive(arg0) {
     str = "CamOn";
   }
   if (isVideoEnabled) {
-    let VideoSlashIcon = tmp3(11186).VideoIcon;
+    let VideoSlashIcon = tmp3(11172).VideoIcon;
   } else {
-    VideoSlashIcon = tmp3(15104).VideoSlashIcon;
+    VideoSlashIcon = tmp3(15136).VideoSlashIcon;
   }
   return <tmp2 style={{ width: 24, height: 24, pointerEvents: "none" }}>{null}</tmp2>;
 }
 const View = react_native.View;
-const Features = Constants.Features;
 const jsx = Fragment.jsx;
-let result = size.fileFinishedImporting("modules/voice_panel/native/controls/buttons/VoicePanelVideoButton.tsx");
+const result = size.fileFinishedImporting("modules/voice_panel/native/controls/buttons/VoicePanelVideoButton.tsx");
 
 export default function VideoButton(arg0) {
+  let onPress;
   let props;
   let stringResult;
-  let tmp13;
+  let videoBlocked;
+  let videoSupported;
   let wrapperSpecs;
-  let stateFromStores;
-  let stateFromStores1;
-  let stateFromStores2;
+  let isVideoEnabled;
   let color;
-  let obj = stateFromStores2;
-  let tmp2 = stateFromStores1;
   ({ props, wrapperSpecs } = arg0);
-  let tmp = stateFromStores;
-  const channelId = stateFromStores2.useContext(stateFromStores(stateFromStores1[9])).channelId;
-  let tmp3 = channelId;
-  let obj2 = channelId(stateFromStores1[10]);
+  const channelId = react.useContext(color(11362)).channelId;
+  const obj2 = isVideoEnabled(19697);
   const voicePanelButtonStyles = obj2.useVoicePanelButtonStyles(wrapperSpecs);
-  let obj3 = channelId(stateFromStores1[11]);
-  const items = [GuildStore, PermissionStore, ChannelStore];
-  stateFromStores = obj3.useStateFromStores(items, () => {
-    const channel = ChannelStore.getChannel(channelId);
-    let tmp = null != channel;
-    if (tmp) {
-      let isPrivateResult = channel.isPrivate();
-      if (!isPrivateResult) {
-        const obj2 = StreamPermissionUtils;
-        isPrivateResult = obj2.canStreamInChannel(channel, GuildStore, PermissionStore, false);
-      }
-      tmp = isPrivateResult;
-    }
-    return tmp;
-  });
-  const items1 = [MediaEngineStore];
-  const obj4 = channelId(stateFromStores1[11]);
-  stateFromStores1 = obj4.useStateFromStores(items1, () => MediaEngineStore.isVideoEnabled());
-  const items2 = [MediaEngineStore];
-  const obj5 = channelId(stateFromStores1[11]);
-  stateFromStores2 = obj5.useStateFromStores(items2, () => MediaEngineStore.supports(constants.VIDEO));
-  const VideoGuardExperiment = channelId(stateFromStores1[13]).VideoGuardExperiment;
-  const videoEnabled = VideoGuardExperiment.useConfig({ location: "VoicePanelVideoButton" }).videoEnabled;
-  let closure_4 = tmp8;
-  const items3 = [channelId, stateFromStores1, stateFromStores, stateFromStores2, tmp8];
-  const callback = stateFromStores2.useCallback(() => {
-    const tmp = closure_4;
-    if (tmp) {
-      const openAlert2 = useAlertStore.openAlert;
-      useAlertStore;
-      const VOICE_PANEL_VIDEO_GUARD_ERROR_KEY = VoicePanelVideoGuardErrorAlert.VOICE_PANEL_VIDEO_GUARD_ERROR_KEY;
-      VoicePanelVideoGuardErrorAlertDefault;
-      const intl = intl2.intl;
-      openAlert2(VOICE_PANEL_VIDEO_GUARD_ERROR_KEY, <tmp23 title={intl.string(intl2.t["8jSzSe"])} />);
-    } else {
-      const tmp2 = stateFromStores2;
-      if (tmp2) {
-        const tmp3 = stateFromStores;
-        if (tmp3) {
-          const channel = ChannelStore.getChannel(channelId);
-          if (null != channel) {
-            const tmp25 = stateFromStores1;
-            if (!tmp25) {
-              if (ChannelCallLifecycleStore.isReactingToThermalState()) {
-                let obj = openIgnoreThermalStateAlert;
-                const result = obj.openIgnoreThermalStateAlert(() => {
-                  if (null != channel) {
-                    const obj = channelId(stateFromStores1[18]);
-                    obj.handleToggleVideo(tmp);
-                  }
-                });
-              }
-            }
-            if (null != channel) {
-              const obj3 = CallsUtils;
-              obj3.handleToggleVideo(channel);
-            }
-          }
-        } else {
-          const openAlert = useAlertStore.openAlert;
-          useAlertStore;
-          openAlert(VoicePanelNoVideoPermissionsAlert.VOICE_PANEL_NO_VIDEO_PERMS_KEY, jsx(VoicePanelNoVideoPermissionsAlertDefault, {}));
-        }
-      }
-    }
-  }, items3);
-  if (stateFromStores2) {
+  const tmp5 = color(19571)(channelId, "VoicePanelVideoButton");
+  isVideoEnabled = tmp5.isVideoEnabled;
+  ({ videoSupported, videoBlocked, onPress } = tmp5);
+  const obj = react;
+  const tmp = color;
+  if (videoSupported) {
     let color2;
-    if (stateFromStores1) {
+    if (isVideoEnabled) {
       color2 = voicePanelButtonStyles.iconFillSelected.color;
     } else {
       color2 = voicePanelButtonStyles.iconFill.color;
@@ -142,25 +60,24 @@ export default function VideoButton(arg0) {
   } else {
     color = voicePanelButtonStyles.iconFillMuted.color;
   }
-  const items4 = [color, stateFromStores1];
-  let memo = obj.useMemo(() => <VideoButtonRive isVideoEnabled={stateFromStores1} color={color} />, items4);
-  const element = { onPress: callback, disabled: tmp13, props, accessibilityLabel: stringResult, style: stateFromStores1 ? voicePanelButtonStyles.iconBgSelected : voicePanelButtonStyles.iconBg, children: memo };
-  tmp13 = !tmp8;
-  const tmpResult = tmp(tmp2[20]);
-  if (videoEnabled) {
-    tmp13 = !stateFromStores2;
+  const items = [color, isVideoEnabled];
+  let memo = obj.useMemo(() => <VideoButtonRive isVideoEnabled={isVideoEnabled} color={color} />, items);
+  let tmp9 = !videoBlocked;
+  tmp(19698);
+  if (!videoBlocked) {
+    tmp9 = !videoSupported;
   }
-  let intl = tmp3(tmp2[16]).intl;
+  const intl = tmp3(1113).intl;
   const string = intl.string;
-  const t = tmp3(tmp2[16]).t;
-  if (stateFromStores1) {
+  const t = tmp3(1113).t;
+  if (isVideoEnabled) {
     stringResult = string(t.EnX2Jl);
   } else {
     stringResult = string(t["v8K+8W"]);
   }
-  if (!videoEnabled) {
-    const obj6 = { color: voicePanelButtonStyles.iconFill.color };
-    memo = tmp11(tmp3(tmp2[21]).VideoDenyIcon, obj6);
+  if (videoBlocked) {
+    const obj3 = { color: voicePanelButtonStyles.iconFill.color };
+    memo = tmp7(tmp3(14825).VideoDenyIcon, obj3);
   }
-  return jsx(tmpResult, element);
+  return <tmpResult onPress={onPress} disabled={tmp9} props={props} accessibilityLabel={stringResult} style={isVideoEnabled ? voicePanelButtonStyles.iconBgSelected : voicePanelButtonStyles.iconBg}>{memo}</tmpResult>;
 };

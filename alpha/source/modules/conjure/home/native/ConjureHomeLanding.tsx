@@ -1,22 +1,22 @@
-// Module ID: 13010
-// Function ID: 13011
+// Module ID: 13033
+// Function ID: 13034
 // Name: ConjureHomeLanding
-// Dependencies: [5, 32, 19, 17, 10987, 21, 575, 5170, 13011, 1499, 1627, 12247, 1652, 13167, 12789, 12775, 13168, 13169, 12954, 11012, 12773, 1500, 12259, 1113, 4024, 11016, 5867, 13171, 7075, 5781, 13172, 12986, 13174, 2]
+// Dependencies: [5, 32, 19, 17, 10970, 21, 575, 5140, 13034, 1499, 1627, 12238, 1652, 13190, 12289, 12788, 13191, 13192, 12965, 10996, 12786, 1500, 12250, 1113, 4026, 11000, 5837, 13194, 7050, 5751, 13195, 13011, 13197, 2]
 // Exports: default
 
-// Module 13010 (ConjureHomeLanding)
+// Module 13033 (ConjureHomeLanding)
 import nativeDefault from "native" /* 575 */;
-import ConjureHomeCarousel from "ConjureHomeCarousel" /* 13011 */;
-import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import ConjureHomeCarousel from "ConjureHomeCarousel" /* 13034 */;
+import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ConjureChatStore from "ConjureChatStore" /* 10987 */;
+import ConjureChatStore from "ConjureChatStore" /* 10970 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
-let _require, c6, closure_0, closure_4, navigation;
+let _require, c5, closure_0, closure_4, closure_5, navigation;
 
 let c10;
 let c9;
@@ -30,6 +30,7 @@ let obj5;
 let obj6;
 let obj7;
 let obj8;
+let _asyncToGenerator = _asyncToGenerator_mod;
 let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
 ({ ScrollView: metroRequire, View: metroImportDefault } = react_native);
@@ -57,9 +58,9 @@ export default function ConjureHomeLanding(focusRequest) {
   let Badge;
   let _undefined;
   let _undefined2;
-  let c5;
+  let c4;
+  let c6;
   let c7;
-  let c8;
   let first;
   let intl;
   let intl2;
@@ -88,24 +89,23 @@ export default function ConjureHomeLanding(focusRequest) {
   }
   navigation = undefined;
   first = undefined;
-  let str;
   forMeGuildId = undefined;
+  _asyncToGenerator = undefined;
   _slicedToArray = undefined;
   react = undefined;
-  let closure_6;
+  c6 = undefined;
   c7 = undefined;
-  c8 = undefined;
+  let closure_8;
   let closure_9;
-  let closure_10;
   const tmp2 = closure_12();
   const tmp3 = navigation;
-  let tmp4 = str;
-  let obj = navigation(str[9]);
+  let tmp4 = forMeGuildId;
+  let obj = navigation(forMeGuildId[9]);
   navigation = obj.useNavigation();
   let tmp6 = first;
-  const bottom = first(str[10])().bottom;
-  let tmp7 = first(str[11])();
-  let obj2 = navigation(str[12]);
+  const bottom = first(forMeGuildId[10])().bottom;
+  let tmp7 = first(forMeGuildId[11])();
+  let obj2 = navigation(forMeGuildId[12]);
   const items = [closure_13, tmp7, bottom];
   let c0;
   let c1;
@@ -132,17 +132,13 @@ export default function ConjureHomeLanding(focusRequest) {
       CONJURE_TARGET_USER = tmp3(tmp4[13]).CONJURE_TARGET_USER;
     }
   }
-  str = "guild";
-  if (CONJURE_TARGET_USER === tmp3(tmp4[13]).CONJURE_TARGET_USER) {
-    str = "user";
-  }
   let tmp16 = CONJURE_TARGET_USER;
   if (CONJURE_TARGET_USER === tmp3(tmp4[13]).CONJURE_TARGET_USER) {
     tmp16 = forMeGuildId;
   }
   forMeGuildId = tmp16;
-  _slicedToArray = obj3.useRef(0);
-  [tmp18, c5] = _slicedToArray(obj3.useState(true), 2);
+  _asyncToGenerator = obj3.useRef(0);
+  [tmp18, c4] = _slicedToArray(obj3.useState(true), 2);
   _slicedToArray(obj3.useState(true), 2);
   const callback = obj3.useCallback((nativeEvent) => {
     _undefined(nativeEvent.nativeEvent.contentOffset.y < ref.current);
@@ -152,11 +148,11 @@ export default function ConjureHomeLanding(focusRequest) {
     ref.current = layout.y + layout.height;
   }, []);
   const tmp12Result4 = _slicedToArray(obj3.useState(false), 2);
-  closure_6 = tmp12Result4[1];
+  react = tmp12Result4[1];
   const first1 = tmp12Result4[0];
-  [tmp24, c7] = _slicedToArray(obj3.useState(null), 2);
+  [tmp24, c6] = _slicedToArray(obj3.useState(null), 2);
   _slicedToArray(obj3.useState(null), 2);
-  [tmp26, c8] = _slicedToArray(obj3.useState(null), 2);
+  [tmp26, c7] = _slicedToArray(obj3.useState(null), 2);
   _slicedToArray(obj3.useState(null), 2);
   const callback2 = obj3.useCallback(() => _undefined2((arg0) => {
     let num = arg0;
@@ -165,29 +161,29 @@ export default function ConjureHomeLanding(focusRequest) {
     }
     return num + 1;
   }), []);
-  closure_9 = obj3.useRef(false);
+  closure_8 = obj3.useRef(false);
   const effect = obj3.useEffect(() => {
-    closure_9.current = true;
+    closure_8.current = true;
     return () => {
-      closure_1_9.current = false;
+      closure_1_8.current = false;
     };
   }, []);
-  closure_10 = obj3.useRef(false);
+  closure_9 = obj3.useRef(false);
   const useCallback = obj3.useCallback;
-  _require = forMeGuildId(function*(arg0, value) {
+  _require = _asyncToGenerator(async function(arg0, value) {
     let closure_2;
     let obj6;
-    let v3;
+    let v2;
     let v6;
     function whenFirstPromptShown(value) {
       closure_0 = value;
       const promise = new Promise((fn) => {
-        const f142981 = (role) => "user" === role.role;
+        const f143616 = (role) => "user" === role.role;
         closure_0 = fn;
         function check() {
-          const messages = closure_3_8.getMessages(closure_0);
-          const obj = closure_3_8;
-          if (messages.some(f142981)) {
+          const messages = ref.getMessages(closure_0);
+          const obj = ref;
+          if (messages.some(f143616)) {
             obj.removeChangeListener(check);
             const _clearTimeout = clearTimeout;
             clearTimeout(timerId);
@@ -195,14 +191,14 @@ export default function ConjureHomeLanding(focusRequest) {
           }
         }
         const timerId = setTimeout(function finish() {
-          closure_3_8.removeChangeListener(check);
+          ref.removeChangeListener(check);
           clearTimeout(timerId);
           fn();
         }, 10000);
         let obj = closure_1_8;
         closure_1_8.addChangeListener(check);
         let messages = closure_1_8.getMessages(closure_0);
-        if (messages.some(f142981)) {
+        if (messages.some(f143616)) {
           obj.removeChangeListener(check);
           let _clearTimeout = clearTimeout;
           clearTimeout(timerId);
@@ -223,13 +219,12 @@ export default function ConjureHomeLanding(focusRequest) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
-      let c5;
       try {
         let projectId;
-        let guildId;
+        let closure_3;
         let text;
         c7 = 2;
         const tmp4 = c6;
@@ -243,54 +238,54 @@ export default function ConjureHomeLanding(focusRequest) {
             return obj3;
           } else {
             projectId = undefined;
-            guildId = undefined;
+            closure_3 = undefined;
             text = undefined;
             if (ref2.current) {
               c7 = 3;
               return { value: false, done: true };
             } else {
               ref2.current = true;
-              c6(true);
-              c7(null);
-              const obj16 = closure_0(closure_2_2[15]);
-              obj16.setComposerDraft(closure_0(closure_2_2[16]).CONJURE_HOME_DRAFT_KEY, "");
+              c5(true);
+              c6(null);
+              const obj16 = closure_0(forMeGuildId[15]);
+              obj16.setComposerDraft(closure_0(forMeGuildId[16]).CONJURE_HOME_DRAFT_KEY, "");
               c5 = 2;
-              const obj4 = { guildId, installScope: projectId, modelSettings: null };
+              const obj4 = { guildId: projectId, installScope: "user", modelSettings: null };
               c6 = 3;
               c7 = 1;
-              const obj5 = { value: first(closure_2_2[17])(obj4), done: false };
+              const obj5 = { value: first(forMeGuildId[17])(obj4), done: false };
               return obj5;
             }
           }
         } else if (1 === tmp4) {
           c5 = 0;
           ref2.current = false;
-          c6(false);
+          c5(false);
           throw closure_4;
         } else if (2 === tmp4) {
           let stringResult;
           c5 = 1;
-          let closure_5 = closure_4;
-          const obj12 = closure_0(closure_2_2[15]);
-          obj12.setComposerDraft(closure_0(closure_2_2[16]).CONJURE_HOME_DRAFT_KEY, closure_0);
+          closure_5 = closure_4;
+          const obj12 = closure_0(forMeGuildId[15]);
+          obj12.setComposerDraft(closure_0(forMeGuildId[16]).CONJURE_HOME_DRAFT_KEY, closure_0);
           if (closure_5 instanceof ConjureHomeUploadError) {
-            const intl = closure_0(closure_2_2[23]).intl;
-            stringResult = intl.string(first(closure_2_2[24])["903H7m"]);
+            const intl = closure_0(forMeGuildId[23]).intl;
+            stringResult = intl.string(first(forMeGuildId[24])["903H7m"]);
           } else {
-            const obj13 = closure_0(closure_2_2[25]);
+            const obj13 = closure_0(forMeGuildId[25]);
             stringResult = obj13.getConjureCreateErrorMessage(closure_5);
           }
           text = stringResult;
           if (ref.current) {
-            c7(text);
+            c6(text);
           } else {
             const obj7 = { text, variant: "critical" };
-            const obj14 = first(closure_2_2[26]);
+            const obj14 = first(forMeGuildId[26]);
             obj14.open("CONJURE_HOME_CREATE_FAILED", obj7);
           }
           c5 = 0;
           ref2.current = false;
-          c6(false);
+          c5(false);
           c7 = 3;
           return { value: false, done: true };
         } else {
@@ -301,13 +296,13 @@ export default function ConjureHomeLanding(focusRequest) {
             } else if (arg0 === 2) {
               c5 = 0;
               ref2.current = false;
-              c6(false);
+              c5(false);
               c7 = 3;
               const obj9 = { value, done: true };
               return obj9;
             } else {
               projectId = value;
-              guildId = [];
+              closure_3 = [];
               if (closure_1.length > 0) {
                 c5 = 3;
                 c6 = 7;
@@ -327,7 +322,7 @@ export default function ConjureHomeLanding(focusRequest) {
             c6 = 8;
             c7 = 1;
             const obj11 = { value: obj6.deleteProject(projectId), done: false };
-            obj6 = closure_0(closure_2_2[19]);
+            obj6 = closure_0(forMeGuildId[19]);
             return obj11;
           } else if (5 === tmp4) {
             if (arg0 === 1) {
@@ -336,7 +331,7 @@ export default function ConjureHomeLanding(focusRequest) {
             } else if (arg0 === 2) {
               c5 = 0;
               ref2.current = false;
-              c6(false);
+              c5(false);
               c7 = 3;
               const obj15 = { value, done: true };
               return obj15;
@@ -345,13 +340,13 @@ export default function ConjureHomeLanding(focusRequest) {
               if (current) {
                 const dispatch = closure_0.dispatch;
                 const obj17 = { projectId, entryPoint: "create" };
-                str = closure_0(closure_2_2[21]).StackActions;
-                dispatch(str.replace(closure_0(closure_2_2[22]).ConjureScreenScenes.CHAT, obj17));
+                const str = closure_0(forMeGuildId[21]).StackActions;
+                dispatch(str.replace(closure_0(forMeGuildId[22]).ConjureScreenScenes.CHAT, obj17));
               }
               c5 = 0;
               ref2.current = false;
               const current2 = ref.current;
-              c6(false);
+              c5(false);
               c7 = 3;
               const obj18 = { value: current2, done: true };
               return obj18;
@@ -366,12 +361,12 @@ export default function ConjureHomeLanding(focusRequest) {
               } else if (arg0 === 2) {
                 c5 = 0;
                 ref2.current = false;
-                c6(false);
+                c5(false);
                 c7 = 3;
                 const obj19 = { value, done: true };
                 return obj19;
               } else {
-                guildId = value.map(function(item) {
+                closure_3 = value.map(function(item) {
                   if ("errorText" in item) {
                     const self = this;
                     throw new closure_1_11();
@@ -387,7 +382,7 @@ export default function ConjureHomeLanding(focusRequest) {
             } else if (arg0 === 2) {
               c5 = 0;
               ref2.current = false;
-              c6(false);
+              c5(false);
               c7 = 3;
               let obj = { value, done: true };
               return obj;
@@ -397,18 +392,18 @@ export default function ConjureHomeLanding(focusRequest) {
             let self = this;
             throw new ConjureHomeUploadError();
           }
-          const obj8 = closure_0(closure_2_2[20]);
-          obj8.startConjurePrompt(projectId, closure_0.trim(), guildId);
+          const obj8 = closure_0(forMeGuildId[20]);
+          obj8.startConjurePrompt(projectId, closure_0.trim(), closure_3);
           c6 = 5;
           c7 = 1;
           const obj20 = { value: whenFirstPromptShown(projectId), done: false };
           return obj20;
         }
-      } catch (tmp116) {
-        closure_4 = tmp116;
+      } catch (tmp115) {
+        closure_4 = tmp115;
         if (0 === c5) {
           c7 = 3;
-          throw tmp116;
+          throw tmp115;
         } else if (1 === c5) {
           c6 = 1;
         } else if (2 === c5) {
@@ -421,7 +416,7 @@ export default function ConjureHomeLanding(focusRequest) {
       }
     }
   });
-  const items2 = [str, tmp16, navigation];
+  const items2 = [tmp16, navigation];
   const callback3 = useCallback(function() {
     return closure_0(...arguments);
   }, items2);
@@ -454,7 +449,7 @@ export default function ConjureHomeLanding(focusRequest) {
   intl4 = tmp3(tmp4[23]).intl;
   items7 = [closure_9(Text3, obj14), closure_9(tmp6(tmp4[30]), {})];
   items6[2] = closure_10(c7, obj13);
-  items4[1] = closure_10(closure_6, obj5);
+  items4[1] = closure_10(c6, obj5);
   let tmp31Result = null;
   const tmp30 = closure_10;
   if (null != tmp24) {

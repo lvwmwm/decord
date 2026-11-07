@@ -1,15 +1,15 @@
-// Module ID: 12310
-// Function ID: 12311
+// Module ID: 12308
+// Function ID: 12309
 // Name: conjureSettingsSaved
-// Dependencies: [10987, 10986, 1113, 4024, 11106, 2]
+// Dependencies: [10970, 10969, 1113, 4026, 11092, 2]
 // Exports: settleProjectSettingsSave
 
-// Module 12310 (conjureSettingsSaved)
+// Module 12308 (conjureSettingsSaved)
 import intl2 from "intl" /* 1113 */;
-import _modDef4024 from "module_4024" /* 4024 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 10986 */;
-import conjureSettingsConnection from "conjureSettingsConnection" /* 11106 */;
-import ConjureChatStore from "ConjureChatStore" /* 10987 */;
+import _modDef4026 from "module_4026" /* 4026 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 10969 */;
+import conjureSettingsConnection from "conjureSettingsConnection" /* 11092 */;
+import ConjureChatStore from "ConjureChatStore" /* 10970 */;
 import size from "module_2" /* 2 */;
 
 const sendUserMessage = ConjureConnectionStore.sendUserMessage;
@@ -25,5 +25,5 @@ export function settleProjectSettingsSave(arg0, notifyAgent) {
     }
   }
   const intl = intl2.intl;
-  sendUserMessage(arg0, intl.string(_modDef4024["08bsJL"]));
+  sendUserMessage(arg0, intl.string(_modDef4026["08bsJL"]));
 }

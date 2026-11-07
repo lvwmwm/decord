@@ -1,11 +1,11 @@
-// Module ID: 18095
-// Function ID: 18096
+// Module ID: 18142
+// Function ID: 18143
 // Name: useShopOrientationLock
-// Dependencies: [19, 14907, 2]
+// Dependencies: [19, 14940, 2]
 // Exports: useShopOrientationLock
 
-// Module 18095 (useShopOrientationLock)
-import applyOrientationLock from "applyOrientationLock" /* 14907 */;
+// Module 18142 (useShopOrientationLock)
+import applyOrientationLock from "applyOrientationLock" /* 14940 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -1,19 +1,19 @@
-// Module ID: 16112
-// Function ID: 16113
+// Module ID: 16160
+// Function ID: 16161
 // Name: ContextMenuItem
-// Dependencies: [19, 17, 21, 1652, 5170, 10014, 575, 10013, 5791, 5792, 5790, 1705, 5781, 2]
+// Dependencies: [19, 17, 21, 1652, 5140, 9998, 575, 9997, 5761, 5762, 5760, 1705, 5751, 2]
 // Exports: ContextMenuItem
 
-// Module 16112 (ContextMenuItem)
+// Module 16160 (ContextMenuItem)
 import nativeDefault from "native" /* 575 */;
 import _mod1705 from "module_1705" /* 1705 */;
-import ContextMenuState from "ContextMenuState" /* 10013 */;
-import ContextMenuConstants from "ContextMenuConstants" /* 10014 */;
+import ContextMenuState from "ContextMenuState" /* 9997 */;
+import ContextMenuConstants from "ContextMenuConstants" /* 9998 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import module_1652 from "module_1652" /* 1652 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let Pressable;

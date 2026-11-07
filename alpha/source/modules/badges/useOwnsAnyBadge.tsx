@@ -1,14 +1,14 @@
-// Module ID: 19173
-// Function ID: 19174
+// Module ID: 19230
+// Function ID: 19231
 // Name: useOwnsAnyBadge
-// Dependencies: [1385, 8855, 504, 8849, 8907, 2]
+// Dependencies: [1385, 8834, 504, 8828, 8889, 2]
 // Exports: default
 
-// Module 19173 (useOwnsAnyBadge)
-import useDisplayProfileDefault from "useDisplayProfile" /* 8849 */;
-import useBadgesDefault from "useBadges" /* 8907 */;
+// Module 19230 (useOwnsAnyBadge)
+import useDisplayProfileDefault from "useDisplayProfile" /* 8828 */;
+import useBadgesDefault from "useBadges" /* 8889 */;
 import UserStore from "UserStore" /* 1385 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8855 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8834 */;
 import size from "module_2" /* 2 */;
 
 let currentUser;

@@ -1,10 +1,10 @@
-// Module ID: 8044
-// Function ID: 8045
+// Module ID: 8022
+// Function ID: 8023
 // Name: StageInstanceActionCreators
 // Dependencies: [5, 1072, 1282, 2]
 // Exports: endStageInstance, startStageInstance, updateStageInstance
 
-// Module 8044 (StageInstanceActionCreators)
+// Module 8022 (StageInstanceActionCreators)
 import Constants from "Constants" /* 1072 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;

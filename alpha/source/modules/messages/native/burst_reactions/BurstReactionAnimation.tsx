@@ -1,16 +1,16 @@
-// Module ID: 5773
-// Function ID: 5774
+// Module ID: 5743
+// Function ID: 5744
 // Name: BurstReactionAnimation
-// Dependencies: [19, 5171, 21, 5170, 5128, 504, 5774, 5775, 2]
+// Dependencies: [19, 5141, 21, 5140, 5098, 504, 5744, 5745, 2]
 // Exports: default
 
-// Module 5773 (BurstReactionAnimation)
+// Module 5743 (BurstReactionAnimation)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
-import burst_reactions_BurstReactionEffectUtils from "burst_reactions/BurstReactionEffectUtils" /* 5128 */;
+import burst_reactions_BurstReactionEffectUtils from "burst_reactions/BurstReactionEffectUtils" /* 5098 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5171 */;
-import createStyles from "createStyles" /* 5170 */;
+import AccessibilityStore from "AccessibilityStore" /* 5141 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
@@ -41,7 +41,7 @@ export default function BurstReactionAnimation(arg0) {
     return null;
   } else {
     let obj3;
-    const tmp7 = importDefault(withFadeOut ? 5774 : 5775);
+    const tmp7 = importDefault(withFadeOut ? 5744 : 5745);
     if (withFadeOut) {
       obj3 = { onComplete };
       const obj2 = { onComplete };

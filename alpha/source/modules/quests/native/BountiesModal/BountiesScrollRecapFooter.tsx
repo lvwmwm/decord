@@ -1,22 +1,22 @@
-// Module ID: 17229
-// Function ID: 17230
+// Module ID: 17277
+// Function ID: 17278
 // Name: BountiesScrollRecapFooter
-// Dependencies: [19, 17, 5171, 21, 5170, 575, 1377, 1113, 5781, 9634, 504, 5295, 2]
+// Dependencies: [19, 17, 5141, 21, 5140, 575, 1377, 1113, 5751, 9616, 504, 5265, 2]
 // Exports: BountiesScrollRecapFooter, BountiesScrollRecapFooterGradient
 
-// Module 17229 (BountiesScrollRecapFooter)
+// Module 17277 (BountiesScrollRecapFooter)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
-import BountiesScrollGradientRive2 from "BountiesScrollGradientRive" /* 5295 */;
-import Text_Text from "Text/Text" /* 5781 */;
-import OrbsIcon from "OrbsIcon" /* 9634 */;
+import BountiesScrollGradientRive2 from "BountiesScrollGradientRive" /* 5265 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import OrbsIcon from "OrbsIcon" /* 9616 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5171 */;
+import AccessibilityStore from "AccessibilityStore" /* 5141 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -43,7 +43,7 @@ export function BountiesScrollRecapFooter(orbAmount) {
   orbAmount = orbAmount.orbAmount;
   const tmp = closure_7();
   const intl = intl2.intl;
-  const stringResult = intl.string(intl2.t.d6Rrn6);
+  const stringResult = intl.string(intl2.t.CzRXoC);
   const obj = { style: tmp.container, pointerEvents: "none", accessible: true, accessibilityRole: "text", accessibilityLabel: "" + stringResult + ", +" + orbAmount, children: items };
   items = [hasOwnProperty(Text_Text.Text, { variant: "body-sm/medium", color: "text-brand", accessible: false, children: stringResult }), ];
   const obj2 = { style: tmp.orbRow, accessible: false, importantForAccessibility: "no-hide-descendants", children: items1 };

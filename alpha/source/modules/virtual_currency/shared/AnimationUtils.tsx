@@ -1,10 +1,10 @@
-// Module ID: 14712
-// Function ID: 14713
+// Module ID: 14745
+// Function ID: 14746
 // Name: AnimationUtils
 // Dependencies: [2]
 // Exports: getOrbBalanceCounterAnimationConfigs
 
-// Module 14712 (AnimationUtils)
+// Module 14745 (AnimationUtils)
 import size from "module_2" /* 2 */;
 
 const ORB_LOTTIE_COUNTER_ANIMATION_FACTORS = { EARN: 0.25, SPEND: 0.3 };

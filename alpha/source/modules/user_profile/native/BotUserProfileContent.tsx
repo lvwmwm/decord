@@ -1,20 +1,20 @@
-// Module ID: 15013
-// Function ID: 15014
+// Module ID: 15045
+// Function ID: 15046
 // Name: BotUserProfileContent
-// Dependencies: [19, 17, 1385, 7460, 5419, 21, 8906, 8895, 8908, 1627, 8853, 504, 6199, 5224, 7569, 8907, 11570, 8892, 8903, 7441, 5866, 8909, 1652, 15014, 8920, 11555, 5404, 11569, 2118, 11572, 1113, 15039, 15042, 11910, 15043, 5788, 8735, 575, 6824, 7572, 15044, 11655, 7438, 15106, 15109, 2]
+// Dependencies: [19, 17, 1385, 7437, 5389, 21, 8888, 8876, 8890, 1627, 8832, 504, 6173, 5194, 7546, 8889, 11552, 8873, 8885, 7418, 5836, 8891, 1652, 15046, 8902, 11537, 5374, 11551, 2118, 11554, 1113, 15071, 15074, 11901, 15075, 5758, 8714, 575, 6799, 7549, 15076, 11637, 7415, 15138, 15141, 2]
 
-// Module 15013 (BotUserProfileContent)
+// Module 15045 (BotUserProfileContent)
 import react_native from "react-native" /* 17 */;
 import asyncRequire from "asyncRequire" /* 2118 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5404 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 5419 */;
-import ToastUtils from "ToastUtils" /* 5866 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6824 */;
-import ClipboardUtils from "ClipboardUtils" /* 7441 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7572 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 5389 */;
+import ToastUtils from "ToastUtils" /* 5836 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6799 */;
+import ClipboardUtils from "ClipboardUtils" /* 7418 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7549 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1385 */;
-import Constants from "Constants" /* 7460 */;
+import Constants from "Constants" /* 7437 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
@@ -75,19 +75,19 @@ const memoResult = react.memo(function BotUserProfileContent(user) {
   const tmp = channel;
   let tmp2 = dependencyMap;
   ({ disableMessage, scrollPosition } = user);
-  const tmp3 = channel(8906)();
-  const tmp5 = channel(8895)(ACTION_SHEET_MAX_WIDTH);
-  ({ bannerAnimatedStyle, bannerImageAnimatedStyle, contentAnimatedStyle, blurAnimatedProps, showBlur } = channel(8908)({ scrollPosition, bannerHeight: tmp5 }));
-  channel(8908)({ scrollPosition, bannerHeight: tmp5 });
+  const tmp3 = channel(8888)();
+  const tmp5 = channel(8876)(ACTION_SHEET_MAX_WIDTH);
+  ({ bannerAnimatedStyle, bannerImageAnimatedStyle, contentAnimatedStyle, blurAnimatedProps, showBlur } = channel(8890)({ scrollPosition, bannerHeight: tmp5 }));
+  channel(8890)({ scrollPosition, bannerHeight: tmp5 });
   const bottom = channel(1627)().bottom;
-  let obj = user(8853);
+  let obj = user(8832);
   const trackUserProfileAction = obj.useUserProfileAnalyticsContext().trackUserProfileAction;
   let obj2 = user(504);
   let items = [guild_id];
   const stateFromStores = obj2.useStateFromStores(items, () => guild_id.getCurrentUser());
   let guildId;
-  const useName = channel(6199).useName;
-  channel(6199);
+  const useName = channel(6173).useName;
+  channel(6173);
   const tmp4 = ACTION_SHEET_MAX_WIDTH;
   if (displayProfile != null) {
     guildId = displayProfile.guildId;
@@ -97,7 +97,7 @@ const memoResult = react.memo(function BotUserProfileContent(user) {
     id = channel.id;
   }
   const name = useName(guildId, id, user);
-  const tmpResult = tmp(5224);
+  const tmpResult = tmp(5194);
   closure_4 = tmpResult.useUserTag(user);
   if (displayProfile != null) {
     application = displayProfile.application;
@@ -117,20 +117,20 @@ const memoResult = react.memo(function BotUserProfileContent(user) {
       return {};
     }
   }, items1);
-  const tmp7Result = user(7569);
+  const tmp7Result = user(7546);
   const subscribeGuildMembers = tmp7Result.useSubscribeGuildMembers(memo, "BotUserProfileContent");
-  const tmp16 = tmp(8907)(displayProfile);
-  const tmp17 = tmp(11570)(user.id);
-  ({ primaryColor, theme, secondaryColor } = tmp(8892)({ user, displayProfile }));
-  tmp(8892)({ user, displayProfile });
-  const tmp7Result3 = user(8903);
+  const tmp16 = tmp(8889)(displayProfile);
+  const tmp17 = tmp(11552)(user.id);
+  ({ primaryColor, theme, secondaryColor } = tmp(8873)({ user, displayProfile }));
+  tmp(8873)({ user, displayProfile });
+  const tmp7Result3 = user(8885);
   const userProfileColors = tmp7Result3.useUserProfileColors({ theme, primaryColor, secondaryColor });
   const containerBackground = userProfileColors.containerBackground;
   if (null != user) {
     if (null != stateFromStores) {
       let obj3 = { user, displayProfile, bannerHeight: tmp5, bannerAnimatedStyle, bannerImageAnimatedStyle, blurAnimatedProps, showBlur };
-      const items2 = [closure_9(tmp(8909), obj3), , ];
-      let obj4 = { style: items3, children: closure_9(tmp(15014), obj5) };
+      const items2 = [closure_9(tmp(8891), obj3), , ];
+      let obj4 = { style: items3, children: closure_9(tmp(15046), obj5) };
       items3 = [tmp3.bannerButtons, bannerAnimatedStyle];
       View = tmp(1652).View;
       obj5 = { user, currentUser: stateFromStores, application, displayProfile, channel };
@@ -139,7 +139,7 @@ const memoResult = react.memo(function BotUserProfileContent(user) {
       const View2 = tmp(1652).View;
       const obj7 = { user, guildId: guildId1, backgroundColor: tmp20, statusStyle: obj8 };
       guildId1 = undefined;
-      const OpenableUserProfileAvatar = tmp7(8920).OpenableUserProfileAvatar;
+      const OpenableUserProfileAvatar = tmp7(8902).OpenableUserProfileAvatar;
       if (displayProfile != null) {
         guildId1 = displayProfile.guildId;
       }
@@ -163,7 +163,7 @@ const memoResult = react.memo(function BotUserProfileContent(user) {
               ActionSheetActionCreatorsDefault;
               const obj = { user, guildId: guild_id, channelId: id };
               id = undefined;
-              const tmp2 = asyncRequire(11569, dependencyMap.paths);
+              const tmp2 = asyncRequire(11551, dependencyMap.paths);
               if (channel != null) {
                 id = channel.id;
               }
@@ -173,11 +173,11 @@ const memoResult = react.memo(function BotUserProfileContent(user) {
         emojiOnlyStyle: null
       };
       ({ customStatusBubble: obj9.style, emojiOnlyCustomStatusBubble: obj9.emojiOnlyStyle } = tmp3);
-      items6 = [closure_9(tmp(11555), obj12), , ];
+      items6 = [closure_9(tmp(11537), obj12), , ];
       const obj13 = { style: tmp3.primaryInfo, children: items7 };
       const obj14 = { user, guildId: guild_id, displayName: name, pronouns, badges: tmp16, badgeContainerBackground: containerBackground, displayNameAccessibilityHint: intl.string(user(1113).t.y5MwJy), onPressDisplayName: handleCopyUsername, onPressUserTag: handleCopyUsername, onPressPronouns: handlePressPronouns, showBadgeToastOnPress: true };
       pronouns = undefined;
-      const tmpResult6 = tmp(11572);
+      const tmpResult6 = tmp(11554);
       if (displayProfile != null) {
         pronouns = displayProfile.pronouns;
       }
@@ -196,15 +196,15 @@ const memoResult = react.memo(function BotUserProfileContent(user) {
       intl = tmp7(1113).intl;
       items7 = [closure_9(tmpResult6, obj14), , ];
       const obj15 = { user };
-      items7[1] = closure_9(tmp(15039), obj15);
+      items7[1] = closure_9(tmp(15071), obj15);
       const obj16 = { style: tmp3.primaryButtons, maxWidth: tmp4, primaryButton: tmp38Result, secondaryButton: closure_9(Button, obj18) };
       tmp38Result = undefined;
-      const tmpResult7 = tmp(15042);
+      const tmpResult7 = tmp(15074);
       if (null != application) {
-        const tmp7Result4 = user(11910);
+        const tmp7Result4 = user(11901);
         if (tmp7Result4.canInstallApplication(application)) {
           const obj17 = { application, botUserId: user.id, channel: tmp30, guildId: tmp31 };
-          const tmpResult8 = tmp(15043);
+          const tmpResult8 = tmp(15075);
           tmp38Result = tmp38(tmpResult8, obj17);
           tmp30 = channel;
           tmp31 = guild_id;
@@ -228,15 +228,15 @@ const memoResult = react.memo(function BotUserProfileContent(user) {
               obj3.openPrivateChannel(obj4);
             }
       };
-      Button = tmp7(5788).Button;
+      Button = tmp7(5758).Button;
       obj19 = { size: "sm", color: tmp(575).colors.CONTROL_SECONDARY_TEXT_DEFAULT };
-      ChatIcon = tmp7(8735).ChatIcon;
+      ChatIcon = tmp7(8714).ChatIcon;
       intl2 = tmp7(1113).intl;
       const intl3 = tmp7(1113).intl;
       formatToPlainString = intl3.formatToPlainString;
       obj20 = { name: tmpResult9.getName(user) };
       zFfSFQ = tmp7(1113).t.zFfSFQ;
-      tmpResult9 = tmp(5224);
+      tmpResult9 = tmp(5194);
       items7[2] = closure_9(tmpResult7, obj16);
       items6[1] = closure_10(closure_4, obj13);
       let tmp36Result2 = null;
@@ -246,16 +246,16 @@ const memoResult = react.memo(function BotUserProfileContent(user) {
         items8[1] = obj21;
         const obj22 = { style: tmp3.cards, children: items9 };
         const obj23 = { user, currentUser: stateFromStores, guildId: guild_id, style: items8 };
-        items9 = [closure_9(tmp(15044), obj23), , , ];
+        items9 = [closure_9(tmp(15076), obj23), , , ];
         const obj24 = { userId: user.id, displayProfile, channel, style: items8 };
-        items9[1] = closure_9(tmp(11655), obj24);
+        items9[1] = closure_9(tmp(11637), obj24);
         let tmp36Result = null != guild_id;
         if (tmp36Result) {
           const obj25 = { userId: user.id, guildId: guild_id, style: items8 };
-          const items10 = [closure_9(tmp(7438), obj25), ];
+          const items10 = [closure_9(tmp(7415), obj25), ];
           const obj26 = { user, currentUser: stateFromStores, guildId: guild_id, channelId: id1, showUserProfile: showUserProfileActionSheet, style: items8 };
           id1 = undefined;
-          const tmpResult10 = tmp(15106);
+          const tmpResult10 = tmp(15138);
           if (channel != null) {
             id1 = channel.id;
           }
@@ -265,7 +265,7 @@ const memoResult = react.memo(function BotUserProfileContent(user) {
         }
         items9[2] = tmp36Result;
         const obj28 = { userId: user.id, onBack: showUserProfileActionSheet };
-        items9[3] = closure_9(tmp(15109), obj28);
+        items9[3] = closure_9(tmp(15141), obj28);
         tmp36Result2 = tmp36(tmp23, obj22);
       }
       const obj29 = { children: items2 };

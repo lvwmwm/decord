@@ -1,10 +1,10 @@
-// Module ID: 16892
-// Function ID: 16893
+// Module ID: 16940
+// Function ID: 16941
 // Name: SettingsAgeGroupResetAlert
-// Dependencies: [5, 21, 1499, 6813, 6118, 5866, 1113, 6122, 3252, 6122, 2]
+// Dependencies: [5, 21, 1499, 6788, 6092, 5836, 1113, 6096, 3252, 6096, 2]
 // Exports: default
 
-// Module 16892 (SettingsAgeGroupResetAlert)
+// Module 16940 (SettingsAgeGroupResetAlert)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -40,7 +40,7 @@ export default function SettingsAgeGroupResetAlert() {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c2;
@@ -87,7 +87,7 @@ export default function SettingsAgeGroupResetAlert() {
             closure_128_0.goBack();
             c2 = 0;
             c3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp25) {
           if (0 === c2) {

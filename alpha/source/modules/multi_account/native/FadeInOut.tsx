@@ -1,10 +1,10 @@
-// Module ID: 18741
-// Function ID: 18742
+// Module ID: 18791
+// Function ID: 18792
 // Name: FadeInOut
-// Dependencies: [19, 21, 1652, 5400, 1705, 2]
+// Dependencies: [19, 21, 1652, 5370, 1705, 2]
 // Exports: default
 
-// Module 18741 (FadeInOut)
+// Module 18791 (FadeInOut)
 import Fragment from "Fragment" /* 21 */;
 import react_mod from "react" /* 19 */;
 import size from "module_2" /* 2 */;

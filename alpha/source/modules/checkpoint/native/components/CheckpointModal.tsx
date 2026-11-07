@@ -1,34 +1,34 @@
-// Module ID: 13647
-// Function ID: 13648
+// Module ID: 13671
+// Function ID: 13672
 // Name: CheckpointModal
-// Dependencies: [5, 32, 19, 17, 5113, 13643, 6224, 1083, 21, 575, 5404, 13648, 2118, 5170, 13661, 1627, 1493, 13662, 504, 13665, 13666, 6592, 6248, 12125, 8765, 13667, 13668, 13669, 6591, 13671, 9087, 5406, 6824, 2116, 6231, 6245, 13586, 13645, 13641, 5866, 1113, 6268, 5229, 13672, 13847, 13849, 13858, 6253, 6254, 7145, 13893, 13894, 13908, 13673, 13910, 2]
+// Dependencies: [5, 32, 19, 17, 5083, 13667, 6199, 1083, 21, 575, 5374, 13672, 2118, 5140, 13685, 1627, 1493, 13686, 504, 13689, 13690, 6567, 6223, 12116, 8744, 13691, 13692, 13693, 6566, 13695, 9069, 5376, 6799, 2116, 6206, 6220, 13610, 13669, 13665, 5836, 1113, 6243, 5199, 13696, 13871, 13873, 13882, 6228, 6229, 7120, 13917, 13918, 13932, 13697, 13934, 2]
 // Exports: default
 
-// Module 13647 (CheckpointModal)
+// Module 13671 (CheckpointModal)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
 import Server from "Server" /* 2116 */;
 import asyncRequire from "asyncRequire" /* 2118 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5404 */;
-import HapticUtils from "HapticUtils" /* 5406 */;
-import InteractionComponentTypes from "InteractionComponentTypes" /* 6231 */;
-import checkpoint_CheckpointMessageComponentUtils from "checkpoint/CheckpointMessageComponentUtils" /* 6245 */;
-import CheckpointNavigation from "CheckpointNavigation" /* 6592 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6824 */;
-import ForwardModalUtils from "ForwardModalUtils" /* 13586 */;
-import CheckpointHeaderButton from "CheckpointHeaderButton" /* 13661 */;
-import CheckpointFlows from "CheckpointFlows" /* 13662 */;
-import useCheckpointStepAnalytics from "useCheckpointStepAnalytics" /* 13666 */;
-import useCheckpointPreloaderDefault from "useCheckpointPreloader" /* 13910 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
+import HapticUtils from "HapticUtils" /* 5376 */;
+import InteractionComponentTypes from "InteractionComponentTypes" /* 6206 */;
+import checkpoint_CheckpointMessageComponentUtils from "checkpoint/CheckpointMessageComponentUtils" /* 6220 */;
+import CheckpointNavigation from "CheckpointNavigation" /* 6567 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6799 */;
+import ForwardModalUtils from "ForwardModalUtils" /* 13610 */;
+import CheckpointHeaderButton from "CheckpointHeaderButton" /* 13685 */;
+import CheckpointFlows from "CheckpointFlows" /* 13686 */;
+import useCheckpointStepAnalytics from "useCheckpointStepAnalytics" /* 13690 */;
+import useCheckpointPreloaderDefault from "useCheckpointPreloader" /* 13934 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import MessageRecord from "MessageRecord" /* 5113 */;
-import CheckpointStore from "CheckpointStore" /* 13643 */;
-import CheckpointConstants from "CheckpointConstants" /* 6224 */;
+import MessageRecord from "MessageRecord" /* 5083 */;
+import CheckpointStore from "CheckpointStore" /* 13667 */;
+import CheckpointConstants from "CheckpointConstants" /* 6199 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -178,7 +178,7 @@ function CheckpointModal(didPlayerShareDataWithDiscord) {
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -245,7 +245,7 @@ function CheckpointModal(didPlayerShareDataWithDiscord) {
               const obj2 = closure_0(closure_2[36]);
               obj2.closeForwardModal();
               c8 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } catch (tmp42) {
             tmp43 = c6;
@@ -277,7 +277,7 @@ function CheckpointModal(didPlayerShareDataWithDiscord) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c3;
@@ -334,7 +334,7 @@ function CheckpointModal(didPlayerShareDataWithDiscord) {
             closure_128_9(false);
           }
           c4 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp38) {
           closure_2 = tmp38;
           if (0 === c3) {
@@ -576,10 +576,18 @@ function CheckpointModal(didPlayerShareDataWithDiscord) {
     onNext: function handleNext() {
       return obj(...arguments);
     },
+    onReplay: function handleReplay() {
+      obj = HapticUtils;
+      const result = obj.triggerHapticFeedback(HapticUtils.HapticFeedbackTypes.IMPACT_LIGHT);
+      closure_7();
+      const obj2 = CheckpointFlows;
+      const obj3 = { flow: checkpointFlow, stats };
+      closure_3(obj2.getCheckpointReplayRoute(obj3));
+    },
     onShare: function handleShare() {
       obj = { character: stateFromStores, stats, onForward: handleForward };
       const obj2 = ActionSheetActionCreatorsDefault;
-      obj2.openLazy(asyncRequire(13648, dependencyMap.paths), "CheckpointShare", obj);
+      obj2.openLazy(asyncRequire(13672, dependencyMap.paths), "CheckpointShare", obj);
     },
     color: tmp22,
     shadowColor,

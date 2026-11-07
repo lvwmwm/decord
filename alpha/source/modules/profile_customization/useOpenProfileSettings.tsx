@@ -1,18 +1,18 @@
-// Module ID: 11681
-// Function ID: 11682
+// Module ID: 11663
+// Function ID: 11664
 // Name: useOpenProfileSettings
-// Dependencies: [19, 1385, 11618, 1072, 1082, 8823, 11682, 11683, 7658, 2]
+// Dependencies: [19, 1385, 11601, 1072, 1082, 8802, 11664, 11665, 7635, 2]
 // Exports: default
 
-// Module 11681 (useOpenProfileSettings)
+// Module 11663 (useOpenProfileSettings)
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1082 */;
-import openUserSettings from "openUserSettings" /* 7658 */;
-import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 11683 */;
+import openUserSettings from "openUserSettings" /* 7635 */;
+import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 11665 */;
 import UserStore from "UserStore" /* 1385 */;
-import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 11618 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8823 */;
+import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 11601 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8802 */;
 import size from "module_2" /* 2 */;
 
 react.useCallback;

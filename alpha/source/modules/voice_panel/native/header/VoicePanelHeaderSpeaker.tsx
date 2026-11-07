@@ -1,27 +1,27 @@
-// Module ID: 19536
-// Function ID: 19537
+// Module ID: 19608
+// Function ID: 19609
 // Name: VoicePanelHeaderSpeaker
-// Dependencies: [109, 19, 17, 19537, 5921, 5940, 19538, 5019, 5922, 1072, 21, 19539, 19505, 9319, 12113, 12031, 563, 14944, 12151, 19543, 1377, 9326, 5941, 1113, 9323, 9325, 19544, 14943, 5200, 5003, 7048, 19449, 16077, 2]
+// Dependencies: [109, 19, 17, 19609, 5894, 5913, 19610, 4989, 5895, 1072, 21, 19611, 19564, 9301, 12104, 12022, 563, 14977, 12142, 19615, 1377, 9308, 5914, 1113, 9305, 9307, 19616, 14976, 5170, 4973, 7023, 19508, 16125, 2]
 
-// Module 19536 (VoicePanelHeaderSpeaker)
+// Module 19608 (VoicePanelHeaderSpeaker)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
 import intl4 from "intl" /* 1113 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
-import dismissible_content from "dismissible_content" /* 5003 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5200 */;
-import NativeViewDefault from "NativeView" /* 7048 */;
-import getConsoleIconDefault from "getConsoleIcon" /* 14944 */;
-import VoicePanelIconButtonDefault from "VoicePanelIconButton" /* 19449 */;
-import ConsoleVoiceUpsellStore from "ConsoleVoiceUpsellStore" /* 19537 */;
-import useSpeakerTooltipsDefault from "useSpeakerTooltips" /* 19539 */;
+import dismissible_content from "dismissible_content" /* 4973 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5170 */;
+import NativeViewDefault from "NativeView" /* 7023 */;
+import getConsoleIconDefault from "getConsoleIcon" /* 14977 */;
+import VoicePanelIconButtonDefault from "VoicePanelIconButton" /* 19508 */;
+import ConsoleVoiceUpsellStore from "ConsoleVoiceUpsellStore" /* 19609 */;
+import useSpeakerTooltipsDefault from "useSpeakerTooltips" /* 19611 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react_mod from "react" /* 19 */;
-import GameConsoleStore from "GameConsoleStore" /* 5921 */;
-import AudioRouteStore from "AudioRouteStore" /* 5940 */;
-import AudioRouteSwitchingStore from "AudioRouteSwitchingStore" /* 19538 */;
-import ChannelStore from "ChannelStore" /* 5019 */;
-import SessionsStore from "SessionsStore" /* 5922 */;
+import GameConsoleStore from "GameConsoleStore" /* 5894 */;
+import AudioRouteStore from "AudioRouteStore" /* 5913 */;
+import AudioRouteSwitchingStore from "AudioRouteSwitchingStore" /* 19610 */;
+import ChannelStore from "ChannelStore" /* 4989 */;
+import SessionsStore from "SessionsStore" /* 5895 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ let closure_14;
 let closure_15;
 let closure_16;
 let tmp;
-const showAudioOutputSelector = tmp(9326);
+const showAudioOutputSelector = tmp(9308);
 let closure_3 = ["ref"];
 let react = react_mod;
 const NativeModules = react_native.NativeModules;
@@ -293,8 +293,8 @@ const memoResult = react.memo(function VoicePanelHeaderSpeaker(isConnectedToVoic
       let tmp9;
       let tmp = arg0;
       if (arg0 == null) {
-        tmp = { onPress, ref: "Array" };
-        const obj = { onPress, ref: "Array" };
+        tmp = { onPress, ref: "r" };
+        const obj = { onPress, ref: "r" };
       }
       const obj2 = { targetRef: tmp.ref, canShowTooltip: tmp9 };
       tmp9 = !stateFromStores2;

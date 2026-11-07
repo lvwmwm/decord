@@ -1,21 +1,21 @@
-// Module ID: 17461
-// Function ID: 17462
+// Module ID: 17510
+// Function ID: 17511
 // Name: UserSettingsGuildRoleSubscriptions
-// Dependencies: [19, 17, 21, 5170, 5781, 1113, 1187, 17462, 17463, 17464, 17467, 17468, 2]
+// Dependencies: [19, 17, 21, 5140, 5751, 1113, 1187, 17511, 17512, 17513, 17516, 17517, 2]
 // Exports: default
 
-// Module 17461 (UserSettingsGuildRoleSubscriptions)
+// Module 17510 (UserSettingsGuildRoleSubscriptions)
 import intl3 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5781 */;
-import useRestorePurchasesDefault from "useRestorePurchases" /* 17462 */;
-import useActiveGuildSubscriptionsDefault from "useActiveGuildSubscriptions" /* 17463 */;
-import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 17464 */;
-import ManageSubscriptionCardDefault from "ManageSubscriptionCard" /* 17468 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import useRestorePurchasesDefault from "useRestorePurchases" /* 17511 */;
+import useActiveGuildSubscriptionsDefault from "useActiveGuildSubscriptions" /* 17512 */;
+import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 17513 */;
+import ManageSubscriptionCardDefault from "ManageSubscriptionCard" /* 17517 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -23,7 +23,7 @@ let closure_4;
 let hasOwnProperty;
 let metroRequire;
 let tmp2;
-const LoadingIndicatorDefault = tmp2(17467);
+const LoadingIndicatorDefault = tmp2(17516);
 function GuildRoleSubscriptionsSectionHeader() {
   let intl;
   let intl2;

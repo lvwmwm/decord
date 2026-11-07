@@ -1,20 +1,20 @@
-// Module ID: 19832
-// Function ID: 19833
+// Module ID: 19901
+// Function ID: 19902
 // Name: JankNavigationReporter
-// Dependencies: [5345, 18339, 18343, 18344, 5347, 2]
+// Dependencies: [5315, 18386, 18390, 18391, 5317, 2]
 
-// Module 19832 (JankNavigationReporter)
-import RootNavigationRef from "RootNavigationRef" /* 5345 */;
-import getJankScreenName from "getJankScreenName" /* 18339 */;
-import react_nativeDefault from "react-native" /* 18343 */;
-import getJankSurfaceName from "getJankSurfaceName" /* 18344 */;
+// Module 19901 (JankNavigationReporter)
+import RootNavigationRef from "RootNavigationRef" /* 5315 */;
+import getJankScreenName from "getJankScreenName" /* 18386 */;
+import react_nativeDefault from "react-native" /* 18390 */;
+import getJankSurfaceName from "getJankSurfaceName" /* 18391 */;
 import size from "module_2" /* 2 */;
 
 const getJankScreenNameDefault = getJankScreenName;
 
 class JankNavigationReporter {
   constructor() {
-    return Object.assign({ _isAttached: false, _routeKeyAtDispatch: "Boolean", _screensBeforeDispatch: "add" });
+    return Object.assign({ _isAttached: false, _routeKeyAtDispatch: "Boolean", _screensBeforeDispatch: "alignItems" });
   }
   attach() {
     const self = this;
@@ -102,7 +102,7 @@ class JankNavigationReporter {
         }
         let isChatLockedOpen = null != chatScreens && _screensBeforeDispatch.chatScreens === chatScreens2.chatScreens && _screensBeforeDispatch.expectedScreenIds === chatScreens2.expectedScreenIds;
         if (!isChatLockedOpen) {
-          const tmp4Result = tmp4(5347);
+          const tmp4Result = tmp4(5317);
           isChatLockedOpen = tmp4Result.getChatLayout().isChatLockedOpen;
         }
         tmp6 = isChatLockedOpen;
@@ -116,4 +116,4 @@ const prototype = JankNavigationReporter.prototype;
 const prototype2 = JankNavigationReporter.prototype;
 let result = size.fileFinishedImporting("modules/jank_stats/native/JankNavigationReporter.native.tsx");
 
-export default Object.assign({ _isAttached: false, _routeKeyAtDispatch: "Boolean", _screensBeforeDispatch: "add" });
+export default Object.assign({ _isAttached: false, _routeKeyAtDispatch: "Boolean", _screensBeforeDispatch: "alignItems" });

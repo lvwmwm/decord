@@ -1,23 +1,23 @@
-// Module ID: 14820
-// Function ID: 14821
+// Module ID: 14853
+// Function ID: 14854
 // Name: WebhookGuildChannelSelector
-// Dependencies: [5, 32, 19, 17, 5023, 5112, 1385, 21, 5170, 575, 5404, 9100, 2118, 1113, 5806, 9855, 5781, 1187, 8267, 2]
+// Dependencies: [5, 32, 19, 17, 4993, 5082, 1385, 21, 5140, 575, 5374, 9082, 2118, 1113, 5776, 9839, 5751, 1187, 8246, 2]
 // Exports: default
 
-// Module 14820 (WebhookGuildChannelSelector)
+// Module 14853 (WebhookGuildChannelSelector)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import asyncRequire from "asyncRequire" /* 2118 */;
-import ChannelRecord from "ChannelRecord" /* 5023 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5404 */;
+import ChannelRecord from "ChannelRecord" /* 4993 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 5112 */;
+import RelationshipStore from "RelationshipStore" /* 5082 */;
 import UserStore from "UserStore" /* 1385 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let closure_2, v3;
@@ -85,7 +85,7 @@ export default function WebhookGuildChannelSelector(selectedGuildId) {
         hasIcons: false
       };
       ActionSheetActionCreatorsDefault;
-      const tmp8 = asyncRequire(9100, dependencyMap.paths);
+      const tmp8 = asyncRequire(9082, dependencyMap.paths);
       intl = intl4.intl;
       channels = tmp.channels;
       openLazy(tmp8, WebhookGuildChannelSelector_str, obj);
@@ -111,7 +111,7 @@ export default function WebhookGuildChannelSelector(selectedGuildId) {
             } else if (arg0 === 2) {
               return { value, done: true };
             } else {
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } else {
             try {
@@ -150,7 +150,7 @@ export default function WebhookGuildChannelSelector(selectedGuildId) {
                   closure_1_5.current = true;
                 }
                 v3 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               }
             } catch (tmp19) {
               v3 = 3;

@@ -1,17 +1,17 @@
-// Module ID: 18048
-// Function ID: 18049
+// Module ID: 18095
+// Function ID: 18096
 // Name: UserSettingsDesignSystemAlertModal
-// Dependencies: [5, 19, 17, 21, 6122, 6118, 5170, 5788, 2]
+// Dependencies: [5, 19, 17, 21, 6096, 6092, 5140, 5758, 2]
 // Exports: default
 
-// Module 18048 (UserSettingsDesignSystemAlertModal)
+// Module 18095 (UserSettingsDesignSystemAlertModal)
 import Fragment from "Fragment" /* 21 */;
-import useAlertStore from "useAlertStore" /* 6118 */;
-import AlertModal2 from "AlertModal" /* 6122 */;
+import useAlertStore from "useAlertStore" /* 6092 */;
+import AlertModal2 from "AlertModal" /* 6096 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let c0, c1;
@@ -30,7 +30,7 @@ function DemoModal() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -61,7 +61,7 @@ function DemoModal() {
           return obj;
         } else {
           c0 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp7) {
         c0 = 3;

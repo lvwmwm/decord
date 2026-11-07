@@ -1,17 +1,17 @@
-// Module ID: 17998
-// Function ID: 17999
+// Module ID: 18045
+// Function ID: 18046
 // Name: ShopSkipCategoriesFilter
-// Dependencies: [19, 17, 7819, 21, 5170, 575, 504, 6185, 5781, 7818, 2]
+// Dependencies: [19, 17, 7796, 21, 5140, 575, 504, 6159, 5751, 7795, 2]
 // Exports: ShopSkipCategoriesFilter
 
-// Module 17998 (ShopSkipCategoriesFilter)
+// Module 18045 (ShopSkipCategoriesFilter)
 import nativeDefault from "native" /* 575 */;
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7818 */;
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7795 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7819 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7796 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 let c2;
@@ -46,10 +46,10 @@ export function ShopSkipCategoriesFilter() {
   const items = [CollectiblesCategoryStore];
   stateFromStores = obj.useStateFromStores(items, () => skipNumCategories.skipNumCategories);
   const obj2 = { style: tmp.container, children: closure_6(Stack, obj7) };
-  Stack = stateFromStores(6185).Stack;
+  Stack = stateFromStores(6159).Stack;
   const items1 = [, ];
   const obj3 = { variant: "body-md/normal", style: tmp.label, children: "Hide first # of categories" };
-  items1[0] = closure_5(stateFromStores(5781).Text, obj3);
+  items1[0] = closure_5(stateFromStores(5751).Text, obj3);
   const items2 = [tmp.stepperButton, ];
   const obj4 = { style: tmp.stepperContainer, children: items3 };
   const tmp11 = stateFromStores <= 0 && tmp.stepperButtonDisabled;
@@ -64,11 +64,11 @@ export function ShopSkipCategoriesFilter() {
       }
     },
     disabled: stateFromStores <= 0,
-    children: closure_5(stateFromStores(5781).Text, { variant: "body-lg/semibold", children: "\u2212" })
+    children: closure_5(stateFromStores(5751).Text, { variant: "body-lg/semibold", children: "\u2212" })
   };
   items3[0] = closure_5(closure_3, obj5);
   const obj6 = { variant: "body-md/semibold", style: tmp.valueText, children: stateFromStores };
-  items3[1] = closure_5(stateFromStores(5781).Text, obj6);
+  items3[1] = closure_5(stateFromStores(5751).Text, obj6);
   const items4 = [tmp.stepperButton, ];
   obj7 = { spacing: 8, children: items1 };
   const tmp12 = stateFromStores >= 100 && tmp.stepperButtonDisabled;
@@ -82,7 +82,7 @@ export function ShopSkipCategoriesFilter() {
       }
     },
     disabled: stateFromStores >= 100,
-    children: closure_5(stateFromStores(5781).Text, { variant: "body-lg/semibold", children: "+" })
+    children: closure_5(stateFromStores(5751).Text, { variant: "body-lg/semibold", children: "+" })
   };
   items3[2] = closure_5(closure_3, obj8);
   items1[1] = closure_6(closure_2, obj4);

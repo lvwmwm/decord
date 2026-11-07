@@ -1,19 +1,19 @@
-// Module ID: 18182
-// Function ID: 18183
+// Module ID: 18229
+// Function ID: 18230
 // Name: SafetyGuildSettingGuildSelect
-// Dependencies: [19, 6852, 16848, 18183, 8524, 5404, 18184, 2118, 18185, 1113, 11703, 2]
+// Dependencies: [19, 6827, 16896, 18230, 8503, 5374, 18231, 2118, 18232, 1113, 11685, 2]
 
-// Module 18182 (SafetyGuildSettingGuildSelect)
+// Module 18229 (SafetyGuildSettingGuildSelect)
 import intl2 from "intl" /* 1113 */;
 import asyncRequire from "asyncRequire" /* 2118 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5404 */;
-import SettingsConstants from "SettingsConstants" /* 8524 */;
-import useDMPermissionsOverrideCount from "useDMPermissionsOverrideCount" /* 18185 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
+import SettingsConstants from "SettingsConstants" /* 8503 */;
+import useDMPermissionsOverrideCount from "useDMPermissionsOverrideCount" /* 18232 */;
 import react from "react" /* 19 */;
-import SortedGuildStore from "SortedGuildStore" /* 6852 */;
-import UserSettingSearchStore from "UserSettingSearchStore" /* 16848 */;
-import UserSettingsSafetySelectedGuildStore from "UserSettingsSafetySelectedGuildStore" /* 18183 */;
-import SettingBuilders from "SettingBuilders" /* 11703 */;
+import SortedGuildStore from "SortedGuildStore" /* 6827 */;
+import UserSettingSearchStore from "UserSettingSearchStore" /* 16896 */;
+import UserSettingsSafetySelectedGuildStore from "UserSettingsSafetySelectedGuildStore" /* 18230 */;
+import SettingBuilders from "SettingBuilders" /* 11685 */;
 import size from "module_2" /* 2 */;
 
 let c9;
@@ -53,7 +53,7 @@ let obj = {
   parent: MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
   onPress: function onGuildSelectPress() {
     const obj = ActionSheetActionCreatorsDefault;
-    obj.openLazy(asyncRequire(18184, dependencyMap.paths), "SettingsPrivacyAndSafetyGuildSelectActionSheet");
+    obj.openLazy(asyncRequire(18231, dependencyMap.paths), "SettingsPrivacyAndSafetyGuildSelectActionSheet");
   }
 };
 const guildSelector = SettingBuilders.createGuildSelector(obj);

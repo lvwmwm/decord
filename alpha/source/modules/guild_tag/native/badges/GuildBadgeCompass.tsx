@@ -1,12 +1,12 @@
-// Module ID: 16006
-// Function ID: 16007
+// Module ID: 16054
+// Function ID: 16055
 // Name: GuildBadgeCompass
-// Dependencies: [19, 21, 15996, 8122, 2]
+// Dependencies: [19, 21, 16044, 8101, 2]
 // Exports: GuildBadgeCompass
 
-// Module 16006 (GuildBadgeCompass)
-import inlineStyles from "inlineStyles" /* 8122 */;
-import GuildBadgeUtils from "GuildBadgeUtils" /* 15996 */;
+// Module 16054 (GuildBadgeCompass)
+import inlineStyles from "inlineStyles" /* 8101 */;
+import GuildBadgeUtils from "GuildBadgeUtils" /* 16044 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;

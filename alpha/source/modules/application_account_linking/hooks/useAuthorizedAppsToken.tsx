@@ -1,13 +1,13 @@
-// Module ID: 7415
-// Function ID: 7416
+// Module ID: 7392
+// Function ID: 7393
 // Name: useAuthorizedAppsToken
-// Dependencies: [19, 7362, 504, 1380, 7416, 2]
+// Dependencies: [19, 7339, 504, 1380, 7393, 2]
 // Exports: useAuthorizedAppsToken
 
-// Module 7415 (useAuthorizedAppsToken)
+// Module 7392 (useAuthorizedAppsToken)
 import GlobalUtils from "GlobalUtils" /* 1380 */;
-import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 7362 */;
-import AuthorizedAppsActionCreatorsDefault from "AuthorizedAppsActionCreators" /* 7416 */;
+import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 7339 */;
+import AuthorizedAppsActionCreatorsDefault from "AuthorizedAppsActionCreators" /* 7393 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

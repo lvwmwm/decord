@@ -1,28 +1,28 @@
-// Module ID: 9381
-// Function ID: 9382
+// Module ID: 9363
+// Function ID: 9364
 // Name: SecureFramesUserVerificationBottomSheet
-// Dependencies: [32, 19, 17, 5920, 1385, 9364, 1072, 21, 5170, 575, 9369, 9382, 9344, 9372, 504, 9374, 8844, 6199, 9363, 9366, 9383, 9385, 5404, 5867, 1113, 5418, 7405, 7450, 5781, 9375, 6185, 5788, 2]
+// Dependencies: [32, 19, 17, 5893, 1385, 9346, 1072, 21, 5140, 575, 9351, 9364, 9326, 9354, 504, 9356, 8823, 6173, 9345, 9348, 9365, 9367, 5374, 5837, 1113, 5388, 7382, 7427, 5751, 9357, 6159, 5758, 2]
 // Exports: default
 
-// Module 9381 (SecureFramesUserVerificationBottomSheet)
+// Module 9363 (SecureFramesUserVerificationBottomSheet)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl3 from "intl" /* 1113 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5404 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5867 */;
-import UserActionCreators from "UserActionCreators" /* 8844 */;
-import SecureFramesUtils from "SecureFramesUtils" /* 9363 */;
-import SecureFramesTracking from "SecureFramesTracking" /* 9366 */;
-import CheckmarkLargeBoldIcon2 from "CheckmarkLargeBoldIcon" /* 9383 */;
-import XLargeBoldIcon2 from "XLargeBoldIcon" /* 9385 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5837 */;
+import UserActionCreators from "UserActionCreators" /* 8823 */;
+import SecureFramesUtils from "SecureFramesUtils" /* 9345 */;
+import SecureFramesTracking from "SecureFramesTracking" /* 9348 */;
+import CheckmarkLargeBoldIcon2 from "CheckmarkLargeBoldIcon" /* 9365 */;
+import XLargeBoldIcon2 from "XLargeBoldIcon" /* 9367 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5920 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5893 */;
 import UserStore from "UserStore" /* 1385 */;
-import SecureFramesConstants from "SecureFramesConstants" /* 9364 */;
+import SecureFramesConstants from "SecureFramesConstants" /* 9346 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 let c10;
@@ -53,7 +53,7 @@ export default function SecureFramesUserVerificationBottomSheet(userId) {
   let obj11;
   let tmp17;
   let tmp18;
-  const f95480 = () => {
+  const f95819 = () => {
     const obj = SecureFramesUtils;
     return obj.getUserVerifyStateText(memo, name);
   };
@@ -137,8 +137,8 @@ export default function SecureFramesUserVerificationBottomSheet(userId) {
   const name = obj9.useName(guildId, channelId, stateFromStores2);
   const items5 = [memo, name];
   const items6 = [channelId, memo, userId];
-  [tmp17, tmp18] = _slicedToArray(fingerprintUserKey.useMemo(f95480, items5), 2);
-  const tmp16 = _slicedToArray(fingerprintUserKey.useMemo(f95480, items5), 2);
+  [tmp17, tmp18] = _slicedToArray(fingerprintUserKey.useMemo(f95819, items5), 2);
+  const tmp16 = _slicedToArray(fingerprintUserKey.useMemo(f95819, items5), 2);
   const effect1 = fingerprintUserKey.useEffect(() => {
     if (stateFromStores.OTHER_USER_ALREADY_VERIFIED !== memo) {
       if (stateFromStores.MATCH !== memo) {

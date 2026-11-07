@@ -1,32 +1,32 @@
-// Module ID: 13893
-// Function ID: 13894
+// Module ID: 13917
+// Function ID: 13918
 // Name: CheckpointCustomizationStat
-// Dependencies: [19, 17, 13643, 6224, 21, 5170, 575, 6591, 12147, 1113, 3248, 8735, 3216, 9864, 13652, 9833, 9213, 504, 6594, 13875, 13856, 13853, 2]
+// Dependencies: [19, 17, 13667, 6199, 21, 5140, 575, 6566, 12138, 1113, 3248, 8714, 3216, 9848, 13676, 9817, 9195, 504, 6569, 13899, 13880, 13877, 2]
 // Exports: default
 
-// Module 13893 (CheckpointCustomizationStat)
+// Module 13917 (CheckpointCustomizationStat)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl8 from "intl" /* 1113 */;
 import _modDef3216 from "module_3216" /* 3216 */;
 import _modDef3248 from "module_3248" /* 3248 */;
-import CheckpointConstants from "CheckpointConstants" /* 6224 */;
-import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6591 */;
-import CheckpointStatsUtils from "CheckpointStatsUtils" /* 6594 */;
-import ChatIcon from "ChatIcon" /* 8735 */;
-import CalendarIcon from "CalendarIcon" /* 9213 */;
-import GameControllerIcon from "GameControllerIcon" /* 9833 */;
-import ServerIcon from "ServerIcon" /* 9864 */;
-import MicrophoneIcon from "MicrophoneIcon" /* 12147 */;
-import EmojiSlightlySmilingFaceIcon from "EmojiSlightlySmilingFaceIcon" /* 13652 */;
-import CheckpointTextDefault from "CheckpointText" /* 13853 */;
-import CheckpointStatNumberDefault from "CheckpointStatNumber" /* 13856 */;
-import CheckpointTagDefault from "CheckpointTag" /* 13875 */;
+import CheckpointConstants from "CheckpointConstants" /* 6199 */;
+import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6566 */;
+import CheckpointStatsUtils from "CheckpointStatsUtils" /* 6569 */;
+import ChatIcon from "ChatIcon" /* 8714 */;
+import CalendarIcon from "CalendarIcon" /* 9195 */;
+import GameControllerIcon from "GameControllerIcon" /* 9817 */;
+import ServerIcon from "ServerIcon" /* 9848 */;
+import MicrophoneIcon from "MicrophoneIcon" /* 12138 */;
+import EmojiSlightlySmilingFaceIcon from "EmojiSlightlySmilingFaceIcon" /* 13676 */;
+import CheckpointTextDefault from "CheckpointText" /* 13877 */;
+import CheckpointStatNumberDefault from "CheckpointStatNumber" /* 13880 */;
+import CheckpointTagDefault from "CheckpointTag" /* 13899 */;
 import react from "react" /* 19 */;
-import CheckpointStore from "CheckpointStore" /* 13643 */;
+import CheckpointStore from "CheckpointStore" /* 13667 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;

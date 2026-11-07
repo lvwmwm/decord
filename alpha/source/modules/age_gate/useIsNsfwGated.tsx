@@ -1,11 +1,11 @@
-// Module ID: 9973
-// Function ID: 9974
+// Module ID: 9957
+// Function ID: 9958
 // Name: useIsNsfwGated
-// Dependencies: [6815, 1385, 504, 2]
+// Dependencies: [6790, 1385, 504, 2]
 // Exports: default
 
-// Module 9973 (useIsNsfwGated)
-import GuildNSFWAgreeStore from "GuildNSFWAgreeStore" /* 6815 */;
+// Module 9957 (useIsNsfwGated)
+import GuildNSFWAgreeStore from "GuildNSFWAgreeStore" /* 6790 */;
 import UserStore from "UserStore" /* 1385 */;
 import size from "module_2" /* 2 */;
 

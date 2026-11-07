@@ -1,14 +1,14 @@
-// Module ID: 12929
-// Function ID: 12930
+// Module ID: 12940
+// Function ID: 12941
 // Name: WindowTopIcon
-// Dependencies: [19, 21, 575, 5871, 12930, 2]
+// Dependencies: [19, 21, 575, 5841, 12941, 2]
 // Exports: WindowTopIcon
 
-// Module 12929 (WindowTopIcon)
+// Module 12940 (WindowTopIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5871 */;
-import AssetRegistry from "AssetRegistry" /* 12930 */;
+import BaseIconImage2 from "BaseIconImage" /* 5841 */;
+import AssetRegistry from "AssetRegistry" /* 12941 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

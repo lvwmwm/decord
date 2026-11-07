@@ -1,10 +1,10 @@
-// Module ID: 14960
-// Function ID: 14961
+// Module ID: 14993
+// Function ID: 14994
 // Name: useVirtualCurrencyMobileEnabled
 // Dependencies: [1624, 2]
 // Exports: isVirtualCurrencyEnabled, useVirtualCurrencyMobileEnabled
 
-// Module 14960 (useVirtualCurrencyMobileEnabled)
+// Module 14993 (useVirtualCurrencyMobileEnabled)
 import MetaQuestUtils from "MetaQuestUtils" /* 1624 */;
 import size from "module_2" /* 2 */;
 

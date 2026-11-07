@@ -1,19 +1,19 @@
-// Module ID: 15178
-// Function ID: 15179
+// Module ID: 15216
+// Function ID: 15217
 // Name: UserProfileWidgetRemoveGameButton
-// Dependencies: [19, 502, 8846, 21, 8119, 5893, 575, 1113, 12536, 5179, 8854, 2]
+// Dependencies: [19, 502, 8825, 21, 8098, 5862, 575, 1113, 12549, 5149, 8833, 2]
 // Exports: default
 
-// Module 15178 (UserProfileWidgetRemoveGameButton)
+// Module 15216 (UserProfileWidgetRemoveGameButton)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5179 */;
-import TrashIcon2 from "TrashIcon" /* 5893 */;
-import IconButton2 from "IconButton" /* 8119 */;
-import Constants from "Constants" /* 8846 */;
-import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8854 */;
-import WidgetUtils from "WidgetUtils" /* 12536 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5149 */;
+import TrashIcon2 from "TrashIcon" /* 5862 */;
+import IconButton2 from "IconButton" /* 8098 */;
+import Constants from "Constants" /* 8825 */;
+import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8833 */;
+import WidgetUtils from "WidgetUtils" /* 12549 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import size from "module_2" /* 2 */;

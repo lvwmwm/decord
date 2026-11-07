@@ -1,10 +1,10 @@
-// Module ID: 9845
-// Function ID: 9846
+// Module ID: 9829
+// Function ID: 9830
 // Name: TwoWayLinkDiscordConsent
-// Dependencies: [5, 32, 19, 17, 21, 3, 5170, 9836, 7431, 9846, 38, 7041, 7378, 5788, 1113, 2]
+// Dependencies: [5, 32, 19, 17, 21, 3, 5140, 9820, 7408, 9830, 38, 7016, 7355, 5758, 1113, 2]
 // Exports: TwoWayLinkDiscordConsent
 
-// Module 9845 (TwoWayLinkDiscordConsent)
+// Module 9829 (TwoWayLinkDiscordConsent)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef38 from "module_38" /* 38 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -12,7 +12,7 @@ import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let v0;
@@ -80,7 +80,7 @@ export function TwoWayLinkDiscordConsent(callbackCode) {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -134,7 +134,7 @@ export function TwoWayLinkDiscordConsent(callbackCode) {
               v0(code);
             }
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp32) {
           if (0 === v0) {

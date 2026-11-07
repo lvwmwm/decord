@@ -1,17 +1,17 @@
-// Module ID: 14861
-// Function ID: 14862
+// Module ID: 14894
+// Function ID: 14895
 // Name: FederatedSocialModal
-// Dependencies: [5, 32, 19, 1072, 21, 5170, 6654, 1113, 7431, 5864, 14862, 7378, 5781, 7172, 1187, 5788, 7089, 7256, 2]
+// Dependencies: [5, 32, 19, 1072, 21, 5140, 6629, 1113, 7408, 5834, 14895, 7355, 5751, 7147, 1187, 5758, 7064, 7231, 2]
 // Exports: default
 
-// Module 14861 (FederatedSocialModal)
+// Module 14894 (FederatedSocialModal)
 import Constants from "Constants" /* 1072 */;
-import PlatformsDefault from "Platforms" /* 6654 */;
+import PlatformsDefault from "Platforms" /* 6629 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -48,7 +48,7 @@ function FederatedSocialModalScreen(onClose) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c3;
@@ -110,7 +110,7 @@ function FederatedSocialModalScreen(onClose) {
               }
             }
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp26) {
           closure_2 = tmp26;

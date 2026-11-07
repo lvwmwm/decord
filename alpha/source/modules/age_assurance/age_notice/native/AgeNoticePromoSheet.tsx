@@ -1,24 +1,24 @@
-// Module ID: 16878
-// Function ID: 16879
+// Module ID: 16926
+// Function ID: 16927
 // Name: AgeNoticePromoSheet
-// Dependencies: [19, 6817, 1072, 5016, 21, 5170, 575, 6806, 16879, 5404, 16877, 8046, 6809, 2185, 7658, 1113, 3284, 10973, 5872, 16880, 6847, 5788, 2]
+// Dependencies: [19, 6792, 1072, 4986, 21, 5140, 575, 6781, 16927, 5374, 16925, 8024, 6784, 2185, 7635, 1113, 3284, 10956, 5842, 16928, 6822, 5758, 2]
 // Exports: default
 
-// Module 16878 (AgeNoticePromoSheet)
+// Module 16926 (AgeNoticePromoSheet)
 import nativeDefault from "native" /* 575 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2185 */;
 import _modDef3284 from "module_3284" /* 3284 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 5016 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5404 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6809 */;
-import AgeNoticeConstants from "AgeNoticeConstants" /* 6817 */;
-import openUserSettings from "openUserSettings" /* 7658 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8046 */;
-import openAgeNoticePromoSheet from "openAgeNoticePromoSheet" /* 16877 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4986 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6784 */;
+import AgeNoticeConstants from "AgeNoticeConstants" /* 6792 */;
+import openUserSettings from "openUserSettings" /* 7635 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8024 */;
+import openAgeNoticePromoSheet from "openAgeNoticePromoSheet" /* 16925 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 let c9;
@@ -50,9 +50,9 @@ export default function AgeNoticePromoSheet(markAsDismissed) {
   let dismissOnce;
   markAsDismissed = markAsDismissed.markAsDismissed;
   const tmp = closure_10();
-  let obj = dismissOnce(6806);
+  let obj = dismissOnce(6781);
   const isVerifiedTeen = obj.useIsVerifiedTeen();
-  let obj2 = dismissOnce(16879);
+  let obj2 = dismissOnce(16927);
   dismissOnce = obj2.useDismissOnce(markAsDismissed);
   const items = [dismissOnce];
   const items1 = [dismissOnce];
@@ -112,9 +112,9 @@ export default function AgeNoticePromoSheet(markAsDismissed) {
     tmp15 = obj3;
   }
   const obj4 = { illustration: closure_8(tmp14Result, obj5), title: intl2.string(tmp14(3284).GdTVPF), description: formatResult, onDismiss: callback, actions: closure_9(ButtonGroup, obj8) };
-  const PromoSheet = tmp2(10973).PromoSheet;
-  obj5 = { source: tmp14(16880), style: tmp.illustration, resizeMode: "contain" };
-  tmp14Result = tmp14(5872);
+  const PromoSheet = tmp2(10956).PromoSheet;
+  obj5 = { source: tmp14(16928), style: tmp.illustration, resizeMode: "contain" };
+  tmp14Result = tmp14(5842);
   intl2 = tmp2(1113).intl;
   const intl3 = tmp2(1113).intl;
   const format = intl3.format;
@@ -127,12 +127,12 @@ export default function AgeNoticePromoSheet(markAsDismissed) {
     formatResult = format(tmp14Result2.xuvWqy, obj7);
   }
   obj8 = { size: "lg", style: tmp.actions, children: items5 };
-  ButtonGroup = tmp2(6847).ButtonGroup;
+  ButtonGroup = tmp2(6822).ButtonGroup;
   items5 = [, ];
   const obj9 = { size: "lg", text: tmp15.text, onPress: tmp15.onPress };
-  items5[0] = closure_8(dismissOnce(5788).Button, obj9);
+  items5[0] = closure_8(dismissOnce(5758).Button, obj9);
   const obj10 = { size: "lg", variant: "secondary", text: intl4.string(dismissOnce(1113).t["NX+WJN"]), onPress: callback1 };
-  const Button = tmp2(5788).Button;
+  const Button = tmp2(5758).Button;
   intl4 = tmp2(1113).intl;
   items5[1] = closure_8(Button, obj10);
   return closure_8(PromoSheet, obj4);

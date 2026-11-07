@@ -1,9 +1,9 @@
-// Module ID: 14186
-// Function ID: 14187
+// Module ID: 14211
+// Function ID: 14212
 // Name: Constants
 // Dependencies: [2]
 
-// Module 14186 (Constants)
+// Module 14211 (Constants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/multi_account/Constants.tsx");
@@ -13,4 +13,4 @@ export const MAX_PUSH_SYNC_ACCOUNTS = 5;
 export const SWITCH_ACCOUNTS_MODAL_KEY = "switch-accounts-modal";
 export const MULTI_ACCOUNT_LOGIN_MODAL_KEY = "multiaccount-login-modal";
 export const MANAGE_EDIT_TRANSITION_DURATION = 200;
-export const MultiAccountSwitchLocation = { YOU_ACCOUNT_ACTION_SHEET: "you_account_action_sheet", CHOOSE_ACCOUNT: "choose_account", MANAGE_ACCOUNTS_MODAL: "manage_accounts_modal", MULTI_ACCOUNTS_LIST: "multi_accounts_list", MULTI_ACCOUNT_MENU: "multi_account_menu", PUSH_NOTIFICATION_INITIAL: "push_notification_initial", PUSH_NOTIFICATION: "push_notification", SHARE_EXTENSION: "share_extension" };
+export const MultiAccountSwitchLocation = { ACCOUNT_SWITCHER_RAIL: "account_switcher_rail", YOU_ACCOUNT_ACTION_SHEET: "you_account_action_sheet", CHOOSE_ACCOUNT: "choose_account", MANAGE_ACCOUNTS_MODAL: "manage_accounts_modal", MULTI_ACCOUNTS_LIST: "multi_accounts_list", MULTI_ACCOUNT_MENU: "multi_account_menu", PUSH_NOTIFICATION_INITIAL: "push_notification_initial", PUSH_NOTIFICATION: "push_notification", SHARE_EXTENSION: "share_extension" };

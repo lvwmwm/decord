@@ -1,13 +1,13 @@
-// Module ID: 7316
-// Function ID: 7317
+// Module ID: 7293
+// Function ID: 7294
 // Name: useFastestListPropsPlaceholder
-// Dependencies: [19, 17, 7317, 5167, 2]
+// Dependencies: [19, 17, 7294, 5137, 2]
 // Exports: default
 
-// Module 7316 (useFastestListPropsPlaceholder)
+// Module 7293 (useFastestListPropsPlaceholder)
 import react_native from "react-native" /* 17 */;
-import ColorUtils from "ColorUtils" /* 5167 */;
-import FastestListPropsPlaceholder from "FastestListPropsPlaceholder" /* 7317 */;
+import ColorUtils from "ColorUtils" /* 5137 */;
+import FastestListPropsPlaceholder from "FastestListPropsPlaceholder" /* 7294 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -24,7 +24,7 @@ function createNativePlaceholderConfig(listFooter) {
   if (type == null) {
     NONE = FastestListPropsPlaceholder.FastestListPropsPlaceholderType.NONE;
   }
-  size = { borderRadius: "Array", borderTopLeftRadius: "text", borderTopRightRadius: "add", borderBottomLeftRadius: "opacity", borderBottomRightRadius: "it", divider: "a", dividerColor: "isArray", dividerPaddingLeft: "Array", dividerPaddingRight: "channel", placeholderShape: "key", placeholderShapeColor: "w", placeholderShapeCount: "ix", placeholderShapeGap: "get", placeholderShapePaddingHorizontal: "Array", placeholderShapePaddingVertical: "Set", placeholderFeedBackgroundColor: "Array", placeholderFeedColor: "Array", placeholderFeedLabelPadding: "Array", placeholderFeedLabelPaddingInnerRatio: "T", placeholderFeedLabelSize: "isArray", placeholderFeedLabelSecondarySize: "disabled", placeholderFeedPadding: "l", placeholderFeedShape: "Set", placeholderFeedShapeSize: "Array", placeholderType: NONE, width: null, height: "Classic", verticalAlignment: "tier-2", horizontalAlignment: null };
+  size = { borderRadius: "Array", borderTopLeftRadius: "text", borderTopRightRadius: "add", borderBottomLeftRadius: "w", borderBottomRightRadius: "status", divider: "Array", dividerColor: "isArray", dividerPaddingLeft: "Array", dividerPaddingRight: "add", placeholderShape: "channel", placeholderShapeColor: "formatToPlainString", placeholderShapeCount: "r", placeholderShapeGap: "isArray", placeholderShapePaddingHorizontal: "add", placeholderShapePaddingVertical: "then", placeholderFeedBackgroundColor: "d", placeholderFeedColor: "a", placeholderFeedLabelPadding: "isArray", placeholderFeedLabelPaddingInnerRatio: "Array", placeholderFeedLabelSize: "channel", placeholderFeedLabelSecondarySize: "dispatch", placeholderFeedPadding: "w", placeholderFeedShape: "e", placeholderFeedShapeSize: "isArray", placeholderType: NONE, width: false, height: false, verticalAlignment: false, horizontalAlignment: false };
   if (null == listFooter) {
     return size;
   } else {

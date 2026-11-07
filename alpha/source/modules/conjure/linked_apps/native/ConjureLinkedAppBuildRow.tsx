@@ -1,16 +1,16 @@
-// Module ID: 12955
-// Function ID: 12956
+// Module ID: 12966
+// Function ID: 12967
 // Name: ConjureLinkedAppBuildRow
-// Dependencies: [19, 21, 1113, 4024, 7151, 7063, 12332, 5404, 12337, 2]
+// Dependencies: [19, 21, 1113, 4026, 7126, 7038, 12330, 5374, 12335, 2]
 // Exports: default
 
-// Module 12955 (ConjureLinkedAppBuildRow)
+// Module 12966 (ConjureLinkedAppBuildRow)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5404 */;
-import TableRow2 from "TableRow" /* 7063 */;
-import TableRowGroup2 from "TableRowGroup" /* 7151 */;
-import conjureLinkedApps from "conjureLinkedApps" /* 12332 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5374 */;
+import TableRow2 from "TableRow" /* 7038 */;
+import TableRowGroup2 from "TableRowGroup" /* 7126 */;
+import conjureLinkedApps from "conjureLinkedApps" /* 12330 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -28,7 +28,7 @@ export default function ConjureLinkedAppBuildRow(value) {
   const onChange = value.onChange;
   const disabled = value.disabled;
   const intl = intl2.intl;
-  const stringResult = intl.string(onChange(4024).Odrcmq);
+  const stringResult = intl.string(onChange(4026).Odrcmq);
   dependencyMap = stringResult;
   const TableRowGroup = TableRowGroup2.TableRowGroup;
   const obj2 = {

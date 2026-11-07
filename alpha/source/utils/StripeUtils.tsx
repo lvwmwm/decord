@@ -1,10 +1,10 @@
-// Module ID: 6629
-// Function ID: 6630
+// Module ID: 6604
+// Function ID: 6605
 // Name: StripeUtils
-// Dependencies: [5, 32, 2186, 1072, 3, 6630, 1242, 6631, 1282, 504, 2]
+// Dependencies: [5, 32, 2186, 1072, 3, 6605, 1242, 6606, 1282, 504, 2]
 // Exports: authenticatePaymentIntentForPaymentId, getStripeClientMode, getStripeElementLocale, parseBillingAddressInfoToStripeBillingDetails, parseStripePaymentMethod, useStripeLocale, validateExpiry
 
-// Module 6629 (StripeUtils)
+// Module 6604 (StripeUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import get_initialized from "get initialized" /* 504 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -66,7 +66,7 @@ function getStripe(payment_gateway_merchant_account_id) {
   } else {
     const tmp3 = _require;
     let tmp4 = dependencyMap;
-    let obj2 = require("module_6631");
+    let obj2 = require("module_6606");
     let closure_1 = obj2.loadStripe(tmp);
     const tmp6 = (async (arg0, value) => {
       if (c5 === 2) {
@@ -79,7 +79,7 @@ function getStripe(payment_gateway_merchant_account_id) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c3;
@@ -181,7 +181,7 @@ obj = function _authenticatePaymentIntentForPaymentId() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let tmp48;

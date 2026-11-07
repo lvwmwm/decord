@@ -1,13 +1,13 @@
-// Module ID: 13391
-// Function ID: 13392
+// Module ID: 13414
+// Function ID: 13415
 // Name: handleUsePrimaryEntryPointAppCommand
-// Dependencies: [5, 5019, 1385, 11912, 5831, 12662, 11898, 2]
+// Dependencies: [5, 4989, 1385, 11903, 5801, 12675, 11889, 2]
 // Exports: default
 
-// Module 13391 (handleUsePrimaryEntryPointAppCommand)
-import getCachedOrFetchActivityApplicationForLaunchDefault from "getCachedOrFetchActivityApplicationForLaunch" /* 11912 */;
+// Module 13414 (handleUsePrimaryEntryPointAppCommand)
+import getCachedOrFetchActivityApplicationForLaunchDefault from "getCachedOrFetchActivityApplicationForLaunch" /* 11903 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 5019 */;
+import ChannelStore from "ChannelStore" /* 4989 */;
 import UserStore from "UserStore" /* 1385 */;
 import size from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ let obj = function _handleUsePrimaryEntryPointAppCommand() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -132,7 +132,7 @@ obj = function _handleUsePrimaryEntryPointAppCommandInternal() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {

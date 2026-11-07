@@ -1,94 +1,68 @@
 // Module ID: 10515
 // Function ID: 10516
-// Dependencies: [41, 42, 93, 95, 98, 10463, 10509, 10464, 10470]
+// Dependencies: [41, 42, 10516, 10447]
 
 // Module 10515
-import repeatedTimeunitPattern from "repeatedTimeunitPattern" /* 10463 */;
-import findMostLikelyADYear from "findMostLikelyADYear" /* 10464 */;
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10470 */;
-import _mod10509 from "module_10509" /* 10509 */;
+import findMostLikelyADYear from "findMostLikelyADYear" /* 10447 */;
+import NUMBER from "NUMBER" /* 10516 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
-import c3 from "_possibleConstructorReturn" /* 93 */;
-import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
-import _inherits from "_inherits" /* 98 */;
 
-function _isNativeReflectConstruct() {
-  try {
-    const _Boolean = Boolean;
-    const _Reflect = Reflect;
-    const _Boolean2 = Boolean;
-    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-    }));
-    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
-      return closure_0;
-    };
-    return _isNativeReflectConstruct();
-  } catch (err) {
-  }
-}
-const matchAnyPatternResult = repeatedTimeunitPattern.matchAnyPattern(_mod10509.MONTH_DICTIONARY);
-const regExp = new RegExp("(?:am\\s*?)?(?:den\\s*?)?([0-9]{1,2})\\.(?:\\s*(?:bis(?:\\s*(?:am|zum))?|\\-|\\\u2013|\\s)\\s*([0-9]{1,2})\\.?)?\\s*(" + matchAnyPatternResult + ")(?:(?:-|/|,?\\s*)(" + _mod10509.YEAR_PATTERN + "(?![^\\s]\\d)))?(?=\\W|$)", "i");
-class DEMonthNameLittleEndianParser {
+const re3 = /(?:(?:([同今本])|((昭和|平成|令和)?([0-9０-９]{1,4}|元)))年\s*)?([0-9０-９]{1,2})月\s*([0-9０-９]{1,2})日/i;
+class JPStandardParser {
   constructor() {
-    let constructResult;
-    const self = this;
-    _classCallCheck(this, DEMonthNameLittleEndianParser);
-    const obj = _getPrototypeOf(DEMonthNameLittleEndianParser);
-    const tmp2 = _getPrototypeOf;
-    const tmp3 = c3;
-    if (_isNativeReflectConstruct()) {
-      const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
-    } else {
-      constructResult = obj(...arguments);
-    }
-    return tmp3(self, constructResult);
+    _classCallCheck(this, JPStandardParser);
   }
 }
-_inherits(DEMonthNameLittleEndianParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
-  key: "innerPattern",
-  value: function innerPattern() {
-    return regExp;
+  key: "pattern",
+  value: function pattern() {
+    return re3;
   }
 };
 const items = [
   entry,
   {
-    key: "innerExtract",
-    value: function innerExtract(createParsingResult, index) {
-      const parsingResult = createParsingResult.createParsingResult(index.index, index[0]);
-      const tmp4 = _mod10509.MONTH_DICTIONARY[index[3].toLowerCase(index[3])];
-      const parsed = parseInt(index[1]);
-      if (parsed > 31) {
-        index.index = index.index + index[1].length;
-        return null;
-      } else {
-        const start4 = parsingResult.start;
-        start4.assign("month", tmp4);
-        const start5 = parsingResult.start;
-        start5.assign("day", parsed);
-        if (index[4]) {
-          const start2 = parsingResult.start;
-          start2.assign("year", _mod10509.parseYear(index[4]));
-        } else {
-          const start = parsingResult.start;
-          start.imply("year", findMostLikelyADYear.findYearClosestToRef(createParsingResult.refDate, parsed, tmp4));
-        }
-        if (index[2]) {
-          const _parseInt = parseInt;
-          const start3 = parsingResult.start;
-          const parsed1 = parseInt(index[2]);
-          parsingResult.end = start3.clone();
-          const end = parsingResult.end;
-          end.assign("day", parsed1);
-        }
-        return parsingResult;
+    key: "extract",
+    value: function extract(createParsingComponents, arg1) {
+      const parsed = parseInt(NUMBER.toHankaku(arg1[5]));
+      const parsed1 = parseInt(NUMBER.toHankaku(arg1[6]));
+      const parsingComponents = createParsingComponents.createParsingComponents({ day: parsed1, month: parsed });
+      let match = arg1[1];
+      if (match) {
+        const str = arg1[1];
+        match = str.match("\u540C|\u4ECA|\u672C");
       }
+      if (match) {
+        const reference = createParsingComponents.reference;
+        const assign = parsingComponents.assign;
+        const dateWithAdjustedTimezone = reference.getDateWithAdjustedTimezone();
+        assign("year", dateWithAdjustedTimezone.getFullYear());
+      }
+      if (arg1[2]) {
+        let sum;
+        let num = 1;
+        if ("\u5143" != arg1[4]) {
+          const _parseInt = parseInt;
+          num = parseInt(tmp(10516).toHankaku(tmp8));
+        }
+        if ("\u4EE4\u548C" == arg1[3]) {
+          sum = num + 2018;
+        } else if ("\u5E73\u6210" == arg1[3]) {
+          sum = num + 1988;
+        } else {
+          sum = num;
+          if ("\u662D\u548C" == arg1[3]) {
+            sum = num + 1925;
+          }
+        }
+        parsingComponents.assign("year", sum);
+      } else {
+        parsingComponents.imply("year", findMostLikelyADYear.findYearClosestToRef(createParsingComponents.refDate, parsed1, parsed));
+      }
+      return parsingComponents;
     }
   }
 ];
 
-export default _createClass(DEMonthNameLittleEndianParser, items);
+export default _createClass(JPStandardParser, items);

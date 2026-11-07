@@ -1,10 +1,10 @@
-// Module ID: 15292
-// Function ID: 15293
+// Module ID: 15326
+// Function ID: 15327
 // Name: useHandleClaim
-// Dependencies: [5, 19, 7818, 5404, 14697, 5867, 1113, 2]
+// Dependencies: [5, 19, 7795, 5374, 14730, 5837, 1113, 2]
 // Exports: useHandleClaim
 
-// Module 15292 (useHandleClaim)
+// Module 15326 (useHandleClaim)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -34,7 +34,7 @@ export function useHandleClaim(product) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c3;
@@ -83,7 +83,7 @@ export function useHandleClaim(product) {
               c3 = 0;
             }
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp18) {
           closure_2 = tmp18;

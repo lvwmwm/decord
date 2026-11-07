@@ -1,20 +1,20 @@
-// Module ID: 13862
-// Function ID: 13863
+// Module ID: 13886
+// Function ID: 13887
 // Name: CheckpointVoiceStatsScreen
-// Dependencies: [19, 17, 13643, 6224, 21, 5170, 575, 504, 6594, 1113, 3248, 13851, 13858, 13863, 13864, 12147, 13853, 13865, 13866, 13867, 2]
+// Dependencies: [19, 17, 13667, 6199, 21, 5140, 575, 504, 6569, 1113, 3248, 13875, 13882, 13887, 13888, 12138, 13877, 13889, 13890, 13891, 2]
 // Exports: default
 
-// Module 13862 (CheckpointVoiceStatsScreen)
+// Module 13886 (CheckpointVoiceStatsScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef3248 from "module_3248" /* 3248 */;
-import CheckpointConstants from "CheckpointConstants" /* 6224 */;
-import CheckpointStatsUtils from "CheckpointStatsUtils" /* 6594 */;
-import CheckpointEmphasisDefault from "CheckpointEmphasis" /* 13867 */;
+import CheckpointConstants from "CheckpointConstants" /* 6199 */;
+import CheckpointStatsUtils from "CheckpointStatsUtils" /* 6569 */;
+import CheckpointEmphasisDefault from "CheckpointEmphasis" /* 13891 */;
 import react from "react" /* 19 */;
-import CheckpointStore from "CheckpointStore" /* 13643 */;
+import CheckpointStore from "CheckpointStore" /* 13667 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let metroImportAll;
@@ -86,8 +86,8 @@ export default function CheckpointVoiceStatsScreen() {
     return obj.formatCheckpointPeakHour(stateFromStores1);
   }, items2);
   let prop;
-  const getCheckpointTopPercent = stateFromStores1(6594).getCheckpointTopPercent;
-  stateFromStores1(6594);
+  const getCheckpointTopPercent = stateFromStores1(6569).getCheckpointTopPercent;
+  stateFromStores1(6569);
   if (stateFromStores != null) {
     prop = stateFromStores.totalVoiceMinutesPercentile;
   }
@@ -112,36 +112,36 @@ export default function CheckpointVoiceStatsScreen() {
   }
   const obj4 = { style: tmp.container, children: items3 };
   const obj5 = { style: tmp.imageContainer, children: closure_7(tmp14Result4, obj6) };
-  obj6 = { animatedUri: tmp14(13863), staticUri: tmp14(13864), style: tmp.image };
-  const tmp14Result = tmp14(13851);
-  tmp14Result4 = tmp14(13858);
+  obj6 = { animatedUri: tmp14(13887), staticUri: tmp14(13888), style: tmp.image };
+  const tmp14Result = tmp14(13875);
+  tmp14Result4 = tmp14(13882);
   items3 = [closure_7(View, obj5), ];
   const obj8 = { style: tmp.title, children: items4 };
   items4 = [, ];
   const obj7 = { style: tmp.copy, children: items5 };
   const obj9 = { size: "xs", color: CHECKPOINT_PRIMARY };
-  items4[0] = closure_7(stateFromStores1(12147).MicrophoneIcon, obj9);
+  items4[0] = closure_7(stateFromStores1(12138).MicrophoneIcon, obj9);
   const obj10 = { isStepHeading: true, variant: "heading-sm/semibold", style: tmp.titleText, children: stringResult.toLocaleUpperCase() };
-  const tmp14Result5 = tmp14(13853);
+  const tmp14Result5 = tmp14(13877);
   items4[1] = closure_7(tmp14Result5, obj10);
   items5 = [closure_8(View, obj8), , , ];
   let tmp16Result = tmp7 && null != memo;
   if (tmp16Result) {
     const obj11 = { value: null, accessibilityLabel: null };
     ({ value: obj12.value, label: obj12.accessibilityLabel } = memo);
-    tmp16Result = tmp16(tmp14(13865), obj11);
+    tmp16Result = tmp16(tmp14(13889), obj11);
   }
   items5[1] = tmp16Result;
   let tmp16Result2 = !tmp7;
   if (tmp16Result2) {
     const _HermesInternal = HermesInternal;
-    const obj13 = { accessible: true, accessibilityLabel: "" + roundResult + " " + stringResult.toLocaleLowerCase(), style: tmp.number, children: closure_7(tmp14(13866), obj14) };
+    const obj13 = { accessible: true, accessibilityLabel: "" + roundResult + " " + stringResult.toLocaleLowerCase(), style: tmp.number, children: closure_7(tmp14(13890), obj14) };
     obj14 = { end: roundResult };
     tmp16Result2 = tmp16(tmp19, obj13);
   }
   items5[2] = tmp16Result2;
   const obj15 = { variant: "heading-lg/medium", accessibilityLabel: formatToPlainStringResult, children: stringResult1 };
-  const tmp14Result6 = tmp14(13853);
+  const tmp14Result6 = tmp14(13877);
   if (roundResult <= 0) {
     const intl5 = tmp2(1113).intl;
     stringResult1 = intl5.string(tmp14(3248).huiTne);

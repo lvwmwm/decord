@@ -1,28 +1,28 @@
-// Module ID: 5004
-// Function ID: 5005
+// Module ID: 4974
+// Function ID: 4975
 // Name: DismissibleContentUtils
-// Dependencies: [32, 5, 1231, 5005, 5006, 5011, 5016, 1072, 5010, 5017, 11, 5000, 5222, 504, 5003, 572, 5844, 1252, 5007, 5845, 2]
+// Dependencies: [32, 5, 1231, 4975, 4976, 4981, 4986, 1072, 4980, 4987, 11, 4970, 5192, 504, 4973, 572, 5814, 1252, 4977, 5815, 2]
 // Exports: UNSAFE_addGuildDismissedContent, UNSAFE_addSnowflakeBoundGuildDismissedContent, UNSAFE_addTimeRecurringGuildDismissedContent, UNSAFE_isSingleUseGuildDismissibleContentDismissed, UNSAFE_isSnowflakeBoundGuildDismissibleContentDismissed, UNSAFE_isTimeRecurringGuildDismissibleContentDismissed, UNSAFE_removeGuildDismissedContent, UNSAFE_removeSnowflakeBoundGuildDismissedContent, UNSAFE_removeTimeRecurringGuildDismissedContent, getDismissedRecurringDismissibleContentState, getGuildNextNumTimesDismissed, isDismissibleContentBlockedByOverlay, isTimeRecurringDismissibleContentDismissed, isTimeRecurringSnowflakeBoundDismissibleContentDismissed, isVersionedDismissibleContentDismissed, markLatestVersionDismissibleContentAsDismissed, markSnowflakeBoundDismissibleContentAsDismissed, markTimeRecurringDismissibleContentAsDismissed, requestMarkDismissibleContentAsShown, useIsSingleUseGuildDismissibleContentDismissed
 
-// Module 5004 (DismissibleContentUtils)
+// Module 4974 (DismissibleContentUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 5000 */;
-import dismissible_content from "dismissible_content" /* 5003 */;
-import DCFEventStore from "DCFEventStore" /* 5005 */;
-import DismissibleContentTypes from "DismissibleContentTypes" /* 5010 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 5016 */;
-import VersionedDismissibleContentUtils from "VersionedDismissibleContentUtils" /* 5017 */;
-import NewUserDismissibleContentRegistry from "NewUserDismissibleContentRegistry" /* 5222 */;
-import DismissibleContentFrameworkActionCreators from "DismissibleContentFrameworkActionCreators" /* 5844 */;
-import trackDismissibleContentActioned from "trackDismissibleContentActioned" /* 5845 */;
+import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 4970 */;
+import dismissible_content from "dismissible_content" /* 4973 */;
+import DCFEventStore from "DCFEventStore" /* 4975 */;
+import DismissibleContentTypes from "DismissibleContentTypes" /* 4980 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4986 */;
+import VersionedDismissibleContentUtils from "VersionedDismissibleContentUtils" /* 4987 */;
+import NewUserDismissibleContentRegistry from "NewUserDismissibleContentRegistry" /* 5192 */;
+import DismissibleContentFrameworkActionCreators from "DismissibleContentFrameworkActionCreators" /* 5814 */;
+import trackDismissibleContentActioned from "trackDismissibleContentActioned" /* 5815 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
-import DismissibleContentFrameworkStore from "DismissibleContentFrameworkStore" /* 5006 */;
-import DismissibleContentShownStateStore from "DismissibleContentShownStateStore" /* 5011 */;
+import DismissibleContentFrameworkStore from "DismissibleContentFrameworkStore" /* 4976 */;
+import DismissibleContentShownStateStore from "DismissibleContentShownStateStore" /* 4981 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -33,7 +33,7 @@ let c9;
 let metroImportAll;
 let tmp7;
 let unpackModuleId;
-const DismissibleContentFatigueConfig = tmp7(5007);
+const DismissibleContentFatigueConfig = tmp7(4977);
 function addVersionedDismissedContent(GUILD_POWERUP_NOTIFICATION, versionedDismissibleContentCurrentVersion, nextNumTimesDismissed) {
   let str;
   obj = { lastDismissedVersion: versionedDismissibleContentCurrentVersion, lastDismissedAtMs: str.toString(), lastDismissedObjectId: "0", numTimesDismissed: nextNumTimesDismissed };
@@ -93,7 +93,7 @@ let obj = function _markLatestVersionDismissibleContentAsDismissed() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -122,7 +122,7 @@ let obj = function _markLatestVersionDismissibleContentAsDismissed() {
           return obj;
         } else {
           c2 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp9) {
         c2 = 3;
@@ -169,7 +169,7 @@ obj = function _markVersionedDismissibleContentAsDismissed() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -203,7 +203,7 @@ obj = function _markVersionedDismissibleContentAsDismissed() {
         } else {
           closure_132_20(closure_0, closure_1);
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp19) {
         c6 = 3;
@@ -229,7 +229,7 @@ obj = function _markSnowflakeBoundDismissibleContentAsDismissed() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -263,7 +263,7 @@ obj = function _markSnowflakeBoundDismissibleContentAsDismissed() {
           } else {
             closure_132_20(closure_0, snowflakeId);
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp22) {
           c6 = 3;
@@ -288,7 +288,7 @@ obj = function _markTimeRecurringDismissibleContentAsDismissed() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -321,7 +321,7 @@ obj = function _markTimeRecurringDismissibleContentAsDismissed() {
         } else {
           closure_131_20(closure_0, closure_1);
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp18) {
         c5 = 3;

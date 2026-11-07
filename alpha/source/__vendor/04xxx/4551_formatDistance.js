@@ -5,91 +5,40 @@
 // Exports: default
 
 // Module 4551 (formatDistance)
+let closure_0 = { lessThanXSeconds: { one: "\u0E19\u0E49\u0E2D\u0E22\u0E01\u0E27\u0E48\u0E32 1 \u0E27\u0E34\u0E19\u0E32\u0E17\u0E35", other: "\u0E19\u0E49\u0E2D\u0E22\u0E01\u0E27\u0E48\u0E32 {{count}} \u0E27\u0E34\u0E19\u0E32\u0E17\u0E35" }, xSeconds: { one: "1 \u0E27\u0E34\u0E19\u0E32\u0E17\u0E35", other: "{{count}} \u0E27\u0E34\u0E19\u0E32\u0E17\u0E35" }, halfAMinute: "\u0E04\u0E23\u0E36\u0E48\u0E07\u0E19\u0E32\u0E17\u0E35", lessThanXMinutes: { one: "\u0E19\u0E49\u0E2D\u0E22\u0E01\u0E27\u0E48\u0E32 1 \u0E19\u0E32\u0E17\u0E35", other: "\u0E19\u0E49\u0E2D\u0E22\u0E01\u0E27\u0E48\u0E32 {{count}} \u0E19\u0E32\u0E17\u0E35" }, xMinutes: { one: "1 \u0E19\u0E32\u0E17\u0E35", other: "{{count}} \u0E19\u0E32\u0E17\u0E35" }, aboutXHours: { one: "\u0E1B\u0E23\u0E30\u0E21\u0E32\u0E13 1 \u0E0A\u0E31\u0E48\u0E27\u0E42\u0E21\u0E07", other: "\u0E1B\u0E23\u0E30\u0E21\u0E32\u0E13 {{count}} \u0E0A\u0E31\u0E48\u0E27\u0E42\u0E21\u0E07" }, xHours: { one: "1 \u0E0A\u0E31\u0E48\u0E27\u0E42\u0E21\u0E07", other: "{{count}} \u0E0A\u0E31\u0E48\u0E27\u0E42\u0E21\u0E07" }, xDays: { one: "1 \u0E27\u0E31\u0E19", other: "{{count}} \u0E27\u0E31\u0E19" }, aboutXWeeks: { one: "\u0E1B\u0E23\u0E30\u0E21\u0E32\u0E13 1 \u0E2A\u0E31\u0E1B\u0E14\u0E32\u0E2B\u0E4C", other: "\u0E1B\u0E23\u0E30\u0E21\u0E32\u0E13 {{count}} \u0E2A\u0E31\u0E1B\u0E14\u0E32\u0E2B\u0E4C" }, xWeeks: { one: "1 \u0E2A\u0E31\u0E1B\u0E14\u0E32\u0E2B\u0E4C", other: "{{count}} \u0E2A\u0E31\u0E1B\u0E14\u0E32\u0E2B\u0E4C" }, aboutXMonths: { one: "\u0E1B\u0E23\u0E30\u0E21\u0E32\u0E13 1 \u0E40\u0E14\u0E37\u0E2D\u0E19", other: "\u0E1B\u0E23\u0E30\u0E21\u0E32\u0E13 {{count}} \u0E40\u0E14\u0E37\u0E2D\u0E19" }, xMonths: { one: "1 \u0E40\u0E14\u0E37\u0E2D\u0E19", other: "{{count}} \u0E40\u0E14\u0E37\u0E2D\u0E19" }, aboutXYears: { one: "\u0E1B\u0E23\u0E30\u0E21\u0E32\u0E13 1 \u0E1B\u0E35", other: "\u0E1B\u0E23\u0E30\u0E21\u0E32\u0E13 {{count}} \u0E1B\u0E35" }, xYears: { one: "1 \u0E1B\u0E35", other: "{{count}} \u0E1B\u0E35" }, overXYears: { one: "\u0E21\u0E32\u0E01\u0E01\u0E27\u0E48\u0E32 1 \u0E1B\u0E35", other: "\u0E21\u0E32\u0E01\u0E01\u0E27\u0E48\u0E32 {{count}} \u0E1B\u0E35" }, almostXYears: { one: "\u0E40\u0E01\u0E37\u0E2D\u0E1A 1 \u0E1B\u0E35", other: "\u0E40\u0E01\u0E37\u0E2D\u0E1A {{count}} \u0E1B\u0E35" } };
 
 export default function formatDistance(arg0, arg1, addSuffix) {
-  let other;
-  if (null != addSuffix) {
-    let replaced;
-    if (addSuffix.addSuffix) {
-      let other2;
-      if (addSuffix.comparison) {
-        let text;
-        if (addSuffix.comparison > 0) {
-          let other3;
-          if (1 === arg1) {
-            other3 = tmp.one;
-          } else {
-            const result = arg1 % 100;
-            if (result <= 20) {
-              if (10 < result) {
-                other3 = tmp.other;
-              }
-            }
-            const result1 = result % 10;
-            if (2 <= result1) {
-              if (result1 <= 4) {
-                other3 = tmp.twoFour;
-              }
-            }
-            other3 = tmp.other;
-          }
-          let str5 = other3;
-          if (typeof other3 !== "string") {
-            str5 = other3.future;
-          }
-          const _String2 = String;
-          const replace2 = str5.replace;
-          text = `za ${replace2("{{count}}", String(arg1))}`;
-        }
-        replaced = text;
-      }
-      if (1 === arg1) {
-        other2 = tmp.one;
-      } else {
-        const result2 = arg1 % 100;
-        if (result2 <= 20) {
-          if (10 < result2) {
-            other2 = tmp.other;
-          }
-        }
-        const result3 = result2 % 10;
-        if (2 <= result3) {
-          if (result3 <= 4) {
-            other2 = tmp.twoFour;
-          }
-        }
-        other2 = tmp.other;
-      }
-      let str2 = other2;
-      if (typeof other2 !== "string") {
-        str2 = other2.past;
-      }
+  let tmp2 = tmp;
+  if (typeof closure_0[arg0] !== "string") {
+    let one;
+    if (1 === arg1) {
+      one = tmp.one;
+    } else {
       const _String = String;
-      const replace = str2.replace;
-      text = `${replace("{{count}}", String(arg1))} temu`;
+      const str = closure_0[arg0].other;
+      one = str.replace("{{count}}", String(arg1));
     }
-    return replaced;
+    tmp2 = one;
   }
-  if (1 === arg1) {
-    other = tmp.one;
-  } else {
-    const result4 = arg1 % 100;
-    if (result4 <= 20) {
-      if (10 < result4) {
-        other = tmp.other;
+  let tmp4 = tmp2;
+  if (null != addSuffix) {
+    tmp4 = tmp2;
+    if (addSuffix.addSuffix) {
+      if (addSuffix.comparison) {
+        let text1;
+        if (addSuffix.comparison > 0) {
+          let text;
+          if ("halfAMinute" === arg0) {
+            text = `ใน${tmp2}`;
+          } else {
+            text = `ใน ${tmp2}`;
+          }
+          text1 = text;
+        }
+        tmp4 = text1;
       }
+      text1 = `${tmp2}ที่ผ่านมา`;
     }
-    const result5 = result4 % 10;
-    if (2 <= result5) {
-      if (result5 <= 4) {
-        other = tmp.twoFour;
-      }
-    }
-    other = tmp.other;
   }
-  let str = other;
-  if (typeof other !== "string") {
-    str = other.regular;
-  }
-  replaced = str.replace("{{count}}", String(arg1));
+  return tmp4;
 };

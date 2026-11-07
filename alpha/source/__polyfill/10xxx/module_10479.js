@@ -1,75 +1,63 @@
 // Module ID: 10479
 // Function ID: 10480
-// Dependencies: [41, 42, 93, 95, 98, 10462, 10466, 10470]
+// Dependencies: [41, 42]
 
 // Module 10479
-import _mod10462 from "module_10462" /* 10462 */;
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10470 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
-import c3 from "_possibleConstructorReturn" /* 93 */;
-import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
-import _inherits from "_inherits" /* 98 */;
 
-let tmp;
-const ReferenceWithTimezone = tmp(10466);
-function _isNativeReflectConstruct() {
-  try {
-    const _Boolean = Boolean;
-    const _Reflect = Reflect;
-    const _Boolean2 = Boolean;
-    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-    }));
-    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
-      return closure_0;
-    };
-    return _isNativeReflectConstruct();
-  } catch (err) {
+class OverlapRemovalRefiner {
+  constructor() {
+    _classCallCheck(this, OverlapRemovalRefiner);
   }
 }
-const regExp = new RegExp("(" + _mod10462.TIME_UNITS_PATTERN + ")\\s{0,5}(?:later|after|from now|henceforth|forward|out)(?=(?:\\W|$))", "i");
-const regExp1 = new RegExp("(" + _mod10462.TIME_UNITS_NO_ABBR_PATTERN + ")\\s{0,5}(later|after|from now)(?=\\W|$)", "i");
-class ENTimeUnitLaterFormatParser {
-  constructor(strictMode) {
-    let constructResult;
-    const self = this;
-    _classCallCheck(this, ENTimeUnitLaterFormatParser);
-    const obj = _getPrototypeOf(ENTimeUnitLaterFormatParser);
-    const tmp2 = _getPrototypeOf;
-    const tmp3 = c3;
-    if (_isNativeReflectConstruct()) {
-      const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, [], tmp2(self).constructor);
-    } else {
-      constructResult = obj.apply(self, undefined);
-    }
-    const tmp3Result = tmp3(self, constructResult);
-    tmp3Result.strictMode = strictMode;
-    return tmp3Result;
-  }
-}
-_inherits(ENTimeUnitLaterFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
-  key: "innerPattern",
-  value: function innerPattern() {
-    return this.strictMode ? regExp1 : regExp;
+  key: "refine",
+  value: function refine(debug, arg1) {
+    const self = this;
+    if (arg1.length < 2) {
+      return arg1;
+    } else {
+      const items = [];
+      let first = arg1[0];
+      let num = 1;
+      let num2 = 1;
+      let tmp8 = first;
+      if (1 < arg1.length) {
+        do {
+          let tmp4;
+          let tmp = arg1[num];
+          if (tmp.index >= first.index + first.text.length) {
+            let arr = items.push(first);
+            tmp4 = tmp;
+          } else {
+            first = null;
+            let closure_1 = null;
+            if (tmp.text.length > first.text.length) {
+              first = tmp;
+              closure_1 = first;
+              tmp4 = tmp;
+            } else {
+              closure_1 = tmp;
+              tmp4 = first;
+            }
+            let debugResult = debug.debug(() => {
+              console.log("" + self.constructor.name + " remove " + closure_1 + " by " + first);
+            });
+          }
+          num = num2 + 1;
+          first = tmp4;
+          tmp8 = tmp4;
+          num2 = num;
+        } while (num < arg1.length);
+      }
+      if (null != tmp8) {
+        items.push(tmp8);
+      }
+      return items;
+    }
   }
 };
-const items = [
-  entry,
-  {
-    key: "innerExtract",
-    value: function innerExtract(reference, arg1) {
-      const parseDurationResult = _mod10462.parseDuration(arg1[1]);
-      let relativeFromReference = null;
-      if (parseDurationResult) {
-        const ParsingComponents = ReferenceWithTimezone.ParsingComponents;
-        relativeFromReference = ParsingComponents.createRelativeFromReference(reference.reference, parseDurationResult);
-      }
-      return relativeFromReference;
-    }
-  }
-];
+let items = [entry];
 
-export default _createClass(ENTimeUnitLaterFormatParser, items);
+export default _createClass(OverlapRemovalRefiner, items);

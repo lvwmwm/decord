@@ -1,18 +1,18 @@
-// Module ID: 15403
-// Function ID: 15404
+// Module ID: 15438
+// Function ID: 15439
 // Name: InAppReportsIgnoreUserElement
-// Dependencies: [19, 5019, 5112, 1072, 21, 504, 6199, 5916, 7575, 15404, 1113, 7187, 2]
+// Dependencies: [19, 4989, 5082, 1072, 21, 504, 6173, 5889, 7552, 15439, 1113, 7162, 2]
 // Exports: default
 
-// Module 15403 (InAppReportsIgnoreUserElement)
+// Module 15438 (InAppReportsIgnoreUserElement)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5916 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 6199 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7575 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5889 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 6173 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7552 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 5019 */;
-import RelationshipStore from "RelationshipStore" /* 5112 */;
+import ChannelStore from "ChannelStore" /* 4989 */;
+import RelationshipStore from "RelationshipStore" /* 5082 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;

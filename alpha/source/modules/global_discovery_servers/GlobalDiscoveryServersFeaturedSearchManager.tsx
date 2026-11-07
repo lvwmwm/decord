@@ -1,14 +1,14 @@
-// Module ID: 20367
-// Function ID: 20368
+// Module ID: 20435
+// Function ID: 20436
 // Name: GlobalDiscoveryServersFeaturedSearchManager
-// Dependencies: [5, 15847, 9174, 1072, 7373, 20368, 572, 1282, 1487, 20369, 7616, 2]
+// Dependencies: [5, 15897, 9156, 1072, 7350, 20436, 572, 1282, 1487, 20437, 7593, 2]
 
-// Module 20367 (GlobalDiscoveryServersFeaturedSearchManager)
+// Module 20435 (GlobalDiscoveryServersFeaturedSearchManager)
 import Constants from "Constants" /* 1072 */;
-import GlobalDiscoveryServersConstants from "GlobalDiscoveryServersConstants" /* 9174 */;
-import GlobalDiscoveryServersSearchResultsStoreDefault from "GlobalDiscoveryServersSearchResultsStore" /* 15847 */;
+import GlobalDiscoveryServersConstants from "GlobalDiscoveryServersConstants" /* 9156 */;
+import GlobalDiscoveryServersSearchResultsStoreDefault from "GlobalDiscoveryServersSearchResultsStore" /* 15897 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7373 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7350 */;
 import size from "module_2" /* 2 */;
 
 let categoryId, closure_1, closure_4, constants;
@@ -55,7 +55,7 @@ class GlobalDiscoveryServersFeaturedSearchManager extends AutomaticLifecycleMana
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c5;
@@ -139,7 +139,7 @@ class GlobalDiscoveryServersFeaturedSearchManager extends AutomaticLifecycleMana
             c5 = 0;
           }
           constants = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp41) {
           closure_4 = tmp41;
           if (0 === c5) {

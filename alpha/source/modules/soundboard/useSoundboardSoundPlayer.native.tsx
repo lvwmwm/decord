@@ -1,14 +1,14 @@
-// Module ID: 19481
-// Function ID: 19482
+// Module ID: 19540
+// Function ID: 19541
 // Name: useSoundboardSoundPlayer
-// Dependencies: [19, 6216, 6078, 4995, 19482, 504, 7620, 2]
+// Dependencies: [19, 6191, 6052, 4965, 19541, 504, 7597, 2]
 // Exports: default
 
-// Module 19481 (useSoundboardSoundPlayer)
-import Constants from "Constants" /* 6078 */;
-import SoundboardUtils from "SoundboardUtils" /* 7620 */;
+// Module 19540 (useSoundboardSoundPlayer)
+import Constants from "Constants" /* 6052 */;
+import SoundboardUtils from "SoundboardUtils" /* 7597 */;
 import react from "react" /* 19 */;
-import SoundboardStore from "SoundboardStore" /* 6216 */;
+import SoundboardStore from "SoundboardStore" /* 6191 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

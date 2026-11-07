@@ -1,11 +1,10 @@
 // Module ID: 8343
 // Function ID: 8344
-// Dependencies: [8344, 8356, 8364]
+// Dependencies: [8344, 8345]
 
 // Module 8343
-import FILE_TYPES_REQUIRED_ADDITIONAL_CHECK from "FILE_TYPES_REQUIRED_ADDITIONAL_CHECK" /* 8344 */;
-import _mod8356 from "module_8356" /* 8356 */;
-import _mod8364 from "module_8364" /* 8364 */;
+import _mod8344 from "module_8344" /* 8344 */;
+import _mod8345 from "module_8345" /* 8345 */;
 
 let hasOwnProperty;
 
@@ -66,6 +65,5 @@ let tmp3 = self && self.__exportStar || ((obj, arg1) => {
     continue;
   }
 });
-tmp3(FILE_TYPES_REQUIRED_ADDITIONAL_CHECK, exports);
-tmp3(_mod8356, exports);
-tmp3(_mod8364, exports);
+tmp3(_mod8344, exports);
+tmp3(_mod8345, exports);

@@ -1,26 +1,26 @@
-// Module ID: 11691
-// Function ID: 11692
+// Module ID: 11673
+// Function ID: 11674
 // Name: ConjureRichPresenceStore
-// Dependencies: [32, 5, 109, 502, 6785, 5073, 5201, 10987, 11692, 6924, 5026, 10893, 7479, 10988, 5918, 11012, 2118, 6959, 10986, 504, 572, 2]
+// Dependencies: [32, 5, 109, 502, 6760, 5043, 5171, 10970, 11674, 6899, 4996, 10876, 7456, 10971, 5891, 10996, 2118, 6934, 10969, 504, 572, 2]
 
-// Module 11691 (ConjureRichPresenceStore)
+// Module 11673 (ConjureRichPresenceStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import ChannelConstants from "ChannelConstants" /* 5026 */;
-import ActivityTypes from "ActivityTypes" /* 5918 */;
-import ConjureGuildExperiment from "ConjureGuildExperiment" /* 6959 */;
-import conjureServerProject from "conjureServerProject" /* 7479 */;
-import conjurePresenceActivity from "conjurePresenceActivity" /* 10893 */;
+import ChannelConstants from "ChannelConstants" /* 4996 */;
+import ActivityTypes from "ActivityTypes" /* 5891 */;
+import ConjureGuildExperiment from "ConjureGuildExperiment" /* 6934 */;
+import conjureServerProject from "conjureServerProject" /* 7456 */;
+import conjurePresenceActivity from "conjurePresenceActivity" /* 10876 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import IdleStore from "IdleStore" /* 6785 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5073 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5201 */;
-import ConjureChatStore from "ConjureChatStore" /* 10987 */;
-import ConjurePagesStore from "ConjurePagesStore" /* 11692 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6924 */;
+import IdleStore from "IdleStore" /* 6760 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5043 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5171 */;
+import ConjureChatStore from "ConjureChatStore" /* 10970 */;
+import ConjurePagesStore from "ConjurePagesStore" /* 11674 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6899 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -33,7 +33,7 @@ function updateActivity(withGracePeriod) {
   let obj8;
   let timeout;
   let timeout2;
-  const f100816 = () => {
+  const f101165 = () => {
     let found;
     let timeout = null;
     if (null != _null) {
@@ -51,7 +51,7 @@ function updateActivity(withGracePeriod) {
         timeout = null;
       }
       const _setTimeout = setTimeout;
-      timeout = setTimeout(f100816, closure_1_14);
+      timeout = setTimeout(f101165, closure_1_14);
       conjureRichPresenceStore.emitChange();
     }
   };
@@ -185,9 +185,9 @@ function updateActivity(withGracePeriod) {
         tmp18 = null;
         const obj2 = conjureServerProject;
         const tmp19 = require;
-        if (null != obj2.conjureServerProjectGuildId(project)) {
+        if (null != obj2.conjureServerAppGuildId(project)) {
           const messages = ConjureChatStore.getMessages(tmp11);
-          const tmp19Result = tmp19(10988);
+          const tmp19Result = tmp19(10971);
           const findOpenTurnResult = tmp19Result.findOpenTurn(messages);
           tmp18 = null;
           if (null != findOpenTurnResult) {
@@ -276,7 +276,7 @@ function updateActivity(withGracePeriod) {
         timeout2 = null;
       }
       let _setTimeout = setTimeout;
-      timeout2 = setTimeout(f100816, c14);
+      timeout2 = setTimeout(f101165, c14);
       flag = true;
     }
   }
@@ -327,7 +327,7 @@ let obj = function _fetchOwnedProjects() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -422,7 +422,7 @@ obj = function _resumeRunningProjects() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c2;
@@ -480,7 +480,7 @@ obj = function _resumeRunningProjects() {
           c2 = 0;
         }
         c4 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp17) {
         if (0 === c2) {
           c4 = 3;

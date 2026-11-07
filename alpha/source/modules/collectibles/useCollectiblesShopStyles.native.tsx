@@ -1,19 +1,19 @@
-// Module ID: 14699
-// Function ID: 14700
+// Module ID: 14732
+// Function ID: 14733
 // Name: useCollectiblesShopStyles
-// Dependencies: [7829, 575, 14700, 2]
+// Dependencies: [7806, 575, 14733, 2]
 
-// Module 14699 (useCollectiblesShopStyles)
+// Module 14732 (useCollectiblesShopStyles)
 import nativeDefault from "native" /* 575 */;
-import createUseCollectiblesShopStylesDefault from "createUseCollectiblesShopStyles" /* 14700 */;
-import module_7829_mod from "module_7829" /* 7829 */;
+import createUseCollectiblesShopStylesDefault from "createUseCollectiblesShopStyles" /* 14733 */;
+import module_7806_mod from "module_7806" /* 7806 */;
 import size from "module_2" /* 2 */;
 
-let module_7829 = module_7829_mod;
-const importDefaultResultResult = module_7829(nativeDefault.unsafe_rawColors.WHITE);
+let module_7806 = module_7806_mod;
+const importDefaultResultResult = module_7806(nativeDefault.unsafe_rawColors.WHITE);
 const saturateResult = importDefaultResultResult.saturate(1);
-module_7829 = module_7829_mod;
-const importDefaultResult1Result = module_7829(nativeDefault.unsafe_rawColors.BLACK);
+module_7806 = module_7806_mod;
+const importDefaultResult1Result = module_7806(nativeDefault.unsafe_rawColors.BLACK);
 const saturateResult1 = importDefaultResult1Result.saturate(1);
 const tmp6 = createUseCollectiblesShopStylesDefault({ dark: saturateResult1, light: saturateResult });
 const result = size.fileFinishedImporting("modules/collectibles/useCollectiblesShopStyles.native.tsx");

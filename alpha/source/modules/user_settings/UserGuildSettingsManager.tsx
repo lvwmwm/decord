@@ -1,16 +1,16 @@
-// Module ID: 7371
-// Function ID: 7372
+// Module ID: 7348
+// Function ID: 7349
 // Name: UserGuildSettingsManager
-// Dependencies: [5, 7372, 5019, 1072, 1089, 1282, 7373, 2]
+// Dependencies: [5, 7349, 4989, 1072, 1089, 1282, 7350, 2]
 
-// Module 7371 (UserGuildSettingsManager)
+// Module 7348 (UserGuildSettingsManager)
 import DurationsDefault from "Durations" /* 1089 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import CategoryCollapseStore from "CategoryCollapseStore" /* 7372 */;
-import ChannelStore from "ChannelStore" /* 5019 */;
+import CategoryCollapseStore from "CategoryCollapseStore" /* 7349 */;
+import ChannelStore from "ChannelStore" /* 4989 */;
 import Constants from "Constants" /* 1072 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7373 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7350 */;
 import size from "module_2" /* 2 */;
 
 let body, c3, c4, c6, c7, channel, collapsedCategories, guilds;
@@ -45,7 +45,7 @@ let obj = function _saveUserGuildSettings() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -107,7 +107,7 @@ let obj = function _saveUserGuildSettings() {
             return obj;
           }
           c3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp11) {
         c3 = 3;
@@ -160,7 +160,7 @@ obj = function _saveUserGuildSettingsBulk() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {

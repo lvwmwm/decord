@@ -1,24 +1,24 @@
-// Module ID: 15193
-// Function ID: 15194
+// Module ID: 15227
+// Function ID: 15228
 // Name: UserProfilePersonalWidgetCard
-// Dependencies: [32, 19, 17, 1072, 21, 5170, 575, 15194, 15195, 5781, 1113, 4995, 15196, 5229, 5872, 5745, 8665, 15190, 9630, 12533, 2]
+// Dependencies: [32, 19, 17, 1072, 21, 5140, 575, 15228, 15229, 5751, 1113, 4965, 15230, 5199, 5842, 5715, 8644, 15224, 9612, 12546, 2]
 // Exports: default
 
-// Module 15193 (UserProfilePersonalWidgetCard)
+// Module 15227 (UserProfilePersonalWidgetCard)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
-import native from "native" /* 5229 */;
-import FastImageDefault from "FastImage" /* 5872 */;
-import GifTagDefault from "GifTag" /* 8665 */;
-import PersonalWidgetExpandCollapseContext from "PersonalWidgetExpandCollapseContext" /* 15194 */;
-import PersonalWidgetMarkupUtils from "PersonalWidgetMarkupUtils" /* 15195 */;
-import WidgetAssetUtils from "WidgetAssetUtils" /* 15196 */;
+import native from "native" /* 5199 */;
+import FastImageDefault from "FastImage" /* 5842 */;
+import GifTagDefault from "GifTag" /* 8644 */;
+import PersonalWidgetExpandCollapseContext from "PersonalWidgetExpandCollapseContext" /* 15228 */;
+import PersonalWidgetMarkupUtils from "PersonalWidgetMarkupUtils" /* 15229 */;
+import WidgetAssetUtils from "WidgetAssetUtils" /* 15230 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -77,7 +77,7 @@ function PersonalWidgetShowMoreButton() {
       children: React4(Text, obj4)
     };
     obj3 = { expanded: isExpanded };
-    Text = tmp(5781).Text;
+    Text = tmp(5751).Text;
     const intl = tmp(1113).intl;
     const string = intl.string;
     const t = tmp(1113).t;
@@ -203,7 +203,7 @@ function CoverSection(section) {
     if (null != source) {
       if ("" !== section.title) {
         const obj9 = { colors, locations, style: tmp15.absoluteFill, pointerEvents: "none" };
-        tmp24Result4 = tmp24(tmp14(5745), obj9);
+        tmp24Result4 = tmp24(tmp14(5715), obj9);
       } else {
         tmp24Result4 = null;
       }
@@ -213,7 +213,7 @@ function CoverSection(section) {
     let tmp24Result5 = null;
     if (showGifTag) {
       const obj10 = { style: tmp.gifTag };
-      tmp24Result5 = tmp24(tmp14(8665), obj10);
+      tmp24Result5 = tmp24(tmp14(8644), obj10);
     }
     items2[3] = tmp24Result5;
     tmp24Result6 = tmp24(ThemeContextProvider, obj4);
@@ -316,13 +316,13 @@ function UserProfilePersonalWidgetCardContent(userId) {
     flag = false;
   }
   const tmp = closure_14();
-  let obj = { userId, widget, style: cardStyle, titleLeadingIcon: closure_9(userId(9630).NitroWheelIcon, { size: "xs", color: "icon-subtle" }), title: widget.header, disableInteraction, actionButtons: tmp6, children: tmp7(tmp8, obj3) };
+  let obj = { userId, widget, style: cardStyle, titleLeadingIcon: closure_9(userId(9612).NitroWheelIcon, { size: "xs", color: "icon-subtle" }), title: widget.header, disableInteraction, actionButtons: tmp6, children: tmp7(tmp8, obj3) };
   tmp6 = undefined;
   const tmp3 = disableInteraction;
-  const tmp5 = disableInteraction(15190);
+  const tmp5 = disableInteraction(15224);
   if (flag) {
     let obj2 = { widget };
-    const items = [tmp2(tmp3(12533), obj2, "edit-options")];
+    const items = [tmp2(tmp3(12546), obj2, "edit-options")];
     tmp6 = items;
   }
   const sections = widget.sections;

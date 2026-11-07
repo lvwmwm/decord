@@ -1,18 +1,18 @@
-// Module ID: 17494
-// Function ID: 17495
+// Module ID: 17543
+// Function ID: 17544
 // Name: GuildRoleSubscriptionBenefitUtils
-// Dependencies: [19, 21, 5116, 8695, 8744, 2]
+// Dependencies: [19, 21, 5086, 8674, 8723, 2]
 // Exports: getBenefitEmojiId, getChannelIconComponentOrDefault, renderChannelIcon
 
-// Module 17494 (GuildRoleSubscriptionBenefitUtils)
+// Module 17543 (GuildRoleSubscriptionBenefitUtils)
 import Fragment from "Fragment" /* 21 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 5116 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 8695 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 5086 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8674 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const TextIcon2 = tmp(8744);
+const TextIcon2 = tmp(8723);
 const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/components/GuildRoleSubscriptionBenefitUtils.tsx");
 
@@ -41,7 +41,7 @@ export function getChannelIconComponentOrDefault(channel, guild) {
     TextIcon = obj.getChannelIconComponent(channel);
   }
   if (TextIcon == null) {
-    TextIcon = tmp(8744).TextIcon;
+    TextIcon = tmp(8723).TextIcon;
   }
   return TextIcon;
 }

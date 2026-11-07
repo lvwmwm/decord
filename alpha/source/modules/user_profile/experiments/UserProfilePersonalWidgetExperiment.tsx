@@ -1,9 +1,9 @@
-// Module ID: 15151
-// Function ID: 15152
+// Module ID: 15183
+// Function ID: 15184
 // Name: UserProfilePersonalWidgetExperiment
 // Dependencies: [1449, 2]
 
-// Module 15151 (UserProfilePersonalWidgetExperiment)
+// Module 15183 (UserProfilePersonalWidgetExperiment)
 import ApexExperiment from "ApexExperiment" /* 1449 */;
 import size from "module_2" /* 2 */;
 

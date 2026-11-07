@@ -1,11 +1,11 @@
-// Module ID: 15868
-// Function ID: 15869
+// Module ID: 15918
+// Function ID: 15919
 // Name: ProgramRewardsTypes
-// Dependencies: [2, 15869, 15870]
+// Dependencies: [2, 15919, 15920]
 
-// Module 15868 (ProgramRewardsTypes)
-import RewardProgram from "RewardProgram" /* 15869 */;
-import ProgramCurrentState from "ProgramCurrentState" /* 15870 */;
+// Module 15918 (ProgramRewardsTypes)
+import RewardProgram from "RewardProgram" /* 15919 */;
+import ProgramCurrentState from "ProgramCurrentState" /* 15920 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/rewards/ProgramRewardsTypes.tsx");

@@ -1,13 +1,12 @@
-// Module ID: 7567
-// Function ID: 7568
+// Module ID: 7544
+// Function ID: 7545
 // Name: useGame
-// Dependencies: [5, 19, 2138, 1072, 504, 1089, 7568, 2]
+// Dependencies: [5, 19, 2138, 1072, 504, 1089, 7545, 2]
 // Exports: useGames
 
-// Module 7567 (useGame)
+// Module 7544 (useGame)
 import Constants from "Constants" /* 1072 */;
 import DurationsDefault from "Durations" /* 1089 */;
-import GameActionCreators from "GameActionCreators" /* 7568 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import GameStore from "GameStore" /* 2138 */;
@@ -15,7 +14,7 @@ import get_initialized from "get initialized" /* 504 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let c1, c2;
+let c4;
 
 const QueryIds = Constants.QueryIds;
 let obj = {
@@ -61,54 +60,41 @@ let obj = {
 };
 const createFetchStore = get_initialized.createFetchStore;
 let closure_2 = _asyncToGenerator(async (arg0, value) => {
+  let closure_3;
+  let flag;
   let obj2;
   let closure_0 = arg0;
-  if (c1 === 2) {
-    c1 = 3;
-    throw new TypeError("Generator functions may not be called on executing generators");
-  } else if (tmp2 === 3) {
+  let closure_1 = value;
+  if (1 === c4) {
     if (arg0 === 1) {
+      let c5 = 3;
       throw value;
     } else if (arg0 === 2) {
-      const obj3 = { value, done: true };
-      return obj3;
-    } else {
-      return { value: "HermesInternal", done: null };
+      c5 = 3;
+      const obj5 = { value, done: true };
+      return obj5;
+    } else if (null != closure_0) {
+      const items = [closure_0];
+      c4 = 2;
+      c5 = 1;
+      const obj6 = { value: obj2.fetchGamesWithSupplementalData(items, flag), done: false };
+      obj2 = closure_131_0(closure_131_1[6]);
+      return obj6;
     }
-  } else {
-    try {
-      c1 = 2;
-      if (0 === c2) {
-        if (arg0 === 1) {
-          c1 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c1 = 3;
-          const obj4 = { value, done: true };
-          return obj4;
-        } else if (null != closure_0) {
-          const items = [tmp4];
-          c2 = 1;
-          c1 = 1;
-          const obj5 = { value: obj2.fetchGamesWithSupplementalData(items), done: false };
-          obj2 = GameActionCreators;
-          return obj5;
-        }
-      } else if (arg0 === 1) {
-        c1 = 3;
-        throw value;
-      } else if (arg0 === 2) {
-        c1 = 3;
-        const obj = { value, done: true };
-        return obj;
-      }
-      c1 = 3;
-      return { value: "HermesInternal", done: null };
-    } catch (tmp8) {
-      c1 = 3;
-      throw tmp8;
-    }
+  } else if (arg0 === 1) {
+    c5 = 3;
+    throw value;
+  } else if (arg0 === 2) {
+    c5 = 3;
+    const obj = { value, done: true };
+    return obj;
   }
+  await "HermesInternal";
+  flag = closure_1;
+  if (closure_1 === undefined) {
+    flag = false;
+  }
+  return "flexDirection";
 });
 const fetchStore = createFetchStore(GameStore, obj);
 const result = size.fileFinishedImporting("modules/games/hooks/useGame.tsx");

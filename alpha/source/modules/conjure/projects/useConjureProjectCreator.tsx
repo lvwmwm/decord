@@ -1,32 +1,33 @@
-// Module ID: 12992
-// Function ID: 12993
+// Module ID: 13007
+// Function ID: 13008
 // Name: useConjureProjectCreator
-// Dependencies: [19, 1385, 10987, 1113, 4024, 12993, 504, 12826, 5224, 2]
+// Dependencies: [19, 1385, 10970, 1113, 4026, 13008, 504, 11720, 5194, 2]
 // Exports: default, getConjureProjectCreatorLabel
 
-// Module 12992 (useConjureProjectCreator)
+// Module 13007 (useConjureProjectCreator)
 import intl3 from "intl" /* 1113 */;
-import _modDef4024 from "module_4024" /* 4024 */;
-import UserUtils from "UserUtils" /* 5224 */;
-import conjureMessageAuthors from "conjureMessageAuthors" /* 12826 */;
-import ListUtils from "ListUtils" /* 12993 */;
+import _modDef4026 from "module_4026" /* 4026 */;
+import UserUtils from "UserUtils" /* 5194 */;
+import conjureMessageAuthors from "conjureMessageAuthors" /* 11720 */;
+import ListUtils from "ListUtils" /* 13008 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1385 */;
-import ConjureChatStore from "ConjureChatStore" /* 10987 */;
+import ConjureChatStore from "ConjureChatStore" /* 10970 */;
 import size from "module_2" /* 2 */;
 
 let set;
 
-function useConjureProjectPeople(stateFromStores) {
+function useConjureProjectPeople(project) {
+  let stateFromStores;
   let stateFromStoresArray;
   let stateFromStoresArray1;
   let id;
-  if (stateFromStores != null) {
-    id = stateFromStores.id;
+  if (project != null) {
+    id = project.id;
   }
   let owner_user_id;
-  if (stateFromStores != null) {
-    owner_user_id = stateFromStores.owner_user_id;
+  if (project != null) {
+    owner_user_id = project.owner_user_id;
   }
   let obj = id(stateFromStoresArray[6]);
   let items = [ConjureChatStore];
@@ -90,8 +91,8 @@ function useConjureProjectPeople(stateFromStores) {
 }
 const result = size.fileFinishedImporting("modules/conjure/projects/useConjureProjectCreator.tsx");
 
-export default function useConjureProjectCreator(stateFromStores) {
-  const tmp = useConjureProjectPeople(stateFromStores);
+export default function useConjureProjectCreator(project) {
+  const tmp = useConjureProjectPeople(project);
   const creator = tmp.creator;
   const collaborators = tmp.collaborators;
   const items = [creator, collaborators];
@@ -110,12 +111,12 @@ export default function useConjureProjectCreator(stateFromStores) {
       if (0 === mapped.length) {
         const intl2 = tmp4(1113).intl;
         const obj3 = { creator: name };
-        formatToPlainStringResult = intl2.formatToPlainString(_modDef4024.t5RWBS, obj3);
+        formatToPlainStringResult = intl2.formatToPlainString(_modDef4026.t5RWBS, obj3);
       } else {
         const intl = tmp4(1113).intl;
         const formatToPlainString = intl.formatToPlainString;
         const obj4 = { creator: name, collaborators: tmp4Result.getListSummaryLabel(mapped) };
-        const prop = _modDef4024["b5uCe/"];
+        const prop = _modDef4026["b5uCe/"];
         tmp4Result = ListUtils;
         formatToPlainStringResult = formatToPlainString(prop, obj4);
       }
@@ -130,12 +131,12 @@ export function getConjureProjectCreatorLabel(creator, names) {
   if (0 === names.length) {
     const intl2 = intl3.intl;
     const obj3 = { creator };
-    formatToPlainStringResult = intl2.formatToPlainString(_modDef4024.t5RWBS, obj3);
+    formatToPlainStringResult = intl2.formatToPlainString(_modDef4026.t5RWBS, obj3);
   } else {
     const intl = intl3.intl;
     const formatToPlainString = intl.formatToPlainString;
     const obj = { creator, collaborators: obj2.getListSummaryLabel(names) };
-    const prop = _modDef4024["b5uCe/"];
+    const prop = _modDef4026["b5uCe/"];
     obj2 = ListUtils;
     formatToPlainStringResult = formatToPlainString(prop, obj);
   }

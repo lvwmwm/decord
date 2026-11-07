@@ -1,12 +1,12 @@
-// Module ID: 18078
-// Function ID: 18079
+// Module ID: 18125
+// Function ID: 18126
 // Name: DesignSystemBadgeSetting
-// Dependencies: [8524, 1072, 11703, 18079, 2]
+// Dependencies: [8503, 1072, 11685, 18126, 2]
 
-// Module 18078 (DesignSystemBadgeSetting)
+// Module 18125 (DesignSystemBadgeSetting)
 import Constants from "Constants" /* 1072 */;
-import SettingsConstants from "SettingsConstants" /* 8524 */;
-import SettingBuilders from "SettingBuilders" /* 11703 */;
+import SettingsConstants from "SettingsConstants" /* 8503 */;
+import SettingBuilders from "SettingBuilders" /* 11685 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

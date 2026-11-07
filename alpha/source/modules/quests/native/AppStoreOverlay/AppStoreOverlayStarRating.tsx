@@ -1,16 +1,16 @@
-// Module ID: 14872
-// Function ID: 14873
+// Module ID: 14905
+// Function ID: 14906
 // Name: AppStoreOverlayStarRating
-// Dependencies: [19, 17, 21, 5170, 575, 10199, 10201, 2]
+// Dependencies: [19, 17, 21, 5140, 575, 10182, 10184, 2]
 // Exports: default
 
-// Module 14872 (AppStoreOverlayStarRating)
+// Module 14905 (AppStoreOverlayStarRating)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import StarOutlineIcon2 from "StarOutlineIcon" /* 10199 */;
+import StarOutlineIcon2 from "StarOutlineIcon" /* 10182 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_4;
@@ -19,7 +19,7 @@ let rect;
 let size;
 let size1;
 let tmp5;
-const StarIcon2 = tmp5(10201);
+const StarIcon2 = tmp5(10184);
 function FractionalStar(fillAmount) {
   let StarIcon;
   let items;

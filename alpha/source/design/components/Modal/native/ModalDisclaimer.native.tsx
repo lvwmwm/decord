@@ -1,14 +1,14 @@
-// Module ID: 16127
-// Function ID: 16128
+// Module ID: 16175
+// Function ID: 16176
 // Name: ModalDisclaimer
-// Dependencies: [19, 17, 21, 5170, 5781, 2]
+// Dependencies: [19, 17, 21, 5140, 5751, 2]
 // Exports: ModalDisclaimer
 
-// Module 16127 (ModalDisclaimer)
+// Module 16175 (ModalDisclaimer)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 const View = react_native.View;

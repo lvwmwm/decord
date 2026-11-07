@@ -1,16 +1,16 @@
-// Module ID: 17968
-// Function ID: 17969
+// Module ID: 18015
+// Function ID: 18016
 // Name: PremiumPerksList
-// Dependencies: [19, 17, 21, 5170, 575, 5781, 2]
+// Dependencies: [19, 17, 21, 5140, 575, 5751, 2]
 // Exports: default
 
-// Module 17968 (PremiumPerksList)
+// Module 18015 (PremiumPerksList)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5781 */;
+import Text_Text from "Text/Text" /* 5751 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 let c3;

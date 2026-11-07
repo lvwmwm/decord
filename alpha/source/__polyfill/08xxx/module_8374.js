@@ -1,26 +1,34 @@
 // Module ID: 8374
 // Function ID: 8375
-// Dependencies: [8375, 8373]
+// Dependencies: []
+// Exports: getCalculatedGpsValue, getEncodedString, getStringValue
 
 // Module 8374
-import _modDef8373 from "module_8373" /* 8373 */;
-import _modDef8375 from "module_8375" /* 8375 */;
+const f94094 = (item) => String.fromCharCode(item);
 
-
-export default {
-  isTiffFile(byteLength) {
-    let tmp = byteLength && byteLength.byteLength >= 4;
-    if (tmp) {
-      const uint16 = byteLength.getUint16(0);
-      tmp = byteLength.getUint16(2, uint16 === _modDef8375.LITTLE_ENDIAN) === 42;
-    }
-    return tmp;
-  },
-  findTiffOffsets() {
-    if (_modDef8373.USE_EXIF) {
-      return { hasAppMarkers: true, tiffHeaderOffset: 0 };
-    } else {
-      return {};
+export function getStringValue(value) {
+  const mapped = value.map(f94094);
+  return mapped.join("");
+}
+export function getEncodedString(arr) {
+  if (arr.length >= 8) {
+    const substr = arr.slice(0, 8);
+    const mapped = substr.map(f94094);
+    const joined = mapped.join("");
+    if ("ASCII\0\0\0" === joined) {
+      const substr1 = arr.slice(8);
+      const mapped1 = substr1.map(f94094);
+      return mapped1.join("");
+    } else if ("JIS\0\0\0\0\0" === joined) {
+      return "[JIS encoded text]";
+    } else if ("UNICODE\0" === joined) {
+      return "[Unicode encoded text]";
+    } else if ("\0\0\0\0\0\0\0\0" === joined) {
+      return "[Undefined encoding]";
     }
   }
-};
+  return "Undefined";
+}
+export function getCalculatedGpsValue(value) {
+  return value[0][0] / value[0][1] + value[1][0] / value[1][1] / 60 + value[2][0] / value[2][1] / 3600;
+}

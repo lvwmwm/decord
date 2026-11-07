@@ -1,13 +1,13 @@
-// Module ID: 14017
-// Function ID: 14018
+// Module ID: 14042
+// Function ID: 14043
 // Name: DynamicRive
-// Dependencies: [19, 21, 5290, 5237, 2]
+// Dependencies: [19, 21, 5260, 5207, 2]
 // Exports: DynamicRive
 
-// Module 14017 (DynamicRive)
+// Module 14042 (DynamicRive)
 import Fragment from "Fragment" /* 21 */;
-import BaseRive2 from "BaseRive" /* 5237 */;
-import RiveErrorBoundary2 from "RiveErrorBoundary" /* 5290 */;
+import BaseRive2 from "BaseRive" /* 5207 */;
+import RiveErrorBoundary2 from "RiveErrorBoundary" /* 5260 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

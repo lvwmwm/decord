@@ -1,18 +1,18 @@
-// Module ID: 18981
-// Function ID: 18982
+// Module ID: 19031
+// Function ID: 19032
 // Name: SearchScreenSearchBar
-// Dependencies: [19, 17, 21, 5170, 5335, 7197, 2017, 18982, 18984, 18989, 2]
+// Dependencies: [19, 17, 21, 5140, 5305, 7172, 2017, 19032, 19034, 19039, 2]
 
-// Module 18981 (SearchScreenSearchBar)
+// Module 19031 (SearchScreenSearchBar)
 import react_native from "react-native" /* 17 */;
 import KeyboardManagerUtils from "KeyboardManagerUtils" /* 2017 */;
-import mergeProps from "mergeProps" /* 5335 */;
-import useKeyboardIsOpen from "useKeyboardIsOpen" /* 7197 */;
-import SearchBarDefault from "SearchBar" /* 18982 */;
-import SearchFilterSuggestionsDefault from "SearchFilterSuggestions" /* 18984 */;
+import mergeProps from "mergeProps" /* 5305 */;
+import useKeyboardIsOpen from "useKeyboardIsOpen" /* 7172 */;
+import SearchBarDefault from "SearchBar" /* 19032 */;
+import SearchFilterSuggestionsDefault from "SearchFilterSuggestions" /* 19034 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, importDefault;
@@ -20,7 +20,7 @@ let dependencyMap, importDefault;
 let hasOwnProperty;
 let metroRequire;
 let tmp8;
-const SearchFilterButtonDefault = tmp8(18989);
+const SearchFilterButtonDefault = tmp8(19039);
 const View = react_native.View;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let closure_7 = createStyles.createStyles({ header: { flexDirection: "row", alignItems: "center", paddingLeft: 16, zIndex: 10 }, headerWithBackButton: { paddingLeft: 0 }, headerSearch: { flex: 1, flexGrow: 1 }, headerControlsRight: { paddingRight: 16, paddingLeft: 12 }, suggestionsAnchor: { height: 0 }, suggestions: { position: "absolute", left: 0, right: -50, top: 8 }, suggestionsWithBackButton: { left: -28 } });

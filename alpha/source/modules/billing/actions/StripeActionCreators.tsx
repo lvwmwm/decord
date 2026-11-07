@@ -1,10 +1,10 @@
-// Module ID: 6628
-// Function ID: 6629
+// Module ID: 6603
+// Function ID: 6604
 // Name: StripeActionCreators
 // Dependencies: [5, 1072, 1282, 2]
 // Exports: createSetupIntentForPaymentElements, createStripeSetupIntent
 
-// Module 6628 (StripeActionCreators)
+// Module 6603 (StripeActionCreators)
 import Constants from "Constants" /* 1072 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
@@ -24,7 +24,7 @@ let obj = function _createStripeSetupIntent() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -100,7 +100,7 @@ obj = function _createSetupIntentForPaymentElements() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {

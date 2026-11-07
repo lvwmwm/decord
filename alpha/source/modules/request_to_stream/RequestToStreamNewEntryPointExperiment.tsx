@@ -1,9 +1,9 @@
-// Module ID: 15046
-// Function ID: 15047
+// Module ID: 15078
+// Function ID: 15079
 // Name: RequestToStreamNewEntryPointExperiment
 // Dependencies: [1450, 2]
 
-// Module 15046 (RequestToStreamNewEntryPointExperiment)
+// Module 15078 (RequestToStreamNewEntryPointExperiment)
 import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1450 */;
 import size from "module_2" /* 2 */;
 

@@ -1,9 +1,9 @@
 // Module ID: 10505
 // Function ID: 10506
-// Dependencies: [41, 42, 93, 95, 98, 10482]
+// Dependencies: [41, 42, 93, 95, 98, 10467]
 
 // Module 10505
-import _mod10482 from "module_10482" /* 10482 */;
+import _mod10467 from "module_10467" /* 10467 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import map from "_possibleConstructorReturn" /* 93 */;
@@ -25,12 +25,29 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class MergeWeekdayComponentRefiner {
+let fn = this;
+if (this) {
+  fn = this.__importDefault;
+}
+if (!fn) {
+  fn = (__esModule) => {
+    let tmp2;
+    const tmp = __esModule;
+    if (!tmp) {
+      tmp2 = { default: __esModule };
+      const obj = { default: __esModule };
+    } else {
+      tmp2 = __esModule;
+    }
+    return tmp2;
+  };
+}
+class FRMergeDateTimeRefiner {
   constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, MergeWeekdayComponentRefiner);
-    const obj = _getPrototypeOf(MergeWeekdayComponentRefiner);
+    _classCallCheck(this, FRMergeDateTimeRefiner);
+    const obj = _getPrototypeOf(FRMergeDateTimeRefiner);
     const tmp2 = _getPrototypeOf;
     const tmp3 = map;
     if (_isNativeReflectConstruct()) {
@@ -42,45 +59,14 @@ class MergeWeekdayComponentRefiner {
     return tmp3(self, constructResult);
   }
 }
-_inherits(MergeWeekdayComponentRefiner, _mod10482.MergingRefiner);
+_inherits(FRMergeDateTimeRefiner, fn(_mod10467).default);
 const entry = {
-  key: "mergeResults",
-  value: function mergeResults(arg0, index, clone) {
-    const cloneResult = clone.clone();
-    cloneResult.index = index.index;
-    cloneResult.text = index.text + arg0 + cloneResult.text;
-    const start = cloneResult.start;
-    const start2 = index.start;
-    start.assign("weekday", start2.get("weekday"));
-    if (cloneResult.end) {
-      const end = cloneResult.end;
-      const start3 = index.start;
-      end.assign("weekday", start3.get("weekday"));
-    }
-    return cloneResult;
+  key: "patternBetween",
+  value: function patternBetween() {
+    const regExp = new RegExp("^\\s*(T|\u00E0|a|au|vers|de|,|-)?\\s*$");
+    return regExp;
   }
 };
-const items = [
-  entry,
-  {
-    key: "shouldMergeResults",
-    value: function shouldMergeResults(str, start, start2) {
-      start = start.start;
-      let result = start.isOnlyWeekdayComponent();
-      if (result) {
-        start2 = start.start;
-        result = !start2.isCertain("hour");
-      }
-      if (result) {
-        const start3 = start2.start;
-        result = start3.isCertain("day");
-      }
-      if (result) {
-        result = null != str.match(/^,?\s*$/);
-      }
-      return result;
-    }
-  }
-];
+const items = [entry];
 
-export default _createClass(MergeWeekdayComponentRefiner, items);
+export default _createClass(FRMergeDateTimeRefiner, items);

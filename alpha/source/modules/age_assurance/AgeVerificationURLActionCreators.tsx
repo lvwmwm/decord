@@ -1,15 +1,15 @@
-// Module ID: 8059
-// Function ID: 8060
+// Module ID: 8037
+// Function ID: 8038
 // Name: AgeVerificationURLActionCreators
-// Dependencies: [5, 502, 6808, 1072, 8060, 1282, 572, 2]
+// Dependencies: [5, 502, 6783, 1072, 8038, 1282, 572, 2]
 // Exports: getAgeVerificationMethods, registerIncodeInterview, requestAgeVerificationV2, requestIncodeMethodSession, requestIncodeSessionBootstrap
 
-// Module 8059 (AgeVerificationURLActionCreators)
+// Module 8037 (AgeVerificationURLActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
-import AgeVerificationConstants from "AgeVerificationConstants" /* 6808 */;
-import SafetyHubUtils from "SafetyHubUtils" /* 8060 */;
+import AgeVerificationConstants from "AgeVerificationConstants" /* 6783 */;
+import SafetyHubUtils from "SafetyHubUtils" /* 8038 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import size from "module_2" /* 2 */;
@@ -36,7 +36,7 @@ let obj = function _requestAgeVerification() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -217,7 +217,7 @@ obj = function _requestAgeVerificationV() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -294,7 +294,7 @@ obj = function _initiateSuspendedUserAgeVerification() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -369,7 +369,7 @@ obj = function _registerIncodeInterview() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -398,7 +398,7 @@ obj = function _registerIncodeInterview() {
             return { value, done: true };
           } else {
             c1 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp8) {
           c1 = 3;
@@ -422,7 +422,7 @@ obj = function _requestIncodeSessionBootstrap() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {

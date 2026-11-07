@@ -1,9 +1,9 @@
-// Module ID: 9091
-// Function ID: 9092
+// Module ID: 9073
+// Function ID: 9074
 // Name: ActionSheetDragHandleConstants
 // Dependencies: [575, 2]
 
-// Module 9091 (ActionSheetDragHandleConstants)
+// Module 9073 (ActionSheetDragHandleConstants)
 import nativeDefault from "native" /* 575 */;
 import size from "module_2" /* 2 */;
 

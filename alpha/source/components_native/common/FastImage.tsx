@@ -1,23 +1,20 @@
-// Module ID: 5872
-// Function ID: 5873
+// Module ID: 5842
+// Function ID: 5843
 // Name: FastImage
-// Dependencies: [19, 17, 21, 5873, 1377, 5874, 2]
+// Dependencies: [19, 17, 21, 1377, 5843, 2]
 
-// Module 5872 (FastImage)
+// Module 5842 (FastImage)
 import Fragment from "Fragment" /* 21 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
-import FastImageNativeComponentDefault from "FastImageNativeComponent" /* 5874 */;
+import FastImageNativeComponentDefault from "FastImageNativeComponent" /* 5843 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import FastImageApngExperiment_mod from "FastImageApngExperiment" /* 5873 */;
 import size_mod from "module_2" /* 2 */;
 
 let c3;
 let closure_4;
 ({ Image: c3, StyleSheet: closure_4 } = react_native);
 const jsx = Fragment.jsx;
-let FastImageApngExperiment = FastImageApngExperiment_mod;
-FastImageApngExperiment = FastImageApngExperiment.initializeFastImageApngExperiment();
 const memoResult = react.memo(function FastImage(enableAnimation) {
   let accessibilityLabel;
   let accessible;
@@ -121,6 +118,6 @@ const memoResult = react.memo(function FastImage(enableAnimation) {
   tmp20Result = tmp20(tmp21, obj5);
 });
 let size = size_mod;
-const result1 = size.fileFinishedImporting("components_native/common/FastImage.tsx");
+const result = size.fileFinishedImporting("components_native/common/FastImage.tsx");
 
 export default memoResult;

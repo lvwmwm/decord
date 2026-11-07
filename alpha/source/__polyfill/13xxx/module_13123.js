@@ -1,19 +1,27 @@
 // Module ID: 13123
 // Function ID: 13124
-// Dependencies: [13124, 13125, 13126, 13127, 13129, 13130, 13132, 13133, 13135, 13136]
+// Dependencies: []
 
 // Module 13123
-import _mod13124 from "module_13124" /* 13124 */;
-import _mod13125 from "module_13125" /* 13125 */;
-import _mod13126 from "module_13126" /* 13126 */;
-import _mod13127 from "module_13127" /* 13127 */;
-import _mod13129 from "module_13129" /* 13129 */;
-import _mod13130 from "module_13130" /* 13130 */;
-import _mod13132 from "module_13132" /* 13132 */;
-import _mod13133 from "module_13133" /* 13133 */;
-import _mod13135 from "module_13135" /* 13135 */;
-import _mod13136 from "module_13136" /* 13136 */;
+let items;
+let obj2;
+const obj = {
+  name: "Selector",
+  structure: obj2,
+  parse() {
+    const self = this;
+    const sequence = this.readSequence(this.scope.Selector);
+    if (null === this.getFirstListNode(sequence)) {
+      self.error("Selector is expected");
+    }
+    const element = { type: "Selector", loc: self.getLocationFromList(sequence), children: sequence };
+    return element;
+  },
+  generate(arg0) {
+    this.children(arg0);
+  }
+};
+obj2 = { children: items };
+items = [["TypeSelector", "IdSelector", "ClassSelector", "AttributeSelector", "PseudoClassSelector", "PseudoElementSelector", "Combinator", "WhiteSpace"]];
 
-({ dir: _mod13124, has: _mod13125, lang: _mod13126, matches: _mod13127, not: _mod13129, "nth-child": _mod13130, "nth-last-child": _mod13132, "nth-last-of-type": _mod13133, "nth-of-type": _mod13135, slotted: _mod13136 });
-
-export default { dir: _mod13124, has: _mod13125, lang: _mod13126, matches: _mod13127, not: _mod13129, "nth-child": _mod13130, "nth-last-child": _mod13132, "nth-last-of-type": _mod13133, "nth-of-type": _mod13135, slotted: _mod13136 };
+export default obj;

@@ -1,74 +1,79 @@
 // Module ID: 8350
 // Function ID: 8351
-// Dependencies: [8342, 8343]
-// Exports: isAVI, isFLV, isM4V, isMKV, isMOV, isMP4, isOGG, isSWF, isWEBM
+// Dependencies: [41, 42]
 
 // Module 8350
-import _mod8342 from "module_8342" /* 8342 */;
-import _mod8343 from "module_8343" /* 8343 */;
+import _createClassDefault from "_createClass" /* 42 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
 
-
-export function isAVI(fileChunk) {
-  fileChunk = _mod8342.getFileChunk(fileChunk);
-  const FileTypes = _mod8343.FileTypes;
-  return FileTypes.checkByFileType(fileChunk, "avi");
-}
-export function isFLV(fileChunk) {
-  fileChunk = _mod8342.getFileChunk(fileChunk);
-  const FileTypes = _mod8343.FileTypes;
-  const tmp4 = FileTypes.checkByFileType(fileChunk, "flv") && _mod8342.isFlvStringIncluded(fileChunk);
-  return tmp4;
-}
-export function isM4V(fileChunk) {
-  fileChunk = _mod8342.getFileChunk(fileChunk);
-  const FileTypes = _mod8343.FileTypes;
-  const tmp4 = FileTypes.checkByFileType(fileChunk, "m4v") && _mod8342.isftypStringIncluded(fileChunk);
-  return tmp4;
-}
-export function isMKV(fileChunk) {
-  fileChunk = _mod8342.getFileChunk(fileChunk, 64);
-  const FileTypes = _mod8343.FileTypes;
-  const tmp4 = FileTypes.checkByFileType(fileChunk, "mkv") && "mkv" === _mod8342.findMatroskaDocTypeElements(fileChunk);
-  return tmp4;
-}
-export function isMOV(fileChunk) {
-  fileChunk = _mod8342.getFileChunk(fileChunk);
-  const FileTypes = _mod8343.FileTypes;
-  return FileTypes.checkByFileType(fileChunk, "mov");
-}
-export function isMP4(fileChunk, excludeSimilarTypes) {
-  fileChunk = _mod8342.getFileChunk(fileChunk);
-  const FileTypes = _mod8343.FileTypes;
-  let checkByFileTypeResult = FileTypes.checkByFileType(fileChunk, "mp4");
-  if (!checkByFileTypeResult) {
-    excludeSimilarTypes = undefined;
-    if (null != excludeSimilarTypes) {
-      excludeSimilarTypes = excludeSimilarTypes.excludeSimilarTypes;
+class DataView {
+  constructor(buffer) {
+    const self = this;
+    _classCallCheck(this, DataView);
+    const tmp2 = typeof buffer !== "object" || undefined === buffer.length || undefined === buffer.readUInt8 || undefined === buffer.readUInt16LE || undefined === buffer.readUInt16BE || undefined === buffer.readUInt32LE || undefined === buffer.readUInt32BE || undefined === buffer.readInt32LE || undefined === buffer.readInt32BE;
+    if (tmp2) {
+      const _Error = Error;
+      const self2 = this;
+      const self3 = this;
+      const error = new Error("DataView: Passed buffer type is unsupported.");
+      throw error;
+    } else {
+      self.buffer = buffer;
+      self.byteLength = self.buffer.length;
     }
-    let tmp8 = !excludeSimilarTypes;
-    if (tmp8) {
-      const fileChunk1 = tmp(8342).getFileChunk(fileChunk);
-      const FileTypes2 = tmp(8343).FileTypes;
-      tmp8 = FileTypes2.checkByFileType(fileChunk1, "m4v") && _mod8342.isftypStringIncluded(fileChunk1);
-      FileTypes2.checkByFileType(fileChunk1, "m4v") && _mod8342.isftypStringIncluded(fileChunk1);
-    }
-    checkByFileTypeResult = tmp8;
   }
-  return checkByFileTypeResult;
 }
-export function isOGG(fileChunk) {
-  fileChunk = _mod8342.getFileChunk(fileChunk);
-  const FileTypes = _mod8343.FileTypes;
-  return FileTypes.checkByFileType(fileChunk, "ogg");
-}
-export function isSWF(fileChunk) {
-  fileChunk = _mod8342.getFileChunk(fileChunk);
-  const FileTypes = _mod8343.FileTypes;
-  return FileTypes.checkByFileType(fileChunk, "swf");
-}
-export function isWEBM(fileChunk) {
-  fileChunk = _mod8342.getFileChunk(fileChunk, 64);
-  const FileTypes = _mod8343.FileTypes;
-  const tmp4 = FileTypes.checkByFileType(fileChunk, "webm") && "webm" === _mod8342.findMatroskaDocTypeElements(fileChunk);
-  return tmp4;
-}
+const entry = {
+  key: "getUint8",
+  value: function getUint8(sum) {
+    const buffer = this.buffer;
+    return buffer.readUInt8(sum);
+  }
+};
+const items = [
+  entry,
+  {
+    key: "getUint16",
+    value: function getUint16(c5, arg1) {
+      let uInt16LE;
+      const buffer = this.buffer;
+      const tmp = arg1;
+      if (tmp) {
+        uInt16LE = buffer.readUInt16LE(c5);
+      } else {
+        uInt16LE = buffer.readUInt16BE(c5);
+      }
+      return uInt16LE;
+    }
+  },
+  {
+    key: "getUint32",
+    value: function getUint32(sum, arg1) {
+      let uInt32LE;
+      const buffer = this.buffer;
+      const tmp = arg1;
+      if (tmp) {
+        uInt32LE = buffer.readUInt32LE(sum);
+      } else {
+        uInt32LE = buffer.readUInt32BE(sum);
+      }
+      return uInt32LE;
+    }
+  },
+  {
+    key: "getInt32",
+    value: function getInt32(sum, arg1) {
+      let int32LE;
+      const buffer = this.buffer;
+      const tmp = arg1;
+      if (tmp) {
+        int32LE = buffer.readInt32LE(sum);
+      } else {
+        int32LE = buffer.readInt32BE(sum);
+      }
+      return int32LE;
+    }
+  }
+];
+
+export default _createClassDefault(DataView, items);

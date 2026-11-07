@@ -1,18 +1,18 @@
-// Module ID: 19695
-// Function ID: 19696
+// Module ID: 19764
+// Function ID: 19765
 // Name: HcaptchaModal
-// Dependencies: [109, 19, 17, 2186, 1385, 1072, 21, 5170, 504, 1499, 2116, 1627, 1113, 6617, 6180, 6185, 575, 5781, 1377, 19694, 7068, 10904, 2]
+// Dependencies: [109, 19, 17, 2186, 1385, 1072, 21, 5140, 504, 1499, 2116, 1627, 1113, 6592, 6154, 6159, 575, 5751, 1377, 19763, 7043, 10887, 2]
 
-// Module 19695 (HcaptchaModal)
+// Module 19764 (HcaptchaModal)
 import Constants from "Constants" /* 1072 */;
-import SharedCaptchaUtils from "SharedCaptchaUtils" /* 6617 */;
+import SharedCaptchaUtils from "SharedCaptchaUtils" /* 6592 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import LocaleStore from "LocaleStore" /* 2186 */;
 import UserStore from "UserStore" /* 1385 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let navigation;
@@ -65,7 +65,7 @@ class HcaptchaModal {
         tmp(obj);
       }
     }, items1);
-    onPress(6180)(() => {
+    onPress(6154)(() => {
       callback();
       return true;
     });
@@ -73,9 +73,9 @@ class HcaptchaModal {
     const obj3 = { style: tmp2.container, children: items3 };
     if (tmp13Result) {
       const obj4 = { spacing: onPress(575).space.PX_16, align: "center", children: items2 };
-      const Stack = tmp3(6185).Stack;
+      const Stack = tmp3(6159).Stack;
       const obj5 = { accessibilityRole: "header", variant: "heading-lg/semibold", color: "mobile-text-heading-primary", style: tmp2.title, children: stringResult };
-      items2 = [closure_11(tmp3(5781).Text, obj5), ];
+      items2 = [closure_11(tmp3(5751).Text, obj5), ];
       let WHITE;
       const tmp16 = closure_11;
       const tmp17 = closure_6;
@@ -90,17 +90,17 @@ class HcaptchaModal {
     items3 = [tmp13Result, , ];
     const obj7 = { style: absoluteFillObject.absoluteFillObject, children: closure_11(tmp9Result, obj8) };
     obj8 = { languageCode: LocaleStore.locale, onMessage };
-    tmp9Result = onPress(19694);
+    tmp9Result = onPress(19763);
     const merged = Object.assign(tmp);
     items3[1] = closure_11(closure_7, obj7);
     const obj9 = { style: items4, pointerEvents: "box-none", children: closure_11(PressableOpacity, obj11) };
     items4 = [tmp2.closeButtonContainer, { paddingTop: rect.top + onPress(575).space.PX_8, paddingLeft: rect.left + onPress(575).space.PX_16 }];
     obj11 = { accessibilityRole: "button", accessibilityLabel: intl2.string(onMessage(1113).t.cpT0Cq), onPress, style: tmp2.closeButtonHitArea, children: closure_11(XLargeIcon, obj12) };
     ({ paddingTop: rect.top + onPress(575).space.PX_8, paddingLeft: rect.left + onPress(575).space.PX_16 });
-    PressableOpacity = tmp3(7068).PressableOpacity;
+    PressableOpacity = tmp3(7043).PressableOpacity;
     intl2 = tmp3(1113).intl;
     obj12 = { color: onPress(575).colors.INTERACTIVE_ICON_DEFAULT };
-    XLargeIcon = tmp3(10904).XLargeIcon;
+    XLargeIcon = tmp3(10887).XLargeIcon;
     items3[2] = closure_11(closure_7, obj9);
     return closure_12(closure_7, obj3);
   }

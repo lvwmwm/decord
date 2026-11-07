@@ -1,14 +1,14 @@
-// Module ID: 9383
-// Function ID: 9384
+// Module ID: 9365
+// Function ID: 9366
 // Name: CheckmarkLargeBoldIcon
-// Dependencies: [19, 21, 575, 5871, 9384, 2]
+// Dependencies: [19, 21, 575, 5841, 9366, 2]
 // Exports: CheckmarkLargeBoldIcon
 
-// Module 9383 (CheckmarkLargeBoldIcon)
+// Module 9365 (CheckmarkLargeBoldIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5871 */;
-import AssetRegistry from "AssetRegistry" /* 9384 */;
+import BaseIconImage2 from "BaseIconImage" /* 5841 */;
+import AssetRegistry from "AssetRegistry" /* 9366 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

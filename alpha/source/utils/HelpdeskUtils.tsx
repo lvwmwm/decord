@@ -1,11 +1,11 @@
 // Module ID: 2185
 // Function ID: 2186
 // Name: HelpdeskUtils
-// Dependencies: [2186, 1072, 4982, 1377, 2]
+// Dependencies: [2186, 1072, 4952, 1377, 2]
 
 // Module 2185 (HelpdeskUtils)
 import PlatformUtils from "PlatformUtils" /* 1377 */;
-import getLocalizedLinkDefault from "getLocalizedLink" /* 4982 */;
+import getLocalizedLinkDefault from "getLocalizedLink" /* 4952 */;
 import LocaleStore from "LocaleStore" /* 2186 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
@@ -15,9 +15,9 @@ const SUPPORT_DEV_DOMAIN = Constants.SUPPORT_DEV_DOMAIN;
 let combined = "https://" + Constants.SUPPORT_DOMAIN;
 let closure_6 = "https://" + SUPPORT_DEV_DOMAIN;
 let obj = {
-  getArticleURL(AGE_VERIFICATION_LEARN_MORE) {
+  getArticleURL(REFERRAL_PROGRAM) {
     const str = LocaleStore.locale;
-    return combined + "/hc/" + str.toLowerCase() + "/articles/" + AGE_VERIFICATION_LEARN_MORE;
+    return combined + "/hc/" + str.toLowerCase() + "/articles/" + REFERRAL_PROGRAM;
   },
   getDevArticleURL(arg0) {
     let tmp2 = closure_6;

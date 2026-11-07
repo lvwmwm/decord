@@ -1,9 +1,9 @@
-// Module ID: 7956
-// Function ID: 7957
+// Module ID: 7934
+// Function ID: 7935
 // Name: QuestTaskConfigTypes
 // Dependencies: [2]
 
-// Module 7956 (QuestTaskConfigTypes)
+// Module 7934 (QuestTaskConfigTypes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/QuestTaskConfigTypes.tsx");

@@ -1,19 +1,19 @@
-// Module ID: 13457
-// Function ID: 13458
+// Module ID: 13482
+// Function ID: 13483
 // Name: StringSelectComponentActionSheet
-// Dependencies: [32, 19, 21, 5170, 575, 8795, 2116, 5404, 12328, 7386, 5781, 1113, 2]
+// Dependencies: [32, 19, 21, 5140, 575, 8774, 2116, 5374, 12326, 7363, 5751, 1113, 2]
 // Exports: default
 
-// Module 13457 (StringSelectComponentActionSheet)
+// Module 13482 (StringSelectComponentActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Server from "Server" /* 2116 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5404 */;
-import Text_Text from "Text/Text" /* 5781 */;
-import EmojiDefault from "Emoji" /* 7386 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import EmojiDefault from "Emoji" /* 7363 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, set;
@@ -41,7 +41,7 @@ export default function StringSelectComponentActionSheet(selectionActionComponen
   ({ labelComponent, channelId, containerId, allowEmpty } = selectionActionComponent);
   let tmp = callback();
   dependencyMap = tmp;
-  let obj = selectionActionComponent(8795);
+  let obj = selectionActionComponent(8774);
   const useState = react.useState;
   set = new Set(obj.getInitialStringSelectOptions(selectionActionComponent, containerId));
   let tmp3 = first(useState(set), 2);
@@ -150,7 +150,7 @@ export default function StringSelectComponentActionSheet(selectionActionComponen
     channelId,
     allowEmpty
   };
-  const tmp10 = onSubmit(12328);
+  const tmp10 = onSubmit(12326);
   const tmp9 = memo;
   if (selectionOptionItemWithDescription) {
     selectionOptionItemWithDescription = tmp.selectionOptionItemWithDescription;

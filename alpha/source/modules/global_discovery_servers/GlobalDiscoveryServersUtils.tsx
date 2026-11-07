@@ -1,17 +1,17 @@
-// Module ID: 20368
-// Function ID: 20369
+// Module ID: 20436
+// Function ID: 20437
 // Name: GlobalDiscoveryServersUtils
-// Dependencies: [5, 2186, 9174, 1072, 1113, 1380, 7616, 1252, 1266, 2]
+// Dependencies: [5, 2186, 9156, 1072, 1113, 1380, 7593, 1252, 1266, 2]
 // Exports: fromDiscoverableGuildSearchResult, fromDiscoverableGuildServer, getCategoryIdFromServerTab, getGlobalDiscoveryServersBannerDescription, getGlobalDiscoveryServersBannerTitle, getGlobalDiscoveryServersTabSectionTitle, getGlobalDiscoveryServersTabTitle, getLanguageCodeFallback, isStaleFeaturedGuilds, makeAnalyticsID, navigateToGuild
 
-// Module 20368 (GlobalDiscoveryServersUtils)
+// Module 20436 (GlobalDiscoveryServersUtils)
 import Constants from "Constants" /* 1072 */;
 import intl8 from "intl" /* 1113 */;
 import v1 from "v1" /* 1266 */;
 import GlobalUtils from "GlobalUtils" /* 1380 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import LocaleStore from "LocaleStore" /* 2186 */;
-import GlobalDiscoveryServersConstants from "GlobalDiscoveryServersConstants" /* 9174 */;
+import GlobalDiscoveryServersConstants from "GlobalDiscoveryServersConstants" /* 9156 */;
 import size from "module_2" /* 2 */;
 
 let c10;
@@ -42,7 +42,7 @@ let obj = function _navigateToGuild() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -101,7 +101,7 @@ let obj = function _navigateToGuild() {
           obj = closure_130_1(closure_130_3[7]);
           obj.track(closure_130_12.GUILD_DISCOVERY_GUILD_SELECTED, obj9);
           _location = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp27) {
         _location = 3;
@@ -259,7 +259,7 @@ export function fromDiscoverableGuildServer(id) {
   return obj;
 }
 export function fromDiscoverableGuildSearchResult(id) {
-  obj = { id: id.id, name: id.name, description: id.description, splash: id.splash, banner: id.banner, icon: id.icon, features: new Set(id.features), presenceCount: null, memberCount: null, premiumSubscriptionCount: "r", preferredLocale: "isArray", discoverySplash: "(function computeOffsetIfDataChanged_Pnpm_computeOffsetIfDataChangedTs2(params){let[omitZero]=this.__closure;const{direction:direction,handlerOffset:_handlerOffset,size:size,previousLength:previousLength,currentLength:currentLength}=params;let handlerOffset=_handlerOffset;let positionIndex;let round;const isPositive=direction<0;if(isPositive){positionIndex=Math.abs(handlerOffset)/size;round=Number.parseInt(String(omitZero(previousLength,positionIndex/previousLength)));}else{positionIndex=(Math.abs(handlerOffset)-size)/size;round=Number.parseInt(String(omitZero(previousLength,positionIndex/previousLength)))+1;}const prevOffset=omitZero(previousLength,positionIndex%previousLength);const prevIndex=isPositive?prevOffset:previousLength-prevOffset-1;const changedLength=round*(currentLength-previousLength);const changedOffset=changedLength*size;if(prevIndex>currentLength-1&&currentLength<previousLength){if(isPositive)handlerOffset=(currentLength-1)*size*direction;else handlerOffset=(currentLength-1)*size*-1;}else{handlerOffset+=changedOffset*direction;}return handlerOffset;})", emojis: [] };
+  obj = { id: id.id, name: id.name, description: id.description, splash: id.splash, banner: id.banner, icon: id.icon, features: new Set(id.features), presenceCount: null, memberCount: null, premiumSubscriptionCount: "r", preferredLocale: "isArray", discoverySplash: "(function pnpm_BottomSheetTsx27(){let[animatedIndex,animatedPosition,animatedAnimationState,animatedContentGestureState,animatedHandleGestureState]=this.__closure;return{_animatedIndex:animatedIndex.value,_animatedPosition:animatedPosition.value,_animationState:animatedAnimationState.value,_contentGestureState:animatedContentGestureState.value,_handleGestureState:animatedHandleGestureState.value};})", emojis: [] };
   ({ approximate_presence_count: obj.presenceCount, approximate_member_count: obj.memberCount, discovery_splash: obj.discoverySplash } = id);
   new Set(id.features);
   return obj;

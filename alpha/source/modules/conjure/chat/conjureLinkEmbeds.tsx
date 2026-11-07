@@ -1,12 +1,12 @@
-// Module ID: 11116
-// Function ID: 11117
+// Module ID: 11102
+// Function ID: 11103
 // Name: conjureLinkEmbeds
-// Dependencies: [5, 32, 19, 1378, 11117, 2]
+// Dependencies: [5, 32, 19, 1378, 11103, 2]
 // Exports: readyConjureLinkEmbeds, resetConjureLinkEmbedsForTests, useConjureLinkPrefetch
 
-// Module 11116 (conjureLinkEmbeds)
+// Module 11102 (conjureLinkEmbeds)
 import URLUtilsDefault from "URLUtils" /* 1378 */;
-import MediaChannelActionCreators from "MediaChannelActionCreators" /* 11117 */;
+import MediaChannelActionCreators from "MediaChannelActionCreators" /* 11103 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -14,7 +14,7 @@ import size from "module_2" /* 2 */;
 
 let c0, c1, c11, c12, set2;
 
-const f99834 = (item) => {
+const f100184 = (item) => {
   obj = /^https?:\/\//i;
   return obj.test(item);
 };
@@ -28,7 +28,7 @@ function conjureLinkUrls(arr) {
     const self = this;
     const self2 = this;
     const items = [];
-    set = new Set(match.filter(f99834));
+    set = new Set(match.filter(f100184));
     HermesBuiltin.arraySpread(items, set, 0);
     return items.slice(0, 4);
   } else {
@@ -51,7 +51,7 @@ let obj = function _prefetchConjureLinkEmbeds() {
         let obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       while (true) {
@@ -258,7 +258,7 @@ let obj = function _prefetchConjureLinkEmbeds() {
           let deleteResult2 = closure_136_7.delete(joined);
         }
         c12 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     }
   });
@@ -284,7 +284,7 @@ export function readyConjureLinkEmbeds(trimmed) {
     const self = this;
     const self2 = this;
     const items = [];
-    set = new Set(match.filter(f99834));
+    set = new Set(match.filter(f100184));
     HermesBuiltin.arraySpread(items, set, 0);
     substr = items.slice(0, 4);
   } else {
@@ -315,7 +315,7 @@ export function useConjureLinkPrefetch(arg0) {
       const _Set = Set;
       const self = this;
       const self2 = this;
-      set = new Set(match.filter(f99834));
+      set = new Set(match.filter(f100184));
       const items = [];
       const tmp6 = set;
       HermesBuiltin.arraySpread(items, set, 0);
@@ -336,7 +336,7 @@ export function useConjureLinkPrefetch(arg0) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -364,7 +364,7 @@ export function useConjureLinkPrefetch(arg0) {
               return obj;
             } else {
               c0 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } catch (tmp6) {
             c0 = 3;

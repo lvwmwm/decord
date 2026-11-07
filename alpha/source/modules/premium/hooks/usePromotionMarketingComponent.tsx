@@ -1,41 +1,39 @@
-// Module ID: 15543
-// Function ID: 15544
+// Module ID: 15578
+// Function ID: 15579
 // Name: usePromotionMarketingComponent
-// Dependencies: [32, 19, 7729, 9732, 9775, 504, 9772, 2]
-// Exports: usePromotionMarketingComponent
+// Dependencies: [32, 19, 7706, 9714, 9759, 504, 9756, 2]
+// Exports: usePromotionMarketingComponent, usePromotionMarketingSurface
 
-// Module 15543 (usePromotionMarketingComponent)
-import promotions_constants from "promotions/constants" /* 9772 */;
+// Module 15578 (usePromotionMarketingComponent)
+import promotions_constants from "promotions/constants" /* 9756 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UserOfferStore from "UserOfferStore" /* 7729 */;
-import PromotionsStore from "PromotionsStore" /* 9732 */;
+import UserOfferStore from "UserOfferStore" /* 7706 */;
+import PromotionsStore from "PromotionsStore" /* 9714 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-let result = size.fileFinishedImporting("modules/premium/hooks/usePromotionMarketingComponent.tsx");
-
-export function usePromotionMarketingComponent(PREMIUM_TAB) {
+function usePromotionMarketingComponentData(arg0) {
+  let closure_0;
   let ref;
   let stateFromStores;
   let tmp6;
-  _require = PREMIUM_TAB;
+  _require = arg0;
   let obj = react;
   const effect = react.useEffect(() => {
-    const obj = PREMIUM_TAB(stateFromStores[4]);
+    const obj = closure_0(stateFromStores[4]);
     const result = obj.maybeFetchActivePromotions();
   }, []);
   const items = [PromotionsStore, ref];
   const obj2 = require("get initialized");
   stateFromStores = obj2.useStateFromStores(items, () => {
-    const marketingComponentByType = PromotionsStore.getMarketingComponentByType(PREMIUM_TAB);
-    const obj = PromotionsStore;
-    if (null == marketingComponentByType) {
+    const tmp = closure_0();
+    if (null == tmp) {
       return null;
     } else {
-      const promotionByTypeAndId = obj.getPromotionByTypeAndId(promotions_constants.PromotionTypes.MARKETING_MOMENT, marketingComponentByType.promotionId);
+      const promotionByTypeAndId = PromotionsStore.getPromotionByTypeAndId(promotions_constants.PromotionTypes.MARKETING_MOMENT, tmp.promotionId);
       let trialId;
       if (promotionByTypeAndId != null) {
         trialId = promotionByTypeAndId.trialId;
@@ -44,7 +42,7 @@ export function usePromotionMarketingComponent(PREMIUM_TAB) {
         const userTrialOffer = UserOfferStore.getUserTrialOffer(promotionByTypeAndId.trialId);
         return null;
       }
-      return marketingComponentByType;
+      return tmp;
     }
   });
   const items1 = [PromotionsStore];
@@ -103,4 +101,14 @@ export function usePromotionMarketingComponent(PREMIUM_TAB) {
     tmp8 = stateFromStores;
   }
   return tmp8;
+}
+let result = size.fileFinishedImporting("modules/premium/hooks/usePromotionMarketingComponent.tsx");
+
+export function usePromotionMarketingComponent(PREMIUM_TAB) {
+  let closure_0 = PREMIUM_TAB;
+  return usePromotionMarketingComponentData(() => PromotionsStore.getMarketingComponentByType(PREMIUM_TAB));
+}
+export function usePromotionMarketingSurface(arg0) {
+  let closure_0 = arg0;
+  return usePromotionMarketingComponentData(() => PromotionsStore.getMarketingComponentBySurface(closure_0));
 }

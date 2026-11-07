@@ -1,27 +1,27 @@
-// Module ID: 8036
-// Function ID: 8037
+// Module ID: 8014
+// Function ID: 8015
 // Name: StageChannelActionCreators
-// Dependencies: [5, 5073, 5833, 1072, 7577, 38, 5916, 8037, 1282, 7591, 6206, 6838, 6982, 2116, 5107, 1084, 7572, 8041, 8044, 2]
+// Dependencies: [5, 5043, 5803, 1072, 7554, 38, 5889, 8015, 1282, 7568, 6180, 6813, 6957, 2116, 5077, 1084, 7549, 8019, 8022, 2]
 // Exports: editStage, endStage, inviteUserToStage, moveSelfToAudience, moveUserToAudience, removeUserFromChannel, setEveryoneRolePermissionAllowed, setUserSuppress, startStage, toggleRequestToSpeak
 
-// Module 8036 (StageChannelActionCreators)
+// Module 8014 (StageChannelActionCreators)
 import _modDef38 from "module_38" /* 38 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1084 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
 import Server from "Server" /* 2116 */;
-import PermissionUtilsAll from "PermissionUtils" /* 5107 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5916 */;
-import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 6206 */;
-import useStageSpeakingForCurrentUser from "useStageSpeakingForCurrentUser" /* 6838 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6982 */;
-import Constants2 from "Constants" /* 7577 */;
-import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 7591 */;
-import StageChannelUtils from "StageChannelUtils" /* 8037 */;
-import StageChannelModalActionCreators from "StageChannelModalActionCreators" /* 8041 */;
-import StageInstanceActionCreators from "StageInstanceActionCreators" /* 8044 */;
+import PermissionUtilsAll from "PermissionUtils" /* 5077 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5889 */;
+import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 6180 */;
+import useStageSpeakingForCurrentUser from "useStageSpeakingForCurrentUser" /* 6813 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6957 */;
+import Constants2 from "Constants" /* 7554 */;
+import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 7568 */;
+import StageChannelUtils from "StageChannelUtils" /* 8015 */;
+import StageChannelModalActionCreators from "StageChannelModalActionCreators" /* 8019 */;
+import StageInstanceActionCreators from "StageInstanceActionCreators" /* 8022 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5073 */;
-import VoiceStateStore from "VoiceStateStore" /* 5833 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5043 */;
+import VoiceStateStore from "VoiceStateStore" /* 5803 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -31,8 +31,8 @@ let c9;
 let metroImportAll;
 let metroImportDefault;
 let tmp2;
-const ChannelActionCreatorsDefault = tmp2(7572);
-const f93036 = (error) => {
+const ChannelActionCreatorsDefault = tmp2(7549);
+const f93373 = (error) => {
   if (error.code === constants.STAGE_CHANNEL_USER_NOT_ALLOWED_TO_SPEAK) {
     obj = SafetyToastsActionCreatorsDefault;
     obj.showFailedToast(constants2.GENERIC_ERROR);
@@ -105,7 +105,7 @@ let obj = function _startStage() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -133,7 +133,7 @@ let obj = function _startStage() {
                 return obj6;
               } else {
                 c7 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               }
             }
           } else if (arg0 === 1) {
@@ -172,7 +172,7 @@ obj = function _editStage() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -193,7 +193,7 @@ obj = function _editStage() {
             return obj5;
           } else {
             c3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else if (arg0 === 1) {
           c3 = 3;
@@ -231,7 +231,7 @@ obj = function _endStage() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -258,7 +258,7 @@ obj = function _endStage() {
             return { value, done: true };
           } else {
             c1 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp7) {
           c1 = 3;
@@ -346,7 +346,7 @@ export function setUserSuppress(channel, id, suppress) {
   obj = { suppress, channel_id: channel.id };
   obj3 = HTTPUtils;
   const patchResult = patch(request);
-  return patchResult.catch(f93036);
+  return patchResult.catch(f93373);
 }
 export function moveUserToAudience(user, voiceChannel) {
   let constants2;
@@ -366,7 +366,7 @@ export function moveUserToAudience(user, voiceChannel) {
       obj = { suppress: true, channel_id: voiceChannel.id };
       obj3 = HTTPUtils;
       const patchResult = patch(request);
-      patchResult.catch(f93036);
+      patchResult.catch(f93373);
       const HTTP2 = HTTPUtils.HTTP;
       const request1 = { url: React4.UPDATE_VOICE_STATE(guildId, user.id), body: obj2, rejectWithError: obj6.rejectWithMigratedError() };
       const patch2 = HTTP2.patch;

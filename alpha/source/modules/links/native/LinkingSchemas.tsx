@@ -1,9 +1,9 @@
-// Module ID: 5863
-// Function ID: 5864
+// Module ID: 5833
+// Function ID: 5834
 // Name: LinkingSchemas
 // Dependencies: [2]
 
-// Module 5863 (LinkingSchemas)
+// Module 5833 (LinkingSchemas)
 import size from "module_2" /* 2 */;
 
 const obj = { bestbuy: { regex: /(?:^https?:\/\/)(?:www\.)?bestbuy\.com(?:\/(.*))?$/i, protocol: "bestbuy://" } };

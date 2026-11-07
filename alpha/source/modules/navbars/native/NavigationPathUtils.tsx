@@ -1,12 +1,12 @@
-// Module ID: 14590
-// Function ID: 14591
+// Module ID: 14623
+// Function ID: 14624
 // Name: NavigationPathUtils
-// Dependencies: [1072, 5212, 2]
+// Dependencies: [1072, 5182, 2]
 // Exports: getSelectedSpecialNavigationPath, useSelectedSpecialNavigationPath
 
-// Module 14590 (NavigationPathUtils)
+// Module 14623 (NavigationPathUtils)
 import Constants from "Constants" /* 1072 */;
-import MemoryRouter from "MemoryRouter" /* 5212 */;
+import MemoryRouter from "MemoryRouter" /* 5182 */;
 import size from "module_2" /* 2 */;
 
 const Routes = Constants.Routes;

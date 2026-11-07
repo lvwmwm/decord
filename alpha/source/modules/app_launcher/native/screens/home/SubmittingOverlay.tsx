@@ -1,23 +1,23 @@
-// Module ID: 12578
-// Function ID: 12579
+// Module ID: 12591
+// Function ID: 12592
 // Name: SubmittingOverlay
-// Dependencies: [21, 5170, 575, 1652, 5791, 5792, 5801, 2]
+// Dependencies: [21, 5140, 575, 1652, 5761, 5762, 5771, 2]
 // Exports: SubmittingOverlay
 
-// Module 12578 (SubmittingOverlay)
+// Module 12591 (SubmittingOverlay)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1652 from "module_1652" /* 1652 */;
-import spring_spring from "spring/spring" /* 5791 */;
-import springPresets from "springPresets" /* 5792 */;
-import createStyles from "createStyles" /* 5170 */;
+import spring_spring from "spring/spring" /* 5761 */;
+import springPresets from "springPresets" /* 5762 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 const _modDef1652 = _mod1652;
 let num;
 
 let tmp2;
-const ButtonEllipsis = tmp2(5801);
+const ButtonEllipsis = tmp2(5771);
 const jsx = Fragment.jsx;
 let obj = { ellipsis: { backgroundColor: nativeDefault.colors.BACKGROUND_SCRIM, justifyContent: "center", alignItems: "center" } };
 ({ backgroundColor: nativeDefault.colors.BACKGROUND_SCRIM, justifyContent: "center", alignItems: "center" });

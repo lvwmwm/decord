@@ -1,17 +1,17 @@
-// Module ID: 7774
-// Function ID: 7775
+// Module ID: 7751
+// Function ID: 7752
 // Name: GuildMemberSafetyMembers
-// Dependencies: [1385, 5097, 7775, 7776, 7778, 7779, 7785, 6010, 2]
+// Dependencies: [1385, 5067, 7752, 7753, 7755, 7756, 7762, 5983, 2]
 // Exports: hasUnusualDmActivity
 
-// Module 7774 (GuildMemberSafetyMembers)
-import SecondaryIndexMap from "SecondaryIndexMap" /* 5097 */;
-import isEqualDefault from "isEqual" /* 6010 */;
-import MemberSafetyElasticSearchQueryTypes from "MemberSafetyElasticSearchQueryTypes" /* 7775 */;
-import guild_mod_dash_member_safety_DateUtils from "guild_mod_dash_member_safety/DateUtils" /* 7776 */;
-import SortUtils from "SortUtils" /* 7778 */;
-import MemberSafetyStoreSupplemental from "MemberSafetyStoreSupplemental" /* 7779 */;
-import isSpam from "isSpam" /* 7785 */;
+// Module 7751 (GuildMemberSafetyMembers)
+import SecondaryIndexMap from "SecondaryIndexMap" /* 5067 */;
+import isEqualDefault from "isEqual" /* 5983 */;
+import MemberSafetyElasticSearchQueryTypes from "MemberSafetyElasticSearchQueryTypes" /* 7752 */;
+import guild_mod_dash_member_safety_DateUtils from "guild_mod_dash_member_safety/DateUtils" /* 7753 */;
+import SortUtils from "SortUtils" /* 7755 */;
+import MemberSafetyStoreSupplemental from "MemberSafetyStoreSupplemental" /* 7756 */;
+import isSpam from "isSpam" /* 7762 */;
 import UserStore from "UserStore" /* 1385 */;
 import size from "module_2" /* 2 */;
 
@@ -133,7 +133,7 @@ class GuildMemberSafetyMembers {
       const self2 = this;
       const date = new Date(unusualDMActivityUntil);
       const time = date.getTime();
-      tmp9 = time >= closure_4 - tmp(7775).UNUSUAL_DM_COMPARISON_DELTA;
+      tmp9 = time >= closure_4 - tmp(7752).UNUSUAL_DM_COMPARISON_DELTA;
     }
     tmpResult = isSpam;
     return obj3;

@@ -1,17 +1,17 @@
-// Module ID: 6006
-// Function ID: 6007
+// Module ID: 5979
+// Function ID: 5980
 // Name: VideoCodecUtils
-// Dependencies: [5924, 2]
+// Dependencies: [5897, 2]
 // Exports: codecNameToPayloadName, filterParsedVideoCodecs, filterVideoCodecs, getExperimentCodecs, parseNativeCodecs
 
-// Module 6006 (VideoCodecUtils)
-import Constants from "Constants" /* 5924 */;
+// Module 5979 (VideoCodecUtils)
+import Constants from "Constants" /* 5897 */;
 import size from "module_2" /* 2 */;
 
 let encode, set;
 
-const f89628 = (name) => name.name;
-const f89630 = (codec) => {
+const f89963 = (name) => name.name;
+const f89965 = (codec) => {
   codec = codec.codec;
   let str = "AV1";
   if ("AV1X" !== codec) {
@@ -49,7 +49,7 @@ export function filterParsedVideoCodecs(parseNativeCodecsResult, experimentCodec
     const _Set = Set;
     const self = this;
     const self2 = this;
-    new Set(items.map(f89628));
+    new Set(items.map(f89963));
     const item1 = parseNativeCodecsResult.forEach((name) => {
       if (!set.has(name.name)) {
         const obj = { name: null, encode: false, decode: null };
@@ -80,7 +80,7 @@ export function filterVideoCodecs(arg0, arr) {
     flag = false;
   }
   const parsed = JSON.parse(arg0);
-  const mapped = parsed.map(f89630);
+  const mapped = parsed.map(f89965);
   if (flag === undefined) {
     flag = false;
   }
@@ -105,7 +105,7 @@ export function filterVideoCodecs(arg0, arr) {
     const _Set = Set;
     const self = this;
     const self2 = this;
-    set = new Set(items.map(f89628));
+    set = new Set(items.map(f89963));
     const item1 = mapped.forEach((name) => {
       if (!set.has(name.name)) {
         const obj = { name: null, encode: false, decode: null };
@@ -118,7 +118,7 @@ export function filterVideoCodecs(arg0, arr) {
 }
 export function parseNativeCodecs(arg0) {
   const parsed = JSON.parse(arg0);
-  return parsed.map(f89630);
+  return parsed.map(f89965);
 }
 export function codecNameToPayloadName(name) {
   let str = "AV1X";

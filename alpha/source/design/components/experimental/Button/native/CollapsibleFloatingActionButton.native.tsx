@@ -1,23 +1,23 @@
-// Module ID: 9096
-// Function ID: 9097
+// Module ID: 9078
+// Function ID: 9079
 // Name: CollapsibleFloatingActionButton
-// Dependencies: [19, 21, 5794, 5170, 1652, 5791, 5792, 5789, 9097, 575, 2]
+// Dependencies: [19, 21, 5764, 5140, 1652, 5761, 5762, 5759, 9079, 575, 2]
 // Exports: CollapsibleFloatingActionButton
 
-// Module 9096 (CollapsibleFloatingActionButton)
+// Module 9078 (CollapsibleFloatingActionButton)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1652 from "module_1652" /* 1652 */;
-import spring_spring from "spring/spring" /* 5791 */;
-import springPresets from "springPresets" /* 5792 */;
-import FloatingActionButton from "FloatingActionButton" /* 9097 */;
+import spring_spring from "spring/spring" /* 5761 */;
+import springPresets from "springPresets" /* 5762 */;
+import FloatingActionButton from "FloatingActionButton" /* 9079 */;
 import react from "react" /* 19 */;
-import ButtonConstants from "ButtonConstants" /* 5794 */;
-import createStyles from "createStyles" /* 5170 */;
+import ButtonConstants from "ButtonConstants" /* 5764 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let tmp2;
-const BaseTextButton2 = tmp2(5789);
+const BaseTextButton2 = tmp2(5759);
 function CollapsableButton(arg0) {
   let state;
   let style;
@@ -98,18 +98,18 @@ export function CollapsibleFloatingActionButton(arg0) {
   }
   const items = [styles.button, ];
   if (positionRight == null) {
-    positionRight = tmp3(9097).DEFAULT_POSITION_OFFSET;
+    positionRight = tmp3(9079).DEFAULT_POSITION_OFFSET;
   }
   const rect = { position: "absolute", right: positionRight, bottom: positionBottom };
   if (positionBottom == null) {
-    positionBottom = tmp3(9097).DEFAULT_POSITION_OFFSET;
+    positionBottom = tmp3(9079).DEFAULT_POSITION_OFFSET;
   }
   items[1] = rect;
   if (null != state) {
     const merged1 = Object.assign(merged);
     tmp13 = <CollapsableButton state={state} text={text} style={items} icon={cloneElementResult} />;
   } else {
-    const BaseTextButton = tmp3(5789).BaseTextButton;
+    const BaseTextButton = tmp3(5759).BaseTextButton;
     const merged2 = Object.assign(merged);
     tmp13 = <BaseTextButton text={text} size="lg" variant="primary" textVariant="body-md/semibold" icon={cloneElementResult} style={items} pillStyle={tmp2.textButtonPill} />;
   }

@@ -1,14 +1,14 @@
-// Module ID: 9220
-// Function ID: 9221
+// Module ID: 9202
+// Function ID: 9203
 // Name: DefaultInviteExpirationExperiments
-// Dependencies: [5041, 1072, 9218, 5382, 563, 2]
+// Dependencies: [5011, 1072, 9200, 5352, 563, 2]
 // Exports: useDefaultInviteExpiration, useMaxAgeOptions
 
-// Module 9220 (DefaultInviteExpirationExperiments)
-import InstantInviteUtilsDefault from "InstantInviteUtils" /* 9218 */;
-import GuildStore from "GuildStore" /* 5041 */;
+// Module 9202 (DefaultInviteExpirationExperiments)
+import InstantInviteUtilsDefault from "InstantInviteUtils" /* 9200 */;
+import GuildStore from "GuildStore" /* 5011 */;
 import Constants from "Constants" /* 1072 */;
-import createExperiment_mod from "module_5382" /* 5382 */;
+import createExperiment_mod from "module_5352" /* 5352 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;

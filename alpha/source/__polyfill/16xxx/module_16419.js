@@ -1,26 +1,37 @@
 // Module ID: 16419
 // Function ID: 16420
-// Dependencies: [16408, 16383]
+// Dependencies: [16334, 16420]
+// Exports: getSupportedNumberingSystems
 
 // Module 16419
-import _mod16383 from "module_16383" /* 16383 */;
-import module_16408 from "module_16408" /* 16408 */;
+const require = globalThis.__r;
+let _require;
 
-let _moduleResult = module_16408(_mod16383.document);
-if (_moduleResult) {
-  const _module1 = module_16408;
-  _moduleResult = _module1(_mod16383.document.createElement);
+
+export function getSupportedNumberingSystems(locale) {
+  _require = locale;
+  const numberingSystemNames = require("numberingSystemNames").numberingSystemNames;
+  return numberingSystemNames.filter((item) => {
+    function isSupportedNumberingSystem(item, arg1) {
+      let str = arg1;
+      if (undefined === arg1) {
+        str = "en";
+      }
+      try {
+        const concat = "".concat;
+        const createMemoizedNumberFormat = locale(closure_1_1[0]).createMemoizedNumberFormat;
+        const combined = "".concat(str, "-u-nu-");
+        const memoizedNumberFormat = createMemoizedNumberFormat(combined.concat(item));
+        const obj3 = memoizedNumberFormat;
+        if (memoizedNumberFormat.resolvedOptions().numberingSystem !== item) {
+          if ("123" === obj3.format(123)) {
+            return false;
+          }
+        }
+        return true;
+      } catch (err) {
+      }
+    }
+    return isSupportedNumberingSystem(item, locale);
+  });
 }
-let c2 = _moduleResult;
-
-export default (arg0) => {
-  let element;
-  const tmp = c2;
-  if (tmp) {
-    const _document = _mod16383.document;
-    element = _document.createElement(arg0);
-  } else {
-    element = {};
-  }
-  return element;
-};

@@ -1,17 +1,17 @@
-// Module ID: 13008
-// Function ID: 13009
+// Module ID: 13031
+// Function ID: 13032
 // Name: ConjureMentionSuggestions
-// Dependencies: [19, 21, 5170, 575, 7151, 1113, 4024, 7063, 1187, 5224, 12318, 2]
+// Dependencies: [19, 21, 5140, 575, 7126, 1113, 4026, 7038, 1187, 5194, 12316, 2]
 // Exports: default
 
-// Module 13008 (ConjureMentionSuggestions)
+// Module 13031 (ConjureMentionSuggestions)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import _modDef4024 from "module_4024" /* 4024 */;
-import TableRowGroup3 from "TableRowGroup" /* 7151 */;
+import _modDef4026 from "module_4026" /* 4026 */;
+import TableRowGroup3 from "TableRowGroup" /* 7126 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -44,7 +44,7 @@ export default function ConjureMentionSuggestions(arg0) {
     const tmp13 = closure_4;
     if (found.length > 0) {
       let obj = {
-        title: intl.string(_modDef4024.Vb3sUg),
+        title: intl.string(_modDef4026.Vb3sUg),
         hasIcons: true,
         children: found.map((user) => {
               let Avatar;
@@ -60,7 +60,7 @@ export default function ConjureMentionSuggestions(arg0) {
                 }
               };
               const TableRow = require("TableRow").TableRow;
-              obj2 = { user: user.user, size: require("native").AvatarSizes.XSMALL, guildId: "Array" };
+              obj2 = { user: user.user, size: require("native").AvatarSizes.XSMALL, guildId: "r" };
               Avatar = require("native").Avatar;
               obj3 = require("UserUtils");
               return closure_1_3(TableRow, obj, user.user.id);
@@ -74,7 +74,7 @@ export default function ConjureMentionSuggestions(arg0) {
     let tmp7 = null;
     if (found1.length > 0) {
       let obj2 = {
-        title: intl2.string(_modDef4024.zA5KLM),
+        title: intl2.string(_modDef4026.zA5KLM),
         hasIcons: true,
         children: found1.map((file) => {
               let obj2;

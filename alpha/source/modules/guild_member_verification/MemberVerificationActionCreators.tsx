@@ -1,18 +1,18 @@
-// Module ID: 7002
-// Function ID: 7003
+// Module ID: 6977
+// Function ID: 6978
 // Name: MemberVerificationActionCreators
-// Dependencies: [5, 5075, 5082, 5905, 1385, 1072, 1282, 5906, 572, 7003, 7007, 5204, 7008, 6116, 1113, 6604, 1252, 2]
+// Dependencies: [5, 5045, 5052, 5874, 1385, 1072, 1282, 5875, 572, 6978, 6982, 5174, 6983, 6090, 1113, 6579, 1252, 2]
 // Exports: showCoachmark
 
-// Module 7002 (MemberVerificationActionCreators)
+// Module 6977 (MemberVerificationActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
-import InviteCodeUtils from "InviteCodeUtils" /* 5906 */;
+import InviteCodeUtils from "InviteCodeUtils" /* 5875 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ImpersonateStore from "ImpersonateStore" /* 5075 */;
-import GuildMemberStore from "GuildMemberStore" /* 5082 */;
-import InviteStore from "InviteStore" /* 5905 */;
+import ImpersonateStore from "ImpersonateStore" /* 5045 */;
+import GuildMemberStore from "GuildMemberStore" /* 5052 */;
+import InviteStore from "InviteStore" /* 5874 */;
 import UserStore from "UserStore" /* 1385 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
@@ -101,7 +101,7 @@ obj = function _updateVerificationForm() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -141,7 +141,7 @@ obj = function _updateVerificationForm() {
             const obj5 = closure_133_1(closure_133_2[8]);
             obj5.dispatch(obj7);
             c7 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp5) {
           c7 = 3;
@@ -169,7 +169,7 @@ obj = function _updateVerificationFormDescription() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -209,7 +209,7 @@ obj = function _updateVerificationFormDescription() {
             const obj5 = closure_131_1(closure_131_2[8]);
             obj5.dispatch(obj7);
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp5) {
           c5 = 3;
@@ -237,7 +237,7 @@ obj = function _enableVerificationForm() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -268,7 +268,7 @@ obj = function _enableVerificationForm() {
             return { value, done: true };
           } else {
             c2 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp4) {
           c2 = 3;
@@ -304,7 +304,7 @@ obj = function _submitVerificationForm() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -342,7 +342,7 @@ obj = function _submitVerificationForm() {
               const obj11 = closure_133_0(closure_133_2[10]);
               const result = obj11.updateImpersonatedData(guildId, obj6);
               c9 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             } else {
               c7 = 1;
               const HTTP = closure_133_0(closure_133_2[6]).HTTP;

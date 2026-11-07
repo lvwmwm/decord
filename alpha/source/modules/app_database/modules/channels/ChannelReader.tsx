@@ -1,11 +1,11 @@
-// Module ID: 5069
-// Function ID: 5070
+// Module ID: 5039
+// Function ID: 5040
 // Name: ChannelReader
-// Dependencies: [5, 3, 5048, 2]
+// Dependencies: [5, 3, 5018, 2]
 
-// Module 5069 (ChannelReader)
+// Module 5039 (ChannelReader)
 import LoggerDefault from "Logger" /* 3 */;
-import DatabaseDaosDefault from "DatabaseDaos" /* 5048 */;
+import DatabaseDaosDefault from "DatabaseDaos" /* 5018 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -40,7 +40,7 @@ class ChannelReader {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -102,7 +102,7 @@ class ChannelReader {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c4;

@@ -1,14 +1,14 @@
-// Module ID: 8897
-// Function ID: 8898
+// Module ID: 8879
+// Function ID: 8880
 // Name: NoResults
-// Dependencies: [19, 21, 8898, 8899, 8900, 8901, 5177, 5872, 2]
+// Dependencies: [19, 21, 8880, 8881, 8882, 8883, 5147, 5842, 2]
 // Exports: NoResults, getNoResultsSource, useNoResultsSource
 
-// Module 8897 (NoResults)
+// Module 8879 (NoResults)
 import Fragment from "Fragment" /* 21 */;
-import shared from "shared" /* 5177 */;
-import FastImageDefault from "FastImage" /* 5872 */;
-import _mod8898 from "module_8898" /* 8898 */;
+import shared from "shared" /* 5147 */;
+import FastImageDefault from "FastImage" /* 5842 */;
+import _mod8880 from "module_8880" /* 8880 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -27,21 +27,21 @@ const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("design/components/Illustration/native/redesign/generated/NoResults.tsx");
 
 export function getNoResultsSource(theme) {
-  const obj = _mod8898;
+  const obj = _mod8880;
   const obj2 = { dark, darker, light };
   return obj.getIllustrationSource(theme, obj2);
 }
 export function useNoResultsSource() {
   const obj = shared;
   const theme = obj.useThemeContext().theme;
-  const obj2 = _mod8898;
+  const obj2 = _mod8880;
   const obj3 = { dark, darker, light };
   return obj2.getIllustrationSource(theme, obj3);
 }
 export function NoResults(arg0) {
   const obj = shared;
   const theme = obj.useThemeContext().theme;
-  const obj2 = _mod8898;
+  const obj2 = _mod8880;
   const obj3 = { dark, darker, light };
   const illustrationSource = obj2.getIllustrationSource(theme, obj3);
   FastImageDefault;

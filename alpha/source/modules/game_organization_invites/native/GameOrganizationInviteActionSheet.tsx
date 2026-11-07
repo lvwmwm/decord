@@ -1,24 +1,24 @@
-// Module ID: 16041
-// Function ID: 16042
+// Module ID: 16089
+// Function ID: 16090
 // Name: GameOrganizationInviteActionSheet
-// Dependencies: [19, 17, 21, 5170, 575, 9226, 16042, 16043, 1113, 2530, 7449, 6185, 5781, 7305, 16044, 16045, 2]
+// Dependencies: [19, 17, 21, 5140, 575, 9208, 16090, 16091, 1113, 2530, 7426, 6159, 5751, 7282, 16092, 16093, 2]
 // Exports: default
 
-// Module 16041 (GameOrganizationInviteActionSheet)
+// Module 16089 (GameOrganizationInviteActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl6 from "intl" /* 1113 */;
 import _modDef2530 from "module_2530" /* 2530 */;
-import Text_Text from "Text/Text" /* 5781 */;
-import Stack_Stack from "Stack/Stack" /* 6185 */;
-import SearchBar2 from "SearchBar" /* 7305 */;
-import ActionSheet2 from "ActionSheet" /* 7449 */;
-import UserPlaceholderRowDefault from "UserPlaceholderRow" /* 9226 */;
-import useGameOrganizationInviteSuggestionsDefault from "useGameOrganizationInviteSuggestions" /* 16042 */;
-import useLinkedGameOrganizationInviteSenderDefault from "useLinkedGameOrganizationInviteSender" /* 16043 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import Stack_Stack from "Stack/Stack" /* 6159 */;
+import SearchBar2 from "SearchBar" /* 7282 */;
+import ActionSheet2 from "ActionSheet" /* 7426 */;
+import UserPlaceholderRowDefault from "UserPlaceholderRow" /* 9208 */;
+import useGameOrganizationInviteSuggestionsDefault from "useGameOrganizationInviteSuggestions" /* 16090 */;
+import useLinkedGameOrganizationInviteSenderDefault from "useLinkedGameOrganizationInviteSender" /* 16091 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -90,10 +90,10 @@ export default function GameOrganizationInviteActionSheet(guildId) {
   if (isLoading) {
     tmp7Result = tmp7(Loading, {});
   } else if (hasNoFriends) {
-    tmp7Result = tmp7(tmp2(16044), {});
+    tmp7Result = tmp7(tmp2(16092), {});
   } else {
     const obj7 = { users, getSendState, onInvite: handleInvite };
-    tmp7Result = tmp7(tmp2(16045), obj7);
+    tmp7Result = tmp7(tmp2(16093), obj7);
   }
   return React3(ActionSheet, obj);
 };

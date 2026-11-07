@@ -1,17 +1,17 @@
-// Module ID: 14851
-// Function ID: 14852
+// Module ID: 14884
+// Function ID: 14885
 // Name: CrunchyrollLinkLanding
-// Dependencies: [19, 14850, 1072, 21, 5170, 1113, 8940, 1499, 9835, 14852, 2185, 2]
+// Dependencies: [19, 14883, 1072, 21, 5140, 1113, 8922, 1499, 9819, 14885, 2185, 2]
 // Exports: default
 
-// Module 14851 (CrunchyrollLinkLanding)
+// Module 14884 (CrunchyrollLinkLanding)
 import Fragment from "Fragment" /* 21 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2185 */;
-import CrunchyrollLinkConstants from "CrunchyrollLinkConstants" /* 14850 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14852 */;
+import CrunchyrollLinkConstants from "CrunchyrollLinkConstants" /* 14883 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14885 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let navigation;
@@ -39,7 +39,7 @@ export default function CrunchyrollLinkLanding() {
   const callback = react.useCallback(() => {
     navigation.push(constants.PRE_CONNECT);
   }, items);
-  const TwoWayLinkLanding = navigation(9835).TwoWayLinkLanding;
+  const TwoWayLinkLanding = navigation(9819).TwoWayLinkLanding;
   let intl = navigation(1113).intl;
   const intl2 = navigation(1113).intl;
   const obj3 = HelpdeskUtilsDefault;

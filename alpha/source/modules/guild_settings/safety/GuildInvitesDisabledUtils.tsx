@@ -1,12 +1,12 @@
-// Module ID: 14137
-// Function ID: 14138
+// Module ID: 14162
+// Function ID: 14163
 // Name: GuildInvitesDisabledUtils
-// Dependencies: [11154, 5102, 1072, 504, 2]
+// Dependencies: [11140, 5072, 1072, 504, 2]
 // Exports: useInvitesDisabled, useInvitesDisabledPermission, useShouldShowInvitesDisabledNotif
 
-// Module 14137 (GuildInvitesDisabledUtils)
-import GuildIncidentsStore from "GuildIncidentsStore" /* 11154 */;
-import PermissionStore from "PermissionStore" /* 5102 */;
+// Module 14162 (GuildInvitesDisabledUtils)
+import GuildIncidentsStore from "GuildIncidentsStore" /* 11140 */;
+import PermissionStore from "PermissionStore" /* 5072 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -15,11 +15,11 @@ let _require, guildIncident;
 
 let closure_4;
 let hasOwnProperty;
-const f106548 = () => {
+const f106981 = () => {
   const canResult = null != guild && PermissionStore.can(hasOwnProperty.MANAGE_GUILD, tmp);
   return canResult;
 };
-const f106549 = () => {
+const f106982 = () => {
   guildIncident = null;
   if (null != closure_0) {
     guildIncident = guildIncident.getGuildIncident(tmp.id);
@@ -34,13 +34,13 @@ export function useInvitesDisabledPermission(guild) {
   const items = [PermissionStore];
   const items1 = [guild];
   const obj = require("get initialized");
-  return obj.useStateFromStores(items, f106548, items1);
+  return obj.useStateFromStores(items, f106981, items1);
 }
 export function useInvitesDisabled(features) {
   _require = features;
   const items = [GuildIncidentsStore];
   const obj = require("get initialized");
-  const stateFromStores = obj.useStateFromStores(items, f106549);
+  const stateFromStores = obj.useStateFromStores(items, f106982);
   let hasItem;
   if (features != null) {
     features = features.features;
@@ -72,11 +72,11 @@ export function useShouldShowInvitesDisabledNotif(guild) {
   const items = [PermissionStore];
   const items1 = [guild];
   const obj = require("get initialized");
-  let stateFromStores = obj.useStateFromStores(items, f106548, items1);
+  let stateFromStores = obj.useStateFromStores(items, f106981, items1);
   _require = guild;
   const items2 = [GuildIncidentsStore];
   const obj2 = require("get initialized");
-  const stateFromStores1 = obj2.useStateFromStores(items2, f106549);
+  const stateFromStores1 = obj2.useStateFromStores(items2, f106982);
   let hasItem;
   if (guild != null) {
     const features = guild.features;

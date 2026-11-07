@@ -1,17 +1,17 @@
-// Module ID: 19064
-// Function ID: 19065
+// Module ID: 19114
+// Function ID: 19115
 // Name: PeopleScreen
-// Dependencies: [5, 19, 14123, 14108, 9933, 9932, 21, 14101, 504, 19006, 19002, 7572, 14115, 19065, 18998, 19010, 2]
+// Dependencies: [5, 19, 14148, 14133, 9917, 9916, 21, 14126, 504, 19056, 19052, 7549, 14140, 19115, 19048, 19060, 2]
 
-// Module 19064 (PeopleScreen)
+// Module 19114 (PeopleScreen)
 import Fragment from "Fragment" /* 21 */;
-import TrackingConstants from "TrackingConstants" /* 9932 */;
-import TrackingDefault from "Tracking" /* 14115 */;
+import TrackingConstants from "TrackingConstants" /* 9916 */;
+import TrackingDefault from "Tracking" /* 14140 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import SearchPeopleTabStore from "SearchPeopleTabStore" /* 14123 */;
-import SearchQueryStore from "SearchQueryStore" /* 14108 */;
-import SearchConstants from "SearchConstants" /* 9933 */;
+import SearchPeopleTabStore from "SearchPeopleTabStore" /* 14148 */;
+import SearchQueryStore from "SearchQueryStore" /* 14133 */;
+import SearchConstants from "SearchConstants" /* 9917 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -62,7 +62,7 @@ const memoResult = react.memo(function PeopleScreen(searchContext) {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -96,7 +96,7 @@ const memoResult = react.memo(function PeopleScreen(searchContext) {
             const result = obj6.trackSearchResultClicked(obj7);
             closure_1_6(userId, channelId);
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp9) {
           c5 = 3;

@@ -1,14 +1,14 @@
-// Module ID: 6957
-// Function ID: 6958
+// Module ID: 6932
+// Function ID: 6933
 // Name: hasSecondaryViewChat
-// Dependencies: [5023, 5019, 1072, 6958, 2]
+// Dependencies: [4993, 4989, 1072, 6933, 2]
 // Exports: default
 
-// Module 6957 (hasSecondaryViewChat)
+// Module 6932 (hasSecondaryViewChat)
 import Constants from "Constants" /* 1072 */;
-import ChannelRecord from "ChannelRecord" /* 5023 */;
-import conjureDMAppChannel from "conjureDMAppChannel" /* 6958 */;
-import ChannelStore from "ChannelStore" /* 5019 */;
+import ChannelRecord from "ChannelRecord" /* 4993 */;
+import conjureDMAppChannel from "conjureDMAppChannel" /* 6933 */;
+import ChannelStore from "ChannelStore" /* 4989 */;
 import size from "module_2" /* 2 */;
 
 const isChannelChatInSidebar = ChannelRecord.isChannelChatInSidebar;

@@ -1,20 +1,20 @@
-// Module ID: 11078
-// Function ID: 11079
+// Module ID: 11063
+// Function ID: 11064
 // Name: launchFrame
-// Dependencies: [32, 5, 6926, 6927, 5811, 11079, 572, 11023, 6929, 11024, 11081, 11086, 11031, 2]
+// Dependencies: [32, 5, 6901, 6902, 5781, 11064, 572, 11007, 6904, 11008, 11066, 11071, 11015, 2]
 // Exports: attachFrameHostWindow, attachFrameIframe, detachFrameHostWindow, detachFrameIframe, launchFrame, refreshProxyTicket, resetFrameGuestClaims, resetFrameLayoutModes, setFramePictureInPictureInteractive, setFrameRunsInBackground, setFrameUserMuted, updateFramePanelMode
 
-// Module 11078 (launchFrame)
+// Module 11063 (launchFrame)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 5811 */;
-import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 6929 */;
-import createProxyTicket from "createProxyTicket" /* 11023 */;
-import leaveFrame from "leaveFrame" /* 11031 */;
-import leaveCurrentEmbeddedActivity from "leaveCurrentEmbeddedActivity" /* 11079 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 5781 */;
+import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 6904 */;
+import createProxyTicket from "createProxyTicket" /* 11007 */;
+import leaveFrame from "leaveFrame" /* 11015 */;
+import leaveCurrentEmbeddedActivity from "leaveCurrentEmbeddedActivity" /* 11064 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import FramesStore from "FramesStore" /* 6926 */;
-import FramesConstants from "FramesConstants" /* 6927 */;
+import FramesStore from "FramesStore" /* 6901 */;
+import FramesConstants from "FramesConstants" /* 6902 */;
 import size from "module_2" /* 2 */;
 
 let analyticsContext, closure_1, error, hostWindowKey, intent, launch, launchRequestId, message, proxyTicket, type;
@@ -47,7 +47,7 @@ let obj = function _launchFrame() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -244,7 +244,7 @@ function promoteFrame(frameId) {
     const tmp4 = require;
     if (null != mainFrame1) {
       if (mainFrame1.intent === metroRequire.MAIN) {
-        const tmp4Result = tmp4(11031);
+        const tmp4Result = tmp4(11015);
         tmp4Result.leaveFrame(mainFrame1.id);
       } else {
         demoteMainFrame(mainFrame1.id);
@@ -281,7 +281,7 @@ obj = function _refreshProxyTicket() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {

@@ -1,109 +1,42 @@
 // Module ID: 13356
 // Function ID: 13357
-// Dependencies: [32, 13261]
-// Exports: getBucketKey, sanitizeMetricKey, sanitizeTags, sanitizeUnit, serializeMetricBuckets, simpleHash
+// Dependencies: [13334, 13322, 13357]
 
 // Module 13356
-import _mod13261 from "module_13261" /* 13261 */;
-import _slicedToArray from "_slicedToArray" /* 32 */;
+import _mod13357 from "module_13357" /* 13357 */;
+import module_13334 from "module_13334" /* 13334 */;
 
-let hasOwnProperty;
 
-let items = [["\n", "\\n"], ["\r", "\\r"], ["\t", "\\t"], ["\\", "\\\\"], ["|", "\\u{7c}"], [",", "\\u{2c}"]];
-
-export function getBucketKey(metricType, sanitizeMetricKeyResult, sanitizeUnitResult, sanitizeTagsResult) {
-  const obj = _mod13261;
-  const entries1 = entries(obj.dropUndefinedKeys(sanitizeTagsResult));
-  return "" + metricType + sanitizeMetricKeyResult + sanitizeUnitResult + entries1.sort((arg0, arg1) => {
-    const first = arg0[0];
-    return first.localeCompare(arg1[0]);
-  });
-}
-export function sanitizeMetricKey(str) {
-  return str.replace(/[^\w\-.]+/gi, "_");
-}
-export function sanitizeTags(tags) {
-  let obj = {};
-  for (const key10007 in tags) {
-    let tmp5 = key10007;
-    let _Object = Object;
-    hasOwnProperty = Object.prototype.hasOwnProperty;
-    if (!hasOwnProperty.call(tags, key10007)) {
-      continue;
-    } else {
-      let _String = String;
-      let replaced = key10007.replace(/[^\w\-./]+/gi, "");
-      items = [];
-      let tmp3 = items;
-      let arraySpreadResult = HermesBuiltin.arraySpread(items, String(tags[key10007]), 0);
-      obj[replaced] = items.reduce((acc, item) => {
-        function getCharOrReplacement(item) {
-          const obj = closure_1_3[Symbol.iterator]();
-          while (obj !== undefined) {
-            let tmp4 = closure_1_2(tmp2, 2);
-            if (item === tmp4[0]) {
-              obj.return();
-              return tmp5;
+export const moduleMetadataIntegration = module_13334.defineIntegration(() => {
+  let obj = {
+    name: "ModuleMetadata",
+    setup(on) {
+      const options = on;
+      on.on("beforeEnvelope", (arg0) => {
+        let obj = options(closure_1_1[1]);
+        obj.forEachEnvelopeItem(arg0, (arg0, arg1) => {
+          if ("event" === arg1) {
+            const _Array = Array;
+            let tmp3;
+            if (Array.isArray(arg0)) {
+              tmp3 = arg0[1];
+            }
+            if (tmp3) {
+              const obj = options(closure_1_1[2]);
+              const result = obj.stripMetadataFromStackFrames(tmp3);
+              arg0[1] = tmp3;
             }
           }
-          return item;
-        }
-        return acc + getCharOrReplacement(item);
-      }, "");
-      continue;
-    }
-    continue;
-  }
-  return obj;
-}
-export function sanitizeUnit(none) {
-  return none.replace(/[^\w]+/gi, "_");
-}
-export function serializeMetricBuckets(arg0) {
-  let str = "";
-  const iter = arg0[Symbol.iterator]();
-  const nextResult = iter.next();
-  while (iter !== undefined) {
-    let tmp2 = nextResult;
-    let _Object = Object;
-    let entries = Object.entries(nextResult.tags);
-    let arr2 = entries;
-    let str2 = "";
-    if (entries.length > 0) {
-      let mapped = arr2.map((item) => {
-        let tmp;
-        let tmp2;
-        [tmp, tmp2] = item;
-        return "" + tmp + ":" + tmp2;
+        });
       });
-      let _HermesInternal = HermesInternal;
-      str2 = "|#" + mapped.join(",");
+      on.on("applyFrameMetadata", (type) => {
+        if (!type.type) {
+          const stackParser = options.getOptions().stackParser;
+          const obj = _mod13357;
+          const result = obj.addMetadataToStackFrames(stackParser, type);
+        }
+      });
     }
-    let _HermesInternal2 = HermesInternal;
-    let str3 = "";
-    let str4 = "@";
-    let str5 = ":";
-    let str6 = "|";
-    let str7 = "|T";
-    let str8 = "\n";
-    str = str + "" + tmp2.name + "@" + tmp2.unit + ":" + tmp2.metric + "|" + tmp2.metricType + str2 + "|T" + tmp2.timestamp + "\n";
-    continue;
-  }
-  return str;
-}
-export function simpleHash(item) {
-  let length;
-  let num = 0;
-  let num2 = 0;
-  let num3 = 0;
-  if (0 < item.length) {
-    do {
-      let sum = (num2 << 5) - num2 + item.charCodeAt(num);
-      num2 = sum & sum;
-      num = num + 1;
-      num3 = num2;
-      length = item.length;
-    } while (num < length);
-  }
-  return num3 >>> 0;
-}
+  };
+  return obj;
+});

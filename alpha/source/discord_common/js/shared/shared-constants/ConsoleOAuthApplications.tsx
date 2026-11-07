@@ -1,9 +1,9 @@
-// Module ID: 14383
-// Function ID: 14384
+// Module ID: 14417
+// Function ID: 14418
 // Name: ConsoleOAuthApplications
 // Dependencies: [2]
 
-// Module 14383 (ConsoleOAuthApplications)
+// Module 14417 (ConsoleOAuthApplications)
 import size from "module_2" /* 2 */;
 
 const obj = { PLAYSTATION_APPLICATION_IDS: new Set(["984193235868065795", "1008890872156405890"]), IMPLICIT_IDENTIFY_PREMIUM_APPLICATION_IDS: new Set(["622174530214821906"]), ALL: new Set(["622174530214821906", "984193235868065795", "1008890872156405890"]) };

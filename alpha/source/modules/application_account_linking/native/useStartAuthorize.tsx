@@ -1,14 +1,14 @@
-// Module ID: 7411
-// Function ID: 7412
+// Module ID: 7388
+// Function ID: 7389
 // Name: useStartAuthorize
-// Dependencies: [5, 19, 7412, 1072, 7413, 7415, 5864, 1252, 7417, 2]
+// Dependencies: [5, 19, 7389, 1072, 7390, 7392, 5834, 1252, 7394, 2]
 // Exports: default
 
-// Module 7411 (useStartAuthorize)
+// Module 7388 (useStartAuthorize)
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import LinkingDefault from "Linking" /* 5864 */;
-import ApplicationAccountLinkingConstants from "ApplicationAccountLinkingConstants" /* 7412 */;
+import LinkingDefault from "Linking" /* 5834 */;
+import ApplicationAccountLinkingConstants from "ApplicationAccountLinkingConstants" /* 7389 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -34,7 +34,7 @@ export default function useStartAuthorize(getOfficialApplicationId) {
   const debug = obj.debug;
   const tmp = undefined !== debug && debug;
   const tmp3 = dependencyMap;
-  let obj2 = authorizationApp(7413);
+  let obj2 = authorizationApp(7390);
   authorizationApp = obj2.useAuthorizationApp(getOfficialApplicationId);
   let prop;
   if (authorizationApp != null) {
@@ -45,8 +45,8 @@ export default function useStartAuthorize(getOfficialApplicationId) {
     WEB = AuthorizeFlow.WEB;
   }
   let parentId;
-  const useAuthorizedAppsToken = tmp2(7415).useAuthorizedAppsToken;
-  authorizationApp(7415);
+  const useAuthorizedAppsToken = tmp2(7392).useAuthorizedAppsToken;
+  authorizationApp(7392);
   if (authorizationApp != null) {
     parentId = authorizationApp.parentId;
   }
@@ -72,7 +72,7 @@ export default function useStartAuthorize(getOfficialApplicationId) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c4;

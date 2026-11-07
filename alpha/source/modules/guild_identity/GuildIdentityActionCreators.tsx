@@ -1,10 +1,10 @@
-// Module ID: 11683
-// Function ID: 11684
+// Module ID: 11665
+// Function ID: 11666
 // Name: GuildIdentityActionCreators
-// Dependencies: [5, 1072, 572, 1282, 7240, 7244, 2]
+// Dependencies: [5, 1072, 572, 1282, 7215, 7219, 2]
 // Exports: clearErrors, initGuildIdentitySettings, resetAllPending, resetPendingMemberChanges, resetPendingProfileChanges, saveGuildIdentityChanges, setCurrentGuild
 
-// Module 11683 (GuildIdentityActionCreators)
+// Module 11665 (GuildIdentityActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -40,7 +40,7 @@ let obj = function _saveGuildIdentityChanges() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {

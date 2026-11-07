@@ -1,22 +1,22 @@
-// Module ID: 18978
-// Function ID: 18979
+// Module ID: 19028
+// Function ID: 19029
 // Name: ChannelDetails
-// Dependencies: [19, 17, 14108, 5019, 9931, 10275, 21, 575, 5170, 504, 14055, 18979, 7410, 7435, 1499, 14206, 5420, 7208, 1627, 1377, 5127, 7753, 14119, 14094, 1652, 5400, 5403, 5791, 14128, 5353, 5450, 18980, 18990, 19106, 19108, 19109, 19110, 19111, 6147, 2]
+// Dependencies: [19, 17, 14133, 4989, 9915, 10258, 21, 575, 5140, 504, 14080, 19029, 7387, 7412, 1499, 14231, 5390, 7183, 1627, 1377, 5097, 7730, 14144, 14119, 1652, 5370, 5373, 5761, 14153, 5323, 5420, 19030, 19040, 19156, 19158, 19159, 19160, 19161, 6121, 2]
 
-// Module 18978 (ChannelDetails)
+// Module 19028 (ChannelDetails)
 import nativeDefault from "native" /* 575 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
-import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 14094 */;
-import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 14119 */;
-import SearchActionCreatorsDefault from "SearchActionCreators" /* 14128 */;
+import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 14119 */;
+import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 14144 */;
+import SearchActionCreatorsDefault from "SearchActionCreators" /* 14153 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SearchQueryStore from "SearchQueryStore" /* 14108 */;
-import ChannelStore from "ChannelStore" /* 5019 */;
-import ChannelDetailsStore from "ChannelDetailsStore" /* 9931 */;
-import ChannelDetailsConstants from "ChannelDetailsConstants" /* 10275 */;
+import SearchQueryStore from "SearchQueryStore" /* 14133 */;
+import ChannelStore from "ChannelStore" /* 4989 */;
+import ChannelDetailsStore from "ChannelDetailsStore" /* 9915 */;
+import ChannelDetailsConstants from "ChannelDetailsConstants" /* 10258 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let CHANNEL_DETAILS_TOP_MARGIN;
@@ -34,7 +34,7 @@ let obj5;
 let obj6;
 let tmp;
 let unpackModuleId;
-const DeviceUtils = tmp(5127);
+const DeviceUtils = tmp(5097);
 ({ View: closure_4, StyleSheet } = react_native);
 ({ deleteChannelDetailsSearchState: metroImportDefault, useChannelDetailsSearchActiveSource: metroImportAll, useIsChannelDetailsSearchActive: c9 } = ChannelDetailsStore);
 ({ SPRING_CHANNEL_HEADER: c10, CHANNEL_DETAILS_TOP_MARGIN } = ChannelDetailsConstants);

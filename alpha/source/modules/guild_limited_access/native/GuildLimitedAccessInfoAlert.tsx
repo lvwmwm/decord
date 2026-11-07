@@ -1,21 +1,21 @@
-// Module ID: 6801
-// Function ID: 6802
+// Module ID: 6776
+// Function ID: 6777
 // Name: GuildLimitedAccessInfoAlert
-// Dependencies: [19, 5041, 6802, 1072, 21, 5170, 6803, 575, 1113, 6188, 1187, 5781, 2]
+// Dependencies: [19, 5011, 6777, 1072, 21, 5140, 6778, 575, 1113, 6162, 1187, 5751, 2]
 // Exports: default
 
-// Module 6801 (GuildLimitedAccessInfoAlert)
+// Module 6776 (GuildLimitedAccessInfoAlert)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl4 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5781 */;
-import AlertDefault from "Alert" /* 6188 */;
-import GuildLimitedAccessConstants from "GuildLimitedAccessConstants" /* 6802 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import AlertDefault from "Alert" /* 6162 */;
+import GuildLimitedAccessConstants from "GuildLimitedAccessConstants" /* 6777 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 5041 */;
+import GuildStore from "GuildStore" /* 5011 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
-import TextStyles from "TextStyles" /* 6803 */;
+import createStyles_mod from "createStyles" /* 5140 */;
+import TextStyles from "TextStyles" /* 6778 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;

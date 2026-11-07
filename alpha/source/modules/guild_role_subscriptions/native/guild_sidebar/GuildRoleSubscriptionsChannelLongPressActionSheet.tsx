@@ -1,24 +1,24 @@
-// Module ID: 18538
-// Function ID: 18539
+// Module ID: 18585
+// Function ID: 18586
 // Name: GuildRoleSubscriptionsChannelLongPressActionSheet
-// Dependencies: [19, 17, 5026, 21, 5170, 575, 7449, 7405, 1187, 14594, 1113, 8267, 18435, 11125, 2]
+// Dependencies: [19, 17, 4996, 21, 5140, 575, 7426, 7382, 1187, 14627, 1113, 8246, 18482, 11111, 2]
 // Exports: default
 
-// Module 18538 (GuildRoleSubscriptionsChannelLongPressActionSheet)
+// Module 18585 (GuildRoleSubscriptionsChannelLongPressActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import ChannelConstants from "ChannelConstants" /* 5026 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7405 */;
-import ActionSheet2 from "ActionSheet" /* 7449 */;
-import _mod8267 from "module_8267" /* 8267 */;
-import ChannelActionSheetUtils from "ChannelActionSheetUtils" /* 11125 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14594 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 18435 */;
+import ChannelConstants from "ChannelConstants" /* 4996 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7382 */;
+import ActionSheet2 from "ActionSheet" /* 7426 */;
+import _mod8246 from "module_8246" /* 8246 */;
+import ChannelActionSheetUtils from "ChannelActionSheetUtils" /* 11111 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14627 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 18482 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -64,11 +64,11 @@ export default function GuildRoleSubscriptionsChannelLongPressActionSheet(arg0) 
       const result = obj.copyGuildChannelOrThreadLink(require, StaticChannelRoute.ROLE_SUBSCRIPTIONS);
     }
   };
-  const FormRow = _mod8267.FormRow;
+  const FormRow = _mod8246.FormRow;
   obj6 = { source: AssetRegistryDefault2 };
   Icon2 = native.Icon;
   obj7 = { text: intl2.string(intl3.t.WqhZss) };
-  FormLabel = _mod8267.FormLabel;
+  FormLabel = _mod8246.FormLabel;
   intl2 = intl3.intl;
   items[1] = closure_5(FormRow, obj5);
   return closure_6(ActionSheet, obj);

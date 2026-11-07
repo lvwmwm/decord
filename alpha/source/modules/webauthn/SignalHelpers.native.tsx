@@ -1,9 +1,9 @@
-// Module ID: 6829
-// Function ID: 6830
+// Module ID: 6804
+// Function ID: 6805
 // Name: SignalHelpers
-// Dependencies: [5, 3, 6830, 6831, 2]
+// Dependencies: [5, 3, 6805, 6806, 2]
 
-// Module 6829 (SignalHelpers)
+// Module 6804 (SignalHelpers)
 import LoggerDefault from "Logger" /* 3 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
@@ -26,7 +26,7 @@ class SignalHelpers {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -62,7 +62,7 @@ class SignalHelpers {
             return obj;
           } else {
             credentials = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp4) {
           credentials = 3;
@@ -85,7 +85,7 @@ class SignalHelpers {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -130,7 +130,7 @@ class SignalHelpers {
             return obj;
           } else {
             c2 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp15) {
           c2 = 3;
@@ -153,7 +153,7 @@ class SignalHelpers {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -192,7 +192,7 @@ class SignalHelpers {
             return obj;
           } else {
             c0 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp10) {
           c0 = 3;

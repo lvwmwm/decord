@@ -1,10 +1,10 @@
-// Module ID: 9665
-// Function ID: 9666
+// Module ID: 9647
+// Function ID: 9648
 // Name: useRedeemVirtualCurrency
-// Dependencies: [5, 32, 19, 9666, 7505, 9662, 1113, 2]
+// Dependencies: [5, 32, 19, 9648, 7482, 9644, 1113, 2]
 // Exports: useRedeemVirtualCurrency
 
-// Module 9665 (useRedeemVirtualCurrency)
+// Module 9647 (useRedeemVirtualCurrency)
 import intl3 from "intl" /* 1113 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -70,7 +70,7 @@ export function useRedeemVirtualCurrency(useOrdersAPI) {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -153,7 +153,7 @@ export function useRedeemVirtualCurrency(useOrdersAPI) {
               closure_1_10(false);
             }
             c8 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp52) {
           closure_5 = tmp52;

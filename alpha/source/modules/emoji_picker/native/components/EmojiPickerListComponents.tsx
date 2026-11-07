@@ -1,20 +1,20 @@
-// Module ID: 10163
-// Function ID: 10164
+// Module ID: 10146
+// Function ID: 10147
 // Name: EmojiPickerListComponents
-// Dependencies: [19, 17, 10080, 21, 5170, 575, 1187, 8819, 5781, 1113, 10161, 2]
+// Dependencies: [19, 17, 10064, 21, 5140, 575, 1187, 8798, 5751, 1113, 10144, 2]
 
-// Module 10163 (EmojiPickerListComponents)
+// Module 10146 (EmojiPickerListComponents)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5781 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8819 */;
-import PremiumUpsellGradientBackground from "PremiumUpsellGradientBackground" /* 10161 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8798 */;
+import PremiumUpsellGradientBackground from "PremiumUpsellGradientBackground" /* 10144 */;
 import react from "react" /* 19 */;
-import EmojiPickerListConstants from "EmojiPickerListConstants" /* 10080 */;
+import EmojiPickerListConstants from "EmojiPickerListConstants" /* 10064 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let LABEL_BOTTOM_PADDING;

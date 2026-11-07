@@ -1,18 +1,18 @@
-// Module ID: 12322
-// Function ID: 12323
+// Module ID: 12320
+// Function ID: 12321
 // Name: ConjureGameSettingRow
-// Dependencies: [19, 17, 21, 5170, 575, 12323, 12326, 1113, 4024, 5781, 7151, 7063, 5404, 12327, 7062, 2]
+// Dependencies: [19, 17, 21, 5140, 575, 12321, 12324, 1113, 4026, 5751, 7126, 7038, 5374, 12325, 7037, 2]
 // Exports: default
 
-// Module 12322 (ConjureGameSettingRow)
+// Module 12320 (ConjureGameSettingRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import _modDef4024 from "module_4024" /* 4024 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5404 */;
-import ConjureGamePickerSheetDefault from "ConjureGamePickerSheet" /* 12327 */;
+import _modDef4026 from "module_4026" /* 4026 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5374 */;
+import ConjureGamePickerSheetDefault from "ConjureGamePickerSheet" /* 12325 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -37,16 +37,16 @@ export default function ConjureGameSettingRow(def) {
   def = def.def;
   ({ hint, value, pickingEmpty, disabled, onChange: importDefault, onPickingEmptyChange: dependencyMap } = def);
   let tmp = closure_6();
-  let obj = def(12323);
+  let obj = def(12321);
   let closure_3 = obj.useConjureGameNameLookup();
   let items = value;
   if (!Array.isArray(value)) {
     items = [];
   }
   const isArray = Array.isArray(value) && 0 === value.length && !pickingEmpty;
-  if (def.key === def(12326).CONJURE_OVERLAY_GAMES_SETTING_KEY) {
+  if (def.key === def(12324).CONJURE_OVERLAY_GAMES_SETTING_KEY) {
     const intl = tmp2(1113).intl;
-    hint = intl.string(_modDef4024.cqWCNY);
+    hint = intl.string(_modDef4026.cqWCNY);
   } else if (hint == null) {
     hint = def.label;
   }
@@ -59,8 +59,8 @@ export default function ConjureGameSettingRow(def) {
   });
   let joined = mapped.join(", ");
   let obj2 = { style: tmp.container, children: items1 };
-  items1 = [items(tmp2(5781).Text, { variant: "body-sm/normal", color: "text-default", children: hint }), , ];
-  const TableRowGroup = tmp2(7151).TableRowGroup;
+  items1 = [items(tmp2(5751).Text, { variant: "body-sm/normal", color: "text-default", children: hint }), , ];
+  const TableRowGroup = tmp2(7126).TableRowGroup;
   const obj3 = {
     label: def.label,
     subLabel: joined,
@@ -86,16 +86,16 @@ export default function ConjureGameSettingRow(def) {
       showActionSheet(obj);
     }
   };
-  const TableRow = tmp2(7063).TableRow;
+  const TableRow = tmp2(7038).TableRow;
   const tmp9 = closure_3;
   if ("" === joined) {
     const intl2 = tmp2(1113).intl;
-    joined = intl2.string(_modDef4024["74Afoq"]);
+    joined = intl2.string(_modDef4026["74Afoq"]);
   }
   const obj4 = { hasIcons: false, children: items2 };
   items2 = [items(TableRow, obj3), ];
   const obj5 = {
-    label: intl3.string(_modDef4024.dbuk9m),
+    label: intl3.string(_modDef4026.dbuk9m),
     checked: isArray,
     disabled,
     onPress(arg0) {
@@ -103,14 +103,14 @@ export default function ConjureGameSettingRow(def) {
       importDefault([]);
     }
   };
-  const TableCheckboxRow = tmp2(7062).TableCheckboxRow;
+  const TableCheckboxRow = tmp2(7037).TableCheckboxRow;
   intl3 = tmp2(1113).intl;
   items2[1] = items(TableCheckboxRow, obj5);
   items1[1] = closure_5(TableRowGroup, obj4);
   let tmp10Result = null;
   if (pickingEmpty) {
-    const obj6 = { variant: "body-xs/normal", color: "text-feedback-critical", accessibilityRole: "alert", children: intl4.string(_modDef4024["/++Pf+"]) };
-    const Text = tmp2(5781).Text;
+    const obj6 = { variant: "body-xs/normal", color: "text-feedback-critical", accessibilityRole: "alert", children: intl4.string(_modDef4026["/++Pf+"]) };
+    const Text = tmp2(5751).Text;
     intl4 = tmp2(1113).intl;
     tmp10Result = tmp10(Text, obj6);
   }

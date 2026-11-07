@@ -1,12 +1,12 @@
-// Module ID: 14996
-// Function ID: 14997
+// Module ID: 15028
+// Function ID: 15029
 // Name: MediaModalVideo
-// Dependencies: [19, 21, 8939, 14997, 14998, 8965, 14999, 2]
+// Dependencies: [19, 21, 8921, 15029, 15030, 8947, 15031, 2]
 
-// Module 14996 (MediaModalVideo)
-import MediaViewerVideoPerfExperiment from "MediaViewerVideoPerfExperiment" /* 8939 */;
-import useMediaLoadingDefault from "useMediaLoading" /* 14997 */;
-import MediaModalSpoilerOverlayDefault from "MediaModalSpoilerOverlay" /* 14999 */;
+// Module 15028 (MediaModalVideo)
+import MediaViewerVideoPerfExperiment from "MediaViewerVideoPerfExperiment" /* 8921 */;
+import useMediaLoadingDefault from "useMediaLoading" /* 15029 */;
+import MediaModalSpoilerOverlayDefault from "MediaModalSpoilerOverlay" /* 15031 */;
 import react from "react" /* 19 */;
 import Fragment_mod from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -14,7 +14,7 @@ import size from "module_2" /* 2 */;
 let closure_4;
 let hasOwnProperty;
 let tmp;
-const common_Video = tmp(8965);
+const common_Video = tmp(8947);
 let Fragment = Fragment_mod;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 const memoResult = react.memo(function MediaModalVideo(source) {
@@ -47,7 +47,7 @@ const memoResult = react.memo(function MediaModalVideo(source) {
   const tmp6 = react;
   if (hasError) {
     const obj2 = { style, status: "error" };
-    tmp8Result = React3(tmp4(14998), obj2);
+    tmp8Result = React3(tmp4(15030), obj2);
   } else {
     const Fragment = tmp6.Fragment;
     const obj3 = { controls, muted, onError: handleError, onLoad: handleLoad, onLoadStart: handleLoadStart, paused, source: tmp7, style, useTextureView: !isMediaViewerVideoPerfEnabled };
@@ -56,7 +56,7 @@ const memoResult = react.memo(function MediaModalVideo(source) {
     const tmp8 = hasOwnProperty;
     if (isLoadingVisible) {
       const obj4 = { style, status: "loading" };
-      tmp9Result = tmp9(tmp4(14998), obj4);
+      tmp9Result = tmp9(tmp4(15030), obj4);
     }
     const obj5 = { children: items1 };
     items1[1] = tmp9Result;

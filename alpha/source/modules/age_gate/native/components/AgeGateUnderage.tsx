@@ -1,17 +1,17 @@
-// Module ID: 18306
-// Function ID: 18307
+// Module ID: 18353
+// Function ID: 18354
 // Name: AgeGateUnderage
-// Dependencies: [19, 17, 1072, 21, 5170, 575, 7207, 1499, 7089, 7095, 1113, 7035, 7234, 8065, 7233, 5781, 2185, 5788, 2]
+// Dependencies: [19, 17, 1072, 21, 5140, 575, 7182, 1499, 7064, 7070, 1113, 7010, 7209, 8044, 7208, 5751, 2185, 5758, 2]
 // Exports: default
 
-// Module 18306 (AgeGateUnderage)
+// Module 18353 (AgeGateUnderage)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import NavigatorHeader from "NavigatorHeader" /* 7089 */;
+import NavigatorHeader from "NavigatorHeader" /* 7064 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let navigation;

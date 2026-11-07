@@ -1,10 +1,10 @@
-// Module ID: 7680
-// Function ID: 7681
+// Module ID: 7657
+// Function ID: 7658
 // Name: EntitlementActionCreators
-// Dependencies: [5, 1072, 572, 1282, 6613, 2]
+// Dependencies: [5, 1072, 572, 1282, 6588, 2]
 // Exports: fetchGiftableEntitlements, fetchUserEntitlements, fetchUserEntitlementsForApplication
 
-// Module 7680 (EntitlementActionCreators)
+// Module 7657 (EntitlementActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -71,7 +71,7 @@ obj = function _fetchGiftableEntitlements() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c3;
@@ -120,7 +120,7 @@ obj = function _fetchGiftableEntitlements() {
             c3 = 0;
           }
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp16) {
         let closure_2 = tmp16;

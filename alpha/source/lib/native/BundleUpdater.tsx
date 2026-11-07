@@ -1,15 +1,15 @@
-// Module ID: 13409
-// Function ID: 13410
+// Module ID: 13432
+// Function ID: 13433
 // Name: BundleUpdater
-// Dependencies: [5, 17, 1072, 3, 1377, 81, 2118, 6636, 1252, 6619, 2]
+// Dependencies: [5, 17, 1072, 3, 1377, 81, 2118, 6611, 1252, 6594, 2]
 
-// Module 13409 (BundleUpdater)
+// Module 13432 (BundleUpdater)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
-import MonitoringAgentDefault from "MonitoringAgent" /* 6619 */;
-import merged5 from "merged5" /* 6636 */;
+import MonitoringAgentDefault from "MonitoringAgent" /* 6594 */;
+import merged5 from "merged5" /* 6611 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_native from "react-native" /* 17 */;
 import size from "module_2" /* 2 */;
@@ -68,7 +68,7 @@ class BundleUpdater {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -123,7 +123,7 @@ class BundleUpdater {
             });
           }
           c3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp15) {
           c3 = 3;
           throw tmp15;

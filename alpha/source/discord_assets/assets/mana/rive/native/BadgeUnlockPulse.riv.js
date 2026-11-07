@@ -1,8 +1,8 @@
-// Module ID: 5292
-// Function ID: 5293
+// Module ID: 5262
+// Function ID: 5263
 // Dependencies: [2]
 
-// Module 5292
+// Module 5262
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/rive/native/BadgeUnlockPulse.riv.js");

@@ -1,18 +1,18 @@
-// Module ID: 10416
-// Function ID: 10417
+// Module ID: 10399
+// Function ID: 10400
 // Name: StickerPackInformationPopout
-// Dependencies: [19, 17, 21, 5170, 575, 6640, 1113, 5781, 7068, 2]
+// Dependencies: [19, 17, 21, 5140, 575, 6615, 1113, 5751, 7043, 2]
 // Exports: default, doesStickerPackHavePopoutInformation
 
-// Module 10416 (StickerPackInformationPopout)
+// Module 10399 (StickerPackInformationPopout)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5781 */;
-import StickersUtils from "StickersUtils" /* 6640 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import StickersUtils from "StickersUtils" /* 6615 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -58,15 +58,15 @@ export default function StickerPackInformationPopout(stickerPack) {
   items1 = [tmp.informationContainer, style];
   const obj4 = { style: tmp.headerContainer, children: items2 };
   const obj5 = { style: tmp.informationHeader, variant: "body-md/semibold", color: "mobile-text-heading-primary", children: intl2.format(require("intl").t.XDm6yN, obj6) };
-  const Text = tmp2(5781).Text;
+  const Text = tmp2(5751).Text;
   intl2 = tmp2(1113).intl;
   obj6 = { stickerPackName: stickerPack.name };
   items2 = [closure_3(Text, obj5), ];
   const obj7 = { onPress: onClose, accessibilityRole: "button", accessibilityLabel: intl3.string(require("intl").t.cpT0Cq), children: closure_3(Text2, obj8) };
-  const PressableOpacity = tmp2(7068).PressableOpacity;
+  const PressableOpacity = tmp2(7043).PressableOpacity;
   intl3 = tmp2(1113).intl;
   obj8 = { variant: "body-md/semibold", color: "text-brand", children: intl4.string(require("intl").t.cpT0Cq) };
-  Text2 = tmp2(5781).Text;
+  Text2 = tmp2(5751).Text;
   intl4 = tmp2(1113).intl;
   items2[1] = closure_3(PressableOpacity, obj7);
   items3 = [

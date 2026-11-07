@@ -1,11 +1,12 @@
-// Module ID: 6208
-// Function ID: 6209
+// Module ID: 6182
+// Function ID: 6183
 // Name: MediaPostThumbnailUtils
-// Dependencies: [6209, 2]
+// Dependencies: [6183, 6185, 2]
 // Exports: getBackgroundImageUrl, getEmbedPreviewImageUrl, getThumbnailImage
 
-// Module 6208 (MediaPostThumbnailUtils)
-import MediaFormatTesters from "MediaFormatTesters" /* 6209 */;
+// Module 6182 (MediaPostThumbnailUtils)
+import MediaFormatTesters from "MediaFormatTesters" /* 6183 */;
+import MediaFormatParamUtils from "MediaFormatParamUtils" /* 6185 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/media_channel/MediaPostThumbnailUtils.tsx");
@@ -34,16 +35,16 @@ export function getEmbedPreviewImageUrl(arg0) {
   }
 }
 export function getBackgroundImageUrl(coverImage) {
-  let combined;
+  let withMediaFormatResult;
   const obj = MediaFormatTesters;
   if (obj.isAnimatedImageUrl(coverImage)) {
-    const _HermesInternal = HermesInternal;
-    combined = "" + coverImage + "?format=webp";
+    const tmpResult = MediaFormatParamUtils;
+    withMediaFormatResult = tmpResult.withMediaFormat(coverImage, "webp");
   } else {
-    combined = coverImage;
+    withMediaFormatResult = coverImage;
     MediaFormatTesters;
   }
-  return combined;
+  return withMediaFormatResult;
 }
 export function getThumbnailImage(thumbnail) {
   let proxy_url;
@@ -54,13 +55,14 @@ export function getThumbnailImage(thumbnail) {
     if (null != url) {
       tmp = url;
       if (null != proxy_url) {
-        let combined = proxy_url;
+        let withMediaFormatResult = proxy_url;
         const obj = MediaFormatTesters;
+        const tmp2 = require;
         if (obj.isVideoUrl(url)) {
-          const _HermesInternal = HermesInternal;
-          combined = "" + proxy_url + "?format=webp";
+          const tmp2Result = tmp2(6185);
+          withMediaFormatResult = tmp2Result.withMediaFormat(proxy_url, "webp");
         }
-        tmp = combined;
+        tmp = withMediaFormatResult;
       }
     }
     return tmp;

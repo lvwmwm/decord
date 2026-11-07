@@ -1,11 +1,11 @@
-// Module ID: 19962
-// Function ID: 19963
+// Module ID: 20031
+// Function ID: 20032
 // Name: VoiceProcessingErrorManager
-// Dependencies: [7373, 5866, 2]
+// Dependencies: [7350, 5836, 2]
 
-// Module 19962 (VoiceProcessingErrorManager)
-import ToastUtils from "ToastUtils" /* 5866 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7373 */;
+// Module 20031 (VoiceProcessingErrorManager)
+import ToastUtils from "ToastUtils" /* 5836 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7350 */;
 import size from "module_2" /* 2 */;
 
 class VoiceProcessingErrorManager extends AutomaticLifecycleManager {

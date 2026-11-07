@@ -1,14 +1,14 @@
-// Module ID: 8759
-// Function ID: 8760
+// Module ID: 8738
+// Function ID: 8739
 // Name: LockIcon
-// Dependencies: [19, 21, 575, 5871, 8732, 2]
+// Dependencies: [19, 21, 575, 5841, 8711, 2]
 // Exports: LockIcon
 
-// Module 8759 (LockIcon)
+// Module 8738 (LockIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5871 */;
-import AssetRegistry from "AssetRegistry" /* 8732 */;
+import BaseIconImage2 from "BaseIconImage" /* 5841 */;
+import AssetRegistry from "AssetRegistry" /* 8711 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -1,15 +1,15 @@
-// Module ID: 19609
-// Function ID: 19610
+// Module ID: 19681
+// Function ID: 19682
 // Name: VoicePanelDockPIPWatchPromptStore
-// Dependencies: [6794, 502, 5073, 6797, 504, 572, 2]
+// Dependencies: [6769, 502, 5043, 6772, 504, 572, 2]
 
-// Module 19609 (VoicePanelDockPIPWatchPromptStore)
+// Module 19681 (VoicePanelDockPIPWatchPromptStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 6797 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6794 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 6772 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6769 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5073 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 function markWatched(ownerId) {
@@ -27,6 +27,7 @@ function markWatched(ownerId) {
 let voiceChannelId = null;
 let set = new Set();
 let c7 = false;
+let c8 = false;
 const Store = get_initializedDefault.Store;
 class VoicePanelDockPIPWatchPromptStore extends Store {
   initialize() {
@@ -49,6 +50,9 @@ class VoicePanelDockPIPWatchPromptStore extends Store {
   isDismissed() {
     return c7;
   }
+  isVideoPIPDismissed() {
+    return c8;
+  }
 }
 const prototype = VoicePanelDockPIPWatchPromptStore.prototype;
 VoicePanelDockPIPWatchPromptStore.displayName = "VoicePanelDockPIPWatchPromptStore";
@@ -60,12 +64,13 @@ let obj = {
     }
     let tmp2 = channelId !== voiceChannelId;
     if (tmp2) {
-      const tmp3 = voiceChannelId !== channelId || set.size > 0 || c7;
+      const tmp3 = voiceChannelId !== channelId || set.size > 0 || c7 || c8;
       voiceChannelId = channelId;
       const _Set = Set;
       const self = this;
       const self2 = this;
       c7 = false;
+      c8 = false;
       tmp2 = tmp3;
       set = new Set();
     }
@@ -94,10 +99,19 @@ let obj = {
     }
     return flag;
   },
+  VOICE_PANEL_DOCK_VIDEO_PIP_DISMISS: function handleVideoPIPDismiss() {
+    let flag = !c8;
+    if (flag) {
+      c8 = true;
+      flag = true;
+    }
+    return flag;
+  },
   LOGOUT: function handleLogout() {
-    const tmp = voiceChannelId !== null || set.size > 0 || c7;
+    const tmp = voiceChannelId !== null || set.size > 0 || c7 || c8;
     voiceChannelId = null;
     c7 = false;
+    c8 = false;
     set = new Set();
     return tmp;
   }

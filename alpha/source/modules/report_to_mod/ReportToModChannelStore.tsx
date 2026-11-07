@@ -1,12 +1,12 @@
-// Module ID: 14577
-// Function ID: 14578
+// Module ID: 14610
+// Function ID: 14611
 // Name: ReportToModChannelStore
-// Dependencies: [560, 5358, 1259, 7949, 2]
+// Dependencies: [560, 5328, 1259, 7926, 2]
 // Exports: useShouldShowResolvedFlagsForChannel
 
-// Module 14577 (ReportToModChannelStore)
+// Module 14610 (ReportToModChannelStore)
 import module_560 from "module_560" /* 560 */;
-import combine_mod from "combine" /* 5358 */;
+import combine_mod from "combine" /* 5328 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

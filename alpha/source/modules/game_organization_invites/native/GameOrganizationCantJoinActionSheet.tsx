@@ -1,24 +1,24 @@
-// Module ID: 13418
-// Function ID: 13419
+// Module ID: 13441
+// Function ID: 13442
 // Name: GameOrganizationCantJoinActionSheet
-// Dependencies: [19, 5041, 11522, 21, 5404, 13419, 504, 7617, 13420, 2530, 10973, 7405, 1113, 5788, 2]
+// Dependencies: [19, 5011, 11504, 21, 5374, 13442, 504, 7594, 13443, 2530, 10956, 7382, 1113, 5758, 2]
 // Exports: default
 
-// Module 13418 (GameOrganizationCantJoinActionSheet)
+// Module 13441 (GameOrganizationCantJoinActionSheet)
 import Fragment from "Fragment" /* 21 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5404 */;
-import transitionToGuild from "transitionToGuild" /* 7617 */;
-import useResolvedGameOrganizationInviteDefault from "useResolvedGameOrganizationInvite" /* 13419 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
+import transitionToGuild from "transitionToGuild" /* 7594 */;
+import useResolvedGameOrganizationInviteDefault from "useResolvedGameOrganizationInvite" /* 13442 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 5041 */;
-import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11522 */;
+import GuildStore from "GuildStore" /* 5011 */;
+import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11504 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
 let metroRequire;
 let tmp;
 const _modDef2530 = tmp(2530);
-const getGameOrganizationDisplayNounDefault = tmp(13420);
+const getGameOrganizationDisplayNounDefault = tmp(13443);
 function hideSheet() {
   const obj = ActionSheetActionCreatorsDefault;
   obj.hideActionSheet(hasOwnProperty);
@@ -58,12 +58,12 @@ export default function GameOrganizationCantJoinActionSheet(arg0) {
     } else {
       lXyJMS = _modDef2530["IIR/NZ"];
     }
-    const PromoSheet = tmp5(10973).PromoSheet;
+    const PromoSheet = tmp5(10956).PromoSheet;
     const intl = tmp5(1113).intl;
     const obj4 = { noun: tmp11 };
     const intl2 = tmp5(1113).intl;
     const obj5 = { noun: tmp11, guildName: tmp3.linkedGuild.name };
-    const Button = tmp5(5788).Button;
+    const Button = tmp5(5758).Button;
     if (stateFromStores) {
       const obj6 = { text: intl4.string(_modDef2530.H1wMHV), size: "lg", onPress: tmp7 };
       intl4 = tmp5(1113).intl;

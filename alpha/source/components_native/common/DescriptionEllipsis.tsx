@@ -1,15 +1,15 @@
-// Module ID: 14176
-// Function ID: 14177
+// Module ID: 14201
+// Function ID: 14202
 // Name: DescriptionEllipsis
-// Dependencies: [19, 17, 21, 5170, 575, 2]
+// Dependencies: [19, 17, 21, 5140, 575, 2]
 // Exports: default
 
-// Module 14176 (DescriptionEllipsis)
+// Module 14201 (DescriptionEllipsis)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 let c2;

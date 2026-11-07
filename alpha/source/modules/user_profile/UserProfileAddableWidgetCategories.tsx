@@ -1,11 +1,11 @@
-// Module ID: 15158
-// Function ID: 15159
+// Module ID: 15193
+// Function ID: 15194
 // Name: UserProfileAddableWidgetCategories
-// Dependencies: [7876, 2]
+// Dependencies: [7853, 2]
 // Exports: partitionAddableWidgets
 
-// Module 15158 (UserProfileAddableWidgetCategories)
-import UserProfileApplicationWidgetTypes from "UserProfileApplicationWidgetTypes" /* 7876 */;
+// Module 15193 (UserProfileAddableWidgetCategories)
+import UserProfileApplicationWidgetTypes from "UserProfileApplicationWidgetTypes" /* 7853 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/user_profile/UserProfileAddableWidgetCategories.tsx");

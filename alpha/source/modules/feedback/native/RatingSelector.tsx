@@ -1,19 +1,19 @@
-// Module ID: 10300
-// Function ID: 10301
+// Module ID: 10283
+// Function ID: 10284
 // Name: RatingSelector
-// Dependencies: [19, 17, 10296, 21, 5170, 10301, 10302, 1113, 10306, 10307, 10311, 10312, 8269, 5872, 7068, 2]
+// Dependencies: [19, 17, 10279, 21, 5140, 10284, 10285, 1113, 10289, 10290, 10294, 10295, 8248, 5842, 7043, 2]
 // Exports: default
 
-// Module 10300 (RatingSelector)
+// Module 10283 (RatingSelector)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import FastImageDefault from "FastImage" /* 5872 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10301 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 10306 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 10311 */;
+import FastImageDefault from "FastImage" /* 5842 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10284 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 10289 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 10294 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 10296 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import Constants from "Constants" /* 10279 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let rating;
@@ -60,7 +60,7 @@ export default function RatingSelector(ratingOptions) {
   };
   obj3 = { selected: AssetRegistryDefault, normal: obj4.useFeedbackModalSadDesaturatedSource() };
   const BAD = constants.BAD;
-  obj4 = textLabels(10302);
+  obj4 = textLabels(10285);
   obj[BAD] = obj2;
   let obj5 = {
     source: obj6,
@@ -72,7 +72,7 @@ export default function RatingSelector(ratingOptions) {
   };
   obj6 = { selected: AssetRegistryDefault2, normal: obj7.useFeedbackModalNeutralDesaturatedSource() };
   const NEUTRAL = constants.NEUTRAL;
-  obj7 = textLabels(10307);
+  obj7 = textLabels(10290);
   obj[NEUTRAL] = obj5;
   const obj8 = {
     source: obj9,
@@ -85,7 +85,7 @@ export default function RatingSelector(ratingOptions) {
   const GOOD = constants.GOOD;
   obj9 = { selected: AssetRegistryDefault3, normal: obj10.useFeedbackModalHappyDesaturatedSource() };
   obj[GOOD] = obj8;
-  obj10 = textLabels(10312);
+  obj10 = textLabels(10295);
   const mapped = ratingOptions.map((item) => obj[item]);
   return <closure_3 style={tmp2.ratings}>{mapped.map((rating) => {
     let RowButton;

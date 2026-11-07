@@ -1,25 +1,25 @@
-// Module ID: 16265
-// Function ID: 16266
+// Module ID: 16313
+// Function ID: 16314
 // Name: InputView
-// Dependencies: [109, 19, 17, 1072, 21, 5170, 575, 6858, 5229, 1187, 5781, 1113, 7183, 5177, 12695, 1377, 2]
+// Dependencies: [109, 19, 17, 1072, 21, 5140, 575, 6833, 5199, 1187, 5751, 1113, 7158, 5147, 12708, 1377, 2]
 
-// Module 16265 (InputView)
+// Module 16313 (InputView)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
-import shared from "shared" /* 5177 */;
-import native2 from "native" /* 5229 */;
-import Text_Text from "Text/Text" /* 5781 */;
-import LegacyTokens from "LegacyTokens" /* 6858 */;
-import CircleXIcon from "CircleXIcon" /* 7183 */;
-import components_BottomSheetTextInputDefault from "components/BottomSheetTextInput" /* 12695 */;
+import shared from "shared" /* 5147 */;
+import native2 from "native" /* 5199 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import LegacyTokens from "LegacyTokens" /* 6833 */;
+import CircleXIcon from "CircleXIcon" /* 7158 */;
+import components_BottomSheetTextInputDefault from "components/BottomSheetTextInput" /* 12708 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let Platform;

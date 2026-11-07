@@ -1,12 +1,12 @@
-// Module ID: 5377
-// Function ID: 5378
+// Module ID: 5347
+// Function ID: 5348
 // Name: GameServerConstants
-// Dependencies: [1402, 5378, 2]
+// Dependencies: [1402, 5348, 2]
 // Exports: GAME_SERVER_SURVEY_URL
 
-// Module 5377 (GameServerConstants)
+// Module 5347 (GameServerConstants)
 import UserStoreConstants from "UserStoreConstants" /* 1402 */;
-import GameServerProviderType from "GameServerProviderType" /* 5378 */;
+import GameServerProviderType from "GameServerProviderType" /* 5348 */;
 import size from "module_2" /* 2 */;
 
 let obj3;

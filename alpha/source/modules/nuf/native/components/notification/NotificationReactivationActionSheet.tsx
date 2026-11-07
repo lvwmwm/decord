@@ -1,22 +1,22 @@
-// Module ID: 19904
-// Function ID: 19905
+// Module ID: 19973
+// Function ID: 19974
 // Name: NotificationReactivationActionSheet
-// Dependencies: [19, 17, 14182, 1072, 21, 5170, 575, 1252, 14183, 5404, 5418, 5872, 19905, 5781, 1113, 6847, 5788, 2]
+// Dependencies: [19, 17, 14207, 1072, 21, 5140, 575, 1252, 14208, 5374, 5388, 5842, 19974, 5751, 1113, 6822, 5758, 2]
 // Exports: default
 
-// Module 19904 (NotificationReactivationActionSheet)
+// Module 19973 (NotificationReactivationActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5404 */;
-import FastImageDefault from "FastImage" /* 5872 */;
-import NotificationPermissionConstants from "NotificationPermissionConstants" /* 14182 */;
-import NotificationPermissionUtil from "NotificationPermissionUtil" /* 14183 */;
-import AssetRegistryDefault from "AssetRegistry" /* 19905 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
+import FastImageDefault from "FastImage" /* 5842 */;
+import NotificationPermissionConstants from "NotificationPermissionConstants" /* 14207 */;
+import NotificationPermissionUtil from "NotificationPermissionUtil" /* 14208 */;
+import AssetRegistryDefault from "AssetRegistry" /* 19974 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let metroImportAll;
@@ -61,33 +61,33 @@ export default function NotificationReactivationActionSheet(location) {
   const callback1 = react.useCallback(() => {
     const SKIP_STEP = EventActionType.SKIP_STEP;
     const obj = AnalyticsUtilsDefault;
-    const obj2 = { action_type: SKIP_STEP, action_location: _location, permission_granted: "Array" };
+    const obj2 = { action_type: SKIP_STEP, action_location: _location, permission_granted: "r" };
     obj.track(AnalyticEvents.NOTIFICATION_PERMISSION_PREPROMPT_ACKED, obj2);
     const obj3 = ActionSheetActionCreatorsDefault;
     obj3.hideActionSheet();
   }, items1);
   let obj = { children: closure_8(View, obj2) };
   obj2 = { style: tmp.container, children: items2 };
-  const BottomSheet = _location(5418).BottomSheet;
+  const BottomSheet = _location(5388).BottomSheet;
   let obj3 = { style: tmp.image, source: AssetRegistryDefault, resizeMode: "contain" };
   const tmp4 = FastImageDefault;
   items2 = [closure_7(tmp4, obj3), , , ];
   const obj4 = { style: tmp.title, variant: "heading-xl/semibold", accessibilityRole: "header", children: intl.string(_location(1113).t.a4bgO0) };
-  const Text = _location(5781).Text;
+  const Text = _location(5751).Text;
   intl = _location(1113).intl;
   items2[1] = closure_7(Text, obj4);
   const obj5 = { style: tmp.subtitle, variant: "body-sm/medium", color: "text-default", children: intl2.string(_location(1113).t["rW5gw/"]) };
-  const Text2 = _location(5781).Text;
+  const Text2 = _location(5751).Text;
   intl2 = _location(1113).intl;
   items2[2] = closure_7(Text2, obj5);
   const obj6 = { style: tmp.buttons, children: items3 };
-  const ButtonGroup = _location(6847).ButtonGroup;
+  const ButtonGroup = _location(6822).ButtonGroup;
   const obj7 = { text: intl3.string(_location(1113).t.a4bgO0), onPress: callback };
-  const Button = _location(5788).Button;
+  const Button = _location(5758).Button;
   intl3 = _location(1113).intl;
   items3 = [closure_7(Button, obj7), ];
   const obj8 = { text: intl4.string(_location(1113).t["/L3kom"]), onPress: callback1, variant: "secondary" };
-  const Button2 = _location(5788).Button;
+  const Button2 = _location(5758).Button;
   intl4 = _location(1113).intl;
   items3[1] = closure_7(Button2, obj8);
   items2[3] = closure_8(ButtonGroup, obj6);

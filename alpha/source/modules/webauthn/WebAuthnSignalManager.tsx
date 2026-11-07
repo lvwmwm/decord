@@ -1,12 +1,12 @@
-// Module ID: 20366
-// Function ID: 20367
+// Module ID: 20434
+// Function ID: 20435
 // Name: WebAuthnSignalManager
-// Dependencies: [5, 502, 7373, 6829, 2]
+// Dependencies: [5, 502, 7350, 6804, 2]
 
-// Module 20366 (WebAuthnSignalManager)
+// Module 20434 (WebAuthnSignalManager)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7373 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7350 */;
 import size from "module_2" /* 2 */;
 
 let c1;
@@ -31,7 +31,7 @@ class WebAuthnSignalManager extends AutomaticLifecycleManager {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -60,7 +60,7 @@ class WebAuthnSignalManager extends AutomaticLifecycleManager {
             return obj;
           } else {
             credential = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp7) {
           credential = 3;
@@ -84,7 +84,7 @@ class WebAuthnSignalManager extends AutomaticLifecycleManager {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -114,7 +114,7 @@ class WebAuthnSignalManager extends AutomaticLifecycleManager {
             return obj;
           } else {
             credentials = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp9) {
           credentials = 3;
@@ -137,7 +137,7 @@ class WebAuthnSignalManager extends AutomaticLifecycleManager {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -166,7 +166,7 @@ class WebAuthnSignalManager extends AutomaticLifecycleManager {
             return obj;
           } else {
             user = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp7) {
           user = 3;

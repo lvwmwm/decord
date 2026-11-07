@@ -1,10 +1,10 @@
-// Module ID: 5355
-// Function ID: 5356
+// Module ID: 5325
+// Function ID: 5326
 // Name: useKeyboardType
 // Dependencies: [19, 1496, 1497, 1652, 1625, 2]
 // Exports: default, getKeyboardContextForType, getKeyboardType, getKeyboardTypePrevious, useKeyboardContextForType, useKeyboardTypePrevious, useKeyboardTypeSharedValue, useKeyboardWillOpenSharedValue
 
-// Module 5355 (useKeyboardType)
+// Module 5325 (useKeyboardType)
 import AppEntryKeyContext from "AppEntryKeyContext" /* 1496 */;
 import KeyboardUIStore from "KeyboardUIStore" /* 1497 */;
 import react from "react" /* 19 */;

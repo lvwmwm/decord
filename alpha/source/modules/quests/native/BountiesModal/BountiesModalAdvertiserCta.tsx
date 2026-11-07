@@ -1,26 +1,26 @@
-// Module ID: 17222
-// Function ID: 17223
+// Module ID: 17270
+// Function ID: 17271
 // Name: BountiesModalAdvertiserCta
-// Dependencies: [109, 19, 17, 5171, 6861, 21, 1652, 5170, 575, 5400, 5403, 17223, 9801, 5795, 9823, 9825, 6868, 7970, 6866, 8270, 5872, 5781, 5788, 17186, 504, 17187, 10098, 2]
+// Dependencies: [109, 19, 17, 5141, 6836, 21, 1652, 5140, 575, 5370, 5373, 17271, 9785, 5765, 9807, 9809, 6843, 7948, 6841, 8249, 5842, 5751, 5758, 17234, 504, 17235, 10082, 2]
 // Exports: default
 
-// Module 17222 (BountiesModalAdvertiserCta)
+// Module 17270 (BountiesModalAdvertiserCta)
 import nativeDefault from "native" /* 575 */;
-import timing_timing from "timing/timing" /* 5400 */;
-import timingPresets from "timingPresets" /* 5403 */;
-import QuestConstants from "QuestConstants" /* 6861 */;
-import QuestContent from "QuestContent" /* 6866 */;
-import AdCreativeType from "AdCreativeType" /* 6868 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7970 */;
-import QuestPlatformUtils from "QuestPlatformUtils" /* 9825 */;
-import AnimatedEnterExitItemDefault from "AnimatedEnterExitItem" /* 10098 */;
+import timing_timing from "timing/timing" /* 5370 */;
+import timingPresets from "timingPresets" /* 5373 */;
+import QuestConstants from "QuestConstants" /* 6836 */;
+import QuestContent from "QuestContent" /* 6841 */;
+import AdCreativeType from "AdCreativeType" /* 6843 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7948 */;
+import QuestPlatformUtils from "QuestPlatformUtils" /* 9809 */;
+import AnimatedEnterExitItemDefault from "AnimatedEnterExitItem" /* 10082 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5171 */;
+import AccessibilityStore from "AccessibilityStore" /* 5141 */;
 import Fragment from "Fragment" /* 21 */;
 import module_1652 from "module_1652" /* 1652 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 let Pressable;
@@ -169,7 +169,7 @@ export default function BountiesModalAdvertiserCta(visible) {
   visible = visible.visible;
   let merged = Object.assign(visible, Object.assign({ visible: 0 }));
   let animatedStyle;
-  let obj = animatedStyle(17186);
+  let obj = animatedStyle(17234);
   const isBountiesModalTransitionsRefactorEnabled = obj.useIsBountiesModalTransitionsRefactorEnabled(QuestsExperimentLocations.VIDEO_MODAL_MOBILE);
   const obj2 = animatedStyle(504);
   let items = [AccessibilityStore];
@@ -181,12 +181,12 @@ export default function BountiesModalAdvertiserCta(visible) {
   const items1 = [closure_17, , , , , , ];
   const useAnimatedStyle = animatedStyle(1652).useAnimatedStyle;
   animatedStyle(1652);
-  items1[1] = animatedStyle(5400).withTiming;
+  items1[1] = animatedStyle(5370).withTiming;
   items1[2] = animatedStyle(1652).interpolate;
   items1[3] = num;
   items1[4] = visible;
-  items1[5] = animatedStyle(5403).timingStandard;
-  items1[6] = animatedStyle(5403).timingFast;
+  items1[5] = animatedStyle(5373).timingStandard;
+  items1[6] = animatedStyle(5373).timingFast;
   let c0;
   let c1;
   let c2;
@@ -214,8 +214,8 @@ export default function BountiesModalAdvertiserCta(visible) {
     const merged = Object.assign(arg0);
     return authStore(BountiesModalAdvertiserCtaContent, obj);
   }, items3);
-  const tmp2Result2 = animatedStyle(17187);
-  const obj3 = { visible, entranceTiming: animatedStyle(5403).timingStandard, exitTiming: animatedStyle(5403).timingFast };
+  const tmp2Result2 = animatedStyle(17235);
+  const obj3 = { visible, entranceTiming: animatedStyle(5373).timingStandard, exitTiming: animatedStyle(5373).timingFast };
   const visibilityTransition = tmp2Result2.useVisibilityTransition(obj3);
   let shouldRender = visibilityTransition.shouldRender;
   if (isBountiesModalTransitionsRefactorEnabled) {

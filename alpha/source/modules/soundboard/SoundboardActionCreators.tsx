@@ -1,18 +1,18 @@
-// Module ID: 7612
-// Function ID: 7613
+// Module ID: 7589
+// Function ID: 7590
 // Name: SoundboardActionCreators
-// Dependencies: [5, 6216, 6218, 1072, 1082, 1282, 7613, 572, 7614, 6605, 7615, 1252, 5000, 12, 6116, 1113, 7616, 2]
+// Dependencies: [5, 6191, 6193, 1072, 1082, 1282, 7590, 572, 7591, 6580, 7592, 1252, 4970, 12, 6090, 1113, 7593, 2]
 // Exports: addFavoriteSound, deleteSound, fetchSoundGuildData, maybeFetchSoundboardSounds, playSoundLocally, removeFavoriteSound, reportSoundFinishedPlaying, reportSoundStartedPlaying, updateSound, updateUserSoundboardVolume, uploadSound
 
-// Module 7612 (SoundboardActionCreators)
+// Module 7589 (SoundboardActionCreators)
 import _modDef12 from "module_12" /* 12 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import intl3 from "intl" /* 1113 */;
-import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 5000 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 6116 */;
-import SoundboardConstants from "SoundboardConstants" /* 6218 */;
+import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 4970 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 6090 */;
+import SoundboardConstants from "SoundboardConstants" /* 6193 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SoundboardStore from "SoundboardStore" /* 6216 */;
+import SoundboardStore from "SoundboardStore" /* 6191 */;
 import Constants from "Constants" /* 1072 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1082 */;
 import size from "module_2" /* 2 */;
@@ -37,7 +37,7 @@ let obj = function _fetchDefaultSoundsFromApi2() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c3;
@@ -98,7 +98,7 @@ let obj = function _fetchDefaultSoundsFromApi2() {
             c3 = 0;
           }
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp27) {
         closure_2 = tmp27;
@@ -141,7 +141,7 @@ function _maybeFetchDefaultSounds() {
 }
 function _maybeFetchGuildSoundboardSounds() {
   let SOUNDBOARD_SOUNDS_RECEIVED;
-  obj = SOUNDBOARD_SOUNDS_RECEIVED(7615);
+  obj = SOUNDBOARD_SOUNDS_RECEIVED(7592);
   const guildIdsToFetchSoundsFor = obj.getGuildIdsToFetchSoundsFor();
   if (0 === guildIdsToFetchSoundsFor.length) {
     return Promise.resolve();
@@ -228,7 +228,7 @@ obj = function _uploadSound() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -322,7 +322,7 @@ obj = function _updateSound() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -407,7 +407,7 @@ obj = function _deleteSound() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -439,7 +439,7 @@ obj = function _deleteSound() {
           return obj;
         } else {
           c2 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp4) {
         c2 = 3;
@@ -464,7 +464,7 @@ obj = function _fetchSoundGuildData() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c5;
@@ -561,7 +561,7 @@ export function addFavoriteSound(soundId) {
     obj = _modDef12;
     if (obj.size(soundIds.soundIds) >= metroImportAll) {
       const obj2 = { title: intl.string(intl3.t["+XYXtZ"]), body: intl2.formatToPlainString(intl3.t.JaIyFi, obj3) };
-      const show = tmp(6116).show;
+      const show = tmp(6090).show;
       AlertActionCreatorsDefault;
       intl = intl3.intl;
       intl2 = intl3.intl;

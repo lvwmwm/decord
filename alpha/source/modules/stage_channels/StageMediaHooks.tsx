@@ -1,24 +1,24 @@
-// Module ID: 6792
-// Function ID: 6793
+// Module ID: 6767
+// Function ID: 6768
 // Name: StageMediaHooks
-// Dependencies: [5041, 5833, 6793, 504, 6839, 2]
+// Dependencies: [5011, 5803, 6768, 504, 6814, 2]
 // Exports: getStageHasMedia, getStageHasStream, isStageVideoEnabled, useIsStageVideoEnabled, useStageHasMedia, useStageHasStream
 
-// Module 6792 (StageMediaHooks)
-import StageChannelParticipants from "StageChannelParticipants" /* 6839 */;
-import GuildStore from "GuildStore" /* 5041 */;
-import VoiceStateStore from "VoiceStateStore" /* 5833 */;
-import StageChannelParticipantStore from "StageChannelParticipantStore" /* 6793 */;
+// Module 6767 (StageMediaHooks)
+import StageChannelParticipants from "StageChannelParticipants" /* 6814 */;
+import GuildStore from "GuildStore" /* 5011 */;
+import VoiceStateStore from "VoiceStateStore" /* 5803 */;
+import StageChannelParticipantStore from "StageChannelParticipantStore" /* 6768 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const f90249 = () => {
+const f90584 = () => {
   mutableParticipants = mutableParticipants.getMutableParticipants(closure_0, closure_0(dependencyMap[4]).StageChannelParticipantNamedIndex.SPEAKER);
   return null != mutableParticipants.find((type) => type.type === closure_1_0(closure_1_1[4]).StageChannelParticipantTypes.STREAM);
 };
-const f90250 = (type) => type.type === require("StageChannelParticipants").StageChannelParticipantTypes.STREAM;
+const f90585 = (type) => type.type === require("StageChannelParticipants").StageChannelParticipantTypes.STREAM;
 const result = size.fileFinishedImporting("modules/stage_channels/StageMediaHooks.tsx");
 
 export function useStageHasMedia(id) {
@@ -26,7 +26,7 @@ export function useStageHasMedia(id) {
   const items = [StageChannelParticipantStore];
   const items1 = [id];
   const obj = require("get initialized");
-  const stateFromStores = obj.useStateFromStores(items, f90249, items1);
+  const stateFromStores = obj.useStateFromStores(items, f90584, items1);
   const items2 = [VoiceStateStore];
   const items3 = [id];
   const obj2 = require("get initialized");
@@ -38,16 +38,16 @@ export function useStageHasStream(id) {
   const items = [StageChannelParticipantStore];
   const items1 = [id];
   const obj = require("get initialized");
-  return obj.useStateFromStores(items, f90249, items1);
+  return obj.useStateFromStores(items, f90584, items1);
 }
 export function getStageHasMedia(id) {
   const mutableParticipants = StageChannelParticipantStore.getMutableParticipants(id, StageChannelParticipants.StageChannelParticipantNamedIndex.SPEAKER);
-  const hasVideoResult = null != mutableParticipants.find(f90250) || VoiceStateStore.hasVideo(id);
+  const hasVideoResult = null != mutableParticipants.find(f90585) || VoiceStateStore.hasVideo(id);
   return hasVideoResult;
 }
 export function getStageHasStream(id) {
   const mutableParticipants = StageChannelParticipantStore.getMutableParticipants(id, StageChannelParticipants.StageChannelParticipantNamedIndex.SPEAKER);
-  return null != mutableParticipants.find(f90250);
+  return null != mutableParticipants.find(f90585);
 }
 export function useIsStageVideoEnabled(guild_id) {
   _require = guild_id;

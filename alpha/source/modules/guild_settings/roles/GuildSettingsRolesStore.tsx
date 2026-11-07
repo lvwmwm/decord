@@ -1,26 +1,26 @@
-// Module ID: 20101
-// Function ID: 20102
+// Module ID: 20170
+// Function ID: 20171
 // Name: GuildSettingsRolesStore
-// Dependencies: [5034, 20102, 5077, 5076, 9173, 20096, 1072, 20103, 14188, 6198, 1380, 1084, 5107, 1090, 5079, 12, 504, 572, 2]
+// Dependencies: [5004, 20171, 5047, 5046, 9155, 20165, 1072, 20172, 14213, 6172, 1380, 1084, 5077, 1090, 5049, 12, 504, 572, 2]
 
-// Module 20101 (GuildSettingsRolesStore)
+// Module 20170 (GuildSettingsRolesStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1084 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1090 */;
 import GlobalUtils from "GlobalUtils" /* 1380 */;
-import PlainRecord from "PlainRecord" /* 5034 */;
-import GuildRoleRecord from "GuildRoleRecord" /* 5077 */;
-import EnhancedRoleColorUtils from "EnhancedRoleColorUtils" /* 5079 */;
-import PermissionUtilsAll from "PermissionUtils" /* 5107 */;
-import useHasEnhancedRoleColors from "useHasEnhancedRoleColors" /* 6198 */;
-import DragAndDropUtilsDefault from "DragAndDropUtils" /* 14188 */;
-import GuildSettingsConstants from "GuildSettingsConstants" /* 20096 */;
-import GuildRoleConnectionsConfigurationStore from "GuildRoleConnectionsConfigurationStore" /* 20102 */;
-import GuildRoleStore from "GuildRoleStore" /* 5076 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 9173 */;
+import PlainRecord from "PlainRecord" /* 5004 */;
+import GuildRoleRecord from "GuildRoleRecord" /* 5047 */;
+import EnhancedRoleColorUtils from "EnhancedRoleColorUtils" /* 5049 */;
+import PermissionUtilsAll from "PermissionUtils" /* 5077 */;
+import useHasEnhancedRoleColors from "useHasEnhancedRoleColors" /* 6172 */;
+import DragAndDropUtilsDefault from "DragAndDropUtils" /* 14213 */;
+import GuildSettingsConstants from "GuildSettingsConstants" /* 20165 */;
+import GuildRoleConnectionsConfigurationStore from "GuildRoleConnectionsConfigurationStore" /* 20171 */;
+import GuildRoleStore from "GuildRoleStore" /* 5046 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 9155 */;
 import Constants from "Constants" /* 1072 */;
-import EnhancedRoleColorConstants from "EnhancedRoleColorConstants" /* 20103 */;
+import EnhancedRoleColorConstants from "EnhancedRoleColorConstants" /* 20172 */;
 import module_12 from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 
@@ -868,13 +868,13 @@ let obj2 = {
     let id;
     let role;
     let roles;
-    const f119916 = (item) => map1.get(item);
-    const f119917 = (item, index) => {
+    const f120457 = (item) => map1.get(item);
+    const f120458 = (item, index) => {
       if (!set1.has(index)) {
         found1.push(item);
       }
     };
-    const f119918 = (item, index) => {
+    const f120459 = (item, index) => {
       const obj = { position: length - 1 - index };
       const merged = Object.assign(item);
       return obj;
@@ -885,22 +885,22 @@ let obj2 = {
       return items;
     }));
     let result = map.set(role.id, role);
-    const mapped = roles.map(f119916);
+    const mapped = roles.map(f120457);
     const found = mapped.filter(id(1380).isNotNullish);
     set = new Set(roles);
-    const item = map.forEach(f119917);
-    items = found.map(f119918);
+    const item = map.forEach(f120458);
+    items = found.map(f120459);
     map1 = new Map(items2.map((id) => {
       items = [id.id, id];
       return items;
     }));
     const result1 = map1.set(role.id, role);
-    const mapped1 = roles.map(f119916);
+    const mapped1 = roles.map(f120457);
     const found1 = mapped1.filter(id(1380).isNotNullish);
     const set1 = new Set(roles);
-    const item1 = map1.forEach(f119917);
+    const item1 = map1.forEach(f120458);
     const length = found1.length;
-    items2 = found1.map(f119918);
+    items2 = found1.map(f120459);
     id = undefined;
     if (user != null) {
       id = user.id;

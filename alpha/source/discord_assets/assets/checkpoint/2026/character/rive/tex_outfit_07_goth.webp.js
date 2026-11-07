@@ -1,8 +1,8 @@
-// Module ID: 13769
-// Function ID: 13770
+// Module ID: 13793
+// Function ID: 13794
 // Dependencies: [2]
 
-// Module 13769
+// Module 13793
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/rive/tex_outfit_07_goth.webp.js");

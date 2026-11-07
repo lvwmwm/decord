@@ -1,19 +1,19 @@
-// Module ID: 18539
-// Function ID: 18540
+// Module ID: 18586
+// Function ID: 18587
 // Name: GuildHomeChannelRow
-// Dependencies: [19, 1072, 5026, 11199, 21, 5170, 575, 1099, 14145, 1113, 15913, 2]
+// Dependencies: [19, 1072, 4996, 5882, 21, 5140, 575, 1099, 14170, 1113, 15963, 2]
 // Exports: default
 
-// Module 18539 (GuildHomeChannelRow)
+// Module 18586 (GuildHomeChannelRow)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import router_utils from "router_utils" /* 1099 */;
-import ChannelConstants from "ChannelConstants" /* 5026 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11199 */;
-import BaseChannelItemDefault from "BaseChannelItem" /* 14145 */;
+import ChannelConstants from "ChannelConstants" /* 4996 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 5882 */;
+import BaseChannelItemDefault from "BaseChannelItem" /* 14170 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -38,7 +38,7 @@ export default function GuildHomeChannelRow(selected) {
     const obj = router_utils;
     obj.transitionTo(Routes.CHANNEL(id, StaticChannelRoute.GUILD_HOME));
   }, items);
-  const ChannelModes = id(14145).ChannelModes;
+  const ChannelModes = id(14170).ChannelModes;
   if (selected) {
     DEFAULT = ChannelModes.SELECTED;
     tmp5 = tmp3;
@@ -49,9 +49,9 @@ export default function GuildHomeChannelRow(selected) {
   BaseChannelItemDefault;
   const intl = tmp5(1113).intl;
   ({ name: intl2.string(tmp5(1113).t.VbpLyU), mode: DEFAULT });
-  const BaseChannelName = tmp5(14145).BaseChannelName;
+  const BaseChannelName = tmp5(14170).BaseChannelName;
   intl2 = tmp5(1113).intl;
-  ({ mode: DEFAULT, IconComponent: tmp5(15913).SignPostIcon });
-  const BaseChannelIcon = tmp5(14145).BaseChannelIcon;
+  ({ mode: DEFAULT, IconComponent: tmp5(15963).SignPostIcon });
+  const BaseChannelIcon = tmp5(14170).BaseChannelIcon;
   return <tmp7 onPress={callback} style={tmp.container} accessible accessibilityLabel={intl.string(tmp5(1113).t.VbpLyU)} accessibilityState={{ selected }} mode={DEFAULT} name={null} icon={null} />;
 };

@@ -1,10 +1,10 @@
-// Module ID: 19157
-// Function ID: 19158
+// Module ID: 19208
+// Function ID: 19209
 // Name: YouScreen
-// Dependencies: [32, 19, 17, 7871, 2186, 16848, 6966, 1385, 18733, 1072, 1074, 5016, 7460, 21, 1652, 8910, 5170, 1357, 575, 671, 5345, 563, 1113, 7068, 16832, 9087, 8895, 6186, 1260, 8849, 1627, 8892, 5399, 8908, 5347, 1493, 4995, 1500, 19158, 1411, 8912, 7208, 9730, 8853, 8865, 8866, 8878, 7435, 8889, 5127, 5003, 7664, 5872, 19159, 13938, 5768, 19162, 19163, 5229, 19164, 8885, 8872, 8902, 1090, 10684, 9599, 19166, 13542, 8850, 9572, 7658, 7818, 11556, 7753, 2]
+// Dependencies: [32, 19, 17, 7848, 2186, 16896, 6941, 1385, 18783, 1072, 1074, 4986, 7437, 21, 1652, 8892, 5140, 1357, 575, 671, 5315, 563, 1113, 7043, 16880, 9069, 8876, 6160, 1260, 8828, 1627, 8873, 5369, 8890, 5317, 1493, 4965, 1500, 19209, 1411, 8894, 7183, 9712, 8832, 8844, 8845, 8857, 7412, 8870, 5097, 4973, 7641, 5842, 19210, 13963, 5738, 19218, 19219, 5199, 19220, 8866, 8851, 8884, 1090, 10667, 9581, 19222, 13567, 8829, 9554, 7635, 7795, 11538, 7730, 2]
 // Exports: default
 
-// Module 19157 (YouScreen)
+// Module 19208 (YouScreen)
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
@@ -12,25 +12,25 @@ import Constants2 from "Constants" /* 1072 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
 import intl4 from "intl" /* 1113 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1357 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 5016 */;
-import RootNavigationRef from "RootNavigationRef" /* 5345 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8850 */;
-import VisualEffectViewThemedDefault from "VisualEffectViewThemed" /* 8910 */;
-import YouBannerDecorations from "YouBannerDecorations" /* 9730 */;
-import BackIconWithBadge from "BackIconWithBadge" /* 16832 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4986 */;
+import RootNavigationRef from "RootNavigationRef" /* 5315 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8829 */;
+import VisualEffectViewThemedDefault from "VisualEffectViewThemed" /* 8892 */;
+import YouBannerDecorations from "YouBannerDecorations" /* 9712 */;
+import BackIconWithBadge from "BackIconWithBadge" /* 16880 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserProfileStore from "UserProfileStore" /* 7871 */;
+import UserProfileStore from "UserProfileStore" /* 7848 */;
 import LocaleStore from "LocaleStore" /* 2186 */;
-import UserSettingSearchStore from "UserSettingSearchStore" /* 16848 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 6966 */;
+import UserSettingSearchStore from "UserSettingSearchStore" /* 16896 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 6941 */;
 import UserStore from "UserStore" /* 1385 */;
-import YouConstants from "YouConstants" /* 18733 */;
-import Constants from "Constants" /* 7460 */;
+import YouConstants from "YouConstants" /* 18783 */;
+import Constants from "Constants" /* 7437 */;
 import Fragment from "Fragment" /* 21 */;
 import module_1652_mod from "module_1652" /* 1652 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 let navigation;
@@ -76,7 +76,7 @@ function BackButton(paddingTop) {
   }
   const obj3 = { style: items1, accessibilityRole: "button", accessibilityLabel: formatToPlainStringResult, onPress: handleBackButtonPress, children: closure_21(BackIconWithBadge.CloseIconWithBadgeOnSide, { count: stateFromStores }) };
   items1 = [tmp.backButton, { top: paddingTop }];
-  const PressableOpacity = tmp2(7068).PressableOpacity;
+  const PressableOpacity = tmp2(7043).PressableOpacity;
   return closure_21(PressableOpacity, obj3);
 }
 function UnconnectedYouScreen(arg0) {

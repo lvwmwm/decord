@@ -1,24 +1,24 @@
-// Module ID: 19792
-// Function ID: 19793
+// Module ID: 19861
+// Function ID: 19862
 // Name: FrecencyUserSettingsManager
-// Dependencies: [5, 9870, 9869, 6876, 6216, 6916, 6975, 1231, 1082, 1362, 1089, 7373, 5000, 1232, 1233, 12, 2]
+// Dependencies: [5, 9854, 9853, 6851, 6191, 6891, 6950, 1231, 1082, 1362, 1089, 7350, 4970, 1232, 1233, 12, 2]
 
-// Module 19792 (FrecencyUserSettingsManager)
+// Module 19861 (FrecencyUserSettingsManager)
 import UserSettingsConstants from "UserSettingsConstants" /* 1082 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import frecency_user_settings from "frecency_user_settings" /* 1232 */;
 import user_settings_UserSettingsUtils from "user_settings/UserSettingsUtils" /* 1233 */;
 import ApplicationConstants from "ApplicationConstants" /* 1362 */;
-import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 5000 */;
-import FrecencyStore2 from "FrecencyStore" /* 6975 */;
+import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 4970 */;
+import FrecencyStore2 from "FrecencyStore" /* 6950 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationCommandFrecencyStore from "ApplicationCommandFrecencyStore" /* 9870 */;
-import ApplicationFrecencyStore from "ApplicationFrecencyStore" /* 9869 */;
-import EmojiStore from "EmojiStore" /* 6876 */;
-import SoundboardStore from "SoundboardStore" /* 6216 */;
-import StickersPersistedStore from "StickersPersistedStore" /* 6916 */;
+import ApplicationCommandFrecencyStore from "ApplicationCommandFrecencyStore" /* 9854 */;
+import ApplicationFrecencyStore from "ApplicationFrecencyStore" /* 9853 */;
+import EmojiStore from "EmojiStore" /* 6851 */;
+import SoundboardStore from "SoundboardStore" /* 6191 */;
+import StickersPersistedStore from "StickersPersistedStore" /* 6891 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7373 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7350 */;
 import size from "module_2" /* 2 */;
 
 const FrecencyStore = FrecencyStore2;
@@ -70,7 +70,7 @@ let actions = function _saveProtos() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -118,7 +118,7 @@ let actions = function _saveProtos() {
           const result = markDirtyIfHasPendingChange.markDirtyIfHasPendingChange();
         });
         c4 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp24) {
         c4 = 3;
         throw tmp24;

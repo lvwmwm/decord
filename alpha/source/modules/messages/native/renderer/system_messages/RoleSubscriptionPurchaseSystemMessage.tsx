@@ -1,23 +1,23 @@
-// Module ID: 8582
-// Function ID: 8583
+// Module ID: 8561
+// Function ID: 8562
 // Name: RoleSubscriptionPurchaseSystemMessage
-// Dependencies: [5019, 5041, 1072, 6596, 8510, 8546, 8547, 8541, 1414, 1411, 8512, 1113, 8514, 2]
+// Dependencies: [4989, 5011, 1072, 6571, 8489, 8525, 8526, 8520, 1414, 1411, 8491, 1113, 8493, 2]
 // Exports: createRoleSubscriptionPurchaseSystemMessage
 
-// Module 8582 (RoleSubscriptionPurchaseSystemMessage)
+// Module 8561 (RoleSubscriptionPurchaseSystemMessage)
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import AvatarUtils from "AvatarUtils" /* 1411 */;
 import utils_AvatarUtils from "utils/AvatarUtils" /* 1414 */;
-import useMessageAuthor from "useMessageAuthor" /* 6596 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8510 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8512 */;
-import createCommonMessageDefault from "createCommonMessage" /* 8514 */;
-import GuildRoleSubscriptionSystemMessageUtils from "GuildRoleSubscriptionSystemMessageUtils" /* 8541 */;
-import useIsStickerReplyEnabled from "useIsStickerReplyEnabled" /* 8546 */;
-import transformSticker2 from "transformSticker" /* 8547 */;
-import ChannelStore from "ChannelStore" /* 5019 */;
-import GuildStore from "GuildStore" /* 5041 */;
+import useMessageAuthor from "useMessageAuthor" /* 6571 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8489 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8491 */;
+import createCommonMessageDefault from "createCommonMessage" /* 8493 */;
+import GuildRoleSubscriptionSystemMessageUtils from "GuildRoleSubscriptionSystemMessageUtils" /* 8520 */;
+import useIsStickerReplyEnabled from "useIsStickerReplyEnabled" /* 8525 */;
+import transformSticker2 from "transformSticker" /* 8526 */;
+import ChannelStore from "ChannelStore" /* 4989 */;
+import GuildStore from "GuildStore" /* 5011 */;
 import size from "module_2" /* 2 */;
 
 const SystemChannelFlags = Constants.SystemChannelFlags;

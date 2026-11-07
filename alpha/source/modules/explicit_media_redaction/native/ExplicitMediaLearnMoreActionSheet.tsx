@@ -1,23 +1,26 @@
-// Module ID: 13511
-// Function ID: 13512
+// Module ID: 13536
+// Function ID: 13537
 // Name: ExplicitMediaLearnMoreActionSheet
-// Dependencies: [19, 17, 7553, 1072, 21, 5170, 575, 13512, 6806, 8779, 1113, 7658, 5404, 5864, 2185, 8046, 13513, 2118, 5418, 8065, 5781, 5788, 2]
+// Dependencies: [19, 17, 7530, 1072, 21, 5140, 575, 13537, 6781, 8758, 7635, 5374, 5834, 2185, 8024, 1113, 3348, 6784, 13538, 2118, 5388, 8044, 5751, 5758, 2]
 // Exports: default
 
-// Module 13511 (ExplicitMediaLearnMoreActionSheet)
+// Module 13536 (ExplicitMediaLearnMoreActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import intl7 from "intl" /* 1113 */;
+import intl11 from "intl" /* 1113 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2185 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5404 */;
-import ExplicitMediaRedactionConstants from "ExplicitMediaRedactionConstants" /* 7553 */;
-import openUserSettings from "openUserSettings" /* 7658 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8046 */;
-import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 8779 */;
+import _modDef3348 from "module_3348" /* 3348 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
+import LinkingDefault from "Linking" /* 5834 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6784 */;
+import ExplicitMediaRedactionConstants from "ExplicitMediaRedactionConstants" /* 7530 */;
+import openUserSettings from "openUserSettings" /* 7635 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8024 */;
+import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 8758 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let c9;
@@ -47,12 +50,19 @@ let closure_10 = createStyles(obj);
 let result = size.fileFinishedImporting("modules/explicit_media_redaction/native/ExplicitMediaLearnMoreActionSheet.tsx");
 
 export default function ExplicitMediaLearnMoreActionSheet(channelId) {
-  let intl2;
+  let formatResult;
+  let handleConfirmAgeButtonPress;
+  let handleNavigateToSettingsButtonPress;
+  let intl10;
   let intl6;
+  let intl7;
+  let intl8;
+  let intl9;
   let items4;
   let items5;
   let items6;
-  let tmp17;
+  let obj14;
+  let stringResult;
   channelId = channelId.channelId;
   const messageId = channelId.messageId;
   const attachmentId = channelId.attachmentId;
@@ -64,8 +74,6 @@ export default function ExplicitMediaLearnMoreActionSheet(channelId) {
   const isVerifiedTeen = obj.useIsVerifiedTeen();
   let obj2 = channelId(attachmentId[9]);
   const shouldAgeVerifyForExplicitMedia = obj2.useShouldAgeVerifyForExplicitMedia();
-  let intl = channelId(attachmentId[10]).intl;
-  let stringResult = intl.string(channelId(attachmentId[10]).t["5e0geG"]);
   const items = [isVerifiedTeen, shouldAgeVerifyForExplicitMedia];
   const memo = embedId.useMemo(() => isVerifiedTeen && shouldAgeVerifyForExplicitMedia, items);
   const items1 = [channelId, messageId];
@@ -81,108 +89,130 @@ export default function ExplicitMediaLearnMoreActionSheet(channelId) {
     const result = obj.trackMediaRedactionAction(obj2);
   }, items2);
   const items3 = [shouldAgeVerifyForExplicitMedia, callback, channelId, messageId, attachmentId, embedId];
-  const tmp11 = embedId.useCallback(() => {
+  const tmp10 = embedId.useCallback(() => {
     let formatResult = null;
     if (!shouldAgeVerifyForExplicitMedia) {
-      const intl = intl7.intl;
+      const intl = intl11.intl;
       let obj = {
         handleFalsePositiveHook() {
-            const obj = messageId(attachmentId[12]);
+            const obj = messageId(attachmentId[11]);
             obj.hideActionSheet();
             callback(channelId(attachmentId[9]).TrackMediaRedactionActionType.EXPLICIT_MEDIA_LEARN_MORE_CLICK_FALSE_POSITIVE);
-            const obj2 = messageId(attachmentId[12]);
+            const obj2 = messageId(attachmentId[11]);
             const obj3 = { channelId, messageId, attachmentId, embedId };
-            obj2.openLazy(channelId(attachmentId[17])(attachmentId[16], attachmentId.paths), shouldAgeVerifyForExplicitMedia, obj3);
+            obj2.openLazy(channelId(attachmentId[19])(attachmentId[18], attachmentId.paths), shouldAgeVerifyForExplicitMedia, obj3);
           }
       };
-      formatResult = intl.format(intl7.t.Ge0HUi, obj);
+      formatResult = intl.format(intl11.t.Ge0HUi, obj);
     }
     return formatResult;
   }, items3)();
   let obj3 = { style: tmp.container, children: items4 };
-  const obj4 = { style: tmp.art, children: closure_8(channelId(attachmentId[19]).ShieldSpotIllustration, { height: 120, width: 120 }) };
-  const BottomSheet = channelId(attachmentId[18]).BottomSheet;
+  const obj4 = { style: tmp.art, children: closure_8(channelId(attachmentId[21]).ShieldSpotIllustration, { height: 120, width: 120 }) };
+  const BottomSheet = channelId(attachmentId[20]).BottomSheet;
   items4 = [closure_8(isVerifiedTeen, obj4), , ];
   const obj5 = { style: tmp.info, children: items5 };
-  const obj6 = { style: tmp.infoHeader, accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: intl2.string(channelId(attachmentId[10]).t.sGW77l) };
-  const Text = channelId(attachmentId[20]).Text;
-  intl2 = channelId(attachmentId[10]).intl;
-  items5 = [closure_8(Text, obj6), ];
-  const obj7 = { style: tmp.infoDesc, variant: "body-md/medium", color: "text-default", children: stringResult };
-  const Text2 = channelId(attachmentId[20]).Text;
-  if (!memo) {
-    const intl3 = tmp4(tmp2[10]).intl;
-    const stringResult1 = intl3.string(channelId(tmp2[10]).t.RUw0ZC);
-    const intl4 = tmp4(tmp2[10]).intl;
-    let stringResult2 = intl4.string(tmp4(tmp2[10]).t["E/oQYL"]);
-    if (tmp3) {
-      stringResult2 = stringResult1;
-    }
-    stringResult = stringResult2;
+  const obj6 = { style: tmp.infoHeader, accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: stringResult };
+  const Text = channelId(attachmentId[22]).Text;
+  let intl = channelId(attachmentId[15]).intl;
+  const string = intl.string;
+  const t = channelId(attachmentId[15]).t;
+  if (shouldAgeVerifyForExplicitMedia) {
+    stringResult = string(t["2t3DCx"]);
+  } else {
+    stringResult = string(t.sGW77l);
   }
-  items5[1] = closure_8(Text2, obj7);
-  items4[1] = closure_9(isVerifiedTeen, obj5);
-  const obj9 = { variant: "primary", size: "md", text: null, onPress: null };
-  const obj8 = { style: tmp.buttonsContainer, children: items6 };
-  const Button = tmp4(tmp2[21]).Button;
-  const intl5 = tmp4(tmp2[10]).intl;
-  const string = intl5.string;
-  const t = tmp4(tmp2[10]).t;
+  function handleNavigateToHelpCenterLearnMore() {
+    callback(ExplicitMediaRedactionUtils.TrackMediaRedactionActionType.EXPLICIT_MEDIA_LEARN_MORE_CLICK_LEARN_MORE);
+    const openURL = LinkingDefault.openURL;
+    LinkingDefault;
+    const obj = HelpdeskUtilsDefault;
+    openURL(obj.getArticleURL(metroRequire.EXPLICIT_MEDIA_REDACTION));
+  }
+  items5 = [closure_8(Text, obj6), ];
+  const obj7 = { style: tmp.infoDesc, variant: "body-md/medium", color: "text-default", children: formatResult };
+  const Text2 = tmp4(tmp2[22]).Text;
   if (memo) {
-    function handleNavigateToAgeVerificationLearnMore() {
+    function handleNavigateToTeenAgeGroupArticle() {
       callback(ExplicitMediaRedactionUtils.TrackMediaRedactionActionType.EXPLICIT_MEDIA_LEARN_MORE_CLICK_AGE_VERIFY_LEARN_MORE);
       const openUrl = AgeVerificationActionCreatorsDefault.openUrl;
       AgeVerificationActionCreatorsDefault;
-      const obj = HelpdeskUtilsDefault;
-      openUrl(obj.getArticleURL(metroRequire.AGE_VERIFICATION_LEARN_MORE));
+      const getArticleURL = HelpdeskUtilsDefault.getArticleURL;
+      HelpdeskUtilsDefault;
+      const intl = intl11.intl;
+      openUrl(getArticleURL(intl.string(_modDef3348.agiNYw)));
     }
-    obj9.text = string(t.hvVgAZ);
-    obj9.onPress = handleNavigateToAgeVerificationLearnMore;
-    tmp17 = obj9;
-  } else if (tmp3) {
-    function handleNavigateToSettingsButtonPress() {
+    const intl5 = tmp4(tmp2[15]).intl;
+    const obj8 = { handleOnTeenAgeGroupHook: handleNavigateToTeenAgeGroupArticle };
+    formatResult = intl5.format(tmp4(tmp2[15]).t["24JQP1"], obj8);
+  } else if (shouldAgeVerifyForExplicitMedia) {
+    const intl4 = tmp4(tmp2[15]).intl;
+    formatResult = intl4.string(tmp4(tmp2[15]).t["3y2fov"]);
+  } else if (true === tmp3) {
+    const intl3 = tmp4(tmp2[15]).intl;
+    const obj9 = { handleOnHelpCenterHook: handleNavigateToHelpCenterLearnMore };
+    formatResult = intl3.format(tmp4(tmp2[15]).t.kIEcIY, obj9);
+  } else {
+    const intl2 = tmp4(tmp2[15]).intl;
+    formatResult = intl2.string(tmp4(tmp2[15]).t["E/oQYL"]);
+  }
+  items5[1] = closure_8(Text2, obj7);
+  items4[1] = closure_9(isVerifiedTeen, obj5);
+  const obj10 = { style: tmp.buttonsContainer, children: items6 };
+  const Button = tmp4(tmp2[23]).Button;
+  if (memo) {
+    const obj11 = { variant: "primary", size: "md", text: intl9.string(channelId(tmp2[15]).t.hvVgAZ), onPress: handleNavigateToHelpCenterLearnMore };
+    intl9 = tmp4(tmp2[15]).intl;
+    obj14 = obj11;
+  } else if (shouldAgeVerifyForExplicitMedia) {
+    const obj12 = { variant: "primary", size: "md", text: intl8.string(channelId(tmp2[15]).t.DVywUB), onPress: handleConfirmAgeButtonPress };
+    handleConfirmAgeButtonPress = function handleConfirmAgeButtonPress() {
+      callback(ExplicitMediaRedactionUtils.TrackMediaRedactionActionType.EXPLICIT_MEDIA_LEARN_MORE_CLICK_AGE_VERIFY_REVERIFY);
+      const obj = ActionSheetActionCreatorsDefault;
+      obj.hideActionSheet();
+      const obj2 = AgeVerificationActionCreatorsDefault;
+      const obj3 = { entryPoint: AgeVerificationAnalyticsUtils.AgeVerificationModalEntryPoint.SENSITIVE_MEDIA_LEARN_MORE };
+      const result = obj2.showAgeVerificationGetStartedModal(obj3);
+    };
+    intl8 = tmp4(tmp2[15]).intl;
+    obj14 = obj12;
+  } else if (true === tmp3) {
+    const obj13 = { variant: "primary", size: "md", text: intl7.string(channelId(tmp2[15]).t["9D+zGX"]), onPress: handleNavigateToSettingsButtonPress };
+    handleNavigateToSettingsButtonPress = function handleNavigateToSettingsButtonPress() {
       callback(ExplicitMediaRedactionUtils.TrackMediaRedactionActionType.EXPLICIT_MEDIA_LEARN_MORE_CLICK_SETTINGS);
       const obj = openUserSettings;
       const obj2 = { screen: metroImportDefault.CONTENT_AND_SOCIAL };
       obj.openUserSettings(obj2);
       const obj3 = ActionSheetActionCreatorsDefault;
       obj3.hideActionSheet();
-    }
-    obj9.text = string(t["9D+zGX"]);
-    obj9.onPress = handleNavigateToSettingsButtonPress;
-    tmp17 = obj9;
+    };
+    intl7 = tmp4(tmp2[15]).intl;
+    obj14 = obj13;
   } else {
-    function handleNavigateToHelpCenterLearnMore() {
-      const openURL = messageId(attachmentId[13]).openURL;
-      messageId(attachmentId[13]);
-      const obj = messageId(attachmentId[14]);
-      openURL(obj.getArticleURL(callback.EXPLICIT_MEDIA_REDACTION));
-    }
-    obj9.text = string(t.hvVgAZ);
-    obj9.onPress = handleNavigateToHelpCenterLearnMore;
-    tmp17 = obj9;
+    obj14 = { variant: "primary", size: "md", text: intl6.string(channelId(tmp2[15]).t.hvVgAZ), onPress: handleNavigateToHelpCenterLearnMore };
+    intl6 = tmp4(tmp2[15]).intl;
   }
-  items6 = [closure_8(Button, tmp17), , ];
-  const obj10 = {
+  items6 = [closure_8(Button, obj14), , ];
+  const obj15 = {
     variant: "secondary",
     size: "md",
-    text: intl6.string(channelId(tmp2[10]).t.bmbHPA),
+    text: intl10.string(channelId(tmp2[15]).t.bmbHPA),
     onPress: function handleDismissButtonPress() {
       callback(ExplicitMediaRedactionUtils.TrackMediaRedactionActionType.EXPLICIT_MEDIA_LEARN_MORE_CLICK_DISMISS);
       const obj = ActionSheetActionCreatorsDefault;
       obj.hideActionSheet();
     }
   };
-  const Button2 = tmp4(tmp2[21]).Button;
-  intl6 = tmp4(tmp2[10]).intl;
-  items6[1] = closure_8(Button2, obj10);
-  let tmp12Result = null != tmp11;
-  if (tmp12Result) {
-    const obj11 = { style: tmp.linkSubtext, variant: "body-sm/medium", color: "text-muted", children: tmp11 };
-    tmp12Result = tmp12(tmp4(tmp2[20]).Text, obj11);
+  const Button2 = tmp4(tmp2[23]).Button;
+  intl10 = tmp4(tmp2[15]).intl;
+  items6[1] = closure_8(Button2, obj15);
+  let tmp11Result = null != tmp10;
+  if (tmp11Result) {
+    const obj16 = { style: tmp.linkSubtext, variant: "body-sm/medium", color: "text-muted", children: tmp10 };
+    tmp11Result = tmp11(tmp4(tmp2[22]).Text, obj16);
   }
-  items6[2] = tmp12Result;
-  const obj12 = { startExpanded: true, children: closure_9(isVerifiedTeen, obj3) };
-  items4[2] = closure_9(isVerifiedTeen, obj8);
-  return closure_8(BottomSheet, obj12);
+  items6[2] = tmp11Result;
+  const obj17 = { startExpanded: true, children: closure_9(isVerifiedTeen, obj3) };
+  items4[2] = closure_9(isVerifiedTeen, obj10);
+  return closure_8(BottomSheet, obj17);
 };

@@ -1,22 +1,22 @@
-// Module ID: 9023
-// Function ID: 9024
+// Module ID: 9005
+// Function ID: 9006
 // Name: ForumPostMediaUtils
-// Dependencies: [19, 7564, 5019, 6219, 1385, 1072, 1090, 6209, 4995, 1403, 1378, 1380, 6223, 2116, 6230, 11, 2]
+// Dependencies: [19, 7541, 4989, 6194, 1385, 1072, 1090, 6183, 4965, 1403, 1378, 1380, 6198, 2116, 6205, 11, 2]
 // Exports: getEmbedColor, isValidImageAttachment, isValidVideoAttachment, messageContainsGifOrVideo, shouldShowAddMediaToOriginalPostModal, useFindFirstMediaProperties, useFirstMediaIsEmbed, useForumPostComponentsMedia, useForumPostMediaThumbnail
 
-// Module 9023 (ForumPostMediaUtils)
+// Module 9005 (ForumPostMediaUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1090 */;
 import URLUtilsDefault from "URLUtils" /* 1378 */;
 import GlobalUtils from "GlobalUtils" /* 1380 */;
 import FlagUtils from "FlagUtils" /* 1403 */;
-import UserSettings from "UserSettings" /* 4995 */;
-import MediaFormatTesters from "MediaFormatTesters" /* 6209 */;
-import InteractionComponentUtils from "InteractionComponentUtils" /* 6223 */;
+import UserSettings from "UserSettings" /* 4965 */;
+import MediaFormatTesters from "MediaFormatTesters" /* 6183 */;
+import InteractionComponentUtils from "InteractionComponentUtils" /* 6198 */;
 import react from "react" /* 19 */;
-import ThreadMessageStore from "ThreadMessageStore" /* 7564 */;
-import ChannelStore from "ChannelStore" /* 5019 */;
-import MessageStore from "MessageStore" /* 6219 */;
+import ThreadMessageStore from "ThreadMessageStore" /* 7541 */;
+import ChannelStore from "ChannelStore" /* 4989 */;
+import MessageStore from "MessageStore" /* 6194 */;
 import UserStore from "UserStore" /* 1385 */;
 import Constants from "Constants" /* 1072 */;
 import size_mod from "module_2" /* 2 */;

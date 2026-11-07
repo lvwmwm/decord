@@ -1,32 +1,32 @@
-// Module ID: 9900
-// Function ID: 9901
+// Module ID: 9884
+// Function ID: 9885
 // Name: PremiumUpsellActionSheet
-// Dependencies: [19, 17, 5171, 1192, 5920, 5201, 1385, 1387, 1072, 6020, 9901, 21, 5170, 575, 5754, 2171, 9902, 8322, 8307, 1113, 9903, 9907, 9911, 9912, 5404, 9899, 9913, 14802, 14806, 1092, 10111, 1377, 9606, 5872, 5745, 504, 7410, 9891, 7726, 8620, 14807, 1252, 10169, 5353, 7449, 14809, 5781, 5788, 8611, 2]
+// Dependencies: [19, 17, 5141, 1192, 5893, 5171, 1385, 1387, 1072, 5993, 9885, 21, 5140, 575, 5724, 2171, 9886, 8301, 8286, 1113, 9887, 9891, 9895, 9896, 5374, 9883, 9897, 14835, 14839, 1092, 10094, 1377, 9588, 5842, 5715, 504, 7387, 9875, 7703, 8599, 14840, 1252, 10152, 5323, 7426, 14842, 5751, 5758, 8590, 2]
 // Exports: default
 
-// Module 9900 (PremiumUpsellActionSheet)
+// Module 9884 (PremiumUpsellActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import PremiumUtils from "PremiumUtils" /* 2171 */;
-import ChatInputUtils from "ChatInputUtils" /* 5353 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5404 */;
-import LinearGradientDefault from "LinearGradient" /* 5745 */;
-import FastImageDefault from "FastImage" /* 5872 */;
-import StreamSettingsConstants from "StreamSettingsConstants" /* 6020 */;
-import openPremiumUpsellActionSheet from "openPremiumUpsellActionSheet" /* 9899 */;
-import ScheduledMessagesConstants from "ScheduledMessagesConstants" /* 9901 */;
+import ChatInputUtils from "ChatInputUtils" /* 5323 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
+import LinearGradientDefault from "LinearGradient" /* 5715 */;
+import FastImageDefault from "FastImage" /* 5842 */;
+import StreamSettingsConstants from "StreamSettingsConstants" /* 5993 */;
+import openPremiumUpsellActionSheet from "openPremiumUpsellActionSheet" /* 9883 */;
+import ScheduledMessagesConstants from "ScheduledMessagesConstants" /* 9885 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5171 */;
+import AccessibilityStore from "AccessibilityStore" /* 5141 */;
 import ThemeStore from "ThemeStore" /* 1192 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5920 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5201 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5893 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5171 */;
 import UserStore from "UserStore" /* 1385 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let guildId;
@@ -47,7 +47,7 @@ let obj6;
 let obj7;
 let tmp;
 let unpackModuleId;
-const APNGPlayer = tmp(9606);
+const APNGPlayer = tmp(9588);
 function PremiumUpsellImage(arg0) {
   let image;
   let style;

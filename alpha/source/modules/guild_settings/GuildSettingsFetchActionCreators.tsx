@@ -1,10 +1,10 @@
-// Module ID: 9178
-// Function ID: 9179
+// Module ID: 9160
+// Function ID: 9161
 // Name: GuildSettingsFetchActionCreators
 // Dependencies: [5, 2140, 1404, 1072, 1282, 572, 2]
 // Exports: fetchGuildEmbed, fetchGuildIntegrationsApplications
 
-// Module 9178 (GuildSettingsFetchActionCreators)
+// Module 9160 (GuildSettingsFetchActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;

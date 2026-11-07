@@ -1,17 +1,17 @@
-// Module ID: 17835
-// Function ID: 17836
+// Module ID: 17884
+// Function ID: 17885
 // Name: DiskUsageManager
-// Dependencies: [5, 1385, 1072, 3, 1355, 510, 10346, 1377, 17836, 1252, 7753, 7373, 11247, 11248, 2]
+// Dependencies: [5, 1385, 1072, 3, 1355, 510, 10329, 1377, 17885, 1252, 7730, 7350, 11229, 11230, 2]
 
-// Module 17835 (DiskUsageManager)
+// Module 17884 (DiskUsageManager)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 1355 */;
-import BackgroundTaskManagerDefault from "BackgroundTaskManager" /* 10346 */;
-import react_nativeDefault from "react-native" /* 17836 */;
+import BackgroundTaskManagerDefault from "BackgroundTaskManager" /* 10329 */;
+import react_nativeDefault from "react-native" /* 17885 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserStore from "UserStore" /* 1385 */;
 import Constants from "Constants" /* 1072 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7373 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7350 */;
 import size_mod from "module_2" /* 2 */;
 
 let c2, c3, c5, c6, closure_3;
@@ -41,7 +41,7 @@ let obj = function _measureAndReportInstallSize() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c4;
@@ -147,7 +147,7 @@ let obj = function _measureAndReportInstallSize() {
             obj3.endBackgroundTask(caches_directory_bytes);
           }
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp55) {
         closure_3 = tmp55;
@@ -199,7 +199,7 @@ class DiskUsageManager extends AutomaticLifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {

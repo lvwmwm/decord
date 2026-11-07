@@ -1,21 +1,54 @@
 // Module ID: 16398
 // Function ID: 16399
-// Dependencies: [16399]
+// Dependencies: [16399, 16400, 16402, 1159, 16404, 16403]
+// Exports: getCanonicalLocales
 
 // Module 16398
-import _mod16399 from "module_16399" /* 16399 */;
+import emitUnicodeLanguageId from "emitUnicodeLanguageId" /* 16399 */;
+import canonicalizeUnicodeLanguageId from "canonicalizeUnicodeLanguageId" /* 16400 */;
+import likelySubtags from "likelySubtags" /* 16403 */;
+import _mod16404 from "module_16404" /* 16404 */;
+import module_1159_mod from "module_1159" /* 1159 */;
 
+const require = globalThis.__r;
 
-export default (arg0, arg1) => {
-  let tmp3 = _mod16399[arg0];
-  if (!tmp3) {
-    let obj = arg1;
-    const tmpResult = _mod16399;
-    if (!arg1) {
-      obj = {};
+let module_1159 = module_1159_mod;
+module_1159.__exportStar(emitUnicodeLanguageId, exports);
+module_1159 = module_1159_mod;
+module_1159.__exportStar(_mod16404, exports);
+module_1159 = module_1159_mod;
+module_1159.__exportStar(likelySubtags, exports);
+
+export function getCanonicalLocales(items) {
+  if (undefined === items) {
+    items = [];
+  } else {
+    let arr3 = items;
+    if (typeof items === "string") {
+      const items1 = [items];
+      arr3 = items1;
     }
-    tmpResult[arg0] = obj;
-    tmp3 = obj;
+    const items2 = [];
+    let num3 = 0;
+    items = items2;
+    if (0 < arr3.length) {
+      do {
+        let tmp = arr3[num3];
+        let emitUnicodeLocaleId = emitUnicodeLanguageId.emitUnicodeLocaleId;
+        let emitUnicodeLocaleIdResult = emitUnicodeLocaleId(canonicalizeUnicodeLanguageId.CanonicalizeUnicodeLocaleId(require("SEPARATOR").parseUnicodeLocaleId(tmp)));
+        if (items2.indexOf(emitUnicodeLocaleIdResult) < 0) {
+          let arr = items2.push(emitUnicodeLocaleIdResult);
+        }
+        num3 = num3 + 1;
+        items = items2;
+      } while (num3 < arr3.length);
+    }
   }
-  return tmp3;
-};
+  return items;
+}
+export const isStructurallyValidLanguageTag = require("SEPARATOR").isStructurallyValidLanguageTag;
+export const isUnicodeLanguageSubtag = require("SEPARATOR").isUnicodeLanguageSubtag;
+export const isUnicodeRegionSubtag = require("SEPARATOR").isUnicodeRegionSubtag;
+export const isUnicodeScriptSubtag = require("SEPARATOR").isUnicodeScriptSubtag;
+export const parseUnicodeLanguageId = require("SEPARATOR").parseUnicodeLanguageId;
+export const parseUnicodeLocaleId = require("SEPARATOR").parseUnicodeLocaleId;

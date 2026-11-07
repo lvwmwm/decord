@@ -1,32 +1,32 @@
-// Module ID: 9363
-// Function ID: 9364
+// Module ID: 9345
+// Function ID: 9346
 // Name: SecureFramesUtils
-// Dependencies: [32, 5, 502, 2130, 5920, 7984, 1385, 5938, 9364, 1072, 2185, 9365, 9366, 9348, 9367, 1113, 5224, 2166, 1089, 38, 206, 1282, 1242, 6116, 6199, 2]
+// Dependencies: [32, 5, 502, 2130, 5893, 7962, 1385, 5911, 9346, 1072, 2185, 9347, 9348, 9330, 9349, 1113, 5194, 2166, 1089, 38, 206, 1282, 1242, 6090, 6173, 2]
 // Exports: addVerification, deletePersistentVerification, deleteUserPersistentVerifications, deleteVerification, ensureCurrentUserPublicKey, getSecureFramesHelpdeskArticle, getSecureFramesPersistentCodesHelpdeskArticle, getSecureFramesUserVerifiedTimestamp, getSecureFramesVerifiedDevicesHelpdeskArticle, getUserVerificationDeeplink, getUserVerificationFooterText, getUserVerifyStateText, isCurrentUserPublicKeyMatch, showSecureFramesKeyInconsistentAlert, validateSecureFramesKeyConsistent
 
-// Module 9363 (SecureFramesUtils)
+// Module 9345 (SecureFramesUtils)
 import _modDef38 from "module_38" /* 38 */;
 import byteLengthDefault from "byteLength" /* 206 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import intl15 from "intl" /* 1113 */;
 import _modDef2166 from "module_2166" /* 2166 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2185 */;
-import UserUtilsDefault from "UserUtils" /* 5224 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 6116 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 6199 */;
-import _mod9348 from "module_9348" /* 9348 */;
-import SecureFramesActionCreatorsDefault from "SecureFramesActionCreators" /* 9365 */;
-import SecureFramesTracking from "SecureFramesTracking" /* 9366 */;
-import SecureFramesPlatformUtilsDefault from "SecureFramesPlatformUtils" /* 9367 */;
+import UserUtilsDefault from "UserUtils" /* 5194 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 6090 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 6173 */;
+import _mod9330 from "module_9330" /* 9330 */;
+import SecureFramesActionCreatorsDefault from "SecureFramesActionCreators" /* 9347 */;
+import SecureFramesTracking from "SecureFramesTracking" /* 9348 */;
+import SecureFramesPlatformUtilsDefault from "SecureFramesPlatformUtils" /* 9349 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MediaEngineStore from "MediaEngineStore" /* 2130 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5920 */;
-import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 7984 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5893 */;
+import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 7962 */;
 import UserStore from "UserStore" /* 1385 */;
-import SecureFramesPersistedStore from "SecureFramesPersistedStore" /* 5938 */;
-import SecureFramesConstants from "SecureFramesConstants" /* 9364 */;
+import SecureFramesPersistedStore from "SecureFramesPersistedStore" /* 5911 */;
+import SecureFramesConstants from "SecureFramesConstants" /* 9346 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -82,7 +82,7 @@ obj = function _isPublicKeyMatch() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -158,7 +158,7 @@ obj = function _uploadCurrentUserPublicKey() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -221,7 +221,7 @@ obj = function _uploadCurrentUserPublicKey() {
             const result = obj.addUploadedKeyVersion(key_version);
             c4 = 0;
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp22) {
           closure_3 = tmp22;
@@ -254,7 +254,7 @@ obj = function _ensureCurrentUserPublicKey() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -285,7 +285,7 @@ obj = function _ensureCurrentUserPublicKey() {
           return obj;
         }
         c1 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp7) {
         c1 = 3;
         throw tmp7;
@@ -309,7 +309,7 @@ obj = function _isCurrentUserPublicKeyMatch() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -478,8 +478,8 @@ export function deleteVerification(userId, arg1, isOtherUserKeyPersistent) {
     const _Uint8Array = Uint8Array;
     const self = this;
     const self2 = this;
-    const serializeKey = _mod9348.serializeKey;
-    _mod9348;
+    const serializeKey = _mod9330.serializeKey;
+    _mod9330;
     const uint8Array = new Uint8Array(arg1);
     const serializeKeyResult = serializeKey(uint8Array);
     const obj2 = SecureFramesActionCreatorsDefault;

@@ -1,15 +1,15 @@
-// Module ID: 17672
-// Function ID: 17673
+// Module ID: 17721
+// Function ID: 17722
 // Name: SyncReducedMotionWithDeviceSetting
-// Dependencies: [5171, 8524, 504, 16525, 11703, 1113, 2]
+// Dependencies: [5141, 8503, 504, 16573, 11685, 1113, 2]
 
-// Module 17672 (SyncReducedMotionWithDeviceSetting)
+// Module 17721 (SyncReducedMotionWithDeviceSetting)
 import get_initialized from "get initialized" /* 504 */;
 import intl2 from "intl" /* 1113 */;
-import SettingsConstants from "SettingsConstants" /* 8524 */;
-import AccessibilityActionCreators from "AccessibilityActionCreators" /* 16525 */;
-import AccessibilityStore from "AccessibilityStore" /* 5171 */;
-import SettingBuilders from "SettingBuilders" /* 11703 */;
+import SettingsConstants from "SettingsConstants" /* 8503 */;
+import AccessibilityActionCreators from "AccessibilityActionCreators" /* 16573 */;
+import AccessibilityStore from "AccessibilityStore" /* 5141 */;
+import SettingBuilders from "SettingBuilders" /* 11685 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

@@ -1,13 +1,14 @@
-// Module ID: 9734
-// Function ID: 9735
+// Module ID: 9716
+// Function ID: 9717
 // Name: MarketingComponentRecord
-// Dependencies: [1405, 1089, 1234, 9735, 9772, 1251, 2]
+// Dependencies: [1405, 1089, 9717, 1234, 9719, 9756, 1251, 2]
 
-// Module 9734 (MarketingComponentRecord)
+// Module 9716 (MarketingComponentRecord)
 import DurationsDefault from "Durations" /* 1089 */;
 import ProtoUtils from "ProtoUtils" /* 1234 */;
 import _modDef1251 from "module_1251" /* 1251 */;
-import premium_marketing_component_properties from "premium_marketing_component_properties" /* 9735 */;
+import MarketingSurfaceTypeUtils from "MarketingSurfaceTypeUtils" /* 9717 */;
+import premium_marketing_component_properties from "premium_marketing_component_properties" /* 9719 */;
 import Record from "Record" /* 1405 */;
 import size from "module_2" /* 2 */;
 
@@ -20,8 +21,6 @@ class MarketingComponentRecord extends Record {
     return tmp;
   }
   static createFromServer(start_date, startDate) {
-    let component_type;
-    let id;
     let date = null;
     if (null != start_date.start_date) {
       const _Date = Date;
@@ -50,40 +49,42 @@ class MarketingComponentRecord extends Record {
     if (endDate == null) {
       endDate = null;
     }
-    ({ id, component_type } = start_date);
-    const obj = ProtoUtils;
-    const b64ToProtoResult = obj.b64ToProto(premium_marketing_component_properties.PremiumMarketingComponentProperties, start_date.properties);
+    const id = start_date.id;
+    const obj = MarketingSurfaceTypeUtils;
+    const result = obj.classifyMarketingSurfaceType(start_date.component_type);
+    const obj2 = ProtoUtils;
+    const b64ToProtoResult = obj2.b64ToProto(premium_marketing_component_properties.PremiumMarketingComponentProperties, start_date.properties);
     const promotion_id = start_date.promotion_id;
-    let tmp13 = date;
+    let tmp14 = date;
     if (date == null) {
-      tmp13 = startDate;
+      tmp14 = startDate;
     }
-    let tmp14 = date1;
+    let tmp15 = date1;
     if (date1 == null) {
-      tmp14 = endDate;
+      tmp15 = endDate;
     }
     let priority;
     if (startDate != null) {
       priority = startDate.priority;
     }
     if (priority == null) {
-      priority = tmp10(9772).FALLBACK_PROMOTION_PRIORITY;
+      priority = tmp10(9756).FALLBACK_PROMOTION_PRIORITY;
     }
     if (typeof MarketingComponentRecord === "function") {
       const self5 = this;
       const self6 = this;
-      const tmp17 = new MarketingComponentRecord(tmp4, tmp, obj, startDate, require, MarketingComponentRecord, this, id, component_type, b64ToProtoResult, promotion_id, date, date1, tmp13);
-      tmp17.id = id;
-      tmp17.componentType = component_type;
-      tmp17.properties = b64ToProtoResult;
-      tmp17.promotionId = promotion_id;
-      tmp17.startDate = date;
-      tmp17.endDate = date1;
-      tmp17.effectiveStartDate = tmp13;
-      tmp17.effectiveEndDate = tmp14;
-      tmp17.promotionEndDate = endDate;
-      tmp17.promotionPriority = priority;
-      return tmp17;
+      const tmp18 = new MarketingComponentRecord(tmp4, tmp, obj2, startDate, require, MarketingComponentRecord, this, id, result, b64ToProtoResult, promotion_id, date, date1, tmp14);
+      tmp18.id = id;
+      tmp18.componentType = result;
+      tmp18.properties = b64ToProtoResult;
+      tmp18.promotionId = promotion_id;
+      tmp18.startDate = date;
+      tmp18.endDate = date1;
+      tmp18.effectiveStartDate = tmp14;
+      tmp18.effectiveEndDate = tmp15;
+      tmp18.promotionEndDate = endDate;
+      tmp18.promotionPriority = priority;
+      return tmp18;
     } else {
       throw new TypeError("Trying to call a non-function");
     }
@@ -133,7 +134,24 @@ class MarketingComponentRecord extends Record {
     return true;
   }
 }
-Object.defineProperty(MarketingComponentRecord.prototype, "isTimed", {
+const prototype = MarketingComponentRecord.prototype;
+Object.defineProperty(prototype, "surface", {
+  get: function surface() {
+    const properties = this.properties.properties;
+    const oneofKind = properties.oneofKind;
+    let tmp = null;
+    if (null != oneofKind) {
+      let tmp2 = properties[oneofKind];
+      if (tmp2 == null) {
+        tmp2 = null;
+      }
+      tmp = tmp2;
+    }
+    return tmp;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "isTimed", {
   get: function isTimed() {
     return null != this.startDate || null != this.endDate;
   },

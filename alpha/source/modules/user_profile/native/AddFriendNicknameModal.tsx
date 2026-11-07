@@ -1,21 +1,21 @@
-// Module ID: 15030
-// Function ID: 15031
+// Module ID: 15062
+// Function ID: 15063
 // Name: AddFriendNicknameModal
-// Dependencies: [5, 32, 19, 17, 5112, 1385, 21, 5170, 575, 10284, 504, 1113, 6824, 7575, 7041, 6188, 5781, 7180, 5224, 2]
+// Dependencies: [5, 32, 19, 17, 5082, 1385, 21, 5140, 575, 10267, 504, 1113, 6799, 7552, 7016, 6162, 5751, 7155, 5194, 2]
 // Exports: default
 
-// Module 15030 (AddFriendNicknameModal)
+// Module 15062 (AddFriendNicknameModal)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6824 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6799 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 5112 */;
+import RelationshipStore from "RelationshipStore" /* 5082 */;
 import UserStore from "UserStore" /* 1385 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let c5, c6, closure_3, dependencyMap;
@@ -70,7 +70,7 @@ export default function AddFriendNicknameModal(arg0) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c4;
@@ -151,7 +151,7 @@ export default function AddFriendNicknameModal(arg0) {
             closure_130_3(false);
           }
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp42) {
           closure_3 = tmp42;
           if (0 === c4) {
@@ -171,7 +171,7 @@ export default function AddFriendNicknameModal(arg0) {
   const tmp3 = showUserProfile;
   const tmp4 = dependencyMap;
   const tmp2 = _slicedToArray(react.useState(false), 2);
-  _slicedToArray = showUserProfile(10284)();
+  _slicedToArray = showUserProfile(10267)();
   let obj2 = get_initialized;
   const items = [obj];
   const stateFromStores = obj2.useStateFromStores(items, () => RelationshipStore.getNickname(require));
@@ -213,20 +213,20 @@ export default function AddFriendNicknameModal(arg0) {
     onCancel: callback1,
     children: items3
   };
-  tmp3Result = tmp3(7041);
-  tmp3Result3 = tmp3(6188);
+  tmp3Result = tmp3(7016);
+  tmp3Result3 = tmp3(6162);
   intl3 = tmp5(1113).intl;
   intl4 = tmp5(1113).intl;
   let obj6 = { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: stringResult };
-  items3 = [closure_9(tmp5(5781).Text, obj6), , ];
+  items3 = [closure_9(tmp5(5751).Text, obj6), , ];
   let obj7 = { style: tmp.description, variant: "body-sm/medium", color: "text-default", children: intl5.string(tmp5(1113).t["NdQ+lP"]) };
-  const Text = tmp5(5781).Text;
+  const Text = tmp5(5751).Text;
   intl5 = tmp5(1113).intl;
   items3[1] = closure_9(Text, obj7);
   let obj8 = { onChange: callback, autoFocus: true, accessibilityLabel: intl6.string(tmp5(1113).t.pqG6GS), placeholder: tmp3Result4.getName(stateFromStores1), defaultValue: stateFromStores, maxLength: 32, clearable: true };
-  const TextField = tmp5(7180).TextField;
+  const TextField = tmp5(7155).TextField;
   intl6 = tmp5(1113).intl;
-  tmp3Result4 = tmp3(5224);
+  tmp3Result4 = tmp3(5194);
   items3[2] = closure_9(TextField, obj8);
   return closure_9(callback1, obj3);
 };

@@ -1,87 +1,15 @@
 // Module ID: 8348
 // Function ID: 8349
-// Dependencies: [8342, 8343]
-// Exports: isAVIF, isBMP, isBPG, isCR2, isEXR, isGIF, isHEIC, isICO, isJPEG, isPBM, isPGM, isPNG, isPPM, isPSD, isWEBP
+// Dependencies: []
 
 // Module 8348
-import _mod8342 from "module_8342" /* 8342 */;
-import _mod8343 from "module_8343" /* 8343 */;
+class MetadataMissingError {
+  constructor(arg0) {
+    const str = arg0 || "No Exif data";
+    const error = new Error();
+  }
+}
+let error = new Error();
+MetadataMissingError.prototype = error;
 
-
-export function isAVIF(fileChunk) {
-  fileChunk = _mod8342.getFileChunk(fileChunk);
-  const FileTypes = _mod8343.FileTypes;
-  const tmp4 = FileTypes.checkByFileType(fileChunk, "avif") && _mod8342.isAvifStringIncluded(fileChunk);
-  return tmp4;
-}
-export function isBMP(fileChunk) {
-  fileChunk = _mod8342.getFileChunk(fileChunk);
-  const FileTypes = _mod8343.FileTypes;
-  return FileTypes.checkByFileType(fileChunk, "bmp");
-}
-export function isBPG(fileChunk) {
-  fileChunk = _mod8342.getFileChunk(fileChunk);
-  const FileTypes = _mod8343.FileTypes;
-  return FileTypes.checkByFileType(fileChunk, "bpg");
-}
-export function isCR2(fileChunk) {
-  fileChunk = _mod8342.getFileChunk(fileChunk);
-  const FileTypes = _mod8343.FileTypes;
-  return FileTypes.checkByFileType(fileChunk, "cr2");
-}
-export function isEXR(fileChunk) {
-  fileChunk = _mod8342.getFileChunk(fileChunk);
-  const FileTypes = _mod8343.FileTypes;
-  return FileTypes.checkByFileType(fileChunk, "exr");
-}
-export function isGIF(fileChunk) {
-  fileChunk = _mod8342.getFileChunk(fileChunk);
-  const FileTypes = _mod8343.FileTypes;
-  return FileTypes.checkByFileType(fileChunk, "gif");
-}
-export function isHEIC(fileChunk) {
-  fileChunk = _mod8342.getFileChunk(fileChunk);
-  const FileTypes = _mod8343.FileTypes;
-  const tmp4 = FileTypes.checkByFileType(fileChunk, "avif") && _mod8342.isHeicSignatureIncluded(fileChunk);
-  return tmp4;
-}
-export function isICO(fileChunk) {
-  fileChunk = _mod8342.getFileChunk(fileChunk);
-  const FileTypes = _mod8343.FileTypes;
-  return FileTypes.checkByFileType(fileChunk, "ico");
-}
-export function isJPEG(fileChunk) {
-  fileChunk = _mod8342.getFileChunk(fileChunk);
-  const FileTypes = _mod8343.FileTypes;
-  return FileTypes.checkByFileType(fileChunk, "jpeg");
-}
-export function isPBM(fileChunk) {
-  fileChunk = _mod8342.getFileChunk(fileChunk);
-  const FileTypes = _mod8343.FileTypes;
-  return FileTypes.checkByFileType(fileChunk, "pbm");
-}
-export function isPGM(fileChunk) {
-  fileChunk = _mod8342.getFileChunk(fileChunk);
-  const FileTypes = _mod8343.FileTypes;
-  return FileTypes.checkByFileType(fileChunk, "pgm");
-}
-export function isPNG(fileChunk) {
-  fileChunk = _mod8342.getFileChunk(fileChunk);
-  const FileTypes = _mod8343.FileTypes;
-  return FileTypes.checkByFileType(fileChunk, "png");
-}
-export function isPPM(fileChunk) {
-  fileChunk = _mod8342.getFileChunk(fileChunk);
-  const FileTypes = _mod8343.FileTypes;
-  return FileTypes.checkByFileType(fileChunk, "ppm");
-}
-export function isPSD(fileChunk) {
-  fileChunk = _mod8342.getFileChunk(fileChunk);
-  const FileTypes = _mod8343.FileTypes;
-  return FileTypes.checkByFileType(fileChunk, "psd");
-}
-export function isWEBP(fileChunk) {
-  fileChunk = _mod8342.getFileChunk(fileChunk);
-  const FileTypes = _mod8343.FileTypes;
-  return FileTypes.checkByFileType(fileChunk, "webp");
-}
+export default { MetadataMissingError };

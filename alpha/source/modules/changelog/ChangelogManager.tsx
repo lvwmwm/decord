@@ -1,14 +1,14 @@
-// Module ID: 19733
-// Function ID: 19734
+// Module ID: 19802
+// Function ID: 19803
 // Name: ChangelogManager
-// Dependencies: [5, 32, 2186, 7573, 7373, 8659, 19734, 572, 11, 19736, 2]
+// Dependencies: [5, 32, 2186, 7550, 7350, 8638, 19803, 572, 11, 19805, 2]
 
-// Module 19733 (ChangelogManager)
+// Module 19802 (ChangelogManager)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import LocaleStore from "LocaleStore" /* 2186 */;
-import ChangelogStore from "ChangelogStore" /* 7573 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7373 */;
+import ChangelogStore from "ChangelogStore" /* 7550 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7350 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5;
@@ -59,7 +59,7 @@ class ChangelogManager extends AutomaticLifecycleManager {
           const obj6 = { value, done: true };
           return obj6;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c3;
@@ -123,13 +123,13 @@ class ChangelogManager extends AutomaticLifecycleManager {
                 const obj15 = tmp(latestChangelogId[7]);
                 obj15.dispatch({ type: "CHANGE_LOG_RESOLVED" });
                 c5 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               } else if (true !== body[latestChangelogId].show_on_startup) {
                 c3 = 0;
                 const obj14 = tmp(latestChangelogId[7]);
                 obj14.dispatch({ type: "CHANGE_LOG_RESOLVED" });
                 c5 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               } else {
                 closure_3 = closure_1_6.lastSeenChangelogId();
                 closure_4 = closure_1_6.lastSeenChangelogDate();
@@ -140,7 +140,7 @@ class ChangelogManager extends AutomaticLifecycleManager {
                     const obj13 = tmp(latestChangelogId[7]);
                     obj13.dispatch({ type: "CHANGE_LOG_RESOLVED" });
                     c5 = 3;
-                    return { value: "HermesInternal", done: null };
+                    return { value: "HermesInternal", done: "HermesInternal" };
                   }
                 }
                 c4 = 3;
@@ -167,7 +167,7 @@ class ChangelogManager extends AutomaticLifecycleManager {
               const obj7 = tmp(latestChangelogId[7]);
               obj7.dispatch({ type: "CHANGE_LOG_RESOLVED" });
               c5 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             } else {
               if (null != closure_4) {
                 if (null != closure_1_6.lastSeenChangelogDate()) {
@@ -176,7 +176,7 @@ class ChangelogManager extends AutomaticLifecycleManager {
                     const obj3 = tmp(latestChangelogId[7]);
                     obj3.dispatch({ type: "CHANGE_LOG_RESOLVED" });
                     c5 = 3;
-                    return { value: "HermesInternal", done: null };
+                    return { value: "HermesInternal", done: "HermesInternal" };
                   } else {
                     let tmp5 = closure_0;
                     const _Date = Date;
@@ -199,7 +199,7 @@ class ChangelogManager extends AutomaticLifecycleManager {
                     const obj2 = tmp(latestChangelogId[7]);
                     obj2.dispatch({ type: "CHANGE_LOG_RESOLVED" });
                     c5 = 3;
-                    return { value: "HermesInternal", done: null };
+                    return { value: "HermesInternal", done: "HermesInternal" };
                   }
                 }
               }

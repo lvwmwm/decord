@@ -1,14 +1,14 @@
-// Module ID: 7306
-// Function ID: 7307
+// Module ID: 7283
+// Function ID: 7284
 // Name: MagnifyingGlassIcon
-// Dependencies: [19, 21, 575, 5871, 7307, 2]
+// Dependencies: [19, 21, 575, 5841, 7284, 2]
 // Exports: MagnifyingGlassIcon
 
-// Module 7306 (MagnifyingGlassIcon)
+// Module 7283 (MagnifyingGlassIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5871 */;
-import AssetRegistry from "AssetRegistry" /* 7307 */;
+import BaseIconImage2 from "BaseIconImage" /* 5841 */;
+import AssetRegistry from "AssetRegistry" /* 7284 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

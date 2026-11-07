@@ -1,12 +1,12 @@
-// Module ID: 12620
-// Function ID: 12621
+// Module ID: 12633
+// Function ID: 12634
 // Name: useTrackAppLauncherItemImpressionOnFirstView
-// Dependencies: [19, 11664, 1500, 6186, 1260, 2]
+// Dependencies: [19, 11646, 1500, 6160, 1260, 2]
 // Exports: useTrackAppLauncherItemImpressionOnFirstView
 
-// Module 12620 (useTrackAppLauncherItemImpressionOnFirstView)
+// Module 12633 (useTrackAppLauncherItemImpressionOnFirstView)
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
-import useTrackImpression from "useTrackImpression" /* 6186 */;
+import useTrackImpression from "useTrackImpression" /* 6160 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -18,7 +18,7 @@ export function useTrackAppLauncherItemImpressionOnFirstView() {
   let entrypoint;
   let items;
   let ref;
-  let obj = entrypoint(11664);
+  let obj = entrypoint(11646);
   entrypoint = obj.useAppLauncherContext().entrypoint;
   const useRef = react.useRef;
   set = new Set();

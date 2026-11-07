@@ -1,55 +1,13 @@
 // Module ID: 13082
 // Function ID: 13083
-// Dependencies: [13027, 13071]
+// Dependencies: [13069, 13067, 13070, 13081]
 
 // Module 13082
-import tokenize from "tokenize" /* 13027 */;
-import tokenize2 from "tokenize" /* 13071 */;
+import parse from "parse" /* 13067 */;
+import SyntaxError from "SyntaxError" /* 13069 */;
+import _mod13070 from "module_13070" /* 13070 */;
+import _mod13081 from "module_13081" /* 13081 */;
 
-let items;
-let obj2;
-function consumeRaw(arg0) {
-  return this.Raw(arg0, tokenize2.mode.semicolonIncluded, true);
-}
-const WhiteSpace = tokenize.TYPE.WhiteSpace;
-const Comment = tokenize.TYPE.Comment;
-const Semicolon = tokenize.TYPE.Semicolon;
-const obj = {
-  name: "DeclarationList",
-  structure: obj2,
-  parse() {
-    const self = this;
-    const list = this.createList();
-    if (!this.scanner.eof) {
-      while (true) {
-        let tokenType = self.scanner.tokenType;
-        if (WhiteSpace !== tokenType) {
-          if (Comment !== tokenType) {
-            if (Semicolon !== tokenType) {
-              let arr = list.push(self.parseWithFallback(self.Declaration, consumeRaw));
-            }
-            if (self.scanner.eof) {
-              break;
-            }
-          }
-        }
-        let iter = self.scanner;
-        let nextResult = iter.next();
-      }
-    }
-    const element = { type: "DeclarationList", loc: self.getLocationFromList(list), children: list };
-    return element;
-  },
-  generate(arg0) {
-    this.children(arg0, function(type) {
-      if ("Declaration" === type.type) {
-        const self = this;
-        this.chunk(";");
-      }
-    });
-  }
-};
-obj2 = { children: items };
-items = [["Declaration"]];
+({ SyntaxError, parse, generate: _mod13070, walk: _mod13081 });
 
-export default obj;
+export default { SyntaxError, parse, generate: _mod13070, walk: _mod13081 };

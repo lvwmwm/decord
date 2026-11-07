@@ -1,15 +1,15 @@
-// Module ID: 12745
-// Function ID: 12746
+// Module ID: 12758
+// Function ID: 12759
 // Name: PollUploadAttachmentActionCreators
-// Dependencies: [5, 7800, 8498, 12746, 8870, 8311, 8300, 8301, 9884, 2]
+// Dependencies: [5, 7777, 8477, 12759, 8849, 8290, 8279, 8280, 9868, 2]
 // Exports: handlePollGifAttachmentAdd, handlePollMediaAttachmentAdd, removeAllPollUploadAttachments, removePollUploadAttachment
 
-// Module 12745 (PollUploadAttachmentActionCreators)
-import DraftStore from "DraftStore" /* 7800 */;
-import PollsConstants from "PollsConstants" /* 8498 */;
-import FileManagerUtils from "FileManagerUtils" /* 8870 */;
-import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 9884 */;
-import PollAttachmentUtils from "PollAttachmentUtils" /* 12746 */;
+// Module 12758 (PollUploadAttachmentActionCreators)
+import DraftStore from "DraftStore" /* 7777 */;
+import PollsConstants from "PollsConstants" /* 8477 */;
+import FileManagerUtils from "FileManagerUtils" /* 8849 */;
+import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 9868 */;
+import PollAttachmentUtils from "PollAttachmentUtils" /* 12759 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -35,7 +35,7 @@ let obj = function _handlePollGifAttachmentAdd() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let tmp36;
@@ -69,7 +69,7 @@ let obj = function _handlePollGifAttachmentAdd() {
           } else if (1 === file) {
             c6 = 0;
             c8 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           } else if (2 === file) {
             if (arg0 === 1) {
               c8 = 3;
@@ -83,7 +83,7 @@ let obj = function _handlePollGifAttachmentAdd() {
               if (null == closure_3) {
                 c6 = 0;
                 c8 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               } else {
                 const obj9 = closure_132_0(closure_132_2[3]);
                 filePathForGif = obj9.getFilePathForGif(filename);
@@ -107,7 +107,7 @@ let obj = function _handlePollGifAttachmentAdd() {
               if (null == tmp36) {
                 c6 = 0;
                 c8 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               } else {
                 const obj6 = closure_132_0(closure_132_2[5]);
                 writeFileResult = obj6.getImageDimensionsIfMissing(tmp36);
@@ -173,7 +173,7 @@ obj = function _removePollUploadAttachment() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c6;
@@ -213,7 +213,7 @@ obj = function _removePollUploadAttachment() {
             c6 = 0;
           }
           c3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp5) {
         let closure_5 = tmp5;
@@ -243,7 +243,7 @@ obj = function _removeAllPollUploadAttachments() {
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c4;
@@ -282,7 +282,7 @@ obj = function _removeAllPollUploadAttachments() {
             c4 = 0;
           }
           c1 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp12) {
         let closure_3 = tmp12;

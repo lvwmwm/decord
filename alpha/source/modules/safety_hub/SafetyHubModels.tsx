@@ -1,9 +1,9 @@
-// Module ID: 8062
-// Function ID: 8063
+// Module ID: 8040
+// Function ID: 8041
 // Name: SafetyHubModels
 // Dependencies: [2]
 
-// Module 8062 (SafetyHubModels)
+// Module 8040 (SafetyHubModels)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/safety_hub/SafetyHubModels.tsx");

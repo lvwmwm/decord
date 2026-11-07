@@ -1,27 +1,33 @@
 // Module ID: 8385
 // Function ID: 8386
-// Dependencies: [8370]
+// Dependencies: []
 
 // Module 8385
-import _mod8370 from "module_8370" /* 8370 */;
-
 let obj = {
-  isXMLFile(dataView) {
-    let tmp = dataView;
+  get(arg0) {
+    const tmp = arg0;
     if (tmp) {
-      const obj = _mod8370;
-      tmp = obj.getStringFromDataView(dataView, c2, length.length) === length;
+      return arg0;
+    } else {
+      if (typeof globalThis.DOMParser !== "undefined") {
+        const DOMParser2 = globalThis.DOMParser;
+        const self3 = this;
+        const self4 = this;
+        const dOMParser = new globalThis.DOMParser();
+        return dOMParser;
+      } else {
+        try {
+          const result = globalThis.__non_webpack_require__("@xmldom/xmldom");
+          const self = this;
+          const self2 = this;
+          const obj = { onError: result.onErrorStopParsing };
+          const dOMParser1 = new result.DOMParser(obj);
+          return dOMParser1;
+        } catch (err) {
+        }
+      }
     }
-    return tmp;
-  },
-  findOffsets(byteLength) {
-    const xmpChunks = [];
-    const obj = { dataOffset, length: byteLength.byteLength };
-    xmpChunks.push(obj);
-    return { xmpChunks };
   }
 };
-let c2 = 0;
-let c3 = "<?xpacket begin";
 
 export default obj;

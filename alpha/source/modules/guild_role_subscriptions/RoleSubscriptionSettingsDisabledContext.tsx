@@ -1,10 +1,10 @@
-// Module ID: 20268
-// Function ID: 20269
+// Module ID: 20337
+// Function ID: 20338
 // Name: RoleSubscriptionSettingsDisabledContext
-// Dependencies: [2, 20269]
+// Dependencies: [2, 20338]
 
-// Module 20268 (RoleSubscriptionSettingsDisabledContext)
-import CreatorMonetizationSettingsDisabledContext from "CreatorMonetizationSettingsDisabledContext" /* 20269 */;
+// Module 20337 (RoleSubscriptionSettingsDisabledContext)
+import CreatorMonetizationSettingsDisabledContext from "CreatorMonetizationSettingsDisabledContext" /* 20338 */;
 import size from "module_2" /* 2 */;
 
 const CreatorMonetizationSettingsDisabledContextDefault = CreatorMonetizationSettingsDisabledContext;

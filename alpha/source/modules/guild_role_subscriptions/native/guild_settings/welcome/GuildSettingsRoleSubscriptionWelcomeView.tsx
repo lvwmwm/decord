@@ -1,30 +1,30 @@
-// Module ID: 20199
-// Function ID: 20200
+// Module ID: 20268
+// Function ID: 20269
 // Name: GuildSettingsRoleSubscriptionWelcomeView
-// Dependencies: [32, 19, 17, 17457, 1072, 20200, 21, 5170, 575, 12752, 1113, 20201, 5781, 20202, 1499, 5404, 20204, 2118, 20204, 8267, 5788, 1187, 7177, 20210, 20223, 20248, 20251, 20256, 20257, 1500, 6186, 1260, 5744, 20198, 5866, 7378, 20258, 2]
+// Dependencies: [32, 19, 17, 17506, 1072, 20269, 21, 5140, 575, 12765, 1113, 20270, 5751, 20271, 1499, 5374, 20273, 2118, 20273, 8246, 5758, 1187, 7152, 20279, 20292, 20317, 20320, 20325, 20326, 1500, 6160, 1260, 5714, 20267, 5836, 7355, 20327, 2]
 // Exports: default
 
-// Module 20199 (GuildSettingsRoleSubscriptionWelcomeView)
+// Module 20268 (GuildSettingsRoleSubscriptionWelcomeView)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl5 from "intl" /* 1113 */;
 import asyncRequire from "asyncRequire" /* 2118 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5404 */;
-import NavigatorConstants from "NavigatorConstants" /* 5744 */;
-import Text_Text from "Text/Text" /* 5781 */;
-import ErrorBlockDefault from "ErrorBlock" /* 12752 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 17457 */;
-import CreatorMonetizationEligibilityConstants from "CreatorMonetizationEligibilityConstants" /* 20200 */;
-import WarningNoticeDefault from "WarningNotice" /* 20201 */;
-import EligibilityActionSheet from "EligibilityActionSheet" /* 20204 */;
-import HowItWorksSectionDefault from "HowItWorksSection" /* 20210 */;
-import CreatorBenefitsSectionDefault from "CreatorBenefitsSection" /* 20223 */;
-import CreatorHighlightSectionDefault from "CreatorHighlightSection" /* 20248 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
+import NavigatorConstants from "NavigatorConstants" /* 5714 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import ErrorBlockDefault from "ErrorBlock" /* 12765 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 17506 */;
+import CreatorMonetizationEligibilityConstants from "CreatorMonetizationEligibilityConstants" /* 20269 */;
+import WarningNoticeDefault from "WarningNotice" /* 20270 */;
+import EligibilityActionSheet from "EligibilityActionSheet" /* 20273 */;
+import HowItWorksSectionDefault from "HowItWorksSection" /* 20279 */;
+import CreatorBenefitsSectionDefault from "CreatorBenefitsSection" /* 20292 */;
+import CreatorHighlightSectionDefault from "CreatorHighlightSection" /* 20317 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -152,7 +152,7 @@ function StartEarningButton(isTermsAccepted) {
         navigation.push(constants.SECURITY);
       }
     };
-    const tmp2 = asyncRequire(20204, dependencyMap.paths);
+    const tmp2 = asyncRequire(20273, dependencyMap.paths);
     return openLazy(tmp2, EligibilityActionSheet.ELIGIBILITY_ACTION_SHEET_KEY, obj);
   }, items1);
   const obj2 = {

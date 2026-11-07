@@ -1,9 +1,9 @@
-// Module ID: 16556
-// Function ID: 16557
+// Module ID: 16604
+// Function ID: 16605
 // Name: ThermalStates
 // Dependencies: [2]
 
-// Module 16556 (ThermalStates)
+// Module 16604 (ThermalStates)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/constants/ThermalStates.tsx");

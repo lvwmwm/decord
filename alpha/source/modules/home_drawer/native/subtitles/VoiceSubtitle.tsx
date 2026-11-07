@@ -1,14 +1,14 @@
-// Module ID: 18671
-// Function ID: 18672
+// Module ID: 18718
+// Function ID: 18719
 // Name: VoiceSubtitle
-// Dependencies: [19, 21, 5781, 1113, 6199, 2]
+// Dependencies: [19, 21, 5751, 1113, 6173, 2]
 // Exports: default
 
-// Module 18671 (VoiceSubtitle)
+// Module 18718 (VoiceSubtitle)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5781 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 6199 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 6173 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

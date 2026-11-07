@@ -1,10 +1,10 @@
 // Module ID: 10461
 // Function ID: 10462
-// Dependencies: [41, 42, 93, 95, 98, 10462, 10466, 10470]
+// Dependencies: [41, 42, 93, 95, 98, 10445, 10449, 10448, 10453]
 
 // Module 10461
-import _mod10462 from "module_10462" /* 10462 */;
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10470 */;
+import _mod10445 from "module_10445" /* 10445 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10453 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import c3 from "_possibleConstructorReturn" /* 93 */;
@@ -26,15 +26,14 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-const regExp = new RegExp("(?:(?:within|in|for)\\s*)?(?:(?:about|around|roughly|approximately|just)\\s*(?:~\\s*)?)?(" + _mod10462.TIME_UNITS_PATTERN + ")(?=\\W|$)", "i");
-const regExp1 = new RegExp("(?:within|in|for)\\s*(?:(?:about|around|roughly|approximately|just)\\s*(?:~\\s*)?)?(" + _mod10462.TIME_UNITS_PATTERN + ")(?=\\W|$)", "i");
-const regExp2 = new RegExp("(?:within|in|for)\\s*(?:(?:about|around|roughly|approximately|just)\\s*(?:~\\s*)?)?(" + _mod10462.TIME_UNITS_NO_ABBR_PATTERN + ")(?=\\W|$)", "i");
-class ENTimeUnitWithinFormatParser {
+const regExp = new RegExp("(" + _mod10445.TIME_UNITS_PATTERN + ")\\s{0,5}(?:ago|before|earlier)(?=\\W|$)", "i");
+const regExp1 = new RegExp("(" + _mod10445.TIME_UNITS_NO_ABBR_PATTERN + ")\\s{0,5}(?:ago|before|earlier)(?=\\W|$)", "i");
+class ENTimeUnitAgoFormatParser {
   constructor(strictMode) {
     let constructResult;
     const self = this;
-    _classCallCheck(this, ENTimeUnitWithinFormatParser);
-    const obj = _getPrototypeOf(ENTimeUnitWithinFormatParser);
+    _classCallCheck(this, ENTimeUnitAgoFormatParser);
+    const obj = _getPrototypeOf(ENTimeUnitAgoFormatParser);
     const tmp2 = _getPrototypeOf;
     const tmp3 = c3;
     if (_isNativeReflectConstruct()) {
@@ -48,17 +47,11 @@ class ENTimeUnitWithinFormatParser {
     return tmp3Result;
   }
 }
-_inherits(ENTimeUnitWithinFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+_inherits(ENTimeUnitAgoFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
   key: "innerPattern",
-  value: function innerPattern(option) {
-    let tmp2;
-    if (this.strictMode) {
-      tmp2 = regExp2;
-    } else {
-      tmp2 = option.option.forwardDate ? regExp : regExp1;
-    }
-    return tmp2;
+  value: function innerPattern() {
+    return this.strictMode ? regExp1 : regExp;
   }
 };
 const items = [
@@ -66,21 +59,15 @@ const items = [
   {
     key: "innerExtract",
     value: function innerExtract(reference, arg1) {
-      const str = arg1[0];
-      if (str.match(/^for\s*the\s*\w+/)) {
-        return null;
-      } else {
-        const parseDurationResult = _mod10462.parseDuration(arg1[1]);
-        let relativeFromReference = null;
-        const tmp = require;
-        if (parseDurationResult) {
-          const ParsingComponents = tmp(10466).ParsingComponents;
-          relativeFromReference = ParsingComponents.createRelativeFromReference(reference.reference, parseDurationResult);
-        }
-        return relativeFromReference;
+      const parseDurationResult = _mod10445.parseDuration(arg1[1]);
+      let relativeFromReference = null;
+      if (parseDurationResult) {
+        const ParsingComponents = tmp(10449).ParsingComponents;
+        relativeFromReference = ParsingComponents.createRelativeFromReference(reference.reference, tmp(10448).reverseDuration(parseDurationResult));
       }
+      return relativeFromReference;
     }
   }
 ];
 
-export default _createClass(ENTimeUnitWithinFormatParser, items);
+export default _createClass(ENTimeUnitAgoFormatParser, items);

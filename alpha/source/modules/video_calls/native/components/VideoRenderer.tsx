@@ -1,16 +1,16 @@
-// Module ID: 11937
-// Function ID: 11938
+// Module ID: 11928
+// Function ID: 11929
 // Name: VideoRenderer
-// Dependencies: [32, 19, 17, 21, 5170, 6046, 11938, 11940, 1493, 1377, 8995, 11942, 11943, 11945, 2]
+// Dependencies: [32, 19, 17, 21, 5140, 6019, 11929, 11931, 1493, 1377, 8977, 11933, 11934, 11936, 2]
 
-// Module 11937 (VideoRenderer)
+// Module 11928 (VideoRenderer)
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import useWindowDimensions from "useWindowDimensions" /* 1493 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -72,7 +72,7 @@ const memoResult = react.memo(function VideoRenderer(gestureEnabled) {
   let tmp2 = onReady();
   let tmp3 = resizeMode;
   const tmp4 = dependencyMap;
-  let obj = resizeMode(6046);
+  let obj = resizeMode(6019);
   const surfaceDirectRendererExperiment = obj.useSurfaceDirectRendererExperiment(userId, { location: "VideoRenderer" });
   let tmp6 = first1(react.useState(0), 2);
   let width = tmp6[0];
@@ -88,8 +88,8 @@ const memoResult = react.memo(function VideoRenderer(gestureEnabled) {
   let closure_8 = tmp15;
   [tmp17, c9] = first1(react.useState(true), 2);
   first1(react.useState(true), 2);
-  width(11938)({ location: "VideoRenderer", videoSpinnerContext, userId, streamId, paused, loading: tmp17 });
-  onReady = width(11940)({ streamId, userId, videoSpinnerContext, paused, loading: tmp17, streamKey }).onReady;
+  width(11929)({ location: "VideoRenderer", videoSpinnerContext, userId, streamId, paused, loading: tmp17 });
+  onReady = width(11931)({ streamId, userId, videoSpinnerContext, paused, loading: tmp17, streamKey }).onReady;
   react.useRef(null);
   const ref1 = react.useRef(null);
   ref = react.useRef({ width: 0, height: 0 });
@@ -188,7 +188,7 @@ const memoResult = react.memo(function VideoRenderer(gestureEnabled) {
     return 0;
   }, items2);
   const items3 = [width, first1, first2, first3, memo];
-  const obj2 = resizeMode(8995);
+  const obj2 = resizeMode(8977);
   const store = obj2.useStore((orientation) => orientation.orientation);
   const layoutEffect = react.useLayoutEffect(() => {
     const obj = PlatformUtils;
@@ -252,9 +252,9 @@ const memoResult = react.memo(function VideoRenderer(gestureEnabled) {
   }, items9);
   if (tmp17) {
     const obj3 = { animate: true, style: tmp2.spinner };
-    tmp35 = closure_8(tmp18(11942), obj3);
+    tmp35 = closure_8(tmp18(11933), obj3);
   }
-  const tmp37 = store === tmp3(8995).OrientationType.PORTRAIT;
+  const tmp37 = store === tmp3(8977).OrientationType.PORTRAIT;
   const tmp3Result = tmp3(1377);
   if (tmp3Result.isAndroid()) {
     const obj4 = { onLayout: callback2, style: items10, children: items12 };
@@ -264,8 +264,8 @@ const memoResult = react.memo(function VideoRenderer(gestureEnabled) {
     size = { width, height: first1, alignItems: "center", justifyContent: "center" };
     items11 = [, ];
     const obj7 = { useSurfaceDirectRenderer: surfaceDirectRendererExperiment, streamId, onSize: callback, onReady: callback1, style: memo2 };
-    const tmp18Result = width(11943);
-    items11[0] = closure_8(width(11945), obj7);
+    const tmp18Result = width(11934);
+    items11[0] = closure_8(width(11936), obj7);
     items11[1] = tmp35;
     items12 = [closure_8(tmp18Result, obj5), ];
     const obj8 = { style: memo5, children: tmp56 };
@@ -292,7 +292,7 @@ const memoResult = react.memo(function VideoRenderer(gestureEnabled) {
     obj10 = { collapsable: false, style: memo4, onLayout: callback3, children: items14 };
     const obj11 = { style: memo3, children: items13 };
     const obj12 = { useSurfaceDirectRenderer: surfaceDirectRendererExperiment, streamId, onSize: callback, onReady: callback1, style: memo1 };
-    items13 = [closure_8(width(11945), obj12), ];
+    items13 = [closure_8(width(11936), obj12), ];
     let tmp48 = null;
     const tmp44 = first3;
     const tmp45 = closure_6;
@@ -317,7 +317,7 @@ const memoResult = react.memo(function VideoRenderer(gestureEnabled) {
     const obj14 = { onLayout: callback2, style: items16, children: items17 };
     items16 = [tmp2.center, closure_6.absoluteFillObject];
     const obj15 = { useSurfaceDirectRenderer: surfaceDirectRendererExperiment, streamId, onSize: callback, onReady: callback1, style: memo1 };
-    items17 = [closure_8(width(11945), obj15), tmp35];
+    items17 = [closure_8(width(11936), obj15), tmp35];
     tmp43Result1 = c9(first2, obj14);
   }
   return tmp43Result1;

@@ -1,14 +1,14 @@
-// Module ID: 7713
-// Function ID: 7714
+// Module ID: 7690
+// Function ID: 7691
 // Name: payments/OrderActionCreators
-// Dependencies: [5, 5903, 1072, 3, 1282, 4983, 572, 7505, 2]
+// Dependencies: [5, 5872, 1072, 3, 1282, 4953, 572, 7482, 2]
 // Exports: cancelOrderSigning, discardOrder, getOrCreateOrder, markOrderAsSigningInProgress, patchOrder, patchOrderLineItem, updateOrder
 
-// Module 7713 (payments/OrderActionCreators)
+// Module 7690 (payments/OrderActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants from "Constants" /* 1072 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
-import PaymentConstants from "PaymentConstants" /* 5903 */;
+import PaymentConstants from "PaymentConstants" /* 5872 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -33,7 +33,7 @@ let obj = function _getOrders() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -169,7 +169,7 @@ obj = function _createOrder() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -398,7 +398,7 @@ obj = function _getOrCreateOrder() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -565,7 +565,7 @@ obj = function _patchOrderLineItem() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -705,7 +705,7 @@ obj = function _patchOrder() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -854,7 +854,7 @@ obj = function _updateOrder() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c4;
@@ -1036,7 +1036,7 @@ obj = function _markOrderAsSigningInProgress() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -1075,7 +1075,7 @@ obj = function _markOrderAsSigningInProgress() {
                   const obj2 = { value, done: true };
                   return obj2;
                 } else {
-                  return { value: "HermesInternal", done: null };
+                  return { value: "HermesInternal", done: "HermesInternal" };
                 }
               } else {
                 let c3;
@@ -1204,7 +1204,7 @@ obj = function _markOrderAsSigningInProgress() {
                     c3 = 0;
                     c11 = null;
                     c5 = 3;
-                    return { value: "HermesInternal", done: null };
+                    return { value: "HermesInternal", done: "HermesInternal" };
                   }
                 } catch (tmp38) {
                   closure_2 = tmp38;
@@ -1247,7 +1247,7 @@ obj = function _markOrderAsSigningInProgress() {
           return obj;
         } else {
           c1 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp8) {
         c1 = 3;
@@ -1272,7 +1272,7 @@ obj = function _cancelOrderSigning() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -1313,7 +1313,7 @@ obj = function _cancelOrderSigning() {
                     const obj2 = { value, done: true };
                     return obj2;
                   } else {
-                    return { value: "HermesInternal", done: null };
+                    return { value: "HermesInternal", done: "HermesInternal" };
                   }
                 } else {
                   let c3;

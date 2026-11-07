@@ -1,18 +1,18 @@
-// Module ID: 18066
-// Function ID: 18067
+// Module ID: 18113
+// Function ID: 18114
 // Name: UserSettingsDesignSystemCoachmark
-// Dependencies: [32, 19, 17, 21, 5170, 18064, 18067, 10092, 5788, 5745, 7151, 7452, 7149, 7152, 7378, 5768, 2]
+// Dependencies: [32, 19, 17, 21, 5140, 18111, 18114, 10076, 5758, 5715, 7126, 7429, 7124, 7127, 7355, 5738, 2]
 // Exports: default
 
-// Module 18066 (UserSettingsDesignSystemCoachmark)
-import LayerScope2 from "LayerScope" /* 5768 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7378 */;
-import _modDef18067 from "module_18067" /* 18067 */;
+// Module 18113 (UserSettingsDesignSystemCoachmark)
+import LayerScope2 from "LayerScope" /* 5738 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7355 */;
+import _modDef18114 from "module_18114" /* 18114 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -100,8 +100,8 @@ function Content() {
       gradientColor: tmp
     };
     str2 = undefined;
-    obj2 = { type: "image", src: { uri: _modDef18067 }, aspectRatio: first5 };
-    ({ uri: _modDef18067 });
+    obj2 = { type: "image", src: { uri: _modDef18114 }, aspectRatio: first5 };
+    ({ uri: _modDef18114 });
     if (first3) {
       str2 = "Button";
     }

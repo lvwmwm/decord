@@ -1,26 +1,26 @@
-// Module ID: 10428
-// Function ID: 10429
+// Module ID: 10411
+// Function ID: 10412
 // Name: StickersPremiumUpsellAlert
-// Dependencies: [19, 17, 7696, 1072, 1387, 21, 10429, 1113, 575, 10430, 10431, 5170, 1187, 5781, 7703, 10046, 1493, 7410, 6188, 1252, 10043, 7068, 8450, 5872, 10432, 2]
+// Dependencies: [19, 17, 7673, 1072, 1387, 21, 10412, 1113, 575, 10413, 10414, 5140, 1187, 5751, 7680, 10030, 1493, 7387, 6162, 1252, 10027, 7043, 8429, 5842, 10415, 2]
 // Exports: default
 
-// Module 10428 (StickersPremiumUpsellAlert)
+// Module 10411 (StickersPremiumUpsellAlert)
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import Text_Text from "Text/Text" /* 5781 */;
-import openPremiumModalDefault from "openPremiumModal" /* 10043 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10429 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 10430 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 10431 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import openPremiumModalDefault from "openPremiumModal" /* 10027 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10412 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 10413 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 10414 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import IAPStore from "IAPStore" /* 7696 */;
+import IAPStore from "IAPStore" /* 7673 */;
 import Constants from "Constants" /* 1072 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let c10;
@@ -119,13 +119,13 @@ export default function StickersPremiumUpsellAlert(arg0) {
       const products = obj.loadProducts();
     }
   }, []);
-  const tmp5 = analyticsLocations(10046)(PREMIUM_MONTH_TIER_2.PREMIUM_MONTH_TIER_2);
+  const tmp5 = analyticsLocations(10030)(PREMIUM_MONTH_TIER_2.PREMIUM_MONTH_TIER_2);
   let priceString;
   if (tmp5 != null) {
     priceString = tmp5.priceString;
   }
   const height = tmp3(1493)().height;
-  analyticsLocations = tmp3(7410)().analyticsLocations;
+  analyticsLocations = tmp3(7387)().analyticsLocations;
   let obj = {
     cancelText: intl.string(intl4.t.f3Pet9),
     confirmColor: native.ButtonColors.GREEN,
@@ -147,7 +147,7 @@ export default function StickersPremiumUpsellAlert(arg0) {
     style: items,
     children: items1
   };
-  const tmp3Result = analyticsLocations(6188);
+  const tmp3Result = analyticsLocations(6162);
   intl = intl4.intl;
   intl2 = intl4.intl;
   items = [tmp.alert, ];
@@ -158,8 +158,8 @@ export default function StickersPremiumUpsellAlert(arg0) {
   items[1] = shortHeightAlert;
   let obj2 = { style: tmp.closeContainer, children: closure_13(PressableOpacity, obj3) };
   obj3 = { accessibilityRole: "button", accessibilityLabel: "close", onPress: onClose, children: closure_13(Icon, obj4) };
-  PressableOpacity = tmp9(7068).PressableOpacity;
-  obj4 = { source: analyticsLocations(8450) };
+  PressableOpacity = tmp9(7043).PressableOpacity;
+  obj4 = { source: analyticsLocations(8429) };
   Icon = tmp9(1187).Icon;
   items1 = [closure_13(closure_4, obj2), ];
   const obj5 = {
@@ -169,11 +169,11 @@ export default function StickersPremiumUpsellAlert(arg0) {
     },
     children: items2
   };
-  const obj6 = { source: analyticsLocations(10432), style: tmp.imageHeader };
-  const tmp3Result2 = analyticsLocations(5872);
+  const obj6 = { source: analyticsLocations(10415), style: tmp.imageHeader };
+  const tmp3Result2 = analyticsLocations(5842);
   items2 = [closure_13(tmp3Result2, obj6), , ];
   const obj7 = { style: tmp.description, variant: "body-md/medium", children: format(TBsJfQ, { monthlyPrice: priceString }) };
-  const Text = tmp9(5781).Text;
+  const Text = tmp9(5751).Text;
   const intl3 = tmp9(1113).intl;
   format = intl3.format;
   TBsJfQ = tmp9(1113).t.TBsJfQ;

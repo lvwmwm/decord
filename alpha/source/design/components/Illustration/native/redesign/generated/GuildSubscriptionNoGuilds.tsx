@@ -1,14 +1,14 @@
-// Module ID: 15656
-// Function ID: 15657
+// Module ID: 15698
+// Function ID: 15699
 // Name: GuildSubscriptionNoGuilds
-// Dependencies: [19, 21, 8898, 15657, 15658, 15659, 5177, 5872, 2]
+// Dependencies: [19, 21, 8880, 15699, 15700, 15701, 5147, 5842, 2]
 // Exports: GuildSubscriptionNoGuilds, getGuildSubscriptionNoGuildsSource, useGuildSubscriptionNoGuildsSource
 
-// Module 15656 (GuildSubscriptionNoGuilds)
+// Module 15698 (GuildSubscriptionNoGuilds)
 import Fragment from "Fragment" /* 21 */;
-import shared from "shared" /* 5177 */;
-import FastImageDefault from "FastImage" /* 5872 */;
-import _mod8898 from "module_8898" /* 8898 */;
+import shared from "shared" /* 5147 */;
+import FastImageDefault from "FastImage" /* 5842 */;
+import _mod8880 from "module_8880" /* 8880 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -27,21 +27,21 @@ const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("design/components/Illustration/native/redesign/generated/GuildSubscriptionNoGuilds.tsx");
 
 export function getGuildSubscriptionNoGuildsSource(theme) {
-  const obj = _mod8898;
+  const obj = _mod8880;
   const obj2 = { dark, darker, light };
   return obj.getIllustrationSource(theme, obj2);
 }
 export function useGuildSubscriptionNoGuildsSource() {
   const obj = shared;
   const theme = obj.useThemeContext().theme;
-  const obj2 = _mod8898;
+  const obj2 = _mod8880;
   const obj3 = { dark, darker, light };
   return obj2.getIllustrationSource(theme, obj3);
 }
 export function GuildSubscriptionNoGuilds(arg0) {
   const obj = shared;
   const theme = obj.useThemeContext().theme;
-  const obj2 = _mod8898;
+  const obj2 = _mod8880;
   const obj3 = { dark, darker, light };
   const illustrationSource = obj2.getIllustrationSource(theme, obj3);
   FastImageDefault;

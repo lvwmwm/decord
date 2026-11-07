@@ -1,26 +1,26 @@
-// Module ID: 6806
-// Function ID: 6807
+// Module ID: 6781
+// Function ID: 6782
 // Name: AgeVerificationUtils
-// Dependencies: [5, 19, 5848, 502, 1385, 6807, 6808, 1097, 6809, 6811, 2116, 504, 5847, 6812, 1113, 3252, 6813, 2]
+// Dependencies: [5, 19, 5818, 502, 1385, 6782, 6783, 1097, 6784, 6786, 2116, 504, 5817, 6787, 1113, 3252, 6788, 2]
 // Exports: ageGateSourceHasLightboxBackdrop, getAgeVerificationGetStartedSubtitle, getAgeVerificationGetStartedTitle, isAdultStatus, isAgeVerified, isAssignedByDiscord, isFullscreenAgeVerificationEntryPoint, isVerifiedAdult, isVerifiedTeen, maybePerformReactiveCheck, needsAgeVerification, useIsAgeVerified, useIsAssignedByDiscord, useIsVerifiedAdult, useIsVerifiedTeen, useMaybePerformReactiveCheckForSource, useNeedsAgeVerification, useShowAssignedAgeGroupSettings, useWatchAgeVerificationStatusChange
 
-// Module 6806 (AgeVerificationUtils)
+// Module 6781 (AgeVerificationUtils)
 import get_initialized from "get initialized" /* 504 */;
 import intl7 from "intl" /* 1113 */;
 import Server from "Server" /* 2116 */;
 import _modDef3252 from "module_3252" /* 3252 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5847 */;
-import AgeVerificationConstants from "AgeVerificationConstants" /* 6808 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6809 */;
-import AgeGatedFeature from "AgeGatedFeature" /* 6811 */;
-import usePreviousDefault from "usePrevious" /* 6812 */;
-import ReactiveCheckActionCreators from "ReactiveCheckActionCreators" /* 6813 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5817 */;
+import AgeVerificationConstants from "AgeVerificationConstants" /* 6783 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6784 */;
+import AgeGatedFeature from "AgeGatedFeature" /* 6786 */;
+import usePreviousDefault from "usePrevious" /* 6787 */;
+import ReactiveCheckActionCreators from "ReactiveCheckActionCreators" /* 6788 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import RegionalFeatureConfigStore from "RegionalFeatureConfigStore" /* 5848 */;
+import RegionalFeatureConfigStore from "RegionalFeatureConfigStore" /* 5818 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import UserStore from "UserStore" /* 1385 */;
-import AgeVerificationStore from "AgeVerificationStore" /* 6807 */;
+import AgeVerificationStore from "AgeVerificationStore" /* 6782 */;
 import AgeGateConstants from "AgeGateConstants" /* 1097 */;
 import size from "module_2" /* 2 */;
 
@@ -29,8 +29,8 @@ let _require, c0, c1, dependencyMap, importDefault;
 
 let AgeGateSource;
 let c10;
-const f90279 = () => currentUser.getCurrentUser();
-const f90280 = () => {
+const f90614 = () => currentUser.getCurrentUser();
+const f90615 = () => {
   currentUser = currentUser.getCurrentUser();
   let prop;
   if (currentUser != null) {
@@ -39,14 +39,14 @@ const f90280 = () => {
   const tmp5 = prop === require("Server").AgeVerificationStatusUkAndAusOnly.INFERRED_ADULT || prop === require("Server").AgeVerificationStatusUkAndAusOnly.INFERRED_TEEN;
   return tmp5;
 };
-const f90281 = () => currentUser.getCurrentUser();
+const f90616 = () => currentUser.getCurrentUser();
 function useShouldCallReactiveCheck() {
   let closure_0;
   let currentUser;
   let tmp = _require;
   const items = [UserStore];
   obj = require("get initialized");
-  const stateFromStores = obj.useStateFromStores(items, f90281);
+  const stateFromStores = obj.useStateFromStores(items, f90616);
   let prop;
   if (stateFromStores != null) {
     prop = stateFromStores.ageVerificationStatus;
@@ -60,8 +60,8 @@ function useShouldCallReactiveCheck() {
     tmp5 = prop1 !== tmp(2116).AgeVerificationStatusUkAndAusOnly.CLIENT_ONLY_PENDING;
   }
   _require = tmp5;
-  const tmpResult = tmp(5847);
-  const isFeatureAgeGated = tmpResult.useIsFeatureAgeGated(tmp(6811).AgeGatedFeature.REACTIVE_CHECK);
+  const tmpResult = tmp(5817);
+  const isFeatureAgeGated = tmpResult.useIsFeatureAgeGated(tmp(6786).AgeGatedFeature.REACTIVE_CHECK);
   const items1 = [AgeVerificationStore];
   const items2 = [tmp5, isFeatureAgeGated];
   const tmpResult2 = tmp(504);
@@ -90,8 +90,8 @@ function shouldCallReactiveCheck() {
   }
   let tmp7 = !tmp5;
   if (tmp7) {
-    tmp7 = RegionalFeatureConfigStore.isFeatureAgeGated(tmp3(6811).AgeGatedFeature.REACTIVE_CHECK) && AgeVerificationStore.shouldCallReactiveCheck();
-    const isFeatureAgeGatedResult = RegionalFeatureConfigStore.isFeatureAgeGated(tmp3(6811).AgeGatedFeature.REACTIVE_CHECK) && AgeVerificationStore.shouldCallReactiveCheck();
+    tmp7 = RegionalFeatureConfigStore.isFeatureAgeGated(tmp3(6786).AgeGatedFeature.REACTIVE_CHECK) && AgeVerificationStore.shouldCallReactiveCheck();
+    const isFeatureAgeGatedResult = RegionalFeatureConfigStore.isFeatureAgeGated(tmp3(6786).AgeGatedFeature.REACTIVE_CHECK) && AgeVerificationStore.shouldCallReactiveCheck();
   }
   return tmp7;
 }
@@ -108,7 +108,7 @@ let obj = function _maybePerformReactiveCheck() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -178,7 +178,7 @@ export function useNeedsAgeVerification() {
   let currentUser;
   const items = [UserStore];
   obj = get_initialized;
-  const stateFromStores = obj.useStateFromStores(items, f90279);
+  const stateFromStores = obj.useStateFromStores(items, f90614);
   let prop;
   if (stateFromStores != null) {
     prop = stateFromStores.ageVerificationStatus;
@@ -224,7 +224,7 @@ export function isVerifiedAdult() {
 export function useIsVerifiedAdult() {
   const items = [UserStore];
   obj = get_initialized;
-  const stateFromStores = obj.useStateFromStores(items, f90279);
+  const stateFromStores = obj.useStateFromStores(items, f90614);
   let prop;
   if (stateFromStores != null) {
     prop = stateFromStores.ageVerificationStatus;
@@ -244,12 +244,12 @@ export function isAssignedByDiscord() {
 export function useIsAssignedByDiscord() {
   const items = [UserStore];
   obj = get_initialized;
-  return obj.useStateFromStores(items, f90280);
+  return obj.useStateFromStores(items, f90615);
 }
 export function useShowAssignedAgeGroupSettings() {
   const items = [UserStore];
   obj = get_initialized;
-  const stateFromStores = obj.useStateFromStores(items, f90280);
+  const stateFromStores = obj.useStateFromStores(items, f90615);
   const obj2 = RegionalFeatureConfigUtils;
   const tmp2 = obj2.useIsFeatureAgeGated(AgeGatedFeature.AgeGatedFeature.REACTIVE_CHECK) && stateFromStores;
   return tmp2;
@@ -273,7 +273,7 @@ export function isAgeVerified() {
 export function useIsAgeVerified() {
   const items = [UserStore];
   obj = get_initialized;
-  const stateFromStores = obj.useStateFromStores(items, f90281);
+  const stateFromStores = obj.useStateFromStores(items, f90616);
   let prop;
   if (stateFromStores != null) {
     prop = stateFromStores.ageVerificationStatus;

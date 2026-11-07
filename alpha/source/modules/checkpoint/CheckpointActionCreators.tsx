@@ -1,19 +1,19 @@
-// Module ID: 13645
-// Function ID: 13646
+// Module ID: 13669
+// Function ID: 13670
 // Name: CheckpointActionCreators
-// Dependencies: [5, 5019, 13643, 1072, 572, 13641, 1282, 13646, 6594, 7572, 7923, 7735, 13591, 1380, 2]
-// Exports: completeCheckpoint, fetchCheckpointData, resetCheckpoint, saveCheckpointProgress, selectCharacterTrait, sendCheckpointCard, sendSidekickMessage, toggleMute
+// Dependencies: [5, 4989, 13667, 1072, 572, 13665, 1282, 13670, 6569, 7549, 7900, 7712, 13615, 1380, 2]
+// Exports: completeCheckpoint, fetchCheckpointData, resetCheckpoint, saveCheckpointProgress, selectCharacterTrait, sendCheckpointCard, sendSidekickMessage, setVolume, toggleMute
 
-// Module 13645 (CheckpointActionCreators)
+// Module 13669 (CheckpointActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7572 */;
-import formatResults from "formatResults" /* 13591 */;
-import Tracking from "Tracking" /* 13641 */;
-import CheckpointStore2 from "CheckpointStore" /* 13643 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7549 */;
+import formatResults from "formatResults" /* 13615 */;
+import Tracking from "Tracking" /* 13665 */;
+import CheckpointStore2 from "CheckpointStore" /* 13667 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 5019 */;
+import ChannelStore from "ChannelStore" /* 4989 */;
 import size from "module_2" /* 2 */;
 
 const CheckpointStore = CheckpointStore2;
@@ -36,7 +36,7 @@ let obj = function _fetchCheckpointData() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c3;
@@ -141,7 +141,7 @@ obj = function _completeCheckpoint() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c3;
@@ -216,7 +216,7 @@ obj = function _resetCheckpoint() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c2;
@@ -290,7 +290,7 @@ obj = function _sendSidekickMessage() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -383,7 +383,7 @@ obj = function _sendCheckpointCard() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       while (true) {
@@ -465,7 +465,7 @@ obj = function _sendCheckpointCard() {
               }
             }
             c10 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           c8 = 0;
@@ -486,6 +486,11 @@ export function toggleMute() {
   obj.dispatch({ type: "CHECKPOINT_TOGGLE_MUTE" });
   const obj2 = Tracking;
   const result = obj2.trackCheckpoint2026MuteToggled(CheckpointStore.isMuted);
+}
+export function setVolume(volume) {
+  obj = DispatcherDefault;
+  const obj2 = { type: "CHECKPOINT_SET_VOLUME", volume };
+  return obj.dispatch(obj2);
 }
 export function selectCharacterTrait(trait, optionId) {
   obj = DispatcherDefault;

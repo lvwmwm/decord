@@ -1,18 +1,18 @@
-// Module ID: 13988
-// Function ID: 13989
+// Module ID: 14013
+// Function ID: 14014
 // Name: ForumPostMessageCount
-// Dependencies: [19, 17, 21, 5170, 575, 1377, 9974, 1113, 8735, 5781, 11297, 2]
+// Dependencies: [19, 17, 21, 5140, 575, 1377, 9958, 1113, 8714, 5751, 11279, 2]
 // Exports: default
 
-// Module 13988 (ForumPostMessageCount)
+// Module 14013 (ForumPostMessageCount)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import ForumHooks from "ForumHooks" /* 9974 */;
-import AnimatedCounterDefault from "AnimatedCounter" /* 11297 */;
+import ForumHooks from "ForumHooks" /* 9958 */;
+import AnimatedCounterDefault from "AnimatedCounter" /* 11279 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import PlatformUtils_mod from "PlatformUtils" /* 1377 */;
 import size from "module_2" /* 2 */;
 
@@ -70,7 +70,7 @@ export default function ForumPostMessageCount(hasUnreads) {
   intl = tmp2(1113).intl;
   const obj3 = { size: "xs", style: hasUnreads ? tmp.iconUnread : tmp.iconRead, color: str2 };
   str2 = "icon-muted";
-  const ChatIcon = tmp2(8735).ChatIcon;
+  const ChatIcon = tmp2(8714).ChatIcon;
   const tmp6 = View;
   if (hasUnreads) {
     str2 = "interactive-text-default";
@@ -78,7 +78,7 @@ export default function ForumPostMessageCount(hasUnreads) {
   items1 = [React3(ChatIcon, obj3), , ];
   if (isMaxMessageCount) {
     const obj4 = { variant: "body-sm/semibold", color: str, children: messageCountText };
-    tmp7Result = tmp7(tmp2(5781).Text, obj4);
+    tmp7Result = tmp7(tmp2(5751).Text, obj4);
   } else {
     const obj5 = { count: messageCount, textVariant: "body-sm/semibold", textColor: str, animate: false };
     tmp7Result = tmp7(AnimatedCounterDefault, obj5);
@@ -87,7 +87,7 @@ export default function ForumPostMessageCount(hasUnreads) {
   let tmp5Result = null != unreadCount;
   if (tmp5Result) {
     const obj6 = { variant: "body-sm/semibold", color: "text-brand", style: tmp.messageUnreadCount, children: items2 };
-    const Text = tmp2(5781).Text;
+    const Text = tmp2(5751).Text;
     const intl2 = tmp2(1113).intl;
     const obj7 = { count: unreadCount };
     items2 = ["(", intl2.format(intl3.t.z3PEth, obj7), ")"];

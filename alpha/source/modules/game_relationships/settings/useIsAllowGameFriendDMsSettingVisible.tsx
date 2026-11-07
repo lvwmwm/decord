@@ -1,12 +1,12 @@
-// Module ID: 18202
-// Function ID: 18203
+// Module ID: 18249
+// Function ID: 18250
 // Name: useIsAllowGameFriendDMsSettingVisible
-// Dependencies: [7899, 504, 2]
+// Dependencies: [7876, 504, 2]
 // Exports: useIsAllowGameFriendDMsSettingVisible
 
-// Module 18202 (useIsAllowGameFriendDMsSettingVisible)
+// Module 18249 (useIsAllowGameFriendDMsSettingVisible)
 import get_initialized from "get initialized" /* 504 */;
-import GameRelationshipStore from "GameRelationshipStore" /* 7899 */;
+import GameRelationshipStore from "GameRelationshipStore" /* 7876 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/game_relationships/settings/useIsAllowGameFriendDMsSettingVisible.tsx");

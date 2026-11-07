@@ -1,14 +1,14 @@
-// Module ID: 10027
-// Function ID: 10028
+// Module ID: 10011
+// Function ID: 10012
 // Name: ConversationFocusScreen
-// Dependencies: [19, 9986, 21, 1502, 504, 10028, 2]
+// Dependencies: [19, 9970, 21, 1502, 504, 10012, 2]
 // Exports: default
 
-// Module 10027 (ConversationFocusScreen)
+// Module 10011 (ConversationFocusScreen)
 import Fragment from "Fragment" /* 21 */;
-import ConversationFocusViewDefault from "ConversationFocusView" /* 10028 */;
+import ConversationFocusViewDefault from "ConversationFocusView" /* 10012 */;
 import react from "react" /* 19 */;
-import SelectedConversationStore from "SelectedConversationStore" /* 9986 */;
+import SelectedConversationStore from "SelectedConversationStore" /* 9970 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;

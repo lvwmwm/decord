@@ -1,13 +1,13 @@
-// Module ID: 16731
-// Function ID: 16732
+// Module ID: 16779
+// Function ID: 16780
 // Name: getDisplayNameStylesFontName
-// Dependencies: [1395, 3056, 4441, 2]
+// Dependencies: [1395, 3056, 4411, 2]
 // Exports: default
 
-// Module 16731 (getDisplayNameStylesFontName)
+// Module 16779 (getDisplayNameStylesFontName)
 import DisplayNameFont from "DisplayNameFont" /* 1395 */;
 import _modDef3056 from "module_3056" /* 3056 */;
-import _modDef4441 from "module_4441" /* 4441 */;
+import _modDef4411 from "module_4411" /* 4411 */;
 import size from "module_2" /* 2 */;
 
 const DISPLAY_NAME_STYLES_FONT_NAMES = {};
@@ -23,7 +23,7 @@ DISPLAY_NAME_STYLES_FONT_NAMES[DisplayNameFont.DisplayNameFont.PLAYPEN_SANS] = _
 DISPLAY_NAME_STYLES_FONT_NAMES[DisplayNameFont.DisplayNameFont.ORBITRON] = _modDef3056.pwbAIk;
 DISPLAY_NAME_STYLES_FONT_NAMES[DisplayNameFont.DisplayNameFont.NEW_ROCKER] = _modDef3056["Llo/Ia"];
 DISPLAY_NAME_STYLES_FONT_NAMES[DisplayNameFont.DisplayNameFont.KALAM] = _modDef3056.t9Les4;
-DISPLAY_NAME_STYLES_FONT_NAMES[DisplayNameFont.DisplayNameFont.HEXAGON] = _modDef4441.ALTlzk;
+DISPLAY_NAME_STYLES_FONT_NAMES[DisplayNameFont.DisplayNameFont.HEXAGON] = _modDef4411.ALTlzk;
 const result = size.fileFinishedImporting("modules/display_name_styles/getDisplayNameStylesFontName.tsx");
 
 export default function getDisplayNameStylesFontName(arg0) {

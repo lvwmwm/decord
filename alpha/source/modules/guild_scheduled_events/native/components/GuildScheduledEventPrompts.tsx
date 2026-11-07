@@ -1,17 +1,17 @@
-// Module ID: 12044
-// Function ID: 12045
+// Module ID: 12035
+// Function ID: 12036
 // Name: GuildScheduledEventPrompts
-// Dependencies: [19, 21, 5170, 575, 9118, 8267, 9082, 9214, 1113, 9310, 4992, 2166, 2]
+// Dependencies: [19, 21, 5140, 575, 9100, 8246, 9064, 9196, 1113, 9292, 4962, 2166, 2]
 // Exports: ScheduleEventPrompt, StartEventPrompt
 
-// Module 12044 (GuildScheduledEventPrompts)
+// Module 12035 (GuildScheduledEventPrompts)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import guild_scheduled_events_GuildScheduledEventModalActionCreators from "guild_scheduled_events/GuildScheduledEventModalActionCreators" /* 9082 */;
-import useManageResourcePermissions from "useManageResourcePermissions" /* 9118 */;
+import guild_scheduled_events_GuildScheduledEventModalActionCreators from "guild_scheduled_events/GuildScheduledEventModalActionCreators" /* 9064 */;
+import useManageResourcePermissions from "useManageResourcePermissions" /* 9100 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 let obj2;
@@ -38,14 +38,14 @@ export function ScheduleEventPrompt(isLive) {
   let obj = useManageResourcePermissions;
   let tmp4 = null;
   if (obj.useManageResourcePermissions(channel).canCreateGuildEvent) {
-    const FormCTA = tmp2(8267).FormCTA;
+    const FormCTA = tmp2(8246).FormCTA;
     const intl = tmp2(1113).intl;
     const intl2 = tmp2(1113).intl;
     tmp4 = <FormCTA style={tmp.actionBarCTAContainer} onPress={function handleScheduleEvent() {
       const obj = guild_scheduled_events_GuildScheduledEventModalActionCreators;
       const obj2 = { channel };
       const result = obj.openCreateOrEditGuildEventModal(require, obj2);
-    }} iconSource={channel(9214)} iconStyle={tmp.promptIconStyle} completed={isLive} title={intl.string(intl3.t["60lJ0C"])} subtitle={intl2.string(intl3.t["EYn7/y"])} />;
+    }} iconSource={channel(9196)} iconStyle={tmp.promptIconStyle} completed={isLive} title={intl.string(intl3.t["60lJ0C"])} subtitle={intl2.string(intl3.t["EYn7/y"])} />;
   }
   return tmp4;
 }
@@ -60,10 +60,10 @@ export function StartEventPrompt(event) {
   ({ channel, isLive } = event);
   const tmp = closure_4();
   ({ name, scheduled_start_time } = event);
-  let obj = event(9118);
+  let obj = event(9100);
   let tmp4 = null;
   if (obj.useManageResourcePermissions(channel).canManageGuildEvent(event)) {
-    const FormCTA = tmp2(8267).FormCTA;
+    const FormCTA = tmp2(8246).FormCTA;
     const items = [, ];
     ({ iconContainerStyle: arr[0], greenIcon: arr[1] } = tmp);
     const intl = tmp2(1113).intl;
@@ -75,8 +75,8 @@ export function StartEventPrompt(event) {
     tmp4 = <FormCTA style={tmp.actionBarCTAContainer} onPress={function handleStartEvent() {
       const obj = guild_scheduled_events_GuildScheduledEventModalActionCreators;
       const result = obj.openStartGuildEventModal(event, recurrenceId);
-    }} iconSource={recurrenceId(9310)} iconStyle={tmp.iconStyle} iconContainerStyle={items} completed={isLive} title={intl.formatToPlainString(event(1113).t["1vGXqM"], obj3)} subtitle={formatToPlainString(PTebCR, obj4)} />;
-    tmp2Result = event(4992);
+    }} iconSource={recurrenceId(9292)} iconStyle={tmp.iconStyle} iconContainerStyle={items} completed={isLive} title={intl.formatToPlainString(event(1113).t["1vGXqM"], obj3)} subtitle={formatToPlainString(PTebCR, obj4)} />;
+    tmp2Result = event(4962);
   }
   return tmp4;
 }

@@ -1,167 +1,175 @@
 // Module ID: 13073
 // Function ID: 13074
-// Dependencies: [13027]
+// Dependencies: [13044, 13066]
 
 // Module 13073
-import tokenize from "tokenize" /* 13027 */;
+import _mod13044 from "module_13044" /* 13044 */;
 
-let items;
-let items1;
-let obj2;
-function getAttributeName() {
-  let flag;
-  let flag2;
-  let scanner3;
-  const self = this;
-  if (this.scanner.eof) {
-    self.error("Unexpected end of input");
-  }
-  const tokenStart = self.scanner.tokenStart;
-  const scanner = self.scanner;
-  if (scanner.isDelim(42)) {
-    self.scanner.next();
-    flag = false;
-    flag2 = true;
-  } else {
-    flag = true;
-    flag2 = false;
-    if (!self.scanner.isDelim(124)) {
-      self.eat(Ident);
-      flag = true;
-      flag2 = false;
+const require = globalThis.__r;
+let _require, dependencyMap;
+
+function isCommaContextStart(type) {
+  let tmp = null === type;
+  if (!tmp) {
+    let tmp4 = type.type === _mod13044.TYPE.Comma || type.type === tmp2(13044).TYPE.Function || type.type === tmp2(13044).TYPE.LeftParenthesis || type.type === tmp2(13044).TYPE.LeftSquareBracket || type.type === tmp2(13044).TYPE.LeftCurlyBracket;
+    if (!tmp4) {
+      tmp4 = type.type === tmp2(13044).TYPE.Delim && "?" !== type.value;
+      const tmp5 = type.type === tmp2(13044).TYPE.Delim && "?" !== type.value;
     }
+    tmp = tmp4;
   }
-  const scanner2 = self.scanner;
-  if (scanner2.isDelim(124)) {
-    const source = self.scanner.source;
-    if (61 !== source.charCodeAt(self.scanner.tokenStart + 1)) {
-      const iter2 = self.scanner;
-      iter2.next();
-      self.eat(Ident);
-    } else if (flag2) {
-      self.error("Identifier is expected", self.scanner.tokenEnd);
-    }
-  } else if (flag2) {
-    self.error("Vertical line is expected");
-  }
-  if (flag) {
-    flag = self.scanner.tokenType === Colon;
-  }
-  if (flag) {
-    const iter3 = self.scanner;
-    iter3.next();
-    self.eat(Ident);
-  }
-  const obj = { type: "Identifier", loc: self.getLocation(tokenStart, self.scanner.tokenStart), name: scanner3.substrToCursor(tokenStart) };
-  scanner3 = self.scanner;
-  return obj;
+  return tmp;
 }
-function getOperator() {
-  const self = this;
-  const tokenStart = this.scanner.tokenStart;
-  const source = this.scanner.source;
-  const charCodeAtResult = source.charCodeAt(tokenStart);
-  const tmp3 = tmp2 && 126 !== charCodeAtResult && 94 !== charCodeAtResult && 36 !== charCodeAtResult && 42 !== charCodeAtResult && 124 !== charCodeAtResult;
-  if (tmp3) {
-    self.error("Attribute selector (=, ~=, ^=, $=, *=, |=) is expected");
-  }
-  const iter = self.scanner;
-  iter.next();
-  if (61 !== charCodeAtResult) {
-    const scanner = self.scanner;
-    if (!scanner.isDelim(61)) {
-      self.error("Equal sign is expected");
+function internalMatch(arg0, arg1, arg2) {
+  let closure_0;
+  let syntax;
+  _require = arg0;
+  dependencyMap = arg1;
+  let c2 = null;
+  Match = null;
+  c4 = -1;
+  let closure_5 = 0;
+  let prev = { type: 0, syntax: null, token: null, prev: null };
+  while (true) {
+    let tmp = c4;
+    let sum = c4 + 1;
+    c4 = sum;
+    let tmp3 = null;
+    if (sum < arg0.length) {
+      let tmp4 = c4;
+      tmp3 = arg0[c4];
     }
-    const iter2 = self.scanner;
-    iter2.next();
-  }
-  const scanner2 = self.scanner;
-  return scanner2.substrToCursor(tokenStart);
-}
-const Ident = tokenize.TYPE.Ident;
-const String = tokenize.TYPE.String;
-const Colon = tokenize.TYPE.Colon;
-const LeftSquareBracket = tokenize.TYPE.LeftSquareBracket;
-const RightSquareBracket = tokenize.TYPE.RightSquareBracket;
-let obj = {
-  name: "AttributeSelector",
-  structure: obj2,
-  parse() {
-    const self = this;
-    const tokenStart = this.scanner.tokenStart;
-    this.eat(LeftSquareBracket);
-    const scanner = this.scanner;
-    scanner.skipSC();
-    const scanner2 = self.scanner;
-    const callResult = getAttributeName.call(self);
-    scanner2.skipSC();
+    Match = tmp3;
+    let tmp5 = null;
     let tmp6 = null;
     let tmp7 = null;
     let tmp8 = null;
-    const tmp5 = RightSquareBracket;
-    if (self.scanner.tokenType !== RightSquareBracket) {
-      let tmp14 = null;
-      let tmp15 = null;
-      const tmp20 = Ident;
-      if (self.scanner.tokenType !== Ident) {
-        let StringResult;
-        const scanner3 = self.scanner;
-        const callResult1 = getOperator.call(self);
-        scanner3.skipSC();
-        if (self.scanner.tokenType === String) {
-          StringResult = self.String();
-        } else {
-          StringResult = self.Identifier();
+    if (null === tmp3) {
+      break;
+    } else {
+      let tmp10 = _require;
+      if (tmp3.type === require("module_13044").TYPE.WhiteSpace) {
+        continue;
+      } else {
+        tmp5 = null;
+        tmp6 = null;
+        tmp7 = null;
+        tmp8 = null;
+        if (Match.type !== tmp10(13044).TYPE.Comment) {
+          break;
         }
-        const scanner4 = self.scanner;
-        scanner4.skipSC();
-        tmp14 = StringResult;
-        tmp15 = callResult1;
       }
-      let tokenValue = null;
-      if (self.scanner.tokenType === tmp20) {
-        const scanner5 = self.scanner;
-        tokenValue = scanner5.getTokenValue();
-        const iter = self.scanner;
-        iter.next();
-        const scanner6 = self.scanner;
-        scanner6.skipSC();
-      }
-      tmp6 = tokenValue;
-      tmp7 = tmp14;
-      tmp8 = tmp15;
+      continue;
     }
-    self.eat(tmp5);
-    const obj = { type: "AttributeSelector", loc: self.getLocation(tokenStart, self.scanner.tokenStart), name: callResult, matcher: tmp8, value: tmp7, flags: tmp6 };
-    return obj;
+  }
+}
+let Match = "Match";
+let c4 = 0;
+let obj = {
+  matchAsList(arg0, arg1, arg2) {
+    let obj = arg2;
+    const tmp = internalMatch;
+    if (!arg2) {
+      obj = {};
+    }
+    const str = tmp(arg0, arg1, obj);
+    if (null !== str.match) {
+      let prev = str.match;
+      let tmp3 = null;
+      let tmp4 = null;
+      if (null !== prev) {
+        do {
+          prev.prev = tmp3;
+          tmp3 = prev;
+          tmp4 = prev;
+          prev = prev.prev;
+        } while (null !== tmp2);
+      }
+      let prev2 = tmp4.prev;
+      str.match = [];
+      if (null !== prev2) {
+        do {
+          let type = prev2.type;
+          if (0 !== type) {
+            if (2 !== type) {
+              if (3 !== type) {
+                let match = str.match;
+                let obj2 = { token: prev2.token.value, node: prev2.token.node };
+                let arr = match.push(obj2);
+              }
+            }
+            let match1 = str.match;
+            let obj5 = { type: null, syntax: null };
+            ({ type: obj3.type, syntax: obj3.syntax } = prev2);
+            let arr2 = match1.push(obj5);
+          }
+          prev2 = prev2.prev;
+        } while (null !== prev2);
+      }
+    }
+    return str;
   },
-  generate(name) {
-    const self = this;
-    this.chunk("[");
-    this.node(name.name);
-    let str = " ";
-    let str2 = " ";
-    if (null !== name.matcher) {
-      self.chunk(name.matcher);
-      let tmp4 = str;
-      if (null !== name.value) {
-        self.node(name.value);
-        if ("String" === name.value.type) {
-          str = "";
-        }
-        tmp4 = str;
+  matchAsTree(arr, match, self) {
+    let tmp2;
+    let obj = self;
+    const tmp = internalMatch;
+    if (!self) {
+      obj = {};
+    }
+    const str = tmp(arr, match, obj);
+    if (null === str.match) {
+      return str;
+    } else {
+      let prev = str.match;
+      let obj2 = { syntax: tmp2, match: [] };
+      tmp2 = match.syntax || null;
+      str.match = obj2;
+      const items = [obj2];
+      let tmp3 = null;
+      let tmp4 = null;
+      if (null !== prev) {
+        do {
+          prev.prev = tmp3;
+          tmp3 = prev;
+          tmp4 = prev;
+          prev = prev.prev;
+        } while (null !== tmp5);
       }
-      str2 = tmp4;
+      let prev2 = tmp4.prev;
+      if (null !== prev2) {
+        do {
+          let tmp10;
+          let type = prev2.type;
+          if (2 === type) {
+            match = obj2.match;
+            let obj3 = { syntax: prev2.syntax, match: [] };
+            arr = match.push(obj3);
+            let arr2 = items.push(obj3);
+            tmp10 = obj3;
+          } else if (3 === type) {
+            let arr3 = items.pop();
+            tmp10 = items[items.length - 1];
+          } else {
+            let match1 = obj2.match;
+            let syntax = prev2.syntax;
+            let push = match1.push;
+            if (!syntax) {
+              syntax = null;
+            }
+            let obj4 = { syntax, token: prev2.token.value, node: prev2.token.node };
+            let arr7 = push(obj4);
+            tmp10 = obj2;
+          }
+          prev2 = prev2.prev;
+          obj2 = tmp10;
+        } while (null !== prev2);
+      }
+      return str;
     }
-    if (null !== name.flags) {
-      self.chunk(str2);
-      self.chunk(name.flags);
-    }
-    self.chunk("]");
+  },
+  getTotalIterationCount() {
+    return c4;
   }
 };
-obj2 = { name: "Identifier", matcher: items, value: ["String", "Identifier", null], flags: items1 };
-items = [String, null];
-items1 = [String, null];
 
 export default obj;

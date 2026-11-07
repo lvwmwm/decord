@@ -1,23 +1,23 @@
 // Module ID: 2136
 // Function ID: 2137
 // Name: ClipsStore
-// Dependencies: [5, 2137, 502, 8305, 1072, 6020, 16133, 4981, 16134, 1403, 16135, 16137, 16138, 504, 572, 2]
+// Dependencies: [5, 2137, 502, 8284, 1072, 5993, 16181, 4951, 16182, 1403, 16183, 16185, 16186, 504, 572, 2]
 
 // Module 2136 (ClipsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import FlagUtils from "FlagUtils" /* 1403 */;
-import DiscordNativeDefault from "DiscordNative" /* 4981 */;
-import ClipsDefaultSettingsUtils from "ClipsDefaultSettingsUtils" /* 16133 */;
-import clipPOVOverlap from "clipPOVOverlap" /* 16135 */;
-import DistributedClipsExperimentDefault from "DistributedClipsExperiment" /* 16137 */;
-import AutoclippingDefaultOverrideExperiment2 from "AutoclippingDefaultOverrideExperiment" /* 16138 */;
+import DiscordNativeDefault from "DiscordNative" /* 4951 */;
+import ClipsDefaultSettingsUtils from "ClipsDefaultSettingsUtils" /* 16181 */;
+import clipPOVOverlap from "clipPOVOverlap" /* 16183 */;
+import DistributedClipsExperimentDefault from "DistributedClipsExperiment" /* 16185 */;
+import AutoclippingDefaultOverrideExperiment2 from "AutoclippingDefaultOverrideExperiment" /* 16186 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import RunningGameStore from "RunningGameStore" /* 2137 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ClipsConstants from "ClipsConstants" /* 8305 */;
+import ClipsConstants from "ClipsConstants" /* 8284 */;
 import Constants from "Constants" /* 1072 */;
-import StreamSettingsConstants from "StreamSettingsConstants" /* 6020 */;
+import StreamSettingsConstants from "StreamSettingsConstants" /* 5993 */;
 import size from "module_2" /* 2 */;
 
 let _null, c4, c5, closure_2;
@@ -48,7 +48,7 @@ let obj = function _migrateDefaultStorage() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c3;
@@ -118,7 +118,7 @@ let obj = function _migrateDefaultStorage() {
           closure_129_42.emitChange();
         }
         c5 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp33) {
         closure_2 = tmp33;
         if (0 === c3) {
@@ -306,7 +306,7 @@ const map = new Map();
 map1 = new Map();
 const map2 = new Map();
 let closure_35 = [];
-obj = { clipsEnabled: false, storageLocation: "default", clipsQuality: { resolution: ApplicationStreamResolutions.RESOLUTION_1080, frameRate: ApplicationStreamFPS.FPS_60, bitratePercent: DEFAULT_CLIPS_BITRATE_PERCENT }, clipsLength: ClipsLengthSettings.SECONDS_30, remindersEnabled: true, decoupledClipsEnabled: false, maxAutoClips: 20, clipSignals: { enableDistributedSignals: true, enableGameSignals: true }, debugTooltipsEnabled: false, enableAutoclipping: "flexDirection", showPovClipsInGallery: "nested-text" };
+obj = { clipsEnabled: false, storageLocation: "default", clipsQuality: { resolution: ApplicationStreamResolutions.RESOLUTION_1080, frameRate: ApplicationStreamFPS.FPS_60, bitratePercent: DEFAULT_CLIPS_BITRATE_PERCENT }, clipsLength: ClipsLengthSettings.SECONDS_30, remindersEnabled: true, decoupledClipsEnabled: false, maxAutoClips: 20, clipSignals: { enableDistributedSignals: true, enableGameSignals: true }, debugTooltipsEnabled: false, enableAutoclipping: "flexDirection", showPovClipsInGallery: true };
 let obj2 = { clipsSettings: obj, hardwareClassification: null, hardwareClassificationVersion: 0, clipsDefaultSettingsState: ClipsDefaultSettingsUtils.INITIAL_CLIPS_DEFAULT_SETTINGS_STATE, hasAutoEnabledClipsForHardware: false, newClipIds: [], hasClips: false, hasTakenDecoupledClip: false, clipsEducationState: { dismissedAt: null, numberOfGamesLaunchedSinceDismissal: 0, numberOfTimesDismissed: 0 } };
 obj = obj2;
 const DeviceSettingsStore = get_initializedDefault.DeviceSettingsStore;

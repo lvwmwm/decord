@@ -1,12 +1,12 @@
-// Module ID: 7836
-// Function ID: 7837
+// Module ID: 7813
+// Function ID: 7814
 // Name: StorefrontCollectionRecord
-// Dependencies: [7837, 7832, 7838, 2]
+// Dependencies: [7814, 7809, 7815, 2]
 
-// Module 7836 (StorefrontCollectionRecord)
-import ShopAssetConfigRecord from "ShopAssetConfigRecord" /* 7832 */;
-import CollectiblesStoreListingStylesRecord from "CollectiblesStoreListingStylesRecord" /* 7837 */;
-import StorefrontProductRecord from "StorefrontProductRecord" /* 7838 */;
+// Module 7813 (StorefrontCollectionRecord)
+import ShopAssetConfigRecord from "ShopAssetConfigRecord" /* 7809 */;
+import CollectiblesStoreListingStylesRecord from "CollectiblesStoreListingStylesRecord" /* 7814 */;
+import StorefrontProductRecord from "StorefrontProductRecord" /* 7815 */;
 import size from "module_2" /* 2 */;
 
 const AssetDisplayConfigRecord = ShopAssetConfigRecord.AssetDisplayConfigRecord;

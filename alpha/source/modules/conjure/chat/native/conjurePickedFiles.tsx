@@ -1,15 +1,15 @@
-// Module ID: 12954
-// Function ID: 12955
+// Module ID: 12965
+// Function ID: 12966
 // Name: conjurePickedFiles
-// Dependencies: [5, 8312, 8300, 8301, 12776, 8311, 8302, 2]
+// Dependencies: [5, 8291, 8279, 8280, 12789, 8290, 8281, 2]
 // Exports: pickConjurePhotos, pickedName, uploadConjurePickedFile
 
-// Module 12954 (conjurePickedFiles)
-import UploadDefault from "Upload" /* 8300 */;
-import UploadPlatform from "UploadPlatform" /* 8301 */;
-import utils_UploadUtils from "utils/UploadUtils" /* 8311 */;
-import ImagePickerDefault from "ImagePicker" /* 8312 */;
-import conjureAttachmentDrafts from "conjureAttachmentDrafts" /* 12776 */;
+// Module 12965 (conjurePickedFiles)
+import UploadDefault from "Upload" /* 8279 */;
+import UploadPlatform from "UploadPlatform" /* 8280 */;
+import utils_UploadUtils from "utils/UploadUtils" /* 8290 */;
+import ImagePickerDefault from "ImagePicker" /* 8291 */;
+import conjureAttachmentDrafts from "conjureAttachmentDrafts" /* 12789 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ let obj = function _pickConjurePhotos() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -142,7 +142,7 @@ obj = function _uploadConjurePickedFile() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {

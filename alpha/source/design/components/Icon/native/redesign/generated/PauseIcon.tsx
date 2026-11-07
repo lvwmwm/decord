@@ -1,14 +1,14 @@
-// Module ID: 8942
-// Function ID: 8943
+// Module ID: 8924
+// Function ID: 8925
 // Name: PauseIcon
-// Dependencies: [19, 21, 575, 5871, 8943, 2]
+// Dependencies: [19, 21, 575, 5841, 8925, 2]
 // Exports: PauseIcon
 
-// Module 8942 (PauseIcon)
+// Module 8924 (PauseIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5871 */;
-import AssetRegistry from "AssetRegistry" /* 8943 */;
+import BaseIconImage2 from "BaseIconImage" /* 5841 */;
+import AssetRegistry from "AssetRegistry" /* 8925 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

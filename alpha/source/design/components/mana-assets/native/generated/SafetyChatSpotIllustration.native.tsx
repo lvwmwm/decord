@@ -1,26 +1,26 @@
-// Module ID: 18003
-// Function ID: 18004
+// Module ID: 18050
+// Function ID: 18051
 // Name: SafetyChatSpotIllustration
-// Dependencies: [19, 21, 18004, 18005, 18006, 7160, 5872, 2]
+// Dependencies: [19, 21, 18051, 18052, 18053, 7135, 5842, 2]
 // Exports: SafetyChatSpotIllustration
 
-// Module 18003 (SafetyChatSpotIllustration)
+// Module 18050 (SafetyChatSpotIllustration)
 import Fragment from "Fragment" /* 21 */;
-import react_native from "react-native" /* 7160 */;
-import _modDef18004 from "module_18004" /* 18004 */;
-import _modDef18005 from "module_18005" /* 18005 */;
-import _modDef18006 from "module_18006" /* 18006 */;
+import react_native from "react-native" /* 7135 */;
+import _modDef18051 from "module_18051" /* 18051 */;
+import _modDef18052 from "module_18052" /* 18052 */;
+import _modDef18053 from "module_18053" /* 18053 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef18004 };
+let obj2 = { uri: _modDef18051 };
 obj[1] = obj2;
-let obj3 = { uri: _modDef18005 };
+let obj3 = { uri: _modDef18052 };
 obj[2] = obj3;
-obj[3] = { uri: _modDef18006 };
-({ uri: _modDef18006 });
+obj[3] = { uri: _modDef18053 };
+({ uri: _modDef18053 });
 let size = size_mod;
 const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/SafetyChatSpotIllustration.native.tsx");
 

@@ -315,7 +315,7 @@ let obj = function _instrumentStream() {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c19;
@@ -491,7 +491,7 @@ let obj = function _instrumentStream() {
                   }
                   closure_0.end();
                   c22 = 3;
-                  return { value: "HermesInternal", done: null };
+                  return { value: "HermesInternal", done: "HermesInternal" };
                 }
               }
               break;

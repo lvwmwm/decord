@@ -1,44 +1,44 @@
-// Module ID: 10874
-// Function ID: 10875
+// Module ID: 10857
+// Function ID: 10858
 // Name: UserRow
-// Dependencies: [19, 17, 5171, 2162, 7903, 5019, 5917, 5112, 10863, 1072, 21, 1357, 5170, 575, 7572, 38, 10875, 10876, 5866, 10877, 7575, 7904, 504, 1187, 5781, 5224, 10881, 7410, 6933, 1113, 10903, 10904, 7084, 5788, 2151, 9969, 8735, 8842, 2118, 8881, 10906, 10058, 6198, 8511, 6597, 9388, 10908, 9300, 10916, 9393, 10917, 7062, 10933, 7063, 2]
+// Dependencies: [19, 17, 5141, 2162, 7880, 4989, 5890, 5082, 10846, 1072, 21, 1357, 5140, 575, 7549, 38, 10858, 10859, 5836, 10860, 7552, 7881, 504, 1187, 5751, 5194, 10864, 7387, 6908, 1113, 10886, 10887, 7059, 5758, 2151, 9953, 8714, 8821, 2118, 8860, 10889, 10042, 6172, 8490, 6572, 9370, 10891, 9282, 10899, 9375, 10900, 7037, 10916, 7038, 2]
 
-// Module 10874 (UserRow)
+// Module 10857 (UserRow)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl14 from "intl" /* 1113 */;
 import asyncRequire from "asyncRequire" /* 2118 */;
 import utils_StringUtils from "utils/StringUtils" /* 2151 */;
-import UserUtils from "UserUtils" /* 5224 */;
-import Text_Text from "Text/Text" /* 5781 */;
-import components_Button_Button from "components/Button/Button" /* 5788 */;
-import ToastUtils from "ToastUtils" /* 5866 */;
-import CheckmarkLargeIcon from "CheckmarkLargeIcon" /* 7084 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7572 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7575 */;
-import FriendSuggestionActionCreatorsDefault from "FriendSuggestionActionCreators" /* 7904 */;
-import ChatIcon from "ChatIcon" /* 8735 */;
-import PhoneCallIcon from "PhoneCallIcon" /* 9969 */;
-import BoostGemIcon2 from "BoostGemIcon" /* 10058 */;
-import UserRowConstants from "UserRowConstants" /* 10863 */;
-import PeopleUtilsDefault from "PeopleUtils" /* 10876 */;
-import GameRelationshipActionCreatorsDefault from "GameRelationshipActionCreators" /* 10877 */;
-import ActivityStatusDefault from "ActivityStatus" /* 10881 */;
-import ActionButtonDefault from "ActionButton" /* 10903 */;
-import XLargeIcon from "XLargeIcon" /* 10904 */;
-import CrownIcon2 from "CrownIcon" /* 10906 */;
+import UserUtils from "UserUtils" /* 5194 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import components_Button_Button from "components/Button/Button" /* 5758 */;
+import ToastUtils from "ToastUtils" /* 5836 */;
+import CheckmarkLargeIcon from "CheckmarkLargeIcon" /* 7059 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7549 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7552 */;
+import FriendSuggestionActionCreatorsDefault from "FriendSuggestionActionCreators" /* 7881 */;
+import ChatIcon from "ChatIcon" /* 8714 */;
+import PhoneCallIcon from "PhoneCallIcon" /* 9953 */;
+import BoostGemIcon2 from "BoostGemIcon" /* 10042 */;
+import UserRowConstants from "UserRowConstants" /* 10846 */;
+import PeopleUtilsDefault from "PeopleUtils" /* 10859 */;
+import GameRelationshipActionCreatorsDefault from "GameRelationshipActionCreators" /* 10860 */;
+import ActivityStatusDefault from "ActivityStatus" /* 10864 */;
+import ActionButtonDefault from "ActionButton" /* 10886 */;
+import XLargeIcon from "XLargeIcon" /* 10887 */;
+import CrownIcon2 from "CrownIcon" /* 10889 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5171 */;
+import AccessibilityStore from "AccessibilityStore" /* 5141 */;
 import ApplicationStore from "ApplicationStore" /* 2162 */;
-import FriendSuggestionStore from "FriendSuggestionStore" /* 7903 */;
-import ChannelStore from "ChannelStore" /* 5019 */;
-import PresenceStore from "PresenceStore" /* 5917 */;
-import RelationshipStore from "RelationshipStore" /* 5112 */;
+import FriendSuggestionStore from "FriendSuggestionStore" /* 7880 */;
+import ChannelStore from "ChannelStore" /* 4989 */;
+import PresenceStore from "PresenceStore" /* 5890 */;
+import RelationshipStore from "RelationshipStore" /* 5082 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
 import PlatformUtils from "utils/PlatformUtils" /* 1357 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 const UserUtilsDefault = UserUtils;
@@ -103,7 +103,7 @@ function UserRowSubLabel(arg0) {
     tmp9 = tmp14Result;
   } else {
     const obj8 = { lineClamp: 1, variant: "body-xs/medium", color: "text-muted", children: tmp2Result.getUserTag(user) };
-    const Text = tmp2(5781).Text;
+    const Text = tmp2(5751).Text;
     tmp2Result = UserUtils;
     tmp9 = closure_14(Text, obj8);
   }
@@ -115,7 +115,7 @@ const UserRowModes = UserRowConstants.UserRowModes;
 ({ jsx: closure_14, jsxs: closure_15, Fragment: closure_16 } = Fragment);
 let obj;
 if (PlatformUtils.isIOS()) {
-  obj = { lineHeight: "r" };
+  obj = { lineHeight: "uri" };
 }
 let closure_18 = { CALL: "call", MESSAGE: "message", ACCEPT: "accept", DECLINE: "decline", CANCEL: "cancel", ACCEPT_SUGGESTION: "accept-suggestion", IGNORE_SUGGESTION: "ignore-suggestion", TOGGLE: "toggle" };
 let createStyles = createStyles_mod;
@@ -293,7 +293,7 @@ const memoResult = react.memo(function UserRow(type) {
     let zFfSFQ2;
     const items = [];
     if (NONE !== UserRowModes.ACTIONS) {
-      let obj2 = { accessibilityActions: items, actions: "Array" };
+      let obj2 = { accessibilityActions: items, actions: "r" };
       return obj2;
     } else {
       let tmp9;
@@ -608,7 +608,7 @@ const memoResult = react.memo(function UserRow(type) {
     let localUser;
     let sourceAnalyticsLocations;
     if (null == onLongPress) {
-      const promise = asyncRequire(8842, dependencyMap.paths);
+      const promise = asyncRequire(8821, dependencyMap.paths);
       promise.then((result) => {
         obj = { userId: localUser.id, localUser, sourceAnalyticsLocations };
         return result.default(obj);

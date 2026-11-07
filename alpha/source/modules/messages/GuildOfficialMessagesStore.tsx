@@ -1,18 +1,18 @@
-// Module ID: 15859
-// Function ID: 15860
+// Module ID: 15909
+// Function ID: 15910
 // Name: GuildOfficialMessagesStore
-// Dependencies: [5019, 5082, 5041, 5112, 1385, 1072, 6221, 1403, 504, 572, 2]
+// Dependencies: [4989, 5052, 5011, 5082, 1385, 1072, 6196, 1403, 504, 572, 2]
 
-// Module 15859 (GuildOfficialMessagesStore)
+// Module 15909 (GuildOfficialMessagesStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import FlagUtils from "FlagUtils" /* 1403 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 6221 */;
-import ChannelStore from "ChannelStore" /* 5019 */;
-import GuildMemberStore from "GuildMemberStore" /* 5082 */;
-import GuildStore from "GuildStore" /* 5041 */;
-import RelationshipStore from "RelationshipStore" /* 5112 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 6196 */;
+import ChannelStore from "ChannelStore" /* 4989 */;
+import GuildMemberStore from "GuildMemberStore" /* 5052 */;
+import GuildStore from "GuildStore" /* 5011 */;
+import RelationshipStore from "RelationshipStore" /* 5082 */;
 import UserStore from "UserStore" /* 1385 */;
 import size from "module_2" /* 2 */;
 
@@ -310,7 +310,7 @@ obj = {
             let tmp6 = null != tmp5;
             if (tmp6) {
               if (null == obj[guildId].messages[message.id]) {
-                const tmp24Result = tmp24(6221);
+                const tmp24Result = tmp24(6196);
                 const messageRecord = tmp24Result.createMessageRecord(message);
                 if (null != obj[guildId]) {
                   obj = {};

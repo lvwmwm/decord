@@ -1,14 +1,14 @@
-// Module ID: 5928
-// Function ID: 5929
+// Module ID: 5901
+// Function ID: 5902
 // Name: TimeUtils
-// Dependencies: [5, 5929, 569, 5930, 2]
+// Dependencies: [5, 5902, 569, 5903, 2]
 // Exports: convertMinutesToGivenTimeUnit, getTimeAndUnit, getTimeUnit
 
-// Module 5928 (TimeUtils)
+// Module 5901 (TimeUtils)
 import navigationStart from "navigationStart" /* 569 */;
-import createFindDefault from "createFind" /* 5930 */;
+import createFindDefault from "createFind" /* 5903 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import module_5929 from "module_5929" /* 5929 */;
+import module_5902 from "module_5902" /* 5902 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3, importDefault, max;
@@ -402,7 +402,7 @@ class TimeOut {
           obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -590,12 +590,12 @@ export function getTimeUnit(arg0, arg1) {
     max = max.max;
     return max.unit === obj.NONE && rounded === max || rounded < max;
   });
-  const tmp2 = createFindDefault(items, (unit) => f89448(unit.unit), findIndexResult);
+  const tmp2 = createFindDefault(items, (unit) => f89783(unit.unit), findIndexResult);
   const arr = items;
   if (null != tmp2) {
     return tmp2.unit;
   } else {
-    const found = arr.find((unit) => f89448(unit.unit));
+    const found = arr.find((unit) => f89783(unit.unit));
     let unit = null;
     if (null != found) {
       unit = found.unit;
@@ -611,17 +611,17 @@ export function getTimeAndUnit(rounded, items) {
   } else {
     let unit;
     closure_0 = rounded;
-    const f89448 = (dependencyMap) => closure_0.includes(dependencyMap);
+    const f89783 = (dependencyMap) => closure_0.includes(dependencyMap);
     const findIndexResult = items.findIndex((max) => {
       max = max.max;
       return max.unit === obj.NONE && rounded === max || rounded < max;
     });
-    const tmp11 = f89448(5930)(items, (unit) => f89448(unit.unit), findIndexResult);
+    const tmp11 = f89783(5903)(items, (unit) => f89783(unit.unit), findIndexResult);
     const arr = items;
     if (null != tmp11) {
       unit = tmp11.unit;
     } else {
-      const found = arr.find((unit) => f89448(unit.unit));
+      const found = arr.find((unit) => f89783(unit.unit));
       unit = null;
       if (null != found) {
         unit = found.unit;

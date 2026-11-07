@@ -1,33 +1,33 @@
-// Module ID: 11181
-// Function ID: 11182
+// Module ID: 11167
+// Function ID: 11168
 // Name: InAppNotificationContainer
-// Dependencies: [32, 19, 17, 10340, 11167, 1072, 21, 1652, 5170, 11182, 11232, 11235, 11236, 11279, 11280, 11299, 11338, 11341, 11342, 1357, 11349, 11166, 504, 5751, 5400, 1705, 1252, 5450, 5791, 1187, 7378, 11216, 2]
+// Dependencies: [32, 19, 17, 10323, 11153, 1072, 21, 1652, 5140, 11168, 11214, 11217, 11218, 11261, 11262, 11281, 11320, 11323, 11324, 1357, 11331, 11152, 504, 5721, 5370, 1705, 1252, 5420, 5761, 1187, 7355, 11198, 2]
 // Exports: default
 
-// Module 11181 (InAppNotificationContainer)
+// Module 11167 (InAppNotificationContainer)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import _mod1652 from "module_1652" /* 1652 */;
 import _mod1705 from "module_1705" /* 1705 */;
-import timing_timing from "timing/timing" /* 5400 */;
-import InAppNotificationUtils from "InAppNotificationUtils" /* 11166 */;
-import MessageNotificationDefault from "MessageNotification" /* 11182 */;
-import MessageFailedToSendNotificationDefault from "MessageFailedToSendNotification" /* 11232 */;
-import ForumThreadCreatedNotificationDefault from "ForumThreadCreatedNotification" /* 11235 */;
-import BugReporterNotification from "BugReporterNotification" /* 11236 */;
-import AlertNotificationDefault from "AlertNotification" /* 11279 */;
-import ReactionNotificationDefault from "ReactionNotification" /* 11280 */;
-import ReminderNotificationDefault from "ReminderNotification" /* 11299 */;
-import RestrictedHoursWarningNotificationDefault from "RestrictedHoursWarningNotification" /* 11338 */;
-import MessageRequestNotificationDefault from "MessageRequestNotification" /* 11341 */;
-import StageSpeakInviteNotificationDefault from "StageSpeakInviteNotification" /* 11342 */;
+import timing_timing from "timing/timing" /* 5370 */;
+import InAppNotificationUtils from "InAppNotificationUtils" /* 11152 */;
+import MessageNotificationDefault from "MessageNotification" /* 11168 */;
+import MessageFailedToSendNotificationDefault from "MessageFailedToSendNotification" /* 11214 */;
+import ForumThreadCreatedNotificationDefault from "ForumThreadCreatedNotification" /* 11217 */;
+import BugReporterNotification from "BugReporterNotification" /* 11218 */;
+import AlertNotificationDefault from "AlertNotification" /* 11261 */;
+import ReactionNotificationDefault from "ReactionNotification" /* 11262 */;
+import ReminderNotificationDefault from "ReminderNotification" /* 11281 */;
+import RestrictedHoursWarningNotificationDefault from "RestrictedHoursWarningNotification" /* 11320 */;
+import MessageRequestNotificationDefault from "MessageRequestNotification" /* 11323 */;
+import StageSpeakInviteNotificationDefault from "StageSpeakInviteNotification" /* 11324 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import NativeMenuStore from "NativeMenuStore" /* 10340 */;
-import InAppNotificationConstants from "InAppNotificationConstants" /* 11167 */;
+import NativeMenuStore from "NativeMenuStore" /* 10323 */;
+import InAppNotificationConstants from "InAppNotificationConstants" /* 11153 */;
 import Constants from "Constants" /* 1072 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let set, set2;

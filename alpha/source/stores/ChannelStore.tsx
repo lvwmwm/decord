@@ -1,9 +1,9 @@
-// Module ID: 5019
-// Function ID: 5020
+// Module ID: 4989
+// Function ID: 4990
 // Name: ChannelStore
-// Dependencies: [32, 5, 5020, 5022, 5023, 502, 5041, 1385, 1072, 5026, 3, 1380, 5048, 5068, 5069, 572, 5070, 10, 11, 5071, 12, 504, 2]
+// Dependencies: [32, 5, 4990, 4992, 4993, 502, 5011, 1385, 1072, 4996, 3, 1380, 5018, 5038, 5039, 572, 5040, 10, 11, 5041, 12, 504, 2]
 
-// Module 5019 (ChannelStore)
+// Module 4989 (ChannelStore)
 import LoggerDefault from "Logger" /* 3 */;
 import AppStartPerformanceDefault from "AppStartPerformance" /* 10 */;
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
@@ -11,18 +11,18 @@ import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
-import ChannelConstants from "ChannelConstants" /* 5026 */;
-import DatabaseDaosDefault from "DatabaseDaos" /* 5048 */;
-import ChannelReaderDefault from "ChannelReader" /* 5069 */;
-import deserializeChannels from "deserializeChannels" /* 5070 */;
-import isChangelogUserDefault from "isChangelogUser" /* 5071 */;
+import ChannelConstants from "ChannelConstants" /* 4996 */;
+import DatabaseDaosDefault from "DatabaseDaos" /* 5018 */;
+import ChannelReaderDefault from "ChannelReader" /* 5039 */;
+import deserializeChannels from "deserializeChannels" /* 5040 */;
+import isChangelogUserDefault from "isChangelogUser" /* 5041 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import BasicChannelCacheStore from "BasicChannelCacheStore" /* 5020 */;
-import FavoriteStore from "FavoriteStore" /* 5022 */;
-import ChannelRecord from "ChannelRecord" /* 5023 */;
+import BasicChannelCacheStore from "BasicChannelCacheStore" /* 4990 */;
+import FavoriteStore from "FavoriteStore" /* 4992 */;
+import ChannelRecord from "ChannelRecord" /* 4993 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildStore from "GuildStore" /* 5041 */;
+import GuildStore from "GuildStore" /* 5011 */;
 import UserStore from "UserStore" /* 1385 */;
 import size from "module_2" /* 2 */;
 
@@ -36,7 +36,7 @@ let closure_12;
 let metroImportAll;
 let metroImportDefault;
 let unpackModuleId;
-const f87752 = (item) => isChangelogUserDefault(item);
+const f88082 = (item) => isChangelogUserDefault(item);
 function ensureGuildLoaded(guild_id, Full, getBasicChannel) {
   let arr;
   let tmp41;
@@ -198,7 +198,7 @@ function setChannel(isPrivate) {
     } else {
       delete closure_33[id3];
       const recipients = isPrivate.recipients;
-      if (null == recipients.find(f87752)) {
+      if (null == recipients.find(f88082)) {
         closure_22[isPrivate.id] = isPrivate;
         if (isPrivate.type === ChannelTypes.DM) {
           closure_26[isPrivate.getRecipientId()] = isPrivate.id;
@@ -255,7 +255,7 @@ function setChannel(isPrivate) {
 }
 function setPrivateChannel(recipients) {
   recipients = recipients.recipients;
-  if (null != recipients.find(f87752)) {
+  if (null != recipients.find(f88082)) {
     return false;
   } else {
     closure_22[recipients.id] = recipients;
@@ -603,7 +603,7 @@ class ChannelLoader {
         dependencyMap = closure_32;
         let tmp7 = _asyncToGenerator;
         let str = "loadChannels";
-        const tmpResult = tmp(5068);
+        const tmpResult = tmp(5038);
         return tmpResult.tryLoadOrResetCacheGatewayAsync("loadChannels", _asyncToGenerator(async (arg0, value) => {
           let closure_1;
           if (c7 === 2) {
@@ -619,7 +619,7 @@ class ChannelLoader {
                 const obj3 = { value, done: true };
                 return obj3;
               } else {
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               }
             } else {
               while (true) {

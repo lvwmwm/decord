@@ -1,10 +1,10 @@
-// Module ID: 6062
-// Function ID: 6063
+// Module ID: 6035
+// Function ID: 6036
 // Name: device/DeviceState
-// Dependencies: [5, 3, 1441, 6063, 2]
+// Dependencies: [5, 3, 1441, 6036, 2]
 // Exports: getDeviceState
 
-// Module 6062 (device/DeviceState)
+// Module 6035 (device/DeviceState)
 import LoggerDefault from "Logger" /* 3 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
@@ -24,7 +24,7 @@ let obj = function _getDeviceState() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c4;

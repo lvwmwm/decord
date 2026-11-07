@@ -1,23 +1,23 @@
-// Module ID: 19592
-// Function ID: 19593
+// Module ID: 19664
+// Function ID: 19665
 // Name: VoicePanelDismissableContent
-// Dependencies: [32, 19, 6923, 11381, 5835, 21, 19593, 2118, 11380, 1652, 1705, 5003, 10656, 10657, 2]
+// Dependencies: [32, 19, 6898, 11363, 5805, 21, 19665, 2118, 11362, 1652, 1705, 4973, 10639, 10640, 2]
 
-// Module 19592 (VoicePanelDismissableContent)
+// Module 19664 (VoicePanelDismissableContent)
 import Fragment from "Fragment" /* 21 */;
 import asyncRequire from "asyncRequire" /* 2118 */;
-import CallConstants from "CallConstants" /* 5835 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11380 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11381 */;
+import CallConstants from "CallConstants" /* 5805 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11362 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11363 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6923 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6898 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const SelectedDismissibleContentDefault = tmp(10656);
+const SelectedDismissibleContentDefault = tmp(10639);
 function VoiceControlsNuxActionSheetImporter() {
-  return asyncRequire(19593, dependencyMap.paths);
+  return asyncRequire(19665, dependencyMap.paths);
 }
 const VoicePanelModes = VoicePanelConstants.VoicePanelModes;
 const isActivityParticipant = CallConstants.isActivityParticipant;
@@ -93,7 +93,7 @@ const memoResult = react.memo(function VoicePanelDismissibleContent() {
   VoicePanelDismissableContentTsx2.__initData = tmp13;
   const animatedReaction = useAnimatedReaction(VoicePanelDismissableContentTsx1, VoicePanelDismissableContentTsx2);
   if (first) {
-    const items5 = [channelId(5003).DismissibleContent.ACTIVITIES_MOBILE_PIP_FAB_NUX];
+    const items5 = [channelId(4973).DismissibleContent.ACTIVITIES_MOBILE_PIP_FAB_NUX];
     items6 = items5;
   } else {
     items6 = [];

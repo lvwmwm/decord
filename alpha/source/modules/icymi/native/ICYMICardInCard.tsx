@@ -1,27 +1,27 @@
-// Module ID: 18859
-// Function ID: 18860
+// Module ID: 18909
+// Function ID: 18910
 // Name: ICYMICardInCard
-// Dependencies: [19, 17, 5019, 5082, 5041, 1072, 21, 18815, 575, 9611, 7045, 1187, 5796, 504, 6597, 9388, 6199, 5781, 5806, 18860, 1113, 8744, 18858, 7068, 6940, 9862, 2]
+// Dependencies: [19, 17, 4989, 5052, 5011, 1072, 21, 18865, 575, 9593, 7020, 1187, 5766, 504, 6572, 9370, 6173, 5751, 5776, 18910, 1113, 8723, 18908, 7043, 6915, 9846, 2]
 // Exports: default
 
-// Module 18859 (ICYMICardInCard)
+// Module 18909 (ICYMICardInCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl3 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5781 */;
-import GuildIcon from "GuildIcon" /* 7045 */;
-import TextIcon2 from "TextIcon" /* 8744 */;
-import ClipView from "ClipView" /* 9611 */;
-import openDetailsActionSheet from "openDetailsActionSheet" /* 18858 */;
-import getIconForChannel from "getIconForChannel" /* 18860 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import GuildIcon from "GuildIcon" /* 7020 */;
+import TextIcon2 from "TextIcon" /* 8723 */;
+import ClipView from "ClipView" /* 9593 */;
+import openDetailsActionSheet from "openDetailsActionSheet" /* 18908 */;
+import getIconForChannel from "getIconForChannel" /* 18910 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 5019 */;
-import GuildMemberStore from "GuildMemberStore" /* 5082 */;
-import GuildStore from "GuildStore" /* 5041 */;
+import ChannelStore from "ChannelStore" /* 4989 */;
+import GuildMemberStore from "GuildMemberStore" /* 5052 */;
+import GuildStore from "GuildStore" /* 5011 */;
 import Fragment from "Fragment" /* 21 */;
-import createICYMIStyles from "createICYMIStyles" /* 18815 */;
+import createICYMIStyles from "createICYMIStyles" /* 18865 */;
 import size_mod from "module_2" /* 2 */;
 
 const GuildIconDefault = GuildIcon;

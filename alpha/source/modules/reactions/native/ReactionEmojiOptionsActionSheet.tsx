@@ -1,28 +1,28 @@
-// Module ID: 10236
-// Function ID: 10237
+// Module ID: 10219
+// Function ID: 10220
 // Name: ReactionEmojiOptionsActionSheet
-// Dependencies: [19, 17, 5171, 6876, 7046, 5201, 1072, 21, 5170, 575, 10196, 4995, 5847, 504, 10081, 1411, 5404, 10195, 5867, 1113, 10199, 10201, 7441, 5866, 8497, 7449, 7386, 5781, 4311, 2185, 7151, 7063, 2]
+// Dependencies: [19, 17, 5141, 6851, 7021, 5171, 1072, 21, 5140, 575, 10179, 4965, 5817, 504, 10065, 1411, 5374, 10178, 5837, 1113, 10182, 10184, 7418, 5836, 8476, 7426, 7363, 5751, 4281, 2185, 7126, 7038, 2]
 // Exports: default
 
-// Module 10236 (ReactionEmojiOptionsActionSheet)
+// Module 10219 (ReactionEmojiOptionsActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl7 from "intl" /* 1113 */;
-import ToastUtils from "ToastUtils" /* 5866 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5867 */;
-import ExpressionSourceRecord from "ExpressionSourceRecord" /* 7046 */;
-import ClipboardUtils from "ClipboardUtils" /* 7441 */;
-import ReactionActionCreatorsAll from "ReactionActionCreators" /* 8497 */;
-import EmojiActionCreators from "EmojiActionCreators" /* 10195 */;
-import StarOutlineIcon from "StarOutlineIcon" /* 10199 */;
-import StarIcon from "StarIcon" /* 10201 */;
+import ToastUtils from "ToastUtils" /* 5836 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5837 */;
+import ExpressionSourceRecord from "ExpressionSourceRecord" /* 7021 */;
+import ClipboardUtils from "ClipboardUtils" /* 7418 */;
+import ReactionActionCreatorsAll from "ReactionActionCreators" /* 8476 */;
+import EmojiActionCreators from "EmojiActionCreators" /* 10178 */;
+import StarOutlineIcon from "StarOutlineIcon" /* 10182 */;
+import StarIcon from "StarIcon" /* 10184 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5171 */;
-import EmojiStore from "EmojiStore" /* 6876 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5201 */;
+import AccessibilityStore from "AccessibilityStore" /* 5141 */;
+import EmojiStore from "EmojiStore" /* 6851 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5171 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let closure_12;

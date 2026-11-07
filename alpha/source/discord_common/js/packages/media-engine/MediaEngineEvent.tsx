@@ -1,9 +1,9 @@
-// Module ID: 5954
-// Function ID: 5955
+// Module ID: 5927
+// Function ID: 5928
 // Name: MediaEngineEvent
 // Dependencies: [2]
 
-// Module 5954 (MediaEngineEvent)
+// Module 5927 (MediaEngineEvent)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/packages/media-engine/MediaEngineEvent.tsx");

@@ -1,12 +1,12 @@
-// Module ID: 20388
-// Function ID: 20389
+// Module ID: 20456
+// Function ID: 20457
 // Name: AVErrorVideoStreamReceiverReadyTimeout
-// Dependencies: [502, 6930, 6105, 2]
+// Dependencies: [502, 6905, 6079, 2]
 
-// Module 20388 (AVErrorVideoStreamReceiverReadyTimeout)
-import AVError from "AVError" /* 6105 */;
+// Module 20456 (AVErrorVideoStreamReceiverReadyTimeout)
+import AVError from "AVError" /* 6079 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import VideoStreamStore from "VideoStreamStore" /* 6930 */;
+import VideoStreamStore from "VideoStreamStore" /* 6905 */;
 import size from "module_2" /* 2 */;
 
 let obj = {

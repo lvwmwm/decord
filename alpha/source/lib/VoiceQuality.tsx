@@ -1,23 +1,23 @@
-// Module ID: 6051
-// Function ID: 6052
+// Module ID: 6024
+// Function ID: 6025
 // Name: VoiceQuality
-// Dependencies: [32, 6052, 5948, 6058, 6060, 12, 5945, 11, 5928, 2]
+// Dependencies: [32, 6025, 5921, 6031, 6033, 12, 5918, 11, 5901, 2]
 
-// Module 6051 (VoiceQuality)
+// Module 6024 (VoiceQuality)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 5945 */;
-import Histogram from "Histogram" /* 6052 */;
-import NetworkQualityDefault from "NetworkQuality" /* 6058 */;
-import SystemResourcesDefault from "SystemResources" /* 6060 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 5918 */;
+import Histogram from "Histogram" /* 6025 */;
+import NetworkQualityDefault from "NetworkQuality" /* 6031 */;
+import SystemResourcesDefault from "SystemResources" /* 6033 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import TypedEventEmitter from "TypedEventEmitter" /* 5948 */;
+import TypedEventEmitter from "TypedEventEmitter" /* 5921 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, emit, passthroughCount;
 
-const f89677 = (item) => {
+const f90012 = (item) => {
   const items = [item, 0];
   return items;
 };
@@ -81,7 +81,7 @@ function explodePlayoutMetrics(obj) {
   return obj;
 }
 function zeroCounters(arr) {
-  return Object.fromEntries(arr.map(f89677));
+  return Object.fromEntries(arr.map(f90012));
 }
 function fragmentTotals(arr, arr2, outboundBaseline, lastRaw) {
   let closure_0 = outboundBaseline;
@@ -142,7 +142,7 @@ class VoiceQuality extends TypedEventEmitter {
     let histogram;
     let tmp3;
     let tmp4;
-    const f89678 = (item) => {
+    const f90013 = (item) => {
       const items = [item, { baseline: 0, lastRaw: 0 }];
       return items;
     };
@@ -414,7 +414,7 @@ class VoiceQuality extends TypedEventEmitter {
               const inboundBaselines = num.inboundBaselines;
               let tmp3 = inboundBaselines[closure_0];
               if (tmp3 == null) {
-                obj = { baseline: Object.fromEntries(closure_3_7.map(f89677)), lastRaw: Object.fromEntries(closure_3_7.map(f89677)) };
+                obj = { baseline: Object.fromEntries(closure_3_7.map(f90012)), lastRaw: Object.fromEntries(closure_3_7.map(f90012)) };
                 const _Object = Object;
                 const _Object2 = Object;
                 inboundBaselines[closure_0] = obj;
@@ -424,7 +424,7 @@ class VoiceQuality extends TypedEventEmitter {
               let tmp4 = inboundLatencyBaselines[tmp60];
               if (tmp4 == null) {
                 const _Object3 = Object;
-                const fromEntriesResult = Object.fromEntries(closure_3_10.map(f89678));
+                const fromEntriesResult = Object.fromEntries(closure_3_10.map(f90013));
                 inboundLatencyBaselines[closure_0] = fromEntriesResult;
                 tmp4 = fromEntriesResult;
               }
@@ -721,11 +721,11 @@ class VoiceQuality extends TypedEventEmitter {
     tmp5.periodicInboundStats = {};
     tmp5.inputDeviceStats = {};
     tmp5.outputDeviceStats = {};
-    let obj2 = { baseline: Object.fromEntries(closure_5.map(f89677)), lastRaw: Object.fromEntries(closure_5.map(f89677)) };
+    let obj2 = { baseline: Object.fromEntries(closure_5.map(f90012)), lastRaw: Object.fromEntries(closure_5.map(f90012)) };
     tmp5.outboundBaseline = obj2;
-    tmp5.outboundLatencyBaseline = Object.fromEntries(closure_9.map(f89678));
+    tmp5.outboundLatencyBaseline = Object.fromEntries(closure_9.map(f90013));
     let items = ["decryptionFailures", "routingFailures", ...closure_11];
-    tmp5.transportBaseline = Object.fromEntries(items.map(f89678));
+    tmp5.transportBaseline = Object.fromEntries(items.map(f90013));
     tmp5.inboundBaselines = {};
     tmp5.inboundLatencyBaselines = {};
     return tmp5;

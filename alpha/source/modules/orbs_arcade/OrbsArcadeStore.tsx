@@ -1,19 +1,19 @@
-// Module ID: 17282
-// Function ID: 17283
+// Module ID: 17330
+// Function ID: 17331
 // Name: OrbsArcadeStore
-// Dependencies: [32, 9661, 502, 17283, 17284, 504, 572, 2]
+// Dependencies: [32, 9643, 502, 17331, 17332, 504, 572, 2]
 
-// Module 17282 (OrbsArcadeStore)
+// Module 17330 (OrbsArcadeStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import OrbsArcadeTypes from "OrbsArcadeTypes" /* 17283 */;
+import OrbsArcadeTypes from "OrbsArcadeTypes" /* 17331 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import VirtualCurrencyStore from "VirtualCurrencyStore" /* 9661 */;
+import VirtualCurrencyStore from "VirtualCurrencyStore" /* 9643 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const orbs_arcade_game_state = tmp(17284);
+const orbs_arcade_game_state = tmp(17332);
 function handleBalanceChange(balance) {
   let tmp8;
   let tmp9;

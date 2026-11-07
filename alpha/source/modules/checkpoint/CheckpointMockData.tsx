@@ -1,10 +1,10 @@
-// Module ID: 13646
-// Function ID: 13647
+// Module ID: 13670
+// Function ID: 13671
 // Name: CheckpointMockData
 // Dependencies: [2]
 // Exports: getMockCheckpointStats
 
-// Module 13646 (CheckpointMockData)
+// Module 13670 (CheckpointMockData)
 import size from "module_2" /* 2 */;
 
 const CheckpointMockStats = { DEFAULT: 0, [0]: "DEFAULT", NO_PERSONAL_DATA: 1, [1]: "NO_PERSONAL_DATA", ZERO_DATA: 2, [2]: "ZERO_DATA" };

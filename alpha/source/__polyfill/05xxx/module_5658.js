@@ -1,56 +1,168 @@
 // Module ID: 5658
 // Function ID: 5659
-// Dependencies: [5659, 5660, 5661, 5720, 5721, 5722, 5723, 5727, 5728, 5681, 5729, 5730, 5725, 5724, 5731, 5682, 5732]
+// Dependencies: [5642, 5643, 5659]
 
 // Module 5658
-import ErrorMessages from "ErrorMessages" /* 5660 */;
-import FlashList from "FlashList" /* 5661 */;
-import _mod5681 from "module_5681" /* 5681 */;
-import react from "react" /* 5682 */;
-import _mod5720 from "module_5720" /* 5720 */;
-import RenderTargetOptions from "RenderTargetOptions" /* 5721 */;
-import react_nativeDefault from "react-native" /* 5722 */;
-import _mod5723 from "module_5723" /* 5723 */;
-import autoScroll from "autoScroll" /* 5724 */;
-import JSFPSMonitor from "JSFPSMonitor" /* 5725 */;
-import _mod5727 from "module_5727" /* 5727 */;
-import _mod5728 from "module_5728" /* 5728 */;
-import _mod5729 from "module_5729" /* 5729 */;
-import react2 from "react" /* 5730 */;
-import _modDef5731 from "module_5731" /* 5731 */;
-import LayoutCommitObserver from "LayoutCommitObserver" /* 5732 */;
-import react_native from "react-native" /* 5659 */;
+import _createClassDefault from "_createClass" /* 5643 */;
+import _classCallCheck from "_classCallCheck" /* 5642 */;
 
-if (react_native.isNewArch()) {
-  exports.FlashList = FlashList.FlashList;
-  exports.FlashListRef = _mod5720.FlashListRef;
-  exports.FlashListProps = RenderTargetOptions.FlashListProps;
-  exports.ListRenderItem = RenderTargetOptions.ListRenderItem;
-  exports.ListRenderItemInfo = RenderTargetOptions.ListRenderItemInfo;
-  exports.RenderTarget = RenderTargetOptions.RenderTarget;
-  exports.RenderTargetOptions = RenderTargetOptions.RenderTargetOptions;
-  exports.AnimatedFlashList = react_nativeDefault;
-  exports.useBenchmark = _mod5723.useBenchmark;
-  exports.BenchmarkParams = _mod5723.BenchmarkParams;
-  exports.BenchmarkResult = _mod5723.BenchmarkResult;
-  exports.useDataMultiplier = _mod5727.useDataMultiplier;
-  exports.useFlatListBenchmark = _mod5728.useFlatListBenchmark;
-  exports.FlatListBenchmarkParams = _mod5728.FlatListBenchmarkParams;
-  exports.useLayoutState = _mod5681.useLayoutState;
-  exports.useRecyclingState = _mod5729.useRecyclingState;
-  exports.useMappingHelper = react2.useMappingHelper;
-  exports.JSFPSMonitor = JSFPSMonitor.JSFPSMonitor;
-  exports.JSFPSResult = JSFPSMonitor.JSFPSResult;
-  exports.autoScroll = autoScroll.autoScroll;
-  exports.Cancellable = autoScroll.Cancellable;
-  exports.ViewToken = _modDef5731;
-  exports.useFlashListContext = react.useFlashListContext;
-  exports.LayoutCommitObserver = LayoutCommitObserver.LayoutCommitObserver;
-  exports.LayoutCommitObserverProps = LayoutCommitObserver.LayoutCommitObserverProps;
-} else {
-  const _Error = Error;
-  const self = this;
-  const self2 = this;
-  const error = new Error(ErrorMessages.ErrorMessages.flashListV2OnlySupportsNewArchitecture);
-  throw error;
+let updateViewableItems;
+
+class ViewabilityManager {
+  constructor(rvManager) {
+    const self = this;
+    let closure_0 = rvManager;
+    let tmp = _classCallCheck(this, ViewabilityManager);
+    this.viewabilityHelpers = [];
+    this.hasInteracted = false;
+    this.dispose = () => {
+      const viewabilityHelpers = self.viewabilityHelpers;
+      const item = viewabilityHelpers.forEach((dispose) => dispose.dispose());
+    };
+    this.onVisibleIndicesChanged = (arg0) => {
+      self.updateViewableItems(arg0);
+    };
+    this.recordInteraction = () => {
+      if (!self.hasInteracted) {
+        self.hasInteracted = true;
+        const viewabilityHelpers = obj.viewabilityHelpers;
+        const item = viewabilityHelpers.forEach((item) => {
+          item.hasInteracted = true;
+        });
+        self.updateViewableItems();
+      }
+    };
+    this.updateViewableItems = (arg0) => {
+      let windowSize;
+      closure_0 = arg0;
+      let rvManager = windowSize.rvManager;
+      windowSize = rvManager.getWindowSize();
+      if (undefined !== windowSize) {
+        if (windowSize.shouldListenToVisibleIndices) {
+          const rvManager2 = tmp.rvManager;
+          let num = rvManager2.getAbsoluteLastScrollOffset();
+          if (num == null) {
+            num = 0;
+          }
+          let closure_2 = num - tmp.rvManager.firstItemOffset;
+          const bottomViewabilityInsetRef = tmp.rvManager.props.bottomViewabilityInsetRef;
+          let num2;
+          if (bottomViewabilityInsetRef != null) {
+            num2 = bottomViewabilityInsetRef.current;
+          }
+          if (num2 == null) {
+            num2 = 0;
+          }
+          const viewabilityHelpers = tmp.viewabilityHelpers;
+          const item = viewabilityHelpers.forEach((updateViewableItems) => {
+            let flag = self.rvManager.props.horizontal;
+            updateViewableItems = updateViewableItems.updateViewableItems;
+            if (flag == null) {
+              flag = false;
+            }
+            updateViewableItems(flag, closure_2, num2, windowSize, (arg0) => {
+              rvManager = rvManager.rvManager;
+              return rvManager.getLayout(arg0);
+            }, closure_0);
+          });
+        }
+      }
+    };
+    this.clearLastReportedViewableIndices = () => {
+      const viewabilityHelpers = self.viewabilityHelpers;
+      const item = viewabilityHelpers.forEach((clearLastReportedViewableIndices) => clearLastReportedViewableIndices.clearLastReportedViewableIndices());
+    };
+    this.createViewabilityHelper = (arg0, arg1) => {
+      closure_0 = arg1;
+      const tmp = new closure_0(self[2])(arg0, (arr, arr2, arr3) => {
+        let items;
+        if (closure_0 != null) {
+          let obj = {
+            viewableItems: arr.map((item) => {
+                if (undefined !== closure_1_1.rvManager.props.data[item]) {
+                  let keyExtractorResult;
+                  if (undefined !== closure_1_1.rvManager.props.keyExtractor) {
+                    const props = tmp.rvManager.props;
+                    keyExtractorResult = props.keyExtractor(tmp2, item);
+                  }
+                  const _Date = Date;
+                  const obj = { index: item, isViewable: true, item: closure_1_1.rvManager.props.data[item], key: keyExtractorResult, timestamp: Date.now() };
+                  return obj;
+                }
+                keyExtractorResult = item.toString();
+              }),
+            changed: items
+          };
+          items = [];
+          const arraySpreadResult = HermesBuiltin.arraySpread(items, arr2.map((item) => {
+            if (undefined !== closure_1_1.rvManager.props.data[item]) {
+              let keyExtractorResult;
+              if (undefined !== closure_1_1.rvManager.props.keyExtractor) {
+                const props = tmp.rvManager.props;
+                keyExtractorResult = props.keyExtractor(tmp2, item);
+              }
+              const _Date = Date;
+              const obj = { index: item, isViewable: true, item: closure_1_1.rvManager.props.data[item], key: keyExtractorResult, timestamp: Date.now() };
+              return obj;
+            }
+            keyExtractorResult = item.toString();
+          }), 0);
+          HermesBuiltin.arraySpread(items, arr3.map((item) => {
+            if (undefined !== closure_1_1.rvManager.props.data[item]) {
+              let keyExtractorResult;
+              if (undefined !== closure_1_1.rvManager.props.keyExtractor) {
+                const props = tmp.rvManager.props;
+                keyExtractorResult = props.keyExtractor(tmp2, item);
+              }
+              const _Date = Date;
+              const obj = { index: item, isViewable: false, item: closure_1_1.rvManager.props.data[item], key: keyExtractorResult, timestamp: Date.now() };
+              return obj;
+            }
+            keyExtractorResult = item.toString();
+          }), arraySpreadResult);
+          tmp2(obj);
+        }
+      });
+      return tmp;
+    };
+    this.rvManager = rvManager;
+    const tmp2 = null !== rvManager.props.onViewableItemsChanged && undefined !== rvManager.props.onViewableItemsChanged;
+    if (tmp2) {
+      let viewabilityHelpers = self.viewabilityHelpers;
+      viewabilityHelpers.push(self.createViewabilityHelper(rvManager.props.viewabilityConfig, (arg0) => {
+        const props = closure_0.props;
+        const onViewableItemsChanged = props.onViewableItemsChanged;
+        if (onViewableItemsChanged != null) {
+          const result = onViewableItemsChanged(arg0);
+        }
+      }));
+    }
+    let prop = rvManager.props.viewabilityConfigCallbackPairs;
+    if (prop == null) {
+      prop = [];
+    }
+    let item = prop.forEach((viewabilityConfig, index) => {
+      const viewabilityHelpers = self.viewabilityHelpers;
+      viewabilityHelpers.push(self.createViewabilityHelper(viewabilityConfig.viewabilityConfig, (arg0) => {
+        let prop;
+        if (index.props.viewabilityConfigCallbackPairs != null) {
+          if (index.props.viewabilityConfigCallbackPairs[index] != null) {
+            prop = tmp3.onViewableItemsChanged;
+          }
+        }
+        if (prop != null) {
+          prop(arg0);
+        }
+      }));
+    });
+  }
 }
+let obj = {
+  key: "shouldListenToVisibleIndices",
+  get() {
+    return this.viewabilityHelpers.length > 0;
+  }
+};
+let items = [obj];
+
+export default _createClassDefault(ViewabilityManager, items);

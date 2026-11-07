@@ -1,10 +1,10 @@
-// Module ID: 7245
-// Function ID: 7246
+// Module ID: 7220
+// Function ID: 7221
 // Name: ImageCroppingConstants
-// Dependencies: [6085, 2]
+// Dependencies: [6059, 2]
 
-// Module 7245 (ImageCroppingConstants)
-import VideoBackgroundConstants from "VideoBackgroundConstants" /* 6085 */;
+// Module 7220 (ImageCroppingConstants)
+import VideoBackgroundConstants from "VideoBackgroundConstants" /* 6059 */;
 import size from "module_2" /* 2 */;
 
 const BACKGROUND_REPLACEMENT_SIZE = VideoBackgroundConstants.BACKGROUND_REPLACEMENT_SIZE;
@@ -37,3 +37,4 @@ export const MAX_PERSONAL_WIDGET_COVER_OVERLAY_HEIGHT = 243;
 export const VIDEO_BACKGROUND_ASPECT_RATIO = result;
 export const MAX_VIDEO_OVERLAY_HEIGHT = result1;
 export const MessageTypes = { CROP_ANIMATED_IMAGE_START: 0, [0]: "CROP_ANIMATED_IMAGE_START", CROP_ANIMATED_IMAGE_COMPLETE: 1, [1]: "CROP_ANIMATED_IMAGE_COMPLETE", CROP_ANIMATED_IMAGE_ERROR: 2, [2]: "CROP_ANIMATED_IMAGE_ERROR" };
+export const GIF_COMPRESSION_THRESHOLDS = [500, 1000, 2000, 4000, 8000, 16000];

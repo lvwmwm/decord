@@ -1,11 +1,11 @@
-// Module ID: 7218
-// Function ID: 7219
+// Module ID: 7193
+// Function ID: 7194
 // Name: useWithPostLoginRouting
-// Dependencies: [5, 32, 19, 502, 1072, 504, 1113, 7219, 6820, 2]
+// Dependencies: [5, 32, 19, 502, 1072, 504, 1113, 7194, 6795, 2]
 // Exports: default
 
-// Module 7218 (useWithPostLoginRouting)
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6820 */;
+// Module 7193 (useWithPostLoginRouting)
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6795 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -123,7 +123,7 @@ export default function useWithPostLoginRouting(arg0, handleLogin) {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -162,7 +162,7 @@ export default function useWithPostLoginRouting(arg0, handleLogin) {
                 closure_0.pop();
               }
               c4 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } catch (tmp16) {
             c4 = 3;

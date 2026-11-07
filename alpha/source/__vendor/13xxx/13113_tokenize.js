@@ -1,78 +1,45 @@
 // Module ID: 13113
 // Function ID: 13114
 // Name: tokenize
-// Dependencies: [13027]
+// Dependencies: [13050]
 
 // Module 13113 (tokenize)
-import tokenize from "tokenize" /* 13027 */;
+import tokenize from "tokenize" /* 13050 */;
 
-const Delim = tokenize.TYPE.Delim;
-const Ident = tokenize.TYPE.Ident;
-const Dimension = tokenize.TYPE.Dimension;
-const Percentage = tokenize.TYPE.Percentage;
-const Number = tokenize.TYPE.Number;
-const Hash = tokenize.TYPE.Hash;
-const Colon = tokenize.TYPE.Colon;
-const LeftSquareBracket = tokenize.TYPE.LeftSquareBracket;
+let items;
+let obj2;
+const Comma = tokenize.TYPE.Comma;
 const obj = {
-  getNode(arg0) {
+  name: "MediaQueryList",
+  structure: obj2,
+  parse(arg0) {
     const self = this;
-    const tokenType = this.scanner.tokenType;
-    if (LeftSquareBracket === tokenType) {
-      return self.AttributeSelector();
-    } else if (Hash === tokenType) {
-      return self.IdSelector();
-    } else if (Colon === tokenType) {
-      let result;
-      const scanner = self.scanner;
-      if (scanner.lookupType(1) === tmp6) {
-        result = self.PseudoElementSelector();
-      } else {
-        result = self.PseudoClassSelector();
-      }
-      return result;
-    } else if (Ident === tokenType) {
-      return self.TypeSelector();
-    } else {
-      if (Number !== tokenType) {
-        if (Percentage !== tokenType) {
-          if (Dimension === tokenType) {
-            const source = self.scanner.source;
-            if (46 === source.charCodeAt(self.scanner.tokenStart)) {
-              self.error("Identifier is expected", self.scanner.tokenStart + 1);
-            }
-          } else if (Delim === tokenType) {
-            const source2 = self.scanner.source;
-            const charCodeAtResult = source2.charCodeAt(self.scanner.tokenStart);
-            if (43 !== charCodeAtResult) {
-              if (62 !== charCodeAtResult) {
-                if (126 !== charCodeAtResult) {
-                  if (47 === charCodeAtResult) {
-                    return self.Combinator();
-                  } else if (46 === charCodeAtResult) {
-                    return self.ClassSelector();
-                  } else {
-                    if (42 !== charCodeAtResult) {
-                      if (124 !== charCodeAtResult) {
-                        if (35 === charCodeAtResult) {
-                          return self.IdSelector();
-                        }
-                      }
-                    }
-                    return self.TypeSelector();
-                  }
-                }
-              }
-            }
-            arg0.space = null;
-            arg0.ignoreWSAfter = true;
-            return self.Combinator();
+    const list = this.createList();
+    const scanner = this.scanner;
+    scanner.skipSC();
+    if (!this.scanner.eof) {
+      list.push(self.MediaQuery(arg0));
+      if (self.scanner.tokenType === Comma) {
+        const iter = self.scanner;
+        iter.next();
+        while (!self.scanner.eof) {
+          let arr3 = list.push(self.MediaQuery(arg0));
+          if (self.scanner.tokenType !== Comma) {
+            break;
           }
         }
       }
-      return self.Percentage();
     }
+    const element = { type: "MediaQueryList", loc: self.getLocationFromList(list), children: list };
+    return element;
+  },
+  generate(arg0) {
+    this.children(arg0, function() {
+      this.chunk(",");
+    });
   }
 };
+obj2 = { children: items };
+items = [["MediaQuery"]];
 
 export default obj;

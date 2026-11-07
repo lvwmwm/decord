@@ -1,10 +1,10 @@
-// Module ID: 7033
-// Function ID: 7034
+// Module ID: 7008
+// Function ID: 7009
 // Name: AuthBackgroundArt
-// Dependencies: [19, 17, 21, 7034, 1652, 5400, 5403, 7035, 7038, 7039, 2]
+// Dependencies: [19, 17, 21, 7009, 1652, 5370, 5373, 7010, 7013, 7014, 2]
 
-// Module 7033 (AuthBackgroundArt)
-import timing_timing from "timing/timing" /* 5400 */;
+// Module 7008 (AuthBackgroundArt)
+import timing_timing from "timing/timing" /* 5370 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -17,7 +17,7 @@ let metroImportDefault;
 let metroRequire;
 let obj2;
 let tmp2;
-const timingPresets = tmp2(5403);
+const timingPresets = tmp2(5373);
 const StyleSheet = react_native.StyleSheet;
 let View = react_native.View;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
@@ -37,7 +37,7 @@ const memoResult = react.memo(function AuthBackgroundArt() {
   let tmp9;
   let tmpResult2;
   let tmp2 = dependencyMap;
-  const tmp3 = sharedValue(7034)();
+  const tmp3 = sharedValue(7009)();
   _require = tmp3;
   const tmp4 = _require;
   let num = 0;
@@ -74,14 +74,14 @@ const memoResult = react.memo(function AuthBackgroundArt() {
   AuthBackgroundArtTsx1.__initData = tmp8;
   let obj = { style: container.container, pointerEvents: "none", accessible: false, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: items3 };
   const animatedStyle = tmp4Result.useAnimatedStyle(AuthBackgroundArtTsx1);
-  const obj2 = { backgroundImageSource: sharedValue(7038), backgroundImageCover: true };
-  const tmpResult = sharedValue(7035);
+  const obj2 = { backgroundImageSource: sharedValue(7013), backgroundImageCover: true };
+  const tmpResult = sharedValue(7010);
   items3 = [closure_6(tmpResult, obj2), ];
   const obj3 = { style: items4, children: closure_6(tmpResult2, obj4) };
   items4 = [StyleSheet.absoluteFill, animatedStyle];
   View = tmp(1652).View;
-  obj4 = { backgroundImageSource: sharedValue(7039), backgroundImageCover: true };
-  tmpResult2 = sharedValue(7035);
+  obj4 = { backgroundImageSource: sharedValue(7014), backgroundImageCover: true };
+  tmpResult2 = sharedValue(7010);
   items3[1] = closure_6(View, obj3);
   return closure_7(View, obj);
 });

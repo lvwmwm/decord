@@ -1,31 +1,45 @@
 // Module ID: 8382
 // Function ID: 8383
-// Dependencies: [8379]
+// Dependencies: [8383]
 
 // Module 8382
-import _mod8379 from "module_8379" /* 8379 */;
+import _modDef8383 from "module_8383" /* 8383 */;
 
 
 export default {
-  isAvifFile(getUint32) {
-    if (getUint32) {
+  decode(arg0, buffer) {
+    function decodeAsciiValue(arg0) {
       try {
-        const obj = _mod8379;
-        let parseBoxResult = obj.parseBox(getUint32, 0);
-        const tmp4 = parseBoxResult;
-        if (tmp4) {
-          parseBoxResult = "avif" === parseBoxResult.majorBrand;
-        }
-        return parseBoxResult;
+        const _decodeURIComponent = decodeURIComponent;
+        const _escape = escape;
+        return decodeURIComponent(escape(arg0));
       } catch (err) {
-        return false;
+        return arg0;
       }
-    } else {
-      return false;
     }
+    const obj = _modDef8383;
+    const value = obj.get();
+    if (undefined !== value) {
+      if (undefined !== arg0) {
+        try {
+          const self = this;
+          const self2 = this;
+          const value1 = new value(arg0);
+          const _DataView = DataView;
+          const decode = value1.decode;
+          if (buffer instanceof DataView) {
+            buffer = buffer.buffer;
+          } else {
+            const _Uint8Array = Uint8Array;
+            buffer = Uint8Array.from(buffer);
+          }
+          return decode(buffer);
+        } catch (err) {
+        }
+      }
+    }
+    const mapped = buffer.map((item) => String.fromCharCode(item));
+    return decodeAsciiValue(mapped.join(""));
   },
-  findAvifOffsets(byteLength) {
-    const obj = _mod8379;
-    return obj.findOffsets(byteLength);
-  }
+  TAG_HEADER_SIZE: 5
 };

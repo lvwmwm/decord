@@ -1,12 +1,12 @@
-// Module ID: 13662
-// Function ID: 13663
+// Module ID: 13686
+// Function ID: 13687
 // Name: CheckpointFlows
-// Dependencies: [6592, 6594, 13663, 13664, 2]
-// Exports: getAdjacentCheckpointRoute, getCheckpointFlow, getCheckpointRoutes
+// Dependencies: [6567, 6569, 13687, 13688, 2]
+// Exports: getAdjacentCheckpointRoute, getCheckpointFlow, getCheckpointReplayRoute, getCheckpointRoutes
 
-// Module 13662 (CheckpointFlows)
-import CheckpointNavigation from "CheckpointNavigation" /* 6592 */;
-import CheckpointStatsUtils from "CheckpointStatsUtils" /* 6594 */;
+// Module 13686 (CheckpointFlows)
+import CheckpointNavigation from "CheckpointNavigation" /* 6567 */;
+import CheckpointStatsUtils from "CheckpointStatsUtils" /* 6569 */;
 import size from "module_2" /* 2 */;
 
 let obj = {
@@ -46,22 +46,22 @@ export function getCheckpointFlow(flag) {
 export function getCheckpointRoutes(stats) {
   let prop;
   stats = stats.stats;
-  if (stats.flow === stats(6592).CheckpointFlow.SHARED_DATA) {
-    prop = tmp(13663).CHECKPOINT_SHARED_DATA_FLOW;
+  if (stats.flow === stats(6567).CheckpointFlow.SHARED_DATA) {
+    prop = tmp(13687).CHECKPOINT_SHARED_DATA_FLOW;
   } else {
-    prop = tmp(13664).CHECKPOINT_NO_SHARED_DATA_FLOW;
+    prop = tmp(13688).CHECKPOINT_NO_SHARED_DATA_FLOW;
   }
   return prop.filter((item) => {
     if (item === CheckpointNavigation.CheckpointRoute.SHARE) {
       return false;
     } else if (null != obj[item]) {
-      const tmp8 = null != stats && obj[item](stats);
+      const tmp8 = null != require && obj[item](require);
       return tmp8;
     } else {
       let tmp6 = null == tmp5;
       if (!tmp6) {
-        tmp6 = undefined === stats || obj2[item](stats);
-        undefined === stats || obj2[item](stats);
+        tmp6 = undefined === require || obj2[item](require);
+        undefined === require || obj2[item](require);
       }
       return tmp6;
     }
@@ -75,35 +75,78 @@ export function getAdjacentCheckpointRoute(stats) {
   let prop;
   stats = stats.stats;
   ({ flow, currentRoute, direction } = stats);
-  if (flow === stats(6592).CheckpointFlow.SHARED_DATA) {
-    prop = tmp(13663).CHECKPOINT_SHARED_DATA_FLOW;
+  if (flow === stats(6567).CheckpointFlow.SHARED_DATA) {
+    prop = tmp(13687).CHECKPOINT_SHARED_DATA_FLOW;
   } else {
-    prop = tmp(13664).CHECKPOINT_NO_SHARED_DATA_FLOW;
+    prop = tmp(13688).CHECKPOINT_NO_SHARED_DATA_FLOW;
   }
   const found = prop.filter((item) => {
     if (item === CheckpointNavigation.CheckpointRoute.SHARE) {
       return false;
     } else if (null != obj[item]) {
-      const tmp8 = null != stats && obj[item](stats);
+      const tmp8 = null != require && obj[item](require);
       return tmp8;
     } else {
       let tmp6 = null == tmp5;
       if (!tmp6) {
-        tmp6 = undefined === stats || obj2[item](stats);
-        undefined === stats || obj2[item](stats);
+        tmp6 = undefined === require || obj2[item](require);
+        undefined === require || obj2[item](require);
       }
       return tmp6;
     }
   });
   const index = found.indexOf(currentRoute);
   if (-1 === index) {
-    INTRODUCTION = tmp(6592).CheckpointRoute.INTRODUCTION;
+    INTRODUCTION = tmp(6567).CheckpointRoute.INTRODUCTION;
   } else {
     INTRODUCTION = found[index + direction];
-    const tmp5 = null;
     if (INTRODUCTION == null) {
       INTRODUCTION = null;
     }
+  }
+  return INTRODUCTION;
+}
+export function getCheckpointReplayRoute(arg0) {
+  let INTRODUCTION;
+  let currentRoute;
+  let direction;
+  let flow;
+  let prop;
+  obj = { currentRoute: CheckpointNavigation.CheckpointRoute.INTRODUCTION, direction: 1 };
+  const merged = Object.assign(arg0);
+  ({ stats: require, flow, currentRoute, direction } = obj);
+  if (flow === CheckpointNavigation.CheckpointFlow.SHARED_DATA) {
+    prop = tmp2(13687).CHECKPOINT_SHARED_DATA_FLOW;
+  } else {
+    prop = tmp2(13688).CHECKPOINT_NO_SHARED_DATA_FLOW;
+  }
+  const found = prop.filter((item) => {
+    if (item === CheckpointNavigation.CheckpointRoute.SHARE) {
+      return false;
+    } else if (null != obj[item]) {
+      const tmp8 = null != require && obj[item](require);
+      return tmp8;
+    } else {
+      let tmp6 = null == tmp5;
+      if (!tmp6) {
+        tmp6 = undefined === require || obj2[item](require);
+        undefined === require || obj2[item](require);
+      }
+      return tmp6;
+    }
+  });
+  const index = found.indexOf(currentRoute);
+  if (-1 === index) {
+    INTRODUCTION = tmp2(6567).CheckpointRoute.INTRODUCTION;
+  } else {
+    INTRODUCTION = found[index + direction];
+    let tmp6 = null;
+    if (INTRODUCTION == null) {
+      INTRODUCTION = null;
+    }
+  }
+  if (INTRODUCTION == null) {
+    INTRODUCTION = tmp2(6567).CheckpointRoute.INTRODUCTION;
   }
   return INTRODUCTION;
 }

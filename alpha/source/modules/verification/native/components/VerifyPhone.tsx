@@ -1,10 +1,10 @@
-// Module ID: 7332
-// Function ID: 7333
+// Module ID: 7309
+// Function ID: 7310
 // Name: VerifyPhone
-// Dependencies: [5, 32, 19, 21, 7300, 7333, 7334, 1113, 2]
+// Dependencies: [5, 32, 19, 21, 7277, 7310, 7311, 1113, 2]
 // Exports: default
 
-// Module 7332 (VerifyPhone)
+// Module 7309 (VerifyPhone)
 import Fragment from "Fragment" /* 21 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
@@ -59,7 +59,7 @@ export default function VerifyPhone(phone) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c4;
@@ -120,10 +120,10 @@ export default function VerifyPhone(phone) {
           } else if (value) {
             c4 = 0;
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
         c5 = 2;
         c6 = 1;
@@ -158,7 +158,7 @@ export default function VerifyPhone(phone) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -189,7 +189,7 @@ export default function VerifyPhone(phone) {
         } else {
           closure_1_4(false);
           c3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp11) {
         c3 = 3;

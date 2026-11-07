@@ -1,17 +1,17 @@
-// Module ID: 6838
-// Function ID: 6839
+// Module ID: 6813
+// Function ID: 6814
 // Name: useStageSpeakingForCurrentUser
-// Dependencies: [5019, 5102, 5073, 1083, 6806, 5847, 6811, 504, 2]
+// Dependencies: [4989, 5072, 5043, 1083, 6781, 5817, 6786, 504, 2]
 // Exports: isStageSpeakingDisabledForCurrentUser, shouldAgeVerifyToSpeakForCurrentUser, useIsStageSpeakingDisabledForCurrentUser, useShouldAgeVerifyToSpeakForCurrentUser, useShouldShowAgeVerificationForEvent, useShouldShowAgeVerificationPopover
 
-// Module 6838 (useStageSpeakingForCurrentUser)
+// Module 6813 (useStageSpeakingForCurrentUser)
 import Constants from "Constants" /* 1083 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5847 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 6806 */;
-import AgeGatedFeature from "AgeGatedFeature" /* 6811 */;
-import ChannelStore from "ChannelStore" /* 5019 */;
-import PermissionStore from "PermissionStore" /* 5102 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5073 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5817 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 6781 */;
+import AgeGatedFeature from "AgeGatedFeature" /* 6786 */;
+import ChannelStore from "ChannelStore" /* 4989 */;
+import PermissionStore from "PermissionStore" /* 5072 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 const Permissions = Constants.Permissions;
@@ -63,10 +63,10 @@ export function useShouldAgeVerifyToSpeakForCurrentUser(id) {
     const canResult = null != channel && PermissionStore.can(Permissions.REQUEST_TO_SPEAK, channel);
     return canResult;
   }, items1);
-  const obj2 = channelId(6806);
+  const obj2 = channelId(6781);
   const isVerifiedAdult = obj2.useIsVerifiedAdult();
-  const obj3 = channelId(5847);
-  const tmp5 = obj3.useIsFeatureAgeGated(channelId(6811).AgeGatedFeature.STAGE_SPEAKING) && !isVerifiedAdult && stateFromStores;
+  const obj3 = channelId(5817);
+  const tmp5 = obj3.useIsFeatureAgeGated(channelId(6786).AgeGatedFeature.STAGE_SPEAKING) && !isVerifiedAdult && stateFromStores;
   return tmp5;
 }
 export function useShouldShowAgeVerificationPopover(id) {
@@ -85,10 +85,10 @@ export function useShouldShowAgeVerificationPopover(id) {
     const canResult = null != channel && PermissionStore.can(Permissions.REQUEST_TO_SPEAK, channel);
     return canResult;
   }, items1);
-  const obj2 = channelId(6806);
+  const obj2 = channelId(6781);
   const isAgeVerified = obj2.useIsAgeVerified();
-  const obj3 = channelId(5847);
-  const tmp5 = obj3.useIsFeatureAgeGated(channelId(6811).AgeGatedFeature.STAGE_SPEAKING) && !isAgeVerified && stateFromStores;
+  const obj3 = channelId(5817);
+  const tmp5 = obj3.useIsFeatureAgeGated(channelId(6786).AgeGatedFeature.STAGE_SPEAKING) && !isAgeVerified && stateFromStores;
   return tmp5;
 }
 export function useShouldShowAgeVerificationForEvent() {

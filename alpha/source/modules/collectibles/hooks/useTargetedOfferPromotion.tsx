@@ -1,17 +1,17 @@
-// Module ID: 9655
-// Function ID: 9656
+// Module ID: 9637
+// Function ID: 9638
 // Name: useTargetedOfferPromotion
-// Dependencies: [1072, 9656, 7498, 9657, 2]
+// Dependencies: [1072, 9638, 7475, 9639, 2]
 // Exports: useEligibleCollectiblesTargetedOfferPromotion, useIsFiatExclusiveTargetedOfferPromotion, useTargetedOfferPromotionForCollectiblesProduct, useTargetedOfferPromotionPurchaseCtaText
 
-// Module 9655 (useTargetedOfferPromotion)
+// Module 9637 (useTargetedOfferPromotion)
 import Constants from "Constants" /* 1072 */;
-import StorefrontTypes from "StorefrontTypes" /* 7498 */;
-import usePromotionForApplicationDefault from "usePromotionForApplication" /* 9656 */;
+import StorefrontTypes from "StorefrontTypes" /* 7475 */;
+import usePromotionForApplicationDefault from "usePromotionForApplication" /* 9638 */;
 import size from "module_2" /* 2 */;
 
 let tmp4;
-const CollectiblesTargetedOfferPromotionUtils = tmp4(9657);
+const CollectiblesTargetedOfferPromotionUtils = tmp4(9639);
 let closure_3 = Constants.COLLECTIBLES_APPLICATION_ID;
 const result = size.fileFinishedImporting("modules/collectibles/hooks/useTargetedOfferPromotion.tsx");
 

@@ -1,16 +1,16 @@
-// Module ID: 7902
-// Function ID: 7903
+// Module ID: 7879
+// Function ID: 7880
 // Name: UserSearchUtils
-// Dependencies: [7903, 5082, 5112, 1072, 2150, 5224, 2]
+// Dependencies: [7880, 5052, 5082, 1072, 2150, 5194, 2]
 // Exports: cleanString, getNames, getRelationshipType
 
-// Module 7902 (UserSearchUtils)
+// Module 7879 (UserSearchUtils)
 import Constants from "Constants" /* 1072 */;
 import StringUtils from "StringUtils" /* 2150 */;
-import UserUtilsDefault from "UserUtils" /* 5224 */;
-import FriendSuggestionStore from "FriendSuggestionStore" /* 7903 */;
-import GuildMemberStore from "GuildMemberStore" /* 5082 */;
-import RelationshipStore from "RelationshipStore" /* 5112 */;
+import UserUtilsDefault from "UserUtils" /* 5194 */;
+import FriendSuggestionStore from "FriendSuggestionStore" /* 7880 */;
+import GuildMemberStore from "GuildMemberStore" /* 5052 */;
+import RelationshipStore from "RelationshipStore" /* 5082 */;
 import size from "module_2" /* 2 */;
 
 const RelationshipTypes = Constants.RelationshipTypes;

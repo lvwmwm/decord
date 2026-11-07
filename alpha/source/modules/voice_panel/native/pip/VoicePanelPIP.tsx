@@ -1,36 +1,36 @@
-// Module ID: 19595
-// Function ID: 19596
+// Module ID: 19667
+// Function ID: 19668
 // Name: VoicePanelPIP
-// Dependencies: [19, 17, 5018, 6926, 6955, 11381, 11379, 19414, 5811, 6927, 21, 5170, 11380, 19503, 11389, 1652, 19413, 11385, 5791, 5450, 1705, 19506, 6030, 19497, 504, 5091, 11076, 11898, 8933, 1113, 19596, 7048, 19600, 19601, 5229, 2]
+// Dependencies: [19, 17, 4988, 6901, 6930, 11363, 11361, 19473, 5781, 6902, 21, 5140, 11362, 19562, 11371, 1652, 19472, 11367, 5761, 5420, 1705, 19565, 6003, 19556, 504, 5061, 11061, 11889, 8915, 1113, 19668, 7023, 19672, 19673, 5199, 2]
 // Exports: usePIPTileHandoff
 
-// Module 19595 (VoicePanelPIP)
+// Module 19667 (VoicePanelPIP)
 import intl2 from "intl" /* 1113 */;
-import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 5091 */;
-import native from "native" /* 5229 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5450 */;
-import spring_spring from "spring/spring" /* 5791 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 5811 */;
-import ExternalPipDefault from "ExternalPip" /* 6030 */;
-import FramesConstants from "FramesConstants" /* 6927 */;
-import FramesActionCreatorsDefault from "FramesActionCreators" /* 11076 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11379 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11380 */;
-import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 11385 */;
-import VoicePanelPIPHandoff from "VoicePanelPIPHandoff" /* 11389 */;
-import EmbeddedActivitiesActionCreatorsAll from "EmbeddedActivitiesActionCreators" /* 11898 */;
-import VoicePanelPIPUtils from "VoicePanelPIPUtils" /* 19413 */;
-import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 19414 */;
-import VoicePanelPIPStateContext from "VoicePanelPIPStateContext" /* 19503 */;
-import triggerIOSHapticDefault from "triggerIOSHaptic" /* 19506 */;
+import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 5061 */;
+import native from "native" /* 5199 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5420 */;
+import spring_spring from "spring/spring" /* 5761 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 5781 */;
+import ExternalPipDefault from "ExternalPip" /* 6003 */;
+import FramesConstants from "FramesConstants" /* 6902 */;
+import FramesActionCreatorsDefault from "FramesActionCreators" /* 11061 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11361 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11362 */;
+import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 11367 */;
+import VoicePanelPIPHandoff from "VoicePanelPIPHandoff" /* 11371 */;
+import EmbeddedActivitiesActionCreatorsAll from "EmbeddedActivitiesActionCreators" /* 11889 */;
+import VoicePanelPIPUtils from "VoicePanelPIPUtils" /* 19472 */;
+import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 19473 */;
+import VoicePanelPIPStateContext from "VoicePanelPIPStateContext" /* 19562 */;
+import triggerIOSHapticDefault from "triggerIOSHaptic" /* 19565 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5018 */;
-import FramesStore from "FramesStore" /* 6926 */;
-import VoicePanelStore from "VoicePanelStore" /* 6955 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11381 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4988 */;
+import FramesStore from "FramesStore" /* 6901 */;
+import VoicePanelStore from "VoicePanelStore" /* 6930 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11363 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -47,7 +47,7 @@ let tmp;
 let tmp10;
 let tmp9;
 const _mod1705 = tmp(1705);
-const VoicePanelPIPScaleCache = tmp(19497);
+const VoicePanelPIPScaleCache = tmp(19556);
 function usePIPGesture(mode, arg1, cardArrivedInPIP, arg3) {
   let _undefined;
   let c13;
@@ -403,7 +403,7 @@ function usePIPGesture(mode, arg1, cardArrivedInPIP, arg3) {
       constructor(arg0) {
         closure_0 = arg0;
         allTouches = arg0.allTouches;
-        found = allTouches.filter(function() { /* body not rendered: F142230 */ });
+        found = allTouches.filter(function() { /* body not rendered: F142865 */ });
         if (0 !== found.length) {
           tmp4 = closure_2;
           tmp5 = closure_2(found);
@@ -901,18 +901,18 @@ function VoicePanelPIP() {
   let tmp2Result;
   const tmp = styles();
   let obj = react;
-  const context = react.useContext(stateFromStores(11380));
+  const context = react.useContext(stateFromStores(11362));
   const setMode = context.setMode;
   const controlsSpecs = context.controlsSpecs;
-  let obj2 = setMode(19503);
+  let obj2 = setMode(19562);
   const pIPState = obj2.usePIPState();
-  const pipHandoff = react.useContext(stateFromStores(11380)).pipHandoff;
-  const obj3 = setMode(19503);
+  const pipHandoff = react.useContext(stateFromStores(11362)).pipHandoff;
+  const obj3 = setMode(19562);
   const mode = obj3.usePIPState().mode;
-  const obj4 = setMode(11389);
+  const obj4 = setMode(11371);
   const pIPCardsSettled = obj4.usePIPCardsSettled(pipHandoff);
   let tmp11 = mode !== VoicePanelPIPModes.IN_APP;
-  const obj5 = setMode(11389);
+  const obj5 = setMode(11371);
   const pIPPanelLayoutCommitted = obj5.usePIPPanelLayoutCommitted(pipHandoff);
   if (!tmp11) {
     tmp11 = pIPCardsSettled;
@@ -927,11 +927,11 @@ function VoicePanelPIP() {
   }
   ({ pipWrapperStyles, containerStyles, mainPIPVisibilityStyles, mainPIPGesture, secondaryPIPGesture, containerGesture, gestureState } = usePIPGesture(pIPState.mode, null != mode || !pIPPanelLayoutCommitted, tmp13));
   usePIPGesture(pIPState.mode, null != mode || !pIPPanelLayoutCommitted, tmp13);
-  let pushToTalk = tmp2(8933)(controlsSpecs).pushToTalk;
+  let pushToTalk = tmp2(8915)(controlsSpecs).pushToTalk;
   let items = [closure_36, , ];
   const useAnimatedStyle = setMode(1652).useAnimatedStyle;
   setMode(1652);
-  items[1] = setMode(19413).getVoicePanelPIPBorderRadius;
+  items[1] = setMode(19472).getVoicePanelPIPBorderRadius;
   items[2] = pIPState;
   let c0;
   let c1;
@@ -1019,7 +1019,7 @@ function VoicePanelPIP() {
   items8 = [tmp.container, containerStyles];
   const View = tmp2(1652).View;
   const obj7 = { gesture: containerGesture, children: closure_16(View2, obj8) };
-  const GestureDetector = tmp5(5450).GestureDetector;
+  const GestureDetector = tmp5(5420).GestureDetector;
   let tmp32Result = null;
   obj8 = { pointerEvents: "box-none", style: tmp.multiPipContainer, layout: tmp30, children: items11 };
   View2 = tmp2(1652).View;
@@ -1032,8 +1032,8 @@ function VoicePanelPIP() {
     const View3 = tmp2(1652).View;
     const merged = Object.assign(memo);
     obj10 = { gesture: mainPIPGesture, children: closure_15(View4, obj11) };
-    GestureDetector2 = tmp5(5450).GestureDetector;
-    obj11 = { style: items10, layout: tmp30, children: closure_15(stateFromStores(19596), obj12) };
+    GestureDetector2 = tmp5(5420).GestureDetector;
+    obj11 = { style: items10, layout: tmp30, children: closure_15(stateFromStores(19668), obj12) };
     items10 = [tmp.pipMask, animatedStyle];
     View4 = tmp2(1652).View;
     obj12 = { layoutTransition: tmp30 };
@@ -1052,9 +1052,9 @@ function VoicePanelPIP() {
     items13 = [tmp.pipMask, animatedStyle];
     View6 = tmp2(1652).View;
     obj15 = { gesture: secondaryPIPGesture, children: closure_15(tmp2Result, obj16) };
-    GestureDetector3 = tmp5(5450).GestureDetector;
-    obj16 = { style: StyleSheet.absoluteFill, children: closure_15(stateFromStores(19600), {}) };
-    tmp2Result = stateFromStores(7048);
+    GestureDetector3 = tmp5(5420).GestureDetector;
+    obj16 = { style: StyleSheet.absoluteFill, children: closure_15(stateFromStores(19672), {}) };
+    tmp2Result = stateFromStores(7023);
     tmp32Result3 = tmp32(View5, obj13);
   }
   items11[1] = tmp32Result3;
@@ -1063,7 +1063,7 @@ function VoicePanelPIP() {
   if (tmp13) {
     tmp32Result4 = null;
     if (pushToTalk) {
-      const obj17 = { pointerEvents: "box-none", style: items15, layout: tmp30, children: closure_15(stateFromStores(19601), {}) };
+      const obj17 = { pointerEvents: "box-none", style: items15, layout: tmp30, children: closure_15(stateFromStores(19673), {}) };
       items15 = [tmp.pushToTalkContainer, animatedStyle1];
       const View7 = tmp2(1652).View;
       tmp32Result4 = tmp32(View7, obj17);
@@ -1165,12 +1165,12 @@ function usePIPTileHandoff() {
 let closure_39 = react.memo(function PIPWrapper(transitionState) {
   transitionState = transitionState.transitionState;
   const transitionCleanUp = transitionState.transitionCleanUp;
-  const pipHandoff = react.useContext(transitionCleanUp(11380)).pipHandoff;
-  const obj = transitionState(19503);
+  const pipHandoff = react.useContext(transitionCleanUp(11362)).pipHandoff;
+  const obj = transitionState(19562);
   const mode = obj.usePIPState().mode;
-  const obj2 = transitionState(11389);
+  const obj2 = transitionState(11371);
   const pIPCardsSettled = obj2.usePIPCardsSettled(pipHandoff);
-  const obj3 = transitionState(11389);
+  const obj3 = transitionState(11371);
   const pIPPanelLayoutCommitted = obj3.usePIPPanelLayoutCommitted(pipHandoff);
   const items = [transitionState, pIPPanelLayoutCommitted, transitionCleanUp];
   const effect = react.useEffect(() => {

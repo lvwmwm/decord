@@ -1,22 +1,22 @@
-// Module ID: 19330
-// Function ID: 19331
+// Module ID: 19389
+// Function ID: 19390
 // Name: DisplayNameStylesFlywheelMobileActionSheet
-// Dependencies: [19, 17, 1385, 1072, 5016, 21, 5184, 5177, 5399, 504, 2171, 16723, 1113, 3056, 5200, 5003, 16804, 7658, 7294, 5418, 7378, 5753, 19331, 1377, 5872, 19335, 9606, 5781, 5788, 5170, 575, 2]
+// Dependencies: [19, 17, 1385, 1072, 4986, 21, 5154, 5147, 5369, 504, 2171, 16771, 1113, 3056, 5170, 4973, 16852, 7635, 7270, 5388, 7355, 5723, 19390, 1377, 5842, 19394, 9588, 5751, 5758, 5140, 575, 2]
 // Exports: default
 
-// Module 19330 (DisplayNameStylesFlywheelMobileActionSheet)
+// Module 19389 (DisplayNameStylesFlywheelMobileActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import dismissible_content from "dismissible_content" /* 5003 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 5016 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5200 */;
-import openUserSettings from "openUserSettings" /* 7658 */;
-import openPremiumTryItOutModal from "openPremiumTryItOutModal" /* 16804 */;
+import dismissible_content from "dismissible_content" /* 4973 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4986 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5170 */;
+import openUserSettings from "openUserSettings" /* 7635 */;
+import openPremiumTryItOutModal from "openPremiumTryItOutModal" /* 16852 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1385 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -60,9 +60,9 @@ export default function DisplayNameStylesFlywheelMobileActionSheet(markAsDismiss
   let obj = enabled2;
   const ref = enabled2.useRef(null);
   let tmp2 = markAsDismissed;
-  const enabled = enabled2.useContext(markAsDismissed(5184).AccessibilityPreferencesContext).reducedMotion.enabled;
-  let obj2 = markAsDismissed(5177);
-  const isThemeDarkResult = obj2.isThemeDark(ref(5399)());
+  const enabled = enabled2.useContext(markAsDismissed(5154).AccessibilityPreferencesContext).reducedMotion.enabled;
+  let obj2 = markAsDismissed(5147);
+  const isThemeDarkResult = obj2.isThemeDark(ref(5369)());
   const tmp6 = closure_11();
   let obj3 = markAsDismissed(504);
   const items = [UserStore];
@@ -70,7 +70,7 @@ export default function DisplayNameStylesFlywheelMobileActionSheet(markAsDismiss
   let obj4 = ref(2171);
   let result = obj4.canUsePremiumProfileCustomization(stateFromStores);
   dependencyMap = result;
-  const obj5 = markAsDismissed(16723);
+  const obj5 = markAsDismissed(16771);
   enabled2 = obj5.useTryItOutMobileRefreshConfig("DisplayNameStylesFlywheelMobileActionSheet").enabled;
   const intl = markAsDismissed(1113).intl;
   const string = intl.string;
@@ -118,10 +118,10 @@ export default function DisplayNameStylesFlywheelMobileActionSheet(markAsDismiss
     markAsDismissed(ContentDismissActionType.USER_DISMISS);
   }, items3);
   const obj6 = { ref, onDismiss: callback2, startExpanded: true, handleDisabled: true, children: closure_9(SafeAreaPaddingView, obj15) };
-  const BottomSheet = tmp2(5418).BottomSheet;
+  const BottomSheet = tmp2(5388).BottomSheet;
   let tmp15 = closure_10;
   const obj7 = { style: tmp6.content, children: items4 };
-  SafeAreaPaddingView = tmp2(7378).SafeAreaPaddingView;
+  SafeAreaPaddingView = tmp2(7355).SafeAreaPaddingView;
   items4 = [, , , , ];
   const obj8 = {
     onPress() {
@@ -132,22 +132,22 @@ export default function DisplayNameStylesFlywheelMobileActionSheet(markAsDismiss
       markAsDismissed(ContentDismissActionType.USER_DISMISS);
     }
   };
-  items4[0] = closure_9(tmp2(5753).ActionSheetHeaderBar, obj8);
+  items4[0] = closure_9(tmp2(5723).ActionSheetHeaderBar, obj8);
   const obj9 = { style: tmp6.imageContainer, children: items5 };
-  items5 = [enabled && tmp14(tmp2(19331).DisplayNameStylesV2AbstractUI, { resizeMode: "contain" }), ];
+  items5 = [enabled && tmp14(tmp2(19390).DisplayNameStylesV2AbstractUI, { resizeMode: "contain" }), ];
   let tmp18 = !enabled;
-  enabled && closure_9(tmp2(19331).DisplayNameStylesV2AbstractUI, { resizeMode: "contain" });
+  enabled && closure_9(tmp2(19390).DisplayNameStylesV2AbstractUI, { resizeMode: "contain" });
   if (tmp18) {
     let tmp14Result;
     const tmp2Result = tmp2(1377);
     if (tmp2Result.isIOS()) {
       const obj10 = { source: obj11, style: tmp6.image, resizeMode: "contain", enableAnimation: !enabled };
-      obj11 = { uri: ref(19335) };
-      const tmp4Result = ref(5872);
+      obj11 = { uri: ref(19394) };
+      const tmp4Result = ref(5842);
       tmp14Result = tmp14(tmp4Result, obj10);
     } else {
-      const obj12 = { url: ref(19335), style: tmp6.image, autoplay: true };
-      const APNGPlayer = tmp2(9606).APNGPlayer;
+      const obj12 = { url: ref(19394), style: tmp6.image, autoplay: true };
+      const APNGPlayer = tmp2(9588).APNGPlayer;
       tmp14Result = tmp14(APNGPlayer, obj12);
     }
     tmp18 = tmp14Result;
@@ -157,14 +157,14 @@ export default function DisplayNameStylesFlywheelMobileActionSheet(markAsDismiss
   let str = "text-overlay-dark";
   const obj13 = { variant: "display-md", style: tmp6.title, color: str2, children: intl2.string(ref(3056).Uzms61) };
   str2 = "text-overlay-dark";
-  const Text = tmp2(5781).Text;
+  const Text = tmp2(5751).Text;
   if (isThemeDarkResult) {
     str2 = "text-overlay-light";
   }
   intl2 = tmp2(1113).intl;
   items4[2] = closure_9(Text, obj13);
   const obj14 = { variant: "body-lg/medium", style: tmp6.subtitle, color: str, children: stringResult };
-  const Text2 = tmp2(5781).Text;
+  const Text2 = tmp2(5751).Text;
   if (isThemeDarkResult) {
     str = "text-overlay-light";
   }
@@ -172,11 +172,11 @@ export default function DisplayNameStylesFlywheelMobileActionSheet(markAsDismiss
   items4[3] = closure_9(Text2, obj14);
   const obj16 = { style: tmp6.actions, children: items6 };
   const obj17 = { text: intl3.string(tmp2(1113).t["4P5I8V"]), variant: "primary", size: "lg", onPress: callback };
-  const Button = tmp2(5788).Button;
+  const Button = tmp2(5758).Button;
   intl3 = tmp2(1113).intl;
   items6 = [tmp14(Button, obj17), ];
   const obj18 = { text: intl4.string(tmp2(1113).t.TulDPl), variant: "secondary", size: "lg", onPress: callback1 };
-  const Button2 = tmp2(5788).Button;
+  const Button2 = tmp2(5758).Button;
   intl4 = tmp2(1113).intl;
   items6[1] = closure_9(Button2, obj18);
   items4[4] = tmp15(View, obj16);

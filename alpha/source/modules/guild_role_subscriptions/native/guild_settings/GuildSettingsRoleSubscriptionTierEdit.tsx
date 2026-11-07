@@ -1,40 +1,40 @@
-// Module ID: 20314
-// Function ID: 20315
+// Module ID: 20383
+// Function ID: 20384
 // Name: GuildSettingsRoleSubscriptionTierEdit
-// Dependencies: [32, 19, 17, 5095, 20272, 17457, 1072, 5016, 21, 5170, 575, 1499, 20283, 20279, 7514, 7151, 5781, 5788, 5893, 7378, 20310, 20308, 20286, 17464, 20268, 12752, 20315, 1113, 17477, 5866, 7089, 7653, 9077, 5003, 20316, 2118, 10656, 10657, 9312, 2]
+// Dependencies: [32, 19, 17, 5065, 20341, 17506, 1072, 4986, 21, 5140, 575, 1499, 20352, 20348, 7491, 7126, 5751, 5758, 5862, 7355, 20379, 20377, 20355, 17513, 20337, 12765, 20384, 1113, 17526, 5836, 7064, 7630, 9059, 4973, 20385, 2118, 10639, 10640, 9294, 2]
 // Exports: default
 
-// Module 20314 (GuildSettingsRoleSubscriptionTierEdit)
+// Module 20383 (GuildSettingsRoleSubscriptionTierEdit)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl4 from "intl" /* 1113 */;
 import useNavigation from "useNavigation" /* 1499 */;
-import dismissible_content from "dismissible_content" /* 5003 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 5016 */;
-import GuildRoleSubscriptionsStore2 from "GuildRoleSubscriptionsStore" /* 5095 */;
-import Text_Text from "Text/Text" /* 5781 */;
-import components_Button_Button from "components/Button/Button" /* 5788 */;
-import ToastUtils from "ToastUtils" /* 5866 */;
-import TrashIcon2 from "TrashIcon" /* 5893 */;
-import TableRowGroup from "TableRowGroup" /* 7151 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7378 */;
-import CreatorMonetizationRestrictionsHooks from "CreatorMonetizationRestrictionsHooks" /* 7514 */;
-import ErrorBlockDefault from "ErrorBlock" /* 12752 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 17457 */;
-import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 17464 */;
-import RoleSubscriptionSettingsDisabledContext from "RoleSubscriptionSettingsDisabledContext" /* 20268 */;
-import useArchiveOrDeleteDefault from "useArchiveOrDelete" /* 20279 */;
-import EditStateContextProvider2 from "EditStateContextProvider" /* 20283 */;
-import GuildRoleSubscriptionTierBenefitsModal from "GuildRoleSubscriptionTierBenefitsModal" /* 20286 */;
-import GuildRoleSubscriptionTierDesignModal from "GuildRoleSubscriptionTierDesignModal" /* 20308 */;
-import GuildRoleSubscriptionTierDetailsModal from "GuildRoleSubscriptionTierDetailsModal" /* 20310 */;
-import ActionableNoticeDefault from "ActionableNotice" /* 20315 */;
+import dismissible_content from "dismissible_content" /* 4973 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4986 */;
+import GuildRoleSubscriptionsStore2 from "GuildRoleSubscriptionsStore" /* 5065 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import components_Button_Button from "components/Button/Button" /* 5758 */;
+import ToastUtils from "ToastUtils" /* 5836 */;
+import TrashIcon2 from "TrashIcon" /* 5862 */;
+import TableRowGroup from "TableRowGroup" /* 7126 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7355 */;
+import CreatorMonetizationRestrictionsHooks from "CreatorMonetizationRestrictionsHooks" /* 7491 */;
+import ErrorBlockDefault from "ErrorBlock" /* 12765 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 17506 */;
+import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 17513 */;
+import RoleSubscriptionSettingsDisabledContext from "RoleSubscriptionSettingsDisabledContext" /* 20337 */;
+import useArchiveOrDeleteDefault from "useArchiveOrDelete" /* 20348 */;
+import EditStateContextProvider2 from "EditStateContextProvider" /* 20352 */;
+import GuildRoleSubscriptionTierBenefitsModal from "GuildRoleSubscriptionTierBenefitsModal" /* 20355 */;
+import GuildRoleSubscriptionTierDesignModal from "GuildRoleSubscriptionTierDesignModal" /* 20377 */;
+import GuildRoleSubscriptionTierDetailsModal from "GuildRoleSubscriptionTierDetailsModal" /* 20379 */;
+import ActionableNoticeDefault from "ActionableNotice" /* 20384 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import RoleTierEditStore from "RoleTierEditStore" /* 20272 */;
+import RoleTierEditStore from "RoleTierEditStore" /* 20341 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 const GuildRoleSubscriptionsStore = GuildRoleSubscriptionsStore2;
@@ -49,7 +49,7 @@ let obj3;
 let obj4;
 let obj5;
 let tmp;
-const DismissibleActionSheet = tmp(10657);
+const DismissibleActionSheet = tmp(10640);
 function ArchiveOrDeleteTierSection() {
   let TrashIcon;
   let archiving;
@@ -226,7 +226,7 @@ export default function GuildSettingsRoleSubscriptionTierEdit(guildId) {
   let obj7;
   let obj8;
   let tmp17;
-  const f120348 = (currentScene) => {
+  const f120889 = (currentScene) => {
     let DETAILS = currentScene.currentScene;
     if (DETAILS == null) {
       DETAILS = handleCreateOrUpdateFromEditState.DETAILS;
@@ -306,9 +306,9 @@ export default function GuildSettingsRoleSubscriptionTierEdit(guildId) {
       presentError(anyErrorMessage);
     }
   }, items1);
-  [tmp17, c14] = _slicedToArray(loading.useRoleTierEditStore(f120348), 2);
+  [tmp17, c14] = _slicedToArray(loading.useRoleTierEditStore(f120889), 2);
   const items2 = [navigation, hasChanges, first1, loading, callback];
-  _slicedToArray(loading.useRoleTierEditStore(f120348), 2);
+  _slicedToArray(loading.useRoleTierEditStore(f120889), 2);
   const layoutEffect1 = obj.useLayoutEffect(() => {
     let onPress;
     let title;

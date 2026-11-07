@@ -1,20 +1,20 @@
-// Module ID: 14605
-// Function ID: 14606
+// Module ID: 14638
+// Function ID: 14639
 // Name: FavoritesGuildAddChannelModal
-// Dependencies: [5, 32, 19, 17, 5032, 10863, 21, 5170, 575, 14606, 14607, 13591, 1380, 5866, 1113, 10967, 14604, 1493, 1377, 13601, 3606, 10872, 13602, 13626, 14608, 2]
+// Dependencies: [5, 32, 19, 17, 5002, 10846, 21, 5140, 575, 14639, 14640, 13615, 1380, 5836, 1113, 10950, 14637, 1493, 1377, 13625, 3608, 10855, 13626, 13650, 14641, 2]
 // Exports: default
 
-// Module 14605 (FavoritesGuildAddChannelModal)
+// Module 14638 (FavoritesGuildAddChannelModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
-import FavoritesConstants from "FavoritesConstants" /* 5032 */;
-import UserRowConstants from "UserRowConstants" /* 10863 */;
+import FavoritesConstants from "FavoritesConstants" /* 5002 */;
+import UserRowConstants from "UserRowConstants" /* 10846 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let c3, c4, dependencyMap;
@@ -46,8 +46,8 @@ export default function FavoritesGuildAddChannelModal(parentId) {
   const source = parentId.source;
   const tmp = closure_11();
   const tmp3 = dependencyMap;
-  const tmp4 = first(14606)();
-  first(14607)(source);
+  const tmp4 = first(14639)();
+  first(14640)(source);
   const tmp2 = first;
   [first, dependencyMap] = react.useState([]);
   const callback = react.useCallback((arg0) => {
@@ -65,7 +65,7 @@ export default function FavoritesGuildAddChannelModal(parentId) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -116,7 +116,7 @@ export default function FavoritesGuildAddChannelModal(parentId) {
             presentError(intl.string(_null(c2[14]).t.R0RpRX));
           }
           c4 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp32) {
         c4 = 3;
@@ -134,22 +134,22 @@ export default function FavoritesGuildAddChannelModal(parentId) {
     }, items1),
     children: items2
   };
-  let obj2 = { title: intl.string(first(3606).Rp35U1), onClose: parentId(14604).closeFavoritesGuildAddChannelModal };
-  const tmp12 = first(13601);
+  let obj2 = { title: intl.string(first(3608).Rp35U1), onClose: parentId(14637).closeFavoritesGuildAddChannelModal };
+  const tmp12 = first(13625);
   intl = parentId(1113).intl;
   items2 = [closure_9(tmp12, obj2), ];
   let obj3 = { style: tmp.container, children: items3 };
-  items3 = [closure_9(first(10872), { absolute: true }), , ];
+  items3 = [closure_9(first(10855), { absolute: true }), , ];
   let obj4 = { rowMode: UserRowModes.TOGGLE, initialSelectedDestinations: [], onSelectedDestinationChange: callback, channelFilter: tmp4, insetEnd: num, disableGradient: true, disableStickySections: true, disableSelection: first.length >= closure_7 };
   num = 0;
-  const tmp14 = first(13602);
+  const tmp14 = first(13626);
   if (first.length > 0) {
     num = tmp2(575).space.PX_80;
   }
   items3[1] = closure_9(tmp14, obj4);
   let obj5 = { isVisible: length > 0, floatingBackgroundColor: tmp.container.backgroundColor, text: tmp13Result.getFavoritesAddButtonLabel(first.length), onPress: callback1 };
-  const ModalFloatingAction = tmp13(13626).ModalFloatingAction;
-  tmp13Result = parentId(14608);
+  const ModalFloatingAction = tmp13(13650).ModalFloatingAction;
+  tmp13Result = parentId(14641);
   items3[2] = closure_9(ModalFloatingAction, obj5);
   items2[1] = closure_10(View, obj3);
   return closure_10(View, obj);

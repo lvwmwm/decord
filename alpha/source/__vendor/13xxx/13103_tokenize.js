@@ -1,66 +1,44 @@
 // Module ID: 13103
 // Function ID: 13104
 // Name: tokenize
-// Dependencies: [13027]
+// Dependencies: [13050]
 
 // Module 13103 (tokenize)
-import tokenize from "tokenize" /* 13027 */;
+import tokenize from "tokenize" /* 13050 */;
 
-let items;
 let obj2;
-function consumeRaw(arg0) {
-  return this.Raw(arg0, null, false);
-}
-const WhiteSpace = tokenize.TYPE.WhiteSpace;
 const Comment = tokenize.TYPE.Comment;
-const AtKeyword = tokenize.TYPE.AtKeyword;
-const CDO = tokenize.TYPE.CDO;
-const CDC = tokenize.TYPE.CDC;
-const obj = {
-  name: "StyleSheet",
+let obj = {
+  name: "Comment",
   structure: obj2,
   parse() {
     const self = this;
     const tokenStart = this.scanner.tokenStart;
-    const list = this.createList();
-    if (!this.scanner.eof) {
-      do {
-        let tokenType = self.scanner.tokenType;
-        if (WhiteSpace === tokenType) {
-          let iter2 = self.scanner;
-          let nextResult = iter2.next();
-        } else {
-          let CommentResult;
-          if (Comment === tokenType) {
-            let source = self.scanner.source;
-            if (33 !== source.charCodeAt(self.scanner.tokenStart + 2)) {
-              let iter = self.scanner;
-              let nextResult1 = iter.next();
-            } else {
-              CommentResult = self.Comment();
-            }
-          } else if (CDO === tokenType) {
-            CommentResult = self.CDO();
-          } else if (CDC === tokenType) {
-            CommentResult = self.CDC();
-          } else if (AtKeyword === tokenType) {
-            CommentResult = self.parseWithFallback(self.Atrule, consumeRaw);
-          } else {
-            CommentResult = self.parseWithFallback(self.Rule, consumeRaw);
-          }
-          let arr = list.push(CommentResult);
-        }
-      } while (!self.scanner.eof);
+    const tokenEnd = this.scanner.tokenEnd;
+    this.eat(Comment);
+    const sum = tokenEnd - tokenStart + 2;
+    let tmp3 = sum >= 2;
+    if (2 <= sum) {
+      const source = self.scanner.source;
+      tmp3 = 42 === source.charCodeAt(tokenEnd - 2);
     }
-    const element = { type: "StyleSheet", loc: self.getLocation(tokenStart, self.scanner.tokenStart), children: list };
-    return element;
+    if (tmp3) {
+      const source2 = self.scanner.source;
+      tmp3 = 47 === source2.charCodeAt(tokenEnd - 1);
+    }
+    let diff = tokenEnd;
+    if (tmp3) {
+      diff = tokenEnd - 2;
+    }
+    const obj = { type: "Comment", loc: self.getLocation(tokenStart, self.scanner.tokenStart), value: str.substring(tokenStart + 2, diff) };
+    return obj;
   },
-  generate(arg0) {
-    this.children(arg0);
-  },
-  walkContext: "stylesheet"
+  generate(value) {
+    this.chunk("/*");
+    this.chunk(value.value);
+    this.chunk("*/");
+  }
 };
-obj2 = { children: items };
-items = [["Comment", "CDO", "CDC", "Atrule", "Rule", "Raw"]];
+obj2 = { value: String };
 
 export default obj;

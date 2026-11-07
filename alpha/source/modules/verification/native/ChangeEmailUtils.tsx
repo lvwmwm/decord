@@ -1,14 +1,14 @@
-// Module ID: 7238
-// Function ID: 7239
+// Module ID: 7213
+// Function ID: 7214
 // Name: verification/ChangeEmailUtils
-// Dependencies: [5, 7088, 7239, 7249, 1092, 2]
+// Dependencies: [5, 7063, 7214, 7224, 1092, 2]
 // Exports: finishChangeEmailFlow, finishVerifyEmailFlow, saveEmail
 
-// Module 7238 (verification/ChangeEmailUtils)
+// Module 7213 (verification/ChangeEmailUtils)
 import ConstantsIOS from "ConstantsIOS" /* 1092 */;
-import UserSettingsAccountActionCreatorsAll from "UserSettingsAccountActionCreators" /* 7239 */;
+import UserSettingsAccountActionCreatorsAll from "UserSettingsAccountActionCreators" /* 7214 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChangeEmailStore from "ChangeEmailStore" /* 7088 */;
+import ChangeEmailStore from "ChangeEmailStore" /* 7063 */;
 import size from "module_2" /* 2 */;
 
 let closure_3;
@@ -32,7 +32,7 @@ let obj = function _saveEmail() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {

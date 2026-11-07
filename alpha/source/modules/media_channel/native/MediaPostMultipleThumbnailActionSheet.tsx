@@ -1,17 +1,17 @@
-// Module ID: 10363
-// Function ID: 10364
+// Module ID: 10346
+// Function ID: 10347
 // Name: MediaPostMultipleThumbnailActionSheet
-// Dependencies: [19, 17, 5016, 21, 5170, 575, 1627, 5418, 5422, 5781, 1113, 1187, 5788, 2]
+// Dependencies: [19, 17, 4986, 21, 5140, 575, 1627, 5388, 5392, 5751, 1113, 1187, 5758, 2]
 // Exports: default
 
-// Module 10363 (MediaPostMultipleThumbnailActionSheet)
+// Module 10346 (MediaPostMultipleThumbnailActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 5016 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4986 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -54,24 +54,24 @@ export default function MediaPostThumbnailActionSheet(markAsDismissed) {
     children: closure_5(View, obj2)
   };
   obj2 = { style: tmp.container, children: closure_6(BottomSheetScrollView, obj3) };
-  const BottomSheet = markAsDismissed(5418).BottomSheet;
+  const BottomSheet = markAsDismissed(5388).BottomSheet;
   obj3 = { contentContainerStyle: items, children: items2 };
   items = [tmp.contentContainer, { paddingBottom: bottom }];
   const obj4 = { style: tmp.topContainer, children: closure_6(View, obj5) };
   obj5 = { style: tmp.setAsThumbnailContainer, children: items1 };
-  BottomSheetScrollView = markAsDismissed(5422).BottomSheetScrollView;
+  BottomSheetScrollView = markAsDismissed(5392).BottomSheetScrollView;
   const obj6 = { variant: "body-md/semibold", color: "mobile-text-heading-primary", children: intl.string(markAsDismissed(1113).t.ews2pj) };
-  const Text = markAsDismissed(5781).Text;
+  const Text = markAsDismissed(5751).Text;
   intl = markAsDismissed(1113).intl;
   items1 = [closure_5(Text, obj6), closure_5(markAsDismissed(1187).Checkbox, { selected: true })];
   items2 = [closure_5(View, obj4), , , , , ];
   const obj7 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", style: tmp.title, children: intl2.string(markAsDismissed(1113).t.WJisip) };
-  const Text2 = markAsDismissed(5781).Text;
+  const Text2 = markAsDismissed(5751).Text;
   intl2 = markAsDismissed(1113).intl;
   items2[1] = closure_5(Text2, obj7);
   items2[2] = closure_5(markAsDismissed(1187).Spacer, { size: 12 });
   const obj8 = { variant: "body-md/normal", color: "text-default", style: tmp.description, children: intl3.string(markAsDismissed(1113).t.X6ZH6d) };
-  const Text3 = markAsDismissed(5781).Text;
+  const Text3 = markAsDismissed(5751).Text;
   intl3 = markAsDismissed(1113).intl;
   items2[3] = closure_5(Text3, obj8);
   items2[4] = closure_5(markAsDismissed(1187).Spacer, { size: 48 });
@@ -82,7 +82,7 @@ export default function MediaPostThumbnailActionSheet(markAsDismissed) {
       return markAsDismissed(ContentDismissActionType.UNKNOWN);
     }
   };
-  const Button = markAsDismissed(5788).Button;
+  const Button = markAsDismissed(5758).Button;
   intl4 = markAsDismissed(1113).intl;
   items2[5] = closure_5(Button, obj9);
   return closure_5(BottomSheet, obj);

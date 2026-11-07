@@ -1,37 +1,36 @@
-// Module ID: 9789
-// Function ID: 9790
+// Module ID: 9773
+// Function ID: 9774
 // Name: QuestActionCreators
-// Dependencies: [5, 7942, 9790, 6853, 6059, 6852, 7945, 7947, 6861, 1072, 6864, 1282, 572, 6605, 1113, 7953, 1242, 6827, 1260, 9791, 9794, 6868, 9795, 7941, 7582, 7589, 9796, 7740, 7964, 5219, 9797, 9798, 9799, 9815, 7943, 9816, 1252, 7918, 9817, 9801, 1089, 9818, 2]
-// Exports: claimQuestReward, clearQuestAdDecision, completeQuestPreview, dismissProgressTrackingFailureNotice, dismissQuestActivityModal, dismissQuestContent, enrollInQuest, fetchClaimedQuests, fetchCurrentQuests, fetchEarnedQuestToDeliver, fetchQuest, fetchQuestHomeHero, fetchQuestHomeHeroPreview, fetchQuestPreview, fetchQuestRewardCode, fetchQuestToDeliver, fetchVideoTranscript, manualStopConsoleQuest, manuallyStartConsoleQuest, markAdContentSeen, markAdContentUnseen, markQuestDiscovered, overrideQuestForPlacement, questsVisibleMobileMessagesChanged, resetOptimisticProgress, resetQuestDismissibilityStatus, resetQuestPreviewStatus, resetRecentQuestCompletions, selectTaskPlatform, sendHeartbeat, setAutoEnroll, updateOptimisticProgress, updatePrevRestingQuestDockMode, updateQuestDockVisibilityEligibility, updateVideoProgress
+// Dependencies: [5, 7919, 9774, 6828, 6032, 6827, 7922, 7924, 6836, 1072, 6839, 1282, 572, 6580, 1113, 7931, 1242, 6802, 1260, 9775, 9778, 6843, 9779, 7918, 7559, 7566, 9780, 7717, 7942, 5189, 9781, 9782, 9783, 9799, 7920, 9800, 1252, 7895, 9801, 9785, 1089, 9802, 2]
+// Exports: claimQuestReward, clearQuestAdDecision, completeQuestPreview, dismissProgressTrackingFailureNotice, dismissQuestActivityModal, dismissQuestContent, enrollInQuest, fetchClaimedQuests, fetchEarnedQuestToDeliver, fetchQuest, fetchQuestHomeHero, fetchQuestHomeHeroPreview, fetchQuestPreview, fetchQuestRewardCode, fetchQuestToDeliver, fetchVideoTranscript, manualStopConsoleQuest, manuallyStartConsoleQuest, markAdContentSeen, markAdContentUnseen, markQuestDiscovered, overrideQuestForPlacement, questsVisibleMobileMessagesChanged, resetOptimisticProgress, resetQuestDismissibilityStatus, resetQuestPreviewStatus, resetRecentQuestCompletions, selectTaskPlatform, sendHeartbeat, setAutoEnroll, updateOptimisticProgress, updatePrevRestingQuestDockMode, updateQuestDockVisibilityEligibility, updateVideoProgress
 
-// Module 9789 (QuestActionCreators)
+// Module 9773 (QuestActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6827 */;
-import QuestConstants from "QuestConstants" /* 6861 */;
-import QuestTypes from "QuestTypes" /* 6864 */;
-import AdCreativeType from "AdCreativeType" /* 6868 */;
-import SessionHeartbeatScheduler from "SessionHeartbeatScheduler" /* 7740 */;
-import QuestDataUtils from "QuestDataUtils" /* 7941 */;
-import VideoQuestUIStore2 from "VideoQuestUIStore" /* 7947 */;
-import SidebarVisibilityMethodStore from "SidebarVisibilityMethodStore" /* 9790 */;
-import captureAdUserAction2 from "captureAdUserAction" /* 9791 */;
-import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9794 */;
-import VirtualCurrencyUtils from "VirtualCurrencyUtils" /* 9795 */;
-import QuestDecisionRoundtripTrackerDefault from "QuestDecisionRoundtripTracker" /* 9796 */;
-import EarnedDecisionRoundtripTrackerDefault from "EarnedDecisionRoundtripTracker" /* 9817 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6802 */;
+import QuestConstants from "QuestConstants" /* 6836 */;
+import QuestTypes from "QuestTypes" /* 6839 */;
+import AdCreativeType from "AdCreativeType" /* 6843 */;
+import SessionHeartbeatScheduler from "SessionHeartbeatScheduler" /* 7717 */;
+import QuestDataUtils from "QuestDataUtils" /* 7918 */;
+import VideoQuestUIStore2 from "VideoQuestUIStore" /* 7924 */;
+import SidebarVisibilityMethodStore from "SidebarVisibilityMethodStore" /* 9774 */;
+import captureAdUserAction2 from "captureAdUserAction" /* 9775 */;
+import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9778 */;
+import VirtualCurrencyUtils from "VirtualCurrencyUtils" /* 9779 */;
+import EarnedDecisionRoundtripTrackerDefault from "EarnedDecisionRoundtripTracker" /* 9801 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import AdDeliveryStore from "AdDeliveryStore" /* 7942 */;
-import ExpandedGuildFolderStore from "ExpandedGuildFolderStore" /* 6853 */;
-import NetworkStore from "NetworkStore" /* 6059 */;
-import SortedGuildStore from "SortedGuildStore" /* 6852 */;
-import QuestStore from "QuestStore" /* 7945 */;
+import AdDeliveryStore from "AdDeliveryStore" /* 7919 */;
+import ExpandedGuildFolderStore from "ExpandedGuildFolderStore" /* 6828 */;
+import NetworkStore from "NetworkStore" /* 6032 */;
+import SortedGuildStore from "SortedGuildStore" /* 6827 */;
+import QuestStore from "QuestStore" /* 7922 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
-let _null, bounty, content, noFillAdContentId, playable, quest, stack_trace, text;
+let _null, ad_content_id, bounty, closure_5, content, noFillAdContentId, playable, quest, stack_trace, text;
 
 let closure_14;
 let map1;
@@ -54,7 +53,7 @@ let obj = function _manuallyStartConsoleQuest() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c6;
@@ -194,7 +193,7 @@ obj = function _manualStopConsoleQuest() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -225,7 +224,7 @@ obj = function _manualStopConsoleQuest() {
           return obj;
         } else {
           c1 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp8) {
         c1 = 3;
@@ -247,7 +246,7 @@ obj = function _resetRecentQuestCompletions() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -277,7 +276,7 @@ obj = function _resetRecentQuestCompletions() {
           return obj;
         } else {
           c0 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp7) {
         c0 = 3;
@@ -287,6 +286,9 @@ obj = function _resetRecentQuestCompletions() {
   });
   return obj(...arguments);
 };
+function fetchCurrentQuests() {
+  return obj(...arguments);
+}
 obj = function _fetchCurrentQuests() {
   obj = _asyncToGenerator(async function(arg0, value) {
     let closure_3;
@@ -302,7 +304,7 @@ obj = function _fetchCurrentQuests() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let tmp26;
@@ -423,7 +425,7 @@ obj = function _fetchCurrentQuests() {
           c4 = 0;
         }
         c6 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp26) {
         if (0 === c4) {
           c6 = 3;
@@ -528,7 +530,7 @@ obj = function _enrollInQuest() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -595,7 +597,7 @@ obj = function _enrollInQuest() {
             const obj3 = closure_131_1(closure_131_2[12]);
             obj3.dispatch(obj16);
             c6 = 3;
-            return { value: { type: closure_131_21.UNKNOWN_ERROR }, done: true };
+            return { value: { type: closure_131_22.UNKNOWN_ERROR }, done: true };
           } else if (arg0 === 1) {
             c6 = 3;
             throw value;
@@ -612,7 +614,7 @@ obj = function _enrollInQuest() {
             obj21.dispatch(obj22);
             c4 = 0;
             c6 = 3;
-            return { value: { type: closure_131_21.SUCCESS, userStatus }, done: true };
+            return { value: { type: closure_131_22.SUCCESS, userStatus }, done: true };
           }
         } catch (tmp36) {
           if (0 === c4) {
@@ -630,7 +632,7 @@ obj = function _enrollInQuest() {
 obj = function _trackClaimQuestReward() {
   obj = _asyncToGenerator(async (arg0, value, arg2) => {
     function performClaimQuestReward() {
-      return closure_1_25(...arguments);
+      return closure_1_26(...arguments);
     }
     let closure_0 = arg0;
     let closure_1 = value;
@@ -645,7 +647,7 @@ obj = function _trackClaimQuestReward() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c6;
@@ -670,20 +672,20 @@ obj = function _trackClaimQuestReward() {
           }
         } else if (1 === c7) {
           c6 = 0;
-          closure_132_23.delete(closure_0);
+          closure_132_24.delete(closure_0);
           throw closure_5;
         } else if (arg0 === 1) {
           c8 = 3;
           throw value;
         } else if (arg0 === 2) {
           c6 = 0;
-          closure_132_23.delete(closure_0);
+          closure_132_24.delete(closure_0);
           c8 = 3;
           const obj5 = { value, done: true };
           return obj5;
         } else {
           c6 = 0;
-          closure_132_23.delete(closure_0);
+          closure_132_24.delete(closure_0);
           c8 = 3;
           obj = { value, done: true };
           return obj;
@@ -721,7 +723,7 @@ obj = function _performClaimQuestReward() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -832,7 +834,7 @@ obj = function _fetchQuestRewardCode() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -889,7 +891,7 @@ obj = function _fetchQuestRewardCode() {
             c4 = 0;
           }
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp36) {
           closure_3 = tmp36;
           if (0 === c4) {
@@ -924,7 +926,7 @@ obj = function _dismissQuestContent() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c5;
@@ -1003,7 +1005,7 @@ obj = function _dismissQuestContent() {
           c5 = 0;
         }
         c7 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp41) {
         closure_4 = tmp41;
         if (0 === c5) {
@@ -1091,7 +1093,7 @@ obj = function _resetQuestPreviewStatus() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -1143,7 +1145,7 @@ obj = function _resetQuestPreviewStatus() {
               c4 = 0;
             }
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp28) {
           closure_3 = tmp28;
@@ -1176,7 +1178,7 @@ obj = function _resetQuestDismissibilityStatus() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -1230,7 +1232,7 @@ obj = function _resetQuestDismissibilityStatus() {
               c4 = 0;
             }
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp28) {
           closure_3 = tmp28;
@@ -1259,7 +1261,7 @@ obj = function _fetchClaimedQuests() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c3;
@@ -1320,7 +1322,7 @@ obj = function _fetchClaimedQuests() {
           c3 = 0;
         }
         c5 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp30) {
         closure_2 = tmp30;
         if (0 === c3) {
@@ -1336,22 +1338,29 @@ obj = function _fetchClaimedQuests() {
 };
 obj = function _fetchQuestToDeliver() {
   obj = _asyncToGenerator(async (placement, caller_source) => {
-    let closure_5;
     let closure_6;
-    let c8 = 0;
+    let closure_7;
+    let closure_2 = arg2;
     let c9 = 0;
-    let c7 = 0;
-    return (async function(arg0, value) {
-      let creative_type;
-      let creative_type1;
-      let obj18;
+    let c10 = 0;
+    let c8 = 0;
+    const iter = (async function(arg0, value) {
+      let ad_set_id;
+      let adset_id;
+      let campaign_id;
+      let creative_id;
+      let creative_type2;
+      let creative_type3;
+      let folderExpanded;
+      let obj21;
       let obj25;
-      let obj29;
-      let obj35;
-      let tmp123;
-      let tmp198;
-      if (c9 === 2) {
-        c9 = 3;
+      let obj31;
+      let obj36;
+      let obj42;
+      let tmp165;
+      let tmp242;
+      if (c10 === 2) {
+        c10 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
       } else if (tmp3 === 3) {
         if (arg0 === 1) {
@@ -1359,64 +1368,99 @@ obj = function _fetchQuestToDeliver() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
+        let tmp246;
         try {
+          let flag;
+          let closure_4;
           let tmp;
           let items;
-          let closure_9;
+          let closure_10;
           let uRLSearchParams;
           let body;
-          let obj27;
-          let closure_3;
-          c9 = 2;
-          if (0 === c8) {
+          let result1;
+          let creative1;
+          let obj32;
+          let creative_content;
+          let id;
+          let user_status;
+          let closure_22;
+          c10 = 2;
+          if (0 === c9) {
             if (arg0 === 1) {
-              c9 = 3;
+              c10 = 3;
               throw value;
             } else if (arg0 === 2) {
-              c9 = 3;
+              c10 = 3;
               return { value, done: true };
             } else {
+              closure_5 = tmp4;
+              flag = closure_2;
+              if (closure_2 === undefined) {
+                flag = false;
+              }
+              _null = undefined;
+              closure_4 = undefined;
+              closure_5 = undefined;
               tmp = undefined;
+              tmp246 = undefined;
               items = undefined;
               let node;
-              closure_9 = undefined;
+              closure_10 = undefined;
               uRLSearchParams = undefined;
               body = undefined;
               let enabled;
-              quest = undefined;
-              obj27 = undefined;
+              result1 = undefined;
+              creative1 = undefined;
+              obj32 = undefined;
               noFillAdContentId = undefined;
+              creative_content = undefined;
+              id = undefined;
+              user_status = undefined;
+              closure_22 = undefined;
               bounty = undefined;
               playable = undefined;
-              prop = undefined;
+              quest = undefined;
+              ad_content_id = undefined;
+              c9 = 1;
+              c10 = 1;
+              return { value: "flexDirection", done: true };
+            }
+          } else if (1 === c9) {
+            if (arg0 === 1) {
+              c10 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c10 = 3;
+              return { value, done: true };
+            } else {
               const _Date = Date;
               _null = Date.now();
-              const obj32 = QuestDecisionRoundtripTrackerDefault;
-              closure_3 = obj32.recordQuestRequestAttempt("/quests/decision", caller_source, placement);
-              const obj6 = { type: "QUESTS_FETCH_QUEST_TO_DELIVER_BEGIN", placement };
-              const obj33 = DispatcherDefault;
-              obj33.dispatch(obj6);
-              c7 = 1;
-              c8 = 2;
-              c9 = 1;
-              const obj7 = { value: obj35.getSession(), done: false };
-              obj35 = SessionHeartbeatScheduler;
-              return obj7;
+              const obj39 = closure_134_1(closure_134_2[26]);
+              closure_4 = obj39.recordQuestRequestAttempt("/quests/decision", caller_source, placement);
+              const obj7 = { type: "QUESTS_FETCH_QUEST_TO_DELIVER_BEGIN", placement };
+              const obj40 = closure_134_1(closure_134_2[12]);
+              obj40.dispatch(obj7);
+              c8 = 1;
+              c9 = 3;
+              c10 = 1;
+              const obj9 = { value: obj42.getSession(), done: false };
+              obj42 = closure_134_0(closure_134_2[27]);
+              return obj9;
             }
           } else {
-            if (1 === c8) {
-              c7 = 0;
-              const obj8 = { wasSuccessful: false, currentFetchedAt: _null };
-              const obj22 = closure_133_1(closure_133_2[26]);
-              const result = obj22.recordQuestRequestApiResponse(closure_3, obj8);
-              prop = closure_133_13.QUEST_DECISION_ROUNDTRIP_ERROR;
-              const obj9 = { reason: _null, api_error: obj25.getAnyErrorMessage(), caller_source };
-              const track2 = closure_133_1(closure_133_2[36]).track;
-              closure_133_1(closure_133_2[36]);
-              const merged = Object.assign(closure_133_1(closure_133_2[37])());
+            if (2 === c9) {
+              c8 = 0;
+              const obj11 = { wasSuccessful: false, currentFetchedAt: _null };
+              const obj28 = closure_134_1(closure_134_2[26]);
+              const result = obj28.recordQuestRequestApiResponse(closure_4, obj11);
+              const obj12 = { reason: _null, api_error: obj31.getAnyErrorMessage(), caller_source };
+              const track2 = closure_134_1(closure_134_2[36]).track;
+              const QUEST_DECISION_ROUNDTRIP_ERROR = closure_134_13.QUEST_DECISION_ROUNDTRIP_ERROR;
+              closure_134_1(closure_134_2[36]);
+              const merged = Object.assign(closure_134_1(closure_134_2[37])());
               message = undefined;
               if (message != null) {
                 message = message.message;
@@ -1427,49 +1471,50 @@ obj = function _fetchQuestToDeliver() {
               }
               const self3 = this;
               const self4 = this;
-              obj25 = new closure_133_1(closure_133_2[13])(message);
-              track2(prop, obj9);
-              prop = closure_133_1(closure_133_2[12]).dispatch;
+              obj31 = new closure_134_1(closure_134_2[13])(message);
+              track2(QUEST_DECISION_ROUNDTRIP_ERROR, obj12);
+              const obj13 = { type: "QUESTS_FETCH_QUEST_TO_DELIVER_FAILURE", error: tmp242, placement };
+              const dispatch2 = closure_134_1(closure_134_2[12]).dispatch;
               const self5 = this;
               const self6 = this;
-              const obj12 = { type: "QUESTS_FETCH_QUEST_TO_DELIVER_FAILURE", error: tmp198, placement };
-              closure_133_1(closure_133_2[12]);
-              tmp198 = new closure_133_1(closure_133_2[13])(message);
-              prop(obj12);
-            } else if (2 === c8) {
+              closure_134_1(closure_134_2[12]);
+              tmp242 = new closure_134_1(closure_134_2[13])(message);
+              dispatch2(obj13);
+            } else if (3 === c9) {
               if (arg0 === 1) {
-                c9 = 3;
+                c10 = 3;
                 throw value;
               } else if (arg0 === 2) {
-                c7 = 0;
-                c9 = 3;
+                c8 = 0;
+                c10 = 3;
                 return { value, done: true };
               } else {
-                const obj19 = closure_133_0(closure_133_2[28]);
-                prop = obj19.getOrRefreshAdSession();
-                c8 = 3;
-                c9 = 1;
-                return { value: prop, done: false };
+                closure_5 = value;
+                c9 = 4;
+                c10 = 1;
+                const obj17 = { value: obj25.getOrRefreshAdSession(), done: false };
+                obj25 = closure_134_0(closure_134_2[28]);
+                return obj17;
               }
-            } else if (3 === c8) {
+            } else if (4 === c9) {
               if (arg0 === 1) {
-                c9 = 3;
+                c10 = 3;
                 throw value;
               } else if (arg0 === 2) {
-                c7 = 0;
-                c9 = 3;
+                c8 = 0;
+                c10 = 3;
                 return { value, done: true };
               } else {
                 tmp = value;
-                prop = closure_133_5();
-                if (null != prop) {
-                  items = prop();
+                tmp246 = closure_134_5();
+                if (null != tmp246) {
+                  items = tmp246();
                 } else {
                   items = [];
                 }
-                node = closure_133_8.getGuildsTree();
+                node = closure_134_8.getGuildsTree();
                 const found = items.filter((item) => {
-                  obj = placement(c2[29]);
+                  obj = placement(closure_2[29]);
                   if (obj.isPseudoGuildId(item)) {
                     return false;
                   } else {
@@ -1482,191 +1527,243 @@ obj = function _fetchQuestToDeliver() {
                     return isFolderExpandedResult;
                   }
                 });
-                closure_9 = found.slice(0, 50);
+                closure_10 = found.slice(0, 50);
                 const _URLSearchParams = URLSearchParams;
                 const _String3 = String;
                 const self = this;
                 const self2 = this;
-                const obj16 = { placement: String(placement) };
-                uRLSearchParams = new URLSearchParams(obj16);
+                const obj19 = { placement: String(placement) };
+                uRLSearchParams = new URLSearchParams(obj19);
                 let uuid;
-                if (prop != null) {
-                  uuid = prop.uuid;
+                if (closure_5 != null) {
+                  uuid = closure_5.uuid;
                 }
                 if (null != uuid) {
-                  uRLSearchParams.append("client_heartbeat_session_id", prop.uuid);
+                  uRLSearchParams.append("client_heartbeat_session_id", closure_5.uuid);
                 }
                 if (null != tmp.uuid) {
                   uRLSearchParams.append("client_ad_session_id", tmp.uuid);
                 }
-                const item = closure_9.forEach((item) => closure_1_10.append("visible_guild_ids", item));
-                const HTTP = closure_133_0(closure_133_2[11]).HTTP;
+                const item = closure_10.forEach((item) => closure_1_11.append("visible_guild_ids", item));
+                const HTTP = closure_134_0(closure_134_2[11]).HTTP;
                 const get = HTTP.get;
                 const _HermesInternal = HermesInternal;
-                const obj17 = { url: "" + closure_133_14.QUEST_FETCH_QUEST_TO_DELIVER + "?" + uRLSearchParams.toString(), rejectWithError: false, context: obj18 };
-                obj18 = { connection_type: closure_133_7.getType() };
-                prop = get(obj17);
-                c8 = 4;
-                c9 = 1;
-                return { value: prop, done: false };
+                const obj20 = { url: "" + closure_134_14.QUEST_FETCH_QUEST_TO_DELIVER + "?" + uRLSearchParams.toString(), rejectWithError: false, context: obj21 };
+                c9 = 5;
+                c10 = 1;
+                obj21 = { connection_type: closure_134_7.getType() };
+                const obj22 = { value: get(obj20), done: false };
+                return obj22;
               }
-            } else if (arg0 === 1) {
-              c9 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c7 = 0;
-              c9 = 3;
-              return { value, done: true };
             } else {
-              body = value.body;
-              enabled = false;
-              prop = placement;
-              if (placement === closure_133_0(closure_133_2[10]).AdPlacement.MOBILE_HOME_DOCK_AREA) {
-                const BountiesMobileQuestBarExperiment = closure_133_0(closure_133_2[30]).BountiesMobileQuestBarExperiment;
-                enabled = BountiesMobileQuestBarExperiment.getConfig({ location: "QuestActionCreators.fetchQuestToDeliver" }).enabled;
-              } else {
-                prop = placement;
-                if (placement === closure_133_0(closure_133_2[10]).AdPlacement.DESKTOP_ACCOUNT_PANEL_AREA) {
-                  const BountiesDesktopQuestBarExperiment = closure_133_0(closure_133_2[31]).BountiesDesktopQuestBarExperiment;
-                  enabled = BountiesDesktopQuestBarExperiment.getConfig({ location: "QuestActionCreators.fetchQuestToDeliver" }).enabled;
-                }
-              }
-              const creative = body.creative;
-              prop = undefined;
-              if (creative != null) {
-                prop = creative.creative_type;
-              }
-              if (prop !== closure_133_0(closure_133_2[21]).AdCreativeType.BOUNTY) {
-                prop = body.creative;
-              } else {
-                prop = null;
-              }
-              obj27 = null;
-              noFillAdContentId = null;
-              if (null != prop) {
-                prop = prop.creative_type;
-                if (closure_133_0(closure_133_2[21]).AdCreativeType.QUEST === prop) {
-                  const obj5 = closure_133_0(closure_133_2[15]);
-                  quest = obj5.questConfigFromServer(prop.creative_content);
-                  obj27 = { type: closure_133_0(closure_133_2[21]).AdCreativeType.QUEST, questId: quest.id };
-                  const obj23 = { type: closure_133_0(closure_133_2[21]).AdCreativeType.QUEST, questId: quest.id };
-                } else if (closure_133_0(closure_133_2[21]).AdCreativeType.BOUNTY === prop) {
-                  const obj3 = closure_133_0(closure_133_2[32]);
-                  bounty = obj3.bountyFromServer(prop.creative_content);
-                  obj27 = { type: closure_133_0(closure_133_2[21]).AdCreativeType.BOUNTY, bounty };
-                  const obj24 = { type: closure_133_0(closure_133_2[21]).AdCreativeType.BOUNTY, bounty };
-                } else if (closure_133_0(closure_133_2[21]).AdCreativeType.PLAYABLE === prop) {
-                  obj = closure_133_0(closure_133_2[33]);
-                  playable = obj.playableFromServer(prop.creative_content);
-                  obj27 = { type: closure_133_0(closure_133_2[21]).AdCreativeType.PLAYABLE, playable };
-                  const obj26 = { type: closure_133_0(closure_133_2[21]).AdCreativeType.PLAYABLE, playable };
-                } else if (closure_133_0(closure_133_2[21]).AdCreativeType.NO_FILL === prop) {
-                  prop = prop.creative_content;
-                  let ad_content_id;
-                  if (prop != null) {
-                    ad_content_id = prop.ad_content_id;
+              if (5 === c9) {
+                if (arg0 === 1) {
+                  c10 = 3;
+                  throw value;
+                } else if (arg0 === 2) {
+                  c8 = 0;
+                  c10 = 3;
+                  return { value, done: true };
+                } else {
+                  body = value.body;
+                  enabled = false;
+                  if (placement === closure_134_0(closure_134_2[10]).AdPlacement.MOBILE_HOME_DOCK_AREA) {
+                    const BountiesMobileQuestBarExperiment = closure_134_0(closure_134_2[30]).BountiesMobileQuestBarExperiment;
+                    enabled = BountiesMobileQuestBarExperiment.getConfig({ location: "QuestActionCreators.fetchQuestToDeliver" }).enabled;
+                  } else if (placement === closure_134_0(closure_134_2[10]).AdPlacement.DESKTOP_ACCOUNT_PANEL_AREA) {
+                    const BountiesDesktopQuestBarExperiment = closure_134_0(closure_134_2[31]).BountiesDesktopQuestBarExperiment;
+                    enabled = BountiesDesktopQuestBarExperiment.getConfig({ location: "QuestActionCreators.fetchQuestToDeliver" }).enabled;
                   }
-                  c3 = ad_content_id;
-                  if (ad_content_id == null) {
-                    c3 = null;
+                  const creative = body.creative;
+                  let creative_type1;
+                  if (creative != null) {
+                    creative_type1 = creative.creative_type;
                   }
-                  noFillAdContentId = c3;
+                  if (creative_type1 !== closure_134_0(closure_134_2[21]).AdCreativeType.BOUNTY) {
+                    creative1 = body.creative;
+                  } else {
+                    creative1 = null;
+                  }
+                  obj32 = null;
+                  noFillAdContentId = null;
+                  if (null != creative1) {
+                    const creative_type = creative1.creative_type;
+                    if (closure_134_0(closure_134_2[21]).AdCreativeType.QUEST === creative_type) {
+                      creative_content = creative1.creative_content;
+                      id = creative_content.id;
+                      user_status = body.user_status;
+                      closure_22 = null != user_status && user_status.quest_id !== id;
+                      const tmp61 = null != user_status && user_status.quest_id !== id;
+                      const tmp66 = flag;
+                      if (tmp66) {
+                        if (undefined !== user_status) {
+                          let config;
+                          const tmp68 = closure_22;
+                          if (!tmp68) {
+                            const obj24 = { id, config: creative_content, user_status, targeted_content: [], preview: false, traffic_metadata_sealed: body.traffic_metadata_sealed };
+                            const obj8 = closure_134_0(closure_134_2[15]);
+                            result1 = obj8.questWithUserStatusFromServer(obj24);
+                            config = result1.config;
+                          }
+                          quest = config;
+                          obj32 = { type: closure_134_0(closure_134_2[21]).AdCreativeType.QUEST, questId: quest.id };
+                          let tmp86 = flag;
+                          const obj26 = { type: closure_134_0(closure_134_2[21]).AdCreativeType.QUEST, questId: quest.id };
+                          if (tmp86) {
+                            tmp86 = undefined === user_status || closure_22;
+                            const tmp89 = undefined === user_status || closure_22;
+                          }
+                          if (tmp86) {
+                            c9 = 6;
+                            c10 = 1;
+                            const obj27 = { value: closure_134_19(), done: false };
+                            return obj27;
+                          }
+                        }
+                      }
+                      const obj10 = closure_134_0(closure_134_2[15]);
+                      config = obj10.questConfigFromServer(creative_content);
+                    } else if (closure_134_0(closure_134_2[21]).AdCreativeType.BOUNTY === creative_type) {
+                      const obj6 = closure_134_0(closure_134_2[32]);
+                      bounty = obj6.bountyFromServer(creative1.creative_content);
+                      obj32 = { type: closure_134_0(closure_134_2[21]).AdCreativeType.BOUNTY, bounty };
+                      const obj29 = { type: closure_134_0(closure_134_2[21]).AdCreativeType.BOUNTY, bounty };
+                    } else if (closure_134_0(closure_134_2[21]).AdCreativeType.PLAYABLE === creative_type) {
+                      const obj4 = closure_134_0(closure_134_2[33]);
+                      playable = obj4.playableFromServer(creative1.creative_content);
+                      obj32 = { type: closure_134_0(closure_134_2[21]).AdCreativeType.PLAYABLE, playable };
+                      const obj30 = { type: closure_134_0(closure_134_2[21]).AdCreativeType.PLAYABLE, playable };
+                    } else if (closure_134_0(closure_134_2[21]).AdCreativeType.NO_FILL === creative_type) {
+                      creative_content = creative1.creative_content;
+                      ad_content_id = undefined;
+                      if (creative_content != null) {
+                        ad_content_id = creative_content.ad_content_id;
+                      }
+                      c4 = ad_content_id;
+                      if (ad_content_id == null) {
+                        c4 = null;
+                      }
+                      noFillAdContentId = c4;
+                    }
+                  } else {
+                    quest = body.quest;
+                    if (null != quest) {
+                      const obj37 = closure_134_0(closure_134_2[15]);
+                      quest = obj37.questConfigFromServer(quest);
+                      obj32 = { type: closure_134_0(closure_134_2[21]).AdCreativeType.QUEST, questId: quest.id };
+                      const tmp274 = flag;
+                      if (tmp274) {
+                        c9 = 7;
+                        c10 = 1;
+                        const obj33 = { value: closure_134_19(), done: false };
+                        return obj33;
+                      }
+                    }
+                  }
                 }
-              } else {
-                prop = body.quest;
-                if (null != prop) {
-                  const obj30 = closure_133_0(closure_133_2[15]);
-                  quest = obj30.questConfigFromServer(prop);
-                  obj27 = { type: closure_133_0(closure_133_2[21]).AdCreativeType.QUEST, questId: quest.id };
+              } else if (6 === c9) {
+                if (arg0 === 1) {
+                  c10 = 3;
+                  throw value;
+                } else if (arg0 === 2) {
+                  c8 = 0;
+                  c10 = 3;
+                  return { value, done: true };
                 }
+              } else if (arg0 === 1) {
+                c10 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c8 = 0;
+                c10 = 3;
+                obj = { value, done: true };
+                return obj;
               }
-              prop = prop == null;
-              const obj28 = { type: "QUESTS_FETCH_QUEST_TO_DELIVER_SUCCESS", quest, creative: obj27, isNoFill: creative_type === closure_133_0(closure_133_2[21]).AdCreativeType.NO_FILL, noFillAdContentId, adDecisionData: obj29, metadataSealed: body.metadata_sealed, trafficMetadataSealed: body.traffic_metadata_sealed, provenanceMetadataSealed: body.provenance_metadata_sealed, adContext: body.ad_context, responseTtlSeconds: body.response_ttl_seconds, placement, fetchedAt: _null };
-              creative_type = undefined;
-              const dispatch = closure_133_1(closure_133_2[12]).dispatch;
-              closure_133_1(closure_133_2[12]);
-              if (!prop) {
-                creative_type = prop.creative_type;
+              const obj35 = { type: "QUESTS_FETCH_QUEST_TO_DELIVER_SUCCESS", questWithUserStatus: result1, quest, creative: obj32, isNoFill: creative_type2 === closure_134_0(closure_134_2[21]).AdCreativeType.NO_FILL, noFillAdContentId, adDecisionData: obj36, metadataSealed: body.metadata_sealed, trafficMetadataSealed: body.traffic_metadata_sealed, provenanceMetadataSealed: body.provenance_metadata_sealed, adContext: body.ad_context, responseTtlSeconds: body.response_ttl_seconds, placement, fetchedAt: _null };
+              creative_type2 = undefined;
+              const dispatch = closure_134_1(closure_134_2[12]).dispatch;
+              closure_134_1(closure_134_2[12]);
+              if (creative1 != null) {
+                creative_type2 = creative1.creative_type;
               }
               const ad_identifiers = body.ad_identifiers;
-              prop = undefined;
+              let ad_id;
               if (ad_identifiers != null) {
-                prop = ad_identifiers.ad_id;
+                ad_id = ad_identifiers.ad_id;
               }
               const ad_identifiers2 = body.ad_identifiers;
-              obj29 = { ad_id: prop, adset_id: prop, ad_set_id: prop, campaign_id: prop, creative_id: prop, creative_type: creative_type1, decision_id: body.request_id, is_targeted: null != body.ad_identifiers };
-              prop = undefined;
+              obj36 = { ad_id, adset_id, ad_set_id, campaign_id, creative_id, creative_type: creative_type3, decision_id: body.request_id, is_targeted: null != body.ad_identifiers };
+              adset_id = undefined;
               if (ad_identifiers2 != null) {
-                prop = ad_identifiers2.adset_id;
+                adset_id = ad_identifiers2.adset_id;
               }
               const ad_identifiers3 = body.ad_identifiers;
-              prop = undefined;
+              ad_set_id = undefined;
               if (ad_identifiers3 != null) {
-                prop = ad_identifiers3.ad_set_id;
+                ad_set_id = ad_identifiers3.ad_set_id;
               }
               const ad_identifiers4 = body.ad_identifiers;
-              prop = undefined;
+              campaign_id = undefined;
               if (ad_identifiers4 != null) {
-                prop = ad_identifiers4.campaign_id;
+                campaign_id = ad_identifiers4.campaign_id;
               }
               const ad_identifiers5 = body.ad_identifiers;
-              prop = undefined;
+              creative_id = undefined;
               if (ad_identifiers5 != null) {
-                prop = ad_identifiers5.creative_id;
+                creative_id = ad_identifiers5.creative_id;
               }
               const ad_identifiers6 = body.ad_identifiers;
-              prop = ad_identifiers6 == null;
-              creative_type1 = undefined;
-              if (!prop) {
-                creative_type1 = ad_identifiers6.creative_type;
+              creative_type3 = undefined;
+              if (ad_identifiers6 != null) {
+                creative_type3 = ad_identifiers6.creative_type;
               }
-              dispatch(obj28);
+              dispatch(obj35);
               const _String = String;
-              const obj31 = { wasSuccessful: true, adRequestId: String(body.request_id), currentCreative: obj27, currentFetchedAt: _null };
-              const recordQuestRequestApiResponse = closure_133_1(closure_133_2[26]).recordQuestRequestApiResponse;
-              closure_133_1(closure_133_2[26]);
-              const result1 = recordQuestRequestApiResponse(closure_3, obj31);
-              const obj10 = closure_133_0(closure_133_2[34]);
-              prop = obj10.getDeliveredAdCreativeId(obj27);
-              if (null != obj27) {
-                if (null != prop) {
-                  prop = placement;
-                  if (placement === closure_133_0(closure_133_2[10]).AdPlacement.DESKTOP_ACCOUNT_PANEL_AREA) {
-                    const obj11 = closure_133_1(closure_133_2[35]);
-                    obj11.startTracking(prop, obj27.type);
+              const obj38 = { wasSuccessful: true, adRequestId: String(body.request_id), currentCreative: obj32, currentFetchedAt: _null };
+              const recordQuestRequestApiResponse = closure_134_1(closure_134_2[26]).recordQuestRequestApiResponse;
+              closure_134_1(closure_134_2[26]);
+              const result2 = recordQuestRequestApiResponse(closure_4, obj38);
+              const obj15 = closure_134_0(closure_134_2[34]);
+              ad_content_id = obj15.getDeliveredAdCreativeId(obj32);
+              if (null != obj32) {
+                if (null != ad_content_id) {
+                  if (placement === closure_134_0(closure_134_2[10]).AdPlacement.DESKTOP_ACCOUNT_PANEL_AREA) {
+                    const obj16 = closure_134_1(closure_134_2[35]);
+                    obj16.startTracking(ad_content_id, obj32.type);
                   }
-                  prop = closure_133_13.QUEST_DECISION_RECEIVED;
-                  const obj34 = { quest_id: tmp123, ad_content_id: prop, creative_type: obj27.type, caller_source, ad_request_id: String(body.request_id) };
-                  const track = closure_133_1(closure_133_2[36]).track;
-                  closure_133_1(closure_133_2[36]);
-                  const merged1 = Object.assign(closure_133_1(closure_133_2[37])());
-                  tmp123 = null;
-                  if (obj27.type === closure_133_0(closure_133_2[21]).AdCreativeType.QUEST) {
-                    tmp123 = prop;
+                  const obj41 = { quest_id: tmp165, ad_content_id, creative_type: obj32.type, caller_source, ad_request_id: String(body.request_id) };
+                  const track = closure_134_1(closure_134_2[36]).track;
+                  const QUEST_DECISION_RECEIVED = closure_134_13.QUEST_DECISION_RECEIVED;
+                  closure_134_1(closure_134_2[36]);
+                  const merged1 = Object.assign(closure_134_1(closure_134_2[37])());
+                  tmp165 = null;
+                  if (obj32.type === closure_134_0(closure_134_2[21]).AdCreativeType.QUEST) {
+                    tmp165 = ad_content_id;
                   }
                   const _String2 = String;
-                  track(prop, obj34);
-                  c7 = 0;
+                  track(QUEST_DECISION_RECEIVED, obj41);
+                  c8 = 0;
                 }
               }
-              c7 = 0;
-              c9 = 3;
-              return { value: "HermesInternal", done: null };
+              c8 = 0;
+              c10 = 3;
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
-            c9 = 3;
-            return { value: "HermesInternal", done: null };
+            c10 = 3;
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
-        } catch (tmp202) {
-          const folderExpanded = tmp202;
-          if (0 === c7) {
-            c9 = 3;
-            throw tmp202;
+        } catch (tmp246) {
+          if (0 === c8) {
+            c10 = 3;
+            throw tmp246;
           } else {
-            c8 = 1;
+            c9 = 2;
           }
         }
       }
     })();
+    iter.next();
+    return iter;
   });
   return obj(...arguments);
 };
@@ -1691,7 +1788,7 @@ obj = function _fetchEarnedQuestToDeliver() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -1839,7 +1936,7 @@ obj = function _fetchEarnedQuestToDeliver() {
             c7 = 0;
           }
           c9 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp31) {
           closure_6 = tmp31;
           if (0 === c7) {
@@ -1871,7 +1968,7 @@ obj = function _updateVideoProgress() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -1912,7 +2009,7 @@ obj = function _updateVideoProgress() {
             return { value, done: true };
           } else {
             c3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp5) {
           c3 = 3;
@@ -2010,7 +2107,7 @@ obj = function _fetchQuest() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -2074,7 +2171,7 @@ obj = function _fetchQuestPreview() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -2131,7 +2228,7 @@ obj = function _fetchQuestPreview() {
             c4 = 0;
           }
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp36) {
           closure_3 = tmp36;
           if (0 === c4) {
@@ -2173,7 +2270,7 @@ obj = function _fetchQuestHomeHero() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c5;
@@ -2401,7 +2498,7 @@ obj = function _fetchQuestHomeHero() {
           c5 = 0;
         }
         c7 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp96) {
         closure_4 = tmp96;
         if (0 === c5) {
@@ -2439,7 +2536,7 @@ obj = function _fetchQuestHomeHeroPreview() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c6;
@@ -2603,7 +2700,7 @@ obj = function _fetchQuestHomeHeroPreview() {
           dispatch2(obj10);
           c6 = 0;
           c8 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp69) {
         questHomeHero = tmp69;
@@ -2626,7 +2723,7 @@ let items = [QuestTypes.QuestContent.QUEST_BAR, QuestTypes.QuestContent.QUEST_BA
 new Set(items);
 obj = { SUCCESS: "success", UNKNOWN_ERROR: "unknown_error", PREVIOUS_IN_FLIGHT_REQUEST: "previous_in_flight_request" };
 let map = new Map();
-let closure_38 = 5 * DurationsDefault.Millis.MINUTE;
+let closure_39 = 5 * DurationsDefault.Millis.MINUTE;
 let result = size.fileFinishedImporting("modules/quests/QuestActionCreators.tsx");
 
 export function manuallyStartConsoleQuest() {
@@ -2638,9 +2735,7 @@ export function manualStopConsoleQuest() {
 export function resetRecentQuestCompletions() {
   return obj(...arguments);
 }
-export function fetchCurrentQuests() {
-  return obj(...arguments);
-}
+export { fetchCurrentQuests };
 export function sendHeartbeat() {
   return obj(...arguments);
 }

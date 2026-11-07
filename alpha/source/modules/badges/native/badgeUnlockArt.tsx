@@ -1,11 +1,11 @@
-// Module ID: 11642
-// Function ID: 11643
+// Module ID: 11624
+// Function ID: 11625
 // Name: badgeUnlockArt
-// Dependencies: [11627, 2]
+// Dependencies: [11610, 2]
 // Exports: getBadgeUnlockArt
 
-// Module 11642 (badgeUnlockArt)
-import BadgeDetailsUtils from "BadgeDetailsUtils" /* 11627 */;
+// Module 11624 (badgeUnlockArt)
+import BadgeDetailsUtils from "BadgeDetailsUtils" /* 11610 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/badges/native/badgeUnlockArt.tsx");
@@ -50,7 +50,7 @@ export function getBadgeUnlockArt(badge, displayTier, arg2) {
       prop3 = badge.simple_icon_raster_url;
     }
     obj.rasterUrl = prop3;
-    const tmp3Result = tmp3(11627);
+    const tmp3Result = tmp3(11610);
     obj.animatedUrl = tmp3Result.getBadgeArtUrls(badge, displayTier, false).animatedUrl;
     tmp7 = obj;
   }

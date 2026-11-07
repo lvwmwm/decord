@@ -1,44 +1,32 @@
 // Module ID: 13101
 // Function ID: 13102
 // Name: tokenize
-// Dependencies: [13027]
+// Dependencies: [13050]
 
 // Module 13101 (tokenize)
-import tokenize from "tokenize" /* 13027 */;
+import tokenize from "tokenize" /* 13050 */;
 
-let items;
 let obj2;
-const Comma = tokenize.TYPE.Comma;
-const obj = {
-  name: "SelectorList",
+const Ident = tokenize.TYPE.Ident;
+let obj = {
+  name: "ClassSelector",
   structure: obj2,
   parse() {
     const self = this;
-    const list = this.createList();
-    if (!this.scanner.eof) {
-      list.push(self.Selector());
-      if (self.scanner.tokenType === Comma) {
-        const iter = self.scanner;
-        iter.next();
-        while (!self.scanner.eof) {
-          let arr3 = list.push(self.Selector());
-          if (self.scanner.tokenType !== Comma) {
-            break;
-          }
-        }
-      }
+    const scanner = this.scanner;
+    if (!scanner.isDelim(46)) {
+      self.error("Full stop is expected");
     }
-    const element = { type: "SelectorList", loc: self.getLocationFromList(list), children: list };
-    return element;
+    const iter = self.scanner;
+    iter.next();
+    const obj = { type: "ClassSelector", loc: self.getLocation(self.scanner.tokenStart - 1, self.scanner.tokenEnd), name: self.consume(Ident) };
+    return obj;
   },
-  generate(arg0) {
-    this.children(arg0, function() {
-      this.chunk(",");
-    });
-  },
-  walkContext: "selector"
+  generate(name) {
+    this.chunk(".");
+    this.chunk(name.name);
+  }
 };
-obj2 = { children: items };
-items = [["Selector", "Raw"]];
+obj2 = { name: String };
 
 export default obj;

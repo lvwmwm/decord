@@ -1,19 +1,19 @@
-// Module ID: 13643
-// Function ID: 13644
+// Module ID: 13667
+// Function ID: 13668
 // Name: CheckpointStore
-// Dependencies: [1385, 2107, 6269, 6268, 504, 572, 2]
+// Dependencies: [1385, 2107, 6244, 6243, 504, 572, 2]
 
-// Module 13643 (CheckpointStore)
+// Module 13667 (CheckpointStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import PremiumTypeUtils from "PremiumTypeUtils" /* 2107 */;
-import CheckpointCharacterTraits from "CheckpointCharacterTraits" /* 6268 */;
-import CheckpointTrait from "CheckpointTrait" /* 6269 */;
+import CheckpointCharacterTraits from "CheckpointCharacterTraits" /* 6243 */;
+import CheckpointTrait from "CheckpointTrait" /* 6244 */;
 import UserStore from "UserStore" /* 1385 */;
 import size from "module_2" /* 2 */;
 
 let obj = { INIT: 0, [0]: "INIT", FETCHING: 1, [1]: "FETCHING", SUCCESS: 2, [2]: "SUCCESS", ERROR: 3, [3]: "ERROR" };
-let obj2 = { isMuted: false, progress: null };
+let obj2 = { volume: 1, isMuted: false, progress: null };
 let closure_5 = {};
 let obj3 = {};
 let merged = Object.assign(obj2);
@@ -39,6 +39,12 @@ class CheckpointStore extends PersistedStore {
   }
 }
 const prototype = CheckpointStore.prototype;
+Object.defineProperty(prototype, "volume", {
+  get: function volume() {
+    return obj.volume;
+  },
+  set: undefined
+});
 Object.defineProperty(prototype, "isMuted", {
   get: function isMuted() {
     return obj.isMuted;
@@ -107,12 +113,27 @@ const items = [
     obj = { progress: null };
     const merged = Object.assign(arg0);
     return obj;
+  },
+  (arg0) => {
+    obj = { volume: 1 };
+    const merged = Object.assign(arg0);
+    return obj;
   }
 ];
 CheckpointStore.migrations = items;
 let obj4 = {
   CHECKPOINT_TOGGLE_MUTE: function handleToggleMute() {
     obj.isMuted = !obj.isMuted;
+  },
+  CHECKPOINT_SET_VOLUME: function handleSetVolume(volume) {
+    volume = volume.volume;
+    if (obj.volume === volume) {
+      if (!obj.isMuted) {
+        return false;
+      }
+    }
+    obj.volume = volume;
+    obj.isMuted = false;
   },
   CHECKPOINT_FETCH_START: function handleFetchStart() {
     INIT = obj.FETCHING;

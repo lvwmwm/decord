@@ -1,13 +1,14 @@
 // Module ID: 10504
 // Function ID: 10505
-// Dependencies: [41, 42, 93, 95, 98, 10470]
+// Dependencies: [41, 42, 93, 95, 96, 98, 10460]
 
 // Module 10504
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10470 */;
+import AbstractTimeExpressionParser from "AbstractTimeExpressionParser" /* 10460 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import map from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _get from "_get" /* 96 */;
 import _inherits from "_inherits" /* 98 */;
 
 function _isNativeReflectConstruct() {
@@ -25,13 +26,12 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-const regExp = new RegExp("([0-9]{4})\\-([0-9]{1,2})\\-([0-9]{1,2})(?:T([0-9]{1,2}):([0-9]{1,2})(?::([0-9]{1,2})(?:\\.(\\d{1,4}))?)?(Z|([+-]\\d{2}):?(\\d{2})?)?)?(?=\\W|$)", "i");
-class ISOFormatParser {
+class FRTimeExpressionParser {
   constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, ISOFormatParser);
-    const obj = _getPrototypeOf(ISOFormatParser);
+    _classCallCheck(this, FRTimeExpressionParser);
+    const obj = _getPrototypeOf(FRTimeExpressionParser);
     const tmp2 = _getPrototypeOf;
     const tmp3 = map;
     if (_isNativeReflectConstruct()) {
@@ -43,52 +43,38 @@ class ISOFormatParser {
     return tmp3(self, constructResult);
   }
 }
-_inherits(ISOFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+_inherits(FRTimeExpressionParser, AbstractTimeExpressionParser.AbstractTimeExpressionParser);
 const entry = {
-  key: "innerPattern",
-  value: function innerPattern() {
-    return regExp;
+  key: "primaryPrefix",
+  value: function primaryPrefix() {
+    return "(?:(?:[\u00E0a])\\s*)?";
   }
 };
-const items = [
+let items = [
   entry,
   {
-    key: "innerExtract",
-    value: function innerExtract(createParsingComponents, arg1) {
-      const date = { year: parseInt(arg1[1]), month: parseInt(arg1[2]), day: parseInt(arg1[3]) };
-      const parsingComponents = createParsingComponents.createParsingComponents(date);
-      if (null != arg1[4]) {
-        const _parseInt5 = parseInt;
-        parsingComponents.assign("hour", parseInt(arg1[4]));
-        const _parseInt6 = parseInt;
-        parsingComponents.assign("minute", parseInt(arg1[5]));
-        if (null != arg1[6]) {
-          const _parseInt = parseInt;
-          parsingComponents.assign("second", parseInt(arg1[6]));
+    key: "followingPhase",
+    value: function followingPhase() {
+      return "\\s*(?:\\-|\\\u2013|\\~|\\\u301C|[\u00E0a]|\\?)\\s*";
+    }
+  },
+  {
+    key: "extractPrimaryTimeComponents",
+    value: function extractPrimaryTimeComponents(arg0, arg1) {
+      let fnResult = null;
+      const str = arg1[0];
+      if (!str.match(/^\s*\d{4}\s*$/)) {
+        const self = this;
+        let fn = _get(_getPrototypeOf(FRTimeExpressionParser.prototype), "extractPrimaryTimeComponents", this);
+        if (typeof fn === "function") {
+          fn = (items) => fn.apply(self, items);
         }
-        if (null != arg1[7]) {
-          const _parseInt2 = parseInt;
-          parsingComponents.assign("millisecond", parseInt(arg1[7]));
-        }
-        if (null != arg1[8]) {
-          let num2 = 0;
-          if (arg1[9]) {
-            const _parseInt3 = parseInt;
-            let num3 = 0;
-            const parsed = parseInt(arg1[9]);
-            if (null != arg1[10]) {
-              const _parseInt4 = parseInt;
-              num3 = parseInt(arg1[10]);
-            }
-            const result = 60 * parsed;
-            num2 = result < 0 ? result - num3 : result + num3;
-          }
-          parsingComponents.assign("timezoneOffset", num2);
-        }
+        const items = [arg0, arg1];
+        fnResult = fn(items);
       }
-      return parsingComponents.addTag("parser/ISOFormatParser");
+      return fnResult;
     }
   }
 ];
 
-export default _createClass(ISOFormatParser, items);
+export default _createClass(FRTimeExpressionParser, items);

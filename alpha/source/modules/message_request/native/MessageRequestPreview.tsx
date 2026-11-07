@@ -1,18 +1,18 @@
-// Module ID: 19265
-// Function ID: 19266
+// Module ID: 19324
+// Function ID: 19325
 // Name: MessageRequestPreview
-// Dependencies: [19, 17, 5112, 1072, 21, 5170, 6803, 575, 14377, 504, 1252, 1113, 8674, 6640, 1187, 2]
+// Dependencies: [19, 17, 5082, 1072, 21, 5140, 6778, 575, 14411, 504, 1252, 1113, 8653, 6615, 1187, 2]
 
-// Module 19265 (MessageRequestPreview)
+// Module 19324 (MessageRequestPreview)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import react from "react" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 5112 */;
+import RelationshipStore from "RelationshipStore" /* 5082 */;
 import Constants from "Constants" /* 1072 */;
-import createStyles_mod from "createStyles" /* 5170 */;
-import TextStyles_mod from "TextStyles" /* 6803 */;
+import createStyles_mod from "createStyles" /* 5140 */;
+import TextStyles_mod from "TextStyles" /* 6778 */;
 import size from "module_2" /* 2 */;
 
 let Fonts;
@@ -41,7 +41,7 @@ const memoResult = react.memo(function MessageRequestPreview(channel) {
   channel = channel.channel;
   const style = channel.style;
   const tmp = closure_9();
-  let obj = channel(14377);
+  let obj = channel(14411);
   const messageRequestPreview = obj.useMessageRequestPreview(channel);
   const message = messageRequestPreview.message;
   ({ loaded, error } = messageRequestPreview);
@@ -91,7 +91,7 @@ const memoResult = react.memo(function MessageRequestPreview(channel) {
       }
       if (null != content) {
         if ("" !== message.content) {
-          const content1 = message(8674)(message, { noStyleAndInteraction: true, allowGameMentions: true }).content;
+          const content1 = message(8653)(message, { noStyleAndInteraction: true, allowGameMentions: true }).content;
           const _Array = Array;
           if (!Array.isArray(content1)) {
             flag = true;
@@ -102,7 +102,7 @@ const memoResult = react.memo(function MessageRequestPreview(channel) {
         }
       }
       if (null != message) {
-        const tmp2Result = channel(6640);
+        const tmp2Result = channel(6615);
         if (tmp2Result.getMessageStickers(message).length > 0) {
           const intl5 = tmp2(1113).intl;
           let stringResult1 = intl5.string(tmp2(1113).t["zuI+by"]);

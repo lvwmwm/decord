@@ -1,12 +1,12 @@
-// Module ID: 19744
-// Function ID: 19745
+// Module ID: 19813
+// Function ID: 19814
 // Name: PastVcActivityMessagesExperiment
-// Dependencies: [5385, 5382, 2]
+// Dependencies: [5355, 5352, 2]
 // Exports: isPastVcActivityMessagesEnabled, useIsPastVcActivityMessagesEnabled
 
-// Module 19744 (PastVcActivityMessagesExperiment)
-import ExperimentConstants from "ExperimentConstants" /* 5385 */;
-import createExperiment from "module_5382" /* 5382 */;
+// Module 19813 (PastVcActivityMessagesExperiment)
+import ExperimentConstants from "ExperimentConstants" /* 5355 */;
+import createExperiment from "module_5352" /* 5352 */;
 import size from "module_2" /* 2 */;
 
 let items;

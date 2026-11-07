@@ -1,20 +1,20 @@
-// Module ID: 11571
-// Function ID: 11572
+// Module ID: 11553
+// Function ID: 11554
 // Name: UserProfileStackedActionSheet
-// Dependencies: [19, 17, 21, 5170, 575, 1627, 7380, 8267, 1377, 5422, 5418, 7068, 1113, 7093, 5781, 2]
+// Dependencies: [19, 17, 21, 5140, 575, 1627, 7357, 8246, 1377, 5392, 5388, 7043, 1113, 7068, 5751, 2]
 // Exports: UserProfileStackedActionSheetList, UserProfileStackedActionSheetSectionList, default
 
-// Module 11571 (UserProfileStackedActionSheet)
+// Module 11553 (UserProfileStackedActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5418 */;
-import Text_Text from "Text/Text" /* 5781 */;
-import ArrowLargeLeftIcon from "ArrowLargeLeftIcon" /* 7093 */;
-import _mod8267 from "module_8267" /* 8267 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5388 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import ArrowLargeLeftIcon from "ArrowLargeLeftIcon" /* 7068 */;
+import _mod8246 from "module_8246" /* 8246 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -62,7 +62,7 @@ export default function UserProfileStackedActionSheet(onBack) {
   let tmp4Result = tmp4Result2;
   if (tmp4Result) {
     const obj3 = { accessibilityRole: "button", accessibilityLabel: intl.string(intl2.t["13/7kX"]), onPress: onBack, children: React3(ArrowLargeLeftIcon.ArrowLargeLeftIcon, { size: "md" }) };
-    const PressableOpacity = tmp5(7068).PressableOpacity;
+    const PressableOpacity = tmp5(7043).PressableOpacity;
     intl = tmp5(1113).intl;
     tmp4Result = tmp4(PressableOpacity, obj3);
   }
@@ -89,7 +89,7 @@ export function UserProfileStackedActionSheetList(data) {
     style: tmp2.list,
     ItemSeparatorComponent() {
       const obj = { style: divider.divider };
-      return React3(_mod8267.FormDivider, obj);
+      return React3(_mod8246.FormDivider, obj);
     },
     contentContainerStyle: items,
     renderItem(index) {
@@ -98,7 +98,7 @@ export function UserProfileStackedActionSheetList(data) {
       return renderItem(obj);
     }
   };
-  const BottomSheetFlashList = data(7380).BottomSheetFlashList;
+  const BottomSheetFlashList = data(7357).BottomSheetFlashList;
   const merged1 = Object.assign(merged);
   items = [tmp2.contentContainer, , ];
   let num = 0;
@@ -126,10 +126,10 @@ export function UserProfileStackedActionSheetSectionList(renderItem) {
     },
     ItemSeparatorComponent() {
       const obj = { style: divider.divider };
-      return React3(_mod8267.FormDivider, obj);
+      return React3(_mod8246.FormDivider, obj);
     }
   };
-  const BottomSheetSectionList = renderItem(5422).BottomSheetSectionList;
+  const BottomSheetSectionList = renderItem(5392).BottomSheetSectionList;
   const merged1 = Object.assign(merged);
   return closure_4(BottomSheetSectionList, obj);
 }

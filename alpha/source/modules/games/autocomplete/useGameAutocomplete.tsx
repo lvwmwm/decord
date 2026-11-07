@@ -1,23 +1,24 @@
-// Module ID: 9239
-// Function ID: 9240
+// Module ID: 9221
+// Function ID: 9222
 // Name: useGameAutocomplete
-// Dependencies: [32, 19, 8772, 1072, 504, 8773, 9240, 9241, 2]
+// Dependencies: [32, 19, 8751, 1072, 504, 8752, 9222, 9223, 2]
 // Exports: useDebouncedGameAutocomplete
 
-// Module 9239 (useGameAutocomplete)
+// Module 9221 (useGameAutocomplete)
 import Constants from "Constants" /* 1072 */;
-import GameAutocompleteUtils from "GameAutocompleteUtils" /* 8773 */;
-import GameAutocompleteActionCreators from "GameAutocompleteActionCreators" /* 9240 */;
-import GameSearchSession from "GameSearchSession" /* 9241 */;
+import GameAutocompleteUtils from "GameAutocompleteUtils" /* 8752 */;
+import GameAutocompleteActionCreators from "GameAutocompleteActionCreators" /* 9222 */;
+import GameSearchSession from "GameSearchSession" /* 9223 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GameAutocompleteStore from "GameAutocompleteStore" /* 8772 */;
+import GameAutocompleteStore from "GameAutocompleteStore" /* 8751 */;
 import get_initialized from "get initialized" /* 504 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let results;
 
+let obj2;
 let _slicedToArray = _slicedToArray_mod;
 const QueryIds = Constants.QueryIds;
 let obj = {
@@ -40,24 +41,11 @@ let obj = {
   getIsLoading(arg0, arg1) {
     return GameAutocompleteStore.isFetching(arg0, arg1);
   },
-  retryConfig: {
-    retryableErrors: function isRetryableError(status) {
-      status = status.status;
-      let tmp = null != status;
-      if (tmp) {
-        let tmp2 = 429 === status;
-        if (!tmp2) {
-          tmp2 = status >= 500 && 503 !== status;
-          const tmp3 = status >= 500 && 503 !== status;
-        }
-        tmp = tmp2;
-      }
-      return tmp;
-    }
-  },
+  retryConfig: obj2,
   staleAfter: 3600,
   failureStaleAfter: 60
 };
+obj2 = { retryableErrors: GameAutocompleteUtils.isRetryableGameSearchError };
 const fetchStore = get_initialized.createFetchStore(GameAutocompleteStore, obj);
 let result = size.fileFinishedImporting("modules/games/autocomplete/useGameAutocomplete.tsx");
 

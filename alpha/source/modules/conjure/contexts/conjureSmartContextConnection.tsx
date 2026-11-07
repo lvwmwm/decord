@@ -1,13 +1,13 @@
-// Module ID: 11108
-// Function ID: 11109
+// Module ID: 11094
+// Function ID: 11095
 // Name: conjureSmartContextConnection
-// Dependencies: [572, 11089, 11011, 2]
+// Dependencies: [572, 11075, 10995, 2]
 // Exports: sendSmartContext, undoContextSwitch
 
-// Module 11108 (conjureSmartContextConnection)
+// Module 11094 (conjureSmartContextConnection)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import conjureProjectSockets from "conjureProjectSockets" /* 11011 */;
-import ConjurePublishActionCreators from "ConjurePublishActionCreators" /* 11089 */;
+import conjureProjectSockets from "conjureProjectSockets" /* 10995 */;
+import ConjurePublishActionCreators from "ConjurePublishActionCreators" /* 11075 */;
 import size from "module_2" /* 2 */;
 
 let obj = {

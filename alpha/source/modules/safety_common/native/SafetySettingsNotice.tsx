@@ -1,18 +1,18 @@
-// Module ID: 16844
-// Function ID: 16845
+// Module ID: 16892
+// Function ID: 16893
 // Name: SafetySettingsNotice
-// Dependencies: [19, 17, 7577, 21, 5170, 575, 16845, 5890, 5781, 1113, 2]
+// Dependencies: [19, 17, 7554, 21, 5140, 575, 16893, 5859, 5751, 1113, 2]
 // Exports: default
 
-// Module 16844 (SafetySettingsNotice)
+// Module 16892 (SafetySettingsNotice)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5781 */;
-import Constants from "Constants" /* 7577 */;
-import SafetySettingsUtils from "SafetySettingsUtils" /* 16845 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import Constants from "Constants" /* 7554 */;
+import SafetySettingsUtils from "SafetySettingsUtils" /* 16893 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;

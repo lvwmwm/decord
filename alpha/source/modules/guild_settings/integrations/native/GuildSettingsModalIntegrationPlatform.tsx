@@ -1,25 +1,25 @@
-// Module ID: 20091
-// Function ID: 20092
+// Module ID: 20160
+// Function ID: 20161
 // Name: GuildSettingsModalIntegrationPlatform
-// Dependencies: [19, 17, 9173, 1072, 21, 5170, 575, 20052, 20022, 6654, 5872, 1411, 5177, 7151, 7063, 7452, 1113, 9172, 6117, 6188, 5754, 1499, 504, 5399, 7089, 7653, 7658, 2185, 8267, 6185, 5781, 5764, 2]
+// Dependencies: [19, 17, 9155, 1072, 21, 5140, 575, 20121, 20091, 6629, 5842, 1411, 5147, 7126, 7038, 7429, 1113, 9154, 6091, 6162, 5724, 1499, 504, 5369, 7064, 7630, 7635, 2185, 8246, 6159, 5751, 5734, 2]
 // Exports: default
 
-// Module 20091 (GuildSettingsModalIntegrationPlatform)
+// Module 20160 (GuildSettingsModalIntegrationPlatform)
 import nativeDefault from "native" /* 575 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6117 */;
-import AlertDefault from "Alert" /* 6188 */;
-import PlatformsDefault from "Platforms" /* 6654 */;
-import NavigatorHeader from "NavigatorHeader" /* 7089 */;
-import HeaderActionButton2 from "HeaderActionButton" /* 7653 */;
-import openUserSettings from "openUserSettings" /* 7658 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9172 */;
-import GuildSettingsModalIntegrations from "GuildSettingsModalIntegrations" /* 20052 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6091 */;
+import AlertDefault from "Alert" /* 6162 */;
+import PlatformsDefault from "Platforms" /* 6629 */;
+import NavigatorHeader from "NavigatorHeader" /* 7064 */;
+import HeaderActionButton2 from "HeaderActionButton" /* 7630 */;
+import openUserSettings from "openUserSettings" /* 7635 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9154 */;
+import GuildSettingsModalIntegrations from "GuildSettingsModalIntegrations" /* 20121 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 9173 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 9155 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let constants2, dependencyMap, navigation;
@@ -37,11 +37,11 @@ let tmp;
 let unpackModuleId;
 const intl6 = tmp(1113);
 const AvatarUtils = tmp(1411);
-const shared = tmp(5177);
-const TableRow2 = tmp(7063);
-const TableRowGroup2 = tmp(7151);
-const TableSwitchRow2 = tmp(7452);
-const IntegrationTypes = tmp(20022);
+const shared = tmp(5147);
+const TableRow2 = tmp(7038);
+const TableRowGroup2 = tmp(7126);
+const TableSwitchRow2 = tmp(7429);
+const IntegrationTypes = tmp(20091);
 ({ ActivityIndicator: c3, View: closure_4 } = react_native);
 ({ GuildSettingsSections: metroRequire, HelpdeskArticles: metroImportDefault, PlatformTypes: metroImportAll, UserSettingsSections: c9 } = Constants);
 ({ jsx: c10, jsxs: unpackModuleId, Fragment: closure_12 } = Fragment);
@@ -157,7 +157,7 @@ class IntegrationItem extends Component {
       let tmp12Result = null;
       const tmp8 = importDefault;
       if (null != value) {
-        const tmp8Result = tmp8(5872);
+        const tmp8Result = tmp8(5842);
         const makeSource = AvatarUtils.makeSource;
         AvatarUtils;
         const icon = value.icon;
@@ -239,7 +239,7 @@ export default function GuildSettingsModalIntegrationPlatform(platformType) {
   }
   let tmp = platformType;
   const contentContainerStyle = platformType.contentContainerStyle;
-  let obj = platformType(5754);
+  let obj = platformType(5724);
   let tmp3 = closeGuildSettings;
   const token = obj.useToken(closeGuildSettings(575).modules.mobile.TABLE_ROW_PADDING);
   const tmp5 = closure_13();
@@ -254,7 +254,7 @@ export default function GuildSettingsModalIntegrationPlatform(platformType) {
   });
   const submitting = stateFromStoresObject.submitting;
   ({ hasChanges: c5, guild } = stateFromStoresObject);
-  constants2 = closeGuildSettings(5399)();
+  constants2 = closeGuildSettings(5369)();
   const items1 = [c5];
   const obj4 = platformType(504);
   const stateFromStores = obj4.useStateFromStores(items1, () => c5.getProps().integrations);
@@ -291,7 +291,7 @@ export default function GuildSettingsModalIntegrationPlatform(platformType) {
           return tmp3;
         }
     };
-    const tmp3Result = tmp3(6654);
+    const tmp3Result = tmp3(6629);
     const value = tmp3Result.get(platformType);
     name = undefined;
     if (value != null) {
@@ -320,10 +320,10 @@ export default function GuildSettingsModalIntegrationPlatform(platformType) {
       formatResult = format2(ro1jEN, obj7);
     }
     const obj8 = { style: tmp5.form, contentContainerStyle, children: closure_11(Stack, obj9) };
-    const Form = tmp(8267).Form;
+    const Form = tmp(8246).Form;
     obj9 = { style: obj10, spacing: tmp3(575).space.PX_24, children: items2 };
     obj10 = { paddingHorizontal: token };
-    Stack = tmp(6185).Stack;
+    Stack = tmp(6159).Stack;
     let mapped;
     const tmp16 = closure_12;
     if (found != null) {
@@ -345,8 +345,8 @@ export default function GuildSettingsModalIntegrationPlatform(platformType) {
     items2 = [mapped, ];
     const obj11 = { children: items3 };
     const obj12 = { variant: "body-sm/medium", color: "text-muted", children: formatResult };
-    items2[1] = closure_10(tmp(5781).Text, obj12);
-    items3 = [closure_10(Form, obj8), closure_10(tmp(5764).NavScrim, {})];
+    items2[1] = closure_10(tmp(5751).Text, obj12);
+    items3 = [closure_10(Form, obj8), closure_10(tmp(5734).NavScrim, {})];
     return closure_11(tmp16, obj11);
   }
 };

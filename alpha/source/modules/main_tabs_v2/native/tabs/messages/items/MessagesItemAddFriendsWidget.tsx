@@ -1,24 +1,24 @@
-// Module ID: 18434
-// Function ID: 18435
+// Module ID: 18481
+// Function ID: 18482
 // Name: MessagesItemAddFriendsWidget
-// Dependencies: [5, 19, 17, 1072, 21, 14757, 575, 5170, 9043, 5866, 1113, 9216, 9227, 5345, 7068, 5781, 15928, 18435, 2]
+// Dependencies: [5, 19, 17, 1072, 21, 14790, 575, 5140, 9025, 5836, 1113, 9198, 9209, 5315, 7043, 5751, 15977, 18482, 2]
 
-// Module 18434 (MessagesItemAddFriendsWidget)
+// Module 18481 (MessagesItemAddFriendsWidget)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl5 from "intl" /* 1113 */;
-import RootNavigationRef from "RootNavigationRef" /* 5345 */;
-import Text_Text from "Text/Text" /* 5781 */;
-import Pressables from "Pressables" /* 7068 */;
-import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 9043 */;
-import IconActionButton from "IconActionButton" /* 14757 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15928 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 18435 */;
+import RootNavigationRef from "RootNavigationRef" /* 5315 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import Pressables from "Pressables" /* 7043 */;
+import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 9025 */;
+import IconActionButton from "IconActionButton" /* 14790 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15977 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 18482 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 const IconActionButtonDefault = IconActionButton;
@@ -46,7 +46,7 @@ let obj = function _getFriendInviteCode() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c3;
@@ -124,7 +124,7 @@ obj = function _handleShare() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -163,7 +163,7 @@ obj = function _handleShare() {
           const PJf9P9 = closure_129_0(closure_129_2[10]).t.PJf9P9;
           handleOpenShareSheet(closure_0, null, formatToPlainString(PJf9P9, obj5), closure_129_6.ADD_FRIENDS_WIDGET);
           c3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp6) {
         c3 = 3;
@@ -188,7 +188,7 @@ obj = function _handleLink() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -222,7 +222,7 @@ obj = function _handleLink() {
           obj = closure_129_0(closure_129_2[11]);
           obj.handleCopy(closure_0, null, closure_129_6.ADD_FRIENDS_WIDGET);
           c3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp14) {
         c3 = 3;

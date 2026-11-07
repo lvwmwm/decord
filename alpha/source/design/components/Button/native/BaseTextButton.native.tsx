@@ -1,23 +1,23 @@
-// Module ID: 5789
-// Function ID: 5790
+// Module ID: 5759
+// Function ID: 5760
 // Name: BaseTextButton
-// Dependencies: [32, 19, 17, 21, 5170, 575, 1652, 5790, 5791, 5792, 5794, 1377, 5795, 5781, 5184, 5406, 5797, 5333, 5799, 2]
+// Dependencies: [32, 19, 17, 21, 5140, 575, 1652, 5760, 5761, 5762, 5764, 1377, 5765, 5751, 5154, 5376, 5767, 5303, 5769, 2]
 
-// Module 5789 (BaseTextButton)
+// Module 5759 (BaseTextButton)
 import nativeDefault from "native" /* 575 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import _mod1652 from "module_1652" /* 1652 */;
-import HapticUtils from "HapticUtils" /* 5406 */;
-import IconDefault from "Icon" /* 5790 */;
-import spring_spring from "spring/spring" /* 5791 */;
-import springPresets from "springPresets" /* 5792 */;
-import ButtonConstants from "ButtonConstants" /* 5794 */;
-import ButtonHooks from "ButtonHooks" /* 5795 */;
+import HapticUtils from "HapticUtils" /* 5376 */;
+import IconDefault from "Icon" /* 5760 */;
+import spring_spring from "spring/spring" /* 5761 */;
+import springPresets from "springPresets" /* 5762 */;
+import ButtonConstants from "ButtonConstants" /* 5764 */;
+import ButtonHooks from "ButtonHooks" /* 5765 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 const module_1652 = _mod1652;
@@ -441,7 +441,7 @@ let closure_18 = createStyles.createStyles((arg0, marginLeft) => {
     return { offset: {} };
   }
 });
-let obj3 = { sm: { top: bound, left: "Array", right: "content", bottom: bound }, md: { top: bound1, left: "Array", right: "content", bottom: bound1 }, lg: { top: bound2, left: "Array", right: "content", bottom: bound2 } };
+let obj3 = { sm: { top: bound, left: "Array", right: "add", bottom: bound }, md: { top: bound1, left: "Array", right: "add", bottom: bound1 }, lg: { top: bound2, left: "Array", right: "add", bottom: bound2 } };
 const LARGE_BUTTON_HEIGHT = ButtonConstants.LARGE_BUTTON_HEIGHT;
 bound = Math.max((ButtonConstants.MINIMUM_HIT_AREA - ButtonConstants.SMALL_BUTTON_HEIGHT) / 2, 0);
 const LARGE_BUTTON_HEIGHT2 = ButtonConstants.LARGE_BUTTON_HEIGHT;

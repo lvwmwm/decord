@@ -1,13 +1,13 @@
-// Module ID: 15048
-// Function ID: 15049
+// Module ID: 15080
+// Function ID: 15081
 // Name: useEntryActivityAndApplication
-// Dependencies: [32, 5018, 15049, 504, 7414, 2]
+// Dependencies: [32, 4988, 15081, 504, 7391, 2]
 // Exports: default
 
-// Module 15048 (useEntryActivityAndApplication)
+// Module 15080 (useEntryActivityAndApplication)
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5018 */;
-import ContentInventoryActivityStore from "ContentInventoryActivityStore" /* 15049 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4988 */;
+import ContentInventoryActivityStore from "ContentInventoryActivityStore" /* 15081 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -26,7 +26,7 @@ export default function useEntryActivityAndApplication(extra) {
   const stateFromStores = obj.useStateFromStores(items, () => ContentInventoryActivityStore.getMatchingActivity(extra));
   let application_id;
   const tmp = _require;
-  const tmp4 = activityApplication(7414);
+  const tmp4 = activityApplication(7391);
   if (stateFromStores != null) {
     application_id = stateFromStores.application_id;
   }

@@ -1,17 +1,17 @@
-// Module ID: 15146
-// Function ID: 15147
+// Module ID: 15178
+// Function ID: 15179
 // Name: UserProfileWidgetOptionAddButton
-// Dependencies: [19, 17, 21, 575, 5170, 15147, 5872, 15148, 11652, 5781, 2]
+// Dependencies: [19, 17, 21, 575, 5140, 15179, 5842, 15180, 11634, 5751, 2]
 // Exports: default
 
-// Module 15146 (UserProfileWidgetOptionAddButton)
+// Module 15178 (UserProfileWidgetOptionAddButton)
 import nativeDefault from "native" /* 575 */;
-import useGameNameAndCoverImageDefault from "useGameNameAndCoverImage" /* 15147 */;
-import AddWidgetButtonConfig from "AddWidgetButtonConfig" /* 15148 */;
+import useGameNameAndCoverImageDefault from "useGameNameAndCoverImage" /* 15179 */;
+import AddWidgetButtonConfig from "AddWidgetButtonConfig" /* 15180 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let StyleSheet;
@@ -25,7 +25,7 @@ let obj5;
 let obj6;
 let obj7;
 let tmp2;
-const FastImageDefault = tmp2(5872);
+const FastImageDefault = tmp2(5842);
 function PlaceholderCover(arg0) {
   let gameId;
   let items;
@@ -175,10 +175,10 @@ export default function UserProfileWidgetOptionAddButton(onPress) {
   items = [tmp9, ];
   const obj6 = { style: tmp3.overlay, children: items1 };
   const obj7 = { size: "md", color: nativeDefault.colors.TEXT_DEFAULT };
-  const CirclePlusIcon = tmp6(11652).CirclePlusIcon;
+  const CirclePlusIcon = tmp6(11634).CirclePlusIcon;
   items1 = [hasOwnProperty(CirclePlusIcon, obj7), ];
   const obj8 = { variant: "body-md/medium", color: "text-strong", children: tmp6Result.getAddWidgetTitle(widget) };
-  const Text = tmp6(5781).Text;
+  const Text = tmp6(5751).Text;
   tmp6Result = AddWidgetButtonConfig;
   items1[1] = hasOwnProperty(Text, obj8);
   items[1] = metroRequire(React3, obj6);

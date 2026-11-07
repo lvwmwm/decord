@@ -1,12 +1,12 @@
-// Module ID: 8679
-// Function ID: 8680
+// Module ID: 8658
+// Function ID: 8659
 // Name: ExperimentDevToolsUtils
-// Dependencies: [8680, 5389, 2]
+// Dependencies: [8659, 5359, 2]
 // Exports: getExperimentVariantsForDevTools
 
-// Module 8679 (ExperimentDevToolsUtils)
-import ExperimentManager from "ExperimentManager" /* 5389 */;
-import experiment2 from "experiment" /* 8680 */;
+// Module 8658 (ExperimentDevToolsUtils)
+import ExperimentManager from "ExperimentManager" /* 5359 */;
+import experiment2 from "experiment" /* 8659 */;
 import size from "module_2" /* 2 */;
 
 const obj = { id: -1, label: "Not Eligible", shortLabel: "Not Eligible", type: experiment2.Variation_Type.OVERRIDE };

@@ -1,50 +1,50 @@
 // Module ID: 6130
 // Function ID: 6131
-// Dependencies: [6131]
+// Dependencies: [17, 26, 106, 65, 114]
 
 // Module 6130
-import get_synchronousScreenUpdatesEnabled from "get synchronousScreenUpdatesEnabled" /* 6131 */;
+import _mod26 from "module_26" /* 26 */;
+import renderElement from "renderElement" /* 114 */;
+import react_native from "react-native" /* 17 */;
+import DynamicallyInjectedByGestureHandler from "DynamicallyInjectedByGestureHandler" /* 106 */;
+import module_65 from "module_65" /* 65 */;
 
-
-export const RNSLog = {
-  log(arg0) {
-    const substr = [...arguments].slice();
-    if (get_synchronousScreenUpdatesEnabled.featureFlags.stable.debugLogging) {
-      const _console = console;
-      const items = [arg0];
-      HermesBuiltin.arraySpread(items, substr, 1);
-      const _console2 = console;
-      HermesBuiltin.apply(log, items, console);
-    }
+let codegenNativeCommands;
+let codegenNativeComponent;
+let obj2;
+({ codegenNativeCommands, codegenNativeComponent } = react_native);
+const __INTERNAL_VIEW_CONFIG = { uiViewClassName: "RNSSearchBar", directEventTypes: { topSearchFocus: { registrationName: "onSearchFocus" }, topSearchBlur: { registrationName: "onSearchBlur" }, topSearchButtonPress: { registrationName: "onSearchButtonPress" }, topCancelButtonPress: { registrationName: "onCancelButtonPress" }, topChangeText: { registrationName: "onChangeText" }, topClose: { registrationName: "onClose" }, topOpen: { registrationName: "onOpen" } }, validAttributes: obj2 };
+obj2 = { hideWhenScrolling: true, autoCapitalize: true, placeholder: true, placement: true, allowToolbarIntegration: true, obscureBackground: true, hideNavigationBar: true, cancelButtonText: true, barTintColor: _mod26.colorAttribute, tintColor: _mod26.colorAttribute, textColor: _mod26.colorAttribute, autoFocus: true, disableBackButtonOverride: true, inputType: true, hintTextColor: _mod26.colorAttribute, headerIconColor: _mod26.colorAttribute, shouldShowHintSearchIcon: true };
+const merged = Object.assign(DynamicallyInjectedByGestureHandler.ConditionallyIgnoredEventHandlers({ onSearchFocus: true, onSearchBlur: true, onSearchButtonPress: true, onCancelButtonPress: true, onChangeText: true, onClose: true, onOpen: true }));
+const obj3 = {
+  blur(arg0) {
+    const obj = renderElement;
+    obj.dispatchCommand(arg0, "blur", []);
   },
-  warn(arg0) {
-    const substr = [...arguments].slice();
-    if (get_synchronousScreenUpdatesEnabled.featureFlags.stable.debugLogging) {
-      const _console = console;
-      const items = [arg0];
-      HermesBuiltin.arraySpread(items, substr, 1);
-      const _console2 = console;
-      HermesBuiltin.apply(warn, items, console);
-    }
+  focus(arg0) {
+    const obj = renderElement;
+    obj.dispatchCommand(arg0, "focus", []);
   },
-  error(arg0) {
-    const substr = [...arguments].slice();
-    if (get_synchronousScreenUpdatesEnabled.featureFlags.stable.debugLogging) {
-      const _console = console;
-      const items = [arg0];
-      HermesBuiltin.arraySpread(items, substr, 1);
-      const _console2 = console;
-      HermesBuiltin.apply(error, items, console);
-    }
+  clearText(arg0) {
+    const obj = renderElement;
+    obj.dispatchCommand(arg0, "clearText", []);
   },
-  info(arg0) {
-    const substr = [...arguments].slice();
-    if (get_synchronousScreenUpdatesEnabled.featureFlags.stable.debugLogging) {
-      const _console = console;
-      const items = [arg0];
-      HermesBuiltin.arraySpread(items, substr, 1);
-      const _console2 = console;
-      HermesBuiltin.apply(info, items, console);
-    }
+  toggleCancelButton(arg0, arg1) {
+    const items = [arg1];
+    const obj = renderElement;
+    obj.dispatchCommand(arg0, "toggleCancelButton", items);
+  },
+  setText(arg0, arg1) {
+    const items = [arg1];
+    const obj = renderElement;
+    obj.dispatchCommand(arg0, "setText", items);
+  },
+  cancelSearch(arg0) {
+    const obj = renderElement;
+    obj.dispatchCommand(arg0, "cancelSearch", []);
   }
 };
+
+export default module_65.get("RNSSearchBar", () => obj);
+export { __INTERNAL_VIEW_CONFIG };
+export const Commands = obj3;

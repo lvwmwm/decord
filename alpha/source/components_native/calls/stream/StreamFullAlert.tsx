@@ -1,14 +1,14 @@
-// Module ID: 20395
-// Function ID: 20396
+// Module ID: 20463
+// Function ID: 20464
 // Name: StreamFullAlert
-// Dependencies: [19, 21, 6105, 1113, 6188, 5781, 2]
+// Dependencies: [19, 21, 6079, 1113, 6162, 5751, 2]
 // Exports: default
 
-// Module 20395 (StreamFullAlert)
+// Module 20463 (StreamFullAlert)
 import intl4 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5781 */;
-import AVError from "AVError" /* 6105 */;
-import AlertDefault from "Alert" /* 6188 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import AVError from "AVError" /* 6079 */;
+import AlertDefault from "Alert" /* 6162 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -36,7 +36,7 @@ export default function StreamFullAlert(arg0) {
   const merged = Object.assign(arg0);
   intl2 = tmp(1113).intl;
   const obj3 = { variant: "body-md/normal", style: closure_5.body, children: intl3.string(intl4.t.VVZDBL) };
-  const Text = tmp(5781).Text;
+  const Text = tmp(5751).Text;
   intl3 = tmp(1113).intl;
   items = [_false(Text, obj3), ];
   const obj4 = { variant: "body-md/normal", selectable: true, color: "text-muted", style: closure_5.body, children: formatToPlainStringResult };

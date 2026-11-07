@@ -1,10 +1,10 @@
-// Module ID: 10704
-// Function ID: 10705
+// Module ID: 10687
+// Function ID: 10688
 // Name: InvalidGooglePlayPurchase
-// Dependencies: [4990, 2]
+// Dependencies: [4960, 2]
 
-// Module 10704 (InvalidGooglePlayPurchase)
-import BillingError from "BillingError" /* 4990 */;
+// Module 10687 (InvalidGooglePlayPurchase)
+import BillingError from "BillingError" /* 4960 */;
 import size from "module_2" /* 2 */;
 
 class InvalidGooglePlayPurchase extends BillingError {

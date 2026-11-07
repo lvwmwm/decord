@@ -1,9 +1,9 @@
-// Module ID: 15453
-// Function ID: 15454
+// Module ID: 15488
+// Function ID: 15489
 // Name: SentMessageIntentsHandler
 // Dependencies: [2]
 
-// Module 15453 (SentMessageIntentsHandler)
+// Module 15488 (SentMessageIntentsHandler)
 import size from "module_2" /* 2 */;
 
 const obj = {

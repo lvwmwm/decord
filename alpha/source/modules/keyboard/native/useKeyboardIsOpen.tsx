@@ -1,10 +1,10 @@
-// Module ID: 7197
-// Function ID: 7198
+// Module ID: 7172
+// Function ID: 7173
 // Name: useKeyboardIsOpen
 // Dependencies: [1495, 1496, 1497, 1625, 2]
 // Exports: default, getKeyboardIsOpen, subscribeToKeyboardIsOpen
 
-// Module 7197 (useKeyboardIsOpen)
+// Module 7172 (useKeyboardIsOpen)
 import AppEntryKeyContext from "AppEntryKeyContext" /* 1496 */;
 import KeyboardUIStoreDefault from "KeyboardUIStore" /* 1497 */;
 import KeyboardTypes from "KeyboardTypes" /* 1625 */;
@@ -41,7 +41,7 @@ export default function useKeyboardIsOpen() {
     return tmp2;
   });
 };
-export function subscribeToKeyboardIsOpen(arg0) {
+export function subscribeToKeyboardIsOpen(arg0, arg1) {
   let closure_0;
   _require = arg0;
   let tmp = arg1;

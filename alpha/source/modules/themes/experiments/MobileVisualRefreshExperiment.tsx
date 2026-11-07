@@ -1,10 +1,10 @@
-// Module ID: 12712
-// Function ID: 12713
+// Module ID: 12725
+// Function ID: 12726
 // Name: MobileVisualRefreshExperiment
 // Dependencies: [1450, 2]
 // Exports: default, isMobileVisualRefreshEnabled, resolveRefreshToken, useMobileVisualRefreshConfig
 
-// Module 12712 (MobileVisualRefreshExperiment)
+// Module 12725 (MobileVisualRefreshExperiment)
 import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1450 */;
 import size from "module_2" /* 2 */;
 

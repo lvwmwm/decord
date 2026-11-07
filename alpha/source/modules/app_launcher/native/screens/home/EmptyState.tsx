@@ -1,19 +1,19 @@
-// Module ID: 12632
-// Function ID: 12633
+// Module ID: 12645
+// Function ID: 12646
 // Name: EmptyState
-// Dependencies: [19, 17, 21, 5170, 575, 12569, 11665, 5781, 1113, 2]
+// Dependencies: [19, 17, 21, 5140, 575, 12582, 11647, 5751, 1113, 2]
 // Exports: default
 
-// Module 12632 (EmptyState)
+// Module 12645 (EmptyState)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5781 */;
-import AppLauncherTypes from "AppLauncherTypes" /* 11665 */;
-import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 12569 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import AppLauncherTypes from "AppLauncherTypes" /* 11647 */;
+import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 12582 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

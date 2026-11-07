@@ -1,21 +1,21 @@
-// Module ID: 19018
-// Function ID: 19019
+// Module ID: 19068
+// Function ID: 19069
 // Name: GuildChannelRow
-// Dependencies: [19, 17, 9933, 21, 5170, 575, 5806, 19019, 5872, 8695, 19021, 18997, 2]
+// Dependencies: [19, 17, 9917, 21, 5140, 575, 5776, 19069, 5842, 8674, 19071, 19047, 2]
 
-// Module 19018 (GuildChannelRow)
+// Module 19068 (GuildChannelRow)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import useChannelNameDefault from "useChannelName" /* 5806 */;
-import FastImageDefault from "FastImage" /* 5872 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 8695 */;
-import SearchConstants from "SearchConstants" /* 9933 */;
-import SearchListRow2 from "SearchListRow" /* 18997 */;
-import ChannelContent from "ChannelContent" /* 19019 */;
-import renderChannelItem from "renderChannelItem" /* 19021 */;
+import useChannelNameDefault from "useChannelName" /* 5776 */;
+import FastImageDefault from "FastImage" /* 5842 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8674 */;
+import SearchConstants from "SearchConstants" /* 9917 */;
+import SearchListRow2 from "SearchListRow" /* 19047 */;
+import ChannelContent from "ChannelContent" /* 19069 */;
+import renderChannelItem from "renderChannelItem" /* 19071 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 let size;

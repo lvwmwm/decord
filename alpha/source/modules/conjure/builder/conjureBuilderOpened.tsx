@@ -1,13 +1,13 @@
-// Module ID: 12251
-// Function ID: 12252
+// Module ID: 12242
+// Function ID: 12243
 // Name: conjureBuilderOpened
-// Dependencies: [19, 6924, 504, 11009, 2]
+// Dependencies: [19, 6899, 504, 10993, 2]
 // Exports: useTrackConjureBuilderOpened
 
-// Module 12251 (conjureBuilderOpened)
-import ConjureAnalytics from "ConjureAnalytics" /* 11009 */;
+// Module 12242 (conjureBuilderOpened)
+import ConjureAnalytics from "ConjureAnalytics" /* 10993 */;
 import react from "react" /* 19 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6924 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6899 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

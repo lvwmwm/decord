@@ -1,22 +1,22 @@
-// Module ID: 13427
-// Function ID: 13428
+// Module ID: 13450
+// Function ID: 13451
 // Name: GameOrganizationCharacterList
-// Dependencies: [19, 17, 21, 5170, 575, 1113, 2530, 5781, 6185, 7177, 5754, 5230, 7065, 13425, 7151, 2]
+// Dependencies: [19, 17, 21, 5140, 575, 1113, 2530, 5751, 6159, 7152, 5724, 5200, 7040, 13448, 7126, 2]
 // Exports: default
 
-// Module 13427 (GameOrganizationCharacterList)
+// Module 13450 (GameOrganizationCharacterList)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef2530 from "module_2530" /* 2530 */;
-import react_native2 from "react-native" /* 5230 */;
-import useToken from "useToken" /* 5754 */;
-import Text_Text from "Text/Text" /* 5781 */;
-import Stack_Stack from "Stack/Stack" /* 6185 */;
-import CircleErrorIcon2 from "CircleErrorIcon" /* 7177 */;
-import GameOrganizationIconDefault from "GameOrganizationIcon" /* 13425 */;
+import react_native2 from "react-native" /* 5200 */;
+import useToken from "useToken" /* 5724 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import Stack_Stack from "Stack/Stack" /* 6159 */;
+import CircleErrorIcon2 from "CircleErrorIcon" /* 7152 */;
+import GameOrganizationIconDefault from "GameOrganizationIcon" /* 13448 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -98,7 +98,7 @@ let closure_9 = react.memo(function CharacterCard(character) {
     children: metroRequire(Stack, obj5)
   };
   items = [tmp.card, ];
-  const Card = tmp2(7065).Card;
+  const Card = tmp2(7040).Card;
   if (selected) {
     selected = tmp.selectedCard;
   }
@@ -110,15 +110,15 @@ let closure_9 = react.memo(function CharacterCard(character) {
     name = character.name;
   }
   obj5 = { direction: "horizontal", spacing: nativeDefault.space.PX_16, align: "center", children: items1 };
-  Stack = tmp2(6185).Stack;
+  Stack = tmp2(6159).Stack;
   const obj6 = { iconUrl: character.iconUrl, size: 48, borderRadius: nativeDefault.radii.md };
   const tmp4Result = GameOrganizationIconDefault;
   items1 = [hasOwnProperty(tmp4Result, obj6), ];
   const obj7 = { spacing: nativeDefault.space.PX_4, style: tmp.labels, children: items2 };
-  const Stack2 = tmp2(6185).Stack;
+  const Stack2 = tmp2(6159).Stack;
   const obj8 = { variant: token, color: str3, children: character.name };
   str3 = "text-default";
-  const Text = tmp2(5781).Text;
+  const Text = tmp2(5751).Text;
   if (!eligible) {
     str3 = "text-muted";
   }
@@ -154,9 +154,9 @@ export default function GameOrganizationCharacterList(characters) {
   }, items);
   let someResult = characters.some((eligible) => !eligible.eligible);
   let obj = { spacing: nativeDefault.space.PX_12, children: items1 };
-  const Stack = characters(6185).Stack;
+  const Stack = characters(6159).Stack;
   const obj2 = { style: tmp.title, title: intl.formatToPlainString(_modDef2530["Xm+emB"], { noun }) };
-  const TableRowGroupTitle = characters(7151).TableRowGroupTitle;
+  const TableRowGroupTitle = characters(7126).TableRowGroupTitle;
   intl = characters(1113).intl;
   items1 = [closure_5(TableRowGroupTitle, obj2), , ];
   const obj3 = {
@@ -172,7 +172,7 @@ export default function GameOrganizationCharacterList(characters) {
   const tmp7 = closure_5;
   if (someResult) {
     const obj4 = { variant: "body-md/medium", color: "text-subtle", children: intl2.formatToPlainString(_modDef2530.ybJIQJ, obj5) };
-    const Text = tmp4(5781).Text;
+    const Text = tmp4(5751).Text;
     intl2 = tmp4(1113).intl;
     obj5 = { noun };
     someResult = tmp7(Text, obj4);

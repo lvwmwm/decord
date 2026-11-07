@@ -1,31 +1,31 @@
-// Module ID: 11018
-// Function ID: 11019
+// Module ID: 11002
+// Function ID: 11003
 // Name: ConjureWorkerTickets
-// Dependencies: [5, 1072, 1282, 11019, 2]
+// Dependencies: [5, 1072, 1282, 11003, 2]
 // Exports: forgetEarlyTicket, forgetEarlyTickets, mintRemixTicket, mintWorkerTicket, prefetchWorkerTicket, rememberCreatedProjectTicket
 
-// Module 11018 (ConjureWorkerTickets)
+// Module 11002 (ConjureWorkerTickets)
 import Constants from "Constants" /* 1072 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
-import conjureLocalDev from "conjureLocalDev" /* 11019 */;
+import conjureLocalDev from "conjureLocalDev" /* 11003 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
-let closure_1, set;
+let closure_2, set;
 
 function mintTicket() {
   return obj(...arguments);
 }
 let obj = function _mintTicket() {
-  obj = _asyncToGenerator(async (url) => {
-    let c2 = 0;
+  obj = _asyncToGenerator(async (url, body) => {
     let c3 = 0;
+    let c4 = 0;
     return (async (arg0, value) => {
-      closure_1 = workerTicket;
+      closure_2 = workerTicket;
       const HTTP = HTTPUtils.HTTP;
-      const obj4 = { url, rejectWithError: true };
-      await HTTP.post(obj4);
-      return closure_1(value.body);
+      const request = { url, body, rejectWithError: true };
+      await HTTP.post(request);
+      return closure_2(value.body);
     })();
   });
   return obj(...arguments);
@@ -113,6 +113,6 @@ export function mintWorkerTicket(projectId) {
   obj.delete(projectId);
   ticket = mintTicket(Endpoints.CONJURE_PROJECT_WS_TICKET(projectId));
 }
-export function mintRemixTicket(id) {
-  return mintTicket(Endpoints.CONJURE_PROJECT_REMIX_TICKET(id));
+export function mintRemixTicket(id, arg1) {
+  return mintTicket(Endpoints.CONJURE_PROJECT_REMIX_TICKET(id), arg1);
 }

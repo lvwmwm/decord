@@ -1,22 +1,22 @@
-// Module ID: 17304
-// Function ID: 17305
+// Module ID: 17352
+// Function ID: 17353
 // Name: launchOrbsArcadeGame
-// Dependencies: [5, 2162, 6926, 17282, 1072, 6927, 1113, 5867, 17288, 6605, 5404, 6961, 11899, 17289, 11031, 11076, 5345, 572, 2]
+// Dependencies: [5, 2162, 6901, 17330, 1072, 6902, 1113, 5837, 17336, 6580, 5374, 6936, 11890, 17337, 11015, 11061, 5315, 572, 2]
 // Exports: default
 
-// Module 17304 (launchOrbsArcadeGame)
+// Module 17352 (launchOrbsArcadeGame)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import intl3 from "intl" /* 1113 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5404 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5867 */;
-import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6961 */;
-import OrbsArcadeActionCreators from "OrbsArcadeActionCreators" /* 17288 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5837 */;
+import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6936 */;
+import OrbsArcadeActionCreators from "OrbsArcadeActionCreators" /* 17336 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ApplicationStore from "ApplicationStore" /* 2162 */;
-import FramesStore from "FramesStore" /* 6926 */;
-import OrbsArcadeStore from "OrbsArcadeStore" /* 17282 */;
-import FramesConstants from "FramesConstants" /* 6927 */;
+import FramesStore from "FramesStore" /* 6901 */;
+import OrbsArcadeStore from "OrbsArcadeStore" /* 17330 */;
+import FramesConstants from "FramesConstants" /* 6902 */;
 import size from "module_2" /* 2 */;
 
 let c3, c5, claimableRewardIdsAtLaunch, closure_3, closure_4, closure_5, currentRun, frameId, id, navigation, runIdAtLaunch;
@@ -47,7 +47,7 @@ let obj = function _ensureEnrollment() {
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c4;
@@ -140,7 +140,7 @@ obj = function _launchGame() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c6;
@@ -178,13 +178,13 @@ obj = function _launchGame() {
                 }
               }
               c8 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } else if (1 === c7) {
             c6 = 0;
             closure_133_11();
             c8 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           } else if (2 === c7) {
             if (arg0 === 1) {
               c8 = 3;
@@ -253,7 +253,7 @@ obj = function _launchGame() {
           } else if (4 === c7) {
             c6 = 0;
             c8 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           } else if (arg0 === 1) {
             c8 = 3;
             throw value;
@@ -276,7 +276,7 @@ obj = function _launchGame() {
             obj2.leaveFrame(frameId);
             closure_133_11();
             c8 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
           c6 = 0;
           const obj13 = closure_133_0(closure_133_2[12]);
@@ -325,7 +325,7 @@ obj = function _launchOrbsArcadeGame() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -374,7 +374,7 @@ obj = function _launchOrbsArcadeGame() {
             obj.dispatch(obj12);
           }
           c8 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp28) {
           closure_5 = tmp28;
           if (0 === c6) {

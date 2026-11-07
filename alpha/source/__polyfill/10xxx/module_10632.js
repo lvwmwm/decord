@@ -1,133 +1,120 @@
 // Module ID: 10632
 // Function ID: 10633
-// Dependencies: [10463, 10464]
-// Exports: parseDuration, parseNumberPattern, parseOrdinalNumberPattern, parseYear
+// Dependencies: [10442, 10449, 10451, 10475, 10487, 10633, 10635, 10636, 10637, 10482]
+// Exports: createCasualConfiguration, createConfiguration, parse, parseDate
 
 // Module 10632
-import repeatedTimeunitPattern from "repeatedTimeunitPattern" /* 10463 */;
-import findMostLikelyADYear from "findMostLikelyADYear" /* 10464 */;
+import _mod10475 from "module_10475" /* 10475 */;
+import includeCommonConfiguration2 from "includeCommonConfiguration" /* 10482 */;
+import _mod10487 from "module_10487" /* 10487 */;
+import _mod10633 from "module_10633" /* 10633 */;
+import _mod10635 from "module_10635" /* 10635 */;
+import _mod10636 from "module_10636" /* 10636 */;
+import _mod10637 from "module_10637" /* 10637 */;
+import { Chrono } from "module_10442" /* 10442 */;
 
-const combined = "(" + exports.NUMBER_PATTERN + ")\\s{0,3}(" + repeatedTimeunitPattern.matchAnyPattern(exports.TIME_UNIT_DICTIONARY) + ")";
-const regExp = new RegExp(combined, "i");
+const require = globalThis.__r;
 
-export function parseNumberPattern(str) {
-  let num5;
-  str = str.toLowerCase();
-  if (undefined !== exports.INTEGER_WORD_DICTIONARY[str]) {
-    num5 = exports.INTEGER_WORD_DICTIONARY[str];
+let items;
+const fn = this && this.__importDefault || ((__esModule) => {
+  let tmp2;
+  const tmp = __esModule;
+  if (!tmp) {
+    tmp2 = { default: __esModule };
+    const obj = { default: __esModule };
   } else {
-    num5 = 1;
-    if ("un" !== str) {
-      num5 = 1;
-      if ("una" !== str) {
-        let num4 = 3;
-        if (!str.match(/alcuni/)) {
-          let num = 0.5;
-          if (!str.match(/metá/)) {
-            let num2 = 2;
-            if (!str.match(/paio/)) {
-              let num3 = 7;
-              if (!str.match(/molti/)) {
-                const _parseFloat = parseFloat;
-                num3 = parseFloat(str);
-              }
-              num2 = num3;
-            }
-            num = num2;
-          }
-          num4 = num;
-        }
-        num5 = num4;
-      }
-    }
+    tmp2 = __esModule;
   }
-  return num5;
-}
-export function parseOrdinalNumberPattern(str) {
-  str = str.toLowerCase();
-  if (undefined !== exports.ORDINAL_WORD_DICTIONARY[str]) {
-    return exports.ORDINAL_WORD_DICTIONARY[str];
-  } else {
-    const _parseInt = parseInt;
-    return parseInt(str.replace(/(?:imo|ndo|rzo|rto|nto|sto|tavo|nono|cimo|timo|esimo)$/i, ""));
+  return tmp2;
+});
+function createCasualConfiguration() {
+  let items;
+  let flag = arg0;
+  if (arg0 === undefined) {
+    flag = true;
   }
-}
-export function parseYear(match) {
-  const obj = /BE/i;
-  if (obj.test(match)) {
-    const _parseInt4 = parseInt;
-    return parseInt(match.replace(/BE/i, "")) - 543;
-  } else {
-    const obj2 = /BCE?/i;
-    if (obj2.test(match)) {
-      const _parseInt3 = parseInt;
-      return -parseInt(match.replace(/BCE?/i, ""));
-    } else {
-      const obj3 = /(AD|CE)/i;
-      if (obj3.test(match)) {
-        const _parseInt2 = parseInt;
-        return parseInt(match.replace(/(AD|CE)/i, ""));
-      } else {
-        const _parseInt = parseInt;
-        const parsed = parseInt(match);
-        return findMostLikelyADYear.findMostLikelyADYear(parsed);
-      }
-    }
+  if (flag === undefined) {
+    flag = true;
   }
+  const obj = { parsers: items, refiners: [] };
+  const includeCommonConfiguration = includeCommonConfiguration2.includeCommonConfiguration;
+  items = [new module_10487.default(), , , , ];
+  new module_10487.default();
+  items[1] = new module_10475.default(flag);
+  new module_10475.default(flag);
+  items[2] = new module_10635.default();
+  new module_10635.default();
+  items[3] = new module_10633.default();
+  new module_10633.default();
+  items[4] = new module_10636.default();
+  new module_10636.default();
+  const result = includeCommonConfiguration(obj, false);
+  const parsers = result.parsers;
+  const unshift = parsers.unshift;
+  const _default5 = new module_10637.default();
+  unshift(_default5);
+  return result;
 }
-export function parseDuration(arg0) {
-  let str = arg0;
-  const obj = {};
-  let match = regExp.exec(arg0);
-  while (match) {
-    let num5;
-    let str2 = match[1];
-    let str3 = str2.toLowerCase();
-    let tmp2 = exports;
-    if (undefined !== exports.INTEGER_WORD_DICTIONARY[str3]) {
-      num5 = tmp2.INTEGER_WORD_DICTIONARY[str3];
-    } else {
-      num5 = 1;
-      if ("un" !== str3) {
-        num5 = 1;
-        if ("una" !== str3) {
-          let num4 = 3;
-          if (!str3.match(/alcuni/)) {
-            let num = 0.5;
-            if (!str3.match(/metá/)) {
-              let num2 = 2;
-              if (!str3.match(/paio/)) {
-                let num3 = 7;
-                if (!str3.match(/molti/)) {
-                  let _parseFloat = parseFloat;
-                  num3 = parseFloat(str3);
-                }
-                num2 = num3;
-              }
-              num = num2;
-            }
-            num4 = num;
-          }
-          num5 = num4;
-        }
-      }
-    }
-    let str4 = match[2];
-    obj[tmp2.TIME_UNIT_DICTIONARY[str4.toLowerCase(str4)]] = num5;
-    let str5 = str.substring(match[0].length);
-    let trimmed = str5.trim();
-    match = regExp.exec(trimmed);
-    str = trimmed;
+function createConfiguration(flag) {
+  let items;
+  if (flag === undefined) {
+    flag = true;
   }
-  return obj;
+  let flag2 = arg1;
+  if (arg1 === undefined) {
+    flag2 = true;
+  }
+  const obj = { parsers: items, refiners: [] };
+  const includeCommonConfiguration = includeCommonConfiguration2.includeCommonConfiguration;
+  items = [new module_10487.default(), , , , ];
+  new module_10487.default();
+  items[1] = new module_10475.default(flag2);
+  new module_10475.default(flag2);
+  items[2] = new module_10635.default();
+  new module_10635.default();
+  items[3] = new module_10633.default();
+  new module_10633.default();
+  items[4] = new module_10636.default();
+  new module_10636.default();
+  return includeCommonConfiguration(obj, flag);
 }
-export const WEEKDAY_DICTIONARY = { domenica: 0, dom: 0, "luned\u00ec": 1, lun: 1, "marted\u00ec": 2, mar: 2, "mercoled\u00ec": 3, merc: 3, "gioved\u00ec": 4, giov: 4, "venerd\u00ec": 5, ven: 5, sabato: 6, sab: 6 };
-export const FULL_MONTH_NAME_DICTIONARY = {};
-export const MONTH_DICTIONARY = Object.assign(Object.assign({}, exports.FULL_MONTH_NAME_DICTIONARY), { gennaio: 1, gen: 1, "gen.": 1, febbraio: 2, feb: 2, "feb.": 2, febraio: 2, febb: 2, "febb.": 2, marzo: 3, mar: 3, "mar.": 3, aprile: 4, apr: 4, "apr.": 4, maggio: 5, mag: 5, giugno: 6, giu: 6, luglio: 7, lug: 7, lugl: 7, "lug.": 7, agosto: 8, ago: 8, settembre: 9, set: 9, "set.": 9, sett: 9, "sett.": 9, ottobre: 10, ott: 10, "ott.": 10, novembre: 11, nov: 11, "nov.": 11, dicembre: 12, dic: 12, dice: 12, "dic.": 12 });
-export const INTEGER_WORD_DICTIONARY = { uno: 1, due: 2, tre: 3, quattro: 4, cinque: 5, sei: 6, sette: 7, otto: 8, nove: 9, dieci: 10, undici: 11, dodici: 12 };
-export const ORDINAL_WORD_DICTIONARY = { primo: 1, secondo: 2, terzo: 3, quarto: 4, quinto: 5, sesto: 6, settimo: 7, ottavo: 8, nono: 9, decimo: 10, undicesimo: 11, dodicesimo: 12, tredicesimo: 13, quattordicesimo: 14, quindicesimo: 15, sedicesimo: 16, diciassettesimo: 17, diciottesimo: 18, diciannovesimo: 19, ventesimo: 20, ventunesimo: 21, ventiduesimo: 22, ventitreesimo: 23, ventiquattresimo: 24, venticinquesimo: 25, ventiseiesimo: 26, ventisettesimo: 27, ventottesimo: 28, ventinovesimo: 29, trentesimo: 30, trentunesimo: 31 };
-export const TIME_UNIT_DICTIONARY = { sec: "second", secondo: "second", secondi: "second", min: "minute", mins: "minute", minuti: "minute", h: "hour", hr: "hour", o: "hour", ora: "hour", ore: "hour", giorno: "day", giorni: "day", settimana: "week", settimane: "week", mese: "month", trimestre: "quarter", trimestri: "quarter", anni: "year", anno: "year" };
-export const NUMBER_PATTERN = "(?:" + repeatedTimeunitPattern.matchAnyPattern(exports.INTEGER_WORD_DICTIONARY) + "|[0-9]+|[0-9]+\\.[0-9]+|half(?:\\s{0,2}un?)?|un?\\b(?:\\s{0,2}qualcuno)?|qualcuno|molti|a?\\s{0,2}alcuni\\s{0,2}(?:of)?)";
-export const ORDINAL_NUMBER_PATTERN = "(?:" + repeatedTimeunitPattern.matchAnyPattern(exports.ORDINAL_WORD_DICTIONARY) + "|[0-9]{1,2}(?:mo|ndo|rzo|simo|esimo)?)";
-export const YEAR_PATTERN = "(?:[1-9][0-9]{0,3}\\s{0,2}(?:BE|AD|BC|BCE|CE)|[1-2][0-9]{3}|[5-9][0-9])";
-export const TIME_UNITS_PATTERN = repeatedTimeunitPattern.repeatedTimeunitPattern("(?:(?:about|around)\\s{0,3})?", combined);
+const module_10475 = fn(_mod10475);
+const module_10487 = fn(_mod10487);
+const module_10633 = fn(_mod10633);
+const module_10635 = fn(_mod10635);
+const module_10636 = fn(_mod10636);
+const module_10637 = fn(_mod10637);
+const chrono = new require("module_10442").Chrono(createCasualConfiguration());
+const obj7 = { parsers: items, refiners: [] };
+let includeCommonConfiguration = includeCommonConfiguration2.includeCommonConfiguration;
+const _default = new module_10487.default();
+items = [_default, , , , ];
+const _default1 = new module_10475.default(true);
+items[1] = _default1;
+const _default2 = new module_10635.default();
+items[2] = _default2;
+const _default3 = new module_10633.default();
+items[3] = _default3;
+const _default4 = new module_10636.default();
+items[4] = _default4;
+const chrono1 = new Chrono(includeCommonConfiguration(obj7, true));
+const Chrono_export = require("module_10442").Chrono;
+
+export function parse(arg0, arg1, arg2) {
+  const casual = exports.casual;
+  return casual.parse(arg0, arg1, arg2);
+}
+export function parseDate(arg0, arg1, arg2) {
+  const casual = exports.casual;
+  return casual.parseDate(arg0, arg1, arg2);
+}
+export { createCasualConfiguration };
+export { createConfiguration };
+export { Chrono_export as Chrono };
+export const ParsingResult = require("ReferenceWithTimezone").ParsingResult;
+export const ParsingComponents = require("ReferenceWithTimezone").ParsingComponents;
+export const ReferenceWithTimezone = require("ReferenceWithTimezone").ReferenceWithTimezone;
+export const Meridiem = require("Meridiem").Meridiem;
+export const Weekday = require("Meridiem").Weekday;
+export const casual = chrono;
+export const strict = chrono1;

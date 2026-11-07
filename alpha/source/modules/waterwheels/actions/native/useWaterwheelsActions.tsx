@@ -1,20 +1,20 @@
-// Module ID: 18883
-// Function ID: 18884
+// Module ID: 18933
+// Function ID: 18934
 // Name: useWaterwheelsActions
-// Dependencies: [5, 19, 5041, 14181, 1072, 8031, 5867, 9025, 7616, 1113, 2534, 9037, 9826, 6986, 8055, 14190, 6982, 2]
+// Dependencies: [5, 19, 5011, 14206, 1072, 8009, 5837, 9007, 7593, 1113, 2534, 9019, 9810, 6961, 8033, 14215, 6957, 2]
 // Exports: useWaterwheelsActions
 
-// Module 18883 (useWaterwheelsActions)
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5867 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6982 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 8031 */;
-import react_nativeDefault from "react-native" /* 8055 */;
-import WaterwheelsCardTypes from "WaterwheelsCardTypes" /* 9025 */;
-import NotificationUtilsDefault from "NotificationUtils" /* 14190 */;
+// Module 18933 (useWaterwheelsActions)
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5837 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6957 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 8009 */;
+import react_nativeDefault from "react-native" /* 8033 */;
+import WaterwheelsCardTypes from "WaterwheelsCardTypes" /* 9007 */;
+import NotificationUtilsDefault from "NotificationUtils" /* 14215 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 5041 */;
-import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 14181 */;
+import GuildStore from "GuildStore" /* 5011 */;
+import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 14206 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -44,7 +44,7 @@ let obj = function _requestNotifications() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -75,7 +75,7 @@ let obj = function _requestNotifications() {
           return obj;
         }
         c0 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp9) {
         c0 = 3;
         throw tmp9;
@@ -117,7 +117,7 @@ obj = function _joinGuild() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -175,7 +175,7 @@ obj = function _joinGuild() {
             set.delete(closure_1);
           }
           c7 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp33) {
           closure_4 = tmp33;
           if (0 === c5) {
@@ -209,7 +209,7 @@ obj = function _runGuarded() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c4;
@@ -249,7 +249,7 @@ obj = function _runGuarded() {
             c4 = 0;
           }
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp13) {
         if (0 === c4) {

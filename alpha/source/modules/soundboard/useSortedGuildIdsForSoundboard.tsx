@@ -1,16 +1,16 @@
-// Module ID: 19476
-// Function ID: 19477
+// Module ID: 19535
+// Function ID: 19536
 // Name: useSortedGuildIdsForSoundboard
-// Dependencies: [19, 5102, 6852, 1385, 1072, 1083, 563, 2171, 2]
+// Dependencies: [19, 5072, 6827, 1385, 1072, 1083, 563, 2171, 2]
 // Exports: useSortedGuildIdsForSoundboard
 
-// Module 19476 (useSortedGuildIdsForSoundboard)
+// Module 19535 (useSortedGuildIdsForSoundboard)
 import Constants from "Constants" /* 1072 */;
 import Constants2 from "Constants" /* 1083 */;
 import PremiumUtilsDefault from "PremiumUtils" /* 2171 */;
 import react from "react" /* 19 */;
-import PermissionStore from "PermissionStore" /* 5102 */;
-import SortedGuildStore from "SortedGuildStore" /* 6852 */;
+import PermissionStore from "PermissionStore" /* 5072 */;
+import SortedGuildStore from "SortedGuildStore" /* 6827 */;
 import UserStore from "UserStore" /* 1385 */;
 import size from "module_2" /* 2 */;
 

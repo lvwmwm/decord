@@ -1,19 +1,19 @@
-// Module ID: 12987
-// Function ID: 12988
+// Module ID: 13012
+// Function ID: 13013
 // Name: conjureComposerPills
-// Dependencies: [32, 17, 1385, 12316, 11213, 5224, 12827, 1113, 4024, 12988, 2]
+// Dependencies: [32, 17, 1385, 12314, 11195, 5194, 12838, 1113, 4026, 13013, 2]
 // Exports: conjureFilePillIcon, conjurePillNodes, conjurePillText, conjureUserPillLabel, decodeConjurePills, encodeConjurePills
 
-// Module 12987 (conjureComposerPills)
+// Module 13012 (conjureComposerPills)
 import react_native from "react-native" /* 17 */;
 import intl2 from "intl" /* 1113 */;
-import _modDef4024 from "module_4024" /* 4024 */;
-import UserUtils from "UserUtils" /* 5224 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11213 */;
-import ChatInputParser from "ChatInputParser" /* 12988 */;
+import _modDef4026 from "module_4026" /* 4026 */;
+import UserUtils from "UserUtils" /* 5194 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11195 */;
+import ChatInputParser from "ChatInputParser" /* 13013 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import UserStore from "UserStore" /* 1385 */;
-import ConjureStoredAttachmentStore from "ConjureStoredAttachmentStore" /* 12316 */;
+import ConjureStoredAttachmentStore from "ConjureStoredAttachmentStore" /* 12314 */;
 import size from "module_2" /* 2 */;
 
 let map, set;
@@ -67,7 +67,7 @@ export function conjureUserPillLabel(id) {
 export function decodeConjurePills(draft) {
   map = new Map();
   let obj = {
-    text: draft.replace(map(12827).CONJURE_ANY_MENTION, (raw, arg1, arg2) => {
+    text: draft.replace(map(12838).CONJURE_ANY_MENTION, (raw, arg1, arg2) => {
       let combined;
       let uri;
       if (null != arg1) {
@@ -87,7 +87,7 @@ export function decodeConjurePills(draft) {
         }
         if (combined == null) {
           const intl = intl2.intl;
-          combined = intl.string(_modDef4024.ff9Q4C);
+          combined = intl.string(_modDef4026.ff9Q4C);
         }
       }
       const combined1 = "\u2060" + combined;

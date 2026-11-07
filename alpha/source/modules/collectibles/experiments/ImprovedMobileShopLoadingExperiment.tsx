@@ -1,10 +1,10 @@
-// Module ID: 9674
-// Function ID: 9675
+// Module ID: 9656
+// Function ID: 9657
 // Name: ImprovedMobileShopLoadingExperiment
 // Dependencies: [19, 1449, 2]
 // Exports: useIsImprovedMobileShopLoadingEnabled, useIsInImprovedMobileShopLoading
 
-// Module 9674 (ImprovedMobileShopLoadingExperiment)
+// Module 9656 (ImprovedMobileShopLoadingExperiment)
 import react from "react" /* 19 */;
 import ApexExperiment from "ApexExperiment" /* 1449 */;
 import size from "module_2" /* 2 */;

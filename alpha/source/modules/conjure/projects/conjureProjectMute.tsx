@@ -1,10 +1,10 @@
-// Module ID: 11015
-// Function ID: 11016
+// Module ID: 10999
+// Function ID: 11000
 // Name: conjureProjectMute
-// Dependencies: [1231, 504, 5000, 1196, 2]
+// Dependencies: [1231, 504, 4970, 1196, 2]
 // Exports: isConjureProjectMuted, setConjureProjectMuted, useIsConjureProjectMuted
 
-// Module 11015 (conjureProjectMute)
+// Module 10999 (conjureProjectMute)
 import preloaded_user_settings from "preloaded_user_settings" /* 1196 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
 import size from "module_2" /* 2 */;

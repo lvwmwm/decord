@@ -1,14 +1,14 @@
-// Module ID: 17056
-// Function ID: 17057
+// Module ID: 17104
+// Function ID: 17105
 // Name: useSelectedTeenUser
-// Dependencies: [1385, 7817, 7814, 8462, 563, 2]
-// Exports: useSelectedTeenUser, useShouldLoadSettingsForSelectedTeenUser, useTeenUserForId
+// Dependencies: [1385, 7794, 7791, 8441, 563, 2]
+// Exports: useHasLoadedSettingsForTeen, useSelectedTeenUser, useShouldLoadSettingsForSelectedTeenUser, useTeenUserForId
 
-// Module 17056 (useSelectedTeenUser)
-import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8462 */;
+// Module 17104 (useSelectedTeenUser)
+import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8441 */;
 import UserStore from "UserStore" /* 1385 */;
-import FamilyCenterControlledSettingsStore from "FamilyCenterControlledSettingsStore" /* 7817 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7814 */;
+import FamilyCenterControlledSettingsStore from "FamilyCenterControlledSettingsStore" /* 7794 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7791 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -57,4 +57,13 @@ export function useShouldLoadSettingsForSelectedTeenUser() {
     tmp4 = !hasLoadedSettings && !tmp3;
   }
   return tmp4;
+}
+export function useHasLoadedSettingsForTeen(id1) {
+  _require = id1;
+  const items = [FamilyCenterControlledSettingsStore];
+  const obj = require("useStateFromStores");
+  return obj.useStateFromStores(items, () => {
+    const hasSettingsForUserResult = null != id1 && FamilyCenterControlledSettingsStore.hasSettingsForUser(tmp);
+    return hasSettingsForUserResult;
+  });
 }

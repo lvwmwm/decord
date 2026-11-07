@@ -1,10 +1,10 @@
-// Module ID: 15250
-// Function ID: 15251
+// Module ID: 15284
+// Function ID: 15285
 // Name: CollectiblesPromotionsEndpointMobileExperiment
 // Dependencies: [1449, 2]
 // Exports: useCollectiblesPromotionEndpointReferenceMobile
 
-// Module 15250 (CollectiblesPromotionsEndpointMobileExperiment)
+// Module 15284 (CollectiblesPromotionsEndpointMobileExperiment)
 import ApexExperiment from "ApexExperiment" /* 1449 */;
 import size from "module_2" /* 2 */;
 

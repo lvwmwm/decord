@@ -1,14 +1,14 @@
-// Module ID: 19885
-// Function ID: 19886
+// Module ID: 19954
+// Function ID: 19955
 // Name: InterestPickerFlow
-// Dependencies: [32, 19, 1072, 21, 19882, 19886, 18702, 1252, 19888, 18704, 1113, 2534, 2]
+// Dependencies: [32, 19, 1072, 21, 19951, 19955, 18749, 1252, 19957, 18751, 1113, 2534, 2]
 // Exports: default
 
-// Module 19885 (InterestPickerFlow)
+// Module 19954 (InterestPickerFlow)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import InterestPickerCatalogs from "InterestPickerCatalogs" /* 18702 */;
+import InterestPickerCatalogs from "InterestPickerCatalogs" /* 18749 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -20,7 +20,7 @@ const result = size.fileFinishedImporting("modules/waterwheels/interest/native/I
 export default function InterestPickerFlow(arm) {
   let intl;
   let intl2;
-  let tmp13;
+  let tmp16;
   arm = arm.arm;
   const onComplete = arm.onComplete;
   let getPicks;
@@ -38,7 +38,16 @@ export default function InterestPickerFlow(arm) {
   const first1 = setPicks(first.useState(arm(getPicks[5]).createInterestGuildsResource), 1)[0];
   const ref = first.useRef(false);
   const ref2 = first.useRef(0);
-  const items = [arm];
+  const ref3 = first.useRef(0);
+  const callback = first.useCallback((arg0) => {
+    ref2.current = Math.max(ref2.current, arg0);
+  }, []);
+  const callback1 = first.useCallback((arg0) => {
+    ref3.current = Math.max(ref3.current, arg0);
+  }, []);
+  const callback2 = first.useCallback(() => ref3.current, []);
+  const ref4 = first.useRef(0);
+  let items = [arm];
   const memo = first.useMemo(() => {
     const obj = { arm, catalog_version: InterestPickerCatalogs.INTEREST_PICKER_CATALOG_VERSION };
     return obj;
@@ -47,7 +56,7 @@ export default function InterestPickerFlow(arm) {
   const effect = first.useEffect(() => {
     if ("picker" === first) {
       const _Date = Date;
-      ref2.current = Date.now();
+      ref4.current = Date.now();
       const obj = AnalyticsUtilsDefault;
       obj.track(AnalyticEvents.WATERWHEELS_INTEREST_PICKER_EXPOSURE, memo);
     }
@@ -57,6 +66,8 @@ export default function InterestPickerFlow(arm) {
   if ("guilds" === first) {
     const obj2 = {
       analyticsContext: memo,
+      onRowSeen: callback1,
+      getMaxRowSeen: callback2,
       gameIds: getPicks(),
       resource: first1,
       onBack() {
@@ -73,11 +84,12 @@ export default function InterestPickerFlow(arm) {
           }
         }
     };
-    const tmp12 = onComplete(tmp2[8]);
-    tmp13 = first1(tmp12, obj2);
+    const tmp15 = onComplete(tmp2[8]);
+    tmp16 = first1(tmp15, obj2);
   } else {
     const obj3 = {
       catalog,
+      onRowSeen: callback,
       title: intl.string(onComplete(tmp2[11])["5MUKTF"]),
       subtitle: intl2.string(onComplete(tmp2[11])["z/57xV"]),
       minSelection: 1,
@@ -99,7 +111,7 @@ export default function InterestPickerFlow(arm) {
           return track(WATERWHEELS_INTEREST_PICKER_SEARCH, obj);
         },
       onContinue(pick_ids) {
-          const obj = { pick_count: pick_ids.length, pick_ids, duration_ms: Math.max(0, Date.now() - ref2.current) };
+          const obj = { max_row_seen: ref2.current, pick_count: pick_ids.length, pick_ids, duration_ms: Math.max(0, Date.now() - ref4.current) };
           const track = AnalyticsUtilsDefault.track;
           const WATERWHEELS_INTEREST_PICKER_CONTINUE = AnalyticEvents.WATERWHEELS_INTEREST_PICKER_CONTINUE;
           AnalyticsUtilsDefault;
@@ -109,26 +121,23 @@ export default function InterestPickerFlow(arm) {
           first1.setPicks(pick_ids);
           closure_5("guilds");
         },
-      onSkip(pick_ids) {
-          const obj = { pick_count: pick_ids.length, pick_ids, duration_ms: Math.max(0, Date.now() - ref2.current) };
+      onSkip() {
+          const items = [];
+          const obj = { max_row_seen: ref2.current, pick_count: items.length, pick_ids: items, duration_ms: Math.max(0, Date.now() - ref4.current) };
           const track = AnalyticsUtilsDefault.track;
           const WATERWHEELS_INTEREST_PICKER_SKIP = AnalyticEvents.WATERWHEELS_INTEREST_PICKER_SKIP;
           AnalyticsUtilsDefault;
           const merged = Object.assign(memo);
           track(WATERWHEELS_INTEREST_PICKER_SKIP, obj);
-          setPicks(pick_ids);
-          if (0 === pick_ids.length) {
-            const popular = first1.loadPopular();
-          } else {
-            first1.setPicks(pick_ids);
-          }
+          setPicks([]);
+          const popular = first1.loadPopular();
           closure_5("guilds");
         }
     };
-    const tmp16 = onComplete(tmp2[9]);
+    const tmp19 = onComplete(tmp2[9]);
     intl = tmp(tmp2[10]).intl;
     intl2 = tmp(tmp2[10]).intl;
-    tmp13 = first1(tmp16, obj3);
+    tmp16 = first1(tmp19, obj3);
   }
-  return tmp13;
+  return tmp16;
 };

@@ -1,10 +1,10 @@
-// Module ID: 17488
-// Function ID: 17489
-// Name: LayoutUtils
+// Module ID: 17537
+// Function ID: 17538
+// Name: components/LayoutUtils
 // Dependencies: [19, 21, 2]
 // Exports: SeparatedList
 
-// Module 17488 (LayoutUtils)
+// Module 17537 (components/LayoutUtils)
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;

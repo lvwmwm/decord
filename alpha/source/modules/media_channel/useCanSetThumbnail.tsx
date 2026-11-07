@@ -1,11 +1,11 @@
-// Module ID: 14722
-// Function ID: 14723
+// Module ID: 14755
+// Function ID: 14756
 // Name: useCanSetThumbnail
-// Dependencies: [5019, 563, 2]
+// Dependencies: [4989, 563, 2]
 // Exports: default
 
-// Module 14722 (useCanSetThumbnail)
-import ChannelStore from "ChannelStore" /* 5019 */;
+// Module 14755 (useCanSetThumbnail)
+import ChannelStore from "ChannelStore" /* 4989 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

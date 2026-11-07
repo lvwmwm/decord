@@ -1,26 +1,26 @@
-// Module ID: 17204
-// Function ID: 17205
+// Module ID: 17252
+// Function ID: 17253
 // Name: BountyVideo
-// Dependencies: [32, 19, 17, 17184, 21, 1357, 9801, 575, 1652, 5745, 671, 5170, 17205, 17206, 5754, 5400, 5403, 17194, 17207, 17219, 5872, 1113, 17220, 17222, 17224, 14704, 2]
+// Dependencies: [32, 19, 17, 17232, 21, 1357, 9785, 575, 1652, 5715, 671, 5140, 17253, 17254, 5724, 5370, 5373, 17242, 17255, 17267, 5842, 1113, 17268, 17270, 17272, 14737, 2]
 // Exports: BountyVideo
 
-// Module 17204 (BountyVideo)
+// Module 17252 (BountyVideo)
 import nativeDefault from "native" /* 575 */;
-import timing_timing from "timing/timing" /* 5400 */;
-import timingPresets from "timingPresets" /* 5403 */;
-import LinearGradientDefault from "LinearGradient" /* 5745 */;
-import AssetUtils from "AssetUtils" /* 9801 */;
-import BountiesModalProgress from "BountiesModalProgress" /* 17205 */;
-import pickBountyVideoRendition from "pickBountyVideoRendition" /* 17206 */;
+import timing_timing from "timing/timing" /* 5370 */;
+import timingPresets from "timingPresets" /* 5373 */;
+import LinearGradientDefault from "LinearGradient" /* 5715 */;
+import AssetUtils from "AssetUtils" /* 9785 */;
+import BountiesModalProgress from "BountiesModalProgress" /* 17253 */;
+import pickBountyVideoRendition from "pickBountyVideoRendition" /* 17254 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import BountiesModalConstants from "BountiesModalConstants" /* 17184 */;
+import BountiesModalConstants from "BountiesModalConstants" /* 17232 */;
 import Fragment from "Fragment" /* 21 */;
 import PlatformUtils from "utils/PlatformUtils" /* 1357 */;
 import module_1652 from "module_1652" /* 1652 */;
 import module_671_mod from "module_671" /* 671 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 let borderRadius, set;

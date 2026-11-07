@@ -1,17 +1,17 @@
-// Module ID: 18135
-// Function ID: 18136
+// Module ID: 18182
+// Function ID: 18183
 // Name: FeedProductList
-// Dependencies: [19, 17, 21, 5170, 9558, 18136, 9683, 18137, 2]
+// Dependencies: [19, 17, 21, 5140, 9540, 18183, 9665, 18184, 2]
 // Exports: default
 
-// Module 18135 (FeedProductList)
+// Module 18182 (FeedProductList)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import CollectiblesShopCardV2 from "CollectiblesShopCardV2" /* 9558 */;
-import SkeletonCardDefault from "SkeletonCard" /* 9683 */;
-import CollectiblesShopCardsGridDefault from "CollectiblesShopCardsGrid" /* 18137 */;
+import CollectiblesShopCardV2 from "CollectiblesShopCardV2" /* 9540 */;
+import SkeletonCardDefault from "SkeletonCard" /* 9665 */;
+import CollectiblesShopCardsGridDefault from "CollectiblesShopCardsGrid" /* 18184 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

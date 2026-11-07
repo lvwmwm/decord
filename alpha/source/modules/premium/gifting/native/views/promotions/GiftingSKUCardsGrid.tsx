@@ -1,30 +1,30 @@
-// Module ID: 14662
-// Function ID: 14663
+// Module ID: 14695
+// Function ID: 14696
 // Name: GiftingSKUCardsGrid
-// Dependencies: [19, 17, 7824, 2109, 7825, 7826, 1072, 9596, 21, 575, 5170, 8841, 9622, 9608, 5872, 9621, 9599, 9620, 5754, 5167, 5745, 9383, 5230, 11545, 7068, 5781, 1113, 1493, 12, 2]
+// Dependencies: [19, 17, 7801, 2109, 7802, 7803, 1072, 9578, 21, 575, 5140, 8820, 9604, 9590, 5842, 9603, 9581, 9602, 5724, 5137, 5715, 9365, 5200, 11527, 7043, 5751, 1113, 1493, 12, 2]
 // Exports: default
 
-// Module 14662 (GiftingSKUCardsGrid)
+// Module 14695 (GiftingSKUCardsGrid)
 import _modDef12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1493 */;
 import NameplateRecord from "NameplateRecord" /* 2109 */;
-import ColorUtils from "ColorUtils" /* 5167 */;
-import react_native from "react-native" /* 5230 */;
-import LinearGradientDefault from "LinearGradient" /* 5745 */;
-import useToken from "useToken" /* 5754 */;
-import Text_Text from "Text/Text" /* 5781 */;
-import AvatarDecorationRecord from "AvatarDecorationRecord" /* 7824 */;
-import ProfileEffectRecord from "ProfileEffectRecord" /* 7825 */;
-import ProfileFrameRecord from "ProfileFrameRecord" /* 7826 */;
-import CheckmarkLargeBoldIcon from "CheckmarkLargeBoldIcon" /* 9383 */;
-import CollectiblesPreviewConstants from "CollectiblesPreviewConstants" /* 9596 */;
-import useFetchCollectiblesProduct from "useFetchCollectiblesProduct" /* 11545 */;
+import ColorUtils from "ColorUtils" /* 5137 */;
+import react_native from "react-native" /* 5200 */;
+import LinearGradientDefault from "LinearGradient" /* 5715 */;
+import useToken from "useToken" /* 5724 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import AvatarDecorationRecord from "AvatarDecorationRecord" /* 7801 */;
+import ProfileEffectRecord from "ProfileEffectRecord" /* 7802 */;
+import ProfileFrameRecord from "ProfileFrameRecord" /* 7803 */;
+import CheckmarkLargeBoldIcon from "CheckmarkLargeBoldIcon" /* 9365 */;
+import CollectiblesPreviewConstants from "CollectiblesPreviewConstants" /* 9578 */;
+import useFetchCollectiblesProduct from "useFetchCollectiblesProduct" /* 11527 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let StyleSheet;
@@ -48,7 +48,7 @@ function GiftingSKUCardItemPreview(arg0) {
   let tmp8;
   ({ item, isSelected } = arg0);
   const tmp = closure_18();
-  const obj = isSelected(8841);
+  const obj = isSelected(8820);
   const currentUser = obj.useCurrentUser();
   const items = [isSelected, currentUser];
   const memo = react.useMemo(() => {
@@ -60,25 +60,25 @@ function GiftingSKUCardItemPreview(arg0) {
   }, items);
   if (isNameplateRecord(item)) {
     const obj2 = { item, animate: isSelected };
-    tmp8 = closure_10(currentUser(9622), obj2);
+    tmp8 = closure_10(currentUser(9604), obj2);
   } else if (isAvatarDecorationRecord(item)) {
     const obj3 = { item, size, animate: isSelected, avatarSource: memo };
-    tmp8 = closure_10(currentUser(9608), obj3);
+    tmp8 = closure_10(currentUser(9590), obj3);
   } else if (isProfileEffectRecord(item)) {
     const obj4 = { style: tmp.profileEffect, children: items1 };
     const obj5 = { source: obj6, style: tmp.sampleProfile, resizeMode: "cover" };
-    obj6 = { uri: currentUser(9621) };
-    const tmp19 = currentUser(5872);
+    obj6 = { uri: currentUser(9603) };
+    const tmp19 = currentUser(5842);
     items1 = [closure_10(tmp19, obj5), ];
     const obj7 = { skuId: item.skuId, useThumbnail: !isSelected };
-    items1[1] = closure_10(currentUser(9599), obj7);
+    items1[1] = closure_10(currentUser(9581), obj7);
     tmp8 = closure_11(closure_4, obj4);
   } else {
     tmp8 = null;
     if (isProfileFrameRecord(item)) {
       const obj8 = { style: tmp.profileFrame, children: closure_10(tmp12, obj9) };
       obj9 = { profileFrame: item, previewWidth, previewHeight, profileBackgroundColor: currentUser(575).colors.BACKGROUND_BASE_LOW };
-      tmp12 = currentUser(9620);
+      tmp12 = currentUser(9602);
       tmp8 = closure_10(closure_4, obj8);
     }
   }
@@ -190,7 +190,7 @@ let closure_22 = react.memo(function GiftingSKUCard(rewardSkuId) {
     const first = product.items[0];
     const items = [tmp.card, ];
     let selected = isSelected;
-    const PressableOpacity = tmp2(7068).PressableOpacity;
+    const PressableOpacity = tmp2(7043).PressableOpacity;
     if (isSelected) {
       selected = tmp.selected;
     }
@@ -215,7 +215,7 @@ let closure_22 = react.memo(function GiftingSKUCard(rewardSkuId) {
     const obj5 = { style: tmp.textContainer, children: items2 };
     const obj6 = { variant: "heading-xs/semibold", color: "mobile-text-heading-primary", lineClamp: 1, accessibilityRole: "header", children: product.name };
     items2 = [authStore(Text_Text.Text, obj6), ];
-    const Text = tmp2(5781).Text;
+    const Text = tmp2(5751).Text;
     const intl = tmp2(1113).intl;
     const string = intl.string;
     const t = tmp2(1113).t;

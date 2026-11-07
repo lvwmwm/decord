@@ -1,10 +1,10 @@
-// Module ID: 18528
-// Function ID: 18529
+// Module ID: 18575
+// Function ID: 18576
 // Name: VoiceCategoryActionCreators
 // Dependencies: [572, 2]
 // Exports: voiceCategoryCollapse, voiceCategoryExpand
 
-// Module 18528 (VoiceCategoryActionCreators)
+// Module 18575 (VoiceCategoryActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 

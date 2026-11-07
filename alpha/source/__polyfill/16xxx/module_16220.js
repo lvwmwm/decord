@@ -1,0 +1,12 @@
+// Module ID: 16220
+// Function ID: 16221
+// Dependencies: [16219]
+
+// Module 16220
+import _mod16219 from "module_16219" /* 16219 */;
+
+
+export default (arr, arg1) => {
+  let closure_0 = arg1;
+  return arr.sort((arg0, arg1) => _mod16219(arg0, arg1, closure_0));
+};

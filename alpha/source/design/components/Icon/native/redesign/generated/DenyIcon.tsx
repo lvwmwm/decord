@@ -1,14 +1,14 @@
-// Module ID: 10021
-// Function ID: 10022
+// Module ID: 10005
+// Function ID: 10006
 // Name: DenyIcon
-// Dependencies: [19, 21, 575, 5871, 8863, 2]
+// Dependencies: [19, 21, 575, 5841, 8842, 2]
 // Exports: DenyIcon
 
-// Module 10021 (DenyIcon)
+// Module 10005 (DenyIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5871 */;
-import AssetRegistry from "AssetRegistry" /* 8863 */;
+import BaseIconImage2 from "BaseIconImage" /* 5841 */;
+import AssetRegistry from "AssetRegistry" /* 8842 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

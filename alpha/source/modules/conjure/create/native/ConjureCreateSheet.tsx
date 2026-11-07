@@ -1,26 +1,26 @@
-// Module ID: 13180
-// Function ID: 13181
+// Module ID: 13203
+// Function ID: 13204
 // Name: ConjureCreateSheet
-// Dependencies: [5, 32, 19, 17, 21, 5170, 575, 11116, 13181, 12789, 13170, 13182, 13169, 5404, 11016, 12773, 12396, 1113, 4024, 11012, 13183, 7447, 12340, 13185, 13186, 7449, 7405, 7339, 7151, 7063, 5781, 12341, 13194, 5788, 2]
+// Dependencies: [5, 32, 19, 17, 21, 5140, 575, 11102, 13204, 12289, 13193, 13205, 13192, 5374, 11000, 12786, 12394, 1113, 4026, 10996, 13206, 7424, 12338, 13208, 13209, 7426, 7382, 7316, 7126, 7038, 5751, 12339, 13217, 5758, 2]
 // Exports: default
 
-// Module 13180 (ConjureCreateSheet)
+// Module 13203 (ConjureCreateSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5404 */;
-import ConjureEffortPicker from "ConjureEffortPicker" /* 12340 */;
-import ConjureLandingModelChoices from "ConjureLandingModelChoices" /* 13170 */;
-import ConjureTemplateWizardSheet from "ConjureTemplateWizardSheet" /* 13186 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5374 */;
+import ConjureEffortPicker from "ConjureEffortPicker" /* 12338 */;
+import ConjureLandingModelChoices from "ConjureLandingModelChoices" /* 13193 */;
+import ConjureTemplateWizardSheet from "ConjureTemplateWizardSheet" /* 13209 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
-import react from "react" /* 19 */;
+import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 const ActionSheetActionCreatorsDefault = ActionSheetActionCreators;
 const ConjureTemplateWizardSheetDefault = ConjureTemplateWizardSheet;
-let c3, c4, c8, modelSettings;
+let c2, c3, c8, modelSettings;
 
 let metroImportAll;
 let metroImportDefault;
@@ -29,6 +29,7 @@ let obj3;
 let obj4;
 let obj5;
 let _slicedToArray = _slicedToArray_mod;
+let react = react_mod;
 const View = react_native.View;
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
 const ConjureCreateSheet_str = "ConjureCreateSheet";
@@ -48,8 +49,9 @@ export default function ConjureCreateSheet(guildId) {
   let TableRow;
   let TableRow2;
   let Text;
-  let c10;
-  let c6;
+  let c4;
+  let c5;
+  let c9;
   let choices;
   let first;
   let intl10;
@@ -79,7 +81,8 @@ export default function ConjureCreateSheet(guildId) {
   let obj6;
   let onChange;
   let str;
-  let tmp15;
+  let tmp14;
+  let tmp23;
   let tmp4;
   let tmp5Result5;
   let tmp5Result6;
@@ -87,51 +90,41 @@ export default function ConjureCreateSheet(guildId) {
   let initialInstallScope = guildId.initialInstallScope;
   let onCreated = guildId.onCreated;
   _slicedToArray = undefined;
-  let str2;
-  c6 = undefined;
+  react = undefined;
   CONJURE_DEFAULT_TIER_SETTINGS = undefined;
   let disabled;
-  let closure_9;
-  c10 = undefined;
+  let closure_8;
+  c9 = undefined;
   let callback;
-  let closure_12;
+  let closure_11;
   let callback3;
-  let closure_14;
-  let c15;
+  let closure_13;
+  let c14;
   let callback2;
-  let closure_17;
-  let tmp = c10();
-  let obj = str2;
+  let closure_16;
+  let tmp = callback();
+  let obj = react;
   const tmp2 = _slicedToArray;
-  [str, tmp4] = str2.useState("");
+  [str, tmp4] = react.useState("");
   const tmp6 = onCreated;
   let obj2 = guildId(onCreated[7]);
   const conjureLinkPrefetch = obj2.useConjureLinkPrefetch(str);
-  let tmp8 = guildId(onCreated[8]);
-  const isConjureEligibleGuild = tmp8.isConjureEligibleGuild;
+  const isConjureEligibleGuild = guildId(onCreated[8]).isConjureEligibleGuild;
+  const tmp8 = guildId(onCreated[8]);
   let obj3 = guildId(onCreated[9]);
   let result = isConjureEligibleGuild(obj3.useConjureEligibleGuilds("ConjureCreateSheet"), guildId);
   _slicedToArray = result;
-  let tmp10 = initialInstallScope;
-  if (initialInstallScope == null) {
-    str2 = "user";
-    if (result) {
-      str2 = "guild";
-    }
-    tmp10 = str2;
-  }
-  str2 = tmp10;
-  [CONJURE_DEFAULT_TIER_SETTINGS, c6] = tmp2(obj.useState(null), 2);
-  tmp2(obj.useState(null), 2);
+  let tmp10 = _slicedToArray(react.useState(null), 2);
+  [CONJURE_DEFAULT_TIER_SETTINGS, c5] = tmp10;
   if (CONJURE_DEFAULT_TIER_SETTINGS == null) {
     CONJURE_DEFAULT_TIER_SETTINGS = tmp5(tmp6[10]).CONJURE_DEFAULT_TIER_SETTINGS;
   }
-  const tmp2Result3 = tmp2(obj.useState(false), 2);
-  disabled = tmp2Result3[0];
-  closure_9 = tmp2Result3[1];
-  [tmp15, c10] = tmp2(obj.useState(null), 2);
+  const tmp2Result = tmp2(obj.useState(false), 2);
+  disabled = tmp2Result[0];
+  closure_8 = tmp2Result[1];
+  [tmp14, c9] = tmp2(obj.useState(null), 2);
   tmp2(obj.useState(null), 2);
-  const tmp17 = initialInstallScope(tmp6[11])();
+  const tmp16 = initialInstallScope(tmp6[11])();
   const useCallback = obj.useCallback;
   str((guildId, arg1) => {
     let closure_1 = arg1;
@@ -139,8 +132,8 @@ export default function ConjureCreateSheet(guildId) {
     let c7 = 0;
     let c5 = 0;
     return (function*(arg0, value) {
-      if (modelSettings === 2) {
-        modelSettings = 3;
+      if (c7 === 2) {
+        c7 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
       } else if (tmp3 === 3) {
         if (arg0 === 1) {
@@ -148,50 +141,50 @@ export default function ConjureCreateSheet(guildId) {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
-          modelSettings = 2;
-          if (0 === c6) {
+          c7 = 2;
+          if (0 === modelSettings) {
             if (arg0 === 1) {
-              modelSettings = 3;
+              c7 = 3;
               throw value;
             } else if (arg0 === 2) {
-              modelSettings = 3;
+              c7 = 3;
               return { value, done: true };
             } else {
               closure_3 = tmp;
               closure_2 = tmp4;
               closure_1 = undefined;
-              closure_1_9(true);
-              closure_1_10(null);
+              closure_1_8(true);
+              closure_1_9(null);
               c5 = 2;
               const obj5 = { guildId, modelSettings };
               const tmp53 = initialInstallScope(onCreated[12]);
               const merged = Object.assign(closure_1);
-              c6 = 3;
-              modelSettings = 1;
+              modelSettings = 3;
+              c7 = 1;
               const obj6 = { value: tmp53(obj5), done: false };
               return obj6;
             }
-          } else if (1 === c6) {
+          } else if (1 === modelSettings) {
             c5 = 0;
-            closure_1_9(false);
+            closure_1_8(false);
             throw closure_4;
           } else {
-            if (2 === c6) {
+            if (2 === modelSettings) {
               c5 = 1;
               closure_2 = closure_4;
               const obj3 = guildId(onCreated[14]);
-              closure_1_10(obj3.getConjureCreateErrorMessage(closure_2));
+              closure_1_9(obj3.getConjureCreateErrorMessage(closure_2));
             } else if (arg0 === 1) {
-              modelSettings = 3;
+              c7 = 3;
               throw value;
             } else if (arg0 === 2) {
               c5 = 0;
-              closure_1_9(false);
-              modelSettings = 3;
+              closure_1_8(false);
+              c7 = 3;
               return { value, done: true };
             } else {
               closure_1 = value;
@@ -202,19 +195,19 @@ export default function ConjureCreateSheet(guildId) {
               c5 = 1;
             }
             c5 = 0;
-            closure_1_9(false);
-            modelSettings = 3;
-            return { value: "HermesInternal", done: null };
+            closure_1_8(false);
+            c7 = 3;
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp38) {
           closure_4 = tmp38;
           if (0 === c5) {
-            modelSettings = 3;
+            c7 = 3;
             throw tmp38;
           } else if (1 === tmp40) {
-            c6 = 1;
+            modelSettings = 1;
           } else {
-            c6 = 2;
+            modelSettings = 2;
           }
         }
       }
@@ -227,8 +220,8 @@ export default function ConjureCreateSheet(guildId) {
   const useCallback2 = obj.useCallback;
   str(function*(arg0, value) {
     closure_0 = arg0;
-    if (c3 === 2) {
-      c3 = 3;
+    if (c2 === 2) {
+      c2 = 3;
       throw new TypeError("Generator functions may not be called on executing generators");
     } else if (tmp2 === 3) {
       if (arg0 === 1) {
@@ -237,17 +230,17 @@ export default function ConjureCreateSheet(guildId) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
-        c3 = 2;
-        if (0 === c4) {
+        c2 = 2;
+        if (0 === c3) {
           if (arg0 === 1) {
-            c3 = 3;
+            c2 = 3;
             throw value;
           } else if (arg0 === 2) {
-            c3 = 3;
+            c2 = 3;
             const obj3 = { value, done: true };
             return obj3;
           } else {
@@ -258,16 +251,11 @@ export default function ConjureCreateSheet(guildId) {
             const trimmed = closure_1.trim();
             const tmp7 = "" === trimmed || first;
             if (!tmp7) {
-              let installScope = closure_1;
-              const tmp8 = callback;
-              if (closure_1 == null) {
-                installScope = null;
-              }
-              const obj4 = { installScope, prompt: trimmed };
-              c4 = 1;
+              const obj4 = { installScope: "user", prompt: trimmed };
               c3 = 1;
+              c2 = 1;
               const obj5 = {
-                value: tmp8((value) => {
+                value: callback((value) => {
                             const obj = trimmed(c2[15]);
                             return obj.startConjurePrompt(value, trimmed, [], closure_2_0);
                           }, obj4),
@@ -277,23 +265,23 @@ export default function ConjureCreateSheet(guildId) {
             }
           }
         } else if (arg0 === 1) {
-          c3 = 3;
+          c2 = 3;
           throw value;
         } else if (arg0 === 2) {
-          c3 = 3;
+          c2 = 3;
           let obj = { value, done: true };
           return obj;
         }
-        c3 = 3;
-        return { value: "HermesInternal", done: null };
-      } catch (tmp11) {
-        c3 = 3;
-        throw tmp11;
+        c2 = 3;
+        return { value: "HermesInternal", done: "HermesInternal" };
+      } catch (tmp9) {
+        c2 = 3;
+        throw tmp9;
       }
     }
   });
-  const items1 = [callback, guildId, initialInstallScope, str, disabled];
-  closure_12 = useCallback2(function() {
+  const items1 = [callback, guildId, str, disabled];
+  closure_11 = useCallback2(function() {
     return closure_0(...arguments);
   }, items1);
   const useCallback3 = obj.useCallback;
@@ -303,8 +291,8 @@ export default function ConjureCreateSheet(guildId) {
     let c5 = 0;
     return (function*(arg0, value) {
       let deleteProjectResult;
-      if (modelSettings === 2) {
-        modelSettings = 3;
+      if (c7 === 2) {
+        c7 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
       } else if (tmp3 === 3) {
         if (arg0 === 1) {
@@ -312,42 +300,42 @@ export default function ConjureCreateSheet(guildId) {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
-          modelSettings = 2;
-          if (0 === c6) {
+          c7 = 2;
+          if (0 === modelSettings) {
             if (arg0 === 1) {
-              modelSettings = 3;
+              c7 = 3;
               throw value;
             } else if (arg0 === 2) {
-              modelSettings = 3;
+              c7 = 3;
               return { value, done: true };
             } else {
               closure_3 = tmp;
               closure_2 = tmp4;
-              closure_1_9(true);
-              closure_1_10(null);
+              closure_1_8(true);
+              closure_1_9(null);
               installScope = null;
               c5 = 2;
-              c6 = 3;
               const obj5 = { guildId, installScope, modelSettings };
-              modelSettings = 1;
+              modelSettings = 3;
+              c7 = 1;
               const obj8 = { value: initialInstallScope(onCreated[12])(obj5), done: false };
               return obj8;
             }
-          } else if (1 === c6) {
+          } else if (1 === modelSettings) {
             c5 = 0;
-            closure_1_9(false);
+            closure_1_8(false);
             throw closure_4;
           } else {
-            if (2 === c6) {
+            if (2 === modelSettings) {
               c5 = 1;
               closure_2 = closure_4;
               if (null != installScope) {
-                c6 = 5;
-                modelSettings = 1;
+                modelSettings = 5;
+                c7 = 1;
                 const obj7 = guildId(onCreated[19]);
                 const obj9 = {
                   value: deleteProjectResult.catch(() => {
@@ -359,35 +347,35 @@ export default function ConjureCreateSheet(guildId) {
                 return obj9;
               } else {
                 const obj6 = guildId(onCreated[14]);
-                closure_1_10(obj6.getConjureCreateErrorMessage(closure_2));
+                closure_1_9(obj6.getConjureCreateErrorMessage(closure_2));
               }
-            } else if (3 === c6) {
+            } else if (3 === modelSettings) {
               if (arg0 === 1) {
-                modelSettings = 3;
+                c7 = 3;
                 throw value;
               } else if (arg0 === 2) {
                 c5 = 0;
-                closure_1_9(false);
-                modelSettings = 3;
+                closure_1_8(false);
+                c7 = 3;
                 return { value, done: true };
               } else {
                 installScope = value;
                 const sendConjureArchiveImport = guildId(onCreated[16]).sendConjureArchiveImport;
                 guildId(onCreated[16]);
                 const intl2 = guildId(onCreated[17]).intl;
-                c6 = 4;
-                modelSettings = 1;
+                modelSettings = 4;
+                c7 = 1;
                 const obj11 = { value: sendConjureArchiveImport(installScope, guildId, intl2.string(initialInstallScope(onCreated[18])["LUc7/5"])), done: false };
                 return obj11;
               }
-            } else if (4 === c6) {
+            } else if (4 === modelSettings) {
               if (arg0 === 1) {
-                modelSettings = 3;
+                c7 = 3;
                 throw value;
               } else if (arg0 === 2) {
                 c5 = 0;
-                closure_1_9(false);
-                modelSettings = 3;
+                closure_1_8(false);
+                c7 = 3;
                 return { value, done: true };
               } else {
                 const obj2 = initialInstallScope(onCreated[13]);
@@ -396,31 +384,31 @@ export default function ConjureCreateSheet(guildId) {
                 c5 = 1;
               }
             } else if (arg0 === 1) {
-              modelSettings = 3;
+              c7 = 3;
               throw value;
             } else if (arg0 === 2) {
               c5 = 0;
-              closure_1_9(false);
-              modelSettings = 3;
+              closure_1_8(false);
+              c7 = 3;
               return { value, done: true };
             } else {
               const intl = guildId(onCreated[17]).intl;
-              closure_1_10(intl.string(initialInstallScope(onCreated[18])["Q+l4Hv"]));
+              closure_1_9(intl.string(initialInstallScope(onCreated[18])["Q+l4Hv"]));
             }
             c5 = 0;
-            closure_1_9(false);
-            modelSettings = 3;
-            return { value: "HermesInternal", done: null };
+            closure_1_8(false);
+            c7 = 3;
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp55) {
           closure_4 = tmp55;
           if (0 === c5) {
-            modelSettings = 3;
+            c7 = 3;
             throw tmp55;
           } else if (1 === tmp57) {
-            c6 = 1;
+            modelSettings = 1;
           } else {
-            c6 = 2;
+            modelSettings = 2;
           }
         }
       }
@@ -431,7 +419,7 @@ export default function ConjureCreateSheet(guildId) {
     return closure_0(...arguments);
   }, items2);
   const items3 = [result, callback3, initialInstallScope, disabled];
-  closure_14 = obj.useCallback(str(function*(arg0, value) {
+  closure_13 = obj.useCallback(str(function*(arg0, value) {
     let _null;
     let closure_1;
     let closure_2;
@@ -450,7 +438,7 @@ export default function ConjureCreateSheet(guildId) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c6;
@@ -486,7 +474,7 @@ export default function ConjureCreateSheet(guildId) {
         } else if (1 === c7) {
           c6 = 0;
           const intl2 = _null(onCreated[17]).intl;
-          closure_133_10(intl2.string(initialInstallScope(onCreated[18])["Q+l4Hv"]));
+          closure_133_9(intl2.string(initialInstallScope(onCreated[18])["Q+l4Hv"]));
           c8 = 3;
           const obj5 = { value: undefined, done: true };
           return obj5;
@@ -516,7 +504,7 @@ export default function ConjureCreateSheet(guildId) {
                 obj6 = _null(onCreated[20]);
                 return obj8;
               } else {
-                closure_133_10(initialInstallScope);
+                closure_133_9(initialInstallScope);
               }
             }
           }
@@ -577,7 +565,7 @@ export default function ConjureCreateSheet(guildId) {
             } else {
               c7 = 4;
               c8 = 1;
-              const obj13 = { value: closure_133_13(onCreated, closure_3), done: false };
+              const obj13 = { value: closure_133_12(onCreated, closure_3), done: false };
               return obj13;
             }
           }
@@ -590,7 +578,7 @@ export default function ConjureCreateSheet(guildId) {
           return obj;
         }
         c8 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp53) {
         if (0 === c6) {
           c8 = 3;
@@ -603,7 +591,7 @@ export default function ConjureCreateSheet(guildId) {
   }), items3);
   const tmp5Result = guildId(tmp6[10]);
   const landingModelChoicesResult = tmp5Result.landingModelChoices();
-  c15 = landingModelChoicesResult;
+  c14 = landingModelChoicesResult;
   const items4 = [landingModelChoicesResult, CONJURE_DEFAULT_TIER_SETTINGS];
   const callback1 = obj.useCallback(() => {
     let ConjureEffortPickerSheet;
@@ -623,14 +611,14 @@ export default function ConjureCreateSheet(guildId) {
     obj.hideActionSheet(ConjureCreateSheet_str);
     onCreated(arg0, arg1);
   }, items5);
-  const items6 = [callback, guildId, callback2, CONJURE_DEFAULT_TIER_SETTINGS, tmp10, disabled];
-  closure_17 = obj.useCallback((wizard) => {
+  const items6 = [callback, guildId, callback2, CONJURE_DEFAULT_TIER_SETTINGS, disabled];
+  closure_16 = obj.useCallback((wizard) => {
     let obj3;
     let closure_0 = wizard;
     if (null == wizard.wizard) {
       const tmp = first;
       if (!tmp) {
-        let obj = { installScope: str2, templateId: wizard.id };
+        let obj = { installScope: "user", templateId: wizard.id };
         const promise = callback((arg0) => {
           const obj = guildId(onCreated[23]);
           return obj.startConjureTemplateProject(arg0, closure_0);
@@ -653,81 +641,81 @@ export default function ConjureCreateSheet(guildId) {
   items7[1] = intl2.string(initialInstallScope(tmp6[18]).WAvmdq);
   const intl3 = tmp5(tmp6[17]).intl;
   items7[2] = intl3.string(initialInstallScope(tmp6[18]).SKsrzl);
-  let tmp23 = CONJURE_DEFAULT_TIER_SETTINGS;
-  let obj4 = { startExpanded: true, keyboardShouldPersistTaps: "handled", header: CONJURE_DEFAULT_TIER_SETTINGS(BottomSheetTitleHeader, obj5), children: tmp24(tmp25, obj6) };
+  let obj4 = { startExpanded: true, keyboardShouldPersistTaps: "handled", header: disabled(BottomSheetTitleHeader, obj5), children: tmp23(tmp24, obj6) };
   const ActionSheet = tmp5(tmp6[25]).ActionSheet;
   obj5 = { title: intl4.string(initialInstallScope(tmp6[18])["+5XyCR"]) };
   BottomSheetTitleHeader = tmp5(tmp6[26]).BottomSheetTitleHeader;
   intl4 = tmp5(tmp6[17]).intl;
+  tmp23 = closure_8;
   obj6 = { style: tmp.content, children: items9 };
   let obj7 = { style: tmp.form, children: items8 };
   let obj8 = { placeholder: intl5.string(initialInstallScope(tmp6[18]).ab1sMf), autoComplete: "off", value: str, onChange: tmp4, disabled };
   const TextArea = tmp5(tmp6[27]).TextArea;
   intl5 = tmp5(tmp6[17]).intl;
-  items8 = [CONJURE_DEFAULT_TIER_SETTINGS(TextArea, obj8), , , , , ];
-  let obj9 = { hasIcons: false, children: CONJURE_DEFAULT_TIER_SETTINGS(TableRow, obj10) };
+  items8 = [disabled(TextArea, obj8), , , , , ];
+  let obj9 = { hasIcons: false, children: disabled(TableRow, obj10) };
   const TableRowGroup = tmp5(tmp6[28]).TableRowGroup;
-  obj10 = { label: intl6.string(initialInstallScope(tmp6[18]).aBPQxX), trailing: CONJURE_DEFAULT_TIER_SETTINGS(Text, obj11), arrow: true, disabled, onPress: callback1 };
+  obj10 = { label: intl6.string(initialInstallScope(tmp6[18]).aBPQxX), trailing: disabled(Text, obj11), arrow: true, disabled, onPress: callback1 };
   TableRow = tmp5(tmp6[29]).TableRow;
   intl6 = tmp5(tmp6[17]).intl;
   obj11 = { variant: "body-md/normal", color: "text-muted", children: tmp5Result5.conjureTierDescription(CONJURE_DEFAULT_TIER_SETTINGS.tier) };
   Text = tmp5(tmp6[30]).Text;
   tmp5Result5 = guildId(tmp6[31]);
-  items8[1] = CONJURE_DEFAULT_TIER_SETTINGS(TableRowGroup, obj9);
-  let tmp23Result = null;
-  if (null != tmp17) {
-    let str3 = "text-muted";
+  items8[1] = disabled(TableRowGroup, obj9);
+  let tmp22Result = null;
+  if (null != tmp16) {
+    let str2 = "text-muted";
     const Text2 = tmp5(tmp6[30]).Text;
-    if (0 === tmp17) {
-      str3 = "text-feedback-warning";
+    if (0 === tmp16) {
+      str2 = "text-feedback-warning";
     }
-    let obj12 = { variant: "body-sm/normal", color: str3, children: tmp5Result6.conjureAppSlotsLeftLabel(tmp17) };
+    let obj12 = { variant: "body-sm/normal", color: str2, children: tmp5Result6.conjureAppSlotsLeftLabel(tmp16) };
     tmp5Result6 = guildId(tmp6[32]);
-    tmp23Result = tmp23(Text2, obj12);
+    tmp22Result = tmp22(Text2, obj12);
   }
-  items8[2] = tmp23Result;
-  let tmp23Result2 = null;
-  if (null != tmp15) {
-    let obj13 = { variant: "body-xs/normal", color: "text-feedback-critical", children: tmp15 };
-    tmp23Result2 = tmp23(tmp5(tmp6[30]).Text, obj13);
+  items8[2] = tmp22Result;
+  let tmp22Result2 = null;
+  if (null != tmp14) {
+    let obj13 = { variant: "body-xs/normal", color: "text-feedback-critical", children: tmp14 };
+    tmp22Result2 = tmp22(tmp5(tmp6[30]).Text, obj13);
   }
-  items8[3] = tmp23Result2;
-  let obj14 = { variant: "body-xs/normal", color: "text-muted", children: intl7.string(tmp16(tmp6[18]).NvvCzX) };
+  items8[3] = tmp22Result2;
+  let obj14 = { variant: "body-xs/normal", color: "text-muted", children: intl7.string(tmp15(tmp6[18]).NvvCzX) };
   const Text3 = tmp5(tmp6[30]).Text;
   intl7 = tmp5(tmp6[17]).intl;
-  items8[4] = tmp23(Text3, obj14);
+  items8[4] = disabled(Text3, obj14);
   const obj15 = {
     variant: "primary",
     text: intl8.string(guildId(tmp6[17]).t.CumH4u),
     disabled: "" === undefined.trim(),
     loading: disabled,
     onPress() {
-      return closure_12();
+      return closure_11();
     }
   };
   const Button = tmp5(tmp6[33]).Button;
   intl8 = tmp5(tmp6[17]).intl;
-  items8[5] = tmp23(Button, obj15);
-  items9 = [tmp24(tmp25, obj7), , , ];
+  items8[5] = disabled(Button, obj15);
+  items9 = [tmp23(tmp24, obj7), , , ];
   const obj16 = { style: tmp.section, children: items11 };
   const obj17 = { style: tmp.sectionHeading, children: items10 };
   const obj18 = { variant: "body-md/medium", color: "text-default", children: intl9.string(initialInstallScope(tmp6[18]).I7nPgX) };
   const Text4 = tmp5(tmp6[30]).Text;
   intl9 = tmp5(tmp6[17]).intl;
-  items10 = [tmp23(Text4, obj18), ];
+  items10 = [tmp22(Text4, obj18), ];
   const obj19 = { variant: "body-sm/normal", color: "text-muted", children: intl10.string(initialInstallScope(tmp6[18]).FXB8wQ) };
   const Text5 = tmp5(tmp6[30]).Text;
   intl10 = tmp5(tmp6[17]).intl;
-  items10[1] = tmp23(Text5, obj19);
-  items11 = [tmp24(tmp25, obj17), ];
-  const obj20 = { hasIcons: false, children: tmp23(TableRow2, obj21) };
+  items10[1] = disabled(Text5, obj19);
+  items11 = [tmp23(tmp24, obj17), ];
+  const obj20 = { hasIcons: false, children: disabled(TableRow2, obj21) };
   const TableRowGroup2 = tmp5(tmp6[28]).TableRowGroup;
   obj21 = {
     label: intl11.string(initialInstallScope(tmp6[18])["C8/T2E"]),
     arrow: true,
     disabled,
     onPress() {
-      const promise = closure_14();
+      const promise = closure_13();
       promise.catch(() => {
 
       });
@@ -735,19 +723,19 @@ export default function ConjureCreateSheet(guildId) {
   };
   TableRow2 = tmp5(tmp6[29]).TableRow;
   intl11 = tmp5(tmp6[17]).intl;
-  items11[1] = tmp23(TableRowGroup2, obj20);
-  items9[1] = disabled(c6, obj16);
+  items11[1] = disabled(TableRowGroup2, obj20);
+  items9[1] = tmp23(CONJURE_DEFAULT_TIER_SETTINGS, obj16);
   const obj22 = { style: tmp.section, children: items13 };
   const obj23 = { style: tmp.sectionHeading, children: items12 };
   const obj24 = { variant: "body-md/medium", color: "text-default", children: intl12.string(initialInstallScope(tmp6[18]).zzYLlW) };
   const Text6 = tmp5(tmp6[30]).Text;
   intl12 = tmp5(tmp6[17]).intl;
-  items12 = [tmp23(Text6, obj24), ];
+  items12 = [tmp22(Text6, obj24), ];
   const obj25 = { variant: "body-sm/normal", color: "text-muted", children: intl13.string(initialInstallScope(tmp6[18])["N88+Ld"]) };
   const Text7 = tmp5(tmp6[30]).Text;
   intl13 = tmp5(tmp6[17]).intl;
-  items12[1] = tmp23(Text7, obj25);
-  items13 = [tmp24(tmp25, obj23), ];
+  items12[1] = disabled(Text7, obj25);
+  items13 = [tmp23(tmp24, obj23), ];
   const obj26 = {
     hasIcons: false,
     children: conjureTemplatesResult.map((name) => {
@@ -761,29 +749,29 @@ export default function ConjureCreateSheet(guildId) {
         disabled,
         accessibilityLabel: intl.formatToPlainString(initialInstallScope(onCreated[18]).jGyR6p, obj2),
         onPress() {
-          return closure_17(name);
+          return closure_16(name);
         }
       };
       const TableRow = guildId(onCreated[29]).TableRow;
       intl = guildId(onCreated[17]).intl;
       obj2 = { name: name.name };
-      return CONJURE_DEFAULT_TIER_SETTINGS(TableRow, obj, name.id);
+      return disabled(TableRow, obj, name.id);
     })
   };
   const TableRowGroup3 = tmp5(tmp6[28]).TableRowGroup;
-  items13[1] = tmp23(TableRowGroup3, obj26);
-  items9[2] = disabled(c6, obj22);
+  items13[1] = disabled(TableRowGroup3, obj26);
+  items9[2] = tmp23(CONJURE_DEFAULT_TIER_SETTINGS, obj22);
   const obj27 = { style: tmp.section, children: items15 };
   const obj28 = { style: tmp.sectionHeading, children: items14 };
   const obj29 = { variant: "body-md/medium", color: "text-default", children: intl14.string(initialInstallScope(tmp6[18])["2XcV3x"]) };
   const Text8 = tmp5(tmp6[30]).Text;
   intl14 = tmp5(tmp6[17]).intl;
-  items14 = [tmp23(Text8, obj29), ];
+  items14 = [tmp22(Text8, obj29), ];
   const obj30 = { variant: "body-sm/normal", color: "text-muted", children: intl15.string(initialInstallScope(tmp6[18]).JnJOAn) };
   const Text9 = tmp5(tmp6[30]).Text;
   intl15 = tmp5(tmp6[17]).intl;
-  items14[1] = tmp23(Text9, obj30);
-  items15 = [tmp24(tmp25, obj28), ];
+  items14[1] = disabled(Text9, obj30);
+  items15 = [tmp23(tmp24, obj28), ];
   const obj31 = {
     hasIcons: false,
     children: items7.map((label) => {
@@ -793,15 +781,15 @@ export default function ConjureCreateSheet(guildId) {
         arrow: true,
         disabled,
         onPress() {
-          return closure_12(label);
+          return closure_11(label);
         }
       };
-      return CONJURE_DEFAULT_TIER_SETTINGS(guildId(onCreated[29]).TableRow, obj, label);
+      return disabled(guildId(onCreated[29]).TableRow, obj, label);
     })
   };
   const TableRowGroup4 = tmp5(tmp6[28]).TableRowGroup;
-  items15[1] = tmp23(TableRowGroup4, obj31);
-  items9[3] = disabled(c6, obj27);
-  return tmp23(ActionSheet, obj4);
+  items15[1] = disabled(TableRowGroup4, obj31);
+  items9[3] = tmp23(CONJURE_DEFAULT_TIER_SETTINGS, obj27);
+  return disabled(ActionSheet, obj4);
 };
 export const CONJURE_CREATE_SHEET_KEY = "ConjureCreateSheet";

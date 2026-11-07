@@ -1,23 +1,23 @@
-// Module ID: 16757
-// Function ID: 16758
+// Module ID: 16805
+// Function ID: 16806
 // Name: EditProfileEffectSection
-// Dependencies: [19, 17, 7825, 9596, 21, 5170, 15306, 16756, 15307, 7435, 8891, 5872, 9621, 9599, 2]
+// Dependencies: [19, 17, 7802, 9578, 21, 5140, 15340, 16804, 15341, 7412, 8872, 5842, 9603, 9581, 2]
 
-// Module 16757 (EditProfileEffectSection)
+// Module 16805 (EditProfileEffectSection)
 import react_native from "react-native" /* 17 */;
-import FastImageDefault from "FastImage" /* 5872 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7435 */;
-import ProfileEffectRecord from "ProfileEffectRecord" /* 7825 */;
-import useProfileEffectDefault from "useProfileEffect" /* 8891 */;
-import CollectiblesPreviewConstants from "CollectiblesPreviewConstants" /* 9596 */;
-import ProfileEffectDefault from "ProfileEffect" /* 9599 */;
-import _modDef9621 from "module_9621" /* 9621 */;
-import useCollectibleListLayout from "useCollectibleListLayout" /* 15306 */;
-import CollectiblesEditUserProfileListItems from "CollectiblesEditUserProfileListItems" /* 15307 */;
-import useProfileEffectSections from "useProfileEffectSections" /* 16756 */;
+import FastImageDefault from "FastImage" /* 5842 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7412 */;
+import ProfileEffectRecord from "ProfileEffectRecord" /* 7802 */;
+import useProfileEffectDefault from "useProfileEffect" /* 8872 */;
+import CollectiblesPreviewConstants from "CollectiblesPreviewConstants" /* 9578 */;
+import ProfileEffectDefault from "ProfileEffect" /* 9581 */;
+import _modDef9603 from "module_9603" /* 9603 */;
+import useCollectibleListLayout from "useCollectibleListLayout" /* 15340 */;
+import CollectiblesEditUserProfileListItems from "CollectiblesEditUserProfileListItems" /* 15341 */;
+import useProfileEffectSections from "useProfileEffectSections" /* 16804 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 let item;
@@ -63,7 +63,7 @@ const memoResult = react.memo((size) => {
         return metroRequire(CollectiblesEditUserProfileListItems.EditCollectiblesListItemNone, obj2, "none");
       } else if (item === useProfileEffectSections.SHOP_ITEM) {
         const obj3 = { size, analyticsSource: AnalyticsLocationDefault.EDIT_PROFILE_EFFECT_SHEET };
-        const EditCollectiblesListItemShop = tmp(15307).EditCollectiblesListItemShop;
+        const EditCollectiblesListItemShop = tmp(15341).EditCollectiblesListItemShop;
         return metroRequire(EditCollectiblesListItemShop, obj3, "shop");
       } else if (isProfileEffectRecord(item)) {
         const obj4 = { item, isSelected: require === item.skuId, setSelectedProfileEffect, isTryItOut, size };
@@ -137,7 +137,7 @@ const memoResult1 = react.memo((item) => {
   obj2 = { style: items2, accessible: false, importantForAccessibility: "no", children: items3 };
   items2 = [tmp.profileEffect, { borderRadius: 6 }];
   const obj3 = { source: obj4, style: tmp.sampleProfile, resizeMode: "cover" };
-  obj4 = { uri: _modDef9621 };
+  obj4 = { uri: _modDef9603 };
   const tmp2Result = FastImageDefault;
   items3 = [metroRequire(tmp2Result, obj3), ];
   const obj5 = { skuId: item.skuId, bannerAdjustment: 0, useThumbnail: true, thumbnailUrlOverride: memo };

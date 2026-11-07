@@ -1,11 +1,11 @@
-// Module ID: 14764
-// Function ID: 14765
+// Module ID: 14797
+// Function ID: 14798
 // Name: openAppChannelReportModal
-// Dependencies: [5, 2162, 6961, 14765, 8443, 2]
+// Dependencies: [5, 2162, 6936, 14798, 8422, 2]
 // Exports: default
 
-// Module 14764 (openAppChannelReportModal)
-import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6961 */;
+// Module 14797 (openAppChannelReportModal)
+import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6936 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ApplicationStore from "ApplicationStore" /* 2162 */;
 import size from "module_2" /* 2 */;
@@ -26,7 +26,7 @@ let obj = function _getApplication() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c3;
@@ -106,7 +106,7 @@ obj = function _openAppChannelReportModal() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -151,7 +151,7 @@ obj = function _openAppChannelReportModal() {
               closure_133_1(closure_133_2[3])();
             }
             c7 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp25) {
           c7 = 3;

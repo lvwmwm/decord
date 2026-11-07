@@ -1,20 +1,20 @@
-// Module ID: 18214
-// Function ID: 18215
+// Module ID: 18261
+// Function ID: 18262
 // Name: ParentalControlsExplicitMediaFiltersNonFriendsDMsSetting
-// Dependencies: [7814, 8524, 16979, 8779, 16983, 1113, 16989, 1196, 11703, 2]
+// Dependencies: [7791, 8503, 17027, 8758, 17031, 1113, 17037, 1196, 11685, 2]
 // Exports: onObscuredContentNonFriendsDmOnPress, useObscuredContentNonFriendsDmSettingValue
 
-// Module 18214 (ParentalControlsExplicitMediaFiltersNonFriendsDMsSetting)
+// Module 18261 (ParentalControlsExplicitMediaFiltersNonFriendsDMsSetting)
 import intl3 from "intl" /* 1113 */;
-import SettingsConstants from "SettingsConstants" /* 8524 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 16979 */;
-import FamilyCenterControlledSettingsUtils from "FamilyCenterControlledSettingsUtils" /* 16983 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7814 */;
-import SettingBuilders from "SettingBuilders" /* 11703 */;
+import SettingsConstants from "SettingsConstants" /* 8503 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 17027 */;
+import FamilyCenterControlledSettingsUtils from "FamilyCenterControlledSettingsUtils" /* 17031 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7791 */;
+import SettingBuilders from "SettingBuilders" /* 11685 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const ExplicitMediaRedactionUtils = tmp(8779);
+const ExplicitMediaRedactionUtils = tmp(8758);
 function useObscuredContentNonFriendsDmSettingValue() {
   const obj = useParentalControlSettings;
   const parentalControlledExplicitContentSettings = obj.useParentalControlledExplicitContentSettings();
@@ -34,7 +34,7 @@ function onObscuredContentNonFriendsDmOnPress() {
   let items;
   const selectedTeenId = FamilyCenterStore.getSelectedTeenId();
   if (null != selectedTeenId) {
-    let obj = selectedTeenId(16983);
+    let obj = selectedTeenId(17031);
     const explicitContentNonFriendDm = obj.getExplicitContentSettingOrDefault(selectedTeenId).explicitContentNonFriendDm;
     const intl = selectedTeenId(1113).intl;
     const stringResult = intl.string(selectedTeenId(1113).t.GYpoAq);
@@ -49,8 +49,8 @@ function onObscuredContentNonFriendsDmOnPress() {
         },
       currentValue: explicitContentNonFriendDm
     };
-    const handleSensitiveMediaFilterPress = selectedTeenId(16989).handleSensitiveMediaFilterPress;
-    selectedTeenId(16989);
+    const handleSensitiveMediaFilterPress = selectedTeenId(17037).handleSensitiveMediaFilterPress;
+    selectedTeenId(17037);
     intl2 = selectedTeenId(1113).intl;
     items = [selectedTeenId(1196).ExplicitContentRedaction.SHOW];
     let result = handleSensitiveMediaFilterPress(obj2);

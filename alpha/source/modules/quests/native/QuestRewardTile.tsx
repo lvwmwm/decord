@@ -1,15 +1,15 @@
-// Module ID: 14894
-// Function ID: 14895
+// Module ID: 14927
+// Function ID: 14928
 // Name: QuestRewardTile
-// Dependencies: [19, 21, 9806, 9801, 14895, 2]
+// Dependencies: [19, 21, 9790, 9785, 14928, 2]
 // Exports: default
 
-// Module 14894 (QuestRewardTile)
+// Module 14927 (QuestRewardTile)
 import react2 from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import AssetUtils from "AssetUtils" /* 9801 */;
-import QuestRewardUtils from "QuestRewardUtils" /* 9806 */;
-import QuestDockRewardTileDefault from "QuestDockRewardTile" /* 14895 */;
+import AssetUtils from "AssetUtils" /* 9785 */;
+import QuestRewardUtils from "QuestRewardUtils" /* 9790 */;
+import QuestDockRewardTileDefault from "QuestDockRewardTile" /* 14928 */;
 import size from "module_2" /* 2 */;
 
 const useMemo = react2.useMemo;

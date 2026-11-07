@@ -1,9 +1,9 @@
-// Module ID: 15908
-// Function ID: 15909
+// Module ID: 15958
+// Function ID: 15959
 // Name: MarkupHeadingRule
 // Dependencies: [2067, 2]
 
-// Module 15908 (MarkupHeadingRule)
+// Module 15958 (MarkupHeadingRule)
 import _mod2067 from "module_2067" /* 2067 */;
 import size from "module_2" /* 2 */;
 

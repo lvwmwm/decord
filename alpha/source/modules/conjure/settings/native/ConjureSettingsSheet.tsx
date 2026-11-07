@@ -1,21 +1,21 @@
-// Module ID: 12297
-// Function ID: 12298
+// Module ID: 12292
+// Function ID: 12293
 // Name: ConjureSettingsSheet
-// Dependencies: [5, 32, 19, 17, 10986, 11001, 6924, 21, 4024, 5170, 575, 504, 12298, 12308, 12331, 7449, 1113, 7405, 7450, 6185, 12333, 12336, 12338, 5781, 7040, 5788, 9087, 9077, 12344, 9312, 2]
+// Dependencies: [5, 32, 19, 17, 10969, 10985, 6899, 21, 4026, 5140, 575, 504, 12293, 12306, 12329, 7426, 1113, 7382, 7427, 6159, 12331, 12334, 12336, 5751, 7015, 5758, 9069, 9059, 12342, 9294, 2]
 // Exports: default
 
-// Module 12297 (ConjureSettingsSheet)
+// Module 12292 (ConjureSettingsSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import _modDef4024 from "module_4024" /* 4024 */;
+import _modDef4026 from "module_4026" /* 4026 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 10986 */;
-import ConjureModelSettingsStore from "ConjureModelSettingsStore" /* 11001 */;
-import ConjureProjectStore_mod from "ConjureProjectStore" /* 6924 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 10969 */;
+import ConjureModelSettingsStore from "ConjureModelSettingsStore" /* 10985 */;
+import ConjureProjectStore_mod from "ConjureProjectStore" /* 6899 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -90,7 +90,7 @@ let ConjureProjectStore = ConjureProjectStore_mod;
 ({ canPublishProject: c9, isProjectOwner: c10 } = ConjureProjectStore);
 ConjureProjectStore = ConjureProjectStore_mod;
 ({ jsx: closure_12, jsxs: map1 } = Fragment);
-let obj = { project: _modDef4024.W0eQfN, app: _modDef4024.lFaJYF, secrets: _modDef4024.vDpCPU, model: _modDef4024.Rs3qc9, linked: _modDef4024.fBEHdq, experimental: _modDef4024["0Pe9uw"] };
+let obj = { project: _modDef4026.W0eQfN, app: _modDef4026.lFaJYF, secrets: _modDef4026.vDpCPU, model: _modDef4026.Rs3qc9, linked: _modDef4026.fBEHdq, experimental: _modDef4026["0Pe9uw"] };
 let obj2 = { container: obj3 };
 obj3 = { gap: nativeDefault.space.PX_16 };
 let closure_15 = createStyles.createStyles(obj2);
@@ -253,7 +253,7 @@ export default function ConjureSettingsSheet(projectId) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -343,7 +343,7 @@ export default function ConjureSettingsSheet(projectId) {
           }
         }
         c3 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp30) {
         c3 = 3;
         throw tmp30;

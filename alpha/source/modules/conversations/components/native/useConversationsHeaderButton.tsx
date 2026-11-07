@@ -1,17 +1,17 @@
-// Module ID: 9982
-// Function ID: 9983
+// Module ID: 9966
+// Function ID: 9967
 // Name: useConversationsHeaderButton
-// Dependencies: [5, 19, 7866, 5809, 9983, 1093, 9984, 9985, 504, 9989, 9988, 9991, 1113, 2]
+// Dependencies: [5, 19, 7843, 5779, 9967, 1093, 9968, 9969, 504, 9973, 9972, 9975, 1113, 2]
 // Exports: useConversationsHeaderButton
 
-// Module 9982 (useConversationsHeaderButton)
+// Module 9966 (useConversationsHeaderButton)
 import intl2 from "intl" /* 1113 */;
-import ConversationsActionCreators from "ConversationsActionCreators" /* 9985 */;
-import PaperIcon from "PaperIcon" /* 9989 */;
+import ConversationsActionCreators from "ConversationsActionCreators" /* 9969 */;
+import PaperIcon from "PaperIcon" /* 9973 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ChannelConversationsStore from "ChannelConversationsStore" /* 7866 */;
-import ConversationConstants from "ConversationConstants" /* 5809 */;
+import ChannelConversationsStore from "ChannelConversationsStore" /* 7843 */;
+import ConversationConstants from "ConversationConstants" /* 5779 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -53,7 +53,7 @@ export function useConversationsHeaderButton(channel) {
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -98,7 +98,7 @@ export function useConversationsHeaderButton(channel) {
           ref = 0;
         }
         c3 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp17) {
         if (0 === ref) {
           c3 = 3;

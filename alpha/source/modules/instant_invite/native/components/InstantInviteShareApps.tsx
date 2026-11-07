@@ -1,16 +1,16 @@
-// Module ID: 9257
-// Function ID: 9258
+// Module ID: 9239
+// Function ID: 9240
 // Name: InstantInviteShareApps
-// Dependencies: [32, 19, 17, 9258, 21, 5170, 575, 5796, 5450, 9293, 8119, 9262, 2]
+// Dependencies: [32, 19, 17, 9240, 21, 5140, 575, 5766, 5420, 9275, 8098, 9244, 2]
 
-// Module 9257 (InstantInviteShareApps)
+// Module 9239 (InstantInviteShareApps)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import InstantInviteConstants from "components/InstantInviteConstants" /* 9258 */;
-import createStyles from "createStyles" /* 5170 */;
+import InstantInviteConstants from "components/InstantInviteConstants" /* 9240 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, type;
@@ -34,11 +34,11 @@ const memoResult = react.memo(function InstantInviteShareApps(onItemPressed) {
   dependencyMap = undefined;
   const contentContainerStyle = onItemPressed.contentContainerStyle;
   let tmp = closure_10();
-  const obj = onItemPressed(5796);
+  const obj = onItemPressed(5766);
   let closure_1 = obj.useFontScale();
   const tmp2 = _slicedToArray(react.useState(closure_8), 2);
   [arr, c2] = tmp2;
-  let obj2 = onItemPressed(5450);
+  let obj2 = onItemPressed(5420);
   const gesture = obj2.useNativeGesture({ disallowInterruption: true });
   const effect = react.useEffect(() => {
     const allPromises = Promise.all(metroImportDefault.map((isAvailable) => isAvailable.isAvailable));
@@ -96,7 +96,7 @@ const memoResult = react.memo(function InstantInviteShareApps(onItemPressed) {
     }
     return <tmp2 key={type} style={obj2}>{tmpResult}</tmp2>;
   })}</closure_6>;
-  return jsx(onItemPressed(5450).GestureDetector, { gesture, children });
+  return jsx(onItemPressed(5420).GestureDetector, { gesture, children });
 });
 const result = size.fileFinishedImporting("modules/instant_invite/native/components/InstantInviteShareApps.tsx");
 

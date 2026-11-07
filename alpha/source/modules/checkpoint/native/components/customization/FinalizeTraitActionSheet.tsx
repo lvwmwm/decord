@@ -1,14 +1,14 @@
-// Module ID: 13905
-// Function ID: 13906
+// Module ID: 13929
+// Function ID: 13930
 // Name: FinalizeTraitActionSheet
-// Dependencies: [21, 6591, 3248, 7449, 7405, 1113, 7149, 5404, 7152, 2]
+// Dependencies: [21, 6566, 3248, 7426, 7382, 1113, 7124, 5374, 7127, 2]
 // Exports: default
 
-// Module 13905 (FinalizeTraitActionSheet)
+// Module 13929 (FinalizeTraitActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import _modDef3248 from "module_3248" /* 3248 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5404 */;
-import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6591 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
+import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6566 */;
 import size from "module_2" /* 2 */;
 
 let option;
@@ -33,9 +33,9 @@ export default function FinalizeTraitActionSheet(onSelectOption) {
   let intl2;
   onSelectOption = onSelectOption.onSelectOption;
   const selectedOption = onSelectOption.selectedOption;
-  const ActionSheet = onSelectOption(7449).ActionSheet;
+  const ActionSheet = onSelectOption(7426).ActionSheet;
   let obj2 = { title: intl.string(_modDef3248.Zl5vPW) };
-  const BottomSheetTitleHeader = onSelectOption(7405).BottomSheetTitleHeader;
+  const BottomSheetTitleHeader = onSelectOption(7382).BottomSheetTitleHeader;
   intl = onSelectOption(1113).intl;
   ({
     hasIcons: false,
@@ -55,7 +55,7 @@ export default function FinalizeTraitActionSheet(onSelectOption) {
       return <TableRadioRow key={option} value={option} label={obj2.getCustomizationOptionName(option)} subLabel={intl.string(subtitle)} />;
     })
   });
-  const TableRadioGroup = onSelectOption(7149).TableRadioGroup;
+  const TableRadioGroup = onSelectOption(7124).TableRadioGroup;
   intl2 = onSelectOption(1113).intl;
   return <ActionSheet startExpanded header={null}>{null}</ActionSheet>;
 };

@@ -1,9 +1,9 @@
-// Module ID: 18340
-// Function ID: 18341
+// Module ID: 18387
+// Function ID: 18388
 // Name: JankScreenConstants
 // Dependencies: [2]
 
-// Module 18340 (JankScreenConstants)
+// Module 18387 (JankScreenConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/jank_stats/native/JankScreenConstants.tsx");

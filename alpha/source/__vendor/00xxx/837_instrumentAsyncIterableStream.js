@@ -270,7 +270,7 @@ let obj = function _instrumentAsyncIterableStream() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c9;
@@ -450,7 +450,7 @@ let obj = function _instrumentAsyncIterableStream() {
                   }
                   closure_0.end();
                   c12 = 3;
-                  return { value: "HermesInternal", done: null };
+                  return { value: "HermesInternal", done: "HermesInternal" };
                 }
               }
               break;

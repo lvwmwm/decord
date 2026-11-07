@@ -1,12 +1,12 @@
-// Module ID: 15839
-// Function ID: 15840
+// Module ID: 15889
+// Function ID: 15890
 // Name: requestReviewModal
-// Dependencies: [5, 3, 15840, 2]
+// Dependencies: [5, 3, 15890, 2]
 // Exports: default
 
-// Module 15839 (requestReviewModal)
+// Module 15889 (requestReviewModal)
 import LoggerDefault from "Logger" /* 3 */;
-import react_nativeDefault from "react-native" /* 15840 */;
+import react_nativeDefault from "react-native" /* 15890 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ let obj = function _requestReviewModal() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c3;

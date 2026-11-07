@@ -1,20 +1,20 @@
-// Module ID: 19645
-// Function ID: 19646
+// Module ID: 19714
+// Function ID: 19715
 // Name: VoicePanelRaiseHandButton
-// Dependencies: [19, 5019, 21, 19625, 12076, 12082, 11346, 19626, 1113, 11380, 504, 2]
+// Dependencies: [19, 4989, 21, 19697, 12067, 12073, 11328, 19698, 1113, 11362, 504, 2]
 // Exports: default
 
-// Module 19645 (VoicePanelRaiseHandButton)
+// Module 19714 (VoicePanelRaiseHandButton)
 import Fragment from "Fragment" /* 21 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11380 */;
-import useRaiseHandControlDefault from "useRaiseHandControl" /* 12076 */;
-import VoicePanelStyles from "VoicePanelStyles" /* 19625 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11362 */;
+import useRaiseHandControlDefault from "useRaiseHandControl" /* 12067 */;
+import VoicePanelStyles from "VoicePanelStyles" /* 19697 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 5019 */;
+import ChannelStore from "ChannelStore" /* 4989 */;
 import size from "module_2" /* 2 */;
 
 let tmp4;
-const VoicePanelAnimatedButtonWrapperDefault = tmp4(19626);
+const VoicePanelAnimatedButtonWrapperDefault = tmp4(19698);
 function RaiseHandButtonInner(arg0) {
   let channel;
   let disabled;
@@ -29,9 +29,9 @@ function RaiseHandButtonInner(arg0) {
   const tmp5 = useRaiseHandControlDefault(channel);
   ({ hasRequestedToSpeak, disabled, handlePress } = tmp5);
   if (tmp5.shouldAgeVerifyToSpeak) {
-    let HandRequestSpeakIcon = tmp(12082).HandRequestDenyIcon;
+    let HandRequestSpeakIcon = tmp(12073).HandRequestDenyIcon;
   } else {
-    HandRequestSpeakIcon = tmp(11346).HandRequestSpeakIcon;
+    HandRequestSpeakIcon = tmp(11328).HandRequestSpeakIcon;
   }
   let color = voicePanelButtonStyles.iconFill.color;
   if (disabled) {

@@ -1,11 +1,11 @@
 // Module ID: 10474
 // Function ID: 10475
-// Dependencies: [41, 42, 93, 95, 98, 10463, 10462, 10470]
+// Dependencies: [41, 42, 93, 95, 98, 10446, 10445, 10449, 10453]
 
 // Module 10474
-import _mod10462 from "module_10462" /* 10462 */;
-import repeatedTimeunitPattern from "repeatedTimeunitPattern" /* 10463 */;
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10470 */;
+import _mod10445 from "module_10445" /* 10445 */;
+import repeatedTimeunitPattern from "repeatedTimeunitPattern" /* 10446 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10453 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import c3 from "_possibleConstructorReturn" /* 93 */;
@@ -27,80 +27,83 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-const regExp = new RegExp("([0-9]{4})[-\\.\\/\\s](?:(" + repeatedTimeunitPattern.matchAnyPattern(_mod10462.MONTH_DICTIONARY) + ")|([0-9]{1,2}))[-\\.\\/\\s]([0-9]{1,2})(?=\\W|$)", "i");
-class ENYearMonthDayParser {
-  constructor(strictMonthDateOrder) {
+const regExp = new RegExp("(this|last|past|next|after\\s*this)\\s*(" + repeatedTimeunitPattern.matchAnyPattern(_mod10445.TIME_UNIT_DICTIONARY) + ")(?=\\s*)(?=\\W|$)", "i");
+class ENRelativeDateFormatParser {
+  constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, ENYearMonthDayParser);
-    const obj = _getPrototypeOf(ENYearMonthDayParser);
+    _classCallCheck(this, ENRelativeDateFormatParser);
+    const obj = _getPrototypeOf(ENRelativeDateFormatParser);
     const tmp2 = _getPrototypeOf;
     const tmp3 = c3;
     if (_isNativeReflectConstruct()) {
       const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, [], tmp2(self).constructor);
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
     } else {
-      constructResult = obj.apply(self, undefined);
+      constructResult = obj(...arguments);
     }
-    const tmp3Result = tmp3(self, constructResult);
-    tmp3Result.strictMonthDateOrder = strictMonthDateOrder;
-    return tmp3Result;
+    return tmp3(self, constructResult);
   }
 }
-_inherits(ENYearMonthDayParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+_inherits(ENRelativeDateFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
   key: "innerPattern",
   value: function innerPattern() {
     return regExp;
   }
 };
-let items = [
+const items = [
   entry,
   {
     key: "innerExtract",
-    value: function innerExtract(arg0, arg1) {
-      let parsed2;
-      let tmp6;
-      let tmp7;
-      const parsed = parseInt(arg1[1]);
-      const parsed1 = parseInt(arg1[4]);
-      if (arg1[3]) {
-        const _parseInt = parseInt;
-        parsed2 = parseInt(arg1[3]);
-      } else {
-        parsed2 = _mod10462.MONTH_DICTIONARY[str.toLowerCase(str)];
-      }
-      if (parsed2 < 1) {
-        const self = this;
-        if (this.strictMonthDateOrder) {
-          return null;
-        } else {
-          tmp6 = parsed2;
-          tmp7 = parsed1;
-          if (parsed1 >= 1) {
-            tmp6 = parsed2;
-            tmp7 = parsed1;
-            if (parsed1 <= 12) {
-              const items = [parsed1, parsed2];
-              [tmp6, tmp7] = items;
+    value: function innerExtract(createParsingComponents, arg1) {
+      const str = arg1[1];
+      const formatted = str.toLowerCase();
+      const str2 = arg1[2];
+      const str3 = str2.toLowerCase();
+      const tmp3 = _mod10445.TIME_UNIT_DICTIONARY[str3];
+      if ("next" != formatted) {
+        if (!formatted.startsWith("after")) {
+          if ("last" != formatted) {
+            if ("past" != formatted) {
+              const parsingComponents = createParsingComponents.createParsingComponents();
+              const _Date = Date;
+              const instant = createParsingComponents.reference.instant;
+              const self = this;
+              const self2 = this;
+              const date = new Date(instant.getTime());
+              if (str3.match(/week/i)) {
+                const setDate = date.setDate;
+                const date1 = date.getDate();
+                setDate(date1 - date.getDay());
+                parsingComponents.imply("day", date.getDate());
+                parsingComponents.imply("month", date.getMonth() + 1);
+                parsingComponents.imply("year", date.getFullYear());
+              } else if (str3.match(/month/i)) {
+                date.setDate(1);
+                parsingComponents.imply("day", date.getDate());
+                parsingComponents.assign("year", date.getFullYear());
+                parsingComponents.assign("month", date.getMonth() + 1);
+              } else if (str3.match(/year/i)) {
+                date.setDate(1);
+                date.setMonth(0);
+                parsingComponents.imply("day", date.getDate());
+                parsingComponents.imply("month", date.getMonth() + 1);
+                parsingComponents.assign("year", date.getFullYear());
+              }
+              return parsingComponents;
             }
           }
-        }
-      } else {
-        tmp6 = parsed2;
-        tmp7 = parsed1;
-      }
-      let tmp8 = null;
-      if (tmp7 >= 1) {
-        tmp8 = null;
-        if (tmp7 <= 31) {
-          tmp8 = { day: tmp7, month: tmp6, year: parsed };
-          const date = { day: tmp7, month: tmp6, year: parsed };
+          const obj4 = {};
+          obj4[tmp3] = -1;
+          const ParsingComponents = tmp(10449).ParsingComponents;
+          return ParsingComponents.createRelativeFromReference(createParsingComponents.reference, obj4);
         }
       }
-      return tmp8;
+      const ParsingComponents2 = tmp(10449).ParsingComponents;
+      return ParsingComponents2.createRelativeFromReference(createParsingComponents.reference, { [tmp3]: 1 });
     }
   }
 ];
 
-export default _createClass(ENYearMonthDayParser, items);
+export default _createClass(ENRelativeDateFormatParser, items);

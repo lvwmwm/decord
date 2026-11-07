@@ -1,15 +1,15 @@
-// Module ID: 9721
-// Function ID: 9722
+// Module ID: 9703
+// Function ID: 9704
 // Name: DiscoverableGuildsActionCreators
-// Dependencies: [5, 9720, 1072, 572, 1282, 2]
+// Dependencies: [5, 9702, 1072, 572, 1282, 2]
 // Exports: fetchDiscoverableGuilds
 
-// Module 9721 (DiscoverableGuildsActionCreators)
+// Module 9703 (DiscoverableGuildsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import DiscoverableGuildsStore from "DiscoverableGuildsStore" /* 9720 */;
+import DiscoverableGuildsStore from "DiscoverableGuildsStore" /* 9702 */;
 import size from "module_2" /* 2 */;
 
 let c6, c7, closure_4, set, staleGuildIds;
@@ -28,7 +28,7 @@ let obj = function _requestGuilds() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c5;
@@ -93,7 +93,7 @@ let obj = function _requestGuilds() {
           obj.dispatch(obj11);
           c5 = 0;
           c7 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp23) {
         closure_4 = tmp23;
@@ -125,7 +125,7 @@ obj = function _fetchDiscoverableGuilds() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       while (true) {
@@ -198,7 +198,7 @@ obj = function _fetchDiscoverableGuilds() {
             return obj;
           } else {
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           c8 = 0;

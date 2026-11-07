@@ -1,19 +1,19 @@
-// Module ID: 7568
-// Function ID: 7569
+// Module ID: 7545
+// Function ID: 7546
 // Name: GameActionCreators
-// Dependencies: [5, 2138, 1072, 1282, 572, 5014, 12, 2]
+// Dependencies: [5, 2138, 1072, 1282, 572, 4984, 12, 2]
 // Exports: fetchGamesWithSupplementalData
 
-// Module 7568 (GameActionCreators)
+// Module 7545 (GameActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
-import Timers from "Timers" /* 5014 */;
+import Timers from "Timers" /* 4984 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import GameStore from "GameStore" /* 2138 */;
 import size from "module_2" /* 2 */;
 
-let c4, c5;
+let c1;
 
 function requestGames() {
   return obj(...arguments);
@@ -32,7 +32,7 @@ let obj = function _requestGames() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c3;
@@ -82,7 +82,7 @@ let obj = function _requestGames() {
             c3 = 0;
           }
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp18) {
         if (0 === c3) {
@@ -97,53 +97,49 @@ let obj = function _requestGames() {
   return obj(...arguments);
 };
 obj = function _fetchGamesWithSupplementalData() {
-  obj = _asyncToGenerator(async (arg0) => {
-    const length = arg0;
-    let c2 = 0;
-    let c1 = 0;
-    return (async (arg0, value) => {
-      if (c1 === 2) {
-        c1 = 3;
-        throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp2 === 3) {
+  obj = _asyncToGenerator(async (gameIds) => {
+    let c2;
+    let closure_3;
+    let closure_1 = arg1;
+    let c4 = 0;
+    let c5 = 0;
+    const iter = (async (arg0, value) => {
+      let flag;
+      if (1 === c4) {
         if (arg0 === 1) {
+          c5 = 3;
           throw value;
         } else if (arg0 === 2) {
+          c5 = 3;
           return { value, done: true };
-        } else {
-          return { value: "HermesInternal", done: null };
-        }
-      } else {
-        try {
-          c1 = 2;
-          if (0 === c2) {
-            if (arg0 === 1) {
-              c1 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c1 = 3;
-              return { value, done: true };
-            } else if (0 !== length.length) {
-              c2 = 1;
-              c1 = 1;
-              const obj4 = { value: batchInvocationManager.queue(tmp4), done: false };
-              return obj4;
-            }
-          } else if (arg0 === 1) {
-            c1 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c1 = 3;
-            return { value, done: true };
+        } else if (0 !== gameIds.length) {
+          const tmp5 = flag;
+          if (tmp5) {
+            const obj6 = { type: "GAME_FETCH", gameIds, force: flag };
+            const obj2 = closure_131_1(closure_131_2[4]);
+            obj2.dispatch(obj6);
           }
-          c1 = 3;
-          return { value: "HermesInternal", done: null };
-        } catch (tmp6) {
-          c1 = 3;
-          throw tmp6;
+          c4 = 2;
+          c5 = 1;
+          const obj7 = { value: closure_131_8.queue(gameIds), done: false };
+          return obj7;
         }
+      } else if (arg0 === 1) {
+        c5 = 3;
+        throw value;
+      } else if (arg0 === 2) {
+        c5 = 3;
+        return { value, done: true };
       }
+      await "HermesInternal";
+      flag = closure_1;
+      if (closure_1 === undefined) {
+        flag = false;
+      }
+      return "flexDirection";
     })();
+    iter.next();
+    return iter;
   });
   return obj(...arguments);
 };
@@ -163,7 +159,7 @@ let closure_0 = _asyncToGenerator(async (arg0, value) => {
       const obj3 = { value, done: true };
       return obj3;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "HermesInternal", done: "HermesInternal" };
     }
   } else {
     try {
@@ -193,7 +189,7 @@ let closure_0 = _asyncToGenerator(async (arg0, value) => {
         return obj;
       } else {
         c1 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } catch (tmp9) {
       c1 = 3;

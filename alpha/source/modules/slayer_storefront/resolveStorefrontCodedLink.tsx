@@ -1,13 +1,13 @@
-// Module ID: 19849
-// Function ID: 19850
+// Module ID: 19918
+// Function ID: 19919
 // Name: resolveStorefrontCodedLink
-// Dependencies: [32, 5, 6976, 19841, 11726, 5908, 11727, 11728, 10806, 572, 15932, 2]
+// Dependencies: [32, 5, 6951, 19910, 11708, 5877, 11709, 11710, 10789, 572, 15981, 2]
 // Exports: default
 
-// Module 19849 (resolveStorefrontCodedLink)
+// Module 19918 (resolveStorefrontCodedLink)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SKUStore from "SKUStore" /* 6976 */;
+import SKUStore from "SKUStore" /* 6951 */;
 import size from "module_2" /* 2 */;
 
 let c1, c4, closure_2;
@@ -17,7 +17,7 @@ let result = size.fileFinishedImporting("modules/slayer_storefront/resolveStoref
 
 export default function resolveStorefrontCodedLink(arg0, code) {
   let obj3;
-  const f119191 = function*(arg0, value) {
+  const f119726 = function*(arg0, value) {
     if (c4 === 2) {
       c4 = 3;
       throw new TypeError("Generator functions may not be called on executing generators");
@@ -28,7 +28,7 @@ export default function resolveStorefrontCodedLink(arg0, code) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c3;
@@ -67,7 +67,7 @@ export default function resolveStorefrontCodedLink(arg0, code) {
           c3 = 0;
           set.delete(closure_128_0);
           c4 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp20) {
         closure_2 = tmp20;
@@ -82,20 +82,20 @@ export default function resolveStorefrontCodedLink(arg0, code) {
   };
   const tmp = obj3;
   const tmp2 = dependencyMap;
-  let obj = obj3(11726);
+  let obj = obj3(11708);
   const result = obj.parseStorefrontCodedLink(code);
   if (null != result) {
     let skuId;
-    if (arg0 === tmp(5908).CodedLinkType.SOCIAL_LAYER_STOREFRONT_APP) {
+    if (arg0 === tmp(5877).CodedLinkType.SOCIAL_LAYER_STOREFRONT_APP) {
       let obj2 = { type: "application", applicationId: result.scopeId };
       obj3 = obj2;
     } else {
       obj3 = { type: "guild", guildId: result.scopeId };
     }
     if (result.skuIds.length > 1) {
-      const tmpResult = tmp(11727);
+      const tmpResult = tmp(11709);
       if (tmpResult.getIsEligibleForSocialLayerStorefrontMobileEmbed({ location: "resolveStorefrontCodedLink" })) {
-        const tmpResult5 = tmp(11728);
+        const tmpResult5 = tmp(11710);
         if (tmpResult5.getIsEligibleForSocialLayerStorefrontMobileMultiSkuEmbed({ location: "resolveStorefrontCodedLink" })) {
           const _HermesInternal = HermesInternal;
           const combined = "" + arg0 + ":" + result.scopeId;
@@ -111,7 +111,7 @@ export default function resolveStorefrontCodedLink(arg0, code) {
                 const obj2 = { value, done: true };
                 return obj2;
               } else {
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               }
             } else {
               try {
@@ -156,7 +156,7 @@ export default function resolveStorefrontCodedLink(arg0, code) {
                     return obj;
                   }
                   obj3 = 3;
-                  return { value: "HermesInternal", done: null };
+                  return { value: "HermesInternal", done: "HermesInternal" };
                 }
               } catch (tmp8) {
                 obj3 = 3;
@@ -168,8 +168,8 @@ export default function resolveStorefrontCodedLink(arg0, code) {
           const tmp13 = _asyncToGenerator;
           if (!set.has(combined)) {
             obj11.add(combined);
-            const tmpResult6 = tmp(19841);
-            const result1 = tmpResult6.queueMessageLinkFetch(tmp13(f119191));
+            const tmpResult6 = tmp(19910);
+            const result1 = tmpResult6.queueMessageLinkFetch(tmp13(f119726));
           }
         }
       }
@@ -181,7 +181,7 @@ export default function resolveStorefrontCodedLink(arg0, code) {
         let obj5 = { type: "STORE_LISTINGS_FETCH_START", skuId };
         obj4.dispatch(obj5);
         const items = [skuId];
-        const tmpResult7 = tmp(11726);
+        const tmpResult7 = tmp(11708);
         const storefrontCodedLink = tmpResult7.makeStorefrontCodedLink(items, result.scopeId);
         const tmp8 = _asyncToGenerator;
         skuId = _asyncToGenerator(async (arg0, value) => {
@@ -197,7 +197,7 @@ export default function resolveStorefrontCodedLink(arg0, code) {
               const obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } else {
             try {
@@ -245,7 +245,7 @@ export default function resolveStorefrontCodedLink(arg0, code) {
                   return obj;
                 }
                 obj3 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               }
             } catch (tmp8) {
               obj3 = 3;
@@ -256,8 +256,8 @@ export default function resolveStorefrontCodedLink(arg0, code) {
         let obj7 = set;
         if (!set.has(storefrontCodedLink)) {
           obj7.add(storefrontCodedLink);
-          const tmpResult8 = tmp(19841);
-          const result2 = tmpResult8.queueMessageLinkFetch(tmp8(f119191));
+          const tmpResult8 = tmp(19910);
+          const result2 = tmpResult8.queueMessageLinkFetch(tmp8(f119726));
         }
       }
     }

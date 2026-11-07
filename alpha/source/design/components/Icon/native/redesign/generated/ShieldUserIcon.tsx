@@ -1,14 +1,14 @@
-// Module ID: 9157
-// Function ID: 9158
+// Module ID: 9139
+// Function ID: 9140
 // Name: ShieldUserIcon
-// Dependencies: [19, 21, 575, 5871, 8799, 2]
+// Dependencies: [19, 21, 575, 5841, 8778, 2]
 // Exports: ShieldUserIcon
 
-// Module 9157 (ShieldUserIcon)
+// Module 9139 (ShieldUserIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5871 */;
-import AssetRegistry from "AssetRegistry" /* 8799 */;
+import BaseIconImage2 from "BaseIconImage" /* 5841 */;
+import AssetRegistry from "AssetRegistry" /* 8778 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

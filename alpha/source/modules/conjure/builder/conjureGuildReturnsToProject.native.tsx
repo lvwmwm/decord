@@ -1,9 +1,9 @@
-// Module ID: 7477
-// Function ID: 7478
+// Module ID: 7454
+// Function ID: 7455
 // Name: conjureGuildReturnsToProject
 // Dependencies: [2]
 
-// Module 7477 (conjureGuildReturnsToProject)
+// Module 7454 (conjureGuildReturnsToProject)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/builder/conjureGuildReturnsToProject.native.tsx");

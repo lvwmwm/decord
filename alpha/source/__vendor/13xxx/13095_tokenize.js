@@ -1,30 +1,53 @@
 // Module ID: 13095
 // Function ID: 13096
 // Name: tokenize
-// Dependencies: [13027, 13023]
+// Dependencies: [13050]
 
 // Module 13095 (tokenize)
-import keys2 from "keys2" /* 13023 */;
-import tokenize from "tokenize" /* 13027 */;
+import tokenize from "tokenize" /* 13050 */;
 
+let items;
 let obj2;
-const Percentage = tokenize.TYPE.Percentage;
-let obj = {
-  name: "Percentage",
+const Semicolon = tokenize.TYPE.Semicolon;
+const LeftCurlyBracket = tokenize.TYPE.LeftCurlyBracket;
+const obj = {
+  name: "AtrulePrelude",
   structure: obj2,
-  parse() {
-    const tokenStart = this.scanner.tokenStart;
-    const obj = keys2;
-    const consumeNumberResult = obj.consumeNumber(this.scanner.source, tokenStart);
-    this.eat(Percentage);
-    const obj2 = { type: "Percentage", loc: this.getLocation(tokenStart, this.scanner.tokenStart), value: str.substring(tokenStart, consumeNumberResult) };
-    return obj2;
+  parse(keys) {
+    let formatted = keys;
+    if (null !== keys) {
+      formatted = keys.toLowerCase();
+    }
+    const self = this;
+    const scanner = this.scanner;
+    scanner.skipSC();
+    const atrule = this.atrule;
+    if (atrule.hasOwnProperty(formatted)) {
+      let callResult;
+      if (typeof self.atrule[formatted].prelude === "function") {
+        const prelude = self.atrule[formatted].prelude;
+        callResult = prelude.call(self);
+      }
+      const scanner2 = self.scanner;
+      scanner2.skipSC();
+      const tmp5 = true !== self.scanner.eof && self.scanner.tokenType !== LeftCurlyBracket && self.scanner.tokenType !== Semicolon;
+      if (tmp5) {
+        self.error("Semicolon or block is expected");
+      }
+      if (null === callResult) {
+        callResult = self.createList();
+      }
+      const element = { type: "AtrulePrelude", loc: self.getLocationFromList(callResult), children: callResult };
+      return element;
+    }
+    callResult = self.readSequence(self.scope.AtrulePrelude);
   },
-  generate(value) {
-    this.chunk(value.value);
-    this.chunk("%");
-  }
+  generate(arg0) {
+    this.children(arg0);
+  },
+  walkContext: "atrulePrelude"
 };
-obj2 = { value: String };
+obj2 = { children: items };
+items = [[]];
 
 export default obj;

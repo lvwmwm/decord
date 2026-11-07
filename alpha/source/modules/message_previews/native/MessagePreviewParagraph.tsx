@@ -1,16 +1,16 @@
-// Module ID: 11208
-// Function ID: 11209
+// Module ID: 11190
+// Function ID: 11191
 // Name: MessagePreviewParagraph
-// Dependencies: [32, 19, 17, 21, 5170, 11195, 1377, 5796, 11201, 5781, 2]
+// Dependencies: [32, 19, 17, 21, 5140, 5883, 1377, 5766, 11184, 5751, 2]
 // Exports: MessagePreviewParagraph
 
-// Module 11208 (MessagePreviewParagraph)
-import Text_Text from "Text/Text" /* 5781 */;
+// Module 11190 (MessagePreviewParagraph)
+import Text_Text from "Text/Text" /* 5751 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_4;
@@ -41,7 +41,7 @@ function MeasuredParagraph(leadingContent) {
   const tmp7 = closure_8();
   const tmp8 = fontScale(first);
   const memo = variant.useMemo(() => {
-    const f128014 = (node, index) => {
+    const f128562 = (node, index) => {
       let tmp15;
       let tmp16;
       const items = [node.node, ];
@@ -84,8 +84,8 @@ function MeasuredParagraph(leadingContent) {
       items[1] = tmp4;
       return items;
     };
-    let obj = { variant, maxFontSizeMultiplier, widths: new Map(mentions.map(f128014)) };
-    new Map(mentions.map(f128014));
+    let obj = { variant, maxFontSizeMultiplier, widths: new Map(mentions.map(f128562)) };
+    new Map(mentions.map(f128562));
     return obj;
   }, items);
   let tmp10 = closure_6;

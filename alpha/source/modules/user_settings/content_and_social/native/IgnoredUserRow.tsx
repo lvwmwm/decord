@@ -1,13 +1,13 @@
-// Module ID: 16969
-// Function ID: 16970
+// Module ID: 17017
+// Function ID: 17018
 // Name: IgnoredUserRow
-// Dependencies: [5, 19, 1385, 21, 7575, 7410, 1113, 8842, 7063, 1187, 16966, 5788, 504, 8844, 2]
+// Dependencies: [5, 19, 1385, 21, 7552, 7387, 1113, 8821, 7038, 1187, 17014, 5758, 504, 8823, 2]
 // Exports: default
 
-// Module 16969 (IgnoredUserRow)
+// Module 17017 (IgnoredUserRow)
 import Fragment from "Fragment" /* 21 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7575 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8842 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7552 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8821 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1385 */;
@@ -19,7 +19,7 @@ function IgnoredUserRow(userRecord) {
   let intl2;
   userRecord = userRecord.userRecord;
   let analyticsLocations;
-  analyticsLocations = analyticsLocations(7410)().analyticsLocations;
+  analyticsLocations = analyticsLocations(7387)().analyticsLocations;
   const intl = userRecord(1113).intl;
   const formatToPlainString = intl.formatToPlainString;
   let username = userRecord.globalName;
@@ -32,7 +32,7 @@ function IgnoredUserRow(userRecord) {
     showUserProfileActionSheetDefault(obj);
   }
   const formatToPlainStringResult = formatToPlainString(e3qAIz, { name: username });
-  const TableRow = tmp2(7063).TableRow;
+  const TableRow = tmp2(7038).TableRow;
   let obj2 = { source: userRecord.getAvatarSource(undefined), size: tmp2(1187).AvatarSizes.REFRESH_MEDIUM_32 };
   const Avatar = tmp2(1187).Avatar;
   const items = [{ name: "activate" }, { name: "unignore", label: formatToPlainStringResult }];
@@ -47,7 +47,7 @@ function IgnoredUserRow(userRecord) {
       obj.unignoreUser(id, "ignored-users-list-mobile");
     }
   });
-  const Button = tmp2(5788).Button;
+  const Button = tmp2(5758).Button;
   intl2 = tmp2(1113).intl;
   return <TableRow accessible={false} icon={null} label={null} onPress={handleOpenProfile} trailing={null} />;
 }
@@ -77,7 +77,7 @@ export default function ConnectedIgnoredUserRow(userId) {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           let c2;
@@ -102,7 +102,7 @@ export default function ConnectedIgnoredUserRow(userId) {
             } else if (1 === tmp3) {
               c2 = 0;
               c0 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             } else if (arg0 === 1) {
               c0 = 3;
               throw value;
@@ -114,7 +114,7 @@ export default function ConnectedIgnoredUserRow(userId) {
             } else {
               c2 = 0;
               c0 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } catch (tmp7) {
             if (0 === c2) {

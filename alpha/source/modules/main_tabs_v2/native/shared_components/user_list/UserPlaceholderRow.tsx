@@ -1,18 +1,18 @@
-// Module ID: 9226
-// Function ID: 9227
+// Module ID: 9208
+// Function ID: 9209
 // Name: UserPlaceholderRow
-// Dependencies: [19, 17, 5171, 21, 5170, 575, 1652, 504, 5400, 5403, 2]
+// Dependencies: [19, 17, 5141, 21, 5140, 575, 1652, 504, 5370, 5373, 2]
 
-// Module 9226 (UserPlaceholderRow)
+// Module 9208 (UserPlaceholderRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1652 from "module_1652" /* 1652 */;
-import timing_timing from "timing/timing" /* 5400 */;
-import timingPresets from "timingPresets" /* 5403 */;
+import timing_timing from "timing/timing" /* 5370 */;
+import timingPresets from "timingPresets" /* 5373 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5171 */;
+import AccessibilityStore from "AccessibilityStore" /* 5141 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 let metroImportDefault;

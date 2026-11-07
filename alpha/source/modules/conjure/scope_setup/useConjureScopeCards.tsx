@@ -1,14 +1,14 @@
-// Module ID: 12941
-// Function ID: 12942
+// Module ID: 12952
+// Function ID: 12953
 // Name: useConjureScopeCards
-// Dependencies: [5, 32, 19, 6924, 1113, 4024, 12773, 504, 12789, 2]
+// Dependencies: [5, 32, 19, 6899, 1113, 4026, 12786, 504, 12289, 2]
 // Exports: useConjureScopeSetupCard, useConjureScopeSwitchCard
 
-// Module 12941 (useConjureScopeCards)
+// Module 12952 (useConjureScopeCards)
 import intl8 from "intl" /* 1113 */;
-import _modDef4024 from "module_4024" /* 4024 */;
-import ConjureProjectStore2 from "ConjureProjectStore" /* 6924 */;
-import conjureScopeSetup from "conjureScopeSetup" /* 12773 */;
+import _modDef4026 from "module_4026" /* 4026 */;
+import ConjureProjectStore2 from "ConjureProjectStore" /* 6899 */;
+import conjureScopeSetup from "conjureScopeSetup" /* 12786 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -62,7 +62,7 @@ export function useConjureScopeSetupCard(projectId) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c5;
@@ -115,7 +115,7 @@ export function useConjureScopeSetupCard(projectId) {
               c5 = 0;
             }
             c7 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp27) {
           closure_4 = tmp27;
@@ -191,15 +191,15 @@ export function useConjureScopeSetupCard(projectId) {
       const intl6 = intl8.intl;
       const string = intl6.string;
       if (conjureEligibleGuilds.length > 0) {
-        ZWXDeI = _modDef4024.ZWXDeI;
+        ZWXDeI = _modDef4026.ZWXDeI;
       } else {
-        ZWXDeI = _modDef4024["u5+Qhu"];
+        ZWXDeI = _modDef4026["u5+Qhu"];
       }
       const obj3 = { id: "server-setup:q0", question: string(ZWXDeI), recommendation_reason: "", allow_custom: false, options: items };
       if (conjureEligibleGuilds.length > 0) {
         items = [];
       } else {
-        const obj4 = { id: id2, label: intl7.string(_modDef4024.qLYOpH) };
+        const obj4 = { id: id2, label: intl7.string(_modDef4026.qLYOpH) };
         intl7 = intl8.intl;
         items = [obj4];
       }
@@ -209,13 +209,13 @@ export function useConjureScopeSetupCard(projectId) {
       obj = obj2;
     } else {
       obj = { id: "scope-setup", questions: items3 };
-      const obj6 = { id, question: intl.string(_modDef4024.ickKBI), recommendation_reason: "", allow_custom: false, options: items2 };
+      const obj6 = { id, question: intl.string(_modDef4026.ickKBI), recommendation_reason: "", allow_custom: false, options: items2 };
       intl = intl8.intl;
-      const obj7 = { id: id2, label: intl2.string(_modDef4024.qLYOpH), detail: intl3.string(_modDef4024.QSKvUE) };
+      const obj7 = { id: id2, label: intl2.string(_modDef4026.qLYOpH), detail: intl3.string(_modDef4026.QSKvUE) };
       intl2 = intl8.intl;
       intl3 = intl8.intl;
       items2 = [obj7, ];
-      const obj8 = { id: id3, label: intl4.string(_modDef4024.QV5C7b), detail: intl5.string(_modDef4024["ZzHR4/"]) };
+      const obj8 = { id: id3, label: intl4.string(_modDef4026.QV5C7b), detail: intl5.string(_modDef4026["ZzHR4/"]) };
       intl4 = intl8.intl;
       intl5 = intl8.intl;
       items2[1] = obj8;
@@ -266,9 +266,9 @@ export function useConjureScopeSetupCard(projectId) {
           let intl2 = tmp(1113).intl;
           let string = intl2.string;
           if ("server" === tmp9) {
-            jNVZ3e = conjureEligibleGuilds(4024)["XXKd+7"];
+            jNVZ3e = conjureEligibleGuilds(4026)["XXKd+7"];
           } else {
-            jNVZ3e = conjureEligibleGuilds(4024).jNVZ3e;
+            jNVZ3e = conjureEligibleGuilds(4026).jNVZ3e;
           }
           stringResult = string(jNVZ3e);
         }
@@ -276,7 +276,7 @@ export function useConjureScopeSetupCard(projectId) {
       }
     }
     let obj5 = { clarification: tmpResult.ownerOnlyClarification(memo), readOnly: true, hideSubmit: true, failure: null };
-    tmpResult = tmp(12773);
+    tmpResult = tmp(12786);
     return obj5;
   }
 }
@@ -319,7 +319,7 @@ export function useConjureScopeSwitchCard(merged) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c4;
@@ -368,7 +368,7 @@ export function useConjureScopeSwitchCard(merged) {
               c4 = 0;
             }
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp26) {
           closure_3 = tmp26;
@@ -390,7 +390,7 @@ export function useConjureScopeSwitchCard(merged) {
   let items = [c6];
   let items1 = [projectId];
   const stateFromStores = obj.useStateFromStores(items, () => ConjureProjectStore.getProject(projectId), items1);
-  let obj2 = projectId(12789);
+  let obj2 = projectId(12289);
   const conjureEligibleGuilds = obj2.useConjureEligibleGuilds("ConjureScopeSwitchCard");
   let obj3 = conjureEligibleGuilds;
   [tmp6, c6] = feature(conjureEligibleGuilds.useState(false), 2);
@@ -412,7 +412,7 @@ export function useConjureScopeSwitchCard(merged) {
     const first = _slicedToArray(clarification.questions, 1)[0];
     const intl = intl8.intl;
     const formatToPlainString = intl.formatToPlainString;
-    const tmp7 = _modDef4024;
+    const tmp7 = _modDef4026;
     const tmp = clarification;
     if ("guild" === scope) {
       d7jxeT = tmp7["jh/iy+"];
@@ -432,7 +432,7 @@ export function useConjureScopeSwitchCard(merged) {
       tmp12 = obj3;
     } else {
       const _HermesInternal = HermesInternal;
-      const obj4 = { id: "" + first.id + ":0", label: intl2.string(tmp8(4024).TVRkVh) };
+      const obj4 = { id: "" + first.id + ":0", label: intl2.string(tmp8(4026).TVRkVh) };
       intl2 = tmp3(1113).intl;
       const items = [obj4];
       obj3.options = items;
@@ -470,7 +470,7 @@ export function useConjureScopeSwitchCard(merged) {
       tmp11 = "guild" === scope;
       let tmp12 = clarification;
       string = intl.string;
-      const tmp13 = clarification(4024);
+      const tmp13 = clarification(4026);
       if (tmp11) {
         TVRkVh = tmp13.Ua7yKM;
         tmp14 = tmp12;
@@ -493,16 +493,16 @@ export function useConjureScopeSwitchCard(merged) {
       }
       let intl2 = tmp(1113).intl;
       string2 = intl2.string;
-      tmp14Result = tmp14(4024);
+      tmp14Result = tmp14(4026);
       string3Result = null;
       if (null != tmp8) {
         let jNVZ3e;
         const intl3 = tmp(1113).intl;
         const string3 = intl3.string;
         if ("locked" === tmp8) {
-          jNVZ3e = tmp14(4024).irUT0N;
+          jNVZ3e = tmp14(4026).irUT0N;
         } else {
-          jNVZ3e = tmp14(4024).jNVZ3e;
+          jNVZ3e = tmp14(4026).jNVZ3e;
         }
         string3Result = string3(jNVZ3e);
       }
@@ -510,6 +510,6 @@ export function useConjureScopeSwitchCard(merged) {
     }
   }
   let obj5 = { clarification: tmpResult.ownerOnlyClarification(memo), readOnly: true, hideSubmit: true, failure: null };
-  tmpResult = tmp(12773);
+  tmpResult = tmp(12786);
   return obj5;
 }

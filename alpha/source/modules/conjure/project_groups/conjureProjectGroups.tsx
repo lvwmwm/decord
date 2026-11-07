@@ -1,11 +1,11 @@
-// Module ID: 13199
-// Function ID: 13200
+// Module ID: 13222
+// Function ID: 13223
 // Name: conjureProjectGroups
-// Dependencies: [7479, 2]
+// Dependencies: [7456, 2]
 // Exports: groupConjureProjects
 
-// Module 13199 (conjureProjectGroups)
-import conjureServerProject from "conjureServerProject" /* 7479 */;
+// Module 13222 (conjureProjectGroups)
+import conjureServerProject from "conjureServerProject" /* 7456 */;
 import size from "module_2" /* 2 */;
 
 let map1;
@@ -22,7 +22,7 @@ export function groupConjureProjects(arg0, stateFromStoresArray, stateFromStores
   while (iter !== undefined) {
     let tmp2 = nextResult;
     let obj2 = conjureServerProject;
-    let result = obj2.conjureServerProjectGuildId(nextResult);
+    let result = obj2.conjureServerAppGuildId(nextResult);
     let tmp6 = result;
     if (null != result) {
       let value = map.get(tmp6);

@@ -1,20 +1,20 @@
-// Module ID: 11845
-// Function ID: 11846
+// Module ID: 11836
+// Function ID: 11837
 // Name: SpotifyUtils
-// Dependencies: [5, 2137, 11846, 6651, 9003, 1072, 1089, 6654, 11847, 11848, 2]
+// Dependencies: [5, 2137, 11837, 6626, 8985, 1072, 1089, 6629, 11838, 11839, 2]
 // Exports: ensureSpotifyPlayable, ensureSpotifyPremium, getSpotifyMetadataFromActivity, isSpotifyPlayable, isSpotifyPremium
 
-// Module 11845 (SpotifyUtils)
+// Module 11836 (SpotifyUtils)
 import Constants from "Constants" /* 1072 */;
 import DurationsDefault from "Durations" /* 1089 */;
-import PlatformsDefault from "Platforms" /* 6654 */;
-import SpotifyActionCreators from "SpotifyActionCreators" /* 11847 */;
-import UserActivityActionCreators from "UserActivityActionCreators" /* 11848 */;
+import PlatformsDefault from "Platforms" /* 6629 */;
+import SpotifyActionCreators from "SpotifyActionCreators" /* 11838 */;
+import UserActivityActionCreators from "UserActivityActionCreators" /* 11839 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import RunningGameStore from "RunningGameStore" /* 2137 */;
-import SpotifyProtocolStore from "SpotifyProtocolStore" /* 11846 */;
-import SpotifyStore from "SpotifyStore" /* 6651 */;
-import SpotifyConstants from "SpotifyConstants" /* 9003 */;
+import SpotifyProtocolStore from "SpotifyProtocolStore" /* 11837 */;
+import SpotifyStore from "SpotifyStore" /* 6626 */;
+import SpotifyConstants from "SpotifyConstants" /* 8985 */;
 import size from "module_2" /* 2 */;
 
 let TRACK, closure_3, closure_4;
@@ -52,7 +52,7 @@ let value = function _getSpotifyMetadataFromActivity() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -157,7 +157,7 @@ export function ensureSpotifyPlayable() {
     if (isObservedAppRunning(obj2.get(PlatformTypes.SPOTIFY).name)) {
       if (playableComputerDevices.length > 0) {
         ({ socket, device } = playableComputerDevices[0]);
-        const obj3 = playableComputerDevices(11847);
+        const obj3 = playableComputerDevices(11838);
         obj3.setActiveDevice(socket.accountId, device.id);
         const obj4 = { socket, device };
         return Promise.resolve(obj4);

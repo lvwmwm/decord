@@ -1,142 +1,105 @@
 // Module ID: 9505
 // Function ID: 9506
-// Dependencies: [9506, 9512, 9507, 9514, 9515]
-// Exports: createDomStream, parseDOM, parseDocument, parseFeed
+// Dependencies: [9494]
+// Exports: getAttributeValue, getChildren, getName, getParent, getSiblings, hasAttrib, nextElementSibling, prevElementSibling
 
 // Module 9505
-import ElementType from "ElementType" /* 9514 */;
+import DomHandler from "DomHandler" /* 9494 */;
 
-const require = globalThis.__r;
 let hasOwnProperty;
 
-const self = this;
-let tmp = this && self.__createBinding;
-if (!tmp) {
-  let tmp2 = globalThis;
-  let _Object = Object;
-  tmp = Object.create ? ((arg0, __esModule, arg2, arg3) => {
-    function get() {
-      return __esModule[closure_1];
-    }
-    let closure_0 = __esModule;
-    let closure_1 = arg2;
-    let tmp = arg3;
-    if (undefined === arg3) {
-      tmp = arg2;
-    }
-    let ownPropertyDescriptor = Object.getOwnPropertyDescriptor(__esModule, arg2);
-    let tmp3 = ownPropertyDescriptor;
-    if (tmp3) {
-      let tmp4;
-      if ("get" in ownPropertyDescriptor) {
-        tmp4 = !__esModule.__esModule;
-      } else {
-        tmp4 = ownPropertyDescriptor.writable || ownPropertyDescriptor.configurable;
-      }
-      tmp3 = !tmp4;
-    }
-    if (!tmp3) {
-      ownPropertyDescriptor = { enumerable: true, get };
-      const obj = { enumerable: true, get };
-    }
-    Object.defineProperty(arg0, tmp, ownPropertyDescriptor);
-  }) : ((arg0, arg1, arg2, arg3) => {
-    let tmp = arg3;
-    if (undefined === arg3) {
-      tmp = arg2;
-    }
-    arg0[tmp] = arg1[arg2];
-  });
-}
-let closure_2 = tmp;
-let tmp3 = self && self.__setModuleDefault;
-if (!tmp3) {
-  let tmp4 = globalThis;
-  const _Object2 = Object;
-  tmp3 = Object.create ? ((arg0, value) => {
-    const obj = { enumerable: true, value };
-    Object.defineProperty(arg0, "default", obj);
-  }) : ((arg0, arg1) => {
-    arg0.default = arg1;
-  });
-}
-let closure_3 = tmp3;
-let tmp5 = self && self.__importStar || ((__esModule) => {
-  const tmp = __esModule;
-  if (tmp) {
-    if (__esModule.__esModule) {
-      return __esModule;
-    }
-  }
-  const obj = {};
-  if (null != __esModule) {
-    for (const key10009 in __esModule) {
-      let callResult = "default" !== key10009;
-      if (callResult) {
-        let _Object = Object;
-        hasOwnProperty = Object.prototype.hasOwnProperty;
-        callResult = hasOwnProperty.call(__esModule, key10009);
-      }
-      if (!callResult) {
-        continue;
-      } else {
-        let tmp6 = closure_2(obj, __esModule, key10009);
-        continue;
-      }
-      continue;
-    }
-  }
-  closure_3(obj, __esModule);
-  return obj;
-});
-const fn = self && self.__importDefault || ((__esModule) => {
-  let tmp2;
-  const tmp = __esModule;
-  if (!tmp) {
-    tmp2 = { default: __esModule };
-    const obj = { default: __esModule };
-  } else {
-    tmp2 = __esModule;
-  }
-  return tmp2;
-});
-function parseDocument(arg0, fn) {
-  const domHandler = new require("DomHandler").DomHandler(undefined, fn);
-  const parser = new require("module_9506").Parser(domHandler, fn);
-  parser.end(arg0);
-  return domHandler.root;
-}
-function parseDOM(arg0, fn) {
-  const domHandler = new require("DomHandler").DomHandler(undefined, fn);
-  const parser = new require("module_9506").Parser(domHandler, fn);
-  parser.end(arg0);
-  return domHandler.root.children;
-}
-let closure_5 = { xmlMode: true };
-const ElementType_export = tmp5(ElementType);
 
-export const Parser = require("module_9506").Parser;
-export const DomHandler = require("DomHandler").DomHandler;
-export const DefaultHandler = require("DomHandler").DomHandler;
-export { parseDocument };
-export { parseDOM };
-export function createDomStream(arg0, fn, arg2) {
-  const domHandler = new require("DomHandler").DomHandler(arg0, fn, arg2);
-  const parser = new require("module_9506").Parser(domHandler, fn);
-  return parser;
+export function getChildren(children) {
+  return DomHandler.hasChildren(children) ? children.children : [];
 }
-export const Tokenizer = fn(require("QuoteType")).default;
-export { ElementType_export as ElementType };
-export const getFeed = require("module_9515").getFeed;
-export function parseFeed(arg0, fn) {
-  let tmp = fn;
-  if (undefined === fn) {
-    tmp = closure_5;
+export function getParent(parent) {
+  return parent.parent || null;
+}
+export function getSiblings(parent) {
+  let next;
+  let prev;
+  if (null != (parent.parent || null)) {
+    return DomHandler.hasChildren(parent.parent || null) ? (parent.parent || null).children : [];
+  } else {
+    const items = [parent];
+    ({ prev, next } = parent);
+    if (null != prev) {
+      do {
+        let arr = items.unshift(prev);
+        prev = prev.prev;
+      } while (null != prev);
+    }
+    if (null != next) {
+      do {
+        let arr3 = items.push(next);
+        next = next.next;
+      } while (null != next);
+    }
+    return items;
   }
-  const getFeed = require("module_9515").getFeed;
-  const domHandler = new require("DomHandler").DomHandler(undefined, tmp);
-  const parser = new require("module_9506").Parser(domHandler, tmp);
-  parser.end(arg0);
-  return getFeed(domHandler.root.children);
 }
-export const DomUtils = tmp5(require("module_9515"));
+export function getAttributeValue(attribs, arg1) {
+  attribs = attribs.attribs;
+  let tmp;
+  if (null !== attribs) {
+    if (undefined !== attribs) {
+      tmp = attribs[arg1];
+    }
+  }
+  return tmp;
+}
+export function hasAttrib(attribs, arg1) {
+  let callResult = null != attribs.attribs;
+  if (callResult) {
+    const _Object = Object;
+    hasOwnProperty = Object.prototype.hasOwnProperty;
+    callResult = hasOwnProperty.call(attribs.attribs, arg1);
+  }
+  if (callResult) {
+    callResult = null != attribs.attribs[arg1];
+  }
+  return callResult;
+}
+export function getName(name) {
+  return name.name;
+}
+export function nextElementSibling(next) {
+  next = next.next;
+  let tmp = next;
+  if (null !== next) {
+    let iter = next;
+    tmp = next;
+    if (!DomHandler.isTag(next)) {
+      const next2 = iter.next;
+      tmp = next2;
+      while (null !== next2) {
+        iter = next2;
+        tmp = next2;
+        if (DomHandler.isTag(next2)) {
+          break;
+        }
+      }
+    }
+  }
+  return tmp;
+}
+export function prevElementSibling(prev) {
+  prev = prev.prev;
+  let tmp = prev;
+  if (null !== prev) {
+    let tmp4 = prev;
+    tmp = prev;
+    if (!DomHandler.isTag(prev)) {
+      const prev2 = tmp4.prev;
+      tmp = prev2;
+      while (null !== prev2) {
+        tmp4 = prev2;
+        tmp = prev2;
+        if (DomHandler.isTag(prev2)) {
+          break;
+        }
+      }
+    }
+  }
+  return tmp;
+}

@@ -1,26 +1,26 @@
-// Module ID: 18750
-// Function ID: 18751
+// Module ID: 18800
+// Function ID: 18801
 // Name: YouBarAvatar
-// Dependencies: [5, 32, 19, 17, 5171, 6650, 1385, 17337, 1072, 21, 5170, 575, 504, 1187, 5229, 1652, 6933, 9611, 5791, 1705, 5754, 9610, 8820, 5406, 7658, 2118, 5450, 2]
+// Dependencies: [5, 32, 19, 17, 5141, 6625, 1385, 17385, 1072, 21, 5140, 575, 504, 1187, 5199, 1652, 6908, 9593, 5761, 1705, 5724, 9592, 8799, 5376, 7635, 2118, 5420, 2]
 
-// Module 18750 (YouBarAvatar)
+// Module 18800 (YouBarAvatar)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import native from "native" /* 1187 */;
 import _mod1705 from "module_1705" /* 1705 */;
-import native2 from "native" /* 5229 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5450 */;
-import ClipView from "ClipView" /* 9611 */;
+import native2 from "native" /* 5199 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5420 */;
+import ClipView from "ClipView" /* 9593 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5171 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 6650 */;
+import AccessibilityStore from "AccessibilityStore" /* 5141 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 6625 */;
 import UserStore from "UserStore" /* 1385 */;
-import YouBarConstants from "YouBarConstants" /* 17337 */;
+import YouBarConstants from "YouBarConstants" /* 17385 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 let _undefined4, dependencyMap, set, set2, set3, size2;
@@ -89,7 +89,7 @@ function YouBarAvatarLarge(transitionState) {
   let result = transitionState(1187).AVATAR_SIZE_MAP[closure_13] / closure_20;
   dependencyMap = result;
   const result1 = (closure_20 - transitionState(1187).AVATAR_SIZE_MAP[closure_13]) / 2;
-  let tmp8 = transitionState === transitionState(5229).TransitionStates.MOUNTED;
+  let tmp8 = transitionState === transitionState(5199).TransitionStates.MOUNTED;
   let num = 0;
   const useSharedValue = transitionState(1652).useSharedValue;
   const tmp9 = transitionState(1652);
@@ -152,7 +152,7 @@ function YouBarAvatarLarge(transitionState) {
     }
     set4(diff);
   }, items2);
-  const tmp2Result15 = tmp2(6933);
+  const tmp2Result15 = tmp2(6908);
   const avatarDecoration = tmp2Result15.useAvatarDecoration(stateFromStores);
   const items3 = [AccessibilityStore];
   const items4 = [OFFLINE];
@@ -176,7 +176,7 @@ function YouBarAvatarLarge(transitionState) {
   const items5 = [closure_26, , , , , , , , , , , ];
   const useAnimatedStyle = tmp2(1652).useAnimatedStyle;
   tmp2(1652);
-  items5[1] = tmp2(5791).withSpring;
+  items5[1] = tmp2(5761).withSpring;
   items5[2] = sharedValue2;
   items5[3] = closure_18;
   items5[4] = sharedValue3;
@@ -184,7 +184,7 @@ function YouBarAvatarLarge(transitionState) {
   items5[6] = sharedValue;
   items5[7] = closure_25;
   items5[8] = transitionState;
-  items5[9] = tmp2(5229).TransitionStates;
+  items5[9] = tmp2(5199).TransitionStates;
   items5[10] = tmp2(1705).scheduleOnRN;
   items5[11] = cleanup;
   let c0;
@@ -251,9 +251,9 @@ function YouBarAvatarLarge(transitionState) {
   YouBarAvatarTsx2.__workletHash = 7492548934333;
   YouBarAvatarTsx2.__initData = tmp27;
   const animatedStyle = useAnimatedStyle(YouBarAvatarTsx2);
-  const tmp2Result18 = tmp2(5754);
+  const tmp2Result18 = tmp2(5724);
   const token = tmp2Result18.useToken(OFFLINE(575).colors.MOBILE_FLOATINGBAR_BACKGROUND);
-  tmp2(5754);
+  tmp2(5724);
   let tmp45Result = null;
   if (null != stateFromStores) {
     const obj3 = { style: items7, children: items8 };
@@ -263,7 +263,7 @@ function YouBarAvatarLarge(transitionState) {
     items7[2] = animatedStyle;
     const View = tmp40(1652).View;
     let nativeCutouts;
-    const tmp40Result = OFFLINE(9611);
+    const tmp40Result = OFFLINE(9593);
     const tmp45 = closure_23;
     if (memo != null) {
       nativeCutouts = memo.nativeCutouts;
@@ -282,7 +282,7 @@ function YouBarAvatarLarge(transitionState) {
     rect = { right: closure_14 - closure_19, bottom: closure_14 - closure_19 };
     items8[1] = closure_22(Avatar, obj6);
     let mapped;
-    const tmp40Result3 = OFFLINE(9611);
+    const tmp40Result3 = OFFLINE(9593);
     if (memo != null) {
       const nativeCutouts1 = memo.nativeCutouts;
       if (nativeCutouts1 != null) {
@@ -301,14 +301,14 @@ function YouBarAvatarLarge(transitionState) {
     let tmp46Result = null != avatarDecoration;
     if (tmp46Result) {
       const obj9 = { size: tmp2Result20.getDecorationSizeForAvatarSize(size), avatarDecoration, decorationStyle: rect1, animate: stateFromStores1 && "always", cutout: getDecorationCutoutForAvatarCutout(memo, (tmp2Result24.getDecorationSizeForAvatarSize(size) - tmp5) / 2) };
-      const tmp40Result4 = OFFLINE(9610);
-      tmp2Result20 = tmp2(8820);
+      const tmp40Result4 = OFFLINE(9592);
+      tmp2Result20 = tmp2(8799);
       rect1 = { position: "absolute", top: -tmp2Result21.getDecorationSizeForAvatarSize(size) - tmp5 / 2, left: -tmp2Result22.getDecorationSizeForAvatarSize(size) - tmp5 / 2 };
-      tmp2Result21 = tmp2(8820);
-      tmp2Result22 = tmp2(8820);
-      getDecorationCutoutForAvatarCutout = tmp2(8820).getDecorationCutoutForAvatarCutout;
-      tmp2(8820);
-      tmp2Result24 = tmp2(8820);
+      tmp2Result21 = tmp2(8799);
+      tmp2Result22 = tmp2(8799);
+      getDecorationCutoutForAvatarCutout = tmp2(8799).getDecorationCutoutForAvatarCutout;
+      tmp2(8799);
+      tmp2Result24 = tmp2(8799);
       tmp46Result = tmp46(tmp40Result4, obj9, avatarDecoration.asset);
     }
     items8[3] = tmp46Result;
@@ -341,24 +341,24 @@ function YouBarAvatar(transitionState) {
   let items1 = [UserStore];
   const obj2 = transitionState(504);
   const stateFromStores = obj2.useStateFromStores(items1, () => currentUser.getCurrentUser());
-  const obj3 = transitionState(6933);
+  const obj3 = transitionState(6908);
   const avatarDecoration = obj3.useAvatarDecoration(stateFromStores);
   const tmp5 = transitionState(1652);
   const useSharedValue = tmp5.useSharedValue;
   let num = 0;
-  if (transitionState === transitionState(5229).TransitionStates.MOUNTED) {
+  if (transitionState === transitionState(5199).TransitionStates.MOUNTED) {
     num = 1;
   }
   sharedValue = useSharedValue(num);
   const items2 = [closure_29, , , , , , , , ];
   const useAnimatedStyle = tmp(1652).useAnimatedStyle;
   tmp(1652);
-  items2[1] = tmp(5791).withSpring;
+  items2[1] = tmp(5761).withSpring;
   items2[2] = sharedValue;
   items2[3] = closure_18;
   items2[4] = closure_28;
   items2[5] = transitionState;
-  items2[6] = tmp(5229).TransitionStates;
+  items2[6] = tmp(5199).TransitionStates;
   items2[7] = tmp(1705).scheduleOnRN;
   items2[8] = cleanup;
   let c0;
@@ -487,7 +487,7 @@ const memoResult = react.memo(function YouBarAvatarAnimated(isLargeAvatar) {
   const tmp6 = isLargeAvatar(1652);
   let items1 = [closure_31, , , ];
   const useAnimatedStyle = tmp6.useAnimatedStyle;
-  items1[1] = isLargeAvatar(5791).withSpring;
+  items1[1] = isLargeAvatar(5761).withSpring;
   items1[2] = tmp5;
   items1[3] = closure_18;
   let c0;
@@ -532,7 +532,7 @@ const memoResult = react.memo(function YouBarAvatarAnimated(isLargeAvatar) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -564,7 +564,7 @@ const memoResult = react.memo(function YouBarAvatarAnimated(isLargeAvatar) {
           value.openUserSettings();
           closure_128_2(false);
           _undefined = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp11) {
         _undefined = 3;
@@ -661,8 +661,8 @@ const memoResult = react.memo(function YouBarAvatarAnimated(isLargeAvatar) {
       android_ripple: { color: "transparent" },
       children: closure_22(View, obj5)
     };
-    const GestureDetector = tmp(5450).GestureDetector;
-    obj5 = { style: items5, children: closure_22(tmp(5229).TransitionGroup, obj6) };
+    const GestureDetector = tmp(5420).GestureDetector;
+    obj5 = { style: items5, children: closure_22(tmp(5199).TransitionGroup, obj6) };
     size = { height: tmp(1187).AVATAR_SIZE_MAP[closure_12], width: tmp(1187).AVATAR_SIZE_MAP[closure_12], position: "relative" };
     View = onPress(1652).View;
     items5 = [size, animatedStyle];

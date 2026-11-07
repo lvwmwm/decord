@@ -1,11 +1,11 @@
-// Module ID: 5052
-// Function ID: 5053
+// Module ID: 5022
+// Function ID: 5023
 // Name: Dao
-// Dependencies: [5053, 5055, 2]
+// Dependencies: [5023, 5025, 2]
 
-// Module 5052 (Dao)
-import Table from "Table" /* 5053 */;
-import TableId from "TableId" /* 5055 */;
+// Module 5022 (Dao)
+import Table from "Table" /* 5023 */;
+import TableId from "TableId" /* 5025 */;
 import size from "module_2" /* 2 */;
 
 class Dao {

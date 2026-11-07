@@ -1,10 +1,10 @@
-// Module ID: 8329
-// Function ID: 8330
+// Module ID: 8308
+// Function ID: 8309
 // Name: utils/TimeUtils
 // Dependencies: [2]
 // Exports: getTimeFormat
 
-// Module 8329 (utils/TimeUtils)
+// Module 8308 (utils/TimeUtils)
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("utils/native/TimeUtils.tsx");

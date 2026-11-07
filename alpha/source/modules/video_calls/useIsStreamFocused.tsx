@@ -1,12 +1,12 @@
-// Module ID: 12016
-// Function ID: 12017
+// Module ID: 12007
+// Function ID: 12008
 // Name: useIsStreamFocused
-// Dependencies: [6923, 5835, 504, 2]
+// Dependencies: [6898, 5805, 504, 2]
 // Exports: useIsStreamFocused
 
-// Module 12016 (useIsStreamFocused)
-import CallConstants from "CallConstants" /* 5835 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6923 */;
+// Module 12007 (useIsStreamFocused)
+import CallConstants from "CallConstants" /* 5805 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6898 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

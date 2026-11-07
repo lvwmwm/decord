@@ -1,17 +1,17 @@
-// Module ID: 18860
-// Function ID: 18861
+// Module ID: 18910
+// Function ID: 18911
 // Name: getIconForChannel
-// Dependencies: [1072, 8758, 8765, 8761, 8744, 8752, 8751, 2]
+// Dependencies: [1072, 8737, 8744, 8740, 8723, 8731, 8730, 2]
 // Exports: getIconForChannel
 
-// Module 18860 (getIconForChannel)
+// Module 18910 (getIconForChannel)
 import Constants from "Constants" /* 1072 */;
-import TextIcon from "TextIcon" /* 8744 */;
-import ImageIcon from "ImageIcon" /* 8751 */;
-import ForumIcon from "ForumIcon" /* 8752 */;
-import AnnouncementsIcon from "AnnouncementsIcon" /* 8758 */;
-import StageIcon from "StageIcon" /* 8761 */;
-import VoiceNormalIcon from "VoiceNormalIcon" /* 8765 */;
+import TextIcon from "TextIcon" /* 8723 */;
+import ImageIcon from "ImageIcon" /* 8730 */;
+import ForumIcon from "ForumIcon" /* 8731 */;
+import AnnouncementsIcon from "AnnouncementsIcon" /* 8737 */;
+import StageIcon from "StageIcon" /* 8740 */;
+import VoiceNormalIcon from "VoiceNormalIcon" /* 8744 */;
 import size from "module_2" /* 2 */;
 
 const ChannelTypes = Constants.ChannelTypes;

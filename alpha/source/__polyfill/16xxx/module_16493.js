@@ -1,39 +1,16 @@
 // Module ID: 16493
 // Function ID: 16494
-// Dependencies: []
-// Exports: getReactNativeVersionWithModules
+// Dependencies: [16457, 16431]
 
 // Module 16493
+import _mod16431 from "module_16431" /* 16431 */;
+import module_16457 from "module_16457" /* 16457 */;
 
-export function getReactNativeVersionWithModules(constants) {
-  try {
-    const tmp = constants;
-    if (tmp) {
-      if (constants.reactNativeVersion) {
-        const major = constants.reactNativeVersion.major;
-        const minor = constants.reactNativeVersion.minor;
-        const patch = constants.reactNativeVersion.patch;
-        const prerelease = constants.reactNativeVersion.prerelease;
-        if (typeof major !== "number") {
-          return null;
-        } else {
-          const items = [];
-          const _HermesInternal2 = HermesInternal;
-          items.push("" + tmp4 + "." + minor + "." + patch);
-          const tmp16 = prerelease;
-          if (tmp16) {
-            const _HermesInternal = HermesInternal;
-            items.push("-" + prerelease);
-          }
-          return items.join("");
-        }
-      } else {
-        return null;
-      }
-    } else {
-      return null;
-    }
-  } catch (err) {
-    return null;
-  }
+let _moduleResult = module_16457(_mod16431.WeakMap);
+if (_moduleResult) {
+  const _String = String;
+  const obj = /native code/;
+  _moduleResult = obj.test(String(_mod16431.WeakMap));
 }
+
+export default _moduleResult;

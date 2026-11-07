@@ -1,8 +1,8 @@
-// Module ID: 6581
-// Function ID: 6582
+// Module ID: 6556
+// Function ID: 6557
 // Dependencies: [2]
 
-// Module 6581
+// Module 6556
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/thumbnail/aura/magnetic.png.js");

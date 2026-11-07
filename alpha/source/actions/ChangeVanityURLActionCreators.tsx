@@ -1,9 +1,9 @@
-// Module ID: 20137
-// Function ID: 20138
+// Module ID: 20206
+// Function ID: 20207
 // Name: ChangeVanityURLActionCreators
 // Dependencies: [1072, 572, 1282, 2]
 
-// Module 20137 (ChangeVanityURLActionCreators)
+// Module 20206 (ChangeVanityURLActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;

@@ -1,10 +1,10 @@
-// Module ID: 19586
-// Function ID: 19587
+// Module ID: 19658
+// Function ID: 19659
 // Name: VoicePanelPreJoinUtils
 // Dependencies: [558, 2]
 // Exports: areVoicePanelPreJoinContentPropsEqual
 
-// Module 19586 (VoicePanelPreJoinUtils)
+// Module 19658 (VoicePanelPreJoinUtils)
 import shallowEqualDefault from "shallowEqual" /* 558 */;
 import size from "module_2" /* 2 */;
 

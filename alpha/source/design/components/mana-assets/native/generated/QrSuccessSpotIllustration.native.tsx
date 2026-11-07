@@ -1,26 +1,26 @@
-// Module ID: 15943
-// Function ID: 15944
+// Module ID: 15991
+// Function ID: 15992
 // Name: QrSuccessSpotIllustration
-// Dependencies: [19, 21, 15944, 15945, 15946, 7160, 5872, 2]
+// Dependencies: [19, 21, 15992, 15993, 15994, 7135, 5842, 2]
 // Exports: QrSuccessSpotIllustration
 
-// Module 15943 (QrSuccessSpotIllustration)
+// Module 15991 (QrSuccessSpotIllustration)
 import Fragment from "Fragment" /* 21 */;
-import react_native from "react-native" /* 7160 */;
-import _modDef15944 from "module_15944" /* 15944 */;
-import _modDef15945 from "module_15945" /* 15945 */;
-import _modDef15946 from "module_15946" /* 15946 */;
+import react_native from "react-native" /* 7135 */;
+import _modDef15992 from "module_15992" /* 15992 */;
+import _modDef15993 from "module_15993" /* 15993 */;
+import _modDef15994 from "module_15994" /* 15994 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef15944 };
+let obj2 = { uri: _modDef15992 };
 obj[1] = obj2;
-let obj3 = { uri: _modDef15945 };
+let obj3 = { uri: _modDef15993 };
 obj[2] = obj3;
-obj[3] = { uri: _modDef15946 };
-({ uri: _modDef15946 });
+obj[3] = { uri: _modDef15994 };
+({ uri: _modDef15994 });
 let size = size_mod;
 const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/QrSuccessSpotIllustration.native.tsx");
 

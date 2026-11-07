@@ -1,15 +1,15 @@
-// Module ID: 17498
-// Function ID: 17499
+// Module ID: 17547
+// Function ID: 17548
 // Name: VoiceSetting
-// Dependencies: [2130, 1072, 504, 1113, 11703, 12147, 17499, 2]
+// Dependencies: [2130, 1072, 504, 1113, 11685, 12138, 17548, 2]
 
-// Module 17498 (VoiceSetting)
+// Module 17547 (VoiceSetting)
 import get_initialized from "get initialized" /* 504 */;
 import intl3 from "intl" /* 1113 */;
-import MicrophoneIcon from "MicrophoneIcon" /* 12147 */;
+import MicrophoneIcon from "MicrophoneIcon" /* 12138 */;
 import MediaEngineStore from "MediaEngineStore" /* 2130 */;
 import Constants from "Constants" /* 1072 */;
-import SettingBuilders from "SettingBuilders" /* 11703 */;
+import SettingBuilders from "SettingBuilders" /* 11685 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

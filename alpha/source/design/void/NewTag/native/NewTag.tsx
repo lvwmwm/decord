@@ -1,19 +1,19 @@
-// Module ID: 16233
-// Function ID: 16234
+// Module ID: 16281
+// Function ID: 16282
 // Name: NewTag
-// Dependencies: [19, 17, 1072, 21, 5170, 575, 5745, 5781, 1113, 2]
+// Dependencies: [19, 17, 1072, 21, 5140, 575, 5715, 5751, 1113, 2]
 // Exports: default
 
-// Module 16233 (NewTag)
+// Module 16281 (NewTag)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl3 from "intl" /* 1113 */;
-import LinearGradientDefault from "LinearGradient" /* 5745 */;
-import Text_Text from "Text/Text" /* 5781 */;
+import LinearGradientDefault from "LinearGradient" /* 5715 */;
+import Text_Text from "Text/Text" /* 5751 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let Platform;

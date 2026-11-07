@@ -1,30 +1,30 @@
-// Module ID: 9718
-// Function ID: 9719
+// Module ID: 9700
+// Function ID: 9701
 // Name: GameProfileCommunities
-// Dependencies: [32, 5, 19, 17, 5041, 5073, 9469, 1072, 5026, 21, 5170, 575, 5033, 504, 9419, 9464, 9439, 7475, 7616, 7435, 6986, 9542, 1113, 9719, 9722, 5404, 9724, 5781, 8119, 9726, 12, 9537, 2]
+// Dependencies: [32, 5, 19, 17, 5011, 5043, 9451, 1072, 4996, 21, 5140, 575, 5003, 504, 9401, 9446, 9421, 7452, 7593, 7412, 6961, 9524, 1113, 9701, 9704, 5374, 9706, 5751, 8098, 9708, 12, 9519, 2]
 // Exports: default
 
-// Module 9718 (GameProfileCommunities)
+// Module 9700 (GameProfileCommunities)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import ChannelConstants from "ChannelConstants" /* 5026 */;
-import GuildRecordUtils from "GuildRecordUtils" /* 5033 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5404 */;
-import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 9419 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9439 */;
-import GameProfileNavTypes from "GameProfileNavTypes" /* 9464 */;
-import GameProfileConstants from "GameProfileConstants" /* 9469 */;
-import useGameProfileCommunitiesDefault from "useGameProfileCommunities" /* 9719 */;
-import useGameProfileCommunitiesLocaleFilterDefault from "useGameProfileCommunitiesLocaleFilter" /* 9722 */;
-import GameProfileCommunitiesLocaleFilterActionSheet from "GameProfileCommunitiesLocaleFilterActionSheet" /* 9724 */;
+import ChannelConstants from "ChannelConstants" /* 4996 */;
+import GuildRecordUtils from "GuildRecordUtils" /* 5003 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5374 */;
+import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 9401 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9421 */;
+import GameProfileNavTypes from "GameProfileNavTypes" /* 9446 */;
+import GameProfileConstants from "GameProfileConstants" /* 9451 */;
+import useGameProfileCommunitiesDefault from "useGameProfileCommunities" /* 9701 */;
+import useGameProfileCommunitiesLocaleFilterDefault from "useGameProfileCommunitiesLocaleFilter" /* 9704 */;
+import GameProfileCommunitiesLocaleFilterActionSheet from "GameProfileCommunitiesLocaleFilterActionSheet" /* 9706 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 5041 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5073 */;
+import GuildStore from "GuildStore" /* 5011 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5043 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 const GameProfileCommunitiesLocaleFilterActionSheetDefault = GameProfileCommunitiesLocaleFilterActionSheet;
@@ -95,7 +95,7 @@ let closure_14 = react.memo(function GameProfileCommunityCard(gameId) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c4;
@@ -193,7 +193,7 @@ let closure_14 = react.memo(function GameProfileCommunityCard(gameId) {
             closure_130_7(currentlySelectedChannelId2, channelId);
           }
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp62) {
         if (0 === c4) {
@@ -258,12 +258,12 @@ export default function GameProfileCommunities(game) {
   let obj = { style: tmp.container, children: items2 };
   let obj2 = { style: tmp.header, children: items1 };
   const obj3 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", style: tmp.heading, children: intl.string(game(1113).t.r6bvTh) };
-  const Heading = game(5781).Heading;
+  const Heading = game(5751).Heading;
   intl = game(1113).intl;
   items1 = [closure_11(Heading, obj3), ];
   if (showLocaleFilter) {
-    const obj4 = { size: "sm", variant: "secondary", icon: closure_11(game(9726).LanguageIcon, { size: "sm" }), accessibilityLabel: intl2.string(game(1113).t.OlOHDH), onPress: callback };
-    const IconButton = tmp12(8119).IconButton;
+    const obj4 = { size: "sm", variant: "secondary", icon: closure_11(game(9708).LanguageIcon, { size: "sm" }), accessibilityLabel: intl2.string(game(1113).t.OlOHDH), onPress: callback };
+    const IconButton = tmp12(8098).IconButton;
     intl2 = tmp12(1113).intl;
     showLocaleFilter = tmp11(IconButton, obj4);
   }

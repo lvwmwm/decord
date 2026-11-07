@@ -1,20 +1,21 @@
-// Module ID: 15174
-// Function ID: 15175
+// Module ID: 15212
+// Function ID: 15213
 // Name: UserProfileGameDetailsRow
-// Dependencies: [19, 17, 21, 5170, 575, 15147, 15175, 15176, 5781, 15179, 2150, 15180, 15182, 2]
+// Dependencies: [19, 17, 21, 5140, 15197, 575, 15179, 15213, 15214, 5751, 15217, 2150, 15218, 15220, 2]
 
-// Module 15174 (UserProfileGameDetailsRow)
+// Module 15212 (UserProfileGameDetailsRow)
 import nativeDefault from "native" /* 575 */;
 import StringUtils from "StringUtils" /* 2150 */;
-import Text_Text from "Text/Text" /* 5781 */;
-import useGameNameAndCoverImageDefault from "useGameNameAndCoverImage" /* 15147 */;
-import useWidgetGamePressDefault from "useWidgetGamePress" /* 15175 */;
-import UserProfileWidgetGameCover from "UserProfileWidgetGameCover" /* 15176 */;
-import UserProfileWidgetGameTagsDefault from "UserProfileWidgetGameTags" /* 15182 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import useGameNameAndCoverImageDefault from "useGameNameAndCoverImage" /* 15179 */;
+import UserProfileGameWidgetConstants from "UserProfileGameWidgetConstants" /* 15197 */;
+import useWidgetGamePressDefault from "useWidgetGamePress" /* 15213 */;
+import UserProfileWidgetGameCover from "UserProfileWidgetGameCover" /* 15214 */;
+import UserProfileWidgetGameTagsDefault from "UserProfileWidgetGameTags" /* 15220 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -28,7 +29,7 @@ let obj4;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let createStyles = createStyles_mod;
 let obj = { row: obj2, editingCommentRow: { alignItems: "flex-start" }, details: obj3, comment: obj4, commentText: { flex: 1 } };
-obj2 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_12 };
+obj2 = { flexDirection: "row", alignItems: "center", gap: UserProfileGameWidgetConstants.GAME_COVER_DETAILS_GAP };
 createStyles = createStyles.createStyles;
 obj3 = { flex: 1, gap: nativeDefault.space.PX_8 };
 obj4 = { flexDirection: "row", alignItems: "flex-start", gap: nativeDefault.space.PX_4 };
@@ -83,7 +84,7 @@ const memoResult = react.memo(function UserProfileGameDetailsRow(arg0) {
   if (null != editableCommentWidgetType) {
     const obj5 = { widgetType: editableCommentWidgetType, gameId: null, comment: null };
     ({ gameId: obj8.gameId, comment: obj8.comment } = game);
-    tmp7Result = tmp10(tmp3(15179), obj5);
+    tmp7Result = tmp10(tmp3(15217), obj5);
   } else {
     let trimmed;
     const isNullOrEmpty = StringUtils.isNullOrEmpty;
@@ -96,7 +97,7 @@ const memoResult = react.memo(function UserProfileGameDetailsRow(arg0) {
     if (tmp7Result) {
       const obj6 = { style: tmp2.comment, children: items3 };
       const obj7 = { size: "xxs", color: nativeDefault.colors.TEXT_MUTED };
-      const QuoteIcon = tmp11(15180).QuoteIcon;
+      const QuoteIcon = tmp11(15218).QuoteIcon;
       items3 = [hasOwnProperty(QuoteIcon, obj7), ];
       const obj9 = { variant: "body-sm/normal", color: "text-muted", lineClamp: 3, style: tmp2.commentText, children: game.comment };
       items3[1] = hasOwnProperty(Text_Text.Text, obj9);

@@ -1,22 +1,22 @@
-// Module ID: 17038
-// Function ID: 17039
+// Module ID: 17086
+// Function ID: 17087
 // Name: FamilyCenterActivityBanner
-// Dependencies: [19, 17, 21, 5170, 8461, 8462, 17039, 575, 13569, 1113, 2664, 5872, 17046, 17047, 5781, 2]
+// Dependencies: [19, 17, 21, 5140, 8440, 8441, 17087, 575, 13593, 1113, 2664, 5842, 17094, 17095, 5751, 2]
 // Exports: default
 
-// Module 17038 (FamilyCenterActivityBanner)
+// Module 17086 (FamilyCenterActivityBanner)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
 import _modDef2664 from "module_2664" /* 2664 */;
-import Text_Text from "Text/Text" /* 5781 */;
-import FastImageDefault from "FastImage" /* 5872 */;
-import useUserLinks from "useUserLinks" /* 8461 */;
-import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8462 */;
-import useAgeSpecificText3 from "useAgeSpecificText" /* 13569 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import FastImageDefault from "FastImage" /* 5842 */;
+import useUserLinks from "useUserLinks" /* 8440 */;
+import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8441 */;
+import useAgeSpecificText3 from "useAgeSpecificText" /* 13593 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -25,7 +25,7 @@ let obj2;
 let obj3;
 let obj4;
 let tmp2;
-const FamilyCenterBannerButton = tmp2(17039);
+const FamilyCenterBannerButton = tmp2(17087);
 function FamilyCenterActivityBannerButton() {
   let tmp2Result;
   const tmp = closure_6();
@@ -77,7 +77,7 @@ export default function FamilyCenterActivityBanner() {
   const intl4 = intl5.intl;
   const obj2 = { style: tmp4.container, children: items };
   const ageSpecificText2 = useAgeSpecificText2(formatResult, intl4.format(_modDef2664.EMCf6j, { articleLink: "https://support.discord.com/hc/articles/14155043715735" }));
-  const obj3 = { source: importDefault(tmp3 ? 17046 : 17047), style: tmp4.art };
+  const obj3 = { source: importDefault(tmp3 ? 17094 : 17095), style: tmp4.art };
   const tmp16 = FastImageDefault;
   items = [React3(tmp16, obj3), , , ];
   const obj4 = { style: tmp4.header, variant: "heading-lg/semibold", children: ageSpecificText };

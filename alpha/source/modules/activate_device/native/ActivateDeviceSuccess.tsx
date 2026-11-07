@@ -1,20 +1,20 @@
-// Module ID: 15964
-// Function ID: 15965
+// Module ID: 16012
+// Function ID: 16013
 // Name: ActivateDeviceSuccess
-// Dependencies: [19, 17, 21, 5170, 1113, 9849, 5872, 1411, 15963, 5781, 5788, 2]
+// Dependencies: [19, 17, 21, 5140, 1113, 9833, 5842, 1411, 16011, 5751, 5758, 2]
 // Exports: ActivateDeviceSuccess
 
-// Module 15964 (ActivateDeviceSuccess)
+// Module 16012 (ActivateDeviceSuccess)
 import react_native from "react-native" /* 17 */;
 import intl5 from "intl" /* 1113 */;
 import AvatarUtils from "AvatarUtils" /* 1411 */;
-import Text_Text from "Text/Text" /* 5781 */;
-import FastImageDefault from "FastImage" /* 5872 */;
-import scopes2 from "scopes" /* 9849 */;
-import ActivateDeviceSharedStylesDefault from "ActivateDeviceSharedStyles" /* 15963 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import FastImageDefault from "FastImage" /* 5842 */;
+import scopes2 from "scopes" /* 9833 */;
+import ActivateDeviceSharedStylesDefault from "ActivateDeviceSharedStyles" /* 16011 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -68,14 +68,14 @@ export function ActivateDeviceSuccess(onComplete) {
   const tmp15 = View;
   if (null != stringResult) {
     const obj5 = { variant: "body-md/medium", color: "text-default", style: ActivateDeviceSharedStylesDefault.centerText, children: stringResult };
-    const Text2 = tmp19(5781).Text;
+    const Text2 = tmp19(5751).Text;
     tmp18Result = tmp18(Text2, obj5);
   }
   const obj6 = { children: items };
   items1[1] = tmp18Result;
   items[1] = hasOwnProperty(tmp15, obj3);
   const obj7 = { size: "lg", text: intl4.string(intl5.t.cpT0Cq), onPress: onComplete, grow: true };
-  const Button = tmp19(5788).Button;
+  const Button = tmp19(5758).Button;
   intl4 = tmp19(1113).intl;
   items[2] = React3(Button, obj7);
   return hasOwnProperty(tmp8, obj6);

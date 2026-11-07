@@ -1,14 +1,14 @@
-// Module ID: 14544
-// Function ID: 14545
+// Module ID: 14577
+// Function ID: 14578
 // Name: HubActionCreators
-// Dependencies: [5, 1072, 6827, 1260, 5031, 1282, 572, 2]
+// Dependencies: [5, 1072, 6802, 1260, 5001, 1282, 572, 2]
 
-// Module 14544 (HubActionCreators)
+// Module 14577 (HubActionCreators)
 import Constants from "Constants" /* 1072 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
-import TypeUtils from "TypeUtils" /* 5031 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6827 */;
+import TypeUtils from "TypeUtils" /* 5001 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6802 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -89,7 +89,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c3;
@@ -147,7 +147,7 @@ let obj = {
             c3 = 0;
           }
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp29) {
           body = tmp29;
           if (0 === c3) {
@@ -179,7 +179,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c3;
@@ -213,7 +213,7 @@ let obj = {
                 return obj7;
               } else {
                 c5 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               }
             }
           } else if (1 === constants) {

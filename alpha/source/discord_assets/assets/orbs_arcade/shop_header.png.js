@@ -1,8 +1,8 @@
-// Module ID: 18119
-// Function ID: 18120
+// Module ID: 18166
+// Function ID: 18167
 // Dependencies: [2]
 
-// Module 18119
+// Module 18166
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/orbs_arcade/shop_header.png.js");

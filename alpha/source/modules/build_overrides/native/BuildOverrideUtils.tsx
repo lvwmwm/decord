@@ -1,15 +1,15 @@
-// Module ID: 13407
-// Function ID: 13408
+// Module ID: 13430
+// Function ID: 13431
 // Name: build_overrides/BuildOverrideUtils
-// Dependencies: [5, 11520, 1377, 13408, 13409, 6117, 1374, 2]
+// Dependencies: [5, 11502, 1377, 13431, 13432, 6091, 1374, 2]
 // Exports: refreshBuildOverride, setBuildOverrideForId, setBuildOverrideFromLink, toggleOverride
 
-// Module 13407 (build_overrides/BuildOverrideUtils)
+// Module 13430 (build_overrides/BuildOverrideUtils)
 import BuildOverrideUtils from "BuildOverrideUtils" /* 1374 */;
-import ApplyBuildOverrideUtils from "ApplyBuildOverrideUtils" /* 13408 */;
-import BundleUpdaterDefault from "BundleUpdater" /* 13409 */;
+import ApplyBuildOverrideUtils from "ApplyBuildOverrideUtils" /* 13431 */;
+import BundleUpdaterDefault from "BundleUpdater" /* 13432 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import BuildOverrideStore from "BuildOverrideStore" /* 11520 */;
+import BuildOverrideStore from "BuildOverrideStore" /* 11502 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import size from "module_2" /* 2 */;
 
@@ -36,7 +36,7 @@ let obj = function _setBuildOverride() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -79,7 +79,7 @@ let obj = function _setBuildOverride() {
             obj.show(obj9);
           }
           c4 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp20) {
         c4 = 3;
@@ -106,7 +106,7 @@ obj = function _clearBuildOverride() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -147,7 +147,7 @@ obj = function _clearBuildOverride() {
             obj.show(obj8);
           }
           c3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp17) {
         c3 = 3;
@@ -172,7 +172,7 @@ obj = function _toggleOverride() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -217,7 +217,7 @@ obj = function _toggleOverride() {
                 if (null != id1) {
                   setBuildOverrideForBranch(id1);
                   c4 = 3;
-                  return { value: "HermesInternal", done: null };
+                  return { value: "HermesInternal", done: "HermesInternal" };
                 }
               }
               c3 = 1;
@@ -246,7 +246,7 @@ obj = function _toggleOverride() {
           }
         }
         c4 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp28) {
         c4 = 3;
         throw tmp28;
@@ -270,7 +270,7 @@ obj = function _setBuildOverrideFromLink() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -336,7 +336,7 @@ obj = function _setBuildOverrideFromLink() {
           }
         }
         c4 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp25) {
         c4 = 3;
         throw tmp25;

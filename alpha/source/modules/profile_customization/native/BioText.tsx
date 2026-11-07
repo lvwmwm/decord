@@ -1,21 +1,21 @@
-// Module ID: 11656
-// Function ID: 11657
+// Module ID: 11638
+// Function ID: 11639
 // Name: BioText
-// Dependencies: [19, 17, 1072, 5072, 21, 5170, 5864, 1252, 5781, 11657, 1377, 5071, 1113, 2]
+// Dependencies: [19, 17, 1072, 5042, 21, 5140, 5834, 1252, 5751, 11639, 1377, 5041, 1113, 2]
 // Exports: default
 
-// Module 11656 (BioText)
+// Module 11638 (BioText)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
-import ChangelogConstants from "ChangelogConstants" /* 5072 */;
-import Text_Text from "Text/Text" /* 5781 */;
-import LinkingDefault from "Linking" /* 5864 */;
-import BioMarkupUtils from "BioMarkupUtils" /* 11657 */;
+import ChangelogConstants from "ChangelogConstants" /* 5042 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import LinkingDefault from "Linking" /* 5834 */;
+import BioMarkupUtils from "BioMarkupUtils" /* 11639 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let c9;
@@ -75,7 +75,7 @@ export default function BioText(lineClamp) {
     let num;
     const parseBioReact = BioMarkupUtils.parseBioReact;
     BioMarkupUtils;
-    const obj = { guildId, linkVariant: str, textVariant: str, enableEmojiInteraction: true, customEmojiOffsetY: num };
+    const obj = { guildId, linkVariant: str, textVariant: str, enableEmojiInteraction: true, customEmojiSize: Text_Text.TextStyleSheet[str].fontSize, customEmojiOffsetY: num };
     num = undefined;
     const tmp4 = bio;
     const tmpResult = PlatformUtils;

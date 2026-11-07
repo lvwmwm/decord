@@ -1,14 +1,14 @@
-// Module ID: 15012
-// Function ID: 15013
+// Module ID: 15044
+// Function ID: 15045
 // Name: ZoomLayoutPager
-// Dependencies: [32, 19, 17, 21, 5792, 1652, 1705, 5791, 5450, 2]
+// Dependencies: [32, 19, 17, 21, 5762, 1652, 1705, 5761, 5420, 2]
 
-// Module 15012 (ZoomLayoutPager)
+// Module 15044 (ZoomLayoutPager)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import _mod1705 from "module_1705" /* 1705 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5450 */;
-import springPresets from "springPresets" /* 5792 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5420 */;
+import springPresets from "springPresets" /* 5762 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;

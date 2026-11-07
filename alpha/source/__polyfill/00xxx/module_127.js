@@ -17,7 +17,7 @@ class DOMRectList {
     let length;
     const self = this;
     _classCallCheck(this, DOMRectList);
-    Object.defineProperty(this, closure_4, { writable: true, value: "a" });
+    Object.defineProperty(this, closure_4, { writable: true, value: "Array" });
     let num = 0;
     if (0 < arg0.length) {
       do {

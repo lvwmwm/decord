@@ -1,12 +1,12 @@
-// Module ID: 7249
-// Function ID: 7250
+// Module ID: 7224
+// Function ID: 7225
 // Name: showInvalidUsernameToastNative
-// Dependencies: [5867, 1113, 2]
+// Dependencies: [5837, 1113, 2]
 // Exports: showInvalidUsernameToast
 
-// Module 7249 (showInvalidUsernameToastNative)
+// Module 7224 (showInvalidUsernameToastNative)
 import intl2 from "intl" /* 1113 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5867 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5837 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/user_settings/account/native/showInvalidUsernameToastNative.tsx");

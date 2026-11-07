@@ -1,26 +1,26 @@
-// Module ID: 18250
-// Function ID: 18251
+// Module ID: 18297
+// Function ID: 18298
 // Name: DevWidget
-// Dependencies: [19, 7962, 573, 21, 5170, 575, 1652, 11402, 13005, 5450, 1705, 5791, 5792, 7068, 16692, 17843, 18251, 17842, 2]
+// Dependencies: [19, 7940, 573, 21, 5140, 575, 1652, 11384, 13028, 5420, 1705, 5761, 5762, 7043, 16740, 17892, 18298, 17891, 2]
 // Exports: default
 
-// Module 18250 (DevWidget)
+// Module 18297 (DevWidget)
 import Constants from "Constants" /* 573 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1652 from "module_1652" /* 1652 */;
 import _mod1705 from "module_1705" /* 1705 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5450 */;
-import spring_spring from "spring/spring" /* 5791 */;
-import springPresets from "springPresets" /* 5792 */;
-import Pressables from "Pressables" /* 7068 */;
-import useSafeAreaInsetsSharedValueDefault from "useSafeAreaInsetsSharedValue" /* 11402 */;
-import useWindowDimensionsSharedValueDefault from "useWindowDimensionsSharedValue" /* 13005 */;
-import StaffBadgeIcon from "StaffBadgeIcon" /* 17843 */;
-import VEVOODefault from "VEVOO" /* 18251 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5420 */;
+import spring_spring from "spring/spring" /* 5761 */;
+import springPresets from "springPresets" /* 5762 */;
+import Pressables from "Pressables" /* 7043 */;
+import useSafeAreaInsetsSharedValueDefault from "useSafeAreaInsetsSharedValue" /* 11384 */;
+import useWindowDimensionsSharedValueDefault from "useWindowDimensionsSharedValue" /* 13028 */;
+import StaffBadgeIcon from "StaffBadgeIcon" /* 17892 */;
+import VEVOODefault from "VEVOO" /* 18298 */;
 import react from "react" /* 19 */;
-import DevToolsSettingsStore from "DevToolsSettingsStore" /* 7962 */;
+import DevToolsSettingsStore from "DevToolsSettingsStore" /* 7940 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -205,7 +205,7 @@ function DraggableContainer(arg0) {
   DevWidgetTsx5.__initData = tmp37;
   const animatedStyle = useAnimatedStyle(DevWidgetTsx5);
   const obj4 = { gesture: panGesture, children: metroRequire(_modDef1652.View, obj5) };
-  const GestureDetector = tmp2(5450).GestureDetector;
+  const GestureDetector = tmp2(5420).GestureDetector;
   obj5 = { style: items11, children };
   items11 = [tmp.widgetContainer, animatedStyle];
   return metroRequire(GestureDetector, obj4);

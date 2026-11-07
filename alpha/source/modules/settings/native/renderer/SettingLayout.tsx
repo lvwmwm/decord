@@ -1,13 +1,13 @@
-// Module ID: 16846
-// Function ID: 16847
+// Module ID: 16894
+// Function ID: 16895
 // Name: SettingLayout
-// Dependencies: [19, 11704, 21, 16847, 16861, 2]
+// Dependencies: [19, 11686, 21, 16895, 16909, 2]
 
-// Module 16846 (SettingLayout)
+// Module 16894 (SettingLayout)
 import Fragment from "Fragment" /* 21 */;
-import SettingRendererConstants from "SettingRendererConstants" /* 11704 */;
-import SettingListRenderer from "SettingListRenderer" /* 16847 */;
-import SettingSegmentedControlRendererDefault from "SettingSegmentedControlRenderer" /* 16861 */;
+import SettingRendererConstants from "SettingRendererConstants" /* 11686 */;
+import SettingListRenderer from "SettingListRenderer" /* 16895 */;
+import SettingSegmentedControlRendererDefault from "SettingSegmentedControlRenderer" /* 16909 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -1,8 +1,8 @@
-// Module ID: 13651
-// Function ID: 13652
+// Module ID: 13675
+// Function ID: 13676
 // Dependencies: [2]
 
-// Module 13651
+// Module 13675
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/checkpoint_2026_share_card_texture.png.js");

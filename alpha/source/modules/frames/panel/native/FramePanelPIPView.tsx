@@ -1,16 +1,16 @@
-// Module ID: 19456
-// Function ID: 19457
+// Module ID: 19515
+// Function ID: 19516
 // Name: FramePanelPIPView
-// Dependencies: [19, 6926, 6927, 19298, 21, 504, 19432, 19454, 12424, 12428, 2]
+// Dependencies: [19, 6901, 6902, 19357, 21, 504, 19491, 19513, 12437, 12441, 2]
 
-// Module 19456 (FramePanelPIPView)
+// Module 19515 (FramePanelPIPView)
 import Fragment from "Fragment" /* 21 */;
-import ActivityPanelNativeConstants from "ActivityPanelNativeConstants" /* 19298 */;
-import ActivityPanelPIPView from "ActivityPanelPIPView" /* 19432 */;
-import FramePanelStateContextDefault from "FramePanelStateContext" /* 19454 */;
+import ActivityPanelNativeConstants from "ActivityPanelNativeConstants" /* 19357 */;
+import ActivityPanelPIPView from "ActivityPanelPIPView" /* 19491 */;
+import FramePanelStateContextDefault from "FramePanelStateContext" /* 19513 */;
 import react_mod from "react" /* 19 */;
-import FramesStore from "FramesStore" /* 6926 */;
-import FramesConstants from "FramesConstants" /* 6927 */;
+import FramesStore from "FramesStore" /* 6901 */;
+import FramesConstants from "FramesConstants" /* 6902 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -18,8 +18,8 @@ let metroImportDefault;
 let metroRequire;
 let tmp2;
 let tmp6;
-const FrameRenderTargetDefault = tmp6(12424);
-const FrameStackLevel = tmp2(12428);
+const FrameRenderTargetDefault = tmp6(12437);
+const FrameStackLevel = tmp2(12441);
 let react = react_mod;
 ({ asLaunched: hasOwnProperty, FrameLayoutModes: metroRequire, getPipOrientationLockStateForFrame: metroImportDefault } = FramesConstants);
 let closure_8 = ActivityPanelNativeConstants.DEFAULT_PORTRAIT_LETTERBOX_CONFIG;

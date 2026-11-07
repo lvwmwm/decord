@@ -1,17 +1,17 @@
-// Module ID: 16708
-// Function ID: 16709
+// Module ID: 16756
+// Function ID: 16757
 // Name: ColorBlock
-// Dependencies: [19, 17, 21, 5170, 575, 1090, 7068, 5167, 1187, 11759, 2]
+// Dependencies: [19, 17, 21, 5140, 575, 1090, 7043, 5137, 1187, 11750, 2]
 
-// Module 16708 (ColorBlock)
+// Module 16756 (ColorBlock)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1090 */;
-import ColorUtils from "ColorUtils" /* 5167 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11759 */;
+import ColorUtils from "ColorUtils" /* 5137 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11750 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let color;
@@ -57,7 +57,7 @@ const memoResult = react.memo((color) => {
       style: items,
       children: tmp7Result
     };
-    const PressableOpacity = tmp2(7068).PressableOpacity;
+    const PressableOpacity = tmp2(7043).PressableOpacity;
     hexToColorName = ColorUtils.hexToColorName;
     ColorUtils;
     items = [tmp.colorBlock, style, ];

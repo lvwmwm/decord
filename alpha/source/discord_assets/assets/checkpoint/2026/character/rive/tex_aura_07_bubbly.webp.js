@@ -1,8 +1,8 @@
-// Module ID: 13682
-// Function ID: 13683
+// Module ID: 13706
+// Function ID: 13707
 // Dependencies: [2]
 
-// Module 13682
+// Module 13706
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/rive/tex_aura_07_bubbly.webp.js");

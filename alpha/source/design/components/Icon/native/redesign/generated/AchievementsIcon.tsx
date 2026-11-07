@@ -1,14 +1,14 @@
-// Module ID: 17857
-// Function ID: 17858
+// Module ID: 17904
+// Function ID: 17905
 // Name: AchievementsIcon
-// Dependencies: [19, 21, 575, 5871, 17858, 2]
+// Dependencies: [19, 21, 575, 5841, 17905, 2]
 // Exports: AchievementsIcon
 
-// Module 17857 (AchievementsIcon)
+// Module 17904 (AchievementsIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5871 */;
-import AssetRegistry from "AssetRegistry" /* 17858 */;
+import BaseIconImage2 from "BaseIconImage" /* 5841 */;
+import AssetRegistry from "AssetRegistry" /* 17905 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

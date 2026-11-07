@@ -1,11 +1,11 @@
-// Module ID: 13888
-// Function ID: 13889
+// Module ID: 13912
+// Function ID: 13913
 // Name: useFriendsAnimationState
-// Dependencies: [32, 19, 6592, 2]
+// Dependencies: [32, 19, 6567, 2]
 // Exports: useFriendsAnimationState
 
-// Module 13888 (useFriendsAnimationState)
-import CheckpointNavigation from "CheckpointNavigation" /* 6592 */;
+// Module 13912 (useFriendsAnimationState)
+import CheckpointNavigation from "CheckpointNavigation" /* 6567 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -26,10 +26,10 @@ export function useFriendsAnimationState(route, stateFromStores3) {
     tmp7 = !stateFromStores3;
     first.hasShownSquad || route === CheckpointNavigation.CheckpointRoute.SQUAD;
     if (tmp7) {
-      tmp7 = first.route === tmp(6592).CheckpointRoute.SQUAD;
+      tmp7 = first.route === tmp(6567).CheckpointRoute.SQUAD;
     }
     if (tmp7) {
-      tmp7 = route === tmp(6592).CheckpointRoute.SIDEKICK;
+      tmp7 = route === tmp(6567).CheckpointRoute.SIDEKICK;
     }
     tmp3[1](obj3);
   }

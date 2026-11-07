@@ -1,12 +1,12 @@
-// Module ID: 14959
-// Function ID: 14960
+// Module ID: 14992
+// Function ID: 14993
 // Name: GuildProductLinkActionCreators
-// Dependencies: [6117, 1113, 2]
+// Dependencies: [6091, 1113, 2]
 // Exports: openGuildProductLink
 
-// Module 14959 (GuildProductLinkActionCreators)
+// Module 14992 (GuildProductLinkActionCreators)
 import intl3 from "intl" /* 1113 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6117 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6091 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_products/GuildProductLinkActionCreators.native.tsx");

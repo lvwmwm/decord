@@ -1,27 +1,27 @@
-// Module ID: 17230
-// Function ID: 17231
+// Module ID: 17278
+// Function ID: 17279
 // Name: BountiesScrollRecapPage
-// Dependencies: [19, 17, 5171, 21, 575, 5170, 1377, 9606, 17231, 8965, 17232, 1627, 504, 17233, 5781, 1113, 9634, 5788, 2]
+// Dependencies: [19, 17, 5141, 21, 575, 5140, 1377, 9588, 17279, 8947, 17280, 1627, 504, 17281, 5751, 1113, 9616, 5758, 2]
 // Exports: BountiesScrollRecapPage
 
-// Module 17230 (BountiesScrollRecapPage)
+// Module 17278 (BountiesScrollRecapPage)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import Text_Text from "Text/Text" /* 5781 */;
-import components_Button_Button from "components/Button/Button" /* 5788 */;
-import common_Video from "common/Video" /* 8965 */;
-import OrbsIcon from "OrbsIcon" /* 9634 */;
-import _modDef17231 from "module_17231" /* 17231 */;
-import _modDef17232 from "module_17232" /* 17232 */;
-import _modDef17233 from "module_17233" /* 17233 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import components_Button_Button from "components/Button/Button" /* 5758 */;
+import common_Video from "common/Video" /* 8947 */;
+import OrbsIcon from "OrbsIcon" /* 9616 */;
+import _modDef17279 from "module_17279" /* 17279 */;
+import _modDef17280 from "module_17280" /* 17280 */;
+import _modDef17281 from "module_17281" /* 17281 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5171 */;
+import AccessibilityStore from "AccessibilityStore" /* 5141 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -39,13 +39,13 @@ function BountiesRecapOrbsBackground(arg0) {
   const obj = PlatformUtils;
   if (obj.isAndroid()) {
     const obj2 = { style, needsOffscreenAlphaCompositing: true, renderToHardwareTextureAndroid: true, pointerEvents: "none", children: metroRequire(APNGPlayer, obj3) };
-    obj3 = { url: _modDef17231, style: _false.absoluteFillObject, autoplay: !reducedMotion };
-    APNGPlayer = tmp(9606).APNGPlayer;
+    obj3 = { url: _modDef17279, style: _false.absoluteFillObject, autoplay: !reducedMotion };
+    APNGPlayer = tmp(9588).APNGPlayer;
     tmp3Result = tmp3(React3, obj2);
   } else {
     const obj4 = { source: obj5, style, resizeMode: "contain", paused: reducedMotion, disableFocus: true, preventsDisplaySleepDuringVideoPlayback: false, importantForAccessibility: "no-hide-descendants" };
-    obj5 = { uri: _modDef17232 };
-    const VideoComponent = tmp(8965).VideoComponent;
+    obj5 = { uri: _modDef17280 };
+    const VideoComponent = tmp(8947).VideoComponent;
     tmp3Result = tmp3(VideoComponent, obj4);
   }
   return tmp3Result;
@@ -100,7 +100,7 @@ export function BountiesScrollRecapPage(orbAmount) {
   items1 = [tmp.root, style];
   const obj3 = { style: _false.absoluteFillObject, pointerEvents: "none", children: items2 };
   const obj4 = { source: obj5, style: _false.absoluteFillObject, resizeMode: "cover", paused: stateFromStores, disableFocus: true, preventsDisplaySleepDuringVideoPlayback: false, importantForAccessibility: "no-hide-descendants" };
-  obj5 = { uri: _modDef17233 };
+  obj5 = { uri: _modDef17281 };
   const VideoComponent = common_Video.VideoComponent;
   items2 = [metroRequire(VideoComponent, obj4), ];
   const obj6 = { style: tmp.orbsBackground, reducedMotion: stateFromStores };
@@ -108,7 +108,7 @@ export function BountiesScrollRecapPage(orbAmount) {
   items3 = [metroImportDefault(React3, obj3), ];
   const obj7 = { style: tmp.content, pointerEvents: "box-none", children: items6 };
   const obj8 = { style: tmp.centeredCopy, pointerEvents: "none", children: items4 };
-  const obj9 = { variant: "body-sm/medium", color: "text-brand", style: tmp.headerLabel, children: intl.string(intl4.t.d6Rrn6) };
+  const obj9 = { variant: "display-xs", color: "text-brand", style: tmp.headerLabel, children: intl.string(intl4.t.CzRXoC) };
   const Text = Text_Text.Text;
   intl = intl4.intl;
   items4 = [metroRequire(Text, obj9), , ];
@@ -119,7 +119,7 @@ export function BountiesScrollRecapPage(orbAmount) {
   const Text2 = Text_Text.Text;
   items5[1] = metroRequire(Text2, obj12);
   items4[1] = metroRequire(React3, obj10);
-  const obj13 = { variant: "body-md/medium", color: "text-muted", style: { textAlign: "center" }, children: intl2.string(intl4.t.x0Ffz3) };
+  const obj13 = { variant: "body-md/medium", color: "text-muted", style: { textAlign: "center" }, children: intl2.string(intl4.t.li1TY8) };
   const Text3 = Text_Text.Text;
   intl2 = intl4.intl;
   items4[2] = metroRequire(Text3, obj13);

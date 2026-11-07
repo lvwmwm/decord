@@ -1,26 +1,26 @@
-// Module ID: 13967
-// Function ID: 13968
+// Module ID: 13992
+// Function ID: 13993
 // Name: AddMediaToOriginalForumPostActionSheet
-// Dependencies: [32, 5, 19, 17, 5019, 7800, 5041, 6219, 1072, 21, 5170, 575, 10344, 8307, 8322, 5404, 9887, 9884, 11, 8302, 9886, 8292, 1282, 13968, 7735, 8779, 6117, 1113, 504, 7410, 8294, 8311, 5418, 13969, 5781, 5789, 2]
+// Dependencies: [32, 5, 19, 17, 4989, 7777, 5011, 6194, 1072, 21, 5140, 575, 10327, 8286, 8301, 5374, 9871, 9868, 11, 8281, 9870, 8271, 1282, 13993, 7712, 8758, 6091, 1113, 504, 7387, 8273, 8290, 5388, 13994, 5751, 5759, 2]
 // Exports: default
 
-// Module 13967 (AddMediaToOriginalForumPostActionSheet)
+// Module 13992 (AddMediaToOriginalForumPostActionSheet)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5404 */;
-import DraftStore from "DraftStore" /* 7800 */;
-import Tracking from "Tracking" /* 8294 */;
-import utils_UploadUtils from "utils/UploadUtils" /* 8311 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
+import DraftStore from "DraftStore" /* 7777 */;
+import Tracking from "Tracking" /* 8273 */;
+import utils_UploadUtils from "utils/UploadUtils" /* 8290 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 5019 */;
-import GuildStore from "GuildStore" /* 5041 */;
-import MessageStore from "MessageStore" /* 6219 */;
+import ChannelStore from "ChannelStore" /* 4989 */;
+import GuildStore from "GuildStore" /* 5011 */;
+import MessageStore from "MessageStore" /* 6194 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 let c9, closure_6;
@@ -57,7 +57,7 @@ let obj = function _upload2() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c7;
@@ -261,7 +261,7 @@ let obj = function _upload2() {
               c7 = 0;
             }
             c9 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp72) {
           closure_6 = tmp72;

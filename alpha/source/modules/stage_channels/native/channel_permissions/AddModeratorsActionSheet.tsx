@@ -1,19 +1,19 @@
-// Module ID: 19210
-// Function ID: 19211
+// Module ID: 19269
+// Function ID: 19270
 // Name: AddModeratorsActionSheet
-// Dependencies: [5, 32, 19, 17, 5041, 8038, 21, 5170, 575, 504, 5806, 6790, 2116, 9130, 5866, 5404, 5418, 7405, 1113, 5788, 9169, 5027, 2]
+// Dependencies: [5, 32, 19, 17, 5011, 8016, 21, 5140, 575, 504, 5776, 6765, 2116, 9112, 5836, 5374, 5388, 7382, 1113, 5758, 9151, 4997, 2]
 // Exports: default
 
-// Module 19210 (AddModeratorsActionSheet)
+// Module 19269 (AddModeratorsActionSheet)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 8038 */;
+import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 8016 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 5041 */;
-import createStyles from "createStyles" /* 5170 */;
+import GuildStore from "GuildStore" /* 5011 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5, closure_0, closure_1, closure_2, id, row;
@@ -51,7 +51,7 @@ export default function AddModeratorsActionSheet(channel) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c3;
@@ -115,7 +115,7 @@ export default function AddModeratorsActionSheet(channel) {
               c3 = 0;
             }
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp16) {
           closure_2 = tmp16;

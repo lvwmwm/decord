@@ -1,13 +1,13 @@
-// Module ID: 18318
-// Function ID: 18319
+// Module ID: 18365
+// Function ID: 18366
 // Name: showPushNotificationPromptModal
-// Dependencies: [14181, 14479, 6824, 18319, 2118, 14184, 2]
+// Dependencies: [14206, 14512, 6799, 18366, 2118, 14209, 2]
 // Exports: showPushNotificationPromptModal
 
-// Module 18318 (showPushNotificationPromptModal)
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6824 */;
-import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 14181 */;
-import NUFConstants from "NUFConstants" /* 14479 */;
+// Module 18365 (showPushNotificationPromptModal)
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6799 */;
+import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 14206 */;
+import NUFConstants from "NUFConstants" /* 14512 */;
 import size from "module_2" /* 2 */;
 
 const PermissionStateType = PushNotificationPermissionStore.PermissionStateType;
@@ -24,7 +24,7 @@ export function showPushNotificationPromptModal(onComplete) {
       onComplete();
     }
   };
-  obj.pushLazy(onComplete(2118)(18319, dependencyMap.paths), obj2, closure_4);
-  const obj3 = onComplete(14184);
+  obj.pushLazy(onComplete(2118)(18366, dependencyMap.paths), obj2, closure_4);
+  const obj3 = onComplete(14209);
   const result = obj3.setPushPermissionState(PermissionStateType.PROMPT_SEEN);
 }

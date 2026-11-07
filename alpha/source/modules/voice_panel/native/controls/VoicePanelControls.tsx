@@ -1,35 +1,35 @@
-// Module ID: 19610
-// Function ID: 19611
+// Module ID: 19683
+// Function ID: 19684
 // Name: VoicePanelControls
-// Dependencies: [32, 19, 17, 6923, 11381, 11384, 11379, 1072, 21, 5170, 575, 1624, 19611, 9090, 11380, 1652, 19505, 5754, 5450, 1705, 19612, 11387, 14036, 5406, 5420, 13005, 10227, 19613, 19465, 19614, 5229, 19618, 19620, 7047, 19623, 5791, 19450, 19649, 19480, 1259, 19650, 19651, 1108, 1627, 1493, 12601, 11407, 19619, 12622, 19652, 19591, 19622, 19653, 2]
+// Dependencies: [32, 19, 17, 6898, 11363, 11366, 11361, 1072, 21, 5140, 575, 1624, 19684, 9072, 11362, 1652, 19564, 5724, 5420, 1705, 19573, 11369, 14061, 5376, 5390, 13028, 10210, 19685, 19524, 19686, 5199, 19690, 19692, 7022, 19695, 5761, 19509, 19718, 19539, 1259, 19719, 19720, 1108, 1627, 1493, 12614, 11389, 19691, 12635, 19721, 19663, 19694, 19722, 2]
 
-// Module 19610 (VoicePanelControls)
+// Module 19683 (VoicePanelControls)
 import nativeDefault from "native" /* 575 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1108 */;
 import _mod1652 from "module_1652" /* 1652 */;
-import native from "native" /* 5229 */;
-import spring_spring from "spring/spring" /* 5791 */;
-import useRefValueDefault from "useRefValue" /* 7047 */;
-import native2 from "native" /* 9090 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11380 */;
-import VoicePanelFloatingCTAUtils from "VoicePanelFloatingCTAUtils" /* 19465 */;
-import useControlsLockDefault from "useControlsLock" /* 19505 */;
-import useDrawerToggleDefault from "useDrawerToggle" /* 19611 */;
-import trackVoicePanelTabOpened from "trackVoicePanelTabOpened" /* 19612 */;
-import useConsoleConnectingInfoDefault from "useConsoleConnectingInfo" /* 19614 */;
-import VoicePanelFloatingCTAContainer from "VoicePanelFloatingCTAContainer" /* 19618 */;
-import VoicePanelConsoleStatus from "VoicePanelConsoleStatus" /* 19620 */;
-import useControlsButtonsDefault from "useControlsButtons" /* 19623 */;
+import native from "native" /* 5199 */;
+import spring_spring from "spring/spring" /* 5761 */;
+import useRefValueDefault from "useRefValue" /* 7022 */;
+import native2 from "native" /* 9072 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11362 */;
+import VoicePanelFloatingCTAUtils from "VoicePanelFloatingCTAUtils" /* 19524 */;
+import useControlsLockDefault from "useControlsLock" /* 19564 */;
+import trackVoicePanelTabOpened from "trackVoicePanelTabOpened" /* 19573 */;
+import useDrawerToggleDefault from "useDrawerToggle" /* 19684 */;
+import useConsoleConnectingInfoDefault from "useConsoleConnectingInfo" /* 19686 */;
+import VoicePanelFloatingCTAContainer from "VoicePanelFloatingCTAContainer" /* 19690 */;
+import VoicePanelConsoleStatus from "VoicePanelConsoleStatus" /* 19692 */;
+import useControlsButtonsDefault from "useControlsButtons" /* 19695 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6923 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11381 */;
-import VoicePanelCardConstants from "VoicePanelCardConstants" /* 11384 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11379 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6898 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11363 */;
+import VoicePanelCardConstants from "VoicePanelCardConstants" /* 11366 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11361 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import MetaQuestUtils from "MetaQuestUtils" /* 1624 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -134,7 +134,7 @@ let closure_37 = react.memo(function FloatingBars(controlsSpecs) {
   const obj2 = { item: tmp11, renderItem: VoicePanelFloatingCTAContainer.renderVoicePanelFloatingCTA };
   items2[0] = authStore5(TransitionItem, obj2);
   let tmp12;
-  const TransitionItem2 = tmp(5229).TransitionItem;
+  const TransitionItem2 = tmp(5199).TransitionItem;
   if (isConnectingOrConnectedToConsole) {
     tmp12 = memo;
   }
@@ -448,15 +448,37 @@ const memoResult = react.memo(function VoicePanelControls(gestureState) {
   }, items1);
   let items2 = [openTab];
   const effect = react.useEffect(() => {
-    function handleOpenChatTab() {
-      const obj = { tab: "chat", source: channelId(setControlsMode[20]).VoicePanelTabAnalyticsSources.HEADER_BUTTON };
-      openTab(obj);
+    function handleOpenChatTab(source) {
+      source = undefined;
+      const tmp = openTab;
+      if (source != null) {
+        source = source.source;
+      }
+      if (source == null) {
+        source = channelId(setControlsMode[20]).VoicePanelTabAnalyticsSources.HEADER_BUTTON;
+      }
+      tmp({ tab: "chat", source });
+    }
+    function handleOpenAppLauncherTab(source) {
+      source = undefined;
+      const tmp = openTab;
+      if (source != null) {
+        source = source.source;
+      }
+      if (source == null) {
+        source = channelId(setControlsMode[20]).VoicePanelTabAnalyticsSources.HEADER_BUTTON;
+      }
+      tmp({ tab: "app_launcher", source });
     }
     let ComponentDispatch = channelId(setControlsMode[42]).ComponentDispatch;
     const subscription = ComponentDispatch.subscribe(constants2.VOICE_PANEL_OPEN_CHAT_TAB, handleOpenChatTab);
+    let ComponentDispatch2 = channelId(setControlsMode[42]).ComponentDispatch;
+    const subscription1 = ComponentDispatch2.subscribe(constants2.VOICE_PANEL_OPEN_APP_LAUNCHER_TAB, handleOpenAppLauncherTab);
     return () => {
       const ComponentDispatch = ComponentDispatchUtils.ComponentDispatch;
       ComponentDispatch.unsubscribe(authStore4.VOICE_PANEL_OPEN_CHAT_TAB, handleOpenChatTab);
+      const ComponentDispatch2 = ComponentDispatchUtils.ComponentDispatch;
+      ComponentDispatch2.unsubscribe(authStore4.VOICE_PANEL_OPEN_APP_LAUNCHER_TAB, handleOpenAppLauncherTab);
     };
   }, items2);
   let obj5 = channelId(setControlsMode[43]);

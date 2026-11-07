@@ -1,15 +1,15 @@
-// Module ID: 8511
-// Function ID: 8512
+// Module ID: 8490
+// Function ID: 8491
 // Name: enhanced_role_colors/EnhancedRoleColorUtils
-// Dependencies: [32, 19, 17, 1192, 1083, 671, 1380, 6198, 2]
+// Dependencies: [32, 19, 17, 1192, 1083, 671, 1380, 6172, 2]
 // Exports: isNativeMessageEligibleForEnhancedRoleColors, processColorStringsArray, useIsRoleStyleAndRoleColorsEligibleForERC, useProcessColorStringsArray
 
-// Module 8511 (enhanced_role_colors/EnhancedRoleColorUtils)
+// Module 8490 (enhanced_role_colors/EnhancedRoleColorUtils)
 import react_native from "react-native" /* 17 */;
 import _modDef671 from "module_671" /* 671 */;
 import Constants from "Constants" /* 1083 */;
 import GlobalUtils from "GlobalUtils" /* 1380 */;
-import useHasEnhancedRoleColors from "useHasEnhancedRoleColors" /* 6198 */;
+import useHasEnhancedRoleColors from "useHasEnhancedRoleColors" /* 6172 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ThemeStore from "ThemeStore" /* 1192 */;

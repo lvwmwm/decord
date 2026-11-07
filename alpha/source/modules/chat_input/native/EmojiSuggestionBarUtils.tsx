@@ -1,20 +1,20 @@
-// Module ID: 14198
-// Function ID: 14199
+// Module ID: 14223
+// Function ID: 14224
 // Name: EmojiSuggestionBarUtils
-// Dependencies: [32, 19, 5171, 1072, 21, 1187, 1652, 5791, 5229, 5400, 1705, 504, 7410, 7435, 14163, 14199, 12764, 10156, 9891, 2]
+// Dependencies: [32, 19, 5141, 1072, 21, 1187, 1652, 5761, 5199, 5370, 1705, 504, 7387, 7412, 14188, 14224, 12777, 10139, 9875, 2]
 // Exports: EmojiEntranceAnimation, getEmojiEntranceKey, getEmojiIdentity, sortEmojisForDisplay, useEmojiSuggestionBarState, useSuggestionBarHeight
 
-// Module 14198 (EmojiSuggestionBarUtils)
+// Module 14223 (EmojiSuggestionBarUtils)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import native from "native" /* 1187 */;
 import _mod1652 from "module_1652" /* 1652 */;
-import native2 from "native" /* 5229 */;
-import spring_spring from "spring/spring" /* 5791 */;
-import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9891 */;
+import native2 from "native" /* 5199 */;
+import spring_spring from "spring/spring" /* 5761 */;
+import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9875 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5171 */;
+import AccessibilityStore from "AccessibilityStore" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -22,7 +22,7 @@ let _require, dependencyMap, set, set2, tmp2;
 
 let tmp;
 const _mod1705 = tmp(1705);
-const timing_timing = tmp(5400);
+const timing_timing = tmp(5370);
 const UpsellTypes = Constants.UpsellTypes;
 const jsx = Fragment.jsx;
 let closure_8 = { focused: false, text: "", selectionStart: 0, selectionEnd: 0 };
@@ -208,15 +208,15 @@ export function useEmojiSuggestionBarState(merged, MAX_SUGGESTIONS_LARGE, minUnl
   obj2 = chatInputRef(504);
   const items = [setDataImmediate];
   const stateFromStores = obj2.useStateFromStores(items, () => setDataImmediate.useReducedMotion);
-  let tmp5 = chatInputStateRef(7410);
-  analyticsLocations = tmp5(chatInputStateRef(7435).EMOJI_SUGGESTIONS).analyticsLocations;
-  const tmp6 = chatInputStateRef(14163)(tmp3, 16);
+  let tmp5 = chatInputStateRef(7387);
+  analyticsLocations = tmp5(chatInputStateRef(7412).EMOJI_SUGGESTIONS).analyticsLocations;
+  const tmp6 = chatInputStateRef(14188)(tmp3, 16);
   setData = tmp6.setData;
   setDataImmediate = tmp6.setDataImmediate;
   const items1 = [setData];
   const imperativeHandle = setData.useImperativeHandle(ref, () => ({ setData }), items1);
   let obj3 = { channel, text, selectionStart, selectionEnd, enabled: focused, maxCount: MAX_SUGGESTIONS_LARGE, minUnlockedEmojis };
-  const tmp8 = chatInputStateRef(14199);
+  const tmp8 = chatInputStateRef(14224);
   if (focused) {
     focused = !suppressed;
   }

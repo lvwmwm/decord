@@ -1,19 +1,19 @@
-// Module ID: 13658
-// Function ID: 13659
+// Module ID: 13682
+// Function ID: 13683
 // Name: CheckpointShareCardFooter
-// Dependencies: [19, 17, 21, 5170, 575, 13655, 5754, 8122, 5781, 13659, 2]
+// Dependencies: [19, 17, 21, 5140, 575, 13679, 5724, 8101, 5751, 13683, 2]
 // Exports: default
 
-// Module 13658 (CheckpointShareCardFooter)
+// Module 13682 (CheckpointShareCardFooter)
 import nativeDefault from "native" /* 575 */;
-import useToken from "useToken" /* 5754 */;
-import Text_Text from "Text/Text" /* 5781 */;
-import inlineStylesDefault from "inlineStyles" /* 8122 */;
-import CheckpointShareCardContext from "CheckpointShareCardContext" /* 13655 */;
+import useToken from "useToken" /* 5724 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import inlineStylesDefault from "inlineStyles" /* 8101 */;
+import CheckpointShareCardContext from "CheckpointShareCardContext" /* 13679 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_4;
@@ -65,7 +65,7 @@ export default function CheckpointShareCardFooter(isCharacterAndStats) {
   size = { style: absoluteFill.absoluteFill, width, height, children: metroRequire(Path, obj3) };
   obj3 = { d: "M0 0H" + width - 13 + "L" + width + " 12V" + height + "H0Z", fill: primaryBackgroundColor };
   const tmp5Result = inlineStylesDefault;
-  Path = tmp2(8122).Path;
+  Path = tmp2(8101).Path;
   items1 = [metroRequire(tmp5Result, size), , ];
   const obj4 = { variant: "display-sm", style: tmp.footerTitle, allowFontScaling: false, children: "CHECKPOINT" };
   items1[1] = metroRequire(Text_Text.Text, obj4);
@@ -85,7 +85,7 @@ export default function CheckpointShareCardFooter(isCharacterAndStats) {
   items2[2] = obj5;
   const obj7 = { style: items2, children: metroRequire(ArrowLargeRightIcon, obj8) };
   obj8 = { size: "xxs", color: nativeDefault.colors.BLACK };
-  ArrowLargeRightIcon = tmp2(13659).ArrowLargeRightIcon;
+  ArrowLargeRightIcon = tmp2(13683).ArrowLargeRightIcon;
   items1[2] = metroRequire(hasOwnProperty, obj7);
   return tmp7(hasOwnProperty, obj2);
 };

@@ -1,14 +1,14 @@
-// Module ID: 18670
-// Function ID: 18671
+// Module ID: 18717
+// Function ID: 18718
 // Name: StreamingSubtitle
-// Dependencies: [19, 21, 5781, 1113, 6199, 2]
+// Dependencies: [19, 21, 5751, 1113, 6173, 2]
 // Exports: default
 
-// Module 18670 (StreamingSubtitle)
+// Module 18717 (StreamingSubtitle)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5781 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 6199 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 6173 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

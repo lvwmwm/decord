@@ -1,29 +1,29 @@
-// Module ID: 11043
-// Function ID: 11044
+// Module ID: 11028
+// Function ID: 11029
 // Name: ConjurePlatformUtils
-// Dependencies: [5, 5405, 2117, 6924, 6927, 11044, 9002, 5805, 1084, 5404, 11045, 2118, 11050, 11055, 11021, 11060, 8070, 11061, 11063, 11064, 11065, 11074, 11075, 2]
+// Dependencies: [5, 5375, 2117, 6899, 6902, 11029, 8984, 5775, 1084, 5374, 11030, 2118, 11035, 11040, 11005, 11045, 8049, 11046, 11048, 11049, 11050, 11059, 11060, 2]
 // Exports: inspectConjurePreviewPoint, setConjurePreviewFrameVisibility
 
-// Module 11043 (ConjurePlatformUtils)
+// Module 11028 (ConjurePlatformUtils)
 import BigFlagUtilsAll from "BigFlagUtils" /* 1084 */;
 import asyncRequire from "asyncRequire" /* 2118 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5404 */;
-import ApplicationIntegrationType from "ApplicationIntegrationType" /* 5805 */;
-import FramesConstants from "FramesConstants" /* 6927 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 9002 */;
-import conjurePreviewSurface from "conjurePreviewSurface" /* 11021 */;
-import Constants from "Constants" /* 11044 */;
-import ApplicationUtils from "ApplicationUtils" /* 11050 */;
-import PushNotificationDefault from "PushNotification" /* 11055 */;
-import conjurePreviewCall from "conjurePreviewCall" /* 11060 */;
-import conjurePreviewNativeSurfaces from "conjurePreviewNativeSurfaces" /* 11065 */;
-import restartFrames from "restartFrames" /* 11075 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
+import ApplicationIntegrationType from "ApplicationIntegrationType" /* 5775 */;
+import FramesConstants from "FramesConstants" /* 6902 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 8984 */;
+import conjurePreviewSurface from "conjurePreviewSurface" /* 11005 */;
+import Constants from "Constants" /* 11029 */;
+import ApplicationUtils from "ApplicationUtils" /* 11035 */;
+import PushNotificationDefault from "PushNotification" /* 11040 */;
+import conjurePreviewCall from "conjurePreviewCall" /* 11045 */;
+import conjurePreviewNativeSurfaces from "conjurePreviewNativeSurfaces" /* 11050 */;
+import restartFrames from "restartFrames" /* 11060 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ActionSheetStore from "ActionSheetStore" /* 5405 */;
+import ActionSheetStore from "ActionSheetStore" /* 5375 */;
 import AppStateStore from "AppStateStore" /* 2117 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6924 */;
-import conjurePreviewControlLease from "conjurePreviewControlLease" /* 11064 */;
-import conjurePreviewOperationSurfaces from "conjurePreviewOperationSurfaces" /* 11074 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6899 */;
+import conjurePreviewControlLease from "conjurePreviewControlLease" /* 11049 */;
+import conjurePreviewOperationSurfaces from "conjurePreviewOperationSurfaces" /* 11059 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -234,7 +234,7 @@ function callNativePreviewFrame(iframeId, arg1, arg2, arg3) {
           }
           c2 = null;
         } else {
-          const tmp4Result = tmp4(11060);
+          const tmp4Result = tmp4(11045);
           if (tmp4Result.isResultEnvelope(parsed, tmp7.results, tmp8.id)) {
             cleanup();
             closure_0(parsed);
@@ -266,7 +266,7 @@ let obj = function _relayPreviewCapture() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let tmp45;
@@ -328,7 +328,7 @@ let obj = function _relayPreviewCapture() {
                   c8 = 3;
                   return { value: { status: "unavailable" }, done: true };
                 } else if (null == onAccepted) {
-                  obj10 = { uploadToken: "r" };
+                  obj10 = { uploadToken: "uri" };
                 } else {
                   c7 = 2;
                   c8 = 1;
@@ -430,7 +430,7 @@ obj = function _inspectConjurePreviewPoint() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c4;
@@ -522,7 +522,7 @@ obj = function _relayPreviewControl() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let tmp71;
@@ -787,7 +787,7 @@ let result = conjurePreviewControlLease.subscribeConjureControlReleased(function
             }
             c2 = null;
           } else {
-            const tmp4Result = tmp4(11060);
+            const tmp4Result = tmp4(11045);
             if (tmp4Result.isResultEnvelope(parsed, tmp7.results, tmp8.id)) {
               cleanup();
               closure_0(parsed);
@@ -814,7 +814,7 @@ let closure_22 = conjurePreviewOperationSurfaces.createPreviewOperationSurfaces(
   }
   let tmp3 = null;
   if (null != prop) {
-    const obj2 = iframeId(11021);
+    const obj2 = iframeId(11005);
     const conjureBuilderPreviewFrame = obj2.getConjureBuilderPreviewFrame(prop);
     let tmp7 = null;
     if (null != conjureBuilderPreviewFrame) {
@@ -842,7 +842,7 @@ let closure_22 = conjurePreviewOperationSurfaces.createPreviewOperationSurfaces(
     }
     let tmp12 = null;
     if (null != prop1) {
-      const obj5 = iframeId(11021);
+      const obj5 = iframeId(11005);
       const conjureBuilderPreviewFrame1 = obj5.getConjureBuilderPreviewFrame(prop1);
       iframeId = null;
       if (isLaunched(conjureBuilderPreviewFrame1)) {
@@ -922,7 +922,7 @@ obj = {
     if (ActionSheetStore.isOpen()) {
       const openLazy = ActionSheetActionCreatorsDefault.openLazy;
       const obj2 = { sheetKey: ConjureAppInstallSheet, disableHapticOnOpen: true };
-      const tmp17 = asyncRequire(11045, tmp7.paths);
+      const tmp17 = asyncRequire(11030, tmp7.paths);
       const merged = Object.assign(obj);
       openLazyResult = openLazy(tmp17, ConjureAppInstallSheet, obj2, "stack");
     } else {
@@ -1059,7 +1059,7 @@ obj = {
               }
               c2 = null;
             } else {
-              const tmp4Result = tmp4(11060);
+              const tmp4Result = tmp4(11045);
               if (tmp4Result.isResultEnvelope(parsed, tmp7.results, tmp8.id)) {
                 cleanup();
                 closure_0(parsed);
@@ -1163,7 +1163,7 @@ export function setConjurePreviewFrameVisibility(iframeId, visible) {
           }
           c2 = null;
         } else {
-          const tmp4Result = tmp4(11060);
+          const tmp4Result = tmp4(11045);
           if (tmp4Result.isResultEnvelope(parsed, tmp7.results, tmp8.id)) {
             cleanup();
             closure_0(parsed);

@@ -1,9 +1,9 @@
-// Module ID: 5962
-// Function ID: 5963
+// Module ID: 5935
+// Function ID: 5936
 // Name: discord_common/BaseConnectionEvent
 // Dependencies: [2]
 
-// Module 5962 (discord_common/BaseConnectionEvent)
+// Module 5935 (discord_common/BaseConnectionEvent)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/packages/media-engine/BaseConnectionEvent.tsx");

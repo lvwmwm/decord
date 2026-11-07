@@ -1,23 +1,23 @@
-// Module ID: 7044
-// Function ID: 7045
+// Module ID: 7019
+// Function ID: 7020
 // Name: MemberVerificationGuildHeader
-// Dependencies: [19, 17, 7029, 21, 5170, 575, 1627, 1652, 5872, 1411, 5745, 7045, 7049, 5781, 1113, 2]
+// Dependencies: [19, 17, 7004, 21, 5140, 575, 1627, 1652, 5842, 1411, 5715, 7020, 7024, 5751, 1113, 2]
 // Exports: MemberVerificationGuildBanner, default
 
-// Module 7044 (MemberVerificationGuildHeader)
+// Module 7019 (MemberVerificationGuildHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
 import _mod1652 from "module_1652" /* 1652 */;
-import LinearGradientDefault from "LinearGradient" /* 5745 */;
-import FastImageDefault from "FastImage" /* 5872 */;
-import GuildIcon from "GuildIcon" /* 7045 */;
-import GuildBadgeDefault from "GuildBadge" /* 7049 */;
+import LinearGradientDefault from "LinearGradient" /* 5715 */;
+import FastImageDefault from "FastImage" /* 5842 */;
+import GuildIcon from "GuildIcon" /* 7020 */;
+import GuildBadgeDefault from "GuildBadge" /* 7024 */;
 import react from "react" /* 19 */;
-import MemberVerificationFormConstants from "MemberVerificationFormConstants" /* 7029 */;
+import MemberVerificationFormConstants from "MemberVerificationFormConstants" /* 7004 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 const _modDef1652 = _mod1652;
@@ -140,7 +140,7 @@ export default function MemberVerificationGuildHeader(scrollTop) {
   items5[1] = metroRequire(GuildBadgeDefault, obj6);
   items6 = [metroImportDefault(View, obj4), , ];
   const obj7 = { style: tmp.headerTitle, variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: formatResult };
-  const Heading = tmp3(5781).Heading;
+  const Heading = tmp3(5751).Heading;
   const intl = tmp3(1113).intl;
   const format = intl.format;
   const t = tmp3(1113).t;
@@ -154,7 +154,7 @@ export default function MemberVerificationGuildHeader(scrollTop) {
   }
   items6[1] = metroRequire(Heading, obj7);
   const obj10 = { style: tmp.headerDescription, variant: "body-sm/medium", color: "text-default", children: stringResult };
-  const Text = tmp3(5781).Text;
+  const Text = tmp3(5751).Text;
   const intl2 = tmp3(1113).intl;
   const string = intl2.string;
   const t2 = tmp3(1113).t;

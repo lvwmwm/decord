@@ -1,22 +1,22 @@
-// Module ID: 15182
-// Function ID: 15183
+// Module ID: 15220
+// Function ID: 15221
 // Name: UserProfileWidgetGameTags
-// Dependencies: [19, 17, 502, 8846, 21, 5170, 575, 15183, 12536, 5179, 1113, 8854, 6179, 5781, 7145, 15187, 2]
+// Dependencies: [19, 17, 502, 8825, 21, 5140, 575, 15197, 12549, 5149, 1113, 8833, 6153, 5751, 7120, 15221, 2]
 
-// Module 15182 (UserProfileWidgetGameTags)
+// Module 15220 (UserProfileWidgetGameTags)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5179 */;
-import Text_Text from "Text/Text" /* 5781 */;
-import Constants from "Constants" /* 8846 */;
-import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8854 */;
-import WidgetUtils from "WidgetUtils" /* 12536 */;
-import openUserProfileAddTagActionSheetDefault from "openUserProfileAddTagActionSheet" /* 15187 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5149 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import Constants from "Constants" /* 8825 */;
+import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8833 */;
+import WidgetUtils from "WidgetUtils" /* 12549 */;
+import openUserProfileAddTagActionSheetDefault from "openUserProfileAddTagActionSheet" /* 15221 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -32,14 +32,14 @@ let obj4;
 ({ Pressable: closure_4, View: hasOwnProperty } = react_native);
 let closure_7 = Constants.TrackUserProfileEditActions;
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);
-const hitSlop = { top: 10, bottom: 10 };
-let closure_11 = { top: 10, bottom: 10, left: 12, right: 10 };
+const hitSlop = { top: 7, bottom: 7 };
+let closure_11 = Math.max(14, 0);
 let createStyles = createStyles_mod;
 let obj = { tags: obj2, tag: obj3, addTag: obj4 };
 obj2 = { flexDirection: "row", flexWrap: "wrap", gap: nativeDefault.space.PX_4 };
 createStyles = createStyles.createStyles;
-obj3 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4, paddingHorizontal: nativeDefault.space.PX_8, paddingVertical: nativeDefault.space.PX_4, borderRadius: nativeDefault.radii.sm, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE };
-obj4 = { paddingHorizontal: nativeDefault.space.PX_8, paddingVertical: nativeDefault.space.PX_4, borderRadius: nativeDefault.radii.sm, borderWidth: 1, borderStyle: "dashed", borderColor: nativeDefault.colors.BORDER_SUBTLE };
+obj3 = { minHeight: 30, flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4, paddingHorizontal: nativeDefault.space.PX_8, paddingVertical: nativeDefault.space.PX_4, borderRadius: nativeDefault.radii.sm, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE };
+obj4 = { minHeight: 30, justifyContent: "center", paddingHorizontal: nativeDefault.space.PX_8, paddingVertical: nativeDefault.space.PX_4, borderRadius: nativeDefault.radii.sm, borderWidth: 1, borderStyle: "dashed", borderColor: nativeDefault.colors.BORDER_SUBTLE };
 let closure_12 = createStyles(obj);
 const memoResult = react.memo(function UserProfileWidgetGameTags(gameName) {
   let Text;
@@ -99,7 +99,7 @@ const memoResult = react.memo(function UserProfileWidgetGameTags(gameName) {
           const tmp5 = tag;
           let tmp2 = c5;
           items = [closure_1_8(meta.icon, obj2), , ];
-          let obj3 = { variant: "body-xs/medium", color: "text-muted", children: meta.getText() };
+          let obj3 = { variant: "body-sm/normal", color: "text-muted", children: meta.getText() };
           const Text = require("Text/Text").Text;
           items[1] = closure_1_8(Text, obj3);
           let tmp3Result = null != editableTagsWidgetType;
@@ -196,7 +196,7 @@ const memoResult = react.memo(function UserProfileWidgetGameTags(gameName) {
       };
       intl = intl3.intl;
       obj3 = { gameName };
-      obj4 = { variant: "body-xs/medium", color: "text-muted", children: intl2.string(intl3.t.fZSejy) };
+      obj4 = { variant: "body-sm/normal", color: "text-muted", children: intl2.string(intl3.t.fZSejy) };
       Text = Text_Text.Text;
       intl2 = intl3.intl;
       tmp7 = closure_8(closure_4, obj2);

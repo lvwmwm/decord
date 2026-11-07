@@ -1,27 +1,32 @@
 // Module ID: 7103
 // Function ID: 7104
-// Dependencies: [19, 17, 21, 1500]
-// Exports: Background
+// Dependencies: [19, 17, 21, 7104]
+// Exports: MaskedView
 
 // Module 7103
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import Link from "Link" /* 1500 */;
+import _mod7104 from "module_7104" /* 7104 */;
 import react from "react" /* 19 */;
 
-const Animated = react_native.Animated;
+const UIManager = react_native.UIManager;
 const jsx = Fragment.jsx;
+try {
+  let closure_0 = _mod7104.default;
+} catch (err) {
+}
+let closure_2 = null != UIManager.getViewManagerConfig("RNCMaskedView");
 
-export function Background(style) {
-  style = style.style;
-  const merged = Object.assign(style, Object.assign({ style: 0 }));
-  const obj = Link;
-  const colors = obj.useTheme().colors;
-  const View = Animated.View;
-  const merged1 = Object.assign(merged);
-  const items = [, ];
-  const obj3 = { flex: 1, backgroundColor: colors.background };
-  items[0] = obj3;
-  items[1] = style;
-  return <View style={items} />;
+export function MaskedView(children) {
+  children = children.children;
+  const merged = Object.assign(children, Object.assign({ children: 0 }));
+  let tmp2 = children;
+  if (closure_2) {
+    tmp2 = children;
+    if (closure_0) {
+      const merged1 = Object.assign(merged);
+      tmp2 = <tmp3>{children}</tmp3>;
+    }
+  }
+  return tmp2;
 }

@@ -1,16 +1,16 @@
-// Module ID: 18708
-// Function ID: 18709
+// Module ID: 18755
+// Function ID: 18756
 // Name: InterestCoverTitle
-// Dependencies: [32, 19, 17, 21, 5170, 5781, 2]
+// Dependencies: [32, 19, 17, 21, 5140, 5751, 2]
 // Exports: default
 
-// Module 18708 (InterestCoverTitle)
+// Module 18755 (InterestCoverTitle)
 import react_native from "react-native" /* 17 */;
-import Text_Text from "Text/Text" /* 5781 */;
+import Text_Text from "Text/Text" /* 5751 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -77,7 +77,6 @@ let result = size.fileFinishedImporting("modules/waterwheels/interest/native/Int
 
 export default function InterestCoverTitle(name) {
   let _undefined;
-  let c6;
   let items4;
   let items5;
   let lines;
@@ -89,18 +88,22 @@ export default function InterestCoverTitle(name) {
   name = name.name;
   const width = name.width;
   const maxHeight = name.maxHeight;
+  let num = name.maxLines;
+  if (num === undefined) {
+    num = 3;
+  }
   let flag = name.alignLastBaseline;
   if (flag === undefined) {
     flag = false;
   }
   const onHeightChange = name.onHeightChange;
-  c6 = undefined;
   c7 = undefined;
-  let num2;
+  let c8;
+  let num3;
   let line;
-  let obj = onHeightChange;
+  let obj = num;
   const items = [name];
-  const memo = onHeightChange.useMemo(() => {
+  const memo = num.useMemo(() => {
     const str = name.trim();
     return str.split(/[\t-\r \xA0\u1680\u2000-\u200A\u2028\u2029\u202F\u205F\u3000\uFEFF]+/);
   }, items);
@@ -110,7 +113,7 @@ export default function InterestCoverTitle(name) {
     isMatch = obj2.test(name);
   }
   const tmp2 = maxHeight(obj.useState(null), 2);
-  [tmp3, c6] = tmp2;
+  [tmp3, c7] = tmp2;
   let name1;
   if (tmp3 != null) {
     name1 = tmp3.name;
@@ -119,25 +122,26 @@ export default function InterestCoverTitle(name) {
   if (name1 === name) {
     tmp5 = tmp3;
   }
-  c7 = tmp5;
-  const items1 = [isMatch, tmp5, memo, width, maxHeight];
+  c8 = tmp5;
+  const items1 = [isMatch, tmp5, memo, width, maxHeight, num];
   const memo1 = obj.useMemo(() => {
     const tmp = isMatch;
     if (!tmp) {
       if (null != _undefined) {
-        const tmp9 = wrapCoverTitle(memo, _undefined.widths, width, 3);
-        let tmp4Result = tmp9;
+        const tmp11 = wrapCoverTitle(memo, _undefined.widths, width, num);
+        let tmp4Result = tmp11;
         const tmp4 = wrapCoverTitle;
+        const tmp7 = num;
         if (null != maxHeight) {
-          tmp4Result = tmp9;
+          tmp4Result = tmp11;
           if (_undefined.height > 0) {
             const _Math = Math;
             const _Math2 = Math;
             const _Math3 = Math;
-            const bound = Math.min(tmp9.scale, tmp10 / (tmp2.height * tmp9.lines.length));
+            const bound = Math.min(tmp11.scale, tmp12 / (tmp2.height * tmp11.lines.length));
             const widths = tmp2.widths;
             const _Math4 = Math;
-            tmp4Result = tmp4(tmp5, widths, tmp6, Math.max(1, Math.min(3, Math.floor(tmp10 / (tmp2.height * _undefined)))), bound);
+            tmp4Result = tmp4(tmp5, widths, tmp6, Math.max(1, Math.min(tmp7, Math.floor(tmp12 / (tmp2.height * c7)))), bound);
           }
         }
         return tmp4Result;
@@ -145,41 +149,41 @@ export default function InterestCoverTitle(name) {
     }
     return null;
   }, items1);
-  let num = 0;
+  let num2 = 0;
   if (flag) {
-    num = 0;
+    num2 = 0;
     if (null != tmp5) {
-      num = 0;
+      num2 = 0;
       if (null != memo1) {
-        num = tmp5.descender * (1 - memo1.scale);
+        num2 = tmp5.descender * (1 - memo1.scale);
       }
     }
   }
-  num2 = null;
+  num3 = null;
   if (null != memo1) {
-    num2 = null;
+    num3 = null;
     if (null != tmp5) {
-      num2 = tmp5.height * memo1.lines.length * memo1.scale + num;
+      num3 = tmp5.height * memo1.lines.length * memo1.scale + num2;
     }
   }
-  const items2 = [num2, onHeightChange];
+  const items2 = [num3, onHeightChange];
   const effect = obj.useEffect(() => {
-    if (null != num2) {
+    if (null != num3) {
       if (onHeightChange != null) {
         tmp2(tmp);
       }
     }
   }, items2);
   const items3 = [name, memo];
-  let num3;
+  let num4;
   const callback = obj.useCallback((nativeEvent) => {
-    let num;
+    let num2;
     const lines = nativeEvent.nativeEvent.lines;
     if (lines.length === memo.length) {
       const first = lines[0];
       const obj = { name, widths: lines.map((width) => width.width), height: num, descender: num2 };
       num = undefined;
-      const tmp = c6;
+      const tmp = c7;
       if (first != null) {
         num = first.height;
       }
@@ -197,20 +201,20 @@ export default function InterestCoverTitle(name) {
       tmp(obj);
     }
   }, items3);
-  let tmp9 = num2;
+  const tmp9 = c8;
   if (memo1 != null) {
-    num3 = memo1.scale;
+    num4 = memo1.scale;
+  }
+  if (num4 == null) {
+    num4 = 1;
   }
   if (num3 == null) {
-    num3 = 1;
+    num3 = 0;
   }
-  if (num2 == null) {
-    num2 = 0;
-  }
-  const tmp9Result = tmp9(width, num3, num2, num);
+  const tmp9Result = tmp9(width, num4, num3, num2);
   line = tmp9Result;
   if (isMatch) {
-    const obj3 = { accessible: true, accessibilityLabel: name, style: tmp9Result.container, children: isMatch(name(width[5]).Text, obj4) };
+    const obj3 = { accessible: true, accessibilityLabel: name, style: tmp9Result.container, children: memo(name(width[5]).Text, obj4) };
     obj4 = {
       accessible: false,
       variant: "body-xs/semibold",
@@ -227,8 +231,10 @@ export default function InterestCoverTitle(name) {
       style: tmp9Result.line,
       children: name
     };
-    tmp11Result = isMatch(memo, obj3);
+    tmp11Result = memo(onHeightChange, obj3);
   } else {
+    const tmp12 = onHeightChange;
+    let tmp11 = isMatch;
     const obj5 = { accessible: true, accessibilityLabel: name, style: tmp9Result.container, children: items5 };
     const obj6 = { accessible: false, importantForAccessibility: "no-hide-descendants", variant: "body-xs/semibold", color: "text-overlay-light", onTextLayout: callback, style: items4, children: mapped.join("\n") };
     items4 = [, ];
@@ -236,11 +242,10 @@ export default function InterestCoverTitle(name) {
     const Text = name(width[5]).Text;
     mapped = memo.map((item) => "" + item + "\u00A0");
     let str = "\n";
-    items5 = [isMatch(Text, obj6), ];
+    items5 = [memo(Text, obj6), ];
     let tmp13Result = null != memo1 && null != tmp5;
-    const tmp11 = c6;
     if (tmp13Result) {
-      const obj7 = { style: tmp9Result.lines, children: isMatch(memo, obj8) };
+      const obj7 = { style: tmp9Result.lines, children: memo(tmp12, obj8) };
       obj8 = {
         style: tmp9Result.scaled,
         children: lines.map((children, index) => {

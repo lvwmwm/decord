@@ -1,25 +1,25 @@
-// Module ID: 9401
-// Function ID: 9402
+// Module ID: 9383
+// Function ID: 9384
 // Name: GuildProfileHeader
-// Dependencies: [19, 17, 2186, 502, 5082, 9402, 21, 5170, 575, 504, 7980, 11, 5033, 9403, 9404, 5867, 5404, 7617, 7045, 5781, 7068, 9405, 1113, 2]
+// Dependencies: [19, 17, 2186, 502, 5052, 9384, 21, 5140, 575, 504, 7958, 11, 5003, 9385, 9386, 5837, 5374, 7594, 7020, 5751, 7043, 9387, 1113, 2]
 // Exports: default
 
-// Module 9401 (GuildProfileHeader)
+// Module 9383 (GuildProfileHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import GuildRecordUtils from "GuildRecordUtils" /* 5033 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5404 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5867 */;
-import transitionToGuild from "transitionToGuild" /* 7617 */;
-import GuildBadgeConstants from "GuildBadgeConstants" /* 9402 */;
-import GuildTraits from "GuildTraits" /* 9403 */;
-import BadgeCategory from "BadgeCategory" /* 9404 */;
+import GuildRecordUtils from "GuildRecordUtils" /* 5003 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5837 */;
+import transitionToGuild from "transitionToGuild" /* 7594 */;
+import GuildBadgeConstants from "GuildBadgeConstants" /* 9384 */;
+import GuildTraits from "GuildTraits" /* 9385 */;
+import BadgeCategory from "BadgeCategory" /* 9386 */;
 import react from "react" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2186 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildMemberStore from "GuildMemberStore" /* 5082 */;
+import GuildMemberStore from "GuildMemberStore" /* 5052 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 let c10;

@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1119 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 24, height: 24, scales: [1], hash: "21e0409db9760997b50efbaba2c83c02", name: "img_account_sync_riot_black", type: "svg" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 500, height: 500, scales: [1], hash: "b5435b1c0c86072b1fe63c9093cc47a6", name: "img_account_sync_letterboxd_white", type: "png" });

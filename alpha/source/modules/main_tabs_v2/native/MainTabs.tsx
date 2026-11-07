@@ -1,21 +1,21 @@
-// Module ID: 18327
-// Function ID: 18328
+// Module ID: 18374
+// Function ID: 18375
 // Name: MainTabs
-// Dependencies: [19, 17, 21, 5170, 575, 5340, 9929, 18328, 5754, 5229, 10872, 18329, 2]
+// Dependencies: [19, 17, 21, 5140, 575, 5310, 9913, 18375, 5724, 5199, 10855, 18376, 19166, 2]
 
-// Module 18327 (MainTabs)
+// Module 18374 (MainTabs)
 import nativeDefault from "native" /* 575 */;
-import native from "native" /* 5229 */;
-import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 5340 */;
-import useToken from "useToken" /* 5754 */;
-import useActiveTheme from "useActiveTheme" /* 9929 */;
-import ThemedGradientDefault from "ThemedGradient" /* 10872 */;
-import useAppFrameDefault from "useAppFrame" /* 18328 */;
-import MainTabsNavigatorPanelDefault from "MainTabsNavigatorPanel" /* 18329 */;
+import native from "native" /* 5199 */;
+import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 5310 */;
+import useToken from "useToken" /* 5724 */;
+import useActiveTheme from "useActiveTheme" /* 9913 */;
+import ThemedGradientDefault from "ThemedGradient" /* 10855 */;
+import useAppFrameDefault from "useAppFrame" /* 18375 */;
+import MainTabsNavigatorPanelDefault from "MainTabsNavigatorPanel" /* 18376 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -33,19 +33,18 @@ let closure_7 = createStyles.createStyles((paddingLeft, paddingRight, top) => {
   return obj;
 });
 const memoResult = react.memo(function MainTabs() {
-  let ThemeContextProvider;
   let items;
   let items1;
   let items2;
   let items3;
   let items4;
   let items5;
+  let items6;
   let left;
-  let obj4;
   let obj7;
   let obj9;
   let right;
-  let tmp8Result;
+  let tmp10;
   const tmp3 = useColorThemeBackgroundDefault();
   const obj = useActiveTheme;
   const isCustomThemeActive = obj.useIsCustomThemeActive();
@@ -54,19 +53,19 @@ const memoResult = react.memo(function MainTabs() {
   const styles = tmp5.styles;
   const obj2 = useToken;
   const tmp6 = closure_7(left, right, obj2.useToken(nativeDefault.modules.mobile.CHANNEL_DRAWER_DIVIDER_WIDTH));
-  const obj3 = { style: items, children: metroRequire(ThemeContextProvider, obj4) };
+  const obj3 = { style: items, children: items6 };
   items = [tmp6.container, styles.container];
-  obj4 = { gradient: tmp3, children: items1 };
-  ThemeContextProvider = native.ThemeContextProvider;
+  const obj4 = { gradient: tmp3, children: items1 };
+  const ThemeContextProvider = native.ThemeContextProvider;
   if (left > 0) {
-    tmp8Result = null;
+    tmp10 = null;
     if (null == styles.container) {
-      tmp8Result = tmp8(tmp(10872), { absolute: true, mix: true });
+      tmp10 = hasOwnProperty(tmp(10855), { absolute: true, mix: true });
     }
   } else {
-    tmp8Result = null;
+    tmp10 = null;
   }
-  items1 = [tmp8Result, ];
+  items1 = [tmp10, ];
   const obj5 = { style: items2, children: items3 };
   items2 = [tmp6.content, styles.content];
   items3 = [hasOwnProperty(ThemedGradientDefault, { absolute: true, mix: isCustomThemeActive }), , ];
@@ -74,16 +73,22 @@ const memoResult = react.memo(function MainTabs() {
   items4 = [tmp6.content, styles.body];
   obj7 = { showHeaderGradient: null == styles.container };
   items3[1] = hasOwnProperty(React3, obj6);
-  let tmp8Result2 = null;
+  let tmp12Result = null;
   if (null != styles.container) {
     const obj8 = { style: tmp6.frameBorderClip, pointerEvents: "none", children: hasOwnProperty(React3, obj9) };
     obj9 = { style: items5 };
     items5 = [styles.border, tmp6.frameBorderOffset];
-    tmp8Result2 = tmp8(tmp9, obj8);
+    tmp12Result = tmp12(tmp9, obj8);
   }
-  items3[2] = tmp8Result2;
+  items3[2] = tmp12Result;
   items1[1] = metroRequire(React3, obj5);
-  return hasOwnProperty(React3, obj3);
+  items6 = [metroRequire(ThemeContextProvider, obj4), ];
+  let tmp12Result2 = null;
+  if (null != styles.container) {
+    tmp12Result2 = tmp12(tmp(19166), {});
+  }
+  items6[1] = tmp12Result2;
+  return metroRequire(React3, obj3);
 });
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/MainTabs.tsx");
 

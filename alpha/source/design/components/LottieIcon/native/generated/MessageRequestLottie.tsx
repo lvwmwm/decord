@@ -1,13 +1,13 @@
-// Module ID: 16107
-// Function ID: 16108
+// Module ID: 16155
+// Function ID: 16156
 // Name: MessageRequestLottie
-// Dependencies: [19, 21, 12092, 16108, 2]
+// Dependencies: [19, 21, 12083, 16156, 2]
 // Exports: MessageRequestLottie
 
-// Module 16107 (MessageRequestLottie)
+// Module 16155 (MessageRequestLottie)
 import Fragment from "Fragment" /* 21 */;
-import LottieIcon2 from "LottieIcon" /* 12092 */;
-import AssetRegistry from "AssetRegistry" /* 16108 */;
+import LottieIcon2 from "LottieIcon" /* 12083 */;
+import AssetRegistry from "AssetRegistry" /* 16156 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

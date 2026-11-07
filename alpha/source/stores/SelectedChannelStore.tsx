@@ -1,10 +1,10 @@
-// Module ID: 5073
-// Function ID: 5074
+// Module ID: 5043
+// Function ID: 5044
 // Name: SelectedChannelStore
-// Dependencies: [5074, 5023, 502, 5019, 5100, 5041, 2130, 5102, 5201, 1072, 5026, 510, 12, 1380, 1084, 5344, 1099, 5807, 504, 572, 2]
+// Dependencies: [5044, 4993, 502, 4989, 5070, 5011, 2130, 5072, 5171, 1072, 4996, 510, 12, 1380, 1084, 5314, 1099, 5777, 504, 572, 2]
 // Exports: findFirstVoiceChannelId, handleConnectionOpen
 
-// Module 5073 (SelectedChannelStore)
+// Module 5043 (SelectedChannelStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import Storage3 from "Storage" /* 510 */;
@@ -12,18 +12,18 @@ import DispatcherDefault from "Dispatcher" /* 572 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1084 */;
 import router_utils from "router_utils" /* 1099 */;
 import GlobalUtils from "GlobalUtils" /* 1380 */;
-import ChannelConstants from "ChannelConstants" /* 5026 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5344 */;
-import isAccessibleNonStaticChannelPathDefault from "isAccessibleNonStaticChannelPath" /* 5807 */;
-import GatedChannelStore from "GatedChannelStore" /* 5074 */;
-import ChannelRecord from "ChannelRecord" /* 5023 */;
+import ChannelConstants from "ChannelConstants" /* 4996 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5314 */;
+import isAccessibleNonStaticChannelPathDefault from "isAccessibleNonStaticChannelPath" /* 5777 */;
+import GatedChannelStore from "GatedChannelStore" /* 5044 */;
+import ChannelRecord from "ChannelRecord" /* 4993 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 5019 */;
-import GuildChannelStore from "GuildChannelStore" /* 5100 */;
-import GuildStore from "GuildStore" /* 5041 */;
+import ChannelStore from "ChannelStore" /* 4989 */;
+import GuildChannelStore from "GuildChannelStore" /* 5070 */;
+import GuildStore from "GuildStore" /* 5011 */;
 import MediaEngineStore from "MediaEngineStore" /* 2130 */;
-import PermissionStore from "PermissionStore" /* 5102 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5201 */;
+import PermissionStore from "PermissionStore" /* 5072 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5171 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 

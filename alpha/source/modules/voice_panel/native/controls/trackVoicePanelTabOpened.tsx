@@ -1,13 +1,13 @@
-// Module ID: 19612
-// Function ID: 19613
+// Module ID: 19573
+// Function ID: 19574
 // Name: trackVoicePanelTabOpened
-// Dependencies: [6922, 1072, 1252, 2]
+// Dependencies: [6897, 1072, 1252, 2]
 // Exports: default
 
-// Module 19612 (trackVoicePanelTabOpened)
+// Module 19573 (trackVoicePanelTabOpened)
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import ReadStateStore from "ReadStateStore" /* 6922 */;
+import ReadStateStore from "ReadStateStore" /* 6897 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;
@@ -23,4 +23,4 @@ export default function trackVoicePanelTabOpened(arg0, tab, source) {
   const obj3 = { tab, source, is_chat_badged: hasUnreadResult };
   obj2.track(AnalyticEvents.VOICE_PANEL_TAB_OPENED, obj3);
 };
-export const VoicePanelTabAnalyticsSources = { STORE: "store", GESTURE: "gesture", PREJOIN_BUTTON: "prejoin button", CONNECTED_BUTTON: "connected button", VOICE_CONTROLS: "voice controls", HEADER_BUTTON: "header button" };
+export const VoicePanelTabAnalyticsSources = { STORE: "store", GESTURE: "gesture", PREJOIN_BUTTON: "prejoin button", CONNECTED_BUTTON: "connected button", VOICE_CONTROLS: "voice controls", HEADER_BUTTON: "header button", DOCK_CONTEXT_MENU: "dock context menu" };

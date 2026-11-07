@@ -85,13 +85,13 @@ let c0;
 let c1;
 let c2;
 [tmp10, tmp11, tmp12, tmp13] = items4;
-function cancelAnimation(sharedValue) {
+function cancelAnimation(animationProgress) {
   let tmp;
   let tmp2;
   if (globalThis.__RUNTIME_KIND !== _undefined.ReactNative) {
-    sharedValue.value = sharedValue.value;
+    animationProgress.value = animationProgress.value;
   } else {
-    const items = [c2, sharedValue];
+    const items = [c2, animationProgress];
     [tmp, tmp2] = items;
     function pnpm_utilNativeTs4() {
       value.value = value.value;

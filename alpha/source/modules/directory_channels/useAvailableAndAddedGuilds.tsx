@@ -1,18 +1,18 @@
-// Module ID: 14074
-// Function ID: 14075
+// Module ID: 14099
+// Function ID: 14100
 // Name: useAvailableAndAddedGuilds
-// Dependencies: [5, 32, 19, 5041, 5102, 6852, 14068, 1072, 504, 5751, 14072, 2]
+// Dependencies: [5, 32, 19, 5011, 5072, 6827, 14093, 1072, 504, 5721, 14097, 2]
 // Exports: default
 
-// Module 14074 (useAvailableAndAddedGuilds)
+// Module 14099 (useAvailableAndAddedGuilds)
 import Constants from "Constants" /* 1072 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 5041 */;
-import PermissionStore from "PermissionStore" /* 5102 */;
-import SortedGuildStore from "SortedGuildStore" /* 6852 */;
-import GuildDirectoryStore from "GuildDirectoryStore" /* 14068 */;
+import GuildStore from "GuildStore" /* 5011 */;
+import PermissionStore from "PermissionStore" /* 5072 */;
+import SortedGuildStore from "SortedGuildStore" /* 6827 */;
+import GuildDirectoryStore from "GuildDirectoryStore" /* 14093 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -62,7 +62,7 @@ export default function useAvailableAndAddedGuilds(arg0, arg1) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -94,7 +94,7 @@ export default function useAvailableAndAddedGuilds(arg0, arg1) {
           } else {
             closure_128_2(false);
             c2 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp14) {
           c2 = 3;

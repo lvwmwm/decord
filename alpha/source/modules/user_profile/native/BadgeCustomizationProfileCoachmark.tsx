@@ -1,74 +1,38 @@
-// Module ID: 19172
-// Function ID: 19173
+// Module ID: 19228
+// Function ID: 19229
 // Name: BadgeCustomizationProfileCoachmark
-// Dependencies: [32, 19, 1385, 5016, 575, 1493, 1627, 9730, 504, 2171, 5184, 1113, 5236, 10092, 2]
+// Dependencies: [19, 1385, 4986, 504, 2171, 5154, 19229, 1113, 5206, 10076, 2]
 // Exports: default
 
-// Module 19172 (BadgeCustomizationProfileCoachmark)
-import nativeDefault from "native" /* 575 */;
+// Module 19228 (BadgeCustomizationProfileCoachmark)
 import intl4 from "intl" /* 1113 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 5016 */;
-import BadgesCoachmarkRive from "BadgesCoachmarkRive" /* 5236 */;
-import _slicedToArray from "_slicedToArray" /* 32 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4986 */;
+import BadgesCoachmarkRive from "BadgesCoachmarkRive" /* 5206 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1385 */;
 import size from "module_2" /* 2 */;
 
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
-const PX_64 = nativeDefault.space.PX_64;
 const result = size.fileFinishedImporting("modules/user_profile/native/BadgeCustomizationProfileCoachmark.tsx");
 
 export default function BadgeCustomizationProfileCoachmark(markAsDismissed) {
-  let c2;
-  let rect2;
   let targetRef;
   let visible;
   ({ targetRef, visible } = markAsDismissed);
   markAsDismissed = markAsDismissed.markAsDismissed;
   const onTryItOut = markAsDismissed.onTryItOut;
   let reducedMotion;
-  let str2;
-  let tmp = visible;
-  const tmp2 = onTryItOut;
-  let obj = visible(onTryItOut[8]);
-  const items = [str2];
+  let obj = visible(onTryItOut[3]);
+  const items = [reducedMotion];
   const stateFromStores = obj.useStateFromStores(items, () => {
-    const obj = markAsDismissed(onTryItOut[9]);
-    return obj.canUsePremiumProfileCustomization(str2.getCurrentUser());
+    const obj = markAsDismissed(onTryItOut[4]);
+    return obj.canUsePremiumProfileCustomization(reducedMotion.getCurrentUser());
   });
-  let obj2 = reducedMotion;
-  reducedMotion = reducedMotion.useContext(visible(onTryItOut[10]).AccessibilityPreferencesContext).reducedMotion;
-  c2 = undefined;
-  const height = markAsDismissed(onTryItOut[5])().height;
-  let rect = markAsDismissed(onTryItOut[6])();
-  [rect2, c2] = stateFromStores(reducedMotion.useState(null), 2);
-  const items1 = [targetRef, visible, height];
-  stateFromStores(reducedMotion.useState(null), 2);
-  const effect = reducedMotion.useEffect(() => {
-    const tmp = visible;
-    if (tmp) {
-      const current = targetRef.current;
-      if (current != null) {
-        current.measureInWindow((arg0, top, arg2, arg3) => {
-          if (0 !== arg3) {
-            const rect = { top, bottom: top + arg3 };
-            closure_1_2(rect);
-          }
-        });
-      }
-    }
-  }, items1);
-  let str = "bottom";
-  str2 = "bottom";
-  if (null != rect2) {
-    const tmpResult = tmp(tmp2[7]);
-    if (height - tmpResult.getFloatingNavBottomMargin(rect.bottom) - PX_64 - rect2.bottom < rect2.top - rect.top) {
-      str = "top";
-    }
-    str2 = str;
-  }
-  const items2 = [stateFromStores, visible, str2, markAsDismissed, onTryItOut, reducedMotion.enabled];
-  const memo = obj2.useMemo(() => {
+  reducedMotion = stateFromStores.useContext(visible(onTryItOut[5]).AccessibilityPreferencesContext).reducedMotion;
+  const tmp2 = markAsDismissed(onTryItOut[6])(targetRef, visible);
+  const position = tmp2;
+  const items1 = [stateFromStores, visible, tmp2, markAsDismissed, onTryItOut, reducedMotion.enabled];
+  const memo = stateFromStores.useMemo(() => {
     let intl;
     let intl3;
     let obj2;
@@ -80,7 +44,7 @@ export default function BadgeCustomizationProfileCoachmark(markAsDismissed) {
       title: intl.string(intl4.t["9JoKQb"]),
       description: string(stateFromStores ? t.p82vky : t.IDh31t),
       visible,
-      position: str2,
+      position,
       gradientColor: "blue",
       graphic: obj2,
       onDismiss() {
@@ -102,8 +66,8 @@ export default function BadgeCustomizationProfileCoachmark(markAsDismissed) {
     obj4 = { on: visible, reducedMotion: reducedMotion.enabled };
     intl3 = tmp(1113).intl;
     return obj;
-  }, items2);
-  const tmpResult2 = tmp(tmp2[13]);
-  const coachmark = tmpResult2.useCoachmark(targetRef, memo);
+  }, items1);
+  let obj2 = visible(onTryItOut[9]);
+  const coachmark = obj2.useCoachmark(targetRef, memo);
   return null;
 };

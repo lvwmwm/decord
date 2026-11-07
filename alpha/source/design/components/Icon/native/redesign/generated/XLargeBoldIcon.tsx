@@ -1,14 +1,14 @@
-// Module ID: 9385
-// Function ID: 9386
+// Module ID: 9367
+// Function ID: 9368
 // Name: XLargeBoldIcon
-// Dependencies: [19, 21, 575, 5871, 9386, 2]
+// Dependencies: [19, 21, 575, 5841, 9368, 2]
 // Exports: XLargeBoldIcon
 
-// Module 9385 (XLargeBoldIcon)
+// Module 9367 (XLargeBoldIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5871 */;
-import AssetRegistry from "AssetRegistry" /* 9386 */;
+import BaseIconImage2 from "BaseIconImage" /* 5841 */;
+import AssetRegistry from "AssetRegistry" /* 9368 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

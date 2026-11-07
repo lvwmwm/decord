@@ -1,12 +1,12 @@
-// Module ID: 13612
-// Function ID: 13613
+// Module ID: 13636
+// Function ID: 13637
 // Name: useShareChatInputActions
-// Dependencies: [32, 19, 1388, 10077, 2]
+// Dependencies: [32, 19, 1388, 10061, 2]
 // Exports: useShareChatInputActions
 
-// Module 13612 (useShareChatInputActions)
+// Module 13636 (useShareChatInputActions)
 import EmojiConstants from "EmojiConstants" /* 1388 */;
-import openEmojiPickerActionSheet2 from "openEmojiPickerActionSheet" /* 10077 */;
+import openEmojiPickerActionSheet2 from "openEmojiPickerActionSheet" /* 10061 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

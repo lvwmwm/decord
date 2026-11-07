@@ -1,17 +1,17 @@
-// Module ID: 18100
-// Function ID: 18101
+// Module ID: 18147
+// Function ID: 18148
 // Name: useShopAllCatalogPages
-// Dependencies: [32, 19, 9686, 7820, 1072, 9688, 504, 559, 7818, 2]
+// Dependencies: [32, 19, 9668, 7797, 1072, 8865, 9670, 504, 559, 7795, 2]
 // Exports: default
 
-// Module 18100 (useShopAllCatalogPages)
+// Module 18147 (useShopAllCatalogPages)
 import get_initializedDefault from "get initialized" /* 504 */;
 import Constants from "Constants" /* 1072 */;
-import StorefrontCollectionActionCreators from "StorefrontCollectionActionCreators" /* 9688 */;
+import StorefrontCollectionActionCreators from "StorefrontCollectionActionCreators" /* 9670 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import StorefrontCollectionStore from "StorefrontCollectionStore" /* 9686 */;
-import CollectiblesCategoryRecord from "CollectiblesCategoryRecord" /* 7820 */;
+import StorefrontCollectionStore from "StorefrontCollectionStore" /* 9668 */;
+import CollectiblesCategoryRecord from "CollectiblesCategoryRecord" /* 7797 */;
 import size from "module_2" /* 2 */;
 
 function getCategoryForCollection(id) {
@@ -37,9 +37,9 @@ export default function useShopAllCatalogPages(pageSize) {
   let enabled = pageSize.enabled;
   let first;
   let current;
-  let closure_12;
+  let closure_13;
   let nextPageFetchState;
-  let closure_14;
+  let closure_15;
   let memo2;
   let ref;
   let callback;
@@ -58,17 +58,21 @@ export default function useShopAllCatalogPages(pageSize) {
     const obj = { length: rounded };
     return Array.from(obj, (arg0, arg1) => ({ applicationId: memo, offset: arg1 * limit, limit, useShopOrdering: true, includeUnpublishedProducts: includeUnpublishedCollections, includeUnpublishedCollections, ignoreCache }));
   }, items);
-  let items1 = [memo];
-  const memo1 = first.useMemo(() => memo.map(StorefrontCollectionActionCreators.getCollectionPageKey), items1);
   let tmp5 = pageSize;
   const tmp6 = noCache;
-  const obj3 = pageSize(noCache[5]);
-  const collectionListKey = obj3.getCollectionListKey(memo[0]);
-  let tmp8 = closure_5;
+  let obj2 = pageSize(noCache[5]);
+  const storefrontPricingKey = obj2.useStorefrontPricingKey();
+  let items1 = [memo, storefrontPricingKey];
+  const memo1 = first.useMemo(() => memo.map((item) => {
+    const obj = pageSize(noCache[6]);
+    return obj.getCollectionPageKey(item, storefrontPricingKey);
+  }), items1);
+  const obj4 = pageSize(noCache[6]);
+  const collectionListKey = obj4.getCollectionListKey(memo[0], storefrontPricingKey);
   const items2 = [closure_5];
   const items3 = [memo1];
-  const obj4 = pageSize(noCache[6]);
-  const stateFromStoresObject = obj4.useStateFromStoresObject(items2, () => {
+  const obj5 = pageSize(noCache[7]);
+  const stateFromStoresObject = obj5.useStateFromStoresObject(items2, () => {
     const obj = {};
     for (const item10006 of memo1) {
       obj[item10006] = StorefrontCollectionStore.getCollectionPageIds(item10006);
@@ -77,23 +81,23 @@ export default function useShopAllCatalogPages(pageSize) {
     return obj;
   }, items3);
   let findIndexResult = memo1.findIndex((item) => null == stateFromStoresObject[item]);
-  let tmp11 = -1 === findIndexResult;
-  let tmp12;
-  if (!tmp11) {
-    tmp12 = memo[findIndexResult];
-  }
-  current = tmp12;
+  let tmp12 = -1 === findIndexResult;
   let tmp13;
-  if (!tmp11) {
-    tmp13 = memo1[findIndexResult];
+  if (!tmp12) {
+    tmp13 = memo[findIndexResult];
   }
-  closure_12 = tmp13;
-  const items4 = [tmp8];
-  const items5 = [tmp13, collectionListKey];
-  const tmp5Result = tmp5(tmp6[6]);
+  current = tmp13;
+  let tmp14;
+  if (!tmp12) {
+    tmp14 = memo1[findIndexResult];
+  }
+  closure_13 = tmp14;
+  const items4 = [tmp9];
+  const items5 = [tmp14, collectionListKey];
+  const tmp5Result = tmp5(tmp6[7]);
   const stateFromStoresObject1 = tmp5Result.useStateFromStoresObject(items4, () => {
     let collectionPageFetchState;
-    if (null != closure_12) {
+    if (null != closure_13) {
       collectionPageFetchState = StorefrontCollectionStore.getCollectionPageFetchState(tmp);
     }
     const obj = { nextPageFetchState: collectionPageFetchState, total: StorefrontCollectionStore.getCollectionListTotal(collectionListKey) };
@@ -101,19 +105,19 @@ export default function useShopAllCatalogPages(pageSize) {
   }, items5);
   nextPageFetchState = stateFromStoresObject1.nextPageFetchState;
   const total = stateFromStoresObject1.total;
-  let tmp15 = null == total;
-  if (!tmp15) {
-    if (tmp11) {
+  let tmp16 = null == total;
+  if (!tmp16) {
+    if (tmp12) {
       findIndexResult = rounded;
     }
-    tmp15 = findIndexResult * pageSize < total;
+    tmp16 = findIndexResult * pageSize < total;
   }
-  closure_14 = tmp15;
+  closure_15 = tmp16;
   memo2 = obj.useMemo(() => {
-    const tmp = new includeUnpublished(noCache[7])(1000, 30000);
+    const tmp = new includeUnpublished(noCache[8])(1000, 30000);
     return tmp;
   }, []);
-  ref = obj.useRef(tmp12);
+  ref = obj.useRef(tmp13);
   callback = obj.useCallback(() => {
     if (null != ref.current) {
       const obj = StorefrontCollectionActionCreators;
@@ -122,10 +126,10 @@ export default function useShopAllCatalogPages(pageSize) {
   }, []);
   const items6 = [memo2];
   const effect = obj.useEffect(() => () => memo2.cancel(), items6);
-  const items7 = [enabled, tmp12, tmp15, nextPageFetchState, memo2, callback];
+  const items7 = [enabled, tmp13, tmp16, nextPageFetchState, memo2, callback];
   const effect1 = obj.useEffect(() => {
     ref.current = current;
-    const tmp2 = enabled && null != tmp && closure_14;
+    const tmp2 = enabled && null != tmp && closure_15;
     if (tmp2) {
       if ("error" === nextPageFetchState) {
         const obj2 = memo2;
@@ -158,9 +162,9 @@ export default function useShopAllCatalogPages(pageSize) {
       return items;
     }
   }, items8);
-  const items9 = [tmp8];
+  const items9 = [tmp9];
   const items10 = [memo3];
-  const tmp5Result2 = tmp5(tmp6[6]);
+  const tmp5Result2 = tmp5(tmp6[7]);
   stateFromStoresObject2 = tmp5Result2.useStateFromStoresObject(items9, () => {
     const obj = {};
     for (const item10006 of memo3) {
@@ -185,14 +189,14 @@ export default function useShopAllCatalogPages(pageSize) {
         for (const item10005 of found) {
           let addResult = set.add(item10005);
           let products = item10005.products;
-          let item = products.forEach(pageSize(noCache[8]).seedCollectiblesProductFromStandaloneLoad);
+          let item = products.forEach(pageSize(noCache[9]).seedCollectiblesProductFromStandaloneLoad);
           continue;
         }
       });
     }
   }, items12);
   const items13 = [pageSize, first];
-  let obj2 = { categories: memo4, isLoading: enabled, hasMore: tmp15, prefetchThrough: callback1 };
+  const obj3 = { categories: memo4, isLoading: enabled, hasMore: tmp16, prefetchThrough: callback1 };
   callback1 = obj.useCallback((arg0) => {
     const sum = arg0 + 2 * pageSize;
     if (sum > first) {
@@ -200,10 +204,10 @@ export default function useShopAllCatalogPages(pageSize) {
     }
   }, items13);
   if (enabled) {
-    enabled = null != tmp12;
+    enabled = null != tmp13;
   }
   if (enabled) {
-    enabled = tmp15;
+    enabled = tmp16;
   }
-  return obj2;
+  return obj3;
 };

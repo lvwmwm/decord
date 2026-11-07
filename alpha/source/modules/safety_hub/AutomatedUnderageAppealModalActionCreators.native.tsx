@@ -1,16 +1,16 @@
-// Module ID: 13523
-// Function ID: 13524
+// Module ID: 13548
+// Function ID: 13549
 // Name: AutomatedUnderageAppealModalActionCreators
-// Dependencies: [5, 8061, 6808, 21, 13521, 572, 5404, 13524, 2118, 8060, 8084, 6809, 8090, 8046, 6824, 8097, 8248, 2]
+// Dependencies: [5, 8039, 6783, 21, 13546, 572, 5374, 13549, 2118, 8038, 8063, 6784, 8069, 8024, 6799, 8076, 8227, 2]
 
-// Module 13523 (AutomatedUnderageAppealModalActionCreators)
+// Module 13548 (AutomatedUnderageAppealModalActionCreators)
 import Fragment from "Fragment" /* 21 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import asyncRequire from "asyncRequire" /* 2118 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5404 */;
-import AgeVerificationConstants from "AgeVerificationConstants" /* 6808 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
+import AgeVerificationConstants from "AgeVerificationConstants" /* 6783 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 8061 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 8039 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -19,7 +19,7 @@ let _require, c3, dependencyMap, importDefault, paths;
 let closure_4;
 let hasOwnProperty;
 let tmp;
-const ModalActionCreatorsDefault = tmp(6824);
+const ModalActionCreatorsDefault = tmp(6799);
 ({ AGE_APPEAL_ACTION_SHEET_NAME: closure_4, AGE_CHECK_POLL_DELAY_MS: hasOwnProperty } = SafetyHubConstants);
 let closure_6 = AgeVerificationConstants.AGE_VERIFICATION_GET_STARTED_MODAL_KEY;
 const jsx = Fragment.jsx;
@@ -29,7 +29,7 @@ let obj = {
     obj.dispatch({ type: "SAFETY_HUB_AUTOMATED_UNDERAGE_APPEAL_MODAL_OPEN" });
     const obj2 = ActionSheetActionCreatorsDefault;
     const obj3 = { classificationId, onClose };
-    obj2.openLazy(asyncRequire(13524, dependencyMap.paths), React3, obj3);
+    obj2.openLazy(asyncRequire(13549, dependencyMap.paths), React3, obj3);
   },
   openV2(classificationId, onClose) {
     _require = classificationId;
@@ -41,8 +41,8 @@ let obj = {
     let tmp4 = _require;
     let obj2 = require("SafetyHubUtils");
     if (obj2.isCurrentUserSuspended()) {
-      const tmp4Result = tmp4(8084);
-      if (tmp4Result.isExpressiveModalV2Enabled(tmp4(6809).AgeVerificationModalEntryPoint.AUTOMATED_UNDERAGE_APPEALS)) {
+      const tmp4Result = tmp4(8063);
+      if (tmp4Result.isExpressiveModalV2Enabled(tmp4(6784).AgeVerificationModalEntryPoint.AUTOMATED_UNDERAGE_APPEALS)) {
         let tmp6 = globalThis;
         const _Math = Math;
         const _Date = Date;
@@ -64,7 +64,7 @@ let obj = {
               let obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } else {
             try {
@@ -135,7 +135,7 @@ let obj = {
                   }), obj8, closure_1_6);
                 }
                 c3 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               }
             } catch (tmp23) {
               c3 = 3;

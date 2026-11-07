@@ -1,14 +1,14 @@
-// Module ID: 9449
-// Function ID: 9450
+// Module ID: 9431
+// Function ID: 9432
 // Name: EpicGamesNeutralIcon
-// Dependencies: [19, 21, 575, 5871, 9450, 2]
+// Dependencies: [19, 21, 575, 5841, 9432, 2]
 // Exports: EpicGamesNeutralIcon
 
-// Module 9449 (EpicGamesNeutralIcon)
+// Module 9431 (EpicGamesNeutralIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5871 */;
-import AssetRegistry from "AssetRegistry" /* 9450 */;
+import BaseIconImage2 from "BaseIconImage" /* 5841 */;
+import AssetRegistry from "AssetRegistry" /* 9432 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

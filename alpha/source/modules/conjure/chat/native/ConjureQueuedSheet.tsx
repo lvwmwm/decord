@@ -1,22 +1,22 @@
-// Module ID: 12982
-// Function ID: 12983
+// Module ID: 12993
+// Function ID: 12994
 // Name: ConjureQueuedSheet
-// Dependencies: [32, 19, 17, 10987, 21, 5170, 575, 504, 12770, 5404, 7449, 7405, 1113, 4024, 5781, 5788, 2]
+// Dependencies: [32, 19, 17, 10970, 21, 5140, 575, 504, 12783, 5374, 7426, 7382, 1113, 4026, 5751, 5758, 2]
 // Exports: default
 
-// Module 12982 (ConjureQueuedSheet)
+// Module 12993 (ConjureQueuedSheet)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import _modDef4024 from "module_4024" /* 4024 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5404 */;
-import Text_Text from "Text/Text" /* 5781 */;
-import conjureQueuedMessage from "conjureQueuedMessage" /* 12770 */;
+import _modDef4026 from "module_4026" /* 4026 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import conjureQueuedMessage from "conjureQueuedMessage" /* 12783 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ConjureChatStore from "ConjureChatStore" /* 10987 */;
+import ConjureChatStore from "ConjureChatStore" /* 10970 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -59,7 +59,7 @@ function ConjureQueuedRow(content) {
   }
   if ("" === content) {
     const obj2 = { style: tmp7, children: metroImportAll(Text, obj3) };
-    obj3 = { variant: "body-sm/normal", color: "text-muted", children: intl2.string(_modDef4024["07XimM"]) };
+    obj3 = { variant: "body-sm/normal", color: "text-muted", children: intl2.string(_modDef4026["07XimM"]) };
     Text = Text_Text.Text;
     intl2 = intl3.intl;
     tmp17Result = metroImportAll(metroRequire, obj2);
@@ -74,10 +74,10 @@ function ConjureQueuedRow(content) {
     items2 = [React4(metroRequire, obj5), ];
     let tmp19Result = null;
     if (tmp5) {
-      const Button = tmp20(5788).Button;
+      const Button = tmp20(5758).Button;
       const intl = tmp20(1113).intl;
       const string = intl.string;
-      const tmp10 = _modDef4024;
+      const tmp10 = _modDef4026;
       const obj7 = {
         variant: "tertiary",
         size: "sm",
@@ -133,9 +133,9 @@ export default function ConjureQueuedSheet(projectId) {
   let tmp7 = null;
   if (0 !== memo.length) {
     const obj2 = { header: closure_8(BottomSheetTitleHeader, obj3), children: closure_8(closure_5, obj4) };
-    const ActionSheet = tmp2(7449).ActionSheet;
-    obj3 = { title: intl.string(stateFromStores(4024).hzgPbZ) };
-    BottomSheetTitleHeader = tmp2(7405).BottomSheetTitleHeader;
+    const ActionSheet = tmp2(7426).ActionSheet;
+    obj3 = { title: intl.string(stateFromStores(4026).hzgPbZ) };
+    BottomSheetTitleHeader = tmp2(7382).BottomSheetTitleHeader;
     intl = tmp2(1113).intl;
     obj4 = {
       style: tmp.scroller,

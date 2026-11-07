@@ -1,11 +1,11 @@
-// Module ID: 6224
-// Function ID: 6225
+// Module ID: 6199
+// Function ID: 6200
 // Name: CheckpointConstants
-// Dependencies: [3248, 6225, 2]
+// Dependencies: [3248, 6200, 2]
 
-// Module 6224 (CheckpointConstants)
+// Module 6199 (CheckpointConstants)
 import _modDef3248 from "module_3248" /* 3248 */;
-import CheckpointTraitRarity from "CheckpointTraitRarity" /* 6225 */;
+import CheckpointTraitRarity from "CheckpointTraitRarity" /* 6200 */;
 import size from "module_2" /* 2 */;
 
 const items = [{ list: "gamesByPlayers", label: _modDef3248.b4s18j }, , , ];
@@ -47,7 +47,8 @@ export const CHECKPOINT_NITRO_BADGE_GRADIENT_ID = "checkpointRarityBadgeNitroGra
 export const CHECKPOINT_BACKGROUND_GRADIENT = ["#12606D", "#0B1624"];
 export const CHECKPOINT_GLOBAL_GAME_CATEGORIES = items;
 export const CHECKPOINT_NAV_HEIGHT = 64;
-export const CHECKPOINT_CONTROL_SIZE = 48;
+export const CHECKPOINT_CONTROL_SIZE = 40;
+export const CHECKPOINT_CONTROL_ICON_SIZE = 20;
 export const CHECKPOINT_CONTENT_MAX_WIDTH = 480;
 export const CHECKPOINT_CONTENT_MAX_HEIGHT = 840;
 export const CHECKPOINT_LOGO_SIZE = 40;

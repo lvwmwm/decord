@@ -1,9 +1,9 @@
-// Module ID: 6218
-// Function ID: 6219
+// Module ID: 6193
+// Function ID: 6194
 // Name: SoundboardConstants
 // Dependencies: [2]
 
-// Module 6218 (SoundboardConstants)
+// Module 6193 (SoundboardConstants)
 import size from "module_2" /* 2 */;
 
 const obj = { SUCCESS: 0, [0]: "SUCCESS", INTERRUPTED: 1, [1]: "INTERRUPTED" };

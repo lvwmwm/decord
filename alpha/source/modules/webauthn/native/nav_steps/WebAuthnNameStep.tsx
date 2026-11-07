@@ -1,19 +1,19 @@
-// Module ID: 16954
-// Function ID: 16955
+// Module ID: 17002
+// Function ID: 17003
 // Name: WebAuthnNameStep
-// Dependencies: [5, 32, 19, 17, 1072, 21, 5170, 7251, 1499, 6828, 5867, 1113, 8267, 1187, 5788, 2]
+// Dependencies: [5, 32, 19, 17, 1072, 21, 5140, 7226, 1499, 6803, 5837, 1113, 8246, 1187, 5758, 2]
 // Exports: default
 
-// Module 16954 (WebAuthnNameStep)
+// Module 17002 (WebAuthnNameStep)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
 import useNavigation from "useNavigation" /* 1499 */;
-import useSettingNavigationRoute from "useSettingNavigationRoute" /* 7251 */;
+import useSettingNavigationRoute from "useSettingNavigationRoute" /* 7226 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let c1, c4, dependencyMap;
@@ -23,8 +23,8 @@ let metroImportAll;
 let tmp;
 const intl4 = tmp(1113);
 const native = tmp(1187);
-const components_Button_Button = tmp(5788);
-const _mod8267 = tmp(8267);
+const components_Button_Button = tmp(5758);
+const _mod8246 = tmp(8246);
 const View = react_native.View;
 const UserSettingsSections = Constants.UserSettingsSections;
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);
@@ -61,7 +61,7 @@ export default function WebAuthnNameStep() {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c3;
@@ -114,7 +114,7 @@ export default function WebAuthnNameStep() {
             open("WEBAUTHN_CREDENTIAL_REGISTER_SUCCESS_TOAST_KEY", obj7);
             const replaced = closure_128_2.replace(constants.WEBAUTHN_SUCCESS);
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp28) {
           body = tmp28;
@@ -149,12 +149,12 @@ export default function WebAuthnNameStep() {
   first1 = tmp5Result[0];
   let obj3 = { children: items };
   const tmp12 = tmp5Result[1];
-  const Form = _mod8267.Form;
+  const Form = _mod8246.Form;
   let obj4 = { showTopContainer: false, value: first1, onChange: tmp12, style: tmp3.margin, error: tmp9, title: intl.string(intl4.t["Jzd+z/"]), placeholder: intl2.string(intl4.t["I/sJtJ"]), disabled: first, clearButtonVisibility: native.ClearButtonVisibility.WITH_CONTENT, autoFocus: true, showBorder: true, required: true, large: true };
-  const FormInput = _mod8267.FormInput;
+  const FormInput = _mod8246.FormInput;
   intl = intl4.intl;
   intl2 = intl4.intl;
-  items = [closure_8(FormInput, obj4), closure_8(_mod8267.FormDivider, {}), ];
+  items = [closure_8(FormInput, obj4), closure_8(_mod8246.FormDivider, {}), ];
   let obj5 = { style: tmp3.margin, children: closure_8(Button, obj6) };
   obj6 = {
     onPress() {

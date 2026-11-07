@@ -1,10 +1,10 @@
-// Module ID: 14273
-// Function ID: 14274
+// Module ID: 14303
+// Function ID: 14304
 // Name: GuildPowerupMocks
-// Dependencies: [5376, 2]
+// Dependencies: [5346, 2]
 
-// Module 14273 (GuildPowerupMocks)
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5376 */;
+// Module 14303 (GuildPowerupMocks)
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5346 */;
 import size from "module_2" /* 2 */;
 
 const GuildPowerupType = GuildPowerupsConstants.GuildPowerupType;

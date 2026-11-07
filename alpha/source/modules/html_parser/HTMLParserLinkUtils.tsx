@@ -1,15 +1,15 @@
-// Module ID: 9530
-// Function ID: 9531
+// Module ID: 9512
+// Function ID: 9513
 // Name: HTMLParserLinkUtils
-// Dependencies: [109, 9504, 6196, 5904, 1378, 2067, 6195, 9529, 2]
+// Dependencies: [109, 9486, 6170, 5873, 1378, 2067, 6169, 9511, 2]
 // Exports: addTextLinks
 
-// Module 9530 (HTMLParserLinkUtils)
-import MarkupLinkRule2 from "MarkupLinkRule" /* 6195 */;
-import UnicodeSanitizationUtils from "UnicodeSanitizationUtils" /* 6196 */;
-import HTMLParserRunUtils from "HTMLParserRunUtils" /* 9529 */;
+// Module 9512 (HTMLParserLinkUtils)
+import MarkupLinkRule2 from "MarkupLinkRule" /* 6169 */;
+import UnicodeSanitizationUtils from "UnicodeSanitizationUtils" /* 6170 */;
+import HTMLParserRunUtils from "HTMLParserRunUtils" /* 9511 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import HTMLParserConstants from "HTMLParserConstants" /* 9504 */;
+import HTMLParserConstants from "HTMLParserConstants" /* 9486 */;
 import module_2067_mod from "module_2067" /* 2067 */;
 import size from "module_2" /* 2 */;
 

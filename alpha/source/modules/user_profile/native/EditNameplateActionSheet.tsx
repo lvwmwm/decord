@@ -1,23 +1,23 @@
-// Module ID: 16764
-// Function ID: 16765
+// Module ID: 16812
+// Function ID: 16813
 // Name: EditNameplateActionSheet
-// Dependencies: [32, 19, 17, 7834, 2109, 5082, 1072, 21, 5170, 575, 8833, 7410, 7435, 1252, 8827, 8834, 5418, 7405, 1113, 8835, 10742, 504, 16765, 15304, 8829, 16766, 15310, 15311, 8836, 9615, 5745, 11670, 2]
+// Dependencies: [32, 19, 17, 7811, 2109, 5052, 1072, 21, 5140, 575, 8812, 7387, 7412, 1252, 8806, 8813, 5388, 7382, 1113, 8814, 10725, 504, 16813, 15338, 8808, 16814, 15344, 15345, 8815, 9597, 5715, 11652, 2]
 // Exports: default
 
-// Module 16764 (EditNameplateActionSheet)
+// Module 16812 (EditNameplateActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import NameplateRecord from "NameplateRecord" /* 2109 */;
-import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 8827 */;
-import useShopProductItems from "useShopProductItems" /* 8834 */;
-import EditNameplateSection from "EditNameplateSection" /* 16766 */;
+import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 8806 */;
+import useShopProductItems from "useShopProductItems" /* 8813 */;
+import EditNameplateSection from "EditNameplateSection" /* 16814 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7834 */;
-import GuildMemberStore from "GuildMemberStore" /* 5082 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7811 */;
+import GuildMemberStore from "GuildMemberStore" /* 5052 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -138,7 +138,7 @@ function NameplateActionSheetPreview(arg0) {
   ({ previewSkuId, user, guildId } = arg0);
   const tmp = closure_13();
   let tmp3 = dependencyMap;
-  const tmp4 = purchase(8836)(previewSkuId);
+  const tmp4 = purchase(8815)(previewSkuId);
   const product = tmp4.product;
   _require = product;
   purchase = tmp4.purchase;
@@ -173,18 +173,18 @@ function NameplateActionSheetPreview(arg0) {
     tmp10 = _require;
   }
   const obj3 = { style: tmp.nameplateGradientContainer, children: items1 };
-  items1 = [closure_10(tmp10(9615).NameplateDummyUserPreview, { width: 100 }), closure_10(tmp10(9615).NameplateDummyUserPreview, { width: 140 }), ];
+  items1 = [closure_10(tmp10(9597).NameplateDummyUserPreview, { width: 100 }), closure_10(tmp10(9597).NameplateDummyUserPreview, { width: 140 }), ];
   const obj4 = { style: tmp.nameplatePreviewGradient, start: { x: 0, y: 0.1 }, end: { x: 0, y: 0.8 }, colors: items2 };
   items2 = [tmp.nameplatePreviewGradient.color, ];
-  const tmp2Result = purchase(5745);
+  const tmp2Result = purchase(5715);
   items2[1] = "" + tmp.nameplatePreviewGradient.color + "00";
   items1[2] = closure_10(tmp2Result, obj4);
-  items3 = [closure_11(View, obj3), closure_10(tmp10(11670).NameplatePreview, { nameplate: memo, user, guildId, animate: true, "aria-hidden": true }), ];
+  items3 = [closure_11(View, obj3), closure_10(tmp10(11652).NameplatePreview, { nameplate: memo, user, guildId, animate: true, "aria-hidden": true }), ];
   const obj5 = { style: tmp.nameplateGradientContainer, children: items4 };
-  items4 = [closure_10(tmp10(9615).NameplateDummyUserPreview, { width: 140 }), closure_10(tmp10(9615).NameplateDummyUserPreview, { width: 100 }), ];
+  items4 = [closure_10(tmp10(9597).NameplateDummyUserPreview, { width: 140 }), closure_10(tmp10(9597).NameplateDummyUserPreview, { width: 100 }), ];
   const obj6 = { style: tmp.nameplatePreviewGradient, start: { x: 0, y: 0.2 }, end: { x: 0, y: 0.9 }, colors: items5 };
   items5 = [, ];
-  const tmp2Result2 = purchase(5745);
+  const tmp2Result2 = purchase(5715);
   items5[0] = "" + tmp.nameplatePreviewGradient.color + "00";
   items5[1] = tmp.nameplatePreviewGradient.color;
   items4[2] = closure_10(tmp2Result2, obj6);
@@ -220,7 +220,7 @@ export default function EditNameplateActionSheet(arg0) {
   ({ user, currentNameplate, guildId } = arg0);
   first = undefined;
   const tmp = closure_13();
-  let obj = guildId(8833);
+  let obj = guildId(8812);
   let obj2 = react;
   const bottomSheetRef = obj.useBottomSheetRef().bottomSheetRef;
   [first, tmp6] = react.useState(undefined);
@@ -228,8 +228,8 @@ export default function EditNameplateActionSheet(arg0) {
   if (undefined !== first) {
     tmp7 = first;
   }
-  const tmp9 = first(7410);
-  const analyticsLocations = tmp9(first(7435).EDIT_NAMEPLATE_SHEET).analyticsLocations;
+  const tmp9 = first(7387);
+  const analyticsLocations = tmp9(first(7412).EDIT_NAMEPLATE_SHEET).analyticsLocations;
   const items = [first, guildId];
   const callback = obj2.useCallback(() => {
     const obj = first(dependencyMap[13]);
@@ -252,19 +252,19 @@ export default function EditNameplateActionSheet(arg0) {
     setPendingChanges(obj);
   }, items);
   const obj3 = { value: analyticsLocations, children: tmp13(BottomSheet, obj4) };
-  const AnalyticsLocationProvider = tmp2(7410).AnalyticsLocationProvider;
+  const AnalyticsLocationProvider = tmp2(7387).AnalyticsLocationProvider;
   obj4 = { scrollable: true, ref: bottomSheetRef, onExpand: callback, startExpanded: true, header: closure_10(BottomSheetTitleHeader, obj5), children: items1 };
-  BottomSheet = tmp2(5418).BottomSheet;
+  BottomSheet = tmp2(5388).BottomSheet;
   obj5 = { title: intl.string(guildId(1113).t.BwdeM1) };
-  BottomSheetTitleHeader = tmp2(7405).BottomSheetTitleHeader;
+  BottomSheetTitleHeader = tmp2(7382).BottomSheetTitleHeader;
   intl = tmp2(1113).intl;
   items1 = [, ];
   const obj6 = { style: tmp.container, children: closure_10(EditNameplateInner, { user, selectedNameplate: tmp7, setSelectedNameplate: tmp6, guildId }) };
   items1[0] = closure_10(View, obj6);
-  const obj7 = { user, currentSkuId: skuId, selectedSkuId: skuId1, onApply: callback1, analyticsLocations, analyticsSource: tmp8(7435).EDIT_NAMEPLATE_SHEET };
+  const obj7 = { user, currentSkuId: skuId, selectedSkuId: skuId1, onApply: callback1, analyticsLocations, analyticsSource: tmp8(7412).EDIT_NAMEPLATE_SHEET };
   skuId = undefined;
   tmp13 = closure_11;
-  const tmp14 = first(8835);
+  const tmp14 = first(8814);
   tmp8 = first;
   if (currentNameplate != null) {
     skuId = currentNameplate.skuId;

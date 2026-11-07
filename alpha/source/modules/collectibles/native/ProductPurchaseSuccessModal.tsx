@@ -1,26 +1,26 @@
-// Module ID: 14698
-// Function ID: 14699
+// Module ID: 14731
+// Function ID: 14732
 // Name: ProductPurchaseSuccessModal
-// Dependencies: [32, 717, 19, 17, 5171, 1072, 21, 5170, 575, 2111, 14697, 7096, 7145, 1113, 1652, 5791, 5400, 5406, 7829, 14699, 5754, 5745, 8841, 14701, 504, 14702, 11676, 9660, 8995, 8834, 5872, 7378, 14703, 9595, 9608, 11551, 11669, 11670, 5781, 7831, 5788, 2]
+// Dependencies: [32, 717, 19, 17, 5141, 1072, 21, 5140, 575, 2111, 14730, 7071, 7120, 1113, 1652, 5761, 5370, 5376, 7806, 14732, 5724, 5715, 8820, 14734, 504, 14735, 11658, 9642, 8977, 8813, 5842, 7355, 14736, 9577, 9590, 11533, 11651, 11652, 5751, 7808, 5758, 2]
 // Exports: default
 
-// Module 14698 (ProductPurchaseSuccessModal)
+// Module 14731 (ProductPurchaseSuccessModal)
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 2111 */;
-import HapticUtils from "HapticUtils" /* 5406 */;
-import _mod7096 from "module_7096" /* 7096 */;
-import XSmallIcon from "XSmallIcon" /* 7145 */;
-import _modDef7829 from "module_7829" /* 7829 */;
-import ProductPurchaseSuccessActionCreatorsDefault from "ProductPurchaseSuccessActionCreators" /* 14697 */;
+import HapticUtils from "HapticUtils" /* 5376 */;
+import _mod7071 from "module_7071" /* 7071 */;
+import XSmallIcon from "XSmallIcon" /* 7120 */;
+import _modDef7806 from "module_7806" /* 7806 */;
+import ProductPurchaseSuccessActionCreatorsDefault from "ProductPurchaseSuccessActionCreators" /* 14730 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _toArray from "_toArray" /* 717 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5171 */;
+import AccessibilityStore from "AccessibilityStore" /* 5141 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -63,7 +63,7 @@ function CancelButton(arg0) {
     accessibilityLabel: intl.string(intl5.t.cpT0Cq),
     displayMode: "minimal"
   };
-  const HeaderBackButton = _mod7096.HeaderBackButton;
+  const HeaderBackButton = _mod7071.HeaderBackButton;
   intl = intl5.intl;
   return closure_11(HeaderBackButton, obj);
 }
@@ -178,7 +178,7 @@ let closure_17 = { code: "(function ProductPurchaseSuccessModalTsx1(){let[interp
 let closure_18 = { code: "(function ProductPurchaseSuccessModalTsx2(){let[interpolate,springInput]=this.__closure;return{opacity:interpolate(springInput.get(),[0,1],[0,1]),transform:[{scale:interpolate(springInput.get(),[0,1],[0.75,1])}]};})" };
 let closure_19 = { code: "(function ProductPurchaseSuccessModalTsx3(){let[interpolate,linearInput]=this.__closure;return{opacity:interpolate(linearInput.get(),[0,1],[0.5,0])};})" };
 let closure_20 = [80, 79, 78, 75, 72, 50, 45, 35, 70];
-let obj5 = _modDef7829("black");
+let obj5 = _modDef7806("black");
 let closure_21 = obj5.toHexString();
 let size = size_mod;
 let result = size.fileFinishedImporting("modules/collectibles/native/ProductPurchaseSuccessModal.tsx");
@@ -247,7 +247,7 @@ export default function ProductPurchaseSuccessModal(orbBalancePriorToPurchase) {
   const stageCollectibleChangeForEditProfile = orbBalancePriorToPurchase.stageCollectibleChangeForEditProfile;
   let obj = require("useCurrentUser");
   const currentUser = obj.useCurrentUser();
-  const backgroundColors = callback(14699)(product.styles).backgroundColors;
+  const backgroundColors = callback(14732)(product.styles).backgroundColors;
   let tertiary;
   if (backgroundColors != null) {
     tertiary = backgroundColors.tertiary;
@@ -428,14 +428,14 @@ export default function ProductPurchaseSuccessModal(orbBalancePriorToPurchase) {
     if (null != mobileBgUrl) {
       let obj3 = { source: obj5, style: tmp6.imageBackground };
       obj5 = { uri: mobileBgUrl };
-      tmp42 = closure_11(tmp4(5872), obj3);
+      tmp42 = closure_11(tmp4(5842), obj3);
       tmp43 = closure_11;
       tmp44 = closure_11;
     }
     const items9 = [tmp42, , ];
     const items10 = [tmp6.main, ];
     let str;
-    const SafeAreaPaddingView = tmp2(7378).SafeAreaPaddingView;
+    const SafeAreaPaddingView = tmp2(7355).SafeAreaPaddingView;
     if (useCategoryImage) {
       str = "rgba(0, 0, 0, 0.3)";
     }
@@ -446,7 +446,7 @@ export default function ProductPurchaseSuccessModal(orbBalancePriorToPurchase) {
     const obj8 = { style: tmp6.headerLeading, children: showOrbBalancePill };
     if (showOrbBalancePill) {
       const obj9 = { initialRenderedBalance: prop, balance };
-      showOrbBalancePill = tmp44(tmp2(14703).BalanceWidgetPill, obj9);
+      showOrbBalancePill = tmp44(tmp2(14736).BalanceWidgetPill, obj9);
     }
     items11 = [tmp44(closure_7, obj8), ];
     let toHexStringResult;
@@ -473,23 +473,23 @@ export default function ProductPurchaseSuccessModal(orbBalancePriorToPurchase) {
       if (tmp43Result) {
         const obj14 = { deco: null, pfx: null, nameplate: null, previewAssets: product.previewAssets, disableStaticBackground: true, size: "large", targetSize: tmp38 };
         ({ firstAvatarDecoration: obj28.deco, firstProfileEffect: obj28.pfx, firstNameplate: obj28.nameplate } = shopProductItems);
-        tmp43Result = tmp43(tmp4(9595), obj14);
+        tmp43Result = tmp43(tmp4(9577), obj14);
       }
       tmp43Result2 = tmp43(tmp41, obj13);
     } else if (require("CollectiblesItemType").CollectiblesItemType.AVATAR_DECORATION === type) {
       const obj15 = { item: first, size: avatarDecorationSize, avatarSource, animate: !stateFromStores };
-      tmp43Result2 = tmp43(tmp4(9608), obj15);
+      tmp43Result2 = tmp43(tmp4(9590), obj15);
     } else if (require("CollectiblesItemType").CollectiblesItemType.PROFILE_EFFECT === type) {
       const obj16 = { user: currentUser, profileEffect: product.items[0] };
-      tmp43Result2 = tmp43(tmp4(11551), obj16);
+      tmp43Result2 = tmp43(tmp4(11533), obj16);
     } else if (require("CollectiblesItemType").CollectiblesItemType.PROFILE_FRAME === type) {
       const obj17 = { user: currentUser, profileFrame: product.items[0] };
-      tmp43Result2 = tmp43(tmp4(11669), obj17);
+      tmp43Result2 = tmp43(tmp4(11651), obj17);
     } else {
       tmp43Result2 = null;
       if (require("CollectiblesItemType").CollectiblesItemType.NAMEPLATE === type) {
         const obj18 = { user: currentUser, nameplate: product.items[0], animate: true };
-        tmp43Result2 = tmp43(tmp2(11670).NameplatePreview, obj18);
+        tmp43Result2 = tmp43(tmp2(11652).NameplatePreview, obj18);
       }
     }
     items14 = [tmp44(View, obj12), ];
@@ -500,12 +500,12 @@ export default function ProductPurchaseSuccessModal(orbBalancePriorToPurchase) {
       renderMessagesResult = renderMessages();
     } else {
       const obj20 = { variant: "heading-xl/semibold", color: "text-overlay-light", style: tmp6.title, children: intl3.format(require("intl").t.YNaxMp, obj21) };
-      const Text = tmp2(5781).Text;
+      const Text = tmp2(5751).Text;
       intl3 = tmp2(1113).intl;
       obj21 = { itemName: product.name };
       const items16 = [tmp44(Text, obj20), ];
       const obj22 = { variant: "body-md/medium", color: "text-overlay-light", style: tmp6.title, children: formatResult };
-      const Text2 = tmp2(5781).Text;
+      const Text2 = tmp2(5751).Text;
       const tmp2Result24 = require("CollectiblesUtils");
       let result = tmp2Result24.isPremiumCollectiblesProduct(product);
       const intl4 = tmp2(1113).intl;
@@ -527,7 +527,7 @@ export default function ProductPurchaseSuccessModal(orbBalancePriorToPurchase) {
     items12[1] = closure_12(tmp48, obj11);
     const obj26 = { style: tmp6.footer, children: tmp44(closure_7, obj27) };
     obj27 = { style: tmp6.cta, children: tmp44(Button, obj30) };
-    Button = tmp2(5788).Button;
+    Button = tmp2(5758).Button;
     if (canUseNow) {
       const obj29 = { loading: isApplying, disabled: isApplying, onPress: handleUseNow, text: intl2.string(require("intl").t.MAS7uK), size: "lg", grow: true };
       intl2 = tmp2(1113).intl;

@@ -1,40 +1,40 @@
-// Module ID: 13455
-// Function ID: 13456
+// Module ID: 13480
+// Function ID: 13481
 // Name: ConnectionsRoleMessageBadgeActionSheet
-// Dependencies: [32, 19, 17, 1404, 502, 5082, 5076, 5041, 13456, 7433, 1072, 21, 5170, 575, 1113, 7432, 7084, 5781, 5399, 12, 5754, 6654, 11761, 9300, 1187, 1411, 5177, 38, 7410, 7435, 504, 1252, 5916, 6982, 5418, 7455, 5788, 5404, 11765, 8842, 2]
+// Dependencies: [32, 19, 17, 1404, 502, 5052, 5046, 5011, 13481, 7410, 1072, 21, 5140, 575, 1113, 7409, 7059, 5751, 5369, 12, 5724, 6629, 11752, 9282, 1187, 1411, 5147, 38, 7387, 7412, 504, 1252, 5889, 6957, 5388, 7432, 5758, 5374, 11756, 8821, 2]
 // Exports: default
 
-// Module 13455 (ConnectionsRoleMessageBadgeActionSheet)
+// Module 13480 (ConnectionsRoleMessageBadgeActionSheet)
 import _modDef12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 575 */;
 import intl6 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import AvatarUtils from "AvatarUtils" /* 1411 */;
-import shared from "shared" /* 5177 */;
-import useThemeDefault from "useTheme" /* 5399 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5404 */;
-import Text_Text from "Text/Text" /* 5781 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5916 */;
-import PlatformsDefault from "Platforms" /* 6654 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6982 */;
-import CheckmarkLargeIcon from "CheckmarkLargeIcon" /* 7084 */;
-import ConnectionsUtils from "ConnectionsUtils" /* 7432 */;
-import Constants2 from "Constants" /* 7433 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8842 */;
-import GuildRoleConnectionsModalActionCreators from "GuildRoleConnectionsModalActionCreators" /* 11765 */;
+import shared from "shared" /* 5147 */;
+import useThemeDefault from "useTheme" /* 5369 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5889 */;
+import PlatformsDefault from "Platforms" /* 6629 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6957 */;
+import CheckmarkLargeIcon from "CheckmarkLargeIcon" /* 7059 */;
+import ConnectionsUtils from "ConnectionsUtils" /* 7409 */;
+import Constants2 from "Constants" /* 7410 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8821 */;
+import GuildRoleConnectionsModalActionCreators from "GuildRoleConnectionsModalActionCreators" /* 11756 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserRecord from "UserRecord" /* 1404 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildMemberStore from "GuildMemberStore" /* 5082 */;
-import GuildRoleStore from "GuildRoleStore" /* 5076 */;
-import GuildStore from "GuildStore" /* 5041 */;
-import GuildRoleConnectionEligibilityStore from "GuildRoleConnectionEligibilityStore" /* 13456 */;
+import GuildMemberStore from "GuildMemberStore" /* 5052 */;
+import GuildRoleStore from "GuildRoleStore" /* 5046 */;
+import GuildStore from "GuildStore" /* 5011 */;
+import GuildRoleConnectionEligibilityStore from "GuildRoleConnectionEligibilityStore" /* 13481 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, importDefault;
@@ -119,7 +119,7 @@ class PopoutChecks {
     let c3 = groupByResult;
     const keys = Object.keys(groupByResult);
     let closure_4 = keys.length - 1;
-    let obj2 = guildId(5754);
+    let obj2 = guildId(5724);
     const roleColor = obj2.useToken(nativeDefault.unsafe_rawColors.GREEN_330);
     let obj3 = {
       children: keys.map(function(item, index) {
@@ -158,10 +158,10 @@ class PopoutChecks {
         }
         if (includes(str)) {
           const obj2 = { style: closure_1.botTag, guildId, roleColor, size: 16 };
-          tmp10 = authStore4(tmp2(11761), obj2);
+          tmp10 = authStore4(tmp2(11752), obj2);
         } else if (null != tmp7) {
           const obj3 = { style: closure_1.botTag, verified: false };
-          tmp10 = authStore4(tmp2(9300), obj3);
+          tmp10 = authStore4(tmp2(9282), obj3);
         }
         const items = [closure_1.popoutChecksGroup, ];
         let prop = null;
@@ -190,7 +190,7 @@ class PopoutChecks {
         }
         items1[1] = tmp25;
         let name;
-        const Text = tmp9(5781).Text;
+        const Text = tmp9(5751).Text;
         const tmp27 = authStore4;
         if (value != null) {
           name = value.name;

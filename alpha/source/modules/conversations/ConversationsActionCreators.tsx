@@ -1,27 +1,27 @@
-// Module ID: 9985
-// Function ID: 9986
+// Module ID: 9969
+// Function ID: 9970
 // Name: ConversationsActionCreators
-// Dependencies: [5, 7866, 7869, 9986, 9987, 5809, 1072, 9983, 572, 1282, 7735, 9988, 7582, 7589, 2]
+// Dependencies: [5, 7843, 7846, 9970, 9971, 5779, 1072, 9967, 572, 1282, 7712, 9972, 7559, 7566, 2]
 // Exports: clearConversationSelection, fetchChannelConversations, requestConversationFocus, setConversationFeedbackRating, setSelectedConversation, toggleConversationHighlighting, trackTopicalNavigationEntrypointImpression
 
-// Module 9985 (ConversationsActionCreators)
+// Module 9969 (ConversationsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
-import ConversationConstants from "ConversationConstants" /* 5809 */;
-import QualtricsActionCreatorsDefault from "QualtricsActionCreators" /* 7582 */;
-import ConversationsAnalytics2 from "ConversationsAnalytics" /* 9988 */;
+import ConversationConstants from "ConversationConstants" /* 5779 */;
+import QualtricsActionCreatorsDefault from "QualtricsActionCreators" /* 7559 */;
+import ConversationsAnalytics2 from "ConversationsAnalytics" /* 9972 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelConversationsStore from "ChannelConversationsStore" /* 7866 */;
-import ConversationPreviewStore from "ConversationPreviewStore" /* 7869 */;
-import SelectedConversationStore from "SelectedConversationStore" /* 9986 */;
-import TopicalNavigationSurveyStore from "TopicalNavigationSurveyStore" /* 9987 */;
+import ChannelConversationsStore from "ChannelConversationsStore" /* 7843 */;
+import ConversationPreviewStore from "ConversationPreviewStore" /* 7846 */;
+import SelectedConversationStore from "SelectedConversationStore" /* 9970 */;
+import TopicalNavigationSurveyStore from "TopicalNavigationSurveyStore" /* 9971 */;
 import size from "module_2" /* 2 */;
 
 let _false, _undefined, isJump, requestKey;
 
 let tmp;
-const SurveyActionTypes = tmp(7589);
+const SurveyActionTypes = tmp(7566);
 let obj = function _fetchChannelConversations() {
   obj = _asyncToGenerator(async (channelId) => {
     let closure_4;
@@ -165,7 +165,7 @@ obj = function _fetchConversation() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -211,7 +211,7 @@ obj = function _fetchConversation() {
             c4 = 0;
           }
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp15) {
           if (0 === c4) {
             c6 = 3;
@@ -241,7 +241,7 @@ obj = function _hydrateSelectedConversation() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -273,7 +273,7 @@ obj = function _hydrateSelectedConversation() {
           const obj5 = { includeReactions: true, includeMessageReferences: true, cacheType };
           closure_132_14(closure_0, closure_1, obj5);
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp13) {
           c6 = 3;
           throw tmp13;
@@ -309,7 +309,7 @@ obj = function _fetchConversationMessages() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -339,7 +339,7 @@ obj = function _fetchConversationMessages() {
                 }
                 if (isFullyHydratedResult) {
                   c7 = 3;
-                  return { value: "HermesInternal", done: null };
+                  return { value: "HermesInternal", done: "HermesInternal" };
                 }
               } else {
                 let hydratedMessages;
@@ -350,7 +350,7 @@ obj = function _fetchConversationMessages() {
                 }
                 if (null != hydratedMessages) {
                   c7 = 3;
-                  return { value: "HermesInternal", done: null };
+                  return { value: "HermesInternal", done: "HermesInternal" };
                 }
               }
               if ("preview" === cacheType) {
@@ -393,7 +393,7 @@ obj = function _fetchConversationMessages() {
             c5 = 0;
           }
           c7 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp29) {
           if (0 === c5) {
             c7 = 3;
@@ -443,7 +443,7 @@ export function setSelectedConversation(channelId, id, arg2) {
       }
       if (null != startMessageId) {
         const obj2 = { channelId, messageId: startMessageId, flash: false };
-        const tmp6Result = tmp6(7735);
+        const tmp6Result = tmp6(7712);
         tmp6Result.jumpToMessage(obj2);
       }
     }

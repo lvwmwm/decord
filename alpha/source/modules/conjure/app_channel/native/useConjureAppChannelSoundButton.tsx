@@ -1,19 +1,19 @@
-// Module ID: 14754
-// Function ID: 14755
+// Module ID: 14787
+// Function ID: 14788
 // Name: useConjureAppChannelSoundButton
-// Dependencies: [19, 6926, 6927, 7506, 5829, 12378, 504, 14755, 12125, 8765, 1113, 4024, 5867, 11076, 2]
+// Dependencies: [19, 6901, 6902, 7483, 5799, 12376, 504, 14788, 12116, 8744, 1113, 4026, 5837, 11061, 2]
 // Exports: default
 
-// Module 14754 (useConjureAppChannelSoundButton)
+// Module 14787 (useConjureAppChannelSoundButton)
 import intl2 from "intl" /* 1113 */;
-import _modDef4024 from "module_4024" /* 4024 */;
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5829 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5867 */;
-import FramesConstants from "FramesConstants" /* 6927 */;
-import FramesActionCreatorsDefault from "FramesActionCreators" /* 11076 */;
-import VoiceXIcon from "VoiceXIcon" /* 12125 */;
+import _modDef4026 from "module_4026" /* 4026 */;
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5799 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5837 */;
+import FramesConstants from "FramesConstants" /* 6902 */;
+import FramesActionCreatorsDefault from "FramesActionCreators" /* 11061 */;
+import VoiceXIcon from "VoiceXIcon" /* 12116 */;
 import react from "react" /* 19 */;
-import FramesStore from "FramesStore" /* 6926 */;
+import FramesStore from "FramesStore" /* 6901 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -75,7 +75,7 @@ export default function useConjureAppChannelSoundButton(application_id, arg1) {
           onPress() {
                   let intl;
                   if (stateFromStores) {
-                    const obj = { text: intl.string(_modDef4024.W8Q9fy), icon: VoiceXIcon.VoiceXIcon };
+                    const obj = { text: intl.string(_modDef4026.W8Q9fy), icon: VoiceXIcon.VoiceXIcon };
                     const open = ToastActionCreatorsDefault.open;
                     ToastActionCreatorsDefault;
                     intl = intl2.intl;

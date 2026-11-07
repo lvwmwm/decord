@@ -1,17 +1,17 @@
-// Module ID: 9728
-// Function ID: 9729
+// Module ID: 9710
+// Function ID: 9711
 // Name: GameProfileNavigationHeader
-// Dependencies: [19, 17, 21, 5170, 575, 5754, 1652, 5400, 1411, 9090, 5872, 5781, 9476, 2]
+// Dependencies: [19, 17, 21, 5140, 575, 5724, 1652, 5370, 1411, 9072, 5842, 5751, 9458, 2]
 // Exports: default
 
-// Module 9728 (GameProfileNavigationHeader)
+// Module 9710 (GameProfileNavigationHeader)
 import nativeDefault from "native" /* 575 */;
 import AvatarUtils from "AvatarUtils" /* 1411 */;
-import timing_timing from "timing/timing" /* 5400 */;
+import timing_timing from "timing/timing" /* 5370 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap, set;
@@ -59,7 +59,7 @@ export default function GameProfileNavigationHeader(game) {
   let sharedValue;
   let tmp = closure_8();
   const tmp2 = game;
-  let obj = game(5754);
+  let obj = game(5724);
   dependencyMap = tmp6;
   const token = obj.useToken(application(575).colors.LEGACY_BLUR_FALLBACK_ULTRA_THIN);
   let num = 0;
@@ -156,18 +156,18 @@ export default function GameProfileNavigationHeader(game) {
   if (null != name) {
     const obj3 = { style: tmp.headerContainer, children: items6 };
     const obj4 = { android_fallbackColor: token };
-    items6 = [closure_6(tmp2(9090).BackgroundBlurFill, obj4), ];
+    items6 = [closure_6(tmp2(9072).BackgroundBlurFill, obj4), ];
     let tmp22Result = null != memo;
     const obj5 = { style: tmp.headerRow, children: items7 };
     if (tmp22Result) {
       const obj6 = { source: obj7, style: tmp.icon };
       obj7 = { uri: memo };
-      tmp22Result = tmp22(tmp4(5872), obj6);
+      tmp22Result = tmp22(tmp4(5842), obj6);
     }
     items7 = [tmp22Result, , ];
     const obj8 = { style: tmp.titleContainer, children: items8 };
     const obj9 = { variant: "heading-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: name };
-    items8 = [closure_6(tmp2(5781).Heading, obj9), ];
+    items8 = [closure_6(tmp2(5751).Heading, obj9), ];
     let l30Rank;
     if (game != null) {
       l30Rank = game.l30Rank;
@@ -176,8 +176,8 @@ export default function GameProfileNavigationHeader(game) {
     if (tmp20Result) {
       const obj10 = { style: tmp.rankPillContainer, children: items9 };
       const obj11 = { rank: game.l30Rank, compact: true };
-      items9 = [closure_6(tmp4(9476), obj11), ];
-      const obj12 = { style: items10, children: closure_6(application(9476), obj13) };
+      items9 = [closure_6(tmp4(9458), obj11), ];
+      const obj12 = { style: items10, children: closure_6(application(9458), obj13) };
       items10 = [StyleSheet.absoluteFill, animatedStyle1];
       const View = tmp4(1652).View;
       obj13 = { rank: game.l30Rank };

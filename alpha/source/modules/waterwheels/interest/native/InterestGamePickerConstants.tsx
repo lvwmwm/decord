@@ -1,9 +1,9 @@
-// Module ID: 18705
-// Function ID: 18706
+// Module ID: 18752
+// Function ID: 18753
 // Name: InterestGamePickerConstants
 // Dependencies: [17, 575, 2]
 
-// Module 18705 (InterestGamePickerConstants)
+// Module 18752 (InterestGamePickerConstants)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import size from "module_2" /* 2 */;
@@ -17,7 +17,7 @@ const roundToNearestPixelResult = PixelRatio.roundToNearestPixel(nativeDefault.s
 const roundToNearestPixelResult1 = PixelRatio.roundToNearestPixel(nativeDefault.space.PX_6 / 2);
 const result = size.fileFinishedImporting("modules/waterwheels/interest/native/InterestGamePickerConstants.tsx");
 
-export const GRID_COLUMNS = 4;
+export const GRID_COLUMNS = 3;
 export const GRID_GAP = PX_12;
 export const SCREEN_HORIZONTAL_PADDING = PX_16;
 export const TILE_ASPECT_RATIO = 0.75;

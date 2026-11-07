@@ -1,12 +1,12 @@
-// Module ID: 18493
-// Function ID: 18494
+// Module ID: 18540
+// Function ID: 18541
 // Name: GuildThemeNuxUtils
-// Dependencies: [5, 1231, 5395, 5000, 2]
+// Dependencies: [5, 1231, 5365, 4970, 2]
 // Exports: getInitialGuildThemeNuxSelection, saveGuildThemeNuxPreference
 
-// Module 18493 (GuildThemeNuxUtils)
-import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 5000 */;
-import flow_Client from "flow/Client" /* 5395 */;
+// Module 18540 (GuildThemeNuxUtils)
+import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 4970 */;
+import flow_Client from "flow/Client" /* 5365 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
 import size from "module_2" /* 2 */;
@@ -29,7 +29,7 @@ let obj = function _saveGuildThemeNuxPreference() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -82,7 +82,7 @@ let obj = function _saveGuildThemeNuxPreference() {
           return obj;
         } else {
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp12) {
         c5 = 3;
@@ -98,9 +98,9 @@ export function getInitialGuildThemeNuxSelection() {
   let GUILD;
   const defaultGuildThemePreference = UserSettingsProtoStore.getDefaultGuildThemePreference();
   if (defaultGuildThemePreference === flow_Client.GuildThemeSourcePreference.PERSONAL) {
-    GUILD = tmp2(5395).GuildThemeSourcePreference.PERSONAL;
+    GUILD = tmp2(5365).GuildThemeSourcePreference.PERSONAL;
   } else {
-    GUILD = tmp2(5395).GuildThemeSourcePreference.GUILD;
+    GUILD = tmp2(5365).GuildThemeSourcePreference.GUILD;
   }
   return GUILD;
 }

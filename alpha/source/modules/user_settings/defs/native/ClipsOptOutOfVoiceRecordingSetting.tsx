@@ -1,14 +1,14 @@
-// Module ID: 17136
-// Function ID: 17137
+// Module ID: 17184
+// Function ID: 17185
 // Name: ClipsOptOutOfVoiceRecordingSetting
-// Dependencies: [5, 8524, 4995, 572, 11703, 1113, 2]
+// Dependencies: [5, 8503, 4965, 572, 11685, 1113, 2]
 
-// Module 17136 (ClipsOptOutOfVoiceRecordingSetting)
+// Module 17184 (ClipsOptOutOfVoiceRecordingSetting)
 import intl2 from "intl" /* 1113 */;
-import UserSettings from "UserSettings" /* 4995 */;
-import SettingsConstants from "SettingsConstants" /* 8524 */;
+import UserSettings from "UserSettings" /* 4965 */;
+import SettingsConstants from "SettingsConstants" /* 8503 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SettingBuilders from "SettingBuilders" /* 11703 */;
+import SettingBuilders from "SettingBuilders" /* 11685 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3;
@@ -26,7 +26,7 @@ let obj = function _updateClipsAllowVoiceRecording() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -58,7 +58,7 @@ let obj = function _updateClipsAllowVoiceRecording() {
           obj = closure_129_1(closure_129_2[3]);
           obj.dispatch({ type: "CLIPS_ALLOW_VOICE_RECORDING_UPDATE" });
           c3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp11) {
         c3 = 3;

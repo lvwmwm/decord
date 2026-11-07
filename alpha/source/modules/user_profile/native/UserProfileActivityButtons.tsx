@@ -1,46 +1,46 @@
-// Module ID: 15090
-// Function ID: 15091
+// Module ID: 15122
+// Function ID: 15123
 // Name: UserProfileActivityButtons
-// Dependencies: [5, 19, 5018, 5019, 6652, 5388, 5041, 11688, 5102, 5112, 5073, 6650, 5833, 1072, 9003, 21, 5170, 575, 7410, 5091, 563, 15091, 6814, 15092, 7982, 5788, 1113, 8770, 5404, 6824, 11863, 10898, 1187, 8816, 11844, 5864, 15094, 8923, 5345, 8041, 8030, 6654, 1411, 9826, 7658, 9007, 11848, 1378, 9037, 2]
+// Dependencies: [5, 19, 4988, 4989, 6627, 5358, 5011, 11670, 5072, 5082, 5043, 6625, 5803, 1072, 8985, 21, 5140, 575, 7387, 5061, 563, 15123, 6789, 15124, 7960, 5758, 1113, 8749, 5374, 6799, 11854, 10881, 1187, 8795, 11835, 5834, 15126, 8905, 5315, 8019, 8008, 6629, 1411, 9810, 7635, 8989, 11839, 1378, 9019, 2]
 // Exports: ConnectPlatformButton, CustomActivityButton, JoinActivityButton, JoinGameActivityButton, PlayOnSpotifyButton, VoiceChannelButtons, WatchActivityButton
 
-// Module 15090 (UserProfileActivityButtons)
+// Module 15122 (UserProfileActivityButtons)
 import Fragment from "Fragment" /* 21 */;
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 5091 */;
-import RootNavigationRef from "RootNavigationRef" /* 5345 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5404 */;
-import components_Button_Button from "components/Button/Button" /* 5788 */;
-import LinkingDefault from "Linking" /* 5864 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6824 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7410 */;
-import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 8030 */;
-import StageChannelModalActionCreators from "StageChannelModalActionCreators" /* 8041 */;
-import isStreamingDefault from "isStreaming" /* 8923 */;
-import authorizeConnectionDefault from "authorizeConnection" /* 9826 */;
-import GamesActionCreatorsDefault from "GamesActionCreators" /* 11863 */;
-import getActivityChannelIdDefault from "getActivityChannelId" /* 15091 */;
-import getActivityJoinability from "getActivityJoinability" /* 15092 */;
-import getStreamURLDefault from "getStreamURL" /* 15094 */;
+import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 5061 */;
+import RootNavigationRef from "RootNavigationRef" /* 5315 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
+import components_Button_Button from "components/Button/Button" /* 5758 */;
+import LinkingDefault from "Linking" /* 5834 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6799 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7387 */;
+import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 8008 */;
+import StageChannelModalActionCreators from "StageChannelModalActionCreators" /* 8019 */;
+import isStreamingDefault from "isStreaming" /* 8905 */;
+import authorizeConnectionDefault from "authorizeConnection" /* 9810 */;
+import GamesActionCreatorsDefault from "GamesActionCreators" /* 11854 */;
+import getActivityChannelIdDefault from "getActivityChannelId" /* 15123 */;
+import getActivityJoinability from "getActivityJoinability" /* 15124 */;
+import getStreamURLDefault from "getStreamURL" /* 15126 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5018 */;
-import ChannelStore from "ChannelStore" /* 5019 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6652 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 5388 */;
-import GuildStore from "GuildStore" /* 5041 */;
-import LocalActivityStore from "LocalActivityStore" /* 11688 */;
-import PermissionStore from "PermissionStore" /* 5102 */;
-import RelationshipStore from "RelationshipStore" /* 5112 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5073 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 6650 */;
-import VoiceStateStore from "VoiceStateStore" /* 5833 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4988 */;
+import ChannelStore from "ChannelStore" /* 4989 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6627 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 5358 */;
+import GuildStore from "GuildStore" /* 5011 */;
+import LocalActivityStore from "LocalActivityStore" /* 11670 */;
+import PermissionStore from "PermissionStore" /* 5072 */;
+import RelationshipStore from "RelationshipStore" /* 5082 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5043 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 6625 */;
+import VoiceStateStore from "VoiceStateStore" /* 5803 */;
 import Constants from "Constants" /* 1072 */;
-import SpotifyConstants from "SpotifyConstants" /* 9003 */;
-import createStyles from "createStyles" /* 5170 */;
+import SpotifyConstants from "SpotifyConstants" /* 8985 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 const getActivityJoinabilityDefault = getActivityJoinability;
@@ -173,7 +173,7 @@ export function JoinGameActivityButton(onAction) {
     tmp6Result = null;
     if (stateFromStores !== getActivityJoinability.ActivityJoinability.CANNOT_JOIN) {
       let stringResult;
-      const Button = tmp2(5788).Button;
+      const Button = tmp2(5758).Button;
       const tmp6 = jsx;
       if (stateFromStores === getActivityJoinability.ActivityJoinability.JOINED) {
         const intl2 = tmp2(1113).intl;
@@ -210,13 +210,13 @@ export function PlayOnSpotifyButton(arg0) {
   const tmp = closure_20();
   let tmp4 = null;
   const tmp2 = sync_id;
-  if (sync_id(10898)(activity)) {
+  if (sync_id(10881)(activity)) {
     tmp4 = null;
     if (null != sync_id) {
       const Button = components_Button_Button.Button;
       const intl = intl5.intl;
       let obj2 = { platform: activity.name };
-      let obj3 = { size: native.Icon.Sizes.SMALL, source: tmp2(8816), disableColor: true, style: tmp.icon };
+      let obj3 = { size: native.Icon.Sizes.SMALL, source: tmp2(8795), disableColor: true, style: tmp.icon };
       const Icon = native.Icon;
       tmp4 = <Button text={intl.formatToPlainString(intl5.t.LEgD7t, obj2)} icon={null} variant="secondary" onPress={_asyncToGenerator(async (arg0, value) => {
         let closure_0;
@@ -232,7 +232,7 @@ export function PlayOnSpotifyButton(arg0) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           let c3;
@@ -259,7 +259,7 @@ export function PlayOnSpotifyButton(arg0) {
             } else if (1 === c4) {
               c3 = 0;
               c5 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             } else if (arg0 === 1) {
               c5 = 3;
               throw value;
@@ -491,7 +491,7 @@ export function CustomActivityButton(index) {
                   const obj3 = { value, done: true };
                   return obj3;
                 } else {
-                  return { value: "HermesInternal", done: null };
+                  return { value: "HermesInternal", done: "HermesInternal" };
                 }
               } else {
                 let tmp17;
@@ -537,13 +537,13 @@ export function CustomActivityButton(index) {
                       if (id.button_urls.length <= closure_129_2) {
                         c3 = 0;
                         c5 = 3;
-                        return { value: "HermesInternal", done: null };
+                        return { value: "HermesInternal", done: "HermesInternal" };
                       } else {
                         tmp = id.button_urls[closure_129_2];
                         if (typeof tmp !== "string") {
                           c3 = 0;
                           c5 = 3;
-                          return { value: "HermesInternal", done: null };
+                          return { value: "HermesInternal", done: "HermesInternal" };
                         } else {
                           const obj8 = tmp(tmp17[47]);
                           tmp17 = obj8.safeParseWithQuery(tmp);
@@ -574,12 +574,12 @@ export function CustomActivityButton(index) {
                           }
                           c3 = 0;
                           c5 = 3;
-                          return { value: "HermesInternal", done: null };
+                          return { value: "HermesInternal", done: "HermesInternal" };
                         }
                       }
                     }
                     c5 = 3;
-                    return { value: "HermesInternal", done: null };
+                    return { value: "HermesInternal", done: "HermesInternal" };
                   }
                 } catch (tmp17) {
                   if (0 === c3) {

@@ -1,95 +1,47 @@
 // Module ID: 13122
 // Function ID: 13123
 // Name: tokenize
-// Dependencies: [13027]
+// Dependencies: [13050, 13094]
 
 // Module 13122 (tokenize)
-import tokenize from "tokenize" /* 13027 */;
+import tokenize from "tokenize" /* 13050 */;
+import tokenize2 from "tokenize" /* 13094 */;
 
-function consumeRaw() {
-  return this.createSingleNodeList(this.Raw(this.scanner.tokenIndex, null, false));
+function consumeRaw(arg0) {
+  return this.Raw(arg0, tokenize2.mode.leftCurlyBracket, true);
 }
-function parentheses() {
+function consumePrelude() {
   const self = this;
-  const scanner = this.scanner;
-  scanner.skipSC();
-  if (this.scanner.tokenType === Ident) {
-    let singleNodeList;
-    if (self.lookupNonWSType(1) === Colon) {
-      singleNodeList = self.createSingleNodeList(self.Declaration());
-    }
-    return singleNodeList;
+  const SelectorListResult = this.SelectorList();
+  const tmp2 = "Raw" !== SelectorListResult.type && false === self.scanner.eof && self.scanner.tokenType !== LeftCurlyBracket;
+  if (tmp2) {
+    self.error();
   }
-  singleNodeList = readSequence.call(self);
+  return SelectorListResult;
 }
-function readSequence() {
-  const self = this;
-  const list = this.createList();
-  const scanner = this.scanner;
-  scanner.skipSC();
-  let tmp2 = null;
-  if (!this.scanner.eof) {
-    while (true) {
-      let WhiteSpaceResult;
-      let tokenType = self.scanner.tokenType;
-      if (WhiteSpace === tokenType) {
-        WhiteSpaceResult = self.WhiteSpace();
-      } else {
-        if (Comment === tokenType) {
-          let iter = self.scanner;
-          let nextResult = iter.next();
-          WhiteSpaceResult = tmp2;
-        } else {
-          let FunctionResult;
-          if (Function === tokenType) {
-            FunctionResult = self.Function(consumeRaw, self.scope.AtrulePrelude);
-          } else {
-            if (Ident === tokenType) {
-              FunctionResult = self.Identifier();
-            } else if (LeftParenthesis !== tokenType) {
-              break;
-            } else {
-              FunctionResult = self.Parentheses(parentheses, self.scope.AtrulePrelude);
-            }
-            break;
-          }
-          WhiteSpaceResult = tmp2;
-          if (null !== tmp2) {
-            let arr = list.push(tmp2);
-            WhiteSpaceResult = null;
-          }
-          let arr3 = list.push(FunctionResult);
-        }
-        break;
-      }
-      tmp2 = WhiteSpaceResult;
-      if (self.scanner.eof) {
-        break;
-      }
+const LeftCurlyBracket = tokenize.TYPE.LeftCurlyBracket;
+let obj = {
+  name: "Rule",
+  structure: { prelude: ["SelectorList", "Raw"], block: ["Block"] },
+  parse() {
+    let BlockResult;
+    let parseWithFallbackResult;
+    const self = this;
+    const tokenStart = this.scanner.tokenStart;
+    if (this.parseRulePrelude) {
+      parseWithFallbackResult = self.parseWithFallback(consumePrelude, consumeRaw);
+    } else {
+      parseWithFallbackResult = consumeRaw.call(self, tmp);
     }
-  }
-  return list;
-}
-const WhiteSpace = tokenize.TYPE.WhiteSpace;
-const Comment = tokenize.TYPE.Comment;
-const Ident = tokenize.TYPE.Ident;
-const Function = tokenize.TYPE.Function;
-const Colon = tokenize.TYPE.Colon;
-const LeftParenthesis = tokenize.TYPE.LeftParenthesis;
-const obj = {
-  parse: {
-    prelude() {
-      const self = this;
-      const callResult = readSequence.call(self);
-      if (null === self.getFirstListNode(callResult)) {
-        self.error("Condition is expected");
-      }
-      return callResult;
-    },
-    block() {
-      return this.Block(false);
-    }
-  }
+    const obj = { type: "Rule", loc: self.getLocation(tokenStart, self.scanner.tokenStart), prelude: parseWithFallbackResult, block: BlockResult };
+    BlockResult = self.Block(true);
+    return obj;
+  },
+  generate(prelude) {
+    this.node(prelude.prelude);
+    this.node(prelude.block);
+  },
+  walkContext: "rule"
 };
 
 export default obj;

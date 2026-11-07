@@ -1,22 +1,22 @@
-// Module ID: 14870
-// Function ID: 14871
+// Module ID: 14903
+// Function ID: 14904
 // Name: AppStoreOverlayStatsCarousel
-// Dependencies: [19, 17, 21, 575, 5170, 14871, 1113, 14872, 5781, 1377, 5450, 7961, 7970, 2]
+// Dependencies: [19, 17, 21, 575, 5140, 14904, 1113, 14905, 5751, 1377, 5420, 7939, 7948, 2]
 // Exports: default
 
-// Module 14870 (AppStoreOverlayStatsCarousel)
+// Module 14903 (AppStoreOverlayStatsCarousel)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5450 */;
-import Text_Text from "Text/Text" /* 5781 */;
-import AnalyticsActions from "AnalyticsActions" /* 7961 */;
-import AppStoreOverlayStatCardUtils from "AppStoreOverlayStatCardUtils" /* 14871 */;
-import AppStoreOverlayStarRatingDefault from "AppStoreOverlayStarRating" /* 14872 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5420 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import AnalyticsActions from "AnalyticsActions" /* 7939 */;
+import AppStoreOverlayStatCardUtils from "AppStoreOverlayStatCardUtils" /* 14904 */;
+import AppStoreOverlayStarRatingDefault from "AppStoreOverlayStarRating" /* 14905 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -122,7 +122,7 @@ function AppStoreOverlayStatCardItem(onRatingPress) {
     const tmp26 = metroRequire;
     if (null == secondaryContent) {
       const obj9 = { variant: "body-xs/medium", color: "text-subtle", lineClamp: 1, children: secondaryText };
-      secondaryContent = tmp24(tmp21(5781).Text, obj9);
+      secondaryContent = tmp24(tmp21(5751).Text, obj9);
     }
     tmp24Result = tmp24(tmp26, obj8);
   }
@@ -193,9 +193,9 @@ export default function AppStoreOverlayStatsCarousel(arg0) {
         if (bound !== current) {
           const obj = { carouselType: AnalyticsActions.AppStoreOverlayCarouselTypes.STATS, scrollingDirection: LEFT, carouselPosition: bound, carouselSize: length };
           if (bound > current) {
-            LEFT = tmp2(7970).HorizontalScrollingDirection.RIGHT;
+            LEFT = tmp2(7948).HorizontalScrollingDirection.RIGHT;
           } else {
-            LEFT = tmp2(7970).HorizontalScrollingDirection.LEFT;
+            LEFT = tmp2(7948).HorizontalScrollingDirection.LEFT;
           }
           tmp(obj);
           tmp11.current = bound;

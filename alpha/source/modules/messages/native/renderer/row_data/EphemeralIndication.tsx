@@ -1,14 +1,14 @@
-// Module ID: 8643
-// Function ID: 8644
+// Module ID: 8622
+// Function ID: 8623
 // Name: EphemeralIndication
-// Dependencies: [8475, 1072, 8644, 1113, 2185, 2]
+// Dependencies: [8454, 1072, 8623, 1113, 2185, 2]
 // Exports: createEphemeralIndication
 
-// Module 8643 (EphemeralIndication)
+// Module 8622 (EphemeralIndication)
 import intl6 from "intl" /* 1113 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2185 */;
-import ApplicationCommandUserAppUtils from "ApplicationCommandUserAppUtils" /* 8644 */;
-import GuildAutomodMessageStore from "GuildAutomodMessageStore" /* 8475 */;
+import ApplicationCommandUserAppUtils from "ApplicationCommandUserAppUtils" /* 8623 */;
+import GuildAutomodMessageStore from "GuildAutomodMessageStore" /* 8454 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 

@@ -1,16 +1,16 @@
-// Module ID: 18529
-// Function ID: 18530
+// Module ID: 18576
+// Function ID: 18577
 // Name: GuildProgressButton
-// Dependencies: [19, 21, 12712, 575, 11195, 14255, 14258, 8269, 18530, 1113, 14373, 2]
+// Dependencies: [19, 21, 12725, 575, 5883, 14285, 14288, 8248, 18577, 1113, 14407, 2]
 // Exports: default, getScaledGuildProgressButtonHeight
 
-// Module 18529 (GuildProgressButton)
+// Module 18576 (GuildProgressButton)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11195 */;
-import MobileVisualRefreshExperiment from "MobileVisualRefreshExperiment" /* 12712 */;
-import GuildProgressUtils from "GuildProgressUtils" /* 14255 */;
-import GuildProgressActionCreatorsDefault from "GuildProgressActionCreators" /* 14258 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 5883 */;
+import MobileVisualRefreshExperiment from "MobileVisualRefreshExperiment" /* 12725 */;
+import GuildProgressUtils from "GuildProgressUtils" /* 14285 */;
+import GuildProgressActionCreatorsDefault from "GuildProgressActionCreators" /* 14288 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -21,7 +21,7 @@ export default function GuildProgressButton(guild) {
   let percentComplete;
   let subtitle;
   guild = guild.guild;
-  let obj = guild(14255);
+  let obj = guild(14285);
   const guildProgressStep = obj.useGuildProgressStep(guild);
   const completed = guildProgressStep.completed;
   const items = [completed, guild.id];
@@ -43,9 +43,9 @@ export default function GuildProgressButton(guild) {
     const obj2 = GuildProgressUtils;
     obj2.openActionSheet(guild);
   }, items1);
-  const RowButton = guild(8269).RowButton;
-  ({ source: completed(18530) });
-  const Icon = guild(8269).RowButton.Icon;
+  const RowButton = guild(8248).RowButton;
+  ({ source: completed(18577) });
+  const Icon = guild(8248).RowButton.Icon;
   const intl = guild(1113).intl;
   return <RowButton icon={null} label={intl.string(guild(1113).t.o3HK3d)} subLabel={subtitle} onPress={callback} trailing={null} />;
 };

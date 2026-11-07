@@ -1,22 +1,22 @@
-// Module ID: 8497
-// Function ID: 8498
+// Module ID: 8476
+// Function ID: 8477
 // Name: ReactionActionCreators
-// Dependencies: [5, 502, 5019, 6219, 1072, 1089, 6116, 1113, 1108, 572, 5772, 1282, 8292, 1252, 5916, 5177, 5126, 5120, 2]
+// Dependencies: [5, 502, 4989, 6194, 1072, 1089, 6090, 1113, 1108, 572, 5742, 1282, 8271, 1252, 5889, 5147, 5096, 5090, 2]
 // Exports: getReactors, playBurstReaction
 
-// Module 8497 (ReactionActionCreators)
+// Module 8476 (ReactionActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1108 */;
 import intl4 from "intl" /* 1113 */;
-import EmojiUtils from "EmojiUtils" /* 5120 */;
-import MessageReactionsTypes from "MessageReactionsTypes" /* 5772 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 6116 */;
-import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 8292 */;
+import EmojiUtils from "EmojiUtils" /* 5090 */;
+import MessageReactionsTypes from "MessageReactionsTypes" /* 5742 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 6090 */;
+import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 8271 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 5019 */;
-import MessageStore from "MessageStore" /* 6219 */;
+import ChannelStore from "ChannelStore" /* 4989 */;
+import MessageStore from "MessageStore" /* 6194 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -146,7 +146,7 @@ let obj = function _getReactors() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -262,7 +262,7 @@ obj = function _addReaction() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -325,7 +325,7 @@ obj = function _addReaction() {
                   intl3 = closure_134_0(closure_134_2[7]).intl;
                   show(obj5);
                   c8 = 3;
-                  return { value: "HermesInternal", done: null };
+                  return { value: "HermesInternal", done: "HermesInternal" };
                 }
               }
               c7 = 2;
@@ -503,7 +503,7 @@ obj = function _removeAllReactions() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -548,7 +548,7 @@ obj = function _removeAllReactions() {
               closure_2_12(error, () => closure_2_18(closure_1_0, closure_1_1, { isRetry: true }), obj);
             });
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp8) {
           c6 = 3;
@@ -582,7 +582,7 @@ obj = function _removeEmojiReactions() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -634,7 +634,7 @@ obj = function _removeEmojiReactions() {
               closure_2_12(error, () => closure_2_20(closure_1_0, closure_1_1, closure_1_2, { isRetry: true }), obj);
             });
             c7 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp24) {
           c7 = 3;
@@ -723,7 +723,7 @@ obj = function _removeReaction() {
                 let obj2 = { value, done: true };
                 return obj2;
               } else {
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               }
             } else {
               try {
@@ -781,7 +781,7 @@ obj = function _removeReaction() {
                   }
                 }
                 userId = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               } catch (tmp21) {
                 userId = 3;
                 throw tmp21;
@@ -833,7 +833,7 @@ obj = function _getOptimisticEmojiColors() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {

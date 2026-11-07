@@ -1,9 +1,9 @@
-// Module ID: 11025
-// Function ID: 11026
+// Module ID: 11009
+// Function ID: 11010
 // Name: EmbeddedAppCSPStore
 // Dependencies: [504, 572, 2]
 
-// Module 11025 (EmbeddedAppCSPStore)
+// Module 11009 (EmbeddedAppCSPStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;

@@ -1,14 +1,14 @@
-// Module ID: 19605
-// Function ID: 19606
+// Module ID: 19677
+// Function ID: 19678
 // Name: ScreenXIcon
-// Dependencies: [19, 21, 575, 5871, 12106, 2]
+// Dependencies: [19, 21, 575, 5841, 12097, 2]
 // Exports: ScreenXIcon
 
-// Module 19605 (ScreenXIcon)
+// Module 19677 (ScreenXIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5871 */;
-import AssetRegistry from "AssetRegistry" /* 12106 */;
+import BaseIconImage2 from "BaseIconImage" /* 5841 */;
+import AssetRegistry from "AssetRegistry" /* 12097 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

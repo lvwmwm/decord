@@ -1,103 +1,396 @@
 // Module ID: 8372
 // Function ID: 8373
-// Dependencies: [8373, 8374, 8376, 8377, 8378, 8382, 8383, 8384, 8385, 8370]
+// Dependencies: []
 
 // Module 8372
-import _mod8370 from "module_8370" /* 8370 */;
-import _modDef8373 from "module_8373" /* 8373 */;
-import _modDef8374 from "module_8374" /* 8374 */;
-import _modDef8376 from "module_8376" /* 8376 */;
-import PNG_CHUNK_TYPE_SIZEDefault from "PNG_CHUNK_TYPE_SIZE" /* 8377 */;
-import ITEM_INFO_TYPE_EXIFDefault from "ITEM_INFO_TYPE_EXIF" /* 8378 */;
-import _modDef8382 from "module_8382" /* 8382 */;
-import _modDef8383 from "module_8383" /* 8383 */;
-import _modDef8384 from "module_8384" /* 8384 */;
-import _modDef8385 from "module_8385" /* 8385 */;
-
-
-export default {
-  parseAppMarkers(byteLength, flag2) {
-    if (_modDef8373.USE_TIFF) {
-      const tmpResult = _modDef8374;
-      if (tmpResult.isTiffFile(byteLength)) {
-        const tmpResult16 = _modDef8374;
-        const findTiffOffsetsResult = tmpResult16.findTiffOffsets();
-        const obj = { fileType: { value: "tiff", description: "TIFF" } };
-        const obj31 = _mod8370;
-        return obj31.objectAssign({}, findTiffOffsetsResult, obj);
+const obj = {
+  ApertureValue(arg0) {
+    const powResult = Math.pow(Math.sqrt(2), arg0[0] / arg0[1]);
+    return powResult.toFixed(2);
+  },
+  ColorSpace(parsed) {
+    let str = "sRGB";
+    if (1 !== parsed) {
+      let str2 = "Unknown";
+      if (65535 === parsed) {
+        str2 = "Uncalibrated";
       }
+      str = str2;
     }
-    if (_modDef8373.USE_JPEG) {
-      const tmpResult17 = _modDef8376;
-      if (tmpResult17.isJpegFile(byteLength)) {
-        const tmpResult18 = _modDef8376;
-        const findJpegOffsetsResult = tmpResult18.findJpegOffsets(byteLength);
-        const obj2 = { fileType: { value: "jpeg", description: "JPEG" } };
-        const obj28 = _mod8370;
-        return obj28.objectAssign({}, findJpegOffsetsResult, obj2);
+    return str;
+  },
+  ComponentsConfiguration(mapped) {
+    mapped = mapped.map((item) => {
+      let str = "Y";
+      if (49 !== item) {
+        let str2 = "Cb";
+        if (50 !== item) {
+          let str3 = "Cr";
+          if (51 !== item) {
+            let str4 = "R";
+            if (52 !== item) {
+              let str5 = "G";
+              if (53 !== item) {
+                let str6;
+                if (54 === item) {
+                  str6 = "B";
+                }
+                str5 = str6;
+              }
+              str4 = str5;
+            }
+            str3 = str4;
+          }
+          str2 = str3;
+        }
+        str = str2;
       }
-    }
-    if (_modDef8373.USE_PNG) {
-      const tmpResult19 = PNG_CHUNK_TYPE_SIZEDefault;
-      if (tmpResult19.isPngFile(byteLength)) {
-        const tmpResult20 = PNG_CHUNK_TYPE_SIZEDefault;
-        const findPngOffsetsResult = tmpResult20.findPngOffsets(byteLength, flag2);
-        const obj3 = { fileType: { value: "png", description: "PNG" } };
-        const obj25 = _mod8370;
-        return obj25.objectAssign({}, findPngOffsetsResult, obj3);
+      return str;
+    });
+    return mapped.join("");
+  },
+  Contrast(arg0) {
+    let str = "Normal";
+    if (0 !== arg0) {
+      let str2 = "Soft";
+      if (1 !== arg0) {
+        let str3 = "Unknown";
+        if (2 === arg0) {
+          str3 = "Hard";
+        }
+        str2 = str3;
       }
+      str = str2;
     }
-    if (_modDef8373.USE_HEIC) {
-      const tmpResult21 = ITEM_INFO_TYPE_EXIFDefault;
-      if (tmpResult21.isHeicFile(byteLength)) {
-        const tmpResult22 = ITEM_INFO_TYPE_EXIFDefault;
-        const findHeicOffsetsResult = tmpResult22.findHeicOffsets(byteLength);
-        const obj4 = { fileType: { value: "heic", description: "HEIC" } };
-        const obj22 = _mod8370;
-        return obj22.objectAssign({}, findHeicOffsetsResult, obj4);
+    return str;
+  },
+  CustomRendered(arg0) {
+    let str = "Normal process";
+    if (0 !== arg0) {
+      let str2 = "Unknown";
+      if (1 === arg0) {
+        str2 = "Custom process";
       }
+      str = str2;
     }
-    if (_modDef8373.USE_AVIF) {
-      const tmpResult23 = _modDef8382;
-      if (tmpResult23.isAvifFile(byteLength)) {
-        const tmpResult24 = _modDef8382;
-        const findAvifOffsetsResult = tmpResult24.findAvifOffsets(byteLength);
-        const obj5 = { fileType: { value: "avif", description: "AVIF" } };
-        const obj19 = _mod8370;
-        return obj19.objectAssign({}, findAvifOffsetsResult, obj5);
+    return str;
+  },
+  ExposureMode(arg0) {
+    let str = "Auto exposure";
+    if (0 !== arg0) {
+      let str2 = "Manual exposure";
+      if (1 !== arg0) {
+        let str3 = "Unknown";
+        if (2 === arg0) {
+          str3 = "Auto bracket";
+        }
+        str2 = str3;
       }
+      str = str2;
     }
-    if (_modDef8373.USE_WEBP) {
-      const tmpResult25 = _modDef8383;
-      if (tmpResult25.isWebpFile(byteLength)) {
-        const tmpResult26 = _modDef8383;
-        const findOffsetsResult = tmpResult26.findOffsets(byteLength);
-        const obj6 = { fileType: { value: "webp", description: "WebP" } };
-        const obj16 = _mod8370;
-        return obj16.objectAssign({}, findOffsetsResult, obj6);
+    return str;
+  },
+  ExposureProgram(arg0) {
+    let str = "Undefined";
+    if (0 !== arg0) {
+      let str10 = "Manual";
+      if (1 !== arg0) {
+        let str9 = "Normal program";
+        if (2 !== arg0) {
+          let str2 = "Aperture priority";
+          if (3 !== arg0) {
+            let str3 = "Shutter priority";
+            if (4 !== arg0) {
+              let str4 = "Creative program";
+              if (5 !== arg0) {
+                let str5 = "Action program";
+                if (6 !== arg0) {
+                  let str6 = "Portrait mode";
+                  if (7 !== arg0) {
+                    let str7 = "Landscape mode";
+                    if (8 !== arg0) {
+                      let str8 = "Unknown";
+                      if (9 === arg0) {
+                        str8 = "Bulb";
+                      }
+                      str7 = str8;
+                    }
+                    str6 = str7;
+                  }
+                  str5 = str6;
+                }
+                str4 = str5;
+              }
+              str3 = str4;
+            }
+            str2 = str3;
+          }
+          str9 = str2;
+        }
+        str10 = str9;
       }
+      str = str10;
     }
-    if (_modDef8373.USE_GIF) {
-      const tmpResult27 = _modDef8384;
-      if (tmpResult27.isGifFile(byteLength)) {
-        const tmpResult28 = _modDef8384;
-        const findOffsetsResult1 = tmpResult28.findOffsets(byteLength);
-        const obj7 = { fileType: { value: "gif", description: "GIF" } };
-        const obj13 = _mod8370;
-        return obj13.objectAssign({}, findOffsetsResult1, obj7);
+    return str;
+  },
+  ExposureTime(arg0) {
+    if (arg0[0] / arg0[1] > 0.25) {
+      let text;
+      const result = arg0[0] / arg0[1];
+      const _Number = Number;
+      if (Number.isInteger(result)) {
+        text = `${obj}`;
+      } else {
+        text = result.toFixed(1);
       }
-    }
-    if (_modDef8373.USE_XMP) {
-      const tmpResult29 = _modDef8385;
-      if (tmpResult29.isXMLFile(byteLength)) {
-        const tmpResult30 = _modDef8385;
-        const findOffsetsResult2 = tmpResult30.findOffsets(byteLength);
-        const obj8 = { fileType: { value: "xml", description: "XML" } };
-        const obj10 = _mod8370;
-        return obj10.objectAssign({}, findOffsetsResult2, obj8);
+      return text;
+    } else {
+      let combined;
+      if (0 !== arg0[0]) {
+        const _Math = Math;
+        const _HermesInternal2 = HermesInternal;
+        combined = "1/" + Math.round(arg0[1] / arg0[0]);
+      } else {
+        const _HermesInternal = HermesInternal;
+        combined = "0/" + arg0[1];
       }
+      return combined;
     }
-    const error = new Error("Invalid image format");
-    throw error;
+  },
+  FNumber(arg0) {
+    const NumberResult = Number(arg0[0] / arg0[1]);
+    return "f/" + NumberResult.toFixed(1);
+  },
+  FocalLength(arg0) {
+    return arg0[0] / arg0[1] + " mm";
+  },
+  FocalPlaneResolutionUnit(arg0) {
+    let str = "inches";
+    if (2 !== arg0) {
+      let str2 = "centimeters";
+      if (3 !== arg0) {
+        let str3 = "Unknown";
+        if (4 === arg0) {
+          str3 = "millimeters";
+        }
+        str2 = str3;
+      }
+      str = str2;
+    }
+    return str;
+  },
+  LightSource(arg0) {
+    let str = "Daylight";
+    if (1 !== arg0) {
+      let str20 = "Fluorescent";
+      if (2 !== arg0) {
+        let str19 = "Tungsten (incandescent light)";
+        if (3 !== arg0) {
+          let str18 = "Flash";
+          if (4 !== arg0) {
+            let str17 = "Fine weather";
+            if (9 !== arg0) {
+              let str16 = "Cloudy weather";
+              if (10 !== arg0) {
+                let str15 = "Shade";
+                if (11 !== arg0) {
+                  let str14 = "Daylight fluorescent (D 5700 \u2013 7100K)";
+                  if (12 !== arg0) {
+                    let str13 = "Day white fluorescent (N 4600 \u2013 5400K)";
+                    if (13 !== arg0) {
+                      let str12 = "Cool white fluorescent (W 3900 \u2013 4500K)";
+                      if (14 !== arg0) {
+                        let str11 = "White fluorescent (WW 3200 \u2013 3700K)";
+                        if (15 !== arg0) {
+                          let str10 = "Standard light A";
+                          if (17 !== arg0) {
+                            let str9 = "Standard light B";
+                            if (18 !== arg0) {
+                              let str2 = "Standard light C";
+                              if (19 !== arg0) {
+                                let str3 = "D55";
+                                if (20 !== arg0) {
+                                  let str4 = "D65";
+                                  if (21 !== arg0) {
+                                    let str5 = "D75";
+                                    if (22 !== arg0) {
+                                      let str6 = "D50";
+                                      if (23 !== arg0) {
+                                        let str7 = "ISO studio tungsten";
+                                        if (24 !== arg0) {
+                                          let str8 = "Unknown";
+                                          if (255 === arg0) {
+                                            str8 = "Other light source";
+                                          }
+                                          str7 = str8;
+                                        }
+                                        str6 = str7;
+                                      }
+                                      str5 = str6;
+                                    }
+                                    str4 = str5;
+                                  }
+                                  str3 = str4;
+                                }
+                                str2 = str3;
+                              }
+                              str9 = str2;
+                            }
+                            str10 = str9;
+                          }
+                          str11 = str10;
+                        }
+                        str12 = str11;
+                      }
+                      str13 = str12;
+                    }
+                    str14 = str13;
+                  }
+                  str15 = str14;
+                }
+                str16 = str15;
+              }
+              str17 = str16;
+            }
+            str18 = str17;
+          }
+          str19 = str18;
+        }
+        str20 = str19;
+      }
+      str = str20;
+    }
+    return str;
+  },
+  MeteringMode(arg0) {
+    let str = "Average";
+    if (1 !== arg0) {
+      let str2 = "CenterWeightedAverage";
+      if (2 !== arg0) {
+        let str3 = "Spot";
+        if (3 !== arg0) {
+          let str4 = "MultiSpot";
+          if (4 !== arg0) {
+            let str5 = "Pattern";
+            if (5 !== arg0) {
+              let str6 = "Partial";
+              if (6 !== arg0) {
+                let str7 = "Unknown";
+                if (255 === arg0) {
+                  str7 = "Other";
+                }
+                str6 = str7;
+              }
+              str5 = str6;
+            }
+            str4 = str5;
+          }
+          str3 = str4;
+        }
+        str2 = str3;
+      }
+      str = str2;
+    }
+    return str;
+  },
+  ResolutionUnit(arg0) {
+    let str = "inches";
+    if (2 !== arg0) {
+      let str2 = "Unknown";
+      if (3 === arg0) {
+        str2 = "centimeters";
+      }
+      str = str2;
+    }
+    return str;
+  },
+  Saturation(arg0) {
+    let str = "Normal";
+    if (0 !== arg0) {
+      let str2 = "Low saturation";
+      if (1 !== arg0) {
+        let str3 = "Unknown";
+        if (2 === arg0) {
+          str3 = "High saturation";
+        }
+        str2 = str3;
+      }
+      str = str2;
+    }
+    return str;
+  },
+  FocalLengthIn35mmFilm(value7) {
+    let str = "Unknown";
+    if (0 !== value7) {
+      str = `${value7} mm`;
+    }
+    return str;
+  },
+  SceneCaptureType(arg0) {
+    let str = "Standard";
+    if (0 !== arg0) {
+      let str2 = "Landscape";
+      if (1 !== arg0) {
+        let str3 = "Portrait";
+        if (2 !== arg0) {
+          let str4 = "Unknown";
+          if (3 === arg0) {
+            str4 = "Night scene";
+          }
+          str3 = str4;
+        }
+        str2 = str3;
+      }
+      str = str2;
+    }
+    return str;
+  },
+  Sharpness(arg0) {
+    let str = "Normal";
+    if (0 !== arg0) {
+      let str2 = "Soft";
+      if (1 !== arg0) {
+        let str3 = "Unknown";
+        if (2 === arg0) {
+          str3 = "Hard";
+        }
+        str2 = str3;
+      }
+      str = str2;
+    }
+    return str;
+  },
+  ShutterSpeedValue(arg0) {
+    let combined;
+    const powResult = Math.pow(2, arg0[0] / arg0[1]);
+    if (powResult <= 1) {
+      const _Math2 = Math;
+      const _HermesInternal2 = HermesInternal;
+      combined = "" + Math.round(1 / powResult);
+    } else {
+      const _Math = Math;
+      const _HermesInternal = HermesInternal;
+      combined = "1/" + Math.round(powResult);
+    }
+    return combined;
+  },
+  WhiteBalance(arg0) {
+    let str = "Auto white balance";
+    if (0 !== arg0) {
+      let str2 = "Unknown";
+      if (1 === arg0) {
+        str2 = "Manual white balance";
+      }
+      str = str2;
+    }
+    return str;
+  },
+  XResolution(arg0) {
+    return "" + Math.round(arg0[0] / arg0[1]);
+  },
+  YResolution(arg0) {
+    return "" + Math.round(arg0[0] / arg0[1]);
   }
 };
+
+export default obj;

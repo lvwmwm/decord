@@ -1,15 +1,15 @@
-// Module ID: 12077
-// Function ID: 12078
+// Module ID: 12068
+// Function ID: 12069
 // Name: useToggleRequestToSpeak
-// Dependencies: [32, 19, 502, 504, 6206, 6838, 8046, 6809, 8036, 2]
+// Dependencies: [32, 19, 502, 504, 6180, 6813, 8024, 6784, 8014, 2]
 // Exports: default
 
-// Module 12077 (useToggleRequestToSpeak)
-import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 6206 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6809 */;
-import useStageSpeakingForCurrentUser from "useStageSpeakingForCurrentUser" /* 6838 */;
-import StageChannelActionCreators from "StageChannelActionCreators" /* 8036 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8046 */;
+// Module 12068 (useToggleRequestToSpeak)
+import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 6180 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6784 */;
+import useStageSpeakingForCurrentUser from "useStageSpeakingForCurrentUser" /* 6813 */;
+import StageChannelActionCreators from "StageChannelActionCreators" /* 8014 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8024 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;

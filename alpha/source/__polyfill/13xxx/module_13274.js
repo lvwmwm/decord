@@ -1,29 +1,44 @@
 // Module ID: 13274
 // Function ID: 13275
-// Dependencies: [13273, 13275]
-// Exports: getAsyncContextStrategy, setAsyncContextStrategy
+// Dependencies: [13275, 13282, 13283, 13306, 13278, 13295]
+// Exports: registerSpanErrorInstrumentation
 
 // Module 13274
-import _mod13273 from "module_13273" /* 13273 */;
+import _mod13275 from "module_13275" /* 13275 */;
+import _mod13282 from "module_13282" /* 13282 */;
+import _mod13283 from "module_13283" /* 13283 */;
+import _mod13295 from "module_13295" /* 13295 */;
+import _mod13306 from "module_13306" /* 13306 */;
 
-let tmp;
-const _mod13275 = tmp(13275);
-
-export function getAsyncContextStrategy(arg0) {
-  let acs;
-  const obj = _mod13273;
-  const sentryCarrier = obj.getSentryCarrier(arg0);
-  if (sentryCarrier.acs) {
-    acs = sentryCarrier.acs;
-  } else {
-    const tmpResult = _mod13275;
-    acs = tmpResult.getStackAsyncContextStrategy();
+function errorCallback() {
+  const obj = _mod13283;
+  const activeSpan = obj.getActiveSpan();
+  let rootSpan = activeSpan;
+  if (rootSpan) {
+    const tmpResult = _mod13283;
+    rootSpan = tmpResult.getRootSpan(activeSpan);
   }
-  return acs;
+  if (rootSpan) {
+    if (_mod13306.DEBUG_BUILD) {
+      const logger = tmp(13278).logger;
+      const _HermesInternal = HermesInternal;
+      logger.log("[Tracing] Root span: " + "internal_error" + " -> Global error occurred");
+    }
+    const setStatus = rootSpan.setStatus;
+    const obj2 = { code: _mod13295.SPAN_STATUS_ERROR, message: "internal_error" };
+    setStatus(obj2);
+  }
 }
-export function setAsyncContextStrategy(acs) {
-  const obj = _mod13273;
-  const mainCarrier = obj.getMainCarrier();
-  _mod13273.getSentryCarrier(mainCarrier).acs = acs;
-  _mod13273;
+let c2 = false;
+errorCallback.tag = "sentry_tracingErrorCallback";
+
+export function registerSpanErrorInstrumentation() {
+  const tmp = c2;
+  if (!tmp) {
+    c2 = true;
+    const obj = _mod13275;
+    const result = obj.addGlobalErrorInstrumentationHandler(errorCallback);
+    const obj2 = _mod13282;
+    const result1 = obj2.addGlobalUnhandledRejectionInstrumentationHandler(errorCallback);
+  }
 }

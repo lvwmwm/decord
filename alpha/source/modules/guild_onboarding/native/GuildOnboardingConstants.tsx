@@ -1,9 +1,9 @@
-// Module ID: 7351
-// Function ID: 7352
+// Module ID: 7328
+// Function ID: 7329
 // Name: GuildOnboardingConstants
 // Dependencies: [2]
 
-// Module 7351 (GuildOnboardingConstants)
+// Module 7328 (GuildOnboardingConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_onboarding/native/GuildOnboardingConstants.tsx");

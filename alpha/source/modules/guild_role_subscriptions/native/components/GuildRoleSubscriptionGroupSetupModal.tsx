@@ -1,19 +1,19 @@
-// Module ID: 20313
-// Function ID: 20314
+// Module ID: 20382
+// Function ID: 20383
 // Name: GuildRoleSubscriptionGroupSetupModal
-// Dependencies: [32, 5, 19, 20272, 17457, 1072, 21, 17464, 17477, 5866, 1113, 1260, 5916, 20283, 20268, 20284, 2]
+// Dependencies: [32, 5, 19, 20341, 17506, 1072, 21, 17513, 17526, 5836, 1113, 1260, 5889, 20352, 20337, 20353, 2]
 
-// Module 20313 (GuildRoleSubscriptionGroupSetupModal)
+// Module 20382 (GuildRoleSubscriptionGroupSetupModal)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
-import ToastUtils from "ToastUtils" /* 5866 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5916 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 17477 */;
-import RoleTierEditStore from "RoleTierEditStore" /* 20272 */;
+import ToastUtils from "ToastUtils" /* 5836 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5889 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 17526 */;
+import RoleTierEditStore from "RoleTierEditStore" /* 20341 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 17457 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 17506 */;
 import size from "module_2" /* 2 */;
 
 let c4, c6, constants, dependencyMap, importAll, state;
@@ -36,7 +36,7 @@ let obj = function _createGroupFromStore() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -102,7 +102,7 @@ let obj = function _createGroupFromStore() {
           return obj;
         }
         c6 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp12) {
         c6 = 3;
         throw tmp12;
@@ -149,7 +149,7 @@ class GuildRoleSubscriptionGroupSetupModal {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -202,7 +202,7 @@ class GuildRoleSubscriptionGroupSetupModal {
                 closure_131_0.onClose();
               }
               c5 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
             groupListingId = id;
             if (null != groupListingId) {
@@ -244,9 +244,9 @@ class GuildRoleSubscriptionGroupSetupModal {
     const tmp3 = merged;
     const tmp4 = dependencyMap;
     const tmp2 = _slicedToArray(editStateId.useState(), 2);
-    let obj2 = merged(17464);
+    let obj2 = merged(17513);
     _slicedToArray = obj2.useCreateSubscriptionGroupListing().createSubscriptionGroupListing;
-    let obj3 = merged(17464);
+    let obj3 = merged(17513);
     const updateSubscriptionsSettings = obj3.useUpdateSubscriptionsSettings();
     ({ updateSubscriptionsSettings: c5, error } = updateSubscriptionsSettings);
     [editStateId, closure_7] = editStateId.useState(editStateId);
@@ -293,9 +293,9 @@ class GuildRoleSubscriptionGroupSetupModal {
       obj.trackWithMetadata(AnalyticEvents.GUILD_ROLE_SUBSCRIPTION_SETUP_MODAL_CLOSED, obj2);
     }, items1);
     let obj5 = { guildId, editStateId, groupListingId: null, children: memo(RoleSubscriptionSettingsDisabledContextProvider, obj6) };
-    const EditStateContextProvider = tmp3(20283).EditStateContextProvider;
+    const EditStateContextProvider = tmp3(20352).EditStateContextProvider;
     obj6 = { guildId, children: memo(tmp13, obj7) };
-    RoleSubscriptionSettingsDisabledContextProvider = tmp3(20268).RoleSubscriptionSettingsDisabledContextProvider;
+    RoleSubscriptionSettingsDisabledContextProvider = tmp3(20337).RoleSubscriptionSettingsDisabledContextProvider;
     obj7 = {
       modalKey: error,
       onDone: function handleCreateGroupAndTier() {
@@ -305,7 +305,7 @@ class GuildRoleSubscriptionGroupSetupModal {
       onClose: callback,
       stepScreenPropsMap: memo1
     };
-    tmp13 = guildId(20284);
+    tmp13 = guildId(20353);
     const merged1 = Object.assign(merged);
     return memo(EditStateContextProvider, obj5);
   }

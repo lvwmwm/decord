@@ -1,21 +1,21 @@
-// Module ID: 16618
-// Function ID: 16619
+// Module ID: 16666
+// Function ID: 16667
 // Name: AuthCommandsFactory
-// Dependencies: [32, 5, 2162, 2140, 1385, 6608, 1072, 11988, 1089, 510, 9432, 2148, 5805, 11914, 9855, 9851, 9857, 5107, 1084, 1282, 572, 16558, 9002, 1487, 2]
+// Dependencies: [32, 5, 2162, 2140, 1385, 6583, 1072, 11979, 1089, 510, 9414, 2148, 5775, 11905, 9839, 9835, 9841, 5077, 1084, 1282, 572, 16606, 8984, 1487, 2]
 // Exports: default
 
-// Module 16618 (AuthCommandsFactory)
+// Module 16666 (AuthCommandsFactory)
 import Storage3 from "Storage" /* 510 */;
 import DurationsDefault from "Durations" /* 1089 */;
-import RPCErrorDefault from "RPCError" /* 9432 */;
+import RPCErrorDefault from "RPCError" /* 9414 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ApplicationStore from "ApplicationStore" /* 2162 */;
 import ApplicationRecord from "ApplicationRecord" /* 2140 */;
 import UserStore from "UserStore" /* 1385 */;
-import Constants_mod from "Constants" /* 6608 */;
+import Constants_mod from "Constants" /* 6583 */;
 import Constants_mod2 from "Constants" /* 1072 */;
-import LeakyBucket_mod from "LeakyBucket" /* 11988 */;
+import LeakyBucket_mod from "LeakyBucket" /* 11979 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -46,6 +46,7 @@ let obj = function _authorizeWithPrompt() {
       let c14;
       let c15;
       let c16;
+      let c17;
       let c2;
       let c3;
       let c4;
@@ -67,20 +68,20 @@ let obj = function _authorizeWithPrompt() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
-          let closure_17;
           let closure_18;
+          let closure_19;
           let USER_INSTALL;
-          let closure_20;
+          let closure_21;
           let disclosures;
           let allAcked;
           let application;
-          let closure_25;
           let closure_26;
           let closure_27;
+          let closure_28;
           let body;
           disableGuildSelect = 2;
           if (0 === _prompt) {
@@ -108,27 +109,28 @@ let obj = function _authorizeWithPrompt() {
               disableGuildSelect = undefined;
               c13 = undefined;
               pid = undefined;
+              iframeId = undefined;
               signal = undefined;
-              c16 = undefined;
-              closure_17 = undefined;
+              c17 = undefined;
               closure_18 = undefined;
+              closure_19 = undefined;
               ({ client_id: c0, response_type } = closure_0);
-              const tmp226 = closure_0;
+              const tmp228 = closure_0;
               if (response_type === undefined) {
                 response_type = "code";
               }
-              ({ redirect_uri: c2, code_challenge: c3, code_challenge_method: c4, state: c5, nonce: c6, scope: c7, permissions: c8, guild_id: c9, channel_id: c10, prompt: c11, disable_guild_select: c12, integration_type: c13, pid: c14, signal: c15, isSocketRpcPrivateScope: c16 } = tmp226);
-              closure_17 = closure_1;
-              closure_18 = closure_2;
+              ({ redirect_uri: c2, code_challenge: c3, code_challenge_method: c4, state: c5, nonce: c6, scope: c7, permissions: c8, guild_id: c9, channel_id: c10, prompt: c11, disable_guild_select: c12, integration_type: c13, pid: c14, iframeId: c15, signal: c16, isSocketRpcPrivateScope: c17 } = tmp228);
+              closure_18 = closure_1;
+              closure_19 = closure_2;
               USER_INSTALL = undefined;
-              closure_20 = undefined;
+              closure_21 = undefined;
               disclosures = undefined;
               allAcked = undefined;
               scopes = undefined;
               application = undefined;
-              closure_25 = undefined;
               closure_26 = undefined;
               closure_27 = undefined;
+              closure_28 = undefined;
               body = undefined;
               parsedPermissions = undefined;
               map = undefined;
@@ -154,23 +156,23 @@ let obj = function _authorizeWithPrompt() {
                   const self15 = this;
                   const self16 = this;
                   const obj5 = { errorCode: closure_136_14.UNKNOWN_ERROR };
-                  const tmp189 = new closure_136_1(closure_136_3[10])(obj5, "Request aborted");
-                  throw tmp189;
+                  const tmp191 = new closure_136_1(closure_136_3[10])(obj5, "Request aborted");
+                  throw tmp191;
                 } else if (null == clientId) {
                   const self13 = this;
                   const self14 = this;
                   const obj6 = { errorCode: closure_136_14.OAUTH2_ERROR };
-                  const tmp182 = new closure_136_1(closure_136_3[10])(obj6, "No Client ID provided");
-                  throw tmp182;
+                  const tmp184 = new closure_136_1(closure_136_3[10])(obj6, "No Client ID provided");
+                  throw tmp184;
                 } else {
-                  const tmp216 = c16;
-                  if (!tmp216) {
+                  const tmp218 = c17;
+                  if (!tmp218) {
                     if (null != redirectUri) {
                       const self9 = this;
                       const self10 = this;
                       const obj7 = { errorCode: closure_136_14.OAUTH2_ERROR };
-                      const tmp131 = new closure_136_1(closure_136_3[10])(obj7, "Redirect URI cannot be used in the RPC OAuth2 Authorization flow");
-                      throw tmp131;
+                      const tmp133 = new closure_136_1(closure_136_3[10])(obj7, "Redirect URI cannot be used in the RPC OAuth2 Authorization flow");
+                      throw tmp133;
                     }
                   }
                   scopes = [];
@@ -187,8 +189,8 @@ let obj = function _authorizeWithPrompt() {
                     const self11 = this;
                     const self12 = this;
                     const obj8 = { errorCode: closure_136_14.OAUTH2_ERROR };
-                    const tmp175 = new closure_136_1(closure_136_3[10])(obj8, "Client is not logged in");
-                    throw tmp175;
+                    const tmp177 = new closure_136_1(closure_136_3[10])(obj8, "Client is not logged in");
+                    throw tmp177;
                   } else {
                     if (null != c13) {
                       const _Number = Number;
@@ -242,7 +244,7 @@ let obj = function _authorizeWithPrompt() {
               body = channelId.body;
               let str3;
               const obj14 = { errorCode: closure_136_14.OAUTH2_ERROR };
-              const tmp117 = closure_136_1(closure_136_3[10]);
+              const tmp119 = closure_136_1(closure_136_3[10]);
               if (body != null) {
                 str3 = body.message;
               }
@@ -252,8 +254,8 @@ let obj = function _authorizeWithPrompt() {
               const _HermesInternal2 = HermesInternal;
               const self7 = this;
               const self8 = this;
-              const tmp1172 = new tmp117(obj14, "OAuth2 Authorization Error: " + str3);
-              throw tmp1172;
+              const tmp1192 = new tmp119(obj14, "OAuth2 Authorization Error: " + str3);
+              throw tmp1192;
             } else if (3 === _prompt) {
               if (arg0 === 1) {
                 disableGuildSelect = 3;
@@ -262,9 +264,9 @@ let obj = function _authorizeWithPrompt() {
                 disableGuildSelect = 3;
                 return { value, done: true };
               } else {
-                const tmp107 = createFromServer(value);
-                application = tmp107;
-                if (!nonce(tmp107)) {
+                const tmp109 = createFromServer(value);
+                application = tmp109;
+                if (!nonce(tmp109)) {
                   USER_INSTALL = closure_136_0(closure_136_3[12]).ApplicationIntegrationType.GUILD_INSTALL;
                 }
               }
@@ -278,16 +280,16 @@ let obj = function _authorizeWithPrompt() {
                   disableGuildSelect = 3;
                   return { value, done: true };
                 } else {
-                  closure_25 = value;
-                  closure_26 = closure_136_4(closure_25, 2);
-                  closure_20 = closure_26[0];
-                  closure_27 = closure_26[1];
-                  disclosures = closure_27.disclosures;
-                  allAcked = closure_27.allAcked;
+                  closure_26 = value;
+                  closure_27 = closure_136_4(closure_26, 2);
+                  closure_21 = closure_27[0];
+                  closure_28 = closure_27[1];
+                  disclosures = closure_28.disclosures;
+                  allAcked = closure_28.allAcked;
                   guildId = 0;
                   if (_prompt === closure_136_0(closure_136_3[16]).OAuth2Prompts.NONE) {
-                    if (null != closure_20) {
-                      if (closure_20.authorized) {
+                    if (null != closure_21) {
+                      if (closure_21.authorized) {
                         const tmp31 = allAcked;
                         if (tmp31) {
                           guildId = 2;
@@ -301,8 +303,8 @@ let obj = function _authorizeWithPrompt() {
                       }
                     }
                   }
-                  if (closure_18 != null) {
-                    tmp33(closure_20.application, channelId, pid);
+                  if (closure_19 != null) {
+                    tmp33(closure_21.application, channelId, pid, iframeId);
                   }
                   parsedPermissions = closure_136_2(closure_136_3[17]).NONE;
                   guildId = 3;
@@ -368,26 +370,26 @@ let obj = function _authorizeWithPrompt() {
                     throw tmp12;
                   }
                 }
-                const obj26 = { clientId, authorizations: map, scopes, parsedPermissions, responseType: response_type, redirectUri, codeChallenge, codeChallengeMethod, state, guildId, channelId, prompt: _prompt, disableGuildSelect, disclosures, integrationType: USER_INSTALL, pid, signal };
+                const obj26 = { clientId, authorizations: map, scopes, parsedPermissions, responseType: response_type, redirectUri, codeChallenge, codeChallengeMethod, state, guildId, channelId, prompt: _prompt, disableGuildSelect, disclosures, integrationType: USER_INSTALL, pid, iframeId, signal };
                 disableGuildSelect = 3;
-                const obj27 = { value: closure_17(obj26), done: true };
+                const obj27 = { value: closure_18(obj26), done: true };
                 return obj27;
               }
               map = undefined;
-              let hasItem = null != closure_20.integration_type;
+              let hasItem = null != closure_21.integration_type;
               if (hasItem) {
                 const _Object = Object;
                 const values = Object.values(closure_136_0(closure_136_3[12]).ApplicationIntegrationType);
-                hasItem = values.includes(closure_20.integration_type);
+                hasItem = values.includes(closure_21.integration_type);
               }
               if (hasItem) {
                 const _Map = Map;
                 const self5 = this;
                 const self6 = this;
                 map = new Map();
-                let result = map.set(closure_20.integration_type, closure_20);
+                let result = map.set(closure_21.integration_type, closure_21);
               }
-              if (null != closure_136_16[closure_20.application.id]) {
+              if (null != closure_136_16[closure_21.application.id]) {
                 _prompt = 8;
                 disableGuildSelect = 1;
                 const obj28 = { value: obj10.process(), done: false };
@@ -396,11 +398,11 @@ let obj = function _authorizeWithPrompt() {
             }
             USER_INSTALL = closure_136_0(closure_136_3[12]).ApplicationIntegrationType.USER_INSTALL;
           }
-        } catch (tmp193) {
-          channelId = tmp193;
+        } catch (tmp195) {
+          channelId = tmp195;
           if (0 === guildId) {
             disableGuildSelect = 3;
-            throw tmp193;
+            throw tmp195;
           } else if (1 === guildId) {
             _prompt = 2;
           } else if (2 === guildId) {
@@ -436,7 +438,7 @@ obj = function _authenticate() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c5;
@@ -605,18 +607,18 @@ export default function createAuthCommandHandlers(arg0, arg1) {
   _require = arg0;
   let closure_1 = arg1;
   obj = {};
-  const AUTHENTICATE = constants.AUTHENTICATE;
+  const AUTHENTICATE = constants2.AUTHENTICATE;
   let obj2 = require("CONTEXT_MENU_ICON_NAMES");
   let obj3 = {
     handler(socket) {
-      const f139572 = function(result) {
+      const f140196 = function(result) {
         let access_token;
         let expires_in;
         let scope;
         if (null == result) {
           const self3 = this;
           const self4 = this;
-          obj = { errorCode: constants2.UNKNOWN_ERROR };
+          obj = { errorCode: constants3.UNKNOWN_ERROR };
           const tmp18 = new closure_1(dependencyMap[10])(obj, "Unknown error occurred");
           throw tmp18;
         } else {
@@ -626,7 +628,7 @@ export default function createAuthCommandHandlers(arg0, arg1) {
           if (null != parsed.error) {
             let str = parsed.error_description;
             const error = parsed.error;
-            const obj2 = { errorCode: constants2.OAUTH2_ERROR };
+            const obj2 = { errorCode: constants3.OAUTH2_ERROR };
             const tmp8 = closure_1(dependencyMap[10]);
             if (str == null) {
               str = "unknown error";
@@ -666,7 +668,7 @@ export default function createAuthCommandHandlers(arg0, arg1) {
         if (socket.transport === constants.IPC) {
           id = socket.application.id;
           if (null == id) {
-            let obj2 = { errorCode: constants2.INVALID_COMMAND };
+            let obj2 = { errorCode: constants3.INVALID_COMMAND };
             let self3 = this;
             let self4 = this;
             let tmp23 = new closure_1(dependencyMap[10])(obj2, "No application.");
@@ -715,7 +717,7 @@ export default function createAuthCommandHandlers(arg0, arg1) {
                   let obj3 = { client_id: tmp, scope: IDENTIFY, response_type: "token", signal, isSocketRpcPrivateScope: false };
                   let tmp8 = signal;
                   const promise = authorizeWithPrompt(obj3, closure_0, closure_1);
-                  return promise.then(f139572);
+                  return promise.then(f140196);
                 } else {
                   let str = "Trying to call a non-function";
                   throw new TypeError("Trying to call a non-function");
@@ -724,7 +726,7 @@ export default function createAuthCommandHandlers(arg0, arg1) {
             } else {
               let obj3 = { client_id: id, scope: IDENTIFY, response_type: "token", signal, isSocketRpcPrivateScope: false };
               let promise = authorizeWithPrompt(obj3, socket, signal);
-              catchPromise = promise.then(f139572);
+              catchPromise = promise.then(f140196);
             }
             return catchPromise;
           }
@@ -732,7 +734,7 @@ export default function createAuthCommandHandlers(arg0, arg1) {
       }
       if (null == access_token) {
         let tmp4 = dependencyMap;
-        obj = { errorCode: constants2.INVALID_TOKEN };
+        obj = { errorCode: constants3.INVALID_TOKEN };
         let self = this;
         let str = "No access token provided";
         let self2 = this;
@@ -745,8 +747,8 @@ export default function createAuthCommandHandlers(arg0, arg1) {
       }
     }
   };
-  obj[AUTHENTICATE] = obj2.createRPCCommand(constants.AUTHENTICATE, obj3);
-  const AUTHORIZE = constants.AUTHORIZE;
+  obj[AUTHENTICATE] = obj2.createRPCCommand(constants2.AUTHENTICATE, obj3);
+  const AUTHORIZE = constants2.AUTHORIZE;
   let obj4 = require("CONTEXT_MENU_ICON_NAMES");
   let obj5 = {
     handler(socket) {
@@ -757,36 +759,35 @@ export default function createAuthCommandHandlers(arg0, arg1) {
       if (null != client_id) {
         if ("" !== client_id) {
           if (null != socket.authorization.accessToken) {
-            let tmp26 = importDefault;
-            let obj2 = { errorCode: constants.INVALID_COMMAND };
+            let obj2 = { errorCode: constants2.INVALID_COMMAND };
             let self7 = this;
             let str5 = "Already authenticated";
             let self8 = this;
-            const tmp30 = new RPCErrorDefault(obj2, "Already authenticated");
-            throw tmp30;
+            const tmp32 = new RPCErrorDefault(obj2, "Already authenticated");
+            throw tmp32;
           } else if (socket.authorization.authing) {
-            const obj3 = { errorCode: constants.INVALID_COMMAND };
+            const obj3 = { errorCode: constants2.INVALID_COMMAND };
             let self5 = this;
             let self6 = this;
-            const tmp24 = new RPCErrorDefault(obj3, "Already authing");
-            throw tmp24;
+            let tmp26 = new RPCErrorDefault(obj3, "Already authing");
+            throw tmp26;
           } else {
             socket.authorization.authing = true;
             if ("token" === args.response_type) {
               socket.authorization.authing = false;
-              let obj4 = { errorCode: constants.INVALID_COMMAND };
+              let obj4 = { errorCode: constants2.INVALID_COMMAND };
               let self3 = this;
               let self4 = this;
-              const tmp18 = new RPCErrorDefault(obj4, "Authorization response_type \"token\" is not supported");
-              let tmp19 = tmp18;
-              throw tmp18;
+              let tmp19 = obj4;
+              const tmp20 = new RPCErrorDefault(obj4, "Authorization response_type \"token\" is not supported");
+              throw tmp20;
             } else {
               const scopes = socket.authorization.scopes;
               hasItem = scopes.has(unpackModuleId);
               if (!hasItem) {
                 if (socket.application.id !== client_id) {
                   socket.authorization.authing = false;
-                  obj = { errorCode: constants.INVALID_CLIENTID };
+                  obj = { errorCode: constants2.INVALID_CLIENTID };
                   let self = this;
                   let self2 = this;
                   let tmp6 = new RPCErrorDefault(obj, "Application does not match the connection's");
@@ -799,8 +800,12 @@ export default function createAuthCommandHandlers(arg0, arg1) {
                   scope = args.scopes;
                 }
                 delete args["scopes"];
-                let obj5 = { scope, signal: tmp, isSocketRpcPrivateScope: hasItem };
-                let tmp10 = args;
+                let iframeId;
+                if (socket.source.type === constants.POST_MESSAGE) {
+                  iframeId = socket.source.iframeId;
+                }
+                let tmp10 = authorizeWithPrompt;
+                let obj5 = { scope, iframeId, signal: tmp, isSocketRpcPrivateScope: hasItem };
                 const merged = Object.assign(args);
                 const promise = authorizeWithPrompt(obj5, closure_0, closure_1);
                 const nextPromise = promise.then(function(location) {
@@ -808,7 +813,7 @@ export default function createAuthCommandHandlers(arg0, arg1) {
                   if (null == location) {
                     const self5 = this;
                     const self6 = this;
-                    const obj2 = { errorCode: constants.UNKNOWN_ERROR };
+                    const obj2 = { errorCode: constants2.UNKNOWN_ERROR };
                     const tmp19 = new closure_2_1(closure_2_3[10])(obj2, "Unknown error occurred");
                     throw tmp19;
                   } else {
@@ -834,7 +839,7 @@ export default function createAuthCommandHandlers(arg0, arg1) {
                           const _HermesInternal = HermesInternal;
                           const self3 = this;
                           const self4 = this;
-                          const obj4 = { errorCode: constants.OAUTH2_ERROR };
+                          const obj4 = { errorCode: constants2.OAUTH2_ERROR };
                           const tmp10 = closure_2_1(closure_2_3[10]);
                           const tmp102 = new tmp10(obj4, "OAuth2 Error: " + value2 + ": " + str5);
                           throw tmp102;
@@ -843,7 +848,7 @@ export default function createAuthCommandHandlers(arg0, arg1) {
                       if (null == value) {
                         const self = this;
                         const self2 = this;
-                        const obj5 = { errorCode: constants.OAUTH2_ERROR };
+                        const obj5 = { errorCode: constants2.OAUTH2_ERROR };
                         const tmp6 = new closure_2_1(closure_2_3[10])(obj5, "OAuth2 Error: Unable to find auth code");
                         throw tmp6;
                       } else {
@@ -862,12 +867,12 @@ export default function createAuthCommandHandlers(arg0, arg1) {
           }
         }
       }
-      const obj6 = { errorCode: constants.INVALID_CLIENTID };
-      const tmp32 = new RPCErrorDefault(obj6, "No client id provided");
-      throw tmp32;
+      const obj6 = { errorCode: constants2.INVALID_CLIENTID };
+      const tmp34 = new RPCErrorDefault(obj6, "No client id provided");
+      throw tmp34;
     }
   };
-  obj[AUTHORIZE] = obj4.createRPCCommand(constants.AUTHORIZE, obj5);
+  obj[AUTHORIZE] = obj4.createRPCCommand(constants2.AUTHORIZE, obj5);
   return obj;
 };
 export const AUTHORIZE_PROMPT_THROTTLERS = obj;

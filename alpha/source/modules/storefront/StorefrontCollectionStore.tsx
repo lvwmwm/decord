@@ -1,9 +1,9 @@
-// Module ID: 9686
-// Function ID: 9687
+// Module ID: 9668
+// Function ID: 9669
 // Name: StorefrontCollectionStore
 // Dependencies: [504, 572, 2]
 
-// Module 9686 (StorefrontCollectionStore)
+// Module 9668 (StorefrontCollectionStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
@@ -114,6 +114,21 @@ class StorefrontCollectionStore extends Store {
       tmp = includePricing;
     }
     return true === tmp;
+  }
+  getPricingKey(item) {
+    let tmp = null;
+    if (null != item) {
+      tmp = closure_0[item];
+    }
+    let state;
+    if (tmp != null) {
+      state = tmp.state;
+    }
+    let pricingKey;
+    if ("success" === state) {
+      pricingKey = tmp.pricingKey;
+    }
+    return pricingKey;
   }
   getFetchParamsForApplication(c0) {
     let tmp = null;
@@ -252,7 +267,11 @@ let obj = {
     let collectionIds;
     let collections;
     let includePricing;
-    ({ collectionIds, collections, includePricing: closure_0 } = arg0);
+    let pricingKey;
+    ({ collectionIds, collections, includePricing: closure_0, pricingKey } = arg0);
+    if (pricingKey === undefined) {
+      pricingKey = "";
+    }
     const fetchedAt = Date.now();
     set = new Set();
     const item = collections.forEach((collection) => {
@@ -271,7 +290,7 @@ let obj = {
           }
         }
       }
-      const obj2 = { state: "success", collection, fetchedAt, includePricing };
+      const obj2 = { state: "success", collection, fetchedAt, includePricing, pricingKey };
       includePricing[collection.id] = obj2;
     });
     const item1 = collectionIds.forEach((item) => {
@@ -310,7 +329,7 @@ let obj = {
     const timestamp = Date.now();
     timestamp[applicationId] = { state: "success", collections, fetchedAt: timestamp, includePricing, skuTypes };
     const item = collections.forEach((collection) => {
-      const obj = { state: "success", collection, fetchedAt: timestamp, includePricing };
+      const obj = { state: "success", collection, fetchedAt: timestamp, includePricing, pricingKey: "" };
       closure_0[collection.id] = obj;
     });
   },
@@ -330,18 +349,23 @@ let obj = {
     }
     tmp[pageKey] = { state: "loading", collectionIds };
   },
-  STOREFRONT_COLLECTIONS_FOR_APPLICATION_PAGE_FETCH_SUCCESS: function handleCollectionsForApplicationPageFetchSuccess(collections) {
+  STOREFRONT_COLLECTIONS_FOR_APPLICATION_PAGE_FETCH_SUCCESS: function handleCollectionsForApplicationPageFetchSuccess(arg0) {
+    let collections;
     let listKey;
     let pageKey;
+    let pricingKey;
     let total;
-    collections = collections.collections;
-    ({ pageKey, listKey, total } = collections);
+    ({ collections, pricingKey } = arg0);
+    ({ pageKey, listKey, total } = arg0);
+    if (pricingKey === undefined) {
+      pricingKey = "";
+    }
     const timestamp = Date.now();
     let obj = { state: "success", collectionIds: collections.map((id) => id.id), fetchedAt: timestamp };
     closure_2[pageKey] = obj;
     closure_3[listKey] = total;
     const item = collections.forEach((collection) => {
-      const obj = { state: "success", collection, fetchedAt: timestamp, includePricing: true };
+      const obj = { state: "success", collection, fetchedAt: timestamp, includePricing: true, pricingKey };
       closure_0[collection.id] = obj;
     });
   },
@@ -362,10 +386,10 @@ let obj = {
     tmp[requestKey] = { state: "loading", collectionIds };
   },
   STOREFRONT_COLLECTIONS_AFTER_FETCH_SUCCESS: function handleCollectionsAfterFetchSuccess(collections) {
-    const f96124 = (id) => id.id;
+    const f96463 = (id) => id.id;
     collections = collections.collections;
-    closure_4[collections.requestKey] = { state: "success", collectionIds: collections.map(f96124), fetchedAt: Date.now() };
-    ({ state: "success", collectionIds: collections.map(f96124), fetchedAt: Date.now() });
+    closure_4[collections.requestKey] = { state: "success", collectionIds: collections.map(f96463), fetchedAt: Date.now() };
+    ({ state: "success", collectionIds: collections.map(f96463), fetchedAt: Date.now() });
     const item = collections.forEach((id) => {
       closure_1_5[id.id] = id;
     });

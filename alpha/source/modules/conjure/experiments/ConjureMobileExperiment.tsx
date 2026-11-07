@@ -1,10 +1,10 @@
-// Module ID: 9783
-// Function ID: 9784
+// Module ID: 9767
+// Function ID: 9768
 // Name: ConjureMobileExperiment
 // Dependencies: [1449, 504, 2]
 // Exports: isConjureMobileEnabled, useIsConjureMobileEnabled
 
-// Module 9783 (ConjureMobileExperiment)
+// Module 9767 (ConjureMobileExperiment)
 import ApexExperiment from "ApexExperiment" /* 1449 */;
 import size from "module_2" /* 2 */;
 
@@ -36,7 +36,7 @@ export function useIsConjureMobileEnabled(canConjureCustomWidget, ConjureAppChan
     return enabled;
   }, items1);
 }
-export function isConjureMobileEnabled(openConjureHomeScreen_str) {
-  const obj = { location: openConjureHomeScreen_str };
+export function isConjureMobileEnabled(ConjureProjectLinkCard) {
+  const obj = { location: ConjureProjectLinkCard };
   return apexExperiment.getConfig(obj).enabled;
 }

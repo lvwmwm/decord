@@ -1,14 +1,14 @@
-// Module ID: 15005
-// Function ID: 15006
+// Module ID: 15037
+// Function ID: 15038
 // Name: useEntranceAnimation
-// Dependencies: [32, 19, 1187, 560, 1259, 5400, 1705, 2]
+// Dependencies: [32, 19, 1187, 560, 1259, 5370, 1705, 2]
 // Exports: useEntranceAnimation
 
-// Module 15005 (useEntranceAnimation)
+// Module 15037 (useEntranceAnimation)
 import native from "native" /* 1187 */;
 import react_native from "react-native" /* 1259 */;
 import _mod1705 from "module_1705" /* 1705 */;
-import timing_timing from "timing/timing" /* 5400 */;
+import timing_timing from "timing/timing" /* 5370 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import module_560 from "module_560" /* 560 */;

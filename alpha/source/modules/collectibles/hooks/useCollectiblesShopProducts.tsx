@@ -1,26 +1,26 @@
-// Module ID: 9685
-// Function ID: 9686
+// Module ID: 9667
+// Function ID: 9668
 // Name: useCollectiblesShopProducts
-// Dependencies: [32, 19, 9686, 8883, 7820, 7821, 9687, 504, 7818, 8882, 9688, 2]
+// Dependencies: [32, 19, 9668, 8862, 7797, 7798, 8865, 9669, 504, 7795, 8861, 9670, 2]
 // Exports: useCollectiblesShopProduct, useCollectiblesShopProducts, useFetchResolvedAbsent
 
-// Module 9685 (useCollectiblesShopProducts)
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7818 */;
-import StorefrontProductActionCreators from "StorefrontProductActionCreators" /* 8882 */;
-import CollectiblesShopManager2 from "CollectiblesShopManager" /* 9687 */;
+// Module 9667 (useCollectiblesShopProducts)
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7795 */;
+import StorefrontProductActionCreators from "StorefrontProductActionCreators" /* 8861 */;
+import CollectiblesShopManager2 from "CollectiblesShopManager" /* 9669 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import StorefrontCollectionStore from "StorefrontCollectionStore" /* 9686 */;
-import StorefrontProductStore from "StorefrontProductStore" /* 8883 */;
-import CollectiblesCategoryRecord from "CollectiblesCategoryRecord" /* 7820 */;
-import CollectiblesProductRecord from "CollectiblesProductRecord" /* 7821 */;
+import StorefrontCollectionStore from "StorefrontCollectionStore" /* 9668 */;
+import StorefrontProductStore from "StorefrontProductStore" /* 8862 */;
+import CollectiblesCategoryRecord from "CollectiblesCategoryRecord" /* 7797 */;
+import CollectiblesProductRecord from "CollectiblesProductRecord" /* 7798 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, set, set2;
 
 let tmp;
-const StorefrontCollectionActionCreators = tmp(9688);
+const StorefrontCollectionActionCreators = tmp(9670);
 function computeEntryState(arg0) {
   let needsCategory;
   let product;
@@ -184,8 +184,11 @@ export function useCollectiblesShopProduct(skuId, arg1) {
   let memo1;
   let closure_13;
   let closure_14;
-  let obj2 = flag3;
-  let items = [skuId, flag3];
+  let tmp = _require;
+  let tmp2 = flag;
+  let obj2 = require("getStorefrontNativeStoreQuery");
+  let obj3 = flag3;
+  let items = [skuId, flag3, obj2.useStorefrontPricingKey()];
   const effect = flag3.useEffect(() => {
     const tmp = flag3;
     if (tmp) {
@@ -194,12 +197,10 @@ export function useCollectiblesShopProduct(skuId, arg1) {
       const products = CollectiblesShopManager.requestProducts(items);
     }
   }, items);
-  let tmp2 = _require;
-  const tmp3 = flag;
-  let obj3 = require("get initialized");
   let items1 = [flag5];
   const items2 = [skuId];
-  const stateFromStoresObject = obj3.useStateFromStoresObject(items1, () => {
+  const obj4 = require("get initialized");
+  const stateFromStoresObject = obj4.useStateFromStoresObject(items1, () => {
     const obj = { products: StorefrontProductStore.getProductsForSku(skuId), fetchState: StorefrontProductStore.getFetchStateForSku(skuId) };
     return obj;
   }, items2);
@@ -220,7 +221,7 @@ export function useCollectiblesShopProduct(skuId, arg1) {
     str = str2;
   }
   const items3 = [flag, str, flag4];
-  const effect1 = obj2.useEffect(() => {
+  const effect1 = obj3.useEffect(() => {
     const tmp = flag && "" !== str;
     if (tmp) {
       const CollectiblesShopManager = CollectiblesShopManager2.CollectiblesShopManager;
@@ -229,17 +230,17 @@ export function useCollectiblesShopProduct(skuId, arg1) {
       const collections = CollectiblesShopManager.requestCollections(items, obj);
     }
   }, items3);
+  let tmpResult = tmp(tmp2[8]);
   const items4 = [flag4];
   const items5 = [str];
-  const tmp2Result = tmp2(tmp3[7]);
-  const stateFromStoresObject1 = tmp2Result.useStateFromStoresObject(items4, () => {
+  const stateFromStoresObject1 = tmpResult.useStateFromStoresObject(items4, () => {
     const obj = { collection: StorefrontCollectionStore.getCollection(str), fetchState: StorefrontCollectionStore.getFetchState(str) };
     return obj;
   }, items5);
   collection = stateFromStoresObject1.collection;
   fetchState2 = stateFromStoresObject1.fetchState;
   const items6 = [first, flag5, skuId];
-  memo = obj2.useMemo(() => {
+  memo = obj3.useMemo(() => {
     let tmp2 = null;
     if (null != first) {
       let tmp5;
@@ -257,7 +258,7 @@ export function useCollectiblesShopProduct(skuId, arg1) {
     return tmp2;
   }, items6);
   const items7 = [flag, collection];
-  memo1 = obj2.useMemo(() => {
+  memo1 = obj3.useMemo(() => {
     let result = null;
     if (flag) {
       result = null;
@@ -267,19 +268,19 @@ export function useCollectiblesShopProduct(skuId, arg1) {
     }
     return result;
   }, items7);
-  const obj4 = { id: skuId, sawFetch: false };
-  [tmp12, tmp13] = flag2(obj2.useState(obj4), 2);
+  const obj5 = { id: skuId, sawFetch: false };
+  [tmp12, tmp13] = flag2(obj3.useState(obj5), 2);
   let flag6 = tmp12.sawFetch;
-  flag2(obj2.useState(obj4), 2);
+  flag2(obj3.useState(obj5), 2);
   if (tmp12.id !== skuId) {
-    const obj5 = { id: skuId, sawFetch: null != fetchState };
-    tmp13(obj5);
+    const obj6 = { id: skuId, sawFetch: null != fetchState };
+    tmp13(obj6);
     flag6 = tmp16;
   } else {
     const tmp14 = null == fetchState || tmp12.sawFetch;
     if (!tmp14) {
-      const obj6 = { id: skuId, sawFetch: true };
-      tmp13(obj6);
+      const obj7 = { id: skuId, sawFetch: true };
+      tmp13(obj7);
       flag6 = true;
     }
   }
@@ -288,25 +289,25 @@ export function useCollectiblesShopProduct(skuId, arg1) {
   if (flag) {
     str3 = str;
   }
-  [tmp20, tmp21] = flag2(obj2.useState({ id: str3, sawFetch: false }), 2);
+  [tmp20, tmp21] = flag2(obj3.useState({ id: str3, sawFetch: false }), 2);
   let flag7 = tmp20.sawFetch;
-  flag2(obj2.useState({ id: str3, sawFetch: false }), 2);
+  flag2(obj3.useState({ id: str3, sawFetch: false }), 2);
   if (tmp20.id !== str3) {
-    const obj7 = { id: str3, sawFetch: null != fetchState2 };
-    tmp21(obj7);
+    const obj8 = { id: str3, sawFetch: null != fetchState2 };
+    tmp21(obj8);
     flag7 = tmp24;
   } else {
     const tmp22 = null == fetchState2 || tmp20.sawFetch;
     if (!tmp22) {
-      const obj8 = { id: str3, sawFetch: true };
-      tmp21(obj8);
+      const obj9 = { id: str3, sawFetch: true };
+      tmp21(obj9);
       flag7 = true;
     }
   }
   closure_14 = tmp26;
   const items8 = [fetchState, "" !== skuId && null == fetchState && flag6, fetchState2, "" !== str3 && null == fetchState2 && flag7, flag, str, memo, memo1];
   const items9 = [flag2, memo];
-  const memo2 = obj2.useMemo(() => {
+  const memo2 = obj3.useMemo(() => {
     str = "error";
     if ("error" !== fetchState) {
       str = "error";
@@ -341,7 +342,7 @@ export function useCollectiblesShopProduct(skuId, arg1) {
     }
     return str;
   }, items8);
-  const effect2 = obj2.useEffect(() => {
+  const effect2 = obj3.useEffect(() => {
     const tmp = flag2 && null != memo;
     if (tmp) {
       const obj = CollectiblesActionCreators;
@@ -349,11 +350,11 @@ export function useCollectiblesShopProduct(skuId, arg1) {
     }
   }, items9);
   const items10 = [skuId, flag, str, flag4];
-  const obj9 = {
+  const obj10 = {
     product: memo,
     category: memo1,
     state: memo2,
-    retry: obj2.useCallback(() => {
+    retry: obj3.useCallback(() => {
       let items;
       let items1;
       const obj2 = { skuIds: items, ignoreCache: true };
@@ -372,7 +373,7 @@ export function useCollectiblesShopProduct(skuId, arg1) {
       }
     }, items10)
   };
-  return obj9;
+  return obj10;
 }
 export function useCollectiblesShopProducts(resolvedSkuIds, arg1) {
   _require = resolvedSkuIds;
@@ -392,17 +393,19 @@ export function useCollectiblesShopProducts(resolvedSkuIds, arg1) {
   let stateFromStoresObject1;
   let items = [resolvedSkuIds];
   memo = memo.useMemo(() => resolvedSkuIds.filter((item) => "" !== item), items);
-  const items1 = [memo.join(",")];
+  const joined = memo.join(",");
+  let obj3 = require("getStorefrontNativeStoreQuery");
+  const items1 = [joined, obj3.useStorefrontPricingKey()];
   const effect = memo.useEffect(() => {
     if (memo.length > 0) {
       const CollectiblesShopManager = CollectiblesShopManager2.CollectiblesShopManager;
       const products = CollectiblesShopManager.requestProducts(tmp);
     }
   }, items1);
-  let obj3 = require("get initialized");
+  let obj4 = require("get initialized");
   const items2 = [stateFromStoresObject1];
   const items3 = [memo];
-  const stateFromStoresObject = obj3.useStateFromStoresObject(items2, () => {
+  const stateFromStoresObject = obj4.useStateFromStoresObject(items2, () => {
     const obj = {};
     const iter = memo[Symbol.iterator]();
     const nextResult = iter.next();
@@ -417,10 +420,10 @@ export function useCollectiblesShopProducts(resolvedSkuIds, arg1) {
     }
     return obj;
   }, items3);
-  let obj4 = require("get initialized");
   const items4 = [stateFromStoresObject1];
   const items5 = [memo];
-  stateFromStoresObject1 = obj4.useStateFromStoresObject(items4, () => {
+  const obj5 = require("get initialized");
+  stateFromStoresObject1 = obj5.useStateFromStoresObject(items4, () => {
     const obj = {};
     for (const item10006 of memo) {
       obj[item10006] = StorefrontProductStore.getFetchStateForSku(item10006);
@@ -453,10 +456,10 @@ export function useCollectiblesShopProducts(resolvedSkuIds, arg1) {
   }, items6);
   const items7 = [memo1];
   const memo2 = memo.useMemo(() => {
-    const f126731 = (item) => "" !== item;
+    const f127275 = (item) => "" !== item;
     const values = Object.values(memo1);
-    const items = [...new Set(values.filter(f126731))];
-    new Set(values.filter(f126731));
+    const items = [...new Set(values.filter(f127275))];
+    new Set(values.filter(f127275));
     return items;
   }, items7);
   const items8 = [flag, memo2.join(",")];
@@ -469,8 +472,8 @@ export function useCollectiblesShopProducts(resolvedSkuIds, arg1) {
   }, items8);
   const items9 = [stateFromStoresObject];
   const items10 = [memo2];
-  const obj6 = require("get initialized");
-  const stateFromStoresObject2 = obj6.useStateFromStoresObject(items9, () => {
+  const obj7 = require("get initialized");
+  const stateFromStoresObject2 = obj7.useStateFromStoresObject(items9, () => {
     const obj = {};
     for (const item10006 of memo2) {
       obj[item10006] = StorefrontCollectionStore.getCollection(item10006);
@@ -480,8 +483,8 @@ export function useCollectiblesShopProducts(resolvedSkuIds, arg1) {
   }, items10);
   const items11 = [stateFromStoresObject];
   const items12 = [memo2];
-  const obj7 = require("get initialized");
-  const stateFromStoresObject3 = obj7.useStateFromStoresObject(items11, () => {
+  const obj8 = require("get initialized");
+  const stateFromStoresObject3 = obj8.useStateFromStoresObject(items11, () => {
     const obj = {};
     for (const item10006 of memo2) {
       obj[item10006] = StorefrontCollectionStore.getFetchState(item10006);
@@ -489,11 +492,11 @@ export function useCollectiblesShopProducts(resolvedSkuIds, arg1) {
     }
     return obj;
   }, items12);
-  let tmp8 = stateFromStoresObject3(stateFromStoresObject1);
-  set = tmp8;
-  let tmp9 = stateFromStoresObject3(stateFromStoresObject3);
-  set2 = tmp9;
-  const items13 = [memo, stateFromStoresObject, stateFromStoresObject1, memo1, stateFromStoresObject2, stateFromStoresObject3, tmp8, tmp9, flag, flag2];
+  let tmp9 = stateFromStoresObject3(stateFromStoresObject1);
+  set = tmp9;
+  let tmp10 = stateFromStoresObject3(stateFromStoresObject3);
+  set2 = tmp10;
+  const items13 = [memo, stateFromStoresObject, stateFromStoresObject1, memo1, stateFromStoresObject2, stateFromStoresObject3, tmp9, tmp10, flag, flag2];
   return memo.useMemo(() => {
     let hasItem;
     let obj4;

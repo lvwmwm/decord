@@ -1,13 +1,13 @@
-// Module ID: 19270
-// Function ID: 19271
+// Module ID: 19329
+// Function ID: 19330
 // Name: useListHasSingleMessageRequest
-// Dependencies: [19, 6936, 6937, 19271, 504, 7047, 19272, 2]
+// Dependencies: [19, 6911, 6912, 19330, 504, 7022, 19331, 2]
 // Exports: useListHasSingleMessageRequest, useListHasSingleSpamMessageRequest
 
-// Module 19270 (useListHasSingleMessageRequest)
+// Module 19329 (useListHasSingleMessageRequest)
 import react_mod from "react" /* 19 */;
-import MessageRequestStore from "MessageRequestStore" /* 6936 */;
-import SpamMessageRequestStore from "SpamMessageRequestStore" /* 6937 */;
+import MessageRequestStore from "MessageRequestStore" /* 6911 */;
+import SpamMessageRequestStore from "SpamMessageRequestStore" /* 6912 */;
 import size from "module_2" /* 2 */;
 
 let react = react_mod;

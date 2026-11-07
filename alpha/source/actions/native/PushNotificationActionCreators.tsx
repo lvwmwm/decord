@@ -1,10 +1,10 @@
-// Module ID: 14184
-// Function ID: 14185
+// Module ID: 14209
+// Function ID: 14210
 // Name: PushNotificationActionCreators
-// Dependencies: [5, 14185, 502, 1072, 14186, 6823, 3, 1098, 1282, 1242, 14189, 510, 6827, 1377, 1260, 1380, 572, 2]
+// Dependencies: [5, 14210, 502, 1072, 14211, 6798, 3, 1098, 1282, 1242, 14214, 510, 6802, 1377, 1260, 1380, 572, 2]
 // Exports: setPushNotificationPermissionEligibleForPrompt, setPushPermissionReactivationSeen, setPushPermissionState, updateNotificationAuthorizationStatus
 
-// Module 14184 (PushNotificationActionCreators)
+// Module 14209 (PushNotificationActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import Storage2 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
@@ -12,13 +12,13 @@ import TokenManagerAll from "TokenManager" /* 1098 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6827 */;
-import Constants2 from "Constants" /* 14186 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6802 */;
+import Constants2 from "Constants" /* 14211 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import MultiAccountStore from "MultiAccountStore" /* 14185 */;
+import MultiAccountStore from "MultiAccountStore" /* 14210 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Constants from "Constants" /* 1072 */;
-import PushNotificationConstants from "PushNotificationConstants" /* 6823 */;
+import PushNotificationConstants from "PushNotificationConstants" /* 6798 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3, c5, c6, closure_3;
@@ -47,7 +47,7 @@ let body = function _getOrRefreshPushSyncToken() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c4;
@@ -188,7 +188,7 @@ body = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -273,7 +273,7 @@ body = {
               }
             }
             c3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp22) {
           c3 = 3;

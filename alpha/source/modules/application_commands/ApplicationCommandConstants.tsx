@@ -1,10 +1,10 @@
-// Module ID: 6193
-// Function ID: 6194
+// Module ID: 6167
+// Function ID: 6168
 // Name: ApplicationCommandConstants
 // Dependencies: [1113, 2116, 2]
 // Exports: getValidationErrorText
 
-// Module 6193 (ApplicationCommandConstants)
+// Module 6167 (ApplicationCommandConstants)
 import intl10 from "intl" /* 1113 */;
 import Server from "Server" /* 2116 */;
 import size from "module_2" /* 2 */;

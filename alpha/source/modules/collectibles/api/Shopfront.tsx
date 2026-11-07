@@ -1,10 +1,10 @@
-// Module ID: 17248
-// Function ID: 17249
+// Module ID: 17296
+// Function ID: 17297
 // Name: Shopfront
-// Dependencies: [5, 1072, 1282, 1336, 7614, 2]
+// Dependencies: [5, 1072, 1282, 1336, 7591, 2]
 // Exports: search
 
-// Module 17248 (Shopfront)
+// Module 17296 (Shopfront)
 import Constants from "Constants" /* 1072 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
@@ -27,7 +27,7 @@ let obj = function _search() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {

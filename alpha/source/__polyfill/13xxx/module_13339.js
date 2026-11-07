@@ -1,48 +1,35 @@
 // Module ID: 13339
 // Function ID: 13340
-// Dependencies: []
-// Exports: parseCookie
+// Dependencies: [13325, 13284, 13322]
+// Exports: createCheckInEnvelope
 
 // Module 13339
+import _mod13284 from "module_13284" /* 13284 */;
+import _mod13322 from "module_13322" /* 13322 */;
+import _mod13325 from "module_13325" /* 13325 */;
 
-export function parseCookie(arr) {
-  const obj = {};
-  let num = 0;
-  if (0 < arr.length) {
-    const index = arr.indexOf("=", num);
-    if (-1 !== index) {
-      let length = arr.indexOf(";", num);
-      if (-1 === length) {
-        length = arr.length;
-      } else {
-        let sum;
-        if (length < index) {
-          sum = arr.lastIndexOf(";", index - 1) + 1;
-        }
-        num = sum;
-      }
-      const str = arr.slice(num, index);
-      const trimmed = str.trim();
-      if (undefined === obj[trimmed]) {
-        const str2 = arr.slice(index + 1, length);
-        const trimmed1 = str2.trim();
-        let substr = trimmed1;
-        if (34 === trimmed1.charCodeAt(0)) {
-          substr = trimmed1.slice(1, -1);
-        }
-        try {
-          let decodeURIComponentResult = substr;
-          if (-1 !== substr.indexOf("%")) {
-            const _decodeURIComponent = decodeURIComponent;
-            decodeURIComponentResult = decodeURIComponent(substr);
-          }
-          obj[trimmed] = decodeURIComponentResult;
-        } catch (err) {
-          obj[trimmed] = substr;
-        }
-      }
-      sum = length + 1;
-    }
+
+export function createCheckInEnvelope(arg0, arg1, sdk, arg3, arg4) {
+  let date;
+  const obj = { sent_at: date.toISOString() };
+  date = new Date();
+  const tmp = sdk && sdk.sdk;
+  if (tmp) {
+    const obj2 = { name: sdk.sdk.name, version: sdk.sdk.version };
+    obj.sdk = obj2;
   }
-  return obj;
+  const tmp2 = arg3 && arg4;
+  if (tmp2) {
+    const obj4 = _mod13325;
+    obj.dsn = obj4.dsnToString(arg4);
+  }
+  const tmp5 = arg1;
+  if (tmp5) {
+    const obj5 = _mod13284;
+    obj.trace = obj5.dropUndefinedKeys(arg1);
+  }
+  const items = [{ type: "check_in" }, arg0];
+  const items1 = [items];
+  const obj6 = _mod13322;
+  return obj6.createEnvelope(obj, items1);
 }

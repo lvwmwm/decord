@@ -1,8 +1,8 @@
-// Module ID: 6553
-// Function ID: 6554
+// Module ID: 6528
+// Function ID: 6529
 // Dependencies: [2]
 
-// Module 6553
+// Module 6528
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/layer/wearable/magical_staff.png.js");

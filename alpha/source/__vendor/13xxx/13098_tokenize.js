@@ -1,62 +1,36 @@
 // Module ID: 13098
 // Function ID: 13099
 // Name: tokenize
-// Dependencies: [13027]
+// Dependencies: [13050]
 
 // Module 13098 (tokenize)
-import tokenize from "tokenize" /* 13027 */;
+import tokenize from "tokenize" /* 13050 */;
 
-let rect;
-function consumeNumber() {
-  let num;
-  const self = this;
-  const scanner = this.scanner;
-  scanner.skipWS();
-  const consumeResult = this.consume(Number);
-  for (let num = 0; num < consumeResult.length; num = num + 1) {
-    let charCodeAtResult = consumeResult.charCodeAt(num);
-    let obj = tokenize;
-    let isDigitResult = obj.isDigit(charCodeAtResult);
-    if (!isDigitResult) {
-      isDigitResult = 46 === charCodeAtResult;
-    }
-    if (!isDigitResult) {
-      let errorResult = self.error("Unsigned number is expected", self.scanner.tokenStart - consumeResult.length + num);
-    }
-  }
-  if (0 === Number(consumeResult)) {
-    self.error("Zero number is not allowed", self.scanner.tokenStart - consumeResult.length);
-  }
-  return consumeResult;
-}
-const Number = tokenize.TYPE.Number;
-const Delim = tokenize.TYPE.Delim;
-let obj = {
-  name: "Ratio",
-  structure: rect,
-  parse() {
-    let callResult1;
+let items;
+let obj2;
+const LeftSquareBracket = tokenize.TYPE.LeftSquareBracket;
+const RightSquareBracket = tokenize.TYPE.RightSquareBracket;
+const obj = {
+  name: "Brackets",
+  structure: obj2,
+  parse(call, arg1) {
     const self = this;
     const tokenStart = this.scanner.tokenStart;
-    const scanner = self.scanner;
-    const callResult = consumeNumber.call(self);
-    scanner.skipWS();
-    const scanner2 = self.scanner;
-    const obj = consumeNumber;
-    if (!scanner2.isDelim(47)) {
-      self.error("Solidus is expected");
+    this.eat(LeftSquareBracket);
+    const callResult = call.call(self, arg1);
+    if (!self.scanner.eof) {
+      self.eat(RightSquareBracket);
     }
-    self.eat(Delim);
-    const rect = { type: "Ratio", loc: self.getLocation(tokenStart, self.scanner.tokenStart), left: callResult, right: callResult1 };
-    callResult1 = obj.call(self);
-    return rect;
+    const element = { type: "Brackets", loc: self.getLocation(tokenStart, self.scanner.tokenStart), children: callResult };
+    return element;
   },
-  generate(left) {
-    this.chunk(left.left);
-    this.chunk("/");
-    this.chunk(left.right);
+  generate(arg0) {
+    this.chunk("[");
+    this.children(arg0);
+    this.chunk("]");
   }
 };
-rect = { left: String, right: String };
+obj2 = { children: items };
+items = [[]];
 
 export default obj;

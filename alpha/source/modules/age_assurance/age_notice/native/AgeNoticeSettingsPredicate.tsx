@@ -1,12 +1,12 @@
-// Module ID: 16842
-// Function ID: 16843
+// Module ID: 16890
+// Function ID: 16891
 // Name: AgeNoticeSettingsPredicate
-// Dependencies: [6817, 6818, 2]
+// Dependencies: [6792, 6793, 2]
 // Exports: useIsAgeNoticeSettingsEnabled
 
-// Module 16842 (AgeNoticeSettingsPredicate)
-import AgeNoticeConstants from "AgeNoticeConstants" /* 6817 */;
-import AgeNoticeExperiment from "AgeNoticeExperiment" /* 6818 */;
+// Module 16890 (AgeNoticeSettingsPredicate)
+import AgeNoticeConstants from "AgeNoticeConstants" /* 6792 */;
+import AgeNoticeExperiment from "AgeNoticeExperiment" /* 6793 */;
 import size from "module_2" /* 2 */;
 
 let closure_2 = AgeNoticeConstants.AGE_NOTICE_SETTINGS_LOCATION;

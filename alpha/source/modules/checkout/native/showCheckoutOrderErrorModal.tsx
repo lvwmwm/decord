@@ -1,13 +1,13 @@
-// Module ID: 7714
-// Function ID: 7715
+// Module ID: 7691
+// Function ID: 7692
 // Name: showCheckoutOrderErrorModal
-// Dependencies: [5, 32, 19, 21, 6122, 1113, 6118, 2]
+// Dependencies: [5, 32, 19, 21, 6096, 1113, 6092, 2]
 // Exports: showCheckoutOrderErrorModal, showRetryConfirmModal
 
-// Module 7714 (showCheckoutOrderErrorModal)
+// Module 7691 (showCheckoutOrderErrorModal)
 import intl4 from "intl" /* 1113 */;
-import useAlertStore from "useAlertStore" /* 6118 */;
-import AlertModal2 from "AlertModal" /* 6122 */;
+import useAlertStore from "useAlertStore" /* 6092 */;
+import AlertModal2 from "AlertModal" /* 6096 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -52,7 +52,7 @@ function SyncedLoadingAlertModal(onConfirm) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c3;
@@ -92,7 +92,7 @@ function SyncedLoadingAlertModal(onConfirm) {
             c3 = 0;
             closure_128_1(false);
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp19) {
           closure_2 = tmp19;
@@ -171,7 +171,7 @@ export function showCheckoutOrderErrorModal(arg0, c6) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -204,7 +204,7 @@ export function showCheckoutOrderErrorModal(arg0, c6) {
             tmp = value;
             closure_129_0(tmp);
             c3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp11) {
           c3 = 3;

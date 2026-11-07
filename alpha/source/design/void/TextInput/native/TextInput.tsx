@@ -1,18 +1,18 @@
-// Module ID: 9162
-// Function ID: 9163
+// Module ID: 9144
+// Function ID: 9145
 // Name: void/TextInput/TextInput
-// Dependencies: [19, 17, 1072, 21, 5170, 575, 5177, 1377, 5167, 2]
+// Dependencies: [19, 17, 1072, 21, 5140, 575, 5147, 1377, 5137, 2]
 
-// Module 9162 (void/TextInput/TextInput)
+// Module 9144 (void/TextInput/TextInput)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
-import ColorUtils from "ColorUtils" /* 5167 */;
-import shared from "shared" /* 5177 */;
+import ColorUtils from "ColorUtils" /* 5137 */;
+import shared from "shared" /* 5147 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let Fonts;

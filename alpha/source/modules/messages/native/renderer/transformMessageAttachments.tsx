@@ -1,24 +1,25 @@
-// Module ID: 15316
-// Function ID: 15317
+// Module ID: 15350
+// Function ID: 15351
 // Name: transformMessageAttachments
-// Dependencies: [8470, 1072, 1403, 10249, 6209, 8782, 1377, 8781, 1113, 13617, 8803, 8932, 8308, 8801, 2]
+// Dependencies: [8449, 1072, 1403, 10232, 6183, 8761, 6185, 1377, 8760, 1113, 13641, 8782, 8914, 8287, 8780, 2]
 // Exports: default
 
-// Module 15316 (transformMessageAttachments)
+// Module 15350 (transformMessageAttachments)
 import Constants from "Constants" /* 1072 */;
 import intl8 from "intl" /* 1113 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import FlagUtils from "FlagUtils" /* 1403 */;
-import MediaFormatTesters from "MediaFormatTesters" /* 6209 */;
-import _modDef8308 from "module_8308" /* 8308 */;
-import RowGeneratorConstants from "RowGeneratorConstants" /* 8470 */;
-import sanitizeMediaDimension3 from "sanitizeMediaDimension" /* 8781 */;
-import RowGeneratorUtilsDefault from "RowGeneratorUtils" /* 8782 */;
-import ExplicitMediaUtils from "ExplicitMediaUtils" /* 8801 */;
-import SuspiciousDownloadUtils from "SuspiciousDownloadUtils" /* 8803 */;
-import getDisplayFilenameDefault from "getDisplayFilename" /* 8932 */;
-import MediaPlaybackFacts from "MediaPlaybackFacts" /* 10249 */;
-import PlaintextFilePreviewHelpers from "PlaintextFilePreviewHelpers" /* 13617 */;
+import MediaFormatTesters from "MediaFormatTesters" /* 6183 */;
+import MediaFormatParamUtils from "MediaFormatParamUtils" /* 6185 */;
+import _modDef8287 from "module_8287" /* 8287 */;
+import RowGeneratorConstants from "RowGeneratorConstants" /* 8449 */;
+import sanitizeMediaDimension3 from "sanitizeMediaDimension" /* 8760 */;
+import RowGeneratorUtilsDefault from "RowGeneratorUtils" /* 8761 */;
+import ExplicitMediaUtils from "ExplicitMediaUtils" /* 8780 */;
+import SuspiciousDownloadUtils from "SuspiciousDownloadUtils" /* 8782 */;
+import getDisplayFilenameDefault from "getDisplayFilename" /* 8914 */;
+import MediaPlaybackFacts from "MediaPlaybackFacts" /* 10232 */;
+import PlaintextFilePreviewHelpers from "PlaintextFilePreviewHelpers" /* 13641 */;
 import size from "module_2" /* 2 */;
 
 const AttachmentType = RowGeneratorConstants.AttachmentType;
@@ -57,7 +58,7 @@ export default function transformMessageAttachments(arg0) {
     let imageSrc;
     let intl;
     let intl5;
-    let obj12;
+    let obj13;
     let placeholder;
     let placeholder_version;
     let proxy_url;
@@ -106,12 +107,12 @@ export default function transformMessageAttachments(arg0) {
     if (isImageFileResult) {
       if (null != width) {
         if (null != height) {
-          const obj6 = RowGeneratorUtilsDefault;
-          imageSrc = obj6.getImageSrc(proxy_url, width, height, !dependencyMap);
+          const obj7 = RowGeneratorUtilsDefault;
+          imageSrc = obj7.getImageSrc(proxy_url, width, height, !dependencyMap);
         }
         let str4 = "default";
-        const tmpResult10 = PlatformUtils;
-        if (tmpResult10.isAndroid()) {
+        const tmpResult11 = PlatformUtils;
+        if (tmpResult11.isAndroid()) {
           str4 = "default";
           if (isVideoFileResult) {
             str4 = "cronet";
@@ -164,10 +165,10 @@ export default function transformMessageAttachments(arg0) {
         }
         let tmp33;
         if (hasFlag2(flags, tmp11.IS_CLIP)) {
-          const obj7 = { attachmentTagText: intl.string(intl8.t.gESDiU), attachmentTagIconType: "clip", attachmentTagBackgroundColor: null, attachmentTagTextColor: null };
+          const obj6 = { attachmentTagText: intl.string(intl8.t.gESDiU), attachmentTagIconType: "clip", attachmentTagBackgroundColor: null, attachmentTagTextColor: null };
           intl = tmp(1113).intl;
-          ({ clipTagBackgroundColor: obj8.attachmentTagBackgroundColor, clipTagTextColor: obj8.attachmentTagTextColor } = closure_9);
-          tmp33 = obj7;
+          ({ clipTagBackgroundColor: obj9.attachmentTagBackgroundColor, clipTagTextColor: obj9.attachmentTagTextColor } = closure_9);
+          tmp33 = obj6;
         }
         let localUri = imageSrc;
         if (null != size2) {
@@ -184,14 +185,14 @@ export default function transformMessageAttachments(arg0) {
         }
         let result3 = !isImageFileResult && !isVideoFileResult && !isAudioFileResult && null == size2 && null != localUri && "" !== localUri;
         if (result3) {
-          const tmpResult14 = PlaintextFilePreviewHelpers;
-          result3 = tmpResult14.isPlaintextPreviewableFile(filename);
+          const tmpResult15 = PlaintextFilePreviewHelpers;
+          result3 = tmpResult15.isPlaintextPreviewableFile(filename);
         }
-        const size1 = { url: localUri, isSuspiciousDownload: tmp36, textPreviewLabel: stringResult, textPreviewHint: stringResult1, videoUrl: tmp18, filename: getDisplayFilenameDefault(attachment), size: obj12.filesize(size), description, alt: str6.toUpperCase(), altTextHint: intl5.string(intl8.t.fSiQ3A), showDescription: AttachmentType, durationSecs: duration_secs, waveform, width: result1, height: result2, hint: stringResult2, role: string2Result, attachmentType: AUDIO, id, isAnimated: !MessageAttachmentFlags, uploaderId, uploaderItemId, backgroundColor, placeholder, placeholderVersion: placeholder_version, mediaViewerBufferForPlaybackMs: 1000, mediaViewerBufferForPlaybackAfterRebufferMs: 1000, mediaViewerMinBufferMs: 20000, mediaViewerMaxBufferMs: 20000, mediaViewerEnableDecoderFallback: false, mediaViewerEnableAsyncBufferQueueing: true, mediaViewerHttpEngine: str4, srcIsAnimated: hasFlagResult, inlinePlaybackDisabled: isWebPlayerVideoFileResult };
+        const size1 = { url: localUri, isSuspiciousDownload: tmp36, textPreviewLabel: stringResult, textPreviewHint: stringResult1, videoUrl: tmp18, filename: getDisplayFilenameDefault(attachment), size: obj13.filesize(size), description, alt: str6.toUpperCase(), altTextHint: intl5.string(intl8.t.fSiQ3A), showDescription: AttachmentType, durationSecs: duration_secs, waveform, width: result1, height: result2, hint: stringResult2, role: string2Result, attachmentType: AUDIO, id, isAnimated: !MessageAttachmentFlags, uploaderId, uploaderItemId, backgroundColor, placeholder, placeholderVersion: placeholder_version, mediaViewerBufferForPlaybackMs: 1000, mediaViewerBufferForPlaybackAfterRebufferMs: 1000, mediaViewerMinBufferMs: 20000, mediaViewerMaxBufferMs: 20000, mediaViewerEnableDecoderFallback: false, mediaViewerEnableAsyncBufferQueueing: true, mediaViewerHttpEngine: str4, srcIsAnimated: hasFlagResult, inlinePlaybackDisabled: isWebPlayerVideoFileResult };
         tmp36 = null != localUri;
         if (tmp36) {
-          const tmpResult15 = SuspiciousDownloadUtils;
-          tmp36 = null != tmpResult15.isSuspiciousDownload(localUri);
+          const tmpResult16 = SuspiciousDownloadUtils;
+          tmp36 = null != tmpResult16.isSuspiciousDownload(localUri);
         }
         stringResult = undefined;
         if (result3) {
@@ -203,7 +204,7 @@ export default function transformMessageAttachments(arg0) {
           const intl3 = tmp(1113).intl;
           stringResult1 = intl3.string(tmp(1113).t["0PQYk3"]);
         }
-        obj12 = _modDef8308;
+        obj13 = _modDef8287;
         const intl4 = tmp(1113).intl;
         str6 = intl4.string(intl8.t.jCV1Tz);
         intl5 = tmp(1113).intl;
@@ -242,9 +243,9 @@ export default function transformMessageAttachments(arg0) {
         if (size2 != null) {
           uploaderItemId = size2.uploaderItemId;
         }
-        const obj9 = { attachment, shouldObscureSpoiler, enabledContentHarmTypeFlags, shouldAgeVerify };
-        const tmpResult16 = ExplicitMediaUtils;
-        const merged = Object.assign(tmpResult16.getAttachmentObscurityProps(obj9));
+        const obj8 = { attachment, shouldObscureSpoiler, enabledContentHarmTypeFlags, shouldAgeVerify };
+        const tmpResult17 = ExplicitMediaUtils;
+        const merged = Object.assign(tmpResult17.getAttachmentObscurityProps(obj8));
         const merged1 = Object.assign(tmp33);
         return size1;
       }
@@ -255,9 +256,10 @@ export default function transformMessageAttachments(arg0) {
     }
     imageSrc = url;
     if (tmp15) {
-      let text = url;
+      let withMediaFormatResult = url;
       if (null != proxy_url) {
-        text = `${proxy_url}?format=webp`;
+        const tmpResult18 = MediaFormatParamUtils;
+        withMediaFormatResult = tmpResult18.withMediaFormat(proxy_url, "webp");
       }
       let tmp20 = url;
       if (null != proxy_url) {
@@ -266,7 +268,7 @@ export default function transformMessageAttachments(arg0) {
           tmp20 = proxy_url;
         }
       }
-      imageSrc = text;
+      imageSrc = withMediaFormatResult;
       tmp18 = tmp20;
     }
   });

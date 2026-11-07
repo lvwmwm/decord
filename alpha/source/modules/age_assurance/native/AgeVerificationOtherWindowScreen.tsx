@@ -1,21 +1,21 @@
-// Module ID: 8111
-// Function ID: 8112
+// Module ID: 8090
+// Function ID: 8091
 // Name: AgeVerificationOtherWindowScreen
-// Dependencies: [19, 21, 5170, 1113, 3252, 8063, 8064, 6185, 7223, 575, 5781, 2]
+// Dependencies: [19, 21, 5140, 1113, 3252, 8041, 8043, 6159, 7198, 575, 5751, 2]
 // Exports: default
 
-// Module 8111 (AgeVerificationOtherWindowScreen)
+// Module 8090 (AgeVerificationOtherWindowScreen)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import _modDef3252 from "module_3252" /* 3252 */;
-import Text_Text from "Text/Text" /* 5781 */;
-import Stack_Stack from "Stack/Stack" /* 6185 */;
-import MobilePhoneIcon2 from "MobilePhoneIcon" /* 7223 */;
-import ModalScreen2 from "ModalScreen" /* 8063 */;
-import ModalContent2 from "ModalContent" /* 8064 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import Stack_Stack from "Stack/Stack" /* 6159 */;
+import MobilePhoneIcon2 from "MobilePhoneIcon" /* 7198 */;
+import ModalScreen2 from "ModalScreen" /* 8041 */;
+import ModalContent2 from "ModalContent" /* 8043 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let c3;

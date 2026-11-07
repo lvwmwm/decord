@@ -1,12 +1,12 @@
-// Module ID: 15404
-// Function ID: 15405
+// Module ID: 15439
+// Function ID: 15440
 // Name: InAppReportsUpsellsTableRow
-// Dependencies: [19, 21, 7063, 2]
+// Dependencies: [19, 21, 7038, 2]
 // Exports: default
 
-// Module 15404 (InAppReportsUpsellsTableRow)
+// Module 15439 (InAppReportsUpsellsTableRow)
 import Fragment from "Fragment" /* 21 */;
-import TableRow2 from "TableRow" /* 7063 */;
+import TableRow2 from "TableRow" /* 7038 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

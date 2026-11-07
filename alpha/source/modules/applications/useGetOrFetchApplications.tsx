@@ -1,15 +1,15 @@
-// Module ID: 7414
-// Function ID: 7415
+// Module ID: 7391
+// Function ID: 7392
 // Name: useGetOrFetchApplications
-// Dependencies: [19, 2162, 1072, 558, 6961, 12, 1380, 504, 2]
+// Dependencies: [19, 2162, 1072, 558, 6936, 12, 1380, 504, 2]
 // Exports: default, useGetOrFetchApplication
 
-// Module 7414 (useGetOrFetchApplications)
+// Module 7391 (useGetOrFetchApplications)
 import _modDef12 from "module_12" /* 12 */;
 import shallowEqual from "shallowEqual" /* 558 */;
 import Constants from "Constants" /* 1072 */;
 import GlobalUtils from "GlobalUtils" /* 1380 */;
-import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6961 */;
+import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6936 */;
 import react from "react" /* 19 */;
 import ApplicationStore from "ApplicationStore" /* 2162 */;
 import size from "module_2" /* 2 */;

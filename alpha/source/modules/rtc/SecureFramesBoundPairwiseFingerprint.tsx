@@ -1,14 +1,14 @@
-// Module ID: 9370
-// Function ID: 9371
+// Module ID: 9352
+// Function ID: 9353
 // Name: SecureFramesBoundPairwiseFingerprint
-// Dependencies: [5, 502, 5920, 9364, 206, 9348, 2]
+// Dependencies: [5, 502, 5893, 9346, 206, 9330, 2]
 // Exports: computeBoundPairwiseFingerprint
 
-// Module 9370 (SecureFramesBoundPairwiseFingerprint)
-import SecureFramesConstants from "SecureFramesConstants" /* 9364 */;
+// Module 9352 (SecureFramesBoundPairwiseFingerprint)
+import SecureFramesConstants from "SecureFramesConstants" /* 9346 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5920 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5893 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3;
@@ -73,7 +73,7 @@ let value = function _computeBoundPairwiseFingerprint() {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {

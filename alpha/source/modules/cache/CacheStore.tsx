@@ -1,25 +1,25 @@
-// Module ID: 7754
-// Function ID: 7755
+// Module ID: 7731
+// Function ID: 7732
 // Name: CacheStore
-// Dependencies: [32, 5, 6648, 502, 5073, 5201, 1072, 3, 510, 5070, 7755, 7766, 9, 10, 5069, 7767, 7768, 7769, 7770, 7771, 7885, 7906, 504, 572, 5068, 7891, 7897, 7895, 7889, 5045, 7907, 1377, 7909, 7911, 5065, 2]
+// Dependencies: [32, 5, 6623, 502, 5043, 5171, 1072, 3, 510, 5040, 7732, 7743, 9, 10, 5039, 7744, 7745, 7746, 7747, 7748, 7862, 7883, 504, 572, 5038, 7868, 7874, 7872, 7866, 5015, 7884, 1377, 7886, 7888, 5035, 2]
 
-// Module 7754 (CacheStore)
+// Module 7731 (CacheStore)
 import LoggerDefault from "Logger" /* 3 */;
 import AppStartPerformanceDefault from "AppStartPerformance" /* 10 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import Storage4 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import TryLoad from "TryLoad" /* 5068 */;
-import modules_MessagesDefault from "modules/Messages" /* 7755 */;
-import timeRequireDefault from "timeRequire" /* 7770 */;
-import NonGuildVersionsDefault from "NonGuildVersions" /* 7897 */;
-import AuthenticationUtils from "AuthenticationUtils" /* 7909 */;
+import TryLoad from "TryLoad" /* 5038 */;
+import modules_MessagesDefault from "modules/Messages" /* 7732 */;
+import timeRequireDefault from "timeRequire" /* 7747 */;
+import NonGuildVersionsDefault from "NonGuildVersions" /* 7874 */;
+import AuthenticationUtils from "AuthenticationUtils" /* 7886 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6648 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6623 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5073 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5201 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5043 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5171 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -62,7 +62,7 @@ let obj = function _loadChannelHistory() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -360,7 +360,7 @@ obj = function _loadInitialGuilds() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -508,7 +508,7 @@ obj = function _loadInitialGuildChannels() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -615,7 +615,7 @@ obj = function _loadLateLazyCache() {
         let obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -898,7 +898,7 @@ obj = function _loadLateLazyCache() {
             }
           });
           c7 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp20) {
         c7 = 3;
@@ -919,7 +919,7 @@ function resumeFluxAndSocket(arg0) {
     let dispatcher;
     let obj3;
     try {
-      f141391();
+      f142023();
       dispatcher = dispatcher.dispatcher;
       if (dispatcher.hasStuffToDispatchNow()) {
         let c2 = true;
@@ -1012,7 +1012,7 @@ class CacheStoreClass extends Store {
       }
       function dontLoadLateLazyCache() {
         let _true;
-        const f141391 = () => {
+        const f142023 = () => {
           obj = closure_1(c2[23]);
           return obj.dispatch({ type: "CACHE_LOADED_LAZY_NO_CACHE" });
         };
@@ -1023,7 +1023,7 @@ class CacheStoreClass extends Store {
           let dispatcher;
           let obj3;
           try {
-            f141391();
+            f142023();
             dispatcher = dispatcher.dispatcher;
             if (dispatcher.hasStuffToDispatchNow()) {
               let c2 = true;
@@ -1079,7 +1079,7 @@ class CacheStoreClass extends Store {
             let obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           let c3;
@@ -1229,7 +1229,7 @@ class CacheStoreClass extends Store {
                 c3 = 0;
               }
               c5 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } catch (tmp34) {
             closure_2 = tmp34;

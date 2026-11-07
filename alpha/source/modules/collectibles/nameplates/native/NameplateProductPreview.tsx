@@ -1,22 +1,22 @@
-// Module ID: 15264
-// Function ID: 15265
+// Module ID: 15298
+// Function ID: 15299
 // Name: NameplateProductPreview
-// Dependencies: [19, 17, 5171, 21, 5170, 575, 8834, 2108, 1113, 5781, 5745, 8841, 8922, 8829, 504, 5224, 6597, 10908, 10909, 1187, 10933, 7063, 2]
+// Dependencies: [19, 17, 5141, 21, 5140, 575, 8813, 2108, 1113, 5751, 5715, 8820, 8904, 8808, 504, 5194, 6572, 10891, 10892, 1187, 10916, 7038, 2]
 // Exports: default
 
-// Module 15264 (NameplateProductPreview)
+// Module 15298 (NameplateProductPreview)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
 import utils from "utils" /* 2108 */;
-import LinearGradientDefault from "LinearGradient" /* 5745 */;
-import TableRow2 from "TableRow" /* 7063 */;
-import useShopProductItems from "useShopProductItems" /* 8834 */;
+import LinearGradientDefault from "LinearGradient" /* 5715 */;
+import TableRow2 from "TableRow" /* 7038 */;
+import useShopProductItems from "useShopProductItems" /* 8813 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5171 */;
+import AccessibilityStore from "AccessibilityStore" /* 5141 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -126,7 +126,7 @@ export default function NameplateProductPreview(arg0) {
     const obj7 = { user: nameplateSampleUsers.mallow, end: true };
     items = [metroRequire(PlaceholderUser, obj7), , , , , , ];
     const obj8 = { maxFontSizeMultiplier: 2, variant: "body-sm/semibold", accessibilityRole: "header", color: "interactive-text-default", style: tmp.memberListTitle, children: items1 };
-    const Text = tmp2(5781).Text;
+    const Text = tmp2(5751).Text;
     const intl2 = tmp2(1113).intl;
     items1 = [intl2.string(intl4.t["yzW/fZ"]), " \u2014 3"];
     items[1] = metroImportDefault(Text, obj8);
@@ -137,7 +137,7 @@ export default function NameplateProductPreview(arg0) {
     const obj11 = { user: nameplateSampleUsers.locke, end: true };
     items[4] = metroRequire(PlaceholderUser, obj11);
     const obj12 = { maxFontSizeMultiplier: 2, variant: "body-sm/semibold", accessibilityRole: "header", color: "interactive-text-default", style: tmp.memberListTitle, children: items2 };
-    const Text2 = tmp2(5781).Text;
+    const Text2 = tmp2(5751).Text;
     const intl3 = tmp2(1113).intl;
     items2 = [intl3.string(intl4.t["NG43/6"]), " \u2014 12"];
     items[5] = metroImportDefault(Text2, obj12);

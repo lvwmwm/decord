@@ -1,33 +1,33 @@
-// Module ID: 11898
-// Function ID: 11899
+// Module ID: 11889
+// Function ID: 11890
 // Name: EmbeddedActivitiesActionCreators
-// Dependencies: [32, 5, 9868, 2162, 6923, 8001, 502, 5019, 5041, 5102, 1385, 5833, 5018, 2142, 1072, 1362, 5016, 11899, 10451, 11076, 11900, 11901, 11905, 11906, 572, 11023, 11024, 11907, 11028, 6605, 6227, 2148, 5829, 9058, 11908, 2116, 11909, 11911, 10446, 1252, 11912, 11920, 6814, 11921, 6116, 1113, 5832, 11922, 1260, 6827, 5091, 6931, 5915, 1282, 9043, 7979, 7735, 7572, 7923, 5004, 5003, 2]
+// Dependencies: [32, 5, 9852, 2162, 6898, 7979, 502, 4989, 5011, 5072, 1385, 5803, 4988, 2142, 1072, 1362, 4986, 11890, 10434, 11061, 11891, 11892, 11896, 11897, 572, 11007, 11008, 11898, 11012, 6580, 6202, 2148, 5799, 9040, 11899, 2116, 11900, 11902, 10429, 1252, 11903, 11911, 6789, 11912, 6090, 1113, 5802, 11913, 1260, 6802, 5061, 6906, 5888, 1282, 9025, 7957, 7712, 7549, 7900, 4974, 4973, 2]
 // Exports: consumeRequestToReactToSeriousThermalState, dismissNewActivityIndicator, disregardSeriousThermalState, maybeDisconnectFromCurrentActivity, refreshProxyTicket, requestRespondToSeriousThermalState, runPrimaryAppCommandOrJoinEmbeddedActivity, sendEmbeddedActivityInvite, sendEmbeddedActivityInviteUser, updateActivityPanelMode, updateActivityPopoutWindowLayout, updateFocusedActivityLayout, uploadImageAttachment, validateTestMode
 
-// Module 11898 (EmbeddedActivitiesActionCreators)
+// Module 11889 (EmbeddedActivitiesActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
 import ApplicationConstants from "ApplicationConstants" /* 1362 */;
 import Constants2 from "Constants" /* 2142 */;
-import dismissible_content from "dismissible_content" /* 5003 */;
-import DismissibleContentUtils from "DismissibleContentUtils" /* 5004 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 5016 */;
-import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 5091 */;
-import ChannelRTCParticipants from "ChannelRTCParticipants" /* 6931 */;
-import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9868 */;
-import createProxyTicket2 from "createProxyTicket" /* 11023 */;
+import dismissible_content from "dismissible_content" /* 4973 */;
+import DismissibleContentUtils from "DismissibleContentUtils" /* 4974 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4986 */;
+import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 5061 */;
+import ChannelRTCParticipants from "ChannelRTCParticipants" /* 6906 */;
+import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9852 */;
+import createProxyTicket2 from "createProxyTicket" /* 11007 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ApplicationStore from "ApplicationStore" /* 2162 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6923 */;
-import PopoutWindowStore from "PopoutWindowStore" /* 8001 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6898 */;
+import PopoutWindowStore from "PopoutWindowStore" /* 7979 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 5019 */;
-import GuildStore from "GuildStore" /* 5041 */;
-import PermissionStore from "PermissionStore" /* 5102 */;
+import ChannelStore from "ChannelStore" /* 4989 */;
+import GuildStore from "GuildStore" /* 5011 */;
+import PermissionStore from "PermissionStore" /* 5072 */;
 import UserStore from "UserStore" /* 1385 */;
-import VoiceStateStore from "VoiceStateStore" /* 5833 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5018 */;
+import VoiceStateStore from "VoiceStateStore" /* 5803 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4988 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -39,7 +39,7 @@ let closure_19;
 let closure_20;
 let closure_21;
 let tmp2;
-const ChannelRTCActionCreatorsDefault = tmp2(5915);
+const ChannelRTCActionCreatorsDefault = tmp2(5888);
 let obj = function _runPrimaryAppCommandOrJoinEmbeddedActivity() {
   obj = _asyncToGenerator(async (channelId) => {
     let closure_8;
@@ -101,7 +101,7 @@ let obj = function _runPrimaryAppCommandOrJoinEmbeddedActivity() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c15;
@@ -474,7 +474,7 @@ obj = function _maybeSendPrimaryAppCommand() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -785,7 +785,7 @@ obj = function _joinEmbeddedActivity() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -1080,7 +1080,7 @@ function stopEmbeddedActivity(showFeedback) {
         if ("" !== id) {
           const obj4 = { applicationId, instanceId: compositeInstanceId };
           compositeInstanceId = undefined;
-          const getEmbeddedActivityParticipantId = tmp7(6931).getEmbeddedActivityParticipantId;
+          const getEmbeddedActivityParticipantId = tmp7(6906).getEmbeddedActivityParticipantId;
           ChannelRTCParticipants;
           if (found != null) {
             compositeInstanceId = found.compositeInstanceId;
@@ -1110,7 +1110,7 @@ obj = function _uploadImageAttachment() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c6;
@@ -1234,7 +1234,7 @@ obj = function _sendEmbeddedActivityInviteUser() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -1326,7 +1326,7 @@ obj = function _sendEmbeddedActivityInviteUser() {
             const obj2 = closure_130_1(closure_130_2[56]);
             obj2.sendInvite(closure_7, code.code, c3, c4, content);
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         }
       } catch (tmp30) {
@@ -1350,7 +1350,7 @@ obj = function _validateTestMode() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c4;
@@ -1420,7 +1420,7 @@ obj = function _refreshProxyTicket() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {

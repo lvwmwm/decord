@@ -1,21 +1,21 @@
-// Module ID: 13883
-// Function ID: 13884
+// Module ID: 13907
+// Function ID: 13908
 // Name: CheckpointGameCard
-// Dependencies: [19, 17, 2138, 6224, 21, 5170, 575, 504, 1411, 5872, 8234, 5781, 13853, 2]
+// Dependencies: [19, 17, 2138, 6199, 21, 5140, 575, 504, 1411, 5842, 8213, 5751, 13877, 2]
 // Exports: CheckpointGameCard, CheckpointGameCardDescription
 
-// Module 13883 (CheckpointGameCard)
+// Module 13907 (CheckpointGameCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
-import Text_Text from "Text/Text" /* 5781 */;
-import FastImageDefault from "FastImage" /* 5872 */;
-import CheckpointTextDefault from "CheckpointText" /* 13853 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import FastImageDefault from "FastImage" /* 5842 */;
+import CheckpointTextDefault from "CheckpointText" /* 13877 */;
 import react from "react" /* 19 */;
 import GameStore from "GameStore" /* 2138 */;
-import CheckpointConstants from "CheckpointConstants" /* 6224 */;
+import CheckpointConstants from "CheckpointConstants" /* 6199 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let CHECKPOINT_DARK_CYAN;
@@ -76,7 +76,7 @@ export function CheckpointGameCard(game) {
     obj6 = AvatarUtilsDefault;
     tmp10 = closure_5(tmp13, obj4);
   } else {
-    const obj5 = { style: items2, children: closure_5(tmp2(8234).UnknownGameIcon, { size: "lg" }) };
+    const obj5 = { style: items2, children: closure_5(tmp2(8213).UnknownGameIcon, { size: "lg" }) };
     items2 = [, ];
     ({ coverImage: arr3[0], unknownCover: arr3[1] } = tmp);
     tmp10 = closure_5(tmp8, obj5);

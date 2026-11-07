@@ -1,14 +1,14 @@
-// Module ID: 11911
-// Function ID: 11912
+// Module ID: 11902
+// Function ID: 11903
 // Name: confirmActivityLaunchChecks
-// Dependencies: [5, 5019, 5018, 1072, 11912, 11906, 572, 6604, 5091, 11915, 11080, 11916, 6963, 11918, 2]
+// Dependencies: [5, 4989, 4988, 1072, 11903, 11897, 572, 6579, 5061, 11906, 11065, 11907, 6938, 11909, 2]
 // Exports: confirmActivityLaunchChecks
 
-// Module 11911 (confirmActivityLaunchChecks)
+// Module 11902 (confirmActivityLaunchChecks)
 import Constants from "Constants" /* 1072 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 5019 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5018 */;
+import ChannelStore from "ChannelStore" /* 4989 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4988 */;
 import size from "module_2" /* 2 */;
 
 let c5, channelId, closure_5, selfEmbeddedActivities;
@@ -35,7 +35,7 @@ let obj = function _getOrFetchApplicationForLaunch() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -96,7 +96,7 @@ let obj = function _getOrFetchApplicationForLaunch() {
             aPIError = new closure_132_0(closure_132_2[7]).APIError(closure_4);
             dispatch(obj6);
             c8 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           } else if (arg0 === 1) {
             c8 = 3;
             throw value;
@@ -143,7 +143,7 @@ obj = function _confirmActivityChange() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -252,7 +252,7 @@ obj = function _confirmActivityAgeGate() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -413,7 +413,7 @@ obj = function _confirmExternalAppLaunch() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {

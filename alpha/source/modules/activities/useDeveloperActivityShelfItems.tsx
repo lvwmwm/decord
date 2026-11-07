@@ -1,13 +1,13 @@
-// Module ID: 12560
-// Function ID: 12561
+// Module ID: 12573
+// Function ID: 12574
 // Name: useDeveloperActivityShelfItems
-// Dependencies: [19, 5828, 2142, 504, 2]
+// Dependencies: [19, 5798, 2142, 504, 2]
 // Exports: useDeveloperActivityShelfItems
 
-// Module 12560 (useDeveloperActivityShelfItems)
+// Module 12573 (useDeveloperActivityShelfItems)
 import Constants from "Constants" /* 2142 */;
 import react from "react" /* 19 */;
-import DeveloperActivityShelfStore from "DeveloperActivityShelfStore" /* 5828 */;
+import DeveloperActivityShelfStore from "DeveloperActivityShelfStore" /* 5798 */;
 import size from "module_2" /* 2 */;
 
 let closure_4 = Constants.DEFAULT_EMBEDDED_ACTIVITY_CONFIG;

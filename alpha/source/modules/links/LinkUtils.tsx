@@ -1,17 +1,17 @@
-// Module ID: 5808
-// Function ID: 5809
+// Module ID: 5778
+// Function ID: 5779
 // Name: LinkUtils
-// Dependencies: [5019, 5041, 5102, 1072, 5026, 5809, 5810, 11, 2]
+// Dependencies: [4989, 5011, 5072, 1072, 4996, 5779, 5780, 11, 2]
 // Exports: canViewChannel, isAccessibleChannelPath, tryParseChannelPath, tryParseConversationIdFromQuery, tryParseDiceRollLink, tryParseEventDetailsPath, tryParseUserProfilePath
 
-// Module 5808 (LinkUtils)
+// Module 5778 (LinkUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import ChannelConstants from "ChannelConstants" /* 5026 */;
-import ConversationConstants from "ConversationConstants" /* 5809 */;
-import RegexUtilsDefault from "RegexUtils" /* 5810 */;
-import ChannelStore from "ChannelStore" /* 5019 */;
-import GuildStore from "GuildStore" /* 5041 */;
-import PermissionStore from "PermissionStore" /* 5102 */;
+import ChannelConstants from "ChannelConstants" /* 4996 */;
+import ConversationConstants from "ConversationConstants" /* 5779 */;
+import RegexUtilsDefault from "RegexUtils" /* 5780 */;
+import ChannelStore from "ChannelStore" /* 4989 */;
+import GuildStore from "GuildStore" /* 5011 */;
+import PermissionStore from "PermissionStore" /* 5072 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 

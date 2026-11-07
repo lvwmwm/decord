@@ -1,17 +1,17 @@
-// Module ID: 17757
-// Function ID: 17758
+// Module ID: 17806
+// Function ID: 17807
 // Name: AndroidNotificationLightsSetting
-// Dependencies: [17737, 8524, 1377, 17739, 1113, 11703, 16538, 17743, 2]
+// Dependencies: [17786, 8503, 1377, 17788, 1113, 11685, 16586, 17792, 2]
 
-// Module 17757 (AndroidNotificationLightsSetting)
+// Module 17806 (AndroidNotificationLightsSetting)
 import intl2 from "intl" /* 1113 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
-import SettingsConstants from "SettingsConstants" /* 8524 */;
-import notifications_NotificationSettingsUtils from "notifications/NotificationSettingsUtils" /* 16538 */;
-import SettingsNotificationUtils from "SettingsNotificationUtils" /* 17739 */;
-import MobileNotifSettings from "MobileNotifSettings" /* 17743 */;
-import AndroidNotificationSettingsStore from "AndroidNotificationSettingsStore" /* 17737 */;
-import SettingBuilders_mod from "SettingBuilders" /* 11703 */;
+import SettingsConstants from "SettingsConstants" /* 8503 */;
+import notifications_NotificationSettingsUtils from "notifications/NotificationSettingsUtils" /* 16586 */;
+import SettingsNotificationUtils from "SettingsNotificationUtils" /* 17788 */;
+import MobileNotifSettings from "MobileNotifSettings" /* 17792 */;
+import AndroidNotificationSettingsStore from "AndroidNotificationSettingsStore" /* 17786 */;
+import SettingBuilders_mod from "SettingBuilders" /* 11685 */;
 import size from "module_2" /* 2 */;
 
 let c2;

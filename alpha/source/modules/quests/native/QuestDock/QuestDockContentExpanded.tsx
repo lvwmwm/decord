@@ -1,20 +1,20 @@
-// Module ID: 17421
-// Function ID: 17422
+// Module ID: 17470
+// Function ID: 17471
 // Name: QuestDockContentExpanded
-// Dependencies: [19, 17, 6861, 17334, 21, 5170, 17335, 11402, 1652, 17333, 5791, 2]
+// Dependencies: [19, 17, 6836, 17382, 21, 5140, 17383, 11384, 1652, 17381, 5761, 2]
 
-// Module 17421 (QuestDockContentExpanded)
+// Module 17470 (QuestDockContentExpanded)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import _mod1652 from "module_1652" /* 1652 */;
-import spring_spring from "spring/spring" /* 5791 */;
-import QuestConstants from "QuestConstants" /* 6861 */;
-import useSafeAreaInsetsSharedValueDefault from "useSafeAreaInsetsSharedValue" /* 11402 */;
-import QuestDockUtils from "QuestDockUtils" /* 17333 */;
-import QuestDockConstants from "QuestDockConstants" /* 17334 */;
-import QuestDockGestureContext from "QuestDockGestureContext" /* 17335 */;
+import spring_spring from "spring/spring" /* 5761 */;
+import QuestConstants from "QuestConstants" /* 6836 */;
+import useSafeAreaInsetsSharedValueDefault from "useSafeAreaInsetsSharedValue" /* 11384 */;
+import QuestDockUtils from "QuestDockUtils" /* 17381 */;
+import QuestDockConstants from "QuestDockConstants" /* 17382 */;
+import QuestDockGestureContext from "QuestDockGestureContext" /* 17383 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 let maxHeight, num, obj1, obj3, tmp2, tmp3, width, width2, width3;

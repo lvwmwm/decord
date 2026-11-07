@@ -1,20 +1,20 @@
-// Module ID: 14038
-// Function ID: 14039
+// Module ID: 14063
+// Function ID: 14064
 // Name: VoicePanelHeaderGlassBlur
-// Dependencies: [19, 17, 21, 5170, 1377, 1652, 5791, 5792, 5399, 5757, 5177, 7048, 2]
+// Dependencies: [19, 17, 21, 5140, 1377, 1652, 5761, 5762, 5369, 5727, 5147, 7023, 2]
 
-// Module 14038 (VoicePanelHeaderGlassBlur)
+// Module 14063 (VoicePanelHeaderGlassBlur)
 import react_native from "react-native" /* 17 */;
 import _mod1652 from "module_1652" /* 1652 */;
-import shared from "shared" /* 5177 */;
-import useThemeDefault from "useTheme" /* 5399 */;
-import VisualEffectViewAnimatedDefault from "VisualEffectViewAnimated" /* 5757 */;
-import spring_spring from "spring/spring" /* 5791 */;
-import springPresets from "springPresets" /* 5792 */;
-import NativeViewDefault from "NativeView" /* 7048 */;
+import shared from "shared" /* 5147 */;
+import useThemeDefault from "useTheme" /* 5369 */;
+import VisualEffectViewAnimatedDefault from "VisualEffectViewAnimated" /* 5727 */;
+import spring_spring from "spring/spring" /* 5761 */;
+import springPresets from "springPresets" /* 5762 */;
+import NativeViewDefault from "NativeView" /* 7023 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5140 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import size from "module_2" /* 2 */;
 

@@ -1,19 +1,19 @@
-// Module ID: 19718
-// Function ID: 19719
+// Module ID: 19787
+// Function ID: 19788
 // Name: AppIconPremiumManager
-// Dependencies: [5, 1385, 10118, 1072, 5195, 3, 10119, 7373, 1377, 15580, 5198, 2171, 1252, 2]
+// Dependencies: [5, 1385, 10101, 1072, 5165, 3, 10102, 7350, 1377, 15615, 5168, 2171, 1252, 2]
 
-// Module 19718 (AppIconPremiumManager)
+// Module 19787 (AppIconPremiumManager)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5195 */;
-import AppIconTypes from "AppIconTypes" /* 10119 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5165 */;
+import AppIconTypes from "AppIconTypes" /* 10102 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserStore from "UserStore" /* 1385 */;
-import AppIconConstants from "AppIconConstants" /* 10118 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7373 */;
+import AppIconConstants from "AppIconConstants" /* 10101 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7350 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -68,7 +68,7 @@ class AppIconPremiumManager extends AutomaticLifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -168,7 +168,7 @@ class AppIconPremiumManager extends AutomaticLifecycleManager {
               }
             }
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp62) {
           c6 = 3;

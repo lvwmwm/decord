@@ -1,19 +1,19 @@
-// Module ID: 13954
-// Function ID: 13955
+// Module ID: 13979
+// Function ID: 13980
 // Name: CustomTypingIndicatorAnimatedEmoji
-// Dependencies: [32, 19, 2117, 1072, 21, 5170, 5184, 13955, 1652, 504, 1398, 5400, 7386, 1411, 2]
+// Dependencies: [32, 19, 2117, 1072, 21, 5140, 5154, 13980, 1652, 504, 1398, 5370, 7363, 1411, 2]
 // Exports: default
 
-// Module 13954 (CustomTypingIndicatorAnimatedEmoji)
+// Module 13979 (CustomTypingIndicatorAnimatedEmoji)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import user from "user" /* 1398 */;
 import _mod1652 from "module_1652" /* 1652 */;
-import timing_timing from "timing/timing" /* 5400 */;
+import timing_timing from "timing/timing" /* 5370 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AppStateStore from "AppStateStore" /* 2117 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 let set, set2, set3;

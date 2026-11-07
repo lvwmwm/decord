@@ -1,17 +1,17 @@
-// Module ID: 8120
-// Function ID: 8121
+// Module ID: 8099
+// Function ID: 8100
 // Name: BaseIconButton
-// Dependencies: [19, 21, 5170, 5794, 1652, 5790, 5795, 5797, 5799, 2]
+// Dependencies: [19, 21, 5140, 5764, 1652, 5760, 5765, 5767, 5769, 2]
 // Exports: BaseIconButton
 
-// Module 8120 (BaseIconButton)
+// Module 8099 (BaseIconButton)
 import Fragment from "Fragment" /* 21 */;
 import _mod1652 from "module_1652" /* 1652 */;
-import IconDefault from "Icon" /* 5790 */;
-import ButtonConstants from "ButtonConstants" /* 5794 */;
-import ButtonHooks from "ButtonHooks" /* 5795 */;
+import IconDefault from "Icon" /* 5760 */;
+import ButtonConstants from "ButtonConstants" /* 5764 */;
+import ButtonHooks from "ButtonHooks" /* 5765 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 const module_1652 = _mod1652;
@@ -76,17 +76,17 @@ export function BaseIconButton(ref) {
   const iconSizeStyles = obj3.useIconSizeStyles(DEFAULT_BUTTON_SIZE, true, maxFontSizeMultiplier);
   let MEDIUM_BUTTON_HEIGHT = ButtonConstants.LARGE_BUTTON_HEIGHT;
   if ("sm" === DEFAULT_BUTTON_SIZE) {
-    MEDIUM_BUTTON_HEIGHT = tmp5(5794).SMALL_BUTTON_HEIGHT;
+    MEDIUM_BUTTON_HEIGHT = tmp5(5764).SMALL_BUTTON_HEIGHT;
   } else if ("md" === DEFAULT_BUTTON_SIZE) {
-    MEDIUM_BUTTON_HEIGHT = tmp5(5794).MEDIUM_BUTTON_HEIGHT;
+    MEDIUM_BUTTON_HEIGHT = tmp5(5764).MEDIUM_BUTTON_HEIGHT;
   }
-  const bound = Math.max((tmp5(5794).MINIMUM_HIT_AREA - MEDIUM_BUTTON_HEIGHT) / 2, 0);
-  const BaseButton = tmp5(5797).BaseButton;
+  const bound = Math.max((tmp5(5764).MINIMUM_HIT_AREA - MEDIUM_BUTTON_HEIGHT) / 2, 0);
+  const BaseButton = tmp5(5767).BaseButton;
   const merged1 = Object.assign(merged);
   const items = [tmp4.button, style];
   const items1 = [tmp4.pill, pillStyle];
   let str3 = "xs";
-  const ButtonPill = tmp5(5799).ButtonPill;
+  const ButtonPill = tmp5(5769).ButtonPill;
   if ("lg" === DEFAULT_BUTTON_SIZE) {
     str3 = "sm";
   }

@@ -1,10 +1,10 @@
-// Module ID: 17950
-// Function ID: 17951
+// Module ID: 17997
+// Function ID: 17998
 // Name: PasswordScreen
-// Dependencies: [5, 32, 19, 17, 21, 7207, 17942, 17941, 1113, 7173, 17944, 2]
+// Dependencies: [5, 32, 19, 17, 21, 7182, 17989, 17988, 1113, 7148, 17991, 2]
 // Exports: default
 
-// Module 17950 (PasswordScreen)
+// Module 17997 (PasswordScreen)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -60,7 +60,7 @@ export default function PasswordScreen(finish) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -114,7 +114,7 @@ export default function PasswordScreen(finish) {
             }
             closure_130_3(false);
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp28) {
           closure_3 = tmp28;

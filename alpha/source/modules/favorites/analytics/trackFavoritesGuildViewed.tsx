@@ -1,17 +1,17 @@
-// Module ID: 19119
-// Function ID: 19120
+// Module ID: 19170
+// Function ID: 19171
 // Name: trackFavoritesGuildViewed
-// Dependencies: [1385, 5022, 1072, 1387, 2107, 1252, 10978, 2]
+// Dependencies: [1385, 4992, 1072, 1387, 2107, 1252, 10961, 2]
 // Exports: default
 
-// Module 19119 (trackFavoritesGuildViewed)
+// Module 19170 (trackFavoritesGuildViewed)
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
 import PremiumTypeUtilsDefault from "PremiumTypeUtils" /* 2107 */;
-import FavoritesGuildAnalytics from "FavoritesGuildAnalytics" /* 10978 */;
+import FavoritesGuildAnalytics from "FavoritesGuildAnalytics" /* 10961 */;
 import UserStore from "UserStore" /* 1385 */;
-import FavoriteStore from "FavoriteStore" /* 5022 */;
+import FavoriteStore from "FavoriteStore" /* 4992 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;

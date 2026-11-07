@@ -1,10 +1,10 @@
-// Module ID: 10936
-// Function ID: 10937
+// Module ID: 10919
+// Function ID: 10920
 // Name: useRecipientsLabel
-// Dependencies: [19, 1385, 1113, 504, 1380, 5224, 2]
+// Dependencies: [19, 1385, 1113, 504, 1380, 5194, 2]
 // Exports: useRecipientsLabel
 
-// Module 10936 (useRecipientsLabel)
+// Module 10919 (useRecipientsLabel)
 import intl5 from "intl" /* 1113 */;
 import GlobalUtils from "GlobalUtils" /* 1380 */;
 import react from "react" /* 19 */;

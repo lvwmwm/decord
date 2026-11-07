@@ -1,23 +1,108 @@
 // Module ID: 16521
 // Function ID: 16522
-// Dependencies: []
-// Exports: getHostFromUrl
+// Dependencies: [41, 42]
+// Exports: memoize
 
 // Module 16521
+import _createClassDefault from "_createClass" /* 42 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
 
-export function getHostFromUrl(scriptURL) {
-  const match = scriptURL.match(/^(?:https?:\/\/)?(\[[^\]]+\]|[^/:\s]+)(?::\d+)?(?:[/?#]|$)/);
-  let tmp2;
-  if (match != null) {
-    tmp2 = match[1];
+function monadic(call, get, fn, num) {
+  let tmp2 = num;
+  const tmp = null == num || typeof num === "number" || typeof num === "boolean";
+  if (!tmp) {
+    tmp2 = fn(num);
   }
-  if (typeof tmp2 !== "string") {
-    const _Error = Error;
+  let value = get.get(tmp2);
+  if (undefined === value) {
+    const callResult = call.call(this, num);
+    const result = get.set(tmp2, callResult);
+    value = callResult;
+  }
+  return value;
+}
+function variadic(apply, get, fn) {
+  const callResult = slice.call(arguments, 3);
+  const tmp2 = fn(callResult);
+  let value = get.get(tmp2);
+  if (undefined === value) {
     const self = this;
-    const self2 = this;
-    const error = new Error("Invalid URL - host not found");
-    throw error;
-  } else {
-    return tmp2;
+    const applyResult = apply.apply(this, callResult);
+    const result = get.set(tmp2, applyResult);
+    value = applyResult;
+  }
+  return value;
+}
+function strategyDefault(c165, cache) {
+  cache = cache.cache;
+  const obj = 1 === c165.length ? monadic : variadic;
+  return obj.bind(this, c165, cache.create(), cache.serializer);
+}
+function serializerDefault() {
+  return JSON.stringify(arguments);
+}
+class ObjectWithoutPrototypeCache {
+  constructor() {
+    _classCallCheck(this, ObjectWithoutPrototypeCache);
+    this.cache = Object.create(null);
   }
 }
+const entry = {
+  key: "get",
+  value: function get(arg0) {
+    return this.cache[arg0];
+  }
+};
+const items = [
+  entry,
+  {
+    key: "set",
+    value: function set(arg0, arg1) {
+      this.cache[arg0] = arg1;
+    }
+  }
+];
+let closure_5 = _createClassDefault(ObjectWithoutPrototypeCache, items);
+let closure_6 = {
+  create() {
+    const tmp = new closure_5();
+    return tmp;
+  }
+};
+let obj = {
+  variadic: function strategyVariadic(c165, cache) {
+    cache = cache.cache;
+    return variadic.bind(this, c165, cache.create(), cache.serializer);
+  },
+  monadic: function strategyMonadic(c165, cache) {
+    cache = cache.cache;
+    return monadic.bind(this, c165, cache.create(), cache.serializer);
+  }
+};
+
+export function memoize(arg0, cache) {
+  const tmp = cache;
+  if (tmp) {
+    if (cache.cache) {
+      cache = cache.cache;
+    }
+    if (cache) {
+      let serializer;
+      if (cache.serializer) {
+        serializer = cache.serializer;
+      }
+      if (cache) {
+        let strategy;
+        if (cache.strategy) {
+          strategy = cache.strategy;
+        }
+        const obj = { cache, serializer };
+        return strategy(arg0, obj);
+      }
+      strategy = strategyDefault;
+    }
+    serializer = serializerDefault;
+  }
+  cache = closure_6;
+}
+export const strategies = obj;

@@ -1,13 +1,13 @@
-// Module ID: 13009
-// Function ID: 13010
+// Module ID: 13032
+// Function ID: 13033
 // Name: selectConjureChannel
-// Dependencies: [5073, 5026, 6786, 2]
+// Dependencies: [5043, 4996, 6761, 2]
 // Exports: default
 
-// Module 13009 (selectConjureChannel)
-import ChannelConstants from "ChannelConstants" /* 5026 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6786 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5073 */;
+// Module 13032 (selectConjureChannel)
+import ChannelConstants from "ChannelConstants" /* 4996 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6761 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 const StaticChannelRoute = ChannelConstants.StaticChannelRoute;

@@ -1,25 +1,25 @@
-// Module ID: 10444
-// Function ID: 10445
+// Module ID: 10427
+// Function ID: 10428
 // Name: AutocompleteOptions
-// Dependencies: [8436, 8437, 8772, 6917, 5019, 5082, 5041, 1072, 6193, 6194, 10445, 1388, 12, 10446, 6859, 4995, 9238, 9242, 9717, 10456, 10403, 7611, 1411, 1113, 2]
+// Dependencies: [8415, 8416, 8751, 6892, 4989, 5052, 5011, 1072, 6167, 6168, 10428, 1388, 12, 10429, 6834, 4965, 9220, 9224, 9699, 10439, 10386, 7588, 1411, 1113, 2]
 // Exports: getAutocompleteOptions
 
-// Module 10444 (AutocompleteOptions)
+// Module 10427 (AutocompleteOptions)
 import intl2 from "intl" /* 1113 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6193 */;
-import AutocompleteUtilsDefault from "AutocompleteUtils" /* 6859 */;
-import StickersActionCreators from "StickersActionCreators" /* 10403 */;
-import channel_text_area_ChannelAutocompleteConstants from "channel_text_area/ChannelAutocompleteConstants" /* 10445 */;
-import executeCommandDefault from "executeCommand" /* 10446 */;
-import ApplicationCommandAutocompleteStore from "ApplicationCommandAutocompleteStore" /* 8436 */;
-import ApplicationCommandStore from "ApplicationCommandStore" /* 8437 */;
-import GameAutocompleteStore from "GameAutocompleteStore" /* 8772 */;
-import StickersStore from "StickersStore" /* 6917 */;
-import ChannelStore from "ChannelStore" /* 5019 */;
-import GuildMemberStore from "GuildMemberStore" /* 5082 */;
-import GuildStore from "GuildStore" /* 5041 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6167 */;
+import AutocompleteUtilsDefault from "AutocompleteUtils" /* 6834 */;
+import StickersActionCreators from "StickersActionCreators" /* 10386 */;
+import channel_text_area_ChannelAutocompleteConstants from "channel_text_area/ChannelAutocompleteConstants" /* 10428 */;
+import executeCommandDefault from "executeCommand" /* 10429 */;
+import ApplicationCommandAutocompleteStore from "ApplicationCommandAutocompleteStore" /* 8415 */;
+import ApplicationCommandStore from "ApplicationCommandStore" /* 8416 */;
+import GameAutocompleteStore from "GameAutocompleteStore" /* 8751 */;
+import StickersStore from "StickersStore" /* 6892 */;
+import ChannelStore from "ChannelStore" /* 4989 */;
+import GuildMemberStore from "GuildMemberStore" /* 5052 */;
+import GuildStore from "GuildStore" /* 5011 */;
 import Constants from "Constants" /* 1072 */;
-import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 6194 */;
+import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 6168 */;
 import EmojiConstants from "EmojiConstants" /* 1388 */;
 import module_12 from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;

@@ -1,11 +1,10 @@
 // Module ID: 10621
 // Function ID: 10622
-// Dependencies: [41, 42, 93, 95, 96, 98, 10617, 10468, 10477]
+// Dependencies: [41, 42, 93, 95, 96, 98, 10440, 10460]
 
 // Module 10621
-import Meridiem from "Meridiem" /* 10468 */;
-import AbstractTimeExpressionParser from "AbstractTimeExpressionParser" /* 10477 */;
-import _mod10617 from "module_10617" /* 10617 */;
+import en from "en" /* 10440 */;
+import AbstractTimeExpressionParser from "AbstractTimeExpressionParser" /* 10460 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import c3 from "_possibleConstructorReturn" /* 93 */;
@@ -28,13 +27,13 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class UKTimeExpressionParser {
+class ENTimeExpressionParser {
   constructor(arg0) {
     let constructResult;
     const self = this;
-    _classCallCheck(this, UKTimeExpressionParser);
+    _classCallCheck(this, ENTimeExpressionParser);
     const items = [arg0];
-    const obj = _getPrototypeOf(UKTimeExpressionParser);
+    const obj = _getPrototypeOf(ENTimeExpressionParser);
     const tmp2 = _getPrototypeOf;
     const tmp3 = c3;
     if (_isNativeReflectConstruct()) {
@@ -46,44 +45,32 @@ class UKTimeExpressionParser {
     return tmp3(self, constructResult);
   }
 }
-_inherits(UKTimeExpressionParser, AbstractTimeExpressionParser.AbstractTimeExpressionParser);
+_inherits(ENTimeExpressionParser, AbstractTimeExpressionParser.AbstractTimeExpressionParser);
 const entry = {
-  key: "patternFlags",
-  value: function patternFlags() {
-    return _mod10617.REGEX_PARTS.flags;
+  key: "followingPhase",
+  value: function followingPhase() {
+    return "\\s*(?:\\-|\\\u2013|\\~|\\\u301C|to|\\?)\\s*";
   }
 };
 let items = [
   entry,
   {
-    key: "primaryPatternLeftBoundary",
-    value: function primaryPatternLeftBoundary() {
-      return "(^|\\s|T|(?:[^\\p{L}\\p{N}_]))";
-    }
-  },
-  {
-    key: "followingPhase",
-    value: function followingPhase() {
-      return "\\s*(?:\\-|\\\u2013|\\~|\\\u301C|\u0434\u043E|\u0456|\u043F\u043E|\\?)\\s*";
-    }
-  },
-  {
     key: "primaryPrefix",
     value: function primaryPrefix() {
-      return "(?:(?:\u0432|\u0443|\u043E|\u043E\u0431|\u0437|\u0456\u0437|\u0432\u0456\u0434)\\s*)??";
+      return "(?:(?:alle|dalle)\\s*)??";
     }
   },
   {
     key: "primarySuffix",
     value: function primarySuffix() {
-      return "(?:\\s*(?:\u0440\u0430\u043D\u043A\u0443|\u0432\u0435\u0447\u043E\u0440\u0430|\u043F\u043E \u043E\u0431\u0456\u0434\u0456|\u043F\u0456\u0441\u043B\u044F \u043E\u0431\u0456\u0434\u0443))?(?!\\/)" + _mod10617.REGEX_PARTS.rightBoundary;
+      return "(?:\\s*(?:o\\W*in punto|alle\\s*sera|in\\s*del\\s*(?:mattina|pomeriggio)))?(?!/)(?=\\W|$)";
     }
   },
   {
     key: "extractPrimaryTimeComponents",
     value: function extractPrimaryTimeComponents(arg0, arg1) {
       const self = this;
-      const tmp = _get(_getPrototypeOf(UKTimeExpressionParser.prototype), "extractPrimaryTimeComponents", this);
+      const tmp = _get(_getPrototypeOf(ENTimeExpressionParser.prototype), "extractPrimaryTimeComponents", this);
       let closure_1 = tmp;
       let fn = tmp;
       if (typeof tmp === "function") {
@@ -93,32 +80,30 @@ let items = [
       const fnResult = fn(items);
       if (fnResult) {
         const first = arg1[0];
-        if (first.endsWith("\u0432\u0435\u0447\u043E\u0440\u0430")) {
+        if (first.endsWith("sera")) {
           const value = fnResult.get("hour");
           if (value >= 6) {
             if (value < 12) {
               fnResult.assign("hour", fnResult.get("hour") + 12);
-              fnResult.assign("meridiem", Meridiem.Meridiem.PM);
+              fnResult.assign("meridiem", en.Meridiem.PM);
             }
           }
           if (value < 6) {
-            fnResult.assign("meridiem", Meridiem.Meridiem.AM);
+            fnResult.assign("meridiem", en.Meridiem.AM);
           }
         }
         const first1 = arg1[0];
-        if (first1.endsWith("\u043F\u043E \u043E\u0431\u0456\u0434\u0456")) {
-          fnResult.assign("meridiem", Meridiem.Meridiem.PM);
+        if (first1.endsWith("pomeriggio")) {
+          fnResult.assign("meridiem", en.Meridiem.PM);
           const value2 = fnResult.get("hour");
           const tmp14 = value2 >= 0 && value2 <= 6;
           if (tmp14) {
             fnResult.assign("hour", fnResult.get("hour") + 12);
           }
-        } else {
-          const first2 = arg1[0];
         }
-        const first3 = arg1[0];
-        if (first3.endsWith("\u0440\u0430\u043D\u043A\u0443")) {
-          fnResult.assign("meridiem", Meridiem.Meridiem.AM);
+        const first2 = arg1[0];
+        if (first2.endsWith("mattina")) {
+          fnResult.assign("meridiem", en.Meridiem.AM);
           if (fnResult.get("hour") < 12) {
             fnResult.assign("hour", fnResult.get("hour"));
           }
@@ -129,4 +114,4 @@ let items = [
   }
 ];
 
-export default _createClass(UKTimeExpressionParser, items);
+export default _createClass(ENTimeExpressionParser, items);

@@ -1,12 +1,12 @@
-// Module ID: 9561
-// Function ID: 9562
+// Module ID: 9543
+// Function ID: 9544
 // Name: CollectiblesAnalyticsContext
-// Dependencies: [19, 21, 9562, 2]
+// Dependencies: [19, 21, 9544, 2]
 // Exports: CollectiblesAnalyticsProvider, useCollectiblesAnalyticsContext
 
-// Module 9561 (CollectiblesAnalyticsContext)
+// Module 9543 (CollectiblesAnalyticsContext)
 import Fragment from "Fragment" /* 21 */;
-import useShallowObjectMemoDefault from "useShallowObjectMemo" /* 9562 */;
+import useShallowObjectMemoDefault from "useShallowObjectMemo" /* 9544 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -1,18 +1,18 @@
-// Module ID: 14461
-// Function ID: 14462
+// Module ID: 14494
+// Function ID: 14495
 // Name: NewUserPermissionsOnboarding
-// Dependencies: [19, 17, 21, 5170, 5744, 575, 5781, 5788, 1113, 2]
+// Dependencies: [19, 17, 21, 5140, 5714, 575, 5751, 5758, 1113, 2]
 // Exports: default
 
-// Module 14461 (NewUserPermissionsOnboarding)
+// Module 14494 (NewUserPermissionsOnboarding)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import NavigatorConstants from "NavigatorConstants" /* 5744 */;
-import Text_Text from "Text/Text" /* 5781 */;
+import NavigatorConstants from "NavigatorConstants" /* 5714 */;
+import Text_Text from "Text/Text" /* 5751 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let c2;
@@ -112,13 +112,13 @@ export default function NewUserPermissionsOnboarding(arg0) {
   items5[1] = tmp12;
   const obj9 = { style: items5, children: React3(Button, obj10) };
   obj10 = { variant: "primary", size: "md", text: intl.string(intl3.t["2nYlT2"]), onPress: onAllow, loading, grow: true };
-  Button = tmp10(5788).Button;
+  Button = tmp10(5758).Button;
   intl = tmp10(1113).intl;
   items4[3] = React3(React2, obj9);
   if (showSkip) {
     const obj11 = { style: tmp.buttonWrapper, children: React3(Button2, obj12) };
     obj12 = { variant: "secondary", text: intl2.string(intl3.t["5Wxrcd"]), onPress: onDontAllow, grow: true };
-    Button2 = tmp10(5788).Button;
+    Button2 = tmp10(5758).Button;
     intl2 = tmp10(1113).intl;
     showSkip = tmp4(tmp5, obj11);
   }

@@ -1,13 +1,13 @@
-// Module ID: 7170
-// Function ID: 7171
+// Module ID: 7145
+// Function ID: 7146
 // Name: ConfirmEmailChangeCode
-// Dependencies: [5, 19, 7088, 21, 1499, 1092, 7171, 7168, 1113, 2]
+// Dependencies: [5, 19, 7063, 21, 1499, 1092, 7146, 7143, 1113, 2]
 // Exports: default
 
-// Module 7170 (ConfirmEmailChangeCode)
+// Module 7145 (ConfirmEmailChangeCode)
 import Fragment from "Fragment" /* 21 */;
 import ConstantsIOS from "ConstantsIOS" /* 1092 */;
-import ChangeEmailStore from "ChangeEmailStore" /* 7088 */;
+import ChangeEmailStore from "ChangeEmailStore" /* 7063 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -38,7 +38,7 @@ export default function ConfirmEmailChangeCode(isChangeEmail) {
       push(VerificationModalScenes.ENTER_EMAIL);
     }
   }, items);
-  navigation(7171);
+  navigation(7146);
   isChangeEmail = _asyncToGenerator(async (arg0) => {
     let c1;
     closure_0 = arg0;
@@ -62,7 +62,7 @@ export default function ConfirmEmailChangeCode(isChangeEmail) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -91,7 +91,7 @@ export default function ConfirmEmailChangeCode(isChangeEmail) {
           return obj;
         } else {
           isChangeEmail = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp6) {
         isChangeEmail = 3;

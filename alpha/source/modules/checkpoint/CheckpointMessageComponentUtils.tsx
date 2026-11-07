@@ -1,23 +1,23 @@
-// Module ID: 6245
-// Function ID: 6246
+// Module ID: 6220
+// Function ID: 6221
 // Name: checkpoint/CheckpointMessageComponentUtils
-// Dependencies: [6224, 5928, 11, 6246, 6247, 6248, 6268, 6590, 1113, 3248, 6233, 5116, 6594, 6595, 3216, 2021, 2116, 2]
+// Dependencies: [6199, 5901, 11, 6221, 6222, 6223, 6243, 6565, 1113, 3248, 6208, 5086, 6569, 6570, 3216, 2021, 2116, 2]
 // Exports: formatCheckpoint2026PowerLevel, getCharacterLayerUrls, getCheckpoint2026PowerBarUnits, getCheckpointDataFromMessage, getCheckpointLabel, toCheckpointMessageComponentData, transformCheckpoint2026CardComponent, transformCheckpoint2026CardToRowGeneratedComponent
 
-// Module 6245 (checkpoint/CheckpointMessageComponentUtils)
+// Module 6220 (checkpoint/CheckpointMessageComponentUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import intl18 from "intl" /* 1113 */;
 import Server from "Server" /* 2116 */;
 import _modDef3216 from "module_3216" /* 3216 */;
 import _modDef3248 from "module_3248" /* 3248 */;
-import TimeUtils from "TimeUtils" /* 5928 */;
-import CheckpointUtils from "CheckpointUtils" /* 6233 */;
-import CheckpointCardColorPalette from "CheckpointCardColorPalette" /* 6246 */;
-import CheckpointCardTypes from "CheckpointCardTypes" /* 6247 */;
-import CheckpointCardColors from "CheckpointCardColors" /* 6248 */;
-import CheckpointCharacterTraits from "CheckpointCharacterTraits" /* 6268 */;
-import CheckpointStatsUtils from "CheckpointStatsUtils" /* 6594 */;
-import CheckpointConstants from "CheckpointConstants" /* 6224 */;
+import TimeUtils from "TimeUtils" /* 5901 */;
+import CheckpointUtils from "CheckpointUtils" /* 6208 */;
+import CheckpointCardColorPalette from "CheckpointCardColorPalette" /* 6221 */;
+import CheckpointCardTypes from "CheckpointCardTypes" /* 6222 */;
+import CheckpointCardColors from "CheckpointCardColors" /* 6223 */;
+import CheckpointCharacterTraits from "CheckpointCharacterTraits" /* 6243 */;
+import CheckpointStatsUtils from "CheckpointStatsUtils" /* 6569 */;
+import CheckpointConstants from "CheckpointConstants" /* 6199 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -152,7 +152,7 @@ function transformCheckpoint2026StatsToRowGeneratedComponent(stats) {
     if (null != stats.topEmoji) {
       let result;
       if (null == stats.topEmoji.emojiId) {
-        const tmp4Result = tmp4(5116);
+        const tmp4Result = tmp4(5086);
         result = tmp4Result.convertSurrogateToName(stats.topEmoji.emojiName);
       } else {
         const _HermesInternal = HermesInternal;

@@ -1,19 +1,19 @@
-// Module ID: 8618
-// Function ID: 8619
+// Module ID: 8597
+// Function ID: 8598
 // Name: PremiumSubscriptionOfferUtil
-// Dependencies: [32, 19, 2176, 1387, 7726, 8619, 8620, 504, 2166, 8621, 8622, 2116, 8625, 2]
+// Dependencies: [32, 19, 2176, 1387, 7703, 8598, 8599, 504, 2166, 8600, 8601, 2116, 8604, 2]
 // Exports: renewalInvoiceChurnDiscountInfo, useActiveDiscountInfo, useFetchChurnUserDiscountOffer, useIsInPremiumOfferExperience, useIsNUXEligible, useShouldFetchChurnOffer
 
-// Module 8618 (PremiumSubscriptionOfferUtil)
+// Module 8597 (PremiumSubscriptionOfferUtil)
 import get_initialized from "get initialized" /* 504 */;
 import Server from "Server" /* 2116 */;
 import _modDef2166 from "module_2166" /* 2166 */;
-import usePremiumTrialOffer from "usePremiumTrialOffer" /* 7726 */;
-import PremiumSubscriptionTrialUtil from "PremiumSubscriptionTrialUtil" /* 8619 */;
-import usePremiumDiscountOffer from "usePremiumDiscountOffer" /* 8620 */;
-import useDiscountOfferDefault from "useDiscountOffer" /* 8621 */;
-import UserOfferActionCreators from "UserOfferActionCreators" /* 8622 */;
-import ReverseTrialUtils from "ReverseTrialUtils" /* 8625 */;
+import usePremiumTrialOffer from "usePremiumTrialOffer" /* 7703 */;
+import PremiumSubscriptionTrialUtil from "PremiumSubscriptionTrialUtil" /* 8598 */;
+import usePremiumDiscountOffer from "usePremiumDiscountOffer" /* 8599 */;
+import useDiscountOfferDefault from "useDiscountOffer" /* 8600 */;
+import UserOfferActionCreators from "UserOfferActionCreators" /* 8601 */;
+import ReverseTrialUtils from "ReverseTrialUtils" /* 8604 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import SubscriptionStore from "SubscriptionStore" /* 2176 */;
@@ -36,7 +36,7 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let unpackModuleId;
-const f93996 = () => SubscriptionStore.getPremiumTypeSubscription();
+const f94333 = () => SubscriptionStore.getPremiumTypeSubscription();
 function getDiscountInfo(active_discount_id) {
   if (authStore !== active_discount_id) {
     if (authStore2 !== active_discount_id) {
@@ -79,7 +79,7 @@ function getDiscountInfo(active_discount_id) {
 function useHasDiscountApplied() {
   const items = [SubscriptionStore];
   const obj = get_initialized;
-  const stateFromStores = obj.useStateFromStores(items, f93996);
+  const stateFromStores = obj.useStateFromStores(items, f94333);
   let prop;
   if (stateFromStores != null) {
     const metadata = stateFromStores.metadata;
@@ -107,7 +107,7 @@ export function useIsInPremiumOfferExperience() {
   if (typeof useHasDiscountApplied === "function") {
     const items = [SubscriptionStore];
     const tmpResult = get_initialized;
-    const stateFromStores = tmpResult.useStateFromStores(items, f93996);
+    const stateFromStores = tmpResult.useStateFromStores(items, f94333);
     let prop;
     if (stateFromStores != null) {
       const metadata = stateFromStores.metadata;
@@ -211,7 +211,7 @@ export function useShouldFetchChurnOffer() {
   if (typeof useHasDiscountApplied === "function") {
     const items1 = [tmp3];
     const tmpResult = get_initialized;
-    const stateFromStores1 = tmpResult.useStateFromStores(items1, f93996);
+    const stateFromStores1 = tmpResult.useStateFromStores(items1, f94333);
     let prop;
     if (stateFromStores1 != null) {
       const metadata = stateFromStores1.metadata;

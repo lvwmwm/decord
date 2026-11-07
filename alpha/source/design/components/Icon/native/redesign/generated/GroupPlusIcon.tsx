@@ -1,14 +1,14 @@
-// Module ID: 11121
-// Function ID: 11122
+// Module ID: 11107
+// Function ID: 11108
 // Name: GroupPlusIcon
-// Dependencies: [19, 21, 575, 5871, 11122, 2]
+// Dependencies: [19, 21, 575, 5841, 11108, 2]
 // Exports: GroupPlusIcon
 
-// Module 11121 (GroupPlusIcon)
+// Module 11107 (GroupPlusIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5871 */;
-import AssetRegistry from "AssetRegistry" /* 11122 */;
+import BaseIconImage2 from "BaseIconImage" /* 5841 */;
+import AssetRegistry from "AssetRegistry" /* 11108 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

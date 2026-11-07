@@ -1,18 +1,18 @@
-// Module ID: 13672
-// Function ID: 13673
+// Module ID: 13696
+// Function ID: 13697
 // Name: CheckpointCharacterStage
-// Dependencies: [32, 19, 17, 13643, 21, 5170, 13673, 1493, 5769, 13674, 504, 13840, 13842, 13844, 13845, 13846, 6590, 5235, 2]
+// Dependencies: [32, 19, 17, 13667, 21, 5140, 13697, 1493, 5739, 13698, 504, 13864, 13866, 13868, 13869, 13870, 6565, 5205, 2]
 // Exports: default
 
-// Module 13672 (CheckpointCharacterStage)
+// Module 13696 (CheckpointCharacterStage)
 import Fragment from "Fragment" /* 21 */;
-import CheckpointCharacterTextureUtils from "CheckpointCharacterTextureUtils" /* 13674 */;
-import CheckpointCharacterDataBinding from "CheckpointCharacterDataBinding" /* 13840 */;
+import CheckpointCharacterTextureUtils from "CheckpointCharacterTextureUtils" /* 13698 */;
+import CheckpointCharacterDataBinding from "CheckpointCharacterDataBinding" /* 13864 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import CheckpointStore from "CheckpointStore" /* 13643 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import CheckpointStore from "CheckpointStore" /* 13667 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let StyleSheet;
@@ -62,10 +62,10 @@ export default function CheckpointCharacterStage(stage) {
   const items = [textureScale];
   const obj2 = stage(isHidden[10]);
   const stateFromStores = obj2.useStateFromStores(items, () => textureScale.selectedCharacterTraits);
-  const items1 = [stage, stateFromStores, layout, characterBottomInset, height, tmp5];
+  const items1 = [stage, isHidden, stateFromStores, layout, characterBottomInset, height, tmp5];
   const memo = react.useMemo(() => {
     let num;
-    const obj = { stage, traits: stateFromStores, layout, mobileLift: num, textureScale };
+    const obj = { stage, isHidden, traits: stateFromStores, layout, mobileLift: num, textureScale };
     num = 0;
     const getCheckpointCharacterDataBinding = CheckpointCharacterDataBinding.getCheckpointCharacterDataBinding;
     CheckpointCharacterDataBinding;

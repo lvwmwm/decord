@@ -1,12 +1,12 @@
-// Module ID: 9556
-// Function ID: 9557
+// Module ID: 9538
+// Function ID: 9539
 // Name: navigateToGameAnnouncement
-// Dependencies: [5, 5041, 1072, 38, 7616, 9043, 1099, 2]
+// Dependencies: [5, 5011, 1072, 38, 7593, 9025, 1099, 2]
 // Exports: default
 
-// Module 9556 (navigateToGameAnnouncement)
+// Module 9538 (navigateToGameAnnouncement)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GuildStore from "GuildStore" /* 5041 */;
+import GuildStore from "GuildStore" /* 5011 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -35,7 +35,7 @@ let obj = function _navigateToGameAnnouncement() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -124,7 +124,7 @@ let obj = function _navigateToGameAnnouncement() {
                 }
               }
               sourceLocationStack = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } else if (2 === messageId) {
             if (arg0 === 1) {

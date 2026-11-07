@@ -1,15 +1,15 @@
-// Module ID: 19858
-// Function ID: 19859
+// Module ID: 19927
+// Function ID: 19928
 // Name: NativeOnDemandResourceManager
-// Dependencies: [2130, 2117, 1072, 7373, 19859, 6073, 2]
+// Dependencies: [2130, 2117, 1072, 7350, 19928, 6047, 2]
 
-// Module 19858 (NativeOnDemandResourceManager)
+// Module 19927 (NativeOnDemandResourceManager)
 import Constants from "Constants" /* 1072 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 6073 */;
-import react_nativeDefault from "react-native" /* 19859 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 6047 */;
+import react_nativeDefault from "react-native" /* 19928 */;
 import MediaEngineStore from "MediaEngineStore" /* 2130 */;
 import AppStateStore from "AppStateStore" /* 2117 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7373 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7350 */;
 import size from "module_2" /* 2 */;
 
 let importDefault;

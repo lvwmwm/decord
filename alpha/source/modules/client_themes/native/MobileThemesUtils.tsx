@@ -1,22 +1,22 @@
-// Module ID: 5396
-// Function ID: 5397
+// Module ID: 5366
+// Function ID: 5367
 // Name: MobileThemesUtils
-// Dependencies: [1192, 5194, 5397, 1238, 1240, 5195, 1241, 5197, 5198, 1113, 2896, 5398, 504, 2]
+// Dependencies: [1192, 5164, 5367, 1238, 1240, 5165, 1241, 5167, 5168, 1113, 2896, 5368, 504, 2]
 // Exports: getAllMobileThemes, getCustomBackgroundGradient, isHexagonCampaignMobileTheme, isNitroGatedMobileTheme, useAllMobileThemes, useCustomBackgroundGradient, usePerModeCustomBackgroundGradient, useSavedCustomTheme
 
-// Module 5396 (MobileThemesUtils)
+// Module 5366 (MobileThemesUtils)
 import get_initialized from "get initialized" /* 504 */;
 import intl2 from "intl" /* 1113 */;
 import ClientThemesTypes from "ClientThemesTypes" /* 1241 */;
 import _modDef2896 from "module_2896" /* 2896 */;
-import HexagonCampaignPerkAvailability from "HexagonCampaignPerkAvailability" /* 5198 */;
-import useCustomThemeDisplaySettings from "useCustomThemeDisplaySettings" /* 5398 */;
+import HexagonCampaignPerkAvailability from "HexagonCampaignPerkAvailability" /* 5168 */;
+import useCustomThemeDisplaySettings from "useCustomThemeDisplaySettings" /* 5368 */;
 import ThemeStore from "ThemeStore" /* 1192 */;
-import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 5194 */;
-import SavedCustomThemeStore from "SavedCustomThemeStore" /* 5397 */;
+import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 5164 */;
+import SavedCustomThemeStore from "SavedCustomThemeStore" /* 5367 */;
 import CustomThemeMobileStore from "CustomThemeMobileStore" /* 1238 */;
 import ClientThemesConstants from "ClientThemesConstants" /* 1240 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5195 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5165 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -28,8 +28,8 @@ let metroImportAll;
 let metroImportDefault;
 let tmp;
 let unpackModuleId;
-const HexagonCampaignUtils = tmp(5197);
-const f88366 = () => {
+const HexagonCampaignUtils = tmp(5167);
+const f88696 = () => {
   if (null == closure_0) {
     return null;
   } else {
@@ -50,7 +50,7 @@ const f88366 = () => {
     return tmp3;
   }
 };
-const f88367 = () => savedCustomTheme.getSavedCustomTheme();
+const f88697 = () => savedCustomTheme.getSavedCustomTheme();
 function getCustomThemesName() {
   const intl = intl2.intl;
   return intl.string(_modDef2896.yl1iMm);
@@ -111,7 +111,7 @@ export function usePerModeCustomBackgroundGradient(arg0) {
   _require = arg0;
   const items = [ThemeStore];
   const obj = require("get initialized");
-  return obj.useStateFromStores(items, f88366);
+  return obj.useStateFromStores(items, f88696);
 }
 export function getAllMobileThemes() {
   let id;
@@ -168,7 +168,7 @@ export function useAllMobileThemes(mode) {
   let tmp3 = dependencyMap;
   let obj = require("get initialized");
   const items = [SavedCustomThemeStore];
-  const stateFromStores = obj.useStateFromStores(items, f88367);
+  const stateFromStores = obj.useStateFromStores(items, f88697);
   let tmp5 = null;
   if (null != stateFromStores) {
     tmp5 = stateFromStores;
@@ -186,7 +186,7 @@ export function useAllMobileThemes(mode) {
   const tmp2Result6 = require("get initialized");
   const tmp9 = ThemeStore;
   if (null != mode) {
-    stateFromStores1 = tmp2Result6.useStateFromStores(items1, f88366);
+    stateFromStores1 = tmp2Result6.useStateFromStores(items1, f88696);
   }
   const tmp2Result7 = require("HexagonCampaignPerkAvailability");
   const hexagonCampaignPerkAvailability = tmp2Result7.useHexagonCampaignPerkAvailability(constants.CLIENT_THEME, MobileThemesUtils);
@@ -224,7 +224,7 @@ export function useAllMobileThemes(mode) {
 export function useSavedCustomTheme() {
   const items = [SavedCustomThemeStore];
   const obj = get_initialized;
-  const stateFromStores = obj.useStateFromStores(items, f88367);
+  const stateFromStores = obj.useStateFromStores(items, f88697);
   let tmp2 = null;
   if (null != stateFromStores) {
     tmp2 = stateFromStores;

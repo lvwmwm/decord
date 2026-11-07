@@ -1,16 +1,16 @@
-// Module ID: 14199
-// Function ID: 14200
+// Module ID: 14224
+// Function ID: 14225
 // Name: useEmojiSuggestions
-// Dependencies: [32, 19, 6876, 14200, 1388, 5119, 6859, 13934, 504, 2]
+// Dependencies: [32, 19, 6851, 14225, 1388, 5089, 6834, 13958, 504, 2]
 // Exports: default
 
-// Module 14199 (useEmojiSuggestions)
+// Module 14224 (useEmojiSuggestions)
 import EmojiConstants from "EmojiConstants" /* 1388 */;
-import EmojiTypes from "EmojiTypes" /* 5119 */;
-import EmojiStore2 from "EmojiStore" /* 6876 */;
+import EmojiTypes from "EmojiTypes" /* 5089 */;
+import EmojiStore2 from "EmojiStore" /* 6851 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import EnglishEmojiSuggestionsConstants from "EnglishEmojiSuggestionsConstants" /* 14200 */;
+import EnglishEmojiSuggestionsConstants from "EnglishEmojiSuggestionsConstants" /* 14225 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

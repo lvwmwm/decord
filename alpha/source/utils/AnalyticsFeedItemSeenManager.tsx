@@ -1,9 +1,9 @@
-// Module ID: 9979
-// Function ID: 9980
+// Module ID: 9963
+// Function ID: 9964
 // Name: AnalyticsFeedItemSeenManager
-// Dependencies: [5, 38, 572, 5928, 2]
+// Dependencies: [5, 38, 572, 5901, 2]
 
-// Module 9979 (AnalyticsFeedItemSeenManager)
+// Module 9963 (AnalyticsFeedItemSeenManager)
 import _modDef38 from "module_38" /* 38 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -267,7 +267,7 @@ class AnalyticsFeedItemSeenManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -343,7 +343,7 @@ class AnalyticsFeedItemSeenManager {
             return obj;
           }
           c2 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp16) {
           c2 = 3;
           throw tmp16;

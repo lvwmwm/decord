@@ -1,22 +1,22 @@
-// Module ID: 13940
-// Function ID: 13941
+// Module ID: 13965
+// Function ID: 13966
 // Name: CustomTypingIndicatorUtils
-// Dependencies: [6876, 8823, 5019, 6852, 1385, 1072, 1388, 1398, 4026, 5116, 5120, 1407, 1084, 5107, 504, 2]
+// Dependencies: [6851, 8802, 4989, 6827, 1385, 1072, 1388, 1398, 4028, 5086, 5090, 1407, 1084, 5077, 504, 2]
 // Exports: getCustomTypingIndicatorSuggestionMessage, getCustomTypingIndicatorSuggestionPresets, getCustomTypingIndicatorSuggestionWithNameMessage, getRandomCustomTypingIndicatorAnimation, getRandomCustomTypingIndicatorSuggestion, getSurpriseMeEmojiPool, getViewableCustomTypingIndicatorConfig, pickRandomCustomTypingIndicatorEmojis, useCurrentCustomTypingIndicatorConfig
 
-// Module 13940 (CustomTypingIndicatorUtils)
+// Module 13965 (CustomTypingIndicatorUtils)
 import Constants from "Constants" /* 1072 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1084 */;
 import EmojiConstants from "EmojiConstants" /* 1388 */;
 import user2 from "user" /* 1398 */;
 import CustomTypingIndicatorTypes from "CustomTypingIndicatorTypes" /* 1407 */;
-import _modDef4026 from "module_4026" /* 4026 */;
-import PermissionUtilsAll from "PermissionUtils" /* 5107 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 5116 */;
-import EmojiStore from "EmojiStore" /* 6876 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8823 */;
-import ChannelStore from "ChannelStore" /* 5019 */;
-import SortedGuildStore from "SortedGuildStore" /* 6852 */;
+import _modDef4028 from "module_4028" /* 4028 */;
+import PermissionUtilsAll from "PermissionUtils" /* 5077 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 5086 */;
+import EmojiStore from "EmojiStore" /* 6851 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8802 */;
+import ChannelStore from "ChannelStore" /* 4989 */;
+import SortedGuildStore from "SortedGuildStore" /* 6827 */;
 import UserStore from "UserStore" /* 1385 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -26,33 +26,35 @@ let _require, set, usableGuildEmoji;
 const Permissions = Constants.Permissions;
 const EmojiIntention = EmojiConstants.EmojiIntention;
 let obj = {};
-obj[user2.TypingSuggestion.UNSPECIFIED] = _modDef4026["6Cdy4a"];
-obj[user2.TypingSuggestion.YAPPING] = _modDef4026.E5VRaj;
-obj[user2.TypingSuggestion.VENTING] = _modDef4026.xmxdPC;
-obj[user2.TypingSuggestion.OVERSHARING] = _modDef4026["qGaH/9"];
-obj[user2.TypingSuggestion.BARKING] = _modDef4026.M282uk;
-obj[user2.TypingSuggestion.BABBLING] = _modDef4026.myNZDT;
-obj[user2.TypingSuggestion.DAYDREAMING] = _modDef4026.F7RLTP;
-obj[user2.TypingSuggestion.MEOWING] = _modDef4026.EfxyQI;
-obj[user2.TypingSuggestion.PURRING] = _modDef4026.PXYYXj;
-obj[user2.TypingSuggestion.CHIRPING] = _modDef4026.mnCAqf;
-obj[user2.TypingSuggestion.KEYSMASHING] = _modDef4026["123+VB"];
-obj[user2.TypingSuggestion.THINKING] = _modDef4026["/wXIQV"];
+obj[user2.TypingSuggestion.UNSPECIFIED] = _modDef4028["6Cdy4a"];
+obj[user2.TypingSuggestion.YAPPING] = _modDef4028.E5VRaj;
+obj[user2.TypingSuggestion.VENTING] = _modDef4028.xmxdPC;
+obj[user2.TypingSuggestion.OVERSHARING] = _modDef4028["qGaH/9"];
+obj[user2.TypingSuggestion.BARKING] = _modDef4028.M282uk;
+obj[user2.TypingSuggestion.BABBLING] = _modDef4028.myNZDT;
+obj[user2.TypingSuggestion.DAYDREAMING] = _modDef4028.F7RLTP;
+obj[user2.TypingSuggestion.MEOWING] = _modDef4028.EfxyQI;
+obj[user2.TypingSuggestion.PURRING] = _modDef4028.PXYYXj;
+obj[user2.TypingSuggestion.CHIRPING] = _modDef4028.mnCAqf;
+obj[user2.TypingSuggestion.KEYSMASHING] = _modDef4028["123+VB"];
+obj[user2.TypingSuggestion.THINKING] = _modDef4028["/wXIQV"];
+obj[user2.TypingSuggestion.SQUEAKING] = _modDef4028.khnYc8;
 let obj2 = {};
-obj2[user2.TypingSuggestion.UNSPECIFIED] = _modDef4026.kh4K4F;
-obj2[user2.TypingSuggestion.YAPPING] = _modDef4026.m9AeqG;
-obj2[user2.TypingSuggestion.VENTING] = _modDef4026["SZ0/Qu"];
-obj2[user2.TypingSuggestion.OVERSHARING] = _modDef4026.N8cWE8;
-obj2[user2.TypingSuggestion.BARKING] = _modDef4026.L5aWEN;
-obj2[user2.TypingSuggestion.BABBLING] = _modDef4026.AoBaEw;
-obj2[user2.TypingSuggestion.DAYDREAMING] = _modDef4026["3hOLod"];
-obj2[user2.TypingSuggestion.MEOWING] = _modDef4026["0Z9/o9"];
-obj2[user2.TypingSuggestion.PURRING] = _modDef4026.oK1MLW;
-obj2[user2.TypingSuggestion.CHIRPING] = _modDef4026.JPVvqj;
-obj2[user2.TypingSuggestion.KEYSMASHING] = _modDef4026.JfieQ4;
-obj2[user2.TypingSuggestion.THINKING] = _modDef4026.kz3mf0;
+obj2[user2.TypingSuggestion.UNSPECIFIED] = _modDef4028.kh4K4F;
+obj2[user2.TypingSuggestion.YAPPING] = _modDef4028.m9AeqG;
+obj2[user2.TypingSuggestion.VENTING] = _modDef4028["SZ0/Qu"];
+obj2[user2.TypingSuggestion.OVERSHARING] = _modDef4028.N8cWE8;
+obj2[user2.TypingSuggestion.BARKING] = _modDef4028.L5aWEN;
+obj2[user2.TypingSuggestion.BABBLING] = _modDef4028.AoBaEw;
+obj2[user2.TypingSuggestion.DAYDREAMING] = _modDef4028["3hOLod"];
+obj2[user2.TypingSuggestion.MEOWING] = _modDef4028["0Z9/o9"];
+obj2[user2.TypingSuggestion.PURRING] = _modDef4028.oK1MLW;
+obj2[user2.TypingSuggestion.CHIRPING] = _modDef4028.JPVvqj;
+obj2[user2.TypingSuggestion.KEYSMASHING] = _modDef4028.JfieQ4;
+obj2[user2.TypingSuggestion.THINKING] = _modDef4028.kz3mf0;
+obj2[user2.TypingSuggestion.SQUEAKING] = _modDef4028.HyvucT;
 let items = [user2.TypingSuggestion.UNSPECIFIED, user2.TypingSuggestion.YAPPING, user2.TypingSuggestion.VENTING, user2.TypingSuggestion.OVERSHARING, user2.TypingSuggestion.BARKING, user2.TypingSuggestion.BABBLING, user2.TypingSuggestion.DAYDREAMING, user2.TypingSuggestion.MEOWING];
-let items1 = [user2.TypingSuggestion.PURRING, user2.TypingSuggestion.CHIRPING, user2.TypingSuggestion.KEYSMASHING, user2.TypingSuggestion.THINKING];
+let items1 = [user2.TypingSuggestion.PURRING, user2.TypingSuggestion.CHIRPING, user2.TypingSuggestion.KEYSMASHING, user2.TypingSuggestion.THINKING, user2.TypingSuggestion.SQUEAKING];
 const items2 = [...items1];
 const items3 = [user2.TypingIndicatorAnimation.PULSE, user2.TypingIndicatorAnimation.RING, user2.TypingIndicatorAnimation.WAVE];
 let size = size_mod;

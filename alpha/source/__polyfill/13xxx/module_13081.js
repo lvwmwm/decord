@@ -1,165 +1,231 @@
 // Module ID: 13081
 // Function ID: 13082
-// Dependencies: [13027, 13071, 13056]
+// Dependencies: []
 
 // Module 13081
-import tokenize from "tokenize" /* 13027 */;
-import _mod13056 from "module_13056" /* 13056 */;
-import tokenize2 from "tokenize" /* 13071 */;
+function noop() {
 
-let items;
-let obj2;
-function consumeValueRaw(arg0) {
-  return this.Raw(arg0, tokenize2.mode.exclamationMarkOrSemicolon, true);
 }
-function consumeCustomPropertyRaw(arg0) {
-  return this.Raw(arg0, tokenize2.mode.exclamationMarkOrSemicolon, false);
-}
-function consumeValue() {
-  const self = this;
-  const tokenIndex = this.scanner.tokenIndex;
-  const ValueResult = this.Value();
-  let tmp2 = "Raw" !== ValueResult.type && false === self.scanner.eof && self.scanner.tokenType !== Semicolon;
-  if (tmp2) {
-    const scanner = self.scanner;
-    tmp2 = false === scanner.isDelim(33);
-  }
-  if (tmp2) {
-    const scanner2 = self.scanner;
-    tmp2 = false === scanner2.isBalanceEdge(tokenIndex);
-  }
-  if (tmp2) {
-    self.error();
-  }
-  return ValueResult;
-}
-function readProperty() {
-  const self = this;
-  const tokenStart = this.scanner.tokenStart;
-  if (this.scanner.tokenType === Delim) {
-    const source = self.scanner.source;
-    const charCodeAtResult = source.charCodeAt(self.scanner.tokenStart);
-    if (42 !== charCodeAtResult) {
-      if (36 !== charCodeAtResult) {
-        if (43 !== charCodeAtResult) {
-          if (35 !== charCodeAtResult) {
-            if (38 !== charCodeAtResult) {
-              if (47 === charCodeAtResult) {
-                const iter = self.scanner;
-                iter.next();
-                const scanner = self.scanner;
-                if (scanner.isDelim(47)) {
-                  const iter2 = self.scanner;
-                  iter2.next();
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-    const iter3 = self.scanner;
-    iter3.next();
-  }
-  if (self.scanner.tokenType === Hash) {
-    self.eat(tmp4);
+
+export default function(type, enter, arg2) {
+  let obj;
+  let obj2;
+  let obj3;
+  let obj4;
+  let tmp4;
+  let tmp5;
+  let closure_0 = arg2;
+  enter = noop;
+  let leave = noop;
+  if (typeof enter === "function") {
+    obj = tmp;
+    obj2 = enter;
+    obj3 = tmp;
+    obj4 = enter;
+    tmp4 = tmp;
+    tmp5 = enter;
   } else {
-    self.eat(Ident);
+    obj = tmp;
+    obj2 = tmp;
+    obj3 = tmp;
+    obj4 = tmp;
+    tmp4 = tmp;
+    tmp5 = tmp;
+    if (enter) {
+      enter = enter.enter;
+      let tmp2 = tmp;
+      if (typeof enter === "function") {
+        tmp2 = enter;
+      }
+      enter = tmp2;
+      leave = enter.leave;
+      let tmp3 = tmp;
+      if (typeof leave === "function") {
+        tmp3 = leave;
+      }
+      leave = tmp3;
+      obj = tmp3;
+      obj2 = tmp2;
+      obj3 = tmp3;
+      obj4 = tmp2;
+      tmp4 = tmp3;
+      tmp5 = tmp2;
+    }
   }
-  const scanner2 = self.scanner;
-  return scanner2.substrToCursor(tokenStart);
-}
-function getImportant() {
-  this.eat(Delim);
-  const scanner = this.scanner;
-  scanner.skipSC();
-  const consumeResult = this.consume(Ident);
-  return "important" === consumeResult || consumeResult;
-}
-const Ident = tokenize.TYPE.Ident;
-const Hash = tokenize.TYPE.Hash;
-const Colon = tokenize.TYPE.Colon;
-const Semicolon = tokenize.TYPE.Semicolon;
-const Delim = tokenize.TYPE.Delim;
-const WhiteSpace = tokenize.TYPE.WhiteSpace;
-let obj = {
-  name: "Declaration",
-  structure: obj2,
-  parse() {
-    let element;
-    const self = this;
-    const tokenStart = this.scanner.tokenStart;
-    const tokenIndex = this.scanner.tokenIndex;
-    const callResult = readProperty.call(self);
-    const obj = _mod13056;
-    const isCustomPropertyResult = obj.isCustomProperty(callResult);
-    const obj2 = isCustomPropertyResult ? consumeCustomPropertyRaw : consumeValueRaw;
-    const scanner = self.scanner;
-    const tmp3 = isCustomPropertyResult ? self.parseCustomProperty : self.parseValue;
-    scanner.skipSC();
-    self.eat(Colon);
-    const tokenIndex2 = self.scanner.tokenIndex;
-    if (!isCustomPropertyResult) {
-      const scanner2 = self.scanner;
-      scanner2.skipSC();
+  if (tmp5 === noop) {
+    if (tmp4 === noop) {
+      const _Error3 = Error;
+      const self5 = this;
+      const self6 = this;
+      let error = new Error("Neither `enter` nor `leave` walker handler is set or both aren't a function");
+      throw error;
     }
-    if (tmp3) {
-      element = self.parseWithFallback(consumeValue, obj2);
-    } else {
-      element = obj2.call(self, self.scanner.tokenIndex);
+  }
+  function walk(term) {
+    enter.call(closure_0, term);
+    switch (term.type) {
+      case "Group":
+      {
+        const terms = term.terms;
+        const item = terms.forEach(walk);
+        leave.call(closure_0, term);
+        break;
+      }
+      case "Multiplier":
+      {
+        walk(term.term);
+        break;
+      }
+      case "Type":
+      {
+        break;
+      }
+      case "Property":
+      {
+        break;
+      }
+      case "Keyword":
+      {
+        break;
+      }
+      case "AtKeyword":
+      {
+        break;
+      }
+      case "Function":
+      {
+        break;
+      }
+      case "String":
+      {
+        break;
+      }
+      case "Token":
+      {
+        break;
+      }
+      case "Comma":
+      {
+        break;
+      }
+      default:
+      {
+        const _Error = Error;
+        const self = this;
+        const self2 = this;
+        const error = new Error("Unknown type: " + term.type);
+        throw error;
+      }
     }
-    if (isCustomPropertyResult) {
-      if ("Value" === element.type) {
-        const children = element.children;
-        if (children.isEmpty()) {
-          let diff = tokenIndex2 - self.scanner.tokenIndex;
-          if (diff <= 0) {
-            const scanner3 = self.scanner;
-            while (scanner3.lookupType(diff) !== WhiteSpace) {
-              diff = diff + 1;
-            }
-            const children2 = element.children;
-            children2.appendData({ type: "WhiteSpace", loc: null, value: " " });
-          }
+  }
+  obj4.call(arg2, type);
+  switch (type.type) {
+    case "Group":
+    {
+      let terms = type.terms;
+      let item = terms.forEach(walk);
+      obj3.call(arg2, type);
+      break;
+    }
+    case "Multiplier":
+    {
+      const term = type.term;
+      obj2.call(arg2, term);
+      switch (term.type) {
+        case "Group":
+        {
+          const terms1 = term.terms;
+          const item1 = terms1.forEach(walk);
+          obj.call(arg2, term);
+          break;
+        }
+        case "Multiplier":
+        {
+          walk(term.term);
+          break;
+        }
+        case "Type":
+        {
+          break;
+        }
+        case "Property":
+        {
+          break;
+        }
+        case "Keyword":
+        {
+          break;
+        }
+        case "AtKeyword":
+        {
+          break;
+        }
+        case "Function":
+        {
+          break;
+        }
+        case "String":
+        {
+          break;
+        }
+        case "Token":
+        {
+          break;
+        }
+        case "Comma":
+        {
+          break;
+        }
+        default:
+        {
+          let _Error = Error;
+          let self = this;
+          let self2 = this;
+          const error1 = new Error("Unknown type: " + term.type);
+          throw error1;
         }
       }
+      break;
     }
-    const scanner4 = self.scanner;
-    let flag = false;
-    if (scanner4.isDelim(33)) {
-      const scanner5 = self.scanner;
-      const callResult1 = getImportant.call(self);
-      scanner5.skipSC();
-      flag = callResult1;
+    case "Type":
+    {
+      break;
     }
-    let tmp14 = false === self.scanner.eof && self.scanner.tokenType !== Semicolon;
-    if (tmp14) {
-      const scanner6 = self.scanner;
-      tmp14 = false === scanner6.isBalanceEdge(tokenIndex);
+    case "Property":
+    {
+      break;
     }
-    if (tmp14) {
-      self.error();
+    case "Keyword":
+    {
+      break;
     }
-    const obj3 = { type: "Declaration", loc: self.getLocation(tokenStart, self.scanner.tokenStart), important: flag, property: callResult, value: element };
-    return obj3;
-  },
-  generate(property) {
-    const self = this;
-    this.chunk(property.property);
-    this.chunk(":");
-    this.node(property.value);
-    if (property.important) {
-      let str = "!important";
-      const chunk = self.chunk;
-      if (true !== property.important) {
-        str = `!${property.important}`;
-      }
-      chunk(str);
+    case "AtKeyword":
+    {
+      break;
     }
-  },
-  walkContext: "declaration"
+    case "Function":
+    {
+      break;
+    }
+    case "String":
+    {
+      break;
+    }
+    case "Token":
+    {
+      break;
+    }
+    case "Comma":
+    {
+      break;
+    }
+    default:
+    {
+      const _Error2 = Error;
+      const self3 = this;
+      const self4 = this;
+      const error2 = new Error("Unknown type: " + type.type);
+      throw error2;
+    }
+  }
 };
-obj2 = { important: items, property: String, value: ["Value", "Raw"] };
-items = [Boolean, String];
-
-export default obj;

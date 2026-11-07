@@ -1,21 +1,21 @@
-// Module ID: 19990
-// Function ID: 19991
+// Module ID: 20059
+// Function ID: 20060
 // Name: AssetChooser
-// Dependencies: [5, 19, 17, 1072, 21, 5170, 575, 5229, 8311, 7068, 1113, 5872, 19991, 19992, 1187, 2]
+// Dependencies: [5, 19, 17, 1072, 21, 5140, 575, 5199, 8290, 7043, 1113, 5842, 20060, 20061, 1187, 2]
 
-// Module 19990 (AssetChooser)
+// Module 20059 (AssetChooser)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl3 from "intl" /* 1113 */;
-import native from "native" /* 5229 */;
-import FastImageDefault from "FastImage" /* 5872 */;
-import Pressables from "Pressables" /* 7068 */;
-import AssetRegistryDefault from "AssetRegistry" /* 19992 */;
+import native from "native" /* 5199 */;
+import FastImageDefault from "FastImage" /* 5842 */;
+import Pressables from "Pressables" /* 7043 */;
+import AssetRegistryDefault from "AssetRegistry" /* 20061 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 let c2, c3;
@@ -59,7 +59,7 @@ class AssetChooser extends PureComponent {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -110,7 +110,7 @@ class AssetChooser extends PureComponent {
               }
             }
             c3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp15) {
           c3 = 3;
@@ -161,7 +161,7 @@ class AssetChooser extends PureComponent {
     const tmp10 = FastImageDefault;
     const tmp4 = React4;
     if (null == source) {
-      tmp9Result = tmp9(19991);
+      tmp9Result = tmp9(20060);
     }
     items = [, ];
     const obj3 = { source: tmp9Result, style: tmp.assetImage };

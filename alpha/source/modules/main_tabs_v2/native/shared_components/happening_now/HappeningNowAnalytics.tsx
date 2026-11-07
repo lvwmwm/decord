@@ -1,10 +1,10 @@
-// Module ID: 18396
-// Function ID: 18397
+// Module ID: 18443
+// Function ID: 18444
 // Name: HappeningNowAnalytics
 // Dependencies: [32, 502, 11, 2]
 // Exports: getAffinityProperties
 
-// Module 18396 (HappeningNowAnalytics)
+// Module 18443 (HappeningNowAnalytics)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;

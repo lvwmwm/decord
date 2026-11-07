@@ -1,31 +1,31 @@
-// Module ID: 16883
-// Function ID: 16884
+// Module ID: 16931
+// Function ID: 16932
 // Name: SettingsAgeGroupScreen
-// Dependencies: [19, 17, 8524, 1072, 21, 5170, 575, 8046, 2185, 5781, 1113, 3252, 16842, 11703, 16884, 16846, 2]
+// Dependencies: [19, 17, 8503, 1072, 21, 5140, 575, 8024, 2185, 5751, 1113, 3252, 16890, 11685, 16932, 16894, 2]
 // Exports: default
 
-// Module 16883 (SettingsAgeGroupScreen)
+// Module 16931 (SettingsAgeGroupScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl3 from "intl" /* 1113 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2185 */;
 import _modDef3252 from "module_3252" /* 3252 */;
-import Text_Text from "Text/Text" /* 5781 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8046 */;
-import SettingsConstants from "SettingsConstants" /* 8524 */;
-import SettingBuilders from "SettingBuilders" /* 11703 */;
-import SettingLayoutDefault from "SettingLayout" /* 16846 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8024 */;
+import SettingsConstants from "SettingsConstants" /* 8503 */;
+import SettingBuilders from "SettingBuilders" /* 11685 */;
+import SettingLayoutDefault from "SettingLayout" /* 16894 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let metroImportAll;
 let metroImportDefault;
 let obj2;
 let tmp;
-const AgeNoticeAgeGroupHeader2 = tmp(16884);
+const AgeNoticeAgeGroupHeader2 = tmp(16932);
 function SettingsAgeGroupHeader() {
   let intl;
   let intl2;
@@ -59,7 +59,7 @@ const result = size.fileFinishedImporting("modules/user_settings/age_group/nativ
 
 export default function SettingsAgeGroupScreen() {
   let isAgeNoticeSettingsEnabled;
-  let obj = isAgeNoticeSettingsEnabled(16842);
+  let obj = isAgeNoticeSettingsEnabled(16890);
   isAgeNoticeSettingsEnabled = obj.useIsAgeNoticeSettingsEnabled();
   let items = [isAgeNoticeSettingsEnabled];
   const node = react.useMemo(() => {

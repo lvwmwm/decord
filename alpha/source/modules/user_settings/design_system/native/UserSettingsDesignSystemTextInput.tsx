@@ -1,40 +1,40 @@
-// Module ID: 18062
-// Function ID: 18063
+// Module ID: 18109
+// Function ID: 18110
 // Name: UserSettingsDesignSystemTextInput
-// Dependencies: [32, 19, 17, 21, 5170, 575, 7065, 6185, 7173, 8754, 16122, 5418, 7405, 7339, 5781, 8744, 7174, 7305, 8119, 7656, 7180, 5788, 5404, 7229, 2]
+// Dependencies: [32, 19, 17, 21, 5140, 575, 7040, 6159, 7148, 8733, 16170, 5388, 7382, 7316, 5751, 8723, 7149, 7282, 8098, 7633, 7155, 5758, 5374, 7204, 2]
 // Exports: default
 
-// Module 18062 (UserSettingsDesignSystemTextInput)
+// Module 18109 (UserSettingsDesignSystemTextInput)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5404 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5418 */;
-import Text_Text from "Text/Text" /* 5781 */;
-import components_Button_Button from "components/Button/Button" /* 5788 */;
-import Stack_Stack from "Stack/Stack" /* 6185 */;
-import Card_Card from "Card/Card" /* 7065 */;
-import TextInput_TextInput from "TextInput/TextInput" /* 7173 */;
-import Input2 from "Input" /* 7174 */;
-import TextField from "TextField" /* 7180 */;
-import SplitTextInput from "SplitTextInput" /* 7229 */;
-import SearchBar from "SearchBar" /* 7305 */;
-import TextArea from "TextArea" /* 7339 */;
-import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7405 */;
-import SettingsIcon from "SettingsIcon" /* 7656 */;
-import IconButton2 from "IconButton" /* 8119 */;
-import TextIcon from "TextIcon" /* 8744 */;
-import GhostInput2 from "GhostInput" /* 16122 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5388 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import components_Button_Button from "components/Button/Button" /* 5758 */;
+import Stack_Stack from "Stack/Stack" /* 6159 */;
+import Card_Card from "Card/Card" /* 7040 */;
+import TextInput_TextInput from "TextInput/TextInput" /* 7148 */;
+import Input2 from "Input" /* 7149 */;
+import TextField from "TextField" /* 7155 */;
+import SplitTextInput from "SplitTextInput" /* 7204 */;
+import SearchBar from "SearchBar" /* 7282 */;
+import TextArea from "TextArea" /* 7316 */;
+import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7382 */;
+import SettingsIcon from "SettingsIcon" /* 7633 */;
+import IconButton2 from "IconButton" /* 8098 */;
+import TextIcon from "TextIcon" /* 8723 */;
+import GhostInput2 from "GhostInput" /* 16170 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;
 let metroRequire;
 let obj2;
 let tmp6;
-const AtIcon = tmp6(8754);
+const AtIcon = tmp6(8733);
 function Sample(children) {
   children = children.children;
   const obj = { shadow: "low", style: closure_8().sample, children: metroRequire(Stack_Stack.Stack, { spacing: 24, children }) };

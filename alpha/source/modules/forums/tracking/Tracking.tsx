@@ -1,21 +1,21 @@
-// Module ID: 8294
-// Function ID: 8295
+// Module ID: 8273
+// Function ID: 8274
 // Name: Tracking
-// Dependencies: [5019, 7800, 7545, 8295, 1072, 5916, 8296, 1252, 8427, 8428, 1377, 8432, 2]
+// Dependencies: [4989, 7777, 7522, 8274, 1072, 5889, 8275, 1252, 8406, 8407, 1377, 8411, 2]
 // Exports: maybeTrackForumNewPostDraftCreated, trackForumAddMediaToOriginalPostClicked, trackForumChannelMediaUploaderClicked, trackForumChannelSeenBatch, trackForumCreateNewPostClick, trackForumCreateNewPostKeybindUsed, trackForumCreateNewPostStarted, trackForumEnableAutomodClicked, trackForumLayoutUpdated, trackForumMorePostsLoaded, trackForumNewPostCleared, trackForumOnboardingClicked, trackForumPostClicked, trackForumPostCreated, trackForumPostLinkCopied, trackForumPostSidebarViewed, trackForumPreviewPostClicked, trackForumScrolled, trackForumSearchCleared, trackForumSearched, trackForumSortOrderUpdated, trackForumTagFilterClicked, trackForumUpsellModalClicked, trackForumUpsellModalViewed, trackMobileForumComposerDismissed, trackMobileForumComposerOpened
 
-// Module 8294 (Tracking)
+// Module 8273 (Tracking)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5916 */;
-import DraftStore2 from "DraftStore" /* 7800 */;
-import TrackingUtils from "TrackingUtils" /* 8296 */;
-import ThreadAnalyticsUtils from "ThreadAnalyticsUtils" /* 8427 */;
-import getChannelOpenedMetadata from "getChannelOpenedMetadata" /* 8428 */;
-import trackChannelOpenedClickstreamDefault from "trackChannelOpenedClickstream" /* 8432 */;
-import ChannelStore from "ChannelStore" /* 5019 */;
-import ForumPostMessagesStore from "ForumPostMessagesStore" /* 7545 */;
-import ForumSearchStore from "ForumSearchStore" /* 8295 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5889 */;
+import DraftStore2 from "DraftStore" /* 7777 */;
+import TrackingUtils from "TrackingUtils" /* 8275 */;
+import ThreadAnalyticsUtils from "ThreadAnalyticsUtils" /* 8406 */;
+import getChannelOpenedMetadata from "getChannelOpenedMetadata" /* 8407 */;
+import trackChannelOpenedClickstreamDefault from "trackChannelOpenedClickstream" /* 8411 */;
+import ChannelStore from "ChannelStore" /* 4989 */;
+import ForumPostMessagesStore from "ForumPostMessagesStore" /* 7522 */;
+import ForumSearchStore from "ForumSearchStore" /* 8274 */;
 import Constants from "Constants" /* 1072 */;
 import size_mod from "module_2" /* 2 */;
 

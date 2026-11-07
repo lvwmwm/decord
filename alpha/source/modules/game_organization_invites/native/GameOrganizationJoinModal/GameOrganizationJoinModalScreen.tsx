@@ -1,19 +1,19 @@
-// Module ID: 13424
-// Function ID: 13425
+// Module ID: 13447
+// Function ID: 13448
 // Name: GameOrganizationJoinModalScreen
-// Dependencies: [19, 17, 21, 5170, 1627, 8063, 10103, 575, 5744, 2]
+// Dependencies: [19, 17, 21, 5140, 1627, 8041, 8042, 575, 5714, 2]
 // Exports: default
 
-// Module 13424 (GameOrganizationJoinModalScreen)
+// Module 13447 (GameOrganizationJoinModalScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import NavigatorConstants from "NavigatorConstants" /* 5744 */;
-import ModalScreen2 from "ModalScreen" /* 8063 */;
-import ExpressiveGradient2 from "ExpressiveGradient" /* 10103 */;
+import NavigatorConstants from "NavigatorConstants" /* 5714 */;
+import ModalScreen2 from "ModalScreen" /* 8041 */;
+import ExpressiveGradient2 from "ExpressiveGradient" /* 8042 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;

@@ -1,69 +1,27 @@
 // Module ID: 8364
 // Function ID: 8365
-// Dependencies: [8365, 8366]
+// Dependencies: [8349]
 
 // Module 8364
-import _mod8365 from "module_8365" /* 8365 */;
-import _mod8366 from "module_8366" /* 8366 */;
+import _mod8349 from "module_8349" /* 8349 */;
 
-let hasOwnProperty;
-
-const self = this;
-let tmp = this && self.__createBinding;
-if (!tmp) {
-  let tmp2 = globalThis;
-  let _Object = Object;
-  tmp = Object.create ? ((arg0, __esModule, arg2, arg3) => {
-    function get() {
-      return __esModule[closure_1];
+let obj = {
+  isXMLFile(dataView) {
+    let tmp = dataView;
+    if (tmp) {
+      const obj = _mod8349;
+      tmp = obj.getStringFromDataView(dataView, c2, length.length) === length;
     }
-    closure_0 = __esModule;
-    let closure_1 = arg2;
-    let tmp = arg3;
-    if (undefined === arg3) {
-      tmp = arg2;
-    }
-    let ownPropertyDescriptor = Object.getOwnPropertyDescriptor(__esModule, arg2);
-    let tmp3 = ownPropertyDescriptor;
-    if (tmp3) {
-      let tmp4;
-      if ("get" in ownPropertyDescriptor) {
-        tmp4 = !__esModule.__esModule;
-      } else {
-        tmp4 = ownPropertyDescriptor.writable || ownPropertyDescriptor.configurable;
-      }
-      tmp3 = !tmp4;
-    }
-    if (!tmp3) {
-      ownPropertyDescriptor = { enumerable: true, get };
-      const obj = { enumerable: true, get };
-    }
-    Object.defineProperty(arg0, tmp, ownPropertyDescriptor);
-  }) : ((arg0, arg1, arg2, arg3) => {
-    let tmp = arg3;
-    if (undefined === arg3) {
-      tmp = arg2;
-    }
-    arg0[tmp] = arg1[arg2];
-  });
-}
-let closure_0 = tmp;
-let tmp3 = self && self.__exportStar || ((obj, arg1) => {
-  for (const key10007 in obj) {
-    let callResult = "default" === key10007;
-    if (!callResult) {
-      let _Object = Object;
-      hasOwnProperty = Object.prototype.hasOwnProperty;
-      callResult = hasOwnProperty.call(arg1, key10007);
-    }
-    if (callResult) {
-      continue;
-    } else {
-      let tmp3 = closure_0(arg1, obj, key10007);
-      continue;
-    }
-    continue;
+    return tmp;
+  },
+  findOffsets(byteLength) {
+    const xmpChunks = [];
+    const obj = { dataOffset, length: byteLength.byteLength };
+    xmpChunks.push(obj);
+    return { xmpChunks };
   }
-});
-tmp3(_mod8365, exports);
-tmp3(_mod8366, exports);
+};
+let c2 = 0;
+let c3 = "<?xpacket begin";
+
+export default obj;

@@ -1,20 +1,20 @@
-// Module ID: 15233
-// Function ID: 15234
+// Module ID: 15267
+// Function ID: 15268
 // Name: AddToWishlistItemCard
-// Dependencies: [5, 32, 19, 17, 1072, 21, 5170, 575, 15231, 9568, 9637, 1252, 9580, 5867, 1113, 9569, 9565, 2]
+// Dependencies: [5, 32, 19, 17, 1072, 21, 5140, 575, 15265, 9550, 9619, 1252, 9562, 5837, 1113, 9551, 9547, 2]
 // Exports: default
 
-// Module 15233 (AddToWishlistItemCard)
+// Module 15267 (AddToWishlistItemCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import SKUPreviewDefault from "SKUPreview" /* 9568 */;
-import HeartOutlineIcon2 from "HeartOutlineIcon" /* 9637 */;
+import SKUPreviewDefault from "SKUPreview" /* 9550 */;
+import HeartOutlineIcon2 from "HeartOutlineIcon" /* 9619 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let c4;
@@ -85,7 +85,7 @@ export default function AddToWishlistItemCard(sku) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c3;
@@ -150,7 +150,7 @@ export default function AddToWishlistItemCard(sku) {
           closure_128_7(false);
         }
         c4 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp33) {
         analyticsLocations = tmp33;
         if (0 === c3) {

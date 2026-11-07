@@ -1,11 +1,11 @@
-// Module ID: 11865
-// Function ID: 11866
+// Module ID: 11856
+// Function ID: 11857
 // Name: getOrFetchApplication
-// Dependencies: [5, 2162, 6961, 2]
+// Dependencies: [5, 2162, 6936, 2]
 // Exports: default
 
-// Module 11865 (getOrFetchApplication)
-import ApplicationActionCreators from "ApplicationActionCreators" /* 6961 */;
+// Module 11856 (getOrFetchApplication)
+import ApplicationActionCreators from "ApplicationActionCreators" /* 6936 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ApplicationStore from "ApplicationStore" /* 2162 */;
 import size from "module_2" /* 2 */;
@@ -27,7 +27,7 @@ let obj = function _getOrFetchApplication() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c3;

@@ -1,12 +1,12 @@
-// Module ID: 10063
-// Function ID: 10064
+// Module ID: 10047
+// Function ID: 10048
 // Name: useDiscountedPremiumPlan
-// Dependencies: [19, 7696, 504, 2]
+// Dependencies: [19, 7673, 504, 2]
 // Exports: useDiscountedPremiumPlan
 
-// Module 10063 (useDiscountedPremiumPlan)
+// Module 10047 (useDiscountedPremiumPlan)
 import react from "react" /* 19 */;
-import IAPStore from "IAPStore" /* 7696 */;
+import IAPStore from "IAPStore" /* 7673 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

@@ -1,10 +1,10 @@
-// Module ID: 11790
-// Function ID: 11791
+// Module ID: 11781
+// Function ID: 11782
 // Name: isGameOrganizationInviteRecipient
 // Dependencies: [2]
 // Exports: default
 
-// Module 11790 (isGameOrganizationInviteRecipient)
+// Module 11781 (isGameOrganizationInviteRecipient)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/game_organization_invites/isGameOrganizationInviteRecipient.tsx");

@@ -1,16 +1,16 @@
-// Module ID: 15189
-// Function ID: 15190
+// Module ID: 15223
+// Function ID: 15224
 // Name: UserProfileGameCoverGrid
-// Dependencies: [19, 17, 21, 5170, 15171, 15173, 2]
+// Dependencies: [19, 17, 21, 5140, 15197, 15211, 2]
 // Exports: default
 
-// Module 15189 (UserProfileGameCoverGrid)
+// Module 15223 (UserProfileGameCoverGrid)
 import react_native from "react-native" /* 17 */;
-import useGameCoverLayout from "useGameCoverLayout" /* 15171 */;
-import UserProfileWidgetExpandableItems from "UserProfileWidgetExpandableItems" /* 15173 */;
+import UserProfileGameWidgetConstants from "UserProfileGameWidgetConstants" /* 15197 */;
+import UserProfileWidgetExpandableItems from "UserProfileWidgetExpandableItems" /* 15211 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -20,7 +20,7 @@ let obj2;
 const View = react_native.View;
 ({ jsx: c3, Fragment: closure_4, jsxs: hasOwnProperty } = Fragment);
 let obj = { grid: obj2 };
-obj2 = { flexDirection: "row", flexWrap: "wrap", gap: useGameCoverLayout.GAME_COVER_GAP };
+obj2 = { flexDirection: "row", flexWrap: "wrap", gap: UserProfileGameWidgetConstants.GAME_COVER_GRID_GAP };
 let closure_6 = createStyles.createStyles(obj);
 const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileGameCoverGrid.tsx");
 

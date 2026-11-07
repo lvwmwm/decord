@@ -1,14 +1,14 @@
-// Module ID: 17093
-// Function ID: 17094
+// Module ID: 17141
+// Function ID: 17142
 // Name: useRefetchWhenSelectedTeenMissing
-// Dependencies: [5, 19, 7814, 4, 504, 8461, 7816, 2]
+// Dependencies: [5, 19, 7791, 4, 504, 8440, 7793, 2]
 // Exports: default
 
-// Module 17093 (useRefetchWhenSelectedTeenMissing)
+// Module 17141 (useRefetchWhenSelectedTeenMissing)
 import logger_Logger from "logger/Logger" /* 4 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7814 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7791 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5, closure_2;
@@ -50,7 +50,7 @@ export default function useRefetchWhenSelectedTeenMissing() {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           let c3;
@@ -91,7 +91,7 @@ export default function useRefetchWhenSelectedTeenMissing() {
                 c3 = 0;
               }
               c5 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } catch (tmp14) {
             closure_2 = tmp14;

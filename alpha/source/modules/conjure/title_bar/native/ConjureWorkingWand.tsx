@@ -1,20 +1,20 @@
-// Module ID: 14918
-// Function ID: 14919
+// Module ID: 14951
+// Function ID: 14952
 // Name: ConjureWorkingWand
-// Dependencies: [19, 17, 5171, 21, 1652, 671, 575, 8122, 5170, 504, 5400, 14919, 2]
+// Dependencies: [19, 17, 5141, 21, 1652, 671, 575, 8101, 5140, 504, 5370, 14952, 2]
 // Exports: default
 
-// Module 14918 (ConjureWorkingWand)
+// Module 14951 (ConjureWorkingWand)
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
 import _mod1652 from "module_1652" /* 1652 */;
-import timing_timing from "timing/timing" /* 5400 */;
-import inlineStyles from "inlineStyles" /* 8122 */;
+import timing_timing from "timing/timing" /* 5370 */;
+import inlineStyles from "inlineStyles" /* 8101 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5171 */;
+import AccessibilityStore from "AccessibilityStore" /* 5141 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -74,18 +74,18 @@ function WandPart(color) {
   if (null != band) {
     obj2 = { children: items5 };
     const obj3 = { children: items4 };
-    const Defs = tmp2(8122).Defs;
+    const Defs = tmp2(8101).Defs;
     const _HermesInternal = HermesInternal;
     const obj4 = { id: "" + replaced + "band", x1: "0", y1: "0", x2: "1", y2: "0", children: null };
-    const LinearGradient = tmp2(8122).LinearGradient;
+    const LinearGradient = tmp2(8101).LinearGradient;
     const obj5 = { offset: "0", stopColor: nativeDefault.unsafe_rawColors.WHITE, stopOpacity: 0 };
-    const Stop = tmp2(8122).Stop;
+    const Stop = tmp2(8101).Stop;
     const items3 = [metroImportDefault(Stop, obj5), , ];
     const obj6 = { offset: "0.5", stopColor: nativeDefault.unsafe_rawColors.WHITE, stopOpacity: 1 };
-    const Stop2 = tmp2(8122).Stop;
+    const Stop2 = tmp2(8101).Stop;
     items3[1] = metroImportDefault(Stop2, obj6);
     const obj7 = { offset: "1", stopColor: nativeDefault.unsafe_rawColors.WHITE, stopOpacity: 0 };
-    const Stop3 = tmp2(8122).Stop;
+    const Stop3 = tmp2(8101).Stop;
     items3[2] = metroImportDefault(Stop3, obj7);
     class ConjureWorkingWandTsx2 {
       constructor() {
@@ -103,14 +103,14 @@ function WandPart(color) {
     items4 = [metroImportAll(LinearGradient, obj4), ];
     const size2 = { id: "" + replaced + "mask", maskUnits: "userSpaceOnUse", x: 0, y: 0, width: 24, height: 24, children: metroImportDefault(closure_15, size3) };
     const _HermesInternal2 = HermesInternal;
-    const Mask = tmp2(8122).Mask;
+    const Mask = tmp2(8101).Mask;
     size3 = { animatedProps, y: 0, width: 19.200000000000003, height: 24, fill: "url(#" + replaced + "band)" };
     const _HermesInternal3 = HermesInternal;
     items4[1] = metroImportDefault(Mask, size2);
     items5 = [metroImportAll(Defs, obj3), ];
     const _HermesInternal4 = HermesInternal;
     const obj8 = { d: path, fill, mask: "url(#" + replaced + "mask)" };
-    const Path = tmp2(8122).Path;
+    const Path = tmp2(8101).Path;
     items5[1] = metroImportDefault(Path, obj8);
     tmp8Result = tmp8(React4, obj2);
   }

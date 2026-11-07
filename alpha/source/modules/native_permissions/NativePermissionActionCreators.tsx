@@ -1,9 +1,9 @@
-// Module ID: 8052
-// Function ID: 8053
+// Module ID: 8030
+// Function ID: 8031
 // Name: NativePermissionActionCreators
 // Dependencies: [572, 2]
 
-// Module 8052 (NativePermissionActionCreators)
+// Module 8030 (NativePermissionActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 

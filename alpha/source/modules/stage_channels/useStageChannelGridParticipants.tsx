@@ -1,27 +1,27 @@
-// Module ID: 12066
-// Function ID: 12067
+// Module ID: 12057
+// Function ID: 12058
 // Name: useStageChannelGridParticipants
-// Dependencies: [32, 19, 6923, 6793, 504, 6846, 6839, 12, 6845, 12067, 2]
+// Dependencies: [32, 19, 6898, 6768, 504, 6821, 6814, 12, 6820, 12058, 2]
 // Exports: useStageChannelParticipantsList, useStageChannelParticipantsListThrottled, useThrottleDurationForChannel, useThrottledStageAudience
 
-// Module 12066 (useStageChannelGridParticipants)
+// Module 12057 (useStageChannelGridParticipants)
 import _mod12 from "module_12" /* 12 */;
-import StageChannelParticipants from "StageChannelParticipants" /* 6839 */;
-import StageChannelParticipantStoreHooks from "StageChannelParticipantStoreHooks" /* 6845 */;
+import StageChannelParticipants from "StageChannelParticipants" /* 6814 */;
+import StageChannelParticipantStoreHooks from "StageChannelParticipantStoreHooks" /* 6820 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6923 */;
-import StageChannelParticipantStore from "StageChannelParticipantStore" /* 6793 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6898 */;
+import StageChannelParticipantStore from "StageChannelParticipantStore" /* 6768 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, dependencyMap;
 
-const f101650 = () => {
+const f102013 = () => {
   const items = [id, StageChannelParticipantStore.getParticipantsVersion(id)];
   return items;
 };
-const f101651 = () => ChannelRTCStore.getSelectedParticipantId(id);
+const f102014 = () => ChannelRTCStore.getSelectedParticipantId(id);
 let closure_6 = { SELECTED: 0, [0]: "SELECTED", SPEAKER: 1, [1]: "SPEAKER", AUDIENCE: 2, [2]: "AUDIENCE", MEDIA: 3, [3]: "MEDIA" };
 const result = size.fileFinishedImporting("modules/stage_channels/useStageChannelGridParticipants.tsx");
 
@@ -35,11 +35,11 @@ export function useStageChannelParticipantsList(arg0, arg1, arg2) {
   const items = [StageChannelParticipantStore];
   const items1 = [arg0];
   const obj = require("get initialized");
-  const stateFromStores = obj.useStateFromStores(items, f101650, items1, require("SecondaryIndexMapUtils").isVersionEqual);
+  const stateFromStores = obj.useStateFromStores(items, f102013, items1, require("SecondaryIndexMapUtils").isVersionEqual);
   const items2 = [stateFromStores1];
   const items3 = [arg0];
   const obj2 = require("get initialized");
-  stateFromStores1 = obj2.useStateFromStores(items2, f101651, items3);
+  stateFromStores1 = obj2.useStateFromStores(items2, f102014, items3);
   const items4 = [stateFromStores, arg1, stateFromStores1, arg2, arg0];
   return stateFromStores.useMemo(() => {
     let items4;
@@ -147,11 +147,11 @@ export function useStageChannelParticipantsListThrottled(id, memo, throttleDurat
   let obj = require("get initialized");
   let items = [StageChannelParticipantStore];
   let items1 = [id];
-  const stateFromStores = obj.useStateFromStores(items, f101650, items1, require("SecondaryIndexMapUtils").isVersionEqual);
+  const stateFromStores = obj.useStateFromStores(items, f102013, items1, require("SecondaryIndexMapUtils").isVersionEqual);
   let items2 = [stateFromStores1];
   let items3 = [id];
   const obj2 = require("get initialized");
-  stateFromStores1 = obj2.useStateFromStores(items2, f101651, items3);
+  stateFromStores1 = obj2.useStateFromStores(items2, f102014, items3);
   let items4 = [stateFromStores, memo, stateFromStores1, flag, id];
   memo = stateFromStores.useMemo(() => {
     let items4;

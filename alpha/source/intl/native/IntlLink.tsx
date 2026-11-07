@@ -1,16 +1,16 @@
-// Module ID: 11085
-// Function ID: 11086
+// Module ID: 11070
+// Function ID: 11071
 // Name: IntlLink
-// Dependencies: [19, 21, 5170, 575, 5184, 5864, 2067, 1187, 2]
+// Dependencies: [19, 21, 5140, 575, 5154, 5834, 2067, 1187, 2]
 // Exports: IntlLink
 
-// Module 11085 (IntlLink)
+// Module 11070 (IntlLink)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef2067 from "module_2067" /* 2067 */;
-import LinkingDefault from "Linking" /* 5864 */;
+import LinkingDefault from "Linking" /* 5834 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
@@ -34,7 +34,7 @@ export function IntlLink(target) {
   target = target.target;
   const children = target.children;
   const tmp = target;
-  const tmp3 = closure_5(react.useContext(target(5184).AccessibilityPreferencesContext).alwaysShowLinkDecorations);
+  const tmp3 = closure_5(react.useContext(target(5154).AccessibilityPreferencesContext).alwaysShowLinkDecorations);
   if (typeof target === "string") {
     fn = function y() {
       const openURL = LinkingDefault.openURL;

@@ -1,10 +1,10 @@
-// Module ID: 8553
-// Function ID: 8554
+// Module ID: 8532
+// Function ID: 8533
 // Name: getNumSubscriptionsPurchasedFromSystemMessage
 // Dependencies: [2]
 // Exports: default
 
-// Module 8553 (getNumSubscriptionsPurchasedFromSystemMessage)
+// Module 8532 (getNumSubscriptionsPurchasedFromSystemMessage)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/premium/getNumSubscriptionsPurchasedFromSystemMessage.tsx");

@@ -1,14 +1,14 @@
-// Module ID: 10093
-// Function ID: 10094
+// Module ID: 10077
+// Function ID: 10078
 // Name: useTooltip
-// Dependencies: [32, 5, 19, 21, 3, 1266, 5770, 10094, 1493, 10099, 2]
+// Dependencies: [32, 5, 19, 21, 3, 1266, 5740, 10078, 1493, 10083, 2]
 // Exports: useTooltip, useTooltipHelper
 
-// Module 10093 (useTooltip)
+// Module 10077 (useTooltip)
 import LoggerDefault from "Logger" /* 3 */;
 import Fragment from "Fragment" /* 21 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1493 */;
-import AnimatedTooltip2 from "AnimatedTooltip" /* 10094 */;
+import AnimatedTooltip2 from "AnimatedTooltip" /* 10078 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -44,7 +44,7 @@ export function useTooltip(ref, memo) {
   const tmp8 = context(1493)();
   let closure_3 = tmp8;
   let closure_4 = obj.useRef(tmp8);
-  const context1 = obj.useContext(tmp(5770).LayerContext);
+  const context1 = obj.useContext(tmp(5740).LayerContext);
   let closure_6 = obj.useRef(null);
   const items1 = [context1, ref];
   const effect = obj.useEffect(() => {
@@ -79,7 +79,7 @@ export function useTooltip(ref, memo) {
             } else if (arg0 === 2) {
               return { value, done: true };
             } else {
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } else {
             try {
@@ -130,7 +130,7 @@ export function useTooltip(ref, memo) {
                   c4 = 0;
                 }
                 ref2 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               }
             } catch (tmp18) {
               closure_3 = tmp18;
@@ -205,7 +205,7 @@ export function useTooltipHelper(ref, targetRef, callback) {
             } else if (arg0 === 2) {
               return { value, done: true };
             } else {
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } else {
             try {
@@ -256,7 +256,7 @@ export function useTooltipHelper(ref, targetRef, callback) {
                   c4 = 0;
                 }
                 ref2 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               }
             } catch (tmp18) {
               closure_3 = tmp18;

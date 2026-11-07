@@ -1,32 +1,32 @@
-// Module ID: 7492
-// Function ID: 7493
+// Module ID: 7469
+// Function ID: 7470
 // Name: WishlistRecommendationRecord
 // Dependencies: [1405, 2164, 2140, 2]
 
-// Module 7492 (WishlistRecommendationRecord)
+// Module 7469 (WishlistRecommendationRecord)
 import Record from "Record" /* 1405 */;
 import SKURecord from "SKURecord" /* 2164 */;
 import ApplicationRecord from "ApplicationRecord" /* 2140 */;
 import size from "module_2" /* 2 */;
 
-const f91629 = (item) => SKURecord.createFromServer(item);
-const f91630 = (item) => {
+const f91966 = (item) => SKURecord.createFromServer(item);
+const f91967 = (item) => {
   let tmp;
   let tmp2;
   [tmp, tmp2] = item;
   const items = [tmp, tmp2];
   return items;
 };
-const f91631 = (item) => ApplicationRecord.createFromServer(item);
+const f91968 = (item) => ApplicationRecord.createFromServer(item);
 class WishlistRecommendationRecord extends Record {
   constructor(skus) {
     const tmp5 = new WishlistRecommendationRecord(tmp4, tmp3, tmp2, tmp);
     skus = skus.skus;
-    tmp5.skus = skus.map(f91629);
+    tmp5.skus = skus.map(f91966);
     const entries = Object.entries(skus.skus_to_user_and_reason);
-    tmp5.skusToUserAndReason = fromEntries(entries.map(f91630));
+    tmp5.skusToUserAndReason = fromEntries(entries.map(f91967));
     const applications = skus.applications;
-    tmp5.applications = applications.map(f91631);
+    tmp5.applications = applications.map(f91968);
     return tmp5;
   }
   static fromServer(skus) {
@@ -35,13 +35,13 @@ class WishlistRecommendationRecord extends Record {
       const self2 = this;
       const tmp7 = new WishlistRecommendationRecord(tmp4, tmp3, tmp2, tmp);
       skus = skus.skus;
-      tmp7.skus = skus.map(f91629);
+      tmp7.skus = skus.map(f91966);
       const _Object = Object;
       const _Object2 = Object;
       const entries = Object.entries(skus.skus_to_user_and_reason);
-      tmp7.skusToUserAndReason = fromEntries(entries.map(f91630));
+      tmp7.skusToUserAndReason = fromEntries(entries.map(f91967));
       const applications = skus.applications;
-      tmp7.applications = applications.map(f91631);
+      tmp7.applications = applications.map(f91968);
       return tmp7;
     } else {
       throw new TypeError("Trying to call a non-function");

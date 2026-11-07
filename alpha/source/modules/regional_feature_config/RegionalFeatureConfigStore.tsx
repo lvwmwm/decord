@@ -1,13 +1,13 @@
-// Module ID: 5848
-// Function ID: 5849
+// Module ID: 5818
+// Function ID: 5819
 // Name: RegionalFeatureConfigStore
-// Dependencies: [5849, 5853, 504, 572, 2]
+// Dependencies: [5819, 5823, 504, 572, 2]
 
-// Module 5848 (RegionalFeatureConfigStore)
+// Module 5818 (RegionalFeatureConfigStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import RegionalFeatureConfigModels from "RegionalFeatureConfigModels" /* 5853 */;
-import CountryCodeUtils from "CountryCodeUtils" /* 5849 */;
+import RegionalFeatureConfigModels from "RegionalFeatureConfigModels" /* 5823 */;
+import CountryCodeUtils from "CountryCodeUtils" /* 5819 */;
 import size from "module_2" /* 2 */;
 
 let c2;

@@ -1,19 +1,19 @@
-// Module ID: 12127
-// Function ID: 12128
+// Module ID: 12118
+// Function ID: 12119
 // Name: UserSettingsSoundboardVolume
-// Dependencies: [19, 17, 1072, 21, 5170, 7620, 7410, 12115, 1113, 7063, 12124, 7612, 5781, 2185, 2]
+// Dependencies: [19, 17, 1072, 21, 5140, 7597, 7387, 12106, 1113, 7038, 12115, 7589, 5751, 2185, 2]
 // Exports: default
 
-// Module 12127 (UserSettingsSoundboardVolume)
+// Module 12118 (UserSettingsSoundboardVolume)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2185 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7410 */;
-import SoundboardActionCreators from "SoundboardActionCreators" /* 7612 */;
-import VolumeSliderDefault from "VolumeSlider" /* 12124 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7387 */;
+import SoundboardActionCreators from "SoundboardActionCreators" /* 7589 */;
+import VolumeSliderDefault from "VolumeSlider" /* 12115 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -41,14 +41,14 @@ export default function SoundboardVolume() {
   let obj9;
   let tmp3;
   const tmp = closure_8();
-  let obj = analyticsLocations(7620);
+  let obj = analyticsLocations(7597);
   const amplitudinalSoundboardVolume = obj.getAmplitudinalSoundboardVolume();
   analyticsLocations = useAnalyticsLocationsDefault().analyticsLocations;
   const obj2 = { title: intl.string(analyticsLocations(1113).t.xbMc8r), hasIcons: false, children: closure_5(TableRow, obj3) };
-  const UserSettingsTableRowGroup = analyticsLocations(12115).UserSettingsTableRowGroup;
+  const UserSettingsTableRowGroup = analyticsLocations(12106).UserSettingsTableRowGroup;
   intl = analyticsLocations(1113).intl;
   obj3 = { label: intl2.string(analyticsLocations(1113).t.kbFsAD), subLabel: closure_7(closure_6, obj4) };
-  TableRow = analyticsLocations(7063).TableRow;
+  TableRow = analyticsLocations(7038).TableRow;
   intl2 = analyticsLocations(1113).intl;
   obj4 = { children: items };
   const obj5 = { style: tmp.slider, children: closure_5(tmp3, obj6) };
@@ -65,7 +65,7 @@ export default function SoundboardVolume() {
   intl3 = analyticsLocations(1113).intl;
   items = [closure_5(View, obj5), ];
   const obj7 = { style: tmp.text, variant: "body-sm/medium", children: format(BPbGq7, obj8) };
-  const Text = analyticsLocations(5781).Text;
+  const Text = analyticsLocations(5751).Text;
   const intl4 = analyticsLocations(1113).intl;
   format = intl4.format;
   obj8 = { helpCenterArticle: obj9.getArticleURL(HelpdeskArticles.SOUNDBOARD) };

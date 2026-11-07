@@ -1,17 +1,17 @@
-// Module ID: 20410
-// Function ID: 20411
+// Module ID: 20478
+// Function ID: 20479
 // Name: SafetyFlowsUtils
-// Dependencies: [5, 19, 1385, 20404, 20406, 6824, 20405, 5867, 1113, 2960, 1499, 20409, 2]
+// Dependencies: [5, 19, 1385, 20472, 20474, 6799, 20473, 5837, 1113, 2960, 1499, 20477, 2]
 // Exports: getScreensForTaskType, useOnTaskComplete
 
-// Module 20410 (SafetyFlowsUtils)
+// Module 20478 (SafetyFlowsUtils)
 import intl2 from "intl" /* 1113 */;
 import _modDef2960 from "module_2960" /* 2960 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5867 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6824 */;
-import types from "types" /* 20404 */;
-import constants from "constants" /* 20405 */;
-import SafetyFlowsActionCreators from "SafetyFlowsActionCreators" /* 20406 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5837 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6799 */;
+import types from "types" /* 20472 */;
+import constants from "constants" /* 20473 */;
+import SafetyFlowsActionCreators from "SafetyFlowsActionCreators" /* 20474 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1385 */;
@@ -36,7 +36,7 @@ let obj = function _fetchAndUpdateTask() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -165,7 +165,7 @@ export function useOnTaskComplete() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -211,7 +211,7 @@ export function useOnTaskComplete() {
             data = value;
             closure_2_8(data, data);
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp14) {
           c4 = 3;

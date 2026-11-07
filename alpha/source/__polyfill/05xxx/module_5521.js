@@ -1,42 +1,105 @@
 // Module ID: 5521
 // Function ID: 5522
-// Dependencies: [5522, 5524, 5523, 5511, 5510, 5520]
+// Dependencies: [32, 5464, 5491, 5508, 5482]
+// Exports: usePanGesture
 
 // Module 5521
-import reanimatedUtils from "reanimatedUtils" /* 5510 */;
-import allowedNativeProps from "allowedNativeProps" /* 5511 */;
-import _mod5520 from "module_5520" /* 5520 */;
-import prepareConfigForNativeSide from "prepareConfigForNativeSide" /* 5522 */;
-import eventUtils from "eventUtils" /* 5523 */;
-import _mod5524 from "module_5524" /* 5524 */;
+import reanimatedWrapper from "reanimatedWrapper" /* 5464 */;
+import ComposedGestureName from "ComposedGestureName" /* 5482 */;
+import _mod5491 from "module_5491" /* 5491 */;
+import _mod5508 from "module_5508" /* 5508 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
 
-const prepareConfigForNativeSide_export = prepareConfigForNativeSide.prepareConfigForNativeSide;
-const allowedNativeProps_export = allowedNativeProps.allowedNativeProps;
+let tmp3;
+let tmp4;
+function transformOffsetProp(iter, activeOffsetX) {
+  let tmp10;
+  let tmp9;
+  if (undefined !== iter[activeOffsetX]) {
+    const _Array = Array;
+    if (Array.isArray(iter[activeOffsetX])) {
+      const _HermesInternal4 = HermesInternal;
+      iter["" + activeOffsetX + "Start"] = iter[activeOffsetX][0];
+      const _HermesInternal5 = HermesInternal;
+      iter["" + activeOffsetX + "End"] = iter[activeOffsetX][1];
+    } else {
+      const Reanimated = reanimatedWrapper.Reanimated;
+      let isSharedValueResult;
+      const tmp3 = require;
+      if (Reanimated != null) {
+        isSharedValueResult = Reanimated.isSharedValue(iter);
+      }
+      if (isSharedValueResult) {
+        const tmp3Result = tmp3(5491);
+        const _HermesInternal2 = HermesInternal;
+        [tmp9, tmp10] = tmp3Result.splitSingleOffset(iter[activeOffsetX].value);
+        iter["" + activeOffsetX + "Start"] = tmp9;
+        const _HermesInternal3 = HermesInternal;
+        iter["" + activeOffsetX + "End"] = tmp10;
+        _slicedToArray(tmp3Result.splitSingleOffset(iter[activeOffsetX].value), 2);
+      } else {
+        let str = "End";
+        if (iter[activeOffsetX] < 0) {
+          str = "Start";
+        }
+        const _HermesInternal = HermesInternal;
+        iter["" + activeOffsetX + str] = iter[activeOffsetX];
+      }
+    }
+    delete tmp[tmp2];
+  }
+}
+function transformPanProps(iter) {
+  transformOffsetProp(iter, "activeOffsetY");
+  transformOffsetProp(iter, "failOffsetX");
+  transformOffsetProp(iter, "failOffsetY");
+  transformOffsetProp(iter, "activeOffsetX");
+  const obj = _mod5491;
+  iter.changeEventCalculator = obj.getChangeEventCalculator(diffCalculator);
+  iter.fillInDefaultValues = fillInDefaultValues;
+  return iter;
+}
+const items = [["minDistance", "minDist"], ["averageTouches", "avgTouches"]];
+const map = new Map(items);
+const items1 = [{ code: "(function diffCalculator_Pnpm_usePanGestureTs1(current,previous){return{changeX:previous?current.translationX-previous.translationX:current.translationX,changeY:previous?current.translationY-previous.translationY:current.translationY};})" }];
+[tmp3] = items1;
+function diffCalculator(translationX, translationX2) {
+  let diff;
+  let diff1;
+  translationX = translationX.translationX;
+  if (translationX2) {
+    diff = translationX - translationX2.translationX;
+  } else {
+    diff = translationX;
+  }
+  const translationY = translationX.translationY;
+  const obj = { changeX: diff, changeY: diff1 };
+  if (translationX2) {
+    diff1 = translationY - translationX2.translationY;
+  } else {
+    diff1 = translationY;
+  }
+  return obj;
+}
+diffCalculator.__workletHash = 15159965948275;
+diffCalculator.__initData = tmp3;
+const items2 = [{ code: "(function fillInDefaultValues_Pnpm_usePanGestureTs2(event){event.changeX=0;event.changeY=0;})" }];
+[tmp4] = items2;
+function fillInDefaultValues(arg0) {
+  arg0.changeX = 0;
+  arg0.changeY = 0;
+}
+fillInDefaultValues.__workletHash = 1036941275160;
+fillInDefaultValues.__initData = tmp4;
+let closure_8 = {};
 
-export const isGestureEnabled = prepareConfigForNativeSide.isGestureEnabled;
-export { prepareConfigForNativeSide_export as prepareConfigForNativeSide };
-export const useClonedAndRemappedConfig = prepareConfigForNativeSide.useClonedAndRemappedConfig;
-export const runCallback = _mod5524.runCallback;
-export const touchEventTypeToCallbackType = _mod5524.touchEventTypeToCallbackType;
-export const useMemoizedGestureCallbacks = _mod5524.useMemoizedGestureCallbacks;
-export const checkMappingForChangeProperties = eventUtils.checkMappingForChangeProperties;
-export const flattenAndFilterEvent = eventUtils.flattenAndFilterEvent;
-export const getChangeEventCalculator = eventUtils.getChangeEventCalculator;
-export const isEventForHandlerWithTag = eventUtils.isEventForHandlerWithTag;
-export const isNativeAnimatedEvent = eventUtils.isNativeAnimatedEvent;
-export const maybeExtractNativeEvent = eventUtils.maybeExtractNativeEvent;
-export const shouldHandleTouchEvents = eventUtils.shouldHandleTouchEvents;
-export { allowedNativeProps_export as allowedNativeProps };
-export const EMPTY_WHITE_LIST = allowedNativeProps.EMPTY_WHITE_LIST;
-export const HandlerCallbacks = allowedNativeProps.HandlerCallbacks;
-export const NativeWrapperProps = allowedNativeProps.NativeWrapperProps;
-export const PropsToFilter = allowedNativeProps.PropsToFilter;
-export const PropsWhiteLists = allowedNativeProps.PropsWhiteLists;
-export const bindSharedValues = reanimatedUtils.bindSharedValues;
-export const hasWorkletEventHandlers = reanimatedUtils.hasWorkletEventHandlers;
-export const maybeUnpackValue = reanimatedUtils.maybeUnpackValue;
-export const splitSingleOffset = reanimatedUtils.splitSingleOffset;
-export const unbindSharedValues = reanimatedUtils.unbindSharedValues;
-export const containsDuplicates = _mod5520.containsDuplicates;
-export const isComposedGesture = _mod5520.isComposedGesture;
-export const prepareRelations = _mod5520.prepareRelations;
+export function usePanGesture(gestureHandlerProps) {
+  let tmp = gestureHandlerProps;
+  if (gestureHandlerProps === undefined) {
+    tmp = closure_8;
+  }
+  const obj = _mod5491;
+  const clonedAndRemappedConfig = obj.useClonedAndRemappedConfig(tmp, map, transformPanProps);
+  const obj2 = _mod5508;
+  return obj2.useGesture(ComposedGestureName.SingleGestureName.Pan, clonedAndRemappedConfig);
+}

@@ -1,25 +1,25 @@
-// Module ID: 8903
-// Function ID: 8904
+// Module ID: 8885
+// Function ID: 8886
 // Name: useUserProfileColors
-// Dependencies: [5171, 1083, 5399, 7437, 504, 5754, 575, 8894, 1090, 2]
+// Dependencies: [5141, 1083, 5369, 7414, 504, 5724, 575, 8875, 1090, 2]
 // Exports: useUserProfileColors
 
-// Module 8903 (useUserProfileColors)
+// Module 8885 (useUserProfileColors)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1090 */;
-import useThemeDefault from "useTheme" /* 5399 */;
-import useToken from "useToken" /* 5754 */;
-import useProfileThemeValues from "useProfileThemeValues" /* 7437 */;
-import UserProfileGradientUtils from "UserProfileGradientUtils" /* 8894 */;
-import AccessibilityStore from "AccessibilityStore" /* 5171 */;
+import useThemeDefault from "useTheme" /* 5369 */;
+import useToken from "useToken" /* 5724 */;
+import useProfileThemeValues from "useProfileThemeValues" /* 7414 */;
+import UserProfileGradientUtils from "UserProfileGradientUtils" /* 8875 */;
+import AccessibilityStore from "AccessibilityStore" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 const ThemeTypes = Constants.ThemeTypes;
 let result = size.fileFinishedImporting("modules/user_profile/hooks/native/useUserProfileColors.tsx");
 
-export function useUserProfileColors(theme) {
+export function useUserProfileColors(profileTheme) {
   let int2hex;
   let int2hex2;
   let obj4;
@@ -36,8 +36,8 @@ export function useUserProfileColors(theme) {
   let tmp3Result10;
   let tmp3Result7;
   let tmp3Result8;
-  ({ primaryColor, secondaryColor } = theme);
-  theme = theme.theme;
+  ({ primaryColor, secondaryColor } = profileTheme);
+  const theme = profileTheme.theme;
   const tmp2 = useThemeDefault();
   const obj = useProfileThemeValues;
   const profileThemeValues = obj.useProfileThemeValues(theme);

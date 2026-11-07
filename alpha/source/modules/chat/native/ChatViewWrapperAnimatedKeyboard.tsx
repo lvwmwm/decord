@@ -1,17 +1,17 @@
-// Module ID: 11395
-// Function ID: 11396
+// Module ID: 11377
+// Function ID: 11378
 // Name: ChatViewWrapperAnimatedKeyboard
-// Dependencies: [19, 17, 21, 1652, 5403, 11396, 5400, 5766, 11408, 11410, 5768, 11411, 2]
+// Dependencies: [19, 17, 21, 1652, 5373, 11378, 5370, 5736, 11390, 11392, 5738, 11393, 2]
 // Exports: default
 
-// Module 11395 (ChatViewWrapperAnimatedKeyboard)
+// Module 11377 (ChatViewWrapperAnimatedKeyboard)
 import react_native from "react-native" /* 17 */;
 import _mod1652 from "module_1652" /* 1652 */;
-import timingPresets from "timingPresets" /* 5403 */;
-import useCustomKeyboardHeightDefault from "useCustomKeyboardHeight" /* 5766 */;
-import useChannelSafeAreaHeightSharedValueDefault from "useChannelSafeAreaHeightSharedValue" /* 11396 */;
-import useChannelSafeAreaBottomStylesDefault from "useChannelSafeAreaBottomStyles" /* 11408 */;
-import useChatViewPointerEventsDefault from "useChatViewPointerEvents" /* 11410 */;
+import timingPresets from "timingPresets" /* 5373 */;
+import useCustomKeyboardHeightDefault from "useCustomKeyboardHeight" /* 5736 */;
+import useChannelSafeAreaHeightSharedValueDefault from "useChannelSafeAreaHeightSharedValue" /* 11378 */;
+import useChannelSafeAreaBottomStylesDefault from "useChannelSafeAreaBottomStyles" /* 11390 */;
+import useChatViewPointerEventsDefault from "useChatViewPointerEvents" /* 11392 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -24,9 +24,9 @@ let metroRequire;
 let tmp;
 let tmp4;
 const _modDef1652 = tmp(1652);
-const timing_timing = tmp4(5400);
-const LayerScope2 = tmp4(5768);
-const StickyWrapper2 = tmp4(11411);
+const timing_timing = tmp4(5370);
+const LayerScope2 = tmp4(5738);
+const StickyWrapper2 = tmp4(11393);
 let View = react_native.View;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 const Easing = _mod1652.Easing;

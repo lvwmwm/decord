@@ -1,43 +1,66 @@
 // Module ID: 13119
 // Function ID: 13120
 // Name: tokenize
-// Dependencies: [13027]
+// Dependencies: [13050]
 
 // Module 13119 (tokenize)
-import tokenize from "tokenize" /* 13027 */;
+import tokenize from "tokenize" /* 13050 */;
 
-const String = tokenize.TYPE.String;
+let items;
+let obj2;
 const Ident = tokenize.TYPE.Ident;
-const Url = tokenize.TYPE.Url;
 const Function = tokenize.TYPE.Function;
-const LeftParenthesis = tokenize.TYPE.LeftParenthesis;
-const obj = {
-  parse: {
-    prelude() {
-      const self = this;
-      const list = this.createList();
-      const scanner = this.scanner;
-      scanner.skipSC();
-      const tokenType = this.scanner.tokenType;
-      if (String === tokenType) {
-        list.push(self.String());
+const Colon = tokenize.TYPE.Colon;
+const RightParenthesis = tokenize.TYPE.RightParenthesis;
+let obj = {
+  name: "PseudoClassSelector",
+  structure: obj2,
+  parse() {
+    let consumeResult;
+    let tmp4;
+    const self = this;
+    const tokenStart = this.scanner.tokenStart;
+    this.eat(Colon);
+    if (this.scanner.tokenType === Function) {
+      let list;
+      const str = self.consumeFunctionName();
+      const formatted = str.toLowerCase();
+      const pseudo = self.pseudo;
+      if (pseudo.hasOwnProperty(formatted)) {
+        const scanner = self.scanner;
+        scanner.skipSC();
+        const scanner2 = self.scanner;
+        const obj = self.pseudo[formatted];
+        const callResult = obj.call(self);
+        scanner2.skipSC();
+        list = callResult;
       } else {
-        if (Url !== tokenType) {
-          if (Function !== tokenType) {
-            self.error("String or url() is expected");
-          }
-        }
-        list.push(self.Url());
+        list = self.createList();
+        list.push(self.Raw(self.scanner.tokenIndex, null, false));
       }
-      const tmp7 = self.lookupNonWSType(0) !== Ident && self.lookupNonWSType(0) !== LeftParenthesis;
-      if (!tmp7) {
-        list.push(self.WhiteSpace());
-        list.push(self.MediaQueryList());
-      }
-      return list;
-    },
-    block: null
-  }
+      self.eat(RightParenthesis);
+      tmp4 = list;
+      consumeResult = str;
+    } else {
+      consumeResult = self.consume(Ident);
+      tmp4 = null;
+    }
+    const element = { type: "PseudoClassSelector", loc: self.getLocation(tokenStart, self.scanner.tokenStart), name: consumeResult, children: tmp4 };
+    return element;
+  },
+  generate(name) {
+    const self = this;
+    this.chunk(":");
+    this.chunk(name.name);
+    if (null !== name.children) {
+      self.chunk("(");
+      self.children(name);
+      self.chunk(")");
+    }
+  },
+  walkContext: "function"
 };
+obj2 = { name: String, children: items };
+items = [["Raw"], null];
 
 export default obj;

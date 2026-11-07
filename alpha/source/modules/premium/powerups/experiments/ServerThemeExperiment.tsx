@@ -1,13 +1,13 @@
-// Module ID: 5381
-// Function ID: 5382
+// Module ID: 5351
+// Function ID: 5352
 // Name: ServerThemeExperiment
-// Dependencies: [1072, 5382, 5393, 2]
+// Dependencies: [1072, 5352, 5363, 2]
 // Exports: getServerThemeEnabled, getServerThemeRollbackEnabled, resolveServerThemeConfig, useServerThemeEnabled, useServerThemeRollbackEnabled
 
-// Module 5381 (ServerThemeExperiment)
+// Module 5351 (ServerThemeExperiment)
 import Constants from "Constants" /* 1072 */;
-import ServerThemeApexShadowExperiment2 from "ServerThemeApexShadowExperiment" /* 5393 */;
-import createExperiment from "module_5382" /* 5382 */;
+import ServerThemeApexShadowExperiment2 from "ServerThemeApexShadowExperiment" /* 5363 */;
+import createExperiment from "module_5352" /* 5352 */;
 import size from "module_2" /* 2 */;
 
 let items;

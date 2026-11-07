@@ -1,20 +1,20 @@
-// Module ID: 7344
-// Function ID: 7345
+// Module ID: 7321
+// Function ID: 7322
 // Name: MemberVerificationAlertUpdate
-// Dependencies: [19, 1072, 21, 5170, 6188, 1113, 5864, 5872, 7345, 5781, 2]
+// Dependencies: [19, 1072, 21, 5140, 6162, 1113, 5834, 5842, 7322, 5751, 2]
 // Exports: default
 
-// Module 7344 (MemberVerificationAlertUpdate)
+// Module 7321 (MemberVerificationAlertUpdate)
 import Constants from "Constants" /* 1072 */;
 import intl5 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5781 */;
-import LinkingDefault from "Linking" /* 5864 */;
-import FastImageDefault from "FastImage" /* 5872 */;
-import AlertDefault from "Alert" /* 6188 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7345 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import LinkingDefault from "Linking" /* 5834 */;
+import FastImageDefault from "FastImage" /* 5842 */;
+import AlertDefault from "Alert" /* 6162 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7322 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;

@@ -1,28 +1,28 @@
-// Module ID: 18870
-// Function ID: 18871
+// Module ID: 18920
+// Function ID: 18921
 // Name: useReplyActions
-// Dependencies: [5, 19, 5019, 7800, 1385, 1388, 5175, 504, 8806, 9884, 7572, 18871, 5224, 7923, 7735, 18869, 5404, 5867, 1113, 17050, 9016, 10077, 5772, 18871, 2118, 2]
+// Dependencies: [5, 19, 4989, 7777, 1385, 1388, 5145, 504, 8785, 9868, 7549, 18921, 5194, 7900, 7712, 18919, 5374, 5837, 1113, 17098, 8998, 10061, 5742, 18921, 2118, 2]
 // Exports: useReplyActions
 
-// Module 18870 (useReplyActions)
+// Module 18920 (useReplyActions)
 import EmojiConstants from "EmojiConstants" /* 1388 */;
 import asyncRequire from "asyncRequire" /* 2118 */;
-import MessageConstants from "MessageConstants" /* 5175 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5404 */;
-import DraftStore from "DraftStore" /* 7800 */;
-import ContentInventoryEntryType from "ContentInventoryEntryType" /* 8806 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 9016 */;
-import openEmojiPickerActionSheet2 from "openEmojiPickerActionSheet" /* 10077 */;
+import MessageConstants from "MessageConstants" /* 5145 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
+import DraftStore from "DraftStore" /* 7777 */;
+import ContentInventoryEntryType from "ContentInventoryEntryType" /* 8785 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8998 */;
+import openEmojiPickerActionSheet2 from "openEmojiPickerActionSheet" /* 10061 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 5019 */;
+import ChannelStore from "ChannelStore" /* 4989 */;
 import UserStore from "UserStore" /* 1385 */;
 import size from "module_2" /* 2 */;
 
 let c3, c4, channel, closure_4;
 
 let tmp;
-const MessageReactionsTypes = tmp(5772);
+const MessageReactionsTypes = tmp(5742);
 let react = react_mod;
 const DraftType = DraftStore.DraftType;
 const EmojiIntention = EmojiConstants.EmojiIntention;
@@ -101,7 +101,7 @@ export function useReplyActions(content) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -206,7 +206,7 @@ export function useReplyActions(content) {
             open("content_inventory_message_sent", obj18);
           }
           c4 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp69) {
           c4 = 3;
           throw tmp69;
@@ -255,7 +255,7 @@ export function useReplyActions(content) {
             obj2.feedItemActioned(obj3);
             const obj5 = { content, author: tmp, sendMessage, onPressEmoji: callback1 };
             const obj4 = ActionSheetActionCreatorsDefault;
-            obj4.openLazy(asyncRequire(18871, tmp10.paths), "ReactActionSheet", obj5);
+            obj4.openLazy(asyncRequire(18921, tmp10.paths), "ReactActionSheet", obj5);
           }
         }, items6),
       openEmojiPicker: callback2

@@ -1,9 +1,9 @@
-// Module ID: 20103
-// Function ID: 20104
+// Module ID: 20172
+// Function ID: 20173
 // Name: EnhancedRoleColorConstants
 // Dependencies: [2]
 
-// Module 20103 (EnhancedRoleColorConstants)
+// Module 20172 (EnhancedRoleColorConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/premium/powerups/constants/EnhancedRoleColorConstants.tsx");

@@ -1,15 +1,15 @@
-// Module ID: 11722
-// Function ID: 11723
+// Module ID: 11704
+// Function ID: 11705
 // Name: useLoadMessageContentEntries
-// Dependencies: [32, 5, 19, 2162, 2142, 5288, 8844, 6961, 8807, 38, 8813, 2116, 8805, 5804, 2]
+// Dependencies: [32, 5, 19, 2162, 2142, 5258, 8823, 6936, 8786, 38, 8792, 2116, 8784, 5774, 2]
 // Exports: default
 
-// Module 11722 (useLoadMessageContentEntries)
+// Module 11704 (useLoadMessageContentEntries)
 import _modDef38 from "module_38" /* 38 */;
 import Server from "Server" /* 2116 */;
 import Constants from "Constants" /* 2142 */;
-import utils_FunctionUtils from "utils/FunctionUtils" /* 5288 */;
-import useAvatarColor from "useAvatarColor" /* 8807 */;
+import utils_FunctionUtils from "utils/FunctionUtils" /* 5258 */;
+import useAvatarColor from "useAvatarColor" /* 8786 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -48,7 +48,7 @@ let obj = function _fetchApplicationParts() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -104,7 +104,7 @@ let obj = function _fetchApplicationParts() {
           return obj;
         }
         c4 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp5) {
         c4 = 3;
         throw tmp5;
@@ -132,7 +132,7 @@ obj = function _fetchUserParts() {
               const obj3 = { value, done: true };
               return obj3;
             } else {
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } else {
             try {
@@ -161,7 +161,7 @@ obj = function _fetchUserParts() {
                 return obj;
               } else {
                 author_id = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               }
             } catch (tmp7) {
               author_id = 3;
@@ -182,7 +182,7 @@ obj = function _fetchUserParts() {
             let obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -210,7 +210,7 @@ obj = function _fetchUserParts() {
               return obj;
             } else {
               c1 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } catch (tmp5) {
             c1 = 3;
@@ -237,7 +237,7 @@ obj = function _fetchWatchedContentParts() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -271,7 +271,7 @@ obj = function _fetchWatchedContentParts() {
             return { value, done: true };
           }
           c1 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp10) {
           c1 = 3;
           throw tmp10;
@@ -294,7 +294,7 @@ obj = function _fetchListenedContentParts() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -325,7 +325,7 @@ obj = function _fetchListenedContentParts() {
           return obj;
         }
         c1 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp6) {
         c1 = 3;
         throw tmp6;
@@ -348,7 +348,7 @@ obj = function _fetchTopArtistContentParts() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -379,7 +379,7 @@ obj = function _fetchTopArtistContentParts() {
           return obj;
         }
         c1 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp9) {
         c1 = 3;
         throw tmp9;
@@ -405,7 +405,7 @@ obj = function _loadContentEntryParts() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -456,7 +456,7 @@ obj = function _loadContentEntryParts() {
                       let obj2 = { value, done: true };
                       return obj2;
                     } else {
-                      return { value: "HermesInternal", done: null };
+                      return { value: "HermesInternal", done: "HermesInternal" };
                     }
                   } else {
                     try {
@@ -482,7 +482,7 @@ obj = function _loadContentEntryParts() {
                                   const obj2 = { value, done: true };
                                   return obj2;
                                 } else {
-                                  return { value: "HermesInternal", done: null };
+                                  return { value: "HermesInternal", done: "HermesInternal" };
                                 }
                               } else {
                                 try {
@@ -510,7 +510,7 @@ obj = function _loadContentEntryParts() {
                                     return obj;
                                   } else {
                                     c0 = 3;
-                                    return { value: "HermesInternal", done: null };
+                                    return { value: "HermesInternal", done: "HermesInternal" };
                                   }
                                 } catch (tmp6) {
                                   c0 = 3;
@@ -530,7 +530,7 @@ obj = function _loadContentEntryParts() {
                           closure_0.push(fetchEntryParts());
                         }
                         c0 = 3;
-                        return { value: "HermesInternal", done: null };
+                        return { value: "HermesInternal", done: "HermesInternal" };
                       }
                     } catch (tmp3) {
                       c0 = 3;
@@ -572,7 +572,7 @@ obj = function _loadContentEntryParts() {
             } else {
               let num7 = 3;
               c11 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } else {
             if (3 === tmp3) {
@@ -679,7 +679,7 @@ function isMessageRenderable(message) {
     let tmp2 = nextResult;
     let tmp3 = require;
     if (nextResult.type === Server.ComponentType.CONTENT_INVENTORY_ENTRY) {
-      let tmp3Result = tmp3(8805);
+      let tmp3Result = tmp3(8784);
       obj = { component: obj2, message };
       obj2 = { contentInventoryEntry: tmp2.contentInventoryEntry };
       if (null == tmp3Result.transformToRowGeneratedContentInventoryEntryComponent(obj)) {
@@ -742,7 +742,7 @@ export default function useLoadMessageContentEntries(arg0) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c5;
@@ -819,7 +819,7 @@ export default function useLoadMessageContentEntries(arg0) {
           c5 = 0;
         }
         c7 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp36) {
         if (0 === c5) {
           c7 = 3;

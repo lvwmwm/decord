@@ -1,14 +1,14 @@
-// Module ID: 15002
-// Function ID: 15003
+// Module ID: 15034
+// Function ID: 15035
 // Name: useMediaViewerPanGesture
-// Dependencies: [19, 1652, 8928, 8927, 5791, 1705, 7227, 5450, 2]
+// Dependencies: [19, 1652, 8910, 8909, 5761, 1705, 7202, 5420, 2]
 // Exports: useMediaViewerPanGesture, useMediaViewerPanGestureConfig
 
-// Module 15002 (useMediaViewerPanGesture)
+// Module 15034 (useMediaViewerPanGesture)
 import _mod1705 from "module_1705" /* 1705 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5450 */;
-import spring_spring from "spring/spring" /* 5791 */;
-import useVideoControls from "useVideoControls" /* 8928 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5420 */;
+import spring_spring from "spring/spring" /* 5761 */;
+import useVideoControls from "useVideoControls" /* 8910 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -16,7 +16,7 @@ const require = globalThis.__r;
 let _require, dependencyMap, set;
 
 let tmp;
-const MediaViewerAnalyticsManager = tmp(8927);
+const MediaViewerAnalyticsManager = tmp(8909);
 let closure_4 = { damping: 15, mass: 1, stiffness: 250, overshootClamping: true };
 let closure_5 = { code: "(function useMediaViewerPanGestureTsx1(){let[scheduleOnRN,handleClose]=this.__closure;scheduleOnRN(handleClose);})" };
 let closure_6 = { code: "(function useMediaViewerPanGestureTsx2(){let[start,translatePos,isInteracting]=this.__closure;start.set({x:0,y:translatePos.get()});isInteracting.set(true);})" };

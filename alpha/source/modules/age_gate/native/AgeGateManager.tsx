@@ -1,18 +1,18 @@
-// Module ID: 19707
-// Function ID: 19708
+// Module ID: 19776
+// Function ID: 19777
 // Name: AgeGateManager
-// Dependencies: [5, 5019, 5073, 5201, 1097, 1072, 7373, 6814, 6824, 19708, 2118, 19712, 1092, 2]
+// Dependencies: [5, 4989, 5043, 5171, 1097, 1072, 7350, 6789, 6799, 19777, 2118, 19781, 1092, 2]
 
-// Module 19707 (AgeGateManager)
-import AgeGateUtils from "AgeGateUtils" /* 6814 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6824 */;
+// Module 19776 (AgeGateManager)
+import AgeGateUtils from "AgeGateUtils" /* 6789 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6799 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 5019 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5073 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5201 */;
+import ChannelStore from "ChannelStore" /* 4989 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5043 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5171 */;
 import AgeGateConstants from "AgeGateConstants" /* 1097 */;
 import Constants from "Constants" /* 1072 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7373 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7350 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3, closure_1, importDefault;
@@ -57,7 +57,7 @@ class AgeGateManager extends AutomaticLifecycleManager {
   handleAgeGateModalOpen(source) {
     source = source.source;
     const channelId = source.channelId;
-    let obj = source(6814);
+    let obj = source(6789);
     importDefault = obj.getAgeGateType(source);
     let obj2 = ModalActionCreatorsDefault;
     obj2.pushLazy(_asyncToGenerator(async (arg0, value) => {
@@ -71,7 +71,7 @@ class AgeGateManager extends AutomaticLifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {

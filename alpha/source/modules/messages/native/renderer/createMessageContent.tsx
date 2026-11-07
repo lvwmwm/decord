@@ -1,40 +1,40 @@
-// Module ID: 8480
-// Function ID: 8481
+// Module ID: 8459
+// Function ID: 8460
 // Name: createMessageContent
-// Dependencies: [17, 5171, 2162, 5194, 6876, 8475, 8481, 5103, 8482, 7865, 5104, 7564, 1192, 502, 5019, 5082, 5041, 5112, 8484, 1385, 5175, 8470, 1072, 8485, 5806, 8486, 11, 8487, 6833, 1113, 8488, 8489, 8490, 6640, 1403, 8495, 8499, 4995, 8503, 6198, 8504, 8506, 6968, 8508, 8651, 8652, 8778, 7550, 8779, 8780, 8786, 8593, 8817, 6596, 1414, 1411, 8820, 1187, 10918, 10927, 10931, 10919, 10923, 8579, 15313, 1380, 15314, 5089, 7432, 15315, 15316, 4992, 12735, 15317, 8828, 7528, 575, 15318, 8511, 15320, 15321, 8643, 15324, 15325, 15342, 15368, 15370, 15384, 8515, 8516, 15385, 15388, 15391, 15392, 8517, 8513, 2]
+// Dependencies: [17, 5141, 2162, 5164, 6851, 8454, 8460, 5073, 8461, 7842, 5074, 7541, 1192, 502, 4989, 5052, 5011, 5082, 8463, 1385, 5145, 8449, 1072, 8464, 5776, 8465, 11, 8466, 6808, 1113, 8467, 8468, 8469, 6615, 1403, 8474, 8478, 4965, 8482, 6172, 8483, 8485, 6943, 8487, 8630, 8631, 8757, 7527, 8758, 8759, 8765, 8572, 8796, 6571, 1414, 1411, 8799, 1187, 10901, 10910, 10914, 10902, 10906, 8558, 15347, 1380, 15348, 5059, 7409, 15349, 15350, 4962, 12748, 15351, 8807, 7505, 575, 15352, 8490, 15354, 15355, 8622, 15358, 15359, 15376, 15403, 15405, 15419, 8494, 8495, 15420, 15423, 15426, 15427, 8496, 8492, 2]
 
-// Module 8480 (createMessageContent)
+// Module 8459 (createMessageContent)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import intl20 from "intl" /* 1113 */;
-import useChannelName from "useChannelName" /* 5806 */;
-import SpoilerChannelUtils from "SpoilerChannelUtils" /* 6833 */;
-import ReferencedMessageStore2 from "ReferencedMessageStore" /* 7865 */;
-import RowGeneratorConstants from "RowGeneratorConstants" /* 8470 */;
-import GuildTagConstants from "GuildTagConstants" /* 8485 */;
-import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8486 */;
-import MessageCountUtils from "MessageCountUtils" /* 8487 */;
-import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8488 */;
-import transformMessageComponentsDefault from "transformMessageComponents" /* 8786 */;
-import AccessibilityStore_mod from "AccessibilityStore" /* 5171 */;
+import useChannelName from "useChannelName" /* 5776 */;
+import SpoilerChannelUtils from "SpoilerChannelUtils" /* 6808 */;
+import ReferencedMessageStore2 from "ReferencedMessageStore" /* 7842 */;
+import RowGeneratorConstants from "RowGeneratorConstants" /* 8449 */;
+import GuildTagConstants from "GuildTagConstants" /* 8464 */;
+import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8465 */;
+import MessageCountUtils from "MessageCountUtils" /* 8466 */;
+import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8467 */;
+import transformMessageComponentsDefault from "transformMessageComponents" /* 8765 */;
+import AccessibilityStore_mod from "AccessibilityStore" /* 5141 */;
 import ApplicationStore_mod from "ApplicationStore" /* 2162 */;
-import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 5194 */;
-import EmojiStore from "EmojiStore" /* 6876 */;
-import GuildAutomodMessageStore from "GuildAutomodMessageStore" /* 8475 */;
-import InteractionStore from "InteractionStore" /* 8481 */;
-import LurkingStore from "LurkingStore" /* 5103 */;
-import MediaPostSharePromptStore from "MediaPostSharePromptStore" /* 8482 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 5104 */;
-import ThreadMessageStore from "ThreadMessageStore" /* 7564 */;
+import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 5164 */;
+import EmojiStore from "EmojiStore" /* 6851 */;
+import GuildAutomodMessageStore from "GuildAutomodMessageStore" /* 8454 */;
+import InteractionStore from "InteractionStore" /* 8460 */;
+import LurkingStore from "LurkingStore" /* 5073 */;
+import MediaPostSharePromptStore from "MediaPostSharePromptStore" /* 8461 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 5074 */;
+import ThreadMessageStore from "ThreadMessageStore" /* 7541 */;
 import ThemeStore from "ThemeStore" /* 1192 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 5019 */;
-import GuildMemberStore from "GuildMemberStore" /* 5082 */;
-import GuildStore from "GuildStore" /* 5041 */;
-import RelationshipStore from "RelationshipStore" /* 5112 */;
-import UploadStore from "UploadStore" /* 8484 */;
+import ChannelStore from "ChannelStore" /* 4989 */;
+import GuildMemberStore from "GuildMemberStore" /* 5052 */;
+import GuildStore from "GuildStore" /* 5011 */;
+import RelationshipStore from "RelationshipStore" /* 5082 */;
+import UploadStore from "UploadStore" /* 8463 */;
 import UserStore from "UserStore" /* 1385 */;
-import MessageConstants from "MessageConstants" /* 5175 */;
+import MessageConstants from "MessageConstants" /* 5145 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -90,7 +90,7 @@ function createThreadEmbed(message, roleStyle, isInlineReplyPreview, channel1, o
                 archived = threadMetadata.archived;
               }
               if (archived) {
-                const obj3 = { title: channelName, messageCountLabel: result, messageCountAccessibilityLabel: result1, messagePreviewString: intl4.string(intl20.t.ZTo4HS), archived: true, archivedIconUrl: tmp13Result2.getAssetUriForEmbed(tmp18(8489)), backgroundColor };
+                const obj3 = { title: channelName, messageCountLabel: result, messageCountAccessibilityLabel: result1, messagePreviewString: intl4.string(intl20.t.ZTo4HS), archived: true, archivedIconUrl: tmp13Result2.getAssetUriForEmbed(tmp18(8468)), backgroundColor };
                 intl4 = tmp13(1113).intl;
                 obj4 = obj3;
                 tmp13Result2 = renderer_EmbedUtils;
@@ -1248,7 +1248,7 @@ function createMessageContent(message) {
       }
       applicationIconSource = author.getAvatarSource(undefined);
     }
-    parseMessageMarkupResult = { content: "PX_8", hasSpoilerEmbeds: "none", hasBailedAst: "URL" };
+    parseMessageMarkupResult = { content: "PX_8", hasSpoilerEmbeds: "user", hasBailedAst: "2026-07-clips-game-events-on-player" };
   }
 }
 const processColor = react_native.processColor;

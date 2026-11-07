@@ -1,8 +1,8 @@
-// Module ID: 5289
-// Function ID: 5290
+// Module ID: 5259
+// Function ID: 5260
 // Dependencies: [2]
 
-// Module 5289
+// Module 5259
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/rive/native/BadgesCoachmark.riv.js");

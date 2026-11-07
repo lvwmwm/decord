@@ -1,14 +1,14 @@
-// Module ID: 16125
-// Function ID: 16126
+// Module ID: 16173
+// Function ID: 16174
 // Name: createAccessibleNativeStackNavigator
-// Dependencies: [19, 21, 7256, 1500, 9992, 2]
+// Dependencies: [19, 21, 7231, 1500, 9976, 2]
 // Exports: default, useAccessibilityPatchedDescriptors
 
-// Module 16125 (createAccessibleNativeStackNavigator)
+// Module 16173 (createAccessibleNativeStackNavigator)
 import Fragment from "Fragment" /* 21 */;
 import Link from "Link" /* 1500 */;
-import Navigator from "Navigator" /* 7256 */;
-import NativeStackView2 from "NativeStackView" /* 9992 */;
+import Navigator from "Navigator" /* 7231 */;
+import NativeStackView2 from "NativeStackView" /* 9976 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

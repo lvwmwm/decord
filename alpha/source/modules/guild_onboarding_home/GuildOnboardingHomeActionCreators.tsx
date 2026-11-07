@@ -1,20 +1,20 @@
-// Module ID: 14041
-// Function ID: 14042
+// Module ID: 14066
+// Function ID: 14067
 // Name: GuildOnboardingHomeActionCreators
-// Dependencies: [5, 5075, 5019, 7485, 8431, 1072, 572, 1282, 7486, 1252, 5912, 11, 2]
+// Dependencies: [5, 5045, 4989, 7462, 8410, 1072, 572, 1282, 7463, 1252, 5885, 11, 2]
 // Exports: clearNewMemberActions, completeNewMemberAction, fetchGuildHomeSettings, fetchNewMemberActions, selectHomeResourceChannel, selectNewMemberActionChannel
 
-// Module 14041 (GuildOnboardingHomeActionCreators)
+// Module 14066 (GuildOnboardingHomeActionCreators)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
-import transitionToChannel from "transitionToChannel" /* 5912 */;
+import transitionToChannel from "transitionToChannel" /* 5885 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ImpersonateStore from "ImpersonateStore" /* 5075 */;
-import ChannelStore from "ChannelStore" /* 5019 */;
-import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 7485 */;
-import GuildOnboardingMemberActionStore from "GuildOnboardingMemberActionStore" /* 8431 */;
+import ImpersonateStore from "ImpersonateStore" /* 5045 */;
+import ChannelStore from "ChannelStore" /* 4989 */;
+import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 7462 */;
+import GuildOnboardingMemberActionStore from "GuildOnboardingMemberActionStore" /* 8410 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -68,7 +68,7 @@ obj = function _fetchNewMemberActions() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -122,7 +122,7 @@ obj = function _fetchNewMemberActions() {
             return { value: tmp, done: true };
           }
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp18) {
           closure_3 = tmp18;
           if (0 === c4) {
@@ -152,7 +152,7 @@ obj = function _clearNewMemberActions() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -199,7 +199,7 @@ obj = function _clearNewMemberActions() {
               c4 = 0;
             }
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp18) {
           closure_3 = tmp18;

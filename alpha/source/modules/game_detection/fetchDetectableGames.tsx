@@ -1,15 +1,15 @@
-// Module ID: 11866
-// Function ID: 11867
+// Module ID: 11857
+// Function ID: 11858
 // Name: fetchDetectableGames
-// Dependencies: [5, 2156, 11867, 572, 6827, 1260, 5031, 1282, 2]
+// Dependencies: [5, 2156, 11858, 572, 6802, 1260, 5001, 1282, 2]
 // Exports: default
 
-// Module 11866 (fetchDetectableGames)
+// Module 11857 (fetchDetectableGames)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6827 */;
-import Constants from "Constants" /* 11867 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6802 */;
+import Constants from "Constants" /* 11858 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import DetectableGameStore from "DetectableGameStore" /* 2156 */;
 import size from "module_2" /* 2 */;
@@ -32,7 +32,7 @@ let obj = function _fetchDetectableGames() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c3;
@@ -112,7 +112,7 @@ let obj = function _fetchDetectableGames() {
           obj.dispatch(obj15);
         }
         c5 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp34) {
         status = tmp34;
         if (0 === c3) {

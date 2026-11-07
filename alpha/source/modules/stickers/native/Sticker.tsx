@@ -1,19 +1,19 @@
-// Module ID: 10418
-// Function ID: 10419
+// Module ID: 10401
+// Function ID: 10402
 // Name: Sticker
-// Dependencies: [19, 17, 1192, 21, 6641, 6640, 1113, 8548, 10419, 5872, 5177, 7387, 7388, 2]
+// Dependencies: [19, 17, 1192, 21, 6616, 6615, 1113, 8527, 10402, 5842, 5147, 7364, 7365, 2]
 // Exports: default, getStickerAssetUrl
 
-// Module 10418 (Sticker)
+// Module 10401 (Sticker)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
-import shared from "shared" /* 5177 */;
-import FastImageDefault from "FastImage" /* 5872 */;
-import StickersUtils from "StickersUtils" /* 6640 */;
-import StickersTypes from "StickersTypes" /* 6641 */;
-import NativeLottieViewDefault from "NativeLottieView" /* 8548 */;
-import NativeAPNGViewDefault from "NativeAPNGView" /* 10419 */;
+import shared from "shared" /* 5147 */;
+import FastImageDefault from "FastImage" /* 5842 */;
+import StickersUtils from "StickersUtils" /* 6615 */;
+import StickersTypes from "StickersTypes" /* 6616 */;
+import NativeLottieViewDefault from "NativeLottieView" /* 8527 */;
+import NativeAPNGViewDefault from "NativeAPNGView" /* 10402 */;
 import react from "react" /* 19 */;
 import ThemeStore from "ThemeStore" /* 1192 */;
 import size from "module_2" /* 2 */;
@@ -73,7 +73,7 @@ export default function Sticker(opaque) {
     if (str4 == null) {
       str4 = "";
     }
-    NativeLottieRenderMode = tmp(8548).NativeLottieRenderMode;
+    NativeLottieRenderMode = tmp(8527).NativeLottieRenderMode;
     return tmp18(tmp20, size1);
   } else {
     if (sticker.format_type === StickersTypes.StickerFormat.APNG) {
@@ -95,9 +95,9 @@ export default function Sticker(opaque) {
     const tmp13 = jsx;
     const tmpResult10 = shared;
     if (tmpResult10.isThemeDark(ThemeStore.theme)) {
-      tmp14Result = tmp14(7387);
+      tmp14Result = tmp14(7364);
     } else {
-      tmp14Result = tmp14(7388);
+      tmp14Result = tmp14(7365);
     }
     obj7 = { uri: str };
     return tmp13(tmp15, obj6);
