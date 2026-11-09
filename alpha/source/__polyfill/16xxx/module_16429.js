@@ -1,11 +1,37 @@
 // Module ID: 16429
 // Function ID: 16430
-// Dependencies: [16430, 16495]
+// Dependencies: [16344, 16430]
+// Exports: getSupportedNumberingSystems
 
 // Module 16429
-import _mod16495 from "module_16495" /* 16495 */;
-import module_16430 from "module_16430" /* 16430 */;
+const require = globalThis.__r;
+let _require;
 
-const obj = { target: "Object", stat: true, arity: 2, forced: Object.assign !== _mod16495 };
-const obj2 = { assign: _mod16495 };
-module_16430(obj, obj2);
+
+export function getSupportedNumberingSystems(locale) {
+  _require = locale;
+  const numberingSystemNames = require("numberingSystemNames").numberingSystemNames;
+  return numberingSystemNames.filter((item) => {
+    function isSupportedNumberingSystem(item, arg1) {
+      let str = arg1;
+      if (undefined === arg1) {
+        str = "en";
+      }
+      try {
+        const concat = "".concat;
+        const createMemoizedNumberFormat = locale(closure_1_1[0]).createMemoizedNumberFormat;
+        const combined = "".concat(str, "-u-nu-");
+        const memoizedNumberFormat = createMemoizedNumberFormat(combined.concat(item));
+        const obj3 = memoizedNumberFormat;
+        if (memoizedNumberFormat.resolvedOptions().numberingSystem !== item) {
+          if ("123" === obj3.format(123)) {
+            return false;
+          }
+        }
+        return true;
+      } catch (err) {
+      }
+    }
+    return isSupportedNumberingSystem(item, locale);
+  });
+}

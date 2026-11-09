@@ -1,10 +1,10 @@
-// Module ID: 19309
-// Function ID: 19310
+// Module ID: 19322
+// Function ID: 19323
 // Name: ChannelSecondaryViewChatNavigator
-// Dependencies: [19, 21, 9976, 5140, 575, 9902, 1377, 11137, 11354, 12564, 5310, 7231, 14807, 9914, 5199, 2]
+// Dependencies: [19, 21, 9976, 5140, 575, 9902, 1377, 11137, 11354, 12564, 5310, 7231, 14808, 9914, 5199, 2]
 // Exports: default
 
-// Module 19309 (ChannelSecondaryViewChatNavigator)
+// Module 19322 (ChannelSecondaryViewChatNavigator)
 import nativeDefault from "native" /* 575 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import HeaderShared from "HeaderShared" /* 9902 */;

@@ -1,10 +1,10 @@
-// Module ID: 15984
-// Function ID: 15985
+// Module ID: 15994
+// Function ID: 15995
 // Name: OneTimeLoginModal
-// Dependencies: [5, 19, 17, 502, 1385, 1072, 1240, 21, 5140, 575, 1627, 1493, 1357, 1252, 6799, 5314, 1099, 6092, 6096, 7152, 1113, 6096, 6795, 10855, 5308, 5842, 15985, 5751, 7179, 2]
+// Dependencies: [5, 19, 17, 502, 1385, 1072, 1240, 21, 5140, 575, 1627, 1493, 1357, 1252, 6799, 5314, 1099, 6092, 6096, 7152, 1113, 6096, 6795, 10855, 5308, 5842, 15995, 5751, 7179, 2]
 // Exports: default
 
-// Module 15984 (OneTimeLoginModal)
+// Module 15994 (OneTimeLoginModal)
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import ClientThemesConstants from "ClientThemesConstants" /* 1240 */;
@@ -183,7 +183,7 @@ export default function OneTimeLoginModal(token) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -258,7 +258,7 @@ export default function OneTimeLoginModal(token) {
             c3 = 0;
           }
           c5 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp41) {
         bottom = tmp41;
@@ -282,7 +282,7 @@ export default function OneTimeLoginModal(token) {
   items6 = [closure_12(tmp11, obj2), ];
   let obj4 = { style: tmp.container, children: items9 };
   let obj5 = { style: tmp.centerContent, children: items7 };
-  let obj6 = { source: token(15985), style: tmp.logo };
+  let obj6 = { source: token(15995), style: tmp.logo };
   const tmp12 = FastImageDefault;
   items7 = [closure_12(tmp12, obj6), ];
   let obj7 = { style: tmp.loadingContainer, children: items8 };

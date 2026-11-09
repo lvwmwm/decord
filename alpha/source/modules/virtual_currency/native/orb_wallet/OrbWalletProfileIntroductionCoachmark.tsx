@@ -1,13 +1,13 @@
-// Module ID: 19233
-// Function ID: 19234
+// Module ID: 19246
+// Function ID: 19247
 // Name: OrbWalletProfileIntroductionCoachmark
-// Dependencies: [19, 4986, 1113, 19234, 10076, 2]
+// Dependencies: [19, 4986, 1113, 19247, 10076, 2]
 // Exports: default
 
-// Module 19233 (OrbWalletProfileIntroductionCoachmark)
+// Module 19246 (OrbWalletProfileIntroductionCoachmark)
 import intl4 from "intl" /* 1113 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4986 */;
-import _modDef19234 from "module_19234" /* 19234 */;
+import _modDef19247 from "module_19247" /* 19247 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -43,8 +43,8 @@ export default function OrbWalletProfileIntroductionCoachmark(visible) {
     };
     intl = intl4.intl;
     intl2 = intl4.intl;
-    obj2 = { type: "image", src: { uri: _modDef19234 }, aspectRatio: "16/9" };
-    ({ uri: _modDef19234 });
+    obj2 = { type: "image", src: { uri: _modDef19247 }, aspectRatio: "16/9" };
+    ({ uri: _modDef19247 });
     intl3 = intl4.intl;
     return obj;
   }, items);

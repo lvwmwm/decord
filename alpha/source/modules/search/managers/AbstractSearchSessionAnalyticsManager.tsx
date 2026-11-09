@@ -1,10 +1,10 @@
-// Module ID: 14142
-// Function ID: 14143
+// Module ID: 14143
+// Function ID: 14144
 // Name: AbstractSearchSessionAnalyticsManager
-// Dependencies: [1266, 14126, 2]
+// Dependencies: [1266, 14127, 2]
 
-// Module 14142 (AbstractSearchSessionAnalyticsManager)
-import SearchUtils from "SearchUtils" /* 14126 */;
+// Module 14143 (AbstractSearchSessionAnalyticsManager)
+import SearchUtils from "SearchUtils" /* 14127 */;
 import size from "module_2" /* 2 */;
 
 let set;

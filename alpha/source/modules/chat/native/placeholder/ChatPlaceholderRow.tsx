@@ -1,14 +1,14 @@
-// Module ID: 14453
-// Function ID: 14454
+// Module ID: 14454
+// Function ID: 14455
 // Name: ChatPlaceholderRow
-// Dependencies: [19, 17, 21, 1187, 5140, 575, 14452, 14118, 2]
+// Dependencies: [19, 17, 21, 1187, 5140, 575, 14453, 14119, 2]
 
-// Module 14453 (ChatPlaceholderRow)
+// Module 14454 (ChatPlaceholderRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
-import getChatPlaceholderRowWidthDefault from "getChatPlaceholderRowWidth" /* 14118 */;
-import getChatPlaceholderRowHeight from "getChatPlaceholderRowHeight" /* 14452 */;
+import getChatPlaceholderRowWidthDefault from "getChatPlaceholderRowWidth" /* 14119 */;
+import getChatPlaceholderRowHeight from "getChatPlaceholderRowHeight" /* 14453 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5140 */;

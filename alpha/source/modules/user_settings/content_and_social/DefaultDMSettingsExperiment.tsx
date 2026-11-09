@@ -1,10 +1,10 @@
-// Module ID: 18242
-// Function ID: 18243
+// Module ID: 18255
+// Function ID: 18256
 // Name: DefaultDMSettingsExperiment
 // Dependencies: [5817, 6786, 6781, 2]
 // Exports: shouldAgeVerifyForDMDefaultOff
 
-// Module 18242 (DefaultDMSettingsExperiment)
+// Module 18255 (DefaultDMSettingsExperiment)
 import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5817 */;
 import AgeVerificationUtils from "AgeVerificationUtils" /* 6781 */;
 import AgeGatedFeature from "AgeGatedFeature" /* 6786 */;

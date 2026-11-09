@@ -1,14 +1,14 @@
-// Module ID: 13946
-// Function ID: 13947
+// Module ID: 13947
+// Function ID: 13948
 // Name: createChannelStream
-// Dependencies: [11510, 7899, 8463, 8449, 1072, 11, 10241, 13947, 1113, 4962, 8504, 11833, 7507, 13950, 2]
+// Dependencies: [11510, 7899, 8463, 8449, 1072, 11, 10241, 13948, 1113, 4962, 8504, 11833, 7507, 13951, 2]
 // Exports: default
 
-// Module 13946 (createChannelStream)
+// Module 13947 (createChannelStream)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import Constants from "Constants" /* 1072 */;
 import isNewMessageGroupDefault from "isNewMessageGroup" /* 10241 */;
-import tryInjectMessage from "tryInjectMessage" /* 13947 */;
+import tryInjectMessage from "tryInjectMessage" /* 13948 */;
 import PushFeedbackStore_mod from "PushFeedbackStore" /* 11510 */;
 import EditMessageStore from "EditMessageStore" /* 7899 */;
 import UploadStore from "UploadStore" /* 8463 */;

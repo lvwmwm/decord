@@ -1,7 +1,7 @@
 // Module ID: 7684
 // Function ID: 7685
 // Name: PremiumPlanSelectionActionSheet
-// Dependencies: [109, 5, 32, 19, 17, 7685, 2186, 7673, 7682, 1387, 1072, 1191, 5872, 1083, 21, 5140, 575, 2171, 5751, 1113, 38, 7692, 2024, 504, 15496, 7477, 5758, 5390, 6153, 10686, 7678, 5369, 7703, 8599, 10046, 8812, 7387, 7412, 5739, 10679, 7665, 5721, 10796, 1252, 5374, 7664, 1624, 6091, 10687, 6589, 7668, 5147, 10712, 10713, 10714, 10715, 10716, 10717, 1377, 2185, 5388, 11517, 5723, 5842, 8255, 15497, 1187, 10031, 10691, 10795, 2]
+// Dependencies: [109, 5, 32, 19, 17, 7685, 2186, 7673, 7682, 1387, 1072, 1191, 5872, 1083, 21, 5140, 575, 2171, 5751, 1113, 38, 7692, 2024, 504, 15506, 7477, 5758, 5390, 6153, 10686, 7678, 5369, 7703, 8599, 10046, 8812, 7387, 7412, 5739, 10679, 7665, 5721, 10796, 1252, 5374, 7664, 1624, 6091, 10687, 6589, 7668, 5147, 10712, 10713, 10714, 10715, 10716, 10717, 1377, 2185, 5388, 11517, 5723, 5842, 8255, 15507, 1187, 10031, 10691, 10795, 2]
 // Exports: default, getItemsByPremiumTypePredicate
 
 // Module 7684 (PremiumPlanSelectionActionSheet)
@@ -85,12 +85,12 @@ function Header(arg0) {
   let premiumType;
   let selectedPremiumType;
   let trialOffer;
-  const f92527 = (orderRequired) => ({ orderRequired: orderRequired.orderRequired, orderRecord: orderRequired.orderRecord });
+  const f92569 = (orderRequired) => ({ orderRequired: orderRequired.orderRequired, orderRecord: orderRequired.orderRecord });
   ({ premiumType, isPaymentSuccess, trialOffer } = arg0);
   ({ selectedPremiumType, discountOffer } = arg0);
   const tmp = closure_38();
-  ({ orderRequired, orderRecord } = useNativeCheckoutStore(f92527));
-  useNativeCheckoutStore(f92527);
+  ({ orderRequired, orderRecord } = useNativeCheckoutStore(f92569));
+  useNativeCheckoutStore(f92569);
   if (null == premiumType) {
     if (!isPaymentSuccess) {
       const obj = { style: tmp.headerText, variant: "body-md/semibold", color: "text-default", accessibilityRole: "header", children: intl.string(intl9.t.vLz3Zs) };
@@ -204,7 +204,7 @@ function PlanOption(premiumItem) {
   let trialOffer;
   let userIsEligibleForBogoPromotion;
   let v02Gmgm;
-  const f92529 = (orderRequired) => ({ orderRequired: orderRequired.orderRequired, orderRecord: orderRequired.orderRecord });
+  const f92571 = (orderRequired) => ({ orderRequired: orderRequired.orderRequired, orderRecord: orderRequired.orderRecord });
   premiumItem = premiumItem.premiumItem;
   ({ customBadgeComponent, trialOffer, discountOffer, userIsEligibleForBogoPromotion } = premiumItem);
   ({ selectedProductId, optionNeedsProductNameLabel, discountedPriceString } = premiumItem);
@@ -220,21 +220,21 @@ function PlanOption(premiumItem) {
   const items = [IAPStore];
   const obj = premiumItem(504);
   const stateFromStores = obj.useStateFromStores(items, () => IAPStore.getProduct(premiumItem.productId));
-  const obj2 = premiumItem(15496);
+  const obj2 = premiumItem(15506);
   let checkoutPlanPriceString = obj2.useCheckoutPlanPriceString(premiumItem.productId, stateFromStores);
   const obj3 = { discountedPriceString, regularPriceString: priceString };
   priceString = undefined;
-  const useCheckoutPlanDiscountPrices = premiumItem(15496).useCheckoutPlanDiscountPrices;
+  const useCheckoutPlanDiscountPrices = premiumItem(15506).useCheckoutPlanDiscountPrices;
   const productId = premiumItem.productId;
-  premiumItem(15496);
+  premiumItem(15506);
   if (stateFromStores != null) {
     priceString = stateFromStores.priceString;
   }
   const checkoutPlanDiscountPrices = useCheckoutPlanDiscountPrices(productId, obj3);
-  ({ orderRequired, orderRecord } = useNativeCheckoutStore(f92529));
+  ({ orderRequired, orderRecord } = useNativeCheckoutStore(f92571));
   const premiumTier = premiumItem.premiumTier;
   let tmp12 = null != trialOffer && null != premiumTier;
-  useNativeCheckoutStore(f92529);
+  useNativeCheckoutStore(f92571);
   if (tmp12) {
     const subscriptionTrial = trialOffer.subscriptionTrial;
     let skuId;
@@ -566,8 +566,8 @@ function PremiumPlanSelectionActionSheet(premiumItems) {
   let tmp83;
   let userIsEligibleForBogoPromotion;
   let v9hnZoK;
-  const f92531 = (premiumTier) => premiumTier.premiumTier;
-  const f92542 = (patchOrderLineItems) => ({ patchOrderLineItems: patchOrderLineItems.patchOrderLineItems, isPatchOrderLoading: patchOrderLineItems.isPatchOrderLoading, orderRequired: patchOrderLineItems.orderRequired });
+  const f92573 = (premiumTier) => premiumTier.premiumTier;
+  const f92584 = (patchOrderLineItems) => ({ patchOrderLineItems: patchOrderLineItems.patchOrderLineItems, isPatchOrderLoading: patchOrderLineItems.isPatchOrderLoading, orderRequired: patchOrderLineItems.orderRequired });
   ({ applicationId: require, analyticsLocation, premiumType } = premiumItems);
   premiumItems = premiumItems.premiumItems;
   const onPaymentStart = premiumItems.onPaymentStart;
@@ -609,7 +609,7 @@ function PremiumPlanSelectionActionSheet(premiumItems) {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c4;
@@ -662,7 +662,7 @@ function PremiumPlanSelectionActionSheet(premiumItems) {
                 }
               }
               c6 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           } else if (1 === c5) {
             c4 = 0;
@@ -681,7 +681,7 @@ function PremiumPlanSelectionActionSheet(premiumItems) {
             c4 = 0;
             closure_130_21.current = false;
             c6 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
           closure_130_20(found);
           c4 = 0;
@@ -741,8 +741,8 @@ function PremiumPlanSelectionActionSheet(premiumItems) {
   const tmp16 = premiumType(premiumItems[31])();
   const tmp17 = ref((orderRecord) => orderRecord.orderRecord);
   let closure_13 = tmp17;
-  ({ patchOrderLineItems: c14, isPatchOrderLoading, orderRequired } = ref(f92542));
-  const tmp18 = ref(f92542);
+  ({ patchOrderLineItems: c14, isPatchOrderLoading, orderRequired } = ref(f92584));
+  const tmp18 = ref(f92584);
   if (!isPatchOrderLoading) {
     isPatchOrderLoading = ref((isCreateOrderLoading) => isCreateOrderLoading.isCreateOrderLoading);
   }
@@ -1279,8 +1279,8 @@ function PremiumPlanSelectionActionSheet(premiumItems) {
         const _Set = Set;
         const self = this;
         const self2 = this;
-        react = new Set(premiumItems.map(f92531)).size > 1;
-        set = new Set(premiumItems.map(f92531));
+        react = new Set(premiumItems.map(f92573)).size > 1;
+        set = new Set(premiumItems.map(f92573));
         items17[1] = tmp48(product_id, obj28);
         items15[1] = closure_36(tmp15Result13, obj25);
         tmp49Result2 = tmp49(tmp54, obj20);

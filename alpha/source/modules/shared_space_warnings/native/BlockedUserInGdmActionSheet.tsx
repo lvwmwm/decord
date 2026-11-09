@@ -1,10 +1,10 @@
-// Module ID: 20010
-// Function ID: 20011
+// Module ID: 20023
+// Function ID: 20024
 // Name: BlockedUserInGdmActionSheet
-// Dependencies: [19, 17, 4989, 1385, 15925, 1072, 21, 5140, 575, 5751, 6173, 1113, 504, 1380, 1187, 12286, 10918, 7401, 5859, 1252, 7426, 5842, 11413, 7126, 7038, 5758, 5374, 20011, 7549, 2]
+// Dependencies: [19, 17, 4989, 1385, 15935, 1072, 21, 5140, 575, 5751, 6173, 1113, 504, 1380, 1187, 12286, 10918, 7401, 5859, 1252, 7426, 5842, 11413, 7126, 7038, 5758, 5374, 20024, 7549, 2]
 // Exports: default
 
-// Module 20010 (BlockedUserInGdmActionSheet)
+// Module 20023 (BlockedUserInGdmActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -15,11 +15,11 @@ import Text_Text from "Text/Text" /* 5751 */;
 import NicknameUtilsDefault from "NicknameUtils" /* 6173 */;
 import TableRow2 from "TableRow" /* 7038 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7549 */;
-import SharedSpacesWarningActionCreators from "SharedSpacesWarningActionCreators" /* 20011 */;
+import SharedSpacesWarningActionCreators from "SharedSpacesWarningActionCreators" /* 20024 */;
 import react_mod from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4989 */;
 import UserStore from "UserStore" /* 1385 */;
-import SharedSpaceWarningConstants from "SharedSpaceWarningConstants" /* 15925 */;
+import SharedSpaceWarningConstants from "SharedSpaceWarningConstants" /* 15935 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;

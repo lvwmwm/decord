@@ -27,7 +27,7 @@ export function useAgeVerificationMethodsV2() {
   let tmp2;
   let tmp4;
   let tmp6;
-  const f93509 = () => callback.methodsV2OutageBannerMessage;
+  const f93551 = () => callback.methodsV2OutageBannerMessage;
   const tmp = _slicedToArray(react.useState(() => {
     let methodsV2 = callback.methodsV2;
     if (methodsV2 == null) {
@@ -38,8 +38,8 @@ export function useAgeVerificationMethodsV2() {
   [tmp2, require] = tmp;
   const tmp3 = _slicedToArray(react.useState(() => callback.methodsV2FooterMessage), 2);
   [tmp4, importDefault] = tmp3;
-  [tmp6, dependencyMap] = _slicedToArray(react.useState(f93509), 2);
-  const tmp5 = _slicedToArray(react.useState(f93509), 2);
+  [tmp6, dependencyMap] = _slicedToArray(react.useState(f93551), 2);
+  const tmp5 = _slicedToArray(react.useState(f93551), 2);
   [first, _asyncToGenerator] = react.useState(() => null == callback.methodsV2);
   [first1, _slicedToArray] = react.useState(false);
   react = react.useRef(true);
@@ -58,7 +58,7 @@ export function useAgeVerificationMethodsV2() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -164,7 +164,7 @@ export function useAgeVerificationMethodsV2() {
             tmp66(false);
           }
           c6 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp66) {
         if (0 === c4) {

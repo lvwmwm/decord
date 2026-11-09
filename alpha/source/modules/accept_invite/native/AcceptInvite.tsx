@@ -1,10 +1,10 @@
-// Module ID: 14562
-// Function ID: 14563
+// Module ID: 14563
+// Function ID: 14564
 // Name: AcceptInvite
-// Dependencies: [19, 17, 1072, 21, 5140, 575, 1652, 7040, 1380, 5724, 7658, 14563, 14566, 1411, 1446, 14571, 1493, 5842, 2]
+// Dependencies: [19, 17, 1072, 21, 5140, 575, 1652, 7040, 1380, 5724, 7658, 14564, 14567, 1411, 1446, 14572, 1493, 5842, 2]
 // Exports: default
 
-// Module 14562 (AcceptInvite)
+// Module 14563 (AcceptInvite)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import GlobalUtils from "GlobalUtils" /* 1380 */;
@@ -16,8 +16,8 @@ import useToken from "useToken" /* 5724 */;
 import FastImageDefault from "FastImage" /* 5842 */;
 import Card_Card from "Card/Card" /* 7040 */;
 import useEaseInEaseOutLayoutAnimationsDefault from "useEaseInEaseOutLayoutAnimations" /* 7658 */;
-import InviteDetailsDefault from "InviteDetails" /* 14563 */;
-import InviteErrorDefault from "InviteError" /* 14566 */;
+import InviteDetailsDefault from "InviteDetails" /* 14564 */;
+import InviteErrorDefault from "InviteError" /* 14567 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -156,7 +156,7 @@ export default function AcceptInvite(invite) {
     splash = guild.splash;
   }
   if (null == splash) {
-    guildSplashSource = tmp3(14571);
+    guildSplashSource = tmp3(14572);
   } else {
     ({ id: obj2.id, splash: obj2.splash } = guild);
     const obj4 = { id: null, splash: null, size: width * obj3.getDevicePixelRatio() };

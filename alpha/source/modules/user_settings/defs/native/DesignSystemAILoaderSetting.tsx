@@ -1,9 +1,9 @@
-// Module ID: 18134
-// Function ID: 18135
+// Module ID: 18147
+// Function ID: 18148
 // Name: DesignSystemAILoaderSetting
-// Dependencies: [8503, 1072, 11685, 18135, 2]
+// Dependencies: [8503, 1072, 11685, 18148, 2]
 
-// Module 18134 (DesignSystemAILoaderSetting)
+// Module 18147 (DesignSystemAILoaderSetting)
 import Constants from "Constants" /* 1072 */;
 import SettingsConstants from "SettingsConstants" /* 8503 */;
 import SettingBuilders from "SettingBuilders" /* 11685 */;

@@ -1,10 +1,10 @@
-// Module ID: 14054
-// Function ID: 14055
+// Module ID: 14055
+// Function ID: 14056
 // Name: DMMessageStickerGreeting
-// Dependencies: [5, 32, 19, 17, 6892, 6194, 1385, 21, 5140, 575, 5308, 5724, 5137, 5837, 14055, 7712, 1113, 504, 1088, 5194, 14056, 10386, 1652, 5370, 1187, 10385, 5715, 7043, 10401, 5751, 5758, 2]
+// Dependencies: [5, 32, 19, 17, 6892, 6194, 1385, 21, 5140, 575, 5308, 5724, 5137, 5837, 14056, 7712, 1113, 504, 1088, 5194, 14057, 10386, 1652, 5370, 1187, 10385, 5715, 7043, 10401, 5751, 5758, 2]
 // Exports: default
 
-// Module 14054 (DMMessageStickerGreeting)
+// Module 14055 (DMMessageStickerGreeting)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import client_themes_ClientThemesUtils from "client_themes/ClientThemesUtils" /* 5308 */;
@@ -85,7 +85,7 @@ export default function DMMessageStickerGreeting(channel) {
   }
   const intl2 = tmp(1113).intl;
   const formatToPlainStringResult = intl2.formatToPlainString(tmp(1113).t.m0zYbV, { username: name });
-  const tmpResult = tmp(14056);
+  const tmpResult = tmp(14057);
   showConvoStarterInDM = tmpResult.useShowConvoStarterInDM(channel);
   const items2 = [StickersStore];
   const items3 = [showConvoStarterInDM];
@@ -131,7 +131,7 @@ export default function DMMessageStickerGreeting(channel) {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -163,7 +163,7 @@ export default function DMMessageStickerGreeting(channel) {
                 v1(false);
                 showErrorToast(tmp24);
                 c5 = 3;
-                return { value: "HermesInternal", done: "HermesInternal" };
+                return { value: "HermesInternal", done: null };
               } else {
                 c3 = 1;
                 const obj4 = { channelId: channel.id, source: "In-channel greet" };
@@ -200,7 +200,7 @@ export default function DMMessageStickerGreeting(channel) {
           closure_129_4(false);
         }
         c5 = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp28) {
         closure_2 = tmp28;
         if (0 === c3) {

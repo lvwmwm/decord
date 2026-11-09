@@ -1,9 +1,9 @@
-// Module ID: 14045
-// Function ID: 14046
+// Module ID: 14046
+// Function ID: 14047
 // Name: ChatInputSendButton
-// Dependencies: [32, 19, 17, 5141, 7906, 13023, 21, 5140, 575, 5724, 13022, 14046, 13019, 5853, 1113, 504, 5199, 14050, 1652, 2]
+// Dependencies: [32, 19, 17, 5141, 7906, 13023, 21, 5140, 575, 5724, 13022, 14047, 13019, 5853, 1113, 504, 5199, 14051, 1652, 2]
 
-// Module 14045 (ChatInputSendButton)
+// Module 14046 (ChatInputSendButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
@@ -14,7 +14,7 @@ import SendMessageIcon from "SendMessageIcon" /* 5853 */;
 import ChatInputActionButtonDefault from "ChatInputActionButton" /* 13019 */;
 import ChatInputActionButtonTransitionItemDefault from "ChatInputActionButtonTransitionItem" /* 13022 */;
 import ChatInputConstants from "ChatInputConstants" /* 13023 */;
-import useChatInputFloatingWidthDefault from "useChatInputFloatingWidth" /* 14050 */;
+import useChatInputFloatingWidthDefault from "useChatInputFloatingWidth" /* 14051 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5141 */;
@@ -110,7 +110,7 @@ class ChatInputSendButton {
       const tmp19 = canSendVoiceMessage;
       if (tmp19) {
         const obj8 = { disabled: stateFromStores1, channelId: channel.id };
-        tmp15Result = tmp15(tmp3(14046), obj8);
+        tmp15Result = tmp15(tmp3(14047), obj8);
       } else {
         ({ button: obj11.style, buttonActive: obj11.activeStyle, iconActive: obj11.activeIconStyle } = tmp7);
         const obj9 = { active: true, style: null, activeStyle: null, activeIconStyle: null, IconComponent: channel(5853).SendMessageIcon, accessibilityLabel: intl.string(channel(1113).t.TXNS7S), onPress: onSendMessage, disabled: !tmp12 };
@@ -173,7 +173,7 @@ let closure_12 = react.memo(function ChatInputSendButtonInner(type) {
   ChatInputActionButtonTransitionItemDefault;
   if (type === constants.BUTTON_SEND_VOICE_MESSAGE || type === constants.BUTTON_SEND_VOICE_MESSAGE_DISABLED) {
     const obj5 = { disabled: isOnCooldown, channelId };
-    tmp7Result = tmp7(tmp3(14046), obj5);
+    tmp7Result = tmp7(tmp3(14047), obj5);
   } else {
     ({ button: obj4.style, buttonActive: obj4.activeStyle, iconActive: obj4.activeIconStyle } = tmp5);
     const obj8 = { active: true, style: null, activeStyle: null, activeIconStyle: null, IconComponent: SendMessageIcon.SendMessageIcon, accessibilityLabel: intl.string(intl2.t.TXNS7S), onPress: onSendMessage, disabled: !sendEnabled };

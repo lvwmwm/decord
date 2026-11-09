@@ -1,10 +1,10 @@
-// Module ID: 17118
-// Function ID: 17119
+// Module ID: 17129
+// Function ID: 17130
 // Name: ChangeSpendingLimitModal
-// Dependencies: [5, 19, 17, 7792, 21, 5140, 575, 8096, 5751, 1113, 2664, 6799, 17119, 5837, 5836, 8041, 8043, 7015, 13451, 5758, 7477, 6159, 7148, 6822, 7064, 11627, 2]
+// Dependencies: [5, 19, 17, 7792, 21, 5140, 575, 8096, 5751, 1113, 2664, 6799, 17130, 5837, 5836, 8041, 8043, 7015, 13452, 5758, 7477, 6159, 7148, 6822, 7064, 11627, 2]
 // Exports: default
 
-// Module 17118 (ChangeSpendingLimitModal)
+// Module 17129 (ChangeSpendingLimitModal)
 import nativeDefault from "native" /* 575 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6799 */;
 import NavigatorHeader from "NavigatorHeader" /* 7064 */;
@@ -80,7 +80,7 @@ function ChangeSpendingLimitScreen(teenId) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c2;
@@ -127,7 +127,7 @@ function ChangeSpendingLimitScreen(teenId) {
               c2 = 0;
             }
             c3 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp15) {
           if (0 === c2) {
@@ -224,7 +224,7 @@ function ChangeSpendingLimitScreen(teenId) {
     const obj15 = { children: closure_8(Stack, obj2) };
     items[1] = closure_8(Stack2, obj4);
     const items4 = [tmp19(ModalContent2, obj15), ];
-    const ModalFooter2 = tmp2(13451).ModalFooter;
+    const ModalFooter2 = tmp2(13452).ModalFooter;
     const ButtonGroup = tmp2(6822).ButtonGroup;
     const Button2 = tmp2(5758).Button;
     if (tmp9) {
@@ -257,7 +257,7 @@ function ChangeSpendingLimitScreen(teenId) {
     const ModalContent = tmp2(8043).ModalContent;
     items6 = [closure_7(ModalContent, obj23), ];
     const obj25 = { children: closure_7(Button, obj26) };
-    const ModalFooter = tmp2(13451).ModalFooter;
+    const ModalFooter = tmp2(13452).ModalFooter;
     obj26 = { variant: "tertiary", text: intl.string(require("intl").t["ETE/oC"]), onPress: obj(6799).pop };
     Button = tmp2(5758).Button;
     intl = tmp2(1113).intl;

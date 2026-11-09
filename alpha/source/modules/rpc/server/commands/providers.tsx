@@ -1,9 +1,9 @@
-// Module ID: 16637
-// Function ID: 16638
+// Module ID: 16647
+// Function ID: 16648
 // Name: providers
 // Dependencies: [5, 6627, 6583, 1072, 2142, 1083, 7408, 9414, 11973, 11976, 6629, 572, 1108, 9810, 2]
 
-// Module 16637 (providers)
+// Module 16647 (providers)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1108 */;
 import ConnectedAccountsActionCreatorsDefault from "ConnectedAccountsActionCreators" /* 7408 */;
@@ -47,7 +47,7 @@ let value = function _refreshProviderAccessToken() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -266,7 +266,7 @@ let closure_11 = _asyncToGenerator(async function(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: "HermesInternal" };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {

@@ -1,13 +1,13 @@
-// Module ID: 13627
-// Function ID: 13628
+// Module ID: 13628
+// Function ID: 13629
 // Name: useShareSearchResults
-// Dependencies: [32, 19, 6623, 502, 6950, 13616, 13628, 504, 13633, 10368, 13615, 2]
+// Dependencies: [32, 19, 6623, 502, 6950, 13617, 13629, 504, 13634, 10368, 13616, 2]
 // Exports: makeAutocompleterSearchParams, useShareSearchResults
 
-// Module 13627 (useShareSearchResults)
-import formatResultsDefault from "formatResults" /* 13615 */;
-import ShareConstants from "ShareConstants" /* 13616 */;
-import QuickSwitcherActionCreators from "QuickSwitcherActionCreators" /* 13628 */;
+// Module 13628 (useShareSearchResults)
+import formatResultsDefault from "formatResults" /* 13616 */;
+import ShareConstants from "ShareConstants" /* 13617 */;
+import QuickSwitcherActionCreators from "QuickSwitcherActionCreators" /* 13629 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import GatewayConnectionStore from "GatewayConnectionStore" /* 6623 */;

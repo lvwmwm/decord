@@ -1,10 +1,10 @@
-// Module ID: 16793
-// Function ID: 16794
+// Module ID: 16804
+// Function ID: 16805
 // Name: CustomizeBadgesSheet
-// Dependencies: [19, 17, 8802, 1385, 8834, 1072, 5389, 1387, 21, 5140, 575, 5376, 9998, 16794, 9996, 1113, 7164, 7162, 5859, 7040, 11591, 5751, 11602, 9072, 7202, 1652, 5370, 5373, 15243, 1705, 9997, 5420, 5149, 11593, 1627, 504, 2171, 7387, 7412, 5719, 10027, 10028, 8833, 1252, 8839, 5837, 5388, 12614, 16795, 7015, 7382, 5392, 2]
+// Dependencies: [19, 17, 8802, 1385, 8834, 1072, 5389, 1387, 21, 5140, 575, 5376, 9998, 16805, 9996, 1113, 7164, 7162, 5859, 7040, 11591, 5751, 11602, 9072, 7202, 1652, 5370, 5373, 15253, 1705, 9997, 5420, 5149, 11593, 1627, 504, 2171, 7387, 7412, 5719, 10027, 10028, 8833, 1252, 8839, 5837, 5388, 12614, 16806, 7015, 7382, 5392, 2]
 // Exports: default
 
-// Module 16793 (CustomizeBadgesSheet)
+// Module 16804 (CustomizeBadgesSheet)
 import nativeDefault from "native" /* 575 */;
 import intl7 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
@@ -31,8 +31,8 @@ import openPremiumModalDefault from "openPremiumModal" /* 10027 */;
 import PremiumFeaturesCards from "PremiumFeaturesCards" /* 10028 */;
 import BadgeCatalogIconDefault from "BadgeCatalogIcon" /* 11591 */;
 import BadgeUtils from "BadgeUtils" /* 11602 */;
-import PendingBadgeSettings from "PendingBadgeSettings" /* 15243 */;
-import BadgeGrid from "BadgeGrid" /* 16794 */;
+import PendingBadgeSettings from "PendingBadgeSettings" /* 15253 */;
+import BadgeGrid from "BadgeGrid" /* 16805 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8802 */;
@@ -98,7 +98,7 @@ function BadgeVisibilityMenu(badge) {
   }
   const obj2 = { items, align: str, disableGesture: true, triggerOnLongPress: true, children };
   items = [obj];
-  const result = index % tmp2(16794).BADGE_GRID_COLUMNS;
+  const result = index % tmp2(16805).BADGE_GRID_COLUMNS;
   str = "right";
   if (0 !== result) {
     let str2 = "above";

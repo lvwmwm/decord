@@ -1,10 +1,10 @@
-// Module ID: 16163
-// Function ID: 16164
+// Module ID: 16173
+// Function ID: 16174
 // Name: useManaTextMigrationHighlightRestartNotice
 // Dependencies: [19, 5754, 504, 6091, 2]
 // Exports: useManaTextMigrationHighlightRestartNotice
 
-// Module 16163 (useManaTextMigrationHighlightRestartNotice)
+// Module 16173 (useManaTextMigrationHighlightRestartNotice)
 import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6091 */;
 import react from "react" /* 19 */;
 import DevSettingsStore from "DevSettingsStore" /* 5754 */;

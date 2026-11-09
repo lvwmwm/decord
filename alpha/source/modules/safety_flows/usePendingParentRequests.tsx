@@ -1,13 +1,13 @@
-// Module ID: 20488
-// Function ID: 20489
+// Module ID: 20501
+// Function ID: 20502
 // Name: usePendingParentRequests
-// Dependencies: [32, 19, 7791, 1385, 7792, 504, 8440, 13590, 2]
+// Dependencies: [32, 19, 7791, 1385, 7792, 504, 8440, 13591, 2]
 // Exports: useDerivedPendingRequests, usePendingRequestListController, usePendingRequestResolution
 
-// Module 20488 (usePendingParentRequests)
+// Module 20501 (usePendingParentRequests)
 import FamilyCenterConstants from "FamilyCenterConstants" /* 7792 */;
 import useUserLinks from "useUserLinks" /* 8440 */;
-import useFamilyCenterActions from "useFamilyCenterActions" /* 13590 */;
+import useFamilyCenterActions from "useFamilyCenterActions" /* 13591 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import FamilyCenterStore from "FamilyCenterStore" /* 7791 */;
@@ -118,7 +118,7 @@ export function usePendingRequestListController(pendingRequests) {
   let tmp15;
   let tmp16;
   let tmp4;
-  const f121168 = () => {
+  const f121239 = () => {
     set = new Set();
     return set;
   };
@@ -147,8 +147,8 @@ export function usePendingRequestListController(pendingRequests) {
   const declineLinkRequest = familyCenterActions.declineLinkRequest;
   ({ isAcceptLoading, isDeclineLoading } = familyCenterActions);
   let closure_5 = tmp6;
-  [c6, c7] = tmp2(react.useState(f121168), 2);
-  tmp2(react.useState(f121168), 2);
+  [c6, c7] = tmp2(react.useState(f121239), 2);
+  tmp2(react.useState(f121239), 2);
   const callback = obj2.useCallback((arg0) => {
     let closure_0 = arg0;
     let tmp = _undefined3(function(has) {
@@ -231,7 +231,7 @@ export function usePendingRequestResolution(parent_id) {
   let stateFromStores;
   let tmp3;
   let tmp4;
-  const f121175 = () => {
+  const f121246 = () => {
     let str = "connected";
     if (stateFromStores !== UserLinkStatus.ACTIVE) {
       let str2;
@@ -255,8 +255,8 @@ export function usePendingRequestResolution(parent_id) {
     }
     return link_status;
   });
-  [tmp3, tmp4] = _slicedToArray(react.useState(f121175), 2);
-  const tmp2 = _slicedToArray(react.useState(f121175), 2);
+  [tmp3, tmp4] = _slicedToArray(react.useState(f121246), 2);
+  const tmp2 = _slicedToArray(react.useState(f121246), 2);
   const tmp5 = _slicedToArray(react.useState(stateFromStores), 2);
   const first = tmp5[0];
   if (stateFromStores !== first) {

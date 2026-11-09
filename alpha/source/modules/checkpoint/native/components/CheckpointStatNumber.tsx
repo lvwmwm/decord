@@ -1,10 +1,10 @@
-// Module ID: 13880
-// Function ID: 13881
+// Module ID: 13881
+// Function ID: 13882
 // Name: CheckpointStatNumber
-// Dependencies: [19, 17, 6199, 21, 5140, 5281, 13877, 2]
+// Dependencies: [19, 17, 6199, 21, 5140, 5281, 13878, 2]
 // Exports: default, getCheckpointStatNumberWidth, isCheckpointStatNumberShrunk
 
-// Module 13880 (CheckpointStatNumber)
+// Module 13881 (CheckpointStatNumber)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import CheckpointNumbersRive2 from "CheckpointNumbersRive" /* 5281 */;

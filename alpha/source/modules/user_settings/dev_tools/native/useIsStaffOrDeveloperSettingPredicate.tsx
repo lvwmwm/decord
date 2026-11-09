@@ -1,10 +1,10 @@
-// Module ID: 17053
-// Function ID: 17054
+// Module ID: 17064
+// Function ID: 17065
 // Name: useIsStaffOrDeveloperSettingPredicate
 // Dependencies: [7941, 504, 2]
 // Exports: useStaffOrDeveloperSettingPredicate
 
-// Module 17053 (useIsStaffOrDeveloperSettingPredicate)
+// Module 17064 (useIsStaffOrDeveloperSettingPredicate)
 import get_initialized from "get initialized" /* 504 */;
 import DeveloperExperimentStore from "DeveloperExperimentStore" /* 7941 */;
 import size from "module_2" /* 2 */;

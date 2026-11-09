@@ -1,10 +1,10 @@
-// Module ID: 20517
-// Function ID: 20518
+// Module ID: 20530
+// Function ID: 20531
 // Name: LocalPushNotificationActionCreators
 // Dependencies: [11029, 1072, 7730, 572, 1242, 1252, 6957, 13408, 2118, 5885, 5365, 11104, 2]
 // Exports: receiveLocalNotification
 
-// Module 20517 (LocalPushNotificationActionCreators)
+// Module 20530 (LocalPushNotificationActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import SentryUtilsDefault from "SentryUtils" /* 1242 */;

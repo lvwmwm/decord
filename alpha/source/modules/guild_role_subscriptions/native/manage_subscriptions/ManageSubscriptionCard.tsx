@@ -1,10 +1,10 @@
-// Module ID: 17517
-// Function ID: 17518
+// Module ID: 17528
+// Function ID: 17529
 // Name: ManageSubscriptionCard
-// Dependencies: [32, 5, 19, 17, 1072, 4996, 21, 5140, 575, 1113, 5751, 7043, 7020, 11555, 17518, 6091, 17519, 2118, 10032, 7387, 6589, 7152, 1187, 17521, 5859, 5836, 7126, 7038, 5834, 2171, 1099, 10098, 17522, 1499, 7040, 2]
+// Dependencies: [32, 5, 19, 17, 1072, 4996, 21, 5140, 575, 1113, 5751, 7043, 7020, 11555, 17529, 6091, 17530, 2118, 10032, 7387, 6589, 7152, 1187, 17532, 5859, 5836, 7126, 7038, 5834, 2171, 1099, 10098, 17533, 1499, 7040, 2]
 // Exports: default
 
-// Module 17517 (ManageSubscriptionCard)
+// Module 17528 (ManageSubscriptionCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import router_utils from "router_utils" /* 1099 */;
@@ -16,8 +16,8 @@ import LinkingDefault from "Linking" /* 5834 */;
 import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6091 */;
 import GuildIconDefault from "GuildIcon" /* 7020 */;
 import Pressables from "Pressables" /* 7043 */;
-import FormSeparatorDefault from "FormSeparator" /* 17518 */;
-import useManageSubscriptionCardDataDefault from "useManageSubscriptionCardData" /* 17522 */;
+import FormSeparatorDefault from "FormSeparator" /* 17529 */;
+import useManageSubscriptionCardDataDefault from "useManageSubscriptionCardData" /* 17533 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -210,7 +210,7 @@ function CardBody(isTrial) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -294,7 +294,7 @@ function CardBody(isTrial) {
             closure_129_4(false);
           }
           c5 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp31) {
           if (0 === c3) {
             c5 = 3;

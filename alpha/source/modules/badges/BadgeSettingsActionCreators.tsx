@@ -1,10 +1,10 @@
-// Module ID: 16770
-// Function ID: 16771
+// Module ID: 16781
+// Function ID: 16782
 // Name: BadgeSettingsActionCreators
 // Dependencies: [5, 1072, 1282, 1242, 2]
 // Exports: updateBadgeSettings
 
-// Module 16770 (BadgeSettingsActionCreators)
+// Module 16781 (BadgeSettingsActionCreators)
 import Constants from "Constants" /* 1072 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
@@ -28,7 +28,7 @@ let obj = function _updateBadgeSettings() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

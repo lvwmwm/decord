@@ -1,10 +1,10 @@
-// Module ID: 13460
-// Function ID: 13461
+// Module ID: 13461
+// Function ID: 13462
 // Name: prefetchGameOrganizationAccountLinkState
 // Dependencies: [5, 2162, 7339, 11503, 11504, 6936, 7390, 7393, 2]
 // Exports: default
 
-// Module 13460 (prefetchGameOrganizationAccountLinkState)
+// Module 13461 (prefetchGameOrganizationAccountLinkState)
 import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6936 */;
 import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 7339 */;
 import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11504 */;
@@ -29,7 +29,7 @@ let obj = function _prefetchGameOrganizationAccountLinkState() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c4;
@@ -70,7 +70,7 @@ let obj = function _prefetchGameOrganizationAccountLinkState() {
         } else if (1 === c5) {
           c4 = 0;
           c6 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } else if (arg0 === 1) {
           c6 = 3;
           throw value;
@@ -98,7 +98,7 @@ let obj = function _prefetchGameOrganizationAccountLinkState() {
           }
         }
         c6 = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp17) {
         if (0 === c4) {
           c6 = 3;

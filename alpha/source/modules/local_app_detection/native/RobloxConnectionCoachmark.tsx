@@ -1,10 +1,10 @@
-// Module ID: 19383
-// Function ID: 19384
+// Module ID: 19396
+// Function ID: 19397
 // Name: RobloxConnectionCoachmark
-// Dependencies: [32, 19, 17, 6627, 1385, 15903, 1072, 4986, 21, 5140, 575, 5199, 1627, 5374, 5388, 7382, 7427, 6159, 5751, 1113, 5758, 14823, 9810, 7635, 5162, 6629, 1411, 1187, 8101, 504, 15904, 7408, 5170, 4973, 2]
+// Dependencies: [32, 19, 17, 6627, 1385, 15913, 1072, 4986, 21, 5140, 575, 5199, 1627, 5374, 5388, 7382, 7427, 6159, 5751, 1113, 5758, 14824, 9810, 7635, 5162, 6629, 1411, 1187, 8101, 504, 15914, 7408, 5170, 4973, 2]
 // Exports: default, useShouldShowRobloxConnectionCoachmark
 
-// Module 19383 (RobloxConnectionCoachmark)
+// Module 19396 (RobloxConnectionCoachmark)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
@@ -24,7 +24,7 @@ import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6627 */;
 import UserStore from "UserStore" /* 1385 */;
-import LocalAppDetectionStore from "LocalAppDetectionStore" /* 15903 */;
+import LocalAppDetectionStore from "LocalAppDetectionStore" /* 15913 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5140 */;
@@ -200,7 +200,7 @@ export default function RobloxConnectionActionSheet(markAsDismissed) {
   const Button = markAsDismissed(5758).Button;
   intl3 = markAsDismissed(1113).intl;
   obj11 = { size: "sm", color: nativeDefault.colors.WHITE };
-  WindowLaunchIcon = markAsDismissed(14823).WindowLaunchIcon;
+  WindowLaunchIcon = markAsDismissed(14824).WindowLaunchIcon;
   items3 = [closure_13(Button, obj10), ];
   const obj12 = { text: intl4.string(markAsDismissed(1113).t.DiGJy3), variant: "secondary", size: "lg", onPress: handleCancel };
   const Button2 = markAsDismissed(5758).Button;

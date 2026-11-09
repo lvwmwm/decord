@@ -90,7 +90,7 @@ export default function MemberVerificationAlertRejected(guildId) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -146,7 +146,7 @@ export default function MemberVerificationAlertRejected(guildId) {
           const obj2 = guildId(stateFromStores[10]);
           const result = obj2.openMemberVerificationModal(closure_128_0);
           stateFromStores = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp18) {
         stateFromStores = 3;

@@ -1,12 +1,12 @@
-// Module ID: 20024
-// Function ID: 20025
+// Module ID: 20037
+// Function ID: 20038
 // Name: UrgentSystemDMManagerBase
-// Dependencies: [4989, 5043, 1385, 20025, 1072, 8823, 7350, 2]
+// Dependencies: [4989, 5043, 1385, 20038, 1072, 8823, 7350, 2]
 
-// Module 20024 (UrgentSystemDMManagerBase)
+// Module 20037 (UrgentSystemDMManagerBase)
 import Constants from "Constants" /* 1072 */;
 import UserActionCreatorsAll from "UserActionCreators" /* 8823 */;
-import Constants2 from "Constants" /* 20025 */;
+import Constants2 from "Constants" /* 20038 */;
 import ChannelStore from "ChannelStore" /* 4989 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 5043 */;
 import UserStore from "UserStore" /* 1385 */;

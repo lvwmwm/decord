@@ -1,9 +1,9 @@
-// Module ID: 15877
-// Function ID: 15878
+// Module ID: 15887
+// Function ID: 15888
 // Name: ConnectivityIndicatorStateStore
-// Dependencies: [7731, 502, 6194, 5043, 2117, 1072, 3, 15878, 504, 1477, 572, 2]
+// Dependencies: [7731, 502, 6194, 5043, 2117, 1072, 3, 15888, 504, 1477, 572, 2]
 
-// Module 15877 (ConnectivityIndicatorStateStore)
+// Module 15887 (ConnectivityIndicatorStateStore)
 import LoggerDefault from "Logger" /* 3 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
@@ -60,7 +60,7 @@ function updateState() {
           } else if (tmp10.CONNECTING === UNKNOWN) {
             const obj4 = { state: obj.WAITING_FOR_NETWORK, delayMs: tmp24 };
             if (CacheStore.hasCache()) {
-              const obj16 = state(15878);
+              const obj16 = state(15888);
               let num2 = obj16.getConfig({ location: "ConnectivityIndicatorStateStore" }).timeoutMs;
               if (num2 == null) {
                 num2 = 10000;
@@ -85,7 +85,7 @@ function updateState() {
           } else if (tmp10.CONNECTING === UNKNOWN) {
             const obj8 = { state: obj.WAITING_FOR_NETWORK, delayMs: tmp19 };
             if (CacheStore.hasCache()) {
-              const obj11 = state(15878);
+              const obj11 = state(15888);
               let num = obj11.getConfig({ location: "ConnectivityIndicatorStateStore" }).timeoutMs;
               if (num == null) {
                 num = 10000;

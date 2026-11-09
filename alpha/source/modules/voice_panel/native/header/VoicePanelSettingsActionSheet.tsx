@@ -1,9 +1,9 @@
-// Module ID: 19579
-// Function ID: 19580
+// Module ID: 19592
+// Function ID: 19593
 // Name: VoicePanelSettingsActionSheet
-// Dependencies: [19, 21, 5140, 5388, 5392, 7355, 19580, 2]
+// Dependencies: [19, 21, 5140, 5388, 5392, 7355, 19593, 2]
 
-// Module 19579 (VoicePanelSettingsActionSheet)
+// Module 19592 (VoicePanelSettingsActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5388 */;
 import BottomSheetModal from "BottomSheetModal" /* 5392 */;

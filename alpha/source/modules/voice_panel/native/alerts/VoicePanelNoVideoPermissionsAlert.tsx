@@ -1,10 +1,10 @@
-// Module ID: 19572
-// Function ID: 19573
+// Module ID: 19585
+// Function ID: 19586
 // Name: VoicePanelNoVideoPermissionsAlert
 // Dependencies: [19, 21, 6096, 6096, 1113, 2]
 // Exports: default
 
-// Module 19572 (VoicePanelNoVideoPermissionsAlert)
+// Module 19585 (VoicePanelNoVideoPermissionsAlert)
 import Fragment from "Fragment" /* 21 */;
 import intl4 from "intl" /* 1113 */;
 import AlertModal2 from "AlertModal" /* 6096 */;

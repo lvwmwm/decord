@@ -1,10 +1,10 @@
-// Module ID: 16739
-// Function ID: 16740
+// Module ID: 16750
+// Function ID: 16751
 // Name: DevToolsLazy
-// Dependencies: [19, 17, 7941, 7940, 21, 6155, 16740, 2118, 504, 1377, 18297, 2]
+// Dependencies: [19, 17, 7941, 7940, 21, 6155, 16751, 2118, 504, 1377, 18310, 2]
 // Exports: default
 
-// Module 16739 (DevToolsLazy)
+// Module 16750 (DevToolsLazy)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
@@ -25,7 +25,7 @@ let obj = {
   eventName: "keyCommandShowDevTools",
   discoverabilityTitle: "Open DevTools Panel",
   onKeyCommand() {
-    const promise = asyncRequire(16740, dependencyMap.paths);
+    const promise = asyncRequire(16751, dependencyMap.paths);
     promise.then((navigateToDevTools) => {
       navigateToDevTools.navigateToDevTools();
     });
@@ -61,7 +61,7 @@ export default function DevToolsLazy() {
   const keyCommands = obj3.useKeyCommands(stateFromStores ? items : []);
   if (stateFromStores) {
     if (stateFromStores1) {
-      return jsx(tmp(18297).default, {});
+      return jsx(tmp(18310).default, {});
     }
   }
   return null;

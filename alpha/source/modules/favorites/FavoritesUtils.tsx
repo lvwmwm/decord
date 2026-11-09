@@ -31,8 +31,8 @@ export function getFavoritesAwareGuildName(guild) {
 export function isFavoritesGuildId(guildId) {
   return guildId === FAVORITES_RAW_GUILD_ID || guildId === FAVORITES;
 }
-export function isFavoritesGuildCategoryNameValid(str) {
-  return "" !== str.trim();
+export function isFavoritesGuildCategoryNameValid(name) {
+  return "" !== name.trim();
 }
 export function isFavoritableChannel(record) {
   return !record.isCategory();

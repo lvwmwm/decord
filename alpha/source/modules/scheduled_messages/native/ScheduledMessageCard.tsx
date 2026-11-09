@@ -1,9 +1,9 @@
-// Module ID: 14828
-// Function ID: 14829
+// Module ID: 14829
+// Function ID: 14830
 // Name: ScheduledMessageCard
-// Dependencies: [19, 17, 4989, 1072, 21, 5140, 575, 504, 1099, 6799, 7040, 11308, 7015, 11309, 10654, 5751, 1113, 9898, 11307, 12763, 14829, 2]
+// Dependencies: [19, 17, 4989, 1072, 21, 5140, 575, 504, 1099, 6799, 7040, 11308, 7015, 11309, 10654, 5751, 1113, 9898, 11307, 12763, 14830, 2]
 
-// Module 14828 (ScheduledMessageCard)
+// Module 14829 (ScheduledMessageCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -12,7 +12,7 @@ import ModalActionCreatorsDefault from "ModalActionCreators" /* 6799 */;
 import ScheduledMessageUtils from "ScheduledMessageUtils" /* 9898 */;
 import ForLaterCardStatusHeader2 from "ForLaterCardStatusHeader" /* 11307 */;
 import CalendarPlusIcon from "CalendarPlusIcon" /* 12763 */;
-import ScheduledMessageCardActionButtonsDefault from "ScheduledMessageCardActionButtons" /* 14829 */;
+import ScheduledMessageCardActionButtonsDefault from "ScheduledMessageCardActionButtons" /* 14830 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4989 */;
 import Fragment from "Fragment" /* 21 */;

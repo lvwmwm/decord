@@ -1,10 +1,10 @@
-// Module ID: 14494
-// Function ID: 14495
+// Module ID: 14495
+// Function ID: 14496
 // Name: NewUserPermissionsOnboarding
 // Dependencies: [19, 17, 21, 5140, 5714, 575, 5751, 5758, 1113, 2]
 // Exports: default
 
-// Module 14494 (NewUserPermissionsOnboarding)
+// Module 14495 (NewUserPermissionsOnboarding)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import NavigatorConstants from "NavigatorConstants" /* 5714 */;

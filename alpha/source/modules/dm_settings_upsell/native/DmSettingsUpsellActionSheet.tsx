@@ -1,18 +1,18 @@
-// Module ID: 19826
-// Function ID: 19827
+// Module ID: 19839
+// Function ID: 19840
 // Name: DmSettingsUpsellActionSheet
-// Dependencies: [19, 17, 5011, 21, 5140, 575, 504, 19823, 19827, 7426, 5842, 11413, 5751, 1113, 7020, 5758, 7227, 4965, 5837, 5374, 16033, 2]
+// Dependencies: [19, 17, 5011, 21, 5140, 575, 504, 19836, 19840, 7426, 5842, 11413, 5751, 1113, 7020, 5758, 7227, 4965, 5837, 5374, 16043, 2]
 // Exports: default
 
-// Module 19826 (DmSettingsUpsellActionSheet)
+// Module 19839 (DmSettingsUpsellActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import UserSettings from "UserSettings" /* 4965 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
 import UserSettingsUtils from "UserSettingsUtils" /* 7227 */;
-import openGuildActionSheetDefault from "openGuildActionSheet" /* 16033 */;
-import DmSettingsUpsellManager from "DmSettingsUpsellManager" /* 19823 */;
-import DmSettingsUpsellUtils from "DmSettingsUpsellUtils" /* 19827 */;
+import openGuildActionSheetDefault from "openGuildActionSheet" /* 16043 */;
+import DmSettingsUpsellManager from "DmSettingsUpsellManager" /* 19836 */;
+import DmSettingsUpsellUtils from "DmSettingsUpsellUtils" /* 19840 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 5011 */;
 import Fragment from "Fragment" /* 21 */;

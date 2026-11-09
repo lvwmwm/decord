@@ -1,10 +1,10 @@
-// Module ID: 18101
-// Function ID: 18102
+// Module ID: 18114
+// Function ID: 18115
 // Name: UserSettingsDesignSystemTabs
-// Dependencies: [32, 19, 17, 21, 5140, 575, 5751, 5724, 5137, 9069, 9059, 6159, 12342, 14607, 14435, 5758, 7429, 2]
+// Dependencies: [32, 19, 17, 21, 5140, 575, 5751, 5724, 5137, 9069, 9059, 6159, 12342, 14608, 14436, 5758, 7429, 2]
 // Exports: default
 
-// Module 18101 (UserSettingsDesignSystemTabs)
+// Module 18114 (UserSettingsDesignSystemTabs)
 import nativeDefault from "native" /* 575 */;
 import useMeasuredLayoutDefault from "useMeasuredLayout" /* 9069 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -106,12 +106,12 @@ export default function UserSettingsDesignSystemTabs() {
   const tmp22 = closure_6;
   if (tmp21Result) {
     const obj5 = { state: segmentedControlState, colors: items1 };
-    tmp21Result = tmp21(tmp(14607), obj5);
+    tmp21Result = tmp21(tmp(14608), obj5);
   }
   obj7 = { spacing: 24, children: items3 };
   items2[1] = tmp21Result;
   const obj6 = { children: closure_8(closure_5, obj4) };
-  items3 = [closure_7(closure_5, { children: items2 }), closure_8(first(14435).SegmentedControlPages, { state: segmentedControlState }), , ];
+  items3 = [closure_7(closure_5, { children: items2 }), closure_8(first(14436).SegmentedControlPages, { state: segmentedControlState }), , ];
   const obj8 = { spacing: 8, direction: "horizontal", children: items4 };
   const Stack2 = tmp18(6159).Stack;
   items4 = [, ];

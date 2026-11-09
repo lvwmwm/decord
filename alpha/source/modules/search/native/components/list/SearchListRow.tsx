@@ -1,9 +1,9 @@
-// Module ID: 19047
-// Function ID: 19048
+// Module ID: 19060
+// Function ID: 19061
 // Name: SearchListRow
 // Dependencies: [19, 17, 9917, 21, 5140, 575, 7043, 5751, 2]
 
-// Module 19047 (SearchListRow)
+// Module 19060 (SearchListRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Pressables from "Pressables" /* 7043 */;

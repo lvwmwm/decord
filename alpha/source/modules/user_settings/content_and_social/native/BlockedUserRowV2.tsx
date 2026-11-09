@@ -1,10 +1,10 @@
-// Module ID: 17013
-// Function ID: 17014
+// Module ID: 17024
+// Function ID: 17025
 // Name: BlockedUserRowV2
-// Dependencies: [19, 1385, 21, 7552, 7387, 1113, 8821, 7038, 1187, 17014, 5758, 504, 2]
+// Dependencies: [19, 1385, 21, 7552, 7387, 1113, 8821, 7038, 1187, 17025, 5758, 504, 2]
 // Exports: default
 
-// Module 17013 (BlockedUserRowV2)
+// Module 17024 (BlockedUserRowV2)
 import Fragment from "Fragment" /* 21 */;
 import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7552 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8821 */;

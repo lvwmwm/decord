@@ -1,10 +1,10 @@
-// Module ID: 18154
-// Function ID: 18155
+// Module ID: 18167
+// Function ID: 18168
 // Name: useOpenDeepLinkedProduct
 // Dependencies: [19, 7835, 504, 9667, 7807, 5374, 8818, 2]
 // Exports: default
 
-// Module 18154 (useOpenDeepLinkedProduct)
+// Module 18167 (useOpenDeepLinkedProduct)
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
 import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7807 */;
 import react_mod from "react" /* 19 */;

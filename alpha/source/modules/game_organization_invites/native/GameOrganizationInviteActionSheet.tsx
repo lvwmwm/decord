@@ -1,10 +1,10 @@
-// Module ID: 16089
-// Function ID: 16090
+// Module ID: 16099
+// Function ID: 16100
 // Name: GameOrganizationInviteActionSheet
-// Dependencies: [19, 17, 21, 5140, 575, 9208, 16090, 16091, 1113, 2530, 7426, 6159, 5751, 7282, 16092, 16093, 2]
+// Dependencies: [19, 17, 21, 5140, 575, 9208, 16100, 16101, 1113, 2530, 7426, 6159, 5751, 7282, 16102, 16103, 2]
 // Exports: default
 
-// Module 16089 (GameOrganizationInviteActionSheet)
+// Module 16099 (GameOrganizationInviteActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl6 from "intl" /* 1113 */;
@@ -14,8 +14,8 @@ import Stack_Stack from "Stack/Stack" /* 6159 */;
 import SearchBar2 from "SearchBar" /* 7282 */;
 import ActionSheet2 from "ActionSheet" /* 7426 */;
 import UserPlaceholderRowDefault from "UserPlaceholderRow" /* 9208 */;
-import useGameOrganizationInviteSuggestionsDefault from "useGameOrganizationInviteSuggestions" /* 16090 */;
-import useLinkedGameOrganizationInviteSenderDefault from "useLinkedGameOrganizationInviteSender" /* 16091 */;
+import useGameOrganizationInviteSuggestionsDefault from "useGameOrganizationInviteSuggestions" /* 16100 */;
+import useLinkedGameOrganizationInviteSenderDefault from "useLinkedGameOrganizationInviteSender" /* 16101 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5140 */;
@@ -90,10 +90,10 @@ export default function GameOrganizationInviteActionSheet(guildId) {
   if (isLoading) {
     tmp7Result = tmp7(Loading, {});
   } else if (hasNoFriends) {
-    tmp7Result = tmp7(tmp2(16092), {});
+    tmp7Result = tmp7(tmp2(16102), {});
   } else {
     const obj7 = { users, getSendState, onInvite: handleInvite };
-    tmp7Result = tmp7(tmp2(16093), obj7);
+    tmp7Result = tmp7(tmp2(16103), obj7);
   }
   return React3(ActionSheet, obj);
 };

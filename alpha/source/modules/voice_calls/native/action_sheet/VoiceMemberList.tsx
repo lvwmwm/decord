@@ -1,10 +1,10 @@
-// Module ID: 15468
-// Function ID: 15469
+// Module ID: 15478
+// Function ID: 15479
 // Name: VoiceMemberList
-// Dependencies: [32, 5, 19, 17, 4988, 1404, 6769, 5072, 1385, 5896, 1072, 1191, 5389, 1083, 21, 5140, 15464, 12075, 504, 8246, 15469, 1113, 11108, 11785, 9198, 5751, 10170, 7387, 2017, 6761, 11860, 8008, 15470, 15471, 1493, 15478, 5314, 12, 5374, 8821, 5199, 15479, 7304, 2]
+// Dependencies: [32, 5, 19, 17, 4988, 1404, 6769, 5072, 1385, 5896, 1072, 1191, 5389, 1083, 21, 5140, 15474, 12075, 504, 8246, 15479, 1113, 11108, 11785, 9198, 5751, 10170, 7387, 2017, 6761, 11860, 8008, 15480, 15481, 1493, 15488, 5314, 12, 5374, 8821, 5199, 15489, 7304, 2]
 // Exports: default
 
-// Module 15468 (VoiceMemberList)
+// Module 15478 (VoiceMemberList)
 import Constants2 from "Constants" /* 1083 */;
 import FormConstants from "FormConstants" /* 1191 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
@@ -15,8 +15,8 @@ import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 88
 import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9198 */;
 import openGroupDMAddMembersDefault from "openGroupDMAddMembers" /* 11785 */;
 import useIsVoiceChannelFullDefault from "useIsVoiceChannelFull" /* 12075 */;
-import GuildEventVoiceBannerDefault from "GuildEventVoiceBanner" /* 15464 */;
-import VoiceMemberUser from "VoiceMemberUser" /* 15471 */;
+import GuildEventVoiceBannerDefault from "GuildEventVoiceBanner" /* 15474 */;
+import VoiceMemberUser from "VoiceMemberUser" /* 15481 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -113,7 +113,7 @@ function VoiceSectionRow(arg0) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -158,7 +158,7 @@ function VoiceSectionRow(arg0) {
               }
             }
             c6 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           } catch (tmp22) {
             c6 = 3;
             throw tmp22;
@@ -229,8 +229,8 @@ let closure_26 = react.memo(function Footer(channel) {
             }
       };
       const FormRow = tmp4(8246).FormRow;
-      obj3 = { accessibilityLabel: intl.string(channel(1113).t["6Qgrev"]), accessibilityHidden: true, source: AssetRegistryDefault, size: channel(15469).CircularIconButton.Sizes.MEDIUM_32 };
-      CircularIconButton = tmp4(15469).CircularIconButton;
+      obj3 = { accessibilityLabel: intl.string(channel(1113).t["6Qgrev"]), accessibilityHidden: true, source: AssetRegistryDefault, size: channel(15479).CircularIconButton.Sizes.MEDIUM_32 };
+      CircularIconButton = tmp4(15479).CircularIconButton;
       intl = tmp4(1113).intl;
       intl2 = tmp4(1113).intl;
       items[1] = closure_21(FormRow, obj2);
@@ -255,7 +255,7 @@ export default function VoiceMemberList(channel) {
   let obj6;
   let reduced;
   let tmp25Result2;
-  const f109726 = (user) => stateFromStoresArray.includes(user.user.id);
+  const f109790 = (user) => stateFromStoresArray.includes(user.user.id);
   channel = channel.channel;
   let flag = channel.isActionSheet;
   if (flag === undefined) {
@@ -329,8 +329,8 @@ export default function VoiceMemberList(channel) {
           str = "";
         }
         const tmp3Result = flag(tmp4[37]);
-        [arr10, arr11] = _slicedToArray(tmp3Result.partition(stateFromStores, f109726), 2);
-        const tmp15 = _slicedToArray(tmp3Result.partition(stateFromStores, f109726), 2);
+        [arr10, arr11] = _slicedToArray(tmp3Result.partition(stateFromStores, f109790), 2);
+        const tmp15 = _slicedToArray(tmp3Result.partition(stateFromStores, f109790), 2);
         if (arr10.length > 0) {
           const push = items5.push;
           const obj5 = { type: constants4.SPECTATING, title: intl.formatToPlainString(channel(tmp4[21]).t.Fb0eT9, obj6), data: arr10 };
@@ -419,7 +419,7 @@ export default function VoiceMemberList(channel) {
                       let result;
                       const tmp = undefined !== items5[arg0].data[arg1].url && undefined !== items5[arg0].data[arg1].applicationId;
                       if (tmp) {
-                        const tmp9Result = tmp9(15470);
+                        const tmp9Result = tmp9(15480);
                         result = tmp9Result.calculateActivityRowHeight(tmp8);
                       } else {
                         const voiceState = tmp7.voiceState;

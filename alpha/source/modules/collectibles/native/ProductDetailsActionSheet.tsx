@@ -1,7 +1,7 @@
 // Module ID: 8819
 // Function ID: 8820
 // Name: ProductDetailsActionSheet
-// Dependencies: [32, 19, 17, 7796, 1074, 1072, 1083, 21, 3, 5140, 575, 5764, 5199, 5147, 1113, 7164, 2111, 8820, 8821, 8818, 7807, 10031, 15284, 15285, 7387, 7412, 15286, 15287, 9543, 6160, 1260, 1252, 504, 15288, 9610, 9613, 7808, 9615, 9616, 15289, 15292, 5392, 9618, 9653, 15293, 15303, 15313, 1187, 15314, 15329, 5388, 9667, 10725, 9635, 10032, 8879, 5758, 15332, 8816, 2]
+// Dependencies: [32, 19, 17, 7796, 1074, 1072, 1083, 21, 3, 5140, 575, 5764, 5199, 5147, 1113, 7164, 2111, 8820, 8821, 8818, 7807, 10031, 15294, 15295, 7387, 7412, 15296, 15297, 9543, 6160, 1260, 1252, 504, 15298, 9610, 9613, 7808, 9615, 9616, 15299, 15302, 5392, 9618, 9653, 15303, 15313, 15323, 1187, 15324, 15339, 5388, 9667, 10725, 9635, 10032, 8879, 5758, 15342, 8816, 2]
 // Exports: default
 
 // Module 8819 (ProductDetailsActionSheet)
@@ -117,7 +117,7 @@ function ProductDetailsActionSheetContent(product) {
   let tmp55;
   let tmp57;
   let type;
-  const f94651 = () => {
+  const f94693 = () => {
     let tmp;
     if (closure_6) {
       const first = require.items[0];
@@ -258,8 +258,8 @@ function ProductDetailsActionSheetContent(product) {
   }, items3);
   const tmp39 = product.type === require("CollectiblesItemType").CollectiblesItemType.BUNDLE;
   closure_6 = tmp39;
-  [type, c7] = selectedProduct(obj2.useState(f94651), 2);
-  selectedProduct(obj2.useState(f94651), 2);
+  [type, c7] = selectedProduct(obj2.useState(f94693), 2);
+  selectedProduct(obj2.useState(f94693), 2);
   const tmp41 = c5((type) => {
     _undefined(type);
     _undefined2(type.type);
@@ -535,7 +535,7 @@ function ManagedProductDetailsActionSheetInner(skuId) {
     tmp10 = closure_14;
   } else {
     tmp10 = closure_14;
-    tmp11 = closure_14(tmp5(15332), {});
+    tmp11 = closure_14(tmp5(15342), {});
   }
 }
 function ProductDetailsActionSheetWithOrderCTX(skuId) {

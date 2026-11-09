@@ -1,9 +1,9 @@
-// Module ID: 13501
-// Function ID: 13502
+// Module ID: 13502
+// Function ID: 13503
 // Name: GuildDisableCommunication
-// Dependencies: [5, 32, 19, 17, 5054, 1072, 21, 1113, 5140, 575, 5735, 11546, 5721, 1252, 13502, 5837, 6173, 5751, 7124, 7127, 7316, 5758, 2]
+// Dependencies: [5, 32, 19, 17, 5054, 1072, 21, 1113, 5140, 575, 5735, 11546, 5721, 1252, 13503, 5837, 6173, 5751, 7124, 7127, 7316, 5758, 2]
 
-// Module 13501 (GuildDisableCommunication)
+// Module 13502 (GuildDisableCommunication)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl6 from "intl" /* 1113 */;
@@ -135,7 +135,7 @@ const memoResult = react.memo(function GuildDisableCommunication(arg0) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -179,7 +179,7 @@ const memoResult = react.memo(function GuildDisableCommunication(arg0) {
             open("GUILD_COMMUNICATION_DISABLED_SUCCESS", obj);
             closure_129_2();
             c3 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp17) {
           c3 = 3;

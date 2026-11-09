@@ -1,26 +1,18 @@
 // Module ID: 16467
 // Function ID: 16468
-// Dependencies: [16456, 16431]
+// Dependencies: []
 
 // Module 16467
-import _mod16431 from "module_16431" /* 16431 */;
-import module_16456 from "module_16456" /* 16456 */;
-
-let _moduleResult = module_16456(_mod16431.document);
-if (_moduleResult) {
-  const _module1 = module_16456;
-  _moduleResult = _module1(_mod16431.document.createElement);
+let all = typeof document === "object";
+if (typeof document === "object") {
+  const _document = document;
+  all = document.all;
 }
-let c2 = _moduleResult;
-
-export default (arg0) => {
-  let element;
-  const tmp = c2;
-  if (tmp) {
-    const _document = _mod16431.document;
-    element = _document.createElement(arg0);
-  } else {
-    element = {};
+if (undefined === all) {
+  let fn;
+  if (undefined !== all) {
+    fn = (fn) => typeof fn === "function" || fn === all;
   }
-  return element;
-};
+  module.exports = fn;
+}
+fn = (fn) => typeof fn === "function";

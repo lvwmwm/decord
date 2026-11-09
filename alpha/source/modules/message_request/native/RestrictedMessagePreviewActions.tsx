@@ -1,10 +1,10 @@
-// Module ID: 19343
-// Function ID: 19344
+// Module ID: 19356
+// Function ID: 19357
 // Name: RestrictedMessagePreviewActions
-// Dependencies: [19, 17, 5082, 1072, 11427, 21, 5140, 575, 14408, 504, 7552, 10859, 12554, 5194, 5374, 11428, 2118, 8422, 7549, 5758, 1113, 5751, 2]
+// Dependencies: [19, 17, 5082, 1072, 11427, 21, 5140, 575, 14409, 504, 7552, 10859, 12554, 5194, 5374, 11428, 2118, 8422, 7549, 5758, 1113, 5751, 2]
 // Exports: default
 
-// Module 19343 (RestrictedMessagePreviewActions)
+// Module 19356 (RestrictedMessagePreviewActions)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import asyncRequire from "asyncRequire" /* 2118 */;

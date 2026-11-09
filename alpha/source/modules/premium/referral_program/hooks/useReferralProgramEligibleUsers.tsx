@@ -1,10 +1,10 @@
-// Module ID: 15600
-// Function ID: 15601
+// Module ID: 15610
+// Function ID: 15611
 // Name: useReferralProgramEligibleUsers
 // Dependencies: [5, 32, 19, 7708, 504, 38, 7709, 8823, 2]
 // Exports: useReferralProgramEligibleUsers
 
-// Module 15600 (useReferralProgramEligibleUsers)
+// Module 15610 (useReferralProgramEligibleUsers)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -38,7 +38,7 @@ export function useReferralProgramEligibleUsers(searchQuery) {
           obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         while (true) {
@@ -69,7 +69,7 @@ export function useReferralProgramEligibleUsers(searchQuery) {
                 let _Array = Array;
                 let tmp34 = closure_131_7(Array.from(map.values()));
                 c7 = 3;
-                return { value: "HermesInternal", done: "HermesInternal" };
+                return { value: "HermesInternal", done: null };
               } else {
                 c5 = 1;
                 c1 = tmp17;
@@ -126,7 +126,7 @@ export function useReferralProgramEligibleUsers(searchQuery) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         while (true) {
@@ -265,7 +265,7 @@ export function useReferralProgramEligibleUsers(searchQuery) {
             let tmp36 = closure_134_9(false);
           }
           c10 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       }
     });

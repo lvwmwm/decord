@@ -1,13 +1,13 @@
-// Module ID: 16978
-// Function ID: 16979
+// Module ID: 16989
+// Function ID: 16990
 // Name: AccountViewBackupCodesSetting
-// Dependencies: [19, 8503, 1072, 16971, 1113, 1187, 16979, 11685, 16889, 16981, 2]
+// Dependencies: [19, 8503, 1072, 16982, 1113, 1187, 16990, 11685, 16900, 16992, 2]
 
-// Module 16978 (AccountViewBackupCodesSetting)
+// Module 16989 (AccountViewBackupCodesSetting)
 import intl5 from "intl" /* 1113 */;
 import SettingsConstants from "SettingsConstants" /* 8503 */;
-import SettingsAccountUtils from "SettingsAccountUtils" /* 16889 */;
-import MFAActionCreatorsDefault from "MFAActionCreators" /* 16971 */;
+import SettingsAccountUtils from "SettingsAccountUtils" /* 16900 */;
+import MFAActionCreatorsDefault from "MFAActionCreators" /* 16982 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
 import SettingBuilders from "SettingBuilders" /* 11685 */;

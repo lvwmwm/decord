@@ -15,7 +15,7 @@ import size from "module_2" /* 2 */;
 
 let set;
 
-const f93268 = (arg0) => {
+const f93310 = (arg0) => {
   closure_0 = arg0;
   return closure_0.some((item) => null != config.config.taskConfigV2.tasks[item]);
 };
@@ -305,13 +305,13 @@ function formatWatchTaskTimeFromSeconds(arg0, arg1) {
   return "" + padStartResult1 + ":" + StringResult3.padStart(2, "0");
 }
 let items = [FirstPartyQuestTaskTypes.FirstPartyQuestTaskTypes.PLAY_ON_XBOX, FirstPartyQuestTaskTypes.FirstPartyQuestTaskTypes.PLAY_ON_PLAYSTATION];
-const hasSomeConsoleTasks = f93268;
+const hasSomeConsoleTasks = f93310;
 const items1 = [FirstPartyQuestTaskTypes.FirstPartyQuestTaskTypes.WATCH_VIDEO];
-const fn2 = f93268;
+const fn2 = f93310;
 const items2 = [FirstPartyQuestTaskTypes.FirstPartyQuestTaskTypes.WATCH_VIDEO_ON_MOBILE];
-const fn3 = f93268;
+const fn3 = f93310;
 const items3 = [FirstPartyQuestTaskTypes.FirstPartyQuestTaskTypes.WATCH_VIDEO, FirstPartyQuestTaskTypes.FirstPartyQuestTaskTypes.WATCH_VIDEO_ON_MOBILE];
-const fn4 = f93268;
+const fn4 = f93310;
 const items4 = [FirstPartyQuestTaskTypes.FirstPartyQuestTaskTypes.PLAY_ON_DESKTOP, FirstPartyQuestTaskTypes.FirstPartyQuestTaskTypes.STREAM_ON_DESKTOP, FirstPartyQuestTaskTypes.FirstPartyQuestTaskTypes.PLAY_ON_PLAYSTATION, FirstPartyQuestTaskTypes.FirstPartyQuestTaskTypes.PLAY_ON_XBOX, FirstPartyQuestTaskTypes.FirstPartyQuestTaskTypes.ACHIEVEMENT_IN_GAME];
 const items5 = [FirstPartyQuestTaskTypes.FirstPartyQuestTaskTypes.ACHIEVEMENT_IN_ACTIVITY, FirstPartyQuestTaskTypes.FirstPartyQuestTaskTypes.PLAY_ACTIVITY];
 let result = size.fileFinishedImporting("modules/quests/utils/QuestTaskUtils.tsx");
@@ -392,7 +392,7 @@ export function shouldUsePlayOnDesktopTask(quest) {
 }
 export function hasSomeFirstPartyTasks(arg0) {
   let closure_0 = arg0;
-  return f93268;
+  return f93310;
 }
 export function isInGameQuest(quest) {
   let closure_0 = quest;
@@ -403,8 +403,8 @@ export { hasSomeConsoleTasks };
 export const hasWatchVideoOnDesktopTasks = fn2;
 export const hasWatchVideoOnMobileTasks = fn3;
 export const hasWatchVideoTasks = fn4;
-export const hasStandaloneGameplayTasks = f93268;
-export const hasActivityTasks = f93268;
+export const hasStandaloneGameplayTasks = f93310;
+export const hasActivityTasks = f93310;
 export function isVideoQuestForMobilePlatformOnly(id) {
   if (typeof fn3 === "function") {
     let closure_0 = id;

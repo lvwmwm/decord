@@ -18,7 +18,7 @@ let hasOwnProperty;
 const result = size.fileFinishedImporting("modules/premium/hooks/usePremiumDiscountOffer.android.tsx");
 
 export function usePremiumDiscountOffer() {
-  const f94344 = (item) => offerIds.has(item);
+  const f94386 = (item) => offerIds.has(item);
   let obj = useStateFromStores;
   const items = [IAPStore];
   const offerIds = obj.useStateFromStoresObject(items, () => {
@@ -30,7 +30,7 @@ export function usePremiumDiscountOffer() {
   let tmp5 = null;
   if (0 !== values.length) {
     let tmp6 = null;
-    if (values.every(f94344)) {
+    if (values.every(f94386)) {
       tmp6 = tmp4;
     }
     tmp5 = tmp6;
@@ -40,7 +40,7 @@ export function usePremiumDiscountOffer() {
   let tmp8 = null;
   if (0 !== values2.length) {
     let tmp9 = null;
-    if (values2.every(f94344)) {
+    if (values2.every(f94386)) {
       tmp9 = tmp7;
     }
     tmp8 = tmp9;

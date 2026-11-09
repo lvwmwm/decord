@@ -1,10 +1,10 @@
-// Module ID: 13631
-// Function ID: 13632
+// Module ID: 13632
+// Function ID: 13633
 // Name: ChannelTabsActionCreators
-// Dependencies: [4989, 5043, 5171, 13629, 1072, 4996, 5888, 1099, 5885, 5189, 5176, 5014, 5889, 572, 2]
+// Dependencies: [4989, 5043, 5171, 13630, 1072, 4996, 5888, 1099, 5885, 5189, 5176, 5014, 5889, 572, 2]
 // Exports: closeChannelTab, cycleChannelTab, goBackInActiveTab, goForwardInActiveTab, moveChannelTab, navigateToRoute, openChannelTab, openDuplicateTab, setChannelTabPinned, setChannelTabsEnabled
 
-// Module 13631 (ChannelTabsActionCreators)
+// Module 13632 (ChannelTabsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import router_utils from "router_utils" /* 1099 */;
 import FavoritesUtils from "FavoritesUtils" /* 5014 */;
@@ -16,7 +16,7 @@ import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5889 */;
 import ChannelStore from "ChannelStore" /* 4989 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 5043 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 5171 */;
-import ChannelTabsStore from "ChannelTabsStore" /* 13629 */;
+import ChannelTabsStore from "ChannelTabsStore" /* 13630 */;
 import Constants from "Constants" /* 1072 */;
 import ChannelConstants from "ChannelConstants" /* 4996 */;
 import size from "module_2" /* 2 */;

@@ -1,10 +1,10 @@
-// Module ID: 19888
-// Function ID: 19889
+// Module ID: 19901
+// Function ID: 19902
 // Name: FileUploadActionComponent
-// Dependencies: [5, 19, 17, 4989, 7777, 1072, 21, 5140, 6584, 7038, 12397, 1113, 6198, 7401, 11243, 8098, 7120, 8767, 38, 504, 12693, 8301, 8286, 19889, 2116, 6090, 8290, 13991, 9868, 10650, 2017, 10649, 8288, 6159, 575, 7126, 2]
+// Dependencies: [5, 19, 17, 4989, 7777, 1072, 21, 5140, 6584, 7038, 12397, 1113, 6198, 7401, 11243, 8098, 7120, 8767, 38, 504, 12693, 8301, 8286, 19902, 2116, 6090, 8290, 13992, 9868, 10650, 2017, 10649, 8288, 6159, 575, 7126, 2]
 // Exports: default
 
-// Module 19888 (FileUploadActionComponent)
+// Module 19901 (FileUploadActionComponent)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
 import intl3 from "intl" /* 1113 */;
@@ -184,7 +184,7 @@ export default function FileUploadActionComponent(maxValues) {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       while (true) {
@@ -223,7 +223,7 @@ export default function FileUploadActionComponent(maxValues) {
               }
             }
             c8 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else if (1 === tmp5) {
           c6 = 0;

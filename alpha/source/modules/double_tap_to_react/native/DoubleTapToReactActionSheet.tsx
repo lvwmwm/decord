@@ -1,10 +1,10 @@
-// Module ID: 14173
-// Function ID: 14174
+// Module ID: 14174
+// Function ID: 14175
 // Name: DoubleTapToReactActionSheet
-// Dependencies: [5, 32, 19, 17, 5141, 6851, 1072, 1388, 21, 5140, 1377, 575, 1652, 5370, 5721, 504, 5761, 4965, 5086, 8497, 1411, 7363, 1252, 7412, 10073, 1705, 5374, 7426, 5751, 1113, 14072, 14174, 5758, 2]
+// Dependencies: [5, 32, 19, 17, 5141, 6851, 1072, 1388, 21, 5140, 1377, 575, 1652, 5370, 5721, 504, 5761, 4965, 5086, 8497, 1411, 7363, 1252, 7412, 10073, 1705, 5374, 7426, 5751, 1113, 14073, 14175, 5758, 2]
 // Exports: default
 
-// Module 14173 (DoubleTapToReactActionSheet)
+// Module 14174 (DoubleTapToReactActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -395,7 +395,7 @@ export default function DoubleTapToReactActionSheet(emoji) {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -439,7 +439,7 @@ export default function DoubleTapToReactActionSheet(emoji) {
           return obj.showDoubleTapEmojiUpdatedToast(obj2);
         }, 500);
         c3 = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp24) {
         c3 = 3;
         throw tmp24;

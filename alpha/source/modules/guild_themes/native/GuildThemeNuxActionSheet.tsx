@@ -1,10 +1,10 @@
-// Module ID: 18539
-// Function ID: 18540
+// Module ID: 18552
+// Function ID: 18553
 // Name: GuildThemeNuxActionSheet
-// Dependencies: [5, 32, 19, 17, 5171, 5344, 4986, 21, 3, 5140, 575, 18540, 5365, 504, 5374, 1113, 5388, 18541, 5751, 7124, 7127, 8095, 5758, 2]
+// Dependencies: [5, 32, 19, 17, 5171, 5344, 4986, 21, 3, 5140, 575, 18553, 5365, 504, 5374, 1113, 5388, 18554, 5751, 7124, 7127, 8095, 5758, 2]
 // Exports: default
 
-// Module 18539 (GuildThemeNuxActionSheet)
+// Module 18552 (GuildThemeNuxActionSheet)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
@@ -87,7 +87,7 @@ export default function GuildThemeNuxActionSheet(guildId) {
   const tmp = closure_14();
   let tmp2 = guildId;
   const tmp3 = dependencyMap;
-  const tmp4 = _slicedToArray(react.useState(guildId(18540).getInitialGuildThemeNuxSelection), 2);
+  const tmp4 = _slicedToArray(react.useState(guildId(18553).getInitialGuildThemeNuxSelection), 2);
   [tmp5, c2] = tmp4;
   [tmp7, c3] = _slicedToArray(react.useState(null), 2);
   const tmp6 = _slicedToArray(react.useState(null), 2);
@@ -153,7 +153,7 @@ export default function GuildThemeNuxActionSheet(guildId) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -205,7 +205,7 @@ export default function GuildThemeNuxActionSheet(guildId) {
           obj.hideActionSheet(GuildThemeNuxActionSheet_str);
         }
         c5 = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp36) {
         closure_2 = tmp36;
         if (0 === v0) {
@@ -231,7 +231,7 @@ export default function GuildThemeNuxActionSheet(guildId) {
   let obj3 = { startExpanded: true, dismissAccessibilityLabel: intl2.string(tmp2(1113).t.cpT0Cq), onDismiss: callback3, contentStyles: tmp.container, children: items7 };
   const BottomSheet = tmp2(5388).BottomSheet;
   intl2 = tmp2(1113).intl;
-  items7 = [closure_10(markAsDismissed(18541), { themeSettings: stateFromStores1, isPersonal: tmp10 }), , , , , , ];
+  items7 = [closure_10(markAsDismissed(18554), { themeSettings: stateFromStores1, isPersonal: tmp10 }), , , , , , ];
   let obj4 = { accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary", style: tmp.title, children: intl3.string(tmp2(1113).t.Q9zFy9) };
   const Text = tmp2(5751).Text;
   intl3 = tmp2(1113).intl;

@@ -1,10 +1,10 @@
-// Module ID: 15556
-// Function ID: 15557
+// Module ID: 15566
+// Function ID: 15567
 // Name: PremiumReferralTrialPill
 // Dependencies: [17, 21, 5140, 575, 5751, 1113, 2]
 // Exports: PremiumReferralTrialPill
 
-// Module 15556 (PremiumReferralTrialPill)
+// Module 15566 (PremiumReferralTrialPill)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;

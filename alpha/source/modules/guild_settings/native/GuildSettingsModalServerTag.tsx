@@ -1,10 +1,10 @@
-// Module ID: 20146
-// Function ID: 20147
+// Module ID: 20159
+// Function ID: 20160
 // Name: GuildSettingsModalServerTag
-// Dependencies: [5, 32, 19, 17, 9126, 5011, 9155, 1072, 8464, 21, 5140, 575, 1499, 9157, 504, 9127, 8807, 9128, 9154, 5836, 1113, 14293, 5349, 7064, 7630, 1500, 6091, 1187, 7271, 14965, 5751, 7126, 7429, 7038, 6159, 16042, 8246, 16039, 20147, 2]
+// Dependencies: [5, 32, 19, 17, 9126, 5011, 9155, 1072, 8464, 21, 5140, 575, 1499, 9157, 504, 9127, 8807, 9128, 9154, 5836, 1113, 14294, 5349, 7064, 7630, 1500, 6091, 1187, 7271, 14966, 5751, 7126, 7429, 7038, 6159, 16052, 8246, 16049, 20160, 2]
 // Exports: default
 
-// Module 20146 (GuildSettingsModalServerTag)
+// Module 20159 (GuildSettingsModalServerTag)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -12,7 +12,7 @@ import Powerups from "Powerups" /* 5349 */;
 import GuildProfileStore from "GuildProfileStore" /* 9126 */;
 import GuildProfileActionCreators from "GuildProfileActionCreators" /* 9128 */;
 import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9154 */;
-import openGuildPowerupsModalDefault from "openGuildPowerupsModal" /* 14293 */;
+import openGuildPowerupsModalDefault from "openGuildPowerupsModal" /* 14294 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -197,7 +197,7 @@ export default function GuildSettingsModalServerTag(guildId) {
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -264,7 +264,7 @@ export default function GuildSettingsModalServerTag(guildId) {
           }
         }
         c3 = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp27) {
         c3 = 3;
         throw tmp27;
@@ -383,7 +383,7 @@ export default function GuildSettingsModalServerTag(guildId) {
                   return obj.getGuildProfile(guildId, true);
                 }
         };
-        return closure_13(navigation(14965), obj8);
+        return closure_13(navigation(14966), obj8);
       } else if (null == stateFromStores1) {
         return closure_13(tmp2(7271).SceneLoadingIndicator, {});
       } else {
@@ -426,7 +426,7 @@ export default function GuildSettingsModalServerTag(guildId) {
           if (tmp33Result) {
             size = { badge: null, primaryTintColor: badgeColorPrimary, secondaryTintColor: badgeColorSecondary, width: null, height: null };
             ({ badge: obj15.badge, badgeColorPrimary } = stateFromStores1);
-            const GuildBadge = tmp2(16042).GuildBadge;
+            const GuildBadge = tmp2(16052).GuildBadge;
             badgeColorSecondary = stateFromStores1.badgeColorSecondary;
             ({ SIZE_16: obj15.width, SIZE_16: obj15.height } = closure_12);
             tmp33Result = tmp33(GuildBadge, size);
@@ -452,12 +452,12 @@ export default function GuildSettingsModalServerTag(guildId) {
           items14[2] = closure_13(Text2, obj18);
           const obj19 = { guildId, tag: null, badge: null, primaryColor: null, secondaryColor: null, isDirty: result1 };
           ({ tag: obj21.tag, badge: obj21.badge, badgeColorPrimary: obj21.primaryColor, badgeColorSecondary: obj21.secondaryColor } = stateFromStores1);
-          items14[3] = closure_13(navigation(16039), obj19);
+          items14[3] = closure_13(navigation(16049), obj19);
           obj16.children = items14;
           tmp41 = obj16;
         } else {
           const obj20 = { guildId, onUnlockPress: callback2 };
-          const items15 = [tmp33(tmp40(20147), obj20), tmp32Result2];
+          const items15 = [tmp33(tmp40(20160), obj20), tmp32Result2];
           obj16.children = items15;
           tmp41 = obj16;
         }

@@ -1,10 +1,10 @@
-// Module ID: 19269
-// Function ID: 19270
+// Module ID: 19282
+// Function ID: 19283
 // Name: AddModeratorsActionSheet
 // Dependencies: [5, 32, 19, 17, 5011, 8016, 21, 5140, 575, 504, 5776, 6765, 2116, 9112, 5836, 5374, 5388, 7382, 1113, 5758, 9151, 4997, 2]
 // Exports: default
 
-// Module 19269 (AddModeratorsActionSheet)
+// Module 19282 (AddModeratorsActionSheet)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
@@ -51,7 +51,7 @@ export default function AddModeratorsActionSheet(channel) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c3;
@@ -115,7 +115,7 @@ export default function AddModeratorsActionSheet(channel) {
               c3 = 0;
             }
             c5 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp16) {
           closure_2 = tmp16;

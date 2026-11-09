@@ -1,10 +1,10 @@
-// Module ID: 14659
-// Function ID: 14660
+// Module ID: 14660
+// Function ID: 14661
 // Name: SocialLayerStorefrontGiftPurchaseSection
-// Dependencies: [5, 32, 19, 17, 7685, 1385, 1072, 1387, 21, 5140, 575, 5735, 7391, 504, 1252, 14660, 10800, 1377, 572, 10788, 1113, 10806, 5751, 5758, 2]
+// Dependencies: [5, 32, 19, 17, 7685, 1385, 1072, 1387, 21, 5140, 575, 5735, 7391, 504, 1252, 14661, 10800, 1377, 572, 10788, 1113, 10806, 5751, 5758, 2]
 // Exports: default
 
-// Module 14659 (SocialLayerStorefrontGiftPurchaseSection)
+// Module 14660 (SocialLayerStorefrontGiftPurchaseSection)
 import react_native from "react-native" /* 17 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import nativeDefault from "native" /* 575 */;
@@ -187,7 +187,7 @@ export default function SocialLayerStorefrontGiftPurchaseSection(skuId) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -224,7 +224,7 @@ export default function SocialLayerStorefrontGiftPurchaseSection(skuId) {
               closure_128_10();
             }
             c2 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp14) {
           c2 = 3;

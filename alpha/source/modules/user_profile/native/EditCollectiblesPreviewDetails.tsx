@@ -1,10 +1,10 @@
-// Module ID: 15344
-// Function ID: 15345
+// Module ID: 15354
+// Function ID: 15355
 // Name: EditCollectiblesPreviewDetails
 // Dependencies: [19, 17, 2186, 21, 5140, 504, 2171, 7808, 4962, 5751, 1113, 8815, 2]
 // Exports: default
 
-// Module 15344 (EditCollectiblesPreviewDetails)
+// Module 15354 (EditCollectiblesPreviewDetails)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import intl6 from "intl" /* 1113 */;

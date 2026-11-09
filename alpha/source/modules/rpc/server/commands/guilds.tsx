@@ -1,9 +1,9 @@
-// Module ID: 16622
-// Function ID: 16623
+// Module ID: 16632
+// Function ID: 16633
 // Name: guilds
-// Dependencies: [5007, 5052, 5046, 5011, 6583, 1072, 16606, 8984, 9417, 9414, 11976, 2]
+// Dependencies: [5007, 5052, 5046, 5011, 6583, 1072, 16616, 8984, 9417, 9414, 11976, 2]
 
-// Module 16622 (guilds)
+// Module 16632 (guilds)
 import GuildRecord from "GuildRecord" /* 5007 */;
 import Constants2 from "Constants" /* 6583 */;
 import OAuth2Scopes from "OAuth2Scopes" /* 8984 */;
@@ -14,7 +14,7 @@ import GuildMemberStore from "GuildMemberStore" /* 5052 */;
 import GuildRoleStore from "GuildRoleStore" /* 5046 */;
 import GuildStore from "GuildStore" /* 5011 */;
 import Constants from "Constants" /* 1072 */;
-import CONTEXT_MENU_ICON_NAMES_mod from "CONTEXT_MENU_ICON_NAMES" /* 16606 */;
+import CONTEXT_MENU_ICON_NAMES_mod from "CONTEXT_MENU_ICON_NAMES" /* 16616 */;
 import size from "module_2" /* 2 */;
 
 let RPCCommands;

@@ -1,9 +1,9 @@
-// Module ID: 17154
-// Function ID: 17155
+// Module ID: 17165
+// Function ID: 17166
 // Name: ConnectedAccount
-// Dependencies: [5, 32, 19, 17, 6627, 5011, 1072, 7410, 21, 5140, 1187, 575, 6778, 7408, 504, 5758, 1113, 5751, 7020, 6629, 7035, 5199, 17155, 11532, 6090, 6162, 9810, 17156, 17159, 7429, 7409, 11763, 5834, 2185, 8098, 9365, 12391, 3380, 1411, 5147, 9367, 7039, 7038, 2]
+// Dependencies: [5, 32, 19, 17, 6627, 5011, 1072, 7410, 21, 5140, 1187, 575, 6778, 7408, 504, 5758, 1113, 5751, 7020, 6629, 7035, 5199, 17166, 11532, 6090, 6162, 9810, 17167, 17170, 7429, 7409, 11763, 5834, 2185, 8098, 9365, 12391, 3380, 1411, 5147, 9367, 7039, 7038, 2]
 
-// Module 17154 (ConnectedAccount)
+// Module 17165 (ConnectedAccount)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl7 from "intl" /* 1113 */;
@@ -22,9 +22,9 @@ import Constants2 from "Constants" /* 7410 */;
 import TableSwitchRow2 from "TableSwitchRow" /* 7429 */;
 import XLargeBoldIcon from "XLargeBoldIcon" /* 9367 */;
 import InfoBoxDefault from "InfoBox" /* 11532 */;
-import shouldWarnConnectedAccountTwoWayDefault from "shouldWarnConnectedAccountTwoWay" /* 17155 */;
-import XboxTwoWayLinkUpsell from "XboxTwoWayLinkUpsell" /* 17156 */;
-import PlayStationTwoWayLinkUpsell from "PlayStationTwoWayLinkUpsell" /* 17159 */;
+import shouldWarnConnectedAccountTwoWayDefault from "shouldWarnConnectedAccountTwoWay" /* 17166 */;
+import XboxTwoWayLinkUpsell from "XboxTwoWayLinkUpsell" /* 17167 */;
+import PlayStationTwoWayLinkUpsell from "PlayStationTwoWayLinkUpsell" /* 17170 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -245,7 +245,7 @@ class ConnectedAccount extends PureComponent {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c3;
@@ -304,7 +304,7 @@ class ConnectedAccount extends PureComponent {
               c3 = 0;
             }
             c5 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp19) {
           if (0 === c3) {
@@ -334,7 +334,7 @@ class ConnectedAccount extends PureComponent {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c3;
@@ -393,7 +393,7 @@ class ConnectedAccount extends PureComponent {
               c3 = 0;
             }
             c5 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp19) {
           if (0 === c3) {
@@ -423,7 +423,7 @@ class ConnectedAccount extends PureComponent {
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -464,7 +464,7 @@ class ConnectedAccount extends PureComponent {
                 c3 = 0;
               }
               c5 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp10) {
             if (0 === c3) {
@@ -495,7 +495,7 @@ class ConnectedAccount extends PureComponent {
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -536,7 +536,7 @@ class ConnectedAccount extends PureComponent {
                 c3 = 0;
               }
               c5 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp10) {
             if (0 === c3) {

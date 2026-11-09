@@ -1,9 +1,9 @@
-// Module ID: 19787
-// Function ID: 19788
+// Module ID: 19800
+// Function ID: 19801
 // Name: AppIconPremiumManager
-// Dependencies: [5, 1385, 10101, 1072, 5165, 3, 10102, 7350, 1377, 15615, 5168, 2171, 1252, 2]
+// Dependencies: [5, 1385, 10101, 1072, 5165, 3, 10102, 7350, 1377, 15625, 5168, 2171, 1252, 2]
 
-// Module 19787 (AppIconPremiumManager)
+// Module 19800 (AppIconPremiumManager)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
@@ -68,7 +68,7 @@ class AppIconPremiumManager extends AutomaticLifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -168,7 +168,7 @@ class AppIconPremiumManager extends AutomaticLifecycleManager {
               }
             }
             c6 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp62) {
           c6 = 3;

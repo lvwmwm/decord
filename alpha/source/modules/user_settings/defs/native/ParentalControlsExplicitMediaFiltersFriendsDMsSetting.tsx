@@ -1,13 +1,13 @@
-// Module ID: 18260
-// Function ID: 18261
+// Module ID: 18273
+// Function ID: 18274
 // Name: ParentalControlsExplicitMediaFiltersFriendsDMsSetting
-// Dependencies: [7791, 8503, 17027, 8758, 17031, 1113, 17037, 1196, 11685, 2]
+// Dependencies: [7791, 8503, 17038, 8758, 17042, 1113, 17048, 1196, 11685, 2]
 
-// Module 18260 (ParentalControlsExplicitMediaFiltersFriendsDMsSetting)
+// Module 18273 (ParentalControlsExplicitMediaFiltersFriendsDMsSetting)
 import intl3 from "intl" /* 1113 */;
 import SettingsConstants from "SettingsConstants" /* 8503 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 17027 */;
-import FamilyCenterControlledSettingsUtils from "FamilyCenterControlledSettingsUtils" /* 17031 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 17038 */;
+import FamilyCenterControlledSettingsUtils from "FamilyCenterControlledSettingsUtils" /* 17042 */;
 import FamilyCenterStore from "FamilyCenterStore" /* 7791 */;
 import SettingBuilders from "SettingBuilders" /* 11685 */;
 import size from "module_2" /* 2 */;
@@ -40,7 +40,7 @@ let obj = {
     let items;
     const selectedTeenId = FamilyCenterStore.getSelectedTeenId();
     if (null != selectedTeenId) {
-      let obj = selectedTeenId(17031);
+      let obj = selectedTeenId(17042);
       const explicitContentFriendDm = obj.getExplicitContentSettingOrDefault(selectedTeenId).explicitContentFriendDm;
       const intl = selectedTeenId(1113).intl;
       const stringResult = intl.string(selectedTeenId(1113).t.GYpoAq);
@@ -55,8 +55,8 @@ let obj = {
         currentValue: explicitContentFriendDm,
         excluded: items
       };
-      const handleSensitiveMediaFilterPress = selectedTeenId(17037).handleSensitiveMediaFilterPress;
-      selectedTeenId(17037);
+      const handleSensitiveMediaFilterPress = selectedTeenId(17048).handleSensitiveMediaFilterPress;
+      selectedTeenId(17048);
       intl2 = selectedTeenId(1113).intl;
       items = [selectedTeenId(1196).ExplicitContentRedaction.SHOW];
       const result = handleSensitiveMediaFilterPress(obj2);

@@ -1,10 +1,10 @@
-// Module ID: 14443
-// Function ID: 14444
+// Module ID: 14444
+// Function ID: 14445
 // Name: ChatBeginningRowJoinApplication
-// Dependencies: [19, 17, 5072, 1385, 1072, 21, 5140, 575, 14444, 504, 14445, 7020, 5751, 1113, 5174, 6822, 5758, 2]
+// Dependencies: [19, 17, 5072, 1385, 1072, 21, 5140, 575, 14445, 504, 14446, 7020, 5751, 1113, 5174, 6822, 5758, 2]
 // Exports: default
 
-// Module 14443 (ChatBeginningRowJoinApplication)
+// Module 14444 (ChatBeginningRowJoinApplication)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;

@@ -1,14 +1,14 @@
-// Module ID: 14901
-// Function ID: 14902
+// Module ID: 14902
+// Function ID: 14903
 // Name: AppStoreOverlayBottomSheet
-// Dependencies: [32, 19, 21, 5140, 1493, 8812, 5721, 7939, 5830, 14897, 14902, 5388, 5723, 5392, 2]
+// Dependencies: [32, 19, 21, 5140, 1493, 8812, 5721, 7939, 5830, 14898, 14903, 5388, 5723, 5392, 2]
 // Exports: default
 
-// Module 14901 (AppStoreOverlayBottomSheet)
+// Module 14902 (AppStoreOverlayBottomSheet)
 import openURLDefault from "openURL" /* 5830 */;
 import AnalyticsActions from "AnalyticsActions" /* 7939 */;
-import AppStoreOverlayContent from "AppStoreOverlayContent" /* 14897 */;
-import AppStoreOverlayBody from "AppStoreOverlayBody" /* 14902 */;
+import AppStoreOverlayContent from "AppStoreOverlayContent" /* 14898 */;
+import AppStoreOverlayBody from "AppStoreOverlayBody" /* 14903 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

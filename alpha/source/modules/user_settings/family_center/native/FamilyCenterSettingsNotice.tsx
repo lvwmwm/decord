@@ -1,16 +1,16 @@
-// Module ID: 17024
-// Function ID: 17025
+// Module ID: 17035
+// Function ID: 17036
 // Name: FamilyCenterSettingsNotice
-// Dependencies: [19, 7554, 21, 8440, 16892, 2664, 10689, 7836, 5836, 1113, 2]
+// Dependencies: [19, 7554, 21, 8440, 16903, 2664, 10689, 7836, 5836, 1113, 2]
 // Exports: default
 
-// Module 17024 (FamilyCenterSettingsNotice)
+// Module 17035 (FamilyCenterSettingsNotice)
 import Fragment from "Fragment" /* 21 */;
 import _modDef2664 from "module_2664" /* 2664 */;
 import Constants from "Constants" /* 7554 */;
 import LayerActionCreators from "LayerActionCreators" /* 7836 */;
 import openLinkedUsersChannelDefault from "openLinkedUsersChannel" /* 10689 */;
-import SafetySettingsNoticeDefault from "SafetySettingsNotice" /* 16892 */;
+import SafetySettingsNoticeDefault from "SafetySettingsNotice" /* 16903 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

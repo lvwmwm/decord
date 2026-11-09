@@ -1,16 +1,16 @@
-// Module ID: 17239
-// Function ID: 17240
+// Module ID: 17250
+// Function ID: 17251
 // Name: BountiesScrollVideoItem
-// Dependencies: [5, 32, 19, 17, 9643, 7921, 6836, 21, 17240, 504, 17241, 14926, 17246, 17248, 17249, 17244, 17252, 14934, 6843, 6841, 17273, 2]
+// Dependencies: [5, 32, 19, 17, 9643, 7921, 6836, 21, 17251, 504, 17252, 14927, 17257, 17259, 17260, 17255, 17263, 14935, 6843, 6841, 17284, 2]
 // Exports: BountiesScrollVideoItem
 
-// Module 17239 (BountiesScrollVideoItem)
+// Module 17250 (BountiesScrollVideoItem)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import QuestConstants from "QuestConstants" /* 6836 */;
 import QuestContent from "QuestContent" /* 6841 */;
 import AdCreativeType from "AdCreativeType" /* 6843 */;
-import QuestContentImpressionTracker from "QuestContentImpressionTracker" /* 14934 */;
+import QuestContentImpressionTracker from "QuestContentImpressionTracker" /* 14935 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -58,7 +58,7 @@ function BountiesScrollVideoItemInner(bounty) {
   let tmp23;
   let tmp7;
   let tmp8;
-  const f112877 = () => {
+  const f112941 = () => {
     let currentBalance = null;
     if (isActive) {
       currentBalance = VirtualCurrencyStore.getCurrentBalance();
@@ -136,9 +136,9 @@ function BountiesScrollVideoItemInner(bounty) {
   }, items2);
   [tmp19, tmp20] = isActive(obj.useState(isActive), 2);
   isActive(obj.useState(isActive), 2);
-  [tmp22, tmp23] = isActive(obj.useState(f112877), 2);
+  [tmp22, tmp23] = isActive(obj.useState(f112941), 2);
   VirtualCurrencyStore = tmp23;
-  isActive(obj.useState(f112877), 2);
+  isActive(obj.useState(f112941), 2);
   const first = tmp5(obj.useState(0), 2)[0];
   isActive(obj.useState(0), 2);
   const tmp12 = flushProgress;
@@ -167,7 +167,7 @@ function BountiesScrollVideoItemInner(bounty) {
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -223,7 +223,7 @@ function BountiesScrollVideoItemInner(bounty) {
             });
           }
           c5 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp24) {
         width = tmp24;
@@ -367,6 +367,6 @@ export function BountiesScrollVideoItem(bounty) {
       return <BountiesScrollVideoItemInner bounty={bounty} sourceQuestContent={sourceQuestContent} width={dependencyMap} height={_asyncToGenerator} index={_slicedToArray} isActive={isActive} isRecapPageRevealed={flag} isRecapPageOnTop={flag2} isScrollingInBoundsSharedValue={BountyStore} shouldLoadHls={shouldLoadHls} softDownloadCapsEnabled={flag3} isScrollIndicatorEnabled={flag4} />;
     }
   };
-  const BillableAdPlacementImpressionTrackerNative = bounty(14934).BillableAdPlacementImpressionTrackerNative;
+  const BillableAdPlacementImpressionTrackerNative = bounty(14935).BillableAdPlacementImpressionTrackerNative;
   return flag3(BillableAdPlacementImpressionTrackerNative, obj);
 }

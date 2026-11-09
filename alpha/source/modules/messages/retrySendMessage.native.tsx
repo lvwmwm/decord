@@ -1,10 +1,10 @@
-// Module ID: 14771
-// Function ID: 14772
+// Module ID: 14772
+// Function ID: 14773
 // Name: retrySendMessage
 // Dependencies: [5145, 7712, 10429, 8278, 9870, 2]
 // Exports: default
 
-// Module 14771 (retrySendMessage)
+// Module 14772 (retrySendMessage)
 import MessageConstants from "MessageConstants" /* 5145 */;
 import MessageActionCreatorsDefault from "MessageActionCreators" /* 7712 */;
 import handleUploadAttachmentErrors from "handleUploadAttachmentErrors" /* 9870 */;

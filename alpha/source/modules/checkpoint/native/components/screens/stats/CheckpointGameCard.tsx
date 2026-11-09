@@ -1,16 +1,16 @@
-// Module ID: 13907
-// Function ID: 13908
+// Module ID: 13908
+// Function ID: 13909
 // Name: CheckpointGameCard
-// Dependencies: [19, 17, 2138, 6199, 21, 5140, 575, 504, 1411, 5842, 8213, 5751, 13877, 2]
+// Dependencies: [19, 17, 2138, 6199, 21, 5140, 575, 504, 1411, 5842, 8213, 5751, 13878, 2]
 // Exports: CheckpointGameCard, CheckpointGameCardDescription
 
-// Module 13907 (CheckpointGameCard)
+// Module 13908 (CheckpointGameCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
 import Text_Text from "Text/Text" /* 5751 */;
 import FastImageDefault from "FastImage" /* 5842 */;
-import CheckpointTextDefault from "CheckpointText" /* 13877 */;
+import CheckpointTextDefault from "CheckpointText" /* 13878 */;
 import react from "react" /* 19 */;
 import GameStore from "GameStore" /* 2138 */;
 import CheckpointConstants from "CheckpointConstants" /* 6199 */;

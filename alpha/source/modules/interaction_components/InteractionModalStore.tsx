@@ -1,9 +1,9 @@
-// Module ID: 16532
-// Function ID: 16533
+// Module ID: 16542
+// Function ID: 16543
 // Name: InteractionModalStore
 // Dependencies: [6203, 38, 8772, 1089, 7712, 504, 572, 2]
 
-// Module 16532 (InteractionModalStore)
+// Module 16542 (InteractionModalStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import MessageActionCreatorsDefault from "MessageActionCreators" /* 7712 */;
@@ -59,7 +59,7 @@ const obj2 = {
     let data;
     let obj;
     let preflight;
-    const f132423 = () => {
+    const f132514 = () => {
       let tmp2 = nonce === closure_1_0;
       const tmp = closure_1_0;
       if (tmp2) {
@@ -96,13 +96,13 @@ const obj2 = {
       };
       if (null != preflight) {
         const _setTimeout2 = setTimeout;
-        let timerId = setTimeout(f132423, 2 * tmp3(1089).Millis.MINUTE);
+        let timerId = setTimeout(f132514, 2 * tmp3(1089).Millis.MINUTE);
         const nextPromise = preflight.then(() => {
           let tmp;
           if (typeof startTimeout === "function") {
             let tmp2 = globalThis;
             const _setTimeout = setTimeout;
-            const timerId = setTimeout(f132423, tmp);
+            const timerId = setTimeout(f132514, tmp);
           } else {
             throw new TypeError("Trying to call a non-function");
           }
@@ -113,7 +113,7 @@ const obj2 = {
         });
       } else {
         let _setTimeout = setTimeout;
-        const timerId1 = setTimeout(f132423, 10 * tmp3(1089).Millis.SECOND);
+        const timerId1 = setTimeout(f132514, 10 * tmp3(1089).Millis.SECOND);
       }
       return true;
     } else {

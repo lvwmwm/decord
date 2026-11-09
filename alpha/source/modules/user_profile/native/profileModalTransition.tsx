@@ -1,10 +1,10 @@
-// Module ID: 19209
-// Function ID: 19210
+// Module ID: 19222
+// Function ID: 19223
 // Name: profileModalTransition
 // Dependencies: [19, 1499, 2]
 // Exports: useIsProfileModalTransitioning, useReportProfileModalTransition
 
-// Module 19209 (profileModalTransition)
+// Module 19222 (profileModalTransition)
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -19,7 +19,7 @@ export function useReportProfileModalTransition() {
   navigation = obj.useNavigation();
   let items = [navigation];
   const effect = react.useEffect(() => {
-    const f117729 = (fn) => fn();
+    const f117800 = (fn) => fn();
     function leave() {
       const tmp = c0;
       if (tmp) {
@@ -27,7 +27,7 @@ export function useReportProfileModalTransition() {
         const _Math = Math;
         bound = Math.max(0, bound - 1);
         if (bound !== bound) {
-          const item = closure_2_4.forEach(f117729);
+          const item = closure_2_4.forEach(f117800);
         }
       }
     }
@@ -40,7 +40,7 @@ export function useReportProfileModalTransition() {
           const _Math = Math;
           bound = Math.max(0, bound + 1);
           if (bound !== bound) {
-            const item = closure_2_4.forEach(f117729);
+            const item = closure_2_4.forEach(f117800);
           }
         }
       }),
@@ -55,7 +55,7 @@ export function useReportProfileModalTransition() {
         const _Math = Math;
         bound = Math.max(0, bound - 1);
         if (bound !== bound) {
-          const item1 = closure_2_4.forEach(f117729);
+          const item1 = closure_2_4.forEach(f117800);
         }
       }
     };

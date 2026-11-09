@@ -1,10 +1,10 @@
-// Module ID: 16032
-// Function ID: 16033
+// Module ID: 16042
+// Function ID: 16043
 // Name: MobileNativeUpdateUtils
 // Dependencies: [5, 5871, 3, 1282, 5834, 1377, 1092, 2]
 // Exports: checkForNewerBuild, openBuildInstaller
 
-// Module 16032 (MobileNativeUpdateUtils)
+// Module 16042 (MobileNativeUpdateUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
@@ -30,7 +30,7 @@ let obj = function _checkForNewerBuild() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {

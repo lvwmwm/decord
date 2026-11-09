@@ -1,10 +1,10 @@
-// Module ID: 20487
-// Function ID: 20488
+// Module ID: 20500
+// Function ID: 20501
 // Name: ParentalConsentConnectionScreen
-// Dependencies: [5, 32, 19, 17, 7791, 1385, 7792, 21, 5140, 575, 20478, 20477, 13590, 5721, 19986, 17091, 8440, 504, 17089, 20488, 20472, 5837, 1113, 2960, 5374, 17090, 2118, 20481, 13451, 6159, 20489, 13651, 20490, 5751, 2664, 17092, 2]
+// Dependencies: [5, 32, 19, 17, 7791, 1385, 7792, 21, 5140, 575, 20491, 20490, 13591, 5721, 19999, 17102, 8440, 504, 17100, 20501, 20485, 5837, 1113, 2960, 5374, 17101, 2118, 20494, 13452, 6159, 20502, 13652, 20503, 5751, 2664, 17103, 2]
 // Exports: default
 
-// Module 20487 (ParentalConsentConnectionScreen)
+// Module 20500 (ParentalConsentConnectionScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
@@ -12,7 +12,7 @@ import asyncRequire from "asyncRequire" /* 2118 */;
 import _modDef2960 from "module_2960" /* 2960 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
 import FamilyCenterConstants from "FamilyCenterConstants" /* 7792 */;
-import shareGuardianConnectLink from "shareGuardianConnectLink" /* 17089 */;
+import shareGuardianConnectLink from "shareGuardianConnectLink" /* 17100 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -169,7 +169,7 @@ export default function ParentalConsentConnectionScreen() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -219,7 +219,7 @@ export default function ParentalConsentConnectionScreen() {
           c3 = 0;
           closure_128_5(false);
           c4 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp30) {
         closure_2 = tmp30;
@@ -242,7 +242,7 @@ export default function ParentalConsentConnectionScreen() {
     const openLazy = ActionSheetActionCreatorsDefault.openLazy;
     const obj = { linkCode: str2, expiresAt: parsed, onRefresh: getLinkCode, title: intl.string(_modDef2960.dMMSA0), body: intl2.format(_modDef2960["6GaRTu"], obj2) };
     ActionSheetActionCreatorsDefault;
-    const tmp2 = asyncRequire(17090, dependencyMap.paths);
+    const tmp2 = asyncRequire(17101, dependencyMap.paths);
     intl = intl5.intl;
     intl2 = intl5.intl;
     obj2 = { link };

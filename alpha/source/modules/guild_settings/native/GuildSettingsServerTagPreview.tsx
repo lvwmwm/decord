@@ -1,10 +1,10 @@
-// Module ID: 16039
-// Function ID: 16040
+// Module ID: 16049
+// Function ID: 16050
 // Name: GuildSettingsServerTagPreview
-// Dependencies: [5, 32, 19, 17, 1385, 8464, 21, 5140, 575, 504, 6173, 1411, 16040, 5751, 1113, 6159, 5842, 16041, 9375, 16042, 16086, 5758, 7040, 2]
+// Dependencies: [5, 32, 19, 17, 1385, 8464, 21, 5140, 575, 504, 6173, 1411, 16050, 5751, 1113, 6159, 5842, 16051, 9375, 16052, 16096, 5758, 7040, 2]
 // Exports: default
 
-// Module 16039 (GuildSettingsServerTagPreview)
+// Module 16049 (GuildSettingsServerTagPreview)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import GuildTagConstants from "GuildTagConstants" /* 8464 */;
@@ -123,7 +123,7 @@ export default function GuildSettingsServerTagPreview(guildId) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -163,7 +163,7 @@ export default function GuildSettingsServerTagPreview(guildId) {
             }
           }
           c3 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp18) {
         c3 = 3;
@@ -188,7 +188,7 @@ export default function GuildSettingsServerTagPreview(guildId) {
   let obj5 = { style: items3, children: items4 };
   items3 = [, ];
   ({ message: arr4[0], unfocused: arr4[1] } = tmp);
-  const obj6 = { source: tmp4(16041), style: tmp.avatar, importantForAccessibility: "no" };
+  const obj6 = { source: tmp4(16051), style: tmp.avatar, importantForAccessibility: "no" };
   const tmp4Result = tmp4(5842);
   items4 = [tmp17(tmp4Result, obj6), ];
   const obj7 = { style: tmp.messageBody, children: items5 };
@@ -216,7 +216,7 @@ export default function GuildSettingsServerTagPreview(guildId) {
     const BaseGuildTagChiplet = tmp2(9375).BaseGuildTagChiplet;
     if (null != badge) {
       size = { badge, primaryTintColor: primaryColor, secondaryTintColor: secondaryColor, width: null, height: null };
-      const GuildBadge = tmp2(16042).GuildBadge;
+      const GuildBadge = tmp2(16052).GuildBadge;
       ({ SIZE_12: obj15.width, SIZE_12: obj15.height } = GuildTagBadgeSize);
       tmp17Result = tmp17(GuildBadge, size);
     }
@@ -233,7 +233,7 @@ export default function GuildSettingsServerTagPreview(guildId) {
   const obj16 = { style: items10, children: items11 };
   items10 = [, ];
   ({ message: arr11[0], unfocused: arr11[1] } = tmp);
-  const obj17 = { source: tmp4(16086), style: tmp.avatar, importantForAccessibility: "no" };
+  const obj17 = { source: tmp4(16096), style: tmp.avatar, importantForAccessibility: "no" };
   const tmp4Result2 = tmp4(5842);
   items11 = [tmp17(tmp4Result2, obj17), ];
   const obj18 = { style: tmp.messageBody, children: items12 };

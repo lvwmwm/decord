@@ -1,7 +1,7 @@
 // Module ID: 8979
 // Function ID: 8980
 // Name: MediaShareActions
-// Dependencies: [19, 8980, 4989, 6194, 9009, 1072, 7530, 21, 563, 8758, 8780, 5374, 8913, 6183, 9010, 8909, 7418, 5836, 9019, 5834, 13610, 5885, 5317, 13538, 2118, 10312, 9014, 5857, 1113, 13622, 12410, 5851, 14823, 11302, 8724, 7426, 7428, 2]
+// Dependencies: [19, 8980, 4989, 6194, 9009, 1072, 7530, 21, 563, 8758, 8780, 5374, 8913, 6183, 9010, 8909, 7418, 5836, 9019, 5834, 13611, 5885, 5317, 13539, 2118, 10312, 9014, 5857, 1113, 13623, 12410, 5851, 14824, 11302, 8724, 7426, 7428, 2]
 // Exports: default
 
 // Module 8979 (MediaShareActions)
@@ -26,9 +26,9 @@ import showShareActionSheet from "showShareActionSheet" /* 9010 */;
 import MaskedLinkUtils from "MaskedLinkUtils" /* 9019 */;
 import ChatArrowRightIcon from "ChatArrowRightIcon" /* 11302 */;
 import ShareIcon from "ShareIcon" /* 12410 */;
-import ForwardModalUtils from "ForwardModalUtils" /* 13610 */;
-import ForwardingIconDefault from "ForwardingIcon" /* 13622 */;
-import WindowLaunchIcon from "WindowLaunchIcon" /* 14823 */;
+import ForwardModalUtils from "ForwardModalUtils" /* 13611 */;
+import ForwardingIconDefault from "ForwardingIcon" /* 13623 */;
+import WindowLaunchIcon from "WindowLaunchIcon" /* 14824 */;
 import react from "react" /* 19 */;
 import ICYMIStore from "ICYMIStore" /* 8980 */;
 import ChannelStore from "ChannelStore" /* 4989 */;
@@ -199,7 +199,7 @@ function useMediaShareActions(source) {
       const obj2 = { messageId: null, channelId: null, attachmentId };
       ({ messageId: obj3.messageId, channelId: obj3.channelId } = source);
       const tmpResult = ActionSheetActionCreatorsDefault;
-      tmpResult.openLazy(asyncRequire(13538, tmp2.paths), closure_11, obj2);
+      tmpResult.openLazy(asyncRequire(13539, tmp2.paths), closure_11, obj2);
     }
   }, items8);
   let tmpResult = tmp(tmp2[25]);

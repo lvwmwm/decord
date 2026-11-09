@@ -1,14 +1,14 @@
-// Module ID: 18710
-// Function ID: 18711
+// Module ID: 18723
+// Function ID: 18724
 // Name: HomeDrawerFavoritesRow
-// Dependencies: [19, 21, 18703, 5751, 1113, 2]
+// Dependencies: [19, 21, 18716, 5751, 1113, 2]
 // Exports: HomeDrawerFavoritesRowExpandedChildren
 
-// Module 18710 (HomeDrawerFavoritesRow)
+// Module 18723 (HomeDrawerFavoritesRow)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
 import Text_Text from "Text/Text" /* 5751 */;
-import HomeDrawerShared from "HomeDrawerShared" /* 18703 */;
+import HomeDrawerShared from "HomeDrawerShared" /* 18716 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -1,16 +1,16 @@
-// Module ID: 18186
-// Function ID: 18187
+// Module ID: 18199
+// Function ID: 18200
 // Name: FeaturedCategorySubblock
-// Dependencies: [19, 7796, 1074, 1072, 21, 5140, 1499, 9543, 9656, 504, 18168, 18181, 7043, 1113, 575, 1252, 7795, 7412, 5842, 7808, 9610, 2]
+// Dependencies: [19, 7796, 1074, 1072, 21, 5140, 1499, 9543, 9656, 504, 18181, 18194, 7043, 1113, 575, 1252, 7795, 7412, 5842, 7808, 9610, 2]
 // Exports: default
 
-// Module 18186 (FeaturedCategorySubblock)
+// Module 18199 (FeaturedCategorySubblock)
 import nativeDefault from "native" /* 575 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7412 */;
 import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7795 */;
-import VisibilitySensorDefault from "VisibilitySensor" /* 18181 */;
+import VisibilitySensorDefault from "VisibilitySensor" /* 18194 */;
 import react from "react" /* 19 */;
 import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7796 */;
 import Constants from "Constants" /* 1072 */;
@@ -56,7 +56,7 @@ export default function _default(subblock) {
   let items = [closure_3];
   const stateFromStores = obj4.useStateFromStores(items, () => CollectiblesCategoryStore.getCategoryByStoreListingId(subblock.categoryStoreListingId));
   let unpublishedAt = subblock.unpublishedAt;
-  const obj5 = subblock(18168);
+  const obj5 = subblock(18181);
   const handleCardVisibilityChange = obj5.useTrackProductCardImpression(subblock.categoryStoreListingId, "mobile_home", "featured_block").handleCardVisibilityChange;
   if (unpublishedAt == null) {
     let unpublishedAt1;

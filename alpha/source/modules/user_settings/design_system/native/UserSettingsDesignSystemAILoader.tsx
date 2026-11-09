@@ -1,10 +1,10 @@
-// Module ID: 18135
-// Function ID: 18136
+// Module ID: 18148
+// Function ID: 18149
 // Name: UserSettingsDesignSystemAILoader
 // Dependencies: [19, 17, 21, 5140, 5751, 6159, 7040, 12431, 2]
 // Exports: default
 
-// Module 18135 (UserSettingsDesignSystemAILoader)
+// Module 18148 (UserSettingsDesignSystemAILoader)
 import Text_Text from "Text/Text" /* 5751 */;
 import Stack_Stack from "Stack/Stack" /* 6159 */;
 import Card_Card from "Card/Card" /* 7040 */;

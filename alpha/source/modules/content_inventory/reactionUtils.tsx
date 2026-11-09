@@ -1,10 +1,10 @@
-// Module ID: 18919
-// Function ID: 18920
+// Module ID: 18932
+// Function ID: 18933
 // Name: reactionUtils
 // Dependencies: [7900, 7712, 2]
 // Exports: sendMessageWithEmbed, sendMessageWithoutContentInventoryEntry
 
-// Module 18919 (reactionUtils)
+// Module 18932 (reactionUtils)
 import MessageActionCreatorsDefault from "MessageActionCreators" /* 7712 */;
 import MessageParserDefault from "MessageParser" /* 7900 */;
 import size from "module_2" /* 2 */;

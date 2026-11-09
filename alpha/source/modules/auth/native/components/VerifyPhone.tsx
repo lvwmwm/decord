@@ -1,18 +1,18 @@
-// Module ID: 18339
-// Function ID: 18340
+// Module ID: 18352
+// Function ID: 18353
 // Name: VerifyPhone
-// Dependencies: [5, 32, 19, 18310, 18311, 1072, 21, 18307, 18328, 5721, 7277, 1113, 7310, 18340, 7311, 2]
+// Dependencies: [5, 32, 19, 18323, 18324, 1072, 21, 18320, 18341, 5721, 7277, 1113, 7310, 18353, 7311, 2]
 // Exports: default
 
-// Module 18339 (VerifyPhone)
+// Module 18352 (VerifyPhone)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
-import RegistrationUIStore from "RegistrationUIStore" /* 18310 */;
-import RegistrationBailoutButtonDefault from "RegistrationBailoutButton" /* 18340 */;
+import RegistrationUIStore from "RegistrationUIStore" /* 18323 */;
+import RegistrationBailoutButtonDefault from "RegistrationBailoutButton" /* 18353 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import RegistrationConstants from "RegistrationConstants" /* 18311 */;
+import RegistrationConstants from "RegistrationConstants" /* 18324 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3, c4, closure_3;
@@ -53,8 +53,8 @@ export default function VerifyPhone(phone) {
   [tmp6, c6] = _slicedToArray(react.useState(false), 2);
   const tmp5 = _slicedToArray(react.useState(false), 2);
   let closure_7 = react.useRef(false);
-  const context = react.useContext(phone(18307).TrackRegistrationContext);
-  const tmp8 = onPhoneTokenReceived(18328);
+  const context = react.useContext(phone(18320).TrackRegistrationContext);
+  const tmp8 = onPhoneTokenReceived(18341);
   tmp8(closure_7(sourceState));
   const items = [context];
   const effect = react.useEffect(() => {
@@ -88,7 +88,7 @@ export default function VerifyPhone(phone) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -156,7 +156,7 @@ export default function VerifyPhone(phone) {
             c4 = 0;
           }
           c6 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp41) {
         closure_3 = tmp41;
@@ -186,7 +186,7 @@ export default function VerifyPhone(phone) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -217,7 +217,7 @@ export default function VerifyPhone(phone) {
         } else {
           _undefined(false);
           c3 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp11) {
         c3 = 3;

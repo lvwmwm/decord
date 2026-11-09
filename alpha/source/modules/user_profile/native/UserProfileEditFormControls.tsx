@@ -1,10 +1,10 @@
-// Module ID: 16782
-// Function ID: 16783
+// Module ID: 16793
+// Function ID: 16794
 // Name: UserProfileEditFormControls
 // Dependencies: [32, 19, 17, 21, 5140, 575, 5751, 9612, 1187, 1113, 7043, 7047, 7149, 1377, 7430, 2]
 // Exports: UserProfileEditFormButton, UserProfileEditFormLabelBadges, UserProfileEditFormSwitch
 
-// Module 16782 (UserProfileEditFormControls)
+// Module 16793 (UserProfileEditFormControls)
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;

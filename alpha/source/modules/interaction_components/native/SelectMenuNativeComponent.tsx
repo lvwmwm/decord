@@ -1,12 +1,12 @@
-// Module ID: 18038
-// Function ID: 18039
+// Module ID: 18047
+// Function ID: 18048
 // Name: SelectMenuNativeComponent
-// Dependencies: [19, 21, 18039, 2]
+// Dependencies: [19, 21, 18048, 2]
 // Exports: default
 
-// Module 18038 (SelectMenuNativeComponent)
+// Module 18047 (SelectMenuNativeComponent)
 import Fragment from "Fragment" /* 21 */;
-import SelectActionComponentViewNativeComponentDefault from "SelectActionComponentViewNativeComponent" /* 18039 */;
+import SelectActionComponentViewNativeComponentDefault from "SelectActionComponentViewNativeComponent" /* 18048 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

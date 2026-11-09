@@ -1,9 +1,9 @@
-// Module ID: 17770
-// Function ID: 17771
+// Module ID: 17781
+// Function ID: 17782
 // Name: EmbedAndLinkPreviewsSetting
 // Dependencies: [8503, 11685, 1113, 4965, 2]
 
-// Module 17770 (EmbedAndLinkPreviewsSetting)
+// Module 17781 (EmbedAndLinkPreviewsSetting)
 import intl2 from "intl" /* 1113 */;
 import UserSettings from "UserSettings" /* 4965 */;
 import SettingsConstants from "SettingsConstants" /* 8503 */;

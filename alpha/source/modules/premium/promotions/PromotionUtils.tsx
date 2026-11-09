@@ -25,7 +25,7 @@ let closure_4, location_stack, name, partner, promotion_id, set;
 let c10;
 let c9;
 let metroImportAll;
-const f96735 = (startDate, startDate2) => {
+const f96777 = (startDate, startDate2) => {
   let num = 1;
   const date = new Date(startDate.startDate);
   const date1 = new Date(startDate2.startDate);
@@ -57,7 +57,7 @@ let obj = function _claimOutboundPromotion() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -221,7 +221,7 @@ export function getNextUnseenOutboundPromotionId() {
   }
   let id = null;
   if (0 !== found1.length) {
-    id = found1.sort(f96735)[0].id;
+    id = found1.sort(f96777)[0].id;
   }
   return id;
 }
@@ -262,7 +262,7 @@ export function shouldShowOutboundPromotionNotice() {
   }
   let id = null;
   if (0 !== found1.length) {
-    id = found1.sort(f96735)[0].id;
+    id = found1.sort(f96777)[0].id;
   }
   let tmp6 = null != id;
   if (tmp6) {

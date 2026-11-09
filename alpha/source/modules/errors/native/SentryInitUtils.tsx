@@ -1,7 +1,7 @@
 // Module ID: 1243
 // Function ID: 1244
 // Name: SentryInitUtils
-// Dependencies: [5, 17, 1072, 1083, 674, 3, 1244, 1099, 1252, 16268, 6594, 6599, 1370, 1242, 1376, 6595, 1377, 5097, 1624, 1371, 1356, 16269, 2]
+// Dependencies: [5, 17, 1072, 1083, 674, 3, 1244, 1099, 1252, 16278, 6594, 6599, 1370, 1242, 1376, 6595, 1377, 5097, 1624, 1371, 1356, 16279, 2]
 // Exports: initSentry
 
 // Module 1243 (SentryInitUtils)
@@ -33,7 +33,7 @@ let obj = function _maybeBackfillMissingBreadcrumbsFromTelemetryRing() {
     let c3 = 0;
     return (async function(arg0, value) {
       let raceResult;
-      const f136781 = (arg0, arg1) => {
+      const f136875 = (arg0, arg1) => {
         let closure_0 = arg1;
         return setTimeout(() => {
           const error = new Error("TelemetryRing breadcrumb timeout");
@@ -49,7 +49,7 @@ let obj = function _maybeBackfillMissingBreadcrumbsFromTelemetryRing() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -70,10 +70,10 @@ let obj = function _maybeBackfillMissingBreadcrumbsFromTelemetryRing() {
               items = [SentryTelemetry.snapshotForBreadcrumbs(), ];
               const self = this;
               const self2 = this;
-              items[1] = new Promise(f136781);
+              items[1] = new Promise(f136875);
               c2 = 1;
               c3 = 1;
-              const promise = new Promise(f136781);
+              const promise = new Promise(f136875);
               const obj4 = { value: raceResult.catch(() => null), done: false };
               raceResult = race(items);
               return obj4;
@@ -106,7 +106,7 @@ let obj = function _maybeBackfillMissingBreadcrumbsFromTelemetryRing() {
             }
           }
           c3 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp18) {
           c3 = 3;
           throw tmp18;
@@ -568,7 +568,7 @@ function trackCrash(event, hint, arg2) {
     const tmp26Result = tmp26(1242);
     tmp26Result.markCrashHandled(event_id2);
   }
-  const AppCrashedReasons = tmp12(16268).AppCrashedReasons;
+  const AppCrashedReasons = tmp12(16278).AppCrashedReasons;
   const tmp42 = tmp4 ? AppCrashedReasons.UNHANDLED_NATIVE_ERROR : AppCrashedReasons.UNHANDLED_JS_ERROR;
   const tmp27Result = tmp27(6594);
   const increment = tmp27Result.increment;
@@ -665,13 +665,13 @@ export function initSentry() {
             tunnel: `/error-reporting-proxy/${str2}`,
             autoInitializeNativeSdk: false,
             beforeSend,
-            dist: "35420600000000",
+            dist: "35520000000000",
             dsn: SentryStaffDsn,
             environment: ReleaseChannel,
             tracesSampleRate: 0,
             sampleRate: 1,
             ignoreErrors,
-            release: "discord_android@354.6.0-2+354206",
+            release: "discord_android@355.0.0-2+355200",
             tracePropagationTargets: items,
             integrations: items1,
             beforeBreadcrumb(data) {
@@ -707,7 +707,7 @@ export function initSentry() {
           items1[2] = tmp17Result16.reactNativeTracingIntegration(obj5);
           init(obj3);
           const tmp17Result17 = require("module_674");
-          tmp17Result17.setTag("buildNumber", "35420600000000");
+          tmp17Result17.setTag("buildNumber", "35520000000000");
           const tmp17Result18 = require("module_674");
           tmp17Result18.setTag("appVersion", constants.Version);
           const _HermesInternal = HermesInternal;

@@ -28,7 +28,7 @@ export default forwardRef((offset, ref) => {
   let tmp7;
   let tmp8;
   let tmp9;
-  const f84106 = () => {
+  const f84149 = () => {
     const items = [style, animatedStyle];
     return items;
   };
@@ -89,8 +89,8 @@ export default forwardRef((offset, ref) => {
   const items2 = [num, num2, flag];
   const animatedStyle = useAnimatedStyle(pnpm_indexTsx1, items2);
   const items3 = [style, animatedStyle];
-  _false(f84106, items3);
+  _false(f84149, items3);
   const View = _modDef1652.View;
   const merged1 = Object.assign(merged);
-  return <View ref={arg1} style={_false(f84106, items3)}>{children}</View>;
+  return <View ref={arg1} style={_false(f84149, items3)}>{children}</View>;
 });

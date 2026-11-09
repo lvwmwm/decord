@@ -1,9 +1,9 @@
-// Module ID: 17165
-// Function ID: 17166
+// Module ID: 17176
+// Function ID: 17177
 // Name: AuthorizedAppSetting
-// Dependencies: [8503, 1072, 11685, 17166, 2]
+// Dependencies: [8503, 1072, 11685, 17177, 2]
 
-// Module 17165 (AuthorizedAppSetting)
+// Module 17176 (AuthorizedAppSetting)
 import Constants from "Constants" /* 1072 */;
 import SettingsConstants from "SettingsConstants" /* 8503 */;
 import SettingBuilders from "SettingBuilders" /* 11685 */;

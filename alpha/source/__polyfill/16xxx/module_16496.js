@@ -1,14 +1,14 @@
 // Module ID: 16496
 // Function ID: 16497
-// Dependencies: [16475, 16474]
+// Dependencies: [16444, 16445]
 
 // Module 16496
-import _mod16474 from "module_16474" /* 16474 */;
-import _mod16475 from "module_16475" /* 16475 */;
+import _mod16444 from "module_16444" /* 16444 */;
+import _mod16445 from "module_16445" /* 16445 */;
 
-let tmp = Object.keys || (function keys(arg0) {
-  const tmp = _mod16475;
-  return tmp(arg0, _mod16474);
-});
+const f68448 = () => 42 !== Object.defineProperty(() => {
 
-export default tmp;
+}, "prototype", { value: 42, writable: false }).prototype;
+_mod16444 && _mod16445(f68448);
+
+export default _mod16444 && _mod16445(f68448);

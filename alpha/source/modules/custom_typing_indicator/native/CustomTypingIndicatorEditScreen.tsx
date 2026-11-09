@@ -1,10 +1,10 @@
-// Module ID: 17662
-// Function ID: 17663
+// Module ID: 17673
+// Function ID: 17674
 // Name: CustomTypingIndicatorEditScreen
-// Dependencies: [5, 32, 19, 17, 1385, 1072, 4986, 21, 5140, 575, 4973, 1398, 1113, 4028, 1500, 7387, 1499, 504, 2171, 7412, 17659, 7641, 1252, 13965, 1407, 5983, 5374, 17663, 2118, 17664, 8809, 8806, 7214, 6579, 16769, 13966, 10027, 13977, 6173, 5751, 17665, 7126, 7038, 2185, 6159, 5758, 9613, 10005, 17710, 10409, 2]
+// Dependencies: [5, 32, 19, 17, 1385, 1072, 4986, 21, 5140, 575, 4973, 1398, 1113, 4028, 1500, 7387, 1499, 504, 2171, 7412, 17670, 7641, 1252, 13966, 1407, 5983, 5374, 17674, 2118, 17675, 8809, 8806, 7214, 6579, 16780, 13967, 10027, 13978, 6173, 5751, 17676, 7126, 7038, 2185, 6159, 5758, 9613, 10005, 17721, 10409, 2]
 // Exports: default
 
-// Module 17662 (CustomTypingIndicatorEditScreen)
+// Module 17673 (CustomTypingIndicatorEditScreen)
 import nativeDefault from "native" /* 575 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import user from "user" /* 1398 */;
@@ -16,7 +16,7 @@ import DismissibleContentConstants from "DismissibleContentConstants" /* 4986 */
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
 import useAnalyticsLocations from "useAnalyticsLocations" /* 7387 */;
 import openPremiumModalDefault from "openPremiumModal" /* 10027 */;
-import CustomTypingIndicatorUtils from "CustomTypingIndicatorUtils" /* 13965 */;
+import CustomTypingIndicatorUtils from "CustomTypingIndicatorUtils" /* 13966 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -167,7 +167,7 @@ function CustomTypingIndicatorEditScreenContent(mode) {
     const openLazy = ActionSheetActionCreatorsDefault.openLazy;
     const obj = { initialValue: first2, presets: obj2.getCustomTypingIndicatorSuggestionPresets(enabled), onChange, highlightedPresets: prop, onDismiss: fn };
     ActionSheetActionCreatorsDefault;
-    const tmp4 = asyncRequire(17663, dependencyMap.paths);
+    const tmp4 = asyncRequire(17674, dependencyMap.paths);
     prop = undefined;
     obj2 = CustomTypingIndicatorUtils;
     if (closure_5) {
@@ -182,7 +182,7 @@ function CustomTypingIndicatorEditScreenContent(mode) {
   const callback2 = react.useCallback(() => {
     const obj = ActionSheetActionCreatorsDefault;
     const obj2 = { emojis: memo, initialAnimation: first3, onChange: onChange2 };
-    obj.openLazy(asyncRequire(17664, dependencyMap.paths), "CustomTypingIndicatorAnimationPickerSheet", obj2);
+    obj.openLazy(asyncRequire(17675, dependencyMap.paths), "CustomTypingIndicatorAnimationPickerSheet", obj2);
   }, items5);
   ref = react.useRef(null);
   const items6 = [analyticsLocations, enabled];
@@ -229,7 +229,7 @@ function CustomTypingIndicatorEditScreenContent(mode) {
         const obj = { value, done: true };
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -277,7 +277,7 @@ function CustomTypingIndicatorEditScreenContent(mode) {
               }
             }
             c4 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else if (arg0 === 1) {
           c4 = 3;

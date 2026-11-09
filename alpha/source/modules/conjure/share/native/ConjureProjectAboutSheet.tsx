@@ -207,7 +207,7 @@ export default function ConjureProjectAboutSheet(arg0) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -239,7 +239,7 @@ export default function ConjureProjectAboutSheet(arg0) {
             obj.hideActionSheet(tmp3(c2[11]).CONJURE_PROJECT_ABOUT_SHEET_KEY);
           }
           c2 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp10) {
         c2 = 3;

@@ -1,10 +1,10 @@
-// Module ID: 14977
-// Function ID: 14978
+// Module ID: 14978
+// Function ID: 14979
 // Name: getConsoleIcon
 // Dependencies: [1072, 5805, 12211, 12212, 2]
 // Exports: default, getConsoleIconForVoicePlatform
 
-// Module 14977 (getConsoleIcon)
+// Module 14978 (getConsoleIcon)
 import Constants from "Constants" /* 1072 */;
 import CallConstants from "CallConstants" /* 5805 */;
 import AssetRegistryDefault from "AssetRegistry" /* 12211 */;

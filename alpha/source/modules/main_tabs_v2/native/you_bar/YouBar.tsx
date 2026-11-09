@@ -1,9 +1,9 @@
-// Module ID: 18774
-// Function ID: 18775
+// Module ID: 18787
+// Function ID: 18788
 // Name: YouBar
-// Dependencies: [5, 19, 17, 5164, 5171, 1385, 17385, 1072, 4986, 21, 5140, 575, 17377, 13959, 11380, 11389, 11702, 17384, 17388, 1652, 5761, 9002, 9765, 18775, 16922, 504, 8860, 18781, 5315, 5376, 1380, 12, 18782, 2118, 5314, 11650, 7594, 4973, 1113, 7635, 11383, 5420, 1705, 1187, 18796, 18797, 18798, 18803, 18805, 18807, 14233, 5199, 18808, 18809, 2]
+// Dependencies: [5, 19, 17, 5164, 5171, 1385, 17396, 1072, 4986, 21, 5140, 575, 17388, 13960, 11380, 11389, 11702, 17395, 17399, 1652, 5761, 9002, 9765, 18788, 16933, 504, 8860, 18794, 5315, 5376, 1380, 12, 18795, 2118, 5314, 11650, 7594, 4973, 1113, 7635, 11383, 5420, 1705, 1187, 18809, 18810, 18811, 18816, 18818, 18820, 14234, 5199, 18821, 18822, 2]
 
-// Module 18774 (YouBar)
+// Module 18787 (YouBar)
 import _mod12 from "module_12" /* 12 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
@@ -18,15 +18,15 @@ import LegacyBaseButton from "LegacyBaseButton" /* 5420 */;
 import transitionToGuild from "transitionToGuild" /* 7594 */;
 import openUserSettings from "openUserSettings" /* 7635 */;
 import getNavigatorCurrentRouteDefault from "getNavigatorCurrentRoute" /* 11650 */;
-import YouBarFloatingShadeDefault from "YouBarFloatingShade" /* 18808 */;
-import ConnectionBannerDefault from "ConnectionBanner" /* 18809 */;
+import YouBarFloatingShadeDefault from "YouBarFloatingShade" /* 18821 */;
+import ConnectionBannerDefault from "ConnectionBanner" /* 18822 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 5164 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 5171 */;
 import UserStore from "UserStore" /* 1385 */;
-import YouBarConstants from "YouBarConstants" /* 17385 */;
+import YouBarConstants from "YouBarConstants" /* 17396 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
@@ -274,7 +274,7 @@ let closure_26 = react.memo(function YouBar() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -310,7 +310,7 @@ let closure_26 = react.memo(function YouBar() {
           const result1 = tmp.showYouAccountActionSheet();
           const result2 = closure_129_2.set(false);
           c3 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp9) {
         c3 = 3;

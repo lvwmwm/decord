@@ -1,9 +1,9 @@
-// Module ID: 19503
-// Function ID: 19504
+// Module ID: 19516
+// Function ID: 19517
 // Name: MinimizeActivityButton
 // Dependencies: [19, 17, 5781, 21, 5140, 5758, 11556, 1113, 8098, 2]
 
-// Module 19503 (MinimizeActivityButton)
+// Module 19516 (MinimizeActivityButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import ActivityPanelConstants from "ActivityPanelConstants" /* 5781 */;

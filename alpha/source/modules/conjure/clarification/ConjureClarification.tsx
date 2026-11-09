@@ -21,7 +21,7 @@ let items1;
 let items2;
 let items3;
 let items4;
-const f104285 = (answer) => {
+const f104326 = (answer) => {
   let tmp = null != answer.answer;
   if (tmp) {
     const str = answer.answer.text;
@@ -29,7 +29,7 @@ const f104285 = (answer) => {
   }
   return tmp;
 };
-const f104286 = (answer) => {
+const f104327 = (answer) => {
   const sum = answer.index + 1;
   const str = answer.answer.text;
   return "" + sum + ". " + answer.question.question + " \u2192 " + str.trim();
@@ -269,8 +269,8 @@ export function skippedClarificationAnswers(clarification, arg1, bound) {
     } else {
       const questions1 = clarification.questions;
       const mapped = questions1.map((question, index) => ({ question, index, answer: closure_0[question.id] }));
-      const found = mapped.filter(f104285);
-      const mapped1 = found.map(f104286);
+      const found = mapped.filter(f104326);
+      const mapped1 = found.map(f104327);
       tmp10 = null;
     }
     return tmp10;
@@ -280,8 +280,8 @@ export function formatClarificationAnswers(questions, arg1) {
   let closure_0 = arg1;
   questions = questions.questions;
   const mapped = questions.map((question, index) => ({ question, index, answer: closure_0[question.id] }));
-  const found = mapped.filter(f104285);
-  const mapped1 = found.map(f104286);
+  const found = mapped.filter(f104326);
+  const mapped1 = found.map(f104327);
   return mapped1.join("\n");
 }
 export function toggleClarificationOption(options, arr, id) {
@@ -378,7 +378,7 @@ export function clarificationEntities(project, items, arg2, arg3) {
     let tmp;
     let closure_0 = id;
     obj = { id, name: tmp };
-    tmp = f104297(id);
+    tmp = f104338(id);
     if (tmp == null) {
       const found = closure_2.find((id) => id.id === closure_0);
       let name;
@@ -435,7 +435,7 @@ export function clarificationChannelEntities(stateFromStores1, arg1) {
   let closure_0 = stateFromStores1;
   const items = [stateFromStores1.id];
   let channel = "channel";
-  const f104297 = () => {
+  const f104338 = () => {
     obj = channel(dependencyMap[6]);
     return obj.computeChannelName(channel, user, RelationshipStore);
   };
@@ -446,7 +446,7 @@ export function clarificationChannelEntities(stateFromStores1, arg1) {
     let tmp;
     let closure_0 = id;
     obj = { id, name: tmp };
-    tmp = f104297(id);
+    tmp = f104338(id);
     if (tmp == null) {
       const found = closure_2.find((id) => id.id === closure_0);
       let name;
@@ -655,8 +655,8 @@ export function submitClarificationAnswers(projectId, clarification, arg2, first
   _require = arg2;
   let questions = clarification.questions;
   const mapped = questions.map((question, index) => ({ question, index, answer: closure_0[question.id] }));
-  const found = mapped.filter(f104285);
-  const mapped1 = found.map(f104286);
+  const found = mapped.filter(f104326);
+  const mapped1 = found.map(f104327);
   const joined = mapped1.join("\n");
   if ("" !== joined) {
     let tmp2 = projectId;

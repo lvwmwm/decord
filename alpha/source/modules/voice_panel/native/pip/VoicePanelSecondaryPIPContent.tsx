@@ -1,10 +1,10 @@
-// Module ID: 19672
-// Function ID: 19673
+// Module ID: 19685
+// Function ID: 19686
 // Name: VoicePanelSecondaryPIPContent
-// Dependencies: [19, 4988, 6901, 4989, 5781, 6902, 11855, 21, 5140, 11362, 19562, 504, 5061, 1652, 12614, 5802, 19493, 12437, 12441, 11957, 2]
+// Dependencies: [19, 4988, 6901, 4989, 5781, 6902, 11855, 21, 5140, 11362, 19575, 504, 5061, 1652, 12614, 5802, 19506, 12437, 12441, 11957, 2]
 // Exports: default
 
-// Module 19672 (VoicePanelSecondaryPIPContent)
+// Module 19685 (VoicePanelSecondaryPIPContent)
 import Fragment from "Fragment" /* 21 */;
 import ActivityPanelConstants from "ActivityPanelConstants" /* 5781 */;
 import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11362 */;
@@ -26,7 +26,7 @@ const _modDef1652 = tmp(1652);
 const isVoiceEmbeddedActivityDefault = tmp(5802);
 const EmbeddedActivityViewDefault = tmp(11957);
 const FrameRenderTargetDefault = tmp(12437);
-const getActivityContainerPIPStylesSpecDefault = tmp(19493);
+const getActivityContainerPIPStylesSpecDefault = tmp(19506);
 const ActivityPanelModes = ActivityPanelConstants.ActivityPanelModes;
 ({ asLaunched: metroImportAll, FrameLayoutModes: c9, getPipOrientationLockStateForFrame: c10 } = FramesConstants);
 const ActivityLayoutMode = Constants.ActivityLayoutMode;
@@ -60,7 +60,7 @@ export default function VoicePanelSecondaryPIPContent() {
   let tmp26Result2;
   let tmp = importDefault;
   const windowDimensions = react.useContext(VoicePanelStateContextDefault).windowDimensions;
-  let obj = connectedEmbeddedActivityChannelId(19562);
+  let obj = connectedEmbeddedActivityChannelId(19575);
   const pIPState = obj.usePIPState();
   const tmp5 = closure_13();
   let obj2 = connectedEmbeddedActivityChannelId(504);

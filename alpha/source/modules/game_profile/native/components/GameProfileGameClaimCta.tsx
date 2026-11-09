@@ -36,7 +36,7 @@ export default function GameProfileGameClaimCta(trackAction) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -66,7 +66,7 @@ export default function GameProfileGameClaimCta(trackAction) {
           return obj;
         } else {
           trackAction = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp4) {
         trackAction = 3;

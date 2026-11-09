@@ -1,9 +1,9 @@
-// Module ID: 14928
-// Function ID: 14929
+// Module ID: 14929
+// Function ID: 14930
 // Name: QuestDockRewardTile
 // Dependencies: [32, 19, 17, 5141, 21, 5140, 575, 1377, 504, 9785, 8947, 5842, 2]
 
-// Module 14928 (QuestDockRewardTile)
+// Module 14929 (QuestDockRewardTile)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import AssetUtils from "AssetUtils" /* 9785 */;

@@ -1,10 +1,10 @@
-// Module ID: 13663
-// Function ID: 13664
+// Module ID: 13664
+// Function ID: 13665
 // Name: ContentInventoryPlatformActionCreators
 // Dependencies: [8821, 2]
 // Exports: showUserProfile
 
-// Module 13663 (ContentInventoryPlatformActionCreators)
+// Module 13664 (ContentInventoryPlatformActionCreators)
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8821 */;
 import size from "module_2" /* 2 */;
 

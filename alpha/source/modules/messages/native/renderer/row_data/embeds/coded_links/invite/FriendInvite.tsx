@@ -1,10 +1,10 @@
-// Module ID: 15382
-// Function ID: 15383
+// Module ID: 15392
+// Function ID: 15393
 // Name: FriendInvite
 // Dependencies: [17, 5082, 7956, 8465, 1113, 5194, 1411, 2]
 // Exports: createFriendInvite
 
-// Module 15382 (FriendInvite)
+// Module 15392 (FriendInvite)
 import react_native from "react-native" /* 17 */;
 import intl4 from "intl" /* 1113 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;

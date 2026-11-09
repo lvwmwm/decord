@@ -1,10 +1,10 @@
-// Module ID: 14902
-// Function ID: 14903
+// Module ID: 14903
+// Function ID: 14904
 // Name: AppStoreOverlayBody
-// Dependencies: [19, 17, 1072, 5389, 21, 5140, 575, 7939, 5842, 5751, 14903, 1113, 14906, 14911, 1627, 5724, 671, 5715, 5758, 2]
+// Dependencies: [19, 17, 1072, 5389, 21, 5140, 575, 7939, 5842, 5751, 14904, 1113, 14907, 14912, 1627, 5724, 671, 5715, 5758, 2]
 // Exports: AppStoreOverlayBody, AppStoreOverlayFooter
 
-// Module 14902 (AppStoreOverlayBody)
+// Module 14903 (AppStoreOverlayBody)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
@@ -12,9 +12,9 @@ import Constants from "Constants" /* 1072 */;
 import ActionSheetConstants from "ActionSheetConstants" /* 5389 */;
 import FastImageDefault from "FastImage" /* 5842 */;
 import AnalyticsActions from "AnalyticsActions" /* 7939 */;
-import AppStoreOverlayStatsCarouselDefault from "AppStoreOverlayStatsCarousel" /* 14903 */;
-import AppStoreOverlayMediaCarouselDefault from "AppStoreOverlayMediaCarousel" /* 14906 */;
-import AppStoreOverlayAboutSectionDefault from "AppStoreOverlayAboutSection" /* 14911 */;
+import AppStoreOverlayStatsCarouselDefault from "AppStoreOverlayStatsCarousel" /* 14904 */;
+import AppStoreOverlayMediaCarouselDefault from "AppStoreOverlayMediaCarousel" /* 14907 */;
+import AppStoreOverlayAboutSectionDefault from "AppStoreOverlayAboutSection" /* 14912 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5140 */;

@@ -1,10 +1,10 @@
-// Module ID: 16754
-// Function ID: 16755
+// Module ID: 16765
+// Function ID: 16766
 // Name: showCustomColorPickerActionSheet
-// Dependencies: [5374, 16755, 2118, 2]
+// Dependencies: [5374, 16766, 2118, 2]
 // Exports: default
 
-// Module 16754 (showCustomColorPickerActionSheet)
+// Module 16765 (showCustomColorPickerActionSheet)
 import asyncRequire from "asyncRequire" /* 2118 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
 import size from "module_2" /* 2 */;
@@ -14,6 +14,6 @@ const result = size.fileFinishedImporting("modules/color_picker/native/showCusto
 
 export default function showCustomColorPickerActionSheet(arg0, arg1) {
   const obj = ActionSheetActionCreatorsDefault;
-  obj.openLazy(asyncRequire(16755, dependencyMap.paths), CustomColorPicker, arg0, arg1);
+  obj.openLazy(asyncRequire(16766, dependencyMap.paths), CustomColorPicker, arg0, arg1);
 };
 export const CUSTOM_COLOR_PICKER_KEY = "CustomColorPicker";

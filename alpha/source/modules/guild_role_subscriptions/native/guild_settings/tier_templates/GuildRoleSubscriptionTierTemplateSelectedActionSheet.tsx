@@ -1,10 +1,10 @@
-// Module ID: 20385
-// Function ID: 20386
+// Module ID: 20398
+// Function ID: 20399
 // Name: GuildRoleSubscriptionTierTemplateSelectedActionSheet
 // Dependencies: [19, 17, 4986, 21, 5140, 575, 5388, 6159, 5751, 1113, 5758, 2]
 // Exports: default
 
-// Module 20385 (GuildRoleSubscriptionTierTemplateSelectedActionSheet)
+// Module 20398 (GuildRoleSubscriptionTierTemplateSelectedActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4986 */;

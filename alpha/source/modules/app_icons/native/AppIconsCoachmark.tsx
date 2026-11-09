@@ -1,10 +1,10 @@
-// Module ID: 19380
-// Function ID: 19381
+// Module ID: 19393
+// Function ID: 19394
 // Name: AppIconsCoachmark
-// Dependencies: [19, 17, 1385, 4986, 21, 5140, 575, 504, 2171, 5374, 5388, 5842, 19381, 1187, 10169, 5751, 1113, 5758, 15615, 2]
+// Dependencies: [19, 17, 1385, 4986, 21, 5140, 575, 504, 2171, 5374, 5388, 5842, 19394, 1187, 10169, 5751, 1113, 5758, 15625, 2]
 // Exports: default
 
-// Module 19380 (AppIconsCoachmark)
+// Module 19393 (AppIconsCoachmark)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import PremiumUtilsDefault from "PremiumUtils" /* 2171 */;
@@ -12,8 +12,8 @@ import DismissibleContentConstants from "DismissibleContentConstants" /* 4986 */
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
 import FastImageDefault from "FastImage" /* 5842 */;
 import AssetRegistryDefault from "AssetRegistry" /* 10169 */;
-import AppIconUtils from "AppIconUtils" /* 15615 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 19381 */;
+import AppIconUtils from "AppIconUtils" /* 15625 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 19394 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1385 */;
 import Fragment from "Fragment" /* 21 */;

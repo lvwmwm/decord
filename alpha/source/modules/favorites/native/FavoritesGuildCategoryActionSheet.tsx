@@ -1,13 +1,13 @@
-// Module ID: 18492
-// Function ID: 18493
+// Module ID: 18505
+// Function ID: 18506
 // Name: FavoritesGuildCategoryActionSheet
-// Dependencies: [19, 4992, 21, 5776, 14636, 4965, 7426, 7382, 7428, 10947, 1113, 7633, 18493, 10643, 7418, 5836, 504, 2]
+// Dependencies: [19, 4992, 21, 5776, 14637, 4965, 7426, 7382, 7428, 10947, 1113, 7633, 18506, 10643, 7418, 5836, 504, 2]
 // Exports: default
 
-// Module 18492 (FavoritesGuildCategoryActionSheet)
+// Module 18505 (FavoritesGuildCategoryActionSheet)
 import ToastUtils from "ToastUtils" /* 5836 */;
 import ClipboardUtils from "ClipboardUtils" /* 7418 */;
-import openFavoritesGuildCategorySettingsModalDefault from "openFavoritesGuildCategorySettingsModal" /* 18493 */;
+import openFavoritesGuildCategorySettingsModalDefault from "openFavoritesGuildCategorySettingsModal" /* 18506 */;
 import react from "react" /* 19 */;
 import FavoriteStore from "FavoriteStore" /* 4992 */;
 import Fragment from "Fragment" /* 21 */;
@@ -37,7 +37,7 @@ function FavoritesGuildCategoryActionSheetConnected(category) {
   category = category.category;
   const onClose = category.onClose;
   const tmp2 = onClose(5776)(category, true);
-  const tmp3 = onClose(14636)(category);
+  const tmp3 = onClose(14637)(category);
   dependencyMap = tmp3;
   const DeveloperMode = category(4965).DeveloperMode;
   const setting = DeveloperMode.useSetting();

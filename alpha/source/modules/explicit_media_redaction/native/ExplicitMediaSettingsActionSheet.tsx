@@ -1,10 +1,10 @@
-// Module ID: 17038
-// Function ID: 17039
+// Module ID: 17049
+// Function ID: 17050
 // Name: ExplicitMediaSettingsActionSheet
 // Dependencies: [19, 17, 21, 5140, 575, 5374, 5388, 7382, 7124, 1196, 7127, 2]
 // Exports: default
 
-// Module 17038 (ExplicitMediaSettingsActionSheet)
+// Module 17049 (ExplicitMediaSettingsActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;

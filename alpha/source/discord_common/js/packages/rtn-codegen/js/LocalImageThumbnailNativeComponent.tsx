@@ -1,9 +1,9 @@
-// Module ID: 16287
-// Function ID: 16288
+// Module ID: 16297
+// Function ID: 16298
 // Name: LocalImageThumbnailNativeComponent
 // Dependencies: [65, 2]
 
-// Module 16287 (LocalImageThumbnailNativeComponent)
+// Module 16297 (LocalImageThumbnailNativeComponent)
 import module_65 from "module_65" /* 65 */;
 import size from "module_2" /* 2 */;
 

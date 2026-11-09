@@ -1,10 +1,10 @@
-// Module ID: 16843
-// Function ID: 16844
+// Module ID: 16854
+// Function ID: 16855
 // Name: UserProfileUpsellCardV2
 // Dependencies: [19, 17, 7693, 21, 5140, 575, 5715, 1092, 5751, 5758, 9612, 2]
 // Exports: default
 
-// Module 16843 (UserProfileUpsellCardV2)
+// Module 16854 (UserProfileUpsellCardV2)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import ConstantsIOS from "ConstantsIOS" /* 1092 */;

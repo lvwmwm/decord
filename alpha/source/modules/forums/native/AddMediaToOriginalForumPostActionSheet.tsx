@@ -1,10 +1,10 @@
-// Module ID: 13992
-// Function ID: 13993
+// Module ID: 13993
+// Function ID: 13994
 // Name: AddMediaToOriginalForumPostActionSheet
-// Dependencies: [32, 5, 19, 17, 4989, 7777, 5011, 6194, 1072, 21, 5140, 575, 10327, 8286, 8301, 5374, 9871, 9868, 11, 8281, 9870, 8271, 1282, 13993, 7712, 8758, 6091, 1113, 504, 7387, 8273, 8290, 5388, 13994, 5751, 5759, 2]
+// Dependencies: [32, 5, 19, 17, 4989, 7777, 5011, 6194, 1072, 21, 5140, 575, 10327, 8286, 8301, 5374, 9871, 9868, 11, 8281, 9870, 8271, 1282, 13994, 7712, 8758, 6091, 1113, 504, 7387, 8273, 8290, 5388, 13995, 5751, 5759, 2]
 // Exports: default
 
-// Module 13992 (AddMediaToOriginalForumPostActionSheet)
+// Module 13993 (AddMediaToOriginalForumPostActionSheet)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
@@ -57,7 +57,7 @@ let obj = function _upload2() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c7;
@@ -261,7 +261,7 @@ let obj = function _upload2() {
               c7 = 0;
             }
             c9 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp72) {
           closure_6 = tmp72;

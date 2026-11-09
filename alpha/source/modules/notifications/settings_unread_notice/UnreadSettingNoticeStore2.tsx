@@ -22,7 +22,7 @@ import size from "module_2" /* 2 */;
 
 let guild;
 
-const f100754 = () => {
+const f100795 = () => {
   let flag = false;
   if (null != closure_16) {
     flag = false;
@@ -57,7 +57,7 @@ function startInterval() {
   }
   if (UserGuildSettingsStore.useNewNotifications) {
     const _setInterval = setInterval;
-    interval = setInterval(f100754, 15 * DurationsDefault.Millis.SECOND);
+    interval = setInterval(f100795, 15 * DurationsDefault.Millis.SECOND);
   }
   return false;
 }
@@ -276,7 +276,7 @@ const obj5 = {
     }
     if (UserGuildSettingsStore.useNewNotifications) {
       const _setInterval = setInterval;
-      interval = setInterval(f100754, 15 * DurationsDefault.Millis.SECOND);
+      interval = setInterval(f100795, 15 * DurationsDefault.Millis.SECOND);
     }
     let closure_0 = Date.now() - WEEK;
     const arr = SnowflakeUtilsDefault;

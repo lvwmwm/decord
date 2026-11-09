@@ -25,15 +25,15 @@ let dependencyMap, importDefault;
 
 let tmp;
 const ColorUtils = tmp(5137);
-const f88581 = (stop) => stop.stop;
-const f88582 = (item) => nativeDefault.unsafe_rawColors[item.token];
+const f88624 = (stop) => stop.stop;
+const f88625 = (item) => nativeDefault.unsafe_rawColors[item.token];
 function getGradientColorByPercentage(type, MID) {
   let colors;
   let colors2;
   if (type.type === ClientThemesTypes.ClientThemeType.BACKGROUND_GRADIENT_PRESET) {
     ({ colors, colors: colors2 } = type);
-    const mapped = colors.map(f88582);
-    const mapped1 = colors2.map(f88581);
+    const mapped = colors.map(f88625);
+    const mapped1 = colors2.map(f88624);
     const obj6 = _modDef671;
     const scaleResult = obj6.scale(mapped);
     const obj8 = scaleResult.domain(mapped1)(MID);
@@ -227,8 +227,8 @@ export function getClientThemesGradientColorByPercentage(arg0, arg1) {
   let colors;
   let colors2;
   ({ colors, colors: colors2 } = arg0);
-  const mapped = colors.map(f88582);
-  const mapped1 = colors2.map(f88581);
+  const mapped = colors.map(f88625);
+  const mapped1 = colors2.map(f88624);
   const obj = _modDef671;
   const scaleResult = obj.scale(mapped);
   obj3 = scaleResult.domain(mapped1)(arg1);
@@ -237,13 +237,13 @@ export function getClientThemesGradientColorByPercentage(arg0, arg1) {
 }
 export function getClientThemesGradientHexColors(colors) {
   colors = colors.colors;
-  return colors.map(f88582);
+  return colors.map(f88625);
 }
 export function getGradientHexColors(gradientPreset) {
   let colors;
   if (gradientPreset.type === ClientThemesTypes.ClientThemeType.BACKGROUND_GRADIENT_PRESET) {
     const colors1 = gradientPreset.colors;
-    colors = colors1.map(f88582);
+    colors = colors1.map(f88625);
   } else {
     colors = gradientPreset.customThemeSettings.colors;
   }
@@ -274,7 +274,7 @@ export function getGradientThemeMetadata(gradientThemeFromFlags, gradient) {
       const tmp2 = c8;
       if (gradient.type === ClientThemesTypes.ClientThemeType.BACKGROUND_GRADIENT_PRESET) {
         const colors = gradient.colors;
-        mapped = colors.map(f88582);
+        mapped = colors.map(f88625);
       } else {
         mapped = gradient.customThemeSettings.colors;
       }

@@ -1,10 +1,10 @@
-// Module ID: 19629
-// Function ID: 19630
+// Module ID: 19642
+// Function ID: 19643
 // Name: useTapGestures
 // Dependencies: [19, 11362, 5420, 1705, 5376, 2]
 // Exports: default
 
-// Module 19629 (useTapGestures)
+// Module 19642 (useTapGestures)
 import _mod1705 from "module_1705" /* 1705 */;
 import HapticUtils from "HapticUtils" /* 5376 */;
 import LegacyBaseButton from "LegacyBaseButton" /* 5420 */;

@@ -1,10 +1,10 @@
-// Module ID: 19159
-// Function ID: 19160
+// Module ID: 19172
+// Function ID: 19173
 // Name: PinotChannelDetailsLabel
 // Dependencies: [19, 21, 5140, 575, 11460, 1113, 3316, 7043, 5837, 5751, 2]
 // Exports: PinotChannelDetailsLabel
 
-// Module 19159 (PinotChannelDetailsLabel)
+// Module 19172 (PinotChannelDetailsLabel)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef3316 from "module_3316" /* 3316 */;

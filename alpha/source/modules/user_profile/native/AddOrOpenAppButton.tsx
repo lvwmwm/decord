@@ -1,10 +1,10 @@
-// Module ID: 15075
-// Function ID: 15076
+// Module ID: 15076
+// Function ID: 15077
 // Name: AddOrOpenAppButton
 // Dependencies: [5, 32, 19, 9852, 1072, 1498, 21, 12679, 11035, 5374, 7418, 12665, 5836, 1378, 8231, 9659, 1113, 5758, 575, 6936, 7549, 5323, 1625, 1252, 2]
 // Exports: default
 
-// Module 15075 (AddOrOpenAppButton)
+// Module 15076 (AddOrOpenAppButton)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1498 */;
@@ -96,7 +96,7 @@ function OpenAppButton(profileApplication) {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -179,7 +179,7 @@ function OpenAppButton(profileApplication) {
             obj.track(constants.APP_PROFILE_OPEN_APP_BUTTON_CLICKED, obj11);
           }
           c4 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
         tmp = application1;
         closure_130_3(false);

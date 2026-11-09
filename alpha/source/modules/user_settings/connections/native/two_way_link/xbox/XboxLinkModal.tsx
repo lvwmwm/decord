@@ -1,7 +1,7 @@
 // Module ID: 9812
 // Function ID: 9813
 // Name: XboxLinkModal
-// Dependencies: [19, 9813, 1072, 21, 7630, 8429, 9811, 1113, 9814, 9821, 9822, 9826, 14860, 14863, 14865, 9820, 14869, 7231, 2]
+// Dependencies: [19, 9813, 1072, 21, 7630, 8429, 9811, 1113, 9814, 9821, 9822, 9826, 14861, 14864, 14866, 9820, 14870, 7231, 2]
 // Exports: default
 
 // Module 9812 (XboxLinkModal)
@@ -115,7 +115,7 @@ export default function XboxLinkModal(startAtSignIn) {
       }
     };
   }, items);
-  const tmpResult = flag(14869);
+  const tmpResult = flag(14870);
   const accountLinkStepTracking = tmpResult.useAccountLinkStepTracking(PlatformTypes.XBOX, locationStack, tmp6);
   const Navigator = tmp(7231).Navigator;
   const intl = tmp(1113).intl;

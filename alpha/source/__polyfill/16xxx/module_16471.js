@@ -1,27 +1,17 @@
 // Module ID: 16471
 // Function ID: 16472
-// Dependencies: [16472, 16485, 16433, 16454]
+// Dependencies: [16452, 16472]
 
 // Module 16471
-import _mod16454 from "module_16454" /* 16454 */;
-import _mod16472 from "module_16472" /* 16472 */;
-import defineProperty2 from "defineProperty2" /* 16485 */;
+import _mod16452 from "module_16452" /* 16452 */;
 
+let tmp2;
+const _mod16472 = tmp2(16472);
 
-export default (arg0, arg1, arg2) => {
-  let num;
-  const arr = _mod16472(arg1);
-  const f = defineProperty2.f;
-  for (let num = 0; num < arr.length; num = num + 1) {
-    let tmp2 = arr[num];
-    let tmp3 = require;
-    let tmp5 = _mod16454(arg0, tmp2);
-    if (!tmp5) {
-      let tmp7 = arg2 && tmp3(16454)(arg2, tmp2);
-      tmp5 = tmp7;
-    }
-    if (!tmp5) {
-      let fResult = f(arg0, tmp2, tmp(arg1, tmp2));
-    }
+export default (arg0, arg1) => {
+  let tmp4;
+  if (!_mod16452(arg0[arg1])) {
+    tmp4 = _mod16472(tmp);
   }
+  return tmp4;
 };

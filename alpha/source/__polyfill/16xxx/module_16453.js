@@ -1,20 +1,17 @@
 // Module ID: 16453
 // Function ID: 16454
-// Dependencies: [16438]
+// Dependencies: [16454, 16468]
 
 // Module 16453
-import _mod16438 from "module_16438" /* 16438 */;
+import _mod16454 from "module_16454" /* 16454 */;
+import _mod16468 from "module_16468" /* 16468 */;
 
-let _window = 0;
-let closure_1 = Math.random();
-let closure_2 = _mod16438((1).toString);
 
 export default (arg0) => {
-  let _window;
-  let str = "";
-  if (undefined !== arg0) {
-    str = arg0;
+  const tmp = _mod16454(arg0, "string");
+  let text = tmp;
+  if (!_mod16468(tmp)) {
+    text = `${tmp}`;
   }
-  _window = _window + 1;
-  return `Symbol(${str}` + ")_" + closure_2(_window + closure_1, 36);
+  return text;
 };

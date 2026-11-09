@@ -1,10 +1,10 @@
-// Module ID: 19424
-// Function ID: 19425
+// Module ID: 19437
+// Function ID: 19438
 // Name: LaunchPadPullTabCache
 // Dependencies: [11681, 510, 1377, 7181, 1493, 2]
 // Exports: clearLaunchPadPullTabExclusionRect, getLaunchPadPullTabPositionCached, persistLaunchPadPullTabPosition, setLaunchPadPullTabPositionCached
 
-// Module 19424 (LaunchPadPullTabCache)
+// Module 19437 (LaunchPadPullTabCache)
 import Storage2 from "Storage" /* 510 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import useWindowDimensions from "useWindowDimensions" /* 1493 */;

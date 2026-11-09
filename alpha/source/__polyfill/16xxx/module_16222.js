@@ -1,9 +1,12 @@
 // Module ID: 16222
 // Function ID: 16223
-// Dependencies: [16216]
+// Dependencies: [16212]
 
 // Module 16222
-import _mod16216 from "module_16216" /* 16216 */;
+import _mod16212 from "module_16212" /* 16212 */;
 
 
-export default (arg0, arg1, arg2) => _mod16216(arg0, arg1, arg2) > 0;
+export default (arg0, arg1) => {
+  const tmp = new _mod16212(arg0, arg1);
+  return tmp.major;
+};

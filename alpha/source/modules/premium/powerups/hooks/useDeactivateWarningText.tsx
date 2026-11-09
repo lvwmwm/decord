@@ -1,10 +1,10 @@
-// Module ID: 14358
-// Function ID: 14359
+// Module ID: 14359
+// Function ID: 14360
 // Name: useDeactivateWarningText
 // Dependencies: [19, 5358, 5046, 5011, 504, 7360, 5349, 1113, 2696, 2]
 // Exports: default
 
-// Module 14358 (useDeactivateWarningText)
+// Module 14359 (useDeactivateWarningText)
 import _modDef2696 from "module_2696" /* 2696 */;
 import Powerups from "Powerups" /* 5349 */;
 import react_mod from "react" /* 19 */;

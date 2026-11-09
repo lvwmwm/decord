@@ -1,9 +1,9 @@
-// Module ID: 19676
-// Function ID: 19677
+// Module ID: 19689
+// Function ID: 19690
 // Name: VoicePanelDockPIPOverlay
-// Dependencies: [32, 19, 17, 1385, 5897, 21, 5140, 575, 12168, 5918, 6055, 7023, 16159, 1113, 19508, 9365, 11362, 1652, 5370, 1705, 504, 1187, 9606, 7120, 19677, 8744, 3184, 17265, 2]
+// Dependencies: [32, 19, 17, 1385, 5897, 21, 5140, 575, 12168, 5918, 6055, 7023, 16169, 1113, 19521, 9365, 11362, 1652, 5370, 1705, 504, 1187, 9606, 7120, 19690, 8744, 3184, 17276, 2]
 
-// Module 19676 (VoicePanelDockPIPOverlay)
+// Module 19689 (VoicePanelDockPIPOverlay)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import timing_timing from "timing/timing" /* 5370 */;
@@ -11,7 +11,7 @@ import Constants from "Constants" /* 5897 */;
 import PerceptualVolumeUtils from "PerceptualVolumeUtils" /* 6055 */;
 import NativeViewDefault from "NativeView" /* 7023 */;
 import useMuteAwareLocalVolumeDefault from "useMuteAwareLocalVolume" /* 12168 */;
-import VoicePanelIconButtonDefault from "VoicePanelIconButton" /* 19508 */;
+import VoicePanelIconButtonDefault from "VoicePanelIconButton" /* 19521 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1385 */;
@@ -61,7 +61,7 @@ function StreamVolumeSlider(arg0) {
     accessibilityLabel: intl.string(handleVolumeChange(1113).t.pEAl4b)
   };
   const tmp5 = NativeViewDefault;
-  Slider = handleVolumeChange(16159).Slider;
+  Slider = handleVolumeChange(16169).Slider;
   obj4 = handleVolumeChange(6055);
   intl = handleVolumeChange(1113).intl;
   items1 = [closure_7(tmp5, obj2), ];
@@ -224,11 +224,11 @@ const memoResult = react.memo(function VoicePanelDockPIPOverlay(ownerId) {
     }
     const obj7 = { pointerEvents: "none", children: tmp22Result };
     items6 = [closure_7(tmp2Result6, obj7), ];
-    const tmp2Result7 = tmp2(19508);
+    const tmp2Result7 = tmp2(19521);
     if ("video" === kind) {
       ScreenXIcon = tmp12(7120).XSmallIcon;
     } else {
-      ScreenXIcon = tmp12(19677).ScreenXIcon;
+      ScreenXIcon = tmp12(19690).ScreenXIcon;
     }
     const obj8 = { icon: closure_7(ScreenXIcon, { size: "sm" }), onPress: onStopWatching, accessibilityLabel: stringResult };
     const intl = tmp12(1113).intl;
@@ -251,7 +251,7 @@ const memoResult = react.memo(function VoicePanelDockPIPOverlay(ownerId) {
     items8[1] = rowEnd;
     if ("video" !== kind) {
       const obj10 = { icon: closure_7(ownerId(8744).VoiceNormalIcon, { size: "sm" }), onPress: onToggleVolume, accessibilityLabel: string2Result };
-      const tmp2Result9 = tmp2(19508);
+      const tmp2Result9 = tmp2(19521);
       const intl2 = tmp12(1113).intl;
       const string2 = intl2.string;
       if ("video" !== kind && null != ownerId && tmp8 === tmp4.VOLUME) {
@@ -280,8 +280,8 @@ const memoResult = react.memo(function VoicePanelDockPIPOverlay(ownerId) {
       obj4.children = items7;
       return closure_9(View, obj4);
     }
-    const obj12 = { icon: closure_7(ownerId(17265).FullscreenEnterIcon, { size: "sm" }), onPress: onOpenCall, accessibilityLabel: intl3.string(tmp2(3184).MPtef8) };
-    const tmp2Result10 = tmp2(19508);
+    const obj12 = { icon: closure_7(ownerId(17276).FullscreenEnterIcon, { size: "sm" }), onPress: onOpenCall, accessibilityLabel: intl3.string(tmp2(3184).MPtef8) };
+    const tmp2Result10 = tmp2(19521);
     intl3 = tmp12(1113).intl;
     tmp22Result4 = tmp22(tmp2Result10, obj12);
   }

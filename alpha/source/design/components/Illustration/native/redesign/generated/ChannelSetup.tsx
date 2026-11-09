@@ -1,10 +1,10 @@
-// Module ID: 20234
-// Function ID: 20235
+// Module ID: 20247
+// Function ID: 20248
 // Name: ChannelSetup
-// Dependencies: [19, 21, 8880, 20235, 20236, 20237, 5147, 5842, 2]
+// Dependencies: [19, 21, 8880, 20248, 20249, 20250, 5147, 5842, 2]
 // Exports: ChannelSetup, getChannelSetupSource, useChannelSetupSource
 
-// Module 20234 (ChannelSetup)
+// Module 20247 (ChannelSetup)
 import Fragment from "Fragment" /* 21 */;
 import shared from "shared" /* 5147 */;
 import FastImageDefault from "FastImage" /* 5842 */;

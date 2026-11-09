@@ -1,13 +1,13 @@
-// Module ID: 13461
-// Function ID: 13462
+// Module ID: 13462
+// Function ID: 13463
 // Name: useGuildProfileCTA
-// Dependencies: [19, 502, 5052, 5011, 5874, 1385, 1072, 504, 1403, 9038, 13462, 8807, 6980, 2]
+// Dependencies: [19, 502, 5052, 5011, 5874, 1385, 1072, 504, 1403, 9038, 13463, 8807, 6980, 2]
 // Exports: default, getGuildProfileCTAType
 
-// Module 13461 (useGuildProfileCTA)
+// Module 13462 (useGuildProfileCTA)
 import FlagUtils from "FlagUtils" /* 1403 */;
 import GuildTagUtils from "GuildTagUtils" /* 8807 */;
-import usePendingFolderGuildIds from "usePendingFolderGuildIds" /* 13462 */;
+import usePendingFolderGuildIds from "usePendingFolderGuildIds" /* 13463 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import GuildMemberStore from "GuildMemberStore" /* 5052 */;

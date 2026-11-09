@@ -1,10 +1,10 @@
-// Module ID: 16159
-// Function ID: 16160
+// Module ID: 16169
+// Function ID: 16170
 // Name: Slider
 // Dependencies: [32, 19, 17, 21, 5140, 575, 8926, 5376, 5377, 1377, 2]
 // Exports: Slider, useLatestSliderValue
 
-// Module 16159 (Slider)
+// Module 16169 (Slider)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import HapticUtils from "HapticUtils" /* 5376 */;

@@ -1,10 +1,10 @@
-// Module ID: 17432
-// Function ID: 17433
+// Module ID: 17443
+// Function ID: 17444
 // Name: VideoQoEMetricsExperiment
 // Dependencies: [1449, 2]
 // Exports: getVideoQoEMetricsConfig
 
-// Module 17432 (VideoQoEMetricsExperiment)
+// Module 17443 (VideoQoEMetricsExperiment)
 import ApexExperiment from "ApexExperiment" /* 1449 */;
 import size from "module_2" /* 2 */;
 

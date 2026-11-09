@@ -1,10 +1,10 @@
-// Module ID: 13929
-// Function ID: 13930
+// Module ID: 13930
+// Function ID: 13931
 // Name: FinalizeTraitActionSheet
 // Dependencies: [21, 6566, 3248, 7426, 7382, 1113, 7124, 5374, 7127, 2]
 // Exports: default
 
-// Module 13929 (FinalizeTraitActionSheet)
+// Module 13930 (FinalizeTraitActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import _modDef3248 from "module_3248" /* 3248 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;

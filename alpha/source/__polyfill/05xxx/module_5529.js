@@ -208,7 +208,7 @@ export const viewCenterToPressableEvent = (width) => {
   const result1 = width.height / 2;
   const obj = { identifier: 0, locationX: result, locationY: result1, pageX: -1, pageY: -1, target: 0, timestamp, touches: [], changedTouches: [] };
   const obj2 = { nativeEvent: obj3 };
-  obj3 = { touches: items, changedTouches: items1, identifier: 0, locationX: result, locationY: result1, pageX: -1, pageY: -1, target: 0, timestamp, force: "o" };
+  obj3 = { touches: items, changedTouches: items1, identifier: 0, locationX: result, locationY: result1, pageX: -1, pageY: -1, target: 0, timestamp, force: "r" };
   items = [obj];
   items1 = [obj];
   return obj2;

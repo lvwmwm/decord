@@ -1,9 +1,9 @@
-// Module ID: 16094
-// Function ID: 16095
+// Module ID: 16104
+// Function ID: 16105
 // Name: GameOrganizationInviteRow
 // Dependencies: [19, 7956, 21, 7038, 1187, 9281, 5194, 9284, 2]
 
-// Module 16094 (GameOrganizationInviteRow)
+// Module 16104 (GameOrganizationInviteRow)
 import Fragment from "Fragment" /* 21 */;
 import native from "native" /* 1187 */;
 import UserUtilsDefault from "UserUtils" /* 5194 */;

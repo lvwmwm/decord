@@ -1,9 +1,9 @@
-// Module ID: 16576
-// Function ID: 16577
+// Module ID: 16586
+// Function ID: 16587
 // Name: SystemTelecomManager
-// Dependencies: [5, 32, 17, 6623, 4993, 502, 4989, 2130, 5893, 5082, 5043, 1385, 5803, 5896, 1072, 5897, 3, 16577, 572, 16578, 1252, 5889, 7412, 6761, 11, 7551, 6047, 10331, 1266, 16579, 5776, 7549, 1377, 2120, 2]
+// Dependencies: [5, 32, 17, 6623, 4993, 502, 4989, 2130, 5893, 5082, 5043, 1385, 5803, 5896, 1072, 5897, 3, 16587, 572, 16588, 1252, 5889, 7412, 6761, 11, 7551, 6047, 10331, 1266, 16589, 5776, 7549, 1377, 2120, 2]
 
-// Module 16576 (SystemTelecomManager)
+// Module 16586 (SystemTelecomManager)
 import LoggerDefault from "Logger" /* 3 */;
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
@@ -20,8 +20,8 @@ import AnalyticsLocationDefault from "AnalyticsLocation" /* 7412 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7549 */;
 import CallActionCreatorsDefault from "CallActionCreators" /* 7551 */;
 import RequestGatewaySocketAll from "RequestGatewaySocket" /* 10331 */;
-import SystemTelecomPlatform from "SystemTelecomPlatform" /* 16578 */;
-import SystemTelecomUtils from "SystemTelecomUtils" /* 16579 */;
+import SystemTelecomPlatform from "SystemTelecomPlatform" /* 16588 */;
+import SystemTelecomUtils from "SystemTelecomUtils" /* 16589 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import GatewayConnectionStore from "GatewayConnectionStore" /* 6623 */;
@@ -36,7 +36,7 @@ import VoiceStateStore from "VoiceStateStore" /* 5803 */;
 import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5896 */;
 import Constants_mod from "Constants" /* 1072 */;
 import Constants_mod2 from "Constants" /* 5897 */;
-import react_native2 from "react-native" /* 16577 */;
+import react_native2 from "react-native" /* 16587 */;
 import LifecycleManager from "LifecycleManager" /* 2120 */;
 import size from "module_2" /* 2 */;
 
@@ -564,7 +564,7 @@ class SystemTelecomManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -627,7 +627,7 @@ class SystemTelecomManager {
             c3 = 0;
           }
           c5 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp26) {
           if (0 === c3) {
             c5 = 3;

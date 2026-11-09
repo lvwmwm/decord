@@ -1,17 +1,17 @@
-// Module ID: 17033
-// Function ID: 17034
+// Module ID: 17044
+// Function ID: 17045
 // Name: AgeConfirmationNotice
-// Dependencies: [19, 17, 7554, 21, 7536, 16893, 5834, 2185, 8024, 6784, 575, 8095, 1113, 5751, 2]
+// Dependencies: [19, 17, 7554, 21, 7536, 16904, 5834, 2185, 8024, 6784, 575, 8095, 1113, 5751, 2]
 // Exports: default
 
-// Module 17033 (AgeConfirmationNotice)
+// Module 17044 (AgeConfirmationNotice)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2185 */;
 import Text_Text from "Text/Text" /* 5751 */;
 import LinkingDefault from "Linking" /* 5834 */;
-import SafetySettingsUtils from "SafetySettingsUtils" /* 16893 */;
+import SafetySettingsUtils from "SafetySettingsUtils" /* 16904 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 7554 */;
 import size from "module_2" /* 2 */;

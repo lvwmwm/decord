@@ -1,16 +1,16 @@
-// Module ID: 18295
-// Function ID: 18296
+// Module ID: 18308
+// Function ID: 18309
 // Name: NotifSettingsActionCreators
-// Dependencies: [5, 15850, 1072, 3, 572, 1233, 15851, 1282, 15853, 1089, 15864, 15849, 2]
+// Dependencies: [5, 15860, 1072, 3, 572, 1233, 15861, 1282, 15863, 1089, 15874, 15859, 2]
 // Exports: schedulePersistPendingEditsIfNeeded, updateNotifSettingRadioValue, updateNotifSettingToggleValue
 
-// Module 18295 (NotifSettingsActionCreators)
+// Module 18308 (NotifSettingsActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import settings_NotifSettingsUtils from "settings/NotifSettingsUtils" /* 15849 */;
-import notification_settings from "notification_settings" /* 15851 */;
+import settings_NotifSettingsUtils from "settings/NotifSettingsUtils" /* 15859 */;
+import notification_settings from "notification_settings" /* 15861 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import NotifSettingsProtoStore from "NotifSettingsProtoStore" /* 15850 */;
+import NotifSettingsProtoStore from "NotifSettingsProtoStore" /* 15860 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -44,7 +44,7 @@ let obj = function _persistPendingEdit() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c7;
@@ -90,7 +90,7 @@ let obj = function _persistPendingEdit() {
                 logger.log("Unable to take ownership of notification settings apply");
                 skipEdit(pendingEdit);
                 c9 = 3;
-                return { value: "HermesInternal", done: "HermesInternal" };
+                return { value: "HermesInternal", done: null };
               } else {
                 const obj13 = require("user_settings/UserSettingsUtils");
                 const protoToB64Result = obj13.protoToB64(require("notification_settings").DeclarativeSettings, pendingEdit.partialSettings);
@@ -112,7 +112,7 @@ let obj = function _persistPendingEdit() {
                 logger.log("Not persisting proto because there is nothing to change");
                 skipEdit(pendingEdit);
                 c9 = 3;
-                return { value: "HermesInternal", done: "HermesInternal" };
+                return { value: "HermesInternal", done: null };
               }
             }
           }
@@ -123,7 +123,7 @@ let obj = function _persistPendingEdit() {
             let body = versions;
             if (closure_133_4.applyingEdit !== pendingEdit) {
               c9 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             } else {
               status = closure_133_0;
               let tmp45;
@@ -189,7 +189,7 @@ let obj = function _persistPendingEdit() {
             if (closure_133_4.applyingEdit !== pendingEdit) {
               c7 = 0;
               c9 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             } else {
               resetAnyPending = status.declarative_settings_out_of_date;
               const tmp114 = resetAnyPending;
@@ -246,7 +246,7 @@ let obj = function _persistPendingEdit() {
           }
         }
         c9 = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp100) {
         versions = tmp100;
         if (0 === c7) {
@@ -272,7 +272,7 @@ obj = function _reload() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c4;

@@ -1,10 +1,10 @@
-// Module ID: 18624
-// Function ID: 18625
+// Module ID: 18637
+// Function ID: 18638
 // Name: GuildTooltipActionSheets
-// Dependencies: [32, 19, 4986, 21, 18625, 2118, 18627, 18630, 18632, 18633, 4973, 18634, 6889, 18635, 10639, 10640, 1705, 2]
+// Dependencies: [32, 19, 4986, 21, 18638, 2118, 18640, 18643, 18645, 18646, 4973, 18647, 6889, 18648, 10639, 10640, 1705, 2]
 // Exports: default
 
-// Module 18624 (GuildTooltipActionSheets)
+// Module 18637 (GuildTooltipActionSheets)
 import Fragment from "Fragment" /* 21 */;
 import _mod1705 from "module_1705" /* 1705 */;
 import asyncRequire from "asyncRequire" /* 2118 */;
@@ -12,29 +12,29 @@ import dismissible_content from "dismissible_content" /* 4973 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4986 */;
 import SelectedDismissibleContentDefault from "SelectedDismissibleContent" /* 10639 */;
 import DismissibleActionSheet from "DismissibleActionSheet" /* 10640 */;
-import useIsGuildEligibleForRoleSubscriptionsUpsellDefault from "useIsGuildEligibleForRoleSubscriptionsUpsell" /* 18634 */;
-import useIsEligibleForTierTemplateUpsellDefault from "useIsEligibleForTierTemplateUpsell" /* 18635 */;
+import useIsGuildEligibleForRoleSubscriptionsUpsellDefault from "useIsGuildEligibleForRoleSubscriptionsUpsell" /* 18647 */;
+import useIsEligibleForTierTemplateUpsellDefault from "useIsEligibleForTierTemplateUpsell" /* 18648 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
 function GuildRoleSubscriptionsUpsellActionSheetImporter() {
-  return asyncRequire(18625, dependencyMap.paths);
+  return asyncRequire(18638, dependencyMap.paths);
 }
 function GuildRoleSubscriptionsIAPUpsellActionSheetImporter() {
-  return asyncRequire(18627, dependencyMap.paths);
+  return asyncRequire(18640, dependencyMap.paths);
 }
 function CreatorMonetizationOnboardingV2UpsellActionSheetImporter() {
-  return asyncRequire(18630, dependencyMap.paths);
+  return asyncRequire(18643, dependencyMap.paths);
 }
 function TierTemplatesUpsellActionSheetImporter() {
-  return asyncRequire(18632, dependencyMap.paths);
+  return asyncRequire(18645, dependencyMap.paths);
 }
 class GuildTooltipActionSheets {
   constructor(guild) {
     const id = guild.guild.id;
     const items = [];
-    const obj = id(18633);
+    const obj = id(18646);
     if (obj.useCanSeeCreatorMonetizationOnboardingV2Upsell(id)) {
       items.push(id(4973).DismissibleContent.CREATOR_MONETIZATION_ONBOARDING_V2_UPSELL);
     }

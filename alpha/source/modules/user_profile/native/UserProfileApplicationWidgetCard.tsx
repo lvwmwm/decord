@@ -77,6 +77,7 @@ export default function UserProfileApplicationWidgetCard(userId) {
   }
   dependencyMap = undefined;
   let token;
+  const footer = userId.footer;
   let tmp = closure_10();
   let obj = userId(504);
   const items = [LocaleStore];
@@ -249,7 +250,7 @@ export default function UserProfileApplicationWidgetCard(userId) {
     tmp32Result4 = null;
     if (null != tmp33Result2) {
       const obj20 = { style: cardStyle, children: items6 };
-      items6 = [tmp33Result, , , ];
+      items6 = [tmp33Result, , , , ];
       const obj21 = { style: tmp.divider };
       const tmp10Result2 = stateFromStores(7436);
       items6[1] = closure_8(closure_5, obj21);
@@ -272,6 +273,7 @@ export default function UserProfileApplicationWidgetCard(userId) {
         }
       }
       items6[3] = tmp32Result3;
+      items6[4] = footer;
       tmp32Result4 = tmp32(tmp10Result2, obj20);
     }
   }

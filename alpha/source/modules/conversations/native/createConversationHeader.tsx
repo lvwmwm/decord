@@ -1,10 +1,10 @@
-// Module ID: 13950
-// Function ID: 13951
+// Module ID: 13951
+// Function ID: 13952
 // Name: createConversationHeader
 // Dependencies: [8449, 8467, 12964, 1113, 3928, 10228, 2]
 // Exports: default, findConversationHeaderRowIndex
 
-// Module 13950 (createConversationHeader)
+// Module 13951 (createConversationHeader)
 import intl2 from "intl" /* 1113 */;
 import _modDef3928 from "module_3928" /* 3928 */;
 import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8467 */;

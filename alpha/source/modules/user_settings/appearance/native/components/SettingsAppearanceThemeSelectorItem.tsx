@@ -1,10 +1,10 @@
-// Module ID: 17576
-// Function ID: 17577
+// Module ID: 17587
+// Function ID: 17588
 // Name: SettingsAppearanceThemeSelectorItem
-// Dependencies: [19, 17, 1192, 17575, 1083, 21, 5140, 575, 5138, 5162, 10855, 1187, 17577, 563, 5724, 17578, 5366, 1241, 5200, 7043, 1113, 2]
+// Dependencies: [19, 17, 1192, 17586, 1083, 21, 5140, 575, 5138, 5162, 10855, 1187, 17588, 563, 5724, 17589, 5366, 1241, 5200, 7043, 1113, 2]
 // Exports: default
 
-// Module 17576 (SettingsAppearanceThemeSelectorItem)
+// Module 17587 (SettingsAppearanceThemeSelectorItem)
 import react_native from "react-native" /* 17 */;
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import nativeDefault from "native" /* 575 */;
@@ -18,7 +18,7 @@ import useToken from "useToken" /* 5724 */;
 import ThemedGradientDefault from "ThemedGradient" /* 10855 */;
 import react from "react" /* 19 */;
 import ThemeStore from "ThemeStore" /* 1192 */;
-import SettingsAppearanceConstants from "SettingsAppearanceConstants" /* 17575 */;
+import SettingsAppearanceConstants from "SettingsAppearanceConstants" /* 17586 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
@@ -32,8 +32,8 @@ let tmp;
 let tmp5;
 let tmp8;
 const native = tmp(1187);
-const AssetRegistryDefault = tmp8(17577);
-const SynchronizeIconNativeDefault = tmp5(17578);
+const AssetRegistryDefault = tmp8(17588);
+const SynchronizeIconNativeDefault = tmp5(17589);
 function GradientThemeBackground(arg0) {
   let isThemeLocked;
   let item;

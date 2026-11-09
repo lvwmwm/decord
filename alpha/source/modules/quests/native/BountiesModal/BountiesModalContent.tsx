@@ -1,10 +1,10 @@
-// Module ID: 17284
-// Function ID: 17285
+// Module ID: 17295
+// Function ID: 17296
 // Name: BountiesModalContent
-// Dependencies: [5, 32, 19, 17, 7921, 6836, 17232, 1072, 1083, 21, 1493, 1627, 5140, 575, 1377, 14745, 5378, 504, 9641, 17241, 14926, 17246, 9781, 17249, 17244, 7939, 6843, 7948, 6841, 14919, 17228, 17252, 14934, 17285, 17283, 7355, 17276, 1652, 5370, 5373, 14896, 1108, 17242, 17282, 7918, 5199, 2]
+// Dependencies: [5, 32, 19, 17, 7921, 6836, 17243, 1072, 1083, 21, 1493, 1627, 5140, 575, 1377, 14746, 5378, 504, 9641, 17252, 14927, 17257, 9781, 17260, 17255, 7939, 6843, 7948, 6841, 14920, 17239, 17263, 14935, 17296, 17294, 7355, 17287, 1652, 5370, 5373, 14897, 1108, 17253, 17293, 7918, 5199, 2]
 // Exports: default
 
-// Module 17284 (BountiesModalContent)
+// Module 17295 (BountiesModalContent)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants2 from "Constants" /* 1083 */;
@@ -16,16 +16,16 @@ import AdCreativeType from "AdCreativeType" /* 6843 */;
 import QuestDataUtils from "QuestDataUtils" /* 7918 */;
 import AnalyticsActions from "AnalyticsActions" /* 7939 */;
 import AnalyticsTypes from "AnalyticsTypes" /* 7948 */;
-import AppStoreOverlayTelemetryManager from "AppStoreOverlayTelemetryManager" /* 14896 */;
-import VideoQuestUtils from "VideoQuestUtils" /* 14919 */;
-import QuestContentImpressionTracker from "QuestContentImpressionTracker" /* 14934 */;
-import BountiesModalActionCreatorsDefault from "BountiesModalActionCreators" /* 17228 */;
+import AppStoreOverlayTelemetryManager from "AppStoreOverlayTelemetryManager" /* 14897 */;
+import VideoQuestUtils from "VideoQuestUtils" /* 14920 */;
+import QuestContentImpressionTracker from "QuestContentImpressionTracker" /* 14935 */;
+import BountiesModalActionCreatorsDefault from "BountiesModalActionCreators" /* 17239 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import BountyStore from "BountyStore" /* 7921 */;
 import QuestConstants from "QuestConstants" /* 6836 */;
-import BountiesModalConstants from "BountiesModalConstants" /* 17232 */;
+import BountiesModalConstants from "BountiesModalConstants" /* 17243 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5140 */;
@@ -210,7 +210,7 @@ function BountiesModalContentInner(bounty) {
         let obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -277,7 +277,7 @@ function BountiesModalContentInner(bounty) {
           }
           let num4 = 3;
           c5 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp36) {
         dismissVideoEndAppStoreOverlay = tmp36;

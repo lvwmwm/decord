@@ -1,10 +1,10 @@
-// Module ID: 17650
-// Function ID: 17651
+// Module ID: 17661
+// Function ID: 17662
 // Name: GummyStripesFromHue
-// Dependencies: [32, 19, 21, 5140, 1393, 1652, 16757, 2]
+// Dependencies: [32, 19, 21, 5140, 1393, 1652, 16768, 2]
 // Exports: default
 
-// Module 17650 (GummyStripesFromHue)
+// Module 17661 (GummyStripesFromHue)
 import _modDef1652 from "module_1652" /* 1652 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

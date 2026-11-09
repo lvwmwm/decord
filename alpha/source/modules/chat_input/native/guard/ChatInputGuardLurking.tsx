@@ -1,9 +1,9 @@
-// Module ID: 14266
-// Function ID: 14267
+// Module ID: 14267
+// Function ID: 14268
 // Name: ChatInputGuardLurking
-// Dependencies: [19, 5073, 4989, 13023, 1072, 21, 504, 1099, 5889, 11335, 9210, 1196, 7593, 6957, 6961, 14259, 1113, 2]
+// Dependencies: [19, 5073, 4989, 13023, 1072, 21, 504, 1099, 5889, 11335, 9210, 1196, 7593, 6957, 6961, 14260, 1113, 2]
 
-// Module 14266 (ChatInputGuardLurking)
+// Module 14267 (ChatInputGuardLurking)
 import Fragment from "Fragment" /* 21 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1196 */;
 import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5889 */;
@@ -99,7 +99,7 @@ const memoResult = react.memo(function ChatInputGuardLurking(channel) {
     type = lurkingSource.type;
   }
   if (type === constants2.DIRECTORY_ENTRY) {
-    guildId(14259);
+    guildId(14260);
     const intl9 = tmp2(1113).intl;
     const intl10 = tmp2(1113).intl;
     const intl11 = tmp2(1113).intl;
@@ -107,7 +107,7 @@ const memoResult = react.memo(function ChatInputGuardLurking(channel) {
   } else {
     let obj9;
     const tmp15 = jsx;
-    const tmp17 = guildId(14259);
+    const tmp17 = guildId(14260);
     if (null != channel.pendingGameProfileReturn) {
       let obj3 = { type: "button-action", message: intl6.string(tmp2(1113).t.G42YmG), buttonSecondaryText: intl7.string(tmp2(1113).t.DjifDP), buttonSecondaryOnPress: null, buttonSecondaryLoading: null, buttonPrimaryText: intl8.string(tmp2(1113).t.RLch70), buttonPrimaryOnPress: callback2 };
       intl6 = tmp2(1113).intl;

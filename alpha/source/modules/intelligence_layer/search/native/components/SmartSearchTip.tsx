@@ -1,9 +1,9 @@
-// Module ID: 19101
-// Function ID: 19102
+// Module ID: 19114
+// Function ID: 19115
 // Name: SmartSearchTip
-// Dependencies: [19, 17, 21, 5140, 575, 5751, 1113, 4249, 15117, 1187, 2]
+// Dependencies: [19, 17, 21, 5140, 575, 5751, 1113, 4249, 15118, 1187, 2]
 
-// Module 19101 (SmartSearchTip)
+// Module 19114 (SmartSearchTip)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
@@ -83,7 +83,7 @@ const memoResult = react.memo(function SmartSearchTip(citations) {
           return hasOwnProperty(Avatar, obj, user.id);
         })
     };
-    const AvatarPile = tmp5(15117).AvatarPile;
+    const AvatarPile = tmp5(15118).AvatarPile;
     substr = memo.slice(0, 3);
     tmp4Result = tmp4(AvatarPile, obj6);
   }

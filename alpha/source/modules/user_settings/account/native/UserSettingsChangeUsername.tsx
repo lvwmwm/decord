@@ -1,10 +1,10 @@
-// Module ID: 16911
-// Function ID: 16912
+// Module ID: 16922
+// Function ID: 16923
 // Name: UserSettingsChangeUsername
-// Dependencies: [5, 32, 19, 17, 1385, 1072, 21, 5140, 575, 6611, 16912, 5751, 1113, 1499, 504, 2171, 16913, 7223, 7214, 1282, 1500, 9902, 7148, 7229, 7175, 2]
+// Dependencies: [5, 32, 19, 17, 1385, 1072, 21, 5140, 575, 6611, 16923, 5751, 1113, 1499, 504, 2171, 16924, 7223, 7214, 1282, 1500, 9902, 7148, 7229, 7175, 2]
 // Exports: default
 
-// Module 16911 (UserSettingsChangeUsername)
+// Module 16922 (UserSettingsChangeUsername)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl3 from "intl" /* 1113 */;
@@ -34,7 +34,7 @@ function UsernameStatusMessage(showHint) {
   const usernameStatus = showHint.usernameStatus;
   const str = showHint(6611);
   const match = str.match(usernameStatus);
-  let obj = { type: showHint(16912).NameValidationState.ERROR, message: P.select() };
+  let obj = { type: showHint(16923).NameValidationState.ERROR, message: P.select() };
   const _with = match.with;
   P = showHint(6611).P;
   const _withResult = _with(obj, (children) => {
@@ -42,7 +42,7 @@ function UsernameStatusMessage(showHint) {
     return closure_1_11(showHint(dependencyMap[11]).Text, obj);
   });
   const _with2 = _withResult.with;
-  const obj2 = { type: showHint(16912).NameValidationState.AVAILABLE, message: P2.select() };
+  const obj2 = { type: showHint(16923).NameValidationState.AVAILABLE, message: P2.select() };
   P2 = showHint(6611).P;
   const _with2Result = _with2(obj2, (children) => {
     const obj = { variant: "body-xs/medium", color: "text-feedback-positive", children };
@@ -203,7 +203,7 @@ export default function UserSettingsChangeUsername() {
             } else if (arg0 === 2) {
               return { value, done: true };
             } else {
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           } else {
             try {

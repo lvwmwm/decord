@@ -1,16 +1,16 @@
-// Module ID: 17173
-// Function ID: 17174
+// Module ID: 17184
+// Function ID: 17185
 // Name: UserSettingsSessions
-// Dependencies: [32, 19, 17, 1385, 1072, 21, 5140, 6778, 575, 16991, 504, 17174, 6159, 7126, 1113, 7038, 7355, 5751, 1380, 7043, 1187, 8429, 1499, 17175, 7223, 17176, 9675, 12210, 7198, 17177, 2]
+// Dependencies: [32, 19, 17, 1385, 1072, 21, 5140, 6778, 575, 17002, 504, 17185, 6159, 7126, 1113, 7038, 7355, 5751, 1380, 7043, 1187, 8429, 1499, 17186, 7223, 17187, 9675, 12210, 7198, 17188, 2]
 // Exports: default
 
-// Module 17173 (UserSettingsSessions)
+// Module 17184 (UserSettingsSessions)
 import nativeDefault from "native" /* 575 */;
 import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7223 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 12210 */;
-import AuthSessionsActionCreators from "AuthSessionsActionCreators" /* 17174 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 17175 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 17176 */;
+import AuthSessionsActionCreators from "AuthSessionsActionCreators" /* 17185 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 17186 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 17187 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -54,7 +54,7 @@ function UserSettingsSessions() {
   let tmp21Result;
   let tmp7;
   const tmp = closure_13();
-  let obj = otherSessions(16991);
+  let obj = otherSessions(17002);
   let authSessions = obj.useAuthSessions();
   ({ currentSession, otherSessions } = authSessions);
   const items = [UserStore];
@@ -199,8 +199,8 @@ function SessionInfo(session) {
           if ("android" !== trimmed) {
             if ("horizon os" === trimmed) {
               tmp9 = session;
-              obj = { text: os, iconSource: AssetRegistryDefault2, IconComponent: session(17177).VrHeadsetIcon };
-              const obj2 = { text: os, iconSource: AssetRegistryDefault2, IconComponent: session(17177).VrHeadsetIcon };
+              obj = { text: os, iconSource: AssetRegistryDefault2, IconComponent: session(17188).VrHeadsetIcon };
+              const obj2 = { text: os, iconSource: AssetRegistryDefault2, IconComponent: session(17188).VrHeadsetIcon };
             } else {
               obj = { text: os, iconSource: AssetRegistryDefault4, IconComponent: session(9675).ScreenIcon };
               tmp9 = session;
@@ -214,7 +214,7 @@ function SessionInfo(session) {
       let formatDateResult = null;
       ({ text, iconSource, IconComponent } = obj);
       if (!current) {
-        const tmp9Result = tmp9(16991);
+        const tmp9Result = tmp9(17002);
         formatDateResult = tmp9Result.formatDate(session.approx_last_used_time);
       }
       const items = [text, platform];

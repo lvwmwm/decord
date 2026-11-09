@@ -1,12 +1,12 @@
-// Module ID: 14141
-// Function ID: 14142
+// Module ID: 14142
+// Function ID: 14143
 // Name: SearchSessionAnalyticsManager
-// Dependencies: [9916, 14142, 14126, 2]
+// Dependencies: [9916, 14143, 14127, 2]
 
-// Module 14141 (SearchSessionAnalyticsManager)
+// Module 14142 (SearchSessionAnalyticsManager)
 import TrackingConstants from "TrackingConstants" /* 9916 */;
-import SearchUtils from "SearchUtils" /* 14126 */;
-import AbstractSearchSessionAnalyticsManager from "AbstractSearchSessionAnalyticsManager" /* 14142 */;
+import SearchUtils from "SearchUtils" /* 14127 */;
+import AbstractSearchSessionAnalyticsManager from "AbstractSearchSessionAnalyticsManager" /* 14143 */;
 import size from "module_2" /* 2 */;
 
 const React2 = TrackingConstants.SEARCH_TAB_TO_ANALYTICS_SEARCH_TAB;

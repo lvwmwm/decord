@@ -1,9 +1,9 @@
-// Module ID: 14046
-// Function ID: 14047
+// Module ID: 14047
+// Function ID: 14048
 // Name: VoiceMessageButton
-// Dependencies: [5, 32, 19, 17, 5375, 7898, 4989, 7777, 13956, 13957, 1072, 5145, 8009, 21, 5314, 8008, 14047, 1652, 11379, 11700, 1493, 13534, 8278, 8280, 7712, 9870, 10320, 1108, 5837, 1113, 6928, 5315, 8026, 5836, 1705, 9146, 5420, 14049, 13019, 11192, 12138, 2]
+// Dependencies: [5, 32, 19, 17, 5375, 7898, 4989, 7777, 13957, 13958, 1072, 5145, 8009, 21, 5314, 8008, 14048, 1652, 11379, 11700, 1493, 13535, 8278, 8280, 7712, 9870, 10320, 1108, 5837, 1113, 6928, 5315, 8026, 5836, 1705, 9146, 5420, 14050, 13019, 11192, 12138, 2]
 
-// Module 14046 (VoiceMessageButton)
+// Module 14047 (VoiceMessageButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1108 */;
@@ -13,7 +13,7 @@ import RootNavigationRef from "RootNavigationRef" /* 5315 */;
 import LegacyBaseButton from "LegacyBaseButton" /* 5420 */;
 import isChannelFocused from "isChannelFocused" /* 6928 */;
 import NativePermissionConstants from "NativePermissionConstants" /* 8009 */;
-import VoiceMessageUtils from "VoiceMessageUtils" /* 14047 */;
+import VoiceMessageUtils from "VoiceMessageUtils" /* 14048 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -21,8 +21,8 @@ import ActionSheetStore from "ActionSheetStore" /* 5375 */;
 import PendingReplyStore from "PendingReplyStore" /* 7898 */;
 import ChannelStore from "ChannelStore" /* 4989 */;
 import DraftStore from "DraftStore" /* 7777 */;
-import VoiceMessagesUIStore from "VoiceMessagesUIStore" /* 13956 */;
-import VoiceMessageConstants from "VoiceMessageConstants" /* 13957 */;
+import VoiceMessagesUIStore from "VoiceMessagesUIStore" /* 13957 */;
+import VoiceMessageConstants from "VoiceMessageConstants" /* 13958 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -142,7 +142,7 @@ const memoResult = react.memo(function VoiceMessageButton(arg0) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -262,7 +262,7 @@ const memoResult = react.memo(function VoiceMessageButton(arg0) {
               obj.deletePendingReply(closure_0);
             }
             c4 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         }
       } catch (tmp46) {
@@ -359,7 +359,7 @@ const memoResult = react.memo(function VoiceMessageButton(arg0) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -397,7 +397,7 @@ const memoResult = react.memo(function VoiceMessageButton(arg0) {
               const result = obj.emitVoiceMessageRecorded(cancel(handleActionSheetChange[21]).VoiceMessageRecordingResult.CANCELLED_GESTURE_CONFLICT, tmp4.data.durationSecs, tmp4.startTimeMillis);
             }
             c3 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           } catch (tmp20) {
             c3 = 3;
             throw tmp20;
@@ -476,7 +476,7 @@ const memoResult = react.memo(function VoiceMessageButton(arg0) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c3;
@@ -570,7 +570,7 @@ const memoResult = react.memo(function VoiceMessageButton(arg0) {
             }
           }
           c5 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp51) {
           closure_2 = tmp51;
           if (0 === c3) {
@@ -644,7 +644,7 @@ const memoResult = react.memo(function VoiceMessageButton(arg0) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -681,7 +681,7 @@ const memoResult = react.memo(function VoiceMessageButton(arg0) {
           const result = closure_128_2.set(items);
         }
         c2 = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp12) {
         c2 = 3;
         throw tmp12;
@@ -815,7 +815,7 @@ const memoResult = react.memo(function VoiceMessageButton(arg0) {
     VoiceMessageButtonTsx4.__initData = tmp20;
     return onFinalize(VoiceMessageButtonTsx4);
   }, items12);
-  const tooltipTargetRef = tmp(14049)().tooltipTargetRef;
+  const tooltipTargetRef = tmp(14050)().tooltipTargetRef;
   let obj5 = { gesture: memo, children: tmp35(tmpResult2, obj6) };
   const GestureDetector = tmp5(5420).GestureDetector;
   obj6 = { ref: tooltipTargetRef, IconComponent: MicrophoneIcon, active: false, accessibilityLabel: intl2.string(tmp5(1113).t.lwy6aX), accessibilityActions, onAccessibilityAction, disabled };

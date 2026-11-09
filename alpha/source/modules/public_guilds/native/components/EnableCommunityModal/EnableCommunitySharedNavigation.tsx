@@ -1,12 +1,12 @@
-// Module ID: 20228
-// Function ID: 20229
+// Module ID: 20241
+// Function ID: 20242
 // Name: EnableCommunitySharedNavigation
-// Dependencies: [19, 17, 9155, 1072, 21, 5140, 504, 1499, 5390, 6153, 20226, 7271, 7355, 5758, 1113, 2]
+// Dependencies: [19, 17, 9155, 1072, 21, 5140, 504, 1499, 5390, 6153, 20239, 7271, 7355, 5758, 1113, 2]
 // Exports: EnableCommunityModalScreen
 
-// Module 20228 (EnableCommunitySharedNavigation)
+// Module 20241 (EnableCommunitySharedNavigation)
 import Constants from "Constants" /* 1072 */;
-import EnableCommunityModalActionCreatorsDefault from "EnableCommunityModalActionCreators" /* 20226 */;
+import EnableCommunityModalActionCreatorsDefault from "EnableCommunityModalActionCreators" /* 20239 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import GuildSettingsStore from "GuildSettingsStore" /* 9155 */;

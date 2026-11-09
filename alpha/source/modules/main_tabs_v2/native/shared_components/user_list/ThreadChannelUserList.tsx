@@ -1,9 +1,9 @@
-// Module ID: 19118
-// Function ID: 19119
+// Module ID: 19131
+// Function ID: 19132
 // Name: ThreadChannelUserList
-// Dependencies: [19, 4989, 5052, 5011, 1385, 1072, 21, 7387, 504, 19119, 7281, 550, 7515, 5194, 8821, 10852, 2]
+// Dependencies: [19, 4989, 5052, 5011, 1385, 1072, 21, 7387, 504, 19132, 7281, 550, 7515, 5194, 8821, 10852, 2]
 
-// Module 19118 (ThreadChannelUserList)
+// Module 19131 (ThreadChannelUserList)
 import Fragment from "Fragment" /* 21 */;
 import throttleDefault from "throttle" /* 550 */;
 import Constants from "Constants" /* 1072 */;

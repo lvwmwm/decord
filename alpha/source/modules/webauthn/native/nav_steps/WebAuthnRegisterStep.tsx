@@ -1,10 +1,10 @@
-// Module ID: 16994
-// Function ID: 16995
+// Module ID: 17005
+// Function ID: 17006
 // Name: WebAuthnRegisterStep
-// Dependencies: [32, 19, 17, 1072, 21, 5140, 575, 7187, 1113, 1187, 1499, 1377, 16995, 7355, 16996, 5751, 6822, 5758, 2]
+// Dependencies: [32, 19, 17, 1072, 21, 5140, 575, 7187, 1113, 1187, 1499, 1377, 17006, 7355, 17007, 5751, 6822, 5758, 2]
 // Exports: default
 
-// Module 16994 (WebAuthnRegisterStep)
+// Module 17005 (WebAuthnRegisterStep)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -103,12 +103,12 @@ export default function WebAuthnRegisterStep() {
   let closure_5 = obj2.useMemo(() => obj4[first], items1);
   const items2 = [onRegisterSuccess, tmp11, tmp8];
   let closure_6 = obj2.useMemo(() => ({ onRegisterSuccess, setError: dependencyMap, setRegistering: importDefault }), items2);
-  const tmpResult = navigation(16995);
+  const tmpResult = navigation(17006);
   const announceError = tmpResult.useAnnounceError(tmp10);
   const rect = { bottom: true, left: true, right: true, style: tmp4.flexContainer, children: items4 };
   obj4 = { style: tmp4.centerFlex, children: items3 };
   const SafeAreaPaddingView = tmp(7355).SafeAreaPaddingView;
-  items3 = [closure_7(navigation(16996).KeyImage, {}), , ];
+  items3 = [closure_7(navigation(17007).KeyImage, {}), , ];
   const obj5 = { style: tmp4.margin, variant: "body-md/normal", children: stringResult };
   const Text = tmp(5751).Text;
   const intl = tmp(1113).intl;

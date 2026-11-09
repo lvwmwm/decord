@@ -1,9 +1,9 @@
-// Module ID: 18022
-// Function ID: 18023
+// Module ID: 18031
+// Function ID: 18032
 // Name: OrbOnboardingPill
 // Dependencies: [19, 17, 21, 9616, 5751, 1113, 5140, 575, 2]
 
-// Module 18022 (OrbOnboardingPill)
+// Module 18031 (OrbOnboardingPill)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;

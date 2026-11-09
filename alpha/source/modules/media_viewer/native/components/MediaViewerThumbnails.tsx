@@ -1,15 +1,15 @@
-// Module ID: 15007
-// Function ID: 15008
+// Module ID: 15008
+// Function ID: 15009
 // Name: MediaViewerThumbnails
-// Dependencies: [32, 19, 17, 8940, 21, 15008, 5724, 575, 1652, 5728, 1377, 5140, 5842, 8913, 7304, 2]
+// Dependencies: [32, 19, 17, 8940, 21, 15009, 5724, 575, 1652, 5728, 1377, 5140, 5842, 8913, 7304, 2]
 // Exports: default
 
-// Module 15007 (MediaViewerThumbnails)
+// Module 15008 (MediaViewerThumbnails)
 import _modDef1652 from "module_1652" /* 1652 */;
 import useToken from "useToken" /* 5724 */;
 import VisualEffectViewDefault from "VisualEffectView" /* 5728 */;
 import FastImageDefault from "FastImage" /* 5842 */;
-import useMediaItemSpoilerState from "useMediaItemSpoilerState" /* 15008 */;
+import useMediaItemSpoilerState from "useMediaItemSpoilerState" /* 15009 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

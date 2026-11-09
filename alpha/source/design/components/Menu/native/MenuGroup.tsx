@@ -1,10 +1,10 @@
-// Module ID: 16123
-// Function ID: 16124
+// Module ID: 16133
+// Function ID: 16134
 // Name: MenuGroup
 // Dependencies: [19, 17, 21, 5140, 575, 2]
 // Exports: MenuGroup
 
-// Module 16123 (MenuGroup)
+// Module 16133 (MenuGroup)
 import nativeDefault from "native" /* 575 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

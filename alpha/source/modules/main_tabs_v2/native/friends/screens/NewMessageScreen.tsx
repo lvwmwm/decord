@@ -1,10 +1,10 @@
-// Module ID: 19181
-// Function ID: 19182
+// Module ID: 19194
+// Function ID: 19195
 // Name: NewMessageScreen
-// Dependencies: [5, 32, 19, 17, 4993, 4989, 5082, 7459, 10846, 1072, 21, 1652, 5751, 5140, 575, 1377, 7549, 7460, 572, 504, 1252, 19182, 5370, 19183, 9902, 1113, 11354, 12564, 7387, 7412, 5735, 5721, 11789, 11787, 11786, 9914, 1099, 11790, 5836, 11108, 11107, 5846, 5845, 13634, 5758, 14149, 19120, 2]
+// Dependencies: [5, 32, 19, 17, 4993, 4989, 5082, 7459, 10846, 1072, 21, 1652, 5751, 5140, 575, 1377, 7549, 7460, 572, 504, 1252, 19195, 5370, 19196, 9902, 1113, 11354, 12564, 7387, 7412, 5735, 5721, 11789, 11787, 11786, 9914, 1099, 11790, 5836, 11108, 11107, 5846, 5845, 13635, 5758, 14150, 19133, 2]
 // Exports: default
 
-// Module 19181 (NewMessageScreen)
+// Module 19194 (NewMessageScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import router_utils from "router_utils" /* 1099 */;
@@ -27,9 +27,9 @@ import UserRowConstants from "UserRowConstants" /* 10846 */;
 import GroupPlusIcon from "GroupPlusIcon" /* 11107 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 11108 */;
 import ChatViewDefault from "ChatView" /* 11354 */;
-import NoResultsDefault from "NoResults" /* 13634 */;
-import useOnMessageSendDefault from "useOnMessageSend" /* 19182 */;
-import GroupDMRecipientLimitTitleDefault from "GroupDMRecipientLimitTitle" /* 19183 */;
+import NoResultsDefault from "NoResults" /* 13635 */;
+import useOnMessageSendDefault from "useOnMessageSend" /* 19195 */;
+import GroupDMRecipientLimitTitleDefault from "GroupDMRecipientLimitTitle" /* 19196 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -59,8 +59,8 @@ let str;
 let tmp2;
 const getGroupDMRecipientLimitDefault = tmp2(11787);
 const GroupDMNitroCapExperimentDefault = tmp2(11789);
-const NewMessageUserListDefault = tmp2(14149);
-const GroupDMNitroUpsellBannerDefault = tmp2(19120);
+const NewMessageUserListDefault = tmp2(14150);
+const GroupDMNitroUpsellBannerDefault = tmp2(19133);
 function isPrivateChannelMatch(arr, channel) {
   const recipients = channel.recipients;
   if (recipients.length !== arr.length) {
@@ -127,7 +127,7 @@ let obj = function _findMatchingPrivateChannelId() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c4;
@@ -436,7 +436,7 @@ export default function NewMessageScreen(navigation) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -475,7 +475,7 @@ export default function NewMessageScreen(navigation) {
               }
               tmp8(FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID);
               c3 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp17) {
             c3 = 3;
@@ -523,9 +523,9 @@ export default function NewMessageScreen(navigation) {
         tmp82 = new tmp8(obj);
         dispatch(obj2);
         return () => {
-          const obj2 = { type: "CHANNEL_DELETE", channel: { id: first(closure_1_2[17]).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID, guild_id: "a", parent_id: "start" } };
+          const obj2 = { type: "CHANNEL_DELETE", channel: { id: first(closure_1_2[17]).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID, guild_id: "Array", parent_id: "add" } };
           obj = FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID(closure_1_2[18]);
-          ({ id: first(closure_1_2[17]).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID, guild_id: "a", parent_id: "start" });
+          ({ id: first(closure_1_2[17]).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID, guild_id: "Array", parent_id: "add" });
           obj.dispatch(obj2);
         };
       }
@@ -599,7 +599,7 @@ export default function NewMessageScreen(navigation) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -651,7 +651,7 @@ export default function NewMessageScreen(navigation) {
               closure_1_5(items);
               closure_1_7(false);
               c4 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             } else {
               c3 = 1;
               c4 = 1;

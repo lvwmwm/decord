@@ -1,9 +1,9 @@
-// Module ID: 18995
-// Function ID: 18996
+// Module ID: 19008
+// Function ID: 19009
 // Name: GuildSettingsModalMembers
-// Dependencies: [32, 19, 17, 502, 5358, 5052, 5046, 5011, 5072, 1385, 9155, 1072, 21, 9215, 5140, 575, 1499, 10943, 6173, 5194, 1113, 10938, 1627, 504, 7503, 18996, 9111, 9996, 18997, 7630, 9180, 6957, 9154, 11, 5149, 7282, 7357, 1187, 8879, 5734, 2]
+// Dependencies: [32, 19, 17, 502, 5358, 5052, 5046, 5011, 5072, 1385, 9155, 1072, 21, 9215, 5140, 575, 1499, 10943, 6173, 5194, 1113, 10938, 1627, 504, 7503, 19009, 9111, 9996, 19010, 7630, 9180, 6957, 9154, 11, 5149, 7282, 7357, 1187, 8879, 5734, 2]
 
-// Module 18995 (GuildSettingsModalMembers)
+// Module 19008 (GuildSettingsModalMembers)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -128,7 +128,7 @@ const memoResult = react.memo(function GuildSettingsModalMembers(guildId) {
   let obj10;
   let obj12;
   let tmp33Result;
-  const f117046 = () => {
+  const f117117 = () => {
     const tmp = new _modDef9215((arg0) => {
       closure_1_10(arg0);
       closure_1_14(false);
@@ -200,9 +200,9 @@ const memoResult = react.memo(function GuildSettingsModalMembers(guildId) {
   const tmp16 = guildLoaded(sortedGuildRoles.useState(false), 2);
   first2 = tmp16[0];
   let closure_14 = tmp16[1];
-  const first3 = guildLoaded(sortedGuildRoles.useState(f117046), 2)[0];
+  const first3 = guildLoaded(sortedGuildRoles.useState(f117117), 2)[0];
   const items8 = [guildId, stateFromStoresArray, first, stateFromStores1, first1];
-  const tmp18 = guildLoaded(sortedGuildRoles.useState(f117046), 2);
+  const tmp18 = guildLoaded(sortedGuildRoles.useState(f117117), 2);
   const memo = sortedGuildRoles.useMemo(() => {
     function guildRoleIsFiltered(roles) {
       let tmp2 = null != stateFromStores1;

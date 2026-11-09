@@ -1,10 +1,10 @@
-// Module ID: 18775
-// Function ID: 18776
+// Module ID: 18788
+// Function ID: 18789
 // Name: useYouBarCoachmark
-// Dependencies: [32, 19, 5171, 4986, 1113, 4973, 1652, 16922, 1500, 504, 15891, 5901, 7641, 18776, 10076, 2]
+// Dependencies: [32, 19, 5171, 4986, 1113, 4973, 1652, 16933, 1500, 504, 15901, 5901, 7641, 18789, 10076, 2]
 // Exports: useYouBarCoachmark
 
-// Module 18775 (useYouBarCoachmark)
+// Module 18788 (useYouBarCoachmark)
 import dismissible_content from "dismissible_content" /* 4973 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4986 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;

@@ -1,10 +1,10 @@
-// Module ID: 19264
-// Function ID: 19265
+// Module ID: 19277
+// Function ID: 19278
 // Name: ChannelSettingsInstantInvites
-// Dependencies: [32, 19, 17, 8269, 4989, 1072, 21, 5140, 575, 1627, 504, 8268, 10927, 1187, 10945, 10946, 1113, 7271, 19265, 7287, 2]
+// Dependencies: [32, 19, 17, 8269, 4989, 1072, 21, 5140, 575, 1627, 504, 8268, 10927, 1187, 10945, 10946, 1113, 7271, 19278, 7287, 2]
 // Exports: default
 
-// Module 19264 (ChannelSettingsInstantInvites)
+// Module 19277 (ChannelSettingsInstantInvites)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -153,7 +153,7 @@ export default function ConnectedChannelSettingsInstantInvites() {
   const tmp19 = closure_9;
   if (memo1.length > 0) {
     const obj8 = { item: memo1[0], onMeasured: callback };
-    tmp19Result = tmp19(tmp2(19265), obj8);
+    tmp19Result = tmp19(tmp2(19278), obj8);
   }
   items8[1] = tmp19Result;
   tmp17Result = tmp17(tmp18, obj7);

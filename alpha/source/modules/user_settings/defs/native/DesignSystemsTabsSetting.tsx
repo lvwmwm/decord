@@ -1,9 +1,9 @@
-// Module ID: 18100
-// Function ID: 18101
+// Module ID: 18113
+// Function ID: 18114
 // Name: DesignSystemsTabsSetting
-// Dependencies: [8503, 1072, 11685, 18101, 2]
+// Dependencies: [8503, 1072, 11685, 18114, 2]
 
-// Module 18100 (DesignSystemsTabsSetting)
+// Module 18113 (DesignSystemsTabsSetting)
 import Constants from "Constants" /* 1072 */;
 import SettingsConstants from "SettingsConstants" /* 8503 */;
 import SettingBuilders from "SettingBuilders" /* 11685 */;

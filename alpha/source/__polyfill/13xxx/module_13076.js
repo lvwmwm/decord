@@ -48,7 +48,7 @@ const dimension = (arg0, fn, arg2) => {
   }
   return num;
 };
-const f104939 = (type) => {
+const f104980 = (type) => {
   let num;
   if (null === type) {
     num = 0;
@@ -57,13 +57,13 @@ const f104939 = (type) => {
   }
   return num;
 };
-const f1049402 = (type, arg1, type2) => {
+const f1049812 = (type, arg1, type2) => {
   if (null !== type) {
     if (type.type === tokenize.TYPE.Dimension) {
       const tmp7Result = tokenize;
       const consumeNumberResult = tmp7Result.consumeNumber(type.value, 0);
-      const obj3 = f104940;
-      if (null !== f104940) {
+      const obj3 = f104981;
+      if (null !== f104981) {
         const value = type.value;
         const index = value.indexOf("\\", consumeNumberResult);
         if (-1 !== index) {
@@ -143,32 +143,32 @@ const zero2 = (type, arg1, arg2) => {
 const length = ["unset", "initial", "inherit"];
 let closure_3 = ["calc(", "-moz-calc(", "-webkit-calc("];
 let obj = {
-  "ident-token": f104939,
-  "function-token": f104939,
-  "at-keyword-token": f104939,
-  "hash-token": f104939,
-  "string-token": f104939,
-  "bad-string-token": f104939,
-  "url-token": f104939,
-  "bad-url-token": f104939,
-  "delim-token": f104939,
-  "number-token": f104939,
-  "percentage-token": f104939,
-  "dimension-token": f104939,
-  "whitespace-token": f104939,
-  "CDO-token": f104939,
-  "CDC-token": f104939,
-  "colon-token": f104939,
-  "semicolon-token": f104939,
-  "comma-token": f104939,
-  "[-token": f104939,
-  "]-token": f104939,
-  "(-token": f104939,
-  ")-token": f104939,
-  "{-token": f104939,
-  "}-token": f104939,
-  string: f104939,
-  ident: f104939,
+  "ident-token": f104980,
+  "function-token": f104980,
+  "at-keyword-token": f104980,
+  "hash-token": f104980,
+  "string-token": f104980,
+  "bad-string-token": f104980,
+  "url-token": f104980,
+  "bad-url-token": f104980,
+  "delim-token": f104980,
+  "number-token": f104980,
+  "percentage-token": f104980,
+  "dimension-token": f104980,
+  "whitespace-token": f104980,
+  "CDO-token": f104980,
+  "CDC-token": f104980,
+  "colon-token": f104980,
+  "semicolon-token": f104980,
+  "comma-token": f104980,
+  "[-token": f104980,
+  "]-token": f104980,
+  "(-token": f104980,
+  ")-token": f104980,
+  "{-token": f104980,
+  "}-token": f104980,
+  string: f104980,
+  ident: f104980,
   "custom-ident": function customIdent(type) {
     if (null !== type) {
       const tmp13 = require;
@@ -475,7 +475,7 @@ const zero = zero2;
 closure_0 = { dpi: true, dpcm: true, dppx: true, x: true };
 closure_0 = { st: true };
 closure_0 = { s: true, ms: true };
-const f104940 = f1049402;
+const f104981 = f1049812;
 function percentage(type, arg1, arg2) {
   if (null !== type) {
     let num2;

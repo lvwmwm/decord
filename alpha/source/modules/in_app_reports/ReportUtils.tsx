@@ -137,7 +137,7 @@ obj = function _submitHeadlessReport() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -190,7 +190,7 @@ obj = function _submitHeadlessReport() {
           return obj;
         } else {
           c5 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp9) {
         c5 = 3;
@@ -339,7 +339,7 @@ function genSubmitData(version, name, arr, email_token) {
   if (str == null) {
     str = "en";
   }
-  let obj2 = { channel_id: "Array", message_id: "channel", stage_instance_id: "forEach", guild_id: "variant", guild_scheduled_event_id: "ip", user_id: "Button", email_token: "isArray", application_id: "isArray", entrypoint: "isArray", widget_id: "alignItems" };
+  let obj2 = { channel_id: "channelId", message_id: "diversity", stage_instance_id: "keys", guild_id: "clearTimeout", guild_scheduled_event_id: "fileBytes", user_id: "IconComponent", email_token: "flexDirection", application_id: "r", entrypoint: "description", widget_id: "flex" };
   const tmp = require;
   let tmp2 = dependencyMap;
   if (name.name !== MenuTypes.ReportNames.MESSAGE) {
@@ -494,7 +494,7 @@ export function submitReport(language, name, arr) {
       }
       let tmp14 = null;
       if (name.name === tmp4(8423).ModeratorReportNames.MESSAGE) {
-        let obj2 = { channel_id: "Array", message_id: "channel", guild_id: "t" };
+        let obj2 = { channel_id: "Array", message_id: "channel", guild_id: "find" };
         obj4 = { name: name.name, channel_id, message_id: id };
         ({ channel_id, id } = name.record);
         let merged = Object.assign(obj);

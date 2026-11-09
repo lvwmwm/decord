@@ -1,10 +1,10 @@
-// Module ID: 18677
-// Function ID: 18678
+// Module ID: 18690
+// Function ID: 18691
 // Name: NsfwGateGuildSidebar
-// Dependencies: [19, 17, 5052, 5011, 1385, 7448, 1072, 21, 5140, 575, 504, 1252, 7449, 18515, 1187, 6778, 1113, 2185, 2]
+// Dependencies: [19, 17, 5052, 5011, 1385, 7448, 1072, 21, 5140, 575, 504, 1252, 7449, 18528, 1187, 6778, 1113, 2185, 2]
 // Exports: default
 
-// Module 18677 (NsfwGateGuildSidebar)
+// Module 18690 (NsfwGateGuildSidebar)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;

@@ -1,10 +1,10 @@
-// Module ID: 17143
-// Function ID: 17144
+// Module ID: 17154
+// Function ID: 17155
 // Name: UserSettingsFamilyCenterParentalControls
-// Dependencies: [19, 17, 1072, 7792, 21, 5140, 575, 1499, 7387, 7412, 9069, 7226, 17104, 17122, 1113, 2664, 9902, 17144, 17145, 9059, 7793, 7355, 17146, 9294, 14435, 2]
+// Dependencies: [19, 17, 1072, 7792, 21, 5140, 575, 1499, 7387, 7412, 9069, 7226, 17115, 17133, 1113, 2664, 9902, 17155, 17156, 9059, 7793, 7355, 17157, 9294, 14436, 2]
 // Exports: default
 
-// Module 17143 (UserSettingsFamilyCenterParentalControls)
+// Module 17154 (UserSettingsFamilyCenterParentalControls)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl3 from "intl" /* 1113 */;
@@ -85,13 +85,13 @@ export default function FamilyCenterParentalControlsSettings() {
     autoOpenCreate = params2.autoOpenCreate;
   }
   dependencyMap = tmp12;
-  const tmp2Result3 = stackNavigation(17104);
+  const tmp2Result3 = stackNavigation(17115);
   const selectedTeenUser = tmp2Result3.useSelectedTeenUser();
   let id;
   if (selectedTeenUser != null) {
     id = selectedTeenUser.id;
   }
-  const tmp15 = selectedSubPage(17122)();
+  const tmp15 = selectedSubPage(17133)();
   let closure_4 = tmp15;
   ref = id.useRef(false);
   const items = [true === autoOpenCreate, id, stackNavigation];
@@ -137,10 +137,10 @@ export default function FamilyCenterParentalControlsSettings() {
     stackNavigation.setOptions({ title: "Array", headerRight: "flexDirection" });
   }, items1);
   const SCREEN_TIME_CONTROLS = FamilyCenterSubPages.SCREEN_TIME_CONTROLS;
-  const obj2 = { label: intl.string(stackNavigation(1113).t["+o1pDZ"]), id: FamilyCenterSubPages.CONTENT_AND_SOCIAL, page: closure_8(selectedSubPage(17144), {}) };
+  const obj2 = { label: intl.string(stackNavigation(1113).t["+o1pDZ"]), id: FamilyCenterSubPages.CONTENT_AND_SOCIAL, page: closure_8(selectedSubPage(17155), {}) };
   intl = tmp2(1113).intl;
   const items2 = [obj2, ];
-  const obj3 = { label: intl2.string(stackNavigation(1113).t.OAuOHD), id: FamilyCenterSubPages.DATA_AND_PRIVACY, page: closure_8(selectedSubPage(17145), {}) };
+  const obj3 = { label: intl2.string(stackNavigation(1113).t.OAuOHD), id: FamilyCenterSubPages.DATA_AND_PRIVACY, page: closure_8(selectedSubPage(17156), {}) };
   intl2 = tmp2(1113).intl;
   items2[1] = obj3;
   const useSegmentedControlState = stackNavigation(9059).useSegmentedControlState;
@@ -159,7 +159,7 @@ export default function FamilyCenterParentalControlsSettings() {
   if (selectedSubPage === SCREEN_TIME_CONTROLS) {
     const obj5 = { value: analyticsLocations, children: closure_8(ref, obj6) };
     obj6 = { style: tmp.container, children: closure_8(SafeAreaPaddingView, obj7) };
-    obj7 = { bottom: true, style: tmp.content, children: closure_8(selectedSubPage(17146), obj8) };
+    obj7 = { bottom: true, style: tmp.content, children: closure_8(selectedSubPage(17157), obj8) };
     SafeAreaPaddingView = tmp2(7355).SafeAreaPaddingView;
     obj9 = obj5;
     obj8 = { readOnly: tmp15 };
@@ -171,7 +171,7 @@ export default function FamilyCenterParentalControlsSettings() {
     items3 = [closure_8(closure_4, obj11), ];
     const obj13 = { style: tmp.container, children: closure_8(ref, obj14) };
     obj14 = { children: closure_8(SafeAreaPaddingView2, obj15) };
-    obj15 = { bottom: true, style: tmp.content, children: closure_8(stackNavigation(14435).SegmentedControlPages, obj16) };
+    obj15 = { bottom: true, style: tmp.content, children: closure_8(stackNavigation(14436).SegmentedControlPages, obj16) };
     SafeAreaPaddingView2 = tmp2(7355).SafeAreaPaddingView;
     obj16 = { state: segmentedControlState };
     items3[1] = closure_8(closure_4, obj13);

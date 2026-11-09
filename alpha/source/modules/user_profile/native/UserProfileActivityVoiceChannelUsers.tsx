@@ -1,10 +1,10 @@
-// Module ID: 15116
-// Function ID: 15117
+// Module ID: 15117
+// Function ID: 15118
 // Name: UserProfileActivityVoiceChannelUsers
 // Dependencies: [19, 5890, 21, 6908, 504, 7038, 6173, 1187, 11553, 1113, 2]
 // Exports: default
 
-// Module 15116 (UserProfileActivityVoiceChannelUsers)
+// Module 15117 (UserProfileActivityVoiceChannelUsers)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
 import NicknameUtilsDefault from "NicknameUtils" /* 6173 */;

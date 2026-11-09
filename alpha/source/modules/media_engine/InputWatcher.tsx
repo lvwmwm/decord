@@ -1,9 +1,9 @@
-// Module ID: 16262
-// Function ID: 16263
+// Module ID: 16272
+// Function ID: 16273
 // Name: InputWatcher
-// Dependencies: [32, 5, 6770, 4, 4984, 5918, 1357, 16200, 4951, 6994, 572, 2]
+// Dependencies: [32, 5, 6770, 4, 4984, 5918, 1357, 16210, 4951, 6994, 572, 2]
 
-// Module 16262 (InputWatcher)
+// Module 16272 (InputWatcher)
 import logger_Logger from "logger/Logger" /* 4 */;
 import Constants from "Constants" /* 6770 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -36,7 +36,7 @@ class InputWatcher {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let closure_2;
@@ -136,7 +136,7 @@ class InputWatcher {
             _Promise.dispatch(obj);
           }
           c5 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp42) {
           closure_2 = tmp42;
           if (0 === osVolume) {
@@ -170,7 +170,7 @@ class InputWatcher {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -208,7 +208,7 @@ class InputWatcher {
             const obj2 = c1(inputDetected[10]);
             obj2.dispatch(obj6);
             inputDetected = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           } catch (tmp11) {
             inputDetected = 3;
             throw tmp11;

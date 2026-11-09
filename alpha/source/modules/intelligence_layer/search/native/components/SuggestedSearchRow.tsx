@@ -1,19 +1,19 @@
-// Module ID: 19046
-// Function ID: 19047
+// Module ID: 19059
+// Function ID: 19060
 // Name: SuggestedSearchRow
-// Dependencies: [19, 17, 14121, 21, 5140, 575, 14143, 14141, 14144, 14119, 14160, 5751, 19047, 7283, 2]
+// Dependencies: [19, 17, 14122, 21, 5140, 575, 14144, 14142, 14145, 14120, 14161, 5751, 19060, 7283, 2]
 
-// Module 19046 (SuggestedSearchRow)
+// Module 19059 (SuggestedSearchRow)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 14119 */;
-import SearchSessionAnalyticsManagerDefault from "SearchSessionAnalyticsManager" /* 14141 */;
-import SmartSearchAnalyticsManagerDefault from "SmartSearchAnalyticsManager" /* 14143 */;
-import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 14144 */;
-import SuggestedSearchActionCreators from "SuggestedSearchActionCreators" /* 14160 */;
+import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 14120 */;
+import SearchSessionAnalyticsManagerDefault from "SearchSessionAnalyticsManager" /* 14142 */;
+import SmartSearchAnalyticsManagerDefault from "SmartSearchAnalyticsManager" /* 14144 */;
+import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 14145 */;
+import SuggestedSearchActionCreators from "SuggestedSearchActionCreators" /* 14161 */;
 import react from "react" /* 19 */;
-import SmartSearchConstants from "SmartSearchConstants" /* 14121 */;
+import SmartSearchConstants from "SmartSearchConstants" /* 14122 */;
 import createStyles from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 

@@ -1,20 +1,20 @@
-// Module ID: 19901
-// Function ID: 19902
+// Module ID: 19914
+// Function ID: 19915
 // Name: JankNavigationReporter
-// Dependencies: [5315, 18386, 18390, 18391, 5317, 2]
+// Dependencies: [5315, 18399, 18403, 18404, 5317, 2]
 
-// Module 19901 (JankNavigationReporter)
+// Module 19914 (JankNavigationReporter)
 import RootNavigationRef from "RootNavigationRef" /* 5315 */;
-import getJankScreenName from "getJankScreenName" /* 18386 */;
-import react_nativeDefault from "react-native" /* 18390 */;
-import getJankSurfaceName from "getJankSurfaceName" /* 18391 */;
+import getJankScreenName from "getJankScreenName" /* 18399 */;
+import react_nativeDefault from "react-native" /* 18403 */;
+import getJankSurfaceName from "getJankSurfaceName" /* 18404 */;
 import size from "module_2" /* 2 */;
 
 const getJankScreenNameDefault = getJankScreenName;
 
 class JankNavigationReporter {
   constructor() {
-    return Object.assign({ _isAttached: false, _routeKeyAtDispatch: "Boolean", _screensBeforeDispatch: "alignItems" });
+    return Object.assign({ _isAttached: false, _routeKeyAtDispatch: "Boolean", _screensBeforeDispatch: "channelId" });
   }
   attach() {
     const self = this;
@@ -116,4 +116,4 @@ const prototype = JankNavigationReporter.prototype;
 const prototype2 = JankNavigationReporter.prototype;
 let result = size.fileFinishedImporting("modules/jank_stats/native/JankNavigationReporter.native.tsx");
 
-export default Object.assign({ _isAttached: false, _routeKeyAtDispatch: "Boolean", _screensBeforeDispatch: "alignItems" });
+export default Object.assign({ _isAttached: false, _routeKeyAtDispatch: "Boolean", _screensBeforeDispatch: "channelId" });

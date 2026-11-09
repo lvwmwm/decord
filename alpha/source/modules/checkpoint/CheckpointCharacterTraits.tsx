@@ -21,8 +21,8 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require;
 
-const f90273 = (item) => typeof item === "number";
-const f902742 = (arg0) => set1.has(arg0);
+const f90316 = (item) => typeof item === "number";
+const f903172 = (arg0) => set1.has(arg0);
 function getVisibleTraitRarities(item, c4) {
   let c0;
   let tmp = null;
@@ -110,7 +110,7 @@ function getVisibleTraitRarities(item, c4) {
 }
 let set = new Set(Object.values(CheckpointTraitRarity.CheckpointTraitRarity));
 const set1 = new Set(Object.values(CheckpointTrait.CheckpointTrait));
-const f90274 = f902742;
+const f90317 = f903172;
 let obj = {};
 obj[CheckpointTrait.CheckpointTrait.FACE] = CheckpointTraitConfig.CHECKPOINT_FACE_OPTION_TO_RARITY;
 obj[CheckpointTrait.CheckpointTrait.OUTFIT] = CheckpointTraitConfig.CHECKPOINT_OUTFIT_OPTION_TO_RARITY;
@@ -130,25 +130,25 @@ obj2[CheckpointTrait.CheckpointTrait.BASE] = CheckpointCharacterAssets.CHARACTER
 const obj3 = {};
 const FACE = CheckpointTrait.CheckpointTrait.FACE;
 let values = Object.values(CheckpointCharacterFace.CheckpointCharacterFace);
-obj3[FACE] = values.filter(f90273);
+obj3[FACE] = values.filter(f90316);
 const OUTFIT = CheckpointTrait.CheckpointTrait.OUTFIT;
 const values8 = Object.values(CheckpointCharacterOutfit.CheckpointCharacterOutfit);
-obj3[OUTFIT] = values8.filter(f90273);
+obj3[OUTFIT] = values8.filter(f90316);
 const HAT = CheckpointTrait.CheckpointTrait.HAT;
 const values9 = Object.values(CheckpointCharacterHat.CheckpointCharacterHat);
-obj3[HAT] = values9.filter(f90273);
+obj3[HAT] = values9.filter(f90316);
 const SHOES = CheckpointTrait.CheckpointTrait.SHOES;
 const values10 = Object.values(CheckpointCharacterShoes.CheckpointCharacterShoes);
-obj3[SHOES] = values10.filter(f90273);
+obj3[SHOES] = values10.filter(f90316);
 const WEARABLE = CheckpointTrait.CheckpointTrait.WEARABLE;
 const values11 = Object.values(CheckpointCharacterWearable.CheckpointCharacterWearable);
-obj3[WEARABLE] = values11.filter(f90273);
+obj3[WEARABLE] = values11.filter(f90316);
 const AURA = CheckpointTrait.CheckpointTrait.AURA;
 const values12 = Object.values(CheckpointCharacterAura.CheckpointCharacterAura);
-obj3[AURA] = values12.filter(f90273);
+obj3[AURA] = values12.filter(f90316);
 const BASE = CheckpointTrait.CheckpointTrait.BASE;
 const values13 = Object.values(CheckpointCharacterBase.CheckpointCharacterBase);
-obj3[BASE] = values13.filter(f90273);
+obj3[BASE] = values13.filter(f90316);
 const obj4 = {};
 obj4[CheckpointTrait.CheckpointTrait.OUTFIT] = CheckpointCharacterOutfit.CheckpointCharacterOutfit.NONE;
 obj4[CheckpointTrait.CheckpointTrait.HAT] = CheckpointCharacterHat.CheckpointCharacterHat.NONE;
@@ -230,7 +230,7 @@ obj5[CheckpointCharacterOutfit.CheckpointCharacterOutfit.MAGICAL_FROST] = Checkp
 obj5[CheckpointCharacterOutfit.CheckpointCharacterOutfit.MAGICAL_CITRINE] = CheckpointCharacterOutfit.CheckpointCharacterOutfit.MAGICAL_DEFAULT;
 let closure_8 = {};
 const values14 = Object.values(CheckpointCharacterOutfit.CheckpointCharacterOutfit);
-const found = values14.filter(f90273);
+const found = values14.filter(f90316);
 const item = found.forEach((item) => {
   if (null != obj5[item]) {
     let items = closure_8[tmp];
@@ -250,7 +250,7 @@ export function getCharacterLayerOrdering(wearable) {
   const hasItem = CHECKPOINT_WEARABLE_LAYER_BACKGROUND.has(wearable);
   const tmp2 = CheckpointTraitConfig;
   const arr = hasItem ? tmp2.CHECKPOINT_LAYER_BACKGROUND_WEARABLE_ORDERING : tmp2.CHECKPOINT_LAYER_DEFAULT_ORDERING;
-  return arr.filter(f90274);
+  return arr.filter(f90317);
 }
 export const CHECKPOINT_TRAIT_TO_OPTION_ASSETS = obj2;
 export const CHECKPOINT_TRAIT_TO_OPTION_IDS = obj3;
@@ -266,7 +266,7 @@ export function getOutfitDefaultOptionId(character) {
 export function getTraitOptionRarity(item10034, item100342) {
   let tmp2;
   if (null != obj[item10034][item10034]) {
-    if (typeof f90274 === "function") {
+    if (typeof f90317 === "function") {
       if (closure_131_0.has(obj[item10034][item10034])) {
         tmp2 = tmp;
       }
@@ -291,7 +291,7 @@ export function isTraitSelectionLocked(item, arg1, savedCharacter) {
     let tmp8;
     let tmp4;
     if (null != obj[item][arg1]) {
-      if (typeof f90274 === "function") {
+      if (typeof f90317 === "function") {
         if (closure_131_0.has(obj[item][arg1])) {
           tmp4 = tmp11;
         }

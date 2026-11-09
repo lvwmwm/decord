@@ -1,7 +1,7 @@
 // Module ID: 5899
 // Function ID: 5900
 // Name: RTCConnection
-// Dependencies: [5, 5900, 5910, 5911, 5912, 5913, 502, 4989, 5011, 2130, 5893, 5916, 5992, 1385, 1072, 5993, 5994, 5897, 5995, 559, 5901, 5921, 1242, 3, 5996, 5997, 1266, 5999, 6008, 6002, 6009, 1477, 1377, 4951, 1378, 572, 2129, 1403, 6011, 14, 6012, 6013, 6014, 6015, 6016, 6017, 6018, 6019, 6020, 1252, 5146, 6021, 5965, 6022, 6024, 6037, 6033, 6038, 6039, 6040, 2171, 6041, 6043, 6044, 6045, 5918, 6046, 6078, 6079, 6080, 6081, 6083, 6086, 6088, 6089, 6090, 1113, 551, 15959, 1251, 2]
+// Dependencies: [5, 5900, 5910, 5911, 5912, 5913, 502, 4989, 5011, 2130, 5893, 5916, 5992, 1385, 1072, 5993, 5994, 5897, 5995, 559, 5901, 5921, 1242, 3, 5996, 5997, 1266, 5999, 6008, 6002, 6009, 1477, 1377, 4951, 1378, 572, 2129, 1403, 6011, 14, 6012, 6013, 6014, 6015, 6016, 6017, 6018, 6019, 6020, 1252, 5146, 6021, 5965, 6022, 6024, 6037, 6033, 6038, 6039, 6040, 2171, 6041, 6043, 6044, 6045, 5918, 6046, 6078, 6079, 6080, 6081, 6083, 6086, 6088, 6089, 6090, 1113, 551, 15969, 1251, 2]
 
 // Module 5899 (RTCConnection)
 import LoggerDefault from "Logger" /* 3 */;
@@ -43,7 +43,7 @@ import ThermalUtilsDefault from "ThermalUtils" /* 6086 */;
 import BandwidthEstimationExperimentDefault from "BandwidthEstimationExperiment" /* 6088 */;
 import DaveMessageValidator from "DaveMessageValidator" /* 6089 */;
 import AlertActionCreatorsDefault from "AlertActionCreators" /* 6090 */;
-import E2eLatencyMeasurementExperiment2 from "E2eLatencyMeasurementExperiment" /* 15959 */;
+import E2eLatencyMeasurementExperiment2 from "E2eLatencyMeasurementExperiment" /* 15969 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import DeviceFrecencyStore from "DeviceFrecencyStore" /* 5900 */;
 import MediaEngineStatsStore from "MediaEngineStatsStore" /* 5910 */;
@@ -2035,7 +2035,7 @@ class RTCConnection extends TypedEventEmitter {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -2069,7 +2069,7 @@ class RTCConnection extends TypedEventEmitter {
               const result = setAvx512EntropyHistogram(obj.getIsAvx512EntropyHistogramEnabled("RTCConnection"));
             }
             c2 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp15) {
           c2 = 3;

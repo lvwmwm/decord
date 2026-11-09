@@ -319,7 +319,7 @@ class SvgCss {
     let fallback;
     let onError;
     let override;
-    const f104855 = () => {
+    const f104896 = () => {
       let parsed = null;
       if (null !== xml) {
         obj = inlineStyles2;
@@ -335,8 +335,8 @@ class SvgCss {
     try {
       const tmp = closure_8;
       const items = [xml];
-      obj = { ast: closure_8(f104855, items), override };
-      closure_8(f104855, items);
+      obj = { ast: closure_8(f104896, items), override };
+      closure_8(f104896, items);
       const SvgAst = xml(8101).SvgAst;
       const tmp3 = jsx;
       if (!override) {
@@ -389,7 +389,7 @@ obj2 = {
     return arr;
   },
   existsOne(arg0, arr) {
-    const f104856 = (children) => {
+    const f104897 = (children) => {
       let tmp = typeof children === "object";
       if (typeof children === "object") {
         let someResult = closure_0(children);
@@ -397,14 +397,14 @@ obj2 = {
         if (!someResult) {
           children = children.children;
           closure_0 = tmp3;
-          someResult = children.some(f104856);
+          someResult = children.some(f104897);
         }
         tmp = someResult;
       }
       return tmp;
     };
     let closure_0 = arg0;
-    return arr.some(f104856);
+    return arr.some(f104897);
   },
   getSiblings(parent) {
     parent = typeof parent === "object";
@@ -515,7 +515,7 @@ let closure_24 = ["color", "fill", "floodColor", "lightingColor", "stopColor", "
 function resolveElementVariables(item10064, map) {
   let closure_1 = map;
   return closure_24.forEach((item) => {
-    const f104854 = (arg0, arg1, str) => {
+    const f104895 = (arg0, arg1, str) => {
       let str2;
       const value = closure_0.get(arg1);
       if (undefined !== value) {
@@ -527,7 +527,7 @@ function resolveElementVariables(item10064, map) {
             const obj2 = map(closure_2_2[9]);
             str5 = obj2.generate(value);
           }
-          str4 = str5.replace(/var\((--[^,)]+)(?:,\s*([^)]+))?\)/g, f104854);
+          str4 = str5.replace(/var\((--[^,)]+)(?:,\s*([^)]+))?\)/g, f104895);
         }
         str2 = str4;
       } else {
@@ -541,7 +541,7 @@ function resolveElementVariables(item10064, map) {
               obj = map(closure_2_2[9]);
               str3 = obj.generate(str);
             }
-            str = str3.replace(/var\((--[^,)]+)(?:,\s*([^)]+))?\)/g, f104854);
+            str = str3.replace(/var\((--[^,)]+)(?:,\s*([^)]+))?\)/g, f104895);
           }
           str2 = str;
         }
@@ -565,7 +565,7 @@ function resolveElementVariables(item10064, map) {
           let obj2 = _modDef13040;
           str3 = obj2.generate(obj);
         }
-        str2 = str3.replace(/var\((--[^,)]+)(?:,\s*([^)]+))?\)/g, f104854);
+        str2 = str3.replace(/var\((--[^,)]+)(?:,\s*([^)]+))?\)/g, f104895);
       }
       props[item] = str2;
     }
@@ -822,7 +822,7 @@ closure_1 = _asyncToGenerator(async function(arg0) {
       } else if (arg0 === 2) {
         return { value, done: true };
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -881,7 +881,7 @@ closure_1 = _asyncToGenerator(async function(arg0) {
           }
         }
         c9 = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp21) {
         closure_7 = tmp21;
         if (0 === c6) {

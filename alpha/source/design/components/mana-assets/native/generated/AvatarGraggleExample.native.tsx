@@ -1,26 +1,26 @@
-// Module ID: 20301
-// Function ID: 20302
+// Module ID: 20314
+// Function ID: 20315
 // Name: AvatarGraggleExample
-// Dependencies: [19, 21, 20302, 20303, 20304, 7135, 5842, 2]
+// Dependencies: [19, 21, 20315, 20316, 20317, 7135, 5842, 2]
 // Exports: AvatarGraggleExample
 
-// Module 20301 (AvatarGraggleExample)
+// Module 20314 (AvatarGraggleExample)
 import Fragment from "Fragment" /* 21 */;
 import react_native from "react-native" /* 7135 */;
-import _modDef20302 from "module_20302" /* 20302 */;
-import _modDef20303 from "module_20303" /* 20303 */;
-import _modDef20304 from "module_20304" /* 20304 */;
+import _modDef20315 from "module_20315" /* 20315 */;
+import _modDef20316 from "module_20316" /* 20316 */;
+import _modDef20317 from "module_20317" /* 20317 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef20302 };
+let obj2 = { uri: _modDef20315 };
 obj[1] = obj2;
-let obj3 = { uri: _modDef20303 };
+let obj3 = { uri: _modDef20316 };
 obj[2] = obj3;
-obj[3] = { uri: _modDef20304 };
-({ uri: _modDef20304 });
+obj[3] = { uri: _modDef20317 };
+({ uri: _modDef20317 });
 let size = size_mod;
 const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/AvatarGraggleExample.native.tsx");
 

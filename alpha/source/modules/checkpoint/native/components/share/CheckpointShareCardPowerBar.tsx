@@ -1,10 +1,10 @@
-// Module ID: 13681
-// Function ID: 13682
+// Module ID: 13682
+// Function ID: 13683
 // Name: CheckpointShareCardPowerBar
-// Dependencies: [19, 17, 6199, 21, 5140, 575, 13679, 5724, 5751, 8101, 2]
+// Dependencies: [19, 17, 6199, 21, 5140, 575, 13680, 5724, 5751, 8101, 2]
 // Exports: default
 
-// Module 13681 (CheckpointShareCardPowerBar)
+// Module 13682 (CheckpointShareCardPowerBar)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import CheckpointConstants from "CheckpointConstants" /* 6199 */;
@@ -48,7 +48,7 @@ export default function CheckpointShareCardPowerBar(stats) {
   let items2;
   stats = stats.stats;
   const tmp = closure_9();
-  const tertiaryBackgroundColor = react.useContext(stats(13679).CheckpointShareCardColorsContext).tertiaryBackgroundColor;
+  const tertiaryBackgroundColor = react.useContext(stats(13680).CheckpointShareCardColorsContext).tertiaryBackgroundColor;
   let obj = stats(5724);
   importDefault = obj.useToken(nativeDefault.colors.BLACK);
   let obj2 = { style: items, children: items2 };

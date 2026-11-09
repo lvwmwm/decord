@@ -1,9 +1,9 @@
-// Module ID: 15469
-// Function ID: 15470
+// Module ID: 15479
+// Function ID: 15480
 // Name: IconButton/IconButton
 // Dependencies: [19, 21, 5140, 575, 6833, 7043, 1187, 2]
 
-// Module 15469 (IconButton/IconButton)
+// Module 15479 (IconButton/IconButton)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import LegacyTokens from "LegacyTokens" /* 6833 */;

@@ -1,9 +1,9 @@
-// Module ID: 18121
-// Function ID: 18122
+// Module ID: 18134
+// Function ID: 18135
 // Name: DesignSystemPileSetting
-// Dependencies: [8503, 1072, 11685, 18122, 2]
+// Dependencies: [8503, 1072, 11685, 18135, 2]
 
-// Module 18121 (DesignSystemPileSetting)
+// Module 18134 (DesignSystemPileSetting)
 import Constants from "Constants" /* 1072 */;
 import SettingsConstants from "SettingsConstants" /* 8503 */;
 import SettingBuilders from "SettingBuilders" /* 11685 */;

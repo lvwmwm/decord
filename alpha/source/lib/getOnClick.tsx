@@ -1,7 +1,7 @@
 // Module ID: 9024
 // Function ID: 9025
 // Name: getOnClick
-// Dependencies: [32, 5, 2162, 6910, 7470, 502, 5052, 5011, 5874, 6194, 5043, 5171, 6827, 1072, 1074, 7471, 572, 5875, 9025, 9046, 2118, 6957, 7485, 9041, 5873, 5877, 7910, 5830, 1252, 13939, 11850, 14988, 11854, 7911, 14992, 11708, 10788, 9764, 1378, 9769, 6841, 14993, 7795, 5889, 5778, 8782, 11775, 2]
+// Dependencies: [32, 5, 2162, 6910, 7470, 502, 5052, 5011, 5874, 6194, 5043, 5171, 6827, 1072, 1074, 7471, 572, 5875, 9025, 9046, 2118, 6957, 7485, 9041, 5873, 5877, 7910, 5830, 1252, 13940, 11850, 14989, 11854, 7911, 14993, 11708, 10788, 9764, 1378, 9769, 6841, 14994, 7795, 5889, 5778, 8782, 11775, 2]
 // Exports: default
 
 // Module 9024 (getOnClick)
@@ -71,7 +71,7 @@ let obj = function _openInviteModal() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -99,7 +99,7 @@ let obj = function _openInviteModal() {
             return { value, done: true };
           } else {
             c2 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp8) {
           c2 = 3;
@@ -128,7 +128,7 @@ obj = function _handleInviteCodedLink() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -254,7 +254,7 @@ obj = function _handleInviteCodedLink() {
             return { value, done: true };
           }
           c7 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp63) {
           c7 = 3;
           throw tmp63;
@@ -414,7 +414,7 @@ export default function getOnClick(assetURL) {
         }
         [closure_129_0, closure_129_1] = _undefined.code.split("-");
         _slicedToArray(_undefined.code.split("-"), 2);
-        const promise = asyncRequire(14992, dependencyMap.paths);
+        const promise = asyncRequire(14993, dependencyMap.paths);
         promise.then((openGuildProductLink) => {
           openGuildProductLink.openGuildProductLink(closure_1_0, closure_1_1);
         });

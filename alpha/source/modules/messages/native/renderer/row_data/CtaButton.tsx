@@ -1,15 +1,15 @@
-// Module ID: 15427
-// Function ID: 15428
+// Module ID: 15437
+// Function ID: 15438
 // Name: CtaButton
-// Dependencies: [7528, 13581, 6781, 1113, 13583, 3348, 2]
+// Dependencies: [7528, 13582, 6781, 1113, 13584, 3348, 2]
 // Exports: createCtaButtons
 
-// Module 15427 (CtaButton)
+// Module 15437 (CtaButton)
 import intl5 from "intl" /* 1113 */;
 import _modDef3348 from "module_3348" /* 3348 */;
 import AgeVerificationUtils from "AgeVerificationUtils" /* 6781 */;
-import CtaButtonUtils from "CtaButtonUtils" /* 13581 */;
-import AgeVerificationSystemNotificationUtils from "AgeVerificationSystemNotificationUtils" /* 13583 */;
+import CtaButtonUtils from "CtaButtonUtils" /* 13582 */;
+import AgeVerificationSystemNotificationUtils from "AgeVerificationSystemNotificationUtils" /* 13584 */;
 import ExplicitMediaStore from "ExplicitMediaStore" /* 7528 */;
 import size from "module_2" /* 2 */;
 
@@ -34,7 +34,7 @@ export function createCtaButtons(id, channel_id, arg2) {
     ({ reportFpTextColor: obj10.textColor, reportFpBackgroundColor: obj10.backgroundColor } = arg2);
     prop = undefined;
     if (ExplicitMediaStore.canSubmitFpReport(id)) {
-      prop = tmp(13581).CtaButtonType.MARK_AS_FALSE_POSITIVE;
+      prop = tmp(13582).CtaButtonType.MARK_AS_FALSE_POSITIVE;
     }
     return { ctaButton: obj3 };
   } else if (CtaButtonUtils.CtaButtonType.AGE_VERIFICATION_RETRY === ctaButtonType) {
@@ -47,7 +47,7 @@ export function createCtaButtons(id, channel_id, arg2) {
     const obj7 = { text: string(result ? t.DVywUB : t["/nicWo"]), textColor: null, backgroundColor: null, callback: prop1 };
     prop1 = undefined;
     if (needsAgeVerificationResult) {
-      prop1 = tmp(13581).CtaButtonType.AGE_VERIFICATION_RETRY;
+      prop1 = tmp(13582).CtaButtonType.AGE_VERIFICATION_RETRY;
     }
     const obj8 = { ctaButton: obj7, secondaryCtaButton: tmp7 };
     tmp7 = undefined;
@@ -58,7 +58,7 @@ export function createCtaButtons(id, channel_id, arg2) {
       ({ reportFpTextColor: obj9.textColor, reportFpBackgroundColor: obj9.backgroundColor } = arg2);
       prop2 = undefined;
       if (needsAgeVerificationResult) {
-        prop2 = tmp(13581).CtaButtonType.AGE_VERIFICATION_MANUAL_REVIEW;
+        prop2 = tmp(13582).CtaButtonType.AGE_VERIFICATION_MANUAL_REVIEW;
       }
       tmp7 = obj11;
     }

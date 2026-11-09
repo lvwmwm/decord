@@ -1,9 +1,9 @@
-// Module ID: 14278
-// Function ID: 14279
+// Module ID: 14279
+// Function ID: 14280
 // Name: ChatInputGuardReadonly
-// Dependencies: [19, 4993, 4989, 5070, 5072, 6897, 5082, 1385, 13023, 1072, 21, 14069, 504, 1380, 1113, 5776, 5889, 1099, 11, 14259, 2]
+// Dependencies: [19, 4993, 4989, 5070, 5072, 6897, 5082, 1385, 13023, 1072, 21, 14070, 504, 1380, 1113, 5776, 5889, 1099, 11, 14260, 2]
 
-// Module 14278 (ChatInputGuardReadonly)
+// Module 14279 (ChatInputGuardReadonly)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import Fragment from "Fragment" /* 21 */;
 import router_utils from "router_utils" /* 1099 */;

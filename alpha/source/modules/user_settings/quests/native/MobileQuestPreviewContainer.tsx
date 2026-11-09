@@ -1,10 +1,10 @@
-// Module ID: 17459
-// Function ID: 17460
+// Module ID: 17470
+// Function ID: 17471
 // Name: MobileQuestPreviewContainer
 // Dependencies: [17, 21, 5140, 575, 5751, 2]
 // Exports: default
 
-// Module 17459 (MobileQuestPreviewContainer)
+// Module 17470 (MobileQuestPreviewContainer)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Text_Text from "Text/Text" /* 5751 */;

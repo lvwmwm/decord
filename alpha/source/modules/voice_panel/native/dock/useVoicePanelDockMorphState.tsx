@@ -1,10 +1,10 @@
-// Module ID: 19550
-// Function ID: 19551
+// Module ID: 19563
+// Function ID: 19564
 // Name: useVoicePanelDockMorphState
 // Dependencies: [19, 11363, 11381, 1652, 5761, 11389, 5370, 2]
 // Exports: default
 
-// Module 19550 (useVoicePanelDockMorphState)
+// Module 19563 (useVoicePanelDockMorphState)
 import spring_spring from "spring/spring" /* 5761 */;
 import VoicePanelConstants from "VoicePanelConstants" /* 11363 */;
 import VoicePanelSheetMorph from "VoicePanelSheetMorph" /* 11389 */;

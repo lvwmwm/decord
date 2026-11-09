@@ -1,10 +1,10 @@
-// Module ID: 17525
-// Function ID: 17526
+// Module ID: 17536
+// Function ID: 17537
 // Name: UserSettingsGuildRoleSubscriptionsCancel
-// Dependencies: [5, 32, 19, 17, 2176, 21, 5140, 575, 17526, 2166, 1113, 7020, 1187, 5751, 17518, 5842, 17534, 7387, 7412, 10032, 6091, 6589, 5836, 4960, 5758, 17522, 17513, 17535, 17536, 504, 2]
+// Dependencies: [5, 32, 19, 17, 2176, 21, 5140, 575, 17537, 2166, 1113, 7020, 1187, 5751, 17529, 5842, 17545, 7387, 7412, 10032, 6091, 6589, 5836, 4960, 5758, 17533, 17524, 17546, 17547, 504, 2]
 // Exports: default
 
-// Module 17525 (UserSettingsGuildRoleSubscriptionsCancel)
+// Module 17536 (UserSettingsGuildRoleSubscriptionsCancel)
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
@@ -12,12 +12,12 @@ import _modDef2166 from "module_2166" /* 2166 */;
 import Text_Text from "Text/Text" /* 5751 */;
 import FastImageDefault from "FastImage" /* 5842 */;
 import GuildIconDefault from "GuildIcon" /* 7020 */;
-import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 17513 */;
-import FormSeparatorDefault from "FormSeparator" /* 17518 */;
-import useManageSubscriptionCardDataDefault from "useManageSubscriptionCardData" /* 17522 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 17526 */;
-import AssetRegistryDefault from "AssetRegistry" /* 17534 */;
-import GuildRoleSubscriptionCardAll from "GuildRoleSubscriptionCard" /* 17536 */;
+import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 17524 */;
+import FormSeparatorDefault from "FormSeparator" /* 17529 */;
+import useManageSubscriptionCardDataDefault from "useManageSubscriptionCardData" /* 17533 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 17537 */;
+import AssetRegistryDefault from "AssetRegistry" /* 17545 */;
+import GuildRoleSubscriptionCardAll from "GuildRoleSubscriptionCard" /* 17547 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -36,7 +36,7 @@ let obj2;
 let obj4;
 let tmp2;
 let unpackModuleId;
-const FastAssetImageDefault = tmp2(17535);
+const FastAssetImageDefault = tmp2(17546);
 function WhatYouLose(subscription) {
   let guild;
   let intl3;
@@ -140,7 +140,7 @@ function CancelSubscriptionButtonFooter(guild) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -269,7 +269,7 @@ function CancelSubscriptionButtonFooter(guild) {
             _undefined = 0;
           }
           c5 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp59) {
         if (0 === _undefined) {

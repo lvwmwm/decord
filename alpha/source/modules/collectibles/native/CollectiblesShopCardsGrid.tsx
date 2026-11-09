@@ -1,10 +1,10 @@
-// Module ID: 18184
-// Function ID: 18185
+// Module ID: 18197
+// Function ID: 18198
 // Name: CollectiblesShopCardsGrid
-// Dependencies: [19, 17, 7796, 21, 5140, 9540, 9543, 18183, 12, 2]
+// Dependencies: [19, 17, 7796, 21, 5140, 9540, 9543, 18196, 12, 2]
 // Exports: default
 
-// Module 18184 (CollectiblesShopCardsGrid)
+// Module 18197 (CollectiblesShopCardsGrid)
 import _modDef12 from "module_12" /* 12 */;
 import Fragment from "Fragment" /* 21 */;
 import CollectiblesShopCardV2 from "CollectiblesShopCardV2" /* 9540 */;
@@ -60,7 +60,7 @@ export default function CollectiblesShopCardsGrid(products) {
   ({ disableBundleStaticBackground: react, muteBundleStaticBackground: closure_4 } = products);
   ({ onScroll, paddingTop, paddingBottom } = products);
   const rowContainer = closure_8();
-  let obj = products(18183);
+  let obj = products(18196);
   const cardLayout = obj.useCardLayout();
   const columns = cardLayout.columns;
   const cardWidth = cardLayout.cardWidth;

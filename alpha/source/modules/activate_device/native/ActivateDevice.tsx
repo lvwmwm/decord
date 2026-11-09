@@ -1,15 +1,15 @@
-// Module ID: 16002
-// Function ID: 16003
+// Module ID: 16012
+// Function ID: 16013
 // Name: ActivateDevice
-// Dependencies: [32, 19, 17, 21, 5140, 575, 16003, 16005, 11035, 14417, 16006, 9833, 16007, 2022, 16008, 16012, 16013, 5842, 1411, 16014, 7355, 2]
+// Dependencies: [32, 19, 17, 21, 5140, 575, 16013, 16015, 11035, 14418, 16016, 9833, 16017, 2022, 16018, 16022, 16023, 5842, 1411, 16024, 7355, 2]
 // Exports: ActivateDevice
 
-// Module 16002 (ActivateDevice)
+// Module 16012 (ActivateDevice)
 import nativeDefault from "native" /* 575 */;
 import react_nativeDefault from "react-native" /* 2022 */;
-import ConsoleOAuthApplications from "ConsoleOAuthApplications" /* 14417 */;
-import _modDef16006 from "module_16006" /* 16006 */;
-import _modDef16007 from "module_16007" /* 16007 */;
+import ConsoleOAuthApplications from "ConsoleOAuthApplications" /* 14418 */;
+import _modDef16016 from "module_16016" /* 16016 */;
+import _modDef16017 from "module_16017" /* 16017 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -104,14 +104,14 @@ export const ActivateDevice = (onClose) => {
       const userCodeData = first.userCodeData;
       const items = [ConsoleOAuthApplications.ConsoleOAuthApplications.PLAYSTATION_APPLICATION_ID, ConsoleOAuthApplications.ConsoleOAuthApplications.PLAYSTATION_STAGING_APPLICATION_ID];
       if (items.includes(userCodeData.clientId)) {
-        closure_3(_modDef16006);
+        closure_3(_modDef16016);
       } else {
         const scopes = userCodeData.scopes;
         if (scopes.some((item) => {
           const obj = first(first1[11]);
           return obj.isSocialLayerUmbrellaScope(item);
         })) {
-          closure_3(_modDef16007);
+          closure_3(_modDef16017);
         }
       }
     }
@@ -147,7 +147,7 @@ export const ActivateDevice = (onClose) => {
     }
   }
   const obj6 = { style: tmp.background, children: items6 };
-  const obj7 = { source: tmp7Result.makeSource(require("module_16014")), style: tmp.imageStyle };
+  const obj7 = { source: tmp7Result.makeSource(require("module_16024")), style: tmp.imageStyle };
   const tmp23 = require("FastImage");
   tmp7Result = first(first1[18]);
   items6 = [closure_8(tmp23, obj7), ];

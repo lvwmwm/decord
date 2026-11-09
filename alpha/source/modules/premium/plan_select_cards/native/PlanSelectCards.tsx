@@ -1,10 +1,10 @@
-// Module ID: 15631
-// Function ID: 15632
+// Module ID: 15641
+// Function ID: 15642
 // Name: PlanSelectCards
-// Dependencies: [19, 17, 1387, 1072, 21, 5140, 575, 10030, 5751, 1113, 10037, 6159, 7387, 5199, 5162, 8042, 15632, 5758, 9612, 7683, 10028, 2]
+// Dependencies: [19, 17, 1387, 1072, 21, 5140, 575, 10030, 5751, 1113, 10037, 6159, 7387, 5199, 5162, 8042, 15642, 5758, 9612, 7683, 10028, 2]
 // Exports: default
 
-// Module 15631 (PlanSelectCards)
+// Module 15641 (PlanSelectCards)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
@@ -136,7 +136,7 @@ function PlanSelectCard(premiumType) {
     const obj7 = { color: "nitro-pink", backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, style: tmp.gradient };
     const ExpressiveGradient = tmp4(8042).ExpressiveGradient;
     items = [closure_6(ExpressiveGradient, obj7), ];
-    const obj8 = { style: tmp.wumpus, pointerEvents: "none", children: closure_6(premiumType(15632).NitroWumpusFlightLeft3dIllustration, { accessible: false, width: 320 }) };
+    const obj8 = { style: tmp.wumpus, pointerEvents: "none", children: closure_6(premiumType(15642).NitroWumpusFlightLeft3dIllustration, { accessible: false, width: 320 }) };
     items[1] = closure_6(View, obj8);
     tmp8Result = tmp8(closure_8, obj6);
   }

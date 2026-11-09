@@ -1,12 +1,12 @@
-// Module ID: 14460
-// Function ID: 14461
+// Module ID: 14461
+// Function ID: 14462
 // Name: ChatViewPopups
-// Dependencies: [19, 14461, 14465, 14472, 2]
+// Dependencies: [19, 14462, 14466, 14473, 2]
 
-// Module 14460 (ChatViewPopups)
-import useIsHubRealNamePromptShowingDefault from "useIsHubRealNamePromptShowing" /* 14461 */;
-import WelcomeScreenUtils from "WelcomeScreenUtils" /* 14465 */;
-import GuildDirectoryNicknameUpsellModalActionCreatorsDefault from "GuildDirectoryNicknameUpsellModalActionCreators" /* 14472 */;
+// Module 14461 (ChatViewPopups)
+import useIsHubRealNamePromptShowingDefault from "useIsHubRealNamePromptShowing" /* 14462 */;
+import WelcomeScreenUtils from "WelcomeScreenUtils" /* 14466 */;
+import GuildDirectoryNicknameUpsellModalActionCreatorsDefault from "GuildDirectoryNicknameUpsellModalActionCreators" /* 14473 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ class ChatViewPopups {
     importDefault = showWelcomeModal.useRef(false);
     const tmp = useIsHubRealNamePromptShowingDefault(guildId);
     dependencyMap = tmp;
-    let obj = guildId(14465);
+    let obj = guildId(14466);
     showWelcomeModal = obj.useShowWelcomeModal(guildId, channelId);
     const items = [guildId, showWelcomeModal, tmp];
     const effect = showWelcomeModal.useEffect(() => {

@@ -1,10 +1,10 @@
-// Module ID: 13588
-// Function ID: 13589
+// Module ID: 13589
+// Function ID: 13590
 // Name: FamilyCenterModalRequest
-// Dependencies: [5, 19, 17, 1385, 7792, 21, 5140, 575, 1499, 563, 7793, 13589, 8443, 13590, 8041, 8043, 1187, 1411, 1113, 2664, 5751, 5842, 13591, 13592, 13451, 6822, 5758, 6799, 13599, 8441, 38, 11750, 8429, 7015, 6787, 2116, 8024, 6784, 13603, 6781, 7064, 11627, 2]
+// Dependencies: [5, 19, 17, 1385, 7792, 21, 5140, 575, 1499, 563, 7793, 13590, 8443, 13591, 8041, 8043, 1187, 1411, 1113, 2664, 5751, 5842, 13592, 13593, 13452, 6822, 5758, 6799, 13600, 8441, 38, 11750, 8429, 7015, 6787, 2116, 8024, 6784, 13604, 6781, 7064, 11627, 2]
 // Exports: default
 
-// Module 13588 (FamilyCenterModalRequest)
+// Module 13589 (FamilyCenterModalRequest)
 import react_native from "react-native" /* 17 */;
 import _modDef38 from "module_38" /* 38 */;
 import useStateFromStores from "useStateFromStores" /* 563 */;
@@ -24,9 +24,9 @@ import AssetRegistryDefault from "AssetRegistry" /* 8429 */;
 import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8441 */;
 import FamilyCenterUtils from "FamilyCenterUtils" /* 8443 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 11750 */;
-import ModalFooter2 from "ModalFooter" /* 13451 */;
-import FamilyCenterModalRequestRouting from "FamilyCenterModalRequestRouting" /* 13589 */;
-import EnvelopeSpotIllustration from "EnvelopeSpotIllustration" /* 13599 */;
+import ModalFooter2 from "ModalFooter" /* 13452 */;
+import FamilyCenterModalRequestRouting from "FamilyCenterModalRequestRouting" /* 13590 */;
+import EnvelopeSpotIllustration from "EnvelopeSpotIllustration" /* 13600 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1385 */;
@@ -63,7 +63,7 @@ let size;
 let size1;
 let size2;
 let unpackModuleId;
-const f106128 = () => {
+const f106170 = () => {
   currentUser = currentUser.getCurrentUser();
   let prop;
   if (currentUser != null) {
@@ -293,7 +293,7 @@ class FamilyCenterModalRequestSuccess {
     items1[2] = unpackModuleId(Text2, obj6);
     items2 = [unpackModuleId(ModalContent, obj8), ];
     const obj9 = { children: unpackModuleId(Button, obj10) };
-    const ModalFooter = tmp2(13451).ModalFooter;
+    const ModalFooter = tmp2(13452).ModalFooter;
     obj10 = { size: "lg", text: intl3.string(intl8.t.cpT0Cq), onPress: callback };
     Button = tmp2(5758).Button;
     intl3 = tmp2(1113).intl;
@@ -358,7 +358,7 @@ class FamilyCenterModalRequestError {
     items3[2] = unpackModuleId(Text_Text.Text, obj12);
     items4 = [authStore2(ModalContent, obj10), ];
     const obj13 = { children: unpackModuleId(Button, obj14) };
-    const ModalFooter = tmp2(13451).ModalFooter;
+    const ModalFooter = tmp2(13452).ModalFooter;
     obj14 = { text: intl.string(intl8.t.cpT0Cq), onPress: callback };
     Button = tmp2(5758).Button;
     intl = tmp2(1113).intl;
@@ -392,7 +392,7 @@ function FamilyCenterPrereqLoading(arg0) {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -436,7 +436,7 @@ function FamilyCenterPrereqLoading(arg0) {
                 const replaced1 = c2.replace(tmp.section, tmp.params);
               }
               c3 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp28) {
             c3 = 3;
@@ -501,7 +501,7 @@ function FamilyCenterConfirmAgeScreen(teenIdentity) {
   navigation = obj.useNavigation();
   let obj2 = navigation(563);
   const items = [UserStore];
-  const stateFromStores = obj2.useStateFromStores(items, f106128);
+  const stateFromStores = obj2.useStateFromStores(items, f106170);
   const tmp7 = stateFromStores(6787)(stateFromStores);
   dependencyMap = tmp7;
   const items1 = [stateFromStores, tmp7, navigation];
@@ -517,7 +517,7 @@ function FamilyCenterConfirmAgeScreen(teenIdentity) {
     const result = obj.showAgeVerificationGetStartedModal(obj2);
   }, []);
   const obj3 = { style: tmp.content, children: items2 };
-  const obj4 = { style: tmp.art, children: closure_11(navigation(13603).FamilyShieldSpotIllustration, {}) };
+  const obj4 = { style: tmp.art, children: closure_11(navigation(13604).FamilyShieldSpotIllustration, {}) };
   const ModalScreen = navigation(8041).ModalScreen;
   items2 = [closure_11(View, obj4), , ];
   const obj5 = { variant: "heading-xl/semibold", color: "mobile-text-heading-primary", style: tmp.title, children: formatToPlainString(pQQMJ7, { username: str }) };
@@ -548,7 +548,7 @@ function FamilyCenterConfirmAgeScreen(teenIdentity) {
   items2[2] = closure_11(Text2, obj7);
   items3 = [closure_12(tmp11, obj3), ];
   const obj8 = { children: closure_12(ButtonGroup, obj9) };
-  const ModalFooter = tmp2(13451).ModalFooter;
+  const ModalFooter = tmp2(13452).ModalFooter;
   obj9 = { children: items4 };
   ButtonGroup = tmp2(6822).ButtonGroup;
   const obj10 = { variant: "primary", text: intl3.string(stateFromStores(2664)["3oUE4o"]), onPress: callback };
@@ -638,7 +638,7 @@ function FamilyCenterPrereqMustBeAdultScreen() {
   navigation = obj.useNavigation();
   let obj2 = navigation(563);
   const items = [UserStore];
-  const stateFromStores = obj2.useStateFromStores(items, f106128);
+  const stateFromStores = obj2.useStateFromStores(items, f106170);
   const tmp3 = stateFromStores(6787)(stateFromStores);
   dependencyMap = tmp3;
   const items1 = [stateFromStores, tmp3, navigation];
@@ -821,7 +821,7 @@ export default function FamilyCenterRequestModal(userId) {
     obj12 = NavigatorHeader;
     return obj;
   }, items);
-  let obj = { initialRouteName: userId(13589).FamilyCenterModalRequestSections.PREREQ_LOADING, screens: memo, headerBackTitle: intl.string(userId(1113).t["13/7kX"]) };
+  let obj = { initialRouteName: userId(13590).FamilyCenterModalRequestSections.PREREQ_LOADING, screens: memo, headerBackTitle: intl.string(userId(1113).t["13/7kX"]) };
   const Modal = userId(11627).Modal;
   intl = userId(1113).intl;
   return closure_11(Modal, obj);

@@ -1,13 +1,13 @@
-// Module ID: 19721
-// Function ID: 19722
+// Module ID: 19734
+// Function ID: 19735
 // Name: VoicePanelControlsDimOverlay
-// Dependencies: [19, 16117, 11363, 11361, 21, 11362, 1652, 19685, 5761, 16572, 5726, 2]
+// Dependencies: [19, 16127, 11363, 11361, 21, 11362, 1652, 19698, 5761, 16582, 5726, 2]
 
-// Module 19721 (VoicePanelControlsDimOverlay)
+// Module 19734 (VoicePanelControlsDimOverlay)
 import Fragment from "Fragment" /* 21 */;
 import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11361 */;
 import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11362 */;
-import BackdropConstants from "BackdropConstants" /* 16117 */;
+import BackdropConstants from "BackdropConstants" /* 16127 */;
 import react from "react" /* 19 */;
 import VoicePanelConstants from "VoicePanelConstants" /* 11363 */;
 import size from "module_2" /* 2 */;
@@ -56,7 +56,7 @@ const memoResult = react.memo(function VoicePanelControlsDimOverlay(wrapperSpecs
   let items = [closure_9, windowDimensions, , , , , , , , , ];
   const useDerivedValue = setControlsMode(1652).useDerivedValue;
   const tmp4 = setControlsMode(1652);
-  items[2] = setControlsMode(19685).getDrawerSpec;
+  items[2] = setControlsMode(19698).getDrawerSpec;
   items[3] = safeArea;
   items[4] = controlsSpecs;
   items[5] = VoicePanelControlsModes;
@@ -119,7 +119,7 @@ const memoResult = react.memo(function VoicePanelControlsDimOverlay(wrapperSpecs
   items4[1] = setControlsMode(5761).withSpring;
   items4[2] = derivedValue;
   items4[3] = closure_5;
-  items4[4] = setControlsMode(16572).accessibilityPreferencesSharedValue;
+  items4[4] = setControlsMode(16582).accessibilityPreferencesSharedValue;
   items4[5] = derivedValue1;
   c0 = undefined;
   c1 = undefined;

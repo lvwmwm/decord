@@ -1,11 +1,11 @@
-// Module ID: 18574
-// Function ID: 18575
+// Module ID: 18587
+// Function ID: 18588
 // Name: ShowAllVoiceChannelsButton
-// Dependencies: [19, 7788, 21, 504, 18575, 1493, 5758, 1113, 8744, 2]
+// Dependencies: [19, 7788, 21, 504, 18588, 1493, 5758, 1113, 8744, 2]
 
-// Module 18574 (ShowAllVoiceChannelsButton)
+// Module 18587 (ShowAllVoiceChannelsButton)
 import Fragment from "Fragment" /* 21 */;
-import VoiceCategoryActionCreators from "VoiceCategoryActionCreators" /* 18575 */;
+import VoiceCategoryActionCreators from "VoiceCategoryActionCreators" /* 18588 */;
 import react from "react" /* 19 */;
 import ChannelListVoiceCategoryStore from "ChannelListVoiceCategoryStore" /* 7788 */;
 import size from "module_2" /* 2 */;

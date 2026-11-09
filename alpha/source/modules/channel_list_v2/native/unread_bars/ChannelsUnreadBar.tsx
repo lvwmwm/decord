@@ -1,9 +1,9 @@
-// Module ID: 18561
-// Function ID: 18562
+// Module ID: 18574
+// Function ID: 18575
 // Name: ChannelsUnreadBar
-// Dependencies: [32, 19, 17, 5882, 1072, 21, 1652, 5140, 575, 1377, 9912, 5766, 5883, 5889, 17387, 1705, 5761, 5762, 8733, 13270, 13268, 5751, 1113, 2]
+// Dependencies: [32, 19, 17, 5882, 1072, 21, 1652, 5140, 575, 1377, 9912, 5766, 5883, 5889, 17398, 1705, 5761, 5762, 8733, 13270, 13268, 5751, 1113, 2]
 
-// Module 18561 (ChannelsUnreadBar)
+// Module 18574 (ChannelsUnreadBar)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;

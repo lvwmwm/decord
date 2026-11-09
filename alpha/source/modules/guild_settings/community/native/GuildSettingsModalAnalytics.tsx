@@ -1,13 +1,13 @@
-// Module ID: 20243
-// Function ID: 20244
+// Module ID: 20256
+// Function ID: 20257
 // Name: GuildSettingsModalAnalytics
-// Dependencies: [5, 19, 17, 2186, 1072, 21, 5140, 575, 504, 20244, 1252, 7575, 7579, 6159, 5751, 1113, 8095, 5758, 20263, 5734, 2]
+// Dependencies: [5, 19, 17, 2186, 1072, 21, 5140, 575, 504, 20257, 1252, 7575, 7579, 6159, 5751, 1113, 8095, 5758, 20276, 5734, 2]
 // Exports: default
 
-// Module 20243 (GuildSettingsModalAnalytics)
+// Module 20256 (GuildSettingsModalAnalytics)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import GuildSettingsAnalyticsCardDefault from "GuildSettingsAnalyticsCard" /* 20263 */;
+import GuildSettingsAnalyticsCardDefault from "GuildSettingsAnalyticsCard" /* 20276 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2186 */;
@@ -59,7 +59,7 @@ export default function GuildSettingsModalAnalytics(guildId) {
   let obj = guildId(504);
   const items = [LocaleStore];
   const stateFromStores = obj.useStateFromStores(items, () => locale.locale);
-  let obj2 = guildId(20244);
+  let obj2 = guildId(20257);
   const guildAnalyticsOverview = obj2.useGuildAnalyticsOverview(guildId);
   ({ analytics, notice } = guildAnalyticsOverview);
   const items1 = [guildId];
@@ -78,7 +78,7 @@ export default function GuildSettingsModalAnalytics(guildId) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -112,7 +112,7 @@ export default function GuildSettingsModalAnalytics(guildId) {
           return obj;
         } else {
           guildId = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp4) {
         guildId = 3;
@@ -152,27 +152,27 @@ export default function GuildSettingsModalAnalytics(guildId) {
     const tmp11Result = GuildSettingsAnalyticsCardDefault;
     intl4 = tmp2(1113).intl;
     intl5 = tmp2(1113).intl;
-    const tmp2Result = tmp2(20244);
+    const tmp2Result = tmp2(20257);
     const merged = Object.assign(tmp2Result.getGuildAnalyticsCardProps(analytics.visitors, analytics.visitorsChange, stateFromStores));
     items4 = [tmp9(tmp11Result, obj11), , , ];
     const obj12 = { metricKey: "communicators", title: intl6.string(tmp2(1113).t.DDAHdQ), description: intl7.string(tmp2(1113).t.HxWUkU) };
     const tmp11Result4 = GuildSettingsAnalyticsCardDefault;
     intl6 = tmp2(1113).intl;
     intl7 = tmp2(1113).intl;
-    const tmp2Result4 = tmp2(20244);
+    const tmp2Result4 = tmp2(20257);
     const merged1 = Object.assign(tmp2Result4.getGuildAnalyticsCardProps(analytics.communicators, analytics.communicatorsChange, stateFromStores));
     items4[1] = closure_9(tmp11Result4, obj12);
     const obj13 = { metricKey: "new_members", title: intl8.string(tmp2(1113).t.hYeOqC) };
     const tmp11Result5 = GuildSettingsAnalyticsCardDefault;
     intl8 = tmp2(1113).intl;
-    const tmp2Result5 = tmp2(20244);
+    const tmp2Result5 = tmp2(20257);
     const merged2 = Object.assign(tmp2Result5.getGuildAnalyticsCardProps(analytics.newMembers, analytics.newMembersChange, stateFromStores));
     items4[2] = closure_9(tmp11Result5, obj13);
     const obj14 = { metricKey: "new_member_retention", title: intl9.string(tmp2(1113).t.jj7OPw), description: intl10.string(tmp2(1113).t.MQCslz) };
     const tmp11Result6 = GuildSettingsAnalyticsCardDefault;
     intl9 = tmp2(1113).intl;
     intl10 = tmp2(1113).intl;
-    const tmp2Result6 = tmp2(20244);
+    const tmp2Result6 = tmp2(20257);
     const merged3 = Object.assign(tmp2Result6.getGuildAnalyticsCardProps(analytics.pctRetained, analytics.pctRetainedChange, stateFromStores, true));
     items4[3] = closure_9(tmp11Result6, obj14);
     tmp7Result = tmp7(Stack2, obj10);

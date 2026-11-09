@@ -1,10 +1,10 @@
-// Module ID: 15190
-// Function ID: 15191
+// Module ID: 15200
+// Function ID: 15201
 // Name: ConjureCustomWidgetSheet
-// Dependencies: [5, 32, 19, 17, 10969, 21, 5140, 575, 7483, 1113, 4026, 10996, 15188, 11104, 11000, 7426, 7382, 7316, 5758, 2]
+// Dependencies: [5, 32, 19, 17, 10969, 21, 5140, 575, 7483, 1113, 4026, 10996, 15198, 11104, 11000, 7426, 7382, 7316, 5758, 2]
 // Exports: default
 
-// Module 15190 (ConjureCustomWidgetSheet)
+// Module 15200 (ConjureCustomWidgetSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef4026 from "module_4026" /* 4026 */;
@@ -80,7 +80,7 @@ export default function ConjureCustomWidgetSheet() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -164,7 +164,7 @@ export default function ConjureCustomWidgetSheet() {
           closure_129_3(false);
         }
         c5 = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp54) {
         dependencyMap = tmp54;
         if (0 === c3) {
@@ -184,7 +184,7 @@ export default function ConjureCustomWidgetSheet() {
   BottomSheetTitleHeader = value(7382).BottomSheetTitleHeader;
   intl = value(1113).intl;
   obj3 = { style: tmp.body, children: items1 };
-  let obj4 = { label: intl2.string(_modDef4026["09BSx3"]), placeholder: intl3.string(_modDef4026.K7zdCZ), description: intl4.string(_modDef4026.SKwzvJ), errorMessage: tmp5, value, onChange: callback, maxLength: tmp12(15188).CONJURE_CUSTOM_WIDGET_PROMPT_MAX_LENGTH, disabled: tmp7 };
+  let obj4 = { label: intl2.string(_modDef4026["09BSx3"]), placeholder: intl3.string(_modDef4026.K7zdCZ), description: intl4.string(_modDef4026.SKwzvJ), errorMessage: tmp5, value, onChange: callback, maxLength: tmp12(15198).CONJURE_CUSTOM_WIDGET_PROMPT_MAX_LENGTH, disabled: tmp7 };
   const TextArea = value(7316).TextArea;
   intl2 = value(1113).intl;
   intl3 = value(1113).intl;

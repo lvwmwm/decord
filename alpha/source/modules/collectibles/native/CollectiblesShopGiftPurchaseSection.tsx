@@ -1,10 +1,10 @@
-// Module ID: 14668
-// Function ID: 14669
+// Module ID: 14669
+// Function ID: 14670
 // Name: CollectiblesShopGiftPurchaseSection
-// Dependencies: [5, 32, 19, 17, 8834, 7685, 1072, 1387, 21, 5140, 575, 5735, 10731, 504, 8826, 7387, 14660, 1252, 14669, 572, 6799, 6091, 14670, 2118, 1377, 10747, 10736, 5751, 1113, 5758, 2]
+// Dependencies: [5, 32, 19, 17, 8834, 7685, 1072, 1387, 21, 5140, 575, 5735, 10731, 504, 8826, 7387, 14661, 1252, 14670, 572, 6799, 6091, 14671, 2118, 1377, 10747, 10736, 5751, 1113, 5758, 2]
 // Exports: default
 
-// Module 14668 (CollectiblesShopGiftPurchaseSection)
+// Module 14669 (CollectiblesShopGiftPurchaseSection)
 import react_native from "react-native" /* 17 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import nativeDefault from "native" /* 575 */;
@@ -221,7 +221,7 @@ export default function CollectiblesShopGiftPurchaseSection(product) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -258,7 +258,7 @@ export default function CollectiblesShopGiftPurchaseSection(product) {
               closure_128_9();
             }
             c2 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp14) {
           c2 = 3;

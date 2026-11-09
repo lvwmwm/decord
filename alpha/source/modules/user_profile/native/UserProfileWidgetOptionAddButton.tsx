@@ -1,13 +1,13 @@
-// Module ID: 15178
-// Function ID: 15179
+// Module ID: 15193
+// Function ID: 15194
 // Name: UserProfileWidgetOptionAddButton
-// Dependencies: [19, 17, 21, 575, 5140, 15179, 5842, 15180, 11634, 5751, 2]
+// Dependencies: [19, 17, 21, 575, 5140, 15194, 5842, 15195, 11634, 5751, 2]
 // Exports: default
 
-// Module 15178 (UserProfileWidgetOptionAddButton)
+// Module 15193 (UserProfileWidgetOptionAddButton)
 import nativeDefault from "native" /* 575 */;
-import useGameNameAndCoverImageDefault from "useGameNameAndCoverImage" /* 15179 */;
-import AddWidgetButtonConfig from "AddWidgetButtonConfig" /* 15180 */;
+import useGameNameAndCoverImageDefault from "useGameNameAndCoverImage" /* 15194 */;
+import AddWidgetButtonConfig from "AddWidgetButtonConfig" /* 15195 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;

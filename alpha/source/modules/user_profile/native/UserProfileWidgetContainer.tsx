@@ -1,10 +1,10 @@
-// Module ID: 15224
-// Function ID: 15225
+// Module ID: 15234
+// Function ID: 15235
 // Name: UserProfileWidgetContainer
-// Dependencies: [19, 17, 502, 21, 5140, 575, 504, 7436, 12549, 15225, 2]
+// Dependencies: [19, 17, 502, 21, 5140, 575, 504, 7436, 12549, 15235, 2]
 // Exports: default
 
-// Module 15224 (UserProfileWidgetContainer)
+// Module 15234 (UserProfileWidgetContainer)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
@@ -16,7 +16,7 @@ import size from "module_2" /* 2 */;
 
 let obj2;
 let tmp6;
-const UserProfileWidgetReportButtonDefault = tmp6(15225);
+const UserProfileWidgetReportButtonDefault = tmp6(15235);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let obj = { actions: obj2 };

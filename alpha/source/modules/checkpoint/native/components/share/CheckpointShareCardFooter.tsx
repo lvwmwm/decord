@@ -1,15 +1,15 @@
-// Module ID: 13682
-// Function ID: 13683
+// Module ID: 13683
+// Function ID: 13684
 // Name: CheckpointShareCardFooter
-// Dependencies: [19, 17, 21, 5140, 575, 13679, 5724, 8101, 5751, 13683, 2]
+// Dependencies: [19, 17, 21, 5140, 575, 13680, 5724, 8101, 5751, 13684, 2]
 // Exports: default
 
-// Module 13682 (CheckpointShareCardFooter)
+// Module 13683 (CheckpointShareCardFooter)
 import nativeDefault from "native" /* 575 */;
 import useToken from "useToken" /* 5724 */;
 import Text_Text from "Text/Text" /* 5751 */;
 import inlineStylesDefault from "inlineStyles" /* 8101 */;
-import CheckpointShareCardContext from "CheckpointShareCardContext" /* 13679 */;
+import CheckpointShareCardContext from "CheckpointShareCardContext" /* 13680 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -85,7 +85,7 @@ export default function CheckpointShareCardFooter(isCharacterAndStats) {
   items2[2] = obj5;
   const obj7 = { style: items2, children: metroRequire(ArrowLargeRightIcon, obj8) };
   obj8 = { size: "xxs", color: nativeDefault.colors.BLACK };
-  ArrowLargeRightIcon = tmp2(13683).ArrowLargeRightIcon;
+  ArrowLargeRightIcon = tmp2(13684).ArrowLargeRightIcon;
   items1[2] = metroRequire(hasOwnProperty, obj7);
   return tmp7(hasOwnProperty, obj2);
 };

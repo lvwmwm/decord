@@ -4,15 +4,15 @@
 
 // Module 5902
 let tmp7;
-const f124983 = (item) => {
+const f125054 = (item) => {
   let closure_0 = item;
   obj4[item] = function(arg0) {
     return this._invoke(closure_0, arg0);
   };
 };
 function enqueue(arg0, arg1) {
-  const f141943 = (arg0, fn) => {
-    const f137595 = (result) => {
+  const f142048 = (arg0, fn) => {
+    const f137689 = (result) => {
       const tmp2 = closure_1_10(closure_2_0.next, closure_2_0, result);
       const tmp = closure_1;
       if ("throw" !== tmp2.type) {
@@ -22,7 +22,7 @@ function enqueue(arg0, arg1) {
           if (typeof value === "object") {
             if (closure_0.call(value, "__await")) {
               const resolved = Promise.resolve(value.__await);
-              resolved.then(f137595, f137596);
+              resolved.then(f137689, f137690);
             }
           }
         }
@@ -30,12 +30,12 @@ function enqueue(arg0, arg1) {
         resolved1.then((value) => {
           iter.value = value;
           closure_0(iter);
-        }, f137598);
+        }, f137692);
       } else {
         tmp(tmp2.arg);
       }
     };
-    const f137596 = (arg0) => {
+    const f137690 = (arg0) => {
       const tmp2 = closure_1_10(closure_2_0.throw, closure_2_0, arg0);
       const tmp = closure_1;
       if ("throw" !== tmp2.type) {
@@ -45,7 +45,7 @@ function enqueue(arg0, arg1) {
           if (typeof value === "object") {
             if (closure_0.call(value, "__await")) {
               const resolved = Promise.resolve(value.__await);
-              resolved.then(f137595, f137596);
+              resolved.then(f137689, f137690);
             }
           }
         }
@@ -53,12 +53,12 @@ function enqueue(arg0, arg1) {
         resolved1.then((value) => {
           iter.value = value;
           closure_0(iter);
-        }, f137598);
+        }, f137692);
       } else {
         tmp(tmp2.arg);
       }
     };
-    const f137598 = (arg0) => {
+    const f137692 = (arg0) => {
       let tmp4;
       const tmp2 = closure_1_10(closure_2_0.throw, closure_2_0, arg0);
       const tmp = closure_1;
@@ -69,7 +69,7 @@ function enqueue(arg0, arg1) {
           if (typeof value === "object") {
             if (closure_0.call(value, "__await")) {
               const resolved = Promise.resolve(value.__await);
-              nextPromise = resolved.then(f137595, f137596);
+              nextPromise = resolved.then(f137689, f137690);
             }
             tmp4 = nextPromise;
           }
@@ -78,7 +78,7 @@ function enqueue(arg0, arg1) {
         nextPromise = resolved1.then((value) => {
           iter.value = value;
           closure_0(iter);
-        }, f137598);
+        }, f137692);
       } else {
         tmp(tmp2.arg);
       }
@@ -94,7 +94,7 @@ function enqueue(arg0, arg1) {
         if (typeof value === "object") {
           if (closure_1_0.call(value, "__await")) {
             let resolved = Promise.resolve(value.__await);
-            nextPromise = resolved.then(f137595, f137596);
+            nextPromise = resolved.then(f137689, f137690);
           }
         }
       }
@@ -102,7 +102,7 @@ function enqueue(arg0, arg1) {
       resolved1.then((value) => {
         iter.value = value;
         closure_0(iter);
-      }, f137598);
+      }, f137692);
     } else {
       let tmp2 = fn(tmp.arg);
     }
@@ -112,7 +112,7 @@ function enqueue(arg0, arg1) {
   let promise = nextPromise;
   if (promise) {
     function callInvokeWithMethodAndArg() {
-      const promise = new Promise(f141943);
+      const promise = new Promise(f142048);
       return promise;
     }
     nextPromise = promise.then(callInvokeWithMethodAndArg, callInvokeWithMethodAndArg);
@@ -121,7 +121,7 @@ function enqueue(arg0, arg1) {
     const _Promise = Promise;
     const self = this;
     const self2 = this;
-    nextPromise = new Promise(f141943);
+    nextPromise = new Promise(f142048);
   }
   return nextPromise;
 }
@@ -243,7 +243,7 @@ class Context {
   }
 }
 function doneResult() {
-  return { value: "HermesInternal", done: "HermesInternal" };
+  return { value: "HermesInternal", done: null };
 }
 const hasOwnProperty = prototype.hasOwnProperty;
 let tmp2 = typeof Symbol === "function" ? Symbol : {};
@@ -289,7 +289,7 @@ if (regeneratorRuntime) {
         if ("throw" === method) {
           throw arg;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         obj.method = method;
@@ -518,7 +518,7 @@ if (regeneratorRuntime) {
   tmp6.awrap = (__await) => ({ __await });
   let closure_0 = AsyncIterator.prototype;
   let items1 = ["next", "throw", "return"];
-  let item = items1.forEach(f124983);
+  let item = items1.forEach(f125054);
   AsyncIterator.prototype[tmp4] = function() {
     return this;
   };
@@ -558,7 +558,7 @@ if (regeneratorRuntime) {
         if ("throw" === method) {
           throw arg;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         obj.method = method;
@@ -635,7 +635,7 @@ if (regeneratorRuntime) {
     return nextPromise;
   };
   const items2 = ["next", "throw", "return"];
-  const item1 = items2.forEach(f124983);
+  const item1 = items2.forEach(f125054);
   let str7 = "Generator";
   obj4[tmp5] = "Generator";
   obj4[tmp3] = function() {

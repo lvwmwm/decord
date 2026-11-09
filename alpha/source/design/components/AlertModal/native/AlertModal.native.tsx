@@ -491,7 +491,7 @@ class AlertActionButton {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c3;
@@ -541,7 +541,7 @@ class AlertActionButton {
           const obj3 = closure_0(closure_2_2[11]);
           obj3.dismissAlert(c2);
           c4 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp16) {
           if (0 === c3) {
             c4 = 3;

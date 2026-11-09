@@ -1,9 +1,9 @@
-// Module ID: 18481
-// Function ID: 18482
+// Module ID: 18494
+// Function ID: 18495
 // Name: MessagesItemAddFriendsWidget
-// Dependencies: [5, 19, 17, 1072, 21, 14790, 575, 5140, 9025, 5836, 1113, 9198, 9209, 5315, 7043, 5751, 15977, 18482, 2]
+// Dependencies: [5, 19, 17, 1072, 21, 14791, 575, 5140, 9025, 5836, 1113, 9198, 9209, 5315, 7043, 5751, 15987, 18495, 2]
 
-// Module 18481 (MessagesItemAddFriendsWidget)
+// Module 18494 (MessagesItemAddFriendsWidget)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -12,9 +12,9 @@ import RootNavigationRef from "RootNavigationRef" /* 5315 */;
 import Text_Text from "Text/Text" /* 5751 */;
 import Pressables from "Pressables" /* 7043 */;
 import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 9025 */;
-import IconActionButton from "IconActionButton" /* 14790 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15977 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 18482 */;
+import IconActionButton from "IconActionButton" /* 14791 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15987 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 18495 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -46,7 +46,7 @@ let obj = function _getFriendInviteCode() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -124,7 +124,7 @@ obj = function _handleShare() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -163,7 +163,7 @@ obj = function _handleShare() {
           const PJf9P9 = closure_129_0(closure_129_2[10]).t.PJf9P9;
           handleOpenShareSheet(closure_0, null, formatToPlainString(PJf9P9, obj5), closure_129_6.ADD_FRIENDS_WIDGET);
           c3 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp6) {
         c3 = 3;
@@ -188,7 +188,7 @@ obj = function _handleLink() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -222,7 +222,7 @@ obj = function _handleLink() {
           obj = closure_129_0(closure_129_2[11]);
           obj.handleCopy(closure_0, null, closure_129_6.ADD_FRIENDS_WIDGET);
           c3 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp14) {
         c3 = 3;

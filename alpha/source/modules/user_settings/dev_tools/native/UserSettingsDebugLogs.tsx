@@ -1,10 +1,10 @@
-// Module ID: 17877
-// Function ID: 17878
+// Module ID: 17888
+// Function ID: 17889
 // Name: UserSettingsDebugLogs
-// Dependencies: [32, 19, 17, 1072, 21, 5140, 575, 7169, 1627, 5837, 510, 7, 5751, 7282, 13020, 1113, 17878, 5374, 17879, 7357, 2]
+// Dependencies: [32, 19, 17, 1072, 21, 5140, 575, 7169, 1627, 5837, 510, 7, 5751, 7282, 13020, 1113, 17889, 5374, 17890, 7357, 2]
 // Exports: default
 
-// Module 17877 (UserSettingsDebugLogs)
+// Module 17888 (UserSettingsDebugLogs)
 import LogAggregator from "LogAggregator" /* 7 */;
 import Storage2 from "Storage" /* 510 */;
 import nativeDefault from "native" /* 575 */;
@@ -12,7 +12,7 @@ import Constants from "Constants" /* 1072 */;
 import Text_Text from "Text/Text" /* 5751 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 5837 */;
 import InputTypes from "InputTypes" /* 7169 */;
-import UserSettingsDebugLogsActionSheet from "UserSettingsDebugLogsActionSheet" /* 17878 */;
+import UserSettingsDebugLogsActionSheet from "UserSettingsDebugLogsActionSheet" /* 17889 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

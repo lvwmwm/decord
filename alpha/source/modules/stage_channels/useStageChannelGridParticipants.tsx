@@ -17,11 +17,11 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require, dependencyMap;
 
-const f102013 = () => {
+const f102054 = () => {
   const items = [id, StageChannelParticipantStore.getParticipantsVersion(id)];
   return items;
 };
-const f102014 = () => ChannelRTCStore.getSelectedParticipantId(id);
+const f102055 = () => ChannelRTCStore.getSelectedParticipantId(id);
 let closure_6 = { SELECTED: 0, [0]: "SELECTED", SPEAKER: 1, [1]: "SPEAKER", AUDIENCE: 2, [2]: "AUDIENCE", MEDIA: 3, [3]: "MEDIA" };
 const result = size.fileFinishedImporting("modules/stage_channels/useStageChannelGridParticipants.tsx");
 
@@ -35,11 +35,11 @@ export function useStageChannelParticipantsList(arg0, arg1, arg2) {
   const items = [StageChannelParticipantStore];
   const items1 = [arg0];
   const obj = require("get initialized");
-  const stateFromStores = obj.useStateFromStores(items, f102013, items1, require("SecondaryIndexMapUtils").isVersionEqual);
+  const stateFromStores = obj.useStateFromStores(items, f102054, items1, require("SecondaryIndexMapUtils").isVersionEqual);
   const items2 = [stateFromStores1];
   const items3 = [arg0];
   const obj2 = require("get initialized");
-  stateFromStores1 = obj2.useStateFromStores(items2, f102014, items3);
+  stateFromStores1 = obj2.useStateFromStores(items2, f102055, items3);
   const items4 = [stateFromStores, arg1, stateFromStores1, arg2, arg0];
   return stateFromStores.useMemo(() => {
     let items4;
@@ -147,11 +147,11 @@ export function useStageChannelParticipantsListThrottled(id, memo, throttleDurat
   let obj = require("get initialized");
   let items = [StageChannelParticipantStore];
   let items1 = [id];
-  const stateFromStores = obj.useStateFromStores(items, f102013, items1, require("SecondaryIndexMapUtils").isVersionEqual);
+  const stateFromStores = obj.useStateFromStores(items, f102054, items1, require("SecondaryIndexMapUtils").isVersionEqual);
   let items2 = [stateFromStores1];
   let items3 = [id];
   const obj2 = require("get initialized");
-  stateFromStores1 = obj2.useStateFromStores(items2, f102014, items3);
+  stateFromStores1 = obj2.useStateFromStores(items2, f102055, items3);
   let items4 = [stateFromStores, memo, stateFromStores1, flag, id];
   memo = stateFromStores.useMemo(() => {
     let items4;

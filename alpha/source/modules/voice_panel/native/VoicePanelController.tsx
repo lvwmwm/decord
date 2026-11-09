@@ -1,10 +1,10 @@
-// Module ID: 19521
-// Function ID: 19522
+// Module ID: 19534
+// Function ID: 19535
 // Name: VoicePanelController
-// Dependencies: [32, 19, 17, 5141, 4988, 6898, 8938, 12011, 11868, 4989, 2130, 5893, 5043, 6930, 11363, 11361, 1072, 5781, 5805, 11364, 21, 19522, 1652, 10210, 1705, 1089, 504, 5837, 1113, 9322, 15136, 19523, 6047, 11889, 19524, 1493, 1627, 19549, 11371, 19550, 11365, 11367, 12, 1266, 1108, 1259, 11385, 13029, 6595, 1252, 11327, 2143, 8977, 6906, 19486, 5199, 19551, 5888, 5323, 5889, 7270, 19552, 19553, 13959, 5061, 19554, 19555, 19560, 19561, 19488, 19562, 11362, 5340, 2]
+// Dependencies: [32, 19, 17, 5141, 4988, 6898, 8938, 12011, 11868, 4989, 2130, 5893, 5043, 6930, 11363, 11361, 1072, 5781, 5805, 11364, 21, 19535, 1652, 10210, 1705, 1089, 504, 5837, 1113, 9322, 15137, 19536, 6047, 11889, 19537, 1493, 1627, 19562, 11371, 19563, 11365, 11367, 12, 1266, 1108, 1259, 11385, 13029, 6595, 1252, 11327, 2143, 8977, 6906, 19499, 5199, 19564, 5888, 5323, 5889, 7270, 19565, 19566, 13960, 5061, 19567, 19568, 19573, 19574, 19501, 19575, 11362, 5340, 2]
 // Exports: default
 
-// Module 19521 (VoicePanelController)
+// Module 19534 (VoicePanelController)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import DurationsDefault from "Durations" /* 1089 */;
@@ -13,7 +13,7 @@ import ActivityPanelConstants from "ActivityPanelConstants" /* 5781 */;
 import CallConstants from "CallConstants" /* 5805 */;
 import MorphablePanelConstants from "MorphablePanelConstants" /* 11364 */;
 import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 11889 */;
-import VoicePanelPIPStateContext from "VoicePanelPIPStateContext" /* 19562 */;
+import VoicePanelPIPStateContext from "VoicePanelPIPStateContext" /* 19575 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5141 */;

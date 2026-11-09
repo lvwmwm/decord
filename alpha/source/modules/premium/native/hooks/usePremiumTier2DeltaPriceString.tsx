@@ -1,10 +1,10 @@
-// Module ID: 15719
-// Function ID: 15720
+// Module ID: 15729
+// Function ID: 15730
 // Name: usePremiumTier2DeltaPriceString
 // Dependencies: [19, 7685, 7673, 1387, 7668, 7669, 1377, 7477, 4953, 504, 2]
 // Exports: usePremiumTier2DeltaPriceString
 
-// Module 15719 (usePremiumTier2DeltaPriceString)
+// Module 15729 (usePremiumTier2DeltaPriceString)
 import PremiumConstants from "PremiumConstants" /* 1387 */;
 import PremiumBundledPlansUtils from "PremiumBundledPlansUtils" /* 7668 */;
 import ProductIds from "ProductIds" /* 7669 */;

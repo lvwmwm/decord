@@ -1,7 +1,7 @@
 // Module ID: 10782
 // Function ID: 10783
 // Name: PremiumGiftWishlistBanner
-// Dependencies: [5, 19, 17, 7469, 1387, 1072, 1074, 8825, 21, 575, 5140, 9540, 9554, 10783, 10787, 7387, 7412, 1252, 8821, 10733, 10788, 5315, 5837, 1113, 7795, 14662, 5194, 5751, 14687, 14692, 2]
+// Dependencies: [5, 19, 17, 7469, 1387, 1072, 1074, 8825, 21, 575, 5140, 9540, 9554, 10783, 10787, 7387, 7412, 1252, 8821, 10733, 10788, 5315, 5837, 1113, 7795, 14663, 5194, 5751, 14688, 14693, 2]
 // Exports: PremiumGiftWishlistBanner
 
 // Module 10782 (PremiumGiftWishlistBanner)
@@ -155,7 +155,7 @@ export function PremiumGiftWishlistBanner(giftRecipient) {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -230,7 +230,7 @@ export function PremiumGiftWishlistBanner(giftRecipient) {
             return { value, done: true };
           }
           c2 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp23) {
           c2 = 3;
           throw tmp23;

@@ -1,10 +1,10 @@
-// Module ID: 19120
-// Function ID: 19121
+// Module ID: 19133
+// Function ID: 19134
 // Name: GroupDMNitroUpsellBanner
-// Dependencies: [32, 19, 17, 5141, 11788, 21, 575, 5140, 1627, 12238, 5724, 1652, 671, 5761, 5715, 504, 11789, 11786, 11793, 19121, 5758, 1113, 8590, 5751, 2]
+// Dependencies: [32, 19, 17, 5141, 11788, 21, 575, 5140, 1627, 12238, 5724, 1652, 671, 5761, 5715, 504, 11789, 11786, 11793, 19134, 5758, 1113, 8590, 5751, 2]
 // Exports: default
 
-// Module 19120 (GroupDMNitroUpsellBanner)
+// Module 19133 (GroupDMNitroUpsellBanner)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
@@ -15,7 +15,7 @@ import GroupDMNitroUpsellModel from "GroupDMNitroUpsellModel" /* 11786 */;
 import GroupDMConstants from "GroupDMConstants" /* 11788 */;
 import GroupDMNitroCapExperimentDefault from "GroupDMNitroCapExperiment" /* 11789 */;
 import useGroupDMNitroUpsellActionDefault from "useGroupDMNitroUpsellAction" /* 11793 */;
-import GroupDMNitroCapBannerDefault from "GroupDMNitroCapBanner" /* 19121 */;
+import GroupDMNitroCapBannerDefault from "GroupDMNitroCapBanner" /* 19134 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

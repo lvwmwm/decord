@@ -1,10 +1,10 @@
-// Module ID: 15401
-// Function ID: 15402
+// Module ID: 15411
+// Function ID: 15412
 // Name: GameOrganizationInviteEmbed
-// Dependencies: [11503, 5011, 10238, 11504, 7956, 8465, 1113, 2530, 13443, 8452, 575, 8467, 7313, 15402, 13433, 8680, 5137, 2]
+// Dependencies: [11503, 5011, 10238, 11504, 7956, 8465, 1113, 2530, 13444, 8452, 575, 8467, 7313, 15412, 13434, 8680, 5137, 2]
 // Exports: createGameOrganizationInviteEmbed
 
-// Module 15401 (GameOrganizationInviteEmbed)
+// Module 15411 (GameOrganizationInviteEmbed)
 import nativeDefault from "native" /* 575 */;
 import intl7 from "intl" /* 1113 */;
 import _modDef2530 from "module_2530" /* 2530 */;
@@ -17,9 +17,9 @@ import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8467 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 8680 */;
 import CodedLinksConstants from "CodedLinksConstants" /* 10238 */;
 import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11504 */;
-import canGoToGameOrganizationGuildDefault from "canGoToGameOrganizationGuild" /* 13433 */;
-import getGameOrganizationDisplayNounDefault from "getGameOrganizationDisplayNoun" /* 13443 */;
-import getGameOrganizationInviteCtaStateDefault from "getGameOrganizationInviteCtaState" /* 15402 */;
+import canGoToGameOrganizationGuildDefault from "canGoToGameOrganizationGuild" /* 13434 */;
+import getGameOrganizationDisplayNounDefault from "getGameOrganizationDisplayNoun" /* 13444 */;
+import getGameOrganizationInviteCtaStateDefault from "getGameOrganizationInviteCtaState" /* 15412 */;
 import GameOrganizationInviteStore from "GameOrganizationInviteStore" /* 11503 */;
 import GuildStore from "GuildStore" /* 5011 */;
 import size from "module_2" /* 2 */;

@@ -1,10 +1,10 @@
-// Module ID: 19588
-// Function ID: 19589
+// Module ID: 19601
+// Function ID: 19602
 // Name: VoicePanelDockStatusStore
 // Dependencies: [1385, 1254, 5055, 12, 2]
 // Exports: initDockStatus, releaseDockStatus, setDockHasStreamers, setDockSpeakingIds, showVoiceMoment, useDockHasStreamers, useDockSubject
 
-// Module 19588 (VoicePanelDockStatusStore)
+// Module 19601 (VoicePanelDockStatusStore)
 import _slicedToArray from "_slicedToArray" /* 5055 */;
 import UserStore from "UserStore" /* 1385 */;
 import module_1254 from "module_1254" /* 1254 */;

@@ -1,15 +1,15 @@
-// Module ID: 15077
-// Function ID: 15078
+// Module ID: 15078
+// Function ID: 15079
 // Name: RequestToStreamStore
-// Dependencies: [32, 502, 5893, 1072, 15078, 6196, 6772, 504, 572, 2]
+// Dependencies: [32, 502, 5893, 1072, 15079, 6196, 6772, 504, 572, 2]
 
-// Module 15077 (RequestToStreamStore)
+// Module 15078 (RequestToStreamStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import MessageRecordUtils from "MessageRecordUtils" /* 6196 */;
 import StreamKeyUtilsAll from "StreamKeyUtils" /* 6772 */;
-import RequestToStreamNewEntryPointExperimentDefault from "RequestToStreamNewEntryPointExperiment" /* 15078 */;
+import RequestToStreamNewEntryPointExperimentDefault from "RequestToStreamNewEntryPointExperiment" /* 15079 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 5893 */;

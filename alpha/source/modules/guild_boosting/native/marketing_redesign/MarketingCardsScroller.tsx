@@ -1,10 +1,10 @@
-// Module ID: 14380
-// Function ID: 14381
+// Module ID: 14381
+// Function ID: 14382
 // Name: MarketingCardsScroller
-// Dependencies: [32, 19, 17, 5141, 21, 5140, 5137, 575, 504, 5390, 1113, 1357, 1652, 7043, 10373, 14151, 2]
+// Dependencies: [32, 19, 17, 5141, 21, 5140, 5137, 575, 504, 5390, 1113, 1357, 1652, 7043, 10373, 14152, 2]
 // Exports: MarketingCardsScroller
 
-// Module 14380 (MarketingCardsScroller)
+// Module 14381 (MarketingCardsScroller)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;

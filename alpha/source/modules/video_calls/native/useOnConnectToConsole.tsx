@@ -1,14 +1,14 @@
-// Module ID: 14976
-// Function ID: 14977
+// Module ID: 14977
+// Function ID: 14978
 // Name: useOnConnectToConsole
-// Dependencies: [19, 1072, 5170, 4973, 9811, 14870, 12144, 2]
+// Dependencies: [19, 1072, 5170, 4973, 9811, 14871, 12144, 2]
 // Exports: onConnectToConsole, useOnConnectToConsole
 
-// Module 14976 (useOnConnectToConsole)
+// Module 14977 (useOnConnectToConsole)
 import dismissible_content from "dismissible_content" /* 4973 */;
 import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5170 */;
 import XboxLinkModalActionCreatorsDefault from "XboxLinkModalActionCreators" /* 9811 */;
-import PlayStationLinkModalActionCreatorsDefault from "PlayStationLinkModalActionCreators" /* 14870 */;
+import PlayStationLinkModalActionCreatorsDefault from "PlayStationLinkModalActionCreators" /* 14871 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;

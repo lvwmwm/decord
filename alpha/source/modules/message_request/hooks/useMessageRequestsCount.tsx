@@ -1,10 +1,10 @@
-// Module ID: 19330
-// Function ID: 19331
+// Module ID: 19343
+// Function ID: 19344
 // Name: useMessageRequestsCount
 // Dependencies: [6911, 504, 2]
 // Exports: useMessageRequestsCount
 
-// Module 19330 (useMessageRequestsCount)
+// Module 19343 (useMessageRequestsCount)
 import get_initialized from "get initialized" /* 504 */;
 import MessageRequestStore from "MessageRequestStore" /* 6911 */;
 import size from "module_2" /* 2 */;

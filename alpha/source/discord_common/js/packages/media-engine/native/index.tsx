@@ -265,7 +265,7 @@ class MediaEngineNative extends TypedEventEmitter {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -321,7 +321,7 @@ class MediaEngineNative extends TypedEventEmitter {
               const timerId = setTimeout(closure_129_2, periodMs);
             }
             c3 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           } catch (tmp21) {
             c3 = 3;
             throw tmp21;
@@ -777,7 +777,7 @@ class MediaEngineNative extends TypedEventEmitter {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -823,7 +823,7 @@ class MediaEngineNative extends TypedEventEmitter {
               voiceEngine.setInputDevice(index.index);
             }
             c4 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp18) {
           c4 = 3;
@@ -864,7 +864,7 @@ class MediaEngineNative extends TypedEventEmitter {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -910,7 +910,7 @@ class MediaEngineNative extends TypedEventEmitter {
               voiceEngine.setOutputDevice(index.index);
             }
             c4 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp18) {
           c4 = 3;
@@ -937,7 +937,7 @@ class MediaEngineNative extends TypedEventEmitter {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -1012,7 +1012,7 @@ class MediaEngineNative extends TypedEventEmitter {
               const item = connections.forEach((setVideoBroadcast) => setVideoBroadcast.setVideoBroadcast(closure_1_1.shouldConnectionBroadcastVideo(setVideoBroadcast)));
             }
             c3 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp42) {
           c3 = 3;
@@ -1169,7 +1169,7 @@ class MediaEngineNative extends TypedEventEmitter {
             } else if (arg0 === 2) {
               return { value, done: true };
             } else {
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           } else {
             try {
@@ -1243,7 +1243,7 @@ class MediaEngineNative extends TypedEventEmitter {
                   const result2 = signalSnapshotProcessed(closure_0);
                 }
                 c10 = 3;
-                return { value: "HermesInternal", done: "HermesInternal" };
+                return { value: "HermesInternal", done: null };
               }
             } catch (tmp44) {
               closure_7 = tmp44;
@@ -2344,7 +2344,7 @@ class MediaEngineNative extends TypedEventEmitter {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -2390,7 +2390,7 @@ class MediaEngineNative extends TypedEventEmitter {
               closure_129_1.emit(tmp(c2[10]).MediaEngineEvent.DeviceChange, closure_2, closure_3, closure_4);
             }
             c3 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp16) {
           c3 = 3;

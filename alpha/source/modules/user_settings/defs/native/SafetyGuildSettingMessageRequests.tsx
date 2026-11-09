@@ -1,9 +1,9 @@
-// Module ID: 18240
-// Function ID: 18241
+// Module ID: 18253
+// Function ID: 18254
 // Name: SafetyGuildSettingMessageRequests
-// Dependencies: [5011, 18230, 8503, 11686, 18241, 17027, 4965, 6090, 1113, 6162, 18242, 8024, 6784, 7227, 18233, 11685, 2]
+// Dependencies: [5011, 18243, 8503, 11686, 18254, 17038, 4965, 6090, 1113, 6162, 18255, 8024, 6784, 7227, 18246, 11685, 2]
 
-// Module 18240 (SafetyGuildSettingMessageRequests)
+// Module 18253 (SafetyGuildSettingMessageRequests)
 import intl5 from "intl" /* 1113 */;
 import UserSettings from "UserSettings" /* 4965 */;
 import AlertActionCreatorsDefault from "AlertActionCreators" /* 6090 */;
@@ -12,12 +12,12 @@ import UserSettingsUtils from "UserSettingsUtils" /* 7227 */;
 import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8024 */;
 import SettingsConstants from "SettingsConstants" /* 8503 */;
 import SettingRendererConstants from "SettingRendererConstants" /* 11686 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 17027 */;
-import DefultGuildsRestrictedSetting from "DefultGuildsRestrictedSetting" /* 18233 */;
-import useShouldDisableMessageRequestSettings from "useShouldDisableMessageRequestSettings" /* 18241 */;
-import DefaultDMSettingsExperiment from "DefaultDMSettingsExperiment" /* 18242 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 17038 */;
+import DefultGuildsRestrictedSetting from "DefultGuildsRestrictedSetting" /* 18246 */;
+import useShouldDisableMessageRequestSettings from "useShouldDisableMessageRequestSettings" /* 18254 */;
+import DefaultDMSettingsExperiment from "DefaultDMSettingsExperiment" /* 18255 */;
 import GuildStore from "GuildStore" /* 5011 */;
-import UserSettingsSafetySelectedGuildStore from "UserSettingsSafetySelectedGuildStore" /* 18230 */;
+import UserSettingsSafetySelectedGuildStore from "UserSettingsSafetySelectedGuildStore" /* 18243 */;
 import SettingBuilders from "SettingBuilders" /* 11685 */;
 import size from "module_2" /* 2 */;
 

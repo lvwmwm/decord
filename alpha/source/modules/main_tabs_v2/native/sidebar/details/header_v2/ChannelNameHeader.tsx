@@ -1,9 +1,9 @@
-// Module ID: 19158
-// Function ID: 19159
+// Module ID: 19171
+// Function ID: 19172
 // Name: ChannelNameHeader
 // Dependencies: [19, 17, 4989, 5011, 5072, 5890, 1385, 1072, 21, 5140, 575, 504, 1187, 5776, 1499, 5885, 7043, 5751, 1113, 6178, 3962, 10918, 8674, 10891, 7387, 8821, 2]
 
-// Module 19158 (ChannelNameHeader)
+// Module 19171 (ChannelNameHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;

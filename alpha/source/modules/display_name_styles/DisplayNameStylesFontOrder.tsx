@@ -1,10 +1,10 @@
-// Module ID: 17639
-// Function ID: 17640
+// Module ID: 17650
+// Function ID: 17651
 // Name: DisplayNameStylesFontOrder
 // Dependencies: [19, 1394, 5165, 5168, 2]
 // Exports: useVisibleFontOrder
 
-// Module 17639 (DisplayNameStylesFontOrder)
+// Module 17650 (DisplayNameStylesFontOrder)
 import react from "react" /* 19 */;
 import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1394 */;
 import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5165 */;

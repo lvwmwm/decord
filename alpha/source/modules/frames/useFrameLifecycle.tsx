@@ -1,10 +1,10 @@
-// Module ID: 19016
-// Function ID: 19017
+// Module ID: 19029
+// Function ID: 19030
 // Name: useFrameLifecycle
-// Dependencies: [32, 5, 19, 6902, 11061, 19017, 19018, 6936, 2148, 5796, 2]
+// Dependencies: [32, 5, 19, 6902, 11061, 19030, 19031, 6936, 2148, 5796, 2]
 // Exports: default
 
-// Module 19016 (useFrameLifecycle)
+// Module 19029 (useFrameLifecycle)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -108,7 +108,7 @@ export default function useFrameLifecycle(applicationId) {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           let c2;
@@ -148,7 +148,7 @@ export default function useFrameLifecycle(applicationId) {
                 c2 = 0;
               }
               c3 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp12) {
             if (0 === c2) {

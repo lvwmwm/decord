@@ -1,13 +1,13 @@
-// Module ID: 17721
-// Function ID: 17722
+// Module ID: 17732
+// Function ID: 17733
 // Name: SyncReducedMotionWithDeviceSetting
-// Dependencies: [5141, 8503, 504, 16573, 11685, 1113, 2]
+// Dependencies: [5141, 8503, 504, 16583, 11685, 1113, 2]
 
-// Module 17721 (SyncReducedMotionWithDeviceSetting)
+// Module 17732 (SyncReducedMotionWithDeviceSetting)
 import get_initialized from "get initialized" /* 504 */;
 import intl2 from "intl" /* 1113 */;
 import SettingsConstants from "SettingsConstants" /* 8503 */;
-import AccessibilityActionCreators from "AccessibilityActionCreators" /* 16573 */;
+import AccessibilityActionCreators from "AccessibilityActionCreators" /* 16583 */;
 import AccessibilityStore from "AccessibilityStore" /* 5141 */;
 import SettingBuilders from "SettingBuilders" /* 11685 */;
 import size from "module_2" /* 2 */;

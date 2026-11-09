@@ -1,41 +1,42 @@
 // Module ID: 16475
 // Function ID: 16476
-// Dependencies: [16438, 16436, 16454, 16476, 16477]
+// Dependencies: [16467, 16466, 16474]
 
 // Module 16475
-import _mod16436 from "module_16436" /* 16436 */;
-import _mod16438 from "module_16438" /* 16438 */;
-import _mod16454 from "module_16454" /* 16454 */;
-import _mod16476 from "module_16476" /* 16476 */;
+import _mod16466 from "module_16466" /* 16466 */;
+import _mod16467 from "module_16467" /* 16467 */;
+import _mod16474 from "module_16474" /* 16474 */;
 
-let closure_2 = _mod16438([].push);
 
 export default (arg0, arg1) => {
-  let num;
-  const tmp = _mod16436(arg0);
-  const items = [];
-  for (const key10010 in tmp) {
-    let tmp12 = require;
-    let tmp14 = _mod16454;
-    let tmp14Result = tmp14(_mod16476, key10010);
-    let tmp2 = !tmp14Result && tmp12(16454)(tmp, key10010);
-    if (!tmp2) {
-      continue;
-    } else {
-      let tmp4 = closure_2(items, key10010);
-      continue;
-    }
-    continue;
-  }
-  for (let num = 0; arg1.length > num; num = num + 1) {
-    let tmp5 = require;
-    let tmp7 = arg1[num];
-    if (_mod16454(tmp, tmp7)) {
-      let tmp5Result = tmp5(16477);
-      if (!(~tmp5Result.indexOf(items, tmp7))) {
-        let tmp10 = closure_2(items, tmp7);
+  if ("string" === arg1) {
+    const toString = arg0.toString;
+    if (_mod16467(toString)) {
+      const tmpResult = _mod16466;
+      const tmp4 = _mod16474(toString, arg0);
+      if (!tmpResult(tmp4)) {
+        return tmp4;
       }
     }
   }
-  return items;
+  const valueOf = arg0.valueOf;
+  if (_mod16467(valueOf)) {
+    const tmp5Result = _mod16466;
+    const tmp8 = _mod16474(valueOf, arg0);
+    if (!tmp5Result(tmp8)) {
+      return tmp8;
+    }
+  }
+  if ("string" !== arg1) {
+    const toString2 = arg0.toString;
+    if (_mod16467(toString2)) {
+      const tmp5Result2 = _mod16466;
+      const tmp10 = _mod16474(toString2, arg0);
+      if (!tmp5Result2(tmp10)) {
+        return tmp10;
+      }
+    }
+  }
+  const tmp11 = new TypeError("Can't convert object to primitive value");
+  throw tmp11;
 };

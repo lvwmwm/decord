@@ -1,10 +1,10 @@
-// Module ID: 13510
-// Function ID: 13511
+// Module ID: 13511
+// Function ID: 13512
 // Name: conjureServerAppRemoval
 // Dependencies: [5, 19, 2162, 5070, 5052, 5011, 5072, 5082, 1385, 1072, 11016, 5776, 504, 12, 6957, 7483, 6936, 2]
 // Exports: conjureDeleteAppChannelItems, conjureKickAppItems, loadConjureServerApp, useConjureServerApp
 
-// Module 13510 (conjureServerAppRemoval)
+// Module 13511 (conjureServerAppRemoval)
 import Constants from "Constants" /* 1072 */;
 import GuildChannelStore2 from "GuildChannelStore" /* 5070 */;
 import ApplicationActionCreators from "ApplicationActionCreators" /* 6936 */;
@@ -24,11 +24,11 @@ const require = globalThis.__r;
 const GuildChannelStore = GuildChannelStore2;
 let _require, c1, c2, c4, set, user;
 
-const f105932 = (id) => {
+const f105974 = (id) => {
   obj = { key: "channel:" + id.id, kind: "channel", label: "#" + id.name };
   return obj;
 };
-const f105933 = () => {
+const f105975 = () => {
 
 };
 function conjureApplicationIdForBot(userId) {
@@ -226,7 +226,7 @@ function fetchMissingApplication(item10010) {
   if (!tmp) {
     const obj2 = ApplicationActionCreators;
     const application = obj2.fetchApplication(item10010);
-    application.catch(f105933);
+    application.catch(f105975);
   }
 }
 function loadMissingApplication() {
@@ -245,7 +245,7 @@ obj = function _loadMissingApplication() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -283,7 +283,7 @@ obj = function _loadMissingApplication() {
           return obj;
         }
         c1 = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp6) {
         c1 = 3;
         throw tmp6;
@@ -324,7 +324,7 @@ export function useConjureServerApp(guildId, applicationId) {
       if (!tmp2) {
         const obj2 = ApplicationActionCreators;
         application = obj2.fetchApplication(tmp);
-        application.catch(f105933);
+        application.catch(f105975);
       }
     }
   }, items2);
@@ -426,7 +426,7 @@ export function loadConjureServerApp() {
 }
 export function conjureKickAppItems(rest) {
   const channels = rest.channels;
-  const items = [...channels.map(f105932)];
+  const items = [...channels.map(f105974)];
   if (rest.targetIsPreview) {
     obj = { key: "main-app", kind: "app", label: rest.appName };
     const obj2 = { key: "main-app", kind: "app", label: rest.appName };
@@ -440,7 +440,7 @@ export function conjureDeleteAppChannelItems(rest, channelId) {
   let closure_0 = channelId;
   const channels = rest.channels;
   const found = channels.filter((id) => id.id !== channelId);
-  const items = [...found.map(f105932), obj, obj2];
+  const items = [...found.map(f105974), obj, obj2];
   obj = { key: "main-app", kind: "app", label: rest.appName };
   return items;
 }

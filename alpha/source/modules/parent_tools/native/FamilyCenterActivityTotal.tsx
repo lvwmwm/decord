@@ -1,15 +1,15 @@
-// Module ID: 17106
-// Function ID: 17107
+// Module ID: 17117
+// Function ID: 17118
 // Name: FamilyCenterActivityTotal
-// Dependencies: [19, 17, 21, 5140, 575, 17105, 8443, 5751, 2]
+// Dependencies: [19, 17, 21, 5140, 575, 17116, 8443, 5751, 2]
 // Exports: default
 
-// Module 17106 (FamilyCenterActivityTotal)
+// Module 17117 (FamilyCenterActivityTotal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Text_Text from "Text/Text" /* 5751 */;
 import FamilyCenterUtils from "FamilyCenterUtils" /* 8443 */;
-import useFamilyCenterActivities from "useFamilyCenterActivities" /* 17105 */;
+import useFamilyCenterActivities from "useFamilyCenterActivities" /* 17116 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5140 */;

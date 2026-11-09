@@ -46,7 +46,7 @@ export function registerWebWorker(self) {
   }
 }
 export const webWorkerIntegration = registerSpanErrorInstrumentation.defineIntegration((worker) => {
-  const f81330 = (event) => {
+  const f81373 = (event) => {
     let obj5;
     const data = event.data;
     let obj = closure_0(closure_1[0]);
@@ -183,11 +183,11 @@ export const webWorkerIntegration = registerSpanErrorInstrumentation.defineInteg
         arr = items;
       }
       const item = arr.forEach((addEventListener) => {
-        const listener = addEventListener.addEventListener("message", f81330);
+        const listener = addEventListener.addEventListener("message", f81373);
       });
     },
     addWorker(addEventListener) {
-      const listener = addEventListener.addEventListener("message", f81330);
+      const listener = addEventListener.addEventListener("message", f81373);
     }
   };
   return obj;

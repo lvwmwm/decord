@@ -1,9 +1,9 @@
-// Module ID: 18084
-// Function ID: 18085
+// Module ID: 18097
+// Function ID: 18098
 // Name: DesignSystemsLegacyButtonSetting
-// Dependencies: [8503, 1072, 11685, 18085, 2]
+// Dependencies: [8503, 1072, 11685, 18098, 2]
 
-// Module 18084 (DesignSystemsLegacyButtonSetting)
+// Module 18097 (DesignSystemsLegacyButtonSetting)
 import Constants from "Constants" /* 1072 */;
 import SettingsConstants from "SettingsConstants" /* 8503 */;
 import SettingBuilders from "SettingBuilders" /* 11685 */;

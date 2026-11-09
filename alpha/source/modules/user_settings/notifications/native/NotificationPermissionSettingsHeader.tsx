@@ -1,16 +1,16 @@
-// Module ID: 17789
-// Function ID: 17790
+// Module ID: 17800
+// Function ID: 17801
 // Name: NotificationPermissionSettingsHeader
-// Dependencies: [19, 17, 1072, 14207, 21, 5140, 575, 14208, 1252, 7040, 11122, 5751, 1113, 5758, 2]
+// Dependencies: [19, 17, 1072, 14208, 21, 5140, 575, 14209, 1252, 7040, 11122, 5751, 1113, 5758, 2]
 // Exports: default
 
-// Module 17789 (NotificationPermissionSettingsHeader)
+// Module 17800 (NotificationPermissionSettingsHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
-import NotificationPermissionConstants from "NotificationPermissionConstants" /* 14207 */;
+import NotificationPermissionConstants from "NotificationPermissionConstants" /* 14208 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
@@ -56,7 +56,7 @@ export default function NotificationPermissionSettingsHeader() {
   let obj4;
   let obj6;
   let tmp = closure_13();
-  let obj = canSeePushNotificationNudge(14208);
+  let obj = canSeePushNotificationNudge(14209);
   canSeePushNotificationNudge = obj.useCanSeePushNotificationNudge();
   const items = [canSeePushNotificationNudge];
   const effect = react.useEffect(() => {

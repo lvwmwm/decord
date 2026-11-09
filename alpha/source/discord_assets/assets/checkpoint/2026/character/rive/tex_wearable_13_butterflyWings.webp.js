@@ -1,8 +1,8 @@
-// Module ID: 13861
-// Function ID: 13862
+// Module ID: 13862
+// Function ID: 13863
 // Dependencies: [2]
 
-// Module 13861
+// Module 13862
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/rive/tex_wearable_13_butterflyWings.webp.js");

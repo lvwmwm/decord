@@ -1,20 +1,20 @@
-// Module ID: 19714
-// Function ID: 19715
+// Module ID: 19727
+// Function ID: 19728
 // Name: VoicePanelRaiseHandButton
-// Dependencies: [19, 4989, 21, 19697, 12067, 12073, 11328, 19698, 1113, 11362, 504, 2]
+// Dependencies: [19, 4989, 21, 19710, 12067, 12073, 11328, 19711, 1113, 11362, 504, 2]
 // Exports: default
 
-// Module 19714 (VoicePanelRaiseHandButton)
+// Module 19727 (VoicePanelRaiseHandButton)
 import Fragment from "Fragment" /* 21 */;
 import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11362 */;
 import useRaiseHandControlDefault from "useRaiseHandControl" /* 12067 */;
-import VoicePanelStyles from "VoicePanelStyles" /* 19697 */;
+import VoicePanelStyles from "VoicePanelStyles" /* 19710 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4989 */;
 import size from "module_2" /* 2 */;
 
 let tmp4;
-const VoicePanelAnimatedButtonWrapperDefault = tmp4(19698);
+const VoicePanelAnimatedButtonWrapperDefault = tmp4(19711);
 function RaiseHandButtonInner(arg0) {
   let channel;
   let disabled;

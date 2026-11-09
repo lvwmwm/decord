@@ -1,15 +1,15 @@
 // Module ID: 10810
 // Function ID: 10811
 // Name: SocialLayerStorefrontGiftModal
-// Dependencies: [19, 6951, 1072, 21, 504, 7387, 7412, 1377, 10031, 5721, 1252, 10788, 2183, 10811, 1113, 10808, 10795, 10812, 14658, 14659, 2]
+// Dependencies: [19, 6951, 1072, 21, 504, 7387, 7412, 1377, 10031, 5721, 1252, 10788, 2183, 10811, 1113, 10808, 10795, 10812, 14659, 14660, 2]
 // Exports: default
 
 // Module 10810 (SocialLayerStorefrontGiftModal)
 import Fragment from "Fragment" /* 21 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import SocialLayerStorefrontNativeActionCreators from "SocialLayerStorefrontNativeActionCreators" /* 10788 */;
-import SocialLayerStorefrontGiftProductDetailsDefault from "SocialLayerStorefrontGiftProductDetails" /* 14658 */;
-import SocialLayerStorefrontGiftPurchaseSectionDefault from "SocialLayerStorefrontGiftPurchaseSection" /* 14659 */;
+import SocialLayerStorefrontGiftProductDetailsDefault from "SocialLayerStorefrontGiftProductDetails" /* 14659 */;
+import SocialLayerStorefrontGiftPurchaseSectionDefault from "SocialLayerStorefrontGiftPurchaseSection" /* 14660 */;
 import react from "react" /* 19 */;
 import SKUStore from "SKUStore" /* 6951 */;
 import Constants from "Constants" /* 1072 */;

@@ -1,16 +1,16 @@
-// Module ID: 16650
-// Function ID: 16651
+// Module ID: 16660
+// Function ID: 16661
 // Name: commands/userProfile
-// Dependencies: [5, 6583, 1072, 16606, 16599, 16651, 2]
+// Dependencies: [5, 6583, 1072, 16616, 16609, 16661, 16662, 2]
 
-// Module 16650 (commands/userProfile)
+// Module 16660 (commands/userProfile)
 import Constants from "Constants" /* 1072 */;
 import Constants2 from "Constants" /* 6583 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import CONTEXT_MENU_ICON_NAMES from "CONTEXT_MENU_ICON_NAMES" /* 16606 */;
+import CONTEXT_MENU_ICON_NAMES from "CONTEXT_MENU_ICON_NAMES" /* 16616 */;
 import size from "module_2" /* 2 */;
 
-let c2, c3;
+let c1, c2, c3, iframeId;
 
 const RPC_EMBEDDED_APP_SCOPE = Constants2.RPC_EMBEDDED_APP_SCOPE;
 const RPCCommands = Constants.RPCCommands;
@@ -25,6 +25,10 @@ let obj2 = {
     return (async function(arg0, value) {
       let closure_0;
       let closure_1;
+      let closure_129_0;
+      let closure_129_1;
+      let closure_129_2;
+      let frame;
       if (c3 === 2) {
         c3 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
@@ -35,7 +39,7 @@ let obj2 = {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -50,7 +54,10 @@ let obj2 = {
               const obj4 = { value, done: true };
               return obj4;
             } else {
-              let iframeId = user_id(c2[4])(socket).iframeId;
+              ({ iframeId: closure_129_0, frame } = user_id(c2[4])(socket));
+              const tmp17 = user_id(c2[4])(socket);
+              ({ guildId: closure_129_1, channelId: closure_129_2 } = user_id(c2[5])(frame));
+              const tmp18 = user_id(c2[5])(frame);
               value = weakMap.get(socket);
               socket = value;
               const obj8 = weakMap;
@@ -60,11 +67,11 @@ let obj2 = {
                 socket = { inFlight: false, readyAt: 0 };
               }
               const tmp4 = socket;
-              user_id = socket;
+              let closure_3 = socket;
               if (!socket.inFlight) {
                 const _Date = Date;
                 if (Date.now() >= tmp4.readyAt) {
-                  const obj3 = socket(tmp15[5]);
+                  const obj3 = socket(tmp15[6]);
                   if (!obj3.isAnyUserProfileOpen()) {
                     const flag = true;
                     tmp4.inFlight = true;
@@ -74,28 +81,30 @@ let obj2 = {
                     const self2 = this;
                     const promise = new Promise((fn) => {
                       iframeId = fn;
-                      let c1 = false;
-                      const obj = closure_2_0(closure_2_2[5]);
+                      const guildId = false;
+                      const obj = closure_2_0(closure_2_2[6]);
                       const obj2 = {
                         userId,
                         iframeId,
+                        guildId,
+                        channelId,
                         onOpen() {
                           const tmp = c1;
                           if (!tmp) {
-                            userId.inFlight = false;
+                            closure_3.inFlight = false;
                             fn(true);
                           }
                         },
                         onClose() {
                           c1 = true;
-                          userId.inFlight = false;
-                          userId.readyAt = Date.now() + 1000;
+                          closure_3.inFlight = false;
+                          closure_3.readyAt = Date.now() + 1000;
                           fn(false);
                         }
                       };
                       if (!obj.openUserProfile(obj2)) {
-                        let tmp = c1;
-                        c1.inFlight = false;
+                        let tmp = closure_3;
+                        closure_3.inFlight = false;
                         fn(false);
                       }
                     });

@@ -1,16 +1,16 @@
-// Module ID: 19063
-// Function ID: 19064
+// Module ID: 19076
+// Function ID: 19077
 // Name: SearchHistoryRow
-// Dependencies: [5, 19, 17, 4989, 6897, 1385, 9917, 21, 5140, 575, 14144, 7043, 7120, 19052, 14140, 19047, 5751, 7283, 563, 19062, 8823, 7549, 19061, 19064, 19077, 1113, 2]
+// Dependencies: [5, 19, 17, 4989, 6897, 1385, 9917, 21, 5140, 575, 14145, 7043, 7120, 19065, 14141, 19060, 5751, 7283, 563, 19075, 8823, 7549, 19074, 19077, 19090, 1113, 2]
 
-// Module 19063 (SearchHistoryRow)
+// Module 19076 (SearchHistoryRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Text_Text from "Text/Text" /* 5751 */;
 import UserActionCreators from "UserActionCreators" /* 8823 */;
 import SearchConstants from "SearchConstants" /* 9917 */;
-import TrackingDefault from "Tracking" /* 14140 */;
-import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 14144 */;
+import TrackingDefault from "Tracking" /* 14141 */;
+import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 14145 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4989 */;
@@ -46,7 +46,7 @@ function SearchHistoryTextRow(searchContext) {
   const searchHistoryItem = searchContext.searchHistoryItem;
   const tmp = closure_12();
   dependencyMap = tmp;
-  let obj = searchContext(19052);
+  let obj = searchContext(19065);
   const onPressSearchHistoryText = obj.useOnPressSearchHistoryText({ searchContext });
   const items = [onPressSearchHistoryText, searchContext, , , ];
   ({ tags: arr[2], text: arr[3], type: arr[4] } = searchHistoryItem);
@@ -59,7 +59,7 @@ function SearchHistoryTextRow(searchContext) {
   let obj2 = { style: tmp.textContainer, children: items1 };
   const tags = searchHistoryItem.tags;
   let mapped;
-  const SearchListRow = searchContext(19047).SearchListRow;
+  const SearchListRow = searchContext(19060).SearchListRow;
   const tmp7 = closure_11;
   if (tags != null) {
     mapped = tags.map((children) => {
@@ -153,7 +153,7 @@ function SearchHistoryDMRow(searchContext) {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -186,7 +186,7 @@ function SearchHistoryDMRow(searchContext) {
             const result = obj6.trackSearchHistoryClicked(obj7);
             tmp4(searchContext, channelId);
             c4 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp8) {
           c4 = 3;

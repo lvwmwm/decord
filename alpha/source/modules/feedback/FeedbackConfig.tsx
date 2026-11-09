@@ -1,11 +1,11 @@
-// Module ID: 19845
-// Function ID: 19846
+// Module ID: 19858
+// Function ID: 19859
 // Name: FeedbackConfig
-// Dependencies: [5893, 10279, 7441, 19846, 2]
+// Dependencies: [5893, 10279, 7441, 19859, 2]
 
-// Module 19845 (FeedbackConfig)
+// Module 19858 (FeedbackConfig)
 import HotspotStore from "HotspotStore" /* 7441 */;
-import SearchResultsFeedbackExperiment from "SearchResultsFeedbackExperiment" /* 19846 */;
+import SearchResultsFeedbackExperiment from "SearchResultsFeedbackExperiment" /* 19859 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 5893 */;
 import Constants from "Constants" /* 10279 */;
 import size from "module_2" /* 2 */;

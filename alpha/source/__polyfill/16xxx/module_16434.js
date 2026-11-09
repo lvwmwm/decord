@@ -1,16 +1,7 @@
 // Module ID: 16434
 // Function ID: 16435
-// Dependencies: [16435]
+// Dependencies: []
 
 // Module 16434
-import _mod16435 from "module_16435" /* 16435 */;
 
-
-export default !_mod16435(() => {
-  const obj = {
-    get() {
-      return 7;
-    }
-  };
-  return 7 !== Object.defineProperty({}, 1, obj)[1];
-});
+export const units = ["degree", "acre", "hectare", "percent", "bit", "byte", "gigabit", "gigabyte", "kilobit", "kilobyte", "megabit", "megabyte", "petabyte", "terabit", "terabyte", "day", "hour", "millisecond", "minute", "month", "second", "week", "year", "centimeter", "foot", "inch", "kilometer", "meter", "mile-scandinavian", "mile", "millimeter", "yard", "gram", "kilogram", "ounce", "pound", "stone", "celsius", "fahrenheit", "fluid-ounce", "gallon", "liter", "milliliter"];

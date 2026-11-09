@@ -1,18 +1,18 @@
-// Module ID: 17498
-// Function ID: 17499
+// Module ID: 17509
+// Function ID: 17510
 // Name: QuestDockBountyBackground
-// Dependencies: [19, 17, 17380, 6836, 17382, 21, 5140, 563, 17486, 17487, 17411, 9785, 5724, 575, 671, 17485, 2]
+// Dependencies: [19, 17, 17391, 6836, 17393, 21, 5140, 563, 17497, 17498, 17422, 9785, 5724, 575, 671, 17496, 2]
 
-// Module 17498 (QuestDockBountyBackground)
+// Module 17509 (QuestDockBountyBackground)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
 import QuestConstants from "QuestConstants" /* 6836 */;
 import AssetUtils from "AssetUtils" /* 9785 */;
-import QuestDockConstants from "QuestDockConstants" /* 17382 */;
+import QuestDockConstants from "QuestDockConstants" /* 17393 */;
 import react from "react" /* 19 */;
-import QuestDockStore from "QuestDockStore" /* 17380 */;
+import QuestDockStore from "QuestDockStore" /* 17391 */;
 import createStyles from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -23,8 +23,8 @@ function QuestDockBackgroundSmokeArt() {
   const tmp = closure_9();
   const obj = width(563);
   const stateFromStores = obj.useStateFromStores(items, () => QuestDockStore.prevRestingQuestDockMode);
-  const tmp7 = height(17486)(QuestDockMode.EXPANDED);
-  const obj2 = width(17487);
+  const tmp7 = height(17497)(QuestDockMode.EXPANDED);
+  const obj2 = width(17498);
   size = obj2.useSmokeArtSize();
   const tmp2 = width;
   width = size.width;
@@ -35,8 +35,8 @@ function QuestDockBackgroundSmokeArt() {
   const tmp6 = QuestDockMode;
   if (tmp7) {
     const items2 = [tmp.smokeArtWrapper, tmp8];
-    ({ surface: tmp2(17487).QuestDockBountySmokeSurface.EXPANDED, paused: stateFromStores !== tmp6.EXPANDED });
-    tmp5(17487);
+    ({ surface: tmp2(17498).QuestDockBountySmokeSurface.EXPANDED, paused: stateFromStores !== tmp6.EXPANDED });
+    tmp5(17498);
     tmp9 = <View style={items2}>{null}</View>;
   }
   return tmp9;
@@ -50,7 +50,7 @@ const memoResult = react.memo(function QuestDockBountyBackground(previewImageUrl
   let questDockBounty;
   let token;
   previewImageUrl = previewImageUrl.previewImageUrl;
-  let obj = questDockBounty(17411);
+  let obj = questDockBounty(17422);
   questDockBounty = obj.useQuestDockBounty();
   const items = [questDockBounty.videoPreview];
   const memo = react.useMemo(() => {
@@ -65,8 +65,8 @@ const memoResult = react.memo(function QuestDockBountyBackground(previewImageUrl
     const mixResult = obj.mix(token, nativeDefault.unsafe_rawColors.BLACK, 0.77, "rgb");
     return mixResult.hex();
   }, items1);
-  token(17485);
-  return <tmp5 imageUrl={previewImageUrl} videoUrl={questDockBounty.videoPreview} videoMimetype={memo} collapsedMediaMode={questDockBounty(17485).QuestDockBackgroundCollapsedMediaMode.HIDDEN} gradientBaseColor={memo1} backdropColor={memo1} expandedHeight={expandedHeight} foregroundContent={null} />;
+  token(17496);
+  return <tmp5 imageUrl={previewImageUrl} videoUrl={questDockBounty.videoPreview} videoMimetype={memo} collapsedMediaMode={questDockBounty(17496).QuestDockBackgroundCollapsedMediaMode.HIDDEN} gradientBaseColor={memo1} backdropColor={memo1} expandedHeight={expandedHeight} foregroundContent={null} />;
 });
 let size = size_mod;
 const result = size.fileFinishedImporting("modules/quests/native/QuestDock/QuestDockBountyBackground.tsx");

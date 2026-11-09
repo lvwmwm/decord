@@ -1,9 +1,9 @@
-// Module ID: 20003
-// Function ID: 20004
+// Module ID: 20016
+// Function ID: 20017
 // Name: MessageRemindersNotificationManager
 // Dependencies: [10310, 572, 1089, 7350, 2]
 
-// Module 20003 (MessageRemindersNotificationManager)
+// Module 20016 (MessageRemindersNotificationManager)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import SavedMessagesStore from "SavedMessagesStore" /* 10310 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7350 */;

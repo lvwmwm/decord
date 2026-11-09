@@ -1,10 +1,10 @@
-// Module ID: 15775
-// Function ID: 15776
+// Module ID: 15785
+// Function ID: 15786
 // Name: SubscribeModalConfirmation
-// Dependencies: [5, 19, 17, 14378, 5011, 7661, 2176, 1072, 7693, 21, 5140, 5137, 575, 504, 8534, 5842, 15776, 5751, 1113, 15777, 15778, 5758, 15787, 5715, 1092, 1252, 15741, 38, 8536, 6091, 15791, 2118, 2]
+// Dependencies: [5, 19, 17, 14379, 5011, 7661, 2176, 1072, 7693, 21, 5140, 5137, 575, 504, 8534, 5842, 15786, 5751, 1113, 15787, 15788, 5758, 15797, 5715, 1092, 1252, 15751, 38, 8536, 6091, 15801, 2118, 2]
 // Exports: default
 
-// Module 15775 (SubscribeModalConfirmation)
+// Module 15785 (SubscribeModalConfirmation)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl6 from "intl" /* 1113 */;
@@ -14,13 +14,13 @@ import components_Button_Button from "components/Button/Button" /* 5758 */;
 import FastImageDefault from "FastImage" /* 5842 */;
 import ColorConstants from "ColorConstants" /* 7693 */;
 import GuildBoostingUtils from "GuildBoostingUtils" /* 8534 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15776 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 15777 */;
-import PremiumGuildPreviewDefault from "PremiumGuildPreview" /* 15778 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15786 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 15787 */;
+import PremiumGuildPreviewDefault from "PremiumGuildPreview" /* 15788 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AppliedGuildBoostStore from "AppliedGuildBoostStore" /* 14378 */;
+import AppliedGuildBoostStore from "AppliedGuildBoostStore" /* 14379 */;
 import GuildStore from "GuildStore" /* 5011 */;
 import GuildBoostSlotStore from "GuildBoostSlotStore" /* 7661 */;
 import SubscriptionStore from "SubscriptionStore" /* 2176 */;
@@ -151,7 +151,7 @@ function TransferConfirmation(previousGuildSubscriptionSlots) {
   const onPremiumGuildSubscribe = previousGuildSubscriptionSlots.onPremiumGuildSubscribe;
   ({ guild, isModifyingSubscription } = previousGuildSubscriptionSlots);
   const tmp = closure_20();
-  const obj = prop(15787);
+  const obj = prop(15797);
   const guildSubscriptionRemovalSource = obj.useGuildSubscriptionRemovalSource();
   const items = [GuildStore];
   const obj2 = prop(504);
@@ -188,13 +188,13 @@ function TransferConfirmation(previousGuildSubscriptionSlots) {
     intl3 = tmp2(1113).intl;
     items2 = [closure_17(Text3, obj10), , , ];
     const obj11 = { style: tmp.guildPreview, guild: stateFromStores };
-    items2[1] = closure_17(onPremiumGuildSubscribe(15778), obj11);
+    items2[1] = closure_17(onPremiumGuildSubscribe(15788), obj11);
     const obj12 = { style: tmp.previewHeader, variant: "body-sm/medium", color: "text-default", children: intl4.format(prop(1113).t.ct6oxD, obj13) };
     const Text4 = tmp2(5751).Text;
     intl4 = tmp2(1113).intl;
     obj13 = { slotCount: prop.length };
     items2[2] = closure_17(Text4, obj12);
-    const obj14 = { style: items3, start: prop(1092).HorizontalGradient.START, end: prop(1092).HorizontalGradient.END, colors: Gradients.PREMIUM_GUILD, children: closure_17(onPremiumGuildSubscribe(15778), obj15) };
+    const obj14 = { style: items3, start: prop(1092).HorizontalGradient.START, end: prop(1092).HorizontalGradient.END, colors: Gradients.PREMIUM_GUILD, children: closure_17(onPremiumGuildSubscribe(15788), obj15) };
     items3 = [, ];
     ({ guildPreview: arr5[0], activeTransferGuildCardBorder: arr5[1] } = tmp);
     obj15 = { guild };
@@ -258,7 +258,7 @@ export default function SubscribeModalConfirmation(arg0) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c4;
@@ -374,7 +374,7 @@ export default function SubscribeModalConfirmation(arg0) {
               c4 = 0;
             }
             c6 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
           const obj12 = { disablePowerupAutoApply: null != closure_130_3 };
           c5 = 3;

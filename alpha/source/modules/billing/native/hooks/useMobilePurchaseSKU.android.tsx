@@ -139,7 +139,7 @@ export default function useMobilePurchaseSKU(skuId) {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -180,7 +180,7 @@ export default function useMobilePurchaseSKU(skuId) {
               }
               closure_1_8();
               v3 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           } else if (1 === c5) {
             c4 = 0;
@@ -260,7 +260,7 @@ export default function useMobilePurchaseSKU(skuId) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c4;
@@ -406,7 +406,7 @@ export default function useMobilePurchaseSKU(skuId) {
           }
           c4 = 0;
           c6 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
         const obj15 = { productId: closure_130_1, skuId: closure_130_0, isOneTimePurchase: true, analyticsLoadId: closure_130_3, analyticsLocations: closure_130_2, analyticsData: closure_130_4, isGift: closure_130_19, giftInfoOptions: options, googleOfferId: closure_130_17, onPurchaseError: closure_130_22 };
         options = undefined;

@@ -1,9 +1,9 @@
-// Module ID: 17001
-// Function ID: 17002
+// Module ID: 17012
+// Function ID: 17013
 // Name: AccountWebAuthnNameSetting
-// Dependencies: [8503, 1072, 11685, 1113, 17002, 2]
+// Dependencies: [8503, 1072, 11685, 1113, 17013, 2]
 
-// Module 17001 (AccountWebAuthnNameSetting)
+// Module 17012 (AccountWebAuthnNameSetting)
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import SettingsConstants from "SettingsConstants" /* 8503 */;

@@ -1,9 +1,9 @@
-// Module ID: 16268
-// Function ID: 16269
+// Module ID: 16278
+// Function ID: 16279
 // Name: AppCrashedReasons
 // Dependencies: [2]
 
-// Module 16268 (AppCrashedReasons)
+// Module 16278 (AppCrashedReasons)
 import size from "module_2" /* 2 */;
 
 const obj = { ALL: new Set(["socket_crashed", "unhandled_js_error", "unhandled_native_error"]) };

@@ -1,17 +1,17 @@
-// Module ID: 15447
-// Function ID: 15448
+// Module ID: 15457
+// Function ID: 15458
 // Name: InAppReportsExternalLinkElement
-// Dependencies: [17, 21, 5140, 575, 5751, 1113, 8432, 15448, 5834, 2]
+// Dependencies: [17, 21, 5140, 575, 5751, 1113, 8432, 15458, 5834, 2]
 // Exports: default
 
-// Module 15447 (InAppReportsExternalLinkElement)
+// Module 15457 (InAppReportsExternalLinkElement)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import Text_Text from "Text/Text" /* 5751 */;
 import LinkingDefault from "Linking" /* 5834 */;
 import InAppReportsOptionRowDefault from "InAppReportsOptionRow" /* 8432 */;
-import LinkExternalMediumIcon2 from "LinkExternalMediumIcon" /* 15448 */;
+import LinkExternalMediumIcon2 from "LinkExternalMediumIcon" /* 15458 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;

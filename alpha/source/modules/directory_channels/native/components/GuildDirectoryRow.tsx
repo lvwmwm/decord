@@ -1,15 +1,15 @@
-// Module ID: 14116
-// Function ID: 14117
+// Module ID: 14117
+// Function ID: 14118
 // Name: GuildDirectoryRow
-// Dependencies: [5, 32, 19, 17, 4989, 5011, 1072, 21, 5140, 575, 504, 7357, 7594, 6957, 9210, 1196, 6961, 1411, 1113, 7040, 7020, 5003, 5751, 14094, 5758, 2]
+// Dependencies: [5, 32, 19, 17, 4989, 5011, 1072, 21, 5140, 575, 504, 7357, 7594, 6957, 9210, 1196, 6961, 1411, 1113, 7040, 7020, 5003, 5751, 14095, 5758, 2]
 
-// Module 14116 (GuildDirectoryRow)
+// Module 14117 (GuildDirectoryRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
 import GuildIconDefault from "GuildIcon" /* 7020 */;
-import GuildDirectoryMoreMenuDefault from "GuildDirectoryMoreMenu" /* 14094 */;
+import GuildDirectoryMoreMenuDefault from "GuildDirectoryMoreMenu" /* 14095 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -72,7 +72,7 @@ const memoResult = react.memo(function GuildDirectoryRow(entry) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c3;
@@ -148,7 +148,7 @@ const memoResult = react.memo(function GuildDirectoryRow(entry) {
                   closure_129_3(false);
                 }
                 c5 = 3;
-                return { value: "HermesInternal", done: "HermesInternal" };
+                return { value: "HermesInternal", done: null };
               } else {
                 let guildId;
                 const setHubProgressActionComplete = closure_0(ref[14]).setHubProgressActionComplete;
@@ -166,7 +166,7 @@ const memoResult = react.memo(function GuildDirectoryRow(entry) {
               closure_129_3(false);
             }
             c5 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp64) {
           ref = tmp64;

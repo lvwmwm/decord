@@ -1,10 +1,10 @@
-// Module ID: 13480
-// Function ID: 13481
+// Module ID: 13481
+// Function ID: 13482
 // Name: ConnectionsRoleMessageBadgeActionSheet
-// Dependencies: [32, 19, 17, 1404, 502, 5052, 5046, 5011, 13481, 7410, 1072, 21, 5140, 575, 1113, 7409, 7059, 5751, 5369, 12, 5724, 6629, 11752, 9282, 1187, 1411, 5147, 38, 7387, 7412, 504, 1252, 5889, 6957, 5388, 7432, 5758, 5374, 11756, 8821, 2]
+// Dependencies: [32, 19, 17, 1404, 502, 5052, 5046, 5011, 13482, 7410, 1072, 21, 5140, 575, 1113, 7409, 7059, 5751, 5369, 12, 5724, 6629, 11752, 9282, 1187, 1411, 5147, 38, 7387, 7412, 504, 1252, 5889, 6957, 5388, 7432, 5758, 5374, 11756, 8821, 2]
 // Exports: default
 
-// Module 13480 (ConnectionsRoleMessageBadgeActionSheet)
+// Module 13481 (ConnectionsRoleMessageBadgeActionSheet)
 import _modDef12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 575 */;
 import intl6 from "intl" /* 1113 */;
@@ -31,7 +31,7 @@ import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import GuildMemberStore from "GuildMemberStore" /* 5052 */;
 import GuildRoleStore from "GuildRoleStore" /* 5046 */;
 import GuildStore from "GuildStore" /* 5011 */;
-import GuildRoleConnectionEligibilityStore from "GuildRoleConnectionEligibilityStore" /* 13481 */;
+import GuildRoleConnectionEligibilityStore from "GuildRoleConnectionEligibilityStore" /* 13482 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5140 */;
@@ -184,7 +184,7 @@ class PopoutChecks {
         items1 = [tmp22Result, , , ];
         let tmp25 = null;
         if (null != tmp7) {
-          const obj7 = { style: closure_1.popoutCheckGroupPlatformIcon, user: tmp7, size: native.AvatarSizes.XSMALL, guildId: "a" };
+          const obj7 = { style: closure_1.popoutCheckGroupPlatformIcon, user: tmp7, size: native.AvatarSizes.XSMALL, guildId: "Array" };
           const Avatar = tmp9(1187).Avatar;
           tmp25 = authStore4(Avatar, obj7);
         }

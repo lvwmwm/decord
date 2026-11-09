@@ -1,10 +1,10 @@
-// Module ID: 18078
-// Function ID: 18079
+// Module ID: 18091
+// Function ID: 18092
 // Name: UserSettingsDesignSystemText
 // Dependencies: [19, 17, 21, 5724, 575, 6159, 7126, 5752, 7038, 5751, 2]
 // Exports: default
 
-// Module 18078 (UserSettingsDesignSystemText)
+// Module 18091 (UserSettingsDesignSystemText)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;

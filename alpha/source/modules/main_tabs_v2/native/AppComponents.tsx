@@ -1,28 +1,28 @@
-// Module ID: 19455
-// Function ID: 19456
+// Module ID: 19468
+// Function ID: 19469
 // Name: AppComponents
-// Dependencies: [21, 12564, 1377, 5314, 18938, 19360, 5329, 19379, 11138, 16161, 6096, 19456, 5150, 19464, 19474, 19483, 19511, 19520, 19735, 2]
+// Dependencies: [21, 12564, 1377, 5314, 18951, 19373, 5329, 19392, 11138, 16171, 6096, 19469, 5150, 19477, 19487, 19496, 19524, 19533, 19748, 2]
 
-// Module 19455 (AppComponents)
+// Module 19468 (AppComponents)
 import AccessibilityAnnouncerLiveRegion from "AccessibilityAnnouncerLiveRegion" /* 5150 */;
 import NavigationRouteUtils from "NavigationRouteUtils" /* 5314 */;
 import PortalKeyboard from "PortalKeyboard" /* 5329 */;
 import AlertModal from "AlertModal" /* 6096 */;
 import NotificationsDefault from "Notifications" /* 11138 */;
 import PortalKeyboardRenderer from "PortalKeyboardRenderer" /* 12564 */;
-import ContextMenuContainer from "ContextMenuContainer" /* 16161 */;
-import MainShared from "MainShared" /* 19360 */;
-import MainViewTooltipActionSheetsV2Default from "MainViewTooltipActionSheetsV2" /* 19379 */;
-import FramePoolDefault from "FramePool" /* 19456 */;
-import ExternalPipViewDefault from "ExternalPipView" /* 19464 */;
-import ConjureAppPictureInPicturesDefault from "ConjureAppPictureInPictures" /* 19474 */;
-import ActivityPanelContainerDefault from "ActivityPanelContainer" /* 19483 */;
-import FramePanelContainerDefault from "FramePanelContainer" /* 19511 */;
-import VoicePanelContainerDefault from "VoicePanelContainer" /* 19520 */;
-import MediaPlaybackPanelContainerDefault from "MediaPlaybackPanelContainer" /* 19735 */;
+import ContextMenuContainer from "ContextMenuContainer" /* 16171 */;
+import MainShared from "MainShared" /* 19373 */;
+import MainViewTooltipActionSheetsV2Default from "MainViewTooltipActionSheetsV2" /* 19392 */;
+import FramePoolDefault from "FramePool" /* 19469 */;
+import ExternalPipViewDefault from "ExternalPipView" /* 19477 */;
+import ConjureAppPictureInPicturesDefault from "ConjureAppPictureInPictures" /* 19487 */;
+import ActivityPanelContainerDefault from "ActivityPanelContainer" /* 19496 */;
+import FramePanelContainerDefault from "FramePanelContainer" /* 19524 */;
+import VoicePanelContainerDefault from "VoicePanelContainer" /* 19533 */;
+import MediaPlaybackPanelContainerDefault from "MediaPlaybackPanelContainer" /* 19748 */;
 import Fragment_mod from "Fragment" /* 21 */;
 import PlatformUtils_mod from "PlatformUtils" /* 1377 */;
-import AppFreezer_mod from "AppFreezer" /* 18938 */;
+import AppFreezer_mod from "AppFreezer" /* 18951 */;
 import size from "module_2" /* 2 */;
 
 let Fragment;

@@ -107,7 +107,7 @@ export default function ConjurePrivateLinkSection(project) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c2;
@@ -151,7 +151,7 @@ export default function ConjurePrivateLinkSection(project) {
           }
           closure_129_5(false);
           c4 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp28) {
         if (0 === c2) {
@@ -180,7 +180,7 @@ export default function ConjurePrivateLinkSection(project) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c2;
@@ -230,7 +230,7 @@ export default function ConjurePrivateLinkSection(project) {
           }
           closure_128_5(false);
           c3 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp24) {
         if (0 === c2) {

@@ -190,7 +190,7 @@ export default function Login(isMultiAccount) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -242,7 +242,7 @@ export default function Login(isMultiAccount) {
               v0 = 0;
               closure_129_3(false);
               c5 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             } else {
               if (closure_0 === closure_0(ref[20]).PasswordResetMethods.ONE_TIME_LOGIN) {
                 const obj = closure_0(ref[21]);
@@ -262,7 +262,7 @@ export default function Login(isMultiAccount) {
           v0 = 0;
           closure_129_3(false);
           c5 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp43) {
         ref = tmp43;
@@ -297,7 +297,7 @@ export default function Login(isMultiAccount) {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -357,7 +357,7 @@ export default function Login(isMultiAccount) {
               c6 = 0;
             }
             c8 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp19) {
           closure_5 = tmp19;
@@ -396,7 +396,7 @@ export default function Login(isMultiAccount) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -461,7 +461,7 @@ export default function Login(isMultiAccount) {
           closure_129_3(false);
         }
         c5 = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp48) {
         ref = tmp48;
         if (0 === v0) {

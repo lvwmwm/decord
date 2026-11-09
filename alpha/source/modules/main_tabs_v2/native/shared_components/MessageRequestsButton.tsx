@@ -1,16 +1,16 @@
-// Module ID: 18410
-// Function ID: 18411
+// Module ID: 18423
+// Function ID: 18424
 // Name: MessageRequestsButton
-// Dependencies: [19, 17, 6911, 6912, 21, 5140, 504, 18411, 5758, 1113, 8098, 14790, 9268, 2]
+// Dependencies: [19, 17, 6911, 6912, 21, 5140, 504, 18424, 5758, 1113, 8098, 14791, 9268, 2]
 // Exports: default
 
-// Module 18410 (MessageRequestsButton)
+// Module 18423 (MessageRequestsButton)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import intl4 from "intl" /* 1113 */;
 import AssetRegistryDefault from "AssetRegistry" /* 9268 */;
-import IconActionButton from "IconActionButton" /* 14790 */;
-import _mod18411 from "module_18411" /* 18411 */;
+import IconActionButton from "IconActionButton" /* 14791 */;
+import _mod18424 from "module_18424" /* 18424 */;
 import react from "react" /* 19 */;
 import MessageRequestStore from "MessageRequestStore" /* 6911 */;
 import SpamMessageRequestStore from "SpamMessageRequestStore" /* 6912 */;
@@ -22,17 +22,17 @@ const IconActionButtonDefault = IconActionButton;
 
 let metroImportAll;
 let metroImportDefault;
-const f115440 = () => messageRequestsCount.getMessageRequestsCount();
-const f115441 = () => spamChannelsCount.getSpamChannelsCount();
+const f115509 = () => messageRequestsCount.getMessageRequestsCount();
+const f115510 = () => spamChannelsCount.getSpamChannelsCount();
 function MessageRequestAnimation(color) {
   color = color.color;
   const ref = react.useRef(null);
   const items = [MessageRequestStore];
   const obj = get_initialized;
-  const stateFromStores = obj.useStateFromStores(items, f115440);
+  const stateFromStores = obj.useStateFromStores(items, f115509);
   const items1 = [SpamMessageRequestStore];
   const obj2 = get_initialized;
-  const stateFromStores1 = obj2.useStateFromStores(items1, f115441);
+  const stateFromStores1 = obj2.useStateFromStores(items1, f115510);
   const items2 = [stateFromStores];
   const effect = react.useEffect(() => {
     if (stateFromStores > 0) {
@@ -44,7 +44,7 @@ function MessageRequestAnimation(color) {
       }
     }
   }, items2);
-  return metroImportDefault(_mod18411.MessageRequestLottie, { ref, color, size: "sm", autoPlay: true });
+  return metroImportDefault(_mod18424.MessageRequestLottie, { ref, color, size: "sm", autoPlay: true });
 }
 const View = react_native.View;
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
@@ -67,11 +67,11 @@ export default function MessageRequestsButton(alternateVariant) {
   const items = [MessageRequestStore];
   const tmp2 = closure_9();
   const obj = get_initialized;
-  const str = obj.useStateFromStores(items, f115440);
+  const str = obj.useStateFromStores(items, f115509);
   const items1 = [SpamMessageRequestStore];
   const obj2 = get_initialized;
   if (0 === str) {
-    if (0 === obj2.useStateFromStores(items1, f115441)) {
+    if (0 === obj2.useStateFromStores(items1, f115510)) {
       return null;
     }
   }

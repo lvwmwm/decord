@@ -1,10 +1,10 @@
-// Module ID: 14607
-// Function ID: 14608
+// Module ID: 14608
+// Function ID: 14609
 // Name: TabsGradient
 // Dependencies: [19, 1072, 21, 1652, 5715, 5140, 5761, 2]
 // Exports: default
 
-// Module 14607 (TabsGradient)
+// Module 14608 (TabsGradient)
 import Constants from "Constants" /* 1072 */;
 import _mod1652 from "module_1652" /* 1652 */;
 import LinearGradientDefault from "LinearGradient" /* 5715 */;

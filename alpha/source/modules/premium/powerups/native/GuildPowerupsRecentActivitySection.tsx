@@ -1,10 +1,10 @@
-// Module ID: 14395
-// Function ID: 14396
+// Module ID: 14396
+// Function ID: 14397
 // Name: GuildPowerupsRecentActivitySection
-// Dependencies: [17, 5141, 21, 5140, 575, 14396, 4962, 504, 8490, 10042, 14398, 14400, 1187, 5751, 14402, 1113, 2]
+// Dependencies: [17, 5141, 21, 5140, 575, 14397, 4962, 504, 8490, 10042, 14399, 14401, 1187, 5751, 14403, 1113, 2]
 // Exports: default
 
-// Module 14395 (GuildPowerupsRecentActivitySection)
+// Module 14396 (GuildPowerupsRecentActivitySection)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
@@ -12,8 +12,8 @@ import intl2 from "intl" /* 1113 */;
 import DateUtils from "DateUtils" /* 4962 */;
 import Text_Text from "Text/Text" /* 5751 */;
 import enhanced_role_colors_EnhancedRoleColorUtils from "enhanced_role_colors/EnhancedRoleColorUtils" /* 8490 */;
-import useMaybeGetSortedBoosts from "useMaybeGetSortedBoosts" /* 14396 */;
-import getBoostRowMessageTextDefault from "getBoostRowMessageText" /* 14402 */;
+import useMaybeGetSortedBoosts from "useMaybeGetSortedBoosts" /* 14397 */;
+import getBoostRowMessageTextDefault from "getBoostRowMessageText" /* 14403 */;
 import AccessibilityStore from "AccessibilityStore" /* 5141 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5140 */;
@@ -60,9 +60,9 @@ function GuildPowerupsRecentActivityRow(row) {
     if ("gave" === phase) {
       BoostGemSlashIcon = tmp2(10042).BoostGemIcon;
     } else if ("expiring" === phase) {
-      BoostGemSlashIcon = tmp2(14398).BoostTier1Icon;
+      BoostGemSlashIcon = tmp2(14399).BoostTier1Icon;
     } else {
-      BoostGemSlashIcon = tmp2(14400).BoostGemSlashIcon;
+      BoostGemSlashIcon = tmp2(14401).BoostGemSlashIcon;
     }
     const obj4 = { style: tmp.boostRowContainer, children: items1 };
     if ("gave" === phase) {

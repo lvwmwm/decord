@@ -1,10 +1,10 @@
-// Module ID: 15383
-// Function ID: 15384
+// Module ID: 15393
+// Function ID: 15394
 // Name: GuildScheduledEventEmbed
-// Dependencies: [5, 32, 17, 6910, 5007, 4989, 5011, 5082, 1385, 10238, 4995, 7956, 5879, 8465, 8467, 9061, 9056, 9048, 9291, 1113, 8470, 9241, 8452, 575, 15384, 9051, 5776, 9164, 9045, 15385, 9046, 5003, 9052, 9053, 2]
+// Dependencies: [5, 32, 17, 6910, 5007, 4989, 5011, 5082, 1385, 10238, 4995, 7956, 5879, 8465, 8467, 9061, 9056, 9048, 9291, 1113, 8470, 9241, 8452, 575, 15394, 9051, 5776, 9164, 9045, 15395, 9046, 5003, 9052, 9053, 2]
 // Exports: createGuildScheduledEventInviteEmbed, createGuildScheduledEventLinkEmbed
 
-// Module 15383 (GuildScheduledEventEmbed)
+// Module 15393 (GuildScheduledEventEmbed)
 import react_native from "react-native" /* 17 */;
 import intl5 from "intl" /* 1113 */;
 import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4995 */;
@@ -24,7 +24,7 @@ import useCanInviteForGuildEvent from "useCanInviteForGuildEvent" /* 9061 */;
 import GuildEventUtils from "GuildEventUtils" /* 9164 */;
 import GuildScheduledEventHeaderUtils from "GuildScheduledEventHeaderUtils" /* 9291 */;
 import CodedLinksConstants from "CodedLinksConstants" /* 10238 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15385 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15395 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import GuildScheduledEventStore_mod from "GuildScheduledEventStore" /* 6910 */;
@@ -135,7 +135,7 @@ function createGuildScheduledEventEmbed(type) {
     } else if (result1) {
       acceptLabelActiveBackgroundColor = colors.backgroundColor;
       const tmp7Result14 = renderer_EmbedUtils;
-      assetUriForEmbed3 = tmp7Result14.getAssetUriForEmbed(tmp(15384));
+      assetUriForEmbed3 = tmp7Result14.getAssetUriForEmbed(tmp(15394));
       acceptLabelGreenColor = colors.acceptLabelDisabledTextColor;
       tmp22 = assetUriForEmbed2;
       stringResult2 = stringResult;
@@ -353,7 +353,7 @@ export function createGuildScheduledEventLinkEmbed(code, theme) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {

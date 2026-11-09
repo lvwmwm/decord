@@ -1,10 +1,10 @@
-// Module ID: 14339
-// Function ID: 14340
+// Module ID: 14340
+// Function ID: 14341
 // Name: GuildPowerupsImage
 // Dependencies: [5141, 21, 5140, 504, 1357, 9589, 5842, 2]
 // Exports: default
 
-// Module 14339 (GuildPowerupsImage)
+// Module 14340 (GuildPowerupsImage)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1357 */;

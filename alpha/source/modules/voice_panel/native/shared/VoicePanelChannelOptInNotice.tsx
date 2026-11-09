@@ -1,9 +1,9 @@
-// Module ID: 19584
-// Function ID: 19585
+// Module ID: 19597
+// Function ID: 19598
 // Name: VoicePanelChannelOptInNotice
-// Dependencies: [19, 21, 7345, 7023, 7038, 1113, 7046, 15965, 2]
+// Dependencies: [19, 21, 7345, 7023, 7038, 1113, 7046, 15975, 2]
 
-// Module 19584 (VoicePanelChannelOptInNotice)
+// Module 19597 (VoicePanelChannelOptInNotice)
 import Fragment from "Fragment" /* 21 */;
 import OptInChannelsActionCreators from "OptInChannelsActionCreators" /* 7345 */;
 import react from "react" /* 19 */;
@@ -27,7 +27,7 @@ const memoResult = react.memo(function VoicePanelChannelOptInNotice(channel) {
   const TableRow = channel(7038).TableRow;
   intl = channel(1113).intl;
   intl2 = channel(1113).intl;
-  ({ IconComponent: channel(15965).ChannelListMagnifyingGlassIcon });
+  ({ IconComponent: channel(15975).ChannelListMagnifyingGlassIcon });
   const TableRowIcon = channel(7046).TableRowIcon;
   return <tmp2 style={style}>{null}</tmp2>;
 });

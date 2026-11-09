@@ -1,10 +1,10 @@
-// Module ID: 15213
-// Function ID: 15214
+// Module ID: 15223
+// Function ID: 15224
 // Name: useWidgetGamePress
 // Dependencies: [9397, 9421, 2]
 // Exports: default
 
-// Module 15213 (useWidgetGamePress)
+// Module 15223 (useWidgetGamePress)
 import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 9397 */;
 import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9421 */;
 import size from "module_2" /* 2 */;

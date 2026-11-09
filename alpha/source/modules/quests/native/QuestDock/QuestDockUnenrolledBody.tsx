@@ -1,9 +1,9 @@
-// Module ID: 17482
-// Function ID: 17483
+// Module ID: 17493
+// Function ID: 17494
 // Name: QuestDockUnenrolledBody
-// Dependencies: [5, 19, 7922, 6836, 21, 17411, 17465, 17379, 563, 17377, 9772, 9807, 9805, 9792, 9793, 17386, 17307, 6839, 7948, 17407, 9773, 17414, 14931, 9769, 9809, 17483, 17451, 1113, 8098, 15449, 9795, 2]
+// Dependencies: [5, 19, 7922, 6836, 21, 17422, 17476, 17390, 563, 17388, 9772, 9807, 9805, 9792, 9793, 17397, 17318, 6839, 7948, 17418, 9773, 17425, 14932, 9769, 9809, 17494, 17462, 1113, 8098, 15459, 9795, 2]
 
-// Module 17482 (QuestDockUnenrolledBody)
+// Module 17493 (QuestDockUnenrolledBody)
 import Fragment from "Fragment" /* 21 */;
 import QuestTypes from "QuestTypes" /* 6839 */;
 import AnalyticsTypes from "AnalyticsTypes" /* 7948 */;
@@ -80,7 +80,7 @@ const memoResult = react.memo(function QuestDockUnenrolledBody() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -152,7 +152,7 @@ const memoResult = react.memo(function QuestDockUnenrolledBody() {
             closure_128_5(constants.COLLAPSED);
           }
           isMobileActivityQuest = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp42) {
         isMobileActivityQuest = 3;

@@ -1,14 +1,14 @@
-// Module ID: 19223
-// Function ID: 19224
+// Module ID: 19236
+// Function ID: 19237
 // Name: DisplayNameStylesFlywheelProfileCoachmark
-// Dependencies: [19, 17, 1385, 4986, 21, 5140, 504, 2171, 1113, 3056, 10076, 19224, 2]
+// Dependencies: [19, 17, 1385, 4986, 21, 5140, 504, 2171, 1113, 3056, 10076, 19237, 2]
 // Exports: default
 
-// Module 19223 (DisplayNameStylesFlywheelProfileCoachmark)
+// Module 19236 (DisplayNameStylesFlywheelProfileCoachmark)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4986 */;
-import DisplayNameLockeAbstractUI from "DisplayNameLockeAbstractUI" /* 19224 */;
+import DisplayNameLockeAbstractUI from "DisplayNameLockeAbstractUI" /* 19237 */;
 import react_mod from "react" /* 19 */;
 import UserStore from "UserStore" /* 1385 */;
 import createStyles from "createStyles" /* 5140 */;

@@ -1,15 +1,15 @@
-// Module ID: 14315
-// Function ID: 14316
+// Module ID: 14316
+// Function ID: 14317
 // Name: GuildPowerupsNotificationsDCF
-// Dependencies: [7641, 4973, 14309, 14316, 14318, 14320, 2]
+// Dependencies: [7641, 4973, 14310, 14317, 14319, 14321, 2]
 // Exports: useBoostToUnlockCoachmarkDCF, useExpiringPowerupCoachmarkDCF, useGuildPowerupNotificationDCF, useNewGamesCoachmarkDC, useNewPerkAvailableCoachmarkDCF, usePerksCoachmarkDCF
 
-// Module 14315 (GuildPowerupsNotificationsDCF)
+// Module 14316 (GuildPowerupsNotificationsDCF)
 import useSelectedDismissibleContent2 from "useSelectedDismissibleContent" /* 7641 */;
-import GuildPowerupsNotification from "GuildPowerupsNotification" /* 14309 */;
-import useHasGuildAffinityForBoostUpsellDefault from "useHasGuildAffinityForBoostUpsell" /* 14316 */;
-import useCanBoostGuildFromMobileDefault from "useCanBoostGuildFromMobile" /* 14318 */;
-import BoostToUnlockMobileCoachmarkExperimentDefault from "BoostToUnlockMobileCoachmarkExperiment" /* 14320 */;
+import GuildPowerupsNotification from "GuildPowerupsNotification" /* 14310 */;
+import useHasGuildAffinityForBoostUpsellDefault from "useHasGuildAffinityForBoostUpsell" /* 14317 */;
+import useCanBoostGuildFromMobileDefault from "useCanBoostGuildFromMobile" /* 14319 */;
+import BoostToUnlockMobileCoachmarkExperimentDefault from "BoostToUnlockMobileCoachmarkExperiment" /* 14321 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
@@ -70,7 +70,7 @@ export function useBoostToUnlockCoachmarkDCF(arg0, id, arg2, GUILD_HEADER_TOOLTI
     tmp = tmp5;
   }
   let str = "useBoostToUnlockCoachmarkDCF-ineligible";
-  const useConfig = tmp2(14320).useConfig;
+  const useConfig = tmp2(14321).useConfig;
   BoostToUnlockMobileCoachmarkExperimentDefault;
   if (tmp) {
     str = "useBoostToUnlockCoachmarkDCF-eligible";

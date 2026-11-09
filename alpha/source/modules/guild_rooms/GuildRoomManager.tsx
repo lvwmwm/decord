@@ -1,9 +1,9 @@
-// Module ID: 19868
-// Function ID: 19869
+// Module ID: 19881
+// Function ID: 19882
 // Name: GuildRoomManager
 // Dependencies: [502, 7983, 7350, 8006, 7981, 2]
 
-// Module 19868 (GuildRoomManager)
+// Module 19881 (GuildRoomManager)
 import GuildRoomActionCreators from "GuildRoomActionCreators" /* 7981 */;
 import GuildRoomsExperiment from "GuildRoomsExperiment" /* 8006 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;

@@ -1,15 +1,15 @@
-// Module ID: 20444
-// Function ID: 20445
+// Module ID: 20457
+// Function ID: 20458
 // Name: AVErrorStreamViewLowFPS
-// Dependencies: [6898, 6769, 502, 7962, 1072, 20445, 6772, 6074, 6079, 20442, 2]
+// Dependencies: [6898, 6769, 502, 7962, 1072, 20458, 6772, 6074, 6079, 20455, 2]
 
-// Module 20444 (AVErrorStreamViewLowFPS)
+// Module 20457 (AVErrorStreamViewLowFPS)
 import Constants from "Constants" /* 1072 */;
 import StreamQualityUtils from "StreamQualityUtils" /* 6074 */;
 import AVError from "AVError" /* 6079 */;
 import StreamKeyUtils from "StreamKeyUtils" /* 6772 */;
-import AVErrorContext from "AVErrorContext" /* 20442 */;
-import AVErrorUtils from "AVErrorUtils" /* 20445 */;
+import AVErrorContext from "AVErrorContext" /* 20455 */;
+import AVErrorUtils from "AVErrorUtils" /* 20458 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 6898 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6769 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;

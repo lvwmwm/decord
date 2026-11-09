@@ -1,14 +1,14 @@
-// Module ID: 19869
-// Function ID: 19870
+// Module ID: 19882
+// Function ID: 19883
 // Name: GuildVerificationManager
-// Dependencies: [1072, 14982, 1403, 9038, 14983, 7350, 2]
+// Dependencies: [1072, 14983, 1403, 9038, 14984, 7350, 2]
 
-// Module 19869 (GuildVerificationManager)
+// Module 19882 (GuildVerificationManager)
 import Constants from "Constants" /* 1072 */;
 import FlagUtils from "FlagUtils" /* 1403 */;
 import GuildInviteFlags from "GuildInviteFlags" /* 9038 */;
-import HubUtilsDefault from "HubUtils" /* 14982 */;
-import GuildVerificationUtils from "GuildVerificationUtils" /* 14983 */;
+import HubUtilsDefault from "HubUtils" /* 14983 */;
+import GuildVerificationUtils from "GuildVerificationUtils" /* 14984 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7350 */;
 import size from "module_2" /* 2 */;
 

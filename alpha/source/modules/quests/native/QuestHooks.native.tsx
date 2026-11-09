@@ -1,10 +1,10 @@
-// Module ID: 17377
-// Function ID: 17378
+// Module ID: 17388
+// Function ID: 17389
 // Name: QuestHooks
-// Dependencies: [5, 19, 5375, 2162, 7921, 7922, 17378, 6836, 6600, 1083, 17379, 17405, 6839, 6928, 5314, 504, 6843, 17389, 7183, 7918, 9772, 9764, 9785, 7945, 7387, 11890, 7943, 11954, 6936, 11854, 2]
+// Dependencies: [5, 19, 5375, 2162, 7921, 7922, 17389, 6836, 6600, 1083, 17390, 17416, 6839, 6928, 5314, 504, 6843, 17400, 7183, 7918, 9772, 9764, 9785, 7945, 7387, 11890, 7943, 11954, 6936, 11854, 2]
 // Exports: useHasWatchVideoOnMobileTasks, useIsMobileQuestDockRendered, useIsMobileQuestDockVisibleToUser, useMobileActivityQuest, useMobileQuestDock, useMobileQuestDockHeight, useQuestDockHeroAsset, useQuestGameLogotypeAssetUrl
 
-// Module 17377 (QuestHooks)
+// Module 17388 (QuestHooks)
 import Constants from "Constants" /* 1083 */;
 import CaptchaConstants from "CaptchaConstants" /* 6600 */;
 import QuestTypes from "QuestTypes" /* 6839 */;
@@ -12,15 +12,15 @@ import AdCreativeType from "AdCreativeType" /* 6843 */;
 import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6936 */;
 import QuestTaskUtils from "QuestTaskUtils" /* 7945 */;
 import AssetUtils from "AssetUtils" /* 9785 */;
-import QuestDockHooks from "QuestDockHooks" /* 17379 */;
-import useQuestForPlacement from "useQuestForPlacement" /* 17405 */;
+import QuestDockHooks from "QuestDockHooks" /* 17390 */;
+import useQuestForPlacement from "useQuestForPlacement" /* 17416 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
 import ActionSheetStore from "ActionSheetStore" /* 5375 */;
 import ApplicationStore from "ApplicationStore" /* 2162 */;
 import BountyStore from "BountyStore" /* 7921 */;
 import QuestStore from "QuestStore" /* 7922 */;
-import PlayableStore from "PlayableStore" /* 17378 */;
+import PlayableStore from "PlayableStore" /* 17389 */;
 import QuestConstants from "QuestConstants" /* 6836 */;
 import size from "module_2" /* 2 */;
 
@@ -61,7 +61,7 @@ function useIsMobileQuestDockRenderedBase(mobileQuestDock) {
   const isQuestExpired = tmpResult7.useIsQuestExpired(questDockQuest);
   const tmpResult8 = tmp(9764);
   let isEligibleForQuests = tmpResult8.getIsEligibleForQuests();
-  const tmpResult9 = tmp(17389);
+  const tmpResult9 = tmp(17400);
   questDockAdCreativeId = tmpResult9.getQuestDockAdCreativeId(mobileQuestDock);
   const items1 = [tmp5];
   const items2 = [questDockAdCreativeId];
@@ -298,7 +298,7 @@ export function useMobileActivityQuest(quest) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -331,7 +331,7 @@ export function useMobileActivityQuest(quest) {
             return obj;
           }
           c0 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp11) {
           c0 = 3;
           throw tmp11;

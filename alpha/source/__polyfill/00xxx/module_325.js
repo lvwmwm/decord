@@ -55,13 +55,13 @@ _inherits(StateSafePureComponent, reactAll.PureComponent);
 const entry = {
   key: "setState",
   value: function setState(fn, arg1) {
-    const f79469 = (items) => fn.apply(self, items);
+    const f79512 = (items) => fn.apply(self, items);
     const self = this;
     let closure_0 = fn;
     if (typeof fn === "function") {
       fn = _get(_getPrototypeOf(StateSafePureComponent.prototype), "setState", self);
       if (typeof fn === "function") {
-        fn = f79469;
+        fn = f79512;
       }
       const items = [
         (arg0, arg1) => {
@@ -80,7 +80,7 @@ const entry = {
     } else {
       let fn2 = _get(_getPrototypeOf(StateSafePureComponent.prototype), "setState", self);
       if (typeof fn2 === "function") {
-        fn2 = f79469;
+        fn2 = f79512;
       }
       const items1 = [fn, arg1];
       fn2(items1);

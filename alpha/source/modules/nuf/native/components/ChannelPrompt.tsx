@@ -1,10 +1,10 @@
-// Module ID: 14594
-// Function ID: 14595
+// Module ID: 14595
+// Function ID: 14596
 // Name: ChannelPrompt
 // Dependencies: [5, 32, 19, 17, 5070, 5011, 21, 5140, 5714, 504, 1499, 7064, 1113, 7549, 6579, 7355, 7020, 1411, 5751, 7147, 5758, 7178, 2]
 // Exports: default
 
-// Module 14594 (ChannelPrompt)
+// Module 14595 (ChannelPrompt)
 import intl5 from "intl" /* 1113 */;
 import NavigatorConstants from "NavigatorConstants" /* 5714 */;
 import NavigatorHeader from "NavigatorHeader" /* 7064 */;
@@ -114,7 +114,7 @@ export default function ChannelPrompt(guildId) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -170,7 +170,7 @@ export default function ChannelPrompt(guildId) {
           }
           closure_129_6(false);
           c5 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp28) {
         hasSkip = tmp28;

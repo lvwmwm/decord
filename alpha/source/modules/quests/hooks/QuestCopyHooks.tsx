@@ -1,10 +1,10 @@
-// Module ID: 14931
-// Function ID: 14932
+// Module ID: 14932
+// Function ID: 14933
 // Name: QuestCopyHooks
-// Dependencies: [5, 32, 19, 2186, 1385, 6836, 1072, 1387, 1113, 9790, 7945, 7943, 2185, 14932, 2107, 504, 9772, 14933, 9397, 9421, 6839, 9795, 2024, 11954, 14920, 9809, 7948, 7947, 2]
+// Dependencies: [5, 32, 19, 2186, 1385, 6836, 1072, 1387, 1113, 9790, 7945, 7943, 2185, 14933, 2107, 504, 9772, 14934, 9397, 9421, 6839, 9795, 2024, 11954, 14921, 9809, 7948, 7947, 2]
 // Exports: getQuestsInstructionsToWinReward, getRewardCodeRedemptionInstructions, useModalCtaConfig, usePrimaryCtaCopy, useQuestBarSubtitle, useQuestBarTitle, useQuestDescription
 
-// Module 14931 (QuestCopyHooks)
+// Module 14932 (QuestCopyHooks)
 import get_initialized from "get initialized" /* 504 */;
 import Constants from "Constants" /* 1072 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
@@ -19,7 +19,7 @@ import hooks_QuestHooks from "hooks/QuestHooks" /* 9772 */;
 import QuestRewardUtils from "QuestRewardUtils" /* 9790 */;
 import QuestCopyUtils from "QuestCopyUtils" /* 9795 */;
 import isActivitySupportedOnClientPlatformDefault from "isActivitySupportedOnClientPlatform" /* 11954 */;
-import useInGameQuestConnectState from "useInGameQuestConnectState" /* 14933 */;
+import useInGameQuestConnectState from "useInGameQuestConnectState" /* 14934 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -38,7 +38,7 @@ let tmp2;
 const intl13 = tmp(1113);
 const utils_QuestUtils = tmp(7943);
 const GameProfileAnalyticUtils = tmp2(9421);
-const SponsoredQuestUtils = tmp(14932);
+const SponsoredQuestUtils = tmp(14933);
 function _getQuestsInstructionsToWinReward(arg0) {
   let applications;
   let currentUser;
@@ -856,7 +856,7 @@ export function usePrimaryCtaCopy(arg0) {
     const intl3 = tmp2(1113).intl;
     return intl3.string(quest(1113).t.l7E81v);
   } else if (constants3.WATCH_VIDEO === memo) {
-    const tmp2Result3 = quest(14920);
+    const tmp2Result3 = quest(14921);
     return tmp2Result3.getVideoQuestWatchCtaText(tmp5);
   } else if (constants3.IN_GAME === memo) {
     let tmp2Result4 = tmp2(7943);
@@ -961,7 +961,7 @@ export function useModalCtaConfig(quest) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -1002,7 +1002,7 @@ export function useModalCtaConfig(quest) {
             }
             openGameLinkDirectly(tmp18, obj5);
             c2 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp10) {
           c2 = 3;

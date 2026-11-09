@@ -1,14 +1,14 @@
-// Module ID: 14398
-// Function ID: 14399
+// Module ID: 14399
+// Function ID: 14400
 // Name: BoostTier1Icon
-// Dependencies: [19, 21, 575, 5841, 14399, 2]
+// Dependencies: [19, 21, 575, 5841, 14400, 2]
 // Exports: BoostTier1Icon
 
-// Module 14398 (BoostTier1Icon)
+// Module 14399 (BoostTier1Icon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import BaseIconImage2 from "BaseIconImage" /* 5841 */;
-import AssetRegistry from "AssetRegistry" /* 14399 */;
+import AssetRegistry from "AssetRegistry" /* 14400 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

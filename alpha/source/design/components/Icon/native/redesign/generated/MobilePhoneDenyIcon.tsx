@@ -1,14 +1,14 @@
-// Module ID: 19711
-// Function ID: 19712
+// Module ID: 19724
+// Function ID: 19725
 // Name: MobilePhoneDenyIcon
-// Dependencies: [19, 21, 575, 5841, 19712, 2]
+// Dependencies: [19, 21, 575, 5841, 19725, 2]
 // Exports: MobilePhoneDenyIcon
 
-// Module 19711 (MobilePhoneDenyIcon)
+// Module 19724 (MobilePhoneDenyIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import BaseIconImage2 from "BaseIconImage" /* 5841 */;
-import AssetRegistry from "AssetRegistry" /* 19712 */;
+import AssetRegistry from "AssetRegistry" /* 19725 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -1,9 +1,9 @@
-// Module ID: 16736
-// Function ID: 16737
+// Module ID: 16747
+// Function ID: 16748
 // Name: components_native/ErrorBoundary
 // Dependencies: [5, 32, 19, 17, 11502, 21, 5140, 504, 13430, 5758, 1113, 5199, 1242, 572, 1187, 9233, 5751, 2]
 
-// Module 16736 (components_native/ErrorBoundary)
+// Module 16747 (components_native/ErrorBoundary)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import intl4 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
@@ -45,7 +45,7 @@ function MaybeClearBuildOverride() {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c3;
@@ -84,7 +84,7 @@ function MaybeClearBuildOverride() {
               c3 = 0;
             }
             c4 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp13) {
           closure_2 = tmp13;

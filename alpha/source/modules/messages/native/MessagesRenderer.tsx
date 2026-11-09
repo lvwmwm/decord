@@ -1,7 +1,7 @@
 // Module ID: 11722
 // Function ID: 11723
 // Name: MessagesRenderer
-// Dependencies: [5, 32, 19, 10017, 5052, 5072, 6897, 8449, 1072, 21, 9, 11723, 10016, 11699, 10014, 8448, 10229, 11691, 12, 11, 11726, 9773, 10233, 10228, 11728, 7712, 11729, 11730, 11731, 13945, 5365, 1242, 10231, 13562, 13951, 11698, 558, 5877, 7955, 11705, 13952, 13559, 10306, 1377, 1625, 6839, 13953, 2]
+// Dependencies: [5, 32, 19, 10017, 5052, 5072, 6897, 8449, 1072, 21, 9, 11723, 10016, 11699, 10014, 8448, 10229, 11691, 12, 11, 11726, 9773, 10233, 10228, 11728, 7712, 11729, 11730, 11731, 13946, 5365, 1242, 10231, 13563, 13952, 11698, 558, 5877, 7955, 11705, 13953, 13560, 10306, 1377, 1625, 6839, 13954, 2]
 
 // Module 11722 (MessagesRenderer)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
@@ -27,9 +27,9 @@ import MessageDataSnowflakeUtils from "MessageDataSnowflakeUtils" /* 10306 */;
 import useSocialLayerStorefrontEmbedData from "useSocialLayerStorefrontEmbedData" /* 11705 */;
 import openMediaModalOverlayAltTextSheetDefault from "openMediaModalOverlayAltTextSheet" /* 11723 */;
 import MessagesHandlers from "MessagesHandlers" /* 11731 */;
-import NavigationSpanTrackerDefault from "NavigationSpanTracker" /* 13562 */;
-import NavigationTTIDefinition from "NavigationTTIDefinition" /* 13951 */;
-import MessagesUtilsDefault from "MessagesUtils" /* 13952 */;
+import NavigationSpanTrackerDefault from "NavigationSpanTracker" /* 13563 */;
+import NavigationTTIDefinition from "NavigationTTIDefinition" /* 13952 */;
+import MessagesUtilsDefault from "MessagesUtils" /* 13953 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -109,7 +109,7 @@ class MessagesRenderer {
     let loadMoreBefore;
     let scrollToTopMessage;
     let updateNativeRows;
-    const f101284 = (id) => id.id;
+    const f101325 = (id) => id.id;
     ref = ref.ref;
     const merged = Object.assign(ref, Object.assign({ ref: 0 }));
     dependencyMap = undefined;
@@ -180,7 +180,7 @@ class MessagesRenderer {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -213,7 +213,7 @@ class MessagesRenderer {
                       const tmp24 = findMessageIndex(tmp10Result3.castChannelIdAsMessageId(channel.id));
                       if (null == tmp24) {
                         c2 = 3;
-                        return { value: "HermesInternal", done: "HermesInternal" };
+                        return { value: "HermesInternal", done: null };
                       } else {
                         const obj8 = { animated: !useReducedMotion };
                         const tmp10Result4 = c1(c2[16]);
@@ -237,7 +237,7 @@ class MessagesRenderer {
               const timerId1 = setTimeout(() => closure_2_25(!closure_1_0), 50);
             }
             c2 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           } catch (tmp18) {
             c2 = 3;
             throw tmp18;
@@ -496,7 +496,7 @@ class MessagesRenderer {
     }), 1)[0];
     const imperativeHandle = current.useImperativeHandle(ref, () => ({ scrollToBottom, jumpToPresent, scrollToNewMessages, getChatRef }));
     let obj7 = { chatManager, rowGenerator: first1, animatingStickerMessageIdRef: ref4, canAddNewReactions: callback1, channel: merged.channel, messages: merged.messages, isMessagesReady: merged.isMessagesReady, uploads: merged.uploads, roleStyle: merged.roleStyle, oldestUnreadMessageId: merged.oldestUnreadMessageId, replyingMessageId: merged.replyingMessageId, inlineAttachmentMedia: merged.inlineAttachmentMedia, inlineEmbedMedia: merged.inlineEmbedMedia, renderEmbeds: merged.renderEmbeds, renderReactions: merged.renderReactions, animateEmoji: merged.animateEmoji, gifAutoPlay: merged.gifAutoPlay, timestampHourCycle: merged.timestampHourCycle, currentUserId: merged.currentUserId, renderCommunicationDisabled: merged.renderCommunicationDisabled, selectedSummary: merged.selectedSummary, selectedConversation: merged.selectedConversation, enableSwipeActions: merged.enableSwipeActions, isResourceChannel: merged.isResourceChannel, shouldObscureSpoiler: merged.shouldObscureSpoiler, shouldDisableInteractiveComponents: merged.shouldDisableInteractiveComponents, unloadableContentEntryMessageIds: merged.unloadableContentEntryMessageIds, containerWidth: merged.containerWidth, chatRef: ref6, loadedRef: ref5, animatedRef: ref1, hasMoreMessagesAfterForLastUpdateRef: ref2, updateNativeRows, isLoadingAtTop, channelLatestMessageLoadingStatsManager, channelId: merged.channelId, isMessagesCached: merged.isMessagesCached, chatUpdatesQueue, shouldJumpToOriginalPost: callback3, findMessageIndex, scrollToTopMessage, useReducedMotion: merged.useReducedMotion };
-    let tmp29 = tmp21(13945)(obj7);
+    let tmp29 = tmp21(13946)(obj7);
     ({ updateRows: c35, scrollToMessageId: c36 } = tmp29);
     const effect = current.useEffect(() => {
       let channelId;
@@ -530,7 +530,7 @@ class MessagesRenderer {
       ({ channelId, messages: messages2 } = messages);
       const recordMessageRender = first(hasJumpedToOriginalPost[10]).recordMessageRender;
       first(hasJumpedToOriginalPost[10]);
-      const mapped = messages2.map(f101284);
+      const mapped = messages2.map(f101325);
       let hasFetched = messages2.hasFetched;
       if (!hasFetched) {
         hasFetched = messages2.ready && !messages2.cached;
@@ -539,7 +539,7 @@ class MessagesRenderer {
       ({ channelId: channelId2, messages: messages3 } = messages);
       const recordMessageRender2 = tmp15(hasJumpedToOriginalPost[10]).recordMessageRender;
       first(hasJumpedToOriginalPost[10]);
-      const mapped1 = messages3.map(f101284);
+      const mapped1 = messages3.map(f101325);
       let hasFetched2 = messages3.hasFetched;
       if (!hasFetched2) {
         hasFetched2 = messages3.ready && !messages3.cached;
@@ -782,7 +782,7 @@ class MessagesRenderer {
                                                                                                                                                     let tmp67 = first;
                                                                                                                                                     const tmp69 = first(hasJumpedToOriginalPost[10]);
                                                                                                                                                     const recordMessageRender = tmp69.recordMessageRender;
-                                                                                                                                                    const mapped = messages.map(f101284);
+                                                                                                                                                    const mapped = messages.map(f101325);
                                                                                                                                                     let hasFetched = messages.hasFetched;
                                                                                                                                                     if (!hasFetched) {
                                                                                                                                                       hasFetched = messages.ready && !messages.cached;
@@ -1186,7 +1186,7 @@ class MessagesRenderer {
             ({ channelId: channelId3, messages: messages3 } = tmp2);
             const tmp101 = first(hasJumpedToOriginalPost[10]);
             const recordMessageRender2 = tmp101.recordMessageRender;
-            const mapped1 = messages3.map(f101284);
+            const mapped1 = messages3.map(f101325);
             let hasFetched2 = messages3.hasFetched;
             if (!hasFetched2) {
               hasFetched2 = messages3.ready && !messages3.cached;
@@ -1352,9 +1352,9 @@ class MessagesRenderer {
         handleVisibleMessagesChange(obj);
       }
     };
-    items4 = [handleVisibleMessagesChange(tmp21(13559), obj9), ];
+    items4 = [handleVisibleMessagesChange(tmp21(13560), obj9), ];
     let obj10 = { messages: merged.messages };
-    items4[1] = handleVisibleMessagesChange(tmp15(13953).ChatTTITracker, obj10);
+    items4[1] = handleVisibleMessagesChange(tmp15(13954).ChatTTITracker, obj10);
     return c18(findMessageIndex, obj8);
   }
 }

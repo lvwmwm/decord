@@ -1,10 +1,10 @@
-// Module ID: 16845
-// Function ID: 16846
+// Module ID: 16856
+// Function ID: 16857
 // Name: useTryItOutProfileTheme
 // Dependencies: [8802, 8828, 504, 8873, 8811, 8786, 575, 2]
 // Exports: default
 
-// Module 16845 (useTryItOutProfileTheme)
+// Module 16856 (useTryItOutProfileTheme)
 import get_initialized from "get initialized" /* 504 */;
 import RecentAvatarUtils from "RecentAvatarUtils" /* 8811 */;
 import useDisplayProfileDefault from "useDisplayProfile" /* 8828 */;

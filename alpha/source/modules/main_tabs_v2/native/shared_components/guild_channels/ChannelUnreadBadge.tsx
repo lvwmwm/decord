@@ -1,9 +1,9 @@
-// Module ID: 18415
-// Function ID: 18416
+// Module ID: 18428
+// Function ID: 18429
 // Name: ChannelUnreadBadge
 // Dependencies: [19, 17, 5882, 6831, 21, 5140, 11176, 5766, 9908, 2]
 
-// Module 18415 (ChannelUnreadBadge)
+// Module 18428 (ChannelUnreadBadge)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import useFontScale from "useFontScale" /* 5766 */;

@@ -1,10 +1,10 @@
-// Module ID: 15226
-// Function ID: 15227
+// Module ID: 15236
+// Function ID: 15237
 // Name: showReportModalForUserWidget
 // Dependencies: [2162, 7853, 8422, 6936, 2]
 // Exports: showReportModalForUserWidget
 
-// Module 15226 (showReportModalForUserWidget)
+// Module 15236 (showReportModalForUserWidget)
 import ReportModals from "ReportModals" /* 8422 */;
 import ApplicationStore from "ApplicationStore" /* 2162 */;
 import size from "module_2" /* 2 */;

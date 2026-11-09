@@ -20,7 +20,7 @@ let _require, dependencyMap;
 
 let c10;
 let c9;
-const f92110 = () => {
+const f92152 = () => {
   let obj;
   let obj2;
   const items = [GuildStore, UserStore];
@@ -106,7 +106,7 @@ export function useCanAccessMemberSafetyPage(id) {
   const items = [GuildStore, UserStore];
   const items1 = [id];
   const obj = require("get initialized");
-  return obj.useStateFromStores(items, f92110, items1);
+  return obj.useStateFromStores(items, f92152, items1);
 }
 export function useCanAccessBulkBanningFeature(arg0) {
   let closure_0;
@@ -114,7 +114,7 @@ export function useCanAccessBulkBanningFeature(arg0) {
   const obj = require("get initialized");
   let items = [GuildStore, UserStore];
   const items1 = [arg0];
-  let stateFromStores = obj.useStateFromStores(items, f92110, items1);
+  let stateFromStores = obj.useStateFromStores(items, f92152, items1);
   const obj2 = require("get initialized");
   const items2 = [GuildStore, UserStore];
   const items3 = [arg0];

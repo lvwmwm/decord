@@ -1,17 +1,17 @@
-// Module ID: 18317
-// Function ID: 18318
+// Module ID: 18330
+// Function ID: 18331
 // Name: AccountSwitcherListItem
-// Dependencies: [19, 17, 1404, 5195, 1385, 14210, 21, 5140, 504, 7401, 575, 5859, 5751, 1113, 7043, 5200, 1187, 5194, 2]
+// Dependencies: [19, 17, 1404, 5195, 1385, 14211, 21, 5140, 504, 7401, 575, 5859, 5751, 1113, 7043, 5200, 1187, 5194, 2]
 // Exports: default
 
-// Module 18317 (AccountSwitcherListItem)
+// Module 18330 (AccountSwitcherListItem)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
 import UserUtilsDefault from "UserUtils" /* 5194 */;
 import react_native from "react-native" /* 5200 */;
-import MultiAccountStore from "MultiAccountStore" /* 14210 */;
+import MultiAccountStore from "MultiAccountStore" /* 14211 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
 import UserRecord from "UserRecord" /* 1404 */;

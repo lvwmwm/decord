@@ -1,10 +1,10 @@
-// Module ID: 19569
-// Function ID: 19570
+// Module ID: 19582
+// Function ID: 19583
 // Name: useCanInviteMembers
 // Dependencies: [4989, 5072, 1083, 563, 2]
 // Exports: useCanInviteMembers
 
-// Module 19569 (useCanInviteMembers)
+// Module 19582 (useCanInviteMembers)
 import Constants from "Constants" /* 1083 */;
 import ChannelStore from "ChannelStore" /* 4989 */;
 import PermissionStore from "PermissionStore" /* 5072 */;

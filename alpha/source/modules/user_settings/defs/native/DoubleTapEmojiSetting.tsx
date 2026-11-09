@@ -1,9 +1,9 @@
-// Module ID: 18251
-// Function ID: 18252
+// Module ID: 18264
+// Function ID: 18265
 // Name: DoubleTapEmojiSetting
 // Dependencies: [5, 19, 8503, 1072, 1388, 21, 5140, 575, 4965, 8497, 1411, 7363, 10061, 1252, 7412, 10073, 11685, 1113, 2]
 
-// Module 18251 (DoubleTapEmojiSetting)
+// Module 18264 (DoubleTapEmojiSetting)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -102,7 +102,7 @@ let obj3 = {
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -141,7 +141,7 @@ let obj3 = {
               const obj = emoji(closure_2[15]);
               const result = obj.showDoubleTapEmojiUpdatedToast(obj16);
               constants = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp11) {
             constants = 3;

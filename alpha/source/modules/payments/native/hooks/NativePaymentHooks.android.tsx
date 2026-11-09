@@ -67,7 +67,7 @@ function useGoogleSkuIds(memo2, arg1, arg2) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -129,7 +129,7 @@ function useGoogleSkuIds(memo2, arg1, arg2) {
               c3 = 0;
             }
             c5 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           } catch (tmp34) {
             closure_2 = tmp34;
             if (0 === c3) {

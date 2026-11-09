@@ -1,10 +1,10 @@
-// Module ID: 19212
-// Function ID: 19213
+// Module ID: 19225
+// Function ID: 19226
 // Name: ConsoleConnectionCoachmarkExperiment
 // Dependencies: [6627, 6797, 1072, 1449, 504, 2]
 // Exports: useIsConsoleConnectionCoachmarkEligible
 
-// Module 19212 (ConsoleConnectionCoachmarkExperiment)
+// Module 19225 (ConsoleConnectionCoachmarkExperiment)
 import get_initialized from "get initialized" /* 504 */;
 import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6627 */;
 import ConsentStore from "ConsentStore" /* 6797 */;

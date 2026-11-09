@@ -1,9 +1,9 @@
-// Module ID: 19861
-// Function ID: 19862
+// Module ID: 19874
+// Function ID: 19875
 // Name: FrecencyUserSettingsManager
 // Dependencies: [5, 9854, 9853, 6851, 6191, 6891, 6950, 1231, 1082, 1362, 1089, 7350, 4970, 1232, 1233, 12, 2]
 
-// Module 19861 (FrecencyUserSettingsManager)
+// Module 19874 (FrecencyUserSettingsManager)
 import UserSettingsConstants from "UserSettingsConstants" /* 1082 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import frecency_user_settings from "frecency_user_settings" /* 1232 */;
@@ -70,7 +70,7 @@ let actions = function _saveProtos() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -118,7 +118,7 @@ let actions = function _saveProtos() {
           const result = markDirtyIfHasPendingChange.markDirtyIfHasPendingChange();
         });
         c4 = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp24) {
         c4 = 3;
         throw tmp24;

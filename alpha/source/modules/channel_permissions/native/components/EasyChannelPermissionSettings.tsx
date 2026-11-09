@@ -1,10 +1,10 @@
-// Module ID: 19266
-// Function ID: 19267
+// Module ID: 19279
+// Function ID: 19280
 // Name: EasyChannelPermissionSettings
-// Dependencies: [32, 5, 19, 17, 19267, 4989, 5052, 5046, 5011, 5072, 5082, 1385, 8016, 1072, 21, 5140, 575, 1499, 11805, 504, 9111, 9112, 9113, 1113, 5776, 6090, 9138, 5077, 6159, 7126, 7429, 8095, 7038, 11634, 11803, 7070, 5889, 9059, 9294, 19268, 19270, 2]
+// Dependencies: [32, 5, 19, 17, 19280, 4989, 5052, 5046, 5011, 5072, 5082, 1385, 8016, 1072, 21, 5140, 575, 1499, 11805, 504, 9111, 9112, 9113, 1113, 5776, 6090, 9138, 5077, 6159, 7126, 7429, 8095, 7038, 11634, 11803, 7070, 5889, 9059, 9294, 19281, 19283, 2]
 // Exports: default
 
-// Module 19266 (EasyChannelPermissionSettings)
+// Module 19279 (EasyChannelPermissionSettings)
 import nativeDefault from "native" /* 575 */;
 import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5889 */;
 import AlertActionCreatorsDefault from "AlertActionCreators" /* 6090 */;
@@ -17,7 +17,7 @@ import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelSettingsPermissionsStore from "ChannelSettingsPermissionsStore" /* 19267 */;
+import ChannelSettingsPermissionsStore from "ChannelSettingsPermissionsStore" /* 19280 */;
 import ChannelStore from "ChannelStore" /* 4989 */;
 import GuildMemberStore from "GuildMemberStore" /* 5052 */;
 import GuildRoleStore from "GuildRoleStore" /* 5046 */;
@@ -82,7 +82,7 @@ function ChannelPermissionSettingsBasicView(channel) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -139,7 +139,7 @@ function ChannelPermissionSettingsBasicView(channel) {
             return obj;
           } else {
             c3 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
           const items = [tmp];
           c2 = 2;
@@ -170,7 +170,7 @@ function ChannelPermissionSettingsBasicView(channel) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -211,7 +211,7 @@ function ChannelPermissionSettingsBasicView(channel) {
             return obj;
           } else if (!value) {
             c3 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
           const intl = title(c3[23]).intl;
           const string = intl.string;
@@ -255,7 +255,7 @@ function ChannelPermissionSettingsBasicView(channel) {
           intl4 = title(c3[23]).intl;
           show(obj9);
           c3 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp54) {
           c3 = 3;
           throw tmp54;

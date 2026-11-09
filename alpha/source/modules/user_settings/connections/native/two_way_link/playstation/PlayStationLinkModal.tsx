@@ -1,16 +1,16 @@
-// Module ID: 14871
-// Function ID: 14872
+// Module ID: 14872
+// Function ID: 14873
 // Name: PlayStationLinkModal
-// Dependencies: [19, 14872, 21, 7630, 8429, 14870, 1113, 14873, 9821, 14875, 14877, 14879, 14880, 9820, 14869, 7231, 2]
+// Dependencies: [19, 14873, 21, 7630, 8429, 14871, 1113, 14874, 9821, 14876, 14878, 14880, 14881, 9820, 14870, 7231, 2]
 // Exports: default
 
-// Module 14871 (PlayStationLinkModal)
+// Module 14872 (PlayStationLinkModal)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
 import HeaderActionButton2 from "HeaderActionButton" /* 7630 */;
 import AssetRegistryDefault from "AssetRegistry" /* 8429 */;
-import PlayStationLinkModalActionCreatorsDefault from "PlayStationLinkModalActionCreators" /* 14870 */;
-import PlayStationLinkConstants from "PlayStationLinkConstants" /* 14872 */;
+import PlayStationLinkModalActionCreatorsDefault from "PlayStationLinkModalActionCreators" /* 14871 */;
+import PlayStationLinkConstants from "PlayStationLinkConstants" /* 14873 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

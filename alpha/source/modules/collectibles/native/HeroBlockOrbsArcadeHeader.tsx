@@ -1,10 +1,10 @@
-// Module ID: 18164
-// Function ID: 18165
+// Module ID: 18177
+// Function ID: 18178
 // Name: HeroBlockOrbsArcadeHeader
-// Dependencies: [32, 19, 17, 5141, 1072, 21, 575, 9785, 18165, 5140, 9769, 6841, 8101, 5724, 671, 5137, 504, 17306, 1500, 5766, 8947, 5842, 18166, 5715, 5751, 1113, 5758, 5369, 5147, 5199, 2]
+// Dependencies: [32, 19, 17, 5141, 1072, 21, 575, 9785, 18178, 5140, 9769, 6841, 8101, 5724, 671, 5137, 504, 17317, 1500, 5766, 8947, 5842, 18179, 5715, 5751, 1113, 5758, 5369, 5147, 5199, 2]
 // Exports: default
 
-// Module 18164 (HeroBlockOrbsArcadeHeader)
+// Module 18177 (HeroBlockOrbsArcadeHeader)
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
 import shared from "shared" /* 5147 */;
@@ -14,7 +14,7 @@ import useToken from "useToken" /* 5724 */;
 import QuestContent from "QuestContent" /* 6841 */;
 import inlineStyles from "inlineStyles" /* 8101 */;
 import QuestUtils from "QuestUtils" /* 9769 */;
-import _modDef18165 from "module_18165" /* 18165 */;
+import _modDef18178 from "module_18178" /* 18178 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -217,7 +217,7 @@ function HeroBlockOrbsArcadeHeaderContent(bleedsOntoPage) {
         preventsDisplaySleepDuringVideoPlayback: false,
         importantForAccessibility: "no-hide-descendants"
       };
-      obj9 = { uri: require("module_18165") };
+      obj9 = { uri: require("module_18178") };
       const VideoComponent = tmp2(tmp3[20]).VideoComponent;
       tmp28 = !isInView;
       if (isInView) {
@@ -277,7 +277,7 @@ function HeroBlockOrbsArcadeHeaderContent(bleedsOntoPage) {
     return closure_10(fontScale, obj5);
   }
   const obj21 = { source: obj22, style: tmp.image, accessible: false };
-  obj22 = { uri: require("module_18166") };
+  obj22 = { uri: require("module_18179") };
   const tmp4Result = require("FastImage");
   tmp26Result = tmp26(tmp4Result, obj21);
 }
@@ -288,7 +288,7 @@ let react = react_mod;
 ({ jsx: c9, jsxs: c10, Fragment: unpackModuleId } = Fragment);
 let c12 = 289;
 const PX_16 = nativeDefault.space.PX_16;
-const metadata = AssetUtils.convertVideoToFirstFrameImageWithMediaProxy(_modDef18165);
+const metadata = AssetUtils.convertVideoToFirstFrameImageWithMediaProxy(_modDef18178);
 const PX_48 = nativeDefault.space.PX_48;
 const ellipse = { cx: 85.5, cy: 267.5, rx: 329, ry: 217, rotation: 63 };
 const ellipse2 = { cx: 67, cy: 231, rx: 185, ry: 155 };

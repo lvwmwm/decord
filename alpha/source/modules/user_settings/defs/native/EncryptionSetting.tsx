@@ -1,14 +1,14 @@
-// Module ID: 18206
-// Function ID: 18207
+// Module ID: 18219
+// Function ID: 18220
 // Name: EncryptionSetting
-// Dependencies: [5911, 8503, 1072, 504, 18207, 1113, 11685, 18208, 2]
+// Dependencies: [5911, 8503, 1072, 504, 18220, 1113, 11685, 18221, 2]
 
-// Module 18206 (EncryptionSetting)
+// Module 18219 (EncryptionSetting)
 import get_initialized from "get initialized" /* 504 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import SettingsConstants from "SettingsConstants" /* 8503 */;
-import useSecureFramesVerifiedUsers from "useSecureFramesVerifiedUsers" /* 18207 */;
+import useSecureFramesVerifiedUsers from "useSecureFramesVerifiedUsers" /* 18220 */;
 import SecureFramesPersistedStore from "SecureFramesPersistedStore" /* 5911 */;
 import SettingBuilders from "SettingBuilders" /* 11685 */;
 import size from "module_2" /* 2 */;

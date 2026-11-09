@@ -1,9 +1,9 @@
-// Module ID: 19466
-// Function ID: 19467
+// Module ID: 19479
+// Function ID: 19480
 // Name: ExternalPipEnablerState
 // Dependencies: [2]
 
-// Module 19466 (ExternalPipEnablerState)
+// Module 19479 (ExternalPipEnablerState)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/external_pip/ExternalPipEnablerState.tsx");

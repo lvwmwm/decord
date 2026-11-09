@@ -1,16 +1,16 @@
-// Module ID: 19734
-// Function ID: 19735
+// Module ID: 19747
+// Function ID: 19748
 // Name: VoicePanelControlsAppLauncher
-// Dependencies: [19, 4989, 11361, 1072, 21, 5140, 9911, 11362, 8915, 504, 38, 14061, 1108, 11646, 11647, 1652, 12612, 14062, 1113, 2]
+// Dependencies: [19, 4989, 11361, 1072, 21, 5140, 9911, 11362, 8915, 504, 38, 14062, 1108, 11646, 11647, 1652, 12612, 14063, 1113, 2]
 
-// Module 19734 (VoicePanelControlsAppLauncher)
+// Module 19747 (VoicePanelControlsAppLauncher)
 import _modDef38 from "module_38" /* 38 */;
 import Constants from "Constants" /* 1072 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1108 */;
 import useStateFromSharedValueDefault from "useStateFromSharedValue" /* 8915 */;
 import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11362 */;
 import AppLauncherNavigatorDefault from "AppLauncherNavigator" /* 12612 */;
-import VoicePanelControlsDrawerTitleDefault from "VoicePanelControlsDrawerTitle" /* 14062 */;
+import VoicePanelControlsDrawerTitleDefault from "VoicePanelControlsDrawerTitle" /* 14063 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4989 */;
 import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11361 */;
@@ -67,7 +67,7 @@ const memoResult = react.memo(function VoicePanelControlsAppLauncher(gestureSpec
   const stateFromStores = obj2.useStateFromStores(items, () => ChannelStore.getChannel(c1));
   _modDef38(null != stateFromStores, "channel should not be null");
   const items1 = [setControlsMode];
-  const obj3 = setControlsMode(14061);
+  const obj3 = setControlsMode(14062);
   const controlsDrawerOpenWidth = obj3.getControlsDrawerOpenWidth(tmp7.width, rect.left, rect.right);
   const callback = react.useCallback(() => {
     const ComponentDispatch = ComponentDispatchUtils.ComponentDispatch;

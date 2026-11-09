@@ -1,17 +1,17 @@
-// Module ID: 14020
-// Function ID: 14021
+// Module ID: 14021
+// Function ID: 14022
 // Name: ForumPostListFooter
-// Dependencies: [19, 17, 1072, 21, 5140, 575, 13962, 7517, 14013, 14021, 14014, 11490, 2]
+// Dependencies: [19, 17, 1072, 21, 5140, 575, 13963, 7517, 14014, 14022, 14015, 11490, 2]
 // Exports: default
 
-// Module 14020 (ForumPostListFooter)
+// Module 14021 (ForumPostListFooter)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import GameInvitesChannelUtils from "GameInvitesChannelUtils" /* 7517 */;
-import useTypingUsersIds from "useTypingUsersIds" /* 13962 */;
-import ForumPostMessageCountDefault from "ForumPostMessageCount" /* 14013 */;
-import ForumPostTypingUsersDefault from "ForumPostTypingUsers" /* 14014 */;
+import useTypingUsersIds from "useTypingUsersIds" /* 13963 */;
+import ForumPostMessageCountDefault from "ForumPostMessageCount" /* 14014 */;
+import ForumPostTypingUsersDefault from "ForumPostTypingUsers" /* 14015 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5140 */;
@@ -50,7 +50,7 @@ export default function ForumPostListFooter(parentChannel) {
   items = [hasOwnProperty(ForumPostMessageCountDefault, { thread, hasUnreads }), , , ];
   if (isGameInvitesPost) {
     const obj4 = { channel: thread };
-    isGameInvitesPost = tmp8(tmp9(14021), obj4);
+    isGameInvitesPost = tmp8(tmp9(14022), obj4);
   }
   items[1] = isGameInvitesPost;
   if (tmp6Result) {

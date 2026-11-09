@@ -1,9 +1,9 @@
-// Module ID: 19359
-// Function ID: 19360
+// Module ID: 19372
+// Function ID: 19373
 // Name: LeaveActivityButton
 // Dependencies: [19, 5781, 21, 5758, 12047, 1113, 11065, 2]
 
-// Module 19359 (LeaveActivityButton)
+// Module 19372 (LeaveActivityButton)
 import Fragment from "Fragment" /* 21 */;
 import intl3 from "intl" /* 1113 */;
 import components_Button_Button from "components/Button/Button" /* 5758 */;

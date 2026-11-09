@@ -1,14 +1,14 @@
-// Module ID: 17910
-// Function ID: 17911
+// Module ID: 17919
+// Function ID: 17920
 // Name: CarIcon
-// Dependencies: [19, 21, 575, 5841, 17911, 2]
+// Dependencies: [19, 21, 575, 5841, 17920, 2]
 // Exports: CarIcon
 
-// Module 17910 (CarIcon)
+// Module 17919 (CarIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import BaseIconImage2 from "BaseIconImage" /* 5841 */;
-import AssetRegistry from "AssetRegistry" /* 17911 */;
+import AssetRegistry from "AssetRegistry" /* 17920 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -1,18 +1,18 @@
-// Module ID: 18660
-// Function ID: 18661
+// Module ID: 18673
+// Function ID: 18674
 // Name: MobileGameCommunitiesActionCreators
-// Dependencies: [5, 15903, 17935, 1072, 15904, 17936, 1282, 1487, 572, 504, 1089, 2]
+// Dependencies: [5, 15913, 17944, 1072, 15914, 17945, 1282, 1487, 572, 504, 1089, 2]
 // Exports: dismissGuild
 
-// Module 18660 (MobileGameCommunitiesActionCreators)
+// Module 18673 (MobileGameCommunitiesActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
 import _modDef1487 from "module_1487" /* 1487 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import LocalAppDetectionStore from "LocalAppDetectionStore" /* 15903 */;
-import MobileGameCommunitiesStore from "MobileGameCommunitiesStore" /* 17935 */;
+import LocalAppDetectionStore from "LocalAppDetectionStore" /* 15913 */;
+import MobileGameCommunitiesStore from "MobileGameCommunitiesStore" /* 17944 */;
 import get_initialized from "get initialized" /* 504 */;
 import size from "module_2" /* 2 */;
 
@@ -43,7 +43,7 @@ let obj = function _fetchDetectedGameCommunities() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -87,7 +87,7 @@ let obj = function _fetchDetectedGameCommunities() {
           const obj7 = { type: "MOBILE_GAME_COMMUNITIES_FETCH_SUCCESS", guilds, gameIds };
           obj.dispatch(obj7);
           c3 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp13) {
         c3 = 3;
@@ -130,7 +130,7 @@ let closure_8 = _asyncToGenerator(async (arg0, value) => {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: "HermesInternal" };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -162,7 +162,7 @@ let closure_8 = _asyncToGenerator(async (arg0, value) => {
         return obj;
       }
       c0 = 3;
-      return { value: "HermesInternal", done: "HermesInternal" };
+      return { value: "HermesInternal", done: null };
     } catch (tmp7) {
       c0 = 3;
       throw tmp7;

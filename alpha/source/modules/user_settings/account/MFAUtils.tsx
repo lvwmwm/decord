@@ -1,10 +1,10 @@
-// Module ID: 16976
-// Function ID: 16977
+// Module ID: 16987
+// Function ID: 16988
 // Name: account/MFAUtils
 // Dependencies: [5011, 5072, 1385, 1072, 1113, 563, 7189, 2]
 // Exports: getSMSBackupDisabledMessage, use2FARemoveDisableReason, useIsMFAEnabled, useMFAAvailability
 
-// Module 16976 (account/MFAUtils)
+// Module 16987 (account/MFAUtils)
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import intl4 from "intl" /* 1113 */;
 import MFAUtils from "MFAUtils" /* 7189 */;

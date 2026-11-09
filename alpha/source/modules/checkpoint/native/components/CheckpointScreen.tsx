@@ -1,10 +1,10 @@
-// Module ID: 13875
-// Function ID: 13876
+// Module ID: 13876
+// Function ID: 13877
 // Name: CheckpointScreen
 // Dependencies: [19, 17, 6199, 21, 575, 5140, 1493, 1627, 2]
 // Exports: default, useCheckpointScreenContentHeight, useCheckpointScreenFrame
 
-// Module 13875 (CheckpointScreen)
+// Module 13876 (CheckpointScreen)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1493 */;

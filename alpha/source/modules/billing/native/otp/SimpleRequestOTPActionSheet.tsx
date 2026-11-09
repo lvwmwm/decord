@@ -1,10 +1,10 @@
-// Module ID: 18019
-// Function ID: 18020
+// Module ID: 18028
+// Function ID: 18029
 // Name: SimpleRequestOTPActionSheet
-// Dependencies: [5, 32, 19, 17, 1385, 6951, 1072, 1387, 21, 3, 1627, 10681, 504, 11527, 7795, 2107, 10033, 14669, 5374, 6091, 7808, 6159, 5751, 7040, 5758, 10815, 1266, 10679, 5388, 10808, 2]
+// Dependencies: [5, 32, 19, 17, 1385, 6951, 1072, 1387, 21, 3, 1627, 10681, 504, 11527, 7795, 2107, 10033, 14670, 5374, 6091, 7808, 6159, 5751, 7040, 5758, 10815, 1266, 10679, 5388, 10808, 2]
 // Exports: default
 
-// Module 18019 (SimpleRequestOTPActionSheet)
+// Module 18028 (SimpleRequestOTPActionSheet)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
@@ -42,7 +42,7 @@ function GiftPurchaseSKUView(selectedSkuId) {
   let obj7;
   let tmp16;
   let tmp17;
-  const f114570 = () => {
+  const f114627 = () => {
     let items;
     if (null == c5) {
       items = ["Loading...", "Loading..."];
@@ -191,7 +191,7 @@ function GiftPurchaseSKUView(selectedSkuId) {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           let c3;
@@ -245,7 +245,7 @@ function GiftPurchaseSKUView(selectedSkuId) {
               c3 = 0;
             }
             c5 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           } catch (tmp30) {
             if (0 === c3) {
               c5 = 3;
@@ -280,10 +280,10 @@ function GiftPurchaseSKUView(selectedSkuId) {
     giftParams: obj7
   };
   obj7 = { isGift: true, options: { recipient_id: giftRecipientId, custom_message: giftMessage, gift_style: giftStyle } };
-  closure_8 = tmp(14669)(obj6);
+  closure_8 = tmp(14670)(obj6);
   const items5 = [product];
-  [tmp16, tmp17] = tmp3(obj.useMemo(f114570, items5), 2);
-  tmp3(obj.useMemo(f114570, items5), 2);
+  [tmp16, tmp17] = tmp3(obj.useMemo(f114627, items5), 2);
+  tmp3(obj.useMemo(f114627, items5), 2);
   if (!isFetching) {
     isFetching = first;
   }

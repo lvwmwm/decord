@@ -1,10 +1,10 @@
-// Module ID: 13680
-// Function ID: 13681
+// Module ID: 13681
+// Function ID: 13682
 // Name: CheckpointShareCardStats
-// Dependencies: [19, 17, 21, 5140, 575, 8213, 5842, 13679, 5751, 9533, 2021, 1411, 12138, 8714, 9848, 9817, 2]
+// Dependencies: [19, 17, 21, 5140, 575, 8213, 5842, 13680, 5751, 9533, 2021, 1411, 12138, 8714, 9848, 9817, 2]
 // Exports: default
 
-// Module 13680 (CheckpointShareCardStats)
+// Module 13681 (CheckpointShareCardStats)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;

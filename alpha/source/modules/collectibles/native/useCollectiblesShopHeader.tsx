@@ -1,10 +1,10 @@
-// Module ID: 18194
-// Function ID: 18195
+// Module ID: 18207
+// Function ID: 18208
 // Name: useCollectiblesShopHeader
-// Dependencies: [19, 17, 1385, 1074, 1072, 6836, 8825, 21, 5140, 575, 12671, 5751, 1113, 504, 9642, 9764, 17207, 7795, 7412, 7366, 1252, 5374, 9769, 6839, 6799, 8821, 14736, 8098, 9552, 9996, 18195, 1499, 2]
+// Dependencies: [19, 17, 1385, 1074, 1072, 6836, 8825, 21, 5140, 575, 12671, 5751, 1113, 504, 9642, 9764, 17218, 7795, 7412, 7366, 1252, 5374, 9769, 6839, 6799, 8821, 14737, 8098, 9552, 9996, 18208, 1499, 2]
 // Exports: default
 
-// Module 18194 (useCollectiblesShopHeader)
+// Module 18207 (useCollectiblesShopHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;

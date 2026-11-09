@@ -1,9 +1,9 @@
-// Module ID: 19817
-// Function ID: 19818
+// Module ID: 19830
+// Function ID: 19831
 // Name: ConjureTurnNotificationManager
 // Dependencies: [7791, 1231, 11141, 5043, 5171, 6625, 11674, 6899, 1072, 4996, 7350, 11028, 4965, 10999, 11160, 7483, 12838, 2]
 
-// Module 19817 (ConjureTurnNotificationManager)
+// Module 19830 (ConjureTurnNotificationManager)
 import UserSettings from "UserSettings" /* 4965 */;
 import ChannelConstants from "ChannelConstants" /* 4996 */;
 import ConjureUtils from "ConjureUtils" /* 7483 */;

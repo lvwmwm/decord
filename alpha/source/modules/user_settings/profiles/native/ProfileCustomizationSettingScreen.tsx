@@ -1,9 +1,9 @@
-// Module ID: 16745
-// Function ID: 16746
+// Module ID: 16756
+// Function ID: 16757
 // Name: ProfileCustomizationSettingScreen
-// Dependencies: [5, 109, 32, 19, 17, 11601, 8802, 12550, 6827, 1082, 1072, 21, 5140, 575, 1113, 16746, 16868, 7214, 12552, 16877, 15174, 5724, 5199, 9069, 1499, 7226, 9059, 11548, 16766, 16869, 504, 5889, 11665, 16879, 7064, 7630, 1500, 12221, 16882, 12342, 14435, 2]
+// Dependencies: [5, 109, 32, 19, 17, 11601, 8802, 12550, 6827, 1082, 1072, 21, 5140, 575, 1113, 16757, 16879, 7214, 12552, 16888, 15175, 5724, 5199, 9069, 1499, 7226, 9059, 11548, 16777, 16880, 504, 5889, 11665, 16890, 7064, 7630, 1500, 12221, 16893, 12342, 14436, 2]
 
-// Module 16745 (ProfileCustomizationSettingScreen)
+// Module 16756 (ProfileCustomizationSettingScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1082 */;
@@ -13,8 +13,8 @@ import UserSettingsAccountActionCreators from "UserSettingsAccountActionCreators
 import maybeShowUnsavedChangesAlertDefault from "maybeShowUnsavedChangesAlert" /* 11548 */;
 import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 11665 */;
 import WidgetActionCreatorsDefault from "WidgetActionCreators" /* 12552 */;
-import UserSettingsEditUserProfileDefault from "UserSettingsEditUserProfile" /* 16746 */;
-import UserSettingsEditGuildProfileDefault from "UserSettingsEditGuildProfile" /* 16868 */;
+import UserSettingsEditUserProfileDefault from "UserSettingsEditUserProfile" /* 16757 */;
+import UserSettingsEditGuildProfileDefault from "UserSettingsEditGuildProfile" /* 16879 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -275,7 +275,7 @@ const memoResult = react.memo(function ProfileCustomizationSettingScreen() {
                 const obj2 = { value, done: true };
                 return obj2;
               } else {
-                return { value: "HermesInternal", done: "HermesInternal" };
+                return { value: "HermesInternal", done: null };
               }
             } else {
               try {
@@ -307,7 +307,7 @@ const memoResult = react.memo(function ProfileCustomizationSettingScreen() {
                     closure_128_3(true);
                   }
                   c2 = 3;
-                  return { value: "HermesInternal", done: "HermesInternal" };
+                  return { value: "HermesInternal", done: null };
                 }
               } catch (tmp8) {
                 c2 = 3;

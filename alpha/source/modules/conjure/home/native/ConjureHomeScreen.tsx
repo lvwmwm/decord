@@ -1,10 +1,10 @@
-// Module ID: 19354
-// Function ID: 19355
+// Module ID: 19367
+// Function ID: 19368
 // Name: ConjureHomeScreen
 // Dependencies: [32, 19, 17, 6623, 21, 5140, 575, 1500, 12289, 504, 12237, 12235, 5751, 1113, 4026, 5758, 2]
 // Exports: default
 
-// Module 19354 (ConjureHomeScreen)
+// Module 19367 (ConjureHomeScreen)
 import nativeDefault from "native" /* 575 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

@@ -1,10 +1,10 @@
-// Module ID: 19957
-// Function ID: 19958
+// Module ID: 19970
+// Function ID: 19971
 // Name: InterestGuildRecommendations
-// Dependencies: [32, 19, 17, 4991, 1072, 21, 7064, 5140, 575, 5751, 1113, 18761, 5724, 1411, 7043, 2534, 5374, 19958, 9593, 7020, 6159, 9387, 5003, 7438, 19961, 504, 18758, 18759, 1252, 7070, 7355, 9902, 19962, 1652, 19963, 5758, 2]
+// Dependencies: [32, 19, 17, 4991, 1072, 21, 7064, 5140, 575, 5751, 1113, 18774, 5724, 1411, 7043, 2534, 5374, 19971, 9593, 7020, 6159, 9387, 5003, 7438, 19974, 504, 18771, 18772, 1252, 7070, 7355, 9902, 19975, 1652, 19976, 5758, 2]
 // Exports: default
 
-// Module 19957 (InterestGuildRecommendations)
+// Module 19970 (InterestGuildRecommendations)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
@@ -15,10 +15,10 @@ import Text_Text from "Text/Text" /* 5751 */;
 import GuildIconDefault from "GuildIcon" /* 7020 */;
 import GuildBadgeV2Default from "GuildBadgeV2" /* 9387 */;
 import ClipViewDefault from "ClipView" /* 9593 */;
-import InterestGhostDefault from "InterestGhost" /* 18761 */;
-import InterestGuildProfileSheetDefault from "InterestGuildProfileSheet" /* 19958 */;
-import InterestGuildJoinButtonDefault from "InterestGuildJoinButton" /* 19961 */;
-import InterestGuildActions from "InterestGuildActions" /* 19962 */;
+import InterestGhostDefault from "InterestGhost" /* 18774 */;
+import InterestGuildProfileSheetDefault from "InterestGuildProfileSheet" /* 19971 */;
+import InterestGuildJoinButtonDefault from "InterestGuildJoinButton" /* 19974 */;
+import InterestGuildActions from "InterestGuildActions" /* 19975 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import GuildMembershipStore from "GuildMembershipStore" /* 4991 */;

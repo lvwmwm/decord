@@ -1,10 +1,10 @@
-// Module ID: 15305
-// Function ID: 15306
+// Module ID: 15315
+// Function ID: 15316
 // Name: InlinePriceTag
-// Dependencies: [19, 17, 7673, 1074, 1072, 21, 5140, 575, 5751, 2111, 7807, 7808, 9616, 1113, 671, 5724, 5374, 15306, 2118, 7412, 5715, 1377, 9612, 7438, 8820, 2171, 15311, 9661, 15312, 9635, 9640, 504, 9652, 9653, 2]
+// Dependencies: [19, 17, 7673, 1074, 1072, 21, 5140, 575, 5751, 2111, 7807, 7808, 9616, 1113, 671, 5724, 5374, 15316, 2118, 7412, 5715, 1377, 9612, 7438, 8820, 2171, 15321, 9661, 15322, 9635, 9640, 504, 9652, 9653, 2]
 // Exports: default
 
-// Module 15305 (InlinePriceTag)
+// Module 15315 (InlinePriceTag)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
@@ -28,8 +28,8 @@ import collectibles_CollectiblesUtils from "collectibles/CollectiblesUtils" /* 9
 import useVirtualCurrencyData from "useVirtualCurrencyData" /* 9640 */;
 import CollectiblesShopPricePlaceholder from "CollectiblesShopPricePlaceholder" /* 9652 */;
 import useProductDisableState from "useProductDisableState" /* 9661 */;
-import useOpenNitroSubscribeActionSheetDefault from "useOpenNitroSubscribeActionSheet" /* 15311 */;
-import MobileNitroUpsellInShopPdpExperimentDefault from "MobileNitroUpsellInShopPdpExperiment" /* 15312 */;
+import useOpenNitroSubscribeActionSheetDefault from "useOpenNitroSubscribeActionSheet" /* 15321 */;
+import MobileNitroUpsellInShopPdpExperimentDefault from "MobileNitroUpsellInShopPdpExperiment" /* 15322 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import IAPStore from "IAPStore" /* 7673 */;
@@ -200,7 +200,7 @@ function ExpressiveNitroUpsell(arg0) {
       const tmp4 = dependencyMap;
       if (tmp4) {
         const openLazy = ActionSheetActionCreatorsDefault.openLazy;
-        const tmp11 = asyncRequire(15306, dependencyMap.paths);
+        const tmp11 = asyncRequire(15316, dependencyMap.paths);
         const obj = { analyticsLocations: items, title: intl.string(intl3.t.XcOMLu), description: intl2.string(intl3.t.JhE8nA) };
         items = [AnalyticsLocationDefault.COLLECTIBLES_SHOP_DETAILS_MODAL];
         intl = intl3.intl;

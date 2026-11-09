@@ -1,10 +1,10 @@
-// Module ID: 13911
-// Function ID: 13912
+// Module ID: 13912
+// Function ID: 13913
 // Name: CheckpointFriendsStatsScreen
-// Dependencies: [5, 32, 19, 17, 5141, 1385, 13667, 6199, 21, 575, 5373, 1652, 1357, 5140, 1411, 504, 13912, 13913, 13875, 5194, 6567, 5275, 13877, 1113, 3248, 3216, 5840, 13896, 8714, 13880, 12138, 12238, 1493, 5318, 1641, 5370, 13914, 13669, 5836, 1187, 13665, 10677, 7412, 13596, 5853, 2]
+// Dependencies: [5, 32, 19, 17, 5141, 1385, 13668, 6199, 21, 575, 5373, 1652, 1357, 5140, 1411, 504, 13913, 13914, 13876, 5194, 6567, 5275, 13878, 1113, 3248, 3216, 5840, 13897, 8714, 13881, 12138, 12238, 1493, 5318, 1641, 5370, 13915, 13670, 5836, 1187, 13666, 10677, 7412, 13597, 5853, 2]
 // Exports: default
 
-// Module 13911 (CheckpointFriendsStatsScreen)
+// Module 13912 (CheckpointFriendsStatsScreen)
 import nativeDefault from "native" /* 575 */;
 import intl6 from "intl" /* 1113 */;
 import _mod1652 from "module_1652" /* 1652 */;
@@ -15,17 +15,17 @@ import AnalyticsLocationDefault from "AnalyticsLocation" /* 7412 */;
 import ChatIcon from "ChatIcon" /* 8714 */;
 import utils_openGiftModal from "utils/openGiftModal" /* 10677 */;
 import MicrophoneIcon from "MicrophoneIcon" /* 12138 */;
-import Tracking from "Tracking" /* 13665 */;
-import CheckpointTextDefault from "CheckpointText" /* 13877 */;
-import CheckpointStatNumberDefault from "CheckpointStatNumber" /* 13880 */;
-import CheckpointDisplayTextDefault from "CheckpointDisplayText" /* 13896 */;
+import Tracking from "Tracking" /* 13666 */;
+import CheckpointTextDefault from "CheckpointText" /* 13878 */;
+import CheckpointStatNumberDefault from "CheckpointStatNumber" /* 13881 */;
+import CheckpointDisplayTextDefault from "CheckpointDisplayText" /* 13897 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 5141 */;
 import UserStore from "UserStore" /* 1385 */;
-import CheckpointStore from "CheckpointStore" /* 13667 */;
+import CheckpointStore from "CheckpointStore" /* 13668 */;
 import CheckpointConstants from "CheckpointConstants" /* 6199 */;
 import Fragment from "Fragment" /* 21 */;
 import PlatformUtils from "utils/PlatformUtils" /* 1357 */;
@@ -157,7 +157,7 @@ function SidekickMessageInput(user) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -211,7 +211,7 @@ function SidekickMessageInput(user) {
             closure_128_4(false);
           }
           c4 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp37) {
           closure_2 = tmp37;
           if (0 === c3) {
@@ -305,7 +305,7 @@ function SidekickMessageInput(user) {
     }
   }, items4);
   let tmp33 = null != value;
-  const tmp32 = value(13914)(user.id);
+  const tmp32 = value(13915)(user.id);
   if (tmp33) {
     tmp33 = value.length > 0;
   }
@@ -362,7 +362,7 @@ function SidekickMessageInput(user) {
         },
       accessibilityRole: "button",
       accessibilityLabel: intl2.string(user(1113).t.Ve9Ge6),
-      children: closure_13(user(13596).GiftIcon, obj12)
+      children: closure_13(user(13597).GiftIcon, obj12)
     };
     intl2 = tmp9(1113).intl;
     obj12 = { size: "refresh_sm", color: CHECKPOINT_PRIMARY };

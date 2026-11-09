@@ -11,7 +11,7 @@ import size from "module_2" /* 2 */;
 
 let importDefault, map;
 
-const f90184 = () => {
+const f90227 = () => {
   c4 = false;
   map = new Map();
   for (const item10012 of closure_1_3) {
@@ -50,7 +50,7 @@ function registerKeyCommand(arg0) {
   if (!tmp4) {
     c4 = true;
     const _queueMicrotask = queueMicrotask;
-    queueMicrotask(f90184);
+    queueMicrotask(f90227);
   }
 }
 function unregisterKeyCommand(arg0) {
@@ -60,7 +60,7 @@ function unregisterKeyCommand(arg0) {
   if (!tmp) {
     c4 = true;
     const _queueMicrotask = queueMicrotask;
-    queueMicrotask(f90184);
+    queueMicrotask(f90227);
   }
 }
 let react_native = react_native_mod;
@@ -100,7 +100,7 @@ export function subscribeKeyCommand(arg0) {
   if (!tmp4) {
     c4 = true;
     let _queueMicrotask = queueMicrotask;
-    queueMicrotask(f90184);
+    queueMicrotask(f90227);
   }
   return () => {
     items = items.filter((item) => item !== closure_0);
@@ -108,7 +108,7 @@ export function subscribeKeyCommand(arg0) {
     if (!tmp) {
       c4 = true;
       const _queueMicrotask = queueMicrotask;
-      queueMicrotask(f90184);
+      queueMicrotask(f90227);
     }
   };
 }

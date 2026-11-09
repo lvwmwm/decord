@@ -1,9 +1,9 @@
-// Module ID: 14146
-// Function ID: 14147
+// Module ID: 14147
+// Function ID: 14148
 // Name: SearchGuildChannelTabStore
 // Dependencies: [5070, 6897, 6952, 6834, 12, 11, 504, 572, 2]
 
-// Module 14146 (SearchGuildChannelTabStore)
+// Module 14147 (SearchGuildChannelTabStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _mod12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;

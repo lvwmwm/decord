@@ -1,14 +1,14 @@
-// Module ID: 17360
-// Function ID: 17361
+// Module ID: 17371
+// Function ID: 17372
 // Name: OrbsArcadeRewardStatusLabel
-// Dependencies: [19, 17, 21, 5140, 17331, 1113, 5751, 8738, 575, 2]
+// Dependencies: [19, 17, 21, 5140, 17342, 1113, 5751, 8738, 575, 2]
 // Exports: default
 
-// Module 17360 (OrbsArcadeRewardStatusLabel)
+// Module 17371 (OrbsArcadeRewardStatusLabel)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Text_Text from "Text/Text" /* 5751 */;
-import OrbsArcadeTypes from "OrbsArcadeTypes" /* 17331 */;
+import OrbsArcadeTypes from "OrbsArcadeTypes" /* 17342 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5140 */;

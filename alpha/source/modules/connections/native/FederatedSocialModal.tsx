@@ -1,10 +1,10 @@
-// Module ID: 14894
-// Function ID: 14895
+// Module ID: 14895
+// Function ID: 14896
 // Name: FederatedSocialModal
-// Dependencies: [5, 32, 19, 1072, 21, 5140, 6629, 1113, 7408, 5834, 14895, 7355, 5751, 7147, 1187, 5758, 7064, 7231, 2]
+// Dependencies: [5, 32, 19, 1072, 21, 5140, 6629, 1113, 7408, 5834, 14896, 7355, 5751, 7147, 1187, 5758, 7064, 7231, 2]
 // Exports: default
 
-// Module 14894 (FederatedSocialModal)
+// Module 14895 (FederatedSocialModal)
 import Constants from "Constants" /* 1072 */;
 import PlatformsDefault from "Platforms" /* 6629 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -48,7 +48,7 @@ function FederatedSocialModalScreen(onClose) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c3;
@@ -110,7 +110,7 @@ function FederatedSocialModalScreen(onClose) {
               }
             }
             c5 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp26) {
           closure_2 = tmp26;

@@ -1,13 +1,13 @@
-// Module ID: 19952
-// Function ID: 19953
+// Module ID: 19965
+// Function ID: 19966
 // Name: RedesignAddAvatarModal
-// Dependencies: [5, 32, 19, 17, 8802, 1072, 21, 5140, 575, 1627, 504, 16752, 19933, 8811, 8895, 8290, 8806, 8808, 5751, 1113, 19942, 5758, 19930, 2]
+// Dependencies: [5, 32, 19, 17, 8802, 1072, 21, 5140, 575, 1627, 504, 16763, 19946, 8811, 8895, 8290, 8806, 8808, 5751, 1113, 19955, 5758, 19943, 2]
 // Exports: default
 
-// Module 19952 (RedesignAddAvatarModal)
+// Module 19965 (RedesignAddAvatarModal)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import AddAvatarModalActionCreators from "AddAvatarModalActionCreators" /* 19930 */;
+import AddAvatarModalActionCreators from "AddAvatarModalActionCreators" /* 19943 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -75,7 +75,7 @@ export default function RedesignAddAvatarModal(route) {
           const obj4 = { value, done: true };
           return obj4;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -115,7 +115,7 @@ export default function RedesignAddAvatarModal(route) {
                 closure_129_1(true);
               }
               c3 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
             pendingImage = undefined;
             if (null != base64) {

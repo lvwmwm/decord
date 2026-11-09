@@ -1,10 +1,10 @@
-// Module ID: 15497
-// Function ID: 15498
+// Module ID: 15507
+// Function ID: 15508
 // Name: PaymentFlowWarningMessage
 // Dependencies: [19, 17, 21, 5140, 575, 6833, 1187, 5751, 2]
 // Exports: default
 
-// Module 15497 (PaymentFlowWarningMessage)
+// Module 15507 (PaymentFlowWarningMessage)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;

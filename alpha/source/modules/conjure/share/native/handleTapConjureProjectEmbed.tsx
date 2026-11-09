@@ -1,10 +1,10 @@
-// Module ID: 13463
-// Function ID: 13464
+// Module ID: 13464
+// Function ID: 13465
 // Name: handleTapConjureProjectEmbed
 // Dependencies: [5, 6899, 11713, 11716, 11894, 13002, 5836, 1113, 4026, 9767, 12997, 13009, 2118, 2]
 // Exports: default
 
-// Module 13463 (handleTapConjureProjectEmbed)
+// Module 13464 (handleTapConjureProjectEmbed)
 import ConjureProjectStore2 from "ConjureProjectStore" /* 6899 */;
 import conjureSharedProjectCoverTargetDefault from "conjureSharedProjectCoverTarget" /* 11716 */;
 import launchConjureSharedProjectDefault from "launchConjureSharedProject" /* 13002 */;
@@ -55,7 +55,7 @@ let obj = function _launchOrReport() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -94,7 +94,7 @@ let obj = function _launchOrReport() {
               c5 = 0;
             }
             c6 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp18) {
           if (0 === c5) {
@@ -128,7 +128,7 @@ obj = function _handleTapConjureProjectEmbed() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -211,7 +211,7 @@ obj = function _handleTapConjureProjectEmbed() {
             _default(project, guildId, str, closure_0);
           }
           c6 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp32) {
           c6 = 3;
           throw tmp32;

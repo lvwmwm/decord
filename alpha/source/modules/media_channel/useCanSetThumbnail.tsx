@@ -1,10 +1,10 @@
-// Module ID: 14755
-// Function ID: 14756
+// Module ID: 14756
+// Function ID: 14757
 // Name: useCanSetThumbnail
 // Dependencies: [4989, 563, 2]
 // Exports: default
 
-// Module 14755 (useCanSetThumbnail)
+// Module 14756 (useCanSetThumbnail)
 import ChannelStore from "ChannelStore" /* 4989 */;
 import size from "module_2" /* 2 */;
 

@@ -1,15 +1,15 @@
-// Module ID: 16024
-// Function ID: 16025
+// Module ID: 16034
+// Function ID: 16035
 // Name: ShareScreenModal
-// Dependencies: [5, 32, 19, 4989, 15974, 21, 3, 6799, 9011, 504, 7549, 1093, 16025, 2]
+// Dependencies: [5, 32, 19, 4989, 15984, 21, 3, 6799, 9011, 504, 7549, 1093, 16035, 2]
 // Exports: default
 
-// Module 16024 (ShareScreenModal)
+// Module 16034 (ShareScreenModal)
 import LoggerDefault from "Logger" /* 3 */;
 import Fragment from "Fragment" /* 21 */;
 import ChannelTypes from "ChannelTypes" /* 1093 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6799 */;
-import ShareScreenConstants from "ShareScreenConstants" /* 15974 */;
+import ShareScreenConstants from "ShareScreenConstants" /* 15984 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -63,7 +63,7 @@ export default function ShareScreenModal(text) {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -110,7 +110,7 @@ export default function ShareScreenModal(text) {
               c3 = 0;
             }
             c5 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           } catch (tmp21) {
             closure_2 = tmp21;
             if (0 === c3) {
@@ -152,7 +152,7 @@ export default function ShareScreenModal(text) {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           let c3;
@@ -200,7 +200,7 @@ export default function ShareScreenModal(text) {
               c3 = 0;
             }
             c5 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           } catch (tmp21) {
             closure_2 = tmp21;
             if (0 === c3) {

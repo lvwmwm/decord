@@ -1,10 +1,10 @@
-// Module ID: 15388
-// Function ID: 15389
+// Module ID: 15398
+// Function ID: 15399
 // Name: GuildProfileInvite
-// Dependencies: [32, 2186, 10238, 1072, 7956, 8465, 6978, 5147, 575, 5003, 9382, 9380, 1411, 2151, 2021, 1113, 13461, 9391, 7958, 11, 5050, 7417, 1090, 8452, 8467, 2]
+// Dependencies: [32, 2186, 10238, 1072, 7956, 8465, 6978, 5147, 575, 5003, 9382, 9380, 1411, 2151, 2021, 1113, 13462, 9391, 7958, 11, 5050, 7417, 1090, 8452, 8467, 2]
 // Exports: createGuildProfileInvite
 
-// Module 15388 (GuildProfileInvite)
+// Module 15398 (GuildProfileInvite)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -147,24 +147,24 @@ export function createGuildProfileInvite(invite, theme) {
   }
   let guildProfileCTAType = null;
   if (null != guildProfileFromInvite) {
-    const tmp5Result13 = tmp5(13461);
+    const tmp5Result13 = tmp5(13462);
     guildProfileCTAType = tmp5Result13.getGuildProfileCTAType(guildProfileFromInvite, invite.code);
   }
-  if (tmp5(13461).CTATypes.IS_MEMBER === guildProfileCTAType) {
+  if (tmp5(13462).CTATypes.IS_MEMBER === guildProfileCTAType) {
     const intl7 = tmp5(1113).intl;
     stringResult = intl7.string(tmp5(1113).t.IRoQXr);
-  } else if (tmp5(13461).CTATypes.HAS_APPLICATION === guildProfileCTAType) {
+  } else if (tmp5(13462).CTATypes.HAS_APPLICATION === guildProfileCTAType) {
     const intl6 = tmp5(1113).intl;
     stringResult = intl6.string(tmp5(1113).t["4yfIDk"]);
-  } else if (tmp5(13461).CTATypes.APPLY_TO_JOIN === guildProfileCTAType) {
+  } else if (tmp5(13462).CTATypes.APPLY_TO_JOIN === guildProfileCTAType) {
     const intl5 = tmp5(1113).intl;
     stringResult = intl5.string(tmp5(1113).t["7XdMW2"]);
-  } else if (tmp5(13461).CTATypes.ACCEPT_ROLES === guildProfileCTAType) {
+  } else if (tmp5(13462).CTATypes.ACCEPT_ROLES === guildProfileCTAType) {
     const intl4 = tmp5(1113).intl;
     stringResult = intl4.string(tmp5(1113).t.MMlhsr);
   } else {
-    if (tmp5(13461).CTATypes.LURK_DISCOVERABLE !== guildProfileCTAType) {
-      const JOIN_VIA_INVITE = tmp5(13461).CTATypes.JOIN_VIA_INVITE;
+    if (tmp5(13462).CTATypes.LURK_DISCOVERABLE !== guildProfileCTAType) {
+      const JOIN_VIA_INVITE = tmp5(13462).CTATypes.JOIN_VIA_INVITE;
     }
     const intl3 = tmp5(1113).intl;
     stringResult = intl3.string(tmp5(1113).t.XpeFYr);

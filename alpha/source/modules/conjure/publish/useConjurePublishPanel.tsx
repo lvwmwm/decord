@@ -22,7 +22,7 @@ let _require, c1, c4, closure_2, importDefault;
 
 let c10;
 let c9;
-const f102426 = (item) => {
+const f102467 = (item) => {
   let intl;
   let tmp;
   let tmp2;
@@ -86,7 +86,7 @@ export default function useConjurePublishPanel(id, guildId) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c3;
@@ -242,7 +242,7 @@ export default function useConjurePublishPanel(id, guildId) {
     initialChannelNames: arr4,
     channels,
     appChannelsPrivate: tmp25,
-    components: found.map(f102426),
+    components: found.map(f102467),
     devicePermissions: items4,
     note: stringResult,
     sharing: tmp27,
@@ -323,6 +323,6 @@ export function conjurePublishComponents(arg0) {
     [tmp] = item;
     return items.includes(tmp);
   });
-  return found.map(f102426);
+  return found.map(f102467);
 }
 export const CONJURE_PUBLISH_PERMISSION_LABELS = obj;

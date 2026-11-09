@@ -1,25 +1,25 @@
-// Module ID: 13906
-// Function ID: 13907
+// Module ID: 13907
+// Function ID: 13908
 // Name: CheckpointGamesStatsScreen
-// Dependencies: [17, 13667, 6199, 21, 5140, 575, 6569, 1113, 3248, 9817, 13877, 13890, 13891, 13907, 13898, 13882, 13883, 13884, 13896, 504, 13875, 2]
+// Dependencies: [17, 13668, 6199, 21, 5140, 575, 6569, 1113, 3248, 9817, 13878, 13891, 13892, 13908, 13899, 13883, 13884, 13885, 13897, 504, 13876, 2]
 // Exports: default
 
-// Module 13906 (CheckpointGamesStatsScreen)
+// Module 13907 (CheckpointGamesStatsScreen)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
 import _modDef3248 from "module_3248" /* 3248 */;
-import CheckpointTextDefault from "CheckpointText" /* 13877 */;
-import CheckpointApngPlayerDefault from "CheckpointApngPlayer" /* 13882 */;
-import _modDef13883 from "module_13883" /* 13883 */;
+import CheckpointTextDefault from "CheckpointText" /* 13878 */;
+import CheckpointApngPlayerDefault from "CheckpointApngPlayer" /* 13883 */;
 import _modDef13884 from "module_13884" /* 13884 */;
-import CheckpointCountUpStatNumberDefault from "CheckpointCountUpStatNumber" /* 13890 */;
-import CheckpointEmphasisDefault from "CheckpointEmphasis" /* 13891 */;
-import CheckpointDisplayTextDefault from "CheckpointDisplayText" /* 13896 */;
-import CheckpointRankTagDefault from "CheckpointRankTag" /* 13898 */;
-import CheckpointGameCard2 from "CheckpointGameCard" /* 13907 */;
-import CheckpointStore from "CheckpointStore" /* 13667 */;
+import _modDef13885 from "module_13885" /* 13885 */;
+import CheckpointCountUpStatNumberDefault from "CheckpointCountUpStatNumber" /* 13891 */;
+import CheckpointEmphasisDefault from "CheckpointEmphasis" /* 13892 */;
+import CheckpointDisplayTextDefault from "CheckpointDisplayText" /* 13897 */;
+import CheckpointRankTagDefault from "CheckpointRankTag" /* 13899 */;
+import CheckpointGameCard2 from "CheckpointGameCard" /* 13908 */;
+import CheckpointStore from "CheckpointStore" /* 13668 */;
 import CheckpointConstants from "CheckpointConstants" /* 6199 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5140 */;
@@ -152,7 +152,7 @@ function GlobalGames(gameStats) {
   ({ container: arr[0], globalContainer: arr[1] } = tmp);
   let obj2 = { style: tmp.header, children: items2 };
   let obj3 = { style: tmp.globalHeading, children: items1 };
-  const obj4 = { animatedUri: _modDef13883, staticUri: _modDef13884, style: tmp.globe };
+  const obj4 = { animatedUri: _modDef13884, staticUri: _modDef13885, style: tmp.globe };
   const tmp2 = CheckpointApngPlayerDefault;
   items1 = [closure_7(tmp2, obj4), ];
   const obj5 = { isStepHeading: true, children: stringResult.toLocaleUpperCase() };

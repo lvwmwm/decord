@@ -1,29 +1,38 @@
-// Module ID: 18521
-// Function ID: 18522
+// Module ID: 18534
+// Function ID: 18535
 // Name: useFavoritesCleanup
 // Dependencies: [5, 32, 19, 4992, 504, 10950, 2]
 // Exports: default
 
-// Module 18521 (useFavoritesCleanup)
+// Module 18534 (useFavoritesCleanup)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import _slicedToArray from "_slicedToArray" /* 32 */;
+import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import FavoriteStore from "FavoriteStore" /* 4992 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, c1, c4, closure_2;
+let _require, c1, c4, closure_2, closure_5;
 
+let _slicedToArray = _slicedToArray_mod;
 let result = size.fileFinishedImporting("modules/favorites/hooks/useFavoritesCleanup.tsx");
 
 export default function useFavoritesCleanup(arg0) {
   let autoAdd;
   let closure_0;
-  let closure_6;
+  let closure_3;
+  let closure_7;
+  let closure_8;
+  let first1;
   let first2;
   let first3;
+  let num;
+  let tmp10;
+  let tmp13;
+  let tmp16;
   let tmp18;
   let tmp20;
+  let tmp7;
   _require = arg0;
   let obj = function _save() {
     let ref;
@@ -38,7 +47,7 @@ export default function useFavoritesCleanup(arg0) {
           const obj4 = { value, done: true };
           return obj4;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c3;
@@ -53,12 +62,12 @@ export default function useFavoritesCleanup(arg0) {
               const obj5 = { value, done: true };
               return obj5;
             } else {
-              const tmp54 = closure_2_9;
+              const tmp54 = closure_2_11;
               if (tmp54) {
                 if (!ref.current) {
                   ref.current = true;
-                  FavoriteStore(true);
-                  closure_2_6(false);
+                  closure_2_7(true);
+                  closure_2_8(false);
                   c3 = 2;
                   const obj2 = tmp(c1[5]);
                   const result = obj2.setFavoritesAutoAddJoinedThreads(autoAdd);
@@ -72,44 +81,44 @@ export default function useFavoritesCleanup(arg0) {
             }
           } else if (1 === c1) {
             c3 = 0;
-            closure_128_7.current = false;
+            closure_128_9.current = false;
             const tmp28 = closure_2;
-            if (closure_128_8.current) {
-              closure_128_5(false);
+            if (closure_128_10.current) {
+              closure_128_7(false);
             }
             throw tmp28;
           } else {
             if (2 === c1) {
               c3 = 1;
-              if (closure_128_8.current) {
-                closure_128_6(true);
+              if (closure_128_10.current) {
+                closure_128_8(true);
               }
             } else if (arg0 === 1) {
               c4 = 3;
               throw value;
             } else if (arg0 === 2) {
               c3 = 0;
-              closure_128_7.current = false;
-              if (closure_128_8.current) {
-                closure_128_5(false);
+              closure_128_9.current = false;
+              if (closure_128_10.current) {
+                closure_128_7(false);
               }
               c4 = 3;
               obj = { value, done: true };
               return obj;
             } else {
-              if (closure_128_8.current) {
+              if (closure_128_10.current) {
                 closure_128_0();
               }
               c3 = 1;
             }
             c3 = 0;
-            closure_128_7.current = false;
-            if (closure_128_8.current) {
-              closure_128_5(false);
+            closure_128_9.current = false;
+            if (closure_128_10.current) {
+              closure_128_7(false);
             }
           }
           c4 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp48) {
           closure_2 = tmp48;
           if (0 === c3) {
@@ -126,39 +135,33 @@ export default function useFavoritesCleanup(arg0) {
     return obj(...arguments);
   };
   obj = require("get initialized");
-  const items = [FavoriteStore];
-  const stateFromStores = obj.useStateFromStores(items, () => FavoriteStore.autoAddJoinedThreads);
+  const items = [closure_5];
+  const stateFromStores = obj.useStateFromStores(items, () => closure_5.autoAddThreadsMode);
   let obj2 = require("get initialized");
-  const items1 = [FavoriteStore];
-  const stateFromStores1 = obj2.useStateFromStores(items1, () => FavoriteStore.pruneInactiveThreads);
+  const items1 = [closure_5];
+  const stateFromStores1 = obj2.useStateFromStores(items1, () => closure_5.pruneInactiveThreads);
   let obj3 = require("get initialized");
-  const items2 = [FavoriteStore];
-  const stateFromStores2 = obj3.useStateFromStores(items2, () => FavoriteStore.pruneInactiveThreadsDays);
+  const items2 = [closure_5];
+  const stateFromStores2 = obj3.useStateFromStores(items2, () => closure_5.pruneInactiveThreadsDays);
   let obj4 = require("get initialized");
-  const items3 = [FavoriteStore];
-  const stateFromStores3 = obj4.useStateFromStores(items3, () => FavoriteStore.pruneInactiveThreadsScope);
-  const tmp5 = first2(first3.useState(stateFromStores), 2);
-  autoAdd = tmp5[0];
-  const tmp7 = tmp5[1];
-  const tmp8 = first2(first3.useState(stateFromStores1), 2);
-  const first1 = tmp8[0];
-  const tmp10 = tmp8[1];
-  const tmp11 = first2(first3.useState(stateFromStores2), 2);
-  first2 = tmp11[0];
-  const tmp13 = tmp11[1];
-  const tmp14 = first2(first3.useState(stateFromStores3), 2);
-  first3 = tmp14[0];
-  const tmp16 = tmp14[1];
-  [tmp18, FavoriteStore] = first2(first3.useState(false), 2);
-  const tmp17 = first2(first3.useState(false), 2);
-  [tmp20, closure_6] = first2(first3.useState(false), 2);
-  const tmp19 = first2(first3.useState(false), 2);
-  let closure_7 = first3.useRef(false);
-  let closure_8 = first3.useRef(true);
-  const effect = first3.useEffect(() => {
-    closure_8.current = true;
+  const items3 = [closure_5];
+  const stateFromStores3 = obj4.useStateFromStores(items3, () => closure_5.pruneInactiveThreadsScope);
+  [autoAdd, tmp7] = first2.useState(stateFromStores);
+  [first1, tmp10] = first2.useState(stateFromStores1);
+  _slicedToArray = tmp10;
+  [first2, tmp13] = first2.useState(stateFromStores2);
+  closure_5 = tmp13;
+  [first3, tmp16] = first2.useState(stateFromStores3);
+  [tmp18, closure_7] = _slicedToArray(first2.useState(false), 2);
+  const tmp17 = _slicedToArray(first2.useState(false), 2);
+  [tmp20, closure_8] = _slicedToArray(first2.useState(false), 2);
+  const tmp19 = _slicedToArray(first2.useState(false), 2);
+  let closure_9 = first2.useRef(false);
+  let closure_10 = first2.useRef(true);
+  const effect = first2.useEffect(() => {
+    closure_10.current = true;
     return () => {
-      closure_1_8.current = false;
+      closure_1_10.current = false;
     };
   }, []);
   let tmp22 = autoAdd !== stateFromStores || first1 !== stateFromStores1;
@@ -170,7 +173,7 @@ export default function useFavoritesCleanup(arg0) {
     }
     tmp22 = tmp23;
   }
-  let closure_9 = tmp22;
+  let closure_11 = tmp22;
   let obj5 = {
     autoAdd,
     setAutoAdd: tmp7,
@@ -178,6 +181,15 @@ export default function useFavoritesCleanup(arg0) {
     setPrune: tmp10,
     days: first2,
     setDays: tmp13,
+    pruneTiming: num,
+    setPruneTiming(arg0) {
+      if (-1 !== arg0) {
+        closure_3(true);
+        closure_5(arg0);
+      } else {
+        closure_3(false);
+      }
+    },
     canSave: tmp22,
     scope: first3,
     setScope: tmp16,
@@ -187,5 +199,10 @@ export default function useFavoritesCleanup(arg0) {
       return obj(...arguments);
     }
   };
+  num = -1;
+  if (first1) {
+    num = first2;
+  }
   return obj5;
 };
+export const FAVORITES_PRUNE_NEVER = -1;

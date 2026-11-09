@@ -1,9 +1,9 @@
-// Module ID: 14820
-// Function ID: 14821
+// Module ID: 14821
+// Function ID: 14822
 // Name: ConjureAppChannelSheet
-// Dependencies: [19, 14817, 4989, 5072, 1072, 21, 5140, 575, 5776, 7484, 6159, 5751, 14818, 14791, 14650, 9767, 14647, 504, 5374, 10967, 11104, 8268, 9198, 7126, 7038, 7046, 12391, 1113, 12046, 10965, 4026, 11105, 7047, 5859, 7633, 11124, 11421, 8732, 11107, 10205, 5388, 5392, 7355, 2]
+// Dependencies: [19, 14818, 4989, 5072, 1072, 21, 5140, 575, 5776, 7484, 6159, 5751, 14819, 14792, 14651, 9767, 14648, 504, 5374, 10967, 11104, 8268, 9198, 7126, 7038, 7046, 12391, 1113, 12046, 10965, 4026, 11105, 7047, 5859, 7633, 11124, 11421, 8732, 11107, 10205, 5388, 5392, 7355, 2]
 
-// Module 14820 (ConjureAppChannelSheet)
+// Module 14821 (ConjureAppChannelSheet)
 import nativeDefault from "native" /* 575 */;
 import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5374 */;
 import Text_Text from "Text/Text" /* 5751 */;
@@ -14,9 +14,9 @@ import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators"
 import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9198 */;
 import ConjureRemixSheet from "ConjureRemixSheet" /* 10967 */;
 import openConjureHomeScreenDefault from "openConjureHomeScreen" /* 11104 */;
-import openConjureAppChannelSheet from "openConjureAppChannelSheet" /* 14818 */;
+import openConjureAppChannelSheet from "openConjureAppChannelSheet" /* 14819 */;
 import react_mod from "react" /* 19 */;
-import ChannelMemberCountStore from "ChannelMemberCountStore" /* 14817 */;
+import ChannelMemberCountStore from "ChannelMemberCountStore" /* 14818 */;
 import ChannelStore from "ChannelStore" /* 4989 */;
 import PermissionStore from "PermissionStore" /* 5072 */;
 import Constants from "Constants" /* 1072 */;
@@ -91,7 +91,7 @@ function ConjureAppChannelSheetContent(channel) {
   let string;
   let t;
   let tmp22Result;
-  const f108567 = () => {
+  const f108609 = () => {
     let fn = null;
     if (null != report) {
       fn = () => {
@@ -142,19 +142,19 @@ function ConjureAppChannelSheetContent(channel) {
   }, items4);
   const reload = appChannelAppActions.reload;
   const items5 = [reload];
-  const memo = react.useMemo(f108567, items5);
+  const memo = react.useMemo(f108609, items5);
   const close = appChannelAppActions.close;
   const items6 = [close];
-  const memo1 = react.useMemo(f108567, items6);
+  const memo1 = react.useMemo(f108609, items6);
   const appInfo = appChannelAppActions.appInfo;
   const items7 = [appInfo];
-  const memo2 = react.useMemo(f108567, items7);
+  const memo2 = react.useMemo(f108609, items7);
   const devicePermissions = appChannelAppActions.devicePermissions;
   const items8 = [devicePermissions];
-  const memo3 = react.useMemo(f108567, items8);
+  const memo3 = react.useMemo(f108609, items8);
   const report = appChannelAppActions.report;
   const items9 = [report];
-  const memo4 = react.useMemo(f108567, items9);
+  const memo4 = react.useMemo(f108609, items9);
   const items10 = [guild_id, remixProject];
   const items11 = [tmp7];
   const callback = react.useCallback(() => {

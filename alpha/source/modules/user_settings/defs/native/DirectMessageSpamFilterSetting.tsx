@@ -1,14 +1,14 @@
-// Module ID: 17047
-// Function ID: 17048
+// Module ID: 17058
+// Function ID: 17059
 // Name: DirectMessageSpamFilterSetting
-// Dependencies: [19, 8503, 17048, 4965, 11685, 1113, 17050, 2]
+// Dependencies: [19, 8503, 17059, 4965, 11685, 1113, 17061, 2]
 
-// Module 17047 (DirectMessageSpamFilterSetting)
+// Module 17058 (DirectMessageSpamFilterSetting)
 import intl3 from "intl" /* 1113 */;
 import UserSettings from "UserSettings" /* 4965 */;
 import SettingsConstants from "SettingsConstants" /* 8503 */;
-import ModerationUtils from "ModerationUtils" /* 17048 */;
-import useDerivedDMSpamFilterSetting from "useDerivedDMSpamFilterSetting" /* 17050 */;
+import ModerationUtils from "ModerationUtils" /* 17059 */;
+import useDerivedDMSpamFilterSetting from "useDerivedDMSpamFilterSetting" /* 17061 */;
 import react from "react" /* 19 */;
 import SettingBuilders from "SettingBuilders" /* 11685 */;
 import size from "module_2" /* 2 */;

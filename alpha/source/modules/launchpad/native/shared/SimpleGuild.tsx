@@ -1,10 +1,10 @@
-// Module ID: 19432
-// Function ID: 19433
+// Module ID: 19445
+// Function ID: 19446
 // Name: SimpleGuild
-// Dependencies: [19, 17, 5007, 6941, 5011, 1072, 21, 5140, 7020, 19433, 504, 19434, 19436, 1113, 18726, 8714, 575, 19435, 2]
+// Dependencies: [19, 17, 5007, 6941, 5011, 1072, 21, 5140, 7020, 19446, 504, 19447, 19449, 1113, 18739, 8714, 575, 19448, 2]
 // Exports: default
 
-// Module 19432 (SimpleGuild)
+// Module 19445 (SimpleGuild)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;

@@ -1,9 +1,9 @@
-// Module ID: 20182
-// Function ID: 20183
+// Module ID: 20195
+// Function ID: 20196
 // Name: GuildSettingsRoleItem
 // Dependencies: [5, 19, 17, 1072, 21, 5140, 575, 5751, 6172, 7416, 6091, 1113, 11761, 6957, 6162, 8098, 5862, 7434, 7432, 5715, 1380, 1090, 9139, 7038, 8732, 1187, 10099, 8738, 2]
 
-// Module 20182 (GuildSettingsRoleItem)
+// Module 20195 (GuildSettingsRoleItem)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import Text_Text from "Text/Text" /* 5751 */;
@@ -175,7 +175,7 @@ const memoResult = react.memo(function GuildSettingsRoleItem(guildId) {
                         const obj4 = { value, done: true };
                         return obj4;
                       } else {
-                        return { value: "HermesInternal", done: "HermesInternal" };
+                        return { value: "HermesInternal", done: null };
                       }
                     } else {
                       try {
@@ -209,7 +209,7 @@ const memoResult = react.memo(function GuildSettingsRoleItem(guildId) {
                         const obj2 = require("GuildActionCreators");
                         obj2.deleteRole(guildId, tmp.id);
                         c2 = 3;
-                        return { value: "HermesInternal", done: "HermesInternal" };
+                        return { value: "HermesInternal", done: null };
                       } catch (tmp15) {
                         c2 = 3;
                         throw tmp15;

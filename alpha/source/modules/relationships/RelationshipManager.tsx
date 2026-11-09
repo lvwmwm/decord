@@ -1,13 +1,13 @@
-// Module ID: 19995
-// Function ID: 19996
+// Module ID: 20008
+// Function ID: 20009
 // Name: RelationshipManager
-// Dependencies: [1072, 5147, 1113, 19996, 7350, 2]
+// Dependencies: [1072, 5147, 1113, 20009, 7350, 2]
 
-// Module 19995 (RelationshipManager)
+// Module 20008 (RelationshipManager)
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import shared from "shared" /* 5147 */;
-import RelationshipUtilsAll from "RelationshipUtils" /* 19996 */;
+import RelationshipUtilsAll from "RelationshipUtils" /* 20009 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7350 */;
 import size from "module_2" /* 2 */;
 

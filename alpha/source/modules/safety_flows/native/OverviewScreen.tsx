@@ -1,11 +1,11 @@
-// Module ID: 20476
-// Function ID: 20477
+// Module ID: 20489
+// Function ID: 20490
 // Name: OverviewScreen
-// Dependencies: [19, 21, 5140, 20477, 1499, 20478, 8041, 8043, 6159, 575, 5751, 1113, 2960, 7126, 8230, 20472, 13451, 20479, 13651, 2]
+// Dependencies: [19, 21, 5140, 20490, 1499, 20491, 8041, 8043, 6159, 575, 5751, 1113, 2960, 7126, 8230, 20485, 13452, 20492, 13652, 2]
 // Exports: default
 
-// Module 20476 (OverviewScreen)
-import SafetyFlowsUtils from "SafetyFlowsUtils" /* 20478 */;
+// Module 20489 (OverviewScreen)
+import SafetyFlowsUtils from "SafetyFlowsUtils" /* 20491 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5140 */;
@@ -30,7 +30,7 @@ export default function OverviewScreen() {
   let items4;
   let task;
   let tmp = closure_6();
-  let obj = task(20477);
+  let obj = task(20490);
   task = obj.useSafetyFlowTask().task;
   const obj2 = task(1499);
   navigation = obj2.useNavigation();
@@ -80,10 +80,10 @@ export default function OverviewScreen() {
   items1[2] = closure_5(Stack2, obj6);
   items3 = [closure_4(ModalContent, obj8), ];
   const obj10 = { children: items4 };
-  const ModalFooter = tmp2(13451).ModalFooter;
-  items4 = [closure_4(navigation(20479), {}), ];
+  const ModalFooter = tmp2(13452).ModalFooter;
+  items4 = [closure_4(navigation(20492), {}), ];
   const obj11 = { variant: "primary", text: intl4.string(navigation(2960).Ks6opt), onPress: callback };
-  const ModalActionButton = tmp2(13651).ModalActionButton;
+  const ModalActionButton = tmp2(13652).ModalActionButton;
   intl4 = tmp2(1113).intl;
   items4[1] = closure_4(ModalActionButton, obj11);
   items3[1] = closure_5(ModalFooter, obj10);

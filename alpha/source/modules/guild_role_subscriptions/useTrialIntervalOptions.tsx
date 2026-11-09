@@ -1,12 +1,12 @@
-// Module ID: 17531
-// Function ID: 17532
+// Module ID: 17542
+// Function ID: 17543
 // Name: useTrialIntervalOptions
-// Dependencies: [19, 17506, 1387, 1113, 17530, 2]
+// Dependencies: [19, 17517, 1387, 1113, 17541, 2]
 // Exports: default
 
-// Module 17531 (useTrialIntervalOptions)
+// Module 17542 (useTrialIntervalOptions)
 import PremiumConstants from "PremiumConstants" /* 1387 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 17506 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 17517 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

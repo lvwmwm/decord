@@ -1,10 +1,10 @@
-// Module ID: 17009
-// Function ID: 17010
+// Module ID: 17020
+// Function ID: 17021
 // Name: Blocked
-// Dependencies: [19, 21, 8880, 17010, 17011, 17012, 5147, 5842, 2]
+// Dependencies: [19, 21, 8880, 17021, 17022, 17023, 5147, 5842, 2]
 // Exports: Blocked, getBlockedSource, useBlockedSource
 
-// Module 17009 (Blocked)
+// Module 17020 (Blocked)
 import Fragment from "Fragment" /* 21 */;
 import shared from "shared" /* 5147 */;
 import FastImageDefault from "FastImage" /* 5842 */;

@@ -81,7 +81,7 @@ let obj = function _launchGuildBoostFlowOrAlert() {
           let obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -148,7 +148,7 @@ let obj = function _launchGuildBoostFlowOrAlert() {
                   }
                 }
                 c6 = 3;
-                return { value: "HermesInternal", done: "HermesInternal" };
+                return { value: "HermesInternal", done: null };
               } else {
                 let obj2 = closure_131_0(closure_131_2[8]);
                 onPaymentDismiss = 2;

@@ -1,9 +1,9 @@
-// Module ID: 17725
-// Function ID: 17726
+// Module ID: 17736
+// Function ID: 17737
 // Name: LanguageSetting
-// Dependencies: [2186, 1072, 504, 1113, 11685, 9708, 17726, 2]
+// Dependencies: [2186, 1072, 504, 1113, 11685, 9708, 17737, 2]
 
-// Module 17725 (LanguageSetting)
+// Module 17736 (LanguageSetting)
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import LanguageIcon from "LanguageIcon" /* 9708 */;

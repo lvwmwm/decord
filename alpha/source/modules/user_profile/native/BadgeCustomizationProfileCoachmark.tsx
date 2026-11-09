@@ -1,10 +1,10 @@
-// Module ID: 19228
-// Function ID: 19229
+// Module ID: 19241
+// Function ID: 19242
 // Name: BadgeCustomizationProfileCoachmark
-// Dependencies: [19, 1385, 4986, 504, 2171, 5154, 19229, 1113, 5206, 10076, 2]
+// Dependencies: [19, 1385, 4986, 504, 2171, 5154, 19242, 1113, 5206, 10076, 2]
 // Exports: default
 
-// Module 19228 (BadgeCustomizationProfileCoachmark)
+// Module 19241 (BadgeCustomizationProfileCoachmark)
 import intl4 from "intl" /* 1113 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4986 */;
 import BadgesCoachmarkRive from "BadgesCoachmarkRive" /* 5206 */;

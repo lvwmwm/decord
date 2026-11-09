@@ -1,9 +1,9 @@
-// Module ID: 18690
-// Function ID: 18691
+// Module ID: 18703
+// Function ID: 18704
 // Name: GuildsBarGuildFolder
-// Dependencies: [19, 5141, 6941, 5011, 5171, 6827, 18682, 18687, 18679, 21, 5140, 575, 5724, 504, 7020, 5761, 5137, 1090, 1652, 5199, 1705, 5842, 8677, 18691, 18694, 13008, 18701, 1113, 5376, 6957, 7023, 18684, 18702, 2]
+// Dependencies: [19, 5141, 6941, 5011, 5171, 6827, 18695, 18700, 18692, 21, 5140, 575, 5724, 504, 7020, 5761, 5137, 1090, 1652, 5199, 1705, 5842, 8677, 18704, 18707, 13008, 18714, 1113, 5376, 6957, 7023, 18697, 18715, 2]
 
-// Module 18690 (GuildsBarGuildFolder)
+// Module 18703 (GuildsBarGuildFolder)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1090 */;
@@ -15,15 +15,15 @@ import SortedGuildStore2 from "SortedGuildStore" /* 6827 */;
 import NativeViewDefault from "NativeView" /* 7023 */;
 import AssetRegistryDefault from "AssetRegistry" /* 8677 */;
 import ListUtils from "ListUtils" /* 13008 */;
-import GuildsBarFolderMenuItems from "GuildsBarFolderMenuItems" /* 18684 */;
+import GuildsBarFolderMenuItems from "GuildsBarFolderMenuItems" /* 18697 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5141 */;
 import GuildReadStateStore from "GuildReadStateStore" /* 6941 */;
 import GuildStore from "GuildStore" /* 5011 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 5171 */;
-import GuildsBarDnDStore from "GuildsBarDnDStore" /* 18682 */;
-import GuildsBarConstants_mod from "guilds_bar/GuildsBarConstants" /* 18687 */;
-import GuildsBarConstants_mod2 from "GuildsBarConstants" /* 18679 */;
+import GuildsBarDnDStore from "GuildsBarDnDStore" /* 18695 */;
+import GuildsBarConstants_mod from "guilds_bar/GuildsBarConstants" /* 18700 */;
+import GuildsBarConstants_mod2 from "GuildsBarConstants" /* 18692 */;
 import Fragment_mod from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;

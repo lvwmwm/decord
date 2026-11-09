@@ -1,10 +1,10 @@
-// Module ID: 14898
-// Function ID: 14899
+// Module ID: 14899
+// Function ID: 14900
 // Name: AppStoreOverlayCategoryMessages
 // Dependencies: [1113, 2]
 // Exports: getAppStoreOverlayCategoryLabel
 
-// Module 14898 (AppStoreOverlayCategoryMessages)
+// Module 14899 (AppStoreOverlayCategoryMessages)
 import intl2 from "intl" /* 1113 */;
 import size from "module_2" /* 2 */;
 

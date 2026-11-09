@@ -1,10 +1,10 @@
-// Module ID: 18757
-// Function ID: 18758
+// Module ID: 18770
+// Function ID: 18771
 // Name: useInterestGameSearch
 // Dependencies: [5, 32, 19, 8751, 9224, 8752, 9223, 9699, 9222, 2]
 // Exports: default
 
-// Module 18757 (useInterestGameSearch)
+// Module 18770 (useInterestGameSearch)
 import GameAutocompleteUtils from "GameAutocompleteUtils" /* 8752 */;
 import GameSearchSession from "GameSearchSession" /* 9223 */;
 import GameSearchFilterGroup from "GameSearchFilterGroup" /* 9224 */;
@@ -67,7 +67,7 @@ export default function useInterestGameSearch(name) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           let c4;
@@ -97,7 +97,7 @@ export default function useInterestGameSearch(name) {
                 } else if (query.signal.aborted) {
                   c4 = 0;
                   c6 = 3;
-                  return { value: "HermesInternal", done: "HermesInternal" };
+                  return { value: "HermesInternal", done: null };
                 } else {
                   results = GameAutocompleteStore.getResults(query, DEFAULT);
                   query = results;
@@ -127,7 +127,7 @@ export default function useInterestGameSearch(name) {
               return obj;
             }
             c6 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           } catch (tmp39) {
             closure_3 = tmp39;
             if (0 === c4) {

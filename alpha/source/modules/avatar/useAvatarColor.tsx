@@ -15,7 +15,7 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require, c1, c2, c5, c6, dependencyMap;
 
-const f94591 = () => {
+const f94633 = () => {
   let tmp2 = null != closure_0;
   const tmp = closure_0;
   if (tmp2) {
@@ -41,7 +41,7 @@ let obj = function _maybeFetchColors() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -72,7 +72,7 @@ let obj = function _maybeFetchColors() {
           return obj;
         }
         c1 = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp7) {
         c1 = 3;
         throw tmp7;
@@ -100,7 +100,7 @@ obj = function _fetchColors() {
         let obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c4;
@@ -180,7 +180,7 @@ obj = function _fetchColors() {
           c4 = 0;
         }
         c6 = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp24) {
         let closure_3 = tmp24;
         if (0 === c4) {
@@ -229,7 +229,7 @@ export default function useAvatarColor(arg0, arg1) {
     return num;
   });
   const items1 = [arg0, tmp];
-  const effect = react.useEffect(f94591, items1);
+  const effect = react.useEffect(f94633, items1);
   const items2 = [tmp, stateFromStores];
   let memo = react.useMemo(() => {
     let mapped;
@@ -293,7 +293,7 @@ export function useAvatarColors(pendingAvatarSrc, PRIMARY_530) {
     return num;
   });
   const items1 = [pendingAvatarSrc, tmp];
-  const effect = react.useEffect(f94591, items1);
+  const effect = react.useEffect(f94633, items1);
   const items2 = [tmp, stateFromStores];
   let memo = react.useMemo(() => {
     let mapped;

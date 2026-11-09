@@ -1,9 +1,9 @@
-// Module ID: 15235
-// Function ID: 15236
+// Module ID: 15245
+// Function ID: 15246
 // Name: UserProfileActivityEmptyStates
 // Dependencies: [32, 19, 17, 1072, 21, 1113, 5140, 575, 5751, 6173, 12, 7549, 5374, 5758, 7635, 2]
 
-// Module 15235 (UserProfileActivityEmptyStates)
+// Module 15245 (UserProfileActivityEmptyStates)
 import _mod12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;

@@ -1,10 +1,10 @@
-// Module ID: 15995
-// Function ID: 15996
+// Module ID: 16005
+// Function ID: 16006
 // Name: QRScannerModal
-// Dependencies: [32, 19, 17, 1072, 7792, 21, 1377, 15996, 575, 7270, 1627, 1378, 15971, 6799, 15986, 2118, 7635, 13587, 5834, 6091, 1113, 9189, 7320, 1187, 2]
+// Dependencies: [32, 19, 17, 1072, 7792, 21, 1377, 16006, 575, 7270, 1627, 1378, 15981, 6799, 15996, 2118, 7635, 13588, 5834, 6091, 1113, 9189, 7320, 1187, 2]
 // Exports: default
 
-// Module 15995 (QRScannerModal)
+// Module 16005 (QRScannerModal)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl3 from "intl" /* 1113 */;
@@ -17,9 +17,9 @@ import ModalActionCreatorsDefault from "ModalActionCreators" /* 6799 */;
 import openUserSettings from "openUserSettings" /* 7635 */;
 import FamilyCenterConstants from "FamilyCenterConstants" /* 7792 */;
 import TouchableHitBoxDefault from "TouchableHitBox" /* 9189 */;
-import FamilyCenterNativeUtils from "FamilyCenterNativeUtils" /* 13587 */;
-import QRLoginUtils from "QRLoginUtils" /* 15971 */;
-import QRScannerNativeComponentDefault from "QRScannerNativeComponent" /* 15996 */;
+import FamilyCenterNativeUtils from "FamilyCenterNativeUtils" /* 13588 */;
+import QRLoginUtils from "QRLoginUtils" /* 15981 */;
+import QRScannerNativeComponentDefault from "QRScannerNativeComponent" /* 16006 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -124,7 +124,7 @@ export default function QRScannerModal(showHelp) {
                 tmp22Result.pop();
                 const obj2 = { remoteAuthFingerprint: result };
                 const tmp22Result4 = ModalActionCreatorsDefault;
-                tmp22Result4.pushLazy(asyncRequire(15986, dependencyMap.paths), obj2);
+                tmp22Result4.pushLazy(asyncRequire(15996, dependencyMap.paths), obj2);
               } else {
                 let match;
                 if (url.pathname != null) {

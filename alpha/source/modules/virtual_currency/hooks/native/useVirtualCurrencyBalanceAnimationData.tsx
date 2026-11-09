@@ -1,10 +1,10 @@
-// Module ID: 14738
-// Function ID: 14739
+// Module ID: 14739
+// Function ID: 14740
 // Name: useVirtualCurrencyBalanceAnimationData
 // Dependencies: [32, 19, 5141, 504, 6787, 2]
 // Exports: useVirtualCurrencyBalanceAnimationData
 
-// Module 14738 (useVirtualCurrencyBalanceAnimationData)
+// Module 14739 (useVirtualCurrencyBalanceAnimationData)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5141 */;

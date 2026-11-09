@@ -1,9 +1,9 @@
-// Module ID: 18765
-// Function ID: 18766
+// Module ID: 18778
+// Function ID: 18779
 // Name: GuildsBarUnreadBars
-// Dependencies: [32, 19, 17, 6941, 5171, 6827, 18679, 17385, 21, 5140, 7304, 1627, 17377, 17387, 551, 558, 504, 1652, 1705, 18766, 2]
+// Dependencies: [32, 19, 17, 6941, 5171, 6827, 18692, 17396, 21, 5140, 7304, 1627, 17388, 17398, 551, 558, 504, 1652, 1705, 18779, 2]
 
-// Module 18765 (GuildsBarUnreadBars)
+// Module 18778 (GuildsBarUnreadBars)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
@@ -14,8 +14,8 @@ import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import GuildReadStateStore from "GuildReadStateStore" /* 6941 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 5171 */;
-import GuildsBarConstants from "GuildsBarConstants" /* 18679 */;
-import YouBarConstants from "YouBarConstants" /* 17385 */;
+import GuildsBarConstants from "GuildsBarConstants" /* 18692 */;
+import YouBarConstants from "YouBarConstants" /* 17396 */;
 import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
@@ -354,11 +354,11 @@ const memoResult = react.memo(function GuildsBarUnreadBars(fastList) {
   const tmp16 = closure_15();
   _require = tmp16;
   const top2 = tmp(1627)().top;
-  const tmp8Result = fastList(17377);
+  const tmp8Result = fastList(17388);
   const mobileQuestDockHeight = tmp8Result.useMobileQuestDockHeight();
   let num = 8;
-  const useYouBarTotalHeight = fastList(17387).useYouBarTotalHeight;
-  fastList(17387);
+  const useYouBarTotalHeight = fastList(17398).useYouBarTotalHeight;
+  fastList(17398);
   if (mobileQuestDockHeight > 0) {
     num = 0;
   }

@@ -1,10 +1,10 @@
-// Module ID: 15176
-// Function ID: 15177
+// Module ID: 15177
+// Function ID: 15178
 // Name: useUserProfileWidgets
 // Dependencies: [502, 7848, 12550, 504, 2]
 // Exports: default
 
-// Module 15176 (useUserProfileWidgets)
+// Module 15177 (useUserProfileWidgets)
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import UserProfileStore from "UserProfileStore" /* 7848 */;
 import WidgetStore from "WidgetStore" /* 12550 */;

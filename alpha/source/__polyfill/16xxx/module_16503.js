@@ -1,26 +1,16 @@
 // Module ID: 16503
 // Function ID: 16504
-// Dependencies: [16504, 16508, 16511]
+// Dependencies: [16467, 16441]
 
 // Module 16503
-import _mod16504 from "module_16504" /* 16504 */;
-import _mod16508 from "module_16508" /* 16508 */;
-import _mod16511 from "module_16511" /* 16511 */;
+import _mod16441 from "module_16441" /* 16441 */;
+import module_16467 from "module_16467" /* 16467 */;
 
-const obj = {};
-const _URL = _mod16504.URL;
-_URL.install(obj);
-const _URLSearchParams = _mod16504.URLSearchParams;
-_URLSearchParams.install(obj);
-({ URL: exports.URL, URLSearchParams: exports.URLSearchParams } = obj);
+let _moduleResult = module_16467(_mod16441.WeakMap);
+if (_moduleResult) {
+  const _String = String;
+  const obj = /native code/;
+  _moduleResult = obj.test(String(_mod16441.WeakMap));
+}
 
-export const parseURL = _mod16508.parseURL;
-export const basicURLParse = _mod16508.basicURLParse;
-export const serializeURL = _mod16508.serializeURL;
-export const serializeHost = _mod16508.serializeHost;
-export const serializeInteger = _mod16508.serializeInteger;
-export const serializeURLOrigin = _mod16508.serializeURLOrigin;
-export const setTheUsername = _mod16508.setTheUsername;
-export const setThePassword = _mod16508.setThePassword;
-export const cannotHaveAUsernamePasswordPort = _mod16508.cannotHaveAUsernamePasswordPort;
-export const percentDecode = _mod16511.percentDecode;
+export default _moduleResult;

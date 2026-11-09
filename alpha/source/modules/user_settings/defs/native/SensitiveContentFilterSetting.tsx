@@ -1,9 +1,9 @@
-// Module ID: 17021
-// Function ID: 17022
+// Module ID: 17032
+// Function ID: 17033
 // Name: SensitiveContentFilterSetting
-// Dependencies: [8503, 1072, 11685, 1113, 8724, 17022, 2]
+// Dependencies: [8503, 1072, 11685, 1113, 8724, 17033, 2]
 
-// Module 17021 (SensitiveContentFilterSetting)
+// Module 17032 (SensitiveContentFilterSetting)
 import Constants from "Constants" /* 1072 */;
 import intl7 from "intl" /* 1113 */;
 import SettingsConstants from "SettingsConstants" /* 8503 */;

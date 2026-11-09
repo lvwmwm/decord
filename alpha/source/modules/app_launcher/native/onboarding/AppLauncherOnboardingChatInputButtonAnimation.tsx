@@ -1,10 +1,10 @@
-// Module ID: 14034
-// Function ID: 14035
+// Module ID: 14035
+// Function ID: 14036
 // Name: AppLauncherOnboardingChatInputButtonAnimation
-// Dependencies: [19, 17, 5141, 21, 5140, 5764, 575, 5370, 5373, 504, 9911, 12568, 1652, 5745, 14035, 12593, 2]
+// Dependencies: [19, 17, 5141, 21, 5140, 5764, 575, 5370, 5373, 504, 9911, 12568, 1652, 5745, 14036, 12593, 2]
 // Exports: AppLauncherOnboardingChatInputButtonAnimation
 
-// Module 14034 (AppLauncherOnboardingChatInputButtonAnimation)
+// Module 14035 (AppLauncherOnboardingChatInputButtonAnimation)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef1652 from "module_1652" /* 1652 */;
@@ -15,7 +15,7 @@ import ButtonConstants from "ButtonConstants" /* 5764 */;
 import ClientThemesOverrides from "ClientThemesOverrides" /* 9911 */;
 import useAppLauncherOnboardingContentDefault from "useAppLauncherOnboardingContent" /* 12568 */;
 import _mod12593 from "module_12593" /* 12593 */;
-import _mod14035 from "module_14035" /* 14035 */;
+import _mod14036 from "module_14036" /* 14036 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 5141 */;
@@ -96,7 +96,7 @@ export function AppLauncherOnboardingChatInputButtonAnimation(channelId) {
   items1 = [absoluteFill.absoluteFill, tmp.glowAnimation];
   const obj3 = { children: items4 };
   const View = _modDef1652.View;
-  const obj5 = { collapsable: false, style: tmp.glowLottie, source: _mod14035, autoPlay: !stateFromStores };
+  const obj5 = { collapsable: false, style: tmp.glowLottie, source: _mod14036, autoPlay: !stateFromStores };
   const tmp5 = LottieAnimationViewDefault;
   items2 = [metroRequire(tmp5, obj5), , ];
   const obj6 = { collapsable: false, style: items3 };

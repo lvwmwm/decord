@@ -1,9 +1,9 @@
-// Module ID: 15906
-// Function ID: 15907
+// Module ID: 15916
+// Function ID: 15917
 // Name: LocalPushNotificationStore
 // Dependencies: [5011, 6763, 11029, 1072, 11040, 2166, 1113, 504, 572, 2]
 
-// Module 15906 (LocalPushNotificationStore)
+// Module 15916 (LocalPushNotificationStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants2 from "Constants" /* 1072 */;

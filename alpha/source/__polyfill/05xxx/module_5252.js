@@ -33,7 +33,7 @@ export function useRiveFile(src, arg1) {
   let str2;
   let uri;
   let riveFile;
-  let tmp = _slicedToArray(str2({ riveFile: "HermesInternal", isLoading: null, error: "heading-sm/semibold" }), 2);
+  let tmp = _slicedToArray(str2({ riveFile: "HermesInternal", isLoading: null, error: "r" }), 2);
   [tmp2, c1] = tmp;
   const items = [obj.referencedAssets];
   let tmp3 = riveFile(() => {
@@ -150,7 +150,7 @@ export function useRiveFile(src, arg1) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c3;
@@ -303,7 +303,7 @@ export function useRiveFile(src, arg1) {
             riveFile = value;
           }
           c5 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp46) {
           closure_2 = tmp46;
           if (0 === c3) {

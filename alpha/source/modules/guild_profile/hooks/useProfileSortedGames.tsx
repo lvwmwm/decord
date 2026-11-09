@@ -1,10 +1,10 @@
-// Module ID: 15203
-// Function ID: 15204
+// Module ID: 15213
+// Function ID: 15214
 // Name: useProfileSortedGames
-// Dependencies: [19, 9378, 15204, 15205, 12, 1380, 12549, 9221, 9224, 8752, 2]
+// Dependencies: [19, 9378, 15214, 15215, 12, 1380, 12549, 9221, 9224, 8752, 2]
 // Exports: useProfileSortedGames
 
-// Module 15203 (useProfileSortedGames)
+// Module 15213 (useProfileSortedGames)
 import _modDef12 from "module_12" /* 12 */;
 import GlobalUtils from "GlobalUtils" /* 1380 */;
 import react from "react" /* 19 */;

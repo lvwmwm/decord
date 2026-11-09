@@ -1,23 +1,23 @@
-// Module ID: 19151
-// Function ID: 19152
+// Module ID: 19164
+// Function ID: 19165
 // Name: AutocompleteScreen
-// Dependencies: [32, 19, 4989, 5082, 1385, 19152, 14133, 9917, 1072, 21, 504, 19056, 14119, 14144, 14140, 5194, 5776, 14126, 19153, 14125, 14127, 19115, 19048, 1113, 19060, 2]
+// Dependencies: [32, 19, 4989, 5082, 1385, 19165, 14134, 9917, 1072, 21, 504, 19069, 14120, 14145, 14141, 5194, 5776, 14127, 19166, 14126, 14128, 19128, 19061, 1113, 19073, 2]
 
-// Module 19151 (AutocompleteScreen)
+// Module 19164 (AutocompleteScreen)
 import Fragment from "Fragment" /* 21 */;
 import UserUtilsDefault from "UserUtils" /* 5194 */;
 import useChannelName from "useChannelName" /* 5776 */;
-import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 14119 */;
-import TrackingDefault from "Tracking" /* 14140 */;
-import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 14144 */;
-import AutocompleteScreenUtils from "AutocompleteScreenUtils" /* 19153 */;
+import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 14120 */;
+import TrackingDefault from "Tracking" /* 14141 */;
+import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 14145 */;
+import AutocompleteScreenUtils from "AutocompleteScreenUtils" /* 19166 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4989 */;
 import RelationshipStore from "RelationshipStore" /* 5082 */;
 import UserStore from "UserStore" /* 1385 */;
-import SearchAutocompleteStore from "SearchAutocompleteStore" /* 19152 */;
-import SearchQueryStore from "SearchQueryStore" /* 14133 */;
+import SearchAutocompleteStore from "SearchAutocompleteStore" /* 19165 */;
+import SearchQueryStore from "SearchQueryStore" /* 14134 */;
 import SearchConstants from "SearchConstants" /* 9917 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;

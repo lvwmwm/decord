@@ -1,7 +1,7 @@
 // Module ID: 9396
 // Function ID: 9397
 // Name: GuildProfileGames
-// Dependencies: [19, 17, 21, 5140, 575, 9397, 9421, 14958, 5751, 14962, 5837, 5374, 14963, 2118, 7043, 2]
+// Dependencies: [19, 17, 21, 5140, 575, 9397, 9421, 14959, 5751, 14963, 5837, 5374, 14964, 2118, 7043, 2]
 // Exports: default
 
 // Module 9396 (GuildProfileGames)
@@ -21,7 +21,7 @@ let hasOwnProperty;
 let metroRequire;
 let rect;
 let tmp;
-const GameIconDefault = tmp(14958);
+const GameIconDefault = tmp(14959);
 function ClickableGameIcon(game) {
   let activityLevel;
   let onPress;

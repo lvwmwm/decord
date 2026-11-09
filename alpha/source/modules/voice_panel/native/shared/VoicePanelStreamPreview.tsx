@@ -1,10 +1,10 @@
-// Module ID: 15128
-// Function ID: 15129
+// Module ID: 15129
+// Function ID: 15130
 // Name: VoicePanelStreamPreview
 // Dependencies: [19, 17, 6769, 502, 21, 1652, 5758, 5140, 575, 12208, 504, 6772, 5370, 5842, 5751, 1113, 2]
 // Exports: VoicePanelStreamPreview
 
-// Module 15128 (VoicePanelStreamPreview)
+// Module 15129 (VoicePanelStreamPreview)
 import nativeDefault from "native" /* 575 */;
 import components_Button_Button from "components/Button/Button" /* 5758 */;
 import StreamKeyUtils from "StreamKeyUtils" /* 6772 */;

@@ -1,10 +1,10 @@
-// Module ID: 17880
-// Function ID: 17881
+// Module ID: 17891
+// Function ID: 17892
 // Name: UserSettingsStartupTimings
 // Dependencies: [5, 32, 19, 17, 1359, 1072, 21, 5140, 575, 5751, 5321, 1627, 11227, 504, 9, 7730, 9010, 7357, 6159, 7126, 7037, 1360, 7038, 12410, 2]
 // Exports: default
 
-// Module 17880 (UserSettingsStartupTimings)
+// Module 17891 (UserSettingsStartupTimings)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -109,7 +109,7 @@ export default function UserSettingsStartupTimings() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -147,7 +147,7 @@ export default function UserSettingsStartupTimings() {
           const obj = tmp(c2[16]);
           obj.showShareActionSheet(obj7, "Startup Timing");
           c3 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp16) {
         c3 = 3;

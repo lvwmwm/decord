@@ -1,10 +1,10 @@
-// Module ID: 15314
-// Function ID: 15315
+// Module ID: 15324
+// Function ID: 15325
 // Name: ProductDetailsActionSheetPurchaseSection
-// Dependencies: [32, 19, 17, 7811, 1074, 1072, 11659, 1387, 21, 5140, 575, 8098, 13596, 5374, 14662, 1113, 9640, 9661, 9621, 5765, 1499, 7387, 6799, 15315, 2118, 7795, 15323, 1075, 15324, 14730, 9616, 5751, 5759, 2111, 8820, 504, 11558, 2171, 7808, 7807, 9641, 10032, 8816, 9637, 11658, 15326, 15327, 1627, 9639, 5758, 15328, 1242, 1377, 6595, 6091, 2]
+// Dependencies: [32, 19, 17, 7811, 1074, 1072, 11659, 1387, 21, 5140, 575, 8098, 13597, 5374, 14663, 1113, 9640, 9661, 9621, 5765, 1499, 7387, 6799, 15325, 2118, 7795, 15333, 1075, 15334, 14731, 9616, 5751, 5759, 2111, 8820, 504, 11558, 2171, 7808, 7807, 9641, 10032, 8816, 9637, 11658, 15336, 15337, 1627, 9639, 5758, 15338, 1242, 1377, 6595, 6091, 2]
 // Exports: default
 
-// Module 15314 (ProductDetailsActionSheetPurchaseSection)
+// Module 15324 (ProductDetailsActionSheetPurchaseSection)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl10 from "intl" /* 1113 */;
@@ -21,8 +21,8 @@ import ModalActionCreatorsDefault from "ModalActionCreators" /* 6799 */;
 import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7387 */;
 import OrbsIcon from "OrbsIcon" /* 9616 */;
 import MainTabsConstants from "MainTabsConstants" /* 11659 */;
-import openGiftModal from "openGiftModal" /* 14662 */;
-import ProductPurchaseSuccessActionCreatorsDefault from "ProductPurchaseSuccessActionCreators" /* 14730 */;
+import openGiftModal from "openGiftModal" /* 14663 */;
+import ProductPurchaseSuccessActionCreatorsDefault from "ProductPurchaseSuccessActionCreators" /* 14731 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7811 */;
@@ -197,7 +197,7 @@ function VCButton(balance) {
         }
       }
     };
-    obj2.pushLazy(asyncRequire(15315, dependencyMap.paths), obj3, ORB_CHECKOUT_MODAL);
+    obj2.pushLazy(asyncRequire(15325, dependencyMap.paths), obj3, ORB_CHECKOUT_MODAL);
   }, items);
   if (null == price) {
     return null;

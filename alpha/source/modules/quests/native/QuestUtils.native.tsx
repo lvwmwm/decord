@@ -1,7 +1,7 @@
 // Module ID: 9769
 // Function ID: 9770
 // Name: QuestUtils
-// Dependencies: [5, 19, 9770, 6836, 1072, 21, 5374, 9771, 2118, 14929, 9790, 14936, 14944, 7930, 9773, 6839, 5837, 1113, 7061, 9764, 7943, 11062, 5315, 7635, 1377, 5834, 575, 13260, 9817, 6092, 6096, 5314, 1500, 2]
+// Dependencies: [5, 19, 9770, 6836, 1072, 21, 5374, 9771, 2118, 14930, 9790, 14937, 14945, 7930, 9773, 6839, 5837, 1113, 7061, 9764, 7943, 11062, 5315, 7635, 1377, 5834, 575, 13260, 9817, 6092, 6096, 5314, 1500, 2]
 // Exports: dismissOverlayScreens, getPrimaryCtaIcon, handleRewardClaimThenView, isHeroVideoSupported, openDiscordQuestsFAQ, openQuestHome, openRewardDetailsBottomSheet, showQuestUnavailableAlert
 
 // Module 9769 (QuestUtils)
@@ -20,8 +20,8 @@ import getQuestLogger from "getQuestLogger" /* 7930 */;
 import utils_QuestUtils from "utils/QuestUtils" /* 7943 */;
 import QuestActionCreators from "QuestActionCreators" /* 9773 */;
 import QuestRewardUtils from "QuestRewardUtils" /* 9790 */;
-import QuestOrbsRewardModal from "QuestOrbsRewardModal" /* 14936 */;
-import openQuestCollectibleRewardModal from "openQuestCollectibleRewardModal" /* 14944 */;
+import QuestOrbsRewardModal from "QuestOrbsRewardModal" /* 14937 */;
+import openQuestCollectibleRewardModal from "openQuestCollectibleRewardModal" /* 14945 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import QuestHomeNavigationStore from "QuestHomeNavigationStore" /* 9770 */;
@@ -49,7 +49,7 @@ function openRewardClaimBottomSheet(arg0) {
   let sourceQuestContent;
   ({ questId, questContent, questContentPosition, sourceQuestContent } = arg0);
   obj = ActionSheetActionCreatorsDefault;
-  return obj.openLazy(asyncRequire(14929, dependencyMap.paths), metroRequire, { questId, questContent, questContentPosition, sourceQuestContent });
+  return obj.openLazy(asyncRequire(14930, dependencyMap.paths), metroRequire, { questId, questContent, questContentPosition, sourceQuestContent });
 }
 function viewReward(quest) {
   let onSuccess;
@@ -65,7 +65,7 @@ function viewReward(quest) {
     const id = quest.id;
     const obj2 = { questId: id, questContent, questContentPosition, sourceQuestContent };
     const obj7 = ActionSheetActionCreatorsDefault;
-    obj7.openLazy(asyncRequire(14929, tmp2.paths), metroRequire, obj2);
+    obj7.openLazy(asyncRequire(14930, tmp2.paths), metroRequire, obj2);
   } else {
     const tmpResult = QuestRewardUtils;
     if (tmpResult.hasVirtualCurrencyReward(quest.config)) {
@@ -98,7 +98,7 @@ let obj = function _handleRewardClaim() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -188,7 +188,7 @@ obj = function _handleRewardClaimThenView() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

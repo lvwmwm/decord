@@ -1,9 +1,9 @@
-// Module ID: 18130
-// Function ID: 18131
+// Module ID: 18143
+// Function ID: 18144
 // Name: DesignSystemFormPrimitivesSetting
-// Dependencies: [8503, 1072, 11685, 18131, 2]
+// Dependencies: [8503, 1072, 11685, 18144, 2]
 
-// Module 18130 (DesignSystemFormPrimitivesSetting)
+// Module 18143 (DesignSystemFormPrimitivesSetting)
 import Constants from "Constants" /* 1072 */;
 import SettingsConstants from "SettingsConstants" /* 8503 */;
 import SettingBuilders from "SettingBuilders" /* 11685 */;

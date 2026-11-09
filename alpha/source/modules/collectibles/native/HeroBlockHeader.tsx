@@ -1,10 +1,10 @@
-// Module ID: 18161
-// Function ID: 18162
+// Module ID: 18174
+// Function ID: 18175
 // Name: HeroBlockHeader
-// Dependencies: [19, 17, 1072, 21, 9540, 5140, 575, 9769, 6841, 1499, 9543, 5369, 5724, 5137, 9764, 5147, 18162, 18163, 5715, 5842, 5751, 5758, 1113, 7043, 1252, 7438, 2]
+// Dependencies: [19, 17, 1072, 21, 9540, 5140, 575, 9769, 6841, 1499, 9543, 5369, 5724, 5137, 9764, 5147, 18175, 18176, 5715, 5842, 5751, 5758, 1113, 7043, 1252, 7438, 2]
 // Exports: default
 
-// Module 18161 (HeroBlockHeader)
+// Module 18174 (HeroBlockHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
@@ -98,9 +98,9 @@ export default function HeroBlockHeader(heroBlock) {
     let tmp3Result;
     const tmpResult = tmp(5147);
     if (tmpResult.isThemeDark(tmp4)) {
-      tmp3Result = tmp3(18162);
+      tmp3Result = tmp3(18175);
     } else {
-      tmp3Result = tmp3(18163);
+      tmp3Result = tmp3(18176);
     }
     heroBannerUrl = tmp3Result;
   }

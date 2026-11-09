@@ -1,10 +1,10 @@
-// Module ID: 15470
-// Function ID: 15471
+// Module ID: 15480
+// Function ID: 15481
 // Name: VoiceMemberEmbeddedActivity
 // Dependencies: [32, 19, 17, 4988, 4989, 1385, 1191, 5389, 21, 1187, 5140, 575, 7391, 1380, 504, 5061, 11953, 1493, 8679, 11956, 7043, 1113, 5842, 5751, 12004, 5759, 2]
 // Exports: calculateActivityRowHeight, default
 
-// Module 15470 (VoiceMemberEmbeddedActivity)
+// Module 15480 (VoiceMemberEmbeddedActivity)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;

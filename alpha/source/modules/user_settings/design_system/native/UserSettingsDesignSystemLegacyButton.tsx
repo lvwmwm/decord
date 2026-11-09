@@ -1,10 +1,10 @@
-// Module ID: 18085
-// Function ID: 18086
+// Module ID: 18098
+// Function ID: 18099
 // Name: UserSettingsDesignSystemLegacyButton
 // Dependencies: [19, 17, 21, 1187, 5751, 5758, 5140, 575, 6159, 8246, 2]
 // Exports: default
 
-// Module 18085 (UserSettingsDesignSystemLegacyButton)
+// Module 18098 (UserSettingsDesignSystemLegacyButton)
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
 import Text_Text from "Text/Text" /* 5751 */;

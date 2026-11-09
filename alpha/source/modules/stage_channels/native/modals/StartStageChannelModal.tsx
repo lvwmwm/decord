@@ -201,7 +201,7 @@ export default function StartStageChannelModal(arg0) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -291,7 +291,7 @@ export default function StartStageChannelModal(arg0) {
             c3 = 0;
           }
           c5 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp61) {
           if (0 === c3) {
             c5 = 3;

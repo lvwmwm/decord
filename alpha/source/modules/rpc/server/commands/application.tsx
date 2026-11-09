@@ -1,9 +1,9 @@
-// Module ID: 16613
-// Function ID: 16614
+// Module ID: 16623
+// Function ID: 16624
 // Name: application
-// Dependencies: [2162, 6583, 1072, 11973, 11976, 16614, 6938, 9414, 16615, 1252, 1282, 9645, 2]
+// Dependencies: [2162, 6583, 1072, 11973, 11976, 16624, 6938, 9414, 16625, 1252, 1282, 9645, 2]
 
-// Module 16613 (application)
+// Module 16623 (application)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
 import Constants2 from "Constants" /* 6583 */;
@@ -12,8 +12,8 @@ import RPCErrorDefault from "RPCError" /* 9414 */;
 import TestModeUtils from "TestModeUtils" /* 9645 */;
 import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 11973 */;
 import RPCHelpers from "RPCHelpers" /* 11976 */;
-import getCurrentEmbeddedActivityChannelDefault from "getCurrentEmbeddedActivityChannel" /* 16614 */;
-import ActivitySessionAnalytics from "ActivitySessionAnalytics" /* 16615 */;
+import getCurrentEmbeddedActivityChannelDefault from "getCurrentEmbeddedActivityChannel" /* 16624 */;
+import ActivitySessionAnalytics from "ActivitySessionAnalytics" /* 16625 */;
 import ApplicationStore from "ApplicationStore" /* 2162 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;

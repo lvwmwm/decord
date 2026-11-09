@@ -1,11 +1,11 @@
-// Module ID: 16913
-// Function ID: 16914
+// Module ID: 16924
+// Function ID: 16925
 // Name: useUsernameStatus
-// Dependencies: [32, 19, 16914, 2]
+// Dependencies: [32, 19, 16925, 2]
 // Exports: useUsernameStatus
 
-// Module 16913 (useUsernameStatus)
-import useUsernameLiveCheck from "useUsernameLiveCheck" /* 16914 */;
+// Module 16924 (useUsernameStatus)
+import useUsernameLiveCheck from "useUsernameLiveCheck" /* 16925 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

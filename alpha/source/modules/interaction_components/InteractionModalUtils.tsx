@@ -1,10 +1,10 @@
-// Module ID: 19883
-// Function ID: 19884
+// Module ID: 19896
+// Function ID: 19897
 // Name: InteractionModalUtils
-// Dependencies: [5, 32, 19, 502, 4989, 7777, 5052, 5171, 8277, 16532, 8768, 1072, 8767, 2116, 1411, 5796, 7492, 504, 5739, 11, 572, 9868, 1113, 38, 6198, 10336, 8772, 6203, 8281, 1282, 1089, 2]
+// Dependencies: [5, 32, 19, 502, 4989, 7777, 5052, 5171, 8277, 16542, 8768, 1072, 8767, 2116, 1411, 5796, 7492, 504, 5739, 11, 572, 9868, 1113, 38, 6198, 10336, 8772, 6203, 8281, 1282, 1089, 2]
 // Exports: useIframeModalState, useIsFirstTextInputInModal, useModalState
 
-// Module 19883 (InteractionModalUtils)
+// Module 19896 (InteractionModalUtils)
 import _modDef38 from "module_38" /* 38 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
@@ -14,7 +14,7 @@ import Server from "Server" /* 2116 */;
 import DraftStore from "DraftStore" /* 7777 */;
 import ComponentStateContext from "ComponentStateContext" /* 8767 */;
 import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 9868 */;
-import InteractionModalStore2 from "InteractionModalStore" /* 16532 */;
+import InteractionModalStore2 from "InteractionModalStore" /* 16542 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -33,7 +33,7 @@ let _require, c0, c1, c5, c6, importDefault, set;
 let tmp5;
 const getURLForApplicationDefault = tmp5(5796);
 function getData(arg0, arr, arg2) {
-  const f119615 = (type) => {
+  const f119686 = (type) => {
     let components;
     let items;
     let mapped;
@@ -45,7 +45,7 @@ function getData(arg0, arr, arg2) {
     let values2;
     type = type.type;
     if (Server.ComponentType.ACTION_ROW === type) {
-      const obj4 = { type: type.type, components: components.map(f119615) };
+      const obj4 = { type: type.type, components: components.map(f119686) };
       components = type.components;
       return obj4;
     } else if (Server.ComponentType.TEXT_INPUT === type) {
@@ -106,7 +106,7 @@ function getData(arg0, arr, arg2) {
               if (Server.ComponentType.TEXT_DISPLAY === type) {
                 return { type: type.type };
               } else if (Server.ComponentType.LABEL === type) {
-                const obj21 = { type: type.type, component: items.map(f119615)[0] };
+                const obj21 = { type: type.type, component: items.map(f119686)[0] };
                 items = [type.component];
                 return obj21;
               } else if (Server.ComponentType.RADIO_GROUP === type) {
@@ -168,7 +168,7 @@ function getData(arg0, arr, arg2) {
   };
   let closure_0 = arg0;
   let closure_1 = arg2;
-  return arr.map(f119615);
+  return arr.map(f119686);
 }
 function getUploadsForModal(id, arg1) {
   let closure_0 = arg1;
@@ -205,7 +205,7 @@ let obj = function _submitModal() {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -297,7 +297,7 @@ let obj = function _submitModal() {
             }
             send();
             c6 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp10) {
           c6 = 3;
@@ -392,7 +392,7 @@ export function useModalState(components, arg1) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -429,7 +429,7 @@ export function useModalState(components, arg1) {
           return obj;
         }
         c0 = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp12) {
         c0 = 3;
         throw tmp12;

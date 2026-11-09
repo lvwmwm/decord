@@ -1,9 +1,9 @@
-// Module ID: 14613
-// Function ID: 14614
+// Module ID: 14614
+// Function ID: 14615
 // Name: ForumPlatformHooks
 // Dependencies: [19, 5315, 5314, 9962, 2]
 
-// Module 14613 (ForumPlatformHooks)
+// Module 14614 (ForumPlatformHooks)
 import RootNavigationRef from "RootNavigationRef" /* 5315 */;
 import ForumChannelSeenManagerDefault from "ForumChannelSeenManager" /* 9962 */;
 import react from "react" /* 19 */;

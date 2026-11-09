@@ -1,7 +1,7 @@
 // Module ID: 10013
 // Function ID: 10014
 // Name: ChatPreview
-// Dependencies: [19, 17, 5141, 5375, 4989, 1385, 8449, 21, 5140, 575, 5199, 10014, 8448, 10016, 10229, 10241, 4962, 1113, 10228, 12, 9969, 5885, 10242, 10302, 10306, 6206, 2017, 10307, 8500, 10018, 8476, 11732, 11733, 11771, 11772, 11358, 11360, 13559, 1377, 7355, 7043, 5751, 4965, 504, 1493, 6808, 6789, 2]
+// Dependencies: [19, 17, 5141, 5375, 4989, 1385, 8449, 21, 5140, 575, 5199, 10014, 8448, 10016, 10229, 10241, 4962, 1113, 10228, 12, 9969, 5885, 10242, 10302, 10306, 6206, 2017, 10307, 8500, 10018, 8476, 11732, 11733, 11771, 11772, 11358, 11360, 13560, 1377, 7355, 7043, 5751, 4965, 504, 1493, 6808, 6789, 2]
 // Exports: ChatPreview
 
 // Module 10013 (ChatPreview)
@@ -30,7 +30,7 @@ import ChannelSpoilerDefault from "ChannelSpoiler" /* 11360 */;
 import handleMessagesTapImage from "handleMessagesTapImage" /* 11732 */;
 import handleMessagesTapChannel from "handleMessagesTapChannel" /* 11733 */;
 import contentHandlers2 from "contentHandlers" /* 11772 */;
-import ChatDefault from "Chat" /* 13559 */;
+import ChatDefault from "Chat" /* 13560 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 5141 */;
@@ -156,7 +156,7 @@ class ChatPreviewBase extends PureComponent {
         let item1 = items.forEach((arr, index) => {
           let c1;
           let obj8;
-          const f142303 = (message) => {
+          const f142408 = (message) => {
             const content = obj3.content;
             const obj = { rowType: constants2.MESSAGE, changeType: constants.NOOP, roleStyle, message, isFirst: message === closure_0 };
             content.unshift(obj);
@@ -194,7 +194,7 @@ class ChatPreviewBase extends PureComponent {
               tmp8 = obj3;
             }
             obj3 = tmp8;
-            const item = arr.forEach(f142303);
+            const item = arr.forEach(f142408);
             tmp8.revealed = arr[arr.length - 1].id === messages.revealedMessageId;
             tmp8.context = arr[arr.length - 1].id;
             const intl2 = _undefined(changeType[17]).intl;
@@ -210,7 +210,7 @@ class ChatPreviewBase extends PureComponent {
               tmp14 = obj5;
             }
             obj5 = tmp14;
-            const item1 = arr.forEach(f142303);
+            const item1 = arr.forEach(f142408);
             tmp14.revealed = arr[arr.length - 1].id === messages.revealedMessageId;
             tmp14.context = arr[arr.length - 1].id;
             const intl = _undefined(changeType[17]).intl;
@@ -335,7 +335,7 @@ class ChatPreviewBase extends PureComponent {
         },
         message: require.getMessage(data.messageId),
         messageChannel: channel,
-        selectedChannelId: "Attempts to show the app rating modal and toasts the request outcome. The prompt may not visually appear on debug builds, or if the OS declines to render it (recent prompt, quota) -- a success toast only means the request was sent without error.",
+        selectedChannelId: null,
         tapLinkData: nativeEvent
       };
       const handleMessagesTapLink = handleMessagesTapLink2.handleMessagesTapLink;

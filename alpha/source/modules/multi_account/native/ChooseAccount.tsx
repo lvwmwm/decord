@@ -1,19 +1,19 @@
-// Module ID: 18315
-// Function ID: 18316
+// Module ID: 18328
+// Function ID: 18329
 // Name: ChooseAccount
-// Dependencies: [5, 19, 17, 14210, 14211, 1072, 21, 5140, 575, 1499, 18316, 1252, 14214, 6091, 1113, 1187, 5374, 7423, 7206, 5751, 7008, 18317, 7043, 9180, 8246, 18318, 2]
+// Dependencies: [5, 19, 17, 14211, 14212, 1072, 21, 5140, 575, 1499, 18329, 1252, 14215, 6091, 1113, 1187, 5374, 7423, 7206, 5751, 7008, 18330, 7043, 9180, 8246, 18331, 2]
 // Exports: default
 
-// Module 18315 (ChooseAccount)
+// Module 18328 (ChooseAccount)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6091 */;
-import MultiAccountStore from "MultiAccountStore" /* 14210 */;
+import MultiAccountStore from "MultiAccountStore" /* 14211 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import Constants_mod from "Constants" /* 14211 */;
+import Constants_mod from "Constants" /* 14212 */;
 import Constants_mod2 from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5140 */;
@@ -78,7 +78,7 @@ export default function ChooseAccount() {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -130,7 +130,7 @@ export default function ChooseAccount() {
               obj2.removeAccount(closure_0.id);
             }
             c4 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp22) {
           c4 = 3;
@@ -250,7 +250,7 @@ export default function ChooseAccount() {
     }
   };
   const FormRow = require("module_8246").FormRow;
-  obj7 = { themedColor: multiAccountUsers(575).colors.TEXT_LINK, size: require("native").Icon.Sizes.SMALL_20, source: multiAccountUsers(18318) };
+  obj7 = { themedColor: multiAccountUsers(575).colors.TEXT_LINK, size: require("native").Icon.Sizes.SMALL_20, source: multiAccountUsers(18331) };
   Icon = require("module_8246").FormRow.Icon;
   intl3 = require("intl").intl;
   items[1] = closure_11(FormRow, obj6);

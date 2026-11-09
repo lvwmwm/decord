@@ -1,10 +1,10 @@
-// Module ID: 15194
-// Function ID: 15195
+// Module ID: 15204
+// Function ID: 15205
 // Name: UserProfileWidgetsBoardEditNotice
 // Dependencies: [19, 17, 4986, 21, 5140, 575, 8888, 10639, 4973, 5859, 5751, 1113, 7043, 7120, 2]
 // Exports: default
 
-// Module 15194 (UserProfileWidgetsBoardEditNotice)
+// Module 15204 (UserProfileWidgetsBoardEditNotice)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;

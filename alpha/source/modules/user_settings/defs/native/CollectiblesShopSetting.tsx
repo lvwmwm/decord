@@ -1,9 +1,9 @@
-// Module ID: 18140
-// Function ID: 18141
+// Module ID: 18153
+// Function ID: 18154
 // Name: CollectiblesShopSetting
-// Dependencies: [1072, 11685, 1113, 12671, 18141, 7795, 7412, 2]
+// Dependencies: [1072, 11685, 1113, 12671, 18154, 7795, 7412, 2]
 
-// Module 18140 (CollectiblesShopSetting)
+// Module 18153 (CollectiblesShopSetting)
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7412 */;

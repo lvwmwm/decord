@@ -1,16 +1,16 @@
-// Module ID: 15222
-// Function ID: 15223
+// Module ID: 15232
+// Function ID: 15233
 // Name: UserProfileAddTagActionSheet
-// Dependencies: [19, 502, 8825, 21, 5140, 575, 7124, 15198, 7127, 1113, 15197, 7126, 7037, 5735, 504, 15176, 7850, 6093, 12549, 8833, 5388, 7382, 5392, 6159, 2]
+// Dependencies: [19, 502, 8825, 21, 5140, 575, 7124, 15208, 7127, 1113, 15207, 7126, 7037, 5735, 504, 15177, 7850, 6093, 12549, 8833, 5388, 7382, 5392, 6159, 2]
 // Exports: default
 
-// Module 15222 (UserProfileAddTagActionSheet)
+// Module 15232 (UserProfileAddTagActionSheet)
 import nativeDefault from "native" /* 575 */;
 import TableRowGroup2 from "TableRowGroup" /* 7126 */;
 import UserProfileGameWidgetTypes from "UserProfileGameWidgetTypes" /* 7850 */;
 import Constants from "Constants" /* 8825 */;
-import UserProfileGameWidgetConstants from "UserProfileGameWidgetConstants" /* 15197 */;
-import UserProfileGameWidgetTagMetadata from "UserProfileGameWidgetTagMetadata" /* 15198 */;
+import UserProfileGameWidgetConstants from "UserProfileGameWidgetConstants" /* 15207 */;
+import UserProfileGameWidgetTagMetadata from "UserProfileGameWidgetTagMetadata" /* 15208 */;
 import react_mod from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Fragment from "Fragment" /* 21 */;

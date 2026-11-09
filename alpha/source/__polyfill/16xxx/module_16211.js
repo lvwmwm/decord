@@ -1,60 +1,30 @@
 // Module ID: 16211
 // Function ID: 16212
-// Dependencies: [16201]
+// Dependencies: [16212]
 
 // Module 16211
-import _mod16201 from "module_16201" /* 16201 */;
+import _mod16212 from "module_16212" /* 16212 */;
 
 
-export default (arg0, arg1) => {
-  const obj = _mod16201(arg0, null, true);
-  const tmp = _mod16201(arg1, null, true);
-  const compareResult = obj.compare(tmp);
-  if (0 === compareResult) {
-    return null;
+export default function(arg0, arg1) {
+  let flag = arg2;
+  if (arg2 === undefined) {
+    flag = false;
+  }
+  if (arg0 instanceof _mod16212) {
+    return arg0;
   } else {
-    let str5;
-    let tmp3 = tmp;
-    if (compareResult > 0) {
-      tmp3 = obj;
-    }
-    let tmp4 = obj;
-    if (compareResult > 0) {
-      tmp4 = tmp;
-    }
-    if (tmp4.prerelease.length) {
-      if (!tmp3.prerelease.length) {
-        let str;
-        if (tmp4.patch) {
-          let str2 = "patch";
-          if (!tmp3.patch) {
-            let str3 = "major";
-            if (tmp3.minor) {
-              str3 = "minor";
-            }
-            str2 = str3;
-          }
-          str = str2;
-        } else {
-          str = "major";
-        }
-        return str;
+    try {
+      const self = this;
+      const self2 = this;
+      const tmp5 = new _mod16212(arg0, arg1);
+      return tmp5;
+    } catch (tmp7) {
+      if (flag) {
+        throw tmp7;
+      } else {
+        return null;
       }
     }
-    let str4 = "";
-    if (tmp3.prerelease.length) {
-      str4 = "pre";
-    }
-    if (obj.major !== tmp.major) {
-      str5 = `${str4}major`;
-    } else if (obj.minor !== tmp.minor) {
-      str5 = `${str4}minor`;
-    } else {
-      str5 = "prerelease";
-      if (obj.patch !== tmp.patch) {
-        str5 = `${str4}patch`;
-      }
-    }
-    return str5;
   }
 };

@@ -30,7 +30,7 @@ let obj = function _prefetch() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -157,7 +157,7 @@ let obj = function _prefetch() {
             return { value, done: true };
           }
           c7 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp45) {
           c7 = 3;
           throw tmp45;
@@ -186,7 +186,7 @@ obj = function _prefetchOnAppStart() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -357,7 +357,7 @@ obj = function _prefetchOnAppStart() {
               closure_8 = [];
             }
             c9 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp110) {
           headers = tmp110;
@@ -388,7 +388,7 @@ obj = function _removeFromAutoPrefetch() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c4;
@@ -442,7 +442,7 @@ obj = function _removeFromAutoPrefetch() {
           length = [];
         }
         c6 = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp28) {
         closure_3 = tmp28;
         if (0 === c4) {
@@ -470,7 +470,7 @@ obj = function _removeAllFromAutoprefetch() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -498,7 +498,7 @@ obj = function _removeAllFromAutoprefetch() {
           console.warn("Failed to clear prefetch queue", closure_0);
         }
         c4 = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp13) {
         closure_2 = tmp13;
         if (0 === c3) {

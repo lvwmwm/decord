@@ -1,10 +1,10 @@
-// Module ID: 14792
-// Function ID: 14793
+// Module ID: 14793
+// Function ID: 14794
 // Name: useConjureDevicePermissionsAppName
 // Dependencies: [2162, 6899, 504, 6909, 2]
 // Exports: default
 
-// Module 14792 (useConjureDevicePermissionsAppName)
+// Module 14793 (useConjureDevicePermissionsAppName)
 import isConjureApplicationDefault from "isConjureApplication" /* 6909 */;
 import ApplicationStore from "ApplicationStore" /* 2162 */;
 import ConjureProjectStore from "ConjureProjectStore" /* 6899 */;

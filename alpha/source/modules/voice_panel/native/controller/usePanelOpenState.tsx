@@ -1,10 +1,10 @@
-// Module ID: 19560
-// Function ID: 19561
+// Module ID: 19573
+// Function ID: 19574
 // Name: usePanelOpenState
 // Dependencies: [32, 19, 6930, 11363, 1072, 1652, 1705, 1108, 12230, 5176, 5189, 12223, 11062, 2]
 // Exports: default
 
-// Module 19560 (usePanelOpenState)
+// Module 19573 (usePanelOpenState)
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1108 */;
 import VoicePanelConstants from "VoicePanelConstants" /* 11363 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;

@@ -1,9 +1,9 @@
-// Module ID: 19006
-// Function ID: 19007
+// Module ID: 19019
+// Function ID: 19020
 // Name: JoinRequestOtherApplications
-// Dependencies: [19, 17, 21, 5140, 575, 5174, 7401, 7158, 19007, 5751, 1113, 19003, 4962, 2]
+// Dependencies: [19, 17, 21, 5140, 575, 5174, 7401, 7158, 19020, 5751, 1113, 19016, 4962, 2]
 
-// Module 19006 (JoinRequestOtherApplications)
+// Module 19019 (JoinRequestOtherApplications)
 import nativeDefault from "native" /* 575 */;
 import DateUtils from "DateUtils" /* 4962 */;
 import MemberVerificationTypes from "MemberVerificationTypes" /* 5174 */;

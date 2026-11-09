@@ -1,9 +1,9 @@
-// Module ID: 18097
-// Function ID: 18098
+// Module ID: 18110
+// Function ID: 18111
 // Name: DesignSystemsShadowsSetting
-// Dependencies: [8503, 1072, 11685, 18095, 2]
+// Dependencies: [8503, 1072, 11685, 18108, 2]
 
-// Module 18097 (DesignSystemsShadowsSetting)
+// Module 18110 (DesignSystemsShadowsSetting)
 import Constants from "Constants" /* 1072 */;
 import SettingsConstants from "SettingsConstants" /* 8503 */;
 import SettingBuilders from "SettingBuilders" /* 11685 */;

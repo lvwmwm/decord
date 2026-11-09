@@ -1,10 +1,10 @@
-// Module ID: 19323
-// Function ID: 19324
+// Module ID: 19336
+// Function ID: 19337
 // Name: useMessageRequestTimestampText
-// Dependencies: [6897, 11, 14411, 504, 2166, 8417, 2]
+// Dependencies: [6897, 11, 14412, 504, 2166, 8417, 2]
 // Exports: useMessageRequestRelativeTimestampText, useMessageRequestTimestampText
 
-// Module 19323 (useMessageRequestTimestampText)
+// Module 19336 (useMessageRequestTimestampText)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef2166 from "module_2166" /* 2166 */;
 import ReadStateStore from "ReadStateStore" /* 6897 */;

@@ -1,18 +1,18 @@
-// Module ID: 17156
-// Function ID: 17157
+// Module ID: 17167
+// Function ID: 17168
 // Name: XboxTwoWayLinkUpsell
-// Dependencies: [19, 1072, 21, 5140, 2185, 17157, 1113, 5842, 17158, 4973, 9811, 2]
+// Dependencies: [19, 1072, 21, 5140, 2185, 17168, 1113, 5842, 17169, 4973, 9811, 2]
 // Exports: XboxTwoWayLinkUpsell
 
-// Module 17156 (XboxTwoWayLinkUpsell)
+// Module 17167 (XboxTwoWayLinkUpsell)
 import Fragment from "Fragment" /* 21 */;
 import intl3 from "intl" /* 1113 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2185 */;
 import dismissible_content from "dismissible_content" /* 4973 */;
 import FastImageDefault from "FastImage" /* 5842 */;
 import XboxLinkModalActionCreatorsDefault from "XboxLinkModalActionCreators" /* 9811 */;
-import OneWayToTwoWayLinkUpsell2 from "OneWayToTwoWayLinkUpsell" /* 17157 */;
-import AssetRegistryDefault from "AssetRegistry" /* 17158 */;
+import OneWayToTwoWayLinkUpsell2 from "OneWayToTwoWayLinkUpsell" /* 17168 */;
+import AssetRegistryDefault from "AssetRegistry" /* 17169 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
 import createStyles from "createStyles" /* 5140 */;

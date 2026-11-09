@@ -1,9 +1,9 @@
-// Module ID: 15295
-// Function ID: 15296
+// Module ID: 15305
+// Function ID: 15306
 // Name: CollectiblesItemMiniPreview
 // Dependencies: [19, 17, 7801, 2109, 7802, 7803, 8867, 9578, 21, 575, 5140, 9590, 9602, 5842, 9603, 9581, 2108, 9598, 2]
 
-// Module 15295 (CollectiblesItemMiniPreview)
+// Module 15305 (CollectiblesItemMiniPreview)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import utils from "utils" /* 2108 */;

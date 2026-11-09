@@ -1,16 +1,16 @@
-// Module ID: 16641
-// Function ID: 16642
+// Module ID: 16651
+// Function ID: 16652
 // Name: merged15
-// Dependencies: [5, 6583, 1072, 16642, 16643, 9414, 9645, 10802, 16644, 7657, 16606, 2]
+// Dependencies: [5, 6583, 1072, 16652, 16653, 9414, 9645, 10802, 16654, 7657, 16616, 2]
 
-// Module 16641 (merged15)
+// Module 16651 (merged15)
 import EntitlementActionCreatorsAll from "EntitlementActionCreators" /* 7657 */;
 import RPCErrorDefault from "RPCError" /* 9414 */;
-import validateTransportType from "validateTransportType" /* 16643 */;
+import validateTransportType from "validateTransportType" /* 16653 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Constants_mod from "Constants" /* 6583 */;
 import Constants_mod2 from "Constants" /* 1072 */;
-import CONTEXT_MENU_ICON_NAMES_mod from "CONTEXT_MENU_ICON_NAMES" /* 16606 */;
+import CONTEXT_MENU_ICON_NAMES_mod from "CONTEXT_MENU_ICON_NAMES" /* 16616 */;
 import size from "module_2" /* 2 */;
 
 let closure_3, subscription_plans;
@@ -69,7 +69,7 @@ let obj = function _getSubscriptionSkusViaListings() {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -181,7 +181,7 @@ obj = function _getSkusHandler() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

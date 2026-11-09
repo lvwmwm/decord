@@ -1,10 +1,10 @@
-// Module ID: 14641
-// Function ID: 14642
+// Module ID: 14642
+// Function ID: 14643
 // Name: getFavoritesAddButtonLabel
 // Dependencies: [1113, 3608, 2]
 // Exports: getFavoritesAddButtonLabel
 
-// Module 14641 (getFavoritesAddButtonLabel)
+// Module 14642 (getFavoritesAddButtonLabel)
 import intl3 from "intl" /* 1113 */;
 import _modDef3608 from "module_3608" /* 3608 */;
 import size from "module_2" /* 2 */;

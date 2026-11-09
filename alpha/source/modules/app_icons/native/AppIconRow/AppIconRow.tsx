@@ -1,10 +1,10 @@
-// Module ID: 17840
-// Function ID: 17841
+// Module ID: 17851
+// Function ID: 17852
 // Name: AppIconRow
-// Dependencies: [32, 19, 21, 1113, 5140, 575, 10102, 12, 5200, 7038, 17319, 7128, 2]
+// Dependencies: [32, 19, 21, 1113, 5140, 575, 10102, 12, 5200, 7038, 17330, 7128, 2]
 // Exports: default
 
-// Module 17840 (AppIconRow)
+// Module 17851 (AppIconRow)
 import _modDef12 from "module_12" /* 12 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;

@@ -1,8 +1,8 @@
 // Module ID: 10963
 // Function ID: 10964
 // Name: FavoritesCleanup
-// Dependencies: [5, 4993, 4989, 5072, 6897, 4992, 5002, 1083, 1196, 7548, 1089, 6949, 2]
-// Exports: getAutoAddedThreadsCategoryId, getFavoritesCleanupCandidates, loadFavoriteThreadsForCleanup
+// Dependencies: [5, 4993, 4989, 5011, 5072, 6897, 4992, 5002, 1083, 1196, 7548, 1089, 6949, 2]
+// Exports: getAutoAddedThreadsCategoryIds, getFavoritesCleanupCandidates, loadFavoriteThreadsForCleanup
 
 // Module 10963 (FavoritesCleanup)
 import Constants from "Constants" /* 1083 */;
@@ -13,28 +13,28 @@ import getThreadAutoArchiveTimeOnce from "getThreadAutoArchiveTimeOnce" /* 6949 
 import LazyLoadedThreadManagerDefault from "LazyLoadedThreadManager" /* 7548 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ChannelStore from "ChannelStore" /* 4989 */;
+import GuildStore from "GuildStore" /* 5011 */;
 import PermissionStore from "PermissionStore" /* 5072 */;
 import ReadStateStore from "ReadStateStore" /* 6897 */;
 import FavoriteStore from "FavoriteStore" /* 4992 */;
 import FavoritesConstants from "FavoritesConstants" /* 5002 */;
 import size from "module_2" /* 2 */;
 
-let c1, c2;
+let c1, c2, set;
 
 let c10;
-let c9;
-function getFavoriteThreadIdsForCleanup(categoryId) {
-  let closure_0 = categoryId;
+let closure_12;
+let unpackModuleId;
+function getFavoriteThreadIdsForCleanup(categoryIds) {
+  let closure_0 = categoryIds;
   const values = Object.values(FavoriteStore.getFavoriteChannels());
   const found = values.filter((type) => {
     if (type.type !== preloaded_user_settings.FavoriteChannelType.REFERENCE_ORIGINAL) {
       return false;
     } else {
       let isThreadResult;
-      if (null != categoryId) {
-        if (type.parentId !== tmp) {
-          return false;
-        }
+      if (null != categoryIds) {
+        return false;
       }
       const channel = ChannelStore.getChannel(type.id);
       if (null != channel) {
@@ -61,7 +61,7 @@ let obj = function _loadFavoriteThreadsForCleanup() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -90,7 +90,7 @@ let obj = function _loadFavoriteThreadsForCleanup() {
           return obj;
         } else {
           c1 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp8) {
         c1 = 3;
@@ -101,48 +101,62 @@ let obj = function _loadFavoriteThreadsForCleanup() {
   return obj(...arguments);
 };
 const THREAD_CHANNEL_TYPES = ChannelRecord.THREAD_CHANNEL_TYPES;
-({ FAVORITES_AUTO_ADDED_THREADS_CATEGORY_NAME: c9, FAVORITES_PRUNE_WHEN_ARCHIVED: c10 } = FavoritesConstants);
+({ FAVORITES_AUTO_ADD_THREADS_PER_GUILD: c10, FAVORITES_AUTO_ADDED_THREADS_CATEGORY_NAME: unpackModuleId, FAVORITES_PRUNE_WHEN_ARCHIVED: closure_12 } = FavoritesConstants);
 const Permissions = Constants.Permissions;
 const result = size.fileFinishedImporting("modules/favorites/FavoritesCleanup.tsx");
 
 export { getFavoriteThreadIdsForCleanup };
-export function getAutoAddedThreadsCategoryId() {
-  let closure_0 = closure_9.toLowerCase();
-  const values = Object.values(FavoriteStore.getFavoriteChannels());
-  const found = values.find((type) => {
-    let tmp = type.type === preloaded_user_settings.FavoriteChannelType.CATEGORY;
-    if (tmp) {
-      let formatted;
-      if (type.nickname != null) {
-        const str2 = type.nickname.trim();
-        formatted = str2.toLowerCase();
-      }
-      tmp = formatted === closure_0;
+export function getAutoAddedThreadsCategoryIds(favoriteChannels) {
+  if (favoriteChannels === undefined) {
+    favoriteChannels = FavoriteStore.getFavoriteChannels();
+  }
+  const items = [unpackModuleId.toLowerCase()];
+  set = new Set(items);
+  if (FavoriteStore.autoAddThreadsMode === authStore) {
+    const guildsArray = GuildStore.getGuildsArray();
+    for (const item10026 of guildsArray) {
+      let str = item10026.name;
+      let add = set.add;
+      let str2 = str.trim();
+      let addResult = add(str2.toLowerCase());
+      continue;
     }
-    return tmp;
-  });
-  let id;
-  if (found != null) {
-    id = found.id;
   }
-  if (id == null) {
-    id = null;
+  const items1 = [];
+  const values = Object.values(favoriteChannels);
+  const iter = values[Symbol.iterator]();
+  const nextResult = iter.next();
+  while (iter !== undefined) {
+    let tmp10 = nextResult;
+    if (nextResult.type === preloaded_user_settings.FavoriteChannelType.CATEGORY) {
+      if (null != tmp10.nickname) {
+        let str3 = tmp10.nickname;
+        let str4 = str3.trim();
+        let formatted = str4.toLowerCase();
+        let tmp16 = formatted;
+        if (set.has(formatted)) {
+          let arr = items1.push(tmp10.id);
+          let deleteResult = set.delete(tmp16);
+        }
+      }
+    }
+    continue;
   }
-  return id;
+  return items1;
 }
 export function loadFavoriteThreadsForCleanup() {
   return obj(...arguments);
 }
 export function getFavoritesCleanupCandidates(days) {
   days = days.days;
-  const categoryId = days.categoryId;
+  const categoryIds = days.categoryIds;
   if (Number.isSafeInteger(days)) {
     if (days >= 0) {
       const _Date = Date;
       const timestamp = Date.now();
       const items = [];
       const diff = timestamp - days * DurationsDefault.Millis.DAY;
-      const tmp29 = getFavoriteThreadIdsForCleanup(categoryId);
+      const tmp29 = getFavoriteThreadIdsForCleanup(categoryIds);
       const iter = tmp29[Symbol.iterator]();
       const nextResult = iter.next();
       while (iter !== undefined) {
@@ -155,7 +169,7 @@ export function getFavoritesCleanupCandidates(days) {
               if (!ReadStateStore.hasUnreadOrMentions(tmp4)) {
                 if (tmp7.threadMetadata.archived) {
                   let arr = items.push(tmp7);
-                } else if (days !== authStore) {
+                } else if (days !== authStore2) {
                   obj = getThreadAutoArchiveTimeOnce;
                   let threadLastActivityTime = obj.getThreadLastActivityTime(tmp7);
                   let tmp16 = threadLastActivityTime;

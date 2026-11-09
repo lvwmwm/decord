@@ -1,10 +1,10 @@
-// Module ID: 16933
-// Function ID: 16934
+// Module ID: 16944
+// Function ID: 16945
 // Name: handleOpenUnconfirmedAgeGroupSupportArticle
 // Dependencies: [11067, 6792, 8024, 2185, 2]
 // Exports: handleOpenUnconfirmedAgeGroupSupportArticle
 
-// Module 16933 (handleOpenUnconfirmedAgeGroupSupportArticle)
+// Module 16944 (handleOpenUnconfirmedAgeGroupSupportArticle)
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2185 */;
 import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8024 */;
 import LocationMetadataStore from "LocationMetadataStore" /* 11067 */;

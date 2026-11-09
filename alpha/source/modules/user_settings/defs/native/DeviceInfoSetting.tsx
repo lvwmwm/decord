@@ -1,14 +1,14 @@
-// Module ID: 17871
-// Function ID: 17872
+// Module ID: 17882
+// Function ID: 17883
 // Name: DeviceInfoSetting
-// Dependencies: [17870, 5097, 11685, 1113, 17872, 4965, 2]
+// Dependencies: [17881, 5097, 11685, 1113, 17883, 4965, 2]
 
-// Module 17871 (DeviceInfoSetting)
+// Module 17882 (DeviceInfoSetting)
 import intl2 from "intl" /* 1113 */;
 import UserSettings from "UserSettings" /* 4965 */;
 import DeviceUtils from "DeviceUtils" /* 5097 */;
-import CopyClientInfoSetting from "CopyClientInfoSetting" /* 17870 */;
-import MobilePhoneSettingsIcon from "MobilePhoneSettingsIcon" /* 17872 */;
+import CopyClientInfoSetting from "CopyClientInfoSetting" /* 17881 */;
+import MobilePhoneSettingsIcon from "MobilePhoneSettingsIcon" /* 17883 */;
 import SettingBuilders from "SettingBuilders" /* 11685 */;
 import size from "module_2" /* 2 */;
 

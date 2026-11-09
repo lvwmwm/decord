@@ -1,13 +1,13 @@
-// Module ID: 17720
-// Function ID: 17721
+// Module ID: 17731
+// Function ID: 17732
 // Name: EnableReducedMotionSetting
-// Dependencies: [5141, 8503, 504, 16573, 11685, 1113, 2]
+// Dependencies: [5141, 8503, 504, 16583, 11685, 1113, 2]
 
-// Module 17720 (EnableReducedMotionSetting)
+// Module 17731 (EnableReducedMotionSetting)
 import get_initialized from "get initialized" /* 504 */;
 import intl2 from "intl" /* 1113 */;
 import SettingsConstants from "SettingsConstants" /* 8503 */;
-import AccessibilityActionCreators from "AccessibilityActionCreators" /* 16573 */;
+import AccessibilityActionCreators from "AccessibilityActionCreators" /* 16583 */;
 import AccessibilityStore from "AccessibilityStore" /* 5141 */;
 import SettingBuilders from "SettingBuilders" /* 11685 */;
 import size from "module_2" /* 2 */;

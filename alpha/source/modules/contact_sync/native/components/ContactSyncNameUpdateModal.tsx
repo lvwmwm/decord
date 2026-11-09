@@ -1,17 +1,17 @@
-// Module ID: 17056
-// Function ID: 17057
+// Module ID: 17067
+// Function ID: 17068
 // Name: ContactSyncNameUpdateModal
-// Dependencies: [5, 32, 19, 17, 14484, 21, 6799, 5140, 575, 5714, 14486, 14490, 5837, 1113, 14504, 7064, 7231, 2]
+// Dependencies: [5, 32, 19, 17, 14485, 21, 6799, 5140, 575, 5714, 14487, 14491, 5837, 1113, 14505, 7064, 7231, 2]
 // Exports: default
 
-// Module 17056 (ContactSyncNameUpdateModal)
+// Module 17067 (ContactSyncNameUpdateModal)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import NavigatorConstants from "NavigatorConstants" /* 5714 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6799 */;
 import Navigator from "Navigator" /* 7231 */;
-import ContactSyncConstants from "ContactSyncConstants" /* 14484 */;
+import ContactSyncConstants from "ContactSyncConstants" /* 14485 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -49,7 +49,7 @@ function ContactSyncNameInputScreen() {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c3;
@@ -95,7 +95,7 @@ function ContactSyncNameInputScreen() {
               c3 = 0;
             }
             c4 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp25) {
           if (0 === c3) {

@@ -1,10 +1,10 @@
-// Module ID: 19056
-// Function ID: 19057
+// Module ID: 19069
+// Function ID: 19070
 // Name: usePlaceholderStyles
 // Dependencies: [5141, 9917, 1493, 504, 1652, 5370, 1187, 2]
 // Exports: useFullscreenPlaceholderCount, usePlaceholderAnimatedStyle
 
-// Module 19056 (usePlaceholderStyles)
+// Module 19069 (usePlaceholderStyles)
 import get_initialized from "get initialized" /* 504 */;
 import native from "native" /* 1187 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1493 */;

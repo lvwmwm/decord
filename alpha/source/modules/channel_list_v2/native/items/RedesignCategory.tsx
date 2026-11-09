@@ -1,10 +1,10 @@
-// Module ID: 18488
-// Function ID: 18489
+// Module ID: 18501
+// Function ID: 18502
 // Name: RedesignCategory
-// Dependencies: [19, 17, 7786, 7349, 6830, 5882, 21, 5140, 1377, 575, 5751, 11629, 7043, 11555, 11744, 10921, 504, 5776, 14636, 18489, 18490, 7345, 1113, 7424, 11745, 7158, 2]
+// Dependencies: [19, 17, 7786, 7349, 6830, 5882, 21, 5140, 1377, 575, 5751, 11629, 7043, 11555, 11744, 10921, 504, 5776, 14637, 18502, 18503, 7345, 1113, 7424, 11745, 7158, 2]
 // Exports: CategoryChannel, RecentlyActiveCategory, SuggestedCategory, useCategoryPressEvents
 
-// Module 18488 (RedesignCategory)
+// Module 18501 (RedesignCategory)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
@@ -13,9 +13,9 @@ import useChannelNameDefault from "useChannelName" /* 5776 */;
 import CircleXIcon from "CircleXIcon" /* 7158 */;
 import OptInChannelsActionCreators from "OptInChannelsActionCreators" /* 7345 */;
 import Sheet_showSimpleActionSheet from "Sheet/showSimpleActionSheet" /* 7424 */;
-import useFavoritesGuildCategoryAddActionDefault from "useFavoritesGuildCategoryAddAction" /* 14636 */;
-import useFavoritesGuildCategoryFullNoticeDefault from "useFavoritesGuildCategoryFullNotice" /* 18489 */;
-import useFavoritesGuildCategoryLongPressDefault from "useFavoritesGuildCategoryLongPress" /* 18490 */;
+import useFavoritesGuildCategoryAddActionDefault from "useFavoritesGuildCategoryAddAction" /* 14637 */;
+import useFavoritesGuildCategoryFullNoticeDefault from "useFavoritesGuildCategoryFullNotice" /* 18502 */;
+import useFavoritesGuildCategoryLongPressDefault from "useFavoritesGuildCategoryLongPress" /* 18503 */;
 import react from "react" /* 19 */;
 import RecentlyActiveCollapseStore from "RecentlyActiveCollapseStore" /* 7786 */;
 import CategoryCollapseStore from "CategoryCollapseStore" /* 7349 */;

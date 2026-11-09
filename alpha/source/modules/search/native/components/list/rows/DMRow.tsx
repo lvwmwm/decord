@@ -1,9 +1,9 @@
-// Module ID: 19061
-// Function ID: 19062
+// Module ID: 19074
+// Function ID: 19075
 // Name: DMRow
-// Dependencies: [5, 32, 19, 17, 5141, 5890, 5082, 1072, 21, 5140, 575, 5751, 5194, 10864, 504, 9282, 1187, 9140, 15667, 19047, 2]
+// Dependencies: [5, 32, 19, 17, 5141, 5890, 5082, 1072, 21, 5140, 575, 5751, 5194, 10864, 504, 9282, 1187, 9140, 15677, 19060, 2]
 
-// Module 19061 (DMRow)
+// Module 19074 (DMRow)
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
 import UserUtils from "UserUtils" /* 5194 */;
@@ -11,7 +11,7 @@ import Text_Text from "Text/Text" /* 5751 */;
 import AssetRegistryDefault from "AssetRegistry" /* 9140 */;
 import BotTagDefault from "BotTag" /* 9282 */;
 import ActivityStatusDefault from "ActivityStatus" /* 10864 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 15667 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 15677 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -117,7 +117,7 @@ const memoResult = react.memo(function DMRow(user) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -157,7 +157,7 @@ const memoResult = react.memo(function DMRow(user) {
           c3 = 0;
           closure_128_8(false);
           c4 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp20) {
         closure_2 = tmp20;

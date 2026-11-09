@@ -1,18 +1,18 @@
-// Module ID: 17249
-// Function ID: 17250
+// Module ID: 17260
+// Function ID: 17261
 // Name: useBountiesModalVideoAnalytics
-// Dependencies: [5, 32, 19, 6032, 1072, 9807, 1266, 7949, 7948, 6841, 17250, 7939, 6843, 7895, 1377, 7930, 14919, 17240, 17251, 6594, 6599, 2]
+// Dependencies: [5, 32, 19, 6032, 1072, 9807, 1266, 7949, 7948, 6841, 17261, 7939, 6843, 7895, 1377, 7930, 14920, 17251, 17262, 6594, 6599, 2]
 // Exports: useBountiesModalVideoAnalytics
 
-// Module 17249 (useBountiesModalVideoAnalytics)
+// Module 17260 (useBountiesModalVideoAnalytics)
 import Constants from "Constants" /* 1072 */;
 import MonitoringAgentDefault from "MonitoringAgent" /* 6594 */;
 import MetricEvents from "MetricEvents" /* 6599 */;
 import AdCreativeType from "AdCreativeType" /* 6843 */;
 import AnalyticsActions from "AnalyticsActions" /* 7939 */;
-import VideoQuestUtils from "VideoQuestUtils" /* 14919 */;
-import AdsVideoTypes from "AdsVideoTypes" /* 17240 */;
-import AdsVideoUtils from "AdsVideoUtils" /* 17251 */;
+import VideoQuestUtils from "VideoQuestUtils" /* 14920 */;
+import AdsVideoTypes from "AdsVideoTypes" /* 17251 */;
+import AdsVideoUtils from "AdsVideoUtils" /* 17262 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -136,7 +136,7 @@ export function useBountiesModalVideoAnalytics(bountyId) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c4;
@@ -214,7 +214,7 @@ export function useBountiesModalVideoAnalytics(bountyId) {
               trackAdContentEvent(obj8);
               c4 = 0;
               c6 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           }
         } catch (tmp30) {

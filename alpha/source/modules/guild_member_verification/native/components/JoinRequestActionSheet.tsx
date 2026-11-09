@@ -1,9 +1,9 @@
-// Module ID: 19004
-// Function ID: 19005
+// Module ID: 19017
+// Function ID: 19018
 // Name: JoinRequestActionSheet
-// Dependencies: [19, 17, 5141, 1404, 1385, 1072, 21, 5140, 504, 8828, 8812, 1652, 8873, 5369, 7414, 5724, 575, 1090, 8875, 6973, 5041, 8829, 5388, 1187, 8879, 1113, 5199, 5392, 19005, 5723, 2]
+// Dependencies: [19, 17, 5141, 1404, 1385, 1072, 21, 5140, 504, 8828, 8812, 1652, 8873, 5369, 7414, 5724, 575, 1090, 8875, 6973, 5041, 8829, 5388, 1187, 8879, 1113, 5199, 5392, 19018, 5723, 2]
 
-// Module 19004 (JoinRequestActionSheet)
+// Module 19017 (JoinRequestActionSheet)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
 import isChangelogUserDefault from "isChangelogUser" /* 5041 */;

@@ -1,10 +1,10 @@
-// Module ID: 18832
-// Function ID: 18833
+// Module ID: 18845
+// Function ID: 18846
 // Name: ForYouItemActionButtons
-// Dependencies: [5, 19, 17, 4989, 1385, 1072, 21, 5140, 1108, 1652, 5370, 6159, 5758, 1113, 5751, 563, 8504, 18425, 5870, 15973, 10859, 6914, 7549, 7552, 5837, 10320, 1252, 2]
+// Dependencies: [5, 19, 17, 4989, 1385, 1072, 21, 5140, 1108, 1652, 5370, 6159, 5758, 1113, 5751, 563, 8504, 18438, 5870, 15983, 10859, 6914, 7549, 7552, 5837, 10320, 1252, 2]
 // Exports: ForYouItemActionButtons, useItemActionButtonPropsV2
 
-// Module 18832 (ForYouItemActionButtons)
+// Module 18845 (ForYouItemActionButtons)
 import react_native from "react-native" /* 17 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import _mod1652 from "module_1652" /* 1652 */;
@@ -15,8 +15,8 @@ import NotificationCenterItemsTypes from "NotificationCenterItemsTypes" /* 6914 
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7549 */;
 import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7552 */;
 import PeopleUtilsDefault from "PeopleUtils" /* 10859 */;
-import handleSupportedURLDefault from "handleSupportedURL" /* 15973 */;
-import AddFriendsScreenUtils from "AddFriendsScreenUtils" /* 18425 */;
+import handleSupportedURLDefault from "handleSupportedURL" /* 15983 */;
+import AddFriendsScreenUtils from "AddFriendsScreenUtils" /* 18438 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4989 */;
@@ -550,7 +550,7 @@ export function useItemActionButtonPropsV2(other_user, callback, navigation, for
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -585,7 +585,7 @@ export function useItemActionButtonPropsV2(other_user, callback, navigation, for
         closure_128_1();
         focusChatInput(closure_128_0.message_channel_id);
         navigation = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp17) {
         navigation = 3;
         throw tmp17;

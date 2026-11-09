@@ -1,17 +1,17 @@
 // Module ID: 2136
 // Function ID: 2137
 // Name: ClipsStore
-// Dependencies: [5, 2137, 502, 8284, 1072, 5993, 16181, 4951, 16182, 1403, 16183, 16185, 16186, 504, 572, 2]
+// Dependencies: [5, 2137, 502, 8284, 1072, 5993, 16191, 4951, 16192, 1403, 16193, 16195, 16196, 504, 572, 2]
 
 // Module 2136 (ClipsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import FlagUtils from "FlagUtils" /* 1403 */;
 import DiscordNativeDefault from "DiscordNative" /* 4951 */;
-import ClipsDefaultSettingsUtils from "ClipsDefaultSettingsUtils" /* 16181 */;
-import clipPOVOverlap from "clipPOVOverlap" /* 16183 */;
-import DistributedClipsExperimentDefault from "DistributedClipsExperiment" /* 16185 */;
-import AutoclippingDefaultOverrideExperiment2 from "AutoclippingDefaultOverrideExperiment" /* 16186 */;
+import ClipsDefaultSettingsUtils from "ClipsDefaultSettingsUtils" /* 16191 */;
+import clipPOVOverlap from "clipPOVOverlap" /* 16193 */;
+import DistributedClipsExperimentDefault from "DistributedClipsExperiment" /* 16195 */;
+import AutoclippingDefaultOverrideExperiment2 from "AutoclippingDefaultOverrideExperiment" /* 16196 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import RunningGameStore from "RunningGameStore" /* 2137 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
@@ -48,7 +48,7 @@ let obj = function _migrateDefaultStorage() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -118,7 +118,7 @@ let obj = function _migrateDefaultStorage() {
           closure_129_42.emitChange();
         }
         c5 = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp33) {
         closure_2 = tmp33;
         if (0 === c3) {

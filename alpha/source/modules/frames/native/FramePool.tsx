@@ -1,10 +1,10 @@
-// Module ID: 19456
-// Function ID: 19457
+// Module ID: 19469
+// Function ID: 19470
 // Name: FramePool
-// Dependencies: [32, 19, 17, 6901, 6902, 21, 5140, 1493, 504, 12439, 11986, 11962, 11061, 19457, 2]
+// Dependencies: [32, 19, 17, 6901, 6902, 21, 5140, 1493, 504, 12439, 11986, 11962, 11061, 19470, 2]
 // Exports: default
 
-// Module 19456 (FramePool)
+// Module 19469 (FramePool)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
@@ -29,7 +29,7 @@ function PooledFrame(frame) {
   let _undefined;
   let tmp2;
   let tmp3;
-  const f118461 = () => {
+  const f118532 = () => {
     const obj = { iframeId: makeIframeIdDefault(), proxyTicket };
     return obj;
   };
@@ -38,9 +38,9 @@ function PooledFrame(frame) {
   const id = frame.id;
   const proxyTicket = frame.data.proxyTicket;
   let obj = react;
-  [tmp2, tmp3] = iframeId(react.useState(f118461), 2);
+  [tmp2, tmp3] = iframeId(react.useState(f118532), 2);
   dependencyMap = tmp3;
-  const tmp = iframeId(react.useState(f118461), 2);
+  const tmp = iframeId(react.useState(f118532), 2);
   if (tmp2.proxyTicket !== proxyTicket) {
     let obj2 = { iframeId: proxyTicket(11962)(), proxyTicket };
     tmp3(obj2);
@@ -75,7 +75,7 @@ function PooledFrame(frame) {
   });
   const obj3 = { frame, iframeId, onActivityCrash: callback, presentation: syncExternalStore };
   const tmp11 = jsx;
-  const tmp12 = proxyTicket(19457);
+  const tmp12 = proxyTicket(19470);
   if (syncExternalStore == null) {
     syncExternalStore = { layoutMode: constants.FOCUSED };
     const obj4 = { layoutMode: constants.FOCUSED };

@@ -1,9 +1,9 @@
-// Module ID: 14921
-// Function ID: 14922
+// Module ID: 14922
+// Function ID: 14923
 // Name: VQRemainingTimeTruncationExperiment
 // Dependencies: [1449, 2]
 
-// Module 14921 (VQRemainingTimeTruncationExperiment)
+// Module 14922 (VQRemainingTimeTruncationExperiment)
 import ApexExperiment from "ApexExperiment" /* 1449 */;
 import size from "module_2" /* 2 */;
 

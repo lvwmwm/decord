@@ -1,14 +1,14 @@
-// Module ID: 19191
-// Function ID: 19192
+// Module ID: 19204
+// Function ID: 19205
 // Name: ContactSuggestionRow
-// Dependencies: [19, 5141, 1072, 21, 5194, 1652, 1113, 563, 18425, 18424, 10857, 18851, 18852, 1252, 2]
+// Dependencies: [19, 5141, 1072, 21, 5194, 1652, 1113, 563, 18438, 18437, 10857, 18864, 18865, 1252, 2]
 // Exports: ContactSuggestionRow
 
-// Module 19191 (ContactSuggestionRow)
+// Module 19204 (ContactSuggestionRow)
 import Fragment from "Fragment" /* 21 */;
 import intl3 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import AddFriendsScreenUtils from "AddFriendsScreenUtils" /* 18425 */;
+import AddFriendsScreenUtils from "AddFriendsScreenUtils" /* 18438 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5141 */;
 import Constants from "Constants" /* 1072 */;

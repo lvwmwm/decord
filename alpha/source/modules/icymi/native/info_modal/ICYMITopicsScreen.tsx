@@ -1,10 +1,10 @@
-// Module ID: 18889
-// Function ID: 18890
+// Module ID: 18902
+// Function ID: 18903
 // Name: ICYMITopicsScreen
-// Dependencies: [5, 32, 19, 17, 18883, 18890, 21, 9817, 10871, 8731, 18891, 10877, 8718, 17563, 13597, 12268, 13477, 10199, 18892, 10201, 14762, 5140, 575, 5200, 5758, 1627, 1499, 18894, 2118, 8998, 5837, 1113, 504, 16535, 5751, 2]
+// Dependencies: [5, 32, 19, 17, 18896, 18903, 21, 9817, 10871, 8731, 18904, 10877, 8718, 17574, 13598, 12268, 13478, 10199, 18905, 10201, 14763, 5140, 575, 5200, 5758, 1627, 1499, 18907, 2118, 8998, 5837, 1113, 504, 16545, 5751, 2]
 // Exports: default
 
-// Module 18889 (ICYMITopicsScreen)
+// Module 18902 (ICYMITopicsScreen)
 import nativeDefault from "native" /* 575 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
 import react_native from "react-native" /* 5200 */;
@@ -16,19 +16,19 @@ import BicycleIcon from "BicycleIcon" /* 10201 */;
 import TvIcon from "TvIcon" /* 10871 */;
 import MusicIcon from "MusicIcon" /* 10877 */;
 import RobotIcon from "RobotIcon" /* 12268 */;
-import MedalIcon from "MedalIcon" /* 13477 */;
-import PiggyBankIcon from "PiggyBankIcon" /* 13597 */;
-import PencilSparkleIcon from "PencilSparkleIcon" /* 14762 */;
-import ICYMIAnalytics2 from "ICYMIAnalytics" /* 16535 */;
-import PaintPaletteIcon from "PaintPaletteIcon" /* 17563 */;
-import GuildSettingsDiscoveryConstants from "GuildSettingsDiscoveryConstants" /* 18890 */;
-import ScienceIcon from "ScienceIcon" /* 18891 */;
-import PaintbrushThinIcon from "PaintbrushThinIcon" /* 18892 */;
+import MedalIcon from "MedalIcon" /* 13478 */;
+import PiggyBankIcon from "PiggyBankIcon" /* 13598 */;
+import PencilSparkleIcon from "PencilSparkleIcon" /* 14763 */;
+import ICYMIAnalytics2 from "ICYMIAnalytics" /* 16545 */;
+import PaintPaletteIcon from "PaintPaletteIcon" /* 17574 */;
+import GuildSettingsDiscoveryConstants from "GuildSettingsDiscoveryConstants" /* 18903 */;
+import ScienceIcon from "ScienceIcon" /* 18904 */;
+import PaintbrushThinIcon from "PaintbrushThinIcon" /* 18905 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
-import GuildDiscoveryCategoryStore from "GuildDiscoveryCategoryStore" /* 18883 */;
+import GuildDiscoveryCategoryStore from "GuildDiscoveryCategoryStore" /* 18896 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
@@ -167,7 +167,7 @@ export default function ICYMITopicsScreen() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -225,7 +225,7 @@ export default function ICYMITopicsScreen() {
           const _setTimeout = setTimeout;
           const timerId = setTimeout(() => v2(false), 500);
           c3 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp28) {
         c3 = 3;

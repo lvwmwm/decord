@@ -1,12 +1,12 @@
-// Module ID: 19150
-// Function ID: 19151
+// Module ID: 19163
+// Function ID: 19164
 // Name: useAutoTrackSearchTabCountsViewedAnalytics
-// Dependencies: [19, 9917, 14140, 2]
+// Dependencies: [19, 9917, 14141, 2]
 // Exports: useAutoTrackSearchTabCountsViewedAnalytics
 
-// Module 19150 (useAutoTrackSearchTabCountsViewedAnalytics)
+// Module 19163 (useAutoTrackSearchTabCountsViewedAnalytics)
 import SearchConstants from "SearchConstants" /* 9917 */;
-import TrackingDefault from "Tracking" /* 14140 */;
+import TrackingDefault from "Tracking" /* 14141 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -1,10 +1,10 @@
-// Module ID: 17400
-// Function ID: 17401
+// Module ID: 17411
+// Function ID: 17412
 // Name: QuestDisclosureModalInner
-// Dependencies: [17, 1072, 21, 5140, 575, 4965, 9848, 1113, 9130, 12286, 9817, 17401, 5751, 9795, 7040, 2185, 5758, 2]
+// Dependencies: [17, 1072, 21, 5140, 575, 4965, 9848, 1113, 9130, 12286, 9817, 17412, 5751, 9795, 7040, 2185, 5758, 2]
 // Exports: default
 
-// Module 17400 (QuestDisclosureModalInner)
+// Module 17411 (QuestDisclosureModalInner)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import Text_Text from "Text/Text" /* 5751 */;

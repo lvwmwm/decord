@@ -1,10 +1,10 @@
-// Module ID: 16811
-// Function ID: 16812
+// Module ID: 16822
+// Function ID: 16823
 // Name: useFetchNameplate
 // Dependencies: [11527, 2111, 2108, 2]
 // Exports: useFetchNameplate
 
-// Module 16811 (useFetchNameplate)
+// Module 16822 (useFetchNameplate)
 import utils from "utils" /* 2108 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 2111 */;
 import useFetchCollectiblesProduct from "useFetchCollectiblesProduct" /* 11527 */;

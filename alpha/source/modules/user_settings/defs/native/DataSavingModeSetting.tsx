@@ -1,14 +1,14 @@
-// Module ID: 17768
-// Function ID: 17769
+// Module ID: 17779
+// Function ID: 17780
 // Name: DataSavingModeSetting
-// Dependencies: [1194, 8503, 504, 17766, 4965, 11685, 1113, 2]
+// Dependencies: [1194, 8503, 504, 17777, 4965, 11685, 1113, 2]
 
-// Module 17768 (DataSavingModeSetting)
+// Module 17779 (DataSavingModeSetting)
 import get_initialized from "get initialized" /* 504 */;
 import intl2 from "intl" /* 1113 */;
 import UserSettings from "UserSettings" /* 4965 */;
 import SettingsConstants from "SettingsConstants" /* 8503 */;
-import UserSettingsText from "UserSettingsText" /* 17766 */;
+import UserSettingsText from "UserSettingsText" /* 17777 */;
 import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1194 */;
 import SettingBuilders from "SettingBuilders" /* 11685 */;
 import size from "module_2" /* 2 */;

@@ -1,10 +1,10 @@
-// Module ID: 15553
-// Function ID: 15554
+// Module ID: 15563
+// Function ID: 15564
 // Name: PremiumAccountCredit
 // Dependencies: [19, 17, 7654, 1072, 21, 5140, 575, 7395, 2171, 1113, 3444, 10042, 5751, 504, 12, 2]
 // Exports: default
 
-// Module 15553 (PremiumAccountCredit)
+// Module 15563 (PremiumAccountCredit)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;

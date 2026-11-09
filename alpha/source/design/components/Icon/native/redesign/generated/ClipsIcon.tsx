@@ -1,14 +1,14 @@
-// Module ID: 17181
-// Function ID: 17182
+// Module ID: 17192
+// Function ID: 17193
 // Name: ClipsIcon
-// Dependencies: [19, 21, 575, 5841, 17182, 2]
+// Dependencies: [19, 21, 575, 5841, 17193, 2]
 // Exports: ClipsIcon
 
-// Module 17181 (ClipsIcon)
+// Module 17192 (ClipsIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import BaseIconImage2 from "BaseIconImage" /* 5841 */;
-import AssetRegistry from "AssetRegistry" /* 17182 */;
+import AssetRegistry from "AssetRegistry" /* 17193 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

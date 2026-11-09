@@ -1,9 +1,9 @@
-// Module ID: 16711
-// Function ID: 16712
+// Module ID: 16722
+// Function ID: 16723
 // Name: GameRelationshipManager
 // Dependencies: [7876, 1072, 2120, 572, 6936, 2]
 
-// Module 16711 (GameRelationshipManager)
+// Module 16722 (GameRelationshipManager)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import GameRelationshipStore from "GameRelationshipStore" /* 7876 */;

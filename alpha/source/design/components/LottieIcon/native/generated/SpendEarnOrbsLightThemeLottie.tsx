@@ -1,13 +1,13 @@
-// Module ID: 14740
-// Function ID: 14741
+// Module ID: 14741
+// Function ID: 14742
 // Name: SpendEarnOrbsLightThemeLottie
-// Dependencies: [19, 21, 12083, 14741, 2]
+// Dependencies: [19, 21, 12083, 14742, 2]
 // Exports: SpendEarnOrbsLightThemeLottie
 
-// Module 14740 (SpendEarnOrbsLightThemeLottie)
+// Module 14741 (SpendEarnOrbsLightThemeLottie)
 import Fragment from "Fragment" /* 21 */;
 import LottieIcon2 from "LottieIcon" /* 12083 */;
-import AssetRegistry from "AssetRegistry" /* 14741 */;
+import AssetRegistry from "AssetRegistry" /* 14742 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

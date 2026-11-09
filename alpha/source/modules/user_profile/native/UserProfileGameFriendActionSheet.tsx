@@ -1,10 +1,10 @@
-// Module ID: 15151
-// Function ID: 15152
+// Module ID: 15152
+// Function ID: 15153
 // Name: UserProfileGameFriendActionSheet
-// Dependencies: [5, 32, 19, 17, 5082, 1072, 21, 5140, 575, 12554, 7428, 7120, 1187, 5751, 15152, 7391, 6173, 7552, 5836, 5374, 7426, 7382, 1113, 2]
+// Dependencies: [5, 32, 19, 17, 5082, 1072, 21, 5140, 575, 12554, 7428, 7120, 1187, 5751, 15153, 7391, 6173, 7552, 5836, 5374, 7426, 7382, 1113, 2]
 // Exports: default
 
-// Module 15151 (UserProfileGameFriendActionSheet)
+// Module 15152 (UserProfileGameFriendActionSheet)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
@@ -135,7 +135,7 @@ export default function UserProfileGameFriendActionSheet(user) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -185,7 +185,7 @@ export default function UserProfileGameFriendActionSheet(user) {
           c3 = 0;
           closure_128_5(false);
           _undefined = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp30) {
         memo = tmp30;

@@ -1,7 +1,7 @@
 // Module ID: 6194
 // Function ID: 6195
 // Name: MessageStore
-// Dependencies: [32, 5, 5045, 6195, 2186, 502, 4989, 6617, 5070, 5052, 5011, 5072, 5082, 5043, 5171, 1385, 1072, 3, 11, 6618, 6623, 5018, 6620, 6196, 1403, 12, 7847, 6571, 5084, 8455, 15955, 504, 11833, 6203, 2116, 572, 2]
+// Dependencies: [32, 5, 5045, 6195, 2186, 502, 4989, 6617, 5070, 5052, 5011, 5072, 5082, 5043, 5171, 1385, 1072, 3, 11, 6618, 6623, 5018, 6620, 6196, 1403, 12, 7847, 6571, 5084, 8455, 15965, 504, 11833, 6203, 2116, 572, 2]
 
 // Module 6194 (MessageStore)
 import LoggerDefault from "Logger" /* 3 */;
@@ -19,7 +19,7 @@ import GatewayConnectionStore from "GatewayConnectionStore" /* 6623 */;
 import handleExplicitMediaScanTimeoutForMessage from "handleExplicitMediaScanTimeoutForMessage" /* 7847 */;
 import MessageQueue from "MessageQueue" /* 8455 */;
 import canEditMessageDefault from "canEditMessage" /* 11833 */;
-import GuildAutomodMessageStoreUtils from "GuildAutomodMessageStoreUtils" /* 15955 */;
+import GuildAutomodMessageStoreUtils from "GuildAutomodMessageStoreUtils" /* 15965 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ImpersonateStore from "ImpersonateStore" /* 5045 */;
@@ -120,7 +120,7 @@ let obj = function _addPushNotificationMessageIfNotCached() {
         const obj5 = { value, done: true };
         return obj5;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c5;
@@ -168,7 +168,7 @@ let obj = function _addPushNotificationMessageIfNotCached() {
         } else if (null != value) {
           c5 = 0;
           c7 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } else {
           c5 = 0;
         }
@@ -179,7 +179,7 @@ let obj = function _addPushNotificationMessageIfNotCached() {
         obj3.commit(tmp25.receivePushNotification(closure_1, closure_2));
         closure_132_35.emitChange();
         c7 = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp24) {
         tmp25 = c5;
         if (0 === c5) {

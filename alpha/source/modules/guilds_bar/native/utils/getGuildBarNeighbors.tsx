@@ -1,10 +1,10 @@
-// Module ID: 18732
-// Function ID: 18733
+// Module ID: 18745
+// Function ID: 18746
 // Name: getGuildBarNeighbors
 // Dependencies: [6827, 6832, 2]
 // Exports: default
 
-// Module 18732 (getGuildBarNeighbors)
+// Module 18745 (getGuildBarNeighbors)
 import GuildsTree from "GuildsTree" /* 6832 */;
 import SortedGuildStore from "SortedGuildStore" /* 6827 */;
 import size from "module_2" /* 2 */;

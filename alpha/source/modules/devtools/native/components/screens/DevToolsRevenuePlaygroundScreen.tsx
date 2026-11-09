@@ -1,10 +1,10 @@
-// Module ID: 18008
-// Function ID: 18009
+// Module ID: 18017
+// Function ID: 18018
 // Name: DevToolsRevenuePlaygroundScreen
-// Dependencies: [5, 32, 19, 17, 8616, 7877, 1231, 4989, 5043, 1385, 5754, 1387, 21, 572, 563, 1282, 5837, 7038, 7047, 7126, 7424, 7712, 1187, 575, 10732, 5140, 7703, 5374, 18009, 2118, 7429, 18016, 14700, 13432, 6799, 18017, 18020, 18025, 18027, 18030, 2]
+// Dependencies: [5, 32, 19, 17, 8616, 7877, 1231, 4989, 5043, 1385, 5754, 1387, 21, 572, 563, 1282, 5837, 7038, 7047, 7126, 7424, 7712, 1187, 575, 10732, 5140, 7703, 5374, 18018, 2118, 7429, 18025, 14701, 13432, 6799, 18026, 18029, 18034, 18036, 18039, 2]
 // Exports: default
 
-// Module 18008 (DevToolsRevenuePlaygroundScreen)
+// Module 18017 (DevToolsRevenuePlaygroundScreen)
 import react_native from "react-native" /* 17 */;
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import nativeDefault from "native" /* 575 */;
@@ -18,8 +18,8 @@ import TableRowGroup4 from "TableRowGroup" /* 7126 */;
 import Sheet_showSimpleActionSheet from "Sheet/showSimpleActionSheet" /* 7424 */;
 import TableSwitchRow2 from "TableSwitchRow" /* 7429 */;
 import BundleUpdaterDefault from "BundleUpdater" /* 13432 */;
-import IAPUtils from "IAPUtils" /* 14700 */;
-import DevSettingsActions from "DevSettingsActions" /* 18016 */;
+import IAPUtils from "IAPUtils" /* 14701 */;
+import DevSettingsActions from "DevSettingsActions" /* 18025 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -244,7 +244,7 @@ function FriendAnniversary() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c4;
@@ -315,7 +315,7 @@ function FriendAnniversary() {
           c4 = 0;
           closure_130_7(false);
           c6 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp49) {
         closure_3 = tmp49;
@@ -351,7 +351,7 @@ function FriendAnniversary() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -418,7 +418,7 @@ function FriendAnniversary() {
             c5 = 0;
             closure_1_8(false);
             c7 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp40) {
           closure_4 = tmp40;
@@ -699,7 +699,7 @@ function TrialOfferSheetExample() {
       if (null != premiumTrialOffer) {
         const obj2 = { fallbackPremiumType: tmp, userTrialOffer: tmp2, markAsDismissed };
         const obj = ActionSheetActionCreatorsDefault;
-        obj.openLazy(asyncRequire(18009, dependencyMap.paths), "PremiumTrialOfferActionSheet", obj2);
+        obj.openLazy(asyncRequire(18018, dependencyMap.paths), "PremiumTrialOfferActionSheet", obj2);
       }
     }
   };
@@ -714,7 +714,7 @@ function TrialOfferSheetExample() {
       if (null != premiumTrialOffer) {
         const obj2 = { fallbackPremiumType: tmp, userTrialOffer: tmp2, markAsDismissed };
         const obj = ActionSheetActionCreatorsDefault;
-        obj.openLazy(asyncRequire(18009, dependencyMap.paths), "PremiumTrialOfferActionSheet", obj2);
+        obj.openLazy(asyncRequire(18018, dependencyMap.paths), "PremiumTrialOfferActionSheet", obj2);
       }
     }
   };

@@ -80,7 +80,7 @@ class StageChannelRaiseHandAck {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -132,7 +132,7 @@ class StageChannelRaiseHandAck {
               }
             }
             c4 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           } catch (tmp27) {
             if (0 === c3) {
               c4 = 3;

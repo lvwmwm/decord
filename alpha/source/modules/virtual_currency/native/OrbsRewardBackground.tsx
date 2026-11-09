@@ -1,12 +1,12 @@
-// Module ID: 14941
-// Function ID: 14942
+// Module ID: 14942
+// Function ID: 14943
 // Name: OrbsRewardBackground
-// Dependencies: [32, 19, 5141, 2117, 21, 504, 1092, 5842, 14942, 8947, 14943, 2]
+// Dependencies: [32, 19, 5141, 2117, 21, 504, 1092, 5842, 14943, 8947, 14944, 2]
 // Exports: OrbsRewardBackground
 
-// Module 14941 (OrbsRewardBackground)
+// Module 14942 (OrbsRewardBackground)
 import FastImageDefault from "FastImage" /* 5842 */;
-import _modDef14942 from "module_14942" /* 14942 */;
+import _modDef14943 from "module_14943" /* 14943 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5141 */;
@@ -19,7 +19,7 @@ let dependencyMap, importDefault;
 let metroImportAll;
 let metroImportDefault;
 let tmp15;
-const _modDef14943 = tmp15(14943);
+const _modDef14944 = tmp15(14944);
 let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
 let Fragment = Fragment_mod;
@@ -72,7 +72,7 @@ export function OrbsRewardBackground(arg0) {
   }, items2);
   const Fragment = obj3.Fragment;
   const obj4 = { source: obj5, style, resizeMode: "cover", onLoad: callback };
-  obj5 = { uri: _modDef14942 };
+  obj5 = { uri: _modDef14943 };
   const tmp16 = FastImageDefault;
   const children = [closure_7(tmp16, obj4), ];
   let tmp14Result = !stateFromStores && stateFromStores1 === ACTIVE;
@@ -80,7 +80,7 @@ export function OrbsRewardBackground(arg0) {
   const tmp14 = closure_7;
   if (tmp14Result) {
     const obj6 = { source: obj7, style, resizeMode: "cover", onLoad: callback1, disableFocus: true, playInBackground: true, preventsDisplaySleepDuringVideoPlayback: false };
-    obj7 = { uri: _modDef14943 };
+    obj7 = { uri: _modDef14944 };
     const VideoComponent = tmp(8947).VideoComponent;
     tmp14Result = tmp14(VideoComponent, obj6);
   }

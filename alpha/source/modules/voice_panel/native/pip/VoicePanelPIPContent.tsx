@@ -1,9 +1,9 @@
-// Module ID: 19668
-// Function ID: 19669
+// Module ID: 19681
+// Function ID: 19682
 // Name: VoicePanelPIPContent
-// Dependencies: [32, 19, 17, 4988, 6898, 11868, 6769, 502, 4989, 1385, 11363, 19473, 1072, 5805, 11855, 21, 5140, 575, 1652, 5715, 11362, 19552, 11937, 1108, 5199, 19562, 7023, 19472, 563, 2143, 1493, 1705, 11957, 19469, 6019, 11368, 1187, 9606, 11943, 11365, 19470, 6003, 19669, 6005, 2]
+// Dependencies: [32, 19, 17, 4988, 6898, 11868, 6769, 502, 4989, 1385, 11363, 19486, 1072, 5805, 11855, 21, 5140, 575, 1652, 5715, 11362, 19565, 11937, 1108, 5199, 19575, 7023, 19485, 563, 2143, 1493, 1705, 11957, 19482, 6019, 11368, 1187, 9606, 11943, 11365, 19483, 6003, 19682, 6005, 2]
 
-// Module 19668 (VoicePanelPIPContent)
+// Module 19681 (VoicePanelPIPContent)
 import nativeDefault from "native" /* 575 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1108 */;
 import useWindowDimensions from "useWindowDimensions" /* 1493 */;
@@ -19,11 +19,11 @@ import VoicePanelCardLayoutManager from "VoicePanelCardLayoutManager" /* 11365 *
 import Constants2 from "Constants" /* 11855 */;
 import VideoRendererNativeComponentDefault from "VideoRendererNativeComponent" /* 11937 */;
 import AssetRegistryDefault from "AssetRegistry" /* 11943 */;
-import useUserTileBackgroundDefault from "useUserTileBackground" /* 19469 */;
-import VideoActionCreators from "VideoActionCreators" /* 19470 */;
-import VoicePanelPIPUtils from "VoicePanelPIPUtils" /* 19472 */;
-import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 19473 */;
-import VoicePanelStreamOutputSinkStack from "VoicePanelStreamOutputSinkStack" /* 19552 */;
+import useUserTileBackgroundDefault from "useUserTileBackground" /* 19482 */;
+import VideoActionCreators from "VideoActionCreators" /* 19483 */;
+import VoicePanelPIPUtils from "VoicePanelPIPUtils" /* 19485 */;
+import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 19486 */;
+import VoicePanelStreamOutputSinkStack from "VoicePanelStreamOutputSinkStack" /* 19565 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -665,7 +665,7 @@ function Stream(participantId) {
   let tmp = closure_23();
   let tmp2 = participantId;
   let tmp3 = dependencyMap;
-  let obj = participantId(19562);
+  let obj = participantId(19575);
   const mode = obj.usePIPState().mode;
   const items = [transitionState, transitionCleanUp];
   const effect = streamId.useEffect(() => {
@@ -808,7 +808,7 @@ function Stream(participantId) {
   }, items7);
   if (stateFromStores === constants.ENDED) {
     const obj3 = { style: tmp.streamEmptyImage, resizeMode: "contain" };
-    tmp22 = closure_21(tmp2(19669).StreamEnded, obj3);
+    tmp22 = closure_21(tmp2(19682).StreamEnded, obj3);
   } else {
     tmp22 = null;
     if (stateFromStores !== tmp17.FAILED) {

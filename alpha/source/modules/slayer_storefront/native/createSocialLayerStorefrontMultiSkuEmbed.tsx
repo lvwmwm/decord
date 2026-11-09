@@ -1,15 +1,15 @@
-// Module ID: 15394
-// Function ID: 15395
+// Module ID: 15404
+// Function ID: 15405
 // Name: createSocialLayerStorefrontMultiSkuEmbed
-// Dependencies: [2162, 6951, 7470, 1072, 7956, 10238, 11709, 11710, 14415, 11708, 15395, 8465, 15396, 6588, 7468, 2]
+// Dependencies: [2162, 6951, 7470, 1072, 7956, 10238, 11709, 11710, 14416, 11708, 15405, 8465, 15406, 6588, 7468, 2]
 // Exports: createSocialLayerStorefrontMultiSkuEmbed
 
-// Module 15394 (createSocialLayerStorefrontMultiSkuEmbed)
+// Module 15404 (createSocialLayerStorefrontMultiSkuEmbed)
 import Constants from "Constants" /* 1072 */;
 import Constants2 from "Constants" /* 7956 */;
 import CodedLinksConstants from "CodedLinksConstants" /* 10238 */;
-import isSocialLayerApplicationDefault from "isSocialLayerApplication" /* 14415 */;
-import getSocialLayerStorefrontSkuEmbedDetails from "getSocialLayerStorefrontSkuEmbedDetails" /* 15395 */;
+import isSocialLayerApplicationDefault from "isSocialLayerApplication" /* 14416 */;
+import getSocialLayerStorefrontSkuEmbedDetails from "getSocialLayerStorefrontSkuEmbedDetails" /* 15405 */;
 import ApplicationStore from "ApplicationStore" /* 2162 */;
 import SKUStore from "SKUStore" /* 6951 */;
 import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 7470 */;
@@ -72,7 +72,7 @@ export function createSocialLayerStorefrontMultiSkuEmbed(arg0) {
               const obj3 = { backgroundColor: tmpResult4.getSocialLayerStorefrontEmbedColors(ThemeTypes.DARK).backgroundColor, extendedType: CodedLinkExtendedType.SOCIAL_LAYER_STOREFRONT_MULTI_SKU_EMBED, type: InviteTypes.GUILD, headerText: storefront.title, headerLogoUrl: assetURL, headerBackgroundImageUrl: socialLayerStorefrontBackgroundImageURL, headerAccessibilityLabel: "" + application.name + " " + storefront.title, firstItemFullWidth: flatMapResult.length % 2 === 1, items: flatMapResult, embedCanBeTapped: true };
               let merged = Object.assign(tmp18(8465)(ThemeTypes.DARK).baseColors);
               assetURL = undefined;
-              tmpResult4 = application(15396);
+              tmpResult4 = application(15406);
               if (null != lightThemeLogoAssetId) {
                 const tmpResult5 = application(6588);
                 assetURL = tmpResult5.getAssetURL(application.id, lightThemeLogoAssetId, 128);

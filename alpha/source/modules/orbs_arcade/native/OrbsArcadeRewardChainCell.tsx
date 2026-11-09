@@ -1,10 +1,10 @@
-// Module ID: 17356
-// Function ID: 17357
+// Module ID: 17367
+// Function ID: 17368
 // Name: OrbsArcadeRewardChainCell
-// Dependencies: [32, 19, 17, 5141, 21, 5140, 575, 1652, 504, 5370, 5147, 5724, 17331, 1705, 671, 5715, 17357, 9626, 17348, 7401, 5745, 17358, 2]
+// Dependencies: [32, 19, 17, 5141, 21, 5140, 575, 1652, 504, 5370, 5147, 5724, 17342, 1705, 671, 5715, 17368, 9626, 17359, 7401, 5745, 17369, 2]
 // Exports: default, useOrbsArcadeRewardChainRowStyle, useOrbsArcadeRewardChainTimeline
 
-// Module 17356 (OrbsArcadeRewardChainCell)
+// Module 17367 (OrbsArcadeRewardChainCell)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
@@ -137,7 +137,7 @@ export default function OrbsArcadeRewardChainCell(arg0) {
   const token = obj2.useToken(ref(575).colors.ICON_STRONG);
   let obj3 = token1(5724);
   token1 = obj3.useToken(ref(575).colors.STATUS_POSITIVE);
-  const LOCKED = token1(17331).OrbsArcadeRewardStatus.LOCKED;
+  const LOCKED = token1(17342).OrbsArcadeRewardStatus.LOCKED;
   ref = react.useRef(null);
   let sum = null;
   if (null != grantAtMs) {
@@ -365,7 +365,7 @@ export default function OrbsArcadeRewardChainCell(arg0) {
   items19[1] = closure_8(View, obj8);
   if (isFocused) {
     const obj9 = { color: token, progress: derivedValue1, rewardSize: 50, strokeWidth };
-    tmp68Result = tmp68(tmp4(17357), obj9);
+    tmp68Result = tmp68(tmp4(17368), obj9);
   } else {
     tmp68Result = null;
   }
@@ -383,15 +383,15 @@ export default function OrbsArcadeRewardChainCell(arg0) {
     const obj11 = { children: items22 };
     items22 = [tmp68Result5, ];
     const obj12 = { color: token1, progress: derivedValue, rewardSize: 50, strokeWidth };
-    items22[1] = closure_8(ref(17357), obj12);
+    items22[1] = closure_8(ref(17368), obj12);
     tmp58Result = tmp58(tmp72, obj11);
   }
   items19[3] = tmp58Result;
-  if (reward.type === tmp2(17331).OrbsArcadeRewardType.FRACTIONAL_PREMIUM) {
+  if (reward.type === tmp2(17342).OrbsArcadeRewardType.FRACTIONAL_PREMIUM) {
     tmp68Result6 = tmp68(tmp2(9626).NitroCoinSpotIllustration, { height: 30 });
   } else {
     const obj13 = { reward, size: 38 };
-    tmp68Result6 = tmp68(tmp4(17348), obj13);
+    tmp68Result6 = tmp68(tmp4(17359), obj13);
   }
   items19[4] = tmp68Result6;
   let tmp68Result7 = null;
@@ -409,7 +409,7 @@ export default function OrbsArcadeRewardChainCell(arg0) {
     tmp68Result8 = null;
     if (null != grantAtMs) {
       const obj16 = { pointerEvents: "none", style: tmp.confetti, children: closure_8(tmp4Result, obj17) };
-      obj17 = { ref, source: tmp2(17358), autoPlay: false, loop: false };
+      obj17 = { ref, source: tmp2(17369), autoPlay: false, loop: false };
       tmp4Result = ref(5745);
       tmp68Result8 = tmp68(tmp59, obj16);
     }

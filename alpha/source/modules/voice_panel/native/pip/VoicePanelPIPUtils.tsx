@@ -1,10 +1,10 @@
-// Module ID: 19472
-// Function ID: 19473
+// Module ID: 19485
+// Function ID: 19486
 // Name: VoicePanelPIPUtils
-// Dependencies: [6898, 6769, 502, 11363, 19473, 5805, 11364, 6772, 11368, 5800, 575, 2]
+// Dependencies: [6898, 6769, 502, 11363, 19486, 5805, 11364, 6772, 11368, 5800, 575, 2]
 // Exports: calculatePIPPositionFromVelocity, clampPIPScale, computePIPParticipantToShow, computePIPSize, createPIPBlockList, getClampedPIPPosition, getPIPMode, getPIPWindowDimensions, getScaledPIPContainerHeight, getVoicePanelPIPBorderRadius, pipXYtoAbsoluteXY
 
-// Module 19472 (VoicePanelPIPUtils)
+// Module 19485 (VoicePanelPIPUtils)
 import nativeDefault from "native" /* 575 */;
 import isActivityParticipantCurrentUserCurrentSession from "isActivityParticipantCurrentUserCurrentSession" /* 5800 */;
 import CallConstants from "CallConstants" /* 5805 */;
@@ -14,7 +14,7 @@ import ChannelRTCStore from "ChannelRTCStore" /* 6898 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6769 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import VoicePanelConstants from "VoicePanelConstants" /* 11363 */;
-import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 19473 */;
+import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 19486 */;
 import MorphablePanelConstants from "MorphablePanelConstants" /* 11364 */;
 import size_mod from "module_2" /* 2 */;
 

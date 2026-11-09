@@ -1,10 +1,10 @@
-// Module ID: 15341
-// Function ID: 15342
+// Module ID: 15351
+// Function ID: 15352
 // Name: CollectiblesEditUserProfileListItems
-// Dependencies: [19, 17, 1385, 1074, 21, 5140, 575, 7043, 5376, 5377, 1187, 15342, 5751, 1113, 7387, 7795, 5374, 15343, 9610, 504, 2171, 8815, 7808, 2]
+// Dependencies: [19, 17, 1385, 1074, 21, 5140, 575, 7043, 5376, 5377, 1187, 15352, 5751, 1113, 7387, 7795, 5374, 15353, 9610, 504, 2171, 8815, 7808, 2]
 // Exports: EditCollectiblesListItemNone, EditCollectiblesListItemProduct, EditCollectiblesListItemShop
 
-// Module 15341 (CollectiblesEditUserProfileListItems)
+// Module 15351 (CollectiblesEditUserProfileListItems)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
@@ -20,7 +20,7 @@ import Pressables from "Pressables" /* 7043 */;
 import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7795 */;
 import CollectiblesUtils from "CollectiblesUtils" /* 7808 */;
 import useCollectiblesDataDefault from "useCollectiblesData" /* 8815 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15342 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15352 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1385 */;
 import Fragment from "Fragment" /* 21 */;
@@ -138,7 +138,7 @@ export function EditCollectiblesListItemShop(analyticsSource) {
     children: items1
   };
   const merged1 = Object.assign(merged);
-  let obj2 = { source: analyticsLocations(15343), size: analyticsSource(1187).IconSizes.LARGE };
+  let obj2 = { source: analyticsLocations(15353), size: analyticsSource(1187).IconSizes.LARGE };
   const Icon = analyticsSource(1187).Icon;
   items1 = [closure_7(Icon, obj2), , ];
   let obj3 = { variant: "body-sm/medium", color: "mobile-text-heading-primary", style: tmp2.optionCellText, children: intl.string(analyticsSource(1113).t.pWG4ze) };

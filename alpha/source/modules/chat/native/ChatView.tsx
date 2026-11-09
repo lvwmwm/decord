@@ -1,7 +1,7 @@
 // Module ID: 11354
 // Function ID: 11355
 // Name: ChatView
-// Dependencies: [19, 17, 6623, 4993, 4989, 6194, 1072, 21, 5140, 575, 5323, 504, 1113, 11355, 5739, 11372, 11373, 7730, 7548, 10304, 7342, 11375, 11395, 11501, 13954, 14279, 1377, 14449, 14450, 14057, 14454, 14457, 11721, 14460, 10855, 9, 1187, 14474, 14608, 2]
+// Dependencies: [19, 17, 6623, 4993, 4989, 6194, 1072, 21, 5140, 575, 5323, 504, 1113, 11355, 5739, 11372, 11373, 7730, 7548, 10304, 7342, 11375, 11395, 11501, 13955, 14280, 1377, 14450, 14451, 14058, 14455, 14458, 11721, 14461, 10855, 9, 1187, 14475, 14609, 2]
 
 // Module 11354 (ChatView)
 import react_native from "react-native" /* 17 */;
@@ -16,10 +16,10 @@ import SummaryActionCreators from "SummaryActionCreators" /* 10304 */;
 import ChatViewWrapperDefault from "ChatViewWrapper" /* 11375 */;
 import ChatViewStickyHeaderDefault from "ChatViewStickyHeader" /* 11395 */;
 import MessagesDefault from "Messages" /* 11501 */;
-import ChatInputDefault from "ChatInput" /* 13954 */;
-import ChatBeginningRowDefault from "ChatBeginningRow" /* 14279 */;
-import ChannelSafeAreaBottomDefault from "ChannelSafeAreaBottom" /* 14454 */;
-import VoiceMessageOverlayDefault from "VoiceMessageOverlay" /* 14457 */;
+import ChatInputDefault from "ChatInput" /* 13955 */;
+import ChatBeginningRowDefault from "ChatBeginningRow" /* 14280 */;
+import ChannelSafeAreaBottomDefault from "ChannelSafeAreaBottom" /* 14455 */;
+import VoiceMessageOverlayDefault from "VoiceMessageOverlay" /* 14458 */;
 import react from "react" /* 19 */;
 import GatewayConnectionStore from "GatewayConnectionStore" /* 6623 */;
 import ChannelStore from "ChannelStore" /* 4989 */;
@@ -186,7 +186,7 @@ const memoResult = react.memo(function ChatView(alwaysRespectKeyboard) {
   }, []);
   let obj3 = { profile: tmp3(11721).Profiles.ChatView, children: items10 };
   const tmp18 = channelId(11721);
-  items10 = [stateFromStores(channelId(14460), { channelId, guildId }), , ];
+  items10 = [stateFromStores(channelId(14461), { channelId, guildId }), , ];
   let tmp19Result = null;
   const tmp17 = channel;
   if (!flag2) {
@@ -226,20 +226,20 @@ const memoResult = react.memo(function ChatView(alwaysRespectKeyboard) {
       const tmp8 = channel;
       if (!obj6.isAndroid()) {
         const obj7 = { channelId: tmp8.id, messagesRef: tmp11 };
-        tmp7Result = tmp7(tmp3(14449), obj7);
+        tmp7Result = tmp7(tmp3(14450), obj7);
       }
       items1[1] = tmp7Result;
       let tmp7Result3 = null;
       if (c16) {
         const obj8 = { screenIndex: createChannelRecord };
-        tmp7Result3 = tmp7(tmp3(14450), obj8);
+        tmp7Result3 = tmp7(tmp3(14451), obj8);
       }
       items1[2] = tmp7Result3;
       let tmp7Result4 = null;
       const tmp14Result = PlatformUtils;
       if (tmp14Result.isAndroid()) {
         const obj9 = { channelId, screenIndex: createChannelRecord, onJumpToPresent: tmp12 };
-        tmp7Result4 = tmp7(tmp3(14057), obj9);
+        tmp7Result4 = tmp7(tmp3(14058), obj9);
       }
       const obj10 = { children: items2 };
       items1[3] = tmp7Result4;
@@ -261,12 +261,12 @@ const memoResult = react.memo(function ChatView(alwaysRespectKeyboard) {
       tmp10Result4.setInterstitial("EmptyState");
     } else if (channel.isDirectory()) {
       let obj5 = { channel, guildId };
-      tmp19Result2 = tmp19(tmp10(14474), obj5);
+      tmp19Result2 = tmp19(tmp10(14475), obj5);
       const tmp10Result5 = channelId(9);
       tmp10Result5.setInterstitial("GuildDirectory");
     } else if (channel.isForumLikeChannel()) {
       let obj6 = { channel };
-      tmp19Result2 = tmp19(tmp10(14608), obj6);
+      tmp19Result2 = tmp19(tmp10(14609), obj6);
       const tmp10Result6 = channelId(9);
       tmp10Result6.setInterstitial("ForumChannel");
     } else {

@@ -1,10 +1,10 @@
-// Module ID: 18049
-// Function ID: 18050
+// Module ID: 18058
+// Function ID: 18059
 // Name: TakeActionScreen
 // Dependencies: [5, 32, 19, 17, 5082, 1385, 11396, 21, 5140, 575, 504, 11435, 11438, 1499, 7552, 7568, 11409, 8422, 5837, 1113, 5836, 5758, 11446, 10206, 8694, 8232, 5834, 5751, 2]
 // Exports: default
 
-// Module 18049 (TakeActionScreen)
+// Module 18058 (TakeActionScreen)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 19 */;
 import nativeDefault from "native" /* 575 */;
@@ -116,7 +116,7 @@ export default function TakeActionButtons(senderId) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -167,7 +167,7 @@ export default function TakeActionButtons(senderId) {
           closure_128_3(tmp3(setReported[16]).CtaEventTypes.USER_TAKEOVER_MODAL_REPORT);
         }
         setReported = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp21) {
         setReported = 3;
         throw tmp21;

@@ -1,10 +1,10 @@
-// Module ID: 13533
-// Function ID: 13534
+// Module ID: 13534
+// Function ID: 13535
 // Name: AutomodQuarantineUtils
 // Dependencies: [19, 11601, 502, 5052, 5011, 5072, 5171, 1072, 5058, 1082, 563, 5078, 1113, 11664, 11665, 7635, 2]
 // Exports: useCurrentUserHasAutomodQuarantinedProfile, useGuildAutomodProfileQuarantineErrors, useOpenFixQuarantinedProfileModal
 
-// Module 13533 (AutomodQuarantineUtils)
+// Module 13534 (AutomodQuarantineUtils)
 import UserSettingsConstants from "UserSettingsConstants" /* 1082 */;
 import intl4 from "intl" /* 1113 */;
 import GuildMemberConstants from "GuildMemberConstants" /* 5058 */;

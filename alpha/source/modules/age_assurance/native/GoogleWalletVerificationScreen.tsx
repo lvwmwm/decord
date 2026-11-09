@@ -111,7 +111,7 @@ export default function GoogleWalletVerificationScreen(onClose) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let tmp50;
@@ -240,7 +240,7 @@ export default function GoogleWalletVerificationScreen(onClose) {
               c3 = 0;
             }
             c5 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp50) {
           if (0 === c3) {

@@ -1,10 +1,10 @@
-// Module ID: 18709
-// Function ID: 18710
+// Module ID: 18722
+// Function ID: 18723
 // Name: useFavoritesGuildUnreads
 // Dependencies: [6896, 5074, 4989, 6941, 5072, 6897, 6830, 504, 11, 2]
 // Exports: default
 
-// Module 18709 (useFavoritesGuildUnreads)
+// Module 18722 (useFavoritesGuildUnreads)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 6896 */;
 import JoinedThreadsStore from "JoinedThreadsStore" /* 5074 */;

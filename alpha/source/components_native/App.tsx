@@ -1,10 +1,10 @@
-// Module ID: 16527
-// Function ID: 16528
+// Module ID: 16537
+// Function ID: 16538
 // Name: App
-// Dependencies: [19, 16528, 502, 9302, 15877, 15887, 16529, 15906, 9714, 16187, 16530, 16531, 16532, 7862, 2176, 5141, 16533, 7180, 16534, 16536, 21, 16537, 2118, 16570, 6152, 16576, 16580, 16581, 10330, 16590, 15488, 16592, 16595, 10697, 16688, 16696, 16699, 8911, 16702, 16704, 16708, 16710, 16711, 16712, 16714, 7976, 16715, 1377, 8299, 12223, 504, 6795, 16717, 8032, 9, 15841, 16327, 11721, 16719, 18304, 2]
+// Dependencies: [19, 16538, 502, 9302, 15887, 15897, 16539, 15916, 9714, 16197, 16540, 16541, 16542, 7862, 2176, 5141, 16543, 7180, 16544, 16546, 21, 16547, 2118, 16580, 6152, 16586, 16590, 16591, 10330, 16600, 15498, 16602, 16605, 10697, 16699, 16707, 16710, 8911, 16713, 16715, 16719, 16721, 16722, 16723, 16725, 7976, 16726, 1377, 8299, 12223, 504, 6795, 16728, 8032, 9, 15851, 16337, 11721, 16730, 18317, 2]
 // Exports: default
 
-// Module 16527 (App)
+// Module 16537 (App)
 import TTITrackerDefault from "TTITracker" /* 9 */;
 import Fragment from "Fragment" /* 21 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
@@ -16,55 +16,55 @@ import MediaPlayerMuteManagerDefault from "MediaPlayerMuteManager" /* 8911 */;
 import ForegroundServiceManagerDefault from "ForegroundServiceManager" /* 10330 */;
 import GPlayManagerDefault from "GPlayManager" /* 10697 */;
 import StartupProfilerDefault from "StartupProfiler" /* 11721 */;
-import SentMessageIntentsHandlerDefault from "SentMessageIntentsHandler" /* 15488 */;
-import react_nativeDefault from "react-native" /* 16327 */;
-import AccessibilityManagerDefault from "AccessibilityManager" /* 16570 */;
-import SystemTelecomManagerDefault from "SystemTelecomManager" /* 16576 */;
-import AccessibilityCallManagerDefault from "AccessibilityCallManager" /* 16580 */;
-import NotificationTokenManagerDefault from "NotificationTokenManager" /* 16581 */;
-import VoiceNotificationManagerDefault from "VoiceNotificationManager" /* 16590 */;
-import UserSettingsProtoManagerDefault from "UserSettingsProtoManager" /* 16592 */;
-import NativeRPCServerManagerDefault from "NativeRPCServerManager" /* 16595 */;
-import MobileVoiceOverlayLifecycleManagerDefault from "MobileVoiceOverlayLifecycleManager" /* 16688 */;
-import EmbeddedActivitiesNativeManagerDefault from "EmbeddedActivitiesNativeManager" /* 16696 */;
-import FramesNativeManagerDefault from "FramesNativeManager" /* 16699 */;
-import MediaPlayerManagerDefault from "MediaPlayerManager" /* 16702 */;
-import SoundboardManagerDefault from "SoundboardManager" /* 16704 */;
-import VoiceMessagesPlaybackManagerDefault from "VoiceMessagesPlaybackManager" /* 16708 */;
-import ICYMIManagerDefault from "ICYMIManager" /* 16710 */;
-import GameRelationshipManagerDefault from "GameRelationshipManager" /* 16711 */;
-import CollectiblesMarketingManagerDefault from "CollectiblesMarketingManager" /* 16712 */;
-import SessionAdManagerDefault from "SessionAdManager" /* 16714 */;
-import TouchEventAnalyticsManagerDefault from "TouchEventAnalyticsManager" /* 16715 */;
-import LocalMessageCacheManagerDefault from "LocalMessageCacheManager" /* 16717 */;
-import AppContainerDefault from "AppContainer" /* 16719 */;
+import SentMessageIntentsHandlerDefault from "SentMessageIntentsHandler" /* 15498 */;
+import react_nativeDefault from "react-native" /* 16337 */;
+import AccessibilityManagerDefault from "AccessibilityManager" /* 16580 */;
+import SystemTelecomManagerDefault from "SystemTelecomManager" /* 16586 */;
+import AccessibilityCallManagerDefault from "AccessibilityCallManager" /* 16590 */;
+import NotificationTokenManagerDefault from "NotificationTokenManager" /* 16591 */;
+import VoiceNotificationManagerDefault from "VoiceNotificationManager" /* 16600 */;
+import UserSettingsProtoManagerDefault from "UserSettingsProtoManager" /* 16602 */;
+import NativeRPCServerManagerDefault from "NativeRPCServerManager" /* 16605 */;
+import MobileVoiceOverlayLifecycleManagerDefault from "MobileVoiceOverlayLifecycleManager" /* 16699 */;
+import EmbeddedActivitiesNativeManagerDefault from "EmbeddedActivitiesNativeManager" /* 16707 */;
+import FramesNativeManagerDefault from "FramesNativeManager" /* 16710 */;
+import MediaPlayerManagerDefault from "MediaPlayerManager" /* 16713 */;
+import SoundboardManagerDefault from "SoundboardManager" /* 16715 */;
+import VoiceMessagesPlaybackManagerDefault from "VoiceMessagesPlaybackManager" /* 16719 */;
+import ICYMIManagerDefault from "ICYMIManager" /* 16721 */;
+import GameRelationshipManagerDefault from "GameRelationshipManager" /* 16722 */;
+import CollectiblesMarketingManagerDefault from "CollectiblesMarketingManager" /* 16723 */;
+import SessionAdManagerDefault from "SessionAdManager" /* 16725 */;
+import TouchEventAnalyticsManagerDefault from "TouchEventAnalyticsManager" /* 16726 */;
+import LocalMessageCacheManagerDefault from "LocalMessageCacheManager" /* 16728 */;
+import AppContainerDefault from "AppContainer" /* 16730 */;
 import react from "react" /* 19 */;
-import MobileNativeUpdateStore from "MobileNativeUpdateStore" /* 16528 */;
+import MobileNativeUpdateStore from "MobileNativeUpdateStore" /* 16538 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import AudioManagerStore from "AudioManagerStore" /* 9302 */;
-import ConnectivityIndicatorStateStore from "ConnectivityIndicatorStateStore" /* 15877 */;
-import RequestReviewStore from "RequestReviewStore" /* 15887 */;
-import HexagonCampaignPersistedStore from "HexagonCampaignPersistedStore" /* 16529 */;
-import LocalPushNotificationStore from "LocalPushNotificationStore" /* 15906 */;
+import ConnectivityIndicatorStateStore from "ConnectivityIndicatorStateStore" /* 15887 */;
+import RequestReviewStore from "RequestReviewStore" /* 15897 */;
+import HexagonCampaignPersistedStore from "HexagonCampaignPersistedStore" /* 16539 */;
+import LocalPushNotificationStore from "LocalPushNotificationStore" /* 15916 */;
 import PromotionsStore from "PromotionsStore" /* 9714 */;
-import BitRateStore from "BitRateStore" /* 16187 */;
-import ShareStore from "ShareStore" /* 16530 */;
-import PermissionVADStore from "PermissionVADStore" /* 16531 */;
-import InteractionModalStore from "InteractionModalStore" /* 16532 */;
+import BitRateStore from "BitRateStore" /* 16197 */;
+import ShareStore from "ShareStore" /* 16540 */;
+import PermissionVADStore from "PermissionVADStore" /* 16541 */;
+import InteractionModalStore from "InteractionModalStore" /* 16542 */;
 import MobileAppDatabaseManager from "MobileAppDatabaseManager" /* 7862 */;
 import SubscriptionStore from "SubscriptionStore" /* 2176 */;
 import AccessibilityStore from "AccessibilityStore" /* 5141 */;
-import AnalyticsLogStore from "AnalyticsLogStore" /* 16533 */;
+import AnalyticsLogStore from "AnalyticsLogStore" /* 16543 */;
 import PhoneStore from "PhoneStore" /* 7180 */;
-import ICYMISessionStore from "ICYMISessionStore" /* 16534 */;
-import MemoryExperiment from "MemoryExperiment" /* 16536 */;
+import ICYMISessionStore from "ICYMISessionStore" /* 16544 */;
+import MemoryExperiment from "MemoryExperiment" /* 16546 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
 const IosImageTypesManagerDefault = tmp(8299);
 const jsx = Fragment.jsx;
 if (global.__DEV__) {
-  asyncRequire(16537, dependencyMap.paths);
+  asyncRequire(16547, dependencyMap.paths);
 }
 let result = size.fileFinishedImporting("components_native/App.tsx");
 
@@ -199,7 +199,7 @@ export default function App() {
     const tmp = TTITrackerDefault;
     tmp.wasAuthenticated = AuthenticationStore.isAuthenticated();
   }, []);
-  let obj2 = stateFromStores(15841);
+  let obj2 = stateFromStores(15851);
   const isChannelMetadataObfuscationEnabled = obj2.useIsChannelMetadataObfuscationEnabled("App");
   const items2 = [isChannelMetadataObfuscationEnabled];
   const effect3 = react.useEffect(() => {

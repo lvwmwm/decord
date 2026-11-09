@@ -1,10 +1,10 @@
-// Module ID: 16115
-// Function ID: 16116
+// Module ID: 16125
+// Function ID: 16126
 // Name: subscriptionSettingsDeepLink
-// Dependencies: [5, 2176, 1072, 7635, 16116, 5374, 1113, 1252, 6589, 2]
+// Dependencies: [5, 2176, 1072, 7635, 16126, 5374, 1113, 1252, 6589, 2]
 // Exports: openSubscriptionSettingsFromDeepLink
 
-// Module 16115 (subscriptionSettingsDeepLink)
+// Module 16125 (subscriptionSettingsDeepLink)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import actions_BillingActionCreators from "actions/BillingActionCreators" /* 6589 */;
 import openUserSettings from "openUserSettings" /* 7635 */;
@@ -80,7 +80,7 @@ let obj = function _openSubscriptionSettingsFromDeepLink() {
         let obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -114,7 +114,7 @@ let obj = function _openSubscriptionSettingsFromDeepLink() {
           closure_130_11();
           closure_130_8();
           c5 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } else if (arg0 === 1) {
           c5 = 3;
           throw value;
@@ -142,7 +142,7 @@ let obj = function _openSubscriptionSettingsFromDeepLink() {
             showSubscriptionPicker();
           }
           c5 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
         const tmp28 = hasGuild;
         if (tmp28) {

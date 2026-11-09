@@ -1,9 +1,9 @@
-// Module ID: 14228
-// Function ID: 14229
+// Module ID: 14229
+// Function ID: 14230
 // Name: ChatInputRightActions
-// Dependencies: [32, 19, 17, 13023, 21, 5140, 575, 5724, 5199, 14229, 1625, 12709, 13024, 1652, 13022, 14037, 2]
+// Dependencies: [32, 19, 17, 13023, 21, 5140, 575, 5724, 5199, 14230, 1625, 12709, 13024, 1652, 13022, 14038, 2]
 
-// Module 14228 (ChatInputRightActions)
+// Module 14229 (ChatInputRightActions)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef1652 from "module_1652" /* 1652 */;
@@ -11,7 +11,7 @@ import native from "native" /* 5199 */;
 import ChatInputActionButtonTransitionItem from "ChatInputActionButtonTransitionItem" /* 13022 */;
 import ChatInputConstants from "ChatInputConstants" /* 13023 */;
 import useChatInputFloatingBounceDefault from "useChatInputFloatingBounce" /* 13024 */;
-import ChatInputActionButtonGiftOrThreadDefault from "ChatInputActionButtonGiftOrThread" /* 14037 */;
+import ChatInputActionButtonGiftOrThreadDefault from "ChatInputActionButtonGiftOrThread" /* 14038 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -80,7 +80,7 @@ class ChatInputRightActions {
     items1 = [tmp15Result, ];
     if (null != suggestedExpressions) {
       const obj5 = { ref: suggestedExpressionsRef, active: keyboardType === channel(1625).KeyboardTypes.EXPRESSION, showKeyboardIcon, onPress: onPressExpression, channel };
-      const EmojiSuggestionChatButton = tmp(14229).EmojiSuggestionChatButton;
+      const EmojiSuggestionChatButton = tmp(14230).EmojiSuggestionChatButton;
       const merged = Object.assign(suggestedExpressions);
       tmp19 = closure_7(EmojiSuggestionChatButton, obj5);
     } else {
@@ -106,7 +106,7 @@ function LeftSlot(state) {
   const YEETED = native.TransitionStates.YEETED;
   const obj = { visible: state !== YEETED, initiallyVisible: state !== native.TransitionStates.ENTERED, enterDelayMs, onExitComplete: cleanup };
   ({ animatedStyle, isInteractive } = useChatInputFloatingBounceDefault(obj));
-  const obj2 = { style: items, children: metroImportDefault(ChatInputActionButtonGiftOrThreadDefault, { canStartThreads: false, channel, onPress, styleButton: "flexDirection", shouldShowThread: "broken_chain" }) };
+  const obj2 = { style: items, children: metroImportDefault(ChatInputActionButtonGiftOrThreadDefault, { canStartThreads: false, channel, onPress, styleButton: "flexDirection", shouldShowThread: "en-BB" }) };
   items = [wrapperStyle, { width: slotWidth }, animatedStyle];
   useChatInputFloatingBounceDefault(obj);
   View = _modDef1652.View;

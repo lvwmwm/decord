@@ -1,19 +1,19 @@
-// Module ID: 19126
-// Function ID: 19127
+// Module ID: 19139
+// Function ID: 19140
 // Name: BaseMessagesScreen
-// Dependencies: [19, 6918, 14133, 9916, 21, 14140, 504, 14126, 19115, 19127, 14119, 19128, 19129, 14124, 19048, 19060, 2]
+// Dependencies: [19, 6918, 14134, 9916, 21, 14141, 504, 14127, 19128, 19140, 14120, 19141, 19142, 14125, 19061, 19073, 2]
 // Exports: default, trackMessageItemPress
 
-// Module 19126 (BaseMessagesScreen)
+// Module 19139 (BaseMessagesScreen)
 import Fragment from "Fragment" /* 21 */;
 import TrackingConstants from "TrackingConstants" /* 9916 */;
-import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 14119 */;
-import SearchUtils from "SearchUtils" /* 14126 */;
-import TrackingDefault from "Tracking" /* 14140 */;
-import SearchHistoricalIndexingHeaderDefault from "SearchHistoricalIndexingHeader" /* 19128 */;
+import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 14120 */;
+import SearchUtils from "SearchUtils" /* 14127 */;
+import TrackingDefault from "Tracking" /* 14141 */;
+import SearchHistoricalIndexingHeaderDefault from "SearchHistoricalIndexingHeader" /* 19141 */;
 import react from "react" /* 19 */;
 import SearchMessageStore from "SearchMessageStore" /* 6918 */;
-import SearchQueryStore from "SearchQueryStore" /* 14133 */;
+import SearchQueryStore from "SearchQueryStore" /* 14134 */;
 import size from "module_2" /* 2 */;
 
 const constants = TrackingConstants.SearchResultContentEntityTypes;

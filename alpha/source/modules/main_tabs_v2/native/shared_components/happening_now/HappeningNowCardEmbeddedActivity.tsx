@@ -1,10 +1,10 @@
-// Module ID: 18469
-// Function ID: 18470
+// Module ID: 18482
+// Function ID: 18483
 // Name: HappeningNowCardEmbeddedActivity
-// Dependencies: [32, 19, 17, 1385, 17597, 1072, 21, 5140, 575, 563, 18470, 7391, 1252, 7412, 13408, 2118, 18442, 1652, 1705, 6160, 1260, 18453, 17598, 8749, 5842, 18466, 2]
+// Dependencies: [32, 19, 17, 1385, 17608, 1072, 21, 5140, 575, 563, 18483, 7391, 1252, 7412, 13408, 2118, 18455, 1652, 1705, 6160, 1260, 18466, 17609, 8749, 5842, 18479, 2]
 // Exports: default
 
-// Module 18469 (HappeningNowCardEmbeddedActivity)
+// Module 18482 (HappeningNowCardEmbeddedActivity)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -14,7 +14,7 @@ import AnalyticsLocationDefault from "AnalyticsLocation" /* 7412 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1385 */;
-import HappeningNowConstants from "HappeningNowConstants" /* 17597 */;
+import HappeningNowConstants from "HappeningNowConstants" /* 17608 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;

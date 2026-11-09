@@ -17,13 +17,13 @@ export default function useConjureDraftHasText(arg0) {
   let closure_0;
   let tmp2;
   let tmp3;
-  const f104320 = () => {
+  const f104361 = () => {
     const str = ConjureComposerDraftStore.getDraft(closure_0);
     return "" !== str.trim();
   };
   _slicedToArray = arg0;
-  [tmp2, tmp3] = react.useState(f104320);
-  _slicedToArray(react.useState(f104320), 2);
+  [tmp2, tmp3] = react.useState(f104361);
+  _slicedToArray(react.useState(f104361), 2);
   const tmp4 = _slicedToArray(react.useState(arg0), 2);
   const tmp5 = tmp4[1];
   if (tmp4[0] !== arg0) {

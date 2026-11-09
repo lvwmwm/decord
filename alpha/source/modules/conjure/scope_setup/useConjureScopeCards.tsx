@@ -62,7 +62,7 @@ export function useConjureScopeSetupCard(projectId) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c5;
@@ -115,7 +115,7 @@ export function useConjureScopeSetupCard(projectId) {
               c5 = 0;
             }
             c7 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp27) {
           closure_4 = tmp27;
@@ -319,7 +319,7 @@ export function useConjureScopeSwitchCard(merged) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c4;
@@ -368,7 +368,7 @@ export function useConjureScopeSwitchCard(merged) {
               c4 = 0;
             }
             c6 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp26) {
           closure_3 = tmp26;

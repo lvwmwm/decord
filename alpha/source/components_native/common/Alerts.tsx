@@ -1,20 +1,20 @@
-// Module ID: 19367
-// Function ID: 19368
+// Module ID: 19380
+// Function ID: 19381
 // Name: Alerts
-// Dependencies: [19, 17, 5141, 15942, 16531, 7560, 10256, 21, 19368, 19369, 19373, 19374, 5140, 575, 504, 1652, 5199, 5370, 1705, 5761, 5762, 6091, 6154, 6149, 7016, 6097, 558, 2]
+// Dependencies: [19, 17, 5141, 15952, 16541, 7560, 10256, 21, 19381, 19382, 19386, 19387, 5140, 575, 504, 1652, 5199, 5370, 1705, 5761, 5762, 6091, 6154, 6149, 7016, 6097, 558, 2]
 
-// Module 19367 (Alerts)
+// Module 19380 (Alerts)
 import shallowEqualDefault from "shallowEqual" /* 558 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 5199 */;
 import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6091 */;
 import OverlayViewDefault from "OverlayView" /* 6097 */;
-import ModalRegistryDefault from "ModalRegistry" /* 19368 */;
+import ModalRegistryDefault from "ModalRegistry" /* 19381 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 5141 */;
-import PermissionSpeakStore from "PermissionSpeakStore" /* 15942 */;
-import PermissionVADStore from "PermissionVADStore" /* 16531 */;
+import PermissionSpeakStore from "PermissionSpeakStore" /* 15952 */;
+import PermissionVADStore from "PermissionVADStore" /* 16541 */;
 import SurveyStore from "SurveyStore" /* 7560 */;
 import AlertStore from "AlertStore" /* 10256 */;
 import Fragment from "Fragment" /* 21 */;
@@ -300,7 +300,7 @@ function renderAlertItem(arg0, item, transitionState, cleanUp) {
   const obj = { item, transitionState, cleanUp };
   return authStore2(AlertWrapper, obj, arg0);
 }
-let closure_23 = Object.freeze({ renderAlert: "Array", renderKey: "channel", props: "t" });
+let closure_23 = Object.freeze({ renderAlert: "Array", renderKey: "channel", props: "find" });
 const memoResult = react.memo(function Alerts() {
   let alertDismissable;
   let ref;
@@ -336,7 +336,7 @@ const memoResult = react.memo(function Alerts() {
           return <component />;
         };
       } else {
-        return { renderAlert: "Array", renderKey: "channel", props: "t" };
+        return { renderAlert: "Array", renderKey: "channel", props: "find" };
       }
     }
   });

@@ -17,7 +17,7 @@ import size from "module_2" /* 2 */;
 
 let closure_8;
 
-const f104275 = () => {
+const f104316 = () => {
 
 };
 function _toPropertyKey(obj) {
@@ -81,7 +81,7 @@ function discardDraft(projectId, item10010) {
     const id = item10010.ref.id;
     const obj = conjureAttachmentRequests;
     const result = obj.deleteStagedAttachment(projectId, id);
-    result.catch(f104275);
+    result.catch(f104316);
   }
 }
 function discardProject(projectId, deleteFromWorker) {
@@ -263,7 +263,7 @@ export function removeConjureAttachmentDraft(projectId, chat, arg2) {
       const id = found.ref.id;
       const obj2 = conjureAttachmentRequests;
       const result = obj2.deleteStagedAttachment(projectId, id);
-      result.catch(f104275);
+      result.catch(f104316);
     }
     const found1 = tmp2.filter((localId) => localId.localId !== closure_0);
     const draftsByProject = obj.getState().draftsByProject;

@@ -1,16 +1,16 @@
-// Module ID: 20094
-// Function ID: 20095
+// Module ID: 20107
+// Function ID: 20108
 // Name: RuleActionRows
-// Dependencies: [19, 4989, 5070, 13524, 21, 5140, 575, 20071, 11339, 1113, 5374, 20095, 2118, 20096, 20074, 7038, 6159, 5751, 7055, 20068, 7126, 2]
+// Dependencies: [19, 4989, 5070, 13525, 21, 5140, 575, 20084, 11339, 1113, 5374, 20108, 2118, 20109, 20087, 7038, 6159, 5751, 7055, 20081, 7126, 2]
 // Exports: default
 
-// Module 20094 (RuleActionRows)
+// Module 20107 (RuleActionRows)
 import nativeDefault from "native" /* 575 */;
 import GuildChannelStore from "GuildChannelStore" /* 5070 */;
 import TableRow2 from "TableRow" /* 7038 */;
 import FormCheckbox from "FormCheckbox" /* 7055 */;
-import Constants from "Constants" /* 13524 */;
-import getActionInfo from "getActionInfo" /* 20074 */;
+import Constants from "Constants" /* 13525 */;
+import getActionInfo from "getActionInfo" /* 20087 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4989 */;
 import Fragment from "Fragment" /* 21 */;
@@ -86,7 +86,7 @@ export default function RuleActionRows(rule) {
   const onChangeRule = rule.onChangeRule;
   let tmp = rule;
   let tmp2 = dependencyMap;
-  let obj = rule(20068);
+  let obj = rule(20081);
   const availableActionTypes = obj.getAvailableActionTypes(rule.triggerType);
   let tmp3 = null;
   if (0 !== availableActionTypes.length) {

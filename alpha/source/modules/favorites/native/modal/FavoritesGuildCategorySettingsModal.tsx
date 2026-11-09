@@ -1,10 +1,10 @@
-// Module ID: 18494
-// Function ID: 18495
+// Module ID: 18507
+// Function ID: 18508
 // Name: FavoritesGuildCategorySettingsModal
 // Dependencies: [32, 19, 17, 4992, 5002, 21, 5140, 575, 1499, 504, 5014, 10950, 9902, 1113, 6090, 1187, 6159, 7148, 7126, 7038, 5862, 10262, 10264, 2]
 // Exports: default
 
-// Module 18494 (FavoritesGuildCategorySettingsModal)
+// Module 18507 (FavoritesGuildCategorySettingsModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;

@@ -1,10 +1,10 @@
-// Module ID: 14699
-// Function ID: 14700
+// Module ID: 14700
+// Function ID: 14701
 // Name: PremiumGiftPurchaseButton
-// Dependencies: [19, 17, 8834, 9714, 1072, 21, 5140, 575, 5735, 1499, 10681, 14700, 504, 10730, 10741, 10731, 8826, 10679, 10678, 11527, 1113, 10742, 10744, 2728, 10351, 10747, 10736, 7412, 5751, 2185, 5758, 5323, 2]
+// Dependencies: [19, 17, 8834, 9714, 1072, 21, 5140, 575, 5735, 1499, 10681, 14701, 504, 10730, 10741, 10731, 8826, 10679, 10678, 11527, 1113, 10742, 10744, 2728, 10351, 10747, 10736, 7412, 5751, 2185, 5758, 5323, 2]
 // Exports: default
 
-// Module 14699 (PremiumGiftPurchaseButton)
+// Module 14700 (PremiumGiftPurchaseButton)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import ChatInputUtils from "ChatInputUtils" /* 5323 */;
@@ -94,7 +94,7 @@ export default function PremiumGiftPurchaseButton(defaultSelection) {
   const selectedGiftingPromotionReward = nativeGiftContext.selectedGiftingPromotionReward;
   const setSelectedGiftingPromotionReward = nativeGiftContext.setSelectedGiftingPromotionReward;
   ({ setCurrentAnalyticsStep: c7, productId } = nativeGiftContext);
-  const obj3 = defaultSelection(14700);
+  const obj3 = defaultSelection(14701);
   const canPurchaseIAP = obj3.useCanPurchaseIAP(productId);
   let items = [c7];
   const obj4 = defaultSelection(504);

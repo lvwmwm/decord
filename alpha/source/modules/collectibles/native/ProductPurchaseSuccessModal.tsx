@@ -1,10 +1,10 @@
-// Module ID: 14731
-// Function ID: 14732
+// Module ID: 14732
+// Function ID: 14733
 // Name: ProductPurchaseSuccessModal
-// Dependencies: [32, 717, 19, 17, 5141, 1072, 21, 5140, 575, 2111, 14730, 7071, 7120, 1113, 1652, 5761, 5370, 5376, 7806, 14732, 5724, 5715, 8820, 14734, 504, 14735, 11658, 9642, 8977, 8813, 5842, 7355, 14736, 9577, 9590, 11533, 11651, 11652, 5751, 7808, 5758, 2]
+// Dependencies: [32, 717, 19, 17, 5141, 1072, 21, 5140, 575, 2111, 14731, 7071, 7120, 1113, 1652, 5761, 5370, 5376, 7806, 14733, 5724, 5715, 8820, 14735, 504, 14736, 11658, 9642, 8977, 8813, 5842, 7355, 14737, 9577, 9590, 11533, 11651, 11652, 5751, 7808, 5758, 2]
 // Exports: default
 
-// Module 14731 (ProductPurchaseSuccessModal)
+// Module 14732 (ProductPurchaseSuccessModal)
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 2111 */;
@@ -12,7 +12,7 @@ import HapticUtils from "HapticUtils" /* 5376 */;
 import _mod7071 from "module_7071" /* 7071 */;
 import XSmallIcon from "XSmallIcon" /* 7120 */;
 import _modDef7806 from "module_7806" /* 7806 */;
-import ProductPurchaseSuccessActionCreatorsDefault from "ProductPurchaseSuccessActionCreators" /* 14730 */;
+import ProductPurchaseSuccessActionCreatorsDefault from "ProductPurchaseSuccessActionCreators" /* 14731 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _toArray from "_toArray" /* 717 */;
 import react from "react" /* 19 */;
@@ -247,7 +247,7 @@ export default function ProductPurchaseSuccessModal(orbBalancePriorToPurchase) {
   const stageCollectibleChangeForEditProfile = orbBalancePriorToPurchase.stageCollectibleChangeForEditProfile;
   let obj = require("useCurrentUser");
   const currentUser = obj.useCurrentUser();
-  const backgroundColors = callback(14732)(product.styles).backgroundColors;
+  const backgroundColors = callback(14733)(product.styles).backgroundColors;
   let tertiary;
   if (backgroundColors != null) {
     tertiary = backgroundColors.tertiary;
@@ -446,7 +446,7 @@ export default function ProductPurchaseSuccessModal(orbBalancePriorToPurchase) {
     const obj8 = { style: tmp6.headerLeading, children: showOrbBalancePill };
     if (showOrbBalancePill) {
       const obj9 = { initialRenderedBalance: prop, balance };
-      showOrbBalancePill = tmp44(tmp2(14736).BalanceWidgetPill, obj9);
+      showOrbBalancePill = tmp44(tmp2(14737).BalanceWidgetPill, obj9);
     }
     items11 = [tmp44(closure_7, obj8), ];
     let toHexStringResult;

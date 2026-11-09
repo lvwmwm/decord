@@ -1,9 +1,9 @@
-// Module ID: 15873
-// Function ID: 15874
+// Module ID: 15883
+// Function ID: 15884
 // Name: LayoutStoreTypes
 // Dependencies: [2]
 
-// Module 15873 (LayoutStoreTypes)
+// Module 15883 (LayoutStoreTypes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("stores/LayoutStoreTypes.tsx");

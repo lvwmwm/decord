@@ -13,7 +13,7 @@ const map = new Map();
 let result = size.fileFinishedImporting("modules/conjure/preview/conjurePreviewAppPublished.tsx");
 
 export function nextConjurePreviewAppPublished(arg0, arg1) {
-  const f100124 = function(arg0) {
+  const f100165 = function(arg0) {
     closure_0 = arg0;
     function onPublished() {
       finish(true);
@@ -51,12 +51,12 @@ export function nextConjurePreviewAppPublished(arg0, arg1) {
 
   }
   let obj = {
-    published: new Promise(f100124),
+    published: new Promise(f100165),
     cancel() {
       return finish(false);
     }
   };
-  new Promise(f100124);
+  new Promise(f100165);
   return obj;
 }
 export function notifyConjurePreviewAppPublished(projectId) {

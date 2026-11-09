@@ -1,10 +1,10 @@
-// Module ID: 16794
-// Function ID: 16795
+// Module ID: 16805
+// Function ID: 16806
 // Name: BadgeGrid
 // Dependencies: [575, 2]
 // Exports: getBadgeTileSize
 
-// Module 16794 (BadgeGrid)
+// Module 16805 (BadgeGrid)
 import nativeDefault from "native" /* 575 */;
 import size from "module_2" /* 2 */;
 

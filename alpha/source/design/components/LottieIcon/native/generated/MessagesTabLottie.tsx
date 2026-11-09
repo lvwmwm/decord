@@ -1,13 +1,13 @@
-// Module ID: 16127
-// Function ID: 16128
+// Module ID: 16137
+// Function ID: 16138
 // Name: MessagesTabLottie
-// Dependencies: [19, 21, 12083, 16128, 2]
+// Dependencies: [19, 21, 12083, 16138, 2]
 // Exports: MessagesTabLottie
 
-// Module 16127 (MessagesTabLottie)
+// Module 16137 (MessagesTabLottie)
 import Fragment from "Fragment" /* 21 */;
 import LottieIcon2 from "LottieIcon" /* 12083 */;
-import AssetRegistry from "AssetRegistry" /* 16128 */;
+import AssetRegistry from "AssetRegistry" /* 16138 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

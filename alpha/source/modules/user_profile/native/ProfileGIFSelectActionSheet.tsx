@@ -1,10 +1,10 @@
-// Module ID: 16762
-// Function ID: 16763
+// Module ID: 16773
+// Function ID: 16774
 // Name: ProfileGIFSelectActionSheet
-// Dependencies: [32, 5, 19, 17, 21, 5140, 575, 7216, 16752, 8811, 8809, 8806, 8808, 7222, 5374, 5388, 7382, 1113, 9612, 10361, 2]
+// Dependencies: [32, 5, 19, 17, 21, 5140, 575, 7216, 16763, 8811, 8809, 8806, 8808, 7222, 5374, 5388, 7382, 1113, 9612, 10361, 2]
 // Exports: default
 
-// Module 16762 (ProfileGIFSelectActionSheet)
+// Module 16773 (ProfileGIFSelectActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
@@ -52,7 +52,7 @@ export default function ProfileGIFSelectActionSheet(arg0) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -194,7 +194,7 @@ export default function ProfileGIFSelectActionSheet(arg0) {
             const obj10 = src(closure_2[14]);
             obj10.hideActionSheet();
             c5 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp53) {
           c5 = 3;

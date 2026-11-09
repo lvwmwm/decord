@@ -1,10 +1,10 @@
-// Module ID: 17153
-// Function ID: 17154
+// Module ID: 17164
+// Function ID: 17165
 // Name: ConnectedApplicationIdentity
-// Dependencies: [5, 32, 19, 17, 21, 5140, 17154, 1113, 1187, 5751, 11532, 6090, 17161, 6162, 1411, 5760, 11079, 8098, 9367, 7039, 7038, 7429, 2]
+// Dependencies: [5, 32, 19, 17, 21, 5140, 17165, 1113, 1187, 5751, 11532, 6090, 17172, 6162, 1411, 5760, 11079, 8098, 9367, 7039, 7038, 7429, 2]
 // Exports: default
 
-// Module 17153 (ConnectedApplicationIdentity)
+// Module 17164 (ConnectedApplicationIdentity)
 import react_native from "react-native" /* 17 */;
 import intl6 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
@@ -160,7 +160,7 @@ export default function ConnectedApplicationIdentity(identity) {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -204,7 +204,7 @@ export default function ConnectedApplicationIdentity(identity) {
               c3 = 0;
             }
             v3 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp17) {
           if (0 === c3) {

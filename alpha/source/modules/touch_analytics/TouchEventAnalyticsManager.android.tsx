@@ -1,11 +1,11 @@
-// Module ID: 16715
-// Function ID: 16716
+// Module ID: 16726
+// Function ID: 16727
 // Name: TouchEventAnalyticsManager
-// Dependencies: [1385, 2122, 16716, 2120, 2]
+// Dependencies: [1385, 2122, 16727, 2120, 2]
 
-// Module 16715 (TouchEventAnalyticsManager)
+// Module 16726 (TouchEventAnalyticsManager)
 import ZoomedInAnalyticsExperiment from "ZoomedInAnalyticsExperiment" /* 2122 */;
-import react_nativeDefault from "react-native" /* 16716 */;
+import react_nativeDefault from "react-native" /* 16727 */;
 import UserStore from "UserStore" /* 1385 */;
 import LifecycleManager from "LifecycleManager" /* 2120 */;
 import size from "module_2" /* 2 */;

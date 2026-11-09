@@ -1,26 +1,26 @@
-// Module ID: 19390
-// Function ID: 19391
+// Module ID: 19403
+// Function ID: 19404
 // Name: DisplayNameStylesV2AbstractUI
-// Dependencies: [19, 21, 19391, 19392, 19393, 7135, 5842, 2]
+// Dependencies: [19, 21, 19404, 19405, 19406, 7135, 5842, 2]
 // Exports: DisplayNameStylesV2AbstractUI
 
-// Module 19390 (DisplayNameStylesV2AbstractUI)
+// Module 19403 (DisplayNameStylesV2AbstractUI)
 import Fragment from "Fragment" /* 21 */;
 import react_native from "react-native" /* 7135 */;
-import _modDef19391 from "module_19391" /* 19391 */;
-import _modDef19392 from "module_19392" /* 19392 */;
-import _modDef19393 from "module_19393" /* 19393 */;
+import _modDef19404 from "module_19404" /* 19404 */;
+import _modDef19405 from "module_19405" /* 19405 */;
+import _modDef19406 from "module_19406" /* 19406 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef19391 };
+let obj2 = { uri: _modDef19404 };
 obj[1] = obj2;
-let obj3 = { uri: _modDef19392 };
+let obj3 = { uri: _modDef19405 };
 obj[2] = obj3;
-obj[3] = { uri: _modDef19393 };
-({ uri: _modDef19393 });
+obj[3] = { uri: _modDef19406 };
+({ uri: _modDef19406 });
 let size = size_mod;
 const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/DisplayNameStylesV2AbstractUI.native.tsx");
 

@@ -1,10 +1,10 @@
-// Module ID: 19918
-// Function ID: 19919
+// Module ID: 19931
+// Function ID: 19932
 // Name: resolveStorefrontCodedLink
-// Dependencies: [32, 5, 6951, 19910, 11708, 5877, 11709, 11710, 10789, 572, 15981, 2]
+// Dependencies: [32, 5, 6951, 19923, 11708, 5877, 11709, 11710, 10789, 572, 15991, 2]
 // Exports: default
 
-// Module 19918 (resolveStorefrontCodedLink)
+// Module 19931 (resolveStorefrontCodedLink)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import SKUStore from "SKUStore" /* 6951 */;
@@ -17,7 +17,7 @@ let result = size.fileFinishedImporting("modules/slayer_storefront/resolveStoref
 
 export default function resolveStorefrontCodedLink(arg0, code) {
   let obj3;
-  const f119726 = function*(arg0, value) {
+  const f119797 = function*(arg0, value) {
     if (c4 === 2) {
       c4 = 3;
       throw new TypeError("Generator functions may not be called on executing generators");
@@ -28,7 +28,7 @@ export default function resolveStorefrontCodedLink(arg0, code) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -67,7 +67,7 @@ export default function resolveStorefrontCodedLink(arg0, code) {
           c3 = 0;
           set.delete(closure_128_0);
           c4 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp20) {
         closure_2 = tmp20;
@@ -111,7 +111,7 @@ export default function resolveStorefrontCodedLink(arg0, code) {
                 const obj2 = { value, done: true };
                 return obj2;
               } else {
-                return { value: "HermesInternal", done: "HermesInternal" };
+                return { value: "HermesInternal", done: null };
               }
             } else {
               try {
@@ -156,7 +156,7 @@ export default function resolveStorefrontCodedLink(arg0, code) {
                     return obj;
                   }
                   obj3 = 3;
-                  return { value: "HermesInternal", done: "HermesInternal" };
+                  return { value: "HermesInternal", done: null };
                 }
               } catch (tmp8) {
                 obj3 = 3;
@@ -168,8 +168,8 @@ export default function resolveStorefrontCodedLink(arg0, code) {
           const tmp13 = _asyncToGenerator;
           if (!set.has(combined)) {
             obj11.add(combined);
-            const tmpResult6 = tmp(19910);
-            const result1 = tmpResult6.queueMessageLinkFetch(tmp13(f119726));
+            const tmpResult6 = tmp(19923);
+            const result1 = tmpResult6.queueMessageLinkFetch(tmp13(f119797));
           }
         }
       }
@@ -197,7 +197,7 @@ export default function resolveStorefrontCodedLink(arg0, code) {
               const obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           } else {
             try {
@@ -245,7 +245,7 @@ export default function resolveStorefrontCodedLink(arg0, code) {
                   return obj;
                 }
                 obj3 = 3;
-                return { value: "HermesInternal", done: "HermesInternal" };
+                return { value: "HermesInternal", done: null };
               }
             } catch (tmp8) {
               obj3 = 3;
@@ -256,8 +256,8 @@ export default function resolveStorefrontCodedLink(arg0, code) {
         let obj7 = set;
         if (!set.has(storefrontCodedLink)) {
           obj7.add(storefrontCodedLink);
-          const tmpResult8 = tmp(19910);
-          const result2 = tmpResult8.queueMessageLinkFetch(tmp8(f119726));
+          const tmpResult8 = tmp(19923);
+          const result2 = tmpResult8.queueMessageLinkFetch(tmp8(f119797));
         }
       }
     }

@@ -1,10 +1,10 @@
-// Module ID: 19598
-// Function ID: 19599
+// Module ID: 19611
+// Function ID: 19612
 // Name: VoicePanelDockGlow
-// Dependencies: [19, 17, 11381, 21, 11362, 1652, 5370, 5724, 575, 19589, 8101, 8915, 1493, 14235, 14234, 14236, 5137, 11389, 5715, 2]
+// Dependencies: [19, 17, 11381, 21, 11362, 1652, 5370, 5724, 575, 19602, 8101, 8915, 1493, 14236, 14235, 14237, 5137, 11389, 5715, 2]
 // Exports: VoicePanelDockBottomLine, VoicePanelDockGlow
 
-// Module 19598 (VoicePanelDockGlow)
+// Module 19611 (VoicePanelDockGlow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1493 */;
@@ -15,9 +15,9 @@ import inlineStyles from "inlineStyles" /* 8101 */;
 import useStateFromSharedValueDefault from "useStateFromSharedValue" /* 8915 */;
 import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11362 */;
 import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11381 */;
-import VoicePanelDockRimLight from "VoicePanelDockRimLight" /* 14234 */;
-import useVoicePanelDockLevelProps from "useVoicePanelDockLevelProps" /* 14235 */;
-import LiveVoiceLevelViewDefault from "LiveVoiceLevelView" /* 14236 */;
+import VoicePanelDockRimLight from "VoicePanelDockRimLight" /* 14235 */;
+import useVoicePanelDockLevelProps from "useVoicePanelDockLevelProps" /* 14236 */;
+import LiveVoiceLevelViewDefault from "LiveVoiceLevelView" /* 14237 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size_mod from "module_2" /* 2 */;
@@ -352,7 +352,7 @@ export function VoicePanelDockBottomLine(micLive) {
     items[2] = obj2.hexWithOpacity(token, 0);
     return items;
   }, items);
-  let obj2 = token(14235);
+  let obj2 = token(14236);
   const voicePanelDockGlowLevelProps = obj2.useVoicePanelDockGlowLevelProps();
   const items1 = [closure_20, getDockInset, dockPressProgress, isDockConnected, wrapperDimensions, , , , , , ];
   const useAnimatedStyle = token(1652).useAnimatedStyle;

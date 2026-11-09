@@ -1,13 +1,13 @@
-// Module ID: 20056
-// Function ID: 20057
+// Module ID: 20069
+// Function ID: 20070
 // Name: editorUtils
-// Dependencies: [32, 20057, 20058, 1282, 6579, 2]
+// Dependencies: [32, 20070, 20071, 1282, 6579, 2]
 // Exports: createDefaultDraftWidgets, filterCatalogWidgetsAtMaxInstances, getWidgetSaveError, isDraftWidgetId, toWidgetConfigUpdateRequest
 
-// Module 20056 (editorUtils)
+// Module 20069 (editorUtils)
 import HTTPUtils from "HTTPUtils" /* 1282 */;
-import guildSpaceWidgetLayout from "guildSpaceWidgetLayout" /* 20057 */;
-import GuildSpaceTypes from "GuildSpaceTypes" /* 20058 */;
+import guildSpaceWidgetLayout from "guildSpaceWidgetLayout" /* 20070 */;
+import GuildSpaceTypes from "GuildSpaceTypes" /* 20071 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 

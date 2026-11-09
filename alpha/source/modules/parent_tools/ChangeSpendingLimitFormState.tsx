@@ -1,12 +1,12 @@
-// Module ID: 17119
-// Function ID: 17120
+// Module ID: 17130
+// Function ID: 17131
 // Name: ChangeSpendingLimitFormState
-// Dependencies: [5, 32, 19, 7791, 17104, 17028, 504, 7478, 17030, 7793, 2]
+// Dependencies: [5, 32, 19, 7791, 17115, 17039, 504, 7478, 17041, 7793, 2]
 // Exports: useChangeSpendingLimitFormState
 
-// Module 17119 (ChangeSpendingLimitFormState)
+// Module 17130 (ChangeSpendingLimitFormState)
 import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7793 */;
-import SpendingLimitUtils from "SpendingLimitUtils" /* 17030 */;
+import SpendingLimitUtils from "SpendingLimitUtils" /* 17041 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -154,7 +154,7 @@ export function useChangeSpendingLimitFormState(teenId, closeChangeSpendingLimit
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -190,7 +190,7 @@ export function useChangeSpendingLimitFormState(teenId, closeChangeSpendingLimit
               }
             }
             c4 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else if (1 === c1) {
           c3 = 0;

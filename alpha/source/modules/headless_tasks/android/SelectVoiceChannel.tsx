@@ -1,13 +1,13 @@
-// Module ID: 20553
-// Function ID: 20554
+// Module ID: 20566
+// Function ID: 20567
 // Name: SelectVoiceChannel
-// Dependencies: [4989, 5893, 20546, 6761, 8008, 5885, 2]
+// Dependencies: [4989, 5893, 20559, 6761, 8008, 5885, 2]
 
-// Module 20553 (SelectVoiceChannel)
+// Module 20566 (SelectVoiceChannel)
 import transitionToChannel from "transitionToChannel" /* 5885 */;
 import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6761 */;
 import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 8008 */;
-import HeadlessTaskUtilsDefault from "HeadlessTaskUtils" /* 20546 */;
+import HeadlessTaskUtilsDefault from "HeadlessTaskUtils" /* 20559 */;
 import ChannelStore from "ChannelStore" /* 4989 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 5893 */;
 import size from "module_2" /* 2 */;

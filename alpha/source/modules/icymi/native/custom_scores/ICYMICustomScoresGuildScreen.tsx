@@ -1,10 +1,10 @@
-// Module ID: 18870
-// Function ID: 18871
+// Module ID: 18883
+// Function ID: 18884
 // Name: ICYMICustomScoresGuildScreen
-// Dependencies: [32, 19, 17, 7781, 4989, 5011, 6830, 8980, 21, 5140, 575, 504, 5776, 8997, 1113, 5374, 18871, 2118, 8674, 7038, 1187, 11205, 5751, 7783, 1627, 18872, 11555, 7357, 2]
+// Dependencies: [32, 19, 17, 7781, 4989, 5011, 6830, 8980, 21, 5140, 575, 504, 5776, 8997, 1113, 5374, 18884, 2118, 8674, 7038, 1187, 11205, 5751, 7783, 1627, 18885, 11555, 7357, 2]
 // Exports: default
 
-// Module 18870 (ICYMICustomScoresGuildScreen)
+// Module 18883 (ICYMICustomScoresGuildScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
@@ -14,7 +14,7 @@ import Text_Text from "Text/Text" /* 5751 */;
 import ChannelListState from "ChannelListState" /* 7783 */;
 import ICYMIUtils from "ICYMIUtils" /* 8997 */;
 import ChevronSmallDownIcon2 from "ChevronSmallDownIcon" /* 11555 */;
-import ICYMIContentSettingControl from "ICYMIContentSettingControl" /* 18872 */;
+import ICYMIContentSettingControl from "ICYMIContentSettingControl" /* 18885 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import ChannelListStore from "ChannelListStore" /* 7781 */;

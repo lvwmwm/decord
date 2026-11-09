@@ -1,15 +1,15 @@
-// Module ID: 15173
-// Function ID: 15174
+// Module ID: 15174
+// Function ID: 15175
 // Name: UserProfileWidgetsBoardTab
-// Dependencies: [19, 17, 21, 8888, 15174, 15175, 15177, 15194, 15195, 15196, 2]
+// Dependencies: [19, 17, 21, 8888, 15175, 15176, 15178, 15192, 15204, 15205, 15206, 2]
 // Exports: default
 
-// Module 15173 (UserProfileWidgetsBoardTab)
+// Module 15174 (UserProfileWidgetsBoardTab)
 import react_native from "react-native" /* 17 */;
 import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 8888 */;
-import MobileWidgetEditingExperiment from "MobileWidgetEditingExperiment" /* 15174 */;
-import useDisplayableBoardWidgets from "useDisplayableBoardWidgets" /* 15175 */;
-import UserProfileWidgetsBoardDefault from "UserProfileWidgetsBoard" /* 15196 */;
+import MobileWidgetEditingExperiment from "MobileWidgetEditingExperiment" /* 15175 */;
+import useDisplayableBoardWidgets from "useDisplayableBoardWidgets" /* 15176 */;
+import UserProfileWidgetsBoardDefault from "UserProfileWidgetsBoard" /* 15206 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -21,43 +21,50 @@ const View = react_native.View;
 ({ jsx: closure_4, Fragment: hasOwnProperty, jsxs: metroRequire } = Fragment);
 const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileWidgetsBoardTab.tsx");
 
-export default function UserProfileWidgetsBoardTab(arg0) {
+export default function UserProfileWidgetsBoardTab(isVisible) {
   let cardStyle;
   let isCurrentUser;
-  let isVisible;
   let userId;
-  ({ userId, isCurrentUser } = arg0);
-  ({ isVisible, cardStyle } = arg0);
+  ({ userId, cardStyle, isCurrentUser } = isVisible);
+  isVisible = isVisible.isVisible;
   const tmp3 = UserProfileSharedStylesDefault();
   const obj = MobileWidgetEditingExperiment;
   const isMobileWidgetEditingEnabled = obj.useIsMobileWidgetEditingEnabled("UserProfileWidgetsBoardTab");
   const obj3 = { style: tmp3.profileContent, children: null };
+  let tmp8 = isCurrentUser;
   const obj2 = useDisplayableBoardWidgets;
+  const tmp5 = obj2.useDisplayableBoardWidgets(userId).length > 0;
+  const tmp7 = View;
+  if (isCurrentUser) {
+    const obj4 = { cardStyle };
+    tmp8 = React3(tmp(15178), obj4);
+  }
+  const items = [tmp8, ];
   if (isCurrentUser) {
     if (isMobileWidgetEditingEnabled) {
-      let tmp8Result;
-      if (obj2.useDisplayableBoardWidgets(userId).length <= 0) {
-        tmp8Result = tmp5(tmp(15177), {});
+      let tmp6Result;
+      if (!tmp5) {
+        tmp6Result = React3(tmp(15192), {});
       }
-      obj3.children = tmp8Result;
-      return React3(tmp6, obj3);
+      items[1] = tmp6Result;
+      obj3.children = items;
+      return metroRequire(tmp7, obj3);
     }
   }
-  let tmp5Result2 = isCurrentUser;
-  const tmp8 = metroRequire;
-  const tmp9 = hasOwnProperty;
+  let tmp13 = isCurrentUser;
+  const tmp12 = hasOwnProperty;
   if (isCurrentUser) {
-    tmp5Result2 = !isMobileWidgetEditingEnabled;
+    tmp13 = !isMobileWidgetEditingEnabled;
   }
-  if (tmp5Result2) {
-    tmp5Result2 = tmp5(tmp(15194), {});
+  if (tmp13) {
+    tmp13 = React3(tmp(15204), {});
   }
-  const items = [tmp5Result2, , ];
+  const items1 = [tmp13, , ];
   if (isCurrentUser) {
-    isCurrentUser = tmp5(tmp(15195), {});
+    isCurrentUser = React3(tmp(15205), {});
   }
-  const obj4 = { children: items };
-  items[1] = isCurrentUser;
-  items[2] = React3(UserProfileWidgetsBoardDefault, { userId, isVisible, cardStyle });
-  tmp8Result = tmp8(tmp9, obj4);
+  const obj5 = { children: items1 };
+  items1[1] = isCurrentUser;
+  items1[2] = React3(UserProfileWidgetsBoardDefault, { userId, isVisible, cardStyle });
+  tmp6Result = tmp6(tmp12, obj5);
 };

@@ -1,9 +1,9 @@
-// Module ID: 14022
-// Function ID: 14023
+// Module ID: 14023
+// Function ID: 14024
 // Name: ForumPostPlaceholder
 // Dependencies: [32, 19, 5141, 21, 5140, 575, 504, 1652, 5370, 7040, 2]
 
-// Module 14022 (ForumPostPlaceholder)
+// Module 14023 (ForumPostPlaceholder)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;

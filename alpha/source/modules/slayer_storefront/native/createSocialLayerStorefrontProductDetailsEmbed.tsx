@@ -1,10 +1,10 @@
-// Module ID: 15397
-// Function ID: 15398
+// Module ID: 15407
+// Function ID: 15408
 // Name: createSocialLayerStorefrontProductDetailsEmbed
-// Dependencies: [17, 2162, 7848, 9555, 502, 1385, 6951, 7956, 10238, 1387, 8465, 1113, 14415, 7473, 7468, 3896, 15395, 11707, 2171, 7480, 9617, 15396, 9553, 9620, 11709, 2]
+// Dependencies: [17, 2162, 7848, 9555, 502, 1385, 6951, 7956, 10238, 1387, 8465, 1113, 14416, 7473, 7468, 3896, 15405, 11707, 2171, 7480, 9617, 15406, 9553, 9620, 11709, 2]
 // Exports: createSocialLayerStorefrontProductDetailsEmbed
 
-// Module 15397 (createSocialLayerStorefrontProductDetailsEmbed)
+// Module 15407 (createSocialLayerStorefrontProductDetailsEmbed)
 import react_native from "react-native" /* 17 */;
 import intl6 from "intl" /* 1113 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
@@ -17,9 +17,9 @@ import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8465 */;
 import CodedLinksConstants from "CodedLinksConstants" /* 10238 */;
 import socialLayerStorefrontEmbedPrice2 from "socialLayerStorefrontEmbedPrice" /* 11707 */;
 import SocialLayerStorefrontMobileEmbedExperiment from "SocialLayerStorefrontMobileEmbedExperiment" /* 11709 */;
-import isSocialLayerApplicationDefault from "isSocialLayerApplication" /* 14415 */;
-import getSocialLayerStorefrontSkuEmbedDetails from "getSocialLayerStorefrontSkuEmbedDetails" /* 15395 */;
-import socialLayerStorefrontEmbedColors from "socialLayerStorefrontEmbedColors" /* 15396 */;
+import isSocialLayerApplicationDefault from "isSocialLayerApplication" /* 14416 */;
+import getSocialLayerStorefrontSkuEmbedDetails from "getSocialLayerStorefrontSkuEmbedDetails" /* 15405 */;
+import socialLayerStorefrontEmbedColors from "socialLayerStorefrontEmbedColors" /* 15406 */;
 import ApplicationStore from "ApplicationStore" /* 2162 */;
 import UserProfileStore from "UserProfileStore" /* 7848 */;
 import WishlistStore from "WishlistStore" /* 9555 */;

@@ -1,10 +1,10 @@
-// Module ID: 20319
-// Function ID: 20320
+// Module ID: 20332
+// Function ID: 20333
 // Name: useFetchHighlightedCreatorGuildDetails
 // Dependencies: [5, 32, 19, 7494, 2]
 // Exports: default
 
-// Module 20319 (useFetchHighlightedCreatorGuildDetails)
+// Module 20332 (useFetchHighlightedCreatorGuildDetails)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -40,7 +40,7 @@ export default function useFetchHighlightedCreatorGuildDetails(arg0) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c4;
@@ -92,7 +92,7 @@ export default function useFetchHighlightedCreatorGuildDetails(arg0) {
           c4 = 0;
           closure_1(false);
           c6 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp33) {
         if (0 === c4) {

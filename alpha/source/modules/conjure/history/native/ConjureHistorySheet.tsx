@@ -554,7 +554,7 @@ export default function ConjureHistorySheet(projectId) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c5;
@@ -605,7 +605,7 @@ export default function ConjureHistorySheet(projectId) {
             tmp();
           }
           c7 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp29) {
         closure_4 = tmp29;
@@ -658,7 +658,7 @@ export default function ConjureHistorySheet(projectId) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -712,7 +712,7 @@ export default function ConjureHistorySheet(projectId) {
               presentError(string(uyjFNZ));
             }
             c3 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp38) {
           c3 = 3;

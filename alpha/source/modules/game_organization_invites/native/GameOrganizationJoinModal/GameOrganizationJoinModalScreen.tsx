@@ -1,10 +1,10 @@
-// Module ID: 13447
-// Function ID: 13448
+// Module ID: 13448
+// Function ID: 13449
 // Name: GameOrganizationJoinModalScreen
 // Dependencies: [19, 17, 21, 5140, 1627, 8041, 8042, 575, 5714, 2]
 // Exports: default
 
-// Module 13447 (GameOrganizationJoinModalScreen)
+// Module 13448 (GameOrganizationJoinModalScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;

@@ -1,19 +1,19 @@
-// Module ID: 19243
-// Function ID: 19244
+// Module ID: 19256
+// Function ID: 19257
 // Name: ChannelDetailsNavigator
-// Dependencies: [19, 17, 4989, 10258, 1072, 19053, 21, 9976, 563, 7507, 14250, 9902, 1113, 14621, 1252, 8268, 19244, 7231, 7070, 5315, 19304, 1377, 19305, 19306, 9987, 9988, 10011, 19307, 19308, 19134, 19206, 2]
+// Dependencies: [19, 17, 4989, 10258, 1072, 19066, 21, 9976, 563, 7507, 14251, 9902, 1113, 14622, 1252, 8268, 19257, 7231, 7070, 5315, 19317, 1377, 19318, 19319, 9987, 9988, 10011, 19320, 19321, 19147, 19219, 2]
 
-// Module 19243 (ChannelDetailsNavigator)
+// Module 19256 (ChannelDetailsNavigator)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import HeaderShared from "HeaderShared" /* 9902 */;
 import ChannelDetailsConstants from "ChannelDetailsConstants" /* 10258 */;
-import navigateToThreadCreation from "navigateToThreadCreation" /* 14250 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14621 */;
-import SearchNavigatorConstants from "SearchNavigatorConstants" /* 19053 */;
-import ChannelSettingsModal from "ChannelSettingsModal" /* 19244 */;
+import navigateToThreadCreation from "navigateToThreadCreation" /* 14251 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14622 */;
+import SearchNavigatorConstants from "SearchNavigatorConstants" /* 19066 */;
+import ChannelSettingsModal from "ChannelSettingsModal" /* 19257 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4989 */;
 import Fragment from "Fragment" /* 21 */;

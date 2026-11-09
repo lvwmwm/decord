@@ -1,9 +1,9 @@
-// Module ID: 14177
-// Function ID: 14178
+// Module ID: 14178
+// Function ID: 14179
 // Name: AutocompleteWrapper
-// Dependencies: [32, 19, 17, 8416, 6851, 6623, 6892, 1072, 6167, 10344, 6168, 10428, 1388, 21, 8752, 7270, 10439, 5140, 1377, 575, 14178, 1493, 5735, 5714, 504, 5724, 5883, 14185, 14186, 4965, 7125, 10427, 14187, 10343, 6953, 10062, 14188, 7776, 13987, 2116, 7901, 1625, 5889, 9223, 9699, 9224, 14189, 14190, 9875, 8671, 14025, 1652, 14191, 5807, 14198, 5751, 1113, 7357, 8252, 14199, 14200, 2]
+// Dependencies: [32, 19, 17, 8416, 6851, 6623, 6892, 1072, 6167, 10344, 6168, 10428, 1388, 21, 8752, 7270, 10439, 5140, 1377, 575, 14179, 1493, 5735, 5714, 504, 5724, 5883, 14186, 14187, 4965, 7125, 10427, 14188, 10343, 6953, 10062, 14189, 7776, 13988, 2116, 7901, 1625, 5889, 9223, 9699, 9224, 14190, 14191, 9875, 8671, 14026, 1652, 14192, 5807, 14199, 5751, 1113, 7357, 8252, 14200, 14201, 2]
 
-// Module 14177 (AutocompleteWrapper)
+// Module 14178 (AutocompleteWrapper)
 import nativeDefault from "native" /* 575 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import EmojiConstants from "EmojiConstants" /* 1388 */;
@@ -21,8 +21,8 @@ import autocompleter_AutocompleteUtils from "autocompleter/AutocompleteUtils" /*
 import AutocompleteOptions from "AutocompleteOptions" /* 10427 */;
 import channel_text_area_ChannelAutocompleteConstants from "channel_text_area/ChannelAutocompleteConstants" /* 10428 */;
 import TimestampSuggestionUtils from "TimestampSuggestionUtils" /* 10439 */;
-import Autocomplete from "Autocomplete" /* 14178 */;
-import ChannelAutocompleteAnalytics from "ChannelAutocompleteAnalytics" /* 14189 */;
+import Autocomplete from "Autocomplete" /* 14179 */;
+import ChannelAutocompleteAnalytics from "ChannelAutocompleteAnalytics" /* 14190 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -58,7 +58,7 @@ let map1;
 let metroRequire;
 let tmp;
 let unpackModuleId;
-const application_commands_ApplicationCommandUtils = tmp(14025);
+const application_commands_ApplicationCommandUtils = tmp(14026);
 function getItemKey(type, arg1) {
   type = type.type;
   if (unpackModuleId.USER === type) {
@@ -168,7 +168,7 @@ class ACWrapper {
     let tmp38;
     let tmp46;
     let tmp95Result4;
-    const f107016 = (arg0) => {
+    const f107058 = (arg0) => {
       closure_0 = arg0;
       if (arg0 > 0) {
         let tmp = commandsDisabled;
@@ -609,7 +609,7 @@ class ACWrapper {
       let tmp35 = tmp34[1](autocompleteType);
       tmp33(null);
     }
-    const items7 = [first2, obj5.useCallback(f107016, [])];
+    const items7 = [first2, obj5.useCallback(f107058, [])];
     [tmp38, c42] = keyboardType(items7, 2);
     keyboardType(items7, 2);
     const tmp11Result9 = keyboardType(obj5.useState(null), 2);
@@ -621,7 +621,7 @@ class ACWrapper {
       tmp11Result10[1](autocompleteType);
       tmp41(null);
     }
-    const items8 = [first3, obj5.useCallback(f107016, [])];
+    const items8 = [first3, obj5.useCallback(f107058, [])];
     [tmp46, c43] = keyboardType(items8, 2);
     keyboardType(items8, 2);
     const tmp11Result12 = keyboardType(obj5.useState(null), 2);
@@ -633,7 +633,7 @@ class ACWrapper {
       let tmp51 = tmp11Result13[1](autocompleteType);
       tmp49(null);
     }
-    const items9 = [first4, obj5.useCallback(f107016, [])];
+    const items9 = [first4, obj5.useCallback(f107058, [])];
     const tmp11Result14 = keyboardType(items9, 2);
     first5 = tmp11Result14[0];
     closure_45 = tmp11Result14[1];

@@ -35,7 +35,7 @@ export default function useShowUnlinkChannelAlert(arg0, applicationName, arg2) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -81,7 +81,7 @@ export default function useShowUnlinkChannelAlert(arg0, applicationName, arg2) {
             c3 = 0;
           }
           c4 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp21) {
         closure_2 = tmp21;

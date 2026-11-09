@@ -1,10 +1,10 @@
-// Module ID: 17896
-// Function ID: 17897
+// Module ID: 17907
+// Function ID: 17908
 // Name: DevToolsAnalyticsScreen
-// Dependencies: [32, 19, 17, 1385, 16533, 1072, 21, 5140, 575, 5751, 7038, 10382, 2166, 9281, 7043, 7418, 5855, 504, 7357, 6159, 7126, 7429, 12685, 5862, 17891, 7282, 2]
+// Dependencies: [32, 19, 17, 1385, 16543, 1072, 21, 5140, 575, 5751, 7038, 10382, 2166, 9281, 7043, 7418, 5855, 504, 7357, 6159, 7126, 7429, 12685, 5862, 17902, 7282, 2]
 // Exports: default
 
-// Module 17896 (DevToolsAnalyticsScreen)
+// Module 17907 (DevToolsAnalyticsScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -14,7 +14,7 @@ import ClipboardUtils from "ClipboardUtils" /* 7418 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1385 */;
-import AnalyticsLogStore from "AnalyticsLogStore" /* 16533 */;
+import AnalyticsLogStore from "AnalyticsLogStore" /* 16543 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
@@ -227,7 +227,7 @@ export default function DevToolsAnalyticsScreen() {
   const obj4 = { icon: closure_8(trimmed(12685).ArrowsUpDownIcon, {}), label: "Reverse Events", value: first, onValueChange: tmp7 };
   const TableSwitchRow = tmp2(7429).TableSwitchRow;
   items2 = [closure_8(TableSwitchRow, obj4), ];
-  const obj5 = { arrow: true, variant: "danger", icon: closure_8(trimmed(5862).TrashIcon, { color: "text-feedback-critical" }), label: "Clear Analytics Log", onPress: trimmed(17891).clearAnalyticsLog };
+  const obj5 = { arrow: true, variant: "danger", icon: closure_8(trimmed(5862).TrashIcon, { color: "text-feedback-critical" }), label: "Clear Analytics Log", onPress: trimmed(17902).clearAnalyticsLog };
   const TableRow = tmp2(7038).TableRow;
   items2[1] = closure_8(TableRow, obj5);
   const items3 = [closure_9(TableRowGroup, obj3), , ];

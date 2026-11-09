@@ -1,17 +1,17 @@
-// Module ID: 20393
-// Function ID: 20394
+// Module ID: 20406
+// Function ID: 20407
 // Name: GuildRoleSubscriptionTierTemplateBasicInfo
-// Dependencies: [19, 17, 21, 5140, 575, 5842, 5751, 17530, 5758, 1113, 2]
+// Dependencies: [19, 17, 21, 5140, 575, 5842, 5751, 17541, 5758, 1113, 2]
 // Exports: GuildRoleSubscriptionTierTemplateBasicInfo
 
-// Module 20393 (GuildRoleSubscriptionTierTemplateBasicInfo)
+// Module 20406 (GuildRoleSubscriptionTierTemplateBasicInfo)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import Text_Text from "Text/Text" /* 5751 */;
 import components_Button_Button from "components/Button/Button" /* 5758 */;
 import FastImageDefault from "FastImage" /* 5842 */;
-import GuildRoleSubscriptionTypeUtils from "GuildRoleSubscriptionTypeUtils" /* 17530 */;
+import GuildRoleSubscriptionTypeUtils from "GuildRoleSubscriptionTypeUtils" /* 17541 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5140 */;

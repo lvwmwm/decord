@@ -1,10 +1,10 @@
-// Module ID: 16001
-// Function ID: 16002
+// Module ID: 16011
+// Function ID: 16012
 // Name: ActivateDeviceModal
-// Dependencies: [19, 21, 16000, 7630, 8429, 1113, 16002, 7231, 2]
+// Dependencies: [19, 21, 16010, 7630, 8429, 1113, 16012, 7231, 2]
 // Exports: default
 
-// Module 16001 (ActivateDeviceModal)
+// Module 16011 (ActivateDeviceModal)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

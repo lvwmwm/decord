@@ -1,10 +1,10 @@
-// Module ID: 18754
-// Function ID: 18755
+// Module ID: 18767
+// Function ID: 18768
 // Name: useInterestCoverColor
 // Dependencies: [5, 32, 19, 5147, 1453, 671, 1490, 2]
 // Exports: coverArtColor, default
 
-// Module 18754 (useInterestCoverColor)
+// Module 18767 (useInterestCoverColor)
 import _modDef671 from "module_671" /* 671 */;
 import LRUCacheDefault from "LRUCache" /* 1453 */;
 import shared from "shared" /* 5147 */;
@@ -81,7 +81,7 @@ function fetchInterestCoverColor(arg0, uri) {
           obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c2;
@@ -206,7 +206,7 @@ export default function useInterestCoverColor(arg0, arg1) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -243,7 +243,7 @@ export default function useInterestCoverColor(arg0, arg1) {
                 c2(obj);
               }
               c3 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp16) {
             c3 = 3;

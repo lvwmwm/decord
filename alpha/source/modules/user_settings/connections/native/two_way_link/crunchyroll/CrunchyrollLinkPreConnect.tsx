@@ -1,15 +1,15 @@
-// Module ID: 14886
-// Function ID: 14887
+// Module ID: 14887
+// Function ID: 14888
 // Name: CrunchyrollLinkPreConnect
-// Dependencies: [19, 14883, 1072, 8983, 21, 5140, 1499, 9824, 14887, 1113, 2]
+// Dependencies: [19, 14884, 1072, 8983, 21, 5140, 1499, 9824, 14888, 1113, 2]
 // Exports: default
 
-// Module 14886 (CrunchyrollLinkPreConnect)
+// Module 14887 (CrunchyrollLinkPreConnect)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import CrunchyrollConnectionConstants from "CrunchyrollConnectionConstants" /* 8983 */;
-import CrunchyrollLinkConstants from "CrunchyrollLinkConstants" /* 14883 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14887 */;
+import CrunchyrollLinkConstants from "CrunchyrollLinkConstants" /* 14884 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14888 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;

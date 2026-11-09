@@ -1,10 +1,10 @@
-// Module ID: 19981
-// Function ID: 19982
+// Module ID: 19994
+// Function ID: 19995
 // Name: ConnectGuardianShareModal
-// Dependencies: [19, 17, 7791, 21, 5140, 575, 1113, 2664, 5836, 6799, 13590, 563, 17091, 8041, 8043, 6159, 5751, 17092, 7015, 7064, 11627, 2]
+// Dependencies: [19, 17, 7791, 21, 5140, 575, 1113, 2664, 5836, 6799, 13591, 563, 17102, 8041, 8043, 6159, 5751, 17103, 7015, 7064, 11627, 2]
 // Exports: default
 
-// Module 19981 (ConnectGuardianShareModal)
+// Module 19994 (ConnectGuardianShareModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
@@ -12,7 +12,7 @@ import _modDef2664 from "module_2664" /* 2664 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6799 */;
 import NavigatorHeader from "NavigatorHeader" /* 7064 */;
 import Modal2 from "Modal" /* 11627 */;
-import useOnNewPendingRequestDefault from "useOnNewPendingRequest" /* 17091 */;
+import useOnNewPendingRequestDefault from "useOnNewPendingRequest" /* 17102 */;
 import react from "react" /* 19 */;
 import FamilyCenterStore from "FamilyCenterStore" /* 7791 */;
 import Fragment from "Fragment" /* 21 */;
@@ -40,7 +40,7 @@ function ConnectGuardianShareScreen() {
     const arr = ModalActionCreatorsDefault;
     arr.pop();
   }, []);
-  const obj2 = getLinkCode(13590);
+  const obj2 = getLinkCode(13591);
   getLinkCode = obj2.useFamilyCenterActions({ onError: callback }).getLinkCode;
   const items = [FamilyCenterStore];
   const obj3 = getLinkCode(563);
@@ -78,7 +78,7 @@ function ConnectGuardianShareScreen() {
     let tmp11Result;
     if (null != stateFromStores1) {
       const obj11 = { shareActions: "full", linkCode: stateFromStores, expiresAt: stateFromStores1, onRefresh: getLinkCode };
-      tmp11Result = tmp11(tmp2(17092).ConnectGuardianCard, obj11);
+      tmp11Result = tmp11(tmp2(17103).ConnectGuardianCard, obj11);
     }
     const obj12 = { children: closure_6(ModalContent, obj13) };
     items4[1] = tmp11Result;

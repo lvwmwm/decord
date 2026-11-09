@@ -1,11 +1,11 @@
-// Module ID: 19106
-// Function ID: 19107
+// Module ID: 19119
+// Function ID: 19120
 // Name: snowballStemmer
-// Dependencies: [19107, 2]
+// Dependencies: [19120, 2]
 // Exports: snowballStem
 
-// Module 19106 (snowballStemmer)
-import stem from "stem" /* 19107 */;
+// Module 19119 (snowballStemmer)
+import stem from "stem" /* 19120 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("lib/search/snowballStemmer.tsx");

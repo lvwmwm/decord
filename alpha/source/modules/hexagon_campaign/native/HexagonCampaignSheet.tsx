@@ -1,10 +1,10 @@
-// Module ID: 17313
-// Function ID: 17314
+// Module ID: 17324
+// Function ID: 17325
 // Name: HexagonCampaignSheet
-// Dependencies: [5, 32, 19, 17, 1193, 1385, 16529, 5165, 5389, 10101, 1240, 1083, 21, 1395, 1396, 9370, 5140, 575, 5168, 504, 7387, 7412, 15615, 5167, 9069, 1627, 2171, 10102, 16768, 6839, 17314, 5837, 1113, 5374, 17312, 4411, 10855, 5751, 17319, 5388, 7382, 16790, 5758, 17320, 7126, 7429, 17321, 2]
+// Dependencies: [5, 32, 19, 17, 1193, 1385, 16539, 5165, 5389, 10101, 1240, 1083, 21, 1395, 1396, 9370, 5140, 575, 5168, 504, 7387, 7412, 15625, 5167, 9069, 1627, 2171, 10102, 16779, 6839, 17325, 5837, 1113, 5374, 17323, 4411, 10855, 5751, 17330, 5388, 7382, 16801, 5758, 17331, 7126, 7429, 17332, 2]
 // Exports: default
 
-// Module 17313 (HexagonCampaignSheet)
+// Module 17324 (HexagonCampaignSheet)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
 import ClientThemesConstants from "ClientThemesConstants" /* 1240 */;
@@ -19,7 +19,7 @@ import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1193 */;
 import UserStore from "UserStore" /* 1385 */;
-import HexagonCampaignPersistedStore from "HexagonCampaignPersistedStore" /* 16529 */;
+import HexagonCampaignPersistedStore from "HexagonCampaignPersistedStore" /* 16539 */;
 import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5165 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5140 */;
@@ -187,7 +187,7 @@ export default function HexagonCampaignSheet() {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -265,7 +265,7 @@ export default function HexagonCampaignSheet() {
             }
           }
           c4 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp57) {
           if (0 === analyticsLocations) {
             c4 = 3;

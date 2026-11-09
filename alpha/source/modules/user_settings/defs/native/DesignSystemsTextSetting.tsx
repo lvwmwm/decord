@@ -1,9 +1,9 @@
-// Module ID: 18077
-// Function ID: 18078
+// Module ID: 18090
+// Function ID: 18091
 // Name: DesignSystemsTextSetting
-// Dependencies: [8503, 1072, 11685, 18078, 2]
+// Dependencies: [8503, 1072, 11685, 18091, 2]
 
-// Module 18077 (DesignSystemsTextSetting)
+// Module 18090 (DesignSystemsTextSetting)
 import Constants from "Constants" /* 1072 */;
 import SettingsConstants from "SettingsConstants" /* 8503 */;
 import SettingBuilders from "SettingBuilders" /* 11685 */;

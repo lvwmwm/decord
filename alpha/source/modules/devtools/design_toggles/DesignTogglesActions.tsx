@@ -1,10 +1,10 @@
-// Module ID: 18035
-// Function ID: 18036
+// Module ID: 18044
+// Function ID: 18045
 // Name: DesignTogglesActions
 // Dependencies: [7067, 572, 2]
 // Exports: clearAll, toggle
 
-// Module 18035 (DesignTogglesActions)
+// Module 18044 (DesignTogglesActions)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import DesignTogglesStore from "DesignTogglesStore" /* 7067 */;
 import size from "module_2" /* 2 */;

@@ -1,16 +1,16 @@
-// Module ID: 16759
-// Function ID: 16760
+// Module ID: 16770
+// Function ID: 16771
 // Name: SaturationValueColorPicker
-// Dependencies: [32, 19, 17, 21, 5140, 575, 1652, 16757, 1705, 5715, 5420, 2]
+// Dependencies: [32, 19, 17, 21, 5140, 575, 1652, 16768, 1705, 5715, 5420, 2]
 // Exports: default
 
-// Module 16759 (SaturationValueColorPicker)
+// Module 16770 (SaturationValueColorPicker)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1652 from "module_1652" /* 1652 */;
 import LegacyBaseButton from "LegacyBaseButton" /* 5420 */;
 import LinearGradientDefault from "LinearGradient" /* 5715 */;
-import ColorPickerUtils from "ColorPickerUtils" /* 16757 */;
+import ColorPickerUtils from "ColorPickerUtils" /* 16768 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

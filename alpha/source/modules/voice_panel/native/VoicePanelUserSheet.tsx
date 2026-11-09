@@ -1,16 +1,16 @@
-// Module ID: 19626
-// Function ID: 19627
+// Module ID: 19639
+// Function ID: 19640
 // Name: VoicePanelUserSheet
-// Dependencies: [19, 17, 4989, 5082, 1385, 1072, 21, 5140, 575, 7387, 7412, 15054, 8832, 504, 13914, 4965, 5817, 15053, 8821, 1113, 15063, 7549, 1652, 9996, 9846, 6173, 15130, 19625, 9606, 5388, 1187, 5842, 5751, 15076, 15133, 2]
+// Dependencies: [19, 17, 4989, 5082, 1385, 1072, 21, 5140, 575, 7387, 7412, 15055, 8832, 504, 13915, 4965, 5817, 15054, 8821, 1113, 15064, 7549, 1652, 9996, 9846, 6173, 15131, 19638, 9606, 5388, 1187, 5842, 5751, 15077, 15134, 2]
 // Exports: default
 
-// Module 19626 (VoicePanelUserSheet)
+// Module 19639 (VoicePanelUserSheet)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7549 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8821 */;
-import UserProfileActivity from "UserProfileActivity" /* 15076 */;
-import VoicePanelUserActionCreators from "VoicePanelUserActionCreators" /* 19625 */;
+import UserProfileActivity from "UserProfileActivity" /* 15077 */;
+import VoicePanelUserActionCreators from "VoicePanelUserActionCreators" /* 19638 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ChannelStore from "ChannelStore" /* 4989 */;
@@ -202,7 +202,7 @@ export default function VoicePanelUserSheet(userId) {
   const stateFromStores2 = obj4.useStateFromStores(items2, () => currentUser.getCurrentUser());
   const obj5 = channelId(6173);
   const name = obj5.useName(guildId, channelId, stateFromStores);
-  const live = userId(15130)(userId).live;
+  const live = userId(15131)(userId).live;
   let closure_5 = tmp8;
   const items3 = [null == stateFromStores || null == stateFromStores1 || null == stateFromStores2];
   const effect = stateFromStores.useEffect(() => {
@@ -258,7 +258,7 @@ export default function VoicePanelUserSheet(userId) {
 
         ];
         const obj12 = { user: stateFromStores, channel: stateFromStores1, currentUser: stateFromStores2, style: tmp.card };
-        items6[2] = closure_10(userId(15133), obj12);
+        items6[2] = closure_10(userId(15134), obj12);
         return closure_10(BottomSheet, obj9);
       }
     }

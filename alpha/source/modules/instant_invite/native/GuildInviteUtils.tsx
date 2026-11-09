@@ -1,10 +1,10 @@
-// Module ID: 15047
-// Function ID: 15048
+// Module ID: 15048
+// Function ID: 15049
 // Name: GuildInviteUtils
-// Dependencies: [5, 19, 5070, 5358, 5052, 5011, 5072, 6827, 1385, 15048, 7956, 1072, 1252, 5374, 15049, 2118, 6954, 504, 5149, 1113, 9025, 9200, 9280, 2]
+// Dependencies: [5, 19, 5070, 5358, 5052, 5011, 5072, 6827, 1385, 15049, 7956, 1072, 1252, 5374, 15050, 2118, 6954, 504, 5149, 1113, 9025, 9200, 9280, 2]
 // Exports: sendGuildInvite, showGuildInviteActionSheet, useServerInviteRows
 
-// Module 15047 (GuildInviteUtils)
+// Module 15048 (GuildInviteUtils)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import asyncRequire from "asyncRequire" /* 2118 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
@@ -12,7 +12,7 @@ import fuzzysearchDefault from "fuzzysearch" /* 6954 */;
 import Constants2 from "Constants" /* 7956 */;
 import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 9025 */;
 import InstantInviteUtilsDefault from "InstantInviteUtils" /* 9200 */;
-import GuildInviteSendStateStore from "GuildInviteSendStateStore" /* 15048 */;
+import GuildInviteSendStateStore from "GuildInviteSendStateStore" /* 15049 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import GuildChannelStore from "GuildChannelStore" /* 5070 */;
@@ -46,7 +46,7 @@ let obj = function _sendGuildInvite() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c5;
@@ -117,7 +117,7 @@ let obj = function _sendGuildInvite() {
             c5 = 0;
           }
           c7 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp19) {
         if (0 === c5) {
@@ -143,7 +143,7 @@ export function showGuildInviteActionSheet(id2, newestAnalyticsLocation) {
   const openLazy = ActionSheetActionCreatorsDefault.openLazy;
   ActionSheetActionCreatorsDefault;
   const obj3 = { recipientId: id2, source: newestAnalyticsLocation };
-  const tmp3 = asyncRequire(15049, dependencyMap.paths);
+  const tmp3 = asyncRequire(15050, dependencyMap.paths);
   openLazy(tmp3, "invite-to-guilds-" + id2, obj3);
 }
 export function useServerInviteRows(id, query) {

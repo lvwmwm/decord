@@ -1,10 +1,10 @@
-// Module ID: 14812
-// Function ID: 14813
+// Module ID: 14813
+// Function ID: 14814
 // Name: ChatLoadingIndicator
-// Dependencies: [32, 19, 17, 5141, 6623, 6194, 5043, 1385, 2117, 1072, 21, 5140, 575, 6091, 6162, 2118, 504, 5751, 14813, 1652, 5370, 1113, 7043, 2]
+// Dependencies: [32, 19, 17, 5141, 6623, 6194, 5043, 1385, 2117, 1072, 21, 5140, 575, 6091, 6162, 2118, 504, 5751, 14814, 1652, 5370, 1113, 7043, 2]
 // Exports: ChannelHeaderLoadingIndicator, useShouldChannelShowLoadingIndicator
 
-// Module 14812 (ChatLoadingIndicator)
+// Module 14813 (ChatLoadingIndicator)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;

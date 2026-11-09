@@ -141,7 +141,7 @@ obj = function _redirectDeveloperPortalWithHandoffToken() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -184,7 +184,7 @@ obj = function _redirectDeveloperPortalWithHandoffToken() {
             const obj5 = closure_131_1(closure_131_2[10]);
             obj5.performURLNavigation(uRL.href);
             c5 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp6) {
           c5 = 3;

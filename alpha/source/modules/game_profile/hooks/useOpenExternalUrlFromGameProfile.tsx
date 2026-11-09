@@ -29,7 +29,7 @@ let obj = function _getDeepLinkUrl() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -151,7 +151,7 @@ export default function useOpenExternalUrlFromGameProfile(arg0) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -188,7 +188,7 @@ export default function useOpenExternalUrlFromGameProfile(arg0) {
         } else if (1 === c4) {
           c3 = 0;
           c5 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } else if (arg0 === 1) {
           c5 = 3;
           throw value;
@@ -214,7 +214,7 @@ export default function useOpenExternalUrlFromGameProfile(arg0) {
           }
         }
         c5 = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp35) {
         if (0 === c3) {
           c5 = 3;

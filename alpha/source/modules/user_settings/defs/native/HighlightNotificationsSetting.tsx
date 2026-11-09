@@ -1,10 +1,10 @@
-// Module ID: 17834
-// Function ID: 17835
+// Module ID: 17845
+// Function ID: 17846
 // Name: HighlightNotificationsSetting
-// Dependencies: [5011, 8503, 1072, 504, 11685, 1113, 17835, 2]
+// Dependencies: [5011, 8503, 1072, 504, 11685, 1113, 17846, 2]
 // Exports: useHighlightNotifications
 
-// Module 17834 (HighlightNotificationsSetting)
+// Module 17845 (HighlightNotificationsSetting)
 import get_initialized from "get initialized" /* 504 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;

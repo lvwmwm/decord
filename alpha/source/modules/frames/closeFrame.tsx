@@ -1,14 +1,14 @@
-// Module ID: 14632
-// Function ID: 14633
+// Module ID: 14633
+// Function ID: 14634
 // Name: closeFrame
-// Dependencies: [6901, 14633, 5799, 14634, 11015, 2]
+// Dependencies: [6901, 14634, 5799, 14635, 11015, 2]
 // Exports: default
 
-// Module 14632 (closeFrame)
+// Module 14633 (closeFrame)
 import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5799 */;
 import leaveFrame from "leaveFrame" /* 11015 */;
-import closeFramePopoutDefault from "closeFramePopout" /* 14633 */;
-import VoiceChannelAppActionCreators from "VoiceChannelAppActionCreators" /* 14634 */;
+import closeFramePopoutDefault from "closeFramePopout" /* 14634 */;
+import VoiceChannelAppActionCreators from "VoiceChannelAppActionCreators" /* 14635 */;
 import FramesStore from "FramesStore" /* 6901 */;
 import size from "module_2" /* 2 */;
 

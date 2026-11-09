@@ -1,10 +1,10 @@
-// Module ID: 14056
-// Function ID: 14057
+// Module ID: 14057
+// Function ID: 14058
 // Name: useShowConvoStarterInDM
 // Dependencies: [19, 6911, 6194, 5082, 1385, 1072, 4996, 11397, 504, 2]
 // Exports: useShowConvoStarterInDM
 
-// Module 14056 (useShowConvoStarterInDM)
+// Module 14057 (useShowConvoStarterInDM)
 import react from "react" /* 19 */;
 import ChannelConstants from "ChannelConstants" /* 4996 */;
 import MessageRequestStore from "MessageRequestStore" /* 6911 */;

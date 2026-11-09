@@ -352,7 +352,7 @@ function BaseEmbeddedAppWebViewContent(deepLinkQueryParams) {
                 const obj2 = { value, done: true };
                 return obj2;
               } else {
-                return { value: "HermesInternal", done: "HermesInternal" };
+                return { value: "HermesInternal", done: null };
               }
             } else {
               let c7;
@@ -460,7 +460,7 @@ function BaseEmbeddedAppWebViewContent(deepLinkQueryParams) {
                   c7 = 0;
                 }
                 c9 = 3;
-                return { value: "HermesInternal", done: "HermesInternal" };
+                return { value: "HermesInternal", done: null };
               } catch (tmp31) {
                 closure_6 = tmp31;
                 if (0 === c7) {

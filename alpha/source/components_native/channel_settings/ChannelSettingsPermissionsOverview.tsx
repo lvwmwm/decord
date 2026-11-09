@@ -1,10 +1,10 @@
-// Module ID: 19270
-// Function ID: 19271
+// Module ID: 19283
+// Function ID: 19284
 // Name: ChannelSettingsPermissionsOverview
-// Dependencies: [32, 5, 19, 17, 5047, 4989, 5046, 5011, 5082, 1385, 1072, 21, 5140, 575, 6090, 1113, 5776, 5077, 11805, 9113, 8268, 12, 7126, 7038, 12391, 1499, 11629, 10352, 17615, 504, 2116, 10938, 19271, 7658, 9902, 7549, 1652, 2]
+// Dependencies: [32, 5, 19, 17, 5047, 4989, 5046, 5011, 5082, 1385, 1072, 21, 5140, 575, 6090, 1113, 5776, 5077, 11805, 9113, 8268, 12, 7126, 7038, 12391, 1499, 11629, 10352, 17626, 504, 2116, 10938, 19284, 7658, 9902, 7549, 1652, 2]
 // Exports: default
 
-// Module 19270 (ChannelSettingsPermissionsOverview)
+// Module 19283 (ChannelSettingsPermissionsOverview)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
@@ -16,8 +16,8 @@ import TableRow3 from "TableRow" /* 7038 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7549 */;
 import RoleLabel from "RoleLabel" /* 10352 */;
 import DetailedGuildIdentityUserRowDefault from "DetailedGuildIdentityUserRow" /* 10938 */;
-import CircleMinusIcon2 from "CircleMinusIcon" /* 17615 */;
-import useGetOrFetchChannelOverwriteUsersDefault from "useGetOrFetchChannelOverwriteUsers" /* 19271 */;
+import CircleMinusIcon2 from "CircleMinusIcon" /* 17626 */;
+import useGetOrFetchChannelOverwriteUsersDefault from "useGetOrFetchChannelOverwriteUsers" /* 19284 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
@@ -96,7 +96,7 @@ function ChannelPermissionSyncModule(channel) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -139,7 +139,7 @@ function ChannelPermissionSyncModule(channel) {
               saveChannel(id, obj);
             }
             c3 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp15) {
           c3 = 3;
@@ -230,7 +230,7 @@ function RoleRow(onDelete) {
     tmp2Result = null;
     if (!tmp) {
       const obj2 = { color: nativeDefault.colors.ICON_FEEDBACK_CRITICAL, accessibilityLabel: intl.string(intl5.t.N86XcP) };
-      const CircleMinusIcon = tmp3(17615).CircleMinusIcon;
+      const CircleMinusIcon = tmp3(17626).CircleMinusIcon;
       intl = tmp3(1113).intl;
       tmp2Result = tmp2(CircleMinusIcon, obj2);
     }

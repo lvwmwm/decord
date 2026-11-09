@@ -1,10 +1,10 @@
-// Module ID: 18034
-// Function ID: 18035
+// Module ID: 18043
+// Function ID: 18044
 // Name: DevToolsTogglesScreen
-// Dependencies: [32, 19, 17, 7067, 5754, 21, 6954, 5140, 575, 7038, 5837, 7430, 504, 7126, 18016, 5735, 16163, 6159, 18035, 7282, 2]
+// Dependencies: [32, 19, 17, 7067, 5754, 21, 6954, 5140, 575, 7038, 5837, 7430, 504, 7126, 18025, 5735, 16173, 6159, 18044, 7282, 2]
 // Exports: default
 
-// Module 18034 (DevToolsTogglesScreen)
+// Module 18043 (DevToolsTogglesScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5735 */;
@@ -128,7 +128,7 @@ export default function DevToolsTogglesScreen() {
   let tmp2 = dependencyMap;
   const insets = useSafeAreaInsetsKeyboardAwareDefault({ includeKeyboardHeight: true }).insets;
   [query, tmp5] = react.useState("");
-  let obj = query(16163);
+  let obj = query(16173);
   const manaTextMigrationHighlightRestartNotice = obj.useManaTextMigrationHighlightRestartNotice();
   let obj2 = query(504);
   const items = [DesignTogglesStore];

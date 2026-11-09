@@ -98,7 +98,7 @@ export const logEnricherIntegration = () => {
               const obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           } else {
             try {
@@ -229,7 +229,7 @@ export const logEnricherIntegration = () => {
         });
         promise.then(() => {
           on.on("beforeCaptureLog", (attributes) => {
-            const f81526 = (item) => {
+            const f81569 = (item) => {
               let tmp2 = typeof tmp !== "string";
               if (typeof attributes3[item] !== "string") {
                 tmp2 = typeof tmp !== "number";
@@ -267,7 +267,7 @@ export const logEnricherIntegration = () => {
                   }
                   const _Object = Object;
                   const keys = Object.keys(attributes1);
-                  const item = keys.forEach(f81526);
+                  const item = keys.forEach(f81569);
                 }
               }
               const tmpResult = tmp(tmp2[0]);
@@ -290,7 +290,7 @@ export const logEnricherIntegration = () => {
                   }
                   const _Object2 = Object;
                   const keys1 = Object.keys(attributes2);
-                  const item1 = keys1.forEach(f81526);
+                  const item1 = keys1.forEach(f81569);
                 }
               }
               const tmpResult2 = tmp(tmp2[0]);
@@ -313,7 +313,7 @@ export const logEnricherIntegration = () => {
                   }
                   const _Object3 = Object;
                   const keys2 = Object.keys(attributes3);
-                  const item2 = keys2.forEach(f81526);
+                  const item2 = keys2.forEach(f81569);
                 }
               }
               const _Object4 = Object;

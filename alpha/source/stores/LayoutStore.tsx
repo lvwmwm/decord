@@ -1,20 +1,20 @@
-// Module ID: 15869
-// Function ID: 15870
+// Module ID: 15879
+// Function ID: 15880
 // Name: LayoutStore
-// Dependencies: [15870, 15871, 1072, 15872, 15873, 1266, 15874, 12, 504, 510, 572, 2]
+// Dependencies: [15880, 15881, 1072, 15882, 15883, 1266, 15884, 12, 504, 510, 572, 2]
 
-// Module 15869 (LayoutStore)
+// Module 15879 (LayoutStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import Storage2 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import v1 from "v1" /* 1266 */;
-import LayoutStoreTypes from "LayoutStoreTypes" /* 15873 */;
-import LayoutUtils from "LayoutUtils" /* 15874 */;
-import LayoutRecord from "LayoutRecord" /* 15870 */;
-import WidgetRecord from "WidgetRecord" /* 15871 */;
-import OverlayLayoutConstants from "OverlayLayoutConstants" /* 15872 */;
+import LayoutStoreTypes from "LayoutStoreTypes" /* 15883 */;
+import LayoutUtils from "LayoutUtils" /* 15884 */;
+import LayoutRecord from "LayoutRecord" /* 15880 */;
+import WidgetRecord from "WidgetRecord" /* 15881 */;
+import OverlayLayoutConstants from "OverlayLayoutConstants" /* 15882 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -302,7 +302,7 @@ let items = [
     let closure_129_1;
     let items2;
     let pinnedWidgets;
-    const f132153 = (id) => {
+    const f132244 = (id) => {
       let rect = null;
       if (null != closure_1_0) {
         rect = closure_1_0[id];
@@ -332,9 +332,9 @@ let items = [
         let items = [];
         const items1 = [migrated, ];
         obj2 = { layouts: items2, widgets: items };
-        items1[1] = { id: migrated, widgets: pinnedWidgets.map(f132153) };
+        items1[1] = { id: migrated, widgets: pinnedWidgets.map(f132244) };
         items2 = [items1];
-        const obj3 = { id: migrated, widgets: pinnedWidgets.map(f132153) };
+        const obj3 = { id: migrated, widgets: pinnedWidgets.map(f132244) };
         return obj2;
       }
     }

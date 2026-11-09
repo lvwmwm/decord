@@ -1,9 +1,9 @@
-// Module ID: 18071
-// Function ID: 18072
+// Module ID: 18084
+// Function ID: 18085
 // Name: DevToolsContent
-// Dependencies: [32, 19, 17, 11502, 5354, 1246, 21, 5140, 575, 504, 13430, 18072, 5751, 7043, 5376, 13268, 13270, 1499, 1627, 7126, 7038, 5837, 16740, 2]
+// Dependencies: [32, 19, 17, 11502, 5354, 1246, 21, 5140, 575, 504, 13430, 18085, 5751, 7043, 5376, 13268, 13270, 1499, 1627, 7126, 7038, 5837, 16751, 2]
 
-// Module 18071 (DevToolsContent)
+// Module 18084 (DevToolsContent)
 import nativeDefault from "native" /* 575 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
 import HapticUtils from "HapticUtils" /* 5376 */;
@@ -11,8 +11,8 @@ import Text_Text from "Text/Text" /* 5751 */;
 import Pressables from "Pressables" /* 7043 */;
 import ArrowSmallUpIcon from "ArrowSmallUpIcon" /* 13268 */;
 import ArrowSmallDownIcon from "ArrowSmallDownIcon" /* 13270 */;
-import DevToolsNavigator from "DevToolsNavigator" /* 16740 */;
-import useSortedDevToolsScreens from "useSortedDevToolsScreens" /* 18072 */;
+import DevToolsNavigator from "DevToolsNavigator" /* 16751 */;
+import useSortedDevToolsScreens from "useSortedDevToolsScreens" /* 18085 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -210,13 +210,17 @@ const memoResult1 = react.memo(function DevToolsContent(arg0) {
         onPress() {
           const tmp = c2;
           if (!tmp) {
-            const arr = screenKey;
-            if (null != screenKey.push) {
-              arr.push(screenKey);
+            if (null == closure_1_1) {
+              const arr = screenKey;
+              if (null != screenKey.push) {
+                arr.push(screenKey);
+              } else {
+                const obj2 = { screenKey };
+                const obj = DevToolsNavigator;
+                obj.navigateToDevTools(obj2);
+              }
             } else {
-              const obj2 = { screenKey };
-              const obj = DevToolsNavigator;
-              obj.navigateToDevTools(obj2);
+              tmp2();
             }
           }
         }

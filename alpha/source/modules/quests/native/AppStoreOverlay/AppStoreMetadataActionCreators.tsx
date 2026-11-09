@@ -1,10 +1,10 @@
-// Module ID: 14899
-// Function ID: 14900
+// Module ID: 14900
+// Function ID: 14901
 // Name: AppStoreMetadataActionCreators
 // Dependencies: [5, 2186, 1072, 1089, 572, 1282, 559, 2]
 // Exports: fetchAppStoreMetadata, getAppStoreMetadataCacheKey
 
-// Module 14899 (AppStoreMetadataActionCreators)
+// Module 14900 (AppStoreMetadataActionCreators)
 import Constants from "Constants" /* 1072 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -80,7 +80,7 @@ export function fetchAppStoreMetadata(os) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           let c3;

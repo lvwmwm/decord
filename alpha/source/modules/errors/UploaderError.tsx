@@ -1,9 +1,9 @@
-// Module ID: 13993
-// Function ID: 13994
+// Module ID: 13994
+// Function ID: 13995
 // Name: UploaderError
 // Dependencies: [6580, 2]
 
-// Module 13993 (UploaderError)
+// Module 13994 (UploaderError)
 import APIError from "APIError" /* 6580 */;
 import size from "module_2" /* 2 */;
 

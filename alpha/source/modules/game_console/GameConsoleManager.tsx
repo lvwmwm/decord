@@ -1,9 +1,9 @@
-// Module ID: 19862
-// Function ID: 19863
+// Module ID: 19875
+// Function ID: 19876
 // Name: GameConsoleManager
-// Dependencies: [5, 502, 2130, 5893, 5895, 5803, 5894, 9827, 5897, 3, 38, 6047, 12143, 7350, 4984, 12145, 1380, 6090, 1113, 19863, 12149, 2]
+// Dependencies: [5, 502, 2130, 5893, 5895, 5803, 5894, 9827, 5897, 3, 38, 6047, 12143, 7350, 4984, 12145, 1380, 6090, 1113, 19876, 12149, 2]
 
-// Module 19862 (GameConsoleManager)
+// Module 19875 (GameConsoleManager)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef38 from "module_38" /* 38 */;
 import intl3 from "intl" /* 1113 */;
@@ -13,7 +13,7 @@ import Constants from "Constants" /* 5897 */;
 import AudioActionCreatorsDefault from "AudioActionCreators" /* 6047 */;
 import GameConsoleActionCreators from "GameConsoleActionCreators" /* 12145 */;
 import GameConsoleAlertUtilsDefault from "GameConsoleAlertUtils" /* 12149 */;
-import _modDef19863 from "module_19863" /* 19863 */;
+import _modDef19876 from "module_19876" /* 19876 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MediaEngineStore from "MediaEngineStore" /* 2130 */;
@@ -47,7 +47,7 @@ let obj = function _syncLocalState() {
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -86,7 +86,7 @@ let obj = function _syncLocalState() {
           obj2.toggleSelfDeaf({ syncRemote: false });
         }
         c4 = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp15) {
         c4 = 3;
         throw tmp15;
@@ -270,7 +270,7 @@ class GameConsoleManager extends AutomaticLifecycleManager {
               str2 = "";
             }
             let device = getDevice(type, str2);
-            const tmp8 = _modDef19863;
+            const tmp8 = _modDef19876;
             if (device == null) {
               obj = { id: "id", platform: intl.string(intl3.t["UQMV/E"]), name: intl2.string(intl3.t["UQMV/E"]) };
               intl = intl3.intl;

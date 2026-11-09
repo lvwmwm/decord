@@ -1,9 +1,9 @@
-// Module ID: 17555
-// Function ID: 17556
+// Module ID: 17566
+// Function ID: 17567
 // Name: AndroidMobileOverlaySetting
 // Dependencies: [12107, 8503, 504, 1113, 11685, 12120, 2]
 
-// Module 17555 (AndroidMobileOverlaySetting)
+// Module 17566 (AndroidMobileOverlaySetting)
 import get_initialized from "get initialized" /* 504 */;
 import intl2 from "intl" /* 1113 */;
 import SettingsConstants from "SettingsConstants" /* 8503 */;

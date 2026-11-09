@@ -1,9 +1,9 @@
-// Module ID: 17842
-// Function ID: 17843
+// Module ID: 17853
+// Function ID: 17854
 // Name: AdvancedSetting
-// Dependencies: [1072, 11685, 1113, 7633, 17843, 2]
+// Dependencies: [1072, 11685, 1113, 7633, 17854, 2]
 
-// Module 17842 (AdvancedSetting)
+// Module 17853 (AdvancedSetting)
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import SettingsIcon from "SettingsIcon" /* 7633 */;

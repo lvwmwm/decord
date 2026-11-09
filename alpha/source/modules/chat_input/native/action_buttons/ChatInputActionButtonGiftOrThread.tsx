@@ -1,9 +1,9 @@
-// Module ID: 14037
-// Function ID: 14038
+// Module ID: 14038
+// Function ID: 14039
 // Name: ChatInputActionButtonGiftOrThread
-// Dependencies: [19, 17, 13023, 21, 5140, 13022, 13019, 1113, 14030, 14038, 5724, 575, 5199, 2]
+// Dependencies: [19, 17, 13023, 21, 5140, 13022, 13019, 1113, 14031, 14039, 5724, 575, 5199, 2]
 
-// Module 14037 (ChatInputActionButtonGiftOrThread)
+// Module 14038 (ChatInputActionButtonGiftOrThread)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
@@ -33,7 +33,7 @@ function renderChatInputActionButtonGiftAndThread(arg0, styleButton, state, clea
       accessible,
       accessibilityLabel: intl.string(onPress(1113).t["4WNcpu"]),
       disabled: !canStartThreads,
-      IconComponent: onPress(14030).ThreadPlusIcon,
+      IconComponent: onPress(14031).ThreadPlusIcon,
       onPress(arg0) {
           return onPress(arg0, ChatInputActionType.THREAD);
         },
@@ -44,7 +44,7 @@ function renderChatInputActionButtonGiftAndThread(arg0, styleButton, state, clea
     tmpResult = tmp(tmp2Result, obj2);
   } else {
     const obj3 = { accessible, channel, onPress, style: styleButtonWrapper, styleButton };
-    tmpResult = tmp(tmp2(14038), obj3);
+    tmpResult = tmp(tmp2(14039), obj3);
   }
   return <tmp4 key={arg0} cleanup={arg3} state={arg2}>{tmpResult}</tmp4>;
 }

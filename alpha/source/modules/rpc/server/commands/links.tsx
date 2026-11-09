@@ -1,9 +1,9 @@
-// Module ID: 16626
-// Function ID: 16627
+// Module ID: 16636
+// Function ID: 16637
 // Name: links
-// Dependencies: [5, 4988, 2162, 6583, 1072, 2142, 1252, 5061, 1377, 16627, 16599, 16628, 5146, 16629, 5830, 9019, 16630, 9414, 16606, 11976, 11973, 7635, 2148, 16631, 16634, 2]
+// Dependencies: [5, 4988, 2162, 6583, 1072, 2142, 1252, 5061, 1377, 16637, 16609, 16638, 5146, 16639, 5830, 9019, 16640, 9414, 16616, 11976, 11973, 7635, 2148, 16641, 16644, 2]
 
-// Module 16626 (links)
+// Module 16636 (links)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 5061 */;
@@ -11,19 +11,19 @@ import CrossPlatformNativeUtilsDefault from "CrossPlatformNativeUtils" /* 5146 *
 import RPCErrorDefault from "RPCError" /* 9414 */;
 import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 11973 */;
 import RPCHelpers from "RPCHelpers" /* 11976 */;
-import validateEmbeddedAppFrame from "validateEmbeddedAppFrame" /* 16599 */;
-import getEmbeddedActivityPopoutWindowKeyDefault from "getEmbeddedActivityPopoutWindowKey" /* 16627 */;
-import internalDeepLinks from "internalDeepLinks" /* 16628 */;
-import fetchIsLinkTrusted2 from "fetchIsLinkTrusted" /* 16629 */;
-import openActivityShareLinkModal2 from "openActivityShareLinkModal" /* 16631 */;
-import getFrameChannelIdDefault from "getFrameChannelId" /* 16634 */;
+import validateEmbeddedAppFrame from "validateEmbeddedAppFrame" /* 16609 */;
+import getEmbeddedActivityPopoutWindowKeyDefault from "getEmbeddedActivityPopoutWindowKey" /* 16637 */;
+import internalDeepLinks from "internalDeepLinks" /* 16638 */;
+import fetchIsLinkTrusted2 from "fetchIsLinkTrusted" /* 16639 */;
+import openActivityShareLinkModal2 from "openActivityShareLinkModal" /* 16641 */;
+import getFrameChannelIdDefault from "getFrameChannelId" /* 16644 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4988 */;
 import ApplicationStore from "ApplicationStore" /* 2162 */;
 import Constants_mod from "Constants" /* 6583 */;
 import Constants_mod2 from "Constants" /* 1072 */;
 import Constants_mod3 from "Constants" /* 2142 */;
-import CONTEXT_MENU_ICON_NAMES_mod from "CONTEXT_MENU_ICON_NAMES" /* 16606 */;
+import CONTEXT_MENU_ICON_NAMES_mod from "CONTEXT_MENU_ICON_NAMES" /* 16616 */;
 import size from "module_2" /* 2 */;
 
 let c2, currentEmbeddedActivity, getApplication;
@@ -82,7 +82,7 @@ let obj = function _openExternalLink() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -305,7 +305,7 @@ let obj2 = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c4;

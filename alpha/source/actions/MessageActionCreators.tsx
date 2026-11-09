@@ -1,7 +1,7 @@
 // Module ID: 7712
 // Function ID: 7713
 // Name: MessageActionCreators
-// Dependencies: [32, 5, 6623, 6972, 7713, 7714, 7896, 7898, 7842, 6892, 6769, 502, 4989, 7899, 5011, 5874, 6194, 5072, 5890, 6897, 7906, 1385, 1072, 7908, 7573, 5145, 17, 3, 5873, 7909, 5877, 7912, 7913, 5889, 7918, 6841, 7939, 1252, 5875, 7955, 7959, 6577, 7961, 1113, 2185, 8281, 572, 10438, 6611, 10434, 8758, 1282, 6196, 7460, 9, 7743, 6618, 11, 5018, 5038, 7732, 6620, 15487, 10329, 9209, 15488, 2171, 7902, 1403, 7505, 8474, 15489, 8455, 11842, 15493, 9872, 14827, 14833, 6973, 1089, 8458, 2116, 8271, 5147, 10732, 6090, 2]
+// Dependencies: [32, 5, 6623, 6972, 7713, 7714, 7896, 7898, 7842, 6892, 6769, 502, 4989, 7899, 5011, 5874, 6194, 5072, 5890, 6897, 7906, 1385, 1072, 7908, 7573, 5145, 17, 3, 5873, 7909, 5877, 7912, 7913, 5889, 7918, 6841, 7939, 1252, 5875, 7955, 7959, 6577, 7961, 1113, 2185, 8281, 572, 10438, 6611, 10434, 8758, 1282, 6196, 7460, 9, 7743, 6618, 11, 5018, 5038, 7732, 6620, 15497, 10329, 9209, 15498, 2171, 7902, 1403, 7505, 8474, 15499, 8455, 11842, 15503, 9872, 14828, 14834, 6973, 1089, 8458, 2116, 8271, 5147, 10732, 6090, 2]
 
 // Module 7712 (MessageActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
@@ -29,7 +29,7 @@ import getInviteURLDefault from "getInviteURL" /* 9209 */;
 import createNonce from "createNonce" /* 10434 */;
 import createMessage from "createMessage" /* 10438 */;
 import PremiumGiftingIntentActionCreators from "PremiumGiftingIntentActionCreators" /* 10732 */;
-import SentMessageIntentsHandlerDefault from "SentMessageIntentsHandler" /* 15488 */;
+import SentMessageIntentsHandlerDefault from "SentMessageIntentsHandler" /* 15498 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import GatewayConnectionStore from "GatewayConnectionStore" /* 6623 */;
@@ -445,7 +445,7 @@ let obj17 = {
   sendExplicitMediaClydeError(c0, attachments, EXPLICIT_MEDIA_ADD_MEDIA_TO_FORUM_POST_BLOCKED) {
     let message;
     let messageName;
-    const f92624 = () => {
+    const f92666 = () => {
       let intl;
       const obj = { message: intl.string(require("intl").t.i4AbAS), messageName: "BOT_GUILD_EXPLICIT_CONTENT" };
       intl = require("intl").intl;
@@ -469,8 +469,8 @@ let obj17 = {
         intl = require("intl").intl;
         return obj;
       });
-      ({ message, messageName } = withResult1.otherwise(f92624));
-      withResult1.otherwise(f92624);
+      ({ message, messageName } = withResult1.otherwise(f92666));
+      withResult1.otherwise(f92666);
       const obj8 = createNonce;
       const nonce = obj8.createNonce();
       obj17.sendBotMessage(c0, message, messageName, nonce);
@@ -574,7 +574,7 @@ let obj17 = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -617,7 +617,7 @@ let obj17 = {
               return obj7;
             } else {
               c3 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           }
         } catch (tmp10) {
@@ -832,7 +832,7 @@ let obj17 = {
           const obj5 = { value, done: true };
           return obj5;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -917,7 +917,7 @@ let obj17 = {
             }
           }
           after = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp63) {
           after = 3;
           throw tmp63;
@@ -940,7 +940,7 @@ let obj17 = {
           const obj4 = { value, done: true };
           return obj4;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -1027,7 +1027,7 @@ let obj17 = {
             }
           }
           c3 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp26) {
           c3 = 3;
           throw tmp26;
@@ -1430,7 +1430,7 @@ let obj17 = {
             let obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           let c7;
@@ -1797,7 +1797,7 @@ let obj17 = {
                 if (null == closure_18) {
                   c7 = 0;
                   c9 = 3;
-                  return { value: "HermesInternal", done: "HermesInternal" };
+                  return { value: "HermesInternal", done: null };
                 } else {
                   attachments2 = closure_18.attachments;
                   uploader = closure_18.uploader;
@@ -1805,7 +1805,7 @@ let obj17 = {
                   if (tmp204) {
                     c7 = 0;
                     c9 = 3;
-                    return { value: "HermesInternal", done: "HermesInternal" };
+                    return { value: "HermesInternal", done: null };
                   }
                   let tmp45 = attachments2;
                   if (null != attachments2) {
@@ -2423,7 +2423,7 @@ let obj17 = {
             let obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -2501,7 +2501,7 @@ let obj17 = {
                 obj5.focusMessage(obj6);
               });
               c3 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp12) {
             c3 = 3;
@@ -2530,7 +2530,7 @@ let obj17 = {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -2571,7 +2571,7 @@ let obj17 = {
               patch(request);
             }
             c3 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp8) {
           c3 = 3;
@@ -2600,7 +2600,7 @@ let obj17 = {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -2641,7 +2641,7 @@ let obj17 = {
               patch(request);
             }
             c3 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp8) {
           c3 = 3;
@@ -2682,9 +2682,9 @@ let obj17 = {
         const obj = id(c3[46]);
         const obj2 = { type: "MESSAGE_DELETE", id, channelId, local };
         const dispatchResult = obj.dispatch(obj2);
-        dispatchResult.then(f142001);
+        dispatchResult.then(f142106);
       }
-      const f142001 = () => {
+      const f142106 = () => {
         const AccessibilityAnnouncer = channelId(closure_1_3[83]).AccessibilityAnnouncer;
         const announce = AccessibilityAnnouncer.announce;
         const intl = channelId(closure_1_3[43]).intl;
@@ -2700,7 +2700,7 @@ let obj17 = {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -2745,11 +2745,11 @@ let obj17 = {
               const obj = id(c3[46]);
               const obj2 = { type: "MESSAGE_DELETE", id, channelId, local };
               const dispatchResult = obj.dispatch(obj2);
-              dispatchResult.then(f142001);
+              dispatchResult.then(f142106);
             });
           }
           c3 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp9) {
           c3 = 3;
           throw tmp9;

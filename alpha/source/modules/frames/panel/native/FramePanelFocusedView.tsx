@@ -1,16 +1,16 @@
-// Module ID: 19516
-// Function ID: 19517
+// Module ID: 19529
+// Function ID: 19530
 // Name: FramePanelFocusedView
-// Dependencies: [19, 6901, 6902, 5781, 21, 504, 19496, 19513, 19517, 11061, 19019, 12437, 12441, 2]
+// Dependencies: [19, 6901, 6902, 5781, 21, 504, 19509, 19526, 19530, 11061, 19032, 12437, 12441, 2]
 
-// Module 19516 (FramePanelFocusedView)
+// Module 19529 (FramePanelFocusedView)
 import Fragment from "Fragment" /* 21 */;
 import ActivityPanelConstants from "ActivityPanelConstants" /* 5781 */;
 import FramesActionCreatorsDefault from "FramesActionCreators" /* 11061 */;
 import FrameRenderTargetDefault from "FrameRenderTarget" /* 12437 */;
-import ConjureFrameUpdateBarDefault from "ConjureFrameUpdateBar" /* 19019 */;
-import ActivityPanelFocusedView from "ActivityPanelFocusedView" /* 19496 */;
-import FramePanelStateContextDefault from "FramePanelStateContext" /* 19513 */;
+import ConjureFrameUpdateBarDefault from "ConjureFrameUpdateBar" /* 19032 */;
+import ActivityPanelFocusedView from "ActivityPanelFocusedView" /* 19509 */;
+import FramePanelStateContextDefault from "FramePanelStateContext" /* 19526 */;
 import react from "react" /* 19 */;
 import FramesStore from "FramesStore" /* 6901 */;
 import FramesConstants from "FramesConstants" /* 6902 */;

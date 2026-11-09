@@ -1,19 +1,19 @@
-// Module ID: 15227
-// Function ID: 15228
+// Module ID: 15237
+// Function ID: 15238
 // Name: UserProfilePersonalWidgetCard
-// Dependencies: [32, 19, 17, 1072, 21, 5140, 575, 15228, 15229, 5751, 1113, 4965, 15230, 5199, 5842, 5715, 8644, 15224, 9612, 12546, 2]
+// Dependencies: [32, 19, 17, 1072, 21, 5140, 575, 15238, 15239, 5751, 1113, 4965, 15240, 5199, 5842, 5715, 8644, 15234, 9612, 12546, 2]
 // Exports: default
 
-// Module 15227 (UserProfilePersonalWidgetCard)
+// Module 15237 (UserProfilePersonalWidgetCard)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import native from "native" /* 5199 */;
 import FastImageDefault from "FastImage" /* 5842 */;
 import GifTagDefault from "GifTag" /* 8644 */;
-import PersonalWidgetExpandCollapseContext from "PersonalWidgetExpandCollapseContext" /* 15228 */;
-import PersonalWidgetMarkupUtils from "PersonalWidgetMarkupUtils" /* 15229 */;
-import WidgetAssetUtils from "WidgetAssetUtils" /* 15230 */;
+import PersonalWidgetExpandCollapseContext from "PersonalWidgetExpandCollapseContext" /* 15238 */;
+import PersonalWidgetMarkupUtils from "PersonalWidgetMarkupUtils" /* 15239 */;
+import WidgetAssetUtils from "WidgetAssetUtils" /* 15240 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -319,7 +319,7 @@ function UserProfilePersonalWidgetCardContent(userId) {
   let obj = { userId, widget, style: cardStyle, titleLeadingIcon: closure_9(userId(9612).NitroWheelIcon, { size: "xs", color: "icon-subtle" }), title: widget.header, disableInteraction, actionButtons: tmp6, children: tmp7(tmp8, obj3) };
   tmp6 = undefined;
   const tmp3 = disableInteraction;
-  const tmp5 = disableInteraction(15224);
+  const tmp5 = disableInteraction(15234);
   if (flag) {
     let obj2 = { widget };
     const items = [tmp2(tmp3(12546), obj2, "edit-options")];

@@ -1,10 +1,10 @@
-// Module ID: 20400
-// Function ID: 20401
+// Module ID: 20413
+// Function ID: 20414
 // Name: NotificationSettingsModal
-// Dependencies: [109, 19, 17, 4993, 4989, 7343, 5358, 5011, 20033, 5082, 6830, 1385, 1072, 6831, 1082, 21, 5140, 575, 5199, 5889, 5374, 11202, 2118, 7351, 7346, 11201, 7124, 1113, 7127, 7126, 7429, 5751, 1187, 5834, 2185, 7038, 11206, 7046, 11629, 5075, 8674, 5776, 8246, 6159, 11207, 1499, 504, 7344, 5734, 7064, 20401, 11200, 7231, 2]
+// Dependencies: [109, 19, 17, 4993, 4989, 7343, 5358, 5011, 20046, 5082, 6830, 1385, 1072, 6831, 1082, 21, 5140, 575, 5199, 5889, 5374, 11202, 2118, 7351, 7346, 11201, 7124, 1113, 7127, 7126, 7429, 5751, 1187, 5834, 2185, 7038, 11206, 7046, 11629, 5075, 8674, 5776, 8246, 6159, 11207, 1499, 504, 7344, 5734, 7064, 20414, 11200, 7231, 2]
 // Exports: default
 
-// Module 20400 (NotificationSettingsModal)
+// Module 20413 (NotificationSettingsModal)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
@@ -41,7 +41,7 @@ import ChannelStore from "ChannelStore" /* 4989 */;
 import GuildCategoryStore from "GuildCategoryStore" /* 7343 */;
 import GuildMemberCountStore from "GuildMemberCountStore" /* 5358 */;
 import GuildStore from "GuildStore" /* 5011 */;
-import NotificationSettingsModalStore from "NotificationSettingsModalStore" /* 20033 */;
+import NotificationSettingsModalStore from "NotificationSettingsModalStore" /* 20046 */;
 import RelationshipStore from "RelationshipStore" /* 5082 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6830 */;
 import UserStore from "UserStore" /* 1385 */;

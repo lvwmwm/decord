@@ -174,7 +174,7 @@ export default function ConjureRemixSheet(project) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -234,7 +234,7 @@ export default function ConjureRemixSheet(project) {
           }
         }
         c3 = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp29) {
         c3 = 3;
         throw tmp29;

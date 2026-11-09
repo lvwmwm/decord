@@ -1,26 +1,26 @@
-// Module ID: 15709
-// Function ID: 15710
+// Module ID: 15719
+// Function ID: 15720
 // Name: TreasureChestBannerSpotIllustration
-// Dependencies: [19, 21, 15710, 15711, 15712, 7135, 5842, 2]
+// Dependencies: [19, 21, 15720, 15721, 15722, 7135, 5842, 2]
 // Exports: TreasureChestBannerSpotIllustration
 
-// Module 15709 (TreasureChestBannerSpotIllustration)
+// Module 15719 (TreasureChestBannerSpotIllustration)
 import Fragment from "Fragment" /* 21 */;
 import react_native from "react-native" /* 7135 */;
-import _modDef15710 from "module_15710" /* 15710 */;
-import _modDef15711 from "module_15711" /* 15711 */;
-import _modDef15712 from "module_15712" /* 15712 */;
+import _modDef15720 from "module_15720" /* 15720 */;
+import _modDef15721 from "module_15721" /* 15721 */;
+import _modDef15722 from "module_15722" /* 15722 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef15710 };
+let obj2 = { uri: _modDef15720 };
 obj[1] = obj2;
-let obj3 = { uri: _modDef15711 };
+let obj3 = { uri: _modDef15721 };
 obj[2] = obj3;
-obj[3] = { uri: _modDef15712 };
-({ uri: _modDef15712 });
+obj[3] = { uri: _modDef15722 };
+({ uri: _modDef15722 });
 let size = size_mod;
 const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/TreasureChestBannerSpotIllustration.native.tsx");
 

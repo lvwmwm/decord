@@ -1,10 +1,10 @@
-// Module ID: 15261
-// Function ID: 15262
+// Module ID: 15271
+// Function ID: 15272
 // Name: EditWishlistActionSheet
-// Dependencies: [32, 19, 17, 5141, 9555, 9556, 1385, 7848, 8825, 5389, 21, 5140, 575, 1652, 5370, 504, 1627, 7387, 7412, 15061, 15240, 15149, 9562, 8833, 11553, 1113, 5392, 7126, 7429, 14687, 8098, 5862, 2]
+// Dependencies: [32, 19, 17, 5141, 9555, 9556, 1385, 7848, 8825, 5389, 21, 5140, 575, 1652, 5370, 504, 1627, 7387, 7412, 15062, 15250, 15150, 9562, 8833, 11553, 1113, 5392, 7126, 7429, 14688, 8098, 5862, 2]
 // Exports: default
 
-// Module 15261 (EditWishlistActionSheet)
+// Module 15271 (EditWishlistActionSheet)
 import nativeDefault from "native" /* 575 */;
 import _mod1652 from "module_1652" /* 1652 */;
 import timing_timing from "timing/timing" /* 5370 */;
@@ -13,7 +13,7 @@ import Constants from "Constants" /* 8825 */;
 import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8833 */;
 import WishlistRecord from "WishlistRecord" /* 9556 */;
 import WishlistActionCreatorsDefault from "WishlistActionCreators" /* 9562 */;
-import WishlistVisibility2 from "WishlistVisibility" /* 15240 */;
+import WishlistVisibility2 from "WishlistVisibility" /* 15250 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -119,8 +119,8 @@ export default function EditWishlistActionSheet(wishlistId) {
   }
   analyticsLocations = tmp5(analyticsLocations1, tmp4(7412).USER_PROFILE_EDIT_WISHLIST_ACTION_SHEET).analyticsLocations;
   let obj2 = { maxWidth: ACTION_SHEET_MAX_WIDTH };
-  ({ cardWidth: c5, rowWidth } = tmp4(15061)(obj2));
-  const tmp6 = tmp4(15061)(obj2);
+  ({ cardWidth: c5, rowWidth } = tmp4(15062)(obj2));
+  const tmp6 = tmp4(15062)(obj2);
   if (null != rowWidth) {
     let obj3 = { width: rowWidth };
     tmp7 = obj3;

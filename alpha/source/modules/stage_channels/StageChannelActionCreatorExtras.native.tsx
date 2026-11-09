@@ -1,7 +1,7 @@
 // Module ID: 8010
 // Function ID: 8011
 // Name: StageChannelActionCreatorExtras
-// Dependencies: [6930, 8011, 6764, 1072, 5374, 8013, 2118, 8242, 8245, 15451, 11327, 1108, 8008, 5314, 6799, 11862, 8821, 8244, 2]
+// Dependencies: [6930, 8011, 6764, 1072, 5374, 8013, 2118, 8242, 8245, 15461, 11327, 1108, 8008, 5314, 6799, 11862, 8821, 8244, 2]
 // Exports: navigateToStage, openEndGuildEventConfirmationModal, openEndStageModal, openStageBlockedUsersSheet, openStageChannelSettings, openStageSettingsSheet, shouldShowBlockedUsers, showChannelChangeConfirmationAlert, showPlatformUserProfile
 
 // Module 8010 (StageChannelActionCreatorExtras)
@@ -73,7 +73,7 @@ export function openStageSettingsSheet(channelId, onOpenRTCDebugOverlay) {
 export function openEndStageModal(channel) {
   const obj = ActionSheetActionCreatorsDefault;
   const obj2 = { channel };
-  obj.openLazy(asyncRequire(15451, dependencyMap.paths), metroImportAll, obj2);
+  obj.openLazy(asyncRequire(15461, dependencyMap.paths), metroImportAll, obj2);
 }
 export { openStageChannel };
 export function showPlatformUserProfile(arg0) {

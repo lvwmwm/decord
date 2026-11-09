@@ -1,14 +1,14 @@
-// Module ID: 14328
-// Function ID: 14329
+// Module ID: 14329
+// Function ID: 14330
 // Name: useGuildPowerupRollbackModalConfig
-// Dependencies: [19, 5011, 5345, 14312, 4973, 1113, 2696, 504, 14329, 5349, 14313, 2]
+// Dependencies: [19, 5011, 5345, 14313, 4973, 1113, 2696, 504, 14330, 5349, 14314, 2]
 // Exports: default
 
-// Module 14328 (useGuildPowerupRollbackModalConfig)
+// Module 14329 (useGuildPowerupRollbackModalConfig)
 import intl3 from "intl" /* 1113 */;
 import _modDef2696 from "module_2696" /* 2696 */;
 import dismissible_content from "dismissible_content" /* 4973 */;
-import getGuildPowerupFormattedDateStringDefault from "getGuildPowerupFormattedDateString" /* 14312 */;
+import getGuildPowerupFormattedDateStringDefault from "getGuildPowerupFormattedDateString" /* 14313 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 5011 */;
 import GuildPowerupsStore from "GuildPowerupsStore" /* 5345 */;

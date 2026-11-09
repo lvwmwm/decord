@@ -1,10 +1,10 @@
-// Module ID: 19425
-// Function ID: 19426
+// Module ID: 19438
+// Function ID: 19439
 // Name: useLaunchPadGesture
 // Dependencies: [19, 11681, 5314, 1627, 5420, 1377, 13028, 11367, 1705, 5376, 2]
 // Exports: default
 
-// Module 19425 (useLaunchPadGesture)
+// Module 19438 (useLaunchPadGesture)
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import _mod1705 from "module_1705" /* 1705 */;
 import HapticUtils from "HapticUtils" /* 5376 */;

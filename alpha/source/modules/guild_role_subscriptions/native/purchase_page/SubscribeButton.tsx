@@ -1,10 +1,10 @@
-// Module ID: 18972
-// Function ID: 18973
+// Module ID: 18985
+// Function ID: 18986
 // Name: SubscribeButton
-// Dependencies: [5, 32, 19, 17, 5043, 5065, 1072, 4996, 21, 17526, 504, 10032, 5751, 6091, 1113, 6999, 2166, 1187, 18966, 5374, 18973, 2118, 18962, 8703, 5758, 10098, 2]
+// Dependencies: [5, 32, 19, 17, 5043, 5065, 1072, 4996, 21, 17537, 504, 10032, 5751, 6091, 1113, 6999, 2166, 1187, 18979, 5374, 18986, 2118, 18975, 8703, 5758, 10098, 2]
 // Exports: default
 
-// Module 18972 (SubscribeButton)
+// Module 18985 (SubscribeButton)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
 import intl4 from "intl" /* 1113 */;
@@ -37,7 +37,7 @@ function SwitchTiersButton(activeSubscription) {
   activeSubscription = activeSubscription.activeSubscription;
   const activeListingId = activeSubscription.activeListingId;
   const changeToListingId = activeSubscription.changeToListingId;
-  let obj = changeToListingId(17526);
+  let obj = changeToListingId(17537);
   const first = _slicedToArray(obj.useName(activeListingId), 1)[0];
   const obj3 = { children: items };
   const obj2 = activeListingId(2166)(activeSubscription.currentPeriodEnd);
@@ -53,11 +53,11 @@ function SwitchTiersButton(activeSubscription) {
       const openLazy = ActionSheetActionCreatorsDefault.openLazy;
       ActionSheetActionCreatorsDefault;
       const obj = { activeSubscription, activeListingId, changeToListingId };
-      const tmp2 = asyncRequire(18973, dependencyMap.paths);
+      const tmp2 = asyncRequire(18986, dependencyMap.paths);
       openLazy(tmp2, "ChangeSubscriptionCard:" + changeToListingId, obj);
     }
   };
-  const ArrowButton = activeSubscription(18966).ArrowButton;
+  const ArrowButton = activeSubscription(18979).ArrowButton;
   intl2 = activeSubscription(1113).intl;
   items[2] = closure_12(ArrowButton, obj6);
   return closure_13(View, obj3);
@@ -129,7 +129,7 @@ export default function SubscribeButton(listingId) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -169,7 +169,7 @@ export default function SubscribeButton(listingId) {
           c3 = 0;
           closure_128_1(false);
           c4 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp19) {
         closure_2 = tmp19;

@@ -1,10 +1,10 @@
-// Module ID: 20062
-// Function ID: 20063
+// Module ID: 20075
+// Function ID: 20076
 // Name: GuildSettingsModalModeration
-// Dependencies: [19, 5072, 9155, 1072, 21, 5140, 575, 8439, 9154, 7126, 1113, 2185, 7429, 5199, 7064, 7630, 7124, 17048, 7127, 5751, 8246, 6159, 5734, 1499, 504, 2]
+// Dependencies: [19, 5072, 9155, 1072, 21, 5140, 575, 8439, 9154, 7126, 1113, 2185, 7429, 5199, 7064, 7630, 7124, 17059, 7127, 5751, 8246, 6159, 5734, 1499, 504, 2]
 // Exports: default
 
-// Module 20062 (GuildSettingsModalModeration)
+// Module 20075 (GuildSettingsModalModeration)
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2185 */;
@@ -173,7 +173,7 @@ class GuildSettingsModalModeration extends PureComponent {
     const TableRadioGroup = self(7124).TableRadioGroup;
     intl = self(1113).intl;
     intl2 = self(1113).intl;
-    let obj2 = self(17048);
+    let obj2 = self(17059);
     const features = guild.features;
     verificationLevelOptions = obj2.generateVerificationLevelOptions(features.has(constants.COMMUNITY));
     return closure_10(TableRadioGroup, obj, "level-section");
@@ -221,7 +221,7 @@ class GuildSettingsModalModeration extends PureComponent {
     BI4ukC = self(1113).t.BI4ukC;
     const features = guild.features;
     obj3 = HelpdeskUtilsDefault;
-    const obj4 = self(17048);
+    const obj4 = self(17059);
     contentFilterOptions = obj4.generateContentFilterOptions(features.has(constants.COMMUNITY));
     return closure_10(TableRadioGroup, obj, "filter-section");
   }

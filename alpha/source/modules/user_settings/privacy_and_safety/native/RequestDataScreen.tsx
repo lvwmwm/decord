@@ -1,12 +1,12 @@
-// Module ID: 17072
-// Function ID: 17073
+// Module ID: 17083
+// Function ID: 17084
 // Name: RequestDataScreen
-// Dependencies: [19, 17, 21, 5140, 575, 17073, 2]
+// Dependencies: [19, 17, 21, 5140, 575, 17084, 2]
 
-// Module 17072 (RequestDataScreen)
+// Module 17083 (RequestDataScreen)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import RequestDataContentDefault from "RequestDataContent" /* 17073 */;
+import RequestDataContentDefault from "RequestDataContent" /* 17084 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import createStyles_mod from "createStyles" /* 5140 */;

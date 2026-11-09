@@ -1,9 +1,9 @@
-// Module ID: 17851
-// Function ID: 17852
+// Module ID: 17862
+// Function ID: 17863
 // Name: UploadDebugLogsSetting
 // Dependencies: [5, 17, 1072, 21, 560, 1259, 1377, 11223, 5837, 1113, 5859, 11685, 2]
 
-// Module 17851 (UploadDebugLogsSetting)
+// Module 17862 (UploadDebugLogsSetting)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
@@ -47,7 +47,7 @@ let obj = function _handleUploadDebugLogSettingPress() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -111,7 +111,7 @@ let obj = function _handleUploadDebugLogSettingPress() {
           c3 = 0;
           onUploadDebugLogsRequestFinish();
           c5 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp26) {
         closure_2 = tmp26;

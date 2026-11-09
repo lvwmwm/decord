@@ -1,10 +1,10 @@
-// Module ID: 20130
-// Function ID: 20131
+// Module ID: 20143
+// Function ID: 20144
 // Name: EmptyServerSettingsEmoji
-// Dependencies: [19, 21, 8880, 20131, 20132, 20133, 5147, 5842, 2]
+// Dependencies: [19, 21, 8880, 20144, 20145, 20146, 5147, 5842, 2]
 // Exports: EmptyServerSettingsEmoji, getEmptyServerSettingsEmojiSource, useEmptyServerSettingsEmojiSource
 
-// Module 20130 (EmptyServerSettingsEmoji)
+// Module 20143 (EmptyServerSettingsEmoji)
 import Fragment from "Fragment" /* 21 */;
 import shared from "shared" /* 5147 */;
 import FastImageDefault from "FastImage" /* 5842 */;

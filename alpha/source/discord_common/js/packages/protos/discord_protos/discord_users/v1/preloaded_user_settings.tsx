@@ -5865,7 +5865,7 @@ const guildMetadata = tmp38;
 const MessageType32 = _mod1197.MessageType;
 class Favorites$Type extends MessageType32 {
   constructor() {
-    const items = [, , , , , , ];
+    const items = [, , , , , , , ];
     const obj = { no: 1, name: "favorite_channels", kind: "map", K: 6, V: { kind: "message", T: T43 } };
     items[0] = obj;
     items[1] = { no: 2, name: "muted", kind: "scalar", T: 8 };
@@ -5880,11 +5880,12 @@ class Favorites$Type extends MessageType32 {
     items[4] = { no: 5, name: "prune_inactive_threads", kind: "message", T: T44 };
     items[5] = { no: 6, name: "prune_inactive_threads_days", kind: "scalar", T: 13 };
     items[6] = { no: 7, name: "prune_all_favorited_threads", kind: "scalar", T: 8 };
+    items[7] = { no: 8, name: "auto_add_joined_threads_per_guild", kind: "scalar", T: 8 };
     const tmp2 = new tmp("discord_protos.discord_users.v1.Favorites", items, T);
     return tmp2;
   }
   create(partialSettings) {
-    const obj = { favoriteChannels: {}, muted: false, autoAddJoinedThreads: false, pruneInactiveThreadsDays: 0, pruneAllFavoritedThreads: false };
+    const obj = { favoriteChannels: {}, muted: false, autoAddJoinedThreads: false, pruneInactiveThreadsDays: 0, pruneAllFavoritedThreads: false, autoAddJoinedThreadsPerGuild: false };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1197.MESSAGE_TYPE, obj2);
@@ -5923,6 +5924,8 @@ class Favorites$Type extends MessageType32 {
           obj.pruneInactiveThreadsDays = pos.uint32();
         } else if (7 === tmp5) {
           obj.pruneAllFavoritedThreads = pos.bool();
+        } else if (8 === tmp5) {
+          obj.autoAddJoinedThreadsPerGuild = pos.bool();
         } else {
           let onRead = readUnknownField.readUnknownField;
           if ("throw" === onRead) {
@@ -6039,6 +6042,10 @@ class Favorites$Type extends MessageType32 {
       const tagResult8 = tag.tag(7, _mod1197.WireType.Varint);
       tagResult8.bool(favoriteChannels.pruneAllFavoritedThreads);
     }
+    if (false !== favoriteChannels.autoAddJoinedThreadsPerGuild) {
+      const tagResult9 = tag.tag(8, _mod1197.WireType.Varint);
+      tagResult9.bool(favoriteChannels.autoAddJoinedThreadsPerGuild);
+    }
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
@@ -6051,7 +6058,7 @@ class Favorites$Type extends MessageType32 {
   }
 }
 const prototype32 = Favorites$Type.prototype;
-const items25 = [, , , , , , ];
+const items25 = [, , , , , , , ];
 const obj44 = { no: 1, name: "favorite_channels", kind: "map", K: 6, V: { kind: "message", T: T43 } };
 items25[0] = obj44;
 items25[1] = { no: 2, name: "muted", kind: "scalar", T: 8 };
@@ -6067,6 +6074,7 @@ items25[3] = { no: 4, name: "auto_add_joined_threads", kind: "scalar", T: 8 };
 items25[4] = { no: 5, name: "prune_inactive_threads", kind: "message", T: T44 };
 items25[5] = { no: 6, name: "prune_inactive_threads_days", kind: "scalar", T: 13 };
 items25[6] = { no: 7, name: "prune_all_favorited_threads", kind: "scalar", T: 8 };
+items25[7] = { no: 8, name: "auto_add_joined_threads_per_guild", kind: "scalar", T: 8 };
 let tmp39 = new "binaryReadMap12"("discord_protos.discord_users.v1.Favorites", items25, tmp6, tmp5, "create", tmp4, "internalBinaryRead", "internalBinaryWrite", "binaryReadMap1", undefined, tmp, require, dependencyMap, InboxTab);
 const bans = tmp39;
 const MessageType33 = _mod1197.MessageType;

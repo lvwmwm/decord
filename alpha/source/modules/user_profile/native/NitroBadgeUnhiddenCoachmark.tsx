@@ -1,10 +1,10 @@
-// Module ID: 19232
-// Function ID: 19233
+// Module ID: 19245
+// Function ID: 19246
 // Name: NitroBadgeUnhiddenCoachmark
-// Dependencies: [19, 1072, 4986, 19229, 1113, 5834, 2185, 10076, 2]
+// Dependencies: [19, 1072, 4986, 19242, 1113, 5834, 2185, 10076, 2]
 // Exports: default
 
-// Module 19232 (NitroBadgeUnhiddenCoachmark)
+// Module 19245 (NitroBadgeUnhiddenCoachmark)
 import Constants from "Constants" /* 1072 */;
 import intl4 from "intl" /* 1113 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4986 */;
@@ -24,7 +24,7 @@ export default function NitroBadgeUnhiddenCoachmark(markAsDismissed) {
   let visible;
   ({ targetRef, visible } = markAsDismissed);
   markAsDismissed = markAsDismissed.markAsDismissed;
-  const tmp = markAsDismissed(19229)(targetRef, visible);
+  const tmp = markAsDismissed(19242)(targetRef, visible);
   dependencyMap = tmp;
   const items = [visible, tmp, markAsDismissed];
   const memo = react.useMemo(() => {

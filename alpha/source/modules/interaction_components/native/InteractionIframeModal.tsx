@@ -1,17 +1,17 @@
-// Module ID: 19895
-// Function ID: 19896
+// Module ID: 19908
+// Function ID: 19909
 // Name: InteractionIframeModal
-// Dependencies: [32, 19, 17, 1362, 21, 5140, 575, 19883, 11962, 5735, 8977, 19896, 6154, 7043, 1113, 10887, 5751, 9282, 19459, 6903, 5837, 12003, 2]
+// Dependencies: [32, 19, 17, 1362, 21, 5140, 575, 19896, 11962, 5735, 8977, 19909, 6154, 7043, 1113, 10887, 5751, 9282, 19472, 6903, 5837, 12003, 2]
 // Exports: default
 
-// Module 19895 (InteractionIframeModal)
+// Module 19908 (InteractionIframeModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import ApplicationConstants from "ApplicationConstants" /* 1362 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 5837 */;
 import makeIframeIdDefault from "makeIframeId" /* 11962 */;
-import closeIFrameModalDefault from "closeIFrameModal" /* 19896 */;
+import closeIFrameModalDefault from "closeIFrameModal" /* 19909 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

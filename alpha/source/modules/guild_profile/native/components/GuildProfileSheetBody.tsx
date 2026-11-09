@@ -1,7 +1,7 @@
 // Module ID: 9377
 // Function ID: 9378
 // Name: GuildProfileSheetBody
-// Dependencies: [19, 17, 9126, 9378, 21, 5140, 575, 9127, 504, 7387, 7412, 9128, 9379, 14965, 5758, 1113, 14966, 9380, 2]
+// Dependencies: [19, 17, 9126, 9378, 21, 5140, 575, 9127, 504, 7387, 7412, 9128, 9379, 14966, 5758, 1113, 14967, 9380, 2]
 // Exports: default
 
 // Module 9377 (GuildProfileSheetBody)

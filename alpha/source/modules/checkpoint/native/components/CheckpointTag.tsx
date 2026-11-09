@@ -1,10 +1,10 @@
-// Module ID: 13899
-// Function ID: 13900
+// Module ID: 13900
+// Function ID: 13901
 // Name: CheckpointTag
 // Dependencies: [32, 19, 17, 6199, 21, 5140, 575, 8101, 6566, 5751, 2]
 // Exports: default
 
-// Module 13899 (CheckpointTag)
+// Module 13900 (CheckpointTag)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Text_Text from "Text/Text" /* 5751 */;

@@ -47,7 +47,7 @@ export default function useConjureLinkedApps(arg0, arg1) {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           let c2;
@@ -91,7 +91,7 @@ export default function useConjureLinkedApps(arg0, arg1) {
                 c2 = 0;
               }
               c4 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp14) {
             if (0 === c2) {
@@ -157,7 +157,7 @@ export default function useConjureLinkedApps(arg0, arg1) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -209,7 +209,7 @@ export default function useConjureLinkedApps(arg0, arg1) {
             });
           });
           c6 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp19) {
         if (0 === c4) {
@@ -241,7 +241,7 @@ export default function useConjureLinkedApps(arg0, arg1) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -284,7 +284,7 @@ export default function useConjureLinkedApps(arg0, arg1) {
           c3 = 0;
           c3((arr) => arr.filter((project_id) => project_id.project_id !== closure_1_0));
           c5 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp18) {
         if (0 === c3) {

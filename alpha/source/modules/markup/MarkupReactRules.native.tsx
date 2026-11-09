@@ -1,7 +1,7 @@
 // Module ID: 5880
 // Function ID: 5881
 // Name: MarkupReactRules
-// Dependencies: [19, 17, 5141, 4989, 5046, 1072, 4996, 1083, 21, 575, 5881, 5751, 5140, 5885, 5778, 5315, 6799, 8821, 6090, 1113, 7418, 5836, 7020, 1187, 1378, 9019, 5834, 10247, 10302, 8642, 504, 5137, 8490, 5374, 11778, 2118, 11, 4965, 5842, 11822, 11751, 15963, 15965, 5851, 11734, 15967, 11643, 6164, 1377, 6166, 8674, 11183, 11188, 2]
+// Dependencies: [19, 17, 5141, 4989, 5046, 1072, 4996, 1083, 21, 575, 5881, 5751, 5140, 5885, 5778, 5315, 6799, 8821, 6090, 1113, 7418, 5836, 7020, 1187, 1378, 9019, 5834, 10247, 10302, 8642, 504, 5137, 8490, 5374, 11778, 2118, 11, 4965, 5842, 11822, 11751, 15973, 15975, 5851, 11734, 15977, 11643, 6164, 1377, 6166, 8674, 11183, 11188, 2]
 // Exports: default, plainMentionRenderer, plainSpoilerRenderer
 
 // Module 5880 (MarkupReactRules)
@@ -76,7 +76,7 @@ class MarkupText {
     let tmp = null;
     const merged = Object.assign(color, Object.assign({ children: 0, color: 0, variant: 0 }));
     if (react.useContext(Spoiler.SpoilerHiddenContext)) {
-      const obj = { style: items, onPress: "add", onLongPress: "gap", accessibilityRole: "T" };
+      const obj = { style: items, onPress: "match", onLongPress: "padding", accessibilityRole: "__esModule" };
       items = [merged.style, obj.spoilerHiddenText];
       tmp = obj;
     }
@@ -633,7 +633,7 @@ function MarkupStaticRouteLink(state) {
   const node = state.node;
   ({ output, styles, variants } = state);
   let tmp = closure_16();
-  let SignPostIcon = state(15963).SignPostIcon;
+  let SignPostIcon = state(15973).SignPostIcon;
   const channelId = node.channelId;
   if (StaticChannelId.GUILD_HOME !== channelId) {
     if (StaticChannelId.SERVER_GUIDE !== channelId) {
@@ -644,7 +644,7 @@ function MarkupStaticRouteLink(state) {
           }
         }
       }
-      SignPostIcon = tmp2(15965).ChannelListMagnifyingGlassIcon;
+      SignPostIcon = tmp2(15975).ChannelListMagnifyingGlassIcon;
     }
     let str = "button";
     if (state.noStyleAndInteraction) {
@@ -718,7 +718,7 @@ function MarkupStaticRouteLink(state) {
       return tmp7Result;
     }
   }
-  SignPostIcon = tmp2(15963).SignPostIcon;
+  SignPostIcon = tmp2(15973).SignPostIcon;
 }
 function MarkupAttachmentLink(state) {
   let SMALL;
@@ -744,7 +744,7 @@ function MarkupAttachmentLink(state) {
     str2 = "body-xs/medium";
   }
   let obj = { variant: str2, style: tmp.channelMentionText, children: items };
-  const obj2 = { themedColor: node(575).colors.MENTION_FOREGROUND, source: node(15967), size: SMALL };
+  const obj2 = { themedColor: node(575).colors.MENTION_FOREGROUND, source: node(15977), size: SMALL };
   const ThemedIcon = tmp3(1187).ThemedIcon;
   const fontScale = closure_4.getFontScale();
   if (fontScale < 1) {

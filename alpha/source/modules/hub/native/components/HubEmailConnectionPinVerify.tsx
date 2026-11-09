@@ -1,14 +1,14 @@
-// Module ID: 14587
-// Function ID: 14588
+// Module ID: 14588
+// Function ID: 14589
 // Name: HubEmailConnectionPinVerify
-// Dependencies: [32, 5, 19, 17, 5011, 21, 5140, 5837, 7312, 14588, 11649, 12, 14577, 1113, 6579, 7594, 14572, 5842, 14589, 5751, 7311, 2]
+// Dependencies: [32, 5, 19, 17, 5011, 21, 5140, 5837, 7312, 14589, 11649, 12, 14578, 1113, 6579, 7594, 14573, 5842, 14590, 5751, 7311, 2]
 // Exports: default
 
-// Module 14587 (HubEmailConnectionPinVerify)
+// Module 14588 (HubEmailConnectionPinVerify)
 import react_native from "react-native" /* 17 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 5837 */;
 import EnvelopeIcon from "EnvelopeIcon" /* 7312 */;
-import HubJoinManagerDefault from "HubJoinManager" /* 14588 */;
+import HubJoinManagerDefault from "HubJoinManager" /* 14589 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -58,7 +58,7 @@ export default function HubEmailConnectionPinVerify(email) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c4;
@@ -112,7 +112,7 @@ export default function HubEmailConnectionPinVerify(email) {
               c4 = 0;
             }
             c6 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp34) {
           closure_3 = tmp34;
@@ -157,7 +157,7 @@ export default function HubEmailConnectionPinVerify(email) {
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c4;
@@ -216,7 +216,7 @@ export default function HubEmailConnectionPinVerify(email) {
             c4 = 0;
           }
           c6 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp34) {
         closure_3 = tmp34;

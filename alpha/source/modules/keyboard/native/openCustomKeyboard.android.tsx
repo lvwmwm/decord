@@ -1,10 +1,10 @@
-// Module ID: 14023
-// Function ID: 14024
+// Module ID: 14024
+// Function ID: 14025
 // Name: openCustomKeyboard
 // Dependencies: [1497, 7270, 5326, 13014, 2]
 // Exports: default
 
-// Module 14023 (openCustomKeyboard)
+// Module 14024 (openCustomKeyboard)
 import KeyboardUIStore from "KeyboardUIStore" /* 1497 */;
 import PortalKeyboardUIStore from "PortalKeyboardUIStore" /* 5326 */;
 import RunAfterInteractionsUtils from "RunAfterInteractionsUtils" /* 7270 */;

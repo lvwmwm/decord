@@ -1,26 +1,26 @@
-// Module ID: 15796
-// Function ID: 15797
+// Module ID: 15806
+// Function ID: 15807
 // Name: HoldingGemSpotIllustration
-// Dependencies: [19, 21, 15797, 15798, 15799, 7135, 5842, 2]
+// Dependencies: [19, 21, 15807, 15808, 15809, 7135, 5842, 2]
 // Exports: HoldingGemSpotIllustration
 
-// Module 15796 (HoldingGemSpotIllustration)
+// Module 15806 (HoldingGemSpotIllustration)
 import Fragment from "Fragment" /* 21 */;
 import react_native from "react-native" /* 7135 */;
-import _modDef15797 from "module_15797" /* 15797 */;
-import _modDef15798 from "module_15798" /* 15798 */;
-import _modDef15799 from "module_15799" /* 15799 */;
+import _modDef15807 from "module_15807" /* 15807 */;
+import _modDef15808 from "module_15808" /* 15808 */;
+import _modDef15809 from "module_15809" /* 15809 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef15797 };
+let obj2 = { uri: _modDef15807 };
 obj[1] = obj2;
-let obj3 = { uri: _modDef15798 };
+let obj3 = { uri: _modDef15808 };
 obj[2] = obj3;
-obj[3] = { uri: _modDef15799 };
-({ uri: _modDef15799 });
+obj[3] = { uri: _modDef15809 };
+({ uri: _modDef15809 });
 let size = size_mod;
 const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/HoldingGemSpotIllustration.native.tsx");
 

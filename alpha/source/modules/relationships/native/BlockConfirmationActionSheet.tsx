@@ -320,7 +320,7 @@ const memoResult = react.memo(function BlockConfirmationActionSheet(userId) {
                 const obj4 = { value, done: true };
                 return obj4;
               } else {
-                return { value: "HermesInternal", done: "HermesInternal" };
+                return { value: "HermesInternal", done: null };
               }
             } else {
               try {
@@ -361,7 +361,7 @@ const memoResult = react.memo(function BlockConfirmationActionSheet(userId) {
                 const obj3 = c1(c2[33]);
                 obj3.hideActionSheet(closure_1_11);
                 c2 = 3;
-                return { value: "HermesInternal", done: "HermesInternal" };
+                return { value: "HermesInternal", done: null };
               } catch (tmp23) {
                 c2 = 3;
                 throw tmp23;

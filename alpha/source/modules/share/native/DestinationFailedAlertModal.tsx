@@ -1,10 +1,10 @@
-// Module ID: 13653
-// Function ID: 13654
+// Module ID: 13654
+// Function ID: 13655
 // Name: DestinationFailedAlertModal
-// Dependencies: [19, 17, 4989, 5011, 5890, 5082, 1385, 1083, 21, 5140, 575, 5776, 10918, 1187, 5751, 504, 5194, 13654, 6096, 6096, 1113, 2]
+// Dependencies: [19, 17, 4989, 5011, 5890, 5082, 1385, 1083, 21, 5140, 575, 5776, 10918, 1187, 5751, 504, 5194, 13655, 6096, 6096, 1113, 2]
 // Exports: default
 
-// Module 13653 (DestinationFailedAlertModal)
+// Module 13654 (DestinationFailedAlertModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
@@ -61,7 +61,7 @@ function FailedUserRow(user) {
   let tmp9Result = null;
   if (null != user) {
     const obj3 = { style: tmp.row, children: items2 };
-    const obj4 = { user, guildId: "Boolean", status: tmp13, isMobileOnline: tmp6, isVROnline: tmp7, size: user(1187).AvatarSizes.XSMALL, avatarDecoration: user.avatarDecoration, autoStatusCutout: null };
+    const obj4 = { user, guildId: "Boolean", status: tmp13, isMobileOnline: tmp6, isVROnline: tmp7, size: user(1187).AvatarSizes.XSMALL, avatarDecoration: user.avatarDecoration, autoStatusCutout: 1.5 };
     tmp13 = null;
     const Avatar = tmp2(1187).Avatar;
     const tmp10 = View;
@@ -96,9 +96,9 @@ function FailedChannelRow(channel) {
     return getGuild(guild_id);
   });
   const obj2 = { style: tmp.row, children: items1 };
-  const obj3 = { "aria-label": "", guild: stateFromStores, channel, size: channel(13654).GuildIconWithChannelTypeSizes.SMALL_32 };
+  const obj3 = { "aria-label": "", guild: stateFromStores, channel, size: channel(13655).GuildIconWithChannelTypeSizes.SMALL_32 };
   const tmp3 = useChannelNameDefault(channel);
-  const GuildIconWithChannelType = channel(13654).GuildIconWithChannelType;
+  const GuildIconWithChannelType = channel(13655).GuildIconWithChannelType;
   items1 = [closure_10(GuildIconWithChannelType, obj3), ];
   const obj4 = { style: tmp.label, variant: "body-md/medium", lineClamp: 1, ellipsizeMode: "tail", children: tmp3 };
   items1[1] = closure_10(channel(5751).Text, obj4);

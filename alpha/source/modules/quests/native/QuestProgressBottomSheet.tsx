@@ -1,10 +1,10 @@
-// Module ID: 19507
-// Function ID: 19508
+// Module ID: 19520
+// Function ID: 19521
 // Name: QuestProgressBottomSheet
-// Dependencies: [5, 19, 17, 6901, 7922, 6836, 5781, 21, 5140, 575, 504, 14934, 6839, 8098, 9287, 1113, 8844, 7391, 7945, 12005, 9772, 14931, 17412, 11061, 5374, 9769, 9010, 9795, 5388, 5842, 5715, 1092, 14927, 9244, 17440, 6159, 5751, 5758, 17407, 2]
+// Dependencies: [5, 19, 17, 6901, 7922, 6836, 5781, 21, 5140, 575, 504, 14935, 6839, 8098, 9287, 1113, 8844, 7391, 7945, 12005, 9772, 14932, 17423, 11061, 5374, 9769, 9010, 9795, 5388, 5842, 5715, 1092, 14928, 9244, 17451, 6159, 5751, 5758, 17418, 2]
 // Exports: default
 
-// Module 19507 (QuestProgressBottomSheet)
+// Module 19520 (QuestProgressBottomSheet)
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
@@ -80,7 +80,7 @@ function QuestProgressBottomSheet(quest) {
   const intl = tmp(1113).intl;
   let obj3 = { questName: quest.config.messages.questName };
   const formatToPlainStringResult = intl.formatToPlainString(tmp(1113).t.EAYZAr, obj3);
-  const tmpResult4 = tmp(14931);
+  const tmpResult4 = tmp(14932);
   let obj4 = { quest, taskDetails: questTaskDetails, location: QuestsExperimentLocations.QUEST_ACTIVITY_BOTTOM_SHEET, sourceQuestContent: tmp(6839).QuestContent.RUNNING_ACTIVITY };
   const userStatus = quest.userStatus;
   let completedAt;
@@ -100,7 +100,7 @@ function QuestProgressBottomSheet(quest) {
   }
   const tmpResult5 = tmp(9772);
   const isQuestAccessSuspended = tmpResult5.useIsQuestAccessSuspended();
-  const tmpResult6 = tmp(17412);
+  const tmpResult6 = tmp(17423);
   let obj5 = { quest, questContent: tmp(6839).QuestContent.RUNNING_ACTIVITY, sourceQuestContent: tmp(6839).QuestContent.RUNNING_ACTIVITY };
   const questRewardClaimHandler = tmpResult6.useQuestRewardClaimHandler(obj5);
   ({ isClaiming, claim } = questRewardClaimHandler);
@@ -119,7 +119,7 @@ function QuestProgressBottomSheet(quest) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -156,7 +156,7 @@ function QuestProgressBottomSheet(quest) {
             }
           }
           c3 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp18) {
         c3 = 3;
@@ -208,7 +208,7 @@ function QuestProgressBottomSheet(quest) {
   size = { quest, height: num2, width: num };
   num = 80;
   num2 = 80;
-  tmp7Result4 = claim(14927);
+  tmp7Result4 = claim(14928);
   if (isScreenLandscape) {
     num2 = 56;
   }
@@ -222,7 +222,7 @@ function QuestProgressBottomSheet(quest) {
   intl2 = tmp(1113).intl;
   items5 = [closure_11(IconButton, obj12), ];
   const obj13 = { quest, showShareLink: true, location: tmp12.QUEST_ACTIVITY_BOTTOM_SHEET, sourceQuestContent: tmp(6839).QuestContent.RUNNING_ACTIVITY, children: contextMenuButton };
-  const tmp7Result5 = claim(17440);
+  const tmp7Result5 = claim(17451);
   items5[1] = closure_11(tmp7Result5, obj13);
   items3[3] = closure_12(closure_5, obj11);
   const items6 = [closure_12(closure_5, obj6), ];
@@ -259,7 +259,7 @@ function QuestProgressBottomSheet(quest) {
   tmp7Result6 = undefined;
   if (isQuestAccessSuspended) {
     if (tmp15) {
-      tmp7Result6 = tmp7(17407);
+      tmp7Result6 = tmp7(17418);
     }
   }
   const obj19 = { handleDisabled: true, startExpanded: true, children: items6 };
@@ -342,7 +342,7 @@ export default function QuestProgressBottomSheetConnected(questId) {
           return unpackModuleId(QuestProgressBottomSheet, obj);
         }
     };
-    const QuestContentImpressionTrackerNative = tmp(14934).QuestContentImpressionTrackerNative;
+    const QuestContentImpressionTrackerNative = tmp(14935).QuestContentImpressionTrackerNative;
     tmp4 = closure_11(QuestContentImpressionTrackerNative, obj2);
   }
   return tmp4;

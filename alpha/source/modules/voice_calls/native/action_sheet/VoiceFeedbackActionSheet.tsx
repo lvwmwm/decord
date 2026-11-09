@@ -1,10 +1,10 @@
-// Module ID: 19854
-// Function ID: 19855
+// Module ID: 19867
+// Function ID: 19868
 // Name: VoiceFeedbackActionSheet
-// Dependencies: [19, 1072, 10279, 21, 1252, 1113, 2928, 10282, 19848, 19855, 19849, 5374, 19850, 2118, 5836, 2]
+// Dependencies: [19, 1072, 10279, 21, 1252, 1113, 2928, 10282, 19861, 19868, 19862, 5374, 19863, 2118, 5836, 2]
 // Exports: default
 
-// Module 19854 (VoiceFeedbackActionSheet)
+// Module 19867 (VoiceFeedbackActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import Constants2 from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
@@ -12,9 +12,9 @@ import asyncRequire from "asyncRequire" /* 2118 */;
 import _modDef2928 from "module_2928" /* 2928 */;
 import ToastUtils from "ToastUtils" /* 5836 */;
 import FeedbackUtils from "FeedbackUtils" /* 10282 */;
-import FeedbackActionSheetV2Default from "FeedbackActionSheetV2" /* 19848 */;
-import shouldShowLogUploadForCategory from "shouldShowLogUploadForCategory" /* 19849 */;
-import trackVoiceFeedbackDefault from "trackVoiceFeedback" /* 19855 */;
+import FeedbackActionSheetV2Default from "FeedbackActionSheetV2" /* 19861 */;
+import shouldShowLogUploadForCategory from "shouldShowLogUploadForCategory" /* 19862 */;
+import trackVoiceFeedbackDefault from "trackVoiceFeedback" /* 19868 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 10279 */;
 import size from "module_2" /* 2 */;
@@ -130,7 +130,7 @@ export default function VoiceFeedbackActionSheet(analyticsData) {
           const obj7 = { mediaSessionId: null, rtcConnectionId: null };
           ({ media_session_id: obj6.mediaSessionId, rtc_connection_id: obj6.rtcConnectionId } = tmp7);
           const tmp20Result = tmp20(5374);
-          tmp20Result.openLazy(asyncRequire(19850, dependencyMap.paths), "UploadLogs", obj7);
+          tmp20Result.openLazy(asyncRequire(19863, dependencyMap.paths), "UploadLogs", obj7);
         }
       }
       const obj4 = ToastUtils;

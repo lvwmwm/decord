@@ -1,10 +1,10 @@
-// Module ID: 20168
-// Function ID: 20169
+// Module ID: 20181
+// Function ID: 20182
 // Name: GuildSettingsRoleCreateModal
-// Dependencies: [5, 32, 19, 17, 5007, 5046, 1385, 9155, 20169, 1072, 21, 5140, 5714, 575, 1252, 5889, 5751, 1113, 20167, 504, 38, 5077, 1499, 7172, 7064, 6957, 5836, 20166, 5374, 18688, 2118, 6159, 7148, 7126, 7038, 16756, 1090, 5758, 20173, 20174, 9154, 20175, 5735, 5390, 6153, 7271, 5721, 7231, 2]
+// Dependencies: [5, 32, 19, 17, 5007, 5046, 1385, 9155, 20182, 1072, 21, 5140, 5714, 575, 1252, 5889, 5751, 1113, 20180, 504, 38, 5077, 1499, 7172, 7064, 6957, 5836, 20179, 5374, 18701, 2118, 6159, 7148, 7126, 7038, 16767, 1090, 5758, 20186, 20187, 9154, 20188, 5735, 5390, 6153, 7271, 5721, 7231, 2]
 // Exports: default
 
-// Module 20168 (GuildSettingsRoleCreateModal)
+// Module 20181 (GuildSettingsRoleCreateModal)
 import _modDef38 from "module_38" /* 38 */;
 import nativeDefault from "native" /* 575 */;
 import intl9 from "intl" /* 1113 */;
@@ -21,7 +21,7 @@ import react_native from "react-native" /* 6153 */;
 import GuildActionCreatorsDefault from "GuildActionCreators" /* 6957 */;
 import NavigatorHeader from "NavigatorHeader" /* 7064 */;
 import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9154 */;
-import GuildSettingsRoleCreateModalActionCreatorsDefault from "GuildSettingsRoleCreateModalActionCreators" /* 20167 */;
+import GuildSettingsRoleCreateModalActionCreatorsDefault from "GuildSettingsRoleCreateModalActionCreators" /* 20180 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -29,7 +29,7 @@ import react_native2 from "react-native" /* 17 */;
 import GuildRoleStore from "GuildRoleStore" /* 5046 */;
 import UserStore from "UserStore" /* 1385 */;
 import GuildSettingsStore from "GuildSettingsStore" /* 9155 */;
-import GuildSettingsRoleConstants from "GuildSettingsRoleConstants" /* 20169 */;
+import GuildSettingsRoleConstants from "GuildSettingsRoleConstants" /* 20182 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5140 */;
@@ -53,8 +53,8 @@ let obj2;
 let obj3;
 let obj4;
 let obj5;
-const f120436 = () => props.getProps().guild;
-const f120437 = () => props.getProps();
+const f120507 = () => props.getProps().guild;
+const f120508 = () => props.getProps();
 function RoleCreateScene() {
   let Button;
   let TableRow;
@@ -86,7 +86,7 @@ function RoleCreateScene() {
   navigation = obj.useNavigation();
   let obj2 = navigation(color[19]);
   const items = [GuildSettingsStore];
-  const stateFromStores = obj2.useStateFromStores(items, f120436);
+  const stateFromStores = obj2.useStateFromStores(items, f120507);
   stateFromStores(color[20])(null != stateFromStores, "useGuildSettingsStoreGuild: Guild cannot be null");
   const useState = onSelect.useState;
   const intl = navigation(color[17]).intl;
@@ -147,7 +147,7 @@ function RoleCreateScene() {
           let obj4 = { value, done: true };
           return obj4;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c2;
@@ -239,7 +239,7 @@ function RoleCreateScene() {
               c2 = 0;
             }
             c4 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp22) {
           if (0 === c2) {
@@ -257,7 +257,7 @@ function RoleCreateScene() {
     metroImportAll.dismiss();
     const obj = ActionSheetActionCreatorsDefault;
     const obj2 = { color, onSelect };
-    obj.openLazy(asyncRequire(18688, dependencyMap.paths), "RoleColorPicker", obj2);
+    obj.openLazy(asyncRequire(18701, dependencyMap.paths), "RoleColorPicker", obj2);
   }, items3);
   let tmp17 = closure_22;
   intl2 = navigation(color[17]).intl;
@@ -317,7 +317,7 @@ function RolePermissionTemplate() {
   navigation = obj.useNavigation();
   let obj2 = navigation(onSelect[19]);
   const items = [GuildSettingsStore];
-  const stateFromStoresObject = obj2.useStateFromStoresObject(items, f120437);
+  const stateFromStoresObject = obj2.useStateFromStoresObject(items, f120508);
   const guild = stateFromStoresObject.guild;
   const selectedRoleId = stateFromStoresObject.selectedRoleId;
   let tmp4 = stateFromStores(onSelect[20])(null != guild, "useGuildSettingsStoreGuildWithRole: Guild cannot be null");
@@ -409,7 +409,7 @@ function RoleMembers() {
   navigation = obj.useNavigation();
   let obj2 = navigation(pendingAdditions[19]);
   const items = [GuildSettingsStore];
-  const stateFromStoresObject = obj2.useStateFromStoresObject(items, f120437);
+  const stateFromStoresObject = obj2.useStateFromStoresObject(items, f120508);
   const guild = stateFromStoresObject.guild;
   const selectedRoleId = stateFromStoresObject.selectedRoleId;
   stateFromStores(pendingAdditions[20])(null != guild, "useGuildSettingsStoreGuildWithRole: Guild cannot be null");
@@ -533,7 +533,7 @@ function ModalScene(hasSkipButton) {
   navigation = obj.useNavigation();
   let obj2 = navigation(ref[19]);
   const items = [GuildSettingsStore];
-  stateFromStores = obj2.useStateFromStores(items, f120436);
+  stateFromStores = obj2.useStateFromStores(items, f120507);
   stateFromStores(ref[20])(null != stateFromStores, "useGuildSettingsStoreGuild: Guild cannot be null");
   let obj3 = navigation(ref[43]);
   const isScreenReaderEnabled = obj3.useIsScreenReaderEnabled();
@@ -632,7 +632,7 @@ export default function GuildSettingsRoleCreateModal() {
   let stateFromStores;
   let obj = stateFromStores(504);
   const items = [GuildSettingsStore];
-  stateFromStores = obj.useStateFromStores(items, f120436);
+  stateFromStores = obj.useStateFromStores(items, f120507);
   const tmp2 = _modDef38(null != stateFromStores, "useGuildSettingsStoreGuild: Guild cannot be null");
   useMountEffectDefault(() => {
     const FLOW_INITIALIZED = constants.FLOW_INITIALIZED;

@@ -1,10 +1,10 @@
-// Module ID: 16848
-// Function ID: 16849
+// Module ID: 16859
+// Function ID: 16860
 // Name: ChangeAvatarActionSheet
-// Dependencies: [19, 17, 1385, 1072, 21, 5140, 575, 504, 2171, 7426, 7382, 1113, 9612, 7126, 7038, 8246, 16753, 2]
+// Dependencies: [19, 17, 1385, 1072, 21, 5140, 575, 504, 2171, 7426, 7382, 1113, 9612, 7126, 7038, 8246, 16764, 2]
 // Exports: default
 
-// Module 16848 (ChangeAvatarActionSheet)
+// Module 16859 (ChangeAvatarActionSheet)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
@@ -29,7 +29,7 @@ let obj4;
 let obj5;
 let obj6;
 let tmp5;
-const UserProfileUpsellButtonDefault = tmp5(16753);
+const UserProfileUpsellButtonDefault = tmp5(16764);
 const View = react_native.View;
 const AnalyticsObjects = Constants.AnalyticsObjects;
 ({ jsx: metroRequire, jsxs: metroImportDefault, Fragment: metroImportAll } = Fragment);

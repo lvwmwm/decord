@@ -1,16 +1,16 @@
-// Module ID: 14737
-// Function ID: 14738
+// Module ID: 14738
+// Function ID: 14739
 // Name: virtual_currency/BalanceWidgetPill
-// Dependencies: [19, 17, 21, 5140, 5764, 575, 1377, 14738, 1113, 14739, 14744, 14745, 2]
+// Dependencies: [19, 17, 21, 5140, 5764, 575, 1377, 14739, 1113, 14740, 14745, 14746, 2]
 
-// Module 14737 (virtual_currency/BalanceWidgetPill)
+// Module 14738 (virtual_currency/BalanceWidgetPill)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import ButtonConstants from "ButtonConstants" /* 5764 */;
-import useVirtualCurrencyBalanceAnimationData from "useVirtualCurrencyBalanceAnimationData" /* 14738 */;
-import OrbLottieAnimation from "OrbLottieAnimation" /* 14739 */;
-import AnimationUtils from "AnimationUtils" /* 14745 */;
+import useVirtualCurrencyBalanceAnimationData from "useVirtualCurrencyBalanceAnimationData" /* 14739 */;
+import OrbLottieAnimation from "OrbLottieAnimation" /* 14740 */;
+import AnimationUtils from "AnimationUtils" /* 14746 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5140 */;
@@ -73,7 +73,7 @@ class BalanceWidgetPill {
     const obj4 = { style: tmp6.orbsLottieContainer, children: _false(OrbLottieAnimation.OrbLottieAnimation, { ref: lottieRef, animationType: currentAnimationType }) };
     items1[0] = _false(View, obj4);
     const obj5 = { style: tmp6.balanceCounterContainer, children: _false(BalanceCounter, obj6) };
-    BalanceCounter = tmp3(14744).BalanceCounter;
+    BalanceCounter = tmp3(14745).BalanceCounter;
     if (showInitialRenderedBalance) {
       balance = prop;
     }

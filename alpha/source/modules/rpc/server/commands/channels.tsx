@@ -1,9 +1,9 @@
-// Module ID: 16619
-// Function ID: 16620
+// Module ID: 16629
+// Function ID: 16630
 // Name: channels
-// Dependencies: [32, 5, 4993, 4989, 5011, 5072, 5893, 5043, 6811, 5803, 6583, 1072, 16598, 5799, 9414, 11056, 16602, 11976, 16606, 8984, 9417, 12, 9408, 6904, 6761, 6178, 1099, 9025, 2]
+// Dependencies: [32, 5, 4993, 4989, 5011, 5072, 5893, 5043, 6811, 5803, 6583, 1072, 16608, 5799, 9414, 11056, 16612, 11976, 16616, 8984, 9417, 12, 9408, 6904, 6761, 6178, 1099, 9025, 2]
 
-// Module 16619 (channels)
+// Module 16629 (channels)
 import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 6904 */;
 import OAuth2Scopes from "OAuth2Scopes" /* 8984 */;
 import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 9025 */;
@@ -11,7 +11,7 @@ import isPostMessageSocketDefault from "isPostMessageSocket" /* 9408 */;
 import RPCErrorDefault from "RPCError" /* 9414 */;
 import botScopedAccess from "botScopedAccess" /* 9417 */;
 import RPCHelpers from "RPCHelpers" /* 11976 */;
-import guildVoice from "guildVoice" /* 16602 */;
+import guildVoice from "guildVoice" /* 16612 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ChannelRecord from "ChannelRecord" /* 4993 */;
@@ -24,7 +24,7 @@ import SpeakingStore from "SpeakingStore" /* 6811 */;
 import VoiceStateStore from "VoiceStateStore" /* 5803 */;
 import Constants_mod from "Constants" /* 6583 */;
 import Constants_mod2 from "Constants" /* 1072 */;
-import CONTEXT_MENU_ICON_NAMES_mod from "CONTEXT_MENU_ICON_NAMES" /* 16606 */;
+import CONTEXT_MENU_ICON_NAMES_mod from "CONTEXT_MENU_ICON_NAMES" /* 16616 */;
 import size from "module_2" /* 2 */;
 
 let c5, c6, speaking_available, state;
@@ -90,7 +90,7 @@ obj = function _getGuildVoiceSnapshot() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -271,7 +271,7 @@ let obj4 = {
     const socket = args.socket;
     let guild;
     const botScopeOnly = args.botScopeOnly;
-    obj = socket(16602);
+    obj = socket(16612);
     if (obj.isGuildVoiceSocket(socket)) {
       const self3 = this;
       const self4 = this;
@@ -393,7 +393,7 @@ let obj8 = {
   handler(args) {
     let server;
     let socket;
-    const f111634 = function(type) {
+    const f111698 = function(type) {
       if (null == type) {
         const _HermesInternal = HermesInternal;
         const self5 = this;
@@ -611,8 +611,8 @@ let obj8 = {
           const tmp = new channel_id(flag2[14])(obj, "Request to select voice channel timed out.");
           throw tmp;
         });
-        const then = catchPromise.then(f111634).then;
-        catchPromise.then(f111634);
+        const then = catchPromise.then(f111698).then;
+        catchPromise.then(f111698);
         let closure_0 = obj9(function*(arg0, value) {
           function validateUserAllowsJoiningVoice() {
             return closure_1_18(...arguments);
@@ -628,7 +628,7 @@ let obj8 = {
               const obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           } else {
             try {

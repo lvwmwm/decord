@@ -21,6 +21,16 @@ function isProjectOwner(project) {
   }
   return owner_user_id === id;
 }
+function isRailProject(owner_user_id) {
+  owner_user_id = owner_user_id.owner_user_id;
+  const currentUser = UserStore.getCurrentUser();
+  let id;
+  if (currentUser != null) {
+    id = currentUser.id;
+  }
+  const hasItem = owner_user_id === id || set2.has(owner_user_id.id);
+  return hasItem;
+}
 const map = new Map();
 const map1 = new Map();
 const map2 = new Map();
@@ -53,16 +63,17 @@ class ConjureProjectStore extends Store {
   }
   getRailProjects() {
     const arr = Array.from(map.values());
-    return arr.filter((owner_user_id) => {
-      owner_user_id = owner_user_id.owner_user_id;
-      currentUser = currentUser.getCurrentUser();
-      let id;
-      if (currentUser != null) {
-        id = currentUser.id;
-      }
-      const hasItem = owner_user_id === id || set.has(owner_user_id.id);
-      return hasItem;
-    });
+    return arr.filter(isRailProject);
+  }
+  isRailProject(owner_user_id) {
+    owner_user_id = owner_user_id.owner_user_id;
+    const currentUser = UserStore.getCurrentUser();
+    let id;
+    if (currentUser != null) {
+      id = currentUser.id;
+    }
+    const hasItem = owner_user_id === id || set2.has(owner_user_id.id);
+    return hasItem;
   }
   getUnloadedParticipatingProjectIds() {
     const arr = Array.from(set2);

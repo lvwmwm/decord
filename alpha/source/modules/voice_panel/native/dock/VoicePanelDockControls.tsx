@@ -1,9 +1,9 @@
-// Module ID: 19594
-// Function ID: 19595
+// Module ID: 19607
+// Function ID: 19608
 // Name: VoicePanelDockControls
-// Dependencies: [19, 17, 4989, 6930, 11381, 21, 5140, 575, 504, 12136, 7598, 5724, 5376, 8098, 1113, 9320, 12137, 6761, 9956, 14345, 11362, 19592, 19595, 19596, 2]
+// Dependencies: [19, 17, 4989, 6930, 11381, 21, 5140, 575, 504, 12136, 7598, 5724, 5376, 8098, 1113, 9320, 12137, 6761, 9956, 14346, 11362, 19605, 19608, 19609, 2]
 
-// Module 19594 (VoicePanelDockControls)
+// Module 19607 (VoicePanelDockControls)
 import react_native from "react-native" /* 17 */;
 import native from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
@@ -14,10 +14,10 @@ import AssetRegistryDefault from "AssetRegistry" /* 9956 */;
 import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11362 */;
 import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11381 */;
 import VoiceActionUtils from "VoiceActionUtils" /* 12136 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 14345 */;
-import useDockBoxShadowDefault from "useDockBoxShadow" /* 19592 */;
-import useSoundboardConfig from "useSoundboardConfig" /* 19595 */;
-import VoicePanelDockButtonRimDefault from "VoicePanelDockButtonRim" /* 19596 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 14346 */;
+import useDockBoxShadowDefault from "useDockBoxShadow" /* 19605 */;
+import useSoundboardConfig from "useSoundboardConfig" /* 19608 */;
+import VoicePanelDockButtonRimDefault from "VoicePanelDockButtonRim" /* 19609 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4989 */;
 import VoicePanelStore from "VoicePanelStore" /* 6930 */;

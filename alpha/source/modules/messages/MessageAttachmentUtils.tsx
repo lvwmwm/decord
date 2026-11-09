@@ -1,10 +1,10 @@
-// Module ID: 14007
-// Function ID: 14008
+// Module ID: 14008
+// Function ID: 14009
 // Name: MessageAttachmentUtils
 // Dependencies: [5072, 1072, 7527, 7533, 7532, 9005, 563, 4965, 8919, 1113, 2]
 // Exports: getObscureReasonForAttachment, getObscureReasonForEmbed, getObscureReasonForUnfurledMediaItem, getObscuredAlt, useShouldObscure
 
-// Module 14007 (MessageAttachmentUtils)
+// Module 14008 (MessageAttachmentUtils)
 import Constants from "Constants" /* 1072 */;
 import intl3 from "intl" /* 1113 */;
 import ObscuredMediaUtils from "ObscuredMediaUtils" /* 7527 */;

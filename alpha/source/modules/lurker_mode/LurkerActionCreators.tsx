@@ -31,7 +31,7 @@ let obj = function _stopLurkingAll() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -80,7 +80,7 @@ let obj = function _stopLurkingAll() {
                                   } else if (arg0 === 2) {
                                     return { value, done: true };
                                   } else {
-                                    return { value: "HermesInternal", done: "HermesInternal" };
+                                    return { value: "HermesInternal", done: null };
                                   }
                                 } else {
                                   try {
@@ -127,7 +127,7 @@ let obj = function _stopLurkingAll() {
                                         c5 = 0;
                                       }
                                       c7 = 3;
-                                      return { value: "HermesInternal", done: "HermesInternal" };
+                                      return { value: "HermesInternal", done: null };
                                     }
                                   } catch (tmp18) {
                                     closure_4 = tmp18;
@@ -159,7 +159,7 @@ let obj = function _stopLurkingAll() {
           return obj;
         }
         c1 = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp10) {
         c1 = 3;
         throw tmp10;

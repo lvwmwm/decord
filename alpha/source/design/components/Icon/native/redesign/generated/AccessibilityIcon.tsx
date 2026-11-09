@@ -1,14 +1,14 @@
-// Module ID: 17630
-// Function ID: 17631
+// Module ID: 17641
+// Function ID: 17642
 // Name: AccessibilityIcon
-// Dependencies: [19, 21, 575, 5841, 17631, 2]
+// Dependencies: [19, 21, 575, 5841, 17642, 2]
 // Exports: AccessibilityIcon
 
-// Module 17630 (AccessibilityIcon)
+// Module 17641 (AccessibilityIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import BaseIconImage2 from "BaseIconImage" /* 5841 */;
-import AssetRegistry from "AssetRegistry" /* 17631 */;
+import AssetRegistry from "AssetRegistry" /* 17642 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

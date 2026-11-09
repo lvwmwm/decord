@@ -1,10 +1,10 @@
-// Module ID: 15602
-// Function ID: 15603
+// Module ID: 15612
+// Function ID: 15613
 // Name: ReferralProgramShareConfirmationActionSheet
-// Dependencies: [17, 1072, 21, 5140, 575, 5194, 7709, 1187, 5751, 1113, 5758, 8714, 5374, 7549, 2185, 5388, 7382, 6159, 15603, 2]
+// Dependencies: [17, 1072, 21, 5140, 575, 5194, 7709, 1187, 5751, 1113, 5758, 8714, 5374, 7549, 2185, 5388, 7382, 6159, 15613, 2]
 // Exports: default
 
-// Module 15602 (ReferralProgramShareConfirmationActionSheet)
+// Module 15612 (ReferralProgramShareConfirmationActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -49,7 +49,7 @@ function SharedUser(user) {
   if (tmp6) {
     erroredAvatar = tmp.erroredAvatar;
   }
-  let obj3 = { style: items, size: tmp5(1187).AvatarSizes.REFRESH_MEDIUM_32, user, guildId: "a" };
+  let obj3 = { style: items, size: tmp5(1187).AvatarSizes.REFRESH_MEDIUM_32, user, guildId: "Array" };
   items[1] = erroredAvatar;
   items1 = [closure_5(Avatar, obj3), , ];
   if (tmp6) {
@@ -131,7 +131,7 @@ export default function ReferralProgramShareConfirmationActionSheet(trialCreatio
   const formatResult = format(AwGSWl, obj);
   const BottomSheet = tmp5(5388).BottomSheet;
   obj4 = { children: items };
-  const obj5 = { style: tmp.headerAsset, children: closure_5(tmp5(15603).FistBumpSpotIllustration, {}) };
+  const obj5 = { style: tmp.headerAsset, children: closure_5(tmp5(15613).FistBumpSpotIllustration, {}) };
   Stack = tmp5(6159).Stack;
   items = [closure_5(View, obj5), , , ];
   const obj6 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", style: tmp.header, children: stringResult };

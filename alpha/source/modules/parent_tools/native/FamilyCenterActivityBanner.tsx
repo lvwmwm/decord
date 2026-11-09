@@ -1,10 +1,10 @@
-// Module ID: 17086
-// Function ID: 17087
+// Module ID: 17097
+// Function ID: 17098
 // Name: FamilyCenterActivityBanner
-// Dependencies: [19, 17, 21, 5140, 8440, 8441, 17087, 575, 13593, 1113, 2664, 5842, 17094, 17095, 5751, 2]
+// Dependencies: [19, 17, 21, 5140, 8440, 8441, 17098, 575, 13594, 1113, 2664, 5842, 17105, 17106, 5751, 2]
 // Exports: default
 
-// Module 17086 (FamilyCenterActivityBanner)
+// Module 17097 (FamilyCenterActivityBanner)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
@@ -13,7 +13,7 @@ import Text_Text from "Text/Text" /* 5751 */;
 import FastImageDefault from "FastImage" /* 5842 */;
 import useUserLinks from "useUserLinks" /* 8440 */;
 import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8441 */;
-import useAgeSpecificText3 from "useAgeSpecificText" /* 13593 */;
+import useAgeSpecificText3 from "useAgeSpecificText" /* 13594 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5140 */;
@@ -25,7 +25,7 @@ let obj2;
 let obj3;
 let obj4;
 let tmp2;
-const FamilyCenterBannerButton = tmp2(17087);
+const FamilyCenterBannerButton = tmp2(17098);
 function FamilyCenterActivityBannerButton() {
   let tmp2Result;
   const tmp = closure_6();
@@ -77,7 +77,7 @@ export default function FamilyCenterActivityBanner() {
   const intl4 = intl5.intl;
   const obj2 = { style: tmp4.container, children: items };
   const ageSpecificText2 = useAgeSpecificText2(formatResult, intl4.format(_modDef2664.EMCf6j, { articleLink: "https://support.discord.com/hc/articles/14155043715735" }));
-  const obj3 = { source: importDefault(tmp3 ? 17094 : 17095), style: tmp4.art };
+  const obj3 = { source: importDefault(tmp3 ? 17105 : 17106), style: tmp4.art };
   const tmp16 = FastImageDefault;
   items = [React3(tmp16, obj3), , , ];
   const obj4 = { style: tmp4.header, variant: "heading-lg/semibold", children: ageSpecificText };

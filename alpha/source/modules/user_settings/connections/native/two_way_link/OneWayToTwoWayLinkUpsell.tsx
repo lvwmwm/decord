@@ -1,10 +1,10 @@
-// Module ID: 17157
-// Function ID: 17158
+// Module ID: 17168
+// Function ID: 17169
 // Name: OneWayToTwoWayLinkUpsell
 // Dependencies: [19, 17, 1072, 4986, 21, 5140, 575, 6778, 1187, 10639, 5751, 5758, 1113, 2]
 // Exports: OneWayToTwoWayLinkUpsell
 
-// Module 17157 (OneWayToTwoWayLinkUpsell)
+// Module 17168 (OneWayToTwoWayLinkUpsell)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;

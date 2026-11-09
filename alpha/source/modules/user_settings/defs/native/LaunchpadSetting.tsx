@@ -1,9 +1,9 @@
-// Module ID: 17845
-// Function ID: 17846
+// Module ID: 17856
+// Function ID: 17857
 // Name: LaunchpadSetting
 // Dependencies: [8503, 11681, 4965, 1196, 1113, 11685, 11682, 2]
 
-// Module 17845 (LaunchpadSetting)
+// Module 17856 (LaunchpadSetting)
 import intl9 from "intl" /* 1113 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1196 */;
 import UserSettings from "UserSettings" /* 4965 */;

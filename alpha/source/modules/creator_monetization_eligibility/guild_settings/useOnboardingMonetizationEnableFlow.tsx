@@ -1,10 +1,10 @@
-// Module ID: 20320
-// Function ID: 20321
+// Module ID: 20333
+// Function ID: 20334
 // Name: useOnboardingMonetizationEnableFlow
-// Dependencies: [19, 5007, 1385, 1072, 7499, 563, 20321, 20322, 20323, 7491, 1113, 2185, 20324, 2]
+// Dependencies: [19, 5007, 1385, 1072, 7499, 563, 20334, 20335, 20336, 7491, 1113, 2185, 20337, 2]
 // Exports: default
 
-// Module 20320 (useOnboardingMonetizationEnableFlow)
+// Module 20333 (useOnboardingMonetizationEnableFlow)
 import GuildRecord from "GuildRecord" /* 5007 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1385 */;
@@ -57,23 +57,23 @@ export default function useOnboardingMonetizationEnableFlow(features) {
     return tmp3;
   });
   let id;
-  const tmp10 = refresh(20321);
+  const tmp10 = refresh(20334);
   if (features != null) {
     id = features.id;
   }
   ({ submittedRequest, error, loading, createEnableRequest } = tmp10(id));
   let id1;
   tmp10(id);
-  const tmp9Result = refresh(20322);
+  const tmp9Result = refresh(20335);
   if (features != null) {
     id1 = features.id;
   }
   const tmp9ResultResult = tmp9Result(id1);
   refresh = tmp9ResultResult.refresh;
   ({ eligibility, loading: loading2, error: error2 } = tmp9ResultResult);
-  ({ isApplicationRejected, requestCooldownDuration } = refresh(20323)(eligibility));
+  ({ isApplicationRejected, requestCooldownDuration } = refresh(20336)(eligibility));
   let hasItem2;
-  refresh(20323)(eligibility);
+  refresh(20336)(eligibility);
   if (features != null) {
     const features3 = features.features;
     hasItem2 = features3.has(constants.CREATOR_MONETIZABLE_RESTRICTED);
@@ -129,7 +129,7 @@ export default function useOnboardingMonetizationEnableFlow(features) {
       isExpeditedOnboardingGuild = false === hasItem;
     }
     let formatResult1;
-    const tmpResult4 = tmp(20324);
+    const tmpResult4 = tmp(20337);
     const creatorMonetizationAcceptTermsCheckboxText = tmpResult4.getCreatorMonetizationAcceptTermsCheckboxText();
     if (isApplicationRejected) {
       if (true === canApply) {

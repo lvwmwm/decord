@@ -1,9 +1,9 @@
-// Module ID: 16282
-// Function ID: 16283
+// Module ID: 16292
+// Function ID: 16293
 // Name: RadioGroup
-// Dependencies: [19, 17, 1083, 21, 5140, 575, 5200, 7370, 16283, 2]
+// Dependencies: [19, 17, 1083, 21, 5140, 575, 5200, 7370, 16293, 2]
 
-// Module 16282 (RadioGroup)
+// Module 16292 (RadioGroup)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;

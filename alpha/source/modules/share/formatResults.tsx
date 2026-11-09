@@ -1,15 +1,15 @@
-// Module ID: 13615
-// Function ID: 13616
+// Module ID: 13616
+// Function ID: 13617
 // Name: formatResults
-// Dependencies: [5, 9214, 4989, 5072, 1385, 13616, 1072, 9215, 7549, 9227, 1113, 1380, 12, 2]
+// Dependencies: [5, 9214, 4989, 5072, 1385, 13617, 1072, 9215, 7549, 9227, 1113, 1380, 12, 2]
 // Exports: default, destinationKey, formatResultsWithHeaders, getDestinationIdFromChannelId, getDestinationIdFromResult, getOrResolveChannelIdFromDestinationId
 
-// Module 13615 (formatResults)
+// Module 13616 (formatResults)
 import _mod12 from "module_12" /* 12 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7549 */;
 import _mod9215 from "module_9215" /* 9215 */;
 import createAutocompleterResultForChannelIdDefault from "createAutocompleterResultForChannelId" /* 9227 */;
-import ShareConstants from "ShareConstants" /* 13616 */;
+import ShareConstants from "ShareConstants" /* 13617 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import QuickSwitcherStore from "QuickSwitcherStore" /* 9214 */;
 import ChannelStore from "ChannelStore" /* 4989 */;
@@ -48,7 +48,7 @@ let obj = function _getOrResolveChannelIdFromDestinationId() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c4;
@@ -77,13 +77,13 @@ let obj = function _getOrResolveChannelIdFromDestinationId() {
               return obj6;
             } else {
               c1 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           }
         } else if (1 === tmp3) {
           c4 = 0;
           c1 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } else if (arg0 === 1) {
           c1 = 3;
           throw value;
@@ -192,7 +192,7 @@ export default function formatResults(hasQuery) {
   let queryMode;
   let selectedDestinations;
   let targetDestination;
-  const f106163 = (type) => {
+  const f106205 = (type) => {
     obj = queryMode(dependencyMap[11]);
     let isNotNullishResult = obj.isNotNullish(type);
     const tmp = queryMode;
@@ -215,7 +215,7 @@ export default function formatResults(hasQuery) {
     if (channelFilter === undefined) {
       channelFilter = canShareToChannel;
     }
-    return tmp26(results.filter(f106163));
+    return tmp26(results.filter(f106205));
   } else {
     let tmp2 = null;
     if (null != pinnedDestinations) {
@@ -279,7 +279,7 @@ export default function formatResults(hasQuery) {
         tmp21 = canShareToChannel;
       }
       closure_1 = tmp21;
-      const found = items.filter(f106163);
+      const found = items.filter(f106205);
       if (selectedDestinations != null) {
         found1 = selectedDestinations.find((item) => {
           obj = _mod12;

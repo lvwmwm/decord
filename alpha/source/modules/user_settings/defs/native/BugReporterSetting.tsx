@@ -1,10 +1,10 @@
-// Module ID: 18067
-// Function ID: 18068
+// Module ID: 18080
+// Function ID: 18081
 // Name: BugReporterSetting
 // Dependencies: [11219, 6799, 11220, 2118, 11260, 11685, 1113, 12400, 2]
 // Exports: useBugReporterExperimentSettingPredicate
 
-// Module 18067 (BugReporterSetting)
+// Module 18080 (BugReporterSetting)
 import intl2 from "intl" /* 1113 */;
 import asyncRequire from "asyncRequire" /* 2118 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6799 */;

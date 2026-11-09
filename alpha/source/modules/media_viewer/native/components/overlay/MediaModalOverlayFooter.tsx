@@ -1,10 +1,10 @@
-// Module ID: 15015
-// Function ID: 15016
+// Module ID: 15016
+// Function ID: 15017
 // Name: MediaModalOverlayFooter
-// Dependencies: [32, 19, 17, 21, 5140, 575, 1652, 11725, 5370, 1187, 15016, 5420, 1705, 7355, 5723, 15017, 15007, 2]
+// Dependencies: [32, 19, 17, 21, 5140, 575, 1652, 11725, 5370, 1187, 15017, 5420, 1705, 7355, 5723, 15018, 15008, 2]
 // Exports: MediaModalOverlayFooter
 
-// Module 15015 (MediaModalOverlayFooter)
+// Module 15016 (MediaModalOverlayFooter)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
@@ -28,7 +28,7 @@ let tmp3;
 const _mod1652 = tmp(1652);
 let View = react_native.View;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
-let obj = { drawerContainer: { overflow: "hidden", backgroundColor: "channel" }, drawerHeaderTab: obj2, drawerHeader: { backgroundColor: "uri" }, messagePreviewContainer: { marginLeft: 6 }, thumbnailsContainer: { paddingTop: 8 } };
+let obj = { drawerContainer: { overflow: "hidden", backgroundColor: "WireType" }, drawerHeaderTab: obj2, drawerHeader: { backgroundColor: "uri" }, messagePreviewContainer: { marginLeft: 6 }, thumbnailsContainer: { paddingTop: 8 } };
 obj2 = { width: 40, backgroundColor: nativeDefault.unsafe_rawColors.PRIMARY_600 };
 let closure_8 = createStyles.createStyles(obj);
 let c9 = -1;

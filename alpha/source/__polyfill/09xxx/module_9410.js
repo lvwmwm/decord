@@ -20262,7 +20262,7 @@ let fn = () => {
               isIntegerResult = arg0 >= 0;
             }
             assertResult = assert(isIntegerResult, "limit must be a positive integer");
-            return this._test("min", arg0, function() { /* body not rendered: F143204 */ });
+            return this._test("min", arg0, function() { /* body not rendered: F143310 */ });
           }
           max(arg0) {
             closure_0 = arg0;
@@ -20274,7 +20274,7 @@ let fn = () => {
               isIntegerResult = arg0 >= 0;
             }
             assertResult = assert(isIntegerResult, "limit must be a positive integer");
-            return this._test("max", arg0, function() { /* body not rendered: F143205 */ });
+            return this._test("max", arg0, function() { /* body not rendered: F143311 */ });
           }
           length(arg0) {
             closure_0 = arg0;
@@ -20286,7 +20286,7 @@ let fn = () => {
               isIntegerResult = arg0 >= 0;
             }
             assertResult = assert(isIntegerResult, "limit must be a positive integer");
-            return this._test("length", arg0, function() { /* body not rendered: F143206 */ });
+            return this._test("length", arg0, function() { /* body not rendered: F143312 */ });
           }
         }
         if (typeof tmp !== "function") {

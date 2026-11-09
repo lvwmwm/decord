@@ -1,10 +1,10 @@
-// Module ID: 20474
-// Function ID: 20475
+// Module ID: 20487
+// Function ID: 20488
 // Name: SafetyFlowsActionCreators
 // Dependencies: [5, 1072, 6802, 1260, 6580, 2]
 // Exports: completeTask, getCurrentTask, resendVerificationCode
 
-// Module 20474 (SafetyFlowsActionCreators)
+// Module 20487 (SafetyFlowsActionCreators)
 import Constants from "Constants" /* 1072 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
 import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6802 */;
@@ -64,7 +64,7 @@ obj = function _resendVerificationCode() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

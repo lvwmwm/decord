@@ -1,7 +1,7 @@
 // Module ID: 7680
 // Function ID: 7681
 // Name: BillingActionCreators
-// Dependencies: [109, 5, 19, 7681, 7682, 1385, 2176, 7673, 1072, 1083, 21, 3, 1251, 510, 1252, 1282, 4953, 14700, 7669, 14702, 10031, 572, 6589, 1377, 7495, 12, 7678, 11515, 1113, 10679, 6091, 10699, 2118, 6799, 7671, 7668, 2182, 10688, 6579, 15503, 15505, 4960, 6802, 1260, 15506, 15507, 5001, 15508, 10796, 10802, 1266, 2]
+// Dependencies: [109, 5, 19, 7681, 7682, 1385, 2176, 7673, 1072, 1083, 21, 3, 1251, 510, 1252, 1282, 4953, 14701, 7669, 14703, 10031, 572, 6589, 1377, 7495, 12, 7678, 11515, 1113, 10679, 6091, 10699, 2118, 6799, 7671, 7668, 2182, 10688, 6579, 15513, 15515, 4960, 6802, 1260, 15516, 15517, 5001, 15518, 10796, 10802, 1266, 2]
 // Exports: applyTransactionFromListener, cancelGenericSubscription, createGenericSubscription, migrateToACOM, mobilePurchaseSKU, modifyGenericSubscription, resubscribeGenericSubscription
 
 // Module 7680 (BillingActionCreators)
@@ -23,12 +23,12 @@ import BlockedPaymentsCountryExperiment from "BlockedPaymentsCountryExperiment" 
 import ACOMExperiments from "ACOMExperiments" /* 10031 */;
 import showSpendingLimitReachedAlert from "showSpendingLimitReachedAlert" /* 10688 */;
 import openBlockedPaymentsCountryActionSheetDefault from "openBlockedPaymentsCountryActionSheet" /* 11515 */;
-import IAPUtils from "IAPUtils" /* 14700 */;
-import _mod14702 from "module_14702" /* 14702 */;
-import ErrorUtilsAll from "ErrorUtils" /* 15503 */;
-import purchaseExceptionAlerts from "purchaseExceptionAlerts" /* 15505 */;
-import APBRequestOperations from "APBRequestOperations" /* 15506 */;
-import ACRequestOperations from "ACRequestOperations" /* 15507 */;
+import IAPUtils from "IAPUtils" /* 14701 */;
+import _mod14703 from "module_14703" /* 14703 */;
+import ErrorUtilsAll from "ErrorUtils" /* 15513 */;
+import purchaseExceptionAlerts from "purchaseExceptionAlerts" /* 15515 */;
+import APBRequestOperations from "APBRequestOperations" /* 15516 */;
+import ACRequestOperations from "ACRequestOperations" /* 15517 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -152,7 +152,7 @@ let obj = function _applyTransactionFromListener() {
         obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c4;
@@ -193,7 +193,7 @@ let obj = function _applyTransactionFromListener() {
                         let tmp55 = "autoRenewable" === tmp84.productType;
                         const GENERIC_CONSUMABLE = ProductIds.ProductIds.GENERIC_CONSUMABLE;
                         if (tmp55) {
-                          const tmp52 = transactionReason === _mod14702.TransactionReason.PURCHASE || transactionReason === _mod14702.TransactionReason.RENEWAL;
+                          const tmp52 = transactionReason === _mod14703.TransactionReason.PURCHASE || transactionReason === _mod14703.TransactionReason.RENEWAL;
                           tmp55 = tmp52;
                         }
                         closure_1 = tmp55;
@@ -205,10 +205,10 @@ let obj = function _applyTransactionFromListener() {
                           const GiftACOMOrderExperiment = ACOMExperiments.GiftACOMOrderExperiment;
                           const enabled = GiftACOMOrderExperiment.getConfig({ location: "IAPTransactionListener" }).enabled;
                           c6 = 3;
-                          return { value: "HermesInternal", done: "HermesInternal" };
+                          return { value: "HermesInternal", done: null };
                         } else if (!tmp55) {
                           c6 = 3;
-                          return { value: "HermesInternal", done: "HermesInternal" };
+                          return { value: "HermesInternal", done: null };
                         }
                         const IAPTransactionApplyExperiment = ACOMExperiments.IAPTransactionApplyExperiment;
                         if (IAPTransactionApplyExperiment.getConfig({ location: "IAPTransactionListener" }).enabled) {
@@ -251,7 +251,7 @@ let obj = function _applyTransactionFromListener() {
         } else if (1 === c5) {
           c4 = 0;
           c6 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } else if (2 === c5) {
           c4 = 0;
           const obj14 = closure_130_1(closure_130_3[21]);
@@ -329,7 +329,7 @@ let obj = function _applyTransactionFromListener() {
           dispatch({ type: "IAP_RESTORE_PURCHASES_END" });
         }
         c6 = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp69) {
         closure_3 = tmp69;
         if (0 === c4) {
@@ -396,7 +396,7 @@ function handlePurchaseException(code, purchase_type, arg2, productId) {
     if (isSpendingLimitError(billingError)) {
       const tmpResult = showSpendingLimitReachedAlert;
       const result = tmpResult.showSpendingLimitReachedAlert();
-    } else if (code.code !== _mod14702.ErrorCode.E_DEFERRED_PAYMENT) {
+    } else if (code.code !== _mod14703.ErrorCode.E_DEFERRED_PAYMENT) {
       const message = code.message;
       const _JSON = JSON;
       obj2 = { name, message: message1, stack };
@@ -548,7 +548,7 @@ obj = function _clearAndMakeIAPRequest() {
         obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -567,7 +567,7 @@ obj = function _clearAndMakeIAPRequest() {
             c7 = 1;
             c8 = 1;
             const obj5 = { value: obj3.clearTransactionIOS(), done: false };
-            obj3 = _mod14702;
+            obj3 = _mod14703;
             return obj5;
           }
         } else if (arg0 === 1) {
@@ -617,7 +617,7 @@ obj = function _makeTrackedIAPRequest() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -865,7 +865,7 @@ obj = function _updateAppleSubscription() {
           obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -917,7 +917,7 @@ obj = function _updateAppleSubscription() {
             return obj;
           } else {
             c1 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp4) {
           c1 = 3;
@@ -979,7 +979,7 @@ obj = function _cancelGenericSubscription() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -1100,7 +1100,7 @@ obj = function _createGenericSubscription() {
         obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let orderId;
@@ -1328,7 +1328,7 @@ obj = function _modifyGenericSubscription() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let v0;
@@ -1658,7 +1658,7 @@ obj = function _resubscribeGenericSubscription() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let tmp74;
@@ -1868,7 +1868,7 @@ obj = function _retryPendingPurchases() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         while (true) {
@@ -2044,7 +2044,7 @@ obj = function _mobilePurchaseSKU() {
         obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let giftInfoOptions;
@@ -2463,7 +2463,7 @@ obj = function _migrateToACOM() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c4;
@@ -2578,7 +2578,7 @@ obj = {
           obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c4;
@@ -2655,7 +2655,7 @@ obj = {
               c4 = 0;
             }
             c6 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
           if (null != _undefined) {
             const obj6 = _undefined(closure_3[24]);
@@ -2704,7 +2704,7 @@ obj = {
           obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c3;
@@ -2726,7 +2726,7 @@ obj = {
               c4 = 2;
               c5 = 1;
               const obj4 = { value: obj7.initConnection(), done: false };
-              obj7 = _mod14702;
+              obj7 = _mod14703;
               return obj4;
             }
           } else if (1 === c4) {
@@ -2782,7 +2782,7 @@ obj = {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c4;
@@ -2879,7 +2879,7 @@ obj = {
               c4 = 0;
             }
             c6 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp42) {
           closure_3 = tmp42;
@@ -2918,7 +2918,7 @@ obj = {
           obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let application_id;
@@ -2996,7 +2996,7 @@ obj = {
                   }
                 }
                 v3 = 3;
-                return { value: "HermesInternal", done: "HermesInternal" };
+                return { value: "HermesInternal", done: null };
               }
               break;
             }
@@ -3350,7 +3350,7 @@ obj = {
           let obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c8;
@@ -3487,7 +3487,7 @@ obj = {
                           let obj4 = { value, done: true };
                           return obj4;
                         } else {
-                          return { value: "HermesInternal", done: "HermesInternal" };
+                          return { value: "HermesInternal", done: null };
                         }
                       } else {
                         try {
@@ -3597,7 +3597,7 @@ obj = {
                               c5 = 0;
                             }
                             c7 = 3;
-                            return { value: "HermesInternal", done: "HermesInternal" };
+                            return { value: "HermesInternal", done: null };
                           }
                         } catch (tmp30) {
                           closure_4 = tmp30;
@@ -3761,9 +3761,9 @@ obj = {
     })();
   }
 };
-let items = [_mod14702.ErrorCode.E_USER_CANCELLED, StoreKitErrors.PAYMENT_CANCELED];
+let items = [_mod14703.ErrorCode.E_USER_CANCELLED, StoreKitErrors.PAYMENT_CANCELED];
 const set = new Set(items);
-const items1 = [_mod14702.ErrorCode.E_UNKNOWN, _mod14702.ErrorCode.E_DEFERRED_PAYMENT];
+const items1 = [_mod14703.ErrorCode.E_UNKNOWN, _mod14703.ErrorCode.E_DEFERRED_PAYMENT];
 const set1 = new Set(items1);
 let obj2 = { NONE: "none", CANNOT_MAKE_REQUEST: "cannot_make_request", INVALID_CURRENCY: "invalid_currency", PURCHASE_INCOMPLETE: "purchase_incomplete", USER_CANCELLED: "user_cancelled", POST_PURCHASE_FAILED: "post_purchase_failed" };
 let result = size.fileFinishedImporting("actions/native/BillingActionCreators.tsx");

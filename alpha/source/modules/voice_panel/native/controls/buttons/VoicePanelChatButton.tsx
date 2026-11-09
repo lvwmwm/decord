@@ -1,15 +1,15 @@
-// Module ID: 19705
-// Function ID: 19706
+// Module ID: 19718
+// Function ID: 19719
 // Name: VoicePanelChatButton
-// Dependencies: [19, 21, 5140, 575, 11362, 19697, 19621, 19573, 19698, 1113, 19706, 7023, 8714, 2]
+// Dependencies: [19, 21, 5140, 575, 11362, 19710, 19634, 19586, 19711, 1113, 19719, 7023, 8714, 2]
 // Exports: default
 
-// Module 19705 (VoicePanelChatButton)
+// Module 19718 (VoicePanelChatButton)
 import nativeDefault from "native" /* 575 */;
 import NativeViewDefault from "NativeView" /* 7023 */;
 import ChatIcon from "ChatIcon" /* 8714 */;
-import trackVoicePanelTabOpened from "trackVoicePanelTabOpened" /* 19573 */;
-import CircleWithCutoutDefault from "CircleWithCutout" /* 19706 */;
+import trackVoicePanelTabOpened from "trackVoicePanelTabOpened" /* 19586 */;
+import CircleWithCutoutDefault from "CircleWithCutout" /* 19719 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5140 */;

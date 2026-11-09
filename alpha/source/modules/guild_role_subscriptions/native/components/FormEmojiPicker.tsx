@@ -1,10 +1,10 @@
-// Module ID: 20367
-// Function ID: 20368
+// Module ID: 20380
+// Function ID: 20381
 // Name: FormEmojiPicker
-// Dependencies: [19, 1388, 21, 5086, 17541, 5090, 1113, 17540, 7038, 9533, 5751, 10061, 2]
+// Dependencies: [19, 1388, 21, 5086, 17552, 5090, 1113, 17551, 7038, 9533, 5751, 10061, 2]
 // Exports: default
 
-// Module 20367 (FormEmojiPicker)
+// Module 20380 (FormEmojiPicker)
 import Fragment from "Fragment" /* 21 */;
 import EmojiConstants from "EmojiConstants" /* 1388 */;
 import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 10061 */;
@@ -32,7 +32,7 @@ export default function FormEmojiPicker(emoji) {
     }
     emojiId = convertSurrogateToName(emojiName, false);
   }
-  let obj = guildId(17541);
+  let obj = guildId(17552);
   const emojiByIdOrName = obj.useEmojiByIdOrName(guildId, emojiId);
   let allEmojiNamesString = null;
   if (null != emojiByIdOrName) {
@@ -42,7 +42,7 @@ export default function FormEmojiPicker(emoji) {
   const intl = tmp4(1113).intl;
   const stringResult = intl.string(guildId(1113).t.gXAN3P);
   if (null != emojiId) {
-    tmp10 = jsx(onChange(17540), { guildId, id: emojiId });
+    tmp10 = jsx(onChange(17551), { guildId, id: emojiId });
     tmp9 = jsx;
   } else {
     tmp9 = jsx;

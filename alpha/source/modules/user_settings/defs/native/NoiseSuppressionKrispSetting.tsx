@@ -1,9 +1,9 @@
-// Module ID: 17556
-// Function ID: 17557
+// Module ID: 17567
+// Function ID: 17568
 // Name: NoiseSuppressionKrispSetting
 // Dependencies: [2130, 8503, 12122, 12123, 1113, 504, 11685, 2]
 
-// Module 17556 (NoiseSuppressionKrispSetting)
+// Module 17567 (NoiseSuppressionKrispSetting)
 import get_initialized from "get initialized" /* 504 */;
 import intl4 from "intl" /* 1113 */;
 import SettingsConstants from "SettingsConstants" /* 8503 */;

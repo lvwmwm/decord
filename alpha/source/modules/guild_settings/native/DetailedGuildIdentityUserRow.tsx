@@ -51,7 +51,7 @@ const memoResult = react.memo(function DetailedGuildIdentityUser(contentHeight) 
     let tmp8Result = null;
     const obj3 = { style: tmp.mainIdentity, children: items1 };
     if (hasAvatarForGuildResult) {
-      const obj4 = { size: native.AvatarSizes.SIZE_16, style: tmp.primaryAvatar, user, guildId: "a" };
+      const obj4 = { size: native.AvatarSizes.SIZE_16, style: tmp.primaryAvatar, user, guildId: "Array" };
       const Avatar = native.Avatar;
       tmp8Result = tmp8(Avatar, obj4);
     }

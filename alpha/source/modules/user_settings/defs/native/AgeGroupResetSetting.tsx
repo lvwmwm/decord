@@ -1,16 +1,16 @@
-// Module ID: 16939
-// Function ID: 16940
+// Module ID: 16950
+// Function ID: 16951
 // Name: AgeGroupResetSetting
-// Dependencies: [8503, 21, 11685, 1113, 3252, 16940, 6092, 16936, 2]
+// Dependencies: [8503, 21, 11685, 1113, 3252, 16951, 6092, 16947, 2]
 
-// Module 16939 (AgeGroupResetSetting)
+// Module 16950 (AgeGroupResetSetting)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
 import _modDef3252 from "module_3252" /* 3252 */;
 import useAlertStore from "useAlertStore" /* 6092 */;
 import SettingsConstants from "SettingsConstants" /* 8503 */;
-import AgeGroupScreenRowProps from "AgeGroupScreenRowProps" /* 16936 */;
-import SettingsAgeGroupResetAlert from "SettingsAgeGroupResetAlert" /* 16940 */;
+import AgeGroupScreenRowProps from "AgeGroupScreenRowProps" /* 16947 */;
+import SettingsAgeGroupResetAlert from "SettingsAgeGroupResetAlert" /* 16951 */;
 import SettingBuilders from "SettingBuilders" /* 11685 */;
 import size from "module_2" /* 2 */;
 

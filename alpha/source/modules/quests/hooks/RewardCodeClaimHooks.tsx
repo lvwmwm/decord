@@ -1,10 +1,10 @@
-// Module ID: 14930
-// Function ID: 14931
+// Module ID: 14931
+// Function ID: 14932
 // Name: RewardCodeClaimHooks
 // Dependencies: [5, 32, 19, 9773, 6839, 9807, 9775, 9778, 6843, 7948, 5830, 2]
 // Exports: useClaimOrFetchRewardCode, useClaimRewardCodePrimaryCtaClickHandler, useHandleRedemptionLinkClick
 
-// Module 14930 (RewardCodeClaimHooks)
+// Module 14931 (RewardCodeClaimHooks)
 import QuestTypes from "QuestTypes" /* 6839 */;
 import AdCreativeType from "AdCreativeType" /* 6843 */;
 import QuestActionCreators from "QuestActionCreators" /* 9773 */;
@@ -49,7 +49,7 @@ export function useClaimOrFetchRewardCode(isClaimingReward) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c6;
@@ -92,7 +92,7 @@ export function useClaimOrFetchRewardCode(isClaimingReward) {
             c6 = 0;
           }
           c7 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp23) {
         let closure_5 = tmp23;

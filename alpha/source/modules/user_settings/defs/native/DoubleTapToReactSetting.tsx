@@ -1,9 +1,9 @@
-// Module ID: 18252
-// Function ID: 18253
+// Module ID: 18265
+// Function ID: 18266
 // Name: DoubleTapToReactSetting
 // Dependencies: [8503, 11685, 1113, 4965, 2]
 
-// Module 18252 (DoubleTapToReactSetting)
+// Module 18265 (DoubleTapToReactSetting)
 import intl2 from "intl" /* 1113 */;
 import UserSettings from "UserSettings" /* 4965 */;
 import SettingsConstants from "SettingsConstants" /* 8503 */;

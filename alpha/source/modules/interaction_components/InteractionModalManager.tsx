@@ -1,13 +1,13 @@
-// Module ID: 19881
-// Function ID: 19882
+// Module ID: 19894
+// Function ID: 19895
 // Name: InteractionModalManager
-// Dependencies: [5, 2162, 8460, 1072, 6203, 19882, 2118, 1252, 5015, 1242, 19893, 16701, 5799, 19896, 7350, 2]
+// Dependencies: [5, 2162, 8460, 1072, 6203, 19895, 2118, 1252, 5015, 1242, 19906, 16712, 5799, 19909, 7350, 2]
 
-// Module 19881 (InteractionModalManager)
+// Module 19894 (InteractionModalManager)
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import isPostMessageDisconnectDefault from "isPostMessageDisconnect" /* 16701 */;
-import openInteractionIframeModalDefault from "openInteractionIframeModal" /* 19893 */;
+import isPostMessageDisconnectDefault from "isPostMessageDisconnect" /* 16712 */;
+import openInteractionIframeModalDefault from "openInteractionIframeModal" /* 19906 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ApplicationStore from "ApplicationStore" /* 2162 */;
 import InteractionStore from "InteractionStore" /* 8460 */;
@@ -78,7 +78,7 @@ let obj = function _handleInteractionModalCreate() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -121,7 +121,7 @@ let obj = function _handleInteractionModalCreate() {
               obj.addBreadcrumb(obj8);
             }
             c4 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp18) {
           c4 = 3;

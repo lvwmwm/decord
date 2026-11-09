@@ -1,9 +1,9 @@
-// Module ID: 14446
-// Function ID: 14447
+// Module ID: 14447
+// Function ID: 14448
 // Name: JoinRequestRejectionReasonActionSheet
 // Dependencies: [5, 32, 19, 21, 5140, 8812, 6971, 5174, 5837, 1113, 5374, 5388, 7355, 7316, 6822, 5758, 2]
 
-// Module 14446 (JoinRequestRejectionReasonActionSheet)
+// Module 14447 (JoinRequestRejectionReasonActionSheet)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -63,7 +63,7 @@ class JoinRequestRejectionReasonActionSheet {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c3;
@@ -116,7 +116,7 @@ class JoinRequestRejectionReasonActionSheet {
             c3 = 0;
             closure_128_5(false);
             c4 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp20) {
           guildId = tmp20;

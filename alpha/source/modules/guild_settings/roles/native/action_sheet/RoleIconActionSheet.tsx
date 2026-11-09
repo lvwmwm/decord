@@ -1,17 +1,17 @@
-// Module ID: 20187
-// Function ID: 20188
+// Module ID: 20200
+// Function ID: 20201
 // Name: RoleIconActionSheet
-// Dependencies: [5, 19, 20170, 1072, 1388, 21, 504, 5374, 8290, 1490, 20188, 5836, 1113, 20184, 7426, 7382, 5751, 7126, 7038, 10061, 2]
+// Dependencies: [5, 19, 20183, 1072, 1388, 21, 504, 5374, 8290, 1490, 20201, 5836, 1113, 20197, 7426, 7382, 5751, 7126, 7038, 10061, 2]
 // Exports: default
 
-// Module 20187 (RoleIconActionSheet)
+// Module 20200 (RoleIconActionSheet)
 import Constants from "Constants" /* 1072 */;
 import EmojiConstants from "EmojiConstants" /* 1388 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
-import GuildSettingsRolesActionCreators from "GuildSettingsRolesActionCreators" /* 20184 */;
+import GuildSettingsRolesActionCreators from "GuildSettingsRolesActionCreators" /* 20197 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import GuildSettingsRolesStore from "GuildSettingsRolesStore" /* 20170 */;
+import GuildSettingsRolesStore from "GuildSettingsRolesStore" /* 20183 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
@@ -50,7 +50,7 @@ export default function RoleIconActionSheet(arg0) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -112,7 +112,7 @@ export default function RoleIconActionSheet(arg0) {
               presentError(intl.string(_var(closure_2[12]).t.HFyKsa));
             }
             c4 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp30) {
           c4 = 3;
@@ -189,7 +189,7 @@ export default function RoleIconActionSheet(arg0) {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           let c6;
@@ -250,7 +250,7 @@ export default function RoleIconActionSheet(arg0) {
               c6 = 0;
             }
             c8 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           } catch (tmp29) {
             if (0 === c6) {
               c8 = 3;

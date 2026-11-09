@@ -1,9 +1,9 @@
-// Module ID: 19590
-// Function ID: 19591
+// Module ID: 19603
+// Function ID: 19604
 // Name: VoicePanelDockStatusDisplay
-// Dependencies: [32, 19, 17, 19588, 11381, 21, 5751, 5140, 1652, 1113, 3184, 5370, 5761, 19591, 5199, 1705, 11362, 2]
+// Dependencies: [32, 19, 17, 19601, 11381, 21, 5751, 5140, 1652, 1113, 3184, 5370, 5761, 19604, 5199, 1705, 11362, 2]
 
-// Module 19590 (VoicePanelDockStatusDisplay)
+// Module 19603 (VoicePanelDockStatusDisplay)
 import _mod1652 from "module_1652" /* 1652 */;
 import timing_timing from "timing/timing" /* 5370 */;
 import Text_Text from "Text/Text" /* 5751 */;
@@ -11,7 +11,7 @@ import spring_spring from "spring/spring" /* 5761 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import VoicePanelDockStatusStore from "VoicePanelDockStatusStore" /* 19588 */;
+import VoicePanelDockStatusStore from "VoicePanelDockStatusStore" /* 19601 */;
 import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11381 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5140 */;
@@ -170,10 +170,10 @@ function StatusText(status) {
   const tmp44 = sharedValue;
   if (null != status.userId) {
     const obj3 = { userId: status.userId, dimmed: "left" === status.kind };
-    tmp46 = closure_8(tmp27(19591).DockUserTitle, obj3);
+    tmp46 = closure_8(tmp27(19604).DockUserTitle, obj3);
     tmp47 = closure_8;
   } else {
-    tmp46 = closure_8(tmp27(19591).DockChannelTitle, {});
+    tmp46 = closure_8(tmp27(19604).DockChannelTitle, {});
     tmp47 = closure_8;
   }
   items5 = [tmp46, ];
@@ -577,7 +577,7 @@ const memoResult = react.memo(function VoicePanelDockStatusDisplay() {
   let onExited;
   let tmp11;
   let userId;
-  const f118844 = () => {
+  const f118915 = () => {
     let items;
     if ("channel" === obj2.kind) {
       items = [];
@@ -612,8 +612,8 @@ const memoResult = react.memo(function VoicePanelDockStatusDisplay() {
   }
   const tmp7 = _slicedToArray(obj.useState(() => ({ status: obj2, enter: null })), 2);
   first = tmp7[0];
-  [arr, tmp11] = obj.useState(f118844);
-  _slicedToArray(obj.useState(f118844), 2);
+  [arr, tmp11] = obj.useState(f118915);
+  _slicedToArray(obj.useState(f118915), 2);
   const tmp12 = _slicedToArray(obj.useState(() => {
     map = new Map();
     return map;

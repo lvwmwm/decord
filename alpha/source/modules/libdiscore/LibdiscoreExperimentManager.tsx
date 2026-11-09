@@ -1,9 +1,9 @@
-// Module ID: 20465
-// Function ID: 20466
+// Module ID: 20478
+// Function ID: 20479
 // Name: LibdiscoreExperimentManager
 // Dependencies: [1246, 1363, 5015, 558, 1449, 7350, 2]
 
-// Module 20465 (LibdiscoreExperimentManager)
+// Module 20478 (LibdiscoreExperimentManager)
 import shallowEqualDefault from "shallowEqual" /* 558 */;
 import shim from "shim" /* 1363 */;
 import ApexExperiment from "ApexExperiment" /* 1449 */;

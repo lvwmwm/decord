@@ -1,10 +1,10 @@
-// Module ID: 17881
-// Function ID: 17882
+// Module ID: 17892
+// Function ID: 17893
 // Name: UserSettingsPushNotificationLogs
 // Dependencies: [5, 32, 19, 17, 1072, 21, 5140, 575, 7169, 510, 11225, 1627, 7282, 7043, 1113, 9010, 11226, 12410, 7357, 5751, 2]
 // Exports: default
 
-// Module 17881 (UserSettingsPushNotificationLogs)
+// Module 17892 (UserSettingsPushNotificationLogs)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -81,7 +81,7 @@ export default function UserSettingsPushNotificationLogs() {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -114,7 +114,7 @@ export default function UserSettingsPushNotificationLogs() {
               closure_0 = value;
               c2(closure_0);
               c3 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp12) {
             c3 = 3;
@@ -195,7 +195,7 @@ export default function UserSettingsPushNotificationLogs() {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -230,7 +230,7 @@ export default function UserSettingsPushNotificationLogs() {
             const tmp9 = tmp(c2[15]);
             showShareActionSheet(obj, "push-notification-logs");
             c3 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp16) {
           c3 = 3;

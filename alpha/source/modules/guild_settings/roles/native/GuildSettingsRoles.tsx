@@ -1,10 +1,10 @@
-// Module ID: 20163
-// Function ID: 20164
+// Module ID: 20176
+// Function ID: 20177
 // Name: GuildSettingsRoles
-// Dependencies: [32, 19, 17, 5047, 502, 5358, 5046, 5011, 5072, 7361, 20164, 20165, 1072, 21, 5140, 575, 6778, 1252, 20166, 504, 18525, 9154, 1499, 5077, 5889, 20167, 20176, 20177, 7126, 1113, 7043, 12685, 5751, 20178, 5758, 20182, 7630, 14621, 1377, 20174, 6957, 7362, 7282, 8246, 1187, 9141, 18790, 5734, 2]
+// Dependencies: [32, 19, 17, 5047, 502, 5358, 5046, 5011, 5072, 7361, 20177, 20178, 1072, 21, 5140, 575, 6778, 1252, 20179, 504, 18538, 9154, 1499, 5077, 5889, 20180, 20189, 20190, 7126, 1113, 7043, 12685, 5751, 20191, 5758, 20195, 7630, 14622, 1377, 20187, 6957, 7362, 7282, 8246, 1187, 9141, 18803, 5734, 2]
 // Exports: default
 
-// Module 20163 (GuildSettingsRoles)
+// Module 20176 (GuildSettingsRoles)
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
@@ -17,12 +17,12 @@ import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5889 */;
 import GuildActionCreatorsDefault from "GuildActionCreators" /* 6957 */;
 import TableRowGroup from "TableRowGroup" /* 7126 */;
 import GuildRoleMemberActionCreatorsAll from "GuildRoleMemberActionCreators" /* 7362 */;
-import GuildSettingsConstants from "GuildSettingsConstants" /* 20165 */;
-import GuildSettingsRolesUtils from "GuildSettingsRolesUtils" /* 20174 */;
-import actions_GuildActionCreators from "actions/GuildActionCreators" /* 20176 */;
-import GuildSettingsModalRolesActionCreatorsDefault from "GuildSettingsModalRolesActionCreators" /* 20177 */;
-import MemberRolesAbstractUI from "MemberRolesAbstractUI" /* 20178 */;
-import GuildSettingsRoleItemDefault from "GuildSettingsRoleItem" /* 20182 */;
+import GuildSettingsConstants from "GuildSettingsConstants" /* 20178 */;
+import GuildSettingsRolesUtils from "GuildSettingsRolesUtils" /* 20187 */;
+import actions_GuildActionCreators from "actions/GuildActionCreators" /* 20189 */;
+import GuildSettingsModalRolesActionCreatorsDefault from "GuildSettingsModalRolesActionCreators" /* 20190 */;
+import MemberRolesAbstractUI from "MemberRolesAbstractUI" /* 20191 */;
+import GuildSettingsRoleItemDefault from "GuildSettingsRoleItem" /* 20195 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -32,7 +32,7 @@ import GuildRoleStore from "GuildRoleStore" /* 5046 */;
 import GuildStore from "GuildStore" /* 5011 */;
 import PermissionStore from "PermissionStore" /* 5072 */;
 import GuildRoleMemberCountStore from "GuildRoleMemberCountStore" /* 7361 */;
-import GuildSettingsModalRolesStore from "GuildSettingsModalRolesStore" /* 20164 */;
+import GuildSettingsModalRolesStore from "GuildSettingsModalRolesStore" /* 20177 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5140 */;
@@ -57,7 +57,7 @@ let obj3;
 let obj4;
 let obj5;
 let tmp;
-const GuildSettingsRoleCreateModalActionCreatorsDefault = tmp(20167);
+const GuildSettingsRoleCreateModalActionCreatorsDefault = tmp(20180);
 ({ View: metroRequire, StyleSheet } = react_native);
 const isEveryoneRole = GuildRoleRecord.isEveryoneRole;
 let closure_15 = GuildSettingsConstants.GuildSettingsRoleEditSections;
@@ -89,7 +89,7 @@ export default function ConnectedGuildSettingsModalRoles(guildId) {
   let tmp39Result2;
   let tmp49;
   let tmp54;
-  const f120408 = () => sortedGuildRoles;
+  const f120479 = () => sortedGuildRoles;
   guildId = guildId.guildId;
   let guild;
   let memberCount;
@@ -215,8 +215,8 @@ export default function ConnectedGuildSettingsModalRoles(guildId) {
   const tmp13 = guildEveryoneRole(memberCount.useState(""), 2);
   let str = tmp13[0];
   let closure_3 = tmp13[1];
-  [tmp15, c4] = guildEveryoneRole(memberCount.useState(f120408), 2);
-  const tmp14 = guildEveryoneRole(memberCount.useState(f120408), 2);
+  [tmp15, c4] = guildEveryoneRole(memberCount.useState(f120479), 2);
+  const tmp14 = guildEveryoneRole(memberCount.useState(f120479), 2);
   let closure_5 = memberCount.useRef(false);
   const items4 = [sortedGuildRoles];
   const callback = memberCount.useCallback((str) => {

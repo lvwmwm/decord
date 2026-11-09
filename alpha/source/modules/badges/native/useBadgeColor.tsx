@@ -47,7 +47,7 @@ export function useBadgeColor(rasterUrl) {
             let obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           let c3;
@@ -81,7 +81,7 @@ export function useBadgeColor(rasterUrl) {
                                 const obj2 = { value, done: true };
                                 return obj2;
                               } else {
-                                return { value: "HermesInternal", done: "HermesInternal" };
+                                return { value: "HermesInternal", done: null };
                               }
                             } else {
                               try {
@@ -157,7 +157,7 @@ export function useBadgeColor(rasterUrl) {
                 const tmp16 = closure_1(closure_0);
               }
               c5 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp20) {
             if (0 === c3) {

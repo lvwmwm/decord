@@ -1,10 +1,10 @@
-// Module ID: 16702
-// Function ID: 16703
+// Module ID: 16713
+// Function ID: 16714
 // Name: MediaPlayerManager
-// Dependencies: [17, 4988, 6930, 4989, 6194, 5072, 2117, 1072, 5781, 16703, 1083, 3, 560, 1259, 2120, 5315, 572, 1377, 558, 7712, 6928, 2]
+// Dependencies: [17, 4988, 6930, 4989, 6194, 5072, 2117, 1072, 5781, 16714, 1083, 3, 560, 1259, 2120, 5315, 572, 1377, 558, 7712, 6928, 2]
 // Exports: isPlaybackComplete
 
-// Module 16702 (MediaPlayerManager)
+// Module 16713 (MediaPlayerManager)
 import LoggerDefault from "Logger" /* 3 */;
 import shallowEqualDefault from "shallowEqual" /* 558 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
@@ -21,7 +21,7 @@ import ChannelStore from "ChannelStore" /* 4989 */;
 import MessageStore from "MessageStore" /* 6194 */;
 import PermissionStore from "PermissionStore" /* 5072 */;
 import AppStateStore from "AppStateStore" /* 2117 */;
-import MediaPlaybackPanelConstants from "MediaPlaybackPanelConstants" /* 16703 */;
+import MediaPlaybackPanelConstants from "MediaPlaybackPanelConstants" /* 16714 */;
 import module_560 from "module_560" /* 560 */;
 import LifecycleManager from "LifecycleManager" /* 2120 */;
 import size from "module_2" /* 2 */;
@@ -53,13 +53,13 @@ const useMediaPlayerManagerStore = module_560.create((arg0) => {
     wasPipClosedByUser: null,
     progress: null,
     rate: "flexDirection",
-    showPip: "broken_chain",
+    showPip: "en-BB",
     closePip() {
       const obj = react_native;
       obj.batchUpdates(() => closure_1_0({ showPip: false }));
     },
     displayedMediaItemIdsPerChannel: {},
-    currentlyDisplayedChannelId: "magnetick\u00E9 pole"
+    currentlyDisplayedChannelId: null
   };
   return obj;
 });
@@ -320,7 +320,7 @@ class MediaPlayerManager extends LifecycleManager {
       const tmp8 = source;
       if (!tmp7(activeMediaPlayerSource, tmp8)) {
         const setState = tmp.setState;
-        obj = { activeMediaPlayerSource: source, mediaSourceMessage: orFetchMediaSourceMessage, progress: "description", rate: false, isPlaying: false, wasPipClosedByUser: "hB" };
+        obj = { activeMediaPlayerSource: source, mediaSourceMessage: orFetchMediaSourceMessage, progress: "description", rate: false, isPlaying: false, wasPipClosedByUser: "_invalidateIfOrientationChanged" };
         orFetchMediaSourceMessage = undefined;
         if (null != source) {
           orFetchMediaSourceMessage = self.getOrFetchMediaSourceMessage(tmp4);

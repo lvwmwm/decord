@@ -77,7 +77,7 @@ export default function EditGuildEventRecurrenceModal(guildEvent) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -113,7 +113,7 @@ export default function EditGuildEventRecurrenceModal(guildEvent) {
             closure_128_1();
           }
           c2 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp12) {
           c2 = 3;
           throw tmp12;

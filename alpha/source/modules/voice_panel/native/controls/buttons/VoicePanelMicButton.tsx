@@ -1,10 +1,10 @@
-// Module ID: 19696
-// Function ID: 19697
+// Module ID: 19709
+// Function ID: 19710
 // Name: VoicePanelMicButton
-// Dependencies: [32, 19, 5894, 5045, 502, 4989, 2130, 5072, 1385, 5803, 21, 3, 5140, 504, 7598, 12136, 12169, 11362, 1652, 19564, 5376, 11351, 5420, 1705, 19697, 19698, 1113, 12138, 5751, 9320, 12137, 2]
+// Dependencies: [32, 19, 5894, 5045, 502, 4989, 2130, 5072, 1385, 5803, 21, 3, 5140, 504, 7598, 12136, 12169, 11362, 1652, 19577, 5376, 11351, 5420, 1705, 19710, 19711, 1113, 12138, 5751, 9320, 12137, 2]
 // Exports: MicButton, PTTButton
 
-// Module 19696 (VoicePanelMicButton)
+// Module 19709 (VoicePanelMicButton)
 import LoggerDefault from "Logger" /* 3 */;
 import _mod1705 from "module_1705" /* 1705 */;
 import HapticUtils from "HapticUtils" /* 5376 */;

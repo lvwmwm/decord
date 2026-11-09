@@ -1,16 +1,16 @@
-// Module ID: 14238
-// Function ID: 14239
+// Module ID: 14239
+// Function ID: 14240
 // Name: EmojiSuggestionBarSmall
-// Dependencies: [19, 10064, 21, 575, 5140, 14223, 1652, 10147, 10171, 5199, 2]
+// Dependencies: [19, 10064, 21, 575, 5140, 14224, 1652, 10147, 10171, 5199, 2]
 // Exports: EmojiSuggestionBarSmall
 
-// Module 14238 (EmojiSuggestionBarSmall)
+// Module 14239 (EmojiSuggestionBarSmall)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef1652 from "module_1652" /* 1652 */;
 import EmojiPickerListConstants from "EmojiPickerListConstants" /* 10064 */;
 import EmojiPickerListRow from "EmojiPickerListRow" /* 10147 */;
-import EmojiSuggestionBarUtils from "EmojiSuggestionBarUtils" /* 14223 */;
+import EmojiSuggestionBarUtils from "EmojiSuggestionBarUtils" /* 14224 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
@@ -31,7 +31,7 @@ function EmojiSuggestionBarSmallAnimated(displayEmojis) {
   ({ onOccupiedHeightChange, cleanUp } = displayEmojis);
   const tmp2 = dependencyMap;
   const tmp = closure_7(displayEmojis.anchorTop);
-  let obj = displayEmojis(14223);
+  let obj = displayEmojis(14224);
   const suggestionBarHeight = obj.useSuggestionBarHeight(transitionState, cleanUp, closure_6, onOccupiedHeightChange);
   let tmp4 = displayEmojis(1652);
   let items = [closure_8, , , ];

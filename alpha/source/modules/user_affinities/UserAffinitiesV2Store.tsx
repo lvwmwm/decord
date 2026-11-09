@@ -12,15 +12,15 @@ import size from "module_2" /* 2 */;
 
 let _null;
 
-const f93180 = (otherUserId) => !blockedOrIgnored.isBlockedOrIgnored(otherUserId.otherUserId);
-const f93181 = (otherUserId) => {
+const f93222 = (otherUserId) => !blockedOrIgnored.isBlockedOrIgnored(otherUserId.otherUserId);
+const f93223 = (otherUserId) => {
   const items = [otherUserId.otherUserId, otherUserId];
   return items;
 };
 function recomputeAffinities() {
   const userAffinities = obj.userAffinities;
-  const found = userAffinities.filter(f93180);
-  map = new Map(found.map(f93181));
+  const found = userAffinities.filter(f93222);
+  map = new Map(found.map(f93223));
   if (null != _null) {
     let value = map.get(_null.otherUserId);
     if (value == null) {
@@ -53,10 +53,10 @@ class UserAffinitiesV2Store extends PersistedStore {
       obj.lastFetched = userAffinities.lastFetched;
       const _Map = Map;
       const userAffinities1 = obj.userAffinities;
-      const found = userAffinities1.filter(f93180);
+      const found = userAffinities1.filter(f93222);
       const self2 = this;
       const self3 = this;
-      map = new Map(found.map(f93181));
+      map = new Map(found.map(f93223));
       if (null != _null) {
         let value = map.get(_null.otherUserId);
         if (value == null) {
@@ -158,8 +158,8 @@ const obj2 = {
     c3 = false;
     obj.userAffinities = affineUsers;
     const userAffinities = obj.userAffinities;
-    const found = userAffinities.filter(f93180);
-    map = new Map(found.map(f93181));
+    const found = userAffinities.filter(f93222);
+    map = new Map(found.map(f93223));
     if (null != _null) {
       let value = map.get(_null.otherUserId);
       if (value == null) {

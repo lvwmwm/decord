@@ -1,10 +1,10 @@
-// Module ID: 16788
-// Function ID: 16789
+// Module ID: 16799
+// Function ID: 16800
 // Name: UserProfileHexagonCampaignDisplayNameStyleEditButton
-// Dependencies: [5, 32, 19, 17, 1385, 1072, 5165, 21, 5140, 575, 16789, 1113, 3056, 16768, 6839, 8808, 6572, 5167, 10891, 5721, 8806, 16767, 5837, 7387, 7412, 10027, 10028, 7149, 16790, 7043, 7104, 5715, 7047, 7430, 16783, 2]
+// Dependencies: [5, 32, 19, 17, 1385, 1072, 5165, 21, 5140, 575, 16800, 1113, 3056, 16779, 6839, 8808, 6572, 5167, 10891, 5721, 8806, 16778, 5837, 7387, 7412, 10027, 10028, 7149, 16801, 7043, 7104, 5715, 7047, 7430, 16794, 2]
 // Exports: default
 
-// Module 16788 (UserProfileHexagonCampaignDisplayNameStyleEditButton)
+// Module 16799 (UserProfileHexagonCampaignDisplayNameStyleEditButton)
 import nativeDefault from "native" /* 575 */;
 import _modDef3056 from "module_3056" /* 3056 */;
 import LinearGradientDefault from "LinearGradient" /* 5715 */;
@@ -167,7 +167,7 @@ export default function UserProfileHexagonCampaignDisplayNameStyleEditButton(ava
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -251,7 +251,7 @@ export default function UserProfileHexagonCampaignDisplayNameStyleEditButton(ava
           }
         }
         ref = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp50) {
         if (0 === c3) {
           ref = 3;
@@ -288,7 +288,7 @@ export default function UserProfileHexagonCampaignDisplayNameStyleEditButton(ava
   tmp18Result = undefined;
   const Input = tmp3(7149).Input;
   if (availability !== constants5.LOCKED) {
-    let obj7 = { style: tmp.labelBadge, children: tmp18(tmp6(16790), obj8) };
+    let obj7 = { style: tmp.labelBadge, children: tmp18(tmp6(16801), obj8) };
     obj8 = { perk: constants4.DISPLAY_NAME_STYLE };
     tmp18Result = tmp18(closure_6, obj7);
   }
@@ -334,6 +334,6 @@ export default function UserProfileHexagonCampaignDisplayNameStyleEditButton(ava
     tmp18Result4 = tmp18(tmp3(7430).FormSwitch, obj20);
   }
   items4[1] = tmp18Result4;
-  items5 = [tmp31(PressableHighlight, obj10), tmp18(tmp6(16783), { showLearnMore: true })];
+  items5 = [tmp31(PressableHighlight, obj10), tmp18(tmp6(16794), { showLearnMore: true })];
   return tmp18(Input, obj6);
 };

@@ -1,10 +1,10 @@
-// Module ID: 19035
-// Function ID: 19036
+// Module ID: 19048
+// Function ID: 19049
 // Name: SearchFilterUtils
-// Dependencies: [9917, 9916, 1072, 1113, 12286, 10654, 15965, 8733, 9195, 19036, 12763, 12268, 14127, 14144, 14119, 5374, 9089, 2118, 14140, 2]
+// Dependencies: [9917, 9916, 1072, 1113, 12286, 10654, 15975, 8733, 9195, 19049, 12763, 12268, 14128, 14145, 14120, 5374, 9089, 2118, 14141, 2]
 // Exports: getSearchFilterSuggestions, getSearchTokenIcon, getSearchTokenLabel, getSearchTokenPressHandler, getSearchTokenSubLabel
 
-// Module 19035 (SearchFilterUtils)
+// Module 19048 (SearchFilterUtils)
 import intl10 from "intl" /* 1113 */;
 import AtIcon from "AtIcon" /* 8733 */;
 import CalendarIcon from "CalendarIcon" /* 9195 */;
@@ -13,11 +13,11 @@ import AttachmentIcon from "AttachmentIcon" /* 10654 */;
 import RobotIcon from "RobotIcon" /* 12268 */;
 import UserIcon from "UserIcon" /* 12286 */;
 import CalendarPlusIcon from "CalendarPlusIcon" /* 12763 */;
-import SearchPlatformUtils from "SearchPlatformUtils" /* 14119 */;
-import SearchTokens from "SearchTokens" /* 14127 */;
-import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 14144 */;
-import ChannelListMagnifyingGlassIcon from "ChannelListMagnifyingGlassIcon" /* 15965 */;
-import CalendarMinusIcon from "CalendarMinusIcon" /* 19036 */;
+import SearchPlatformUtils from "SearchPlatformUtils" /* 14120 */;
+import SearchTokens from "SearchTokens" /* 14128 */;
+import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 14145 */;
+import ChannelListMagnifyingGlassIcon from "ChannelListMagnifyingGlassIcon" /* 15975 */;
+import CalendarMinusIcon from "CalendarMinusIcon" /* 19049 */;
 import SearchConstants from "SearchConstants" /* 9917 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
@@ -247,7 +247,7 @@ export function getSearchTokenPressHandler(arg0, token, CONTEXT_MENU) {
 export function getSearchFilterSuggestions(textInputValue) {
   let closure_0 = textInputValue;
   const items = [];
-  const keys = Object.keys(items(14127));
+  const keys = Object.keys(items(14128));
   const item = keys.forEach(function(token) {
     const obj = SearchTokens;
     if (obj.isSearchFilterTokenType(token)) {

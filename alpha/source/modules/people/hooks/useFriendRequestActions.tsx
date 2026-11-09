@@ -1,10 +1,10 @@
-// Module ID: 15272
-// Function ID: 15273
+// Module ID: 15282
+// Function ID: 15283
 // Name: useFriendRequestActions
 // Dependencies: [19, 10859, 2]
 // Exports: useFriendRequestActions
 
-// Module 15272 (useFriendRequestActions)
+// Module 15282 (useFriendRequestActions)
 import PeopleUtilsDefault from "PeopleUtils" /* 10859 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

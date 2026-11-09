@@ -1,10 +1,10 @@
-// Module ID: 19724
-// Function ID: 19725
+// Module ID: 19737
+// Function ID: 19738
 // Name: VoicePanelVoiceControlsButtons
-// Dependencies: [32, 19, 4988, 6898, 1194, 11868, 6769, 502, 2130, 5072, 5803, 1072, 19725, 5897, 21, 6091, 19726, 2118, 1113, 12142, 7126, 12075, 504, 5837, 14976, 14977, 7038, 7046, 11362, 19573, 8749, 8714, 19595, 14344, 12086, 1252, 12168, 12115, 1377, 575, 6047, 7429, 9318, 19586, 9301, 9308, 7047, 19569, 19527, 11107, 12134, 5888, 11172, 12085, 19727, 10044, 11412, 11065, 19728, 8420, 572, 12105, 7633, 19585, 11332, 12016, 4997, 6813, 8012, 12052, 11330, 8740, 8010, 2]
+// Dependencies: [32, 19, 4988, 6898, 1194, 11868, 6769, 502, 2130, 5072, 5803, 1072, 19738, 5897, 21, 6091, 19739, 2118, 1113, 12142, 7126, 12075, 504, 5837, 14977, 14978, 7038, 7046, 11362, 19586, 8749, 8714, 19608, 14345, 12086, 1252, 12168, 12115, 1377, 575, 6047, 7429, 9318, 19599, 9301, 9308, 7047, 19582, 19540, 11107, 12134, 5888, 11172, 12085, 19740, 10044, 11412, 11065, 19741, 8420, 572, 12105, 7633, 19598, 11332, 12016, 4997, 6813, 8012, 12052, 11330, 8740, 8010, 2]
 // Exports: ActivitiesButton, AudioRouteButton, DeafenSwitch, GameConsoles, HideNonVideoParticipants, HideSelfVideo, InviteButton, LeaveActivitiesButton, RTCDebugPanelButton, ReportStreamIssueButton, ShareActivityLogsButton, SoundboardButton, StageButtons, StreamVolumeItem, ToggleShowActivitiesDebugOverlay, VoiceSettingsButton
 
-// Module 19724 (VoicePanelVoiceControlsButtons)
+// Module 19737 (VoicePanelVoiceControlsButtons)
 import get_initialized from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import nativeDefault from "native" /* 575 */;
@@ -35,15 +35,15 @@ import useIsVoiceChannelFullDefault from "useIsVoiceChannelFull" /* 12075 */;
 import ChannelCallConnectingScreen from "ChannelCallConnectingScreen" /* 12105 */;
 import VolumeSliderDefault from "VolumeSlider" /* 12115 */;
 import useMuteAwareLocalVolumeDefault from "useMuteAwareLocalVolume" /* 12168 */;
-import SoundboardIcon from "SoundboardIcon" /* 14344 */;
-import useInviteMembersCallback from "useInviteMembersCallback" /* 19527 */;
-import useCanInviteMembers from "useCanInviteMembers" /* 19569 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 19585 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 19586 */;
-import useSoundboardConfig from "useSoundboardConfig" /* 19595 */;
-import HideSelfStreamAndVideoConstants from "HideSelfStreamAndVideoConstants" /* 19725 */;
-import useHideSelfVideoDefault from "useHideSelfVideo" /* 19727 */;
-import ChannelCallUtils from "ChannelCallUtils" /* 19728 */;
+import SoundboardIcon from "SoundboardIcon" /* 14345 */;
+import useInviteMembersCallback from "useInviteMembersCallback" /* 19540 */;
+import useCanInviteMembers from "useCanInviteMembers" /* 19582 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 19598 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 19599 */;
+import useSoundboardConfig from "useSoundboardConfig" /* 19608 */;
+import HideSelfStreamAndVideoConstants from "HideSelfStreamAndVideoConstants" /* 19738 */;
+import useHideSelfVideoDefault from "useHideSelfVideo" /* 19740 */;
+import ChannelCallUtils from "ChannelCallUtils" /* 19741 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4988 */;
@@ -461,7 +461,7 @@ export function HideSelfVideo() {
             const tmp2 = closure_0;
             if (!tmp2) {
               const VIDEO = constants.VIDEO;
-              const f135461 = () => f135461(!VIDEO);
+              const f135555 = () => f135555(!VIDEO);
               let obj = actions_AlertActionCreatorsDefault;
               const obj2 = {
                 importer() {

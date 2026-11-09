@@ -1,8 +1,8 @@
-// Module ID: 20281
-// Function ID: 20282
+// Module ID: 20294
+// Function ID: 20295
 // Dependencies: [2]
 
-// Module 20281
+// Module 20294
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/PerksTicketSpotIllustration-1x.png.js");

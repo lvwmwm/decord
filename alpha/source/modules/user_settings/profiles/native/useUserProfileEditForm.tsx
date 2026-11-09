@@ -1,10 +1,10 @@
-// Module ID: 16766
-// Function ID: 16767
+// Module ID: 16777
+// Function ID: 16778
 // Name: useUserProfileEditForm
-// Dependencies: [109, 5, 32, 19, 8802, 7848, 12550, 1385, 1072, 5165, 504, 7214, 16767, 11661, 5167, 7221, 16768, 6839, 7224, 16769, 6579, 1113, 8809, 572, 16770, 8823, 8839, 15243, 4965, 12552, 7850, 8833, 16040, 2]
+// Dependencies: [109, 5, 32, 19, 8802, 7848, 12550, 1385, 1072, 5165, 504, 7214, 16778, 11661, 5167, 7221, 16779, 6839, 7224, 16780, 6579, 1113, 8809, 572, 16781, 8823, 8839, 15253, 4965, 12552, 7850, 8833, 16050, 2]
 // Exports: default
 
-// Module 16766 (useUserProfileEditForm)
+// Module 16777 (useUserProfileEditForm)
 import Constants from "Constants" /* 1072 */;
 import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5165 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
@@ -63,7 +63,7 @@ export default function useUserProfileEditForm() {
         const obj = { value, done: true };
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       c13 = 2;
@@ -84,7 +84,7 @@ export default function useUserProfileEditForm() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -130,7 +130,7 @@ export default function useUserProfileEditForm() {
           }
         }
         c3 = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp15) {
         c3 = 3;
         throw tmp15;

@@ -1,9 +1,9 @@
-// Module ID: 18253
-// Function ID: 18254
+// Module ID: 18266
+// Function ID: 18267
 // Name: ParentalControlsSensitiveContentFilterSetting
-// Dependencies: [8503, 1072, 11685, 1113, 8724, 18254, 2]
+// Dependencies: [8503, 1072, 11685, 1113, 8724, 18267, 2]
 
-// Module 18253 (ParentalControlsSensitiveContentFilterSetting)
+// Module 18266 (ParentalControlsSensitiveContentFilterSetting)
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import SettingsConstants from "SettingsConstants" /* 8503 */;

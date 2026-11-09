@@ -1,11 +1,11 @@
-// Module ID: 13668
-// Function ID: 13669
+// Module ID: 13669
+// Function ID: 13670
 // Name: openCheckpoint
-// Dependencies: [5, 13667, 13669, 5836, 1113, 13666, 13665, 6799, 13671, 2118, 2]
+// Dependencies: [5, 13668, 13670, 5836, 1113, 13667, 13666, 6799, 13672, 2118, 2]
 // Exports: openCheckpoint
 
-// Module 13668 (openCheckpoint)
-import CheckpointStore from "CheckpointStore" /* 13667 */;
+// Module 13669 (openCheckpoint)
+import CheckpointStore from "CheckpointStore" /* 13668 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -27,7 +27,7 @@ let obj = function _openCheckpoint() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -96,7 +96,7 @@ let obj = function _openCheckpoint() {
             presentError(intl.string(closure_132_0(closure_132_2[4]).t.fEptJP));
           }
           c6 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp25) {
         c6 = 3;

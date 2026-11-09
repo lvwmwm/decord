@@ -11,7 +11,7 @@ import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 5897 */;
 import size from "module_2" /* 2 */;
 
-const f90045 = (id) => {
+const f90088 = (id) => {
   closure_1_6[id.id] = id;
   return id;
 };
@@ -43,7 +43,7 @@ class CertifiedDeviceStore extends Store {
           });
         }
         tmp2[arg1] = arr;
-        const item2 = arr.forEach(f90045);
+        const item2 = arr.forEach(f90088);
       });
     }
   }
@@ -127,7 +127,7 @@ const obj = {
       });
     }
     closure_5[applicationId] = devices;
-    const item1 = devices.forEach(f90045);
+    const item1 = devices.forEach(f90088);
     const Storage = Storage2.Storage;
     const result = Storage.set(CertifiedDeviceStore_str, tmp);
     closure_7 = closure_7 + 1;

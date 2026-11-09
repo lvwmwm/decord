@@ -1,20 +1,20 @@
-// Module ID: 17785
-// Function ID: 17786
+// Module ID: 17796
+// Function ID: 17797
 // Name: SettingsNotificationScreen
-// Dependencies: [19, 17, 17786, 8503, 21, 5140, 575, 14208, 17787, 17788, 5751, 1113, 7040, 7152, 11685, 17789, 17790, 16894, 2]
+// Dependencies: [19, 17, 17797, 8503, 21, 5140, 575, 14209, 17798, 17799, 5751, 1113, 7040, 7152, 11685, 17800, 17801, 16905, 2]
 
-// Module 17785 (SettingsNotificationScreen)
+// Module 17796 (SettingsNotificationScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl7 from "intl" /* 1113 */;
 import SettingsConstants from "SettingsConstants" /* 8503 */;
 import SettingBuilders from "SettingBuilders" /* 11685 */;
-import NotificationPermissionUtil from "NotificationPermissionUtil" /* 14208 */;
-import SettingLayoutDefault from "SettingLayout" /* 16894 */;
-import AndroidNotificationSettingsStore from "AndroidNotificationSettingsStore" /* 17786 */;
-import ContextualOptInNudgeHoldoutExperimentDefault from "ContextualOptInNudgeHoldoutExperiment" /* 17787 */;
-import SettingsNotificationUtils from "SettingsNotificationUtils" /* 17788 */;
-import NotificationPermissionSettingsHeaderDefault from "NotificationPermissionSettingsHeader" /* 17789 */;
+import NotificationPermissionUtil from "NotificationPermissionUtil" /* 14209 */;
+import SettingLayoutDefault from "SettingLayout" /* 16905 */;
+import AndroidNotificationSettingsStore from "AndroidNotificationSettingsStore" /* 17797 */;
+import ContextualOptInNudgeHoldoutExperimentDefault from "ContextualOptInNudgeHoldoutExperiment" /* 17798 */;
+import SettingsNotificationUtils from "SettingsNotificationUtils" /* 17799 */;
+import NotificationPermissionSettingsHeaderDefault from "NotificationPermissionSettingsHeader" /* 17800 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5140 */;

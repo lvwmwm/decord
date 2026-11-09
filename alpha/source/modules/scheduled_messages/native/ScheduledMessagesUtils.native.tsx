@@ -1,7 +1,7 @@
 // Module ID: 9897
 // Function ID: 9898
 // Name: ScheduledMessagesUtils
-// Dependencies: [5, 8413, 5323, 1113, 2166, 9898, 6799, 9900, 2118, 14832, 9899, 14827, 14833, 7423, 5374, 11300, 2]
+// Dependencies: [5, 8413, 5323, 1113, 2166, 9898, 6799, 9900, 2118, 14833, 9899, 14828, 14834, 7423, 5374, 11300, 2]
 // Exports: cancelScheduledMessage, openRescheduleMessageActionSheet, openScheduleMessageActionSheet, openScheduledMessageEditContentModal, pickScheduledMessageTime, sendScheduledMessageNow, showScheduledMessagesModal
 
 // Module 9897 (ScheduledMessagesUtils)
@@ -42,7 +42,7 @@ let obj = function _editScheduledMessage() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -119,7 +119,7 @@ obj = function _cancelScheduledMessage() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -160,7 +160,7 @@ obj = function _cancelScheduledMessage() {
               c4 = 0;
             }
             c6 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp20) {
           closure_3 = tmp20;
@@ -193,7 +193,7 @@ obj = function _sendScheduledMessageNow() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -234,7 +234,7 @@ obj = function _sendScheduledMessageNow() {
               c4 = 0;
             }
             c6 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp20) {
           closure_3 = tmp20;
@@ -395,7 +395,7 @@ export function showScheduledMessagesModal() {
 export function openScheduledMessageEditContentModal(scheduledMessage) {
   obj = ModalActionCreatorsDefault;
   const obj2 = { scheduledMessage };
-  obj.pushLazy(asyncRequire(14832, dependencyMap.paths), obj2, "scheduled-message-edit-content", { presentation: "modal" });
+  obj.pushLazy(asyncRequire(14833, dependencyMap.paths), obj2, "scheduled-message-edit-content", { presentation: "modal" });
 }
 export function openRescheduleMessageActionSheet(scheduledMessageId, sendAtTimestamp, channelId) {
   let intl;

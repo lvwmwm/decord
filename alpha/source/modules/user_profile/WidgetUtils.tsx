@@ -26,7 +26,7 @@ let uniqueKey;
 
 let tmp;
 const UserProfileClipsGalleryWidgetTypes = tmp(7856);
-const f103518 = (item) => item instanceof UserProfileClipsGalleryWidgetTypes.ClipsGalleryWidget;
+const f103559 = (item) => item instanceof UserProfileClipsGalleryWidgetTypes.ClipsGalleryWidget;
 function findGameWidget(widgetType) {
   let widgets;
   let closure_0 = widgetType;
@@ -154,9 +154,9 @@ export function getSavedWidgets() {
   return widgets;
 }
 export { replaceWidgetInList };
-export function addWidgetToPending(type) {
+export function addWidgetToPending(applicationWidget) {
   let widgets;
-  let closure_0 = type;
+  let closure_0 = applicationWidget;
   const obj = WidgetStore;
   if (WidgetStore.hasPendingChanges()) {
     let pendingWidgets = obj.getPendingWidgets();
@@ -182,7 +182,7 @@ export function addWidgetToPending(type) {
     uniqueKey = getUniqueKey.getUniqueKey();
     return uniqueKey === uniqueKey.getUniqueKey();
   })) {
-    if (type.type === WidgetType.WidgetType.PERSONAL) {
+    if (applicationWidget.type === WidgetType.WidgetType.PERSONAL) {
       const obj2 = { dismissAction: ContentDismissActionType.INDIRECT_ACTION };
       const tmp18Result = DismissibleContentUnsafeUtils;
       const result = tmp18Result.UNSAFE_markDismissibleContentAsDismissed(tmp18(4973).DismissibleContent.USER_PROFILE_PERSONAL_WIDGET_COACHMARK, obj2);
@@ -190,7 +190,7 @@ export function addWidgetToPending(type) {
       const tmp18Result2 = DismissibleContentUnsafeUtils;
       const result1 = tmp18Result2.UNSAFE_markDismissibleContentAsDismissed(tmp18(4973).DismissibleContent.USER_PROFILE_PERSONAL_WIDGET_NEW_BADGE, obj3);
     }
-    const items = [type];
+    const items = [applicationWidget];
     const setPendingWidgets = WidgetActionCreatorsDefault.setPendingWidgets;
     WidgetActionCreatorsDefault;
     HermesBuiltin.arraySpread(items, tmp8, 1);
@@ -253,7 +253,7 @@ export function addUploadingClipToClipsGalleryWidget(arg0) {
       widgets = [];
     }
   }
-  let found = widgets.find(f103518);
+  let found = widgets.find(f103559);
   if (found == null) {
     found = null;
   }
@@ -309,7 +309,7 @@ export function hasUploadingClipInClipsGalleryWidget(arg0) {
       widgets = [];
     }
   }
-  let found = widgets.find(f103518);
+  let found = widgets.find(f103559);
   if (found == null) {
     found = null;
   }
@@ -350,7 +350,7 @@ export function updateUnsavedClipThumbnailInClipsGalleryWidget(arg0, arg1) {
       widgets = [];
     }
   }
-  let found = widgets.find(f103518);
+  let found = widgets.find(f103559);
   if (found == null) {
     found = null;
   }
@@ -412,7 +412,7 @@ export function commitUploadedClipInClipsGalleryWidget(arg0, arg1) {
       widgets = [];
     }
   }
-  let found = widgets.find(f103518);
+  let found = widgets.find(f103559);
   if (found == null) {
     found = null;
   }
@@ -478,7 +478,7 @@ export function updateClipTitleInClipsGalleryWidget(arg0, str) {
       widgets = [];
     }
   }
-  let found = widgets.find(f103518);
+  let found = widgets.find(f103559);
   if (found == null) {
     found = null;
   }
@@ -533,7 +533,7 @@ export function reorderClipsInClipsGalleryWidget(arg0, arg1) {
       widgets = [];
     }
   }
-  let found = widgets.find(f103518);
+  let found = widgets.find(f103559);
   if (found == null) {
     found = null;
   }
@@ -586,7 +586,7 @@ export function updateClipTagsInClipsGalleryWidget(arg0, arg1) {
         widgets = [];
       }
     }
-    let found = widgets.find(f103518);
+    let found = widgets.find(f103559);
     if (found == null) {
       found = null;
     }
@@ -646,7 +646,7 @@ export function removeTagFromClip(arg0, arg1) {
       widgets = [];
     }
   }
-  let found = widgets.find(f103518);
+  let found = widgets.find(f103559);
   if (found == null) {
     found = null;
   }
@@ -688,7 +688,7 @@ export function removeTagFromClip(arg0, arg1) {
             widgets1 = [];
           }
         }
-        let found3 = widgets1.find(f103518);
+        let found3 = widgets1.find(f103559);
         if (found3 == null) {
           found3 = null;
         }
@@ -747,7 +747,7 @@ export function removeClipFromClipsGalleryWidget(arg0) {
       widgets = [];
     }
   }
-  let found = widgets.find(f103518);
+  let found = widgets.find(f103559);
   if (found == null) {
     found = null;
   }

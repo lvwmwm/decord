@@ -1,7 +1,7 @@
 // Module ID: 9809
 // Function ID: 9810
 // Name: QuestPlatformUtils
-// Dependencies: [6836, 1072, 7945, 6844, 9775, 9778, 6843, 9810, 1113, 1377, 9795, 5866, 14896, 7939, 1108, 9805, 5830, 14897, 14900, 1266, 14912, 14914, 14915, 7948, 7635, 572, 2]
+// Dependencies: [6836, 1072, 7945, 6844, 9775, 9778, 6843, 9810, 1113, 1377, 9795, 5866, 14897, 7939, 1108, 9805, 5830, 14898, 14901, 1266, 14913, 14915, 14916, 7948, 7635, 572, 2]
 // Exports: getExpiredCredentialsHintMessage, getPlatformTypeForHintMessage, isQuestSupportedOnWeb, openAdGameLinkDirectly, openAddConsoleConnectionModal, openAuthorizationConnectionModal, openConsoleConnectionSettings, openGameLinkDirectly, openSingleConsoleConnectionModal, supportedTaskPlatforms
 
 // Module 9809 (QuestPlatformUtils)
@@ -19,9 +19,9 @@ import AnalyticsTypes from "AnalyticsTypes" /* 7948 */;
 import captureAdUserAction3 from "captureAdUserAction" /* 9775 */;
 import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9778 */;
 import authorizeConnectionDefault from "authorizeConnection" /* 9810 */;
-import AppStoreOverlayTelemetryManager from "AppStoreOverlayTelemetryManager" /* 14896 */;
-import trackAppStoreOverlaySurfaceClicked from "trackAppStoreOverlaySurfaceClicked" /* 14914 */;
-import IosAttributionImpressionRegistry from "IosAttributionImpressionRegistry" /* 14915 */;
+import AppStoreOverlayTelemetryManager from "AppStoreOverlayTelemetryManager" /* 14897 */;
+import trackAppStoreOverlaySurfaceClicked from "trackAppStoreOverlaySurfaceClicked" /* 14915 */;
+import IosAttributionImpressionRegistry from "IosAttributionImpressionRegistry" /* 14916 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -474,7 +474,7 @@ export function openGameLinkDirectly(quest, impressionId) {
   if (null != impressionId) {
     const ctaConfig2 = quest.config.ctaConfig;
     let iosAppId;
-    const getIosAttributionClickFramework = tmp(14912).getIosAttributionClickFramework;
+    const getIosAttributionClickFramework = tmp(14913).getIosAttributionClickFramework;
     require("IosAttributionEligibility");
     if (ctaConfig2 != null) {
       const ios = ctaConfig2.ios;
@@ -559,8 +559,8 @@ export function openAdGameLinkDirectly(adCreativeType, impressionId) {
   if (null != impressionId) {
     const ios = cta.ios;
     let iosAppId;
-    const getIosAttributionClickFramework = tmp2(14912).getIosAttributionClickFramework;
-    adContentId(14912);
+    const getIosAttributionClickFramework = tmp2(14913).getIosAttributionClickFramework;
+    adContentId(14913);
     if (ios != null) {
       iosAppId = ios.iosAppId;
     }

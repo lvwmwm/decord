@@ -1,17 +1,55 @@
 // Module ID: 16487
 // Function ID: 16488
-// Dependencies: [16434, 16485, 16468]
+// Dependencies: [16446, 16488, 16492]
 
 // Module 16487
-import _mod16434 from "module_16434" /* 16434 */;
-import _mod16468 from "module_16468" /* 16468 */;
-import defineProperty2 from "defineProperty2" /* 16485 */;
+import _mod16446 from "module_16446" /* 16446 */;
+import _mod16488 from "module_16488" /* 16488 */;
 
+let tmp;
+const _mod16492 = tmp(16492);
+const f111374 = (arg0, arg1, arg2) => {
+  const tmp3 = _mod16446(arg0);
+  const tmp4 = _mod16488(tmp3);
+  if (0 === tmp4) {
+    return !c0 && -1;
+  } else {
+    let sum = _mod16492(arg2, tmp4);
+    const tmp16 = c0;
+    if (tmp16) {
+      if (arg1 != arg1) {
+        if (tmp4 > sum) {
+          while (tmp3[+sum] == tmp3[+sum]) {
+            sum = tmp7 + 1;
+          }
+          return true;
+        }
+      }
+      return !c0 && -1;
+    }
+    let sum1 = sum;
+    if (tmp4 > sum) {
+      let num;
+      while (true) {
+        num = c0;
+        if (c0) {
+          if (tmp3[sum1] === arg1) {
+            break;
+          }
+        }
+        sum1 = sum1 + 1;
+      }
+      if (!num) {
+        num = sum1;
+      }
+      if (!num) {
+        num = 0;
+      }
+      return num;
+    }
+  }
+};
+let c0 = false;
+const obj = { includes: f111374, indexOf: f111374 };
 
-export default _mod16434 ? ((arg0, arg1, arg2) => {
-  const obj = defineProperty2;
-  return obj.f(arg0, arg1, _mod16468(1, arg2));
-}) : ((arg0, arg1, arg2) => {
-  arg0[arg1] = arg2;
-  return arg0;
-});
+export default obj;

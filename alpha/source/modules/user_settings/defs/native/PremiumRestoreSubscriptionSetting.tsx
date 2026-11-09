@@ -1,9 +1,9 @@
-// Module ID: 17544
-// Function ID: 17545
+// Module ID: 17555
+// Function ID: 17556
 // Name: PremiumRestoreSubscriptionSetting
-// Dependencies: [1385, 21, 7680, 6091, 1113, 17545, 2118, 504, 1377, 11685, 9612, 2]
+// Dependencies: [1385, 21, 7680, 6091, 1113, 17556, 2118, 504, 1377, 11685, 9612, 2]
 
-// Module 17544 (PremiumRestoreSubscriptionSetting)
+// Module 17555 (PremiumRestoreSubscriptionSetting)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import intl4 from "intl" /* 1113 */;

@@ -1,9 +1,9 @@
-// Module ID: 18413
-// Function ID: 18414
+// Module ID: 18426
+// Function ID: 18427
 // Name: MessagesItemChannelBase
-// Dependencies: [19, 17, 5890, 6897, 5082, 5043, 6830, 1385, 21, 5140, 575, 504, 18414, 8860, 1377, 7549, 5885, 10921, 7043, 9165, 9598, 18415, 5816, 9594, 18416, 8905, 18417, 5891, 2]
+// Dependencies: [19, 17, 5890, 6897, 5082, 5043, 6830, 1385, 21, 5140, 575, 504, 18427, 8860, 1377, 7549, 5885, 10921, 7043, 9165, 9598, 18428, 5816, 9594, 18429, 8905, 18430, 5891, 2]
 
-// Module 18413 (MessagesItemChannelBase)
+// Module 18426 (MessagesItemChannelBase)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;

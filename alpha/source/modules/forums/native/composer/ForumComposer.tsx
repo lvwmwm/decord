@@ -1,7 +1,7 @@
 // Module ID: 10325
 // Function ID: 10326
 // Name: ForumComposer
-// Dependencies: [5, 32, 19, 17, 5141, 1192, 7777, 5052, 5072, 5043, 7906, 8277, 1385, 1072, 4996, 4986, 1228, 1112, 1083, 21, 5140, 575, 7387, 504, 5147, 5325, 9865, 5776, 9958, 7900, 7520, 5194, 5735, 1652, 8413, 5885, 7712, 12, 9960, 8268, 10326, 10337, 6091, 1113, 10338, 10340, 1377, 10341, 10342, 10345, 4973, 10346, 2118, 10347, 10348, 8246, 1187, 7519, 1625, 1497, 7178, 8821, 10352, 5751, 10353, 10425, 10639, 10640, 9653, 10641, 10645, 7630, 14764, 8730, 10649, 8273, 5374, 11271, 9533, 5758, 8714, 2]
+// Dependencies: [5, 32, 19, 17, 5141, 1192, 7777, 5052, 5072, 5043, 7906, 8277, 1385, 1072, 4996, 4986, 1228, 1112, 1083, 21, 5140, 575, 7387, 504, 5147, 5325, 9865, 5776, 9958, 7900, 7520, 5194, 5735, 1652, 8413, 5885, 7712, 12, 9960, 8268, 10326, 10337, 6091, 1113, 10338, 10340, 1377, 10341, 10342, 10345, 4973, 10346, 2118, 10347, 10348, 8246, 1187, 7519, 1625, 1497, 7178, 8821, 10352, 5751, 10353, 10425, 10639, 10640, 9653, 10641, 10645, 7630, 14765, 8730, 10649, 8273, 5374, 11271, 9533, 5758, 8714, 2]
 // Exports: default
 
 // Module 10325 (ForumComposer)
@@ -200,7 +200,7 @@ function ActionBar(channel) {
     ({ actionButton: arr7[0], mediaButton: arr7[1] } = tmp);
     const tmp16 = closure_29;
     if (tmp8) {
-      ImageIcon = tmp2(14764).KeyboardIcon;
+      ImageIcon = tmp2(14765).KeyboardIcon;
     } else {
       ImageIcon = tmp2(8730).ImageIcon;
     }
@@ -635,7 +635,7 @@ export default function ForumComposer(parentChannel) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -670,7 +670,7 @@ export default function ForumComposer(parentChannel) {
               }
             }
             c3 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           if (1 === tmp4) {

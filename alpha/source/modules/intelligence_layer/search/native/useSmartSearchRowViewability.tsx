@@ -1,13 +1,13 @@
-// Module ID: 19097
-// Function ID: 19098
+// Module ID: 19110
+// Function ID: 19111
 // Name: useSmartSearchRowViewability
-// Dependencies: [19, 2117, 5314, 14231, 1500, 5317, 14143, 14141, 504, 1092, 2]
+// Dependencies: [19, 2117, 5314, 14232, 1500, 5317, 14144, 14142, 504, 1092, 2]
 // Exports: useSmartSearchRowViewability
 
-// Module 19097 (useSmartSearchRowViewability)
+// Module 19110 (useSmartSearchRowViewability)
 import useChatLayoutDefault from "useChatLayout" /* 5317 */;
-import SearchSessionAnalyticsManagerDefault from "SearchSessionAnalyticsManager" /* 14141 */;
-import SmartSearchAnalyticsManagerDefault from "SmartSearchAnalyticsManager" /* 14143 */;
+import SearchSessionAnalyticsManagerDefault from "SearchSessionAnalyticsManager" /* 14142 */;
+import SmartSearchAnalyticsManagerDefault from "SmartSearchAnalyticsManager" /* 14144 */;
 import react from "react" /* 19 */;
 import AppStateStore from "AppStateStore" /* 2117 */;
 import size from "module_2" /* 2 */;
@@ -20,7 +20,7 @@ export function useSmartSearchRowViewability() {
   let stateFromStores;
   let obj = stateFromStores(5314);
   const currentNavigationRouteName = obj.useCurrentNavigationRouteName();
-  const context = react.useContext(stateFromStores(14231).SwipeForMemberListContext);
+  const context = react.useContext(stateFromStores(14232).SwipeForMemberListContext);
   const obj3 = stateFromStores(1500);
   const isFocused = obj3.useIsFocused();
   let isChatLockedOpen = useChatLayoutDefault().isChatLockedOpen;

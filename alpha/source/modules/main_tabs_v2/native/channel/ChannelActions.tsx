@@ -1,7 +1,7 @@
 // Module ID: 9914
 // Function ID: 9915
 // Name: ChannelActions
-// Dependencies: [19, 17, 6916, 4993, 4989, 5803, 9915, 1072, 9916, 21, 5140, 9918, 8714, 9919, 1113, 9953, 575, 9955, 8744, 9957, 9958, 9964, 504, 7507, 9965, 9966, 7517, 14787, 14789, 8008, 14799, 7283, 14081, 9960, 1377, 5323, 14080, 14140, 11683, 1108, 5315, 11831, 8716, 11126, 14800, 14790, 6789, 14801, 14802, 2]
+// Dependencies: [19, 17, 6916, 4993, 4989, 5803, 9915, 1072, 9916, 21, 5140, 9918, 8714, 9919, 1113, 9953, 575, 9955, 8744, 9957, 9958, 9964, 504, 7507, 9965, 9966, 7517, 14788, 14790, 8008, 14800, 7283, 14082, 9960, 1377, 5323, 14081, 14141, 11683, 1108, 5315, 11831, 8716, 11126, 14801, 14791, 6789, 14802, 14803, 2]
 // Exports: default
 
 // Module 9914 (ChannelActions)
@@ -20,12 +20,12 @@ import PhoneHangUpIcon2 from "PhoneHangUpIcon" /* 9955 */;
 import ForumActionCreatorsDefault from "ForumActionCreators" /* 9960 */;
 import showThreadBrowserModalDefault from "showThreadBrowserModal" /* 11126 */;
 import SwipeToMemberListUtils from "SwipeToMemberListUtils" /* 11683 */;
-import useSearchContext from "useSearchContext" /* 14080 */;
-import GuildDirectorySearchModalActionCreatorsDefault from "GuildDirectorySearchModalActionCreators" /* 14081 */;
-import TrackingDefault from "Tracking" /* 14140 */;
-import IconActionButtonDefault from "IconActionButton" /* 14790 */;
-import ConversationCoachmark from "ConversationCoachmark" /* 14800 */;
-import PrivateChannelButtonsDefault from "PrivateChannelButtons" /* 14802 */;
+import useSearchContext from "useSearchContext" /* 14081 */;
+import GuildDirectorySearchModalActionCreatorsDefault from "GuildDirectorySearchModalActionCreators" /* 14082 */;
+import TrackingDefault from "Tracking" /* 14141 */;
+import IconActionButtonDefault from "IconActionButton" /* 14791 */;
+import ConversationCoachmark from "ConversationCoachmark" /* 14801 */;
+import PrivateChannelButtonsDefault from "PrivateChannelButtons" /* 14803 */;
 import ActiveThreadsStore from "ActiveThreadsStore" /* 6916 */;
 import ChannelRecord from "ChannelRecord" /* 4993 */;
 import ChannelStore from "ChannelStore" /* 4989 */;
@@ -435,7 +435,7 @@ export default function ChannelActions(channelId) {
   const tmp5 = View;
   if (obj2.useHasForumSearchQuery(channelId)) {
     const obj4 = { channelId };
-    tmp4Result = tmp4(tmp(14801).ForumChannelCloseSearchButton, obj4);
+    tmp4Result = tmp4(tmp(14802).ForumChannelCloseSearchButton, obj4);
   } else {
     if (!isDM) {
       if (!isMultiUserDM) {

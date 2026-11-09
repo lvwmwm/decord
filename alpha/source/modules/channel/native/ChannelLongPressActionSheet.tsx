@@ -1,7 +1,7 @@
 // Module ID: 10922
 // Function ID: 10923
 // Name: ChannelLongPressActionSheet
-// Dependencies: [5, 19, 10923, 6809, 4994, 6916, 4993, 7349, 4989, 7782, 5011, 5072, 6897, 5082, 5043, 6830, 1385, 1072, 10258, 21, 8019, 2118, 8008, 1113, 10924, 8821, 5849, 7549, 5776, 9863, 10351, 10259, 5851, 6799, 10926, 3608, 9848, 1099, 10947, 8717, 10949, 10964, 4026, 10965, 5374, 10967, 11104, 11105, 11107, 9198, 11109, 7345, 5315, 7120, 11111, 8096, 11112, 11113, 11115, 11117, 11118, 11120, 7164, 7342, 11122, 9288, 7351, 7346, 11124, 8268, 8716, 11126, 11127, 8740, 8714, 11128, 14629, 5888, 8010, 10205, 8422, 14630, 14631, 12046, 14632, 7162, 6957, 7633, 5855, 9114, 10643, 7418, 5836, 7387, 7412, 10951, 504, 4997, 6940, 9957, 4965, 7020, 1187, 14635, 11275, 14636, 14642, 7483, 14647, 14648, 1449, 11988, 14650, 9767, 7426, 1624, 11276, 7428, 2]
+// Dependencies: [5, 19, 10923, 6809, 4994, 6916, 4993, 7349, 4989, 7782, 5011, 5072, 6897, 5082, 5043, 6830, 1385, 1072, 10258, 21, 8019, 2118, 8008, 1113, 10924, 8821, 5849, 7549, 5776, 9863, 10351, 10259, 5851, 6799, 10926, 3608, 9848, 1099, 10947, 8717, 10949, 10964, 4026, 10965, 5374, 10967, 11104, 11105, 11107, 9198, 11109, 7345, 5315, 7120, 11111, 8096, 11112, 11113, 11115, 11117, 11118, 11120, 7164, 7342, 11122, 9288, 7351, 7346, 11124, 8268, 8716, 11126, 11127, 8740, 8714, 11128, 14630, 5888, 8010, 10205, 8422, 14631, 14632, 12046, 14633, 7162, 6957, 7633, 5855, 9114, 10643, 7418, 5836, 7387, 7412, 10951, 504, 4997, 6940, 9957, 4965, 7020, 1187, 14636, 11275, 14637, 14643, 7483, 14648, 14649, 1449, 11988, 14651, 9767, 7426, 1624, 11276, 7428, 2]
 // Exports: default
 
 // Module 10922 (ChannelLongPressActionSheet)
@@ -65,7 +65,7 @@ let obj = function _handleVoiceOrStageChannelConnectPress() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -114,7 +114,7 @@ let obj = function _handleVoiceOrStageChannelConnectPress() {
               value.connectAndOpen(guildStageVoice);
             }
             c3 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp11) {
           c3 = 3;
@@ -952,7 +952,7 @@ function ChannelLongPressActionSheetConnected(channel) {
                     const obj2 = { value, done: true };
                     return obj2;
                   } else {
-                    return { value: "HermesInternal", done: "HermesInternal" };
+                    return { value: "HermesInternal", done: null };
                   }
                 } else {
                   try {
@@ -981,7 +981,7 @@ function ChannelLongPressActionSheetConnected(channel) {
                     } else {
                       value.openEndStageModal(closure_128_0);
                       paths = 3;
-                      return { value: "HermesInternal", done: "HermesInternal" };
+                      return { value: "HermesInternal", done: null };
                     }
                   } catch (tmp9) {
                     paths = 3;

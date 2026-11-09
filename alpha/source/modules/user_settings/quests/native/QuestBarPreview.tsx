@@ -1,15 +1,15 @@
-// Module ID: 17464
-// Function ID: 17465
+// Module ID: 17475
+// Function ID: 17476
 // Name: QuestBarPreview
-// Dependencies: [19, 17, 21, 5140, 575, 17386, 17465, 17466, 2]
+// Dependencies: [19, 17, 21, 5140, 575, 17397, 17476, 17477, 2]
 // Exports: QuestBarPreview
 
-// Module 17464 (QuestBarPreview)
+// Module 17475 (QuestBarPreview)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import QuestDockExternalCoordinationContext from "QuestDockExternalCoordinationContext" /* 17386 */;
-import reactDefault from "react" /* 17465 */;
+import QuestDockExternalCoordinationContext from "QuestDockExternalCoordinationContext" /* 17397 */;
+import reactDefault from "react" /* 17476 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;

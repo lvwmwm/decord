@@ -11,7 +11,7 @@ import Quest from "Quest" /* 7932 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
-const f93251 = (id) => {
+const f93293 = (id) => {
   const obj = Quest;
   return obj.questFromServerV2(id);
 };
@@ -101,7 +101,7 @@ export function isQuestWithKnownConfigVersion(config) {
 export function questConfigFromServer(body) {
   const str = merged5;
   const match = str.match(body);
-  const withResult = match.with({ config_version: 2 }, f93251);
+  const withResult = match.with({ config_version: 2 }, f93293);
   return withResult.exhaustive();
 }
 export function questUserStatusFromServer(body) {
@@ -129,7 +129,7 @@ export function questWithUserStatusFromServer(body) {
   const str = merged5;
   const match = str.match(config);
   tmp = null;
-  withResult = match.with({ config_version: 2 }, f93251);
+  withResult = match.with({ config_version: 2 }, f93293);
   if (null != body.user_status) {
     const user_status = body.user_status;
     const obj2 = { userId: null, questId: null, enrolledAt: null, completedAt: null, claimedAt: null, claimedTier: claimed_tier, orbQuantityClaimed: orb_quantity_claimed, lastStreamHeartbeatAt: null, streamProgressSeconds: null, dismissedQuestContent: null, progress: progressFromServer(user_status.progress) };

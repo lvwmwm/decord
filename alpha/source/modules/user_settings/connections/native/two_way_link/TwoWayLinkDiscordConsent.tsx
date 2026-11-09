@@ -80,7 +80,7 @@ export function TwoWayLinkDiscordConsent(callbackCode) {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -134,7 +134,7 @@ export function TwoWayLinkDiscordConsent(callbackCode) {
               v0(code);
             }
             c6 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp32) {
           if (0 === v0) {

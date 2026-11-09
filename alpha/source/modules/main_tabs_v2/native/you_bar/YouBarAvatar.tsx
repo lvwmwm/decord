@@ -1,9 +1,9 @@
-// Module ID: 18800
-// Function ID: 18801
+// Module ID: 18813
+// Function ID: 18814
 // Name: YouBarAvatar
-// Dependencies: [5, 32, 19, 17, 5141, 6625, 1385, 17385, 1072, 21, 5140, 575, 504, 1187, 5199, 1652, 6908, 9593, 5761, 1705, 5724, 9592, 8799, 5376, 7635, 2118, 5420, 2]
+// Dependencies: [5, 32, 19, 17, 5141, 6625, 1385, 17396, 1072, 21, 5140, 575, 504, 1187, 5199, 1652, 6908, 9593, 5761, 1705, 5724, 9592, 8799, 5376, 7635, 2118, 5420, 2]
 
-// Module 18800 (YouBarAvatar)
+// Module 18813 (YouBarAvatar)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import native from "native" /* 1187 */;
@@ -18,7 +18,7 @@ import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 5141 */;
 import SelfPresenceStore from "SelfPresenceStore" /* 6625 */;
 import UserStore from "UserStore" /* 1385 */;
-import YouBarConstants from "YouBarConstants" /* 17385 */;
+import YouBarConstants from "YouBarConstants" /* 17396 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
@@ -532,7 +532,7 @@ const memoResult = react.memo(function YouBarAvatarAnimated(isLargeAvatar) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -564,7 +564,7 @@ const memoResult = react.memo(function YouBarAvatarAnimated(isLargeAvatar) {
           value.openUserSettings();
           closure_128_2(false);
           _undefined = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp11) {
         _undefined = 3;

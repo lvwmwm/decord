@@ -1,10 +1,10 @@
-// Module ID: 14950
-// Function ID: 14951
+// Module ID: 14951
+// Function ID: 14952
 // Name: YouScreenNavIconMeasurer
 // Dependencies: [32, 19, 17, 21, 575, 7689, 2]
 // Exports: YouScreenNavIconMeasurer, useYouScreenNavIconMeasurement
 
-// Module 14950 (YouScreenNavIconMeasurer)
+// Module 14951 (YouScreenNavIconMeasurer)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;

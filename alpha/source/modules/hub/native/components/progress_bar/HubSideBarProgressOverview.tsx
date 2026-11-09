@@ -1,10 +1,10 @@
-// Module ID: 18592
-// Function ID: 18593
+// Module ID: 18605
+// Function ID: 18606
 // Name: HubSideBarProgressOverview
-// Dependencies: [19, 9211, 21, 14475, 1113, 14285, 16108, 5374, 14479, 2118, 2]
+// Dependencies: [19, 9211, 21, 14476, 1113, 14286, 16118, 5374, 14480, 2118, 2]
 // Exports: default
 
-// Module 18592 (HubSideBarProgressOverview)
+// Module 18605 (HubSideBarProgressOverview)
 import Fragment from "Fragment" /* 21 */;
 import asyncRequire from "asyncRequire" /* 2118 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
@@ -21,16 +21,16 @@ const result = size.fileFinishedImporting("modules/hub/native/components/progres
 
 export default function HubSidebarProgressOverview(guild) {
   guild = guild.guild;
-  let obj = guild(14475);
+  let obj = guild(14476);
   const hubProgressBarCompletedSteps = obj.useHubProgressBarCompletedSteps(guild);
-  let obj2 = guild(14475);
+  let obj2 = guild(14476);
   const nextHubProgressStep = obj2.getNextHubProgressStep(hubProgressBarCompletedSteps);
   if (null == nextHubProgressStep) {
     return null;
   } else {
     let formatToPlainStringResult;
     size = hubProgressBarCompletedSteps.size;
-    const tmpResult = guild(14475);
+    const tmpResult = guild(14476);
     const hubProgressTitleForStep = tmpResult.getHubProgressTitleForStep(nextHubProgressStep);
     if (size < total) {
       const intl2 = tmp(1113).intl;
@@ -44,12 +44,12 @@ export default function HubSidebarProgressOverview(guild) {
       formatToPlainStringResult = intl.string(tmp(1113).t["+Gyklt"]);
     }
     const _Math = Math;
-    const bound = Math.max(tmp(14285).MIN_PROGRESS_PERCENT, 100 * size / tmp12);
-    return jsx(guild(16108).GuildProgressOverviewView, {
+    const bound = Math.max(tmp(14286).MIN_PROGRESS_PERCENT, 100 * size / tmp12);
+    return jsx(guild(16118).GuildProgressOverviewView, {
       onPress: function handlePress() {
           const obj = ActionSheetActionCreatorsDefault;
           const obj2 = { guild, analyticsSource: "Channels Sidebar" };
-          obj.openLazy(asyncRequire(14479, dependencyMap.paths), _false, obj2);
+          obj.openLazy(asyncRequire(14480, dependencyMap.paths), _false, obj2);
         },
       title: hubProgressTitleForStep,
       subtitle: formatToPlainStringResult,

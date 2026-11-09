@@ -1,9 +1,9 @@
-// Module ID: 19807
-// Function ID: 19808
+// Module ID: 19820
+// Function ID: 19821
 // Name: ChannelResyncManager
-// Dependencies: [5, 502, 4989, 6829, 5011, 6623, 1072, 4996, 3, 1089, 7350, 1252, 572, 7870, 15841, 1403, 1266, 2]
+// Dependencies: [5, 502, 4989, 6829, 5011, 6623, 1072, 4996, 3, 1089, 7350, 1252, 572, 7870, 15851, 1403, 1266, 2]
 
-// Module 19807 (ChannelResyncManager)
+// Module 19820 (ChannelResyncManager)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants from "Constants" /* 1072 */;
 import DurationsDefault from "Durations" /* 1089 */;
@@ -11,7 +11,7 @@ import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import FlagUtils from "FlagUtils" /* 1403 */;
 import ChannelConstants from "ChannelConstants" /* 4996 */;
 import GuildsRequiringChannelSyncDefault from "GuildsRequiringChannelSync" /* 7870 */;
-import PrivateChannelHidingExperiment from "PrivateChannelHidingExperiment" /* 15841 */;
+import PrivateChannelHidingExperiment from "PrivateChannelHidingExperiment" /* 15851 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 4989 */;
@@ -271,7 +271,7 @@ let obj = function _scheduleGuildResyncs() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -422,7 +422,7 @@ let obj = function _scheduleGuildResyncs() {
               }
             }
             c4 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp8) {
           c4 = 3;
@@ -446,7 +446,7 @@ obj = function _getResyncGuilds() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {

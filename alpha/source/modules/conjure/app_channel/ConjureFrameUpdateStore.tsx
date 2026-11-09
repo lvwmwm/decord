@@ -1,10 +1,10 @@
-// Module ID: 19015
-// Function ID: 19016
+// Module ID: 19028
+// Function ID: 19029
 // Name: ConjureFrameUpdateStore
 // Dependencies: [6901, 504, 572, 2]
 // Exports: useConjureFrameUpdateAvailable
 
-// Module 19015 (ConjureFrameUpdateStore)
+// Module 19028 (ConjureFrameUpdateStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import FramesStore from "FramesStore" /* 6901 */;

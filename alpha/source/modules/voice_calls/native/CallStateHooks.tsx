@@ -1,10 +1,10 @@
-// Module ID: 15480
-// Function ID: 15481
+// Module ID: 15490
+// Function ID: 15491
 // Name: CallStateHooks
 // Dependencies: [6898, 502, 6624, 5893, 1072, 5805, 504, 12022, 2]
 // Exports: default
 
-// Module 15480 (CallStateHooks)
+// Module 15490 (CallStateHooks)
 import CallConstants from "CallConstants" /* 5805 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 6898 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;

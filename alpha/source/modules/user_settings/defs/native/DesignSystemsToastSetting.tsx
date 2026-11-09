@@ -1,9 +1,9 @@
-// Module ID: 18106
-// Function ID: 18107
+// Module ID: 18119
+// Function ID: 18120
 // Name: DesignSystemsToastSetting
-// Dependencies: [8503, 1072, 11685, 18107, 2]
+// Dependencies: [8503, 1072, 11685, 18120, 2]
 
-// Module 18106 (DesignSystemsToastSetting)
+// Module 18119 (DesignSystemsToastSetting)
 import Constants from "Constants" /* 1072 */;
 import SettingsConstants from "SettingsConstants" /* 8503 */;
 import SettingBuilders from "SettingBuilders" /* 11685 */;

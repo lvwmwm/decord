@@ -1,13 +1,13 @@
-// Module ID: 19259
-// Function ID: 19260
+// Module ID: 19272
+// Function ID: 19273
 // Name: VoiceChannelAppActionSheet
-// Dependencies: [19, 21, 1113, 4124, 19256, 5374, 7426, 7382, 7124, 7127, 19258, 2]
+// Dependencies: [19, 21, 1113, 4124, 19269, 5374, 7426, 7382, 7124, 7127, 19271, 2]
 // Exports: default
 
-// Module 19259 (VoiceChannelAppActionSheet)
+// Module 19272 (VoiceChannelAppActionSheet)
 import _modDef4124 from "module_4124" /* 4124 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
-import VoiceChannelAppIconDefault from "VoiceChannelAppIcon" /* 19258 */;
+import VoiceChannelAppIconDefault from "VoiceChannelAppIcon" /* 19271 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -35,7 +35,7 @@ export default function VoiceChannelAppActionSheet(guildId) {
   let tmp = onChange;
   let tmp2 = dependencyMap;
   guildId = guildId.guildId;
-  let obj = onChange(19256);
+  let obj = onChange(19269);
   const voiceChannelAppSettingOptions = obj.useVoiceChannelAppSettingOptions(guildId, selectedApplicationId);
   ({ options, listState } = voiceChannelAppSettingOptions);
   const items = [onChange];

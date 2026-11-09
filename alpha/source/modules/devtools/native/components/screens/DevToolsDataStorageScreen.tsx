@@ -1,10 +1,10 @@
-// Module ID: 17928
-// Function ID: 17929
+// Module ID: 17937
+// Function ID: 17938
 // Name: DevToolsDataStorageScreen
 // Dependencies: [32, 19, 17, 505, 502, 21, 5140, 575, 7038, 5018, 5837, 504, 5035, 1500, 5735, 7281, 10856, 10854, 7282, 5374, 5751, 7287, 7426, 7382, 7428, 2]
 // Exports: default
 
-// Module 17928 (DevToolsDataStorageScreen)
+// Module 17937 (DevToolsDataStorageScreen)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;

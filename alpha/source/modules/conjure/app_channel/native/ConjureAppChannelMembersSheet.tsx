@@ -1,11 +1,11 @@
-// Module ID: 14819
-// Function ID: 14820
+// Module ID: 14820
+// Function ID: 14821
 // Name: ConjureAppChannelMembersSheet
-// Dependencies: [19, 4989, 10853, 21, 5140, 504, 14818, 5388, 11779, 2]
+// Dependencies: [19, 4989, 10853, 21, 5140, 504, 14819, 5388, 11779, 2]
 
-// Module 14819 (ConjureAppChannelMembersSheet)
+// Module 14820 (ConjureAppChannelMembersSheet)
 import Fragment from "Fragment" /* 21 */;
-import openConjureAppChannelSheet from "openConjureAppChannelSheet" /* 14818 */;
+import openConjureAppChannelSheet from "openConjureAppChannelSheet" /* 14819 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4989 */;
 import UsersFastListConstants from "UsersFastListConstants" /* 10853 */;

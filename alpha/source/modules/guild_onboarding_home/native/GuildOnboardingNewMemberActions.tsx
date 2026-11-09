@@ -1,17 +1,17 @@
-// Module ID: 18986
-// Function ID: 18987
+// Module ID: 18999
+// Function ID: 19000
 // Name: GuildOnboardingNewMemberActions
-// Dependencies: [19, 17, 6851, 4989, 5052, 5011, 5072, 7462, 8410, 1072, 1388, 5058, 21, 5140, 575, 504, 5776, 1411, 14066, 5842, 5086, 5751, 1187, 13428, 7043, 1113, 14070, 18987, 1403, 18988, 2]
+// Dependencies: [19, 17, 6851, 4989, 5052, 5011, 5072, 7462, 8410, 1072, 1388, 5058, 21, 5140, 575, 504, 5776, 1411, 14067, 5842, 5086, 5751, 1187, 13428, 7043, 1113, 14071, 19000, 1403, 19001, 2]
 // Exports: default
 
-// Module 18986 (GuildOnboardingNewMemberActions)
+// Module 18999 (GuildOnboardingNewMemberActions)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import EmojiConstants from "EmojiConstants" /* 1388 */;
 import FlagUtils from "FlagUtils" /* 1403 */;
 import GuildMemberConstants from "GuildMemberConstants" /* 5058 */;
-import GuildOnboardingHomeActionCreators from "GuildOnboardingHomeActionCreators" /* 14066 */;
+import GuildOnboardingHomeActionCreators from "GuildOnboardingHomeActionCreators" /* 14067 */;
 import react from "react" /* 19 */;
 import EmojiStore from "EmojiStore" /* 6851 */;
 import ChannelStore from "ChannelStore" /* 4989 */;

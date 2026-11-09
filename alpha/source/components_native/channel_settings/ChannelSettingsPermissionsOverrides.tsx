@@ -1,10 +1,10 @@
-// Module ID: 19274
-// Function ID: 19275
+// Module ID: 19287
+// Function ID: 19288
 // Name: ChannelSettingsPermissionsOverrides
-// Dependencies: [32, 5, 19, 17, 5007, 4989, 5046, 5011, 5072, 5082, 1385, 1072, 21, 5140, 575, 1499, 1627, 504, 7484, 11805, 5077, 1084, 9113, 7549, 2116, 5194, 6090, 1113, 5834, 2185, 4997, 19275, 9902, 5751, 5776, 10938, 7038, 8095, 7126, 19279, 1377, 19280, 2]
+// Dependencies: [32, 5, 19, 17, 5007, 4989, 5046, 5011, 5072, 5082, 1385, 1072, 21, 5140, 575, 1499, 1627, 504, 7484, 11805, 5077, 1084, 9113, 7549, 2116, 5194, 6090, 1113, 5834, 2185, 4997, 19288, 9902, 5751, 5776, 10938, 7038, 8095, 7126, 19292, 1377, 19293, 2]
 // Exports: default
 
-// Module 19274 (ChannelSettingsPermissionsOverrides)
+// Module 19287 (ChannelSettingsPermissionsOverrides)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1084 */;
@@ -15,7 +15,7 @@ import PermissionUtils from "PermissionUtils" /* 5077 */;
 import TableRowGroup2 from "TableRowGroup" /* 7126 */;
 import useAppChannelApplication from "useAppChannelApplication" /* 7484 */;
 import AppChannelPermissionUtils from "AppChannelPermissionUtils" /* 11805 */;
-import PermissionSpecUtilsDefault from "PermissionSpecUtils" /* 19275 */;
+import PermissionSpecUtilsDefault from "PermissionSpecUtils" /* 19288 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -123,7 +123,7 @@ export default function ChannelSettingsPermissionsOverrides(fromCreate) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -234,7 +234,7 @@ export default function ChannelSettingsPermissionsOverrides(fromCreate) {
               show(obj17);
             }
             c5 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else if (arg0 === 1) {
           c5 = 3;
@@ -245,7 +245,7 @@ export default function ChannelSettingsPermissionsOverrides(fromCreate) {
           return obj;
         } else if (!value) {
           c5 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
         const obj6 = fromCreate(section[21]);
         obj10.deny = obj6.add(obj10.deny, closure_0);

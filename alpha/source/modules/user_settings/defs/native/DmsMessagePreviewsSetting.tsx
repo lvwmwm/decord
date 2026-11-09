@@ -1,14 +1,14 @@
-// Module ID: 17619
-// Function ID: 17620
+// Module ID: 17630
+// Function ID: 17631
 // Name: DmsMessagePreviewsSetting
-// Dependencies: [19, 8503, 17620, 4965, 1113, 5816, 11685, 2]
+// Dependencies: [19, 8503, 17631, 4965, 1113, 5816, 11685, 2]
 
-// Module 17619 (DmsMessagePreviewsSetting)
+// Module 17630 (DmsMessagePreviewsSetting)
 import intl4 from "intl" /* 1113 */;
 import UserSettings from "UserSettings" /* 4965 */;
 import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 5816 */;
 import SettingsConstants from "SettingsConstants" /* 8503 */;
-import useMessagePreviews from "useMessagePreviews" /* 17620 */;
+import useMessagePreviews from "useMessagePreviews" /* 17631 */;
 import react from "react" /* 19 */;
 import SettingBuilders from "SettingBuilders" /* 11685 */;
 import size from "module_2" /* 2 */;

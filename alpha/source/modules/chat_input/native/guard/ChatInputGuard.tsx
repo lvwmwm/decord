@@ -1,17 +1,17 @@
-// Module ID: 14259
-// Function ID: 14260
+// Module ID: 14260
+// Function ID: 14261
 // Name: ChatInputGuard
-// Dependencies: [19, 17, 10017, 21, 5140, 575, 669, 9912, 14052, 14051, 10855, 1377, 14057, 7038, 8098, 10930, 10270, 5751, 5758, 6822, 9072, 2]
+// Dependencies: [19, 17, 10017, 21, 5140, 575, 669, 9912, 14053, 14052, 10855, 1377, 14058, 7038, 8098, 10930, 10270, 5751, 5758, 6822, 9072, 2]
 // Exports: ChatInputGuardContainer, default
 
-// Module 14259 (ChatInputGuard)
+// Module 14260 (ChatInputGuard)
 import nativeDefault from "native" /* 575 */;
 import Radius from "Radius" /* 669 */;
 import Text_Text from "Text/Text" /* 5751 */;
 import components_Button_Button from "components/Button/Button" /* 5758 */;
 import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 9912 */;
 import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 10017 */;
-import getChatInputPositionStyleDefault from "getChatInputPositionStyle" /* 14051 */;
+import getChatInputPositionStyleDefault from "getChatInputPositionStyle" /* 14052 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -166,7 +166,7 @@ export function ChatInputGuardContainer(screenIndex) {
   const channelId = screenIndex.channelId;
   ({ onJumpToPresent, children } = screenIndex);
   const tmp3 = useIsUsingClientThemeDefault();
-  const obj = screenIndex(14052);
+  const obj = screenIndex(14053);
   const chatInputFloatingOverlayStyle = obj.useChatInputFloatingOverlayStyle();
   const tmp6 = closure_9(tmp3);
   const items = [screenIndex];
@@ -175,7 +175,7 @@ export function ChatInputGuardContainer(screenIndex) {
     closure_6(screenIndex, nativeEvent.nativeEvent.layout.height);
   }, items);
   items1 = [getChatInputPositionStyleDefault({ isCreatingThread: false }), chatInputFloatingOverlayStyle];
-  items2 = [closure_7(screenIndex(14052).ChatInputScrimGradient, {}), ];
+  items2 = [closure_7(screenIndex(14053).ChatInputScrimGradient, {}), ];
   let tmp10Result = null;
   const obj3 = { style: tmp6.container, children: items3 };
   const tmp4 = screenIndex;
@@ -197,7 +197,7 @@ export function ChatInputGuardContainer(screenIndex) {
     tmp10Result4 = null;
     if (null != channelId) {
       const obj6 = { channelId, screenIndex, onJumpToPresent };
-      tmp10Result4 = tmp10(tmp(14057), obj6);
+      tmp10Result4 = tmp10(tmp(14058), obj6);
     }
   }
   items3[2] = tmp10Result4;

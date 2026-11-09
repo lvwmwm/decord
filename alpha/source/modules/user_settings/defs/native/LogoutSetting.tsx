@@ -1,9 +1,9 @@
-// Module ID: 17868
-// Function ID: 17869
+// Module ID: 17879
+// Function ID: 17880
 // Name: LogoutSetting
 // Dependencies: [21, 510, 1092, 6761, 11040, 7223, 6795, 6092, 6096, 1113, 11685, 12046, 2]
 
-// Module 17868 (LogoutSetting)
+// Module 17879 (LogoutSetting)
 import Storage2 from "Storage" /* 510 */;
 import ConstantsIOS from "ConstantsIOS" /* 1092 */;
 import intl5 from "intl" /* 1113 */;

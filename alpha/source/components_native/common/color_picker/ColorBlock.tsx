@@ -1,9 +1,9 @@
-// Module ID: 16756
-// Function ID: 16757
+// Module ID: 16767
+// Function ID: 16768
 // Name: ColorBlock
 // Dependencies: [19, 17, 21, 5140, 575, 1090, 7043, 5137, 1187, 11750, 2]
 
-// Module 16756 (ColorBlock)
+// Module 16767 (ColorBlock)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;

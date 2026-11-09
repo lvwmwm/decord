@@ -1,10 +1,10 @@
-// Module ID: 19568
-// Function ID: 19569
+// Module ID: 19581
+// Function ID: 19582
 // Name: useVoicePanelDockContextMenuItems
-// Dependencies: [19, 1072, 11362, 19569, 12075, 19527, 19570, 19571, 11332, 6767, 1108, 19573, 1113, 5845, 19574, 19576, 3184, 15136, 11172, 12270, 8714, 7633, 19578, 2]
+// Dependencies: [19, 1072, 11362, 19582, 12075, 19540, 19583, 19584, 11332, 6767, 1108, 19586, 1113, 5845, 19587, 19589, 3184, 15137, 11172, 12270, 8714, 7633, 19591, 2]
 // Exports: default
 
-// Module 19568 (useVoicePanelDockContextMenuItems)
+// Module 19581 (useVoicePanelDockContextMenuItems)
 import Constants from "Constants" /* 1072 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1108 */;
 import intl6 from "intl" /* 1113 */;
@@ -13,7 +13,7 @@ import UserPlusIcon from "UserPlusIcon" /* 5845 */;
 import SettingsIcon from "SettingsIcon" /* 7633 */;
 import ChatIcon from "ChatIcon" /* 8714 */;
 import ActivitiesIcon from "ActivitiesIcon" /* 12270 */;
-import trackVoicePanelTabOpened from "trackVoicePanelTabOpened" /* 19573 */;
+import trackVoicePanelTabOpened from "trackVoicePanelTabOpened" /* 19586 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -89,9 +89,9 @@ export default function useVoicePanelDockContextMenuItems(id, arg1) {
       const obj2 = { label: closure_6.text, IconComponent: MobilePhoneShareIcon, action: tmp14.onPress };
       tmp14 = closure_6;
       if (closure_6.isActive) {
-        MobilePhoneShareIcon = tmp15(19574).MobilePhoneXIcon;
+        MobilePhoneShareIcon = tmp15(19587).MobilePhoneXIcon;
       } else {
-        MobilePhoneShareIcon = tmp15(19576).MobilePhoneShareIcon;
+        MobilePhoneShareIcon = tmp15(19589).MobilePhoneShareIcon;
       }
       push2(obj2);
     }
@@ -116,7 +116,7 @@ export default function useVoicePanelDockContextMenuItems(id, arg1) {
       }
       const obj3 = { label: stringResult, IconComponent: VideoIcon, action: closure_7.onPress };
       if (closure_7.isVideoEnabled) {
-        VideoIcon = tmp28(15136).VideoSlashIcon;
+        VideoIcon = tmp28(15137).VideoSlashIcon;
       } else {
         VideoIcon = tmp28(11172).VideoIcon;
       }

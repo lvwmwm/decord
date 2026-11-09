@@ -1,17 +1,17 @@
-// Module ID: 13922
-// Function ID: 13923
+// Module ID: 13923
+// Function ID: 13924
 // Name: TraitOptionList
-// Dependencies: [32, 19, 17, 5141, 6199, 21, 575, 5140, 13923, 8101, 6566, 504, 5390, 1652, 5739, 1493, 5376, 2]
+// Dependencies: [32, 19, 17, 5141, 6199, 21, 575, 5140, 13924, 8101, 6566, 504, 5390, 1652, 5739, 1493, 5376, 2]
 // Exports: default
 
-// Module 13922 (TraitOptionList)
+// Module 13923 (TraitOptionList)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import HapticUtils from "HapticUtils" /* 5376 */;
 import CheckpointConstants from "CheckpointConstants" /* 6199 */;
 import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6566 */;
 import inlineStyles from "inlineStyles" /* 8101 */;
-import TraitOptionItem from "TraitOptionItem" /* 13923 */;
+import TraitOptionItem from "TraitOptionItem" /* 13924 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5141 */;
@@ -88,7 +88,7 @@ export default function TraitOptionList(size) {
   let tmp7 = options(5739)(bound);
   let tmp8 = disabled(react.useState(options(1493)().width), 2);
   [tmp9, c11] = tmp8;
-  const width = size(13923).TRAIT_OPTION_SIZE_TO_DIMENSIONS[size].width;
+  const width = size(13924).TRAIT_OPTION_SIZE_TO_DIMENSIONS[size].width;
   const sum = width + closure_10;
   c12 = sum;
   const items1 = [disabled, isScreenReaderEnabled];

@@ -1,17 +1,17 @@
-// Module ID: 18349
-// Function ID: 18350
+// Module ID: 18362
+// Function ID: 18363
 // Name: PrivacyHint
-// Dependencies: [19, 17, 6796, 18310, 1072, 21, 5140, 5751, 1113, 5200, 7055, 8246, 18350, 2]
+// Dependencies: [19, 17, 6796, 18323, 1072, 21, 5140, 5751, 1113, 5200, 7055, 8246, 18363, 2]
 // Exports: default
 
-// Module 18349 (PrivacyHint)
+// Module 18362 (PrivacyHint)
 import Constants from "Constants" /* 1072 */;
 import intl3 from "intl" /* 1113 */;
 import react_native from "react-native" /* 5200 */;
 import Text_Text from "Text/Text" /* 5751 */;
 import PromoEmailConsentStore from "PromoEmailConsentStore" /* 6796 */;
-import RegistrationUIStore from "RegistrationUIStore" /* 18310 */;
-import PromotionalEmailCheckBoxDefault from "PromotionalEmailCheckBox" /* 18350 */;
+import RegistrationUIStore from "RegistrationUIStore" /* 18323 */;
+import PromotionalEmailCheckBoxDefault from "PromotionalEmailCheckBox" /* 18363 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;

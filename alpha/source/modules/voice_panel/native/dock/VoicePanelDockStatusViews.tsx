@@ -1,10 +1,10 @@
-// Module ID: 19591
-// Function ID: 19592
+// Module ID: 19604
+// Function ID: 19605
 // Name: VoicePanelDockStatusViews
-// Dependencies: [19, 17, 4989, 5011, 5082, 6811, 1385, 11381, 21, 5140, 575, 19592, 11362, 504, 19593, 7020, 1187, 7338, 5776, 1113, 8741, 8744, 5751, 6173, 1652, 5761, 14235, 14236, 5370, 5842, 2]
+// Dependencies: [19, 17, 4989, 5011, 5082, 6811, 1385, 11381, 21, 5140, 575, 19605, 11362, 504, 19606, 7020, 1187, 7338, 5776, 1113, 8741, 8744, 5751, 6173, 1652, 5761, 14236, 14237, 5370, 5842, 2]
 // Exports: DockChannelIcon, DockChannelTitle, DockFace, DockUserTitle
 
-// Module 19591 (VoicePanelDockStatusViews)
+// Module 19604 (VoicePanelDockStatusViews)
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import timing_timing from "timing/timing" /* 5370 */;
@@ -119,7 +119,7 @@ let closure_20 = react.memo(function DockSpeakerHalo(isSpeaking) {
   isSpeaking = isSpeaking.isSpeaking;
   const userId = isSpeaking.userId;
   const tmp = closure_16();
-  let obj = isSpeaking(14235);
+  let obj = isSpeaking(14236);
   const voicePanelDockSpeakerLevelProps = obj.useVoicePanelDockSpeakerLevelProps();
   let obj2 = isSpeaking(1652);
   const sharedValue = obj2.useSharedValue(0);
@@ -161,7 +161,7 @@ let closure_20 = react.memo(function DockSpeakerHalo(isSpeaking) {
   items3 = [tmp.halo, animatedStyle];
   View = sharedValue(1652).View;
   obj5 = { style: StyleSheet.absoluteFill, userId, minScale: 0.84, maxScale: 1, children: closure_13(View, obj6) };
-  tmp11 = sharedValue(14236);
+  tmp11 = sharedValue(14237);
   const merged = Object.assign(voicePanelDockSpeakerLevelProps);
   obj6 = { style: tmp.haloDisc };
   return closure_13(View, obj4);
@@ -186,7 +186,7 @@ export function DockChannelIcon(streaming) {
   let channelId;
   let guildId;
   const tmp = closure_16();
-  const tmp4 = guildId(19592);
+  const tmp4 = guildId(19605);
   const tmp4Result = tmp4(channelId(575).Shadow.SHADOW_MEDIUM);
   const context = react.useContext(guildId(11362));
   channelId = context.channelId;
@@ -224,7 +224,7 @@ export function DockChannelIcon(streaming) {
     items4[1] = obj4;
     obj5 = { streaming, children: closure_13(tmp2Result3, obj6) };
     obj6 = { guild: stateFromStores, size: channelId(7020).GuildIconSizes.SMALL_32, style: tmp.guildIconAsset };
-    tmp2Result = guildId(19593);
+    tmp2Result = guildId(19606);
     tmp2Result3 = guildId(7020);
     tmp13 = closure_13(View, obj3);
   } else {
@@ -236,7 +236,7 @@ export function DockChannelIcon(streaming) {
       items5[1] = obj8;
       obj9 = { streaming, children: closure_13(Avatar, obj10) };
       obj10 = { user: stateFromStores1, guildId: "Array", size: channelId(1187).AvatarSizes.REFRESH_MEDIUM_32 };
-      tmp2Result4 = guildId(19593);
+      tmp2Result4 = guildId(19606);
       Avatar = tmp5(1187).Avatar;
       tmp13 = closure_13(View, obj7);
     }

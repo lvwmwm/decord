@@ -1,20 +1,15 @@
 // Module ID: 16462
 // Function ID: 16463
-// Dependencies: [16457, 16463]
+// Dependencies: [16441]
 
 // Module 16462
-import _mod16457 from "module_16457" /* 16457 */;
+import _mod16441 from "module_16441" /* 16441 */;
 
-let tmp;
-const _mod16463 = tmp(16463);
+const tmp = _mod16441.navigator && _mod16441.navigator.userAgent;
+let str = "";
+if (tmp) {
+  const _String = String;
+  str = String(tmp);
+}
 
-export default function(arg0) {
-  if (_mod16457(arg0)) {
-    return arg0;
-  } else {
-    const self = this;
-    const self2 = this;
-    const tmp4 = new TypeError(_mod16463(arg0) + " is not a function");
-    throw tmp4;
-  }
-};
+export default str;

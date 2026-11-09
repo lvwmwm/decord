@@ -1,10 +1,10 @@
-// Module ID: 16288
-// Function ID: 16289
+// Module ID: 16298
+// Function ID: 16299
 // Name: Tooltip
 // Dependencies: [19, 17, 1072, 21, 5140, 575, 1380, 5751, 1187, 2]
 // Exports: default
 
-// Module 16288 (Tooltip)
+// Module 16298 (Tooltip)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;

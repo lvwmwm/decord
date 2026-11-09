@@ -1,18 +1,18 @@
-// Module ID: 13505
-// Function ID: 13506
+// Module ID: 13506
+// Function ID: 13507
 // Name: TransferOwnershipModal
-// Dependencies: [5, 19, 13506, 21, 13504, 1260, 1113, 7064, 13507, 7146, 9154, 5836, 7231, 2]
+// Dependencies: [5, 19, 13507, 21, 13505, 1260, 1113, 7064, 13508, 7146, 9154, 5836, 7231, 2]
 // Exports: default
 
-// Module 13505 (TransferOwnershipModal)
+// Module 13506 (TransferOwnershipModal)
 import Fragment from "Fragment" /* 21 */;
 import intl3 from "intl" /* 1113 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
 import NavigatorHeader from "NavigatorHeader" /* 7064 */;
-import TransferOwnershipModalActionCreatorsDefault from "TransferOwnershipModalActionCreators" /* 13504 */;
+import TransferOwnershipModalActionCreatorsDefault from "TransferOwnershipModalActionCreators" /* 13505 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import TransferOwnershipConstants from "TransferOwnershipConstants" /* 13506 */;
+import TransferOwnershipConstants from "TransferOwnershipConstants" /* 13507 */;
 import size from "module_2" /* 2 */;
 
 let c0;
@@ -86,7 +86,7 @@ export default function TransferOwnershipModal(guild) {
                 const obj3 = { value, done: true };
                 return obj3;
               } else {
-                return { value: "HermesInternal", done: "HermesInternal" };
+                return { value: "HermesInternal", done: null };
               }
             } else {
               try {
@@ -115,7 +115,7 @@ export default function TransferOwnershipModal(guild) {
                   return obj;
                 } else {
                   c0 = 3;
-                  return { value: "HermesInternal", done: "HermesInternal" };
+                  return { value: "HermesInternal", done: null };
                 }
               } catch (tmp7) {
                 c0 = 3;

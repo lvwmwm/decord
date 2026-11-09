@@ -1,10 +1,10 @@
-// Module ID: 14619
-// Function ID: 14620
+// Module ID: 14620
+// Function ID: 14621
 // Name: useCreateGameInvitePost
-// Dependencies: [5, 32, 19, 11670, 6625, 7906, 1072, 4996, 7517, 14620, 504, 11849, 9866, 7907, 2]
+// Dependencies: [5, 32, 19, 11670, 6625, 7906, 1072, 4996, 7517, 14621, 504, 11849, 9866, 7907, 2]
 // Exports: useCreateGameInvitePost
 
-// Module 14619 (useCreateGameInvitePost)
+// Module 14620 (useCreateGameInvitePost)
 import Constants from "Constants" /* 1072 */;
 import ChannelConstants from "ChannelConstants" /* 4996 */;
 import GameInvitesChannelUtils from "GameInvitesChannelUtils" /* 7517 */;
@@ -137,7 +137,7 @@ export function useCreateGameInvitePost(parentChannel) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c2;
@@ -183,7 +183,7 @@ export function useCreateGameInvitePost(parentChannel) {
           c2 = 0;
         }
         c3 = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp16) {
         if (0 === c2) {
           c3 = 3;

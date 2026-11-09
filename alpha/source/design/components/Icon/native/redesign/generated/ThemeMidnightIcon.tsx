@@ -1,14 +1,14 @@
-// Module ID: 17572
-// Function ID: 17573
+// Module ID: 17583
+// Function ID: 17584
 // Name: ThemeMidnightIcon
-// Dependencies: [19, 21, 575, 5841, 17573, 2]
+// Dependencies: [19, 21, 575, 5841, 17584, 2]
 // Exports: ThemeMidnightIcon
 
-// Module 17572 (ThemeMidnightIcon)
+// Module 17583 (ThemeMidnightIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import BaseIconImage2 from "BaseIconImage" /* 5841 */;
-import AssetRegistry from "AssetRegistry" /* 17573 */;
+import AssetRegistry from "AssetRegistry" /* 17584 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

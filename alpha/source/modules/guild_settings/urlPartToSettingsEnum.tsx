@@ -1,10 +1,10 @@
-// Module ID: 15972
-// Function ID: 15973
+// Module ID: 15982
+// Function ID: 15983
 // Name: urlPartToSettingsEnum
 // Dependencies: [2]
 // Exports: default
 
-// Module 15972 (urlPartToSettingsEnum)
+// Module 15982 (urlPartToSettingsEnum)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_settings/urlPartToSettingsEnum.tsx");

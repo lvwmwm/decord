@@ -1,17 +1,17 @@
-// Module ID: 19480
-// Function ID: 19481
+// Module ID: 19493
+// Function ID: 19494
 // Name: conjureAppPictureInPictureActions
-// Dependencies: [6901, 6899, 6902, 11005, 16671, 14418, 1113, 4026, 14823, 14631, 12046, 14632, 7424, 11988, 2]
+// Dependencies: [6901, 6899, 6902, 11005, 16682, 14419, 1113, 4026, 14824, 14632, 12046, 14633, 7424, 11988, 2]
 // Exports: openConjureAppPictureInPictureFrame, showConjureAppPictureInPictureActions
 
-// Module 19480 (conjureAppPictureInPictureActions)
+// Module 19493 (conjureAppPictureInPictureActions)
 import _modDef4026 from "module_4026" /* 4026 */;
 import FramesConstants from "FramesConstants" /* 6902 */;
 import Sheet_showSimpleActionSheet from "Sheet/showSimpleActionSheet" /* 7424 */;
 import conjurePreviewSurface from "conjurePreviewSurface" /* 11005 */;
 import EmbeddedAppShimExperiment from "EmbeddedAppShimExperiment" /* 11988 */;
-import openConjureProjectInBuilderDefault from "openConjureProjectInBuilder" /* 14418 */;
-import closeFrameDefault from "closeFrame" /* 14632 */;
+import openConjureProjectInBuilderDefault from "openConjureProjectInBuilder" /* 14419 */;
+import closeFrameDefault from "closeFrame" /* 14633 */;
 import FramesStore from "FramesStore" /* 6901 */;
 import ConjureProjectStore from "ConjureProjectStore" /* 6899 */;
 import size from "module_2" /* 2 */;
@@ -21,8 +21,8 @@ let _require;
 
 let tmp;
 let tmp3;
-const getConjureAppSoundButtonDefault = tmp3(14631);
-const conjureBackgroundFrames = tmp(16671);
+const getConjureAppSoundButtonDefault = tmp3(14632);
+const conjureBackgroundFrames = tmp(16682);
 function getConjureAppPictureInPictureActions(id, appName, arg2) {
   let intl;
   let intl2;

@@ -1,10 +1,10 @@
-// Module ID: 15418
-// Function ID: 15419
+// Module ID: 15428
+// Function ID: 15429
 // Name: getRequestToStreamCTAAndIsDisabled
 // Dependencies: [32, 502, 13415, 11, 11841, 1113, 3152, 2]
 // Exports: default
 
-// Module 15418 (getRequestToStreamCTAAndIsDisabled)
+// Module 15428 (getRequestToStreamCTAAndIsDisabled)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import intl8 from "intl" /* 1113 */;
 import _modDef3152 from "module_3152" /* 3152 */;

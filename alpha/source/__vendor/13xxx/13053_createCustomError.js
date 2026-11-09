@@ -9,7 +9,7 @@ let _require;
 function sourceFragment(source, arg1) {
   let column;
   let line;
-  const f130182 = (item, index) => {
+  const f130253 = (item, index) => {
     let length;
     const StringResult = String(line + index + 1);
     let tmp = StringResult;
@@ -70,12 +70,12 @@ function sourceFragment(source, arg1) {
     } while (sum3 <= bound);
   }
   const substr = parts.slice(diff, line);
-  const mapped = substr.map(f130182);
+  const mapped = substr.map(f130253);
   const items = [mapped.join("\n"), , ];
   const array = new Array(num2 + sum + 2);
   items[1] = `${obj2.join("-")}^`;
   const substr1 = parts.slice(line, bound);
-  const mapped1 = substr1.map(f130182);
+  const mapped1 = substr1.map(f130253);
   items[2] = mapped1.join("\n");
   const found = items.filter(Boolean);
   return found.join("\n");

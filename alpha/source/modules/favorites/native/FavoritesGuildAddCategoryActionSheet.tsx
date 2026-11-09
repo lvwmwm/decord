@@ -1,10 +1,10 @@
-// Module ID: 18532
-// Function ID: 18533
+// Module ID: 18545
+// Function ID: 18546
 // Name: FavoritesGuildAddCategoryActionSheet
 // Dependencies: [32, 19, 5002, 21, 5140, 575, 5014, 10950, 5374, 5388, 7382, 1113, 7148, 5758, 2]
 // Exports: openFavoritesGuildAddCategoryActionSheet
 
-// Module 18532 (FavoritesGuildAddCategoryActionSheet)
+// Module 18545 (FavoritesGuildAddCategoryActionSheet)
 import nativeDefault from "native" /* 575 */;
 import FavoritesConstants from "FavoritesConstants" /* 5002 */;
 import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5374 */;

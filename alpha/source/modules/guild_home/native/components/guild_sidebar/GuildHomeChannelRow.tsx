@@ -1,17 +1,17 @@
-// Module ID: 18586
-// Function ID: 18587
+// Module ID: 18599
+// Function ID: 18600
 // Name: GuildHomeChannelRow
-// Dependencies: [19, 1072, 4996, 5882, 21, 5140, 575, 1099, 14170, 1113, 15963, 2]
+// Dependencies: [19, 1072, 4996, 5882, 21, 5140, 575, 1099, 14171, 1113, 15973, 2]
 // Exports: default
 
-// Module 18586 (GuildHomeChannelRow)
+// Module 18599 (GuildHomeChannelRow)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import router_utils from "router_utils" /* 1099 */;
 import ChannelConstants from "ChannelConstants" /* 4996 */;
 import RedesignChannelListConstants from "RedesignChannelListConstants" /* 5882 */;
-import BaseChannelItemDefault from "BaseChannelItem" /* 14170 */;
+import BaseChannelItemDefault from "BaseChannelItem" /* 14171 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
@@ -38,7 +38,7 @@ export default function GuildHomeChannelRow(selected) {
     const obj = router_utils;
     obj.transitionTo(Routes.CHANNEL(id, StaticChannelRoute.GUILD_HOME));
   }, items);
-  const ChannelModes = id(14170).ChannelModes;
+  const ChannelModes = id(14171).ChannelModes;
   if (selected) {
     DEFAULT = ChannelModes.SELECTED;
     tmp5 = tmp3;
@@ -49,9 +49,9 @@ export default function GuildHomeChannelRow(selected) {
   BaseChannelItemDefault;
   const intl = tmp5(1113).intl;
   ({ name: intl2.string(tmp5(1113).t.VbpLyU), mode: DEFAULT });
-  const BaseChannelName = tmp5(14170).BaseChannelName;
+  const BaseChannelName = tmp5(14171).BaseChannelName;
   intl2 = tmp5(1113).intl;
-  ({ mode: DEFAULT, IconComponent: tmp5(15963).SignPostIcon });
-  const BaseChannelIcon = tmp5(14170).BaseChannelIcon;
+  ({ mode: DEFAULT, IconComponent: tmp5(15973).SignPostIcon });
+  const BaseChannelIcon = tmp5(14171).BaseChannelIcon;
   return <tmp7 onPress={callback} style={tmp.container} accessible accessibilityLabel={intl.string(tmp5(1113).t.VbpLyU)} accessibilityState={{ selected }} mode={DEFAULT} name={null} icon={null} />;
 };

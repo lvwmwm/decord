@@ -1,10 +1,10 @@
-// Module ID: 16273
-// Function ID: 16274
+// Module ID: 16283
+// Function ID: 16284
 // Name: ShinyButton
 // Dependencies: [32, 19, 17, 5141, 21, 5140, 504, 1652, 5370, 1190, 2]
 // Exports: default
 
-// Module 16273 (ShinyButton)
+// Module 16283 (ShinyButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import _modDef1652 from "module_1652" /* 1652 */;

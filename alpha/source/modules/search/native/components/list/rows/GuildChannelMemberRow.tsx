@@ -1,10 +1,10 @@
-// Module ID: 19092
-// Function ID: 19093
+// Module ID: 19105
+// Function ID: 19106
 // Name: GuildChannelMemberRow
 // Dependencies: [19, 21, 10857, 2]
 // Exports: default
 
-// Module 19092 (GuildChannelMemberRow)
+// Module 19105 (GuildChannelMemberRow)
 import Fragment from "Fragment" /* 21 */;
 import UserRowDefault from "UserRow" /* 10857 */;
 import react from "react" /* 19 */;

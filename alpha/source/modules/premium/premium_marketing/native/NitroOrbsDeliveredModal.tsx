@@ -1,10 +1,10 @@
-// Module ID: 15500
-// Function ID: 15501
+// Module ID: 15510
+// Function ID: 15511
 // Name: NitroOrbsDeliveredModal
-// Dependencies: [32, 19, 17, 1072, 1074, 21, 5140, 575, 6160, 1260, 7795, 7412, 7635, 14941, 7355, 7427, 5842, 15501, 5751, 1113, 5758, 2]
+// Dependencies: [32, 19, 17, 1072, 1074, 21, 5140, 575, 6160, 1260, 7795, 7412, 7635, 14942, 7355, 7427, 5842, 15511, 5751, 1113, 5758, 2]
 // Exports: default
 
-// Module 15500 (NitroOrbsDeliveredModal)
+// Module 15510 (NitroOrbsDeliveredModal)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
@@ -13,7 +13,7 @@ import useTrackImpressionDefault from "useTrackImpression" /* 6160 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7412 */;
 import openUserSettings from "openUserSettings" /* 7635 */;
 import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7795 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15501 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15511 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -96,7 +96,7 @@ export default function NitroOrbsDeliveredModal(arg0) {
   }, items1);
   [tmp10, c1] = react.useState(false);
   let obj2 = { style: tmp.root, children: items2 };
-  const obj3 = { style: StyleSheet.absoluteFill, accessible: false, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: closure_10(onClose(14941).OrbsRewardBackground, obj4) };
+  const obj3 = { style: StyleSheet.absoluteFill, accessible: false, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: closure_10(onClose(14942).OrbsRewardBackground, obj4) };
   _slicedToArray(react.useState(false), 2);
   const callback2 = react.useCallback(() => _undefined(true), []);
   obj4 = { style: tmp.background, onReady: callback2 };

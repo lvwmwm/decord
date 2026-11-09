@@ -1,7 +1,7 @@
 // Module ID: 6824
 // Function ID: 6825
 // Name: PremiumGuildSubscribeModal
-// Dependencies: [32, 19, 1192, 6825, 1072, 21, 6826, 7064, 6823, 7630, 5147, 7631, 7632, 7633, 1113, 7227, 7635, 1187, 7637, 15775, 5739, 6154, 7231, 2]
+// Dependencies: [32, 19, 1192, 6825, 1072, 21, 6826, 7064, 6823, 7630, 5147, 7631, 7632, 7633, 1113, 7227, 7635, 1187, 7637, 15785, 5739, 6154, 7231, 2]
 // Exports: default
 
 // Module 6824 (PremiumGuildSubscribeModal)

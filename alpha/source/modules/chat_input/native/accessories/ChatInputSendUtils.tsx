@@ -1,10 +1,10 @@
-// Module ID: 13991
-// Function ID: 13992
+// Module ID: 13992
+// Function ID: 13993
 // Name: ChatInputSendUtils
-// Dependencies: [5, 7777, 7906, 8277, 1385, 1072, 5145, 1387, 9868, 8413, 1242, 13990, 13987, 7900, 7712, 10320, 9870, 9865, 2171, 9875, 6090, 1113, 1252, 10338, 9005, 5374, 13992, 2118, 8286, 7412, 11900, 10429, 12638, 5807, 2]
+// Dependencies: [5, 7777, 7906, 8277, 1385, 1072, 5145, 1387, 9868, 8413, 1242, 13991, 13988, 7900, 7712, 10320, 9870, 9865, 2171, 9875, 6090, 1113, 1252, 10338, 9005, 5374, 13993, 2118, 8286, 7412, 11900, 10429, 12638, 5807, 2]
 // Exports: chatInputCreateThread, chatInputHandleSendText, chatInputSendApplicationCommand
 
-// Module 13991 (ChatInputSendUtils)
+// Module 13992 (ChatInputSendUtils)
 import intl4 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
@@ -22,7 +22,7 @@ import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreator
 import handleUploadAttachmentErrors from "handleUploadAttachmentErrors" /* 9870 */;
 import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9875 */;
 import ChatRestrictions from "ChatRestrictions" /* 10338 */;
-import ChatInputCommandOptionParser from "ChatInputCommandOptionParser" /* 13987 */;
+import ChatInputCommandOptionParser from "ChatInputCommandOptionParser" /* 13988 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import SlowmodeStore from "SlowmodeStore" /* 7906 */;
 import UploadAttachmentStore from "UploadAttachmentStore" /* 8277 */;
@@ -99,7 +99,7 @@ function chatInputSendMessage(params) {
   if (current2 != null) {
     current2.showSideActions();
   }
-  let obj3 = channel(13990);
+  let obj3 = channel(13991);
   const handleLegacyCommandsResult = obj3.handleLegacyCommands(text, { channel, isEdit: false });
   let tmp15 = tts;
   parsed = parsedMessage;
@@ -131,7 +131,7 @@ function chatInputSendMessage(params) {
   if (null != mentionTimestamps) {
     result = tmp17;
     if (mentionTimestamps.size > 0) {
-      const tmp13Result = channel(13987);
+      const tmp13Result = channel(13988);
       result = tmp13Result.serializeComposerTimestampMentions(tmp17, mentionTimestamps);
     }
   }
@@ -315,7 +315,7 @@ let obj = function _chatInputSendApplicationCommand() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -399,7 +399,7 @@ let obj = function _chatInputSendApplicationCommand() {
               return obj13;
             }
             c4 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp36) {
           c4 = 3;
@@ -447,7 +447,7 @@ export function chatInputHandleSendText(text) {
               body: checkResult.body,
               confirmText: intl2.string(intl4.t.KJnHq3),
               onConfirm() {
-                          obj = { text: require, parsedMessage, tts: "add", source: "<string:1359020034>", params };
+                          obj = { text: require, parsedMessage, tts: "add", source: -918357009421890500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, params };
                           chatInputSendMessage(obj);
                         },
               cancelText: intl3.string(intl4.t.fsBWmS)
@@ -470,15 +470,15 @@ export function chatInputHandleSendText(text) {
               threadId: channel.id,
               attachments: uploads,
               sendMessage() {
-                          obj = { text: require, parsedMessage, tts: "add", source: null, params };
+                          obj = { text: require, parsedMessage, tts: "add", source: true, params };
                           chatInputSendMessage(obj);
                         }
             };
             const obj5 = params(5374);
-            obj5.openLazy(tmp20(2118)(13992, tmp21.paths), "add-media-to-original-forum-post", obj4);
+            obj5.openLazy(tmp20(2118)(13993, tmp21.paths), "add-media-to-original-forum-post", obj4);
           }
         }
-        const obj6 = { text, parsedMessage: tmp2, tts: "add", source: "Array", params };
+        const obj6 = { text, parsedMessage: tmp2, tts: "add", source: true, params };
         chatInputSendMessage(obj6);
       }
     }

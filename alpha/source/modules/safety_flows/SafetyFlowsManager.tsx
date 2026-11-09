@@ -1,10 +1,10 @@
-// Module ID: 20470
-// Function ID: 20471
+// Module ID: 20483
+// Function ID: 20484
 // Name: SafetyFlowsManager
-// Dependencies: [20471, 7350, 2]
+// Dependencies: [20484, 7350, 2]
 
-// Module 20470 (SafetyFlowsManager)
-import openSafetyFlow from "openSafetyFlow" /* 20471 */;
+// Module 20483 (SafetyFlowsManager)
+import openSafetyFlow from "openSafetyFlow" /* 20484 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7350 */;
 import size from "module_2" /* 2 */;
 

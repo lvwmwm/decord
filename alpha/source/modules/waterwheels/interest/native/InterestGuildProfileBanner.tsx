@@ -1,10 +1,10 @@
-// Module ID: 19960
-// Function ID: 19961
+// Module ID: 19973
+// Function ID: 19974
 // Name: InterestGuildProfileBanner
 // Dependencies: [19, 17, 5011, 1072, 21, 5140, 1411, 8895, 1493, 504, 5003, 9381, 5842, 2]
 // Exports: default
 
-// Module 19960 (InterestGuildProfileBanner)
+// Module 19973 (InterestGuildProfileBanner)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;

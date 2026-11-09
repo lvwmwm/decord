@@ -1,15 +1,15 @@
-// Module ID: 14772
-// Function ID: 14773
+// Module ID: 14773
+// Function ID: 14774
 // Name: EditAttachmentActionSheet
-// Dependencies: [5, 32, 19, 6194, 5145, 1072, 14759, 21, 8812, 8914, 1403, 1113, 5149, 7712, 7426, 7382, 6159, 575, 5751, 7316, 7037, 5758, 2]
+// Dependencies: [5, 32, 19, 6194, 5145, 1072, 14760, 21, 8812, 8914, 1403, 1113, 5149, 7712, 7426, 7382, 6159, 575, 5751, 7316, 7037, 5758, 2]
 // Exports: default
 
-// Module 14772 (EditAttachmentActionSheet)
+// Module 14773 (EditAttachmentActionSheet)
 import Constants from "Constants" /* 1072 */;
 import MessageConstants from "MessageConstants" /* 5145 */;
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5149 */;
 import react2 from "react" /* 8812 */;
-import AttachmentConstants from "AttachmentConstants" /* 14759 */;
+import AttachmentConstants from "AttachmentConstants" /* 14760 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -81,7 +81,7 @@ export default function EditAttachmentActionSheet(arg0) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -144,7 +144,7 @@ export default function EditAttachmentActionSheet(arg0) {
             c2 = 0;
           }
           c3 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp25) {
           if (0 === c2) {
             c3 = 3;

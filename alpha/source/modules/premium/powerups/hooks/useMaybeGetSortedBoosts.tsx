@@ -1,16 +1,16 @@
-// Module ID: 14396
-// Function ID: 14397
+// Module ID: 14397
+// Function ID: 14398
 // Name: useMaybeGetSortedBoosts
-// Dependencies: [32, 19, 14378, 6815, 5052, 5011, 504, 14397, 8536, 11, 1113, 2]
+// Dependencies: [32, 19, 14379, 6815, 5052, 5011, 504, 14398, 8536, 11, 1113, 2]
 // Exports: default, useGetBoostUserConfig
 
-// Module 14396 (useMaybeGetSortedBoosts)
+// Module 14397 (useMaybeGetSortedBoosts)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import intl2 from "intl" /* 1113 */;
 import actions_BoostingActionCreators from "actions/BoostingActionCreators" /* 8536 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AppliedGuildBoostStore from "AppliedGuildBoostStore" /* 14378 */;
+import AppliedGuildBoostStore from "AppliedGuildBoostStore" /* 14379 */;
 import GuildMemberRequesterStore from "GuildMemberRequesterStore" /* 6815 */;
 import GuildMemberStore from "GuildMemberStore" /* 5052 */;
 import GuildStore from "GuildStore" /* 5011 */;

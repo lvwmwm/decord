@@ -1,14 +1,14 @@
-// Module ID: 14133
-// Function ID: 14134
+// Module ID: 14134
+// Function ID: 14135
 // Name: SearchQueryStore
-// Dependencies: [4989, 5082, 1385, 9917, 9916, 1072, 5776, 1113, 14126, 14134, 2158, 504, 572, 2]
+// Dependencies: [4989, 5082, 1385, 9917, 9916, 1072, 5776, 1113, 14127, 14135, 2158, 504, 572, 2]
 
-// Module 14133 (SearchQueryStore)
+// Module 14134 (SearchQueryStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import TrackingConstants from "TrackingConstants" /* 9916 */;
-import SearchUtils from "SearchUtils" /* 14126 */;
-import SearchQueryTagManagerDefault from "SearchQueryTagManager" /* 14134 */;
+import SearchUtils from "SearchUtils" /* 14127 */;
+import SearchQueryTagManagerDefault from "SearchQueryTagManager" /* 14135 */;
 import ChannelStore from "ChannelStore" /* 4989 */;
 import RelationshipStore from "RelationshipStore" /* 5082 */;
 import UserStore from "UserStore" /* 1385 */;
@@ -205,7 +205,7 @@ class SearchQueryStateManager {
         let str = ": ";
         stringResult = intl.string(obj(1113).t.WNpFHa);
         items1 = [obj3];
-        obj4 = obj(14126);
+        obj4 = obj(14127);
       }
       items = items1;
     }

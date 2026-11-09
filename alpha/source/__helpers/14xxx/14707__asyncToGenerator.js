@@ -1,90 +1,103 @@
 // Module ID: 14707
 // Function ID: 14708
 // Name: _asyncToGenerator
-// Dependencies: [5, 17]
-// Exports: fillProductsWithAdditionalData
+// Dependencies: [5]
+// Exports: enhancedFetch
 
 // Module 14707 (_asyncToGenerator)
-import react_native from "react-native" /* 17 */;
-import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import _asyncToGeneratorDefault from "_asyncToGenerator" /* 5 */;
 
-let closure_2, obj4;
+let c4, c5;
 
-const RNIapAmazonModule = react_native.NativeModules.RNIapAmazonModule;
-let closure_0 = _asyncToGenerator(async (value) => {
-  let c3 = 0;
-  let c4 = 0;
-  return (async (arg0, value) => {
-    let tmp;
-    if (c4 === 2) {
-      c4 = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp3 === 3) {
-      if (arg0 === 1) {
-        throw value;
-      } else if (arg0 === 2) {
-        return { value, done: true };
-      } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
-      }
+let closure_0 = _asyncToGeneratorDefault(function*(arg0, value) {
+  closure_0 = arg0;
+  let closure_1 = value;
+  if (c5 === 2) {
+    c5 = 3;
+    throw new TypeError("Generator functions may not be called on executing generators");
+  } else if (tmp2 === 3) {
+    if (arg0 === 1) {
+      throw value;
+    } else if (arg0 === 2) {
+      const obj2 = { value, done: true };
+      return obj2;
     } else {
-      try {
-        c4 = 2;
-        if (0 === c3) {
-          if (arg0 === 1) {
-            c4 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c4 = 3;
-            return { value, done: true };
-          } else {
-            closure_2 = tmp;
-            let currency;
-            if (value) {
-              let str = "CAD";
-              let str2 = "EUR";
-              c3 = 1;
-              c4 = 1;
-              obj4 = { CA: "CAD", ES: "EUR", AU: "AUD", DE: "EUR", IN: "INR", US: "USD", JP: "JPY", GB: "GBP", IT: "EUR", BR: "BRL", FR: "EUR" };
-              const obj5 = { value: value.getUser(), done: false };
-              return obj5;
-            }
-          }
-        } else if (arg0 === 1) {
-          c4 = 3;
+      return { value: "HermesInternal", done: null };
+    }
+  } else {
+    try {
+      c5 = 2;
+      if (0 === c4) {
+        if (arg0 === 1) {
+          c5 = 3;
           throw value;
         } else if (arg0 === 2) {
-          c4 = 3;
-          return { value, done: true };
+          c5 = 3;
+          const obj3 = { value, done: true };
+          return obj3;
         } else {
-          currency = obj4[value.userMarketplaceAmazon];
-          const item = value.forEach((originalPrice) => {
-            const tmp = currency;
-            if (tmp) {
-              let str = originalPrice.originalPrice;
-              originalPrice.currency = currency;
-              let str2 = str;
-              if (str == null) {
-                str2 = "0.0";
-              }
-              originalPrice.price = str2;
-              if (str == null) {
-                str = "0.0";
-              }
-              originalPrice.localizedPrice = str;
-            }
-          });
+          let obj6;
+          let closure_3 = tmp3;
+          const request = closure_1;
+          closure_0 = undefined;
+          let method;
+          const _fetch = fetch;
+          const tmp23 = closure_0;
+          if (closure_1 != null) {
+            method = request.method;
+          }
+          let GET = method;
+          if (method == null) {
+            GET = "GET";
+          }
+          const obj4 = { method: GET, headers: { Accept: "application/json", "Content-Type": "application/json" } };
+          let body;
+          if (request != null) {
+            body = request.body;
+          }
+          if (body) {
+            const obj5 = { body: JSON.stringify(request.body) };
+            const _JSON = JSON;
+            obj6 = obj5;
+          } else {
+            obj6 = {};
+          }
+          const merged = Object.assign(obj6);
+          c4 = 1;
+          c5 = 1;
+          const obj7 = { value: _fetch(tmp23, obj4), done: false };
+          return obj7;
         }
-        c4 = 3;
-        return { value, done: true };
-      } catch (tmp10) {
-        c4 = 3;
-        throw tmp10;
+      } else if (arg0 === 1) {
+        c5 = 3;
+        throw value;
+      } else if (arg0 === 2) {
+        c5 = 3;
+        const obj8 = { value, done: true };
+        return obj8;
+      } else {
+        closure_0 = value;
+        if (closure_0.ok) {
+          c5 = 3;
+          const obj9 = { value: closure_0.json(), done: true };
+          return obj9;
+        } else {
+          const _Object = Object;
+          const _Error = Error;
+          const self = this;
+          const self2 = this;
+          const error = new Error(closure_0.statusText);
+          const obj = { statusCode: closure_0.status };
+          throw assign(error, obj);
+        }
       }
+    } catch (tmp16) {
+      c5 = 3;
+      throw tmp16;
     }
-  })();
+  }
 });
 
-export function fillProductsWithAdditionalData(arg0) {
+export function enhancedFetch(arg0, arg1) {
   return closure_0(...arguments);
 }

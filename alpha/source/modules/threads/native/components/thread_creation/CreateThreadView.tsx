@@ -1,9 +1,9 @@
-// Module ID: 19010
-// Function ID: 19011
+// Module ID: 19023
+// Function ID: 19024
 // Name: CreateThreadView
-// Dependencies: [5, 32, 19, 17, 7777, 7906, 1072, 21, 5140, 575, 9866, 8413, 7387, 7412, 1627, 5735, 10855, 8716, 19011, 7429, 1113, 19013, 13981, 13954, 14454, 11391, 1500, 1252, 5889, 5322, 1099, 10326, 19012, 5323, 2]
+// Dependencies: [5, 32, 19, 17, 7777, 7906, 1072, 21, 5140, 575, 9866, 8413, 7387, 7412, 1627, 5735, 10855, 8716, 19024, 7429, 1113, 19026, 13982, 13955, 14455, 11391, 1500, 1252, 5889, 5322, 1099, 10326, 19025, 5323, 2]
 
-// Module 19010 (CreateThreadView)
+// Module 19023 (CreateThreadView)
 import nativeDefault from "native" /* 575 */;
 import DraftStore from "DraftStore" /* 7777 */;
 import SlowmodeStore from "SlowmodeStore" /* 7906 */;
@@ -140,7 +140,7 @@ function CreateThreadViewInner(threadSettingsDraft) {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -167,7 +167,7 @@ function CreateThreadViewInner(threadSettingsDraft) {
                   ref.current = false;
                   c5 = 0;
                   c7 = 3;
-                  return { value: "HermesInternal", done: "HermesInternal" };
+                  return { value: "HermesInternal", done: null };
                 }
                 v1 = 2;
                 c7 = 1;
@@ -229,7 +229,7 @@ function CreateThreadViewInner(threadSettingsDraft) {
             ref.current = false;
           }
           c7 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp59) {
           if (0 === c5) {
             c7 = 3;
@@ -268,7 +268,7 @@ function CreateThreadViewInner(threadSettingsDraft) {
   obj9 = { style: tmp.options, children: items7 };
   let obj10 = { style: tmp.optionsInner, children: items6 };
   const obj11 = { style: tmp.threadIconContainer, children: closure_13(tmp2(8716).ThreadIcon, { size: "lg" }) };
-  items6 = [closure_13(closure_6, obj11), closure_13(tmp12(19011), { ref: ref1, chatInputRef: ref, threadSettingsDraft, threadNameError: first, optional: tmp21 }), ];
+  items6 = [closure_13(closure_6, obj11), closure_13(tmp12(19024), { ref: ref1, chatInputRef: ref, threadSettingsDraft, threadNameError: first, optional: tmp21 }), ];
   let tmp23Result = null;
   const tmp25 = closure_7;
   if (!isForumLikeChannelResult) {
@@ -309,22 +309,22 @@ function CreateThreadViewInner(threadSettingsDraft) {
     const obj15 = { style: tmp.border };
     items8 = [tmp23(tmp24, obj15), ];
     const obj16 = { channelId: parentChannel.id, messageId: threadSettingsDraft.parentMessageId };
-    items8[1] = closure_13(threadSettingsDraft(19013).ThreadCreationStarterMessage, obj16);
+    items8[1] = closure_13(threadSettingsDraft(19026).ThreadCreationStarterMessage, obj16);
     tmp22Result = tmp22(tmp24, obj14);
   }
   items7[1] = tmp22Result;
   items5[1] = closure_13(tmp25, obj8);
   let tmp23Result2 = null;
   if (parentChannel.rateLimitPerUser > 0) {
-    const obj17 = { style: tmp.typingWrapper, children: closure_13(parentChannel(13981), obj18) };
+    const obj17 = { style: tmp.typingWrapper, children: closure_13(parentChannel(13982), obj18) };
     obj18 = { channel: parentChannel, hasTypingText: false, slowmodeType: SlowmodeType.CreateThread };
     tmp23Result2 = tmp23(tmp24, obj17);
   }
   items5[2] = tmp23Result2;
   const obj19 = { ref, channel: parentChannel, onJumpToPresent, screenIndex, secondaryTextFieldRef: ref1, threadCreationCallback: callback1 };
-  items5[3] = closure_13(parentChannel(13954), obj19);
+  items5[3] = closure_13(parentChannel(13955), obj19);
   const obj20 = { channelId: parentChannel.id };
-  items5[4] = closure_13(parentChannel(14454), obj20);
+  items5[4] = closure_13(parentChannel(14455), obj20);
   items3[1] = closure_14(tmp24, obj6);
   return closure_14(AnalyticsLocationProvider, obj5);
 }

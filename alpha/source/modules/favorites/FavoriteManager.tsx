@@ -1,14 +1,14 @@
-// Module ID: 20027
-// Function ID: 20028
+// Module ID: 20040
+// Function ID: 20041
 // Name: FavoriteManager
-// Dependencies: [502, 18581, 1072, 10950, 5014, 7350, 2]
+// Dependencies: [502, 18594, 1072, 10950, 5014, 7350, 2]
 
-// Module 20027 (FavoriteManager)
+// Module 20040 (FavoriteManager)
 import Constants from "Constants" /* 1072 */;
 import FavoritesUtils from "FavoritesUtils" /* 5014 */;
 import FavoritesActionCreators from "FavoritesActionCreators" /* 10950 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import FavoritesGuildSuggestionsStore from "FavoritesGuildSuggestionsStore" /* 18581 */;
+import FavoritesGuildSuggestionsStore from "FavoritesGuildSuggestionsStore" /* 18594 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7350 */;
 import size from "module_2" /* 2 */;
 
@@ -48,15 +48,31 @@ function handleCategoryExpandAll(guildId) {
 function handleLogout() {
   React3(_false);
 }
-function handleThreadMembersUpdate(addedMembers) {
-  addedMembers = addedMembers.addedMembers;
-  const id = addedMembers.id;
+function handleThreadMembersUpdate(arg0) {
+  let addedMembers;
+  let id;
+  let removedMemberIds;
+  ({ id, addedMembers, removedMemberIds } = arg0);
   const id1 = AuthenticationStore.getId();
-  const tmp2 = null != id1 && null != addedMembers && addedMembers.some((userId) => userId.userId === id1);
-  if (tmp2) {
-    const obj = FavoritesActionCreators;
-    const result = obj.autoAddJoinedThreadToFavorites(id);
-    result.catch(NOOP);
+  if (null != id1) {
+    let hasItem;
+    if (removedMemberIds != null) {
+      hasItem = removedMemberIds.includes(id1);
+    }
+    if (true !== hasItem) {
+      let someResult;
+      if (addedMembers != null) {
+        someResult = addedMembers.some((userId) => userId.userId === id1);
+      }
+      if (true === someResult) {
+        const obj2 = FavoritesActionCreators;
+        const result = obj2.autoAddJoinedThreadToFavorites(id);
+        result.catch(NOOP);
+      }
+    } else {
+      const obj = FavoritesActionCreators;
+      const result1 = obj.removeFavoriteChannel(id, { trackAnalytics: false });
+    }
   }
 }
 function handleThreadCreate(channel) {

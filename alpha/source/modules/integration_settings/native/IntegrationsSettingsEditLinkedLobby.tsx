@@ -1,10 +1,10 @@
-// Module ID: 19297
-// Function ID: 19298
+// Module ID: 19310
+// Function ID: 19311
 // Name: IntegrationsSettingsEditLinkedLobby
 // Dependencies: [19, 17, 1385, 21, 5140, 575, 5724, 1499, 7387, 7412, 7391, 5776, 504, 10929, 8821, 1113, 5751, 8246, 6159, 1187, 1411, 7126, 7038, 2]
 // Exports: default
 
-// Module 19297 (IntegrationsSettingsEditLinkedLobby)
+// Module 19310 (IntegrationsSettingsEditLinkedLobby)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;

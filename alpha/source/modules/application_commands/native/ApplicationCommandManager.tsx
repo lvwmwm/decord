@@ -1,9 +1,9 @@
-// Module ID: 14203
-// Function ID: 14204
+// Module ID: 14204
+// Function ID: 14205
 // Name: ApplicationCommandManager
-// Dependencies: [32, 7777, 8416, 1072, 6168, 1623, 13013, 13987, 8414, 7776, 10435, 5807, 10430, 2116, 9868, 5325, 1625, 12690, 12, 12638, 13988, 5780, 12692, 12639, 5376, 5889, 10343, 2]
+// Dependencies: [32, 7777, 8416, 1072, 6168, 1623, 13013, 13988, 8414, 7776, 10435, 5807, 10430, 2116, 9868, 5325, 1625, 12690, 12, 12638, 13989, 5780, 12692, 12639, 5376, 5889, 10343, 2]
 
-// Module 14203 (ApplicationCommandManager)
+// Module 14204 (ApplicationCommandManager)
 import _modDef12 from "module_12" /* 12 */;
 import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1623 */;
 import Server from "Server" /* 2116 */;
@@ -20,7 +20,7 @@ import ApplicationCommandQueryApiAll from "ApplicationCommandQueryApi" /* 10435 
 import ApplicationCommandOptionValueParser from "ApplicationCommandOptionValueParser" /* 12639 */;
 import application_commands_ApplicationCommandValidationUtils from "application_commands/ApplicationCommandValidationUtils" /* 12692 */;
 import ChatInputParser from "ChatInputParser" /* 13013 */;
-import ChatInputCommandOptionParser from "ChatInputCommandOptionParser" /* 13987 */;
+import ChatInputCommandOptionParser from "ChatInputCommandOptionParser" /* 13988 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import ApplicationCommandStore from "ApplicationCommandStore" /* 8416 */;
 import Constants from "Constants" /* 1072 */;
@@ -616,7 +616,7 @@ class ApplicationCommandManager {
                   return tmp20;
                 }
               } else {
-                const tmp3Result2 = tmp3(13988);
+                const tmp3Result2 = tmp3(13989);
                 const draftCommand = tmp3Result2.resolveDraftCommand(channel, text, DraftStore.getDraftCommand(channel.id, DraftType.ChannelMessage));
                 if (null != draftCommand) {
                   const obj8 = { command: obj9, section: draftCommand.section };
@@ -1613,7 +1613,7 @@ class ApplicationCommandManager {
       let tmp28 = currentOption(tmp26, 2);
       let first = tmp28[0];
       let tmp30 = tmp28[1];
-      let obj3 = obj11(13987);
+      let obj3 = obj11(13988);
       let hasItem = 0 !== obj3.findGameMentionTokens(editId.text, tmp30.name, mapped).locations.length;
       if (!hasItem) {
         let text3 = editId.text;

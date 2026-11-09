@@ -1,9 +1,9 @@
-// Module ID: 17553
-// Function ID: 17554
+// Module ID: 17564
+// Function ID: 17565
 // Name: StreamOutputVolumeSetting
 // Dependencies: [6769, 502, 2130, 8503, 504, 5918, 38, 6047, 12109, 11685, 1113, 2]
 
-// Module 17553 (StreamOutputVolumeSetting)
+// Module 17564 (StreamOutputVolumeSetting)
 import _modDef38 from "module_38" /* 38 */;
 import get_initialized from "get initialized" /* 504 */;
 import intl3 from "intl" /* 1113 */;

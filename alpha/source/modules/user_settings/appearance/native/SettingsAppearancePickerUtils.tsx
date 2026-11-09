@@ -1,10 +1,10 @@
-// Module ID: 17602
-// Function ID: 17603
+// Module ID: 17613
+// Function ID: 17614
 // Name: SettingsAppearancePickerUtils
 // Dependencies: [19, 1083, 5366, 1241, 5138, 5137, 575, 1230, 5724, 1113, 2]
 // Exports: convertThemesToAnimatedThemes, useLaunchWelcomeSystemTheme
 
-// Module 17602 (SettingsAppearancePickerUtils)
+// Module 17613 (SettingsAppearancePickerUtils)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
 import intl2 from "intl" /* 1113 */;

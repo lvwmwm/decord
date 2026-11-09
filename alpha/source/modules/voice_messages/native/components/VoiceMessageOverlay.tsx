@@ -1,9 +1,9 @@
-// Module ID: 14457
-// Function ID: 14458
+// Module ID: 14458
+// Function ID: 14459
 // Name: VoiceMessageOverlay
-// Dependencies: [32, 19, 17, 5141, 4989, 13956, 13957, 1072, 13023, 21, 1652, 1187, 5751, 12, 8101, 5140, 575, 6833, 504, 5724, 7022, 1113, 5370, 1705, 8711, 11268, 7017, 14458, 5735, 14204, 5390, 6153, 1108, 13534, 12001, 14052, 14459, 8098, 5863, 14047, 13019, 5853, 12138, 2]
+// Dependencies: [32, 19, 17, 5141, 4989, 13957, 13958, 1072, 13023, 21, 1652, 1187, 5751, 12, 8101, 5140, 575, 6833, 504, 5724, 7022, 1113, 5370, 1705, 8711, 11268, 7017, 14459, 5735, 14205, 5390, 6153, 1108, 13535, 12001, 14053, 14460, 8098, 5863, 14048, 13019, 5853, 12138, 2]
 
-// Module 14457 (VoiceMessageOverlay)
+// Module 14458 (VoiceMessageOverlay)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -19,9 +19,9 @@ import useKeyboardAnimatedValueDefault from "useKeyboardAnimatedValue" /* 7017 *
 import useRefValueDefault from "useRefValue" /* 7022 */;
 import inlineStyles from "inlineStyles" /* 8101 */;
 import ChatInputConstants from "ChatInputConstants" /* 13023 */;
-import VoiceMessagesUIStore from "VoiceMessagesUIStore" /* 13956 */;
-import VoiceMessageConstants from "VoiceMessageConstants" /* 13957 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14458 */;
+import VoiceMessagesUIStore from "VoiceMessagesUIStore" /* 13957 */;
+import VoiceMessageConstants from "VoiceMessageConstants" /* 13958 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14459 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
@@ -504,17 +504,17 @@ const memoResult = react.memo(function VoiceMessageEllipse(arg0) {
   let tmp7;
   let useReducedMotion;
   let voiceMessageAnimationState;
-  const f107630 = (currWaveHeight) => currWaveHeight.currWaveHeight;
+  const f107672 = (currWaveHeight) => currWaveHeight.currWaveHeight;
   ({ radius, voiceMessageAnimationState } = arg0);
   ({ opacity, height, offsetThreshold } = arg0);
   let obj = get_initialized;
   items = [AccessibilityStore];
   const stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion, []);
-  const items1 = [closure_21, stateFromStores, useVoiceMessagesUIStore(f107630)];
+  const items1 = [closure_21, stateFromStores, useVoiceMessagesUIStore(f107672)];
   let c0;
   let c1;
   [tmp5, tmp6, tmp7] = items1;
-  const tmp4 = useVoiceMessagesUIStore(f107630);
+  const tmp4 = useVoiceMessagesUIStore(f107672);
   const obj2 = _mod1652;
   class VoiceMessageOverlayTsx1 {
     constructor() {
@@ -740,7 +740,7 @@ let closure_43 = react.memo(function VoiceMessageOverlay(channelId) {
   const tmp5 = closure_19();
   const bottom = ref(5735)({ includeCustomKeyboardHeight: true, includeKeyboardHeight: true }).insets.bottom;
   const tmp6 = ref(7017)(bottom);
-  let obj2 = channelId(14204);
+  let obj2 = channelId(14205);
   const keyboardOpenPaddingStyle = obj2.useKeyboardOpenPaddingStyle();
   const tmp8 = useVoiceMessagesUIStore((startTimeMillis) => null != startTimeMillis.startTimeMillis);
   _require = tmp8;
@@ -870,11 +870,11 @@ let closure_43 = react.memo(function VoiceMessageOverlay(channelId) {
   const items11 = [tmp5.contentContainerFloating, keyboardOpenPaddingStyle];
   items10[2] = items11;
   const View = tmp3(1652).View;
-  const items12 = [closure_13(tmp(14052).ChatInputScrimGradient, { gradientHeight: token, inline: true }), closure_13(closure_26, { initialAnimation: sharedValue, recordingAnimation: sharedValue1, voiceMessageState: tmp16, exiting }), ];
+  const items12 = [closure_13(tmp(14053).ChatInputScrimGradient, { gradientHeight: token, inline: true }), closure_13(closure_26, { initialAnimation: sharedValue, recordingAnimation: sharedValue1, voiceMessageState: tmp16, exiting }), ];
   const obj7 = { style: tmp5.innerContainer, children: null };
   const obj8 = { style: tmp5.voiceChatContainer, children: null };
   const obj9 = { isRecording: tmp8, initialAnimation: sharedValue, leftAccessory: closure_13(IconButton, obj10), rightAccessory: null };
-  const tmp3Result = tmp3(14459);
+  const tmp3Result = tmp3(14460);
   obj10 = {
     icon: ref(5863),
     variant: str,

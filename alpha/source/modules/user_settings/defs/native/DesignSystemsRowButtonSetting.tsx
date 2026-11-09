@@ -1,9 +1,9 @@
-// Module ID: 18088
-// Function ID: 18089
+// Module ID: 18101
+// Function ID: 18102
 // Name: DesignSystemsRowButtonSetting
-// Dependencies: [8503, 1072, 11685, 18089, 2]
+// Dependencies: [8503, 1072, 11685, 18102, 2]
 
-// Module 18088 (DesignSystemsRowButtonSetting)
+// Module 18101 (DesignSystemsRowButtonSetting)
 import Constants from "Constants" /* 1072 */;
 import SettingsConstants from "SettingsConstants" /* 8503 */;
 import SettingBuilders from "SettingBuilders" /* 11685 */;

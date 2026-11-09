@@ -1,10 +1,10 @@
-// Module ID: 13967
-// Function ID: 13968
+// Module ID: 13968
+// Function ID: 13969
 // Name: openCustomTypingIndicatorAnnounceActionSheet
-// Dependencies: [5374, 13968, 2118, 2]
+// Dependencies: [5374, 13969, 2118, 2]
 // Exports: openCustomTypingIndicatorAnnounceActionSheet
 
-// Module 13967 (openCustomTypingIndicatorAnnounceActionSheet)
+// Module 13968 (openCustomTypingIndicatorAnnounceActionSheet)
 import asyncRequire from "asyncRequire" /* 2118 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
 import size from "module_2" /* 2 */;
@@ -21,5 +21,5 @@ export function openCustomTypingIndicatorAnnounceActionSheet(analyticsLocations)
       return obj.hideActionSheet(CustomTypingIndicatorAnnounceActionSheet);
     }
   };
-  obj.openLazy(asyncRequire(13968, dependencyMap.paths), CustomTypingIndicatorAnnounceActionSheet, obj2);
+  obj.openLazy(asyncRequire(13969, dependencyMap.paths), CustomTypingIndicatorAnnounceActionSheet, obj2);
 }

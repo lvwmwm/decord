@@ -1,10 +1,10 @@
-// Module ID: 14698
-// Function ID: 14699
+// Module ID: 14699
+// Function ID: 14700
 // Name: PremiumGiftDuration
 // Dependencies: [19, 17, 1387, 21, 5140, 575, 10681, 7038, 8248, 10740, 5200, 5751, 1113, 2]
 // Exports: default
 
-// Module 14698 (PremiumGiftDuration)
+// Module 14699 (PremiumGiftDuration)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;

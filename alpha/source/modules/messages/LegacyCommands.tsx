@@ -1,10 +1,10 @@
-// Module ID: 13990
-// Function ID: 13991
+// Module ID: 13991
+// Function ID: 13992
 // Name: LegacyCommands
 // Dependencies: [32, 6851, 6194, 1072, 4965, 9864, 2067, 8476, 5084, 7712, 5889, 2]
 // Exports: handleLegacyCommands
 
-// Module 13990 (LegacyCommands)
+// Module 13991 (LegacyCommands)
 import UserSettings from "UserSettings" /* 4965 */;
 import ReactionUtils from "ReactionUtils" /* 5084 */;
 import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5889 */;

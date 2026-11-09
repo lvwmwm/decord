@@ -1,14 +1,14 @@
-// Module ID: 16934
-// Function ID: 16935
+// Module ID: 16945
+// Function ID: 16946
 // Name: AccountAgeGroupAdultSetting
-// Dependencies: [8503, 6781, 5817, 16890, 11685, 1113, 2]
+// Dependencies: [8503, 6781, 5817, 16901, 11685, 1113, 2]
 
-// Module 16934 (AccountAgeGroupAdultSetting)
+// Module 16945 (AccountAgeGroupAdultSetting)
 import intl2 from "intl" /* 1113 */;
 import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5817 */;
 import AgeVerificationUtils from "AgeVerificationUtils" /* 6781 */;
 import SettingsConstants from "SettingsConstants" /* 8503 */;
-import AgeNoticeSettingsPredicate from "AgeNoticeSettingsPredicate" /* 16890 */;
+import AgeNoticeSettingsPredicate from "AgeNoticeSettingsPredicate" /* 16901 */;
 import SettingBuilders from "SettingBuilders" /* 11685 */;
 import size from "module_2" /* 2 */;
 

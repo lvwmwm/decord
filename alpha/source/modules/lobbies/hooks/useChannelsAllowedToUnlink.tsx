@@ -1,10 +1,10 @@
-// Module ID: 20050
-// Function ID: 20051
+// Module ID: 20063
+// Function ID: 20064
 // Name: useChannelsAllowedToUnlink
 // Dependencies: [5070, 5072, 10928, 504, 2]
 // Exports: getChannelsAllowedToUnlink, useChannelsAllowedToUnlink
 
-// Module 20050 (useChannelsAllowedToUnlink)
+// Module 20063 (useChannelsAllowedToUnlink)
 import GuildChannelStore2 from "GuildChannelStore" /* 5070 */;
 import PermissionStore from "PermissionStore" /* 5072 */;
 import size from "module_2" /* 2 */;
@@ -13,7 +13,7 @@ const require = globalThis.__r;
 const GuildChannelStore = GuildChannelStore2;
 let _require;
 
-const f120066 = (channel) => channel.channel;
+const f120137 = (channel) => channel.channel;
 let closure_3 = GuildChannelStore2.GUILD_SELECTABLE_CHANNELS_KEY;
 const result = size.fileFinishedImporting("modules/lobbies/hooks/useChannelsAllowedToUnlink.tsx");
 
@@ -36,7 +36,7 @@ export function getChannelsAllowedToUnlink(arg0) {
       const obj = id(closure_2_1[2]);
       return obj.canUnlinkLobbyChannel(channel.channel, closure_0);
     });
-    items = found.map(f120066);
+    items = found.map(f120137);
   }
   return items;
 }
@@ -58,7 +58,7 @@ export function useChannelsAllowedToUnlink(id) {
             const obj = id(closure_2_1[2]);
             return obj.canUnlinkLobbyChannel(channel.channel, closure_0);
           });
-          items = found.map(f120066);
+          items = found.map(f120137);
         }
         return items;
       }
