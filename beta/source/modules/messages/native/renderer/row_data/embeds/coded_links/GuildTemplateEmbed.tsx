@@ -1,20 +1,20 @@
-// Module ID: 15118
-// Function ID: 15119
+// Module ID: 15399
+// Function ID: 15400
 // Name: GuildTemplateEmbed
-// Dependencies: [17, 7637, 7501, 7879, 8394, 1113, 8381, 575, 5021, 13235, 13236, 15119, 2]
+// Dependencies: [17, 7713, 7573, 7956, 8465, 1113, 8452, 575, 5147, 13467, 13468, 15400, 2]
 // Exports: createGuildTemplateEmbed
 
-// Module 15118 (GuildTemplateEmbed)
+// Module 15399 (GuildTemplateEmbed)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl7 from "intl" /* 1113 */;
-import shared from "shared" /* 5021 */;
-import GuildTemplatesConstants from "GuildTemplatesConstants" /* 7501 */;
-import Constants from "Constants" /* 7879 */;
-import react_native2 from "react-native" /* 8381 */;
-import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8394 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15119 */;
-import GuildTemplateStore from "GuildTemplateStore" /* 7637 */;
+import shared from "shared" /* 5147 */;
+import GuildTemplatesConstants from "GuildTemplatesConstants" /* 7573 */;
+import Constants from "Constants" /* 7956 */;
+import react_native2 from "react-native" /* 8452 */;
+import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8465 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15400 */;
+import GuildTemplateStore from "GuildTemplateStore" /* 7713 */;
 import size from "module_2" /* 2 */;
 
 const Image = react_native.Image;
@@ -57,9 +57,9 @@ export function createGuildTemplateEmbed(code, arg1) {
     resolveAssetSource = Image.resolveAssetSource;
     const obj3 = shared;
     if (obj3.isThemeDark(arg1)) {
-      tmpResult = tmp(13235);
+      tmpResult = tmp(13467);
     } else {
-      tmpResult = tmp(13236);
+      tmpResult = tmp(13468);
     }
     return obj;
   } else {
@@ -68,7 +68,7 @@ export function createGuildTemplateEmbed(code, arg1) {
     const obj9 = { usageCount: str3.toString() };
     str3 = guildTemplate.usageCount;
     const L8Awgh = intl7.t.L8Awgh;
-    const obj10 = { headerText: str4.toUpperCase(), headerColor: colors.headerColor, titleText: guildTemplate.name, titleColor: colors.titleColor, subtitle: formatToPlainStringResult, subtitleColor: colors.subtitleColor, thumbnailUrl: Image.resolveAssetSource(AssetRegistryDefault).uri, acceptLabelText: intl6.string(intl7.t["a3Gl+e"]), embedCanBeTapped: true, type: InviteTypes.GUILD };
+    const obj10 = { headerText: str4.toUpperCase(), headerColor: colors.headerColor, titleText: guildTemplate.name, titleColor: colors.titleColor, subtitle: formatToPlainStringResult, subtitleColor: colors.subtitleColor, thumbnailUrl: Image.resolveAssetSource(AssetRegistryDefault).uri, acceptLabelText: intl6.string(intl7.t["a3Gl+e"]), embedCanBeTapped: true, canBeAccepted: true, type: InviteTypes.GUILD };
     formatToPlainStringResult = formatToPlainString(L8Awgh, obj9);
     const merged2 = Object.assign(baseColors);
     const intl5 = intl7.intl;

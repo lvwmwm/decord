@@ -1,22 +1,20 @@
-// Module ID: 11126
-// Function ID: 11127
+// Module ID: 11258
+// Function ID: 11259
 // Name: BugReporterFeatureActionSheet
-// Dependencies: [32, 19, 17, 21, 5014, 575, 5624, 7061, 11090, 5258, 5607, 12, 6899, 7217, 10737, 5272, 7321, 1113, 7218, 7223, 2]
+// Dependencies: [32, 19, 17, 21, 5140, 575, 5751, 7127, 11222, 5374, 5735, 12, 6954, 7281, 10856, 5388, 7382, 1113, 7282, 7287, 2]
 // Exports: default
 
-// Module 11126 (BugReporterFeatureActionSheet)
+// Module 11258 (BugReporterFeatureActionSheet)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import Text_Text from "Text/Text" /* 5624 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
+import Text_Text from "Text/Text" /* 5751 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
-
-let BottomSheet;
 
 let metroImportDefault;
 let metroRequire;
@@ -37,7 +35,7 @@ let closure_9 = react.memo(function BugReporterFeatureHeader(arg0) {
   let items;
   let title;
   ({ title, height } = arg0);
-  const obj = { style: items, children: metroRequire(Text_Text.Text, { variant: "text-sm/bold", color: "text-muted", children: title }) };
+  const obj = { style: items, children: metroRequire(Text_Text.Text, { variant: "body-sm/semibold", color: "text-muted", children: title }) };
   items = [closure_8().sectionHeader, { height }];
   return metroRequire(View, obj);
 });
@@ -63,11 +61,11 @@ let closure_10 = react.memo(function BugReporterFeature(item) {
       obj.hideActionSheet();
     }
   };
-  const TableRadioRow = item(7061).TableRadioRow;
-  obj2 = item(11090);
-  const obj3 = item(11090);
+  const TableRadioRow = item(7127).TableRadioRow;
+  obj2 = item(11222);
+  const obj3 = item(11222);
   featureId = obj3.getFeatureId(item);
-  obj4 = item(11090);
+  obj4 = item(11222);
   return closure_6(TableRadioRow, obj);
 });
 const result = size.fileFinishedImporting("modules/bug_reporter/native/components/BugReporterFeatureActionSheet.tsx");
@@ -159,7 +157,7 @@ export default function BugReporterFeatureActionSheet(features) {
     return metroRequire(closure_9, obj);
   }, items3);
   let obj = { scrollable: true, startExpanded: true, header: closure_6(BottomSheetTitleHeader, obj2), children: items4 };
-  BottomSheet = features(setFeature[15]).BottomSheet;
+  const BottomSheet = features(setFeature[15]).BottomSheet;
   obj2 = { title: intl.string(features(setFeature[17]).t["77VVd8"]) };
   BottomSheetTitleHeader = features(setFeature[16]).BottomSheetTitleHeader;
   intl = features(setFeature[17]).intl;

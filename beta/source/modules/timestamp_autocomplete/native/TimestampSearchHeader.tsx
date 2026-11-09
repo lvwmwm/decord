@@ -1,20 +1,20 @@
-// Module ID: 13953
-// Function ID: 13954
+// Module ID: 14187
+// Function ID: 14188
 // Name: TimestampSearchHeader
-// Dependencies: [19, 17, 21, 11047, 5014, 575, 5740, 5624, 1113, 8177, 2]
+// Dependencies: [19, 17, 21, 5883, 5140, 575, 5864, 5751, 1113, 8246, 2]
 // Exports: useTimestampSearchHeaderHeight
 
-// Module 13953 (TimestampSearchHeader)
+// Module 14187 (TimestampSearchHeader)
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import ClockIcon from "ClockIcon" /* 5740 */;
-import _mod8177 from "module_8177" /* 8177 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11047 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import ClockIcon from "ClockIcon" /* 5864 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 5883 */;
+import _mod8246 from "module_8246" /* 8246 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let c2;
@@ -25,8 +25,8 @@ let obj2;
 let obj3;
 ({ StyleSheet: c2, View: c3 } = react_native);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
-let c6 = "text-sm/semibold";
-let c7 = "text-sm/medium";
+let c6 = "body-sm/semibold";
+let c7 = "body-sm/medium";
 let createStyles = createStyles_mod;
 let obj = { container: obj2, headerRow: { flexDirection: "row", alignItems: "center", paddingHorizontal: 16, paddingVertical: 12 }, icon: { marginRight: 12 }, description: { paddingHorizontal: 16, paddingBottom: 12 }, divider: obj3 };
 obj2 = { backgroundColor: nativeDefault.colors.MOBILE_FLOATING_ACCESSORY_BACKGROUND };
@@ -54,7 +54,7 @@ const memoResult = react.memo(function TimestampSearchHeader() {
   items1[1] = React3(Text, obj6);
   items2 = [hasOwnProperty(_false, obj2), ];
   const obj7 = { style: tmp.divider };
-  items2[1] = React3(_mod8177.FormDivider, obj7);
+  items2[1] = React3(_mod8246.FormDivider, obj7);
   return hasOwnProperty(_false, obj);
 });
 const result = size.fileFinishedImporting("modules/timestamp_autocomplete/native/TimestampSearchHeader.tsx");

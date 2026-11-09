@@ -1,18 +1,19 @@
-// Module ID: 17090
-// Function ID: 17091
+// Module ID: 17416
+// Function ID: 17417
 // Name: useQuestForPlacement
-// Dependencies: [19, 7843, 7846, 1089, 9673, 6872, 9682, 504, 7844, 7852, 6788, 2]
+// Dependencies: [19, 7919, 7922, 1089, 9764, 6927, 9773, 17417, 504, 7920, 7929, 6843, 2]
 // Exports: default, useAdDecisionForPlacement, useAdRefreshLoop, useDeliveredCreativeForPlacement
 
-// Module 17090 (useQuestForPlacement)
+// Module 17416 (useQuestForPlacement)
 import DurationsDefault from "Durations" /* 1089 */;
-import AdCreativeType from "AdCreativeType" /* 6788 */;
-import DiscordAppStateDefault from "DiscordAppState" /* 6872 */;
-import QuestsEligibility from "QuestsEligibility" /* 9673 */;
-import QuestActionCreators from "QuestActionCreators" /* 9682 */;
+import AdCreativeType from "AdCreativeType" /* 6843 */;
+import DiscordAppStateDefault from "DiscordAppState" /* 6927 */;
+import QuestsEligibility from "QuestsEligibility" /* 9764 */;
+import QuestActionCreators from "QuestActionCreators" /* 9773 */;
+import ReturnFullQuestStatusInDecisionExperiment from "ReturnFullQuestStatusInDecisionExperiment" /* 17417 */;
 import react from "react" /* 19 */;
-import AdDeliveryStore from "AdDeliveryStore" /* 7843 */;
-import QuestStore from "QuestStore" /* 7846 */;
+import AdDeliveryStore from "AdDeliveryStore" /* 7919 */;
+import QuestStore from "QuestStore" /* 7922 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -21,7 +22,7 @@ let _require;
 let c3;
 let closure_4;
 let hasOwnProperty;
-const f111396 = () => {
+const f113355 = () => {
   const deliveryAdDecisionByPlacement = AdDeliveryStore.deliveryAdDecisionByPlacement;
   let value = deliveryAdDecisionByPlacement.get(closure_0);
   if (value == null) {
@@ -31,31 +32,33 @@ const f111396 = () => {
 };
 function maybeRefreshAd(fetchedAt, QUEST_HOME_BANNER_DESKTOP, arg2) {
   const obj = QuestsEligibility;
-  let isEligibleForQuests = obj.getIsEligibleForQuests();
-  if (isEligibleForQuests) {
+  if (obj.getIsEligibleForQuests()) {
     let tmp5 = null != fetchedAt;
     if (tmp5) {
       const _Date = Date;
       const sum = fetchedAt.fetchedAt + fetchedAt.ttlMillis;
       tmp5 = sum >= Date.now();
     }
-    isEligibleForQuests = !tmp5;
-  }
-  if (isEligibleForQuests) {
-    const obj2 = DiscordAppStateDefault;
-    if ("active" === obj2.getState()) {
-      const obj4 = AdDeliveryStore;
-      if (!AdDeliveryStore.isFetchingAdToDeliverByPlacement(QUEST_HOME_BANNER_DESKTOP)) {
-        if (obj4.canRefreshAd(QUEST_HOME_BANNER_DESKTOP)) {
-          const tmpResult = QuestActionCreators;
-          const currentQuests = tmpResult.fetchCurrentQuests();
-          const tmpResult3 = QuestActionCreators;
-          const questToDeliver = tmpResult3.fetchQuestToDeliver(QUEST_HOME_BANNER_DESKTOP, arg2);
+    if (!tmp5) {
+      const obj2 = DiscordAppStateDefault;
+      if ("active" === obj2.getState()) {
+        const obj3 = AdDeliveryStore;
+        if (!AdDeliveryStore.isFetchingAdToDeliverByPlacement(QUEST_HOME_BANNER_DESKTOP)) {
+          if (obj3.canRefreshAd(QUEST_HOME_BANNER_DESKTOP)) {
+            const tmpResult = ReturnFullQuestStatusInDecisionExperiment;
+            const returnFullQuestStatusInDecision = tmpResult.getReturnFullQuestStatusInDecision("quest-placement-refresh");
+            if (!returnFullQuestStatusInDecision) {
+              const tmpResult4 = QuestActionCreators;
+              const currentQuests = tmpResult4.fetchCurrentQuests();
+            }
+            const tmpResult5 = QuestActionCreators;
+            const questToDeliver = tmpResult5.fetchQuestToDeliver(QUEST_HOME_BANNER_DESKTOP, arg2, returnFullQuestStatusInDecision);
+          }
         }
+      } else if (null != fetchedAt) {
+        const tmpResult6 = QuestActionCreators;
+        tmpResult6.clearQuestAdDecision(QUEST_HOME_BANNER_DESKTOP, fetchedAt.ttlMillis);
       }
-    } else if (null != fetchedAt) {
-      const tmpResult4 = QuestActionCreators;
-      tmpResult4.clearQuestAdDecision(QUEST_HOME_BANNER_DESKTOP, fetchedAt.ttlMillis);
     }
   }
 }
@@ -73,7 +76,7 @@ export default function useFetchQuestForAdPlacement(arg0) {
   const items = [AdDeliveryStore];
   const items1 = [arg0];
   const obj = require("get initialized");
-  stateFromStores = obj.useStateFromStores(items, f111396, items1);
+  stateFromStores = obj.useStateFromStores(items, f113355, items1);
   const items2 = [stateFromStores, arg0];
   closure_3(() => {
     let current;
@@ -106,7 +109,7 @@ export default function useFetchQuestForAdPlacement(arg0) {
   const items3 = [AdDeliveryStore];
   const items4 = [arg0];
   const obj2 = require("get initialized");
-  const stateFromStores1 = obj2.useStateFromStores(items3, f111396, items4);
+  const stateFromStores1 = obj2.useStateFromStores(items3, f113355, items4);
   let creative;
   const getDeliveredQuestId = require("AdDecisionUtils").getDeliveredQuestId;
   require("AdDecisionUtils");
@@ -115,7 +118,7 @@ export default function useFetchQuestForAdPlacement(arg0) {
   }
   _require = getDeliveredQuestId(creative);
   const items5 = [QuestStore];
-  const tmpResult = tmp(tmp2[7]);
+  const tmpResult = tmp(tmp2[8]);
   const stateFromStores2 = tmpResult.useStateFromStores(items5, () => {
     let tmp2 = null;
     if (null != closure_0) {
@@ -131,7 +134,7 @@ export default function useFetchQuestForAdPlacement(arg0) {
   let tmp9 = null;
   if (null != stateFromStores2) {
     tmp9 = null;
-    const tmpResult2 = tmp(tmp2[9]);
+    const tmpResult2 = tmp(tmp2[10]);
     if (!tmpResult2.isQuestExpired(stateFromStores2)) {
       tmp9 = stateFromStores2;
     }
@@ -144,7 +147,7 @@ export function useAdDecisionForPlacement(arg0) {
   const items = [AdDeliveryStore];
   const items1 = [arg0];
   const obj = require("get initialized");
-  return obj.useStateFromStores(items, f111396, items1);
+  return obj.useStateFromStores(items, f113355, items1);
 }
 export function useAdRefreshLoop(MOBILE_HOME_DOCK_AREA) {
   let stateFromStores;
@@ -153,7 +156,7 @@ export function useAdRefreshLoop(MOBILE_HOME_DOCK_AREA) {
   const items = [AdDeliveryStore];
   const items1 = [MOBILE_HOME_DOCK_AREA];
   const obj = require("get initialized");
-  stateFromStores = obj.useStateFromStores(items, f111396, items1);
+  stateFromStores = obj.useStateFromStores(items, f113355, items1);
   const items2 = [stateFromStores, MOBILE_HOME_DOCK_AREA];
   closure_3(() => {
     let current;
@@ -196,7 +199,7 @@ export function useDeliveredCreativeForPlacement(MOBILE_HOME_DOCK_AREA, QUEST_BA
   let obj2 = require("get initialized");
   const items2 = [AdDeliveryStore];
   const items3 = [MOBILE_HOME_DOCK_AREA];
-  const stateFromStores1 = obj2.useStateFromStores(items2, f111396, items3);
+  const stateFromStores1 = obj2.useStateFromStores(items2, f113355, items3);
   let creative;
   const getDeliveredQuestId = require("AdDecisionUtils").getDeliveredQuestId;
   const tmp3 = QuestStore;
@@ -207,7 +210,7 @@ export function useDeliveredCreativeForPlacement(MOBILE_HOME_DOCK_AREA, QUEST_BA
   const deliveredQuestId = getDeliveredQuestId(creative);
   const items4 = [tmp3];
   const items5 = [deliveredQuestId];
-  const tmpResult = tmp(tmp2[7]);
+  const tmpResult = tmp(tmp2[8]);
   const stateFromStores2 = tmpResult.useStateFromStores(items4, () => {
     let tmp2 = null;
     if (null != deliveredQuestId) {
@@ -223,7 +226,7 @@ export function useDeliveredCreativeForPlacement(MOBILE_HOME_DOCK_AREA, QUEST_BA
   let tmp10 = null;
   if (null != stateFromStores2) {
     tmp10 = null;
-    const tmpResult4 = tmp(tmp2[9]);
+    const tmpResult4 = tmp(tmp2[10]);
     if (!tmpResult4.isQuestExpired(stateFromStores2)) {
       tmp10 = stateFromStores2;
     }
@@ -232,15 +235,15 @@ export function useDeliveredCreativeForPlacement(MOBILE_HOME_DOCK_AREA, QUEST_BA
     stateFromStores = tmp10;
   }
   let creative1;
-  const getDeliveredBounty = tmp(tmp2[8]).getDeliveredBounty;
-  tmp(tmp2[8]);
+  const getDeliveredBounty = tmp(tmp2[9]).getDeliveredBounty;
+  tmp(tmp2[9]);
   if (stateFromStores1 != null) {
     creative1 = stateFromStores1.creative;
   }
   const deliveredBounty = getDeliveredBounty(creative1);
   let creative2;
-  const getDeliveredPlayable = tmp(tmp2[8]).getDeliveredPlayable;
-  tmp(tmp2[8]);
+  const getDeliveredPlayable = tmp(tmp2[9]).getDeliveredPlayable;
+  tmp(tmp2[9]);
   if (stateFromStores1 != null) {
     creative2 = stateFromStores1.creative;
   }

@@ -1,42 +1,42 @@
-// Module ID: 16915
-// Function ID: 16916
+// Module ID: 17238
+// Function ID: 17239
 // Name: QuestHome
-// Dependencies: [32, 19, 17, 5015, 9679, 7846, 7867, 6781, 1072, 21, 5014, 575, 504, 1497, 16916, 572, 7928, 7935, 16974, 5634, 1113, 6744, 7563, 9681, 16976, 5624, 16999, 17017, 9673, 1625, 7852, 9682, 6788, 7842, 5712, 1252, 6028, 1260, 17060, 14758, 14690, 17061, 17023, 1498, 6784, 16918, 7866, 16991, 16996, 14699, 17062, 17139, 5043, 7294, 2]
+// Dependencies: [32, 19, 17, 5141, 9770, 7922, 7944, 6836, 1072, 21, 5140, 575, 504, 1499, 17239, 572, 7559, 7566, 17297, 5758, 1113, 6799, 7635, 9772, 17299, 5751, 17322, 17340, 9764, 1627, 7929, 9773, 6843, 7918, 5837, 1252, 6160, 1260, 17385, 14994, 14926, 17386, 17346, 1500, 6839, 17241, 7943, 17314, 17319, 14935, 17387, 17466, 5169, 7357, 2]
 
-// Module 16915 (QuestHome)
+// Module 17238 (QuestHome)
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import useNavigation from "useNavigation" /* 1497 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import components_Button_Button from "components/Button/Button" /* 5634 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5712 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6744 */;
-import QuestConstants from "QuestConstants" /* 6781 */;
-import QuestTypes from "QuestTypes" /* 6784 */;
-import AdCreativeType from "AdCreativeType" /* 6788 */;
-import openUserSettings from "openUserSettings" /* 7563 */;
-import QuestDataUtils from "QuestDataUtils" /* 7842 */;
-import hooks_QuestHooks from "hooks/QuestHooks" /* 9681 */;
-import QuestActionCreators from "QuestActionCreators" /* 9682 */;
-import QuestContentImpressionTracker from "QuestContentImpressionTracker" /* 14699 */;
-import BountiesModalActionCreatorsDefault from "BountiesModalActionCreators" /* 16916 */;
-import BountiesModalTypes from "BountiesModalTypes" /* 16918 */;
-import QuestHomeEmptyStateDefault from "QuestHomeEmptyState" /* 16974 */;
-import QuestHomeBountiesDefault from "QuestHomeBounties" /* 16976 */;
-import HexagonCampaignQuestHomeHeaderDefault from "HexagonCampaignQuestHomeHeader" /* 16999 */;
-import QuestHomeOpenTriggerPoint2 from "QuestHomeOpenTriggerPoint" /* 17060 */;
-import QuestHomeRoundtripTrackerDefault from "QuestHomeRoundtripTracker" /* 17139 */;
+import useNavigation from "useNavigation" /* 1499 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import components_Button_Button from "components/Button/Button" /* 5758 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5837 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6799 */;
+import QuestConstants from "QuestConstants" /* 6836 */;
+import QuestTypes from "QuestTypes" /* 6839 */;
+import AdCreativeType from "AdCreativeType" /* 6843 */;
+import openUserSettings from "openUserSettings" /* 7635 */;
+import QuestDataUtils from "QuestDataUtils" /* 7918 */;
+import hooks_QuestHooks from "hooks/QuestHooks" /* 9772 */;
+import QuestActionCreators from "QuestActionCreators" /* 9773 */;
+import QuestContentImpressionTracker from "QuestContentImpressionTracker" /* 14935 */;
+import BountiesModalActionCreatorsDefault from "BountiesModalActionCreators" /* 17239 */;
+import BountiesModalTypes from "BountiesModalTypes" /* 17241 */;
+import QuestHomeEmptyStateDefault from "QuestHomeEmptyState" /* 17297 */;
+import QuestHomeBountiesDefault from "QuestHomeBounties" /* 17299 */;
+import HexagonCampaignQuestHomeHeaderDefault from "HexagonCampaignQuestHomeHeader" /* 17322 */;
+import QuestHomeOpenTriggerPoint2 from "QuestHomeOpenTriggerPoint" /* 17385 */;
+import QuestHomeRoundtripTrackerDefault from "QuestHomeRoundtripTracker" /* 17466 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5015 */;
-import QuestHomeNavigationStore from "QuestHomeNavigationStore" /* 9679 */;
-import QuestStore from "QuestStore" /* 7846 */;
-import QuestUtmStore from "QuestUtmStore" /* 7867 */;
+import AccessibilityStore from "AccessibilityStore" /* 5141 */;
+import QuestHomeNavigationStore from "QuestHomeNavigationStore" /* 9770 */;
+import QuestStore from "QuestStore" /* 7922 */;
+import QuestUtmStore from "QuestUtmStore" /* 7944 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let item, navigation;
@@ -53,7 +53,7 @@ let obj3;
 let obj4;
 let obj5;
 let tmp4;
-const OrbsArcadeQuestHomeSectionDefault = tmp4(17017);
+const OrbsArcadeQuestHomeSectionDefault = tmp4(17340);
 function EmptyStateNoQuestsAvailable(hasContentAbove) {
   let Button;
   let intl;
@@ -106,7 +106,7 @@ function HeaderPreviewButton() {
   if (obj.useShouldShowPreviewToolTab()) {
     let obj2 = { style: tmp.previewButton, children: authStore3(Button, obj3) };
     obj3 = { grow: true, onPress: callback, variant: "primary", text: intl.string(intl4.t.tx5Ax5) };
-    Button = tmp3(5634).Button;
+    Button = tmp3(5758).Button;
     intl = tmp3(1113).intl;
     tmp5 = authStore3(hasOwnProperty, obj2);
   }
@@ -129,7 +129,7 @@ function QuestsSectionHeader(onLayout) {
   const obj = { style: items, onLayout, children: authStore3(Text, obj2) };
   items = [, ];
   ({ sectionHeader: arr[0], sectionHeaderWithTag: arr[1] } = closure_16());
-  obj2 = { variant: "text-lg/semibold", color: "text-strong", children: intl.string(intl4.t.JALI2K) };
+  obj2 = { variant: "body-lg/semibold", color: "text-strong", children: intl.string(intl4.t.JALI2K) };
   closure_16();
   Text = Text_Text.Text;
   intl = intl4.intl;

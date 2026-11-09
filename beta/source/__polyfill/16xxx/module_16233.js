@@ -1,39 +1,9 @@
 // Module ID: 16233
 // Function ID: 16234
-// Dependencies: []
-// Exports: getReactNativeVersionWithModules
+// Dependencies: [16226]
 
 // Module 16233
+import _mod16226 from "module_16226" /* 16226 */;
 
-export function getReactNativeVersionWithModules(constants) {
-  try {
-    const tmp = constants;
-    if (tmp) {
-      if (constants.reactNativeVersion) {
-        const major = constants.reactNativeVersion.major;
-        const minor = constants.reactNativeVersion.minor;
-        const patch = constants.reactNativeVersion.patch;
-        const prerelease = constants.reactNativeVersion.prerelease;
-        if (typeof major !== "number") {
-          return null;
-        } else {
-          const items = [];
-          const _HermesInternal2 = HermesInternal;
-          items.push("" + tmp4 + "." + minor + "." + patch);
-          const tmp16 = prerelease;
-          if (tmp16) {
-            const _HermesInternal = HermesInternal;
-            items.push("-" + prerelease);
-          }
-          return items.join("");
-        }
-      } else {
-        return null;
-      }
-    } else {
-      return null;
-    }
-  } catch (err) {
-    return null;
-  }
-}
+
+export default (arg0, arg1, arg2) => _mod16226(arg0, arg1, arg2) < 0;

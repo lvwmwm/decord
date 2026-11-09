@@ -1,10 +1,10 @@
-// Module ID: 5208
-// Function ID: 5209
+// Module ID: 5324
+// Function ID: 5325
 // Name: ScreenIndexFrozen
-// Dependencies: [19, 5095, 2]
+// Dependencies: [19, 1652, 2]
 // Exports: addFrozenScreenIndexesChangedListener, freezeScreenIndex, isScreenIndexFrozen, removeFrozenScreenIndexesChangedListener, useIsScreenIndexFrozenSharedValue
 
-// Module 5208 (ScreenIndexFrozen)
+// Module 5324 (ScreenIndexFrozen)
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -41,7 +41,7 @@ export function useIsScreenIndexFrozenSharedValue(arg0) {
   let closure_0;
   let sharedValue;
   _require = arg0;
-  const obj = require("ReanimatedRexport");
+  const obj = require("module_1652");
   sharedValue = obj.useSharedValue(set.has(arg0));
   const items = [arg0, sharedValue];
   const effect = react.useEffect(() => {

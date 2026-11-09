@@ -1,25 +1,25 @@
-// Module ID: 16286
-// Function ID: 16287
+// Module ID: 16607
+// Function ID: 16608
 // Name: ConjureVoiceSessionCoordinator
-// Dependencies: [6846, 502, 2006, 5764, 1383, 5679, 1072, 5768, 5918, 9333, 16287, 1266, 572, 16290, 12, 5915, 16291, 16288, 6849, 2]
+// Dependencies: [6901, 502, 2130, 5893, 1385, 5803, 1072, 5897, 6050, 9414, 16608, 1266, 572, 16610, 12, 6047, 16611, 16609, 6904, 2]
 
-// Module 16286 (ConjureVoiceSessionCoordinator)
+// Module 16607 (ConjureVoiceSessionCoordinator)
 import _modDef12 from "module_12" /* 12 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants2 from "Constants" /* 1072 */;
-import SpatialAudioForVoiceExperimentDefault from "SpatialAudioForVoiceExperiment" /* 5918 */;
-import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 6849 */;
-import RPCErrorDefault from "RPCError" /* 9333 */;
-import validateEmbeddedAppFrameDefault from "validateEmbeddedAppFrame" /* 16288 */;
-import ConjureVoiceAcoustics from "ConjureVoiceAcoustics" /* 16290 */;
-import ConjureVoiceGeometry from "ConjureVoiceGeometry" /* 16291 */;
-import FramesStore from "FramesStore" /* 6846 */;
+import SpatialAudioForVoiceExperimentDefault from "SpatialAudioForVoiceExperiment" /* 6050 */;
+import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 6904 */;
+import RPCErrorDefault from "RPCError" /* 9414 */;
+import validateEmbeddedAppFrameDefault from "validateEmbeddedAppFrame" /* 16609 */;
+import ConjureVoiceAcoustics from "ConjureVoiceAcoustics" /* 16610 */;
+import ConjureVoiceGeometry from "ConjureVoiceGeometry" /* 16611 */;
+import FramesStore from "FramesStore" /* 6901 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import MediaEngineStore from "MediaEngineStore" /* 2006 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5764 */;
-import UserStore from "UserStore" /* 1383 */;
-import VoiceStateStore from "VoiceStateStore" /* 5679 */;
-import Constants from "Constants" /* 5768 */;
+import MediaEngineStore from "MediaEngineStore" /* 2130 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5893 */;
+import UserStore from "UserStore" /* 1385 */;
+import VoiceStateStore from "VoiceStateStore" /* 5803 */;
+import Constants from "Constants" /* 5897 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, importDefault, set, user, user_id;
@@ -27,7 +27,7 @@ let dependencyMap, importDefault, set, user, user_id;
 let c10;
 let tmp7;
 let unpackModuleId;
-const AudioActionCreatorsDefault = tmp7(5915);
+const AudioActionCreatorsDefault = tmp7(6047);
 const RPCErrors = Constants2.RPCErrors;
 ({ Features: c10, MediaEngineContextTypes: unpackModuleId } = Constants);
 let closure_12 = { x: 0, y: 0, z: -1 };
@@ -145,11 +145,11 @@ class ConjureVoiceSessionCoordinator {
     if (null != connectedRTCConnection) {
       if (null != mediaEngineConnectionId) {
         if (channelId !== connectedRTCConnection.channelId) {
-          const obj13 = handleFrameLifecycleChange(16287);
+          const obj13 = handleFrameLifecycleChange(16608);
           if (obj13.isConjureApplication(applicationId)) {
-            const tmp33Result = handleFrameLifecycleChange(16287);
+            const tmp33Result = handleFrameLifecycleChange(16608);
             if (!tmp33Result.isUserScopedConjureApplication(applicationId)) {
-              const tmp33Result2 = handleFrameLifecycleChange(16287);
+              const tmp33Result2 = handleFrameLifecycleChange(16608);
               if (!tmp33Result2.isVoiceChannelInFrameGuild(frame, connectedRTCConnection.channelId)) {
                 const self4 = this;
                 const self5 = this;
@@ -255,7 +255,7 @@ class ConjureVoiceSessionCoordinator {
         const tmp18 = new RPCErrorDefault(obj3, roomError);
         throw tmp18;
       } else {
-        const tmp9Result = tmp9(16290);
+        const tmp9Result = tmp9(16610);
         validateSessionResult.acoustics = tmp9Result.toSpatialAudioOverrides(acoustics);
         const result = self.syncSpatialAudioOverrides();
       }

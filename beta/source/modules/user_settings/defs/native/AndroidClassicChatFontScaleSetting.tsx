@@ -1,15 +1,15 @@
-// Module ID: 17303
-// Function ID: 17304
+// Module ID: 17629
+// Function ID: 17630
 // Name: AndroidClassicChatFontScaleSetting
-// Dependencies: [17251, 8432, 4929, 1259, 1113, 11540, 1375, 2]
+// Dependencies: [17577, 8503, 5055, 1259, 1113, 11685, 1377, 2]
 
-// Module 17303 (AndroidClassicChatFontScaleSetting)
+// Module 17629 (AndroidClassicChatFontScaleSetting)
 import intl2 from "intl" /* 1113 */;
-import PlatformUtils from "PlatformUtils" /* 1375 */;
-import _slicedToArray from "_slicedToArray" /* 4929 */;
-import SettingsConstants from "SettingsConstants" /* 8432 */;
-import FontScaleStore from "FontScaleStore" /* 17251 */;
-import SettingBuilders from "SettingBuilders" /* 11540 */;
+import PlatformUtils from "PlatformUtils" /* 1377 */;
+import _slicedToArray from "_slicedToArray" /* 5055 */;
+import SettingsConstants from "SettingsConstants" /* 8503 */;
+import FontScaleStore from "FontScaleStore" /* 17577 */;
+import SettingBuilders from "SettingBuilders" /* 11685 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

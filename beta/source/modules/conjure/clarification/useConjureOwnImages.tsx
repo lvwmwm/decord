@@ -1,12 +1,12 @@
-// Module ID: 12760
-// Function ID: 12761
+// Module ID: 12961
+// Function ID: 12962
 // Name: useConjureOwnImages
-// Dependencies: [109, 32, 19, 1113, 3868, 12147, 2]
+// Dependencies: [109, 32, 19, 1113, 4026, 12315, 2]
 // Exports: inertOwnImageControls, useConjureOwnImages
 
-// Module 12760 (useConjureOwnImages)
-import _modDef3868 from "module_3868" /* 3868 */;
-import conjureAttachmentRequests from "conjureAttachmentRequests" /* 12147 */;
+// Module 12961 (useConjureOwnImages)
+import _modDef4026 from "module_4026" /* 4026 */;
+import conjureAttachmentRequests from "conjureAttachmentRequests" /* 12315 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -75,7 +75,7 @@ export function useConjureOwnImages(projectId, arg1, arg2) {
   [first1, closure_6] = first1.useState({});
   [first2, closure_8] = first1.useState({});
   let intl = require("intl").intl;
-  const stringResult = intl.string(_modDef3868.wTsP5l);
+  const stringResult = intl.string(_modDef4026.wTsP5l);
   const text = stringResult;
   let items = [first];
   const items1 = [arg1, first, first2];
@@ -98,6 +98,13 @@ export function useConjureOwnImages(projectId, arg1, arg2) {
           kind = tmp3.kind;
         }
         tmp5 = "image" === kind;
+        if (!tmp5) {
+          let kind1;
+          if (closure_1[multi_select.id] != null) {
+            kind1 = tmp3.kind;
+          }
+          tmp5 = "multi" === kind1 && null != closure_1[multi_select.id].attachment;
+        }
       }
       tmp = tmp5;
     }
@@ -124,7 +131,7 @@ export function useConjureOwnImages(projectId, arg1, arg2) {
       let busy;
       let closure_3;
       let error;
-      const f136961 = (arg0) => {
+      const f139565 = (arg0) => {
         obj = {};
         const merged = Object.assign(arg0);
         obj[obj] = true;
@@ -171,13 +178,15 @@ export function useConjureOwnImages(projectId, arg1, arg2) {
               }
             },
           onRemove() {
+              let tmp;
               if (null != c2) {
-                const tmp2 = require;
+                const tmp3 = dependencyMap;
                 let obj = conjureAttachmentRequests;
                 const result = obj.deleteStagedAttachment(projectId, tmp.attachment.id);
                 result.catch(() => {
 
                 });
+                let tmp6 = closure_4;
                 closure_4((arg0) => {
                   const obj = Object.create(null);
                   obj[id] = 0;
@@ -190,16 +199,26 @@ export function useConjureOwnImages(projectId, arg1, arg2) {
                   return obj;
                 });
                 _null((dependencyMap) => {
-                  let kind;
-                  if (dependencyMap[id] != null) {
-                    kind = tmp2.kind;
+                  const tmp = closure_1_1;
+                  if (!tmp) {
+                    let kind;
+                    if (dependencyMap[id] != null) {
+                      kind = tmp3.kind;
+                    }
+                    let tmp6 = "image" === kind;
+                    if (!tmp6) {
+                      let kind1;
+                      if (dependencyMap[id] != null) {
+                        kind1 = tmp3.kind;
+                      }
+                      tmp6 = "multi" === kind1 && null != dependencyMap[id].attachment;
+                    }
+                    if (tmp6) {
+                      const items = [id];
+                      return first(dependencyMap, items.map(closure_6));
+                    }
                   }
-                  if ("image" !== kind) {
-                    return dependencyMap;
-                  } else {
-                    const items = [id];
-                    return first(dependencyMap, items.map(closure_6));
-                  }
+                  return dependencyMap;
                 });
               }
             },
@@ -245,7 +264,7 @@ export function useConjureOwnImages(projectId, arg1, arg2) {
                   });
                   const tmp5 = closure_1;
                   if (tmp5) {
-                    closure_1_8(f136961);
+                    closure_1_8(f139565);
                   } else {
                     _null((arg0) => {
                       let tmp2 = arg0;
@@ -308,7 +327,7 @@ export function useConjureOwnImages(projectId, arg1, arg2) {
                 });
                 const tmp3 = closure_1;
                 if (tmp3) {
-                  closure_1_8(f136961);
+                  closure_1_8(f139565);
                 } else {
                   _null((arg0) => {
                     let tmp2 = arg0;

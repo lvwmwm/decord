@@ -1,30 +1,59 @@
-// Module ID: 12787
-// Function ID: 12788
+// Module ID: 12989
+// Function ID: 12990
 // Name: waveTransition
-// Dependencies: [2]
-// Exports: bandArrivalTime, bandDepartureTime, bandGlyphsAt, cellStateAt, charForState, dirtyRangeAt, glyphLayerOpacityAt, glyphRampIndexAt, isResolvedState, pickSlotFaces, shiftedLineFor, slotCountFor, waveArrivalTime
+// Dependencies: [32, 2]
+// Exports: bandArrivalTime, bandDepartureTime, bandEdgesAt, bandGlyphsAt, cellStateAt, charForState, dirtyRangeAt, glyphLayerOpacityAt, glyphRampIndexAt, isResolvedState, pickSlotFaces, shiftedLineFor, slotCountFor, waveArrivalTime
 
-// Module 12787 (waveTransition)
+// Module 12989 (waveTransition)
+import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
+let tmp10;
+let tmp11;
+let tmp12;
+let tmp13;
+let tmp14;
+let tmp15;
+let tmp16;
+let tmp17;
+let tmp18;
+let tmp19;
+let tmp2;
+let tmp20;
+let tmp21;
+let tmp22;
+let tmp23;
+let tmp24;
+let tmp25;
+let tmp26;
+let tmp27;
+let tmp28;
+let tmp29;
+let tmp3;
+let tmp4;
+let tmp5;
+let tmp6;
+let tmp7;
+let tmp8;
+let tmp9;
 function shiftChar(str, arg1) {
   let fromCharCodeResult;
   const charCodeAtResult = str.charCodeAt(0);
-  if (charCodeAtResult >= closure_6) {
+  if (charCodeAtResult >= closure_4) {
     if (charCodeAtResult <= 90) {
       const _String3 = String;
       fromCharCodeResult = String.fromCharCode(tmp2 + (charCodeAtResult - tmp2 + arg1) % 26);
     }
     return fromCharCodeResult;
   }
-  if (charCodeAtResult >= closure_7) {
+  if (charCodeAtResult >= closure_5) {
     if (charCodeAtResult <= 122) {
       const _String2 = String;
       fromCharCodeResult = String.fromCharCode(tmp3 + (charCodeAtResult - tmp3 + arg1) % 26);
     }
   }
   fromCharCodeResult = str;
-  if (charCodeAtResult >= closure_8) {
+  if (charCodeAtResult >= closure_6) {
     fromCharCodeResult = str;
     if (charCodeAtResult <= 57) {
       const _String = String;
@@ -33,60 +62,58 @@ function shiftChar(str, arg1) {
   }
 }
 const items = [{ offset: 0, span: 0.66, ease: 1.6 }, { offset: 0.08, span: 0.78, ease: 1.6 }, { offset: 0.08, span: 0.9, ease: 7.5 }, { offset: 0.08, span: 0.92, ease: 9 }];
-const items1 = [0.5, 0.5, 0.45, 0.9];
+const items1 = [{ code: "(function bezierAxis_waveTransitionTsx1(progress,controlPoint1,controlPoint2){const remaining=1-progress;return 3*remaining*remaining*progress*controlPoint1+3*remaining*progress*progress*controlPoint2+progress*progress*progress;})" }];
+[tmp2] = items1;
 function bezierAxis(arg0, arg1, arg2) {
   const diff = 1 - arg0;
   const result = 3 * diff;
   return result * diff * arg0 * arg1 + result * arg0 * arg0 * arg2 + arg0 * arg0 * arg0;
 }
-bezierAxis.__closure = {};
-bezierAxis.__workletHash = 15821918391351;
-bezierAxis.__initData = { code: "function bezierAxis_waveTransitionTsx1(progress,controlPoint1,controlPoint2){const remaining=1-progress;return 3*remaining*remaining*progress*controlPoint1+3*remaining*progress*progress*controlPoint2+progress*progress*progress;}" };
-function easeTail(diff) {
-  if (diff <= 0) {
+bezierAxis.__workletHash = 15877266054614;
+bezierAxis.__initData = tmp2;
+const items2 = [{ code: "(function easeTail_waveTransitionTsx2(progress){let[TIME_CURVE,bezierAxis]=this.__closure;if(progress<=0)return 0;if(progress>=1)return 1;const[x1,y1,x2,y2]=TIME_CURVE;let low=0;let high=1;for(let iteration=0;iteration<20;iteration++){const midpoint=(low+high)/2;if(bezierAxis(midpoint,x1,x2)<progress){low=midpoint;}else{high=midpoint;}}return bezierAxis((low+high)/2,y1,y2);})" }, [0.5, 0.5, 0.45, 0.9], bezierAxis];
+[tmp3, tmp4, tmp5] = items2;
+function easeTail(arg0) {
+  let tmp11;
+  let tmp13;
+  let tmp2;
+  let tmp5;
+  let tmp6;
+  if (arg0 <= 0) {
     return 0;
-  } else if (diff >= 1) {
+  } else if (arg0 >= 1) {
     return 1;
   } else {
+    [, tmp11, , tmp13] = c0;
     let num = 0;
     let num2 = 1;
     let num3 = 0;
-    let tmp4 = num3;
-    while (typeof bezierAxis === "function") {
-      let result = (tmp4 + num2) / 2;
-      diff = 1 - result;
-      let result1 = 3 * diff;
-      let tmp8 = result;
-      if (result1 * diff * result * tmp13 + result1 * result * result * tmp15 + result * result * result < diff) {
-        tmp8 = num2;
-        tmp4 = result;
+    do {
+      let result = (num3 + num2) / 2;
+      tmp2 = _undefined;
+      tmp5 = num3;
+      tmp6 = result;
+      if (_undefined(result, tmp10, tmp12) < arg0) {
+        tmp6 = num2;
+        tmp5 = result;
       }
       num = num + 1;
-      num2 = tmp8;
-      num3 = tmp4;
-      if (num < 20) {
-        continue;
-      } else if (typeof tmp === "function") {
-        let result2 = (tmp4 + tmp8) / 2;
-        let diff1 = 1 - result2;
-        let result3 = 3 * diff1;
-        return result3 * diff1 * result2 * tmp14 + result3 * result2 * result2 * tmp16 + result2 * result2 * result2;
-      } else {
-        let str2 = "Trying to call a non-function";
-        throw new TypeError("Trying to call a non-function");
-      }
-    }
-    throw new TypeError("Trying to call a non-function");
+      num2 = tmp6;
+      num3 = tmp5;
+    } while (num < 20);
+    return tmp2((tmp5 + tmp6) / 2, tmp11, tmp13);
   }
 }
-easeTail.__closure = { TIME_CURVE: items1, bezierAxis };
-easeTail.__workletHash = 16708913568056;
-easeTail.__initData = { code: "function easeTail_waveTransitionTsx2(progress){const{TIME_CURVE,bezierAxis}=this.__closure;if(progress<=0)return 0;if(progress>=1)return 1;const[x1,y1,x2,y2]=TIME_CURVE;let low=0;let high=1;for(let iteration=0;iteration<20;iteration++){const midpoint=(low+high)/2;if(bezierAxis(midpoint,x1,x2)<progress){low=midpoint;}else{high=midpoint;}}return bezierAxis((low+high)/2,y1,y2);}" };
-let c4 = "123456";
-let c5 = "789ABC";
-let closure_6 = "A".charCodeAt(0);
-let closure_7 = "a".charCodeAt(0);
-let closure_8 = "0".charCodeAt(0);
+const items3 = [tmp4, tmp5];
+easeTail.__closure = items3;
+easeTail.__workletHash = 16150703563713;
+easeTail.__initData = tmp3;
+let c3 = "789ABC";
+let closure_4 = "A".charCodeAt(0);
+let closure_5 = "a".charCodeAt(0);
+let closure_6 = "0".charCodeAt(0);
+const items4 = [{ code: "(function waveFrontAt_waveTransitionTsx3(edgeIndex,progress){let[WAVE_SCHEDULE]=this.__closure;const{offset:offset,span:span,ease:ease}=WAVE_SCHEDULE[edgeIndex];const edgeProgress=(progress-offset)/span;if(edgeProgress<=0)return 0;if(edgeProgress>=1)return 1;return edgeProgress**ease;})" }, items];
+[tmp6, tmp7] = items4;
 function waveFrontAt(arg0, arg1) {
   const ease = tmp.ease;
   const result = (arg1 - tmp.offset) / tmp.span;
@@ -100,184 +127,77 @@ function waveFrontAt(arg0, arg1) {
   }
   return num;
 }
-waveFrontAt.__closure = { WAVE_SCHEDULE: items };
-waveFrontAt.__workletHash = 10864523756867;
-waveFrontAt.__initData = { code: "function waveFrontAt_waveTransitionTsx3(edgeIndex,progress){const{WAVE_SCHEDULE}=this.__closure;const{offset:offset,span:span,ease:ease}=WAVE_SCHEDULE[edgeIndex];const edgeProgress=(progress-offset)/span;if(edgeProgress<=0)return 0;if(edgeProgress>=1)return 1;return edgeProgress**ease;}" };
+const items5 = [tmp7];
+waveFrontAt.__closure = items5;
+waveFrontAt.__workletHash = 13583994726522;
+waveFrontAt.__initData = tmp6;
+const items6 = [{ code: "(function glyphLayerOpacityAt_waveTransitionTsx4(progress){let[waveFrontAt,GLYPH_BAND_END_EDGE_INDEX,GLYPH_BAND_START_EDGE_INDEX,GLYPH_FADE_IN_WIDTH,GLYPH_FADE_OUT_WIDTH]=this.__closure;const bandEnd=waveFrontAt(GLYPH_BAND_END_EDGE_INDEX,progress);const bandWidth=bandEnd-waveFrontAt(GLYPH_BAND_START_EDGE_INDEX,progress);if(bandWidth<=0)return 0;const opening=bandEnd<1;const fadeDistance=opening?GLYPH_FADE_IN_WIDTH:GLYPH_FADE_OUT_WIDTH;const opacityProgress=Math.min(1,bandWidth/fadeDistance);return opacityProgress*opacityProgress*(3-2*opacityProgress);})" }, waveFrontAt, 1, 2, 0.15, 0.5];
+[tmp8, tmp9, tmp10, tmp11, tmp12, tmp13] = items6;
 function glyphLayerOpacityAt(arg0) {
-  if (typeof waveFrontAt === "function") {
-    const ease = tmp4.ease;
-    const result = (arg0 - tmp4.offset) / tmp4.span;
-    let num2 = 0;
-    if (result > 0) {
-      let num3 = 1;
-      if (result < 1) {
-        num3 = result ** ease;
-      }
-      num2 = num3;
-    }
-    if (typeof tmp === "function") {
-      const ease2 = tmp8.ease;
-      const result1 = (arg0 - tmp8.offset) / tmp8.span;
-      let num4 = 0;
-      if (result1 > 0) {
-        let num5 = 1;
-        if (result1 < 1) {
-          num5 = result1 ** ease2;
-        }
-        num4 = num5;
-      }
-      const diff = num2 - num4;
-      if (diff <= 0) {
-        return 0;
-      } else {
-        let num6 = 0.5;
-        if (num2 < 1) {
-          num6 = 0.15;
-        }
-        const _Math = Math;
-        const bound = Math.min(1, diff / num6);
-        return bound * bound * (3 - 2 * bound);
-      }
-    } else {
-      throw new TypeError("Trying to call a non-function");
-    }
+  const tmp = _undefined(c1, arg0);
+  const diff = tmp - _undefined(c2, arg0);
+  if (diff <= 0) {
+    return 0;
   } else {
-    throw new TypeError("Trying to call a non-function");
+    const _Math = Math;
+    const bound = Math.min(1, diff / (tmp < 1 ? c3 : c4));
+    return bound * bound * (3 - 2 * bound);
   }
 }
-glyphLayerOpacityAt.__closure = { waveFrontAt, GLYPH_BAND_END_EDGE_INDEX: 1, GLYPH_BAND_START_EDGE_INDEX: 2, GLYPH_FADE_IN_WIDTH: 0.15, GLYPH_FADE_OUT_WIDTH: 0.5 };
-glyphLayerOpacityAt.__workletHash = 10135623648073;
-glyphLayerOpacityAt.__initData = { code: "function glyphLayerOpacityAt_waveTransitionTsx4(progress){const{waveFrontAt,GLYPH_BAND_END_EDGE_INDEX,GLYPH_BAND_START_EDGE_INDEX,GLYPH_FADE_IN_WIDTH,GLYPH_FADE_OUT_WIDTH}=this.__closure;const bandEnd=waveFrontAt(GLYPH_BAND_END_EDGE_INDEX,progress);const bandWidth=bandEnd-waveFrontAt(GLYPH_BAND_START_EDGE_INDEX,progress);if(bandWidth<=0)return 0;const opening=bandEnd<1;const fadeDistance=opening?GLYPH_FADE_IN_WIDTH:GLYPH_FADE_OUT_WIDTH;const opacityProgress=Math.min(1,bandWidth/fadeDistance);return opacityProgress*opacityProgress*(3-2*opacityProgress);}" };
+const items7 = [tmp9, tmp10, tmp11, tmp12, tmp13];
+glyphLayerOpacityAt.__closure = items7;
+glyphLayerOpacityAt.__workletHash = 4261116665264;
+glyphLayerOpacityAt.__initData = tmp8;
+const items8 = [{ code: "(function bandEndAt_waveTransitionTsx5(progress){let[waveFrontAt,GLYPH_BAND_END_EDGE_INDEX]=this.__closure;return waveFrontAt(GLYPH_BAND_END_EDGE_INDEX,progress);})" }, waveFrontAt, 1];
+[tmp14, tmp15, tmp16] = items8;
 function bandEndAt(arg0) {
-  if (typeof waveFrontAt === "function") {
-    const ease = tmp3.ease;
-    const result = (arg0 - tmp3.offset) / tmp3.span;
-    let num = 0;
-    if (result > 0) {
-      let num2 = 1;
-      if (result < 1) {
-        num2 = result ** ease;
-      }
-      num = num2;
-    }
-    return num;
-  } else {
-    throw new TypeError("Trying to call a non-function");
-  }
+  return _undefined(c1, arg0);
 }
-bandEndAt.__closure = { waveFrontAt, GLYPH_BAND_END_EDGE_INDEX: 1 };
-bandEndAt.__workletHash = 1336985328258;
-bandEndAt.__initData = { code: "function bandEndAt_waveTransitionTsx5(progress){const{waveFrontAt,GLYPH_BAND_END_EDGE_INDEX}=this.__closure;return waveFrontAt(GLYPH_BAND_END_EDGE_INDEX,progress);}" };
+const items9 = [tmp15, tmp16];
+bandEndAt.__closure = items9;
+bandEndAt.__workletHash = 1100427923899;
+bandEndAt.__initData = tmp14;
+const items10 = [{ code: "(function bandStartAt_waveTransitionTsx6(progress){let[waveFrontAt,GLYPH_BAND_START_EDGE_INDEX]=this.__closure;return waveFrontAt(GLYPH_BAND_START_EDGE_INDEX,progress);})" }, waveFrontAt, 2];
+[tmp17, tmp18, tmp19] = items10;
 function bandStartAt(arg0) {
-  if (typeof waveFrontAt === "function") {
-    const ease = tmp3.ease;
-    const result = (arg0 - tmp3.offset) / tmp3.span;
-    let num = 0;
-    if (result > 0) {
-      let num2 = 1;
-      if (result < 1) {
-        num2 = result ** ease;
-      }
-      num = num2;
-    }
-    return num;
-  } else {
-    throw new TypeError("Trying to call a non-function");
-  }
+  return _undefined(c1, arg0);
 }
-bandStartAt.__closure = { waveFrontAt, GLYPH_BAND_START_EDGE_INDEX: 2 };
-bandStartAt.__workletHash = 2931057367950;
-bandStartAt.__initData = { code: "function bandStartAt_waveTransitionTsx6(progress){const{waveFrontAt,GLYPH_BAND_START_EDGE_INDEX}=this.__closure;return waveFrontAt(GLYPH_BAND_START_EDGE_INDEX,progress);}" };
-function bandEdgesAt(diff, animationWidth, overshoot) {
-  const tmp = easeTail(diff);
-  const sum = animationWidth + 2 * overshoot;
-  let num = 1;
-  if (typeof waveFrontAt === "function") {
-    const ease = tmp5.ease;
-    const result = (tmp - tmp5.offset) / tmp5.span;
-    let num3 = 0;
-    if (result > 0) {
-      let tmp7 = num;
-      if (num > result) {
-        tmp7 = result ** ease;
-      }
-      num3 = tmp7;
-    }
-    const obj = { incomingTextEnd: num3 * sum - overshoot, bandStart: null, bandEnd: null, outgoingTextStart: null };
-    if (typeof bandStartAt === "function") {
-      if (typeof waveFrontAt === "function") {
-        const ease2 = tmp11.ease;
-        const result1 = (tmp - tmp11.offset) / tmp11.span;
-        let num4 = 0;
-        if (result1 > 0) {
-          let tmp13 = num;
-          if (num > result1) {
-            tmp13 = result1 ** ease2;
-          }
-          num4 = tmp13;
-        }
-        obj.bandStart = num4 * sum - overshoot;
-        if (typeof bandEndAt === "function") {
-          if (typeof waveFrontAt === "function") {
-            const ease3 = tmp17.ease;
-            const result2 = (tmp - tmp17.offset) / tmp17.span;
-            let num5 = 0;
-            if (result2 > 0) {
-              let tmp19 = num;
-              if (num > result2) {
-                tmp19 = result2 ** ease3;
-              }
-              num5 = tmp19;
-            }
-            obj.bandEnd = num5 * sum - overshoot;
-            if (typeof waveFrontAt === "function") {
-              const first = tmp4[0];
-              const ease4 = first.ease;
-              const result3 = (tmp - first.offset) / first.span;
-              let num6 = 0;
-              if (result3 > 0) {
-                if (num > result3) {
-                  num = result3 ** ease4;
-                }
-                num6 = num;
-              }
-              obj.outgoingTextStart = num6 * sum - overshoot;
-              return obj;
-            } else {
-              throw new TypeError("Trying to call a non-function");
-            }
-          } else {
-            throw new TypeError("Trying to call a non-function");
-          }
-        } else {
-          throw new TypeError("Trying to call a non-function");
-        }
-      } else {
-        throw new TypeError("Trying to call a non-function");
-      }
-    } else {
-      throw new TypeError("Trying to call a non-function");
-    }
-  } else {
-    throw new TypeError("Trying to call a non-function");
-  }
+const items11 = [tmp18, tmp19];
+bandStartAt.__closure = items11;
+bandStartAt.__workletHash = 16157365904055;
+bandStartAt.__initData = tmp17;
+const items12 = [{ code: "(function bandEdgesAt_waveTransitionTsx7(progress,width,extraTravel){let[easeTail,waveFrontAt,WAVE_SCHEDULE,bandStartAt,bandEndAt]=this.__closure;const easedProgress=easeTail(progress);const travelDistance=width+2*extraTravel;return{incomingTextEnd:waveFrontAt(WAVE_SCHEDULE.length-1,easedProgress)*travelDistance-extraTravel,bandStart:bandStartAt(easedProgress)*travelDistance-extraTravel,bandEnd:bandEndAt(easedProgress)*travelDistance-extraTravel,outgoingTextStart:waveFrontAt(0,easedProgress)*travelDistance-extraTravel};})" }, easeTail, waveFrontAt, items, bandStartAt, bandEndAt];
+c3 = undefined;
+let c4;
+[tmp20, tmp21, tmp22, tmp23, tmp24, tmp25] = items12;
+function bandEdgesAt(arg0, arg1, arg2) {
+  const tmp = _undefined(arg0);
+  const sum = arg1 + 2 * arg2;
+  const obj = { incomingTextEnd: _undefined2(_undefined3.length - 1, tmp) * sum - arg2, bandStart: _undefined4(tmp) * sum - arg2, bandEnd: _undefined5(tmp) * sum - arg2, outgoingTextStart: _undefined2(0, tmp) * sum - arg2 };
+  return obj;
 }
-bandEdgesAt.__closure = { easeTail, waveFrontAt, WAVE_SCHEDULE: items, bandStartAt, bandEndAt };
-bandEdgesAt.__workletHash = 10777339350425;
-bandEdgesAt.__initData = { code: "function bandEdgesAt_waveTransitionTsx7(progress,width,extraTravel){const{easeTail,waveFrontAt,WAVE_SCHEDULE,bandStartAt,bandEndAt}=this.__closure;const easedProgress=easeTail(progress);const travelDistance=width+2*extraTravel;return{incomingTextEnd:waveFrontAt(WAVE_SCHEDULE.length-1,easedProgress)*travelDistance-extraTravel,bandStart:bandStartAt(easedProgress)*travelDistance-extraTravel,bandEnd:bandEndAt(easedProgress)*travelDistance-extraTravel,outgoingTextStart:waveFrontAt(0,easedProgress)*travelDistance-extraTravel};}" };
-function bandGlyphsAt(result, slotCount, glyphChoices, overshootInSlots) {
+const items13 = [tmp21, tmp22, tmp23, tmp24, tmp25];
+bandEdgesAt.__closure = items13;
+bandEdgesAt.__workletHash = 7012522582496;
+bandEdgesAt.__initData = tmp20;
+const items14 = [{ code: "(function bandGlyphsAt_waveTransitionTsx8(progress,slotCount,glyphChoices,extraTravel){let[bandEdgesAt,GLYPH_RAMP,RAMP_SLOTS]=this.__closure;if(slotCount<=0||glyphChoices.length===0)return'';const{bandStart:bandStart,bandEnd:bandEnd}=bandEdgesAt(progress,slotCount,extraTravel);const outsideGlyph=GLYPH_RAMP.charAt(0);let glyphs='';for(let slot=0;slot<slotCount;slot++){const darkestGlyph=glyphChoices.charAt(slot%glyphChoices.length);const slotCenter=slot+0.5;if(slotCenter>=bandEnd||slotCenter<bandStart){glyphs+=outsideGlyph;continue;}const distanceFromEdge=Math.min(slotCenter-bandStart,bandEnd-slotCenter);const densityIndex=Math.max(0,Math.min(Math.floor(distanceFromEdge/RAMP_SLOTS*GLYPH_RAMP.length),GLYPH_RAMP.length));glyphs+=densityIndex<GLYPH_RAMP.length?GLYPH_RAMP.charAt(densityIndex):darkestGlyph;}return glyphs;})" }, bandEdgesAt, "123456", 4];
+let c0;
+let c1;
+let c2;
+[tmp26, tmp27, tmp28, tmp29] = items14;
+function bandGlyphsAt(arg0, arg1, str, arg3) {
   let bandEnd;
   let bandStart;
-  if (slotCount > 0) {
-    if (0 !== glyphChoices.length) {
-      ({ bandStart, bandEnd } = bandEdgesAt(result, slotCount, overshootInSlots));
-      let str = "";
+  if (arg1 > 0) {
+    if (0 !== str.length) {
+      ({ bandStart, bandEnd } = _undefined(arg0, arg1, arg3));
+      str = "";
       let num = 0;
       let str2 = "";
-      bandEdgesAt(result, slotCount, overshootInSlots);
-      if (0 < slotCount) {
+      _undefined(arg0, arg1, arg3);
+      if (0 < arg1) {
         while (true) {
-          let charAtResult = glyphChoices.charAt(num % glyphChoices.length);
+          let charAtResult = str.charAt(num % str.length);
           let sum = num + 0.5;
           if (sum < bandEnd) {
             let sum1;
@@ -286,20 +206,21 @@ function bandGlyphsAt(result, slotCount, glyphChoices, overshootInSlots) {
               let _Math2 = Math;
               let _Math3 = Math;
               let _Math4 = Math;
-              let bound = Math.max(0, Math.min(Math.floor(Math.min(sum - bandStart, bandEnd - sum) / 4 * 6), 6));
-              if (bound < 6) {
-                charAtResult = v123456.charAt(bound);
+              let str3 = _undefined2;
+              let bound = Math.max(0, Math.min(Math.floor(Math.min(sum - bandStart, bandEnd - sum) / c2 * _undefined2.length), _undefined2.length));
+              if (bound < _undefined2.length) {
+                charAtResult = str3.charAt(bound);
               }
               sum1 = str + charAtResult;
             }
             num = num + 1;
             str = sum1;
             str2 = sum1;
-            if (num >= slotCount) {
+            if (num >= arg1) {
               break;
             }
           }
-          sum1 = str + tmp14;
+          sum1 = str + tmp12;
         }
       }
       return str2;
@@ -307,9 +228,82 @@ function bandGlyphsAt(result, slotCount, glyphChoices, overshootInSlots) {
   }
   return "";
 }
-bandGlyphsAt.__closure = { bandEdgesAt, GLYPH_RAMP: "123456", RAMP_SLOTS: 4 };
-bandGlyphsAt.__workletHash = 15659427124414;
-bandGlyphsAt.__initData = { code: "function bandGlyphsAt_waveTransitionTsx8(progress,slotCount,glyphChoices,extraTravel){const{bandEdgesAt,GLYPH_RAMP,RAMP_SLOTS}=this.__closure;if(slotCount<=0||glyphChoices.length===0)return'';const{bandStart:bandStart,bandEnd:bandEnd}=bandEdgesAt(progress,slotCount,extraTravel);const outsideGlyph=GLYPH_RAMP.charAt(0);let glyphs='';for(let slot=0;slot<slotCount;slot++){const darkestGlyph=glyphChoices.charAt(slot%glyphChoices.length);const slotCenter=slot+0.5;if(slotCenter>=bandEnd||slotCenter<bandStart){glyphs+=outsideGlyph;continue;}const distanceFromEdge=Math.min(slotCenter-bandStart,bandEnd-slotCenter);const densityIndex=Math.max(0,Math.min(Math.floor(distanceFromEdge/RAMP_SLOTS*GLYPH_RAMP.length),GLYPH_RAMP.length));glyphs+=densityIndex<GLYPH_RAMP.length?GLYPH_RAMP.charAt(densityIndex):darkestGlyph;}return glyphs;}" };
+const items15 = [tmp27, tmp28, tmp29];
+bandGlyphsAt.__closure = items15;
+bandGlyphsAt.__workletHash = 9167158967271;
+bandGlyphsAt.__initData = tmp26;
+function waveArrivalTime(arg0, arg1) {
+  let tmp11;
+  let tmp13;
+  let num = 0;
+  let num2 = 1;
+  let num3 = 0;
+  if (arg1 <= 0) {
+    return 0;
+  } else {
+    let tmp5 = num3;
+    while (typeof easeTail === "function") {
+      let result = (tmp5 + num2) / 2;
+      let num4 = 0;
+      if (result > 0) {
+        num4 = 1;
+        if (1 > result) {
+          let tmp15;
+          let tmp18;
+          let tmp19;
+          [, tmp11, , tmp13] = _slicedToArray;
+          let num5 = 0;
+          let num6 = 1;
+          let num7 = 0;
+          do {
+            let result1 = (num7 + num6) / 2;
+            tmp15 = items;
+            tmp18 = num7;
+            tmp19 = result1;
+            if (items(result1, tmp10, tmp12) < result) {
+              tmp19 = num6;
+              tmp18 = result1;
+            }
+            num5 = num5 + 1;
+            num6 = tmp19;
+            num7 = tmp18;
+          } while (num5 < 20);
+          num4 = tmp15((tmp18 + tmp19) / 2, tmp11, tmp13);
+        }
+      }
+      if (typeof tmp === "function") {
+        let tmp21 = closure_136_0[arg0];
+        let ease = tmp21.ease;
+        let result2 = (num4 - tmp21.offset) / tmp21.span;
+        let num8 = 0;
+        if (result2 > 0) {
+          let num9 = 1;
+          if (result2 < 1) {
+            num9 = result2 ** ease;
+          }
+          num8 = num9;
+        }
+        let tmp25 = result;
+        if (num8 < arg1) {
+          tmp25 = num2;
+          tmp5 = result;
+        }
+        num = num + 1;
+        num2 = tmp25;
+        num3 = tmp5;
+        if (num < 24) {
+          continue;
+        } else {
+          return (tmp5 + tmp25) / 2;
+        }
+      } else {
+        let str2 = "Trying to call a non-function";
+        throw new TypeError("Trying to call a non-function");
+      }
+    }
+    throw new TypeError("Trying to call a non-function");
+  }
+}
 let result = size.fileFinishedImporting("design/visual-identities/ai/AIShimmer/waveTransition.tsx");
 
 export const STATE_ORIGINAL = 0;
@@ -318,76 +312,73 @@ export const STATE_GLYPH = 2;
 export const STATE_SHIFTED_TO = 3;
 export const STATE_SETTLED = 4;
 export { easeTail };
-export function waveArrivalTime(arg0, arg1) {
-  let num = 0;
-  let num2 = 1;
-  let num3 = 0;
-  if (arg1 <= 0) {
-    return 0;
-  } else {
-    const result = (num3 + num2) / 2;
-    let tmp7 = num3;
-    while (typeof waveFrontAt === "function") {
-      let tmp9 = items[arg0];
-      let ease = tmp9.ease;
-      let result1 = (tmp4 - tmp9.offset) / tmp9.span;
-      let num4 = 0;
-      if (result1 > 0) {
-        let num5 = 1;
-        if (1 > result1) {
-          num5 = result1 ** ease;
-        }
-        num4 = num5;
-      }
-      let tmp13 = result;
-      if (num4 < arg1) {
-        tmp13 = num2;
-        tmp7 = result;
-      }
-      num = num + 1;
-      num2 = tmp13;
-      num3 = tmp7;
-      if (num < 24) {
-        continue;
-      } else {
-        return (tmp7 + tmp13) / 2;
-      }
-    }
-    throw new TypeError("Trying to call a non-function");
-  }
-}
+export { waveArrivalTime };
 export function bandArrivalTime(arg0) {
+  let tmp11;
+  let tmp13;
   let num = 0;
   let num2 = 1;
   let num3 = 0;
   let num4 = 0;
   if (arg0 > 0) {
-    const result = (num3 + num2) / 2;
-    let tmp7 = num3;
-    while (typeof waveFrontAt === "function") {
-      let tmp9 = items[1];
-      let ease = tmp9.ease;
-      let result1 = (tmp4 - tmp9.offset) / tmp9.span;
+    let tmp5 = num3;
+    while (typeof easeTail === "function") {
+      let result = (tmp5 + num2) / 2;
       let num5 = 0;
-      if (result1 > 0) {
-        let num6 = 1;
-        if (1 > result1) {
-          num6 = result1 ** ease;
+      if (result > 0) {
+        num5 = 1;
+        if (1 > result) {
+          let tmp15;
+          let tmp18;
+          let tmp19;
+          [, tmp11, , tmp13] = _slicedToArray;
+          let num6 = 0;
+          let num7 = 1;
+          let num8 = 0;
+          do {
+            let result1 = (num8 + num7) / 2;
+            tmp15 = items;
+            tmp18 = num8;
+            tmp19 = result1;
+            if (items(result1, tmp10, tmp12) < result) {
+              tmp19 = num7;
+              tmp18 = result1;
+            }
+            num6 = num6 + 1;
+            num7 = tmp19;
+            num8 = tmp18;
+          } while (num6 < 20);
+          num5 = tmp15((tmp18 + tmp19) / 2, tmp11, tmp13);
         }
-        num5 = num6;
       }
-      let tmp13 = result;
-      if (num5 < arg0) {
-        tmp13 = num2;
-        tmp7 = result;
-      }
-      num = num + 1;
-      num2 = tmp13;
-      num3 = tmp7;
-      if (num < 24) {
-        continue;
+      if (typeof tmp === "function") {
+        let tmp21 = closure_136_0[1];
+        let ease = tmp21.ease;
+        let result2 = (num5 - tmp21.offset) / tmp21.span;
+        let num9 = 0;
+        if (result2 > 0) {
+          let num10 = 1;
+          if (result2 < 1) {
+            num10 = result2 ** ease;
+          }
+          num9 = num10;
+        }
+        let tmp25 = result;
+        if (num9 < arg0) {
+          tmp25 = num2;
+          tmp5 = result;
+        }
+        num = num + 1;
+        num2 = tmp25;
+        num3 = tmp5;
+        if (num < 24) {
+          continue;
+        } else {
+          num4 = (tmp5 + tmp25) / 2;
+        }
       } else {
-        num4 = (tmp7 + tmp13) / 2;
+        let str2 = "Trying to call a non-function";
+        throw new TypeError("Trying to call a non-function");
       }
     }
     throw new TypeError("Trying to call a non-function");
@@ -395,37 +386,71 @@ export function bandArrivalTime(arg0) {
   return num4;
 }
 export function bandDepartureTime(arg0) {
+  let tmp11;
+  let tmp13;
   let num = 0;
   let num2 = 1;
   let num3 = 0;
   let num4 = 0;
   if (arg0 > 0) {
-    const result = (num3 + num2) / 2;
-    let tmp7 = num3;
-    while (typeof waveFrontAt === "function") {
-      let tmp9 = items[2];
-      let ease = tmp9.ease;
-      let result1 = (tmp4 - tmp9.offset) / tmp9.span;
+    let tmp5 = num3;
+    while (typeof easeTail === "function") {
+      let result = (tmp5 + num2) / 2;
       let num5 = 0;
-      if (result1 > 0) {
-        let num6 = 1;
-        if (1 > result1) {
-          num6 = result1 ** ease;
+      if (result > 0) {
+        num5 = 1;
+        if (1 > result) {
+          let tmp15;
+          let tmp18;
+          let tmp19;
+          [, tmp11, , tmp13] = _slicedToArray;
+          let num6 = 0;
+          let num7 = 1;
+          let num8 = 0;
+          do {
+            let result1 = (num8 + num7) / 2;
+            tmp15 = items;
+            tmp18 = num8;
+            tmp19 = result1;
+            if (items(result1, tmp10, tmp12) < result) {
+              tmp19 = num7;
+              tmp18 = result1;
+            }
+            num6 = num6 + 1;
+            num7 = tmp19;
+            num8 = tmp18;
+          } while (num6 < 20);
+          num5 = tmp15((tmp18 + tmp19) / 2, tmp11, tmp13);
         }
-        num5 = num6;
       }
-      let tmp13 = result;
-      if (num5 < arg0) {
-        tmp13 = num2;
-        tmp7 = result;
-      }
-      num = num + 1;
-      num2 = tmp13;
-      num3 = tmp7;
-      if (num < 24) {
-        continue;
+      if (typeof tmp === "function") {
+        let tmp21 = closure_136_0[2];
+        let ease = tmp21.ease;
+        let result2 = (num5 - tmp21.offset) / tmp21.span;
+        let num9 = 0;
+        if (result2 > 0) {
+          let num10 = 1;
+          if (result2 < 1) {
+            num10 = result2 ** ease;
+          }
+          num9 = num10;
+        }
+        let tmp25 = result;
+        if (num9 < arg0) {
+          tmp25 = num2;
+          tmp5 = result;
+        }
+        num = num + 1;
+        num2 = tmp25;
+        num3 = tmp5;
+        if (num < 24) {
+          continue;
+        } else {
+          num4 = (tmp5 + tmp25) / 2;
+        }
       } else {
-        num4 = (tmp7 + tmp13) / 2;
+        let str2 = "Trying to call a non-function";
+        throw new TypeError("Trying to call a non-function");
       }
     }
     throw new TypeError("Trying to call a non-function");
@@ -449,9 +474,9 @@ export function cellStateAt(arg0, arg1, arg2) {
   if (0 < items.length) {
     let sum = num2;
     while (typeof waveFrontAt === "function") {
-      let tmp4 = items[num];
-      let ease = tmp4.ease;
-      let result = (arg1 - tmp4.offset) / tmp4.span;
+      let tmp5 = closure_136_0[num];
+      let ease = tmp5.ease;
+      let result = (arg1 - tmp5.offset) / tmp5.span;
       let num4 = 0;
       if (result > 0) {
         let num5 = 1;
@@ -492,21 +517,21 @@ export function charForState(arg0, arg1, arg2, arg3) {
             str2 = "";
           }
           const charCodeAtResult = str2.charCodeAt(0);
-          if (charCodeAtResult >= closure_6) {
+          if (charCodeAtResult >= closure_4) {
             if (charCodeAtResult <= 90) {
               const _String3 = String;
               fromCharCodeResult = String.fromCharCode(tmp4 + (charCodeAtResult - tmp4 + 6) % 26);
             }
             return fromCharCodeResult;
           }
-          if (charCodeAtResult >= closure_7) {
+          if (charCodeAtResult >= closure_5) {
             if (charCodeAtResult <= 122) {
               const _String2 = String;
               fromCharCodeResult = String.fromCharCode(tmp6 + (charCodeAtResult - tmp6 + 6) % 26);
             }
           }
           fromCharCodeResult = str2;
-          if (charCodeAtResult >= closure_8) {
+          if (charCodeAtResult >= closure_6) {
             fromCharCodeResult = str2;
             if (charCodeAtResult <= 57) {
               const _String = String;
@@ -527,21 +552,21 @@ export function charForState(arg0, arg1, arg2, arg3) {
       str3 = "";
     }
     const charCodeAtResult1 = str3.charCodeAt(0);
-    if (charCodeAtResult1 >= closure_6) {
+    if (charCodeAtResult1 >= closure_4) {
       if (charCodeAtResult1 <= 90) {
         const _String6 = String;
         fromCharCodeResult1 = String.fromCharCode(tmp14 + (charCodeAtResult1 - tmp14 + 6) % 26);
       }
       return fromCharCodeResult1;
     }
-    if (charCodeAtResult1 >= closure_7) {
+    if (charCodeAtResult1 >= closure_5) {
       if (charCodeAtResult1 <= 122) {
         const _String5 = String;
         fromCharCodeResult1 = String.fromCharCode(tmp16 + (charCodeAtResult1 - tmp16 + 6) % 26);
       }
     }
     fromCharCodeResult1 = str3;
-    if (charCodeAtResult1 >= closure_8) {
+    if (charCodeAtResult1 >= closure_6) {
       fromCharCodeResult1 = str3;
       if (charCodeAtResult1 <= 57) {
         const _String4 = String;
@@ -556,6 +581,7 @@ export function dirtyRangeAt(arg0, arg1) {
     const ease = tmp9.ease;
     const result = (arg0 - tmp9.offset) / tmp9.span;
     let num3 = 0;
+    const tmp8 = closure_129_0;
     if (result > 0) {
       let tmp11 = num;
       if (result < num) {
@@ -565,7 +591,7 @@ export function dirtyRangeAt(arg0, arg1) {
     }
     const obj = { start: tmp2(0, tmp4(num3 * arg1)), end: null };
     if (typeof tmp5 === "function") {
-      const first = tmp6[0];
+      const first = tmp8[0];
       const ease2 = first.ease;
       const result1 = (arg0 - first.offset) / first.span;
       let num4 = 0;
@@ -589,48 +615,20 @@ export { bandEndAt };
 export { bandStartAt };
 export function glyphRampIndexAt(arg0, arg1, arg2) {
   if (typeof bandEndAt === "function") {
-    if (typeof waveFrontAt === "function") {
-      const ease = tmp4.ease;
-      const result = (arg1 - tmp4.offset) / tmp4.span;
-      let num2 = 0;
-      if (result > 0) {
-        let num3 = 1;
-        if (result < 1) {
-          num3 = result ** ease;
+    const result = closure_137_0(closure_137_1, arg1) * arg2;
+    if (typeof bandStartAt === "function") {
+      const result1 = closure_138_0(closure_138_1, arg1) * arg2;
+      const sum = arg0 + 0.5;
+      if (sum < result) {
+        if (sum >= result1) {
+          const _Math = Math;
+          const _Math2 = Math;
+          const _Math3 = Math;
+          const _Math4 = Math;
+          return Math.max(0, Math.min(Math.floor(Math.min(sum - result1, result - sum) / 4 * 6), 6));
         }
-        num2 = num3;
       }
-      const result1 = num2 * arg2;
-      if (typeof bandStartAt === "function") {
-        if (typeof tmp === "function") {
-          const ease2 = tmp11.ease;
-          const result2 = (arg1 - tmp11.offset) / tmp11.span;
-          let num4 = 0;
-          if (result2 > 0) {
-            let num5 = 1;
-            if (result2 < 1) {
-              num5 = result2 ** ease2;
-            }
-            num4 = num5;
-          }
-          const result3 = num4 * arg2;
-          const sum = arg0 + 0.5;
-          if (sum < result1) {
-            if (sum >= result3) {
-              const _Math = Math;
-              const _Math2 = Math;
-              const _Math3 = Math;
-              const _Math4 = Math;
-              return Math.max(0, Math.min(Math.floor(Math.min(sum - result3, result1 - sum) / 4 * 6), 6));
-            }
-          }
-          return -1;
-        } else {
-          throw new TypeError("Trying to call a non-function");
-        }
-      } else {
-        throw new TypeError("Trying to call a non-function");
-      }
+      return -1;
     } else {
       throw new TypeError("Trying to call a non-function");
     }

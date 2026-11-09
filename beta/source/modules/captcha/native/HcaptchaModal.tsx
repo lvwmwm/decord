@@ -1,18 +1,18 @@
-// Module ID: 19373
-// Function ID: 19374
+// Module ID: 19777
+// Function ID: 19778
 // Name: HcaptchaModal
-// Dependencies: [109, 19, 17, 2062, 1383, 1072, 21, 5014, 504, 1497, 1992, 1625, 1113, 6538, 6022, 6027, 575, 5624, 1375, 19372, 6980, 10768, 2]
+// Dependencies: [109, 19, 17, 2186, 1385, 1072, 21, 5140, 504, 1499, 2116, 1627, 1113, 6592, 6154, 6159, 575, 5751, 1377, 19776, 7043, 10887, 2]
 
-// Module 19373 (HcaptchaModal)
+// Module 19777 (HcaptchaModal)
 import Constants from "Constants" /* 1072 */;
-import SharedCaptchaUtils from "SharedCaptchaUtils" /* 6538 */;
+import SharedCaptchaUtils from "SharedCaptchaUtils" /* 6592 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import LocaleStore from "LocaleStore" /* 2062 */;
-import UserStore from "UserStore" /* 1383 */;
+import LocaleStore from "LocaleStore" /* 2186 */;
+import UserStore from "UserStore" /* 1385 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let navigation;
@@ -42,7 +42,7 @@ class HcaptchaModal {
     let obj = onMessage(504);
     const items = [UserStore];
     const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
-    let obj2 = onMessage(1497);
+    let obj2 = onMessage(1499);
     navigation = obj2.useNavigation();
     const routes = navigation.getState().routes;
     let tmp6 = routes.length > 0 && "auth" === routes[0].name;
@@ -51,9 +51,9 @@ class HcaptchaModal {
       if (stateFromStores != null) {
         prop = stateFromStores.ageVerificationStatus;
       }
-      tmp6 = prop === tmp3(1992).AgeVerificationStatusUkAndAusOnly.CLIENT_ONLY_PENDING;
+      tmp6 = prop === tmp3(2116).AgeVerificationStatusUkAndAusOnly.CLIENT_ONLY_PENDING;
     }
-    const rect = onPress(1625)();
+    const rect = onPress(1627)();
     const intl = tmp3(1113).intl;
     const items1 = [onMessage];
     const stringResult = intl.string(onMessage(1113).t.wsoPhr);
@@ -65,7 +65,7 @@ class HcaptchaModal {
         tmp(obj);
       }
     }, items1);
-    onPress(6022)(() => {
+    onPress(6154)(() => {
       callback();
       return true;
     });
@@ -73,13 +73,13 @@ class HcaptchaModal {
     const obj3 = { style: tmp2.container, children: items3 };
     if (tmp13Result) {
       const obj4 = { spacing: onPress(575).space.PX_16, align: "center", children: items2 };
-      const Stack = tmp3(6027).Stack;
-      const obj5 = { accessibilityRole: "header", variant: "heading-lg/bold", color: "mobile-text-heading-primary", style: tmp2.title, children: stringResult };
-      items2 = [closure_11(tmp3(5624).Text, obj5), ];
+      const Stack = tmp3(6159).Stack;
+      const obj5 = { accessibilityRole: "header", variant: "heading-lg/semibold", color: "mobile-text-heading-primary", style: tmp2.title, children: stringResult };
+      items2 = [closure_11(tmp3(5751).Text, obj5), ];
       let WHITE;
       const tmp16 = closure_11;
       const tmp17 = closure_6;
-      const tmp3Result = onMessage(1375);
+      const tmp3Result = onMessage(1377);
       if (tmp3Result.isAndroid()) {
         WHITE = tmp9(575).unsafe_rawColors.WHITE;
       }
@@ -90,17 +90,17 @@ class HcaptchaModal {
     items3 = [tmp13Result, , ];
     const obj7 = { style: absoluteFillObject.absoluteFillObject, children: closure_11(tmp9Result, obj8) };
     obj8 = { languageCode: LocaleStore.locale, onMessage };
-    tmp9Result = onPress(19372);
+    tmp9Result = onPress(19776);
     const merged = Object.assign(tmp);
     items3[1] = closure_11(closure_7, obj7);
     const obj9 = { style: items4, pointerEvents: "box-none", children: closure_11(PressableOpacity, obj11) };
     items4 = [tmp2.closeButtonContainer, { paddingTop: rect.top + onPress(575).space.PX_8, paddingLeft: rect.left + onPress(575).space.PX_16 }];
     obj11 = { accessibilityRole: "button", accessibilityLabel: intl2.string(onMessage(1113).t.cpT0Cq), onPress, style: tmp2.closeButtonHitArea, children: closure_11(XLargeIcon, obj12) };
     ({ paddingTop: rect.top + onPress(575).space.PX_8, paddingLeft: rect.left + onPress(575).space.PX_16 });
-    PressableOpacity = tmp3(6980).PressableOpacity;
+    PressableOpacity = tmp3(7043).PressableOpacity;
     intl2 = tmp3(1113).intl;
     obj12 = { color: onPress(575).colors.INTERACTIVE_ICON_DEFAULT };
-    XLargeIcon = tmp3(10768).XLargeIcon;
+    XLargeIcon = tmp3(10887).XLargeIcon;
     items3[2] = closure_11(closure_7, obj9);
     return closure_12(closure_7, obj3);
   }

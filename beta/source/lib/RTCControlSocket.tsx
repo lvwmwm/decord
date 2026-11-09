@@ -1,28 +1,28 @@
-// Module ID: 2005
-// Function ID: 2006
+// Module ID: 2129
+// Function ID: 2130
 // Name: RTCControlSocket
-// Dependencies: [1357, 2006, 5768, 1089, 5792, 559, 3, 5772, 15957, 5957, 1375, 38, 2]
+// Dependencies: [1359, 2130, 5897, 1089, 5921, 559, 3, 5901, 16275, 6089, 1377, 38, 2]
 
-// Module 2005 (RTCControlSocket)
+// Module 2129 (RTCControlSocket)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef38 from "module_38" /* 38 */;
 import BackoffDefault from "Backoff" /* 559 */;
 import DurationsDefault from "Durations" /* 1089 */;
-import PlatformUtils from "PlatformUtils" /* 1375 */;
-import TimeUtils from "TimeUtils" /* 5772 */;
-import DaveMessageValidator from "DaveMessageValidator" /* 5957 */;
-import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1357 */;
-import MediaEngineStore from "MediaEngineStore" /* 2006 */;
-import Constants from "Constants" /* 5768 */;
-import TypedEventEmitter from "TypedEventEmitter" /* 5792 */;
+import PlatformUtils from "PlatformUtils" /* 1377 */;
+import TimeUtils from "TimeUtils" /* 5901 */;
+import DaveMessageValidator from "DaveMessageValidator" /* 6089 */;
+import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1359 */;
+import MediaEngineStore from "MediaEngineStore" /* 2130 */;
+import Constants from "Constants" /* 5897 */;
+import TypedEventEmitter from "TypedEventEmitter" /* 5921 */;
 import size_mod from "module_2" /* 2 */;
 
 let hasOwnProperty;
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
-const f82857 = (name) => ({ name: name.name, type: name.type, priority: 1000 * name.priority, payload_type: name.payloadType, rtx_payload_type: name.rtxPayloadType, encode: name.encode, decode: name.decode });
-const f82858 = (type) => {
+const f84365 = (name) => ({ name: name.name, type: name.type, priority: 1000 * name.priority, payload_type: name.payloadType, rtx_payload_type: name.rtxPayloadType, encode: name.encode, decode: name.decode });
+const f84366 = (type) => {
   let tmp;
   const obj = { type: type.type, rid: type.rid, ssrc: type.ssrc, active: type.active, quality: type.quality, rtx_ssrc: type.rtxSsrc, max_bitrate: type.maxBitrate, max_framerate: type.maxFrameRate, max_resolution: tmp };
   tmp = undefined;
@@ -32,7 +32,7 @@ const f82858 = (type) => {
   }
   return obj;
 };
-const f82859 = (rid) => {
+const f84367 = (rid) => {
   let VIDEO;
   let tmp5;
   const type = rid.type;
@@ -107,13 +107,13 @@ class RTCControlSocket extends TypedEventEmitter {
       logger2.error("Connect called with already existing websocket");
       self.cleanupWebSocket((close) => close.close(4000));
     }
-    let obj = self(5772);
+    let obj = self(5901);
     self.connectionStartTime = obj.now();
     self.helloTimeout = setTimeout(() => {
       const obj = TimeUtils;
       self.handleClose(false, 0, "The connection timed out after " + obj.now() - self.connectionStartTime + " ms - did not receive OP_HELLO in time.");
     }, closure_13);
-    obj2 = self(15957);
+    obj2 = self(16275);
     obj3 = { location: "RTCControlSocket", supportsSfuUpdate: MediaEngineStore.supports(constants.UDP_ENDPOINT_UPDATE) };
     const webSocket = new WebSocket("" + self.url + "?v=" + obj2.getVoiceGatewayProtocolVersion(obj3));
     self.webSocket = webSocket;
@@ -228,7 +228,7 @@ class RTCControlSocket extends TypedEventEmitter {
         let mapped1;
         const emit = obj2.emit;
         if (streams != null) {
-          mapped1 = streams.map(f82859);
+          mapped1 = streams.map(f84367);
         }
         if (mapped1 == null) {
           mapped1 = [];
@@ -446,7 +446,7 @@ class RTCControlSocket extends TypedEventEmitter {
         tmp4 = tmp;
       }
     }
-    const tmp4Result = tmp4(5772);
+    const tmp4Result = tmp4(5901);
     const diff = tmp4Result.now() - self.connectionStartTime;
     ({ logger, heartbeatInterval } = self);
     const info = logger.info;
@@ -476,7 +476,7 @@ class RTCControlSocket extends TypedEventEmitter {
     let mapped;
     const emit = self.emit;
     if (streams != null) {
-      mapped = streams.map(f82859);
+      mapped = streams.map(f84367);
     }
     if (mapped == null) {
       mapped = [];
@@ -721,7 +721,7 @@ class RTCControlSocket extends TypedEventEmitter {
     const send = this.send;
     const IDENTIFY = obj.IDENTIFY;
     if (streamParameters != null) {
-      mapped = streamParameters.map(f82858);
+      mapped = streamParameters.map(f84366);
     }
     send(IDENTIFY, obj);
   }
@@ -814,7 +814,7 @@ class RTCControlSocket extends TypedEventEmitter {
         if (null != sdp.sdp) {
           if ("" !== sdp.sdp) {
             sdp = sdp.sdp;
-            obj3 = { codecs: codecs.map(f82857), rtc_connection_id: rTCConnectionId };
+            obj3 = { codecs: codecs.map(f84365), rtc_connection_id: rTCConnectionId };
             const merged = Object.assign(sdp);
             codecs = sdp.codecs;
             tmp = obj3;
@@ -836,7 +836,7 @@ class RTCControlSocket extends TypedEventEmitter {
       if (BooleanResult) {
         const obj4 = { address: null, port: null, mode: null };
         ({ address: obj2.address, port: obj2.port, mode: obj2.mode } = sdp);
-        const obj5 = { codecs: codecs1.map(f82857), rtc_connection_id: rTCConnectionId, experiments: _selectedExperiments };
+        const obj5 = { codecs: codecs1.map(f84365), rtc_connection_id: rTCConnectionId, experiments: _selectedExperiments };
         const merged1 = Object.assign(sdp);
         codecs1 = sdp.codecs;
         tmp = obj5;
@@ -850,13 +850,13 @@ class RTCControlSocket extends TypedEventEmitter {
     send(SELECT_PROTOCOL, obj9);
   }
   updateSession(codecs) {
-    const obj = { codecs: codecs.map(f82857) };
+    const obj = { codecs: codecs.map(f84365) };
     codecs = codecs.codecs;
     const send = this.send;
     const SESSION_UPDATE = obj.SESSION_UPDATE;
     send(SESSION_UPDATE, obj);
   }
-  speaking(_lastSentSpeakingStatus, packetDelay, _lastSentSSRC) {
+  speaking(dependencyMap, packetDelay, _lastSentSSRC) {
     let num = packetDelay;
     if (packetDelay === undefined) {
       num = 0;
@@ -865,12 +865,12 @@ class RTCControlSocket extends TypedEventEmitter {
     if (_lastSentSSRC === undefined) {
       num2 = 0;
     }
-    let BooleanResult = _lastSentSpeakingStatus;
+    let BooleanResult = dependencyMap;
     const send = this.send;
     const SPEAKING = obj.SPEAKING;
     if (this.serverVersion <= 3) {
       const _Boolean = Boolean;
-      BooleanResult = Boolean(_lastSentSpeakingStatus);
+      BooleanResult = Boolean(dependencyMap);
     }
     send(SPEAKING, { speaking: BooleanResult, delay: num, ssrc: num2 });
   }
@@ -881,7 +881,7 @@ class RTCControlSocket extends TypedEventEmitter {
     const send = this.send;
     const VIDEO = obj.VIDEO;
     if (arr != null) {
-      mapped = arr.map(f82858);
+      mapped = arr.map(f84366);
     }
     send(VIDEO, obj);
   }

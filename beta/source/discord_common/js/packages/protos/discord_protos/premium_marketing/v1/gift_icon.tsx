@@ -1,11 +1,11 @@
-// Module ID: 9638
-// Function ID: 9639
+// Module ID: 9728
+// Function ID: 9729
 // Name: gift_icon
-// Dependencies: [32, 1197, 9639, 2]
+// Dependencies: [32, 1197, 9729, 2]
 
-// Module 9638 (gift_icon)
+// Module 9728 (gift_icon)
 import _mod1197 from "module_1197" /* 1197 */;
-import gradient2 from "gradient" /* 9639 */;
+import gradient2 from "gradient" /* 9729 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -18,12 +18,12 @@ function T() {
 const MessageType = _mod1197.MessageType;
 class GiftIcon$Type extends MessageType {
   constructor() {
-    const items = [{ no: 1, name: "box_animation_url", kind: "scalar", T: 9 }, { no: 2, name: "trinket_animation_url", kind: "scalar", T: 9 }, { no: 3, name: "trinket_glow_animation_url", kind: "scalar", T: 9 }, { no: 4, name: "gradient", kind: "message", T }];
+    const items = [{ no: 1, name: "box_animation_url", kind: "scalar", T: 9 }, { no: 2, name: "trinket_animation_url", kind: "scalar", T: 9 }, { no: 3, name: "trinket_glow_animation_url", kind: "scalar", T: 9 }, { no: 4, name: "gradient", kind: "message", T }, { no: 5, name: "trinket_rive_animation_url", kind: "scalar", T: 9 }];
     const tmp2 = new tmp("discord_protos.premium_marketing.v1.GiftIcon", items, new.target);
     return tmp2;
   }
   create(partialSettings) {
-    const obj = { boxAnimationUrl: "", trinketAnimationUrl: "", trinketGlowAnimationUrl: "" };
+    const obj = { boxAnimationUrl: "", trinketAnimationUrl: "", trinketGlowAnimationUrl: "", trinketRiveAnimationUrl: "" };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1197.MESSAGE_TYPE, obj2);
@@ -55,6 +55,8 @@ class GiftIcon$Type extends MessageType {
         } else if (4 === tmp5) {
           let Gradient = gradient2.Gradient;
           obj.gradient = Gradient.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.gradient);
+        } else if (5 === tmp5) {
+          obj.trinketRiveAnimationUrl = pos.string();
         } else {
           let onRead = readUnknownField.readUnknownField;
           if ("throw" === onRead) {
@@ -103,6 +105,10 @@ class GiftIcon$Type extends MessageType {
       const internalBinaryWriteResult = internalBinaryWrite(gradient, tagResult3.fork(), writeUnknownFields);
       const joined = internalBinaryWriteResult.join();
     }
+    if ("" !== boxAnimationUrl.trinketRiveAnimationUrl) {
+      const tagResult4 = tag.tag(5, _mod1197.WireType.LengthDelimited);
+      tagResult4.string(boxAnimationUrl.trinketRiveAnimationUrl);
+    }
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
@@ -115,7 +121,7 @@ class GiftIcon$Type extends MessageType {
   }
 }
 const prototype = GiftIcon$Type.prototype;
-let items = [{ no: 1, name: "box_animation_url", kind: "scalar", T: 9 }, { no: 2, name: "trinket_animation_url", kind: "scalar", T: 9 }, { no: 3, name: "trinket_glow_animation_url", kind: "scalar", T: 9 }, { no: 4, name: "gradient", kind: "message", T }];
+let items = [{ no: 1, name: "box_animation_url", kind: "scalar", T: 9 }, { no: 2, name: "trinket_animation_url", kind: "scalar", T: 9 }, { no: 3, name: "trinket_glow_animation_url", kind: "scalar", T: 9 }, { no: 4, name: "gradient", kind: "message", T }, { no: 5, name: "trinket_rive_animation_url", kind: "scalar", T: 9 }];
 const prototype1 = new prototype("discord_protos.premium_marketing.v1.GiftIcon", items, tmp, GiftIcon$Type, prototype, items, require);
 let result = size.fileFinishedImporting("../discord_common/js/packages/protos/discord_protos/premium_marketing/v1/gift_icon.tsx");
 

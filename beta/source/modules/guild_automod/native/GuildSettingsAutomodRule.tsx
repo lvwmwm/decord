@@ -1,23 +1,23 @@
-// Module ID: 19685
-// Function ID: 19686
+// Module ID: 20095
+// Function ID: 20096
 // Name: GuildSettingsAutomodRule
-// Dependencies: [5, 32, 19, 19667, 19669, 13292, 21, 5014, 575, 1497, 18916, 4839, 19670, 5964, 1113, 6998, 7558, 8177, 6027, 5624, 7082, 7369, 19686, 19697, 19700, 7060, 6975, 13297, 5711, 6446, 7358, 5606, 2]
+// Dependencies: [5, 32, 19, 20077, 20079, 13525, 21, 5140, 575, 1499, 19291, 4965, 20080, 6096, 1113, 7064, 7630, 8246, 6159, 5751, 7148, 7429, 20096, 20107, 20110, 7126, 7038, 13530, 5836, 6579, 7418, 5734, 2]
 // Exports: default
 
-// Module 19685 (GuildSettingsAutomodRule)
+// Module 20095 (GuildSettingsAutomodRule)
 import nativeDefault from "native" /* 575 */;
-import ToastUtils from "ToastUtils" /* 5711 */;
-import NavigatorHeader2 from "NavigatorHeader" /* 6998 */;
-import ClipboardUtils from "ClipboardUtils" /* 7358 */;
-import Constants from "Constants" /* 13292 */;
-import AutomodStore from "AutomodStore" /* 19667 */;
-import AutomodRuleUtils from "AutomodRuleUtils" /* 19670 */;
+import ToastUtils from "ToastUtils" /* 5836 */;
+import NavigatorHeader2 from "NavigatorHeader" /* 7064 */;
+import ClipboardUtils from "ClipboardUtils" /* 7418 */;
+import Constants from "Constants" /* 13525 */;
+import AutomodStore from "AutomodStore" /* 20077 */;
+import AutomodRuleUtils from "AutomodRuleUtils" /* 20080 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildSettingsAutomodRuleStore from "GuildSettingsAutomodRuleStore" /* 19669 */;
+import GuildSettingsAutomodRuleStore from "GuildSettingsAutomodRuleStore" /* 20079 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3, c5, c6, closure_3, navigation;
@@ -121,7 +121,7 @@ export default function GuildSettingsAutomodRule(guildId) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -159,7 +159,7 @@ export default function GuildSettingsAutomodRule(guildId) {
             }
           }
           c3 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp19) {
         c3 = 3;
@@ -265,7 +265,7 @@ export default function GuildSettingsAutomodRule(guildId) {
       Stack = tmp2(tmp3[18]).Stack;
       let tmp30Result = null != errorMessage;
       if (tmp30Result) {
-        const obj6 = { variant: "text-sm/normal", color: "text-feedback-critical", accessibilityLiveRegion: "polite", children: errorMessage };
+        const obj6 = { variant: "body-sm/normal", color: "text-feedback-critical", accessibilityLiveRegion: "polite", children: errorMessage };
         tmp30Result = tmp30(tmp2(tmp3[19]).Text, obj6);
       }
       items6 = [tmp30Result, , , , , , ];
@@ -378,7 +378,7 @@ export default function GuildSettingsAutomodRule(guildId) {
                             const obj2 = { value, done: true };
                             return obj2;
                           } else {
-                            return { value: "HermesInternal", done: "HermesInternal" };
+                            return { value: "HermesInternal", done: null };
                           }
                         } else {
                           let c4;
@@ -432,7 +432,7 @@ export default function GuildSettingsAutomodRule(guildId) {
                               c4(closure_130_1, closure_0);
                               closure_1.pop();
                               c6 = 3;
-                              return { value: "HermesInternal", done: "HermesInternal" };
+                              return { value: "HermesInternal", done: null };
                             }
                           } catch (tmp37) {
                             closure_3 = tmp37;

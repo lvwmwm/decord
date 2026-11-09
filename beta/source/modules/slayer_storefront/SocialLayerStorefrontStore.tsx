@@ -1,12 +1,12 @@
-// Module ID: 7406
-// Function ID: 7407
+// Module ID: 7470
+// Function ID: 7471
 // Name: SocialLayerStorefrontStore
-// Dependencies: [2062, 502, 504, 572, 2]
+// Dependencies: [2186, 502, 504, 572, 2]
 
-// Module 7406 (SocialLayerStorefrontStore)
+// Module 7470 (SocialLayerStorefrontStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import LocaleStore from "LocaleStore" /* 2062 */;
+import LocaleStore from "LocaleStore" /* 2186 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import size from "module_2" /* 2 */;
 
@@ -58,19 +58,19 @@ class SocialLayerStorefrontStore extends Store {
   getLoadedStorefrontApplicationIds() {
     return Object.keys(obj12);
   }
-  getStorefrontFetchState(type) {
+  getStorefrontFetchState(guildOrApplication) {
     let applicationId;
     let guildId;
     let tmp3;
-    if ("guild" === type.type) {
-      guildId = type.guildId;
+    if ("guild" === guildOrApplication.type) {
+      guildId = guildOrApplication.guildId;
     } else {
-      guildId = closure_18[type.applicationId];
+      guildId = closure_18[guildOrApplication.applicationId];
     }
-    if ("guild" === type.type) {
-      applicationId = closure_17[type.guildId];
+    if ("guild" === guildOrApplication.type) {
+      applicationId = closure_17[guildOrApplication.guildId];
     } else {
-      applicationId = type.applicationId;
+      applicationId = guildOrApplication.applicationId;
     }
     if (null != guildId) {
       tmp3 = obj11[guildId];
@@ -403,7 +403,7 @@ obj = {
       const merged7 = Object.assign(obj12);
       obj12 = obj8;
     } else {
-      obj = { state: "error", fetchedAt: Date.now(), storefront: "r" };
+      obj = { state: "error", fetchedAt: Date.now(), storefront: "o" };
       const _Date = Date;
       if (null != guildId) {
         const obj9 = {};

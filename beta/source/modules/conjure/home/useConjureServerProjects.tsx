@@ -1,11 +1,11 @@
-// Module ID: 12984
-// Function ID: 12985
+// Module ID: 13199
+// Function ID: 13200
 // Name: useConjureServerProjects
-// Dependencies: [6844, 12985, 504, 2]
+// Dependencies: [6899, 13200, 504, 2]
 // Exports: conjureProjectPointsAtGuild, default
 
-// Module 12984 (useConjureServerProjects)
-import ConjureProjectStore from "ConjureProjectStore" /* 6844 */;
+// Module 13199 (useConjureServerProjects)
+import ConjureProjectStore from "ConjureProjectStore" /* 6899 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -40,6 +40,6 @@ export default function useConjureServerProjects(arg0) {
   obj4 = require("get initialized");
   return obj;
 };
-export function conjureProjectPointsAtGuild(guild_id, guildId) {
-  return guild_id.guild_id === guildId || guild_id.preview_guild_id === guildId;
+export function conjureProjectPointsAtGuild(guild_id, arg1) {
+  return guild_id.guild_id === arg1 || guild_id.preview_guild_id === arg1;
 }

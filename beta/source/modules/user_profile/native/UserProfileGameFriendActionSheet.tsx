@@ -1,21 +1,21 @@
-// Module ID: 14919
-// Function ID: 14920
+// Module ID: 15152
+// Function ID: 15153
 // Name: UserProfileGameFriendActionSheet
-// Dependencies: [5, 32, 19, 17, 4956, 1072, 21, 5014, 575, 14195, 7368, 7054, 1187, 5624, 14920, 7330, 6041, 7488, 5711, 5258, 7366, 7321, 1113, 2]
+// Dependencies: [5, 32, 19, 17, 5082, 1072, 21, 5140, 575, 12554, 7428, 7120, 1187, 5751, 15153, 7391, 6173, 7552, 5836, 5374, 7426, 7382, 1113, 2]
 // Exports: default
 
-// Module 14919 (UserProfileGameFriendActionSheet)
+// Module 15152 (UserProfileGameFriendActionSheet)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import UserProfileAlertUtils from "UserProfileAlertUtils" /* 14195 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
+import UserProfileAlertUtils from "UserProfileAlertUtils" /* 12554 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import RelationshipStore from "RelationshipStore" /* 4956 */;
+import RelationshipStore from "RelationshipStore" /* 5082 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 let _undefined;
@@ -58,7 +58,7 @@ function GameFriendApplicationRow(application) {
     str = "";
   }
   items1 = [closure_10(Icon, obj3, application.id), ];
-  const obj4 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: application.name };
+  const obj4 = { variant: "body-md/semibold", color: "mobile-text-heading-primary", children: application.name };
   items1[1] = closure_10(tmp4(tmp5[13]).Text, obj4);
   return closure_10(ActionSheetRow, obj, application.id);
 }
@@ -135,7 +135,7 @@ export default function UserProfileGameFriendActionSheet(user) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -185,7 +185,7 @@ export default function UserProfileGameFriendActionSheet(user) {
           c3 = 0;
           closure_128_5(false);
           _undefined = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp30) {
         memo = tmp30;

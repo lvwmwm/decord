@@ -1,38 +1,38 @@
-// Module ID: 6974
-// Function ID: 6975
+// Module ID: 7037
+// Function ID: 7038
 // Name: TableCheckboxRow
-// Dependencies: [19, 21, 5095, 5187, 5082, 6975, 6989, 2]
+// Dependencies: [19, 21, 1652, 5200, 7038, 7052, 7055, 2]
 // Exports: TableCheckboxRow
 
-// Module 6974 (TableCheckboxRow)
+// Module 7037 (TableCheckboxRow)
 import Fragment from "Fragment" /* 21 */;
-import react_native from "react-native" /* 5082 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
-import native from "native" /* 5187 */;
-import TableRow2 from "TableRow" /* 6975 */;
+import _mod1652 from "module_1652" /* 1652 */;
+import react_native from "react-native" /* 5200 */;
+import TableRow2 from "TableRow" /* 7038 */;
+import TableRowBadge from "TableRowBadge" /* 7052 */;
+import FormCheckbox from "FormCheckbox" /* 7055 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
-let tmp2;
-const FormCheckbox = tmp2(6989);
 const jsx = Fragment.jsx;
 let result = size.fileFinishedImporting("design/components/TableRow/native/TableCheckboxRow.native.tsx");
 
 export function TableCheckboxRow(checked) {
   let accessibilityRole;
   let accessibilityState;
+  let badge;
   let disabled;
   let label;
   let subLabel;
   checked = checked.checked;
-  ({ label, subLabel, disabled } = checked);
+  ({ label, subLabel, badge, disabled } = checked);
   if (disabled === undefined) {
     disabled = false;
   }
   const onPress = checked.onPress;
   const accessibilityHint = checked.accessibilityHint;
-  const merged = Object.assign(checked, Object.assign({ checked: 0, label: 0, subLabel: 0, disabled: 0, onPress: 0, accessibilityHint: 0 }));
-  const obj = ReanimatedRexport;
+  const merged = Object.assign(checked, Object.assign({ checked: 0, label: 0, subLabel: 0, badge: 0, disabled: 0, onPress: 0, accessibilityHint: 0 }));
+  const obj = _mod1652;
   const sharedValue = obj.useSharedValue(0);
   const items = [sharedValue];
   const items1 = [onPress, sharedValue, checked];
@@ -43,18 +43,11 @@ export function TableCheckboxRow(checked) {
     const result = sharedValue.set(0);
     onPress(!checked);
   }, items1);
-  const obj2 = native;
-  const nodeText = obj2.getNodeText(label);
-  const obj3 = native;
-  const nodeText1 = obj3.getNodeText(subLabel);
-  const obj4 = react_native;
-  const checkboxA11yNative = obj4.useCheckboxA11yNative({ checked, disabled });
+  const obj2 = react_native;
+  const checkboxA11yNative = obj2.useCheckboxA11yNative({ checked, disabled });
   ({ accessibilityRole, accessibilityState } = checkboxA11yNative);
   const TableRow = TableRow2.TableRow;
   const merged1 = Object.assign(merged);
-  let str = nodeText1;
-  if (nodeText1 == null) {
-    str = "";
-  }
-  return <TableRow arrow={false} label={label} subLabel={subLabel} disabled={disabled} accessibilityState={accessibilityState} accessible accessibilityRole={accessibilityRole} accessibilityLabel={"" + nodeText + ", " + str} accessibilityHint={accessibilityHint} onPressIn={callback} onPress={callback1} trailing={jsx(FormCheckbox.FormCheckbox, { checked })} />;
+  const obj4 = TableRowBadge;
+  return <TableRow arrow={false} label={label} subLabel={subLabel} badge={badge} disabled={disabled} accessibilityState={accessibilityState} accessible accessibilityRole={accessibilityRole} accessibilityLabel={obj4.getTableRowAccessibilityLabel(label, subLabel, badge)} accessibilityHint={accessibilityHint} onPressIn={callback} onPress={callback1} trailing={jsx(FormCheckbox.FormCheckbox, { checked })} />;
 }

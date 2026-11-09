@@ -1,14 +1,14 @@
-// Module ID: 18954
-// Function ID: 18955
+// Module ID: 19329
+// Function ID: 19330
 // Name: ContextMenuCommandAppScreen
-// Dependencies: [19, 21, 5014, 575, 5607, 7217, 18953, 7223, 2]
+// Dependencies: [19, 21, 5140, 575, 5735, 7281, 19328, 7287, 2]
 // Exports: default
 
-// Module 18954 (ContextMenuCommandAppScreen)
+// Module 19329 (ContextMenuCommandAppScreen)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;

@@ -1,9 +1,9 @@
-// Module ID: 14763
-// Function ID: 14764
+// Module ID: 14999
+// Function ID: 15000
 // Name: TrustedURLs
 // Dependencies: [2]
 
-// Module 14763 (TrustedURLs)
+// Module 14999 (TrustedURLs)
 import size from "module_2" /* 2 */;
 
 const items = [...new Set(["https://account.riotgames.com/#connected-accounts", "https://aes.sgp.pvp.net/providers/discord/link/v1", "https://aes.sgp.pvp.net/providers/discord/link/v1?origin=Discord", "https://marvelrivals.com/discord", "https://wutheringwaves-dc.kurogames-global.com/", "https://id.embark.games/id/connected-platforms", "https://myaccount.ea.com/am/ui/connected-accounts", "https://playbpsr.com/discord_bind", "https://infinitynikki.infoldgames.com/proj/dcbd.html", "https://vrchat.com/home/profile", "https://account.1047games.com/", "https://discord.facepunch.com/", "https://account.battle.net/connections/discord"])];

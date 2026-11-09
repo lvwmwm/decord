@@ -1,14 +1,14 @@
-// Module ID: 7127
-// Function ID: 7128
+// Module ID: 7198
+// Function ID: 7199
 // Name: MobilePhoneIcon
-// Dependencies: [19, 21, 575, 5716, 7128, 2]
+// Dependencies: [19, 21, 575, 5841, 7199, 2]
 // Exports: MobilePhoneIcon
 
-// Module 7127 (MobilePhoneIcon)
+// Module 7198 (MobilePhoneIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5716 */;
-import AssetRegistry from "AssetRegistry" /* 7128 */;
+import BaseIconImage2 from "BaseIconImage" /* 5841 */;
+import AssetRegistry from "AssetRegistry" /* 7199 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

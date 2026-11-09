@@ -1,22 +1,22 @@
-// Module ID: 11280
-// Function ID: 11281
+// Module ID: 11420
+// Function ID: 11421
 // Name: WasThisHelpfulSection
-// Dependencies: [19, 17, 10804, 11256, 21, 5014, 575, 563, 11270, 5712, 1113, 11281, 11269, 5624, 1187, 11283, 11284, 2]
+// Dependencies: [19, 17, 10923, 11396, 21, 5140, 575, 563, 11410, 5837, 1113, 11421, 11409, 5751, 1187, 11423, 11424, 2]
 // Exports: default
 
-// Module 11280 (WasThisHelpfulSection)
+// Module 11420 (WasThisHelpfulSection)
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5712 */;
-import ChannelSafetyWarningsStore2 from "ChannelSafetyWarningsStore" /* 10804 */;
-import SafetyWarningUtils from "SafetyWarningUtils" /* 11269 */;
-import ChannelSafetyWarningsActionCreators from "ChannelSafetyWarningsActionCreators" /* 11270 */;
-import ShieldIcon from "ShieldIcon" /* 11281 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5837 */;
+import ChannelSafetyWarningsStore2 from "ChannelSafetyWarningsStore" /* 10923 */;
+import SafetyWarningUtils from "SafetyWarningUtils" /* 11409 */;
+import ChannelSafetyWarningsActionCreators from "ChannelSafetyWarningsActionCreators" /* 11410 */;
+import ShieldIcon from "ShieldIcon" /* 11421 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import Constants from "Constants" /* 11256 */;
+import Constants from "Constants" /* 11396 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 const ChannelSafetyWarningsStore = ChannelSafetyWarningsStore2;
@@ -109,7 +109,7 @@ export default function WasThisHelpfulSection(channelId) {
   }, items3);
   const tmp7 = closure_11;
   let obj2 = { style: tmp.container, children: items4 };
-  let obj3 = { variant: "text-sm/normal", color: "mobile-text-heading-primary", children: intl.string(channelId(senderId[10]).t.L84yVm) };
+  let obj3 = { variant: "body-sm/normal", color: "mobile-text-heading-primary", children: intl.string(channelId(senderId[10]).t.L84yVm) };
   const Text = channelId(senderId[13]).Text;
   intl = channelId(senderId[10]).intl;
   items4 = [closure_10(Text, obj3), ];

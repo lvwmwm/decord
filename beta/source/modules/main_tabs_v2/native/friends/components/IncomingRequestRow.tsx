@@ -1,20 +1,20 @@
-// Module ID: 18838
-// Function ID: 18839
+// Module ID: 19202
+// Function ID: 19203
 // Name: IncomingRequestRow
-// Dependencies: [19, 5015, 2038, 10727, 1072, 21, 5095, 563, 1113, 5068, 18096, 14203, 10738, 18509, 18839, 2]
+// Dependencies: [19, 5141, 2162, 10846, 1072, 21, 1652, 563, 1113, 5194, 18438, 14440, 10857, 18864, 19203, 2]
 // Exports: ConnectedIncomingGameFriendRequestRow, IncomingFriendRequestRow
 
-// Module 18838 (IncomingRequestRow)
+// Module 19202 (IncomingRequestRow)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import intl6 from "intl" /* 1113 */;
-import UserUtilsDefault from "UserUtils" /* 5068 */;
-import UserRowConstants from "UserRowConstants" /* 10727 */;
-import ApplicationIconAndNameDefault from "ApplicationIconAndName" /* 14203 */;
-import AddFriendsScreenUtils from "AddFriendsScreenUtils" /* 18096 */;
+import UserUtilsDefault from "UserUtils" /* 5194 */;
+import UserRowConstants from "UserRowConstants" /* 10846 */;
+import ApplicationIconAndNameDefault from "ApplicationIconAndName" /* 14440 */;
+import AddFriendsScreenUtils from "AddFriendsScreenUtils" /* 18438 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5015 */;
-import ApplicationStore from "ApplicationStore" /* 2038 */;
+import AccessibilityStore from "AccessibilityStore" /* 5141 */;
+import ApplicationStore from "ApplicationStore" /* 2162 */;
 import size from "module_2" /* 2 */;
 
 function IncomingRequestRow(user) {
@@ -93,7 +93,7 @@ function IncomingRequestRow(user) {
   const memo1 = onAcceptIncomingRequest.useMemo(() => {
     let str;
     if (null != stateFromStores1) {
-      str = jsx(ApplicationIconAndNameDefault, { application: stateFromStores1, textVariant: "text-xs/medium", iconSize: 12 }, tmp.id);
+      str = jsx(ApplicationIconAndNameDefault, { application: stateFromStores1, textVariant: "body-xs/medium", iconSize: 12 }, tmp.id);
     } else {
       str = "";
       if (null == applicationId) {
@@ -120,7 +120,7 @@ function IncomingGameFriendRequestRow(arg0) {
   const intl2 = application(1113).intl;
   const obj3 = {
     applicationNameHook() {
-      return jsx(ApplicationIconAndNameDefault, { application, textVariant: "text-xs/medium", iconSize: 12 }, application.id);
+      return jsx(ApplicationIconAndNameDefault, { application, textVariant: "body-xs/medium", iconSize: 12 }, application.id);
     }
   };
   const intl3 = application(1113).intl;

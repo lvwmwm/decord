@@ -286,17 +286,17 @@ obj13 = {
     resolve(enabledExperiments) {
       enabledExperiments = enabledExperiments.enabledExperiments;
       if (0 === enabledExperiments.length) {
-        return "text-xs/medium";
+        return "body-xs/medium";
       } else {
         const iter = enabledExperiments[Symbol.iterator]();
         while (iter !== undefined) {
           if ("mobile-visual-refresh" === iter.next()) {
             iter.return();
-            let str2 = "text-sm/medium";
-            return "text-sm/medium";
+            let str2 = "body-sm/medium";
+            return "body-sm/medium";
           }
         }
-        return "text-xs/medium";
+        return "body-xs/medium";
       }
     }
   },
@@ -304,7 +304,7 @@ obj13 = {
     resolve(enabledExperiments) {
       enabledExperiments = enabledExperiments.enabledExperiments;
       if (0 === enabledExperiments.length) {
-        return "redesign/heading-18/bold";
+        return "heading-md/semibold";
       } else {
         const iter = enabledExperiments[Symbol.iterator]();
         while (iter !== undefined) {
@@ -314,7 +314,7 @@ obj13 = {
             return "heading-lg/semibold";
           }
         }
-        return "redesign/heading-18/bold";
+        return "heading-md/semibold";
       }
     }
   },
@@ -1403,7 +1403,7 @@ obj13 = {
     resolve(enabledExperiments) {
       enabledExperiments = enabledExperiments.enabledExperiments;
       if (0 === enabledExperiments.length) {
-        return "heading-md/bold";
+        return "heading-sm/semibold";
       } else {
         const iter = enabledExperiments[Symbol.iterator]();
         while (iter !== undefined) {
@@ -1413,7 +1413,7 @@ obj13 = {
             return "heading-lg/semibold";
           }
         }
-        return "heading-md/bold";
+        return "heading-sm/semibold";
       }
     }
   },
@@ -1523,17 +1523,17 @@ obj13 = {
     resolve(enabledExperiments) {
       enabledExperiments = enabledExperiments.enabledExperiments;
       if (0 === enabledExperiments.length) {
-        return "text-md/medium";
+        return "body-md/medium";
       } else {
         const iter = enabledExperiments[Symbol.iterator]();
         while (iter !== undefined) {
           if ("mobile-visual-refresh" === iter.next()) {
             iter.return();
-            let str2 = "text-md/normal";
-            return "text-md/normal";
+            let str2 = "body-md/normal";
+            return "body-md/normal";
           }
         }
-        return "text-md/medium";
+        return "body-md/medium";
       }
     }
   },
@@ -1541,17 +1541,17 @@ obj13 = {
     resolve(enabledExperiments) {
       enabledExperiments = enabledExperiments.enabledExperiments;
       if (0 === enabledExperiments.length) {
-        return "text-sm/medium";
+        return "body-sm/medium";
       } else {
         const iter = enabledExperiments[Symbol.iterator]();
         while (iter !== undefined) {
           if ("mobile-visual-refresh" === iter.next()) {
             iter.return();
-            let str2 = "text-md/normal";
-            return "text-md/normal";
+            let str2 = "body-md/normal";
+            return "body-md/normal";
           }
         }
-        return "text-sm/medium";
+        return "body-sm/medium";
       }
     }
   },
@@ -1559,17 +1559,17 @@ obj13 = {
     resolve(enabledExperiments) {
       enabledExperiments = enabledExperiments.enabledExperiments;
       if (0 === enabledExperiments.length) {
-        return "text-xs/medium";
+        return "body-xs/medium";
       } else {
         const iter = enabledExperiments[Symbol.iterator]();
         while (iter !== undefined) {
           if ("mobile-visual-refresh" === iter.next()) {
             iter.return();
-            let str2 = "text-xs/normal";
-            return "text-xs/normal";
+            let str2 = "body-xs/normal";
+            return "body-xs/normal";
           }
         }
-        return "text-xs/medium";
+        return "body-xs/medium";
       }
     }
   },
@@ -1767,17 +1767,17 @@ obj13 = {
     resolve(enabledExperiments) {
       enabledExperiments = enabledExperiments.enabledExperiments;
       if (0 === enabledExperiments.length) {
-        return "text-xs/semibold";
+        return "body-xs/semibold";
       } else {
         const iter = enabledExperiments[Symbol.iterator]();
         while (iter !== undefined) {
           if ("mobile-visual-refresh" === iter.next()) {
             iter.return();
-            let str2 = "text-xs/medium";
-            return "text-xs/medium";
+            let str2 = "body-xs/medium";
+            return "body-xs/medium";
           }
         }
-        return "text-xs/semibold";
+        return "body-xs/semibold";
       }
     }
   },
@@ -1863,17 +1863,17 @@ obj13 = {
     resolve(enabledExperiments) {
       enabledExperiments = enabledExperiments.enabledExperiments;
       if (0 === enabledExperiments.length) {
-        return "redesign/channel-title/semibold";
+        return "heading-sm/semibold";
       } else {
         const iter = enabledExperiments[Symbol.iterator]();
         while (iter !== undefined) {
           if ("mobile-visual-refresh" === iter.next()) {
             iter.return();
-            let str2 = "text-md/medium";
-            return "text-md/medium";
+            let str2 = "body-md/medium";
+            return "body-md/medium";
           }
         }
-        return "redesign/channel-title/semibold";
+        return "heading-sm/semibold";
       }
     }
   },
@@ -2151,17 +2151,17 @@ obj13 = {
     resolve(enabledExperiments) {
       enabledExperiments = enabledExperiments.enabledExperiments;
       if (0 === enabledExperiments.length) {
-        return "text-sm/medium";
+        return "body-sm/medium";
       } else {
         const iter = enabledExperiments[Symbol.iterator]();
         while (iter !== undefined) {
           if ("mobile-visual-refresh" === iter.next()) {
             iter.return();
-            let str2 = "text-sm/normal";
-            return "text-sm/normal";
+            let str2 = "body-sm/normal";
+            return "body-sm/normal";
           }
         }
-        return "text-sm/medium";
+        return "body-sm/medium";
       }
     }
   },
@@ -2196,17 +2196,17 @@ obj13 = {
     resolve(enabledExperiments) {
       enabledExperiments = enabledExperiments.enabledExperiments;
       if (0 === enabledExperiments.length) {
-        return "text-md/semibold";
+        return "body-md/semibold";
       } else {
         const iter = enabledExperiments[Symbol.iterator]();
         while (iter !== undefined) {
           if ("mobile-visual-refresh" === iter.next()) {
             iter.return();
-            let str2 = "text-md/medium";
-            return "text-md/medium";
+            let str2 = "body-md/medium";
+            return "body-md/medium";
           }
         }
-        return "text-md/semibold";
+        return "body-md/semibold";
       }
     }
   },
@@ -2253,17 +2253,17 @@ obj13 = {
     resolve(enabledExperiments) {
       enabledExperiments = enabledExperiments.enabledExperiments;
       if (0 === enabledExperiments.length) {
-        return "text-xxs/semibold";
+        return "footnote/semibold";
       } else {
         const iter = enabledExperiments[Symbol.iterator]();
         while (iter !== undefined) {
           if ("mobile-visual-refresh" === iter.next()) {
             iter.return();
-            let str2 = "text-xs/medium";
-            return "text-xs/medium";
+            let str2 = "body-xs/medium";
+            return "body-xs/medium";
           }
         }
-        return "text-xxs/semibold";
+        return "footnote/semibold";
       }
     }
   },
@@ -2271,17 +2271,17 @@ obj13 = {
     resolve(enabledExperiments) {
       enabledExperiments = enabledExperiments.enabledExperiments;
       if (0 === enabledExperiments.length) {
-        return "text-sm/semibold";
+        return "body-sm/semibold";
       } else {
         const iter = enabledExperiments[Symbol.iterator]();
         while (iter !== undefined) {
           if ("mobile-visual-refresh" === iter.next()) {
             iter.return();
-            let str2 = "text-sm/medium";
-            return "text-sm/medium";
+            let str2 = "body-sm/medium";
+            return "body-sm/medium";
           }
         }
-        return "text-sm/semibold";
+        return "body-sm/semibold";
       }
     }
   },
@@ -2372,22 +2372,22 @@ obj13 = {
     resolve(enabledExperiments) {
       enabledExperiments = enabledExperiments.enabledExperiments;
       if (0 === enabledExperiments.length) {
-        return "text-sm/semibold";
+        return "body-sm/semibold";
       } else {
         const iter = enabledExperiments[Symbol.iterator]();
         const nextResult = iter.next();
         while (iter !== undefined) {
           if ("mobile-visual-refresh" === nextResult) {
             iter.return();
-            let str4 = "text-xs/semibold";
-            return "text-xs/semibold";
+            let str4 = "body-xs/semibold";
+            return "body-xs/semibold";
           } else if ("mobile-visual-refresh-floating" === nextResult) {
             iter.return();
-            let str3 = "text-sm/semibold";
-            return "text-sm/semibold";
+            let str3 = "body-sm/semibold";
+            return "body-sm/semibold";
           }
         }
-        return "text-sm/semibold";
+        return "body-sm/semibold";
       }
     }
   },

@@ -1,21 +1,21 @@
-// Module ID: 16655
-// Function ID: 16656
+// Module ID: 16977
+// Function ID: 16978
 // Name: TwoFASetupLanding
-// Dependencies: [19, 17, 21, 5014, 16656, 16652, 7292, 5717, 16657, 5624, 1113, 2]
+// Dependencies: [19, 17, 21, 5140, 16978, 16974, 7355, 5842, 16979, 5751, 1113, 2]
 // Exports: default
 
-// Module 16655 (TwoFASetupLanding)
+// Module 16977 (TwoFASetupLanding)
 import react_native from "react-native" /* 17 */;
 import intl3 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import FastImageDefault from "FastImage" /* 5717 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7292 */;
-import TwoFASetupModal from "TwoFASetupModal" /* 16652 */;
-import TwoFASetupStyles from "TwoFASetupStyles" /* 16656 */;
-import AssetRegistryDefault from "AssetRegistry" /* 16657 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import FastImageDefault from "FastImage" /* 5842 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7355 */;
+import TwoFASetupModal from "TwoFASetupModal" /* 16974 */;
+import TwoFASetupStyles from "TwoFASetupStyles" /* 16978 */;
+import AssetRegistryDefault from "AssetRegistry" /* 16979 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -44,11 +44,11 @@ export default function TwoFASetupLanding() {
   const obj5 = { source: AssetRegistryDefault, style: tmp.authIcon };
   const tmp3 = FastImageDefault;
   items = [React3(tmp3, obj5), , ];
-  const obj6 = { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl.string(intl3.t["9E74Dx"]) };
+  const obj6 = { variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: intl.string(intl3.t["9E74Dx"]) };
   const Heading = Text_Text.Heading;
   intl = intl3.intl;
   items[1] = React3(Heading, obj6);
-  const obj7 = { variant: "text-md/normal", style: items1, children: intl2.format(intl3.t.A7Aehw, { googleAuthURL: "https://support.google.com/accounts/answer/1066447?hl=en", authyURL: "https://www.authy.com/" }) };
+  const obj7 = { variant: "body-md/normal", style: items1, children: intl2.format(intl3.t.A7Aehw, { googleAuthURL: "https://support.google.com/accounts/answer/1066447?hl=en", authyURL: "https://www.authy.com/" }) };
   items1 = [, ];
   ({ modalBody: arr2[0], text: arr2[1] } = twoFASetupStyles);
   const Text = Text_Text.Text;

@@ -1,18 +1,18 @@
-// Module ID: 9096
-// Function ID: 9097
+// Module ID: 9176
+// Function ID: 9177
 // Name: GuildEventRecurrences
-// Dependencies: [19, 17, 21, 5014, 575, 9097, 5624, 1113, 11, 9099, 5634, 2]
+// Dependencies: [19, 17, 21, 5140, 575, 9177, 5751, 1113, 11, 9179, 5758, 2]
 // Exports: default
 
-// Module 9096 (GuildEventRecurrences)
+// Module 9176 (GuildEventRecurrences)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import nativeDefault from "native" /* 575 */;
-import useGuildEventRecurrencesDefault from "useGuildEventRecurrences" /* 9097 */;
-import GuildEventRecurrenceDefault from "GuildEventRecurrence" /* 9099 */;
+import useGuildEventRecurrencesDefault from "useGuildEventRecurrences" /* 9177 */;
+import GuildEventRecurrenceDefault from "GuildEventRecurrence" /* 9179 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -48,9 +48,9 @@ export default function GuildEventRecurrences(guildEventId) {
   const tmp2 = closure_8();
   ({ recurrenceStartTimes, canViewMoreRecurrences, updateRecurrenceStartTimes: c4 } = useGuildEventRecurrencesDefault(guildEventId, guildId, recurrenceRule));
   let obj = { style: tmp2.container, children: items };
-  let obj2 = { variant: "heading-md/semibold", children: intl.string(guildEventId(1113).t["D/jjoa"]) };
+  let obj2 = { variant: "heading-sm/semibold", children: intl.string(guildEventId(1113).t["D/jjoa"]) };
   useGuildEventRecurrencesDefault(guildEventId, guildId, recurrenceRule);
-  const Text = guildEventId(5624).Text;
+  const Text = guildEventId(5751).Text;
   intl = guildEventId(1113).intl;
   items = [closure_6(Text, obj2), , ];
   const obj3 = {
@@ -83,7 +83,7 @@ export default function GuildEventRecurrences(guildEventId) {
         },
       size: "sm"
     };
-    const Button = tmp8(5634).Button;
+    const Button = tmp8(5758).Button;
     intl2 = tmp8(1113).intl;
     canViewMoreRecurrences = tmp7(Button, obj4);
   }

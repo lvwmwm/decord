@@ -1,20 +1,20 @@
-// Module ID: 17766
-// Function ID: 17767
+// Module ID: 18098
+// Function ID: 18099
 // Name: UserSettingsDesignSystemLegacyButton
-// Dependencies: [19, 17, 21, 1187, 5624, 5634, 5014, 575, 6027, 8177, 2]
+// Dependencies: [19, 17, 21, 1187, 5751, 5758, 5140, 575, 6159, 8246, 2]
 // Exports: default
 
-// Module 17766 (UserSettingsDesignSystemLegacyButton)
+// Module 18098 (UserSettingsDesignSystemLegacyButton)
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import components_Button_Button from "components/Button/Button" /* 5634 */;
-import Stack_Stack from "Stack/Stack" /* 6027 */;
-import _mod8177 from "module_8177" /* 8177 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import components_Button_Button from "components/Button/Button" /* 5758 */;
+import Stack_Stack from "Stack/Stack" /* 6159 */;
+import _mod8246 from "module_8246" /* 8246 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let c2;
@@ -43,11 +43,11 @@ function ComparisonRow(entry) {
   const tmp9 = hasItem && tmp.darkBg;
   items[1] = tmp9;
   let str = "text-muted";
-  const Text = tmp4(5624).Text;
+  const Text = tmp4(5751).Text;
   if (hasItem) {
     str = "text-default";
   }
-  const obj2 = { variant: "text-xs/medium", color: str, children: items1 };
+  const obj2 = { variant: "body-xs/medium", color: str, children: items1 };
   items1 = [combined, " \u2192 ", ];
   let str2 = redesignVariant;
   if (redesignVariant == null) {
@@ -57,7 +57,7 @@ function ComparisonRow(entry) {
   items2 = [React3(Text, obj2), ];
   const obj3 = { style: tmp.comparisonButtons, children: items4 };
   const obj4 = { style: tmp.comparisonSide, children: items3 };
-  items3 = [hasOwnProperty(Text_Text.Text, { variant: "text-xxs/medium", color: "text-muted", children: "legacy" }), ];
+  items3 = [hasOwnProperty(Text_Text.Text, { variant: "footnote/medium", color: "text-muted", children: "legacy" }), ];
   const obj5 = {
     look: entry.look,
     color: entry.color,
@@ -81,7 +81,7 @@ function ComparisonRow(entry) {
   items4 = [React3(_false, obj4), ];
   if (null != redesignVariant) {
     const obj6 = { style: tmp.comparisonSide, children: items5 };
-    items5 = [hasOwnProperty(Text_Text.Text, { variant: "text-xxs/medium", color: "text-muted", children: "mana" }), ];
+    items5 = [hasOwnProperty(Text_Text.Text, { variant: "footnote/medium", color: "text-muted", children: "mana" }), ];
     const obj7 = {
       variant: redesignVariant,
       size: "md",
@@ -93,7 +93,7 @@ function ComparisonRow(entry) {
     items5[1] = hasOwnProperty(components_Button_Button.Button, obj7);
     tmp10Result = tmp7(tmp8, obj6);
   } else {
-    const obj8 = { style: tmp.comparisonSide, children: hasOwnProperty(Text_Text.Text, { variant: "text-xs/medium", color: "text-muted", children: "no mapping" }) };
+    const obj8 = { style: tmp.comparisonSide, children: hasOwnProperty(Text_Text.Text, { variant: "body-xs/medium", color: "text-muted", children: "no mapping" }) };
     tmp10Result = tmp10(tmp8, obj8);
   }
   items4[1] = tmp10Result;
@@ -127,7 +127,7 @@ function ComboRow(combo) {
   if (hasItem) {
     str2 = "text-default";
   }
-  const obj2 = { variant: "text-xs/medium", color: str2, children: items1 };
+  const obj2 = { variant: "body-xs/medium", color: str2, children: items1 };
   items1 = [combined, " (", combo.count, ")"];
   items2 = [React3(Text, obj2), ];
   const obj3 = {
@@ -312,7 +312,7 @@ export default function UserSettingsDesignSystemLegacyButton() {
   const obj2 = { style: tmp.container, children: items1 };
   const obj3 = { spacing: 4, style: tmp.header, children: items };
   const Stack = Stack_Stack.Stack;
-  items = [hasOwnProperty(Text_Text.Text, { variant: "heading-xl/bold", children: "Migration Mapping" }), hasOwnProperty(Text_Text.Text, { variant: "text-sm/normal", color: "text-muted", children: "Legacy (uikit-native) \u2192 Mana side-by-side" })];
+  items = [hasOwnProperty(Text_Text.Text, { variant: "heading-xl/semibold", children: "Migration Mapping" }), hasOwnProperty(Text_Text.Text, { variant: "body-sm/normal", color: "text-muted", children: "Legacy (uikit-native) \u2192 Mana side-by-side" })];
   items1 = [React3(Stack, obj3), , , ];
   const entries = Object.entries(obj);
   items1[1] = entries.map((item) => {
@@ -326,12 +326,12 @@ export default function UserSettingsDesignSystemLegacyButton() {
         return closure_1_5(closure_1_8, obj, index);
       })
     };
-    const FormSection = _mod8177.FormSection;
+    const FormSection = _mod8246.FormSection;
     return closure_1_5(FormSection, obj, "cmp-" + tmp);
   });
   const obj4 = { spacing: 4, style: tmp.header, children: items2 };
   const Stack2 = Stack_Stack.Stack;
-  items2 = [hasOwnProperty(Text_Text.Text, { variant: "heading-xl/bold", children: "Legacy Button Audit" }), hasOwnProperty(Text_Text.Text, { variant: "text-sm/normal", color: "text-muted", children: "41 combinations across 185 importers" })];
+  items2 = [hasOwnProperty(Text_Text.Text, { variant: "heading-xl/semibold", children: "Legacy Button Audit" }), hasOwnProperty(Text_Text.Text, { variant: "body-sm/normal", color: "text-muted", children: "41 combinations across 185 importers" })];
   items1[2] = React3(Stack2, obj4);
   const entries1 = Object.entries(tmp2);
   items1[3] = entries1.map((item) => {
@@ -345,7 +345,7 @@ export default function UserSettingsDesignSystemLegacyButton() {
         return closure_1_5(closure_1_9, obj, index);
       })
     };
-    const FormSection = _mod8177.FormSection;
+    const FormSection = _mod8246.FormSection;
     return closure_1_5(FormSection, obj, tmp);
   });
   return React3(React2, obj2);

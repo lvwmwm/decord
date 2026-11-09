@@ -1,20 +1,20 @@
-// Module ID: 12347
-// Function ID: 12348
+// Module ID: 12534
+// Function ID: 12535
 // Name: UserProfileApplicationWidgetFieldUtils
-// Dependencies: [19, 17, 21, 5014, 575, 1113, 12348, 5624, 12349, 5717, 2]
+// Dependencies: [19, 17, 21, 5140, 575, 1113, 12535, 5751, 12536, 5842, 2]
 // Exports: FieldText, formatDurationNarrow
 
-// Module 12347 (UserProfileApplicationWidgetFieldUtils)
+// Module 12534 (UserProfileApplicationWidgetFieldUtils)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import FastImageDefault from "FastImage" /* 5717 */;
-import UserProfileApplicationWidgetSkeletons from "UserProfileApplicationWidgetSkeletons" /* 12348 */;
-import ApplicationWidgetMarkupUtils from "ApplicationWidgetMarkupUtils" /* 12349 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import FastImageDefault from "FastImage" /* 5842 */;
+import UserProfileApplicationWidgetSkeletons from "UserProfileApplicationWidgetSkeletons" /* 12535 */;
+import ApplicationWidgetMarkupUtils from "ApplicationWidgetMarkupUtils" /* 12536 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -27,16 +27,16 @@ obj2 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX
 let closure_6 = createStyles.createStyles(obj);
 let result = size.fileFinishedImporting("modules/user_profile/native/UserProfileApplicationWidgetFieldUtils.tsx");
 
-export function formatDurationNarrow(arg0) {
+export function formatDurationNarrow(result1) {
   let num = 0;
-  if (Number.isFinite(arg0)) {
+  if (Number.isFinite(result1)) {
     const _Math = Math;
     const _Math2 = Math;
-    num = Math.max(0, Math.floor(arg0));
+    num = Math.max(0, Math.floor(result1));
   }
   const rounded = Math.floor(num / 3600000);
   const result = Math.floor(num / 60000) % 60;
-  const result1 = Math.floor(num / 1000) % 60;
+  result1 = Math.floor(num / 1000) % 60;
   const items = [];
   if (rounded > 0) {
     const push = items.push;

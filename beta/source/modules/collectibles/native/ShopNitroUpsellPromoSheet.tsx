@@ -1,22 +1,22 @@
-// Module ID: 15037
-// Function ID: 15038
+// Module ID: 15316
+// Function ID: 15317
 // Name: ShopNitroUpsellPromoSheet
-// Dependencies: [19, 1072, 21, 7326, 9785, 9796, 5073, 10030, 10837, 15038, 6767, 10290, 1113, 5634, 2]
+// Dependencies: [19, 1072, 21, 7387, 9875, 10094, 9886, 10152, 10956, 15317, 6822, 10409, 1113, 5758, 2]
 // Exports: default
 
-// Module 15037 (ShopNitroUpsellPromoSheet)
+// Module 15316 (ShopNitroUpsellPromoSheet)
 import Constants from "Constants" /* 1072 */;
 import intl3 from "intl" /* 1113 */;
-import EntitlementFeatureNames from "EntitlementFeatureNames" /* 5073 */;
-import components_Button_Button from "components/Button/Button" /* 5634 */;
-import ButtonGroup2 from "ButtonGroup" /* 6767 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7326 */;
-import PremiumUpsellUtils from "PremiumUpsellUtils" /* 9785 */;
-import PremiumFeatureUpsellUtils from "PremiumFeatureUpsellUtils" /* 9796 */;
-import usePremiumFeatureUpsellGetNitroDefault from "usePremiumFeatureUpsellGetNitro" /* 10030 */;
-import NitroUpsellButtonDefault from "NitroUpsellButton" /* 10290 */;
-import PromoSheet2 from "PromoSheet" /* 10837 */;
-import DiscountsMegaphoneSpotIllustration from "DiscountsMegaphoneSpotIllustration" /* 15038 */;
+import components_Button_Button from "components/Button/Button" /* 5758 */;
+import ButtonGroup2 from "ButtonGroup" /* 6822 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7387 */;
+import PremiumUpsellUtils from "PremiumUpsellUtils" /* 9875 */;
+import EntitlementFeatureNames from "EntitlementFeatureNames" /* 9886 */;
+import PremiumFeatureUpsellUtils from "PremiumFeatureUpsellUtils" /* 10094 */;
+import usePremiumFeatureUpsellGetNitroDefault from "usePremiumFeatureUpsellGetNitro" /* 10152 */;
+import NitroUpsellButtonDefault from "NitroUpsellButton" /* 10409 */;
+import PromoSheet2 from "PromoSheet" /* 10956 */;
+import DiscountsMegaphoneSpotIllustration from "DiscountsMegaphoneSpotIllustration" /* 15317 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;

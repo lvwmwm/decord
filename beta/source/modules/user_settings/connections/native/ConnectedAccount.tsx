@@ -1,40 +1,40 @@
-// Module ID: 16842
-// Function ID: 16843
+// Module ID: 17165
+// Function ID: 17166
 // Name: ConnectedAccount
-// Dependencies: [5, 32, 19, 17, 6572, 4885, 1072, 7349, 21, 5014, 1187, 575, 6723, 7347, 504, 5634, 1113, 5624, 6957, 6574, 6972, 5080, 16843, 11391, 5958, 6030, 9720, 16844, 16847, 7369, 7348, 11605, 5709, 2061, 8028, 9285, 12219, 3224, 1409, 5021, 9287, 6976, 6975, 2]
+// Dependencies: [5, 32, 19, 17, 6627, 5011, 1072, 7410, 21, 5140, 1187, 575, 6778, 7408, 504, 5758, 1113, 5751, 7020, 6629, 7035, 5199, 17166, 11532, 6090, 6162, 9810, 17167, 17170, 7429, 7409, 11763, 5834, 2185, 8098, 9365, 12391, 3380, 1411, 5147, 9367, 7039, 7038, 2]
 
-// Module 16842 (ConnectedAccount)
+// Module 17165 (ConnectedAccount)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl7 from "intl" /* 1113 */;
-import AvatarUtils from "AvatarUtils" /* 1409 */;
-import shared from "shared" /* 5021 */;
-import native2 from "native" /* 5080 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5958 */;
-import AlertDefault from "Alert" /* 6030 */;
-import PlatformsDefault from "Platforms" /* 6574 */;
-import GuildIconDefault from "GuildIcon" /* 6957 */;
-import TableRowDivider from "TableRowDivider" /* 6972 */;
-import TableRow from "TableRow" /* 6975 */;
-import ConnectedAccountsActionCreatorsDefault from "ConnectedAccountsActionCreators" /* 7347 */;
-import Constants2 from "Constants" /* 7349 */;
-import TableSwitchRow2 from "TableSwitchRow" /* 7369 */;
-import XLargeBoldIcon from "XLargeBoldIcon" /* 9287 */;
-import InfoBoxDefault from "InfoBox" /* 11391 */;
-import shouldWarnConnectedAccountTwoWayDefault from "shouldWarnConnectedAccountTwoWay" /* 16843 */;
-import XboxTwoWayLinkUpsell from "XboxTwoWayLinkUpsell" /* 16844 */;
-import PlayStationTwoWayLinkUpsell from "PlayStationTwoWayLinkUpsell" /* 16847 */;
+import AvatarUtils from "AvatarUtils" /* 1411 */;
+import shared from "shared" /* 5147 */;
+import native2 from "native" /* 5199 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 6090 */;
+import AlertDefault from "Alert" /* 6162 */;
+import PlatformsDefault from "Platforms" /* 6629 */;
+import GuildIconDefault from "GuildIcon" /* 7020 */;
+import TableRowDivider from "TableRowDivider" /* 7035 */;
+import TableRow from "TableRow" /* 7038 */;
+import ConnectedAccountsActionCreatorsDefault from "ConnectedAccountsActionCreators" /* 7408 */;
+import Constants2 from "Constants" /* 7410 */;
+import TableSwitchRow2 from "TableSwitchRow" /* 7429 */;
+import XLargeBoldIcon from "XLargeBoldIcon" /* 9367 */;
+import InfoBoxDefault from "InfoBox" /* 11532 */;
+import shouldWarnConnectedAccountTwoWayDefault from "shouldWarnConnectedAccountTwoWay" /* 17166 */;
+import XboxTwoWayLinkUpsell from "XboxTwoWayLinkUpsell" /* 17167 */;
+import PlayStationTwoWayLinkUpsell from "PlayStationTwoWayLinkUpsell" /* 17170 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6572 */;
-import GuildStore from "GuildStore" /* 4885 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6627 */;
+import GuildStore from "GuildStore" /* 5011 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import native_mod from "native" /* 1187 */;
-import TextStyles from "TextStyles" /* 6723 */;
+import TextStyles from "TextStyles" /* 6778 */;
 import size from "module_2" /* 2 */;
 
 let importDefault, integrations;
@@ -57,7 +57,7 @@ let obj8;
 let obj9;
 let tmp2;
 let unpackModuleId;
-const _modDef3224 = tmp2(3224);
+const _modDef3380 = tmp2(3380);
 function Integration(integration) {
   let Button;
   let c1;
@@ -70,7 +70,7 @@ function Integration(integration) {
   let tmp5;
   integration = integration.integration;
   importDefault = undefined;
-  let obj = integration(5014);
+  let obj = integration(5140);
   legacyClassComponentStyles = obj.useLegacyClassComponentStyles(legacyClassComponentStyles);
   [tmp5, c1] = react.useState();
   _slicedToArray(react.useState(), 2);
@@ -97,7 +97,7 @@ function Integration(integration) {
       disabled: stateFromStores,
       text: stringResult
     };
-    Button = tmp(5634).Button;
+    Button = tmp(5758).Button;
     const intl = tmp(1113).intl;
     const string = intl.string;
     const t = tmp(1113).t;
@@ -111,21 +111,21 @@ function Integration(integration) {
   }
   let tmp11 = tmp5 === integration.id;
   if (tmp11) {
-    const obj6 = { style: legacyClassComponentStyles.integrationErrorText, variant: "text-sm/medium", color: "text-feedback-critical", children: intl2.string(integration(1113).t.fEptJP) };
-    const Text = tmp(5624).Text;
+    const obj6 = { style: legacyClassComponentStyles.integrationErrorText, variant: "body-sm/medium", color: "text-feedback-critical", children: intl2.string(integration(1113).t.fEptJP) };
+    const Text = tmp(5751).Text;
     intl2 = tmp(1113).intl;
     tmp11 = closure_14(Text, obj6);
   }
   const obj7 = { style: legacyClassComponentStyles.integrationContainer, children: items6 };
   const obj8 = { style: legacyClassComponentStyles.integrationContainerInternal, children: items4 };
-  const obj9 = { guild: integration.guild, size: integration(6957).GuildIconSizes.SMALL, style: legacyClassComponentStyles.integrationGuildIcon };
+  const obj9 = { guild: integration.guild, size: integration(7020).GuildIconSizes.SMALL, style: legacyClassComponentStyles.integrationGuildIcon };
   const tmp16 = GuildIconDefault;
   items4 = [closure_14(tmp16, obj9), , ];
   const obj10 = { style: legacyClassComponentStyles.integrationTextRowContainer, children: items5 };
   items5 = [, ];
-  const obj11 = { lineClamp: 1, variant: "text-sm/medium", children: integration.guild.name };
-  items5[0] = closure_14(integration(5624).Text, obj11);
-  const Text2 = tmp(5624).Text;
+  const obj11 = { lineClamp: 1, variant: "body-sm/medium", children: integration.guild.name };
+  items5[0] = closure_14(integration(5751).Text, obj11);
+  const Text2 = tmp(5751).Text;
   const obj12 = PlatformsDefault;
   const value = obj12.get(integration.type);
   let platformUserUrl;
@@ -136,7 +136,7 @@ function Integration(integration) {
       platformUserUrl = getPlatformUserUrl(integration.account);
     }
   }
-  items5[1] = tmp15(Text2, { lineClamp: 1, variant: "text-xs/medium", color: "text-muted", children: platformUserUrl });
+  items5[1] = tmp15(Text2, { lineClamp: 1, variant: "body-xs/medium", color: "text-muted", children: platformUserUrl });
   items4[1] = closure_15(View, obj10);
   items4[2] = tmp8Result;
   items6 = [closure_15(View, obj8), tmp11];
@@ -207,7 +207,7 @@ class ConnectedAccount extends PureComponent {
       const tmp = require;
       if (shouldWarnConnectedAccountTwoWayDefault(account)) {
         const obj3 = { children: items };
-        const obj4 = { style: tmp2.alertBodyText, variant: "text-md/medium", children: formatResult };
+        const obj4 = { style: tmp2.alertBodyText, variant: "body-md/medium", children: formatResult };
         items = [authStore3(Text_Text.Text, obj4), ];
         const obj5 = { style: tmp2.alertInfoBox, children: intl2.format(intl7.t.COW3Xn, obj6) };
         const tmp3Result = InfoBoxDefault;
@@ -245,7 +245,7 @@ class ConnectedAccount extends PureComponent {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c3;
@@ -304,7 +304,7 @@ class ConnectedAccount extends PureComponent {
               c3 = 0;
             }
             c5 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp19) {
           if (0 === c3) {
@@ -334,7 +334,7 @@ class ConnectedAccount extends PureComponent {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c3;
@@ -393,7 +393,7 @@ class ConnectedAccount extends PureComponent {
               c3 = 0;
             }
             c5 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp19) {
           if (0 === c3) {
@@ -423,7 +423,7 @@ class ConnectedAccount extends PureComponent {
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -464,7 +464,7 @@ class ConnectedAccount extends PureComponent {
                 c3 = 0;
               }
               c5 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp10) {
             if (0 === c3) {
@@ -495,7 +495,7 @@ class ConnectedAccount extends PureComponent {
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -536,7 +536,7 @@ class ConnectedAccount extends PureComponent {
                 c3 = 0;
               }
               c5 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp10) {
             if (0 === c3) {
@@ -652,46 +652,46 @@ class ConnectedAccount extends PureComponent {
     if (metadata == null) {
       metadata = {};
     }
-    const obj2 = account(7348);
+    const obj2 = account(7409);
     const createdAtDate = obj2.getCreatedAtDate(metadata[MetadataFields.CREATED_AT], locale);
     const type = account.type;
     const tmp4 = MetadataFields;
     if (constants.REDDIT === type) {
-      const tmp2Result = account(11605);
+      const tmp2Result = account(11763);
       redditMetadataItems = tmp2Result.generateRedditMetadataItems(metadata);
     } else if (constants.STEAM === type) {
-      const tmp2Result7 = account(11605);
+      const tmp2Result7 = account(11763);
       redditMetadataItems = tmp2Result7.generateSteamMetadataItems(metadata);
     } else if (constants.LETTERBOXD === type) {
-      const tmp2Result8 = account(11605);
+      const tmp2Result8 = account(11763);
       redditMetadataItems = tmp2Result8.generateLetterboxdMetadataItems(metadata);
     } else {
       if (constants.BLUESKY !== type) {
         if (constants.TWITTER !== type) {
           if (constants.MASTODON !== type) {
             if (constants.EBAY === type) {
-              const tmp2Result9 = account(11605);
+              const tmp2Result9 = account(11763);
               redditMetadataItems = tmp2Result9.generateEbayMetadataItems(metadata);
             } else if (constants.PAYPAL === type) {
-              const tmp2Result10 = account(11605);
+              const tmp2Result10 = account(11763);
               redditMetadataItems = tmp2Result10.generatePaypalMetadataItems(metadata);
             } else {
               redditMetadataItems = [];
               if (constants.TIKTOK === type) {
-                const tmp2Result11 = account(11605);
+                const tmp2Result11 = account(11763);
                 redditMetadataItems = tmp2Result11.generateTikTokMetadataItems(metadata);
               }
             }
           }
         }
       }
-      const tmp2Result12 = account(11605);
+      const tmp2Result12 = account(11763);
       redditMetadataItems = tmp2Result12.generateTwitterMetadataItems(metadata);
     }
     if (null !== createdAtDate) {
       const push = redditMetadataItems.push;
-      let obj = { variant: "text-xs/normal", color: "interactive-text-default", children: intl.format(account(1113).t["9rfonh"], obj3) };
-      const Text = tmp2(5624).Text;
+      let obj = { variant: "body-xs/normal", color: "interactive-text-default", children: intl.format(account(1113).t["9rfonh"], obj3) };
+      const Text = tmp2(5751).Text;
       intl = tmp2(1113).intl;
       obj3 = { date: createdAtDate };
       push(closure_14(Text, obj, tmp4.CREATED_AT));
@@ -708,7 +708,7 @@ class ConnectedAccount extends PureComponent {
       });
     }
     if (0 === redditMetadataItems.length) {
-      const obj15 = self(6574);
+      const obj15 = self(6629);
       const value = obj15.get(account.type);
       let hasMetadata;
       if (value != null) {
@@ -724,14 +724,14 @@ class ConnectedAccount extends PureComponent {
         const TextBadge = tmp2(1187).TextBadge;
         intl4 = tmp2(1113).intl;
         items1 = [closure_14(TextBadge, obj5), , , , ];
-        const obj6 = { variant: "text-xs/normal", children: intl5.string(account(1113).t.eH16Gn) };
-        const Text2 = tmp2(5624).Text;
+        const obj6 = { variant: "body-xs/normal", children: intl5.string(account(1113).t.eH16Gn) };
+        const Text2 = tmp2(5751).Text;
         intl5 = tmp2(1113).intl;
         items1[1] = closure_14(Text2, obj6);
         const obj7 = { style: tmp.rowDivider };
         items1[2] = closure_14(View, obj7);
         const obj8 = { style: tmp.addDetailsButton, children: closure_14(Button2, obj9) };
-        Button2 = tmp2(5634).Button;
+        Button2 = tmp2(5758).Button;
         const metadataAlreadyRefreshed = self.state.metadataAlreadyRefreshed;
         const intl6 = tmp2(1113).intl;
         const string = intl6.string;
@@ -756,7 +756,7 @@ class ConnectedAccount extends PureComponent {
                 return openURL(obj.getArticleURL(constants.CONNECTION_DETAILS));
               }
         };
-        Button = tmp2(5634).Button;
+        Button = tmp2(5758).Button;
         intl3 = tmp2(1113).intl;
         items1[4] = closure_14(View, obj10);
         tmp20Result = tmp20(tmp21, obj4);
@@ -764,11 +764,11 @@ class ConnectedAccount extends PureComponent {
       return tmp20Result;
     } else {
       let tmp19Result;
-      const IconButton = tmp2(8028).IconButton;
+      const IconButton = tmp2(8098).IconButton;
       if (self.state.metadataAlreadyRefreshed) {
-        tmp19Result = tmp19(tmp2(9285).CheckmarkLargeBoldIcon, { size: "sm" });
+        tmp19Result = tmp19(tmp2(9365).CheckmarkLargeBoldIcon, { size: "sm" });
       } else {
-        tmp19Result = tmp19(tmp2(12219).RefreshIcon, { size: "sm" });
+        tmp19Result = tmp19(tmp2(12391).RefreshIcon, { size: "sm" });
       }
       const obj12 = { size: "sm", variant: "icon-only", icon: tmp19Result, accessibilityLabel: intl2.string(account(1113).t.wzzjk9), onPress: handleRefresh, disabled: self.state.metadataRefreshing || self.state.metadataAlreadyRefreshed };
       intl2 = tmp2(1113).intl;
@@ -826,7 +826,7 @@ class ConnectedAccount extends PureComponent {
         let obj = { style: items, children: items1 };
         items = [, ];
         ({ connectedAccountSection: arr[0], integrationsSection: arr[1] } = tmp);
-        const obj2 = { style: tmp.integrationCategoryLabel, variant: "eyebrow", color: "mobile-text-heading-primary", children: intl.string(intl7.t.fOe3fZ) };
+        const obj2 = { style: tmp.integrationCategoryLabel, variant: "body-sm/medium", color: "mobile-text-heading-primary", children: intl.string(intl7.t.fOe3fZ) };
         const Text = Text_Text.Text;
         intl = intl7.intl;
         items1 = [authStore3(Text, obj2), ];
@@ -862,7 +862,7 @@ class ConnectedAccount extends PureComponent {
     if (null != value.migrationData) {
       const intl = intl7.intl;
       const obj2 = { platformName: account.name };
-      name = intl.format(_modDef3224.Glhokn, obj2);
+      name = intl.format(_modDef3380.Glhokn, obj2);
     } else {
       name = account.name;
     }
@@ -874,7 +874,7 @@ class ConnectedAccount extends PureComponent {
     obj4 = shared;
     const obj5 = { size: "sm", variant: "icon-only", icon: authStore3(XLargeBoldIcon.XLargeBoldIcon, { size: "sm" }), accessibilityLabel: intl2.string(intl7.t["DT39A+"]), onPress: self.handleDisconnect };
     const tmp6Result = authStore3(Icon, obj3);
-    const IconButton = tmp7(8028).IconButton;
+    const IconButton = tmp7(8098).IconButton;
     intl2 = tmp7(1113).intl;
     const tmp6Result2 = authStore3(IconButton, obj5);
     const result = self.renderIntegrationsRow();
@@ -887,7 +887,7 @@ class ConnectedAccount extends PureComponent {
     const obj6 = { style: tmp.container, children: authStore3(View, obj7) };
     obj7 = { style: tmp.connectedAccountItem, children: closure_15(TableRowGroupContext, obj10) };
     const obj8 = { style: tmp.connectedAccountHeader, children: authStore3(TableRow.TableRow, { label: name, icon: tmp6Result, trailing: tmp6Result2 }) };
-    TableRowGroupContext = tmp7(6976).TableRowGroupContext;
+    TableRowGroupContext = tmp7(7039).TableRowGroupContext;
     const items = [authStore3(View, obj8), , ];
     if (null != renderUpsellResult) {
       const obj9 = { style: tmp.connectedAccountSection, children: items1 };

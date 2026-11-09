@@ -1,22 +1,22 @@
-// Module ID: 15704
-// Function ID: 15705
+// Module ID: 16018
+// Function ID: 16019
 // Name: UserCodeInput
-// Dependencies: [32, 19, 17, 15705, 21, 5014, 15706, 15707, 5624, 1113, 7082, 5634, 2]
+// Dependencies: [32, 19, 17, 16019, 21, 5140, 16020, 16021, 5751, 1113, 7148, 5758, 2]
 // Exports: UserCodeInput
 
-// Module 15704 (UserCodeInput)
+// Module 16018 (UserCodeInput)
 import react_native from "react-native" /* 17 */;
 import intl5 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import components_Button_Button from "components/Button/Button" /* 5634 */;
-import TextInput_TextInput from "TextInput/TextInput" /* 7082 */;
-import OAuthConstants2 from "OAuthConstants" /* 15705 */;
-import useUserCodeSubmit from "useUserCodeSubmit" /* 15706 */;
-import ActivateDeviceSharedStylesDefault from "ActivateDeviceSharedStyles" /* 15707 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import components_Button_Button from "components/Button/Button" /* 5758 */;
+import TextInput_TextInput from "TextInput/TextInput" /* 7148 */;
+import OAuthConstants2 from "OAuthConstants" /* 16019 */;
+import useUserCodeSubmit from "useUserCodeSubmit" /* 16020 */;
+import ActivateDeviceSharedStylesDefault from "ActivateDeviceSharedStyles" /* 16021 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let c9;
@@ -58,11 +58,11 @@ export function UserCodeInput(prefilledUserCode) {
   const obj2 = { children: items1 };
   ({ manualSubmit, error, submitting } = userCodeSubmit);
   const obj3 = { style: ActivateDeviceSharedStylesDefault.innerContent, children: items };
-  const obj4 = { variant: "heading-lg/bold", color: "mobile-text-heading-primary", style: tmp.text, children: intl.string(intl5.t.KYPNUv) };
+  const obj4 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", style: tmp.text, children: intl.string(intl5.t.KYPNUv) };
   const Text = Text_Text.Text;
   intl = intl5.intl;
   items = [metroImportDefault(Text, obj4), ];
-  const obj5 = { variant: "text-md/medium", color: "text-default", style: tmp.text, children: intl2.string(intl5.t.xRHk7f) };
+  const obj5 = { variant: "body-md/medium", color: "text-default", style: tmp.text, children: intl2.string(intl5.t.xRHk7f) };
   const Text2 = Text_Text.Text;
   intl2 = intl5.intl;
   items[1] = metroImportDefault(Text2, obj5);

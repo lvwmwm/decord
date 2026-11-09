@@ -1,10 +1,10 @@
-// Module ID: 19493
-// Function ID: 19494
+// Module ID: 19898
+// Function ID: 19899
 // Name: ActionRowLayoutComponent
 // Dependencies: [19, 17, 21, 2]
 // Exports: default
 
-// Module 19493 (ActionRowLayoutComponent)
+// Module 19898 (ActionRowLayoutComponent)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 19 */;

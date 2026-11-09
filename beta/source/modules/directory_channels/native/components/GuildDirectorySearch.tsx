@@ -1,26 +1,26 @@
-// Module ID: 13850
-// Function ID: 13851
+// Module ID: 14084
+// Function ID: 14085
 // Name: GuildDirectorySearch
-// Dependencies: [32, 19, 17, 4885, 13851, 1072, 21, 5014, 575, 7148, 5717, 13854, 5624, 1113, 1187, 504, 13855, 13856, 1625, 13883, 13884, 7294, 6998, 7557, 13864, 13848, 1252, 2]
+// Dependencies: [32, 19, 17, 5011, 14085, 1072, 21, 5140, 575, 5842, 14088, 5751, 1113, 1187, 504, 14089, 14090, 1627, 14117, 14118, 7357, 7064, 7629, 14098, 14082, 1252, 2]
 // Exports: default
 
-// Module 13850 (GuildDirectorySearch)
+// Module 14084 (GuildDirectorySearch)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import FastImageDefault from "FastImage" /* 5717 */;
-import GuildDirectorySearchModalActionCreatorsDefault from "GuildDirectorySearchModalActionCreators" /* 13848 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13854 */;
-import GuildDirectoryAddModalActionCreatorsDefault from "GuildDirectoryAddModalActionCreators" /* 13856 */;
-import GuildDirectoryActionCreatorsAll from "GuildDirectoryActionCreators" /* 13864 */;
+import FastImageDefault from "FastImage" /* 5842 */;
+import GuildDirectorySearchModalActionCreatorsDefault from "GuildDirectorySearchModalActionCreators" /* 14082 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14088 */;
+import GuildDirectoryAddModalActionCreatorsDefault from "GuildDirectoryAddModalActionCreators" /* 14090 */;
+import GuildDirectoryActionCreatorsAll from "GuildDirectoryActionCreators" /* 14098 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4885 */;
-import GuildDirectorySearchStore from "GuildDirectorySearchStore" /* 13851 */;
+import GuildStore from "GuildStore" /* 5011 */;
+import GuildDirectorySearchStore from "GuildDirectorySearchStore" /* 14085 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -33,32 +33,27 @@ let obj2;
 let obj3;
 let unpackModuleId;
 function DefaultState() {
-  let closure_1;
   let intl;
   let items;
-  let obj5;
+  let obj4;
   let proTip;
   const tmp = closure_12();
   _require = tmp;
-  let obj = require("useTypeConsolidationTextTransform");
-  importDefault = obj.useTypeConsolidationTextTransform("GuildDirectorySearch");
-  const obj2 = { style: tmp.emptyWrapper, children: items };
-  const obj3 = { style: tmp.emptyStateImage, source: AssetRegistryDefault };
+  let obj = { style: tmp.emptyWrapper, children: items };
+  const obj2 = { style: tmp.emptyStateImage, source: AssetRegistryDefault };
   const tmp2 = FastImageDefault;
-  items = [closure_10(tmp2, obj3), ];
-  const obj4 = { style: tmp.emptyStateText, variant: "text-sm/medium", color: "text-default", children: intl.format(require("intl").t.aYLd8O, obj5) };
+  items = [closure_10(tmp2, obj2), ];
+  const obj3 = { style: tmp.emptyStateText, variant: "body-sm/medium", color: "text-default", children: intl.format(require("intl").t.aYLd8O, obj4) };
   const Text = require("Text/Text").Text;
   intl = require("intl").intl;
-  obj5 = {
+  obj4 = {
     protipHook(children) {
-      let items;
-      const obj = { style: items, children };
-      items = [proTip.proTip, closure_1];
+      const obj = { style: proTip.proTip, children };
       return authStore(native.LegacyText, obj, "protip");
     }
   };
-  items[1] = closure_10(Text, obj4);
-  return closure_11(View, obj2);
+  items[1] = closure_10(Text, obj3);
+  return closure_11(View, obj);
 }
 function EmptyState(channel) {
   let formatResult;
@@ -70,7 +65,7 @@ function EmptyState(channel) {
   let obj = channel(504);
   const items = [GuildStore];
   importDefault = obj.useStateFromStores(items, () => GuildStore.getGuild(channel.getGuildId()));
-  let obj2 = channel(13855);
+  let obj2 = channel(14089);
   const canCreateOrAddGuildInDirectory = obj2.useCanCreateOrAddGuildInDirectory(channel);
   const intl = channel(1113).intl;
   if (canCreateOrAddGuildInDirectory) {
@@ -89,12 +84,12 @@ function EmptyState(channel) {
   const obj5 = { style: tmp.emptyStateImage, source: AssetRegistryDefault };
   const tmp6 = FastImageDefault;
   items1 = [closure_10(tmp6, obj5), , ];
-  const obj6 = { style: tmp.emptyStateTitle, variant: "text-sm/semibold", color: "mobile-text-heading-primary", children: intl2.string(channel(1113).t["6HXiuE"]) };
-  const Text = tmp2(5624).Text;
+  const obj6 = { style: tmp.emptyStateTitle, variant: "body-sm/semibold", color: "mobile-text-heading-primary", children: intl2.string(channel(1113).t["6HXiuE"]) };
+  const Text = tmp2(5751).Text;
   intl2 = tmp2(1113).intl;
   items1[1] = closure_10(Text, obj6);
-  const obj7 = { style: tmp.emptyStateText, variant: "text-sm/medium", color: "text-default", children: formatResult };
-  items1[2] = closure_10(channel(5624).Text, obj7);
+  const obj7 = { style: tmp.emptyStateText, variant: "body-sm/medium", color: "text-default", children: formatResult };
+  items1[2] = closure_10(channel(5751).Text, obj7);
   return closure_11(View, obj4);
 }
 const View = react_native.View;
@@ -104,7 +99,7 @@ let createStyles = createStyles_mod;
 let obj = { flex: { flex: 1, height: "100%" }, fauxHeader: { paddingHorizontal: 0 }, scrollContainer: obj2, emptyWrapper: { flex: 1, alignItems: "center", justifyContent: "center", paddingHorizontal: 16 }, emptyStateImage: { marginBottom: 24 }, emptyStateText: { textAlign: "center" }, emptyStateTitle: { marginBottom: 4, textAlign: "center" }, proTip: obj3 };
 obj2 = { flex: 1, width: "100%", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 createStyles = createStyles.createStyles;
-obj3 = { fontFamily: Fonts.PRIMARY_BOLD, color: nativeDefault.unsafe_rawColors.GREEN_360, textTransform: "uppercase" };
+obj3 = { fontFamily: Fonts.PRIMARY_BOLD, color: nativeDefault.unsafe_rawColors.GREEN_360 };
 let closure_12 = createStyles(obj);
 const ArrayResult = Array(20);
 let closure_15 = ArrayResult.fill(null);
@@ -127,7 +122,7 @@ export default function GuildDirectorySearch(channel) {
   let tmp4 = searchResults(react.useState(""), 2);
   let closure_2 = tmp4[0];
   const tmp5 = tmp4[1];
-  let obj = channel(searchFetching[15]);
+  let obj = channel(searchFetching[14]);
   const items = [GuildDirectorySearchStore];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {
     const searchState = GuildDirectorySearchStore.getSearchState(channel.id);
@@ -164,9 +159,9 @@ export default function GuildDirectorySearch(channel) {
           item = item.item;
           if (null != item) {
             const obj = { entry: item };
-            tmp4 = closure_1_10(closure_1(searchFetching[19]), obj);
+            tmp4 = closure_1_10(closure_1(searchFetching[18]), obj);
           } else {
-            tmp4 = closure_1_10(closure_1(searchFetching[20]), {});
+            tmp4 = closure_1_10(closure_1(searchFetching[19]), {});
           }
           return tmp4;
         },
@@ -194,13 +189,13 @@ export default function GuildDirectorySearch(channel) {
       contentContainerStyle: obj4
     };
     obj4 = { paddingBottom: bottom + 16 };
-    tmp11Result = tmp11(tmp6(tmp7[21]).FlashList, obj3);
+    tmp11Result = tmp11(tmp6(tmp7[20]).FlashList, obj3);
   }
   const obj5 = { style: tmp.flex, children: items2 };
   const obj6 = { style: tmp.fauxHeader, children: closure_10(tmp10Result, obj7) };
-  const FauxHeader = tmp6(tmp7[22]).FauxHeader;
+  const FauxHeader = tmp6(tmp7[21]).FauxHeader;
   obj7 = {
-    placeholder: intl.string(channel(searchFetching[13]).t.nL2wKD),
+    placeholder: intl.string(channel(searchFetching[12]).t.nL2wKD),
     onChange: tmp5,
     onClose() {
       const obj = GuildDirectoryActionCreatorsAll;
@@ -226,8 +221,8 @@ export default function GuildDirectorySearch(channel) {
       }
     }
   };
-  tmp10Result = tmp10(searchFetching[23]);
-  intl = tmp6(tmp7[13]).intl;
+  tmp10Result = tmp10(searchFetching[22]);
+  intl = tmp6(tmp7[12]).intl;
   items2 = [closure_10(FauxHeader, obj6), tmp12];
   return closure_11(View, obj5);
 };

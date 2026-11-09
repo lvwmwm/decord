@@ -1,41 +1,34 @@
-// Module ID: 11529
-// Function ID: 11530
+// Module ID: 11674
+// Function ID: 11675
 // Name: ConjurePagesStore
 // Dependencies: [504, 572, 2]
 
-// Module 11529 (ConjurePagesStore)
+// Module 11674 (ConjurePagesStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 
 let closure_0 = { chatOpen: true, debugOpen: false, previewSelection: null, chatScroll: null };
 let c1 = null;
-let c2 = false;
-let c3 = "";
-let c4 = null;
+let c2 = null;
+let c3 = false;
 const map = new Map();
 const map1 = new Map();
 const set = new Set();
 const Store = get_initializedDefault.Store;
 class ConjurePagesStore extends Store {
   getProjectId() {
-    return c1;
+    return c2;
   }
   isOnPage() {
-    return c2;
+    return c3;
   }
   getShownProjectId() {
     let tmp = null;
-    if (c2) {
+    if (c3) {
       tmp = c1;
     }
     return tmp;
-  }
-  getReturnRoute() {
-    return c4;
-  }
-  getHomePrompt() {
-    return c3;
   }
   getScrollTop(arg0) {
     let num = map.get(arg0);
@@ -55,29 +48,29 @@ class ConjurePagesStore extends Store {
 const prototype = ConjurePagesStore.prototype;
 ConjurePagesStore.displayName = "ConjurePagesStore";
 let obj = {
-  CONJURE_PAGES_VISIT: function handleVisit(projectId) {
-    let flag = !c2;
-    if (c2) {
-      flag = projectId.projectId !== projectId;
+  CONJURE_PAGES_VISIT: function handleVisit(inServer) {
+    let projectId2;
+    if (true !== inServer.inServer) {
+      const projectId = inServer.projectId;
+    }
+    let flag = !c3;
+    if (c3) {
+      flag = inServer.projectId !== projectId2;
     }
     if (flag) {
-      projectId = projectId.projectId;
-      c2 = true;
+      projectId2 = inServer.projectId;
+      c3 = true;
       flag = true;
     }
     return flag;
   },
   CONJURE_PAGES_LEAVE: function handleLeave() {
-    let flag = c2;
+    let flag = c3;
     if (flag) {
-      c2 = false;
+      c3 = false;
       flag = true;
     }
     return flag;
-  },
-  CONJURE_PAGES_HOME_PROMPT_SAVE: function handleHomePromptSave(prompt) {
-    const _prompt = prompt.prompt;
-    return false;
   },
   CONJURE_PAGES_SCROLL_SAVE: function handleScrollSave(key) {
     const result = map.set(key.key, key.scrollTop);
@@ -99,14 +92,13 @@ let obj = {
     }
     return false;
   },
-  CONJURE_PAGES_RETURN_ROUTE_SAVE: function handleReturnRouteSave(route) {
-    route = route.route;
-    return false;
-  },
   CONJURE_PROJECT_DELETE_SUCCESS: function handleProjectDeleteSuccess(projectId) {
     projectId = projectId.projectId;
     set.add(projectId);
     map1.delete(projectId);
+    if (projectId === c2) {
+      c2 = null;
+    }
     let flag = projectId === c1;
     if (flag) {
       c1 = null;
@@ -116,9 +108,8 @@ let obj = {
   },
   LOGOUT: function handleLogout() {
     c1 = null;
-    c2 = false;
-    c3 = "";
-    c4 = null;
+    c2 = null;
+    c3 = false;
     map.clear();
     map1.clear();
     set.clear();

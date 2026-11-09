@@ -1,23 +1,21 @@
-// Module ID: 19752
-// Function ID: 19753
+// Module ID: 20162
+// Function ID: 20163
 // Name: GuildSettingsServerTagColorPickerActionSheet
-// Dependencies: [32, 19, 17, 8393, 21, 575, 5014, 16447, 5011, 1491, 5095, 12054, 1113, 8980, 5258, 5272, 7321, 6027, 9295, 15738, 5624, 9214, 16448, 9063, 5634, 2]
+// Dependencies: [32, 19, 17, 8464, 21, 575, 5140, 16768, 5137, 1493, 1652, 12058, 1113, 9059, 5374, 5388, 7382, 6159, 9375, 16052, 5751, 9294, 16769, 9143, 5758, 2]
 // Exports: default
 
-// Module 19752 (GuildSettingsServerTagColorPickerActionSheet)
+// Module 20162 (GuildSettingsServerTagColorPickerActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ColorUtils from "ColorUtils" /* 5011 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import ColorPickerUtils from "ColorPickerUtils" /* 16447 */;
+import ColorUtils from "ColorUtils" /* 5137 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
+import ColorPickerUtils from "ColorPickerUtils" /* 16768 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildTagConstants from "GuildTagConstants" /* 8393 */;
+import GuildTagConstants from "GuildTagConstants" /* 8464 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
-
-let BottomSheet;
 
 let c10;
 let c9;
@@ -368,7 +366,7 @@ export default function GuildSettingsServerTagColorPickerActionSheet(secondaryCo
   const tmp15Result10 = primaryColor(tmp2[8]);
   let obj2 = { startExpanded: true, keyboardShouldPersistTaps: "handled", header: first3(BottomSheetTitleHeader, obj3), children: closure_10(Stack, obj4) };
   const tmp43 = null == tmp15Result10.hex2rgb2hsv(first4);
-  BottomSheet = tmp15(tmp2[15]).BottomSheet;
+  const BottomSheet = tmp15(tmp2[15]).BottomSheet;
   obj3 = { title: intl.string(primaryColor(tmp2[12]).t.T1IxYH) };
   BottomSheetTitleHeader = tmp15(tmp2[16]).BottomSheetTitleHeader;
   intl = tmp15(tmp2[12]).intl;

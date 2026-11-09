@@ -1,22 +1,22 @@
-// Module ID: 18346
-// Function ID: 18347
+// Module ID: 18685
+// Function ID: 18686
 // Name: useFavoritesGuildSuggestionCandidates
-// Dependencies: [19, 18347, 7801, 4863, 18257, 13385, 18349, 504, 9151, 14404, 13396, 9147, 9135, 2]
+// Dependencies: [19, 18686, 7877, 4989, 18594, 13617, 18688, 504, 9231, 14640, 13628, 9227, 9215, 2]
 // Exports: default
 
-// Module 18346 (useFavoritesGuildSuggestionCandidates)
-import _mod9135 from "module_9135" /* 9135 */;
-import createAutocompleterResultForChannelIdDefault from "createAutocompleterResultForChannelId" /* 9147 */;
-import ShareConstants from "ShareConstants" /* 13385 */;
-import FavoritesGuildSuggestionsStore from "FavoritesGuildSuggestionsStore" /* 18257 */;
+// Module 18685 (useFavoritesGuildSuggestionCandidates)
+import _mod9215 from "module_9215" /* 9215 */;
+import createAutocompleterResultForChannelIdDefault from "createAutocompleterResultForChannelId" /* 9227 */;
+import ShareConstants from "ShareConstants" /* 13617 */;
+import FavoritesGuildSuggestionsStore from "FavoritesGuildSuggestionsStore" /* 18594 */;
 import react from "react" /* 19 */;
-import ChannelAffinitiesV2Store from "ChannelAffinitiesV2Store" /* 18347 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7801 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
+import ChannelAffinitiesV2Store from "ChannelAffinitiesV2Store" /* 18686 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7877 */;
+import ChannelStore from "ChannelStore" /* 4989 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, closure_1, importDefault, set;
+let _require, closure_1, importDefault, results, set;
 
 function getAffineChannelId(channelId) {
   return channelId.channelId;
@@ -32,7 +32,6 @@ export default function useFavoritesGuildSuggestionCandidates(arg0) {
   let closure_0;
   let memo;
   let memo1;
-  let results;
   let userAffinitiesMap;
   _require = arg0;
   const tmp = require("useFavoritesGuildChannelFilter")();
@@ -155,7 +154,7 @@ export default function useFavoritesGuildSuggestionCandidates(arg0) {
               let sum = tmp25 + 1;
               if (null != tmp20) {
                 let tmp24;
-                if (tmp20.type !== _mod9135.AutocompleterResultTypes.HEADER) {
+                if (tmp20.type !== _mod9215.AutocompleterResultTypes.HEADER) {
                   tmp24 = sum;
                   if (!set.has(tmp20.record.id)) {
                     break;

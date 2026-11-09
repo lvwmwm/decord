@@ -1,32 +1,35 @@
-// Module ID: 15105
-// Function ID: 15106
+// Module ID: 15386
+// Function ID: 15387
 // Name: CodedLinks
-// Dependencies: [32, 4947, 4885, 1383, 7833, 13705, 5752, 15106, 15107, 15118, 15120, 15112, 15122, 15115, 11549, 13234, 11562, 11560, 15123, 11624, 15125, 1379, 2]
+// Dependencies: [32, 5073, 5011, 1385, 7909, 13937, 5877, 15387, 15388, 15399, 15401, 15393, 15403, 15396, 11694, 13466, 11708, 15404, 15407, 15408, 15410, 11714, 11783, 15411, 1380, 2]
 // Exports: createCodedLinkEmbeds
 
-// Module 15105 (CodedLinks)
-import GlobalUtils from "GlobalUtils" /* 1379 */;
-import CodedLink from "CodedLink" /* 5752 */;
-import ApplicationCodedLink from "ApplicationCodedLink" /* 7833 */;
-import useCodedLinksExperimentEmbeds from "useCodedLinksExperimentEmbeds" /* 11549 */;
-import createSocialLayerStorefrontProductDetailsEmbed2 from "createSocialLayerStorefrontProductDetailsEmbed" /* 11560 */;
-import storefrontCodedLink from "storefrontCodedLink" /* 11562 */;
-import LinkedGameOrgInvitesExperiment from "LinkedGameOrgInvitesExperiment" /* 11624 */;
-import ExperimentEmbed from "ExperimentEmbed" /* 13234 */;
-import createAppMessageEmbed from "createAppMessageEmbed" /* 13705 */;
-import createActivityMessageEmbed from "createActivityMessageEmbed" /* 15106 */;
-import InviteEmbed from "InviteEmbed" /* 15107 */;
-import GuildScheduledEventEmbed from "GuildScheduledEventEmbed" /* 15112 */;
-import EmbeddedActivityInviteEmbed from "EmbeddedActivityInviteEmbed" /* 15115 */;
-import GuildTemplateEmbed from "GuildTemplateEmbed" /* 15118 */;
-import BuildOverrideEmbed from "BuildOverrideEmbed" /* 15120 */;
-import VoiceChannelLinkEmbed from "VoiceChannelLinkEmbed" /* 15122 */;
-import QuestEmbed from "QuestEmbed" /* 15123 */;
-import GameOrganizationInviteEmbed from "GameOrganizationInviteEmbed" /* 15125 */;
+// Module 15386 (CodedLinks)
+import GlobalUtils from "GlobalUtils" /* 1380 */;
+import CodedLink from "CodedLink" /* 5877 */;
+import ApplicationCodedLink from "ApplicationCodedLink" /* 7909 */;
+import useCodedLinksExperimentEmbeds from "useCodedLinksExperimentEmbeds" /* 11694 */;
+import storefrontCodedLink from "storefrontCodedLink" /* 11708 */;
+import conjureProjectLink from "conjureProjectLink" /* 11714 */;
+import LinkedGameOrgInvitesExperiment from "LinkedGameOrgInvitesExperiment" /* 11783 */;
+import ExperimentEmbed from "ExperimentEmbed" /* 13466 */;
+import createAppMessageEmbed from "createAppMessageEmbed" /* 13937 */;
+import createActivityMessageEmbed from "createActivityMessageEmbed" /* 15387 */;
+import InviteEmbed from "InviteEmbed" /* 15388 */;
+import GuildScheduledEventEmbed from "GuildScheduledEventEmbed" /* 15393 */;
+import EmbeddedActivityInviteEmbed from "EmbeddedActivityInviteEmbed" /* 15396 */;
+import GuildTemplateEmbed from "GuildTemplateEmbed" /* 15399 */;
+import BuildOverrideEmbed from "BuildOverrideEmbed" /* 15401 */;
+import VoiceChannelLinkEmbed from "VoiceChannelLinkEmbed" /* 15403 */;
+import createSocialLayerStorefrontMultiSkuEmbed2 from "createSocialLayerStorefrontMultiSkuEmbed" /* 15404 */;
+import createSocialLayerStorefrontProductDetailsEmbed2 from "createSocialLayerStorefrontProductDetailsEmbed" /* 15407 */;
+import QuestEmbed from "QuestEmbed" /* 15408 */;
+import createConjureProjectLinkEmbedDefault from "createConjureProjectLinkEmbed" /* 15410 */;
+import GameOrganizationInviteEmbed from "GameOrganizationInviteEmbed" /* 15411 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import LurkingStore from "LurkingStore" /* 4947 */;
-import GuildStore from "GuildStore" /* 4885 */;
-import UserStore from "UserStore" /* 1383 */;
+import LurkingStore from "LurkingStore" /* 5073 */;
+import GuildStore from "GuildStore" /* 5011 */;
+import UserStore from "UserStore" /* 1385 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/messages/native/renderer/row_data/embeds/coded_links/CodedLinks.tsx");
@@ -40,7 +43,9 @@ export function createCodedLinkEmbeds(message, message2, channel, forcedTheme) {
       const codedLinks = message2.codedLinks;
       return codedLinks.map((item) => {
         let code;
-        let obj9;
+        let id;
+        let obj10;
+        let obj13;
         let type;
         let url;
         ({ type, code, url } = item);
@@ -51,15 +56,15 @@ export function createCodedLinkEmbeds(message, message2, channel, forcedTheme) {
           } else {
             const tmpResult = ApplicationCodedLink;
             if (tmpResult.isApplicationCodedLinkMobileSupported(type)) {
-              const tmpResult20 = ApplicationCodedLink;
-              const applicationCodedLinkData = tmpResult20.getApplicationCodedLinkData(type, code, url);
+              const tmpResult22 = ApplicationCodedLink;
+              const applicationCodedLinkData = tmpResult22.getApplicationCodedLinkData(type, code, url);
               if (null == applicationCodedLinkData) {
                 return null;
               } else {
                 const applicationId = applicationCodedLinkData.applicationId;
-                const obj2 = { appId: applicationId, channel: tmp32, message, theme };
-                const tmpResult21 = createAppMessageEmbed;
-                const appLinkGateResult = tmpResult21.getAppLinkGateResult(obj2);
+                const obj2 = { appId: applicationId, channel: tmp45, message, theme };
+                const tmpResult23 = createAppMessageEmbed;
+                const appLinkGateResult = tmpResult23.getAppLinkGateResult(obj2);
                 if ("unavailable" === appLinkGateResult.state) {
                   return null;
                 } else if ("blocked" === appLinkGateResult.state) {
@@ -70,8 +75,8 @@ export function createCodedLinkEmbeds(message, message2, channel, forcedTheme) {
                   if (CodedLink.CodedLinkType.ACTIVITY_BOOKMARK === type2) {
                     const params = applicationCodedLinkData.params;
                     const obj3 = { theme, embedUrl: url, message, app, params };
-                    const tmpResult22 = createActivityMessageEmbed;
-                    return tmpResult22.createActivityMessageEmbed(obj3);
+                    const tmpResult24 = createActivityMessageEmbed;
+                    return tmpResult24.createActivityMessageEmbed(obj3);
                   } else {
                     if (CodedLink.CodedLinkType.APP_DIRECTORY_PROFILE !== type2) {
                       if (CodedLink.CodedLinkType.APP_OAUTH2_LINK !== type2) {
@@ -79,8 +84,8 @@ export function createCodedLinkEmbeds(message, message2, channel, forcedTheme) {
                       }
                     }
                     const obj4 = { theme, embedUrl: url, message, app };
-                    const tmpResult23 = createAppMessageEmbed;
-                    return tmpResult23.createAppMessageEmbed(obj4);
+                    const tmpResult25 = createAppMessageEmbed;
+                    return tmpResult25.createAppMessageEmbed(obj4);
                   }
                 }
               }
@@ -89,23 +94,23 @@ export function createCodedLinkEmbeds(message, message2, channel, forcedTheme) {
             }
           }
         } else if (CodedLink.CodedLinkType.INVITE === type) {
-          const tmpResult24 = InviteEmbed;
-          return tmpResult24.createInviteEmbed(message, code, theme);
+          const tmpResult26 = InviteEmbed;
+          return tmpResult26.createInviteEmbed(message, code, theme);
         } else if (CodedLink.CodedLinkType.TEMPLATE === type) {
-          const tmpResult25 = GuildTemplateEmbed;
-          return tmpResult25.createGuildTemplateEmbed(code, theme);
+          const tmpResult27 = GuildTemplateEmbed;
+          return tmpResult27.createGuildTemplateEmbed(code, theme);
         } else if (CodedLink.CodedLinkType.BUILD_OVERRIDE === type) {
-          const tmpResult26 = BuildOverrideEmbed;
-          return tmpResult26.createBuildOverrideEmbed(code, theme);
+          const tmpResult28 = BuildOverrideEmbed;
+          return tmpResult28.createBuildOverrideEmbed(code, theme);
         } else if (CodedLink.CodedLinkType.MANUAL_BUILD_OVERRIDE === type) {
           currentUser = UserStore.getCurrentUser();
           let isStaffResult;
-          const obj15 = UserStore;
+          const obj20 = UserStore;
           if (currentUser != null) {
             isStaffResult = currentUser.isStaff();
           }
           if (!isStaffResult) {
-            const currentUser1 = obj15.getCurrentUser();
+            const currentUser1 = obj20.getCurrentUser();
             let isStaffPersonalResult;
             if (currentUser1 != null) {
               isStaffPersonalResult = currentUser1.isStaffPersonal();
@@ -114,30 +119,30 @@ export function createCodedLinkEmbeds(message, message2, channel, forcedTheme) {
           }
           if (!isStaffResult) {
             isStaffResult = null != GuildStore.getGuild("943265993613008967") && !LurkingStore.isLurking("943265993613008967");
-            const tmp24 = null != GuildStore.getGuild("943265993613008967") && !LurkingStore.isLurking("943265993613008967");
+            const tmp37 = null != GuildStore.getGuild("943265993613008967") && !LurkingStore.isLurking("943265993613008967");
           }
           let buildOverrideEmbed = null;
           if (isStaffResult) {
-            const tmpResult27 = BuildOverrideEmbed;
-            buildOverrideEmbed = tmpResult27.createBuildOverrideEmbed(code, theme);
+            const tmpResult29 = BuildOverrideEmbed;
+            buildOverrideEmbed = tmpResult29.createBuildOverrideEmbed(code, theme);
           }
           return buildOverrideEmbed;
         } else if (CodedLink.CodedLinkType.EVENT === type) {
-          const tmpResult28 = GuildScheduledEventEmbed;
-          return tmpResult28.createGuildScheduledEventLinkEmbed(code, theme);
+          const tmpResult30 = GuildScheduledEventEmbed;
+          return tmpResult30.createGuildScheduledEventLinkEmbed(code, theme);
         } else if (CodedLink.CodedLinkType.CHANNEL_LINK === type) {
-          const tmpResult29 = VoiceChannelLinkEmbed;
-          return tmpResult29.createVoiceChannelLinkEmbed(code, theme);
+          const tmpResult31 = VoiceChannelLinkEmbed;
+          return tmpResult31.createVoiceChannelLinkEmbed(code, theme);
         } else if (CodedLink.CodedLinkType.EMBEDDED_ACTIVITY_INVITE === type) {
           const obj5 = { theme, inviteCode: code };
-          const tmpResult30 = EmbeddedActivityInviteEmbed;
-          return tmpResult30.createEmbeddedActivityInviteEmbed(obj5);
+          const tmpResult32 = EmbeddedActivityInviteEmbed;
+          return tmpResult32.createEmbeddedActivityInviteEmbed(obj5);
         } else if (CodedLink.CodedLinkType.EXPERIMENT === type) {
           let experimentEmbed = null;
-          const tmpResult31 = useCodedLinksExperimentEmbeds;
-          if (tmpResult31.canSeeExperimentEmbeds()) {
-            const tmpResult32 = ExperimentEmbed;
-            experimentEmbed = tmpResult32.createExperimentEmbed(url, theme);
+          const tmpResult33 = useCodedLinksExperimentEmbeds;
+          if (tmpResult33.canSeeExperimentEmbeds()) {
+            const tmpResult34 = ExperimentEmbed;
+            experimentEmbed = tmpResult34.createExperimentEmbed(url, theme);
           }
           return experimentEmbed;
         } else {
@@ -147,30 +152,52 @@ export function createCodedLinkEmbeds(message, message2, channel, forcedTheme) {
                 if (CodedLink.CodedLinkType.SOCIAL_LAYER_STOREFRONT_APP !== type) {
                   if (CodedLink.CodedLinkType.QUESTS_EMBED === type) {
                     const obj6 = { theme, questId: code, currentUser };
-                    const tmpResult33 = QuestEmbed;
-                    return tmpResult33.createQuestsEmbed(obj6);
+                    const tmpResult35 = QuestEmbed;
+                    return tmpResult35.createQuestsEmbed(obj6);
                   } else {
                     if (CodedLink.CodedLinkType.COLLECTIBLES_SHOP !== type) {
                       if (CodedLink.CodedLinkType.GAME_PROFILE !== type) {
                         if (CodedLink.CodedLinkType.GAME_SERVER_SHARE !== type) {
                           if (CodedLink.CodedLinkType.USER_PROFILE !== type) {
-                            if (CodedLink.CodedLinkType.GAME_ORGANIZATION_INVITE === type) {
-                              let gameOrganizationInviteEmbed = null;
-                              const tmpResult34 = LinkedGameOrgInvitesExperiment;
-                              if (tmpResult34.getLinkedGameOrgInvitesEnabled("mobile_coded_link_embed")) {
-                                let id;
-                                const createGameOrganizationInviteEmbed = GameOrganizationInviteEmbed.createGameOrganizationInviteEmbed;
-                                GameOrganizationInviteEmbed;
-                                const tmp6 = theme;
-                                if (currentUser != null) {
-                                  id = currentUser.id;
+                            if (CodedLink.CodedLinkType.USER_WISHLIST !== type) {
+                              if (CodedLink.CodedLinkType.CONJURE_PROJECT === type) {
+                                const tmp9 = createConjureProjectLinkEmbedDefault;
+                                const tmpResult36 = conjureProjectLink;
+                                const result = tmpResult36.conjureProjectLinkTicket(url);
+                                let guild_id;
+                                if (channel != null) {
+                                  guild_id = tmp12.guild_id;
                                 }
-                                gameOrganizationInviteEmbed = createGameOrganizationInviteEmbed(code, tmp6, id);
+                                if (guild_id == null) {
+                                  guild_id = null;
+                                }
+                                const obj7 = { guildId: guild_id, channelId: id };
+                                id = undefined;
+                                if (channel != null) {
+                                  id = tmp12.id;
+                                }
+                                if (id == null) {
+                                  id = null;
+                                }
+                                return tmp9(code, result, theme, obj7);
+                              } else if (CodedLink.CodedLinkType.GAME_ORGANIZATION_INVITE === type) {
+                                let gameOrganizationInviteEmbed = null;
+                                const tmpResult37 = LinkedGameOrgInvitesExperiment;
+                                if (tmpResult37.getLinkedGameOrgInvitesEnabled("mobile_coded_link_embed")) {
+                                  let id1;
+                                  const createGameOrganizationInviteEmbed = GameOrganizationInviteEmbed.createGameOrganizationInviteEmbed;
+                                  GameOrganizationInviteEmbed;
+                                  const tmp6 = theme;
+                                  if (currentUser != null) {
+                                    id1 = currentUser.id;
+                                  }
+                                  gameOrganizationInviteEmbed = createGameOrganizationInviteEmbed(code, tmp6, id1);
+                                }
+                                return gameOrganizationInviteEmbed;
+                              } else {
+                                const tmpResult39 = GlobalUtils;
+                                return tmpResult39.assertNever(type);
                               }
-                              return gameOrganizationInviteEmbed;
-                            } else {
-                              const tmpResult36 = GlobalUtils;
-                              return tmpResult36.assertNever(type);
                             }
                           }
                         }
@@ -180,24 +207,34 @@ export function createCodedLinkEmbeds(message, message2, channel, forcedTheme) {
                   }
                 }
               }
-              const tmpResult37 = storefrontCodedLink;
-              const result = tmpResult37.parseStorefrontCodedLink(code);
-              if (null != result) {
-                if (result.skuIds.length <= 1) {
-                  const first = _slicedToArray(result.skuIds, 1)[0];
-                  const obj7 = { skuId: first, guildOrApplication: obj9, theme };
-                  const createSocialLayerStorefrontProductDetailsEmbed = createSocialLayerStorefrontProductDetailsEmbed2.createSocialLayerStorefrontProductDetailsEmbed;
-                  createSocialLayerStorefrontProductDetailsEmbed2;
-                  if (type === CodedLink.CodedLinkType.SOCIAL_LAYER_STOREFRONT_APP) {
-                    obj9 = { type: "application", applicationId: result.scopeId };
-                    const obj8 = { type: "application", applicationId: result.scopeId };
-                  } else {
-                    obj9 = { type: "guild", guildId: result.scopeId };
-                  }
-                  return createSocialLayerStorefrontProductDetailsEmbed(obj7);
+              const tmpResult40 = storefrontCodedLink;
+              const result1 = tmpResult40.parseStorefrontCodedLink(code);
+              if (null == result1) {
+                return null;
+              } else if (result1.skuIds.length > 1) {
+                const obj8 = { skuIds: result1.skuIds, guildOrApplication: obj10 };
+                const createSocialLayerStorefrontMultiSkuEmbed = createSocialLayerStorefrontMultiSkuEmbed2.createSocialLayerStorefrontMultiSkuEmbed;
+                createSocialLayerStorefrontMultiSkuEmbed2;
+                if (type === CodedLink.CodedLinkType.SOCIAL_LAYER_STOREFRONT_APP) {
+                  obj10 = { type: "application", applicationId: result1.scopeId };
+                  const obj9 = { type: "application", applicationId: result1.scopeId };
+                } else {
+                  obj10 = { type: "guild", guildId: result1.scopeId };
                 }
+                return createSocialLayerStorefrontMultiSkuEmbed(obj8);
+              } else {
+                const first = _slicedToArray(result1.skuIds, 1)[0];
+                const obj11 = { skuId: first, guildOrApplication: obj13, theme };
+                const createSocialLayerStorefrontProductDetailsEmbed = createSocialLayerStorefrontProductDetailsEmbed2.createSocialLayerStorefrontProductDetailsEmbed;
+                createSocialLayerStorefrontProductDetailsEmbed2;
+                if (type === CodedLink.CodedLinkType.SOCIAL_LAYER_STOREFRONT_APP) {
+                  obj13 = { type: "application", applicationId: result1.scopeId };
+                  const obj12 = { type: "application", applicationId: result1.scopeId };
+                } else {
+                  obj13 = { type: "guild", guildId: result1.scopeId };
+                }
+                return createSocialLayerStorefrontProductDetailsEmbed(obj11);
               }
-              return null;
             }
           }
           return null;

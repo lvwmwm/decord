@@ -1,21 +1,21 @@
-// Module ID: 11363
-// Function ID: 11364
+// Module ID: 11503
+// Function ID: 11504
 // Name: GameOrganizationInviteStore
-// Dependencies: [11364, 11365, 504, 572, 2]
+// Dependencies: [11504, 11505, 11506, 504, 572, 2]
 
-// Module 11363 (GameOrganizationInviteStore)
+// Module 11503 (GameOrganizationInviteStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import fromServerGameOrganization from "fromServerGameOrganization" /* 11365 */;
-import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11364 */;
+import GameOrganizationModels from "GameOrganizationModels" /* 11505 */;
+import fromServerGameOrganization from "fromServerGameOrganization" /* 11506 */;
+import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11504 */;
 import size from "module_2" /* 2 */;
-
-let set;
 
 let c2;
 let c3;
 ({ GameOrganizationCharacterMode: c2, GameOrganizationInviteStates: c3 } = GameOrganizationInviteConstants);
 let map = new Map();
+let set = new Set();
 const Store = get_initializedDefault.Store;
 class GameOrganizationInviteStore extends Store {
   getInvite(arg0) {
@@ -27,6 +27,12 @@ class GameOrganizationInviteStore extends Store {
   }
   getInvites() {
     return map;
+  }
+  isJoinFlowPending(code) {
+    return set.has(code);
+  }
+  getPendingJoinFlowCodes() {
+    return set;
   }
 }
 const prototype = GameOrganizationInviteStore.prototype;
@@ -63,10 +69,10 @@ let obj = {
     const code = invite.code;
     map = new Map(map);
     const application_config = invite.application_config;
-    const obj = { code: invite.code, state: constants2.RESOLVED, inviterId: invite.inviter_id, accepted: invite.accepted, guildId: invite.guild.id, organization: obj2.fromServerGameOrganization(game_organization), application: obj3.fromServerGameOrganizationApplication(application), displayNoun: display_noun, characterMode: character_mode, linkedGuild: tmp2Result.fromServerGameOrganizationGuild(guild) };
+    const obj = { code: invite.code, state: constants2.RESOLVED, inviterId: invite.inviter_id, accepted: invite.accepted, guildId: invite.guild.id, organization: obj2.gameOrganizationFromServer(game_organization), application: obj3.fromServerGameOrganizationApplication(application), displayNoun: display_noun, characterMode: character_mode, linkedGuild: tmp2Result.fromServerGameOrganizationGuild(guild) };
     set = map.set;
     ({ game_organization, application, guild } = invite);
-    obj2 = fromServerGameOrganization;
+    obj2 = GameOrganizationModels;
     display_noun = undefined;
     obj3 = fromServerGameOrganization;
     if (application_config != null) {
@@ -122,6 +128,24 @@ let obj = {
       set = map.set;
       const merged = Object.assign(value);
       const result = set(code, obj);
+    }
+  },
+  GAME_ORGANIZATION_JOIN_FLOW_PENDING: function handleJoinFlowPending(arg0) {
+    let code;
+    let pending;
+    ({ code, pending } = arg0);
+    if (set.has(code) === pending) {
+      return false;
+    } else {
+      const _Set = Set;
+      const self = this;
+      const self2 = this;
+      set = new Set(set);
+      if (pending) {
+        set.add(code);
+      } else {
+        set.delete(code);
+      }
     }
   }
 };

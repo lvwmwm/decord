@@ -1,19 +1,19 @@
-// Module ID: 19408
-// Function ID: 19409
+// Module ID: 19812
+// Function ID: 19813
 // Name: CallIdleManager
-// Dependencies: [4862, 4863, 5679, 5767, 19409, 7636, 1113, 6706, 7287, 4858, 2]
+// Dependencies: [4988, 4989, 5803, 5896, 19813, 7712, 1113, 6761, 7350, 4984, 2]
 
-// Module 19408 (CallIdleManager)
+// Module 19812 (CallIdleManager)
 import intl2 from "intl" /* 1113 */;
-import Timers from "Timers" /* 4858 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6706 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7636 */;
-import CampInDmExperiment from "CampInDmExperiment" /* 19409 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4862 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
-import VoiceStateStore from "VoiceStateStore" /* 5679 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5767 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7287 */;
+import Timers from "Timers" /* 4984 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6761 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7712 */;
+import CampInDmExperiment from "CampInDmExperiment" /* 19813 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4988 */;
+import ChannelStore from "ChannelStore" /* 4989 */;
+import VoiceStateStore from "VoiceStateStore" /* 5803 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5896 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7350 */;
 import size from "module_2" /* 2 */;
 
 function disconnect() {
@@ -48,7 +48,7 @@ function disconnect() {
       const sendBotMessage = MessageActionCreatorsDefault.sendBotMessage;
       MessageActionCreatorsDefault;
       const intl = intl2.intl;
-      sendBotMessage(currentClientVoiceChannelId1, intl.formatToPlainString(intl2.t.XYof5G, { number: 3 }));
+      sendBotMessage(currentClientVoiceChannelId1, intl.formatToPlainString(intl2.t.XYof5G, { number: 3 }), "call_idle_disconnect");
       const obj4 = SelectedChannelActionCreatorsDefault;
       const voiceChannel = obj4.selectVoiceChannel(null);
     }

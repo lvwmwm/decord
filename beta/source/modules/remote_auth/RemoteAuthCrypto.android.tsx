@@ -1,10 +1,10 @@
-// Module ID: 18030
-// Function ID: 18031
+// Module ID: 18370
+// Function ID: 18371
 // Name: RemoteAuthCrypto
-// Dependencies: [5, 18031, 2]
+// Dependencies: [5, 18371, 2]
 
-// Module 18030 (RemoteAuthCrypto)
-import react_nativeDefault from "react-native" /* 18031 */;
+// Module 18370 (RemoteAuthCrypto)
+import react_nativeDefault from "react-native" /* 18371 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ class AndroidRemoteAuthCrypto {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -106,7 +106,7 @@ class AndroidRemoteAuthCrypto {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

@@ -1,43 +1,43 @@
-// Module ID: 15281
-// Function ID: 15282
+// Module ID: 15567
+// Function ID: 15568
 // Name: PremiumPerkCard
-// Dependencies: [19, 17, 1385, 1072, 21, 5642, 15282, 2047, 7563, 7351, 1113, 15283, 15284, 15285, 15286, 15287, 15288, 15289, 15290, 15291, 15292, 15293, 15294, 15295, 15296, 15297, 15298, 15299, 5624, 2061, 5014, 575, 5717, 15300, 5634, 2]
+// Dependencies: [19, 17, 1387, 1072, 21, 5766, 15568, 2171, 7635, 7412, 1113, 15569, 15570, 15571, 15572, 15573, 15574, 15575, 15576, 15577, 15578, 15579, 15580, 15581, 15582, 15583, 15584, 15585, 5751, 2185, 5140, 575, 5842, 15586, 5758, 2]
 // Exports: default, usePerkCardHeight, usePremiumPerkCard
 
-// Module 15281 (PremiumPerkCard)
+// Module 15567 (PremiumPerkCard)
 import nativeDefault from "native" /* 575 */;
 import intl37 from "intl" /* 1113 */;
-import PremiumConstants from "PremiumConstants" /* 1385 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2061 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import components_Button_Button from "components/Button/Button" /* 5634 */;
-import useFontScale from "useFontScale" /* 5642 */;
-import FastImageDefault from "FastImage" /* 5717 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7351 */;
-import openUserSettings from "openUserSettings" /* 7563 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15283 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 15284 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 15285 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 15286 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 15287 */;
-import AssetRegistryDefault6 from "AssetRegistry" /* 15288 */;
-import AssetRegistryDefault7 from "AssetRegistry" /* 15289 */;
-import AssetRegistryDefault8 from "AssetRegistry" /* 15290 */;
-import AssetRegistryDefault9 from "AssetRegistry" /* 15291 */;
-import AssetRegistryDefault10 from "AssetRegistry" /* 15292 */;
-import AssetRegistryDefault11 from "AssetRegistry" /* 15293 */;
-import AssetRegistryDefault12 from "AssetRegistry" /* 15294 */;
-import AssetRegistryDefault13 from "AssetRegistry" /* 15295 */;
-import AssetRegistryDefault14 from "AssetRegistry" /* 15296 */;
-import AssetRegistryDefault15 from "AssetRegistry" /* 15297 */;
-import AssetRegistryDefault16 from "AssetRegistry" /* 15298 */;
-import _modDef15299 from "module_15299" /* 15299 */;
-import PillTextDefault from "PillText" /* 15300 */;
+import PremiumConstants from "PremiumConstants" /* 1387 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2185 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import components_Button_Button from "components/Button/Button" /* 5758 */;
+import useFontScale from "useFontScale" /* 5766 */;
+import FastImageDefault from "FastImage" /* 5842 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7412 */;
+import openUserSettings from "openUserSettings" /* 7635 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15569 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 15570 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 15571 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 15572 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 15573 */;
+import AssetRegistryDefault6 from "AssetRegistry" /* 15574 */;
+import AssetRegistryDefault7 from "AssetRegistry" /* 15575 */;
+import AssetRegistryDefault8 from "AssetRegistry" /* 15576 */;
+import AssetRegistryDefault9 from "AssetRegistry" /* 15577 */;
+import AssetRegistryDefault10 from "AssetRegistry" /* 15578 */;
+import AssetRegistryDefault11 from "AssetRegistry" /* 15579 */;
+import AssetRegistryDefault12 from "AssetRegistry" /* 15580 */;
+import AssetRegistryDefault13 from "AssetRegistry" /* 15581 */;
+import AssetRegistryDefault14 from "AssetRegistry" /* 15582 */;
+import AssetRegistryDefault15 from "AssetRegistry" /* 15583 */;
+import AssetRegistryDefault16 from "AssetRegistry" /* 15584 */;
+import _modDef15585 from "module_15585" /* 15585 */;
+import PillTextDefault from "PillText" /* 15586 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let c10;
@@ -122,8 +122,8 @@ export default function PremiumPerkCard(variant) {
       const obj2 = { style: tmp4.imageContainer, children: items1 };
       items1 = [React4(FastImageDefault, obj3), ];
       const obj4 = { style: tmp4.imageOverlayTextContainer, children: React4(Text, obj5) };
-      obj5 = { style: tmp4.imageOverlayText, variant: "text-md/bold", children: imageOverlayText.toUpperCase() };
-      Text = tmp6(5624).Text;
+      obj5 = { style: tmp4.imageOverlayText, variant: "body-md/semibold", children: imageOverlayText.toUpperCase() };
+      Text = tmp6(5751).Text;
       items1[1] = React4(React3, obj4);
       tmp15 = authStore(React3, obj2);
     } else {
@@ -140,8 +140,8 @@ export default function PremiumPerkCard(variant) {
     }
   }
   if (null != description) {
-    const obj8 = { variant: "text-sm/normal", children: description };
-    tmp20 = React4(tmp6(5624).Text, obj8);
+    const obj8 = { variant: "body-sm/normal", children: description };
+    tmp20 = React4(tmp6(5751).Text, obj8);
   } else {
     tmp20 = null;
     if (null != bodyComponent) {
@@ -164,7 +164,7 @@ export default function PremiumPerkCard(variant) {
     tmp25 = React4(PillTextDefault, obj11);
   }
   items4 = [tmp25, tmp10, , , ];
-  const obj12 = { style: items5, variant: "heading-lg/extrabold", accessibilityRole: "header", children: title };
+  const obj12 = { style: items5, variant: "heading-lg/semibold", accessibilityRole: "header", children: title };
   items5 = [tmp4.title, titleStyle];
   items4[2] = React4(Text_Text.Text, obj12);
   const obj13 = { style: tmp4.description, children: tmp20 };
@@ -245,9 +245,9 @@ export function usePremiumPerkCard() {
   let obj9;
   let prop;
   let subscriptionPlansLoaded;
-  let obj = subscriptionPlansLoaded(15282);
+  let obj = subscriptionPlansLoaded(15568);
   subscriptionPlansLoaded = obj.useSubscriptionPlansLoaded();
-  let obj2 = subscriptionPlansLoaded(2047);
+  let obj2 = subscriptionPlansLoaded(2171);
   const maxFileSizeForPremiumType = obj2.getMaxFileSizeForPremiumType(PremiumTypes.TIER_2);
   const callback = react.useCallback(() => {
     const obj2 = { screen: constants.COLLECTIBLES_SHOP, params: { analyticsSource: AnalyticsLocationDefault.PREMIUM_MARKETING_PERK_CARD } };
@@ -329,11 +329,11 @@ export function usePremiumPerkCard() {
   intl32 = subscriptionPlansLoaded(1113).intl;
   intl33 = subscriptionPlansLoaded(1113).intl;
   intl34 = subscriptionPlansLoaded(1113).intl;
-  obj20 = { title: intl35.string(subscriptionPlansLoaded(1113).t.aJE9i1), imageSrc: { uri: _modDef15299 }, imageStyle: { aspectRatio: 1.9789473684210526 }, bodyComponent: closure_9(Text, obj22) };
+  obj20 = { title: intl35.string(subscriptionPlansLoaded(1113).t.aJE9i1), imageSrc: { uri: _modDef15585 }, imageStyle: { aspectRatio: 1.9789473684210526 }, bodyComponent: closure_9(Text, obj22) };
   intl35 = subscriptionPlansLoaded(1113).intl;
-  obj22 = { variant: "text-sm/normal", children: format(prop, obj23) };
-  ({ uri: _modDef15299 });
-  Text = subscriptionPlansLoaded(5624).Text;
+  obj22 = { variant: "body-sm/normal", children: format(prop, obj23) };
+  ({ uri: _modDef15585 });
+  Text = subscriptionPlansLoaded(5751).Text;
   const intl36 = subscriptionPlansLoaded(1113).intl;
   format = intl36.format;
   obj23 = { termsLink: obj24.getArticleURL(NITRO_2_POINT_0.NITRO_2_POINT_0) };

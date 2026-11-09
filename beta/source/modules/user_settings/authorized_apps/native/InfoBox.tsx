@@ -1,18 +1,18 @@
-// Module ID: 11391
-// Function ID: 11392
+// Module ID: 11532
+// Function ID: 11533
 // Name: InfoBox
-// Dependencies: [19, 17, 21, 5014, 575, 5735, 7086, 5624, 2]
+// Dependencies: [19, 17, 21, 5140, 575, 5859, 7152, 5751, 2]
 // Exports: default
 
-// Module 11391 (InfoBox)
+// Module 11532 (InfoBox)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import CircleInformationIcon2 from "CircleInformationIcon" /* 5735 */;
-import CircleErrorIcon2 from "CircleErrorIcon" /* 7086 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import CircleInformationIcon2 from "CircleInformationIcon" /* 5859 */;
+import CircleErrorIcon2 from "CircleErrorIcon" /* 7152 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -23,9 +23,9 @@ const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let createStyles = createStyles_mod;
 let obj = { infoBox: obj2, infoBoxWarning: obj3, infoText: { flex: 1 } };
-obj2 = { borderRadius: nativeDefault.radii.xs, padding: 8, borderStyle: "solid", borderWidth: 1, borderColor: nativeDefault.colors.TEXT_LINK, backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_INFO, flexDirection: "row", alignItems: "center", gap: 8 };
+obj2 = { borderRadius: nativeDefault.radii.xs, padding: 8, borderStyle: "solid", borderWidth: 1, borderColor: nativeDefault.colors.TEXT_LINK, backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_MOD_INFO, flexDirection: "row", alignItems: "center", gap: 8 };
 createStyles = createStyles.createStyles;
-obj3 = { borderColor: nativeDefault.colors.ICON_FEEDBACK_WARNING, backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_WARNING };
+obj3 = { borderColor: nativeDefault.colors.ICON_FEEDBACK_WARNING, backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_MOD_WARNING };
 let closure_6 = createStyles(obj);
 let obj4 = { INFO: "info", WARNING: "warning" };
 const result = size.fileFinishedImporting("modules/user_settings/authorized_apps/native/InfoBox.tsx");
@@ -56,7 +56,7 @@ export default function InfoBox(look) {
   obj4 = { style: items2, children: items3 };
   items2 = [style, ...{ [closure_1_7.INFO]: items, [closure_1_7.WARNING]: items1 }[INFO]];
   items3 = [obj[INFO], ];
-  const obj5 = { style: tmp2.infoText, variant: "text-sm/semibold", children };
+  const obj5 = { style: tmp2.infoText, variant: "body-sm/semibold", children };
   items3[1] = React3(Text_Text.Text, obj5);
   return hasOwnProperty(View, obj4);
 };

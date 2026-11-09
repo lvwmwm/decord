@@ -1,10 +1,10 @@
-// Module ID: 19051
-// Function ID: 19052
+// Module ID: 19426
+// Function ID: 19427
 // Name: RecurringReferralReminderExperiment
-// Dependencies: [1447, 2]
+// Dependencies: [1449, 2]
 
-// Module 19051 (RecurringReferralReminderExperiment)
-import ApexExperiment from "ApexExperiment" /* 1447 */;
+// Module 19426 (RecurringReferralReminderExperiment)
+import ApexExperiment from "ApexExperiment" /* 1449 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

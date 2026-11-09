@@ -1,21 +1,21 @@
-// Module ID: 15490
-// Function ID: 15491
+// Module ID: 15783
+// Function ID: 15784
 // Name: GuildBoostingMarketingFaq
-// Dependencies: [32, 19, 17, 1072, 21, 5014, 7583, 575, 1113, 2061, 5624, 6980, 1187, 15491, 2]
+// Dependencies: [32, 19, 17, 1072, 21, 5140, 7659, 575, 1113, 2185, 5751, 7043, 1187, 15784, 2]
 // Exports: default
 
-// Module 15490 (GuildBoostingMarketingFaq)
+// Module 15783 (GuildBoostingMarketingFaq)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2061 */;
-import GuildBoostingMarketingPersistentCta from "GuildBoostingMarketingPersistentCta" /* 7583 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15491 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2185 */;
+import GuildBoostingMarketingPersistentCta from "GuildBoostingMarketingPersistentCta" /* 7659 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15784 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -152,7 +152,7 @@ export default function GuildBoostingMarketingFaq() {
   const tmp2 = _slicedToArray(react.useState(null), 2);
   let obj = { style: tmp.wrapper, children: closure_8(View, obj2) };
   obj2 = { style: tmp.content, children: items };
-  let obj3 = { style: tmp.heading, variant: "heading-xxl/bold", children: intl.string(require("intl").t.HPJ6Nj) };
+  let obj3 = { style: tmp.heading, variant: "heading-xxl/semibold", children: intl.string(require("intl").t.HPJ6Nj) };
   const Heading = require("Text/Text").Heading;
   intl = require("intl").intl;
   items = [closure_7(Heading, obj3), ];
@@ -193,7 +193,7 @@ export default function GuildBoostingMarketingFaq() {
         str = "interactive-text-active";
       }
       items1 = [, ];
-      const obj3 = { color: str, style: closure_0.question, variant: "text-md/normal", children: getQuestion.getQuestion() };
+      const obj3 = { color: str, style: closure_0.question, variant: "body-md/normal", children: getQuestion.getQuestion() };
       items1[0] = closure_1_7(Text, obj3);
       const obj4 = { source: AssetRegistryDefault, style: items2 };
       const Icon = tmp5(tmp6[12]).Icon;
@@ -201,7 +201,7 @@ export default function GuildBoostingMarketingFaq() {
       items1[1] = closure_1_7(Icon, obj4);
       items3 = [closure_1_8(PressableOpacity, obj2), ];
       if (tmp) {
-        const obj5 = { style: closure_0.answer, color: "interactive-text-active", variant: "text-sm/normal", children: getQuestion.getAnswer() };
+        const obj5 = { style: closure_0.answer, color: "interactive-text-active", variant: "body-sm/normal", children: getQuestion.getAnswer() };
         const Text2 = tmp5(tmp6[10]).Text;
         tmp = tmp7(Text2, obj5);
       }

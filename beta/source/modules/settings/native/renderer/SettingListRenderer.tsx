@@ -1,22 +1,22 @@
-// Module ID: 16584
-// Function ID: 16585
+// Module ID: 16906
+// Function ID: 16907
 // Name: SettingListRenderer
-// Dependencies: [19, 17, 16585, 16432, 11541, 21, 5014, 575, 7060, 5624, 16586, 1625, 16587, 16592, 7294, 16593, 16596, 16597, 1888, 2]
+// Dependencies: [19, 17, 16907, 16753, 11686, 21, 5140, 575, 7126, 5751, 16908, 1627, 16909, 16914, 7357, 16915, 16918, 16919, 2017, 2]
 
-// Module 16584 (SettingListRenderer)
+// Module 16906 (SettingListRenderer)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import TableRowGroup from "TableRowGroup" /* 7060 */;
-import SettingRendererConstants from "SettingRendererConstants" /* 11541 */;
-import SettingRenderer from "SettingRenderer" /* 16586 */;
-import SettingRendererUtils from "SettingRendererUtils" /* 16587 */;
-import SettingsSearchEmptyStateDefault from "SettingsSearchEmptyState" /* 16596 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import TableRowGroup from "TableRowGroup" /* 7126 */;
+import SettingRendererConstants from "SettingRendererConstants" /* 11686 */;
+import SettingRenderer from "SettingRenderer" /* 16908 */;
+import SettingRendererUtils from "SettingRendererUtils" /* 16909 */;
+import SettingsSearchEmptyStateDefault from "SettingsSearchEmptyState" /* 16918 */;
 import react from "react" /* 19 */;
-import UserSettingSearchStore from "UserSettingSearchStore" /* 16585 */;
-import SettingBlocklistStore from "SettingBlocklistStore" /* 16432 */;
-import createStyles from "createStyles" /* 5014 */;
+import UserSettingSearchStore from "UserSettingSearchStore" /* 16907 */;
+import SettingBlocklistStore from "SettingBlocklistStore" /* 16753 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -36,7 +36,7 @@ function SearchListSectionSubLabel(subLabel) {
   let tmpResult;
   subLabel = subLabel.subLabel;
   if (typeof subLabel === "string") {
-    const obj2 = { variant: "text-xs/normal", color: "text-muted", children: subLabel };
+    const obj2 = { variant: "body-xs/normal", color: "text-muted", children: subLabel };
     tmpResult = tmp(Text_Text.Text, obj2);
   } else {
     const _Array = Array;
@@ -110,7 +110,7 @@ const memoResult = react.memo(function SettingsList(node) {
   node = node.node;
   let field;
   const tmp = closure_9();
-  const bottom = field(1625)().bottom;
+  const bottom = field(1627)().bottom;
   field = SettingBlocklistStore.useField("blocklist");
   const items = [field, node];
   const memo = react.useMemo(() => {
@@ -118,10 +118,10 @@ const memoResult = react.memo(function SettingsList(node) {
     return obj.toSettingListItems(node, field);
   }, items);
   const ref = react.useRef(null);
-  let obj = node(16592);
+  let obj = node(16914);
   obj.useAutoScrollToSearchResultSetting(ref, memo, node.scrollTarget);
   const obj4 = { paddingBottom: bottom + field(575).space.PX_16 };
-  const FlashList = node(7294).FlashList;
+  const FlashList = node(7357).FlashList;
   const merged = Object.assign(tmp.contentContainer);
   return <View style={tmp.container}>{null}</View>;
 });

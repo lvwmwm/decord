@@ -1,20 +1,20 @@
-// Module ID: 15013
-// Function ID: 15014
+// Module ID: 15286
+// Function ID: 15287
 // Name: UserProfileRemediatedNotice
-// Dependencies: [19, 17, 4956, 1072, 21, 5014, 575, 8814, 563, 5624, 1113, 7488, 2]
+// Dependencies: [19, 17, 5082, 1072, 21, 5140, 575, 8888, 563, 5751, 1113, 7552, 2]
 // Exports: default
 
-// Module 15013 (UserProfileRemediatedNotice)
+// Module 15286 (UserProfileRemediatedNotice)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7488 */;
-import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 8814 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7552 */;
+import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 8888 */;
 import react from "react" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4956 */;
+import RelationshipStore from "RelationshipStore" /* 5082 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let metroImportAll;
@@ -54,25 +54,25 @@ export default function RemediatedUserNotice(user) {
     items1 = [tmp.container, tmp3.card, style];
     const tmp9 = View;
     if (isBlocked) {
-      const obj3 = { variant: "text-sm/semibold", color: "text-default", lineClamp: 1, children: intl.string(user(1113).t["oC/fU6"]) };
-      const Text = tmp4(5624).Text;
+      const obj3 = { variant: "body-sm/semibold", color: "text-default", lineClamp: 1, children: intl.string(user(1113).t["oC/fU6"]) };
+      const Text = tmp4(5751).Text;
       intl = tmp4(1113).intl;
       isBlocked = closure_6(Text, obj3);
     }
     items2 = [isBlocked, ];
     if (isIgnored) {
       const obj4 = { children: items3 };
-      const obj5 = { variant: "text-sm/semibold", color: "text-default", lineClamp: 1, children: intl2.string(user(1113).t.HXz5An) };
-      const Text2 = tmp4(5624).Text;
+      const obj5 = { variant: "body-sm/semibold", color: "text-default", lineClamp: 1, children: intl2.string(user(1113).t.HXz5An) };
+      const Text2 = tmp4(5751).Text;
       intl2 = tmp4(1113).intl;
-      items3 = [closure_6(Text2, obj5), closure_6(user(5624).Text, { variant: "text-sm/semibold", color: "text-default", accessibilityElementsHidden: true, importantForAccessibility: "no", children: "\u2022" }), ];
+      items3 = [closure_6(Text2, obj5), closure_6(user(5751).Text, { variant: "body-sm/semibold", color: "text-default", accessibilityElementsHidden: true, importantForAccessibility: "no", children: "\u2022" }), ];
       const intl3 = tmp4(1113).intl;
       const obj6 = {
         unignoreHook(children) {
               let id;
               let obj = {
                 role: "button",
-                variant: "heading-sm/medium",
+                variant: "heading-xs/medium",
                 color: "text-link",
                 onPress() {
                   const obj = RelationshipActionCreatorsDefault;

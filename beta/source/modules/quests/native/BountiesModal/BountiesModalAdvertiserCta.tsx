@@ -1,33 +1,38 @@
-// Module ID: 16958
-// Function ID: 16959
+// Module ID: 17281
+// Function ID: 17282
 // Name: BountiesModalAdvertiserCta
-// Dependencies: [109, 19, 17, 5015, 6781, 21, 5095, 5014, 575, 5254, 5257, 16959, 9695, 5641, 9717, 9719, 6788, 7871, 6786, 8180, 5717, 5624, 5634, 16922, 504, 16923, 9960, 2]
+// Dependencies: [109, 19, 17, 5141, 6836, 21, 1652, 5140, 575, 5370, 5373, 17282, 9785, 5765, 9807, 9809, 6843, 7948, 6841, 8249, 5842, 5751, 5758, 17245, 504, 17246, 10082, 2]
 // Exports: default
 
-// Module 16958 (BountiesModalAdvertiserCta)
+// Module 17281 (BountiesModalAdvertiserCta)
 import nativeDefault from "native" /* 575 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 5095 */;
-import timing from "timing" /* 5254 */;
-import timingPresets from "timingPresets" /* 5257 */;
-import QuestConstants from "QuestConstants" /* 6781 */;
-import QuestContent from "QuestContent" /* 6786 */;
-import AdCreativeType from "AdCreativeType" /* 6788 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7871 */;
-import QuestPlatformUtils from "QuestPlatformUtils" /* 9719 */;
+import timing_timing from "timing/timing" /* 5370 */;
+import timingPresets from "timingPresets" /* 5373 */;
+import QuestConstants from "QuestConstants" /* 6836 */;
+import QuestContent from "QuestContent" /* 6841 */;
+import AdCreativeType from "AdCreativeType" /* 6843 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7948 */;
+import QuestPlatformUtils from "QuestPlatformUtils" /* 9809 */;
+import AnimatedEnterExitItemDefault from "AnimatedEnterExitItem" /* 10082 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5015 */;
+import AccessibilityStore from "AccessibilityStore" /* 5141 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import module_1652 from "module_1652" /* 1652 */;
+import createStyles from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
-
-const ReanimatedRexport = ReanimatedRexport2;
 
 let Pressable;
 let c10;
 let metroImportDefault;
 let metroRequire;
+let tmp4;
+let tmp5;
+let tmp6;
+let tmp7;
+let tmp8;
+let tmp9;
 let unpackModuleId;
 function BountiesModalAdvertiserCtaContent(bounty) {
   let BackgroundBlurView;
@@ -93,7 +98,7 @@ function BountiesModalAdvertiserCtaContent(bounty) {
   obj6 = { source: { uri: scaledImageUrl }, style: tmp.ctaLogo, resizeMode: "cover" };
   items5 = [closure_10(closure_7, obj5), , ];
   const obj7 = { style: tmp.ctaInfo, children: closure_10(bounty(getQuestImpressionId[21]).Text, obj8) };
-  obj8 = { lineClamp: 2, variant: "text-sm/semibold", color: "text-default", children: bountyCtaInfo.label };
+  obj8 = { lineClamp: 2, variant: "body-sm/semibold", color: "text-default", children: bountyCtaInfo.label };
   items5[1] = closure_10(closure_7, obj7);
   const obj9 = { accessible: false, importantForAccessibility: "no-hide-descendants", children: closure_10(bounty(getQuestImpressionId[22]).Button, obj10) };
   obj10 = { variant: "primary-overlay", text: bountyCtaInfo.buttonLabel, size: "sm", onPress: callback2 };
@@ -104,7 +109,7 @@ let closure_3 = ["style"];
 ({ StyleSheet: metroRequire, View: metroImportDefault, Pressable } = react_native);
 const QuestsExperimentLocations = QuestConstants.QuestsExperimentLocations;
 ({ jsx: c10, jsxs: unpackModuleId } = Fragment);
-let closure_12 = ReanimatedRexport.createAnimatedComponent(Pressable);
+let closure_12 = module_1652.createAnimatedComponent(Pressable);
 let closure_13 = createStyles.createStyles(() => {
   let obj2;
   let obj4;
@@ -119,87 +124,113 @@ let closure_13 = createStyles.createStyles(() => {
   const merged1 = Object.assign(metroRequire.absoluteFillObject);
   return obj;
 });
-let entering = function n(value) {
-  let obj2;
-  const obj = { opacity: obj2.withTiming(value, timingPresets.timingStandard, "respect-motion-settings") };
-  obj2 = timing;
-  return obj;
-};
-let obj = { withTiming: timing.withTiming, timingStandard: timingPresets.timingStandard };
-entering.__closure = obj;
-entering.__workletHash = 2981824910249;
-entering.__initData = { code: "function BountiesModalAdvertiserCtaTsx1(visible){const{withTiming,timingStandard}=this.__closure;return{opacity:withTiming(visible,timingStandard,'respect-motion-settings')};}" };
-const fn2 = function s(value, fn2) {
-  let obj2;
-  const obj = { opacity: obj2.withTiming(value, timingPresets.timingFast, "respect-motion-settings", fn2) };
-  obj2 = timing;
-  return obj;
-};
-let obj2 = { withTiming: timing.withTiming, timingFast: timingPresets.timingFast };
-fn2.__closure = obj2;
-fn2.__workletHash = 15850601331978;
-fn2.__initData = { code: "function BountiesModalAdvertiserCtaTsx2(visible,cleanUp){const{withTiming,timingFast}=this.__closure;return{opacity:withTiming(visible,timingFast,'respect-motion-settings',cleanUp)};}" };
-const __initData = { code: "function BountiesModalAdvertiserCtaTsx3(){const{withTiming,interpolate,visibility,visible,timingStandard,timingFast}=this.__closure;return{transform:[{translateY:withTiming(interpolate(visibility,[0,1],[8,0]),visible?timingStandard:timingFast)}]};}" };
+let items = [{ code: "(function BountiesModalAdvertiserCtaTsx1(visible){let[withTiming,timingStandard]=this.__closure;return{opacity:withTiming(visible,timingStandard,'respect-motion-settings')};})" }, timing_timing.withTiming, timingPresets.timingStandard];
+let c0;
+let c1;
+[tmp4, tmp5, tmp6] = items;
+class BountiesModalAdvertiserCtaTsx1 {
+  constructor(arg0) {
+    const obj = { opacity: _undefined(arg0, c1, "respect-motion-settings") };
+    return obj;
+  }
+}
+let items1 = [tmp5, tmp6];
+BountiesModalAdvertiserCtaTsx1.__closure = items1;
+BountiesModalAdvertiserCtaTsx1.__workletHash = 17397968298384;
+BountiesModalAdvertiserCtaTsx1.__initData = tmp4;
+let items2 = [{ code: "(function BountiesModalAdvertiserCtaTsx2(visible,cleanUp){let[withTiming,timingFast]=this.__closure;return{opacity:withTiming(visible,timingFast,'respect-motion-settings',cleanUp)};})" }, timing_timing.withTiming, timingPresets.timingFast];
+c0 = undefined;
+c1 = undefined;
+[tmp7, tmp8, tmp9] = items2;
+class BountiesModalAdvertiserCtaTsx2 {
+  constructor(arg0, arg1) {
+    const obj = { opacity: _undefined(arg0, c1, "respect-motion-settings", arg1) };
+    return obj;
+  }
+}
+let items3 = [tmp8, tmp9];
+BountiesModalAdvertiserCtaTsx2.__closure = items3;
+BountiesModalAdvertiserCtaTsx2.__workletHash = 5281001933907;
+BountiesModalAdvertiserCtaTsx2.__initData = tmp7;
+let closure_17 = { code: "(function BountiesModalAdvertiserCtaTsx3(){let[withTiming,interpolate,visibility,visible,timingStandard,timingFast]=this.__closure;return{transform:[{translateY:withTiming(interpolate(visibility,[0,1],[8,0]),visible?timingStandard:timingFast)}]};})" };
 let size = size_mod;
 let result = size.fileFinishedImporting("modules/quests/native/BountiesModal/BountiesModalAdvertiserCta.tsx");
 
 export default function BountiesModalAdvertiserCta(visible) {
-  let tmp18;
+  let tmp10;
+  let tmp11;
+  let tmp12;
+  let tmp13;
+  let tmp26;
+  let tmp7;
+  let tmp8;
+  let tmp9;
   let useReducedMotion;
   visible = visible.visible;
   let merged = Object.assign(visible, Object.assign({ visible: 0 }));
   let animatedStyle;
-  let tmp3 = animatedStyle;
-  let obj = visible(animatedStyle[23]);
+  let obj = animatedStyle(17245);
   const isBountiesModalTransitionsRefactorEnabled = obj.useIsBountiesModalTransitionsRefactorEnabled(QuestsExperimentLocations.VIDEO_MODAL_MOBILE);
-  let obj2 = visible(animatedStyle[24]);
+  const obj2 = animatedStyle(504);
   let items = [AccessibilityStore];
   let num = 0;
   const stateFromStores = obj2.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
   if (visible) {
     num = 1;
   }
-  entering = function s() {
-    let items;
-    const withTiming = timing.withTiming;
-    timing;
-    const obj = ReanimatedRexport2;
-    const interpolateResult = obj.interpolate(num, [0, 1], [8, 0]);
-    const tmp3 = timingPresets;
-    const obj2 = { transform: items };
-    items = [{ translateY: withTiming(interpolateResult, visible ? tmp3.timingStandard : tmp3.timingFast) }];
-    ({ translateY: withTiming(interpolateResult, visible ? tmp3.timingStandard : tmp3.timingFast) });
-    return obj2;
-  };
-  const tmp2Result = visible(tmp3[6]);
-  const obj3 = { withTiming: tmp2(tmp3[9]).withTiming, interpolate: tmp2(tmp3[6]).interpolate, visibility: num, visible, timingStandard: tmp2(tmp3[10]).timingStandard, timingFast: tmp2(tmp3[10]).timingFast };
-  entering.__closure = obj3;
-  entering.__workletHash = 252868467367;
-  entering.__initData = __initData;
-  animatedStyle = tmp2Result.useAnimatedStyle(entering);
-  const items1 = [animatedStyle];
+  const items1 = [closure_17, , , , , , ];
+  const useAnimatedStyle = animatedStyle(1652).useAnimatedStyle;
+  animatedStyle(1652);
+  items1[1] = animatedStyle(5370).withTiming;
+  items1[2] = animatedStyle(1652).interpolate;
+  items1[3] = num;
+  items1[4] = visible;
+  items1[5] = animatedStyle(5373).timingStandard;
+  items1[6] = animatedStyle(5373).timingFast;
+  let c0;
+  let c1;
+  let c2;
+  let c3;
+  let c4;
+  let c5;
+  [tmp7, tmp8, tmp9, tmp10, tmp11, tmp12, tmp13] = items1;
+  class BountiesModalAdvertiserCtaTsx3 {
+    constructor() {
+      let items;
+      const obj = { transform: items };
+      items = [{ translateY: _undefined(_undefined(c2, [0, 1], [8, 0]), c3 ? c4 : c5) }];
+      ({ translateY: _undefined(_undefined(c2, [0, 1], [8, 0]), c3 ? c4 : c5) });
+      return obj;
+    }
+  }
+  const items2 = [tmp8, tmp9, tmp10, tmp11, tmp12, tmp13];
+  BountiesModalAdvertiserCtaTsx3.__closure = items2;
+  BountiesModalAdvertiserCtaTsx3.__workletHash = 3225253604542;
+  BountiesModalAdvertiserCtaTsx3.__initData = tmp7;
+  animatedStyle = useAnimatedStyle(BountiesModalAdvertiserCtaTsx3);
+  const items3 = [animatedStyle];
   const callback = react.useCallback((arg0, opacityStyle) => {
     const obj = { opacityStyle, transformStyle: animatedStyle };
     const merged = Object.assign(arg0);
     return authStore(BountiesModalAdvertiserCtaContent, obj);
-  }, items1);
-  const tmp2Result2 = visible(tmp3[25]);
-  const obj4 = { visible, entranceTiming: visible(tmp3[10]).timingStandard, exitTiming: visible(tmp3[10]).timingFast };
-  const visibilityTransition = tmp2Result2.useVisibilityTransition(obj4);
+  }, items3);
+  const tmp2Result2 = animatedStyle(17246);
+  const obj3 = { visible, entranceTiming: animatedStyle(5373).timingStandard, exitTiming: animatedStyle(5373).timingFast };
+  const visibilityTransition = tmp2Result2.useVisibilityTransition(obj3);
   let shouldRender = visibilityTransition.shouldRender;
   if (isBountiesModalTransitionsRefactorEnabled) {
-    const obj5 = { useReducedMotion: stateFromStores, item: tmp18, entering, exiting: fn2, renderItem: callback };
-    tmp18 = undefined;
-    const tmp15 = closure_10;
-    const tmp17 = num(tmp3[26]);
+    const obj4 = { useReducedMotion: stateFromStores, item: tmp26, entering: BountiesModalAdvertiserCtaTsx1, exiting: BountiesModalAdvertiserCtaTsx2, renderItem: callback };
+    tmp26 = undefined;
+    const tmp23 = closure_10;
+    const tmp25 = AnimatedEnterExitItemDefault;
     if (visible) {
-      tmp18 = merged;
+      tmp26 = merged;
     }
-    shouldRender = tmp15(tmp17, obj5);
+    shouldRender = tmp23(tmp25, obj4);
   } else if (shouldRender) {
-    const obj6 = { opacityStyle: tmp9, transformStyle: animatedStyle };
+    const obj5 = { opacityStyle: tmp17, transformStyle: animatedStyle };
     const merged1 = Object.assign(merged);
-    shouldRender = closure_10(BountiesModalAdvertiserCtaContent, obj6);
+    shouldRender = closure_10(BountiesModalAdvertiserCtaContent, obj5);
   }
   return shouldRender;
 };

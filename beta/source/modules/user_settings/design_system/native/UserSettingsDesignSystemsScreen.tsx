@@ -1,14 +1,14 @@
-// Module ID: 17610
-// Function ID: 17611
+// Module ID: 17938
+// Function ID: 17939
 // Name: UserSettingsDesignSystemsScreen
-// Dependencies: [19, 8432, 21, 11540, 16583, 2]
+// Dependencies: [19, 8503, 21, 11685, 16905, 2]
 // Exports: default
 
-// Module 17610 (UserSettingsDesignSystemsScreen)
+// Module 17938 (UserSettingsDesignSystemsScreen)
 import Fragment from "Fragment" /* 21 */;
-import SettingsConstants from "SettingsConstants" /* 8432 */;
-import SettingBuilders from "SettingBuilders" /* 11540 */;
-import SettingLayoutDefault from "SettingLayout" /* 16583 */;
+import SettingsConstants from "SettingsConstants" /* 8503 */;
+import SettingBuilders from "SettingBuilders" /* 11685 */;
+import SettingLayoutDefault from "SettingLayout" /* 16905 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

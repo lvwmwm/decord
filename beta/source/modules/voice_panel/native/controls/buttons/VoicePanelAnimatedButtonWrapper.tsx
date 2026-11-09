@@ -1,21 +1,23 @@
-// Module ID: 19306
-// Function ID: 19307
+// Module ID: 19711
+// Function ID: 19712
 // Name: VoicePanelAnimatedButtonWrapper
-// Dependencies: [19, 17, 11223, 21, 5014, 575, 5095, 19201, 1375, 5637, 5254, 2]
+// Dependencies: [19, 17, 11363, 21, 5140, 575, 1652, 19577, 1377, 5761, 5370, 2]
 // Exports: default
 
-// Module 19306 (VoicePanelAnimatedButtonWrapper)
+// Module 19711 (VoicePanelAnimatedButtonWrapper)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import PlatformUtils from "PlatformUtils" /* 1375 */;
-import timing from "timing" /* 5254 */;
-import spring from "spring" /* 5637 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11223 */;
+import PlatformUtils from "PlatformUtils" /* 1377 */;
+import timing_timing from "timing/timing" /* 5370 */;
+import spring_spring from "spring/spring" /* 5761 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11363 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5014 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
+import createStyles from "createStyles" /* 5140 */;
+import module_1652 from "module_1652" /* 1652 */;
 import size_mod from "module_2" /* 2 */;
+
+let obj1, obj5, obj6;
 
 let obj2;
 const Pressable = react_native.Pressable;
@@ -24,9 +26,9 @@ let jsx = Fragment.jsx;
 let obj = { pressableWrapper: obj2 };
 obj2 = { justifyContent: "center", alignItems: "center", borderRadius: nativeDefault.modules.button.BORDER_RADIUS_LG };
 let closure_6 = createStyles.createStyles(obj);
-let closure_7 = ReanimatedRexport.createAnimatedComponent(Pressable);
-let closure_8 = { code: "function VoicePanelAnimatedButtonWrapperTsx1(values){const{offsetFromCenter,withSpring,MODE_CHANGE_PHYSICS,withTiming}=this.__closure;offsetFromCenter.set(values.windowWidth/2-values.targetGlobalOriginX-values.targetWidth/2);return{initialValues:{originX:values.targetOriginX+offsetFromCenter.get(),opacity:0,transform:[{scale:0.5}]},animations:{originX:withSpring(values.targetOriginX,MODE_CHANGE_PHYSICS),opacity:withTiming(1,{duration:100}),transform:[{scale:withSpring(1,MODE_CHANGE_PHYSICS)}]}};}" };
-let closure_9 = { code: "function VoicePanelAnimatedButtonWrapperTsx2(values){const{withSpring,offsetFromCenter,MODE_CHANGE_PHYSICS,withTiming}=this.__closure;return{initialValues:{originX:values.currentOriginX,opacity:1,transform:[{scale:1}]},animations:{originX:withSpring(values.currentOriginX+offsetFromCenter.get(),MODE_CHANGE_PHYSICS),opacity:withTiming(0,{duration:100}),transform:[{scale:withSpring(0.5,MODE_CHANGE_PHYSICS)}]}};}" };
+let closure_7 = module_1652.createAnimatedComponent(Pressable);
+let closure_8 = { code: "(function VoicePanelAnimatedButtonWrapperTsx1(values){let[offsetFromCenter,withSpring,MODE_CHANGE_PHYSICS,withTiming]=this.__closure;offsetFromCenter.set(values.windowWidth/2-values.targetGlobalOriginX-values.targetWidth/2);return{initialValues:{originX:values.targetOriginX+offsetFromCenter.get(),opacity:0,transform:[{scale:0.5}]},animations:{originX:withSpring(values.targetOriginX,MODE_CHANGE_PHYSICS),opacity:withTiming(1,{duration:100}),transform:[{scale:withSpring(1,MODE_CHANGE_PHYSICS)}]}};})" };
+let closure_9 = { code: "(function VoicePanelAnimatedButtonWrapperTsx2(values){let[withSpring,offsetFromCenter,MODE_CHANGE_PHYSICS,withTiming]=this.__closure;return{initialValues:{originX:values.currentOriginX,opacity:1,transform:[{scale:1}]},animations:{originX:withSpring(values.currentOriginX+offsetFromCenter.get(),MODE_CHANGE_PHYSICS),opacity:withTiming(0,{duration:100}),transform:[{scale:withSpring(0.5,MODE_CHANGE_PHYSICS)}]}};})" };
 let size = size_mod;
 let result = size.fileFinishedImporting("modules/voice_panel/native/controls/buttons/VoicePanelAnimatedButtonWrapper.tsx");
 
@@ -86,63 +88,81 @@ export default function AnimatedButtonWrapper(onPressOut) {
   let items1 = [sharedValue];
   const items2 = [sharedValue];
   const memo1 = pressed.useMemo(() => {
+    let tmp10;
+    let tmp11;
+    let tmp7;
+    let tmp8;
+    let tmp9;
     let obj = PlatformUtils;
     if (!obj.isAndroid()) {
-      const fn = function t(windowWidth) {
-        let items;
-        let items1;
-        let obj2;
-        let obj3;
-        let obj4;
-        let obj5;
-        let obj7;
-        const result = __initData.set(windowWidth.windowWidth / 2 - windowWidth.targetGlobalOriginX - windowWidth.targetWidth / 2);
-        const obj = { initialValues: obj2, animations: obj3 };
-        obj2 = { originX: windowWidth.targetOriginX + __initData.get(), opacity: 0, transform: items };
-        items = [{ scale: 0.5 }];
-        obj3 = { originX: obj4.withSpring(windowWidth.targetOriginX, closure_4), opacity: obj5.withTiming(1, { duration: 100 }), transform: items1 };
-        obj4 = onPressIn(style[9]);
-        obj5 = onPressIn(style[10]);
-        const obj6 = { scale: obj7.withSpring(1, closure_4) };
-        items1 = [obj6];
-        obj7 = onPressIn(style[9]);
-        return obj;
-      };
-      let obj2 = { offsetFromCenter: sharedValue, withSpring: spring.withSpring, MODE_CHANGE_PHYSICS, withTiming: timing.withTiming };
-      fn.__closure = obj2;
-      fn.__workletHash = 16238937246135;
-      fn.__initData = __initData;
-      return fn;
+      let items = [closure_8, sharedValue, spring_spring.withSpring, MODE_CHANGE_PHYSICS, timing_timing.withTiming];
+      let c0;
+      let c1;
+      let c2;
+      let c3;
+      [tmp7, tmp8, tmp9, tmp10, tmp11] = items;
+      class VoicePanelAnimatedButtonWrapperTsx1 {
+        constructor(arg0) {
+          result = closure_0.set(arg0.windowWidth / 2 - arg0.targetGlobalOriginX - arg0.targetWidth / 2);
+          obj = { initialValues: null, animations: null };
+          obj1 = { originX: arg0.targetOriginX + closure_0.get(), opacity: 0, transform: null };
+          items = [];
+          items[0] = { scale: 0.5 };
+          obj1.transform = items;
+          obj.initialValues = obj1;
+          obj5 = { originX: closure_1(arg0.targetOriginX, closure_2), opacity: closure_3(1, { duration: 100 }), transform: null };
+          obj6 = { scale: closure_1(1, closure_2) };
+          items1 = [];
+          items1[0] = obj6;
+          obj5.transform = items1;
+          obj.animations = obj5;
+          return obj;
+        }
+      }
+      let items1 = [tmp8, tmp9, tmp10, tmp11];
+      VoicePanelAnimatedButtonWrapperTsx1.__closure = items1;
+      VoicePanelAnimatedButtonWrapperTsx1.__workletHash = 6115796697934;
+      VoicePanelAnimatedButtonWrapperTsx1.__initData = tmp7;
+      return VoicePanelAnimatedButtonWrapperTsx1;
     }
   }, items1);
   const items3 = [style, tmp4.pressableWrapper, width, height];
   const memo2 = pressed.useMemo(() => {
+    let tmp10;
+    let tmp11;
+    let tmp7;
+    let tmp8;
+    let tmp9;
     let obj = PlatformUtils;
     if (!obj.isAndroid()) {
-      const fn = function t(currentOriginX) {
-        let items;
-        let items1;
-        let obj2;
-        let obj3;
-        let obj4;
-        let obj5;
-        let obj7;
-        const obj = { initialValues: obj2, animations: obj3 };
-        obj2 = { originX: currentOriginX.currentOriginX, opacity: 1, transform: items };
-        items = [{ scale: 1 }];
-        obj3 = { originX: obj4.withSpring(currentOriginX.currentOriginX + __initData.get(), closure_4), opacity: obj5.withTiming(0, { duration: 100 }), transform: items1 };
-        obj4 = onPressIn(style[9]);
-        obj5 = onPressIn(style[10]);
-        const obj6 = { scale: obj7.withSpring(0.5, closure_4) };
-        items1 = [obj6];
-        obj7 = onPressIn(style[9]);
-        return obj;
-      };
-      let obj2 = { withSpring: spring.withSpring, offsetFromCenter: sharedValue, MODE_CHANGE_PHYSICS, withTiming: timing.withTiming };
-      fn.__closure = obj2;
-      fn.__workletHash = 17504057367727;
-      fn.__initData = __initData2;
-      return fn;
+      let items = [closure_9, spring_spring.withSpring, sharedValue, MODE_CHANGE_PHYSICS, timing_timing.withTiming];
+      let c0;
+      let c1;
+      let c2;
+      let c3;
+      [tmp7, tmp8, tmp9, tmp10, tmp11] = items;
+      class VoicePanelAnimatedButtonWrapperTsx2 {
+        constructor(arg0) {
+          obj = { initialValues: null, animations: null };
+          obj1 = { originX: arg0.currentOriginX, opacity: 1, transform: null };
+          items = [];
+          items[0] = { scale: 1 };
+          obj1.transform = items;
+          obj.initialValues = obj1;
+          obj5 = { originX: closure_0(arg0.currentOriginX + closure_1.get(), closure_2), opacity: closure_3(0, { duration: 100 }), transform: null };
+          obj6 = { scale: closure_0(0.5, closure_2) };
+          items1 = [];
+          items1[0] = obj6;
+          obj5.transform = items1;
+          obj.animations = obj5;
+          return obj;
+        }
+      }
+      let items1 = [tmp8, tmp9, tmp10, tmp11];
+      VoicePanelAnimatedButtonWrapperTsx2.__closure = items1;
+      VoicePanelAnimatedButtonWrapperTsx2.__workletHash = 1297258033910;
+      VoicePanelAnimatedButtonWrapperTsx2.__initData = tmp7;
+      return VoicePanelAnimatedButtonWrapperTsx2;
     }
   }, items2);
   const memo3 = pressed.useMemo(() => {

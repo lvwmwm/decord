@@ -1,22 +1,22 @@
-// Module ID: 11274
-// Function ID: 11275
+// Module ID: 11414
+// Function ID: 11415
 // Name: MoreTipsModal
-// Dependencies: [19, 17, 10804, 1072, 21, 5014, 575, 11275, 5624, 1113, 11280, 7558, 6744, 8359, 1187, 1625, 563, 11269, 6540, 6545, 7169, 2]
+// Dependencies: [19, 17, 10923, 1072, 21, 5140, 575, 11415, 5751, 1113, 11420, 7630, 6799, 8429, 1187, 1627, 563, 11409, 6594, 6599, 7231, 2]
 // Exports: default
 
-// Module 11274 (MoreTipsModal)
+// Module 11414 (MoreTipsModal)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import MonitoringAgentDefault from "MonitoringAgent" /* 6540 */;
-import SafetyWarningUtils from "SafetyWarningUtils" /* 11269 */;
-import SafetyTipsSectionDefault from "SafetyTipsSection" /* 11275 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import MonitoringAgentDefault from "MonitoringAgent" /* 6594 */;
+import SafetyWarningUtils from "SafetyWarningUtils" /* 11409 */;
+import SafetyTipsSectionDefault from "SafetyTipsSection" /* 11415 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 10804 */;
+import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 10923 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let c9;
@@ -29,8 +29,8 @@ let obj4;
 let obj5;
 let tmp;
 let tmp6;
-const MetricEvents = tmp(6545);
-const WasThisHelpfulSectionDefault = tmp6(11280);
+const MetricEvents = tmp(6599);
+const WasThisHelpfulSectionDefault = tmp6(11420);
 function MoreTipsModalScreen(learnMore) {
   let actionItems;
   let channelId;
@@ -59,7 +59,7 @@ function MoreTipsModalScreen(learnMore) {
   items[1] = tmp2Result;
   items1 = [React4(React3, obj3), , ];
   const obj5 = { children: items2 };
-  const obj6 = { variant: "eyebrow", color: "text-default", style: tmp.header, children: intl.string(intl2.t.K5FKtc) };
+  const obj6 = { variant: "body-sm/medium", color: "text-default", style: tmp.header, children: intl.string(intl2.t.K5FKtc) };
   const Text = Text_Text.Text;
   intl = intl2.intl;
   items2 = [metroImportAll(Text, obj6), actionItems];

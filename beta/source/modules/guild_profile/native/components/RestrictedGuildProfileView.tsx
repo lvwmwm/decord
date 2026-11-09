@@ -1,19 +1,19 @@
-// Module ID: 9298
-// Function ID: 9299
+// Module ID: 9379
+// Function ID: 9380
 // Name: RestrictedGuildProfileView
-// Dependencies: [19, 17, 21, 9299, 5253, 5596, 575, 5587, 6957, 5624, 1113, 2]
+// Dependencies: [19, 17, 21, 9380, 5369, 5724, 575, 5715, 7020, 5751, 1113, 2]
 // Exports: default
 
-// Module 9298 (RestrictedGuildProfileView)
+// Module 9379 (RestrictedGuildProfileView)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import useThemeDefault from "useTheme" /* 5253 */;
-import LinearGradientDefault from "LinearGradient" /* 5587 */;
-import useToken from "useToken" /* 5596 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import GuildIcon from "GuildIcon" /* 6957 */;
-import GuildProfileView from "GuildProfileView" /* 9299 */;
+import useThemeDefault from "useTheme" /* 5369 */;
+import LinearGradientDefault from "LinearGradient" /* 5715 */;
+import useToken from "useToken" /* 5724 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import GuildIcon from "GuildIcon" /* 7020 */;
+import GuildProfileView from "GuildProfileView" /* 9380 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -55,7 +55,7 @@ export default function RestrictedGuildProfileView() {
   const Text = Text_Text.Text;
   intl = intl3.intl;
   items1 = [React3(Text, obj10), ];
-  const obj11 = { variant: "text-md/medium", color: "text-subtle", children: intl2.string(intl3.t["8mfCqY"]) };
+  const obj11 = { variant: "body-md/medium", color: "text-subtle", children: intl2.string(intl3.t["8mfCqY"]) };
   const Text2 = Text_Text.Text;
   intl2 = intl3.intl;
   items1[1] = React3(Text2, obj11);

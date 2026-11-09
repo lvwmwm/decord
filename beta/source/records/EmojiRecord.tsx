@@ -1,11 +1,11 @@
-// Module ID: 19727
-// Function ID: 19728
+// Module ID: 20137
+// Function ID: 20138
 // Name: EmojiRecord
-// Dependencies: [1398, 1397, 2]
+// Dependencies: [1405, 1404, 2]
 
-// Module 19727 (EmojiRecord)
-import Record from "Record" /* 1398 */;
-import UserRecord from "UserRecord" /* 1397 */;
+// Module 20137 (EmojiRecord)
+import Record from "Record" /* 1405 */;
+import UserRecord from "UserRecord" /* 1404 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("records/EmojiRecord.tsx");

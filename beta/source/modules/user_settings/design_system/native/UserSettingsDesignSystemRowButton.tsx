@@ -1,16 +1,16 @@
-// Module ID: 17770
-// Function ID: 17771
+// Module ID: 18102
+// Function ID: 18103
 // Name: UserSettingsDesignSystemRowButton
-// Dependencies: [19, 17, 21, 8177, 6027, 575, 5624, 8179, 7562, 2]
+// Dependencies: [19, 17, 21, 8246, 6159, 575, 5751, 8248, 7634, 2]
 // Exports: default
 
-// Module 17770 (UserSettingsDesignSystemRowButton)
+// Module 18102 (UserSettingsDesignSystemRowButton)
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import Stack_Stack from "Stack/Stack" /* 6027 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7562 */;
-import _mod8177 from "module_8177" /* 8177 */;
-import RowButton8 from "RowButton" /* 8179 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import Stack_Stack from "Stack/Stack" /* 6159 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7634 */;
+import _mod8246 from "module_8246" /* 8246 */;
+import RowButton8 from "RowButton" /* 8248 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -37,11 +37,11 @@ export default function UserSettingsDesignSystemRowButton() {
   let obj6;
   const obj = { children: items1 };
   const obj2 = { title: "Row Buttons", description: metroRequire(Stack, obj3), children: hasOwnProperty(_false, {}) };
-  const FormSection = _mod8177.FormSection;
+  const FormSection = _mod8246.FormSection;
   obj3 = { style: obj4, children: items };
   obj4 = { padding: nativeDefault.space.PX_16 };
   Stack = Stack_Stack.Stack;
-  items = [hasOwnProperty(Text_Text.Text, { variant: "text-sm/normal", children: "Row Button Row Buttons are full-width, high-emphasis buttons that are used as primary CTAs in a page." }), hasOwnProperty(Text_Text.Text, { variant: "text-sm/normal", children: "Only stack up to 2 Row Buttons in a row to to prevent decision fatigue." })];
+  items = [hasOwnProperty(Text_Text.Text, { variant: "body-sm/normal", children: "Row Button Row Buttons are full-width, high-emphasis buttons that are used as primary CTAs in a page." }), hasOwnProperty(Text_Text.Text, { variant: "body-sm/normal", children: "Only stack up to 2 Row Buttons in a row to to prevent decision fatigue." })];
   items1 = [hasOwnProperty(FormSection, obj2), ];
   const obj5 = { style: { padding: 16 }, children: metroRequire(Stack2, obj6) };
   obj6 = { children: items2 };

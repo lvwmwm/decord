@@ -1,20 +1,15 @@
 // Module ID: 13141
 // Function ID: 13142
 // Dependencies: []
-// Exports: severityLevelFromString
 
 // Module 13141
-
-export function severityLevelFromString(arg0) {
-  let str = "warning";
-  if ("warn" !== arg0) {
-    const items = ["fatal", "error", "warning", "log", "info", "debug"];
-    let str2 = "log";
-    if (items.includes(arg0)) {
-      str2 = arg0;
-    }
-    str = str2;
+let obj2;
+const obj = { parse: obj2 };
+obj2 = {
+  prelude: null,
+  block() {
+    return this.Block(true);
   }
-  return str;
-}
-export const validSeverityLevels = ["fatal", "error", "warning", "log", "info", "debug"];
+};
+
+export default obj;

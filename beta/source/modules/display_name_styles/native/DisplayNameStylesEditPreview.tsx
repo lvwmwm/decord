@@ -1,27 +1,27 @@
-// Module ID: 17008
-// Function ID: 17009
+// Module ID: 17331
+// Function ID: 17332
 // Name: DisplayNameStylesEditPreview
-// Dependencies: [19, 17, 5015, 8731, 21, 5014, 575, 8737, 1984, 504, 8740, 11393, 1113, 2932, 11507, 17007, 6853, 8730, 4836, 1187, 8820, 10772, 10773, 5624, 2]
+// Dependencies: [19, 17, 5141, 8802, 21, 5140, 575, 8808, 2108, 504, 8811, 11534, 1113, 3056, 11652, 17330, 6908, 8801, 4962, 1187, 8894, 10891, 10892, 5751, 2]
 // Exports: default
 
-// Module 17008 (DisplayNameStylesEditPreview)
+// Module 17331 (DisplayNameStylesEditPreview)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
-import DateUtils from "DateUtils" /* 4836 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import useAvatarDecoration from "useAvatarDecoration" /* 6853 */;
-import usePendingAvatarSettingsDefault from "usePendingAvatarSettings" /* 8730 */;
-import RecentAvatarUtils from "RecentAvatarUtils" /* 8740 */;
-import profile_customization_ProfileCustomizationUtils from "profile_customization/ProfileCustomizationUtils" /* 8820 */;
-import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10772 */;
-import types from "types" /* 10773 */;
+import DateUtils from "DateUtils" /* 4962 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import useAvatarDecoration from "useAvatarDecoration" /* 6908 */;
+import usePendingAvatarSettingsDefault from "usePendingAvatarSettings" /* 8801 */;
+import RecentAvatarUtils from "RecentAvatarUtils" /* 8811 */;
+import profile_customization_ProfileCustomizationUtils from "profile_customization/ProfileCustomizationUtils" /* 8894 */;
+import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10891 */;
+import types from "types" /* 10892 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5015 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8731 */;
+import AccessibilityStore from "AccessibilityStore" /* 5141 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8802 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let items;
@@ -81,17 +81,17 @@ function ChatPreview(chatMessage) {
   items1 = [metroImportDefault(Avatar, obj5), ];
   const obj6 = { style: tmp.chatContent, children: items3 };
   const obj7 = { style: tmp.chatHeader, children: items2 };
-  const obj8 = { userId: user.id, guildId, userName: displayName, variant: "text-md/semibold", effectDisplayType: types.EffectDisplayType.PLAIN, lineClamp: 1, pendingDisplayNameStyles: displayNameStyles, style: tmp.chatUsername };
+  const obj8 = { userId: user.id, guildId, userName: displayName, variant: "body-md/semibold", effectDisplayType: types.EffectDisplayType.PLAIN, lineClamp: 1, pendingDisplayNameStyles: displayNameStyles, style: tmp.chatUsername };
   const tmp5Result = UsernameWithEffectsDefault;
   items2 = [metroImportDefault(tmp5Result, obj8), ];
-  const obj9 = { variant: "text-xs/medium", color: "text-muted", style: tmp.chatTimestamp, children: memo };
+  const obj9 = { variant: "body-xs/medium", color: "text-muted", style: tmp.chatTimestamp, children: memo };
   items2[1] = metroImportDefault(Text_Text.Text, obj9);
   items3 = [metroImportAll(View, obj7), ];
-  const obj10 = { variant: "text-md/normal", color: "text-default", style: tmp.chatMessageText, children: chatMessage };
-  const Text = tmp2(5624).Text;
+  const obj10 = { variant: "body-md/normal", color: "text-default", style: tmp.chatMessageText, children: chatMessage };
+  const Text = tmp2(5751).Text;
   if (chatMessage == null) {
     const intl = tmp2(1113).intl;
-    chatMessage = intl.string(tmp5(2932).h5Cuej);
+    chatMessage = intl.string(tmp5(3056).h5Cuej);
   }
   items3[1] = metroImportDefault(Text, obj10);
   items1[1] = metroImportAll(View, obj6);

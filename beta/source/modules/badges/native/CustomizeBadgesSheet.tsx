@@ -1,48 +1,49 @@
-// Module ID: 16486
-// Function ID: 16487
+// Module ID: 16804
+// Function ID: 16805
 // Name: CustomizeBadgesSheet
-// Dependencies: [19, 17, 8731, 1383, 8763, 1072, 5273, 1385, 21, 5014, 575, 5260, 9876, 16487, 9874, 1113, 7137, 7135, 5735, 6977, 11451, 5624, 11460, 8992, 7131, 5095, 5254, 5257, 14980, 9875, 5303, 5023, 11453, 1625, 504, 2047, 7326, 7351, 5591, 9905, 9906, 8762, 1252, 8768, 5712, 5272, 12411, 16488, 6953, 7321, 5275, 2]
+// Dependencies: [19, 17, 8802, 1385, 8834, 1072, 5389, 1387, 21, 5140, 575, 5376, 9998, 16805, 9996, 1113, 7164, 7162, 5859, 7040, 11591, 5751, 11602, 9072, 7202, 1652, 5370, 5373, 15253, 1705, 9997, 5420, 5149, 11593, 1627, 504, 2171, 7387, 7412, 5719, 10027, 10028, 8833, 1252, 8839, 5837, 5388, 12614, 16806, 7015, 7382, 5392, 2]
 // Exports: default
 
-// Module 16486 (CustomizeBadgesSheet)
+// Module 16804 (CustomizeBadgesSheet)
 import nativeDefault from "native" /* 575 */;
 import intl7 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import PremiumConstants from "PremiumConstants" /* 1385 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5023 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
-import timing from "timing" /* 5254 */;
-import timingPresets from "timingPresets" /* 5257 */;
-import HapticUtils from "HapticUtils" /* 5260 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 5273 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5712 */;
-import CircleInformationIcon2 from "CircleInformationIcon" /* 5735 */;
-import Card_Card from "Card/Card" /* 6977 */;
-import EyeSlashIcon2 from "EyeSlashIcon" /* 7135 */;
-import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8762 */;
-import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8768 */;
-import native from "native" /* 8992 */;
-import ContextMenu2 from "ContextMenu" /* 9874 */;
-import ContextMenuConstants from "ContextMenuConstants" /* 9876 */;
-import openPremiumModalDefault from "openPremiumModal" /* 9905 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9906 */;
-import BadgeCatalogIconDefault from "BadgeCatalogIcon" /* 11451 */;
-import BadgeUtils from "BadgeUtils" /* 11460 */;
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 12411 */;
-import PendingBadgeSettings from "PendingBadgeSettings" /* 14980 */;
-import BadgeGrid from "BadgeGrid" /* 16487 */;
+import PremiumConstants from "PremiumConstants" /* 1387 */;
+import _mod1652 from "module_1652" /* 1652 */;
+import _mod1705 from "module_1705" /* 1705 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5149 */;
+import timing_timing from "timing/timing" /* 5370 */;
+import timingPresets from "timingPresets" /* 5373 */;
+import HapticUtils from "HapticUtils" /* 5376 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 5389 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5837 */;
+import CircleInformationIcon2 from "CircleInformationIcon" /* 5859 */;
+import Card_Card from "Card/Card" /* 7040 */;
+import EyeSlashIcon2 from "EyeSlashIcon" /* 7162 */;
+import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8833 */;
+import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8839 */;
+import native from "native" /* 9072 */;
+import ContextMenu2 from "ContextMenu" /* 9996 */;
+import ContextMenuState from "ContextMenuState" /* 9997 */;
+import ContextMenuConstants from "ContextMenuConstants" /* 9998 */;
+import openPremiumModalDefault from "openPremiumModal" /* 10027 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 10028 */;
+import BadgeCatalogIconDefault from "BadgeCatalogIcon" /* 11591 */;
+import BadgeUtils from "BadgeUtils" /* 11602 */;
+import PendingBadgeSettings from "PendingBadgeSettings" /* 15253 */;
+import BadgeGrid from "BadgeGrid" /* 16805 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8731 */;
-import UserStore from "UserStore" /* 1383 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8763 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8802 */;
+import UserStore from "UserStore" /* 1385 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8834 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
-let BottomSheet, set, set2, set3;
+let set, set2;
 
 let Platform;
 let c10;
@@ -61,6 +62,9 @@ let obj6;
 let obj7;
 let obj8;
 let size;
+let tmp7;
+let tmp8;
+let tmp9;
 let unpackModuleId;
 function BadgeVisibilityMenu(badge) {
   let EyeSlashIcon;
@@ -88,13 +92,13 @@ function BadgeVisibilityMenu(badge) {
   };
   const tmp = authStore3;
   if (flag) {
-    EyeSlashIcon = tmp2(7137).EyeIcon;
+    EyeSlashIcon = tmp2(7164).EyeIcon;
   } else {
-    EyeSlashIcon = tmp2(7135).EyeSlashIcon;
+    EyeSlashIcon = tmp2(7162).EyeSlashIcon;
   }
   const obj2 = { items, align: str, disableGesture: true, triggerOnLongPress: true, children };
   items = [obj];
-  const result = index % tmp2(16487).BADGE_GRID_COLUMNS;
+  const result = index % tmp2(16805).BADGE_GRID_COLUMNS;
   str = "right";
   if (0 !== result) {
     let str2 = "above";
@@ -111,7 +115,7 @@ function BadgeTileContent(badge) {
   let tmp2;
   badge = badge.badge;
   const alwaysVisible = badge.alwaysVisible;
-  const tmp = closure_20();
+  const tmp = closure_18();
   let flag = badge.hidden;
   if (flag == null) {
     flag = false;
@@ -140,7 +144,7 @@ function BadgeTileContent(badge) {
   if (flag) {
     str = "text-muted";
   }
-  const obj5 = { variant: "text-xs/medium", color: str, lineClamp: 1, style: tmp.name, "aria-hidden": true, children: badge.name };
+  const obj5 = { variant: "body-xs/medium", color: str, lineClamp: 1, style: tmp.name, "aria-hidden": true, children: badge.name };
   items1[1] = authStore3(Text, obj5);
   let tmp14Result = null != tmp2;
   if (tmp14Result) {
@@ -152,11 +156,9 @@ function BadgeTileContent(badge) {
 }
 ({ Platform, View: closure_4 } = react_native);
 ({ AnalyticEvents: metroImportAll, AnalyticsObjects: c9, AnalyticsPages: c10, AnalyticsSections: unpackModuleId } = Constants);
-let closure_12 = ActionSheetConstants.ACTION_SHEET_MINIMUM_BOTTOM_PADDING;
+const constants3 = ActionSheetConstants.ACTION_SHEET_MINIMUM_BOTTOM_PADDING;
 const PremiumUpsellTypes = PremiumConstants.PremiumUpsellTypes;
 ({ jsx: closure_14, jsxs: closure_15 } = Fragment);
-let c16 = 80;
-let c17 = 16.666666666666668;
 let createStyles = createStyles_mod;
 let obj = { gridInset: obj2, grid: obj3, upsell: obj4, upsellCard: obj5, upsellContent: obj6, upsellCta: obj7, upsellText: { textAlign: "center" }, message: obj8, messageText: { textAlign: "center" } };
 obj2 = { paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_16 };
@@ -167,27 +169,27 @@ obj5 = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGHEST };
 obj6 = { paddingVertical: nativeDefault.space.PX_16, paddingHorizontal: nativeDefault.space.PX_16 };
 obj7 = { marginTop: nativeDefault.space.PX_12, borderRadius: nativeDefault.radii.sm };
 obj8 = { alignItems: "center", justifyContent: "center", paddingHorizontal: nativeDefault.space.PX_16, paddingVertical: nativeDefault.space.PX_32 };
-let closure_18 = createStyles(obj);
+let closure_16 = createStyles(obj);
 createStyles = createStyles_mod;
 let obj9 = { position: { position: "absolute" }, fill: { flex: 1 }, card: { flex: 1, alignItems: "center", justifyContent: "center", padding: 0 }, icon: obj10, name: obj11, indicator: size, iconHidden: { opacity: 0.3 } };
 obj10 = { marginBottom: nativeDefault.space.PX_12 };
 const createStyles2 = createStyles.createStyles;
 obj11 = { position: "absolute", start: 0, end: 0, bottom: nativeDefault.space.PX_8, paddingHorizontal: nativeDefault.space.PX_12, textAlign: "center" };
 size = { position: "absolute", top: nativeDefault.space.PX_8, end: nativeDefault.space.PX_8, width: 32, height: 32, alignItems: "flex-end", justifyContent: "flex-start" };
-let closure_20 = createStyles2(obj9);
+let closure_18 = createStyles2(obj9);
+let items = [{ code: "(function getSlotOffset_CustomizeBadgesSheetTsx1(index,tileSize){let[BADGE_GRID_COLUMNS,BADGE_GRID_GAP]=this.__closure;const column=index%BADGE_GRID_COLUMNS;return{x:column*(tileSize+BADGE_GRID_GAP),y:Math.floor(index/BADGE_GRID_COLUMNS)*(tileSize+BADGE_GRID_GAP)};})" }, BadgeGrid.BADGE_GRID_COLUMNS, BadgeGrid.BADGE_GRID_GAP];
+let c0;
+let c1;
+[tmp7, tmp8, tmp9] = items;
 function getSlotOffset(arg0, arg1) {
-  let result;
-  let rounded;
-  const point = { x: result * (arg1 + BadgeGrid.BADGE_GRID_GAP), y: rounded * (arg1 + BadgeGrid.BADGE_GRID_GAP) };
-  result = arg0 % BadgeGrid.BADGE_GRID_COLUMNS;
-  rounded = Math.floor(arg0 / BadgeGrid.BADGE_GRID_COLUMNS);
+  const point = { x: arg0 % c0 * (arg1 + c1), y: Math.floor(arg0 / c0) * (arg1 + c1) };
   return point;
 }
-let obj12 = { BADGE_GRID_COLUMNS: BadgeGrid.BADGE_GRID_COLUMNS, BADGE_GRID_GAP: BadgeGrid.BADGE_GRID_GAP };
-getSlotOffset.__closure = obj12;
-getSlotOffset.__workletHash = 8647997879684;
-getSlotOffset.__initData = { code: "function getSlotOffset_CustomizeBadgesSheetTsx1(index,tileSize){const{BADGE_GRID_COLUMNS,BADGE_GRID_GAP}=this.__closure;const column=index%BADGE_GRID_COLUMNS;return{x:column*(tileSize+BADGE_GRID_GAP),y:Math.floor(index/BADGE_GRID_COLUMNS)*(tileSize+BADGE_GRID_GAP)};}" };
-let closure_23 = react.memo(function FixedBadgeTile(badge) {
+let items1 = [tmp8, tmp9];
+getSlotOffset.__closure = items1;
+getSlotOffset.__workletHash = 10148916703645;
+getSlotOffset.__initData = tmp7;
+let closure_21 = react.memo(function FixedBadgeTile(badge) {
   let alwaysVisible;
   let tileSize;
   badge = badge.badge;
@@ -253,21 +255,20 @@ let closure_23 = react.memo(function FixedBadgeTile(badge) {
       }
       return authStore3(PressableScale, obj);
     }
-    const tmp2 = badge;
-    let result = index % badge(alwaysVisible[13]).BADGE_GRID_COLUMNS;
+    const tmp2 = closure_147_0;
     const _Math = Math;
-    const result1 = result * (tileSize + badge(alwaysVisible[13]).BADGE_GRID_GAP);
-    const rounded = Math.floor(index / badge(alwaysVisible[13]).BADGE_GRID_COLUMNS);
+    let result = index % closure_147_0 * (tileSize + closure_147_1);
     const items = [badge, onPress];
-    const result2 = rounded * (tileSize + badge(alwaysVisible[13]).BADGE_GRID_GAP);
+    const result1 = Math.floor(index / closure_147_0) * (tileSize + closure_147_1);
     closure_4 = onPress.useCallback(() => {
       onPress(badge);
     }, items);
     items1 = [tmp.position, ];
-    size = { left: result1, top: result2, width: tileSize, height: tileSize };
+    size = { left: result, top: result1, width: tileSize, height: tileSize };
     items1[1] = size;
     if (!alwaysVisible) {
       let renderTileResult;
+      const tmp8 = null;
       if (null != onSetHidden) {
         let obj = { badge, index, onSetHidden, children: renderTile };
         renderTileResult = closure_14(BadgeVisibilityMenu, obj);
@@ -279,28 +280,63 @@ let closure_23 = react.memo(function FixedBadgeTile(badge) {
     throw new TypeError("Trying to call a non-function");
   }
 });
-let __initData = { code: "function CustomizeBadgesSheetTsx2(){const{orderShared,badgeId,getSlotOffset,slotOffset,tileSize}=this.__closure;const slot=orderShared.get().indexOf(badgeId);return slot<0?null:getSlotOffset(slot+slotOffset,tileSize);}" };
-let closure_25 = { code: "function CustomizeBadgesSheetTsx3(target,previousTarget){const{isThisTileDragging,positionX,withTiming,timingStandard,positionY}=this.__closure;if(target==null||isThisTileDragging.get()){return;}if(target.x!==(previousTarget===null||previousTarget===void 0?void 0:previousTarget.x)){positionX.set(withTiming(target.x,timingStandard));}if(target.y!==(previousTarget===null||previousTarget===void 0?void 0:previousTarget.y)){positionY.set(withTiming(target.y,timingStandard));}}" };
-const __initData2 = { code: "function CustomizeBadgesSheetTsx4(){const{orderShared,tileSize,BADGE_GRID_GAP,clamp,positionX,BADGE_GRID_COLUMNS,positionY,slotOffset,moveBadgeInDisplayOrder,badgeId,runOnJS,triggerHapticFeedback,HapticFeedbackTypes}=this.__closure;const order=orderShared.get();const step=tileSize+BADGE_GRID_GAP;const column=clamp(Math.floor((positionX.get()+tileSize/2)/step),0,BADGE_GRID_COLUMNS-1);const row=Math.max(Math.floor((positionY.get()+tileSize/2)/step),0);const to=clamp(row*BADGE_GRID_COLUMNS+column-slotOffset,0,order.length-1);const next=moveBadgeInDisplayOrder(order,order.indexOf(badgeId),to);if(next!==order){orderShared.set(next);runOnJS(triggerHapticFeedback)(HapticFeedbackTypes.DRAG_AND_DROP_MOVE);}}" };
-const __initData3 = { code: "function CustomizeBadgesSheetTsx5(){const{scrollOffset}=this.__closure;return scrollOffset.get();}" };
-const __initData4 = { code: "function CustomizeBadgesSheetTsx6(offset,previousOffset){const{isThisTileDragging,positionY,reslot}=this.__closure;if(previousOffset==null||!isThisTileDragging.get()){return;}positionY.set(positionY.get()+(offset-previousOffset));reslot();}" };
-let closure_29 = { code: "function handleStart_CustomizeBadgesSheetTsx7(){const{isAnyDragActive,isThisTileDragging,runOnJS,hideContextMenu,dragOrigin,positionX,positionY,measure,scrollRef,dragViewport,scale,withTiming,DRAG_SCALE,timingStandard,triggerHapticFeedback,HapticFeedbackTypes}=this.__closure;if(isAnyDragActive.get()&&!isThisTileDragging.get()){return;}runOnJS(hideContextMenu)();isAnyDragActive.set(true);isThisTileDragging.set(true);dragOrigin.set({x:positionX.get(),y:positionY.get()});const viewport=measure(scrollRef);dragViewport.set(viewport==null?null:{pageY:viewport.pageY,height:viewport.height});scale.set(withTiming(DRAG_SCALE,timingStandard));runOnJS(triggerHapticFeedback)(HapticFeedbackTypes.DRAG_AND_DROP_START);}" };
-let closure_30 = { code: "function handleChange_CustomizeBadgesSheetTsx8(event){const{isThisTileDragging,positionX,positionY,reslot,dragViewport,AUTO_SCROLL_EDGE_SIZE,autoScrollSpeed,clamp}=this.__closure;if(!isThisTileDragging.get()){return;}positionX.set(positionX.get()+event.changeX);positionY.set(positionY.get()+event.changeY);reslot();const viewport=dragViewport.get();if(viewport==null){return;}const fromTop=event.absoluteY-viewport.pageY;const fromBottom=viewport.pageY+viewport.height-event.absoluteY;if(fromTop<AUTO_SCROLL_EDGE_SIZE){autoScrollSpeed.set(-1+clamp(fromTop,0,AUTO_SCROLL_EDGE_SIZE)/AUTO_SCROLL_EDGE_SIZE);}else if(fromBottom<AUTO_SCROLL_EDGE_SIZE){autoScrollSpeed.set(1-clamp(fromBottom,0,AUTO_SCROLL_EDGE_SIZE)/AUTO_SCROLL_EDGE_SIZE);}else{autoScrollSpeed.set(0);}}" };
-let closure_31 = { code: "function handleFinalize_CustomizeBadgesSheetTsx9(){const{isThisTileDragging,autoScrollSpeed,dragViewport,orderShared,badgeId,getSlotOffset,slotOffset,tileSize,positionX,withTiming,timingStandard,positionY,scale,isAnyDragActive,runOnJS,triggerHapticFeedback,HapticFeedbackTypes,onCommitOrder}=this.__closure;if(!isThisTileDragging.get()){return;}autoScrollSpeed.set(0);dragViewport.set(null);const order=orderShared.get();const slot=order.indexOf(badgeId);if(slot>=0){const target=getSlotOffset(slot+slotOffset,tileSize);positionX.set(withTiming(target.x,timingStandard));positionY.set(withTiming(target.y,timingStandard));}scale.set(withTiming(1,timingStandard));isThisTileDragging.set(false);isAnyDragActive.set(false);runOnJS(triggerHapticFeedback)(HapticFeedbackTypes.DRAG_AND_DROP_END);runOnJS(onCommitOrder)(order);}" };
-let closure_32 = { code: "function CustomizeBadgesSheetTsx10(){const{handleFinalize}=this.__closure;handleFinalize();}" };
-let closure_33 = { code: "function CustomizeBadgesSheetTsx11(event){const{handleChange}=this.__closure;handleChange(event);}" };
-let closure_34 = { code: "function CustomizeBadgesSheetTsx12(){const{handleStart}=this.__closure;handleStart();}" };
-const __initData5 = { code: "function CustomizeBadgesSheetTsx13(){const{isThisTileDragging,dragOrigin,positionX,positionY,scale}=this.__closure;const dragging=isThisTileDragging.get();const origin=dragOrigin.get();return{zIndex:dragging?10:0,left:dragging?origin.x:positionX.get(),top:dragging?origin.y:positionY.get(),transform:dragging?[{translateX:positionX.get()-origin.x},{translateY:positionY.get()-origin.y},{scale:scale.get()}]:[{scale:scale.get()}]};}" };
-let closure_36 = react.memo(function DraggableBadgeTile(badge) {
-  let callback;
-  let closure_24;
+let closure_22 = { code: "(function CustomizeBadgesSheetTsx2(){let[orderShared,badgeId,getSlotOffset,slotOffset,tileSize]=this.__closure;const slot=orderShared.get().indexOf(badgeId);return slot<0?null:getSlotOffset(slot+slotOffset,tileSize);})" };
+let closure_23 = { code: "(function CustomizeBadgesSheetTsx3(target,previousTarget){let[isThisTileDragging,positionX,withTiming,timingStandard,positionY]=this.__closure;if(target==null||isThisTileDragging.get()){return;}if(target.x!==(previousTarget===null||previousTarget===void 0?void 0:previousTarget.x)){positionX.set(withTiming(target.x,timingStandard));}if(target.y!==(previousTarget===null||previousTarget===void 0?void 0:previousTarget.y)){positionY.set(withTiming(target.y,timingStandard));}})" };
+let closure_24 = { code: "(function CustomizeBadgesSheetTsx4(){let[orderShared,tileSize,BADGE_GRID_GAP,clamp,positionX,BADGE_GRID_COLUMNS,positionY,slotOffset,moveBadgeInDisplayOrder,badgeId,scheduleOnRN,triggerHapticFeedback,HapticFeedbackTypes]=this.__closure;const order=orderShared.get();const step=tileSize+BADGE_GRID_GAP;const column=clamp(Math.floor((positionX.get()+tileSize/2)/step),0,BADGE_GRID_COLUMNS-1);const row=Math.max(Math.floor((positionY.get()+tileSize/2)/step),0);const to=clamp(row*BADGE_GRID_COLUMNS+column-slotOffset,0,order.length-1);const next=moveBadgeInDisplayOrder(order,order.indexOf(badgeId),to);if(next!==order){orderShared.set(next);scheduleOnRN(triggerHapticFeedback,HapticFeedbackTypes.DRAG_AND_DROP_MOVE);}})" };
+let closure_25 = { code: "(function CustomizeBadgesSheetTsx5(){let[scrollOffset]=this.__closure;return scrollOffset.get();})" };
+let closure_26 = { code: "(function CustomizeBadgesSheetTsx6(offset,previousOffset){let[isThisTileDragging,positionY,reslot]=this.__closure;if(previousOffset==null||!isThisTileDragging.get()){return;}positionY.set(positionY.get()+(offset-previousOffset));reslot();})" };
+let closure_27 = { code: "(function handleStart_CustomizeBadgesSheetTsx7(){let[isAnyDragActive,isThisTileDragging,scheduleOnRN,hideContextMenu,dragOrigin,positionX,positionY,measure,scrollRef,dragViewport,scale,withTiming,DRAG_SCALE,timingStandard,triggerHapticFeedback,HapticFeedbackTypes]=this.__closure;if(isAnyDragActive.get()&&!isThisTileDragging.get()){return;}scheduleOnRN(hideContextMenu);isAnyDragActive.set(true);isThisTileDragging.set(true);dragOrigin.set({x:positionX.get(),y:positionY.get()});const viewport=measure(scrollRef);dragViewport.set(viewport==null?null:{pageY:viewport.pageY,height:viewport.height});scale.set(withTiming(DRAG_SCALE,timingStandard));scheduleOnRN(triggerHapticFeedback,HapticFeedbackTypes.DRAG_AND_DROP_START);})" };
+let closure_28 = { code: "(function handleChange_CustomizeBadgesSheetTsx8(event){let[isThisTileDragging,positionX,positionY,reslot,dragViewport,AUTO_SCROLL_EDGE_SIZE,autoScrollSpeed,clamp]=this.__closure;if(!isThisTileDragging.get()){return;}positionX.set(positionX.get()+event.changeX);positionY.set(positionY.get()+event.changeY);reslot();const viewport=dragViewport.get();if(viewport==null){return;}const fromTop=event.absoluteY-viewport.pageY;const fromBottom=viewport.pageY+viewport.height-event.absoluteY;if(fromTop<AUTO_SCROLL_EDGE_SIZE){autoScrollSpeed.set(-1+clamp(fromTop,0,AUTO_SCROLL_EDGE_SIZE)/AUTO_SCROLL_EDGE_SIZE);}else if(fromBottom<AUTO_SCROLL_EDGE_SIZE){autoScrollSpeed.set(1-clamp(fromBottom,0,AUTO_SCROLL_EDGE_SIZE)/AUTO_SCROLL_EDGE_SIZE);}else{autoScrollSpeed.set(0);}})" };
+let closure_29 = { code: "(function handleFinalize_CustomizeBadgesSheetTsx9(){let[isThisTileDragging,autoScrollSpeed,dragViewport,orderShared,badgeId,getSlotOffset,slotOffset,tileSize,positionX,withTiming,timingStandard,positionY,scale,isAnyDragActive,scheduleOnRN,triggerHapticFeedback,HapticFeedbackTypes,onCommitOrder]=this.__closure;if(!isThisTileDragging.get()){return;}autoScrollSpeed.set(0);dragViewport.set(null);const order=orderShared.get();const slot=order.indexOf(badgeId);if(slot>=0){const target=getSlotOffset(slot+slotOffset,tileSize);positionX.set(withTiming(target.x,timingStandard));positionY.set(withTiming(target.y,timingStandard));}scale.set(withTiming(1,timingStandard));isThisTileDragging.set(false);isAnyDragActive.set(false);scheduleOnRN(triggerHapticFeedback,HapticFeedbackTypes.DRAG_AND_DROP_END);scheduleOnRN(onCommitOrder,order);})" };
+let closure_30 = { code: "(function CustomizeBadgesSheetTsx10(){let[handleStart]=this.__closure;handleStart();})" };
+let closure_31 = { code: "(function CustomizeBadgesSheetTsx11(event){let[handleChange]=this.__closure;handleChange(event);})" };
+let closure_32 = { code: "(function CustomizeBadgesSheetTsx12(){let[handleFinalize]=this.__closure;handleFinalize();})" };
+let closure_33 = { code: "(function CustomizeBadgesSheetTsx13(){let[isThisTileDragging,dragOrigin,positionX,positionY,scale]=this.__closure;const dragging=isThisTileDragging.get();const origin=dragOrigin.get();return{zIndex:dragging?10:0,left:dragging?origin.x:positionX.get(),top:dragging?origin.y:positionY.get(),transform:dragging?[{translateX:positionX.get()-origin.x},{translateY:positionY.get()-origin.y},{scale:scale.get()}]:[{scale:scale.get()}]};})" };
+let closure_34 = react.memo(function DraggableBadgeTile(badge) {
   let intl;
   let intl2;
   let isFirst;
   let isLast;
   let onSetHidden;
-  let result;
-  let rounded;
+  let scrollOffset;
+  let tmp16;
+  let tmp17;
+  let tmp18;
+  let tmp19;
+  let tmp20;
+  let tmp21;
+  let tmp24;
+  let tmp25;
+  let tmp26;
+  let tmp27;
+  let tmp28;
+  let tmp29;
+  let tmp33;
+  let tmp34;
+  let tmp35;
+  let tmp36;
+  let tmp37;
+  let tmp38;
+  let tmp39;
+  let tmp40;
+  let tmp41;
+  let tmp42;
+  let tmp43;
+  let tmp44;
+  let tmp45;
+  let tmp46;
+  let tmp50;
+  let tmp51;
+  let tmp54;
+  let tmp55;
+  let tmp56;
+  let tmp57;
+  let tmp61;
+  let tmp62;
+  let tmp63;
+  let tmp64;
+  let tmp65;
+  let tmp66;
   badge = badge.badge;
   let index = badge.index;
   const tileSize = badge.tileSize;
@@ -309,7 +345,6 @@ let closure_36 = react.memo(function DraggableBadgeTile(badge) {
   const orderShared = badge.orderShared;
   const isDragActive = badge.isDragActive;
   const scrollRef = badge.scrollRef;
-  const scrollOffset = badge.scrollOffset;
   const autoScrollSpeed = badge.autoScrollSpeed;
   const onCommitOrder = badge.onCommitOrder;
   let onPress = badge.onPress;
@@ -317,16 +352,16 @@ let closure_36 = react.memo(function DraggableBadgeTile(badge) {
   let sharedValue3;
   let sharedValue4;
   let sharedValue5;
-  let reslot;
+  let callback;
   let gesture;
+  closure_22 = undefined;
   closure_23 = undefined;
-  __initData = undefined;
-  let items3;
-  ({ isFirst, isLast, onSetHidden } = badge);
-  const position = sharedValue5();
+  let items15;
+  ({ isFirst, isLast, scrollOffset, onSetHidden } = badge);
+  const position = sharedValue4();
   const badge_id = badge.badge_id;
   let tmp = tileSize;
-  let closure_14 = index(tileSize[24])(() => {
+  let closure_13 = index(tileSize[24])(() => {
     onPress(badge);
   });
   let tmp2 = badge;
@@ -334,12 +369,13 @@ let closure_36 = react.memo(function DraggableBadgeTile(badge) {
   const sharedValue = obj.useSharedValue(false);
   let obj2 = badge(tileSize[25]);
   const sharedValue1 = obj2.useSharedValue(null);
-  if (typeof reslot === "function") {
+  if (typeof sharedValue5 === "function") {
     let renderTileResult;
-    let point = { x: result * (tileSize + tmp2(tmp[13]).BADGE_GRID_GAP), y: rounded * (tileSize + tmp2(tmp[13]).BADGE_GRID_GAP) };
-    result = index % tmp2(tmp[13]).BADGE_GRID_COLUMNS;
-    let _Math = Math;
-    rounded = Math.floor(index / tmp2(tmp[13]).BADGE_GRID_COLUMNS);
+    let point = { x: index % badge * (tileSize + index), y: Math.floor(index / badge) * (tileSize + index) };
+    const tmp6 = badge;
+    const tmp7 = index;
+    let tmp8 = globalThis;
+    const _Math = Math;
     let tmp2Result = tmp2(tmp[25]);
     sharedValue2 = tmp2Result.useSharedValue(point.x);
     const tmp2Result7 = tmp2(tmp[25]);
@@ -349,294 +385,428 @@ let closure_36 = react.memo(function DraggableBadgeTile(badge) {
     let num = 1;
     const tmp2Result9 = tmp2(tmp[25]);
     sharedValue5 = tmp2Result9.useSharedValue(1);
+    let tmp14 = closure_22;
+    let items = [closure_22, orderShared, badge_id, tmp5, slotOffset, tileSize];
+    let c0;
+    let c1;
+    let c2;
+    let c3;
+    let c4;
+    const tmp15 = items;
+    [tmp16, tmp17, tmp18, tmp19, tmp20, tmp21] = items;
     const tmp2Result10 = tmp2(tmp[25]);
-    class B {
+    class CustomizeBadgesSheetTsx2 {
       constructor() {
-        let result;
-        let rounded;
-        const value = orderShared.get();
-        index = value.indexOf(badge_id);
+        const value = _undefined.get();
+        index = value.indexOf(c1);
         let tmp2 = null;
         if (index >= 0) {
-          const sum = index + slotOffset;
-          if (typeof getSlotOffset === "function") {
-            const point = { x: result * (tileSize + BadgeGrid.BADGE_GRID_GAP), y: rounded * (tileSize + BadgeGrid.BADGE_GRID_GAP) };
-            result = sum % BadgeGrid.BADGE_GRID_COLUMNS;
-            const _Math = Math;
-            rounded = Math.floor(sum / BadgeGrid.BADGE_GRID_COLUMNS);
-            tmp2 = point;
-          } else {
-            throw new TypeError("Trying to call a non-function");
-          }
+          tmp2 = _undefined2(index + c3, c4);
         }
         return tmp2;
       }
     }
-    let obj3 = { orderShared, badgeId: badge_id, getSlotOffset: tmp5, slotOffset, tileSize };
-    B.__closure = obj3;
-    let num2 = 6182257637516;
-    B.__workletHash = 6182257637516;
-    B.__initData = __initData;
-    let fn = function y(arg0, arg1) {
-      const value = null == arg0 || sharedValue.get();
-      if (!value) {
-        let x1;
-        const x = arg0.x;
-        if (arg1 != null) {
-          x1 = arg1.x;
-        }
-        if (x !== x1) {
-          set = sharedValue2.set;
-          const obj = timing;
-          const result = set(obj.withTiming(arg0.x, timingPresets.timingStandard));
-        }
-        let y1;
-        const y = arg0.y;
-        if (arg1 != null) {
-          y1 = arg1.y;
-        }
-        if (y !== y1) {
-          set2 = sharedValue3.set;
-          const obj2 = timing;
-          set2(obj2.withTiming(arg0.y, timingPresets.timingStandard));
-        }
-      }
-    };
-    let obj4 = { isThisTileDragging: sharedValue, positionX: sharedValue2, withTiming: tmp2(tmp[26]).withTiming, timingStandard: tmp2(tmp[27]).timingStandard, positionY: sharedValue3 };
+    let items1 = [tmp17, tmp18, tmp19, tmp20, tmp21];
+    CustomizeBadgesSheetTsx2.__closure = items1;
+    let num2 = 10350129315381;
+    CustomizeBadgesSheetTsx2.__workletHash = 10350129315381;
+    CustomizeBadgesSheetTsx2.__initData = tmp16;
+    const tmp22 = closure_23;
+    let items2 = [closure_23, sharedValue, sharedValue2, , , ];
     const useAnimatedReaction = tmp2Result10.useAnimatedReaction;
-    fn.__closure = obj4;
-    fn.__workletHash = 4011295272705;
-    let tmp15 = items3;
-    fn.__initData = items3;
-    const animatedReaction = useAnimatedReaction(B, fn);
-    class K {
-      constructor() {
-        const value = orderShared.get();
-        const sum = tileSize + BadgeGrid.BADGE_GRID_GAP;
-        const clamp = ReanimatedRexport.clamp;
-        ReanimatedRexport;
-        const rounded = Math.floor((sharedValue2.get() + tileSize / 2) / sum);
-        const clampResult = clamp(rounded, 0, BadgeGrid.BADGE_GRID_COLUMNS - 1);
-        const bound = Math.max(Math.floor((sharedValue3.get() + tileSize / 2) / sum), 0);
-        const obj2 = ReanimatedRexport;
-        const clampResult1 = obj2.clamp(bound * BadgeGrid.BADGE_GRID_COLUMNS + clampResult - slotOffset, 0, value.length - 1);
-        const obj3 = PendingBadgeSettings;
-        const result = obj3.moveBadgeInDisplayOrder(value, value.indexOf(badge_id), clampResult1);
-        const obj = orderShared;
-        if (result !== value) {
-          const result1 = obj.set(result);
-          const tmpResult = ReanimatedRexport;
-          const runOnJSResult = tmpResult.runOnJS(HapticUtils.triggerHapticFeedback);
-          runOnJSResult(HapticUtils.HapticFeedbackTypes.DRAG_AND_DROP_MOVE);
-        }
-      }
-    }
-    let obj5 = { orderShared, tileSize, BADGE_GRID_GAP: tmp2(tmp[13]).BADGE_GRID_GAP, clamp: tmp2(tmp[25]).clamp, positionX: sharedValue2, BADGE_GRID_COLUMNS: tmp2(tmp[13]).BADGE_GRID_COLUMNS, positionY: sharedValue3, slotOffset, moveBadgeInDisplayOrder: tmp2(tmp[28]).moveBadgeInDisplayOrder, badgeId: badge_id, runOnJS: tmp2(tmp[25]).runOnJS, triggerHapticFeedback: tmp2(tmp[11]).triggerHapticFeedback, HapticFeedbackTypes: tmp2(tmp[11]).HapticFeedbackTypes };
-    const useCallback = slotOffset.useCallback;
-    K.__closure = obj5;
-    K.__workletHash = 1083237242858;
-    K.__initData = __initData2;
-    let items = [badge_id, orderShared, slotOffset, tileSize, sharedValue2, sharedValue3];
-    reslot = useCallback(K, items);
-    const tmp2Result11 = tmp2(tmp[25]);
-    class Q {
-      constructor() {
-        return scrollOffset.get();
-      }
-    }
-    let obj6 = { scrollOffset };
-    Q.__closure = obj6;
-    Q.__workletHash = 10993823060256;
-    Q.__initData = __initData3;
-    let fn2 = function $(arg0, arg1) {
-      const value = null != arg1 && sharedValue.get();
-      if (value) {
-        const result = sharedValue3.set(sharedValue3.get() + (arg0 - arg1));
-        callback();
-      }
-    };
-    const obj7 = { isThisTileDragging: sharedValue, positionY: sharedValue3, reslot };
-    fn2.__closure = obj7;
-    fn2.__workletHash = 9803143874483;
-    fn2.__initData = __initData4;
-    const animatedReaction1 = tmp2Result11.useAnimatedReaction(Q, fn2);
-    let items1 = [reslot, scrollRef, sharedValue1, autoScrollSpeed, badge_id, tileSize, slotOffset, orderShared, isDragActive, onCommitOrder, sharedValue, sharedValue5, sharedValue2, sharedValue3, sharedValue4];
-    gesture = slotOffset.useMemo(() => {
-      function handleStart() {
-        const obj = isDragActive;
-        if (!isDragActive.get()) {
-          const obj2 = badge(tileSize[25]);
-          obj2.runOnJS(badge(tileSize[29]).hideContextMenu)();
-          const result = obj.set(true);
-          const result1 = sharedValue.set(true);
-          const point = { x: sharedValue2.get(), y: sharedValue3.get() };
-          const result2 = set(point);
-          const obj4 = badge(tileSize[25]);
-          const measureResult = obj4.measure(scrollRef);
-          let tmp15 = null;
-          set2 = sharedValue1.set;
-          if (null != measureResult) {
-            const obj3 = { pageY: null, height: null };
-            ({ pageY: obj5.pageY, height: obj5.height } = measureResult);
-            tmp15 = obj3;
+    items2[3] = tmp2(tmp[26]).withTiming;
+    items2[4] = tmp2(tmp[27]).timingStandard;
+    items2[5] = sharedValue3;
+    c0 = undefined;
+    c1 = undefined;
+    c2 = undefined;
+    c3 = undefined;
+    c4 = undefined;
+    const tmp23 = items2;
+    [tmp24, tmp25, tmp26, tmp27, tmp28, tmp29] = items2;
+    class CustomizeBadgesSheetTsx3 {
+      constructor(arg0, arg1) {
+        const value = null == arg0 || _undefined.get();
+        if (!value) {
+          let x1;
+          const x = arg0.x;
+          if (arg1 != null) {
+            x1 = arg1.x;
           }
-          set2(tmp15);
-          set3 = sharedValue5.set;
-          const tmp2Result = badge(tileSize[26]);
-          set3(tmp2Result.withTiming(1.05, badge(tileSize[27]).timingStandard));
-          const tmp2Result2 = badge(tileSize[25]);
-          const runOnJSResult = tmp2Result2.runOnJS(badge(tileSize[11]).triggerHapticFeedback);
-          runOnJSResult(badge(tileSize[11]).HapticFeedbackTypes.DRAG_AND_DROP_START);
+          if (x !== x1) {
+            const result = _undefined2.set(_undefined3(arg0.x, c3));
+          }
+          let y1;
+          const y = arg0.y;
+          if (arg1 != null) {
+            y1 = arg1.y;
+          }
+          if (y !== y1) {
+            const result1 = _undefined4.set(_undefined3(arg0.y, c3));
+          }
         }
       }
-      let obj = { isAnyDragActive: isDragActive, isThisTileDragging: sharedValue, runOnJS: badge(tileSize[25]).runOnJS, hideContextMenu: badge(tileSize[29]).hideContextMenu, dragOrigin: sharedValue4, positionX: sharedValue2, positionY: sharedValue3, measure: badge(tileSize[25]).measure, scrollRef, dragViewport: sharedValue1, scale: sharedValue5, withTiming: badge(tileSize[26]).withTiming, DRAG_SCALE: 1.05, timingStandard: badge(tileSize[27]).timingStandard, triggerHapticFeedback: badge(tileSize[11]).triggerHapticFeedback, HapticFeedbackTypes: badge(tileSize[11]).HapticFeedbackTypes };
-      handleStart.__closure = obj;
-      handleStart.__workletHash = 11005478611755;
-      handleStart.__initData = __initData;
+    }
+    let items3 = [tmp25, tmp26, tmp27, tmp28, tmp29];
+    CustomizeBadgesSheetTsx3.__closure = items3;
+    CustomizeBadgesSheetTsx3.__workletHash = 7747025592280;
+    CustomizeBadgesSheetTsx3.__initData = tmp24;
+    const animatedReaction = useAnimatedReaction(CustomizeBadgesSheetTsx2, CustomizeBadgesSheetTsx3);
+    const tmp31 = items15;
+    let items4 = [items15, orderShared, tileSize, , , , , , , , , , , ];
+    const useCallback = slotOffset.useCallback;
+    items4[3] = tmp2(tmp[13]).BADGE_GRID_GAP;
+    items4[4] = tmp2(tmp[25]).clamp;
+    items4[5] = sharedValue2;
+    items4[6] = tmp2(tmp[13]).BADGE_GRID_COLUMNS;
+    items4[7] = sharedValue3;
+    items4[8] = slotOffset;
+    items4[9] = tmp2(tmp[28]).moveBadgeInDisplayOrder;
+    items4[10] = badge_id;
+    items4[11] = tmp2(tmp[29]).scheduleOnRN;
+    items4[12] = tmp2(tmp[11]).triggerHapticFeedback;
+    items4[13] = tmp2(tmp[11]).HapticFeedbackTypes;
+    c0 = undefined;
+    c1 = undefined;
+    c2 = undefined;
+    c3 = undefined;
+    c4 = undefined;
+    let c5;
+    let c6;
+    let c7;
+    let c8;
+    let c9;
+    let c10;
+    let c11;
+    let c12;
+    const tmp32 = items4;
+    [tmp33, tmp34, tmp35, tmp36, tmp37, tmp38, tmp39, tmp40, tmp41, tmp42, tmp43, tmp44, tmp45, tmp46] = items4;
+    class CustomizeBadgesSheetTsx4 {
+      constructor() {
+        const value = _undefined.get();
+        const sum = c1 + c2;
+        const tmp2 = _undefined2(Math.floor((_undefined3.get() + c1 / 2) / sum), 0, c5 - 1);
+        const tmp3 = _undefined2(Math.max(Math.floor((_undefined4.get() + c1 / 2) / sum), 0) * c5 + tmp2 - c7, 0, value.length - 1);
+        const tmp4 = _undefined5(value, value.indexOf(c9), tmp3);
+        const obj = _undefined;
+        if (tmp4 !== value) {
+          const result = obj.set(tmp4);
+          _undefined6(c11, _undefined7.DRAG_AND_DROP_MOVE);
+        }
+      }
+    }
+    let items5 = [tmp34, tmp35, tmp36, tmp37, tmp38, tmp39, tmp40, tmp41, tmp42, tmp43, tmp44, tmp45, tmp46];
+    CustomizeBadgesSheetTsx4.__closure = items5;
+    CustomizeBadgesSheetTsx4.__workletHash = 12359820987198;
+    CustomizeBadgesSheetTsx4.__initData = tmp33;
+    let items6 = [badge_id, orderShared, slotOffset, tileSize, sharedValue2, sharedValue3];
+    callback = useCallback(CustomizeBadgesSheetTsx4, items6);
+    const tmp48 = closure_25;
+    let items7 = [closure_25, scrollOffset];
+    c0 = undefined;
+    const tmp49 = items7;
+    [tmp50, tmp51] = items7;
+    const tmp2Result11 = tmp2(tmp[25]);
+    class CustomizeBadgesSheetTsx5 {
+      constructor() {
+        return _undefined.get();
+      }
+    }
+    let items8 = [tmp51];
+    CustomizeBadgesSheetTsx5.__closure = items8;
+    CustomizeBadgesSheetTsx5.__workletHash = 9461720859225;
+    CustomizeBadgesSheetTsx5.__initData = tmp50;
+    const tmp52 = closure_26;
+    let items9 = [closure_26, sharedValue, sharedValue3, callback];
+    c0 = undefined;
+    c1 = undefined;
+    c2 = undefined;
+    const tmp53 = items9;
+    [tmp54, tmp55, tmp56, tmp57] = items9;
+    class CustomizeBadgesSheetTsx6 {
+      constructor(arg0, arg1) {
+        const value = null != arg1 && _undefined.get();
+        if (value) {
+          const result = _undefined2.set(_undefined2.get() + (arg0 - arg1));
+          _undefined3();
+        }
+      }
+    }
+    let items10 = [tmp55, tmp56, tmp57];
+    CustomizeBadgesSheetTsx6.__closure = items10;
+    CustomizeBadgesSheetTsx6.__workletHash = 1713421095914;
+    CustomizeBadgesSheetTsx6.__initData = tmp54;
+    const animatedReaction1 = tmp2Result11.useAnimatedReaction(CustomizeBadgesSheetTsx5, CustomizeBadgesSheetTsx6);
+    let items11 = [callback, scrollRef, sharedValue1, autoScrollSpeed, badge_id, tileSize, slotOffset, orderShared, isDragActive, onCommitOrder, sharedValue, sharedValue5, sharedValue2, sharedValue3, sharedValue4];
+    gesture = obj7.useMemo(() => {
+      let tmp10;
+      let tmp11;
+      let tmp12;
+      let tmp13;
+      let tmp14;
+      let tmp15;
+      let tmp16;
+      let tmp17;
+      let tmp18;
+      let tmp19;
+      let tmp20;
+      let tmp21;
+      let tmp22;
+      let tmp23;
+      let tmp24;
+      let tmp25;
+      let tmp27;
+      let tmp28;
+      let tmp29;
+      let tmp30;
+      let tmp31;
+      let tmp32;
+      let tmp33;
+      let tmp34;
+      let tmp35;
+      let tmp36;
+      let tmp37;
+      let tmp38;
+      let tmp39;
+      let tmp40;
+      let tmp41;
+      let tmp42;
+      let tmp43;
+      let tmp44;
+      let tmp45;
+      let tmp46;
+      let tmp47;
+      let tmp48;
+      let tmp49;
+      let tmp50;
+      let tmp51;
+      let tmp52;
+      let tmp53;
+      let tmp54;
+      let tmp55;
+      let tmp56;
+      let tmp57;
+      let tmp58;
+      let tmp59;
+      let tmp60;
+      let tmp9;
+      const items = [closure_27, isDragActive, , , , , , , , , , , , , , , ];
+      let tmp2 = sharedValue;
+      items[2] = sharedValue;
+      items[3] = _mod1705.scheduleOnRN;
+      items[4] = ContextMenuState.hideContextMenu;
+      items[5] = sharedValue4;
+      items[6] = sharedValue2;
+      items[7] = sharedValue3;
+      items[8] = _mod1652.measure;
+      items[9] = scrollRef;
+      items[10] = sharedValue1;
+      items[11] = sharedValue5;
+      items[12] = timing_timing.withTiming;
+      items[13] = 1.05;
+      items[14] = timingPresets.timingStandard;
+      items[15] = HapticUtils.triggerHapticFeedback;
+      items[16] = HapticUtils.HapticFeedbackTypes;
+      [tmp9, tmp10, tmp11, tmp12, tmp13, tmp14, tmp15, tmp16, tmp17, tmp18, tmp19, tmp20, tmp21, tmp22, tmp23, tmp24, tmp25] = items;
+      function handleStart() {
+        const obj = _undefined;
+        if (!_undefined.get()) {
+          _undefined3(c3);
+          const result = obj.set(true);
+          const result1 = _undefined2.set(true);
+          const point = { x: _undefined5.get(), y: _undefined6.get() };
+          set = _undefined4.set;
+          const result2 = set(point);
+          const tmp14 = _undefined7(c8);
+          let tmp16 = null;
+          set2 = _undefined8.set;
+          const tmp2 = _undefined3;
+          if (null != tmp14) {
+            const obj2 = { pageY: null, height: null };
+            ({ pageY: obj3.pageY, height: obj3.height } = tmp14);
+            tmp16 = obj2;
+          }
+          set2(tmp16);
+          const result3 = _undefined9.set(_undefined10(c12, c13));
+          tmp2(c14, _undefined11.DRAG_AND_DROP_START);
+        }
+      }
+      const items1 = [tmp10, tmp11, tmp12, tmp13, tmp14, tmp15, tmp16, tmp17, tmp18, tmp19, tmp20, tmp21, tmp22, tmp23, tmp24, tmp25];
+      handleStart.__closure = items1;
+      handleStart.__workletHash = 76261641207;
+      handleStart.__initData = tmp9;
+      const items2 = [closure_28, tmp2, sharedValue2, tmp6, callback, tmp7, 80, autoScrollSpeed, ];
+      items2[8] = _mod1652.clamp;
+      [tmp27, tmp28, tmp29, tmp30, tmp31, tmp32, tmp33, tmp34, tmp35] = items2;
       function handleChange(changeX) {
-        if (sharedValue.get()) {
-          const result = sharedValue2.set(sharedValue2.get() + changeX.changeX);
-          const result1 = sharedValue3.set(sharedValue3.get() + changeX.changeY);
-          callback();
-          const value = closure_1_16.get();
+        if (_undefined.get()) {
+          const result = _undefined2.set(_undefined2.get() + changeX.changeX);
+          const result1 = _undefined3.set(_undefined3.get() + changeX.changeY);
+          _undefined4();
+          const value = _undefined5.get();
           if (null != value) {
             const diff = changeX.absoluteY - value.pageY;
             const diff1 = value.pageY + value.height - changeX.absoluteY;
-            if (diff < sharedValue1) {
-              set2 = autoScrollSpeed.set;
-              const obj2 = badge(tileSize[25]);
-              set2(obj2.clamp(diff, 0, sharedValue1) / sharedValue1 - 1);
-            } else if (diff1 < sharedValue1) {
-              set = autoScrollSpeed.set;
-              const obj = badge(tileSize[25]);
-              const result2 = set(1 - obj.clamp(diff1, 0, tmp23) / tmp23);
+            if (diff < c5) {
+              const result2 = _undefined6.set(_undefined7(diff, 0, tmp21) / tmp21 - 1);
+            } else if (diff1 < c5) {
+              const result3 = _undefined6.set(1 - _undefined7(diff1, 0, tmp21) / tmp21);
             } else {
-              const result3 = autoScrollSpeed.set(0);
+              const result4 = _undefined6.set(0);
             }
           }
         }
       }
-      let obj2 = { isThisTileDragging: sharedValue, positionX: sharedValue2, positionY: sharedValue3, reslot: getSlotOffset, dragViewport: sharedValue1, AUTO_SCROLL_EDGE_SIZE: sharedValue1, autoScrollSpeed, clamp: badge(tileSize[25]).clamp };
-      handleChange.__closure = obj2;
-      handleChange.__workletHash = 6322461598588;
-      handleChange.__initData = __initData2;
+      const items3 = [tmp28, tmp29, tmp30, tmp31, tmp32, tmp33, tmp34, tmp35];
+      handleChange.__closure = items3;
+      handleChange.__workletHash = 3274388629829;
+      handleChange.__initData = tmp27;
+      const items4 = [closure_29, tmp2, autoScrollSpeed, tmp7, orderShared, badge_id, getSlotOffset, slotOffset, tileSize, sharedValue2, tmp3(5370).withTiming, tmp3(5373).timingStandard, tmp6, sharedValue5, isDragActive, tmp3(1705).scheduleOnRN, tmp3(5376).triggerHapticFeedback, tmp3(5376).HapticFeedbackTypes, onCommitOrder];
+      let c1;
+      let c2;
+      let c3;
+      let c4;
+      let c5;
+      let c6;
+      let c7;
+      let c8;
+      let c9;
+      let c10;
+      let c11;
+      let c12;
+      let c13;
+      let c14;
+      let c15;
+      let c16;
+      let c17;
+      [tmp36, tmp37, tmp38, tmp39, tmp40, tmp41, tmp42, tmp43, tmp44, tmp45, tmp46, tmp47, tmp48, tmp49, tmp50, tmp51, tmp52, tmp53, tmp54] = items4;
       function handleFinalize() {
-        const obj = sharedValue;
-        if (sharedValue.get()) {
-          const result = autoScrollSpeed.set(0);
-          const result1 = sharedValue1.set(null);
-          const value = orderShared.get();
-          index = value.indexOf(badge_id);
+        const obj = _undefined;
+        if (_undefined.get()) {
+          const result = _undefined2.set(0);
+          const result1 = _undefined3.set(null);
+          const value = _undefined4.get();
+          index = value.indexOf(c4);
           if (index >= 0) {
-            const sum = index + slotOffset;
-            if (typeof callback === "function") {
-              const result2 = sum % badge(tileSize[13]).BADGE_GRID_COLUMNS;
-              const _Math = Math;
-              const result3 = result2 * (tmp58 + badge(tileSize[13]).BADGE_GRID_GAP);
-              const rounded = Math.floor(sum / badge(tileSize[13]).BADGE_GRID_COLUMNS);
-              const result4 = rounded * (tmp58 + badge(tileSize[13]).BADGE_GRID_GAP);
-              set = sharedValue2.set;
-              const obj2 = badge(tileSize[26]);
-              const result5 = set(obj2.withTiming(result3, badge(tileSize[27]).timingStandard));
-              set2 = sharedValue3.set;
-              const obj3 = badge(tileSize[26]);
-              set2(obj3.withTiming(result4, badge(tileSize[27]).timingStandard));
-            } else {
-              throw new TypeError("Trying to call a non-function");
-            }
+            const point = _undefined5(index + c6, c7);
+            const result2 = _undefined6.set(_undefined7(point.x, c10));
+            const result3 = _undefined8.set(_undefined7(point.y, c10));
           }
-          set3 = sharedValue5.set;
-          const obj4 = badge(tileSize[26]);
-          set3(obj4.withTiming(1, badge(tileSize[27]).timingStandard));
-          const result6 = obj.set(false);
-          const result7 = isDragActive.set(false);
-          const obj5 = badge(tileSize[25]);
-          const runOnJSResult = obj5.runOnJS(badge(tileSize[11]).triggerHapticFeedback);
-          runOnJSResult(badge(tileSize[11]).HapticFeedbackTypes.DRAG_AND_DROP_END);
-          const obj6 = badge(tileSize[25]);
-          obj6.runOnJS(onCommitOrder)(value);
+          const result4 = _undefined9.set(_undefined7(1, c10));
+          const result5 = obj.set(false);
+          const result6 = _undefined10.set(false);
+          _undefined11(c15, _undefined12.DRAG_AND_DROP_END);
+          _undefined11(c17, value);
         }
       }
-      let obj3 = { isThisTileDragging: sharedValue, autoScrollSpeed, dragViewport: sharedValue1, orderShared, badgeId: badge_id, getSlotOffset, slotOffset, tileSize: handleFinalize, positionX: sharedValue2, withTiming: badge(tileSize[26]).withTiming, timingStandard: badge(tileSize[27]).timingStandard, positionY: sharedValue3, scale: sharedValue5, isAnyDragActive: isDragActive, runOnJS: badge(tileSize[25]).runOnJS, triggerHapticFeedback: badge(tileSize[11]).triggerHapticFeedback, HapticFeedbackTypes: badge(tileSize[11]).HapticFeedbackTypes, onCommitOrder };
-      handleFinalize.__closure = obj3;
-      handleFinalize.__workletHash = 3743829622400;
-      handleFinalize.__initData = __initData3;
-      const Gesture = badge(tileSize[30]).Gesture;
-      const fn = function s() {
-        handleStart();
-      };
-      fn.__closure = { handleStart };
-      fn.__workletHash = 1384005013956;
-      fn.__initData = __initData6;
+      const items5 = [tmp37, tmp38, tmp39, tmp40, tmp41, tmp42, tmp43, tmp44, tmp45, tmp46, tmp47, tmp48, tmp49, tmp50, tmp51, tmp52, tmp53, tmp54];
+      handleFinalize.__closure = items5;
+      handleFinalize.__workletHash = 3320936971344;
+      handleFinalize.__initData = tmp36;
+      const Gesture = tmp3(5420).Gesture;
+      const items6 = [closure_30, handleStart];
+      let c0;
+      [tmp55, tmp56] = items6;
       const PanResult = Gesture.Pan();
-      const fn2 = function n(arg0) {
-        handleChange(arg0);
-      };
-      fn2.__closure = { handleChange };
-      fn2.__workletHash = 11082443717159;
-      fn2.__initData = __initData5;
       const minDistanceResult = PanResult.minDistance(8);
-      const fn3 = function t() {
-        handleFinalize();
-      };
-      fn3.__closure = { handleFinalize };
-      fn3.__workletHash = 11034838477574;
-      fn3.__initData = __initData4;
-      const onStartResult = minDistanceResult.onStart(fn);
-      const onChangeResult = onStartResult.onChange(fn2);
-      return onChangeResult.onFinalize(fn3);
-    }, items1);
-    function te() {
-      let items1;
-      let x;
-      let y;
-      const value = sharedValue.get();
-      const point = sharedValue4.get();
-      let num = 0;
-      if (value) {
-        num = 10;
+      class CustomizeBadgesSheetTsx10 {
+        constructor() {
+          _undefined();
+        }
       }
-      const rect = { zIndex: num, left: x, top: y, transform: items1 };
-      if (value) {
-        x = point.x;
-      } else {
-        x = sharedValue2.get();
+      const items7 = [tmp56];
+      CustomizeBadgesSheetTsx10.__closure = items7;
+      CustomizeBadgesSheetTsx10.__workletHash = 13419120968383;
+      CustomizeBadgesSheetTsx10.__initData = tmp55;
+      const items8 = [closure_31, handleChange];
+      c0 = undefined;
+      [tmp57, tmp58] = items8;
+      const onStartResult = minDistanceResult.onStart(CustomizeBadgesSheetTsx10);
+      class CustomizeBadgesSheetTsx11 {
+        constructor(arg0) {
+          _undefined(arg0);
+        }
       }
-      if (value) {
-        y = point.y;
-      } else {
-        y = sharedValue3.get();
+      const items9 = [tmp58];
+      CustomizeBadgesSheetTsx11.__closure = items9;
+      CustomizeBadgesSheetTsx11.__workletHash = 13081817689214;
+      CustomizeBadgesSheetTsx11.__initData = tmp57;
+      const items10 = [closure_32, handleFinalize];
+      c0 = undefined;
+      [tmp59, tmp60] = items10;
+      const onChangeResult = onStartResult.onChange(CustomizeBadgesSheetTsx11);
+      class CustomizeBadgesSheetTsx12 {
+        constructor() {
+          _undefined();
+        }
       }
-      if (value) {
-        const items = [{ translateX: sharedValue2.get() - point.x }, , ];
-        const obj = { translateX: sharedValue2.get() - point.x };
-        items[1] = { translateY: sharedValue3.get() - point.y };
-        const obj2 = { translateY: sharedValue3.get() - point.y };
-        items[2] = { scale: sharedValue5.get() };
-        items1 = items;
-        const obj3 = { scale: sharedValue5.get() };
-      } else {
-        items1 = [{ scale: sharedValue5.get() }];
-        const obj4 = { scale: sharedValue5.get() };
-      }
-      return rect;
-    }
-    const obj8 = { isThisTileDragging: sharedValue, dragOrigin: sharedValue4, positionX: sharedValue2, positionY: sharedValue3, scale: sharedValue5 };
-    te.__closure = obj8;
-    te.__workletHash = 3612359203254;
-    const tmp23 = __initData5;
-    te.__initData = __initData5;
+      const items11 = [tmp60];
+      CustomizeBadgesSheetTsx12.__closure = items11;
+      CustomizeBadgesSheetTsx12.__workletHash = 2105939311037;
+      CustomizeBadgesSheetTsx12.__initData = tmp59;
+      return onChangeResult.onFinalize(CustomizeBadgesSheetTsx12);
+    }, items11);
+    const tmp59 = closure_33;
+    const items12 = [closure_33, sharedValue, sharedValue4, sharedValue2, sharedValue3, sharedValue5];
+    c0 = undefined;
+    c1 = undefined;
+    c2 = undefined;
+    c3 = undefined;
+    c4 = undefined;
+    const tmp60 = items12;
+    [tmp61, tmp62, tmp63, tmp64, tmp65, tmp66] = items12;
     const tmp2Result12 = tmp2(tmp[25]);
-    closure_23 = tmp2Result12.useAnimatedStyle(te);
-    const items2 = [badge_id, orderShared, onCommitOrder, slotOffset];
-    __initData = slotOffset.useCallback((nativeEvent) => {
+    class CustomizeBadgesSheetTsx13 {
+      constructor() {
+        let items1;
+        let x;
+        let y;
+        const value = _undefined.get();
+        const point = _undefined2.get();
+        let num = 0;
+        if (value) {
+          num = 10;
+        }
+        const rect = { zIndex: num, left: x, top: y, transform: items1 };
+        if (value) {
+          x = point.x;
+        } else {
+          x = _undefined3.get();
+        }
+        if (value) {
+          y = point.y;
+        } else {
+          y = _undefined4.get();
+        }
+        if (value) {
+          const items = [{ translateX: _undefined3.get() - point.x }, , ];
+          const obj = { translateX: _undefined3.get() - point.x };
+          items[1] = { translateY: _undefined4.get() - point.y };
+          const obj2 = { translateY: _undefined4.get() - point.y };
+          items[2] = { scale: _undefined5.get() };
+          items1 = items;
+          const obj3 = { scale: _undefined5.get() };
+        } else {
+          items1 = [{ scale: _undefined5.get() }];
+          const obj4 = { scale: _undefined5.get() };
+        }
+        return rect;
+      }
+    }
+    const items13 = [tmp62, tmp63, tmp64, tmp65, tmp66];
+    CustomizeBadgesSheetTsx13.__closure = items13;
+    CustomizeBadgesSheetTsx13.__workletHash = 12364432991215;
+    CustomizeBadgesSheetTsx13.__initData = tmp61;
+    closure_22 = tmp2Result12.useAnimatedStyle(CustomizeBadgesSheetTsx13);
+    const items14 = [badge_id, orderShared, onCommitOrder, slotOffset];
+    closure_23 = obj7.useCallback((nativeEvent) => {
       const actionName = nativeEvent.nativeEvent.actionName;
       if ("moveup" === actionName) {
         const value = orderShared.get();
         index = value.indexOf(badge_id);
         let num2 = 1;
-        const clamp = ReanimatedRexport.clamp;
-        ReanimatedRexport;
+        const clamp = _mod1652.clamp;
+        _mod1652;
         const obj = orderShared;
         if ("moveup" === actionName) {
           num2 = -1;
@@ -647,26 +817,26 @@ let closure_36 = react.memo(function DraggableBadgeTile(badge) {
         if (result !== value) {
           const result1 = obj.set(result);
           onCommitOrder(result);
-          const AccessibilityAnnouncer = tmp4(5023).AccessibilityAnnouncer;
+          const AccessibilityAnnouncer = tmp4(5149).AccessibilityAnnouncer;
           const announce = AccessibilityAnnouncer.announce;
           const intl = tmp4(1113).intl;
           const obj2 = { from: index + slotOffset + 1, to: clampResult + slotOffset + 1 };
           announce(intl.formatToPlainString(intl7.t.qPHr0x, obj2));
         }
       }
-    }, items2);
-    items3 = [];
+    }, items14);
+    items15 = [];
     if (!isFirst) {
-      const push = items3.push;
-      const obj9 = { name: "moveup", label: intl.string(tmp2(tmp[15]).t.eR2XSh) };
+      let obj3 = { name: "moveup", label: intl.string(tmp2(tmp[15]).t.eR2XSh) };
+      const push = items15.push;
       intl = tmp2(tmp[15]).intl;
-      push(obj9);
+      push(obj3);
     }
     if (!isLast) {
-      const push2 = items3.push;
-      const obj10 = { name: "movedown", label: intl2.string(tmp2(tmp[15]).t.wWi0DL) };
+      let obj4 = { name: "movedown", label: intl2.string(tmp2(tmp[15]).t.wWi0DL) };
+      const push2 = items15.push;
       intl2 = tmp2(tmp[15]).intl;
-      push2(obj10);
+      push2(obj4);
     }
     function renderTile(ref) {
       let PressableScale;
@@ -681,14 +851,14 @@ let closure_36 = react.memo(function DraggableBadgeTile(badge) {
       let obj4;
       let t;
       badge = ref;
-      const tmp = closure_14;
+      const tmp = sharedValue;
       let obj = { gesture, children: tmp(View, obj2) };
-      const GestureDetector = badge(tileSize[30]).GestureDetector;
+      const GestureDetector = badge(tileSize[31]).GestureDetector;
       obj2 = { style: items, children: tmp(PressableScale, obj3) };
       items = [position.position, , ];
       size = { width: tileSize, height: tileSize };
       items[1] = size;
-      items[2] = closure_23;
+      items[2] = closure_22;
       View = index(tileSize[25]).View;
       ref = undefined;
       PressableScale = badge(tileSize[23]).PressableScale;
@@ -713,13 +883,13 @@ let closure_36 = react.memo(function DraggableBadgeTile(badge) {
               }
             }
           }
-          closure_24(nativeEvent);
+          closure_23(nativeEvent);
         },
         onPress,
         onLongPress: fn,
         delayLongPress: badge(tileSize[12]).CONTEXT_MENU_LONG_PRESS_DURATION_MS,
         style: tmp4.fill,
-        children: tmp(gesture, { badge, alwaysVisible })
+        children: tmp(callback, { badge, alwaysVisible })
       };
       const intl = tmp2(tmp3[15]).intl;
       formatToPlainString = intl.formatToPlainString;
@@ -742,9 +912,9 @@ let closure_36 = react.memo(function DraggableBadgeTile(badge) {
       if (accessibilityActions == null) {
         accessibilityActions = [];
       }
-      items1 = [...items3];
+      items1 = [...items15];
       if (alwaysVisible) {
-        onPress = closure_14;
+        onPress = closure_13;
       } else if (ref != null) {
         onPress = ref.onPress;
       }
@@ -764,17 +934,17 @@ let closure_36 = react.memo(function DraggableBadgeTile(badge) {
     if (alwaysVisible) {
       renderTileResult = renderTile(null);
     } else {
-      const obj11 = { badge, index, onSetHidden, children: renderTile };
-      renderTileResult = closure_14(sharedValue4, obj11);
+      let obj5 = { badge, index, onSetHidden, children: renderTile };
+      renderTileResult = sharedValue(sharedValue3, obj5);
     }
     return renderTileResult;
   } else {
     throw new TypeError("Trying to call a non-function");
   }
 });
-const __initData6 = { code: "function CustomizeBadgesSheetTsx14({timeSincePreviousFrame:timeSincePreviousFrame}){const{autoScrollSpeed,autoScrollElapsed,MS_PER_FRAME_60FPS,AUTO_SCROLL_PIXELS_PER_SECOND,scrollTo,scrollRef,roundToNearestPixel,scrollOffset}=this.__closure;const speed=autoScrollSpeed.get();if(speed===0||timeSincePreviousFrame==null||timeSincePreviousFrame<=0){return;}autoScrollElapsed.set(autoScrollElapsed.get()+timeSincePreviousFrame);const elapsed=autoScrollElapsed.get();if(elapsed<MS_PER_FRAME_60FPS){return;}autoScrollElapsed.set(0);const delta=speed*AUTO_SCROLL_PIXELS_PER_SECOND*elapsed/1000;scrollTo(scrollRef,0,Math.max(roundToNearestPixel(scrollOffset.get()+delta),0),false);}" };
-const __initData7 = { code: "function CustomizeBadgesSheetTsx15(){const{autoScrollSpeed}=this.__closure;return autoScrollSpeed.get()!==0;}" };
-const __initData8 = { code: "function CustomizeBadgesSheetTsx16(isScrolling,wasScrolling){const{autoScrollElapsed,runOnJS,setAutoScrollerActive}=this.__closure;if(wasScrolling==null||isScrolling===wasScrolling){return;}autoScrollElapsed.set(0);runOnJS(setAutoScrollerActive)(isScrolling);}" };
+let closure_35 = { code: "(function CustomizeBadgesSheetTsx14({timeSincePreviousFrame:timeSincePreviousFrame}){let[autoScrollSpeed,autoScrollElapsed,MS_PER_FRAME_60FPS,AUTO_SCROLL_PIXELS_PER_SECOND,scrollTo,scrollRef,roundToNearestPixel,scrollOffset]=this.__closure;const speed=autoScrollSpeed.get();if(speed===0||timeSincePreviousFrame==null||timeSincePreviousFrame<=0){return;}autoScrollElapsed.set(autoScrollElapsed.get()+timeSincePreviousFrame);const elapsed=autoScrollElapsed.get();if(elapsed<MS_PER_FRAME_60FPS){return;}autoScrollElapsed.set(0);const delta=speed*AUTO_SCROLL_PIXELS_PER_SECOND*elapsed/1000;scrollTo(scrollRef,0,Math.max(roundToNearestPixel(scrollOffset.get()+delta),0),false);})" };
+let closure_36 = { code: "(function CustomizeBadgesSheetTsx15(){let[autoScrollSpeed]=this.__closure;return autoScrollSpeed.get()!==0;})" };
+let closure_37 = { code: "(function CustomizeBadgesSheetTsx16(isScrolling,wasScrolling){let[autoScrollElapsed,scheduleOnRN,setAutoScrollerActive]=this.__closure;if(wasScrolling==null||isScrolling===wasScrolling){return;}autoScrollElapsed.set(0);scheduleOnRN(setAutoScrollerActive,isScrolling);})" };
 size = size_mod;
 let result = size.fileFinishedImporting("modules/badges/native/CustomizeBadgesSheet.tsx");
 
@@ -787,16 +957,31 @@ export default function CustomizeBadgesSheet(analyticsLocations) {
   let intl3;
   let intl4;
   let intl5;
-  let items16;
-  let items17;
-  let items18;
-  let obj13;
-  let obj16;
-  let obj17;
-  let obj9;
+  let items22;
+  let items23;
+  let items24;
+  let obj11;
+  let obj14;
+  let obj15;
+  let obj7;
   let string;
   let t;
-  let tmp36Result;
+  let tmp34;
+  let tmp35;
+  let tmp36;
+  let tmp37;
+  let tmp38;
+  let tmp39;
+  let tmp40;
+  let tmp41;
+  let tmp42;
+  let tmp46;
+  let tmp47;
+  let tmp48;
+  let tmp49;
+  let tmp50;
+  let tmp51;
+  let tmp53Result;
   let analyticsLocations1 = analyticsLocations.analyticsLocations;
   let stateFromStores;
   let stateFromStores1;
@@ -817,21 +1002,19 @@ export default function CustomizeBadgesSheet(analyticsLocations) {
   let sharedValue1;
   closure_18 = undefined;
   let onPress;
-  closure_20 = undefined;
+  let closure_20;
   let onSetHidden;
   let badgeTileSize;
   let animatedRef;
-  let scrollViewOffset;
+  let scrollOffset;
   let sharedValue2;
-  let sharedValue3;
   let frameCallback;
-  let callback1;
-  let tmp = closure_18();
+  let tmp = onCommitOrder();
   let tmp2 = stateFromStores;
-  let obj = stateFromStores(stateFromStores1[32]);
+  let obj = stateFromStores(stateFromStores1[33]);
   const tenureBadgeHideable = obj.useConfig({ location: "CustomizeBadgesSheet" }).tenureBadgeHideable;
-  const sum = Math.max(stateFromStores(stateFromStores1[33])().bottom, reorderableBadges) + 4;
-  let obj2 = tenureBadgeHideable(stateFromStores1[34]);
+  const sum = Math.max(stateFromStores(stateFromStores1[34])().bottom, reorderableBadges) + 4;
+  let obj2 = tenureBadgeHideable(stateFromStores1[35]);
   const items = [hasCatalog];
   stateFromStores = obj2.useStateFromStores(items, () => {
     const currentUser = hasCatalog.getCurrentUser();
@@ -841,18 +1024,18 @@ export default function CustomizeBadgesSheet(analyticsLocations) {
     }
     return id;
   });
-  let obj3 = tenureBadgeHideable(stateFromStores1[34]);
+  let obj3 = tenureBadgeHideable(stateFromStores1[35]);
   const items1 = [hasCatalog];
   stateFromStores1 = obj3.useStateFromStores(items1, () => {
-    const obj = stateFromStores(stateFromStores1[35]);
+    const obj = stateFromStores(stateFromStores1[36]);
     return obj.canUsePremiumProfileCustomization(hasCatalog.getCurrentUser());
   });
-  const tmp8 = stateFromStores(stateFromStores1[36]);
+  const tmp8 = stateFromStores(stateFromStores1[37]);
   if (analyticsLocations1 == null) {
     analyticsLocations1 = [];
   }
-  analyticsLocations = tmp8(analyticsLocations1, tmp2(tmp3[37]).BADGES_REORDER_ACTION_SHEET).analyticsLocations;
-  context = analyticsLocations.useContext(tmp2(tmp3[38]));
+  analyticsLocations = tmp8(analyticsLocations1, tmp2(tmp3[38]).BADGES_REORDER_ACTION_SHEET).analyticsLocations;
+  context = analyticsLocations.useContext(tmp2(tmp3[39]));
   const items2 = [context, analyticsLocations];
   const callback = analyticsLocations.useCallback(() => {
     let obj3;
@@ -861,17 +1044,17 @@ export default function CustomizeBadgesSheet(analyticsLocations) {
       obj.close();
     }
     const obj2 = { analyticsLocation: obj3, analyticsLocations, premiumFeatureCardOrder: PremiumFeaturesCards.PremiumFeatureCardOrder.TIER_2_LEADING };
-    obj3 = { page: set.USER_SETTINGS, section: unpackModuleId.USER_PROFILE, object: memo.BUTTON_CTA };
+    obj3 = { page: authStore.USER_SETTINGS, section: unpackModuleId.USER_PROFILE, object: memo.BUTTON_CTA };
     const tmp2 = openPremiumModalDefault;
     tmp2(obj2);
   }, items2);
   const items3 = [pendingBadgeDisplayOrder];
   const items4 = [stateFromStores];
-  const tmp5Result = tenureBadgeHideable(stateFromStores1[34]);
+  const tmp5Result = tenureBadgeHideable(stateFromStores1[35]);
   stateFromStoresArray = tmp5Result.useStateFromStoresArray(items3, () => BadgeDirectoryStore.getBadges(stateFromStores), items4);
   const items5 = [pendingBadgeDisplayOrder];
   const items6 = [stateFromStores];
-  const tmp5Result13 = tenureBadgeHideable(stateFromStores1[34]);
+  const tmp5Result13 = tenureBadgeHideable(stateFromStores1[35]);
   const stateFromStoresObject = tmp5Result13.useStateFromStoresObject(items5, () => {
     const hasCatalogForResult = null != stateFromStores && BadgeDirectoryStore.hasCatalogFor(tmp);
     const obj = { hasCatalog: hasCatalogForResult, hasCatalogError: BadgeDirectoryStore.hasCatalogFetchErrorFor(stateFromStores) };
@@ -890,7 +1073,7 @@ export default function CustomizeBadgesSheet(analyticsLocations) {
     const tmp = !stateFromStores1 && hasCatalog;
     if (tmp) {
       const obj2 = { type: PremiumUpsellTypes.BADGE_REORDERING_UPSELL, location: obj3, location_stack: analyticsLocations };
-      obj3 = { page: set.USER_SETTINGS, section: unpackModuleId.USER_PROFILE };
+      obj3 = { page: authStore.USER_SETTINGS, section: unpackModuleId.USER_PROFILE };
       const obj = AnalyticsUtilsDefault;
       obj.track(metroImportAll.PREMIUM_UPSELL_VIEWED, obj2);
     }
@@ -906,7 +1089,7 @@ export default function CustomizeBadgesSheet(analyticsLocations) {
     }
   }, items8);
   const items9 = [stateFromStoresArray];
-  const tmp5Result14 = tenureBadgeHideable(stateFromStores1[34]);
+  const tmp5Result14 = tenureBadgeHideable(stateFromStores1[35]);
   const stateFromStoresObject1 = tmp5Result14.useStateFromStoresObject(items9, () => {
     const pendingChanges = stateFromStoresArray.getPendingChanges();
     return { pendingBadgeDisplayOrder: pendingChanges.pendingBadgeDisplayOrder, pendingBadgeHiddenBadges: pendingChanges.pendingBadgeHiddenBadges };
@@ -994,7 +1177,7 @@ export default function CustomizeBadgesSheet(analyticsLocations) {
       closure_18(arg0);
     }
   });
-  const tmp5Result17 = tenureBadgeHideable(stateFromStores1[45]);
+  const tmp5Result17 = tenureBadgeHideable(stateFromStores1[46]);
   const bottomSheetWidth = tmp5Result17.useBottomSheetWidth();
   const tmp5Result18 = tenureBadgeHideable(stateFromStores1[13]);
   badgeTileSize = tmp5Result18.getBadgeTileSize(bottomSheetWidth);
@@ -1010,125 +1193,154 @@ export default function CustomizeBadgesSheet(analyticsLocations) {
   const tmp5Result19 = tenureBadgeHideable(stateFromStores1[25]);
   animatedRef = tmp5Result19.useAnimatedRef();
   const tmp5Result20 = tenureBadgeHideable(stateFromStores1[25]);
-  scrollViewOffset = tmp5Result20.useScrollViewOffset(animatedRef);
+  scrollOffset = tmp5Result20.useScrollOffset(animatedRef);
   const tmp5Result21 = tenureBadgeHideable(stateFromStores1[25]);
   sharedValue2 = tmp5Result21.useSharedValue(0);
   const tmp5Result22 = tenureBadgeHideable(stateFromStores1[25]);
-  sharedValue3 = tmp5Result22.useSharedValue(0);
-  function ee(timeSincePreviousFrame) {
-    timeSincePreviousFrame = timeSincePreviousFrame.timeSincePreviousFrame;
-    const value = sharedValue2.get();
-    if (0 !== value) {
-      if (null != timeSincePreviousFrame) {
-        if (timeSincePreviousFrame > 0) {
-          const result = sharedValue3.set(sharedValue3.get() + timeSincePreviousFrame);
-          const value2 = sharedValue3.get();
-          const obj = sharedValue3;
-          if (value2 >= c17) {
-            const result1 = obj.set(0);
-            const _Math = Math;
-            const scrollTo = ReanimatedRexport.scrollTo;
-            const tmp13 = roundToNearestPixelDefault;
-            scrollTo(animatedRef, 0, max(tmp13(scrollViewOffset.get() + 700 * value * value2 / 1000), 0), false);
+  const sharedValue3 = tmp5Result22.useSharedValue(0);
+  const items15 = [closure_35, sharedValue2, sharedValue3, 16.666666666666668, 700, , , , ];
+  const useFrameCallback = tenureBadgeHideable(stateFromStores1[25]).useFrameCallback;
+  items15[5] = tenureBadgeHideable(stateFromStores1[25]).scrollTo;
+  items15[6] = animatedRef;
+  items15[7] = tmp2(stateFromStores1[47]);
+  items15[8] = scrollOffset;
+  let c0;
+  let c1;
+  let c2;
+  let c3;
+  let c4;
+  let c5;
+  let c6;
+  let c7;
+  [tmp34, tmp35, tmp36, tmp37, tmp38, tmp39, tmp40, tmp41, tmp42] = items15;
+  class CustomizeBadgesSheetTsx14 {
+    constructor(timeSincePreviousFrame) {
+      timeSincePreviousFrame = timeSincePreviousFrame.timeSincePreviousFrame;
+      const value = _undefined.get();
+      if (0 !== value) {
+        if (null != timeSincePreviousFrame) {
+          if (timeSincePreviousFrame > 0) {
+            const result = _undefined2.set(_undefined2.get() + timeSincePreviousFrame);
+            const value2 = _undefined2.get();
+            const obj = _undefined2;
+            if (value2 >= c2) {
+              const result1 = obj.set(0);
+              const _Math = Math;
+              _undefined3(c5, 0, Math.max(_undefined4(_undefined5.get() + value * c3 * value2 / 1000), 0), false);
+            }
           }
         }
       }
     }
   }
-  const tmp5Result23 = tenureBadgeHideable(stateFromStores1[25]);
-  ee.__closure = { autoScrollSpeed: sharedValue2, autoScrollElapsed: sharedValue3, MS_PER_FRAME_60FPS: sharedValue1, AUTO_SCROLL_PIXELS_PER_SECOND: 700, scrollTo: tenureBadgeHideable(stateFromStores1[25]).scrollTo, scrollRef: animatedRef, roundToNearestPixel: tmp2(stateFromStores1[46]), scrollOffset: scrollViewOffset };
-  ee.__workletHash = 8297629116909;
-  ee.__initData = __initData6;
-  ({ autoScrollSpeed: sharedValue2, autoScrollElapsed: sharedValue3, MS_PER_FRAME_60FPS: sharedValue1, AUTO_SCROLL_PIXELS_PER_SECOND: 700, scrollTo: tenureBadgeHideable(stateFromStores1[25]).scrollTo, scrollRef: animatedRef, roundToNearestPixel: tmp2(stateFromStores1[46]), scrollOffset: scrollViewOffset });
-  frameCallback = tmp5Result23.useFrameCallback(ee, false);
-  const items15 = [frameCallback];
-  callback1 = obj4.useCallback((arg0) => {
+  const items16 = [tmp35, tmp36, tmp37, tmp38, tmp39, tmp40, tmp41, tmp42];
+  CustomizeBadgesSheetTsx14.__closure = items16;
+  CustomizeBadgesSheetTsx14.__workletHash = 4169091470516;
+  CustomizeBadgesSheetTsx14.__initData = tmp34;
+  frameCallback = useFrameCallback(CustomizeBadgesSheetTsx14, false);
+  const items17 = [frameCallback];
+  const callback1 = obj4.useCallback((arg0) => {
     frameCallback.setActive(arg0);
-  }, items15);
-  function ie() {
-    return 0 !== sharedValue2.get();
-  }
-  ie.__closure = { autoScrollSpeed: sharedValue2 };
-  ie.__workletHash = 16801023005760;
-  ie.__initData = __initData7;
-  function te(arg0, arg1) {
-    const tmp = null != arg1 && arg0 !== arg1;
-    if (tmp) {
-      const result = sharedValue3.set(0);
-      const obj = ReanimatedRexport;
-      obj.runOnJS(callback1)(arg0);
+  }, items17);
+  const items18 = [closure_36, sharedValue2];
+  c0 = undefined;
+  [tmp46, tmp47] = items18;
+  const tmp5Result24 = tenureBadgeHideable(stateFromStores1[25]);
+  class CustomizeBadgesSheetTsx15 {
+    constructor() {
+      return 0 !== _undefined.get();
     }
   }
-  const tmp5Result24 = tenureBadgeHideable(stateFromStores1[25]);
-  te.__closure = { autoScrollElapsed: sharedValue3, runOnJS: tenureBadgeHideable(stateFromStores1[25]).runOnJS, setAutoScrollerActive: callback1 };
-  te.__workletHash = 12755360860907;
-  te.__initData = __initData8;
-  ({ autoScrollElapsed: sharedValue3, runOnJS: tenureBadgeHideable(stateFromStores1[25]).runOnJS, setAutoScrollerActive: callback1 });
-  const animatedReaction = tmp5Result24.useAnimatedReaction(ie, te);
+  const items19 = [tmp47];
+  CustomizeBadgesSheetTsx15.__closure = items19;
+  CustomizeBadgesSheetTsx15.__workletHash = 17434103373145;
+  CustomizeBadgesSheetTsx15.__initData = tmp46;
+  const items20 = [closure_37, sharedValue3, , ];
+  const useAnimatedReaction = tmp5Result24.useAnimatedReaction;
+  items20[2] = tenureBadgeHideable(stateFromStores1[29]).scheduleOnRN;
+  items20[3] = callback1;
+  c0 = undefined;
+  c1 = undefined;
+  c2 = undefined;
+  [tmp48, tmp49, tmp50, tmp51] = items20;
+  class CustomizeBadgesSheetTsx16 {
+    constructor(arg0, arg1) {
+      const tmp = null != arg1 && arg0 !== arg1;
+      if (tmp) {
+        const result = _undefined.set(0);
+        _undefined2(c2, arg0);
+      }
+    }
+  }
+  const items21 = [tmp49, tmp50, tmp51];
+  CustomizeBadgesSheetTsx16.__closure = items21;
+  CustomizeBadgesSheetTsx16.__workletHash = 12780194212895;
+  CustomizeBadgesSheetTsx16.__initData = tmp48;
+  const animatedReaction = useAnimatedReaction(CustomizeBadgesSheetTsx15, CustomizeBadgesSheetTsx16);
   if (hasCatalog) {
-    let tmp41 = !stateFromStores1;
-    const obj7 = { style: tmp.gridInset, children: items16 };
-    if (tmp41) {
-      const obj8 = { style: tmp.upsell, ctaText: intl2.string(tenureBadgeHideable(stateFromStores1[15]).t.pj0XBN), cardStyle: null, contentStyle: null, ctaStyle: null, showLinearGradient: true, onPress: callback, children: memo2(Text2, obj9) };
-      const tmp2Result = tmp2(stateFromStores1[47]);
+    let tmp58 = !stateFromStores1;
+    const obj5 = { style: tmp.gridInset, children: items22 };
+    if (tmp58) {
+      const obj6 = { style: tmp.upsell, ctaText: intl2.string(tenureBadgeHideable(stateFromStores1[15]).t.pj0XBN), cardStyle: null, contentStyle: null, ctaStyle: null, showLinearGradient: true, onPress: callback, children: memo2(Text2, obj7) };
+      const tmp2Result = tmp2(stateFromStores1[48]);
       intl2 = tmp5(tmp3[15]).intl;
-      ({ upsellCard: obj24.cardStyle, upsellContent: obj24.contentStyle, upsellCta: obj24.ctaStyle } = tmp);
-      obj9 = { variant: "text-sm/normal", style: tmp.upsellText, children: intl3.string(tenureBadgeHideable(stateFromStores1[15]).t.JrOki0) };
+      ({ upsellCard: obj20.cardStyle, upsellContent: obj20.contentStyle, upsellCta: obj20.ctaStyle } = tmp);
+      obj7 = { variant: "body-sm/normal", style: tmp.upsellText, children: intl3.string(tenureBadgeHideable(stateFromStores1[15]).t.JrOki0) };
       Text2 = tmp5(tmp3[21]).Text;
       intl3 = tmp5(tmp3[15]).intl;
-      tmp41 = memo2(tmp2Result, obj8);
+      tmp58 = memo2(tmp2Result, obj6);
     }
-    items16 = [tmp41, ];
-    const obj10 = { accessibilityRole: "list", style: items17, children: items18 };
-    items17 = [tmp.grid, ];
-    const obj11 = { height: num };
-    items17[1] = obj11;
-    items18 = [
+    items22 = [tmp58, ];
+    const obj8 = { accessibilityRole: "list", style: items23, children: items24 };
+    items23 = [tmp.grid, ];
+    const obj9 = { height: num };
+    items23[1] = obj9;
+    items24 = [
       fixedBadges.map((badge, index) => {
           const obj = { badge, index, tileSize: badgeTileSize, alwaysVisible: set.has(badge.badge_id), onPress };
-          return authStore3(closure_23, obj, badge.badge_id);
+          return authStore3(closure_21, obj, badge.badge_id);
         }),
       reorderableBadges.map((badge, index) => {
           let tmpResult;
           if (stateFromStores1) {
-            const obj2 = { badge, index: fixedBadges.length + index, tileSize: badgeTileSize, slotOffset: fixedBadges.length, isFirst: 0 === index, isLast: index === reorderableBadges.length - 1, alwaysVisible: set.has(badge.badge_id), orderShared: sharedValue, isDragActive: sharedValue1, scrollRef: animatedRef, scrollOffset: scrollViewOffset, autoScrollSpeed: sharedValue2, onCommitOrder, onSetHidden, onPress };
-            tmpResult = tmp(closure_36, obj2, badge.badge_id);
+            const obj2 = { badge, index: fixedBadges.length + index, tileSize: badgeTileSize, slotOffset: fixedBadges.length, isFirst: 0 === index, isLast: index === reorderableBadges.length - 1, alwaysVisible: set.has(badge.badge_id), orderShared: sharedValue, isDragActive: sharedValue1, scrollRef: animatedRef, scrollOffset, autoScrollSpeed: sharedValue2, onCommitOrder, onSetHidden, onPress };
+            tmpResult = tmp(closure_34, obj2, badge.badge_id);
           } else {
             const obj = { badge, index: fixedBadges.length + index, tileSize: badgeTileSize, alwaysVisible: set.has(badge.badge_id), onPress, onSetHidden };
-            tmpResult = tmp(closure_23, obj, badge.badge_id);
+            tmpResult = tmp(onSetHidden, obj, badge.badge_id);
           }
           return tmpResult;
         }),
       hiddenBadges.map((badge, index) => {
           const obj = { badge, index: fixedBadges.length + reorderableBadges.length + index, tileSize: badgeTileSize, alwaysVisible: set.has(badge.badge_id), onPress, onSetHidden };
-          return authStore3(closure_23, obj, badge.badge_id);
+          return authStore3(onSetHidden, obj, badge.badge_id);
         })
     ];
-    items16[1] = sharedValue(context, obj10);
-    tmp36Result = tmp39(tmp40, obj7);
+    items22[1] = sharedValue(context, obj8);
+    tmp53Result = tmp56(tmp57, obj5);
   } else {
-    let obj14;
-    const tmp37 = context;
+    let obj12;
+    const tmp54 = context;
     if (hasCatalogError) {
-      const obj12 = { style: tmp.message, accessibilityRole: "alert", children: memo2(Text, obj13) };
-      obj13 = { variant: "text-md/normal", color: "text-muted", style: tmp.messageText, children: intl.string(tenureBadgeHideable(stateFromStores1[15]).t["rTU7/z"]) };
+      const obj10 = { style: tmp.message, accessibilityRole: "alert", children: memo2(Text, obj11) };
+      obj11 = { variant: "body-md/normal", color: "text-muted", style: tmp.messageText, children: intl.string(tenureBadgeHideable(stateFromStores1[15]).t["rTU7/z"]) };
       Text = tmp5(tmp3[21]).Text;
       intl = tmp5(tmp3[15]).intl;
-      obj14 = obj12;
+      obj12 = obj10;
     } else {
-      obj14 = { style: tmp.message, children: memo2(tmp5(tmp3[48]).ActivityIndicator, { animating: true, size: "large" }) };
+      obj12 = { style: tmp.message, children: memo2(tmp5(tmp3[49]).ActivityIndicator, { animating: true, size: "large" }) };
     }
-    tmp36Result = tmp36(tmp37, obj14);
+    tmp53Result = tmp53(tmp54, obj12);
   }
-  const obj15 = { startExpanded: true, scrollable: true, dismissAccessibilityLabel: intl4.string(tenureBadgeHideable(stateFromStores1[15]).t.x5SfWU), header: memo2(BottomSheetTitleHeader, obj16), children: memo2(tenureBadgeHideable(stateFromStores1[50]).BottomSheetScrollView, obj17) };
-  BottomSheet = tmp5(tmp3[45]).BottomSheet;
+  const obj13 = { startExpanded: true, scrollable: true, dismissAccessibilityLabel: intl4.string(tenureBadgeHideable(stateFromStores1[15]).t.x5SfWU), header: memo2(BottomSheetTitleHeader, obj14), children: memo2(tenureBadgeHideable(stateFromStores1[51]).BottomSheetScrollView, obj15) };
+  const BottomSheet = tmp5(tmp3[46]).BottomSheet;
   intl4 = tmp5(tmp3[15]).intl;
-  obj16 = { title: intl5.string(tenureBadgeHideable(stateFromStores1[15]).t.x5SfWU), subtitle: string(stateFromStores1 ? t["Vzc4+8"] : t.ZuXSRp) };
-  BottomSheetTitleHeader = tmp5(tmp3[49]).BottomSheetTitleHeader;
+  obj14 = { title: intl5.string(tenureBadgeHideable(stateFromStores1[15]).t.x5SfWU), subtitle: string(stateFromStores1 ? t["Vzc4+8"] : t.ZuXSRp) };
+  BottomSheetTitleHeader = tmp5(tmp3[50]).BottomSheetTitleHeader;
   intl5 = tmp5(tmp3[15]).intl;
   const intl6 = tmp5(tmp3[15]).intl;
   string = intl6.string;
   t = tmp5(tmp3[15]).t;
-  obj17 = { ref: animatedRef, contentContainerStyle: { paddingBottom: sum }, children: tmp36Result };
-  return memo2(BottomSheet, obj15);
+  obj15 = { ref: animatedRef, contentContainerStyle: { paddingBottom: sum }, children: tmp53Result };
+  return memo2(BottomSheet, obj13);
 };

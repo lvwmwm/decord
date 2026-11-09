@@ -1,20 +1,20 @@
-// Module ID: 11744
-// Function ID: 11745
+// Module ID: 11907
+// Function ID: 11908
 // Name: confirmActivityAgeGateAlert
-// Dependencies: [19, 17, 21, 5014, 575, 11745, 5624, 1113, 5958, 1187, 2]
+// Dependencies: [19, 17, 21, 5140, 575, 11908, 5751, 1113, 6090, 1187, 2]
 // Exports: confirmActivityAgeGateAlert
 
-// Module 11744 (confirmActivityAgeGateAlert)
+// Module 11907 (confirmActivityAgeGateAlert)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5958 */;
-import ActivityAnnouncementDefault from "ActivityAnnouncement" /* 11745 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 6090 */;
+import ActivityAnnouncementDefault from "ActivityAnnouncement" /* 11908 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -26,7 +26,7 @@ function ConfirmActivityGateContent(description) {
   const tmp = closure_6();
   const obj = { style: tmp.alertContainer, children: items };
   items = [React3(ActivityAnnouncementDefault, {}), ];
-  const obj2 = { style: tmp.alertBodyText, variant: "text-md/normal", children: description };
+  const obj2 = { style: tmp.alertBodyText, variant: "body-md/normal", children: description };
   items[1] = React3(Text_Text.Text, obj2);
   return hasOwnProperty(View, obj);
 }

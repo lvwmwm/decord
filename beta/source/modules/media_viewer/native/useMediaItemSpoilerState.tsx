@@ -1,70 +1,86 @@
-// Module ID: 14774
-// Function ID: 14775
+// Module ID: 15009
+// Function ID: 15010
 // Name: useMediaItemSpoilerState
-// Dependencies: [32, 19, 8838, 5095, 5254, 1187, 2]
+// Dependencies: [32, 19, 8912, 1652, 5370, 1187, 1705, 2]
 // Exports: useMediaItemSpoilerState
 
-// Module 14774 (useMediaItemSpoilerState)
-import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
-import timing from "timing" /* 5254 */;
+// Module 15009 (useMediaItemSpoilerState)
+import native from "native" /* 1187 */;
+import _mod1705 from "module_1705" /* 1705 */;
+import timing_timing from "timing/timing" /* 5370 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
 let set;
 
-let closure_4 = { code: "function useMediaItemSpoilerStateTsx1(){const{runOnJS,setSpoilerActive,hasSpoiler}=this.__closure;runOnJS(setSpoilerActive)(hasSpoiler);}" };
-const __initData = { code: "function useMediaItemSpoilerStateTsx2(){const{spoilerOpacity}=this.__closure;return{opacity:spoilerOpacity.get()};}" };
+let closure_4 = { code: "(function useMediaItemSpoilerStateTsx1(){let[scheduleOnRN,setSpoilerActive,hasSpoiler]=this.__closure;scheduleOnRN(setSpoilerActive,hasSpoiler);})" };
+let closure_5 = { code: "(function useMediaItemSpoilerStateTsx2(){let[spoilerOpacity]=this.__closure;return{opacity:spoilerOpacity.get()};})" };
 let result = size.fileFinishedImporting("modules/media_viewer/native/useMediaItemSpoilerState.tsx");
 
 export function useMediaItemSpoilerState(index) {
   let mediaItemHasSpoiler;
-  let setSpoilerActive;
   let sharedValue;
+  let tmp10;
   let tmp5;
+  let tmp9;
   const tmp = mediaItemHasSpoiler;
-  const tmp2 = dependencyMap;
-  let obj = mediaItemHasSpoiler(8838);
+  let obj = mediaItemHasSpoiler(8912);
   mediaItemHasSpoiler = obj.useMediaItemHasSpoiler(index);
-  const obj2 = react;
   const tmp4 = sharedValue(react.useState(mediaItemHasSpoiler), 2);
   [tmp5, dependencyMap] = tmp4;
+  const tmp6 = mediaItemHasSpoiler(1652);
   let num = 0;
-  const useSharedValue = mediaItemHasSpoiler(5095).useSharedValue;
-  mediaItemHasSpoiler(5095);
+  const useSharedValue = tmp6.useSharedValue;
+  const obj2 = react;
   if (mediaItemHasSpoiler) {
     num = 1;
   }
   sharedValue = useSharedValue(num);
-  const items = [mediaItemHasSpoiler, sharedValue];
+  let items = [mediaItemHasSpoiler, sharedValue];
   const effect = obj2.useEffect(() => {
+    let tmp6;
+    let tmp7;
+    let tmp8;
+    let tmp9;
     let num = 0;
     set = sharedValue.set;
-    const withTiming = timing.withTiming;
-    timing;
+    const withTiming = timing_timing.withTiming;
+    timing_timing;
     if (mediaItemHasSpoiler) {
       num = 1;
     }
-    let obj = { duration: 200, easing: tmp2(1187).STANDARD_EASING };
-    const fn = function t() {
-      const obj = mediaItemHasSpoiler(dependencyMap[3]);
-      obj.runOnJS(setSpoilerActive)(closure_1_0);
-    };
-    fn.__closure = { runOnJS: ReanimatedRexport.runOnJS, setSpoilerActive: dependencyMap, hasSpoiler: mediaItemHasSpoiler };
-    fn.__workletHash = 15930548853488;
-    fn.__initData = __initData;
-    ({ runOnJS: ReanimatedRexport.runOnJS, setSpoilerActive: dependencyMap, hasSpoiler: mediaItemHasSpoiler });
-    const result = set(withTiming(num, obj, "respect-motion-settings", fn));
+    const items = [closure_4, , , ];
+    const obj = { duration: 200, easing: native.STANDARD_EASING };
+    items[1] = _mod1705.scheduleOnRN;
+    items[2] = dependencyMap;
+    items[3] = mediaItemHasSpoiler;
+    let c0;
+    let c1;
+    let c2;
+    [tmp6, tmp7, tmp8, tmp9] = items;
+    function useMediaItemSpoilerStateTsx1() {
+      _undefined(c1, c2);
+    }
+    const items1 = [tmp7, tmp8, tmp9];
+    useMediaItemSpoilerStateTsx1.__closure = items1;
+    useMediaItemSpoilerStateTsx1.__workletHash = 9307516647300;
+    useMediaItemSpoilerStateTsx1.__initData = tmp6;
+    const result = set(withTiming(num, obj, "respect-motion-settings", useMediaItemSpoilerStateTsx1));
   }, items);
-  const items1 = [tmp5, ];
-  let fn = function l() {
-    const obj = { opacity: sharedValue.get() };
+  let items1 = [closure_5, sharedValue];
+  let c0;
+  [tmp9, tmp10] = items1;
+  function useMediaItemSpoilerStateTsx2() {
+    const obj = { opacity: _undefined.get() };
     return obj;
-  };
-  fn.__closure = { spoilerOpacity: sharedValue };
-  fn.__workletHash = 8496335051493;
-  fn.__initData = __initData;
-  const tmpResult = tmp(5095);
-  items1[1] = tmpResult.useAnimatedStyle(fn);
-  return items1;
+  }
+  const items2 = [tmp10];
+  useMediaItemSpoilerStateTsx2.__closure = items2;
+  useMediaItemSpoilerStateTsx2.__workletHash = 9056847135964;
+  useMediaItemSpoilerStateTsx2.__initData = tmp9;
+  const items3 = [tmp5, ];
+  const tmpResult = tmp(1652);
+  items3[1] = tmpResult.useAnimatedStyle(useMediaItemSpoilerStateTsx2);
+  return items3;
 }

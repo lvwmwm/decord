@@ -1,23 +1,23 @@
-// Module ID: 18254
-// Function ID: 18255
+// Module ID: 18591
+// Function ID: 18592
 // Name: GuildMFAWarning
-// Dependencies: [5, 19, 1072, 21, 5014, 575, 11047, 2061, 1994, 5709, 6980, 5717, 18255, 5624, 1113, 1187, 2]
+// Dependencies: [5, 19, 1072, 21, 5140, 575, 5883, 2185, 2118, 5834, 7043, 5842, 18592, 5751, 1113, 1187, 2]
 // Exports: default, getScaledGuildMFAWarningHeight
 
-// Module 18254 (GuildMFAWarning)
+// Module 18591 (GuildMFAWarning)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import FastImageDefault from "FastImage" /* 5717 */;
-import Pressables from "Pressables" /* 6980 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11047 */;
-import AssetRegistryDefault from "AssetRegistry" /* 18255 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import FastImageDefault from "FastImage" /* 5842 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 5883 */;
+import Pressables from "Pressables" /* 7043 */;
+import AssetRegistryDefault from "AssetRegistry" /* 18592 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -45,7 +45,7 @@ let obj = function _handlePress() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -79,7 +79,7 @@ let obj = function _handlePress() {
           obj = closure_129_1(closure_129_2[9]);
           obj.openURL(articleURL.getArticleURL(closure_129_4.SETTING_UP_TWO_FACTOR));
           c3 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp16) {
         c3 = 3;
@@ -109,7 +109,7 @@ export default function GuildMFAWarning() {
   const obj2 = { style: tmp.MFAWarningIcon, source: AssetRegistryDefault };
   const tmp2 = FastImageDefault;
   items = [hasOwnProperty(tmp2, obj2), ];
-  const obj3 = { variant: "text-xs/medium", color: "text-default", children: items1 };
+  const obj3 = { variant: "body-xs/medium", color: "text-default", children: items1 };
   const Text = Text_Text.Text;
   const intl = intl3.intl;
   items1 = [intl.string(intl3.t.ZIf8Ag), ];
@@ -123,5 +123,5 @@ export default function GuildMFAWarning() {
 };
 export function getScaledGuildMFAWarningHeight(fontScale) {
   obj = useScaledTextLineHeight;
-  return 83 + 5 * obj.scaleTextLineHeight("text-xs/medium", fontScale) + 10 + 10;
+  return 83 + 5 * obj.scaleTextLineHeight("body-xs/medium", fontScale) + 10 + 10;
 }

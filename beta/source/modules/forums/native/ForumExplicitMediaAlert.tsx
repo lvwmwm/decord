@@ -1,16 +1,16 @@
-// Module ID: 14611
-// Function ID: 14612
+// Module ID: 14846
+// Function ID: 14847
 // Name: ForumExplicitMediaAlert
-// Dependencies: [19, 17, 21, 5014, 575, 6030, 5624, 1113, 5634, 13353, 2]
+// Dependencies: [19, 17, 21, 5140, 575, 6162, 5751, 1113, 5758, 13585, 2]
 // Exports: default
 
-// Module 14611 (ForumExplicitMediaAlert)
+// Module 14846 (ForumExplicitMediaAlert)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ExplicitMediaActionCreators from "ExplicitMediaActionCreators" /* 13353 */;
+import ExplicitMediaActionCreators from "ExplicitMediaActionCreators" /* 13585 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -48,14 +48,14 @@ export default function ForumExplicitMediaAlert(arg0) {
   ({ channelId: require, messageId: importDefault, onClose } = arg0);
   const tmp = closure_6();
   let obj = { noDefaultButtons: true, style: tmp.container, onClose, children: items1 };
-  const obj2 = { accessibilityRole: "header", variant: "heading-md/extrabold", color: "text-default", style: items, children: intl.string(require("intl").t.B3vFdU) };
+  const obj2 = { accessibilityRole: "header", variant: "heading-sm/semibold", color: "text-default", style: items, children: intl.string(require("intl").t.B3vFdU) };
   items = [, ];
   ({ title: arr[0], text: arr[1] } = tmp);
   const tmp2 = require("Alert");
   const Text = require("Text/Text").Text;
   intl = require("intl").intl;
   items1 = [closure_4(Text, obj2), , , ];
-  const obj3 = { style: items2, maxFontSizeMultiplier: 1, variant: "text-md/normal", children: intl2.string(require("intl").t.i4AbAS) };
+  const obj3 = { style: items2, maxFontSizeMultiplier: 1, variant: "body-md/normal", children: intl2.string(require("intl").t.i4AbAS) };
   items2 = [, ];
   ({ body: arr3[0], text: arr3[1] } = tmp);
   const Text2 = require("Text/Text").Text;
@@ -66,7 +66,7 @@ export default function ForumExplicitMediaAlert(arg0) {
   Button = require("components/Button/Button").Button;
   intl3 = require("intl").intl;
   items1[2] = closure_4(View, obj4);
-  const obj6 = { style: tmp.text, variant: "text-sm/medium", color: "text-muted", children: intl4.format(require("intl").t["APQGZ+"], obj7) };
+  const obj6 = { style: tmp.text, variant: "body-sm/medium", color: "text-muted", children: intl4.format(require("intl").t["APQGZ+"], obj7) };
   const Text3 = require("Text/Text").Text;
   intl4 = require("intl").intl;
   obj7 = {

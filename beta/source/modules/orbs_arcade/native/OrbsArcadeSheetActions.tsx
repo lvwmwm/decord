@@ -1,18 +1,18 @@
-// Module ID: 17039
-// Function ID: 17040
+// Module ID: 17355
+// Function ID: 17356
 // Name: OrbsArcadeSheetActions
-// Dependencies: [19, 17018, 21, 5014, 1113, 5258, 17036, 504, 17025, 6767, 17040, 17043, 5634, 2]
+// Dependencies: [19, 17341, 21, 5140, 1113, 5374, 17352, 504, 17348, 6822, 17356, 17360, 5758, 2]
 // Exports: default
 
-// Module 17039 (OrbsArcadeSheetActions)
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import OrbsArcadeRewardUtils from "OrbsArcadeRewardUtils" /* 17025 */;
-import OrbsArcadeClaimRewardButtonDefault from "OrbsArcadeClaimRewardButton" /* 17040 */;
-import OrbsArcadePlayButtonDefault from "OrbsArcadePlayButton" /* 17043 */;
+// Module 17355 (OrbsArcadeSheetActions)
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
+import OrbsArcadeRewardUtils from "OrbsArcadeRewardUtils" /* 17348 */;
+import OrbsArcadeClaimRewardButtonDefault from "OrbsArcadeClaimRewardButton" /* 17356 */;
+import OrbsArcadePlayButtonDefault from "OrbsArcadePlayButton" /* 17360 */;
 import react from "react" /* 19 */;
-import OrbsArcadeStore from "OrbsArcadeStore" /* 17018 */;
+import OrbsArcadeStore from "OrbsArcadeStore" /* 17341 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -24,12 +24,15 @@ let obj2 = { CLOSE: "CLOSE", HOW_TO_PLAY: "HOW_TO_PLAY" };
 let result = size.fileFinishedImporting("modules/orbs_arcade/native/OrbsArcadeSheetActions.tsx");
 
 export default function OrbsArcadeSheetActions(game) {
+  let _location;
   let direction;
   let intl;
   let intl2;
   let items2;
   let obj;
+  let secondaryAction;
   let style;
+  let surface;
   let tmp16;
   let tmp7;
   game = game.game;
@@ -38,8 +41,8 @@ export default function OrbsArcadeSheetActions(game) {
   if (PLAY === undefined) {
     PLAY = obj.PLAY;
   }
-  const secondaryAction = game.secondaryAction;
-  ({ direction, style } = game);
+  ({ secondaryAction, surface } = game);
+  ({ location: _location, direction, style } = game);
   const tmp2 = closure_6();
   if (obj2.CLOSE === secondaryAction) {
     obj2 = {
@@ -60,7 +63,7 @@ export default function OrbsArcadeSheetActions(game) {
           text: intl.string(game(1113).t["uz4M/z"]),
           onPress() {
                   const obj = game(dependencyMap[6]);
-                  return obj.openOrbsArcadeHowToPlaySheet(game.id);
+                  return obj.openOrbsArcadeHowToPlaySheet(game.id, surface);
                 }
         };
         intl = game(1113).intl;
@@ -92,7 +95,7 @@ export default function OrbsArcadeSheetActions(game) {
       if (null != tmp7) {
         const obj5 = { grow: true, size: "lg", variant: "secondary", text: null, onPress: null };
         ({ text: obj6.text, onPress: obj6.onPress } = tmp7);
-        tmp19 = closure_4(tmp10(5634).Button, obj5);
+        tmp19 = closure_4(tmp10(5758).Button, obj5);
       }
       items3[1] = tmp19;
       obj4.children = items3;
@@ -100,7 +103,7 @@ export default function OrbsArcadeSheetActions(game) {
     }
     tmp16 = null;
     if (PLAY === obj.PLAY) {
-      const obj10 = { game, size: "lg" };
+      const obj10 = { game, size: "lg", location: _location, surface };
       tmp16 = closure_4(OrbsArcadePlayButtonDefault, obj10);
     }
   }

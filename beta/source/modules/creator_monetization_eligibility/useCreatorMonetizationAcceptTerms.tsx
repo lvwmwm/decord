@@ -1,16 +1,16 @@
-// Module ID: 19874
-// Function ID: 19875
+// Module ID: 20284
+// Function ID: 20285
 // Name: useCreatorMonetizationAcceptTerms
-// Dependencies: [5, 32, 19, 4881, 4885, 1383, 504, 7435, 19875, 6447, 2]
+// Dependencies: [5, 32, 19, 5007, 5011, 1385, 504, 7499, 20285, 6580, 2]
 // Exports: default
 
-// Module 19874 (useCreatorMonetizationAcceptTerms)
-import GuildRecord from "GuildRecord" /* 4881 */;
+// Module 20284 (useCreatorMonetizationAcceptTerms)
+import GuildRecord from "GuildRecord" /* 5007 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4885 */;
-import UserStore from "UserStore" /* 1383 */;
+import GuildStore from "GuildStore" /* 5011 */;
+import UserStore from "UserStore" /* 1385 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -60,7 +60,7 @@ export default function useCreateCreatorMonetizationAcceptTermsRequest(arg0, arg
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c3;
@@ -135,7 +135,7 @@ export default function useCreateCreatorMonetizationAcceptTermsRequest(arg0, arg
             closure_129_4(false);
           }
           c5 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp41) {
           if (0 === c3) {
             c5 = 3;

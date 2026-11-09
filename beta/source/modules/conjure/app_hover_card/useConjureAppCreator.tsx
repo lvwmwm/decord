@@ -1,15 +1,15 @@
-// Module ID: 14416
-// Function ID: 14417
+// Module ID: 14652
+// Function ID: 14653
 // Name: useConjureAppCreator
-// Dependencies: [5, 32, 19, 1383, 14417, 12636, 504, 14418, 2]
+// Dependencies: [5, 32, 19, 1385, 14653, 11720, 504, 14654, 2]
 // Exports: default
 
-// Module 14416 (useConjureAppCreator)
-import react_native from "react-native" /* 14418 */;
+// Module 14652 (useConjureAppCreator)
+import react_native from "react-native" /* 14654 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1383 */;
+import UserStore from "UserStore" /* 1385 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -18,7 +18,6 @@ let _require, c3, c4, closure_1, importDefault;
 const result = size.fileFinishedImporting("modules/conjure/app_hover_card/useConjureAppCreator.tsx");
 
 export default function useConjureAppCreator(conjureProjectId, arg1, arg2) {
-  let first;
   let project;
   let remixProject;
   _require = conjureProjectId;
@@ -34,6 +33,7 @@ export default function useConjureAppCreator(conjureProjectId, arg1, arg2) {
   }
   const tmp2Result = tmp2(conjureProjectId, arg1, arg2);
   ({ project, remixProject } = tmp2Result);
+  const editProject = tmp2Result.editProject;
   const isSettled = tmp2Result.isSettled;
   let owner_user_id;
   if (project != null) {
@@ -42,12 +42,12 @@ export default function useConjureAppCreator(conjureProjectId, arg1, arg2) {
   if (owner_user_id == null) {
     owner_user_id = null;
   }
-  let obj = first;
-  let tmp6 = owner_user_id(first.useState(null), 2);
-  first = tmp6[0];
-  let closure_6 = tmp6[1];
+  let obj = owner_user_id;
+  let tmp6 = isSettled(owner_user_id.useState(null), 2);
+  const first = tmp6[0];
+  let closure_7 = tmp6[1];
   const items = [arg2, owner_user_id];
-  const effect = first.useEffect(() => {
+  const effect = owner_user_id.useEffect(() => {
     let _false;
     function requestCreator(arg0) {
       return obj(...arguments);
@@ -67,7 +67,7 @@ export default function useConjureAppCreator(conjureProjectId, arg1, arg2) {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -99,10 +99,10 @@ export default function useConjureAppCreator(conjureProjectId, arg1, arg2) {
             } else {
               const tmp6 = closure_130_0 && null == user.getUser(closure_0);
               if (tmp6) {
-                user(closure_0);
+                closure_1_7(closure_0);
               }
               c4 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp19) {
             c4 = 3;
@@ -125,7 +125,7 @@ export default function useConjureAppCreator(conjureProjectId, arg1, arg2) {
     }
   }, items);
   let obj2 = require("get initialized");
-  const items1 = [closure_6];
+  const items1 = [first];
   const items2 = [owner_user_id];
   const stateFromStores = obj2.useStateFromStores(items1, () => {
     let tmp2 = null;
@@ -150,10 +150,10 @@ export default function useConjureAppCreator(conjureProjectId, arg1, arg2) {
       obj.preloadImage(avatarURL);
     }
   }, items3);
-  const items4 = [stateFromStores, remixProject, conjureProjectId, isSettled, owner_user_id, first];
+  const items4 = [stateFromStores, remixProject, editProject, conjureProjectId, isSettled, owner_user_id, first];
   return obj.useMemo(() => {
     let tmp2;
-    const obj = { creator: stateFromStores, remixProject, isSettled: tmp2 };
+    const obj = { creator: stateFromStores, remixProject, editProject, isSettled: tmp2 };
     tmp2 = null != conjureProjectId;
     const tmp = stateFromStores;
     if (tmp2) {

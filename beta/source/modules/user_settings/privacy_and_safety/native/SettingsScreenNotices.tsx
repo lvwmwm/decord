@@ -1,30 +1,30 @@
-// Module ID: 16712
-// Function ID: 16713
+// Module ID: 17034
+// Function ID: 17035
 // Name: SettingsScreenNotices
-// Dependencies: [19, 17, 1383, 21, 5014, 575, 8372, 16713, 16714, 5693, 6731, 6726, 16721, 16722, 2]
+// Dependencies: [19, 17, 1385, 21, 5140, 575, 8443, 17035, 17036, 5817, 6786, 6781, 17044, 17045, 2]
 // Exports: default
 
-// Module 16712 (SettingsScreenNotices)
+// Module 17034 (SettingsScreenNotices)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5693 */;
-import AgeGatedFeature from "AgeGatedFeature" /* 6731 */;
-import FamilyCenterUtils from "FamilyCenterUtils" /* 8372 */;
-import FamilyCenterSettingsNoticeDefault from "FamilyCenterSettingsNotice" /* 16713 */;
-import TinyBroncoSettingsNoticesLazy from "TinyBroncoSettingsNoticesLazy" /* 16714 */;
-import AgeConfirmationNoticeDefault from "AgeConfirmationNotice" /* 16721 */;
-import SensitiveContentFiltersNotices from "SensitiveContentFiltersNotices" /* 16722 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5817 */;
+import AgeGatedFeature from "AgeGatedFeature" /* 6786 */;
+import FamilyCenterUtils from "FamilyCenterUtils" /* 8443 */;
+import FamilyCenterSettingsNoticeDefault from "FamilyCenterSettingsNotice" /* 17035 */;
+import AgeNoticeSettingsNoticesLazy from "AgeNoticeSettingsNoticesLazy" /* 17036 */;
+import AgeConfirmationNoticeDefault from "AgeConfirmationNotice" /* 17044 */;
+import SensitiveContentFiltersNotices from "SensitiveContentFiltersNotices" /* 17045 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1383 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import UserStore from "UserStore" /* 1385 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let items;
 let items1;
 let items2;
 let tmp;
-const AgeVerificationUtils = tmp(6726);
+const AgeVerificationUtils = tmp(6781);
 function predicate() {
   const obj = RegionalFeatureConfigUtils;
   let isFeatureAgeGatedResult = obj.isFeatureAgeGated(AgeGatedFeature.AgeGatedFeature.REACTIVE_CHECK);
@@ -62,8 +62,8 @@ let closure_6 = createStyles(obj);
 const obj4 = { SENSITIVE_CONTENT_FILTERS: items, CONTENT_AND_SOCIAL: items1, DATA_AND_PRIVACY: items2 };
 items = [{ order: 100, predicate: FamilyCenterUtils.isParentallyControlled, Component: FamilyCenterSettingsNoticeDefault }, , , ];
 ({ order: 100, predicate: FamilyCenterUtils.isParentallyControlled, Component: FamilyCenterSettingsNoticeDefault });
-items[1] = { order: 150, predicate: TinyBroncoSettingsNoticesLazy.shouldShowTinyBroncoUnconfirmedNotice, Component: TinyBroncoSettingsNoticesLazy.ContentFiltersUnconfirmedNotice };
-({ order: 150, predicate: TinyBroncoSettingsNoticesLazy.shouldShowTinyBroncoUnconfirmedNotice, Component: TinyBroncoSettingsNoticesLazy.ContentFiltersUnconfirmedNotice });
+items[1] = { order: 150, predicate: AgeNoticeSettingsNoticesLazy.shouldShowAgeNoticeUnconfirmedNotice, Component: AgeNoticeSettingsNoticesLazy.ContentFiltersUnconfirmedNotice };
+({ order: 150, predicate: AgeNoticeSettingsNoticesLazy.shouldShowAgeNoticeUnconfirmedNotice, Component: AgeNoticeSettingsNoticesLazy.ContentFiltersUnconfirmedNotice });
 items[2] = { order: 200, predicate, Component: AgeConfirmationNoticeDefault };
 ({ order: 200, predicate, Component: AgeConfirmationNoticeDefault });
 items[3] = { order: 300, predicate: predicate2, Component: SensitiveContentFiltersNotices.SensitiveContentFiltersTeenNotice };

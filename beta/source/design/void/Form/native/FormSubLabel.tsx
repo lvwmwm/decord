@@ -1,12 +1,12 @@
-// Module ID: 7312
-// Function ID: 7313
+// Module ID: 7373
+// Function ID: 7374
 // Name: FormSubLabel
-// Dependencies: [19, 21, 5624, 2]
+// Dependencies: [19, 21, 5751, 2]
 // Exports: default
 
-// Module 7312 (FormSubLabel)
+// Module 7373 (FormSubLabel)
 import Fragment from "Fragment" /* 21 */;
-import Text_Text from "Text/Text" /* 5624 */;
+import Text_Text from "Text/Text" /* 5751 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -23,5 +23,5 @@ export default function FormSubLabel(color) {
   if (color === undefined) {
     color = "text-subtle";
   }
-  return jsx(Text_Text.Text, { color, variant: "text-xs/normal", lineClamp, style, accessible, children });
+  return jsx(Text_Text.Text, { color, variant: "body-xs/normal", lineClamp, style, accessible, children });
 };

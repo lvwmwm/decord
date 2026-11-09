@@ -1,75 +1,87 @@
-// Module ID: 16558
-// Function ID: 16559
+// Module ID: 16876
+// Function ID: 16877
 // Name: UserProfileWidgetEditingHeader
-// Dependencies: [19, 17, 21, 5014, 575, 5624, 1113, 5634, 9572, 8028, 12482, 2]
+// Dependencies: [19, 17, 502, 8825, 21, 5140, 575, 504, 5751, 1113, 5758, 9659, 8833, 5374, 15201, 2118, 8098, 12685, 2]
 // Exports: default
 
-// Module 16558 (UserProfileWidgetEditingHeader)
+// Module 16876 (UserProfileWidgetEditingHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import intl4 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import components_Button_Button from "components/Button/Button" /* 5634 */;
-import IconButton2 from "IconButton" /* 8028 */;
-import PlusSmallIcon2 from "PlusSmallIcon" /* 9572 */;
-import ArrowsUpDownIcon2 from "ArrowsUpDownIcon" /* 12482 */;
+import asyncRequire from "asyncRequire" /* 2118 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
+import Constants from "Constants" /* 8825 */;
+import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8833 */;
 import react from "react" /* 19 */;
+import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
-let closure_4;
-let hasOwnProperty;
+const require = globalThis.__r;
+let _require;
+
+let metroImportDefault;
+let metroRequire;
 let obj2;
 const View = react_native.View;
-({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
+let closure_5 = Constants.TrackUserProfileEditActions;
+({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let obj = { header: obj2, heading: { flex: 1 } };
 obj2 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8 };
-let closure_6 = createStyles.createStyles(obj);
-const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileWidgetEditingHeader.tsx");
+let closure_8 = createStyles.createStyles(obj);
+let result = size.fileFinishedImporting("modules/user_profile/native/UserProfileWidgetEditingHeader.tsx");
 
 export default function UserProfileWidgetEditingHeader() {
   let ArrowsUpDownIcon;
   let PlusSmallIcon;
+  let id;
   let intl;
   let intl2;
   let intl3;
-  let items;
-  let obj4;
-  let obj6;
-  const tmp = closure_6();
-  const obj = { style: tmp.header, children: items };
-  const obj2 = { variant: "text-sm/semibold", color: "text-subtle", style: tmp.heading, children: intl.string(intl4.t.OYlggR) };
-  const Heading = Text_Text.Heading;
-  intl = intl4.intl;
-  items = [React3(Heading, obj2), , ];
-  const obj3 = {
+  let items1;
+  let obj5;
+  let obj7;
+  let userId;
+  const tmp = closure_8();
+  let obj = require("get initialized");
+  const items = [AuthenticationStore];
+  _require = obj.useStateFromStores(items, () => id.getId());
+  let obj2 = { style: tmp.header, children: items1 };
+  let obj3 = { variant: "body-sm/semibold", color: "text-subtle", style: tmp.heading, children: intl.string(require("intl").t.OYlggR) };
+  const Heading = require("Text/Text").Heading;
+  intl = require("intl").intl;
+  items1 = [closure_6(Heading, obj3), , ];
+  const obj4 = {
     size: "sm",
     variant: "secondary",
-    icon: React3(PlusSmallIcon, obj4),
-    text: intl2.string(intl4.t["lBG2s/"]),
+    icon: closure_6(PlusSmallIcon, obj5),
+    text: intl2.string(require("intl").t["lBG2s/"]),
+    onPress() {
+      const obj = UserProfileAnalyticsUtils;
+      const obj2 = { userId, action: constants.PRESS_ADD_WIDGET };
+      const result = obj.trackUserProfileEditAction(obj2);
+      const obj3 = ActionSheetActionCreatorsDefault;
+      obj3.openLazy(asyncRequire(15201, dependencyMap.paths), "UserProfileWidgetAddActionSheet");
+    }
+  };
+  const Button = require("components/Button/Button").Button;
+  obj5 = { size: "xs", color: nativeDefault.colors.ICON_DEFAULT };
+  PlusSmallIcon = require("PlusSmallIcon").PlusSmallIcon;
+  intl2 = require("intl").intl;
+  items1[1] = closure_6(Button, obj4);
+  const obj6 = {
+    size: "sm",
+    variant: "secondary",
+    icon: closure_6(ArrowsUpDownIcon, obj7),
+    accessibilityLabel: intl3.string(require("intl").t.tm1WHd),
     onPress() {
 
     }
   };
-  const Button = components_Button_Button.Button;
-  obj4 = { size: "xs", color: nativeDefault.colors.ICON_DEFAULT };
-  PlusSmallIcon = PlusSmallIcon2.PlusSmallIcon;
-  intl2 = intl4.intl;
-  items[1] = React3(Button, obj3);
-  const obj5 = {
-    size: "sm",
-    variant: "secondary",
-    icon: React3(ArrowsUpDownIcon, obj6),
-    accessibilityLabel: intl3.string(intl4.t.tm1WHd),
-    onPress() {
-
-    }
-  };
-  const IconButton = IconButton2.IconButton;
-  obj6 = { size: "sm", color: nativeDefault.colors.ICON_DEFAULT };
-  ArrowsUpDownIcon = ArrowsUpDownIcon2.ArrowsUpDownIcon;
-  intl3 = intl4.intl;
-  items[2] = React3(IconButton, obj5);
-  return hasOwnProperty(View, obj);
+  const IconButton = require("IconButton").IconButton;
+  obj7 = { size: "sm", color: nativeDefault.colors.ICON_DEFAULT };
+  ArrowsUpDownIcon = require("ArrowsUpDownIcon").ArrowsUpDownIcon;
+  intl3 = require("intl").intl;
+  items1[2] = closure_6(IconButton, obj6);
+  return closure_7(View, obj2);
 };

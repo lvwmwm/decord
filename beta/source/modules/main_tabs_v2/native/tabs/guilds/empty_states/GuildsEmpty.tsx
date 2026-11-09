@@ -1,27 +1,27 @@
-// Module ID: 18338
-// Function ID: 18339
+// Module ID: 18676
+// Function ID: 18677
 // Name: GuildsEmpty
-// Dependencies: [32, 19, 17, 4881, 502, 4885, 5045, 1072, 21, 5014, 575, 5624, 14280, 18339, 1113, 6027, 5634, 1498, 563, 6028, 1260, 4888, 5200, 8773, 17072, 2]
+// Dependencies: [32, 19, 17, 5007, 502, 5011, 5171, 1072, 21, 5140, 575, 5751, 14516, 18677, 1113, 6159, 5758, 1500, 563, 6160, 1260, 5014, 5316, 8844, 17398, 2]
 
-// Module 18338 (GuildsEmpty)
+// Module 18676 (GuildsEmpty)
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
-import GuildRecord from "GuildRecord" /* 4881 */;
-import FavoritesUtils from "FavoritesUtils" /* 4888 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import components_Button_Button from "components/Button/Button" /* 5634 */;
-import Stack_Stack from "Stack/Stack" /* 6027 */;
-import CreateGuildModalActionCreatorsDefault from "CreateGuildModalActionCreators" /* 14280 */;
-import CheersSpotIllustration from "CheersSpotIllustration" /* 18339 */;
+import GuildRecord from "GuildRecord" /* 5007 */;
+import FavoritesUtils from "FavoritesUtils" /* 5014 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import components_Button_Button from "components/Button/Button" /* 5758 */;
+import Stack_Stack from "Stack/Stack" /* 6159 */;
+import CreateGuildModalActionCreatorsDefault from "CreateGuildModalActionCreators" /* 14516 */;
+import CheersSpotIllustration from "CheersSpotIllustration" /* 18677 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildStore from "GuildStore" /* 4885 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5045 */;
+import GuildStore from "GuildStore" /* 5011 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5171 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let navigation;
@@ -71,13 +71,13 @@ class GuildsEmptyContent {
     const obj4 = { style: tmp.illustrationWrapper, children: map1(CheersSpotIllustration.CheersSpotIllustration, { width: 245, accessible: false }) };
     items1[0] = map1(hasOwnProperty, obj4);
     const obj5 = { style: tmp.textWrapper, children: items3 };
-    const obj6 = { color: "mobile-text-heading-primary", variant: "heading-md/bold", style: items2, children: intl.string(intl5.t["Y7Ml/I"]) };
+    const obj6 = { color: "mobile-text-heading-primary", variant: "heading-sm/semibold", style: items2, children: intl.string(intl5.t["Y7Ml/I"]) };
     items2 = [, ];
     ({ text: arr3[0], headerText: arr3[1] } = tmp);
     const Heading = Text_Text.Heading;
     intl = intl5.intl;
     items3 = [map1(Heading, obj6), ];
-    const obj7 = { color: "text-default", variant: "text-md/medium", style: tmp.text, children: intl2.string(intl5.t.kuyE4r) };
+    const obj7 = { color: "text-default", variant: "body-md/medium", style: tmp.text, children: intl2.string(intl5.t.kuyE4r) };
     const Text = Text_Text.Text;
     intl2 = intl5.intl;
     items3[1] = map1(Text, obj7);
@@ -112,7 +112,7 @@ obj6 = { width: "100%", alignItems: "center", marginBottom: nativeDefault.space.
 obj7 = { paddingBottom: nativeDefault.space.PX_16, paddingHorizontal: nativeDefault.space.PX_16, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 obj8 = { marginHorizontal: nativeDefault.space.PX_16, marginVertical: nativeDefault.space.PX_24 };
 obj9 = { fontSize: 18, marginBottom: 8 };
-const merged = Object.assign(Text_Text.TextStyleSheet["heading-md/bold"]);
+const merged = Object.assign(Text_Text.TextStyleSheet["heading-sm/semibold"]);
 let closure_15 = createStyles(obj);
 const memoResult = react.memo(function GuildsEmpty(arg0) {
   let Text;
@@ -128,7 +128,7 @@ const memoResult = react.memo(function GuildsEmpty(arg0) {
   selectedGuildId = undefined;
   ({ selectedGuildId, style } = arg0);
   const tmp = closure_15();
-  const obj = navigation(1498);
+  const obj = navigation(1500);
   navigation = obj.useNavigation();
   let obj2 = navigation(563);
   const items = [AuthenticationStore];
@@ -139,7 +139,7 @@ const memoResult = react.memo(function GuildsEmpty(arg0) {
   }
   selectedGuildId = tmp6;
   let obj3 = { type: tmp2(1260).ImpressionTypes.VIEW, name: tmp2(1260).ImpressionNames.GUILDS_EMPTY_NUX };
-  const tmp7 = selectedGuildId(6028);
+  const tmp7 = selectedGuildId(6160);
   tmp7(obj3);
   const items1 = [tmp6, navigation];
   const effect = react.useEffect(() => {
@@ -191,7 +191,7 @@ const memoResult = react.memo(function GuildsEmpty(arg0) {
                 found = guildsArray.find((item) => !closure_1_7(item));
               }
               if (null != found) {
-                const tmp23Result = tmp23(5200);
+                const tmp23Result = tmp23(5316);
                 let closure_0 = _slicedToArray(tmp23Result.getInitialGuildState(found.id, undefined, false), 2)[1];
                 obj2.dispatch(() => {
                   const CommonActions = navigation(closure_2_2[17]).CommonActions;
@@ -204,9 +204,9 @@ const memoResult = react.memo(function GuildsEmpty(arg0) {
       }
     }
   }, items1);
-  const tmp2Result = navigation(8773);
+  const tmp2Result = navigation(8844);
   const isScreenLandscape = tmp2Result.useIsScreenLandscape();
-  navigation(17072);
+  navigation(17398);
   let tmp14Result = null;
   if (stateFromStores) {
     const obj4 = { style: items2, children: items3 };
@@ -214,8 +214,8 @@ const memoResult = react.memo(function GuildsEmpty(arg0) {
     const obj5 = { style: tmp.headerTitle, children: closure_13(closure_5, obj6) };
     let tmp15 = closure_5;
     obj6 = { style: tmp.headerInner, children: closure_13(Text, obj7) };
-    obj7 = { color: "mobile-text-heading-primary", variant: "heading-lg/bold", maxFontSizeMultiplier: 1.75, accessibilityRole: "header", children: intl.string(navigation(1113).t["7hB4kg"]) };
-    Text = tmp2(5624).Text;
+    obj7 = { color: "mobile-text-heading-primary", variant: "heading-lg/semibold", maxFontSizeMultiplier: 1.75, accessibilityRole: "header", children: intl.string(navigation(1113).t["7hB4kg"]) };
+    Text = tmp2(5751).Text;
     intl = tmp2(1113).intl;
     items3 = [closure_13(closure_5, obj5), ];
     let tmp18;

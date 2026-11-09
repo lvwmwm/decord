@@ -1,18 +1,18 @@
-// Module ID: 10268
-// Function ID: 10269
+// Module ID: 10387
+// Function ID: 10388
 // Name: stickers/StickersUtils
-// Dependencies: [19, 17, 4885, 1383, 10269, 1072, 1228, 10266, 504, 10046, 6561, 10270, 10271, 10272, 1623, 2]
+// Dependencies: [19, 17, 5011, 1385, 10388, 1072, 1228, 10385, 504, 6616, 10389, 10390, 10391, 1625, 2]
 // Exports: dropPreloadedSticker, openStickerPickerToPackId, preloadSticker, useStickerCategories
 
-// Module 10268 (stickers/StickersUtils)
+// Module 10387 (stickers/StickersUtils)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
 import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1228 */;
-import KeyboardTypes from "KeyboardTypes" /* 1623 */;
-import StickerPickerStore from "StickerPickerStore" /* 10269 */;
+import KeyboardTypes from "KeyboardTypes" /* 1625 */;
+import StickerPickerStore from "StickerPickerStore" /* 10388 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4885 */;
-import UserStore from "UserStore" /* 1383 */;
+import GuildStore from "GuildStore" /* 5011 */;
+import UserStore from "UserStore" /* 1385 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -34,13 +34,11 @@ export function useStickerCategories(channel) {
   const items = [UserStore];
   stateFromStores = obj2.useStateFromStores(items, () => currentUser.getCurrentUser());
   const guilds = GuildStore.getGuilds();
-  let obj3 = require("MobileStickerPickerUpsellRestyleExperiment");
-  const mobileStickerPickerUpsellRestyleEnabled = obj3.useMobileStickerPickerUpsellRestyleEnabled("native.StickerPicker");
-  const items1 = [channel, guilds, stickerPackCategories, mobileStickerPickerUpsellRestyleEnabled, stateFromStores];
+  const items1 = [channel, guilds, stickerPackCategories, stateFromStores];
   return guilds.useMemo(() => {
     const found = stickerPackCategories.filter((stickers) => stickers.stickers.length > 0);
     const found1 = found.filter((type) => {
-      let tmp2 = type.type !== channel(stateFromStores[10]).StickerCategoryTypes.GUILD;
+      let tmp2 = type.type !== channel(stateFromStores[9]).StickerCategoryTypes.GUILD;
       if (!tmp2) {
         nsfwAllowed = undefined;
         if (nsfwAllowed != null) {
@@ -57,38 +55,35 @@ export function useStickerCategories(channel) {
       return tmp2;
     });
     return found1.map((type) => {
-      let tmp14;
-      let tmp18;
-      let result = mobileStickerPickerUpsellRestyleEnabled;
-      if (result) {
-        const obj = closure_0(stateFromStores[11]);
-        result = obj.isStickerCategoryNitroLocked(type, nsfwAllowed, closure_1_0);
-      }
-      if (type.type !== closure_0(stateFromStores[10]).StickerCategoryTypes.FAVORITE) {
-        if (type.type !== closure_0(stateFromStores[10]).StickerCategoryTypes.RECENT) {
-          let tmp8 = type;
+      let tmp12;
+      let tmp9;
+      const obj = closure_0(stateFromStores[10]);
+      const result = obj.isStickerCategoryNitroLocked(type, nsfwAllowed, closure_1_0);
+      if (type.type !== closure_0(stateFromStores[9]).StickerCategoryTypes.FAVORITE) {
+        if (type.type !== closure_0(stateFromStores[9]).StickerCategoryTypes.RECENT) {
+          let tmp4 = type;
           if (result) {
             const obj2 = { isNitroLocked: result };
             const merged = Object.assign(type);
-            tmp8 = obj2;
+            tmp4 = obj2;
           }
-          return tmp8;
+          return tmp4;
         }
       }
-      if (type.type === closure_0(stateFromStores[10]).StickerCategoryTypes.FAVORITE) {
-        tmp14 = stickerPackCategories(stateFromStores[12]);
+      if (type.type === closure_0(stateFromStores[9]).StickerCategoryTypes.FAVORITE) {
+        tmp9 = stickerPackCategories(tmp2[11]);
       } else {
-        tmp14 = stickerPackCategories(stateFromStores[13]);
+        tmp9 = stickerPackCategories(tmp2[12]);
       }
-      const obj3 = { icon: tmp14 };
+      const obj3 = { icon: tmp9 };
       const merged1 = Object.assign(type);
       if (result) {
         obj3.isNitroLocked = result;
-        tmp18 = obj3;
+        tmp12 = obj3;
       } else {
-        tmp18 = obj3;
+        tmp12 = obj3;
       }
-      return tmp18;
+      return tmp12;
     });
   }, items1);
 }

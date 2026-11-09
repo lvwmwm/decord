@@ -1,24 +1,23 @@
-// Module ID: 17470
-// Function ID: 17471
+// Module ID: 17796
+// Function ID: 17797
 // Name: SettingsNotificationScreen
-// Dependencies: [19, 17, 17471, 8432, 21, 5014, 575, 7149, 13975, 17472, 17473, 5624, 1113, 6977, 7086, 11540, 17474, 17475, 16583, 2]
+// Dependencies: [19, 17, 17797, 8503, 21, 5140, 575, 14209, 17798, 17799, 5751, 1113, 7040, 7152, 11685, 17800, 17801, 16905, 2]
 
-// Module 17470 (SettingsNotificationScreen)
+// Module 17796 (SettingsNotificationScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl7 from "intl" /* 1113 */;
-import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7149 */;
-import SettingsConstants from "SettingsConstants" /* 8432 */;
-import SettingBuilders from "SettingBuilders" /* 11540 */;
-import NotificationPermissionUtil from "NotificationPermissionUtil" /* 13975 */;
-import SettingLayoutDefault from "SettingLayout" /* 16583 */;
-import AndroidNotificationSettingsStore from "AndroidNotificationSettingsStore" /* 17471 */;
-import ContextualOptInNudgeHoldoutExperimentDefault from "ContextualOptInNudgeHoldoutExperiment" /* 17472 */;
-import SettingsNotificationUtils from "SettingsNotificationUtils" /* 17473 */;
-import NotificationPermissionSettingsHeaderDefault from "NotificationPermissionSettingsHeader" /* 17474 */;
+import SettingsConstants from "SettingsConstants" /* 8503 */;
+import SettingBuilders from "SettingBuilders" /* 11685 */;
+import NotificationPermissionUtil from "NotificationPermissionUtil" /* 14209 */;
+import SettingLayoutDefault from "SettingLayout" /* 16905 */;
+import AndroidNotificationSettingsStore from "AndroidNotificationSettingsStore" /* 17797 */;
+import ContextualOptInNudgeHoldoutExperimentDefault from "ContextualOptInNudgeHoldoutExperiment" /* 17798 */;
+import SettingsNotificationUtils from "SettingsNotificationUtils" /* 17799 */;
+import NotificationPermissionSettingsHeaderDefault from "NotificationPermissionSettingsHeader" /* 17800 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let c9;
@@ -31,51 +30,44 @@ function SystemNotificationsSubLabel() {
   let intl;
   let intl2;
   let items1;
-  let obj11;
+  let obj10;
+  let obj6;
   let obj7;
-  let obj8;
   const tmp = closure_10();
-  const obj = ManaTypeConsolidationExperiment;
-  const manaTypeConsolidationExperiment = obj.useManaTypeConsolidationExperiment("SystemNotificationsSubLabel");
-  const obj2 = NotificationPermissionUtil;
-  let showReactivationPrompt = obj2.useShowReactivationPrompt();
-  const obj3 = ContextualOptInNudgeHoldoutExperimentDefault;
-  const inHoldout = obj3.useConfig({ location: "SystemNotificationsSubLabel" }).inHoldout;
-  const obj4 = SettingsNotificationUtils;
-  let result = obj4.hasAndroidNotificationChannels();
-  const tmp9 = React4;
+  const obj = NotificationPermissionUtil;
+  let showReactivationPrompt = obj.useShowReactivationPrompt();
+  const obj2 = ContextualOptInNudgeHoldoutExperimentDefault;
+  const inHoldout = obj2.useConfig({ location: "SystemNotificationsSubLabel" }).inHoldout;
+  const obj3 = SettingsNotificationUtils;
+  let result = obj3.hasAndroidNotificationChannels();
+  const tmp8 = React4;
   if (result) {
-    let str = "text-sm/medium";
-    const Text = tmp2(5624).Text;
-    const tmp10 = metroImportDefault;
-    if (manaTypeConsolidationExperiment) {
-      str = "experimental/body-xs/normal";
-    }
-    const obj5 = { variant: str, color: "text-muted", children: intl.string(intl7.t["/TZX1J"]) };
+    const obj4 = { variant: "body-xs/normal", color: "text-muted", children: intl.string(intl7.t["/TZX1J"]) };
+    const Text = tmp2(5751).Text;
     intl = tmp2(1113).intl;
-    result = tmp10(Text, obj5);
+    result = metroImportDefault(Text, obj4);
   }
   const children = [result, ];
   if (showReactivationPrompt) {
     showReactivationPrompt = inHoldout;
   }
   if (showReactivationPrompt) {
-    const obj6 = { style: tmp.card, children: metroImportDefault(Card, obj7) };
-    obj7 = { border: "none", shadow: "none", children: metroImportAll(View, obj8) };
-    obj8 = { style: tmp.cardContent, children: items1 };
-    Card = tmp2(6977).Card;
-    const obj9 = { color: nativeDefault.unsafe_rawColors.YELLOW_300 };
-    const CircleErrorIcon = tmp2(7086).CircleErrorIcon;
-    items1 = [metroImportDefault(CircleErrorIcon, obj9), ];
-    const obj10 = { style: tmp.text, children: metroImportDefault(Text2, obj11) };
-    obj11 = { color: "text-default", variant: "text-sm/medium", children: intl2.string(intl7.t.TAuasM) };
-    Text2 = tmp2(5624).Text;
+    const obj5 = { style: tmp.card, children: metroImportDefault(Card, obj6) };
+    obj6 = { border: "none", shadow: "none", children: metroImportAll(View, obj7) };
+    obj7 = { style: tmp.cardContent, children: items1 };
+    Card = tmp2(7040).Card;
+    const obj8 = { color: nativeDefault.unsafe_rawColors.YELLOW_300 };
+    const CircleErrorIcon = tmp2(7152).CircleErrorIcon;
+    items1 = [metroImportDefault(CircleErrorIcon, obj8), ];
+    const obj9 = { style: tmp.text, children: metroImportDefault(Text2, obj10) };
+    obj10 = { color: "text-default", variant: "body-sm/medium", children: intl2.string(intl7.t.TAuasM) };
+    Text2 = tmp2(5751).Text;
     intl2 = tmp2(1113).intl;
-    items1[1] = metroImportDefault(View, obj10);
-    showReactivationPrompt = metroImportDefault(View, obj6);
+    items1[1] = metroImportDefault(View, obj9);
+    showReactivationPrompt = metroImportDefault(View, obj5);
   }
   children[1] = showReactivationPrompt;
-  return metroImportAll(tmp9, { children });
+  return metroImportAll(tmp8, { children });
 }
 const View = react_native.View;
 let closure_5 = AndroidNotificationSettingsStore.initializeAndroidNotificationSettingsStore;
@@ -109,6 +101,7 @@ const memoResult = react.memo(function SettingsNotificationsScreen() {
     let items18;
     let items19;
     let items2;
+    let items20;
     let items3;
     let items4;
     let items5;
@@ -124,7 +117,7 @@ const memoResult = react.memo(function SettingsNotificationsScreen() {
     intl = intl7.intl;
     items = [, ];
     ({ IN_APP_NOTIFICATIONS: arr[0], IN_APP_MESSAGE_SOUNDS: arr[1] } = MobileUserSettings);
-    items1 = [obj2, , , , , , , , , , , , , , , , , , ];
+    items1 = [obj2, , , , , , , , , , , , , , , , , , , ];
     const obj3 = { label: intl2.string(intl7.t["jcHF+3"]), settings: items2, subLabel: metroImportDefault(SystemNotificationsSubLabel, {}) };
     intl2 = intl7.intl;
     items2 = [MobileUserSettings.SYSTEM_NOTIFICATIONS];
@@ -146,46 +139,49 @@ const memoResult = react.memo(function SettingsNotificationsScreen() {
     items1[5] = obj7;
     const obj8 = { label: intl5.string(intl7.t.EZorjX), settings: items7 };
     intl5 = intl7.intl;
-    items7 = [MobileUserSettings.COMMUNITY_ACTIVITY_ALERTS];
+    items7 = [MobileUserSettings.EMAIL_NOTIFICATIONS];
     items1[6] = obj8;
     const obj9 = { settings: items8 };
-    items8 = [MobileUserSettings.HIGHLIGHT_NOTIFICATIONS];
+    items8 = [MobileUserSettings.COMMUNITY_ACTIVITY_ALERTS];
     items1[7] = obj9;
     const obj10 = { settings: items9 };
-    items9 = [MobileUserSettings.FRIEND_STREAM_NOTIFICATIONS];
+    items9 = [MobileUserSettings.HIGHLIGHT_NOTIFICATIONS];
     items1[8] = obj10;
     const obj11 = { settings: items10 };
-    items10 = [MobileUserSettings.FRIEND_ANNIVERSARY_NOTIFICATIONS];
+    items10 = [MobileUserSettings.FRIEND_STREAM_NOTIFICATIONS];
     items1[9] = obj11;
     const obj12 = { settings: items11 };
-    items11 = [MobileUserSettings.VOICE_ACTIVITY_NOTIFICATIONS];
+    items11 = [MobileUserSettings.FRIEND_ANNIVERSARY_NOTIFICATIONS];
     items1[10] = obj12;
     const obj13 = { settings: items12 };
-    items12 = [MobileUserSettings.FRIEND_ONLINE_NOTIFICATIONS];
+    items12 = [MobileUserSettings.VOICE_ACTIVITY_NOTIFICATIONS];
     items1[11] = obj13;
     const obj14 = { settings: items13 };
-    items13 = [MobileUserSettings.CUSTOM_STATUS_NOTIFICATIONS];
+    items13 = [MobileUserSettings.FRIEND_ONLINE_NOTIFICATIONS];
     items1[12] = obj14;
     const obj15 = { settings: items14 };
-    items14 = [MobileUserSettings.FRIEND_GAMING_ACTIVITY_NOTIFICATIONS];
+    items14 = [MobileUserSettings.CUSTOM_STATUS_NOTIFICATIONS];
     items1[13] = obj15;
     const obj16 = { settings: items15 };
-    items15 = [MobileUserSettings.PROFILE_UPDATES_NOTIFICATIONS];
+    items15 = [MobileUserSettings.FRIEND_GAMING_ACTIVITY_NOTIFICATIONS];
     items1[14] = obj16;
     const obj17 = { settings: items16 };
-    items16 = [MobileUserSettings.SERVER_TRENDING_NOTIFICATIONS];
+    items16 = [MobileUserSettings.PROFILE_UPDATES_NOTIFICATIONS];
     items1[15] = obj17;
     const obj18 = { settings: items17 };
-    items17 = [MobileUserSettings.UPCOMING_SERVER_EVENT_NOTIFICATIONS];
+    items17 = [MobileUserSettings.SERVER_TRENDING_NOTIFICATIONS];
     items1[16] = obj18;
     const obj19 = { settings: items18 };
-    items18 = [MobileUserSettings.SUMMARY_REMINDER_NOTIFICATIONS];
+    items18 = [MobileUserSettings.UPCOMING_SERVER_EVENT_NOTIFICATIONS];
     items1[17] = obj19;
-    const obj20 = { label: intl6.string(intl7.t["0YtG+k"]), settings: items19 };
-    intl6 = intl7.intl;
-    items19 = [, ];
-    ({ SCREEN_DOWNTIME_SCHEDULE_NOTIFICATIONS: arr20[0], SCREEN_DOWNTIME_REMINDER_NOTIFICATIONS: arr20[1] } = MobileUserSettings);
+    const obj20 = { settings: items19 };
+    items19 = [MobileUserSettings.SUMMARY_REMINDER_NOTIFICATIONS];
     items1[18] = obj20;
+    const obj21 = { label: intl6.string(intl7.t["0YtG+k"]), settings: items20 };
+    intl6 = intl7.intl;
+    items20 = [, ];
+    ({ SCREEN_DOWNTIME_SCHEDULE_NOTIFICATIONS: arr21[0], SCREEN_DOWNTIME_REMINDER_NOTIFICATIONS: arr21[1] } = MobileUserSettings);
+    items1[19] = obj21;
     tmp3 = undefined;
     if (closure_0) {
       tmp3 = NotificationPermissionSettingsHeaderDefault;
@@ -196,7 +192,7 @@ const memoResult = react.memo(function SettingsNotificationsScreen() {
     closure_1_5();
   }, []);
   const effect1 = react.useEffect(() => {
-    const obj = closure_0(dependencyMap[17]);
+    const obj = closure_0(dependencyMap[16]);
     const result = obj.prefetchFamilyCenterAgeGroup();
   }, []);
   return closure_7(SettingLayoutDefault, { node });

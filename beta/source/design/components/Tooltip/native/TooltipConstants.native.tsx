@@ -1,53 +1,64 @@
-// Module ID: 9959
-// Function ID: 9960
+// Module ID: 10081
+// Function ID: 10082
 // Name: TooltipConstants
-// Dependencies: [5637, 2]
+// Dependencies: [5761, 2]
 // Exports: tooltipEnterExitAnimation
 
-// Module 9959 (TooltipConstants)
-import spring from "spring" /* 5637 */;
+// Module 10081 (TooltipConstants)
+import spring_spring from "spring/spring" /* 5761 */;
 import size from "module_2" /* 2 */;
 
-const require = globalThis.__r;
-let _require;
+let obj, obj1, obj4, tmpResult;
 
-const TOOLTIP_SPRING = { overshootClamping: true, damping: 35, stiffness: 450, mass: 0.5, restDisplacementThreshold: 0.001 };
-const __initData = { code: "function TooltipConstantsNativeTsx1(visible,cleanUp){const{withSpring,translate,TOOLTIP_SPRING,isHorizontal}=this.__closure;const offset=withSpring(visible===1?0:translate,TOOLTIP_SPRING,'respect-motion-settings',cleanUp);return{transform:isHorizontal?[{translateX:offset}]:[{translateY:offset}],opacity:withSpring(visible,TOOLTIP_SPRING,'respect-motion-settings',cleanUp)};}" };
+let closure_2 = { overshootClamping: true, damping: 35, stiffness: 450, mass: 0.5 };
+let closure_3 = { code: "(function TooltipConstantsNativeTsx1(visible,cleanUp){let[withSpring,translate,TOOLTIP_SPRING,isHorizontal]=this.__closure;const offset=withSpring(visible===1?0:translate,TOOLTIP_SPRING,'respect-motion-settings',cleanUp);return{transform:isHorizontal?[{translateX:offset}]:[{translateY:offset}],opacity:withSpring(visible,TOOLTIP_SPRING,'respect-motion-settings',cleanUp)};})" };
 const result = size.fileFinishedImporting("design/components/Tooltip/native/TooltipConstants.native.tsx");
 
 export function tooltipEnterExitAnimation(position) {
-  let closure_0;
   let num;
-  let tmp = "left" === position;
-  _require = tmp2;
+  let tmp2;
+  let tmp3;
+  let tmp4;
+  let tmp5;
+  let tmp6;
   if ("top" === position) {
     num = 8;
   } else {
     num = -8;
   }
-  const fn = function o(targetHeight, fn2) {
-    let items1;
-    let tmpResult;
-    const withSpring = spring.withSpring;
-    spring;
-    const withSpringResult = withSpring(0, TOOLTIP_SPRING, "respect-motion-settings", fn2);
-    const tmp4 = TOOLTIP_SPRING;
-    const tmp6 = closure_0;
-    if (tmp6) {
-      const items = [{ translateX: withSpringResult }];
-      items1 = items;
-      const obj2 = { translateX: withSpringResult };
-    } else {
-      items1 = [{ translateY: withSpringResult }];
-      const obj = { translateY: withSpringResult };
+  let items = [closure_3, spring_spring.withSpring, num, closure_2, ];
+  const tmp = "left" === position || "right" === position;
+  items[4] = tmp;
+  [tmp2, tmp3, tmp4, tmp5, tmp6] = items;
+  class TooltipConstantsNativeTsx1 {
+    constructor(arg0, arg1) {
+      tmp = closure_0;
+      num = 0;
+      if (1 !== position) {
+        num = closure_1;
+      }
+      tmp2 = closure_2;
+      tmpResult = tmp(num, closure_2, "respect-motion-settings", arg1);
+      tmp4 = closure_3;
+      if (tmp4) {
+        obj1 = { translateX: null };
+        obj1.translateX = tmpResult;
+        items = [];
+        items[0] = obj1;
+        items1 = items;
+      } else {
+        obj = { translateY: null };
+        obj.translateY = tmpResult;
+        items1 = [];
+        items1[0] = obj;
+      }
+      obj4 = { transform: items1, opacity: tmp(position, tmp2, "respect-motion-settings", arg1) };
+      return obj4;
     }
-    const obj3 = { transform: items1, opacity: tmpResult.withSpring(targetHeight, tmp4, "respect-motion-settings", fn2) };
-    tmpResult = spring;
-    return obj3;
-  };
-  let obj = { withSpring: require("spring").withSpring, translate: num, TOOLTIP_SPRING, isHorizontal: tmp2 };
-  fn.__closure = obj;
-  fn.__workletHash = 12524569976242;
-  fn.__initData = __initData;
-  return fn;
+  }
+  let items1 = [tmp3, tmp4, tmp5, tmp6];
+  TooltipConstantsNativeTsx1.__closure = items1;
+  TooltipConstantsNativeTsx1.__workletHash = 7220982044523;
+  TooltipConstantsNativeTsx1.__initData = tmp2;
+  return TooltipConstantsNativeTsx1;
 }

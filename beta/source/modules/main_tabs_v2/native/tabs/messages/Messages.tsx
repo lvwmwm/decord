@@ -1,32 +1,36 @@
-// Module ID: 18074
-// Function ID: 18075
+// Module ID: 18416
+// Function ID: 18417
 // Name: messages/Messages
-// Dependencies: [19, 5015, 6568, 21, 7326, 7351, 5095, 17072, 18075, 18079, 18097, 1375, 18099, 18100, 18101, 15341, 18102, 5199, 5198, 5609, 7654, 9, 17071, 1113, 18103, 9510, 575, 18080, 18105, 18110, 18154, 18155, 13335, 2]
+// Dependencies: [19, 6623, 21, 7387, 7412, 1652, 17398, 18417, 18421, 18439, 1377, 18441, 18442, 18443, 15627, 18444, 7730, 9, 17397, 1113, 18445, 9594, 575, 18422, 18447, 18452, 18496, 18497, 13568, 2]
 
-// Module 18074 (messages/Messages)
+// Module 18416 (messages/Messages)
 import TTITrackerDefault from "TTITracker" /* 9 */;
-import PlatformUtils from "PlatformUtils" /* 1375 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5198 */;
-import RootNavigationRef from "RootNavigationRef" /* 5199 */;
-import DeprecatedLayoutAnimation from "DeprecatedLayoutAnimation" /* 5609 */;
-import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 7654 */;
+import nativeDefault from "native" /* 575 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7387 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7412 */;
+import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 7730 */;
+import useMessagesSpecsDefault from "useMessagesSpecs" /* 18421 */;
+import MessagesHeaderDefault from "MessagesHeader" /* 18422 */;
+import useMessagesDataDefault from "useMessagesData" /* 18439 */;
+import useMessagesScrollToTopDefault from "useMessagesScrollToTop" /* 18442 */;
+import useMessagesReconnectToCallsEffectDefault from "useMessagesReconnectToCallsEffect" /* 18443 */;
+import ChannelListPanelBackdropDefault from "ChannelListPanelBackdrop" /* 18445 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5015 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6568 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6623 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
-let metroImportDefault;
+let hasOwnProperty;
 let metroRequire;
-({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
-const __initData = { code: "function MessagesTsx1(event){const{scrollPosition,handleGuildsNavigationScroll}=this.__closure;scrollPosition.set(event.contentOffset.y);handleGuildsNavigationScroll(event.contentOffset.y,event.contentSize.height,event.layoutMeasurement.height);}" };
+({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
+let closure_7 = { code: "(function MessagesTsx1(event){let[scrollPosition,handleGuildsNavigationScroll]=this.__closure;scrollPosition.set(event.contentOffset.y);handleGuildsNavigationScroll(event.contentOffset.y,event.contentSize.height,event.layoutMeasurement.height);})" };
 const memoResult = react.memo(function Messages(style) {
   let AndroidMessagesListImplExperiment;
   let CutoutBackgroundProvider;
   let animatedScrollHandler;
   let headerSize;
   let intl;
-  let items1;
+  let items2;
   let list;
   let listItemHeight;
   let listItemSizes;
@@ -36,34 +40,33 @@ const memoResult = react.memo(function Messages(style) {
   let obj10;
   let obj9;
   let recycleItems;
-  let tmp22Result;
-  let tmp24;
+  let tmp20;
+  let tmp21;
+  let tmp22;
+  let tmp24Result;
+  let tmp26;
   let tmpResult;
-  let sharedValue;
-  let dataKey;
   let sections;
-  let externalScrollEventHandler;
-  let tmp2 = sections;
   style = style.style;
-  const tmp3 = dataKey(sections[4]);
-  const analyticsLocations = tmp3(dataKey(sections[5]).MESSAGES).analyticsLocations;
-  let obj = sharedValue(sections[6]);
-  sharedValue = obj.useSharedValue(0);
-  const obj2 = sharedValue(sections[7]);
+  const tmp3 = useAnalyticsLocationsDefault;
+  const analyticsLocations = tmp3(AnalyticsLocationDefault.MESSAGES).analyticsLocations;
+  let obj = sections(1652);
+  const sharedValue = obj.useSharedValue(0);
+  const obj2 = sections(17398);
   const youBarTotalHeight = obj2.useYouBarTotalHeight();
-  const obj3 = sharedValue(sections[7]);
+  const obj3 = sections(17398);
   const youBarTotalHeight1 = obj3.useYouBarTotalHeight(-16);
-  const obj4 = sharedValue(sections[8]);
+  const obj4 = sections(18417);
   const doesLandOnHomeDrawer = obj4.useDoesLandOnHomeDrawer();
-  ({ headerSize, listItemHeight, listItemSizes, listItemSuggestedFriendHeight, listLeft, listTop } = dataKey(sections[9])());
-  dataKey(sections[9])();
-  const tmp10 = dataKey(sections[10])();
-  dataKey = tmp10.dataKey;
+  ({ headerSize, listItemHeight, listItemSizes, listItemSuggestedFriendHeight, listLeft, listTop } = useMessagesSpecsDefault());
+  useMessagesSpecsDefault();
+  const tmp10 = useMessagesDataDefault();
   sections = tmp10.sections;
   const showFullscreenEmptyState = tmp10.showFullscreenEmptyState;
-  const ref = externalScrollEventHandler.useRef(null);
-  const ref1 = externalScrollEventHandler.useRef(null);
-  let obj6 = sharedValue(sections[11]);
+  const ref = react.useRef(null);
+  const ref1 = react.useRef(null);
+  const obj5 = react;
+  const obj6 = sections(1377);
   if (obj6.isAndroid()) {
     AndroidMessagesListImplExperiment = tmp4(tmp13).AndroidMessagesListImplExperiment;
   } else {
@@ -71,38 +74,10 @@ const memoResult = react.memo(function Messages(style) {
   }
   const config = AndroidMessagesListImplExperiment.useConfig({ location: "Messages Tab" });
   ({ list, recycleItems } = config);
-  dataKey(tmp2[13])({ listRef: ref, listRefHappeningNow: ref1 });
-  dataKey(tmp2[14])();
-  const tmp4Result = sharedValue(tmp2[15]);
-  const commonTriggerPoint = tmp4Result.useCommonTriggerPoint(tmp4(tmp2[16]).DmGdmListRenderTriggerPoint);
-  const items = [dataKey];
-  const effect = obj5.useEffect(() => {
-    if (null != dataKey) {
-      const obj6 = PlatformUtils;
-      if (!obj6.isAndroid()) {
-        if (!AccessibilityStore.useReducedMotion) {
-          const tmp6Result = RootNavigationRef;
-          const rootNavigationRef = tmp6Result.getRootNavigationRef();
-          let tmp2 = null != rootNavigationRef && rootNavigationRef.isReady();
-          if (tmp2) {
-            const coerceGuildsRoute = NavigationRouteUtils.coerceGuildsRoute;
-            NavigationRouteUtils;
-            const tmp6Result5 = RootNavigationRef;
-            const rootNavigationRef1 = tmp6Result5.getRootNavigationRef();
-            let currentRoute;
-            if (rootNavigationRef1 != null) {
-              currentRoute = rootNavigationRef1.getCurrentRoute();
-            }
-            tmp2 = null != coerceGuildsRoute(currentRoute);
-          }
-          if (tmp2) {
-            const tmp6Result6 = DeprecatedLayoutAnimation;
-            const result = tmp6Result6.DeprecatedLayoutAnimation();
-          }
-        }
-      }
-    }
-  }, items);
+  useMessagesScrollToTopDefault({ listRef: ref, listRefHappeningNow: ref1 });
+  useMessagesReconnectToCallsEffectDefault();
+  const tmp4Result = sections(15627);
+  const commonTriggerPoint = tmp4Result.useCommonTriggerPoint(tmp4(18444).DmGdmListRenderTriggerPoint);
   const layoutEffect = obj5.useLayoutEffect(() => {
     const obj = TTIAnalyticsUtils;
     obj.trackAppUIViewed();
@@ -111,48 +86,55 @@ const memoResult = react.memo(function Messages(style) {
     const reduced = sections.reduce((acc, item) => acc + item, 0);
     recordRender(reduced, GatewayConnectionStore.isConnected());
   });
-  const tmp4Result3 = sharedValue(tmp2[22]);
-  externalScrollEventHandler = tmp4Result3.useExternalScrollEventHandler({ id: "messages" });
-  const fn = function w(contentOffset) {
-    const result = sharedValue.set(contentOffset.contentOffset.y);
-    externalScrollEventHandler(contentOffset.contentOffset.y, contentOffset.contentSize.height, contentOffset.layoutMeasurement.height);
-  };
-  fn.__closure = { scrollPosition: sharedValue, handleGuildsNavigationScroll: externalScrollEventHandler };
-  fn.__workletHash = 5461403437592;
-  fn.__initData = __initData;
-  const obj7 = { accessibilityLabel: intl.string(sharedValue(tmp2[23]).t.OIgYlQ), data: tmp10, handleScrollAnimated: animatedScrollHandler, insetEnd: youBarTotalHeight, listItemHeight, listItemSizes, listItemSuggestedFriendHeight, listLeft, listRefHappeningNow: ref1, listTop, recycleItems, scrollIndicatorInsetBottom: youBarTotalHeight1, scrollPosition: sharedValue };
-  const tmp4Result4 = sharedValue(tmp2[6]);
-  animatedScrollHandler = tmp4Result4.useAnimatedScrollHandler(fn);
-  intl = tmp4(tmp2[23]).intl;
-  const obj8 = { value: analyticsLocations, children: closure_6(tmpResult, obj9) };
-  const AnalyticsLocationProvider = tmp4(tmp2[4]).AnalyticsLocationProvider;
-  obj9 = { style, children: tmp24(CutoutBackgroundProvider, obj10) };
-  obj10 = { backgroundColor: dataKey(tmp2[26]).colors.PANEL_BG, children: items1 };
-  tmpResult = dataKey(tmp2[24]);
-  CutoutBackgroundProvider = tmp4(tmp2[25]).CutoutBackgroundProvider;
-  items1 = [closure_6(tmp(tmp2[27]), { height: headerSize, scrollPosition: sharedValue }), , ];
-  tmp24 = closure_7;
+  const tmp4Result3 = sections(17397);
+  const items = [closure_7, sharedValue, tmp4Result3.useExternalScrollEventHandler({ id: "messages" })];
+  let c0;
+  let c1;
+  [tmp20, tmp21, tmp22] = items;
+  const externalScrollEventHandler = tmp4Result3.useExternalScrollEventHandler({ id: "messages" });
+  const tmp4Result4 = sections(1652);
+  class MessagesTsx1 {
+    constructor(contentOffset) {
+      const result = _undefined.set(contentOffset.contentOffset.y);
+      _undefined2(contentOffset.contentOffset.y, contentOffset.contentSize.height, contentOffset.layoutMeasurement.height);
+    }
+  }
+  const items1 = [tmp21, tmp22];
+  MessagesTsx1.__closure = items1;
+  MessagesTsx1.__workletHash = 2610387438817;
+  MessagesTsx1.__initData = tmp20;
+  const obj7 = { accessibilityLabel: intl.string(sections(1113).t.OIgYlQ), data: tmp10, handleScrollAnimated: animatedScrollHandler, insetEnd: youBarTotalHeight, listItemHeight, listItemSizes, listItemSuggestedFriendHeight, listLeft, listRefHappeningNow: ref1, listTop, recycleItems, scrollIndicatorInsetBottom: youBarTotalHeight1, scrollPosition: sharedValue };
+  animatedScrollHandler = tmp4Result4.useAnimatedScrollHandler(MessagesTsx1);
+  intl = tmp4(1113).intl;
+  const obj8 = { value: analyticsLocations, children: closure_5(tmpResult, obj9) };
+  const AnalyticsLocationProvider = tmp4(7387).AnalyticsLocationProvider;
+  obj9 = { style, children: tmp26(CutoutBackgroundProvider, obj10) };
+  obj10 = { backgroundColor: nativeDefault.colors.PANEL_BG, children: items2 };
+  tmpResult = ChannelListPanelBackdropDefault;
+  CutoutBackgroundProvider = tmp4(9594).CutoutBackgroundProvider;
+  items2 = [closure_5(MessagesHeaderDefault, { height: headerSize, scrollPosition: sharedValue }), , ];
+  tmp26 = closure_6;
   if (showFullscreenEmptyState) {
-    tmp22Result = tmp22(tmp(tmp2[28]), {});
+    tmp24Result = tmp24(tmp(18447), {});
   } else {
-    let tmp25;
+    let tmp27;
     if ("legend" === list) {
-      tmp25 = tmp2[29];
+      tmp27 = 18452;
     } else {
-      tmp25 = "flash" === list ? tmp2[30] : tmp2[31];
+      tmp27 = "flash" === list ? 18496 : 18497;
     }
     const obj11 = { ref };
-    const tmpResult2 = dataKey(tmp25);
+    const tmpResult2 = importDefault(tmp27);
     const merged = Object.assign(obj7);
-    tmp22Result = tmp22(tmpResult2, obj11);
+    tmp24Result = tmp24(tmpResult2, obj11);
   }
-  items1[1] = tmp22Result;
-  let tmp22Result2 = null;
+  items2[1] = tmp24Result;
+  let tmp24Result2 = null;
   if (!doesLandOnHomeDrawer) {
-    tmp22Result2 = tmp22(tmp4(tmp2[32]).TTIFirstContentfulPaint, { label: "messages_tabs" });
+    tmp24Result2 = tmp24(tmp4(13568).TTIFirstContentfulPaint, { label: "messages_tabs" });
   }
-  items1[2] = tmp22Result2;
-  return closure_6(AnalyticsLocationProvider, obj8);
+  items2[2] = tmp24Result2;
+  return closure_5(AnalyticsLocationProvider, obj8);
 });
 let result = size.fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/Messages.tsx");
 

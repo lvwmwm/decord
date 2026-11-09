@@ -1,17 +1,17 @@
-// Module ID: 19785
-// Function ID: 19786
+// Module ID: 20195
+// Function ID: 20196
 // Name: GuildSettingsRoleItem
-// Dependencies: [5, 19, 17, 1072, 21, 5014, 575, 5624, 6040, 7355, 5959, 1113, 11603, 6902, 6030, 8028, 5738, 7374, 7372, 5587, 1379, 1090, 9059, 6975, 8661, 1187, 9977, 8667, 2]
+// Dependencies: [5, 19, 17, 1072, 21, 5140, 575, 5751, 6172, 7416, 6091, 1113, 11761, 6957, 6162, 8098, 5862, 7434, 7432, 5715, 1380, 1090, 9139, 7038, 8732, 1187, 10099, 8738, 2]
 
-// Module 19785 (GuildSettingsRoleItem)
+// Module 20195 (GuildSettingsRoleItem)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import Text_Text from "Text/Text" /* 5624 */;
+import Text_Text from "Text/Text" /* 5751 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -29,12 +29,12 @@ let size;
 ({ View: hasOwnProperty, StyleSheet } = react_native);
 const DEFAULT_ROLE_COLOR_HEX = Constants.DEFAULT_ROLE_COLOR_HEX;
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
-let c9 = "text-md/semibold";
+let c9 = "body-md/semibold";
 let createStyles = createStyles_mod;
 let obj = { row: { flexDirection: "row", gap: 4, alignItems: "center" }, everyone: obj2, label: obj3, sparkleIcon: obj4, dragHandlePressable: { alignSelf: "stretch", justifyContent: "center" }, container: size, gradient: obj5, image: { tintColor: "white" } };
 obj2 = { tintColor: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderRadius: 20, padding: 8 };
 createStyles = createStyles.createStyles;
-let prop = Text_Text.TextStyleSheet["text-md/semibold"];
+let prop = Text_Text.TextStyleSheet["body-md/semibold"];
 let num;
 if (prop != null) {
   num = prop.lineHeight;
@@ -175,7 +175,7 @@ const memoResult = react.memo(function GuildSettingsRoleItem(guildId) {
                         const obj4 = { value, done: true };
                         return obj4;
                       } else {
-                        return { value: "HermesInternal", done: "HermesInternal" };
+                        return { value: "HermesInternal", done: null };
                       }
                     } else {
                       try {
@@ -209,7 +209,7 @@ const memoResult = react.memo(function GuildSettingsRoleItem(guildId) {
                         const obj2 = require("GuildActionCreators");
                         obj2.deleteRole(guildId, tmp.id);
                         c2 = 3;
-                        return { value: "HermesInternal", done: "HermesInternal" };
+                        return { value: "HermesInternal", done: null };
                       } catch (tmp15) {
                         c2 = 3;
                         throw tmp15;

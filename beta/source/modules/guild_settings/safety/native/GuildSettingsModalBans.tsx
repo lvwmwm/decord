@@ -1,25 +1,25 @@
-// Module ID: 19818
-// Function ID: 19819
+// Module ID: 20228
+// Function ID: 20229
 // Name: GuildSettingsModalBans
-// Dependencies: [32, 19, 17, 4885, 4946, 1383, 9075, 1072, 21, 5014, 575, 504, 7217, 4839, 6899, 6902, 9074, 6975, 1187, 6984, 1113, 7358, 5711, 7363, 7208, 19819, 7218, 8805, 7223, 5606, 2]
+// Dependencies: [32, 19, 17, 5011, 5072, 1385, 9155, 1072, 21, 5140, 575, 504, 7281, 4965, 6954, 6957, 9154, 7038, 1187, 7047, 1113, 7418, 5836, 7423, 7271, 20229, 7282, 8879, 7287, 5734, 2]
 // Exports: default
 
-// Module 19818 (GuildSettingsModalBans)
+// Module 20228 (GuildSettingsModalBans)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl4 from "intl" /* 1113 */;
-import fuzzysearchDefault from "fuzzysearch" /* 6899 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6902 */;
-import showSimpleActionSheet2 from "showSimpleActionSheet" /* 7363 */;
+import fuzzysearchDefault from "fuzzysearch" /* 6954 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6957 */;
+import showSimpleActionSheet2 from "showSimpleActionSheet" /* 7423 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildStore from "GuildStore" /* 4885 */;
-import PermissionStore from "PermissionStore" /* 4946 */;
-import UserStore from "UserStore" /* 1383 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 9075 */;
+import GuildStore from "GuildStore" /* 5011 */;
+import PermissionStore from "PermissionStore" /* 5072 */;
+import UserStore from "UserStore" /* 1385 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 9155 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let bans, bansVersion, props;

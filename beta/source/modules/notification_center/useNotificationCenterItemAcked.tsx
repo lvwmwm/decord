@@ -1,11 +1,11 @@
-// Module ID: 18488
-// Function ID: 18489
+// Module ID: 18843
+// Function ID: 18844
 // Name: useNotificationCenterItemAcked
-// Dependencies: [18481, 504, 6860, 2]
+// Dependencies: [18836, 504, 6915, 2]
 // Exports: useNotificationCenterItemAcked
 
-// Module 18488 (useNotificationCenterItemAcked)
-import NotificationCenterStore from "NotificationCenterStore" /* 18481 */;
+// Module 18843 (useNotificationCenterItemAcked)
+import NotificationCenterStore from "NotificationCenterStore" /* 18836 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -22,7 +22,7 @@ export function useNotificationCenterItemAcked(forceUnacked, ackedBeforeId) {
   const tmp = _require;
   if (tmp4) {
     if (!stateFromStores) {
-      const tmpResult = tmp(6860);
+      const tmpResult = tmp(6915);
       stateFromStores = tmpResult.isRemoteAcked(forceUnacked, ackedBeforeId);
     }
     tmp4 = stateFromStores;

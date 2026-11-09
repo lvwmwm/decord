@@ -1,17 +1,17 @@
-// Module ID: 6999
-// Function ID: 7000
+// Module ID: 7065
+// Function ID: 7066
 // Name: HeaderDebugOverlay
-// Dependencies: [19, 17, 21, 5014, 575, 7000, 5624, 2]
+// Dependencies: [19, 17, 21, 5140, 575, 7066, 5751, 2]
 // Exports: default
 
-// Module 6999 (HeaderDebugOverlay)
+// Module 7065 (HeaderDebugOverlay)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import useDesignToggleDefault from "useDesignToggle" /* 7000 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import useDesignToggleDefault from "useDesignToggle" /* 7066 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -58,7 +58,7 @@ export default function useHeaderDebugOverlay(arg0, arg1) {
     const obj3 = { style: tmp3.badgeContainer, children: React3(View, obj4) };
     obj4 = { style: items2, children: React3(Text_Text.Text, obj5) };
     items2 = [tmp3.badge, tmp8];
-    obj5 = { variant: "text-xs/bold", color: "text-overlay-light", children: tmp6 };
+    obj5 = { variant: "body-xs/semibold", color: "text-overlay-light", children: tmp6 };
     items1[1] = React3(View, obj3);
     return metroRequire(hasOwnProperty, obj);
   } else {

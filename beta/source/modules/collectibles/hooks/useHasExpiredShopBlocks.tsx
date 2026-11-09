@@ -1,10 +1,10 @@
-// Module ID: 17827
-// Function ID: 17828
+// Module ID: 18159
+// Function ID: 18160
 // Name: useHasExpiredShopBlocks
-// Dependencies: [32, 19, 1072, 5689, 2]
+// Dependencies: [32, 19, 1072, 5813, 2]
 // Exports: useHasExpiredShopBlocks
 
-// Module 17827 (useHasExpiredShopBlocks)
+// Module 18159 (useHasExpiredShopBlocks)
 import Constants from "Constants" /* 1072 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

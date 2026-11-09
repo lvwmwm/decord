@@ -1,29 +1,29 @@
-// Module ID: 6734
-// Function ID: 6735
+// Module ID: 6789
+// Function ID: 6790
 // Name: AgeGateUtils
-// Dependencies: [4881, 4863, 6735, 4885, 4917, 1383, 1097, 1072, 1113, 11, 5693, 6731, 6736, 6726, 504, 6725, 6729, 2061, 6739, 6752, 6753, 2]
+// Dependencies: [5007, 4989, 6790, 5011, 5043, 1385, 1097, 1072, 1113, 11, 5817, 6786, 6791, 6781, 504, 6780, 6784, 2185, 6794, 6807, 6808, 2]
 // Exports: getAgeGateType, guildNeedsAgeGate, isChannelAgeVerificationGated, isCurrentUserMissingDateOfBirth, maybeOpenAgeGateForVoiceChannel, maybeShowAgeGate, shouldAgeVerifyForSettingsToggles, shouldShowAgeGateForChannelId, shouldShowAgeGateForCurrentUser, shouldShowAgeGateForGuildContentLevel, shouldShowAgeGateForVoiceChannel, useAgeGateVerifyContent, useAgeGateVerifyContentForGuild, useShouldAgeVerifyForSettingsToggles, useShouldHideChannelContent, userNeedsAgeGate
 
-// Module 6734 (AgeGateUtils)
+// Module 6789 (AgeGateUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initialized from "get initialized" /* 504 */;
 import intl17 from "intl" /* 1113 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2061 */;
-import GuildRecord from "GuildRecord" /* 4881 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5693 */;
-import shouldAgeVerifyForAgeGate2 from "shouldAgeVerifyForAgeGate" /* 6725 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 6726 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6729 */;
-import AgeGatedFeature from "AgeGatedFeature" /* 6731 */;
-import getTinyBroncoWarningDescriptions from "getTinyBroncoWarningDescriptions" /* 6736 */;
-import AgeGateModalActionCreators from "AgeGateModalActionCreators" /* 6739 */;
-import NSFWContentGate from "NSFWContentGate" /* 6752 */;
-import SpoilerChannelUtils from "SpoilerChannelUtils" /* 6753 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
-import GuildNSFWAgreeStore from "GuildNSFWAgreeStore" /* 6735 */;
-import GuildStore from "GuildStore" /* 4885 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4917 */;
-import UserStore from "UserStore" /* 1383 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2185 */;
+import GuildRecord from "GuildRecord" /* 5007 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5817 */;
+import shouldAgeVerifyForAgeGate2 from "shouldAgeVerifyForAgeGate" /* 6780 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 6781 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6784 */;
+import AgeGatedFeature from "AgeGatedFeature" /* 6786 */;
+import getAgeNoticeWarningDescriptions from "getAgeNoticeWarningDescriptions" /* 6791 */;
+import AgeGateModalActionCreators from "AgeGateModalActionCreators" /* 6794 */;
+import NSFWContentGate from "NSFWContentGate" /* 6807 */;
+import SpoilerChannelUtils from "SpoilerChannelUtils" /* 6808 */;
+import ChannelStore from "ChannelStore" /* 4989 */;
+import GuildNSFWAgreeStore from "GuildNSFWAgreeStore" /* 6790 */;
+import GuildStore from "GuildStore" /* 5011 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5043 */;
+import UserStore from "UserStore" /* 1385 */;
 import AgeGateConstants from "AgeGateConstants" /* 1097 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
@@ -46,16 +46,16 @@ function isChannelContentGated(channel) {
     const obj = RegionalFeatureConfigUtils;
     const isFeatureAgeGatedResult = obj.isFeatureAgeGated(AgeGatedFeature.AgeGatedFeature.AGE_GATED_SPACES);
     const obj2 = AgeVerificationUtils;
-    let result = obj2.shouldShowTiggerPawtect();
+    let needsAgeVerificationResult = obj2.needsAgeVerification();
     if (didAgreeResult) {
       didAgreeResult = false !== nsfwAllowed;
     }
     let tmp6 = !didAgreeResult;
     if (didAgreeResult) {
-      if (result) {
-        result = isFeatureAgeGatedResult;
+      if (needsAgeVerificationResult) {
+        needsAgeVerificationResult = isFeatureAgeGatedResult;
       }
-      tmp6 = result;
+      tmp6 = needsAgeVerificationResult;
     }
     if (channel.isNSFW()) {
       if (tmp6) {
@@ -74,7 +74,7 @@ function isChannelContentGated(channel) {
 function useIsChannelContentGated(stateFromStores) {
   _require = stateFromStores;
   const obj = require("AgeVerificationUtils");
-  const shouldShowTiggerPawtect = obj.useShouldShowTiggerPawtect();
+  const needsAgeVerification = obj.useNeedsAgeVerification();
   items = [GuildNSFWAgreeStore];
   const obj2 = require("get initialized");
   stateFromStores = obj2.useStateFromStores(items, () => {
@@ -113,7 +113,7 @@ function useIsChannelContentGated(stateFromStores) {
   let tmp6 = !stateFromStores;
   if (stateFromStores) {
     if (isFeatureAgeGated) {
-      isFeatureAgeGated = shouldShowTiggerPawtect;
+      isFeatureAgeGated = needsAgeVerification;
     }
     tmp6 = isFeatureAgeGated;
   }
@@ -202,7 +202,7 @@ export function useAgeGateVerifyContentForGuild(stateFromStores) {
   const obj4 = RegionalFeatureConfigUtils;
   const tmp4 = isGuildNSFW;
   if (obj4.useIsFeatureAgeGated(AgeGatedFeature.AgeGatedFeature.AGE_GATED_SPACES)) {
-    let tinyBroncoWarningDescriptions;
+    let ageNoticeWarningDescriptions;
     const tmp4Result = tmp4(stateFromStores);
     let str;
     if (stateFromStores != null) {
@@ -212,12 +212,12 @@ export function useAgeGateVerifyContentForGuild(stateFromStores) {
       str = "";
     }
     if (tmp4Result) {
-      const tmpResult = getTinyBroncoWarningDescriptions;
-      tinyBroncoWarningDescriptions = tmpResult.getTinyBroncoWarningDescriptions(tmp4Result, str);
+      const tmpResult = getAgeNoticeWarningDescriptions;
+      ageNoticeWarningDescriptions = tmpResult.getAgeNoticeWarningDescriptions(tmp4Result, str);
     } else {
-      tinyBroncoWarningDescriptions = null;
+      ageNoticeWarningDescriptions = null;
     }
-    tmp8 = tinyBroncoWarningDescriptions;
+    tmp8 = ageNoticeWarningDescriptions;
   }
   const intl = tmp(1113).intl;
   const string = intl.string;
@@ -351,13 +351,13 @@ export function useAgeGateVerifyContent(source) {
     }
     return false === nsfwAllowed;
   });
-  let tinyBroncoWarningDescriptions = null;
+  let ageNoticeWarningDescriptions = null;
   const tmpResult3 = RegionalFeatureConfigUtils;
   if (tmpResult3.useIsFeatureAgeGated(AgeGatedFeature.AgeGatedFeature.AGE_GATED_SPACES)) {
-    tinyBroncoWarningDescriptions = null;
+    ageNoticeWarningDescriptions = null;
     if (tmp6) {
-      const tmpResult4 = getTinyBroncoWarningDescriptions;
-      tinyBroncoWarningDescriptions = tmpResult4.getTinyBroncoWarningDescriptions(true, "");
+      const tmpResult4 = getAgeNoticeWarningDescriptions;
+      ageNoticeWarningDescriptions = tmpResult4.getAgeNoticeWarningDescriptions(true, "");
     }
   }
   if (source !== AgeGateSource.JOIN_LARGE_GUILD_UNDERAGE) {
@@ -367,15 +367,15 @@ export function useAgeGateVerifyContent(source) {
         let Zt4Mf4;
         const intl10 = tmp(1113).intl;
         const string4 = intl10.string;
-        if (null != tinyBroncoWarningDescriptions) {
+        if (null != ageNoticeWarningDescriptions) {
           Zt4Mf4 = tmp(1113).t.FDSSia;
         } else {
           Zt4Mf4 = tmp(1113).t.Zt4Mf4;
         }
-        const obj3 = { verifyAgreementButtonText: string4(Zt4Mf4), verifyGateDescription: teen, verifyTitle: string5Result, verifyDisagreementButtonText: string6(f3Pet92), verifyEmphasiseDisagree: null != tinyBroncoWarningDescriptions };
+        const obj3 = { verifyAgreementButtonText: string4(Zt4Mf4), verifyGateDescription: teen, verifyTitle: string5Result, verifyDisagreementButtonText: string6(f3Pet92), verifyEmphasiseDisagree: null != ageNoticeWarningDescriptions };
         teen = undefined;
-        if (tinyBroncoWarningDescriptions != null) {
-          teen = tinyBroncoWarningDescriptions.teen;
+        if (ageNoticeWarningDescriptions != null) {
+          teen = ageNoticeWarningDescriptions.teen;
         }
         if (teen == null) {
           let format2Result;
@@ -399,7 +399,7 @@ export function useAgeGateVerifyContent(source) {
         }
         const intl13 = tmp(1113).intl;
         string6 = intl13.string;
-        if (null != tinyBroncoWarningDescriptions) {
+        if (null != ageNoticeWarningDescriptions) {
           f3Pet92 = tmp(1113).t["/g10LC"];
         } else {
           f3Pet92 = tmp(1113).t.f3Pet9;
@@ -428,8 +428,8 @@ export function useAgeGateVerifyContent(source) {
         const obj7 = { verifyAgreementButtonText: intl3.string(intl17.t.FDSSia), verifyGateDescription: unverified, verifyTitle: string2Result, verifyDisagreementButtonText: string3(f3Pet9) };
         intl3 = tmp(1113).intl;
         unverified = undefined;
-        if (tinyBroncoWarningDescriptions != null) {
-          unverified = tinyBroncoWarningDescriptions.unverified;
+        if (ageNoticeWarningDescriptions != null) {
+          unverified = ageNoticeWarningDescriptions.unverified;
         }
         if (unverified == null) {
           let stringResult;
@@ -453,7 +453,7 @@ export function useAgeGateVerifyContent(source) {
         }
         const intl6 = tmp(1113).intl;
         string3 = intl6.string;
-        if (null != tinyBroncoWarningDescriptions) {
+        if (null != ageNoticeWarningDescriptions) {
           f3Pet9 = tmp(1113).t["/g10LC"];
         } else {
           f3Pet9 = tmp(1113).t.f3Pet9;
@@ -661,9 +661,9 @@ export function isChannelAgeVerificationGated(channel) {
     return false;
   } else {
     const obj = AgeVerificationUtils;
-    const result = obj.shouldShowTiggerPawtect();
+    const needsAgeVerificationResult = obj.needsAgeVerification();
     const obj2 = NSFWContentGate;
-    const tmp4 = obj2.isChannelOrGuildNSFW(channel) && result;
+    const tmp4 = obj2.isChannelOrGuildNSFW(channel) && needsAgeVerificationResult;
     return tmp4;
   }
 }
@@ -684,7 +684,7 @@ export function shouldAgeVerifyForSettingsToggles() {
   let isFeatureAgeGatedResult = obj.isFeatureAgeGated(AgeGatedFeature.AgeGatedFeature.COMMANDS_TOGGLE);
   const obj2 = AgeVerificationUtils;
   if (isFeatureAgeGatedResult) {
-    isFeatureAgeGatedResult = obj2.shouldShowTiggerPawtect();
+    isFeatureAgeGatedResult = obj2.needsAgeVerification();
   }
   return isFeatureAgeGatedResult;
 }
@@ -693,7 +693,7 @@ export function useShouldAgeVerifyForSettingsToggles() {
   let isFeatureAgeGated = obj.useIsFeatureAgeGated(AgeGatedFeature.AgeGatedFeature.COMMANDS_TOGGLE);
   const obj2 = AgeVerificationUtils;
   if (isFeatureAgeGated) {
-    isFeatureAgeGated = obj2.useShouldShowTiggerPawtect();
+    isFeatureAgeGated = obj2.useNeedsAgeVerification();
   }
   return isFeatureAgeGated;
 }

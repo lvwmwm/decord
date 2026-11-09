@@ -1,26 +1,26 @@
-// Module ID: 10801
-// Function ID: 10802
+// Module ID: 10920
+// Function ID: 10921
 // Name: ChannelRow
-// Dependencies: [19, 17, 4863, 4885, 6842, 4956, 1383, 10727, 6776, 21, 5014, 575, 504, 5652, 10802, 13423, 8660, 8652, 5624, 4836, 2042, 6974, 6975, 2]
+// Dependencies: [19, 17, 4989, 5011, 6897, 5082, 1385, 10846, 6831, 21, 5140, 575, 504, 5776, 10921, 13655, 8731, 8723, 5751, 4962, 2166, 7037, 7038, 2]
 
-// Module 10801 (ChannelRow)
+// Module 10920 (ChannelRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import DateUtils from "DateUtils" /* 4836 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import useChannelName from "useChannelName" /* 5652 */;
-import ReadStateConstants from "ReadStateConstants" /* 6776 */;
-import UserRowConstants from "UserRowConstants" /* 10727 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10802 */;
-import GuildIconWithChannelType2 from "GuildIconWithChannelType" /* 13423 */;
+import DateUtils from "DateUtils" /* 4962 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import useChannelName from "useChannelName" /* 5776 */;
+import ReadStateConstants from "ReadStateConstants" /* 6831 */;
+import UserRowConstants from "UserRowConstants" /* 10846 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10921 */;
+import GuildIconWithChannelType2 from "GuildIconWithChannelType" /* 13655 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
-import GuildStore from "GuildStore" /* 4885 */;
-import ReadStateStore from "ReadStateStore" /* 6842 */;
-import RelationshipStore from "RelationshipStore" /* 4956 */;
-import UserStore from "UserStore" /* 1383 */;
+import ChannelStore from "ChannelStore" /* 4989 */;
+import GuildStore from "GuildStore" /* 5011 */;
+import ReadStateStore from "ReadStateStore" /* 6897 */;
+import RelationshipStore from "RelationshipStore" /* 5082 */;
+import UserStore from "UserStore" /* 1385 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let closure_12;
@@ -144,14 +144,14 @@ const memoResult = react.memo(function ChannelRow(channel) {
         }
       }
       if (channel.isForumPost()) {
-        TextIcon = tmp3(8660).ForumIcon;
+        TextIcon = tmp3(8731).ForumIcon;
       } else {
-        TextIcon = tmp3(8652).TextIcon;
+        TextIcon = tmp3(8723).TextIcon;
       }
       const obj = { style: closure_7.subLabel, children: items };
       const obj2 = { color: nativeDefault.colors.TEXT_SUBTLE, style: closure_7.subLabelIcon };
       items = [authStore2(TextIcon, obj2), , ];
-      const obj3 = { style: closure_7.threadName, variant: "text-xs/medium", color: "text-subtle", lineClamp: 1, ellipsizeMode: "tail", children: stateFromStores1 };
+      const obj3 = { style: closure_7.threadName, variant: "body-xs/medium", color: "text-subtle", lineClamp: 1, ellipsizeMode: "tail", children: stateFromStores1 };
       items[1] = authStore2(Text_Text.Text, obj3);
       let tmp5Result = null;
       const tmp6 = View;
@@ -159,9 +159,9 @@ const memoResult = react.memo(function ChannelRow(channel) {
       const tmp9 = importDefault;
       if (null != stateFromStores2) {
         const obj4 = { children: items1 };
-        const obj5 = { style: tmp7.subLabelSeparator, variant: "text-xs/medium", color: "text-subtle", children: "\u2022" };
+        const obj5 = { style: tmp7.subLabelSeparator, variant: "body-xs/medium", color: "text-subtle", children: "\u2022" };
         items1 = [authStore2(Text_Text.Text, obj5), ];
-        const obj6 = { variant: "text-xs/medium", color: "text-subtle", children: obj7.calendarFormatCompact(tmp9(2042)(tmp14)) };
+        const obj6 = { variant: "body-xs/medium", color: "text-subtle", children: obj7.calendarFormatCompact(tmp9(2166)(tmp14)) };
         const Text = Text_Text.Text;
         obj7 = DateUtils;
         items1[1] = authStore2(Text, obj6);
@@ -183,7 +183,7 @@ const memoResult = react.memo(function ChannelRow(channel) {
     return tmp;
   }, items8);
   let obj5 = { disabled: flag2, icon: memo, onPress: callback, onLongPress: callback1, label: tmp18, subLabel: memo2 };
-  tmp18 = closure_12(channel(tmp5[18]).Text, { lineClamp: 1, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: memo1 });
+  tmp18 = closure_12(channel(tmp5[18]).Text, { lineClamp: 1, variant: "body-md/semibold", color: "mobile-text-heading-primary", children: memo1 });
   const merged1 = Object.assign(merged);
   if (NONE === stateFromStores1.TOGGLE) {
     let obj6 = { height: "100%", checked: flag };

@@ -1,15 +1,15 @@
-// Module ID: 19832
-// Function ID: 19833
+// Module ID: 20242
+// Function ID: 20243
 // Name: SafetyCheckScreen
-// Dependencies: [32, 19, 17, 9075, 1072, 21, 5596, 575, 19833, 504, 19834, 19831, 5624, 1113, 5717, 6027, 7060, 19843, 7369, 9074, 2]
+// Dependencies: [32, 19, 17, 9155, 1072, 21, 5724, 575, 20243, 504, 20244, 20241, 5751, 1113, 5842, 6159, 7126, 20253, 7429, 9154, 2]
 // Exports: default
 
-// Module 19832 (SafetyCheckScreen)
+// Module 20242 (SafetyCheckScreen)
 import react_native from "react-native" /* 17 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9074 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9154 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 9075 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 9155 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -84,17 +84,17 @@ export default function SafetyCheckScreen() {
     const EnableCommunityModalScreen = tmp3(tmp4[11]).EnableCommunityModalScreen;
     const obj5 = { style: enableCommunitySharedStyles.content, children: items1 };
     tmp22 = guild.explicitContentFilter !== constants2.ALL_MEMBERS || guild.verificationLevel === constants.NONE;
-    const obj6 = { ref, accessibilityRole: "header", variant: "text-md/semibold", color: "text-subtle", children: intl.formatToPlainString(guild(first1[13]).t.tInpJj, { number: 1, total: 3 }) };
+    const obj6 = { ref, accessibilityRole: "header", variant: "body-md/semibold", color: "text-subtle", children: intl.formatToPlainString(guild(first1[13]).t.tInpJj, { number: 1, total: 3 }) };
     const Text = tmp3(tmp4[12]).Text;
     intl = tmp3(tmp4[13]).intl;
     items1 = [closure_9(Text, obj6), , , ];
     const obj7 = { resizeMode: "contain", source: tmp8.safetyCheck };
     items1[1] = closure_9(verificationLevel(first1[14]), obj7);
-    const obj8 = { style: enableCommunitySharedStyles.header, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl2.string(guild(first1[13]).t.QrjLYl) };
+    const obj8 = { style: enableCommunitySharedStyles.header, variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: intl2.string(guild(first1[13]).t.QrjLYl) };
     const Heading = tmp3(tmp4[12]).Heading;
     intl2 = tmp3(tmp4[13]).intl;
     items1[2] = closure_9(Heading, obj8);
-    const obj9 = { style: enableCommunitySharedStyles.description, variant: "text-md/medium", color: "text-subtle", children: intl3.string(guild(first1[13]).t.i1STwu) };
+    const obj9 = { style: enableCommunitySharedStyles.description, variant: "body-md/medium", color: "text-subtle", children: intl3.string(guild(first1[13]).t.i1STwu) };
     const Text2 = tmp3(tmp4[12]).Text;
     intl3 = tmp3(tmp4[13]).intl;
     items1[3] = closure_9(Text2, obj9);

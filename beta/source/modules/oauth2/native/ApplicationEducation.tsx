@@ -1,24 +1,24 @@
-// Module ID: 14613
-// Function ID: 14614
+// Module ID: 14848
+// Function ID: 14849
 // Name: ApplicationEducation
-// Dependencies: [19, 17, 1072, 21, 5014, 575, 9748, 8910, 1113, 5715, 14614, 9727, 7561, 5624, 14616, 2]
+// Dependencies: [19, 17, 1072, 21, 5140, 575, 9838, 8984, 1113, 5840, 14849, 9817, 7633, 5751, 14851, 2]
 // Exports: default
 
-// Module 14613 (ApplicationEducation)
+// Module 14848 (ApplicationEducation)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import FriendsIcon from "FriendsIcon" /* 5715 */;
-import SettingsIcon from "SettingsIcon" /* 7561 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 8910 */;
-import GameControllerIcon from "GameControllerIcon" /* 9727 */;
-import useIsSocialLayerParentApplicationDefault from "useIsSocialLayerParentApplication" /* 9748 */;
-import ChatSmileIcon from "ChatSmileIcon" /* 14614 */;
-import AuthorizeFormSeparator from "AuthorizeFormSeparator" /* 14616 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import FriendsIcon from "FriendsIcon" /* 5840 */;
+import SettingsIcon from "SettingsIcon" /* 7633 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 8984 */;
+import GameControllerIcon from "GameControllerIcon" /* 9817 */;
+import useIsSocialLayerParentApplicationDefault from "useIsSocialLayerParentApplication" /* 9838 */;
+import ChatSmileIcon from "ChatSmileIcon" /* 14849 */;
+import AuthorizeFormSeparator from "AuthorizeFormSeparator" /* 14851 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -39,7 +39,7 @@ function ApplicationEducationEntry(iconComponent) {
     iconComponentResult = iconComponent(obj2);
   }
   items = [iconComponentResult, ];
-  const obj3 = { variant: "text-md/normal", style: tmp.entryText, children: text };
+  const obj3 = { variant: "body-md/normal", style: tmp.entryText, children: text };
   items[1] = hasOwnProperty(Text_Text.Text, obj3);
   return tmp2(tmp3, obj);
 }
@@ -170,8 +170,8 @@ export default function ApplicationEducation(arg0) {
     if (null != arr2) {
       tmp26 = null;
       if (arr2.length > 0) {
-        const obj15 = { variant: "text-sm/normal", color: "text-default", children: arr2 };
-        tmp26 = hasOwnProperty(tmp4(5624).Text, obj15);
+        const obj15 = { variant: "body-sm/normal", color: "text-default", children: arr2 };
+        tmp26 = hasOwnProperty(tmp4(5751).Text, obj15);
       }
     }
     const obj16 = { children: items2 };

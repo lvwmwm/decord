@@ -1,31 +1,31 @@
-// Module ID: 11999
-// Function ID: 12000
+// Module ID: 12165
+// Function ID: 12166
 // Name: FocusedExpandedControls
-// Dependencies: [19, 17, 6714, 502, 5768, 21, 5014, 575, 1187, 5717, 12000, 12001, 8177, 504, 12002, 1113, 11949, 1375, 9221, 9228, 11920, 12003, 11970, 12004, 12005, 2]
+// Dependencies: [19, 17, 6769, 502, 5897, 21, 5140, 575, 1187, 5842, 12166, 12167, 8246, 504, 12168, 1113, 12115, 1377, 9301, 9308, 12086, 12169, 12136, 12170, 12171, 2]
 // Exports: AudioRouteButton, DeafenButton, ScreenshareButton, StreamVolumeItem
 
-// Module 11999 (FocusedExpandedControls)
+// Module 12165 (FocusedExpandedControls)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
-import FastImageDefault from "FastImage" /* 5717 */;
-import Constants from "Constants" /* 5768 */;
-import _mod8177 from "module_8177" /* 8177 */;
-import CallsUtils from "CallsUtils" /* 9221 */;
-import showAudioOutputSelector from "showAudioOutputSelector" /* 9228 */;
-import useScreenshareUtilsDefault from "useScreenshareUtils" /* 11920 */;
-import VolumeSliderDefault from "VolumeSlider" /* 11949 */;
-import VoiceActionUtils from "VoiceActionUtils" /* 11970 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12000 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 12001 */;
-import useMuteAwareLocalVolumeDefault from "useMuteAwareLocalVolume" /* 12002 */;
-import useDeafStatesDefault from "useDeafStates" /* 12003 */;
+import FastImageDefault from "FastImage" /* 5842 */;
+import Constants from "Constants" /* 5897 */;
+import _mod8246 from "module_8246" /* 8246 */;
+import CallsUtils from "CallsUtils" /* 9301 */;
+import showAudioOutputSelector from "showAudioOutputSelector" /* 9308 */;
+import useScreenshareUtilsDefault from "useScreenshareUtils" /* 12086 */;
+import VolumeSliderDefault from "VolumeSlider" /* 12115 */;
+import VoiceActionUtils from "VoiceActionUtils" /* 12136 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12166 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 12167 */;
+import useMuteAwareLocalVolumeDefault from "useMuteAwareLocalVolume" /* 12168 */;
+import useDeafStatesDefault from "useDeafStates" /* 12169 */;
 import react from "react" /* 19 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6714 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6769 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let lastActiveStream;
@@ -37,7 +37,7 @@ let obj2;
 let obj3;
 let tmp2;
 const intl3 = tmp2(1113);
-const PlatformUtils = tmp2(1375);
+const PlatformUtils = tmp2(1377);
 function ExpandedControlItemIcon(iconSource) {
   let items;
   iconSource = iconSource.iconSource;
@@ -87,11 +87,11 @@ function ExpandedControlItem(iconSource) {
   }
   if (tmp2) {
     const obj = { tintColor: nativeDefault.unsafe_rawColors.BRAND_500, renderIosBackground: true, value: switchValue, disabled, onValueChange: onSwitchValueChange };
-    const FormSwitch = _mod8177.FormSwitch;
+    const FormSwitch = _mod8246.FormSwitch;
     trailing = metroImportDefault(FormSwitch, obj);
   }
-  const obj2 = { disabled, leading: metroImportDefault(ExpandedControlItemIcon, { iconSource, showIconSparkle }), label: metroImportDefault(_mod8177.FormLabel, obj3), onPress, trailing };
-  const FormRow = _mod8177.FormRow;
+  const obj2 = { disabled, leading: metroImportDefault(ExpandedControlItemIcon, { iconSource, showIconSparkle }), label: metroImportDefault(_mod8246.FormLabel, obj3), onPress, trailing };
+  const FormRow = _mod8246.FormRow;
   obj3 = { text: label, style: tmp.formColor };
   return metroImportDefault(FormRow, obj2);
 }
@@ -136,7 +136,7 @@ export function StreamVolumeItem() {
   ({ effectiveVolume, handleVolumeChange } = tmp6(ownerId, MediaEngineContextTypes.STREAM));
   const obj2 = { text: intl.string(intl3.t.pEAl4b), style: items1 };
   tmp6(ownerId, MediaEngineContextTypes.STREAM);
-  const FormLabel = _mod8177.FormLabel;
+  const FormLabel = _mod8246.FormLabel;
   intl = intl3.intl;
   items1 = [tmp.formColor, { marginBottom: 16 }];
   const items2 = [metroImportDefault(FormLabel, obj2), ];
@@ -153,7 +153,7 @@ export function StreamVolumeItem() {
   let tmp9Result = null;
   if (null != stateFromStores) {
     const obj4 = { label: tmp11 };
-    tmp9Result = tmp9(_mod8177.FormRow, obj4);
+    tmp9Result = tmp9(_mod8246.FormRow, obj4);
   }
   return tmp9Result;
 }
@@ -200,7 +200,7 @@ export function DeafenButton(disabled) {
   const tmp3 = useDeafStatesDefault(channel);
   const obj = VoiceActionUtils;
   const deafHandler = obj.createDeafHandler(tmp3);
-  const obj2 = { disabled: flag, onPress: deafHandler.onPress, iconSource: importDefault(deafHandler.deaf ? 12004 : 12005), label: intl.string(intl3.t.wjcRFX) };
+  const obj2 = { disabled: flag, onPress: deafHandler.onPress, iconSource: importDefault(deafHandler.deaf ? 12170 : 12171), label: intl.string(intl3.t.wjcRFX) };
   intl = tmp4(1113).intl;
   return metroImportDefault(ExpandedControlItem, obj2);
 }

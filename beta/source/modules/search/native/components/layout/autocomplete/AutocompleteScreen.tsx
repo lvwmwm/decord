@@ -1,24 +1,24 @@
-// Module ID: 18801
-// Function ID: 18802
+// Module ID: 19164
+// Function ID: 19165
 // Name: AutocompleteScreen
-// Dependencies: [32, 19, 4863, 4956, 1383, 18802, 13900, 9827, 1072, 21, 504, 18706, 13886, 13911, 13907, 5068, 5652, 13893, 18803, 13892, 13894, 18765, 18698, 1113, 18710, 2]
+// Dependencies: [32, 19, 4989, 5082, 1385, 19165, 14134, 9917, 1072, 21, 504, 19069, 14120, 14145, 14141, 5194, 5776, 14127, 19166, 14126, 14128, 19128, 19061, 1113, 19073, 2]
 
-// Module 18801 (AutocompleteScreen)
+// Module 19164 (AutocompleteScreen)
 import Fragment from "Fragment" /* 21 */;
-import UserUtilsDefault from "UserUtils" /* 5068 */;
-import useChannelName from "useChannelName" /* 5652 */;
-import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 13886 */;
-import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 13907 */;
-import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 13911 */;
-import AutocompleteScreenUtils from "AutocompleteScreenUtils" /* 18803 */;
+import UserUtilsDefault from "UserUtils" /* 5194 */;
+import useChannelName from "useChannelName" /* 5776 */;
+import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 14120 */;
+import TrackingDefault from "Tracking" /* 14141 */;
+import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 14145 */;
+import AutocompleteScreenUtils from "AutocompleteScreenUtils" /* 19166 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
-import RelationshipStore from "RelationshipStore" /* 4956 */;
-import UserStore from "UserStore" /* 1383 */;
-import SearchAutocompleteStore from "SearchAutocompleteStore" /* 18802 */;
-import SearchQueryStore from "SearchQueryStore" /* 13900 */;
-import SearchConstants from "SearchConstants" /* 9827 */;
+import ChannelStore from "ChannelStore" /* 4989 */;
+import RelationshipStore from "RelationshipStore" /* 5082 */;
+import UserStore from "UserStore" /* 1385 */;
+import SearchAutocompleteStore from "SearchAutocompleteStore" /* 19165 */;
+import SearchQueryStore from "SearchQueryStore" /* 14134 */;
+import SearchConstants from "SearchConstants" /* 9917 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -79,7 +79,7 @@ const memoResult = react.memo(function AutocompleteScreen(searchContext) {
       });
       const obj4 = { searchContext, searchTokenType: null, location: null };
       ({ searchTokenType: obj3.searchTokenType, location: obj3.location } = prefixTag);
-      const obj2 = search_tracking_TrackingDefault;
+      const obj2 = TrackingDefault;
       obj2.trackSearchFilterAdd(obj4);
       callback();
     }
@@ -100,7 +100,7 @@ const memoResult = react.memo(function AutocompleteScreen(searchContext) {
           addTag(obj);
           const result = setTextInputValue.restoreDraftTextInputValue();
         });
-        let obj2 = search_tracking_TrackingDefault;
+        let obj2 = TrackingDefault;
         const obj4 = { searchContext, searchTokenType: null, location: null };
         ({ searchTokenType: obj3.searchTokenType, location: obj3.location } = prefixTag);
         obj2.trackSearchFilterAdd(obj4);
@@ -137,7 +137,7 @@ const memoResult = react.memo(function AutocompleteScreen(searchContext) {
         });
         let obj = { searchContext, searchTokenType: null, location: null };
         ({ searchTokenType: obj4.searchTokenType, location: obj4.location } = prefixTag);
-        const obj3 = search_tracking_TrackingDefault;
+        const obj3 = TrackingDefault;
         obj3.trackSearchFilterAdd(obj);
         callback();
       }
@@ -213,7 +213,6 @@ const memoResult = react.memo(function AutocompleteScreen(searchContext) {
       set1 = new Set(obj3.getSearchQueryChannelIds(items));
       ({ autocompletes, tokens, mode } = set);
       let item = autocompletes.forEach((item) => {
-        let results;
         if (mode.type === constants2.FILTER) {
           ({ results, group: items } = item);
           if (0 !== results.length) {

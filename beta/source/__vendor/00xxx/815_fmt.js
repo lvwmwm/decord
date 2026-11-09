@@ -18,7 +18,7 @@ export function debug(message, attributes) {
   }
   const scope = obj.scope;
   const obj2 = _INTERNAL_captureLog;
-  const obj3 = { level: "debug", message, attributes, severityNumber: "HermesInternal" };
+  const obj3 = { level: "debug", message, attributes, severityNumber: "add" };
   obj2._INTERNAL_captureLog(obj3, scope);
 }
 export function error(message, attributes) {
@@ -28,7 +28,7 @@ export function error(message, attributes) {
   }
   const scope = obj.scope;
   const obj2 = _INTERNAL_captureLog;
-  const obj3 = { level: "error", message, attributes, severityNumber: "e" };
+  const obj3 = { level: "error", message, attributes, severityNumber: "HermesInternal" };
   obj2._INTERNAL_captureLog(obj3, scope);
 }
 export function fatal(message, attributes) {
@@ -38,7 +38,7 @@ export function fatal(message, attributes) {
   }
   const scope = obj.scope;
   const obj2 = _INTERNAL_captureLog;
-  const obj3 = { level: "fatal", message, attributes, severityNumber: "applicationId" };
+  const obj3 = { level: "fatal", message, attributes, severityNumber: "Button" };
   obj2._INTERNAL_captureLog(obj3, scope);
 }
 export function info(message, attributes) {
@@ -48,7 +48,7 @@ export function info(message, attributes) {
   }
   const scope = obj.scope;
   const obj2 = _INTERNAL_captureLog;
-  const obj3 = { level: "info", message, attributes, severityNumber: "applicationId" };
+  const obj3 = { level: "info", message, attributes, severityNumber: "add" };
   obj2._INTERNAL_captureLog(obj3, scope);
 }
 export function trace(message, attributes) {
@@ -58,7 +58,7 @@ export function trace(message, attributes) {
   }
   const scope = obj.scope;
   const obj2 = _INTERNAL_captureLog;
-  const obj3 = { level: "trace", message, attributes, severityNumber: "applicationId" };
+  const obj3 = { level: "trace", message, attributes, severityNumber: "add" };
   obj2._INTERNAL_captureLog(obj3, scope);
 }
 export function warn(message, attributes) {
@@ -68,6 +68,6 @@ export function warn(message, attributes) {
   }
   const scope = obj.scope;
   const obj2 = _INTERNAL_captureLog;
-  const obj3 = { level: "warn", message, attributes, severityNumber: "code" };
+  const obj3 = { level: "warn", message, attributes, severityNumber: "children" };
   obj2._INTERNAL_captureLog(obj3, scope);
 }

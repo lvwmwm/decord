@@ -1,31 +1,31 @@
-// Module ID: 17133
-// Function ID: 17134
+// Module ID: 17460
+// Function ID: 17461
 // Name: QuestBottomSheetConsoleConnect
-// Dependencies: [19, 17, 1072, 21, 575, 5014, 9681, 9717, 9719, 5258, 7563, 17093, 1994, 9684, 9687, 6788, 7871, 6784, 9720, 7060, 6975, 9589, 1113, 9362, 2]
+// Dependencies: [19, 17, 1072, 21, 575, 5140, 9772, 9807, 9809, 5374, 7635, 17420, 2118, 9775, 9778, 6843, 7948, 6839, 9810, 7126, 7038, 9677, 1113, 9443, 2]
 // Exports: default
 
-// Module 17133 (QuestBottomSheetConsoleConnect)
+// Module 17460 (QuestBottomSheetConsoleConnect)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
-import asyncRequire from "asyncRequire" /* 1994 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import QuestTypes from "QuestTypes" /* 6784 */;
-import AdCreativeType from "AdCreativeType" /* 6788 */;
-import TableRow3 from "TableRow" /* 6975 */;
-import TableRowGroup2 from "TableRowGroup" /* 7060 */;
-import openUserSettings from "openUserSettings" /* 7563 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7871 */;
-import XboxNeutralIcon from "XboxNeutralIcon" /* 9362 */;
-import PlaystationNeutralIcon from "PlaystationNeutralIcon" /* 9589 */;
-import captureAdUserAction3 from "captureAdUserAction" /* 9684 */;
-import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9687 */;
-import QuestPlatformUtils from "QuestPlatformUtils" /* 9719 */;
-import authorizeConnectionDefault from "authorizeConnection" /* 9720 */;
+import asyncRequire from "asyncRequire" /* 2118 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
+import QuestTypes from "QuestTypes" /* 6839 */;
+import AdCreativeType from "AdCreativeType" /* 6843 */;
+import TableRow3 from "TableRow" /* 7038 */;
+import TableRowGroup2 from "TableRowGroup" /* 7126 */;
+import openUserSettings from "openUserSettings" /* 7635 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7948 */;
+import XboxNeutralIcon from "XboxNeutralIcon" /* 9443 */;
+import PlaystationNeutralIcon from "PlaystationNeutralIcon" /* 9677 */;
+import captureAdUserAction3 from "captureAdUserAction" /* 9775 */;
+import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9778 */;
+import QuestPlatformUtils from "QuestPlatformUtils" /* 9809 */;
+import authorizeConnectionDefault from "authorizeConnection" /* 9810 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let Fragment;
@@ -118,11 +118,11 @@ export default function QuestBottomSheetConsoleConnect(quest) {
   function openQuestBottomSheet() {
     const obj = ActionSheetActionCreatorsDefault;
     const obj2 = { questId: quest.id, initialStep: importDefault, sourceQuestContent: dependencyMap };
-    obj.openLazy(asyncRequire(17093, dependencyMap.paths), "QuestBottomSheet", obj2);
+    obj.openLazy(asyncRequire(17420, dependencyMap.paths), "QuestBottomSheet", obj2);
   }
-  let obj = quest(9681);
+  let obj = quest(9772);
   const xboxAndPlaystationAccounts = obj.useConnectedAccounts().xboxAndPlaystationAccounts;
-  let obj2 = quest(9717);
+  let obj2 = quest(9807);
   let closure_4 = obj2.useGetQuestImpressionId();
   const items = [quest, xboxAndPlaystationAccounts];
   let obj3 = {

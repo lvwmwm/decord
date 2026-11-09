@@ -1,15 +1,15 @@
-// Module ID: 5951
-// Function ID: 5952
+// Module ID: 6083
+// Function ID: 6084
 // Name: VideoHealthManager
-// Dependencies: [1072, 3, 5952, 5953, 5772, 1089, 2]
+// Dependencies: [1072, 3, 6084, 6085, 5901, 1089, 2]
 
-// Module 5951 (VideoHealthManager)
+// Module 6083 (VideoHealthManager)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants from "Constants" /* 1072 */;
 import DurationsDefault from "Durations" /* 1089 */;
-import TimeUtils from "TimeUtils" /* 5772 */;
-import shared_PlatformUtils from "shared/PlatformUtils" /* 5952 */;
-import dispatchAutoDisableVideoDefault from "dispatchAutoDisableVideo" /* 5953 */;
+import TimeUtils from "TimeUtils" /* 5901 */;
+import shared_PlatformUtils from "shared/PlatformUtils" /* 6084 */;
+import dispatchAutoDisableVideoDefault from "dispatchAutoDisableVideo" /* 6085 */;
 import size from "module_2" /* 2 */;
 
 const VideoToggleState = Constants.VideoToggleState;

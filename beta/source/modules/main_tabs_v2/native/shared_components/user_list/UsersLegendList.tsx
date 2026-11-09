@@ -1,18 +1,19 @@
-// Module ID: 14420
-// Function ID: 14421
+// Module ID: 14656
+// Function ID: 14657
 // Name: UsersLegendList
-// Dependencies: [32, 19, 17, 21, 5014, 5275, 5095, 1491, 7232, 14421, 2]
+// Dependencies: [32, 19, 17, 21, 5140, 5392, 1652, 1705, 1493, 7296, 14657, 2]
 
-// Module 14420 (UsersLegendList)
+// Module 14656 (UsersLegendList)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
-import BottomSheetModal from "BottomSheetModal" /* 5275 */;
-import FastestListItemTypeDefault from "FastestListItemType" /* 7232 */;
+import BottomSheetModal from "BottomSheetModal" /* 5392 */;
+import FastestListItemTypeDefault from "FastestListItemType" /* 7296 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
+
+let keyExtractor;
 
 function renderBottomSheetScrollComponent(children) {
   children = children.children;
@@ -24,15 +25,20 @@ function renderBottomSheetScrollComponent(children) {
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let closure_7 = createStyles.createStyles({ row: { overflow: "hidden" } });
-let closure_9 = { code: "function UsersLegendListTsx1(event){const{scrollPosValue,onScroll,runOnJS}=this.__closure;scrollPosValue.set(event.contentOffset.y);if(onScroll!=null){runOnJS(onScroll)({nativeEvent:{contentOffset:{x:event.contentOffset.x,y:event.contentOffset.y},contentSize:{width:event.contentSize.width,height:event.contentSize.height},layoutMeasurement:{width:event.layoutMeasurement.width,height:event.layoutMeasurement.height}}});}}" };
+let closure_9 = { code: "(function UsersLegendListTsx1(event){let[scrollPosValue,onScroll,scheduleOnRN]=this.__closure;scrollPosValue.set(event.contentOffset.y);if(onScroll!=null){scheduleOnRN(onScroll,{nativeEvent:{contentOffset:{x:event.contentOffset.x,y:event.contentOffset.y},contentSize:{width:event.contentSize.width,height:event.contentSize.height},layoutMeasurement:{width:event.layoutMeasurement.width,height:event.layoutMeasurement.height}}});}})" };
 const memoResult = react.memo(function UsersLegendList(insetStart) {
   let listHeaderSize;
   let onContentLengthChange;
   let onLayout;
+  let onScroll;
   let ref;
   let style;
-  let tmp19;
-  let tmp20;
+  let tmp10;
+  let tmp11;
+  let tmp24;
+  let tmp25;
+  let tmp8;
+  let tmp9;
   let num = insetStart.insetStart;
   const inActionSheet = insetStart.inActionSheet;
   if (num === undefined) {
@@ -43,9 +49,8 @@ const memoResult = react.memo(function UsersLegendList(insetStart) {
     num2 = 0;
   }
   const itemSize = insetStart.itemSize;
-  const keyExtractor = insetStart.keyExtractor;
+  keyExtractor = insetStart.keyExtractor;
   ({ listHeaderSize, onContentLengthChange } = insetStart);
-  const onScroll = insetStart.onScroll;
   const renderItem = insetStart.renderItem;
   const renderListHeader = insetStart.renderListHeader;
   const renderSectionHeader = insetStart.renderSectionHeader;
@@ -54,8 +59,8 @@ const memoResult = react.memo(function UsersLegendList(insetStart) {
   const sections = insetStart.sections;
   let num3;
   let memo1;
-  ({ onLayout, style, ref } = insetStart);
-  let tmp = renderListHeader();
+  ({ onLayout, onScroll, style, ref } = insetStart);
+  let tmp = renderSectionHeader();
   const row = tmp;
   let obj = onContentLengthChange;
   const ref1 = onContentLengthChange.useRef(null);
@@ -65,29 +70,36 @@ const memoResult = react.memo(function UsersLegendList(insetStart) {
   const sharedValue = obj2.useSharedValue(0);
   let items = [sharedValue];
   const memo = onContentLengthChange.useMemo(() => ({ scrollOffset: sharedValue }), items);
-  let obj3 = num(itemSize[6]);
-  const fn = function b(contentOffset) {
-    let obj3;
-    let point;
-    let size1;
-    const result = sharedValue.set(contentOffset.contentOffset.y);
-    if (null != onScroll) {
-      const obj2 = { nativeEvent: obj3 };
-      obj3 = { contentOffset: point, contentSize: size, layoutMeasurement: size1 };
-      point = { x: contentOffset.contentOffset.x, y: contentOffset.contentOffset.y };
-      size = { width: contentOffset.contentSize.width, height: contentOffset.contentSize.height };
-      size1 = { width: contentOffset.layoutMeasurement.width, height: contentOffset.layoutMeasurement.height };
-      const obj = ReanimatedRexport;
-      obj.runOnJS(tmp2)(obj2);
+  const items1 = [sectionHeaderSize, sharedValue, onScroll, ];
+  const useAnimatedScrollHandler = num(itemSize[6]).useAnimatedScrollHandler;
+  items1[3] = num(itemSize[7]).scheduleOnRN;
+  let c0;
+  let c1;
+  let c2;
+  [tmp8, tmp9, tmp10, tmp11] = items1;
+  class UsersLegendListTsx1 {
+    constructor(contentOffset) {
+      let obj2;
+      let point;
+      let size1;
+      const result = _undefined.set(contentOffset.contentOffset.y);
+      if (null != c1) {
+        const obj = { nativeEvent: obj2 };
+        obj2 = { contentOffset: point, contentSize: size, layoutMeasurement: size1 };
+        point = { x: contentOffset.contentOffset.x, y: contentOffset.contentOffset.y };
+        size = { width: contentOffset.contentSize.width, height: contentOffset.contentSize.height };
+        size1 = { width: contentOffset.layoutMeasurement.width, height: contentOffset.layoutMeasurement.height };
+        _undefined2(tmp2, obj);
+      }
     }
-  };
-  let obj4 = { scrollPosValue: sharedValue, onScroll, runOnJS: num(itemSize[6]).runOnJS };
-  fn.__closure = obj4;
-  fn.__workletHash = 15701235151389;
-  fn.__initData = sectionHeaderIsSticky;
-  const animatedScrollHandler = obj3.useAnimatedScrollHandler(fn);
-  const first = keyExtractor(onContentLengthChange.useState(() => {
-    const obj = num(itemSize[7]);
+  }
+  const items2 = [tmp9, tmp10, tmp11];
+  UsersLegendListTsx1.__closure = items2;
+  UsersLegendListTsx1.__workletHash = 11972523223881;
+  UsersLegendListTsx1.__initData = tmp8;
+  const animatedScrollHandler = useAnimatedScrollHandler(UsersLegendListTsx1);
+  const first = keyExtractor(obj.useState(() => {
+    const obj = num(itemSize[8]);
     return obj.getWindowDimensions();
   }), 1)[0];
   if (typeof listHeaderSize === "function") {
@@ -98,7 +110,7 @@ const memoResult = react.memo(function UsersLegendList(insetStart) {
       num3 = 0;
     }
   }
-  const items1 = [num, itemSize, keyExtractor, num3, sectionHeaderIsSticky, sectionHeaderSize, sections];
+  const items3 = [num, itemSize, keyExtractor, num3, sectionHeaderIsSticky, sectionHeaderSize, sections];
   memo1 = obj.useMemo(() => {
     let combined;
     let combined1;
@@ -179,8 +191,8 @@ const memoResult = react.memo(function UsersLegendList(insetStart) {
       } while (num < sections.length);
     }
     return { listData, offsets, sizes, stickyHeaderIndices, indexByLocation };
-  }, items1);
-  const items2 = [memo1, sectionHeaderIsSticky];
+  }, items3);
+  const items4 = [memo1, sectionHeaderIsSticky];
   const imperativeHandle = obj.useImperativeHandle(ref, () => {
     let ref;
     let obj = {
@@ -233,8 +245,8 @@ const memoResult = react.memo(function UsersLegendList(insetStart) {
       }
     };
     return obj;
-  }, items2);
-  const items3 = [memo1, renderItem, renderSectionHeader, sharedValue, tmp.row];
+  }, items4);
+  const items5 = [memo1, renderItem, renderSectionHeader, sharedValue, tmp.row];
   const callback = obj.useCallback((arg0) => {
     let index;
     let item;
@@ -250,13 +262,13 @@ const memoResult = react.memo(function UsersLegendList(insetStart) {
       tmp6 = <View style={items}>{renderItem(item.section, item.item)}</View>;
     }
     return tmp6;
-  }, items3);
+  }, items5);
   const callback1 = obj.useCallback((type) => String(type.type), []);
-  const items4 = [memo1];
+  const items6 = [memo1];
   const callback2 = obj.useCallback((key) => key.key, []);
-  const items5 = [renderListHeader];
-  const callback3 = obj.useCallback((arg0, arg1) => memo1.sizes[arg1], items4);
-  const items6 = [num, num2];
+  const items7 = [renderListHeader];
+  const callback3 = obj.useCallback((arg0, arg1) => memo1.sizes[arg1], items6);
+  const items8 = [num, num2];
   const memo2 = obj.useMemo(() => {
     let tmp;
     if (renderListHeader != null) {
@@ -266,28 +278,28 @@ const memoResult = react.memo(function UsersLegendList(insetStart) {
       tmp = null;
     }
     return tmp;
-  }, items5);
-  const items7 = [onContentLengthChange];
-  const memo3 = obj.useMemo(() => ({ paddingTop: num, paddingBottom: num2 }), items6);
+  }, items7);
+  const items9 = [onContentLengthChange];
+  const memo3 = obj.useMemo(() => ({ paddingTop: num, paddingBottom: num2 }), items8);
   const callback4 = obj.useCallback((arg0, arg1) => {
     let tmpResult;
     if (onContentLengthChange != null) {
       tmpResult = tmp(arg1);
     }
     return tmpResult;
-  }, items7);
-  const obj5 = { ref: ref1, accessibilityRole: "list", contentContainerStyle: memo3, data: memo1.listData, estimatedHeaderSize: num3, extraData: callback, estimatedListSize: first, getFixedItemSize: callback3, getItemType: callback1, keyboardDismissMode: "on-drag", keyboardShouldPersistTaps: "always", keyExtractor: callback2, ListHeaderComponent: memo2, onContentSizeChange: tmp19, onLayout, onScroll: animatedScrollHandler, renderItem: callback, renderScrollComponent: tmp20, sharedValues: memo, stickyHeaderIndices: memo1.stickyHeaderIndices, style };
-  tmp19 = undefined;
-  const AnimatedLegendList = tmp3(tmp4[9]).AnimatedLegendList;
-  const tmp18 = renderItem;
+  }, items9);
+  let tmp23 = renderListHeader;
+  let obj3 = { ref: ref1, accessibilityRole: "list", contentContainerStyle: memo3, data: memo1.listData, estimatedHeaderSize: num3, extraData: callback, estimatedListSize: first, getFixedItemSize: callback3, getItemType: callback1, keyboardDismissMode: "on-drag", keyboardShouldPersistTaps: "always", keyExtractor: callback2, ListHeaderComponent: memo2, onContentSizeChange: tmp24, onLayout, onScroll: animatedScrollHandler, renderItem: callback, renderScrollComponent: tmp25, sharedValues: memo, stickyHeaderIndices: memo1.stickyHeaderIndices, style };
+  tmp24 = undefined;
+  const AnimatedLegendList = tmp3(tmp4[10]).AnimatedLegendList;
   if (null != onContentLengthChange) {
-    tmp19 = callback4;
+    tmp24 = callback4;
   }
-  tmp20 = undefined;
+  tmp25 = undefined;
   if (true === inActionSheet) {
-    tmp20 = renderSectionHeader;
+    tmp25 = sectionHeaderIsSticky;
   }
-  return tmp18(AnimatedLegendList, obj5);
+  return tmp23(AnimatedLegendList, obj3);
 });
 let size = size_mod;
 let result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/UsersLegendList.tsx");

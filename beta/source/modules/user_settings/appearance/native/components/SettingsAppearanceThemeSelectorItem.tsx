@@ -1,26 +1,26 @@
-// Module ID: 17261
-// Function ID: 17262
+// Module ID: 17587
+// Function ID: 17588
 // Name: SettingsAppearanceThemeSelectorItem
-// Dependencies: [19, 17, 1192, 17260, 1083, 21, 5014, 575, 5012, 5036, 10736, 1187, 17262, 563, 5596, 17263, 5250, 1241, 5082, 6980, 1113, 2]
+// Dependencies: [19, 17, 1192, 17586, 1083, 21, 5140, 575, 5138, 5162, 10855, 1187, 17588, 563, 5724, 17589, 5366, 1241, 5200, 7043, 1113, 2]
 // Exports: default
 
-// Module 17261 (SettingsAppearanceThemeSelectorItem)
+// Module 17587 (SettingsAppearanceThemeSelectorItem)
 import react_native from "react-native" /* 17 */;
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
 import ClientThemesTypes from "ClientThemesTypes" /* 1241 */;
-import utils_ColorDefault from "utils/Color" /* 5012 */;
-import themes from "themes" /* 5036 */;
-import react_native2 from "react-native" /* 5082 */;
-import MobileThemesUtils from "MobileThemesUtils" /* 5250 */;
-import useToken from "useToken" /* 5596 */;
-import ThemedGradientDefault from "ThemedGradient" /* 10736 */;
+import utils_ColorDefault from "utils/Color" /* 5138 */;
+import themes from "themes" /* 5162 */;
+import react_native2 from "react-native" /* 5200 */;
+import MobileThemesUtils from "MobileThemesUtils" /* 5366 */;
+import useToken from "useToken" /* 5724 */;
+import ThemedGradientDefault from "ThemedGradient" /* 10855 */;
 import react from "react" /* 19 */;
 import ThemeStore from "ThemeStore" /* 1192 */;
-import SettingsAppearanceConstants from "SettingsAppearanceConstants" /* 17260 */;
+import SettingsAppearanceConstants from "SettingsAppearanceConstants" /* 17586 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 let metroImportDefault;
@@ -32,8 +32,8 @@ let tmp;
 let tmp5;
 let tmp8;
 const native = tmp(1187);
-const AssetRegistryDefault = tmp8(17262);
-const SynchronizeIconNativeDefault = tmp5(17263);
+const AssetRegistryDefault = tmp8(17588);
+const SynchronizeIconNativeDefault = tmp5(17589);
 function GradientThemeBackground(arg0) {
   let isThemeLocked;
   let item;
@@ -114,7 +114,7 @@ function CustomThemeBackground(arg0) {
   items[1] = obj2;
   const obj4 = { componentStyles: obj5, mix: true, mixColorOverride: isThemeDarkResult ? closure_10 : closure_11, customTheme: item };
   obj5 = { borderRadius: nativeDefault.radii.sm };
-  const CustomThemedGradient = tmp(10736).CustomThemedGradient;
+  const CustomThemedGradient = tmp(10855).CustomThemedGradient;
   items1 = [metroRequire(CustomThemedGradient, obj4), ];
   if (isThemeLocked) {
     const obj6 = { source: AssetRegistryDefault, style: tmp4.lock };
@@ -192,7 +192,7 @@ export default function ThemeSelectorItem(onPress) {
   const radioA11yNative = tmp4Result.useRadioA11yNative({ selected: isSelected, disabled: isPreview });
   ({ accessibilityRole, accessibilityState } = radioA11yNative);
   const obj5 = { style: tmp.themeSelectorItemContainer, androidRippleConfig: tmp.rippleColor, onPress, accessibilityRole, accessibilityLabel: themePreset.getName(), accessibilityState, accessibilityHint: stringResult, children: tmp16(View, obj6) };
-  const PressableOpacity = tmp4(6980).PressableOpacity;
+  const PressableOpacity = tmp4(7043).PressableOpacity;
   stringResult = undefined;
   if (isPreview) {
     const intl = tmp4(1113).intl;

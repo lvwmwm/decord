@@ -1,47 +1,47 @@
-// Module ID: 17583
-// Function ID: 17584
+// Module ID: 17911
+// Function ID: 17912
 // Name: DevToolsGeneratedTestUsersScreen
-// Dependencies: [5, 32, 19, 17, 17584, 502, 21, 12125, 11281, 13365, 17585, 13366, 17587, 11927, 17589, 15658, 17591, 17593, 17595, 17597, 10078, 17599, 17601, 17603, 17605, 7561, 5014, 575, 6027, 7082, 5634, 5258, 17607, 5272, 7321, 7060, 6975, 6993, 504, 5607, 2]
+// Dependencies: [5, 32, 19, 17, 17912, 502, 21, 12286, 11421, 13597, 17913, 13598, 17915, 12093, 17917, 15973, 17919, 17921, 17923, 17925, 10199, 17927, 17929, 17931, 17933, 7633, 5140, 575, 6159, 7148, 5758, 5374, 17935, 5388, 7382, 7126, 7038, 7059, 504, 5735, 2]
 // Exports: default
 
-// Module 17583 (DevToolsGeneratedTestUsersScreen)
+// Module 17911 (DevToolsGeneratedTestUsersScreen)
 import nativeDefault from "native" /* 575 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5607 */;
-import components_Button_Button from "components/Button/Button" /* 5634 */;
-import Stack_Stack from "Stack/Stack" /* 6027 */;
-import TextInput_TextInput from "TextInput/TextInput" /* 7082 */;
-import SettingsIcon from "SettingsIcon" /* 7561 */;
-import FoodIcon from "FoodIcon" /* 10078 */;
-import ShieldIcon from "ShieldIcon" /* 11281 */;
-import SpeedometerIcon from "SpeedometerIcon" /* 11927 */;
-import UserIcon from "UserIcon" /* 12125 */;
-import GiftIcon from "GiftIcon" /* 13365 */;
-import PiggyBankIcon from "PiggyBankIcon" /* 13366 */;
-import SignPostIcon from "SignPostIcon" /* 15658 */;
-import AchievementsIcon from "AchievementsIcon" /* 17585 */;
-import TreehouseIcon from "TreehouseIcon" /* 17587 */;
-import CompassIcon from "CompassIcon" /* 17589 */;
-import CarIcon from "CarIcon" /* 17591 */;
-import TrainIcon from "TrainIcon" /* 17593 */;
-import TeacupIcon from "TeacupIcon" /* 17595 */;
-import InventoryIcon from "InventoryIcon" /* 17597 */;
-import BurgerIcon from "BurgerIcon" /* 17599 */;
-import MagicDoorIcon from "MagicDoorIcon" /* 17601 */;
-import PawPrintIcon from "PawPrintIcon" /* 17603 */;
-import RecordPlayerIcon from "RecordPlayerIcon" /* 17605 */;
-import GeneratedTestUserActionCreators from "GeneratedTestUserActionCreators" /* 17607 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5735 */;
+import components_Button_Button from "components/Button/Button" /* 5758 */;
+import Stack_Stack from "Stack/Stack" /* 6159 */;
+import TextInput_TextInput from "TextInput/TextInput" /* 7148 */;
+import SettingsIcon from "SettingsIcon" /* 7633 */;
+import FoodIcon from "FoodIcon" /* 10199 */;
+import ShieldIcon from "ShieldIcon" /* 11421 */;
+import SpeedometerIcon from "SpeedometerIcon" /* 12093 */;
+import UserIcon from "UserIcon" /* 12286 */;
+import GiftIcon from "GiftIcon" /* 13597 */;
+import PiggyBankIcon from "PiggyBankIcon" /* 13598 */;
+import SignPostIcon from "SignPostIcon" /* 15973 */;
+import AchievementsIcon from "AchievementsIcon" /* 17913 */;
+import TreehouseIcon from "TreehouseIcon" /* 17915 */;
+import CompassIcon from "CompassIcon" /* 17917 */;
+import CarIcon from "CarIcon" /* 17919 */;
+import TrainIcon from "TrainIcon" /* 17921 */;
+import TeacupIcon from "TeacupIcon" /* 17923 */;
+import InventoryIcon from "InventoryIcon" /* 17925 */;
+import BurgerIcon from "BurgerIcon" /* 17927 */;
+import MagicDoorIcon from "MagicDoorIcon" /* 17929 */;
+import PawPrintIcon from "PawPrintIcon" /* 17931 */;
+import RecordPlayerIcon from "RecordPlayerIcon" /* 17933 */;
+import GeneratedTestUserActionCreators from "GeneratedTestUserActionCreators" /* 17935 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GeneratedTestUsersStore from "GeneratedTestUsersStore" /* 17584 */;
+import GeneratedTestUsersStore from "GeneratedTestUsersStore" /* 17912 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
-let BottomSheet, c1, c2, c4, dependencyMap, pools;
+let c1, c2, c4, dependencyMap, pools;
 
 let c10;
 let metroImportDefault;
@@ -81,7 +81,7 @@ function PoolIdInput(onSubmit) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -126,7 +126,7 @@ function PoolIdInput(onSubmit) {
           closure_128_5(false);
         }
         c4 = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp26) {
         closure_2 = tmp26;
         if (0 === c3) {
@@ -140,7 +140,7 @@ function PoolIdInput(onSubmit) {
   }), items);
   let obj = { spacing: 4, style: tmp.inputContainer, children: items1 };
   const Stack = Stack_Stack.Stack;
-  items1 = [authStore(TextInput_TextInput.TextInput, { size: "md", placeholder: "Enter Pool ID", onChange: tmp3, autoCapitalize: "none", autoCorrect: false, autoComplete: "off", clearable: true }), authStore(TextInput_TextInput.TextInput, { size: "md", secureTextEntry: true, placeholder: "Enter Password", onChange: tmp5, autoCapitalize: "none", autoCorrect: false, autoComplete: "off", clearable: true }), ];
+  items1 = [authStore(TextInput_TextInput.TextInput, { size: "md", placeholder: "Enter Pool ID", onChange: tmp3, autoCapitalize: "none", autoCorrect: false, autoComplete: "off", clearable: true }), authStore(TextInput_TextInput.TextInput, { size: "md", secureTextEntry: true, revealable: true, placeholder: "Enter Password", onChange: tmp5, autoCapitalize: "none", autoCorrect: false, autoComplete: "off", textContentType: "none" }), ];
   let tmp11 = 0 === first.length;
   const Button = components_Button_Button.Button;
   const tmp10 = authStore;
@@ -172,9 +172,9 @@ function UserActionSheet(pool) {
     obj2.loginAsGeneratedUser(pool.id, arg0);
   }, items);
   let obj = { header: closure_10(BottomSheetTitleHeader, obj2), children: closure_10(closure_6, obj3) };
-  BottomSheet = pool(5272).BottomSheet;
+  const BottomSheet = pool(5388).BottomSheet;
   obj2 = { title: pool.summary, subtitle: "" + usersForPool.length + " users" };
-  BottomSheetTitleHeader = pool(7321).BottomSheetTitleHeader;
+  BottomSheetTitleHeader = pool(7382).BottomSheetTitleHeader;
   obj3 = { style: { paddingHorizontal: usersForPool(575).space.PX_12 }, children: closure_10(TableRowGroup, obj5) };
   obj5 = {
     title: "Select User to Login As",
@@ -205,7 +205,7 @@ function UserActionSheet(pool) {
     })
   };
   ({ paddingHorizontal: usersForPool(575).space.PX_12 });
-  TableRowGroup = pool(7060).TableRowGroup;
+  TableRowGroup = pool(7126).TableRowGroup;
   return closure_10(BottomSheet, obj);
 }
 function PoolUsers(pool) {
@@ -226,7 +226,7 @@ function PoolUsers(pool) {
     obj.openLazy(Promise.resolve(obj2), "generated-test-users", obj3);
   }, items);
   let obj = { icon: closure_10(tmp, { size: "md", color: tmp2 }), label: summary, subLabel: "" + usersForPool.length + " users", arrow: true, onPress: callback, start, end };
-  const TableRow = pool(6975).TableRow;
+  const TableRow = pool(7038).TableRow;
   return closure_10(TableRow, obj);
 }
 ({ View: metroRequire, ScrollView: metroImportDefault } = react_native);
@@ -277,7 +277,7 @@ export default function DevToolsGeneratedTestUsersScreen() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -306,7 +306,7 @@ export default function DevToolsGeneratedTestUsersScreen() {
           return obj;
         } else {
           c2 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp8) {
         c2 = 3;
@@ -315,7 +315,7 @@ export default function DevToolsGeneratedTestUsersScreen() {
     }
   });
   let obj2 = { style: tmp.container, children: tmp5(tmp7, obj3) };
-  obj3 = { contentContainerStyle: items1, children: tmp8(Stack, obj5) };
+  obj3 = { keyboardShouldPersistTaps: "handled", contentContainerStyle: items1, children: tmp8(Stack, obj5) };
   items1 = [tmp.contentContainer, ];
   let obj4 = { paddingBottom: nativeDefault.space.PX_16 + insets.bottom };
   const callback = useCallback(function() {
@@ -323,14 +323,14 @@ export default function DevToolsGeneratedTestUsersScreen() {
   }, []);
   items1[1] = obj4;
   tmp8 = closure_11;
-  Stack = stateFromStoresArray(6027).Stack;
+  Stack = stateFromStoresArray(6159).Stack;
   const items2 = [closure_10(PoolIdInput, { onSubmit: callback }), ];
   let tmp5Result = 0 === stateFromStoresArray.length;
-  const TableRowGroup = stateFromStoresArray(7060).TableRowGroup;
+  const TableRowGroup = stateFromStoresArray(7126).TableRowGroup;
   const tmp6 = closure_6;
   tmp7 = closure_7;
   if (tmp5Result) {
-    tmp5Result = tmp5(tmp2(6975).TableRow, { label: "No pools available." });
+    tmp5Result = tmp5(tmp2(7038).TableRow, { label: "No pools available." });
   }
   obj5 = { spacing: 16, children: items2 };
   const obj6 = { title: "Generated Test User Pools", hasIcons: true, children: items3 };

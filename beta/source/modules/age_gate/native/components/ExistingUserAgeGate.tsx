@@ -1,21 +1,21 @@
-// Module ID: 19391
-// Function ID: 19392
+// Module ID: 19795
+// Function ID: 19796
 // Name: ExistingUserAgeGate
-// Dependencies: [5, 32, 19, 17, 4857, 1097, 19387, 1072, 21, 5014, 1497, 504, 1252, 1113, 2061, 38, 17999, 6744, 2042, 18021, 7292, 5624, 19392, 5634, 2]
+// Dependencies: [5, 32, 19, 17, 4983, 1097, 19791, 1072, 21, 5140, 1499, 504, 1252, 1113, 2185, 38, 18339, 6799, 2166, 18361, 7355, 5751, 19796, 5758, 2]
 // Exports: default
 
-// Module 19391 (ExistingUserAgeGate)
+// Module 19795 (ExistingUserAgeGate)
 import react_native from "react-native" /* 17 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import ExistingUserAgeGateConstants from "ExistingUserAgeGateConstants" /* 19387 */;
+import ExistingUserAgeGateConstants from "ExistingUserAgeGateConstants" /* 19791 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import UserRequiredActionStore from "UserRequiredActionStore" /* 4857 */;
+import UserRequiredActionStore from "UserRequiredActionStore" /* 4983 */;
 import AgeGateConstants from "AgeGateConstants" /* 1097 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -77,7 +77,7 @@ export default function ExistingUserAgeGate(source) {
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -178,7 +178,7 @@ export default function ExistingUserAgeGate(source) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -221,7 +221,7 @@ export default function ExistingUserAgeGate(source) {
             return obj;
           }
           c0 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp9) {
           c0 = 3;
           throw tmp9;
@@ -307,9 +307,9 @@ export default function ExistingUserAgeGate(source) {
       }
       let obj3 = { top: true, style: tmp.container, children: items3 };
       const SafeAreaPaddingView = tmp2(tmp3[20]).SafeAreaPaddingView;
-      let obj5 = { style: tmp.header, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: stringResult1 };
+      let obj5 = { style: tmp.header, variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: stringResult1 };
       items3 = [closure_13(tmp2(tmp3[21]).Heading, obj5), , , ];
-      let obj7 = { style: tmp.body, variant: "text-md/medium", color: "interactive-text-default", children: stringResult };
+      let obj7 = { style: tmp.body, variant: "body-md/medium", color: "interactive-text-default", children: stringResult };
       items3[1] = closure_13(tmp2(tmp3[21]).Text, obj7);
       const obj8 = { style: tmp.inputGroup, ref, label: intl5.string(tmp2(tmp3[13]).t.xNpFJ6), date, onChangeDate: tmp9, error: stringResult2 };
       const tmp22Result = tmp22(tmp3[22]);

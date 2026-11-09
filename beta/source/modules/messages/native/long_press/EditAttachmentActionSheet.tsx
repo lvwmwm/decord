@@ -1,19 +1,19 @@
-// Module ID: 14537
-// Function ID: 14538
+// Module ID: 14773
+// Function ID: 14774
 // Name: EditAttachmentActionSheet
-// Dependencies: [5, 32, 19, 6061, 5019, 1072, 14524, 21, 8741, 8840, 1396, 1113, 5023, 7636, 7366, 7321, 6027, 575, 5624, 7253, 6974, 5634, 2]
+// Dependencies: [5, 32, 19, 6194, 5145, 1072, 14760, 21, 8812, 8914, 1403, 1113, 5149, 7712, 7426, 7382, 6159, 575, 5751, 7316, 7037, 5758, 2]
 // Exports: default
 
-// Module 14537 (EditAttachmentActionSheet)
+// Module 14773 (EditAttachmentActionSheet)
 import Constants from "Constants" /* 1072 */;
-import MessageConstants from "MessageConstants" /* 5019 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5023 */;
-import react2 from "react" /* 8741 */;
-import AttachmentConstants from "AttachmentConstants" /* 14524 */;
+import MessageConstants from "MessageConstants" /* 5145 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5149 */;
+import react2 from "react" /* 8812 */;
+import AttachmentConstants from "AttachmentConstants" /* 14760 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import MessageStore from "MessageStore" /* 6061 */;
+import MessageStore from "MessageStore" /* 6194 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
@@ -23,14 +23,14 @@ let c10;
 let tmp;
 let unpackModuleId;
 const intl7 = tmp(1113);
-const FlagUtils = tmp(1396);
-const Text_Text = tmp(5624);
-const components_Button_Button = tmp(5634);
-const Stack_Stack = tmp(6027);
-const TableCheckboxRow2 = tmp(6974);
-const TextArea2 = tmp(7253);
-const BottomSheetTitleHeader = tmp(7321);
-const ActionSheet2 = tmp(7366);
+const FlagUtils = tmp(1403);
+const Text_Text = tmp(5751);
+const components_Button_Button = tmp(5758);
+const Stack_Stack = tmp(6159);
+const TableCheckboxRow2 = tmp(7037);
+const TextArea2 = tmp(7316);
+const BottomSheetTitleHeader = tmp(7382);
+const ActionSheet2 = tmp(7426);
 let closure_7 = MessageConstants.LEGACY_SPOILER_ATTACHMENT_PREFIX;
 const MessageAttachmentFlags = Constants.MessageAttachmentFlags;
 let closure_9 = AttachmentConstants.MAX_ATTACHMENT_DESCRIPTION_LENGTH;
@@ -81,7 +81,7 @@ export default function EditAttachmentActionSheet(arg0) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -144,7 +144,7 @@ export default function EditAttachmentActionSheet(arg0) {
             c2 = 0;
           }
           c3 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp25) {
           if (0 === c2) {
             c3 = 3;
@@ -163,7 +163,7 @@ export default function EditAttachmentActionSheet(arg0) {
   ({ bottomSheetClose: c2, bottomSheetRef } = bottomSheetRef1);
   const tmp4 = attachment;
   const filename = attachment.filename;
-  const tmp5 = attachment(8840)(attachment);
+  const tmp5 = attachment(8914)(attachment);
   const startsWithResult = filename.startsWith(c7);
   let obj2 = first2;
   let str = attachment.description;
@@ -200,7 +200,7 @@ export default function EditAttachmentActionSheet(arg0) {
   intl2 = intl7.intl;
   obj4 = { spacing: tmp4(575).space.PX_16, children: items };
   Stack = Stack_Stack.Stack;
-  items = [closure_10(Text_Text.Text, { variant: "text-sm/medium", color: "text-subtle", lineClamp: 2, children: tmp5 }), , , , ];
+  items = [closure_10(Text_Text.Text, { variant: "body-sm/medium", color: "text-subtle", lineClamp: 2, children: tmp5 }), , , , ];
   let obj5 = { label: intl3.string(intl7.t.eOB2eR), placeholder: intl4.string(intl7.t.RNH1jn), value, onChange: tmp10, maxLength, disabled: first2 };
   const TextArea = TextArea2.TextArea;
   intl3 = intl7.intl;
@@ -213,7 +213,7 @@ export default function EditAttachmentActionSheet(arg0) {
   let tmp22Result = null;
   tmp23 = closure_11;
   if (null != tmp20) {
-    const obj7 = { variant: "text-sm/medium", color: "text-feedback-critical", children: tmp20 };
+    const obj7 = { variant: "body-sm/medium", color: "text-feedback-critical", children: tmp20 };
     tmp22Result = tmp22(Text_Text.Text, obj7);
   }
   items[3] = tmp22Result;

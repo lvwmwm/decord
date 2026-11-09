@@ -1,15 +1,15 @@
-// Module ID: 8369
-// Function ID: 8370
+// Module ID: 8440
+// Function ID: 8441
 // Name: useUserLinks
-// Dependencies: [19, 1383, 7715, 7716, 563, 8370, 8371, 8372, 2]
+// Dependencies: [19, 1385, 7791, 7792, 563, 8441, 8442, 8443, 2]
 // Exports: getActiveLinkUserIds, useAcceptedRequestsCount, useActiveLinkUserIds, useActiveLinkUsers, useActivityWindowTimeStamp, useHasActiveLinks, useHasActiveParentLinks, useHasMaxConnections, useLinkTimestampText, usePendingRequestCount, useRequiresParentalConsent, useUserIdsForLinkStatus, useUserQRLinkUrl, useUsersForLinkStatus
 
-// Module 8369 (useUserLinks)
+// Module 8440 (useUserLinks)
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1383 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7715 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 7716 */;
+import UserStore from "UserStore" /* 1385 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7791 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 7792 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -22,12 +22,12 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let unpackModuleId;
-const f92765 = () => linkedUsers.getLinkedUsers();
-const f92767 = () => {
+const f94241 = () => linkedUsers.getLinkedUsers();
+const f94243 = () => {
   let user;
   return closure_0.map((item) => user.getUser(item));
 };
-const f92768 = (item) => null != item;
+const f94244 = (item) => null != item;
 ({ ACCEPTED_LINK_REQUEST_TIMESTAMP_FORMATTER: metroRequire, FAMILY_CENTER_REQUEST_QR_CODE_URL: metroImportDefault, MAX_PARENT_TO_TEEN_ACTIVE_CONNECTIONS: metroImportAll, MAX_TEEN_TO_PARENT_ACTIVE_CONNECTIONS: c9, PENDING_LINK_REQUEST_TIMESTAMP_FORMATTER: c10, UserLinkStatus: unpackModuleId, UserLinkType: closure_12 } = FamilyCenterConstants);
 let result = size.fileFinishedImporting("modules/parent_tools/hooks/useUserLinks.tsx");
 
@@ -36,7 +36,7 @@ export function useUserIdsForLinkStatus(arg0) {
   _require = arg0;
   const items = [FamilyCenterStore];
   const obj = require("useStateFromStores");
-  const stateFromStores = obj.useStateFromStores(items, f92765);
+  const stateFromStores = obj.useStateFromStores(items, f94241);
   const items1 = [stateFromStores, arg0];
   return react.useMemo(() => {
     const values = Object.values(stateFromStores);
@@ -56,7 +56,7 @@ export function useUsersForLinkStatus(PENDING) {
   _require = PENDING;
   const items = [FamilyCenterStore];
   const obj = require("useStateFromStores");
-  const stateFromStores = obj.useStateFromStores(items, f92765);
+  const stateFromStores = obj.useStateFromStores(items, f94241);
   const items1 = [stateFromStores, PENDING];
   _require = react.useMemo(() => {
     const values = Object.values(stateFromStores);
@@ -72,14 +72,14 @@ export function useUsersForLinkStatus(PENDING) {
   }, items1);
   const items2 = [UserStore];
   const obj2 = require("useStateFromStores");
-  const stateFromStoresArray = obj2.useStateFromStoresArray(items2, f92767);
-  return stateFromStoresArray.filter(f92768);
+  const stateFromStoresArray = obj2.useStateFromStoresArray(items2, f94243);
+  return stateFromStoresArray.filter(f94244);
 }
 export function useActiveLinkUserIds() {
   const ACTIVE = constants.ACTIVE;
   const items = [FamilyCenterStore];
   const obj = ACTIVE(563);
-  const stateFromStores = obj.useStateFromStores(items, f92765);
+  const stateFromStores = obj.useStateFromStores(items, f94241);
   const items1 = [stateFromStores, ACTIVE];
   return react.useMemo(() => {
     const values = Object.values(stateFromStores);
@@ -112,7 +112,7 @@ export function useActiveLinkUsers() {
   _require = undefined;
   const items = [FamilyCenterStore];
   const obj = require("useStateFromStores");
-  const stateFromStores = obj.useStateFromStores(items, f92765);
+  const stateFromStores = obj.useStateFromStores(items, f94241);
   const items1 = [stateFromStores, ACTIVE];
   _require = react.useMemo(() => {
     const values = Object.values(stateFromStores);
@@ -128,14 +128,14 @@ export function useActiveLinkUsers() {
   }, items1);
   const items2 = [UserStore];
   const obj2 = require("useStateFromStores");
-  const stateFromStoresArray = obj2.useStateFromStoresArray(items2, f92767);
-  return stateFromStoresArray.filter(f92768);
+  const stateFromStoresArray = obj2.useStateFromStoresArray(items2, f94243);
+  return stateFromStoresArray.filter(f94244);
 }
 export function useHasActiveLinks() {
   const ACTIVE = constants.ACTIVE;
   const items = [FamilyCenterStore];
   const obj = ACTIVE(563);
-  const stateFromStores = obj.useStateFromStores(items, f92765);
+  const stateFromStores = obj.useStateFromStores(items, f94241);
   const items1 = [stateFromStores, ACTIVE];
   return react.useMemo(() => {
     const values = Object.values(stateFromStores);
@@ -185,9 +185,9 @@ export function useHasMaxConnections() {
   const ACTIVE = constants.ACTIVE;
   let stateFromStores;
   const items = [FamilyCenterStore];
-  const tmp = stateFromStores(8370)();
+  const tmp = stateFromStores(8441)();
   const obj = ACTIVE(563);
-  stateFromStores = obj.useStateFromStores(items, f92765);
+  stateFromStores = obj.useStateFromStores(items, f94241);
   const items1 = [stateFromStores, ACTIVE];
   return react.useMemo(() => {
     const values = Object.values(stateFromStores);
@@ -242,7 +242,7 @@ export function useAcceptedRequestsCount() {
   const ACTIVE = constants.ACTIVE;
   const items = [FamilyCenterStore];
   const obj = ACTIVE(563);
-  const stateFromStores = obj.useStateFromStores(items, f92765);
+  const stateFromStores = obj.useStateFromStores(items, f94241);
   const items1 = [stateFromStores, ACTIVE];
   return react.useMemo(() => {
     const values = Object.values(stateFromStores);
@@ -275,7 +275,7 @@ export function useActivityWindowTimeStamp(activityWindowTimestampFormatter) {
     const _Date = Date;
     const self = this;
     const self2 = this;
-    const formatUserActivityTimestamp = tmp(8372).formatUserActivityTimestamp;
+    const formatUserActivityTimestamp = tmp(8443).formatUserActivityTimestamp;
     require("FamilyCenterUtils");
     const date = new Date(stateFromStores);
     result = formatUserActivityTimestamp(date.getTime(), () => activityWindowTimestampFormatter, 7);
@@ -291,7 +291,7 @@ export function useLinkTimestampText(id, status) {
   const tmp = _require;
   if (null != stateFromStores) {
     const _Date = Date;
-    const tmpResult = tmp(8372);
+    const tmpResult = tmp(8443);
     formatLinkTimestampResult = tmpResult.formatLinkTimestamp(Date.parse(stateFromStores), status === constants.PENDING ? closure_10 : closure_6);
   }
   return formatLinkTimestampResult;

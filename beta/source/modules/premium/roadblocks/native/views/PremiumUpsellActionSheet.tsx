@@ -1,32 +1,32 @@
-// Module ID: 9794
-// Function ID: 9795
+// Module ID: 9884
+// Function ID: 9885
 // Name: PremiumUpsellActionSheet
-// Dependencies: [19, 17, 5015, 1192, 5764, 5045, 1383, 1385, 1072, 5864, 9795, 21, 5014, 575, 5596, 2047, 5073, 8231, 8216, 9796, 9797, 1113, 9801, 9805, 9806, 5258, 9793, 9807, 14600, 14604, 1092, 1375, 9504, 5717, 5587, 504, 7326, 9785, 7627, 8528, 14605, 10046, 1252, 10030, 5207, 7366, 14607, 5624, 5634, 8519, 2]
+// Dependencies: [19, 17, 5141, 1192, 5893, 5171, 1385, 1387, 1072, 5993, 9885, 21, 5140, 575, 5724, 2171, 9886, 8301, 8286, 1113, 9887, 9891, 9895, 9896, 5374, 9883, 9897, 14836, 14840, 1092, 10094, 1377, 9588, 5842, 5715, 504, 7387, 9875, 7703, 8599, 14841, 1252, 10152, 5323, 7426, 14843, 5751, 5758, 8590, 2]
 // Exports: default
 
-// Module 9794 (PremiumUpsellActionSheet)
+// Module 9884 (PremiumUpsellActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import PlatformUtils from "PlatformUtils" /* 1375 */;
-import PremiumUtils from "PremiumUtils" /* 2047 */;
-import ChatInputUtils from "ChatInputUtils" /* 5207 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import LinearGradientDefault from "LinearGradient" /* 5587 */;
-import FastImageDefault from "FastImage" /* 5717 */;
-import StreamSettingsConstants from "StreamSettingsConstants" /* 5864 */;
-import openPremiumUpsellActionSheet from "openPremiumUpsellActionSheet" /* 9793 */;
-import ScheduledMessagesConstants from "ScheduledMessagesConstants" /* 9795 */;
+import PlatformUtils from "PlatformUtils" /* 1377 */;
+import PremiumUtils from "PremiumUtils" /* 2171 */;
+import ChatInputUtils from "ChatInputUtils" /* 5323 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
+import LinearGradientDefault from "LinearGradient" /* 5715 */;
+import FastImageDefault from "FastImage" /* 5842 */;
+import StreamSettingsConstants from "StreamSettingsConstants" /* 5993 */;
+import openPremiumUpsellActionSheet from "openPremiumUpsellActionSheet" /* 9883 */;
+import ScheduledMessagesConstants from "ScheduledMessagesConstants" /* 9885 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5015 */;
+import AccessibilityStore from "AccessibilityStore" /* 5141 */;
 import ThemeStore from "ThemeStore" /* 1192 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5764 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5045 */;
-import UserStore from "UserStore" /* 1383 */;
-import PremiumConstants from "PremiumConstants" /* 1385 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5893 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5171 */;
+import UserStore from "UserStore" /* 1385 */;
+import PremiumConstants from "PremiumConstants" /* 1387 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let guildId;
@@ -47,7 +47,7 @@ let obj6;
 let obj7;
 let tmp;
 let unpackModuleId;
-const APNGPlayer = tmp(9504);
+const APNGPlayer = tmp(9588);
 function PremiumUpsellImage(arg0) {
   let image;
   let style;
@@ -148,17 +148,17 @@ export default function PremiumUpsellActionSheet(analyticsLocations) {
   let items8;
   let items9;
   let legacyProps;
-  let obj10;
+  let obj15;
+  let obj16;
   let obj17;
-  let obj18;
   let obj19;
-  let obj21;
-  let obj22;
-  let obj31;
-  let str3;
+  let obj20;
+  let obj29;
+  let obj9;
+  let str2;
   let theme;
-  let tmp2Result27;
-  let tmp39;
+  let tmp2Result24;
+  let tmp36;
   let useReducedMotion;
   ({ featureName, legacyProps } = analyticsLocations);
   let analyticsLocations1 = analyticsLocations.analyticsLocations;
@@ -186,126 +186,113 @@ export default function PremiumUpsellActionSheet(analyticsLocations) {
     initialUpsellKey = legacyProps.initialUpsellKey;
   }
   if (initialUpsellKey == null) {
-    const tmp2Result = tmp2(tmp3[19]);
+    const tmp2Result = tmp2(tmp3[30]);
     initialUpsellKey = tmp2Result.getUpsellType(featureName);
   }
   const premiumUpsellConfig = usePremiumUpsellConfig(initialUpsellKey, analyticsLocations);
   useTier0UpsellContent = premiumUpsellConfig.useTier0UpsellContent;
   onViewAllPerks = premiumUpsellConfig.onViewAllPerks;
-  const tmp2Result16 = tmp2(tmp3[38]);
-  const premiumTrialOffer = tmp2Result16.usePremiumTrialOffer();
+  const tmp2Result14 = tmp2(tmp3[38]);
+  const premiumTrialOffer = tmp2Result14.usePremiumTrialOffer();
   tmp2(tmp3[39]);
   let mobileRoadblockButtonText = null;
   if (!useTier0UpsellContent) {
     let obj2 = { subscriptionTier: TIER_2.TIER_2, trialOffer: premiumTrialOffer, discountOffer: tmp12 };
-    const tmp2Result18 = tmp2(tmp3[40]);
-    mobileRoadblockButtonText = tmp2Result18.getMobileRoadblockButtonText(obj2);
+    const tmp2Result16 = tmp2(tmp3[40]);
+    mobileRoadblockButtonText = tmp2Result16.getMobileRoadblockButtonText(obj2);
   }
   const items1 = [ThemeStore];
-  const tmp2Result19 = tmp2(tmp3[35]);
-  const stateFromStores1 = tmp2Result19.useStateFromStores(items1, () => theme.theme);
+  const tmp2Result17 = tmp2(tmp3[35]);
+  const stateFromStores1 = tmp2Result17.useStateFromStores(items1, () => theme.theme);
   const items2 = [SelectedGuildStore];
-  const tmp2Result20 = tmp2(tmp3[35]);
-  const stateFromStores2 = tmp2Result20.useStateFromStores(items2, () => guildId.getGuildId());
+  const tmp2Result18 = tmp2(tmp3[35]);
+  const stateFromStores2 = tmp2Result18.useStateFromStores(items2, () => guildId.getGuildId());
   const tmp18 = useTier0UpsellContent ? closure_11.TIER_0 : closure_11.TIER_2;
-  const tmp2Result21 = tmp2(tmp3[14]);
-  const token = tmp2Result21.useToken(tmp5(tmp3[13]).colors.EXPRESSIVE_GRADIENT_NITRO_GREEN_START);
+  const tmp2Result19 = tmp2(tmp3[14]);
+  const token = tmp2Result19.useToken(tmp5(tmp3[13]).colors.EXPRESSIVE_GRADIENT_NITRO_GREEN_START);
   let str = "dark";
-  const tmp2Result22 = tmp2(tmp3[14]);
-  const token1 = tmp2Result22.useToken(tmp5(tmp3[13]).colors.EXPRESSIVE_GRADIENT_NITRO_GREEN_END);
+  const tmp2Result20 = tmp2(tmp3[14]);
+  const token1 = tmp2Result20.useToken(tmp5(tmp3[13]).colors.EXPRESSIVE_GRADIENT_NITRO_GREEN_END);
   if (stateFromStores1 === constants4.LIGHT) {
     str = "light";
   }
-  const tmp2Result23 = tmp2(tmp3[15]);
-  const premiumTypeDisplayName = tmp2Result23.getPremiumTypeDisplayName(tmp18);
+  const tmp2Result21 = tmp2(tmp3[15]);
+  const premiumTypeDisplayName = tmp2Result21.getPremiumTypeDisplayName(tmp18);
   let effectiveUploadLimit;
   if (featureName === tmp2(tmp3[16]).EntitlementFeatureNames.INCREASED_FILE_UPLOAD_SIZE) {
     const getEffectiveUploadLimit = tmp2(tmp3[17]).getEffectiveUploadLimit;
     tmp2(tmp3[17]);
-    const tmp2Result25 = tmp2(tmp3[18]);
-    effectiveUploadLimit = getEffectiveUploadLimit(tmp2Result25.maxFileSize(stateFromStores2));
-  }
-  let tmp24;
-  const tmp2Result26 = tmp2(tmp3[19]);
-  if (tmp2Result26.isEmojiPickerUpsellFeature(featureName)) {
-    tmp24 = closure_18(tmp2(tmp3[20]).ReactionsSpotIllustration, { width: 198, height: 132, accessible: false });
+    const tmp2Result23 = tmp2(tmp3[18]);
+    effectiveUploadLimit = getEffectiveUploadLimit(tmp2Result23.maxFileSize(stateFromStores2));
   }
   const obj3 = {};
-  const obj4 = { title: intl.string(tmp2(tmp3[21]).t.jGDYF0), description: intl2.formatToPlainString(tmp2(tmp3[21]).t["fc+8uy"], { nitroTierName: premiumTypeDisplayName }), analyticsPage: constants3.PREMIUM_UPSELL_SOUNDBOARD_EVERYWHERE, upsellType: constants.SOUNDBOARD_EVERYWHERE_UPSELL, image: { uri: "https://cdn.discordapp.com/assets/premium/roadblocks/soundboard_" + str + ".png" } };
+  const obj4 = { title: intl.string(tmp2(tmp3[19]).t.jGDYF0), description: intl2.formatToPlainString(tmp2(tmp3[19]).t["fc+8uy"], { nitroTierName: premiumTypeDisplayName }), analyticsPage: constants3.PREMIUM_UPSELL_SOUNDBOARD_EVERYWHERE, upsellType: constants.SOUNDBOARD_EVERYWHERE_UPSELL, image: { uri: "https://cdn.discordapp.com/assets/premium/roadblocks/soundboard_" + str + ".png" } };
   const SOUNDBOARD_EVERYWHERE = tmp2(tmp3[16]).EntitlementFeatureNames.SOUNDBOARD_EVERYWHERE;
-  intl = tmp2(tmp3[21]).intl;
-  intl2 = tmp2(tmp3[21]).intl;
+  intl = tmp2(tmp3[19]).intl;
+  intl2 = tmp2(tmp3[19]).intl;
   obj3[SOUNDBOARD_EVERYWHERE] = obj4;
-  const obj6 = { title: intl3.string(tmp2(tmp3[21]).t.zY5PPb), description: intl4.formatToPlainString(tmp2(tmp3[21]).t["uukIF/"], { nitroTierName: premiumTypeDisplayName }), analyticsPage: constants3.PREMIUM_UPSELL_EMOJI_EVERYWHERE, upsellType: constants.EMOJI_EVERYWHERE_UPSELL, image: { uri: "https://cdn.discordapp.com/assets/premium/roadblocks/emoji_" + str + ".png" }, illustration: tmp24 };
+  const obj6 = { title: intl3.string(tmp2(tmp3[19]).t.zY5PPb), description: intl4.formatToPlainString(tmp2(tmp3[19]).t["uukIF/"], { nitroTierName: premiumTypeDisplayName }), analyticsPage: constants3.PREMIUM_UPSELL_EMOJI_EVERYWHERE, upsellType: constants.EMOJI_EVERYWHERE_UPSELL, illustration: closure_18(tmp2(tmp3[20]).ReactionsSpotIllustration, { width: 198, height: 132, accessible: false }) };
   ({ uri: "https://cdn.discordapp.com/assets/premium/roadblocks/soundboard_" + str + ".png" });
   const EMOJIS_EVERYWHERE = tmp2(tmp3[16]).EntitlementFeatureNames.EMOJIS_EVERYWHERE;
-  intl3 = tmp2(tmp3[21]).intl;
-  intl4 = tmp2(tmp3[21]).intl;
+  intl3 = tmp2(tmp3[19]).intl;
+  intl4 = tmp2(tmp3[19]).intl;
   obj3[EMOJIS_EVERYWHERE] = obj6;
-  const obj8 = { title: intl5.string(tmp2(tmp3[21]).t.Eukdgl), description: intl6.string(tmp2(tmp3[21]).t.sMmd7s), analyticsPage: constants3.PREMIUM_UPSELL_STICKERS_EVERYWHERE, upsellType: constants.STICKERS_EVERYWHERE_UPSELL, illustration: closure_18(tmp2(tmp3[22]).StickersSpotIllustration, { width: 235, height: 132, accessible: false }) };
-  ({ uri: "https://cdn.discordapp.com/assets/premium/roadblocks/emoji_" + str + ".png" });
+  const obj7 = { title: intl5.string(tmp2(tmp3[19]).t.Eukdgl), description: intl6.string(tmp2(tmp3[19]).t.sMmd7s), analyticsPage: constants3.PREMIUM_UPSELL_STICKERS_EVERYWHERE, upsellType: constants.STICKERS_EVERYWHERE_UPSELL, illustration: closure_18(tmp2(tmp3[21]).StickersSpotIllustration, { width: 235, height: 132, accessible: false }) };
   const STICKERS_EVERYWHERE = tmp2(tmp3[16]).EntitlementFeatureNames.STICKERS_EVERYWHERE;
-  intl5 = tmp2(tmp3[21]).intl;
-  intl6 = tmp2(tmp3[21]).intl;
-  obj3[STICKERS_EVERYWHERE] = obj8;
-  const obj9 = { title: intl7.string(tmp2(tmp3[21]).t["G+pngo"]), description: closure_18(closure_19, obj10), analyticsPage: constants3.PREMIUM_UPSELL_FILE_UPLOAD, upsellType: constants.LARGER_FILE_UPLOAD_UPSELL, image: { uri: "https://cdn.discordapp.com/assets/premium/roadblocks/file_upload_" + str + "_v2.png" } };
+  intl5 = tmp2(tmp3[19]).intl;
+  intl6 = tmp2(tmp3[19]).intl;
+  obj3[STICKERS_EVERYWHERE] = obj7;
+  const obj8 = { title: intl7.string(tmp2(tmp3[19]).t["G+pngo"]), description: closure_18(closure_19, obj9), analyticsPage: constants3.PREMIUM_UPSELL_FILE_UPLOAD, upsellType: constants.LARGER_FILE_UPLOAD_UPSELL, image: { uri: "https://cdn.discordapp.com/assets/premium/roadblocks/file_upload_" + str + "_v2.png" } };
   const INCREASED_FILE_UPLOAD_SIZE = tmp2(tmp3[16]).EntitlementFeatureNames.INCREASED_FILE_UPLOAD_SIZE;
-  intl7 = tmp2(tmp3[21]).intl;
-  obj10 = { children: tmp2Result27.fileUploadLimitRoadblockDescription({ guildId: stateFromStores2, maxSize: effectiveUploadLimit }) };
-  obj3[INCREASED_FILE_UPLOAD_SIZE] = obj9;
-  tmp2Result27 = tmp2(tmp3[18]);
-  const obj12 = { title: intl8.string(tmp2(tmp3[21]).t.SI7R9I), description: intl9.formatToPlainString(tmp2(tmp3[21]).t.uGkSY2, { nitroTierName: premiumTypeDisplayName }), analyticsPage: constants3.PREMIUM_UPSELL_ANIMATED_EMOJI, upsellType: constants.ANIMATED_EMOJI_UPSELL, image: { uri: "https://cdn.discordapp.com/assets/premium/roadblocks/emoji_" + str + ".png" }, illustration: tmp24 };
+  intl7 = tmp2(tmp3[19]).intl;
+  obj9 = { children: tmp2Result24.fileUploadLimitRoadblockDescription({ guildId: stateFromStores2, maxSize: effectiveUploadLimit }) };
+  obj3[INCREASED_FILE_UPLOAD_SIZE] = obj8;
+  tmp2Result24 = tmp2(tmp3[18]);
+  const obj11 = { title: intl8.string(tmp2(tmp3[19]).t.SI7R9I), description: intl9.formatToPlainString(tmp2(tmp3[19]).t.uGkSY2, { nitroTierName: premiumTypeDisplayName }), analyticsPage: constants3.PREMIUM_UPSELL_ANIMATED_EMOJI, upsellType: constants.ANIMATED_EMOJI_UPSELL, illustration: closure_18(tmp2(tmp3[20]).ReactionsSpotIllustration, { width: 198, height: 132, accessible: false }) };
   ({ uri: "https://cdn.discordapp.com/assets/premium/roadblocks/file_upload_" + str + "_v2.png" });
   const ANIMATED_EMOJIS = tmp2(tmp3[16]).EntitlementFeatureNames.ANIMATED_EMOJIS;
-  intl8 = tmp2(tmp3[21]).intl;
-  intl9 = tmp2(tmp3[21]).intl;
-  obj3[ANIMATED_EMOJIS] = obj12;
-  const obj14 = { title: intl10.string(tmp2(tmp3[21]).t.p0I2Bk), description: intl11.string(tmp2(tmp3[21]).t.jBqF2k), analyticsPage: constants3.PREMIUM_UPSELL_CLIENT_THEMES, upsellType: constants.CLIENT_THEMES_UPSELL, image: tmp5(tmp3[23]) };
-  ({ uri: "https://cdn.discordapp.com/assets/premium/roadblocks/emoji_" + str + ".png" });
+  intl8 = tmp2(tmp3[19]).intl;
+  intl9 = tmp2(tmp3[19]).intl;
+  obj3[ANIMATED_EMOJIS] = obj11;
+  const obj12 = { title: intl10.string(tmp2(tmp3[19]).t.p0I2Bk), description: intl11.string(tmp2(tmp3[19]).t.jBqF2k), analyticsPage: constants3.PREMIUM_UPSELL_CLIENT_THEMES, upsellType: constants.CLIENT_THEMES_UPSELL, image: tmp5(tmp3[22]) };
   const CLIENT_THEMES = tmp2(tmp3[16]).EntitlementFeatureNames.CLIENT_THEMES;
-  intl10 = tmp2(tmp3[21]).intl;
-  intl11 = tmp2(tmp3[21]).intl;
-  obj3[CLIENT_THEMES] = obj14;
-  const obj15 = { title: intl12.string(tmp2(tmp3[21]).t.TYFwcy), description: intl13.string(tmp2(tmp3[21]).t.HDt8ip), analyticsPage: constants3.PREMIUM_UPSELL_APP_ICONS, upsellType: constants.APP_ICON_UPSELL, image: tmp5(tmp3[24]) };
+  intl10 = tmp2(tmp3[19]).intl;
+  intl11 = tmp2(tmp3[19]).intl;
+  obj3[CLIENT_THEMES] = obj12;
+  const obj13 = { title: intl12.string(tmp2(tmp3[19]).t.TYFwcy), description: intl13.string(tmp2(tmp3[19]).t.HDt8ip), analyticsPage: constants3.PREMIUM_UPSELL_APP_ICONS, upsellType: constants.APP_ICON_UPSELL, image: tmp5(tmp3[23]) };
   const APP_ICONS = tmp2(tmp3[16]).EntitlementFeatureNames.APP_ICONS;
-  intl12 = tmp2(tmp3[21]).intl;
-  intl13 = tmp2(tmp3[21]).intl;
-  obj3[APP_ICONS] = obj15;
-  const obj16 = { title: intl14.formatToPlainString(tmp2(tmp3[21]).t.GNoaxo, obj17), showBetaBadge: true, description: closure_18(closure_19, obj18), analyticsPage: constants3.PREMIUM_UPSELL_SCHEDULED_MESSAGES, upsellType: constants.SCHEDULED_MESSAGES_MODAL_UPSELL, illustration: closure_18(tmp2(tmp3[28]).NitroScheduleMessageSpotIllustration, { width: 198, height: 132, accessible: false }) };
+  intl12 = tmp2(tmp3[19]).intl;
+  intl13 = tmp2(tmp3[19]).intl;
+  obj3[APP_ICONS] = obj13;
+  const obj14 = { title: intl14.formatToPlainString(tmp2(tmp3[19]).t.GNoaxo, obj15), showBetaBadge: true, description: closure_18(closure_19, obj16), analyticsPage: constants3.PREMIUM_UPSELL_SCHEDULED_MESSAGES, upsellType: constants.SCHEDULED_MESSAGES_MODAL_UPSELL, illustration: closure_18(tmp2(tmp3[27]).NitroScheduleMessageSpotIllustration, { width: 198, height: 132, accessible: false }) };
   const SCHEDULED_MESSAGES = tmp2(tmp3[16]).EntitlementFeatureNames.SCHEDULED_MESSAGES;
-  intl14 = tmp2(tmp3[21]).intl;
-  obj17 = { premiumMax };
-  obj18 = { children: intl15.format(tmp2(tmp3[21]).t["1kFyto"], obj19) };
-  intl15 = tmp2(tmp3[21]).intl;
-  obj19 = {
+  intl14 = tmp2(tmp3[19]).intl;
+  obj15 = { premiumMax };
+  obj16 = { children: intl15.format(tmp2(tmp3[19]).t["1kFyto"], obj17) };
+  intl15 = tmp2(tmp3[19]).intl;
+  obj17 = {
     premiumMax,
     onClick() {
-      const obj = analyticsLocations(useTier0UpsellContent[25]);
-      obj.hideActionSheet(legacyProps(useTier0UpsellContent[26]).PREMIUM_UPSELL_ACTION_SHEET_KEY);
-      const obj2 = legacyProps(useTier0UpsellContent[27]);
+      const obj = analyticsLocations(useTier0UpsellContent[24]);
+      obj.hideActionSheet(legacyProps(useTier0UpsellContent[25]).PREMIUM_UPSELL_ACTION_SHEET_KEY);
+      const obj2 = legacyProps(useTier0UpsellContent[26]);
       const result = obj2.showScheduledMessagesModal();
     }
   };
-  obj3[SCHEDULED_MESSAGES] = obj16;
-  const obj20 = { title: intl16.string(tmp2(tmp3[21]).t.ETZQx5), description: intl17.formatToPlainString(tmp2(tmp3[21]).t["4nlpei"], obj21), analyticsPage: constants3.PREMIUM_UPSELL_STREAM_HIGH_QUALITY, upsellType: constants.STREAM_QUALITY_UPSELL, image: tmp5(tmp3[29]), imageGradientBackground: obj22 };
+  obj3[SCHEDULED_MESSAGES] = obj14;
+  const obj18 = { title: intl16.string(tmp2(tmp3[19]).t.ETZQx5), description: intl17.formatToPlainString(tmp2(tmp3[19]).t["4nlpei"], obj19), analyticsPage: constants3.PREMIUM_UPSELL_STREAM_HIGH_QUALITY, upsellType: constants.STREAM_QUALITY_UPSELL, image: tmp5(tmp3[28]), imageGradientBackground: obj20 };
   const STREAM_HIGH_QUALITY = tmp2(tmp3[16]).EntitlementFeatureNames.STREAM_HIGH_QUALITY;
-  intl16 = tmp2(tmp3[21]).intl;
-  intl17 = tmp2(tmp3[21]).intl;
-  obj21 = { fps: ApplicationStreamFPS.FPS_60 };
-  obj22 = { colors: items3, start: tmp2(tmp3[30]).HorizontalGradient.START, end: tmp2(tmp3[30]).HorizontalGradient.END };
+  intl16 = tmp2(tmp3[19]).intl;
+  intl17 = tmp2(tmp3[19]).intl;
+  obj19 = { fps: ApplicationStreamFPS.FPS_60 };
+  obj20 = { colors: items3, start: tmp2(tmp3[29]).HorizontalGradient.START, end: tmp2(tmp3[29]).HorizontalGradient.END };
   items3 = [token, token1];
-  obj3[STREAM_HIGH_QUALITY] = obj20;
-  closure_4 = tmp27;
+  obj3[STREAM_HIGH_QUALITY] = obj18;
+  closure_4 = tmp25;
   const items4 = [AccessibilityStore];
-  const tmp2Result28 = tmp2(tmp3[35]);
-  const stateFromStores3 = tmp2Result28.useStateFromStores(items4, () => useReducedMotion.useReducedMotion);
-  const tmp2Result29 = tmp2(tmp3[19]);
-  let result = tmp2Result29.isEmojiPickerUpsellFeature(featureName);
-  if (!result) {
-    const tmp2Result30 = tmp2(tmp3[41]);
-    result = tmp2Result30.getMobileStickerPickerUpsellRestyleEnabledForFeature(featureName, "native.PremiumUpsellActionSheet");
-  }
   const items5 = [obj3[featureName], analyticsLocations, useTier0UpsellContent, legacyProps];
+  const tmp2Result25 = tmp2(tmp3[35]);
+  const stateFromStores3 = tmp2Result25.useStateFromStores(items4, () => useReducedMotion.useReducedMotion);
   const effect = onViewAllPerks.useEffect(() => {
     let analyticsPage;
     let obj2;
@@ -334,61 +321,62 @@ export default function PremiumUpsellActionSheet(analyticsLocations) {
     }
     track(PREMIUM_UPSELL_VIEWED, obj);
   }, items5);
-  const tmp31 = tmp5(tmp3[43])(useTier0UpsellContent, onViewAllPerks, obj3[featureName].analyticsPage, undefined, tmp7);
-  const loading = tmp31.loading;
+  const tmp28 = tmp5(tmp3[42])(useTier0UpsellContent, onViewAllPerks, obj3[featureName].analyticsPage, undefined, tmp7);
+  const loading = tmp28.loading;
   [][0] = onViewAllPerks;
-  const onPress = tmp31.onPress;
-  let tmp26Result2 = null;
+  const onPress = tmp28.onPress;
+  let tmp24Result2 = null;
   if (null != obj3[featureName]) {
-    const obj23 = { startExpanded: true, onDismiss, children: closure_20(closure_4, obj31) };
-    const obj24 = { pageConfig: obj3[featureName], styles: tmp, useReducedMotion: stateFromStores3 };
-    const ActionSheet = tmp2(tmp3[45]).ActionSheet;
-    const items6 = [closure_18(PremiumUpsellHero, obj24), , ];
-    let tmp26Result = null;
-    const obj25 = { style: tmp.textContainer, children: items7 };
+    const obj21 = { startExpanded: true, onDismiss, children: closure_20(closure_4, obj29) };
+    const obj22 = { pageConfig: obj3[featureName], styles: tmp, useReducedMotion: stateFromStores3 };
+    const ActionSheet = tmp2(tmp3[44]).ActionSheet;
+    const items6 = [closure_18(PremiumUpsellHero, obj22), , ];
+    let tmp24Result = null;
+    const obj23 = { style: tmp.textContainer, children: items7 };
     if (true === obj3[featureName].showBetaBadge) {
-      const obj26 = { size: tmp2(tmp3[46]).BetaSizes.SMALL, gradient: true, style: tmp.betaTag };
-      const tmp5Result = tmp5(tmp3[46]);
-      tmp26Result = tmp26(tmp5Result, obj26);
+      const obj24 = { size: tmp2(tmp3[45]).BetaSizes.SMALL, gradient: true, style: tmp.betaTag };
+      const tmp5Result = tmp5(tmp3[45]);
+      tmp24Result = tmp24(tmp5Result, obj24);
     }
-    items7 = [tmp26Result, , ];
-    const obj27 = { style: tmp.text, variant: "heading-lg/extrabold", accessibilityRole: "header", children: obj3[featureName].title };
-    items7[1] = closure_18(tmp2(tmp3[47]).Text, obj27);
-    const obj28 = { style: items8, variant: "text-sm/normal", children: obj3[featureName].description };
+    items7 = [tmp24Result, , ];
+    const obj25 = { style: tmp.text, variant: "heading-lg/semibold", accessibilityRole: "header", children: obj3[featureName].title };
+    items7[1] = closure_18(tmp2(tmp3[46]).Text, obj25);
+    const obj26 = { style: items8, variant: "body-sm/normal", children: obj3[featureName].description };
     items8 = [, ];
     ({ text: arr10[0], description: arr10[1] } = tmp);
-    items7[2] = closure_18(tmp2(tmp3[47]).Text, obj28);
-    items6[1] = closure_20(closure_4, obj25);
-    const obj29 = { style: tmp.buttonContainer, children: items9 };
-    const obj30 = { loading, onPress: tmp39, text: mobileRoadblockButtonText, icon: tmp5(tmp3[49]), variant: str3 };
-    tmp39 = null;
-    const Button = tmp2(tmp3[48]).Button;
+    items7[2] = closure_18(tmp2(tmp3[46]).Text, obj26);
+    items6[1] = closure_20(closure_4, obj23);
+    const obj27 = { style: tmp.buttonContainer, children: items9 };
+    const obj28 = { loading, onPress: tmp36, text: mobileRoadblockButtonText, icon: tmp5(tmp3[48]), variant: str2 };
+    tmp36 = null;
+    const Button = tmp2(tmp3[47]).Button;
     if (!loading) {
-      tmp39 = onPress;
+      tmp36 = onPress;
     }
     if (useTier0UpsellContent) {
-      const intl19 = tmp2(tmp3[21]).intl;
-      mobileRoadblockButtonText = intl19.string(tmp2(tmp3[21]).t.cM8bbx);
+      const intl19 = tmp2(tmp3[19]).intl;
+      mobileRoadblockButtonText = intl19.string(tmp2(tmp3[19]).t.cM8bbx);
     } else if (mobileRoadblockButtonText == null) {
-      const intl18 = tmp2(tmp3[21]).intl;
-      mobileRoadblockButtonText = intl18.string(tmp2(tmp3[21]).t["8x0jKT"]);
+      const intl18 = tmp2(tmp3[19]).intl;
+      mobileRoadblockButtonText = intl18.string(tmp2(tmp3[19]).t["8x0jKT"]);
     }
-    str3 = "primary";
-    if (result) {
-      let str4 = "experimental_premium-primary";
+    str2 = "primary";
+    const tmp2Result26 = tmp2(tmp3[30]);
+    if (tmp2Result26.isExpressionPickerUpsellFeature(featureName)) {
+      let str3 = "experimental_premium-primary";
       if (useTier0UpsellContent) {
-        str4 = "experimental_premium-basic";
+        str3 = "experimental_premium-basic";
       }
-      str3 = str4;
+      str2 = str3;
     }
-    obj31 = { children: items6 };
-    items9 = [closure_18(Button, obj30), ];
-    const obj32 = { variant: "secondary", text: intl20.string(tmp2(tmp3[21]).t.PcTCB7), onPress: tmp32 };
-    const Button2 = tmp2(tmp3[48]).Button;
-    intl20 = tmp2(tmp3[21]).intl;
-    items9[1] = closure_18(Button2, obj32);
-    items6[2] = closure_20(closure_4, obj29);
-    tmp26Result2 = tmp26(ActionSheet, obj23);
+    obj29 = { children: items6 };
+    items9 = [closure_18(Button, obj28), ];
+    const obj30 = { variant: "secondary", text: intl20.string(tmp2(tmp3[19]).t.PcTCB7), onPress: tmp29 };
+    const Button2 = tmp2(tmp3[47]).Button;
+    intl20 = tmp2(tmp3[19]).intl;
+    items9[1] = closure_18(Button2, obj30);
+    items6[2] = closure_20(closure_4, obj27);
+    tmp24Result2 = tmp24(ActionSheet, obj21);
   }
-  return tmp26Result2;
+  return tmp24Result2;
 };

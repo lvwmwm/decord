@@ -1,17 +1,17 @@
-// Module ID: 11697
-// Function ID: 11698
+// Module ID: 11860
+// Function ID: 11861
 // Name: handleJoinEmbeddedActivity
-// Dependencies: [5, 2038, 4863, 4917, 1383, 4862, 2018, 5677, 4935, 11698, 11740, 11739, 5678, 11750, 8961, 13185, 11726, 2]
+// Dependencies: [5, 2162, 4989, 5043, 1385, 4988, 2142, 5801, 5061, 11861, 11903, 11902, 5802, 11913, 9040, 13409, 11889, 2]
 // Exports: default
 
-// Module 11697 (handleJoinEmbeddedActivity)
-import Constants from "Constants" /* 2018 */;
+// Module 11860 (handleJoinEmbeddedActivity)
+import Constants from "Constants" /* 2142 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationStore from "ApplicationStore" /* 2038 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4917 */;
-import UserStore from "UserStore" /* 1383 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4862 */;
+import ApplicationStore from "ApplicationStore" /* 2162 */;
+import ChannelStore from "ChannelStore" /* 4989 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5043 */;
+import UserStore from "UserStore" /* 1385 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4988 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -43,7 +43,7 @@ let obj = function _handleJoinEmbeddedActivityInternal() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

@@ -1,23 +1,23 @@
-// Module ID: 18624
-// Function ID: 18625
+// Module ID: 18985
+// Function ID: 18986
 // Name: SubscribeButton
-// Dependencies: [5, 32, 19, 17, 4917, 4939, 1072, 4870, 21, 17211, 504, 9910, 5624, 5959, 1113, 6944, 2042, 1187, 18618, 5258, 18625, 1994, 18614, 8632, 5634, 9976, 2]
+// Dependencies: [5, 32, 19, 17, 5043, 5065, 1072, 4996, 21, 17537, 504, 10032, 5751, 6091, 1113, 6999, 2166, 1187, 18979, 5374, 18986, 2118, 18975, 8703, 5758, 10098, 2]
 // Exports: default
 
-// Module 18624 (SubscribeButton)
+// Module 18985 (SubscribeButton)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
 import intl4 from "intl" /* 1113 */;
-import asyncRequire from "asyncRequire" /* 1994 */;
-import ChannelConstants from "ChannelConstants" /* 4870 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5959 */;
+import asyncRequire from "asyncRequire" /* 2118 */;
+import ChannelConstants from "ChannelConstants" /* 4996 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6091 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4917 */;
-import GuildRoleSubscriptionsStore from "GuildRoleSubscriptionsStore" /* 4939 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5043 */;
+import GuildRoleSubscriptionsStore from "GuildRoleSubscriptionsStore" /* 5065 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ let c1, c4, closure_2;
 let closure_12;
 let map1;
 function emphasisHook(children) {
-  const obj = { variant: "text-xs/semibold", color: "text-default", children };
+  const obj = { variant: "body-xs/semibold", color: "text-default", children };
   return authStore2(Text_Text.Text, obj);
 }
 function SwitchTiersButton(activeSubscription) {
@@ -37,13 +37,13 @@ function SwitchTiersButton(activeSubscription) {
   activeSubscription = activeSubscription.activeSubscription;
   const activeListingId = activeSubscription.activeListingId;
   const changeToListingId = activeSubscription.changeToListingId;
-  let obj = changeToListingId(17211);
+  let obj = changeToListingId(17537);
   const first = _slicedToArray(obj.useName(activeListingId), 1)[0];
   const obj3 = { children: items };
-  const obj2 = activeListingId(2042)(activeSubscription.currentPeriodEnd);
-  const obj4 = { variant: "text-xs/normal", color: "text-muted", children: intl.format(activeSubscription(1113).t.lA7ztO, obj5) };
+  const obj2 = activeListingId(2166)(activeSubscription.currentPeriodEnd);
+  const obj4 = { variant: "body-xs/normal", color: "text-muted", children: intl.format(activeSubscription(1113).t.lA7ztO, obj5) };
   const formatResult = obj2.format("MMMM Do");
-  const Text = activeSubscription(5624).Text;
+  const Text = activeSubscription(5751).Text;
   intl = activeSubscription(1113).intl;
   obj5 = { activeListingName: first, billingEndDate: formatResult, emphasisHook };
   items = [closure_12(Text, obj4), closure_12(activeSubscription(1187).Spacer, { size: 16 }), ];
@@ -53,11 +53,11 @@ function SwitchTiersButton(activeSubscription) {
       const openLazy = ActionSheetActionCreatorsDefault.openLazy;
       ActionSheetActionCreatorsDefault;
       const obj = { activeSubscription, activeListingId, changeToListingId };
-      const tmp2 = asyncRequire(18625, dependencyMap.paths);
+      const tmp2 = asyncRequire(18986, dependencyMap.paths);
       openLazy(tmp2, "ChangeSubscriptionCard:" + changeToListingId, obj);
     }
   };
-  const ArrowButton = activeSubscription(18618).ArrowButton;
+  const ArrowButton = activeSubscription(18979).ArrowButton;
   intl2 = activeSubscription(1113).intl;
   items[2] = closure_12(ArrowButton, obj6);
   return closure_13(View, obj3);
@@ -129,7 +129,7 @@ export default function SubscribeButton(listingId) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -169,7 +169,7 @@ export default function SubscribeButton(listingId) {
           c3 = 0;
           closure_128_1(false);
           c4 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp19) {
         closure_2 = tmp19;

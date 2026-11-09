@@ -1,19 +1,19 @@
-// Module ID: 7558
-// Function ID: 7559
+// Module ID: 7630
+// Function ID: 7631
 // Name: HeaderActionButton
-// Dependencies: [19, 1191, 21, 5014, 575, 5624, 5640, 5636, 6980, 2]
+// Dependencies: [19, 1191, 21, 5140, 575, 5751, 5764, 5760, 7043, 2]
 // Exports: HeaderActionButton
 
-// Module 7558 (HeaderActionButton)
+// Module 7630 (HeaderActionButton)
 import nativeDefault from "native" /* 575 */;
 import FormConstants from "FormConstants" /* 1191 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import IconDefault from "Icon" /* 5636 */;
-import ButtonConstants from "ButtonConstants" /* 5640 */;
-import Pressables from "Pressables" /* 6980 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import IconDefault from "Icon" /* 5760 */;
+import ButtonConstants from "ButtonConstants" /* 5764 */;
+import Pressables from "Pressables" /* 7043 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -54,7 +54,7 @@ export function HeaderActionButton(arg0) {
   ({ style, textStyle, imageStyle, accessibilityHint, accessibilityActions, onAccessibilityAction, icon, IconComponentSize, onPress, foregroundRipple, iconSize, hitSlop, ref } = arg0);
   const tmp = closure_6();
   if (null != text) {
-    const obj2 = { style: items, variant: "text-md/semibold", lineClamp: 1, maxFontSizeMultiplier: ButtonConstants.BUTTON_DEFAULT_MAX_FONT_SIZE_MULTIPLIER, children: text };
+    const obj2 = { style: items, variant: "body-md/semibold", lineClamp: 1, maxFontSizeMultiplier: ButtonConstants.BUTTON_DEFAULT_MAX_FONT_SIZE_MULTIPLIER, children: text };
     items = [, , ];
     ({ text: arr[0], buttonFont: arr[1] } = tmp);
     items[2] = textStyle;

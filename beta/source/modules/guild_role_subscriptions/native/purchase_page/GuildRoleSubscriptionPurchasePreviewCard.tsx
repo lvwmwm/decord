@@ -1,26 +1,25 @@
-// Module ID: 18622
-// Function ID: 18623
+// Module ID: 18983
+// Function ID: 18984
 // Name: GuildRoleSubscriptionPurchasePreviewCard
-// Dependencies: [32, 19, 17, 4863, 21, 5014, 575, 7148, 5624, 5258, 18623, 1994, 17225, 1187, 504, 5652, 1113, 8603, 17211, 18618, 5717, 18624, 17222, 2]
+// Dependencies: [32, 19, 17, 4989, 21, 5140, 575, 5751, 5374, 18984, 2118, 17551, 1187, 504, 5776, 1113, 8674, 17537, 18979, 5842, 18985, 17548, 2]
 // Exports: default
 
-// Module 18622 (GuildRoleSubscriptionPurchasePreviewCard)
+// Module 18983 (GuildRoleSubscriptionPurchasePreviewCard)
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import asyncRequire from "asyncRequire" /* 1994 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import useChannelNameDefault from "useChannelName" /* 5652 */;
-import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7148 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 17211 */;
-import EmojiIconDefault from "EmojiIcon" /* 17225 */;
+import asyncRequire from "asyncRequire" /* 2118 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import useChannelNameDefault from "useChannelName" /* 5776 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 17537 */;
+import EmojiIconDefault from "EmojiIcon" /* 17551 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
+import ChannelStore from "ChannelStore" /* 4989 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 let c10;
@@ -39,21 +38,12 @@ let size2;
 function ContentHeader(arg0) {
   let count;
   let items;
-  let items1;
   let title;
   ({ count, title } = arg0);
-  const tmp = closure_11();
-  const obj = useTypeConsolidationTextTransform;
-  const typeConsolidationEyebrow = obj.useTypeConsolidationEyebrow("PurchasePreviewCard", "text-xs/bold");
-  const obj2 = { variant: typeConsolidationEyebrow.variant, color: "text-muted", style: items, children: items1 };
-  items = [tmp.contentHeader, typeConsolidationEyebrow.style];
+  const obj = { variant: "body-sm/medium", color: "text-muted", children: items };
   const Text = Text_Text.Text;
-  items1 = [, , ];
-  const obj3 = { variant: typeConsolidationEyebrow.variant, color: "text-default", style: tmp.contentHeader, children: count };
-  items1[0] = metroImportAll(Text_Text.Text, obj3);
-  items1[1] = " ";
-  items1[2] = title;
-  return React4(Text, obj2);
+  items = [metroImportAll(Text_Text.Text, { variant: "body-sm/medium", color: "text-default", children: count }), " ", title];
+  return React4(Text, obj);
 }
 function Separator() {
   const obj = { style: closure_11().separator };
@@ -81,7 +71,7 @@ function EmojiGallery(arg0) {
   let tmp5 = diff > 0;
   if (tmp5) {
     const obj2 = { style: tmp.emojiTruncatedContainer, children: closure_9(Text_Text.Text, obj3) };
-    obj3 = { variant: "text-sm/bold", color: "text-default", children: items1 };
+    obj3 = { variant: "body-sm/semibold", color: "text-default", children: items1 };
     items1 = ["+", diff];
     tmp5 = closure_8(tmp4, obj2);
   }
@@ -96,7 +86,7 @@ function BenefitShowCase(arg0) {
   let tmp3 = title;
   const tmp2 = metroRequire;
   if (typeof title === "string") {
-    const obj2 = { variant: "text-md/semibold", color: "text-default", children: title };
+    const obj2 = { variant: "body-md/semibold", color: "text-default", children: title };
     tmp3 = metroImportAll(Text_Text.Text, obj2);
   }
   const children = [tmp3, ];
@@ -104,7 +94,7 @@ function BenefitShowCase(arg0) {
   if (tmpResult) {
     const obj = { children: items1 };
     items1 = [metroImportAll(native.Spacer, { size: 2 }), ];
-    const obj3 = { variant: "text-sm/medium", color: "interactive-text-default", children: description };
+    const obj3 = { variant: "body-sm/medium", color: "interactive-text-default", children: description };
     items1[1] = metroImportAll(Text_Text.Text, obj3);
     tmpResult = tmp(authStore, obj);
   }
@@ -127,10 +117,10 @@ function ChannelBenefitShowCase(channelId) {
     const obj2 = { style: { flexDirection: "row", alignItems: "center" }, children: items2 };
     const obj3 = { size: channelId(1187).Icon.Sizes.REFRESH_SMALL_16, source: tmpResult.getChannelIcon(stateFromStores) };
     const Icon = tmp(1187).Icon;
-    tmpResult = channelId(8603);
+    tmpResult = channelId(8674);
     items2 = [closure_8(Icon, obj3), closure_8(channelId(1187).Spacer, { size: 4 }), ];
-    const obj4 = { variant: "text-md/semibold", color: "text-default", children: tmp4 };
-    items2[2] = closure_8(channelId(5624).Text, obj4);
+    const obj4 = { variant: "body-md/semibold", color: "text-default", children: tmp4 };
+    items2[2] = closure_8(channelId(5751).Text, obj4);
     title = closure_9(closure_6, obj2);
   }
   return closure_8(BenefitShowCase, { title, description });
@@ -143,7 +133,7 @@ function ShowAllButton(onPress) {
   const tmp = closure_11();
   const obj = { onPress, style: tmp.showAllButton, activeOpacity: 0.5, children: React4(metroRequire, obj2) };
   obj2 = { children: items };
-  const obj3 = { variant: "text-sm/semibold", color: "interactive-text-hover", style: { marginTop: -1 }, children: intl.string(intl4.t["hub6t/"]) };
+  const obj3 = { variant: "body-sm/semibold", color: "interactive-text-hover", style: { marginTop: -1 }, children: intl.string(intl4.t["hub6t/"]) };
   const Text = Text_Text.Text;
   intl = intl4.intl;
   items = [metroImportAll(Text, obj3), metroImportAll(native.Spacer, { size: 3 }), ];
@@ -154,7 +144,7 @@ function ShowAllButton(onPress) {
 ({ TouchableOpacity: hasOwnProperty, View: metroRequire } = react_native);
 ({ jsx: metroImportAll, jsxs: c9, Fragment: c10 } = Fragment);
 let createStyles = createStyles_mod;
-let obj = { container: obj2, header: obj3, image: size, separator: size1, contentContainer: obj4, contentHeader: { textTransform: "uppercase" }, emojiGallery: { flexDirection: "row", gap: 18 }, emojiTruncatedContainer: size2, showAllButton: obj5, showAllButtonUnderline: rect };
+let obj = { container: obj2, header: obj3, image: size, separator: size1, contentContainer: obj4, emojiGallery: { flexDirection: "row", gap: 18 }, emojiTruncatedContainer: size2, showAllButton: obj5, showAllButtonUnderline: rect };
 obj2 = { padding: 16, borderRadius: nativeDefault.radii.md, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_NORMAL };
 createStyles = createStyles.createStyles;
 obj3 = { flexDirection: "row", gap: nativeDefault.space.PX_16 };
@@ -202,10 +192,10 @@ export default function GuildRoleSubscriptionPurchasePreviewCard(listingId) {
   size = first1.size;
   const obj7 = { style: tmp2.container, children: items2 };
   const obj8 = { style: tmp2.header, children: items };
-  const obj6 = listingId(18618);
+  const obj6 = listingId(18979);
   const formattedSubscriptionPlan = obj6.useFormattedSubscriptionPlan(listingId);
   const tmp13 = guildId;
-  const tmp14 = guildId(5717);
+  const tmp14 = guildId(5842);
   if (str == null) {
     str = "";
   }
@@ -213,15 +203,15 @@ export default function GuildRoleSubscriptionPurchasePreviewCard(listingId) {
   const obj9 = { source: { uri: str }, style: tmp2.image };
   items[0] = closure_8(tmp14, obj9);
   const obj10 = { children: items1 };
-  items1 = [closure_8(listingId(5624).Text, { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: first }), closure_8(listingId(1187).Spacer, { size: 4 }), closure_8(listingId(5624).Text, { variant: "heading-md/medium", color: "text-default", children: formattedSubscriptionPlan })];
+  items1 = [closure_8(listingId(5751).Text, { variant: "heading-sm/semibold", color: "mobile-text-heading-primary", children: first }), closure_8(listingId(1187).Spacer, { size: 4 }), closure_8(listingId(5751).Text, { variant: "heading-sm/medium", color: "text-default", children: formattedSubscriptionPlan })];
   items[1] = closure_9(closure_6, obj10);
-  items2 = [closure_9(closure_6, obj8), closure_8(listingId(1187).Spacer, { size: 16 }), closure_8(tmp13(18624), { listingId }), ];
+  items2 = [closure_9(closure_6, obj8), closure_8(listingId(1187).Spacer, { size: 16 }), closure_8(tmp13(18985), { listingId }), ];
   let tmp10Result6 = length > 0 || size > 0 || length2 > 0;
   if (tmp10Result6) {
     const items3 = [closure_8(listingId(1187).Spacer, { size: 24 }), , ];
     const obj11 = { style: tmp2.contentContainer, children: closure_9(SeparatedList, obj12) };
     obj12 = { separator: closure_8(Separator, {}), children: items6 };
-    SeparatedList = tmp6(17222).SeparatedList;
+    SeparatedList = tmp6(17548).SeparatedList;
     let tmp10Result = null;
     const tmp16 = closure_10;
     if (size > 0) {
@@ -272,7 +262,7 @@ export default function GuildRoleSubscriptionPurchasePreviewCard(listingId) {
           const openLazy = ActionSheetActionCreatorsDefault.openLazy;
           ActionSheetActionCreatorsDefault;
           const obj = { listingId, guildId };
-          const tmp2 = asyncRequire(18623, dependencyMap.paths);
+          const tmp2 = asyncRequire(18984, dependencyMap.paths);
           openLazy(tmp2, "PurchaseCard:" + listingId, obj);
         }
     };

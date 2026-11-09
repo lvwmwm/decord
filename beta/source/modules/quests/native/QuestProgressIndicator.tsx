@@ -1,18 +1,18 @@
-// Module ID: 17105
-// Function ID: 17106
+// Module ID: 17432
+// Function ID: 17433
 // Name: QuestProgressIndicator
-// Dependencies: [19, 17, 5015, 21, 5095, 8031, 5014, 575, 504, 5254, 6980, 1113, 5618, 17051, 14692, 2]
+// Dependencies: [19, 17, 5141, 21, 1652, 8101, 5140, 575, 504, 5370, 7043, 1113, 5745, 17369, 14928, 2]
 
-// Module 17105 (QuestProgressIndicator)
+// Module 17432 (QuestProgressIndicator)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import timing from "timing" /* 5254 */;
-import inlineStyles from "inlineStyles" /* 8031 */;
+import timing_timing from "timing/timing" /* 5370 */;
+import inlineStyles from "inlineStyles" /* 8101 */;
 import react_mod from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5015 */;
+import AccessibilityStore from "AccessibilityStore" /* 5141 */;
 import Fragment from "Fragment" /* 21 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
-import createStyles from "createStyles" /* 5014 */;
+import module_1652 from "module_1652" /* 1652 */;
+import createStyles from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 let set;
@@ -28,7 +28,7 @@ react = react_mod;
 let View = react_native.View;
 ({ jsx: c9, jsxs: c10 } = Fragment);
 let closure_11 = ["#666777", "#535564"];
-let closure_12 = ReanimatedRexport.createAnimatedComponent(inlineStyles.Circle);
+let closure_12 = module_1652.createAnimatedComponent(inlineStyles.Circle);
 const QUEST_PROGRESS_DIAMETER_BY_SIZE = { "x-sm": 40, sm: 64, md: 70, "md-lg": 100, lg: 128 };
 let closure_14 = createStyles.createStyles((arg0) => {
   let items;
@@ -42,20 +42,19 @@ let closure_14 = createStyles.createStyles((arg0) => {
   rect = { backgroundColor: nativeDefault.colors.CARD_BACKGROUND_DEFAULT, position: "absolute", top: 0, left: 0, right: 0, bottom: 0, zIndex: 2 };
   return obj;
 });
-const __initData = { code: "function QuestProgressIndicatorTsx1(){const{glowOpacity}=this.__closure;return{shadowOpacity:glowOpacity.get()};}" };
-const __initData2 = { code: "function QuestProgressIndicatorTsx2(){const{circumference,animatedProgress}=this.__closure;return{strokeDashoffset:circumference-circumference*animatedProgress.get()};}" };
-const __initData3 = { code: "function QuestProgressIndicatorTsx3(){const{underlayOpacity,styles}=this.__closure;return{opacity:underlayOpacity.get(),...styles.opacityMask};}" };
+let closure_15 = { code: "(function QuestProgressIndicatorTsx1(){let[glowOpacity]=this.__closure;return{shadowOpacity:glowOpacity.get()};})" };
+let closure_16 = { code: "(function QuestProgressIndicatorTsx2(){let[circumference,animatedProgress]=this.__closure;return{strokeDashoffset:circumference-circumference*animatedProgress.get()};})" };
+let closure_17 = { code: "(function QuestProgressIndicatorTsx3(){let[underlayOpacity,styles]=this.__closure;return{opacity:underlayOpacity.get(),...styles.opacityMask};})" };
 const memoResult = react.memo(function QuestProgressIndicator(loading) {
   let LinearGradient;
   let PressableOpacity;
   let accessibilityLabel;
-  let closure_6;
   let formatToPlainStringResult;
-  let items5;
-  let items6;
-  let items7;
-  let items8;
-  let items9;
+  let items11;
+  let items12;
+  let items13;
+  let items14;
+  let items15;
   let obj3;
   let obj5;
   let obj9;
@@ -64,6 +63,14 @@ const memoResult = react.memo(function QuestProgressIndicator(loading) {
   let progress;
   let quest;
   let size2;
+  let tmp18;
+  let tmp19;
+  let tmp23;
+  let tmp24;
+  let tmp25;
+  let tmp27;
+  let tmp28;
+  let tmp29;
   let withAnimation;
   ({ quest, size, progress } = loading);
   let flag = loading.loading;
@@ -77,24 +84,24 @@ const memoResult = react.memo(function QuestProgressIndicator(loading) {
   ({ onPress, accessibilityLabel } = loading);
   let stateFromStores;
   let sharedValue1;
-  let closure_9;
+  let useReducedMotion;
   let sharedValue2;
   let ref;
   let tmp = progress;
   let tmp2 = stateFromStores;
   ({ withAnimation, paused } = loading);
   let obj = progress(stateFromStores[8]);
-  let items = [sharedValue1];
-  stateFromStores = obj.useStateFromStores(items, () => sharedValue1.useReducedMotion);
+  let items = [useReducedMotion];
+  stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
   const tmp4 = { "x-sm": 3, sm: 3, md: 3, "md-lg": 4, lg: 6 }[size];
   let closure_3 = tmp5;
   const tmp6 = { "x-sm": 1.6, sm: 1, md: 1.4, "md-lg": 1.5, lg: 1.6 }[size];
   const scale = tmp6;
-  const diff = tmp5 / 2 - tmp4 / 2;
-  let result = 2 * Math.PI * diff;
-  let c5 = result;
-  const tmp9 = closure_14(obj[size]);
-  react = tmp9;
+  let result = tmp5 / 2;
+  let result1 = tmp4 / 2;
+  const result2 = 2 * Math.PI;
+  const tmp10 = closure_14(obj[size]);
+  const confetti = tmp10;
   let obj2 = progress(stateFromStores[4]);
   const sharedValue = obj2.useSharedValue(progress);
   let num = 0;
@@ -109,7 +116,7 @@ const memoResult = react.memo(function QuestProgressIndicator(loading) {
   if (userStatus != null) {
     completedAt = userStatus.completedAt;
   }
-  closure_9 = tmp14;
+  useReducedMotion = tmp15;
   let num2 = 0;
   const useSharedValue2 = tmp(tmp2[4]).useSharedValue;
   tmp(tmp2[4]);
@@ -117,46 +124,62 @@ const memoResult = react.memo(function QuestProgressIndicator(loading) {
     num2 = 1;
   }
   sharedValue2 = useSharedValue2(num2);
+  const items1 = [closure_15, sharedValue2];
+  let c0;
+  [tmp18, tmp19] = items1;
+  const diff = result - result1;
+  const result3 = result2 * diff;
   const tmpResult4 = tmp(tmp2[4]);
-  class D {
+  class QuestProgressIndicatorTsx1 {
     constructor() {
-      const obj = { shadowOpacity: sharedValue2.get() };
+      const obj = { shadowOpacity: _undefined.get() };
       return obj;
     }
   }
-  D.__closure = { glowOpacity: sharedValue2 };
-  D.__workletHash = 17183837725505;
-  D.__initData = __initData;
-  const animatedStyle = tmpResult4.useAnimatedStyle(D);
+  const items2 = [tmp19];
+  QuestProgressIndicatorTsx1.__closure = items2;
+  QuestProgressIndicatorTsx1.__workletHash = 3121805679544;
+  QuestProgressIndicatorTsx1.__initData = tmp18;
+  const animatedStyle = tmpResult4.useAnimatedStyle(QuestProgressIndicatorTsx1);
+  const items3 = [closure_16, result3, sharedValue];
+  c0 = undefined;
+  let c1;
+  [tmp23, tmp24, tmp25] = items3;
   const tmpResult5 = tmp(tmp2[4]);
-  class E {
+  class QuestProgressIndicatorTsx2 {
     constructor() {
-      const obj = { strokeDashoffset: c5 - c5 * sharedValue.get() };
+      const obj = { strokeDashoffset: c0 - c0 * _undefined.get() };
       return obj;
     }
   }
-  E.__closure = { circumference: result, animatedProgress: sharedValue };
-  E.__workletHash = 17281152506254;
-  E.__initData = __initData2;
-  const animatedProps = tmpResult5.useAnimatedProps(E);
+  const items4 = [tmp24, tmp25];
+  QuestProgressIndicatorTsx2.__closure = items4;
+  QuestProgressIndicatorTsx2.__workletHash = 3809633407287;
+  QuestProgressIndicatorTsx2.__initData = tmp23;
+  const animatedProps = tmpResult5.useAnimatedProps(QuestProgressIndicatorTsx2);
+  const items5 = [closure_17, sharedValue1, tmp10];
+  c0 = undefined;
+  c1 = undefined;
+  [tmp27, tmp28, tmp29] = items5;
   const tmpResult6 = tmp(tmp2[4]);
-  class R {
+  class QuestProgressIndicatorTsx3 {
     constructor() {
-      const obj = { opacity: sharedValue1.get() };
-      const merged = Object.assign(closure_6.opacityMask);
+      const obj = { opacity: _undefined.get() };
+      const merged = Object.assign(_undefined2.opacityMask);
       return obj;
     }
   }
-  R.__closure = { underlayOpacity: sharedValue1, styles: tmp9 };
-  R.__workletHash = 4427598698568;
-  R.__initData = __initData3;
-  const items1 = [sharedValue, progress, stateFromStores];
-  const animatedStyle1 = tmpResult6.useAnimatedStyle(R);
+  const items6 = [tmp28, tmp29];
+  QuestProgressIndicatorTsx3.__closure = items6;
+  QuestProgressIndicatorTsx3.__workletHash = 14807344640177;
+  QuestProgressIndicatorTsx3.__initData = tmp27;
+  const items7 = [sharedValue, progress, stateFromStores];
+  const animatedStyle1 = tmpResult6.useAnimatedStyle(QuestProgressIndicatorTsx3);
   scale(() => {
     let num = 500;
     set = sharedValue.set;
-    const withTiming = timing.withTiming;
-    timing;
+    const withTiming = timing_timing.withTiming;
+    timing_timing;
     const tmp3 = progress;
     if (stateFromStores) {
       num = 0;
@@ -166,13 +189,13 @@ const memoResult = react.memo(function QuestProgressIndicator(loading) {
       const obj = progress(stateFromStores[4]);
       obj.cancelAnimation(sharedValue);
     };
-  }, items1);
-  const items2 = [sharedValue1, flag];
+  }, items7);
+  const items8 = [sharedValue1, flag];
   scale(() => {
     let num = 0;
     set = sharedValue1.set;
-    const withTiming = timing.withTiming;
-    timing;
+    const withTiming = timing_timing.withTiming;
+    timing_timing;
     if (flag) {
       num = 0.7;
     }
@@ -181,27 +204,27 @@ const memoResult = react.memo(function QuestProgressIndicator(loading) {
       const obj = progress(stateFromStores[4]);
       obj.cancelAnimation(sharedValue1);
     };
-  }, items2);
-  const tmp22 = c5(null);
-  ref = tmp22;
-  const items3 = [tmp9.confetti, tmp6, tmp5];
-  const items4 = [null != completedAt, sharedValue2, stateFromStores];
-  const tmp23 = closure_3(() => {
+  }, items8);
+  const tmp33 = confetti(null);
+  ref = tmp33;
+  const items9 = [tmp10.confetti, tmp6, tmp5];
+  const items10 = [null != completedAt, sharedValue2, stateFromStores];
+  const tmp34 = closure_3(() => {
     let items;
     const obj = { width: height, height, transform: items };
-    const merged = Object.assign(closure_6.confetti);
+    const merged = Object.assign(confetti.confetti);
     items = [];
     const obj2 = { scale };
     items[0] = obj2;
     return obj;
-  }, items3);
+  }, items9);
   scale(() => {
     const tmp = stateFromStores;
     if (!tmp) {
-      const tmp2 = closure_9;
+      const tmp2 = useReducedMotion;
       if (tmp2) {
         set = sharedValue2.set;
-        const obj = timing;
+        const obj = timing_timing;
         const result = set(obj.withTiming(1, { duration: 500 }));
         const current = ref.current;
         if (current != null) {
@@ -214,9 +237,9 @@ const memoResult = react.memo(function QuestProgressIndicator(loading) {
     if (current2 != null) {
       current2.reset();
     }
-  }, items4);
+  }, items10);
   if (null == onPress) {
-    PressableOpacity = react.Fragment;
+    PressableOpacity = sharedValue.Fragment;
   } else {
     PressableOpacity = tmp(tmp2[10]).PressableOpacity;
   }
@@ -226,12 +249,12 @@ const memoResult = react.memo(function QuestProgressIndicator(loading) {
   } else {
     obj3 = { onPress };
   }
-  const obj4 = { children: sharedValue2(View, obj5) };
+  const obj4 = { children: ref(View, obj5) };
   let merged = Object.assign(obj3);
-  obj5 = { style: items5, accessible: true, accessibilityRole: "progressbar", accessibilityLabel: formatToPlainStringResult, accessibilityValue: { min: 0, max: 100, now: rounded }, children: items6 };
-  items5 = [, , ];
-  ({ wrapper: arr6[0], completionGlow: arr6[1] } = tmp9);
-  items5[2] = animatedStyle;
+  obj5 = { style: items11, accessible: true, accessibilityRole: "progressbar", accessibilityLabel: formatToPlainStringResult, accessibilityValue: { min: 0, max: 100, now: rounded }, children: items12 };
+  items11 = [, , ];
+  ({ wrapper: arr12[0], completionGlow: arr12[1] } = tmp10);
+  items11[2] = animatedStyle;
   formatToPlainStringResult = accessibilityLabel;
   View = flag(tmp2[4]).View;
   if (accessibilityLabel == null) {
@@ -239,37 +262,37 @@ const memoResult = react.memo(function QuestProgressIndicator(loading) {
     const obj6 = { percent: rounded };
     formatToPlainStringResult = intl.formatToPlainString(tmp(tmp2[11]).t.Gj8Jqn, obj6);
   }
-  items6 = [closure_9(flag(tmp2[4]).View, { style: animatedStyle1 }), ];
-  const size1 = { height: tmp5, width: tmp5, style: tmp9.canvas, children: items8 };
-  const obj7 = { style: tmp9.container, children: items9 };
+  items12 = [sharedValue2(flag(tmp2[4]).View, { style: animatedStyle1 }), ];
+  const size1 = { height: tmp5, width: tmp5, style: tmp10.canvas, children: items14 };
+  const obj7 = { style: tmp10.container, children: items15 };
   const Svg = tmp(tmp2[5]).Svg;
-  const obj8 = { children: sharedValue2(LinearGradient, obj9) };
+  const obj8 = { children: ref(LinearGradient, obj9) };
   const Defs = tmp(tmp2[5]).Defs;
-  obj9 = { id: "underlayGradient", x1: "0", y1: "0.5", x2: "1", y2: "0.5", children: items7 };
+  obj9 = { id: "underlayGradient", x1: "0", y1: "0.5", x2: "1", y2: "0.5", children: items13 };
   LinearGradient = tmp(tmp2[5]).LinearGradient;
-  items7 = [, ];
-  const obj10 = { offset: "0", stopColor: ref[0] };
-  items7[0] = closure_9(tmp(tmp2[5]).Stop, obj10);
-  const obj11 = { offset: "1", stopColor: ref[1] };
-  items7[1] = closure_9(tmp(tmp2[5]).Stop, obj11);
-  items8 = [closure_9(Defs, obj8), , ];
+  items13 = [, ];
+  const obj10 = { offset: "0", stopColor: closure_11[0] };
+  items13[0] = sharedValue2(tmp(tmp2[5]).Stop, obj10);
+  const obj11 = { offset: "1", stopColor: closure_11[1] };
+  items13[1] = sharedValue2(tmp(tmp2[5]).Stop, obj11);
+  items14 = [sharedValue2(Defs, obj8), , ];
   const obj12 = { cx: obj[size] / 2, cy: obj[size] / 2, r: diff, fill: "none", stroke: "url(#underlayGradient)", strokeWidth: tmp4 };
-  items8[1] = closure_9(tmp(tmp2[5]).Circle, obj12);
-  const obj13 = { cx: obj[size] / 2, cy: obj[size] / 2, r: diff, fill: "none", stroke: tmp9.progressPath.color, strokeWidth: tmp4, strokeDasharray: result, strokeLinecap: "round", animatedProps };
-  items8[2] = closure_9(closure_12, obj13);
-  items9 = [sharedValue2(Svg, size1), , ];
-  let tmp27Result = null;
+  items14[1] = sharedValue2(tmp(tmp2[5]).Circle, obj12);
+  const obj13 = { cx: obj[size] / 2, cy: obj[size] / 2, r: diff, fill: "none", stroke: tmp10.progressPath.color, strokeWidth: tmp4, strokeDasharray: result3, strokeLinecap: "round", animatedProps };
+  items14[2] = sharedValue2(closure_12, obj13);
+  items15 = [ref(Svg, size1), , ];
+  let tmp38Result = null;
   if (flag2) {
-    const obj14 = { ref: tmp22, style: tmp23, source: tmp(tmp2[13]), autoPlay: false, loop: false };
-    const tmp30Result = flag(tmp2[12]);
-    tmp27Result = tmp27(tmp30Result, obj14);
+    const obj14 = { ref: tmp33, style: tmp34, source: tmp(tmp2[13]), autoPlay: false, loop: false };
+    const tmp41Result = flag(tmp2[12]);
+    tmp38Result = tmp38(tmp41Result, obj14);
   }
-  items9[1] = tmp27Result;
-  const obj15 = { style: tmp9.imageContainer, children: closure_9(flag(tmp2[14]), size2) };
+  items15[1] = tmp38Result;
+  const obj15 = { style: tmp10.imageContainer, children: sharedValue2(flag(tmp2[14]), size2) };
   size2 = { quest, height: 0.78 * tmp5, width: 0.78 * tmp5, withAnimation, paused, accessibilityLabelPrefix: accessibilityLabel };
-  items9[2] = closure_9(sharedValue, obj15);
-  items6[1] = sharedValue2(sharedValue, obj7);
-  return closure_9(PressableOpacity, obj4);
+  items15[2] = sharedValue2(sharedValue1, obj15);
+  items12[1] = ref(sharedValue1, obj7);
+  return sharedValue2(PressableOpacity, obj4);
 });
 let size = size_mod;
 let result = size.fileFinishedImporting("modules/quests/native/QuestProgressIndicator.tsx");

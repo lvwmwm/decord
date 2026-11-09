@@ -1,16 +1,16 @@
-// Module ID: 16772
-// Function ID: 16773
+// Module ID: 17095
+// Function ID: 17096
 // Name: FamilyCenterParentalConsentNotice
-// Dependencies: [19, 21, 5014, 575, 16764, 16765, 5709, 5624, 16773, 1113, 2538, 2]
+// Dependencies: [19, 21, 5140, 575, 17087, 17088, 5834, 5751, 17096, 1113, 2664, 2]
 // Exports: default
 
-// Module 16772 (FamilyCenterParentalConsentNotice)
+// Module 17095 (FamilyCenterParentalConsentNotice)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import FamilyCenterInlineWarningNoticeDefault from "FamilyCenterInlineWarningNotice" /* 16773 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import FamilyCenterInlineWarningNoticeDefault from "FamilyCenterInlineWarningNotice" /* 17096 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -48,7 +48,7 @@ export default function FamilyCenterParentalConsentNotice() {
     if (null != daysRemaining) {
       if (daysRemaining >= 0) {
         function learnMoreHook(children, arg1) {
-          return jsx(Text_Text.Text, { variant: "text-sm/medium", color: "text-strong", style: link.link, accessibilityRole: "link", onPress, children }, arg1);
+          return jsx(Text_Text.Text, { variant: "body-sm/medium", color: "text-strong", style: link.link, accessibilityRole: "link", onPress, children }, arg1);
         }
         const obj3 = { style: tmp.container, text: formatResult };
         const tmp10 = FamilyCenterInlineWarningNoticeDefault;
@@ -56,11 +56,11 @@ export default function FamilyCenterParentalConsentNotice() {
         if (0 === daysRemaining) {
           const intl2 = tmp2(1113).intl;
           const obj4 = { learnMoreHook };
-          formatResult = intl2.format(tmp9(2538).S5kmfO, obj4);
+          formatResult = intl2.format(tmp9(2664).S5kmfO, obj4);
         } else {
           const intl = tmp2(1113).intl;
           const obj5 = { count: daysRemaining, learnMoreHook };
-          formatResult = intl.format(tmp9(2538)["5jm+T3"], obj5);
+          formatResult = intl.format(tmp9(2664)["5jm+T3"], obj5);
         }
         return tmp8(tmp10, obj3);
       }

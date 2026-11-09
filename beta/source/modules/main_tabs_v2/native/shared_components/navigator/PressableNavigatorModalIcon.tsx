@@ -1,13 +1,13 @@
-// Module ID: 9819
-// Function ID: 9820
+// Module ID: 9909
+// Function ID: 9910
 // Name: PressableNavigatorModalIcon
-// Dependencies: [21, 9815, 9812, 9816, 9820, 1113, 2]
+// Dependencies: [21, 9905, 9902, 9906, 9910, 1113, 2]
 // Exports: default
 
-// Module 9819 (PressableNavigatorModalIcon)
+// Module 9909 (PressableNavigatorModalIcon)
 import Fragment from "Fragment" /* 21 */;
-import HeaderShared from "HeaderShared" /* 9812 */;
-import PressableNavigatorButtonWrapperDefault from "PressableNavigatorButtonWrapper" /* 9815 */;
+import HeaderShared from "HeaderShared" /* 9902 */;
+import PressableNavigatorButtonWrapperDefault from "PressableNavigatorButtonWrapper" /* 9905 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
@@ -33,5 +33,5 @@ export default function PressableNavigatorModalIcon(onPress) {
   } else {
     stringResult = string(t.cpT0Cq);
   }
-  return <tmp4 isModal><HeaderIconButton source={importDefault("back" === str ? 9816 : 9820)} onPress={goBack} accessibilityLabel={stringResult} /></tmp4>;
+  return <tmp4 isModal><HeaderIconButton source={importDefault("back" === str ? 9906 : 9910)} onPress={goBack} accessibilityLabel={stringResult} /></tmp4>;
 };

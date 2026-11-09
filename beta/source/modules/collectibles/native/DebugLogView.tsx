@@ -1,18 +1,18 @@
-// Module ID: 17876
-// Function ID: 17877
+// Module ID: 18212
+// Function ID: 18213
 // Name: DebugLogView
-// Dependencies: [19, 17, 5627, 7734, 21, 5014, 575, 504, 5624, 2]
+// Dependencies: [19, 17, 5754, 7810, 21, 5140, 575, 504, 5751, 2]
 // Exports: default
 
-// Module 17876 (DebugLogView)
+// Module 18212 (DebugLogView)
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5624 */;
+import Text_Text from "Text/Text" /* 5751 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import DevSettingsStore from "DevSettingsStore" /* 5627 */;
-import CollectiblesDebugStore from "CollectiblesDebugStore" /* 7734 */;
+import DevSettingsStore from "DevSettingsStore" /* 5754 */;
+import CollectiblesDebugStore from "CollectiblesDebugStore" /* 7810 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -60,11 +60,11 @@ export default function DebugLogView() {
     if (0 !== arr.length) {
       const _Math = Math;
       const substr = arr.slice(Math.max(0, arr.length - 10));
-      const obj4 = { variant: "text-xs/normal", style: obj5, children: items2 };
+      const obj4 = { variant: "body-xs/normal", style: obj5, children: items2 };
       const obj2 = { style: tmp.debugLogContainer, children: items4 };
       const obj3 = { style: tmp.debugLogHeader, children: items3 };
       obj5 = { color: "#ffffff" };
-      const Text = tmp2(5624).Text;
+      const Text = tmp2(5751).Text;
       const merged = Object.assign(tmp.debugLogText);
       items2 = ["Debug Log (", arr.length, " entries)"];
       items3 = [closure_9(Text, obj4), ];
@@ -73,14 +73,14 @@ export default function DebugLogView() {
               closure_1();
             },
         style: tmp.clearButton,
-        children: closure_10(arr(5624).Text, obj7)
+        children: closure_10(arr(5751).Text, obj7)
       };
-      obj7 = { variant: "text-xs/bold", style: tmp.clearButtonText, children: "Clear" };
+      obj7 = { variant: "body-xs/semibold", style: tmp.clearButtonText, children: "Clear" };
       items3[1] = closure_10(closure_5, obj6);
       items4 = [closure_9(stateFromStores, obj3), ];
       const obj8 = {
         children: substr.map((children, index) => {
-              const obj = { variant: "text-xs/normal", style: debugLogText.debugLogText, children };
+              const obj = { variant: "body-xs/normal", style: debugLogText.debugLogText, children };
               return authStore(Text_Text.Text, obj, index);
             })
       };

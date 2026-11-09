@@ -1,26 +1,24 @@
-// Module ID: 18300
-// Function ID: 18301
+// Module ID: 18638
+// Function ID: 18639
 // Name: GuildRoleSubscriptionsUpsellActionSheet
-// Dependencies: [19, 17, 1072, 4860, 21, 5014, 5272, 5717, 18301, 5624, 1113, 5634, 9074, 2]
+// Dependencies: [19, 17, 1072, 4986, 21, 5140, 5388, 5842, 18639, 5751, 1113, 5758, 9154, 2]
 // Exports: default
 
-// Module 18300 (GuildRoleSubscriptionsUpsellActionSheet)
+// Module 18638 (GuildRoleSubscriptionsUpsellActionSheet)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
 import intl5 from "intl" /* 1113 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4860 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5272 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import components_Button_Button from "components/Button/Button" /* 5634 */;
-import FastImageDefault from "FastImage" /* 5717 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9074 */;
-import AssetRegistryDefault from "AssetRegistry" /* 18301 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4986 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5388 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import components_Button_Button from "components/Button/Button" /* 5758 */;
+import FastImageDefault from "FastImage" /* 5842 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9154 */;
+import AssetRegistryDefault from "AssetRegistry" /* 18639 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
-
-let BottomSheet;
 
 let metroImportDefault;
 let metroRequire;
@@ -48,15 +46,15 @@ export default function GuildRoleSubscriptionsUpsellActionSheet(arg0) {
     },
     children: items
   };
-  BottomSheet = Sheet_BottomSheet.BottomSheet;
+  const BottomSheet = Sheet_BottomSheet.BottomSheet;
   const obj2 = { source: AssetRegistryDefault };
   const tmp2 = FastImageDefault;
   items = [closure_6(tmp2, obj2), , , , ];
-  const obj3 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl.string(intl5.t.C0m4rQ) };
+  const obj3 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: intl.string(intl5.t.C0m4rQ) };
   const Text = Text_Text.Text;
   intl = intl5.intl;
   items[1] = closure_6(Text, obj3);
-  const obj4 = { style: tmp.description, variant: "text-sm/medium", color: "text-default", children: intl2.string(intl5.t.zOHfEX) };
+  const obj4 = { style: tmp.description, variant: "body-sm/medium", color: "text-default", children: intl2.string(intl5.t.zOHfEX) };
   const Text2 = Text_Text.Text;
   intl2 = intl5.intl;
   items[2] = closure_6(Text2, obj4);

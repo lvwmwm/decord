@@ -1,16 +1,16 @@
-// Module ID: 17882
-// Function ID: 17883
+// Module ID: 18219
+// Function ID: 18220
 // Name: EncryptionSetting
-// Dependencies: [5782, 8432, 1072, 504, 17883, 1113, 11540, 17884, 2]
+// Dependencies: [5911, 8503, 1072, 504, 18220, 1113, 11685, 18221, 2]
 
-// Module 17882 (EncryptionSetting)
+// Module 18219 (EncryptionSetting)
 import get_initialized from "get initialized" /* 504 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
-import SettingsConstants from "SettingsConstants" /* 8432 */;
-import useSecureFramesVerifiedUsers from "useSecureFramesVerifiedUsers" /* 17883 */;
-import SecureFramesPersistedStore from "SecureFramesPersistedStore" /* 5782 */;
-import SettingBuilders from "SettingBuilders" /* 11540 */;
+import SettingsConstants from "SettingsConstants" /* 8503 */;
+import useSecureFramesVerifiedUsers from "useSecureFramesVerifiedUsers" /* 18220 */;
+import SecureFramesPersistedStore from "SecureFramesPersistedStore" /* 5911 */;
+import SettingBuilders from "SettingBuilders" /* 11685 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

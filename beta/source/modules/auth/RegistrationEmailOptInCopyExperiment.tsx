@@ -1,10 +1,10 @@
-// Module ID: 18025
-// Function ID: 18026
+// Module ID: 18365
+// Function ID: 18366
 // Name: RegistrationEmailOptInCopyExperiment
-// Dependencies: [1447, 2]
+// Dependencies: [1449, 2]
 
-// Module 18025 (RegistrationEmailOptInCopyExperiment)
-import ApexExperiment from "ApexExperiment" /* 1447 */;
+// Module 18365 (RegistrationEmailOptInCopyExperiment)
+import ApexExperiment from "ApexExperiment" /* 1449 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

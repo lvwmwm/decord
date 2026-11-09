@@ -1,29 +1,29 @@
-// Module ID: 17202
-// Function ID: 17203
+// Module ID: 17528
+// Function ID: 17529
 // Name: ManageSubscriptionCard
-// Dependencies: [32, 5, 19, 17, 1072, 4870, 21, 5014, 575, 1113, 5624, 6980, 6957, 11414, 17203, 5959, 17204, 1994, 9910, 7326, 6535, 7086, 1187, 17206, 5735, 5711, 7060, 6975, 5709, 2047, 1099, 9976, 17207, 1497, 6977, 2]
+// Dependencies: [32, 5, 19, 17, 1072, 4996, 21, 5140, 575, 1113, 5751, 7043, 7020, 11555, 17529, 6091, 17530, 2118, 10032, 7387, 6589, 7152, 1187, 17532, 5859, 5836, 7126, 7038, 5834, 2171, 1099, 10098, 17533, 1499, 7040, 2]
 // Exports: default
 
-// Module 17202 (ManageSubscriptionCard)
+// Module 17528 (ManageSubscriptionCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import router_utils from "router_utils" /* 1099 */;
 import intl9 from "intl" /* 1113 */;
-import PremiumUtils from "PremiumUtils" /* 2047 */;
-import ChannelConstants from "ChannelConstants" /* 4870 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import LinkingDefault from "Linking" /* 5709 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5959 */;
-import GuildIconDefault from "GuildIcon" /* 6957 */;
-import Pressables from "Pressables" /* 6980 */;
-import FormSeparatorDefault from "FormSeparator" /* 17203 */;
-import useManageSubscriptionCardDataDefault from "useManageSubscriptionCardData" /* 17207 */;
+import PremiumUtils from "PremiumUtils" /* 2171 */;
+import ChannelConstants from "ChannelConstants" /* 4996 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import LinkingDefault from "Linking" /* 5834 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6091 */;
+import GuildIconDefault from "GuildIcon" /* 7020 */;
+import Pressables from "Pressables" /* 7043 */;
+import FormSeparatorDefault from "FormSeparator" /* 17529 */;
+import useManageSubscriptionCardDataDefault from "useManageSubscriptionCardData" /* 17533 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let c3, c5, importDefault;
@@ -84,7 +84,7 @@ function HeaderStatus(arg0) {
     if (flag) {
       str2 = "text-overlay-light";
     }
-    obj2 = { variant: "text-xs/semibold", color: str2, children: str };
+    obj2 = { variant: "body-xs/semibold", color: str2, children: str };
     tmp9Result = tmp9(tmp10, obj);
   }
   return tmp9Result;
@@ -109,7 +109,7 @@ function Header(guild) {
   items1 = [unpackModuleId(GuildIconDefault, { guild }), , ];
   const obj3 = { style: tmp.headerTitlesContainer, children: items2 };
   items2 = [, ];
-  const obj4 = { ellipsizeMode: "tail", lineClamp: 2, variant: "text-md/semibold", color: "interactive-text-active", children: listing.name };
+  const obj4 = { ellipsizeMode: "tail", lineClamp: 2, variant: "body-md/semibold", color: "interactive-text-active", children: listing.name };
   items2[0] = unpackModuleId(Text_Text.Text, obj4);
   let name;
   const Text = Text_Text.Text;
@@ -120,10 +120,10 @@ function Header(guild) {
     const intl = tmp3(1113).intl;
     name = intl.string(tmp3(1113).t["He+cmd"]);
   }
-  items2[1] = unpackModuleId(Text, { variant: "text-sm/medium", color: "interactive-text-default", children: name });
+  items2[1] = unpackModuleId(Text, { variant: "body-sm/medium", color: "interactive-text-default", children: name });
   items1[1] = authStore2(View, obj3);
   let expandIconExpanded;
-  const ChevronSmallDownIcon = tmp3(11414).ChevronSmallDownIcon;
+  const ChevronSmallDownIcon = tmp3(11555).ChevronSmallDownIcon;
   if (expanded) {
     expandIconExpanded = tmp.expandIconExpanded;
   }
@@ -210,7 +210,7 @@ function CardBody(isTrial) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -294,7 +294,7 @@ function CardBody(isTrial) {
             closure_129_4(false);
           }
           c5 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp31) {
           if (0 === c3) {
             c5 = 3;
@@ -329,7 +329,7 @@ function CardBody(isTrial) {
     let obj5 = { size: "xs", color: tmp2(tmp3[8]).unsafe_rawColors.YELLOW_300 };
     const CircleErrorIcon = isTrial(tmp3[21]).CircleErrorIcon;
     items = [closure_11(CircleErrorIcon, obj5), ];
-    let obj6 = { variant: "text-sm/medium", color: "interactive-text-active", children: intl.string(isTrial(tmp3[9]).t.eaqlau) };
+    let obj6 = { variant: "body-sm/medium", color: "interactive-text-active", children: intl.string(isTrial(tmp3[9]).t.eaqlau) };
     const Text = isTrial(tmp3[10]).Text;
     intl = isTrial(tmp3[9]).intl;
     items[1] = closure_11(Text, obj6);
@@ -457,7 +457,7 @@ export default function ManageSubscriptionCard(subscription) {
   const tmp = closure_14();
   ({ listing, guild, expanded, subscriptionInfo, groupListing, handleToggleExpanded } = useManageSubscriptionCardDataDefault(subscription));
   useManageSubscriptionCardDataDefault(subscription);
-  let obj = subscription(1497);
+  let obj = subscription(1499);
   importDefault = obj.useNavigation();
   let tmp6Result = null;
   const tmp4 = subscription;
@@ -469,7 +469,7 @@ export default function ManageSubscriptionCard(subscription) {
         const obj2 = { variant: "primary", style: tmp.container, children: items };
         const obj4 = { expanded, guild, isCancelled: null, isTrial: null, isPastDue: null, listing, onToggleExpanded: handleToggleExpanded };
         ({ isCancelled: obj3.isCancelled, isTrial: obj3.isTrial, isPastDue: obj3.isPastDue } = subscriptionInfo);
-        const Card = tmp4(6977).Card;
+        const Card = tmp4(7040).Card;
         items = [closure_11(Header, obj4), ];
         if (expanded) {
           const items1 = [closure_11(Separator, {}), ];

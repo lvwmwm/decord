@@ -1,201 +1,165 @@
 // Module ID: 13104
 // Function ID: 13105
-// Dependencies: [13079, 13060, 13059, 13090]
-// Exports: applyScopeDataToEvent, mergeAndOverwriteScopeData, mergeScopeData
+// Dependencies: [13050, 13094, 13079]
 
 // Module 13104
-import _mod13059 from "module_13059" /* 13059 */;
-import _mod13060 from "module_13060" /* 13060 */;
+import tokenize from "tokenize" /* 13050 */;
 import _mod13079 from "module_13079" /* 13079 */;
-import _mod13090 from "module_13090" /* 13090 */;
+import tokenize2 from "tokenize" /* 13094 */;
 
-
-export function applyScopeDataToEvent(extra, arg1) {
-  let breadcrumbs;
-  let contexts;
-  let fingerprint;
-  let items1;
-  let level;
-  let sdkProcessingMetadata;
-  let span;
-  let tags;
-  let tmpResult10;
-  let tmpResult9;
-  let transactionName;
-  let user;
-  ({ fingerprint, span, breadcrumbs, sdkProcessingMetadata, level, transactionName } = arg1);
-  ({ extra, tags, user, contexts } = arg1);
-  const obj = _mod13060;
-  const dropUndefinedKeysResult = obj.dropUndefinedKeys(extra);
-  let length = dropUndefinedKeysResult;
-  if (length) {
-    const _Object = Object;
-    length = Object.keys(dropUndefinedKeysResult).length;
+let items;
+let obj2;
+function consumeValueRaw(arg0) {
+  return this.Raw(arg0, tokenize2.mode.exclamationMarkOrSemicolon, true);
+}
+function consumeCustomPropertyRaw(arg0) {
+  return this.Raw(arg0, tokenize2.mode.exclamationMarkOrSemicolon, false);
+}
+function consumeValue() {
+  const self = this;
+  const tokenIndex = this.scanner.tokenIndex;
+  const ValueResult = this.Value();
+  let tmp2 = "Raw" !== ValueResult.type && false === self.scanner.eof && self.scanner.tokenType !== Semicolon;
+  if (tmp2) {
+    const scanner = self.scanner;
+    tmp2 = false === scanner.isDelim(33);
   }
-  const tmp5 = extra;
-  if (length) {
-    const obj2 = {};
-    const merged = Object.assign(dropUndefinedKeysResult);
-    const merged1 = Object.assign(extra.extra);
-    extra.extra = obj2;
+  if (tmp2) {
+    const scanner2 = self.scanner;
+    tmp2 = false === scanner2.isBalanceEdge(tokenIndex);
   }
-  const tmpResult = _mod13060;
-  const dropUndefinedKeysResult1 = tmpResult.dropUndefinedKeys(tags);
-  let length2 = dropUndefinedKeysResult1;
-  if (length2) {
-    const _Object2 = Object;
-    length2 = Object.keys(dropUndefinedKeysResult1).length;
+  if (tmp2) {
+    self.error();
   }
-  if (length2) {
-    const obj3 = {};
-    const merged2 = Object.assign(dropUndefinedKeysResult1);
-    const merged3 = Object.assign(extra.tags);
-    extra.tags = obj3;
-  }
-  const tmpResult7 = _mod13060;
-  const dropUndefinedKeysResult2 = tmpResult7.dropUndefinedKeys(user);
-  let length3 = dropUndefinedKeysResult2;
-  if (length3) {
-    const _Object3 = Object;
-    length3 = Object.keys(dropUndefinedKeysResult2).length;
-  }
-  if (length3) {
-    const obj4 = {};
-    const merged4 = Object.assign(dropUndefinedKeysResult2);
-    const merged5 = Object.assign(extra.user);
-    extra.user = obj4;
-  }
-  const tmpResult8 = _mod13060;
-  const dropUndefinedKeysResult3 = tmpResult8.dropUndefinedKeys(contexts);
-  let length4 = dropUndefinedKeysResult3;
-  if (length4) {
-    const _Object4 = Object;
-    length4 = Object.keys(dropUndefinedKeysResult3).length;
-  }
-  if (length4) {
-    const obj5 = {};
-    const merged6 = Object.assign(dropUndefinedKeysResult3);
-    const merged7 = Object.assign(extra.contexts);
-    extra.contexts = obj5;
-  }
-  if (level) {
-    extra.level = level;
-  }
-  const tmp32 = transactionName && "transaction" !== extra.type;
-  if (tmp32) {
-    extra.transaction = transactionName;
-  }
-  if (span) {
-    const obj6 = { trace: tmpResult9.spanToTraceContext(span) };
-    tmpResult9 = _mod13059;
-    const merged8 = Object.assign(extra.contexts);
-    extra.contexts = obj6;
-    const obj7 = { dynamicSamplingContext: tmpResult10.getDynamicSamplingContextFromSpan(span) };
-    tmpResult10 = _mod13090;
-    const merged9 = Object.assign(extra.sdkProcessingMetadata);
-    extra.sdkProcessingMetadata = obj7;
-    const tmpResult11 = _mod13059;
-    const rootSpan = tmpResult11.getRootSpan(span);
-    const tmpResult12 = _mod13059;
-    const description = tmpResult12.spanToJSON(rootSpan).description;
-    const tmp38 = description && !extra.transaction && "transaction" === extra.type;
-    if (tmp38) {
-      extra.transaction = description;
+  return ValueResult;
+}
+function readProperty() {
+  const self = this;
+  const tokenStart = this.scanner.tokenStart;
+  if (this.scanner.tokenType === Delim) {
+    const source = self.scanner.source;
+    const charCodeAtResult = source.charCodeAt(self.scanner.tokenStart);
+    if (42 !== charCodeAtResult) {
+      if (36 !== charCodeAtResult) {
+        if (43 !== charCodeAtResult) {
+          if (35 !== charCodeAtResult) {
+            if (38 !== charCodeAtResult) {
+              if (47 === charCodeAtResult) {
+                const iter = self.scanner;
+                iter.next();
+                const scanner = self.scanner;
+                if (scanner.isDelim(47)) {
+                  const iter2 = self.scanner;
+                  iter2.next();
+                }
+              }
+            }
+          }
+        }
+      }
     }
+    const iter3 = self.scanner;
+    iter3.next();
   }
-  if (extra.fingerprint) {
-    let items;
-    const _Array = Array;
-    const fingerprint2 = extra.fingerprint;
-    if (Array.isArray(extra.fingerprint)) {
-      items = fingerprint2;
-    } else {
-      items = [fingerprint2];
-    }
-    items1 = items;
+  if (self.scanner.tokenType === Hash) {
+    self.eat(tmp4);
   } else {
-    items1 = [];
+    self.eat(Ident);
   }
-  extra.fingerprint = items1;
-  if (fingerprint) {
-    const fingerprint3 = extra.fingerprint;
-    extra.fingerprint = fingerprint3.concat(fingerprint);
-  }
-  const tmp40 = extra.fingerprint && !extra.fingerprint.length;
-  if (tmp40) {
-    delete tmp5["fingerprint"];
-  }
-  const items2 = [...breadcrumbs];
-  let tmp42;
-  if (items2.length) {
-    tmp42 = items2;
-  }
-  extra.breadcrumbs = tmp42;
-  const obj8 = {};
-  const merged10 = Object.assign(extra.sdkProcessingMetadata);
-  const merged11 = Object.assign(sdkProcessingMetadata);
-  extra.sdkProcessingMetadata = obj8;
+  const scanner2 = self.scanner;
+  return scanner2.substrToCursor(tokenStart);
 }
-export function mergeAndOverwriteScopeData(arg0, arg1, arg2) {
-  const obj = _mod13079;
-  arg0[arg1] = obj.merge(arg0[arg1], arg2, 1);
+function getImportant() {
+  this.eat(Delim);
+  const scanner = this.scanner;
+  scanner.skipSC();
+  const consumeResult = this.consume(Ident);
+  return "important" === consumeResult || consumeResult;
 }
-export function mergeScopeData(extra, arg1) {
-  let attachments;
-  let breadcrumbs;
-  let contexts;
-  let eventProcessors;
-  let fingerprint;
-  let level;
-  let propagationContext;
-  let sdkProcessingMetadata;
-  let span;
-  let tags;
-  let transactionName;
-  let user;
-  ({ level, breadcrumbs, fingerprint, eventProcessors, attachments, propagationContext, transactionName, span } = arg1);
-  ({ extra, tags, user, contexts, sdkProcessingMetadata } = arg1);
-  const obj = _mod13079;
-  extra.extra = obj.merge(extra.extra, extra, 1);
-  const obj2 = _mod13079;
-  extra.tags = obj2.merge(extra.tags, tags, 1);
-  const obj3 = _mod13079;
-  extra.user = obj3.merge(extra.user, user, 1);
-  const obj4 = _mod13079;
-  extra.contexts = obj4.merge(extra.contexts, contexts, 1);
-  const obj5 = _mod13079;
-  extra.sdkProcessingMetadata = obj5.merge(extra.sdkProcessingMetadata, sdkProcessingMetadata, 2);
-  if (level) {
-    extra.level = level;
-  }
-  if (transactionName) {
-    extra.transactionName = transactionName;
-  }
-  if (span) {
-    extra.span = span;
-  }
-  if (breadcrumbs.length) {
-    const items = [];
-    HermesBuiltin.arraySpread(items, breadcrumbs, HermesBuiltin.arraySpread(items, extra.breadcrumbs, 0));
-    extra.breadcrumbs = items;
-  }
-  if (fingerprint.length) {
-    const items1 = [];
-    HermesBuiltin.arraySpread(items1, fingerprint, HermesBuiltin.arraySpread(items1, extra.fingerprint, 0));
-    extra.fingerprint = items1;
-  }
-  if (eventProcessors.length) {
-    const items2 = [];
-    HermesBuiltin.arraySpread(items2, eventProcessors, HermesBuiltin.arraySpread(items2, extra.eventProcessors, 0));
-    extra.eventProcessors = items2;
-  }
-  if (attachments.length) {
-    const items3 = [];
-    HermesBuiltin.arraySpread(items3, attachments, HermesBuiltin.arraySpread(items3, extra.attachments, 0));
-    extra.attachments = items3;
-  }
-  const obj6 = {};
-  const merged = Object.assign(extra.propagationContext);
-  const merged1 = Object.assign(propagationContext);
-  extra.propagationContext = obj6;
-}
+const Ident = tokenize.TYPE.Ident;
+const Hash = tokenize.TYPE.Hash;
+const Colon = tokenize.TYPE.Colon;
+const Semicolon = tokenize.TYPE.Semicolon;
+const Delim = tokenize.TYPE.Delim;
+const WhiteSpace = tokenize.TYPE.WhiteSpace;
+let obj = {
+  name: "Declaration",
+  structure: obj2,
+  parse() {
+    let element;
+    const self = this;
+    const tokenStart = this.scanner.tokenStart;
+    const tokenIndex = this.scanner.tokenIndex;
+    const callResult = readProperty.call(self);
+    const obj = _mod13079;
+    const isCustomPropertyResult = obj.isCustomProperty(callResult);
+    const obj2 = isCustomPropertyResult ? consumeCustomPropertyRaw : consumeValueRaw;
+    const scanner = self.scanner;
+    const tmp3 = isCustomPropertyResult ? self.parseCustomProperty : self.parseValue;
+    scanner.skipSC();
+    self.eat(Colon);
+    const tokenIndex2 = self.scanner.tokenIndex;
+    if (!isCustomPropertyResult) {
+      const scanner2 = self.scanner;
+      scanner2.skipSC();
+    }
+    if (tmp3) {
+      element = self.parseWithFallback(consumeValue, obj2);
+    } else {
+      element = obj2.call(self, self.scanner.tokenIndex);
+    }
+    if (isCustomPropertyResult) {
+      if ("Value" === element.type) {
+        const children = element.children;
+        if (children.isEmpty()) {
+          let diff = tokenIndex2 - self.scanner.tokenIndex;
+          if (diff <= 0) {
+            const scanner3 = self.scanner;
+            while (scanner3.lookupType(diff) !== WhiteSpace) {
+              diff = diff + 1;
+            }
+            const children2 = element.children;
+            children2.appendData({ type: "WhiteSpace", loc: null, value: " " });
+          }
+        }
+      }
+    }
+    const scanner4 = self.scanner;
+    let flag = false;
+    if (scanner4.isDelim(33)) {
+      const scanner5 = self.scanner;
+      const callResult1 = getImportant.call(self);
+      scanner5.skipSC();
+      flag = callResult1;
+    }
+    let tmp14 = false === self.scanner.eof && self.scanner.tokenType !== Semicolon;
+    if (tmp14) {
+      const scanner6 = self.scanner;
+      tmp14 = false === scanner6.isBalanceEdge(tokenIndex);
+    }
+    if (tmp14) {
+      self.error();
+    }
+    const obj3 = { type: "Declaration", loc: self.getLocation(tokenStart, self.scanner.tokenStart), important: flag, property: callResult, value: element };
+    return obj3;
+  },
+  generate(property) {
+    const self = this;
+    this.chunk(property.property);
+    this.chunk(":");
+    this.node(property.value);
+    if (property.important) {
+      let str = "!important";
+      const chunk = self.chunk;
+      if (true !== property.important) {
+        str = `!${property.important}`;
+      }
+      chunk(str);
+    }
+  },
+  walkContext: "declaration"
+};
+obj2 = { important: items, property: String, value: ["Value", "Raw"] };
+items = [Boolean, String];
+
+export default obj;

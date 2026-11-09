@@ -1,33 +1,33 @@
-// Module ID: 16568
-// Function ID: 16569
+// Module ID: 16885
+// Function ID: 16886
 // Name: GuildProfileEditForm
-// Dependencies: [109, 19, 17, 4926, 7772, 1072, 1385, 21, 2047, 7326, 7351, 16453, 5258, 16441, 1994, 8737, 1113, 8735, 16452, 16452, 9785, 16464, 16457, 5607, 16548, 16488, 575, 5624, 8814, 8733, 7101, 16458, 11405, 16563, 504, 8757, 11394, 8815, 8740, 15784, 16569, 8800, 8811, 5080, 16570, 11395, 11396, 11413, 16467, 5068, 16468, 16490, 16494, 16495, 16499, 16503, 9905, 9906, 2]
+// Dependencies: [109, 19, 17, 5052, 7848, 1072, 1387, 21, 2171, 7387, 7412, 16774, 5374, 16762, 2118, 8808, 1113, 8806, 16773, 16773, 9875, 16782, 16776, 5735, 16866, 16806, 575, 5751, 8888, 8804, 7172, 11546, 16880, 504, 8828, 11535, 8889, 8811, 16098, 16886, 8873, 8885, 5199, 16887, 11536, 11537, 11554, 16785, 5194, 16786, 16808, 16812, 16813, 16817, 16821, 10027, 10028, 2]
 // Exports: default
 
-// Module 16568 (GuildProfileEditForm)
+// Module 16885 (GuildProfileEditForm)
 import nativeDefault from "native" /* 575 */;
 import intl7 from "intl" /* 1113 */;
-import PremiumConstants from "PremiumConstants" /* 1385 */;
-import asyncRequire from "asyncRequire" /* 1994 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 2047 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7326 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7351 */;
-import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 8735 */;
-import ProfileCustomizationUtils from "ProfileCustomizationUtils" /* 8737 */;
-import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9785 */;
-import openPremiumModalDefault from "openPremiumModal" /* 9905 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9906 */;
-import UserProfileEditBannerButtonDefault from "UserProfileEditBannerButton" /* 16453 */;
-import UserProfileEditFormSharedStylesDefault from "UserProfileEditFormSharedStyles" /* 16457 */;
-import UserProfilePremiumTryItOutMobileRefreshExperiment from "UserProfilePremiumTryItOutMobileRefreshExperiment" /* 16464 */;
-import UserProfileUpsellCardDefault from "UserProfileUpsellCard" /* 16488 */;
-import UserProfileFloatingUpsellDefault from "UserProfileFloatingUpsell" /* 16548 */;
+import PremiumConstants from "PremiumConstants" /* 1387 */;
+import asyncRequire from "asyncRequire" /* 2118 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 2171 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7387 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7412 */;
+import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 8806 */;
+import ProfileCustomizationUtils from "ProfileCustomizationUtils" /* 8808 */;
+import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9875 */;
+import openPremiumModalDefault from "openPremiumModal" /* 10027 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 10028 */;
+import UserProfileEditBannerButtonDefault from "UserProfileEditBannerButton" /* 16774 */;
+import UserProfileEditFormSharedStylesDefault from "UserProfileEditFormSharedStyles" /* 16776 */;
+import UserProfilePremiumTryItOutMobileRefreshExperiment from "UserProfilePremiumTryItOutMobileRefreshExperiment" /* 16782 */;
+import UserProfileUpsellCardDefault from "UserProfileUpsellCard" /* 16806 */;
+import UserProfileFloatingUpsellDefault from "UserProfileFloatingUpsell" /* 16866 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildMemberStore from "GuildMemberStore" /* 4926 */;
-import UserProfileStore from "UserProfileStore" /* 7772 */;
+import GuildMemberStore from "GuildMemberStore" /* 5052 */;
+import UserProfileStore from "UserProfileStore" /* 7848 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -61,7 +61,7 @@ function EditGuildProfileBanner(user) {
   let tmp3 = useAnalyticsLocationsDefault;
   const analyticsLocations = tmp3(AnalyticsLocationDefault.EDIT_BANNER).analyticsLocations;
   let obj2 = { value: analyticsLocations, children: tmp4(tmp6, obj3) };
-  const AnalyticsLocationProvider = user(7326).AnalyticsLocationProvider;
+  const AnalyticsLocationProvider = user(7387).AnalyticsLocationProvider;
   obj3 = {
     user,
     displayProfile,
@@ -102,7 +102,7 @@ function EditGuildProfileBanner(user) {
         };
         ActionSheetActionCreatorsDefault;
         banner = undefined;
-        const tmp14 = asyncRequire(16441, dependencyMap.paths);
+        const tmp14 = asyncRequire(16762, dependencyMap.paths);
         showRemoveBanner = ProfileCustomizationUtils.showRemoveBanner;
         ProfileCustomizationUtils;
         tmp19 = pendingBanner;
@@ -157,8 +157,8 @@ function GuildProfileTryItOutUpsellExperimentWrapper(onButtonPress) {
     items[1] = obj4;
     const tmp3Result2 = UserProfileUpsellCardDefault;
     intl = tmp(1113).intl;
-    obj5 = { variant: "text-sm/normal", children: intl2.string(intl7.t.YIZS5B) };
-    Text = tmp(5624).Text;
+    obj5 = { variant: "body-sm/normal", children: intl2.string(intl7.t.YIZS5B) };
+    Text = tmp(5751).Text;
     intl2 = tmp(1113).intl;
     tmp6Result = tmp6(tmp3Result2, obj3);
   }
@@ -170,14 +170,14 @@ let closure_3 = ["nick", "bio", "guild_tag"];
 ({ DISPLAY_NAME_MAX_LENGTH: closure_12, PRONOUNS_MAX_LENGTH: map1, UpsellTypes: closure_14, AnalyticsPages } = Constants);
 const PremiumUpsellTypes = PremiumConstants.PremiumUpsellTypes;
 ({ jsx: closure_16, jsxs: closure_17 } = Fragment);
-let closure_18 = { page: AnalyticsPages.USER_SETTINGS, section: AnalyticsSections.SETTINGS_CUSTOMIZE_PROFILE };
+let closure_18 = [1];
+let closure_19 = { page: AnalyticsPages.USER_SETTINGS, section: AnalyticsSections.SETTINGS_CUSTOMIZE_PROFILE };
 let result = size.fileFinishedImporting("modules/user_profile/native/GuildProfileEditForm.tsx");
 
 export default function GuildProfileEditForm(currentUser) {
   let avatarBackground;
   let bio;
   let containerBackground;
-  let errors;
   let first;
   let first1;
   let first2;
@@ -193,24 +193,22 @@ export default function GuildProfileEditForm(currentUser) {
   let intl5;
   let intl6;
   let isDisabled;
+  let items;
   let items10;
+  let items11;
   let items12;
   let items13;
-  let items14;
-  let items15;
-  let items16;
-  let items2;
+  let items4;
+  let items5;
   let items6;
   let items7;
-  let items8;
   let items9;
   let nick;
-  let num2;
-  let obj11;
-  let obj16;
-  let obj19;
-  let obj28;
-  let obj7;
+  let obj12;
+  let obj17;
+  let obj20;
+  let obj29;
+  let obj6;
   let onLayout;
   let pendingAvatar;
   let pendingAvatarDecoration;
@@ -227,85 +225,55 @@ export default function GuildProfileEditForm(currentUser) {
   let secondaryColor;
   let str6;
   let theme;
+  let tmp38;
   let tmp42;
   let tmp46;
-  let tmp50;
-  let tmp51;
-  let tmp59;
+  let tmp47;
+  let tmp55;
+  let tmpResult10;
   let tmpResult14;
-  let tmpResult18;
   currentUser = currentUser.currentUser;
-  const stickyHeader = currentUser.stickyHeader;
-  let guildScrollY;
+  const header = currentUser.header;
   let guild;
   let analyticsLocations;
-  let tmp = guildScrollY;
-  const tmp2 = guild;
-  const tmp3 = guildScrollY(guild[28])();
-  const tmp4 = guildScrollY(guild[22])();
-  let obj = currentUser(guild[29]);
+  let tmp = guild;
+  const tmp3 = guild(analyticsLocations[28])();
+  const tmp4 = guild(analyticsLocations[22])();
+  let obj = currentUser(analyticsLocations[29]);
   const bioMaxLength = obj.useBioMaxLength({ location: "guild_profile_edit_form" });
-  let obj2 = react;
-  const tmp7 = guildScrollY(guild[30])();
+  const tmp7 = guild(analyticsLocations[30])();
   const ref = react.useRef(null);
-  const context = react.useContext(guildScrollY(guild[31]));
-  guildScrollY = undefined;
-  if (context != null) {
-    guildScrollY = context.guildScrollY;
-  }
-  const items = [guildScrollY];
-  const items1 = [guildScrollY];
-  const callback = obj2.useCallback((nativeEvent) => {
-    const obj = guildScrollY;
-    if (guildScrollY != null) {
-      const result = obj.set(nativeEvent.nativeEvent.contentOffset.y);
-    }
-  }, items);
-  const effect = obj2.useEffect(() => {
-    let obj = guildScrollY;
-    if (guildScrollY != null) {
-      let result = obj.set(0);
-    }
-    return () => {
-      let result;
-      const obj = guildScrollY;
-      if (guildScrollY != null) {
-        result = obj.set(0);
-      }
-      return result;
-    };
-  }, items1);
-  const ref1 = obj2.useRef(null);
-  const ref2 = obj2.useRef(null);
-  const ref3 = obj2.useRef(null);
-  const insets = tmp(tmp2[23])({ includeKeyboardHeight: true }).insets;
-  const PX_16 = tmp(tmp2[26]).space.PX_16;
-  const obj3 = { insets, inputs: items2, scrollViewRef: ref };
-  items2 = [, , ];
-  const obj4 = { ref: ref1, offset: { type: "toRef", ref: ref2, extraOffset: PX_16 } };
-  items2[0] = obj4;
-  const obj5 = { ref: ref2, offset: { type: "toRef", ref: ref3, extraOffset: PX_16 } };
-  items2[1] = obj5;
-  const obj6 = { ref: ref3, offset: obj7 };
-  obj7 = { type: "toValue", value: tmp(tmp2[26]).space.PX_64 };
-  items2[2] = obj6;
-  const tmpResult = tmp(tmp2[32]);
-  const onFocus = tmpResult(obj3).onFocus;
-  const tmp17 = tmp(tmp2[33])();
-  guild = tmp17.guild;
-  ({ errors, isDisabled, pendingNickname, pendingThemeColors, pendingPronouns, pendingBio, pendingAvatar, pendingBanner, pendingAvatarDecoration, pendingProfileEffect, pendingProfileFrame, pendingNameplate, pendingDisplayNameStyles } = tmp17);
-  const items3 = [GuildMemberStore];
-  const tmp5Result = currentUser(tmp2[34]);
-  const stateFromStores = tmp5Result.useStateFromStores(items3, () => {
+  const ref1 = react.useRef(null);
+  const ref2 = react.useRef(null);
+  const ref3 = react.useRef(null);
+  const insets = guild(analyticsLocations[23])({ includeKeyboardHeight: true }).insets;
+  const PX_16 = guild(analyticsLocations[26]).space.PX_16;
+  let obj2 = { insets, inputs: items, scrollViewRef: ref };
+  items = [, , ];
+  const obj3 = { ref: ref1, offset: { type: "toRef", ref: ref2, extraOffset: PX_16 } };
+  items[0] = obj3;
+  const obj4 = { ref: ref2, offset: { type: "toRef", ref: ref3, extraOffset: PX_16 } };
+  items[1] = obj4;
+  const obj5 = { ref: ref3, offset: obj6 };
+  obj6 = { type: "toValue", value: guild(analyticsLocations[26]).space.PX_64 };
+  items[2] = obj5;
+  const tmp12 = guild(analyticsLocations[31]);
+  const onFocus = tmp12(obj2).onFocus;
+  const tmp13 = guild(analyticsLocations[32])();
+  guild = tmp13.guild;
+  ({ errors, isDisabled, pendingNickname, pendingThemeColors, pendingPronouns, pendingBio, pendingAvatar, pendingBanner, pendingAvatarDecoration, pendingProfileEffect, pendingProfileFrame, pendingNameplate, pendingDisplayNameStyles } = tmp13);
+  const items1 = [GuildMemberStore];
+  const obj7 = currentUser(analyticsLocations[33]);
+  const stateFromStores = obj7.useStateFromStores(items1, () => {
     let member = null;
     if (null != guild) {
       member = GuildMemberStore.getMember(tmp.id, currentUser.id);
     }
     return member;
   });
-  const items4 = [UserProfileStore];
-  const tmp5Result8 = currentUser(tmp2[34]);
-  const stateFromStores1 = tmp5Result8.useStateFromStores(items4, () => {
+  const items2 = [UserProfileStore];
+  const obj8 = currentUser(analyticsLocations[33]);
+  const stateFromStores1 = obj8.useStateFromStores(items2, () => {
     let guildMemberProfile = null;
     if (null != guild) {
       let id1;
@@ -320,34 +288,34 @@ export default function GuildProfileEditForm(currentUser) {
   });
   let id1;
   let id = currentUser.id;
-  const tmpResult11 = tmp(tmp2[35]);
+  const tmp16 = guild(analyticsLocations[34]);
   if (guild != null) {
     id1 = guild.id;
   }
-  const tmpResult1Result = tmpResult11(id, id1);
-  const tmp5Result9 = currentUser(tmp2[36]);
-  const customStatusActivity = tmp5Result9.useCustomStatusActivity();
-  const obj8 = { userId: currentUser.id, image: pendingAvatar };
-  const tmp24 = tmp(tmp2[37])(tmpResult1Result);
-  const tmp5Result10 = currentUser(tmp2[38]);
-  const pendingAvatarSrc = tmp5Result10.getPendingAvatarSrc(obj8);
-  const tmp5Result11 = currentUser(tmp2[39]);
-  const canEditNickname = tmp5Result11.useGuildActionSheetPermissions(guild).canEditNickname;
-  const tmpResult12 = tmp(tmp2[8]);
-  let result = tmpResult12.canUsePremiumGuildMemberProfile(currentUser);
+  const tmp16Result = tmp16(id, id1);
+  const tmp5Result = currentUser(analyticsLocations[35]);
+  const customStatusActivity = tmp5Result.useCustomStatusActivity();
+  const obj9 = { userId: currentUser.id, image: pendingAvatar };
+  const tmp20 = tmp(analyticsLocations[36])(tmp16Result);
+  const tmp5Result6 = currentUser(analyticsLocations[37]);
+  const pendingAvatarSrc = tmp5Result6.getPendingAvatarSrc(obj9);
+  const tmp5Result7 = currentUser(analyticsLocations[38]);
+  const canEditNickname = tmp5Result7.useGuildActionSheetPermissions(guild).canEditNickname;
+  const tmpResult = tmp(tmp2[8]);
+  const result = tmpResult.canUsePremiumGuildMemberProfile(currentUser);
   let themeColors;
-  const canResetThemeColors = currentUser(tmp2[40]).canResetThemeColors;
-  currentUser(tmp2[40]);
+  const canResetThemeColors = currentUser(analyticsLocations[39]).canResetThemeColors;
+  currentUser(analyticsLocations[39]);
   if (stateFromStores1 != null) {
     themeColors = stateFromStores1.themeColors;
   }
-  let tmp66Result8 = !result;
+  let tmp62Result8 = !result;
   const canResetThemeColorsResult = canResetThemeColors(pendingThemeColors, themeColors);
   if (!result) {
-    tmp66Result8 = !tmp7;
+    tmp62Result8 = !tmp7;
   }
-  const tmp5Result13 = currentUser(tmp2[24]);
-  const floatingUpsellHeight = tmp5Result13.useFloatingUpsellHeight();
+  const tmp5Result9 = currentUser(analyticsLocations[24]);
+  const floatingUpsellHeight = tmp5Result9.useFloatingUpsellHeight();
   let str;
   ({ height, onLayout } = floatingUpsellHeight);
   if (stateFromStores != null) {
@@ -364,8 +332,8 @@ export default function GuildProfileEditForm(currentUser) {
     str2 = "";
   }
   let str3;
-  if (tmpResult1Result != null) {
-    str3 = tmpResult1Result._userProfile.pronouns;
+  if (tmp16Result != null) {
+    str3 = tmp16Result._userProfile.pronouns;
   }
   if (str3 == null) {
     str3 = "";
@@ -381,32 +349,32 @@ export default function GuildProfileEditForm(currentUser) {
     str4 = "";
   }
   let str5;
-  if (tmpResult1Result != null) {
-    str5 = tmpResult1Result._userProfile.bio;
+  if (tmp16Result != null) {
+    str5 = tmp16Result._userProfile.bio;
   }
   if (str5 == null) {
     str5 = "";
   }
-  const items5 = [];
-  const tmpResult13 = tmp(tmp2[9]);
-  items5[0] = tmp(tmp2[10]).USER_SETTINGS;
-  analyticsLocations = tmpResult13(items5).analyticsLocations;
-  ({ theme, primaryColor, secondaryColor } = tmp(tmp2[41])({ user: currentUser, displayProfile: tmpResult1Result, pendingThemeColors }));
-  tmp(tmp2[41])({ user: currentUser, displayProfile: tmpResult1Result, pendingThemeColors });
-  const tmp5Result14 = currentUser(tmp2[42]);
-  const userProfileColors = tmp5Result14.useUserProfileColors({ theme, primaryColor, secondaryColor });
+  const items3 = [];
+  const tmpResult9 = tmp(analyticsLocations[9]);
+  items3[0] = tmp(analyticsLocations[10]).USER_SETTINGS;
+  analyticsLocations = tmpResult9(items3).analyticsLocations;
+  ({ theme, primaryColor, secondaryColor } = tmp(analyticsLocations[40])({ user: currentUser, displayProfile: tmp16Result, pendingThemeColors }));
+  tmp(analyticsLocations[40])({ user: currentUser, displayProfile: tmp16Result, pendingThemeColors });
+  const tmp5Result10 = currentUser(analyticsLocations[41]);
+  const userProfileColors = tmp5Result10.useUserProfileColors({ theme, primaryColor, secondaryColor });
   ({ gradientSecondaryBackground, containerBackground } = userProfileColors);
   let num = 0;
   ({ gradientFallbackBackground, avatarBackground } = userProfileColors);
   const bottom = insets.bottom;
-  if (tmp66Result8) {
+  if (tmp62Result8) {
     num = height;
   }
   const sum = bottom + num;
-  const obj9 = { backgroundColor: avatarBackground };
+  const obj10 = { backgroundColor: avatarBackground };
   ({ nick, bio, guild_tag } = errors);
   const sum1 = sum + tmp(tmp2[26]).space.PX_16;
-  const tmp37 = _objectWithoutProperties(errors, analyticsLocations);
+  const tmp33 = _objectWithoutProperties(errors, closure_3);
   if (nick != null) {
     first = nick[0];
   }
@@ -423,112 +391,104 @@ export default function GuildProfileEditForm(currentUser) {
   if (null == guild) {
     return null;
   } else {
-    const obj10 = { theme, primaryColor, secondaryColor, children: closure_17(closure_7, obj11) };
-    obj11 = { style: items6, children: items16 };
-    items6 = [tmp4.container, ];
-    const obj12 = { backgroundColor: gradientSecondaryBackground };
-    items6[1] = obj12;
-    const obj13 = { ref, bounces: null == context, keyboardShouldPersistTaps: str6, onScroll: tmp42, scrollEventThrottle: num2, stickyHeaderIndices: items7, children: items8 };
+    const obj11 = { theme, primaryColor, secondaryColor, children: closure_17(closure_7, obj12) };
+    obj12 = { style: items4, children: items13 };
+    items4 = [tmp4.container, ];
+    const obj13 = { backgroundColor: gradientSecondaryBackground };
+    items4[1] = obj13;
+    const obj14 = { ref, stickyHeaderIndices: tmp38, stickyHeaderHiddenOnScroll: null != header, keyboardShouldPersistTaps: str6, children: items5 };
+    tmp38 = undefined;
+    const ThemeContextProvider = tmp5(tmp2[42]).ThemeContextProvider;
+    const tmp65 = closure_6;
+    if (null != header) {
+      tmp38 = closure_18;
+    }
     str6 = undefined;
-    const ThemeContextProvider = tmp5(tmp2[43]).ThemeContextProvider;
-    const tmp69 = closure_6;
-    if (null != stickyHeader) {
+    if (null != header) {
       str6 = "handled";
     }
-    tmp42 = undefined;
-    if (null != context) {
-      tmp42 = callback;
-    }
-    num2 = undefined;
-    if (null != context) {
-      num2 = 16;
-    }
-    items7 = undefined;
-    if (null != stickyHeader) {
-      items7 = [2];
-    }
-    const obj14 = { style: tmp4.bounceOffset };
-    items8 = [closure_16(closure_7, obj14), closure_16(currentUser(tmp2[31]).ProfileCustomizationHeaderSpacer, {}), stickyHeader, ];
-    const obj15 = { style: obj16, children: items9 };
-    obj16 = { backgroundColor: gradientSecondaryBackground };
-    const obj17 = { user: currentUser, displayProfile: tmpResult1Result, guildId: guild.id, guildMember: stateFromStores, guildMemberProfile: stateFromStores1, pendingAvatarSrc, pendingBanner, pendingThemeColors, disabled: isDisabled };
-    items9 = [closure_16(EditGuildProfileBanner, obj17), ];
-    let tmp66Result = null;
+    const obj15 = { style: tmp4.bounceOffset };
+    items5 = [closure_16(closure_7, obj15), header, ];
+    const obj16 = { style: obj17, children: items6 };
+    obj17 = { backgroundColor: gradientSecondaryBackground };
+    const obj18 = { user: currentUser, displayProfile: tmp16Result, guildId: guild.id, guildMember: stateFromStores, guildMemberProfile: stateFromStores1, pendingAvatarSrc, pendingBanner, pendingThemeColors, disabled: isDisabled };
+    items6 = [closure_16(EditGuildProfileBanner, obj18), ];
+    let tmp62Result = null;
     if (null != guild) {
-      const obj18 = { style: items10, children: closure_16(tmpResult14, obj19) };
-      items10 = [, , , ];
-      ({ avatarBackground: arr10[0], avatarPosition: arr10[1] } = tmp3);
-      items10[2] = tmp4.avatarContainer;
-      items10[3] = obj9;
-      obj19 = { userId: currentUser.id, disabled: tmp46, disableStatus: false, guildId: id2, statusStyle: obj9 };
-      tmp46 = isDisabled;
-      tmpResult14 = tmp(tmp2[44]);
+      const obj19 = { style: items7, children: closure_16(tmpResult10, obj20) };
+      items7 = [, , , ];
+      ({ avatarBackground: arr7[0], avatarPosition: arr7[1] } = tmp3);
+      items7[2] = tmp4.avatarContainer;
+      items7[3] = obj10;
+      obj20 = { userId: currentUser.id, disabled: tmp42, disableStatus: false, guildId: id2, statusStyle: obj10 };
+      tmp42 = isDisabled;
+      tmpResult10 = tmp(analyticsLocations[43]);
       if (!isDisabled) {
-        tmp46 = !result;
+        tmp42 = !result;
       }
       id2 = undefined;
       if (guild != null) {
         id2 = guild.id;
       }
-      tmp66Result = tmp66(tmp68, obj18);
+      tmp62Result = tmp62(tmp64, obj19);
     }
-    const items11 = [tmp66Result, ];
-    const obj20 = { fallbackBackground: gradientFallbackBackground, primaryColor, secondaryColor, containerStyle: items12, children: items13 };
-    items12 = [, , ];
-    ({ profileContentWrapper: arr12[0], profileContent: arr12[1] } = tmp3);
-    const obj21 = { paddingTop: 0, paddingBottom: sum1 };
-    items12[2] = obj21;
-    const obj22 = { customStatusActivity, hasCustomProfileTheme: null != primaryColor, style: null, emojiOnlyStyle: null, editEnabled: true };
-    ({ customStatusBubble: obj26.style, emojiOnlyCustomStatusBubble: obj26.emojiOnlyStyle } = tmp3);
-    items13 = [, , ];
-    const tmpResult15 = tmp(tmp2[45]);
-    items13[0] = closure_16(tmp(tmp2[46]), obj22);
-    const obj23 = { user: currentUser, displayName: tmp50, pronouns: tmp51, badges: tmp24, badgeContainerBackground: containerBackground, displayNameAccessibilityRole: "header", guildId: guild.id, pendingDisplayNameStyles };
-    tmp50 = pendingNickname;
-    const tmpResult16 = tmp(tmp2[47]);
+    const items8 = [tmp62Result, ];
+    const obj21 = { fallbackBackground: gradientFallbackBackground, primaryColor, secondaryColor, containerStyle: items9, children: items10 };
+    items9 = [, , ];
+    ({ profileContentWrapper: arr9[0], profileContent: arr9[1] } = tmp3);
+    const obj22 = { paddingTop: 0, paddingBottom: sum1 };
+    items9[2] = obj22;
+    const obj23 = { customStatusActivity, hasCustomProfileTheme: null != primaryColor, style: null, emojiOnlyStyle: null, editEnabled: true };
+    ({ customStatusBubble: obj25.style, emojiOnlyCustomStatusBubble: obj25.emojiOnlyStyle } = tmp3);
+    items10 = [, , ];
+    const tmpResult11 = tmp(analyticsLocations[44]);
+    items10[0] = closure_16(tmp(analyticsLocations[45]), obj23);
+    const obj24 = { user: currentUser, displayName: tmp46, pronouns: tmp47, badges: tmp20, badgeContainerBackground: containerBackground, displayNameAccessibilityRole: "header", guildId: guild.id, pendingDisplayNameStyles };
+    tmp46 = pendingNickname;
+    const tmpResult12 = tmp(analyticsLocations[46]);
     if (pendingNickname == null) {
-      tmp50 = str;
+      tmp46 = str;
     }
-    tmp51 = str3;
+    tmp47 = str3;
     if ("" !== pendingPronouns) {
-      tmp51 = pendingPronouns;
+      tmp47 = pendingPronouns;
     }
-    items13[1] = closure_16(tmpResult16, obj23);
-    let tmp67Result = null;
+    items10[1] = closure_16(tmpResult12, obj24);
+    let tmp63Result = null;
     if (null != guild) {
-      const obj24 = { style: items14, children: items15 };
-      items14 = [tmp4.formContainer, ];
-      const obj25 = { backgroundColor: containerBackground, paddingBottom: 20 };
-      items14[1] = obj25;
-      let tmp53 = null;
+      const obj26 = { style: items11, children: items12 };
+      items11 = [tmp4.formContainer, ];
+      const obj27 = { backgroundColor: containerBackground, paddingBottom: 20 };
+      items11[1] = obj27;
+      let tmp49 = null;
       if (null == first2) {
-        tmp53 = null;
+        tmp49 = null;
         if (null == first) {
           if (null == first3) {
             const _Object = Object;
             let stringResult = null;
-            if (Object.keys(tmp37).length > 0) {
+            if (Object.keys(tmp33).length > 0) {
               const intl = tmp5(tmp2[16]).intl;
               stringResult = intl.string(tmp5(tmp2[16]).t.s35OuK);
             }
             first3 = stringResult;
           }
-          let tmp66Result5 = null;
+          let tmp62Result5 = null;
           if (null != first3) {
-            tmp66Result5 = null;
+            tmp62Result5 = null;
             if ("" !== first3) {
-              const obj27 = { style: tmp4.errorContainer, children: closure_16(currentUser(tmp2[27]).Text, obj28) };
-              obj28 = { variant: "text-sm/bold", color: "text-feedback-critical", children: first3 };
-              tmp66Result5 = tmp66(tmp68, obj27);
+              const obj28 = { style: tmp4.errorContainer, children: closure_16(currentUser(analyticsLocations[27]).Text, obj29) };
+              obj29 = { variant: "body-sm/semibold", color: "text-feedback-critical", children: first3 };
+              tmp62Result5 = tmp62(tmp64, obj28);
             }
           }
-          tmp53 = tmp66Result5;
+          tmp49 = tmp62Result5;
         }
       }
-      items15 = [tmp53, , , , , , , , , ];
-      const obj29 = {
+      items12 = [tmp49, , , , , , , , , ];
+      const obj30 = {
         inputRef: ref1,
-        label: intl2.string(currentUser(tmp2[16]).t.me1lRk),
+        label: intl2.string(currentUser(analyticsLocations[16]).t.me1lRk),
         errorMessage: first,
         value: pendingNickname,
         onFocus,
@@ -537,32 +497,32 @@ export default function GuildProfileEditForm(currentUser) {
               const obj2 = { guildId: guild.id, nickname };
               return obj.setPendingChanges(obj2);
             },
-        placeholder: tmpResult18.getName(currentUser),
+        placeholder: tmpResult14.getName(currentUser),
         maxLength,
-        disabled: tmp59
+        disabled: tmp55
       };
-      const tmpResult17 = tmp(tmp2[48]);
+      const tmpResult13 = tmp(analyticsLocations[47]);
       intl2 = tmp5(tmp2[16]).intl;
       if (pendingNickname == null) {
         pendingNickname = str;
       }
-      tmp59 = !canEditNickname;
-      tmpResult18 = tmp(tmp2[49]);
+      tmp55 = !canEditNickname;
+      tmpResult14 = tmp(analyticsLocations[48]);
       if (canEditNickname) {
-        tmp59 = isDisabled;
+        tmp55 = isDisabled;
       }
-      items15[1] = closure_16(tmpResult17, obj29);
-      let tmp66Result6 = result;
-      if (tmp66Result6) {
-        const obj30 = { user: currentUser, guildId: guild.id };
-        tmp66Result6 = tmp66(tmp(tmp2[50]), obj30);
+      items12[1] = closure_16(tmpResult13, obj30);
+      let tmp62Result6 = result;
+      if (tmp62Result6) {
+        const obj31 = { user: currentUser, guildId: guild.id };
+        tmp62Result6 = tmp62(tmp(tmp2[49]), obj31);
       }
-      items15[2] = tmp66Result6;
-      const obj31 = {
+      items12[2] = tmp62Result6;
+      const obj32 = {
         inputRef: ref2,
-        label: intl3.string(currentUser(tmp2[16]).t["+T3RI/"]),
+        label: intl3.string(currentUser(analyticsLocations[16]).t["+T3RI/"]),
         errorMessage: first1,
-        description: intl4.string(currentUser(tmp2[16]).t.NZqtIp),
+        description: intl4.string(currentUser(analyticsLocations[16]).t.NZqtIp),
         value: pendingPronouns,
         onFocus,
         onChange(pronouns) {
@@ -576,17 +536,17 @@ export default function GuildProfileEditForm(currentUser) {
         autoCorrect: false,
         disabled: isDisabled
       };
-      const tmpResult19 = tmp(tmp2[48]);
+      const tmpResult15 = tmp(analyticsLocations[47]);
       intl3 = tmp5(tmp2[16]).intl;
       intl4 = tmp5(tmp2[16]).intl;
-      items15[3] = closure_16(tmpResult19, obj31);
-      let tmp66Result7 = null;
+      items12[3] = closure_16(tmpResult15, obj32);
+      let tmp62Result7 = null;
       if (result) {
-        const obj32 = {
+        const obj33 = {
           inputRef: ref3,
-          label: intl5.string(currentUser(tmp2[16]).t.ZzAR2Y),
+          label: intl5.string(currentUser(analyticsLocations[16]).t.ZzAR2Y),
           errorMessage: first2,
-          description: intl6.string(currentUser(tmp2[16]).t.S5O8U2),
+          description: intl6.string(currentUser(analyticsLocations[16]).t.S5O8U2),
           value: pendingBio,
           onFocus,
           onChange(bio) {
@@ -599,16 +559,16 @@ export default function GuildProfileEditForm(currentUser) {
           numberOfLines: 5,
           disabled: isDisabled
         };
-        const tmpResult20 = tmp(tmp2[48]);
+        const tmpResult16 = tmp(analyticsLocations[47]);
         intl5 = tmp5(tmp2[16]).intl;
         intl6 = tmp5(tmp2[16]).intl;
         if (pendingBio == null) {
           pendingBio = str4;
         }
-        tmp66Result7 = tmp66(tmpResult20, obj32);
+        tmp62Result7 = tmp62(tmpResult16, obj33);
       }
-      items15[4] = tmp66Result7;
-      const obj33 = {
+      items12[4] = tmp62Result7;
+      const obj34 = {
         pendingAvatarSrc,
         pendingThemeColors,
         user: currentUser,
@@ -620,38 +580,38 @@ export default function GuildProfileEditForm(currentUser) {
             },
         showResetMenu: canResetThemeColorsResult
       };
-      items15[5] = closure_16(tmp(tmp2[51]), obj33);
-      const obj34 = { user: currentUser, guildId: guild.id, pendingAvatarDecoration };
-      items15[6] = closure_16(tmp(tmp2[52]), obj34);
-      const obj35 = { user: currentUser, guildId: guild.id, pendingProfileEffect, displayProfile: tmpResult1Result };
-      items15[7] = closure_16(tmp(tmp2[53]), obj35);
-      const obj36 = { user: currentUser, guildId: guild.id, pendingProfileFrame, displayProfile: tmpResult1Result };
-      items15[8] = closure_16(tmp(tmp2[54]), obj36);
-      const obj37 = { user: currentUser, pendingNameplate, guildId: guild.id };
-      items15[9] = closure_16(tmp(tmp2[55]), obj37);
-      tmp67Result = tmp67(tmp68, obj24);
+      items12[5] = closure_16(tmp(analyticsLocations[50]), obj34);
+      const obj35 = { user: currentUser, guildId: guild.id, pendingAvatarDecoration };
+      items12[6] = closure_16(tmp(analyticsLocations[51]), obj35);
+      const obj36 = { user: currentUser, guildId: guild.id, pendingProfileEffect, displayProfile: tmp16Result };
+      items12[7] = closure_16(tmp(analyticsLocations[52]), obj36);
+      const obj37 = { user: currentUser, guildId: guild.id, pendingProfileFrame, displayProfile: tmp16Result };
+      items12[8] = closure_16(tmp(analyticsLocations[53]), obj37);
+      const obj38 = { user: currentUser, pendingNameplate, guildId: guild.id };
+      items12[9] = closure_16(tmp(analyticsLocations[54]), obj38);
+      tmp63Result = tmp63(tmp64, obj26);
     }
-    const obj38 = { children: items11 };
-    items13[2] = tmp67Result;
-    items11[1] = closure_17(tmpResult15, obj20);
-    items9[1] = closure_17(closure_7, obj38);
-    items8[3] = closure_17(closure_7, obj15);
-    items16 = [closure_17(tmp69, obj13), ];
-    if (tmp66Result8) {
-      const obj39 = {
+    const obj39 = { children: items8 };
+    items10[2] = tmp63Result;
+    items8[1] = closure_17(tmpResult11, obj21);
+    items6[1] = closure_17(closure_7, obj39);
+    items5[2] = closure_17(closure_7, obj16);
+    items13 = [closure_17(tmp65, obj14), ];
+    if (tmp62Result8) {
+      const obj40 = {
         onButtonPress: function handleUpsellPress() {
               let obj2;
               const obj = { analyticsLocation: obj2, analyticsLocations, premiumFeatureCardOrder: PremiumFeaturesCards.PremiumFeatureCardOrder.TIER_2_LEADING };
               obj2 = { object: constants.BUTTON_CTA };
               const tmp = openPremiumModalDefault;
-              const merged = Object.assign(closure_18);
+              const merged = Object.assign(closure_19);
               tmp(obj);
             },
         onLayout
       };
-      tmp66Result8 = tmp66(GuildProfileTryItOutUpsellExperimentWrapper, obj39);
+      tmp62Result8 = tmp62(GuildProfileTryItOutUpsellExperimentWrapper, obj40);
     }
-    items16[1] = tmp66Result8;
-    return closure_16(ThemeContextProvider, obj10);
+    items13[1] = tmp62Result8;
+    return closure_16(ThemeContextProvider, obj11);
   }
 };

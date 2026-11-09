@@ -1,22 +1,24 @@
-// Module ID: 9141
-// Function ID: 9142
+// Module ID: 9221
+// Function ID: 9222
 // Name: useGameAutocomplete
-// Dependencies: [32, 19, 8680, 1072, 504, 8681, 9142, 9143, 2]
+// Dependencies: [32, 19, 8751, 1072, 504, 8752, 9222, 9223, 2]
 // Exports: useDebouncedGameAutocomplete
 
-// Module 9141 (useGameAutocomplete)
+// Module 9221 (useGameAutocomplete)
 import Constants from "Constants" /* 1072 */;
-import GameAutocompleteUtils from "GameAutocompleteUtils" /* 8681 */;
-import GameAutocompleteActionCreators from "GameAutocompleteActionCreators" /* 9142 */;
-import GameSearchSession from "GameSearchSession" /* 9143 */;
+import GameAutocompleteUtils from "GameAutocompleteUtils" /* 8752 */;
+import GameAutocompleteActionCreators from "GameAutocompleteActionCreators" /* 9222 */;
+import GameSearchSession from "GameSearchSession" /* 9223 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GameAutocompleteStore from "GameAutocompleteStore" /* 8680 */;
+import GameAutocompleteStore from "GameAutocompleteStore" /* 8751 */;
 import get_initialized from "get initialized" /* 504 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let results;
 
+let obj2;
 let _slicedToArray = _slicedToArray_mod;
 const QueryIds = Constants.QueryIds;
 let obj = {
@@ -26,7 +28,7 @@ let obj = {
     return GAME_AUTOCOMPLETE(obj.normalizeGameAutocompleteQuery(name), arg1);
   },
   get(arg0, arg1) {
-    let results = GameAutocompleteStore.getResults(arg0, arg1);
+    results = GameAutocompleteStore.getResults(arg0, arg1);
     if (results == null) {
       results = null;
     }
@@ -39,24 +41,11 @@ let obj = {
   getIsLoading(arg0, arg1) {
     return GameAutocompleteStore.isFetching(arg0, arg1);
   },
-  retryConfig: {
-    retryableErrors: function isRetryableError(status) {
-      status = status.status;
-      let tmp = null != status;
-      if (tmp) {
-        let tmp2 = 429 === status;
-        if (!tmp2) {
-          tmp2 = status >= 500 && 503 !== status;
-          const tmp3 = status >= 500 && 503 !== status;
-        }
-        tmp = tmp2;
-      }
-      return tmp;
-    }
-  },
+  retryConfig: obj2,
   staleAfter: 3600,
   failureStaleAfter: 60
 };
+obj2 = { retryableErrors: GameAutocompleteUtils.isRetryableGameSearchError };
 const fetchStore = get_initialized.createFetchStore(GameAutocompleteStore, obj);
 let result = size.fileFinishedImporting("modules/games/autocomplete/useGameAutocomplete.tsx");
 
@@ -134,7 +123,7 @@ export function useDebouncedGameAutocomplete(name, arg1) {
     let tmp11 = null != tmp10;
     if (tmp11) {
       let results1;
-      const results = tmp10.results;
+      results = tmp10.results;
       if (tmp8 != null) {
         results1 = tmp8.results;
       }

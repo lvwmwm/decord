@@ -1,16 +1,16 @@
-// Module ID: 14637
-// Function ID: 14638
+// Module ID: 14872
+// Function ID: 14873
 // Name: PlayStationLinkModal
-// Dependencies: [19, 14638, 21, 7558, 8359, 14636, 1113, 14639, 9731, 14641, 14643, 14645, 14646, 9730, 14635, 7169, 2]
+// Dependencies: [19, 14873, 21, 7630, 8429, 14871, 1113, 14874, 9821, 14876, 14878, 14880, 14881, 9820, 14870, 7231, 2]
 // Exports: default
 
-// Module 14637 (PlayStationLinkModal)
+// Module 14872 (PlayStationLinkModal)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
-import HeaderActionButton2 from "HeaderActionButton" /* 7558 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8359 */;
-import PlayStationLinkModalActionCreatorsDefault from "PlayStationLinkModalActionCreators" /* 14636 */;
-import PlayStationLinkConstants from "PlayStationLinkConstants" /* 14638 */;
+import HeaderActionButton2 from "HeaderActionButton" /* 7630 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8429 */;
+import PlayStationLinkModalActionCreatorsDefault from "PlayStationLinkModalActionCreators" /* 14871 */;
+import PlayStationLinkConstants from "PlayStationLinkConstants" /* 14873 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -28,13 +28,20 @@ const result = size.fileFinishedImporting("modules/user_settings/connections/nat
 
 export default function PlayStationLinkModal(platformType) {
   platformType = platformType.platformType;
+  let flag = platformType.startAtSignIn;
   const locationStack = platformType.locationStack;
-  let obj = platformType(9730);
-  const twoWayLinkStyles = obj.useTwoWayLinkStyles();
-  const items = [platformType, twoWayLinkStyles];
+  if (flag === undefined) {
+    flag = false;
+  }
+  let twoWayLinkStyles;
+  let obj = platformType(twoWayLinkStyles[13]);
+  twoWayLinkStyles = obj.useTwoWayLinkStyles();
+  const items = [platformType, twoWayLinkStyles, flag];
+  const tmp6 = flag ? constants.PRE_CONNECT : constants.LANDING;
   const memo = react.useMemo(() => {
+    let closure_1 = flag;
     function onClose() {
-      const obj = onClose(closure_1_2[5]);
+      const obj = autoStart(onClose[5]);
       return obj.hideModal();
     }
     function blank() {
@@ -47,7 +54,7 @@ export default function PlayStationLinkModal(platformType) {
       headerStyle: twoWayLinkStyles.navHeader,
       render() {
         const obj = { platformType };
-        return closure_2_5(platformType(closure_2_2[7]).PlayStationLinkLanding, obj);
+        return closure_2_5(platformType(twoWayLinkStyles[7]).PlayStationLinkLanding, obj);
       }
     };
     return {
@@ -57,11 +64,11 @@ export default function PlayStationLinkModal(platformType) {
         headerRight: CloseButton,
         headerStyle: twoWayLinkStyles.navHeader,
         headerTitle() {
-          return closure_1_5(platformType(closure_1_2[8]).TwoWayLinkStepHeader, { idx: 1, total: 2 });
+          return closure_1_5(platformType(twoWayLinkStyles[8]).TwoWayLinkStepHeader, { idx: 1, total: 2 });
         },
         render() {
-          const obj = { platformType };
-          return closure_2_5(platformType(closure_2_2[9]).PlayStationLinkPreConnect, obj);
+          const obj = { platformType, autoStart };
+          return closure_2_5(platformType(twoWayLinkStyles[9]).PlayStationLinkPreConnect, obj);
         }
       },
       [closure_2_4.DISCORD_CONSENT]: {
@@ -69,14 +76,14 @@ export default function PlayStationLinkModal(platformType) {
         headerRight: CloseButton,
         headerStyle: twoWayLinkStyles.navHeader,
         headerTitle() {
-          return closure_1_5(platformType(closure_1_2[8]).TwoWayLinkStepHeader, { idx: 2, total: 2 });
+          return closure_1_5(platformType(twoWayLinkStyles[8]).TwoWayLinkStepHeader, { idx: 2, total: 2 });
         },
         render(arg0) {
           let callbackCode;
           let callbackState;
           ({ callbackCode, callbackState } = arg0);
           const obj = { platformType, callbackCode, callbackState };
-          return closure_2_5(platformType(closure_2_2[10]).PlayStationLinkDiscordConsent, obj);
+          return closure_2_5(platformType(twoWayLinkStyles[10]).PlayStationLinkDiscordConsent, obj);
         }
       },
       [closure_2_4.SUCCESS]: {
@@ -86,7 +93,7 @@ export default function PlayStationLinkModal(platformType) {
         headerStyle: twoWayLinkStyles.navHeader,
         render() {
           const obj = { onClose };
-          return closure_2_5(platformType(closure_2_2[11]).PlayStationLinkSuccess, obj);
+          return closure_2_5(platformType(twoWayLinkStyles[11]).PlayStationLinkSuccess, obj);
         }
       },
       [closure_2_4.ERROR]: {
@@ -96,14 +103,14 @@ export default function PlayStationLinkModal(platformType) {
         headerStyle: twoWayLinkStyles.navHeader,
         render(errorCode) {
           const obj = { onClose, errorCode: errorCode.errorCode };
-          return closure_2_5(platformType(closure_2_2[12]).PlayStationLinkError, obj);
+          return closure_2_5(platformType(twoWayLinkStyles[12]).PlayStationLinkError, obj);
         }
       }
     };
   }, items);
-  const obj2 = platformType(14635);
-  const accountLinkStepTracking = obj2.useAccountLinkStepTracking(platformType, locationStack);
-  const Navigator = platformType(7169).Navigator;
-  const intl = platformType(1113).intl;
-  return <Navigator onStateChange={accountLinkStepTracking} screens={memo} initialRouteName={constants.LANDING} headerBackTitle={intl.string(platformType(1113).t["13/7kX"])} />;
+  const tmpResult = platformType(twoWayLinkStyles[14]);
+  const accountLinkStepTracking = tmpResult.useAccountLinkStepTracking(platformType, locationStack, tmp6);
+  const Navigator = tmp(tmp2[15]).Navigator;
+  const intl = tmp(tmp2[6]).intl;
+  return <Navigator onStateChange={accountLinkStepTracking} screens={memo} initialRouteName={tmp6} headerBackTitle={intl.string(platformType(twoWayLinkStyles[6]).t["13/7kX"])} />;
 };

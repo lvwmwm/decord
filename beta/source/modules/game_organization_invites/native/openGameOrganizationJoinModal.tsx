@@ -1,35 +1,81 @@
-// Module ID: 13197
-// Function ID: 13198
+// Module ID: 13436
+// Function ID: 13437
 // Name: openGameOrganizationJoinModal
-// Dependencies: [11363, 11364, 13198, 6744, 13200, 1994, 2]
+// Dependencies: [5, 13437, 13441, 6799, 13445, 2118, 2]
 // Exports: default
 
-// Module 13197 (openGameOrganizationJoinModal)
-import asyncRequire from "asyncRequire" /* 1994 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6744 */;
-import useGameOrganizationCharacterEligibilityFetch2 from "useGameOrganizationCharacterEligibilityFetch" /* 13198 */;
-import GameOrganizationInviteStore from "GameOrganizationInviteStore" /* 11363 */;
-import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11364 */;
+// Module 13436 (openGameOrganizationJoinModal)
+import checkGameOrganizationJoinEligibilityDefault from "checkGameOrganizationJoinEligibility" /* 13437 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
-let closure_4;
-let hasOwnProperty;
-({ GameOrganizationCharacterMode: closure_4, GameOrganizationInviteStates: hasOwnProperty } = GameOrganizationInviteConstants);
+let closure_1, closure_2;
+
+let obj = function _openGameOrganizationJoinModal() {
+  obj = _asyncToGenerator(async (code) => {
+    let c3 = 0;
+    let c4 = 0;
+    return (async (arg0, value) => {
+      if (c4 === 2) {
+        c4 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          return { value, done: true };
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c4 = 2;
+          if (0 === c3) {
+            if (arg0 === 1) {
+              c4 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c4 = 3;
+              return { value, done: true };
+            } else {
+              closure_2 = tmp4;
+              closure_1 = undefined;
+              c3 = 1;
+              c4 = 1;
+              const obj4 = { value: checkGameOrganizationJoinEligibilityDefault(code), done: false };
+              return obj4;
+            }
+          } else if (arg0 === 1) {
+            c4 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c4 = 3;
+            return { value, done: true };
+          } else {
+            closure_1 = value;
+            if ("noop" !== closure_1) {
+              if ("eligible" === closure_1) {
+                const obj6 = { code };
+                obj = closure_130_1(closure_130_2[3]);
+                obj.pushLazy(closure_130_0(closure_130_2[5])(closure_130_2[4], closure_130_2.paths), obj6);
+              } else {
+                closure_130_1(closure_130_2[2])(code, closure_1);
+              }
+            }
+            c4 = 3;
+            return { value: "HermesInternal", done: null };
+          }
+        } catch (tmp23) {
+          c4 = 3;
+          throw tmp23;
+        }
+      }
+    })();
+  });
+  return obj(...arguments);
+};
 const result = size.fileFinishedImporting("modules/game_organization_invites/native/openGameOrganizationJoinModal.tsx");
 
-export default function openGameOrganizationJoinModal(code) {
-  const invite = GameOrganizationInviteStore.getInvite(code);
-  let state;
-  if (invite != null) {
-    state = invite.state;
-  }
-  const tmp3 = state === hasOwnProperty.RESOLVED && invite.characterMode === constants.MULTI;
-  if (tmp3) {
-    const useGameOrganizationCharacterEligibilityFetch = useGameOrganizationCharacterEligibilityFetch2.useGameOrganizationCharacterEligibilityFetch;
-    const items = [code];
-    const many = useGameOrganizationCharacterEligibilityFetch.fetchMany(items);
-  }
-  const obj = ModalActionCreatorsDefault;
-  const obj2 = { code };
-  obj.pushLazy(asyncRequire(13200, dependencyMap.paths), obj2);
+export default function openGameOrganizationJoinModal() {
+  return obj(...arguments);
 };

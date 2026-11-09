@@ -1,20 +1,20 @@
-// Module ID: 15147
-// Function ID: 15148
+// Module ID: 15434
+// Function ID: 15435
 // Name: SafetyWarningAgeUtils
-// Dependencies: [2042, 1113, 2]
+// Dependencies: [2166, 1113, 2]
 // Exports: formatSafetyWarningAge, getDaysAgo
 
-// Module 15147 (SafetyWarningAgeUtils)
+// Module 15434 (SafetyWarningAgeUtils)
 import intl3 from "intl" /* 1113 */;
-import _modDef2042 from "module_2042" /* 2042 */;
+import _modDef2166 from "module_2166" /* 2166 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/safety_hub/SafetyWarningAgeUtils.tsx");
 
 export function getDaysAgo(parsed) {
-  const diff = _modDef2042().diff;
-  _modDef2042();
-  const obj = _modDef2042;
+  const diff = _modDef2166().diff;
+  _modDef2166();
+  const obj = _modDef2166;
   return diff(obj.unix(parsed), "days");
 }
 export function formatSafetyWarningAge(daysAgo, isSafetyWarningAgeTextEnabled) {

@@ -1,27 +1,27 @@
-// Module ID: 19737
-// Function ID: 19738
+// Module ID: 20147
+// Function ID: 20148
 // Name: GuildSettingsModalStickers
-// Dependencies: [19, 17, 4885, 4946, 1383, 1072, 4842, 21, 1113, 19738, 9920, 15407, 5014, 575, 1625, 504, 9020, 19740, 7208, 8463, 5624, 6451, 5634, 19741, 8177, 6027, 7060, 6975, 8667, 10282, 1187, 6041, 6984, 19747, 2]
+// Dependencies: [19, 17, 5011, 5072, 1385, 1072, 4968, 21, 1113, 20148, 10042, 15700, 5140, 575, 1627, 504, 9100, 20150, 7271, 8534, 5751, 6584, 5758, 20151, 8246, 6159, 7126, 7038, 8738, 10401, 1187, 6173, 7047, 20157, 2]
 
-// Module 19737 (GuildSettingsModalStickers)
+// Module 20147 (GuildSettingsModalStickers)
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
-import StickersConstants from "StickersConstants" /* 4842 */;
-import TableRow2 from "TableRow" /* 6975 */;
-import TableRowGroup2 from "TableRowGroup" /* 7060 */;
-import GuildBoostingUtils from "GuildBoostingUtils" /* 8463 */;
-import BoostGemIcon from "BoostGemIcon" /* 9920 */;
-import BoostTier3Icon from "BoostTier3Icon" /* 15407 */;
-import BoostGemOutlineIcon from "BoostGemOutlineIcon" /* 19738 */;
-import showGuildSettingsStickerCreateModalDefault from "showGuildSettingsStickerCreateModal" /* 19741 */;
+import StickersConstants from "StickersConstants" /* 4968 */;
+import TableRow2 from "TableRow" /* 7038 */;
+import TableRowGroup2 from "TableRowGroup" /* 7126 */;
+import GuildBoostingUtils from "GuildBoostingUtils" /* 8534 */;
+import BoostGemIcon from "BoostGemIcon" /* 10042 */;
+import BoostTier3Icon from "BoostTier3Icon" /* 15700 */;
+import BoostGemOutlineIcon from "BoostGemOutlineIcon" /* 20148 */;
+import showGuildSettingsStickerCreateModalDefault from "showGuildSettingsStickerCreateModal" /* 20151 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildStore from "GuildStore" /* 4885 */;
-import PermissionStore from "PermissionStore" /* 4946 */;
-import UserStore from "UserStore" /* 1383 */;
+import GuildStore from "GuildStore" /* 5011 */;
+import PermissionStore from "PermissionStore" /* 5072 */;
+import UserStore from "UserStore" /* 1385 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -38,13 +38,13 @@ let intl4;
 let map1;
 let metroImportAll;
 let tmp2;
-const LockIcon = tmp2(8667);
+const LockIcon = tmp2(8738);
 ({ ScrollView: c3, View: closure_4 } = react_native);
 ({ AppliedGuildBoostsRequiredForBoostedGuildTier: metroImportAll, BoostedGuildTiers } = Constants);
 const GuildFeatures = Constants.GuildFeatures;
 const MAX_STICKER_FILE_SIZE = StickersConstants.MAX_STICKER_FILE_SIZE;
 ({ jsx: closure_12, jsxs: map1 } = Fragment);
-let obj = { tier: BoostedGuildTiers.NONE, title: intl.string(intl5.t.tfVXhP), IconComponent: "applicationId" };
+let obj = { tier: BoostedGuildTiers.NONE, title: intl.string(intl5.t.tfVXhP), IconComponent: "r" };
 intl = intl5.intl;
 let items = [obj, , , ];
 let obj2 = { tier: BoostedGuildTiers.TIER_1, title: intl2.string(intl5.t.nzXtaS), IconComponent: BoostGemOutlineIcon.BoostGemOutlineIcon };
@@ -131,11 +131,11 @@ const memoResult = react.memo(function GuildSettingsModalStickers(guildId) {
     const tmp10 = closure_12;
     let tmp8 = closure_13;
     const tmp9 = guildTier;
-    let obj4 = { variant: "heading-md/semibold", style: tmp3.label, children: intl.string(tmp4(tmp2[8]).t.yxVsBJ) };
+    let obj4 = { variant: "heading-sm/semibold", style: tmp3.label, children: intl.string(tmp4(tmp2[8]).t.yxVsBJ) };
     let Text = tmp4(tmp2[20]).Text;
     intl = tmp4(tmp2[8]).intl;
     items2 = [closure_12(Text, obj4), , , , ];
-    let obj5 = { variant: "text-sm/medium", color: "text-muted", style: tmp3.label, children: format(kpcMft, obj6) };
+    let obj5 = { variant: "body-sm/medium", color: "text-muted", style: tmp3.label, children: format(kpcMft, obj6) };
     const Text2 = tmp4(tmp2[20]).Text;
     const intl2 = tmp4(tmp2[8]).intl;
     format = intl2.format;
@@ -232,7 +232,7 @@ const memoResult = react.memo(function GuildSettingsModalStickers(guildId) {
               obj3 = { style: closure_1.stickerSlot, children: closure_1_12(tmp15, obj4) };
               const TableRow = guildId(guild[27]).TableRow;
               obj4 = { sticker: closure_5[+closure_6], size: closure_1_1(guild[13]).space.PX_48, animated: true };
-              const obj5 = { variant: "heading-sm/semibold", color: "text-strong", style: closure_1.label, children: closure_5[+closure_6].name };
+              const obj5 = { variant: "heading-xs/semibold", color: "text-strong", style: closure_1.label, children: closure_5[+closure_6].name };
               tmp15 = closure_1_1(guild[29]);
               items = [closure_1_12(guildId(guild[20]).Text, obj5), ];
               let tmp16Result = null;
@@ -243,7 +243,7 @@ const memoResult = react.memo(function GuildSettingsModalStickers(guildId) {
                 const obj6 = { user, size: guildId(guild[30]).AvatarSizes.XSMALL_20, guildId };
                 const Avatar = tmp10(tmp11[30]).Avatar;
                 items1 = [closure_1_12(Avatar, obj6), ];
-                const obj7 = { variant: "text-sm/medium", color: "text-subtle", children: tmp14Result.getName(guildId, undefined, user) };
+                const obj7 = { variant: "body-sm/medium", color: "text-subtle", children: tmp14Result.getName(guildId, undefined, user) };
                 const Text = tmp10(tmp11[20]).Text;
                 tmp14Result = tmp14(guild[31]);
                 items1[1] = closure_1_12(Text, obj7);

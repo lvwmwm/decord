@@ -1,23 +1,23 @@
-// Module ID: 16567
-// Function ID: 16568
+// Module ID: 16884
+// Function ID: 16885
 // Name: GuildSelectComponentActionSheet
-// Dependencies: [32, 19, 17, 4885, 6772, 21, 5014, 6073, 1113, 5258, 12156, 6957, 6041, 1187, 5624, 6779, 2]
+// Dependencies: [32, 19, 17, 5011, 6827, 21, 5140, 6206, 1113, 5374, 12326, 7020, 6173, 1187, 5751, 6834, 2]
 // Exports: default
 
-// Module 16567 (GuildSelectComponentActionSheet)
+// Module 16884 (GuildSelectComponentActionSheet)
 import react_native from "react-native" /* 17 */;
 import native from "native" /* 1187 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 6041 */;
-import InteractionComponentTypes from "InteractionComponentTypes" /* 6073 */;
-import SelectComponentActionSheetDefault from "SelectComponentActionSheet" /* 12156 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 6173 */;
+import InteractionComponentTypes from "InteractionComponentTypes" /* 6206 */;
+import SelectComponentActionSheetDefault from "SelectComponentActionSheet" /* 12326 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4885 */;
-import SortedGuildStore from "SortedGuildStore" /* 6772 */;
+import GuildStore from "GuildStore" /* 5011 */;
+import SortedGuildStore from "SortedGuildStore" /* 6827 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -138,7 +138,7 @@ export default function GuildSelectComponentActionSheet(arg0) {
       if (username == null) {
         username = tmp.username;
       }
-      items[1] = tmp11(Text, { variant: "text-sm/medium", color: "text-default", children: username });
+      items[1] = tmp11(Text, { variant: "body-sm/medium", color: "text-default", children: username });
       return tmp5(tmp6, obj2);
     },
     selectionActionComponent: obj3,

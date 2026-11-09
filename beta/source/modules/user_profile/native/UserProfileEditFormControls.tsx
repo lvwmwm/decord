@@ -1,22 +1,22 @@
-// Module ID: 16475
-// Function ID: 16476
+// Module ID: 16793
+// Function ID: 16794
 // Name: UserProfileEditFormControls
-// Dependencies: [32, 19, 17, 21, 5014, 575, 5624, 9528, 1187, 1113, 6980, 6984, 7083, 1375, 7370, 2]
+// Dependencies: [32, 19, 17, 21, 5140, 575, 5751, 9612, 1187, 1113, 7043, 7047, 7149, 1377, 7430, 2]
 // Exports: UserProfileEditFormButton, UserProfileEditFormLabelBadges, UserProfileEditFormSwitch
 
-// Module 16475 (UserProfileEditFormControls)
+// Module 16793 (UserProfileEditFormControls)
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import PlatformUtils from "PlatformUtils" /* 1375 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import Pressables from "Pressables" /* 6980 */;
-import NitroWheelIcon from "NitroWheelIcon" /* 9528 */;
+import PlatformUtils from "PlatformUtils" /* 1377 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import Pressables from "Pressables" /* 7043 */;
+import NitroWheelIcon from "NitroWheelIcon" /* 9612 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -28,14 +28,14 @@ let obj3;
 let obj4;
 function FormControlText(text) {
   text = text.text;
-  const obj = { variant: "text-sm/medium", color: "text-default", style: closure_8().formControlText, children: text };
+  const obj = { variant: "body-sm/medium", color: "text-default", style: closure_8().formControlText, children: text };
   return metroRequire(Text_Text.Text, obj);
 }
 function FormControlSubtext(text) {
   text = text.text;
   let tmp2 = null;
   if (null != text) {
-    const obj = { variant: "text-xs/medium", color: "text-muted", style: tmp.formControlText, children: text };
+    const obj = { variant: "body-xs/medium", color: "text-muted", style: tmp.formControlText, children: text };
     tmp2 = metroRequire(Text_Text.Text, obj);
   }
   return tmp2;
@@ -149,12 +149,12 @@ export function UserProfileEditFormButton(loading) {
   }
   items1[1] = content;
   items1[2] = trailing;
-  items1[3] = !flag2 && metroRequire(tmp3(6984).TableRowArrow, {});
-  const tmp12 = !flag2 && metroRequire(tmp3(6984).TableRowArrow, {});
+  items1[3] = !flag2 && metroRequire(tmp3(7047).TableRowArrow, {});
+  const tmp12 = !flag2 && metroRequire(tmp3(7047).TableRowArrow, {});
   const tmp2Result = metroImportDefault(PressableHighlight, obj);
   const obj5 = { label, labelTrailing, children: tmp2Result2 };
   tmp2Result2 = tmp2Result;
-  const Input = tmp3(7083).Input;
+  const Input = tmp3(7149).Input;
   const tmp15 = metroRequire;
   if (null != footer) {
     const obj6 = { style: tmp.buttonGroup, children: items3 };
@@ -193,7 +193,7 @@ export function UserProfileEditFormSwitch(arg0) {
     closure_2(value);
   }, items);
   if (isAndroidResult) {
-    PressableHighlight = tmp2(6980).PressableHighlight;
+    PressableHighlight = tmp2(7043).PressableHighlight;
   } else {
     PressableHighlight = React3;
   }
@@ -206,7 +206,7 @@ export function UserProfileEditFormSwitch(arg0) {
   }
   let tmp10;
   const obj2 = { label, children: tmp9(PressableHighlight, obj3) };
-  const Input = tmp2(7083).Input;
+  const Input = tmp2(7149).Input;
   tmp9 = metroImportDefault;
   if (isAndroidResult) {
     tmp10 = handleOnPress;
@@ -232,6 +232,6 @@ export function UserProfileEditFormSwitch(arg0) {
   if (accessibilityLabel == null) {
     accessibilityLabel = subLabel;
   }
-  items1 = [metroRequire(FormControlText, { text: subLabel }), metroRequire(tmp2(7370).FormSwitch, { "aria-hidden": true, value, onValueChange: handleOnPress, disabled })];
+  items1 = [metroRequire(FormControlText, { text: subLabel }), metroRequire(tmp2(7430).FormSwitch, { "aria-hidden": true, value, onValueChange: handleOnPress, disabled })];
   return metroRequire(Input, obj2);
 }

@@ -1,16 +1,16 @@
-// Module ID: 9730
-// Function ID: 9731
+// Module ID: 9820
+// Function ID: 9821
 // Name: TwoWayLinkStyles
-// Dependencies: [5014, 575, 2]
+// Dependencies: [5140, 575, 2]
 
-// Module 9730 (TwoWayLinkStyles)
+// Module 9820 (TwoWayLinkStyles)
 import nativeDefault from "native" /* 575 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let createStyles = createStyles_mod;
 createStyles = createStyles.createStyles;
-const obj = { container: { flex: 1, alignItems: "stretch", justifyContent: "flex-start", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW }, navHeader: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, borderBottomColor: nativeDefault.colors.BORDER_SUBTLE, shadowColor: "transparent" }, content: { alignItems: "center", flex: 1, paddingTop: 24, paddingHorizontal: 16, maxWidth: 480, alignSelf: "center" }, title: { textAlign: "center" }, stepHeader: { textTransform: "uppercase" }, body: { marginTop: 8, textAlign: "center" }, bodyContent: { flexDirection: "column", gap: 24, padding: 16 }, footerContainer: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, borderTopColor: nativeDefault.colors.BORDER_SUBTLE, borderTopWidth: 1, paddingTop: 24, paddingBottom: 18, paddingHorizontal: 12, width: "100%", flexShrink: 0 }, footerButton: { marginBottom: 6 } };
+const obj = { container: { flex: 1, alignItems: "stretch", justifyContent: "flex-start", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW }, navHeader: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, borderBottomColor: nativeDefault.colors.BORDER_SUBTLE, shadowColor: "transparent" }, content: { alignItems: "center", flex: 1, paddingTop: 24, paddingHorizontal: 16, maxWidth: 480, alignSelf: "center" }, title: { textAlign: "center" }, body: { marginTop: 8, textAlign: "center" }, bodyContent: { flexDirection: "column", gap: 24, padding: 16 }, footerContainer: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, borderTopColor: nativeDefault.colors.BORDER_SUBTLE, borderTopWidth: 1, paddingTop: 24, paddingBottom: 18, paddingHorizontal: 12, width: "100%", flexShrink: 0 }, footerButton: { marginBottom: 6 } };
 ({ flex: 1, alignItems: "stretch", justifyContent: "flex-start", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW });
 ({ backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, borderBottomColor: nativeDefault.colors.BORDER_SUBTLE, shadowColor: "transparent" });
 ({ backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, borderTopColor: nativeDefault.colors.BORDER_SUBTLE, borderTopWidth: 1, paddingTop: 24, paddingBottom: 18, paddingHorizontal: 12, width: "100%", flexShrink: 0 });

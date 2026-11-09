@@ -1,17 +1,17 @@
-// Module ID: 6939
-// Function ID: 6940
+// Module ID: 6994
+// Function ID: 6995
 // Name: DesktopNativeUtils
-// Dependencies: [32, 5, 1072, 38, 5249, 1375, 510, 6940, 6941, 4, 6942, 6943, 1377, 1282, 5769, 2]
+// Dependencies: [32, 5, 1072, 38, 5365, 1377, 510, 6995, 6996, 4, 6997, 6998, 1378, 1282, 5898, 2]
 
-// Module 6939 (DesktopNativeUtils)
+// Module 6994 (DesktopNativeUtils)
 import logger_Logger from "logger/Logger" /* 4 */;
 import Storage3 from "Storage" /* 510 */;
 import Constants from "Constants" /* 1072 */;
-import flow_Client from "flow/Client" /* 5249 */;
-import discord_common_DiscordNative from "discord_common/DiscordNative" /* 5769 */;
-import DomainMigrationUtils from "DomainMigrationUtils" /* 6940 */;
-import GameDetectionDebugLevel from "GameDetectionDebugLevel" /* 6941 */;
-import IPCEvents from "IPCEvents" /* 6942 */;
+import flow_Client from "flow/Client" /* 5365 */;
+import discord_common_DiscordNative from "discord_common/DiscordNative" /* 5898 */;
+import DomainMigrationUtils from "DomainMigrationUtils" /* 6995 */;
+import GameDetectionDebugLevel from "GameDetectionDebugLevel" /* 6996 */;
+import IPCEvents from "IPCEvents" /* 6997 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
@@ -20,7 +20,7 @@ const require = globalThis.__r;
 let _require, c10, c9, closeResult, importDefault;
 
 let tmp2;
-const FileExtensionUtils = tmp2(6943);
+const FileExtensionUtils = tmp2(6998);
 function sanitizeFilename(str) {
   try {
     const _decodeURIComponent = decodeURIComponent;
@@ -76,7 +76,7 @@ obj = function _transcodeImageToPng() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -489,6 +489,13 @@ let obj2 = {
       const result = setProcessObserverCollectExecutableFingerprint(arg0);
     }
   },
+  setProcessObserverSteamSkuDetection(arg0) {
+    const discordUtils = this.getDiscordUtils();
+    const setProcessObserverSteamSkuDetection = discordUtils.setProcessObserverSteamSkuDetection;
+    if (setProcessObserverSteamSkuDetection != null) {
+      const result = setProcessObserverSteamSkuDetection(arg0);
+    }
+  },
   getExecutableFingerprintForProcess(arg0) {
     const self = this;
     let closure_0 = arg0;
@@ -730,7 +737,7 @@ let obj2 = {
               obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           } else {
             try {
@@ -764,7 +771,7 @@ let obj2 = {
                 const dock = closure_129_0.dock;
                 dock.cancelBounce(closure_0);
                 c3 = 3;
-                return { value: "HermesInternal", done: "HermesInternal" };
+                return { value: "HermesInternal", done: null };
               }
             } catch (tmp10) {
               c3 = 3;
@@ -790,7 +797,7 @@ let obj2 = {
           obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -819,7 +826,7 @@ let obj2 = {
             return obj;
           }
           c0 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp8) {
           c0 = 3;
           throw tmp8;
@@ -845,7 +852,7 @@ let obj2 = {
           obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -952,7 +959,7 @@ let obj2 = {
             return obj;
           } else {
             c4 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp39) {
           c4 = 3;
@@ -976,7 +983,7 @@ let obj2 = {
           obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -1024,7 +1031,7 @@ let obj2 = {
             return obj;
           } else {
             c3 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp12) {
           c3 = 3;
@@ -1037,7 +1044,7 @@ let obj2 = {
     if (null != uri) {
       const tmp = require;
       if (require("PlatformUtils").isPlatformEmbedded) {
-        const tmpResult = tmp(6943);
+        const tmpResult = tmp(6998);
         const decideFileExtensionResult = tmpResult.decideFileExtension(uri, contentType);
         const hasItem = null == decideFileExtensionResult || set2.has(decideFileExtensionResult);
         return hasItem;
@@ -1062,7 +1069,7 @@ let obj2 = {
           obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c8;
@@ -1552,7 +1559,7 @@ let obj2 = {
           obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -1592,7 +1599,7 @@ let obj2 = {
           } else {
             self = this;
             const self2 = this;
-            const promise = new Promise((scrollAnimation) => closure_1_1.requestAnimationFrame(scrollAnimation));
+            const promise = new Promise((arg0) => closure_1_1.requestAnimationFrame(arg0));
             c2 = 1;
             c3 = 1;
             const obj4 = { value: promise, done: false };
@@ -1701,7 +1708,7 @@ let obj2 = {
           obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -2948,7 +2955,7 @@ let obj2 = {
     })();
   }
 };
-Object.defineProperty(obj2, "canBootstrapNewUpdater", { get: () => DiscordNative.nativeModules.canBootstrapNewUpdater || false, set: undefined });
+Object.defineProperty(obj2, "hasUpdater", { get: () => false !== DiscordNative.nativeModules.hasUpdater, set: undefined });
 Object.defineProperty(obj2, "architecture", {
   get: () => {
     let str = "";

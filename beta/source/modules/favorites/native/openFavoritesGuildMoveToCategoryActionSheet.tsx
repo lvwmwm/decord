@@ -1,12 +1,12 @@
-// Module ID: 10830
-// Function ID: 10831
+// Module ID: 10949
+// Function ID: 10950
 // Name: openFavoritesGuildMoveToCategoryActionSheet
-// Dependencies: [1072, 7364, 8646, 10831, 2]
+// Dependencies: [1072, 7424, 8717, 10950, 2]
 // Exports: default
 
-// Module 10830 (openFavoritesGuildMoveToCategoryActionSheet)
+// Module 10949 (openFavoritesGuildMoveToCategoryActionSheet)
 import Constants from "Constants" /* 1072 */;
-import FavoritesActionCreators from "FavoritesActionCreators" /* 10831 */;
+import FavoritesActionCreators from "FavoritesActionCreators" /* 10950 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

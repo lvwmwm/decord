@@ -1,17 +1,17 @@
-// Module ID: 13647
-// Function ID: 13648
+// Module ID: 13886
+// Function ID: 13887
 // Name: CheckpointStatsIntroScreen
-// Dependencies: [19, 17, 21, 5014, 575, 13637, 13639, 2]
+// Dependencies: [19, 17, 21, 5140, 575, 13876, 13878, 2]
 // Exports: default
 
-// Module 13647 (CheckpointStatsIntroScreen)
+// Module 13886 (CheckpointStatsIntroScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import CheckpointScreenDefault from "CheckpointScreen" /* 13637 */;
-import CheckpointTextDefault from "CheckpointText" /* 13639 */;
+import CheckpointScreenDefault from "CheckpointScreen" /* 13876 */;
+import CheckpointTextDefault from "CheckpointText" /* 13878 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -41,7 +41,7 @@ export default function CheckpointStatsIntroScreen(title) {
   const obj3 = { style: tmp.title, children: items };
   items = [icon, ];
   obj2 = { style: tmp.container, children: items1 };
-  const obj4 = { isStepHeading: true, variant: "heading-md/extrabold", style: tmp.titleText, children: title.toLocaleUpperCase() };
+  const obj4 = { isStepHeading: true, variant: "heading-sm/semibold", style: tmp.titleText, children: title.toLocaleUpperCase() };
   const tmp2 = CheckpointScreenDefault;
   const tmp3 = CheckpointTextDefault;
   items[1] = _false(tmp3, obj4);

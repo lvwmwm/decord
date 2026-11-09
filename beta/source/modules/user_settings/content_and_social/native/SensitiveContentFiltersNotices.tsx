@@ -1,17 +1,17 @@
-// Module ID: 16722
-// Function ID: 16723
+// Module ID: 17045
+// Function ID: 17046
 // Name: SensitiveContentFiltersNotices
-// Dependencies: [19, 7490, 21, 16714, 7472, 16581, 1113, 5709, 2061, 7955, 6729, 2]
+// Dependencies: [19, 7554, 21, 17036, 7536, 16903, 1113, 5834, 2185, 8024, 6784, 2]
 // Exports: SensitiveContentFiltersAgeVerificationNotice, SensitiveContentFiltersTeenNotice
 
-// Module 16722 (SensitiveContentFiltersNotices)
+// Module 17045 (SensitiveContentFiltersNotices)
 import Fragment from "Fragment" /* 21 */;
 import intl from "intl" /* 1113 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2061 */;
-import LinkingDefault from "Linking" /* 5709 */;
-import Constants from "Constants" /* 7490 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7955 */;
-import SafetySettingsNoticeDefault from "SafetySettingsNotice" /* 16581 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2185 */;
+import LinkingDefault from "Linking" /* 5834 */;
+import Constants from "Constants" /* 7554 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8024 */;
+import SafetySettingsNoticeDefault from "SafetySettingsNotice" /* 16903 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -26,12 +26,12 @@ export function SensitiveContentFiltersTeenNotice() {
   let closure_0;
   let tmp4Result;
   const tmp = _require;
-  let obj = require("TinyBroncoSettingsNoticesLazy");
-  const isTinyBroncoSettingsNoticeEnabled = obj.useIsTinyBroncoSettingsNoticeEnabled();
+  let obj = require("AgeNoticeSettingsNoticesLazy");
+  const isAgeNoticeSettingsNoticeEnabled = obj.useIsAgeNoticeSettingsNoticeEnabled();
   const obj2 = require("SensitiveMediaGoreRedactionSettingsUtils");
   _require = obj2.useSensitiveContentFilterHelpArticle();
-  if (isTinyBroncoSettingsNoticeEnabled) {
-    tmp4Result = tmp4(tmp(16714).ContentFiltersTeenNotice, {});
+  if (isAgeNoticeSettingsNoticeEnabled) {
+    tmp4Result = tmp4(tmp(17036).ContentFiltersTeenNotice, {});
   } else {
     const obj3 = {
       label: tmp(1113).t.EUo0yj,

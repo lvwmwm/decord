@@ -1,12 +1,12 @@
-// Module ID: 9913
-// Function ID: 9914
+// Module ID: 10035
+// Function ID: 10036
 // Name: useStoreFrontPrice
-// Dependencies: [19, 1072, 2047, 2]
+// Dependencies: [19, 1072, 2171, 2]
 // Exports: default
 
-// Module 9913 (useStoreFrontPrice)
+// Module 10035 (useStoreFrontPrice)
 import Constants from "Constants" /* 1072 */;
-import PremiumUtils from "PremiumUtils" /* 2047 */;
+import PremiumUtils from "PremiumUtils" /* 2171 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

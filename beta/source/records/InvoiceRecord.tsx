@@ -1,12 +1,12 @@
-// Module ID: 2055
-// Function ID: 2056
+// Module ID: 2179
+// Function ID: 2180
 // Name: InvoiceRecord
-// Dependencies: [1398, 1072, 2056, 2]
+// Dependencies: [1405, 1072, 2180, 2]
 
-// Module 2055 (InvoiceRecord)
+// Module 2179 (InvoiceRecord)
 import Constants from "Constants" /* 1072 */;
-import PremiumSubscriptionInvoiceItem from "PremiumSubscriptionInvoiceItem" /* 2056 */;
-import Record from "Record" /* 1398 */;
+import PremiumSubscriptionInvoiceItem from "PremiumSubscriptionInvoiceItem" /* 2180 */;
+import Record from "Record" /* 1405 */;
 import size from "module_2" /* 2 */;
 
 let billing_facet, order_line_items;
@@ -97,17 +97,17 @@ class BaseInvoiceRecord extends Record {
       }
     }
   }
-  getInvoicePreviewLineItemForSku(arg0) {
-    let closure_0 = arg0;
+  getInvoicePreviewLineItemForSku(skuId) {
+    let closure_0 = skuId;
     const invoiceItems = this.invoiceItems;
-    let found = invoiceItems.find((skuId) => skuId.skuId === closure_0);
+    let found = invoiceItems.find((skuId) => skuId.skuId === skuId);
     if (found == null) {
       found = null;
     }
     return found;
   }
-  getInvoicePreviewLineItemUnitPriceForSku(arg0) {
-    const invoicePreviewLineItemForSku = this.getInvoicePreviewLineItemForSku(arg0);
+  getInvoicePreviewLineItemUnitPriceForSku(skuId) {
+    const invoicePreviewLineItemForSku = this.getInvoicePreviewLineItemForSku(skuId);
     let amount = null;
     if (null != invoicePreviewLineItemForSku) {
       amount = null;
@@ -376,9 +376,17 @@ class InvoiceRecord extends BaseInvoiceRecord {
     }
   }
 }
-Object.defineProperty(InvoiceRecord.prototype, "hasGiftCardBalanceApplied", {
+const prototype2 = InvoiceRecord.prototype;
+Object.defineProperty(prototype2, "hasGiftCardBalanceApplied", {
   get: function hasGiftCardBalanceApplied() {
     return this.getWalletAmount() > 0;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype2, "isSplitWithGiftCard", {
+  get: function isSplitWithGiftCard() {
+    const walletAmount = this.getWalletAmount();
+    return walletAmount > 0 && walletAmount < this.total;
   },
   set: undefined
 });

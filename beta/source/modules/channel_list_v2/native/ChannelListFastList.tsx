@@ -1,12 +1,12 @@
-// Module ID: 18316
-// Function ID: 18317
+// Module ID: 18654
+// Function ID: 18655
 // Name: ChannelListFastList
-// Dependencies: [32, 19, 21, 18317, 7240, 2]
+// Dependencies: [32, 19, 21, 18655, 7304, 2]
 
-// Module 18316 (ChannelListFastList)
+// Module 18654 (ChannelListFastList)
 import Fragment from "Fragment" /* 21 */;
-import FastList from "FastList" /* 7240 */;
-import reactDefault from "react" /* 18317 */;
+import FastList from "FastList" /* 7304 */;
+import reactDefault from "react" /* 18655 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

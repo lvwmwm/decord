@@ -1,24 +1,24 @@
-// Module ID: 10663
-// Function ID: 10664
+// Module ID: 10782
+// Function ID: 10783
 // Name: PremiumGiftWishlistBanner
-// Dependencies: [5, 19, 17, 7405, 1385, 1072, 1074, 8754, 21, 575, 5014, 9459, 9470, 10664, 10668, 7326, 7351, 1252, 8750, 10612, 10669, 5199, 5712, 1113, 7719, 14427, 5068, 5624, 14452, 14457, 2]
+// Dependencies: [5, 19, 17, 7469, 1387, 1072, 1074, 8825, 21, 575, 5140, 9540, 9554, 10783, 10787, 7387, 7412, 1252, 8821, 10733, 10788, 5315, 5837, 1113, 7795, 14663, 5194, 5751, 14688, 14693, 2]
 // Exports: PremiumGiftWishlistBanner
 
-// Module 10663 (PremiumGiftWishlistBanner)
+// Module 10782 (PremiumGiftWishlistBanner)
 import nativeDefault from "native" /* 575 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import WishlistRecommendationRecord from "WishlistRecommendationRecord" /* 7405 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8750 */;
-import Constants2 from "Constants" /* 8754 */;
-import WishlistBannerUtils from "WishlistBannerUtils" /* 10668 */;
+import WishlistRecommendationRecord from "WishlistRecommendationRecord" /* 7469 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8821 */;
+import Constants2 from "Constants" /* 8825 */;
+import WishlistBannerUtils from "WishlistBannerUtils" /* 10787 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import PremiumConstants from "PremiumConstants" /* 1385 */;
+import PremiumConstants from "PremiumConstants" /* 1387 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 let set, sku;
@@ -155,7 +155,7 @@ export function PremiumGiftWishlistBanner(giftRecipient) {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -230,7 +230,7 @@ export function PremiumGiftWishlistBanner(giftRecipient) {
             return { value, done: true };
           }
           c2 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp23) {
           c2 = 3;
           throw tmp23;
@@ -267,9 +267,9 @@ export function PremiumGiftWishlistBanner(giftRecipient) {
       tmp16 = memo[WISHLIST_IN_DM_LENGTH_MOBILE - 1];
     }
     closure_15 = tmp16;
-    let obj6 = { style: tmp12.title, variant: "text-lg/semibold", accessibilityRole: "header", children: title };
+    let obj6 = { style: tmp12.title, variant: "body-lg/semibold", accessibilityRole: "header", children: title };
     const items5 = [closure_14(tmp(tmp2[27]).Text, obj6), , ];
-    let obj7 = { style: tmp12.subtitle, variant: "text-sm/medium", color: "text-muted", children: subtitle };
+    let obj7 = { style: tmp12.subtitle, variant: "body-sm/medium", color: "text-muted", children: subtitle };
     items5[1] = closure_14(tmp(tmp2[27]).Text, obj7);
     if (tmp13) {
       let obj8 = {

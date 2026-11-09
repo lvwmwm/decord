@@ -1,23 +1,22 @@
-// Module ID: 16965
-// Function ID: 16966
+// Module ID: 17288
+// Function ID: 17289
 // Name: BountiesScrollRecapFooter
-// Dependencies: [19, 17, 5015, 21, 5014, 575, 1375, 7148, 1113, 5624, 9532, 504, 5149, 2]
+// Dependencies: [19, 17, 5141, 21, 5140, 575, 1377, 1113, 5751, 9616, 504, 5265, 2]
 // Exports: BountiesScrollRecapFooter, BountiesScrollRecapFooterGradient
 
-// Module 16965 (BountiesScrollRecapFooter)
+// Module 17288 (BountiesScrollRecapFooter)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import PlatformUtils from "PlatformUtils" /* 1375 */;
-import BountiesScrollGradientRive2 from "BountiesScrollGradientRive" /* 5149 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7148 */;
-import OrbsIcon from "OrbsIcon" /* 9532 */;
+import PlatformUtils from "PlatformUtils" /* 1377 */;
+import BountiesScrollGradientRive2 from "BountiesScrollGradientRive" /* 5265 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import OrbsIcon from "OrbsIcon" /* 9616 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5015 */;
+import AccessibilityStore from "AccessibilityStore" /* 5141 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -26,7 +25,7 @@ const View = react_native.View;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let closure_7 = createStyles.createStyles(() => {
   let num;
-  const obj = { container: { flex: 1, alignItems: "center", justifyContent: "center", gap: nativeDefault.space.PX_4 }, headerLabel: { textTransform: "uppercase" }, orbRow: { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4 }, rive: { flex: 1, width: "100%" }, orbAmount: { marginTop: num } };
+  const obj = { container: { flex: 1, alignItems: "center", justifyContent: "center", gap: nativeDefault.space.PX_4 }, orbRow: { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4 }, rive: { flex: 1, width: "100%" }, orbAmount: { marginTop: num } };
   ({ flex: 1, alignItems: "center", justifyContent: "center", gap: nativeDefault.space.PX_4 });
   ({ flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4 });
   num = 0;
@@ -41,24 +40,19 @@ const result = size.fileFinishedImporting("modules/quests/native/BountiesModal/B
 export function BountiesScrollRecapFooter(orbAmount) {
   let items;
   let items1;
-  let items2;
   orbAmount = orbAmount.orbAmount;
   const tmp = closure_7();
-  const obj = useTypeConsolidationTextTransform;
-  const typeConsolidationEyebrow = obj.useTypeConsolidationEyebrow("BountiesScrollRecapFooter", "text-xs/bold");
   const intl = intl2.intl;
-  const stringResult = intl.string(intl2.t.d6Rrn6);
-  const obj3 = { variant: typeConsolidationEyebrow.variant, color: "text-brand", style: items, accessible: false, children: stringResult };
-  items = [tmp.headerLabel, typeConsolidationEyebrow.style];
-  const obj2 = { style: tmp.container, pointerEvents: "none", accessible: true, accessibilityRole: "text", accessibilityLabel: "" + stringResult + ", +" + orbAmount, children: items1 };
-  items1 = [hasOwnProperty(Text_Text.Text, obj3), ];
-  const obj4 = { style: tmp.orbRow, accessible: false, importantForAccessibility: "no-hide-descendants", children: items2 };
-  items2 = [hasOwnProperty(OrbsIcon.OrbsIcon, { size: "sm", color: "icon-strong", accessible: false }), ];
-  const obj5 = { variant: "display-sm", color: "text-strong", accessible: false, style: tmp.orbAmount, children: "+" + orbAmount };
+  const stringResult = intl.string(intl2.t.CzRXoC);
+  const obj = { style: tmp.container, pointerEvents: "none", accessible: true, accessibilityRole: "text", accessibilityLabel: "" + stringResult + ", +" + orbAmount, children: items };
+  items = [hasOwnProperty(Text_Text.Text, { variant: "body-sm/medium", color: "text-brand", accessible: false, children: stringResult }), ];
+  const obj2 = { style: tmp.orbRow, accessible: false, importantForAccessibility: "no-hide-descendants", children: items1 };
+  items1 = [hasOwnProperty(OrbsIcon.OrbsIcon, { size: "sm", color: "icon-strong", accessible: false }), ];
+  const obj3 = { variant: "display-sm", color: "text-strong", accessible: false, style: tmp.orbAmount, children: "+" + orbAmount };
   const Text = Text_Text.Text;
-  items2[1] = hasOwnProperty(Text, obj5);
-  items1[1] = metroRequire(View, obj4);
-  return metroRequire(View, obj2);
+  items1[1] = hasOwnProperty(Text, obj3);
+  items[1] = metroRequire(View, obj2);
+  return metroRequire(View, obj);
 }
 export function BountiesScrollRecapFooterGradient() {
   let BountiesScrollGradientRive;

@@ -1,15 +1,15 @@
-// Module ID: 18019
-// Function ID: 18020
+// Module ID: 18359
+// Function ID: 18360
 // Name: ExternalLink
-// Dependencies: [19, 17, 21, 5014, 575, 7111, 1497, 7141, 1113, 5624, 6767, 5634, 2]
+// Dependencies: [19, 17, 21, 5140, 575, 7182, 1499, 7208, 1113, 5751, 6822, 5758, 2]
 // Exports: default
 
-// Module 18019 (ExternalLink)
+// Module 18359 (ExternalLink)
 import nativeDefault from "native" /* 575 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -66,7 +66,7 @@ export default function ExternalLink(externalURL) {
   const tmp4 = require("AuthHeader");
   intl = externalURL(onPress[8]).intl;
   items2 = [closure_7(tmp4, obj4), ];
-  const obj5 = { style: tmp.description, variant: "text-md/medium", color: "text-default", children: intl2.string(externalURL(onPress[8]).t.nToOEg) };
+  const obj5 = { style: tmp.description, variant: "body-md/medium", color: "text-default", children: intl2.string(externalURL(onPress[8]).t.nToOEg) };
   const Text = externalURL(onPress[9]).Text;
   intl2 = externalURL(onPress[8]).intl;
   items2[1] = closure_7(Text, obj5);

@@ -1,18 +1,18 @@
-// Module ID: 14461
-// Function ID: 14462
+// Module ID: 14697
+// Function ID: 14698
 // Name: PremiumGiftCustomization
-// Dependencies: [32, 19, 17, 1385, 21, 5014, 575, 1497, 10562, 14462, 1113, 10696, 14463, 5624, 10723, 10725, 14464, 2]
+// Dependencies: [32, 19, 17, 1387, 21, 5140, 575, 1499, 10681, 14698, 1113, 10815, 14699, 5751, 10842, 10844, 14700, 2]
 // Exports: default
 
-// Module 14461 (PremiumGiftCustomization)
+// Module 14697 (PremiumGiftCustomization)
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
-import PremiumConstants from "PremiumConstants" /* 1385 */;
+import PremiumConstants from "PremiumConstants" /* 1387 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let navigation;
@@ -100,7 +100,7 @@ export default function PremiumGiftCustomization() {
   const tmp17 = closure_6;
   if (tmp14Result) {
     const obj7 = { children: items3 };
-    const obj8 = { style: tmp4.senderHeaderTitle, variant: "text-md/semibold", children: intl3.string(navigation(ref[10]).t.NlkxGS) };
+    const obj8 = { style: tmp4.senderHeaderTitle, variant: "body-md/semibold", children: intl3.string(navigation(ref[10]).t.NlkxGS) };
     const Text = tmp(tmp2[13]).Text;
     intl3 = tmp(tmp2[10]).intl;
     items3 = [closure_8(Text, obj8), , ];

@@ -1,13 +1,13 @@
-// Module ID: 14714
-// Function ID: 14715
+// Module ID: 14950
+// Function ID: 14951
 // Name: getIconSize
 // Dependencies: [2]
 // Exports: getIconSize
 
-// Module 14714 (getIconSize)
+// Module 14950 (getIconSize)
 import size_mod from "module_2" /* 2 */;
 
-const ICON_SIZE = { xxs: 12, xs: 16, sm: 18, md: 24, lg: 32, custom: "dispatch", refresh_sm: true };
+const ICON_SIZE = { xxs: 12, xs: 16, sm: 18, md: 24, lg: 32, custom: "description", refresh_sm: true };
 let size = size_mod;
 const result = size.fileFinishedImporting("../discord_common/js/packages/design/components/Icon/getIconSize.tsx");
 

@@ -1,17 +1,17 @@
-// Module ID: 15527
-// Function ID: 15528
+// Module ID: 15821
+// Function ID: 15822
 // Name: GatewaySocketDispatcher
-// Dependencies: [32, 15528, 3, 15529, 15532, 5772, 15533, 15531, 15534, 504, 15535, 2]
+// Dependencies: [32, 15822, 3, 15823, 15826, 5901, 15827, 15825, 15828, 504, 15829, 2]
 
-// Module 15527 (GatewaySocketDispatcher)
+// Module 15821 (GatewaySocketDispatcher)
 import LoggerDefault from "Logger" /* 3 */;
-import TimeUtils from "TimeUtils" /* 5772 */;
-import DispatcherWorkConstants from "DispatcherWorkConstants" /* 15528 */;
-import WorkSchedulerTelemetry from "WorkSchedulerTelemetry" /* 15531 */;
-import GatewaySocketAnalytics from "GatewaySocketAnalytics" /* 15532 */;
-import VoiceServerUpdateImmediateExperiment from "VoiceServerUpdateImmediateExperiment" /* 15533 */;
-import ConnectionStateDefault from "ConnectionState" /* 15534 */;
-import ActionBatcherDefault from "ActionBatcher" /* 15535 */;
+import TimeUtils from "TimeUtils" /* 5901 */;
+import DispatcherWorkConstants from "DispatcherWorkConstants" /* 15822 */;
+import WorkSchedulerTelemetry from "WorkSchedulerTelemetry" /* 15825 */;
+import GatewaySocketAnalytics from "GatewaySocketAnalytics" /* 15826 */;
+import VoiceServerUpdateImmediateExperiment from "VoiceServerUpdateImmediateExperiment" /* 15827 */;
+import ConnectionStateDefault from "ConnectionState" /* 15828 */;
+import ActionBatcherDefault from "ActionBatcher" /* 15829 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -33,11 +33,11 @@ class GatewaySocketDispatcher {
   constructor(socket) {
     let logger;
     const obj3 = Object.create(new.target.prototype);
-    let obj = obj3(15529);
+    let obj = obj3(15823);
     obj3.scheduler = obj.createDispatcherWorkScheduler();
     obj3.queue = [];
     obj3.paused = true;
-    const obj2 = obj3(15532);
+    const obj2 = obj3(15826);
     obj3.resumeAnalytics = obj2.createResumeAnalytics();
     obj3.getDispatchHandler = null;
     obj3.flush = function flush(arg0) {
@@ -170,10 +170,10 @@ class GatewaySocketDispatcher {
     }
     return false;
   }
-  shouldFlushImmediately(type) {
-    let hasItem = set1.has(type);
+  shouldFlushImmediately(arg0) {
+    let hasItem = set1.has(arg0);
     if (!hasItem) {
-      let result = set2.has(type);
+      let result = set2.has(arg0);
       if (result) {
         const obj = VoiceServerUpdateImmediateExperiment;
         result = obj.isVoiceServerUpdateImmediateEnabled("GatewaySocketDispatcher");
@@ -182,18 +182,18 @@ class GatewaySocketDispatcher {
     }
     return hasItem;
   }
-  scheduleFlush(type) {
+  scheduleFlush(arg0) {
     const self = this;
     if (!this.paused) {
       const scheduler = self.scheduler;
-      if (self.shouldFlushImmediately(type)) {
+      if (self.shouldFlushImmediately(arg0)) {
         scheduler.clearWorkTimeout();
         self.flush();
       } else if (!scheduler.hasWorkScheduled) {
         const scheduler2 = self.scheduler;
         const workTimeout = scheduler2.requestWorkTimeout(self.flush);
       }
-      if (set4.has(type)) {
+      if (set4.has(arg0)) {
         const scheduler3 = self.scheduler;
         const result = scheduler3.markCriticalWorkScheduled();
       }
@@ -317,7 +317,7 @@ class GatewaySocketDispatcher {
         if (closure_5.length > 0) {
           let telemetry = self.scheduler.telemetry;
           let tmp8 = closure_5;
-          telemetry.measure(tmp21(15531).WorkSchedulerTelemetryMeasurement.COUNT_DISPATCHES_LEFT_AFTER_YIELD, closure_5.length);
+          telemetry.measure(tmp21(15825).WorkSchedulerTelemetryMeasurement.COUNT_DISPATCHES_LEFT_AFTER_YIELD, closure_5.length);
           const queue = self.queue;
           const unshift = queue.unshift;
           let tmp10 = closure_5;
@@ -375,7 +375,7 @@ class GatewaySocketDispatcher {
       if (dispatchHandler != null) {
         dispatchHandler.dispatch(data, type, preloadedData, receivedAt);
       }
-      const tmp16Result = tmp16(15532);
+      const tmp16Result = tmp16(15826);
       const result = tmp16Result.logReadyPayloadReceived(self.socket, data, nowResult, compressionAnalytics, readyPayloadByteSizeAnalytics);
     } else if ("RESUMED" === type) {
       const dispatchHandler1 = self.getDispatchHandler(type);

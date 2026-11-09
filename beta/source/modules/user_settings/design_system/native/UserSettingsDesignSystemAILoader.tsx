@@ -1,18 +1,18 @@
-// Module ID: 17816
-// Function ID: 17817
+// Module ID: 18148
+// Function ID: 18149
 // Name: UserSettingsDesignSystemAILoader
-// Dependencies: [19, 17, 21, 5014, 5624, 6027, 6977, 12244, 2]
+// Dependencies: [19, 17, 21, 5140, 5751, 6159, 7040, 12431, 2]
 // Exports: default
 
-// Module 17816 (UserSettingsDesignSystemAILoader)
-import Text_Text from "Text/Text" /* 5624 */;
-import Stack_Stack from "Stack/Stack" /* 6027 */;
-import Card_Card from "Card/Card" /* 6977 */;
-import AILoader from "AILoader" /* 12244 */;
+// Module 18148 (UserSettingsDesignSystemAILoader)
+import Text_Text from "Text/Text" /* 5751 */;
+import Stack_Stack from "Stack/Stack" /* 6159 */;
+import Card_Card from "Card/Card" /* 7040 */;
+import AILoader from "AILoader" /* 12431 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let c2;
@@ -24,7 +24,7 @@ function DemoRow(arg0) {
   let label;
   ({ label, children } = arg0);
   const obj = { style: closure_6().row, children: items };
-  items = [React3(Text_Text.Text, { variant: "text-sm/medium", color: "text-subtle", children: label }), children];
+  items = [React3(Text_Text.Text, { variant: "body-sm/medium", color: "text-subtle", children: label }), children];
   return hasOwnProperty(_false, obj);
 }
 ({ ScrollView: c2, View: c3 } = react_native);
@@ -51,8 +51,8 @@ export default function UserSettingsDesignSystemAILoader() {
   obj4 = { children: items };
   Stack2 = Stack_Stack.Stack;
   items = [
-    React3(Text_Text.Text, { variant: "text-lg/bold", children: "Sizes" }),
-    React3(Text_Text.Text, { variant: "text-md/medium", color: "text-subtle", children: "`size` is the glyph size in pixels; the gap between slots scales with it. Default 16." }),
+    React3(Text_Text.Text, { variant: "body-lg/semibold", children: "Sizes" }),
+    React3(Text_Text.Text, { variant: "body-md/medium", color: "text-subtle", children: "`size` is the glyph size in pixels; the gap between slots scales with it. Default 16." }),
     closure_7.map((size) => {
       let obj2;
       const obj = { label: "" + size + "px", children: closure_1_4(AILoader.AILoader, obj2) };
@@ -66,8 +66,8 @@ export default function UserSettingsDesignSystemAILoader() {
   obj6 = { children: items2 };
   Stack3 = Stack_Stack.Stack;
   items2 = [
-    React3(Text_Text.Text, { variant: "text-lg/bold", children: "Colors" }),
-    React3(Text_Text.Text, { variant: "text-md/medium", color: "text-subtle", children: "Any semantic text token. Defaults to `text-default`." }),
+    React3(Text_Text.Text, { variant: "body-lg/semibold", children: "Colors" }),
+    React3(Text_Text.Text, { variant: "body-md/medium", color: "text-subtle", children: "Any semantic text token. Defaults to `text-default`." }),
     items.map((color) => {
       const label = color.label;
       const obj = { label, children: closure_1_4(AILoader.AILoader, { color: color.color }) };

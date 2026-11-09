@@ -1,22 +1,22 @@
-// Module ID: 15310
-// Function ID: 15311
+// Module ID: 15596
+// Function ID: 15597
 // Name: TieredTenureBadgePerkCard
-// Dependencies: [19, 17, 1383, 1072, 21, 5014, 11455, 15311, 11453, 11445, 15312, 504, 11419, 1252, 11463, 8755, 5258, 11418, 1994, 11418, 1113, 15314, 5624, 11444, 15281, 5717, 2]
+// Dependencies: [19, 17, 1385, 1072, 21, 5140, 11595, 15597, 11593, 11586, 15598, 504, 11560, 1252, 11605, 8826, 5374, 11559, 2118, 11559, 1113, 15600, 5751, 11585, 15567, 5842, 2]
 // Exports: TieredTenureBadgePerkCard
 
-// Module 15310 (TieredTenureBadgePerkCard)
+// Module 15596 (TieredTenureBadgePerkCard)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import asyncRequire from "asyncRequire" /* 1994 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import BadgeId from "BadgeId" /* 8755 */;
-import TieredTenureBadgeActionSheet from "TieredTenureBadgeActionSheet" /* 11418 */;
-import openBadgeDetailsSheet2 from "openBadgeDetailsSheet" /* 11463 */;
+import asyncRequire from "asyncRequire" /* 2118 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
+import BadgeId from "BadgeId" /* 8826 */;
+import TieredTenureBadgeActionSheet from "TieredTenureBadgeActionSheet" /* 11559 */;
+import openBadgeDetailsSheet2 from "openBadgeDetailsSheet" /* 11605 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1383 */;
+import UserStore from "UserStore" /* 1385 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let metroImportAll;
@@ -138,11 +138,11 @@ export function TieredTenureBadgePerkCard() {
       tmp18 = large;
     }
     const obj7 = { style: tmp9.badgeNameContainer, children: items2 };
-    const obj8 = { variant: "heading-md/medium", color: "text-default", children: intl6.string(tieredTenureBadgeData.nameUnformatted) };
+    const obj8 = { variant: "heading-sm/medium", color: "text-default", children: intl6.string(tieredTenureBadgeData.nameUnformatted) };
     const Text = tmp(tmp2[22]).Text;
     intl6 = tmp(tmp2[20]).intl;
     items2 = [closure_7(Text, obj8), ];
-    const obj9 = { variant: "heading-md/medium", color: "text-muted", style: tmp9.tenureRequirements, children: tmpResult10.getTenureBadgeRequirementString(tieredTenureBadgeData.id, tieredTenureBadgeData.tenureReqNumMonths) };
+    const obj9 = { variant: "heading-sm/medium", color: "text-muted", style: tmp9.tenureRequirements, children: tmpResult10.getTenureBadgeRequirementString(tieredTenureBadgeData.id, tieredTenureBadgeData.tenureReqNumMonths) };
     const Text2 = tmp(tmp2[22]).Text;
     tmpResult10 = isBadgeDirectoryUpdatesEnabled(stateFromStores[23]);
     items2[1] = closure_7(Text2, obj9);
@@ -150,7 +150,7 @@ export function TieredTenureBadgePerkCard() {
     let tmp30Result = null != formatResult;
     const tmp28 = closure_8;
     if (tmp30Result) {
-      const obj10 = { variant: "heading-sm/normal", color: "text-muted", children: formatResult };
+      const obj10 = { variant: "heading-xs/medium", color: "text-muted", children: formatResult };
       tmp30Result = tmp30(tmp(tmp2[22]).Text, obj10);
     }
     const obj11 = { children: items3 };

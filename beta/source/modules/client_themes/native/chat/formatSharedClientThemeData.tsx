@@ -1,14 +1,14 @@
-// Module ID: 15080
-// Function ID: 15081
+// Module ID: 15361
+// Function ID: 15362
 // Name: formatSharedClientThemeData
-// Dependencies: [17, 8519, 1113, 2772, 2]
+// Dependencies: [17, 8590, 1113, 2896, 2]
 // Exports: formatSharedClientThemeData
 
-// Module 15080 (formatSharedClientThemeData)
+// Module 15361 (formatSharedClientThemeData)
 import react_native from "react-native" /* 17 */;
 import intl4 from "intl" /* 1113 */;
-import _modDef2772 from "module_2772" /* 2772 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8519 */;
+import _modDef2896 from "module_2896" /* 2896 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8590 */;
 import size from "module_2" /* 2 */;
 
 const Image = react_native.Image;
@@ -21,7 +21,7 @@ export function formatSharedClientThemeData(message, ensureAvatarSourceResult, n
   let str2;
   const sharedClientTheme = message.sharedClientTheme;
   if (undefined !== sharedClientTheme) {
-    const obj = { colors: null, gradientAngle: null, createdBy: nick, createdByAvatarUrl: str2, nitroWheelIconUrl: Image.resolveAssetSource(AssetRegistryDefault).uri, previewLabel: intl.string(intl4.t.SKNnqq), previewHeading: intl2.string(_modDef2772.yl1iMm), createdByLabel: "" + intl3.format(_modDef2772.fQPSEf, { username: "__USERNAME__" }) };
+    const obj = { colors: null, gradientAngle: null, createdBy: nick, createdByAvatarUrl: str2, nitroWheelIconUrl: Image.resolveAssetSource(AssetRegistryDefault).uri, previewLabel: intl.string(intl4.t.SKNnqq), previewHeading: intl2.string(_modDef2896.yl1iMm), createdByLabel: "" + intl3.format(_modDef2896.fQPSEf, { username: "__USERNAME__" }) };
     ({ colors: obj.colors, gradient_angle: obj.gradientAngle } = sharedClientTheme);
     str2 = "";
     if (undefined !== ensureAvatarSourceResult.uri) {

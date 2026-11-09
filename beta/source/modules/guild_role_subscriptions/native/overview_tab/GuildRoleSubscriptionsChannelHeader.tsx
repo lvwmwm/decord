@@ -1,18 +1,18 @@
-// Module ID: 14573
-// Function ID: 14574
+// Module ID: 14809
+// Function ID: 14810
 // Name: GuildRoleSubscriptionsChannelHeader
-// Dependencies: [19, 17, 21, 5014, 575, 1187, 14392, 5624, 1113, 2]
+// Dependencies: [19, 17, 21, 5140, 575, 1187, 14628, 5751, 1113, 2]
 
-// Module 14573 (GuildRoleSubscriptionsChannelHeader)
+// Module 14809 (GuildRoleSubscriptionsChannelHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14392 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14628 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -30,7 +30,7 @@ const memoResult = react.memo(function GuildRoleSubscriptionsChannelHeader() {
   const obj2 = { source: AssetRegistryDefault, size: native.Icon.Sizes.MEDIUM, disableColor: true };
   const Icon = native.Icon;
   items = [React3(Icon, obj2), ];
-  const obj3 = { variant: "heading-lg/extrabold", color: "interactive-text-active", children: intl.string(intl2.t["KzCF/6"]) };
+  const obj3 = { variant: "heading-lg/semibold", color: "interactive-text-active", children: intl.string(intl2.t["KzCF/6"]) };
   const Text = Text_Text.Text;
   intl = intl2.intl;
   items[1] = React3(Text, obj3);

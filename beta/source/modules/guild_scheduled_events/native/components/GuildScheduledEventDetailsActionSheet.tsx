@@ -1,24 +1,22 @@
-// Module ID: 8964
-// Function ID: 8965
+// Module ID: 9043
+// Function ID: 9044
 // Name: GuildScheduledEventDetailsActionSheet
-// Dependencies: [32, 19, 17, 4885, 6855, 4869, 21, 5014, 575, 1113, 7326, 7351, 504, 8965, 8978, 8979, 8966, 1625, 8980, 8981, 9214, 5272, 5275, 9216, 9217, 2]
+// Dependencies: [32, 19, 17, 5011, 6910, 4995, 21, 5140, 575, 1113, 7387, 7412, 504, 9044, 9057, 9058, 9045, 1627, 9059, 9060, 9294, 5388, 5392, 9296, 9297, 2]
 // Exports: default
 
-// Module 8964 (GuildScheduledEventDetailsActionSheet)
+// Module 9043 (GuildScheduledEventDetailsActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
-import GuildScheduledEventManagerDefault from "GuildScheduledEventManager" /* 8966 */;
+import GuildScheduledEventManagerDefault from "GuildScheduledEventManager" /* 9045 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4885 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6855 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4869 */;
+import GuildStore from "GuildStore" /* 5011 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6910 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4995 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
-
-let BottomSheet;
 
 let c10;
 let c9;
@@ -36,6 +34,7 @@ let closure_12 = createStyles.createStyles(obj);
 const result = size.fileFinishedImporting("modules/guild_scheduled_events/native/components/GuildScheduledEventDetailsActionSheet.tsx");
 
 export default function GuildScheduledEventDetailsActionSheet(eventId) {
+  let BottomSheet;
   let _undefined;
   let _undefined2;
   let _undefined3;
@@ -56,7 +55,7 @@ export default function GuildScheduledEventDetailsActionSheet(eventId) {
   let tmp23;
   let tmp36Result2;
   let tmp8;
-  const f93657 = () => {
+  const f95140 = () => {
     let id;
     const getGuildEventUsers = GuildScheduledEventManagerDefault.getGuildEventUsers;
     GuildScheduledEventManagerDefault;
@@ -141,9 +140,9 @@ export default function GuildScheduledEventDetailsActionSheet(eventId) {
     }
     return tmp5;
   }, items3);
-  [c5, tmp19] = tmp5(tmp2(tmp3[15])(f93657), 2);
+  [c5, tmp19] = tmp5(tmp2(tmp3[15])(f95140), 2);
   ({ loading, error } = tmp19);
-  tmp5(tmp2(tmp3[15])(f93657), 2);
+  tmp5(tmp2(tmp3[15])(f95140), 2);
   [tmp21, c6] = tmp5(obj.useState(0), 2);
   tmp5(obj.useState(0), 2);
   [tmp23, c7] = tmp5(obj.useState(0), 2);

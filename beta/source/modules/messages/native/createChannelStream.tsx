@@ -1,18 +1,18 @@
-// Module ID: 13715
-// Function ID: 13716
+// Module ID: 13947
+// Function ID: 13948
 // Name: createChannelStream
-// Dependencies: [11369, 7823, 8392, 8378, 1072, 11, 10120, 13716, 1113, 4836, 8433, 11672, 7443, 13719, 2]
+// Dependencies: [11510, 7899, 8463, 8449, 1072, 11, 10241, 13948, 1113, 4962, 8504, 11833, 7507, 13951, 2]
 // Exports: default
 
-// Module 13715 (createChannelStream)
+// Module 13947 (createChannelStream)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import Constants from "Constants" /* 1072 */;
-import isNewMessageGroupDefault from "isNewMessageGroup" /* 10120 */;
-import tryInjectMessage from "tryInjectMessage" /* 13716 */;
-import PushFeedbackStore_mod from "PushFeedbackStore" /* 11369 */;
-import EditMessageStore from "EditMessageStore" /* 7823 */;
-import UploadStore from "UploadStore" /* 8392 */;
-import RowGeneratorConstants from "RowGeneratorConstants" /* 8378 */;
+import isNewMessageGroupDefault from "isNewMessageGroup" /* 10241 */;
+import tryInjectMessage from "tryInjectMessage" /* 13948 */;
+import PushFeedbackStore_mod from "PushFeedbackStore" /* 11510 */;
+import EditMessageStore from "EditMessageStore" /* 7899 */;
+import UploadStore from "UploadStore" /* 8463 */;
+import RowGeneratorConstants from "RowGeneratorConstants" /* 8449 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -151,7 +151,7 @@ export default function createChannelStream(forceRender) {
     let isSystemDMResult;
     let obj22;
     let pushType;
-    let str2;
+    let stringResult;
     let tmp162;
     let tmp8;
     let tmp85;
@@ -397,9 +397,9 @@ export default function createChannelStream(forceRender) {
     }
     if (tmp20) {
       const push6 = items.push;
-      const obj23 = { rowType: roleStyle.UNREAD, changeType: determineChangeType(message), roleStyle, text: str2.toUpperCase() };
+      const obj23 = { rowType: roleStyle.UNREAD, changeType: determineChangeType(message), roleStyle, text: stringResult.toLocaleUpperCase(require("intl").intl.currentLocale) };
       const intl5 = require("intl").intl;
-      str2 = intl5.string(require("intl").t.q7hm3m);
+      stringResult = intl5.string(require("intl").t.q7hm3m);
       push6(obj23);
     }
     if (tmp19) {

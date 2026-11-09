@@ -1,23 +1,23 @@
-// Module ID: 9459
-// Function ID: 9460
+// Module ID: 9540
+// Function ID: 9541
 // Name: CollectiblesShopCardV2
-// Dependencies: [19, 17, 1192, 7720, 1074, 21, 5014, 575, 9460, 7731, 9461, 8749, 9463, 9464, 1113, 5712, 7326, 9523, 9525, 504, 5021, 6980, 7732, 5624, 9526, 9529, 9531, 9528, 9532, 9534, 9539, 9550, 9462, 5258, 8747, 2047, 9537, 9574, 9575, 9577, 1266, 2]
+// Dependencies: [19, 17, 1192, 7796, 1074, 21, 5140, 575, 9541, 7807, 9542, 8820, 9547, 9548, 1113, 5837, 7387, 9607, 9609, 504, 5147, 7043, 7808, 5751, 9610, 9613, 9615, 9612, 9616, 9618, 9623, 9634, 9543, 5374, 8818, 2171, 9621, 9661, 9662, 9664, 1266, 2]
 
-// Module 9459 (CollectiblesShopCardV2)
+// Module 9540 (CollectiblesShopCardV2)
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import v1 from "v1" /* 1266 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5712 */;
-import openProductDetailsActionSheet2 from "openProductDetailsActionSheet" /* 8747 */;
-import CollectiblesAnalyticsContext from "CollectiblesAnalyticsContext" /* 9462 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5837 */;
+import openProductDetailsActionSheet2 from "openProductDetailsActionSheet" /* 8818 */;
+import CollectiblesAnalyticsContext from "CollectiblesAnalyticsContext" /* 9543 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ThemeStore from "ThemeStore" /* 1192 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7720 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7796 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 let PixelRatio;
@@ -211,7 +211,7 @@ function CollectiblesShopCardInternalV2(product) {
       if (stateFromStores) {
         str2 = "text-overlay-dark";
       }
-      obj10 = { variant: "text-xs/bold", color: str2, allowFontScaling: false, style: tmp.badgeOverrideText, lineClamp: 1, children: badgeOverride };
+      obj10 = { variant: "body-xs/semibold", color: str2, allowFontScaling: false, style: tmp.badgeOverrideText, lineClamp: 1, children: badgeOverride };
       tmp34Result = tmp34(tmp35, obj9);
     } else {
       const tmp2Result15 = require("CollectiblesProductUtils");

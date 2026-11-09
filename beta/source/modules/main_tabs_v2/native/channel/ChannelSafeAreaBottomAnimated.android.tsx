@@ -1,58 +1,77 @@
-// Module ID: 14220
-// Function ID: 14221
+// Module ID: 14457
+// Function ID: 14458
 // Name: ChannelSafeAreaBottomAnimated
-// Dependencies: [19, 17, 21, 11238, 11250, 5095, 14221, 11248, 2]
+// Dependencies: [19, 17, 21, 11378, 1652, 11390, 11388, 13960, 2]
 
-// Module 14220 (ChannelSafeAreaBottomAnimated)
+// Module 14457 (ChannelSafeAreaBottomAnimated)
 import Fragment from "Fragment" /* 21 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
-import useChannelSafeAreaHeightSharedValue from "useChannelSafeAreaHeightSharedValue" /* 11238 */;
-import useIsChannelFullyOpenDefault from "useIsChannelFullyOpen" /* 11248 */;
-import useChannelSafeAreaBottomStylesDefault from "useChannelSafeAreaBottomStyles" /* 11250 */;
-import MobileRTCV2Experiment from "MobileRTCV2Experiment" /* 14221 */;
+import _mod1652 from "module_1652" /* 1652 */;
+import useChannelSafeAreaHeightSharedValue from "useChannelSafeAreaHeightSharedValue" /* 11378 */;
+import useIsChannelFullyOpenDefault from "useIsChannelFullyOpen" /* 11388 */;
+import useChannelSafeAreaBottomStylesDefault from "useChannelSafeAreaBottomStyles" /* 11390 */;
+import MobileRTCV2Experiment from "MobileRTCV2Experiment" /* 13960 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import size from "module_2" /* 2 */;
 
+const _modDef1652 = _mod1652;
 const useChannelSafeAreaHeightSharedValueDefault = useChannelSafeAreaHeightSharedValue;
 
 let c3;
 let closure_4;
-let tmp;
-const ReanimatedRexportDefault = tmp(5095);
+function useChannelSafeAreaAnimatedStyles() {
+  let tmp2;
+  let tmp3;
+  const tmp = useChannelSafeAreaHeightSharedValueDefault();
+  let obj = _mod1652;
+  const items = [closure_6, tmp];
+  let c0;
+  [tmp2, tmp3] = items;
+  class ChannelSafeAreaBottomAnimatedAndroidTsx1 {
+    constructor() {
+      obj = { height: closure_0.get() };
+      return obj;
+    }
+  }
+  const items1 = [tmp3];
+  ChannelSafeAreaBottomAnimatedAndroidTsx1.__closure = items1;
+  ChannelSafeAreaBottomAnimatedAndroidTsx1.__workletHash = 14690382113580;
+  ChannelSafeAreaBottomAnimatedAndroidTsx1.__initData = tmp2;
+  return obj.useAnimatedStyle(ChannelSafeAreaBottomAnimatedAndroidTsx1);
+}
+function KeyboardAwareChannelSafeAreaBottom(channelId) {
+  const items = [_false.absoluteFill, useChannelSafeAreaBottomStylesDefault(channelId.channelId)];
+  const tmp = useChannelSafeAreaBottomStylesDefault(channelId.channelId);
+  const View = _modDef1652.View;
+  return <View style={useChannelSafeAreaAnimatedStyles()}>{null}</View>;
+}
+function DockAwareChannelSafeAreaBottom(channelId) {
+  let obj5;
+  let tmp6Result;
+  const tmp3 = useChannelSafeAreaBottomStylesDefault(channelId.channelId);
+  const tmp4 = useChannelSafeAreaAnimatedStyles();
+  const obj = useChannelSafeAreaHeightSharedValue;
+  const channelSafeAreaRestingHeight = obj.useChannelSafeAreaRestingHeight();
+  if (useIsChannelFullyOpenDefault()) {
+    const items = [_false.absoluteFill, tmp3];
+    const obj2 = { style: tmp4, children: null };
+    const View = _modDef1652.View;
+    tmp6Result = tmp6(View, obj2);
+  } else {
+    const obj4 = { style: obj5, children: null };
+    const items1 = [_false.absoluteFill, tmp3];
+    obj5 = { height: channelSafeAreaRestingHeight };
+    tmp6Result = tmp6(React3, obj4);
+  }
+  return tmp6Result;
+}
 ({ StyleSheet: c3, View: closure_4 } = react_native);
 const jsx = Fragment.jsx;
-const __initData = { code: "function ChannelSafeAreaBottomAnimatedAndroidTsx1(){const{heightSharedValue}=this.__closure;return{height:heightSharedValue.get()};}" };
+let closure_6 = { code: "(function ChannelSafeAreaBottomAnimatedAndroidTsx1(){let[heightSharedValue]=this.__closure;return{height:heightSharedValue.get()};})" };
 const memoResult = react.memo(function ChannelSafeAreaBottom(channelId) {
   channelId = channelId.channelId;
-  const tmp3 = useChannelSafeAreaHeightSharedValueDefault();
-  let closure_0 = tmp3;
-  const tmp4 = useChannelSafeAreaBottomStylesDefault(channelId);
-  let obj = ReanimatedRexport;
-  const fn = function n() {
-    const obj = { height: closure_0.get() };
-    return obj;
-  };
-  fn.__closure = { heightSharedValue: tmp3 };
-  fn.__workletHash = 6491350126069;
-  fn.__initData = __initData;
-  const animatedStyle = obj.useAnimatedStyle(fn);
-  const obj2 = MobileRTCV2Experiment;
-  const isMobileRTCV2Enabled = obj2.useIsMobileRTCV2Enabled("ChannelSafeAreaBottom");
-  const tmp7 = useIsChannelFullyOpenDefault();
-  useChannelSafeAreaHeightSharedValue;
-  if (isMobileRTCV2Enabled) {
-    let tmp13;
-    if (!tmp7) {
-      const items = [_false.absoluteFill, tmp4];
-      tmp13 = <React3 style={{ height: tmp9 }}>{null}</React3>;
-      const obj4 = { height: tmp9 };
-    }
-    return tmp13;
-  }
-  const items1 = [_false.absoluteFill, tmp4];
-  const View = ReanimatedRexportDefault.View;
-  tmp13 = <View style={animatedStyle}>{null}</View>;
+  const obj = MobileRTCV2Experiment;
+  return jsx(obj.useIsMobileRTCV2Enabled("ChannelSafeAreaBottom") ? DockAwareChannelSafeAreaBottom : KeyboardAwareChannelSafeAreaBottom, { channelId });
 });
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/channel/ChannelSafeAreaBottomAnimated.android.tsx");
 

@@ -1,33 +1,31 @@
-// Module ID: 13797
-// Function ID: 13798
+// Module ID: 14030
+// Function ID: 14031
 // Name: ChatInputActions
-// Dependencies: [32, 19, 12809, 1072, 21, 5014, 575, 5640, 9821, 5596, 7101, 5209, 1623, 12535, 9808, 6021, 8222, 1113, 10550, 8659, 10533, 13798, 8678, 10535, 12560, 9807, 9809, 1252, 5095, 9874, 12805, 5189, 13800, 13801, 13805, 2]
+// Dependencies: [32, 19, 13023, 1072, 21, 5140, 575, 5764, 9911, 5724, 7172, 5325, 1625, 12738, 9898, 6153, 8292, 1113, 10669, 8730, 10652, 14031, 8749, 10654, 12763, 9897, 9899, 1252, 1652, 9996, 13019, 5305, 14033, 14034, 14038, 2]
 
-// Module 13797 (ChatInputActions)
+// Module 14030 (ChatInputActions)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl8 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import mergeProps from "mergeProps" /* 5189 */;
-import ButtonConstants from "ButtonConstants" /* 5640 */;
-import ImagePickerUtils from "ImagePickerUtils" /* 8222 */;
-import ImageIcon from "ImageIcon" /* 8659 */;
-import AppsIcon from "AppsIcon" /* 8678 */;
-import PollsIcon from "PollsIcon" /* 10533 */;
-import AttachmentIcon from "AttachmentIcon" /* 10535 */;
-import CameraIcon from "CameraIcon" /* 10550 */;
-import CalendarPlusIcon from "CalendarPlusIcon" /* 12560 */;
-import ChatInputActionButtonDefault from "ChatInputActionButton" /* 12805 */;
-import ThreadPlusIcon from "ThreadPlusIcon" /* 13798 */;
-import MediaKeyboardButtonIcon from "MediaKeyboardButtonIcon" /* 13800 */;
+import mergeProps from "mergeProps" /* 5305 */;
+import ButtonConstants from "ButtonConstants" /* 5764 */;
+import ImagePickerUtils from "ImagePickerUtils" /* 8292 */;
+import ImageIcon from "ImageIcon" /* 8730 */;
+import AppsIcon from "AppsIcon" /* 8749 */;
+import PollsIcon from "PollsIcon" /* 10652 */;
+import AttachmentIcon from "AttachmentIcon" /* 10654 */;
+import CameraIcon from "CameraIcon" /* 10669 */;
+import CalendarPlusIcon from "CalendarPlusIcon" /* 12763 */;
+import ChatInputActionButtonDefault from "ChatInputActionButton" /* 13019 */;
+import ThreadPlusIcon from "ThreadPlusIcon" /* 14031 */;
+import MediaKeyboardButtonIcon from "MediaKeyboardButtonIcon" /* 14033 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChatInputConstants from "ChatInputConstants" /* 12809 */;
+import ChatInputConstants from "ChatInputConstants" /* 13023 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
-
-let __initData;
 
 let c9;
 let hasOwnProperty;
@@ -42,15 +40,15 @@ class ChatInputActions {
     let c17;
     let c18;
     let canUpload;
-    let closure_11;
     let closure_9;
     let disabled;
-    let items3;
+    let items4;
     let keyboardType;
     let obj7;
     let onContextMenuOpen;
     let onPressAction;
     let tmp12;
+    let tmp14;
     canStartThreads = canStartThreads.canStartThreads;
     const channel = canStartThreads.channel;
     const isAppLauncherEnabled = canStartThreads.isAppLauncherEnabled;
@@ -64,7 +62,7 @@ class ChatInputActions {
     c18 = undefined;
     const ref = canStartThreads.ref;
     let tmp = onContextMenuOpen();
-    __initData = tmp;
+    closure_11 = tmp;
     let tmp2 = canStartThreads;
     let obj = canStartThreads(isAppLauncherEnabled[8]);
     let closure_12 = obj.useClientThemesOverride(tmp.themedChatInput);
@@ -225,20 +223,21 @@ class ChatInputActions {
     tmp12 = keyboardType === canStartThreads(isAppLauncherEnabled[12]).KeyboardTypes.MEDIA || keyboardType === tmp2(tmp3[12]).KeyboardTypes.APP_LAUNCHER;
     push(obj5);
     let closure_24 = !first;
+    const items3 = [closure_11];
+    [tmp14] = items3;
     const tmp2Result = tmp2(isAppLauncherEnabled[28]);
     const tmp4 = channel;
-    class X {
+    class ChatInputActionsTsx1 {
       constructor() {
         return { opacity: 1 };
       }
     }
-    X.__closure = {};
-    X.__workletHash = 13622805272332;
-    X.__initData = __initData;
+    ChatInputActionsTsx1.__workletHash = 11222505988205;
+    ChatInputActionsTsx1.__initData = tmp14;
     let obj6 = { children: onAttachPress(View, obj7) };
-    const animatedStyle = tmp2Result.useAnimatedStyle(X);
+    const animatedStyle = tmp2Result.useAnimatedStyle(ChatInputActionsTsx1);
     obj7 = {
-      style: items3,
+      style: items4,
       children: items2.map((item, index) => {
         let active;
         let intl;
@@ -357,7 +356,7 @@ class ChatInputActions {
         }
       })
     };
-    items3 = [tmp.actions, animatedStyle, { gap: token }];
+    items4 = [tmp.actions, animatedStyle, { gap: token }];
     View = tmp4(tmp3[28]).View;
     return onAttachPress(closure_9, obj6);
   }
@@ -372,7 +371,7 @@ createStyles = createStyles.createStyles;
 obj3 = { maxHeight: ButtonConstants.SMALL_BUTTON_HEIGHT + ButtonConstants.SMALL_BUTTON_PADDING };
 obj4 = { tintColor: nativeDefault.colors.CHAT_INPUT_ACTION_ICON_ACTIVE_TINT };
 let closure_10 = createStyles(obj);
-const unpackModuleId = { code: "function ChatInputActionsTsx1(){return{opacity:1};}" };
+let closure_11 = { code: "(function ChatInputActionsTsx1(){return{opacity:1};})" };
 ChatInputActions.displayName = "ChatInputActions";
 const memoResult = react.memo(ChatInputActions);
 let result = size.fileFinishedImporting("modules/chat_input/native/action_buttons/ChatInputActions.tsx");

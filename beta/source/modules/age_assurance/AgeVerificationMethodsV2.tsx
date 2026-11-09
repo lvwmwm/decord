@@ -1,10 +1,10 @@
-// Module ID: 8001
-// Function ID: 8002
+// Module ID: 8071
+// Function ID: 8072
 // Name: AgeVerificationMethodsV2
 // Dependencies: [5, 502, 1072, 1282, 2]
 // Exports: fetchAgeVerificationMethodsV2, fetchAgeVerificationMethodsV2SuspendedUser
 
-// Module 8001 (AgeVerificationMethodsV2)
+// Module 8071 (AgeVerificationMethodsV2)
 import Constants from "Constants" /* 1072 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;

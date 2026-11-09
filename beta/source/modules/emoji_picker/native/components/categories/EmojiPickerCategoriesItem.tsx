@@ -1,20 +1,24 @@
-// Module ID: 10072
-// Function ID: 10073
+// Module ID: 10193
+// Function ID: 10194
 // Name: EmojiPickerCategoriesItem
-// Dependencies: [32, 19, 17, 6799, 1072, 21, 5014, 575, 5095, 5254, 5257, 6980, 6957, 10073, 8667, 2]
+// Dependencies: [32, 19, 17, 6854, 1072, 21, 5140, 575, 1652, 5370, 5373, 1705, 7043, 7020, 10194, 8738, 2]
 
-// Module 10072 (EmojiPickerCategoriesItem)
+// Module 10193 (EmojiPickerCategoriesItem)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
-import timing from "timing" /* 5254 */;
-import EmojiPickerConstants from "EmojiPickerConstants" /* 6799 */;
+import _mod1652 from "module_1652" /* 1652 */;
+import timing_timing from "timing/timing" /* 5370 */;
+import timingPresets from "timingPresets" /* 5373 */;
+import EmojiPickerConstants from "EmojiPickerConstants" /* 6854 */;
+import GuildIconDefault from "GuildIcon" /* 7020 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
+
+const _modDef1652 = _mod1652;
 
 let CATEGORY_ICON_SIZE;
 let NODE_SIZE;
@@ -26,10 +30,13 @@ let obj3;
 let size;
 let size1;
 let size2;
-let tmp;
-const timingPresets = tmp(5257);
+let tmp2;
+const _mod1705 = tmp2(1705);
+const GuildIcon = tmp2(7020);
+const Pressables = tmp2(7043);
+const LockIcon = tmp2(8738);
 let View = react_native.View;
-let EmojiCategoryTypes = EmojiPickerConstants.EmojiCategoryTypes;
+const EmojiCategoryTypes = EmojiPickerConstants.EmojiCategoryTypes;
 ({ CATEGORY_ICON_RIPPLE_CONFIG: metroImportDefault, CATEGORY_ICON_SIZE, NODE_SIZE } = Constants);
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);
 let createStyles = createStyles_mod;
@@ -41,104 +48,145 @@ obj3 = { backgroundColor: nativeDefault.colors.INTERACTIVE_BACKGROUND_ACTIVE };
 size1 = { width: 12, height: 12, position: "absolute", bottom: 0, end: 0, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, borderRadius: nativeDefault.radii.round, alignItems: "center", justifyContent: "center" };
 size2 = { width: 7.5, height: 7.5, tintColor: nativeDefault.colors.TEXT_DEFAULT };
 let closure_10 = createStyles(obj);
-const __initData = { code: "function EmojiPickerCategoriesItemTsx1(){const{withTiming,categoryIndexActive,index,timingStandard,styleColorActive,styleColorTransparent}=this.__closure;return{opacity:withTiming(categoryIndexActive.get()===index?1:0.5,timingStandard),backgroundColor:categoryIndexActive.get()===index?styleColorActive:styleColorTransparent};}" };
-const __initData2 = { code: "function EmojiPickerCategoriesItemTsx2(){const{categoryIndexActive,index}=this.__closure;return categoryIndexActive.get()===index;}" };
-const __initData3 = { code: "function EmojiPickerCategoriesItemTsx3(active,prev){const{runOnJS,setIsSelected}=this.__closure;if(active!==prev){runOnJS(setIsSelected)(active);}}" };
+let closure_11 = { code: "(function EmojiPickerCategoriesItemTsx1(){let[withTiming,categoryIndexActive,index,timingStandard,styleColorActive,styleColorTransparent]=this.__closure;return{opacity:withTiming(categoryIndexActive.get()===index?1:0.5,timingStandard),backgroundColor:categoryIndexActive.get()===index?styleColorActive:styleColorTransparent};})" };
+let closure_12 = { code: "(function EmojiPickerCategoriesItemTsx2(){let[categoryIndexActive,index]=this.__closure;return categoryIndexActive.get()===index;})" };
+let closure_13 = { code: "(function EmojiPickerCategoriesItemTsx3(active,prev){let[scheduleOnRN,setIsSelected]=this.__closure;if(active!==prev){scheduleOnRN(setIsSelected,active);}})" };
 const memoResult = react.memo(function EmojiPickerCategoriesItem(category) {
-  let closure_6;
-  let items1;
-  let items2;
+  let items7;
+  let items8;
   let loadingStyle;
   let name;
-  let obj10;
-  let obj6;
+  let obj3;
+  let obj7;
   let style;
-  let tmp10Result;
-  let tmp12;
+  let tmp10;
+  let tmp11;
+  let tmp14;
+  let tmp15;
+  let tmp17;
+  let tmp18;
+  let tmp19;
+  let tmp20;
+  let tmp21;
+  let tmp22;
+  let tmp25Result;
+  let tmp27;
+  let tmp5;
+  let tmp6;
+  let tmp7;
+  let tmp8;
+  let tmp9;
+  const f97861 = () => categoryIndexActive.get() === index;
   category = category.category;
   const categoryIndexActive = category.categoryIndexActive;
   const handlePressCategory = category.handlePressCategory;
   const index = category.index;
   let locked = category.locked;
-  EmojiCategoryTypes = undefined;
   ({ loadingStyle, style } = category);
   let tmp = closure_10();
+  let tmp2 = require;
   const backgroundColor = tmp.activeItem.backgroundColor;
   const backgroundColor2 = tmp.fadedItem.backgroundColor;
-  const tmp3 = handlePressCategory;
-  let obj = category(handlePressCategory[8]);
-  class T {
+  const items = [closure_11, , , , , , ];
+  const useAnimatedStyle = _mod1652.useAnimatedStyle;
+  _mod1652;
+  items[1] = timing_timing.withTiming;
+  items[2] = categoryIndexActive;
+  items[3] = index;
+  items[4] = timingPresets.timingStandard;
+  items[5] = backgroundColor;
+  items[6] = backgroundColor2;
+  let c0;
+  let c1;
+  let c2;
+  let c3;
+  let c4;
+  let c5;
+  [tmp5, tmp6, tmp7, tmp8, tmp9, tmp10, tmp11] = items;
+  class EmojiPickerCategoriesItemTsx1 {
     constructor() {
-      const withTiming = timing.withTiming;
       let num = 0.5;
-      timing;
-      const obj = categoryIndexActive;
-      const tmp4 = index;
-      if (categoryIndexActive.get() === index) {
+      const obj = _undefined;
+      const tmp = c0;
+      const tmp2 = c2;
+      if (_undefined.get() === c2) {
         num = 1;
       }
-      const obj2 = { opacity: withTiming(num, timingPresets.timingStandard), backgroundColor: obj.get() === tmp4 ? backgroundColor : backgroundColor2 };
+      const obj2 = { opacity: tmp(num, c3), backgroundColor: obj.get() === tmp2 ? c4 : c5 };
       return obj2;
     }
   }
-  let obj2 = { withTiming: category(handlePressCategory[9]).withTiming, categoryIndexActive, index, timingStandard: category(handlePressCategory[10]).timingStandard, styleColorActive: backgroundColor, styleColorTransparent: backgroundColor2 };
-  T.__closure = obj2;
-  T.__workletHash = 3335518235623;
-  T.__initData = __initData;
-  const animatedStyle = obj.useAnimatedStyle(T);
-  const tmp5 = index(backgroundColor.useState(() => categoryIndexActive.get() === index), 2);
-  EmojiCategoryTypes = tmp7;
-  const first = tmp5[0];
-  const fn = function p() {
-    return categoryIndexActive.get() === index;
-  };
-  fn.__closure = { categoryIndexActive, index };
-  fn.__workletHash = 12996370114251;
-  fn.__initData = __initData2;
-  const obj3 = category(handlePressCategory[8]);
-  class E {
+  const items1 = [tmp6, tmp7, tmp8, tmp9, tmp10, tmp11];
+  EmojiPickerCategoriesItemTsx1.__closure = items1;
+  EmojiPickerCategoriesItemTsx1.__workletHash = 13103741049438;
+  EmojiPickerCategoriesItemTsx1.__initData = tmp5;
+  let obj = react;
+  const animatedStyle = useAnimatedStyle(EmojiPickerCategoriesItemTsx1);
+  [tmp14, tmp15] = react.useState(f97861);
+  _slicedToArray(react.useState(f97861), 2);
+  const items2 = [closure_12, categoryIndexActive, index];
+  c0 = undefined;
+  c1 = undefined;
+  [tmp17, tmp18, tmp19] = items2;
+  const tmp2Result = _mod1652;
+  class EmojiPickerCategoriesItemTsx2 {
+    constructor() {
+      return _undefined.get() === c1;
+    }
+  }
+  const items3 = [tmp18, tmp19];
+  EmojiPickerCategoriesItemTsx2.__closure = items3;
+  EmojiPickerCategoriesItemTsx2.__workletHash = 5439677363570;
+  EmojiPickerCategoriesItemTsx2.__initData = tmp17;
+  const items4 = [closure_13, , ];
+  const useAnimatedReaction = tmp2Result.useAnimatedReaction;
+  items4[1] = _mod1705.scheduleOnRN;
+  items4[2] = tmp15;
+  c0 = undefined;
+  c1 = undefined;
+  [tmp20, tmp21, tmp22] = items4;
+  class EmojiPickerCategoriesItemTsx3 {
     constructor(arg0, arg1) {
       if (arg0 !== arg1) {
-        const obj = ReanimatedRexport;
-        obj.runOnJS(closure_6)(arg0);
+        _undefined(c1, arg0);
       }
     }
   }
-  E.__closure = { runOnJS: category(handlePressCategory[8]).runOnJS, setIsSelected: tmp5[1] };
-  E.__workletHash = 6056273557261;
-  E.__initData = __initData3;
-  ({ runOnJS: category(handlePressCategory[8]).runOnJS, setIsSelected: tmp5[1] });
-  const animatedReaction = obj3.useAnimatedReaction(fn, E);
-  const items = [handlePressCategory, index, category];
-  const callback = backgroundColor.useCallback(() => handlePressCategory(index, category), items);
-  const obj5 = { androidRippleConfig, style, onPress: callback, accessibilityRole: "tab", accessibilityLabel: name, accessibilityState: { selected: first }, children: tmp12(View, obj6) };
-  const PressableOpacity = category(handlePressCategory[11]).PressableOpacity;
-  const tmp11 = EmojiCategoryTypes;
+  const items5 = [tmp21, tmp22];
+  EmojiPickerCategoriesItemTsx3.__closure = items5;
+  EmojiPickerCategoriesItemTsx3.__workletHash = 17327361424281;
+  EmojiPickerCategoriesItemTsx3.__initData = tmp20;
+  const animatedReaction = useAnimatedReaction(EmojiPickerCategoriesItemTsx2, EmojiPickerCategoriesItemTsx3);
+  const items6 = [handlePressCategory, index, category];
+  const callback = obj.useCallback(() => handlePressCategory(index, category), items6);
+  let obj2 = { androidRippleConfig: metroImportDefault, style, onPress: callback, accessibilityRole: "tab", accessibilityLabel: name, accessibilityState: { selected: tmp14 }, children: tmp27(View, obj3) };
+  const PressableOpacity = Pressables.PressableOpacity;
+  const tmp26 = EmojiCategoryTypes;
   if (category.type === EmojiCategoryTypes.GUILD) {
     name = category.guild.name;
   } else {
     name = category.name;
   }
-  obj6 = { style: items1, children: items2 };
-  items1 = [tmp.itemInner, animatedStyle];
-  View = categoryIndexActive(tmp3[8]).View;
-  tmp12 = closure_9;
-  if (category.type === tmp11.GUILD) {
-    const obj7 = { guild: category.guild, loadingStyle, size: category(tmp3[12]).GuildIconSizes.XSMALL, style: tmp.guildItem };
-    const tmp13Result = categoryIndexActive(tmp3[12]);
-    tmp10Result = tmp10(tmp13Result, obj7);
+  obj3 = { style: items7, children: items8 };
+  items7 = [tmp.itemInner, animatedStyle];
+  View = _modDef1652.View;
+  tmp27 = React4;
+  if (category.type === tmp26.GUILD) {
+    const obj4 = { guild: category.guild, loadingStyle, size: GuildIcon.GuildIconSizes.XSMALL, style: tmp.guildItem };
+    const tmp28Result = GuildIconDefault;
+    tmp25Result = tmp25(tmp28Result, obj4);
   } else {
-    const obj8 = { id: category.id };
-    tmp10Result = tmp10(tmp13(tmp3[13]), obj8);
+    const obj5 = { id: category.id };
+    tmp25Result = tmp25(tmp28(10194), obj5);
   }
-  items2 = [tmp10Result, ];
+  items8 = [tmp25Result, ];
   if (locked) {
-    const obj9 = { style: tmp.lockContainer, children: closure_8(category(tmp3[14]).LockIcon, obj10) };
-    obj10 = { style: tmp.lock };
-    locked = tmp10(backgroundColor2, obj9);
+    const obj6 = { style: tmp.lockContainer, children: metroImportAll(LockIcon.LockIcon, obj7) };
+    obj7 = { style: tmp.lock };
+    locked = tmp25(View, obj6);
   }
-  items2[1] = locked;
-  return closure_8(PressableOpacity, obj5);
+  items8[1] = locked;
+  return metroImportAll(PressableOpacity, obj2);
 });
 size = size_mod;
 const result = size.fileFinishedImporting("modules/emoji_picker/native/components/categories/EmojiPickerCategoriesItem.tsx");

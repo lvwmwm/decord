@@ -1,18 +1,18 @@
-// Module ID: 14435
-// Function ID: 14436
+// Module ID: 14671
+// Function ID: 14672
 // Name: UnifiedGiftModalSuccessScreen
-// Dependencies: [19, 1072, 21, 5014, 575, 14436, 10610, 6744, 14447, 1994, 7563, 6030, 5717, 5624, 1113, 5635, 2]
+// Dependencies: [19, 1072, 21, 5140, 575, 14672, 10731, 6799, 14683, 2118, 7635, 6162, 5842, 5751, 1113, 5759, 2]
 // Exports: default
 
-// Module 14435 (UnifiedGiftModalSuccessScreen)
+// Module 14671 (UnifiedGiftModalSuccessScreen)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import asyncRequire from "asyncRequire" /* 1994 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6744 */;
-import openUserSettings from "openUserSettings" /* 7563 */;
+import asyncRequire from "asyncRequire" /* 2118 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6799 */;
+import openUserSettings from "openUserSettings" /* 7635 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -50,7 +50,7 @@ export default function UnifiedGiftModalSuccessScreen(giftBadgeProgress) {
     if (tmp2) {
       const obj2 = { giftBadgeProgress };
       const obj = ModalActionCreatorsDefault;
-      obj.pushLazy(asyncRequire(14447, dependencyMap.paths), obj2, "collectibles_shop_gift_badge_modal");
+      obj.pushLazy(asyncRequire(14683, dependencyMap.paths), obj2, "collectibles_shop_gift_badge_modal");
     }
   }, items);
   const items1 = [onClose];
@@ -65,15 +65,15 @@ export default function UnifiedGiftModalSuccessScreen(giftBadgeProgress) {
   let obj2 = { source: tmp4, style: tmp.image };
   const tmp10 = onClose(enabled[12]);
   const items2 = [closure_5(tmp10, obj2), , , ];
-  const obj3 = { variant: "heading-lg/bold", style: tmp.title, children: intl.string(tmp2(enabled[14]).t.MqZXbv) };
+  const obj3 = { variant: "heading-lg/semibold", style: tmp.title, children: intl.string(tmp2(enabled[14]).t.MqZXbv) };
   const Text = tmp2(tmp3[13]).Text;
   intl = tmp2(tmp3[14]).intl;
   items2[1] = closure_5(Text, obj3);
-  const obj4 = { variant: "text-md/medium", style: tmp.description, children: intl2.format(tmp2(enabled[14]).t.YS2J4S, { onClick: callback1 }) };
+  const obj4 = { variant: "body-md/medium", style: tmp.description, children: intl2.format(tmp2(enabled[14]).t.YS2J4S, { onClick: callback1 }) };
   const Text2 = tmp2(tmp3[13]).Text;
   intl2 = tmp2(tmp3[14]).intl;
   items2[2] = closure_5(Text2, obj4);
-  const obj5 = { onPress: callback, text: null, textVariant: "text-md/semibold", grow: true };
+  const obj5 = { onPress: callback, text: null, textVariant: "body-md/semibold", grow: true };
   const BaseTextButton = tmp2(tmp3[15]).BaseTextButton;
   const intl3 = tmp2(tmp3[14]).intl;
   const tmp7 = closure_6;

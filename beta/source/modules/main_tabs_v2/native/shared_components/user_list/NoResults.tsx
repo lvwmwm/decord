@@ -1,15 +1,15 @@
-// Module ID: 13403
-// Function ID: 13404
+// Module ID: 13635
+// Function ID: 13636
 // Name: NoResults
-// Dependencies: [19, 17, 21, 5014, 5624, 2]
+// Dependencies: [19, 17, 21, 5140, 5751, 2]
 // Exports: default
 
-// Module 13403 (NoResults)
-import Text_Text from "Text/Text" /* 5624 */;
+// Module 13635 (NoResults)
+import Text_Text from "Text/Text" /* 5751 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let c2;
@@ -59,12 +59,12 @@ export default function NoResults(illustration) {
   items1 = [tmp5, ];
   const obj4 = { style: tmp.textContainer, children: items2 };
   items2 = [, ];
-  const obj5 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", style: tmp.text, children: title };
+  const obj5 = { variant: "body-md/semibold", color: "mobile-text-heading-primary", style: tmp.text, children: title };
   items2[0] = React3(Text_Text.Text, obj5);
   let tmp7Result = null;
   const tmp7 = React3;
   if (null != subtitle) {
-    const obj6 = { variant: "text-xs/medium", color: "interactive-text-default", style: tmp.text, children: subtitle };
+    const obj6 = { variant: "body-xs/medium", color: "interactive-text-default", style: tmp.text, children: subtitle };
     tmp7Result = tmp7(Text_Text.Text, obj6);
   }
   items2[1] = tmp7Result;

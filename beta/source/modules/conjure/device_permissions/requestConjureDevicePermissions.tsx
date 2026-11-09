@@ -1,17 +1,17 @@
-// Module ID: 10951
-// Function ID: 10952
+// Module ID: 11056
+// Function ID: 11057
 // Name: requestConjureDevicePermissions
-// Dependencies: [5, 2038, 6846, 10952, 6847, 1089, 10953, 5772, 10954, 572, 2]
+// Dependencies: [5, 2162, 6901, 11057, 6902, 1089, 11055, 5901, 11058, 572, 2]
 // Exports: default, getConjureDevicePermissionStatus
 
-// Module 10951 (requestConjureDevicePermissions)
+// Module 11056 (requestConjureDevicePermissions)
 import DurationsDefault from "Durations" /* 1089 */;
-import FramesConstants from "FramesConstants" /* 6847 */;
-import conjureDevicePermissions from "conjureDevicePermissions" /* 10953 */;
+import FramesConstants from "FramesConstants" /* 6902 */;
+import conjureDevicePermissions from "conjureDevicePermissions" /* 11055 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationStore from "ApplicationStore" /* 2038 */;
-import FramesStore from "FramesStore" /* 6846 */;
-import ConjureDevicePermissionStore from "ConjureDevicePermissionStore" /* 10952 */;
+import ApplicationStore from "ApplicationStore" /* 2162 */;
+import FramesStore from "FramesStore" /* 6901 */;
+import ConjureDevicePermissionStore from "ConjureDevicePermissionStore" /* 11057 */;
 import size from "module_2" /* 2 */;
 
 let application, c1, c5, c6, closure_3, frameByIframeId;
@@ -47,7 +47,7 @@ let obj = function _requestConjureDevicePermissions() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -118,7 +118,7 @@ let obj = function _requestConjureDevicePermissions() {
                     const obj2 = { value, done: true };
                     return obj2;
                   } else {
-                    return { value: "HermesInternal", done: "HermesInternal" };
+                    return { value: "HermesInternal", done: null };
                   }
                 } else {
                   try {

@@ -1,13 +1,13 @@
-// Module ID: 18117
-// Function ID: 18118
+// Module ID: 18459
+// Function ID: 18460
 // Name: useFirstGloballyViewbleGuildChannelId
-// Dependencies: [4944, 1083, 504, 4951, 2]
+// Dependencies: [5070, 1083, 504, 5077, 2]
 // Exports: useFirstGloballyViewbleGuildChannelId
 
-// Module 18117 (useFirstGloballyViewbleGuildChannelId)
+// Module 18459 (useFirstGloballyViewbleGuildChannelId)
 import Constants from "Constants" /* 1083 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4951 */;
-import GuildChannelStore from "GuildChannelStore" /* 4944 */;
+import PermissionUtilsAll from "PermissionUtils" /* 5077 */;
+import GuildChannelStore from "GuildChannelStore" /* 5070 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

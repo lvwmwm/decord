@@ -1,21 +1,21 @@
-// Module ID: 15450
-// Function ID: 15451
+// Module ID: 15743
+// Function ID: 15744
 // Name: PremiumTierCard
-// Dependencies: [19, 17, 7617, 1385, 21, 5014, 575, 5587, 1092, 5717, 2047, 15451, 15452, 8535, 9930, 10585, 10586, 6977, 2]
+// Dependencies: [19, 17, 7693, 1387, 21, 5140, 575, 5715, 1092, 5842, 2171, 15744, 15745, 8606, 10052, 10705, 10706, 7040, 2]
 // Exports: default
 
-// Module 15450 (PremiumTierCard)
+// Module 15743 (PremiumTierCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import ConstantsIOS from "ConstantsIOS" /* 1092 */;
-import PremiumConstants from "PremiumConstants" /* 1385 */;
-import PremiumUtils from "PremiumUtils" /* 2047 */;
-import LinearGradientDefault from "LinearGradient" /* 5587 */;
-import FastImageDefault from "FastImage" /* 5717 */;
-import ColorConstants from "ColorConstants" /* 7617 */;
+import PremiumConstants from "PremiumConstants" /* 1387 */;
+import PremiumUtils from "PremiumUtils" /* 2171 */;
+import LinearGradientDefault from "LinearGradient" /* 5715 */;
+import FastImageDefault from "FastImage" /* 5842 */;
+import ColorConstants from "ColorConstants" /* 7693 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let metroImportAll;
@@ -23,7 +23,7 @@ let metroImportDefault;
 let metroRequire;
 let obj2;
 let tmp8;
-const Card_Card = tmp8(6977);
+const Card_Card = tmp8(7040);
 const View = react_native.View;
 const getPremiumGradientColor = ColorConstants.getPremiumGradientColor;
 const PremiumTypes = PremiumConstants.PremiumTypes;
@@ -61,11 +61,11 @@ export default function _default(premiumType) {
     textLogoTier2 = tmp.textLogoTier2;
   }
   if (PremiumTypes.TIER_0 === premiumType) {
-    tmp5Result = tmp5(15451);
+    tmp5Result = tmp5(15744);
   } else if (PremiumTypes.TIER_1 === premiumType) {
-    tmp5Result = tmp5(15452);
+    tmp5Result = tmp5(15745);
   } else if (PremiumTypes.TIER_2 === premiumType) {
-    tmp5Result = tmp5(8535);
+    tmp5Result = tmp5(8606);
   }
   const items = [metroRequire(tmp7, obj), , ];
   const items1 = [tmp.wumpusLogo, ];
@@ -80,11 +80,11 @@ export default function _default(premiumType) {
   const obj4 = { accessible: false, importantForAccessibility: "no", style: items1, source: tmp5Result4 };
   items1[1] = wumpusLogoTier2;
   if (PremiumTypes.TIER_0 === premiumType) {
-    tmp5Result4 = tmp5(9930);
+    tmp5Result4 = tmp5(10052);
   } else if (PremiumTypes.TIER_1 === premiumType) {
-    tmp5Result4 = tmp5(10585);
+    tmp5Result4 = tmp5(10705);
   } else if (PremiumTypes.TIER_2 === premiumType) {
-    tmp5Result4 = tmp5(10586);
+    tmp5Result4 = tmp5(10706);
   }
   const obj5 = { children: items };
   items[1] = metroRequire(tmp5Result3, obj4);

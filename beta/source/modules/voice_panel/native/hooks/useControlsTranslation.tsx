@@ -1,62 +1,69 @@
-// Module ID: 19301
-// Function ID: 19302
+// Module ID: 19706
+// Function ID: 19707
 // Name: useControlsTranslation
-// Dependencies: [19, 11223, 11226, 11222, 5095, 5637, 2]
+// Dependencies: [19, 11363, 11366, 11362, 1652, 5761, 2]
 // Exports: default
 
-// Module 19301 (useControlsTranslation)
-import spring from "spring" /* 5637 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11223 */;
-import VoicePanelCardConstants from "VoicePanelCardConstants" /* 11226 */;
+// Module 19706 (useControlsTranslation)
+import _mod1652 from "module_1652" /* 1652 */;
+import spring_spring from "spring/spring" /* 5761 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11362 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11363 */;
+import VoicePanelCardConstants from "VoicePanelCardConstants" /* 11366 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
-const require = globalThis.__r;
-let _require, importDefault, items, obj1, obj3, obj6, sum, tmp, tmp2, tmp3, tmp5, y;
-
 const MODE_CHANGE_PHYSICS = VoicePanelConstants.MODE_CHANGE_PHYSICS;
 const CALL_TILE_GUTTER = VoicePanelCardConstants.CALL_TILE_GUTTER;
-const __initData = { code: "function useControlsTranslationTsx1(){const{withSpring,wrapperSpecs,MODE_CHANGE_PHYSICS,useReducedMotion,CALL_TILE_GUTTER,viewHeight}=this.__closure;return{transform:[{translateX:withSpring(wrapperSpecs.get().x,MODE_CHANGE_PHYSICS)},{translateY:withSpring(!useReducedMotion.get()&&wrapperSpecs.get().hidden?wrapperSpecs.get().height+CALL_TILE_GUTTER+viewHeight.get():wrapperSpecs.get().y,MODE_CHANGE_PHYSICS)}]};}" };
+let closure_6 = { code: "(function useControlsTranslationTsx1(){let[withSpring,wrapperSpecs,MODE_CHANGE_PHYSICS,useReducedMotion,CALL_TILE_GUTTER,viewHeight]=this.__closure;return{transform:[{translateX:withSpring(wrapperSpecs.get().x,MODE_CHANGE_PHYSICS)},{translateY:withSpring(!useReducedMotion.get()&&wrapperSpecs.get().hidden?wrapperSpecs.get().height+CALL_TILE_GUTTER+viewHeight.get():wrapperSpecs.get().y,MODE_CHANGE_PHYSICS)}]};})" };
 const result = size.fileFinishedImporting("modules/voice_panel/native/hooks/useControlsTranslation.tsx");
 
-export default function useControlsTranslation(arg0, wrapperSpecs, viewHeight) {
-  let useReducedMotion;
-  _require = wrapperSpecs;
-  importDefault = viewHeight;
-  useReducedMotion = react.useContext(require("VoicePanelStateContext")).useReducedMotion;
-  let obj = require("ReanimatedRexport");
-  class S {
-    constructor() {
-      obj = { translateX: null };
-      obj2 = closure_0(closure_2[5]);
-      obj3 = closure_0;
-      tmp = MODE_CHANGE_PHYSICS;
-      obj.translateX = obj2.withSpring(closure_0.get().x, MODE_CHANGE_PHYSICS);
-      items = [, ];
-      items[0] = obj;
-      tmp2 = closure_0(closure_2[5]);
-      withSpring = tmp2.withSpring;
-      if (!useReducedMotion.get()) {
-        if (obj3.get().hidden) {
-          tmp3 = CALL_TILE_GUTTER;
-          tmp5 = closure_1;
-          sum = obj3.get().height + CALL_TILE_GUTTER;
-          y = sum + closure_1.get();
-        }
-        obj1 = { transform: null };
-        obj6 = { translateY: null };
-        obj6.translateY = withSpring(y, tmp);
-        items[1] = obj6;
-        obj1.transform = items;
-        return obj1;
+export default function useControlsTranslation(arg0, arg1, arg2) {
+  let tmp2;
+  let tmp3;
+  let tmp4;
+  let tmp5;
+  let tmp6;
+  let tmp7;
+  let tmp8;
+  const useReducedMotion = react.useContext(VoicePanelStateContextDefault).useReducedMotion;
+  let tmp = _mod1652;
+  let items = [closure_6, , , , , , ];
+  const useAnimatedStyle = tmp.useAnimatedStyle;
+  items[1] = spring_spring.withSpring;
+  items[2] = arg1;
+  items[3] = MODE_CHANGE_PHYSICS;
+  items[4] = useReducedMotion;
+  items[5] = CALL_TILE_GUTTER;
+  items[6] = arg2;
+  let c0;
+  let c1;
+  let c2;
+  let c3;
+  let c4;
+  let c5;
+  [tmp2, tmp3, tmp4, tmp5, tmp6, tmp7, tmp8] = items;
+  function useControlsTranslationTsx1() {
+    const items = [{ translateX: _undefined(_undefined2.get().x, c2) }, ];
+    ({ translateX: _undefined(_undefined2.get().x, c2) });
+    const tmp = _undefined;
+    const tmp2 = c2;
+    if (!_undefined3.get()) {
+      let y;
+      if (_undefined2.get().hidden) {
+        const sum = obj2.get().height + c4;
+        y = sum + _undefined4.get();
       }
-      y = obj3.get().y;
-      return;
+      const obj3 = { transform: items };
+      items[1] = { translateY: tmp(y, tmp2) };
+      const obj4 = { translateY: tmp(y, tmp2) };
+      return obj3;
     }
+    y = obj2.get().y;
   }
-  let obj2 = { withSpring: require("spring").withSpring, wrapperSpecs, MODE_CHANGE_PHYSICS, useReducedMotion, CALL_TILE_GUTTER, viewHeight };
-  S.__closure = obj2;
-  S.__workletHash = 11281989557090;
-  S.__initData = __initData;
-  return obj.useAnimatedStyle(S);
+  const items1 = [tmp3, tmp4, tmp5, tmp6, tmp7, tmp8];
+  useControlsTranslationTsx1.__closure = items1;
+  useControlsTranslationTsx1.__workletHash = 16744357992443;
+  useControlsTranslationTsx1.__initData = tmp2;
+  return useAnimatedStyle(useControlsTranslationTsx1);
 };

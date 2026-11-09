@@ -1,25 +1,25 @@
-// Module ID: 19182
-// Function ID: 19183
+// Module ID: 19558
+// Function ID: 19559
 // Name: SoundboardSoundPreviewActionSheet
-// Dependencies: [32, 19, 17, 4863, 1383, 6058, 1072, 21, 5014, 575, 1375, 19180, 19179, 19166, 504, 7517, 7525, 1252, 5634, 10063, 10061, 1113, 11060, 5717, 8197, 7366, 7300, 13429, 5624, 8667, 8848, 2]
+// Dependencies: [32, 19, 17, 4989, 1385, 6191, 1072, 21, 5140, 575, 1377, 19556, 19555, 19542, 504, 7589, 7597, 1252, 5758, 10184, 10182, 1113, 11192, 5842, 8266, 7426, 7363, 13661, 5751, 8738, 8922, 2]
 // Exports: default
 
-// Module 19182 (SoundboardSoundPreviewActionSheet)
+// Module 19558 (SoundboardSoundPreviewActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import SoundboardActionCreators from "SoundboardActionCreators" /* 7517 */;
-import SoundboardUtils from "SoundboardUtils" /* 7525 */;
-import soundboard_SoundboardActionCreators from "soundboard/SoundboardActionCreators" /* 19166 */;
+import SoundboardActionCreators from "SoundboardActionCreators" /* 7589 */;
+import SoundboardUtils from "SoundboardUtils" /* 7597 */;
+import soundboard_SoundboardActionCreators from "soundboard/SoundboardActionCreators" /* 19542 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
-import UserStore from "UserStore" /* 1383 */;
-import SoundboardStore from "SoundboardStore" /* 6058 */;
+import ChannelStore from "ChannelStore" /* 4989 */;
+import UserStore from "UserStore" /* 1385 */;
+import SoundboardStore from "SoundboardStore" /* 6191 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
-import PlatformUtils from "PlatformUtils" /* 1375 */;
+import createStyles_mod from "createStyles" /* 5140 */;
+import PlatformUtils from "PlatformUtils" /* 1377 */;
 import size_mod from "module_2" /* 2 */;
 
 let c10;
@@ -241,7 +241,7 @@ export default function SoundboardSoundPreviewActionSheet(channel) {
     str2 = "";
   }
   items14 = [stateFromStores3(tmp29, obj16), ];
-  const obj17 = { style: tmp.text, variant: "heading-lg/extrabold", children: sound.name };
+  const obj17 = { style: tmp.text, variant: "heading-lg/semibold", children: sound.name };
   items14[1] = stateFromStores3(channel(soundGridLocation[28]).Text, obj17);
   const items15 = [closure_12(soundboardSoundPreviewMenuEnabled, obj14), ];
   const obj19 = { children: null };

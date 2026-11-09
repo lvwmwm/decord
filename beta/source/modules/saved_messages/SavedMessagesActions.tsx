@@ -1,17 +1,17 @@
-// Module ID: 11156
-// Function ID: 11157
+// Module ID: 11288
+// Function ID: 11289
 // Name: SavedMessagesActions
-// Dependencies: [5, 10191, 1072, 1282, 10192, 572, 2]
+// Dependencies: [5, 10310, 1072, 1282, 10311, 572, 2]
 // Exports: deleteSavedMessage, fetchAndUpdateSavedMessages, fetchBookmarks, upsertSavedMessage
 
-// Module 11156 (SavedMessagesActions)
+// Module 11288 (SavedMessagesActions)
 import Constants from "Constants" /* 1072 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SavedMessagesStore from "SavedMessagesStore" /* 10191 */;
+import SavedMessagesStore from "SavedMessagesStore" /* 10310 */;
 import size from "module_2" /* 2 */;
 
-let bookmarksFetchState, c3, c4, c8;
+let bookmarksFetchState, c3, c4, c8, results;
 
 let obj = function _upsertSavedMessage() {
   obj = _asyncToGenerator(async (arg0, value) => {
@@ -28,7 +28,7 @@ let obj = function _upsertSavedMessage() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -95,7 +95,8 @@ obj = function _deleteSavedMessage() {
 };
 obj = function _fetchSavedMessages() {
   obj = _asyncToGenerator(async (arg0, value) => {
-    let obj14;
+    let obj13;
+    let obj15;
     let obj6;
     let reminders;
     if (c4 === 2) {
@@ -108,7 +109,7 @@ obj = function _fetchSavedMessages() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c2;
@@ -128,9 +129,9 @@ obj = function _fetchSavedMessages() {
             body = undefined;
             c2 = 1;
             const HTTP = HTTPUtils.HTTP;
-            const request = { url: constants.GET_SAVED_MESSAGES, query: { bookmark_ids: true }, rejectWithError: obj14.rejectWithMigratedError() };
+            const request = { url: constants.GET_SAVED_MESSAGES, query: { bookmark_ids: true }, rejectWithError: obj15.rejectWithMigratedError() };
             const get = HTTP.get;
-            obj14 = HTTPUtils;
+            obj15 = HTTPUtils;
             c3 = 4;
             c4 = 1;
             const obj4 = { value: get(request), done: false };
@@ -138,7 +139,7 @@ obj = function _fetchSavedMessages() {
           }
         } else if (1 === c3) {
           c2 = 0;
-          const obj5 = { type: "SAVED_MESSAGES_UPDATE", reminders: [], bookmarkIds: [] };
+          const obj5 = { type: "SAVED_MESSAGES_UPDATE", reminders: [], bookmarkIds: [], messages: [] };
           c3 = 2;
           c4 = 1;
           const obj7 = { value: obj6.dispatch(obj5), done: false };
@@ -167,7 +168,7 @@ obj = function _fetchSavedMessages() {
             return obj10;
           } else {
             c4 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else if (arg0 === 1) {
           c4 = 3;
@@ -181,10 +182,11 @@ obj = function _fetchSavedMessages() {
           body = value;
           c2 = 0;
           body = body.body;
-          const obj12 = { type: "SAVED_MESSAGES_UPDATE", reminders: reminders.map(closure_129_0(closure_129_2[4]).savedMessageCreateObjectToClient), bookmarkIds: body.bookmark_ids };
+          const obj12 = { type: "SAVED_MESSAGES_UPDATE", reminders: reminders.map(closure_129_0(closure_129_2[4]).savedMessageCreateObjectToClient), bookmarkIds: body.bookmark_ids, messages: obj13.getSavedMessagesRawMessages(body.reminders) };
           reminders = body.reminders;
           const dispatch = closure_129_1(closure_129_2[5]).dispatch;
           const tmp18 = closure_129_1(closure_129_2[5]);
+          obj13 = closure_129_0(closure_129_2[4]);
           c3 = 3;
           c4 = 1;
           obj = { value: dispatch(obj12), done: false };
@@ -207,8 +209,8 @@ obj = function _fetchBookmarks() {
     let bookmarksCursor2;
     let closure_4;
     let flag;
+    let obj10;
     let obj12;
-    let obj9;
     let requestId;
     let results1;
     let sum;
@@ -238,25 +240,25 @@ obj = function _fetchBookmarks() {
         throw value;
       } else if (arg0 === 2) {
         c7 = 3;
-        const obj10 = { value, done: true };
-        return obj10;
+        const obj9 = { value, done: true };
+        return obj9;
       } else if (shouldFetchBookmarks(flag)) {
         bookmarksCursor2 = bookmarksCursor.getBookmarksCursor();
         sum = sum + 1;
         requestId = sum;
         const obj11 = { type: "BOOKMARKS_FETCH", requestId };
-        const obj5 = closure_132_1(closure_132_2[5]);
-        obj5.dispatch(obj11);
+        const obj6 = closure_132_1(closure_132_2[5]);
+        obj6.dispatch(obj11);
         let c5 = 1;
         const HTTP = closure_132_0(closure_132_2[3]).HTTP;
-        const request = { url: constants.GET_BOOKMARKS, query: obj12, retries: 2, rejectWithError: obj9.rejectWithMigratedError() };
+        const request = { url: constants.GET_BOOKMARKS, query: obj12, retries: 2, rejectWithError: obj10.rejectWithMigratedError() };
         let before = bookmarksCursor2;
         const get = HTTP.get;
         if (bookmarksCursor2 == null) {
           before = undefined;
         }
         obj12 = { before, limit: 25 };
-        obj9 = closure_132_0(closure_132_2[3]);
+        obj10 = closure_132_0(closure_132_2[3]);
         let c6 = 4;
         c7 = 1;
         const obj13 = { value: get(request), done: false };
@@ -265,8 +267,8 @@ obj = function _fetchBookmarks() {
     } else if (3 === tmp4) {
       c5 = 0;
       const obj14 = { type: "BOOKMARKS_FETCH_FAILURE", requestId };
-      const obj2 = closure_132_1(closure_132_2[5]);
-      obj2.dispatch(obj14);
+      const obj3 = closure_132_1(closure_132_2[5]);
+      obj3.dispatch(obj14);
       c7 = 3;
       const obj15 = { value: undefined, done: true };
       return obj15;
@@ -276,16 +278,16 @@ obj = function _fetchBookmarks() {
     } else if (arg0 === 2) {
       c5 = 0;
       c7 = 3;
-      obj = { value, done: true };
-      return obj;
+      const obj16 = { value, done: true };
+      return obj16;
     } else {
       let nextBefore = value;
       c5 = 0;
       const body = nextBefore.body;
-      const obj16 = { type: "BOOKMARKS_FETCH_SUCCESS", requestId, nextBefore, bookmarks: results1.map(closure_132_0(closure_132_2[4]).savedMessageCreateObjectToClient), hasMore: body.has_more };
-      const results = body.results;
+      const obj17 = { type: "BOOKMARKS_FETCH_SUCCESS", requestId, nextBefore, bookmarks: results1.map(closure_132_0(closure_132_2[4]).savedMessageCreateObjectToClient), hasMore: body.has_more, messages: obj.getSavedMessagesRawMessages(body.results) };
+      results = body.results;
       const dispatch = closure_132_1(closure_132_2[5]).dispatch;
-      const tmp53 = closure_132_1(closure_132_2[5]);
+      const tmp56 = closure_132_1(closure_132_2[5]);
       const atResult = results.at(-1);
       let saved_at;
       if (atResult != null) {
@@ -296,14 +298,15 @@ obj = function _fetchBookmarks() {
         nextBefore = bookmarksCursor2;
       }
       results1 = body.results;
-      dispatch(obj16);
+      obj = closure_132_0(closure_132_2[4]);
+      dispatch(obj17);
     }
     await "HermesInternal";
-    let obj6 = closure_0;
+    let obj5 = closure_0;
     if (closure_0 === undefined) {
-      obj6 = {};
+      obj5 = {};
     }
-    flag = obj6.loadMore ?? false;
+    flag = obj5.loadMore ?? false;
     return "flexDirection";
   });
   return obj(...arguments);

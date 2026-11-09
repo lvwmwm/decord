@@ -1,11 +1,11 @@
-// Module ID: 4854
-// Function ID: 4855
+// Module ID: 4980
+// Function ID: 4981
 // Name: DismissibleContentTypes
-// Dependencies: [4847, 2]
+// Dependencies: [4973, 2]
 // Exports: isGuildDismissibleContent, isRecurringDismissibleContent, isSingleUseDismissibleContent, isSingleUseGuildDismissibleContent, isSnowflakeBoundDismissibleContent, isSnowflakeBoundGuildDismissibleContent, isTimeRecurringDismissibleContent, isTimeRecurringGuildDismissibleContent, isVersionedDismissibleContent
 
-// Module 4854 (DismissibleContentTypes)
-import dismissible_content from "dismissible_content" /* 4847 */;
+// Module 4980 (DismissibleContentTypes)
+import dismissible_content from "dismissible_content" /* 4973 */;
 import size from "module_2" /* 2 */;
 
 function isSingleUseDismissibleContent(item) {
@@ -49,14 +49,14 @@ export function isRecurringDismissibleContent(item10020) {
   return hasItem;
 }
 export { isSingleUseDismissibleContent };
-export function isSingleUseGuildDismissibleContent(GDM_INVITE_REMINDER) {
-  return items4.includes(GDM_INVITE_REMINDER);
+export function isSingleUseGuildDismissibleContent(content) {
+  return items4.includes(content);
 }
-export function isTimeRecurringGuildDismissibleContent(GDM_INVITE_REMINDER) {
-  return items5.includes(GDM_INVITE_REMINDER);
+export function isTimeRecurringGuildDismissibleContent(content) {
+  return items5.includes(content);
 }
-export function isSnowflakeBoundGuildDismissibleContent(GDM_INVITE_REMINDER) {
-  return items3.includes(GDM_INVITE_REMINDER);
+export function isSnowflakeBoundGuildDismissibleContent(content) {
+  return items3.includes(content);
 }
 export function isGuildDismissibleContent(dismissibleContent) {
   const hasItem = items4.includes(dismissibleContent) || items5.includes(dismissibleContent) || items3.includes(dismissibleContent);

@@ -1,14 +1,14 @@
-// Module ID: 17445
-// Function ID: 17446
+// Module ID: 17771
+// Function ID: 17772
 // Name: ImageTextIcon
-// Dependencies: [19, 21, 575, 5716, 17446, 2]
+// Dependencies: [19, 21, 575, 5841, 17772, 2]
 // Exports: ImageTextIcon
 
-// Module 17445 (ImageTextIcon)
+// Module 17771 (ImageTextIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5716 */;
-import AssetRegistry from "AssetRegistry" /* 17446 */;
+import BaseIconImage2 from "BaseIconImage" /* 5841 */;
+import AssetRegistry from "AssetRegistry" /* 17772 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

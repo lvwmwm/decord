@@ -1,23 +1,22 @@
-// Module ID: 6455
-// Function ID: 6456
+// Module ID: 6588
+// Function ID: 6589
 // Name: StoreUtils
-// Dependencies: [5, 502, 2048, 2049, 2052, 1072, 6456, 5952, 5871, 1444, 6535, 5772, 1282, 1375, 1113, 2]
+// Dependencies: [5, 502, 2172, 2173, 2176, 1072, 6084, 6000, 1446, 6589, 5901, 1282, 1377, 1113, 2]
 // Exports: getAssetURL, getPrimarySKUForApplication, httpGetWithCountryCodeQuery, nativePlatformTypeToSKUOperatingSystem, skuOperatingSystemToText
 
-// Module 6455 (StoreUtils)
+// Module 6588 (StoreUtils)
 import intl4 from "intl" /* 1113 */;
-import PlatformUtils from "PlatformUtils" /* 1375 */;
-import ImageLoaderUtils from "ImageLoaderUtils" /* 1444 */;
-import BrowserUtils from "BrowserUtils" /* 5871 */;
-import shared_PlatformUtils from "shared/PlatformUtils" /* 5952 */;
-import actions_BillingActionCreators from "actions/BillingActionCreators" /* 6535 */;
+import PlatformUtils from "PlatformUtils" /* 1377 */;
+import ImageLoaderUtils from "ImageLoaderUtils" /* 1446 */;
+import BrowserUtils from "BrowserUtils" /* 6000 */;
+import shared_PlatformUtils from "shared/PlatformUtils" /* 6084 */;
+import actions_BillingActionCreators from "actions/BillingActionCreators" /* 6589 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import BillingInfoStore from "BillingInfoStore" /* 2048 */;
-import PaymentSourceStore from "PaymentSourceStore" /* 2049 */;
-import SubscriptionStore from "SubscriptionStore" /* 2052 */;
+import BillingInfoStore from "BillingInfoStore" /* 2172 */;
+import PaymentSourceStore from "PaymentSourceStore" /* 2173 */;
+import SubscriptionStore from "SubscriptionStore" /* 2176 */;
 import Constants from "Constants" /* 1072 */;
-import allSettled_mod from "allSettled" /* 6456 */;
 import size from "module_2" /* 2 */;
 
 let c1, c6, c7;
@@ -38,7 +37,7 @@ let obj = function _waitForSubscriptionsToBeFetched() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -59,7 +58,7 @@ let obj = function _waitForSubscriptionsToBeFetched() {
                   c1 = 2;
                   c2 = 1;
                   const obj6 = { value: obj5.sleep(50), done: false };
-                  obj5 = closure_128_0(closure_128_1[11]);
+                  obj5 = closure_128_0(closure_128_1[10]);
                   return obj6;
                 }
               } else {
@@ -89,7 +88,7 @@ let obj = function _waitForSubscriptionsToBeFetched() {
           return obj;
         }
         c2 = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp13) {
         c2 = 3;
         throw tmp13;
@@ -135,7 +134,7 @@ obj = function _httpGetWithCountryCodeQuery() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -248,7 +247,7 @@ obj = function _httpGetWithCountryCodeQuery() {
               obj6.query = obj7;
             }
           }
-          const HTTP = closure_133_0(closure_133_1[12]).HTTP;
+          const HTTP = closure_133_0(closure_133_1[11]).HTTP;
           c7 = 3;
           const obj8 = { value: HTTP.get(obj6), done: true };
           return obj8;
@@ -262,17 +261,15 @@ obj = function _httpGetWithCountryCodeQuery() {
   return obj(...arguments);
 };
 ({ Endpoints: metroImportDefault, OperatingSystems: metroImportAll } = Constants);
-let allSettled = allSettled_mod;
-allSettled = allSettled.shim();
-let tmp4 = !shared_PlatformUtils.isMobile && !shared_PlatformUtils.isTablet;
-if (tmp4) {
+let tmp3 = !shared_PlatformUtils.isMobile && !shared_PlatformUtils.isTablet;
+if (tmp3) {
   const _module1 = BrowserUtils;
-  tmp4 = -1 !== _module1.getChromeVersion();
+  tmp3 = -1 !== _module1.getChromeVersion();
 }
-let closure_9 = tmp4;
+let closure_9 = tmp3;
 const result = size.fileFinishedImporting("utils/StoreUtils.tsx");
 
-export const SUPPORTS_WEBP = tmp4;
+export const SUPPORTS_WEBP = tmp3;
 export function getAssetURL(arg0, mimeType, arg2, mp4) {
   let combined;
   let str = mp4;

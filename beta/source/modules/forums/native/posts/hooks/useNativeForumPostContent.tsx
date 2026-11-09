@@ -1,15 +1,15 @@
-// Module ID: 13787
-// Function ID: 13788
+// Module ID: 14020
+// Function ID: 14021
 // Name: useNativeForumPostContent
-// Dependencies: [1072, 5014, 1113, 6888, 6560, 2]
+// Dependencies: [1072, 5140, 1113, 6943, 6615, 2]
 // Exports: default
 
-// Module 13787 (useNativeForumPostContent)
+// Module 14020 (useNativeForumPostContent)
 import Constants from "Constants" /* 1072 */;
 import intl10 from "intl" /* 1113 */;
-import StickersUtils from "StickersUtils" /* 6560 */;
-import isSystemMessageDefault from "isSystemMessage" /* 6888 */;
-import createStyles from "createStyles" /* 5014 */;
+import StickersUtils from "StickersUtils" /* 6615 */;
+import isSystemMessageDefault from "isSystemMessage" /* 6943 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 const MessageFlags = Constants.MessageFlags;
@@ -27,13 +27,13 @@ export default function useNativeForumPostContent(arg0) {
   ({ messageLoaded, isMessageDeleted } = arg0);
   const tmp = closure_4();
   if (isMessageDeleted) {
-    const obj2 = { content: intl9.string(intl10.t.U8Rr2l), style: tmp.italics, variant: "text-sm/normal" };
+    const obj2 = { content: intl9.string(intl10.t.U8Rr2l), style: tmp.italics, variant: "body-sm/normal" };
     intl9 = intl10.intl;
     return obj2;
   } else {
     if (null != message) {
       if (isSystemMessageDefault(message)) {
-        return { content: messageContent, style: tmp.italics, variant: "text-sm/normal" };
+        return { content: messageContent, style: tmp.italics, variant: "body-sm/normal" };
       }
     }
     const tmp6 = null != message && message.ignored;
@@ -105,7 +105,7 @@ export default function useNativeForumPostContent(arg0) {
             if (tmp9) {
               tmp19 = tmp13;
             }
-            return { content: tmp19, style: null, variant: "text-sm/medium" };
+            return { content: tmp19, style: null, variant: "body-sm/medium" };
           }
         }
       }
@@ -116,7 +116,7 @@ export default function useNativeForumPostContent(arg0) {
         const intl7 = intl10.intl;
         stringResult1 = intl7.string(intl10.t.yWK7ZM);
       }
-      return { content: stringResult1, style: tmp.italics, variant: "text-sm/normal" };
+      return { content: stringResult1, style: tmp.italics, variant: "body-sm/normal" };
     }
     const intl8 = intl10.intl;
     stringResult1 = intl8.string(intl10.t.Lkp2fB);

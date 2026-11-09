@@ -1,31 +1,31 @@
-// Module ID: 5915
-// Function ID: 5916
+// Module ID: 6047
+// Function ID: 6048
 // Name: AudioActionCreators
-// Dependencies: [5, 5916, 5919, 4863, 2006, 5764, 4917, 1383, 1072, 5920, 5768, 3, 1252, 551, 572, 5921, 5881, 5925, 5942, 2]
+// Dependencies: [5, 6048, 6051, 4989, 2130, 5893, 5043, 1385, 1072, 6052, 5897, 3, 1252, 551, 572, 6053, 6010, 6057, 6074, 2]
 
-// Module 5915 (AudioActionCreators)
+// Module 6047 (AudioActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import debounceDefault from "debounce" /* 551 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import Constants2 from "Constants" /* 5768 */;
-import trackVoiceAndVideoSettingsUpdateDefault from "trackVoiceAndVideoSettingsUpdate" /* 5881 */;
-import Constants3 from "Constants" /* 5920 */;
-import AudioSettingsUtils from "AudioSettingsUtils" /* 5921 */;
-import applyBackgroundOption from "applyBackgroundOption" /* 5925 */;
-import StreamQualityUtils from "StreamQualityUtils" /* 5942 */;
+import Constants2 from "Constants" /* 5897 */;
+import trackVoiceAndVideoSettingsUpdateDefault from "trackVoiceAndVideoSettingsUpdate" /* 6010 */;
+import Constants3 from "Constants" /* 6052 */;
+import AudioSettingsUtils from "AudioSettingsUtils" /* 6053 */;
+import applyBackgroundOption from "applyBackgroundOption" /* 6057 */;
+import StreamQualityUtils from "StreamQualityUtils" /* 6074 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SpatialAudioStore from "SpatialAudioStore" /* 5916 */;
-import CertifiedDeviceStore from "CertifiedDeviceStore" /* 5919 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
-import MediaEngineStore from "MediaEngineStore" /* 2006 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5764 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4917 */;
-import UserStore from "UserStore" /* 1383 */;
+import SpatialAudioStore from "SpatialAudioStore" /* 6048 */;
+import CertifiedDeviceStore from "CertifiedDeviceStore" /* 6051 */;
+import ChannelStore from "ChannelStore" /* 4989 */;
+import MediaEngineStore from "MediaEngineStore" /* 2130 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5893 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5043 */;
+import UserStore from "UserStore" /* 1385 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
-let c1, c2;
+let c1;
 
 let closure_12;
 let unpackModuleId;
@@ -653,7 +653,7 @@ let obj2 = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -687,7 +687,7 @@ let obj2 = {
             obj = c1(c2[14]);
             obj.dispatch(obj6);
             c2 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp17) {
           c2 = 3;
@@ -743,7 +743,7 @@ let obj2 = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -777,7 +777,7 @@ let obj2 = {
             obj = c1(c2[14]);
             obj.dispatch(obj6);
             c2 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp17) {
           c2 = 3;
@@ -786,14 +786,14 @@ let obj2 = {
       }
     })();
   },
-  setVideoEnabled(enabled) {
-    const tmp = enabled;
+  setVideoEnabled(c2) {
+    const tmp = c2;
     if (tmp) {
       obj = applyBackgroundOption;
       const result = obj.applyInitialVideoBackgroundOption();
     }
     const obj2 = DispatcherDefault;
-    const obj3 = { type: "MEDIA_ENGINE_SET_VIDEO_ENABLED", enabled };
+    const obj3 = { type: "MEDIA_ENGINE_SET_VIDEO_ENABLED", enabled: c2 };
     obj2.dispatch(obj3);
   },
   setGoLiveSource(qualityOptions) {

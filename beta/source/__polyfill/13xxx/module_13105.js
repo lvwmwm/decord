@@ -1,65 +1,55 @@
 // Module ID: 13105
 // Function ID: 13106
-// Dependencies: [13078, 13082, 13054, 13061]
-// Exports: notifyEventProcessors
+// Dependencies: [13050, 13094]
 
 // Module 13105
-const require = globalThis.__r;
-let _require, closure_3, dependencyMap;
+import tokenize from "tokenize" /* 13050 */;
+import tokenize2 from "tokenize" /* 13094 */;
 
-
-export function notifyEventProcessors(arg0, arg1, arg2) {
-  let closure_0;
-  let closure_1;
-  let num;
-  const f103801 = function(fn, arg1) {
-    closure_0 = fn;
-    let tmp3 = closure_0[closure_3];
-    let tmp4 = closure_1;
-    if (null !== closure_1) {
-      if (typeof tmp3 === "function") {
-        let obj = {};
-        let tmp13 = obj;
-        let tmp14 = tmp4;
-        let merged = Object.assign(tmp4);
-        let tmp16 = closure_2;
-        let tmp3Result = tmp3(obj, closure_2);
-        let tmp17 = closure_0;
-        let tmp18 = closure_1;
-        let tmp5 = closure_0(closure_1[1]).DEBUG_BUILD && tmp3.id && null === tmp3Result;
-        if (tmp5) {
-          let logger = tmp17(tmp18[2]).logger;
-          let tmp6 = globalThis;
-          let _HermesInternal = HermesInternal;
-          let str = "\" dropped event";
-          let str2 = "Event processor \"";
-          let logResult = logger.log("Event processor \"" + tmp3.id + "\" dropped event");
+let items;
+let obj2;
+function consumeRaw(arg0) {
+  return this.Raw(arg0, tokenize2.mode.semicolonIncluded, true);
+}
+const WhiteSpace = tokenize.TYPE.WhiteSpace;
+const Comment = tokenize.TYPE.Comment;
+const Semicolon = tokenize.TYPE.Semicolon;
+const obj = {
+  name: "DeclarationList",
+  structure: obj2,
+  parse() {
+    const self = this;
+    const list = this.createList();
+    if (!this.scanner.eof) {
+      while (true) {
+        let tokenType = self.scanner.tokenType;
+        if (WhiteSpace !== tokenType) {
+          if (Comment !== tokenType) {
+            if (Semicolon !== tokenType) {
+              let arr = list.push(self.parseWithFallback(self.Declaration, consumeRaw));
+            }
+            if (self.scanner.eof) {
+              break;
+            }
+          }
         }
-        let tmp8 = arg1;
-        let tmp17Result = tmp17(tmp18[3]);
-        if (tmp17Result.isThenable(tmp3Result)) {
-          let nextPromise = tmp3Result.then(f127860);
-          let nextPromise1 = nextPromise.then(null, arg1);
-        } else {
-          let num = 1;
-          closure_0 = tmp;
-          closure_1 = tmp3Result;
-          closure_2 = tmp16;
-          closure_3 = tmp2 + 1;
-          let self = this;
-          let self2 = this;
-          let syncPromise = new tmp17(tmp18[0]).SyncPromise(f103801);
-          let tmp9 = syncPromise;
-          let nextPromise2 = syncPromise.then(fn);
-          let nextPromise3 = nextPromise2.then(null, arg1);
-        }
+        let iter = self.scanner;
+        let nextResult = iter.next();
       }
     }
-    let tmp12 = fn(tmp4);
-  };
-  _require = arg0;
-  dependencyMap = arg1;
-  let closure_2 = arg2;
-  const syncPromise = new require("module_13078").SyncPromise(f103801);
-  return syncPromise;
-}
+    const element = { type: "DeclarationList", loc: self.getLocationFromList(list), children: list };
+    return element;
+  },
+  generate(arg0) {
+    this.children(arg0, function(type) {
+      if ("Declaration" === type.type) {
+        const self = this;
+        this.chunk(";");
+      }
+    });
+  }
+};
+obj2 = { children: items };
+items = [["Declaration"]];
+
+export default obj;

@@ -1,12 +1,12 @@
-// Module ID: 14140
-// Function ID: 14141
+// Module ID: 14383
+// Function ID: 14384
 // Name: GuildBoostingMarketingConstants
-// Dependencies: [1072, 1385, 1113, 2]
+// Dependencies: [1072, 1387, 1113, 2]
 
-// Module 14140 (GuildBoostingMarketingConstants)
+// Module 14383 (GuildBoostingMarketingConstants)
 import intl3 from "intl" /* 1113 */;
 import Constants from "Constants" /* 1072 */;
-import PremiumConstants from "PremiumConstants" /* 1385 */;
+import PremiumConstants from "PremiumConstants" /* 1387 */;
 import size from "module_2" /* 2 */;
 
 let PerkIcons;

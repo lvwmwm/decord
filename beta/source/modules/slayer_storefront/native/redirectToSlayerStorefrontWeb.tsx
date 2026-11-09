@@ -1,10 +1,10 @@
-// Module ID: 10675
-// Function ID: 10676
+// Module ID: 10794
+// Function ID: 10795
 // Name: redirectToSlayerStorefrontWeb
-// Dependencies: [5, 1072, 3, 5712, 1113, 7503, 4827, 2]
+// Dependencies: [5, 1072, 3, 5837, 1113, 7575, 4953, 2]
 // Exports: default
 
-// Module 10675 (redirectToSlayerStorefrontWeb)
+// Module 10794 (redirectToSlayerStorefrontWeb)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants from "Constants" /* 1072 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -32,7 +32,7 @@ let obj = function _redirectToSlayerStorefrontWeb() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c4;

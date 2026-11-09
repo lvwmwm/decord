@@ -1,14 +1,14 @@
-// Module ID: 9529
-// Function ID: 9530
+// Module ID: 9613
+// Function ID: 9614
 // Name: DiceIcon
-// Dependencies: [19, 21, 575, 5716, 9530, 2]
+// Dependencies: [19, 21, 575, 5841, 9614, 2]
 // Exports: DiceIcon
 
-// Module 9529 (DiceIcon)
+// Module 9613 (DiceIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5716 */;
-import AssetRegistry from "AssetRegistry" /* 9530 */;
+import BaseIconImage2 from "BaseIconImage" /* 5841 */;
+import AssetRegistry from "AssetRegistry" /* 9614 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

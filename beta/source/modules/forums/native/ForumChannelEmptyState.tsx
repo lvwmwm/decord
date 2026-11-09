@@ -1,16 +1,16 @@
-// Module ID: 14379
-// Function ID: 14380
+// Module ID: 14615
+// Function ID: 14616
 // Name: ForumChannelEmptyState
-// Dependencies: [19, 17, 21, 5014, 5021, 1625, 5717, 14380, 14381, 5624, 1113, 2]
+// Dependencies: [19, 17, 21, 5140, 5147, 1627, 5842, 14616, 14617, 5751, 1113, 2]
 
-// Module 14379 (ForumChannelEmptyState)
+// Module 14615 (ForumChannelEmptyState)
 import react_native from "react-native" /* 17 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1625 */;
-import shared from "shared" /* 5021 */;
-import FastImageDefault from "FastImage" /* 5717 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
+import shared from "shared" /* 5147 */;
+import FastImageDefault from "FastImage" /* 5842 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -41,15 +41,15 @@ const memoResult = react.memo(function ForumChannelEmptyState(topViewHeight) {
   const tmp6 = hasOwnProperty;
   const tmp7 = View;
   if (obj3.isThemeLight(theme)) {
-    tmp4Result = tmp4(14380);
+    tmp4Result = tmp4(14616);
   } else {
-    tmp4Result = tmp4(14381);
+    tmp4Result = tmp4(14617);
   }
   items1 = [, , ];
   const obj4 = { source: tmp4Result, style: tmp.image };
   items1[0] = React3(tmp9, obj4);
   const obj5 = { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: formatToPlainStringResult };
-  const Text = tmp2(5624).Text;
+  const Text = tmp2(5751).Text;
   const intl = tmp2(1113).intl;
   if (tagFilter.size > 0) {
     const obj6 = { numTags: tagFilter.size };
@@ -58,8 +58,8 @@ const memoResult = react.memo(function ForumChannelEmptyState(topViewHeight) {
     formatToPlainStringResult = intl.string(tmp2(1113).t.PwTMG0);
   }
   items1[1] = React3(Text, obj5);
-  const obj7 = { style: tmp.subtext, variant: "text-sm/medium", color: "text-default", children: formatToPlainStringResult1 };
-  const Text2 = tmp2(5624).Text;
+  const obj7 = { style: tmp.subtext, variant: "body-sm/medium", color: "text-default", children: formatToPlainStringResult1 };
+  const Text2 = tmp2(5751).Text;
   const intl2 = tmp2(1113).intl;
   const formatToPlainString = intl2.formatToPlainString;
   const t = tmp2(1113).t;

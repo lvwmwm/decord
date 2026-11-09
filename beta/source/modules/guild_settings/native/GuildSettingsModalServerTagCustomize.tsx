@@ -1,23 +1,23 @@
-// Module ID: 19751
-// Function ID: 19752
+// Module ID: 20161
+// Function ID: 20162
 // Name: GuildSettingsModalServerTagCustomize
-// Dependencies: [32, 19, 17, 9046, 9075, 8393, 21, 575, 5014, 9077, 1491, 9047, 504, 9048, 9074, 5258, 19752, 1994, 7208, 14736, 8177, 6027, 7082, 1113, 5735, 5624, 19753, 19757, 2]
+// Dependencies: [32, 19, 17, 9126, 9155, 8464, 21, 575, 5140, 9157, 1493, 9127, 504, 9128, 9154, 5374, 20162, 2118, 7271, 14966, 8246, 6159, 7148, 1113, 5859, 5751, 20163, 20167, 2]
 // Exports: default
 
-// Module 19751 (GuildSettingsModalServerTagCustomize)
+// Module 20161 (GuildSettingsModalServerTagCustomize)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import asyncRequire from "asyncRequire" /* 1994 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import GuildTagConstants from "GuildTagConstants" /* 8393 */;
-import GuildProfileStore from "GuildProfileStore" /* 9046 */;
-import GuildProfileActionCreators from "GuildProfileActionCreators" /* 9048 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9074 */;
+import asyncRequire from "asyncRequire" /* 2118 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
+import GuildTagConstants from "GuildTagConstants" /* 8464 */;
+import GuildProfileStore from "GuildProfileStore" /* 9126 */;
+import GuildProfileActionCreators from "GuildProfileActionCreators" /* 9128 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9154 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 9075 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 9155 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let c10;
@@ -180,7 +180,7 @@ export default function GuildSettingsModalServerTagCustomize(guildId) {
         const obj10 = { size: "sm", color: fetchStatus(tmp3[7]).colors.ICON_SUBTLE };
         const CircleInformationIcon = tmp2(tmp3[24]).CircleInformationIcon;
         items11 = [closure_9(CircleInformationIcon, obj10), ];
-        const obj11 = { variant: "text-sm/medium", color: "text-subtle", style: tmp.warningText, children: intl3.string(tmp2(tmp3[23]).t["4tVt6P"]) };
+        const obj11 = { variant: "body-sm/medium", color: "text-subtle", style: tmp.warningText, children: intl3.string(tmp2(tmp3[23]).t["4tVt6P"]) };
         const Text = tmp2(tmp3[25]).Text;
         intl3 = tmp2(tmp3[23]).intl;
         items11[1] = closure_9(Text, obj11);

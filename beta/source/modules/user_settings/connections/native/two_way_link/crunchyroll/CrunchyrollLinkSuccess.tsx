@@ -1,21 +1,21 @@
-// Module ID: 14655
-// Function ID: 14656
+// Module ID: 14890
+// Function ID: 14891
 // Name: CrunchyrollLinkSuccess
-// Dependencies: [19, 17, 21, 5014, 9730, 5717, 14656, 5624, 1113, 7292, 5634, 2]
+// Dependencies: [19, 17, 21, 5140, 9820, 5842, 14891, 5751, 1113, 7355, 5758, 2]
 // Exports: default
 
-// Module 14655 (CrunchyrollLinkSuccess)
+// Module 14890 (CrunchyrollLinkSuccess)
 import react_native from "react-native" /* 17 */;
 import intl4 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import components_Button_Button from "components/Button/Button" /* 5634 */;
-import FastImageDefault from "FastImage" /* 5717 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7292 */;
-import TwoWayLinkStyles from "TwoWayLinkStyles" /* 9730 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14656 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import components_Button_Button from "components/Button/Button" /* 5758 */;
+import FastImageDefault from "FastImage" /* 5842 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7355 */;
+import TwoWayLinkStyles from "TwoWayLinkStyles" /* 9820 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14891 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -43,11 +43,11 @@ export default function CrunchyrollLinkDiscordSuccess(onClose) {
   const obj4 = { source: AssetRegistryDefault, style: tmp.image };
   const tmp3 = FastImageDefault;
   items = [React3(tmp3, obj4), , ];
-  const obj5 = { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", style: twoWayLinkStyles.title, children: intl.string(intl4.t.Fnvxvk) };
+  const obj5 = { variant: "heading-xl/semibold", color: "mobile-text-heading-primary", style: twoWayLinkStyles.title, children: intl.string(intl4.t.Fnvxvk) };
   const Text = Text_Text.Text;
   intl = intl4.intl;
   items[1] = React3(Text, obj5);
-  const obj6 = { variant: "text-md/normal", color: "text-default", style: twoWayLinkStyles.body, children: intl2.string(intl4.t.YwXceg) };
+  const obj6 = { variant: "body-md/normal", color: "text-default", style: twoWayLinkStyles.body, children: intl2.string(intl4.t.YwXceg) };
   const Text2 = Text_Text.Text;
   intl2 = intl4.intl;
   items[2] = React3(Text2, obj6);

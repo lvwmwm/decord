@@ -1,24 +1,24 @@
-// Module ID: 11507
-// Function ID: 11508
+// Module ID: 11652
+// Function ID: 11653
 // Name: NameplatePreview
-// Dependencies: [19, 17, 5015, 4926, 21, 5014, 575, 1984, 6853, 8730, 504, 5068, 6439, 1187, 8820, 9514, 10772, 10773, 5624, 2]
+// Dependencies: [19, 17, 5141, 5052, 21, 5140, 575, 2108, 6908, 8801, 504, 5194, 6572, 1187, 8894, 9598, 10891, 10892, 5751, 2]
 // Exports: NameplatePreview
 
-// Module 11507 (NameplatePreview)
+// Module 11652 (NameplatePreview)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
 import react_mod from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5015 */;
-import GuildMemberStore from "GuildMemberStore" /* 4926 */;
+import AccessibilityStore from "AccessibilityStore" /* 5141 */;
+import GuildMemberStore from "GuildMemberStore" /* 5052 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let metroImportAll;
 let metroImportDefault;
 let tmp;
-const profile_customization_ProfileCustomizationUtils = tmp(8820);
+const profile_customization_ProfileCustomizationUtils = tmp(8894);
 let react = react_mod;
 const View = react_native.View;
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
@@ -142,14 +142,14 @@ export function NameplatePreview(hasRoundedCorners) {
   let tmp20Result = null != tmp16;
   const obj10 = { style: tmp2.content, children: items4 };
   if (tmp20Result) {
-    const obj11 = { userId: user.id, guildId, userName: pendingGlobalName, variant: "text-md/semibold", effectDisplayType: user(pendingAvatarSrc[17]).EffectDisplayType.STATIC, lineClamp: 1, pendingDisplayNameStyles };
+    const obj11 = { userId: user.id, guildId, userName: pendingGlobalName, variant: "body-md/semibold", effectDisplayType: user(pendingAvatarSrc[17]).EffectDisplayType.STATIC, lineClamp: 1, pendingDisplayNameStyles };
     const tmp8Result = guildId(pendingAvatarSrc[16]);
     tmp20Result = tmp20(tmp8Result, obj11);
   }
   items4 = [tmp20Result, ];
   let tmp20Result2 = null == tmp16;
   if (tmp20Result2) {
-    const obj12 = { lineClamp: 1, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: pendingGlobalName };
+    const obj12 = { lineClamp: 1, variant: "body-md/semibold", color: "mobile-text-heading-primary", children: pendingGlobalName };
     tmp20Result2 = tmp20(tmp5(tmp6[18]).Text, obj12);
   }
   items4[1] = tmp20Result2;

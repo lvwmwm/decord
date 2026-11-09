@@ -1,10 +1,10 @@
-// Module ID: 12262
-// Function ID: 12263
+// Module ID: 12449
+// Function ID: 12450
 // Name: createCompactNumberFormat
 // Dependencies: [2]
 // Exports: createCompactNumberFormat
 
-// Module 12262 (createCompactNumberFormat)
+// Module 12449 (createCompactNumberFormat)
 import size from "module_2" /* 2 */;
 
 let map1, set;
@@ -39,7 +39,7 @@ export function createCompactNumberFormat(stateFromStores) {
   const numberFormat1 = new Intl.NumberFormat(stateFromStores, { notation: "compact", compactDisplay: "short" });
   map1 = new Map();
   let obj = {
-    format(arg0) {
+    format(scrollLength) {
       let tmp10;
       let tmp22;
       let tmp28;
@@ -62,11 +62,11 @@ export function createCompactNumberFormat(stateFromStores) {
         }
         return Number(str);
       }
-      if (0 !== arg0) {
+      if (0 !== scrollLength) {
         const _Number2 = Number;
-        if (Number.isFinite(arg0)) {
+        if (Number.isFinite(scrollLength)) {
           const _Math = Math;
-          const absolute = Math.abs(arg0);
+          const absolute = Math.abs(scrollLength);
           let num = 0;
           if (0 !== absolute) {
             const _Math6 = Math;
@@ -110,7 +110,7 @@ export function createCompactNumberFormat(stateFromStores) {
             }
             num7 = value;
           }
-          const result1 = arg0 / num7;
+          const result1 = scrollLength / num7;
           const _Math2 = Math;
           const absolute1 = Math.abs(result1);
           let num10 = 0;
@@ -147,14 +147,14 @@ export function createCompactNumberFormat(stateFromStores) {
           const result2 = Math.floor(result1 * tmp29) / tmp29 * num7;
           const _Number = Number;
           const format = numberFormat1.format;
-          let tmp32 = arg0;
+          let tmp32 = scrollLength;
           if (Number.isFinite(result2)) {
             tmp32 = result2;
           }
           return format(tmp32);
         }
       }
-      return numberFormat1.format(arg0);
+      return numberFormat1.format(scrollLength);
     }
   };
   return obj;

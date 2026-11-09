@@ -1,15 +1,16 @@
-// Module ID: 14952
-// Function ID: 14953
+// Module ID: 15225
+// Function ID: 15226
 // Name: GameCoverImage
-// Dependencies: [19, 17, 21, 5014, 575, 9375, 2]
+// Dependencies: [19, 17, 21, 5140, 15207, 575, 9456, 2]
 
-// Module 14952 (GameCoverImage)
+// Module 15225 (GameCoverImage)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import GameCoverArt from "GameCoverArt" /* 9375 */;
+import GameCoverArt from "GameCoverArt" /* 9456 */;
+import UserProfileGameWidgetConstants from "UserProfileGameWidgetConstants" /* 15207 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -18,7 +19,7 @@ const jsx = Fragment.jsx;
 let createStyles = createStyles_mod;
 createStyles = createStyles.createStyles;
 const obj = { cover: obj2 };
-obj2 = { aspectRatio: 0.75, borderRadius: nativeDefault.radii.sm, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED };
+obj2 = { aspectRatio: UserProfileGameWidgetConstants.GAME_COVER_ASPECT_RATIO, borderRadius: UserProfileGameWidgetConstants.GAME_COVER_BORDER_RADIUS, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED };
 const merged = Object.assign(nativeDefault.shadows.SHADOW_LOW);
 let closure_4 = createStyles(obj);
 const memoResult = react.memo(function GameCoverImage(arg0) {

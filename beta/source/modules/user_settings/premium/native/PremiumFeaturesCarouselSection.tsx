@@ -1,24 +1,24 @@
-// Module ID: 15353
-// Function ID: 15354
+// Module ID: 15646
+// Function ID: 15647
 // Name: PremiumFeaturesCarouselSection
-// Dependencies: [32, 19, 17, 1072, 7617, 1385, 21, 575, 5014, 5587, 1092, 5624, 5717, 1113, 15354, 15355, 15356, 15357, 5274, 1622, 10629, 1187, 7326, 1491, 1252, 2]
+// Dependencies: [32, 19, 17, 1072, 7693, 1387, 21, 575, 5140, 5715, 1092, 5751, 5842, 1113, 15647, 15648, 15649, 15650, 5390, 1624, 10748, 1187, 7387, 9069, 1493, 1252, 2]
 // Exports: default
 
-// Module 15353 (PremiumFeaturesCarouselSection)
+// Module 15646 (PremiumFeaturesCarouselSection)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import ConstantsIOS from "ConstantsIOS" /* 1092 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import PremiumConstants from "PremiumConstants" /* 1385 */;
-import LinearGradientDefault from "LinearGradient" /* 5587 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import FastImageDefault from "FastImage" /* 5717 */;
-import ColorConstants from "ColorConstants" /* 7617 */;
-import _slicedToArray_mod from "_slicedToArray" /* 32 */;
+import PremiumConstants from "PremiumConstants" /* 1387 */;
+import LinearGradientDefault from "LinearGradient" /* 5715 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import FastImageDefault from "FastImage" /* 5842 */;
+import ColorConstants from "ColorConstants" /* 7693 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -57,7 +57,7 @@ function CarouselCard(arg0) {
   const tmp = closure_15();
   const obj = { style, children: items };
   items = [, ];
-  const obj2 = { variant: "heading-md/extrabold", color: "text-overlay-light", style: tmp.cardTitle, children: title };
+  const obj2 = { variant: "heading-sm/semibold", color: "text-overlay-light", style: tmp.cardTitle, children: title };
   items[0] = authStore(Text_Text.Text, obj2);
   const obj3 = { source: imageSrc, style: items1, resizeMode: "contain" };
   items1 = [tmp.image, imageStyle];
@@ -73,7 +73,7 @@ function PremiumFeaturesCarousel(arg0) {
   let mapped;
   react = undefined;
   const tmp = closure_14();
-  let obj = onEndReached(5274);
+  let obj = onEndReached(5390);
   const isScreenReaderEnabled = obj.useIsScreenReaderEnabled();
   const tmp5 = mapped(react.useState(0), 2);
   dependencyMap = tmp7;
@@ -141,7 +141,7 @@ function PremiumFeaturesCarousel(arg0) {
   const tmp15 = closure_11;
   const tmp16 = closure_6;
   const tmp2 = onEndReached;
-  if (!onEndReached(1622).isThumbstickScrollDevice) {
+  if (!onEndReached(1624).isThumbstickScrollDevice) {
     let tmp17;
     let tmp19;
     if (!isScreenReaderEnabled) {
@@ -162,7 +162,7 @@ function PremiumFeaturesCarousel(arg0) {
         modeConfig: { parallaxScrollingScale: 1, parallaxScrollingOffset: 45 },
         onSnapToItem: tmp5[1]
       };
-      tmp19 = closure_10(currentIndex(10629), obj3);
+      tmp19 = closure_10(currentIndex(10748), obj3);
     }
     let items3 = [tmp19, ];
     let obj4 = { containerStyle: tmp.indicators, numberOfItems: mapped.length, currentIndex };
@@ -174,7 +174,6 @@ function PremiumFeaturesCarousel(arg0) {
   tmp19 = closure_10(closure_5, obj5);
   tmp17 = closure_10;
 }
-let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
 ({ ScrollView: hasOwnProperty, View: metroRequire } = react_native);
 const AnalyticEvents = Constants.AnalyticEvents;
@@ -201,32 +200,30 @@ let result = size.fileFinishedImporting("modules/user_settings/premium/native/Pr
 
 export default function PremiumFeaturesCarouselSection(style) {
   let closure_2;
-  let closure_3;
   let first;
-  let first1;
   let intl;
   let items1;
   let items2;
+  let onLayout;
+  let ref;
+  let width;
   first = undefined;
   dependencyMap = undefined;
-  _slicedToArray = undefined;
   style = style.style;
   let tmp = closure_14();
-  const analyticsLocations = first(7326)().analyticsLocations;
+  const analyticsLocations = first(7387)().analyticsLocations;
+  let obj = react;
   [first, dependencyMap] = react.useState(false);
-  const useState = react.useState;
-  let obj = analyticsLocations(1491);
-  [first1, _slicedToArray] = useState(obj.getWindowDimensions().width);
+  ({ width, ref, onLayout } = first(9069)());
+  const tmp5 = first(9069)();
+  if (undefined === width) {
+    let obj2 = analyticsLocations(1493);
+    width = obj2.getWindowDimensions().width;
+  }
   const items = [analyticsLocations, first];
-  let obj2 = {
-    style: items1,
-    onLayout(nativeEvent) {
-      return closure_3(nativeEvent.nativeEvent.layout.width);
-    },
-    children: items2
-  };
+  const obj3 = { style: items1, ref, onLayout, children: items2 };
   items1 = [tmp.container, style];
-  const callback = react.useCallback(() => {
+  const callback = obj.useCallback(() => {
     const tmp = first;
     if (!tmp) {
       const obj2 = { location_stack: analyticsLocations };
@@ -235,11 +232,11 @@ export default function PremiumFeaturesCarouselSection(style) {
       closure_2(true);
     }
   }, items);
-  const obj3 = { style: tmp.headerText, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: intl.string(analyticsLocations(1113).t.RGadQR) };
-  const Text = analyticsLocations(5624).Text;
+  const obj4 = { style: tmp.headerText, variant: "heading-xl/semibold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: intl.string(analyticsLocations(1113).t.RGadQR) };
+  const Text = analyticsLocations(5751).Text;
   intl = analyticsLocations(1113).intl;
-  items2 = [closure_10(Text, obj3), closure_10(PremiumFeaturesCarousel, { width: first1, onEndReached: callback })];
-  return closure_11(closure_6, obj2);
+  items2 = [closure_10(Text, obj4), closure_10(PremiumFeaturesCarousel, { width, onEndReached: callback })];
+  return closure_11(closure_6, obj3);
 };
 export const PREMIUM_FEATURES_PROPORTIONAL_CARD_WIDTH = 0.85;
 export { PremiumFeaturesCardBackground };

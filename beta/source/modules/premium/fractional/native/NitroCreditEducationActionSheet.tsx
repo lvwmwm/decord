@@ -1,23 +1,21 @@
-// Module ID: 15400
-// Function ID: 15401
+// Module ID: 15693
+// Function ID: 15694
 // Name: NitroCreditEducationActionSheet
-// Dependencies: [17, 1072, 21, 5014, 575, 5272, 7086, 5624, 1113, 2061, 2]
+// Dependencies: [17, 1072, 21, 5140, 575, 5388, 7152, 5751, 1113, 2185, 2]
 // Exports: default
 
-// Module 15400 (NitroCreditEducationActionSheet)
+// Module 15693 (NitroCreditEducationActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2061 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5272 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import CircleErrorIcon from "CircleErrorIcon" /* 7086 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2185 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5388 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import CircleErrorIcon from "CircleErrorIcon" /* 7152 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
-
-let BottomSheet;
 
 let hasOwnProperty;
 let metroRequire;
@@ -43,14 +41,14 @@ export default function NitroCreditEducationActionSheet(aboutText) {
   const obj = { children: metroRequire(View, obj2) };
   obj2 = { style: tmp.container, children: items1 };
   const obj3 = { style: tmp.aboutContainer, children: items };
-  BottomSheet = Sheet_BottomSheet.BottomSheet;
+  const BottomSheet = Sheet_BottomSheet.BottomSheet;
   items = [, ];
   const obj4 = { size: "lg", style: tmp.warningIcon };
   items[0] = hasOwnProperty(CircleErrorIcon.CircleErrorIcon, obj4);
-  const obj5 = { style: tmp.aboutTextContainer, children: hasOwnProperty(Text_Text.Text, { variant: "text-sm/medium", color: "text-overlay-light", children: aboutText }) };
+  const obj5 = { style: tmp.aboutTextContainer, children: hasOwnProperty(Text_Text.Text, { variant: "body-sm/medium", color: "text-overlay-light", children: aboutText }) };
   items[1] = hasOwnProperty(View, obj5);
   items1 = [metroRequire(View, obj3), ];
-  const obj6 = { variant: "text-sm/medium", color: "text-overlay-light", style: tmp.helpdeskText, children: format(bg3jBj, obj7) };
+  const obj6 = { variant: "body-sm/medium", color: "text-overlay-light", style: tmp.helpdeskText, children: format(bg3jBj, obj7) };
   const Text = Text_Text.Text;
   const intl = intl2.intl;
   format = intl.format;

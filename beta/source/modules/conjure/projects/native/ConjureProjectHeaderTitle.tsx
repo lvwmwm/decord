@@ -1,20 +1,20 @@
-// Module ID: 12233
-// Function ID: 12234
+// Module ID: 12405
+// Function ID: 12406
 // Name: ConjureProjectHeaderTitle
-// Dependencies: [19, 17, 21, 5014, 575, 6980, 1113, 3868, 12122, 5624, 2]
+// Dependencies: [19, 17, 21, 5140, 575, 7043, 1113, 4026, 12285, 5751, 2]
 // Exports: default
 
-// Module 12233 (ConjureProjectHeaderTitle)
+// Module 12405 (ConjureProjectHeaderTitle)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import _modDef3868 from "module_3868" /* 3868 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import Pressables from "Pressables" /* 6980 */;
-import ConjureProjectIconDefault from "ConjureProjectIcon" /* 12122 */;
+import _modDef4026 from "module_4026" /* 4026 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import Pressables from "Pressables" /* 7043 */;
+import ConjureProjectIconDefault from "ConjureProjectIcon" /* 12285 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -41,14 +41,14 @@ export default function ConjureProjectHeaderTitle(project) {
   const obj = { style: tmp.row, children: items };
   const tmp2 = hasOwnProperty;
   if (null != project) {
-    const obj2 = { onPress: onPressIcon, hitSlop, accessibilityRole: "button", accessibilityLabel: intl.string(_modDef3868.FzfmQ8), children: React3(ConjureProjectIconDefault, obj3) };
+    const obj2 = { onPress: onPressIcon, hitSlop, accessibilityRole: "button", accessibilityLabel: intl.string(_modDef4026.FzfmQ8), children: React3(ConjureProjectIconDefault, obj3) };
     const PressableOpacity = Pressables.PressableOpacity;
     intl = intl2.intl;
     obj3 = { project, size: "list" };
     tmp4 = React3(PressableOpacity, obj2);
   }
   items = [tmp4, ];
-  const obj4 = { style: tmp.titles, children: React3(Text_Text.Text, { accessibilityRole: "header", "aria-level": "1", lineClamp: 1, maxFontSizeMultiplier: 2, variant: "redesign/heading-18/semibold", color: "mobile-text-heading-primary", children: title }) };
+  const obj4 = { style: tmp.titles, children: React3(Text_Text.Text, { accessibilityRole: "header", "aria-level": "1", lineClamp: 1, maxFontSizeMultiplier: 2, variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: title }) };
   items[1] = React3(View, obj4);
   return tmp2(View, obj);
 };

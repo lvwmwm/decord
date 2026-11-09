@@ -1,20 +1,20 @@
-// Module ID: 14207
-// Function ID: 14208
+// Module ID: 14444
+// Function ID: 14445
 // Name: ChatBeginningRowJoinApplication
-// Dependencies: [19, 17, 4946, 1383, 1072, 21, 5014, 575, 14208, 504, 14209, 6957, 5624, 1113, 5048, 6767, 5634, 2]
+// Dependencies: [19, 17, 5072, 1385, 1072, 21, 5140, 575, 14445, 504, 14446, 7020, 5751, 1113, 5174, 6822, 5758, 2]
 // Exports: default
 
-// Module 14207 (ChatBeginningRowJoinApplication)
+// Module 14444 (ChatBeginningRowJoinApplication)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 5048 */;
-import Text_Text from "Text/Text" /* 5624 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 5174 */;
+import Text_Text from "Text/Text" /* 5751 */;
 import react from "react" /* 19 */;
-import PermissionStore from "PermissionStore" /* 4946 */;
-import UserStore from "UserStore" /* 1383 */;
+import PermissionStore from "PermissionStore" /* 5072 */;
+import UserStore from "UserStore" /* 1385 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -84,7 +84,7 @@ export default function ChatBeginningRowJoinRequest(channelId) {
         const obj6 = { guild: joinRequestGuild, size: require("GuildIcon").GuildIconSizes.XXSMALL };
         const tmp2Result = tmp2(joinRequestGuild[11]);
         items2 = [closure_7(tmp2Result, obj6), ];
-        const obj7 = { variant: "heading-sm/semibold", color: "mobile-text-heading-primary", children: joinRequestGuild.name };
+        const obj7 = { variant: "heading-xs/semibold", color: "mobile-text-heading-primary", children: joinRequestGuild.name };
         items2[1] = closure_7(require("Text/Text").Text, obj7);
         tmp10Result = tmp10(tmp12, obj5);
       }
@@ -110,9 +110,9 @@ export default function ChatBeginningRowJoinRequest(channelId) {
           const obj = { children: items };
           const obj2 = { style: closure_0.divider };
           items = [metroImportDefault(View, obj2), , ];
-          const obj3 = { style: closure_0.formQuestion, variant: "text-xs/semibold", color: "text-muted", children: field_type.label };
+          const obj3 = { style: closure_0.formQuestion, variant: "body-xs/semibold", color: "text-muted", children: field_type.label };
           items[1] = metroImportDefault(Text_Text.Text, obj3);
-          const obj4 = { variant: "text-md/medium", color: "text-strong", children: response };
+          const obj4 = { variant: "body-md/medium", color: "text-strong", children: response };
           items[2] = metroImportDefault(Text_Text.Text, obj4);
           const _HermesInternal = HermesInternal;
           return metroImportAll(View, obj, "form-response-" + index);

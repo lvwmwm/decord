@@ -1,18 +1,18 @@
-// Module ID: 16794
-// Function ID: 16795
+// Module ID: 17117
+// Function ID: 17118
 // Name: FamilyCenterActivityTotal
-// Dependencies: [19, 17, 21, 5014, 575, 16793, 8372, 5624, 2]
+// Dependencies: [19, 17, 21, 5140, 575, 17116, 8443, 5751, 2]
 // Exports: default
 
-// Module 16794 (FamilyCenterActivityTotal)
+// Module 17117 (FamilyCenterActivityTotal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import FamilyCenterUtils from "FamilyCenterUtils" /* 8372 */;
-import useFamilyCenterActivities from "useFamilyCenterActivities" /* 16793 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import FamilyCenterUtils from "FamilyCenterUtils" /* 8443 */;
+import useFamilyCenterActivities from "useFamilyCenterActivities" /* 17116 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -49,12 +49,12 @@ export default function FamilyCenterActivityTotal(displayType) {
   }
   const obj3 = { style: tmp.container, children: items };
   const obj4 = { variant: "heading-xxl/medium", color: str, children: num };
-  const Text = tmp2(5624).Text;
+  const Text = tmp2(5751).Text;
   const tmp6 = React3;
   const tmp7 = View;
   if (num == null) {
     num = 0;
   }
-  items = [_false(Text, obj4), _false(Text_Text.Text, { variant: "text-sm/semibold", children: tooltipHeaderResult })];
+  items = [_false(Text, obj4), _false(Text_Text.Text, { variant: "body-sm/semibold", children: tooltipHeaderResult })];
   return tmp6(tmp7, obj3);
 };

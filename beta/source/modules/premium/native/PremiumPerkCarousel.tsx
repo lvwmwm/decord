@@ -1,16 +1,16 @@
-// Module ID: 15338
-// Function ID: 15339
+// Module ID: 15624
+// Function ID: 15625
 // Name: PremiumPerkCarousel
-// Dependencies: [32, 19, 17, 21, 5014, 15281, 5624, 10016, 1187, 2]
+// Dependencies: [32, 19, 17, 21, 5140, 15567, 5751, 10138, 1187, 2]
 // Exports: default
 
-// Module 15338 (PremiumPerkCarousel)
+// Module 15624 (PremiumPerkCarousel)
 import react_native from "react-native" /* 17 */;
-import PremiumPerkCard from "PremiumPerkCard" /* 15281 */;
+import PremiumPerkCard from "PremiumPerkCard" /* 15567 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -59,7 +59,7 @@ export default function PremiumPerkCarousel(arg0) {
   length = perks.length;
   const obj2 = { style, children: items1 };
   items1 = [, , ];
-  const obj3 = { style: tmp.title, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: title };
+  const obj3 = { style: tmp.title, variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: title };
   items1[0] = closure_6(onItemChange(currentIndex[6]).Text, obj3);
   const obj4 = {
     style: items2,

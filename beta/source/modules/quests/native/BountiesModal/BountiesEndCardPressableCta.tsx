@@ -1,20 +1,20 @@
-// Module ID: 16962
-// Function ID: 16963
+// Module ID: 17285
+// Function ID: 17286
 // Name: BountiesEndCardPressableCta
-// Dependencies: [19, 17, 16963, 21, 5014, 575, 9717, 16959, 9695, 9719, 6788, 6786, 7871, 5717, 5624, 2]
+// Dependencies: [19, 17, 17286, 21, 5140, 575, 9807, 17282, 9785, 9809, 6843, 6841, 7948, 5842, 5751, 2]
 // Exports: default
 
-// Module 16962 (BountiesEndCardPressableCta)
+// Module 17285 (BountiesEndCardPressableCta)
 import nativeDefault from "native" /* 575 */;
-import QuestContent from "QuestContent" /* 6786 */;
-import AdCreativeType from "AdCreativeType" /* 6788 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7871 */;
-import QuestPlatformUtils from "QuestPlatformUtils" /* 9719 */;
-import BountyConstants from "BountyConstants" /* 16963 */;
+import QuestContent from "QuestContent" /* 6841 */;
+import AdCreativeType from "AdCreativeType" /* 6843 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7948 */;
+import QuestPlatformUtils from "QuestPlatformUtils" /* 9809 */;
+import BountyConstants from "BountyConstants" /* 17286 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_4;
@@ -74,7 +74,7 @@ export default function BountiesEndCardPressableCta(bounty) {
   const obj4 = { source: { uri: scaledImageUrl }, style: tmp.image };
   items1[0] = closure_7(sourceQuestContent(getQuestImpressionId[13]), obj4);
   const obj5 = { style: tmp.info, children: closure_7(bounty(getQuestImpressionId[14]).Text, obj6) };
-  obj6 = { variant: "text-md/semibold", color: "text-strong", children: bountyCtaInfo.label };
+  obj6 = { variant: "body-md/semibold", color: "text-strong", children: bountyCtaInfo.label };
   items1[1] = closure_7(closure_5, obj5);
   return tmp8(tmp9, obj3);
 };

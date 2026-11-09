@@ -1,23 +1,21 @@
-// Module ID: 9938
-// Function ID: 9939
+// Module ID: 10060
+// Function ID: 10061
 // Name: PremiumUpsellTooltipActionSheet
-// Dependencies: [19, 17, 4860, 21, 5014, 575, 5044, 5272, 5717, 1187, 5624, 5634, 5258, 2]
+// Dependencies: [19, 17, 4986, 21, 5140, 575, 5170, 5388, 5842, 1187, 5751, 5758, 5374, 2]
 // Exports: default
 
-// Module 9938 (PremiumUpsellTooltipActionSheet)
+// Module 10060 (PremiumUpsellTooltipActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4860 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5044 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5272 */;
-import FastImageDefault from "FastImage" /* 5717 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4986 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5170 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5388 */;
+import FastImageDefault from "FastImage" /* 5842 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
-
-let BottomSheet;
 
 let hasOwnProperty;
 let metroRequire;
@@ -28,8 +26,8 @@ let size;
 let size1;
 let tmp3;
 const native = tmp3(1187);
-const Text_Text = tmp3(5624);
-const components_Button_Button = tmp3(5634);
+const Text_Text = tmp3(5751);
+const components_Button_Button = tmp3(5758);
 const View = react_native.View;
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
@@ -82,7 +80,7 @@ export default function PremiumUpsellTooltipActionSheet(arg0) {
     },
     children: tmp6(View, obj2)
   };
-  BottomSheet = Sheet_BottomSheet.BottomSheet;
+  const BottomSheet = Sheet_BottomSheet.BottomSheet;
   const merged = Object.assign(backdropProps);
   obj2 = { style: tmp.container, children: items1 };
   let tmp2Result = null;
@@ -96,10 +94,10 @@ export default function PremiumUpsellTooltipActionSheet(arg0) {
   items2 = [, ];
   const obj5 = { style: tmp.nitroWheel };
   items2[0] = closure_5(native.NitroWheel, obj5);
-  const obj6 = { variant: "heading-xl/bold", style: tmp.title, color: "mobile-text-heading-primary", accessibilityRole: "header", children: title };
+  const obj6 = { variant: "heading-xl/semibold", style: tmp.title, color: "mobile-text-heading-primary", accessibilityRole: "header", children: title };
   items2[1] = closure_5(Text_Text.Text, obj6);
   items1[1] = closure_6(View, obj4);
-  const obj7 = { style: items3, variant: "text-md/medium", color: "text-default", children: description };
+  const obj7 = { style: items3, variant: "body-md/medium", color: "text-default", children: description };
   items3 = [tmp.description, descriptionStyle];
   items1[2] = closure_5(Text_Text.Text, obj7);
   const obj9 = {

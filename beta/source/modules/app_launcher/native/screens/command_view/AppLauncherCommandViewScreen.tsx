@@ -1,53 +1,51 @@
-// Module ID: 12484
-// Function ID: 12485
+// Module ID: 12687
+// Function ID: 12688
 // Name: AppLauncherCommandViewScreen
-// Dependencies: [5, 32, 19, 17, 5015, 9762, 4920, 1496, 1072, 1621, 21, 5014, 575, 12485, 504, 5095, 5254, 5257, 5260, 5587, 5011, 5635, 1113, 5729, 11501, 5760, 5607, 12487, 5683, 6732, 12379, 1259, 12435, 12489, 1992, 9761, 12436, 11737, 1491, 11247, 10530, 12490, 10531, 8220, 1888, 8210, 12491, 11502, 5275, 5624, 12492, 12493, 12527, 1187, 38, 12458, 10316, 7700, 9767, 10317, 12528, 12529, 12444, 12445, 2]
+// Dependencies: [5, 32, 19, 17, 5141, 9852, 5046, 1498, 1072, 1623, 21, 1652, 5715, 5140, 575, 12688, 504, 5370, 5373, 1705, 5376, 5137, 5759, 1113, 5853, 11646, 5889, 5735, 12690, 5807, 6787, 12582, 1259, 12638, 12692, 2116, 9851, 12639, 11900, 1493, 11387, 7017, 10649, 12693, 10650, 8290, 2017, 8279, 12694, 11647, 5392, 5751, 12695, 12696, 12730, 1187, 38, 12661, 10435, 7776, 9857, 10436, 12731, 12732, 12647, 12648, 2]
 // Exports: default
 
-// Module 12484 (AppLauncherCommandViewScreen)
+// Module 12687 (AppLauncherCommandViewScreen)
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1621 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
-import timing from "timing" /* 5254 */;
-import timingPresets from "timingPresets" /* 5257 */;
-import HapticUtils from "HapticUtils" /* 5260 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import BaseTextButton2 from "BaseTextButton" /* 5635 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5683 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5760 */;
-import utils_UploadUtils from "utils/UploadUtils" /* 8220 */;
-import AppLauncherUtils from "AppLauncherUtils" /* 9761 */;
-import MediaKeyboardUtils from "MediaKeyboardUtils" /* 10530 */;
-import showMediaKeyboardActionSheet from "showMediaKeyboardActionSheet" /* 10531 */;
-import AppLauncherContext from "AppLauncherContext" /* 11501 */;
-import AppLauncherTypes from "AppLauncherTypes" /* 11502 */;
-import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 12379 */;
-import ApplicationCommandOptionValueParser from "ApplicationCommandOptionValueParser" /* 12436 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12444 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 12445 */;
-import AppLauncherCommandViewHeader from "AppLauncherCommandViewHeader" /* 12485 */;
-import ApplicationCommandValidationUtils from "ApplicationCommandValidationUtils" /* 12487 */;
-import application_commands_ApplicationCommandValidationUtils from "application_commands/ApplicationCommandValidationUtils" /* 12489 */;
-import CommandOptionViewDefault from "CommandOptionView" /* 12492 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 12528 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 12529 */;
+import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1623 */;
+import LinearGradientDefault from "LinearGradient" /* 5715 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import BaseTextButton2 from "BaseTextButton" /* 5759 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5807 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5889 */;
+import utils_UploadUtils from "utils/UploadUtils" /* 8290 */;
+import AppLauncherUtils from "AppLauncherUtils" /* 9851 */;
+import MediaKeyboardUtils from "MediaKeyboardUtils" /* 10649 */;
+import showMediaKeyboardActionSheet from "showMediaKeyboardActionSheet" /* 10650 */;
+import AppLauncherContext from "AppLauncherContext" /* 11646 */;
+import AppLauncherTypes from "AppLauncherTypes" /* 11647 */;
+import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 12582 */;
+import ApplicationCommandOptionValueParser from "ApplicationCommandOptionValueParser" /* 12639 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12647 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 12648 */;
+import AppLauncherCommandViewHeader from "AppLauncherCommandViewHeader" /* 12688 */;
+import ApplicationCommandValidationUtils from "ApplicationCommandValidationUtils" /* 12690 */;
+import application_commands_ApplicationCommandValidationUtils from "application_commands/ApplicationCommandValidationUtils" /* 12692 */;
+import CommandOptionViewDefault from "CommandOptionView" /* 12695 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 12731 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 12732 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import _slicedToArray_mod from "_slicedToArray" /* 32 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5015 */;
-import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9762 */;
-import GuildRoleStore from "GuildRoleStore" /* 4920 */;
-import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1496 */;
+import AccessibilityStore from "AccessibilityStore" /* 5141 */;
+import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9852 */;
+import GuildRoleStore from "GuildRoleStore" /* 5046 */;
+import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1498 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import module_1652 from "module_1652" /* 1652 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let c1, c2, importAll, set, set2;
+let importAll, importDefault, set, set2;
 
 let DEFAULT_CONTENT_PADDING;
 let c9;
@@ -70,139 +68,191 @@ let obj6;
 let obj7;
 let obj8;
 let unpackModuleId;
-function AppLauncherCommandViewFooter(arg0) {
+function AppLauncherCommandViewFooter(onHeightChange) {
   let SendMessageIcon;
   let View2;
+  let _undefined;
   let animatedStyle;
-  let closure_2;
-  let closure_5;
+  let c2;
+  let closure_1;
   let enableSubmit;
   let first;
-  let first1;
   let footerStickyInsetBottom;
   let intl;
   let isSending;
-  let items1;
-  let items2;
-  let items3;
-  let obj8;
-  let obj9;
+  let items5;
+  let items6;
+  let items7;
+  let items8;
+  let obj5;
+  let obj6;
   let onSubmit;
   let point;
+  let tmp10;
+  let tmp11;
+  let tmp12;
+  let tmp13;
+  let tmp14;
+  let tmp15;
+  let tmp16;
+  let tmp17;
+  let tmp18;
+  let tmp19;
+  let tmp20;
+  let tmp22;
+  let tmp23;
+  let tmp8;
   let useReducedMotion;
-  ({ onHeightChange: require, isSending } = arg0);
-  closure_2 = undefined;
-  let stateFromStores;
-  first1 = undefined;
-  _slicedToArray = undefined;
-  ({ enableSubmit, onSubmit, animatedStyle, footerStickyInsetBottom } = arg0);
-  let tmp = closure_23();
-  [first, closure_2] = react.useState(0);
-  let obj = require("get initialized");
+  onHeightChange = onHeightChange.onHeightChange;
+  importDefault = undefined;
+  ({ enableSubmit, onSubmit, animatedStyle, isSending, footerStickyInsetBottom } = onHeightChange);
+  let tmp = closure_24();
+  [first, importDefault] = react.useState(0);
+  let tmp4 = onHeightChange;
+  let obj = onHeightChange(504);
   let items = [AccessibilityStore];
-  stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
-  [first1, _slicedToArray] = react.useState(false);
-  let obj2 = require("ReanimatedRexport");
-  let fn = function h() {
-    let fn;
-    let items;
-    let items1;
-    let obj2;
-    let timingStandard;
-    let withDelay;
-    let withTiming3;
-    const tmp = stateFromStores;
-    if (tmp) {
-      obj2 = {};
-    } else {
-      const tmp2 = first1;
-      if (tmp2) {
-        const obj3 = { opacity: 1, transform: items };
-        const obj4 = { translateX: withDelay(100, withTiming3(-4, timingStandard, "respect-motion-settings", fn)) };
-        withDelay = ReanimatedRexport.withDelay;
-        ReanimatedRexport;
-        withTiming3 = timing.withTiming;
-        fn = function e() {
-          const obj = closure_1_0(stateFromStores[15]);
-          const runOnJSResult = obj.runOnJS(closure_1_0(stateFromStores[18]).triggerHapticFeedback);
-          return runOnJSResult(closure_1_0(stateFromStores[18]).HapticFeedbackTypes.IMPACT_LIGHT);
-        };
-        const obj5 = { runOnJS: ReanimatedRexport.runOnJS, triggerHapticFeedback: HapticUtils.triggerHapticFeedback, HapticFeedbackTypes: HapticUtils.HapticFeedbackTypes };
-        timingStandard = timingPresets.timingStandard;
-        fn.__closure = obj5;
-        fn.__workletHash = 8545458901090;
-        fn.__initData = __initData;
-        items = [obj4];
-        obj2 = obj3;
+  const stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
+  [tmp8, c2] = _slicedToArray(react.useState(false), 2);
+  const tmp7 = _slicedToArray(react.useState(false), 2);
+  let items1 = [closure_26, stateFromStores, tmp8, , , , , , , , ];
+  const useAnimatedStyle = onHeightChange(1652).useAnimatedStyle;
+  const tmp9 = onHeightChange(1652);
+  items1[3] = onHeightChange(1652).withDelay;
+  items1[4] = onHeightChange(5370).withTiming;
+  items1[5] = onHeightChange(5373).timingStandard;
+  items1[6] = closure_25;
+  items1[7] = onHeightChange(1705).scheduleOnRN;
+  items1[8] = onHeightChange(5376).triggerHapticFeedback;
+  items1[9] = onHeightChange(5376).HapticFeedbackTypes;
+  items1[10] = isSending;
+  let c0;
+  let c1;
+  c2 = undefined;
+  let c3;
+  let c4;
+  let c5;
+  let c6;
+  let c7;
+  let c8;
+  let c9;
+  [tmp10, tmp11, tmp12, tmp13, tmp14, tmp15, tmp16, tmp17, tmp18, tmp19, tmp20] = items1;
+  class AppLauncherCommandViewScreenTsx2 {
+    constructor() {
+      let items2;
+      let obj2;
+      let tmp12;
+      let tmp13;
+      let tmp14;
+      let tmp15;
+      const tmp = c0;
+      if (tmp) {
+        obj2 = {};
       } else {
-        let obj = isSending;
-        const withTiming = timing.withTiming;
-        let num = 1;
-        timing;
-        if (isSending.get()) {
-          num = 0;
+        const tmp2 = c1;
+        if (tmp2) {
+          const items = [c5, c6, c7, c8];
+          [tmp12, tmp13, tmp14, tmp15] = items;
+          const obj3 = { opacity: 1, transform: items2 };
+          const obj4 = { translateX: _undefined2(100, _undefined3(-4, c4, "respect-motion-settings", AppLauncherCommandViewScreenTsx1)) };
+          class AppLauncherCommandViewScreenTsx1 {
+            constructor() {
+              return closure_0(closure_1, closure_2.IMPACT_LIGHT);
+            }
+          }
+          const items1 = [tmp13, tmp14, tmp15];
+          AppLauncherCommandViewScreenTsx1.__closure = items1;
+          AppLauncherCommandViewScreenTsx1.__workletHash = 323925726197;
+          AppLauncherCommandViewScreenTsx1.__initData = tmp12;
+          items2 = [obj4];
+          obj2 = obj3;
+        } else {
+          let num = 1;
+          const obj = _undefined4;
+          if (_undefined4.get()) {
+            num = 0;
+          }
+          obj2 = { opacity: _undefined3(num, c4), transform: null };
+          let num2 = 0;
+          const tmp4 = c4;
+          if (obj.get()) {
+            num2 = 100;
+          }
+          const items3 = [{ translateX: _undefined3(num2, tmp4) }];
+          const obj5 = { translateX: _undefined3(num2, tmp4) };
+          class AppLauncherCommandViewScreenTsx1 {
+            constructor() {
+              return closure_0(closure_1, closure_2.IMPACT_LIGHT);
+            }
+          }
         }
-        obj2 = { opacity: withTiming(num, timingPresets.timingStandard), transform: items1 };
-        const withTiming2 = timing.withTiming;
-        let num2 = 0;
-        timing;
-        if (obj.get()) {
-          num2 = 100;
-        }
-        items1 = [{ translateX: withTiming2(num2, timingPresets.timingStandard) }];
-        const obj6 = { translateX: withTiming2(num2, timingPresets.timingStandard) };
       }
+      return obj2;
     }
-    return obj2;
-  };
-  let obj3 = { shouldReduceMotion: stateFromStores, isPressedDown: first1, withDelay: require("ReanimatedRexport").withDelay, withTiming: require("timing").withTiming, timingStandard: require("timingPresets").timingStandard, runOnJS: require("ReanimatedRexport").runOnJS, triggerHapticFeedback: require("HapticUtils").triggerHapticFeedback, HapticFeedbackTypes: require("HapticUtils").HapticFeedbackTypes, isSending };
-  fn.__closure = obj3;
-  fn.__workletHash = 576353278359;
-  fn.__initData = __initData;
-  const animatedStyle1 = obj2.useAnimatedStyle(fn);
-  let obj4 = {
+  }
+  let items2 = [tmp11, tmp12, tmp13, tmp14, tmp15, tmp16, tmp17, tmp18, tmp19, tmp20];
+  AppLauncherCommandViewScreenTsx2.__closure = items2;
+  AppLauncherCommandViewScreenTsx2.__workletHash = 1083775890910;
+  AppLauncherCommandViewScreenTsx2.__initData = tmp10;
+  const animatedStyle1 = useAnimatedStyle(AppLauncherCommandViewScreenTsx2);
+  let items3 = [closure_27, footerStickyInsetBottom];
+  c0 = undefined;
+  [tmp22, tmp23] = items3;
+  const tmp4Result = tmp4(1652);
+  class AppLauncherCommandViewScreenTsx3 {
+    constructor() {
+      const obj = { bottom: -_undefined.get() };
+      return obj;
+    }
+  }
+  const items4 = [tmp23];
+  AppLauncherCommandViewScreenTsx3.__closure = items4;
+  AppLauncherCommandViewScreenTsx3.__workletHash = 2219062280688;
+  AppLauncherCommandViewScreenTsx3.__initData = tmp22;
+  const animatedStyle2 = tmp4Result.useAnimatedStyle(AppLauncherCommandViewScreenTsx3);
+  let obj2 = {
     onLayout(nativeEvent) {
       const height = nativeEvent.nativeEvent.layout.height;
-      closure_2(height);
-      if (require != null) {
-        require(height);
+      closure_1(height);
+      if (onHeightChange != null) {
+        onHeightChange(height);
       }
     },
-    style: items1,
-    children: items3
+    style: items5,
+    children: items8
   };
-  items1 = [tmp.footerContainer, animatedStyle];
-  const View = isSending(stateFromStores[15]).View;
-  let obj5 = { style: { width: "100%", top: -12, bottom: -footerStickyInsetBottom, left: tmp.footerContainer.paddingHorizontal, position: "absolute" }, start: constants3.START, end: point, colors: items2, pointerEvents: "none" };
+  items5 = [tmp.footerContainer, animatedStyle];
+  let obj3 = { style: items6, start: constants3.START, end: point, colors: items7, pointerEvents: "none" };
+  const rect = { width: "100%", top: -12, left: tmp.footerContainer.paddingHorizontal, position: "absolute" };
+  items6 = [rect, animatedStyle2];
   point = { x: 0, y: 12 / (first + 12) };
-  items2 = [, ];
-  const tmp8 = isSending(stateFromStores[19]);
-  const obj7 = require("ColorUtils");
-  items2[0] = obj7.hexWithOpacity(tmp.linearGradient.backgroundColor, 0);
-  items2[1] = tmp.linearGradient.backgroundColor;
-  items3 = [closure_20(tmp8, obj5), ];
-  let obj6 = {
+  const View = module_1652.View;
+  items7 = [, ];
+  const tmp4Result2 = tmp4(5137);
+  items7[0] = tmp4Result2.hexWithOpacity(tmp.linearGradient.backgroundColor, 0);
+  items7[1] = tmp.linearGradient.backgroundColor;
+  items8 = [closure_20(LinearGradient, obj3), ];
+  let obj4 = {
     onPress: onSubmit,
     onPressIn() {
-      return closure_5(true);
+      return _undefined(true);
     },
     onPressOut() {
-      return closure_5(false);
+      return _undefined(false);
     },
     disabled: !enableSubmit,
     style: tmp.submitButton,
-    text: intl.string(require("intl").t.TXNS7S),
-    icon: closure_20(View2, obj8),
+    text: intl.string(tmp4(1113).t.TXNS7S),
+    icon: closure_20(View2, obj5),
     iconPosition: "end"
   };
-  const BaseTextButton = require("BaseTextButton").BaseTextButton;
-  intl = require("intl").intl;
-  obj8 = { style: animatedStyle1, children: closure_20(SendMessageIcon, obj9) };
-  View2 = isSending(stateFromStores[15]).View;
-  obj9 = { style: { marginLeft: 8 }, color: isSending(stateFromStores[12]).unsafe_rawColors.WHITE, size: "sm" };
-  SendMessageIcon = require("SendMessageIcon").SendMessageIcon;
-  items3[1] = closure_20(BaseTextButton, obj6);
-  return closure_21(View, obj4);
+  const BaseTextButton = tmp4(5759).BaseTextButton;
+  intl = tmp4(1113).intl;
+  obj5 = { style: animatedStyle1, children: closure_20(SendMessageIcon, obj6) };
+  View2 = module_1652.View;
+  obj6 = { style: { marginLeft: 8 }, color: nativeDefault.unsafe_rawColors.WHITE, size: "sm" };
+  SendMessageIcon = tmp4(5853).SendMessageIcon;
+  items8[1] = closure_20(BaseTextButton, obj4);
+  return closure_21(View, obj2);
 }
 function AppLauncherCommandViewInner(command) {
   let BottomSheetScrollView;
@@ -217,11 +267,11 @@ function AppLauncherCommandViewInner(command) {
   let intl;
   let intl2;
   let intl3;
-  let items17;
-  let items18;
   let items19;
   let items20;
   let items21;
+  let items22;
+  let items23;
   let loading;
   let obj11;
   let obj13;
@@ -229,11 +279,15 @@ function AppLauncherCommandViewInner(command) {
   let obj5;
   let optionalOptionsChild;
   let preSelectedCommand;
-  let ref9;
   let section;
   let tmp20;
-  let tmp70;
-  let tmp73Result2;
+  let tmp51;
+  let tmp52;
+  let tmp53;
+  let tmp54;
+  let tmp55;
+  let tmp76;
+  let tmp79Result2;
   command = command.command;
   const context = command.context;
   ({ preSelectedCommand, installOnDemand } = command);
@@ -247,13 +301,13 @@ function AppLauncherCommandViewInner(command) {
   let ref6;
   let ref7;
   let ref8;
-  closure_23 = undefined;
+  let closure_23;
   c24 = undefined;
   let first;
-  let closure_26;
-  __initData2 = undefined;
+  closure_26 = undefined;
+  let ref9;
   let first1;
-  let closure_29;
+  closure_29 = undefined;
   let ref10;
   c31 = undefined;
   let optionValues;
@@ -267,7 +321,6 @@ function AppLauncherCommandViewInner(command) {
   let first6;
   let setFocusedOption;
   let sum1;
-  let sum2;
   let sharedValue;
   let sharedValue1;
   let callback1;
@@ -275,9 +328,6 @@ function AppLauncherCommandViewInner(command) {
   let id;
   let commandContext;
   let callback3;
-  let height;
-  let maximum;
-  let bottomSheetPosition;
   let onStartEditing;
   let callback5;
   let callback6;
@@ -286,15 +336,15 @@ function AppLauncherCommandViewInner(command) {
   let tryCallback;
   let onOptionViewLayout;
   let onDismiss;
-  let closure_62;
+  let closure_58;
   ({ section, loading, hasPermissions } = command);
-  let tmp = closure_23();
+  let tmp = c24();
   react = tmp;
   let tmp2 = ref4();
   let closure_7 = tmp2;
   let tmp3 = command;
   let tmp4 = sectionName;
-  let obj = command(sectionName[24]);
+  let obj = command(sectionName[25]);
   const requiredAppLauncherContext = obj.useRequiredAppLauncherContext();
   const keyboardCloseReasonRef = requiredAppLauncherContext.keyboardCloseReasonRef;
   const entrypoint = requiredAppLauncherContext.entrypoint;
@@ -328,7 +378,7 @@ function AppLauncherCommandViewInner(command) {
   prefilledOptions = tmp9;
   guild_id = context.channel.guild_id;
   let items = [ref2];
-  const tmp3Result = tmp3(tmp4[14]);
+  const tmp3Result = tmp3(tmp4[16]);
   stateFromStores = tmp3Result.useStateFromStores(items, () => GuildRoleStore.getRolesSnapshot(guild_id));
   ref6 = obj2.useRef(false);
   ref7 = obj2.useRef(Date.now());
@@ -381,7 +431,7 @@ function AppLauncherCommandViewInner(command) {
   closure_26 = tmp15[1];
   const useRef = obj2.useRef;
   set = new Set();
-  __initData2 = useRef(set);
+  ref9 = useRef(set);
   const tmp17 = onCommandExecuted(obj2.useState([]), 2);
   first1 = tmp17[0];
   closure_29 = tmp17[1];
@@ -408,16 +458,16 @@ function AppLauncherCommandViewInner(command) {
   const tmp30 = onCommandExecuted(obj2.useState(null), 2);
   first6 = tmp30[0];
   setFocusedOption = tmp30[1];
-  const bottom = context(tmp4[26])({ includeCustomKeyboardHeight: false, includeKeyboardHeight: true }).insets.bottom;
-  const insets = context(tmp4[26])({ includeCustomKeyboardHeight: false, includeKeyboardHeight: true }).insets;
+  const bottom = context(tmp4[27])({ includeCustomKeyboardHeight: false, includeKeyboardHeight: true }).insets.bottom;
+  const insets = context(tmp4[27])({ includeCustomKeyboardHeight: false, includeKeyboardHeight: true }).insets;
   const tmp33 = onCommandExecuted(obj2.useState(0), 2);
   let sum = insets.bottom + tmp33[0];
   const tmp34 = tmp33[1];
-  sum1 = sum + context(tmp4[12]).space.PX_16;
-  sum2 = bottom + context(tmp4[12]).space.PX_16;
-  const tmp3Result6 = tmp3(tmp4[15]);
+  sum1 = sum + context(tmp4[14]).space.PX_16;
+  let sum2 = bottom + context(tmp4[14]).space.PX_16;
+  const tmp3Result6 = tmp3(tmp4[11]);
   sharedValue = tmp3Result6.useSharedValue(false);
-  const tmp3Result7 = tmp3(tmp4[15]);
+  const tmp3Result7 = tmp3(tmp4[11]);
   sharedValue1 = tmp3Result7.useSharedValue(0);
   const items3 = [first5, sum1, sharedValue1];
   callback1 = obj2.useCallback((required) => {
@@ -440,7 +490,7 @@ function AppLauncherCommandViewInner(command) {
           }
           sum1 = diff2 + num;
           const value = sharedValue1.get();
-          sum2 = value + diff1;
+          const sum2 = value + diff1;
           if (num >= diff1) {
             const tmp23 = sum1 < value || sum1 > sum2;
             if (tmp23) {
@@ -505,7 +555,7 @@ function AppLauncherCommandViewInner(command) {
     ref6.current = true;
     ref8.current = name.type;
   }, items4);
-  const tmp42 = context(tmp4[29])(command);
+  const tmp42 = context(tmp4[30])(command);
   id = tmp42;
   const items5 = [guild_id, command, , , , ];
   let id1;
@@ -574,7 +624,7 @@ function AppLauncherCommandViewInner(command) {
           });
         }
       }
-      let obj = command(sectionName[31]);
+      let obj = command(sectionName[32]);
       obj.batchUpdates(() => {
         closure_34(closure_3);
         c24(closure_2);
@@ -599,7 +649,7 @@ function AppLauncherCommandViewInner(command) {
       });
     }
   }, items5);
-  const tmp3Result8 = tmp3(tmp4[32]);
+  const tmp3Result8 = tmp3(tmp4[33]);
   commandContext = tmp3Result8.useCommandContext(context);
   const items6 = [callback1, chatInputRef, command, commandContext, sharedValue, keyboardCloseReasonRef, onCommandExecuted, first2, sectionName];
   callback3 = obj2.useCallback(function() {
@@ -629,7 +679,7 @@ function AppLauncherCommandViewInner(command) {
           id = rootCommand.id;
         }
         num = firstInvalidOption.type;
-        ApplicationCommandOptionType = tmp13(1992).ApplicationCommandOptionType;
+        ApplicationCommandOptionType = tmp13(2116).ApplicationCommandOptionType;
         if (num == null) {
           num = 3;
         }
@@ -644,10 +694,10 @@ function AppLauncherCommandViewInner(command) {
         tmp13Result4 = ApplicationCommandOptionValueParser;
         const result1 = executeAppLauncherCommand(obj3);
         const nextPromise = result1.then(() => {
-          const obj = command(sectionName[18]);
-          const result = obj.triggerHapticFeedback(command(sectionName[18]).HapticFeedbackTypes.IMPACT_MEDIUM);
+          const obj = command(sectionName[20]);
+          const result = obj.triggerHapticFeedback(command(sectionName[20]).HapticFeedbackTypes.IMPACT_MEDIUM);
           const timerId = setTimeout(() => {
-            closure_1_8.current = command(sectionName[24]).AppLauncherKeyboardCloseReason.COMMAND;
+            closure_1_8.current = command(sectionName[25]).AppLauncherKeyboardCloseReason.COMMAND;
             const current = ref.current;
             if (current != null) {
               current.closeCustomKeyboard();
@@ -681,7 +731,7 @@ function AppLauncherCommandViewInner(command) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -699,14 +749,14 @@ function AppLauncherCommandViewInner(command) {
             if (tmp14) {
               if (null == command) {
                 c2 = 3;
-                return { value: "HermesInternal", done: "HermesInternal" };
+                return { value: "HermesInternal", done: null };
               } else {
                 const obj4 = { applicationId: command.applicationId, channel: context.channel, commandIntegrationTypes: command.integration_types, appLauncherContext: obj6 };
                 obj6 = { entrypoint, location: analyticsLocation, sectionName };
                 c1 = 1;
                 c2 = 1;
                 const obj7 = { value: obj5.installApplicationOnDemandIfNeeded(obj4), done: false };
-                obj5 = tmp(sectionName[37]);
+                obj5 = tmp(sectionName[38]);
                 return obj7;
               }
             }
@@ -720,47 +770,59 @@ function AppLauncherCommandViewInner(command) {
           return obj;
         } else if (!value.isAuthorized) {
           c2 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
-        closure_128_50();
+        closure_128_49();
         c2 = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp10) {
         c2 = 3;
         throw tmp10;
       }
     }
   }), items7);
-  height = tmp32(tmp4[38])({ ignoreKeyboard: true }).height;
-  maximum = tmp32(tmp4[39])().maximum;
-  const tmp3Result9 = tmp3(tmp4[24]);
-  bottomSheetPosition = tmp3Result9.useRequiredAppLauncherContext().bottomSheetPosition;
-  function tt() {
-    let items;
-    const obj = { transform: items };
-    items = [{ translateY: -bottomSheetPosition.get() - height + maximum - sum2 }];
-    ({ translateY: -bottomSheetPosition.get() - height + maximum - sum2 });
-    return obj;
+  const height = tmp32(tmp4[39])({ ignoreKeyboard: true }).height;
+  const maximum = tmp32(tmp4[40])().maximum;
+  const tmp3Result9 = tmp3(tmp4[25]);
+  const bottomSheetPosition = tmp3Result9.useRequiredAppLauncherContext().bottomSheetPosition;
+  const tmp50 = context(tmp4[41])(sum2);
+  const items8 = [closure_29, bottomSheetPosition, height, maximum, tmp50];
+  let c0;
+  let c1;
+  let c2;
+  let c3;
+  [tmp51, tmp52, tmp53, tmp54, tmp55] = items8;
+  const tmp3Result10 = tmp3(tmp4[11]);
+  class AppLauncherCommandViewScreenTsx4 {
+    constructor() {
+      let items;
+      let sum;
+      const obj = { transform: items };
+      const obj2 = { translateY: -sum - _undefined2.get() };
+      sum = _undefined.get() - c1 + c2;
+      items = [obj2];
+      return obj;
+    }
   }
-  tt.__closure = { bottomSheetPosition, screenHeight: height, maxHeight: maximum, footerStickyInsetBottom: sum2 };
-  tt.__workletHash = 3470381437387;
-  tt.__initData = __initData2;
-  const items8 = [first4, callback1];
-  const tmp3Result10 = tmp3(tmp4[15]);
-  const animatedStyle = tmp3Result10.useAnimatedStyle(tt);
+  const items9 = [tmp52, tmp53, tmp54, tmp55];
+  AppLauncherCommandViewScreenTsx4.__closure = items9;
+  AppLauncherCommandViewScreenTsx4.__workletHash = 8988942426348;
+  AppLauncherCommandViewScreenTsx4.__initData = tmp51;
+  const items10 = [first4, callback1];
+  const animatedStyle = tmp3Result10.useAnimatedStyle(AppLauncherCommandViewScreenTsx4);
   onStartEditing = obj2.useCallback((name) => {
     first4.delete(name.name);
     set = new Set(first4);
     closure_37(set);
     callback1(name);
-  }, items8);
-  const items9 = [first4, ];
+  }, items10);
+  const items11 = [first4, ];
   let name;
   const useCallback = obj2.useCallback;
   if (first6 != null) {
     name = first6.name;
   }
-  items9[1] = name;
+  items11[1] = name;
   callback5 = useCallback((name) => {
     first4.add(name.name);
     set = new Set(first4);
@@ -773,8 +835,8 @@ function AppLauncherCommandViewInner(command) {
     if (name === name1) {
       setFocusedOption(null);
     }
-  }, items9);
-  const items10 = [command];
+  }, items11);
+  const items12 = [command];
   callback6 = obj2.useCallback((arg0) => {
     const tmp = command;
     if (null != command) {
@@ -784,26 +846,26 @@ function AppLauncherCommandViewInner(command) {
       const obj = AppAnalyticsUtils;
       obj.trackWithMetadata(ref5.APPLICATION_COMMAND_OPTION_PRESSED, obj3);
     }
-  }, items10);
-  const items11 = [chatInputRef, context.channel, callback5, callback6];
+  }, items12);
+  const items13 = [chatInputRef, context.channel, callback5, callback6];
   onPressAttachmentOption = obj2.useCallback((option) => {
     let items;
     let onRestoreKeyboard;
     let obj = { target: stateFromStores.APP_LAUNCHER, option };
     let tmp = command;
-    let obj2 = command(sectionName[40]);
+    let obj2 = command(sectionName[42]);
     const mediaKeyboardDraftType = obj2.getMediaKeyboardDraftType(obj.target);
     let fileTypes;
-    if (option.type === command(sectionName[34]).ApplicationCommandOptionType.ATTACHMENT) {
+    if (option.type === command(sectionName[35]).ApplicationCommandOptionType.ATTACHMENT) {
       fileTypes = option.fileTypes;
     }
-    let tmpResult = tmp(tmp2[41]);
+    let tmpResult = tmp(tmp2[43]);
     const fileTypeFiltering = tmpResult.getFileTypeFiltering(fileTypes);
     const allowedExtensions = fileTypeFiltering.allowedExtensions;
     ({ validateFilenames: analyticsLocation, showInvalidFileTypeAlert: onCommandExecuted } = fileTypeFiltering);
     const mediaFilesAllowed = fileTypeFiltering.mediaFilesAllowed;
     callback6(option);
-    const tmpResult4 = tmp(sectionName[44]);
+    const tmpResult4 = tmp(sectionName[46]);
     let result = tmpResult4.dismissGlobalKeyboard();
     if (mediaFilesAllowed) {
       const obj3 = {
@@ -815,15 +877,15 @@ function AppLauncherCommandViewInner(command) {
         includedUploadIds: items,
         onAttachPress() {
             obj = {};
-            const handleAttachFile = command(sectionName[40]).handleAttachFile;
-            command(sectionName[40]);
-            const FILE_ATTACHMENT = command(sectionName[45]).UploadOrigin.FILE_ATTACHMENT;
+            const handleAttachFile = command(sectionName[42]).handleAttachFile;
+            command(sectionName[42]);
+            const FILE_ATTACHMENT = command(sectionName[47]).UploadOrigin.FILE_ATTACHMENT;
             const obj2 = {
               channel: obj.channel,
               uploadLimit: 1,
               extensions: allowedExtensions,
               onDismissKeyboard() {
-                obj = IMAGE_PICKER(allowedExtensions[42]);
+                obj = IMAGE_PICKER(allowedExtensions[44]);
                 return obj.hideMediaKeyboardActionSheet();
               },
               onRestoreKeyboard: prefilledOptions,
@@ -844,15 +906,15 @@ function AppLauncherCommandViewInner(command) {
           },
         onPressCamera(previewType) {
             obj = { previewType };
-            const handleCameraDialog = command(sectionName[40]).handleCameraDialog;
-            command(sectionName[40]);
-            const IMAGE_PICKER = command(sectionName[45]).UploadOrigin.IMAGE_PICKER;
+            const handleCameraDialog = command(sectionName[42]).handleCameraDialog;
+            command(sectionName[42]);
+            const IMAGE_PICKER = command(sectionName[47]).UploadOrigin.IMAGE_PICKER;
             const obj2 = {
               channel: obj.channel,
               uploadLimit: 1,
               extensions: allowedExtensions,
               onDismissKeyboard() {
-                obj = IMAGE_PICKER(allowedExtensions[42]);
+                obj = IMAGE_PICKER(allowedExtensions[44]);
                 return obj.hideMediaKeyboardActionSheet();
               },
               onRestoreKeyboard: prefilledOptions,
@@ -887,19 +949,19 @@ function AppLauncherCommandViewInner(command) {
               }
             }
             const tmpResult2 = MediaKeyboardUtils;
-            const result2 = tmpResult2.addAttachmentForCommand(channelId, chatInputRef, result1, obj, tmp(8210).UploadOrigin.IMAGE_PICKER);
+            const result2 = tmpResult2.addAttachmentForCommand(channelId, chatInputRef, result1, obj, tmp(8279).UploadOrigin.IMAGE_PICKER);
           },
         onViewAll() {
             obj = { draftType: mediaKeyboardDraftType };
-            const handleViewAllDialog = command(sectionName[40]).handleViewAllDialog;
-            const tmp = command(sectionName[40]);
-            const IMAGE_PICKER = command(sectionName[45]).UploadOrigin.IMAGE_PICKER;
+            const handleViewAllDialog = command(sectionName[42]).handleViewAllDialog;
+            const tmp = command(sectionName[42]);
+            const IMAGE_PICKER = command(sectionName[47]).UploadOrigin.IMAGE_PICKER;
             let obj2 = {
               channel: obj.channel,
               uploadLimit: 1,
               extensions: allowedExtensions,
               onDismissKeyboard() {
-                obj = IMAGE_PICKER(allowedExtensions[42]);
+                obj = IMAGE_PICKER(allowedExtensions[44]);
                 return obj.hideMediaKeyboardActionSheet();
               },
               onRestoreKeyboard: prefilledOptions,
@@ -919,32 +981,32 @@ function AppLauncherCommandViewInner(command) {
             handleViewAllDialog(obj);
           },
         onManageLimited() {
-            obj = option(allowedExtensions[40]);
-            const obj2 = { onDismissKeyboard: option(allowedExtensions[42]).hideMediaKeyboardActionSheet, onRestoreKeyboard };
+            obj = option(allowedExtensions[42]);
+            const obj2 = { onDismissKeyboard: option(allowedExtensions[44]).hideMediaKeyboardActionSheet, onRestoreKeyboard };
             const result = obj.handleLimitedPickerDialog(obj2);
           },
         onClose() {
             callback5(option);
           },
         onBack() {
-            obj = option(allowedExtensions[42]);
+            obj = option(allowedExtensions[44]);
             const result = obj.hideMediaKeyboardActionSheet();
           }
       };
       items = [option.name];
-      const tmpResult5 = tmp(sectionName[42]);
+      const tmpResult5 = tmp(sectionName[44]);
       let result1 = tmpResult5.showMediaKeyboardActionSheet(obj3);
     } else {
       const obj4 = {};
-      let handleAttachFile = tmp(tmp2[40]).handleAttachFile;
-      tmp(sectionName[40]);
-      let FILE_ATTACHMENT = tmp(tmp2[45]).UploadOrigin.FILE_ATTACHMENT;
+      let handleAttachFile = tmp(tmp2[42]).handleAttachFile;
+      tmp(sectionName[42]);
+      let FILE_ATTACHMENT = tmp(tmp2[47]).UploadOrigin.FILE_ATTACHMENT;
       const obj5 = {
         channel: obj.channel,
         uploadLimit: 1,
         extensions: allowedExtensions,
         onDismissKeyboard() {
-            obj = IMAGE_PICKER(allowedExtensions[42]);
+            obj = IMAGE_PICKER(allowedExtensions[44]);
             return obj.hideMediaKeyboardActionSheet();
           },
         onRestoreKeyboard: prefilledOptions,
@@ -963,22 +1025,23 @@ function AppLauncherCommandViewInner(command) {
       let merged = Object.assign(obj5);
       handleAttachFile(obj4);
     }
-  }, items11);
-  const tmp54 = context(tmp4[46])(() => {
+  }, items13);
+  const tmp60 = context(tmp4[48])(() => {
     callback1(first6);
   });
-  setLatch = tmp54.setLatch;
-  tryCallback = tmp54.tryCallback;
-  const items12 = [tryCallback];
+  setLatch = tmp60.setLatch;
+  tryCallback = tmp60.tryCallback;
+  const items14 = [tryCallback];
   const callback7 = obj2.useCallback((nativeEvent) => {
     ref3.current = nativeEvent.nativeEvent.layout.y;
   }, []);
-  const items13 = [first6, setLatch, callback1];
+  const items15 = [first6, setLatch, callback1];
   const callback8 = obj2.useCallback((nativeEvent) => {
     ref4.current = nativeEvent.nativeEvent.layout.y;
     tryCallback();
-  }, items12);
+  }, items14);
   onOptionViewLayout = obj2.useCallback((nativeEvent, name) => {
+    let height;
     ({ height, y: closure_12.current[name.name] } = nativeEvent.nativeEvent.layout);
     ref2.current[name.name] = height;
     if (null == ref.current[name.name]) {
@@ -998,26 +1061,26 @@ function AppLauncherCommandViewInner(command) {
     if (tmp4) {
       callback1(name);
     }
-  }, items13);
-  const items14 = [first6, callback1];
+  }, items15);
+  const items16 = [first6, callback1];
   const effect2 = obj2.useEffect(() => {
     if (null != first6) {
       callback1(tmp);
     }
-  }, items14);
-  const items15 = [first1, first, callback2, guild_id, stateFromStores, , ];
+  }, items16);
+  const items17 = [first1, first, callback2, guild_id, stateFromStores, , ];
   let applicationId;
   const useCallback2 = obj2.useCallback;
   if (command != null) {
     applicationId = command.applicationId;
   }
-  items15[5] = applicationId;
+  items17[5] = applicationId;
   let id2;
   if (command != null) {
     id2 = command.id;
   }
-  items15[6] = id2;
-  const items16 = [first1, first, first2, first4, , , ];
+  items17[6] = id2;
+  const items18 = [first1, first, first2, first4, , , ];
   let name1;
   const callback21 = useCallback2((name) => {
     let current = ref9.current;
@@ -1049,22 +1112,22 @@ function AppLauncherCommandViewInner(command) {
     }
     ({ name: obj3.option_name, type: obj3.option_type } = name);
     trackWithMetadata(APPLICATION_COMMAND_OPTIONAL_OPTION_ADDED, obj5);
-  }, items15);
+  }, items17);
   const useCallback3 = obj2.useCallback;
   if (first6 != null) {
     name1 = first6.name;
   }
-  items16[4] = name1;
+  items18[4] = name1;
   let applicationId1;
   if (command != null) {
     applicationId1 = command.applicationId;
   }
-  items16[5] = applicationId1;
+  items18[5] = applicationId1;
   let id3;
   if (command != null) {
     id3 = command.id;
   }
-  items16[6] = id3;
+  items18[6] = id3;
   onDismiss = useCallback3((name) => {
     let current = ref9.current;
     current.delete(name.name);
@@ -1094,9 +1157,9 @@ function AppLauncherCommandViewInner(command) {
       setFocusedOption(null);
     }
     let applicationId;
-    const trackWithMetadata = command(sectionName[25]).trackWithMetadata;
+    const trackWithMetadata = command(sectionName[26]).trackWithMetadata;
     const APPLICATION_COMMAND_OPTIONAL_OPTION_REMOVED = ref5.APPLICATION_COMMAND_OPTIONAL_OPTION_REMOVED;
-    command(sectionName[25]);
+    command(sectionName[26]);
     if (name != null) {
       applicationId = tmp14.applicationId;
     }
@@ -1107,45 +1170,45 @@ function AppLauncherCommandViewInner(command) {
     }
     ({ name: obj2.option_name, type: obj2.option_type } = name);
     trackWithMetadata(APPLICATION_COMMAND_OPTIONAL_OPTION_REMOVED, obj3);
-  }, items16);
+  }, items18);
   const callback9 = obj2.useCallback((nativeEvent) => closure_39(nativeEvent.nativeEvent.layout.height), []);
-  let tmp73Result = first.length > 0;
-  let tmp68 = tmp66;
+  let tmp79Result = first.length > 0;
+  let tmp74 = tmp72;
   const callback10 = obj2.useCallback((arg0, current) => {
     ref5.current = current;
     return current;
   }, []);
   if (arr4.length <= 0) {
-    tmp68 = tmp73Result;
+    tmp74 = tmp79Result;
   }
   let prefilledOptions1;
   if (preSelectedCommand != null) {
     prefilledOptions1 = preSelectedCommand.prefilledOptions;
   }
-  closure_62 = null != prefilledOptions1;
-  if (entrypoint === tmp3(tmp4[47]).AppLauncherEntrypoint.VOICE) {
+  closure_58 = null != prefilledOptions1;
+  if (entrypoint === tmp3(tmp4[49]).AppLauncherEntrypoint.VOICE) {
     BottomSheetScrollView = entrypoint;
   } else {
-    BottomSheetScrollView = tmp3(tmp4[48]).BottomSheetScrollView;
+    BottomSheetScrollView = tmp3(tmp4[50]).BottomSheetScrollView;
   }
   if (loading) {
-    tmp73Result2 = ref6(ref10, {});
-    tmp70 = ref6;
+    tmp79Result2 = ref6(optionValues, {});
+    tmp76 = ref6;
   } else if (null == command) {
     let obj3 = { onPressBack: callback };
-    tmp73Result2 = ref6(c31, obj3);
-    tmp70 = ref6;
+    tmp79Result2 = ref6(first2, obj3);
+    tmp76 = ref6;
   } else if (hasPermissions) {
-    let obj4 = { ref, contentContainerStyle: tmp.optionsContainer, scrollIndicatorInsets: obj5, scrollToOverflowEnabled: true, onContentSizeChange: callback10, preserveScrollMomentum: true, lockableScrollableContentOffsetY: sharedValue1, keyboardShouldPersistTaps: "handled", contentInsetAdjustmentBehavior: "never", automaticallyAdjustContentInsets: false, onLayout: callback9, automaticallyAdjustsScrollIndicatorInsets: false, children: items18 };
+    let obj4 = { ref, contentContainerStyle: tmp.optionsContainer, scrollIndicatorInsets: obj5, scrollToOverflowEnabled: true, onContentSizeChange: callback10, preserveScrollMomentum: true, lockableScrollableContentOffsetY: sharedValue1, keyboardShouldPersistTaps: "handled", contentInsetAdjustmentBehavior: "never", automaticallyAdjustContentInsets: false, onLayout: callback9, automaticallyAdjustsScrollIndicatorInsets: false, children: items20 };
     obj5 = { bottom: sum1 };
-    let obj6 = { style: tmp.commandNameContainer, children: items17 };
-    let obj7 = { variant: "heading-lg/bold", color: "text-default", children: command.displayName };
-    items17 = [ref6(tmp3(tmp4[49]).Text, obj7), ];
-    const obj8 = { variant: "heading-sm/medium", color: "text-default", children: command.displayDescription };
-    items17[1] = ref6(tmp3(tmp4[49]).Text, obj8);
-    items18 = [ref7(closure_7, obj6), , , , , ];
-    let tmp76Result = tmp66;
-    if (tmp76Result) {
+    let obj6 = { style: tmp.commandNameContainer, children: items19 };
+    let obj7 = { variant: "heading-lg/semibold", color: "text-default", children: command.displayName };
+    items19 = [ref6(tmp3(tmp4[51]).Text, obj7), ];
+    const obj8 = { variant: "heading-xs/medium", color: "text-default", children: command.displayDescription };
+    items19[1] = ref6(tmp3(tmp4[51]).Text, obj8);
+    items20 = [ref7(closure_7, obj6), , , , , ];
+    let tmp82Result = tmp72;
+    if (tmp82Result) {
       const obj9 = {
         style: tmp.requiredOptionsContainer,
         onLayout: callback7,
@@ -1154,7 +1217,7 @@ function AppLauncherCommandViewInner(command) {
               const tmp = closure_20;
               if (0 === index) {
                 let NONE;
-                const tmp3 = closure_62;
+                const tmp3 = closure_58;
                 if (!tmp3) {
                   NONE = ref3.FIRST_REQUIRED_OPTION;
                 }
@@ -1176,33 +1239,33 @@ function AppLauncherCommandViewInner(command) {
               NONE = ref3.NONE;
             })
       };
-      tmp76Result = tmp76(tmp75, obj9);
+      tmp82Result = tmp82(tmp81, obj9);
     }
-    items18[1] = tmp76Result;
-    let tmp76Result3 = !tmp66 && tmp68;
-    if (tmp76Result3) {
+    items20[1] = tmp82Result;
+    let tmp82Result3 = !tmp72 && tmp74;
+    if (tmp82Result3) {
       const obj10 = { style: tmp.noRequiredOptionsCalloutContainer, children: ref6(Text, obj11) };
-      obj11 = { variant: "text-sm/medium", color: "text-strong", style: { textAlign: "center" }, children: intl.string(tmp3(tmp4[22]).t.HS2KtY) };
-      Text = tmp3(tmp4[49]).Text;
-      intl = tmp3(tmp4[22]).intl;
-      tmp76Result3 = tmp76(tmp75, obj10);
+      obj11 = { variant: "body-sm/medium", color: "text-strong", style: { textAlign: "center" }, children: intl.string(tmp3(tmp4[23]).t.HS2KtY) };
+      Text = tmp3(tmp4[51]).Text;
+      intl = tmp3(tmp4[23]).intl;
+      tmp82Result3 = tmp82(tmp81, obj10);
     }
-    items18[2] = tmp76Result3;
-    let tmp76Result4 = !tmp68;
-    if (tmp76Result4) {
+    items20[2] = tmp82Result3;
+    let tmp82Result4 = !tmp74;
+    if (tmp82Result4) {
       const obj12 = { style: tmp.noOptionCalloutContainer, children: ref6(Text2, obj13) };
-      obj13 = { variant: "text-sm/medium", color: "text-muted", style: { textAlign: "center" }, children: intl2.string(tmp3(tmp4[22]).t.G8lEFB) };
-      Text2 = tmp3(tmp4[49]).Text;
-      intl2 = tmp3(tmp4[22]).intl;
-      tmp76Result4 = tmp76(tmp75, obj12);
+      obj13 = { variant: "body-sm/medium", color: "text-muted", style: { textAlign: "center" }, children: intl2.string(tmp3(tmp4[23]).t.G8lEFB) };
+      Text2 = tmp3(tmp4[51]).Text;
+      intl2 = tmp3(tmp4[23]).intl;
+      tmp82Result4 = tmp82(tmp81, obj12);
     }
-    items18[3] = tmp76Result4;
-    if (tmp73Result) {
-      const obj14 = { children: items19 };
-      const obj15 = { style: tmp.optionalOptionsSectionTitle, variant: "text-md/normal", color: "text-default", children: intl3.string(tmp3(tmp4[22]).t["5C107K"]) };
-      const Text3 = tmp3(tmp4[49]).Text;
-      intl3 = tmp3(tmp4[22]).intl;
-      items19 = [ref6(Text3, obj15), , ];
+    items20[3] = tmp82Result4;
+    if (tmp79Result) {
+      const obj14 = { children: items21 };
+      const obj15 = { style: tmp.optionalOptionsSectionTitle, variant: "body-md/normal", color: "text-default", children: intl3.string(tmp3(tmp4[23]).t["5C107K"]) };
+      const Text3 = tmp3(tmp4[51]).Text;
+      intl3 = tmp3(tmp4[23]).intl;
+      items21 = [ref6(Text3, obj15), , ];
       const obj16 = {
         style: tmp.optionalOptionsContainer,
         onLayout: callback8,
@@ -1226,29 +1289,29 @@ function AppLauncherCommandViewInner(command) {
               return tmp(tmp2, obj, option.name);
             })
       };
-      items19[1] = ref6(closure_7, obj16);
-      const obj17 = { layout: tmp3(tmp4[51]).LayoutAnimation, collapsable: false, children: ref6(context(tmp4[52]), obj18) };
-      const View = tmp32(tmp4[15]).View;
+      items21[1] = ref6(closure_7, obj16);
+      const obj17 = { layout: tmp3(tmp4[53]).LayoutAnimation, collapsable: false, children: ref6(context(tmp4[54]), obj18) };
+      const View = tmp32(tmp4[11]).View;
       obj18 = { style: tmp.optionalOptionList, options: tmp20, onSelectOption: callback21 };
-      items19[2] = ref6(View, obj17);
-      tmp73Result = tmp73(tmp74, obj14);
+      items21[2] = ref6(View, obj17);
+      tmp79Result = tmp79(tmp80, obj14);
     }
-    const obj19 = { children: items20 };
-    items18[4] = tmp73Result;
+    const obj19 = { children: items22 };
+    items20[4] = tmp79Result;
     const obj20 = { size: sum1 };
-    items18[5] = ref6(tmp3(tmp4[53]).Spacer, obj20);
-    items20 = [ref7(BottomSheetScrollView, obj4), ];
-    const obj21 = { enableSubmit: first3, onSubmit: callback4, animatedStyle, onHeightChange: tmp34, isSending: sharedValue, footerStickyInsetBottom: sum2 };
-    items20[1] = ref6(closure_26, obj21);
-    tmp73Result2 = tmp73(tmp74, obj19);
-    tmp70 = tmp76;
+    items20[5] = ref6(tmp3(tmp4[55]).Spacer, obj20);
+    items22 = [ref7(BottomSheetScrollView, obj4), ];
+    const obj21 = { enableSubmit: first3, onSubmit: callback4, animatedStyle, onHeightChange: tmp34, isSending: sharedValue, footerStickyInsetBottom: tmp50 };
+    items22[1] = ref6(first1, obj21);
+    tmp79Result2 = tmp79(tmp80, obj19);
+    tmp76 = tmp82;
   } else {
-    tmp70 = ref6;
+    tmp76 = ref6;
     const obj22 = { command, onPressBack: callback };
-    tmp73Result2 = ref6(optionValues, obj22);
+    tmp79Result2 = ref6(closure_34, obj22);
   }
-  const obj23 = { style: tmp.container, children: items21 };
-  items21 = [tmp70(tmp3(tmp4[13]).AppLauncherCommandViewHeader, { command, onPressBack: callback, scrollOffsetY: sharedValue1, section }), tmp73Result2];
+  const obj23 = { style: tmp.container, children: items23 };
+  items23 = [tmp76(tmp3(tmp4[15]).AppLauncherCommandViewHeader, { command, onPressBack: callback, scrollOffsetY: sharedValue1, section }), tmp79Result2];
   return ref7(closure_7, obj23);
 }
 function AppLauncherCommandView(command) {
@@ -1275,8 +1338,8 @@ function AppLauncherCommandView(command) {
   let closure_5;
   let tmp = loading;
   ({ installOnDemand, onCommandExecuted } = command);
-  let tmp2 = expandBottomSheet(loading[54])(null != context.channel, "channel should not be null");
-  const tmp3 = expandBottomSheet(loading[55])();
+  let tmp2 = expandBottomSheet(loading[56])(null != context.channel, "channel should not be null");
+  const tmp3 = expandBottomSheet(loading[57])();
   importAll = tmp3;
   const channel = context.channel;
   let command2;
@@ -1338,17 +1401,17 @@ function AppLauncherCommandView(command) {
     }
     if (!current) {
       const obj = { command: tmp, triggerSection: obj2.getCommandTriggerSection(descriptor), location: analyticsLocation, sectionName };
-      const trackCommandSelected = command(loading[57]).trackCommandSelected;
-      command(loading[57]);
-      obj2 = command(loading[57]);
+      const trackCommandSelected = command(loading[59]).trackCommandSelected;
+      command(loading[59]);
+      obj2 = command(loading[59]);
       trackCommandSelected(obj);
       ref.current = true;
     }
   }, items);
-  const usePermissionContext = command(tmp[58]).usePermissionContext;
+  const usePermissionContext = command(tmp[60]).usePermissionContext;
   const items1 = [];
-  command(tmp[58]);
-  items1[0] = command(tmp[34]).ApplicationCommandType.CHAT;
+  command(tmp[60]);
+  items1[0] = command(tmp[35]).ApplicationCommandType.CHAT;
   const permissionContext = usePermissionContext(channel, items1);
   const tmp17 = command;
   if (null != tmp10) {
@@ -1362,7 +1425,7 @@ function AppLauncherCommandView(command) {
       }
       let allowedForUser = null;
       if (null != guild_id) {
-        const tmp4Result = tmp4(tmp[59]);
+        const tmp4Result = tmp4(tmp[61]);
         allowedForUser = tmp4Result.computeAllowedForUser(tmp10.permissions, context2.guild_id, userId, roleIds, isImpersonating);
       }
       let guild_id1;
@@ -1371,14 +1434,14 @@ function AppLauncherCommandView(command) {
       }
       let allowedForChannel = null;
       if (null != guild_id1) {
-        const tmp4Result3 = tmp4(tmp[59]);
+        const tmp4Result3 = tmp4(tmp[61]);
         allowedForChannel = tmp4Result3.computeAllowedForChannel(tmp10.permissions, context2, context2.guild_id);
       }
       let obj2 = { applicationAllowedForUser: allowedForUser, applicationAllowedForChannel: allowedForChannel, commandBotId: tmp10.botId, isGuildInstalled: tmp14 };
-      obj3 = { command: command2, sectionDescriptor: tmp10, hasPermission: hasAccessResult === tmp4(tmp[59]).HasAccessResult.ALLOWED && hasBaseAccessPermissions, loading: tmp9.fetchState.fetching || tmp8.fetchState.fetching };
-      const tmp4Result4 = tmp4(tmp[59]);
+      obj3 = { command: command2, sectionDescriptor: tmp10, hasPermission: hasAccessResult === tmp4(tmp[61]).HasAccessResult.ALLOWED && hasBaseAccessPermissions, loading: tmp9.fetchState.fetching || tmp8.fetchState.fetching };
+      const tmp4Result4 = tmp4(tmp[61]);
       hasAccessResult = tmp4Result4.hasAccess(command2, permissionContext, obj2);
-      hasAccessResult === tmp4(tmp[59]).HasAccessResult.ALLOWED && hasBaseAccessPermissions;
+      hasAccessResult === tmp4(tmp[61]).HasAccessResult.ALLOWED && hasBaseAccessPermissions;
     }
     loading = obj3.loading;
     let command3 = command;
@@ -1386,7 +1449,7 @@ function AppLauncherCommandView(command) {
     if (command == null) {
       command3 = obj3.command;
     }
-    const tmp17Result = tmp17(tmp[24]);
+    const tmp17Result = tmp17(tmp[25]);
     bottomSheetExpandReasonRef = tmp17Result.useRequiredAppLauncherContext().bottomSheetExpandReasonRef;
     let tmp31 = null != command3;
     if (tmp31) {
@@ -1441,7 +1504,7 @@ function NotFoundState(onPressBack) {
   let obj3;
   let obj4;
   onPressBack = onPressBack.onPressBack;
-  const tmp = closure_23();
+  const tmp = closure_24();
   const obj = AppLauncherNativeUtils;
   const logAppLauncherEmptyStateView = obj.useLogAppLauncherEmptyStateView(AppLauncherTypes.AppLauncherEmptyStateType.COMMAND_NOT_FOUND);
   const obj2 = { style: tmp.emptyStateContainer, children: closure_20(EmptyState, obj3) };
@@ -1464,15 +1527,15 @@ function NoPermsState(command) {
   let obj7;
   command = command.command;
   const onPressBack = command.onPressBack;
-  const tmp = closure_23();
+  const tmp = closure_24();
   const obj = AppLauncherNativeUtils;
   const logAppLauncherEmptyStateView = obj.useLogAppLauncherEmptyStateView(AppLauncherTypes.AppLauncherEmptyStateType.COMMAND_NO_PERMISSIONS);
   const obj3 = { style: tmp.commandNameContainer, children: items };
   items = [, ];
   const obj2 = { style: tmp.emptyStateContainer, children: items1 };
-  const obj4 = { variant: "heading-lg/bold", color: "text-default", children: command.displayName };
+  const obj4 = { variant: "heading-lg/semibold", color: "text-default", children: command.displayName };
   items[0] = closure_20(Text_Text.Text, obj4);
-  const obj5 = { variant: "heading-sm/medium", color: "text-default", children: command.displayDescription };
+  const obj5 = { variant: "heading-xs/medium", color: "text-default", children: command.displayDescription };
   items[1] = closure_20(Text_Text.Text, obj5);
   items1 = [closure_21(metroImportDefault, obj3), ];
   const obj6 = { style: tmp.emptyState, lightSource: AssetRegistryDefault, darkSource: AssetRegistryDefault2, title: intl.string(intl4.t.TzufcR), body: intl2.string(intl4.t["I/O+A1"]), children: closure_20(BaseTextButton, obj7) };
@@ -1485,7 +1548,6 @@ function NoPermsState(command) {
   items1[1] = closure_20(EmptyState, obj6);
   return closure_21(metroImportDefault, obj2);
 }
-let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
 ({ View: metroImportDefault, ActivityIndicator: metroImportAll, ScrollView: c9 } = react_native);
 ({ useContextIndexState: unpackModuleId, useUserIndexState: closure_12 } = ApplicationCommandIndexStore);
@@ -1493,6 +1555,7 @@ let react = react_mod;
 ({ AnalyticEvents: closure_16, NOOP: closure_17, VerticalGradient: closure_18 } = Constants);
 const MediaKeyboardTarget = MediaKeyboardConstants.MediaKeyboardTarget;
 ({ jsx: closure_20, jsxs: closure_21, Fragment: closure_22 } = Fragment);
+const LinearGradient = module_1652.createAnimatedComponent(LinearGradientDefault);
 let createStyles = createStyles_mod;
 let obj = { container: obj2, optionsContainer: obj3, requiredOptionsContainer: { marginTop: 24, gap: 24 }, optionalOptionsContainer: {}, optionalOptionsChild: { marginBottom: 24 }, optionalOptionsFirstChild: { marginTop: 12 }, optionalOptionsLastChild: { marginBottom: 12 }, footerContainer: { position: "absolute", left: 0, bottom: 0, right: 0, paddingHorizontal: DEFAULT_CONTENT_PADDING }, submitButton: { flex: 1, overflow: "hidden" }, optionalOptionsSectionTitle: { marginTop: 36 }, optionalOptionList: { marginTop: 12 }, noRequiredOptionsCalloutContainer: obj4, noOptionCalloutContainer: obj5, emptyState: { backgroundColor: "transparent", justifyContent: "flex-start", paddingTop: 30 }, emptyStateContainer: obj6, failureStateButtonWrapper: { marginTop: 24, alignSelf: "center" }, failureStateButtonPill: obj7, commandNameContainer: { alignItems: "center", justifyContent: "center", textAlign: "center" }, linearGradient: obj8 };
 obj2 = { height: "100%", backgroundColor: nativeDefault.colors.MOBILE_KEYBOARD_PANEL_BACKGROUND };
@@ -1503,10 +1566,11 @@ obj5 = { padding: 16, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWE
 obj6 = { paddingTop: AppLauncherCommandViewHeader.EXPANDED_HEADER_TOTAL_CONSUMED_SPACE_IN_PARENT + nativeDefault.space.PX_4, flex: 1 };
 obj7 = { borderRadius: nativeDefault.radii.xxl, paddingHorizontal: 12, paddingVertical: 8 };
 obj8 = { backgroundColor: nativeDefault.colors.MOBILE_KEYBOARD_PANEL_BACKGROUND };
-let closure_23 = createStyles(obj);
-const __initData = { code: "function AppLauncherCommandViewScreenTsx1(){const{shouldReduceMotion,isPressedDown,withDelay,withTiming,timingStandard,runOnJS,triggerHapticFeedback,HapticFeedbackTypes,isSending}=this.__closure;if(shouldReduceMotion)return{};if(isPressedDown){return{opacity:1,transform:[{translateX:withDelay(100,withTiming(-4,timingStandard,'respect-motion-settings',function(){return runOnJS(triggerHapticFeedback)(HapticFeedbackTypes.IMPACT_LIGHT);}))}]};}return{opacity:withTiming(isSending.get()?0:1,timingStandard),transform:[{translateX:withTiming(isSending.get()?100:0,timingStandard)}]};}" };
-let closure_25 = { code: "function AppLauncherCommandViewScreenTsx2(){const{runOnJS,triggerHapticFeedback,HapticFeedbackTypes}=this.__closure;return runOnJS(triggerHapticFeedback)(HapticFeedbackTypes.IMPACT_LIGHT);}" };
-let __initData2 = { code: "function AppLauncherCommandViewScreenTsx3(){const{bottomSheetPosition,screenHeight,maxHeight,footerStickyInsetBottom}=this.__closure;const animatedSheetOffset=bottomSheetPosition.get()-screenHeight+maxHeight;return{transform:[{translateY:-animatedSheetOffset-footerStickyInsetBottom}]};}" };
+let closure_24 = createStyles(obj);
+let closure_25 = { code: "(function AppLauncherCommandViewScreenTsx1(){let[scheduleOnRN,triggerHapticFeedback,HapticFeedbackTypes]=this.__closure;return scheduleOnRN(triggerHapticFeedback,HapticFeedbackTypes.IMPACT_LIGHT);})" };
+let closure_26 = { code: "(function AppLauncherCommandViewScreenTsx2(){let[shouldReduceMotion,isPressedDown,withDelay,withTiming,timingStandard,_worklet_323925726197_init_data,scheduleOnRN,triggerHapticFeedback,HapticFeedbackTypes,isSending]=this.__closure;if(shouldReduceMotion)return{};if(isPressedDown){return{opacity:1,transform:[{translateX:withDelay(100,withTiming(-4,timingStandard,'respect-motion-settings',function AppLauncherCommandViewScreenTsx1Factory([_worklet_323925726197_init_data,scheduleOnRN,triggerHapticFeedback,HapticFeedbackTypes]){const AppLauncherCommandViewScreenTsx1=function(){return scheduleOnRN(triggerHapticFeedback,HapticFeedbackTypes.IMPACT_LIGHT);};AppLauncherCommandViewScreenTsx1.__closure=[scheduleOnRN,triggerHapticFeedback,HapticFeedbackTypes];AppLauncherCommandViewScreenTsx1.__workletHash=323925726197;AppLauncherCommandViewScreenTsx1.__initData=_worklet_323925726197_init_data;return AppLauncherCommandViewScreenTsx1;}([_worklet_323925726197_init_data,scheduleOnRN,triggerHapticFeedback,HapticFeedbackTypes])))}]};}return{opacity:withTiming(isSending.get()?0:1,timingStandard),transform:[{translateX:withTiming(isSending.get()?100:0,timingStandard)}]};})" };
+let closure_27 = { code: "(function AppLauncherCommandViewScreenTsx3(){let[footerStickyInsetBottom]=this.__closure;return{bottom:-footerStickyInsetBottom.get()};})" };
+let closure_29 = { code: "(function AppLauncherCommandViewScreenTsx4(){let[bottomSheetPosition,screenHeight,maxHeight,animatedFooterStickyInsetBottom]=this.__closure;const animatedSheetOffset=bottomSheetPosition.get()-screenHeight+maxHeight;return{transform:[{translateY:-animatedSheetOffset-animatedFooterStickyInsetBottom.get()}]};})" };
 let result = size.fileFinishedImporting("modules/app_launcher/native/screens/command_view/AppLauncherCommandViewScreen.tsx");
 
 export default function AppLauncherCommandViewScreen(route) {

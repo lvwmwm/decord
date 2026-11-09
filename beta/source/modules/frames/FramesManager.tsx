@@ -1,17 +1,17 @@
-// Module ID: 16390
-// Function ID: 16391
+// Module ID: 16711
+// Function ID: 16712
 // Name: FramesManager
-// Dependencies: [4867, 6846, 1072, 7287, 16305, 10938, 5675, 16391, 1252, 2]
+// Dependencies: [4993, 6901, 1072, 7350, 16625, 11015, 5799, 16712, 1252, 2]
 
-// Module 16390 (FramesManager)
-import ChannelRecord from "ChannelRecord" /* 4867 */;
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5675 */;
-import leaveFrame from "leaveFrame" /* 10938 */;
-import ActivitySessionAnalytics from "ActivitySessionAnalytics" /* 16305 */;
-import isPostMessageDisconnectDefault from "isPostMessageDisconnect" /* 16391 */;
-import FramesStore from "FramesStore" /* 6846 */;
+// Module 16711 (FramesManager)
+import ChannelRecord from "ChannelRecord" /* 4993 */;
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5799 */;
+import leaveFrame from "leaveFrame" /* 11015 */;
+import ActivitySessionAnalytics from "ActivitySessionAnalytics" /* 16625 */;
+import isPostMessageDisconnectDefault from "isPostMessageDisconnect" /* 16712 */;
+import FramesStore from "FramesStore" /* 6901 */;
 import Constants from "Constants" /* 1072 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7287 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7350 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;

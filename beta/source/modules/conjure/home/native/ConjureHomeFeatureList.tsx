@@ -1,22 +1,22 @@
-// Module ID: 12980
-// Function ID: 12981
+// Module ID: 13195
+// Function ID: 13196
 // Name: ConjureHomeFeatureList
-// Dependencies: [19, 17, 21, 5014, 575, 7340, 5587, 9378, 5624, 9468, 12105, 1113, 3868, 5596, 5740, 11281, 671, 12981, 2]
+// Dependencies: [19, 17, 21, 5140, 575, 7401, 5715, 9459, 5751, 9552, 12268, 1113, 4026, 5724, 5864, 11421, 671, 13196, 2]
 
-// Module 12980 (ConjureHomeFeatureList)
+// Module 13195 (ConjureHomeFeatureList)
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
 import intl3 from "intl" /* 1113 */;
-import _modDef3868 from "module_3868" /* 3868 */;
-import LinearGradientDefault from "LinearGradient" /* 5587 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import CircleCheckIcon2 from "CircleCheckIcon" /* 7340 */;
-import ShieldIcon2 from "ShieldIcon" /* 11281 */;
-import RobotIcon2 from "RobotIcon" /* 12105 */;
+import _modDef4026 from "module_4026" /* 4026 */;
+import LinearGradientDefault from "LinearGradient" /* 5715 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import CircleCheckIcon2 from "CircleCheckIcon" /* 7401 */;
+import ShieldIcon2 from "ShieldIcon" /* 11421 */;
+import RobotIcon2 from "RobotIcon" /* 12268 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -70,7 +70,7 @@ function ShowcaseVisual(styles) {
 ({ StyleSheet, View: closure_4 } = react_native);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let createStyles = createStyles_mod;
-let obj = { list: obj2, card: obj3, visual: { height: 132, alignItems: "center", justifyContent: "center" }, caption: obj4, window: obj5, line: obj6, lineTitle: size, lineName: obj7, lineShort: { width: "40%" }, lineMedium: { width: "64%" }, lineLong: { width: "92%" }, windowBar: obj8, windowDot: size1, pollOption: obj9, pollFill: obj10, pollFillWinner: obj11, pollLabel: { width: "40%" }, pollLabelWinner: obj12, gameCanvas: size2, cloud: obj13, pipe: obj14, player: size3, pill: { position: "absolute", top: nativeDefault.space.PX_6, flexDirection: "row", alignItems: "center", gap: 2, paddingVertical: 2, paddingHorizontal: nativeDefault.space.PX_6, borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.colors.BACKGROUND_SCRIM }, joinRow: { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8, paddingLeft: nativeDefault.space.PX_8 }, joinArrow: size4, message: { flexDirection: "row", gap: nativeDefault.space.PX_8 }, messageBody: { flex: 1, gap: nativeDefault.space.PX_6, paddingTop: nativeDefault.space.PX_4 }, messageHeader: { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_6 }, avatar: size5, avatarBrand: { backgroundColor: nativeDefault.colors.BACKGROUND_BRAND }, botTag: { paddingHorizontal: nativeDefault.space.PX_4, borderRadius: nativeDefault.radii.xs, backgroundColor: nativeDefault.colors.BACKGROUND_BRAND }, profile: { padding: 0, gap: 0, overflow: "hidden" }, profileBanner: { height: nativeDefault.space.PX_24 }, profileBody: { gap: nativeDefault.space.PX_6, paddingHorizontal: nativeDefault.space.PX_10, paddingBottom: nativeDefault.space.PX_10 }, profileAvatar: size6, statsWidget: { flexDirection: "row", alignItems: "flex-end", justifyContent: "space-between", padding: nativeDefault.space.PX_6, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE, borderRadius: nativeDefault.radii.sm, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE }, stats: { flexDirection: "row", gap: nativeDefault.space.PX_12 }, stat: { gap: nativeDefault.space.PX_4 }, statValue: size7, statLabel: size8, chart: { flexDirection: "row", alignItems: "flex-end", gap: 2, height: nativeDefault.space.PX_24 }, chartBar: { width: 5, borderRadius: nativeDefault.radii.xs, backgroundColor: nativeDefault.colors.ICON_FEEDBACK_POSITIVE }, chartBarDown: { backgroundColor: nativeDefault.colors.ICON_FEEDBACK_CRITICAL }, scene: size9, sceneHills: rect, sceneScrim: obj30, crosshair: size10, overlayPanel: rect1, overlayMember: { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4 }, overlayAvatar: size11, speaking: { borderWidth: 2, borderColor: nativeDefault.colors.STATUS_ONLINE, backgroundColor: nativeDefault.colors.BACKGROUND_BRAND }, overlayName: size12, overlayTimer: rect2, overlayTimerValue: size13, redacted: { opacity: 0.4 }, blockedNotice: { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8, padding: nativeDefault.space.PX_6, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_FEEDBACK_CRITICAL, borderRadius: nativeDefault.radii.sm, backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_CRITICAL }, blockedText: { flex: 1, gap: nativeDefault.space.PX_6 }, lineCritical: { backgroundColor: nativeDefault.colors.TEXT_FEEDBACK_CRITICAL, opacity: 0.6 } };
+let obj = { list: obj2, card: obj3, visual: { height: 132, alignItems: "center", justifyContent: "center" }, caption: obj4, window: obj5, line: obj6, lineTitle: size, lineName: obj7, lineShort: { width: "40%" }, lineMedium: { width: "64%" }, lineLong: { width: "92%" }, windowBar: obj8, windowDot: size1, pollOption: obj9, pollFill: obj10, pollFillWinner: obj11, pollLabel: { width: "40%" }, pollLabelWinner: obj12, gameCanvas: size2, cloud: obj13, pipe: obj14, player: size3, pill: { position: "absolute", top: nativeDefault.space.PX_6, flexDirection: "row", alignItems: "center", gap: 2, paddingVertical: 2, paddingHorizontal: nativeDefault.space.PX_6, borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.colors.BACKGROUND_SCRIM }, joinRow: { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8, paddingLeft: nativeDefault.space.PX_8 }, joinArrow: size4, message: { flexDirection: "row", gap: nativeDefault.space.PX_8 }, messageBody: { flex: 1, gap: nativeDefault.space.PX_6, paddingTop: nativeDefault.space.PX_4 }, messageHeader: { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_6 }, avatar: size5, avatarBrand: { backgroundColor: nativeDefault.colors.BACKGROUND_BRAND }, botTag: { paddingHorizontal: nativeDefault.space.PX_4, borderRadius: nativeDefault.radii.xs, backgroundColor: nativeDefault.colors.BACKGROUND_BRAND }, profile: { padding: 0, gap: 0, overflow: "hidden" }, profileBanner: { height: nativeDefault.space.PX_24 }, profileBody: { gap: nativeDefault.space.PX_6, paddingHorizontal: nativeDefault.space.PX_10, paddingBottom: nativeDefault.space.PX_10 }, profileAvatar: size6, statsWidget: { flexDirection: "row", alignItems: "flex-end", justifyContent: "space-between", padding: nativeDefault.space.PX_6, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE, borderRadius: nativeDefault.radii.sm, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE }, stats: { flexDirection: "row", gap: nativeDefault.space.PX_12 }, stat: { gap: nativeDefault.space.PX_4 }, statValue: size7, statLabel: size8, chart: { flexDirection: "row", alignItems: "flex-end", gap: 2, height: nativeDefault.space.PX_24 }, chartBar: { width: 5, borderRadius: nativeDefault.radii.xs, backgroundColor: nativeDefault.colors.ICON_FEEDBACK_POSITIVE }, chartBarDown: { backgroundColor: nativeDefault.colors.ICON_FEEDBACK_CRITICAL }, scene: size9, sceneHills: rect, sceneScrim: obj30, crosshair: size10, overlayPanel: rect1, overlayMember: { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4 }, overlayAvatar: size11, speaking: { borderWidth: 2, borderColor: nativeDefault.colors.STATUS_ONLINE, backgroundColor: nativeDefault.colors.BACKGROUND_BRAND }, overlayName: size12, overlayTimer: rect2, overlayTimerValue: size13, redacted: { opacity: 0.4 }, blockedNotice: { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8, padding: nativeDefault.space.PX_6, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_FEEDBACK_CRITICAL, borderRadius: nativeDefault.radii.sm, backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_MOD_CRITICAL }, blockedText: { flex: 1, gap: nativeDefault.space.PX_6 }, lineCritical: { backgroundColor: nativeDefault.colors.TEXT_FEEDBACK_CRITICAL, opacity: 0.6 } };
 obj2 = { gap: nativeDefault.space.PX_16, paddingHorizontal: nativeDefault.space.PX_16 };
 createStyles = createStyles.createStyles;
 obj3 = { gap: nativeDefault.space.PX_24, padding: nativeDefault.space.PX_24, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE, borderRadius: nativeDefault.radii.lg };
@@ -122,7 +122,7 @@ size11 = { width: nativeDefault.space.PX_12, height: nativeDefault.space.PX_12, 
 size12 = { width: 36, height: nativeDefault.space.PX_4 };
 rect2 = { top: "r", bottom: nativeDefault.space.PX_6, left: nativeDefault.space.PX_6 };
 size13 = { width: 20, height: nativeDefault.space.PX_4, backgroundColor: nativeDefault.colors.TEXT_OVERLAY_LIGHT };
-({ flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8, padding: nativeDefault.space.PX_6, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_FEEDBACK_CRITICAL, borderRadius: nativeDefault.radii.sm, backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_CRITICAL });
+({ flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8, padding: nativeDefault.space.PX_6, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_FEEDBACK_CRITICAL, borderRadius: nativeDefault.radii.sm, backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_MOD_CRITICAL });
 ({ flex: 1, gap: nativeDefault.space.PX_6 });
 ({ backgroundColor: nativeDefault.colors.TEXT_FEEDBACK_CRITICAL, opacity: 0.6 });
 let closure_7 = createStyles(obj);
@@ -196,20 +196,20 @@ let closure_14 = {
     items3 = [styles.pill, { left: nativeDefault.space.PX_6 }];
     const obj7 = { size: "xxs", color: nativeDefault.colors.ICON_FEEDBACK_WARNING };
     ({ left: nativeDefault.space.PX_6 });
-    const TrophyIcon = styles(9378).TrophyIcon;
-    items4 = [closure_5(TrophyIcon, obj7), closure_5(styles(5624).Text, { variant: "text-xxs/bold", color: "text-overlay-light", children: 128 })];
+    const TrophyIcon = styles(9459).TrophyIcon;
+    items4 = [closure_5(TrophyIcon, obj7), closure_5(styles(5751).Text, { variant: "footnote/semibold", color: "text-overlay-light", children: 128 })];
     items1[4] = closure_6(closure_4, obj5);
     const obj8 = { style: items5, children: items6 };
     items5 = [styles.pill, { right: nativeDefault.space.PX_6 }];
     const obj10 = { size: "xxs", color: nativeDefault.colors.ICON_FEEDBACK_CRITICAL };
     ({ right: nativeDefault.space.PX_6 });
-    const HeartIcon = styles(9468).HeartIcon;
+    const HeartIcon = styles(9552).HeartIcon;
     items6 = [closure_5(HeartIcon, obj10), , ];
     const obj11 = { size: "xxs", color: nativeDefault.colors.ICON_FEEDBACK_CRITICAL };
-    const HeartIcon2 = styles(9468).HeartIcon;
+    const HeartIcon2 = styles(9552).HeartIcon;
     items6[1] = closure_5(HeartIcon2, obj11);
     const obj12 = { size: "xxs", color: nativeDefault.colors.ICON_OVERLAY_LIGHT };
-    const HeartIcon3 = styles(9468).HeartIcon;
+    const HeartIcon3 = styles(9552).HeartIcon;
     items6[2] = closure_5(HeartIcon3, obj12);
     items1[5] = closure_6(closure_4, obj8);
     return closure_6(tmp, obj);
@@ -244,7 +244,7 @@ let closure_14 = {
     const obj8 = { style: styles.messageBody, children: items5 };
     items4[0] = hasOwnProperty(Line, obj10);
     const obj11 = { style: styles.botTag, children: hasOwnProperty(Text, obj12) };
-    obj12 = { variant: "text-xxs/bold", color: "text-overlay-light", children: intl.string(_modDef3868.VlgiLf) };
+    obj12 = { variant: "footnote/semibold", color: "text-overlay-light", children: intl.string(_modDef4026.VlgiLf) };
     Text = Text_Text.Text;
     intl = intl3.intl;
     items4[1] = hasOwnProperty(React3, obj11);
@@ -263,7 +263,7 @@ let closure_14 = {
     let items6;
     styles = styles.styles;
     let token;
-    let obj = styles(5596);
+    let obj = styles(5724);
     token = obj.useToken(token(575).colors.BACKGROUND_BRAND);
     items = [token];
     let obj2 = { style: items1, children: items2 };
@@ -274,7 +274,7 @@ let closure_14 = {
       return items;
     }, items);
     let obj3 = { style: styles.profileBanner, colors: memo, start: { x: 0, y: 0.5 }, end: { x: 1, y: 0.5 } };
-    items2 = [closure_5(token(5587), obj3), ];
+    items2 = [closure_5(token(5715), obj3), ];
     const obj5 = { style: items3 };
     items3 = [, ];
     const obj4 = { style: styles.profileBody, children: items4 };
@@ -349,7 +349,7 @@ let closure_14 = {
     items2 = [, ];
     ({ pill: arr3[0], overlayTimer: arr3[1] } = styles);
     const obj7 = { size: "xxs", color: nativeDefault.colors.ICON_OVERLAY_LIGHT };
-    const ClockIcon = styles(5740).ClockIcon;
+    const ClockIcon = styles(5864).ClockIcon;
     items3 = [closure_5(ClockIcon, obj7), ];
     const obj8 = { style: styles.overlayTimerValue };
     items3[1] = closure_5(Line, obj8);
@@ -434,11 +434,11 @@ const memoResult = react.memo(function ConjureHomeFeatureList() {
       ({ title, description } = id);
       items = [hasOwnProperty(React3, obj2), ];
       const obj4 = { style: styles.caption, children: items1 };
-      const obj5 = { variant: "text-md/semibold", color: "text-strong", accessibilityRole: "header", children: intl.string(title) };
+      const obj5 = { variant: "body-md/semibold", color: "text-strong", accessibilityRole: "header", children: intl.string(title) };
       const Text = Text_Text.Text;
       intl = intl3.intl;
       items1 = [hasOwnProperty(Text, obj5), ];
-      const obj6 = { variant: "text-sm/normal", color: "text-subtle", children: intl2.string(description) };
+      const obj6 = { variant: "body-sm/normal", color: "text-subtle", children: intl2.string(description) };
       const Text2 = Text_Text.Text;
       intl2 = intl3.intl;
       items1[1] = hasOwnProperty(Text2, obj6);

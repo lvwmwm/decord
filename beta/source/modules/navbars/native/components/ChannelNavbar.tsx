@@ -1,38 +1,38 @@
-// Module ID: 14387
-// Function ID: 14388
+// Module ID: 14623
+// Function ID: 14624
 // Name: ChannelNavbar
-// Dependencies: [19, 17, 6568, 4867, 4863, 4885, 5761, 4956, 1383, 1072, 4870, 4860, 21, 5014, 6723, 575, 504, 1113, 8603, 5652, 10745, 14388, 14389, 1187, 14390, 14391, 5717, 14392, 9972, 6980, 5624, 5068, 8831, 9109, 5044, 4847, 10520, 14393, 2]
+// Dependencies: [19, 17, 6623, 4993, 4989, 5011, 5890, 5082, 1385, 1072, 4996, 4986, 21, 5140, 6778, 575, 504, 1113, 8674, 5776, 10864, 14624, 14625, 1187, 14626, 14627, 5842, 14628, 10093, 7043, 5751, 5194, 8905, 9189, 5170, 4973, 10639, 14629, 2]
 // Exports: ChannelButtons, ChannelTitleWithoutRoute
 
-// Module 14387 (ChannelNavbar)
+// Module 14623 (ChannelNavbar)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl10 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import dismissible_content from "dismissible_content" /* 4847 */;
-import ChannelRecord from "ChannelRecord" /* 4867 */;
-import ChannelConstants from "ChannelConstants" /* 4870 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5044 */;
-import UserUtilsDefault from "UserUtils" /* 5068 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import useChannelName from "useChannelName" /* 5652 */;
-import Pressables from "Pressables" /* 6980 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 8603 */;
-import isStreamingDefault from "isStreaming" /* 8831 */;
-import ActivityStatusDefault from "ActivityStatus" /* 10745 */;
+import dismissible_content from "dismissible_content" /* 4973 */;
+import ChannelRecord from "ChannelRecord" /* 4993 */;
+import ChannelConstants from "ChannelConstants" /* 4996 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5170 */;
+import UserUtilsDefault from "UserUtils" /* 5194 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import useChannelName from "useChannelName" /* 5776 */;
+import Pressables from "Pressables" /* 7043 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8674 */;
+import isStreamingDefault from "isStreaming" /* 8905 */;
+import ActivityStatusDefault from "ActivityStatus" /* 10864 */;
 import react from "react" /* 19 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6568 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
-import GuildStore from "GuildStore" /* 4885 */;
-import PresenceStore from "PresenceStore" /* 5761 */;
-import RelationshipStore from "RelationshipStore" /* 4956 */;
-import UserStore from "UserStore" /* 1383 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6623 */;
+import ChannelStore from "ChannelStore" /* 4989 */;
+import GuildStore from "GuildStore" /* 5011 */;
+import PresenceStore from "PresenceStore" /* 5890 */;
+import RelationshipStore from "RelationshipStore" /* 5082 */;
+import UserStore from "UserStore" /* 1385 */;
 import Constants from "Constants" /* 1072 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4860 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4986 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
-import TextStyles from "TextStyles" /* 6723 */;
+import createStyles_mod from "createStyles" /* 5140 */;
+import TextStyles from "TextStyles" /* 6778 */;
 import size_mod from "module_2" /* 2 */;
 
 let onPress;
@@ -73,7 +73,7 @@ function ChannelTitleContent(arg0) {
   let tmp8 = title;
   if (!react.isValidElement(title)) {
     const obj2 = { style: tmp.channelNameContainer, children: authStore4(Text_Text.Text, obj3) };
-    obj3 = { style: tmp.channelName, lineClamp: 1, variant: "heading-md/bold", color: "mobile-text-heading-primary", accessibilityLabel: accessibleTitle, maxFontSizeMultiplier: 1, accessibilityRole: "header", children: title };
+    obj3 = { style: tmp.channelName, lineClamp: 1, variant: "heading-sm/semibold", color: "mobile-text-heading-primary", accessibilityLabel: accessibleTitle, maxFontSizeMultiplier: 1, accessibilityRole: "header", children: title };
     tmp8 = authStore4(View, obj2);
   }
   const obj4 = { style: tmp.flexRow, children: items };
@@ -92,7 +92,7 @@ function ParentChannelSubTitle(parentChannel) {
   let obj3;
   let obj4;
   parentChannel = parentChannel.parentChannel;
-  const obj = { lineClamp: 1, style: closure_18().navbarTitleSecondaryText, accessibilityLabel: formatToPlainString(BjYvHO, obj2), maxFontSizeMultiplier: 1, variant: "text-xs/medium", color: "text-muted", children: obj4.computeChannelName(parentChannel, UserStore, RelationshipStore, true) };
+  const obj = { lineClamp: 1, style: closure_18().navbarTitleSecondaryText, accessibilityLabel: formatToPlainString(BjYvHO, obj2), maxFontSizeMultiplier: 1, variant: "body-xs/medium", color: "text-muted", children: obj4.computeChannelName(parentChannel, UserStore, RelationshipStore, true) };
   const Text = Text_Text.Text;
   const intl = intl10.intl;
   formatToPlainString = intl.formatToPlainString;

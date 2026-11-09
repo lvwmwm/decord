@@ -1,16 +1,16 @@
-// Module ID: 12999
-// Function ID: 13000
+// Module ID: 13214
+// Function ID: 13215
 // Name: ConjureTemplateWizard
-// Dependencies: [5, 10850, 1113, 3868, 13000, 7419, 2]
+// Dependencies: [5, 10969, 1113, 4026, 13215, 7483, 2]
 // Exports: canLeaveConjureWizardQuestion, conjureTemplateWizardGuilds, conjureTemplateWizardSteps, conjureWizardIntro, conjureWizardQuestions, conjureWizardServerCopy, conjureWizardServerStep, formatConjureWizardAnswers, isConjureWizardComplete, latestConjureIntake, startConjureTemplateWizard
 
-// Module 12999 (ConjureTemplateWizard)
+// Module 13214 (ConjureTemplateWizard)
 import intl3 from "intl" /* 1113 */;
-import _modDef3868 from "module_3868" /* 3868 */;
-import ConjureUtils from "ConjureUtils" /* 7419 */;
-import conjureTemplateIntakeRequests from "conjureTemplateIntakeRequests" /* 13000 */;
+import _modDef4026 from "module_4026" /* 4026 */;
+import ConjureUtils from "ConjureUtils" /* 7483 */;
+import conjureTemplateIntakeRequests from "conjureTemplateIntakeRequests" /* 13215 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 10850 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 10969 */;
 import size from "module_2" /* 2 */;
 
 let closure_3, name;
@@ -21,7 +21,7 @@ function conjureTemplateStartMessage(templateName) {
   const intl = intl3.intl;
   const formatToPlainString = intl.formatToPlainString;
   obj = { templateName, locale: intl3.intl.currentLocale };
-  const prop = _modDef3868["/qSx7+"];
+  const prop = _modDef4026["/qSx7+"];
   return formatToPlainString(prop, obj);
 }
 let obj = function _startConjureTemplateWizard() {
@@ -41,7 +41,7 @@ let obj = function _startConjureTemplateWizard() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -205,7 +205,7 @@ export function conjureWizardServerCopy(stateFromStores1) {
     server = stateFromStores1.server;
   }
   if (server == null) {
-    obj = { title: intl.string(_modDef3868.vcxYIA), hint: intl2.string(_modDef3868.auUHPZ) };
+    obj = { title: intl.string(_modDef4026.vcxYIA), hint: intl2.string(_modDef4026.auUHPZ) };
     intl = intl3.intl;
     intl2 = intl3.intl;
     server = obj;

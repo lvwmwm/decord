@@ -160,14 +160,14 @@ const items = [
   },
   {
     key: "readAsText",
-    value: function readAsText(_bodyBlob, match) {
+    value: function readAsText(data) {
       let self = this;
-      let str = match;
-      if (match === undefined) {
+      let str = arg1;
+      if (arg1 === undefined) {
         str = "UTF-8";
       }
       this._aborted = false;
-      if (null == _bodyBlob) {
+      if (null == data) {
         const _TypeError = TypeError;
         self = this;
         const self2 = this;
@@ -175,7 +175,7 @@ const items = [
         throw typeError;
       } else {
         const obj = FileReaderModuleDefault;
-        const asText = obj.readAsText(_bodyBlob.data, str);
+        const asText = obj.readAsText(data.data, str);
         asText.then((_result) => {
           if (!self._aborted) {
             self._result = _result;

@@ -1,13 +1,13 @@
-// Module ID: 18396
-// Function ID: 18397
+// Module ID: 18735
+// Function ID: 18736
 // Name: UnreadSubtitle
-// Dependencies: [19, 17, 21, 18394, 8603, 8652, 1113, 5624, 2]
+// Dependencies: [19, 17, 21, 18733, 8674, 8723, 1113, 5751, 2]
 // Exports: default
 
-// Module 18396 (UnreadSubtitle)
+// Module 18735 (UnreadSubtitle)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import Text_Text from "Text/Text" /* 5624 */;
+import Text_Text from "Text/Text" /* 5751 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -41,16 +41,16 @@ export default function UnreadSubtitle(arg0) {
     channelName,
     count: diff,
     labelHook(noticeType, arg1) {
-      return jsx(subtitleStyles(channelIconComponentWithGuild[7]).Text, { variant: "text-xs/medium", color: "text-muted", lineClamp: 1, children: noticeType }, arg1);
+      return jsx(subtitleStyles(channelIconComponentWithGuild[7]).Text, { variant: "body-xs/medium", color: "text-muted", lineClamp: 1, children: noticeType }, arg1);
     },
     iconHook(arg0, arg1) {
       return <channelIconComponentWithGuild key={arg1} size="xxs" color="icon-muted" style={subtitleStyles.unreadChannelIcon} />;
     },
     channelHook(children, arg1) {
-      return jsx(Text_Text.Text, { variant: "text-xs/medium", color: "text-muted", lineClamp: 1, style: subtitleStyles.subtitleText, children }, arg1);
+      return jsx(Text_Text.Text, { variant: "body-xs/medium", color: "text-muted", lineClamp: 1, style: subtitleStyles.subtitleText, children }, arg1);
     },
     overflowHook(children, arg1) {
-      return jsx(subtitleStyles(channelIconComponentWithGuild[7]).Text, { variant: "text-xs/medium", color: "text-muted", children }, arg1);
+      return jsx(subtitleStyles(channelIconComponentWithGuild[7]).Text, { variant: "body-xs/medium", color: "text-muted", children }, arg1);
     }
   };
   return <View style={subtitleStyles.subtitleRow} accessible accessibilityLabel={intl.formatToPlainString(subtitleStyles(channelIconComponentWithGuild[6]).t.gxD5I6, { channelName, count: diff })}>{intl2.format(subtitleStyles(channelIconComponentWithGuild[6]).t.OqlmU6, obj3)}</View>;

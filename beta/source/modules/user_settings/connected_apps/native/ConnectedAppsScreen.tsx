@@ -1,30 +1,30 @@
-// Module ID: 16840
-// Function ID: 16841
+// Module ID: 17163
+// Function ID: 17164
 // Name: ConnectedAppsScreen
-// Dependencies: [19, 17, 7276, 502, 6572, 2062, 1072, 21, 5014, 575, 5253, 7682, 504, 14990, 1498, 7347, 5624, 1113, 4287, 6027, 16841, 16842, 6977, 9720, 16850, 5717, 1409, 5021, 5634, 1625, 16851, 1497, 5258, 16852, 1994, 7294, 2]
+// Dependencies: [19, 17, 7339, 502, 6627, 2186, 1072, 21, 5140, 575, 5369, 7758, 504, 15263, 1500, 7408, 5751, 1113, 4413, 6159, 17164, 17165, 7040, 9810, 17173, 5842, 1411, 5147, 5758, 1627, 17174, 1499, 5374, 17175, 2118, 7357, 2]
 // Exports: default
 
-// Module 16840 (ConnectedAppsScreen)
+// Module 17163 (ConnectedAppsScreen)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl6 from "intl" /* 1113 */;
-import AvatarUtils from "AvatarUtils" /* 1409 */;
-import shared from "shared" /* 5021 */;
-import useThemeDefault from "useTheme" /* 5253 */;
-import FastImageDefault from "FastImage" /* 5717 */;
-import Card_Card from "Card/Card" /* 6977 */;
-import useConnectionFilteredAppIdentitiesDefault from "useConnectionFilteredAppIdentities" /* 14990 */;
-import ConnectedApplicationIdentityDefault from "ConnectedApplicationIdentity" /* 16841 */;
-import ConnectedAccountDefault from "ConnectedAccount" /* 16842 */;
-import UserSettingsAuthedApps from "UserSettingsAuthedApps" /* 16851 */;
+import AvatarUtils from "AvatarUtils" /* 1411 */;
+import shared from "shared" /* 5147 */;
+import useThemeDefault from "useTheme" /* 5369 */;
+import FastImageDefault from "FastImage" /* 5842 */;
+import Card_Card from "Card/Card" /* 7040 */;
+import useConnectionFilteredAppIdentitiesDefault from "useConnectionFilteredAppIdentities" /* 15263 */;
+import ConnectedApplicationIdentityDefault from "ConnectedApplicationIdentity" /* 17164 */;
+import ConnectedAccountDefault from "ConnectedAccount" /* 17165 */;
+import UserSettingsAuthedApps from "UserSettingsAuthedApps" /* 17174 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AuthorizedAppsStore from "AuthorizedAppsStore" /* 7276 */;
+import AuthorizedAppsStore from "AuthorizedAppsStore" /* 7339 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6572 */;
-import LocaleStore from "LocaleStore" /* 2062 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6627 */;
+import LocaleStore from "LocaleStore" /* 2186 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -43,7 +43,7 @@ let obj7;
 let size;
 let tmp2;
 let unpackModuleId;
-const _modDef4287 = tmp2(4287);
+const _modDef4413 = tmp2(4413);
 function ConnectionsSection(onAdd) {
   let Button;
   let accounts;
@@ -102,7 +102,7 @@ function ConnectionsSection(onAdd) {
   if (!tmp8) {
     tmp8 = prop.length > 0;
   }
-  const tmp4Result = tmp4(1498);
+  const tmp4Result = tmp4(1500);
   const focusEffect = tmp4Result.useFocusEffect(authorizedApps.useCallback(() => {
     const obj = theme(locale[15]);
     const response = obj.fetch();
@@ -110,24 +110,24 @@ function ConnectionsSection(onAdd) {
   const obj6 = { style: tmp.section, children: items6 };
   const obj7 = { children: items5 };
   const obj8 = { style: tmp.header, children: items4 };
-  const obj9 = { style: tmp.title, variant: "heading-md/semibold", color: "text-strong", children: intl.string(tmp4(1113).t["3fe7U5"]) };
-  const Heading = tmp4(5624).Heading;
+  const obj9 = { style: tmp.title, variant: "heading-sm/semibold", color: "text-strong", children: intl.string(tmp4(1113).t["3fe7U5"]) };
+  const Heading = tmp4(5751).Heading;
   intl = tmp4(1113).intl;
   items4 = [closure_11(Heading, obj9), ];
-  const obj10 = { variant: "text-sm/medium", color: "text-link", style: tmp.addAction, accessibilityRole: "button", accessibilityLabel: intl2.string(tmp4(1113).t.Zhcj9X), onPress: onAdd, children: intl3.string(tmp4(1113).t.OYkgVk) };
-  const Text = tmp4(5624).Text;
+  const obj10 = { variant: "body-sm/medium", color: "text-link", style: tmp.addAction, accessibilityRole: "button", accessibilityLabel: intl2.string(tmp4(1113).t.Zhcj9X), onPress: onAdd, children: intl3.string(tmp4(1113).t.OYkgVk) };
+  const Text = tmp4(5751).Text;
   intl2 = tmp4(1113).intl;
   intl3 = tmp4(1113).intl;
   items4[1] = closure_11(Text, obj10);
   items5 = [closure_12(closure_5, obj8), ];
-  const obj11 = { variant: "text-sm/normal", color: "text-default", children: intl4.string(_modDef4287["0y44+Q"]) };
-  const Text2 = tmp4(5624).Text;
+  const obj11 = { variant: "body-sm/normal", color: "text-default", children: intl4.string(_modDef4413["0y44+Q"]) };
+  const Text2 = tmp4(5751).Text;
   intl4 = tmp4(1113).intl;
   items5[1] = closure_11(Text2, obj11);
   items6 = [closure_12(closure_5, obj7), ];
   if (tmp8) {
     const obj12 = { spacing: 16, children: items7 };
-    const Stack = tmp4(6027).Stack;
+    const Stack = tmp4(6159).Stack;
     items7 = [
       prop.map((identity) => {
           let closure_0 = identity;
@@ -179,7 +179,7 @@ function ConnectionsSection(onAdd) {
         ];
         const obj14 = { style: tmp.moreButton, children: closure_11(Button, obj15) };
         obj15 = { variant: "secondary", size: "lg", grow: true, text: intl5.string(tmp4(1113).t["UKOtz+"]), onPress: onAdd };
-        Button = tmp4(5634).Button;
+        Button = tmp4(5758).Button;
         intl5 = tmp4(1113).intl;
         items8[1] = closure_11(closure_5, obj14);
         tmp12Result = tmp10(tmp11, obj13);
@@ -215,12 +215,12 @@ export default function ConnectedAppsScreen() {
   let paths;
   let stackNavigation;
   const tmp = closure_14();
-  const bottom = stackNavigation(1625)().bottom;
-  let obj = apps(16851);
+  const bottom = stackNavigation(1627)().bottom;
+  let obj = apps(17174);
   const authorizedApps = obj.useAuthorizedApps();
   apps = authorizedApps.apps;
   const loading = authorizedApps.loading;
-  const obj2 = apps(1497);
+  const obj2 = apps(1499);
   stackNavigation = obj2.useStackNavigation();
   const items = [stackNavigation];
   const callback = react.useCallback(() => {
@@ -237,7 +237,7 @@ export default function ConnectedAppsScreen() {
   const obj3 = {
     contentContainerStyle: items1,
     ListHeaderComponent: closure_12(closure_13, obj5),
-    ListEmptyComponent: closure_11(apps(16851).AuthorizedAppsEmpty, { loading }),
+    ListEmptyComponent: closure_11(apps(17174).AuthorizedAppsEmpty, { loading }),
     data: apps,
     renderItem(app) {
       const index = app.index;
@@ -250,9 +250,9 @@ export default function ConnectedAppsScreen() {
   };
   items1 = [tmp.container, ];
   const obj4 = { paddingBottom: bottom + stackNavigation(575).space.PX_24 };
-  const FlashList = apps(7294).FlashList;
+  const FlashList = apps(7357).FlashList;
   items1[1] = obj4;
   obj5 = { children: items2 };
-  items2 = [closure_11(ConnectionsSection, { onAdd: callback }), closure_11(apps(16851).AuthorizedAppsHeader, {})];
+  items2 = [closure_11(ConnectionsSection, { onAdd: callback }), closure_11(apps(17174).AuthorizedAppsHeader, {})];
   return closure_11(FlashList, obj3);
 };

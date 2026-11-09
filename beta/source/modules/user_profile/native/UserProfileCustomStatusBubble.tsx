@@ -1,29 +1,29 @@
-// Module ID: 11396
-// Function ID: 11397
+// Module ID: 11537
+// Function ID: 11538
 // Name: UserProfileCustomStatusBubble
-// Dependencies: [32, 19, 17, 7377, 1386, 1083, 21, 1375, 5014, 575, 8031, 4839, 5717, 1409, 5624, 7300, 5596, 8761, 10749, 11047, 5258, 11397, 7351, 1113, 6980, 11489, 2]
+// Dependencies: [32, 19, 17, 7437, 1388, 1083, 21, 1377, 5140, 575, 8101, 4965, 5842, 1411, 5751, 7363, 5724, 8832, 10868, 5883, 5374, 11538, 7412, 1113, 7043, 11634, 2]
 // Exports: default
 
-// Module 11396 (UserProfileCustomStatusBubble)
+// Module 11537 (UserProfileCustomStatusBubble)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
-import EmojiConstants from "EmojiConstants" /* 1386 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1409 */;
-import UserSettings from "UserSettings" /* 4839 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import FastImageDefault from "FastImage" /* 5717 */;
-import EmojiDefault from "Emoji" /* 7300 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7351 */;
-import Constants2 from "Constants" /* 7377 */;
-import inlineStyles from "inlineStyles" /* 8031 */;
-import CustomStatusUtils from "CustomStatusUtils" /* 11397 */;
+import EmojiConstants from "EmojiConstants" /* 1388 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
+import UserSettings from "UserSettings" /* 4965 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import FastImageDefault from "FastImage" /* 5842 */;
+import EmojiDefault from "Emoji" /* 7363 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7412 */;
+import Constants2 from "Constants" /* 7437 */;
+import inlineStyles from "inlineStyles" /* 8101 */;
+import CustomStatusUtils from "CustomStatusUtils" /* 11538 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import PlatformUtils from "PlatformUtils" /* 1375 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import PlatformUtils from "PlatformUtils" /* 1377 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -219,8 +219,8 @@ let closure_13 = createStyles.createStyles((arg0) => {
   const merged1 = Object.assign(tmp4(575).shadows.SHADOW_LOW);
   return obj;
 });
-let closure_15 = { textVariant: "text-md/normal", emojiOnlyEmojiSize: 32, textMinWidth: 42, statusBubblePaddingHorizontal: 12, statusBubblePaddingVertical: 7 };
-let closure_16 = { [UserProfileThemeTypes.PREVIEW]: { textVariant: "text-sm/normal", emojiOnlyEmojiSize: 26, textMinWidth: 53, statusBubblePaddingHorizontal: 10, statusBubblePaddingVertical: 6 } };
+let closure_15 = { textVariant: "body-md/normal", emojiOnlyEmojiSize: 32, textMinWidth: 42, statusBubblePaddingHorizontal: 12, statusBubblePaddingVertical: 7 };
+let closure_16 = { [UserProfileThemeTypes.PREVIEW]: { textVariant: "body-sm/normal", emojiOnlyEmojiSize: 26, textMinWidth: 53, statusBubblePaddingHorizontal: 10, statusBubblePaddingVertical: 6 } };
 createStyles = createStyles_mod;
 let closure_19 = createStyles.createStyles(() => ({ container: { alignItems: "center" } }));
 let size = size_mod;
@@ -451,10 +451,10 @@ export default function UserProfileCustomStatusBubble(ref) {
       const obj11 = { prompt: placeholderText };
       formatToPlainStringResult = intl5.formatToPlainString(tmp5(tmp6[23]).t.ioWOMP, obj11);
     }
-    let str7 = "text-md/medium";
+    let str7 = "body-md/medium";
     Text = tmp5(tmp6[14]).Text;
     if (!tmp19 && !tmp21 && undefined !== placeholderText && "" !== placeholderText) {
-      str7 = "text-md/normal";
+      str7 = "body-md/normal";
     }
     let _Math = Math;
     obj12 = { variant: str7, color: "control-secondary-text-default", lineClamp: Math.ceil(2 * previewEmoji.getFontScale()), style: obj13, children: items7 };

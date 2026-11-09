@@ -1,16 +1,16 @@
-// Module ID: 18322
-// Function ID: 18323
+// Module ID: 18660
+// Function ID: 18661
 // Name: useDefaultAuthorizationNotifiers
-// Dependencies: [19, 1993, 1072, 504, 5742, 6732, 5712, 1113, 3320, 2]
+// Dependencies: [19, 2117, 1072, 504, 5866, 6787, 5837, 1113, 3478, 2]
 // Exports: useDefaultAuthorizationNotifiers
 
-// Module 18322 (useDefaultAuthorizationNotifiers)
+// Module 18660 (useDefaultAuthorizationNotifiers)
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
-import _modDef3320 from "module_3320" /* 3320 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5712 */;
+import _modDef3478 from "module_3478" /* 3478 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5837 */;
 import react_mod from "react" /* 19 */;
-import AppStateStore from "AppStateStore" /* 1993 */;
+import AppStateStore from "AppStateStore" /* 2117 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -61,11 +61,11 @@ export function useDefaultAuthorizationNotifiers(startAuthorization, hasAlreadyL
     if (ref.current) {
       if (false === previousWhen) {
         if (true === hasAlreadyLinked) {
-          const tmp10 = stateFromStores;
-          if (tmp10) {
+          const tmp3 = stateFromStores;
+          if (tmp3) {
             tmp.current = false;
             if (false) {
-              const obj = { text: intl.string(_modDef3320.uG6teD) };
+              const obj = { text: intl.string(_modDef3478.uG6teD) };
               const open = ToastActionCreatorsDefault.open;
               ToastActionCreatorsDefault;
               intl = intl2.intl;

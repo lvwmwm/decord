@@ -1,14 +1,14 @@
-// Module ID: 6045
-// Function ID: 6046
+// Module ID: 6177
+// Function ID: 6178
 // Name: useChannelRoleSubscriptionStatus
-// Dependencies: [4918, 4863, 4946, 1072, 504, 2]
+// Dependencies: [5044, 4989, 5072, 1072, 504, 2]
 // Exports: default
 
-// Module 6045 (useChannelRoleSubscriptionStatus)
+// Module 6177 (useChannelRoleSubscriptionStatus)
 import Constants from "Constants" /* 1072 */;
-import GatedChannelStore from "GatedChannelStore" /* 4918 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
-import PermissionStore from "PermissionStore" /* 4946 */;
+import GatedChannelStore from "GatedChannelStore" /* 5044 */;
+import ChannelStore from "ChannelStore" /* 4989 */;
+import PermissionStore from "PermissionStore" /* 5072 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

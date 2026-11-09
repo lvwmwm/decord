@@ -1,31 +1,31 @@
-// Module ID: 11752
-// Function ID: 11753
+// Module ID: 11915
+// Function ID: 11916
 // Name: PictureInPictureVideo
-// Dependencies: [32, 19, 17, 4862, 6843, 502, 2006, 4917, 6756, 11705, 11000, 5681, 21, 5014, 1187, 575, 11006, 12, 11702, 11753, 504, 5759, 11754, 11757, 11765, 11228, 11778, 11787, 11698, 11843, 5596, 8715, 11780, 11712, 11708, 11711, 1491, 1375, 8903, 2]
+// Dependencies: [32, 19, 17, 4988, 6898, 502, 2130, 5043, 6811, 11868, 11130, 5805, 21, 5140, 1187, 575, 11136, 12, 11865, 11916, 504, 5888, 11917, 11920, 11928, 11368, 11941, 11950, 11861, 12006, 5724, 8786, 11943, 11875, 11871, 11874, 1493, 1377, 8977, 2]
 
-// Module 11752 (PictureInPictureVideo)
+// Module 11915 (PictureInPictureVideo)
 import nativeDefault from "native" /* 575 */;
-import PlatformUtils from "PlatformUtils" /* 1375 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1491 */;
-import CallConstants from "CallConstants" /* 5681 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5759 */;
-import transitionToActivityDefault from "transitionToActivity" /* 11698 */;
-import useShouldForcePipOrientation from "useShouldForcePipOrientation" /* 11708 */;
-import usePipDimensionsDefault from "usePipDimensions" /* 11711 */;
-import useIsViewingActivity from "useIsViewingActivity" /* 11712 */;
+import PlatformUtils from "PlatformUtils" /* 1377 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1493 */;
+import CallConstants from "CallConstants" /* 5805 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5888 */;
+import transitionToActivityDefault from "transitionToActivity" /* 11861 */;
+import useShouldForcePipOrientation from "useShouldForcePipOrientation" /* 11871 */;
+import usePipDimensionsDefault from "usePipDimensions" /* 11874 */;
+import useIsViewingActivity from "useIsViewingActivity" /* 11875 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4862 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6843 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4988 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6898 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import MediaEngineStore from "MediaEngineStore" /* 2006 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4917 */;
-import SpeakingStore from "SpeakingStore" /* 6756 */;
-import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 11705 */;
-import ChannelCallStore from "ChannelCallStore" /* 11000 */;
+import MediaEngineStore from "MediaEngineStore" /* 2130 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5043 */;
+import SpeakingStore from "SpeakingStore" /* 6811 */;
+import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 11868 */;
+import ChannelCallStore from "ChannelCallStore" /* 11130 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import native_mod from "native" /* 1187 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -227,11 +227,11 @@ let closure_22 = react.memo(function ActivityPictureInPictureVideo(arg0) {
   let tmp5;
   let tmp6;
   let tmp9;
-  const f100123 = () => {
+  const f101830 = () => {
     const items = [ChannelCallLifecycleStore.consumedRequestToRespondToSeriousThermalState(), ChannelCallLifecycleStore.isReactingToThermalState()];
     return items;
   };
-  const f126774 = () => {
+  const f129172 = () => {
     const items = [ChannelRTCStore.getParticipants(id), ChannelRTCStore.getVideoParticipants(id), ChannelRTCStore.getParticipantsVersion(id)];
     return items;
   };
@@ -242,16 +242,16 @@ let closure_22 = react.memo(function ActivityPictureInPictureVideo(arg0) {
   const obj = id(leadingEdgeDebounce[20]);
   id = channel.id;
   leadingEdgeDebounce = undefined;
-  [tmp5, tmp6] = obj.useStateFromStoresArray(items, f100123);
-  _slicedToArray(obj.useStateFromStoresArray(items, f100123), 2);
+  [tmp5, tmp6] = obj.useStateFromStoresArray(items, f101830);
+  _slicedToArray(obj.useStateFromStoresArray(items, f101830), 2);
   const items1 = [ChannelCallLifecycleStore];
   const obj2 = id(leadingEdgeDebounce[20]);
   const stateFromStores = obj2.useStateFromStores(items1, () => ChannelCallLifecycleStore.isReactingToThermalState());
   const items2 = [ChannelRTCStore];
   const items3 = [id];
   const obj3 = id(leadingEdgeDebounce[20]);
-  [arr5, tmp9] = obj3.useStateFromStores(items2, f126774, items3, areParticipantsEqual);
-  _slicedToArray(obj3.useStateFromStores(items2, f126774, items3, areParticipantsEqual), 2);
+  [arr5, tmp9] = obj3.useStateFromStores(items2, f129172, items3, areParticipantsEqual);
+  _slicedToArray(obj3.useStateFromStores(items2, f129172, items3, areParticipantsEqual), 2);
   const items4 = [SpeakingStore];
   const items5 = [selfParticipant];
   const obj4 = id(leadingEdgeDebounce[20]);

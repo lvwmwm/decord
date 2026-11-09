@@ -1,14 +1,14 @@
-// Module ID: 11351
-// Function ID: 11352
+// Module ID: 11491
+// Function ID: 11492
 // Name: ArrowLargeUpIcon
-// Dependencies: [19, 21, 575, 5716, 11352, 2]
+// Dependencies: [19, 21, 575, 5841, 11492, 2]
 // Exports: ArrowLargeUpIcon
 
-// Module 11351 (ArrowLargeUpIcon)
+// Module 11491 (ArrowLargeUpIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5716 */;
-import AssetRegistry from "AssetRegistry" /* 11352 */;
+import BaseIconImage2 from "BaseIconImage" /* 5841 */;
+import AssetRegistry from "AssetRegistry" /* 11492 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -1,11 +1,11 @@
-// Module ID: 6088
-// Function ID: 6089
+// Module ID: 6570
+// Function ID: 6571
 // Name: CheckpointExperiments
-// Dependencies: [1447, 2]
+// Dependencies: [1449, 2]
 // Exports: getIsCheckpointCardEnabled, getIsCheckpointEnabled, useIsCheckpointCardEnabled, useIsCheckpointEnabled, useIsCheckpointQAEnabled
 
-// Module 6088 (CheckpointExperiments)
-import ApexExperiment_mod from "ApexExperiment" /* 1447 */;
+// Module 6570 (CheckpointExperiments)
+import ApexExperiment_mod from "ApexExperiment" /* 1449 */;
 import size from "module_2" /* 2 */;
 
 let ApexExperiment = ApexExperiment_mod;
@@ -31,8 +31,8 @@ export function useIsCheckpointCardEnabled(Checkpoint2026ForwardPreview) {
   const obj = { location: Checkpoint2026ForwardPreview };
   return closure_1.useConfig(obj).enabled;
 }
-export function getIsCheckpointCardEnabled(transformCheckpoint2026CardComponent) {
-  const obj = { location: transformCheckpoint2026CardComponent };
+export function getIsCheckpointCardEnabled(transformCheckpointCardToRowGeneratedComponent) {
+  const obj = { location: transformCheckpointCardToRowGeneratedComponent };
   return closure_1.getConfig(obj).enabled;
 }
 export function useIsCheckpointQAEnabled(CheckpointProfileEntrypoint) {

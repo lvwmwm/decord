@@ -1,27 +1,27 @@
-// Module ID: 19122
-// Function ID: 19123
+// Module ID: 19498
+// Function ID: 19499
 // Name: ActivityPanelController
-// Dependencies: [32, 19, 2038, 8864, 11848, 4863, 4862, 2018, 5657, 21, 2034, 2019, 19121, 5095, 8903, 19123, 1625, 1491, 19112, 19124, 11005, 11792, 11861, 19125, 7004, 11795, 5207, 504, 4935, 5678, 6706, 5756, 19126, 11726, 2]
+// Dependencies: [32, 19, 2162, 8938, 12011, 4989, 4988, 2142, 5781, 21, 2158, 2143, 19497, 1652, 1705, 8977, 19499, 1627, 1493, 19488, 19500, 11135, 11955, 11326, 19501, 7070, 11958, 5323, 504, 5061, 5802, 6761, 5885, 19502, 11889, 2]
 // Exports: default
 
-// Module 19122 (ActivityPanelController)
+// Module 19498 (ActivityPanelController)
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 2018 */;
-import EmbeddedActivityOrientationLockState from "EmbeddedActivityOrientationLockState" /* 2019 */;
-import ChatInputUtils from "ChatInputUtils" /* 5207 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 5657 */;
-import transitionToChannel from "transitionToChannel" /* 5756 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6706 */;
-import EmbeddedActivitiesActionCreatorsAll from "EmbeddedActivitiesActionCreators" /* 11726 */;
-import doesOrientationMatchLockStateDefault from "doesOrientationMatchLockState" /* 11795 */;
+import Constants from "Constants" /* 2142 */;
+import EmbeddedActivityOrientationLockState from "EmbeddedActivityOrientationLockState" /* 2143 */;
+import ChatInputUtils from "ChatInputUtils" /* 5323 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 5781 */;
+import transitionToChannel from "transitionToChannel" /* 5885 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6761 */;
+import EmbeddedActivitiesActionCreatorsAll from "EmbeddedActivitiesActionCreators" /* 11889 */;
+import doesOrientationMatchLockStateDefault from "doesOrientationMatchLockState" /* 11958 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 2038 */;
-import AppFreezeStore from "AppFreezeStore" /* 8864 */;
-import SafeAreaDisabledStore from "SafeAreaDisabledStore" /* 11848 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4862 */;
-import FunctionUtils from "FunctionUtils" /* 2034 */;
+import ApplicationStore from "ApplicationStore" /* 2162 */;
+import AppFreezeStore from "AppFreezeStore" /* 8938 */;
+import SafeAreaDisabledStore from "SafeAreaDisabledStore" /* 12011 */;
+import ChannelStore from "ChannelStore" /* 4989 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4988 */;
+import FunctionUtils from "FunctionUtils" /* 2158 */;
 import size_mod from "module_2" /* 2 */;
 
 let application;
@@ -32,10 +32,17 @@ class BaseActivityPanelController {
     let connectedActivityAppId;
     let context;
     let currentApp;
+    let first;
     let hasConnectedActivity;
     let mode;
     let orientationLockStateForApp;
     let pipAvoidanceSpecs;
+    let tmp27;
+    let tmp30;
+    let tmp31;
+    let tmp32;
+    let tmp33;
+    let tmp34;
     ({ orientationLockStateForApp, mode } = updateActivityPanelMode);
     ({ hasConnectedActivity, connectedActivityAppId } = updateActivityPanelMode);
     updateActivityPanelMode = updateActivityPanelMode.updateActivityPanelMode;
@@ -45,31 +52,31 @@ class BaseActivityPanelController {
     let tmp2 = sharedValue;
     ({ children, context, currentApp } = updateActivityPanelMode);
     let tmp = connectedActivityAppId;
-    let tmp3 = connectedActivityAppId(sharedValue[16])();
-    let tmp4 = connectedActivityAppId(sharedValue[17])();
+    let tmp3 = connectedActivityAppId(sharedValue[17])();
+    let tmp4 = connectedActivityAppId(sharedValue[18])();
     let obj = mode(sharedValue[13]);
     sharedValue = obj.useSharedValue({ x: -1, y: -1 });
-    const tmp7 = connectedActivityAppId(sharedValue[18])(tmp3);
+    const tmp7 = connectedActivityAppId(sharedValue[19])(tmp3);
     _slicedToArray = tmp7;
     const obj2 = mode(sharedValue[13]);
     const sharedValue1 = obj2.useSharedValue(closure_14);
     const ref = sharedValue1.useRef(mode);
-    const tmp9 = connectedActivityAppId(sharedValue[19])();
+    const tmp9 = connectedActivityAppId(sharedValue[20])();
     const useActivityWebViewLock = tmp9;
-    const tmp10 = !connectedActivityAppId(sharedValue[20])();
+    const tmp10 = !connectedActivityAppId(sharedValue[21])();
     let closure_8 = tmp10;
     let defaultOrientationLockState = orientationLockStateForApp;
     if (orientationLockStateForApp == null) {
-      const tmp5Result = mode(tmp2[21]);
+      const tmp5Result = mode(tmp2[22]);
       defaultOrientationLockState = tmp5Result.getDefaultOrientationLockState(currentApp);
     }
     const tmp12 = closure_15(tmp4, tmp3.top, defaultOrientationLockState, tmp10);
     wrapperDimensions = tmp12;
     ref2 = obj3.useRef(connectedActivityAppId);
-    const tmp5Result5 = mode(tmp2[22]);
+    const tmp5Result5 = mode(tmp2[23]);
     const isVoicePanelFullscreen = tmp5Result5.useIsVoicePanelFullscreen();
-    tmp(tmp2[23])();
-    const tmp5Result6 = mode(tmp2[24]);
+    tmp(tmp2[24])();
+    const tmp5Result6 = mode(tmp2[25]);
     tmp5Result6.useNavigatorBackPressHandler(() => {
       let flag = mode === ActivityPanelModes.PANEL;
       if (flag) {
@@ -127,15 +134,15 @@ class BaseActivityPanelController {
         if (mode === constants.PANEL) {
           const tmp4 = hasConnectedActivity;
           if (tmp4) {
-            connectedActivityAppId(sharedValue[15])(orientationLockStateForApp);
+            connectedActivityAppId(sharedValue[16])(orientationLockStateForApp);
           }
         }
-        const obj = mode(sharedValue[14]);
+        const obj = mode(sharedValue[15]);
         const result = obj.restoreDefaultOrientation();
       }
     }, items2);
     const layoutEffect1 = obj3.useLayoutEffect(() => () => {
-      const obj = mode(sharedValue[14]);
+      const obj = mode(sharedValue[15]);
       return obj.restoreDefaultOrientation();
     }, []);
     let tmp20 = hasConnectedActivity;
@@ -162,31 +169,44 @@ class BaseActivityPanelController {
         return fn;
       }
     }, items3);
+    first = undefined;
     const tmp5Result7 = mode(tmp2[12]);
     const isActivityPanelFullscreen = tmp5Result7.useIsActivityPanelFullscreen();
-    const tmp25 = _slicedToArray(obj3.useState(false), 2);
-    const first = tmp25[0];
-    let closure_3 = tmp27;
+    [first, tmp27] = obj3.useState(false);
     const id1 = obj3.useId();
-    let fn = function l() {
-      return sharedValue1.get().gestureActive;
-    };
-    fn.__closure = { wrapperOffset: sharedValue1 };
-    fn.__workletHash = 5299695936442;
-    fn.__initData = __initData;
-    const fn2 = function s(arg0, arg1) {
-      if (arg0 !== arg1) {
-        const obj = mode(sharedValue[13]);
-        obj.runOnJS(closure_3)(arg0);
-      }
-    };
+    const items4 = [closure_16, sharedValue1];
+    let c0;
+    [tmp30, tmp31] = items4;
     const tmp5Result8 = mode(tmp2[13]);
-    fn2.__closure = { runOnJS: mode(tmp2[13]).runOnJS, setWrapperGestureInProgress: tmp25[1] };
-    fn2.__workletHash = 5831467313798;
-    fn2.__initData = __initData2;
-    ({ runOnJS: mode(tmp2[13]).runOnJS, setWrapperGestureInProgress: tmp25[1] });
-    const animatedReaction = tmp5Result8.useAnimatedReaction(fn, fn2);
-    const items4 = [isActivityPanelFullscreen, first, id1];
+    class ActivityPanelControllerTsx1 {
+      constructor() {
+        return _undefined.get().gestureActive;
+      }
+    }
+    const items5 = [tmp31];
+    ActivityPanelControllerTsx1.__closure = items5;
+    ActivityPanelControllerTsx1.__workletHash = 5081102168611;
+    ActivityPanelControllerTsx1.__initData = tmp30;
+    const items6 = [closure_17, , ];
+    const useAnimatedReaction = tmp5Result8.useAnimatedReaction;
+    items6[1] = mode(tmp2[14]).scheduleOnRN;
+    items6[2] = tmp27;
+    c0 = undefined;
+    let c1;
+    [tmp32, tmp33, tmp34] = items6;
+    class ActivityPanelControllerTsx2 {
+      constructor(arg0, arg1) {
+        if (arg0 !== arg1) {
+          _undefined(c1, arg0);
+        }
+      }
+    }
+    const items7 = [tmp33, tmp34];
+    ActivityPanelControllerTsx2.__closure = items7;
+    ActivityPanelControllerTsx2.__workletHash = 5317338371282;
+    ActivityPanelControllerTsx2.__initData = tmp32;
+    const animatedReaction = useAnimatedReaction(ActivityPanelControllerTsx1, ActivityPanelControllerTsx2);
+    const items8 = [isActivityPanelFullscreen, first, id1];
     const effect2 = obj3.useEffect(() => {
       let key;
       let state = useActivityWebViewLock.getState();
@@ -202,9 +222,9 @@ class BaseActivityPanelController {
         const obj = { lockEnabled: false, key };
         const freezeLock = state.requestFreezeLock(obj);
       };
-    }, items4);
-    const items5 = [mode, tmp7, sharedValue, updateActivityPanelMode, tmp9, tmp12, sharedValue1];
-    return <context.Provider value={sharedValue1.useMemo(() => ({ mode, setMode: updateActivityPanelMode, wrapperDimensions, pipState: sharedValue, pipAvoidanceSpecs, wrapperOffset: sharedValue1, useActivityWebViewLock }), items5)}>{children}</context.Provider>;
+    }, items8);
+    const items9 = [mode, tmp7, sharedValue, updateActivityPanelMode, tmp9, tmp12, sharedValue1];
+    return <context.Provider value={sharedValue1.useMemo(() => ({ mode, setMode: updateActivityPanelMode, wrapperDimensions, pipState: sharedValue, pipAvoidanceSpecs, wrapperOffset: sharedValue1, useActivityWebViewLock }), items9)}>{children}</context.Provider>;
   }
 }
 let _slicedToArray = _slicedToArray_mod;
@@ -241,7 +261,7 @@ let closure_15 = FunctionUtils.cachedFunction((arg0, arg1, arg2, arg3) => {
     const _Math = Math;
     const _Math2 = Math;
   } else {
-    const UNLOCKED = tmp2(2019).EmbeddedActivityOrientationLockState.UNLOCKED;
+    const UNLOCKED = tmp2(2143).EmbeddedActivityOrientationLockState.UNLOCKED;
     const size4 = { width, height: diff, isLandscape: width > height, isWindowLandscape: width > height };
     diff = height;
     if (width <= height) {
@@ -250,8 +270,8 @@ let closure_15 = FunctionUtils.cachedFunction((arg0, arg1, arg2, arg3) => {
     return size4;
   }
 });
-const authStore4 = { code: "function ActivityPanelControllerTsx1(){const{wrapperOffset}=this.__closure;return wrapperOffset.get().gestureActive;}" };
-const __initData2 = { code: "function ActivityPanelControllerTsx2(gestureActive,previous){const{runOnJS,setWrapperGestureInProgress}=this.__closure;if(gestureActive===previous)return;runOnJS(setWrapperGestureInProgress)(gestureActive);}" };
+let closure_16 = { code: "(function ActivityPanelControllerTsx1(){let[wrapperOffset]=this.__closure;return wrapperOffset.get().gestureActive;})" };
+let closure_17 = { code: "(function ActivityPanelControllerTsx2(gestureActive,previous){let[scheduleOnRN,setWrapperGestureInProgress]=this.__closure;if(gestureActive===previous)return;scheduleOnRN(setWrapperGestureInProgress,gestureActive);})" };
 let size = size_mod;
 let result = size.fileFinishedImporting("modules/activities/panel/native/ActivityPanelController.tsx");
 
@@ -279,13 +299,13 @@ export default function ActivityPanelController(children) {
     if (null != applicationId) {
       application = application.getApplication(applicationId);
     }
-    const obj2 = mode(dependencyMap[28]);
+    const obj2 = mode(dependencyMap[29]);
     const embeddedActivityLocationChannelId = obj2.getEmbeddedActivityLocationChannelId(connectedActivityLocation);
     const obj3 = { mode: activityPanelMode, connectedActivityInTextChannelId: tmp9, hasConnectedActivity: null != selfEmbeddedActivityForLocation, connectedActivityAppId: applicationId, currentApp: application, orientationLockStateForApp };
     tmp9 = undefined;
     const tmp7 = dependencyMap;
     if (null != embeddedActivityLocationChannelId) {
-      if (!connectedActivityInTextChannelId(tmp7[29])(embeddedActivityLocationChannelId)) {
+      if (!connectedActivityInTextChannelId(tmp7[30])(embeddedActivityLocationChannelId)) {
         tmp9 = embeddedActivityLocationChannelId;
       }
     }
@@ -312,6 +332,6 @@ export default function ActivityPanelController(children) {
       }
     }
   }, items1);
-  return <BaseActivityPanelController context={connectedActivityInTextChannelId(19126)} orientationLockStateForApp={orientationLockStateForApp} mode={mode} hasConnectedActivity={hasConnectedActivity} connectedActivityAppId={connectedActivityAppId} currentApp={currentApp} updateActivityPanelMode={EmbeddedActivitiesActionCreatorsAll.updateActivityPanelMode}>{children}</BaseActivityPanelController>;
+  return <BaseActivityPanelController context={connectedActivityInTextChannelId(19502)} orientationLockStateForApp={orientationLockStateForApp} mode={mode} hasConnectedActivity={hasConnectedActivity} connectedActivityAppId={connectedActivityAppId} currentApp={currentApp} updateActivityPanelMode={EmbeddedActivitiesActionCreatorsAll.updateActivityPanelMode}>{children}</BaseActivityPanelController>;
 };
 export { BaseActivityPanelController };

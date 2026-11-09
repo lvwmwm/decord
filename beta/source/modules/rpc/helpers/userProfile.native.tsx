@@ -1,14 +1,14 @@
-// Module ID: 16341
-// Function ID: 16342
+// Module ID: 16662
+// Function ID: 16663
 // Name: userProfile
-// Dependencies: [5, 5259, 1383, 8750, 8752, 2]
+// Dependencies: [5, 5375, 1385, 8821, 8823, 2]
 // Exports: isAnyUserProfileOpen, openUserProfile
 
-// Module 16341 (userProfile)
-import showUserProfileActionSheet from "showUserProfileActionSheet" /* 8750 */;
+// Module 16662 (userProfile)
+import showUserProfileActionSheet from "showUserProfileActionSheet" /* 8821 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ActionSheetStore from "ActionSheetStore" /* 5259 */;
-import UserStore from "UserStore" /* 1383 */;
+import ActionSheetStore from "ActionSheetStore" /* 5375 */;
+import UserStore from "UserStore" /* 1385 */;
 import size from "module_2" /* 2 */;
 
 let c1, c3, key;
@@ -26,7 +26,7 @@ export function openUserProfile(arg0) {
   function open() {
     return obj(...arguments);
   }
-  ({ userId: require, onOpen: importDefault, onClose: dependencyMap } = arg0);
+  ({ userId: require, channelId: importDefault, onOpen: dependencyMap, onClose: _asyncToGenerator } = arg0);
   let obj = function _open() {
     obj = _asyncToGenerator(async (arg0, value) => {
       let closure_0;
@@ -42,7 +42,7 @@ export function openUserProfile(arg0) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c2;
@@ -69,7 +69,7 @@ export function openUserProfile(arg0) {
           } else {
             if (1 === c1) {
               c2 = 0;
-              closure_128_2();
+              closure_128_3();
             } else if (2 === c1) {
               if (arg0 === 1) {
                 c3 = 3;
@@ -80,7 +80,7 @@ export function openUserProfile(arg0) {
                 const obj5 = { value, done: true };
                 return obj5;
               } else {
-                closure_128_1();
+                closure_128_2();
                 c2 = 0;
               }
             } else if (arg0 === 1) {
@@ -93,25 +93,25 @@ export function openUserProfile(arg0) {
               return obj;
             }
             c3 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
           if (null == authStore.getUser(closure_128_0)) {
-            closure_128_2();
+            closure_128_3();
             c2 = 0;
             c3 = 3;
             const obj7 = { value: undefined, done: true };
             return obj7;
           } else {
-            const obj8 = { userId: closure_128_0, onClose: closure_128_2 };
+            const obj8 = { userId: closure_128_0, channelId: closure_128_1, onClose: closure_128_3 };
             c1 = 2;
             c3 = 1;
             const obj9 = { value: c1(c2[3])(obj8), done: false };
             return obj9;
           }
-        } catch (tmp25) {
+        } catch (tmp26) {
           if (0 === c2) {
             c3 = 3;
-            throw tmp25;
+            throw tmp26;
           } else {
             c1 = 1;
           }

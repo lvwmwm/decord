@@ -1,25 +1,26 @@
-// Module ID: 5607
-// Function ID: 5608
+// Module ID: 5735
+// Function ID: 5736
 // Name: useSafeAreaInsetsKeyboardAware
-// Dependencies: [32, 19, 1493, 5608, 5609, 1625, 1494, 1375, 1891, 5209, 1623, 5610, 2]
+// Dependencies: [32, 19, 1495, 1627, 1496, 1377, 2020, 5325, 1625, 5736, 2]
 // Exports: default
 
-// Module 5607 (useSafeAreaInsetsKeyboardAware)
-import PlatformUtils from "PlatformUtils" /* 1375 */;
-import KeyboardTypes from "KeyboardTypes" /* 1623 */;
-import useSystemKeyboardHeight from "useSystemKeyboardHeight" /* 1891 */;
-import useKeyboardType from "useKeyboardType" /* 5209 */;
-import useCustomKeyboardHeight from "useCustomKeyboardHeight" /* 5610 */;
+// Module 5735 (useSafeAreaInsetsKeyboardAware)
+import PlatformUtils from "PlatformUtils" /* 1377 */;
+import KeyboardTypes from "KeyboardTypes" /* 1625 */;
+import useSystemKeyboardHeight from "useSystemKeyboardHeight" /* 2020 */;
+import useKeyboardType from "useKeyboardType" /* 5325 */;
+import useCustomKeyboardHeight from "useCustomKeyboardHeight" /* 5736 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import react from "react" /* 19 */;
-import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore" /* 1493 */;
+import react_mod from "react" /* 19 */;
+import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore" /* 1495 */;
 import size from "module_2" /* 2 */;
 
-let result = size.fileFinishedImporting("modules/safe_area/useSafeAreaInsetsKeyboardAware.native.tsx");
+let react = react_mod;
+const result = size.fileFinishedImporting("modules/safe_area/useSafeAreaInsetsKeyboardAware.native.tsx");
 
 export default function useSafeAreaInsetsKeyboardAware() {
-  let c6;
-  let tmp8;
+  let closure_4;
+  let items3;
   let obj = arg0;
   if (arg0 === undefined) {
     obj = {};
@@ -40,15 +41,12 @@ export default function useSafeAreaInsetsKeyboardAware() {
   if (flag4 === undefined) {
     flag4 = false;
   }
-  let callback;
-  c6 = undefined;
-  let tmp = flag3;
-  let tmp2 = flag2(flag3[5])();
-  let tmp3 = flag;
-  let obj2 = flag(flag3[6]);
+  let tmp = flag2(flag3[3])();
+  react = tmp;
+  let obj2 = flag(flag3[4]);
   const appEntryKey = obj2.useAppEntryKey();
   const items = [appEntryKey, flag3, flag, flag2];
-  callback = callback.useCallback(() => {
+  const callback = react.useCallback(() => {
     const obj = PlatformUtils;
     if (obj.isIOS()) {
       const tmp3 = flag;
@@ -81,53 +79,51 @@ export default function useSafeAreaInsetsKeyboardAware() {
     }
     return systemKeyboardHeight;
   }, items);
-  const ref = callback.useRef(callback());
-  [tmp8, c6] = appEntryKey(callback.useState(ref.current), 2);
-  const items1 = [callback, flag, flag2];
-  appEntryKey(callback.useState(ref.current), 2);
-  const effect = callback.useEffect(() => subscribeToKeyboardUIStore(function maybeUpdateKeyboardHeight() {
+  const items1 = [callback, flag4];
+  const callback1 = react.useCallback(() => {
     const tmp = callback();
+    let tmp2 = null;
+    if (tmp > 0) {
+      let num = 0;
+      if (flag4) {
+        num = tmp;
+      }
+      tmp2 = num;
+    }
+    return tmp2;
+  }, items1);
+  const ref = react.useRef(callback1());
+  const tmp6 = flag4(react.useState(ref.current), 2);
+  const first = tmp6[0];
+  let closure_10 = tmp6[1];
+  const items2 = [callback1];
+  const layoutEffect = react.useLayoutEffect(() => {
+    let tmp = callback1();
     if (ref.current !== tmp) {
       ref.current = tmp;
-      closure_1_6(tmp);
+      closure_10(tmp);
     }
-  }), items1);
-  let isAndroidResult = !flag;
-  if (flag) {
-    isAndroidResult = !flag4;
-  }
-  if (!isAndroidResult) {
-    const tmp3Result = tmp3(tmp[7]);
-    isAndroidResult = tmp3Result.isAndroid();
-  }
-  let closure_1 = obj3.useRef(false);
-  const items2 = [tmp8, isAndroidResult];
-  const effect1 = obj3.useEffect(() => {
-    const obj = flag(flag3[3]);
-    const keyboardDuration = obj.getKeyboardDuration();
-    const tmp = flag;
-    const tmp2 = flag3;
-    const tmp4 = ref;
-    if (ref.current) {
-      if (0 !== keyboardDuration) {
-        const tmp5 = isAndroidResult;
-        if (!tmp5) {
-          const tmpResult = tmp(tmp2[4]);
-          const result = tmpResult.DeprecatedLayoutAnimationKeyboard(keyboardDuration);
-        }
+    return subscribeToKeyboardUIStore(function maybeUpdateKeyboardInset() {
+      const tmp = callback1();
+      if (ref.current !== tmp) {
+        ref.current = tmp;
+        closure_1_10(tmp);
       }
-    }
-    tmp4.current = true;
+    });
   }, items2);
-  let num = 0;
-  if (flag4) {
-    num = tmp8;
-  }
-  let insets = tmp2;
-  if (tmp8 > 0) {
-    const obj4 = { bottom: num };
-    const merged = Object.assign(tmp2);
-    insets = obj4;
-  }
-  return { insets };
+  const obj3 = {
+    insets: react.useMemo(() => {
+      let tmp2;
+      if (null != first) {
+        const obj = { bottom: tmp };
+        const merged = Object.assign(closure_4);
+        tmp2 = obj;
+      } else {
+        tmp2 = closure_4;
+      }
+      return tmp2;
+    }, items3)
+  };
+  items3 = [tmp, first];
+  return obj3;
 };

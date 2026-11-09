@@ -1,31 +1,31 @@
-// Module ID: 10545
-// Function ID: 10546
+// Module ID: 10664
+// Function ID: 10665
 // Name: MediaKeyboardItem
-// Dependencies: [19, 17, 8208, 10546, 21, 5095, 5014, 575, 5011, 1187, 10277, 5624, 504, 8218, 10547, 1113, 8238, 8220, 10548, 10549, 5254, 1491, 10550, 8659, 10535, 2]
+// Dependencies: [19, 17, 8277, 10665, 21, 1652, 5140, 575, 5137, 1187, 10396, 5751, 504, 8288, 10666, 1113, 8308, 8290, 10667, 10668, 5370, 1493, 10669, 8730, 10654, 2]
 // Exports: isAttachFilesNode, isMediaCameraNode, isSpecialMediaGridNode, isViewAllPhotosNode
 
-// Module 10545 (MediaKeyboardItem)
+// Module 10664 (MediaKeyboardItem)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1491 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 5095 */;
-import timing from "timing" /* 5254 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import ImageIcon from "ImageIcon" /* 8659 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10277 */;
-import AttachmentIcon from "AttachmentIcon" /* 10535 */;
-import CameraIcon from "CameraIcon" /* 10550 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1493 */;
+import _mod1652 from "module_1652" /* 1652 */;
+import timing_timing from "timing/timing" /* 5370 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import ImageIcon from "ImageIcon" /* 8730 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10396 */;
+import AttachmentIcon from "AttachmentIcon" /* 10654 */;
+import CameraIcon from "CameraIcon" /* 10669 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 8208 */;
-import DeviceConstants from "DeviceConstants" /* 10546 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 8277 */;
+import DeviceConstants from "DeviceConstants" /* 10665 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
-import ColorUtils_mod from "ColorUtils" /* 5011 */;
+import createStyles_mod from "createStyles" /* 5140 */;
+import ColorUtils_mod from "ColorUtils" /* 5137 */;
 import size_mod from "module_2" /* 2 */;
 
-const ReanimatedRexport = ReanimatedRexport2;
+const module_1652 = _mod1652;
 let constants;
 
 let ColorUtils;
@@ -54,7 +54,7 @@ function NewCaption(arg0) {
   items = [tmp.labelContainer, style];
   const obj2 = { source: AssetRegistryDefault, style: tmp.icon };
   const Icon = native.Icon;
-  items1 = [React4(Icon, obj2), React4(Text_Text.Text, { style: textStyle, color: "text-overlay-light", variant: "text-xs/bold", children: label })];
+  items1 = [React4(Icon, obj2), React4(Text_Text.Text, { style: textStyle, color: "text-overlay-light", variant: "body-xs/semibold", children: label })];
   return authStore(React3, obj);
 }
 function MediaKeyboardImage(draftType) {
@@ -277,46 +277,63 @@ function MediaKeyboardDummy(arg0) {
 }
 function MediaKeyboardSpecialButton(arg0) {
   let accessibilityLabel;
+  let backgroundColor;
   let children;
   let disabled;
   let index;
-  let items1;
+  let items3;
   let numItemsPerRow;
   let onPress;
+  let pressedBackgroundColor;
+  let tmp10;
+  let tmp11;
+  let tmp5;
+  let tmp6;
+  let tmp7;
+  let tmp8;
+  let tmp9;
   let totalNumItems;
   ({ size, disabled, index, totalNumItems, numItemsPerRow } = arg0);
-  let sharedValue;
-  let pressedBackgroundColor;
   ({ onPress, accessibilityLabel, children } = arg0);
-  const tmp = closure_12();
-  let obj = sharedValue(pressedBackgroundColor[5]);
-  sharedValue = obj.useSharedValue(0);
+  let tmp = closure_12();
+  let obj = _mod1652;
+  const sharedValue = obj.useSharedValue(0);
+  ({ backgroundColor, pressedBackgroundColor } = closure_16());
   const tmp3 = closure_16();
-  const backgroundColor = tmp3.backgroundColor;
-  pressedBackgroundColor = tmp3.pressedBackgroundColor;
-  let obj2 = sharedValue(pressedBackgroundColor[5]);
-  const fn = function h() {
-    let Easing;
-    let interpolateColorResult;
-    let obj3;
-    let withTiming;
-    const obj = { backgroundColor: withTiming(interpolateColorResult, obj3) };
-    withTiming = timing.withTiming;
-    timing;
-    const items = [backgroundColor, pressedBackgroundColor];
-    obj3 = { duration: 200, easing: Easing.out(ReanimatedRexport2.Easing.quad) };
-    const obj2 = ReanimatedRexport2;
-    interpolateColorResult = obj2.interpolateColor(sharedValue.get(), [0, 1], items);
-    Easing = ReanimatedRexport2.Easing;
-    return obj;
-  };
-  let obj3 = { withTiming: sharedValue(pressedBackgroundColor[20]).withTiming, interpolateColor: sharedValue(pressedBackgroundColor[5]).interpolateColor, pressed: sharedValue, backgroundColor, pressedBackgroundColor, Easing: sharedValue(pressedBackgroundColor[5]).Easing };
-  fn.__closure = obj3;
-  fn.__workletHash = 15924448581794;
-  fn.__initData = __initData;
-  let items = [index, numItemsPerRow, totalNumItems];
-  const animatedStyle = obj2.useAnimatedStyle(fn);
-  const obj4 = {
+  const tmp4 = _mod1652;
+  let items = [closure_17, , , , , , ];
+  const useAnimatedStyle = tmp4.useAnimatedStyle;
+  items[1] = timing_timing.withTiming;
+  items[2] = _mod1652.interpolateColor;
+  items[3] = sharedValue;
+  items[4] = backgroundColor;
+  items[5] = pressedBackgroundColor;
+  items[6] = _mod1652.Easing;
+  let c0;
+  let c1;
+  let c2;
+  let c3;
+  let c4;
+  let c5;
+  [tmp5, tmp6, tmp7, tmp8, tmp9, tmp10, tmp11] = items;
+  class MediaKeyboardItemTsx1 {
+    constructor() {
+      let obj2;
+      let tmp;
+      const items = [c3, c4];
+      const obj = { backgroundColor: _undefined(tmp, obj2) };
+      obj2 = { duration: 200, easing: _undefined4.out(_undefined4.quad) };
+      tmp = _undefined2(_undefined3.get(), [0, 1], items);
+      return obj;
+    }
+  }
+  const items1 = [tmp6, tmp7, tmp8, tmp9, tmp10, tmp11];
+  MediaKeyboardItemTsx1.__closure = items1;
+  MediaKeyboardItemTsx1.__workletHash = 14962449975931;
+  MediaKeyboardItemTsx1.__initData = tmp5;
+  const items2 = [index, numItemsPerRow, totalNumItems];
+  const animatedStyle = useAnimatedStyle(MediaKeyboardItemTsx1);
+  let obj2 = {
     disabled,
     accessibilityRole: "button",
     accessibilityLabel,
@@ -327,13 +344,13 @@ function MediaKeyboardSpecialButton(arg0) {
       const result = sharedValue.set(0);
     },
     onPress,
-    style: items1,
+    style: items3,
     children
   };
-  items1 = [animatedStyle, , , , , ];
-  ({ imageContainer: arr2[1], specialButton: arr2[2] } = tmp);
-  items1[3] = { width: size, height: size };
-  items1[4] = react.useMemo(() => {
+  items3 = [animatedStyle, , , , , ];
+  ({ imageContainer: arr4[1], specialButton: arr4[2] } = tmp);
+  items3[3] = { width: size, height: size };
+  items3[4] = react.useMemo(() => {
     let num7;
     let num8;
     let num9;
@@ -378,21 +395,21 @@ function MediaKeyboardSpecialButton(arg0) {
       num3 = 0;
     }
     return obj;
-  }, items);
+  }, items2);
   let disabled1;
-  const tmp5 = closure_9;
-  const tmp6 = closure_11;
+  const tmp13 = React4;
+  const tmp14 = closure_11;
   if (disabled) {
     disabled1 = tmp.disabled;
   }
-  items1[5] = disabled1;
-  return tmp5(tmp6, obj4);
+  items3[5] = disabled1;
+  return tmp13(tmp14, obj2);
 }
 ({ View: closure_4, Pressable } = react_native);
 const StyleSheet = react_native.StyleSheet;
 ({ ALAssetsType: metroImportDefault, DeviceMediaType: metroImportAll } = DeviceConstants);
 ({ jsx: c9, jsxs: c10 } = Fragment);
-let closure_11 = ReanimatedRexport.createAnimatedComponent(Pressable);
+let closure_11 = module_1652.createAnimatedComponent(Pressable);
 let createStyles = createStyles_mod;
 let obj = { container: { flexDirection: "row", paddingHorizontal: 12, alignItems: "center" }, image: obj2, imageContainer: obj3, labelContainer: rect, mediaKeyboardItemLabelContainer: { right: 10 }, icon: size, checkIcon: size1, checkIconContainer: size2, selectedOverlay: obj4, specialButton: { flexDirection: "column", justifyContent: "center", alignItems: "center", gap: 8 }, disabled: { opacity: 0.4 }, imageDisabled: { opacity: 0.2 } };
 obj2 = { backgroundColor: nativeDefault.colors.MOBILE_KEYBOARD_PANEL_BACKGROUND };
@@ -411,7 +428,7 @@ let closure_12 = createStyles(obj);
 createStyles = createStyles_mod;
 let obj5 = { backgroundColor: nativeDefault.colors.CONTROL_SECONDARY_BACKGROUND_DEFAULT, pressedBackgroundColor: nativeDefault.colors.CONTROL_SECONDARY_BACKGROUND_ACTIVE };
 let closure_16 = createStyles.createStyleProperties(obj5);
-const __initData = { code: "function MediaKeyboardItemTsx1(){const{withTiming,interpolateColor,pressed,backgroundColor,pressedBackgroundColor,Easing}=this.__closure;return{backgroundColor:withTiming(interpolateColor(pressed.get(),[0,1],[backgroundColor,pressedBackgroundColor]),{duration:200,easing:Easing.out(Easing.quad)})};}" };
+let closure_17 = { code: "(function MediaKeyboardItemTsx1(){let[withTiming,interpolateColor,pressed,backgroundColor,pressedBackgroundColor,Easing]=this.__closure;return{backgroundColor:withTiming(interpolateColor(pressed.get(),[0,1],[backgroundColor,pressedBackgroundColor]),{duration:200,easing:Easing.out(Easing.quad)})};})" };
 const memoResult = react.memo(function MediaKeyboardItem(arg0) {
   let closure_10;
   let closure_4;
@@ -432,6 +449,7 @@ const memoResult = react.memo(function MediaKeyboardItem(arg0) {
   let obj4;
   let onLongPressItem;
   let onPressItem;
+  let require;
   let totalNumItems;
   let uploadLimit;
   ({ items, channel: require, draftType: importDefault, onPressItem: dependencyMap, onLongPressItem: react, rowIndex: closure_4, totalNumItems: Pressable, numPerRow } = arg0);

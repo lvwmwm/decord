@@ -1,19 +1,19 @@
-// Module ID: 9578
-// Function ID: 9579
+// Module ID: 9665
+// Function ID: 9666
 // Name: SkeletonCard
-// Dependencies: [19, 21, 5014, 575, 9459, 5095, 5254, 2]
+// Dependencies: [19, 21, 5140, 575, 9540, 1652, 5370, 2]
 // Exports: default
 
-// Module 9578 (SkeletonCard)
+// Module 9665 (SkeletonCard)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
-import timing from "timing" /* 5254 */;
+import _mod1652 from "module_1652" /* 1652 */;
+import timing_timing from "timing/timing" /* 5370 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
-const ReanimatedRexportDefault = ReanimatedRexport;
+const _modDef1652 = _mod1652;
 let set;
 
 const jsx = Fragment.jsx;
@@ -22,45 +22,51 @@ let closure_5 = createStyles.createStyles((width, height) => {
   size = { width, height, backgroundColor: nativeDefault.colors.BORDER_SUBTLE, borderRadius: nativeDefault.radii.sm };
   return obj;
 });
-const __initData = { code: "function SkeletonCardTsx1(){const{opacity}=this.__closure;return{opacity:opacity.get()};}" };
+let closure_6 = { code: "(function SkeletonCardTsx1(){let[opacity]=this.__closure;return{opacity:opacity.get()};})" };
 let size = size_mod;
 let result = size.fileFinishedImporting("modules/collectibles/native/SkeletonCard.tsx");
 
 export default function _default(width) {
   let sharedValue;
+  let tmp10;
+  let tmp11;
   let COLLECTIBLES_SHOP_CARD_WIDTH = width.width;
   if (COLLECTIBLES_SHOP_CARD_WIDTH === undefined) {
-    COLLECTIBLES_SHOP_CARD_WIDTH = sharedValue(9459).COLLECTIBLES_SHOP_CARD_WIDTH;
+    COLLECTIBLES_SHOP_CARD_WIDTH = sharedValue(9540).COLLECTIBLES_SHOP_CARD_WIDTH;
   }
   let COLLECTIBLES_SHOP_CARD_HEIGHT = width.height;
   sharedValue = undefined;
   const style = width.style;
   const tmp3 = closure_5;
   if (COLLECTIBLES_SHOP_CARD_HEIGHT == null) {
-    COLLECTIBLES_SHOP_CARD_HEIGHT = sharedValue(9459).COLLECTIBLES_SHOP_CARD_HEIGHT;
+    COLLECTIBLES_SHOP_CARD_HEIGHT = sharedValue(9540).COLLECTIBLES_SHOP_CARD_HEIGHT;
   }
   const tmp3Result = tmp3(COLLECTIBLES_SHOP_CARD_WIDTH, COLLECTIBLES_SHOP_CARD_HEIGHT);
-  let obj = sharedValue(5095);
+  let obj = sharedValue(1652);
   sharedValue = obj.useSharedValue(0.3);
   const items = [sharedValue];
   const effect = react.useEffect(() => {
     set = sharedValue.set;
-    const withRepeat = ReanimatedRexport.withRepeat;
-    ReanimatedRexport;
-    const obj = timing;
+    const withRepeat = _mod1652.withRepeat;
+    _mod1652;
+    const obj = timing_timing;
     const result = set(withRepeat(obj.withTiming(1, { duration: 650 }), -1, true));
   }, items);
-  const obj2 = sharedValue(5095);
-  class C {
+  const items1 = [closure_6, sharedValue];
+  let c0;
+  [tmp10, tmp11] = items1;
+  const obj2 = sharedValue(1652);
+  class SkeletonCardTsx1 {
     constructor() {
-      const obj = { opacity: sharedValue.get() };
+      const obj = { opacity: _undefined.get() };
       return obj;
     }
   }
-  C.__closure = { opacity: sharedValue };
-  C.__workletHash = 5620456625640;
-  C.__initData = __initData;
-  const animatedStyle = obj2.useAnimatedStyle(C);
-  const items1 = [tmp3Result.skeletonCard, style, animatedStyle];
-  return jsx(ReanimatedRexportDefault.View, { style: items1 });
+  const items2 = [tmp11];
+  SkeletonCardTsx1.__closure = items2;
+  SkeletonCardTsx1.__workletHash = 5075628150833;
+  SkeletonCardTsx1.__initData = tmp10;
+  const animatedStyle = obj2.useAnimatedStyle(SkeletonCardTsx1);
+  const items3 = [tmp3Result.skeletonCard, style, animatedStyle];
+  return jsx(_modDef1652.View, { style: items3 });
 };

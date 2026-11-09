@@ -1,16 +1,16 @@
-// Module ID: 16665
-// Function ID: 16666
+// Module ID: 16987
+// Function ID: 16988
 // Name: account/MFAUtils
-// Dependencies: [4885, 4946, 1383, 1072, 1113, 563, 7118, 2]
+// Dependencies: [5011, 5072, 1385, 1072, 1113, 563, 7189, 2]
 // Exports: getSMSBackupDisabledMessage, use2FARemoveDisableReason, useIsMFAEnabled, useMFAAvailability
 
-// Module 16665 (account/MFAUtils)
+// Module 16987 (account/MFAUtils)
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import intl4 from "intl" /* 1113 */;
-import MFAUtils from "MFAUtils" /* 7118 */;
-import GuildStore from "GuildStore" /* 4885 */;
-import PermissionStore from "PermissionStore" /* 4946 */;
-import UserStore from "UserStore" /* 1383 */;
+import MFAUtils from "MFAUtils" /* 7189 */;
+import GuildStore from "GuildStore" /* 5011 */;
+import PermissionStore from "PermissionStore" /* 5072 */;
+import UserStore from "UserStore" /* 1385 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 

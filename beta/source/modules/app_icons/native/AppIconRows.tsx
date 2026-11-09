@@ -1,22 +1,22 @@
-// Module ID: 17517
-// Function ID: 17518
+// Module ID: 17850
+// Function ID: 17851
 // Name: AppIconRows
-// Dependencies: [32, 19, 17, 1383, 9979, 21, 5014, 9980, 7060, 1113, 17518, 15339, 504, 1983, 17519, 2]
+// Dependencies: [32, 19, 17, 1385, 10101, 21, 5140, 10102, 7126, 1113, 17851, 15625, 504, 2107, 17852, 2]
 // Exports: default
 
-// Module 17517 (AppIconRows)
+// Module 17850 (AppIconRows)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 19 */;
 import get_initialized from "get initialized" /* 504 */;
-import PremiumTypeUtils from "PremiumTypeUtils" /* 1983 */;
-import AppIconConstants from "AppIconConstants" /* 9979 */;
-import AppIconUtils from "AppIconUtils" /* 15339 */;
-import AppIconRowDefault from "AppIconRow" /* 17518 */;
-import HexagonCampaignAppIconSectionDefault from "HexagonCampaignAppIconSection" /* 17519 */;
+import PremiumTypeUtils from "PremiumTypeUtils" /* 2107 */;
+import AppIconConstants from "AppIconConstants" /* 10101 */;
+import AppIconUtils from "AppIconUtils" /* 15625 */;
+import AppIconRowDefault from "AppIconRow" /* 17851 */;
+import HexagonCampaignAppIconSectionDefault from "HexagonCampaignAppIconSection" /* 17852 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import UserStore from "UserStore" /* 1383 */;
+import UserStore from "UserStore" /* 1385 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 const react = react2;
@@ -27,7 +27,7 @@ let c9;
 let tmp2;
 let unpackModuleId;
 const intl4 = tmp2(1113);
-const AppIconTypes = tmp2(9980);
+const AppIconTypes = tmp2(10102);
 function BackwardsCompatibleAppIconRows(arg0) {
   let TableRowGroup;
   let _undefined;
@@ -66,7 +66,7 @@ function BackwardsCompatibleAppIconRows(arg0) {
         })
     };
     onLongPress(react.useState(false), 2);
-    TableRowGroup = merged(7060).TableRowGroup;
+    TableRowGroup = merged(7126).TableRowGroup;
     intl = merged(1113).intl;
     return closure_9(View, obj);
   }

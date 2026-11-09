@@ -1,26 +1,26 @@
-// Module ID: 16851
-// Function ID: 16852
+// Module ID: 17174
+// Function ID: 17175
 // Name: UserSettingsAuthedApps
-// Dependencies: [19, 17, 7276, 1072, 21, 5014, 575, 9746, 9050, 14623, 5735, 504, 1498, 7332, 5624, 1113, 1497, 6975, 9041, 7161, 7165, 2]
+// Dependencies: [19, 17, 7339, 1072, 21, 5140, 575, 9836, 9130, 14858, 5859, 504, 1500, 7393, 5751, 1113, 1499, 7038, 9121, 7223, 7227, 2]
 // Exports: AuthorizedAppRow, AuthorizedAppsEmpty, AuthorizedAppsHeader, DisclosureIcon, useAuthorizedApps
 
-// Module 16851 (UserSettingsAuthedApps)
+// Module 17174 (UserSettingsAuthedApps)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 5735 */;
-import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7161 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 7165 */;
-import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 7276 */;
-import TableRowApplicationIconDefault from "TableRowApplicationIcon" /* 9041 */;
-import GlobeEarthIcon from "GlobeEarthIcon" /* 9050 */;
-import applications from "applications" /* 9746 */;
-import EmbedIcon from "EmbedIcon" /* 14623 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 5859 */;
+import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7223 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 7227 */;
+import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 7339 */;
+import TableRowApplicationIconDefault from "TableRowApplicationIcon" /* 9121 */;
+import GlobeEarthIcon from "GlobeEarthIcon" /* 9130 */;
+import applications from "applications" /* 9836 */;
+import EmbedIcon from "EmbedIcon" /* 14858 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 const AuthorizedAppsStore = AuthorizedAppsStore2;
@@ -78,7 +78,7 @@ export function useAuthorizedApps() {
   });
   appAuthTokens = stateFromStoresObject.appAuthTokens;
   const fetchState = stateFromStoresObject.fetchState;
-  const obj2 = appAuthTokens(1498);
+  const obj2 = appAuthTokens(1500);
   const focusEffect = obj2.useFocusEffect(react.useCallback(() => {
     const obj = closure_1(dependencyMap[13]);
     return obj.fetch();
@@ -110,11 +110,11 @@ export function AuthorizedAppsHeader() {
   let items;
   const tmp = closure_12();
   const obj = { style: tmp.appListHeader, children: items };
-  const obj2 = { color: "text-strong", variant: "heading-md/semibold", children: intl.string(intl3.t["f6kk+r"]) };
+  const obj2 = { color: "text-strong", variant: "heading-sm/semibold", children: intl.string(intl3.t["f6kk+r"]) };
   const Heading = Text_Text.Heading;
   intl = intl3.intl;
   items = [authStore(Heading, obj2), ];
-  const obj3 = { style: tmp.headerDescription, color: "text-default", variant: "text-sm/normal", children: intl2.string(intl3.t.G9JfLg) };
+  const obj3 = { style: tmp.headerDescription, color: "text-default", variant: "body-sm/normal", children: intl2.string(intl3.t.G9JfLg) };
   const Text = Text_Text.Text;
   intl2 = intl3.intl;
   items[1] = authStore(Text, obj3);
@@ -129,7 +129,7 @@ export function AuthorizedAppsEmpty(loading) {
     const obj2 = { style: tmp.spinner, animating: true, size: "large" };
     tmp2Result = tmp2(hasOwnProperty, obj2);
   } else {
-    const obj = { color: "text-default", style: tmp.emptyText, variant: "text-sm/normal", children: intl.string(intl3.t["E+SM6T"]) };
+    const obj = { color: "text-default", style: tmp.emptyText, variant: "body-sm/normal", children: intl.string(intl3.t["E+SM6T"]) };
     const Text = Text_Text.Text;
     intl = intl3.intl;
     tmp2Result = tmp2(Text, obj);
@@ -143,7 +143,7 @@ export function AuthorizedAppRow(app) {
   let start;
   app = app.app;
   ({ start, end } = app);
-  let obj = app(1497);
+  let obj = app(1499);
   importDefault = obj.useNavigation();
   let obj2 = {
     icon: closure_10(TableRowApplicationIconDefault, obj3),
@@ -163,7 +163,7 @@ export function AuthorizedAppRow(app) {
     start,
     end
   };
-  const TableRow = app(6975).TableRow;
+  const TableRow = app(7038).TableRow;
   obj3 = { application: app.application };
   return closure_10(TableRow, obj2);
 }

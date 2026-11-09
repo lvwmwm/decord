@@ -1,9 +1,9 @@
-// Module ID: 6067
-// Function ID: 6068
+// Module ID: 6200
+// Function ID: 6201
 // Name: CheckpointTraitRarity
 // Dependencies: [2]
 
-// Module 6067 (CheckpointTraitRarity)
+// Module 6200 (CheckpointTraitRarity)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/CheckpointTraitRarity.tsx");

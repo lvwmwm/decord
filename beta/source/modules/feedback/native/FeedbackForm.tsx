@@ -1,18 +1,18 @@
-// Module ID: 10160
-// Function ID: 10161
+// Module ID: 10281
+// Function ID: 10282
 // Name: FeedbackForm
-// Dependencies: [32, 19, 10158, 21, 5014, 575, 6732, 12, 10161, 5593, 8177, 5624, 6977, 10162, 1113, 2]
+// Dependencies: [32, 19, 10279, 21, 5140, 575, 6787, 12, 10282, 5721, 8246, 5751, 7040, 10283, 1113, 2]
 // Exports: FeedbackForm
 
-// Module 10160 (FeedbackForm)
+// Module 10281 (FeedbackForm)
 import _modDef12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 10158 */;
-import FeedbackUtils from "FeedbackUtils" /* 10161 */;
+import Constants from "Constants" /* 10279 */;
+import FeedbackUtils from "FeedbackUtils" /* 10282 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;
@@ -96,7 +96,7 @@ export function FeedbackForm(otherKey) {
     if (first.rating !== FeedbackRating.GOOD) {
       let obj2 = { children: items2 };
       const Fragment2 = tmp5.Fragment;
-      let obj3 = { style: tmp.reasonsHeader, variant: "eyebrow", color: "text-default", children: reasonsHeaderLabel };
+      let obj3 = { style: tmp.reasonsHeader, variant: "body-sm/medium", color: "text-default", children: reasonsHeaderLabel };
       items2 = [c6(reasons(tmp3[11]).Text, obj3), ];
       const obj4 = { border: "subtle", style: tmp.reasonsList, children: tmp13 };
       items2[1] = c6(reasons(tmp3[12]).Card, obj4);
@@ -107,7 +107,7 @@ export function FeedbackForm(otherKey) {
   let Fragment = tmp5.Fragment;
   const tmp16 = first;
   if (null != ratingsBodyLabel) {
-    const obj5 = { style: tmp.ratingsLabel, variant: "heading-md/semibold", color: "text-default", children: ratingsBodyLabel };
+    const obj5 = { style: tmp.ratingsLabel, variant: "heading-sm/semibold", color: "text-default", children: ratingsBodyLabel };
     tmp17 = c6(reasons(tmp3[11]).Text, obj5);
   }
   const children = [tmp17, , , ];

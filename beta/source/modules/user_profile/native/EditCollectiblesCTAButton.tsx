@@ -1,54 +1,67 @@
-// Module ID: 8743
-// Function ID: 8744
+// Module ID: 8814
+// Function ID: 8815
 // Name: EditCollectiblesCTAButton
-// Dependencies: [19, 5015, 1074, 1621, 21, 5014, 1625, 504, 8744, 5095, 5637, 2047, 7732, 8745, 1113, 5260, 8746, 8747, 7719, 5258, 5634, 2]
+// Dependencies: [19, 5141, 1074, 1623, 21, 5140, 1627, 504, 8815, 1652, 5761, 2171, 7808, 8816, 1113, 5376, 8817, 8818, 7795, 5374, 5758, 2]
 
-// Module 8743 (EditCollectiblesCTAButton)
+// Module 8814 (EditCollectiblesCTAButton)
 import Fragment from "Fragment" /* 21 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
 import intl4 from "intl" /* 1113 */;
-import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1621 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 2047 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import HapticUtils from "HapticUtils" /* 5260 */;
-import spring from "spring" /* 5637 */;
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7719 */;
-import EditCollectiblesActionCreators from "EditCollectiblesActionCreators" /* 8746 */;
-import openProductDetailsActionSheet from "openProductDetailsActionSheet" /* 8747 */;
+import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1623 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 2171 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
+import HapticUtils from "HapticUtils" /* 5376 */;
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7795 */;
+import EditCollectiblesActionCreators from "EditCollectiblesActionCreators" /* 8817 */;
+import openProductDetailsActionSheet from "openProductDetailsActionSheet" /* 8818 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5015 */;
-import createStyles from "createStyles" /* 5014 */;
+import AccessibilityStore from "AccessibilityStore" /* 5141 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let closure_5 = CollectiblesShopConstants.CollectiblesMobileShopScreen;
 let closure_6 = MediaKeyboardConstants.MEDIA_PICKER_SEND_BUTTON_SPRING;
-const jsx = Fragment.jsx;
+let jsx = Fragment.jsx;
 let closure_8 = createStyles.createStyles({ buttonRowContainer: { flexGrow: 0, flexDirection: "row", justifyContent: "flex-end", paddingHorizontal: 12, height: 48 }, buttonContainer: { position: "absolute", bottom: 0, left: 0, right: 0, marginLeft: 24, marginRight: 24, flexDirection: "column", justifyContent: "flex-end" } });
-let __initData = { code: "function EditCollectiblesCTAButtonTsx1(){const{shouldShowButton,APPLY_BUTTON_BOUNCE_DISTANCE,APPLY_BUTTON_SCALE_TRANSITION,reducedMotion,withSpring,MEDIA_PICKER_SEND_BUTTON_SPRING}=this.__closure;const targetTranslateY=shouldShowButton.get()?0:APPLY_BUTTON_BOUNCE_DISTANCE;const targetScale=shouldShowButton.get()?1:APPLY_BUTTON_SCALE_TRANSITION;return{transform:[{translateY:reducedMotion?targetTranslateY:withSpring(targetTranslateY,MEDIA_PICKER_SEND_BUTTON_SPRING)},{scale:reducedMotion?targetScale:withSpring(targetScale,MEDIA_PICKER_SEND_BUTTON_SPRING)}]};}" };
-let closure_10 = { code: "function EditCollectiblesCTAButtonTsx2(){const{shouldShowButton}=this.__closure;return{pointerEvents:shouldShowButton.get()?'box-none':'none'};}" };
-const __initData2 = { code: "function EditCollectiblesCTAButtonTsx3(){const{shouldShowButton,reducedMotion,withSpring,MEDIA_PICKER_SEND_BUTTON_SPRING}=this.__closure;const targetOpacity=shouldShowButton.get()?1:0;return{opacity:reducedMotion?targetOpacity:withSpring(targetOpacity,{...MEDIA_PICKER_SEND_BUTTON_SPRING,overshootClamping:true})};}" };
+let closure_9 = { code: "(function EditCollectiblesCTAButtonTsx1(){let[shouldShowButton,APPLY_BUTTON_BOUNCE_DISTANCE,APPLY_BUTTON_SCALE_TRANSITION,reducedMotion,withSpring,MEDIA_PICKER_SEND_BUTTON_SPRING]=this.__closure;const targetTranslateY=shouldShowButton.get()?0:APPLY_BUTTON_BOUNCE_DISTANCE;const targetScale=shouldShowButton.get()?1:APPLY_BUTTON_SCALE_TRANSITION;return{transform:[{translateY:reducedMotion?targetTranslateY:withSpring(targetTranslateY,MEDIA_PICKER_SEND_BUTTON_SPRING)},{scale:reducedMotion?targetScale:withSpring(targetScale,MEDIA_PICKER_SEND_BUTTON_SPRING)}]};})" };
+let closure_10 = { code: "(function EditCollectiblesCTAButtonTsx2(){let[shouldShowButton]=this.__closure;return{pointerEvents:shouldShowButton.get()?'box-none':'none'};})" };
+let closure_11 = { code: "(function EditCollectiblesCTAButtonTsx3(){let[shouldShowButton,reducedMotion,withSpring,MEDIA_PICKER_SEND_BUTTON_SPRING]=this.__closure;const targetOpacity=shouldShowButton.get()?1:0;return{opacity:reducedMotion?targetOpacity:withSpring(targetOpacity,{...MEDIA_PICKER_SEND_BUTTON_SPRING,overshootClamping:true})};})" };
 const memoResult = react.memo(function EditCollectiblesCTAButton(user) {
   let Button;
   let View2;
-  let c9;
+  let closure_7;
   let isTryItOut;
-  let items4;
-  let items5;
-  let obj12;
+  let items10;
+  let items11;
+  let obj5;
   let onApply;
   let product;
   let purchase;
   let str;
+  let tmp11;
+  let tmp12;
+  let tmp13;
+  let tmp14;
+  let tmp15;
+  let tmp16;
+  let tmp17;
+  let tmp19;
+  let tmp20;
+  let tmp23;
+  let tmp24;
+  let tmp25;
+  let tmp26;
+  let tmp27;
   user = user.user;
   const currentSkuId = user.currentSkuId;
   const selectedSkuId = user.selectedSkuId;
   ({ isTryItOut, onApply } = user);
   const analyticsLocations = user.analyticsLocations;
   const analyticsSource = user.analyticsSource;
-  closure_8 = undefined;
-  __initData = undefined;
+  jsx = undefined;
+  let c8;
   let isShopStandalonePdpMobileEnabled;
-  let tmp = closure_8();
+  let tmp = c8();
   let tmp2 = currentSkuId;
   let tmp3 = selectedSkuId;
   const tmp4 = user;
@@ -65,117 +78,136 @@ const memoResult = react.memo(function EditCollectiblesCTAButton(user) {
   const effect = onApply.useEffect(() => {
     const result = sharedValue.set(selectedSkuId !== currentSkuId);
   }, items1);
-  let obj4 = user(selectedSkuId[9]);
-  class O {
+  const items2 = [isShopStandalonePdpMobileEnabled, sharedValue, 60, 0.9, stateFromStores, , ];
+  const useAnimatedStyle = user(selectedSkuId[9]).useAnimatedStyle;
+  const tmp9 = user(selectedSkuId[9]);
+  items2[5] = user(selectedSkuId[10]).withSpring;
+  items2[6] = sharedValue;
+  let c0;
+  let c1;
+  let c2;
+  let c3;
+  let c4;
+  let c5;
+  [tmp11, tmp12, tmp13, tmp14, tmp15, tmp16, tmp17] = items2;
+  class EditCollectiblesCTAButtonTsx1 {
     constructor() {
-      let num = 60;
-      const obj = sharedValue;
-      if (sharedValue.get()) {
-        num = 0;
+      let num = 0;
+      const obj = _undefined;
+      if (!_undefined.get()) {
+        num = c1;
       }
-      let num2 = 0.9;
-      if (obj.get()) {
-        num2 = 1;
+      let num2 = 1;
+      if (!obj.get()) {
+        num2 = c2;
       }
-      let withSpringResult = num;
-      if (!stateFromStores) {
-        const obj2 = spring;
-        withSpringResult = obj2.withSpring(num, closure_6);
+      let tmp2 = num;
+      if (!c3) {
+        tmp2 = _undefined2(num, c5);
       }
-      const transform = [{ translateY: withSpringResult }, ];
-      let withSpringResult1 = num2;
-      if (!stateFromStores) {
-        const obj3 = spring;
-        withSpringResult1 = obj3.withSpring(num2, closure_6);
+      const transform = [{ translateY: tmp2 }, ];
+      let tmp5 = num2;
+      if (!c3) {
+        tmp5 = _undefined2(num2, c5);
       }
-      transform[1] = { scale: withSpringResult1 };
+      transform[1] = { scale: tmp5 };
       return { transform };
     }
   }
-  let obj5 = { shouldShowButton: sharedValue, APPLY_BUTTON_BOUNCE_DISTANCE: 60, APPLY_BUTTON_SCALE_TRANSITION: 0.9, reducedMotion: stateFromStores, withSpring: user(selectedSkuId[10]).withSpring, MEDIA_PICKER_SEND_BUTTON_SPRING: stateFromStores };
-  O.__closure = obj5;
-  O.__workletHash = 15594859424201;
-  O.__initData = __initData;
-  const animatedStyle = obj4.useAnimatedStyle(O);
-  let obj6 = user(selectedSkuId[9]);
-  class M {
+  const items3 = [tmp12, tmp13, tmp14, tmp15, tmp16, tmp17];
+  EditCollectiblesCTAButtonTsx1.__closure = items3;
+  EditCollectiblesCTAButtonTsx1.__workletHash = 3346300187216;
+  EditCollectiblesCTAButtonTsx1.__initData = tmp11;
+  const animatedStyle = useAnimatedStyle(EditCollectiblesCTAButtonTsx1);
+  const items4 = [closure_10, sharedValue];
+  c0 = undefined;
+  [tmp19, tmp20] = items4;
+  const tmp10 = sharedValue;
+  const tmp4Result = tmp4(tmp3[9]);
+  class EditCollectiblesCTAButtonTsx2 {
     constructor() {
       let pointerEvents = "none";
-      if (sharedValue.get()) {
+      if (_undefined.get()) {
         pointerEvents = "box-none";
       }
       return { pointerEvents };
     }
   }
-  M.__closure = { shouldShowButton: sharedValue };
-  M.__workletHash = 16151141699021;
-  M.__initData = isShopStandalonePdpMobileEnabled;
-  const animatedProps = obj6.useAnimatedProps(M);
-  let obj7 = user(selectedSkuId[9]);
-  class R {
+  const items5 = [tmp20];
+  EditCollectiblesCTAButtonTsx2.__closure = items5;
+  EditCollectiblesCTAButtonTsx2.__workletHash = 2472922412820;
+  EditCollectiblesCTAButtonTsx2.__initData = tmp19;
+  const animatedProps = tmp4Result.useAnimatedProps(EditCollectiblesCTAButtonTsx2);
+  const items6 = [closure_11, sharedValue, stateFromStores, , ];
+  const useAnimatedStyle2 = tmp4(tmp3[9]).useAnimatedStyle;
+  tmp4(tmp3[9]);
+  items6[3] = tmp4(tmp3[10]).withSpring;
+  items6[4] = tmp10;
+  c0 = undefined;
+  c1 = undefined;
+  c2 = undefined;
+  c3 = undefined;
+  [tmp23, tmp24, tmp25, tmp26, tmp27] = items6;
+  class EditCollectiblesCTAButtonTsx3 {
     constructor() {
       let num = 0;
-      if (sharedValue.get()) {
+      if (_undefined.get()) {
         num = 1;
       }
       let opacity = num;
-      if (!stateFromStores) {
+      if (!c1) {
         const obj = { overshootClamping: true };
-        const withSpring = spring.withSpring;
-        spring;
-        const merged = Object.assign(closure_6);
-        opacity = withSpring(num, obj);
+        const merged = Object.assign(c3);
+        opacity = _undefined2(num, obj);
       }
       return { opacity };
     }
   }
-  R.__closure = { shouldShowButton: sharedValue, reducedMotion: stateFromStores, withSpring: user(selectedSkuId[10]).withSpring, MEDIA_PICKER_SEND_BUTTON_SPRING: stateFromStores };
-  R.__workletHash = 13351061137085;
-  R.__initData = __initData2;
-  ({ shouldShowButton: sharedValue, reducedMotion: stateFromStores, withSpring: user(selectedSkuId[10]).withSpring, MEDIA_PICKER_SEND_BUTTON_SPRING: stateFromStores });
-  const animatedStyle1 = obj7.useAnimatedStyle(R);
-  const obj9 = currentSkuId(selectedSkuId[11]);
-  const canUseCollectiblesResult = obj9.canUseCollectibles(user);
-  const obj10 = user(selectedSkuId[12]);
-  let result = obj10.isPremiumCollectiblesProduct(product);
+  const items7 = [tmp24, tmp25, tmp26, tmp27];
+  EditCollectiblesCTAButtonTsx3.__closure = items7;
+  EditCollectiblesCTAButtonTsx3.__workletHash = 13264991240196;
+  EditCollectiblesCTAButtonTsx3.__initData = tmp23;
+  const animatedStyle2 = useAnimatedStyle2(EditCollectiblesCTAButtonTsx3);
+  const tmp2Result = tmp2(tmp3[11]);
+  const canUseCollectiblesResult = tmp2Result.canUseCollectibles(user);
+  const tmp4Result7 = tmp4(tmp3[12]);
+  let result = tmp4Result7.isPremiumCollectiblesProduct(product);
   if (!result) {
-    const tmp4Result = tmp4(tmp3[12]);
-    result = tmp4Result.isPremiumCollectiblesPurchase(purchase);
+    const tmp4Result8 = tmp4(tmp3[12]);
+    result = tmp4Result8.isPremiumCollectiblesPurchase(purchase);
   }
   let result1 = !canUseCollectiblesResult;
   if (result1) {
-    const tmp4Result3 = tmp4(tmp3[12]);
-    result1 = tmp4Result3.isPremiumCollectiblesPurchase(purchase);
+    const tmp4Result9 = tmp4(tmp3[12]);
+    result1 = tmp4Result9.isPremiumCollectiblesPurchase(purchase);
   }
-  let tmp15 = null == selectedSkuId;
-  if (!tmp15) {
-    tmp15 = null != purchase && !result1;
-    const tmp16 = null != purchase && !result1;
+  let tmp32 = null == selectedSkuId;
+  if (!tmp32) {
+    tmp32 = null != purchase && !result1;
   }
-  if (!tmp15) {
-    tmp15 = result && isTryItOut;
-    const tmp17 = result && isTryItOut;
+  if (!tmp32) {
+    tmp32 = result && isTryItOut;
   }
-  closure_8 = tmp15;
+  jsx = tmp32;
   if (result) {
     result = !canUseCollectiblesResult;
   }
   if (result) {
     result = !isTryItOut;
   }
-  __initData = result;
-  const tmp4Result4 = tmp4(tmp3[13]);
-  isShopStandalonePdpMobileEnabled = tmp4Result4.useIsShopStandalonePdpMobileEnabled("edit_collectibles_cta_button");
-  const items2 = [tmp15, result, user];
-  const items3 = [tmp15, onApply, result, isShopStandalonePdpMobileEnabled, analyticsLocations, analyticsSource, selectedSkuId];
+  c8 = result;
+  const tmp4Result10 = tmp4(tmp3[13]);
+  isShopStandalonePdpMobileEnabled = tmp4Result10.useIsShopStandalonePdpMobileEnabled("edit_collectibles_cta_button");
+  const items8 = [tmp32, result, user];
+  const items9 = [tmp32, onApply, result, isShopStandalonePdpMobileEnabled, analyticsLocations, analyticsSource, selectedSkuId];
   const memo = obj3.useMemo(() => {
     let stringResult;
-    const tmp = closure_8;
+    const tmp = closure_7;
     if (tmp) {
       const intl3 = intl4.intl;
       stringResult = intl3.string(intl4.t.Jh8fJz);
     } else {
-      const tmp2 = c9;
+      const tmp2 = c8;
       if (tmp2) {
         let stringResult1;
         const obj = PremiumUtilsDefault;
@@ -195,15 +227,15 @@ const memoResult = react.memo(function EditCollectiblesCTAButton(user) {
       }
     }
     return stringResult;
-  }, items2);
+  }, items8);
   const callback = obj3.useCallback(() => {
-    const tmp = closure_8;
+    const tmp = closure_7;
     if (tmp) {
       const obj6 = HapticUtils;
       const result = obj6.triggerHapticFeedback(HapticUtils.HapticFeedbackTypes.IMPACT_MEDIUM);
       onApply();
     } else {
-      const tmp2 = c9;
+      const tmp2 = c8;
       if (tmp2) {
         const obj5 = EditCollectiblesActionCreators;
         const result1 = obj5.navigateToNitroManagement();
@@ -223,19 +255,19 @@ const memoResult = react.memo(function EditCollectiblesCTAButton(user) {
     }
     const obj7 = ActionSheetActionCreatorsDefault;
     obj7.hideActionSheet();
-  }, items3);
-  const obj11 = { style: items4, animatedProps, children: sharedValue(View2, obj12) };
-  items4 = [tmp.buttonContainer, animatedStyle1];
+  }, items9);
+  let obj4 = { style: items10, animatedProps, children: jsx(View2, obj5) };
+  items10 = [tmp.buttonContainer, animatedStyle2];
   const View = tmp2(tmp3[9]).View;
-  obj12 = { style: items5, pointerEvents: "box-none", children: sharedValue(Button, { variant: str, onPress: callback, size: "md", text: memo, grow: true }) };
-  items5 = [tmp.buttonRowContainer, animatedStyle, { marginBottom: bottom }];
+  obj5 = { style: items11, pointerEvents: "box-none", children: jsx(Button, { variant: str, onPress: callback, size: "md", text: memo, grow: true }) };
+  items11 = [tmp.buttonRowContainer, animatedStyle, { marginBottom: bottom }];
   View2 = tmp2(tmp3[9]).View;
   str = "primary";
   Button = tmp4(tmp3[20]).Button;
   if (result) {
     str = "active";
   }
-  return sharedValue(View, obj11);
+  return jsx(View, obj4);
 });
 let result = size.fileFinishedImporting("modules/user_profile/native/EditCollectiblesCTAButton.tsx");
 

@@ -1,12 +1,12 @@
-// Module ID: 19568
-// Function ID: 19569
+// Module ID: 15214
+// Function ID: 15215
 // Name: useGameRecords
-// Dependencies: [2014, 7480, 504, 1379, 2]
+// Dependencies: [2138, 7544, 504, 1380, 2]
 // Exports: default
 
-// Module 19568 (useGameRecords)
-import GlobalUtils from "GlobalUtils" /* 1379 */;
-import GameStore from "GameStore" /* 2014 */;
+// Module 15214 (useGameRecords)
+import GlobalUtils from "GlobalUtils" /* 1380 */;
+import GameStore from "GameStore" /* 2138 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

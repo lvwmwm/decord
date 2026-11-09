@@ -1,63 +1,70 @@
-// Module ID: 11241
-// Function ID: 11242
+// Module ID: 11381
+// Function ID: 11382
 // Name: VoicePanelDockConstants
-// Dependencies: [11223, 11242, 575, 2]
+// Dependencies: [11363, 11382, 575, 2]
 // Exports: getDockInset, getVoicePanelDockButtonsTop, getVoicePanelDockHeight
 
-// Module 11241 (VoicePanelDockConstants)
+// Module 11381 (VoicePanelDockConstants)
 import nativeDefault from "native" /* 575 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11223 */;
-import GestureConstants from "GestureConstants" /* 11242 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11363 */;
+import GestureConstants from "GestureConstants" /* 11382 */;
 import size from "module_2" /* 2 */;
 
+let tmp10;
+let tmp11;
+let tmp12;
+let tmp13;
+let tmp3;
+let tmp4;
+let tmp5;
+let tmp7;
+let tmp8;
+let tmp9;
 const IS_IOS = VoicePanelConstants.IS_IOS;
 const PULL_GESTURE_RESISTANCE = GestureConstants.PULL_GESTURE_RESISTANCE;
 const sm = nativeDefault.radii.sm;
 const PX_4 = nativeDefault.space.PX_4;
-const sum = nativeDefault.space.PX_24 + nativeDefault.space.PX_4;
-const map = sum;
-const PX_16 = nativeDefault.space.PX_16;
+let sum = nativeDefault.space.PX_24 + nativeDefault.space.PX_4;
+const items = [{ code: "(function getDockInset_VoicePanelDockConstantsTsx1(pressed){let[DOCK_PADDING_HORIZONTAL,DOCK_PADDING_HORIZONTAL_PRESSED]=this.__closure;return DOCK_PADDING_HORIZONTAL+(DOCK_PADDING_HORIZONTAL_PRESSED-DOCK_PADDING_HORIZONTAL)*pressed;})" }, sum, nativeDefault.space.PX_16];
+[tmp3, tmp4, tmp5] = items;
 function getDockInset(arg0) {
-  return map + (PX_16 - map) * arg0;
+  return c0 + (c1 - c0) * arg0;
 }
-getDockInset.__closure = { DOCK_PADDING_HORIZONTAL: sum, DOCK_PADDING_HORIZONTAL_PRESSED: PX_16 };
-getDockInset.__workletHash = 14458064168941;
-getDockInset.__initData = { code: "function getDockInset_VoicePanelDockConstantsTsx1(pressed){const{DOCK_PADDING_HORIZONTAL,DOCK_PADDING_HORIZONTAL_PRESSED}=this.__closure;return DOCK_PADDING_HORIZONTAL+(DOCK_PADDING_HORIZONTAL_PRESSED-DOCK_PADDING_HORIZONTAL)*pressed;}" };
+const items1 = [tmp4, tmp5];
+getDockInset.__closure = items1;
+getDockInset.__workletHash = 14543646828628;
+getDockInset.__initData = tmp3;
 const diff = nativeDefault.space.PX_16 - 4;
-let c3 = diff;
-const PX_24 = nativeDefault.space.PX_24;
+const items2 = [{ code: "(function getVoicePanelDockPaddingBottom_VoicePanelDockConstantsTsx2(safeAreaBottom){let[IS_IOS,DOCK_PADDING_BOTTOM_MIN]=this.__closure;return IS_IOS?DOCK_PADDING_BOTTOM_MIN:Math.max(DOCK_PADDING_BOTTOM_MIN,safeAreaBottom);})" }, IS_IOS, nativeDefault.space.PX_24];
+[tmp7, tmp8, tmp9] = items2;
 function getVoicePanelDockPaddingBottom(arg0) {
   let bound;
-  const tmp = IS_IOS;
+  const tmp = c0;
   if (tmp) {
-    bound = PX_24;
+    bound = c1;
   } else {
     const _Math = Math;
-    bound = Math.max(PX_24, arg0);
+    bound = Math.max(c1, arg0);
   }
   return bound;
 }
-getVoicePanelDockPaddingBottom.__closure = { IS_IOS, DOCK_PADDING_BOTTOM_MIN: PX_24 };
-getVoicePanelDockPaddingBottom.__workletHash = 11572795728510;
-getVoicePanelDockPaddingBottom.__initData = { code: "function getVoicePanelDockPaddingBottom_VoicePanelDockConstantsTsx2(safeAreaBottom){const{IS_IOS,DOCK_PADDING_BOTTOM_MIN}=this.__closure;return IS_IOS?DOCK_PADDING_BOTTOM_MIN:Math.max(DOCK_PADDING_BOTTOM_MIN,safeAreaBottom);}" };
+const items3 = [tmp8, tmp9];
+getVoicePanelDockPaddingBottom.__closure = items3;
+getVoicePanelDockPaddingBottom.__workletHash = 1051676343655;
+getVoicePanelDockPaddingBottom.__initData = tmp7;
+const items4 = [{ code: "(function getVoicePanelDockHeight_VoicePanelDockConstantsTsx3(safeAreaBottom){let[DOCK_PADDING_TOP,DOCK_ROW_HEIGHT,getVoicePanelDockPaddingBottom]=this.__closure;return DOCK_PADDING_TOP+DOCK_ROW_HEIGHT+getVoicePanelDockPaddingBottom(safeAreaBottom);})" }, diff, 40, getVoicePanelDockPaddingBottom];
+let c0;
+let c1;
+let c2;
+[tmp10, tmp11, tmp12, tmp13] = items4;
 function getVoicePanelDockHeight(arg0) {
-  if (typeof getVoicePanelDockPaddingBottom === "function") {
-    let bound;
-    const tmp2 = IS_IOS;
-    if (tmp2) {
-      bound = PX_24;
-    } else {
-      const _Math = Math;
-      bound = Math.max(PX_24, arg0);
-    }
-    return tmp + 40 + bound;
-  } else {
-    throw new TypeError("Trying to call a non-function");
-  }
+  const sum = c0 + c1;
+  return sum + _undefined(arg0);
 }
-getVoicePanelDockHeight.__closure = { DOCK_PADDING_TOP: diff, DOCK_ROW_HEIGHT: 40, getVoicePanelDockPaddingBottom };
-getVoicePanelDockHeight.__workletHash = 14003451949817;
-getVoicePanelDockHeight.__initData = { code: "function getVoicePanelDockHeight_VoicePanelDockConstantsTsx3(safeAreaBottom){const{DOCK_PADDING_TOP,DOCK_ROW_HEIGHT,getVoicePanelDockPaddingBottom}=this.__closure;return DOCK_PADDING_TOP+DOCK_ROW_HEIGHT+getVoicePanelDockPaddingBottom(safeAreaBottom);}" };
+const items5 = [tmp11, tmp12, tmp13];
+getVoicePanelDockHeight.__closure = items5;
+getVoicePanelDockHeight.__workletHash = 8239861783104;
+getVoicePanelDockHeight.__initData = tmp10;
 const PX_12 = nativeDefault.space.PX_12;
 const PX_8 = nativeDefault.space.PX_8;
 const result = 1 / PULL_GESTURE_RESISTANCE;
@@ -73,9 +80,10 @@ export { getDockInset };
 export const DOCK_PADDING_TOP = diff;
 export { getVoicePanelDockHeight };
 export function getVoicePanelDockButtonsTop(arg0) {
-  return arg0 - c3 - 4;
+  return arg0 - diff - 4;
 }
 export const DOCK_GAP = PX_12;
+export const DOCK_FADE_TIMING = { duration: 200 };
 export const DOCK_DRAG_HANDLE_WIDTH = 48;
 export const DOCK_DRAG_HANDLE_TOP = PX_8;
 export const DOCK_PULL_SNAP_DISTANCE = 160;

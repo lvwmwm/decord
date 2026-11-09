@@ -1,17 +1,17 @@
-// Module ID: 16626
-// Function ID: 16627
+// Module ID: 16948
+// Function ID: 16949
 // Name: AccountAgeGroupNonAdultSetting
-// Dependencies: [8432, 7955, 6729, 6726, 1113, 5693, 16579, 11540, 2]
+// Dependencies: [8503, 8024, 6784, 6781, 1113, 5817, 16901, 11685, 2]
 
-// Module 16626 (AccountAgeGroupNonAdultSetting)
+// Module 16948 (AccountAgeGroupNonAdultSetting)
 import intl3 from "intl" /* 1113 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5693 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 6726 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6729 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7955 */;
-import SettingsConstants from "SettingsConstants" /* 8432 */;
-import TinyBroncoSettingsPredicate from "TinyBroncoSettingsPredicate" /* 16579 */;
-import SettingBuilders from "SettingBuilders" /* 11540 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5817 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 6781 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6784 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8024 */;
+import SettingsConstants from "SettingsConstants" /* 8503 */;
+import AgeNoticeSettingsPredicate from "AgeNoticeSettingsPredicate" /* 16901 */;
+import SettingBuilders from "SettingBuilders" /* 11685 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
@@ -45,8 +45,8 @@ let obj = {
     const isVerifiedTeen = obj2.useIsVerifiedTeen();
     const obj3 = RegionalFeatureConfigUtils;
     let hasTeenDefaults = obj3.useHasTeenDefaults();
-    const obj4 = TinyBroncoSettingsPredicate;
-    const isTinyBroncoSettingsEnabled = obj4.useIsTinyBroncoSettingsEnabled();
+    const obj4 = AgeNoticeSettingsPredicate;
+    const isAgeNoticeSettingsEnabled = obj4.useIsAgeNoticeSettingsEnabled();
     if (hasTeenDefaults) {
       let tmp5 = !isAgeVerified;
       if (isAgeVerified) {
@@ -55,7 +55,7 @@ let obj = {
       hasTeenDefaults = tmp5;
     }
     if (hasTeenDefaults) {
-      hasTeenDefaults = !isTinyBroncoSettingsEnabled;
+      hasTeenDefaults = !isAgeNoticeSettingsEnabled;
     }
     return hasTeenDefaults;
   }

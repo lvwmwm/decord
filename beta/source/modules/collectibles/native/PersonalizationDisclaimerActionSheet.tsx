@@ -1,27 +1,25 @@
-// Module ID: 17865
-// Function ID: 17866
+// Module ID: 18201
+// Function ID: 18202
 // Name: PersonalizationDisclaimerActionSheet
-// Dependencies: [19, 1072, 21, 5014, 575, 5709, 2061, 5272, 5624, 1113, 6767, 5634, 8161, 5258, 2]
+// Dependencies: [19, 1072, 21, 5140, 575, 5834, 2185, 5388, 5751, 1113, 6822, 5758, 8231, 5374, 2]
 // Exports: default
 
-// Module 17865 (PersonalizationDisclaimerActionSheet)
+// Module 18201 (PersonalizationDisclaimerActionSheet)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl4 from "intl" /* 1113 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2061 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5272 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import components_Button_Button from "components/Button/Button" /* 5634 */;
-import LinkingDefault from "Linking" /* 5709 */;
-import ButtonGroup2 from "ButtonGroup" /* 6767 */;
-import LinkExternalSmallIcon2 from "LinkExternalSmallIcon" /* 8161 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2185 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5388 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import components_Button_Button from "components/Button/Button" /* 5758 */;
+import LinkingDefault from "Linking" /* 5834 */;
+import ButtonGroup2 from "ButtonGroup" /* 6822 */;
+import LinkExternalSmallIcon2 from "LinkExternalSmallIcon" /* 8231 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
-
-let BottomSheet;
 
 let hasOwnProperty;
 let metroRequire;
@@ -53,8 +51,8 @@ export default function PersonalizationDisclaimerActionSheet() {
     openURL(obj.getArticleURL(constants.DATA_USED_FOR_RECOMMENDED));
   }, []);
   let obj = { contentStyles: tmp.container, children: items };
-  BottomSheet = Sheet_BottomSheet.BottomSheet;
-  const obj2 = { variant: "heading-md/medium", color: "mobile-text-heading-primary", accessibilityRole: "header", style: tmp.header, children: intl.string(intl4.t.euks4U) };
+  const BottomSheet = Sheet_BottomSheet.BottomSheet;
+  const obj2 = { variant: "heading-sm/medium", color: "mobile-text-heading-primary", accessibilityRole: "header", style: tmp.header, children: intl.string(intl4.t.euks4U) };
   const Text = Text_Text.Text;
   intl = intl4.intl;
   items = [hasOwnProperty(Text, obj2), ];

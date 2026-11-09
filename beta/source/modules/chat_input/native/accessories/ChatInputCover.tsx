@@ -1,9 +1,9 @@
-// Module ID: 13811
-// Function ID: 13812
+// Module ID: 14045
+// Function ID: 14046
 // Name: ChatInputCover
-// Dependencies: [19, 17, 21, 5274, 1623, 2]
+// Dependencies: [19, 17, 21, 5390, 1625, 2]
 
-// Module 13811 (ChatInputCover)
+// Module 14045 (ChatInputCover)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -29,8 +29,8 @@ class ChatInputCover {
       let obj = {
         imperativeHandle() {
           let obj = {
-            focused(controlsSpecs) {
-              const tmp = closure_1_0 && controlsSpecs && closure_1_1 !== flag(keyboardType[4]).KeyboardTypes.SYSTEM && closure_1_3;
+            focused(setFocused) {
+              const tmp = closure_1_0 && setFocused && closure_1_1 !== flag(keyboardType[4]).KeyboardTypes.SYSTEM && closure_1_3;
               if (tmp) {
                 const obj = { type: flag(keyboardType[4]).KeyboardTypes.SYSTEM };
                 closure_1_2(obj);

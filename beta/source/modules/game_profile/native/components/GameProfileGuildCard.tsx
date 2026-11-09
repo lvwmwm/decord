@@ -1,23 +1,23 @@
-// Module ID: 9443
-// Function ID: 9444
+// Module ID: 9524
+// Function ID: 9525
 // Name: GameProfileGuildCard
-// Dependencies: [19, 17, 21, 575, 5014, 7112, 9438, 6957, 5624, 9306, 1187, 1113, 5634, 2]
+// Dependencies: [19, 17, 21, 575, 5140, 7183, 9519, 7020, 5751, 9387, 1187, 1113, 5758, 2]
 // Exports: GameProfileGuildCardSkeleton, default
 
-// Module 9443 (GameProfileGuildCard)
+// Module 9524 (GameProfileGuildCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import components_Button_Button from "components/Button/Button" /* 5634 */;
-import GuildIcon from "GuildIcon" /* 6957 */;
-import useIsWindowLargeDefault from "useIsWindowLarge" /* 7112 */;
-import GuildBadgeV2Default from "GuildBadgeV2" /* 9306 */;
-import GameProfileSkeleton from "GameProfileSkeleton" /* 9438 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import components_Button_Button from "components/Button/Button" /* 5758 */;
+import GuildIcon from "GuildIcon" /* 7020 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 7183 */;
+import GuildBadgeV2Default from "GuildBadgeV2" /* 9387 */;
+import GameProfileSkeleton from "GameProfileSkeleton" /* 9519 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 const GuildIconDefault = GuildIcon;
@@ -107,7 +107,7 @@ export default function GameProfileGuildCard(arg0) {
   items = [React3(View, obj4), ];
   const obj9 = { style: tmp.guildNameRow, children: items1 };
   items1 = [, ];
-  const obj10 = { style: tmp.guildName, variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: guild.name };
+  const obj10 = { style: tmp.guildName, variant: "body-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: guild.name };
   const obj7 = { style: tmp.guildInfo, children: items3 };
   const obj8 = { style: tmp.guildNameDescriptionContainer, children: items2 };
   items1[0] = React3(Text_Text.Text, obj10);
@@ -115,7 +115,7 @@ export default function GameProfileGuildCard(arg0) {
   const tmp8 = GuildBadgeV2Default;
   items1[1] = React3(tmp8, obj11);
   items2 = [hasOwnProperty(View, obj9), ];
-  const obj12 = { variant: "text-sm/medium", color: "text-default", lineClamp: 2, children: guild.description };
+  const obj12 = { variant: "body-sm/medium", color: "text-default", lineClamp: 2, children: guild.description };
   items2[1] = React3(Text_Text.Text, obj12);
   items3 = [hasOwnProperty(View, obj8), ];
   let tmp4Result = null;
@@ -124,8 +124,8 @@ export default function GameProfileGuildCard(arg0) {
     const obj14 = { style: tmp.memberCountContainer, children: items4 };
     const obj15 = { style: tmp.onlineEllipse };
     items4 = [React3(View, obj15), ];
-    const obj16 = { variant: "text-xs/normal", color: "text-default", children: intl.formatToPlainString(intl3.t["LC+S+m"], obj17) };
-    const Text = tmp7(5624).Text;
+    const obj16 = { variant: "body-xs/normal", color: "text-default", children: intl.formatToPlainString(intl3.t["LC+S+m"], obj17) };
+    const Text = tmp7(5751).Text;
     intl = tmp7(1113).intl;
     obj17 = { membersOnline: presenceCount };
     items4[1] = React3(Text, obj16);
@@ -137,8 +137,8 @@ export default function GameProfileGuildCard(arg0) {
     const obj18 = { style: tmp.memberCountContainer, children: items6 };
     const obj19 = { style: tmp.membersEllipse };
     items6 = [React3(View, obj19), ];
-    const obj20 = { variant: "text-xs/normal", color: "text-default", children: intl2.formatToPlainString(intl3.t.zRl6XR, obj39) };
-    const Text2 = tmp7(5624).Text;
+    const obj20 = { variant: "body-xs/normal", color: "text-default", children: intl2.formatToPlainString(intl3.t.zRl6XR, obj39) };
+    const Text2 = tmp7(5751).Text;
     intl2 = tmp7(1113).intl;
     obj39 = { count: memberCount };
     items6[1] = React3(Text2, obj20);

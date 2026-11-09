@@ -1,19 +1,19 @@
-// Module ID: 12197
-// Function ID: 12198
+// Module ID: 12369
+// Function ID: 12370
 // Name: ConjureNativeMarkdown
-// Dependencies: [19, 17, 21, 575, 5014, 12198, 5624, 12142, 12199, 2]
+// Dependencies: [19, 17, 21, 575, 5140, 12370, 5751, 12310, 12371, 2]
 // Exports: ConjureRevealedMarkdown
 
-// Module 12197 (ConjureNativeMarkdown)
+// Module 12369 (ConjureNativeMarkdown)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import conjureMarkup from "conjureMarkup" /* 12142 */;
-import ConjureMarkdownBlocks from "ConjureMarkdownBlocks" /* 12198 */;
-import useConjureRevealedText from "useConjureRevealedText" /* 12199 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import conjureMarkup from "conjureMarkup" /* 12310 */;
+import ConjureMarkdownBlocks from "ConjureMarkdownBlocks" /* 12370 */;
+import useConjureRevealedText from "useConjureRevealedText" /* 12371 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -39,7 +39,7 @@ class ConjureNativeMarkdown {
         let obj3;
         let tmp4;
         if ("text" === kind.kind) {
-          obj2 = { variant: "text-md/normal", color: "text-default", children: obj3.parseConjureMarkup(kind.text, true, obj) };
+          obj2 = { variant: "body-md/normal", color: "text-default", children: obj3.parseConjureMarkup(kind.text, true, obj) };
           let Text = Text_Text.Text;
           obj3 = conjureMarkup;
           tmp4 = React3(Text, obj2, index);
@@ -59,10 +59,10 @@ class ConjureNativeMarkdown {
                 obj2 = { paddingLeft: children.depth * PX_16 };
                 items[1] = obj2;
                 const obj3 = { style: closure_1_1.marker, children: closure_2_4(source(closure_1[6]).Text, obj4) };
-                obj4 = { variant: "text-md/normal", color: "text-default", children: children.marker };
+                obj4 = { variant: "body-md/normal", color: "text-default", children: children.marker };
                 items1 = [closure_2_4(View, obj3), ];
                 const obj5 = { style: closure_1_1.itemText, children: closure_2_4(Text, obj6) };
-                obj6 = { variant: "text-md/normal", color: "text-default", children: obj7.parseConjureMarkup(children.text, true, closure_2_7) };
+                obj6 = { variant: "body-md/normal", color: "text-default", children: obj7.parseConjureMarkup(children.text, true, closure_2_7) };
                 Text = source(closure_1[6]).Text;
                 obj7 = source(closure_1[7]);
                 items1[1] = closure_2_4(View, obj5);

@@ -1,16 +1,16 @@
-// Module ID: 16317
-// Function ID: 16318
+// Module ID: 16637
+// Function ID: 16638
 // Name: getEmbeddedActivityPopoutWindowKey
-// Dependencies: [2038, 7902, 4862, 5657, 1072, 2024, 5675, 4935, 504, 2]
+// Dependencies: [2162, 7979, 4988, 5781, 1072, 2148, 5799, 5061, 504, 2]
 // Exports: default, getEmbeddedActivityPopoutWindowKeyForApplication, getEmbeddedActivityPopoutWindowKeyForChannel, usePopoutWindowForActivity
 
-// Module 16317 (getEmbeddedActivityPopoutWindowKey)
+// Module 16637 (getEmbeddedActivityPopoutWindowKey)
 import Constants from "Constants" /* 1072 */;
-import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4935 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 5657 */;
-import ApplicationStore from "ApplicationStore" /* 2038 */;
-import PopoutWindowStore from "PopoutWindowStore" /* 7902 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4862 */;
+import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 5061 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 5781 */;
+import ApplicationStore from "ApplicationStore" /* 2162 */;
+import PopoutWindowStore from "PopoutWindowStore" /* 7979 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4988 */;
 import size from "module_2" /* 2 */;
 
 const ActivityPanelModes = ActivityPanelConstants.ActivityPanelModes;

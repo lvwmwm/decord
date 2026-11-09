@@ -1,8 +1,8 @@
-// Module ID: 13594
-// Function ID: 13595
+// Module ID: 13832
+// Function ID: 13833
 // Dependencies: [2]
 
-// Module 13594
+// Module 13832
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/rive/tex_outfit_14_magical_frost.webp.js");

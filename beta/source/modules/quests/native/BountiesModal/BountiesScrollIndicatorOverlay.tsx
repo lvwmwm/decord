@@ -1,26 +1,27 @@
-// Module ID: 16956
-// Function ID: 16957
+// Module ID: 17279
+// Function ID: 17280
 // Name: BountiesScrollIndicatorOverlay
-// Dependencies: [32, 19, 17, 21, 5257, 5014, 575, 5095, 5254, 5587, 16957, 5624, 1113, 2]
+// Dependencies: [32, 19, 17, 21, 5373, 5140, 575, 1652, 5370, 1705, 5715, 17280, 5751, 1113, 2]
 // Exports: default
 
-// Module 16956 (BountiesScrollIndicatorOverlay)
+// Module 17279 (BountiesScrollIndicatorOverlay)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
-import timing from "timing" /* 5254 */;
-import timingPresets from "timingPresets" /* 5257 */;
-import _slicedToArray_mod from "_slicedToArray" /* 32 */;
+import _modDef1652 from "module_1652" /* 1652 */;
+import timingPresets from "timingPresets" /* 5373 */;
+import LinearGradientDefault from "LinearGradient" /* 5715 */;
+import BountiesScrollIndicatorAnimationDefault from "BountiesScrollIndicatorAnimation" /* 17280 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
-let closure_0, dependencyMap;
+const require = globalThis.__r;
+let _require, closure_0;
 
 let metroImportDefault;
 let metroRequire;
-let _slicedToArray = _slicedToArray_mod;
 const StyleSheet = react_native.StyleSheet;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 const colors = ["rgba(0,0,0,0)", "rgba(0,0,0,0.7)", "rgba(0,0,0,1)"];
@@ -33,35 +34,53 @@ let closure_10 = createStyles.createStyles(() => {
   rect1 = { position: "absolute", bottom: 124, left: 0, right: 0, alignItems: "center", justifyContent: "flex-start", gap: nativeDefault.space.PX_8 };
   return obj;
 });
-const __initData = { code: "function BountiesScrollIndicatorOverlayTsx1(){const{withTiming,visible,enabled,timingSlow,timingStandard,runOnJS,animationCallbackJSThread}=this.__closure;return{opacity:withTiming(visible?1:0,enabled?timingSlow:timingStandard,'respect-motion-settings',function(){'worklet';runOnJS(animationCallbackJSThread)();})};}" };
-const __initData2 = { code: "function BountiesScrollIndicatorOverlayTsx2(){const{runOnJS,animationCallbackJSThread}=this.__closure;runOnJS(animationCallbackJSThread)();}" };
-const __initData3 = { code: "function BountiesScrollIndicatorOverlayTsx3(){const{withTiming,visible,isEndCardVisible,enabled,timingStandard,timingSlow}=this.__closure;return{opacity:withTiming(visible&&!isEndCardVisible?1:0,isEndCardVisible||!enabled?timingStandard:timingSlow)};}" };
-const __initData4 = { code: "function BountiesScrollIndicatorOverlayTsx4(){const{withTiming,visible,timingStandard}=this.__closure;return{transform:[{scale:withTiming(visible?1:0.9,timingStandard)}]};}" };
+let closure_11 = { code: "(function BountiesScrollIndicatorOverlayTsx1(){let[scheduleOnRN,animationCallbackJSThread]=this.__closure;scheduleOnRN(animationCallbackJSThread);})" };
+let closure_12 = { code: "(function BountiesScrollIndicatorOverlayTsx2(){let[withTiming,visible,enabled,timingSlow,timingStandard,_worklet_14195002390100_init_data,scheduleOnRN,animationCallbackJSThread]=this.__closure;return{opacity:withTiming(visible?1:0,enabled?timingSlow:timingStandard,'respect-motion-settings',function BountiesScrollIndicatorOverlayTsx1Factory([_worklet_14195002390100_init_data,scheduleOnRN,animationCallbackJSThread]){const BountiesScrollIndicatorOverlayTsx1=function(){scheduleOnRN(animationCallbackJSThread);};BountiesScrollIndicatorOverlayTsx1.__closure=[scheduleOnRN,animationCallbackJSThread];BountiesScrollIndicatorOverlayTsx1.__workletHash=14195002390100;BountiesScrollIndicatorOverlayTsx1.__initData=_worklet_14195002390100_init_data;return BountiesScrollIndicatorOverlayTsx1;}([_worklet_14195002390100_init_data,scheduleOnRN,animationCallbackJSThread]))};})" };
+let closure_13 = { code: "(function BountiesScrollIndicatorOverlayTsx3(){let[withTiming,visible,isEndCardVisible,enabled,timingStandard,timingSlow]=this.__closure;return{opacity:withTiming(visible&&!isEndCardVisible?1:0,isEndCardVisible||!enabled?timingStandard:timingSlow)};})" };
+let closure_14 = { code: "(function BountiesScrollIndicatorOverlayTsx4(){let[withTiming,visible,timingStandard]=this.__closure;return{transform:[{scale:withTiming(visible?1:0.9,timingStandard)}]};})" };
 const result = size.fileFinishedImporting("modules/quests/native/BountiesModal/BountiesScrollIndicatorOverlay.tsx");
 
 export default function BountiesScrollIndicatorOverlay(enabled) {
-  let closure_2;
-  let closure_3;
   let first;
   let intl;
-  let items1;
-  let items2;
-  let items3;
-  let items4;
-  let items6;
-  let obj10;
+  let isEndCardVisible;
+  let items10;
+  let items12;
+  let items7;
+  let items8;
+  let items9;
+  let obj4;
+  let opacityStyle;
+  let tmp21;
+  let tmp22;
+  let tmp23;
+  let tmp24;
+  let tmp25;
+  let tmp26;
+  let tmp27;
+  let tmp28;
+  let tmp29;
+  let tmp32;
+  let tmp33;
+  let tmp34;
+  let tmp35;
+  let tmp36;
+  let tmp37;
+  let tmp38;
+  let tmp41;
+  let tmp42;
+  let tmp43;
+  let tmp44;
   let tmp5;
   enabled = enabled.enabled;
-  const isEndCardVisible = enabled.isEndCardVisible;
-  dependencyMap = undefined;
-  _slicedToArray = undefined;
-  animationCallbackJSThread = undefined;
-  const opacityStyle = enabled.opacityStyle;
+  _require = undefined;
+  ({ isEndCardVisible, opacityStyle } = enabled);
   let tmp = closure_10();
-  let obj = animationCallbackJSThread;
-  [first, tmp5] = animationCallbackJSThread.useState(true);
+  let obj = react;
+  let tmp2 = _slicedToArray;
+  [first, tmp5] = react.useState(true);
   let closure_1 = tmp5;
-  let tmp6 = _slicedToArray(animationCallbackJSThread.useState(enabled), 2);
+  const tmp6 = _slicedToArray(react.useState(enabled), 2);
   if (enabled !== tmp6[0]) {
     tmp6[1](enabled);
     if (enabled) {
@@ -71,135 +90,182 @@ export default function BountiesScrollIndicatorOverlay(enabled) {
   let items = [enabled];
   const effect = obj.useEffect(() => {
     let timeout;
-    const f139670 = () => {
-      isEndCardVisible(closure_0);
+    const f142798 = () => {
+      importDefault(closure_0);
       closure_0 = !closure_0;
       let num = 5000;
       const _setTimeout = setTimeout;
       if (closure_0) {
         num = closure_2_9;
       }
-      enabled = _setTimeout(f139670, num);
+      enabled = _setTimeout(f142798, num);
     };
     const tmp = timeout;
     if (tmp) {
       let c0 = false;
       let _setTimeout = setTimeout;
-      timeout = setTimeout(f139670, closure_1_9);
+      timeout = setTimeout(f142798, closure_1_9);
       return () => clearTimeout(closure_0);
     }
   }, items);
-  dependencyMap = tmp10;
-  const tmp2Result = _slicedToArray(obj.useState(enabled && first), 2);
-  _slicedToArray = tmp13;
+  const tmp2Result = tmp2(obj.useState(enabled && first), 2);
+  _require = tmp13;
   const first1 = tmp2Result[0];
-  const tmp2Result2 = _slicedToArray(obj.useState(enabled && first), 2);
+  const tmp2Result2 = tmp2(obj.useState(enabled && first), 2);
   if ((enabled && first) !== tmp2Result2[0]) {
     tmp2Result2[1](enabled && first);
     if (enabled && first) {
       tmp2Result[1](true);
     }
   }
-  animationCallbackJSThread = obj.useCallback(() => {
-    closure_3(false);
+  const callback = obj.useCallback(() => {
+    closure_0(false);
   }, []);
-  const obj2 = enabled(5095);
-  class E {
+  let items1 = [closure_12, , , , , , , , ];
+  const useAnimatedStyle = require("module_1652").useAnimatedStyle;
+  require("module_1652");
+  items1[1] = require("timing/timing").withTiming;
+  items1[2] = enabled && first;
+  items1[3] = enabled;
+  items1[4] = require("timingPresets").timingSlow;
+  items1[5] = require("timingPresets").timingStandard;
+  items1[6] = closure_11;
+  items1[7] = require("module_1705").scheduleOnRN;
+  items1[8] = callback;
+  let c0;
+  let c1;
+  let c2;
+  let c3;
+  let c4;
+  let c5;
+  let c6;
+  let c7;
+  [tmp21, tmp22, tmp23, tmp24, tmp25, tmp26, tmp27, tmp28, tmp29] = items1;
+  class BountiesScrollIndicatorOverlayTsx2 {
     constructor() {
-      let fn;
+      let tmp3;
+      let tmp4;
       let tmp5;
       let num = 0;
-      const withTiming = timing.withTiming;
-      timing;
-      if (closure_2) {
+      const tmp = c0;
+      if (c1) {
         num = 1;
       }
-      const tmpResult = timingPresets;
-      let obj = { opacity: withTiming(num, tmp5, "respect-motion-settings", fn) };
-      fn = function t() {
-        const obj = enabled(closure_2[7]);
-        obj.runOnJS(animationCallbackJSThread)();
-      };
-      tmp5 = enabled ? tmpResult.timingSlow : tmpResult.timingStandard;
-      fn.__closure = { runOnJS: ReanimatedRexport.runOnJS, animationCallbackJSThread };
-      fn.__workletHash = 7847207274031;
-      fn.__initData = __initData;
-      ({ runOnJS: ReanimatedRexport.runOnJS, animationCallbackJSThread });
+      const items = [, , ];
+      const tmp2 = c2 ? c3 : c4;
+      items[0] = c5;
+      items[1] = c6;
+      items[2] = c7;
+      [tmp3, tmp4, tmp5] = items;
+      const obj = { opacity: tmp(num, tmp2, "respect-motion-settings", BountiesScrollIndicatorOverlayTsx1) };
+      class BountiesScrollIndicatorOverlayTsx1 {
+        constructor() {
+          tmp = closure_0(closure_1);
+          return;
+        }
+      }
+      const items1 = [tmp4, tmp5];
+      BountiesScrollIndicatorOverlayTsx1.__closure = items1;
+      BountiesScrollIndicatorOverlayTsx1.__workletHash = 14195002390100;
+      BountiesScrollIndicatorOverlayTsx1.__initData = tmp3;
       return obj;
     }
   }
-  E.__closure = { withTiming: enabled(5254).withTiming, visible: enabled && first, enabled, timingSlow: enabled(5257).timingSlow, timingStandard: enabled(5257).timingStandard, runOnJS: enabled(5095).runOnJS, animationCallbackJSThread };
-  E.__workletHash = 2813930896935;
-  E.__initData = __initData;
-  ({ withTiming: enabled(5254).withTiming, visible: enabled && first, enabled, timingSlow: enabled(5257).timingSlow, timingStandard: enabled(5257).timingStandard, runOnJS: enabled(5095).runOnJS, animationCallbackJSThread });
-  const animatedStyle = obj2.useAnimatedStyle(E);
-  let fn = function j() {
-    let num = 0;
-    const withTiming = timing.withTiming;
-    timing;
-    if (closure_2) {
-      num = 0;
-      if (!isEndCardVisible) {
-        num = 1;
+  const items2 = [tmp22, tmp23, tmp24, tmp25, tmp26, tmp27, tmp28, tmp29];
+  BountiesScrollIndicatorOverlayTsx2.__closure = items2;
+  BountiesScrollIndicatorOverlayTsx2.__workletHash = 4007229602387;
+  BountiesScrollIndicatorOverlayTsx2.__initData = tmp21;
+  const animatedStyle = useAnimatedStyle(BountiesScrollIndicatorOverlayTsx2);
+  const items3 = [closure_13, , , , , , ];
+  const useAnimatedStyle2 = require("module_1652").useAnimatedStyle;
+  require("module_1652");
+  items3[1] = require("timing/timing").withTiming;
+  items3[2] = enabled && first;
+  items3[3] = isEndCardVisible;
+  items3[4] = enabled;
+  items3[5] = require("timingPresets").timingStandard;
+  items3[6] = require("timingPresets").timingSlow;
+  c0 = undefined;
+  c1 = undefined;
+  c2 = undefined;
+  c3 = undefined;
+  c4 = undefined;
+  c5 = undefined;
+  [tmp32, tmp33, tmp34, tmp35, tmp36, tmp37, tmp38] = items3;
+  class BountiesScrollIndicatorOverlayTsx3 {
+    constructor() {
+      let num = 0;
+      const tmp = c0;
+      if (c1) {
+        num = 0;
+        if (!c2) {
+          num = 1;
+        }
       }
-    }
-    const tmp5 = isEndCardVisible;
-    if (!tmp5) {
-      let timingStandard;
-      const tmp6 = enabled;
-      if (tmp6) {
-        timingStandard = tmp(5257).timingSlow;
+      const tmp3 = c2;
+      if (!tmp3) {
+        let tmp5;
+        const tmp4 = c3;
+        if (tmp4) {
+          tmp5 = c5;
+        }
+        const obj = { opacity: tmp(num, tmp5) };
+        return obj;
       }
-      const obj = { opacity: withTiming(num, timingStandard) };
-      return obj;
+      tmp5 = c4;
     }
-    timingStandard = tmp(5257).timingStandard;
-  };
-  const obj4 = enabled(5095);
-  fn.__closure = { withTiming: enabled(5254).withTiming, visible: enabled && first, isEndCardVisible, enabled, timingStandard: enabled(5257).timingStandard, timingSlow: enabled(5257).timingSlow };
-  fn.__workletHash = 12172713560290;
-  fn.__initData = __initData3;
-  ({ withTiming: enabled(5254).withTiming, visible: enabled && first, isEndCardVisible, enabled, timingStandard: enabled(5257).timingStandard, timingSlow: enabled(5257).timingSlow });
-  const animatedStyle1 = obj4.useAnimatedStyle(fn);
-  const obj6 = enabled(5095);
-  class A {
+  }
+  const items4 = [tmp33, tmp34, tmp35, tmp36, tmp37, tmp38];
+  BountiesScrollIndicatorOverlayTsx3.__closure = items4;
+  BountiesScrollIndicatorOverlayTsx3.__workletHash = 17526580643643;
+  BountiesScrollIndicatorOverlayTsx3.__initData = tmp32;
+  const animatedStyle2 = useAnimatedStyle2(BountiesScrollIndicatorOverlayTsx3);
+  const items5 = [closure_14, , , ];
+  const useAnimatedStyle3 = require("module_1652").useAnimatedStyle;
+  require("module_1652");
+  items5[1] = require("timing/timing").withTiming;
+  items5[2] = enabled && first;
+  items5[3] = require("timingPresets").timingStandard;
+  c0 = undefined;
+  c1 = undefined;
+  c2 = undefined;
+  [tmp41, tmp42, tmp43, tmp44] = items5;
+  class BountiesScrollIndicatorOverlayTsx4 {
     constructor() {
       let items;
       let num = 0.9;
-      const withTiming = timing.withTiming;
-      timing;
-      if (closure_2) {
+      if (c1) {
         num = 1;
       }
       const obj = { transform: items };
-      items = [{ scale: withTiming(num, tmp(5257).timingStandard) }];
-      ({ scale: withTiming(num, timingPresets.timingStandard) });
+      items = [{ scale: tmp(num, c2) }];
+      ({ scale: _undefined(num, c2) });
       return obj;
     }
   }
-  A.__closure = { withTiming: enabled(5254).withTiming, visible: enabled && first, timingStandard: enabled(5257).timingStandard };
-  A.__workletHash = 4041303236067;
-  A.__initData = __initData4;
-  ({ withTiming: enabled(5254).withTiming, visible: enabled && first, timingStandard: enabled(5257).timingStandard });
-  const animatedStyle2 = obj6.useAnimatedStyle(A);
-  const obj8 = { style: items1, pointerEvents: "none", children: items3 };
-  items1 = [tmp.scrollIndicator, opacityStyle];
-  const View = isEndCardVisible(5095).View;
-  const obj9 = { style: items2, children: closure_6(isEndCardVisible(5587), obj10) };
-  items2 = [StyleSheet.absoluteFill, animatedStyle1];
-  const View2 = isEndCardVisible(5095).View;
-  obj10 = { colors, style: StyleSheet.absoluteFill };
-  items3 = [closure_6(View2, obj9), ];
-  const obj11 = { style: items4, children: items6 };
-  items4 = [tmp.scrollIndicatorContent, ];
-  const items5 = [animatedStyle, animatedStyle2];
-  items4[1] = items5;
-  const View3 = isEndCardVisible(5095).View;
-  items6 = [closure_6(isEndCardVisible(16957), { visible: enabled && first, isFadingInContent: first1 }), ];
-  const obj12 = { variant: "text-sm/semibold", color: "text-default", style: tmp.scrollIndicatorText, children: intl.string(enabled(1113).t.eafsh4) };
-  const Text = enabled(5624).Text;
-  intl = enabled(1113).intl;
-  items6[1] = closure_6(Text, obj12);
-  items3[1] = closure_7(View3, obj11);
-  return closure_7(View, obj8);
+  const items6 = [tmp42, tmp43, tmp44];
+  BountiesScrollIndicatorOverlayTsx4.__closure = items6;
+  BountiesScrollIndicatorOverlayTsx4.__workletHash = 12953435859578;
+  BountiesScrollIndicatorOverlayTsx4.__initData = tmp41;
+  const animatedStyle3 = useAnimatedStyle3(BountiesScrollIndicatorOverlayTsx4);
+  const obj2 = { style: items7, pointerEvents: "none", children: items9 };
+  items7 = [tmp.scrollIndicator, opacityStyle];
+  const View = _modDef1652.View;
+  const obj3 = { style: items8, children: closure_6(LinearGradientDefault, obj4) };
+  items8 = [StyleSheet.absoluteFill, animatedStyle2];
+  const View2 = _modDef1652.View;
+  obj4 = { colors, style: StyleSheet.absoluteFill };
+  items9 = [closure_6(View2, obj3), ];
+  const obj5 = { style: items10, children: items12 };
+  items10 = [tmp.scrollIndicatorContent, ];
+  const items11 = [animatedStyle, animatedStyle3];
+  items10[1] = items11;
+  const View3 = _modDef1652.View;
+  items12 = [closure_6(BountiesScrollIndicatorAnimationDefault, { visible: enabled && first, isFadingInContent: first1 }), ];
+  const obj6 = { variant: "body-sm/semibold", color: "text-default", style: tmp.scrollIndicatorText, children: intl.string(require("intl").t.eafsh4) };
+  const Text = tmp18(5751).Text;
+  intl = tmp18(1113).intl;
+  items12[1] = closure_6(Text, obj6);
+  items9[1] = closure_7(View3, obj5);
+  return closure_7(View, obj2);
 };

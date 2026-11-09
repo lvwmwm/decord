@@ -1,27 +1,30 @@
-// Module ID: 13698
-// Function ID: 13699
+// Module ID: 13928
+// Function ID: 13929
 // Name: react
 // Dependencies: [19, 2]
 // Exports: useAutoSelectTraitOption
 
-// Module 13698 (react)
+// Module 13928 (react)
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/checkpoint/hooks/useAutoSelectTraitOption.tsx");
 
-export function useAutoSelectTraitOption(paused) {
+export function useAutoSelectTraitOption(isPaused) {
   let availableTraitOptions;
   let closure_129_0;
   let onSelectOption;
-  ({ availableTraitOptions, selectedOptionId: closure_129_0, onSelectOption } = paused);
-  paused = paused.paused;
+  ({ availableTraitOptions, selectedOptionId: closure_129_0, onSelectOption } = isPaused);
+  let flag = isPaused.isPaused;
+  if (flag === undefined) {
+    flag = false;
+  }
   const first = availableTraitOptions[0];
   const someResult = availableTraitOptions.some((optionId) => optionId.optionId === closure_1_0);
   let c4 = someResult;
-  const items = [first, someResult, onSelectOption, paused];
+  const items = [first, someResult, onSelectOption, flag];
   const effect = react.useEffect(() => {
-    const tmp = paused || null == first || c4;
+    const tmp = flag || null == first || c4;
     if (!tmp) {
       onSelectOption(first.trait, first.optionId);
     }

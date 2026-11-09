@@ -1,10 +1,10 @@
-// Module ID: 7841
-// Function ID: 7842
+// Module ID: 7917
+// Function ID: 7918
 // Name: InteractionObserverUtils
 // Dependencies: [2]
 // Exports: getIntersectionObserver, unwatch, watch
 
-// Module 7841 (InteractionObserverUtils)
+// Module 7917 (InteractionObserverUtils)
 import size from "module_2" /* 2 */;
 
 let set;
@@ -44,8 +44,8 @@ export function getIntersectionObserver(current) {
   }
   return value;
 }
-export function watch(current2, current, current22) {
-  weakMap = weakMap1.get(current2);
+export function watch(observe, arg1, arg2) {
+  weakMap = weakMap1.get(observe);
   const obj = weakMap1;
   if (weakMap == null) {
     const _WeakMap = WeakMap;
@@ -53,14 +53,14 @@ export function watch(current2, current, current22) {
     const self2 = this;
     weakMap = new WeakMap();
   }
-  if (!weakMap.has(current)) {
-    current2.observe(current);
+  if (!weakMap.has(arg1)) {
+    observe.observe(arg1);
   }
-  const result = weakMap.set(current, current2);
-  const result1 = obj.set(current2, weakMap);
+  const result = weakMap.set(arg1, arg2);
+  const result1 = obj.set(observe, weakMap);
 }
-export function unwatch(current2, current) {
-  weakMap = weakMap1.get(current2);
+export function unwatch(unobserve, arg1) {
+  weakMap = weakMap1.get(unobserve);
   const obj = weakMap1;
   if (weakMap == null) {
     const _WeakMap = WeakMap;
@@ -68,9 +68,9 @@ export function unwatch(current2, current) {
     const self2 = this;
     weakMap = new WeakMap();
   }
-  if (weakMap.has(current)) {
-    weakMap.delete(current);
-    current2.unobserve(current);
-    const result = obj.set(current2, weakMap);
+  if (weakMap.has(arg1)) {
+    weakMap.delete(arg1);
+    unobserve.unobserve(arg1);
+    const result = obj.set(unobserve, weakMap);
   }
 }

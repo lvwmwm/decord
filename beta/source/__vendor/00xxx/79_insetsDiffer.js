@@ -5,7 +5,7 @@
 // Exports: default
 
 // Module 79 (insetsDiffer)
-let closure_0 = { top: "Array", left: "t", right: "isArray", bottom: "Button" };
+let closure_0 = { top: "add", left: "sa", right: "paddingHorizontal", bottom: "Array" };
 
 export default function insetsDiffer(arg0, arg1) {
   const rect = arg0 || closure_0;

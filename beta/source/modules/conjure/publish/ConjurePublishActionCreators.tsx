@@ -1,21 +1,21 @@
-// Module ID: 10941
-// Function ID: 10942
+// Module ID: 11075
+// Function ID: 11076
 // Name: ConjurePublishActionCreators
-// Dependencies: [5, 1383, 6844, 10867, 1072, 10873, 1282, 10875, 572, 8752, 10942, 10900, 10944, 2]
+// Dependencies: [5, 1385, 6899, 10987, 1072, 10993, 1282, 10996, 572, 8823, 11076, 11026, 11078, 2]
 // Exports: refreshPreviewApplication, refreshPublishedProject, trackPublishFailed, unpublishUserApp
 
-// Module 10941 (ConjurePublishActionCreators)
+// Module 11075 (ConjurePublishActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
-import ConjureAnalytics from "ConjureAnalytics" /* 10873 */;
-import ConjureActionCreators from "ConjureActionCreators" /* 10875 */;
-import ConjurePreviewActionCreators from "ConjurePreviewActionCreators" /* 10900 */;
-import ApplicationWidgetConfigActions from "ApplicationWidgetConfigActions" /* 10942 */;
-import conjureLiveRelaunch from "conjureLiveRelaunch" /* 10944 */;
+import ConjureAnalytics from "ConjureAnalytics" /* 10993 */;
+import ConjureActionCreators from "ConjureActionCreators" /* 10996 */;
+import ConjurePreviewActionCreators from "ConjurePreviewActionCreators" /* 11026 */;
+import ApplicationWidgetConfigActions from "ApplicationWidgetConfigActions" /* 11076 */;
+import conjureLiveRelaunch from "conjureLiveRelaunch" /* 11078 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserStore from "UserStore" /* 1383 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6844 */;
-import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 10867 */;
+import UserStore from "UserStore" /* 1385 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6899 */;
+import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 10987 */;
 import size from "module_2" /* 2 */;
 
 let also_remove_preview_bot, closure_4, ok;
@@ -42,7 +42,7 @@ let obj = function _unpublishProject() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -134,7 +134,7 @@ obj = function _unpublishUserApp() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -222,7 +222,7 @@ obj = function _refreshPublishedProject() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -360,7 +360,7 @@ obj = function _refreshPublishedProject() {
             return obj;
           }
           c5 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp53) {
         c5 = 3;
@@ -389,7 +389,7 @@ obj = function _refreshPublishedApplication() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -431,7 +431,7 @@ obj = function _refreshPublishedApplication() {
               closure_132_14(applicationId, closure_1, closure_2);
             }
             c6 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp15) {
           c6 = 3;
@@ -442,7 +442,7 @@ obj = function _refreshPublishedApplication() {
   });
   return obj(...arguments);
 };
-function reloadAfterPublish(application_id, arg1, integrationInstalled) {
+function reloadAfterPublish(applicationId, arg1, integrationInstalled) {
   const tmp = arg1;
   if (tmp) {
     integrationInstalled = undefined;
@@ -452,11 +452,11 @@ function reloadAfterPublish(application_id, arg1, integrationInstalled) {
     const tmp8 = true !== integrationInstalled || integrationInstalled.botPermissionsChanged;
     if (!tmp8) {
       const obj2 = conjureLiveRelaunch;
-      const result = obj2.reloadAppFramesAfterDeploy(application_id);
+      const result = obj2.reloadAppFramesAfterDeploy(applicationId);
     }
   } else {
     obj = ConjurePreviewActionCreators;
-    const result1 = obj.reloadConjureAppFrames(application_id);
+    const result1 = obj.reloadConjureAppFrames(applicationId);
   }
 }
 const Endpoints = Constants.Endpoints;

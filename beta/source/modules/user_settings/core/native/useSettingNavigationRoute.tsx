@@ -1,11 +1,11 @@
-// Module ID: 7164
-// Function ID: 7165
+// Module ID: 7226
+// Function ID: 7227
 // Name: useSettingNavigationRoute
-// Dependencies: [1498, 2]
+// Dependencies: [1500, 2]
 // Exports: useSettingNavigationRoute
 
-// Module 7164 (useSettingNavigationRoute)
-import Link from "Link" /* 1498 */;
+// Module 7226 (useSettingNavigationRoute)
+import Link from "Link" /* 1500 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/user_settings/core/native/useSettingNavigationRoute.tsx");

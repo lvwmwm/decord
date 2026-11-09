@@ -1,10 +1,10 @@
-// Module ID: 10222
-// Function ID: 10223
+// Module ID: 10341
+// Function ID: 10342
 // Name: react
 // Dependencies: [19, 2]
 // Exports: usePressEmojiHandler, usePressGIFHandler
 
-// Module 10222 (react)
+// Module 10341 (react)
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

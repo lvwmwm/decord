@@ -1,112 +1,72 @@
 // Module ID: 8102
 // Function ID: 8103
-// Dependencies: [41, 42, 93, 95, 98, 19, 17, 21, 8044, 8103, 8046, 8055]
+// Dependencies: [8103, 8104, 8207, 8208, 8210, 8211, 8125]
 
 // Module 8102
-import react_native from "react-native" /* 17 */;
-import Fragment from "Fragment" /* 21 */;
-import extractViewBox from "extractViewBox" /* 8044 */;
-import extractProps from "extractProps" /* 8046 */;
-import multiplyMatricesDefault from "multiplyMatrices" /* 8055 */;
-import _modDef8103 from "module_8103" /* 8103 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
-import _createClass from "_createClass" /* 42 */;
-import _possibleConstructorReturn from "_possibleConstructorReturn" /* 93 */;
-import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
-import _inherits from "_inherits" /* 98 */;
-import react from "react" /* 19 */;
+import _mod8103 from "module_8103" /* 8103 */;
+import Circle from "Circle" /* 8104 */;
+import multiplyMatricesDefault from "multiplyMatrices" /* 8125 */;
+import showErrorCSS from "showErrorCSS" /* 8207 */;
+import SvgAst from "SvgAst" /* 8208 */;
+import _mod8210 from "module_8210" /* 8210 */;
+import RNSVGCircle from "RNSVGCircle" /* 8211 */;
 
-let size;
+const CircleDefault = Circle;
 
-function _isNativeReflectConstruct() {
-  try {
-    const _Boolean = Boolean;
-    const _Reflect = Reflect;
-    const _Boolean2 = Boolean;
-    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-    }));
-    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
-      return closure_0;
-    };
-    return _isNativeReflectConstruct();
-  } catch (err) {
-  }
+for (const key10013 in _mod8103) {
+  exports[key10013] = _mod8103[key10013];
+  continue;
 }
-const Image = react_native.Image;
-const jsx = Fragment.jsx;
-const re9 = /\s+/;
-class SvgImage {
-  constructor() {
-    let constructResult;
-    const self = this;
-    _classCallCheck(this, SvgImage);
-    const obj = _getPrototypeOf(SvgImage);
-    const tmp2 = _getPrototypeOf;
-    const tmp3 = _possibleConstructorReturn;
-    if (_isNativeReflectConstruct()) {
-      const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
-    } else {
-      constructResult = obj(...arguments);
-    }
-    return tmp3(self, constructResult);
-  }
+for (const key10017 in Circle) {
+  exports[key10017] = Circle[key10017];
+  continue;
 }
-_inherits(SvgImage, multiplyMatricesDefault);
-const entry = {
-  key: "render",
-  value: function render() {
-    let assetSource;
-    let height;
-    let href;
-    let parts;
-    let preserveAspectRatio;
-    let tmp2;
-    let tmp3;
-    let width;
-    let x;
-    let y;
-    const self = this;
-    const props = this.props;
-    ({ preserveAspectRatio, href } = props);
-    ({ x, y, width, height } = props);
-    if (undefined === href) {
-      href = props.xlinkHref;
-    }
-    const onLoad = props.onLoad;
-    if (preserveAspectRatio) {
-      const str = preserveAspectRatio.trim();
-      parts = str.split(re9);
-    } else {
-      parts = [];
-    }
-    size = { x, y, width, height, onLoad, meetOrSlice: extractViewBox.meetOrSliceTypes[tmp3] || 0, align: extractViewBox.alignEnum[tmp2] || "xMidYMid", src: assetSource };
-    [tmp2, tmp3] = parts;
-    extractViewBox.meetOrSliceTypes[tmp3] || 0;
-    assetSource = null;
-    extractViewBox.alignEnum[tmp2] || "xMidYMid";
-    if (href) {
-      let tmp10 = href;
-      const resolveAssetSource = Image.resolveAssetSource;
-      if (typeof href === "string") {
-        tmp10 = { uri: href };
-        const obj = { uri: href };
-      }
-      assetSource = resolveAssetSource(tmp10);
-    }
-    _modDef8103;
-    const tmp4Result = extractProps;
-    const merged = Object.assign(tmp4Result.withoutXY(this, props));
-    const merged1 = Object.assign(size);
-    return <tmp11 ref={function ref(arg0) {
-      return self.refMethod(arg0);
-    }} />;
-  }
-};
-const items = [entry];
-const importDefaultResultResult = _createClass(SvgImage, items);
-importDefaultResultResult.displayName = "Image";
-importDefaultResultResult.defaultProps = { x: 0, y: 0, width: 0, height: 0, preserveAspectRatio: "xMidYMid meet" };
+const RNSVGCircle_export = RNSVGCircle.RNSVGCircle;
+const SvgAst_export = SvgAst.SvgAst;
 
-export default importDefaultResultResult;
+export const inlineStyles = showErrorCSS.inlineStyles;
+export const loadLocalRawResource = showErrorCSS.loadLocalRawResource;
+export const LocalSvg = showErrorCSS.LocalSvg;
+export const SvgCss = showErrorCSS.SvgCss;
+export const SvgCssUri = showErrorCSS.SvgCssUri;
+export const SvgWithCss = showErrorCSS.SvgWithCss;
+export const SvgWithCssUri = showErrorCSS.SvgWithCssUri;
+export const WithLocalSvg = showErrorCSS.WithLocalSvg;
+export const camelCase = SvgAst.camelCase;
+export const fetchText = _mod8210.fetchText;
+export const parse = SvgAst.parse;
+export { RNSVGCircle_export as RNSVGCircle };
+export const RNSVGClipPath = RNSVGCircle.RNSVGClipPath;
+export const RNSVGDefs = RNSVGCircle.RNSVGDefs;
+export const RNSVGEllipse = RNSVGCircle.RNSVGEllipse;
+export const RNSVGFeColorMatrix = RNSVGCircle.RNSVGFeColorMatrix;
+export const RNSVGFeComposite = RNSVGCircle.RNSVGFeComposite;
+export const RNSVGFeGaussianBlur = RNSVGCircle.RNSVGFeGaussianBlur;
+export const RNSVGFeMerge = RNSVGCircle.RNSVGFeMerge;
+export const RNSVGFeOffset = RNSVGCircle.RNSVGFeOffset;
+export const RNSVGFilter = RNSVGCircle.RNSVGFilter;
+export const RNSVGForeignObject = RNSVGCircle.RNSVGForeignObject;
+export const RNSVGGroup = RNSVGCircle.RNSVGGroup;
+export const RNSVGImage = RNSVGCircle.RNSVGImage;
+export const RNSVGLine = RNSVGCircle.RNSVGLine;
+export const RNSVGLinearGradient = RNSVGCircle.RNSVGLinearGradient;
+export const RNSVGMarker = RNSVGCircle.RNSVGMarker;
+export const RNSVGMask = RNSVGCircle.RNSVGMask;
+export const RNSVGPath = RNSVGCircle.RNSVGPath;
+export const RNSVGPattern = RNSVGCircle.RNSVGPattern;
+export const RNSVGRadialGradient = RNSVGCircle.RNSVGRadialGradient;
+export const RNSVGRect = RNSVGCircle.RNSVGRect;
+export const RNSVGSvgAndroid = RNSVGCircle.RNSVGSvgAndroid;
+export const RNSVGSvgIOS = RNSVGCircle.RNSVGSvgIOS;
+export const RNSVGSymbol = RNSVGCircle.RNSVGSymbol;
+export const RNSVGText = RNSVGCircle.RNSVGText;
+export const RNSVGTextPath = RNSVGCircle.RNSVGTextPath;
+export const RNSVGTSpan = RNSVGCircle.RNSVGTSpan;
+export const RNSVGUse = RNSVGCircle.RNSVGUse;
+export const Shape = multiplyMatricesDefault;
+export { SvgAst_export as SvgAst };
+export const SvgFromUri = SvgAst.SvgFromUri;
+export const SvgFromXml = SvgAst.SvgFromXml;
+export const SvgUri = SvgAst.SvgUri;
+export const SvgXml = SvgAst.SvgXml;
+export default CircleDefault;

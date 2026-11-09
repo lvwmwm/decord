@@ -1,21 +1,21 @@
-// Module ID: 8763
-// Function ID: 8764
+// Module ID: 8834
+// Function ID: 8835
 // Name: BadgeDirectoryStore
-// Dependencies: [1383, 1089, 1451, 8764, 559, 8768, 504, 572, 2]
+// Dependencies: [1385, 1089, 1453, 8835, 559, 8839, 504, 572, 2]
 // Exports: getObtainedAtFromBadge, getSingleRequirementThreshold
 
-// Module 8763 (BadgeDirectoryStore)
+// Module 8834 (BadgeDirectoryStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import BackoffDefault from "Backoff" /* 559 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import DurationsDefault from "Durations" /* 1089 */;
-import LRUCacheDefault from "LRUCache" /* 1451 */;
-import BadgeIdResolution from "BadgeIdResolution" /* 8764 */;
-import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8768 */;
-import UserStore from "UserStore" /* 1383 */;
+import LRUCacheDefault from "LRUCache" /* 1453 */;
+import BadgeIdResolution from "BadgeIdResolution" /* 8835 */;
+import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8839 */;
+import UserStore from "UserStore" /* 1385 */;
 import size from "module_2" /* 2 */;
 
-let map, set;
+let map, map1, set;
 
 const HOUR = DurationsDefault.Millis.HOUR;
 let tmp2 = new LRUCacheDefault({ max: 50 });
@@ -50,8 +50,8 @@ class BadgeDirectoryStore extends Store {
       return items;
     }
   }
-  hasCatalogFor(stateFromStores) {
-    const peekResult = closure_5.peek(stateFromStores);
+  hasCatalogFor(id) {
+    const peekResult = closure_5.peek(id);
     let flag;
     if (peekResult != null) {
       flag = peekResult.catalogFetched;
@@ -61,8 +61,8 @@ class BadgeDirectoryStore extends Store {
     }
     return flag;
   }
-  isCatalogStaleFor(id) {
-    const peekResult = closure_5.peek(id);
+  isCatalogStaleFor(displayedUserId) {
+    const peekResult = closure_5.peek(displayedUserId);
     let fetchedAt;
     if (peekResult != null) {
       fetchedAt = peekResult.fetchedAt;
@@ -97,6 +97,30 @@ class BadgeDirectoryStore extends Store {
       tmp5 = flag;
     }
     return tmp5;
+  }
+  getUnreadBadges(id) {
+    const badges = this.getBadges(id);
+    return badges.filter((has_updates) => true === has_updates.has_updates);
+  }
+  getUnreadBadgeCount(id) {
+    let tmp = id;
+    if (id == null) {
+      const currentUser = UserStore.getCurrentUser();
+      id = undefined;
+      if (currentUser != null) {
+        id = currentUser.id;
+      }
+      tmp = id;
+    }
+    let num = 0;
+    if (null != tmp) {
+      const self = this;
+      num = 0;
+      if (this.hasCatalogFor(tmp)) {
+        num = self.getUnreadBadges(tmp).length;
+      }
+    }
+    return num;
   }
   getBadgeById(GIFTING, displayedUserId) {
     let tmp = displayedUserId;
@@ -199,26 +223,47 @@ let obj = {
   },
   BADGE_DIRECTORY_FETCH_SUCCESS: function handleFetchSuccess(arg0) {
     let badges;
+    let closure_129_0;
     let userId;
-    const f93260 = (badge_id) => {
-      const items = [badge_id.badge_id, badge_id];
+    const f94744 = (badge_id) => {
+      const acks = _undefined.acks;
+      const value = acks.get(badge_id.badge_id);
+      let value2 = null;
+      const tmp = _undefined;
+      const tmp4 = null != value && closure_1_0 < value;
+      if (tmp4) {
+        const badges = tmp.badges;
+        value2 = badges.get(badge_id.badge_id);
+      }
+      const items = [badge_id.badge_id, ];
+      if (value2 == null) {
+        value2 = badge_id;
+      }
+      items[1] = value2;
       return items;
     };
-    ({ userId, badges } = arg0);
+    ({ userId, badges, requestedAt: closure_129_0 } = arg0);
+    let c1;
     let peekResult = closure_5.peek(userId);
     const obj = closure_5;
     if (peekResult == null) {
       const _Map = Map;
       const self = this;
       const self2 = this;
-      const obj2 = { badges: map, catalogFetched: false, fetchError: false, fetchedAt: null, driftBackoff: null, driftFetchGateUntil: null };
-      peekResult = obj2;
+      const obj2 = { badges: map, catalogFetched: false, fetchError: false, fetchedAt: null, driftBackoff: null, driftFetchGateUntil: null, acks: map1 };
       map = new Map();
+      let tmp4 = map;
+      const _Map2 = Map;
+      const self3 = this;
+      const self4 = this;
+      peekResult = obj2;
+      map1 = new Map();
     }
-    peekResult.badges = new Map(badges.map(f93260));
+    c1 = peekResult;
+    peekResult.badges = new Map(badges.map(f94744));
     peekResult.catalogFetched = true;
     peekResult.fetchError = false;
-    new Map(badges.map(f93260));
+    new Map(badges.map(f94744));
     peekResult.fetchedAt = Date.now();
     const result = obj.set(userId, peekResult);
   },
@@ -230,72 +275,126 @@ let obj = {
       const _Map = Map;
       const self = this;
       const self2 = this;
-      const obj2 = { badges: map, catalogFetched: false, fetchError: false, fetchedAt: null, driftBackoff: null, driftFetchGateUntil: null };
-      peekResult = obj2;
+      const obj2 = { badges: map, catalogFetched: false, fetchError: false, fetchedAt: null, driftBackoff: null, driftFetchGateUntil: null, acks: map1 };
+      const _Map2 = Map;
+      const self3 = this;
+      const self4 = this;
       map = new Map();
+      peekResult = obj2;
+      map1 = new Map();
     }
     peekResult.fetchError = true;
     const result = obj.set(userId, peekResult);
   },
-  BADGE_FETCH_SUCCESS: function handleBadgeFetchSuccess(arg0) {
+  BADGE_FETCH_SUCCESS: function handleBadgeFetchSuccess(requestedAt) {
     let badge;
     let userId;
-    ({ userId, badge } = arg0);
+    ({ userId, badge } = requestedAt);
+    requestedAt = requestedAt.requestedAt;
     let peekResult = closure_5.peek(userId);
     const obj = closure_5;
     if (peekResult == null) {
       const _Map = Map;
       const self = this;
       const self2 = this;
-      const obj2 = { badges: map, catalogFetched: false, fetchError: false, fetchedAt: null, driftBackoff: null, driftFetchGateUntil: null };
-      peekResult = obj2;
+      const obj2 = { badges: map, catalogFetched: false, fetchError: false, fetchedAt: null, driftBackoff: null, driftFetchGateUntil: null, acks: map1 };
+      const _Map2 = Map;
+      const self3 = this;
+      const self4 = this;
       map = new Map();
+      peekResult = obj2;
+      map1 = new Map();
     }
-    const badges = peekResult.badges;
-    const result = badges.set(badge.badge_id, badge);
-    const result1 = obj.set(userId, peekResult);
+    const acks = peekResult.acks;
+    const value = acks.get(badge.badge_id);
+    const tmp8 = null != value && requestedAt < value;
+    if (tmp8) {
+      return false;
+    } else {
+      const badges = peekResult.badges;
+      const result = badges.set(badge.badge_id, badge);
+      const result1 = obj.set(userId, peekResult);
+    }
   },
-  BADGE_SUMMARY_FETCH_SUCCESS: function handleBadgeSummaryFetchSuccess(arg0) {
+  BADGE_SUMMARY_FETCH_SUCCESS: function handleBadgeSummaryFetchSuccess(requestedAt) {
     let badge;
     let info_label;
     let progress;
     let userId;
-    ({ userId, badge } = arg0);
+    ({ userId, badge } = requestedAt);
+    requestedAt = requestedAt.requestedAt;
     let peekResult = closure_5.peek(userId);
     const obj = closure_5;
     if (peekResult == null) {
       const _Map = Map;
       const self = this;
       const self2 = this;
-      const obj2 = { badges: map, catalogFetched: false, fetchError: false, fetchedAt: null, driftBackoff: null, driftFetchGateUntil: null };
-      peekResult = obj2;
+      const obj2 = { badges: map, catalogFetched: false, fetchError: false, fetchedAt: null, driftBackoff: null, driftFetchGateUntil: null, acks: map1 };
+      const _Map2 = Map;
+      const self3 = this;
+      const self4 = this;
       map = new Map();
+      peekResult = obj2;
+      map1 = new Map();
     }
-    const badges = peekResult.badges;
-    const value = badges.get(badge.badge_id);
-    const badges2 = peekResult.badges;
-    const badge_id = badge.badge_id;
-    const obj3 = { progress, info_label };
-    set = badges2.set;
-    const merged = Object.assign(badge);
-    progress = badge.progress;
-    if (progress == null) {
-      let progress1;
-      if (value != null) {
-        progress1 = value.progress;
+    const acks = peekResult.acks;
+    const value = acks.get(badge.badge_id);
+    const tmp8 = null != value && requestedAt < value;
+    if (tmp8) {
+      return false;
+    } else {
+      const badges = peekResult.badges;
+      const value2 = badges.get(badge.badge_id);
+      const badges2 = peekResult.badges;
+      const badge_id = badge.badge_id;
+      const obj3 = { progress, info_label };
+      set = badges2.set;
+      const merged = Object.assign(badge);
+      progress = badge.progress;
+      if (progress == null) {
+        let progress1;
+        if (value2 != null) {
+          progress1 = value2.progress;
+        }
+        progress = progress1;
       }
-      progress = progress1;
-    }
-    info_label = badge.info_label;
-    if (info_label == null) {
-      let info_label1;
-      if (value != null) {
-        info_label1 = value.info_label;
+      info_label = badge.info_label;
+      if (info_label == null) {
+        let info_label1;
+        if (value2 != null) {
+          info_label1 = value2.info_label;
+        }
+        info_label = info_label1;
       }
-      info_label = info_label1;
+      const result = set(badge_id, obj3);
+      const result1 = obj.set(userId, peekResult);
     }
-    const result = set(badge_id, obj3);
-    const result1 = obj.set(userId, peekResult);
+  },
+  BADGE_ACK_SUCCESS: function handleBadgeAckSuccess(badgeId) {
+    badgeId = badgeId.badgeId;
+    const peekResult = closure_5.peek(badgeId.userId);
+    if (null == peekResult) {
+      return false;
+    } else {
+      const acks = peekResult.acks;
+      const _Date = Date;
+      const result = acks.set(badgeId, Date.now());
+      const badges2 = peekResult.badges;
+      const value = badges2.get(badgeId);
+      let has_updates;
+      if (value != null) {
+        has_updates = value.has_updates;
+      }
+      if (true !== has_updates) {
+        return false;
+      } else {
+        const badges = peekResult.badges;
+        const obj = { has_updates: false, previous_acked_tier: null };
+        set = badges.set;
+        const merged = Object.assign(value);
+        const result1 = set(badgeId, obj);
+      }
+    }
   },
   USER_PROFILE_FETCH_SUCCESS: function handleUserProfileFetchSuccess(userProfile) {
     userProfile = userProfile.userProfile;

@@ -1,18 +1,18 @@
-// Module ID: 18582
-// Function ID: 18583
+// Module ID: 18940
+// Function ID: 18941
 // Name: ICYMILoading
-// Dependencies: [19, 17, 21, 18523, 575, 14215, 5095, 18562, 2]
+// Dependencies: [19, 17, 21, 18878, 575, 14452, 1652, 18920, 2]
 // Exports: ICYMILoading
 
-// Module 18582 (ICYMILoading)
+// Module 18940 (ICYMILoading)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 5095 */;
-import useChatPlaceholderAnimatedStylesDefault from "useChatPlaceholderAnimatedStyles" /* 14215 */;
-import ICYMIShared from "ICYMIShared" /* 18562 */;
+import _modDef1652 from "module_1652" /* 1652 */;
+import useChatPlaceholderAnimatedStylesDefault from "useChatPlaceholderAnimatedStyles" /* 14452 */;
+import ICYMIShared from "ICYMIShared" /* 18920 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createICYMIStyles from "createICYMIStyles" /* 18523 */;
+import createICYMIStyles from "createICYMIStyles" /* 18878 */;
 import size_mod from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -47,13 +47,13 @@ function ICYMILoadingItem() {
   items = [, , ];
   ({ backgroundColor: arr[0], avatar: arr[1] } = tmp);
   items[2] = tmp2;
-  items1 = [hasOwnProperty(ReanimatedRexportDefault.View, obj4), ];
+  items1 = [hasOwnProperty(_modDef1652.View, obj4), ];
   const obj5 = { style: items2 };
   items2 = [, , , ];
   ({ backgroundColor: arr3[0], avatarTitle: arr3[1] } = tmp);
   items2[2] = tmp2;
   const obj6 = { width: "" + (result - Math.floor(result)) * 30 + 30 + "%" };
-  View = ReanimatedRexportDefault.View;
+  View = _modDef1652.View;
   result = 100 * Math.sin(avatarTitle);
   items2[3] = obj6;
   items1[1] = hasOwnProperty(View, obj5);
@@ -63,7 +63,7 @@ function ICYMILoadingItem() {
   ({ backgroundColor: arr5[0], title: arr5[1] } = tmp);
   items4[2] = tmp2;
   const obj8 = { width: "" + (result1 - Math.floor(result1)) * 25 + 75 + "%" };
-  const View2 = ReanimatedRexportDefault.View;
+  const View2 = _modDef1652.View;
   result1 = 100 * Math.sin(title);
   items4[3] = obj8;
   items3[1] = hasOwnProperty(View2, obj7);
@@ -72,7 +72,7 @@ function ICYMILoadingItem() {
   ({ backgroundColor: arr6[0], subtitle: arr6[1] } = tmp);
   items5[2] = tmp2;
   const obj10 = { width: "" + (result2 - Math.floor(result2)) * 25 + 75 + "%" };
-  const View3 = ReanimatedRexportDefault.View;
+  const View3 = _modDef1652.View;
   result2 = 100 * Math.sin(subtitle);
   items5[3] = obj10;
   items3[2] = hasOwnProperty(View3, obj9);
@@ -80,7 +80,7 @@ function ICYMILoadingItem() {
   items6 = [, , ];
   ({ backgroundColor: arr7[0], image: arr7[1] } = tmp);
   items6[2] = tmp2;
-  items3[3] = hasOwnProperty(ReanimatedRexportDefault.View, obj11);
+  items3[3] = hasOwnProperty(_modDef1652.View, obj11);
   items7 = [metroRequire(View, obj2), hasOwnProperty(ICYMIShared.Separator, {})];
   return metroRequire(metroImportDefault, obj);
 }

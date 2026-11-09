@@ -1,10 +1,10 @@
-// Module ID: 12253
-// Function ID: 12254
+// Module ID: 12440
+// Function ID: 12441
 // Name: AbstractFramePoolManager
-// Dependencies: [32, 12254, 2]
+// Dependencies: [32, 12441, 2]
 
-// Module 12253 (AbstractFramePoolManager)
-import FrameStackLevel from "FrameStackLevel" /* 12254 */;
+// Module 12440 (AbstractFramePoolManager)
+import FrameStackLevel from "FrameStackLevel" /* 12441 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 

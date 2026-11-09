@@ -1,76 +1,96 @@
-// Module ID: 19109
-// Function ID: 19110
+// Module ID: 19485
+// Function ID: 19486
 // Name: VoicePanelPIPUtils
-// Dependencies: [6843, 6714, 502, 11223, 19110, 5681, 11224, 6717, 11228, 5676, 575, 2]
-// Exports: calculatePIPPositionFromVelocity, clampPIPScale, computePIPParticipantToShow, computePIPSize, createPIPBlockList, getClampedPIPPosition, getPIPMode, getScaledPIPContainerHeight, getVoicePanelPIPBorderRadius
+// Dependencies: [6898, 6769, 502, 11363, 19486, 5805, 11364, 6772, 11368, 5800, 575, 2]
+// Exports: calculatePIPPositionFromVelocity, clampPIPScale, computePIPParticipantToShow, computePIPSize, createPIPBlockList, getClampedPIPPosition, getPIPMode, getPIPWindowDimensions, getScaledPIPContainerHeight, getVoicePanelPIPBorderRadius, pipXYtoAbsoluteXY
 
-// Module 19109 (VoicePanelPIPUtils)
+// Module 19485 (VoicePanelPIPUtils)
 import nativeDefault from "native" /* 575 */;
-import isActivityParticipantCurrentUserCurrentSession from "isActivityParticipantCurrentUserCurrentSession" /* 5676 */;
-import CallConstants from "CallConstants" /* 5681 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 6717 */;
-import participantHasVideo from "participantHasVideo" /* 11228 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6843 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6714 */;
+import isActivityParticipantCurrentUserCurrentSession from "isActivityParticipantCurrentUserCurrentSession" /* 5800 */;
+import CallConstants from "CallConstants" /* 5805 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 6772 */;
+import participantHasVideo from "participantHasVideo" /* 11368 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6898 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6769 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11223 */;
-import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 19110 */;
-import MorphablePanelConstants from "MorphablePanelConstants" /* 11224 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11363 */;
+import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 19486 */;
+import MorphablePanelConstants from "MorphablePanelConstants" /* 11364 */;
 import size_mod from "module_2" /* 2 */;
 
+let MIN_PIP_TOSS_VELOCITY;
 let PIPReferenceDimensions;
+let PIP_WINDOW_OFFSET;
 let metroImportDefault;
+let tmp10;
+let tmp11;
+let tmp12;
+let tmp13;
+let tmp14;
+let tmp15;
+let tmp16;
+let tmp17;
+let tmp18;
+let tmp19;
+let tmp20;
+let tmp21;
+let tmp22;
+let tmp23;
+let tmp24;
+let tmp25;
+let tmp26;
+let tmp27;
+let tmp6;
+let tmp7;
+let tmp8;
+let tmp9;
 const SECONDARY_PIP_TOP_MARGIN = VoicePanelConstants.SECONDARY_PIP_TOP_MARGIN;
 const VoicePanelModes = VoicePanelConstants.VoicePanelModes;
 ({ VoicePanelPIPModes: metroImportDefault, PIPReferenceDimensions } = VoicePanelPIPConstants);
 const SquarePIPReferenceDimensions = VoicePanelPIPConstants.SquarePIPReferenceDimensions;
 const SquareActivityPIPReferenceDimensions = VoicePanelPIPConstants.SquareActivityPIPReferenceDimensions;
 const ParticipantTypes = CallConstants.ParticipantTypes;
-const MIN_PIP_TOSS_VELOCITY = MorphablePanelConstants.MIN_PIP_TOSS_VELOCITY;
-const PIP_WINDOW_OFFSET = MorphablePanelConstants.PIP_WINDOW_OFFSET;
+({ MIN_PIP_TOSS_VELOCITY, PIP_WINDOW_OFFSET } = MorphablePanelConstants);
 let set = new Set();
+let items = [{ code: "(function clamp_VoicePanelPIPUtilsTsx1(value,min,max){return Math.min(Math.max(value,min),max);})" }];
+[tmp6] = items;
 function clamp(arg0, arg1, arg2) {
   return Math.min(Math.max(arg0, arg1), arg2);
 }
-clamp.__closure = {};
-clamp.__workletHash = 10301627783217;
-clamp.__initData = { code: "function clamp_VoicePanelPIPUtilsTsx1(value,min,max){return Math.min(Math.max(value,min),max);}" };
+clamp.__workletHash = 623753827248;
+clamp.__initData = tmp6;
+const items1 = [{ code: "(function getPIPWindowDimensions_VoicePanelPIPUtilsTsx2(windowDimensions,safeArea){let[PIP_WINDOW_OFFSET]=this.__closure;const xOffset=Math.max(safeArea.left,PIP_WINDOW_OFFSET);const yOffset=Math.max(safeArea.top,PIP_WINDOW_OFFSET);return{xOffset:xOffset,yOffset:yOffset,xRange:windowDimensions.width-xOffset-Math.max(safeArea.right,PIP_WINDOW_OFFSET),yRange:windowDimensions.height-yOffset-Math.max(safeArea.bottom,PIP_WINDOW_OFFSET)};})" }, PIP_WINDOW_OFFSET];
+[tmp7, tmp8] = items1;
 function getPIPWindowDimensions(width, left) {
   let diff;
   let diff1;
-  const bound = Math.max(left.left, PIP_WINDOW_OFFSET);
-  const bound1 = Math.max(left.top, PIP_WINDOW_OFFSET);
-  const obj = { xOffset: bound, yOffset: bound1, xRange: diff - Math.max(left.right, PIP_WINDOW_OFFSET), yRange: diff1 - Math.max(left.bottom, PIP_WINDOW_OFFSET) };
+  const bound = Math.max(left.left, c0);
+  const bound1 = Math.max(left.top, c0);
+  const obj = { xOffset: bound, yOffset: bound1, xRange: diff - Math.max(left.right, c0), yRange: diff1 - Math.max(left.bottom, c0) };
   diff = width.width - bound;
   diff1 = width.height - bound1;
   return obj;
 }
-getPIPWindowDimensions.__closure = { PIP_WINDOW_OFFSET };
-getPIPWindowDimensions.__workletHash = 10369369214675;
-getPIPWindowDimensions.__initData = { code: "function getPIPWindowDimensions_VoicePanelPIPUtilsTsx2(windowDimensions,safeArea){const{PIP_WINDOW_OFFSET}=this.__closure;const xOffset=Math.max(safeArea.left,PIP_WINDOW_OFFSET);const yOffset=Math.max(safeArea.top,PIP_WINDOW_OFFSET);return{xOffset:xOffset,yOffset:yOffset,xRange:windowDimensions.width-xOffset-Math.max(safeArea.right,PIP_WINDOW_OFFSET),yRange:windowDimensions.height-yOffset-Math.max(safeArea.bottom,PIP_WINDOW_OFFSET)};}" };
-function pipXYtoAbsoluteXY(arg0) {
-  let safeArea;
-  let windowDimensions;
-  ({ windowDimensions, safeArea } = arg0);
-  if (typeof getPIPWindowDimensions === "function") {
-    const _Math = Math;
-    const bound = Math.max(safeArea.left, PIP_WINDOW_OFFSET);
-    const _Math2 = Math;
-    const bound1 = Math.max(safeArea.top, PIP_WINDOW_OFFSET);
-    const _Math3 = Math;
-    const diff = windowDimensions.width - bound;
-    const _Math4 = Math;
-    const diff1 = diff - Math.max(safeArea.right, PIP_WINDOW_OFFSET);
-    const diff2 = windowDimensions.height - bound1;
-    const point = { x: bound + tmp * diff1, y: bound1 + tmp2 * (diff2 - Math.max(safeArea.bottom, PIP_WINDOW_OFFSET)) };
-    return point;
-  } else {
-    throw new TypeError("Trying to call a non-function");
-  }
+const items2 = [tmp8];
+getPIPWindowDimensions.__closure = items2;
+getPIPWindowDimensions.__workletHash = 12962518417802;
+getPIPWindowDimensions.__initData = tmp7;
+const items3 = [{ code: "(function pipXYtoAbsoluteXY_VoicePanelPIPUtilsTsx3({pipX:pipX,pipY:pipY,windowDimensions:windowDimensions,safeArea:safeArea}){let[getPIPWindowDimensions]=this.__closure;const{xOffset:xOffset,yOffset:yOffset,xRange:xRange,yRange:yRange}=getPIPWindowDimensions(windowDimensions,safeArea);return{x:xOffset+pipX*xRange,y:yOffset+pipY*yRange};})" }, getPIPWindowDimensions];
+[tmp9, tmp10] = items3;
+function pipXYtoAbsoluteXY(windowDimensions) {
+  let pipX;
+  let pipY;
+  ({ pipX, pipY } = windowDimensions);
+  const tmp = _undefined(windowDimensions.windowDimensions, windowDimensions.safeArea);
+  const point = { x: tmp.xOffset + pipX * tmp.xRange, y: tmp.yOffset + pipY * tmp.yRange };
+  return point;
 }
-pipXYtoAbsoluteXY.__closure = { getPIPWindowDimensions };
-pipXYtoAbsoluteXY.__workletHash = 13405407399530;
-pipXYtoAbsoluteXY.__initData = { code: "function pipXYtoAbsoluteXY_VoicePanelPIPUtilsTsx3({pipX:pipX,pipY:pipY,windowDimensions:windowDimensions,safeArea:safeArea}){const{getPIPWindowDimensions}=this.__closure;const{xOffset:xOffset,yOffset:yOffset,xRange:xRange,yRange:yRange}=getPIPWindowDimensions(windowDimensions,safeArea);return{x:xOffset+pipX*xRange,y:yOffset+pipY*yRange};}" };
+const items4 = [tmp10];
+pipXYtoAbsoluteXY.__closure = items4;
+pipXYtoAbsoluteXY.__workletHash = 4693203505939;
+pipXYtoAbsoluteXY.__initData = tmp9;
+const items5 = [{ code: "(function getClampedPIPPosition_VoicePanelPIPUtilsTsx4({pipX:pipX,pipY:pipY,width:width,height:height,windowDimensions:windowDimensions,safeArea:safeArea,bottomAvoidanceRegion=0,topAvoidanceRegion=0}){let[pipXYtoAbsoluteXY,getPIPWindowDimensions,clamp]=this.__closure;let{x:x,y:y}=pipXYtoAbsoluteXY({pipX:pipX===-1?1:pipX,pipY:pipY===-1?0:pipY,windowDimensions:windowDimensions,safeArea:safeArea});const halfWidth=width/2;const halfHeight=height/2;x-=halfWidth;if(pipY===-1){y+=72;}else{y-=halfHeight;}const pipRegion=getPIPWindowDimensions(windowDimensions,safeArea);x=clamp(x,pipRegion.xOffset,pipRegion.xOffset+pipRegion.xRange-width);y=clamp(y,pipRegion.yOffset+topAvoidanceRegion,pipRegion.yOffset+pipRegion.yRange-bottomAvoidanceRegion-height);return{x:x,y:y};})" }, pipXYtoAbsoluteXY, getPIPWindowDimensions, clamp];
+[tmp11, tmp12, tmp13, tmp14] = items5;
 function getClampedPIPPosition(topAvoidanceRegion) {
   let bottomAvoidanceRegion;
   let height;
@@ -90,7 +110,7 @@ function getClampedPIPPosition(topAvoidanceRegion) {
     num = 0;
   }
   let num2 = 1;
-  const tmp = pipXYtoAbsoluteXY;
+  const tmp = c0;
   if (-1 !== pipX) {
     num2 = pipX;
   }
@@ -107,235 +127,160 @@ function getClampedPIPPosition(topAvoidanceRegion) {
   } else {
     sum = y - height / 2;
   }
-  if (typeof getPIPWindowDimensions === "function") {
-    const _Math = Math;
-    const bound = Math.max(safeArea.left, PIP_WINDOW_OFFSET);
-    const _Math2 = Math;
-    const bound1 = Math.max(safeArea.top, PIP_WINDOW_OFFSET);
-    const _Math3 = Math;
-    const diff1 = windowDimensions.width - bound;
-    const _Math4 = Math;
-    const diff2 = diff1 - Math.max(safeArea.right, PIP_WINDOW_OFFSET);
-    const diff3 = windowDimensions.height - bound1;
-    if (typeof clamp === "function") {
-      const point1 = { x: Math.min(Math.max(diff, bound), tmp13), y: null };
-      const _Math5 = Math;
-      const _Math6 = Math;
-      if (typeof tmp12 === "function") {
-        const _Math7 = Math;
-        const _Math8 = Math;
-        point1.y = Math.min(Math.max(sum, tmp14), tmp15);
-        return point1;
-      } else {
-        throw new TypeError("Trying to call a non-function");
-      }
-    } else {
-      throw new TypeError("Trying to call a non-function");
-    }
-  } else {
-    throw new TypeError("Trying to call a non-function");
-  }
+  const tmp5 = _undefined(windowDimensions, safeArea);
+  const point1 = { x: _undefined2(diff, tmp5.xOffset, tmp5.xOffset + tmp5.xRange - width), y: _undefined2(sum, tmp5.yOffset + num, tmp5.yOffset + tmp5.yRange - bottomAvoidanceRegion - height) };
+  return point1;
 }
-getClampedPIPPosition.__closure = { pipXYtoAbsoluteXY, getPIPWindowDimensions, clamp };
-getClampedPIPPosition.__workletHash = 4971721292921;
-getClampedPIPPosition.__initData = { code: "function getClampedPIPPosition_VoicePanelPIPUtilsTsx4({pipX:pipX,pipY:pipY,width:width,height:height,windowDimensions:windowDimensions,safeArea:safeArea,bottomAvoidanceRegion=0,topAvoidanceRegion=0}){const{pipXYtoAbsoluteXY,getPIPWindowDimensions,clamp}=this.__closure;let{x:x,y:y}=pipXYtoAbsoluteXY({pipX:pipX===-1?1:pipX,pipY:pipY===-1?0:pipY,windowDimensions:windowDimensions,safeArea:safeArea});const halfWidth=width/2;const halfHeight=height/2;x-=halfWidth;if(pipY===-1){y+=72;}else{y-=halfHeight;}const pipRegion=getPIPWindowDimensions(windowDimensions,safeArea);x=clamp(x,pipRegion.xOffset,pipRegion.xOffset+pipRegion.xRange-width);y=clamp(y,pipRegion.yOffset+topAvoidanceRegion,pipRegion.yOffset+pipRegion.yRange-bottomAvoidanceRegion-height);return{x:x,y:y};}" };
+const items6 = [tmp12, tmp13, tmp14];
+getClampedPIPPosition.__closure = items6;
+getClampedPIPPosition.__workletHash = 7513917859296;
+getClampedPIPPosition.__initData = tmp11;
+const items7 = [{ code: "(function getScaledPIPContainerHeight_VoicePanelPIPUtilsTsx5({height:height,containerHeight:containerHeight,showSecondaryPIP:showSecondaryPIP,scale:scale}){let[SECONDARY_PIP_TOP_MARGIN]=this.__closure;if(!showSecondaryPIP){return height*scale;}return(containerHeight-SECONDARY_PIP_TOP_MARGIN)*scale+SECONDARY_PIP_TOP_MARGIN;})" }, SECONDARY_PIP_TOP_MARGIN];
+[tmp15, tmp16] = items7;
 function getScaledPIPContainerHeight(scale) {
   let sum;
   scale = scale.scale;
   if (scale.showSecondaryPIP) {
-    sum = (tmp2 - SECONDARY_PIP_TOP_MARGIN) * scale + SECONDARY_PIP_TOP_MARGIN;
+    sum = (tmp2 - c0) * scale + c0;
   } else {
     sum = tmp * scale;
   }
   return sum;
 }
-getScaledPIPContainerHeight.__closure = { SECONDARY_PIP_TOP_MARGIN };
-getScaledPIPContainerHeight.__workletHash = 10243624845636;
-getScaledPIPContainerHeight.__initData = { code: "function getScaledPIPContainerHeight_VoicePanelPIPUtilsTsx5({height:height,containerHeight:containerHeight,showSecondaryPIP:showSecondaryPIP,scale:scale}){const{SECONDARY_PIP_TOP_MARGIN}=this.__closure;if(!showSecondaryPIP){return height*scale;}return(containerHeight-SECONDARY_PIP_TOP_MARGIN)*scale+SECONDARY_PIP_TOP_MARGIN;}" };
-function clampPIPScale(arg0) {
+const items8 = [tmp16];
+getScaledPIPContainerHeight.__closure = items8;
+getScaledPIPContainerHeight.__workletHash = 2802177660733;
+getScaledPIPContainerHeight.__initData = tmp15;
+const items9 = [{ code: "(function clampPIPScale_VoicePanelPIPUtilsTsx6({scale:scale,width:width,containerHeight:containerHeight,showSecondaryPIP:showSecondaryPIP,windowDimensions:windowDimensions,safeArea:safeArea,pipAvoidanceSpecs:pipAvoidanceSpecs}){let[getPIPWindowDimensions,SECONDARY_PIP_TOP_MARGIN]=this.__closure;const{xRange:xRange,yRange:yRange}=getPIPWindowDimensions(windowDimensions,safeArea);const maxWidth=xRange;const maxHeight=yRange-pipAvoidanceSpecs.top-pipAvoidanceSpecs.bottom;const scalableHeight=showSecondaryPIP?containerHeight-SECONDARY_PIP_TOP_MARGIN:containerHeight;const scalableMaxHeight=showSecondaryPIP?maxHeight-SECONDARY_PIP_TOP_MARGIN:maxHeight;const maxScale=Math.min(maxWidth/width,scalableMaxHeight/scalableHeight);return Math.max(0.75,Math.min(scale,maxScale));})" }, getPIPWindowDimensions, SECONDARY_PIP_TOP_MARGIN];
+[tmp17, tmp18, tmp19] = items9;
+function clampPIPScale(windowDimensions) {
   let containerHeight;
   let pipAvoidanceSpecs;
-  let safeArea;
+  let scale;
   let showSecondaryPIP;
-  let windowDimensions;
-  ({ containerHeight, showSecondaryPIP, windowDimensions, safeArea, pipAvoidanceSpecs } = arg0);
-  if (typeof getPIPWindowDimensions === "function") {
-    const _Math = Math;
-    const _Math2 = Math;
-    const bound = Math.max(safeArea.left, PIP_WINDOW_OFFSET);
-    const _Math3 = Math;
-    const bound1 = Math.max(safeArea.top, PIP_WINDOW_OFFSET);
-    const diff = windowDimensions.width - bound;
-    const _Math4 = Math;
-    const diff1 = diff - Math.max(safeArea.right, PIP_WINDOW_OFFSET);
-    const diff2 = windowDimensions.height - bound1;
-    const diff3 = diff2 - Math.max(safeArea.bottom, PIP_WINDOW_OFFSET) - pipAvoidanceSpecs.top - pipAvoidanceSpecs.bottom;
-    let diff4 = containerHeight;
-    if (showSecondaryPIP) {
-      diff4 = containerHeight - SECONDARY_PIP_TOP_MARGIN;
-    }
-    let diff5 = diff3;
-    if (showSecondaryPIP) {
-      diff5 = diff3 - SECONDARY_PIP_TOP_MARGIN;
-    }
-    const _Math5 = Math;
-    const _Math6 = Math;
-    const _Math7 = Math;
-    return Math.max(0.75, Math.min(tmp, Math.min(diff1 / tmp2, diff5 / diff4)));
-  } else {
-    throw new TypeError("Trying to call a non-function");
+  let width;
+  ({ containerHeight, showSecondaryPIP, pipAvoidanceSpecs } = windowDimensions);
+  ({ scale, width } = windowDimensions);
+  const tmp = _undefined(windowDimensions.windowDimensions, windowDimensions.safeArea);
+  const diff = tmp.yRange - pipAvoidanceSpecs.top - pipAvoidanceSpecs.bottom;
+  let diff1 = containerHeight;
+  const xRange = tmp.xRange;
+  if (showSecondaryPIP) {
+    diff1 = containerHeight - c1;
   }
+  let diff2 = diff;
+  if (showSecondaryPIP) {
+    diff2 = diff - c1;
+  }
+  return Math.max(0.75, Math.min(scale, Math.min(xRange / width, diff2 / diff1)));
 }
-clampPIPScale.__closure = { getPIPWindowDimensions, SECONDARY_PIP_TOP_MARGIN };
-clampPIPScale.__workletHash = 9137920818537;
-clampPIPScale.__initData = { code: "function clampPIPScale_VoicePanelPIPUtilsTsx6({scale:scale,width:width,containerHeight:containerHeight,showSecondaryPIP:showSecondaryPIP,windowDimensions:windowDimensions,safeArea:safeArea,pipAvoidanceSpecs:pipAvoidanceSpecs}){const{getPIPWindowDimensions,SECONDARY_PIP_TOP_MARGIN}=this.__closure;const{xRange:xRange,yRange:yRange}=getPIPWindowDimensions(windowDimensions,safeArea);const maxWidth=xRange;const maxHeight=yRange-pipAvoidanceSpecs.top-pipAvoidanceSpecs.bottom;const scalableHeight=showSecondaryPIP?containerHeight-SECONDARY_PIP_TOP_MARGIN:containerHeight;const scalableMaxHeight=showSecondaryPIP?maxHeight-SECONDARY_PIP_TOP_MARGIN:maxHeight;const maxScale=Math.min(maxWidth/width,scalableMaxHeight/scalableHeight);return Math.max(0.75,Math.min(scale,maxScale));}" };
-function calculatePIPPositionFromVelocity(arg0) {
-  let safeArea;
+const items10 = [tmp18, tmp19];
+clampPIPScale.__closure = items10;
+clampPIPScale.__workletHash = 711895361648;
+clampPIPScale.__initData = tmp17;
+const items11 = [{ code: "(function calculatePIPPositionFromVelocity_VoicePanelPIPUtilsTsx7({velocityX:velocityX,velocityY:velocityY,absoluteX:absoluteX,absoluteY:absoluteY,windowDimensions:windowDimensions,safeArea:safeArea}){let[getPIPWindowDimensions,MIN_PIP_TOSS_VELOCITY,clamp]=this.__closure;const pipRegion=getPIPWindowDimensions(windowDimensions,safeArea);const{xRange:xRange,yRange:yRange}=pipRegion;const x=absoluteX-pipRegion.xOffset;const y=absoluteY-pipRegion.yOffset;let pipX=0;let pipY=0;if(Math.max(Math.abs(velocityY),Math.abs(velocityX))<MIN_PIP_TOSS_VELOCITY){const closestEdge=function(specs){const minValue=Math.min(...Object.values(specs));if(specs.left===minValue){return'left';}if(specs.top===minValue){return'top';}if(specs.right===minValue){return'right';}return'bottom';}({left:clamp(x,0,xRange),right:clamp(xRange-x,0,xRange),top:clamp(y,0,yRange),bottom:clamp(yRange-y,0,yRange)});switch(closestEdge){case'left':pipX=0;pipY=y/yRange;break;case'right':pipX=1;pipY=y/yRange;break;case'top':pipY=0;pipX=x/xRange;break;case'bottom':pipY=1;pipX=x/xRange;break;}}else{const slope=velocityY/velocityX;let intersectionY=0;let intersectionX=0;intersectionX=velocityX>0?xRange:0;intersectionY=y+slope*(intersectionX-x);if(intersectionY>=0&&intersectionY<=yRange){pipX=intersectionX/xRange;pipY=intersectionY/yRange;}else{intersectionY=velocityY>0?yRange:0;intersectionX=x+1/slope*(intersectionY-y);pipX=intersectionX/xRange;pipY=intersectionY/yRange;}}return{pipX:clamp(pipX,0,1),pipY:clamp(pipY,0,1)};})" }, getPIPWindowDimensions, MIN_PIP_TOSS_VELOCITY, clamp];
+[tmp20, tmp21, tmp22, tmp23] = items11;
+function calculatePIPPositionFromVelocity(windowDimensions) {
+  let absoluteX;
+  let absoluteY;
+  let num5;
+  let num6;
   let velocityX;
   let velocityY;
-  let windowDimensions;
-  ({ velocityX, velocityY, windowDimensions, safeArea } = arg0);
-  if (typeof getPIPWindowDimensions === "function") {
-    let num6;
-    let num5;
+  let xRange;
+  let yRange;
+  ({ velocityX, velocityY } = windowDimensions);
+  ({ absoluteX, absoluteY } = windowDimensions);
+  const tmp2 = _undefined(windowDimensions.windowDimensions, windowDimensions.safeArea);
+  ({ xRange, yRange } = tmp2);
+  const diff = absoluteX - tmp2.xOffset;
+  const diff1 = absoluteY - tmp2.yOffset;
+  const absolute = Math.abs(velocityY);
+  if (max(absolute, Math.abs(velocityX)) < c1) {
+    const rect = { left: _undefined2(diff, 0, xRange), right: _undefined2(xRange - diff, 0, xRange), top: _undefined2(diff1, 0, yRange), bottom: _undefined2(yRange - diff1, 0, yRange) };
     const _Math = Math;
-    const bound = Math.max(safeArea.left, PIP_WINDOW_OFFSET);
+    const _Object = Object;
+    const items = [];
+    HermesBuiltin.arraySpread(items, Object.values(rect), 0);
     const _Math2 = Math;
-    const bound1 = Math.max(safeArea.top, PIP_WINDOW_OFFSET);
-    const _Math3 = Math;
-    const diff = windowDimensions.width - bound;
-    const diff1 = diff - Math.max(safeArea.right, PIP_WINDOW_OFFSET);
-    const _Math4 = Math;
-    const diff2 = windowDimensions.height - bound1;
-    const diff3 = diff2 - Math.max(safeArea.bottom, PIP_WINDOW_OFFSET);
-    const diff4 = tmp2 - bound;
-    const diff5 = tmp3 - bound1;
-    const _Math5 = Math;
-    const _Math6 = Math;
-    const _Math7 = Math;
-    const absolute = Math.abs(velocityY);
-    if (max(absolute, Math.abs(velocityX)) < MIN_PIP_TOSS_VELOCITY) {
-      if (typeof clamp === "function") {
-        const rect = { left: Math.min(Math.max(diff4, 0), diff1), right: null, top: null, bottom: null };
-        const _Math8 = Math;
-        const _Math9 = Math;
-        if (typeof clamp === "function") {
-          const _Math10 = Math;
-          const _Math11 = Math;
-          rect.right = Math.min(Math.max(tmp20, 0), diff1);
-          if (typeof clamp === "function") {
-            const _Math12 = Math;
-            const _Math13 = Math;
-            rect.top = Math.min(Math.max(diff5, 0), diff3);
-            if (typeof clamp === "function") {
-              const _Math14 = Math;
-              const _Math15 = Math;
-              rect.bottom = Math.min(Math.max(tmp21, 0), diff3);
-              const _Math16 = Math;
-              const _Object = Object;
-              const items = [];
-              HermesBuiltin.arraySpread(items, Object.values(rect), 0);
-              const _Math17 = Math;
-              const applyResult = HermesBuiltin.apply(min, items, Math);
-              let str2 = "left";
-              if (rect.left !== applyResult) {
-                let str3 = "top";
-                if (rect.top !== applyResult) {
-                  let str4 = "bottom";
-                  if (rect.right === applyResult) {
-                    str4 = "right";
-                  }
-                  str3 = str4;
-                }
-                str2 = str3;
-              }
-              if ("left" === str2) {
-                num6 = diff5 / diff3;
-                num5 = 0;
-              } else if ("right" === str2) {
-                num6 = diff5 / diff3;
-                num5 = 1;
-              } else if ("top" === str2) {
-                num5 = diff4 / diff1;
-                num6 = 0;
-              } else {
-                num6 = 0;
-                num5 = 0;
-                if ("bottom" === str2) {
-                  num5 = diff4 / diff1;
-                  num6 = 1;
-                }
-              }
-            } else {
-              throw new TypeError("Trying to call a non-function");
-            }
-          } else {
-            throw new TypeError("Trying to call a non-function");
-          }
-        } else {
-          throw new TypeError("Trying to call a non-function");
+    const applyResult = HermesBuiltin.apply(min, items, Math);
+    let str2 = "left";
+    if (rect.left !== applyResult) {
+      let str3 = "top";
+      if (rect.top !== applyResult) {
+        let str4 = "bottom";
+        if (rect.right === applyResult) {
+          str4 = "right";
         }
-      } else {
-        throw new TypeError("Trying to call a non-function");
+        str3 = str4;
       }
-    } else {
-      const result = velocityY / velocityX;
-      let num2 = 0;
-      if (velocityX > 0) {
-        num2 = diff1;
-      }
-      const sum = diff5 + result * (num2 - diff4);
-      if (sum >= 0) {
-        if (sum <= diff3) {
-          num5 = num2 / diff1;
-          num6 = sum / diff3;
-        }
-      }
-      let num4 = 0;
-      const result1 = 1 / result;
-      if (velocityY > 0) {
-        num4 = diff3;
-      }
-      num5 = (diff4 + result1 * (num4 - diff5)) / diff1;
-      num6 = num4 / diff3;
+      str2 = str3;
     }
-    if (typeof clamp === "function") {
-      const obj = { pipX: Math.min(Math.max(num5, 0), 1), pipY: null };
-      const _Math18 = Math;
-      const _Math19 = Math;
-      if (typeof tmp27 === "function") {
-        const _Math20 = Math;
-        const _Math21 = Math;
-        obj.pipY = Math.min(Math.max(num6, 0), 1);
-        return obj;
-      } else {
-        throw new TypeError("Trying to call a non-function");
-      }
+    if ("left" === str2) {
+      num6 = diff1 / yRange;
+      num5 = 0;
+    } else if ("right" === str2) {
+      num6 = diff1 / yRange;
+      num5 = 1;
+    } else if ("top" === str2) {
+      num5 = diff / xRange;
+      num6 = 0;
     } else {
-      throw new TypeError("Trying to call a non-function");
+      num6 = 0;
+      num5 = 0;
+      if ("bottom" === str2) {
+        num5 = diff / xRange;
+        num6 = 1;
+      }
     }
   } else {
-    throw new TypeError("Trying to call a non-function");
+    const result = velocityY / velocityX;
+    let num2 = 0;
+    if (velocityX > 0) {
+      num2 = xRange;
+    }
+    const sum = diff1 + result * (num2 - diff);
+    if (sum >= 0) {
+      if (sum <= yRange) {
+        num5 = num2 / xRange;
+        num6 = sum / yRange;
+      }
+    }
+    let num4 = 0;
+    const result1 = 1 / result;
+    if (velocityY > 0) {
+      num4 = yRange;
+    }
+    num5 = (diff + result1 * (num4 - diff1)) / xRange;
+    num6 = num4 / yRange;
   }
+  const obj = { pipX: _undefined2(num5, 0, 1), pipY: _undefined2(num6, 0, 1) };
+  return obj;
 }
-calculatePIPPositionFromVelocity.__closure = { getPIPWindowDimensions, MIN_PIP_TOSS_VELOCITY, clamp };
-calculatePIPPositionFromVelocity.__workletHash = 15429903396759;
-calculatePIPPositionFromVelocity.__initData = { code: "function calculatePIPPositionFromVelocity_VoicePanelPIPUtilsTsx7({velocityX:velocityX,velocityY:velocityY,absoluteX:absoluteX,absoluteY:absoluteY,windowDimensions:windowDimensions,safeArea:safeArea}){const{getPIPWindowDimensions,MIN_PIP_TOSS_VELOCITY,clamp}=this.__closure;const pipRegion=getPIPWindowDimensions(windowDimensions,safeArea);const{xRange:xRange,yRange:yRange}=pipRegion;const x=absoluteX-pipRegion.xOffset;const y=absoluteY-pipRegion.yOffset;let pipX=0;let pipY=0;if(Math.max(Math.abs(velocityY),Math.abs(velocityX))<MIN_PIP_TOSS_VELOCITY){const closestEdge=function(specs){const minValue=Math.min(...Object.values(specs));if(specs.left===minValue){return'left';}if(specs.top===minValue){return'top';}if(specs.right===minValue){return'right';}return'bottom';}({left:clamp(x,0,xRange),right:clamp(xRange-x,0,xRange),top:clamp(y,0,yRange),bottom:clamp(yRange-y,0,yRange)});switch(closestEdge){case'left':pipX=0;pipY=y/yRange;break;case'right':pipX=1;pipY=y/yRange;break;case'top':pipY=0;pipX=x/xRange;break;case'bottom':pipY=1;pipX=x/xRange;break;}}else{const slope=velocityY/velocityX;let intersectionY=0;let intersectionX=0;intersectionX=velocityX>0?xRange:0;intersectionY=y+slope*(intersectionX-x);if(intersectionY>=0&&intersectionY<=yRange){pipX=intersectionX/xRange;pipY=intersectionY/yRange;}else{intersectionY=velocityY>0?yRange:0;intersectionX=x+1/slope*(intersectionY-y);pipX=intersectionX/xRange;pipY=intersectionY/yRange;}}return{pipX:clamp(pipX,0,1),pipY:clamp(pipY,0,1)};}" };
+const items12 = [tmp21, tmp22, tmp23];
+calculatePIPPositionFromVelocity.__closure = items12;
+calculatePIPPositionFromVelocity.__workletHash = 7286102854830;
+calculatePIPPositionFromVelocity.__initData = tmp20;
 const xl = nativeDefault.radii.xl;
-const lg = nativeDefault.radii.lg;
+const items13 = [{ code: "(function getVoicePanelPIPBorderRadius_VoicePanelPIPUtilsTsx8(width,height){let[SquareActivityPIPReferenceDimensions,lg,xl]=this.__closure;if(width<=SquareActivityPIPReferenceDimensions.width&&height<=SquareActivityPIPReferenceDimensions.height){return lg;}return xl;})" }, SquareActivityPIPReferenceDimensions, nativeDefault.radii.lg, xl];
+let c0;
+let c1;
+let c2;
+[tmp24, tmp25, tmp26, tmp27] = items13;
 function getVoicePanelPIPBorderRadius(width, height) {
-  if (width <= SquareActivityPIPReferenceDimensions.width) {
+  if (width <= _undefined.width) {
     let tmp3;
     if (height <= tmp.height) {
-      tmp3 = lg;
+      tmp3 = c1;
     }
     return tmp3;
   }
-  tmp3 = xl;
+  tmp3 = c2;
 }
-getVoicePanelPIPBorderRadius.__closure = { SquareActivityPIPReferenceDimensions, lg, xl };
-getVoicePanelPIPBorderRadius.__workletHash = 16865454935363;
-getVoicePanelPIPBorderRadius.__initData = { code: "function getVoicePanelPIPBorderRadius_VoicePanelPIPUtilsTsx8(width,height){const{SquareActivityPIPReferenceDimensions,lg,xl}=this.__closure;if(width<=SquareActivityPIPReferenceDimensions.width&&height<=SquareActivityPIPReferenceDimensions.height){return lg;}return xl;}" };
+const items14 = [tmp25, tmp26, tmp27];
+getVoicePanelPIPBorderRadius.__closure = items14;
+getVoicePanelPIPBorderRadius.__workletHash = 5727386522170;
+getVoicePanelPIPBorderRadius.__initData = tmp24;
 let size = size_mod;
 let result = size.fileFinishedImporting("modules/voice_panel/native/pip/VoicePanelPIPUtils.tsx");
 

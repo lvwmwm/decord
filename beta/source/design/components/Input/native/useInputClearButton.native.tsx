@@ -1,14 +1,14 @@
-// Module ID: 7091
-// Function ID: 7092
+// Module ID: 7157
+// Function ID: 7158
 // Name: useInputClearButton
-// Dependencies: [19, 17, 21, 7092, 1113, 2]
+// Dependencies: [19, 17, 21, 7158, 1113, 2]
 // Exports: useInputClearButton, useInputClearButtonConfig
 
-// Module 7091 (useInputClearButton)
+// Module 7157 (useInputClearButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
-import CircleXIcon from "CircleXIcon" /* 7092 */;
+import CircleXIcon from "CircleXIcon" /* 7158 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -19,34 +19,46 @@ const result = size.fileFinishedImporting("design/components/Input/native/useInp
 export function useInputClearButton(clearProps, clearState) {
   let intl;
   let obj2;
+  let obj3;
   const clearable = clearProps.clearable;
-  let tmp;
-  if (undefined !== clearable) {
-    if (clearable) {
-      if (clearState.hasValue) {
-        const obj = { content: jsx(CircleXIcon.CircleXIcon, { size: "xs" }), pressableProps: obj2 };
-        obj2 = { onPress: clearState.clear, accessibilityLabel: intl.string(intl2.t.VkKicb), accessibilityRole: "button", hitSlop: 4 };
+  const disabled = clearProps.disabled;
+  const readOnly = clearProps.readOnly;
+  let tmp4;
+  const tmp = undefined !== clearable && clearable;
+  const tmp3 = undefined !== readOnly && readOnly;
+  if (tmp) {
+    if (clearState.hasValue) {
+      if (!tmp3) {
+        const obj = { content: jsx(CircleXIcon.CircleXIcon, { size: "xs", accessible: false }), pressableProps: obj2 };
+        obj2 = { onPress: clearState.clear, disabled: undefined !== disabled && disabled, accessibilityState: obj3, accessibilityLabel: intl.string(intl2.t.VkKicb), accessibilityRole: "button", hitSlop: 4 };
+        obj3 = { disabled: undefined !== disabled && disabled };
         intl = intl2.intl;
-        tmp = obj;
+        tmp4 = obj;
       }
     }
   }
-  let tmp6 = null;
-  if (null != tmp) {
-    const merged = Object.assign(tmp.pressableProps);
-    tmp6 = <Pressable>{tmp.content}</Pressable>;
+  let tmp9 = null;
+  if (null != tmp4) {
+    const merged = Object.assign(tmp4.pressableProps);
+    tmp9 = <Pressable>{tmp4.content}</Pressable>;
   }
-  return tmp6;
+  return tmp9;
 }
 export function useInputClearButtonConfig(merged, state) {
   let intl;
   let obj2;
+  let obj3;
   const clearable = merged.clearable;
-  if (undefined !== clearable) {
-    if (clearable) {
-      if (state.hasValue) {
-        const obj = { content: jsx(CircleXIcon.CircleXIcon, { size: "xs" }), pressableProps: obj2 };
-        obj2 = { onPress: state.clear, accessibilityLabel: intl.string(intl2.t.VkKicb), accessibilityRole: "button", hitSlop: 4 };
+  const disabled = merged.disabled;
+  const readOnly = merged.readOnly;
+  const tmp = undefined !== clearable && clearable;
+  const tmp3 = undefined !== readOnly && readOnly;
+  if (tmp) {
+    if (state.hasValue) {
+      if (!tmp3) {
+        const obj = { content: jsx(CircleXIcon.CircleXIcon, { size: "xs", accessible: false }), pressableProps: obj2 };
+        obj2 = { onPress: state.clear, disabled: undefined !== disabled && disabled, accessibilityState: obj3, accessibilityLabel: intl.string(intl2.t.VkKicb), accessibilityRole: "button", hitSlop: 4 };
+        obj3 = { disabled: undefined !== disabled && disabled };
         intl = intl2.intl;
         return obj;
       }

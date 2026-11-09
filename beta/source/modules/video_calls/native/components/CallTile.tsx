@@ -1,30 +1,33 @@
-// Module ID: 12037
-// Function ID: 12038
+// Module ID: 12203
+// Function ID: 12204
 // Name: CallTile
-// Dependencies: [19, 17, 6714, 1383, 11000, 5681, 21, 5014, 5011, 575, 7326, 1625, 504, 5759, 8750, 11757, 12009, 11778, 11787, 12038, 12043, 12044, 12045, 12046, 12047, 1187, 11701, 5095, 5254, 12048, 2]
+// Dependencies: [19, 17, 6769, 1385, 11130, 5805, 21, 5140, 5137, 575, 7387, 1627, 504, 5888, 8821, 11920, 12175, 11941, 11950, 12204, 12209, 12210, 12211, 12212, 12213, 1187, 11864, 1652, 5370, 12214, 2]
 
-// Module 12037 (CallTile)
+// Module 12203 (CallTile)
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1625 */;
-import timing from "timing" /* 5254 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5759 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8750 */;
-import TouchableStreamPreviewDefault from "TouchableStreamPreview" /* 12038 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12043 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 12044 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 12045 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 12046 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 12047 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
+import _mod1652 from "module_1652" /* 1652 */;
+import timing_timing from "timing/timing" /* 5370 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5888 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8821 */;
+import RevealProvider from "RevealProvider" /* 11864 */;
+import TouchableStreamPreviewDefault from "TouchableStreamPreview" /* 12204 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12209 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 12210 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 12211 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 12212 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 12213 */;
+import ParticipantTitleDefault from "ParticipantTitle" /* 12214 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6714 */;
-import UserStore from "UserStore" /* 1383 */;
-import ChannelCallStore from "ChannelCallStore" /* 11000 */;
-import CallConstants from "CallConstants" /* 5681 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6769 */;
+import UserStore from "UserStore" /* 1385 */;
+import ChannelCallStore from "ChannelCallStore" /* 11130 */;
+import CallConstants from "CallConstants" /* 5805 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
-import ColorUtils_mod from "ColorUtils" /* 5011 */;
+import createStyles_mod from "createStyles" /* 5140 */;
+import ColorUtils_mod from "ColorUtils" /* 5137 */;
 import size from "module_2" /* 2 */;
 
 let obj1;
@@ -56,7 +59,7 @@ class StreamPreviewTile {
     obj2 = {
       guildId: participant.stream.guildId,
       userId: participant.user.id,
-      style: { aspectRatio: "dispatch", borderRadius: false },
+      style: { aspectRatio: "description", borderRadius: false },
       disableTransition: true,
       onPress() {
         return closure_1_8();
@@ -100,48 +103,56 @@ class TileOverlay {
     let hasRightSafeArea;
     let hasTopSafeArea;
     let isActiveStream;
-    let items;
-    let items1;
     let items2;
+    let items3;
+    let items4;
     let left;
     let num2;
     let num3;
     let num4;
-    let obj6;
+    let obj4;
     let participant;
     let right;
+    let tmp10;
+    let tmp7;
+    let tmp8;
+    let tmp9;
     let top;
     ({ participant, isActiveStream } = arg0);
-    let reveal;
     ({ channel, hasLeftSafeArea, hasRightSafeArea, hasBottomSafeArea, hasTopSafeArea } = arg0);
     let tmp = closure_16();
     ({ bottom, left, top, right } = useSafeAreaInsetsDefault());
     useSafeAreaInsetsDefault();
-    const tmp5 = reveal;
-    reveal = react.useContext(reveal(11701).RevealContext).reveal;
-    let obj = reveal(5095);
-    class T {
+    const reveal = react.useContext(RevealProvider.RevealContext).reveal;
+    const items = [closure_19, , , ];
+    const useAnimatedStyle = _mod1652.useAnimatedStyle;
+    _mod1652;
+    items[1] = timing_timing.withTiming;
+    items[2] = reveal;
+    items[3] = native.STANDARD_EASING;
+    let c0;
+    let c1;
+    let c2;
+    [tmp7, tmp8, tmp9, tmp10] = items;
+    class CallTileTsx1 {
       constructor() {
-        tmp = closure_0;
-        tmp2 = closure_2;
-        tmp3 = closure_0(closure_2[28]);
         num = 0;
-        withTiming = tmp3.withTiming;
-        if (reveal) {
+        tmp = closure_0;
+        if (closure_1) {
           num = 1;
         }
         obj = { opacity: null };
-        obj1 = { easing: tmp(tmp2[25]).STANDARD_EASING, duration: 250 };
-        obj.opacity = withTiming(num, obj1);
+        obj1 = { easing: closure_2, duration: 250 };
+        obj.opacity = tmp(num, obj1);
         return obj;
       }
     }
-    let obj2 = { withTiming: reveal(5254).withTiming, reveal, STANDARD_EASING: reveal(1187).STANDARD_EASING };
-    T.__closure = obj2;
-    T.__workletHash = 15640123774063;
-    T.__initData = __initData;
+    const items1 = [tmp8, tmp9, tmp10];
+    CallTileTsx1.__closure = items1;
+    CallTileTsx1.__workletHash = 15791495111542;
+    CallTileTsx1.__initData = tmp7;
     let num = 0;
-    const animatedStyle = obj.useAnimatedStyle(T);
+    const animatedStyle = useAnimatedStyle(CallTileTsx1);
     if (hasBottomSafeArea) {
       num = bottom;
     }
@@ -158,19 +169,19 @@ class TileOverlay {
     if (hasTopSafeArea) {
       num4 = top;
     }
-    const obj3 = { pointerEvents: "none", style: items, children: items1 };
-    items = [absoluteFill.absoluteFill, rect, animatedStyle];
-    const View = tmp2(5095).View;
+    let obj = { pointerEvents: "none", style: items2, children: items3 };
+    items2 = [absoluteFill.absoluteFill, rect, animatedStyle];
+    const View = tmp2(1652).View;
     if (isActiveStream) {
-      const obj4 = { style: tmp.liveContainer, children: closure_13(tmp5(1187).LiveTag, {}) };
-      isActiveStream = closure_13(closure_5, obj4);
+      const obj2 = { style: tmp.liveContainer, children: map1(native.LiveTag, {}) };
+      isActiveStream = map1(hasOwnProperty, obj2);
     }
-    items1 = [isActiveStream, ];
-    const obj5 = { style: tmp.usernamePosition, children: closure_15(closure_5, obj6) };
-    obj6 = { style: tmp.usernameContainer, children: items2 };
-    items2 = [closure_13(ParticipantIcon, { participant }), closure_13(tmp2(12048), { channel, participant })];
-    items1[1] = closure_13(closure_5, obj5);
-    return closure_15(View, obj3);
+    items3 = [isActiveStream, ];
+    const obj3 = { style: tmp.usernamePosition, children: closure_15(hasOwnProperty, obj4) };
+    obj4 = { style: tmp.usernameContainer, children: items4 };
+    items4 = [map1(ParticipantIcon, { participant }), map1(ParticipantTitleDefault, { channel, participant })];
+    items3[1] = map1(hasOwnProperty, obj3);
+    return closure_15(View, obj);
   }
 }
 ({ StyleSheet: closure_4, View: hasOwnProperty } = react_native);
@@ -187,7 +198,7 @@ obj3 = { flex: 1, width: "100%", backgroundColor: nativeDefault.unsafe_rawColors
 obj4 = { flex: 1, alignItems: "center", justifyContent: "center", overflow: "hidden", width: "100%", backgroundColor: nativeDefault.colors.BLACK };
 obj5 = { backgroundColor: nativeDefault.colors.BLACK };
 const authStore4 = createStyles(obj);
-const __initData = { code: "function CallTileTsx1(){const{withTiming,reveal,STANDARD_EASING}=this.__closure;return{opacity:withTiming(reveal?1:0,{easing:STANDARD_EASING,duration:250})};}" };
+let closure_19 = { code: "(function CallTileTsx1(){let[withTiming,reveal,STANDARD_EASING]=this.__closure;return{opacity:withTiming(reveal?1:0,{easing:STANDARD_EASING,duration:250})};})" };
 const memoResult = react.memo(function CallTitle(participant) {
   let avatarSize;
   let contentStyle;

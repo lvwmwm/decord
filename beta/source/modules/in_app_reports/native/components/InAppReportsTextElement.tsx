@@ -1,16 +1,16 @@
-// Module ID: 8375
-// Function ID: 8376
+// Module ID: 8446
+// Function ID: 8447
 // Name: InAppReportsTextElement
-// Dependencies: [19, 17, 21, 5014, 6031, 5624, 2]
+// Dependencies: [19, 17, 21, 5140, 6163, 5751, 2]
 // Exports: default
 
-// Module 8375 (InAppReportsTextElement)
+// Module 8446 (InAppReportsTextElement)
 import react_native from "react-native" /* 17 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import CustomMarkupAll from "CustomMarkup" /* 6031 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import CustomMarkupAll from "CustomMarkup" /* 6163 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -40,13 +40,13 @@ export default function TextElement(element) {
       const tmp5 = metroRequire;
       const tmp6 = View;
       if (tmp7) {
-        const obj3 = { style: tmp.header, variant: "heading-md/extrabold", color: "mobile-text-heading-primary", children: header };
+        const obj3 = { style: tmp.header, variant: "heading-sm/semibold", color: "mobile-text-heading-primary", children: header };
         tmp7 = hasOwnProperty(Text_Text.Text, obj3);
       }
       items = [tmp7, ];
       let tmp10 = null != body;
       if (tmp10) {
-        const obj4 = { style: tmp.body, variant: "text-md/medium", children: ref.current(body) };
+        const obj4 = { style: tmp.body, variant: "body-md/medium", children: ref.current(body) };
         const Text = Text_Text.Text;
         tmp10 = hasOwnProperty(Text, obj4);
       }

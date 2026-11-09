@@ -1,14 +1,14 @@
-// Module ID: 19279
-// Function ID: 19280
+// Module ID: 19676
+// Function ID: 19677
 // Name: VoicePanelAccessibilityView
-// Dependencies: [19, 19110, 21, 6018, 19199, 2]
+// Dependencies: [19, 19486, 21, 6150, 19575, 2]
 // Exports: default
 
-// Module 19279 (VoicePanelAccessibilityView)
+// Module 19676 (VoicePanelAccessibilityView)
 import Fragment from "Fragment" /* 21 */;
-import AccessibilityView from "AccessibilityView" /* 6018 */;
-import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 19110 */;
-import VoicePanelPIPStateContext from "VoicePanelPIPStateContext" /* 19199 */;
+import AccessibilityView from "AccessibilityView" /* 6150 */;
+import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 19486 */;
+import VoicePanelPIPStateContext from "VoicePanelPIPStateContext" /* 19575 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

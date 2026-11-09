@@ -1,96 +1,87 @@
 // Module ID: 10634
 // Function ID: 10635
-// Dependencies: [1650, 10635, 10636, 10637]
-// Exports: useCommonVariables
+// Dependencies: [10446, 10447]
+// Exports: parseDuration, parseNumberPattern, parseOrdinalNumberPattern, parseYear
 
 // Module 10634
-import handlerOffsetDirection from "handlerOffsetDirection" /* 10635 */;
-import omitZero from "omitZero" /* 10636 */;
-import computeOffsetIfSizeChanged from "computeOffsetIfSizeChanged" /* 10637 */;
+import repeatedTimeunitPattern from "repeatedTimeunitPattern" /* 10446 */;
+import findMostLikelyADYear from "findMostLikelyADYear" /* 10447 */;
 
-let closure_2 = { code: "function pnpm_useCommonVariablesTs1(){const{prevDataLength,dataLength,loop}=this.__closure;const previousLength=prevDataLength.value;const currentLength=dataLength;const isLengthChanged=previousLength!==currentLength;const shouldComputed=isLengthChanged&&loop;if(shouldComputed)prevDataLength.value=dataLength;return{shouldComputed:shouldComputed,previousLength:previousLength,currentLength:currentLength};}" };
-let closure_3 = { code: "function pnpm_useCommonVariablesTs2({shouldComputed:shouldComputed,previousLength:previousLength,currentLength:currentLength}){const{handlerOffsetDirection,handlerOffset,computeOffsetIfDataChanged,size}=this.__closure;if(shouldComputed){const direction=handlerOffsetDirection(handlerOffset);handlerOffset.value=computeOffsetIfDataChanged({direction:direction,previousLength:previousLength,currentLength:currentLength,size:size,handlerOffset:handlerOffset.value});}}" };
-let closure_4 = { code: "function pnpm_useCommonVariablesTs3(){const{prevSize,size}=this.__closure;const previousSize=prevSize.value;const isSizeChanged=previousSize!==size;const shouldComputed=isSizeChanged;if(shouldComputed)prevSize.value=size;return{shouldComputed:shouldComputed,previousSize:previousSize,size:size};}" };
-let closure_5 = { code: "function pnpm_useCommonVariablesTs4({shouldComputed:shouldComputed,previousSize:previousSize,size:size}){const{handlerOffset,computeOffsetIfSizeChanged}=this.__closure;if(shouldComputed){handlerOffset.value=computeOffsetIfSizeChanged({handlerOffset:handlerOffset.value,prevSize:previousSize,size:size});}}" };
+const combined = "(" + exports.NUMBER_PATTERN + ")\\s{0,5}(" + repeatedTimeunitPattern.matchAnyPattern(exports.TIME_UNIT_DICTIONARY) + ")\\s{0,5}";
+const regExp = new RegExp(combined, "i");
+const combined1 = "(" + exports.NUMBER_PATTERN + ")\\s{0,5}(" + repeatedTimeunitPattern.matchAnyPattern(exports.TIME_UNIT_NO_ABBR_DICTIONARY) + ")\\s{0,5}";
 
-export function useCommonVariables(initProps) {
-  let dataLength;
-  let defaultScrollOffsetValue;
-  let loop;
-  let width;
-  ({ width, dataLength } = initProps);
-  ({ defaultScrollOffsetValue, loop } = initProps);
-  const defaultIndex = initProps.defaultIndex;
-  if (initProps.vertical) {
-    width = initProps.height;
+export function parseDuration(arg0) {
+  let str = arg0;
+  const obj = {};
+  let match = regExp.exec(arg0);
+  while (match) {
+    let parsed;
+    let str2 = match[1];
+    let formatted = str2.toLowerCase();
+    let tmp3 = exports;
+    if (undefined !== exports.INTEGER_WORD_DICTIONARY[formatted]) {
+      parsed = tmp3.INTEGER_WORD_DICTIONARY[formatted];
+    } else {
+      let _parseInt = parseInt;
+      parsed = parseInt(formatted);
+    }
+    let str3 = match[2];
+    obj[tmp3.TIME_UNIT_DICTIONARY[str3.toLowerCase(str3)]] = parsed;
+    let substr = str.substring(match[0].length);
+    match = regExp.exec(substr);
+    str = substr;
   }
-  const tmp2 = dataLength;
-  let tmp = -Math.abs(defaultIndex * width);
-  let obj = dataLength(loop[0]);
-  if (defaultScrollOffsetValue == null) {
-    defaultScrollOffsetValue = obj.useSharedValue(tmp);
-  }
-  const tmp2Result = tmp2(loop[0]);
-  const sharedValue = tmp2Result.useSharedValue(dataLength);
-  const tmp2Result4 = tmp2(loop[0]);
-  const sharedValue1 = tmp2Result4.useSharedValue(width);
-  const fn = function f() {
-    const previousLength = sharedValue.value;
-    const currentLength = dataLength;
-    let shouldComputed = previousLength !== dataLength;
-    const tmp = sharedValue;
-    if (shouldComputed) {
-      shouldComputed = loop;
-    }
-    if (shouldComputed) {
-      tmp.value = currentLength;
-    }
-    return { shouldComputed, previousLength, currentLength };
-  };
-  fn.__closure = { prevDataLength: sharedValue, dataLength, loop };
-  fn.__workletHash = 16900133248154;
-  fn.__initData = width;
-  const fn2 = function h(shouldComputed) {
-    if (shouldComputed.shouldComputed) {
-      const obj = handlerOffsetDirection;
-      const result = obj.handlerOffsetDirection(defaultScrollOffsetValue);
-      const obj3 = { direction: result, previousLength: tmp, currentLength: tmp2, size: width, handlerOffset: defaultScrollOffsetValue.value };
-      const obj2 = omitZero;
-      defaultScrollOffsetValue.value = obj2.computeOffsetIfDataChanged(obj3);
-    }
-  };
-  const tmp2Result5 = tmp2(loop[0]);
-  let obj2 = { handlerOffsetDirection: tmp2(tmp3[1]).handlerOffsetDirection, handlerOffset: defaultScrollOffsetValue, computeOffsetIfDataChanged: tmp2(tmp3[2]).computeOffsetIfDataChanged, size: width };
-  fn2.__closure = obj2;
-  fn2.__workletHash = 6990374823872;
-  fn2.__initData = defaultScrollOffsetValue;
-  const items = [dataLength, loop];
-  const animatedReaction = tmp2Result5.useAnimatedReaction(fn, fn2, items);
-  const fn3 = function c() {
-    const previousSize = sharedValue1.value;
-    size = width;
-    const shouldComputed = previousSize !== width;
-    if (shouldComputed) {
-      sharedValue1.value = size;
-    }
-    return { shouldComputed, previousSize, size };
-  };
-  fn3.__closure = { prevSize: sharedValue1, size: width };
-  fn3.__workletHash = 10373775645111;
-  fn3.__initData = sharedValue;
-  const fn4 = function l(shouldComputed) {
-    if (shouldComputed.shouldComputed) {
-      const obj2 = { handlerOffset: defaultScrollOffsetValue.value, prevSize: tmp, size: tmp2 };
-      const obj = computeOffsetIfSizeChanged;
-      defaultScrollOffsetValue.value = obj.computeOffsetIfSizeChanged(obj2);
-    }
-  };
-  const tmp2Result6 = tmp2(loop[0]);
-  let obj3 = { handlerOffset: defaultScrollOffsetValue, computeOffsetIfSizeChanged: tmp2(tmp3[3]).computeOffsetIfSizeChanged };
-  fn4.__closure = obj3;
-  fn4.__workletHash = 12618693189041;
-  fn4.__initData = sharedValue1;
-  const items1 = [width];
-  const animatedReaction1 = tmp2Result6.useAnimatedReaction(fn3, fn4, items1);
-  return { size: width, validLength: dataLength - 1, handlerOffset: defaultScrollOffsetValue };
+  return obj;
 }
+export function parseNumberPattern(match) {
+  let parsed;
+  const formatted = match.toLowerCase();
+  if (undefined !== exports.INTEGER_WORD_DICTIONARY[formatted]) {
+    parsed = exports.INTEGER_WORD_DICTIONARY[formatted];
+  } else {
+    const _parseInt = parseInt;
+    parsed = parseInt(formatted);
+  }
+  return parsed;
+}
+export function parseOrdinalNumberPattern(match) {
+  const formatted = match.toLowerCase();
+  if (undefined !== exports.ORDINAL_NUMBER_DICTIONARY[formatted]) {
+    return exports.ORDINAL_NUMBER_DICTIONARY[formatted];
+  } else {
+    const _parseInt = parseInt;
+    return parseInt(formatted);
+  }
+}
+export function parseYear(match) {
+  const obj = /\d+/;
+  if (obj.test(match)) {
+    const _parseInt2 = parseInt;
+    const parsed = parseInt(match);
+    let findMostLikelyADYearResult = parsed;
+    if (parsed < 100) {
+      findMostLikelyADYearResult = findMostLikelyADYear.findMostLikelyADYear(parsed);
+    }
+    return findMostLikelyADYearResult;
+  } else {
+    const formatted = match.toLowerCase();
+    if (undefined !== exports.INTEGER_WORD_DICTIONARY[formatted]) {
+      return exports.INTEGER_WORD_DICTIONARY[formatted];
+    } else {
+      const _parseInt = parseInt;
+      return parseInt(match);
+    }
+  }
+}
+export const WEEKDAY_DICTIONARY = { "s\u00f6ndag": 0, "s\u00f6n": 0, so: 0, "m\u00e5ndag": 1, "m\u00e5n": 1, "m\u00e5": 1, tisdag: 2, tis: 2, ti: 2, onsdag: 3, ons: 3, on: 3, torsdag: 4, tors: 4, to: 4, fredag: 5, fre: 5, fr: 5, "l\u00f6rdag": 6, "l\u00f6r": 6, "l\u00f6": 6 };
+export const MONTH_DICTIONARY = { januari: 1, jan: 1, "jan.": 1, februari: 2, feb: 2, "feb.": 2, mars: 3, mar: 3, "mar.": 3, april: 4, apr: 4, "apr.": 4, maj: 5, juni: 6, jun: 6, "jun.": 6, juli: 7, jul: 7, "jul.": 7, augusti: 8, aug: 8, "aug.": 8, september: 9, sep: 9, "sep.": 9, sept: 9, oktober: 10, okt: 10, "okt.": 10, november: 11, nov: 11, "nov.": 11, december: 12, dec: 12, "dec.": 12 };
+export const ORDINAL_NUMBER_DICTIONARY = { "f\u00f6rsta": 1, andra: 2, tredje: 3, "fj\u00e4rde": 4, femte: 5, "sj\u00e4tte": 6, sjunde: 7, "\u00e5ttonde": 8, nionde: 9, tionde: 10, elfte: 11, tolfte: 12, trettonde: 13, fjortonde: 14, femtonde: 15, sextonde: 16, sjuttonde: 17, artonde: 18, nittonde: 19, tjugonde: 20, "tjugof\u00f6rsta": 21, tjugoandra: 22, tjugotredje: 23, "tjugofj\u00e4rde": 24, tjugofemte: 25, "tjugosj\u00e4tte": 26, tjugosjunde: 27, "tjugo\u00e5ttonde": 28, tjugonionde: 29, trettionde: 30, "trettiof\u00f6rsta": 31 };
+export const INTEGER_WORD_DICTIONARY = { en: 1, ett: 1, "tv\u00e5": 2, tre: 3, fyra: 4, fem: 5, sex: 6, sju: 7, "\u00e5tta": 8, nio: 9, tio: 10, elva: 11, tolv: 12, tretton: 13, fjorton: 14, femton: 15, sexton: 16, sjutton: 17, arton: 18, nitton: 19, tjugo: 20, "tretti\u043e": 30, fyrtio: 40, femtio: 50, sextio: 60, sjuttio: 70, "\u00e5ttio": 80, nittio: 90, hundra: 100, tusen: 1000 };
+export const TIME_UNIT_DICTIONARY = { sek: "second", sekund: "second", sekunder: "second", min: "minute", minut: "minute", minuter: "minute", tim: "hour", timme: "hour", timmar: "hour", dag: "day", dagar: "day", vecka: "week", veckor: "week", "m\u00e5n": "month", "m\u00e5nad": "month", "m\u00e5nader": "month", "\u00e5r": "year", "kvart\u0430l": "quarter", kvartal: "quarter" };
+export const TIME_UNIT_NO_ABBR_DICTIONARY = { sekund: "second", sekunder: "second", minut: "minute", minuter: "minute", timme: "hour", timmar: "hour", dag: "day", dagar: "day", vecka: "week", veckor: "week", "m\u00e5nad": "month", "m\u00e5nader": "month", "\u00e5r": "year", kvartal: "quarter" };
+export const NUMBER_PATTERN = "(?:" + repeatedTimeunitPattern.matchAnyPattern(exports.INTEGER_WORD_DICTIONARY) + "|\\d+)";
+export const ORDINAL_NUMBER_PATTERN = "(?:" + repeatedTimeunitPattern.matchAnyPattern(exports.ORDINAL_NUMBER_DICTIONARY) + "|\\d{1,2}(?:e|:e))";
+export const TIME_UNIT_PATTERN = "(?:" + repeatedTimeunitPattern.matchAnyPattern(exports.TIME_UNIT_DICTIONARY) + ")";
+export const TIME_UNITS_PATTERN = repeatedTimeunitPattern.repeatedTimeunitPattern("", combined);
+export const TIME_UNITS_NO_ABBR_PATTERN = repeatedTimeunitPattern.repeatedTimeunitPattern("", combined1);

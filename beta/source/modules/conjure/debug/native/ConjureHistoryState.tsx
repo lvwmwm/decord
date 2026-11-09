@@ -1,18 +1,18 @@
-// Module ID: 13029
-// Function ID: 13030
+// Module ID: 13253
+// Function ID: 13254
 // Name: ConjureHistoryState
-// Dependencies: [19, 17, 21, 5014, 575, 5624, 1113, 3868, 2]
+// Dependencies: [19, 17, 21, 5140, 575, 5751, 1113, 4026, 2]
 // Exports: ConjureHistoryNotice, ConjureHistoryPlaceholder
 
-// Module 13029 (ConjureHistoryState)
+// Module 13253 (ConjureHistoryState)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import _modDef3868 from "module_3868" /* 3868 */;
-import Text_Text from "Text/Text" /* 5624 */;
+import _modDef4026 from "module_4026" /* 4026 */;
+import Text_Text from "Text/Text" /* 5751 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -41,15 +41,15 @@ export function ConjureHistoryPlaceholder(state) {
   const Text = Text_Text.Text;
   if ("failed" === state.state.status) {
     const intl = tmp5(1113).intl;
-    emptyTitle = intl.string(_modDef3868.h1SE6R);
+    emptyTitle = intl.string(_modDef4026.h1SE6R);
   }
-  items = [React3(Text, { variant: "text-sm/medium", color: "text-default", children: emptyTitle }), ];
-  const Text2 = tmp5(5624).Text;
+  items = [React3(Text, { variant: "body-sm/medium", color: "text-default", children: emptyTitle }), ];
+  const Text2 = tmp5(5751).Text;
   if ("failed" === state.state.status) {
     const intl2 = tmp5(1113).intl;
-    emptyBody = intl2.string(_modDef3868["8SErdg"]);
+    emptyBody = intl2.string(_modDef4026["8SErdg"]);
   }
-  items[1] = React3(Text2, { variant: "text-xs/normal", color: "text-muted", children: emptyBody });
+  items[1] = React3(Text2, { variant: "body-xs/normal", color: "text-muted", children: emptyBody });
   return tmp2(tmp3, obj);
 }
 export function ConjureHistoryNotice(state) {
@@ -60,14 +60,14 @@ export function ConjureHistoryNotice(state) {
   if (state.hasRows) {
     let tmp2;
     if ("failed" === state.status) {
-      const obj2 = { variant: "text-xs/normal", color: "text-feedback-critical", children: intl2.string(_modDef3868.h1SE6R) };
+      const obj2 = { variant: "body-xs/normal", color: "text-feedback-critical", children: intl2.string(_modDef4026.h1SE6R) };
       const Text2 = Text_Text.Text;
       intl2 = intl3.intl;
       tmp2 = React3(Text2, obj2);
     } else {
       tmp2 = null;
       if (state.truncated) {
-        const obj = { variant: "text-xs/normal", color: "text-muted", children: intl.string(_modDef3868.V7Ri8H) };
+        const obj = { variant: "body-xs/normal", color: "text-muted", children: intl.string(_modDef4026.V7Ri8H) };
         const Text = Text_Text.Text;
         intl = intl3.intl;
         tmp2 = React3(Text, obj);

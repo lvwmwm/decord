@@ -1,17 +1,17 @@
-// Module ID: 13017
-// Function ID: 13018
+// Module ID: 13241
+// Function ID: 13242
 // Name: ConjurePerfTraceStatsHeader
-// Dependencies: [19, 17, 21, 5014, 575, 13018, 10894, 5624, 2]
+// Dependencies: [19, 17, 21, 5140, 575, 13242, 11019, 5751, 2]
 // Exports: default
 
-// Module 13017 (ConjurePerfTraceStatsHeader)
+// Module 13241 (ConjurePerfTraceStatsHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import ConjurePerfTraceFormat from "ConjurePerfTraceFormat" /* 13018 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import ConjurePerfTraceFormat from "ConjurePerfTraceFormat" /* 13242 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -57,7 +57,7 @@ export default function ConjurePerfTraceStatsHeader(stats) {
   let items;
   stats = stats.stats;
   let tmp = stats;
-  let obj = stats(13018);
+  let obj = stats(13242);
   const perfModelSummaryResult = obj.perfModelSummary(stats);
   let tmp4 = closure_6();
   dependencyMap = tmp4;
@@ -98,7 +98,7 @@ export default function ConjurePerfTraceStatsHeader(stats) {
       items = [closure_1.swatch, closure_2[item]];
       const obj2 = { style: closure_1.legendItem, children: items1 };
       items1 = [_false(View, obj3), , ];
-      const obj4 = { variant: "text-xs/normal", color: "text-muted", children: ConjurePerfTraceFormat.PERF_CATEGORY_LABELS[item] };
+      const obj4 = { variant: "body-xs/normal", color: "text-muted", children: ConjurePerfTraceFormat.PERF_CATEGORY_LABELS[item] };
       const Text = Text_Text.Text;
       items1[1] = _false(Text, obj4);
       let tmp6Result = null;
@@ -106,20 +106,20 @@ export default function ConjurePerfTraceStatsHeader(stats) {
       const tmp5 = View;
       const tmp6 = _false;
       if (null != perfCategoryTotalResult) {
-        const obj5 = { variant: "text-xs/normal", color: "text-subtle", children: perfCategoryTotalResult };
+        const obj5 = { variant: "body-xs/normal", color: "text-subtle", children: perfCategoryTotalResult };
         tmp6Result = tmp6(Text_Text.Text, obj5);
       }
       items1[2] = tmp6Result;
       return tmp4(tmp5, obj2, item);
     })
   };
-  PERF_CATEGORIES = stats(10894).PERF_CATEGORIES;
+  PERF_CATEGORIES = stats(11019).PERF_CATEGORIES;
   items[1] = closure_3(closure_2, obj4);
   let tmp7Result = null;
   const tmp7 = closure_3;
   if (null != perfModelSummaryResult) {
-    let obj5 = { variant: "text-sm/normal", color: "text-default", children: perfModelSummaryResult };
-    tmp7Result = tmp7(tmp(5624).Text, obj5);
+    let obj5 = { variant: "body-sm/normal", color: "text-default", children: perfModelSummaryResult };
+    tmp7Result = tmp7(tmp(5751).Text, obj5);
   }
   items[2] = tmp7Result;
   return tmp5(tmp6, obj2);

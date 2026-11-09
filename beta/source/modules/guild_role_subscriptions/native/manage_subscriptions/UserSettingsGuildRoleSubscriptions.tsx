@@ -1,21 +1,21 @@
-// Module ID: 17195
-// Function ID: 17196
+// Module ID: 17521
+// Function ID: 17522
 // Name: UserSettingsGuildRoleSubscriptions
-// Dependencies: [19, 17, 21, 5014, 5624, 1113, 1187, 17196, 17197, 17198, 17201, 17202, 2]
+// Dependencies: [19, 17, 21, 5140, 5751, 1113, 1187, 17522, 17523, 17524, 17527, 17528, 2]
 // Exports: default
 
-// Module 17195 (UserSettingsGuildRoleSubscriptions)
+// Module 17521 (UserSettingsGuildRoleSubscriptions)
 import intl3 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import useRestorePurchasesDefault from "useRestorePurchases" /* 17196 */;
-import useActiveGuildSubscriptionsDefault from "useActiveGuildSubscriptions" /* 17197 */;
-import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 17198 */;
-import ManageSubscriptionCardDefault from "ManageSubscriptionCard" /* 17202 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import useRestorePurchasesDefault from "useRestorePurchases" /* 17522 */;
+import useActiveGuildSubscriptionsDefault from "useActiveGuildSubscriptions" /* 17523 */;
+import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 17524 */;
+import ManageSubscriptionCardDefault from "ManageSubscriptionCard" /* 17528 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -23,18 +23,18 @@ let closure_4;
 let hasOwnProperty;
 let metroRequire;
 let tmp2;
-const LoadingIndicatorDefault = tmp2(17201);
+const LoadingIndicatorDefault = tmp2(17527);
 function GuildRoleSubscriptionsSectionHeader() {
   let intl;
   let intl2;
   let items;
   const tmp = closure_8();
   const obj = { style: tmp.sectionHeader, children: items };
-  const obj2 = { variant: "eyebrow", color: "text-default", children: intl.string(intl3.t["KzCF/6"]) };
+  const obj2 = { variant: "body-sm/medium", color: "text-default", children: intl.string(intl3.t["KzCF/6"]) };
   const Text = Text_Text.Text;
   intl = intl3.intl;
   items = [hasOwnProperty(Text, obj2), ];
-  const obj3 = { style: tmp.sectionSubtitle, variant: "text-sm/medium", color: "text-default", children: intl2.string(intl3.t["Y+ucR7"]) };
+  const obj3 = { style: tmp.sectionSubtitle, variant: "body-sm/medium", color: "text-default", children: intl2.string(intl3.t["Y+ucR7"]) };
   const Text2 = Text_Text.Text;
   intl2 = intl3.intl;
   items[1] = hasOwnProperty(Text2, obj3);

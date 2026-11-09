@@ -1,27 +1,27 @@
-// Module ID: 18337
-// Function ID: 18338
+// Module ID: 18675
+// Function ID: 18676
 // Name: GameCommunityMultiGuildUpsellCard
-// Dependencies: [5, 32, 19, 17, 5015, 4947, 4885, 1072, 21, 5014, 575, 504, 1409, 1444, 1491, 7522, 7521, 6902, 6906, 1113, 9509, 5717, 9306, 1187, 5624, 5634, 9874, 8028, 9756, 2]
+// Dependencies: [5, 32, 19, 17, 5141, 5073, 5011, 1072, 21, 5140, 575, 504, 1411, 1446, 1493, 7594, 7593, 6957, 6961, 1113, 9593, 5842, 9387, 1187, 5751, 5758, 9996, 8098, 9846, 2]
 // Exports: default
 
-// Module 18337 (GameCommunityMultiGuildUpsellCard)
+// Module 18675 (GameCommunityMultiGuildUpsellCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl7 from "intl" /* 1113 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1409 */;
-import ImageLoaderUtils from "ImageLoaderUtils" /* 1444 */;
-import transitionToGuild from "transitionToGuild" /* 7522 */;
-import IconButton2 from "IconButton" /* 8028 */;
-import MoreHorizontalIcon from "MoreHorizontalIcon" /* 9756 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
+import ImageLoaderUtils from "ImageLoaderUtils" /* 1446 */;
+import transitionToGuild from "transitionToGuild" /* 7594 */;
+import IconButton2 from "IconButton" /* 8098 */;
+import MoreHorizontalIcon from "MoreHorizontalIcon" /* 9846 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5015 */;
-import LurkingStore from "LurkingStore" /* 4947 */;
-import GuildStore from "GuildStore" /* 4885 */;
+import AccessibilityStore from "AccessibilityStore" /* 5141 */;
+import LurkingStore from "LurkingStore" /* 5073 */;
+import GuildStore from "GuildStore" /* 5011 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 let c4, c5;
@@ -193,7 +193,7 @@ export default function GameCommunityMultiGuildUpsellCard(guild) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -264,7 +264,7 @@ export default function GameCommunityMultiGuildUpsellCard(guild) {
           closure_129_4(false);
         }
         c5 = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp37) {
         onDismiss = tmp37;
         if (0 === c3) {
@@ -329,7 +329,7 @@ export default function GameCommunityMultiGuildUpsellCard(guild) {
   const obj13 = { guild, size: tmp4(onDismiss[23]).Icon.Sizes.REFRESH_SMALL_16, style: tmp.guildBadge };
   const tmp17Result = gameId(onDismiss[22]);
   items10 = [tmp16(tmp17Result, obj13), ];
-  const obj14 = { variant: "heading-md/bold", color: "mobile-text-heading-primary", accessibilityRole: "header", style: tmp.guildName, lineClamp: 1, children: name };
+  const obj14 = { variant: "heading-sm/semibold", color: "mobile-text-heading-primary", accessibilityRole: "header", style: tmp.guildName, lineClamp: 1, children: name };
   items10[1] = closure_12(tmp4(onDismiss[24]).Text, obj14);
   const items11 = [tmp14(tmp15, obj12), ];
   let tmp16Result3 = null != description;
@@ -337,7 +337,7 @@ export default function GameCommunityMultiGuildUpsellCard(guild) {
     tmp16Result3 = description.length > 0;
   }
   if (tmp16Result3) {
-    const obj15 = { variant: "text-sm/medium", style: tmp.description, lineClamp: 3, children: description };
+    const obj15 = { variant: "body-sm/medium", style: tmp.description, lineClamp: 3, children: description };
     tmp16Result3 = tmp16(tmp4(tmp5[24]).Text, obj15);
   }
   items11[1] = tmp16Result3;
@@ -348,7 +348,7 @@ export default function GameCommunityMultiGuildUpsellCard(guild) {
     const obj17 = { style: tmp.memberCount, children: items13 };
     const obj18 = { style: tmp.dotOnline };
     items13 = [tmp16(tmp15, obj18), ];
-    const obj19 = { variant: "text-xs/medium", color: "text-subtle", children: intl.format(tmp4(onDismiss[19]).t["LC+S+m"], obj20) };
+    const obj19 = { variant: "body-xs/medium", color: "text-subtle", children: intl.format(tmp4(onDismiss[19]).t["LC+S+m"], obj20) };
     const Text = tmp4(tmp5[24]).Text;
     intl = tmp4(tmp5[19]).intl;
     obj20 = { membersOnline: num };
@@ -361,7 +361,7 @@ export default function GameCommunityMultiGuildUpsellCard(guild) {
     const obj21 = { style: tmp.memberCount, children: items15 };
     const obj22 = { style: tmp.dot };
     items15 = [tmp16(tmp15, obj22), ];
-    const obj23 = { variant: "text-xs/medium", color: "text-subtle", children: intl2.format(tmp4(onDismiss[19]).t.zRl6XR, obj24) };
+    const obj23 = { variant: "body-xs/medium", color: "text-subtle", children: intl2.format(tmp4(onDismiss[19]).t.zRl6XR, obj24) };
     const Text2 = tmp4(tmp5[24]).Text;
     intl2 = tmp4(tmp5[19]).intl;
     obj24 = { count: num2 };

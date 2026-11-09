@@ -1,20 +1,20 @@
-// Module ID: 8163
-// Function ID: 8164
+// Module ID: 8233
+// Function ID: 8234
 // Name: AgeVerificationRetryScreen
-// Dependencies: [5, 19, 17, 1072, 21, 5014, 575, 8019, 6729, 1113, 1375, 7974, 5624, 7060, 6975, 7955, 2061, 2]
+// Dependencies: [5, 19, 17, 1072, 21, 5140, 575, 8089, 6784, 1113, 1377, 8044, 5751, 7126, 7038, 8024, 2185, 2]
 // Exports: default
 
-// Module 8163 (AgeVerificationRetryScreen)
+// Module 8233 (AgeVerificationRetryScreen)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2061 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6729 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7955 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2185 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6784 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8024 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let c0, c1;
@@ -90,7 +90,7 @@ export default function GetStartedScreen(modalSessionId) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -121,7 +121,7 @@ export default function GetStartedScreen(modalSessionId) {
             return obj;
           } else {
             c0 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp4) {
           c0 = 3;
@@ -149,9 +149,9 @@ export default function GetStartedScreen(modalSessionId) {
   const obj5 = { style: tmp.container, children: items3 };
   const obj6 = { style: tmp.headerContainer, children: items2 };
   items2 = [closure_9(tmp2(tmp3[11]).ShieldSpotIllustration, {}), , ];
-  const obj7 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: tmp.centerText, children: stringResult };
+  const obj7 = { variant: "heading-xl/semibold", color: "mobile-text-heading-primary", style: tmp.centerText, children: stringResult };
   items2[1] = closure_9(tmp2(tmp3[12]).Text, obj7);
-  const obj8 = { variant: "heading-md/medium", color: "text-strong", style: tmp.centerText, children: stringResult1 };
+  const obj8 = { variant: "heading-sm/medium", color: "text-strong", style: tmp.centerText, children: stringResult1 };
   items2[2] = closure_9(tmp2(tmp3[12]).Text, obj8);
   items3 = [tmp8(closure_7, obj6), , ];
   const obj9 = {
@@ -166,7 +166,7 @@ export default function GetStartedScreen(modalSessionId) {
   };
   const TableRowGroup = tmp2(tmp3[13]).TableRowGroup;
   items3[1] = closure_9(TableRowGroup, obj9);
-  const obj10 = { variant: "text-xs/medium", color: "text-muted", style: items4, children: intl4.format(tmp2(tmp3[9]).t["L+FgkZ"], obj11) };
+  const obj10 = { variant: "body-xs/medium", color: "text-muted", style: items4, children: intl4.format(tmp2(tmp3[9]).t["L+FgkZ"], obj11) };
   items4 = [, ];
   ({ centerText: arr6[0], helpLink: arr6[1] } = tmp);
   const Text = tmp2(tmp3[12]).Text;
@@ -176,7 +176,7 @@ export default function GetStartedScreen(modalSessionId) {
       const openUrl = AgeVerificationActionCreatorsDefault.openUrl;
       AgeVerificationActionCreatorsDefault;
       const obj = HelpdeskUtilsDefault;
-      openUrl(obj.getArticleURL(HelpdeskArticles.TIGGER_PAWTECT_LEARN_MORE));
+      openUrl(obj.getArticleURL(HelpdeskArticles.AGE_VERIFICATION_LEARN_MORE));
       const trackAgeVerificationModalClicked = AgeVerificationAnalyticsUtils.trackAgeVerificationModalClicked;
       AgeVerificationAnalyticsUtils;
       const result = trackAgeVerificationModalClicked(modalSessionId, AgeVerificationAnalyticsUtils.AgeVerificationModalVersion.RETRY, AgeVerificationAnalyticsUtils.AgeVerificationModalCta.LEARN_MORE);

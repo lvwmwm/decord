@@ -1,14 +1,14 @@
-// Module ID: 10263
-// Function ID: 10264
+// Module ID: 10382
+// Function ID: 10383
 // Name: AnalyticsIcon
-// Dependencies: [19, 21, 575, 5716, 10264, 2]
+// Dependencies: [19, 21, 575, 5841, 10383, 2]
 // Exports: AnalyticsIcon
 
-// Module 10263 (AnalyticsIcon)
+// Module 10382 (AnalyticsIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5716 */;
-import AssetRegistry from "AssetRegistry" /* 10264 */;
+import BaseIconImage2 from "BaseIconImage" /* 5841 */;
+import AssetRegistry from "AssetRegistry" /* 10383 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

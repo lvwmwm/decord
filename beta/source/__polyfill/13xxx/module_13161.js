@@ -1,43 +1,7 @@
 // Module ID: 13161
 // Function ID: 13162
-// Dependencies: [13081, 13060]
-// Exports: captureFeedback
+// Dependencies: []
 
 // Module 13161
-import _mod13060 from "module_13060" /* 13060 */;
-import _mod13081 from "module_13081" /* 13081 */;
 
-
-export function captureFeedback(arg0) {
-  let associatedEventId;
-  let email;
-  let message;
-  let name;
-  let obj4;
-  let obj6;
-  let source;
-  let tags;
-  let url;
-  let obj = arg1;
-  if (arg1 === undefined) {
-    obj = {};
-  }
-  let currentScope = arg2;
-  if (arg2 === undefined) {
-    const obj3 = _mod13081;
-    currentScope = obj3.getCurrentScope();
-  }
-  const obj2 = { contexts: obj4, type: "feedback", level: "info", tags };
-  obj4 = { feedback: obj6.dropUndefinedKeys({ contact_email: email, name, message, url, source, associated_event_id: associatedEventId }) };
-  ({ message, name, email, url, source, associatedEventId, tags } = arg0);
-  obj6 = _mod13060;
-  let client = currentScope && currentScope.getClient();
-  if (!client) {
-    const tmp3Result = _mod13081;
-    client = tmp3Result.getClient();
-  }
-  if (client) {
-    client.emit("beforeSendFeedback", obj2, obj);
-  }
-  return currentScope.captureEvent(obj2, obj);
-}
+export default { name: "css-tree", version: "1.1.3", description: "A tool set for CSS: fast detailed parser (CSS \u2192 AST), walker (AST traversal), generator (AST \u2192 CSS) and lexer (validation and matching) based on specs and browser implementations", author: "Roman Dvornov <rdvornov@gmail.com> (https://github.com/lahmatiy)", license: "MIT", repository: "csstree/csstree", keywords: ["css", "ast", "tokenizer", "parser", "walker", "lexer", "generator", "utils", "syntax", "validation"], main: "lib/index.js", unpkg: "dist/csstree.min.js", jsdelivr: "dist/csstree.min.js", scripts: { build: "rollup --config", lint: "eslint data lib scripts test && node scripts/review-syntax-patch --lint && node scripts/update-docs --lint", "lint-and-test": "npm run lint && npm test", "update:docs": "node scripts/update-docs", "review:syntax-patch": "node scripts/review-syntax-patch", test: "mocha --reporter progress", coverage: "nyc npm test", travis: "nyc npm run lint-and-test && npm run coveralls", coveralls: "nyc report --reporter=text-lcov | coveralls", prepublishOnly: "npm run build", hydrogen: "node --trace-hydrogen --trace-phase=Z --trace-deopt --code-comments --hydrogen-track-positions --redirect-code-traces --redirect-code-traces-to=code.asm --trace_hydrogen_file=code.cfg --print-opt-code bin/parse --stat -o /dev/null" }, dependencies: { "mdn-data": "2.0.14", "source-map": "^0.6.1" }, devDependencies: { "@rollup/plugin-commonjs": "^11.0.2", "@rollup/plugin-json": "^4.0.2", "@rollup/plugin-node-resolve": "^7.1.1", coveralls: "^3.0.9", eslint: "^6.8.0", "json-to-ast": "^2.1.0", mocha: "^6.2.3", nyc: "^14.1.1", rollup: "^1.32.1", "rollup-plugin-terser": "^5.3.0" }, engines: { node: ">=8.0.0" }, files: ["data", "dist", "lib"] };

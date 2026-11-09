@@ -202,7 +202,7 @@ let items = [
 ];
 const entry1 = {
   key: "from",
-  value: function from(arg0, D, arg2) {
+  value: function from(arg0, buffer, arg2) {
     if (null == arg0) {
       return null;
     } else {
@@ -217,8 +217,8 @@ const entry1 = {
           let fromResult1;
           let tmp = keys[num];
           let tmp2 = arg0[tmp];
-          if (null != D) {
-            if (!fn(D, tmp)) {
+          if (null != buffer) {
+            if (!fn(buffer, tmp)) {
               obj3[tmp] = tmp2;
             }
             num = num + 1;

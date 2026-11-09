@@ -1,17 +1,17 @@
-// Module ID: 9633
-// Function ID: 9634
+// Module ID: 9723
+// Function ID: 9724
 // Name: cta_button
-// Dependencies: [32, 1197, 9631, 1227, 2]
+// Dependencies: [32, 1197, 9721, 1227, 2]
 
-// Module 9633 (cta_button)
+// Module 9723 (cta_button)
 import _mod1197 from "module_1197" /* 1197 */;
 import wrappers from "wrappers" /* 1227 */;
-import localized_string from "localized_string" /* 9631 */;
+import localized_string from "localized_string" /* 9721 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let internalBinaryWrite, internalBinaryWrite2;
+let internalBinaryWrite, internalBinaryWrite2, internalBinaryWrite3;
 
 let tmp;
 const T2 = function T() {
@@ -19,21 +19,24 @@ const T2 = function T() {
   return items;
 };
 const T3 = function T() {
+  return require("localized_string").LocalizedString;
+};
+const T4 = function T() {
   return require("wrappers").UInt64Value;
 };
-const ButtonAction = { UNSPECIFIED: 0, [0]: "UNSPECIFIED", OPEN_MARKETING_PAGE: 1, [1]: "OPEN_MARKETING_PAGE", OPEN_TIER_2_PAYMENT_MODAL: 2, [2]: "OPEN_TIER_2_PAYMENT_MODAL", OPEN_TIER_1_PAYMENT_MODAL: 3, [3]: "OPEN_TIER_1_PAYMENT_MODAL", OPEN_TIER_2_PAYMENT_MODAL_CUSTOM_CONFIRMATION_FOOTER: 4, [4]: "OPEN_TIER_2_PAYMENT_MODAL_CUSTOM_CONFIRMATION_FOOTER", OPEN_PLAN_SELECTION_MODAL: 5, [5]: "OPEN_PLAN_SELECTION_MODAL", OPEN_PREMIUM_GROUP_PAYMENT_MODAL: 6, [6]: "OPEN_PREMIUM_GROUP_PAYMENT_MODAL", OPEN_SOCIAL_LAYER_STOREFRONT: 7, [7]: "OPEN_SOCIAL_LAYER_STOREFRONT", OPEN_GUILD_BOOST_CHECKOUT: 8, [8]: "OPEN_GUILD_BOOST_CHECKOUT" };
+const ButtonAction = { UNSPECIFIED: 0, [0]: "UNSPECIFIED", OPEN_MARKETING_PAGE: 1, [1]: "OPEN_MARKETING_PAGE", OPEN_TIER_2_PAYMENT_MODAL: 2, [2]: "OPEN_TIER_2_PAYMENT_MODAL", OPEN_TIER_1_PAYMENT_MODAL: 3, [3]: "OPEN_TIER_1_PAYMENT_MODAL", OPEN_TIER_2_PAYMENT_MODAL_CUSTOM_CONFIRMATION_FOOTER: 4, [4]: "OPEN_TIER_2_PAYMENT_MODAL_CUSTOM_CONFIRMATION_FOOTER", OPEN_PLAN_SELECTION_MODAL: 5, [5]: "OPEN_PLAN_SELECTION_MODAL", OPEN_PREMIUM_GROUP_PAYMENT_MODAL: 6, [6]: "OPEN_PREMIUM_GROUP_PAYMENT_MODAL", OPEN_SOCIAL_LAYER_STOREFRONT: 7, [7]: "OPEN_SOCIAL_LAYER_STOREFRONT", OPEN_GUILD_BOOST_CHECKOUT: 8, [8]: "OPEN_GUILD_BOOST_CHECKOUT", OPEN_SHOP: 9, [9]: "OPEN_SHOP" };
 const MessageType = _mod1197.MessageType;
 class CTAButton$Type extends MessageType {
   constructor() {
-    let items = [{ no: 1, name: "copy", kind: "scalar", T: 9 }, { no: 2, name: "button_action", kind: "enum", T: T2 }, { no: 3, name: "deeplink_section", kind: "scalar", T: 9 }, , ];
-    const obj = { no: 4, name: "copy_localized", kind: "message", T };
+    let items = [{ no: 1, name: "copy", kind: "scalar", T: 9 }, { no: 2, name: "button_action", kind: "enum", T: T2 }, { no: 3, name: "deeplink_section", kind: "scalar", T: 9 }, { no: 4, name: "copy_localized", kind: "message", T: T3 }, , ];
+    const obj = { no: 5, name: "navigable_storefront_application_id", kind: "message", T };
     class T {
       constructor() {
-        return closure_1_0(closure_1_1[2]).LocalizedString;
+        return closure_1_0(closure_1_1[3]).UInt64Value;
       }
     }
-    items[3] = obj;
-    items[4] = { no: 5, name: "navigable_storefront_application_id", kind: "message", T: T3 };
+    items[4] = obj;
+    items[5] = { no: 6, name: "shop_collection_id", kind: "message", T: T4 };
     const tmp2 = new tmp("discord_protos.premium_marketing.v1.CTAButton", items, T);
     return tmp2;
   }
@@ -71,8 +74,11 @@ class CTAButton$Type extends MessageType {
           let LocalizedString = localized_string.LocalizedString;
           obj.copyLocalized = LocalizedString.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.copyLocalized);
         } else if (5 === tmp5) {
+          let UInt64Value2 = wrappers.UInt64Value;
+          obj.navigableStorefrontApplicationId = UInt64Value2.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.navigableStorefrontApplicationId);
+        } else if (6 === tmp5) {
           let UInt64Value = wrappers.UInt64Value;
-          obj.navigableStorefrontApplicationId = UInt64Value.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.navigableStorefrontApplicationId);
+          obj.shopCollectionId = UInt64Value.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.shopCollectionId);
         } else {
           let onRead = readUnknownField.readUnknownField;
           if ("throw" === onRead) {
@@ -129,6 +135,14 @@ class CTAButton$Type extends MessageType {
       const internalBinaryWrite2Result = internalBinaryWrite2(navigableStorefrontApplicationId, tagResult4.fork(), writeUnknownFields);
       const joined1 = internalBinaryWrite2Result.join();
     }
+    if (copy.shopCollectionId) {
+      const UInt64Value2 = wrappers.UInt64Value;
+      internalBinaryWrite3 = UInt64Value2.internalBinaryWrite;
+      const shopCollectionId = copy.shopCollectionId;
+      const tagResult5 = tag.tag(6, _mod1197.WireType.LengthDelimited);
+      const internalBinaryWrite3Result = internalBinaryWrite3(shopCollectionId, tagResult5.fork(), writeUnknownFields);
+      const joined2 = internalBinaryWrite3Result.join();
+    }
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
@@ -141,15 +155,15 @@ class CTAButton$Type extends MessageType {
   }
 }
 const prototype = CTAButton$Type.prototype;
-let items = [{ no: 1, name: "copy", kind: "scalar", T: 9 }, { no: 2, name: "button_action", kind: "enum", T: T2 }, { no: 3, name: "deeplink_section", kind: "scalar", T: 9 }, , ];
-let obj2 = { no: 4, name: "copy_localized", kind: "message", T };
+let items = [{ no: 1, name: "copy", kind: "scalar", T: 9 }, { no: 2, name: "button_action", kind: "enum", T: T2 }, { no: 3, name: "deeplink_section", kind: "scalar", T: 9 }, { no: 4, name: "copy_localized", kind: "message", T: T3 }, , ];
+let obj2 = { no: 5, name: "navigable_storefront_application_id", kind: "message", T };
 class T {
   constructor() {
-    return require("localized_string").LocalizedString;
+    return require("wrappers").UInt64Value;
   }
 }
-items[3] = obj2;
-items[4] = { no: 5, name: "navigable_storefront_application_id", kind: "message", T: T3 };
+items[4] = obj2;
+items[5] = { no: 6, name: "shop_collection_id", kind: "message", T: T4 };
 const prototype1 = new prototype("discord_protos.premium_marketing.v1.CTAButton", items, tmp, T, CTAButton$Type, prototype, items, require, dependencyMap);
 let result = size.fileFinishedImporting("../discord_common/js/packages/protos/discord_protos/premium_marketing/v1/cta_button.tsx");
 

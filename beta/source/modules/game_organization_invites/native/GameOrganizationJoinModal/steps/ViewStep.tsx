@@ -1,16 +1,16 @@
-// Module ID: 13202
-// Function ID: 13203
+// Module ID: 13447
+// Function ID: 13448
 // Name: ViewStep
-// Dependencies: [32, 19, 11364, 13201, 21, 5014, 1497, 13203, 13198, 13204, 7972, 7973, 6027, 575, 13205, 5624, 1113, 2404, 8661, 13206, 13208, 5634, 2]
+// Dependencies: [32, 19, 11504, 13446, 21, 5140, 1499, 13443, 13440, 13444, 13448, 8043, 6159, 575, 13449, 5751, 1113, 2530, 8732, 13450, 13452, 5758, 2]
 // Exports: ViewStep
 
-// Module 13202 (ViewStep)
-import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11364 */;
-import GameOrganizationJoinModalConstants from "GameOrganizationJoinModalConstants" /* 13201 */;
+// Module 13447 (ViewStep)
+import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11504 */;
+import GameOrganizationJoinModalConstants from "GameOrganizationJoinModalConstants" /* 13446 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -64,13 +64,11 @@ export function ViewStep(code) {
   if (tmp7) {
     tmp9 = code;
   }
-  const gameOrganizationCharacterEligibilityFetch = useGameOrganizationCharacterEligibilityFetch(tmp9);
-  const data = gameOrganizationCharacterEligibilityFetch.data;
-  const error = gameOrganizationCharacterEligibilityFetch.error;
-  const tmp11 = found(react.useState(null), 2);
-  selectedCharacterId = tmp11[0];
+  const data = useGameOrganizationCharacterEligibilityFetch(tmp9).data;
+  const tmp10 = found(react.useState(null), 2);
+  selectedCharacterId = tmp10[0];
   found = undefined;
-  const tmp13 = tmp11[1];
+  const tmp12 = tmp10[1];
   if (data != null) {
     found = data.find((id) => id.id === first);
   }
@@ -80,8 +78,8 @@ export function ViewStep(code) {
     ({ organization, application } = tmp5);
     ({ memberCount, maxMembers } = organization);
     const obj2 = { displayNoun: tmp5.displayNoun, lowercase: true };
-    const tmp17 = require("getGameOrganizationDisplayNoun")(obj2);
-    const ModalScreen = tmp2(tmp3[10]).ModalScreen;
+    const tmp16 = require("getGameOrganizationDisplayNoun")(obj2);
+    const tmp4Result = require("GameOrganizationJoinModalScreen");
     const ModalContent = tmp2(tmp3[11]).ModalContent;
     const obj3 = { spacing: require("native").space.PX_48, children: items5 };
     const Stack2 = tmp2(tmp3[12]).Stack;
@@ -91,10 +89,10 @@ export function ViewStep(code) {
     const Stack4 = tmp2(tmp3[12]).Stack;
     const obj6 = { iconUrl: organization.iconUrl, size: 64 };
     items = [closure_7(tmp4(tmp3[14]), obj6), ];
-    const obj7 = { variant: "heading-xl/semibold", style: tmp.text, children: intl3.formatToPlainString(require("module_2404").gptW7Y, obj8) };
+    const obj7 = { variant: "heading-xl/semibold", style: tmp.text, children: intl3.formatToPlainString(require("module_2530").gptW7Y, obj8) };
     const Text2 = tmp2(tmp3[15]).Text;
     intl3 = tmp2(tmp3[16]).intl;
-    obj8 = { noun: tmp17, orgName: organization.name };
+    obj8 = { noun: tmp16, orgName: organization.name };
     items[1] = closure_7(Text2, obj7);
     items1 = [closure_8(Stack4, obj5), ];
     const obj9 = { direction: "horizontal", align: "center", justify: "center", spacing: require("native").space.PX_16, children: items3 };
@@ -102,31 +100,31 @@ export function ViewStep(code) {
     const obj10 = { spacing: require("native").space.PX_4, direction: "horizontal", align: "center", style: tmp.inlineStack, children: items2 };
     const Stack6 = tmp2(tmp3[12]).Stack;
     const obj11 = { iconUrl: application.iconUrl, size: 16, borderRadius: require("native").radii.xs };
-    const tmp4Result = require("GameOrganizationIcon");
-    items2 = [closure_7(tmp4Result, obj11), ];
-    const obj12 = { variant: "heading-md/medium", children: application.name };
+    const tmp4Result2 = require("GameOrganizationIcon");
+    items2 = [closure_7(tmp4Result2, obj11), ];
+    const obj12 = { variant: "heading-sm/medium", children: application.name };
     items2[1] = closure_7(tmp2(tmp3[15]).Text, obj12);
     items3 = [closure_8(Stack6, obj10), ];
-    let tmp18Result = null != memberCount && null != maxMembers;
-    if (tmp18Result) {
+    let tmp17Result = null != memberCount && null != maxMembers;
+    if (tmp17Result) {
       const obj13 = { spacing: require("native").space.PX_4, direction: "horizontal", align: "center", style: tmp.inlineStack, children: items4 };
       const Stack = tmp2(tmp3[12]).Stack;
       const obj14 = { size: "xs", color: require("native").colors.ICON_MUTED };
       const GroupIcon = tmp2(tmp3[18]).GroupIcon;
       items4 = [closure_7(GroupIcon, obj14), ];
-      const obj15 = { variant: "heading-md/medium", children: intl.formatToPlainString(require("module_2404").VuENGl, obj16) };
+      const obj15 = { variant: "heading-sm/medium", children: intl.formatToPlainString(require("module_2530").VuENGl, obj16) };
       const Text = tmp2(tmp3[15]).Text;
       intl = tmp2(tmp3[16]).intl;
       obj16 = { count: memberCount, max: maxMembers };
       items4[1] = closure_7(Text, obj15);
-      tmp18Result = tmp18(Stack, obj13);
+      tmp17Result = tmp17(Stack, obj13);
     }
-    items3[1] = tmp18Result;
+    items3[1] = tmp17Result;
     items1[1] = closure_8(Stack5, obj9);
     items5 = [closure_8(Stack3, obj4), ];
     let tmp19Result = tmp7;
     if (tmp19Result) {
-      const obj17 = { characters: data, hasError: null != error, selectedCharacterId, onSelect: tmp13, noun: tmp17 };
+      const obj17 = { characters: data, selectedCharacterId, onSelect: tmp12, noun: tmp16 };
       tmp19Result = tmp19(tmp4(tmp3[19]), obj17);
     }
     items5[1] = tmp19Result;
@@ -158,6 +156,6 @@ export function ViewStep(code) {
     const obj20 = { children: items6 };
     const obj21 = { children: closure_7(Button, obj19) };
     items6[1] = closure_7(ModalFooter, obj21);
-    return closure_8(ModalScreen, obj20);
+    return closure_8(tmp4Result, obj20);
   }
 }

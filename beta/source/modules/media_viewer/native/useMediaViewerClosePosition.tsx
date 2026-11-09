@@ -1,13 +1,12 @@
-// Module ID: 14806
-// Function ID: 14807
+// Module ID: 15041
+// Function ID: 15042
 // Name: useMediaViewerClosePosition
-// Dependencies: [32, 19, 1072, 14802, 7131, 5095, 2]
+// Dependencies: [32, 19, 1072, 15037, 7202, 1652, 1705, 2]
 // Exports: default
 
-// Module 14806 (useMediaViewerClosePosition)
+// Module 15041 (useMediaViewerClosePosition)
 import Constants from "Constants" /* 1072 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
-import getMediaViewerStateForScreenDefault from "getMediaViewerStateForScreen" /* 14802 */;
+import getMediaViewerStateForScreenDefault from "getMediaViewerStateForScreen" /* 15037 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -16,13 +15,17 @@ let closure_5;
 
 let react = react_mod;
 const NOOP = Constants.NOOP;
-let closure_6 = { code: "function useMediaViewerClosePositionTsx1(){const{index}=this.__closure;return index.get();}" };
-const __initData = { code: "function useMediaViewerClosePositionTsx2(index){const{runOnJS,setClosePosition}=this.__closure;runOnJS(setClosePosition)(index);}" };
+let closure_6 = { code: "(function useMediaViewerClosePositionTsx1(){let[index]=this.__closure;return index.get();})" };
+let closure_7 = { code: "(function useMediaViewerClosePositionTsx2(index){let[scheduleOnRN,setClosePosition]=this.__closure;scheduleOnRN(setClosePosition,index);})" };
 const result = size.fileFinishedImporting("modules/media_viewer/native/useMediaViewerClosePosition.tsx");
 
 export default function useMediaViewerClosePosition(index) {
-  let callback;
   let closure_4;
+  let tmp10;
+  let tmp11;
+  let tmp12;
+  let tmp8;
+  let tmp9;
   index = index.index;
   const sources = index.sources;
   let onClose = index.onClose;
@@ -31,9 +34,11 @@ export default function useMediaViewerClosePosition(index) {
   }
   const windowHeight = index.windowHeight;
   const windowWidth = index.windowWidth;
-  let tmp = sources(windowHeight[4])(onClose);
-  react = tmp;
-  const tmp2 = windowWidth(react.useState(() => {
+  let tmp = windowHeight;
+  const tmp2 = sources(windowHeight[4])(onClose);
+  react = tmp2;
+  let obj = react;
+  let tmp3 = windowWidth(react.useState(() => {
     let obj;
     const tmp3 = sources[index.get(index)];
     const tmp = windowWidth;
@@ -44,10 +49,10 @@ export default function useMediaViewerClosePosition(index) {
     }
     return (windowHeight + obj.height) / 2;
   }), 2);
-  closure_5 = tmp2[1];
-  const items = [tmp, sources, windowHeight, windowWidth];
-  const first = tmp2[0];
-  const setClosePosition = react.useCallback((arg0) => {
+  closure_5 = tmp3[1];
+  const items = [tmp2, sources, windowHeight, windowWidth];
+  const first = tmp3[0];
+  const callback = react.useCallback((arg0) => {
     let obj;
     if (null == sources[arg0]) {
       closure_4();
@@ -60,25 +65,35 @@ export default function useMediaViewerClosePosition(index) {
     }
     tmp4((windowHeight + obj.height) / 2);
   }, items);
-  let obj = index(windowHeight[5]);
-  const fn = function h() {
-    return index.get();
-  };
-  fn.__closure = { index };
-  fn.__workletHash = 5031282724746;
-  fn.__initData = setClosePosition;
-  const fn2 = function f(arg0) {
-    const obj = ReanimatedRexport;
-    obj.runOnJS(callback)(arg0);
-  };
-  fn2.__closure = { runOnJS: index(windowHeight[5]).runOnJS, setClosePosition };
-  fn2.__workletHash = 2709880768438;
-  fn2.__initData = __initData;
-  ({ runOnJS: index(windowHeight[5]).runOnJS, setClosePosition });
-  const animatedReaction = obj.useAnimatedReaction(fn, fn2);
-  const items1 = [setClosePosition, index];
-  const effect = react.useEffect(() => {
+  const tmp6 = index;
+  const items1 = [callback, index];
+  [tmp8, tmp9] = items1;
+  function useMediaViewerClosePositionTsx1() {
+    return _undefined.get();
+  }
+  const items2 = [tmp9];
+  useMediaViewerClosePositionTsx1.__closure = items2;
+  useMediaViewerClosePositionTsx1.__workletHash = 7521936949267;
+  useMediaViewerClosePositionTsx1.__initData = tmp8;
+  const items3 = [closure_7, , ];
+  const useAnimatedReaction = index(windowHeight[5]).useAnimatedReaction;
+  const tmp7 = index(windowHeight[5]);
+  items3[1] = tmp6(tmp[6]).scheduleOnRN;
+  items3[2] = callback;
+  let c0;
+  let c1;
+  [tmp10, tmp11, tmp12] = items3;
+  function useMediaViewerClosePositionTsx2(arg0) {
+    _undefined(c1, arg0);
+  }
+  const items4 = [tmp11, tmp12];
+  useMediaViewerClosePositionTsx2.__closure = items4;
+  useMediaViewerClosePositionTsx2.__workletHash = 6277806213986;
+  useMediaViewerClosePositionTsx2.__initData = tmp10;
+  const animatedReaction = useAnimatedReaction(useMediaViewerClosePositionTsx1, useMediaViewerClosePositionTsx2);
+  const items5 = [callback, index];
+  const effect = obj.useEffect(() => {
     callback(index.get());
-  }, items1);
+  }, items5);
   return first;
 };

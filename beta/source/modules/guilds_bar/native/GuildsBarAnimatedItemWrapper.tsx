@@ -1,24 +1,24 @@
-// Module ID: 18365
-// Function ID: 18366
+// Module ID: 18704
+// Function ID: 18705
 // Name: GuildsBarAnimatedItemWrapper
-// Dependencies: [19, 5644, 18353, 21, 5014, 575, 5596, 5080, 5637, 5095, 7241, 18366, 18075, 18078, 1113, 5023, 18367, 6960, 9509, 2]
+// Dependencies: [19, 5768, 18692, 21, 5140, 575, 5724, 5199, 5761, 1705, 1652, 18705, 18417, 18420, 1113, 5149, 18706, 7023, 9593, 2]
 // Exports: default, useGuildsBarAnimatedWrapperStyles
 
-// Module 18365 (GuildsBarAnimatedItemWrapper)
+// Module 18704 (GuildsBarAnimatedItemWrapper)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5023 */;
-import native from "native" /* 5080 */;
-import useToken from "useToken" /* 5596 */;
-import spring from "spring" /* 5637 */;
-import react_native from "react-native" /* 5644 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5149 */;
+import native from "native" /* 5199 */;
+import useToken from "useToken" /* 5724 */;
+import react_native from "react-native" /* 5768 */;
 import react from "react" /* 19 */;
-import GuildsBarConstants from "GuildsBarConstants" /* 18353 */;
+import GuildsBarConstants from "GuildsBarConstants" /* 18692 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
-let draggedElement, renderItem;
+const require = globalThis.__r;
+let importDefault, obj1, renderItem;
 
 let c9;
 let hasOwnProperty;
@@ -26,107 +26,132 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 class UnreadIndicator {
-  constructor(sharedId) {
-    sharedId = sharedId.sharedId;
-    const id = sharedId.id;
-    let MOUNTED = sharedId.transitionState;
-    const selected = sharedId.selected;
-    if (MOUNTED === undefined) {
-      let tmp = sharedId;
-      let tmp2 = MOUNTED;
-      MOUNTED = sharedId(MOUNTED[7]).TransitionStates.MOUNTED;
-    }
-    const cleanUp = sharedId.cleanUp;
+  constructor(selected) {
+    let id;
     let num;
-    let tmp3 = sharedId;
-    let obj = sharedId(MOUNTED[6]);
-    const token = obj.useToken(id(MOUNTED[5]).modules.mobile.GUILD_BAR_ITEM_SIZE);
-    const tmp7 = closure_12(num());
-    const unreadIndicator = tmp7;
-    const tmp8 = MOUNTED === sharedId(MOUNTED[7]).TransitionStates.MOUNTED;
-    let closure_6 = tmp8;
+    let sharedId;
+    let tmp12;
+    let tmp13;
+    let tmp14;
+    let tmp15;
+    let tmp16;
+    let tmp17;
+    let tmp18;
+    let tmp20;
+    let tmp21;
+    let tmp22;
+    let tmp23;
+    let tmp24;
+    let tmp25;
+    let tmp26;
+    let transitionState;
+    let unreadIndicator;
+    ({ sharedId, id, transitionState } = selected);
+    selected = selected.selected;
+    if (transitionState === undefined) {
+      let tmp = transitionState;
+      transitionState = transitionState(num[7]).TransitionStates.MOUNTED;
+    }
+    const cleanUp = selected.cleanUp;
+    importDefault = undefined;
+    num = undefined;
+    let obj = transitionState(num[6]);
+    const token = obj.useToken(require("native").modules.mobile.GUILD_BAR_ITEM_SIZE);
+    const tmp7 = closure_12(closure_7());
+    const tmp5 = importDefault;
+    importDefault = tmp7;
     num = 8;
-    const tmp5 = id;
+    const MOUNTED = transitionState(num[7]).TransitionStates.MOUNTED;
     if (selected) {
       num = 8;
-      if (MOUNTED !== tmp3(MOUNTED[7]).TransitionStates.YEETED) {
+      if (transitionState !== transitionState(num[7]).TransitionStates.YEETED) {
         num = 40;
       }
     }
-    let items = [num, MOUNTED, tmp7.unreadIndicator];
-    const fn = function p(targetOriginY) {
-      let obj3;
-      let obj4;
-      let obj5;
-      let obj6;
-      let obj7;
-      let obj8;
-      const tmp = closure_6;
-      if (tmp) {
-        obj3 = { animations: {}, initialValues: {} };
-        const obj2 = { animations: {}, initialValues: {} };
-      } else {
-        obj3 = { animations: obj7, initialValues: obj8 };
-        obj7 = { originY: obj4.withSpring(targetOriginY.targetOriginY, BAR_SPRING_PHYSICS, "animate-always"), originX: obj5.withSpring(targetOriginY.targetOriginX, BAR_SPRING_PHYSICS, "animate-always"), height: obj6.withSpring(targetOriginY.targetHeight, BAR_SPRING_PHYSICS, "animate-always") };
-        obj4 = spring;
-        obj5 = spring;
-        obj6 = spring;
-        obj8 = { height: 8, originY: token / 2, originX: -12 };
-      }
-      return obj3;
-    };
-    let obj2 = { disableEntering: tmp8, sharedId, id, withSpring: tmp3(tmp4[8]).withSpring, BAR_SPRING_PHYSICS, guildItemSize: token };
-    const style = cleanUp.useMemo(() => {
+    let items = [num, transitionState, tmp7.unreadIndicator];
+    const items1 = [closure_14, transitionState === MOUNTED, sharedId, id, , , ];
+    const style = react.useMemo(() => {
       const items = [unreadIndicator.unreadIndicator, ];
       const obj = { height: num, marginTop: num / 2 * -1, marginLeft: num };
       num = 0;
-      if (MOUNTED === native.TransitionStates.YEETED) {
+      if (transitionState === native.TransitionStates.YEETED) {
         num = -4;
       }
       items[1] = obj;
       return items;
     }, items);
-    const useCallback = cleanUp.useCallback;
-    fn.__closure = obj2;
-    fn.__workletHash = 404454683979;
-    fn.__initData = __initData;
-    const items1 = [tmp8, sharedId, id, token];
-    const fn2 = function h(height) {
-      let obj2;
-      let obj3;
-      let obj4;
-      let obj5;
-      const obj = {
-        animations: obj2,
-        initialValues: { height: height.currentHeight, originY: height.currentOriginY, originX: height.currentOriginX },
-        callback(arg0) {
-          let tmp3 = closure_1_2 === sharedId(MOUNTED[7]).TransitionStates.YEETED && arg0;
-          const tmp = sharedId;
-          const tmp2 = MOUNTED;
-          if (tmp3) {
-            tmp3 = null != cleanUp;
-          }
-          if (tmp3) {
-            const tmpResult = tmp(tmp2[9]);
-            tmpResult.runOnJS(cleanUp)();
-          }
+    const useCallback = react.useCallback;
+    items1[4] = transitionState(num[8]).withSpring;
+    items1[5] = closure_11;
+    items1[6] = token;
+    let c0;
+    let c1;
+    let c2;
+    let c3;
+    let c4;
+    let c5;
+    [tmp12, tmp13, tmp14, tmp15, tmp16, tmp17, tmp18] = items1;
+    const tmp9 = react;
+    class GuildsBarAnimatedItemWrapperTsx1 {
+      constructor(targetOriginY) {
+        let obj3;
+        let obj4;
+        let obj5;
+        const tmp = c0;
+        if (tmp) {
+          obj3 = { animations: {}, initialValues: {} };
+          const obj2 = { animations: {}, initialValues: {} };
+        } else {
+          obj3 = { animations: obj4, initialValues: obj5 };
+          obj4 = { originY: _undefined(targetOriginY.targetOriginY, c4, "animate-always"), originX: _undefined(targetOriginY.targetOriginX, c4, "animate-always"), height: _undefined(targetOriginY.targetHeight, c4, "animate-always") };
+          obj5 = { height: 8, originY: c5 / 2, originX: -12 };
         }
-      };
-      obj2 = { originY: obj3.withSpring(height.targetOriginY, BAR_SPRING_PHYSICS, "animate-always"), originX: obj4.withSpring(height.targetOriginX, BAR_SPRING_PHYSICS, "animate-always"), height: obj5.withSpring(height.targetHeight, BAR_SPRING_PHYSICS, "animate-always") };
-      obj3 = spring;
-      obj4 = spring;
-      obj5 = spring;
-      return obj;
-    };
-    let obj3 = { withSpring: tmp3(tmp4[8]).withSpring, BAR_SPRING_PHYSICS, transitionState: MOUNTED, TransitionStates: tmp3(tmp4[7]).TransitionStates, cleanUp, runOnJS: tmp3(tmp4[9]).runOnJS };
-    const entering = useCallback(fn, items1);
-    const useCallback2 = cleanUp.useCallback;
-    fn2.__closure = obj3;
-    fn2.__workletHash = 10632665703864;
-    fn2.__initData = __initData2;
-    const items2 = [MOUNTED, cleanUp];
-    const layout = useCallback2(fn2, items2);
-    return closure_8(tmp5(MOUNTED[10]), { collapsable: false, entering, layout, style, pointerEvents: "none" });
+        return obj3;
+      }
+    }
+    const items2 = [tmp13, tmp14, tmp15, tmp16, tmp17, tmp18];
+    GuildsBarAnimatedItemWrapperTsx1.__closure = items2;
+    GuildsBarAnimatedItemWrapperTsx1.__workletHash = 14383411265202;
+    GuildsBarAnimatedItemWrapperTsx1.__initData = tmp12;
+    const items3 = [transitionState === MOUNTED, sharedId, id, token];
+    const items4 = [closure_15, , , , , , ];
+    const entering = useCallback(GuildsBarAnimatedItemWrapperTsx1, items3);
+    const useCallback2 = tmp9.useCallback;
+    items4[1] = transitionState(num[8]).withSpring;
+    items4[2] = closure_11;
+    items4[3] = transitionState;
+    items4[4] = transitionState(num[7]).TransitionStates;
+    items4[5] = cleanUp;
+    items4[6] = transitionState(num[9]).scheduleOnRN;
+    c0 = undefined;
+    c1 = undefined;
+    c2 = undefined;
+    c3 = undefined;
+    c4 = undefined;
+    c5 = undefined;
+    [tmp20, tmp21, tmp22, tmp23, tmp24, tmp25, tmp26] = items4;
+    class GuildsBarAnimatedItemWrapperTsx2 {
+      constructor(arg0) {
+        obj = { animations: null, initialValues: null, callback: null };
+        obj1 = { originY: closure_0(selected.targetOriginY, closure_1, "animate-always"), originX: closure_0(selected.targetOriginX, closure_1, "animate-always"), height: closure_0(selected.targetHeight, closure_1, "animate-always") };
+        obj.animations = obj1;
+        obj.initialValues = { height: selected.currentHeight, originY: selected.currentOriginY, originX: selected.currentOriginX };
+        obj.callback = function callback(arg0) {
+          const tmp = closure_1_2 === constants.YEETED && arg0 && null != closure_1_4;
+          if (tmp) {
+            closure_1_5(closure_1_4);
+          }
+        };
+        return obj;
+      }
+    }
+    const items5 = [tmp21, tmp22, tmp23, tmp24, tmp25, tmp26];
+    GuildsBarAnimatedItemWrapperTsx2.__closure = items5;
+    GuildsBarAnimatedItemWrapperTsx2.__workletHash = 14169006071008;
+    GuildsBarAnimatedItemWrapperTsx2.__initData = tmp20;
+    const items6 = [transitionState, cleanUp];
+    const layout = useCallback2(GuildsBarAnimatedItemWrapperTsx2, items6);
+    return closure_8(tmp5(num[10]).View, { collapsable: false, entering, layout, style, pointerEvents: "none" });
   }
 }
 function renderUnreadIndicator(arg0, sharedId, transitionState, cleanUp) {
@@ -137,7 +162,7 @@ const IOS_POINTER_STYLE = react_native.IOS_POINTER_STYLE;
 ({ GUILD_ITEM_HIT_SLOP: hasOwnProperty, GUILD_ITEM_INSET_LEFT: metroRequire, useGuildWrapperSize: metroImportDefault } = GuildsBarConstants);
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);
 let closure_10 = { mass: 0.8, damping: 100, stiffness: 150 };
-const unpackModuleId = { mass: 0.25, damping: 100, stiffness: 200 };
+let closure_11 = { mass: 0.25, damping: 100, stiffness: 200 };
 let createStyles = createStyles_mod;
 const authStore2 = createStyles.createStyles(() => {
   let rect;
@@ -173,9 +198,9 @@ let closure_13 = createStyles.createStyles((arg0, arg1, width, height) => {
   }
   return obj;
 });
-const authStore3 = { code: "function GuildsBarAnimatedItemWrapperTsx1(values){const{disableEntering,sharedId,id,withSpring,BAR_SPRING_PHYSICS,guildItemSize}=this.__closure;if(disableEntering||sharedId!=null&&sharedId.get()!==id){return{animations:{},initialValues:{}};}return{animations:{originY:withSpring(values.targetOriginY,BAR_SPRING_PHYSICS,'animate-always'),originX:withSpring(values.targetOriginX,BAR_SPRING_PHYSICS,'animate-always'),height:withSpring(values.targetHeight,BAR_SPRING_PHYSICS,'animate-always')},initialValues:{height:8,originY:guildItemSize/2,originX:-12}};}" };
-const __initData2 = { code: "function GuildsBarAnimatedItemWrapperTsx2(values){const{withSpring,BAR_SPRING_PHYSICS,transitionState,TransitionStates,cleanUp,runOnJS}=this.__closure;return{animations:{originY:withSpring(values.targetOriginY,BAR_SPRING_PHYSICS,'animate-always'),originX:withSpring(values.targetOriginX,BAR_SPRING_PHYSICS,'animate-always'),height:withSpring(values.targetHeight,BAR_SPRING_PHYSICS,'animate-always')},initialValues:{height:values.currentHeight,originY:values.currentOriginY,originX:values.currentOriginX},callback:function(finished){if(transitionState===TransitionStates.YEETED&&finished&&cleanUp!=null){runOnJS(cleanUp)();}}};}" };
-let closure_18 = { code: "function GuildsBarAnimatedItemWrapperTsx3(){const{withSpring,circle,guildItemSelectedBorderRadius,guildItemSize,CORNER_SPRING_PHYSICS}=this.__closure;return{borderRadius:withSpring(!circle?guildItemSelectedBorderRadius:guildItemSize/2,CORNER_SPRING_PHYSICS,'animate-always')};}" };
+let closure_14 = { code: "(function GuildsBarAnimatedItemWrapperTsx1(values){let[disableEntering,sharedId,id,withSpring,BAR_SPRING_PHYSICS,guildItemSize]=this.__closure;if(disableEntering||sharedId!=null&&sharedId.get()!==id){return{animations:{},initialValues:{}};}return{animations:{originY:withSpring(values.targetOriginY,BAR_SPRING_PHYSICS,'animate-always'),originX:withSpring(values.targetOriginX,BAR_SPRING_PHYSICS,'animate-always'),height:withSpring(values.targetHeight,BAR_SPRING_PHYSICS,'animate-always')},initialValues:{height:8,originY:guildItemSize/2,originX:-12}};})" };
+let closure_15 = { code: "(function GuildsBarAnimatedItemWrapperTsx2(values){let[withSpring,BAR_SPRING_PHYSICS,transitionState,TransitionStates,cleanUp,scheduleOnRN]=this.__closure;return{animations:{originY:withSpring(values.targetOriginY,BAR_SPRING_PHYSICS,'animate-always'),originX:withSpring(values.targetOriginX,BAR_SPRING_PHYSICS,'animate-always'),height:withSpring(values.targetHeight,BAR_SPRING_PHYSICS,'animate-always')},initialValues:{height:values.currentHeight,originY:values.currentOriginY,originX:values.currentOriginX},callback:function(finished){if(transitionState===TransitionStates.YEETED&&finished&&cleanUp!=null){scheduleOnRN(cleanUp);}}};})" };
+let closure_18 = { code: "(function GuildsBarAnimatedItemWrapperTsx3(){let[withSpring,circle,guildItemSelectedBorderRadius,guildItemSize,CORNER_SPRING_PHYSICS]=this.__closure;return{borderRadius:withSpring(!circle?guildItemSelectedBorderRadius:guildItemSize/2,CORNER_SPRING_PHYSICS,'animate-always')};})" };
 let size = size_mod;
 let result = size.fileFinishedImporting("modules/guilds_bar/native/GuildsBarAnimatedItemWrapper.tsx");
 
@@ -188,27 +213,34 @@ export default function GuildsBarAnimatedItemWrapper(id) {
   let exiting;
   let expandedChildren;
   let externalChildren;
+  let hint;
   let isDragTarget;
   let items10;
-  let items11;
   let items12;
-  let items7;
-  let items8;
+  let items13;
+  let items14;
+  let items9;
   let label;
   let layout;
-  let obj9;
+  let obj6;
+  let ref;
   let str;
   let style;
-  let tmp22;
+  let tmp10;
+  let tmp11;
+  let tmp12;
+  let tmp13;
+  let tmp14;
+  let tmp15;
+  let tmp29;
   let unread;
   let unreadStyle;
   let zIndex;
   id = id.id;
   const selected = id.selected;
-  ({ unread, circle } = id);
-  const hint = id.hint;
+  ({ unread, hint } = id);
   let flag = id.draggable;
-  ({ children, externalChildren, expandedChildren, config, label } = id);
+  ({ circle, children, externalChildren, expandedChildren, config, label } = id);
   if (flag === undefined) {
     flag = false;
   }
@@ -240,46 +272,58 @@ export default function GuildsBarAnimatedItemWrapper(id) {
   }
   const sharedId = id.sharedId;
   flag2 = undefined;
-  let ref;
-  let closure_21;
-  let closure_22;
-  let tmp = num();
-  let closure_15 = tmp;
+  renderItem = undefined;
+  closure_18 = undefined;
+  let closure_19;
+  let tmp = overState();
+  closure_14 = tmp;
   let tmp2 = id;
-  let tmp3 = circle;
-  let obj = id(circle[6]);
+  let tmp3 = hint;
+  let obj = id(hint[6]);
   const tmp4 = selected;
-  const token = obj.useToken(selected(circle[5]).modules.mobile.GUILD_BAR_ITEM_SIZE);
-  const tmp6 = expanded(tmp);
-  renderItem = tmp6;
-  const tmp7 = selected(circle[11])(config);
-  let obj2 = id(circle[6]);
-  const token1 = obj2.useToken(selected(circle[5]).modules.mobile.GUILD_ITEM_SELECTED_BORDER_RADIUS);
-  const obj3 = id(circle[9]);
-  class W {
+  const token = obj.useToken(selected(hint[5]).modules.mobile.GUILD_BAR_ITEM_SIZE);
+  const tmp6 = zIndex(tmp);
+  let draggedElement = tmp6;
+  const tmp7 = selected(hint[11])(config);
+  let obj2 = id(hint[6]);
+  const token1 = obj2.useToken(selected(hint[5]).modules.mobile.GUILD_ITEM_SELECTED_BORDER_RADIUS);
+  let tmp9 = id(hint[10]);
+  let items = [closure_18, , , , , ];
+  const useAnimatedStyle = tmp9.useAnimatedStyle;
+  items[1] = id(hint[8]).withSpring;
+  items[2] = circle;
+  items[3] = token1;
+  items[4] = token;
+  items[5] = onAccessibilityAction;
+  let c0;
+  let c1;
+  let c2;
+  let c3;
+  let c4;
+  [tmp10, tmp11, tmp12, tmp13, tmp14, tmp15] = items;
+  class GuildsBarAnimatedItemWrapperTsx3 {
     constructor() {
       let result;
-      const withSpring = spring.withSpring;
-      spring;
-      if (circle) {
-        result = token / 2;
+      const tmp = c0;
+      if (c1) {
+        result = c3 / 2;
       } else {
-        result = token1;
+        result = c2;
       }
-      const obj = { borderRadius: withSpring(result, closure_10, "animate-always") };
+      const obj = { borderRadius: tmp(result, c4, "animate-always") };
       return obj;
     }
   }
-  W.__closure = { withSpring: id(circle[8]).withSpring, circle, guildItemSelectedBorderRadius: token1, guildItemSize: token, CORNER_SPRING_PHYSICS: accessibilityActions };
-  W.__workletHash = 15930523896348;
-  W.__initData = token1;
-  ({ withSpring: id(circle[8]).withSpring, circle, guildItemSelectedBorderRadius: token1, guildItemSize: token, CORNER_SPRING_PHYSICS: accessibilityActions });
-  const animatedStyle = obj3.useAnimatedStyle(W);
-  const enableHome = hint.useContext(id(circle[12]).HomeDrawerStateContext).enableHome;
-  const obj6 = id(circle[13]);
-  const drawerOpen = obj6.useDrawerOpen(enableHome);
-  let items = [isDragTarget, dragState, num, overState, zIndex, tmp];
-  const memo = hint.useMemo(() => {
+  let items1 = [tmp11, tmp12, tmp13, tmp14, tmp15];
+  GuildsBarAnimatedItemWrapperTsx3.__closure = items1;
+  GuildsBarAnimatedItemWrapperTsx3.__workletHash = 2090076448645;
+  GuildsBarAnimatedItemWrapperTsx3.__initData = tmp10;
+  const animatedStyle = useAnimatedStyle(GuildsBarAnimatedItemWrapperTsx3);
+  const enableHome = flag.useContext(tmp2(tmp3[12]).HomeDrawerStateContext).enableHome;
+  const tmp2Result = tmp2(tmp3[13]);
+  const drawerOpen = tmp2Result.useDrawerOpen(enableHome);
+  const items2 = [isDragTarget, dragState, num, overState, zIndex, tmp];
+  const memo = flag.useMemo(() => {
     let num2;
     let str2;
     let tmp3;
@@ -319,11 +363,11 @@ export default function GuildsBarAnimatedItemWrapper(id) {
       tmp3 = tmp4;
     }
     str5 = "none";
-  }, items);
-  let items1 = [styles.pressableWrapper, isDragTarget, tmp6.draggedElement];
+  }, items2);
+  const items3 = [styles.pressableWrapper, isDragTarget, tmp6.draggedElement];
   ({ style, unreadStyle } = memo);
-  let tmp13 = !unread;
-  const memo1 = hint.useMemo(() => {
+  let tmp20 = !unread;
+  const memo1 = flag.useMemo(() => {
     const items = [styles.pressableWrapper, , ];
     draggedElement = undefined;
     if (isDragTarget) {
@@ -332,27 +376,27 @@ export default function GuildsBarAnimatedItemWrapper(id) {
     items[1] = draggedElement;
     items[2] = IOS_POINTER_STYLE;
     return items;
-  }, items1);
+  }, items3);
   if (!unread) {
-    tmp13 = !selected;
+    tmp20 = !selected;
   }
-  if (!tmp13) {
-    tmp13 = isDragTarget;
+  if (!tmp20) {
+    tmp20 = isDragTarget;
   }
-  if (!tmp13) {
-    tmp13 = flag2;
+  if (!tmp20) {
+    tmp20 = flag2;
   }
-  flag2 = tmp13;
-  const items2 = [tmp13, selected, sharedId, id];
-  const memo2 = obj5.useMemo(() => {
+  flag2 = tmp20;
+  const items4 = [tmp20, selected, sharedId, id];
+  const memo2 = obj3.useMemo(() => {
     const tmp = flag2;
     if (!tmp) {
       return { selected, sharedId, id };
     }
-  }, items2);
-  ref = obj5.useRef(undefined);
-  const items3 = [expanded];
-  const effect = obj5.useEffect(() => {
+  }, items4);
+  renderItem = obj3.useRef(undefined);
+  const items5 = [expanded];
+  const effect = obj3.useEffect(() => {
     if (undefined !== ref.current) {
       if (ref.current !== expanded) {
         const intl = intl3.intl;
@@ -366,14 +410,14 @@ export default function GuildsBarAnimatedItemWrapper(id) {
     } else {
       ref.current = expanded;
     }
-  }, items3);
-  const tmp16 = tmp4(tmp3[16])(enableHome, drawerOpen);
-  closure_21 = tmp16;
-  const items4 = [accessibilityActions, tmp16];
-  const memo3 = obj5.useMemo(() => {
+  }, items5);
+  const tmp23 = tmp4(tmp3[16])(enableHome, drawerOpen);
+  closure_18 = tmp23;
+  const items6 = [accessibilityActions, tmp23];
+  const memo3 = obj3.useMemo(() => {
     let items1;
-    const tmp2 = closure_21;
-    if (null == closure_21) {
+    const tmp2 = closure_18;
+    if (null == closure_18) {
       items1 = accessibilityActions;
     } else {
       let items = accessibilityActions;
@@ -386,26 +430,26 @@ export default function GuildsBarAnimatedItemWrapper(id) {
       items1[HermesBuiltin.arraySpread(items1, items, 0)] = obj;
     }
     return items1;
-  }, items4);
-  const items5 = [tmp16, onAccessibilityAction];
-  let tmp18 = null != memo3;
-  const callback = obj5.useCallback((nativeEvent) => {
-    if (null != closure_21) {
-      if (nativeEvent.nativeEvent.actionName === closure_21.name) {
-        closure_21.action();
+  }, items6);
+  const items7 = [tmp23, onAccessibilityAction];
+  let tmp25 = null != memo3;
+  const callback = obj3.useCallback((nativeEvent) => {
+    if (null != closure_18) {
+      if (nativeEvent.nativeEvent.actionName === closure_18.name) {
+        closure_18.action();
       }
     }
     if (onAccessibilityAction != null) {
       tmp2(nativeEvent);
     }
-  }, items5);
-  if (tmp18) {
+  }, items7);
+  if (tmp25) {
     let num2 = 0;
-    tmp18 = memo3.length > 0;
+    tmp25 = memo3.length > 0;
   }
-  closure_22 = tmp18;
-  const items6 = [hint, flag, tmp18];
-  const memo4 = obj5.useMemo(() => {
+  closure_19 = tmp25;
+  const items8 = [hint, flag, tmp25];
+  const memo4 = obj3.useMemo(() => {
     const items = [];
     const tmp = null != hint && arr.length > 0;
     if (tmp) {
@@ -417,60 +461,60 @@ export default function GuildsBarAnimatedItemWrapper(id) {
       const intl = intl3.intl;
       push(intl.string(intl3.t.BGMUFB));
     }
-    const tmp9 = closure_22;
+    const tmp9 = closure_19;
     if (tmp9) {
       const push2 = items.push;
       const intl2 = intl3.intl;
       push2(intl2.string(intl3.t.X2x0MF));
     }
     return items.join(". ");
-  }, items6);
-  const obj7 = { style: memo1, accessibilityLabel: label, accessible: true, focusable: true, accessibilityRole: "button", accessibilityState: { selected, expanded }, hitSlop: isDragTarget, accessibilityHint: tmp22, collapsable: false, accessibilityActions: memo3, onAccessibilityAction: callback, children: items7 };
+  }, items8);
+  const obj4 = { style: memo1, accessibilityLabel: label, accessible: true, focusable: true, accessibilityRole: "button", accessibilityState: { selected, expanded }, hitSlop: dragState, accessibilityHint: tmp29, collapsable: false, accessibilityActions: memo3, onAccessibilityAction: callback, children: items9 };
   const tmp4Result = tmp4(tmp3[17]);
   const merged = Object.assign(tmp7);
-  tmp22 = undefined;
+  tmp29 = undefined;
   if (memo4.length > 0) {
-    tmp22 = memo4;
+    tmp29 = memo4;
   }
-  items7 = [externalChildren, , ];
-  const obj8 = { pointerEvents: "none", style: unreadStyle, collapsable: false, children: overState(tmp2(tmp3[7]).TransitionItem, obj9) };
-  obj9 = { item: memo2, renderItem };
-  const tmp4Result5 = tmp4(tmp3[17]);
-  items7[1] = overState(tmp4Result5, obj8);
-  const obj10 = { style: items8, cutouts, children: items10 };
-  items8 = [styles.itemShape, animatedStyle];
+  items9 = [externalChildren, , ];
+  const obj5 = { pointerEvents: "none", style: unreadStyle, collapsable: false, children: styles(tmp2(tmp3[7]).TransitionItem, obj6) };
+  obj6 = { item: memo2, renderItem };
+  const tmp4Result4 = tmp4(tmp3[17]);
+  items9[1] = styles(tmp4Result4, obj5);
+  const obj7 = { style: items10, cutouts, children: items12 };
+  items10 = [styles.itemShape, animatedStyle];
   const ClipViewAnimated = tmp2(tmp3[18]).ClipViewAnimated;
-  const items9 = [tmp6.selectedBackgroundOverlay, ];
+  const items11 = [tmp6.selectedBackgroundOverlay, ];
   let itemShapeSelected = null;
-  const tmp4Result6 = tmp4(tmp3[17]);
+  const tmp4Result5 = tmp4(tmp3[17]);
   if (selected) {
     itemShapeSelected = styles.itemShapeSelected;
   }
-  items9[1] = itemShapeSelected;
-  items10 = [overState(tmp4Result6, { pointerEvents: "none", style: items9 }), !isDragTarget && children];
-  items7[2] = styles(ClipViewAnimated, obj10);
+  items11[1] = itemShapeSelected;
+  items12 = [styles(tmp4Result5, { pointerEvents: "none", style: items11 }), !isDragTarget && children];
+  items9[2] = accessibilityActions(ClipViewAnimated, obj7);
   let container = null;
-  const tmp19Result = styles(tmp4Result, obj7);
-  const tmp4Result7 = tmp4(tmp3[10]);
+  const tmp26Result = accessibilityActions(tmp4Result, obj4);
+  const View = tmp4(tmp3[10]).View;
   if (enableHome) {
     container = tmp6.container;
   }
-  const obj11 = { style: items11, layout, entering, exiting, preventClipping: flag3, collapsable: false, children: items12 };
-  items11 = [container, style];
-  items12 = [tmp19Result, ];
-  let tmp23Result = null;
+  const obj8 = { style: items13, layout, entering, exiting, preventClipping: flag3, collapsable: false, children: items14 };
+  items13 = [container, style];
+  items14 = [tmp26Result, ];
+  let tmp30Result = null;
   if (enableHome) {
-    const obj12 = { style: tmp6.expandedChildrenWrapper, collapsable: false, accessibilityElementsHidden: !drawerOpen, importantForAccessibility: str, children: !isDragTarget && expandedChildren };
-    const tmp4Result8 = tmp4(tmp3[17]);
+    const obj9 = { style: tmp6.expandedChildrenWrapper, collapsable: false, accessibilityElementsHidden: !drawerOpen, importantForAccessibility: str, children: !isDragTarget && expandedChildren };
+    const tmp4Result6 = tmp4(tmp3[17]);
     const merged1 = Object.assign(tmp7);
     str = "no-hide-descendants";
     if (drawerOpen) {
       str = "auto";
     }
-    tmp23Result = tmp23(tmp4Result8, obj12);
+    tmp30Result = tmp30(tmp4Result6, obj9);
   }
-  items12[1] = tmp23Result;
-  return styles(tmp4Result7, obj11);
+  items14[1] = tmp30Result;
+  return accessibilityActions(View, obj8);
 };
 export function useGuildsBarAnimatedWrapperStyles(arg0) {
   let obj = arg0;

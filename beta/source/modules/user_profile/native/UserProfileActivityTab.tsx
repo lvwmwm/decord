@@ -1,18 +1,18 @@
-// Module ID: 14968
-// Function ID: 14969
+// Module ID: 15241
+// Function ID: 15242
 // Name: UserProfileActivityTab
-// Dependencies: [19, 17, 1072, 21, 5014, 575, 5624, 1113, 8940, 2061, 14969, 14972, 14842, 14973, 2]
+// Dependencies: [19, 17, 1072, 21, 5140, 575, 5751, 1113, 9019, 2185, 15242, 15245, 15077, 15246, 2]
 // Exports: default
 
-// Module 14968 (UserProfileActivityTab)
+// Module 15241 (UserProfileActivityTab)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import UserProfileRecentActivityCardDefault from "UserProfileRecentActivityCard" /* 14973 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import UserProfileRecentActivityCardDefault from "UserProfileRecentActivityCard" /* 15246 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -56,14 +56,14 @@ function Section(introText) {
   const tmp = closure_8();
   const obj = { style: tmp.section, children: items };
   items = [, , ];
-  const obj2 = { style: tmp.sectionHeading, variant: "text-sm/medium", color: "text-strong", accessibilityRole: "header", lineClamp: 1, children: heading };
+  const obj2 = { style: tmp.sectionHeading, variant: "body-sm/medium", color: "text-strong", accessibilityRole: "header", lineClamp: 1, children: heading };
   items[0] = hasOwnProperty(Text_Text.Text, obj2);
   let tmp4Result = null != introText;
   const tmp2 = metroRequire;
   const tmp3 = View;
   const tmp4 = hasOwnProperty;
   if (tmp4Result) {
-    const obj3 = { style: tmp.introText, variant: "text-xs/medium", children: introText };
+    const obj3 = { style: tmp.introText, variant: "body-xs/medium", children: introText };
     tmp4Result = tmp4(Text_Text.Text, obj3);
   }
   items[1] = tmp4Result;
@@ -77,7 +77,7 @@ function RecentActivityIntroText() {
   let obj = {
     learnMoreHook(children, arg1) {
       let obj = {
-        variant: "text-xs/medium",
+        variant: "body-xs/medium",
         style: learnMore.learnMore,
         accessibilityRole: "link",
         onPress() {
@@ -129,8 +129,8 @@ export default function UserProfileActivityTab(user) {
   ({ currentUser, guildId, cardStyle } = user);
   const channelId = user.channelId;
   let obj = { userId: user.id, currentUserId: currentUser.id, guildId };
-  ({ recent, isCurrentUser, hasCurrentActivity, hasRecentActivity } = cardStyle(14969)(obj));
-  cardStyle(14969)(obj);
+  ({ recent, isCurrentUser, hasCurrentActivity, hasRecentActivity } = cardStyle(15242)(obj));
+  cardStyle(15242)(obj);
   const tmp = cardStyle;
   if (!hasCurrentActivity) {
     let tmp10Result;
@@ -138,7 +138,7 @@ export default function UserProfileActivityTab(user) {
       if (tmp4) {
         tmp10Result = tmp5(UserProfileActivityTabSkeleton, {});
       } else {
-        const tmp7 = user(14972);
+        const tmp7 = user(15245);
         if (isCurrentUser) {
           tmp10Result = tmp5(tmp7.UserProfileActivityEmptyCurrentUser, {});
         } else {
@@ -152,7 +152,7 @@ export default function UserProfileActivityTab(user) {
   const tmp10 = closure_6;
   const tmp11 = closure_7;
   if (hasCurrentActivity) {
-    const obj3 = { heading: intl.string(user(1113).t.J6STd9), children: closure_5(tmp(14842), obj4) };
+    const obj3 = { heading: intl.string(user(1113).t.J6STd9), children: closure_5(tmp(15077), obj4) };
     intl = user(1113).intl;
     obj4 = { user, currentUser, guildId, style: cardStyle };
     hasCurrentActivity = closure_5(Section, obj3);

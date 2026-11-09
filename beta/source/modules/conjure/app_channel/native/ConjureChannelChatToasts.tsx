@@ -1,19 +1,19 @@
-// Module ID: 18670
-// Function ID: 18671
+// Module ID: 19033
+// Function ID: 19034
 // Name: ConjureChannelChatToasts
-// Dependencies: [19, 17, 21, 5014, 575, 1113, 5068, 6977, 1187, 5624, 18671, 2]
+// Dependencies: [19, 17, 21, 5140, 575, 1113, 5194, 7040, 1187, 5751, 19034, 2]
 // Exports: default
 
-// Module 18670 (ConjureChannelChatToasts)
+// Module 19033 (ConjureChannelChatToasts)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
-import UserUtils from "UserUtils" /* 5068 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import useConjureChatToastMessagesDefault from "useConjureChatToastMessages" /* 18671 */;
+import UserUtils from "UserUtils" /* 5194 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import useConjureChatToastMessagesDefault from "useConjureChatToastMessages" /* 19034 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -49,12 +49,12 @@ function ChatToast(message) {
   const obj2 = { style: tmp.opaque, children: metroRequire(Card, obj3) };
   const callback = react.useCallback(() => onOpenChat(message), items);
   obj3 = { variant: "primary", shadow: "high", border: "subtle", style: tmp.card, onPress: callback, children: items1 };
-  Card = tmp2(6977).Card;
-  const obj4 = { size: native.AvatarSizes.SMALL, user: message.author, guildId: "applicationId" };
+  Card = tmp2(7040).Card;
+  const obj4 = { size: native.AvatarSizes.SMALL, user: message.author, guildId: "r" };
   const Avatar = tmp2(1187).Avatar;
   items1 = [hasOwnProperty(Avatar, obj4), ];
   const obj5 = { style: tmp.body, children: items2 };
-  items2 = [hasOwnProperty(Text_Text.Text, { variant: "text-xs/semibold", color: "text-default", lineClamp: 1, children: name }), hasOwnProperty(Text_Text.Text, { variant: "text-sm/normal", color: "text-default", lineClamp: 1, children: trimmed })];
+  items2 = [hasOwnProperty(Text_Text.Text, { variant: "body-xs/semibold", color: "text-default", lineClamp: 1, children: name }), hasOwnProperty(Text_Text.Text, { variant: "body-sm/normal", color: "text-default", lineClamp: 1, children: trimmed })];
   items1[1] = metroRequire(View, obj5);
   return hasOwnProperty(View, obj2);
 }

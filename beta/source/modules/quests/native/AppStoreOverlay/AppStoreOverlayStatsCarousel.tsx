@@ -1,23 +1,23 @@
-// Module ID: 14668
-// Function ID: 14669
+// Module ID: 14904
+// Function ID: 14905
 // Name: AppStoreOverlayStatsCarousel
-// Dependencies: [19, 17, 21, 575, 5014, 14669, 1113, 14670, 5624, 1375, 5303, 7862, 7871, 2]
+// Dependencies: [19, 17, 21, 575, 5140, 14905, 1113, 14906, 5751, 1377, 5420, 7939, 7948, 2]
 // Exports: default
 
-// Module 14668 (AppStoreOverlayStatsCarousel)
+// Module 14904 (AppStoreOverlayStatsCarousel)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import PlatformUtils from "PlatformUtils" /* 1375 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5303 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import AnalyticsActions from "AnalyticsActions" /* 7862 */;
-import AppStoreOverlayStatCardUtils from "AppStoreOverlayStatCardUtils" /* 14669 */;
-import AppStoreOverlayStarRatingDefault from "AppStoreOverlayStarRating" /* 14670 */;
+import PlatformUtils from "PlatformUtils" /* 1377 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5420 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import AnalyticsActions from "AnalyticsActions" /* 7939 */;
+import AppStoreOverlayStatCardUtils from "AppStoreOverlayStatCardUtils" /* 14905 */;
+import AppStoreOverlayStarRatingDefault from "AppStoreOverlayStarRating" /* 14906 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
-import size_mod from "module_2" /* 2 */;
+import createStyles_mod from "createStyles" /* 5140 */;
+import size from "module_2" /* 2 */;
 
 let dependencyMap;
 
@@ -31,7 +31,7 @@ let obj2;
 let obj3;
 let obj4;
 let obj5;
-let size;
+let obj6;
 function AppStoreOverlayStatCardItem(onRatingPress) {
   let accessibilityLabel;
   let expanded;
@@ -115,14 +115,14 @@ function AppStoreOverlayStatCardItem(onRatingPress) {
     str9 = "(" + ratingCount + ")";
   }
   items1[2] = str9;
-  const items2 = [metroImportAll(Text, { variant: "text-xs/semibold", color: "text-subtle", children: items1 }), metroImportDefault(Text_Text.Text, { variant: "text-md/semibold", color: "text-default", lineClamp: 1, children: primaryText }), ];
+  const items2 = [metroImportAll(Text, { variant: "body-xs/semibold", color: "text-subtle", children: items1 }), metroImportDefault(Text_Text.Text, { variant: "body-md/semibold", color: "text-default", lineClamp: 1, children: primaryText }), ];
   let tmp24Result = null != secondaryContent || null != secondaryText;
   if (tmp24Result) {
     const obj8 = { style: tmp.secondaryRow, children: secondaryContent };
     const tmp26 = metroRequire;
     if (null == secondaryContent) {
-      const obj9 = { variant: "text-xs/medium", color: "text-subtle", lineClamp: 1, children: secondaryText };
-      secondaryContent = tmp24(tmp21(5624).Text, obj9);
+      const obj9 = { variant: "body-xs/medium", color: "text-subtle", lineClamp: 1, children: secondaryText };
+      secondaryContent = tmp24(tmp21(5751).Text, obj9);
     }
     tmp24Result = tmp24(tmp26, obj8);
   }
@@ -148,15 +148,14 @@ function AppStoreOverlayStatCardItem(onRatingPress) {
 ({ jsx: metroImportDefault, jsxs: metroImportAll, Fragment: c9 } = Fragment);
 let closure_10 = 130 + nativeDefault.space.PX_16;
 let createStyles = createStyles_mod;
-let obj = { carousel: obj2, carouselContent: obj3, statCard: size, statCardExpanded: { flex: 1, minWidth: 0 }, expandedCarouselContent: obj4, secondaryRow: obj5 };
+let obj = { carousel: obj2, carouselContent: obj3, statCard: obj4, statCardExpanded: { flex: 1 }, expandedCarouselContent: obj5, secondaryRow: obj6 };
 obj2 = { marginHorizontal: -nativeDefault.space.PX_16 };
 createStyles = createStyles.createStyles;
 obj3 = { gap: nativeDefault.space.PX_16, paddingLeft: nativeDefault.space.PX_16, paddingRight: nativeDefault.space.PX_16 };
-size = { width: 130, height: 92, borderRadius: nativeDefault.space.PX_16, backgroundColor: nativeDefault.colors.CARD_SECONDARY_BACKGROUND_DEFAULT, paddingHorizontal: nativeDefault.space.PX_16, paddingVertical: nativeDefault.space.PX_12, gap: nativeDefault.space.PX_8 };
-obj4 = { flexDirection: "row", gap: nativeDefault.space.PX_16, paddingHorizontal: nativeDefault.space.PX_16 };
-obj5 = { height: nativeDefault.space.PX_16, justifyContent: "center" };
+obj4 = { minWidth: 130, height: 92, borderRadius: nativeDefault.space.PX_16, backgroundColor: nativeDefault.colors.CARD_SECONDARY_BACKGROUND_DEFAULT, paddingHorizontal: nativeDefault.space.PX_16, paddingVertical: nativeDefault.space.PX_12, gap: nativeDefault.space.PX_8 };
+obj5 = { flexDirection: "row", gap: nativeDefault.space.PX_16, paddingHorizontal: nativeDefault.space.PX_16 };
+obj6 = { height: nativeDefault.space.PX_16, justifyContent: "center" };
 let closure_11 = createStyles(obj);
-size = size_mod;
 let result = size.fileFinishedImporting("modules/quests/native/AppStoreOverlay/AppStoreOverlayStatsCarousel.tsx");
 
 export default function AppStoreOverlayStatsCarousel(arg0) {
@@ -194,9 +193,9 @@ export default function AppStoreOverlayStatsCarousel(arg0) {
         if (bound !== current) {
           const obj = { carouselType: AnalyticsActions.AppStoreOverlayCarouselTypes.STATS, scrollingDirection: LEFT, carouselPosition: bound, carouselSize: length };
           if (bound > current) {
-            LEFT = tmp2(7871).HorizontalScrollingDirection.RIGHT;
+            LEFT = tmp2(7948).HorizontalScrollingDirection.RIGHT;
           } else {
-            LEFT = tmp2(7871).HorizontalScrollingDirection.LEFT;
+            LEFT = tmp2(7948).HorizontalScrollingDirection.LEFT;
           }
           tmp(obj);
           tmp11.current = bound;

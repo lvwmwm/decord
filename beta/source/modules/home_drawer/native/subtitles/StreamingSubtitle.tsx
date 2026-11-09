@@ -1,14 +1,14 @@
-// Module ID: 18391
-// Function ID: 18392
+// Module ID: 18730
+// Function ID: 18731
 // Name: StreamingSubtitle
-// Dependencies: [19, 21, 5624, 1113, 6041, 2]
+// Dependencies: [19, 21, 5751, 1113, 6173, 2]
 // Exports: default
 
-// Module 18391 (StreamingSubtitle)
+// Module 18730 (StreamingSubtitle)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 6041 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 6173 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -26,5 +26,5 @@ export default function StreamingSubtitle(arg0) {
   const obj2 = { username: obj3.getName(guildId, null, streamingUser) };
   const k5IKep = intl2.t.k5IKep;
   obj3 = NicknameUtilsDefault;
-  return <Text variant="text-xs/medium" color="text-voice-connected" lineClamp={1}>{format(k5IKep, obj2)}</Text>;
+  return <Text variant="body-xs/medium" color="text-voice-connected" lineClamp={1}>{format(k5IKep, obj2)}</Text>;
 };

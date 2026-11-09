@@ -1,18 +1,18 @@
-// Module ID: 15399
-// Function ID: 15400
+// Module ID: 15692
+// Function ID: 15693
 // Name: BoostingCountDownPill
-// Dependencies: [17, 21, 5014, 575, 5258, 15400, 1994, 1113, 5624, 2]
+// Dependencies: [17, 21, 5140, 575, 5374, 15693, 2118, 1113, 5751, 2]
 // Exports: default
 
-// Module 15399 (BoostingCountDownPill)
+// Module 15692 (BoostingCountDownPill)
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import asyncRequire from "asyncRequire" /* 1994 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import Text_Text from "Text/Text" /* 5624 */;
+import asyncRequire from "asyncRequire" /* 2118 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
+import Text_Text from "Text/Text" /* 5751 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -26,7 +26,7 @@ function handlePress() {
   const openLazy = ActionSheetActionCreatorsDefault.openLazy;
   const obj = { aboutText: intl.string(intl2.t["07lzz7"]) };
   ActionSheetActionCreatorsDefault;
-  const tmp2 = asyncRequire(15400, dependencyMap.paths);
+  const tmp2 = asyncRequire(15693, dependencyMap.paths);
   intl = intl2.intl;
   openLazy(tmp2, "NitroCreditEducationActionSheet", obj);
 }
@@ -67,7 +67,7 @@ export default function BoostingCountDownPill(style) {
   tmp5 = metroRequire;
   if (!isInReverseTrial) {
     const obj3 = { style: tmp.fpDurationPill, children: hasOwnProperty(Text, obj4) };
-    obj4 = { variant: "text-sm/bold", style: tmp.fpDurationText, children: fpDurationText.toUpperCase() };
+    obj4 = { variant: "body-sm/semibold", style: tmp.fpDurationText, children: fpDurationText.toUpperCase() };
     Text = Text_Text.Text;
     tmp2Result = tmp2(tmp6, obj3);
   }
@@ -78,7 +78,7 @@ export default function BoostingCountDownPill(style) {
   if (isInReverseTrial) {
     prop = tmp.fpUnavailableTextNoCountdown;
   }
-  obj6 = { variant: "text-md/normal", color: "interactive-text-active", style: prop, children: intl.string(intl2.t["5nrJDO"]) };
+  obj6 = { variant: "body-md/normal", color: "interactive-text-active", style: prop, children: intl.string(intl2.t["5nrJDO"]) };
   intl = tmp10(1113).intl;
   items1[1] = hasOwnProperty(React3, obj5);
   return hasOwnProperty(tmp3, obj);

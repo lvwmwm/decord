@@ -1,18 +1,18 @@
-// Module ID: 16761
-// Function ID: 16762
+// Module ID: 17084
+// Function ID: 17085
 // Name: RequestDataContent
-// Dependencies: [32, 19, 17, 1072, 21, 5014, 1497, 1113, 6974, 5624, 2061, 7060, 5634, 5958, 16762, 2]
+// Dependencies: [32, 19, 17, 1072, 21, 5140, 1499, 1113, 7037, 5751, 2185, 7126, 5758, 6090, 17085, 2]
 
-// Module 16761 (RequestDataContent)
+// Module 17084 (RequestDataContent)
 import Constants from "Constants" /* 1072 */;
 import intl11 from "intl" /* 1113 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5958 */;
-import DataHarvestActionCreators from "DataHarvestActionCreators" /* 16762 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 6090 */;
+import DataHarvestActionCreators from "DataHarvestActionCreators" /* 17085 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -108,11 +108,11 @@ const memoResult = react.memo(function RequestDataContent() {
     closure_0 = item;
     return closure_1_8(closure_0(first1[8]).TableCheckboxRow, obj, item);
   });
-  const obj12 = { style: tmp.title, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl8.string(require("intl").t.jxXMEz) };
+  const obj12 = { style: tmp.title, variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: intl8.string(require("intl").t.jxXMEz) };
   const Text = require("Text/Text").Text;
   intl8 = require("intl").intl;
   items = [closure_8(Text, obj12), ];
-  const obj13 = { style: tmp.description, variant: "text-sm/medium", color: "text-default", children: format(vtRhDA, obj14) };
+  const obj13 = { style: tmp.description, variant: "body-sm/medium", color: "text-default", children: format(vtRhDA, obj14) };
   const Text2 = require("Text/Text").Text;
   const intl9 = require("intl").intl;
   format = intl9.format;

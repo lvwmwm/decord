@@ -1,52 +1,51 @@
-// Module ID: 15024
-// Function ID: 15025
+// Module ID: 15303
+// Function ID: 15304
 // Name: ProductDetailsActionSheetPreview
-// Dependencies: [32, 19, 17, 21, 5014, 575, 1987, 15025, 15027, 2]
+// Dependencies: [17, 21, 5140, 575, 9069, 2111, 15304, 15306, 2]
 // Exports: default
 
-// Module 15024 (ProductDetailsActionSheetPreview)
+// Module 15303 (ProductDetailsActionSheetPreview)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import CollectiblesItemType from "CollectiblesItemType" /* 1987 */;
-import BundleProductDetailsActionSheetPreviewDefault from "BundleProductDetailsActionSheetPreview" /* 15025 */;
-import _slicedToArray from "_slicedToArray" /* 32 */;
-import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5014 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 2111 */;
+import useMeasuredLayoutDefault from "useMeasuredLayout" /* 9069 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
-let closure_4;
-let hasOwnProperty;
 let obj2;
-({ useCallback: closure_4, useState: hasOwnProperty } = react);
+let tmp2;
+const BundleProductDetailsActionSheetPreviewDefault = tmp2(15304);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 const obj = { previewContainer: { flex: 1 }, previewDivider: obj2 };
 obj2 = { borderBottomColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE, borderBottomWidth: 1, paddingBottom: nativeDefault.space.PX_16, flex: 1 };
-let closure_8 = createStyles.createStyles(obj);
+let closure_5 = createStyles.createStyles(obj);
 const result = size.fileFinishedImporting("modules/collectibles/native/ProductDetailsActionSheetPreview.tsx");
 
 export default function ProductDetailsActionSheetPreview(onBundleActiveItemChange) {
-  let c0;
   let handlePreviewPress;
+  let onLayout;
   let onTrackPress;
   let product;
-  let tmp3;
-  let tmp7Result;
+  let ref;
+  let tmp6Result;
   ({ product, handlePreviewPress, onTrackPress } = onBundleActiveItemChange);
-  c0 = undefined;
   onBundleActiveItemChange = onBundleActiveItemChange.onBundleActiveItemChange;
-  const tmp = closure_8();
-  [tmp3, c0] = hasOwnProperty(0);
-  _slicedToArray(hasOwnProperty(0), 2);
+  const tmp = closure_5();
+  const tmp4 = useMeasuredLayoutDefault();
+  const width = tmp4.width;
+  let num = 0;
+  ({ ref, onLayout } = tmp4);
+  if (undefined !== width) {
+    num = width;
+  }
   if (product.type === CollectiblesItemType.CollectiblesItemType.BUNDLE) {
-    const obj2 = { product, width: tmp3, handlePreviewPress, onTrackPress, onActiveItemChange: onBundleActiveItemChange };
-    tmp7Result = tmp7(BundleProductDetailsActionSheetPreviewDefault, obj2);
+    const obj2 = { product, width: num, handlePreviewPress, onTrackPress, onActiveItemChange: onBundleActiveItemChange };
+    tmp6Result = tmp6(BundleProductDetailsActionSheetPreviewDefault, obj2);
   } else {
     const obj3 = { style: tmp.previewDivider, children: null };
-    tmp7Result = tmp7(tmp8, obj3);
+    tmp6Result = tmp6(tmp7, obj3);
   }
-  return <View style={tmp.previewContainer} onLayout={React3((nativeEvent) => {
-    _undefined(nativeEvent.nativeEvent.layout.width);
-  }, [])}>{tmp7Result}</View>;
+  return <View style={tmp.previewContainer} ref={ref} onLayout={onLayout}>{tmp6Result}</View>;
 };

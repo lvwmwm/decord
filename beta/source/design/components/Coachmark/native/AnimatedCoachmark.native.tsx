@@ -1,17 +1,17 @@
-// Module ID: 9962
-// Function ID: 9963
+// Module ID: 10084
+// Function ID: 10085
 // Name: AnimatedCoachmark
-// Dependencies: [32, 19, 17, 21, 5095, 9963, 5028, 9959, 9960, 2]
+// Dependencies: [32, 19, 17, 21, 1652, 10085, 5154, 10081, 10082, 2]
 // Exports: AnimatedCoachmark
 
-// Module 9962 (AnimatedCoachmark)
+// Module 10084 (AnimatedCoachmark)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import react2 from "react" /* 5028 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 5095 */;
-import TooltipConstants from "TooltipConstants" /* 9959 */;
-import AnimatedEnterExitItemDefault from "AnimatedEnterExitItem" /* 9960 */;
-import Coachmark from "Coachmark" /* 9963 */;
+import _modDef1652 from "module_1652" /* 1652 */;
+import react2 from "react" /* 5154 */;
+import TooltipConstants from "TooltipConstants" /* 10081 */;
+import AnimatedEnterExitItemDefault from "AnimatedEnterExitItem" /* 10082 */;
+import Coachmark from "Coachmark" /* 10085 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -21,7 +21,7 @@ const jsx = Fragment.jsx;
 function renderTooltipItem(arg0, enterExitAnimatedStyles) {
   const items = [enterExitAnimatedStyles, StyleSheet.absoluteFill];
   let tmpResult = null;
-  const View = ReanimatedRexportDefault.View;
+  const View = _modDef1652.View;
   if (null != arg0) {
     const obj2 = { enterExitAnimatedStyles };
     const CoachmarkContainer = Coachmark.CoachmarkContainer;

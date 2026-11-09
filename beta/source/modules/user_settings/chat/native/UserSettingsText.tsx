@@ -1,24 +1,24 @@
-// Module ID: 17451
-// Function ID: 17452
+// Module ID: 17777
+// Function ID: 17778
 // Name: UserSettingsText
-// Dependencies: [19, 17, 1383, 2052, 1193, 1194, 1072, 21, 5014, 575, 1252, 4839, 5932, 5596, 504, 2047, 1497, 7161, 1187, 10278, 5624, 1113, 8177, 6027, 7060, 7369, 7058, 7061, 2]
+// Dependencies: [19, 17, 1385, 2176, 1193, 1194, 1072, 21, 5140, 575, 1252, 4965, 6064, 5724, 504, 2171, 1499, 7223, 1187, 10397, 5751, 1113, 8246, 6159, 7126, 7429, 7124, 7127, 2]
 // Exports: default, setDataSavingMode, setImageDescriptions, setLowQualityImageMode, setStickerAutocomplete, setVideoUploadQuality
 
-// Module 17451 (UserSettingsText)
+// Module 17777 (UserSettingsText)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import UnsyncedUserSettingsStore2 from "UnsyncedUserSettingsStore" /* 1194 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import UserSettings from "UserSettings" /* 4839 */;
-import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 5932 */;
-import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7161 */;
+import UserSettings from "UserSettings" /* 4965 */;
+import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 6064 */;
+import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7223 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1383 */;
-import SubscriptionStore from "SubscriptionStore" /* 2052 */;
+import UserStore from "UserStore" /* 1385 */;
+import SubscriptionStore from "SubscriptionStore" /* 2176 */;
 import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1193 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -120,7 +120,7 @@ export default function UserSettingsText() {
   const obj7 = require("useNavigation");
   closure_4 = obj7.useNavigation();
   const obj8 = { style: tmp5.flex, children: closure_12(Form, obj24) };
-  Form = require("module_8177").Form;
+  Form = require("module_8246").Form;
   const obj9 = { spacing: videoUploadQuality(dataSavingMode[9]).space.PX_24, style: { paddingHorizontal: token }, children: items6 };
   const Stack = require("Stack/Stack").Stack;
   const obj10 = { children: items5 };
@@ -193,7 +193,7 @@ export default function UserSettingsText() {
     const obj21 = { source: tmp3(dataSavingMode[19]), size: require("native").Icon.Sizes.SMALL, style: tmp5.nitroIcon };
     const Icon = tmp(tmp2[18]).Icon;
     items9 = [closure_12(Icon, obj21), ];
-    const obj22 = { variant: "text-sm/medium", color: "text-muted", style: { marginLeft: 4 }, children: intl12.format(require("intl").t.uW1zul, obj23) };
+    const obj22 = { variant: "body-sm/medium", color: "text-muted", style: { marginLeft: 4 }, children: intl12.format(require("intl").t.uW1zul, obj23) };
     const Text = tmp(tmp2[20]).Text;
     intl12 = tmp(tmp2[21]).intl;
     obj23 = {

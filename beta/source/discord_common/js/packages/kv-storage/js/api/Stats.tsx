@@ -1,10 +1,10 @@
-// Module ID: 4908
-// Function ID: 4909
+// Module ID: 5034
+// Function ID: 5035
 // Name: api/Stats
-// Dependencies: [4901, 2]
+// Dependencies: [5027, 2]
 
-// Module 4908 (api/Stats)
-import Host2 from "Host" /* 4901 */;
+// Module 5034 (api/Stats)
+import Host2 from "Host" /* 5027 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/packages/kv-storage/js/api/Stats.tsx");

@@ -1,27 +1,27 @@
-// Module ID: 15057
-// Function ID: 15058
+// Module ID: 15338
+// Function ID: 15339
 // Name: UnlockWithNitroButton
-// Dependencies: [19, 7597, 7735, 1074, 21, 504, 7593, 15042, 1113, 5635, 5624, 9528, 2]
+// Dependencies: [19, 7673, 7811, 1074, 21, 504, 7669, 15321, 1113, 5759, 5751, 9612, 2]
 // Exports: UnlockWithNitroButton
 
-// Module 15057 (UnlockWithNitroButton)
+// Module 15338 (UnlockWithNitroButton)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
-import ProductIds from "ProductIds" /* 7593 */;
-import useOpenNitroSubscribeActionSheetDefault from "useOpenNitroSubscribeActionSheet" /* 15042 */;
+import ProductIds from "ProductIds" /* 7669 */;
+import useOpenNitroSubscribeActionSheetDefault from "useOpenNitroSubscribeActionSheet" /* 15321 */;
 import react from "react" /* 19 */;
-import IAPStore from "IAPStore" /* 7597 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7735 */;
+import IAPStore from "IAPStore" /* 7673 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7811 */;
 import size from "module_2" /* 2 */;
 
 let importDefault;
 
 let tmp;
 const intl2 = tmp(1113);
-const Text_Text = tmp(5624);
-const BaseTextButton2 = tmp(5635);
-const NitroWheelIcon = tmp(9528);
+const Text_Text = tmp(5751);
+const BaseTextButton2 = tmp(5759);
+const NitroWheelIcon = tmp(9612);
 const ShopCtaEnum = CollectiblesShopConstants.ShopCtaEnum;
 const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/collectibles/native/UnlockWithNitroButton.tsx");
@@ -53,7 +53,7 @@ export function UnlockWithNitroButton(shouldShrink) {
   let tmp4Result;
   const BaseTextButton = BaseTextButton2.BaseTextButton;
   if (flag) {
-    const obj2 = { variant: "text-xs/semibold", color: "text-overlay-light", allowFontScaling: false, children: text };
+    const obj2 = { variant: "body-xs/semibold", color: "text-overlay-light", allowFontScaling: false, children: text };
     tmp4Result = tmp4(Text_Text.Text, obj2);
   }
   const obj3 = {

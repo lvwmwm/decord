@@ -15,7 +15,7 @@ import size from "module_2" /* 2 */;
 
 let _self, map, map1;
 
-const f78883 = (item) => {
+const f80135 = (item) => {
   items = [item, []];
   return items;
 };
@@ -33,9 +33,9 @@ class ActionHandlersGraph {
     merged[0] = new Map();
     merged[1] = {};
     new Map();
-    merged[2] = new Map(items.map(f78883));
+    merged[2] = new Map(items.map(f80135));
     merged[3] = {};
-    new Map(items.map(f78883));
+    new Map(items.map(f80135));
     return merged;
   }
   getOrderedActionHandlers(type) {
@@ -227,7 +227,7 @@ const prototype = ActionHandlersGraph.prototype;
 let result = size.fileFinishedImporting("../discord_common/js/packages/flux/Dispatcher.tsx");
 class Dispatcher {
   constructor(actionLogger, _sentryUtils) {
-    const merged = Object.assign({ _interceptors: null, _subscriptions: null, _waitQueue: null, _processingWaitQueue: false, _currentDispatchActionType: null, _actionHandlers: null, _sentryUtils: "Array", functionCache: "\u{1F9D7}\u{1F3FB}" });
+    const merged = Object.assign({ _interceptors: null, _subscriptions: null, _waitQueue: null, _processingWaitQueue: false, _currentDispatchActionType: null, _actionHandlers: null, _sentryUtils: "Array", functionCache: 6945559 });
     merged[0] = [];
     merged[1] = {};
     merged[2] = [];
@@ -243,12 +243,12 @@ class Dispatcher {
       const self3 = this;
       const self4 = this;
       map = new Map();
-      merged1[2] = new Map(items.map(f78883));
+      merged1[2] = new Map(items.map(f80135));
       merged1[3] = {};
       merged[5] = merged1;
       merged[7] = {};
       merged._sentryUtils = _sentryUtils;
-      map1 = new Map(items.map(f78883));
+      map1 = new Map(items.map(f80135));
       if (null == actionLogger) {
         const self5 = this;
         const self6 = this;
@@ -390,10 +390,10 @@ class Dispatcher {
     const obj2 = LastFewActionsAll;
     obj2.add(type.type);
     const actionLogger = this.actionLogger;
-    const logResult1 = actionLogger.log(type, (fn) => {
+    const logResult1 = actionLogger.log(type, (arg0) => {
       try {
         self._currentDispatchActionType = type.type;
-        self._dispatch(type, fn);
+        self._dispatch(type, arg0);
         self._currentDispatchActionType = null;
       } catch (tmp8) {
         self._currentDispatchActionType = null;

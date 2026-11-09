@@ -1,16 +1,16 @@
-// Module ID: 10905
-// Function ID: 10906
+// Module ID: 11031
+// Function ID: 11032
 // Name: OAuth2AuthorizeModal
-// Dependencies: [19, 17, 21, 5014, 575, 9740, 1625, 5095, 5637, 6980, 1113, 10906, 7054, 5624, 7292, 10908, 2]
+// Dependencies: [19, 17, 21, 5140, 575, 9830, 1627, 1652, 5761, 7043, 1113, 11032, 7120, 5751, 7355, 11034, 2]
 // Exports: default
 
-// Module 10905 (OAuth2AuthorizeModal)
+// Module 11031 (OAuth2AuthorizeModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import spring from "spring" /* 5637 */;
+import spring_spring from "spring/spring" /* 5761 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -31,58 +31,66 @@ createStyles = createStyles.createStyles;
 rect = { position: "absolute", left: 0, right: 0, bottom: 0, height: 1, backgroundColor: nativeDefault.colors.BORDER_SUBTLE };
 obj3 = { flex: 1, justifyContent: "center", alignItems: "center", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER, marginEnd: 40 };
 let closure_8 = createStyles(obj);
-const __initData = { code: "function OAuth2AuthorizeModalTsx1(){const{borderOpacity}=this.__closure;var _borderOpacity$get;return{opacity:(_borderOpacity$get=borderOpacity.get())!==null&&_borderOpacity$get!==void 0?_borderOpacity$get:1};}" };
+let closure_9 = { code: "(function OAuth2AuthorizeModalTsx1(){let[borderOpacity]=this.__closure;var _borderOpacity$get;return{opacity:(_borderOpacity$get=borderOpacity.get())!==null&&_borderOpacity$get!==void 0?_borderOpacity$get:1};})" };
 let result = size.fileFinishedImporting("modules/oauth2/native/OAuth2AuthorizeModal.tsx");
 
 export default function OAuth2AuthorizeModal(arg0) {
   let Text;
   let intl3;
-  let items1;
-  let items2;
   let items3;
   let items4;
+  let items5;
+  let items6;
   let obj10;
   let obj13;
   let sharedValue;
   let stringResult;
-  let tmp11Result;
+  let tmp13Result;
   let tmp2Result;
+  let tmp7;
+  let tmp8;
   const tmp = closure_8();
   const tmp2 = sharedValue;
-  const tmp4 = sharedValue(9740)(arg0);
+  const tmp4 = sharedValue(9830)(arg0);
   _require = tmp4;
-  const top = sharedValue(1625)().top;
-  const obj = require("ReanimatedRexport");
+  const top = sharedValue(1627)().top;
+  const obj = require("module_1652");
   sharedValue = obj.useSharedValue(0);
-  const fn = function b() {
-    let opacity = sharedValue.get();
-    if (opacity == null) {
-      opacity = 1;
+  const items = [closure_9, sharedValue];
+  let c0;
+  [tmp7, tmp8] = items;
+  const obj2 = require("module_1652");
+  class OAuth2AuthorizeModalTsx1 {
+    constructor() {
+      let opacity = _undefined.get();
+      if (opacity == null) {
+        opacity = 1;
+      }
+      return { opacity };
     }
-    return { opacity };
-  };
-  fn.__closure = { borderOpacity: sharedValue };
-  fn.__workletHash = 5916964482569;
-  fn.__initData = __initData;
-  const items = [sharedValue];
-  const obj2 = require("ReanimatedRexport");
-  const animatedStyle = obj2.useAnimatedStyle(fn);
-  const obj4 = { style: items1, children: items2 };
-  items1 = [tmp.titleContainer, ];
-  const obj3 = { style: tmp.container, children: items4 };
+  }
+  const items1 = [tmp8];
+  OAuth2AuthorizeModalTsx1.__closure = items1;
+  OAuth2AuthorizeModalTsx1.__workletHash = 9078225687376;
+  OAuth2AuthorizeModalTsx1.__initData = tmp7;
+  const items2 = [sharedValue];
+  const animatedStyle = obj2.useAnimatedStyle(OAuth2AuthorizeModalTsx1);
+  const obj4 = { style: items3, children: items4 };
+  items3 = [tmp.titleContainer, ];
+  const obj3 = { style: tmp.container, children: items6 };
   const obj5 = { paddingTop: top + 16 };
-  items1[1] = obj5;
+  items3[1] = obj5;
   const callback = react.useCallback((nativeEvent) => {
     let num = 0;
     set = sharedValue.set;
-    const withSpring = spring.withSpring;
-    spring;
+    const withSpring = spring_spring.withSpring;
+    spring_spring;
     if (nativeEvent.nativeEvent.contentOffset.y > 16) {
       num = 1;
     }
     const result = set(withSpring(num, closure_7));
-  }, items);
-  const PressableOpacity = require("Pressables").PressableOpacity;
+  }, items2);
+  const PressableOpacity = tmp5(7043).PressableOpacity;
   if (null != tmp4.backStep) {
     const intl2 = tmp5(1113).intl;
     stringResult = intl2.string(tmp5(1113).t["13/7kX"]);
@@ -101,32 +109,32 @@ export default function OAuth2AuthorizeModal(arg0) {
       }
       return goBackOrCancelResult;
     },
-    children: tmp11Result
+    children: tmp13Result
   };
   if (null != tmp4.backStep) {
     const obj7 = { color: tmp2(575).colors.INTERACTIVE_TEXT_DEFAULT };
-    const ArrowSmallLeftIcon = tmp5(10906).ArrowSmallLeftIcon;
-    tmp11Result = tmp11(ArrowSmallLeftIcon, obj7);
+    const ArrowSmallLeftIcon = tmp5(11032).ArrowSmallLeftIcon;
+    tmp13Result = tmp13(ArrowSmallLeftIcon, obj7);
   } else {
     const obj8 = { color: tmp2(575).colors.INTERACTIVE_TEXT_DEFAULT };
-    const XSmallIcon = tmp5(7054).XSmallIcon;
-    tmp11Result = tmp11(XSmallIcon, obj8);
+    const XSmallIcon = tmp5(7120).XSmallIcon;
+    tmp13Result = tmp13(XSmallIcon, obj8);
   }
-  items2 = [closure_5(PressableOpacity, obj6), , ];
+  items4 = [closure_5(PressableOpacity, obj6), , ];
   const obj9 = { style: tmp.title, children: closure_5(Text, obj10) };
-  obj10 = { variant: "redesign/heading-18/bold", accessibilityRole: "header", children: intl3.string(require("intl").t["y+/PE9"]) };
-  Text = tmp5(5624).Text;
+  obj10 = { variant: "heading-md/semibold", accessibilityRole: "header", children: intl3.string(require("intl").t["y+/PE9"]) };
+  Text = tmp5(5751).Text;
   intl3 = tmp5(1113).intl;
-  items2[1] = closure_5(View, obj9);
-  const obj11 = { style: items3 };
-  items3 = [tmp.titleContainerBorder, animatedStyle];
-  items2[2] = closure_5(tmp2(5095).View, obj11);
-  items4 = [closure_6(View, obj4), ];
+  items4[1] = closure_5(View, obj9);
+  const obj11 = { style: items5 };
+  items5 = [tmp.titleContainerBorder, animatedStyle];
+  items4[2] = closure_5(tmp2(1652).View, obj11);
+  items6 = [closure_6(View, obj4), ];
   const obj12 = { bottom: true, style: tmp.contentContainer, children: closure_5(tmp2Result, obj13) };
-  const SafeAreaPaddingView = tmp5(7292).SafeAreaPaddingView;
+  const SafeAreaPaddingView = tmp5(7355).SafeAreaPaddingView;
   obj13 = { onScroll: callback, centerContent: true };
-  tmp2Result = tmp2(10908);
+  tmp2Result = tmp2(11034);
   const merged = Object.assign(tmp4);
-  items4[1] = closure_5(SafeAreaPaddingView, obj12);
+  items6[1] = closure_5(SafeAreaPaddingView, obj12);
   return closure_6(View, obj3);
 };

@@ -1,35 +1,34 @@
-// Module ID: 18908
-// Function ID: 18909
+// Module ID: 19283
+// Function ID: 19284
 // Name: ChannelSettingsPermissionsOverview
-// Dependencies: [32, 5, 19, 17, 4921, 4863, 4920, 4885, 4956, 1383, 1072, 21, 5014, 575, 5958, 1113, 5652, 4951, 11646, 9033, 8199, 12, 7060, 6975, 12219, 1497, 11484, 10233, 17300, 504, 1992, 10819, 18909, 5609, 9812, 7485, 2]
+// Dependencies: [32, 5, 19, 17, 5047, 4989, 5046, 5011, 5082, 1385, 1072, 21, 5140, 575, 6090, 1113, 5776, 5077, 11805, 9113, 8268, 12, 7126, 7038, 12391, 1499, 11629, 10352, 17626, 504, 2116, 10938, 19284, 7658, 9902, 7549, 1652, 2]
 // Exports: default
 
-// Module 18908 (ChannelSettingsPermissionsOverview)
+// Module 19283 (ChannelSettingsPermissionsOverview)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
-import Server from "Server" /* 1992 */;
-import GuildRoleRecord from "GuildRoleRecord" /* 4921 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4951 */;
-import DeprecatedLayoutAnimation from "DeprecatedLayoutAnimation" /* 5609 */;
-import TableRow3 from "TableRow" /* 6975 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7485 */;
-import RoleLabel from "RoleLabel" /* 10233 */;
-import DetailedGuildIdentityUserRowDefault from "DetailedGuildIdentityUserRow" /* 10819 */;
-import CircleMinusIcon2 from "CircleMinusIcon" /* 17300 */;
-import useGetOrFetchChannelOverwriteUsersDefault from "useGetOrFetchChannelOverwriteUsers" /* 18909 */;
+import Server from "Server" /* 2116 */;
+import GuildRoleRecord from "GuildRoleRecord" /* 5047 */;
+import PermissionUtilsAll from "PermissionUtils" /* 5077 */;
+import TableRow3 from "TableRow" /* 7038 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7549 */;
+import RoleLabel from "RoleLabel" /* 10352 */;
+import DetailedGuildIdentityUserRowDefault from "DetailedGuildIdentityUserRow" /* 10938 */;
+import CircleMinusIcon2 from "CircleMinusIcon" /* 17626 */;
+import useGetOrFetchChannelOverwriteUsersDefault from "useGetOrFetchChannelOverwriteUsers" /* 19284 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
-import GuildRoleStore from "GuildRoleStore" /* 4920 */;
-import GuildStore from "GuildStore" /* 4885 */;
-import RelationshipStore from "RelationshipStore" /* 4956 */;
-import UserStore from "UserStore" /* 1383 */;
+import ChannelStore from "ChannelStore" /* 4989 */;
+import GuildRoleStore from "GuildRoleStore" /* 5046 */;
+import GuildStore from "GuildStore" /* 5011 */;
+import RelationshipStore from "RelationshipStore" /* 5082 */;
+import UserStore from "UserStore" /* 1385 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -97,7 +96,7 @@ function ChannelPermissionSyncModule(channel) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -140,7 +139,7 @@ function ChannelPermissionSyncModule(channel) {
               saveChannel(id, obj);
             }
             c3 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp15) {
           c3 = 3;
@@ -150,10 +149,10 @@ function ChannelPermissionSyncModule(channel) {
     });
     show(obj);
   }, items);
-  let obj = channel(5652);
+  let obj = channel(5776);
   const channelName = obj.computeChannelName(category, UserStore, RelationshipStore);
   let obj2 = { style: tmp.tableRowGroupContainer, children: tmp6(TableRowGroup, obj5) };
-  TableRowGroup = channel(7060).TableRowGroup;
+  TableRowGroup = channel(7126).TableRowGroup;
   let intl = channel(1113).intl;
   const formatToPlainString = intl.formatToPlainString;
   const t = channel(1113).t;
@@ -166,24 +165,12 @@ function ChannelPermissionSyncModule(channel) {
     formatToPlainStringResult = formatToPlainString(t.OIhm0M, obj4);
   }
   obj5 = { title: formatToPlainStringResult, hasIcons: true, children: tmp6(TableRow, obj6) };
-  obj6 = { icon: tmp6(tmp3(12219).RefreshIcon, {}), label: intl2.string(tmp3(1113).t.NVwuHq), onPress: callback };
-  TableRow = tmp3(6975).TableRow;
+  obj6 = { icon: tmp6(tmp3(12391).RefreshIcon, {}), label: intl2.string(tmp3(1113).t.NVwuHq), onPress: callback };
+  TableRow = tmp3(7038).TableRow;
   intl2 = tmp3(1113).intl;
   return closure_16(tmp7, obj2);
 }
-function CategorySync(category) {
-  category = category.category;
-  let tmp4 = null;
-  if (null != category) {
-    tmp4 = null;
-    if (!tmp2) {
-      const obj = { channel: tmp, category, locked: tmp3 };
-      tmp4 = authStore4(ChannelPermissionSyncModule, obj);
-    }
-  }
-  return tmp4;
-}
-function AddPermission(isEditing) {
+function AddPermission() {
   let TableRowGroup;
   let closure_0;
   let intl;
@@ -191,42 +178,36 @@ function AddPermission(isEditing) {
   let intl3;
   let items;
   let obj3;
-  _require = undefined;
-  isEditing = isEditing.isEditing;
   const tmp = closure_18();
   let obj = require("useNavigation");
   _require = obj.useNavigation();
-  if (isEditing) {
-    return null;
-  } else {
-    const obj2 = { style: tmp.tableRowGroupContainer, children: closure_17(TableRowGroup, obj3) };
-    obj3 = { title: intl.string(require("intl").t.vPHdP5), hasIcons: true, children: items };
-    TableRowGroup = tmp2(7060).TableRowGroup;
-    intl = tmp2(1113).intl;
-    const obj4 = {
-      icon: closure_16(require("PlusMediumIcon").PlusMediumIcon, {}),
-      label: intl2.string(require("intl").t.fVWxvT),
-      onPress() {
-          const obj = { type: constants.ROLE };
-          closure_0.push(constants2.NEW_PERMISSION, obj);
-        }
-    };
-    const TableRow = tmp2(6975).TableRow;
-    intl2 = tmp2(1113).intl;
-    items = [closure_16(TableRow, obj4), ];
-    const obj5 = {
-      icon: closure_16(require("PlusMediumIcon").PlusMediumIcon, {}),
-      label: intl3.string(require("intl").t.riesLt),
-      onPress() {
-          const obj = { type: constants.MEMBER };
-          closure_0.push(constants2.NEW_PERMISSION, obj);
-        }
-    };
-    const TableRow2 = tmp2(6975).TableRow;
-    intl3 = tmp2(1113).intl;
-    items[1] = closure_16(TableRow2, obj5);
-    return closure_16(View, obj2);
-  }
+  const obj2 = { style: tmp.tableRowGroupContainer, children: closure_17(TableRowGroup, obj3) };
+  obj3 = { title: intl.string(require("intl").t.vPHdP5), hasIcons: true, children: items };
+  TableRowGroup = require("TableRowGroup").TableRowGroup;
+  intl = require("intl").intl;
+  const obj4 = {
+    icon: closure_16(require("PlusMediumIcon").PlusMediumIcon, {}),
+    label: intl2.string(require("intl").t.fVWxvT),
+    onPress() {
+      const obj = { type: constants.ROLE };
+      closure_0.push(constants2.NEW_PERMISSION, obj);
+    }
+  };
+  const TableRow = require("TableRow").TableRow;
+  intl2 = require("intl").intl;
+  items = [closure_16(TableRow, obj4), ];
+  const obj5 = {
+    icon: closure_16(require("PlusMediumIcon").PlusMediumIcon, {}),
+    label: intl3.string(require("intl").t.riesLt),
+    onPress() {
+      const obj = { type: constants.MEMBER };
+      closure_0.push(constants2.NEW_PERMISSION, obj);
+    }
+  };
+  const TableRow2 = require("TableRow").TableRow;
+  intl3 = require("intl").intl;
+  items[1] = closure_16(TableRow2, obj5);
+  return closure_16(View, obj2);
 }
 function RoleRow(onDelete) {
   let colorString;
@@ -249,7 +230,7 @@ function RoleRow(onDelete) {
     tmp2Result = null;
     if (!tmp) {
       const obj2 = { color: nativeDefault.colors.ICON_FEEDBACK_CRITICAL, accessibilityLabel: intl.string(intl5.t.N86XcP) };
-      const CircleMinusIcon = tmp3(17300).CircleMinusIcon;
+      const CircleMinusIcon = tmp3(17626).CircleMinusIcon;
       intl = tmp3(1113).intl;
       tmp2Result = tmp2(CircleMinusIcon, obj2);
     }
@@ -307,7 +288,7 @@ function RoleOverwrites(guild) {
       return closure_1_16(RoleRow, obj, role.id);
     })
   };
-  TableRowGroup = tmp2(7060).TableRowGroup;
+  TableRowGroup = tmp2(7126).TableRowGroup;
   intl = tmp2(1113).intl;
   return closure_16(View, obj4);
 }
@@ -374,7 +355,7 @@ function MemberOverwrites(channel) {
           return closure_1_16(MemberRow, obj, user.id);
         })
     };
-    TableRowGroup = guild_id(7060).TableRowGroup;
+    TableRowGroup = guild_id(7126).TableRowGroup;
     intl = guild_id(1113).intl;
     tmp4 = closure_16(View, obj2);
   }
@@ -382,7 +363,7 @@ function MemberOverwrites(channel) {
 }
 let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
-const View = react_native.View;
+let View = react_native.View;
 const isEveryoneRole = GuildRoleRecord.isEveryoneRole;
 ({ PermissionOverrideType: closure_14, ChannelSettingsSections: closure_15 } = Constants);
 ({ jsx: closure_16, jsxs: closure_17 } = Fragment);
@@ -397,12 +378,20 @@ let result = size.fileFinishedImporting("components_native/channel_settings/Chan
 export default function ChannelSettingsPermissionsOverview(channelId) {
   let closure_4;
   let closure_6;
+  let entering;
+  let exiting;
   let isEditing;
-  let items6;
+  let items7;
+  let layout;
+  let obj10;
+  let obj14;
+  let obj16;
+  let trigger;
   channelId = channelId.channelId;
   let stateFromStores2;
   isEditing = undefined;
   react = undefined;
+  trigger = undefined;
   let callback;
   function handleClearPermissionOverwrite(arg0) {
     let intl;
@@ -439,16 +428,17 @@ export default function ChannelSettingsPermissionsOverview(channelId) {
     intl4 = channelId(stateFromStores2[15]).intl;
     show(obj);
   }
+  const tmp3 = stateFromStores2;
   let tmp = closure_18();
   let obj = channelId(stateFromStores2[25]);
   navigation = obj.useNavigation();
-  const items = [ChannelStore];
+  const items = [handleClearPermissionOverwrite];
   const items1 = [channelId];
   const obj2 = channelId(stateFromStores2[29]);
   const stateFromStores = obj2.useStateFromStores(items, () => ChannelStore.getChannel(channelId), items1);
   const obj3 = channelId(stateFromStores2[18]);
   const appChannelBotUserId = obj3.useAppChannelBotUserId(stateFromStores);
-  const items2 = [ChannelStore];
+  const items2 = [handleClearPermissionOverwrite];
   const obj4 = channelId(stateFromStores2[29]);
   const stateFromStores1 = obj4.useStateFromStores(items2, () => {
     let parent_id;
@@ -460,7 +450,6 @@ export default function ChannelSettingsPermissionsOverview(channelId) {
   });
   const items3 = [GuildStore];
   const obj5 = channelId(stateFromStores2[29]);
-  const tmp2 = stateFromStores2;
   stateFromStores2 = obj5.useStateFromStores(items3, () => {
     let guild_id;
     const getGuild = GuildStore.getGuild;
@@ -480,16 +469,21 @@ export default function ChannelSettingsPermissionsOverview(channelId) {
   });
   let areChannelsLockedResult = null != stateFromStores;
   if (areChannelsLockedResult) {
-    const obj7 = stateFromStores(tmp2[17]);
+    const obj7 = stateFromStores(tmp3[17]);
     areChannelsLockedResult = obj7.areChannelsLocked(stateFromStores, stateFromStores1, appChannelBotUserId);
   }
   [isEditing, react] = react.useState(false);
+  ({ entering, exiting } = navigation(tmp3[33])());
+  navigation(tmp3[33])();
+  const tmp2Result = channelId(tmp3[33]);
+  const triggeredLayoutTransition = tmp2Result.useTriggeredLayoutTransition();
+  ({ layout, trigger } = triggeredLayoutTransition);
+  const items5 = [trigger];
   callback = react.useCallback(() => {
+    trigger();
     closure_6((arg0) => !arg0);
-    const obj = DeprecatedLayoutAnimation;
-    const result = obj.DeprecatedLayoutAnimation();
-  }, []);
-  const items5 = [navigation, isEditing, callback];
+  }, items5);
+  const items6 = [navigation, isEditing, callback];
   const layoutEffect = react.useLayoutEffect(() => {
     let onPress;
     let obj = {
@@ -511,17 +505,36 @@ export default function ChannelSettingsPermissionsOverview(channelId) {
       }
     };
     navigation.setOptions(obj);
-  }, items5);
-  let tmp14 = null;
+  }, items6);
+  let tmp19Result4 = null;
   if (null != stateFromStores) {
-    tmp14 = null;
+    tmp19Result4 = null;
     if (null != stateFromStores2) {
-      const obj8 = { style: tmp.tableContainer, children: items6 };
-      const obj9 = { channel: stateFromStores, category: stateFromStores1, isEditing, locked: areChannelsLockedResult };
-      items6 = [closure_16(CategorySync, obj9), , , ];
-      const obj10 = { isEditing };
-      items6[1] = closure_16(AddPermission, obj10);
-      const obj11 = {
+      let tmp19Result = null;
+      const obj8 = { style: tmp.tableContainer, children: items7 };
+      const LayoutAnimationConfig = tmp2(tmp3[36]).LayoutAnimationConfig;
+      const tmp20 = closure_17;
+      const tmp21 = trigger;
+      if (null != stateFromStores1) {
+        tmp19Result = null;
+        if (!isEditing) {
+          const obj9 = { entering, exiting, children: closure_16(ChannelPermissionSyncModule, obj10) };
+          obj10 = { channel: stateFromStores, category: stateFromStores1, locked: areChannelsLockedResult };
+          View = tmp13(tmp3[36]).View;
+          tmp19Result = tmp19(View, obj9);
+        }
+      }
+      items7 = [tmp19Result, , , ];
+      let tmp19Result3 = null;
+      if (!isEditing) {
+        const obj11 = { entering, exiting, children: closure_16(AddPermission, {}) };
+        const View2 = tmp13(tmp3[36]).View;
+        tmp19Result3 = tmp19(View2, obj11);
+      }
+      items7[1] = tmp19Result3;
+      const obj12 = { skipEntering: true, children: tmp20(tmp21, obj8) };
+      const obj13 = { layout, children: closure_16(RoleOverwrites, obj14) };
+      obj14 = {
         guild: stateFromStores2,
         channel: stateFromStores,
         isEditing,
@@ -536,8 +549,10 @@ export default function ChannelSettingsPermissionsOverview(channelId) {
               handleClearPermissionOverwrite(arg0);
             }
       };
-      items6[2] = closure_16(RoleOverwrites, obj11);
-      const obj12 = {
+      const View3 = tmp13(tmp3[36]).View;
+      items7[2] = closure_16(View3, obj13);
+      const obj15 = { layout, children: closure_16(MemberOverwrites, obj16) };
+      obj16 = {
         channel: stateFromStores,
         isEditing,
         onSelectRow(id) {
@@ -551,9 +566,10 @@ export default function ChannelSettingsPermissionsOverview(channelId) {
               handleClearPermissionOverwrite(arg0);
             }
       };
-      items6[3] = closure_16(MemberOverwrites, obj12);
-      tmp14 = closure_17(callback, obj8);
+      const View4 = tmp13(tmp3[36]).View;
+      items7[3] = closure_16(View4, obj15);
+      tmp19Result4 = tmp19(LayoutAnimationConfig, obj12);
     }
   }
-  return tmp14;
+  return tmp19Result4;
 };

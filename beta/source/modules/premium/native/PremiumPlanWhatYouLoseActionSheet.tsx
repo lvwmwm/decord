@@ -1,30 +1,29 @@
-// Module ID: 15259
-// Function ID: 15260
+// Module ID: 15545
+// Function ID: 15546
 // Name: PremiumPlanWhatYouLoseActionSheet
-// Dependencies: [19, 17, 1385, 21, 5014, 575, 5717, 5624, 2047, 7326, 15260, 38, 15264, 1113, 15265, 14604, 15266, 15267, 5258, 5272, 7616, 5634, 10560, 2]
+// Dependencies: [19, 17, 1387, 21, 5140, 575, 5842, 5751, 2171, 7387, 15546, 38, 15550, 1113, 15551, 14840, 15552, 15553, 5374, 5388, 7692, 5758, 10679, 2]
 // Exports: default
 
-// Module 15259 (PremiumPlanWhatYouLoseActionSheet)
+// Module 15545 (PremiumPlanWhatYouLoseActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl9 from "intl" /* 1113 */;
-import PremiumConstants from "PremiumConstants" /* 1385 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import FastImageDefault from "FastImage" /* 5717 */;
-import PremiumAnalyticsUtils from "PremiumAnalyticsUtils" /* 10560 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14604 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 15264 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 15265 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 15266 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 15267 */;
+import PremiumConstants from "PremiumConstants" /* 1387 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import FastImageDefault from "FastImage" /* 5842 */;
+import PremiumAnalyticsUtils from "PremiumAnalyticsUtils" /* 10679 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14840 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 15550 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 15551 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 15552 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 15553 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let BottomSheet;
 
 let metroImportDefault;
 let metroRequire;
@@ -40,7 +39,7 @@ function WhatYouLoseItem(arg0) {
   const tmp = closure_8();
   const obj = { style: tmp.item, children: items };
   items = [metroRequire(FastImageDefault, { source: imageSource }), ];
-  const obj2 = { variant: "text-md/medium", style: tmp.itemLabel, children: text };
+  const obj2 = { variant: "body-md/medium", style: tmp.itemLabel, children: text };
   items[1] = metroRequire(Text_Text.Text, obj2);
   return metroImportDefault(View, obj);
 }
@@ -124,10 +123,10 @@ export default function PremiumPlanWhatYouLoseActionSheet(arg0) {
       return [];
     }
   }, items);
-  BottomSheet = require("Sheet/BottomSheet").BottomSheet;
+  const BottomSheet = require("Sheet/BottomSheet").BottomSheet;
   let items1 = [closure_6(subscription(premiumTypeFromSubscription[20]), { premiumType: premiumTypeFromSubscription }), , ];
   let obj3 = { style: tmp.body, children: items2 };
-  let obj4 = { variant: "heading-xl/extrabold", style: tmp.title, children: stringResult };
+  let obj4 = { variant: "heading-xl/semibold", style: tmp.title, children: stringResult };
   const Text = require("Text/Text").Text;
   const tmp10 = obj6;
   if (mode === obj6.CANCEL) {
@@ -138,7 +137,7 @@ export default function PremiumPlanWhatYouLoseActionSheet(arg0) {
     stringResult = intl.string(tmp2(tmp3[13]).t["7VcWW0"]);
   }
   items2 = [tmp8(Text, obj4), , ];
-  let obj5 = { variant: "text-md/medium", style: tmp.subtitle, children: format2Result };
+  let obj5 = { variant: "body-md/medium", style: tmp.subtitle, children: format2Result };
   const Text2 = tmp2(tmp3[7]).Text;
   if (mode === tmp10.CANCEL) {
     let intl4 = tmp2(tmp3[13]).intl;
@@ -178,7 +177,7 @@ export default function PremiumPlanWhatYouLoseActionSheet(arg0) {
   intl5 = tmp2(tmp3[13]).intl;
   items3 = [tmp8(tmp9, obj10), ];
   const obj12 = {
-    variant: "text-sm/medium",
+    variant: "body-sm/medium",
     style: tmp.keepText,
     onPress: function onCloseWithTracking() {
       const trackPremiumSubscriptionCancellationFlowStep = PremiumAnalyticsUtils.trackPremiumSubscriptionCancellationFlowStep;

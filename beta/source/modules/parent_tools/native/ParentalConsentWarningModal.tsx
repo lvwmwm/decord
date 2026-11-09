@@ -1,33 +1,33 @@
-// Module ID: 19584
-// Function ID: 19585
+// Module ID: 19993
+// Function ID: 19994
 // Name: ParentalConsentWarningModal
-// Dependencies: [19, 17, 7715, 7716, 1072, 4860, 21, 4847, 7717, 5199, 7563, 6746, 5014, 575, 1625, 1113, 2538, 1252, 572, 4848, 5258, 6744, 19585, 1994, 5272, 6027, 19586, 5624, 5634, 2]
+// Dependencies: [19, 17, 7791, 7792, 1072, 4986, 21, 4973, 7793, 5315, 7635, 6801, 5140, 575, 1627, 1113, 2664, 1252, 572, 4974, 5374, 6799, 19994, 2118, 5388, 6159, 19995, 5751, 5758, 2]
 // Exports: default
 
-// Module 19584 (ParentalConsentWarningModal)
+// Module 19993 (ParentalConsentWarningModal)
 import react_native from "react-native" /* 17 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import nativeDefault from "native" /* 575 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import asyncRequire from "asyncRequire" /* 1994 */;
-import dismissible_content from "dismissible_content" /* 4847 */;
-import DismissibleContentUtils from "DismissibleContentUtils" /* 4848 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4860 */;
-import RootNavigationRef from "RootNavigationRef" /* 5199 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6744 */;
-import ModalDispatchQueueDefault from "ModalDispatchQueue" /* 6746 */;
-import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7717 */;
+import asyncRequire from "asyncRequire" /* 2118 */;
+import dismissible_content from "dismissible_content" /* 4973 */;
+import DismissibleContentUtils from "DismissibleContentUtils" /* 4974 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4986 */;
+import RootNavigationRef from "RootNavigationRef" /* 5315 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6799 */;
+import ModalDispatchQueueDefault from "ModalDispatchQueue" /* 6801 */;
+import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7793 */;
 import react from "react" /* 19 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7715 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 7716 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7791 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 7792 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let BottomSheet, importDefault;
+let importDefault;
 
 let c10;
 let c9;
@@ -125,7 +125,7 @@ export default function ParentalConsentWarningModal(daysRemaining) {
       if (null != rootNavigationRef) {
         if (rootNavigationRef.isReady()) {
           let obj2 = { screen: constants2.FAMILY_CENTER };
-          const tmp9Result = tmp9(7563);
+          const tmp9Result = tmp9(7635);
           tmp9Result.openUserSettings(obj2);
         }
       }
@@ -137,7 +137,7 @@ export default function ParentalConsentWarningModal(daysRemaining) {
       });
     } else {
       const tmp2Result4 = ModalActionCreatorsDefault;
-      tmp2Result4.pushLazy(asyncRequire(19585, tmp3.paths));
+      tmp2Result4.pushLazy(asyncRequire(19994, tmp3.paths));
     }
   }, items2);
   const intl = daysRemaining(callback[15]).intl;
@@ -157,15 +157,15 @@ export default function ParentalConsentWarningModal(daysRemaining) {
   const obj4 = { startExpanded: true, onDismiss: callback1, children: closure_12(View, obj5) };
   obj5 = { style: items3, children: closure_13(Stack, obj6) };
   items3 = [tmp.container, { paddingBottom: bottom }];
-  BottomSheet = tmp4(tmp3[24]).BottomSheet;
+  const BottomSheet = tmp4(tmp3[24]).BottomSheet;
   obj6 = { spacing: tmp2(tmp3[13]).space.PX_16, children: items4 };
   Stack = tmp4(tmp3[25]).Stack;
   items4 = [, , , ];
   const obj7 = { style: tmp.illustration, children: closure_12(daysRemaining(tmp3[26]).FamilyKeysSpotIllustration, { accessible: false }) };
   items4[0] = closure_12(View, obj7);
-  const obj8 = { variant: "heading-lg/bold", color: "text-default", style: tmp.title, accessibilityRole: "header", children: stringResult };
+  const obj8 = { variant: "heading-lg/semibold", color: "text-default", style: tmp.title, accessibilityRole: "header", children: stringResult };
   items4[1] = closure_12(daysRemaining(tmp3[27]).Text, obj8);
-  const obj9 = { variant: "text-md/medium", color: "text-default", style: tmp.body, children: stringResult1 };
+  const obj9 = { variant: "body-md/medium", color: "text-default", style: tmp.body, children: stringResult1 };
   items4[2] = closure_12(daysRemaining(tmp3[27]).Text, obj9);
   const obj10 = { spacing: tmp2(tmp3[13]).space.PX_8, children: items5 };
   const Stack2 = tmp4(tmp3[25]).Stack;

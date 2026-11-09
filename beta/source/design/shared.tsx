@@ -1,13 +1,13 @@
-// Module ID: 5021
-// Function ID: 5022
+// Module ID: 5147
+// Function ID: 5148
 // Name: shared
-// Dependencies: [2, 5022, 5035, 5036, 5037]
+// Dependencies: [2, 5148, 5161, 5162, 5163]
 
-// Module 5021 (shared)
-import design_shared from "design/shared" /* 5022 */;
-import StickerTypes from "StickerTypes" /* 5035 */;
-import themes from "themes" /* 5036 */;
-import Colors from "Colors" /* 5037 */;
+// Module 5147 (shared)
+import design_shared from "design/shared" /* 5148 */;
+import StickerTypes from "StickerTypes" /* 5161 */;
+import themes from "themes" /* 5162 */;
+import shared_Colors from "shared/Colors" /* 5163 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("design/shared.tsx");
@@ -26,8 +26,8 @@ export const useThemeContext = design_shared.useThemeContext;
 export const ThemeContextType = design_shared.ThemeContextType;
 export const isThemeDark = themes.isThemeDark;
 export const isThemeLight = themes.isThemeLight;
-export const getContrastingColor = Colors.getContrastingColor;
-export const darkenColor = Colors.darkenColor;
-export const brightenColor = Colors.brightenColor;
-export const setColorOpacity = Colors.setColorOpacity;
-export const WCAGContrastRatios = Colors.WCAGContrastRatios;
+export const getContrastingColor = shared_Colors.getContrastingColor;
+export const darkenColor = shared_Colors.darkenColor;
+export const brightenColor = shared_Colors.brightenColor;
+export const setColorOpacity = shared_Colors.setColorOpacity;
+export const WCAGContrastRatios = shared_Colors.WCAGContrastRatios;

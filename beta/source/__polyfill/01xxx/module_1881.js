@@ -1,93 +1,182 @@
 // Module ID: 1881
 // Function ID: 1882
-// Dependencies: [19, 17, 1882, 1650, 1880]
-// Exports: useExtraContentPadding
+// Dependencies: [41, 42, 93, 95, 98, 19, 21, 1877, 1878, 1866, 1827]
 
 // Module 1881
-import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import startMapper from "startMapper" /* 1827 */;
+import react_native from "react-native" /* 1866 */;
+import react2 from "react" /* 1877 */;
+import _mod1878 from "module_1878" /* 1878 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
+import c3 from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
 import react from "react" /* 19 */;
-import _mod1650 from "module_1650" /* 1650 */;
-import _mod1880 from "module_1880" /* 1880 */;
 
-react.useCallback;
-const Platform = react_native.Platform;
-let closure_4 = { code: "function pnpm_indexTs1(target){const{contentOffsetY,IS_FABRIC,Platform,scrollTo,scrollViewRef}=this.__closure;if(contentOffsetY&&IS_FABRIC){contentOffsetY.value=target;}else if(Platform.OS===\"android\"){requestAnimationFrame(function(){scrollTo(scrollViewRef,0,target,false);});}else{scrollTo(scrollViewRef,0,target,false);}}" };
-let closure_5 = { code: "function pnpm_indexTs2(){const{extraContentPadding}=this.__closure;return extraContentPadding.value;}" };
-let closure_6 = { code: "function pnpm_indexTs3(current,previous){const{freeze,blankSpace,keyboardPadding,isScrollAtEnd,scroll,layout,size,inverted,keyboardLiftBehavior,shouldShiftContent,scrollToTarget}=this.__closure;if(freeze.value||previous===null){return;}const rawDelta=current-previous;if(rawDelta===0){return;}const previousTotal=Math.max(blankSpace.value,keyboardPadding.value+previous);const currentTotal=Math.max(blankSpace.value,keyboardPadding.value+current);const effectiveDelta=currentTotal-previousTotal;if(effectiveDelta===0){return;}const atEnd=isScrollAtEnd(scroll.value,layout.value.height,size.value.height,inverted);if(keyboardLiftBehavior===\"persistent\"&&effectiveDelta<0&&!atEnd){return;}if(!shouldShiftContent(keyboardLiftBehavior,atEnd)){return;}if(inverted){const target=Math.max(scroll.value-effectiveDelta,-currentTotal);scrollToTarget(target);}else{const maxScroll=Math.max(size.value.height-layout.value.height+currentTotal,0);const target=Math.min(scroll.value+effectiveDelta,maxScroll);scrollToTarget(target);}}" };
+let Component;
+let c10;
+let c9;
+let createContext;
+let hasOwnProperty;
+let metroImportAll;
+let metroImportDefault;
+let metroRequire;
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
-export function useExtraContentPadding(scrollViewRef) {
-  scrollViewRef = scrollViewRef.scrollViewRef;
-  const extraContentPadding = scrollViewRef.extraContentPadding;
-  const keyboardPadding = scrollViewRef.keyboardPadding;
-  const blankSpace = scrollViewRef.blankSpace;
-  const scroll = scrollViewRef.scroll;
-  const layout = scrollViewRef.layout;
-  size = scrollViewRef.size;
-  const contentOffsetY = scrollViewRef.contentOffsetY;
-  const inverted = scrollViewRef.inverted;
-  const keyboardLiftBehavior = scrollViewRef.keyboardLiftBehavior;
-  const freeze = scrollViewRef.freeze;
-  const fn = function u(value) {
-    let closure_0 = value;
-    if (contentOffsetY) {
-      if (scrollViewRef(extraContentPadding[2]).IS_FABRIC) {
-        tmp.value = value;
-      }
+    }));
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
+    };
+    return _isNativeReflectConstruct();
+  } catch (err) {
+  }
+}
+function SkipEntering(children) {
+  const tmp = authStore(children.shouldSkip);
+  let closure_0 = tmp;
+  const items = [tmp];
+  React4(() => {
+    closure_0.current = false;
+  }, items);
+  return <context value={tmp}>{arg0.children}</context>;
+}
+({ Children: hasOwnProperty, cloneElement: metroRequire, Fragment: metroImportDefault, isValidElement: metroImportAll, useEffect: c9, useRef: c10, Component, createContext } = react);
+const jsx = Fragment.jsx;
+const context = createContext(null);
+class LayoutAnimationConfig {
+  constructor() {
+    let constructResult;
+    const self = this;
+    const items = [...arguments];
+    let closure_0;
+    _classCallCheck(this, LayoutAnimationConfig);
+    const items1 = [...items];
+    const obj = _getPrototypeOf(LayoutAnimationConfig);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = c3;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, items1, tmp2(self).constructor);
+    } else {
+      constructResult = obj.apply(self, items1);
     }
-    const animationFrame = requestAnimationFrame(() => {
-      const obj = _mod1650;
-      obj.scrollTo(scrollViewRef, 0, closure_0, false);
-    });
-  };
-  let obj = { contentOffsetY, IS_FABRIC: scrollViewRef(extraContentPadding[2]).IS_FABRIC, Platform: blankSpace, scrollTo: scrollViewRef(extraContentPadding[3]).scrollTo, scrollViewRef };
-  fn.__closure = obj;
-  fn.__workletHash = 2925167321956;
-  fn.__initData = scroll;
-  const items = [scrollViewRef, contentOffsetY];
-  const tmp = keyboardPadding(fn, items);
-  let closure_11 = tmp;
-  let obj2 = scrollViewRef(extraContentPadding[3]);
-  const fn2 = function v() {
-    return extraContentPadding.value;
-  };
-  fn2.__closure = { extraContentPadding };
-  fn2.__workletHash = 6627638143453;
-  fn2.__initData = layout;
-  const fn3 = function f(arg0, arg1) {
-    if (!freeze.value) {
-      if (null !== arg1) {
-        if (0 != arg0 - arg1) {
-          const _Math3 = Math;
-          const _Math4 = Math;
-          const bound = Math.max(blankSpace.value, keyboardPadding.value + arg1);
-          const bound1 = Math.max(blankSpace.value, keyboardPadding.value + arg0);
-          const diff = bound1 - bound;
-          if (0 !== diff) {
-            const obj2 = _mod1880;
-            const isScrollAtEndResult = obj2.isScrollAtEnd(scroll.value, layout.value.height, size.value.height, inverted);
-            const iter2 = layout;
-            const iter3 = size;
-            const tmp14Result = _mod1880;
-            const tmp16 = inverted;
-            const tmp20 = keyboardLiftBehavior;
-            if (tmp14Result.shouldShiftContent(tmp20, isScrollAtEndResult)) {
-              const _Math = Math;
-              if (tmp16) {
-                closure_11(max(scroll.value - diff, -bound1));
-              } else {
-                const _Math2 = Math;
-                closure_11(Math.min(scroll.value + diff, max(iter3.value.height - iter2.value.height + bound1, 0)));
-              }
-            }
+    const tmp3Result = tmp3(self, constructResult);
+    closure_0 = tmp3Result;
+    tmp3Result._childInstance = null;
+    tmp3Result._setChildInstance = (_childInstance) => {
+      closure_0._childInstance = _childInstance;
+    };
+    return tmp3Result;
+  }
+}
+_inherits(LayoutAnimationConfig, Component);
+const entry = {
+  key: "_getMergedRef",
+  value: function _getMergedRef(ref) {
+    const self = this;
+    const tmp = this._mergedRef && self._mergedRefSource === ref;
+    if (!tmp) {
+      self._mergedRefSource = ref;
+      const obj = react2;
+      self._mergedRef = obj.mergeRefs(ref, self._setChildInstance);
+    }
+    return self._mergedRef;
+  }
+};
+let items = [
+  entry,
+  {
+    key: "getComponentViewTag",
+    value: function getComponentViewTag() {
+      const obj = _mod1878;
+      let num = obj.getViewTagFromInstance(this._childInstance);
+      if (num == null) {
+        num = -1;
+      }
+      return num;
+    }
+  },
+  {
+    key: "getMaybeWrappedChildren",
+    value: function getMaybeWrappedChildren() {
+      const self = this;
+      const arr = hasOwnProperty;
+      if (hasOwnProperty.count(this.props.children) > 1) {
+        let mapped;
+        if (self.props.skipExiting) {
+          mapped = arr.map(self.props.children, (children) => <LayoutAnimationConfig skipExiting>{arg0}</LayoutAnimationConfig>);
+        }
+        return mapped;
+      }
+      mapped = self.getMaybeRefTrackedChild();
+    }
+  },
+  {
+    key: "getMaybeRefTrackedChild",
+    value: function getMaybeRefTrackedChild() {
+      const self = this;
+      const children = this.props.children;
+      let tmp = children;
+      if (undefined !== this.props.skipExiting) {
+        tmp = children;
+        if (metroImportAll(children)) {
+          tmp = children;
+          if (children.type !== metroImportDefault) {
+            const obj = { ref: self._getMergedRef(children.props.ref) };
+            tmp = metroRequire(children, obj);
           }
         }
       }
+      return tmp;
     }
-  };
-  fn3.__closure = { freeze, blankSpace, keyboardPadding, isScrollAtEnd: scrollViewRef(extraContentPadding[4]).isScrollAtEnd, scroll, layout, size, inverted, keyboardLiftBehavior, shouldShiftContent: scrollViewRef(extraContentPadding[4]).shouldShiftContent, scrollToTarget: tmp };
-  fn3.__workletHash = 14660760767987;
-  fn3.__initData = size;
-  const items1 = [inverted, keyboardLiftBehavior];
-  ({ freeze, blankSpace, keyboardPadding, isScrollAtEnd: scrollViewRef(extraContentPadding[4]).isScrollAtEnd, scroll, layout, size, inverted, keyboardLiftBehavior, shouldShiftContent: scrollViewRef(extraContentPadding[4]).shouldShiftContent, scrollToTarget: tmp });
-  const animatedReaction = obj2.useAnimatedReaction(fn2, fn3, items1);
-}
+  },
+  {
+    key: "setShouldAnimateExiting",
+    value: function setShouldAnimateExiting() {
+      const self = this;
+      if (1 === hasOwnProperty.count(this.props.children)) {
+        const obj = _mod1878;
+        let viewTagFromInstance = obj.getViewTagFromInstance(self._childInstance);
+        if (viewTagFromInstance == null) {
+          const tmpResult = react_native;
+          viewTagFromInstance = tmpResult.findNodeHandle(self);
+        }
+        if (viewTagFromInstance) {
+          const tmpResult2 = startMapper;
+          const result = tmpResult2.setShouldAnimateExitingForTag(viewTagFromInstance, !self.props.skipExiting);
+        }
+      }
+    }
+  },
+  {
+    key: "componentWillUnmount",
+    value: function componentWillUnmount() {
+      const self = this;
+      if (undefined !== this.props.skipExiting) {
+        const result = self.setShouldAnimateExiting();
+      }
+    }
+  },
+  {
+    key: "render",
+    value: function render() {
+      const maybeWrappedChildren = this.getMaybeWrappedChildren();
+      let tmp2 = maybeWrappedChildren;
+      if (undefined !== this.props.skipEntering) {
+        tmp2 = <SkipEntering shouldSkip={this.props.skipEntering}>{maybeWrappedChildren}</SkipEntering>;
+      }
+      return tmp2;
+    }
+  }
+];
+const LayoutAnimationConfig_export = _createClass(LayoutAnimationConfig, items);
+
+export const SkipEnteringContext = context;
+export { LayoutAnimationConfig_export as LayoutAnimationConfig };

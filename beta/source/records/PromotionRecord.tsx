@@ -1,12 +1,12 @@
-// Module ID: 9627
-// Function ID: 9628
+// Module ID: 9715
+// Function ID: 9716
 // Name: PromotionRecord
-// Dependencies: [1398, 9628, 9665, 1396, 2]
+// Dependencies: [1405, 9716, 9756, 1403, 2]
 
-// Module 9627 (PromotionRecord)
-import FlagUtils from "FlagUtils" /* 1396 */;
-import Record from "Record" /* 1398 */;
-import MarketingComponentRecord from "MarketingComponentRecord" /* 9628 */;
+// Module 9715 (PromotionRecord)
+import FlagUtils from "FlagUtils" /* 1403 */;
+import Record from "Record" /* 1405 */;
+import MarketingComponentRecord from "MarketingComponentRecord" /* 9716 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -15,44 +15,49 @@ class PromotionRecord extends Record {
   constructor(inboundRestrictedCountries) {
     let bogoRewardEnabled;
     let flags;
-    const tmp3 = new PromotionRecord(tmp2, new.target, tmp, this, inboundRestrictedCountries, PromotionRecord);
-    ({ id: tmp3.id, trialId: tmp3.trialId, startDate: tmp3.startDate, endDate: tmp3.endDate, outboundRedemptionEndDate: tmp3.outboundRedemptionEndDate, inboundHeaderText: tmp3.inboundHeaderText, inboundBodyText: tmp3.inboundBodyText, inboundHelpCenterLink: tmp3.inboundHelpCenterLink, outboundTitle: tmp3.outboundTitle, outboundRedemptionModalBody: tmp3.outboundRedemptionModalBody, outboundTermsAndConditions: tmp3.outboundTermsAndConditions, outboundRedemptionPageLink: tmp3.outboundRedemptionPageLink, outboundRedemptionUrlFormat: tmp3.outboundRedemptionUrlFormat, flags } = inboundRestrictedCountries);
+    let priority;
+    const tmp4 = new PromotionRecord(tmp3, tmp2, new.target, this, tmp, inboundRestrictedCountries);
+    ({ id: tmp4.id, trialId: tmp4.trialId, startDate: tmp4.startDate, endDate: tmp4.endDate, outboundRedemptionEndDate: tmp4.outboundRedemptionEndDate, inboundHeaderText: tmp4.inboundHeaderText, inboundBodyText: tmp4.inboundBodyText, inboundHelpCenterLink: tmp4.inboundHelpCenterLink, outboundTitle: tmp4.outboundTitle, outboundRedemptionModalBody: tmp4.outboundRedemptionModalBody, outboundTermsAndConditions: tmp4.outboundTermsAndConditions, outboundRedemptionPageLink: tmp4.outboundRedemptionPageLink, outboundRedemptionUrlFormat: tmp4.outboundRedemptionUrlFormat, flags } = inboundRestrictedCountries);
     if (flags == null) {
       flags = 0;
     }
-    tmp3.flags = flags;
+    tmp4.flags = flags;
     let prop = inboundRestrictedCountries.inboundRestrictedCountries;
     if (prop == null) {
       prop = [];
     }
-    tmp3.inboundRestrictedCountries = prop;
+    tmp4.inboundRestrictedCountries = prop;
     let prop1 = inboundRestrictedCountries.outboundRestrictedCountries;
     if (prop1 == null) {
       prop1 = [];
     }
-    tmp3.outboundRestrictedCountries = prop1;
+    tmp4.outboundRestrictedCountries = prop1;
     let allowedCountries = inboundRestrictedCountries.allowedCountries;
     if (allowedCountries == null) {
       allowedCountries = [];
     }
-    tmp3.allowedCountries = allowedCountries;
+    tmp4.allowedCountries = allowedCountries;
     let BLOCKLIST = inboundRestrictedCountries.countryListMode;
     if (BLOCKLIST == null) {
       BLOCKLIST = require("promotions/constants").CountryListMode.BLOCKLIST;
     }
-    tmp3.countryListMode = BLOCKLIST;
-    ({ promotionType: tmp3.promotionType, partnerId: tmp3.partnerId, marketingComponents: tmp3.marketingComponents, rewardSkuIds: tmp3.rewardSkuIds, bogoRewardEnabled } = inboundRestrictedCountries);
+    tmp4.countryListMode = BLOCKLIST;
+    ({ promotionType: tmp4.promotionType, partnerId: tmp4.partnerId, marketingComponents: tmp4.marketingComponents, rewardSkuIds: tmp4.rewardSkuIds, bogoRewardEnabled } = inboundRestrictedCountries);
     if (bogoRewardEnabled == null) {
       bogoRewardEnabled = false;
     }
-    tmp3.bogoRewardEnabled = bogoRewardEnabled;
+    tmp4.bogoRewardEnabled = bogoRewardEnabled;
     let boostBogoMaxCredits = inboundRestrictedCountries.boostBogoMaxCredits;
     if (boostBogoMaxCredits == null) {
       boostBogoMaxCredits = null;
     }
-    tmp3.boostBogoMaxCredits = boostBogoMaxCredits;
-    tmp3.promotionKey = inboundRestrictedCountries.promotionKey;
-    return tmp3;
+    tmp4.boostBogoMaxCredits = boostBogoMaxCredits;
+    ({ promotionKey: tmp4.promotionKey, priority } = inboundRestrictedCountries);
+    if (priority == null) {
+      priority = require("promotions/constants").FALLBACK_PROMOTION_PRIORITY;
+    }
+    tmp4.priority = priority;
+    return tmp4;
   }
   static createFromServer(id) {
     let BLOCKLIST;
@@ -71,7 +76,7 @@ class PromotionRecord extends Record {
     let str7;
     let str8;
     let str9;
-    let tmp11;
+    let tmp13;
     const date = new Date(id.start_date);
     const date1 = new Date(id.end_date);
     const metadata = id.metadata;
@@ -84,6 +89,10 @@ class PromotionRecord extends Record {
           boost_bogo = reward_config.boost_bogo;
         }
       }
+    }
+    let FALLBACK_PROMOTION_PRIORITY = id.priority;
+    if (FALLBACK_PROMOTION_PRIORITY == null) {
+      FALLBACK_PROMOTION_PRIORITY = date(date1[2]).FALLBACK_PROMOTION_PRIORITY;
     }
     let obj = {
       id: id.id,
@@ -107,16 +116,17 @@ class PromotionRecord extends Record {
       promotionType: null,
       partnerId: partner_id,
       marketingComponents: marketing_components.map((item) => {
-        const obj = { startDate: date, endDate: date1 };
+        const obj = { startDate: date, endDate: date1, priority: FALLBACK_PROMOTION_PRIORITY };
         return MarketingComponentRecord.createFromServer(item, obj);
       }),
       rewardSkuIds: reward_sku_ids,
       bogoRewardEnabled: true === enabled,
-      boostBogoMaxCredits: tmp11,
-      promotionKey: str9
+      boostBogoMaxCredits: tmp13,
+      promotionKey: str9,
+      priority: FALLBACK_PROMOTION_PRIORITY
     };
     date2 = null;
-    const tmp4 = PromotionRecord;
+    const tmp6 = PromotionRecord;
     if (null != id.outbound_redemption_end_date) {
       const _Date = Date;
       const self = this;
@@ -211,19 +221,19 @@ class PromotionRecord extends Record {
     if (boost_bogo != null) {
       enabled1 = boost_bogo.enabled;
     }
-    tmp11 = null;
+    tmp13 = null;
     if (true === enabled1) {
       let max_credits_per_user = boost_bogo.max_credits_per_user;
       if (max_credits_per_user == null) {
         max_credits_per_user = null;
       }
-      tmp11 = max_credits_per_user;
+      tmp13 = max_credits_per_user;
     }
     str9 = id.promotion_key;
     if (str9 == null) {
       str9 = "";
     }
-    return new tmp4(obj);
+    return new tmp6(obj);
   }
   hasFlag(arg0) {
     const obj = FlagUtils;

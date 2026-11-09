@@ -1,21 +1,21 @@
-// Module ID: 16927
-// Function ID: 16928
+// Module ID: 17250
+// Function ID: 17251
 // Name: BountiesScrollVideoItem
-// Dependencies: [5, 32, 19, 17, 9555, 7845, 6781, 21, 16928, 504, 16929, 14691, 16934, 16936, 16937, 16932, 16940, 14699, 6788, 6786, 16961, 2]
+// Dependencies: [5, 32, 19, 17, 9643, 7921, 6836, 21, 17251, 504, 17252, 14927, 17257, 17259, 17260, 17255, 17263, 14935, 6843, 6841, 17284, 2]
 // Exports: BountiesScrollVideoItem
 
-// Module 16927 (BountiesScrollVideoItem)
+// Module 17250 (BountiesScrollVideoItem)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import QuestConstants from "QuestConstants" /* 6781 */;
-import QuestContent from "QuestContent" /* 6786 */;
-import AdCreativeType from "AdCreativeType" /* 6788 */;
-import QuestContentImpressionTracker from "QuestContentImpressionTracker" /* 14699 */;
+import QuestConstants from "QuestConstants" /* 6836 */;
+import QuestContent from "QuestContent" /* 6841 */;
+import AdCreativeType from "AdCreativeType" /* 6843 */;
+import QuestContentImpressionTracker from "QuestContentImpressionTracker" /* 14935 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import VirtualCurrencyStore_mod from "VirtualCurrencyStore" /* 9555 */;
-import BountyStore from "BountyStore" /* 7845 */;
+import VirtualCurrencyStore_mod from "VirtualCurrencyStore" /* 9643 */;
+import BountyStore from "BountyStore" /* 7921 */;
 import size_mod from "module_2" /* 2 */;
 
 let c4, c5;
@@ -58,7 +58,7 @@ function BountiesScrollVideoItemInner(bounty) {
   let tmp23;
   let tmp7;
   let tmp8;
-  const f110953 = () => {
+  const f112941 = () => {
     let currentBalance = null;
     if (isActive) {
       currentBalance = VirtualCurrencyStore.getCurrentBalance();
@@ -136,9 +136,9 @@ function BountiesScrollVideoItemInner(bounty) {
   }, items2);
   [tmp19, tmp20] = isActive(obj.useState(isActive), 2);
   isActive(obj.useState(isActive), 2);
-  [tmp22, tmp23] = isActive(obj.useState(f110953), 2);
+  [tmp22, tmp23] = isActive(obj.useState(f112941), 2);
   VirtualCurrencyStore = tmp23;
-  isActive(obj.useState(f110953), 2);
+  isActive(obj.useState(f112941), 2);
   const first = tmp5(obj.useState(0), 2)[0];
   isActive(obj.useState(0), 2);
   const tmp12 = flushProgress;
@@ -167,7 +167,7 @@ function BountiesScrollVideoItemInner(bounty) {
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -223,7 +223,7 @@ function BountiesScrollVideoItemInner(bounty) {
             });
           }
           c5 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp24) {
         width = tmp24;
@@ -359,14 +359,14 @@ export function BountiesScrollVideoItem(bounty) {
   }
   const obj = {
     adContentId: bounty.id,
-    adCreativeType: bounty(6788).AdCreativeType.BOUNTY,
-    questContent: bounty(6786).QuestContent.VIDEO_MODAL_MOBILE,
+    adCreativeType: bounty(6843).AdCreativeType.BOUNTY,
+    questContent: bounty(6841).QuestContent.VIDEO_MODAL_MOBILE,
     sourceQuestContent,
     overrideVisibility: isActive,
     children() {
       return <BountiesScrollVideoItemInner bounty={bounty} sourceQuestContent={sourceQuestContent} width={dependencyMap} height={_asyncToGenerator} index={_slicedToArray} isActive={isActive} isRecapPageRevealed={flag} isRecapPageOnTop={flag2} isScrollingInBoundsSharedValue={BountyStore} shouldLoadHls={shouldLoadHls} softDownloadCapsEnabled={flag3} isScrollIndicatorEnabled={flag4} />;
     }
   };
-  const BillableAdPlacementImpressionTrackerNative = bounty(14699).BillableAdPlacementImpressionTrackerNative;
+  const BillableAdPlacementImpressionTrackerNative = bounty(14935).BillableAdPlacementImpressionTrackerNative;
   return flag3(BillableAdPlacementImpressionTrackerNative, obj);
 }

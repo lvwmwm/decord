@@ -1,17 +1,27 @@
 // Module ID: 13123
 // Function ID: 13124
 // Dependencies: []
-// Exports: parameterize
 
 // Module 13123
+let items;
+let obj2;
+const obj = {
+  name: "Selector",
+  structure: obj2,
+  parse() {
+    const self = this;
+    const sequence = this.readSequence(this.scope.Selector);
+    if (null === this.getFirstListNode(sequence)) {
+      self.error("Selector is expected");
+    }
+    const element = { type: "Selector", loc: self.getLocationFromList(sequence), children: sequence };
+    return element;
+  },
+  generate(arg0) {
+    this.children(arg0);
+  }
+};
+obj2 = { children: items };
+items = [["TypeSelector", "IdSelector", "ClassSelector", "AttributeSelector", "PseudoClassSelector", "PseudoElementSelector", "Combinator", "WhiteSpace"]];
 
-export function parameterize(join) {
-  const substr = [...arguments].slice();
-  const items = [join, ...substr];
-  const string = new String(String.raw.apply(items));
-  const str = join.join("\0");
-  const str2 = str.replace(/%/g, "%%");
-  string.__sentry_template_string__ = str2.replace(/\0/g, "%s");
-  string.__sentry_template_values__ = substr;
-  return string;
-}
+export default obj;

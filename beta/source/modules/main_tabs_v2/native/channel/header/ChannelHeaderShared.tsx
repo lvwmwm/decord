@@ -1,35 +1,34 @@
-// Module ID: 11337
-// Function ID: 11338
+// Module ID: 11477
+// Function ID: 11478
 // Name: ChannelHeaderShared
-// Dependencies: [32, 19, 17, 4956, 1383, 21, 5014, 575, 6980, 1375, 10772, 5624, 1187, 11338, 10799, 5596, 8603, 7149, 11339, 1113, 5652, 5717, 1409, 11340, 9202, 2]
+// Dependencies: [32, 19, 17, 5082, 1385, 21, 5140, 575, 7043, 1377, 10891, 5751, 1187, 11478, 10918, 5724, 8674, 11479, 1113, 5776, 5842, 1411, 11480, 9282, 2]
 // Exports: renderAppSubTitle, renderChannelIcon, renderChannelIconRaw, renderChannelTitle, renderEmptyIcon, renderGroupDMIcon, renderMemberCountText, renderParentChannelSubTitle, renderTitleWrapper, renderUserAvatar
 
-// Module 11337 (ChannelHeaderShared)
+// Module 11477 (ChannelHeaderShared)
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import PlatformUtils from "PlatformUtils" /* 1375 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1409 */;
-import useToken from "useToken" /* 5596 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import useChannelName from "useChannelName" /* 5652 */;
-import FastImageDefault from "FastImage" /* 5717 */;
-import Pressables from "Pressables" /* 6980 */;
-import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7149 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 8603 */;
-import BotTagDefault from "BotTag" /* 9202 */;
-import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10772 */;
-import GroupDMAvatarDefault from "GroupDMAvatar" /* 10799 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11338 */;
-import GuildActionSheetMemberCountDefault from "GuildActionSheetMemberCount" /* 11339 */;
-import ConjureAppIconTileDefault from "ConjureAppIconTile" /* 11340 */;
+import PlatformUtils from "PlatformUtils" /* 1377 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
+import useToken from "useToken" /* 5724 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import useChannelName from "useChannelName" /* 5776 */;
+import FastImageDefault from "FastImage" /* 5842 */;
+import Pressables from "Pressables" /* 7043 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8674 */;
+import BotTagDefault from "BotTag" /* 9282 */;
+import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10891 */;
+import GroupDMAvatarDefault from "GroupDMAvatar" /* 10918 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11478 */;
+import GuildActionSheetMemberCountDefault from "GuildActionSheetMemberCount" /* 11479 */;
+import ConjureAppIconTileDefault from "ConjureAppIconTile" /* 11480 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import RelationshipStore from "RelationshipStore" /* 4956 */;
-import UserStore from "UserStore" /* 1383 */;
+import RelationshipStore from "RelationshipStore" /* 5082 */;
+import UserStore from "UserStore" /* 1385 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 let Platform;
@@ -97,13 +96,13 @@ function ChannelTitle(guildId) {
   }
   items = [tmp4, , ];
   if (null != userId) {
-    const obj3 = { userId, guildId, userName: title, variant: "redesign/heading-18/semibold", defaultColor: "mobile-text-heading-primary", lineClamp: 1, style: null, containerStyle: null, accessibilityLabel: accessibleTitle, accessibilityRole: "header", maxFontSizeMultiplier: 2 };
+    const obj3 = { userId, guildId, userName: title, variant: "heading-md/semibold", defaultColor: "mobile-text-heading-primary", lineClamp: 1, style: null, containerStyle: null, accessibilityLabel: accessibleTitle, accessibilityRole: "header", maxFontSizeMultiplier: 2 };
     ({ channelName: obj4.style, channelNameContainer: obj4.containerStyle } = tmp);
     tmp8 = metroImportAll(UsernameWithEffectsDefault, obj3);
     tmp5 = metroImportAll;
   } else {
     tmp5 = metroImportAll;
-    const obj5 = { variant: "redesign/heading-18/semibold", color: "mobile-text-heading-primary", lineClamp: 1, style: tmp.channelName, accessibilityLabel: accessibleTitle, accessibilityRole: "header", maxFontSizeMultiplier: 2, children: title };
+    const obj5 = { variant: "heading-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, style: tmp.channelName, accessibilityLabel: accessibleTitle, accessibilityRole: "header", maxFontSizeMultiplier: 2, children: title };
     tmp8 = metroImportAll(Text_Text.Text, obj5);
   }
   items[1] = tmp8;
@@ -177,30 +176,24 @@ function MemberCountText(arg0) {
       str = "total";
     }
   }
-  let str2 = "text-sm/normal";
-  const obj = ManaTypeConsolidationExperiment;
-  if (obj.useManaTypeConsolidationExperiment("ChannelHeaderMemberCount")) {
-    str2 = "text-xs/normal";
-  }
-  const obj2 = { type: str, count: memberCount, color: "text-subtle", dotContainerWidth: leadingAccessoryWidth, textVariant: str2 };
-  const tmp4 = React4;
-  const tmp5 = authStore;
-  const tmp7 = GuildActionSheetMemberCountDefault;
+  const obj = { type: str, count: memberCount, color: "text-subtle", dotContainerWidth: leadingAccessoryWidth, textVariant: "body-xs/normal" };
+  const tmp2 = React4;
+  const tmp3 = authStore;
+  const tmp6 = GuildActionSheetMemberCountDefault;
   if ("online" === str) {
     memberCount = presenceCount;
   }
-  const children = [metroImportAll(tmp7, obj2), ];
-  let tmp6Result = null;
+  const children = [metroImportAll(tmp6, obj), ];
+  let tmp4Result = null;
   if (withSeparator) {
-    const obj3 = { variant: str2, color: "text-subtle", children: "\u2022" };
-    tmp6Result = tmp6(Text_Text.Text, obj3);
+    tmp4Result = tmp4(Text_Text.Text, { variant: "body-xs/normal", color: "text-subtle", children: "\u2022" });
   }
-  children[1] = tmp6Result;
-  return tmp4(tmp5, { children });
+  children[1] = tmp4Result;
+  return tmp2(tmp3, { children });
 }
 class SubtitleText {
   constructor(arg0) {
-    const obj = { variant: "text-sm/medium", color: "text-subtle", maxFontSizeMultiplier: 2 };
+    const obj = { variant: "body-sm/medium", color: "text-subtle", maxFontSizeMultiplier: 2 };
     const Text = Text_Text.Text;
     const merged = Object.assign(arg0);
     return metroImportAll(Text, obj);
@@ -226,43 +219,36 @@ function ParentChannelSubTitle(channel) {
 }
 function AppSubTitle(application) {
   let items;
+  let obj4;
   let obj5;
-  let obj6;
-  let obj9;
-  let tmp7;
+  let obj8;
+  let tmp4;
   application = application.application;
   const tmp = closure_12();
-  const obj2 = { style: tmp.appSubTitle, children: items };
-  const obj = ManaTypeConsolidationExperiment;
-  const manaTypeConsolidationExperiment = obj.useManaTypeConsolidationExperiment("ChannelHeaderAppSubTitle");
-  const tmp5 = React4;
+  const obj = { style: tmp.appSubTitle, children: items };
+  const tmp2 = React4;
   if (null != application.icon) {
-    const obj3 = { source: obj6.getApplicationIconSource(obj5), style: tmp.appIcon };
-    obj5 = { id: null, icon: null, size: v16 };
-    ({ id: obj7.id, icon: obj7.icon } = application);
-    const tmp13 = FastImageDefault;
-    obj6 = AvatarUtilsDefault;
-    tmp7 = metroImportAll(tmp13, obj3);
+    const obj2 = { source: obj5.getApplicationIconSource(obj4), style: tmp.appIcon };
+    obj4 = { id: null, icon: null, size: v16 };
+    ({ id: obj6.id, icon: obj6.icon } = application);
+    const tmp12 = FastImageDefault;
+    obj5 = AvatarUtilsDefault;
+    tmp4 = metroImportAll(tmp12, obj2);
   } else {
-    tmp7 = null;
+    tmp4 = null;
     if (null != application.conjureProjectId) {
-      const obj8 = { style: tmp.appIcon, children: metroImportAll(ConjureAppIconTileDefault, obj9) };
-      obj9 = { applicationId: null, name: null, size: v16 };
-      ({ id: obj4.applicationId, name: obj4.name } = application);
-      tmp7 = metroImportAll(tmp6, obj8);
+      const obj7 = { style: tmp.appIcon, children: metroImportAll(ConjureAppIconTileDefault, obj8) };
+      obj8 = { applicationId: null, name: null, size: v16 };
+      ({ id: obj3.applicationId, name: obj3.name } = application);
+      tmp4 = metroImportAll(tmp3, obj7);
     }
   }
-  items = [tmp7, , ];
-  let str = "text-sm/normal";
-  const Text = Text_Text.Text;
-  if (manaTypeConsolidationExperiment) {
-    str = "text-xs/normal";
-  }
-  const obj16 = { lineClamp: 1, maxFontSizeMultiplier: 2, variant: str, color: "text-subtle", style: tmp.appName, children: application.name };
-  items[1] = metroImportAll(Text, obj16);
-  const obj17 = { verified: application.isVerified, size: "sm" };
-  items[2] = metroImportAll(BotTagDefault, obj17);
-  return tmp5(hasOwnProperty, obj2);
+  items = [tmp4, , ];
+  const obj14 = { lineClamp: 1, maxFontSizeMultiplier: 2, variant: "body-xs/normal", color: "text-subtle", style: tmp.appName, children: application.name };
+  items[1] = metroImportAll(Text_Text.Text, obj14);
+  const obj15 = { verified: application.isVerified, size: "sm" };
+  items[2] = metroImportAll(BotTagDefault, obj15);
+  return tmp2(hasOwnProperty, obj);
 }
 function AppSubTitleSkeleton() {
   let items;
@@ -277,18 +263,10 @@ function AppSubTitleSkeleton() {
 }
 function NoAppSubTitle() {
   let intl;
-  const tmp = closure_12();
-  const obj = ManaTypeConsolidationExperiment;
-  const manaTypeConsolidationExperiment = obj.useManaTypeConsolidationExperiment("ChannelHeaderAppSubTitle");
-  let str = "text-sm/normal";
+  const obj = { lineClamp: 1, maxFontSizeMultiplier: 2, variant: "body-xs/normal", color: "text-subtle", style: closure_12().noApp, children: intl.string(intl2.t.tU5fiM) };
   const Text = Text_Text.Text;
-  const tmp5 = metroImportAll;
-  if (manaTypeConsolidationExperiment) {
-    str = "text-xs/normal";
-  }
-  const obj2 = { lineClamp: 1, maxFontSizeMultiplier: 2, variant: str, color: "text-subtle", style: tmp.noApp, children: intl.string(intl2.t.tU5fiM) };
-  intl = tmp2(1113).intl;
-  return tmp5(Text, obj2);
+  intl = intl2.intl;
+  return metroImportAll(Text, obj);
 }
 function EmptyIcon() {
   const obj = { style: closure_12().channelIconWrapper };

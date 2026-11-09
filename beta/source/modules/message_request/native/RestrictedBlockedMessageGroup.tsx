@@ -1,20 +1,20 @@
-// Module ID: 18985
-// Function ID: 18986
+// Module ID: 19360
+// Function ID: 19361
 // Name: RestrictedBlockedMessageGroup
-// Dependencies: [32, 19, 17, 21, 5014, 18983, 575, 6980, 5624, 1113, 2]
+// Dependencies: [32, 19, 17, 21, 5140, 19358, 575, 7043, 5751, 1113, 2]
 // Exports: default
 
-// Module 18985 (RestrictedBlockedMessageGroup)
+// Module 19360 (RestrictedBlockedMessageGroup)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import Pressables from "Pressables" /* 6980 */;
-import RestrictedMessagePreviewLayout from "RestrictedMessagePreviewLayout" /* 18983 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import Pressables from "Pressables" /* 7043 */;
+import RestrictedMessagePreviewLayout from "RestrictedMessagePreviewLayout" /* 19358 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -50,7 +50,7 @@ export default function RestrictedBlockedMessageGroup(arg0) {
   }, []);
   let obj = { style: tmp.toggle, accessibilityRole: "button", accessibilityState: { expanded: mapped }, onPress: callback, children: closure_5(Text, obj2) };
   const PressableOpacity = Pressables.PressableOpacity;
-  obj2 = { variant: "text-sm/medium", color: "text-muted", children: intl.format(intl2.t["+FcYM/"], obj3) };
+  obj2 = { variant: "body-sm/medium", color: "text-muted", children: intl.format(intl2.t["+FcYM/"], obj3) };
   Text = Text_Text.Text;
   intl = intl2.intl;
   obj3 = { count: messages.length };

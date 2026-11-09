@@ -1,13 +1,13 @@
-// Module ID: 12985
-// Function ID: 12986
+// Module ID: 13200
+// Function ID: 13201
 // Name: useConjureHomeOwnProjects
-// Dependencies: [10851, 6844, 504, 12986, 10852, 12603, 2]
-// Exports: default, useConjureProjectsByActivity, useConjureSharedWithMeProjects
+// Dependencies: [10970, 6899, 504, 13201, 10971, 12805, 2]
+// Exports: default, useConjureProjectsByActivity
 
-// Module 12985 (useConjureHomeOwnProjects)
-import conjureHomeProjectOrder from "conjureHomeProjectOrder" /* 12986 */;
-import ConjureChatStore from "ConjureChatStore" /* 10851 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6844 */;
+// Module 13200 (useConjureHomeOwnProjects)
+import conjureHomeProjectOrder from "conjureHomeProjectOrder" /* 13201 */;
+import ConjureChatStore from "ConjureChatStore" /* 10970 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6899 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -17,14 +17,14 @@ const result = size.fileFinishedImporting("modules/conjure/home/useConjureHomeOw
 
 export default function useConjureHomeOwnProjects() {
   let ownedProjects;
-  const f103372 = () => ownedProjects.getOwnedProjects();
+  const f105101 = () => ownedProjects.getOwnedProjects();
+  let obj = f105101(504);
   const items = [ConjureProjectStore, ConjureChatStore];
-  const obj = f103372(504);
   return obj.useStateFromStoresArray(items, () => {
     let messages;
     let tmp = conjureHomeProjectOrder;
     const sortConjureProjectsByActivity = tmp.sortConjureProjectsByActivity;
-    const arr = f103373();
+    const arr = f105101();
     return sortConjureProjectsByActivity(arr.map((id) => {
       let conjureTurnStartedAtResult;
       let obj2;
@@ -43,9 +43,8 @@ export default function useConjureHomeOwnProjects() {
     }));
   }, []);
 };
-export function useConjureProjectsByActivity(arg0, items) {
-  let closure_0;
-  _require = arg0;
+export function useConjureProjectsByActivity(getListedConjureProjects, items) {
+  _require = getListedConjureProjects;
   if (items === undefined) {
     items = [];
   }
@@ -55,7 +54,7 @@ export function useConjureProjectsByActivity(arg0, items) {
     let messages;
     let tmp = conjureHomeProjectOrder;
     const sortConjureProjectsByActivity = tmp.sortConjureProjectsByActivity;
-    const arr = f103373();
+    const arr = f105101();
     return sortConjureProjectsByActivity(arr.map((id) => {
       let conjureTurnStartedAtResult;
       let obj2;
@@ -73,32 +72,4 @@ export function useConjureProjectsByActivity(arg0, items) {
       return obj3;
     }));
   }, items);
-}
-export function useConjureSharedWithMeProjects() {
-  let sharedWithMeProjects;
-  const f103373 = () => sharedWithMeProjects.getSharedWithMeProjects();
-  let obj = f103373(504);
-  const items = [ConjureProjectStore, ConjureChatStore];
-  return obj.useStateFromStoresArray(items, () => {
-    let messages;
-    let tmp = conjureHomeProjectOrder;
-    const sortConjureProjectsByActivity = tmp.sortConjureProjectsByActivity;
-    const arr = f103373();
-    return sortConjureProjectsByActivity(arr.map((id) => {
-      let conjureTurnStartedAtResult;
-      let obj2;
-      const obj = closure_1_0(closure_1_1[4]);
-      const findOpenTurnResult = obj.findOpenTurn(messages.getMessages(id.id));
-      const obj3 = { project: id, turnStartedAt: conjureTurnStartedAtResult, finishedAt: obj2.getFinishedAt(id.id) };
-      conjureTurnStartedAtResult = null;
-      obj2 = messages;
-      const tmp = closure_1_0;
-      const tmp2 = closure_1_1;
-      if (null != findOpenTurnResult) {
-        const tmpResult = tmp(tmp2[5]);
-        conjureTurnStartedAtResult = tmpResult.conjureTurnStartedAt(findOpenTurnResult);
-      }
-      return obj3;
-    }));
-  }, []);
 }

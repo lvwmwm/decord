@@ -1,29 +1,29 @@
-// Module ID: 19376
-// Function ID: 19377
+// Module ID: 19780
+// Function ID: 19781
 // Name: RestrictedHoursModal
-// Dependencies: [32, 19, 17, 1383, 21, 5014, 575, 6953, 1625, 19377, 504, 5095, 5254, 1113, 2538, 7972, 5717, 19378, 5181, 5624, 7169, 19379, 6740, 19375, 6022, 11482, 2]
+// Dependencies: [32, 19, 17, 1385, 21, 5140, 575, 7015, 1627, 19781, 504, 1652, 5370, 1113, 2664, 8041, 5842, 19782, 5297, 5751, 7231, 19783, 6795, 19779, 6154, 11627, 2]
 // Exports: default
 
-// Module 19376 (RestrictedHoursModal)
+// Module 19780 (RestrictedHoursModal)
 import nativeDefault from "native" /* 575 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
-import timing from "timing" /* 5254 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import useBackPressHandlerDefault from "useBackPressHandler" /* 6022 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6740 */;
-import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 6953 */;
-import RestrictedHoursActionCreators from "RestrictedHoursActionCreators" /* 19375 */;
-import useIsInRestrictedHoursDefault from "useIsInRestrictedHours" /* 19379 */;
+import _mod1652 from "module_1652" /* 1652 */;
+import timing_timing from "timing/timing" /* 5370 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import useBackPressHandlerDefault from "useBackPressHandler" /* 6154 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6795 */;
+import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 7015 */;
+import RestrictedHoursActionCreators from "RestrictedHoursActionCreators" /* 19779 */;
+import useIsInRestrictedHoursDefault from "useIsInRestrictedHours" /* 19783 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserStore from "UserStore" /* 1383 */;
+import UserStore from "UserStore" /* 1385 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, currentUser, dependencyMap, importDefault, set, set2, set3, set4;
+let _require, currentUser, dependencyMap, importDefault, set, set2, set3;
 
 let StyleSheet;
 let hasOwnProperty;
@@ -49,15 +49,22 @@ function RestrictedHoursScreen(onLogin) {
   let bottom;
   let formatResult;
   let intl3;
-  let items2;
-  let items3;
-  let items4;
-  let items5;
-  let items6;
-  let items7;
-  let obj14;
-  let obj19;
-  let obj20;
+  let items10;
+  let items11;
+  let items12;
+  let items13;
+  let items8;
+  let items9;
+  let obj12;
+  let obj17;
+  let obj18;
+  let tmp13;
+  let tmp14;
+  let tmp16;
+  let tmp17;
+  let tmp19;
+  let tmp20;
+  let tmp21;
   let tmp2Result;
   let top;
   onLogin = onLogin.onLogin;
@@ -99,112 +106,127 @@ function RestrictedHoursScreen(onLogin) {
     let Easing4;
     set = sharedValue.set;
     const obj = { duration: 3000, easing: Easing.bezier(0.24, 0.27, 0.58, 1) };
-    const withTiming = timing.withTiming;
-    timing;
-    Easing = ReanimatedRexport.Easing;
+    const withTiming = timing_timing.withTiming;
+    timing_timing;
+    Easing = _mod1652.Easing;
     const result = set(withTiming(1, obj));
     set2 = sharedValue1.set;
-    const withDelay = ReanimatedRexport.withDelay;
-    ReanimatedRexport;
+    const withDelay = _mod1652.withDelay;
+    _mod1652;
     const obj2 = { duration: 1500, easing: Easing2.bezier(0, 0, 1, 1) };
-    const withTiming2 = timing.withTiming;
-    timing;
-    Easing2 = ReanimatedRexport.Easing;
+    const withTiming2 = timing_timing.withTiming;
+    timing_timing;
+    Easing2 = _mod1652.Easing;
     set2(withDelay(1500, withTiming2(1, obj2)));
     set3 = sharedValue2.set;
-    const withDelay2 = ReanimatedRexport.withDelay;
-    ReanimatedRexport;
+    const withDelay2 = _mod1652.withDelay;
+    _mod1652;
     const obj3 = { duration: 1000, easing: Easing3.bezier(0.1, 0.24, 0.32, 1) };
-    const withTiming3 = timing.withTiming;
-    timing;
-    Easing3 = ReanimatedRexport.Easing;
+    const withTiming3 = timing_timing.withTiming;
+    timing_timing;
+    Easing3 = _mod1652.Easing;
     set3(withDelay2(2000, withTiming3(1, obj3)));
-    set4 = sharedValue3.set;
-    const withDelay3 = ReanimatedRexport.withDelay;
-    ReanimatedRexport;
+    const set4 = sharedValue3.set;
+    const withDelay3 = _mod1652.withDelay;
+    _mod1652;
     const obj4 = { duration: 1000, easing: Easing4.bezier(0.1, 0.24, 0.32, 1) };
-    const withTiming4 = timing.withTiming;
-    timing;
-    Easing4 = ReanimatedRexport.Easing;
+    const withTiming4 = timing_timing.withTiming;
+    timing_timing;
+    Easing4 = _mod1652.Easing;
     set4(withDelay3(2000, withTiming4(1, obj4)));
   }, items1);
+  const items2 = [closure_13, sharedValue];
+  let c0;
+  [tmp13, tmp14] = items2;
   const obj6 = onLogin(sharedValue1[11]);
-  class M {
+  class RestrictedHoursModalTsx1 {
     constructor() {
-      const obj = { opacity: sharedValue.get() };
+      const obj = { opacity: _undefined.get() };
       return obj;
     }
   }
-  M.__closure = { backgroundOpacity: sharedValue };
-  M.__workletHash = 17073775693336;
-  M.__initData = __initData;
-  const animatedStyle = obj6.useAnimatedStyle(M);
-  const obj7 = onLogin(sharedValue1[11]);
-  class O {
+  const items3 = [tmp14];
+  RestrictedHoursModalTsx1.__closure = items3;
+  RestrictedHoursModalTsx1.__workletHash = 11776278729345;
+  RestrictedHoursModalTsx1.__initData = tmp13;
+  const animatedStyle = obj6.useAnimatedStyle(RestrictedHoursModalTsx1);
+  const items4 = [closure_14, sharedValue1];
+  c0 = undefined;
+  [tmp16, tmp17] = items4;
+  const tmp6Result = tmp6(tmp3[11]);
+  class RestrictedHoursModalTsx2 {
     constructor() {
-      const obj = { opacity: sharedValue1.get() };
+      const obj = { opacity: _undefined.get() };
       return obj;
     }
   }
-  O.__closure = { gradientOpacity: sharedValue1 };
-  O.__workletHash = 16592270370139;
-  O.__initData = __initData2;
-  const animatedStyle1 = obj7.useAnimatedStyle(O);
-  const fn = function z() {
-    let items;
-    const obj = { opacity: sharedValue2.get(), transform: items };
-    items = [{ scale: sharedValue3.get() }];
-    ({ scale: sharedValue3.get() });
-    return obj;
-  };
-  fn.__closure = { contentOpacity: sharedValue2, contentScale: sharedValue3 };
-  fn.__workletHash = 15616799997783;
-  fn.__initData = __initData3;
-  const obj8 = onLogin(sharedValue1[11]);
-  const animatedStyle2 = obj8.useAnimatedStyle(fn);
+  const items5 = [tmp17];
+  RestrictedHoursModalTsx2.__closure = items5;
+  RestrictedHoursModalTsx2.__workletHash = 10964689956002;
+  RestrictedHoursModalTsx2.__initData = tmp16;
+  const animatedStyle1 = tmp6Result.useAnimatedStyle(RestrictedHoursModalTsx2);
+  const items6 = [closure_15, sharedValue2, sharedValue3];
+  c0 = undefined;
+  let c1;
+  [tmp19, tmp20, tmp21] = items6;
+  const tmp6Result2 = tmp6(tmp3[11]);
+  class RestrictedHoursModalTsx3 {
+    constructor() {
+      let items;
+      const obj = { opacity: _undefined.get(), transform: items };
+      items = [{ scale: _undefined2.get() }];
+      ({ scale: _undefined2.get() });
+      return obj;
+    }
+  }
+  const items7 = [tmp20, tmp21];
+  RestrictedHoursModalTsx3.__closure = items7;
+  RestrictedHoursModalTsx3.__workletHash = 4184569865582;
+  RestrictedHoursModalTsx3.__initData = tmp19;
+  const animatedStyle2 = tmp6Result2.useAnimatedStyle(RestrictedHoursModalTsx3);
   if (null != tmp5) {
     const intl2 = tmp6(tmp3[13]).intl;
-    const obj9 = { endTime: tmp5 };
-    formatResult = intl2.format(tmp2(tmp3[14]).VfqJvY, obj9);
+    const obj7 = { endTime: tmp5 };
+    formatResult = intl2.format(tmp2(tmp3[14]).VfqJvY, obj7);
   } else {
     const intl = tmp6(tmp3[13]).intl;
     formatResult = intl.string(tmp2(tmp3[14]).abikhN);
   }
-  const obj10 = { backgroundColor, children: items7 };
+  const obj8 = { backgroundColor, children: items13 };
   const ModalScreen = tmp6(tmp3[15]).ModalScreen;
-  const obj11 = { style: items2, children: items3 };
-  items2 = [tmp.container, { paddingTop: top, paddingBottom: bottom }, animatedStyle];
-  const obj12 = { style: tmp.backgroundFill, pointerEvents: "none" };
+  const obj9 = { style: items8, children: items9 };
+  items8 = [tmp.container, { paddingTop: top, paddingBottom: bottom }, animatedStyle];
+  const obj10 = { style: tmp.backgroundFill, pointerEvents: "none" };
   const View = tmp2(tmp3[11]).View;
-  items3 = [closure_7(closure_5, obj12), , , ];
-  const obj13 = { style: items4, pointerEvents: "none", children: closure_7(tmp2Result, obj14) };
-  items4 = [tmp.assetLayers, animatedStyle1];
+  items9 = [closure_7(closure_5, obj10), , , ];
+  const obj11 = { style: items10, pointerEvents: "none", children: closure_7(tmp2Result, obj12) };
+  items10 = [tmp.assetLayers, animatedStyle1];
   const View2 = tmp2(tmp3[11]).View;
-  obj14 = { source: tmp6(tmp3[17]), resizeMode: "cover", style: tmp.sunbeamGradient };
+  obj12 = { source: tmp6(tmp3[17]), resizeMode: "cover", style: tmp.sunbeamGradient };
   tmp2Result = sharedValue(tmp3[16]);
-  items3[1] = closure_7(View2, obj13);
-  const obj15 = { style: items5, children: items6 };
-  items5 = [tmp.content, animatedStyle2];
-  const obj16 = { style: tmp.riveContainer, children: closure_7(tmp6(tmp3[18]).TeenScreenTimeRive, { artboard: "Teen Screen Time Illo", stateMachine: "State Machine 1" }) };
+  items9[1] = closure_7(View2, obj11);
+  const obj13 = { style: items11, children: items12 };
+  items11 = [tmp.content, animatedStyle2];
+  const obj14 = { style: tmp.riveContainer, children: closure_7(tmp6(tmp3[18]).TeenScreenTimeRive, { artboard: "Teen Screen Time Illo", stateMachine: "State Machine 1" }) };
   const View3 = tmp2(tmp3[11]).View;
-  items6 = [closure_7(closure_5, obj16), ];
-  const obj17 = { variant: "text-lg/medium", color: "text-overlay-light", style: tmp.description, children: formatResult };
-  items6[1] = closure_7(tmp6(tmp3[19]).Text, obj17);
-  items3[2] = closure_8(View3, obj15);
-  const obj18 = { style: tmp.footer, children: closure_7(Text, obj19) };
-  obj19 = { variant: "text-sm/medium", color: "text-subtle", style: tmp.description, children: intl3.format(sharedValue(tmp3[14]).iqeKDz, obj20) };
+  items12 = [closure_7(closure_5, obj14), ];
+  const obj15 = { variant: "body-lg/medium", color: "text-overlay-light", style: tmp.description, children: formatResult };
+  items12[1] = closure_7(tmp6(tmp3[19]).Text, obj15);
+  items9[2] = closure_8(View3, obj13);
+  const obj16 = { style: tmp.footer, children: closure_7(Text, obj17) };
+  obj17 = { variant: "body-sm/medium", color: "text-subtle", style: tmp.description, children: intl3.format(sharedValue(tmp3[14]).iqeKDz, obj18) };
   Text = tmp6(tmp3[19]).Text;
   intl3 = tmp6(tmp3[13]).intl;
-  obj20 = {
+  obj18 = {
     username: stateFromStores,
     loginHook(children, arg1) {
-      const obj = { variant: "text-sm/normal", color: "text-link", onPress: onLogin, children };
+      const obj = { variant: "body-sm/normal", color: "text-link", onPress: onLogin, children };
       return metroImportDefault(Text_Text.Text, obj, arg1);
     }
   };
-  items3[3] = closure_7(closure_5, obj18);
-  items7 = [closure_8(View, obj11), closure_7(RestrictedHoursLogoutBlockingLayer, { visible: logoutRequestInFlight })];
-  return closure_8(ModalScreen, obj10);
+  items9[3] = closure_7(closure_5, obj16);
+  items13 = [closure_8(View, obj9), closure_7(RestrictedHoursLogoutBlockingLayer, { visible: logoutRequestInFlight })];
+  return closure_8(ModalScreen, obj8);
 }
 ({ StyleSheet, View: hasOwnProperty } = react_native);
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
@@ -225,9 +247,9 @@ obj8 = { zIndex: 10, justifyContent: "center", alignItems: "center", backgroundC
 const merged3 = Object.assign(StyleSheet.absoluteFillObject);
 let closure_10 = createStyles(obj);
 const constants = { MAIN: "main" };
-const __initData = { code: "function RestrictedHoursModalTsx1(){const{backgroundOpacity}=this.__closure;return{opacity:backgroundOpacity.get()};}" };
-const __initData2 = { code: "function RestrictedHoursModalTsx2(){const{gradientOpacity}=this.__closure;return{opacity:gradientOpacity.get()};}" };
-const __initData3 = { code: "function RestrictedHoursModalTsx3(){const{contentOpacity,contentScale}=this.__closure;return{opacity:contentOpacity.get(),transform:[{scale:contentScale.get()}]};}" };
+let closure_13 = { code: "(function RestrictedHoursModalTsx1(){let[backgroundOpacity]=this.__closure;return{opacity:backgroundOpacity.get()};})" };
+let closure_14 = { code: "(function RestrictedHoursModalTsx2(){let[gradientOpacity]=this.__closure;return{opacity:gradientOpacity.get()};})" };
+let closure_15 = { code: "(function RestrictedHoursModalTsx3(){let[contentOpacity,contentScale]=this.__closure;return{opacity:contentOpacity.get(),transform:[{scale:contentScale.get()}]};})" };
 let result = size.fileFinishedImporting("modules/parent_tools/native/RestrictedHoursModal.tsx");
 
 export default function RestrictedHoursModal() {

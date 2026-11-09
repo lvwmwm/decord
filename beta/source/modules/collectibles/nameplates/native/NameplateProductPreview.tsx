@@ -1,22 +1,22 @@
-// Module ID: 15029
-// Function ID: 15030
+// Module ID: 15308
+// Function ID: 15309
 // Name: NameplateProductPreview
-// Dependencies: [19, 17, 5015, 21, 5014, 575, 8742, 1984, 1113, 5624, 5587, 8749, 8830, 8737, 504, 5068, 6439, 10772, 10773, 1187, 10797, 6975, 2]
+// Dependencies: [19, 17, 5141, 21, 5140, 575, 8813, 2108, 1113, 5751, 5715, 8820, 8904, 8808, 504, 5194, 6572, 10891, 10892, 1187, 10916, 7038, 2]
 // Exports: default
 
-// Module 15029 (NameplateProductPreview)
+// Module 15308 (NameplateProductPreview)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import utils from "utils" /* 1984 */;
-import LinearGradientDefault from "LinearGradient" /* 5587 */;
-import TableRow2 from "TableRow" /* 6975 */;
-import useShopProductItems from "useShopProductItems" /* 8742 */;
+import utils from "utils" /* 2108 */;
+import LinearGradientDefault from "LinearGradient" /* 5715 */;
+import TableRow2 from "TableRow" /* 7038 */;
+import useShopProductItems from "useShopProductItems" /* 8813 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5015 */;
+import AccessibilityStore from "AccessibilityStore" /* 5141 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -56,13 +56,13 @@ function NameplateUser(arg0) {
   let label = name;
   const obj3 = { userId: currentUser.id };
   if (null != require("useDisplayNameStyles")(obj3)) {
-    const obj4 = { userId: currentUser.id, userName: name, effectDisplayType: currentUser(stateFromStores[18]).EffectDisplayType.STATIC, lineClamp: 1, variant: "text-md/semibold" };
+    const obj4 = { userId: currentUser.id, userName: name, effectDisplayType: currentUser(stateFromStores[18]).EffectDisplayType.STATIC, lineClamp: 1, variant: "body-md/semibold" };
     const tmp4Result2 = require("UsernameWithEffects");
     label = closure_6(tmp4Result2, obj4);
   }
   const items1 = [currentUser, tmp5Result, stateFromStores];
   const icon = react.useMemo(() => {
-    const obj = { user: currentUser, guildId: "a", size: native.AvatarSizes.NORMAL, avatarDecoration, animate: !stateFromStores, autoStatusCutout: null, "aria-hidden": "\u{1F383}" };
+    const obj = { user: currentUser, guildId: "a", size: native.AvatarSizes.NORMAL, avatarDecoration, animate: !stateFromStores, autoStatusCutout: "cloud_with_tornado", "aria-hidden": "tornado" };
     const Avatar = native.Avatar;
     return metroRequire(Avatar, obj);
   }, items1);
@@ -125,8 +125,8 @@ export default function NameplateProductPreview(arg0) {
     const obj6 = { style: tmp.memberListContainer, children: items };
     const obj7 = { user: nameplateSampleUsers.mallow, end: true };
     items = [metroRequire(PlaceholderUser, obj7), , , , , , ];
-    const obj8 = { maxFontSizeMultiplier: 2, variant: "text-sm/semibold", accessibilityRole: "header", color: "interactive-text-default", style: tmp.memberListTitle, children: items1 };
-    const Text = tmp2(5624).Text;
+    const obj8 = { maxFontSizeMultiplier: 2, variant: "body-sm/semibold", accessibilityRole: "header", color: "interactive-text-default", style: tmp.memberListTitle, children: items1 };
+    const Text = tmp2(5751).Text;
     const intl2 = tmp2(1113).intl;
     items1 = [intl2.string(intl4.t["yzW/fZ"]), " \u2014 3"];
     items[1] = metroImportDefault(Text, obj8);
@@ -136,8 +136,8 @@ export default function NameplateProductPreview(arg0) {
     items[3] = metroRequire(NameplateUser, obj10);
     const obj11 = { user: nameplateSampleUsers.locke, end: true };
     items[4] = metroRequire(PlaceholderUser, obj11);
-    const obj12 = { maxFontSizeMultiplier: 2, variant: "text-sm/semibold", accessibilityRole: "header", color: "interactive-text-default", style: tmp.memberListTitle, children: items2 };
-    const Text2 = tmp2(5624).Text;
+    const obj12 = { maxFontSizeMultiplier: 2, variant: "body-sm/semibold", accessibilityRole: "header", color: "interactive-text-default", style: tmp.memberListTitle, children: items2 };
+    const Text2 = tmp2(5751).Text;
     const intl3 = tmp2(1113).intl;
     items2 = [intl3.string(intl4.t["NG43/6"]), " \u2014 12"];
     items[5] = metroImportDefault(Text2, obj12);

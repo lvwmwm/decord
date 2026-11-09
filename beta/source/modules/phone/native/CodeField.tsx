@@ -1,19 +1,19 @@
-// Module ID: 7248
-// Function ID: 7249
+// Module ID: 7311
+// Function ID: 7312
 // Name: CodeField
-// Dependencies: [32, 19, 17, 21, 5014, 575, 1187, 7082, 1113, 5634, 5624, 6954, 2]
+// Dependencies: [32, 19, 17, 21, 5140, 575, 1187, 7148, 1113, 5758, 5751, 7016, 2]
 // Exports: CodeBlocks, default
 
-// Module 7248 (CodeField)
+// Module 7311 (CodeField)
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import KeyboardAwareViewDefault from "KeyboardAwareView" /* 6954 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import KeyboardAwareViewDefault from "KeyboardAwareView" /* 7016 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -125,10 +125,10 @@ function CodeFieldInner(loading) {
   const obj2 = { style: tmp2.container, children: items1 };
   [tmp4, tmp5] = react.useState("");
   items1 = [, , , ];
-  const obj3 = { style: tmp2.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: title };
+  const obj3 = { style: tmp2.title, accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: title };
   _slicedToArray(react.useState(""), 2);
   items1[0] = metroImportDefault(Text_Text.Text, obj3);
-  const obj4 = { style: tmp2.subtitle, variant: "text-sm/medium", color: "text-default", children: description };
+  const obj4 = { style: tmp2.subtitle, variant: "body-sm/medium", color: "text-default", children: description };
   items1[1] = metroImportDefault(Text_Text.Text, obj4);
   const obj5 = { style: tmp2.inputContainer, children: metroImportDefault(SingleCodeInput, { loading: flag, error, count: num, onCodeEntered, codeType: NUMERIC, disabled, code: tmp4, setCode: tmp5 }) };
   items1[2] = metroImportDefault(hasOwnProperty, obj5);

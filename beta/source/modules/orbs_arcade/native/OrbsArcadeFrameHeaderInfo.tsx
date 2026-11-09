@@ -1,18 +1,18 @@
-// Module ID: 18996
-// Function ID: 18997
+// Module ID: 19371
+// Function ID: 19372
 // Name: OrbsArcadeFrameHeaderInfo
-// Dependencies: [19, 17, 2038, 17018, 21, 5014, 575, 5640, 504, 9554, 5624, 14501, 2]
+// Dependencies: [19, 17, 2162, 17341, 21, 5140, 575, 5764, 504, 9642, 5751, 14737, 2]
 // Exports: default
 
-// Module 18996 (OrbsArcadeFrameHeaderInfo)
+// Module 19371 (OrbsArcadeFrameHeaderInfo)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ButtonConstants from "ButtonConstants" /* 5640 */;
+import ButtonConstants from "ButtonConstants" /* 5764 */;
 import react from "react" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 2038 */;
-import OrbsArcadeStore from "OrbsArcadeStore" /* 17018 */;
+import ApplicationStore from "ApplicationStore" /* 2162 */;
+import OrbsArcadeStore from "OrbsArcadeStore" /* 17341 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;
@@ -78,7 +78,7 @@ export default function OrbsArcadeFrameHeaderInfo(gameId) {
     tmp9 = null;
     if ("" !== stateFromStores) {
       const obj5 = { style: tmp.namePill, children: closure_6(gameId(applicationId[10]).Text, obj6) };
-      obj6 = { variant: "text-sm/semibold", color: "none", lineClamp: 1, maxFontSizeMultiplier: 1, style: tmp.nameText, children: stateFromStores };
+      obj6 = { variant: "body-sm/semibold", color: "none", lineClamp: 1, maxFontSizeMultiplier: 1, style: tmp.nameText, children: stateFromStores };
       tmp9 = closure_6(tmp8, obj5);
     }
   }

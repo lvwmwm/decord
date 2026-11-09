@@ -1,92 +1,116 @@
-// Module ID: 14509
-// Function ID: 14510
+// Module ID: 14745
+// Function ID: 14746
 // Name: BalanceCounter
-// Dependencies: [32, 19, 21, 5095, 5028, 5637, 14510, 5624, 2]
+// Dependencies: [32, 19, 21, 1652, 5154, 5761, 1705, 14746, 5751, 2]
 
-// Module 14509 (BalanceCounter)
+// Module 14745 (BalanceCounter)
 import Fragment from "Fragment" /* 21 */;
-import react2 from "react" /* 5028 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
-import spring from "spring" /* 5637 */;
+import _mod1652 from "module_1652" /* 1652 */;
+import _mod1705 from "module_1705" /* 1705 */;
+import react2 from "react" /* 5154 */;
+import spring_spring from "spring/spring" /* 5761 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
-let __initData, dependencyMap, set;
+let dependencyMap, set;
 
 let closure_4;
 let hasOwnProperty;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const Text_Text = tmp(5624);
+const Text_Text = tmp(5751);
 let react = react_mod;
 ({ useState: closure_4, useEffect: hasOwnProperty, useRef: metroRequire, useCallback: metroImportDefault } = react);
 react = react_mod;
-let jsx = Fragment.jsx;
-let closure_10 = { code: "function BalanceCounterTsx1(){const{runOnJS,setIsAnimating}=this.__closure;runOnJS(setIsAnimating)(false);}" };
-let closure_11 = { code: "function BalanceCounterTsx2(){const{isAnimating,animatedValue,runOnJS,setDisplayValue,setMaxDigits}=this.__closure;if(isAnimating){const roundedValue=Math.round(animatedValue.get());runOnJS(setDisplayValue)(roundedValue);runOnJS(setMaxDigits)(roundedValue.toString().length);}return{};}" };
+const jsx = Fragment.jsx;
+let closure_10 = { code: "(function BalanceCounterTsx1(){let[scheduleOnRN,setIsAnimating]=this.__closure;scheduleOnRN(setIsAnimating,false);})" };
+let closure_11 = { code: "(function BalanceCounterTsx2(){let[isAnimating,animatedValue,scheduleOnRN,setDisplayValue,setMaxDigits]=this.__closure;if(isAnimating){const roundedValue=Math.round(animatedValue.get());scheduleOnRN(setDisplayValue,roundedValue);scheduleOnRN(setMaxDigits,roundedValue.toString().length);}return{};})" };
 class BalanceCounter {
   constructor(value) {
+    let Text;
     let _undefined;
+    let closure_8;
+    let items3;
     let obj2;
+    let obj5;
     let onValueReached;
     let ref;
-    let setIsAnimating;
     let style;
+    let tmp14;
+    let tmp15;
+    let tmp16;
+    let tmp17;
+    let tmp18;
+    let tmp19;
     let tmp5;
+    let tmp7;
+    let tmp8;
     value = value.value;
-    const require = value;
+    require = value;
     const onValueChange = value.onValueChange;
     let str = value.textVariant;
     ({ onValueReached, style } = value);
     if (str === undefined) {
-      str = "text-sm/semibold";
+      str = "body-sm/semibold";
     }
     let c6;
-    let first1;
+    react = undefined;
     function clearAnimationTimeout() {
       if (null != ref2.current) {
         const _clearTimeout = clearTimeout;
         clearTimeout(ref2.current);
         ref2.current = null;
       }
-      setIsAnimating(false);
+      closure_7(false);
     }
     const textColor = value.textColor;
     dependencyMap = c6(null);
     const tmp2 = dependencyMap;
     let tmp = require;
-    let obj = ReanimatedRexport;
+    let obj = _mod1652;
     const sharedValue = obj.useSharedValue(0);
     const ref2 = c6(null);
-    const enabled = first1.useContext(react2.AccessibilityPreferencesContext).reducedMotion.enabled;
-    [obj2, tmp5] = sharedValue(ref2(0), 2);
-    c6 = tmp5;
+    const enabled = react.useContext(react2.AccessibilityPreferencesContext).reducedMotion.enabled;
     const tmp4 = sharedValue(ref2(0), 2);
+    [obj2, tmp5] = tmp4;
+    c6 = tmp5;
+    [tmp7, tmp8] = sharedValue(ref2(1), 2);
     const tmp6 = sharedValue(ref2(1), 2);
-    let closure_7 = tmp8;
-    const first = tmp6[0];
     const tmp9 = sharedValue(ref2(false), 2);
-    first1 = tmp9[0];
-    jsx = tmp9[1];
-    const tmp11 = closure_7((set, targetHeight, duration) => {
-      setIsAnimating(true);
+    let closure_7 = tmp9[1];
+    const first = tmp9[0];
+    const tmp11 = closure_7((set, point2, duration) => {
+      let tmp3;
+      let tmp4;
+      let tmp5;
+      closure_7(true);
+      const items = [, , ];
+      const obj = { duration, damping: 15, stiffness: 150, mass: 1 };
       set = set.set;
-      let obj = spring;
-      const fn = function l() {
-        const obj = require("ReanimatedRexport");
-        obj.runOnJS(setIsAnimating)(false);
-      };
-      const obj2 = { duration, damping: 15, stiffness: 150, mass: 1 };
-      fn.__closure = { runOnJS: ReanimatedRexport.runOnJS, setIsAnimating };
-      fn.__workletHash = 16153226572520;
-      fn.__initData = __initData;
-      ({ runOnJS: ReanimatedRexport.runOnJS, setIsAnimating });
-      const result = set(obj.withSpring(targetHeight, obj2, "respect-motion-settings", fn));
+      items[0] = closure_10;
+      const withSpring = spring_spring.withSpring;
+      spring_spring;
+      items[1] = _mod1705.scheduleOnRN;
+      items[2] = closure_7;
+      let c0;
+      let c1;
+      [tmp3, tmp4, tmp5] = items;
+      class BalanceCounterTsx1 {
+        constructor() {
+          tmp = closure_0(closure_1, false);
+          return;
+        }
+      }
+      const items1 = [tmp4, tmp5];
+      BalanceCounterTsx1.__closure = items1;
+      BalanceCounterTsx1.__workletHash = 2321092596604;
+      BalanceCounterTsx1.__initData = tmp3;
+      const result = set(withSpring(point2, obj, "respect-motion-settings", BalanceCounterTsx1));
     }, []);
-    __initData = tmp11;
-    const items = [value, onValueChange, onValueReached, sharedValue, tmp11, enabled];
+    react = tmp11;
+    let items = [value, onValueChange, onValueReached, sharedValue, tmp11, enabled];
     let tmp12 = enabled(() => {
       let duration;
       if (null !== duration) {
@@ -109,10 +133,10 @@ class BalanceCounter {
                 clearTimeout(ref2.current);
                 ref2.current = null;
               }
-              setIsAnimating(false);
+              closure_7(false);
               const _setTimeout = setTimeout;
               ref2.current = setTimeout(() => {
-                __initData(sharedValue, require, duration);
+                closure_8(sharedValue, require, duration);
                 ref2.current = null;
               }, delay);
               return tmp12;
@@ -126,37 +150,43 @@ class BalanceCounter {
         ref.current = duration;
       }
     }, items);
-    ReanimatedRexport;
-    class P {
+    _mod1652;
+    let items1 = [closure_11, first, sharedValue, _mod1705.scheduleOnRN, tmp5, tmp8];
+    let c0;
+    let c1;
+    let c2;
+    let c3;
+    let c4;
+    [tmp14, tmp15, tmp16, tmp17, tmp18, tmp19] = items1;
+    class BalanceCounterTsx2 {
       constructor() {
-        const tmp = first1;
+        const tmp = c0;
         if (tmp) {
           const _Math = Math;
-          const str = Math.round(sharedValue.get());
-          const obj = ReanimatedRexport;
-          obj.runOnJS(c6)(str);
-          const obj2 = ReanimatedRexport;
-          const runOnJSResult = obj2.runOnJS(closure_7);
-          runOnJSResult(str.toString().length);
+          const str = Math.round(_undefined.get());
+          _undefined2(c3, str);
+          _undefined2(c4, str.toString().length);
         }
         return {};
       }
     }
-    const obj3 = { isAnimating: first1, animatedValue: sharedValue, runOnJS: ReanimatedRexport.runOnJS, setDisplayValue: tmp5, setMaxDigits: tmp8 };
-    P.__closure = obj3;
-    P.__workletHash = 4408542396979;
-    P.__initData = clearAnimationTimeout;
-    let tmp15 = null;
+    const items2 = [tmp15, tmp16, tmp17, tmp18, tmp19];
+    BalanceCounterTsx2.__closure = items2;
+    BalanceCounterTsx2.__workletHash = 10121586392867;
+    BalanceCounterTsx2.__initData = tmp14;
+    let tmp21 = null;
     if (null !== value) {
-      const items1 = [tmp14, ];
-      const obj5 = { minWidth: 7 * first };
-      items1[1] = obj5;
-      const View = onValueChange(5095).View;
-      ({ variant: str, color: textColor, style, maxFontSizeMultiplier: 2, children: obj2.toFixed(0) });
-      const Text = Text_Text.Text;
-      tmp15 = <View style={items1}>{null}</View>;
+      let tmp23 = onValueChange;
+      const obj3 = { style: items3, children: clearAnimationTimeout(Text, obj5) };
+      items3 = [tmp20, ];
+      const obj4 = { minWidth: 7 * tmp7 };
+      items3[1] = obj4;
+      const View = onValueChange(1652).View;
+      obj5 = { variant: str, color: textColor, style, maxFontSizeMultiplier: 2, children: obj2.toFixed(0) };
+      Text = Text_Text.Text;
+      tmp21 = clearAnimationTimeout(View, obj3);
     }
-    return tmp15;
+    return tmp21;
   }
 }
 let result = size.fileFinishedImporting("modules/virtual_currency/native/BalanceCounter.tsx");

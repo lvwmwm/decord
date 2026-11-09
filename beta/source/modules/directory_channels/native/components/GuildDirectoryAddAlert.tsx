@@ -1,19 +1,19 @@
-// Module ID: 13870
-// Function ID: 13871
+// Module ID: 14104
+// Function ID: 14105
 // Name: GuildDirectoryAddAlert
-// Dependencies: [19, 17, 21, 5014, 575, 6030, 1113, 6957, 5624, 2]
+// Dependencies: [19, 17, 21, 5140, 575, 6162, 1113, 7020, 5751, 2]
 // Exports: default
 
-// Module 13870 (GuildDirectoryAddAlert)
+// Module 14104 (GuildDirectoryAddAlert)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import AlertDefault from "Alert" /* 6030 */;
-import GuildIcon from "GuildIcon" /* 6957 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import AlertDefault from "Alert" /* 6162 */;
+import GuildIcon from "GuildIcon" /* 7020 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 const GuildIconDefault = GuildIcon;
@@ -46,11 +46,11 @@ export default function GuildDirectoryAddAlert(arg0) {
   const obj3 = { style: tmp.guildIcon, guild, size: GuildIcon.GuildIconSizes.XLARGE };
   const tmp3 = GuildIconDefault;
   items = [React3(tmp3, obj3), , ];
-  const obj4 = { style: tmp.title, accessibilityRole: "header", variant: "text-lg/bold", color: "mobile-text-heading-primary", children: intl2.string(intl4.t.CueiPY) };
+  const obj4 = { style: tmp.title, accessibilityRole: "header", variant: "body-lg/semibold", color: "mobile-text-heading-primary", children: intl2.string(intl4.t.CueiPY) };
   const Text = Text_Text.Text;
   intl2 = intl4.intl;
   items[1] = React3(Text, obj4);
-  const obj5 = { style: tmp.description, variant: "text-sm/medium", color: "text-default", children: intl3.format(intl4.t.R7Pqn5, { guildName: directoryGuildName }) };
+  const obj5 = { style: tmp.description, variant: "body-sm/medium", color: "text-default", children: intl3.format(intl4.t.R7Pqn5, { guildName: directoryGuildName }) };
   const Text2 = Text_Text.Text;
   intl3 = intl4.intl;
   items[2] = React3(Text2, obj5);

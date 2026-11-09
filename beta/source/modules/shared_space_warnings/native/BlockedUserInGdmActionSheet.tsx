@@ -1,27 +1,27 @@
-// Module ID: 19614
-// Function ID: 19615
+// Module ID: 20023
+// Function ID: 20024
 // Name: BlockedUserInGdmActionSheet
-// Dependencies: [19, 17, 4863, 1383, 15620, 1072, 21, 5014, 575, 5624, 6041, 1113, 504, 1379, 1187, 12125, 10799, 7340, 5735, 1252, 7366, 5717, 11273, 7060, 6975, 5634, 5258, 19615, 7485, 2]
+// Dependencies: [19, 17, 4989, 1385, 15935, 1072, 21, 5140, 575, 5751, 6173, 1113, 504, 1380, 1187, 12286, 10918, 7401, 5859, 1252, 7426, 5842, 11413, 7126, 7038, 5758, 5374, 20024, 7549, 2]
 // Exports: default
 
-// Module 19614 (BlockedUserInGdmActionSheet)
+// Module 20023 (BlockedUserInGdmActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl7 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 6041 */;
-import TableRow2 from "TableRow" /* 6975 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7485 */;
-import SharedSpacesWarningActionCreators from "SharedSpacesWarningActionCreators" /* 19615 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 6173 */;
+import TableRow2 from "TableRow" /* 7038 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7549 */;
+import SharedSpacesWarningActionCreators from "SharedSpacesWarningActionCreators" /* 20024 */;
 import react_mod from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
-import UserStore from "UserStore" /* 1383 */;
-import SharedSpaceWarningConstants from "SharedSpaceWarningConstants" /* 15620 */;
+import ChannelStore from "ChannelStore" /* 4989 */;
+import UserStore from "UserStore" /* 1385 */;
+import SharedSpaceWarningConstants from "SharedSpaceWarningConstants" /* 15935 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -48,7 +48,7 @@ function getUserCalloutRowText(arg0) {
       usernameHook1() {
           let obj2;
           const first = closure_2[0];
-          const obj = { variant: "text-md/semibold", children: obj2.getName(require, importDefault, first) };
+          const obj = { variant: "body-md/semibold", children: obj2.getName(require, importDefault, first) };
           const Text = Text_Text.Text;
           obj2 = NicknameUtilsDefault;
           return authStore(Text, obj);
@@ -56,7 +56,7 @@ function getUserCalloutRowText(arg0) {
       usernameHook2() {
           let obj2;
           let tmp;
-          const obj = { variant: "text-md/semibold", children: obj2.getName(require, importDefault, tmp) };
+          const obj = { variant: "body-md/semibold", children: obj2.getName(require, importDefault, tmp) };
           tmp = closure_2[1];
           const Text = Text_Text.Text;
           obj2 = NicknameUtilsDefault;
@@ -71,7 +71,7 @@ function getUserCalloutRowText(arg0) {
       usernameHook1() {
           let obj2;
           const first = closure_2[0];
-          const obj = { variant: "text-md/semibold", children: obj2.getName(require, importDefault, first) };
+          const obj = { variant: "body-md/semibold", children: obj2.getName(require, importDefault, first) };
           const Text = Text_Text.Text;
           obj2 = NicknameUtilsDefault;
           return authStore(Text, obj);
@@ -79,7 +79,7 @@ function getUserCalloutRowText(arg0) {
       usernameHook2() {
           let obj2;
           let tmp;
-          const obj = { variant: "text-md/semibold", children: obj2.getName(require, importDefault, tmp) };
+          const obj = { variant: "body-md/semibold", children: obj2.getName(require, importDefault, tmp) };
           tmp = closure_2[1];
           const Text = Text_Text.Text;
           obj2 = NicknameUtilsDefault;
@@ -93,7 +93,7 @@ function getUserCalloutRowText(arg0) {
       usernameHook1() {
           let obj2;
           const first = closure_2[0];
-          const obj = { variant: "text-md/semibold", children: obj2.getName(require, importDefault, first) };
+          const obj = { variant: "body-md/semibold", children: obj2.getName(require, importDefault, first) };
           const Text = Text_Text.Text;
           obj2 = NicknameUtilsDefault;
           return authStore(Text, obj);
@@ -101,7 +101,7 @@ function getUserCalloutRowText(arg0) {
       usernameHook2() {
           let obj2;
           let tmp;
-          const obj = { variant: "text-md/semibold", children: obj2.getName(require, importDefault, tmp) };
+          const obj = { variant: "body-md/semibold", children: obj2.getName(require, importDefault, tmp) };
           tmp = closure_2[1];
           const Text = Text_Text.Text;
           obj2 = NicknameUtilsDefault;
@@ -116,7 +116,7 @@ function getUserCalloutRowText(arg0) {
       usernameHook() {
           let obj2;
           const first = closure_2[0];
-          const obj = { variant: "text-md/semibold", children: obj2.getName(require, importDefault, first) };
+          const obj = { variant: "body-md/semibold", children: obj2.getName(require, importDefault, first) };
           const Text = Text_Text.Text;
           obj2 = NicknameUtilsDefault;
           return authStore(Text, obj);
@@ -137,7 +137,7 @@ function UserCalloutAvatars(userIds) {
     let user;
     return userIds.map((item) => user.getUser(item));
   }, items1);
-  const found = stateFromStoresArray.filter(userIds(1379).isNotNullish);
+  const found = stateFromStoresArray.filter(userIds(1380).isNotNullish);
   const obj2 = UserStore;
   if (1 === userIds.length) {
     let tmp8;
@@ -146,12 +146,12 @@ function UserCalloutAvatars(userIds) {
       const Avatar = tmp(1187).Avatar;
       tmp8 = closure_10(Avatar, obj3);
     } else {
-      tmp8 = closure_10(tmp(12125).UserIcon, {});
+      tmp8 = closure_10(tmp(12286).UserIcon, {});
     }
     tmp5 = tmp8;
   } else {
     const obj4 = { users: found, size: userIds(1187).AvatarSizes.REFRESH_MEDIUM_32 };
-    const FacepileGroupDMAvatar = tmp(10799).FacepileGroupDMAvatar;
+    const FacepileGroupDMAvatar = tmp(10918).FacepileGroupDMAvatar;
     tmp5 = closure_10(FacepileGroupDMAvatar, obj4);
   }
   return tmp5;
@@ -279,11 +279,11 @@ export default function BlockedUserInGdmActionSheet(channelId) {
     const tmp38 = blockedUserIds(ignoredUserIds[21]);
     items3 = [closure_10(tmp38, obj8), , , ];
     const obj9 = { children: items4 };
-    const obj10 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: tmp2.title, children: intl3.string(channelId(ignoredUserIds[11]).t["mwJJ+f"]) };
+    const obj10 = { variant: "heading-xl/semibold", color: "mobile-text-heading-primary", style: tmp2.title, children: intl3.string(channelId(ignoredUserIds[11]).t["mwJJ+f"]) };
     const Text = tmp8(tmp9[9]).Text;
     intl3 = tmp8(tmp9[11]).intl;
     items4 = [closure_10(Text, obj10), ];
-    const obj11 = { variant: "text-md/medium", color: "text-default", style: tmp2.description, children: closure_10(BlockedUserInGDMDescription, obj12) };
+    const obj11 = { variant: "body-md/medium", color: "text-default", style: tmp2.description, children: closure_10(BlockedUserInGDMDescription, obj12) };
     obj12 = { numOfBlockedUsers: blockedUserIds.length, numOfIgnoredUsers: ignoredUserIds.length };
     const Text2 = tmp8(tmp9[9]).Text;
     items4[1] = closure_10(Text2, obj11);

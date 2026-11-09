@@ -1,12 +1,12 @@
-// Module ID: 18520
-// Function ID: 18521
+// Module ID: 18875
+// Function ID: 18876
 // Name: ICYMINavigator
-// Dependencies: [21, 9856, 7169, 18521, 18471, 2]
+// Dependencies: [21, 9976, 7231, 18876, 18827, 2]
 // Exports: default
 
-// Module 18520 (ICYMINavigator)
+// Module 18875 (ICYMINavigator)
 import Fragment from "Fragment" /* 21 */;
-import NativeStackView from "NativeStackView" /* 9856 */;
+import NativeStackView from "NativeStackView" /* 9976 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

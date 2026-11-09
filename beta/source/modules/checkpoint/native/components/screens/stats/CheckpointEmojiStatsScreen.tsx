@@ -1,20 +1,20 @@
-// Module ID: 13662
-// Function ID: 13663
+// Module ID: 13902
+// Function ID: 13903
 // Name: CheckpointEmojiStatsScreen
-// Dependencies: [32, 19, 17, 5015, 13436, 6066, 21, 5014, 575, 1375, 504, 6437, 13455, 13456, 1113, 3060, 3092, 13663, 13441, 13637, 13665, 13639, 13651, 13652, 13653, 1409, 1342, 13677, 7300, 2]
+// Dependencies: [32, 19, 17, 5141, 13668, 6199, 21, 5140, 575, 1377, 504, 6569, 13692, 13693, 1113, 3216, 3248, 13903, 13677, 13876, 13905, 13878, 13890, 13891, 13892, 1411, 1342, 13906, 7363, 2]
 // Exports: default
 
-// Module 13662 (CheckpointEmojiStatsScreen)
+// Module 13902 (CheckpointEmojiStatsScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5015 */;
-import CheckpointStore from "CheckpointStore" /* 13436 */;
-import CheckpointConstants from "CheckpointConstants" /* 6066 */;
+import AccessibilityStore from "AccessibilityStore" /* 5141 */;
+import CheckpointStore from "CheckpointStore" /* 13668 */;
+import CheckpointConstants from "CheckpointConstants" /* 6199 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
-import PlatformUtils_mod from "PlatformUtils" /* 1375 */;
+import createStyles_mod from "createStyles" /* 5140 */;
+import PlatformUtils_mod from "PlatformUtils" /* 1377 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -49,13 +49,13 @@ obj7 = { gap: nativeDefault.space.PX_8, paddingLeft: nativeDefault.space.PX_4, p
 let PlatformUtils = PlatformUtils_mod;
 let num = 16;
 if (PlatformUtils.isIOS()) {
-  num = 20;
+  num = 14;
 }
 obj8 = { fontSize: num, lineHeight: num2, textAlign: "center", color: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT };
 PlatformUtils = PlatformUtils_mod;
 num2 = undefined;
 if (PlatformUtils.isIOS()) {
-  num2 = 24;
+  num2 = 20;
 }
 let closure_12 = createStyles(obj);
 const result = size.fileFinishedImporting("modules/checkpoint/native/components/screens/stats/CheckpointEmojiStatsScreen.tsx");
@@ -134,7 +134,7 @@ export default function CheckpointEmojiStatsScreen() {
   }
   [emoji, _slicedToArray] = react.useState(tmp12 ? closure_11 : emojis[0]);
   const tmp16 = require("useCheckpointSound");
-  react = tmp16(require("module_13456"));
+  react = tmp16(require("module_13693"));
   let intl = tmp2(tmp3[14]).intl;
   const string = intl.string;
   if (tmp12) {
@@ -170,7 +170,7 @@ export default function CheckpointEmojiStatsScreen() {
   items6 = [, ];
   const obj10 = { size: "xs", color };
   items6[0] = closure_9(EmojiSlightlySmilingFaceIcon, obj10);
-  const obj11 = { isStepHeading: true, variant: "heading-md/extrabold", style: tmp.titleText, children: stringResult.toLocaleUpperCase() };
+  const obj11 = { isStepHeading: true, variant: "heading-sm/semibold", style: tmp.titleText, children: stringResult.toLocaleUpperCase() };
   const tmp15Result3 = require("CheckpointText");
   items6[1] = closure_9(tmp15Result3, obj11);
   items7 = [closure_10(View, obj9), , , , ];
@@ -269,7 +269,7 @@ export default function CheckpointEmojiStatsScreen() {
             str2 = emojiName.name;
           }
           items = [closure_1_9(tmp12, obj4), ];
-          const obj5 = { variant: "experimental/mono-md/bold", style: closure_0.rankText, children: index + 1 };
+          const obj5 = { variant: "mono-md/bold", style: closure_0.rankText, children: index + 1 };
           items[1] = closure_1_9(closure_1(first[21]), obj5);
           let name = emojiName.id;
           if (name == null) {

@@ -1,17 +1,17 @@
-// Module ID: 18502
-// Function ID: 18503
+// Module ID: 18857
+// Function ID: 18858
 // Name: ForYouReadSectionHeader
-// Dependencies: [19, 17, 21, 5014, 575, 5624, 1113, 2]
+// Dependencies: [19, 17, 21, 5140, 575, 5751, 1113, 2]
 // Exports: ForYouReadSectionHeader
 
-// Module 18502 (ForYouReadSectionHeader)
+// Module 18857 (ForYouReadSectionHeader)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5624 */;
+import Text_Text from "Text/Text" /* 5751 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let StyleSheet;
@@ -30,7 +30,7 @@ const result = size.fileFinishedImporting("modules/notification_center/native/Fo
 export function ForYouReadSectionHeader() {
   let intl;
   const tmp = closure_4();
-  ({ style: tmp.textHeader, variant: "text-sm/semibold", children: intl.string(intl2.t.hftC1K) });
+  ({ style: tmp.textHeader, variant: "body-sm/semibold", children: intl.string(intl2.t.hftC1K) });
   const Text = Text_Text.Text;
   intl = intl2.intl;
   return <React2 style={tmp.container}>{null}</React2>;

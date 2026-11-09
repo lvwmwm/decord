@@ -1,21 +1,20 @@
-// Module ID: 18590
-// Function ID: 18591
+// Module ID: 18950
+// Function ID: 18951
 // Name: NewContentPill
-// Dependencies: [32, 19, 17, 4885, 8906, 21, 5014, 575, 9509, 6957, 504, 5253, 8919, 8923, 5095, 5637, 1500, 6980, 13044, 5624, 1113, 5021, 2]
+// Dependencies: [32, 19, 17, 5011, 8980, 21, 5140, 575, 9593, 7020, 504, 5369, 8993, 8997, 1652, 5761, 1502, 7043, 13268, 5751, 1113, 5147, 2]
 // Exports: default
 
-// Module 18590 (NewContentPill)
+// Module 18950 (NewContentPill)
 import nativeDefault from "native" /* 575 */;
-import spring from "spring" /* 5637 */;
-import GuildIcon from "GuildIcon" /* 6957 */;
-import ClipView from "ClipView" /* 9509 */;
+import GuildIcon from "GuildIcon" /* 7020 */;
+import ClipView from "ClipView" /* 9593 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildStore from "GuildStore" /* 4885 */;
-import ICYMIStore from "ICYMIStore" /* 8906 */;
+import GuildStore from "GuildStore" /* 5011 */;
+import ICYMIStore from "ICYMIStore" /* 8980 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 const GuildIconDefault = GuildIcon;
@@ -52,9 +51,9 @@ obj2 = { alignSelf: "center", alignItems: "center", flexDirection: "row", paddin
 createStyles = createStyles.createStyles;
 obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };
 let closure_11 = createStyles(obj);
-const springConfig = { overshootClamping: true, stiffness: 20, damping: 15, mass: 0.03 };
-const __initData = { code: "function NewContentPillTsx1(){const{withSpring,showingPill,springConfig}=this.__closure;return{transform:[{translateY:withSpring(showingPill?12:0,springConfig)}],opacity:withSpring(showingPill?1:0,springConfig,'respect-motion-settings')};}" };
-const __initData2 = { code: "function NewContentPillTsx2(){const{showingPill}=this.__closure;return{pointerEvents:showingPill?'box-none':'none'};}" };
+let closure_12 = { overshootClamping: true, stiffness: 20, damping: 15, mass: 0.03 };
+let closure_14 = { code: "(function NewContentPillTsx1(){let[withSpring,showingPill,springConfig]=this.__closure;return{transform:[{translateY:withSpring(showingPill?12:0,springConfig)}],opacity:withSpring(showingPill?1:0,springConfig,'respect-motion-settings')};})" };
+let closure_15 = { code: "(function NewContentPillTsx2(){let[showingPill]=this.__closure;return{pointerEvents:showingPill?'box-none':'none'};})" };
 let size = size_mod;
 const result = size.fileFinishedImporting("modules/icymi/native/NewContentPill.tsx");
 
@@ -62,35 +61,40 @@ export default function NewContentPill(onPress) {
   let PressableOpacity;
   let PressableOpacity2;
   let intl;
-  let items10;
-  let items7;
-  let items8;
-  let items9;
-  let obj10;
+  let items11;
+  let items12;
+  let items13;
+  let items14;
+  let obj12;
   let obj13;
-  let obj14;
-  let obj7;
-  let tmp29Result2;
-  let tmp30;
+  let obj6;
+  let obj9;
+  let tmp14;
+  let tmp15;
+  let tmp16;
+  let tmp17;
+  let tmp19;
+  let tmp20;
+  let tmp36Result2;
+  let tmp37;
   let tmp9Result;
   onPress = onPress.onPress;
   const isRefreshing = onPress.isRefreshing;
   let stateFromStoresArray;
   let first;
   let closure_7;
-  let closure_8;
   let isFocused;
   let first1;
-  closure_11 = undefined;
+  let closure_10;
   let tmp = closure_11();
   let tmp2 = onPress;
   let tmp3 = stateFromStoresArray;
   let obj = onPress(stateFromStoresArray[10]);
-  let items = [closure_8];
-  stateFromStoresArray = obj.useStateFromStoresArray(items, () => closure_8.getNewUnreadDehydratedItems());
+  let items = [isFocused];
+  stateFromStoresArray = obj.useStateFromStoresArray(items, () => isFocused.getNewUnreadDehydratedItems());
   let obj2 = onPress(stateFromStoresArray[10]);
-  const items1 = [closure_8];
-  const stateFromStores = obj2.useStateFromStores(items1, () => closure_8.hasNewContent(), []);
+  const items1 = [isFocused];
+  const stateFromStores = obj2.useStateFromStores(items1, () => isFocused.hasNewContent(), []);
   const tmp7 = stateFromStores(first.useState(stateFromStoresArray), 2);
   first = tmp7[0];
   let closure_5 = tmp7[1];
@@ -120,57 +124,66 @@ export default function NewContentPill(onPress) {
   });
   const tmp11 = stateFromStores(first.useState(false), 2);
   closure_7 = tmp11[1];
-  closure_8 = tmp12;
-  const fn = function y() {
-    let items;
-    let num2;
-    let tmp5;
-    let withSpring2;
-    let num = 0;
-    const withSpring = spring.withSpring;
-    spring;
-    if (closure_8) {
-      num = 12;
-    }
-    const obj = { transform: items, opacity: withSpring2(num2, tmp5, "respect-motion-settings") };
-    items = [{ translateY: withSpring(num, springConfig) }];
-    ({ translateY: withSpring(num, springConfig) });
-    num2 = 0;
-    withSpring2 = tmp(5637).withSpring;
-    spring;
-    tmp5 = springConfig;
-    if (closure_8) {
-      num2 = 1;
-    }
-    return obj;
-  };
-  const tmp2Result = tmp2(tmp3[14]);
-  fn.__closure = { withSpring: tmp2(tmp3[15]).withSpring, showingPill: stateFromStores && tmp11[0], springConfig };
-  fn.__workletHash = 13655660855782;
-  fn.__initData = __initData;
-  ({ withSpring: tmp2(tmp3[15]).withSpring, showingPill: stateFromStores && tmp11[0], springConfig });
-  const animatedStyle = tmp2Result.useAnimatedStyle(fn);
-  const tmp2Result4 = tmp2(tmp3[14]);
+  const items4 = [closure_14, , , ];
+  const useAnimatedStyle = tmp2(tmp3[14]).useAnimatedStyle;
+  tmp2(tmp3[14]);
+  items4[1] = tmp2(tmp3[15]).withSpring;
+  items4[2] = stateFromStores && tmp11[0];
+  items4[3] = closure_12;
+  let c0;
+  let c1;
+  let c2;
+  [tmp14, tmp15, tmp16, tmp17] = items4;
   const tmp6 = stateFromStores;
-  class C {
+  class NewContentPillTsx1 {
+    constructor() {
+      let items;
+      let num2;
+      let tmp3;
+      let num = 0;
+      if (c1) {
+        num = 12;
+      }
+      const obj = { transform: items, opacity: _undefined(num2, tmp3, "respect-motion-settings") };
+      items = [{ translateY: _undefined(num, c2) }];
+      num2 = 0;
+      ({ translateY: _undefined(num, c2) });
+      tmp3 = c2;
+      if (c1) {
+        num2 = 1;
+      }
+      return obj;
+    }
+  }
+  const items5 = [tmp15, tmp16, tmp17];
+  NewContentPillTsx1.__closure = items5;
+  NewContentPillTsx1.__workletHash = 15743373779199;
+  NewContentPillTsx1.__initData = tmp14;
+  const animatedStyle = useAnimatedStyle(NewContentPillTsx1);
+  const items6 = [closure_15, stateFromStores && tmp11[0]];
+  c0 = undefined;
+  [tmp19, tmp20] = items6;
+  const tmp2Result4 = tmp2(tmp3[14]);
+  class NewContentPillTsx2 {
     constructor() {
       let pointerEvents = "none";
-      if (closure_8) {
+      if (c0) {
         pointerEvents = "box-none";
       }
       return { pointerEvents };
     }
   }
-  C.__closure = { showingPill: stateFromStores && tmp11[0] };
-  C.__workletHash = 876312391659;
-  C.__initData = __initData2;
-  const animatedProps = tmp2Result4.useAnimatedProps(C);
+  const items7 = [tmp20];
+  NewContentPillTsx2.__closure = items7;
+  NewContentPillTsx2.__workletHash = 15727177943954;
+  NewContentPillTsx2.__initData = tmp19;
+  const animatedProps = tmp2Result4.useAnimatedProps(NewContentPillTsx2);
   const tmp2Result5 = tmp2(tmp3[16]);
   isFocused = tmp2Result5.useIsFocused();
   const tmp6Result = tmp6(first.useState(false), 2);
   first1 = tmp6Result[0];
-  closure_11 = tmp6Result[1];
-  const items4 = [stateFromStores, isFocused, first1];
+  closure_10 = tmp6Result[1];
+  const items8 = [stateFromStores, isFocused, first1];
   const layoutEffect = obj3.useLayoutEffect(() => {
     let tmp = first1;
     if (!tmp) {
@@ -180,7 +193,7 @@ export default function NewContentPill(onPress) {
         if (tmp3) {
           closure_7(false);
         }
-        closure_11(isFocused);
+        closure_10(isFocused);
       }
     }
     if (tmp) {
@@ -192,72 +205,72 @@ export default function NewContentPill(onPress) {
     if (tmp) {
       closure_7(true);
     }
-  }, items4);
-  const items5 = [isRefreshing, stateFromStoresArray, stateFromStores];
+  }, items8);
+  const items9 = [isRefreshing, stateFromStoresArray, stateFromStores];
   const effect = obj3.useEffect(() => {
     const tmp = isRefreshing;
     if (!tmp) {
       closure_5(stateFromStoresArray);
     }
-  }, items5);
-  const items6 = [onPress];
+  }, items9);
+  const items10 = [onPress];
   const callback = obj3.useCallback(() => {
     onPress();
-  }, items6);
+  }, items10);
   if (0 === stateFromStoresArray1.length) {
-    const obj6 = { style: items7, animatedProps, children: first1(PressableOpacity, obj7) };
-    items7 = [tmp.refreshMorePillContainer, animatedStyle];
+    const obj5 = { style: items11, animatedProps, children: closure_10(PressableOpacity, obj6) };
+    items11 = [tmp.refreshMorePillContainer, animatedStyle];
     const View = tmp9(tmp3[14]).View;
-    obj7 = { onPress: callback, style: tmp.container, children: items8 };
+    obj6 = { onPress: callback, style: tmp.container, children: items12 };
     PressableOpacity = tmp2(tmp3[17]).PressableOpacity;
-    items8 = [isFocused(tmp2(tmp3[18]).ArrowSmallUpIcon, { size: "md", color: "interactive-text-active" }), ];
-    const obj8 = { style: { marginLeft: 4 }, variant: "heading-md/bold", color: "interactive-text-active", children: intl.string(tmp2(tmp3[20]).t["4Nl0Rl"]) };
+    items12 = [first1(tmp2(tmp3[18]).ArrowSmallUpIcon, { size: "md", color: "interactive-text-active" }), ];
+    const obj7 = { style: { marginLeft: 4 }, variant: "heading-sm/semibold", color: "interactive-text-active", children: intl.string(tmp2(tmp3[20]).t["4Nl0Rl"]) };
     const Text = tmp2(tmp3[19]).Text;
     intl = tmp2(tmp3[20]).intl;
-    items8[1] = isFocused(Text, obj8);
-    tmp29Result2 = isFocused(View, obj6);
+    items12[1] = first1(Text, obj7);
+    tmp36Result2 = first1(View, obj5);
   } else {
-    let tmp29Result;
-    const obj9 = { style: items9, animatedProps, children: tmp30(PressableOpacity2, obj10) };
-    items9 = [tmp.refreshMorePillContainer, animatedStyle];
+    let tmp36Result;
+    const obj8 = { style: items13, animatedProps, children: tmp37(PressableOpacity2, obj9) };
+    items13 = [tmp.refreshMorePillContainer, animatedStyle];
     const View2 = tmp9(tmp3[14]).View;
-    obj10 = { onPress: callback, style: tmp.container, children: items10 };
+    obj9 = { onPress: callback, style: tmp.container, children: items14 };
     PressableOpacity2 = tmp2(tmp3[17]).PressableOpacity;
-    tmp30 = first1;
+    tmp37 = closure_10;
     if (isRefreshing) {
       const tmp2Result6 = tmp2(tmp3[21]);
       const isThemeDarkResult = tmp2Result6.isThemeDark(tmp10);
       const unsafe_rawColors = tmp9(tmp3[7]).unsafe_rawColors;
-      const obj11 = { color: isThemeDarkResult ? unsafe_rawColors.WHITE : unsafe_rawColors.PRIMARY_500 };
-      tmp29Result = tmp29(closure_5, obj11);
+      const obj10 = { color: isThemeDarkResult ? unsafe_rawColors.WHITE : unsafe_rawColors.PRIMARY_500 };
+      tmp36Result = tmp36(closure_5, obj10);
     } else {
-      tmp29Result = tmp29(tmp2(tmp3[18]).ArrowSmallUpIcon, { size: "md", color: "interactive-text-active" });
+      tmp36Result = tmp36(tmp2(tmp3[18]).ArrowSmallUpIcon, { size: "md", color: "interactive-text-active" });
     }
-    items10 = [tmp29Result, , ];
+    items14 = [tmp36Result, , ];
     let num = 1;
     const substr = stateFromStoresArray1.slice(0, stateFromStoresArray1.length - 1);
-    items10[1] = substr.map((guild, index) => {
+    items14[1] = substr.map((guild, index) => {
       let obj2;
       let num = 4;
       const tmp2 = closure_6;
       if (index > 0) {
         num = -2;
       }
-      const obj = { style: { marginLeft: num }, children: isFocused(CutoutGuildIcon, obj2) };
+      const obj = { style: { marginLeft: num }, children: first1(CutoutGuildIcon, obj2) };
       obj2 = { guild };
-      return isFocused(tmp2, obj, guild.id);
+      return first1(tmp2, obj, guild.id);
     });
     let num2 = 4;
-    const tmp24 = closure_6;
+    const tmp31 = closure_6;
     if (stateFromStoresArray1.length > 1) {
       num2 = -2;
     }
-    const obj12 = { style: obj13, children: isFocused(tmp9Result, obj14) };
-    obj13 = { marginLeft: num2 };
-    obj14 = { guild: stateFromStoresArray1[stateFromStoresArray1.length - 1], size: tmp2(tmp3[9]).GuildIconSizes.XSMALL, style: tmp.guildIconBG };
+    const obj11 = { style: obj12, children: first1(tmp9Result, obj13) };
+    obj12 = { marginLeft: num2 };
+    obj13 = { guild: stateFromStoresArray1[stateFromStoresArray1.length - 1], size: tmp2(tmp3[9]).GuildIconSizes.XSMALL, style: tmp.guildIconBG };
     tmp9Result = isRefreshing(tmp3[9]);
-    items10[2] = isFocused(tmp24, obj12);
-    tmp29Result2 = tmp29(View2, obj9);
+    items14[2] = first1(tmp31, obj11);
+    tmp36Result2 = tmp36(View2, obj8);
   }
-  return tmp29Result2;
+  return tmp36Result2;
 };

@@ -1,20 +1,18 @@
-// Module ID: 18303
-// Function ID: 18304
+// Module ID: 18641
+// Function ID: 18642
 // Name: GenericUpsellActionSheet
-// Dependencies: [19, 17, 4860, 21, 5014, 575, 8741, 5272, 5717, 5595, 5624, 1187, 5634, 2]
+// Dependencies: [19, 17, 4986, 21, 5140, 575, 8812, 5388, 5842, 5723, 5751, 1187, 5758, 2]
 // Exports: default
 
-// Module 18303 (GenericUpsellActionSheet)
+// Module 18641 (GenericUpsellActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4860 */;
-import FastImageDefault from "FastImage" /* 5717 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4986 */;
+import FastImageDefault from "FastImage" /* 5842 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
-
-let BottomSheet;
 
 let hasOwnProperty;
 let metroRequire;
@@ -46,7 +44,7 @@ export default function GenericUpsellActionSheet(markAsDismissed) {
   markAsDismissed = markAsDismissed.markAsDismissed;
   ({ imageSource, header, body, onCTAPress, cta } = markAsDismissed);
   const tmp = closure_7();
-  const obj = markAsDismissed(8741);
+  const obj = markAsDismissed(8812);
   const bottomSheetRef1 = obj.useBottomSheetRef();
   ({ bottomSheetRef, bottomSheetClose } = bottomSheetRef1);
   const obj2 = {
@@ -60,15 +58,15 @@ export default function GenericUpsellActionSheet(markAsDismissed) {
     children: closure_6(View, obj5)
   };
   obj3 = { children: items };
-  BottomSheet = markAsDismissed(5272).BottomSheet;
+  const BottomSheet = markAsDismissed(5388).BottomSheet;
   items = [, ];
   const obj4 = { source: imageSource, style: tmp.image };
   items[0] = closure_5(FastImageDefault, obj4);
-  items[1] = closure_5(markAsDismissed(5595).ActionSheetHeaderBar, { variant: "floating", onPress: bottomSheetClose });
+  items[1] = closure_5(markAsDismissed(5723).ActionSheetHeaderBar, { variant: "floating", onPress: bottomSheetClose });
   obj5 = { style: tmp.content, children: items1 };
-  items1 = [closure_5(markAsDismissed(5624).Text, { accessibilityRole: "header", variant: "heading-xl/medium", color: "mobile-text-heading-primary", children: header }), closure_5(markAsDismissed(1187).Spacer, { size: 12 }), , ];
-  const obj6 = { style: tmp.description, variant: "text-sm/medium", color: "text-default", children: body };
-  items1[2] = closure_5(markAsDismissed(5624).Text, obj6);
-  items1[3] = closure_5(markAsDismissed(5634).Button, { variant: "primary", grow: true, onPress: onCTAPress, text: cta });
+  items1 = [closure_5(markAsDismissed(5751).Text, { accessibilityRole: "header", variant: "heading-xl/medium", color: "mobile-text-heading-primary", children: header }), closure_5(markAsDismissed(1187).Spacer, { size: 12 }), , ];
+  const obj6 = { style: tmp.description, variant: "body-sm/medium", color: "text-default", children: body };
+  items1[2] = closure_5(markAsDismissed(5751).Text, obj6);
+  items1[3] = closure_5(markAsDismissed(5758).Button, { variant: "primary", grow: true, onPress: onCTAPress, text: cta });
   return closure_5(BottomSheet, obj2);
 };

@@ -1,31 +1,31 @@
-// Module ID: 7293
-// Function ID: 7294
+// Module ID: 7356
+// Function ID: 7357
 // Name: GuildOnboardingPrompt
-// Dependencies: [32, 19, 17, 6796, 6948, 4885, 7268, 7265, 1386, 21, 5014, 5586, 575, 1497, 504, 1625, 5596, 671, 7292, 7294, 6971, 5624, 1113, 5634, 6922, 5587, 1092, 7274, 7295, 7296, 7300, 1409, 5258, 7305, 1994, 6980, 5717, 7322, 2]
+// Dependencies: [32, 19, 17, 6851, 7003, 5011, 7331, 7328, 1388, 21, 5140, 5714, 575, 1499, 504, 1627, 5724, 671, 7355, 7357, 7034, 5751, 1113, 5758, 6977, 5715, 1092, 7337, 7358, 7359, 7363, 1411, 5374, 7368, 2118, 7043, 5842, 7383, 2]
 // Exports: DropdownPrompt, MultipleChoicePrompt, RulesPrompt
 
-// Module 7293 (GuildOnboardingPrompt)
+// Module 7356 (GuildOnboardingPrompt)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import EmojiConstants from "EmojiConstants" /* 1386 */;
-import asyncRequire from "asyncRequire" /* 1994 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import NavigatorConstants from "NavigatorConstants" /* 5586 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import MemberVerificationActionCreatorsDefault from "MemberVerificationActionCreators" /* 6922 */;
-import TermsFieldListDefault from "TermsFieldList" /* 6971 */;
-import GuildOnboardingConstants from "GuildOnboardingConstants" /* 7265 */;
-import GuildOnboardingUtils from "GuildOnboardingUtils" /* 7274 */;
-import EmojiDefault from "Emoji" /* 7300 */;
+import EmojiConstants from "EmojiConstants" /* 1388 */;
+import asyncRequire from "asyncRequire" /* 2118 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
+import NavigatorConstants from "NavigatorConstants" /* 5714 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import MemberVerificationActionCreatorsDefault from "MemberVerificationActionCreators" /* 6977 */;
+import TermsFieldListDefault from "TermsFieldList" /* 7034 */;
+import GuildOnboardingConstants from "GuildOnboardingConstants" /* 7328 */;
+import GuildOnboardingUtils from "GuildOnboardingUtils" /* 7337 */;
+import EmojiDefault from "Emoji" /* 7363 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import EmojiStore from "EmojiStore" /* 6796 */;
-import MemberVerificationFormStore from "MemberVerificationFormStore" /* 6948 */;
-import GuildStore from "GuildStore" /* 4885 */;
-import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7268 */;
+import EmojiStore from "EmojiStore" /* 6851 */;
+import MemberVerificationFormStore from "MemberVerificationFormStore" /* 7003 */;
+import GuildStore from "GuildStore" /* 5011 */;
+import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7331 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -43,7 +43,7 @@ let obj5;
 let obj6;
 let size;
 let tmp8;
-const AvatarUtilsDefault = tmp8(1409);
+const AvatarUtilsDefault = tmp8(1411);
 function PromptHeader(currentPrompt) {
   let currentPromptIndex;
   let intl;
@@ -57,7 +57,7 @@ function PromptHeader(currentPrompt) {
   ({ numberOfPrompts, currentPromptIndex } = currentPrompt);
   const tmp = closure_16();
   const obj = { style: tmp.promptHeader, children: items };
-  const obj2 = { style: tmp.countText, variant: "text-sm/medium", color: "text-muted", children: intl.format(intl3.t.isV0NW, obj3) };
+  const obj2 = { style: tmp.countText, variant: "body-sm/medium", color: "text-muted", children: intl.format(intl3.t.isV0NW, obj3) };
   const Text = Text_Text.Text;
   intl = intl3.intl;
   obj3 = { currentQuestion: currentPromptIndex + 1, questionCount: numberOfPrompts };
@@ -71,8 +71,8 @@ function PromptHeader(currentPrompt) {
     const obj4 = { children: items1 };
     const obj5 = { style: tmp.requiredSeparator };
     items1 = [map1(hasOwnProperty, obj5), ];
-    const obj6 = { variant: "text-sm/medium", color: "text-brand", children: intl2.string(intl3.t.Ur8Vrt) };
-    const Text2 = tmp6(5624).Text;
+    const obj6 = { variant: "body-sm/medium", color: "text-brand", children: intl2.string(intl3.t.Ur8Vrt) };
+    const Text2 = tmp6(5751).Text;
     intl2 = tmp6(1113).intl;
     items1[1] = map1(Text2, obj6);
     tmp2Result = tmp2(tmp3, obj4);
@@ -184,14 +184,14 @@ function PromptFooter(lastPrompt) {
   let tmp20Result = null;
   const obj7 = { style: tmp.footerContent, children: items5 };
   if (tmp10) {
-    const obj8 = { style: tmp.helpText, variant: "text-xs/medium", color: "text-default", children: intl2.string(require("intl").t.dA1dSf) };
+    const obj8 = { style: tmp.helpText, variant: "body-xs/medium", color: "text-default", children: intl2.string(require("intl").t.dA1dSf) };
     const Text = tmp2(tmp3[21]).Text;
     intl2 = tmp2(tmp3[22]).intl;
     tmp20Result = tmp20(Text, obj8);
   }
   items5 = [tmp20Result, , ];
   if ("" !== helpText) {
-    const obj9 = { style: tmp.helpText, variant: "text-xs/medium", color: "text-default", children: items6 };
+    const obj9 = { style: tmp.helpText, variant: "body-xs/medium", color: "text-default", children: items6 };
     items6 = [helpText, " ", helpTextAdditional];
     tmp18Result = tmp18(tmp2(tmp3[21]).Text, obj9);
   } else {
@@ -211,7 +211,7 @@ function PromptFooter(lastPrompt) {
   return closure_14(closure_5, obj3);
 }
 function formattedNameHighlight(children, arg1) {
-  const obj = { variant: "text-xs/medium", color: "mobile-text-heading-primary", children };
+  const obj = { variant: "body-xs/medium", color: "mobile-text-heading-primary", children };
   return map1(Text_Text.Text, obj, arg1);
 }
 function DropdownOption(option) {
@@ -265,8 +265,8 @@ function DropdownOption(option) {
     str = "";
   }
   items1 = [closure_13(closure_5, obj3), ];
-  const obj7 = { variant: "text-md/semibold", children: option.title };
-  items1[1] = closure_13(tmp2(5624).Text, obj7);
+  const obj7 = { variant: "body-md/semibold", children: option.title };
+  items1[1] = closure_13(tmp2(5751).Text, obj7);
   return tmp5(closure_5, obj2);
 }
 let _slicedToArray = _slicedToArray_mod;
@@ -330,6 +330,7 @@ export function RulesPrompt(guildId) {
   let closure_5 = obj4.useStateFromStores(items2, () => MemberVerificationFormStore.get(guildId));
   [tmp8, c6] = _slicedToArray(react.useState(false), 2);
   const tmp7 = _slicedToArray(react.useState(false), 2);
+  const ref = react.useRef(null);
   const obj5 = guildId(stateFromStores[16]);
   const token = obj5.useToken(require("native").colors.BACKGROUND_BASE_LOWER);
   const items3 = [, ];
@@ -339,7 +340,7 @@ export function RulesPrompt(guildId) {
   const obj8 = require("module_671")(token);
   const alphaResult1 = obj8.alpha(1);
   items3[1] = alphaResult1.hex();
-  let tmp11Result = null;
+  let tmp12Result = null;
   const tmp5 = importDefault;
   if (null != stateFromStores) {
     const obj7 = { top: true, style: items4, children: items8 };
@@ -348,6 +349,7 @@ export function RulesPrompt(guildId) {
     const obj9 = { style: tmp.flex, children: items5 };
     const SafeAreaPaddingView = tmp2(tmp3[18]).SafeAreaPaddingView;
     const obj10 = {
+      ref,
       contentContainerStyle: tmp.scrollContainer,
       data: [0],
       renderItem() {
@@ -361,6 +363,23 @@ export function RulesPrompt(guildId) {
       onEndReachedThreshold: 0,
       onEndReached() {
           return _undefined(true);
+        },
+      onLoad: function handleListLoad() {
+          let layout;
+          const current = ref.current;
+          if (current != null) {
+            layout = current.getLayout(0);
+          }
+          if (null != current) {
+            if (null != layout) {
+              const height = layout.height;
+              const height2 = current.getWindowSize().height;
+              const tmp2 = height > 0 && height2 > 0 && height <= height2;
+              if (tmp2) {
+                _undefined(true);
+              }
+            }
+          }
         }
     };
     items5 = [closure_13(tmp2(tmp3[19]).FlashList, obj10), ];
@@ -369,7 +388,7 @@ export function RulesPrompt(guildId) {
     ({ footer: arr7[0], footerContent: arr7[1] } = tmp);
     const obj12 = { paddingBottom: bottom };
     items6[2] = obj12;
-    const obj13 = { style: tmp.footerText, variant: "text-xs/medium", children: stringResult };
+    const obj13 = { style: tmp.footerText, variant: "body-xs/medium", children: stringResult };
     const Text = tmp2(tmp3[21]).Text;
     const intl = tmp2(tmp3[22]).intl;
     const string = intl.string;
@@ -406,16 +425,16 @@ export function RulesPrompt(guildId) {
     intl2 = tmp2(tmp3[22]).intl;
     items7[1] = closure_13(Button, obj14);
     items5[1] = closure_14(closure_5, obj11);
-    items8 = [tmp11(tmp12, obj9), ];
+    items8 = [tmp12(closure_5, obj9), ];
     const obj15 = { style: items9, start: tmp2(stateFromStores[26]).VerticalGradient.START, end: tmp2(stateFromStores[26]).VerticalGradient.END, colors: items3, pointerEvents: "none" };
     items9 = [tmp.scrollContainerGradient, ];
     const obj16 = { bottom: sum };
     items9[1] = obj16;
     const tmp5Result = tmp5(stateFromStores[25]);
     items8[1] = closure_13(tmp5Result, obj15);
-    tmp11Result = tmp11(SafeAreaPaddingView, obj7);
+    tmp12Result = tmp12(SafeAreaPaddingView, obj7);
   }
-  return tmp11Result;
+  return tmp12Result;
 }
 export function MultipleChoicePrompt(guildId) {
   let currentPromptIndex;
@@ -540,7 +559,7 @@ export function DropdownPrompt(guildId) {
         return tmp(id, id2, flag);
       }
     };
-    obj.openLazy(asyncRequire(7305, dependencyMap.paths), "DropdownOptions", obj2);
+    obj.openLazy(asyncRequire(7368, dependencyMap.paths), "DropdownOptions", obj2);
   }, items2);
   items4 = [closure_13(PromptHeader, { currentPrompt, numberOfPrompts, currentPromptIndex }), ];
   let tmp11Result = 0 === found.length;
@@ -549,7 +568,7 @@ export function DropdownPrompt(guildId) {
   const tmp10 = closure_6;
   const tmp9 = closure_15;
   if (tmp11Result) {
-    const obj5 = { style: tmp.emptyDropdownText, variant: "text-sm/normal", color: "text-muted", children: "No answers selected." };
+    const obj5 = { style: tmp.emptyDropdownText, variant: "body-sm/normal", color: "text-muted", children: "No answers selected." };
     tmp11Result = tmp11(tmp4(tmp3[21]).Text, obj5);
   }
   const obj6 = { children: items6 };

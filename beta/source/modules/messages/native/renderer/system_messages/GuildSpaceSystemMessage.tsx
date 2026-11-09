@@ -1,19 +1,19 @@
-// Module ID: 8554
-// Function ID: 8555
+// Module ID: 8625
+// Function ID: 8626
 // Name: GuildSpaceSystemMessage
-// Dependencies: [32, 4863, 1383, 1379, 1113, 2442, 8418, 8420, 8422, 8555, 8557, 2]
+// Dependencies: [32, 4989, 1385, 1380, 1113, 2568, 8489, 8491, 8493, 8626, 8628, 2]
 // Exports: createGuildSpaceSystemMessage
 
-// Module 8554 (GuildSpaceSystemMessage)
-import GlobalUtils from "GlobalUtils" /* 1379 */;
-import _modDef2442 from "module_2442" /* 2442 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8418 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8420 */;
-import GuildSpaceLeaderboardSystemMessage from "GuildSpaceLeaderboardSystemMessage" /* 8555 */;
-import GuildSpaceMusicSystemMessage from "GuildSpaceMusicSystemMessage" /* 8557 */;
+// Module 8625 (GuildSpaceSystemMessage)
+import GlobalUtils from "GlobalUtils" /* 1380 */;
+import _modDef2568 from "module_2568" /* 2568 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8489 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8491 */;
+import GuildSpaceLeaderboardSystemMessage from "GuildSpaceLeaderboardSystemMessage" /* 8626 */;
+import GuildSpaceMusicSystemMessage from "GuildSpaceMusicSystemMessage" /* 8628 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
-import UserStore from "UserStore" /* 1383 */;
+import ChannelStore from "ChannelStore" /* 4989 */;
+import UserStore from "UserStore" /* 1385 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/messages/native/renderer/system_messages/GuildSpaceSystemMessage.tsx");
@@ -53,21 +53,21 @@ export function createGuildSpaceSystemMessage(message) {
         tmp15 = importDefault;
         const formatToParts = intl2.formatToParts;
         const obj3 = { displayCount: substr.length, username: userAuthorWithProcessedColor.nick, usernameOnClick: formatUsernameOnClickDefault(obj4), username2: userAuthorWithProcessedColor1.nick, username2OnClick: tmp12, additionalCount: diff };
-        const zUiZPF = _modDef2442.zUiZPF;
+        const zUiZPF = _modDef2568.zUiZPF;
         tmp12 = undefined;
         obj4 = { userId: tmp22.id, message, author: userAuthorWithProcessedColor, roleStyle };
         if (null != tmp23) {
           const obj5 = { userId: tmp23.id, message, author: userAuthorWithProcessedColor1, roleStyle };
-          tmp12 = tmp15(8420)(obj5);
+          tmp12 = tmp15(8491)(obj5);
         }
         formatToPartsResult = formatToParts(zUiZPF, obj3);
       }
       const obj6 = { content: formatToPartsResult };
-      const merged = Object.assign(tmp15(8422)(message));
+      const merged = Object.assign(tmp15(8493)(message));
       guildSpaceLeaderboardSystemMessage = obj6;
     }
     const intl = tmp9(1113).intl;
-    formatToPartsResult = intl.string(_modDef2442.Sxxqdx);
+    formatToPartsResult = intl.string(_modDef2568.Sxxqdx);
     tmp15 = importDefault;
   } else {
     const guildSpaceData3 = message.message.guildSpaceData;

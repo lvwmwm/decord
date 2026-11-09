@@ -1,38 +1,38 @@
-// Module ID: 7530
-// Function ID: 7531
+// Module ID: 7602
+// Function ID: 7603
 // Name: VoiceChannelEffectsUtils
-// Dependencies: [1383, 7529, 7531, 7532, 7533, 7534, 7535, 7536, 7537, 7538, 7539, 7540, 7541, 7542, 7543, 7544, 7545, 7546, 7547, 7548, 7549, 7550, 7551, 7552, 12, 1444, 1409, 4960, 4964, 1113, 2]
+// Dependencies: [1385, 7601, 7603, 7604, 7605, 7606, 7607, 7608, 7609, 7610, 7611, 7612, 7613, 7614, 7615, 7616, 7617, 7618, 7619, 7620, 7621, 7622, 7623, 7624, 12, 1446, 1411, 5086, 5090, 1113, 2]
 // Exports: getEffectAnnouncement, getEffectUrl, sampleAnimationId
 
-// Module 7530 (VoiceChannelEffectsUtils)
+// Module 7602 (VoiceChannelEffectsUtils)
 import intl4 from "intl" /* 1113 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1409 */;
-import ImageLoaderUtils from "ImageLoaderUtils" /* 1444 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4960 */;
-import _modDef7531 from "module_7531" /* 7531 */;
-import _modDef7532 from "module_7532" /* 7532 */;
-import _modDef7533 from "module_7533" /* 7533 */;
-import _modDef7534 from "module_7534" /* 7534 */;
-import _modDef7535 from "module_7535" /* 7535 */;
-import _modDef7536 from "module_7536" /* 7536 */;
-import _modDef7537 from "module_7537" /* 7537 */;
-import _modDef7538 from "module_7538" /* 7538 */;
-import _modDef7539 from "module_7539" /* 7539 */;
-import _modDef7540 from "module_7540" /* 7540 */;
-import _modDef7541 from "module_7541" /* 7541 */;
-import _modDef7542 from "module_7542" /* 7542 */;
-import _modDef7543 from "module_7543" /* 7543 */;
-import _modDef7544 from "module_7544" /* 7544 */;
-import _modDef7545 from "module_7545" /* 7545 */;
-import _modDef7546 from "module_7546" /* 7546 */;
-import _modDef7547 from "module_7547" /* 7547 */;
-import _modDef7548 from "module_7548" /* 7548 */;
-import _modDef7549 from "module_7549" /* 7549 */;
-import _modDef7550 from "module_7550" /* 7550 */;
-import _modDef7551 from "module_7551" /* 7551 */;
-import _modDef7552 from "module_7552" /* 7552 */;
-import UserStore from "UserStore" /* 1383 */;
-import VoiceChannelEffectsConstants from "VoiceChannelEffectsConstants" /* 7529 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
+import ImageLoaderUtils from "ImageLoaderUtils" /* 1446 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 5086 */;
+import _modDef7603 from "module_7603" /* 7603 */;
+import _modDef7604 from "module_7604" /* 7604 */;
+import _modDef7605 from "module_7605" /* 7605 */;
+import _modDef7606 from "module_7606" /* 7606 */;
+import _modDef7607 from "module_7607" /* 7607 */;
+import _modDef7608 from "module_7608" /* 7608 */;
+import _modDef7609 from "module_7609" /* 7609 */;
+import _modDef7610 from "module_7610" /* 7610 */;
+import _modDef7611 from "module_7611" /* 7611 */;
+import _modDef7612 from "module_7612" /* 7612 */;
+import _modDef7613 from "module_7613" /* 7613 */;
+import _modDef7614 from "module_7614" /* 7614 */;
+import _modDef7615 from "module_7615" /* 7615 */;
+import _modDef7616 from "module_7616" /* 7616 */;
+import _modDef7617 from "module_7617" /* 7617 */;
+import _modDef7618 from "module_7618" /* 7618 */;
+import _modDef7619 from "module_7619" /* 7619 */;
+import _modDef7620 from "module_7620" /* 7620 */;
+import _modDef7621 from "module_7621" /* 7621 */;
+import _modDef7622 from "module_7622" /* 7622 */;
+import _modDef7623 from "module_7623" /* 7623 */;
+import _modDef7624 from "module_7624" /* 7624 */;
+import UserStore from "UserStore" /* 1385 */;
+import VoiceChannelEffectsConstants from "VoiceChannelEffectsConstants" /* 7601 */;
 import module_12 from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 
@@ -41,8 +41,8 @@ let src;
 let VoiceChannelEffectAnimationType;
 let closure_4;
 ({ EMOJI_SIZE: closure_4, VoiceChannelEffectAnimationType } = VoiceChannelEffectsConstants);
-const items = [_modDef7531];
-const items1 = [_modDef7532, _modDef7533, _modDef7534, _modDef7535, _modDef7536, _modDef7537, _modDef7538, _modDef7539, _modDef7540, _modDef7541, _modDef7542, _modDef7543, _modDef7544, _modDef7545, _modDef7546, _modDef7547, _modDef7548, _modDef7549, _modDef7550, _modDef7551, _modDef7552];
+const items = [_modDef7603];
+const items1 = [_modDef7604, _modDef7605, _modDef7606, _modDef7607, _modDef7608, _modDef7609, _modDef7610, _modDef7611, _modDef7612, _modDef7613, _modDef7614, _modDef7615, _modDef7616, _modDef7617, _modDef7618, _modDef7619, _modDef7620, _modDef7621, _modDef7622, _modDef7623, _modDef7624];
 const AnimationTypeToAnimations = { [VoiceChannelEffectAnimationType.BASIC]: items, [VoiceChannelEffectAnimationType.PREMIUM]: items1 };
 const memoizeResult = module_12.memoize((src) => {
   const promise = new Promise((arg0) => {
@@ -111,7 +111,7 @@ export function getEffectUrl(emoji) {
     let str = "";
     const tmp2 = importDefault;
     if (null != byName) {
-      const tmp2Result = tmp2(4964);
+      const tmp2Result = tmp2(5090);
       str = tmp2Result.getURL(byName.surrogates);
     }
     return str;
@@ -120,28 +120,28 @@ export function getEffectUrl(emoji) {
 export function getEffectAnnouncement(items) {
   let username2;
   let username4;
-  const f90917 = (item) => {
+  const f92419 = (item) => {
     let tmp = item[emojiName];
     if (tmp == null) {
       tmp = null;
     }
     return tmp;
   };
-  const f90918 = (item) => null != item;
+  const f92420 = (item) => null != item;
   if (items.length < 1) {
     return "";
   } else {
     let joined;
     const userId = "userId";
     const arr = module_12(items);
-    const mapped = arr.map(f90917);
-    const found = mapped.filter(f90918);
+    const mapped = arr.map(f92419);
+    const found = mapped.filter(f92420);
     const iter = found.uniq();
     const valueResult = iter.value();
     const emojiName = "emojiName";
     const arr4 = module_12(items);
-    const mapped1 = arr4.map(f90917);
-    const found1 = mapped1.filter(f90918);
+    const mapped1 = arr4.map(f92419);
+    const found1 = mapped1.filter(f92420);
     const iter2 = found1.uniq();
     const valueResult2 = iter2.value();
     if (valueResult2.length < 2) {

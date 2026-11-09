@@ -1,23 +1,23 @@
-// Module ID: 2012
-// Function ID: 2013
+// Module ID: 2136
+// Function ID: 2137
 // Name: ClipsStore
-// Dependencies: [5, 2013, 502, 8214, 1072, 5864, 15873, 4825, 15874, 1396, 15875, 15877, 15878, 504, 572, 2]
+// Dependencies: [5, 2137, 502, 8284, 1072, 5993, 16191, 4951, 16192, 1403, 16193, 16195, 16196, 504, 572, 2]
 
-// Module 2012 (ClipsStore)
+// Module 2136 (ClipsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import FlagUtils from "FlagUtils" /* 1396 */;
-import DiscordNativeDefault from "DiscordNative" /* 4825 */;
-import ClipsDefaultSettingsUtils from "ClipsDefaultSettingsUtils" /* 15873 */;
-import clipPOVOverlap from "clipPOVOverlap" /* 15875 */;
-import DistributedClipsExperimentDefault from "DistributedClipsExperiment" /* 15877 */;
-import AutoclippingDefaultOverrideExperiment2 from "AutoclippingDefaultOverrideExperiment" /* 15878 */;
+import FlagUtils from "FlagUtils" /* 1403 */;
+import DiscordNativeDefault from "DiscordNative" /* 4951 */;
+import ClipsDefaultSettingsUtils from "ClipsDefaultSettingsUtils" /* 16191 */;
+import clipPOVOverlap from "clipPOVOverlap" /* 16193 */;
+import DistributedClipsExperimentDefault from "DistributedClipsExperiment" /* 16195 */;
+import AutoclippingDefaultOverrideExperiment2 from "AutoclippingDefaultOverrideExperiment" /* 16196 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import RunningGameStore from "RunningGameStore" /* 2013 */;
+import RunningGameStore from "RunningGameStore" /* 2137 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ClipsConstants from "ClipsConstants" /* 8214 */;
+import ClipsConstants from "ClipsConstants" /* 8284 */;
 import Constants from "Constants" /* 1072 */;
-import StreamSettingsConstants from "StreamSettingsConstants" /* 5864 */;
+import StreamSettingsConstants from "StreamSettingsConstants" /* 5993 */;
 import size from "module_2" /* 2 */;
 
 let _null, c4, c5, closure_2;
@@ -48,7 +48,7 @@ let obj = function _migrateDefaultStorage() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -118,7 +118,7 @@ let obj = function _migrateDefaultStorage() {
           closure_129_42.emitChange();
         }
         c5 = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp33) {
         closure_2 = tmp33;
         if (0 === c3) {
@@ -306,8 +306,8 @@ const map = new Map();
 map1 = new Map();
 const map2 = new Map();
 let closure_35 = [];
-obj = { clipsEnabled: false, storageLocation: "default", clipsQuality: { resolution: ApplicationStreamResolutions.RESOLUTION_1080, frameRate: ApplicationStreamFPS.FPS_60, bitratePercent: DEFAULT_CLIPS_BITRATE_PERCENT }, clipsLength: ClipsLengthSettings.SECONDS_30, remindersEnabled: true, decoupledClipsEnabled: false, maxAutoClips: 20, clipSignals: { enableDistributedSignals: true, enableGameSignals: true }, debugTooltipsEnabled: false, enableAutoclipping: "flexDirection", showPovClipsInGallery: "experiment-disabled" };
-let obj2 = { clipsSettings: obj, hardwareClassification: null, hardwareClassificationForDecoupled: null, hardwareClassificationVersion: 0, clipsDefaultSettingsState: ClipsDefaultSettingsUtils.INITIAL_CLIPS_DEFAULT_SETTINGS_STATE, newClipIds: [], hasClips: false, hasTakenDecoupledClip: false, clipsEducationState: { dismissedAt: null, numberOfGamesLaunchedSinceDismissal: 0, numberOfTimesDismissed: 0 } };
+obj = { clipsEnabled: false, storageLocation: "default", clipsQuality: { resolution: ApplicationStreamResolutions.RESOLUTION_1080, frameRate: ApplicationStreamFPS.FPS_60, bitratePercent: DEFAULT_CLIPS_BITRATE_PERCENT }, clipsLength: ClipsLengthSettings.SECONDS_30, remindersEnabled: true, decoupledClipsEnabled: false, maxAutoClips: 20, clipSignals: { enableDistributedSignals: true, enableGameSignals: true }, debugTooltipsEnabled: false, enableAutoclipping: "flexDirection", showPovClipsInGallery: true };
+let obj2 = { clipsSettings: obj, hardwareClassification: null, hardwareClassificationVersion: 0, clipsDefaultSettingsState: ClipsDefaultSettingsUtils.INITIAL_CLIPS_DEFAULT_SETTINGS_STATE, hasAutoEnabledClipsForHardware: false, newClipIds: [], hasClips: false, hasTakenDecoupledClip: false, clipsEducationState: { dismissedAt: null, numberOfGamesLaunchedSinceDismissal: 0, numberOfTimesDismissed: 0 } };
 obj = obj2;
 const DeviceSettingsStore = get_initializedDefault.DeviceSettingsStore;
 class ClipsStoreClass extends DeviceSettingsStore {
@@ -381,9 +381,6 @@ class ClipsStoreClass extends DeviceSettingsStore {
   }
   getHardwareClassification() {
     return obj.hardwareClassification;
-  }
-  getHardwareClassificationForDecoupled() {
-    return obj.hardwareClassificationForDecoupled;
   }
   getHardwareClassificationVersion() {
     return obj.hardwareClassificationVersion;
@@ -510,16 +507,7 @@ let items = [
     const merged1 = Object.assign(clipsSettings.clipsSettings);
     return obj;
   },
-  (hardwareClassificationForDecoupled) => {
-    let prop;
-    obj = { hardwareClassificationForDecoupled: prop };
-    const merged = Object.assign(hardwareClassificationForDecoupled);
-    prop = hardwareClassificationForDecoupled.hardwareClassificationForDecoupled;
-    if (prop == null) {
-      prop = null;
-    }
-    return obj;
-  },
+  (arg0) => arg0,
   (arg0) => arg0,
   (newClipIds) => {
     obj = { newClipIds, newClipIDs: undefined };
@@ -663,6 +651,21 @@ let items = [
     INITIAL_CLIPS_DEFAULT_SETTINGS_STATE = clipsDefaultSettingsState.clipsDefaultSettingsState;
     if (INITIAL_CLIPS_DEFAULT_SETTINGS_STATE == null) {
       INITIAL_CLIPS_DEFAULT_SETTINGS_STATE = ClipsDefaultSettingsUtils.INITIAL_CLIPS_DEFAULT_SETTINGS_STATE;
+    }
+    return obj;
+  },
+  (hardwareClassification) => {
+    let tmp2;
+    hardwareClassification = hardwareClassification.hardwareClassification;
+    obj = { hasAutoEnabledClipsForHardware: tmp2 };
+    const merged = Object.assign(hardwareClassification);
+    tmp2 = hardwareClassification === unpackModuleId.MEETS_AUTO_ENABLE;
+    if (!tmp2) {
+      let tmp3 = hardwareClassification === unpackModuleId.MEETS_MINIMUM;
+      if (tmp3) {
+        tmp3 = hardwareClassification.hasClips || hardwareClassification.hasTakenDecoupledClip;
+      }
+      tmp2 = tmp3;
     }
     return obj;
   }
@@ -860,24 +863,28 @@ let obj3 = {
     let defaultState;
     let obj4;
     ({ classification, decision } = arg0);
-    const hardwareClassification = obj.hardwareClassification;
+    let MEETS_AUTO_ENABLE = obj.hardwareClassification;
     obj.hardwareClassificationVersion = metroRequire;
     obj.hardwareClassification = classification;
-    obj.hardwareClassificationForDecoupled = classification;
-    if (null == decision) {
-      const tmp3 = obj.clipsDefaultSettingsState.clipsEnabledSource === map1.UNSET && classification === unpackModuleId.MEETS_AUTO_ENABLE && hardwareClassification !== unpackModuleId.MEETS_AUTO_ENABLE;
-      if (tmp3) {
-        obj.clipsSettings.clipsEnabled = true;
+    const tmp = obj.clipsDefaultSettingsState.clipsEnabledSource === map1.UNSET && classification === unpackModuleId.MEETS_AUTO_ENABLE && !obj.hasAutoEnabledClipsForHardware;
+    const tmp4 = tmp && !obj.clipsSettings.clipsEnabled;
+    if (tmp) {
+      obj = { clipsEnabled: true, clipsSettings: obj, hasAutoEnabledClipsForHardware: true };
+      const merged = Object.assign(obj.clipsSettings);
+    }
+    if (null != decision) {
+      const obj2 = { defaultState: obj.clipsDefaultSettingsState, clipsEnabled: obj.clipsSettings.clipsEnabled, decision, previousHardwareClassification: MEETS_AUTO_ENABLE };
+      const applyClipsDefaultSettingsDecision = ClipsDefaultSettingsUtils.applyClipsDefaultSettingsDecision;
+      ClipsDefaultSettingsUtils;
+      if (tmp4) {
+        MEETS_AUTO_ENABLE = unpackModuleId.MEETS_AUTO_ENABLE;
       }
-    } else {
-      obj = ClipsDefaultSettingsUtils;
-      const obj2 = { defaultState: obj.clipsDefaultSettingsState, clipsEnabled: obj.clipsSettings.clipsEnabled, decision, previousHardwareClassification: hardwareClassification };
-      const result = obj.applyClipsDefaultSettingsDecision(obj2);
+      const result = applyClipsDefaultSettingsDecision(obj2);
       const obj3 = { clipsSettings: obj4, clipsDefaultSettingsState: defaultState };
       ({ clipsEnabled, defaultState } = result);
-      const merged = Object.assign(obj);
+      const merged1 = Object.assign(obj);
       obj4 = { clipsEnabled };
-      const merged1 = Object.assign(obj.clipsSettings);
+      const merged2 = Object.assign(obj.clipsSettings);
       obj = obj3;
     }
   },

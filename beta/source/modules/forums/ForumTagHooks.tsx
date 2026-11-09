@@ -1,16 +1,16 @@
-// Module ID: 7456
-// Function ID: 7457
+// Module ID: 7520
+// Function ID: 7521
 // Name: ForumTagHooks
-// Dependencies: [19, 4863, 4946, 1083, 504, 1379, 7457, 2]
+// Dependencies: [19, 4989, 5072, 1083, 504, 1380, 7521, 2]
 // Exports: useAppliedTags, useAvailableTags, useSomeAppliedTags, useVisibleAppliedForumTags, useVisibleForumTags
 
-// Module 7456 (ForumTagHooks)
+// Module 7520 (ForumTagHooks)
 import Constants from "Constants" /* 1083 */;
-import GlobalUtils from "GlobalUtils" /* 1379 */;
-import ReportToModUtils from "ReportToModUtils" /* 7457 */;
+import GlobalUtils from "GlobalUtils" /* 1380 */;
+import ReportToModUtils from "ReportToModUtils" /* 7521 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
-import PermissionStore from "PermissionStore" /* 4946 */;
+import ChannelStore from "ChannelStore" /* 4989 */;
+import PermissionStore from "PermissionStore" /* 5072 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

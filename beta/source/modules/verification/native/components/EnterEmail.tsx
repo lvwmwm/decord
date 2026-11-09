@@ -1,20 +1,20 @@
-// Module ID: 7150
-// Function ID: 7151
+// Module ID: 7212
+// Function ID: 7213
 // Name: EnterEmail
-// Dependencies: [5, 32, 19, 17, 1383, 6997, 1072, 21, 5014, 575, 1497, 504, 1092, 7151, 1252, 5624, 1113, 7081, 5634, 2]
+// Dependencies: [5, 32, 19, 17, 1385, 7063, 1072, 21, 5140, 575, 1499, 504, 1092, 7213, 1252, 5751, 1113, 7147, 5758, 2]
 // Exports: default
 
-// Module 7150 (EnterEmail)
+// Module 7212 (EnterEmail)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserStore from "UserStore" /* 1383 */;
-import ChangeEmailStore from "ChangeEmailStore" /* 6997 */;
+import UserStore from "UserStore" /* 1385 */;
+import ChangeEmailStore from "ChangeEmailStore" /* 7063 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let c1, c2, navigation;
@@ -111,7 +111,7 @@ export default function EnterEmail(isChangeEmail) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -164,7 +164,7 @@ export default function EnterEmail(isChangeEmail) {
     let obj3 = { style: tmp.background, keyboardShouldPersistTaps: "handled", alwaysBounceVertical: false, children: tmp17(tmp18, obj4) };
     obj4 = { style: tmp.container, children: items3 };
     tmp17 = closure_15;
-    let obj5 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: stringResult };
+    let obj5 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: stringResult };
     const Text = tmp2(tmp3[15]).Text;
     const tmp16 = closure_8;
     tmp18 = callback;
@@ -176,7 +176,7 @@ export default function EnterEmail(isChangeEmail) {
       stringResult = intl.string(tmp2(tmp3[16]).t["CDTD/K"]);
     }
     items3 = [tmp15(Text, obj5), , , ];
-    let obj6 = { style: tmp.prompt, variant: "text-sm/medium", color: "text-default", children: formatToPlainStringResult };
+    let obj6 = { style: tmp.prompt, variant: "body-sm/medium", color: "text-default", children: formatToPlainStringResult };
     const Text2 = tmp2(tmp3[15]).Text;
     if (null != stateFromStores.email) {
       const intl4 = tmp2(tmp3[16]).intl;

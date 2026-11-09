@@ -1,14 +1,14 @@
-// Module ID: 10524
-// Function ID: 10525
+// Module ID: 10643
+// Function ID: 10644
 // Name: IdIcon
-// Dependencies: [19, 21, 575, 5716, 10525, 2]
+// Dependencies: [19, 21, 575, 5841, 10644, 2]
 // Exports: IdIcon
 
-// Module 10524 (IdIcon)
+// Module 10643 (IdIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5716 */;
-import AssetRegistry from "AssetRegistry" /* 10525 */;
+import BaseIconImage2 from "BaseIconImage" /* 5841 */;
+import AssetRegistry from "AssetRegistry" /* 10644 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

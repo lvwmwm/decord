@@ -1,16 +1,16 @@
-// Module ID: 15159
-// Function ID: 15160
+// Module ID: 15446
+// Function ID: 15447
 // Name: InAppReportsBreadCrumbs
-// Dependencies: [19, 17, 21, 5014, 575, 12, 5624, 8355, 1113, 2674, 2]
+// Dependencies: [19, 17, 21, 5140, 575, 12, 5751, 8425, 1113, 2798, 2]
 // Exports: default
 
-// Module 15159 (InAppReportsBreadCrumbs)
+// Module 15446 (InAppReportsBreadCrumbs)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5624 */;
+import Text_Text from "Text/Text" /* 5751 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -71,7 +71,7 @@ export default function Breadcrumbs(element) {
       let tmp7Result = null;
       if (0 !== found.length) {
         let obj2 = { style: tmp2.container, children: items };
-        let obj3 = { style: tmp2.title, accessibilityRole: "header", variant: "text-xs/bold", children: stringResult };
+        let obj3 = { style: tmp2.title, accessibilityRole: "header", variant: "body-xs/semibold", children: stringResult };
         const Text = require("Text/Text").Text;
         const REPORT_TO_MOD = require("ReportMenuType").ReportMenuTypeSets.REPORT_TO_MOD;
         const hasItem = REPORT_TO_MOD.has(menuName);
@@ -82,7 +82,7 @@ export default function Breadcrumbs(element) {
         const tmp8 = View;
         const tmp9 = closure_4;
         if (hasItem) {
-          stringResult = string(tmp5(2674)["6mx/DP"]);
+          stringResult = string(tmp5(2798)["6mx/DP"]);
         } else {
           stringResult = string(tmp10(1113).t["+3V9Tp"]);
         }
@@ -100,7 +100,7 @@ export default function Breadcrumbs(element) {
                   items = [tmp4, , ];
                   const obj3 = { style: closure_0.breadCrumbDot };
                   items[1] = React3(View, obj3);
-                  const obj4 = { lineClamp: 2, ellipsizeMode: "tail", style: closure_0.breadCrumbText, variant: "text-md/medium", children };
+                  const obj4 = { lineClamp: 2, ellipsizeMode: "tail", style: closure_0.breadCrumbText, variant: "body-md/medium", children };
                   items[2] = React3(Text_Text.Text, obj4);
                   return tmp(View, obj, "" + children + "+" + index);
                 })

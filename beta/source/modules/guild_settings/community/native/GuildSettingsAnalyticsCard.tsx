@@ -1,16 +1,16 @@
-// Module ID: 19866
-// Function ID: 19867
+// Module ID: 20276
+// Function ID: 20277
 // Name: GuildSettingsAnalyticsCard
-// Dependencies: [19, 17, 21, 5014, 575, 5712, 6977, 5624, 5735, 1113, 11351, 19867, 2]
+// Dependencies: [19, 17, 21, 5140, 575, 5837, 7040, 5751, 5859, 1113, 11491, 20277, 2]
 // Exports: default
 
-// Module 19866 (GuildSettingsAnalyticsCard)
+// Module 20276 (GuildSettingsAnalyticsCard)
 import nativeDefault from "native" /* 575 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5712 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5837 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -58,23 +58,23 @@ export default function GuildSettingsAnalyticsCard(metricKey) {
   }, items);
   let obj = { variant: "secondary", border: "subtle", style: tmp.card, children: items2 };
   let obj2 = { style: tmp.line, children: items1 };
-  const Card = metricKey(6977).Card;
-  items1 = [closure_6(metricKey(5624).Text, { variant: "text-md/medium", color: "text-subtle", children: title }), ];
+  const Card = metricKey(7040).Card;
+  items1 = [closure_6(metricKey(5751).Text, { variant: "body-md/medium", color: "text-subtle", children: title }), ];
   let tmp7Result = null;
   if (null != description) {
     const obj3 = { onPress: callback, hitSlop: 14, accessibilityRole: "button", accessibilityLabel: description, children: closure_6(CircleInformationIcon, obj4) };
     obj4 = { size: "xs", color: description(575).colors.INTERACTIVE_ICON_DEFAULT };
-    CircleInformationIcon = tmp4(5735).CircleInformationIcon;
+    CircleInformationIcon = tmp4(5859).CircleInformationIcon;
     tmp7Result = tmp7(closure_4, obj3);
   }
   items1[1] = tmp7Result;
   items2 = [tmp3(closure_5, obj2), , ];
   let str = "text-muted";
-  const Text = tmp4(5624).Text;
+  const Text = tmp4(5751).Text;
   if (null != localizedNumber) {
     str = "text-strong";
   }
-  const obj5 = { variant: "text-lg/semibold", color: str, children: localizedNumber };
+  const obj5 = { variant: "body-lg/semibold", color: str, children: localizedNumber };
   if (localizedNumber == null) {
     const intl = tmp4(1113).intl;
     localizedNumber = intl.string(tmp4(1113).t.jHpxwo);
@@ -86,7 +86,7 @@ export default function GuildSettingsAnalyticsCard(metricKey) {
     const obj6 = { style: tmp.line, children: items3 };
     if (isTrendingUp) {
       const obj7 = { size: "xxs", color: description(575).colors.TEXT_FEEDBACK_POSITIVE, accessible: true, accessibilityLabel: intl2.string(metricKey(1113).t["8mcccd"]) };
-      const ArrowLargeUpIcon = tmp4(11351).ArrowLargeUpIcon;
+      const ArrowLargeUpIcon = tmp4(11491).ArrowLargeUpIcon;
       intl2 = tmp4(1113).intl;
       tmp7Result3 = tmp7(ArrowLargeUpIcon, obj7);
     }
@@ -94,13 +94,13 @@ export default function GuildSettingsAnalyticsCard(metricKey) {
     let tmp7Result4 = null;
     if (isTrendingDown) {
       const obj8 = { size: "xxs", color: description(575).colors.TEXT_FEEDBACK_CRITICAL, accessible: true, accessibilityLabel: intl3.string(metricKey(1113).t.NLl6Q3) };
-      const ArrowLargeDownIcon = tmp4(19867).ArrowLargeDownIcon;
+      const ArrowLargeDownIcon = tmp4(20277).ArrowLargeDownIcon;
       intl3 = tmp4(1113).intl;
       tmp7Result4 = tmp7(ArrowLargeDownIcon, obj8);
     }
     items3[1] = tmp7Result4;
-    const obj9 = { variant: "text-xs/normal", color: "text-subtle", children: subtext };
-    items3[2] = closure_6(metricKey(5624).Text, obj9);
+    const obj9 = { variant: "body-xs/normal", color: "text-subtle", children: subtext };
+    items3[2] = closure_6(metricKey(5751).Text, obj9);
     tmp3Result = tmp3(tmp6, obj6);
   }
   items2[2] = tmp3Result;

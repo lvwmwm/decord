@@ -1,13 +1,13 @@
-// Module ID: 16405
-// Function ID: 16406
+// Module ID: 16726
+// Function ID: 16727
 // Name: TouchEventAnalyticsManager
-// Dependencies: [1383, 1998, 16406, 1996, 2]
+// Dependencies: [1385, 2122, 16727, 2120, 2]
 
-// Module 16405 (TouchEventAnalyticsManager)
-import ZoomedInAnalyticsExperiment from "ZoomedInAnalyticsExperiment" /* 1998 */;
-import react_nativeDefault from "react-native" /* 16406 */;
-import UserStore from "UserStore" /* 1383 */;
-import LifecycleManager from "LifecycleManager" /* 1996 */;
+// Module 16726 (TouchEventAnalyticsManager)
+import ZoomedInAnalyticsExperiment from "ZoomedInAnalyticsExperiment" /* 2122 */;
+import react_nativeDefault from "react-native" /* 16727 */;
+import UserStore from "UserStore" /* 1385 */;
+import LifecycleManager from "LifecycleManager" /* 2120 */;
 import size from "module_2" /* 2 */;
 
 function updateEnabledState() {

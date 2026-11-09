@@ -1,36 +1,37 @@
-// Module ID: 18666
-// Function ID: 18667
+// Module ID: 19027
+// Function ID: 19028
 // Name: AppChannel
-// Dependencies: [19, 17, 21, 5014, 575, 1891, 5607, 12240, 18667, 16361, 12239, 12241, 7419, 5756, 12250, 12254, 18670, 18673, 1113, 6881, 5717, 1409, 11340, 5634, 5675, 18674, 9829, 6878, 18675, 11215, 2]
+// Dependencies: [19, 17, 19028, 21, 5140, 575, 2020, 5735, 12427, 19029, 16682, 12426, 12428, 7483, 5885, 12437, 12441, 19032, 11026, 19033, 19036, 1113, 6936, 5842, 1411, 11480, 5758, 5799, 19037, 9919, 6933, 19038, 11355, 2]
 // Exports: default
 
-// Module 18666 (AppChannel)
+// Module 19027 (AppChannel)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl6 from "intl" /* 1113 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1409 */;
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5675 */;
-import FastImageDefault from "FastImage" /* 5717 */;
-import transitionToChannel from "transitionToChannel" /* 5756 */;
-import conjureDMAppChannel from "conjureDMAppChannel" /* 6878 */;
-import ApplicationActionCreators from "ApplicationActionCreators" /* 6881 */;
-import openChannelSecondaryViewChat from "openChannelSecondaryViewChat" /* 9829 */;
-import useChannelContentGate from "useChannelContentGate" /* 11215 */;
-import ConjureAppIconTileDefault from "ConjureAppIconTile" /* 11340 */;
-import getInlineFramePresentationDefault from "getInlineFramePresentation" /* 12240 */;
-import FrameSurfaceState from "FrameSurfaceState" /* 18673 */;
-import useAppChannelClosedDefault from "useAppChannelClosed" /* 18674 */;
-import useChannelAppFrameTeardownDefault from "useChannelAppFrameTeardown" /* 18675 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5799 */;
+import FastImageDefault from "FastImage" /* 5842 */;
+import transitionToChannel from "transitionToChannel" /* 5885 */;
+import conjureDMAppChannel from "conjureDMAppChannel" /* 6933 */;
+import ApplicationActionCreators from "ApplicationActionCreators" /* 6936 */;
+import openChannelSecondaryViewChat from "openChannelSecondaryViewChat" /* 9919 */;
+import ConjurePreviewActionCreators from "ConjurePreviewActionCreators" /* 11026 */;
+import useChannelContentGate from "useChannelContentGate" /* 11355 */;
+import ConjureAppIconTileDefault from "ConjureAppIconTile" /* 11480 */;
+import getInlineFramePresentationDefault from "getInlineFramePresentation" /* 12427 */;
+import ConjureFrameUpdateStore from "ConjureFrameUpdateStore" /* 19028 */;
+import FrameSurfaceState from "FrameSurfaceState" /* 19036 */;
+import useAppChannelClosedDefault from "useAppChannelClosed" /* 19037 */;
+import useChannelAppFrameTeardownDefault from "useChannelAppFrameTeardown" /* 19038 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
-let hasOwnProperty;
+let metroImportDefault;
 let metroRequire;
 let size;
-function OpenAppChannel(arg0) {
-  let applicationId;
+function OpenAppChannel(applicationId) {
   let channel;
   let frame;
   let headerVisible;
@@ -42,82 +43,98 @@ function OpenAppChannel(arg0) {
   let items2;
   let state;
   let surface;
-  ({ applicationId, channel, surface, headerVisible } = arg0);
+  applicationId = applicationId.applicationId;
+  ({ channel, surface, headerVisible } = applicationId);
   if (headerVisible === undefined) {
     headerVisible = true;
   }
   let top;
-  let bottom;
   let id;
-  const tmp3 = closure_8(top(bottom[5])());
-  const insets = top(bottom[6])().insets;
+  const tmp3 = closure_9(headerVisible(top[6])());
+  const insets = headerVisible(top[7])().insets;
   top = insets.top;
-  bottom = insets.bottom;
+  const bottom = insets.bottom;
   const left = insets.left;
   const right = insets.right;
-  let obj = left;
+  let obj = bottom;
   const items = [top, bottom, left, right, headerVisible];
-  const memo = left.useMemo(() => {
+  const memo = bottom.useMemo(() => {
     const rect = { top, bottom, left, right };
     return getInlineFramePresentationDefault(rect, headerVisible);
   }, items);
-  ({ state, frame } = top(bottom[8])({ applicationId, surface }));
-  top(bottom[8])({ applicationId, surface });
-  top(bottom[9])(applicationId, surface);
-  const tmp7 = top(bottom[10]);
-  tmp7(state === headerVisible(bottom[8]).FrameLifecycleState.Launched);
+  ({ frame, state } = headerVisible(top[9])({ applicationId, surface }));
+  headerVisible(top[9])({ applicationId, surface });
+  headerVisible(top[10])(applicationId, surface);
+  const tmp7 = headerVisible(top[11]);
+  tmp7(state === applicationId(top[9]).FrameLifecycleState.Launched);
   let tmp11 = null;
-  const tmp10 = top(bottom[11]);
-  if (state === headerVisible(bottom[8]).FrameLifecycleState.Launched) {
+  const tmp10 = headerVisible(top[12]);
+  if (state === applicationId(top[9]).FrameLifecycleState.Launched) {
     tmp11 = applicationId;
   }
   tmp10(tmp11);
+  let id1;
+  const tmp8Result = applicationId(top[13]);
+  const isConjureChannelCandidate = tmp8Result.useIsConjureChannelCandidate(channel, "AppChannel");
+  const tmp14 = right;
+  if (frame != null) {
+    id1 = frame.id;
+  }
   id = channel.id;
   const items1 = [id];
-  const tmp8Result = headerVisible(bottom[12]);
-  const isConjureChannelCandidate = tmp8Result.useIsConjureChannelCandidate(channel, "AppChannel");
+  const tmp14Result = tmp14(id1);
   const callback = obj.useCallback((id) => {
     const obj = transitionToChannel;
     obj.transitionToMessage(id, id.id);
   }, items1);
-  if (headerVisible(bottom[8]).FrameLifecycleState.Launched === state) {
+  if (applicationId(top[9]).FrameLifecycleState.Launched === state) {
     const obj2 = { style: tmp3.container, children: items2 };
-    const obj3 = { frameId: frame.id, level: headerVisible(bottom[15]).FrameStackLevel.WithinAppContent, presentation: memo };
-    const tmpResult = top(bottom[14]);
-    items2 = [id(tmpResult, obj3), ];
-    let tmp22Result = null;
-    const tmp20 = closure_6;
-    const tmp21 = right;
-    const tmp22 = id;
-    if (isConjureChannelCandidate) {
-      const obj4 = { channelId: id, onOpenChat: callback };
-      tmp22Result = tmp22(tmp(tmp2[16]), obj4);
+    const obj3 = { frameId: frame.id, level: applicationId(top[16]).FrameStackLevel.WithinAppContent, presentation: memo };
+    const tmpResult = headerVisible(top[15]);
+    items2 = [id(tmpResult, obj3), , ];
+    let tmp25Result = null;
+    const tmp23 = closure_7;
+    const tmp24 = left;
+    if (tmp14Result) {
+      const obj4 = {
+        onReload() {
+              const obj = ConjurePreviewActionCreators;
+              return obj.reloadConjureAppFrames(applicationId);
+            }
+      };
+      tmp25Result = tmp25(tmp8(tmp2[17]).ConjureFrameUpdateBarContent, obj4);
     }
-    items2[1] = tmp22Result;
-    return tmp20(tmp21, obj2);
-  } else if (headerVisible(bottom[8]).FrameLifecycleState.RenderingElsewhere === state) {
-    const obj5 = { description: intl5.string(headerVisible(bottom[18]).t["2KIDX+"]) };
-    const FrameSurfaceExplanation4 = tmp8(tmp2[17]).FrameSurfaceExplanation;
-    intl5 = tmp8(tmp2[18]).intl;
-    return id(FrameSurfaceExplanation4, obj5);
-  } else if (headerVisible(bottom[8]).FrameLifecycleState.NoApplication === state) {
-    const obj6 = { description: intl4.string(headerVisible(bottom[18]).t.izggZO) };
-    const FrameSurfaceExplanation3 = tmp8(tmp2[17]).FrameSurfaceExplanation;
-    intl4 = tmp8(tmp2[18]).intl;
-    return id(FrameSurfaceExplanation3, obj6);
-  } else if (headerVisible(bottom[8]).FrameLifecycleState.DoesNotSupportSurface === state) {
-    const obj7 = { description: intl3.string(headerVisible(bottom[18]).t["iUWcU/"]) };
-    const FrameSurfaceExplanation2 = tmp8(tmp2[17]).FrameSurfaceExplanation;
-    intl3 = tmp8(tmp2[18]).intl;
-    return id(FrameSurfaceExplanation2, obj7);
-  } else if (headerVisible(bottom[8]).FrameLifecycleState.Error === state) {
-    const obj8 = { heading: intl.string(headerVisible(bottom[18]).t.VquUff), error: intl2.string(headerVisible(bottom[18]).t["Sd9D/R"]) };
-    const FrameSurfaceExplanation = tmp8(tmp2[17]).FrameSurfaceExplanation;
-    intl = tmp8(tmp2[18]).intl;
-    intl2 = tmp8(tmp2[18]).intl;
-    return id(FrameSurfaceExplanation, obj8);
+    items2[1] = tmp25Result;
+    let tmp25Result2 = null;
+    if (isConjureChannelCandidate) {
+      const obj5 = { channelId: id, onOpenChat: callback };
+      tmp25Result2 = tmp25(tmp(tmp2[19]), obj5);
+    }
+    items2[2] = tmp25Result2;
+    return tmp23(tmp24, obj2);
+  } else if (applicationId(top[9]).FrameLifecycleState.RenderingElsewhere === state) {
+    const obj6 = { description: intl5.string(applicationId(top[21]).t["2KIDX+"]) };
+    const FrameSurfaceExplanation4 = tmp8(tmp2[20]).FrameSurfaceExplanation;
+    intl5 = tmp8(tmp2[21]).intl;
+    return id(FrameSurfaceExplanation4, obj6);
+  } else if (applicationId(top[9]).FrameLifecycleState.NoApplication === state) {
+    const obj7 = { description: intl4.string(applicationId(top[21]).t.izggZO) };
+    const FrameSurfaceExplanation3 = tmp8(tmp2[20]).FrameSurfaceExplanation;
+    intl4 = tmp8(tmp2[21]).intl;
+    return id(FrameSurfaceExplanation3, obj7);
+  } else if (applicationId(top[9]).FrameLifecycleState.DoesNotSupportSurface === state) {
+    const obj8 = { description: intl3.string(applicationId(top[21]).t["iUWcU/"]) };
+    const FrameSurfaceExplanation2 = tmp8(tmp2[20]).FrameSurfaceExplanation;
+    intl3 = tmp8(tmp2[21]).intl;
+    return id(FrameSurfaceExplanation2, obj8);
+  } else if (applicationId(top[9]).FrameLifecycleState.Error === state) {
+    const obj9 = { heading: intl.string(applicationId(top[21]).t.VquUff), error: intl2.string(applicationId(top[21]).t["Sd9D/R"]) };
+    const FrameSurfaceExplanation = tmp8(tmp2[20]).FrameSurfaceExplanation;
+    intl = tmp8(tmp2[21]).intl;
+    intl2 = tmp8(tmp2[21]).intl;
+    return id(FrameSurfaceExplanation, obj9);
   } else {
-    return id(headerVisible(bottom[17]).FrameSurfaceLoading, {});
+    return id(applicationId(top[20]).FrameSurfaceLoading, {});
   }
 }
 function ClosedAppChannel(arg0) {
@@ -132,7 +149,7 @@ function ClosedAppChannel(arg0) {
   let onLaunch;
   let tmp4Result;
   ({ applicationId, onLaunch } = arg0);
-  const tmp = closure_7();
+  const tmp = closure_8();
   const obj = ApplicationActionCreators;
   const data = obj.useApplication(applicationId).data;
   let icon;
@@ -154,21 +171,21 @@ function ClosedAppChannel(arg0) {
     }
     tmp4Result = null;
     if (null != conjureProjectId) {
-      const obj7 = { style: tmp.icon, children: hasOwnProperty(ConjureAppIconTileDefault, obj8) };
+      const obj7 = { style: tmp.icon, children: metroRequire(ConjureAppIconTileDefault, obj8) };
       obj8 = { applicationId: null, name: null, size: 64 };
       ({ id: obj3.applicationId, name: obj3.name } = data);
       tmp4Result = tmp4(View, obj7);
     }
   }
-  const obj14 = { icon: tmp4Result, heading: name, action: hasOwnProperty(Button, obj15) };
+  const obj14 = { icon: tmp4Result, heading: name, action: metroRequire(Button, obj15) };
   name = undefined;
   if (data != null) {
     name = data.name;
   }
   obj15 = { text: intl.string(intl6.t.PPYvuv), onPress: onLaunch };
-  Button = tmp2(5634).Button;
+  Button = tmp2(5758).Button;
   intl = tmp2(1113).intl;
-  return hasOwnProperty(FrameSurfaceExplanation, obj14);
+  return metroRequire(FrameSurfaceExplanation, obj14);
 }
 function AppChannel(arg0) {
   let applicationId;
@@ -201,13 +218,14 @@ function AppChannel(arg0) {
   return tmp4Result;
 }
 const View = react_native.View;
-({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
+let closure_5 = ConjureFrameUpdateStore.useConjureFrameUpdateAvailable;
+({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let createStyles = createStyles_mod;
 let obj = { icon: size };
 size = { width: 64, height: 64, borderRadius: nativeDefault.radii.lg, overflow: "hidden" };
-let closure_7 = createStyles.createStyles(obj);
+let closure_8 = createStyles.createStyles(obj);
 createStyles = createStyles_mod;
-let closure_8 = createStyles.createStyles((paddingBottom) => {
+let closure_9 = createStyles.createStyles((paddingBottom) => {
   const obj = { container: obj2 };
   return obj;
 });
@@ -232,13 +250,13 @@ export default function ConnectedAppChannel(channel) {
     result = tmpResult2.renderChannelContentGate(channelContentGate);
   } else if (null == application_id) {
     const obj2 = { heading: intl.string(intl6.t.tU5fiM), description: intl2.string(intl6.t.E94mJf) };
-    const FrameSurfaceExplanation = tmp(18673).FrameSurfaceExplanation;
+    const FrameSurfaceExplanation = tmp(19036).FrameSurfaceExplanation;
     intl = tmp(1113).intl;
     intl2 = tmp(1113).intl;
-    result = hasOwnProperty(FrameSurfaceExplanation, obj2);
+    result = metroRequire(FrameSurfaceExplanation, obj2);
   } else {
     const obj3 = { applicationId: application_id, channel };
-    result = hasOwnProperty(AppChannel, obj3);
+    result = metroRequire(AppChannel, obj3);
   }
   return result;
 };

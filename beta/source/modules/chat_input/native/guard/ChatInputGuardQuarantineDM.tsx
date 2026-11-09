@@ -1,13 +1,13 @@
-// Module ID: 14024
-// Function ID: 14025
+// Module ID: 14263
+// Function ID: 14264
 // Name: ChatInputGuardQuarantineDM
-// Dependencies: [19, 14025, 21, 14021, 14026, 1113, 2]
+// Dependencies: [19, 14264, 21, 14260, 14265, 1113, 2]
 
-// Module 14024 (ChatInputGuardQuarantineDM)
+// Module 14263 (ChatInputGuardQuarantineDM)
 import Fragment from "Fragment" /* 21 */;
 import intl3 from "intl" /* 1113 */;
-import ChatInputGuardDefault from "ChatInputGuard" /* 14021 */;
-import QuarantineConstants from "QuarantineConstants" /* 14025 */;
+import ChatInputGuardDefault from "ChatInputGuard" /* 14260 */;
+import QuarantineConstants from "QuarantineConstants" /* 14264 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -1,19 +1,19 @@
-// Module ID: 19643
-// Function ID: 19644
+// Module ID: 20053
+// Function ID: 20054
 // Name: Overview
-// Dependencies: [19, 17, 4857, 1383, 1072, 21, 5014, 575, 2061, 504, 7071, 1497, 6022, 5634, 1113, 19371, 1282, 7152, 1498, 5624, 17529, 2]
+// Dependencies: [19, 17, 4983, 1385, 1072, 21, 5140, 575, 2185, 504, 7137, 1499, 6154, 5758, 1113, 19775, 1282, 7214, 1500, 5751, 17861, 2]
 // Exports: default
 
-// Module 19643 (Overview)
+// Module 20053 (Overview)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import react from "react" /* 19 */;
-import UserRequiredActionStore from "UserRequiredActionStore" /* 4857 */;
-import UserStore from "UserStore" /* 1383 */;
+import UserRequiredActionStore from "UserRequiredActionStore" /* 4983 */;
+import UserStore from "UserStore" /* 1385 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
-import HelpdeskUtils from "HelpdeskUtils" /* 2061 */;
+import createStyles_mod from "createStyles" /* 5140 */;
+import HelpdeskUtils from "HelpdeskUtils" /* 2185 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -134,7 +134,7 @@ export default function Overview() {
   const Text = require("Text/Text").Text;
   intl = require("intl").intl;
   items2 = [closure_10(Text, obj5), , ];
-  const obj6 = { variant: "text-sm/medium", style: tmp.body, children: intl2.format(require("intl").t["0rqMV5"], obj7) };
+  const obj6 = { variant: "body-sm/medium", style: tmp.body, children: intl2.format(require("intl").t["0rqMV5"], obj7) };
   const Text2 = require("Text/Text").Text;
   intl2 = require("intl").intl;
   obj7 = { helpCenterURL };

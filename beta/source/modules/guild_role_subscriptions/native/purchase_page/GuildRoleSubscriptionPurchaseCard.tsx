@@ -1,30 +1,27 @@
-// Module ID: 18623
-// Function ID: 18624
+// Module ID: 18984
+// Function ID: 18985
 // Name: GuildRoleSubscriptionPurchaseCard
-// Dependencies: [32, 19, 17, 21, 5014, 575, 7148, 1625, 17211, 18618, 5272, 5624, 1187, 18624, 5275, 1113, 17221, 2]
+// Dependencies: [32, 19, 17, 21, 5140, 575, 1627, 17537, 18979, 5388, 5751, 1187, 18985, 5392, 1113, 17547, 2]
 // Exports: default
 
-// Module 18623 (GuildRoleSubscriptionPurchaseCard)
+// Module 18984 (GuildRoleSubscriptionPurchaseCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1625 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5272 */;
-import BottomSheetModal from "BottomSheetModal" /* 5275 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7148 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 17211 */;
-import GuildRoleSubscriptionCard from "GuildRoleSubscriptionCard" /* 17221 */;
-import Elements from "Elements" /* 18618 */;
-import SubscribeButtonDefault from "SubscribeButton" /* 18624 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5388 */;
+import BottomSheetModal from "BottomSheetModal" /* 5392 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 17537 */;
+import GuildRoleSubscriptionCard from "GuildRoleSubscriptionCard" /* 17547 */;
+import Elements from "Elements" /* 18979 */;
+import SubscribeButtonDefault from "SubscribeButton" /* 18985 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
-
-let BottomSheet;
 
 let metroImportDefault;
 let metroRequire;
@@ -51,42 +48,38 @@ export default function GuildRoleSubscriptionPurchaseCard(listingId) {
   let items1;
   let items2;
   let items3;
-  let items4;
-  let obj12;
-  let obj6;
+  let obj11;
+  let obj5;
   listingId = listingId.listingId;
   const guildId = listingId.guildId;
-  const obj = useTypeConsolidationTextTransform;
-  const typeConsolidationTextTransform = obj.useTypeConsolidationTextTransform("PurchaseCard");
-  const tmp2 = closure_8();
+  const tmp = closure_8();
   const bottom = useSafeAreaInsetsDefault().bottom;
+  const obj = GuildRoleSubscriptionListingEditStateUtilsAll;
+  const first = _slicedToArray(obj.useDescription(listingId), 1)[0];
   const obj2 = GuildRoleSubscriptionListingEditStateUtilsAll;
-  const first = _slicedToArray(obj2.useDescription(listingId), 1)[0];
-  const obj3 = GuildRoleSubscriptionListingEditStateUtilsAll;
-  const first1 = _slicedToArray(obj3.useName(listingId), 1)[0];
-  const obj4 = Elements;
-  const formattedSubscriptionPlan = obj4.useFormattedSubscriptionPlan(listingId);
-  const obj5 = { scrollable: true, startExpanded: true, children: metroImportDefault(View, obj6) };
-  obj6 = { style: tmp2.container, children: items2 };
-  const obj7 = { style: tmp2.header, children: items1 };
-  const obj8 = { style: tmp2.headerText, children: items };
-  BottomSheet = Sheet_BottomSheet.BottomSheet;
-  items = [metroRequire(Text_Text.Text, { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: first1 }), , ];
-  const obj9 = { style: tmp2.headerDot };
-  items[1] = metroRequire(View, obj9);
-  items[2] = metroRequire(Text_Text.Text, { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: formattedSubscriptionPlan });
-  items1 = [metroImportDefault(View, obj8), metroRequire(native.Spacer, { size: 16 }), metroRequire(Elements.TruncatedText, { variant: "text-sm/normal", color: "text-default", lineClamp: 2, children: first }), metroRequire(native.Spacer, { size: 24 }), metroRequire(SubscribeButtonDefault, { listingId })];
-  items2 = [metroImportDefault(View, obj7), , ];
-  const obj10 = { style: tmp2.seperator };
-  items2[1] = metroRequire(View, obj10);
-  const obj11 = { scrollsToTop: false, style: tmp2.content, contentContainerStyle: obj12, children: items4 };
-  obj12 = { paddingBottom: 16 + bottom };
+  const first1 = _slicedToArray(obj2.useName(listingId), 1)[0];
+  const obj3 = Elements;
+  const formattedSubscriptionPlan = obj3.useFormattedSubscriptionPlan(listingId);
+  const obj4 = { scrollable: true, startExpanded: true, children: metroImportDefault(View, obj5) };
+  obj5 = { style: tmp.container, children: items2 };
+  const obj6 = { style: tmp.header, children: items1 };
+  const obj7 = { style: tmp.headerText, children: items };
+  const BottomSheet = Sheet_BottomSheet.BottomSheet;
+  items = [metroRequire(Text_Text.Text, { variant: "heading-sm/semibold", color: "mobile-text-heading-primary", children: first1 }), , ];
+  const obj8 = { style: tmp.headerDot };
+  items[1] = metroRequire(View, obj8);
+  items[2] = metroRequire(Text_Text.Text, { variant: "heading-sm/semibold", color: "mobile-text-heading-primary", children: formattedSubscriptionPlan });
+  items1 = [metroImportDefault(View, obj7), metroRequire(native.Spacer, { size: 16 }), metroRequire(Elements.TruncatedText, { variant: "body-sm/normal", color: "text-default", lineClamp: 2, children: first }), metroRequire(native.Spacer, { size: 24 }), metroRequire(SubscribeButtonDefault, { listingId })];
+  items2 = [metroImportDefault(View, obj6), , ];
+  const obj9 = { style: tmp.seperator };
+  items2[1] = metroRequire(View, obj9);
+  const obj10 = { scrollsToTop: false, style: tmp.content, contentContainerStyle: obj11, children: items3 };
+  obj11 = { paddingBottom: 16 + bottom };
   const BottomSheetScrollView = BottomSheetModal.BottomSheetScrollView;
-  const obj13 = { variant: "text-sm/bold", color: "text-default", style: items3, children: intl.string(intl2.t.UdEvUi) };
-  items3 = [{ textTransform: "uppercase" }, typeConsolidationTextTransform];
+  const obj12 = { variant: "body-sm/semibold", color: "text-default", children: intl.string(intl2.t.UdEvUi) };
   const Text = Text_Text.Text;
   intl = intl2.intl;
-  items4 = [metroRequire(Text, obj13), metroRequire(native.Spacer, { size: 24 }), metroRequire(GuildRoleSubscriptionCard.Content, { listingId, guildId })];
-  items2[2] = metroImportDefault(BottomSheetScrollView, obj11);
-  return metroRequire(BottomSheet, obj5);
+  items3 = [metroRequire(Text, obj12), metroRequire(native.Spacer, { size: 24 }), metroRequire(GuildRoleSubscriptionCard.Content, { listingId, guildId })];
+  items2[2] = metroImportDefault(BottomSheetScrollView, obj10);
+  return metroRequire(BottomSheet, obj4);
 };

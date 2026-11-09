@@ -1,19 +1,19 @@
-// Module ID: 20090
-// Function ID: 20091
+// Module ID: 20498
+// Function ID: 20499
 // Name: AgeVerificationScreen
-// Dependencies: [19, 17, 1383, 1072, 21, 5014, 1266, 20083, 504, 8165, 20076, 1992, 6729, 20086, 7974, 1113, 2836, 3096, 7955, 2061, 15868, 6740, 5624, 8167, 2]
+// Dependencies: [19, 17, 1385, 1072, 21, 5140, 1266, 20491, 504, 8235, 20485, 2116, 6784, 20494, 8044, 1113, 2960, 3252, 8024, 2185, 16185, 6795, 5751, 8237, 2]
 // Exports: default
 
-// Module 20090 (AgeVerificationScreen)
+// Module 20498 (AgeVerificationScreen)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
-import Server from "Server" /* 1992 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6729 */;
-import types from "types" /* 20076 */;
+import Server from "Server" /* 2116 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6784 */;
+import types from "types" /* 20485 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1383 */;
-import createStyles from "createStyles" /* 5014 */;
+import UserStore from "UserStore" /* 1385 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 const Pressable = react_native.Pressable;
@@ -71,11 +71,11 @@ export default function AgeVerificationScreen() {
       const openUrl = onTaskComplete(stateFromStores[18]).openUrl;
       onTaskComplete(stateFromStores[18]);
       const obj = onTaskComplete(stateFromStores[19]);
-      openUrl(obj.getArticleURL(constants.TIGGER_PAWTECT_LEARN_MORE));
+      openUrl(obj.getArticleURL(constants.AGE_VERIFICATION_LEARN_MORE));
     }
   };
   const ModalDisclaimer = memo(stateFromStores[20]).ModalDisclaimer;
-  ({ variant: "text-sm/medium", color: "text-link", style: tmp2.helpLink, children: intl3.string(memo(stateFromStores[15]).t["2jxGer"]) });
+  ({ variant: "body-sm/medium", color: "text-link", style: tmp2.helpLink, children: intl3.string(memo(stateFromStores[15]).t["2jxGer"]) });
   const Text = memo(stateFromStores[22]).Text;
   intl3 = memo(stateFromStores[15]).intl;
   return <tmp8 ImageComponent={null} title={intl.string(onTaskComplete(stateFromStores[16])["dSkE/A"])} subtitle={intl2.format(onTaskComplete(stateFromStores[17]).RpMIT0, obj5)} footer={null} submitting={loading}>{null}</tmp8>;

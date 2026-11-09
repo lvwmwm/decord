@@ -1,22 +1,20 @@
-// Module ID: 17099
-// Function ID: 17100
+// Module ID: 17426
+// Function ID: 17427
 // Name: VideoQuestModal
-// Dependencies: [32, 19, 17, 17067, 1072, 21, 5014, 575, 17100, 14705, 7862, 17068, 8841, 5095, 5637, 1625, 7241, 17101, 7292, 17104, 17129, 9678, 9681, 14699, 6784, 11482, 2]
+// Dependencies: [32, 19, 17, 17393, 1072, 21, 5140, 575, 17427, 14941, 7939, 17394, 8915, 1652, 5761, 1627, 17428, 7355, 17431, 17456, 9769, 9772, 14935, 6839, 11627, 2]
 
-// Module 17099 (VideoQuestModal)
+// Module 17426 (VideoQuestModal)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
-import spring from "spring" /* 5637 */;
-import AnalyticsActions from "AnalyticsActions" /* 7862 */;
-import QuestUtils from "QuestUtils" /* 9678 */;
-import applyOrientationLock2 from "applyOrientationLock" /* 14705 */;
-import QuestDockConstants from "QuestDockConstants" /* 17067 */;
+import AnalyticsActions from "AnalyticsActions" /* 7939 */;
+import QuestUtils from "QuestUtils" /* 9769 */;
+import applyOrientationLock2 from "applyOrientationLock" /* 14941 */;
+import QuestDockConstants from "QuestDockConstants" /* 17393 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -43,28 +41,41 @@ obj4 = { borderRadius: nativeDefault.radii.lg, backgroundColor: nativeDefault.co
 const merged = Object.assign(StyleSheet.absoluteFillObject);
 obj5 = { borderRadius: nativeDefault.radii.lg, flex: 1, overflow: "hidden", pointerEvents: "none", zIndex: 1 };
 const merged1 = Object.assign(StyleSheet.absoluteFillObject);
-let top = createStyles(obj2);
-const __initData = { code: "function VideoQuestModalTsx1(){const{withSpring,clamp,postWatchAnimationState,BACKGROUND_ENTRANCE_ANIMATION_SPRING_CONFIG,interpolate,CLOUDS_BACKGROUND_INVISIBLE_OFFSET_Y}=this.__closure;return{opacity:withSpring(clamp(postWatchAnimationState.get(),0,1),BACKGROUND_ENTRANCE_ANIMATION_SPRING_CONFIG),transform:[{translateY:withSpring(interpolate(postWatchAnimationState.get(),[0,1],[CLOUDS_BACKGROUND_INVISIBLE_OFFSET_Y,0]),BACKGROUND_ENTRANCE_ANIMATION_SPRING_CONFIG)}]};}" };
-const __initData2 = { code: "function VideoQuestModalTsx2(){const{withSpring,interpolate,postWatchAnimationState,safeAreaInsets,BACKGROUND_ENTRANCE_ANIMATION_SPRING_CONFIG}=this.__closure;return{transform:[{translateY:withSpring(interpolate(postWatchAnimationState.get(),[0,1],[safeAreaInsets.top,0]),BACKGROUND_ENTRANCE_ANIMATION_SPRING_CONFIG)}],opacity:withSpring(postWatchAnimationState.get(),BACKGROUND_ENTRANCE_ANIMATION_SPRING_CONFIG)};}" };
+let closure_12 = createStyles(obj2);
+let closure_13 = { code: "(function VideoQuestModalTsx1(){let[withSpring,clamp,postWatchAnimationState,BACKGROUND_ENTRANCE_ANIMATION_SPRING_CONFIG,interpolate,CLOUDS_BACKGROUND_INVISIBLE_OFFSET_Y]=this.__closure;return{opacity:withSpring(clamp(postWatchAnimationState.get(),0,1),BACKGROUND_ENTRANCE_ANIMATION_SPRING_CONFIG),transform:[{translateY:withSpring(interpolate(postWatchAnimationState.get(),[0,1],[CLOUDS_BACKGROUND_INVISIBLE_OFFSET_Y,0]),BACKGROUND_ENTRANCE_ANIMATION_SPRING_CONFIG)}]};})" };
+let closure_14 = { code: "(function VideoQuestModalTsx2(){let[withSpring,interpolate,postWatchAnimationState,safeAreaInsets,BACKGROUND_ENTRANCE_ANIMATION_SPRING_CONFIG]=this.__closure;return{transform:[{translateY:withSpring(interpolate(postWatchAnimationState.get(),[0,1],[safeAreaInsets.top,0]),BACKGROUND_ENTRANCE_ANIMATION_SPRING_CONFIG)}],opacity:withSpring(postWatchAnimationState.get(),BACKGROUND_ENTRANCE_ANIMATION_SPRING_CONFIG)};})" };
 let closure_15 = react.memo(function VideoQuestModalContent(sourceQuestContent) {
+  let View;
   let closure_4;
   let height;
   let initialStep;
   let items10;
   let items11;
   let items12;
-  let items5;
-  let items6;
-  let items7;
-  let items8;
+  let items13;
+  let items14;
+  let items15;
+  let items16;
   let items9;
-  let obj12;
-  let obj6;
+  let obj10;
+  let obj4;
   let onClose;
   let quest;
   let sharedValue;
   let tmp11;
-  let tmp14Result;
+  let tmp27;
+  let tmp28;
+  let tmp29;
+  let tmp30;
+  let tmp31;
+  let tmp32;
+  let tmp33;
+  let tmp37;
+  let tmp38;
+  let tmp39;
+  let tmp40;
+  let tmp41;
+  let tmp42;
   let width;
   ({ onClose, initialStep } = sourceQuestContent);
   sourceQuestContent = sourceQuestContent.sourceQuestContent;
@@ -108,7 +119,7 @@ let closure_15 = react.memo(function VideoQuestModalContent(sourceQuestContent) 
     obj.trackQuestEvent(obj2);
   }, items);
   const windowDimensions = obj2.useContext(tmp(tmp2[11]).QuestDockGestureContext).windowDimensions;
-  const tmp13 = top();
+  const tmp13 = closure_12();
   const pillarboxed = tmp13;
   const tmp15 = sourceQuestContent(tmp2[12])(windowDimensions);
   ({ width, height } = tmp15);
@@ -155,58 +166,71 @@ let closure_15 = react.memo(function VideoQuestModalContent(sourceQuestContent) 
     num2 = 1;
   }
   sharedValue = useSharedValue(num2);
-  const tmpResult3 = tmp(tmp2[13]);
-  class U {
-    constructor() {
-      let items;
-      let obj2;
-      let obj4;
-      let withSpring;
-      let withSpring2;
-      const obj = { opacity: withSpring(obj2.clamp(sharedValue.get(), 0, 1), closure_10), transform: items };
-      withSpring = spring.withSpring;
-      spring;
-      obj2 = ReanimatedRexport;
-      const obj3 = { translateY: withSpring2(obj4.interpolate(sharedValue.get(), [0, 1], [-100, 0]), closure_10) };
-      withSpring2 = spring.withSpring;
-      spring;
-      items = [obj3];
-      obj4 = ReanimatedRexport;
-      return obj;
-    }
-  }
-  let obj3 = { withSpring: tmp(tmp2[14]).withSpring, clamp: tmp(tmp2[13]).clamp, postWatchAnimationState: sharedValue, BACKGROUND_ENTRANCE_ANIMATION_SPRING_CONFIG: bound, interpolate: tmp(tmp2[13]).interpolate, CLOUDS_BACKGROUND_INVISIBLE_OFFSET_Y: -100 };
-  U.__closure = obj3;
-  U.__workletHash = 11571705142399;
-  U.__initData = __initData;
-  const animatedStyle = tmpResult3.useAnimatedStyle(U);
-  const tmp26 = sourceQuestContent(tmp2[15])();
-  top = tmp26;
-  const tmpResult4 = tmp(tmp2[13]);
-  class F {
+  const items4 = [closure_13, , , , , , ];
+  const useAnimatedStyle = tmp(tmp2[13]).useAnimatedStyle;
+  tmp(tmp2[13]);
+  items4[1] = tmp(tmp2[14]).withSpring;
+  items4[2] = tmp(tmp2[13]).clamp;
+  items4[3] = sharedValue;
+  items4[4] = bound;
+  items4[5] = tmp(tmp2[13]).interpolate;
+  items4[6] = -100;
+  let c0;
+  let c1;
+  let c2;
+  let c3;
+  let c4;
+  let c5;
+  [tmp27, tmp28, tmp29, tmp30, tmp31, tmp32, tmp33] = items4;
+  const tmp26 = bound;
+  class VideoQuestModalTsx1 {
     constructor() {
       let items;
       let items1;
-      let obj3;
-      let obj4;
-      let withSpring;
-      const obj = { transform: items1, opacity: obj4.withSpring(sharedValue.get(), closure_10) };
-      const obj2 = { translateY: withSpring(obj3.interpolate(sharedValue.get(), [0, 1], items), closure_10) };
-      withSpring = spring.withSpring;
-      spring;
-      items = [top.top, 0];
+      const obj = { opacity: _undefined(_undefined2(_undefined3.get(), 0, 1), c3), transform: items1 };
+      const obj2 = { translateY: _undefined(_undefined4(_undefined3.get(), [0, 1], items), c3) };
+      items = [c5, 0];
       items1 = [obj2];
-      obj3 = ReanimatedRexport;
-      obj4 = spring;
       return obj;
     }
   }
-  let obj4 = { withSpring: tmp(tmp2[14]).withSpring, interpolate: tmp(tmp2[13]).interpolate, postWatchAnimationState: sharedValue, safeAreaInsets: tmp26, BACKGROUND_ENTRANCE_ANIMATION_SPRING_CONFIG: bound };
-  F.__closure = obj4;
-  F.__workletHash = 9769051401109;
-  F.__initData = __initData2;
-  const items4 = [sharedValue, first];
-  const animatedStyle1 = tmpResult4.useAnimatedStyle(F);
+  const items5 = [tmp28, tmp29, tmp30, tmp31, tmp32, tmp33];
+  VideoQuestModalTsx1.__closure = items5;
+  VideoQuestModalTsx1.__workletHash = 9188931787878;
+  VideoQuestModalTsx1.__initData = tmp27;
+  const animatedStyle = useAnimatedStyle(VideoQuestModalTsx1);
+  const tmp35 = sourceQuestContent(tmp2[15])();
+  const items6 = [closure_14, , , , , ];
+  const useAnimatedStyle2 = tmp(tmp2[13]).useAnimatedStyle;
+  tmp(tmp2[13]);
+  items6[1] = tmp(tmp2[14]).withSpring;
+  items6[2] = tmp(tmp2[13]).interpolate;
+  items6[3] = sharedValue;
+  items6[4] = tmp35;
+  items6[5] = tmp26;
+  c0 = undefined;
+  c1 = undefined;
+  c2 = undefined;
+  c3 = undefined;
+  c4 = undefined;
+  [tmp37, tmp38, tmp39, tmp40, tmp41, tmp42] = items6;
+  class VideoQuestModalTsx2 {
+    constructor() {
+      let items;
+      let items1;
+      const obj = { transform: items1, opacity: _undefined(_undefined3.get(), c4) };
+      const obj2 = { translateY: _undefined(_undefined2(_undefined3.get(), [0, 1], items), c4) };
+      items = [_undefined4.top, 0];
+      items1 = [obj2];
+      return obj;
+    }
+  }
+  const items7 = [tmp38, tmp39, tmp40, tmp41, tmp42];
+  VideoQuestModalTsx2.__closure = items7;
+  VideoQuestModalTsx2.__workletHash = 10709421427500;
+  VideoQuestModalTsx2.__initData = tmp37;
+  const items8 = [sharedValue, first];
+  const animatedStyle2 = useAnimatedStyle2(VideoQuestModalTsx2);
   const effect = obj2.useEffect(() => {
     let num = 0;
     set = sharedValue.set;
@@ -214,46 +238,45 @@ let closure_15 = react.memo(function VideoQuestModalContent(sourceQuestContent) 
       num = 1;
     }
     const result = set(num);
-  }, items4);
-  const obj5 = { style: tmp13.root, children: pillarboxed(tmp14Result, obj6) };
-  obj6 = { style: items5, children: items10 };
-  items5 = [tmp13.modalContentWrapper, memo];
-  const obj7 = { style: items6, children: items8 };
-  items6 = [tmp13.backgroundWrapper, { height }];
-  const obj8 = { style: items7 };
-  items7 = [tmp13.contentBackground, { top: tmp26.top }];
-  items8 = [, , ];
-  tmp14Result = sourceQuestContent(tmp2[16]);
-  items8[0] = setIsFullscreen(sourceQuestContent(tmp2[16]), obj8);
-  const obj9 = { style: items9 };
-  items9 = [tmp13.contentBackground, animatedStyle1];
-  items8[1] = setIsFullscreen(sourceQuestContent(tmp2[16]), obj9);
-  const obj10 = { style: animatedStyle, children: setIsFullscreen(sourceQuestContent(tmp2[17]), { align: "top" }) };
-  const tmp14Result3 = sourceQuestContent(tmp2[16]);
-  items8[2] = setIsFullscreen(tmp14Result3, obj10);
-  items10 = [pillarboxed(first, obj7), ];
-  const obj11 = { top: true, style: items11, children: pillarboxed(first, obj12) };
-  items11 = [tmp13.wrapper, { height }];
-  let tmp29Result = first === tmp23.WATCH_VIDEO;
-  obj12 = { style: tmp13.contentWrapper, children: items12 };
-  const SafeAreaPaddingView = tmp(tmp2[18]).SafeAreaPaddingView;
-  if (tmp29Result) {
-    const tmp14Result4 = sourceQuestContent(tmp2[19]);
+  }, items8);
+  let obj3 = { style: tmp13.root, children: pillarboxed(View, obj4) };
+  obj4 = { style: items9, children: items14 };
+  items9 = [tmp13.modalContentWrapper, memo];
+  const obj5 = { style: items10, children: items12 };
+  items10 = [tmp13.backgroundWrapper, { height }];
+  View = tmp14(tmp2[13]).View;
+  const obj6 = { style: items11 };
+  items11 = [tmp13.contentBackground, { top: tmp35.top }];
+  items12 = [setIsFullscreen(sourceQuestContent(tmp2[13]).View, obj6), , ];
+  const obj7 = { style: items13 };
+  items13 = [tmp13.contentBackground, animatedStyle2];
+  items12[1] = setIsFullscreen(sourceQuestContent(tmp2[13]).View, obj7);
+  const obj8 = { style: animatedStyle, children: setIsFullscreen(sourceQuestContent(tmp2[16]), { align: "top" }) };
+  const View2 = tmp14(tmp2[13]).View;
+  items12[2] = setIsFullscreen(View2, obj8);
+  items14 = [pillarboxed(first, obj5), ];
+  const obj9 = { top: true, style: items15, children: pillarboxed(first, obj10) };
+  items15 = [tmp13.wrapper, { height }];
+  let tmp45Result = first === tmp23.WATCH_VIDEO;
+  obj10 = { style: tmp13.contentWrapper, children: items16 };
+  const SafeAreaPaddingView = tmp(tmp2[17]).SafeAreaPaddingView;
+  if (tmp45Result) {
+    const tmp14Result = sourceQuestContent(tmp2[18]);
     if (bound == null) {
       bound = width;
     }
-    const obj13 = { contentWidth: bound, isFullscreen: tmp11, onNavigateToPostWatchVideo: callback2, onClose, onEnd: callback2, setIsFullscreen, sourceQuestContent };
-    tmp29Result = tmp29(tmp14Result4, obj13);
+    const obj11 = { contentWidth: bound, isFullscreen: tmp11, onNavigateToPostWatchVideo: callback2, onClose, onEnd: callback2, setIsFullscreen, sourceQuestContent };
+    tmp45Result = tmp45(tmp14Result, obj11);
   }
-  items12 = [tmp29Result, ];
-  let tmp29Result2 = first === tmp23.POST_WATCH_VIDEO;
-  if (tmp29Result2) {
-    const obj14 = { onClose, onRestartVideo: callback1, sourceQuestContent };
-    tmp29Result2 = tmp29(tmp14(tmp2[20]), obj14);
+  items16 = [tmp45Result, ];
+  let tmp45Result2 = first === tmp23.POST_WATCH_VIDEO;
+  if (tmp45Result2) {
+    const obj12 = { onClose, onRestartVideo: callback1, sourceQuestContent };
+    tmp45Result2 = tmp45(tmp14(tmp2[19]), obj12);
   }
-  items12[1] = tmp29Result2;
-  items10[1] = setIsFullscreen(SafeAreaPaddingView, obj11);
-  return setIsFullscreen(first, obj5);
+  items16[1] = tmp45Result2;
+  items14[1] = setIsFullscreen(SafeAreaPaddingView, obj9);
+  return setIsFullscreen(first, obj3);
 });
 const watch_mobile_video_quest = "watch_mobile_video_quest";
 const memoResult = react.memo(function VideoQuestModal(questContentPosition) {
@@ -270,7 +293,7 @@ const memoResult = react.memo(function VideoQuestModal(questContentPosition) {
     onClose();
   }, items);
   let tmp2 = questContentPosition;
-  let obj = questContentPosition(videoSessionId[22]);
+  let obj = questContentPosition(videoSessionId[21]);
   const nonNullableQuest = obj.useNonNullableQuest(questId, callback);
   const items1 = [nonNullableQuest, videoSessionId];
   const memo = sourceQuestContent.useMemo(() => {
@@ -306,7 +329,7 @@ const memoResult = react.memo(function VideoQuestModal(questContentPosition) {
                 QuestDockGestureContextProvider = questContentPosition(videoSessionId[11]).QuestDockGestureContextProvider;
                 obj3 = {
                   overrideVisibility: true,
-                  questContent: questContentPosition(videoSessionId[24]).QuestContent.VIDEO_MODAL_MOBILE,
+                  questContent: questContentPosition(videoSessionId[23]).QuestContent.VIDEO_MODAL_MOBILE,
                   questOrQuests,
                   questContentPosition,
                   sourceQuestContent,
@@ -315,7 +338,7 @@ const memoResult = react.memo(function VideoQuestModal(questContentPosition) {
                     return closure_2_8(closure_2_15, obj);
                   }
                 };
-                BillableAdPlacementImpressionTrackerNative = questContentPosition(videoSessionId[23]).BillableAdPlacementImpressionTrackerNative;
+                BillableAdPlacementImpressionTrackerNative = questContentPosition(videoSessionId[22]).BillableAdPlacementImpressionTrackerNative;
                 return closure_2_8(Provider, obj);
               }
         };
@@ -336,7 +359,7 @@ const memoResult = react.memo(function VideoQuestModal(questContentPosition) {
     tmp8 = null;
     if (null != memo1) {
       let obj2 = { hideTitle: true, initialRouteName: watch_mobile_video_quest, screens: memo1 };
-      tmp8 = closure_8(tmp2(tmp3[25]).Modal, obj2);
+      tmp8 = closure_8(tmp2(tmp3[24]).Modal, obj2);
     }
   }
   return tmp8;

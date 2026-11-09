@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1119 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/age_assurance", scales: [1], hash: "f8d8279c5e67a7e4894442313f6ba66e", name: "AgeAssurance.compiled.messages", type: "jsona" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9nYW1lX3NlcnZlcg==", scales: [1], hash: "574c71ece1f5206302b9cccc2e5cb542", name: "es-419.messages.574c71ece1f5206302b9cccc2e5cb542.compiled.messages", type: "jsona" });

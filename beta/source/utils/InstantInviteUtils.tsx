@@ -1,22 +1,22 @@
-// Module ID: 9120
-// Function ID: 9121
+// Module ID: 9200
+// Function ID: 9201
 // Name: InstantInviteUtils
-// Dependencies: [4862, 4863, 4926, 6842, 4956, 1383, 7395, 1072, 6779, 7880, 9121, 1113, 2]
+// Dependencies: [4988, 4989, 5052, 6897, 5082, 1385, 7459, 1072, 6834, 7957, 9201, 1113, 2]
 // Exports: generateRowsForQuery, getMostRecentDMedUser, getUsersAlreadyJoined, groupInviteSuggestions, maxAgeString, urgentShareMessageString
 
-// Module 9120 (InstantInviteUtils)
+// Module 9200 (InstantInviteUtils)
 import Constants from "Constants" /* 1072 */;
 import intl6 from "intl" /* 1113 */;
-import AutocompleteUtilsDefault from "AutocompleteUtils" /* 6779 */;
-import InviteTargetTypes from "InviteTargetTypes" /* 7880 */;
-import utils_InstantInviteUtils from "utils/InstantInviteUtils" /* 9121 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4862 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
-import GuildMemberStore from "GuildMemberStore" /* 4926 */;
-import ReadStateStore from "ReadStateStore" /* 6842 */;
-import RelationshipStore from "RelationshipStore" /* 4956 */;
-import UserStore from "UserStore" /* 1383 */;
-import PrivateChannelSortStore from "PrivateChannelSortStore" /* 7395 */;
+import AutocompleteUtilsDefault from "AutocompleteUtils" /* 6834 */;
+import InviteTargetTypes from "InviteTargetTypes" /* 7957 */;
+import utils_InstantInviteUtils from "utils/InstantInviteUtils" /* 9201 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4988 */;
+import ChannelStore from "ChannelStore" /* 4989 */;
+import GuildMemberStore from "GuildMemberStore" /* 5052 */;
+import ReadStateStore from "ReadStateStore" /* 6897 */;
+import RelationshipStore from "RelationshipStore" /* 5082 */;
+import UserStore from "UserStore" /* 1385 */;
+import PrivateChannelSortStore from "PrivateChannelSortStore" /* 7459 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -370,9 +370,9 @@ export function generateRowsForQuery(arg0) {
       _require = undefined;
       importDefault = undefined;
       ({ rows: c0, counts: c1, query: query5, inviteTargetType: inviteTargetType2 } = obj10);
-      if (inviteTargetType2 === tmp39(7880).InviteTargetTypes.EMBEDDED_APPLICATION) {
+      if (inviteTargetType2 === tmp39(7957).InviteTargetTypes.EMBEDDED_APPLICATION) {
         let obj2 = AutocompleteUtilsDefault;
-        const obj12 = { query: query5, limit: 3, guildId: "children" };
+        const obj12 = { query: query5, limit: 3, guildId: "channel" };
         const queryChannelsResult = obj2.queryChannels(obj12);
         let item = queryChannelsResult.forEach((record) => {
           obj = { type: obj.CHANNEL, item: record.record, isSuggested: false, score: record.score };
@@ -553,10 +553,10 @@ export function maxAgeString(maxAge, maxUses) {
     let stringResult;
     const intl4 = intl6.intl;
     if (0 === maxUses) {
-      stringResult = intl4.string(tmp11(1113).t["/WbTXD"]);
+      stringResult = intl4.string(tmp12(1113).t["/WbTXD"]);
     } else {
       const obj2 = { numUses: maxUses };
-      stringResult = intl4.formatToPlainString(tmp11(1113).t.eDRWJK, obj2);
+      stringResult = intl4.formatToPlainString(tmp12(1113).t.eDRWJK, obj2);
     }
     return stringResult;
   } else if (hours === type) {
@@ -589,10 +589,10 @@ export function maxAgeString(maxAge, maxUses) {
     let stringResult1;
     const intl = intl6.intl;
     if (0 === maxUses) {
-      stringResult1 = intl.string(tmp2(1113).t.QrHBnC);
+      stringResult1 = intl.string(tmp3(1113).t.QrHBnC);
     } else {
       obj = { numUses: maxUses };
-      stringResult1 = intl.formatToPlainString(tmp2(1113).t.yJnTxI, obj);
+      stringResult1 = intl.formatToPlainString(tmp3(1113).t.yJnTxI, obj);
     }
     return stringResult1;
   } else {

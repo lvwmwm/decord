@@ -1,33 +1,33 @@
-// Module ID: 9943
-// Function ID: 9944
+// Module ID: 10065
+// Function ID: 10066
 // Name: EmojiPickerUtils
-// Dependencies: [19, 6796, 4885, 6772, 1383, 6799, 1072, 1386, 1228, 1385, 1266, 9944, 5760, 9945, 9947, 9948, 504, 1983, 4964, 1113, 4960, 1252, 12, 1089, 4844, 2]
+// Dependencies: [19, 6851, 5011, 6827, 1385, 6854, 1072, 1388, 1228, 1387, 1266, 10066, 5889, 10067, 10069, 10070, 504, 2107, 5090, 1113, 5086, 1252, 12, 1089, 4970, 2]
 // Exports: getAriaIdForEmojiCategory, getEmojiSubCategory, getSearchPlaceholder, getStringForEmojiCategory, getUnicodeEmojiCategories, initializeSearch, trackEmojiFavorited, trackEmojiFocus, trackEmojiSearchEmpty, trackEmojiSearchResultsViewed, trackEmojiSearchSelect, trackEmojiSearchStart, trackEmojiSelect, trackPremiumSettingsPaneOpened, useEmojiCategories, useEmojiInPriorityOrder, useEmojiSearchResults, useFavoriteEmojis, useFrequentlyUsedEmojis, useFrequentlyUsedReactionEmojis, useIsFavoriteEmoji
 
-// Module 9943 (EmojiPickerUtils)
+// Module 10065 (EmojiPickerUtils)
 import DurationsDefault from "Durations" /* 1089 */;
 import intl13 from "intl" /* 1113 */;
 import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1228 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import v1 from "v1" /* 1266 */;
-import PremiumConstants from "PremiumConstants" /* 1385 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4960 */;
-import EmojiUtilsDefault from "EmojiUtils" /* 4964 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5760 */;
-import ExpressionPickerGridStores from "ExpressionPickerGridStores" /* 9944 */;
+import PremiumConstants from "PremiumConstants" /* 1387 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 5086 */;
+import EmojiUtilsDefault from "EmojiUtils" /* 5090 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5889 */;
+import ExpressionPickerGridStores from "ExpressionPickerGridStores" /* 10066 */;
 import react_mod from "react" /* 19 */;
-import EmojiStore from "EmojiStore" /* 6796 */;
-import GuildStore from "GuildStore" /* 4885 */;
-import SortedGuildStore from "SortedGuildStore" /* 6772 */;
-import UserStore from "UserStore" /* 1383 */;
-import EmojiPickerConstants from "EmojiPickerConstants" /* 6799 */;
+import EmojiStore from "EmojiStore" /* 6851 */;
+import GuildStore from "GuildStore" /* 5011 */;
+import SortedGuildStore from "SortedGuildStore" /* 6827 */;
+import UserStore from "UserStore" /* 1385 */;
+import EmojiPickerConstants from "EmojiPickerConstants" /* 6854 */;
 import Constants from "Constants" /* 1072 */;
-import EmojiConstants from "EmojiConstants" /* 1386 */;
+import EmojiConstants from "EmojiConstants" /* 1388 */;
 import module_12 from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, dependencyMap, importDefault, set;
+let _require, dependencyMap, importDefault, results, set;
 
 let c10;
 let c9;
@@ -48,7 +48,6 @@ const ExpressionPickerViewType = ExpressionPickerConstants.ExpressionPickerViewT
 const PremiumUpsellTypes = PremiumConstants.PremiumUpsellTypes;
 const re21 = /-/g;
 const throttleResult = module_12.throttle((emojiSuggestions) => {
-  let results;
   emojiSuggestions = emojiSuggestions.emojiSuggestions;
   const analyticsLocation = emojiSuggestions.analyticsLocation;
   const obj = { suggestion_type: constants6.EMOJI, suggestion_quantity: emojiSuggestions.results.length, custom_quantity: results.filter((emoji) => null != emoji.emoji.id).length, load_id: emojiSuggestions.loadId, location: analyticsLocation };
@@ -457,7 +456,7 @@ export function trackEmojiSearchSelect(arg0) {
     const merged = Object.assign(obj3);
     let length;
     if (emojiSuggestions != null) {
-      const results = emojiSuggestions.results;
+      results = emojiSuggestions.results;
       if (results != null) {
         length = results.length;
       }

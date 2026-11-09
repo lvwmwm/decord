@@ -1,29 +1,29 @@
-// Module ID: 17812
-// Function ID: 17813
+// Module ID: 18144
+// Function ID: 18145
 // Name: UserSettingsDesignSystemFormPrimitives
-// Dependencies: [32, 19, 17, 1072, 21, 5014, 5624, 7058, 7061, 7060, 7369, 14621, 6974, 6975, 15852, 11950, 8673, 15851, 6027, 2]
+// Dependencies: [32, 19, 17, 1072, 21, 5140, 5751, 7124, 7127, 7126, 7429, 14856, 7037, 7038, 16169, 12116, 8744, 16168, 6159, 2]
 // Exports: default
 
-// Module 17812 (UserSettingsDesignSystemFormPrimitives)
+// Module 18144 (UserSettingsDesignSystemFormPrimitives)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import Stack_Stack from "Stack/Stack" /* 6027 */;
-import TableCheckboxRow from "TableCheckboxRow" /* 6974 */;
-import TableRow2 from "TableRow" /* 6975 */;
-import TableRadioGroup2 from "TableRadioGroup" /* 7058 */;
-import TableRowGroup3 from "TableRowGroup" /* 7060 */;
-import TableRadioRow from "TableRadioRow" /* 7061 */;
-import TableSwitchRow5 from "TableSwitchRow" /* 7369 */;
-import VoiceNormalIcon from "VoiceNormalIcon" /* 8673 */;
-import VoiceXIcon from "VoiceXIcon" /* 11950 */;
-import Checkbox from "Checkbox" /* 14621 */;
-import TableSliderRow from "TableSliderRow" /* 15851 */;
-import Slider2 from "Slider" /* 15852 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import Stack_Stack from "Stack/Stack" /* 6159 */;
+import TableCheckboxRow from "TableCheckboxRow" /* 7037 */;
+import TableRow2 from "TableRow" /* 7038 */;
+import TableRadioGroup2 from "TableRadioGroup" /* 7124 */;
+import TableRowGroup3 from "TableRowGroup" /* 7126 */;
+import TableRadioRow from "TableRadioRow" /* 7127 */;
+import TableSwitchRow5 from "TableSwitchRow" /* 7429 */;
+import VoiceNormalIcon from "VoiceNormalIcon" /* 8744 */;
+import VoiceXIcon from "VoiceXIcon" /* 12116 */;
+import Checkbox from "Checkbox" /* 14856 */;
+import TableSliderRow from "TableSliderRow" /* 16168 */;
+import Slider2 from "Slider" /* 16169 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let metroImportAll;
@@ -33,7 +33,7 @@ function Radio() {
   let items;
   let items1;
   const obj = { children: items };
-  items = [metroRequire(Text_Text.Text, { variant: "heading-lg/bold", children: "Radio" }), metroRequire(Text_Text.Text, { variant: "text-md/normal", children: "Select a single option from a short list of multiple options" }), ];
+  items = [metroRequire(Text_Text.Text, { variant: "heading-lg/semibold", children: "Radio" }), metroRequire(Text_Text.Text, { variant: "body-md/normal", children: "Select a single option from a short list of multiple options" }), ];
   const obj2 = { title: "Role Colors", hasIcons: false, defaultValue: "color-in-names", onChange: NOOP, children: items1 };
   const TableRadioGroup = TableRadioGroup2.TableRadioGroup;
   items1 = [metroRequire(TableRadioRow.TableRadioRow, { label: "Show role colors in names", value: "color-in-names" }), metroRequire(TableRadioRow.TableRadioRow, { label: "Show role colors next to names", value: "color-next-to-names" }), metroRequire(TableRadioRow.TableRadioRow, { label: "Don't show role colors", value: "no-color" }), metroRequire(TableRadioRow.TableRadioRow, { label: "Disabled Item", subLabel: "This should not be selectable", value: "option4", disabled: true })];
@@ -51,26 +51,26 @@ function Switch() {
   let tmp4;
   let tmp6;
   let tmp8;
-  const f113051 = (arg0) => {
+  const f114959 = (arg0) => {
     _undefined(arg0);
   };
   [tmp2, closure_129_0] = _slicedToArray(react.useState(true), 2);
   const tmp = _slicedToArray(react.useState(true), 2);
-  const obj = { value: tmp2, onValueChange: react.useCallback(f113051, []) };
+  const obj = { value: tmp2, onValueChange: react.useCallback(f114959, []) };
   [tmp4, c0] = react.useState(false);
   _slicedToArray(react.useState(false), 2);
-  const obj2 = { value: tmp4, onValueChange: react.useCallback(f113051, []) };
+  const obj2 = { value: tmp4, onValueChange: react.useCallback(f114959, []) };
   [tmp6, c0] = react.useState(true);
   _slicedToArray(react.useState(true), 2);
   c0 = undefined;
-  const obj3 = { value: tmp6, onValueChange: react.useCallback(f113051, []) };
+  const obj3 = { value: tmp6, onValueChange: react.useCallback(f114959, []) };
   [tmp8, c0] = react.useState(false);
   _slicedToArray(react.useState(false), 2);
   const obj5 = { children: items };
   items = [, , , ];
-  const obj4 = { value: tmp8, onValueChange: react.useCallback(f113051, []) };
-  items[0] = metroRequire(Text_Text.Text, { variant: "heading-lg/bold", children: "Switch" });
-  items[1] = metroRequire(Text_Text.Text, { variant: "text-md/normal", children: "Toggle the state of a single setting on or off, immediately" });
+  const obj4 = { value: tmp8, onValueChange: react.useCallback(f114959, []) };
+  items[0] = metroRequire(Text_Text.Text, { variant: "heading-lg/semibold", children: "Switch" });
+  items[1] = metroRequire(Text_Text.Text, { variant: "body-md/normal", children: "Toggle the state of a single setting on or off, immediately" });
   const obj6 = { title: "Emoji", hasIcons: false, children: metroRequire(TableSwitchRow, obj7) };
   const TableRowGroup = TableRowGroup3.TableRowGroup;
   obj7 = { label: "Show emoji reactions on messages", subLabel: "Show more information in less space" };
@@ -121,14 +121,14 @@ function InlineCheckbox(startChecked) {
 function InlineCheckboxDemo() {
   let items;
   const obj = { children: items };
-  items = [metroRequire(Text_Text.Text, { variant: "heading-lg/bold", children: "Inline Checkbox" }), metroRequire(InlineCheckbox, { label: "Checkbox label", description: "This is a description", startChecked: true }), metroRequire(InlineCheckbox, { label: "Trust google.com links from now on" }), metroRequire(InlineCheckbox, { label: "I agree to the Terms of Service", required: true })];
+  items = [metroRequire(Text_Text.Text, { variant: "heading-lg/semibold", children: "Inline Checkbox" }), metroRequire(InlineCheckbox, { label: "Checkbox label", description: "This is a description", startChecked: true }), metroRequire(InlineCheckbox, { label: "Trust google.com links from now on" }), metroRequire(InlineCheckbox, { label: "I agree to the Terms of Service", required: true })];
   return metroImportDefault(metroImportAll, obj);
 }
 function CheckboxRowDemo() {
   let items;
   let items1;
   const obj = { children: items };
-  items = [metroRequire(Text_Text.Text, { variant: "heading-lg/bold", children: "Checkbox" }), metroRequire(Text_Text.Text, { variant: "text-md/normal", children: "Select one or more options from a short list of options" }), ];
+  items = [metroRequire(Text_Text.Text, { variant: "heading-lg/semibold", children: "Checkbox" }), metroRequire(Text_Text.Text, { variant: "body-md/normal", children: "Select one or more options from a short list of options" }), ];
   const obj2 = { title: "Who can send you a friend request?", hasIcons: false, children: items1 };
   const TableRowGroup = TableRowGroup3.TableRowGroup;
   items1 = [, , ];
@@ -146,7 +146,7 @@ function SliderDemo() {
   let items;
   let obj3;
   const obj = { children: items };
-  items = [metroRequire(Text_Text.Text, { variant: "heading-lg/bold", children: "Slider" }), ];
+  items = [metroRequire(Text_Text.Text, { variant: "heading-lg/semibold", children: "Slider" }), ];
   const obj2 = { start: true, end: true, label: "Volume", subLabel: metroRequire(Slider, obj3) };
   const TableRow = TableRow2.TableRow;
   obj3 = { startIcon: metroRequire(VoiceXIcon.VoiceXIcon, {}), endIcon: metroRequire(VoiceNormalIcon.VoiceNormalIcon, {}), onChange: NOOP, accessibilityLabel: "Volume" };
@@ -158,7 +158,7 @@ function TableSliderRowDemo() {
   let items;
   let obj3;
   const obj = { children: items };
-  items = [metroRequire(Text_Text.Text, { variant: "heading-lg/bold", children: "TableSliderRow" }), metroRequire(Text_Text.Text, { variant: "text-md/normal", children: "A slider setting with its label and current value, for settings tables" }), ];
+  items = [metroRequire(Text_Text.Text, { variant: "heading-lg/semibold", children: "TableSliderRow" }), metroRequire(Text_Text.Text, { variant: "body-md/normal", children: "A slider setting with its label and current value, for settings tables" }), ];
   const obj2 = { hasIcons: false, children: metroRequire(TableSliderRow.TableSliderRow, obj3) };
   const TableRowGroup = TableRowGroup3.TableRowGroup;
   obj3 = {

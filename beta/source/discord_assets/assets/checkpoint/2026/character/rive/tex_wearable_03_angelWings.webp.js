@@ -1,8 +1,8 @@
-// Module ID: 13612
-// Function ID: 13613
+// Module ID: 13850
+// Function ID: 13851
 // Dependencies: [2]
 
-// Module 13612
+// Module 13850
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/rive/tex_wearable_03_angelWings.webp.js");

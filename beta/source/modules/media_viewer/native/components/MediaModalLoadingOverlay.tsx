@@ -1,16 +1,16 @@
-// Module ID: 14796
-// Function ID: 14797
+// Module ID: 15031
+// Function ID: 15032
 // Name: MediaModalLoadingOverlay
-// Dependencies: [19, 17, 21, 5014, 575, 5624, 1113, 2]
+// Dependencies: [19, 17, 21, 5140, 575, 5751, 1113, 2]
 
-// Module 14796 (MediaModalLoadingOverlay)
+// Module 15031 (MediaModalLoadingOverlay)
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5624 */;
+import Text_Text from "Text/Text" /* 5751 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let StyleSheet;
@@ -45,7 +45,7 @@ const memoResult = react.memo(function MediaModalLoadingOverlay(progress) {
   items = [tmp.loader, style];
   const tmp3 = _false;
   if ("error" === status) {
-    const obj2 = { style: tmp.loaderText, variant: "heading-md/semibold", color: "text-overlay-light", children: intl.string(intl2.t["+ITMYX"]) };
+    const obj2 = { style: tmp.loaderText, variant: "heading-sm/semibold", color: "text-overlay-light", children: intl.string(intl2.t["+ITMYX"]) };
     const Text2 = Text_Text.Text;
     intl = intl2.intl;
     tmp12Result1 = tmp2(Text2, obj2);
@@ -54,7 +54,7 @@ const memoResult = react.memo(function MediaModalLoadingOverlay(progress) {
     const Fragment = react.Fragment;
     if (null != progress) {
       const _Math = Math;
-      const obj3 = { style: tmp.loaderText, variant: "heading-md/semibold", color: "text-overlay-light", children: items1 };
+      const obj3 = { style: tmp.loaderText, variant: "heading-sm/semibold", color: "text-overlay-light", children: items1 };
       const Text = Text_Text.Text;
       items1 = [Math.round(progress), "%"];
       tmp12Result = tmp12(Text, obj3);

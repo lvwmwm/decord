@@ -1,27 +1,27 @@
-// Module ID: 12155
-// Function ID: 12156
+// Module ID: 12328
+// Function ID: 12329
 // Name: MentionableSelectOptionParts
-// Dependencies: [19, 17, 4920, 5761, 1383, 1072, 21, 5014, 575, 6073, 1187, 7356, 7374, 9059, 9201, 5624, 12125, 1113, 2]
+// Dependencies: [19, 17, 5046, 5890, 1385, 1072, 21, 5140, 575, 6206, 1187, 7417, 7434, 9139, 9281, 5751, 12286, 1113, 2]
 // Exports: mentionableOptionAccessibilityLabel, renderMentionableOptionDescription, renderMentionableOptionIcon, renderMentionableOptionSuffix
 
-// Module 12155 (MentionableSelectOptionParts)
+// Module 12328 (MentionableSelectOptionParts)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import InteractionComponentTypes from "InteractionComponentTypes" /* 6073 */;
-import RoleIconUtils from "RoleIconUtils" /* 7356 */;
-import RoleIconDefault from "RoleIcon" /* 7374 */;
-import DiscordTagDefault from "DiscordTag" /* 9201 */;
-import UserIcon from "UserIcon" /* 12125 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import InteractionComponentTypes from "InteractionComponentTypes" /* 6206 */;
+import RoleIconUtils from "RoleIconUtils" /* 7417 */;
+import RoleIconDefault from "RoleIcon" /* 7434 */;
+import DiscordTagDefault from "DiscordTag" /* 9281 */;
+import UserIcon from "UserIcon" /* 12286 */;
 import react from "react" /* 19 */;
-import GuildRoleStore from "GuildRoleStore" /* 4920 */;
-import PresenceStore from "PresenceStore" /* 5761 */;
-import UserStore from "UserStore" /* 1383 */;
+import GuildRoleStore from "GuildRoleStore" /* 5046 */;
+import PresenceStore from "PresenceStore" /* 5890 */;
+import UserStore from "UserStore" /* 1385 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let Fonts;
@@ -42,7 +42,7 @@ function RoleMemberCount(count) {
   const tmp = closure_10();
   const obj = { style: tmp.roleCountContainer, children: items };
   items = [, ];
-  const obj2 = { style: tmp.roleCountText, variant: "text-sm/medium", color: "interactive-text-default", children: count };
+  const obj2 = { style: tmp.roleCountText, variant: "body-sm/medium", color: "interactive-text-default", children: count };
   items[0] = metroImportAll(Text_Text.Text, obj2);
   items[1] = metroImportAll(UserIcon.UserIcon, { size: "xs" });
   return React4(View, obj);
@@ -89,7 +89,7 @@ export function renderMentionableOptionIcon(type, guild, guildId) {
           }
         }
         let colorString;
-        const ShieldUserIcon = tmp(9059).ShieldUserIcon;
+        const ShieldUserIcon = tmp(9139).ShieldUserIcon;
         const tmp8 = metroImportAll;
         if (role != null) {
           colorString = role.colorString;

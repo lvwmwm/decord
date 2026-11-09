@@ -1,12 +1,12 @@
-// Module ID: 16769
-// Function ID: 16770
+// Module ID: 17092
+// Function ID: 17093
 // Name: useUserAgeGroup
-// Dependencies: [7715, 504, 2]
+// Dependencies: [7791, 504, 2]
 // Exports: default
 
-// Module 16769 (useUserAgeGroup)
+// Module 17092 (useUserAgeGroup)
 import get_initialized from "get initialized" /* 504 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7715 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7791 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/parent_tools/hooks/useUserAgeGroup.tsx");

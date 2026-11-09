@@ -1,16 +1,16 @@
-// Module ID: 5652
-// Function ID: 5653
+// Module ID: 5776
+// Function ID: 5777
 // Name: useChannelName
-// Dependencies: [32, 5238, 4956, 1383, 1072, 1379, 5068, 1113, 504, 2]
+// Dependencies: [32, 5354, 5082, 1385, 1072, 1380, 5194, 1113, 504, 2]
 // Exports: computeDefaultGroupDmName, computeDefaultGroupDmNameFromUserIds, computeGroupDmName, default, escapeChannelName, unescapeChannelName, useComputedGroupDmName
 
-// Module 5652 (useChannelName)
-import GlobalUtils from "GlobalUtils" /* 1379 */;
-import UserUtilsDefault from "UserUtils" /* 5068 */;
+// Module 5776 (useChannelName)
+import GlobalUtils from "GlobalUtils" /* 1380 */;
+import UserUtilsDefault from "UserUtils" /* 5194 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ExperimentStore from "ExperimentStore" /* 5238 */;
-import RelationshipStore from "RelationshipStore" /* 4956 */;
-import UserStore from "UserStore" /* 1383 */;
+import ExperimentStore from "ExperimentStore" /* 5354 */;
+import RelationshipStore from "RelationshipStore" /* 5082 */;
+import UserStore from "UserStore" /* 1385 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -19,7 +19,7 @@ let _require, nickname;
 
 let metroImportAll;
 let metroImportDefault;
-const f88072 = (id) => {
+const f89581 = (id) => {
   nickname = nickname.getNickname(id.id);
   if (nickname == null) {
     const obj = closure_2_1(closure_2_2[6]);
@@ -86,7 +86,7 @@ function computeChannelName(channel, UserStore, RelationshipStore, flag, arg4) {
         _require = RelationshipStore;
         const mapped1 = recipients1.map(UserStore.getUser);
         const found = mapped1.filter(require("GlobalUtils").isNotNullish);
-        const mapped2 = found.map(f88072);
+        const mapped2 = found.map(f89581);
         if (mapped2.length > 0) {
           joined = mapped2.join(", ");
         } else {
@@ -199,7 +199,7 @@ export function computeDefaultGroupDmNameFromUserIds(arr, getUser, arg2) {
   _require = arg2;
   const mapped = arr.map(getUser.getUser);
   const found = mapped.filter(require("GlobalUtils").isNotNullish);
-  const mapped1 = found.map(f88072);
+  const mapped1 = found.map(f89581);
   if (mapped1.length > 0) {
     joined = mapped1.join(", ");
   } else {
@@ -220,7 +220,7 @@ export function computeDefaultGroupDmName(recipients, getUser, arg2) {
   _require = arg2;
   const mapped = recipients.map(getUser.getUser);
   const found = mapped.filter(require("GlobalUtils").isNotNullish);
-  const mapped1 = found.map(f88072);
+  const mapped1 = found.map(f89581);
   if (mapped1.length > 0) {
     joined = mapped1.join(", ");
   } else {
@@ -249,7 +249,7 @@ export function useComputedGroupDmName(stateFromStores) {
         closure_0 = RelationshipStore;
         const mapped = recipients.map(UserStore.getUser);
         const found = mapped.filter(GlobalUtils.isNotNullish);
-        const mapped1 = found.map(f88072);
+        const mapped1 = found.map(f89581);
         const obj2 = UserStore;
         if (mapped1.length > 0) {
           joined = mapped1.join(", ");

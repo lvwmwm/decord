@@ -1,24 +1,24 @@
-// Module ID: 18902
-// Function ID: 18903
+// Module ID: 19277
+// Function ID: 19278
 // Name: ChannelSettingsInstantInvites
-// Dependencies: [32, 19, 17, 8200, 4863, 1072, 21, 5014, 575, 1625, 504, 8199, 10808, 1187, 10826, 10827, 1113, 7208, 18903, 7223, 2]
+// Dependencies: [32, 19, 17, 8269, 4989, 1072, 21, 5140, 575, 1627, 504, 8268, 10927, 1187, 10945, 10946, 1113, 7271, 19278, 7287, 2]
 // Exports: default
 
-// Module 18902 (ChannelSettingsInstantInvites)
+// Module 19277 (ChannelSettingsInstantInvites)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1625 */;
-import FastestListDefault from "FastestList" /* 7223 */;
-import InstantInvite from "InstantInvite" /* 10808 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10826 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 10827 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
+import FastestListDefault from "FastestList" /* 7287 */;
+import InstantInvite from "InstantInvite" /* 10927 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10945 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 10946 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelSettingsStore from "ChannelSettingsStore" /* 8200 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
+import ChannelSettingsStore from "ChannelSettingsStore" /* 8269 */;
+import ChannelStore from "ChannelStore" /* 4989 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -146,14 +146,14 @@ export default function ConnectedChannelSettingsInstantInvites() {
     tmp21 = tmp17Result;
   }
   const obj7 = { style: tmp.content, children: items8 };
-  items8 = [closure_9(tmp7(7208).SceneLoadingIndicator, {}), ];
+  items8 = [closure_9(tmp7(7271).SceneLoadingIndicator, {}), ];
   let tmp19Result = null;
   const tmp17 = closure_10;
   const tmp18 = stateFromStoresArray;
   const tmp19 = closure_9;
   if (memo1.length > 0) {
     const obj8 = { item: memo1[0], onMeasured: callback };
-    tmp19Result = tmp19(tmp2(18903), obj8);
+    tmp19Result = tmp19(tmp2(19278), obj8);
   }
   items8[1] = tmp19Result;
   tmp17Result = tmp17(tmp18, obj7);

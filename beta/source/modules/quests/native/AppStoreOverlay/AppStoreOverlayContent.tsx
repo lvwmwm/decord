@@ -1,13 +1,13 @@
-// Module ID: 14663
-// Function ID: 14664
+// Module ID: 14898
+// Function ID: 14899
 // Name: AppStoreOverlayContent
-// Dependencies: [5, 5709, 5705, 1113, 14664, 2]
+// Dependencies: [5, 5834, 5830, 1113, 14899, 14900, 2]
 // Exports: getAppStoreOverlayContent, getIosAppStoreReviewsUrl, openAppStoreReviews
 
-// Module 14663 (AppStoreOverlayContent)
-import openURL from "openURL" /* 5705 */;
-import LinkingDefault from "Linking" /* 5709 */;
-import AppStoreMetadataActionCreators from "AppStoreMetadataActionCreators" /* 14664 */;
+// Module 14898 (AppStoreOverlayContent)
+import openURL from "openURL" /* 5830 */;
+import LinkingDefault from "Linking" /* 5834 */;
+import AppStoreMetadataActionCreators from "AppStoreMetadataActionCreators" /* 14900 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -17,7 +17,6 @@ let obj = function _getAppStoreOverlayContent() {
     let c4;
     let c5;
     function toOverlayContent(rating, os, storeUrl) {
-      let category;
       let header_image;
       let intl;
       let intl2;
@@ -25,7 +24,7 @@ let obj = function _getAppStoreOverlayContent() {
       let intl4;
       let mapped;
       let rating_count;
-      let tmp12;
+      let tmp15;
       const items = [];
       const tmp = null != rating.rating && rating.rating > 0;
       if (tmp) {
@@ -44,11 +43,21 @@ let obj = function _getAppStoreOverlayContent() {
         push2(obj2);
       }
       if (null != rating.chart_rank) {
+        let appStoreOverlayCategoryLabel = null;
+        if (null != rating.category_id) {
+          appStoreOverlayCategoryLabel = null;
+          if ("" !== rating.category_id) {
+            const obj3 = closure_1_0(closure_1_2[4]);
+            appStoreOverlayCategoryLabel = obj3.getAppStoreOverlayCategoryLabel(os.os, rating.category_id);
+          }
+        }
         const push3 = items.push;
-        const obj7 = { type: "chart", label: intl4.string(closure_1_0(closure_1_2[3]).t["x/ERbV"]), rank: null, category };
+        const obj4 = { type: "chart", label: intl4.string(closure_1_0(closure_1_2[3]).t["x/ERbV"]), rank: rating.chart_rank, category: appStoreOverlayCategoryLabel };
         intl4 = closure_1_0(closure_1_2[3]).intl;
-        ({ chart_rank: obj3.rank, category } = rating);
-        push3(obj7);
+        if (appStoreOverlayCategoryLabel == null) {
+          appStoreOverlayCategoryLabel = rating.category;
+        }
+        push3(obj4);
       }
       const screenshots = rating.screenshots;
       const found = screenshots.filter((item) => "" !== item);
@@ -57,11 +66,11 @@ let obj = function _getAppStoreOverlayContent() {
         if ("" !== rating.app_id) {
           storeAppId = rating.app_id;
         }
-        const obj8 = { title: null, subtitle: null, description: null, iconUrl: null, headerUrl: header_image, stats: tmp12, media: mapped, storeUrl, appId: storeAppId, platform: os.os };
-        ({ name: obj4.title, category: obj4.subtitle, description: obj4.description, icon: obj4.iconUrl, header_image } = rating);
-        tmp12 = undefined;
+        const obj8 = { title: null, subtitle: null, description: null, iconUrl: null, headerUrl: header_image, stats: tmp15, media: mapped, storeUrl, appId: storeAppId, platform: os.os };
+        ({ name: obj5.title, subtitle: obj5.subtitle, description: obj5.description, icon: obj5.iconUrl, header_image } = rating);
+        tmp15 = undefined;
         if (items.length > 0) {
-          tmp12 = items;
+          tmp15 = items;
         }
         mapped = undefined;
         if (found.length > 0) {
@@ -73,7 +82,7 @@ let obj = function _getAppStoreOverlayContent() {
     }
     let closure_0 = arg0;
     let closure_1 = arg1;
-    const obj3 = AppStoreMetadataActionCreators;
+    let obj3 = AppStoreMetadataActionCreators;
     let closure_2 = await obj3.fetchAppStoreMetadata(closure_0);
     let tmp6 = null;
     if (null != closure_2) {

@@ -1,42 +1,40 @@
-// Module ID: 7291
-// Function ID: 7292
+// Module ID: 7354
+// Function ID: 7355
 // Name: GuildOnboardingPrompts
-// Dependencies: [32, 5, 19, 17, 5015, 6948, 4863, 4885, 4917, 7268, 7269, 7265, 1072, 21, 1099, 5014, 5586, 575, 1488, 5011, 5717, 5587, 1092, 504, 1625, 1497, 5095, 7273, 7274, 1409, 1892, 1252, 5760, 5254, 6998, 7292, 7293, 1379, 5618, 5624, 1113, 2]
+// Dependencies: [32, 5, 19, 17, 5141, 7003, 4989, 5011, 5043, 7331, 7332, 7328, 1072, 21, 1099, 5140, 5714, 575, 1490, 5137, 5842, 5715, 1092, 504, 1627, 1499, 1652, 7336, 7337, 1411, 2021, 1252, 5889, 5370, 7064, 7355, 7356, 1380, 5745, 5751, 1113, 2]
 // Exports: default
 
-// Module 7291 (GuildOnboardingPrompts)
+// Module 7354 (GuildOnboardingPrompts)
 import nativeDefault from "native" /* 575 */;
 import ConstantsIOS from "ConstantsIOS" /* 1092 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import ImageUtils from "ImageUtils" /* 1488 */;
-import ColorUtils from "ColorUtils" /* 5011 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
-import timing from "timing" /* 5254 */;
-import NavigatorConstants from "NavigatorConstants" /* 5586 */;
-import LinearGradientDefault from "LinearGradient" /* 5587 */;
-import FastImageDefault from "FastImage" /* 5717 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5760 */;
-import NavigatorHeader from "NavigatorHeader" /* 6998 */;
-import GuildOnboardingConstants from "GuildOnboardingConstants" /* 7265 */;
-import GuildOnboardingPromptsConstants from "GuildOnboardingPromptsConstants" /* 7269 */;
-import GuildOnboardingActionCreatorsDefault from "GuildOnboardingActionCreators" /* 7273 */;
-import GuildOnboardingUtils from "GuildOnboardingUtils" /* 7274 */;
+import ColorUtils from "ColorUtils" /* 5137 */;
+import NavigatorConstants from "NavigatorConstants" /* 5714 */;
+import LinearGradientDefault from "LinearGradient" /* 5715 */;
+import FastImageDefault from "FastImage" /* 5842 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5889 */;
+import NavigatorHeader from "NavigatorHeader" /* 7064 */;
+import GuildOnboardingConstants from "GuildOnboardingConstants" /* 7328 */;
+import GuildOnboardingPromptsConstants from "GuildOnboardingPromptsConstants" /* 7332 */;
+import GuildOnboardingActionCreatorsDefault from "GuildOnboardingActionCreators" /* 7336 */;
+import GuildOnboardingUtils from "GuildOnboardingUtils" /* 7337 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5015 */;
-import MemberVerificationFormStore from "MemberVerificationFormStore" /* 6948 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
-import GuildStore from "GuildStore" /* 4885 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4917 */;
-import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7268 */;
+import AccessibilityStore from "AccessibilityStore" /* 5141 */;
+import MemberVerificationFormStore from "MemberVerificationFormStore" /* 7003 */;
+import ChannelStore from "ChannelStore" /* 4989 */;
+import GuildStore from "GuildStore" /* 5011 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5043 */;
+import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7331 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
-let c3, c4, channel, constants2, navigation;
+const require = globalThis.__r;
+let absoluteFill, channel, constants, constants2, navigation;
 
 let closure_16;
 let closure_17;
@@ -65,7 +63,7 @@ let obj = function _getBackgroundGradientColor() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -91,7 +89,7 @@ let obj = function _getBackgroundGradientColor() {
             c3 = 1;
             c4 = 1;
             const obj5 = { value: obj3.getPaletteForAvatar(closure_0), done: false };
-            obj3 = ImageUtils;
+            obj3 = require("ImageUtils");
             return obj5;
           }
         } else if (arg0 === 1) {
@@ -152,12 +150,12 @@ obj3 = { marginBottom: nativeDefault.space.PX_16, opacity: 0.8 };
 obj4 = { position: "absolute", paddingHorizontal: nativeDefault.space.PX_16, display: "flex", justifyContent: "center", width: "100%", marginBottom: nativeDefault.space.PX_16 };
 obj5 = { alignItems: "center", marginTop: -24, paddingHorizontal: nativeDefault.space.PX_16 };
 let closure_22 = createStyles(obj);
-const __initData = { code: "function GuildOnboardingPromptsTsx1(){const{showPrompts,withTiming,Easing,useReducedMotion}=this.__closure;const rawOpacity=showPrompts.get()?0:1;const opacity=withTiming(rawOpacity,{duration:300,easing:Easing.out(Easing.ease)});const rawTranslateY=!useReducedMotion&&showPrompts.get()?-80:0;const translateY=withTiming(rawTranslateY,{duration:300,easing:Easing.out(Easing.ease)});return{opacity:opacity,transform:[{translateY:translateY}]};}" };
-const __initData2 = { code: "function GuildOnboardingPromptsTsx2(){const{showPrompts,withDelay,withTiming,Easing,useReducedMotion}=this.__closure;const rawOpacity=showPrompts.get()?0:1;const opacity=withDelay(200,withTiming(rawOpacity,{duration:300,easing:Easing.out(Easing.ease)}));const rawTranslateY=!useReducedMotion&&showPrompts.get()?-80:0;const translateY=withDelay(200,withTiming(rawTranslateY,{duration:300,easing:Easing.out(Easing.ease)}));return{opacity:opacity,transform:[{translateY:translateY}]};}" };
-const __initData3 = { code: "function GuildOnboardingPromptsTsx3(){const{showPrompts,withDelay,withTiming,Easing}=this.__closure;const rawOpacity=showPrompts.get()?0:1;const opacity=withDelay(200,withTiming(rawOpacity,{duration:300,easing:Easing.out(Easing.ease)}));return{opacity:opacity};}" };
-const __initData4 = { code: "function GuildOnboardingPromptsTsx4(){const{showPrompts}=this.__closure;return{pointerEvents:showPrompts.get()?'none':'auto'};}" };
-const __initData5 = { code: "function GuildOnboardingPromptsTsx5(){const{showPrompts,withDelay,withTiming,Easing}=this.__closure;const rawOpacity=showPrompts.get()?0:1;const opacity=withDelay(200,withTiming(rawOpacity,{duration:300,easing:Easing.out(Easing.ease)}));return{opacity:opacity};}" };
-const __initData6 = { code: "function GuildOnboardingPromptsTsx6(){const{showPrompts,withDelay,withTiming,Easing,useReducedMotion}=this.__closure;const rawOpacity=showPrompts.get()?1:0;const opacity=withDelay(600,withTiming(rawOpacity,{duration:300,easing:Easing.out(Easing.ease)}));const rawTranslateY=!useReducedMotion&&!showPrompts.get()?80:0;const translateY=withDelay(600,withTiming(rawTranslateY,{duration:300,easing:Easing.out(Easing.ease)}));return{opacity:opacity,transform:[{translateY:translateY}]};}" };
+let closure_25 = { code: "(function GuildOnboardingPromptsTsx1(){let[showPrompts,withTiming,Easing,useReducedMotion]=this.__closure;const rawOpacity=showPrompts.get()?0:1;const opacity=withTiming(rawOpacity,{duration:300,easing:Easing.out(Easing.ease)});const rawTranslateY=!useReducedMotion&&showPrompts.get()?-80:0;const translateY=withTiming(rawTranslateY,{duration:300,easing:Easing.out(Easing.ease)});return{opacity:opacity,transform:[{translateY:translateY}]};})" };
+let closure_26 = { code: "(function GuildOnboardingPromptsTsx2(){let[showPrompts,withDelay,withTiming,Easing,useReducedMotion]=this.__closure;const rawOpacity=showPrompts.get()?0:1;const opacity=withDelay(200,withTiming(rawOpacity,{duration:300,easing:Easing.out(Easing.ease)}));const rawTranslateY=!useReducedMotion&&showPrompts.get()?-80:0;const translateY=withDelay(200,withTiming(rawTranslateY,{duration:300,easing:Easing.out(Easing.ease)}));return{opacity:opacity,transform:[{translateY:translateY}]};})" };
+let closure_27 = { code: "(function GuildOnboardingPromptsTsx3(){let[showPrompts,withDelay,withTiming,Easing]=this.__closure;const rawOpacity=showPrompts.get()?0:1;const opacity=withDelay(200,withTiming(rawOpacity,{duration:300,easing:Easing.out(Easing.ease)}));return{opacity:opacity};})" };
+let closure_28 = { code: "(function GuildOnboardingPromptsTsx4(){let[showPrompts]=this.__closure;return{pointerEvents:showPrompts.get()?'none':'auto'};})" };
+let closure_29 = { code: "(function GuildOnboardingPromptsTsx5(){let[showPrompts,withDelay,withTiming,Easing]=this.__closure;const rawOpacity=showPrompts.get()?0:1;const opacity=withDelay(200,withTiming(rawOpacity,{duration:300,easing:Easing.out(Easing.ease)}));return{opacity:opacity};})" };
+let closure_30 = { code: "(function GuildOnboardingPromptsTsx6(){let[showPrompts,withDelay,withTiming,Easing,useReducedMotion]=this.__closure;const rawOpacity=showPrompts.get()?1:0;const opacity=withDelay(600,withTiming(rawOpacity,{duration:300,easing:Easing.out(Easing.ease)}));const rawTranslateY=!useReducedMotion&&!showPrompts.get()?80:0;const translateY=withDelay(600,withTiming(rawTranslateY,{duration:300,easing:Easing.out(Easing.ease)}));return{opacity:opacity,transform:[{translateY:translateY}]};})" };
 let result = size.fileFinishedImporting("modules/guild_onboarding/native/GuildOnboardingPrompts.tsx");
 
 export default function GuildOnboardingPrompt(guildId) {
@@ -166,31 +164,61 @@ export default function GuildOnboardingPrompt(guildId) {
   let View;
   let backShouldLeaveGuild;
   let closure_17;
+  let closure_6;
   let format;
   let intl2;
   let intl3;
   let isFirstOpen;
-  let items13;
-  let items14;
-  let items15;
-  let items16;
-  let items17;
-  let items18;
-  let items19;
-  let items20;
-  let items21;
-  let items22;
-  let items23;
-  let items24;
   let items25;
-  let obj13;
+  let items26;
+  let items27;
+  let items28;
+  let items29;
+  let items30;
+  let items31;
+  let items32;
+  let items33;
+  let items34;
+  let items35;
+  let items36;
+  let items37;
+  let obj17;
   let obj22;
-  let obj27;
-  let obj28;
+  let obj23;
+  let obj7;
   let onClose;
   let selectOption;
   let str;
-  let tmp38Result;
+  let tmp30;
+  let tmp31;
+  let tmp32;
+  let tmp33;
+  let tmp34;
+  let tmp37;
+  let tmp38;
+  let tmp39;
+  let tmp40;
+  let tmp41;
+  let tmp42;
+  let tmp45;
+  let tmp46;
+  let tmp47;
+  let tmp48;
+  let tmp49;
+  let tmp51;
+  let tmp52;
+  let tmp55;
+  let tmp56;
+  let tmp57;
+  let tmp58;
+  let tmp59;
+  let tmp62;
+  let tmp63;
+  let tmp64;
+  let tmp65;
+  let tmp66;
+  let tmp67;
+  let tmp72Result;
   guildId = guildId.guildId;
   const currentPromptIdx = guildId.currentPromptIdx;
   const prompts = guildId.prompts;
@@ -199,32 +227,33 @@ export default function GuildOnboardingPrompt(guildId) {
   isFirstOpen = undefined;
   navigation = undefined;
   let skipped;
-  let closure_11;
+  let closure_10;
   let sharedValue;
   let callback;
   let stateFromStores2;
   let stateFromStoresArray;
-  constants2 = undefined;
-  let closure_18;
-  let guildSplashURL;
   let required;
+  constants = undefined;
+  constants2 = undefined;
+  let guildSplashURL;
+  let required2;
   const landingAnimation = guildId.landingAnimation;
   let tmp = closure_22();
   let tmp2 = guildId;
-  const tmp3 = prompts;
+  let tmp3 = prompts;
   obj = guildId(prompts[23]);
-  let items = [navigation];
+  let items = [skipped];
   const stateFromStores = obj.useStateFromStores(items, () => MemberVerificationFormStore.getRulesPrompt(guildId));
   let obj2 = guildId(prompts[23]);
-  const items1 = [isFirstOpen];
-  const stateFromStores1 = obj2.useStateFromStores(items1, () => isFirstOpen.useReducedMotion);
+  const items1 = [navigation];
+  const stateFromStores1 = obj2.useStateFromStores(items1, () => navigation.useReducedMotion);
   let tmp6 = currentPromptIdx;
   const bottom = currentPromptIdx(prompts[24])().bottom;
   let obj3 = guildId(prompts[23]);
-  const items2 = [callback];
+  const items2 = [stateFromStores2];
   let tmp8 = obj3.useStateFromStores(items2, () => GuildOnboardingPromptsStore.getOnboardingConnections(guildId)).length > 0;
-  let closure_7 = tmp8;
-  const tmp7 = callback;
+  absoluteFill = tmp8;
+  const tmp7 = stateFromStores2;
   if (isFirstOpen) {
     isFirstOpen = 0 === currentPromptIdx;
   }
@@ -236,15 +265,16 @@ export default function GuildOnboardingPrompt(guildId) {
   const tmp10 = prompts.length > 0;
   skipped = tmp10;
   const tmp11 = prompts[currentPromptIdx];
-  closure_11 = tmp11;
+  closure_10 = tmp11;
   const tmp2Result13 = tmp2(tmp3[26]);
   sharedValue = tmp2Result13.useSharedValue(!isFirstOpen);
+  let obj6 = stateFromStores;
   const items3 = [guildId, prompts];
   callback = stateFromStores.useCallback(() => {
     obj = GuildOnboardingActionCreatorsDefault;
     obj.completeOnboarding(guildId, prompts);
   }, items3);
-  const items4 = [closure_11];
+  const items4 = [sharedValue];
   const tmp2Result14 = tmp2(tmp3[23]);
   stateFromStores2 = tmp2Result14.useStateFromStores(items4, () => GuildStore.getGuild(guildId));
   const items5 = [tmp7];
@@ -252,7 +282,7 @@ export default function GuildOnboardingPrompt(guildId) {
   const tmp2Result15 = tmp2(tmp3[23]);
   stateFromStoresArray = tmp2Result15.useStateFromStoresArray(items5, () => {
     let onboardingResponsesForPrompt;
-    if (null != closure_11) {
+    if (null != closure_10) {
       onboardingResponsesForPrompt = GuildOnboardingPromptsStore.getOnboardingResponsesForPrompt(guildId, tmp.id);
     } else {
       onboardingResponsesForPrompt = [];
@@ -273,9 +303,9 @@ export default function GuildOnboardingPrompt(guildId) {
     const tmp2Result16 = tmp2(tmp3[28]);
     tmp18 = !tmp2Result16.showRulesInOnboarding(stateFromStores2, stateFromStores);
   }
-  constants2 = tmp18;
+  constants = tmp18;
   const tmp19 = onClose(obj6.useState(tmp6(tmp3[17]).unsafe_rawColors.PRIMARY_800), 2);
-  closure_18 = tmp19[1];
+  constants2 = tmp19[1];
   guildSplashURL = null;
   const first = tmp19[0];
   if (null != stateFromStores2) {
@@ -294,7 +324,7 @@ export default function GuildOnboardingPrompt(guildId) {
     if (null != guildSplashURL) {
       const promise = getBackgroundGradientColor(tmp);
       promise.then((result) => {
-        closure_1_18(result);
+        closure_1_17(result);
       });
     }
   }, items7);
@@ -304,14 +334,14 @@ export default function GuildOnboardingPrompt(guildId) {
     if (tmp) {
       obj = { step: -1, required: true };
       const track = AnalyticsUtilsDefault.track;
-      const GUILD_ONBOARDING_STEP_VIEWED = required.GUILD_ONBOARDING_STEP_VIEWED;
+      const GUILD_ONBOARDING_STEP_VIEWED = constants.GUILD_ONBOARDING_STEP_VIEWED;
       AnalyticsUtilsDefault;
       const obj2 = AppAnalyticsUtils;
       const merged = Object.assign(obj2.collectGuildAnalyticsMetadata(guildId));
       track(GUILD_ONBOARDING_STEP_VIEWED, obj);
       const obj3 = { step: -1, skipped, is_final_step: false, in_onboarding: true };
       const track2 = AnalyticsUtilsDefault.track;
-      const GUILD_ONBOARDING_STEP_COMPLETED = required.GUILD_ONBOARDING_STEP_COMPLETED;
+      const GUILD_ONBOARDING_STEP_COMPLETED = constants.GUILD_ONBOARDING_STEP_COMPLETED;
       AnalyticsUtilsDefault;
       const obj4 = AppAnalyticsUtils;
       const merged1 = Object.assign(obj4.collectGuildAnalyticsMetadata(guildId));
@@ -341,231 +371,253 @@ export default function GuildOnboardingPrompt(guildId) {
       onClose();
     }
   }, items10);
-  required = tmp27;
+  required2 = tmp27;
   const items11 = [guildId, tmp27, currentPromptIdx];
   const effect4 = obj6.useEffect(() => {
     if (0 === currentPromptIdx) {
-      obj = { step: 0, required };
+      obj = { step: 0, required: required2 };
       const track = AnalyticsUtilsDefault.track;
-      const GUILD_ONBOARDING_STEP_VIEWED = required.GUILD_ONBOARDING_STEP_VIEWED;
+      const GUILD_ONBOARDING_STEP_VIEWED = constants.GUILD_ONBOARDING_STEP_VIEWED;
       AnalyticsUtilsDefault;
       const obj2 = AppAnalyticsUtils;
       const merged = Object.assign(obj2.collectGuildAnalyticsMetadata(guildId));
       track(GUILD_ONBOARDING_STEP_VIEWED, obj);
     }
   }, items11);
-  function st() {
-    let Easing;
-    let Easing2;
-    let items;
-    let obj5;
-    let withTiming2;
-    let num = 1;
-    obj = sharedValue;
-    if (sharedValue.get()) {
-      num = 0;
-    }
-    const obj2 = { duration: 300, easing: Easing.out(ReanimatedRexport.Easing.ease) };
-    const withTiming = timing.withTiming;
-    timing;
-    Easing = ReanimatedRexport.Easing;
-    let num2 = 0;
-    const withTimingResult = withTiming(num, obj2);
-    if (!stateFromStores1) {
-      num2 = 0;
-      if (obj.get()) {
-        num2 = -80;
+  const items12 = [closure_25, sharedValue, , , ];
+  const useAnimatedStyle = tmp2(tmp3[26]).useAnimatedStyle;
+  tmp2(tmp3[26]);
+  items12[2] = tmp2(tmp3[33]).withTiming;
+  items12[3] = tmp2(tmp3[26]).Easing;
+  items12[4] = stateFromStores1;
+  let c0;
+  let c1;
+  let c2;
+  let c3;
+  [tmp30, tmp31, tmp32, tmp33, tmp34] = items12;
+  class GuildOnboardingPromptsTsx1 {
+    constructor() {
+      let items;
+      let obj6;
+      let num = 1;
+      obj = _undefined;
+      if (_undefined.get()) {
+        num = 0;
       }
-    }
-    const obj3 = { opacity: withTimingResult, transform: items };
-    const obj4 = { translateY: withTiming2(num2, obj5) };
-    obj5 = { duration: 300, easing: Easing2.out(ReanimatedRexport.Easing.ease) };
-    withTiming2 = timing.withTiming;
-    timing;
-    Easing2 = tmp(5095).Easing;
-    items = [obj4];
-    return obj3;
-  }
-  const tmp2Result17 = tmp2(tmp3[26]);
-  let obj5 = { showPrompts: sharedValue, withTiming: tmp2(tmp3[33]).withTiming, Easing: tmp2(tmp3[26]).Easing, useReducedMotion: stateFromStores1 };
-  st.__closure = obj5;
-  st.__workletHash = 6820086589932;
-  st.__initData = __initData;
-  const animatedStyle = tmp2Result17.useAnimatedStyle(st);
-  function rt() {
-    let Easing;
-    let Easing2;
-    let items;
-    let obj5;
-    let withDelay2;
-    let withTiming2;
-    let num = 1;
-    obj = sharedValue;
-    if (sharedValue.get()) {
-      num = 0;
-    }
-    const withDelay = ReanimatedRexport.withDelay;
-    ReanimatedRexport;
-    const obj2 = { duration: 300, easing: Easing.out(ReanimatedRexport.Easing.ease) };
-    const withTiming = timing.withTiming;
-    timing;
-    Easing = ReanimatedRexport.Easing;
-    let num2 = 0;
-    const withDelayResult = withDelay(200, withTiming(num, obj2));
-    if (!stateFromStores1) {
-      num2 = 0;
-      if (obj.get()) {
-        num2 = -80;
+      let num2 = 0;
+      const obj2 = { duration: 300, easing: _undefined3.out(_undefined3.ease) };
+      const tmp = _undefined2;
+      const tmp2 = _undefined2(num, obj2);
+      if (!c3) {
+        num2 = 0;
+        if (obj.get()) {
+          num2 = -80;
+        }
       }
+      const obj4 = { opacity: tmp2, transform: items };
+      const obj5 = { translateY: tmp(num2, obj6) };
+      items = [obj5];
+      obj6 = { duration: 300, easing: _undefined3.out(_undefined3.ease) };
+      return obj4;
     }
-    const obj3 = { opacity: withDelayResult, transform: items };
-    const obj4 = { translateY: withDelay2(200, withTiming2(num2, obj5)) };
-    withDelay2 = ReanimatedRexport.withDelay;
-    ReanimatedRexport;
-    obj5 = { duration: 300, easing: Easing2.out(ReanimatedRexport.Easing.ease) };
-    withTiming2 = timing.withTiming;
-    timing;
-    Easing2 = tmp(5095).Easing;
-    items = [obj4];
-    return obj3;
   }
-  const tmp2Result18 = tmp2(tmp3[26]);
-  rt.__closure = { showPrompts: sharedValue, withDelay: tmp2(tmp3[26]).withDelay, withTiming: tmp2(tmp3[33]).withTiming, Easing: tmp2(tmp3[26]).Easing, useReducedMotion: stateFromStores1 };
-  rt.__workletHash = 3034833873876;
-  rt.__initData = __initData2;
-  ({ showPrompts: sharedValue, withDelay: tmp2(tmp3[26]).withDelay, withTiming: tmp2(tmp3[33]).withTiming, Easing: tmp2(tmp3[26]).Easing, useReducedMotion: stateFromStores1 });
-  const animatedStyle1 = tmp2Result18.useAnimatedStyle(rt);
-  function lt() {
-    let Easing;
-    let obj2;
-    let withDelay;
-    let withTiming;
-    let num = 1;
-    if (sharedValue.get()) {
-      num = 0;
+  const items13 = [tmp31, tmp32, tmp33, tmp34];
+  GuildOnboardingPromptsTsx1.__closure = items13;
+  GuildOnboardingPromptsTsx1.__workletHash = 4968831838677;
+  GuildOnboardingPromptsTsx1.__initData = tmp30;
+  const animatedStyle = useAnimatedStyle(GuildOnboardingPromptsTsx1);
+  const items14 = [closure_26, sharedValue, , , , ];
+  const useAnimatedStyle2 = tmp2(tmp3[26]).useAnimatedStyle;
+  tmp2(tmp3[26]);
+  items14[2] = tmp2(tmp3[26]).withDelay;
+  items14[3] = tmp2(tmp3[33]).withTiming;
+  items14[4] = tmp2(tmp3[26]).Easing;
+  items14[5] = stateFromStores1;
+  c0 = undefined;
+  c1 = undefined;
+  c2 = undefined;
+  c3 = undefined;
+  let c4;
+  [tmp37, tmp38, tmp39, tmp40, tmp41, tmp42] = items14;
+  class GuildOnboardingPromptsTsx2 {
+    constructor() {
+      let items;
+      let obj6;
+      let num = 1;
+      obj = _undefined;
+      if (_undefined.get()) {
+        num = 0;
+      }
+      let num2 = 0;
+      const obj2 = { duration: 300, easing: _undefined4.out(_undefined4.ease) };
+      const tmp = _undefined2;
+      const tmp2 = _undefined3;
+      const tmp3 = _undefined2(200, _undefined3(num, obj2));
+      if (!c4) {
+        num2 = 0;
+        if (obj.get()) {
+          num2 = -80;
+        }
+      }
+      const obj4 = { opacity: tmp3, transform: items };
+      const obj5 = { translateY: tmp(200, tmp2(num2, obj6)) };
+      items = [obj5];
+      obj6 = { duration: 300, easing: _undefined4.out(_undefined4.ease) };
+      return obj4;
     }
-    obj = { opacity: withDelay(200, withTiming(num, obj2)) };
-    withDelay = ReanimatedRexport.withDelay;
-    ReanimatedRexport;
-    obj2 = { duration: 300, easing: Easing.out(ReanimatedRexport.Easing.ease) };
-    withTiming = timing.withTiming;
-    timing;
-    Easing = ReanimatedRexport.Easing;
-    return obj;
   }
-  const tmp2Result19 = tmp2(tmp3[26]);
-  lt.__closure = { showPrompts: sharedValue, withDelay: tmp2(tmp3[26]).withDelay, withTiming: tmp2(tmp3[33]).withTiming, Easing: tmp2(tmp3[26]).Easing };
-  lt.__workletHash = 2795589385440;
-  lt.__initData = __initData3;
-  ({ showPrompts: sharedValue, withDelay: tmp2(tmp3[26]).withDelay, withTiming: tmp2(tmp3[33]).withTiming, Easing: tmp2(tmp3[26]).Easing });
-  const animatedStyle2 = tmp2Result19.useAnimatedStyle(lt);
-  function dt() {
-    let pointerEvents = "auto";
-    if (sharedValue.get()) {
-      pointerEvents = "none";
+  const items15 = [tmp38, tmp39, tmp40, tmp41, tmp42];
+  GuildOnboardingPromptsTsx2.__closure = items15;
+  GuildOnboardingPromptsTsx2.__workletHash = 15352699765229;
+  GuildOnboardingPromptsTsx2.__initData = tmp37;
+  const animatedStyle2 = useAnimatedStyle2(GuildOnboardingPromptsTsx2);
+  const items16 = [closure_27, sharedValue, , , ];
+  const useAnimatedStyle3 = tmp2(tmp3[26]).useAnimatedStyle;
+  tmp2(tmp3[26]);
+  items16[2] = tmp2(tmp3[26]).withDelay;
+  items16[3] = tmp2(tmp3[33]).withTiming;
+  items16[4] = tmp2(tmp3[26]).Easing;
+  c0 = undefined;
+  c1 = undefined;
+  c2 = undefined;
+  c3 = undefined;
+  [tmp45, tmp46, tmp47, tmp48, tmp49] = items16;
+  class GuildOnboardingPromptsTsx3 {
+    constructor() {
+      let obj2;
+      let num = 1;
+      if (_undefined.get()) {
+        num = 0;
+      }
+      obj = { opacity: _undefined2(200, _undefined3(num, obj2)) };
+      obj2 = { duration: 300, easing: _undefined4.out(_undefined4.ease) };
+      return obj;
     }
-    return { pointerEvents };
   }
-  dt.__closure = { showPrompts: sharedValue };
-  dt.__workletHash = 14909597965594;
-  dt.__initData = __initData4;
+  const items17 = [tmp46, tmp47, tmp48, tmp49];
+  GuildOnboardingPromptsTsx3.__closure = items17;
+  GuildOnboardingPromptsTsx3.__workletHash = 7281893132057;
+  GuildOnboardingPromptsTsx3.__initData = tmp45;
+  const animatedStyle3 = useAnimatedStyle3(GuildOnboardingPromptsTsx3);
+  const items18 = [closure_28, sharedValue];
+  c0 = undefined;
+  [tmp51, tmp52] = items18;
   const tmp2Result20 = tmp2(tmp3[26]);
-  const animatedProps = tmp2Result20.useAnimatedProps(dt);
-  function ct() {
-    let Easing;
-    let obj2;
-    let withDelay;
-    let withTiming;
-    let num = 1;
-    if (sharedValue.get()) {
-      num = 0;
+  class GuildOnboardingPromptsTsx4 {
+    constructor() {
+      let pointerEvents = "auto";
+      if (_undefined.get()) {
+        pointerEvents = "none";
+      }
+      return { pointerEvents };
     }
-    obj = { opacity: withDelay(200, withTiming(num, obj2)) };
-    withDelay = ReanimatedRexport.withDelay;
-    ReanimatedRexport;
-    obj2 = { duration: 300, easing: Easing.out(ReanimatedRexport.Easing.ease) };
-    withTiming = timing.withTiming;
-    timing;
-    Easing = ReanimatedRexport.Easing;
-    return obj;
   }
-  const tmp2Result21 = tmp2(tmp3[26]);
-  ct.__closure = { showPrompts: sharedValue, withDelay: tmp2(tmp3[26]).withDelay, withTiming: tmp2(tmp3[33]).withTiming, Easing: tmp2(tmp3[26]).Easing };
-  ct.__workletHash = 2298794027238;
-  ct.__initData = __initData5;
-  ({ showPrompts: sharedValue, withDelay: tmp2(tmp3[26]).withDelay, withTiming: tmp2(tmp3[33]).withTiming, Easing: tmp2(tmp3[26]).Easing });
-  const animatedStyle3 = tmp2Result21.useAnimatedStyle(ct);
-  function ut() {
-    let Easing;
-    let Easing2;
-    let items;
-    let num2;
-    let obj5;
-    let withDelay2;
-    let withTiming2;
-    let num = 0;
-    if (sharedValue.get()) {
-      num = 1;
+  const items19 = [tmp52];
+  GuildOnboardingPromptsTsx4.__closure = items19;
+  GuildOnboardingPromptsTsx4.__workletHash = 7888519317763;
+  GuildOnboardingPromptsTsx4.__initData = tmp51;
+  const animatedProps = tmp2Result20.useAnimatedProps(GuildOnboardingPromptsTsx4);
+  const items20 = [closure_29, sharedValue, , , ];
+  const useAnimatedStyle4 = tmp2(tmp3[26]).useAnimatedStyle;
+  tmp2(tmp3[26]);
+  items20[2] = tmp2(tmp3[26]).withDelay;
+  items20[3] = tmp2(tmp3[33]).withTiming;
+  items20[4] = tmp2(tmp3[26]).Easing;
+  c0 = undefined;
+  c1 = undefined;
+  c2 = undefined;
+  c3 = undefined;
+  [tmp55, tmp56, tmp57, tmp58, tmp59] = items20;
+  class GuildOnboardingPromptsTsx5 {
+    constructor() {
+      let obj2;
+      let num = 1;
+      if (_undefined.get()) {
+        num = 0;
+      }
+      obj = { opacity: _undefined2(200, _undefined3(num, obj2)) };
+      obj2 = { duration: 300, easing: _undefined4.out(_undefined4.ease) };
+      return obj;
     }
-    const withDelay = ReanimatedRexport.withDelay;
-    ReanimatedRexport;
-    const obj2 = { duration: 300, easing: Easing.out(ReanimatedRexport.Easing.ease) };
-    const withTiming = timing.withTiming;
-    timing;
-    Easing = ReanimatedRexport.Easing;
-    const withDelayResult = withDelay(600, withTiming(num, obj2));
-    if (stateFromStores1) {
-      num2 = 0;
-    } else {
-      num2 = 80;
-    }
-    const obj3 = { opacity: withDelayResult, transform: items };
-    const obj4 = { translateY: withDelay2(600, withTiming2(num2, obj5)) };
-    withDelay2 = ReanimatedRexport.withDelay;
-    ReanimatedRexport;
-    obj5 = { duration: 300, easing: Easing2.out(ReanimatedRexport.Easing.ease) };
-    withTiming2 = timing.withTiming;
-    timing;
-    Easing2 = tmp(5095).Easing;
-    items = [obj4];
-    return obj3;
   }
-  const tmp2Result22 = tmp2(tmp3[26]);
-  ut.__closure = { showPrompts: sharedValue, withDelay: tmp2(tmp3[26]).withDelay, withTiming: tmp2(tmp3[33]).withTiming, Easing: tmp2(tmp3[26]).Easing, useReducedMotion: stateFromStores1 };
-  ut.__workletHash = 2324120669532;
-  ut.__initData = __initData6;
-  const items12 = [navigation, currentPromptIdx, stateFromStoresArray, guildId, prompts, onClose, backShouldLeaveGuild, tmp8];
-  ({ showPrompts: sharedValue, withDelay: tmp2(tmp3[26]).withDelay, withTiming: tmp2(tmp3[33]).withTiming, Easing: tmp2(tmp3[26]).Easing, useReducedMotion: stateFromStores1 });
-  const animatedStyle4 = tmp2Result22.useAnimatedStyle(ut);
+  const items21 = [tmp56, tmp57, tmp58, tmp59];
+  GuildOnboardingPromptsTsx5.__closure = items21;
+  GuildOnboardingPromptsTsx5.__workletHash = 16271494377695;
+  GuildOnboardingPromptsTsx5.__initData = tmp55;
+  const animatedStyle4 = useAnimatedStyle4(GuildOnboardingPromptsTsx5);
+  const items22 = [closure_30, sharedValue, , , , ];
+  const useAnimatedStyle5 = tmp2(tmp3[26]).useAnimatedStyle;
+  tmp2(tmp3[26]);
+  items22[2] = tmp2(tmp3[26]).withDelay;
+  items22[3] = tmp2(tmp3[33]).withTiming;
+  items22[4] = tmp2(tmp3[26]).Easing;
+  items22[5] = stateFromStores1;
+  c0 = undefined;
+  c1 = undefined;
+  c2 = undefined;
+  c3 = undefined;
+  c4 = undefined;
+  [tmp62, tmp63, tmp64, tmp65, tmp66, tmp67] = items22;
+  class GuildOnboardingPromptsTsx6 {
+    constructor() {
+      let items;
+      let num2;
+      let obj6;
+      let num = 0;
+      if (_undefined.get()) {
+        num = 1;
+      }
+      const obj2 = { duration: 300, easing: _undefined4.out(_undefined4.ease) };
+      const tmp = _undefined2;
+      const tmp2 = _undefined3;
+      const tmp3 = _undefined2(600, _undefined3(num, obj2));
+      if (c4) {
+        num2 = 0;
+      } else {
+        num2 = 80;
+      }
+      const obj4 = { opacity: tmp3, transform: items };
+      const obj5 = { translateY: tmp(600, tmp2(num2, obj6)) };
+      items = [obj5];
+      obj6 = { duration: 300, easing: _undefined4.out(_undefined4.ease) };
+      return obj4;
+    }
+  }
+  const items23 = [tmp63, tmp64, tmp65, tmp66, tmp67];
+  GuildOnboardingPromptsTsx6.__closure = items23;
+  GuildOnboardingPromptsTsx6.__workletHash = 7666305678501;
+  GuildOnboardingPromptsTsx6.__initData = tmp62;
+  const items24 = [navigation, currentPromptIdx, stateFromStoresArray, guildId, prompts, onClose, backShouldLeaveGuild, tmp8];
+  const animatedStyle5 = useAnimatedStyle5(GuildOnboardingPromptsTsx6);
   const layoutEffect = obj6.useLayoutEffect(() => {
     let headerCloseButton;
     let step;
     const tmp = currentPromptIdx;
     if (0 === currentPromptIdx) {
-      const tmp2 = closure_7;
+      const tmp2 = closure_6;
       if (!tmp2) {
         let tmp4 = dependencyMap;
         obj = NavigatorHeader;
         headerCloseButton = obj.getHeaderCloseButton(() => {
           obj = { step: 0, skipped: true, back: false, options_selected: 0, in_onboarding: true, is_final_step: false };
           const track = currentPromptIdx(prompts[31]).track;
-          const GUILD_ONBOARDING_STEP_COMPLETED = required.GUILD_ONBOARDING_STEP_COMPLETED;
+          const GUILD_ONBOARDING_STEP_COMPLETED = constants.GUILD_ONBOARDING_STEP_COMPLETED;
           currentPromptIdx(prompts[31]);
           const obj2 = guildId(prompts[32]);
           const merged = Object.assign(obj2.collectGuildAnalyticsMetadata(closure_1_0));
           track(GUILD_ONBOARDING_STEP_COMPLETED, obj);
           const tmp4 = closure_1_0;
           if (backShouldLeaveGuild) {
-            channel = channel.getChannel(sharedValue.getLastSelectedChannelId());
+            channel = channel.getChannel(callback.getLastSelectedChannelId());
             if (null != channel) {
               if (channel.guild_id !== tmp4) {
                 const tmp3Result = guildId(prompts[14]);
-                tmp3Result.transitionTo(closure_18.CHANNEL(channel.guild_id, channel.id));
+                tmp3Result.transitionTo(guildSplashURL.CHANNEL(channel.guild_id, channel.id));
               }
               onClose();
             }
             const tmp3Result2 = guildId(prompts[14]);
-            tmp3Result2.transitionTo(closure_18.ME, { navigationReplace: true });
+            tmp3Result2.transitionTo(guildSplashURL.ME, { navigationReplace: true });
           } else {
             onClose();
           }
@@ -576,13 +628,13 @@ export default function GuildOnboardingPrompt(guildId) {
     }
     if (0 === tmp) {
       let headerBackButton;
-      const tmp6 = closure_7;
+      const tmp6 = closure_6;
       if (tmp6) {
         let obj3 = NavigatorHeader;
         headerBackButton = obj3.getHeaderBackButton(() => {
           obj = { step: 0, skipped: false, back: true, options_selected: stateFromStoresArray.length, in_onboarding: true, is_final_step: false };
           const track = currentPromptIdx(prompts[31]).track;
-          const GUILD_ONBOARDING_STEP_COMPLETED = required.GUILD_ONBOARDING_STEP_COMPLETED;
+          const GUILD_ONBOARDING_STEP_COMPLETED = constants.GUILD_ONBOARDING_STEP_COMPLETED;
           currentPromptIdx(prompts[31]);
           const obj2 = guildId(prompts[32]);
           const merged = Object.assign(obj2.collectGuildAnalyticsMetadata(closure_1_0));
@@ -596,48 +648,48 @@ export default function GuildOnboardingPrompt(guildId) {
     headerBackButton = obj2.getHeaderBackButton(() => {
       obj = { step, skipped: false, back: true, options_selected: stateFromStoresArray.length, in_onboarding: true, is_final_step: false };
       const track = currentPromptIdx(prompts[31]).track;
-      const GUILD_ONBOARDING_STEP_COMPLETED = required.GUILD_ONBOARDING_STEP_COMPLETED;
+      const GUILD_ONBOARDING_STEP_COMPLETED = constants.GUILD_ONBOARDING_STEP_COMPLETED;
       currentPromptIdx(prompts[31]);
       const obj2 = guildId(prompts[32]);
       const merged = Object.assign(obj2.collectGuildAnalyticsMetadata(closure_1_0));
       track(GUILD_ONBOARDING_STEP_COMPLETED, obj);
       const obj3 = { step: step - 1, required: closure_1_2[step - 1].required };
       const track2 = currentPromptIdx(prompts[31]).track;
-      const GUILD_ONBOARDING_STEP_VIEWED = required.GUILD_ONBOARDING_STEP_VIEWED;
+      const GUILD_ONBOARDING_STEP_VIEWED = constants.GUILD_ONBOARDING_STEP_VIEWED;
       currentPromptIdx(prompts[31]);
       const obj4 = guildId(prompts[32]);
       const merged1 = Object.assign(obj4.collectGuildAnalyticsMetadata(closure_1_0));
       track2(GUILD_ONBOARDING_STEP_VIEWED, obj3);
       navigation.pop();
     }, true);
-  }, items12);
-  const obj12 = { style: tmp.flex, children: items15 };
-  const rect = { top: true, bottom: true, style: items13, children: guildSplashURL(View, obj13) };
-  items13 = [, ];
-  ({ flex: arr16[0], container: arr16[1] } = tmp);
+  }, items24);
+  let obj5 = { style: tmp.flex, children: items27 };
+  const rect = { top: true, bottom: true, style: items25, children: required2(View, obj7) };
+  items25 = [, ];
+  ({ flex: arr28[0], container: arr28[1] } = tmp);
   const SafeAreaPaddingView = tmp2(tmp3[35]).SafeAreaPaddingView;
-  obj13 = { style: items14, children: tmp38Result };
-  items14 = [tmp.flex, animatedStyle4];
-  tmp38Result = null;
+  obj7 = { style: items26, children: tmp72Result };
+  items26 = [tmp.flex, animatedStyle5];
+  tmp72Result = null;
   View = tmp6(tmp3[26]).View;
   if (tmp10) {
-    tmp38Result = null;
+    tmp72Result = null;
     if (null != tmp11) {
       function handleOnPress() {
         const tmp = required;
         if (!tmp) {
-          const tmp2 = closure_17;
+          const tmp2 = constants;
           if (tmp2) {
-            navigation.push(stateFromStoresArray.COMPLETED);
+            navigation.push(required.COMPLETED);
           } else {
             obj = { step: currentPromptIdx, options_selected: stateFromStoresArray.length, skipped: 0 === stateFromStoresArray.length, back: false, in_onboarding: true, is_final_step: false };
             const track = AnalyticsUtilsDefault.track;
-            const GUILD_ONBOARDING_STEP_COMPLETED = required.GUILD_ONBOARDING_STEP_COMPLETED;
+            const GUILD_ONBOARDING_STEP_COMPLETED = constants.GUILD_ONBOARDING_STEP_COMPLETED;
             AnalyticsUtilsDefault;
             const obj2 = AppAnalyticsUtils;
             const merged = Object.assign(obj2.collectGuildAnalyticsMetadata(guildId));
             track(GUILD_ONBOARDING_STEP_COMPLETED, obj);
-            const tmp6 = required;
+            const tmp6 = constants;
             const tmp8 = guildId;
             if (currentPromptIdx < prompts.length - 1) {
               const obj3 = { step: currentPromptIdx + 1, required: prompts[currentPromptIdx + 1].required };
@@ -650,60 +702,60 @@ export default function GuildOnboardingPrompt(guildId) {
             }
             if (currentPromptIdx + 1 < prompts.length) {
               const obj4 = { currentPrompt: currentPromptIdx + 1 };
-              navigation.push(stateFromStoresArray.PROMPT, obj4);
+              navigation.push(required.PROMPT, obj4);
             } else {
               const tmp7Result2 = GuildOnboardingUtils;
               if (tmp7Result2.showRulesInOnboarding(stateFromStores2, stateFromStores)) {
-                navigation.push(stateFromStoresArray.RULES);
+                navigation.push(required.RULES);
               }
             }
           }
         }
       }
       const type = tmp11.type;
-      if (stateFromStores2.MULTIPLE_CHOICE === type) {
-        const obj14 = { guildId, currentPrompt: tmp11, lastPrompt: tmp18, currentPromptIndex: currentPromptIdx, numberOfPrompts: prompts.length, selectOption, handleOnPress };
-        tmp38Result = tmp38(tmp2(tmp3[36]).MultipleChoicePrompt, obj14);
-      } else if (tmp40.DROPDOWN === type) {
-        const obj15 = { guildId, currentPrompt: tmp11, lastPrompt: tmp18, currentPromptIndex: currentPromptIdx, numberOfPrompts: prompts.length, selectOption, handleOnPress };
-        tmp38Result = tmp38(tmp2(tmp3[36]).DropdownPrompt, obj15);
+      if (stateFromStoresArray.MULTIPLE_CHOICE === type) {
+        const obj8 = { guildId, currentPrompt: tmp11, lastPrompt: tmp18, currentPromptIndex: currentPromptIdx, numberOfPrompts: prompts.length, selectOption, handleOnPress };
+        tmp72Result = tmp72(tmp2(tmp3[36]).MultipleChoicePrompt, obj8);
+      } else if (tmp74.DROPDOWN === type) {
+        const obj9 = { guildId, currentPrompt: tmp11, lastPrompt: tmp18, currentPromptIndex: currentPromptIdx, numberOfPrompts: prompts.length, selectOption, handleOnPress };
+        tmp72Result = tmp72(tmp2(tmp3[36]).DropdownPrompt, obj9);
       } else {
         const tmp2Result23 = tmp2(tmp3[37]);
         tmp2Result23.assertNever(tmp11.type);
       }
     }
   }
-  items15 = [guildSplashURL(SafeAreaPaddingView, rect), ];
-  const obj17 = { style: items16, pointerEvents: "none", children: items20 };
-  items16 = [, ];
-  const obj16 = { style: stateFromStores1.absoluteFill, pointerEvents: "box-none", children: items24 };
-  ({ flex: arr19[0], landingOverlay: arr19[1] } = tmp);
-  const obj18 = { style: items17, children: items18 };
-  items17 = [tmp.landingOverlay, animatedStyle3];
-  let tmp38Result2 = null;
+  items27 = [required2(SafeAreaPaddingView, rect), ];
+  const obj12 = { style: items28, pointerEvents: "none", children: items32 };
+  items28 = [, ];
+  const obj11 = { style: absoluteFill.absoluteFill, pointerEvents: "box-none", children: items36 };
+  ({ flex: arr31[0], landingOverlay: arr31[1] } = tmp);
+  const obj13 = { style: items29, children: items30 };
+  items29 = [tmp.landingOverlay, animatedStyle4];
+  let tmp72Result2 = null;
   const View2 = tmp6(tmp3[26]).View;
   if (null != guildSplashURL) {
-    const obj19 = { splashUrl: guildSplashURL, color: first };
-    tmp38Result2 = tmp38(BackgroundImageGradient, obj19);
+    const obj14 = { splashUrl: guildSplashURL, color: first };
+    tmp72Result2 = tmp72(BackgroundImageGradient, obj14);
   }
-  items18 = [tmp38Result2, ];
-  const obj20 = { style: tmp.darkColorGradient, start: tmp2(tmp3[22]).VerticalGradient.START, end: tmp2(tmp3[22]).VerticalGradient.END, colors: items19 };
-  items19 = [, ];
+  items30 = [tmp72Result2, ];
+  const obj15 = { style: tmp.darkColorGradient, start: tmp2(tmp3[22]).VerticalGradient.START, end: tmp2(tmp3[22]).VerticalGradient.END, colors: items31 };
+  items31 = [, ];
   const tmp6Result2 = tmp6(tmp3[21]);
   const tmp2Result24 = tmp2(tmp3[19]);
-  items19[0] = tmp2Result24.hexWithOpacity(tmp6(tmp3[17]).unsafe_rawColors.PRIMARY_800, 0.5);
-  items19[1] = tmp6(tmp3[17]).unsafe_rawColors.PRIMARY_800;
-  items18[1] = guildSplashURL(tmp6Result2, obj20);
-  items20 = [closure_21(View2, obj18), , ];
-  const obj21 = { style: items21, children: guildSplashURL(tmp6(tmp3[38]), obj22) };
-  items21 = [tmp.artWrapper, animatedStyle];
+  items31[0] = tmp2Result24.hexWithOpacity(tmp6(tmp3[17]).unsafe_rawColors.PRIMARY_800, 0.5);
+  items31[1] = tmp6(tmp3[17]).unsafe_rawColors.PRIMARY_800;
+  items30[1] = required2(tmp6Result2, obj15);
+  items32 = [closure_21(View2, obj13), , ];
+  const obj16 = { style: items33, children: required2(tmp6(tmp3[38]), obj17) };
+  items33 = [tmp.artWrapper, animatedStyle];
   const View3 = tmp6(tmp3[26]).View;
-  obj22 = { source: landingAnimation, autoPlay: !stateFromStores1, style: { width: "100%" } };
-  items20[1] = guildSplashURL(View3, obj21);
-  const obj23 = { style: items22, children: items23 };
-  items22 = [tmp.landingBody, animatedStyle1];
+  obj17 = { source: landingAnimation, autoPlay: !stateFromStores1, style: { width: "100%" } };
+  items32[1] = required2(View3, obj16);
+  const obj18 = { style: items34, children: items35 };
+  items34 = [tmp.landingBody, animatedStyle2];
   const View4 = tmp6(tmp3[26]).View;
-  const obj24 = { style: tmp.subtitle, variant: "text-md/semibold", color: "text-overlay-light", children: format(O2bQlD, { guildName: str }) };
+  const obj19 = { style: tmp.subtitle, variant: "body-md/semibold", color: "text-overlay-light", children: format(O2bQlD, { guildName: str }) };
   const Text = tmp2(tmp3[39]).Text;
   const intl = tmp2(tmp3[40]).intl;
   format = intl.format;
@@ -715,21 +767,21 @@ export default function GuildOnboardingPrompt(guildId) {
   if (str == null) {
     str = "";
   }
-  items23 = [guildSplashURL(Text, obj24), ];
-  const obj25 = { style: tmp.onboardingTitle, accessibilityRole: "header", variant: "heading-xl/semibold", color: "text-overlay-light", children: intl2.string(tmp2(tmp3[40]).t["Alcl/e"]) };
+  items35 = [required2(Text, obj19), ];
+  const obj20 = { style: tmp.onboardingTitle, accessibilityRole: "header", variant: "heading-xl/semibold", color: "text-overlay-light", children: intl2.string(tmp2(tmp3[40]).t["Alcl/e"]) };
   const Text2 = tmp2(tmp3[39]).Text;
   intl2 = tmp2(tmp3[40]).intl;
-  items23[1] = guildSplashURL(Text2, obj25);
-  items20[2] = closure_21(View4, obj23);
-  items24 = [closure_21(closure_7, obj17), ];
-  const obj26 = { style: items25, animatedProps, children: guildSplashURL(Text3, obj27) };
-  items25 = [tmp.onboardingPolicy, animatedStyle2, { bottom }];
+  items35[1] = required2(Text2, obj20);
+  items32[2] = closure_21(View4, obj18);
+  items36 = [closure_21(isFirstOpen, obj12), ];
+  const obj21 = { style: items37, animatedProps, children: required2(Text3, obj22) };
+  items37 = [tmp.onboardingPolicy, animatedStyle3, { bottom }];
   const View5 = tmp6(tmp3[26]).View;
-  obj27 = { style: tmp.onboardingPolicyText, variant: "heading-sm/normal", color: "text-default", children: intl3.format(tmp2(tmp3[40]).t.kI6UoD, obj28) };
+  obj22 = { style: tmp.onboardingPolicyText, variant: "heading-xs/medium", color: "text-default", children: intl3.format(tmp2(tmp3[40]).t.kI6UoD, obj23) };
   Text3 = tmp2(tmp3[39]).Text;
   intl3 = tmp2(tmp3[40]).intl;
-  obj28 = { privacyLink: constants2.PRIVACY };
-  items24[1] = guildSplashURL(View5, obj26);
-  items15[1] = closure_21(closure_7, obj16);
-  return closure_21(closure_7, obj12);
+  obj23 = { privacyLink: constants2.PRIVACY };
+  items36[1] = required2(View5, obj21);
+  items27[1] = closure_21(isFirstOpen, obj11);
+  return closure_21(isFirstOpen, obj5);
 };

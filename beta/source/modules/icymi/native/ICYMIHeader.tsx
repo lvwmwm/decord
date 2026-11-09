@@ -1,17 +1,17 @@
-// Module ID: 18587
-// Function ID: 18588
+// Module ID: 18947
+// Function ID: 18948
 // Name: ICYMIHeader
-// Dependencies: [19, 17, 21, 18523, 575, 5624, 1113, 2]
+// Dependencies: [19, 17, 21, 18878, 575, 5751, 1113, 2]
 // Exports: default
 
-// Module 18587 (ICYMIHeader)
+// Module 18947 (ICYMIHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5624 */;
+import Text_Text from "Text/Text" /* 5751 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createICYMIStyles from "createICYMIStyles" /* 18523 */;
+import createICYMIStyles from "createICYMIStyles" /* 18878 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_4;
@@ -37,7 +37,7 @@ export default function ICYMIHeader() {
   items = [, ];
   const obj2 = { style: tmp.separator };
   items[0] = React3(View, obj2);
-  const obj3 = { style: tmp.text, variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: intl.string(intl2.t["jnXV/V"]) };
+  const obj3 = { style: tmp.text, variant: "heading-sm/semibold", color: "mobile-text-heading-primary", children: intl.string(intl2.t["jnXV/V"]) };
   const Text = Text_Text.Text;
   intl = intl2.intl;
   items[1] = React3(Text, obj3);

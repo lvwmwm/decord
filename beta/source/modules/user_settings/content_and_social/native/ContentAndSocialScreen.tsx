@@ -1,25 +1,25 @@
-// Module ID: 17904
-// Function ID: 17905
+// Module ID: 18241
+// Function ID: 18242
 // Name: ContentAndSocialScreen
-// Dependencies: [32, 19, 17, 8432, 1072, 21, 5014, 575, 1113, 2061, 17905, 16714, 14251, 17910, 7472, 11540, 16712, 16583, 17911, 5624, 2]
+// Dependencies: [32, 19, 17, 8503, 1072, 21, 5140, 575, 1113, 2185, 18242, 17036, 14487, 18247, 7536, 11685, 17034, 16905, 18248, 5751, 2]
 // Exports: ConnectedGamesPage, DiscordPermissionsPage, default
 
-// Module 17904 (ContentAndSocialScreen)
+// Module 18241 (ContentAndSocialScreen)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl16 from "intl" /* 1113 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2061 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import SettingsConstants from "SettingsConstants" /* 8432 */;
-import SettingBuilders from "SettingBuilders" /* 11540 */;
-import ContactSyncUtils from "ContactSyncUtils" /* 14251 */;
-import SafetyGuildSettingGuildSelect from "SafetyGuildSettingGuildSelect" /* 17905 */;
-import useAuthorizedSlayerApplicationsDefault from "useAuthorizedSlayerApplications" /* 17911 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2185 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import SettingsConstants from "SettingsConstants" /* 8503 */;
+import SettingBuilders from "SettingBuilders" /* 11685 */;
+import ContactSyncUtils from "ContactSyncUtils" /* 14487 */;
+import SafetyGuildSettingGuildSelect from "SafetyGuildSettingGuildSelect" /* 18242 */;
+import useAuthorizedSlayerApplicationsDefault from "useAuthorizedSlayerApplications" /* 18248 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let c10;
@@ -42,7 +42,7 @@ let closure_12 = createStyles(obj);
 const result = size.fileFinishedImporting("modules/user_settings/content_and_social/native/ContentAndSocialScreen.tsx");
 
 export default function ContentAndSocialSettings(route) {
-  const f113242 = () => {
+  const f115167 = () => {
     let tab;
     if (route != null) {
       const params = route.params;
@@ -62,9 +62,9 @@ export default function ContentAndSocialSettings(route) {
     ({ CONTENT_AND_SOCIAL_DISCORD: arr[0], CONNECTED_GAMES: arr[1] } = MobileUserSettings);
     return items;
   }, []);
-  const defaultIndex = _slicedToArray(react.useState(f113242), 2)[0];
+  const defaultIndex = _slicedToArray(react.useState(f115167), 2)[0];
   let items = [defaultIndex, memo];
-  _slicedToArray(react.useState(f113242), 2);
+  _slicedToArray(react.useState(f115167), 2);
   const node = react.useMemo(() => {
     const obj = SettingBuilders;
     const obj2 = { defaultIndex, settings: memo };
@@ -73,16 +73,16 @@ export default function ContentAndSocialSettings(route) {
   return closure_9(memo(defaultIndex[17]), { node });
 };
 export function DiscordPermissionsPage() {
+  let ageNoticeMessageRequestsNoticeVariant;
   let allServersOptionSelected;
   let items2;
-  let tinyBroncoMessageRequestsNoticeVariant;
-  let obj = allServersOptionSelected(tinyBroncoMessageRequestsNoticeVariant[13]);
+  let obj = allServersOptionSelected(ageNoticeMessageRequestsNoticeVariant[13]);
   allServersOptionSelected = obj.useAllServersOptionSelected();
-  let obj2 = allServersOptionSelected(tinyBroncoMessageRequestsNoticeVariant[14]);
+  let obj2 = allServersOptionSelected(ageNoticeMessageRequestsNoticeVariant[14]);
   const sensitiveContentFilterHelpArticle = obj2.useSensitiveContentFilterHelpArticle();
-  let obj3 = allServersOptionSelected(tinyBroncoMessageRequestsNoticeVariant[11]);
-  tinyBroncoMessageRequestsNoticeVariant = obj3.useTinyBroncoMessageRequestsNoticeVariant();
-  let items = [allServersOptionSelected, sensitiveContentFilterHelpArticle, tinyBroncoMessageRequestsNoticeVariant];
+  let obj3 = allServersOptionSelected(ageNoticeMessageRequestsNoticeVariant[11]);
+  ageNoticeMessageRequestsNoticeVariant = obj3.useAgeNoticeMessageRequestsNoticeVariant();
+  let items = [allServersOptionSelected, sensitiveContentFilterHelpArticle, ageNoticeMessageRequestsNoticeVariant];
   const memo = react.useMemo(() => {
     let RvjRRI;
     let dliU4j;
@@ -163,7 +163,7 @@ export function DiscordPermissionsPage() {
     const items6 = [, , ];
     ({ SAFETY_GUILD_SETTING_GUILD_SELECT: arr7[0], SAFETY_GUILD_SETTING_DIRECT_MESSAGES: arr7[1], SAFETY_GUILD_SETTING_MESSAGE_REQUESTS: arr7[2] } = MobileUserSettings);
     const obj11 = { label: intl7.string(intl16.t["6x5uWQ"]), settings: items7 };
-    const tmp9 = null != tinyBroncoMessageRequestsNoticeVariant;
+    const tmp9 = null != ageNoticeMessageRequestsNoticeVariant;
     intl7 = intl16.intl;
     items7 = [MobileUserSettings.ACTIVITY_PRIVACY_SHARE_MY_ACTIVITY];
     const items8 = [obj11, , , , , , , , , , ];
@@ -189,7 +189,7 @@ export function DiscordPermissionsPage() {
     tmp16 = undefined;
     if (allServersOptionSelected) {
       if (tmp9) {
-        tmp16 = React4(tmp3(16714).MessageRequestsNotice, {});
+        tmp16 = React4(tmp3(17036).MessageRequestsNotice, {});
       }
     }
     items8[4] = obj15;
@@ -239,9 +239,9 @@ export function DiscordPermissionsPage() {
     const obj2 = { sections: memo };
     return obj.createList(obj2);
   }, items1);
-  let obj5 = { screen: allServersOptionSelected(tinyBroncoMessageRequestsNoticeVariant[16]).SettingsScreen.CONTENT_AND_SOCIAL };
-  let tmp6 = sensitiveContentFilterHelpArticle(tinyBroncoMessageRequestsNoticeVariant[16]);
-  items2 = [closure_9(tmp6, obj5), closure_9(sensitiveContentFilterHelpArticle(tinyBroncoMessageRequestsNoticeVariant[17]), { node: memo1 })];
+  let obj5 = { screen: allServersOptionSelected(ageNoticeMessageRequestsNoticeVariant[16]).SettingsScreen.CONTENT_AND_SOCIAL };
+  let tmp6 = sensitiveContentFilterHelpArticle(ageNoticeMessageRequestsNoticeVariant[16]);
+  items2 = [closure_9(tmp6, obj5), closure_9(sensitiveContentFilterHelpArticle(ageNoticeMessageRequestsNoticeVariant[17]), { node: memo1 })];
   return closure_11(closure_10, obj4);
 }
 export function ConnectedGamesPage() {
@@ -263,11 +263,11 @@ export function ConnectedGamesPage() {
     tmp7 = React4(hasOwnProperty, obj2);
   } else if (0 === slayerSdkApplications.length) {
     let obj3 = { style: tmp.emptyContainer, children: items };
-    let obj4 = { variant: "text-md/semibold", color: "text-strong", children: intl.string(intl16.t["+0U77d"]) };
+    let obj4 = { variant: "body-md/semibold", color: "text-strong", children: intl.string(intl16.t["+0U77d"]) };
     const Text = Text_Text.Text;
     intl = intl16.intl;
     items = [React4(Text, obj4), ];
-    let obj5 = { variant: "text-sm/normal", color: "text-muted", children: format(V8wClM, obj6) };
+    let obj5 = { variant: "body-sm/normal", color: "text-muted", children: format(V8wClM, obj6) };
     const Text2 = Text_Text.Text;
     let intl2 = intl16.intl;
     format = intl2.format;
@@ -278,7 +278,7 @@ export function ConnectedGamesPage() {
     tmp7 = unpackModuleId(metroRequire, obj3);
   } else {
     let obj = { node: tmp5 };
-    tmp7 = React4(tmp2(16583), obj);
+    tmp7 = React4(tmp2(16905), obj);
   }
   return tmp7;
 }

@@ -1,19 +1,20 @@
-// Module ID: 18379
-// Function ID: 18380
+// Module ID: 18718
+// Function ID: 18719
 // Name: GuildsBarMessages
-// Dependencies: [19, 5045, 1072, 21, 18380, 18365, 504, 18368, 575, 1113, 18381, 8643, 2]
+// Dependencies: [19, 8980, 5171, 1072, 21, 18719, 18704, 504, 18707, 575, 1113, 18720, 8714, 2]
 
-// Module 18379 (GuildsBarMessages)
+// Module 18718 (GuildsBarMessages)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
-import GuildsBarAnimatedItemWrapper from "GuildsBarAnimatedItemWrapper" /* 18365 */;
-import useGuildsBarBottomRightBadgeDefault from "useGuildsBarBottomRightBadge" /* 18368 */;
-import transitionGuildsBarToGuildOrOpenSelectedChannelDefault from "transitionGuildsBarToGuildOrOpenSelectedChannel" /* 18380 */;
+import GuildsBarAnimatedItemWrapper from "GuildsBarAnimatedItemWrapper" /* 18704 */;
+import useGuildsBarBottomRightBadgeDefault from "useGuildsBarBottomRightBadge" /* 18707 */;
+import transitionGuildsBarToGuildOrOpenSelectedChannelDefault from "transitionGuildsBarToGuildOrOpenSelectedChannel" /* 18719 */;
 import react from "react" /* 19 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5045 */;
+import ICYMIStore from "ICYMIStore" /* 8980 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5171 */;
 import size from "module_2" /* 2 */;
 
 const GuildsBarAnimatedItemWrapperDefault = GuildsBarAnimatedItemWrapper;
@@ -29,13 +30,16 @@ const config = {
 const memoResult = react.memo(function GuildsBarMessages() {
   let badge;
   let cutouts;
+  let isTabFocused;
+  let tmp2 = dependencyMap;
   const obj = GuildsBarAnimatedItemWrapper;
-  const items = [SelectedGuildStore];
+  const items = [SelectedGuildStore, ICYMIStore];
   const guildsBarAnimatedWrapperStyles = obj.useGuildsBarAnimatedWrapperStyles();
   const obj2 = get_initialized;
   const stateFromStores = obj2.useStateFromStores(items, () => {
     guildId = guildId.getGuildId();
-    return null == guildId || guildId === ME;
+    const tmp2 = (null == guildId || guildId === ME) && !isTabFocused.getIsTabFocused();
+    return tmp2;
   });
   ({ badge, cutouts } = useGuildsBarBottomRightBadgeDefault({ mentionCount: 0 }));
   useGuildsBarBottomRightBadgeDefault({ mentionCount: 0 });

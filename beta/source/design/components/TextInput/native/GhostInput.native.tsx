@@ -1,21 +1,21 @@
-// Module ID: 15863
-// Function ID: 15864
+// Module ID: 16180
+// Function ID: 16181
 // Name: GhostInput
-// Dependencies: [109, 19, 21, 5014, 5624, 575, 7097, 5083, 7090, 7083, 7100, 7103, 7084, 2]
+// Dependencies: [109, 19, 21, 5140, 5751, 575, 7168, 5201, 7156, 7149, 7171, 7174, 7150, 2]
 // Exports: GhostInput
 
-// Module 15863 (GhostInput)
+// Module 16180 (GhostInput)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import useFieldLabelA11yNative from "useFieldLabelA11yNative" /* 5083 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import getRequiredFieldA11yName from "getRequiredFieldA11yName" /* 7084 */;
-import useTextField from "useTextField" /* 7090 */;
-import InputFieldContainer from "InputFieldContainer" /* 7097 */;
-import _objectWithoutProperties2 from "_objectWithoutProperties" /* 7103 */;
+import useFieldLabelA11yNative from "useFieldLabelA11yNative" /* 5201 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import getRequiredFieldA11yName from "getRequiredFieldA11yName" /* 7150 */;
+import useTextField from "useTextField" /* 7156 */;
+import InputFieldContainer from "InputFieldContainer" /* 7168 */;
+import _objectWithoutProperties2 from "_objectWithoutProperties" /* 7174 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let closure_3 = ["labelId", "accessibilityLabel"];
@@ -31,7 +31,7 @@ let closure_6 = createStyles.createStyles(() => {
     str2 = "default";
   }
   const input = { color: TEXT_DEFAULT, minWidth: 48 };
-  const obj = { md: Text_Text.TextStyleSheet["text-md/semibold"], lg: Text_Text.TextStyleSheet["text-lg/semibold"] };
+  const obj = { md: Text_Text.TextStyleSheet["body-md/semibold"], lg: Text_Text.TextStyleSheet["body-lg/semibold"] };
   const merged = Object.assign(obj[str]);
   if ("error" === str2) {
     TEXT_DEFAULT = nativeDefault.colors.TEXT_FEEDBACK_CRITICAL;
@@ -65,7 +65,7 @@ export function GhostInput(size) {
   const tmpResult4 = useTextField;
   const textField = tmpResult4.useTextField(size, undefined);
   ({ innerRef, inputProps } = textField);
-  const Input = tmp(7083).Input;
+  const Input = tmp(7149).Input;
   const merged = Object.assign(size);
   const items = [size.containerStyle, ];
   let prop;
@@ -73,7 +73,7 @@ export function GhostInput(size) {
     prop = tmp4.centeredContainerStyle;
   }
   items[1] = prop;
-  const NativeTextInput = tmp(7100).NativeTextInput;
+  const NativeTextInput = tmp(7171).NativeTextInput;
   const tmpResult5 = _objectWithoutProperties2;
   const merged1 = Object.assign(tmpResult5.propsForNativeTextInput(inputProps));
   const merged2 = Object.assign(tmp8);

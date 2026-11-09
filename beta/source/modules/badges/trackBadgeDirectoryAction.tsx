@@ -1,14 +1,14 @@
-// Module ID: 11479
-// Function ID: 11480
+// Module ID: 11597
+// Function ID: 11598
 // Name: trackBadgeDirectoryAction
-// Dependencies: [1383, 8763, 1072, 1252, 2]
+// Dependencies: [1385, 8834, 1072, 1252, 2]
 // Exports: default
 
-// Module 11479 (trackBadgeDirectoryAction)
+// Module 11597 (trackBadgeDirectoryAction)
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import UserStore from "UserStore" /* 1383 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8763 */;
+import UserStore from "UserStore" /* 1385 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8834 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;
@@ -21,11 +21,14 @@ export default function trackBadgeDirectoryAction(arg0) {
   let displayedUserId;
   let flag;
   let flag2;
+  let hasUnreadIndicator;
   let id;
   let isSociallyNavigated;
+  let source;
+  let surface;
   let tmp10;
   ({ badge, displayedUserId } = arg0);
-  ({ actionName, isSociallyNavigated } = arg0);
+  ({ actionName, isSociallyNavigated, hasUnreadIndicator, source, surface } = arg0);
   const currentUser = UserStore.getCurrentUser();
   if (currentUser != null) {
     id = currentUser.id;
@@ -47,7 +50,7 @@ export default function trackBadgeDirectoryAction(arg0) {
     const badges = BadgeDirectoryStore.getBadges(displayedUserId);
     length = badges.filter((owned) => owned.owned).length;
   }
-  const obj = { badge_action: actionName, badge_id, badge_tier: tmp10, badge_owner_id: displayedUserId, is_owned: flag, progress_to_next_tier: remainingToNextTier, is_earnable: flag2, is_socially_navigated: isSociallyNavigated, total_badges_owned: length };
+  const obj = { badge_action: actionName, badge_id, badge_tier: tmp10, badge_owner_id: displayedUserId, is_owned: flag, progress_to_next_tier: remainingToNextTier, is_earnable: flag2, is_socially_navigated: isSociallyNavigated, total_badges_owned: length, has_unread_indicator: hasUnreadIndicator, surface, source };
   badge_id = undefined;
   const track = AnalyticsUtilsDefault.track;
   const BADGE_DIRECTORY_ACTION = AnalyticEvents.BADGE_DIRECTORY_ACTION;

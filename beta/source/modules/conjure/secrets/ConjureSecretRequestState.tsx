@@ -1,13 +1,13 @@
-// Module ID: 12591
-// Function ID: 12592
+// Module ID: 12794
+// Function ID: 12795
 // Name: ConjureSecretRequestState
-// Dependencies: [32, 19, 1113, 3868, 10852, 2]
-// Exports: markMcpSecretRequestSaved, secretRequestStatuses, unmarkMcpSecretRequestSaved, useSecretRequestStatusChanged
+// Dependencies: [32, 19, 1113, 4026, 10971, 2]
+// Exports: markMcpSecretRequestSaved, newestOpenSecretRequest, secretRequestStatuses, unmarkMcpSecretRequestSaved, useSecretRequestStatusChanged
 
-// Module 12591 (ConjureSecretRequestState)
+// Module 12794 (ConjureSecretRequestState)
 import intl3 from "intl" /* 1113 */;
-import _modDef3868 from "module_3868" /* 3868 */;
-import conjureChatTurns from "conjureChatTurns" /* 10852 */;
+import _modDef4026 from "module_4026" /* 4026 */;
+import conjureChatTurns from "conjureChatTurns" /* 10971 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -18,10 +18,10 @@ function isSecretsSavedMessage(content) {
   const str = content.content;
   const trimmed = str.trim();
   const intl = intl3.intl;
-  let tmp5 = trimmed === intl.string(_modDef3868.UGqnoV);
+  let tmp5 = trimmed === intl.string(_modDef4026.UGqnoV);
   if (!tmp5) {
     const intl2 = intl3.intl;
-    tmp5 = trimmed === intl2.string(_modDef3868.sMQt5O);
+    tmp5 = trimmed === intl2.string(_modDef4026.sMQt5O);
   }
   return tmp5;
 }
@@ -142,6 +142,27 @@ export function secretRequestStatuses(memo, secrets) {
     } while (0 <= diff);
   }
   return map;
+}
+export function newestOpenSecretRequest(arg0, get) {
+  let tmp2;
+  let diff = arg0.length - 1;
+  if (0 <= diff) {
+    while (true) {
+      tmp2 = arg0[diff];
+      let secretRequest;
+      if (tmp2 != null) {
+        secretRequest = tmp2.secretRequest;
+      }
+      if (null != secretRequest) {
+        if ("open" === get.get(tmp2.render_id)) {
+          break;
+        }
+      }
+      diff = diff - 1;
+    }
+    return tmp2;
+  }
+  return null;
 }
 export function useSecretRequestStatusChanged(cardId, status) {
   let flag;

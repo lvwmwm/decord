@@ -1,36 +1,32 @@
-// Module ID: 10540
-// Function ID: 10541
+// Module ID: 10659
+// Function ID: 10660
 // Name: MediaKeyboardList
-// Dependencies: [32, 19, 17, 1492, 1621, 5273, 7940, 21, 5014, 575, 5095, 10541, 10544, 7963, 1494, 1625, 1491, 5586, 5275, 10089, 8222, 12, 10545, 10552, 10554, 10038, 10555, 7964, 7240, 1113, 2]
+// Dependencies: [32, 19, 17, 1494, 1623, 5389, 8009, 21, 5140, 575, 1652, 1705, 10660, 10663, 8032, 1496, 1627, 1493, 5714, 5392, 10210, 8292, 12, 10664, 10671, 10673, 10160, 10674, 8033, 7304, 1113, 2]
 
-// Module 10540 (MediaKeyboardList)
+// Module 10659 (MediaKeyboardList)
 import _modDef12 from "module_12" /* 12 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1621 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 5273 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 7940 */;
-import react_nativeDefault from "react-native" /* 7963 */;
-import cheapWorkletShallowEqual from "cheapWorkletShallowEqual" /* 10089 */;
-import DeviceMediaDefault from "DeviceMedia" /* 10541 */;
-import MediaKeyboardItem from "MediaKeyboardItem" /* 10545 */;
-import MediaKeyboardFooterDefault from "MediaKeyboardFooter" /* 10552 */;
-import MediaKeyboardLimitedPickerNoticeDefault from "MediaKeyboardLimitedPickerNotice" /* 10554 */;
+import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1623 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 5389 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 8009 */;
+import react_nativeDefault from "react-native" /* 8032 */;
+import DeviceMediaDefault from "DeviceMedia" /* 10660 */;
+import MediaKeyboardItem from "MediaKeyboardItem" /* 10664 */;
+import MediaKeyboardFooterDefault from "MediaKeyboardFooter" /* 10671 */;
+import MediaKeyboardLimitedPickerNoticeDefault from "MediaKeyboardLimitedPickerNotice" /* 10673 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import DimensionsStore from "DimensionsStore" /* 1492 */;
-import createStyles from "createStyles" /* 5014 */;
+import DimensionsStore from "DimensionsStore" /* 1494 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 const MediaKeyboardItemDefault = MediaKeyboardItem;
-let first;
 
 let NativeEventEmitter;
 let NativeModules;
 let obj2;
-let tmp2;
-const ReanimatedRexport = tmp2(5095);
 ({ NativeEventEmitter, NativeModules } = react_native);
 let closure_6 = MediaKeyboardConstants.InAppCameraUsedCameraPreviewTypes;
 let closure_7 = ActionSheetConstants.ACTION_SHEET_START_HEIGHT_RATIO;
@@ -40,20 +36,38 @@ const nativeEventEmitter = new NativeEventEmitter(NativeModules.PhotoLibraryHelp
 let obj = { listContainer: obj2 };
 obj2 = { backgroundColor: nativeDefault.colors.MOBILE_KEYBOARD_PANEL_BACKGROUND, marginTop: 8, paddingTop: 8 };
 let closure_11 = createStyles.createStyles(obj);
-let closure_12 = { code: "function MediaKeyboardListTsx1(){const{animatedIndex}=this.__closure;return animatedIndex.get();}" };
-let closure_13 = { code: "function MediaKeyboardListTsx2(currentIndex){const{latch,runOnJS,setIsExpanded}=this.__closure;if(currentIndex>0.1&&!latch.get()){latch.set(true);runOnJS(setIsExpanded)(true);}}" };
-let closure_14 = { code: "function MediaKeyboardListTsx3(){const{animatedSnapPoints}=this.__closure;return animatedSnapPoints.get();}" };
-let __initData = { code: "function MediaKeyboardListTsx4(snapPoints,previous){const{cheapWorkletArrayShallowEqual,runOnJS,setBottomSheetState,windowHeight,computedStartHeight,maxDynamicContentSize}=this.__closure;var _snapPoints$,_snapPoints;if(cheapWorkletArrayShallowEqual(snapPoints,previous!==null&&previous!==void 0?previous:undefined))return;runOnJS(setBottomSheetState)({minimum:windowHeight-((_snapPoints$=snapPoints[0])!==null&&_snapPoints$!==void 0?_snapPoints$:computedStartHeight),maximum:windowHeight-((_snapPoints=snapPoints[snapPoints.length-1])!==null&&_snapPoints!==void 0?_snapPoints:maxDynamicContentSize)});}" };
+let closure_12 = { code: "(function MediaKeyboardListTsx1(){let[animatedIndex]=this.__closure;return animatedIndex.get();})" };
+let closure_13 = { code: "(function MediaKeyboardListTsx2(currentIndex){let[latch,scheduleOnRN,setIsExpanded]=this.__closure;if(currentIndex>0.1&&!latch.get()){latch.set(true);scheduleOnRN(setIsExpanded,true);}})" };
+let closure_14 = { code: "(function MediaKeyboardListTsx3(){let[animatedSnapPoints]=this.__closure;return animatedSnapPoints.get();})" };
+let closure_15 = { code: "(function MediaKeyboardListTsx4(snapPoints,previous){let[cheapWorkletArrayShallowEqual,scheduleOnRN,setBottomSheetState,windowHeight,computedStartHeight,maxDynamicContentSize]=this.__closure;var _snapPoints$,_snapPoints;if(cheapWorkletArrayShallowEqual(snapPoints,previous!==null&&previous!==void 0?previous:undefined))return;scheduleOnRN(setBottomSheetState,{minimum:windowHeight-((_snapPoints$=snapPoints[0])!==null&&_snapPoints$!==void 0?_snapPoints$:computedStartHeight),maximum:windowHeight-((_snapPoints=snapPoints[snapPoints.length-1])!==null&&_snapPoints!==void 0?_snapPoints:maxDynamicContentSize)});})" };
 const memoResult = react.memo(function MediaKeyboardList(channel) {
-  let closure_15;
+  let animatedIndex;
+  let animatedSnapPoints;
   let intl;
-  let items10;
-  let items11;
+  let items18;
+  let items19;
+  let maximum;
+  let minimum;
   let num3;
   let prop;
+  let tmp19;
+  let tmp20;
   let tmp21;
   let tmp22;
+  let tmp23;
+  let tmp24;
+  let tmp25;
+  let tmp26;
+  let tmp27;
+  let tmp30;
+  let tmp31;
+  let tmp34;
+  let tmp35;
+  let tmp36;
+  let tmp37;
   let tmp38;
+  let tmp39;
+  let tmp54;
   let totalNumItems;
   channel = channel.channel;
   const draftType = channel.draftType;
@@ -76,10 +90,11 @@ const memoResult = react.memo(function MediaKeyboardList(channel) {
   const uploadLimit = channel.uploadLimit;
   const disableWhenReachedLimit = channel.disableWhenReachedLimit;
   flag = undefined;
-  let c26;
+  let c21;
   let memo;
   let callback1;
   let width;
+  minimum = undefined;
   let onHeightChange;
   let obj = onPressItem;
   const ref = onPressItem.useRef(true);
@@ -87,14 +102,14 @@ const memoResult = react.memo(function MediaKeyboardList(channel) {
   const callback = onPressItem.useCallback((nativeEvent) => {
     ref.current = nativeEvent.nativeEvent.contentOffset.y < 100;
   }, items);
-  const tmp3 = onAttachPress;
-  const tmp4 = onAttachPress(onPressItem.useState(null), 2);
+  let tmp3 = onAttachPress;
+  let tmp4 = onAttachPress(onPressItem.useState(null), 2);
   const photoPermissionStatus = tmp4[0];
-  __initData = tmp4[1];
-  let obj2 = draftType(onPressCamera[11]);
+  closure_15 = tmp4[1];
+  let tmp7 = onPressCamera;
+  let obj2 = draftType(onPressCamera[12]);
   const assets = obj2.useAssets();
-  let tmp9 = channel;
-  let obj3 = channel(onPressCamera[12]);
+  let obj3 = channel(onPressCamera[13]);
   const mediaKeyboardItemsPerRow = obj3.useMediaKeyboardItemsPerRow();
   const itemsPerRow = mediaKeyboardItemsPerRow.itemsPerRow;
   const itemsPageSizeRef = mediaKeyboardItemsPerRow.itemsPageSizeRef;
@@ -108,7 +123,7 @@ const memoResult = react.memo(function MediaKeyboardList(channel) {
   let items1 = [photoPermissionStatus, itemsPageSizeRef, extensions];
   const effect1 = onPressItem.useEffect(() => {
     let ref2;
-    let obj = draftType(onPressCamera[11]);
+    let obj = draftType(onPressCamera[12]);
     let obj2 = { batchSize: itemsPageSizeRef.current, extensions };
     obj.refreshAssets(obj2);
     let addListenerResult;
@@ -117,7 +132,7 @@ const memoResult = react.memo(function MediaKeyboardList(channel) {
       addListenerResult = obj3.addListener("photoLibraryChanged", () => {
         if (ref.current) {
           const obj2 = { batchSize: ref2.current, extensions };
-          const obj = draftType(onPressCamera[11]);
+          const obj = draftType(onPressCamera[12]);
           obj.refreshAssets(obj2);
         }
       });
@@ -130,86 +145,115 @@ const memoResult = react.memo(function MediaKeyboardList(channel) {
       }
     };
   }, items1);
-  const obj4 = channel(onPressCamera[14]);
+  const obj4 = channel(onPressCamera[15]);
   let closure_19 = obj4.useAppEntryKey();
-  const top = draftType(onPressCamera[15])().top;
-  const height = draftType(onPressCamera[16])({ ignoreKeyboard: true }).height;
+  const top = draftType(onPressCamera[16])().top;
+  const height = draftType(onPressCamera[17])({ ignoreKeyboard: true }).height;
   let result = height * onManageLimited;
-  let c21 = result;
-  const diff = height - channel(onPressCamera[17]).NAV_BAR_HEIGHT_MULTILINE - top;
-  let c22 = diff;
-  const obj5 = channel(onPressCamera[18]);
+  const diff = height - channel(onPressCamera[18]).NAV_BAR_HEIGHT_MULTILINE - top;
+  const obj5 = channel(onPressCamera[19]);
   const bottomSheetInternal = obj5.useBottomSheetInternal();
-  const animatedSnapPoints = bottomSheetInternal.animatedSnapPoints;
-  const animatedIndex = bottomSheetInternal.animatedIndex;
+  ({ animatedSnapPoints, animatedIndex } = bottomSheetInternal);
   const tmp16 = onAttachPress(onPressItem.useState({ minimum: result, maximum: diff }), 2);
-  const first1 = tmp16[0];
-  let minimum = first1.minimum;
-  let closure_24 = tmp18;
-  const maximum = first1.maximum;
-  const fn = function $() {
-    return animatedSnapPoints.get();
-  };
-  fn.__closure = { animatedSnapPoints };
-  fn.__workletHash = 7279123713809;
-  fn.__initData = photoPermissionStatus;
-  const obj6 = channel(onPressCamera[10]);
-  class U {
+  ({ minimum, maximum } = tmp16[0]);
+  let items2 = [photoPermissionStatus, animatedSnapPoints];
+  let c0;
+  const tmp17 = tmp16[1];
+  [tmp19, tmp20] = items2;
+  const tmp18 = channel(onPressCamera[10]);
+  class MediaKeyboardListTsx3 {
+    constructor() {
+      return _undefined.get();
+    }
+  }
+  let items3 = [tmp20];
+  MediaKeyboardListTsx3.__closure = items3;
+  MediaKeyboardListTsx3.__workletHash = 3126759631912;
+  MediaKeyboardListTsx3.__initData = tmp19;
+  const items4 = [closure_15, , , , , , ];
+  const useAnimatedReaction = tmp18.useAnimatedReaction;
+  items4[1] = channel(tmp7[20]).cheapWorkletArrayShallowEqual;
+  items4[2] = channel(tmp7[11]).scheduleOnRN;
+  items4[3] = tmp17;
+  items4[4] = height;
+  items4[5] = result;
+  items4[6] = diff;
+  c0 = undefined;
+  let c1;
+  let c2;
+  let c3;
+  let c4;
+  let c5;
+  [tmp21, tmp22, tmp23, tmp24, tmp25, tmp26, tmp27] = items4;
+  class MediaKeyboardListTsx4 {
     constructor(arg0, arg1) {
-      let tmp9;
-      const cheapWorkletArrayShallowEqual = cheapWorkletShallowEqual.cheapWorkletArrayShallowEqual;
-      cheapWorkletShallowEqual;
+      let tmp7;
       const tmp = arg1;
-      if (!cheapWorkletArrayShallowEqual(arg0, tmp)) {
-        first = arg0[0];
-        const tmp2Result = ReanimatedRexport;
-        const runOnJSResult = tmp2Result.runOnJS(closure_24);
+      const tmp2 = c0;
+      if (!tmp2(arg0, tmp)) {
+        let first = arg0[0];
+        const tmp3 = c1;
+        const tmp4 = c2;
         if (first == null) {
-          first = c21;
+          first = c4;
         }
-        const obj = { minimum: height - first, maximum: height - tmp9 };
-        tmp9 = arg0[arg0.length - 1];
-        if (tmp9 == null) {
-          tmp9 = c22;
+        const obj = { minimum: c3 - first, maximum: c3 - tmp7 };
+        tmp7 = arg0[arg0.length - 1];
+        if (tmp7 == null) {
+          tmp7 = c5;
         }
-        runOnJSResult(obj);
+        tmp3(tmp4, obj);
       }
     }
   }
-  U.__closure = { cheapWorkletArrayShallowEqual: channel(onPressCamera[19]).cheapWorkletArrayShallowEqual, runOnJS: channel(onPressCamera[10]).runOnJS, setBottomSheetState: tmp16[1], windowHeight: height, computedStartHeight: result, maxDynamicContentSize: diff };
-  U.__workletHash = 4619753074319;
-  U.__initData = __initData;
-  ({ cheapWorkletArrayShallowEqual: channel(onPressCamera[19]).cheapWorkletArrayShallowEqual, runOnJS: channel(onPressCamera[10]).runOnJS, setBottomSheetState: tmp16[1], windowHeight: height, computedStartHeight: result, maxDynamicContentSize: diff });
-  const animatedReaction = obj6.useAnimatedReaction(fn, U);
-  [tmp21, tmp22] = onAttachPress(onPressItem.useState(false), 2);
-  let c1 = tmp22;
-  const tmp20 = onAttachPress(onPressItem.useState(false), 2);
-  const obj8 = channel(onPressCamera[10]);
-  const sharedValue = obj8.useSharedValue(false);
-  const fn2 = function i() {
-    return animatedIndex.get();
-  };
-  fn2.__closure = { animatedIndex };
-  fn2.__workletHash = 8982138292467;
-  fn2.__initData = disableWhenReachedLimit;
-  const fn3 = function s(arg0) {
-    const tmp = arg0 > 0.1 && !sharedValue.get();
-    if (tmp) {
-      const result = sharedValue.set(true);
-      const obj = channel(onPressCamera[10]);
-      obj.runOnJS(c1)(true);
+  const items5 = [tmp22, tmp23, tmp24, tmp25, tmp26, tmp27];
+  MediaKeyboardListTsx4.__closure = items5;
+  MediaKeyboardListTsx4.__workletHash = 5873312059707;
+  MediaKeyboardListTsx4.__initData = tmp21;
+  const animatedReaction = useAnimatedReaction(MediaKeyboardListTsx3, MediaKeyboardListTsx4);
+  [tmp30, tmp31] = tmp3(obj.useState(false), 2);
+  const tmp3Result = tmp3(obj.useState(false), 2);
+  const tmp9Result = channel(tmp7[10]);
+  const sharedValue = tmp9Result.useSharedValue(false);
+  const items6 = [disableWhenReachedLimit, animatedIndex];
+  c0 = undefined;
+  [tmp34, tmp35] = items6;
+  const tmp9Result5 = channel(tmp7[10]);
+  class MediaKeyboardListTsx1 {
+    constructor() {
+      return _undefined.get();
     }
-  };
-  const obj9 = channel(onPressCamera[10]);
-  fn3.__closure = { latch: sharedValue, runOnJS: channel(onPressCamera[10]).runOnJS, setIsExpanded: tmp22 };
-  fn3.__workletHash = 7990574449734;
-  fn3.__initData = ref;
-  ({ latch: sharedValue, runOnJS: channel(onPressCamera[10]).runOnJS, setIsExpanded: tmp22 });
-  const animatedReaction1 = obj9.useAnimatedReaction(fn2, fn3);
-  const tmp25 = uploadLimit();
+  }
+  const items7 = [tmp35];
+  MediaKeyboardListTsx1.__closure = items7;
+  MediaKeyboardListTsx1.__workletHash = 906652326218;
+  MediaKeyboardListTsx1.__initData = tmp34;
+  const items8 = [ref, sharedValue, , ];
+  const useAnimatedReaction2 = tmp9Result5.useAnimatedReaction;
+  items8[2] = channel(tmp7[11]).scheduleOnRN;
+  items8[3] = tmp31;
+  c0 = undefined;
+  c1 = undefined;
+  c2 = undefined;
+  [tmp36, tmp37, tmp38, tmp39] = items8;
+  class MediaKeyboardListTsx2 {
+    constructor(arg0) {
+      const tmp = arg0 > 0.1 && !_undefined.get();
+      if (tmp) {
+        const result = _undefined.set(true);
+        _undefined2(c2, true);
+      }
+    }
+  }
+  const items9 = [tmp37, tmp38, tmp39];
+  MediaKeyboardListTsx2.__closure = items9;
+  MediaKeyboardListTsx2.__workletHash = 8642745285010;
+  MediaKeyboardListTsx2.__initData = tmp36;
+  const animatedReaction2 = useAnimatedReaction2(MediaKeyboardListTsx1, MediaKeyboardListTsx2);
+  const tmp41 = uploadLimit();
   if (flag) {
-    const tmp9Result = tmp9(onPressCamera[20]);
-    flag = tmp9Result.isImageCaptureIntentSupported();
+    const tmp9Result6 = channel(tmp7[21]);
+    flag = tmp9Result6.isImageCaptureIntentSupported();
   }
   let num;
   if (assets != null) {
@@ -223,8 +267,8 @@ const memoResult = react.memo(function MediaKeyboardList(channel) {
     num2 = 1;
   }
   const sum = num + num2;
-  c26 = sum;
-  let items2 = [assets, itemsPerRow, flag];
+  c21 = sum;
+  const items10 = [assets, itemsPerRow, flag];
   memo = obj.useMemo(() => {
     let items1;
     const tmp2 = flag;
@@ -255,18 +299,18 @@ const memoResult = react.memo(function MediaKeyboardList(channel) {
       const obj = _modDef12;
       return obj.chunk(items3, itemsPerRow);
     }
-  }, items2);
-  let items3 = [onPressCamera];
+  }, items10);
+  const items11 = [onPressCamera];
   callback1 = obj.useCallback(() => {
     onPressCamera(onViewAll.CAMERA_BUTTON);
-  }, items3);
-  const items4 = [itemsPageSizeRef, extensions];
-  const items5 = [channel, draftType, callback1, onViewAll, onAttachPress, itemsPerRow, onPressItem, onLongPressItem, memo, includedUploadIds, flag2, uploadLimit, disableWhenReachedLimit, sum];
+  }, items11);
+  const items12 = [itemsPageSizeRef, extensions];
+  const items13 = [channel, draftType, callback1, onViewAll, onAttachPress, itemsPerRow, onPressItem, onLongPressItem, memo, includedUploadIds, flag2, uploadLimit, disableWhenReachedLimit, sum];
   const callback2 = obj.useCallback(() => {
     const obj = DeviceMediaDefault;
     const obj2 = { batchSize: itemsPageSizeRef.current, extensions };
     const nextAssetPage = obj.getNextAssetPage(obj2);
-  }, items4);
+  }, items12);
   const callback3 = obj.useCallback((arg0, rowIndex) => {
     const arr = memo[rowIndex];
     let tmp = MediaKeyboardItemDefault;
@@ -274,17 +318,17 @@ const memoResult = react.memo(function MediaKeyboardList(channel) {
       let tmp = acc;
       if (null != node) {
         let combined;
-        const obj3 = channel(onPressCamera[22]);
+        const obj3 = channel(onPressCamera[23]);
         if (obj3.isMediaCameraNode(node)) {
           const _HermesInternal4 = HermesInternal;
           combined = "" + acc + "-camera";
         } else {
-          const tmp6Result = channel(onPressCamera[22]);
+          const tmp6Result = channel(onPressCamera[23]);
           if (tmp6Result.isAttachFilesNode(node)) {
             const _HermesInternal3 = HermesInternal;
             combined = "" + acc + "-attach";
           } else {
-            const tmp6Result2 = channel(onPressCamera[22]);
+            const tmp6Result2 = channel(onPressCamera[23]);
             if (tmp6Result2.isViewAllPhotosNode(node)) {
               const _HermesInternal2 = HermesInternal;
               combined = "" + acc + "-view-all";
@@ -297,66 +341,66 @@ const memoResult = react.memo(function MediaKeyboardList(channel) {
         tmp = combined;
       }
       return tmp;
-    }, arg1.toString())} draftType={draftType} rowIndex={arg1} totalNumItems={c26} channel={channel} numPerRow={itemsPerRow} items={memo[arg1]} onPressItem={onPressItem} onLongPressItem={onLongPressItem} includedUploadIds={includedUploadIds} uploadLimit={uploadLimit} disableWhenReachedLimit={disableWhenReachedLimit} handleCameraPress={callback1} handleAttachPress={onAttachPress} handleViewAllPhotosPress={onViewAll} disabled={flag2} />;
-  }, items5);
-  width = tmp6(tmp7[16])().width;
-  const items6 = [width, itemsPerRow];
-  const items7 = [onViewAll, flag2];
+    }, arg1.toString())} draftType={draftType} rowIndex={arg1} totalNumItems={c21} channel={channel} numPerRow={itemsPerRow} items={memo[arg1]} onPressItem={onPressItem} onLongPressItem={onLongPressItem} includedUploadIds={includedUploadIds} uploadLimit={uploadLimit} disableWhenReachedLimit={disableWhenReachedLimit} handleCameraPress={callback1} handleAttachPress={onAttachPress} handleViewAllPhotosPress={onViewAll} disabled={flag2} />;
+  }, items13);
+  width = tmp6(tmp7[17])().width;
+  const items14 = [width, itemsPerRow];
+  const items15 = [onViewAll, flag2];
   const memo1 = obj.useMemo(() => {
     const result = (width - (MediaKeyboardItem.PARENT_PADDING + MediaKeyboardItem.CHILD_PADDING * (itemsPerRow - 1))) / itemsPerRow;
     return result + MediaKeyboardItem.SEPARATOR_SIZE;
-  }, items6);
-  const callback4 = obj.useCallback(() => jsx(MediaKeyboardFooterDefault, { disabled: flag2, onViewAll }), items7);
-  if (tmp21) {
+  }, items14);
+  const callback4 = obj.useCallback(() => jsx(MediaKeyboardFooterDefault, { disabled: flag2, onViewAll }), items15);
+  if (tmp30) {
     minimum = maximum;
   }
-  const items8 = [minimum];
-  const memo2 = obj.useMemo(() => ({ height: minimum }), items8);
+  const items16 = [minimum];
+  const memo2 = obj.useMemo(() => ({ height: minimum }), items16);
   const LIMITED = includedUploadIds.LIMITED;
-  const tmp3Result = tmp3(obj.useState(() => 32 + 36 * DimensionsStore.getState().byAppEntry[closure_19].fontScale), 2);
-  onHeightChange = tmp3Result[1];
-  const items9 = [onManageLimited];
-  const first2 = tmp3Result[0];
-  const callback5 = obj.useCallback(() => jsx(MediaKeyboardLimitedPickerNoticeDefault, { onPress: onManageLimited, onHeightChange }), items9);
-  const tmp9Result3 = tmp9(onPressCamera[25]);
-  const modalDismissGuardRefreshControl = tmp9Result3.useModalDismissGuardRefreshControl();
-  const obj11 = {
+  const tmp3Result2 = tmp3(obj.useState(() => 32 + 36 * DimensionsStore.getState().byAppEntry[closure_19].fontScale), 2);
+  onHeightChange = tmp3Result2[1];
+  const items17 = [onManageLimited];
+  const first1 = tmp3Result2[0];
+  const callback5 = obj.useCallback(() => jsx(MediaKeyboardLimitedPickerNoticeDefault, { onPress: onManageLimited, onHeightChange }), items17);
+  const tmp9Result7 = channel(tmp7[26]);
+  const modalDismissGuardRefreshControl = tmp9Result7.useModalDismissGuardRefreshControl();
+  const obj6 = {
     photoPermissionStatus,
-    photosEmpty: tmp38,
+    photosEmpty: tmp54,
     showCameraButton: flag,
     onPressCamera() {
       return onPressCamera(onViewAll.TAKE_A_PHOTO_BUTTON);
     },
     onManageLimited,
-    onPressPrivacySettings: draftType(onPressCamera[27])
+    onPressPrivacySettings: draftType(tmp7[28])
   };
-  tmp38 = null != assets;
-  const getMediaEmptyStateComponentOrNull = tmp9(tmp7[26]).getMediaEmptyStateComponentOrNull;
-  tmp9(onPressCamera[26]);
-  if (tmp38) {
-    tmp38 = 0 === assets.edges.length;
+  tmp54 = null != assets;
+  const getMediaEmptyStateComponentOrNull = tmp9(tmp7[27]).getMediaEmptyStateComponentOrNull;
+  channel(tmp7[27]);
+  if (tmp54) {
+    tmp54 = 0 === assets.edges.length;
   }
-  let mediaEmptyStateComponentOrNull = getMediaEmptyStateComponentOrNull(obj11);
+  let mediaEmptyStateComponentOrNull = getMediaEmptyStateComponentOrNull(obj6);
   if (null == mediaEmptyStateComponentOrNull) {
-    let tmp40;
-    let tmp6Result = tmp6(tmp7[28]);
-    const tmp43 = extensions;
+    let tmp56;
+    let tmp6Result = tmp6(tmp7[29]);
+    const tmp59 = extensions;
     if (photoPermissionStatus === LIMITED) {
-      tmp40 = callback5;
+      tmp56 = callback5;
     }
-    const obj12 = { renderHeader: tmp40, headerSize: num3, style: items10, renderItem: callback3, sections: items11, itemSize: memo1, inActionSheet: true, refreshControl: modalDismissGuardRefreshControl, preserveScrollMomentum: true, automaticallyAdjustsScrollIndicatorInsets: false, keyboardDismissMode: "none", onEndReached: callback2, onScroll: callback, endReachedThreshold: 400, accessibilityRole: "list", accessibilityLabel: intl.string(tmp9(onPressCamera[29]).t.XONG6A), showsVerticalScrollIndicator: false, footerSize: tmp9(onPressCamera[23]).FOOTER_HEIGHT, renderFooter: callback4, chunkBase: minimum, batchesToRender: prop };
+    const obj7 = { renderHeader: tmp56, headerSize: num3, style: items18, renderItem: callback3, sections: items19, itemSize: memo1, inActionSheet: true, refreshControl: modalDismissGuardRefreshControl, preserveScrollMomentum: true, automaticallyAdjustsScrollIndicatorInsets: false, keyboardDismissMode: "none", onEndReached: callback2, onScroll: callback, endReachedThreshold: 400, accessibilityRole: "list", accessibilityLabel: intl.string(channel(tmp7[30]).t.XONG6A), showsVerticalScrollIndicator: false, footerSize: channel(tmp7[24]).FOOTER_HEIGHT, renderFooter: callback4, chunkBase: minimum, batchesToRender: prop };
     num3 = 0;
     if (photoPermissionStatus === LIMITED) {
-      num3 = first2;
+      num3 = first1;
     }
-    items10 = [memo2, tmp25.listContainer];
-    items11 = [memo.length];
-    intl = tmp9(tmp7[29]).intl;
+    items18 = [memo2, tmp41.listContainer];
+    items19 = [memo.length];
+    intl = tmp9(tmp7[30]).intl;
     prop = undefined;
-    if (!tmp21) {
-      prop = tmp9(tmp7[28]).MINIMUM_BATCHES_TO_RENDER;
+    if (!tmp30) {
+      prop = tmp9(tmp7[29]).MINIMUM_BATCHES_TO_RENDER;
     }
-    mediaEmptyStateComponentOrNull = tmp43(tmp6Result, obj12);
+    mediaEmptyStateComponentOrNull = tmp59(tmp6Result, obj7);
   }
   return mediaEmptyStateComponentOrNull;
 });

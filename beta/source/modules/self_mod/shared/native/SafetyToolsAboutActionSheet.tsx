@@ -1,22 +1,22 @@
-// Module ID: 11314
-// Function ID: 11315
+// Module ID: 11454
+// Function ID: 11455
 // Name: SafetyToolsAboutActionSheet
-// Dependencies: [32, 19, 17, 11256, 1072, 21, 5014, 575, 11299, 5258, 11269, 11270, 11315, 1113, 5711, 11304, 5624, 2061, 5634, 2]
+// Dependencies: [32, 19, 17, 11396, 1072, 21, 5140, 575, 11439, 5374, 11409, 11410, 11455, 1113, 5836, 11444, 5751, 2185, 5758, 2]
 // Exports: default
 
-// Module 11314 (SafetyToolsAboutActionSheet)
+// Module 11454 (SafetyToolsAboutActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import Constants2 from "Constants" /* 11256 */;
-import SafetyWarningUtils from "SafetyWarningUtils" /* 11269 */;
-import ChannelSafetyWarningsActionCreators from "ChannelSafetyWarningsActionCreators" /* 11270 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import Constants2 from "Constants" /* 11396 */;
+import SafetyWarningUtils from "SafetyWarningUtils" /* 11409 */;
+import ChannelSafetyWarningsActionCreators from "ChannelSafetyWarningsActionCreators" /* 11410 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let c9;
@@ -101,7 +101,7 @@ export default function SafetyToolsAboutScreen(channelId) {
   const tmp6 = recipientId(warningId[15]);
   intl = channelId(warningId[13]).intl;
   let obj3 = { style: tmp3.aboutContainer, children: items2 };
-  const obj4 = { variant: "text-md/medium", style: tmp3.description, children: format(prop, obj5) };
+  const obj4 = { variant: "body-md/medium", style: tmp3.description, children: format(prop, obj5) };
   const Text = channelId(warningId[16]).Text;
   const intl2 = channelId(warningId[13]).intl;
   format = intl2.format;
@@ -114,12 +114,12 @@ export default function SafetyToolsAboutScreen(channelId) {
   intl3 = channelId(warningId[13]).intl;
   items2[1] = closure_8(Button, obj7);
   items3 = [closure_9(closure_5, obj3), ];
-  const obj8 = { variant: "text-md/medium", style: tmp3.reportFalsePositive, children: intl4.format(channelId(warningId[13]).t["2uYViD"], obj9) };
+  const obj8 = { variant: "body-md/medium", style: tmp3.reportFalsePositive, children: intl4.format(channelId(warningId[13]).t["2uYViD"], obj9) };
   const Text2 = channelId(warningId[16]).Text;
   intl4 = channelId(warningId[13]).intl;
   obj9 = {
     reportFalsePositiveHook(children, arg1) {
-      const obj = { variant: "text-sm/medium", color: "text-link", disabled, onPress, children };
+      const obj = { variant: "body-sm/medium", color: "text-link", disabled, onPress, children };
       return metroImportAll(Text_Text.Text, obj, arg1);
     }
   };

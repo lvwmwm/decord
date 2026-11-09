@@ -1,30 +1,28 @@
-// Module ID: 8753
-// Function ID: 8754
+// Module ID: 8824
+// Function ID: 8825
 // Name: UserProfileSpeedBumpActionSheet
-// Dependencies: [32, 19, 17, 4863, 4926, 1383, 8754, 1072, 21, 5014, 575, 8756, 1113, 7060, 6975, 1187, 5021, 5253, 504, 8757, 7326, 7351, 8761, 8770, 1252, 8752, 8750, 5272, 5275, 8771, 7136, 5624, 6041, 5634, 6980, 4839, 2]
+// Dependencies: [32, 19, 17, 4989, 5052, 1385, 8825, 1072, 21, 5140, 575, 8827, 1113, 7126, 7038, 1187, 5147, 5369, 504, 8828, 7387, 7412, 8832, 8841, 1252, 8823, 8821, 5388, 5392, 8842, 7163, 5751, 6173, 5758, 7043, 4965, 2]
 
-// Module 8753 (UserProfileSpeedBumpActionSheet)
+// Module 8824 (UserProfileSpeedBumpActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import UserSettings from "UserSettings" /* 4839 */;
-import TableRow2 from "TableRow" /* 6975 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8750 */;
-import UserActionCreators from "UserActionCreators" /* 8752 */;
-import Constants2 from "Constants" /* 8754 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8756 */;
+import UserSettings from "UserSettings" /* 4965 */;
+import TableRow2 from "TableRow" /* 7038 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8821 */;
+import UserActionCreators from "UserActionCreators" /* 8823 */;
+import Constants2 from "Constants" /* 8825 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8827 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
-import GuildMemberStore from "GuildMemberStore" /* 4926 */;
-import UserStore from "UserStore" /* 1383 */;
+import ChannelStore from "ChannelStore" /* 4989 */;
+import GuildMemberStore from "GuildMemberStore" /* 5052 */;
+import UserStore from "UserStore" /* 1385 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
-
-let BottomSheet;
 
 let c10;
 let closure_12;
@@ -65,7 +63,7 @@ function InformationTable(speedBumpType) {
       return authStore2(TableRow, obj, index);
     })
   };
-  const TableRowGroup = tmp2(7060).TableRowGroup;
+  const TableRowGroup = tmp2(7126).TableRowGroup;
   return closure_12(TableRowGroup, obj3);
 }
 const View = react_native.View;
@@ -83,6 +81,7 @@ rect = { position: "absolute", bottom: -8, right: -8, padding: nativeDefault.spa
 obj6 = { alignSelf: "center", marginTop: nativeDefault.space.PX_16 };
 let closure_14 = createStyles(obj);
 const memoResult = react.memo(function UserProfileSpeedBumpActionSheet(userId) {
+  let BottomSheet;
   let Icon;
   let Text3;
   let UserProfileAnalyticsProvider;
@@ -263,11 +262,11 @@ const memoResult = react.memo(function UserProfileSpeedBumpActionSheet(userId) {
     }
     items8[1] = analyticsLocations(stateFromStores, obj8);
     items9 = [createUserProfileAnalyticsContext(stateFromStores, obj6), , ];
-    const obj10 = { style: tmp2.headerText, variant: "heading-xl/bold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: intl.string(userId(onClose[12]).t.b33pLD) };
+    const obj10 = { style: tmp2.headerText, variant: "heading-xl/semibold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: intl.string(userId(onClose[12]).t.b33pLD) };
     const Text = tmp3(tmp4[31]).Text;
     intl = tmp3(tmp4[12]).intl;
     items9[1] = analyticsLocations(Text, obj10);
-    const obj11 = { style: tmp2.bodyText, variant: "text-md/medium", color: "mobile-text-heading-primary", children: format(tmp33, obj12) };
+    const obj11 = { style: tmp2.bodyText, variant: "body-md/medium", color: "mobile-text-heading-primary", children: format(tmp33, obj12) };
     const Text2 = tmp3(tmp4[31]).Text;
     const intl2 = tmp3(tmp4[12]).intl;
     format = intl2.format;
@@ -311,7 +310,7 @@ const memoResult = react.memo(function UserProfileSpeedBumpActionSheet(userId) {
         children: analyticsLocations(Text3, obj18)
       };
       const PressableOpacity = tmp3(tmp4[34]).PressableOpacity;
-      obj18 = { variant: "text-sm/normal", color: "text-link", children: intl4.string(userId(onClose[12]).t.QbcRCJ) };
+      obj18 = { variant: "body-sm/normal", color: "text-link", children: intl4.string(userId(onClose[12]).t.QbcRCJ) };
       Text3 = tmp3(tmp4[31]).Text;
       intl4 = tmp3(tmp4[12]).intl;
       tmp36Result = tmp36(PressableOpacity, obj17);

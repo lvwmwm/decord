@@ -1,27 +1,27 @@
-// Module ID: 13972
-// Function ID: 13973
+// Module ID: 14206
+// Function ID: 14207
 // Name: ChatInputNotificationNudge
-// Dependencies: [32, 19, 17, 4948, 6775, 13973, 1072, 4860, 13974, 21, 5014, 575, 1252, 10992, 5624, 6980, 13975, 1113, 13976, 7054, 504, 12476, 13984, 7569, 4847, 2]
+// Dependencies: [32, 19, 17, 5074, 6830, 14207, 1072, 4986, 14208, 21, 5140, 575, 1252, 11122, 5751, 7043, 14209, 1113, 14210, 7120, 504, 12679, 14218, 7641, 4973, 2]
 // Exports: default
 
-// Module 13972 (ChatInputNotificationNudge)
+// Module 14206 (ChatInputNotificationNudge)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4860 */;
-import useIsAppDMDefault from "useIsAppDM" /* 12476 */;
-import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 13973 */;
-import NotificationPermissionUtil from "NotificationPermissionUtil" /* 13975 */;
-import PushNotificationActionCreators from "PushNotificationActionCreators" /* 13976 */;
-import PostReactionPermissionNudgeExperimentDefault from "PostReactionPermissionNudgeExperiment" /* 13984 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4986 */;
+import useIsAppDMDefault from "useIsAppDM" /* 12679 */;
+import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 14207 */;
+import NotificationPermissionUtil from "NotificationPermissionUtil" /* 14209 */;
+import PushNotificationActionCreators from "PushNotificationActionCreators" /* 14210 */;
+import PostReactionPermissionNudgeExperimentDefault from "PostReactionPermissionNudgeExperiment" /* 14218 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4948 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6775 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 5074 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6830 */;
 import Constants from "Constants" /* 1072 */;
-import NotificationPermissionConstants from "NotificationPermissionConstants" /* 13974 */;
+import NotificationPermissionConstants from "NotificationPermissionConstants" /* 14208 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -66,7 +66,7 @@ function ChatInputNotificationNudgeImpl(onDismiss) {
   BellSlashIcon = require("BellSlashIcon").BellSlashIcon;
   items2 = [closure_17(View, obj2), , ];
   const obj4 = { style: tmp.contentContainer, children: items3 };
-  items3 = [closure_17(require("Text/Text").Text, { variant: "text-sm/medium", color: "text-default", children: body }), ];
+  items3 = [closure_17(require("Text/Text").Text, { variant: "body-sm/medium", color: "text-default", children: body }), ];
   const obj5 = {
     hitSlop: 8,
     onPress: function handlePress() {
@@ -81,7 +81,7 @@ function ChatInputNotificationNudgeImpl(onDismiss) {
     children: closure_17(Text, obj6)
   };
   const PressableOpacity = require("Pressables").PressableOpacity;
-  obj6 = { variant: "text-xs/medium", color: "text-brand", children: intl.string(require("intl").t["+7MDbQ"]) };
+  obj6 = { variant: "body-xs/medium", color: "text-brand", children: intl.string(require("intl").t["+7MDbQ"]) };
   Text = require("Text/Text").Text;
   intl = require("intl").intl;
   items3[1] = closure_17(PressableOpacity, obj5);
@@ -149,19 +149,19 @@ export default function ChatInputNotificationNudge(channel) {
     return isMutedResult;
   });
   const tmp5 = !stateFromStores && !useIsAppDMDefault(channel);
-  const tmpResult = tmp(13975);
+  const tmpResult = tmp(14209);
   const shouldShowPushNotificationNudgeByPromptType = tmpResult.useShouldShowPushNotificationNudgeByPromptType(PermissionPromptType.CHANNEL_BANNER);
   const tmp4Result = PostReactionPermissionNudgeExperimentDefault;
   const enabled = tmp4Result.useConfig({ location: "ChatInputNotificationNudge" }).enabled;
-  const tmpResult4 = tmp(13975);
+  const tmpResult4 = tmp(14209);
   const shouldShowPushNotificationNudgeByPromptType1 = tmpResult4.useShouldShowPushNotificationNudgeByPromptType(PermissionPromptType.POST_REACTION_BANNER);
   let prop = null;
-  const useSelectedTimeRecurringDismissibleContent = tmp(7569).useSelectedTimeRecurringDismissibleContent;
-  tmp(7569);
+  const useSelectedTimeRecurringDismissibleContent = tmp(7641).useSelectedTimeRecurringDismissibleContent;
+  tmp(7641);
   if (tmp5) {
     prop = null;
     if (shouldShowPushNotificationNudgeByPromptType) {
-      prop = tmp(4847).DismissibleContent.NOTIFICATION_NUDGE_CHAT_BOTTOM_BANNER;
+      prop = tmp(4973).DismissibleContent.NOTIFICATION_NUDGE_CHAT_BOTTOM_BANNER;
     }
   }
   const obj2 = { cooldownDurationMs };
@@ -169,8 +169,8 @@ export default function ChatInputNotificationNudge(channel) {
   importDefault = tmp15;
   _slicedToArray(useSelectedTimeRecurringDismissibleContent(prop, obj2, undefined, true), 2);
   let prop1 = null;
-  const useSelectedTimeRecurringDismissibleContent2 = tmp(7569).useSelectedTimeRecurringDismissibleContent;
-  tmp(7569);
+  const useSelectedTimeRecurringDismissibleContent2 = tmp(7641).useSelectedTimeRecurringDismissibleContent;
+  tmp(7641);
   const tmp11 = cooldownDurationMs;
   const tmp12 = _slicedToArray;
   if (tmp5) {
@@ -180,7 +180,7 @@ export default function ChatInputNotificationNudge(channel) {
       if (shouldShowPushNotificationNudgeByPromptType1) {
         prop1 = null;
         if (null == tmp14) {
-          prop1 = tmp(4847).DismissibleContent.NOTIFICATION_NUDGE_POST_REACTION_BANNER;
+          prop1 = tmp(4973).DismissibleContent.NOTIFICATION_NUDGE_POST_REACTION_BANNER;
         }
       }
     }
@@ -193,13 +193,13 @@ export default function ChatInputNotificationNudge(channel) {
   const items2 = [tmp12Result[1]];
   const tmp21 = closure_4(() => _undefined(ContentDismissActionType.USER_DISMISS), items1);
   const tmp22 = closure_4(() => closure_2(ContentDismissActionType.USER_DISMISS), items2);
-  if (tmp14 === tmp(4847).DismissibleContent.NOTIFICATION_NUDGE_CHAT_BOTTOM_BANNER) {
+  if (tmp14 === tmp(4973).DismissibleContent.NOTIFICATION_NUDGE_CHAT_BOTTOM_BANNER) {
     const obj4 = { promptType: PermissionPromptType.CHANNEL_BANNER, location: constants2.CHANNEL_BANNER, surface: constants5.CHANNEL_BANNER, body: intl2.string(tmp(1113).t["/6SnPw"]), onDismiss: tmp21 };
     intl2 = tmp(1113).intl;
     tmp27 = closure_17(ChatInputNotificationNudgeImpl, obj4);
   } else {
     tmp27 = null;
-    if (first === tmp(4847).DismissibleContent.NOTIFICATION_NUDGE_POST_REACTION_BANNER) {
+    if (first === tmp(4973).DismissibleContent.NOTIFICATION_NUDGE_POST_REACTION_BANNER) {
       const obj5 = { promptType: PermissionPromptType.POST_REACTION_BANNER, location: constants2.POST_REACTION, surface: constants5.POST_REACTION_BANNER, body: intl.string(tmp(1113).t.VS6ey0), onDismiss: tmp22 };
       intl = tmp(1113).intl;
       tmp27 = closure_17(ChatInputNotificationNudgeImpl, obj5);

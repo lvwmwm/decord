@@ -6,11 +6,14 @@
 // Module 5460 (react-native)
 import react_native from "react-native" /* 17 */;
 
-let obj2;
-const StyleSheet = react_native.StyleSheet;
-const obj = { container: obj2 };
-const create = StyleSheet.create;
-obj2 = { pointerEvents: "box-none" };
-const merged = Object.assign(StyleSheet.absoluteFillObject);
+const NativeModules = react_native.NativeModules;
+let PlatformConstants;
+const Platform = react_native.Platform;
+if (NativeModules != null) {
+  PlatformConstants = NativeModules.PlatformConstants;
+}
+if (PlatformConstants == null) {
+  PlatformConstants = Platform.constants;
+}
 
-export const styles = create(obj);
+export default PlatformConstants;

@@ -1,23 +1,23 @@
-// Module ID: 17803
-// Function ID: 17804
+// Module ID: 18135
+// Function ID: 18136
 // Name: UserSettingsDesignSystemPile
-// Dependencies: [19, 17, 21, 5014, 1187, 6957, 6027, 6977, 5624, 14883, 1412, 15869, 14194, 13424, 12802, 9509, 2]
+// Dependencies: [19, 17, 21, 5140, 1187, 7020, 6159, 7040, 5751, 15118, 1414, 16186, 14438, 13656, 13008, 9593, 2]
 // Exports: default
 
-// Module 17803 (UserSettingsDesignSystemPile)
+// Module 18135 (UserSettingsDesignSystemPile)
 import native from "native" /* 1187 */;
-import utils_AvatarUtils from "utils/AvatarUtils" /* 1412 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import Stack_Stack from "Stack/Stack" /* 6027 */;
-import GuildIcon from "GuildIcon" /* 6957 */;
-import Card_Card from "Card/Card" /* 6977 */;
-import ClipView from "ClipView" /* 9509 */;
-import ListUtils from "ListUtils" /* 12802 */;
-import AvatarDuoPile2 from "AvatarDuoPile" /* 15869 */;
+import utils_AvatarUtils from "utils/AvatarUtils" /* 1414 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import Stack_Stack from "Stack/Stack" /* 6159 */;
+import GuildIcon from "GuildIcon" /* 7020 */;
+import Card_Card from "Card/Card" /* 7040 */;
+import ClipView from "ClipView" /* 9593 */;
+import ListUtils from "ListUtils" /* 13008 */;
+import AvatarDuoPile2 from "AvatarDuoPile" /* 16186 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 const GuildIconDefault = GuildIcon;
@@ -35,7 +35,7 @@ function SampleCard(arg0) {
   const tmp3 = hasOwnProperty(Stack_Stack.Stack, { spacing: 16, children });
   const obj = { style: tmp.card, children: items };
   const Card = Card_Card.Card;
-  items = [hasOwnProperty(Text_Text.Text, { variant: "text-lg/bold", children: title }), ];
+  items = [hasOwnProperty(Text_Text.Text, { variant: "body-lg/semibold", children: title }), ];
   let tmp2Result = tmp3;
   const tmp2 = hasOwnProperty;
   const tmp4 = metroRequire;
@@ -70,7 +70,7 @@ export default function UserSettingsDesignSystemPile() {
       let obj = { children: items };
       const Stack = size(closure_2[6]).Stack;
       items = [, ];
-      const obj2 = { variant: "text-md/medium", color: "text-subtle", children };
+      const obj2 = { variant: "body-md/medium", color: "text-subtle", children };
       items[0] = closure_5(size(closure_2[8]).Text, obj2);
       const obj3 = {
         size: children,
@@ -96,7 +96,7 @@ export default function UserSettingsDesignSystemPile() {
       let obj = { children: items };
       const Stack = size(closure_2[6]).Stack;
       items = [, ];
-      const obj2 = { variant: "text-md/medium", color: "text-subtle", children };
+      const obj2 = { variant: "body-md/medium", color: "text-subtle", children };
       items[0] = closure_5(size(closure_2[8]).Text, obj2);
       const obj3 = {
         size: children,
@@ -122,7 +122,7 @@ export default function UserSettingsDesignSystemPile() {
       let obj = { children: items };
       const Stack = size(closure_2[6]).Stack;
       items = [, ];
-      const obj2 = { variant: "text-md/medium", color: "text-subtle", children };
+      const obj2 = { variant: "body-md/medium", color: "text-subtle", children };
       items[0] = closure_5(size(closure_2[8]).Text, obj2);
       const obj3 = {
         size: children,
@@ -147,7 +147,7 @@ export default function UserSettingsDesignSystemPile() {
       const obj = { children: items };
       const Stack = Stack_Stack.Stack;
       items = [, ];
-      const obj2 = { variant: "text-md/medium", color: "text-subtle", children };
+      const obj2 = { variant: "body-md/medium", color: "text-subtle", children };
       items[0] = closure_1_5(Text_Text.Text, obj2);
       const obj3 = { size: items1, names: names.slice(0, 2), children: items2 };
       items1 = [children, ];
@@ -169,7 +169,7 @@ export default function UserSettingsDesignSystemPile() {
     children: items1.map((size) => {
       let obj = { children: items };
       const Stack = size(closure_2[6]).Stack;
-      const obj2 = { variant: "text-md/medium", color: "text-subtle", children: size.toLowerCase() };
+      const obj2 = { variant: "body-md/medium", color: "text-subtle", children: size.toLowerCase() };
       const Text = size(closure_2[8]).Text;
       items = [closure_5(Text, obj2), ];
       const obj3 = {
@@ -188,7 +188,7 @@ export default function UserSettingsDesignSystemPile() {
   };
   items[4] = hasOwnProperty(SampleCard, obj7);
   const obj8 = { title: "Weird Piles", noScroll: true, children: items1 };
-  items1 = [metroRequire(Text_Text.Text, { variant: "text-md/medium", color: "text-subtle", children: ["These examples explore the edge cases of the underlying ", "<Pile>", " component and aren't recommended uses."] }), ];
+  items1 = [metroRequire(Text_Text.Text, { variant: "body-md/medium", color: "text-subtle", children: ["These examples explore the edge cases of the underlying ", "<Pile>", " component and aren't recommended uses."] }), ];
   let items2 = [[1, 1], [0.5, 0.5], [null, 0.5], [0.5, null], [0, 0.5], [0.5, 0], [0, 0]];
   items1[1] = items2.map((item) => {
     let DEFAULT_AVATARS;
@@ -210,7 +210,7 @@ export default function UserSettingsDesignSystemPile() {
     }
     let obj = { children: items1 };
     items[3] = str2;
-    items1 = [closure_1_6(Text, { variant: "text-md/medium", color: "text-subtle", children: items }), , ];
+    items1 = [closure_1_6(Text, { variant: "body-md/medium", color: "text-subtle", children: items }), , ];
     const obj2 = {
       "aria-label": tmp4Result.getListSummaryLabel(names, utils_AvatarUtils.DEFAULT_AVATARS.length),
       shape: ClipView.CutoutShape.Circle,

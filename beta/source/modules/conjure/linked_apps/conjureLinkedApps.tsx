@@ -1,13 +1,13 @@
-// Module ID: 12158
-// Function ID: 12159
+// Module ID: 12330
+// Function ID: 12331
 // Name: conjureLinkedApps
-// Dependencies: [5, 3868, 1113, 10948, 2]
+// Dependencies: [5, 4026, 1113, 11081, 2]
 // Exports: fetchLinkedAppCallers, linkConjureApp, linkedAppBuildDescription, linkedAppBuildLabel, unlinkConjureApp
 
-// Module 12158 (conjureLinkedApps)
+// Module 12330 (conjureLinkedApps)
 import intl2 from "intl" /* 1113 */;
-import _modDef3868 from "module_3868" /* 3868 */;
-import conjureWorkerFetch from "conjureWorkerFetch" /* 10948 */;
+import _modDef4026 from "module_4026" /* 4026 */;
+import conjureWorkerFetch from "conjureWorkerFetch" /* 11081 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ let obj = function _fetchLinkedAppCallers() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -113,7 +113,7 @@ obj = function _linkConjureApp() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -146,7 +146,7 @@ obj = function _linkConjureApp() {
             closure_0 = value;
             if (closure_0.ok) {
               c5 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             } else {
               const _Error = Error;
               const _HermesInternal = HermesInternal;
@@ -182,7 +182,7 @@ obj = function _unlinkConjureApp() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -215,7 +215,7 @@ obj = function _unlinkConjureApp() {
             closure_0 = value;
             if (closure_0.ok) {
               c4 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             } else {
               const _Error = Error;
               const _HermesInternal = HermesInternal;
@@ -235,9 +235,9 @@ obj = function _unlinkConjureApp() {
   return obj(...arguments);
 };
 obj = { auto: obj2, preview: obj3, published: obj4 };
-obj2 = { label: _modDef3868["2TTprm"], description: _modDef3868["1ck6o0"] };
-obj3 = { label: _modDef3868.bUZ6jT, description: _modDef3868.DP2NVW };
-obj4 = { label: _modDef3868.yXd0cc, description: _modDef3868["YY+UD8"] };
+obj2 = { label: _modDef4026["2TTprm"], description: _modDef4026["1ck6o0"] };
+obj3 = { label: _modDef4026.bUZ6jT, description: _modDef4026.DP2NVW };
+obj4 = { label: _modDef4026.yXd0cc, description: _modDef4026["YY+UD8"] };
 const result = size.fileFinishedImporting("modules/conjure/linked_apps/conjureLinkedApps.tsx");
 
 export const CONJURE_LINKED_APP_BUILDS = ["auto", "preview", "published"];

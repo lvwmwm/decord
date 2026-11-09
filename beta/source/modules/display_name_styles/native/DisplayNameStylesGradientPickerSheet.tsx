@@ -1,24 +1,22 @@
-// Module ID: 17341
-// Function ID: 17342
+// Module ID: 17666
+// Function ID: 17667
 // Name: DisplayNameStylesGradientPickerSheet
-// Dependencies: [32, 19, 17, 17332, 1072, 21, 5014, 575, 1402, 10775, 1400, 17333, 5260, 1252, 5258, 16444, 5272, 17328, 5634, 1113, 5587, 1090, 17342, 12, 6980, 2]
+// Dependencies: [32, 19, 17, 17657, 1072, 21, 5140, 575, 1396, 10894, 1393, 17658, 5376, 1252, 5374, 16765, 5388, 17653, 5758, 1113, 5715, 1090, 17667, 12, 7043, 2]
 // Exports: default
 
-// Module 17341 (DisplayNameStylesGradientPickerSheet)
+// Module 17666 (DisplayNameStylesGradientPickerSheet)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import HapticUtils from "HapticUtils" /* 5260 */;
-import DisplayNameStylesColorPickerConstants from "DisplayNameStylesColorPickerConstants" /* 17332 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
+import HapticUtils from "HapticUtils" /* 5376 */;
+import DisplayNameStylesColorPickerConstants from "DisplayNameStylesColorPickerConstants" /* 17657 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
-
-let BottomSheet;
 
 let c10;
 let hasOwnProperty;
@@ -41,7 +39,7 @@ let closure_12 = createStyles.createStyles((arg0) => {
   ({ paddingTop: nativeDefault.space.PX_4, paddingBottom: nativeDefault.space.PX_12, paddingHorizontal: nativeDefault.space.PX_16, flexGrow: 1, justifyContent: "center", alignItems: "center" });
   ({ marginBottom: nativeDefault.space.PX_24, flexDirection: "row", justifyContent: "center", alignItems: "center", width: "100%", maxWidth: SHEET_CONTENT_MAX_WIDTH });
   rect = { left: nativeDefault.space.PX_8, right: nativeDefault.space.PX_8, position: "absolute", flexDirection: "row", justifyContent: "space-between" };
-  size = { borderColor: "white", width: 28, height: 28, borderRadius: nativeDefault.radii.sm, borderWidth: 1 };
+  size = { borderColor: "white", width: 28, height: 28, borderRadius: nativeDefault.radii.sm, borderWidth: nativeDefault.space.PX_4 };
   size1 = { height: 50, width: "100%", borderRadius: nativeDefault.radii.sm };
   space = nativeDefault.space;
   ({ marginBottom: arg0 ? space.PX_24 : space.PX_20, justifyContent: "center", flexDirection: "row", width: "100%", maxWidth: SHEET_CONTENT_MAX_WIDTH, flexWrap: "wrap", columnGap: nativeDefault.space.PX_24, rowGap: nativeDefault.space.PX_16 });
@@ -144,7 +142,7 @@ export default function DisplayNameStylesGradientPickerSheet(onSelectColors) {
     closure_6(items);
   }, []);
   let obj3 = { backgroundStyles: tmp.sheetBackground, header: closure_10(tmp7, obj4), children: closure_11(colors, obj6) };
-  BottomSheet = require("Sheet/BottomSheet").BottomSheet;
+  const BottomSheet = require("Sheet/BottomSheet").BottomSheet;
   obj4 = { title: displayNameStylesEffectConfig.name, trailing: closure_10(Button, obj5) };
   obj5 = { variant: "primary", size: "sm", text: intl.string(require("intl").t.XqMe3N), onPress: callback };
   tmp7 = selectedEffectId(onSelectColors[17]);

@@ -1,16 +1,16 @@
-// Module ID: 16834
-// Function ID: 16835
+// Module ID: 17157
+// Function ID: 17158
 // Name: FamilyCenterParentalControlsScreenTime
-// Dependencies: [17, 1072, 21, 5014, 575, 11013, 6975, 5624, 1113, 2538, 16792, 1497, 7060, 2]
+// Dependencies: [17, 1072, 21, 5140, 575, 11143, 7038, 5751, 1113, 2664, 17115, 1499, 7126, 2]
 // Exports: default
 
-// Module 16834 (FamilyCenterParentalControlsScreenTime)
+// Module 17157 (FamilyCenterParentalControlsScreenTime)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import _modDef2538 from "module_2538" /* 2538 */;
+import _modDef2664 from "module_2664" /* 2664 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -31,16 +31,16 @@ function ScheduleRuleRow(rule) {
   if (readOnly === undefined) {
     readOnly = false;
   }
-  let obj = rule(11013);
+  let obj = rule(11143);
   const scheduleRuleDateRange = obj.getScheduleRuleDateRange(rule);
-  let obj2 = rule(11013);
-  const obj3 = { label: scheduleRuleDateRange, subLabel: obj2.formatDays(rule.days), trailing: closure_5(Text, { variant: "text-sm/medium", color: "text-subtle", children: stringResult }), arrow: !readOnly, onPress: fn };
-  const TableRow = rule(6975).TableRow;
-  Text = rule(5624).Text;
+  let obj2 = rule(11143);
+  const obj3 = { label: scheduleRuleDateRange, subLabel: obj2.formatDays(rule.days), trailing: closure_5(Text, { variant: "body-sm/medium", color: "text-subtle", children: stringResult }), arrow: !readOnly, onPress: fn };
+  const TableRow = rule(7038).TableRow;
+  Text = rule(5751).Text;
   const enabled = rule.enabled;
   const intl = rule(1113).intl;
   const string = intl.string;
-  const tmp4 = _modDef2538;
+  const tmp4 = _modDef2664;
   if (enabled) {
     stringResult = string(tmp4["8vDHRq"]);
   } else {
@@ -103,7 +103,7 @@ export default function FamilyCenterParentalControlsScreenTime(readOnly) {
   const sortRulesByStartTimeResult = tmp2Result.sortRulesByStartTime(rules);
   if (null != id) {
     const obj3 = { style: tmp.container, children: items };
-    const obj4 = { variant: "text-sm/semibold", color: "text-subtle", style: tmp.header, children: intl.string(require("module_2538")["72CmJd"]) };
+    const obj4 = { variant: "body-sm/semibold", color: "text-subtle", style: tmp.header, children: intl.string(require("module_2664")["72CmJd"]) };
     const Text = tmp2(tmp3[7]).Text;
     intl = tmp2(tmp3[8]).intl;
     items = [closure_5(Text, obj4), ];

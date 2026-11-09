@@ -1,16 +1,16 @@
-// Module ID: 11275
-// Function ID: 11276
+// Module ID: 11415
+// Function ID: 11416
 // Name: SafetyTipsSection
-// Dependencies: [19, 17, 21, 5014, 575, 6027, 11276, 5624, 1113, 8160, 2]
+// Dependencies: [19, 17, 21, 5140, 575, 6159, 11416, 5751, 1113, 8230, 2]
 // Exports: default
 
-// Module 11275 (SafetyTipsSection)
+// Module 11415 (SafetyTipsSection)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import SafetyTipsRowDefault from "SafetyTipsRow" /* 8160 */;
+import SafetyTipsRowDefault from "SafetyTipsRow" /* 8230 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -30,22 +30,22 @@ export default function SafetyTipsContainer(safetyTips) {
   let showHeader = safetyTips.showHeader;
   const description = safetyTips.description;
   const tmp = closure_6();
-  let obj = { style: tmp.image, children: closure_4(safetyTips(11276).SafetyBookletSpotIllustration, {}) };
-  const Stack = safetyTips(6027).Stack;
+  let obj = { style: tmp.image, children: closure_4(safetyTips(11416).SafetyBookletSpotIllustration, {}) };
+  const Stack = safetyTips(6159).Stack;
   const items = [closure_4(View, obj), , ];
-  const Stack2 = safetyTips(6027).Stack;
+  const Stack2 = safetyTips(6159).Stack;
   const tmp6 = View;
   if (showHeader) {
     const obj2 = { style: tmp.text, variant: "heading-xl/semibold", children: intl.string(safetyTips(1113).t.eAbVfS) };
-    const Text = tmp3(5624).Text;
+    const Text = tmp3(5751).Text;
     intl = tmp3(1113).intl;
     showHeader = tmp5(Text, obj2);
   }
   const obj4 = { spacing: 8, align: "center", justify: "center", children: items1 };
   items1 = [showHeader, ];
   const obj3 = { spacing: 16, children: items };
-  const obj5 = { style: tmp.text, accessibilityRole: "header", variant: "text-md/medium", color: "text-default", children: description };
-  items1[1] = closure_4(safetyTips(5624).Text, obj5);
+  const obj5 = { style: tmp.text, accessibilityRole: "header", variant: "body-md/medium", color: "text-default", children: description };
+  items1[1] = closure_4(safetyTips(5751).Text, obj5);
   items[1] = closure_5(Stack2, obj4);
   const obj6 = {
     style: tmp.tips,

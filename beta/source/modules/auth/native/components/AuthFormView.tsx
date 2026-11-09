@@ -1,19 +1,18 @@
-// Module ID: 7139
-// Function ID: 7140
+// Module ID: 7206
+// Function ID: 7207
 // Name: AuthFormView
-// Dependencies: [19, 17, 21, 5014, 575, 7111, 7140, 7141, 7142, 7145, 2]
+// Dependencies: [19, 17, 21, 5140, 575, 7182, 7207, 7208, 7010, 7209, 2]
 // Exports: default
 
-// Module 7139 (AuthFormView)
+// Module 7206 (AuthFormView)
 import nativeDefault from "native" /* 575 */;
-import useWideAuthViewDefault from "useWideAuthView" /* 7111 */;
-import react2 from "react" /* 7140 */;
-import BackgroundImageDefault from "BackgroundImage" /* 7142 */;
-import AuthNavbarPlaceholderDefault from "AuthNavbarPlaceholder" /* 7145 */;
+import useWideAuthViewDefault from "useWideAuthView" /* 7182 */;
+import react2 from "react" /* 7207 */;
+import AuthNavbarPlaceholderDefault from "AuthNavbarPlaceholder" /* 7209 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -56,6 +55,7 @@ let closure_8 = createStyles.createStyles((arg0) => {
 const result = size.fileFinishedImporting("modules/auth/native/components/AuthFormView.tsx");
 
 export default function AuthFormView(arg0) {
+  let background;
   let backgroundImageCover;
   let backgroundImageSource;
   let children;
@@ -69,7 +69,7 @@ export default function AuthFormView(arg0) {
   let items5;
   let subHeader;
   let tmp5Result;
-  ({ children, headerText, subHeader, contentStyle } = arg0);
+  ({ children, headerText, subHeader, contentStyle, background } = arg0);
   ({ backgroundImageSource, backgroundImageCover } = arg0);
   const tmp3 = useWideAuthViewDefault();
   const tmp4 = closure_8(tmp3);
@@ -89,46 +89,49 @@ export default function AuthFormView(arg0) {
       children: items1
     };
     items = [tmp4.content, contentStyle];
-    let tmp15 = null;
-    const tmp13 = hasOwnProperty;
+    let tmp16 = null;
+    const tmp14 = hasOwnProperty;
     if (null != headerText) {
       const obj3 = { children: headerText };
-      tmp15 = metroRequire(tmp(7141), obj3);
+      tmp16 = metroRequire(tmp(7208), obj3);
     }
-    items1 = [tmp15, , ];
-    let tmp17 = null;
+    items1 = [tmp16, , ];
+    let tmp18 = null;
     if (null != subHeader) {
       const obj4 = { style: tmp4.subHeader, children: subHeader };
-      tmp17 = metroRequire(React3, obj4);
+      tmp18 = metroRequire(React3, obj4);
     }
-    items1[1] = tmp17;
+    items1[1] = tmp18;
     items1[2] = children;
-    tmp5Result = tmp5(tmp13, obj2);
+    tmp5Result = tmp5(tmp14, obj2);
   } else {
     const obj = { style: items2, children: items3 };
     items2 = [, ];
     ({ container: arr[0], flex: arr[1] } = tmp4);
-    const obj5 = { backgroundImageSource, backgroundImageCover };
-    items3 = [metroRequire(BackgroundImageDefault, obj5), metroRequire(AuthNavbarPlaceholderDefault, {}), ];
+    if (background == null) {
+      const obj5 = { backgroundImageSource, backgroundImageCover };
+      background = metroRequire(tmp(7010), obj5);
+    }
+    items3 = [background, metroRequire(AuthNavbarPlaceholderDefault, {}), ];
     const obj6 = { contentInset: { top: 0 }, automaticallyAdjustContentInsets: false, keyboardShouldPersistTaps: "handled", alwaysBounceVertical: false, style: tmp4.flex, contentContainerStyle: items4, children: items5 };
     items4 = [, , ];
     ({ content: arr3[0], flex: arr3[1] } = tmp4);
     items4[2] = contentStyle;
-    let tmp7Result = null;
-    const tmp8 = hasOwnProperty;
+    let tmp9Result = null;
+    const tmp10 = hasOwnProperty;
     if (null != headerText) {
       const obj7 = { children: headerText };
-      tmp7Result = tmp7(tmp(7141), obj7);
+      tmp9Result = tmp9(tmp(7208), obj7);
     }
-    items5 = [tmp7Result, , ];
-    let tmp7Result2 = null;
+    items5 = [tmp9Result, , ];
+    let tmp9Result2 = null;
     if (null != subHeader) {
       const obj8 = { style: tmp4.subHeader, children: subHeader };
-      tmp7Result2 = tmp7(tmp6, obj8);
+      tmp9Result2 = tmp9(tmp6, obj8);
     }
-    items5[1] = tmp7Result2;
+    items5[1] = tmp9Result2;
     items5[2] = children;
-    items3[2] = metroImportDefault(tmp8, obj6);
+    items3[2] = metroImportDefault(tmp10, obj6);
     tmp5Result = tmp5(tmp6, obj);
   }
   return tmp5Result;

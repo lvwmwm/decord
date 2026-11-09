@@ -1,14 +1,14 @@
-// Module ID: 6027
-// Function ID: 6028
+// Module ID: 6159
+// Function ID: 6160
 // Name: Stack/Stack
-// Dependencies: [19, 17, 21, 5014, 2]
+// Dependencies: [19, 17, 21, 5140, 2]
 // Exports: Stack
 
-// Module 6027 (Stack/Stack)
+// Module 6159 (Stack/Stack)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 const View = react_native.View;

@@ -1,23 +1,23 @@
-// Module ID: 9963
-// Function ID: 9964
+// Module ID: 10085
+// Function ID: 10086
 // Name: Coachmark
-// Dependencies: [109, 32, 19, 17, 1072, 21, 5095, 5014, 575, 9958, 5641, 9964, 5717, 6021, 5624, 5634, 1113, 7054, 8992, 9965, 1375, 5080, 2]
+// Dependencies: [109, 32, 19, 17, 1072, 21, 1652, 5140, 575, 10080, 5765, 10086, 5842, 6153, 5751, 5758, 1113, 7120, 9072, 8042, 1377, 5199, 2]
 // Exports: CoachmarkContainer
 
-// Module 9963 (Coachmark)
+// Module 10085 (Coachmark)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import native from "native" /* 5080 */;
-import FastImageDefault from "FastImage" /* 5717 */;
-import react_native from "react-native" /* 6021 */;
-import Graphic2 from "Graphic" /* 9964 */;
+import native from "native" /* 5199 */;
+import FastImageDefault from "FastImage" /* 5842 */;
+import react_native from "react-native" /* 6153 */;
+import Graphic2 from "Graphic" /* 10086 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import module_1652 from "module_1652" /* 1652 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 let Pressable;
@@ -164,8 +164,8 @@ class Coachmark {
       textOnlyPadding = tmp.textOnlyPadding;
     }
     items4[1] = textOnlyPadding;
-    items5 = [tmp17(Text, { style: items4, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: title }), ];
-    const obj5 = { style: tmp.text, variant: "text-sm/medium", color: "text-subtle", children: description };
+    items5 = [tmp17(Text, { style: items4, variant: "body-md/semibold", color: "mobile-text-heading-primary", children: title }), ];
+    const obj5 = { style: tmp.text, variant: "body-sm/medium", color: "text-subtle", children: description };
     items5[1] = closure_10(tmp8(renderImgComponent[14]).Text, obj5);
     items3[1] = closure_11(closure_7, obj4);
     const items6 = [tmp14(tmp16, obj3), , ];
@@ -288,7 +288,7 @@ let closure_3 = ["style"];
 ({ View: metroImportDefault, Pressable } = react_native2);
 const ThemeTypes = Constants.ThemeTypes;
 ({ jsx: c10, jsxs: unpackModuleId, Fragment: closure_12 } = Fragment);
-let closure_13 = ReanimatedRexport.createAnimatedComponent(Pressable);
+let closure_13 = module_1652.createAnimatedComponent(Pressable);
 let createStyles = createStyles_mod;
 let obj = { container: { position: "absolute", alignItems: "center" }, shadow: obj2, body: obj3, textGap: { gap: 4 }, textOnlyPadding: obj4, bodyBgColor: obj5, gradient: obj6, bodyContainer: obj7, center: { alignItems: "center", justifyContent: "center" }, buttonSpacing: obj8, text: { maxWidth: 200, textAlign: "center" }, cursorContainer: { alignItems: "center", zIndex: 0 }, cursorHead: size, cursorSpine: size1, image: { height: 40, width: 40 }, bottomMargin: obj9, closeButton: rect };
 obj2 = {};

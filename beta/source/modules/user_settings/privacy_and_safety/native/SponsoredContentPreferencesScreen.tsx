@@ -1,16 +1,16 @@
-// Module ID: 17897
-// Function ID: 17898
+// Module ID: 18234
+// Function ID: 18235
 // Name: SponsoredContentPreferencesScreen
-// Dependencies: [19, 8432, 1072, 21, 1113, 2061, 11540, 16583, 2]
+// Dependencies: [19, 8503, 1072, 21, 1113, 2185, 11685, 16905, 2]
 // Exports: default
 
-// Module 17897 (SponsoredContentPreferencesScreen)
+// Module 18234 (SponsoredContentPreferencesScreen)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2061 */;
-import SettingsConstants from "SettingsConstants" /* 8432 */;
-import SettingBuilders from "SettingBuilders" /* 11540 */;
-import SettingLayoutDefault from "SettingLayout" /* 16583 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2185 */;
+import SettingsConstants from "SettingsConstants" /* 8503 */;
+import SettingBuilders from "SettingBuilders" /* 11685 */;
+import SettingLayoutDefault from "SettingLayout" /* 16905 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

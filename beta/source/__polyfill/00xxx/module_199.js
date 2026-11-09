@@ -401,7 +401,7 @@ const items1 = [
   },
   {
     key: "__didReceiveIncrementalData",
-    value: function __didReceiveIncrementalData(arg0, _response, loaded, total) {
+    value: function __didReceiveIncrementalData(arg0, _response, arg2, arg3) {
       const self = this;
       if (arg0 === this._requestId) {
         if (self._response) {
@@ -414,7 +414,7 @@ const items1 = [
           _interceptor.dataReceived(arg0, _response);
         }
         self.setReadyState(self.LOADING);
-        const result = self.__didReceiveDataProgress(arg0, loaded, total);
+        const result = self.__didReceiveDataProgress(arg0, arg2, arg3);
       }
     }
   },
@@ -541,7 +541,7 @@ const items1 = [
   },
   {
     key: "setRequestHeader",
-    value: function setRequestHeader(baggage, StringResult) {
+    value: function setRequestHeader(str, arg1) {
       if (this.readyState !== this.OPENED) {
         const _Error = Error;
         const self = this;
@@ -551,8 +551,8 @@ const items1 = [
       } else {
         const _headers = tmp._headers;
         const _String = String;
-        const formatted = baggage.toLowerCase();
-        _headers[formatted] = String(StringResult);
+        const formatted = str.toLowerCase();
+        _headers[formatted] = String(arg1);
       }
     }
   },
@@ -739,14 +739,14 @@ const items1 = [
   },
   {
     key: "setReadyState",
-    value: function setReadyState(DONE) {
+    value: function setReadyState(readyState) {
       const self = this;
-      this.readyState = DONE;
+      this.readyState = readyState;
       const dispatchTrustedEvent = EVENT_TARGET_GET_THE_PARENT_KEY.dispatchTrustedEvent;
       EVENT_TARGET_GET_THE_PARENT_KEY;
       const tmp5 = new _modDef133("readystatechange");
       dispatchTrustedEvent(this, tmp5);
-      if (DONE === this.DONE) {
+      if (readyState === this.DONE) {
         if (self._aborted) {
           const dispatchTrustedEvent4 = EVENT_TARGET_GET_THE_PARENT_KEY.dispatchTrustedEvent;
           const self5 = this;

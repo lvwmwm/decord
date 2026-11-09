@@ -1,32 +1,30 @@
-// Module ID: 14138
-// Function ID: 14139
+// Module ID: 14381
+// Function ID: 14382
 // Name: MarketingCardsScroller
-// Dependencies: [32, 19, 17, 5015, 21, 5014, 5011, 575, 504, 5274, 1113, 1376, 6980, 10254, 13918, 2]
+// Dependencies: [32, 19, 17, 5141, 21, 5140, 5137, 575, 504, 5390, 1113, 1357, 1652, 7043, 10373, 14152, 2]
 // Exports: MarketingCardsScroller
 
-// Module 14138 (MarketingCardsScroller)
+// Module 14381 (MarketingCardsScroller)
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import utils_PlatformUtils from "utils/PlatformUtils" /* 1376 */;
+import utils_PlatformUtils from "utils/PlatformUtils" /* 1357 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5015 */;
+import AccessibilityStore from "AccessibilityStore" /* 5141 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
-import ColorUtils_mod from "ColorUtils" /* 5011 */;
+import createStyles_mod from "createStyles" /* 5140 */;
+import ColorUtils_mod from "ColorUtils" /* 5137 */;
 import size_mod from "module_2" /* 2 */;
 
 let ColorUtils;
-let c9;
-let hasOwnProperty;
 let items;
 let metroImportAll;
-let metroRequire;
+let metroImportDefault;
 let size;
 let react = react_mod;
-({ ScrollView: hasOwnProperty, View: metroRequire } = react_native);
-({ jsx: metroImportAll, jsxs: c9 } = Fragment);
+const View = react_native.View;
+({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
 const previous = "previous";
 const next = "next";
 let createStyles = createStyles_mod;
@@ -35,7 +33,7 @@ size = { alignItems: "center", backgroundColor: ColorUtils.hexWithOpacity(native
 createStyles = createStyles.createStyles;
 ColorUtils = ColorUtils_mod;
 items = [{ translateY: -22 }];
-let closure_12 = createStyles(obj);
+let closure_11 = createStyles(obj);
 size = size_mod;
 const result = size.fileFinishedImporting("modules/guild_boosting/native/marketing_redesign/MarketingCardsScroller.tsx");
 
@@ -58,8 +56,10 @@ export function MarketingCardsScroller(ref) {
   let items7;
   let items8;
   let items9;
+  let layout;
   let obj7;
   let obj9;
+  let style;
   let tmp10;
   let tmp8;
   ref = ref.ref;
@@ -75,7 +75,7 @@ export function MarketingCardsScroller(ref) {
   c9 = undefined;
   let stateFromStores;
   let ref2;
-  closure_12 = undefined;
+  let closure_12;
   let closure_13;
   let closure_14;
   let scrollToIndex;
@@ -103,8 +103,8 @@ export function MarketingCardsScroller(ref) {
   }
   itemCount = merged.itemCount;
   onScrollingChange = merged.onScrollingChange;
-  const style = merged.style;
-  let tmp2 = closure_12();
+  ({ layout, style } = merged);
+  let tmp2 = ref2();
   let obj = react;
   ref1 = react.useRef(null);
   const sum = cardWidth + cardMarginRight;
@@ -118,8 +118,8 @@ export function MarketingCardsScroller(ref) {
   [tmp10, c9] = ref1(react.useState(0), 2);
   const tmp9 = ref1(react.useState(0), 2);
   let obj2 = num(onScrollingChange[8]);
-  let items = [closure_7];
-  stateFromStores = obj2.useStateFromStores(items, () => closure_7.useReducedMotion);
+  let items = [first];
+  stateFromStores = obj2.useStateFromStores(items, () => first.useReducedMotion);
   ref2 = react.useRef(stateFromStores);
   let tmp15 = tmp10 > 0;
   const obj3 = num(onScrollingChange[9]);
@@ -131,10 +131,10 @@ export function MarketingCardsScroller(ref) {
     tmp15 = rounded > Math.round(tmp10);
   }
   closure_12 = tmp15;
-  let tmp26Result = tmp15 && first > 0;
-  closure_13 = tmp26Result;
-  let tmp26Result2 = tmp15 && first < itemCount - 1;
-  closure_14 = tmp26Result2;
+  let tmp27Result = tmp15 && first > 0;
+  closure_13 = tmp27Result;
+  let tmp27Result2 = tmp15 && first < itemCount - 1;
+  closure_14 = tmp27Result2;
   const items1 = [itemCount, sum];
   const items2 = [stateFromStores];
   const memo = obj.useMemo(() => {
@@ -167,30 +167,32 @@ export function MarketingCardsScroller(ref) {
   }, items3);
   const items4 = [scrollToIndex];
   const imperativeHandle = obj.useImperativeHandle(ref, () => ({ scrollToIndex }), items4);
-  const items5 = [tmp26Result2, tmp26Result];
+  const items5 = [tmp27Result2, tmp27Result];
   const obj4 = { style: items6, children: items7 };
   items6 = [style, tmp2.wrapper];
+  const memo1 = obj.useMemo(() => {
+    let intl;
+    let intl2;
+    const items = [];
+    const tmp = closure_13;
+    if (tmp) {
+      const push = items.push;
+      const obj = { name: previous, label: intl.string(intl3.t.vgfxaA) };
+      intl = intl3.intl;
+      push(obj);
+    }
+    const tmp8 = closure_14;
+    if (tmp8) {
+      const push2 = items.push;
+      const obj2 = { name: next, label: intl2.string(intl3.t.XiOHRX) };
+      intl2 = intl3.intl;
+      push2(obj2);
+    }
+    return items;
+  }, items5);
   const obj5 = {
-    accessibilityActions: obj.useMemo(() => {
-      let intl;
-      let intl2;
-      const items = [];
-      const tmp = closure_13;
-      if (tmp) {
-        const push = items.push;
-        const obj = { name: previous, label: intl.string(intl3.t.vgfxaA) };
-        intl = intl3.intl;
-        push(obj);
-      }
-      const tmp8 = closure_14;
-      if (tmp8) {
-        const push2 = items.push;
-        const obj2 = { name: next, label: intl2.string(intl3.t.XiOHRX) };
-        intl2 = intl3.intl;
-        push2(obj2);
-      }
-      return items;
-    }, items5),
+    layout,
+    accessibilityActions: memo1,
     centerContent: true,
     contentContainerStyle,
     decelerationRate: 0.1,
@@ -233,8 +235,8 @@ export function MarketingCardsScroller(ref) {
     children: Children.map(children, (children, arg1) => {
       let str;
       let tmp4 = closure_12;
-      const tmp = metroImportAll;
-      const tmp2 = metroRequire;
+      const tmp = metroImportDefault;
+      const tmp2 = View;
       if (closure_12) {
         tmp4 = arg1 !== first;
       }
@@ -248,47 +250,47 @@ export function MarketingCardsScroller(ref) {
       return tmp(tmp2, obj);
     })
   };
-  const tmp24 = c9;
-  const tmp25 = first;
-  const tmp27 = ref;
+  const ScrollView = itemCount(tmp12[12]).ScrollView;
+  const tmp25 = c8;
+  const tmp26 = ref;
   if (tmp15) {
     tmp15 = !isScreenReaderEnabled;
   }
   Children = obj.Children;
-  items7 = [c8(tmp27, obj5), , ];
-  if (tmp26Result) {
+  items7 = [closure_7(ScrollView, obj5), , ];
+  if (tmp27Result) {
     function handleNavigatePrevious() {
       const tmp = closure_13;
       if (tmp) {
         callback(first - 1);
       }
     }
-    const obj6 = { accessibilityLabel: intl.string(num(onScrollingChange[10]).t.vgfxaA), accessibilityRole: "button", onPress: handleNavigatePrevious, style: items8, children: c8(ChevronLargeLeftIcon, obj7) };
-    const PressableOpacity = tmp11(tmp12[12]).PressableOpacity;
+    const obj6 = { accessibilityLabel: intl.string(num(onScrollingChange[10]).t.vgfxaA), accessibilityRole: "button", onPress: handleNavigatePrevious, style: items8, children: closure_7(ChevronLargeLeftIcon, obj7) };
+    const PressableOpacity = tmp11(tmp12[13]).PressableOpacity;
     intl = tmp11(tmp12[10]).intl;
     items8 = [, ];
     ({ navigationButton: arr10[0], navigationButtonPrevious: arr10[1] } = tmp2);
     obj7 = { color: itemCount(onScrollingChange[7]).colors.WHITE, size: "sm" };
-    ChevronLargeLeftIcon = tmp11(tmp12[13]).ChevronLargeLeftIcon;
-    tmp26Result = tmp26(PressableOpacity, obj6);
+    ChevronLargeLeftIcon = tmp11(tmp12[14]).ChevronLargeLeftIcon;
+    tmp27Result = tmp27(PressableOpacity, obj6);
   }
-  items7[1] = tmp26Result;
-  if (tmp26Result2) {
+  items7[1] = tmp27Result;
+  if (tmp27Result2) {
     function handleNavigateNext() {
       const tmp = closure_14;
       if (tmp) {
         callback(first + 1);
       }
     }
-    const obj8 = { accessibilityLabel: intl2.string(num(onScrollingChange[10]).t.XiOHRX), accessibilityRole: "button", onPress: handleNavigateNext, style: items9, children: c8(ChevronLargeRightIcon, obj9) };
-    const PressableOpacity2 = tmp11(tmp12[12]).PressableOpacity;
+    const obj8 = { accessibilityLabel: intl2.string(num(onScrollingChange[10]).t.XiOHRX), accessibilityRole: "button", onPress: handleNavigateNext, style: items9, children: closure_7(ChevronLargeRightIcon, obj9) };
+    const PressableOpacity2 = tmp11(tmp12[13]).PressableOpacity;
     intl2 = tmp11(tmp12[10]).intl;
     items9 = [, ];
     ({ navigationButton: arr11[0], navigationButtonNext: arr11[1] } = tmp2);
     obj9 = { color: itemCount(onScrollingChange[7]).colors.WHITE, size: "sm" };
-    ChevronLargeRightIcon = tmp11(tmp12[14]).ChevronLargeRightIcon;
-    tmp26Result2 = tmp26(PressableOpacity2, obj8);
+    ChevronLargeRightIcon = tmp11(tmp12[15]).ChevronLargeRightIcon;
+    tmp27Result2 = tmp27(PressableOpacity2, obj8);
   }
-  items7[2] = tmp26Result2;
-  return tmp24(tmp25, obj4);
+  items7[2] = tmp27Result2;
+  return tmp25(tmp26, obj4);
 }

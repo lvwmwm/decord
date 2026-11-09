@@ -1,21 +1,20 @@
-// Module ID: 19999
-// Function ID: 20000
+// Module ID: 20409
+// Function ID: 20410
 // Name: GuildRoleSubscriptionTierTemplatePriceReselectionActionSheet
-// Dependencies: [32, 19, 17, 1083, 21, 5014, 575, 5272, 5275, 5624, 1113, 1187, 7413, 7058, 7061, 17215, 6767, 5634, 5258, 2]
+// Dependencies: [32, 19, 17, 1083, 21, 5140, 575, 5388, 5392, 5751, 1113, 1187, 7477, 7124, 7127, 17541, 6822, 5758, 5374, 2]
 // Exports: default
 
-// Module 19999 (GuildRoleSubscriptionTierTemplatePriceReselectionActionSheet)
+// Module 20409 (GuildRoleSubscriptionTierTemplatePriceReselectionActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let BottomSheet;
 
 let metroImportAll;
 let metroImportDefault;
@@ -56,7 +55,7 @@ export default function GuildRoleSubscriptionTierTemplatePriceReselectionActionS
   let obj = { backdropOpacity: 0.8, startExpanded: true, children: closure_7(View, obj2) };
   obj2 = { style: tmp.container, children: closure_8(BottomSheetScrollView, obj3) };
   const tmp4 = tmp2[1];
-  BottomSheet = selectedTemplate(newPricesToPick[7]).BottomSheet;
+  const BottomSheet = selectedTemplate(newPricesToPick[7]).BottomSheet;
   obj3 = { contentContainerStyle: tmp.content, children: items };
   BottomSheetScrollView = selectedTemplate(newPricesToPick[8]).BottomSheetScrollView;
   const obj4 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: intl.format(selectedTemplate(newPricesToPick[10]).t["5WZ9Ct"], obj5) };
@@ -64,7 +63,7 @@ export default function GuildRoleSubscriptionTierTemplatePriceReselectionActionS
   intl = selectedTemplate(newPricesToPick[10]).intl;
   obj5 = { tierName: selectedTemplate.listings[0].name };
   items = [closure_7(Text, obj4), closure_7(selectedTemplate(newPricesToPick[11]).Spacer, { size: 12 }), , , , , ];
-  const obj6 = { variant: "text-sm/normal", color: "text-default", children: format(v5i7Uhb, obj7) };
+  const obj6 = { variant: "body-sm/normal", color: "text-default", children: format(v5i7Uhb, obj7) };
   const Text2 = selectedTemplate(newPricesToPick[9]).Text;
   const intl2 = selectedTemplate(newPricesToPick[10]).intl;
   format = intl2.format;

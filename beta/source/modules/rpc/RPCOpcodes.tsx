@@ -1,9 +1,9 @@
-// Module ID: 11807
-// Function ID: 11808
+// Module ID: 11970
+// Function ID: 11971
 // Name: RPCOpcodes
 // Dependencies: [2]
 
-// Module 11807 (RPCOpcodes)
+// Module 11970 (RPCOpcodes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/rpc/RPCOpcodes.tsx");

@@ -1,18 +1,19 @@
-// Module ID: 14195
-// Function ID: 14196
+// Module ID: 12554
+// Function ID: 12555
 // Name: UserProfileAlertUtils
-// Dependencies: [19, 21, 5960, 14196, 14197, 14198, 14199, 14200, 14201, 2]
-// Exports: alertUserReported, confirmCancelFriendRequest, confirmRemoveFriend, confirmRemoveGameFriend, confirmThreadRemove, confirmVideoUnstableConnection
+// Dependencies: [19, 21, 6092, 12555, 12556, 12557, 12558, 12559, 12560, 12561, 2]
+// Exports: alertUserReported, confirmCancelFriendRequest, confirmRemoveFriend, confirmRemoveGameFriend, confirmRemoveWidget, confirmThreadRemove, confirmVideoUnstableConnection
 
-// Module 14195 (UserProfileAlertUtils)
+// Module 12554 (UserProfileAlertUtils)
 import Fragment from "Fragment" /* 21 */;
-import useAlertStore from "useAlertStore" /* 5960 */;
-import UserProfileConfirmCancelFriendRequestDefault from "UserProfileConfirmCancelFriendRequest" /* 14196 */;
-import UserProfileConfirmRemoveFriendDefault from "UserProfileConfirmRemoveFriend" /* 14197 */;
-import UserProfileConfirmRemoveGameFriendDefault from "UserProfileConfirmRemoveGameFriend" /* 14198 */;
-import UserProfileConfirmVideoUnstableConnectionDefault from "UserProfileConfirmVideoUnstableConnection" /* 14199 */;
-import UserProfileAlertUserReportedDefault from "UserProfileAlertUserReported" /* 14200 */;
-import UserProfileConfirmThreadRemoveDefault from "UserProfileConfirmThreadRemove" /* 14201 */;
+import useAlertStore from "useAlertStore" /* 6092 */;
+import UserProfileConfirmCancelFriendRequestDefault from "UserProfileConfirmCancelFriendRequest" /* 12555 */;
+import UserProfileConfirmRemoveFriendDefault from "UserProfileConfirmRemoveFriend" /* 12556 */;
+import UserProfileConfirmRemoveGameFriendDefault from "UserProfileConfirmRemoveGameFriend" /* 12557 */;
+import UserProfileConfirmVideoUnstableConnectionDefault from "UserProfileConfirmVideoUnstableConnection" /* 12558 */;
+import UserProfileAlertUserReportedDefault from "UserProfileAlertUserReported" /* 12559 */;
+import UserProfileConfirmThreadRemoveDefault from "UserProfileConfirmThreadRemove" /* 12560 */;
+import UserProfileConfirmRemoveWidgetDefault from "UserProfileConfirmRemoveWidget" /* 12561 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -54,4 +55,26 @@ export function confirmThreadRemove(arg0) {
   UserProfileConfirmThreadRemoveDefault;
   const merged = Object.assign(arg0);
   openAlert("thread-remove", <tmp2 />);
+}
+export function confirmRemoveWidget(arg0) {
+  let closure_129_0;
+  let closure_129_1;
+  ({ onConfirm: closure_129_0, onDismissWithoutRemoving: closure_129_1 } = arg0);
+  let c2 = false;
+  const merged = Object.assign(arg0, Object.assign({ onConfirm: 0, onDismissWithoutRemoving: 0 }));
+  const tmp2 = useAlertStore;
+  const openAlert = tmp2.openAlert;
+  UserProfileConfirmRemoveWidgetDefault;
+  const merged1 = Object.assign(merged);
+  openAlert("remove-widget", <tmp3 onConfirm={function onConfirm() {
+    c2 = true;
+    closure_1_0();
+  }} />, () => {
+    const tmp = c2;
+    if (!tmp) {
+      if (closure_1_1 != null) {
+        tmp2();
+      }
+    }
+  });
 }

@@ -1,12 +1,12 @@
-// Module ID: 18800
-// Function ID: 18801
+// Module ID: 19163
+// Function ID: 19164
 // Name: useAutoTrackSearchTabCountsViewedAnalytics
-// Dependencies: [19, 9827, 13907, 2]
+// Dependencies: [19, 9917, 14141, 2]
 // Exports: useAutoTrackSearchTabCountsViewedAnalytics
 
-// Module 18800 (useAutoTrackSearchTabCountsViewedAnalytics)
-import SearchConstants from "SearchConstants" /* 9827 */;
-import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 13907 */;
+// Module 19163 (useAutoTrackSearchTabCountsViewedAnalytics)
+import SearchConstants from "SearchConstants" /* 9917 */;
+import TrackingDefault from "Tracking" /* 14141 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -55,7 +55,7 @@ export function useAutoTrackSearchTabCountsViewedAnalytics(searchContext) {
         const MEMBERS = SearchTabs.MEMBERS;
         const obj = { searchContext, searchResultTotalCount: reduced, numMemberTabReturnedResults: tmp4, numChannelTabReturnedResults: tmp5, numPeopleTabReturnedResults: tmp8, numMessageTabReturnedResults: tmp11, numMediaTabReturnedResults: tmp14, numFileTabReturnedResults: tmp17, numLinkTabReturnedResults: tmp20 };
         tmp4 = null;
-        const trackSearchResultReturned = search_tracking_TrackingDefault.trackSearchResultReturned;
+        const trackSearchResultReturned = TrackingDefault.trackSearchResultReturned;
         if (null != tmp) {
           let current = ref.current;
           let tmp3 = null;

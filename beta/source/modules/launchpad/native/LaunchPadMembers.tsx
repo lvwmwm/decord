@@ -1,17 +1,17 @@
-// Module ID: 19088
-// Function ID: 19089
+// Module ID: 19464
+// Function ID: 19465
 // Name: LaunchPadMembers
-// Dependencies: [19, 17, 4863, 4917, 21, 5014, 563, 12521, 18768, 11621, 5624, 1113, 2]
+// Dependencies: [19, 17, 4989, 5043, 21, 5140, 563, 12724, 19131, 11779, 5751, 1113, 2]
 
-// Module 19088 (LaunchPadMembers)
+// Module 19464 (LaunchPadMembers)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import intl2 from "intl" /* 1113 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4917 */;
-import createStyles from "createStyles" /* 5014 */;
+import ChannelStore from "ChannelStore" /* 4989 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5043 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let channel, currentlySelectedChannelId;
@@ -45,7 +45,7 @@ const memoResult = react.memo(function LaunchPadMembers() {
         }
       }
     }
-    return { channelId: "children", type: 0.0000000000000000000000000008584917489807501 };
+    return { channelId: "channel", type: 16822603606136006000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
   });
   if ("private" === stateFromStoresObject.type) {
     tmp8 = <View style={tmp.wrapper}>{null}</View>;
@@ -56,8 +56,8 @@ const memoResult = react.memo(function LaunchPadMembers() {
     ({ channelId: obj3.channelId, guildId: obj3.guildId } = stateFromStoresObject);
     tmp8 = <View style={tmp.wrapper}>{null}</View>;
   } else {
-    ({ style: tmp.emptyText, variant: "text-md/semibold", children: intl.string(intl2.t["+7wtJq"]) });
-    const Text = tmp2(5624).Text;
+    ({ style: tmp.emptyText, variant: "body-md/semibold", children: intl.string(intl2.t["+7wtJq"]) });
+    const Text = tmp2(5751).Text;
     intl = tmp2(1113).intl;
     tmp8 = <View style={tmp.emptyWrapper}>{null}</View>;
   }

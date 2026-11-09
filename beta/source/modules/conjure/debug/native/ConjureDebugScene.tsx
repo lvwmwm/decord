@@ -1,26 +1,26 @@
-// Module ID: 13014
-// Function ID: 13015
+// Module ID: 13238
+// Function ID: 13239
 // Name: ConjureDebugScene
-// Dependencies: [32, 19, 17, 10850, 10857, 21, 5014, 575, 1113, 3868, 1497, 1625, 12202, 8980, 504, 10893, 12086, 13015, 7358, 13024, 5712, 5731, 12234, 9214, 13025, 13031, 13033, 2]
+// Dependencies: [32, 19, 17, 10969, 10976, 21, 5140, 575, 1113, 4026, 1499, 1627, 12374, 9059, 504, 11018, 12249, 13239, 7418, 13248, 5837, 5855, 12406, 9294, 13249, 13255, 13257, 2]
 // Exports: default
 
-// Module 13014 (ConjureDebugScene)
+// Module 13238 (ConjureDebugScene)
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
-import _modDef3868 from "module_3868" /* 3868 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5712 */;
-import CopyIcon from "CopyIcon" /* 5731 */;
-import ClipboardUtils from "ClipboardUtils" /* 7358 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 10850 */;
-import conjureDebugConnection from "conjureDebugConnection" /* 10893 */;
-import conjureTraceRequests2 from "conjureTraceRequests" /* 12086 */;
-import ConjureDebugSnapshot from "ConjureDebugSnapshot" /* 13024 */;
+import _modDef4026 from "module_4026" /* 4026 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5837 */;
+import CopyIcon from "CopyIcon" /* 5855 */;
+import ClipboardUtils from "ClipboardUtils" /* 7418 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 10969 */;
+import conjureDebugConnection from "conjureDebugConnection" /* 11018 */;
+import conjureTraceRequests2 from "conjureTraceRequests" /* 12249 */;
+import ConjureDebugSnapshot from "ConjureDebugSnapshot" /* 13248 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ConjureDebugStore from "ConjureDebugStore" /* 10857 */;
+import ConjureDebugStore from "ConjureDebugStore" /* 10976 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let navigation;
@@ -129,7 +129,7 @@ export default function ConjureDebugScene(projectId) {
       const tmp4 = projectId;
       if (null != result) {
         setActiveIndex(memo.indexOf("trace"), false);
-        const tmp2Result = tmp2(13015);
+        const tmp2Result = tmp2(13239);
         tmp2Result.openPerfTrace(tmp4, result);
       }
     }
@@ -145,7 +145,7 @@ export default function ConjureDebugScene(projectId) {
     ClipboardUtils;
     const obj = ConjureDebugSnapshot;
     copy(obj.conjureDebugSnapshot(projectId));
-    const obj2 = { text: intl.string(_modDef3868.wI6fhl), icon: CopyIcon.CopyIcon };
+    const obj2 = { text: intl.string(_modDef4026.wI6fhl), icon: CopyIcon.CopyIcon };
     const open = ToastActionCreatorsDefault.open;
     ToastActionCreatorsDefault;
     intl = intl4.intl;

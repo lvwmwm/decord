@@ -1,25 +1,25 @@
-// Module ID: 15481
-// Function ID: 15482
+// Module ID: 15774
+// Function ID: 15775
 // Name: GuildBoostingMarketingBoosterRecognitionCards
-// Dependencies: [19, 17, 21, 5014, 575, 5624, 1113, 15482, 9920, 15483, 15407, 15484, 9059, 15485, 9468, 2]
+// Dependencies: [19, 17, 21, 5140, 575, 5751, 1113, 15775, 10042, 15776, 15700, 15777, 9139, 15778, 9552, 2]
 // Exports: default
 
-// Module 15481 (GuildBoostingMarketingBoosterRecognitionCards)
+// Module 15774 (GuildBoostingMarketingBoosterRecognitionCards)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl6 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import ShieldUserIcon from "ShieldUserIcon" /* 9059 */;
-import HeartIcon from "HeartIcon" /* 9468 */;
-import BoostGemIcon from "BoostGemIcon" /* 9920 */;
-import BoostTier3Icon from "BoostTier3Icon" /* 15407 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15482 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 15483 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 15484 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 15485 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import ShieldUserIcon from "ShieldUserIcon" /* 9139 */;
+import HeartIcon from "HeartIcon" /* 9552 */;
+import BoostGemIcon from "BoostGemIcon" /* 10042 */;
+import BoostTier3Icon from "BoostTier3Icon" /* 15700 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15775 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 15776 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 15777 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 15778 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -36,7 +36,7 @@ function Card(arg0) {
   ({ IconComponent, children } = arg0);
   obj3 = { size: "lg", color: nativeDefault.unsafe_rawColors.GUILD_BOOSTING_PINK };
   items = [React3(View, obj2), ];
-  const obj4 = { style: tmp.description, variant: "text-sm/medium", children };
+  const obj4 = { style: tmp.description, variant: "body-sm/medium", children };
   items[1] = React3(Text_Text.Text, obj4);
   return hasOwnProperty(View, obj);
 }
@@ -60,7 +60,7 @@ export default function GuildBoostingMarketingBoosterRecognitionCards() {
   let items1;
   const tmp = closure_8();
   const obj = { style: tmp.container, children: items };
-  const obj2 = { variant: "heading-xl/extrabold", style: tmp.title, children: intl.string(intl6.t.IzKs3o) };
+  const obj2 = { variant: "heading-xl/semibold", style: tmp.title, children: intl.string(intl6.t.IzKs3o) };
   const Heading = Text_Text.Heading;
   intl = intl6.intl;
   items = [React3(Heading, obj2), ];

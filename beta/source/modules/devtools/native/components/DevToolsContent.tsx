@@ -1,26 +1,26 @@
-// Module ID: 17752
-// Function ID: 17753
+// Module ID: 18084
+// Function ID: 18085
 // Name: DevToolsContent
-// Dependencies: [32, 19, 17, 11362, 5238, 1246, 21, 5014, 575, 504, 13192, 17753, 5624, 6980, 5260, 13044, 13046, 1497, 1625, 7060, 6975, 5712, 16430, 2]
+// Dependencies: [32, 19, 17, 11502, 5354, 1246, 21, 5140, 575, 504, 13430, 18085, 5751, 7043, 5376, 13268, 13270, 1499, 1627, 7126, 7038, 5837, 16751, 2]
 
-// Module 17752 (DevToolsContent)
+// Module 18084 (DevToolsContent)
 import nativeDefault from "native" /* 575 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1625 */;
-import HapticUtils from "HapticUtils" /* 5260 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import Pressables from "Pressables" /* 6980 */;
-import ArrowSmallUpIcon from "ArrowSmallUpIcon" /* 13044 */;
-import ArrowSmallDownIcon from "ArrowSmallDownIcon" /* 13046 */;
-import DevToolsNavigator from "DevToolsNavigator" /* 16430 */;
-import useSortedDevToolsScreens from "useSortedDevToolsScreens" /* 17753 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
+import HapticUtils from "HapticUtils" /* 5376 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import Pressables from "Pressables" /* 7043 */;
+import ArrowSmallUpIcon from "ArrowSmallUpIcon" /* 13268 */;
+import ArrowSmallDownIcon from "ArrowSmallDownIcon" /* 13270 */;
+import DevToolsNavigator from "DevToolsNavigator" /* 16751 */;
+import useSortedDevToolsScreens from "useSortedDevToolsScreens" /* 18085 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import BuildOverrideStore from "BuildOverrideStore" /* 11362 */;
-import ExperimentStore from "ExperimentStore" /* 5238 */;
+import BuildOverrideStore from "BuildOverrideStore" /* 11502 */;
+import ExperimentStore from "ExperimentStore" /* 5354 */;
 import ApexExperimentStore from "ApexExperimentStore" /* 1246 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -80,7 +80,7 @@ function DevToolsContentSortButtons(arg0) {
     children: closure_10(ArrowSmallDownIcon.ArrowSmallDownIcon, {})
   };
   items2 = [tmp.button, ];
-  const PressableOpacity2 = tmp5(6980).PressableOpacity;
+  const PressableOpacity2 = tmp5(7043).PressableOpacity;
   if (end) {
     end = tmp.disabledButton;
   }
@@ -103,10 +103,10 @@ const memoResult = react.memo(function DevToolsContentSubLabel(arg0) {
   let label;
   let value;
   ({ label, value } = arg0);
-  const obj = { variant: "text-xs/medium", color: "text-subtle", children: items };
+  const obj = { variant: "body-xs/medium", color: "text-subtle", children: items };
   items = [label, ];
   const Text = Text_Text.Text;
-  items[1] = authStore(Text_Text.Text, { variant: "text-xs/semibold", children: value });
+  items[1] = authStore(Text_Text.Text, { variant: "body-xs/semibold", children: value });
   return unpackModuleId(Text, obj);
 });
 const memoResult1 = react.memo(function DevToolsContent(arg0) {
@@ -210,13 +210,17 @@ const memoResult1 = react.memo(function DevToolsContent(arg0) {
         onPress() {
           const tmp = c2;
           if (!tmp) {
-            const arr = screenKey;
-            if (null != screenKey.push) {
-              arr.push(screenKey);
+            if (null == closure_1_1) {
+              const arr = screenKey;
+              if (null != screenKey.push) {
+                arr.push(screenKey);
+              } else {
+                const obj2 = { screenKey };
+                const obj = DevToolsNavigator;
+                obj.navigateToDevTools(obj2);
+              }
             } else {
-              const obj2 = { screenKey };
-              const obj = DevToolsNavigator;
-              obj.navigateToDevTools(obj2);
+              tmp2();
             }
           }
         }

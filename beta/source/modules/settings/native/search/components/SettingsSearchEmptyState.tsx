@@ -1,18 +1,18 @@
-// Module ID: 16596
-// Function ID: 16597
+// Module ID: 16918
+// Function ID: 16919
 // Name: SettingsSearchEmptyState
-// Dependencies: [19, 17, 21, 5014, 5023, 1113, 9067, 6027, 5624, 2]
+// Dependencies: [19, 17, 21, 5140, 5149, 1113, 9147, 6159, 5751, 2]
 
-// Module 16596 (SettingsSearchEmptyState)
+// Module 16918 (SettingsSearchEmptyState)
 import react_native from "react-native" /* 17 */;
 import intl3 from "intl" /* 1113 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5023 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import Stack_Stack from "Stack/Stack" /* 6027 */;
-import NoResultsAlt from "NoResultsAlt" /* 9067 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5149 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import Stack_Stack from "Stack/Stack" /* 6159 */;
+import NoResultsAlt from "NoResultsAlt" /* 9147 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -36,11 +36,11 @@ const memoResult = react.memo(function SettingsSearchEmptyState() {
   items = [React3(NoResultsAlt.NoResultsAlt, { resizeMode: "contain" }), ];
   const obj2 = { style: tmp.textContainer, align: "center", justify: "center", children: items1 };
   const Stack = Stack_Stack.Stack;
-  const obj3 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: intl.string(intl3.t.zihbmv) };
+  const obj3 = { variant: "body-md/semibold", color: "mobile-text-heading-primary", children: intl.string(intl3.t.zihbmv) };
   const Text = Text_Text.Text;
   intl = intl3.intl;
   items1 = [React3(Text, obj3), ];
-  const obj4 = { variant: "text-xs/medium", color: "text-muted", children: intl2.string(intl3.t.XclvsB) };
+  const obj4 = { variant: "body-xs/medium", color: "text-muted", children: intl2.string(intl3.t.XclvsB) };
   const Text2 = Text_Text.Text;
   intl2 = intl3.intl;
   items1[1] = React3(Text2, obj4);

@@ -1,13 +1,13 @@
-// Module ID: 10149
-// Function ID: 10150
+// Module ID: 10270
+// Function ID: 10271
 // Name: CountDown
-// Dependencies: [19, 21, 1113, 1089, 5624, 2]
+// Dependencies: [19, 21, 1113, 1089, 5751, 2]
 
-// Module 10149 (CountDown)
+// Module 10270 (CountDown)
 import Fragment from "Fragment" /* 21 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import intl6 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5624 */;
+import Text_Text from "Text/Text" /* 5751 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -115,7 +115,7 @@ class CountDown extends Component {
         }
       }
     }
-    return jsx(Text_Text.Text, { tabularNumbers: true, variant: "text-md/semibold", style, children });
+    return jsx(Text_Text.Text, { tabularNumbers: true, variant: "body-md/semibold", style, children });
   }
 }
 const prototype = CountDown.prototype;

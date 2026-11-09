@@ -1,20 +1,20 @@
-// Module ID: 18651
-// Function ID: 18652
+// Module ID: 19012
+// Function ID: 19013
 // Name: MembersPruneActionSheet
-// Dependencies: [32, 19, 18652, 4885, 4946, 1383, 21, 572, 18653, 7366, 7321, 1113, 7058, 7061, 5624, 5634, 5258, 504, 7439, 2]
+// Dependencies: [32, 19, 19013, 5011, 5072, 1385, 21, 572, 19014, 7426, 7382, 1113, 7124, 7127, 5751, 5758, 5374, 504, 7503, 2]
 // Exports: default
 
-// Module 18651 (MembersPruneActionSheet)
+// Module 19012 (MembersPruneActionSheet)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import MemberSafetyPermissionsUtils from "MemberSafetyPermissionsUtils" /* 7439 */;
-import PruneGuildModalActionCreatorsDefault from "PruneGuildModalActionCreators" /* 18653 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
+import MemberSafetyPermissionsUtils from "MemberSafetyPermissionsUtils" /* 7503 */;
+import PruneGuildModalActionCreatorsDefault from "PruneGuildModalActionCreators" /* 19014 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import PrunePreviewStore from "PrunePreviewStore" /* 18652 */;
-import GuildStore from "GuildStore" /* 4885 */;
-import PermissionStore from "PermissionStore" /* 4946 */;
-import UserStore from "UserStore" /* 1383 */;
+import PrunePreviewStore from "PrunePreviewStore" /* 19013 */;
+import GuildStore from "GuildStore" /* 5011 */;
+import PermissionStore from "PermissionStore" /* 5072 */;
+import UserStore from "UserStore" /* 1385 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
@@ -106,7 +106,7 @@ function MembersPruneActionSheetContent(guild) {
   if (num == null) {
     num = -1;
   }
-  const obj6 = { variant: "text-sm/medium", children: format(tmp10, { members: num, days }) };
+  const obj6 = { variant: "body-sm/medium", children: format(tmp10, { members: num, days }) };
   items3[1] = closure_11(Text, obj6);
   const obj7 = {
     variant: "destructive",

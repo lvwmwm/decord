@@ -1,16 +1,16 @@
-// Module ID: 11339
-// Function ID: 11340
+// Module ID: 11479
+// Function ID: 11480
 // Name: GuildActionSheetMemberCount
-// Dependencies: [19, 17, 21, 5014, 575, 1376, 1113, 5624, 2]
+// Dependencies: [19, 17, 21, 5140, 575, 1357, 1113, 5751, 2]
 
-// Module 11339 (GuildActionSheetMemberCount)
+// Module 11479 (GuildActionSheetMemberCount)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
-import PlatformUtils from "utils/PlatformUtils" /* 1376 */;
+import createStyles_mod from "createStyles" /* 5140 */;
+import PlatformUtils from "utils/PlatformUtils" /* 1357 */;
 import size_mod from "module_2" /* 2 */;
 
 let c3;
@@ -80,9 +80,9 @@ const memoResult = react.memo(function MemberCount(arg0) {
   const obj4 = { style: items, children: _false(View, { style: items1 }) };
   items1 = [tmp8.dot, "online" === type ? tmp8.onlineDot : tmp8.offlineDot];
   items2 = [_false(View, obj4), ];
-  const Text = tmp4(5624).Text;
+  const Text = tmp4(5751).Text;
   if (textVariant == null) {
-    textVariant = "text-sm/normal";
+    textVariant = "body-sm/normal";
   }
   const obj5 = { variant: textVariant, color, lineClamp: 1, style: tmp8.refreshText, children: stringResult };
   if (color == null) {

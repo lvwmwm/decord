@@ -1,18 +1,18 @@
-// Module ID: 9652
-// Function ID: 9653
+// Module ID: 9742
+// Function ID: 9743
 // Name: shop_nagbar
-// Dependencies: [32, 1197, 9633, 9632, 9631, 1227, 2]
+// Dependencies: [32, 1197, 9723, 9722, 9721, 1227, 2]
 
-// Module 9652 (shop_nagbar)
+// Module 9742 (shop_nagbar)
 import _mod1197 from "module_1197" /* 1197 */;
 import wrappers from "wrappers" /* 1227 */;
-import localized_string from "localized_string" /* 9631 */;
-import help_article from "help_article" /* 9632 */;
+import localized_string from "localized_string" /* 9721 */;
+import help_article from "help_article" /* 9722 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let internalBinaryWrite, internalBinaryWrite2, internalBinaryWrite3, internalBinaryWrite4;
+let internalBinaryWrite, internalBinaryWrite2, internalBinaryWrite3, internalBinaryWrite4, internalBinaryWrite5;
 
 let tmp;
 const T2 = function T() {
@@ -26,20 +26,23 @@ const T4 = function T() {
   return require("localized_string").LocalizedString;
 };
 const T5 = function T() {
+  return require("localized_string").LocalizedString;
+};
+const T6 = function T() {
   return require("wrappers").UInt64Value;
 };
 const MessageType = _mod1197.MessageType;
 class ShopNagbar$Type extends MessageType {
   constructor() {
-    let items = [{ no: 1, name: "body", kind: "scalar", T: 9 }, { no: 2, name: "cta_label", kind: "scalar", T: 9 }, { no: 3, name: "cta_action", kind: "enum", T: T2 }, { no: 4, name: "deeplink_section", kind: "scalar", T: 9 }, { no: 5, name: "help_article", kind: "message", T: T3 }, { no: 6, name: "body_localized", kind: "message", T: T4 }, , ];
-    const obj = { no: 7, name: "cta_label_localized", kind: "message", T };
+    let items = [{ no: 1, name: "body", kind: "scalar", T: 9 }, { no: 2, name: "cta_label", kind: "scalar", T: 9 }, { no: 3, name: "cta_action", kind: "enum", T: T2 }, { no: 4, name: "deeplink_section", kind: "scalar", T: 9 }, { no: 5, name: "help_article", kind: "message", T: T3 }, { no: 6, name: "body_localized", kind: "message", T: T4 }, { no: 7, name: "cta_label_localized", kind: "message", T: T5 }, , ];
+    const obj = { no: 8, name: "navigable_storefront_application_id", kind: "message", T };
     class T {
       constructor() {
-        return closure_1_0(closure_1_1[4]).LocalizedString;
+        return closure_1_0(closure_1_1[5]).UInt64Value;
       }
     }
-    items[6] = obj;
-    items[7] = { no: 8, name: "navigable_storefront_application_id", kind: "message", T: T5 };
+    items[7] = obj;
+    items[8] = { no: 9, name: "shop_collection_id", kind: "message", T: T6 };
     const tmp2 = new tmp("discord_protos.premium_marketing.v1.ShopNagbar", items, T);
     return tmp2;
   }
@@ -85,8 +88,11 @@ class ShopNagbar$Type extends MessageType {
           let LocalizedString = localized_string.LocalizedString;
           obj.ctaLabelLocalized = LocalizedString.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.ctaLabelLocalized);
         } else if (8 === tmp5) {
+          let UInt64Value2 = wrappers.UInt64Value;
+          obj.navigableStorefrontApplicationId = UInt64Value2.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.navigableStorefrontApplicationId);
+        } else if (9 === tmp5) {
           let UInt64Value = wrappers.UInt64Value;
-          obj.navigableStorefrontApplicationId = UInt64Value.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.navigableStorefrontApplicationId);
+          obj.shopCollectionId = UInt64Value.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.shopCollectionId);
         } else {
           let onRead = readUnknownField.readUnknownField;
           if ("throw" === onRead) {
@@ -163,6 +169,14 @@ class ShopNagbar$Type extends MessageType {
       const internalBinaryWrite4Result = internalBinaryWrite4(navigableStorefrontApplicationId, tagResult7.fork(), writeUnknownFields);
       const joined3 = internalBinaryWrite4Result.join();
     }
+    if (body.shopCollectionId) {
+      const UInt64Value2 = wrappers.UInt64Value;
+      internalBinaryWrite5 = UInt64Value2.internalBinaryWrite;
+      const shopCollectionId = body.shopCollectionId;
+      const tagResult8 = tag.tag(9, _mod1197.WireType.LengthDelimited);
+      const internalBinaryWrite5Result = internalBinaryWrite5(shopCollectionId, tagResult8.fork(), writeUnknownFields);
+      const joined4 = internalBinaryWrite5Result.join();
+    }
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
@@ -175,15 +189,15 @@ class ShopNagbar$Type extends MessageType {
   }
 }
 const prototype = ShopNagbar$Type.prototype;
-let items = [{ no: 1, name: "body", kind: "scalar", T: 9 }, { no: 2, name: "cta_label", kind: "scalar", T: 9 }, { no: 3, name: "cta_action", kind: "enum", T: T2 }, { no: 4, name: "deeplink_section", kind: "scalar", T: 9 }, { no: 5, name: "help_article", kind: "message", T: T3 }, { no: 6, name: "body_localized", kind: "message", T: T4 }, , ];
-let obj = { no: 7, name: "cta_label_localized", kind: "message", T };
+let items = [{ no: 1, name: "body", kind: "scalar", T: 9 }, { no: 2, name: "cta_label", kind: "scalar", T: 9 }, { no: 3, name: "cta_action", kind: "enum", T: T2 }, { no: 4, name: "deeplink_section", kind: "scalar", T: 9 }, { no: 5, name: "help_article", kind: "message", T: T3 }, { no: 6, name: "body_localized", kind: "message", T: T4 }, { no: 7, name: "cta_label_localized", kind: "message", T: T5 }, , ];
+let obj = { no: 8, name: "navigable_storefront_application_id", kind: "message", T };
 class T {
   constructor() {
-    return require("localized_string").LocalizedString;
+    return require("wrappers").UInt64Value;
   }
 }
-items[6] = obj;
-items[7] = { no: 8, name: "navigable_storefront_application_id", kind: "message", T: T5 };
+items[7] = obj;
+items[8] = { no: 9, name: "shop_collection_id", kind: "message", T: T6 };
 const prototype1 = new prototype("discord_protos.premium_marketing.v1.ShopNagbar", items, tmp, T, ShopNagbar$Type, prototype, items);
 let result = size.fileFinishedImporting("../discord_common/js/packages/protos/discord_protos/premium_marketing/v1/shop_nagbar.tsx");
 

@@ -1,20 +1,20 @@
-// Module ID: 9510
-// Function ID: 9511
+// Module ID: 9594
+// Function ID: 9595
 // Name: CutoutBackgroundContext
-// Dependencies: [19, 21, 671, 9511, 575, 5596, 2]
+// Dependencies: [19, 21, 671, 9595, 575, 5724, 2]
 // Exports: CutoutBackgroundProvider, useCutoutBackgroundColor
 
-// Module 9510 (CutoutBackgroundContext)
+// Module 9594 (CutoutBackgroundContext)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import useToken from "useToken" /* 5596 */;
+import useToken from "useToken" /* 5724 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
 let tmp3;
 let tmp6;
 const _modDef671 = tmp3(671);
-const colors = tmp6(9511);
+const shared_colors = tmp6(9595);
 const jsx = Fragment.jsx;
 let context = react.createContext(undefined);
 const result = size.fileFinishedImporting("design/components/Icon/native/CutoutBackgroundContext.tsx");
@@ -45,7 +45,7 @@ export function CutoutBackgroundProvider(backgroundColor) {
     const obj2 = _modDef671(token);
     if (1 !== obj2.alpha()) {
       if (null != context) {
-        const tmp6Result = colors;
+        const tmp6Result = shared_colors;
         value = tmp6Result.flattenColorOverOpaqueBackground(token, context);
       }
     }

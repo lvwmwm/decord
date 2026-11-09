@@ -1,16 +1,16 @@
-// Module ID: 12656
-// Function ID: 12657
+// Module ID: 12857
+// Function ID: 12858
 // Name: ConjureSettingsRequestCard
-// Dependencies: [19, 21, 5014, 575, 12657, 5258, 12127, 12136, 5624, 1113, 3868, 12141, 5634, 2]
+// Dependencies: [19, 21, 5140, 575, 12858, 5374, 12292, 12304, 5751, 1113, 4026, 12309, 5758, 2]
 // Exports: default
 
-// Module 12656 (ConjureSettingsRequestCard)
+// Module 12857 (ConjureSettingsRequestCard)
 import nativeDefault from "native" /* 575 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5258 */;
-import ConjureSettingsSheet from "ConjureSettingsSheet" /* 12127 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5374 */;
+import ConjureSettingsSheet from "ConjureSettingsSheet" /* 12292 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 const ConjureSettingsSheetDefault = ConjureSettingsSheet;
@@ -61,7 +61,7 @@ export default function ConjureSettingsRequestCard(projectId) {
     let tmp10Result;
     if (!done) {
       let obj2 = { style: tmp.card, children: closure_4(Text, obj3) };
-      obj3 = { variant: "text-xs/semibold", color: "text-muted", children: intl.string(request(flag[10])["+uXDk+"]) };
+      obj3 = { variant: "body-xs/semibold", color: "text-muted", children: intl.string(request(flag[10])["+uXDk+"]) };
       const tmp8 = request(flag[7]);
       Text = tmp2(tmp3[8]).Text;
       intl = tmp2(tmp3[9]).intl;
@@ -74,12 +74,12 @@ export default function ConjureSettingsRequestCard(projectId) {
   const Text2 = tmp2(tmp3[8]).Text;
   const tmp10 = closure_5;
   if (done) {
-    const obj5 = { variant: "text-xs/semibold", color: "text-feedback-positive", children: intl5.string(request(flag[10]).AxBLLy) };
+    const obj5 = { variant: "body-xs/semibold", color: "text-feedback-positive", children: intl5.string(request(flag[10]).AxBLLy) };
     intl5 = tmp2(tmp3[9]).intl;
     const items1 = [closure_4(Text2, obj5), ];
     let tmp13Result = null;
     if (summary.length > 0) {
-      const obj6 = { variant: "text-sm/normal", color: "text-default", children: summary.join(" \u00B7 ") };
+      const obj6 = { variant: "body-sm/normal", color: "text-default", children: summary.join(" \u00B7 ") };
       const Text3 = tmp2(tmp3[8]).Text;
       tmp13Result = tmp13(Text3, obj6);
     }
@@ -87,7 +87,7 @@ export default function ConjureSettingsRequestCard(projectId) {
     obj4.children = items1;
     tmp16 = obj4;
   } else {
-    const obj7 = { variant: "text-xs/semibold", color: "text-muted", children: intl2.string(request(flag[10])["jZjP+I"]) };
+    const obj7 = { variant: "body-xs/semibold", color: "text-muted", children: intl2.string(request(flag[10])["jZjP+I"]) };
     intl2 = tmp2(tmp3[9]).intl;
     const items2 = [closure_4(Text2, obj7), , ];
     if (null != request.note) {
@@ -95,7 +95,7 @@ export default function ConjureSettingsRequestCard(projectId) {
       if ("" !== request.note) {
         note = request.note;
       }
-      const obj8 = { text: note, variant: "text-sm/normal", color: "text-default" };
+      const obj8 = { text: note, variant: "body-sm/normal", color: "text-default" };
       items2[1] = closure_4(tmp14, obj8);
       const obj9 = { variant: "secondary", size: "sm", onPress: callback, text: intl4.string(request(flag[10]).d49riY) };
       const Button = tmp2(tmp3[12]).Button;

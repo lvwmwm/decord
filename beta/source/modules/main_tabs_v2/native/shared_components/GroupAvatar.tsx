@@ -1,21 +1,18 @@
-// Module ID: 14895
-// Function ID: 14896
+// Module ID: 15130
+// Function ID: 15131
 // Name: GroupAvatar
-// Dependencies: [19, 17, 5015, 21, 5014, 575, 5021, 6959, 563, 5095, 5254, 5637, 7149, 5624, 5717, 2]
+// Dependencies: [19, 17, 5141, 21, 5140, 575, 5147, 7022, 563, 1652, 5370, 5761, 5751, 5842, 2]
 // Exports: default
 
-// Module 14895 (GroupAvatar)
+// Module 15130 (GroupAvatar)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 19 */;
 import nativeDefault from "native" /* 575 */;
-import timing from "timing" /* 5254 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import spring from "spring" /* 5637 */;
-import FastImageDefault from "FastImage" /* 5717 */;
-import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7149 */;
-import AccessibilityStore from "AccessibilityStore" /* 5015 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import FastImageDefault from "FastImage" /* 5842 */;
+import AccessibilityStore from "AccessibilityStore" /* 5141 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 const react_mod = react2;
@@ -23,7 +20,17 @@ const react_mod = react2;
 let metroImportDefault;
 let metroRequire;
 function AnimatedContainer(scale) {
-  let items2;
+  let items4;
+  let tmp16;
+  let tmp17;
+  let tmp18;
+  let tmp19;
+  let tmp20;
+  let tmp21;
+  let tmp22;
+  let tmp23;
+  let tmp24;
+  let tmp25;
   scale = scale.scale;
   const translateX = scale.translateX;
   const translateY = scale.translateY;
@@ -35,11 +42,11 @@ function AnimatedContainer(scale) {
   const children = scale.children;
   const tmp = closure_12();
   let obj = scale(translateY[8]);
-  let items = [sharedValue2];
-  const stateFromStores = obj.useStateFromStores(items, () => sharedValue2.useReducedMotion);
+  let items = [sharedValue3];
+  const stateFromStores = obj.useStateFromStores(items, () => sharedValue3.useReducedMotion);
   let num = 1;
   const useSharedValue = scale(translateY[9]).useSharedValue;
-  const tmp5 = scale(translateY[9]);
+  scale(translateY[9]);
   if (animateOnMount) {
     num = 0;
   }
@@ -66,77 +73,90 @@ function AnimatedContainer(scale) {
   }
   sharedValue4 = useSharedValue4(result);
   items1 = [sharedValue, sharedValue4, sharedValue2, sharedValue3, scale, translateY, translateX];
-  const effect = stateFromStores.useEffect(() => {
+  const effect = sharedValue.useEffect(() => {
     const result = sharedValue.set(1);
     const result1 = sharedValue4.set(scale);
     const result2 = sharedValue2.set(translateY);
     const result3 = sharedValue3.set(translateX);
   }, items1);
-  const fn = function y() {
-    let items;
-    let obj2;
-    let value3;
-    let value4;
-    let withSpringResult;
-    const obj = { opacity: obj2.withTiming(sharedValue.get()), transform: items };
-    obj2 = timing;
-    if (stateFromStores) {
-      withSpringResult = sharedValue3.get();
-    } else {
-      const tmpResult = spring;
-      withSpringResult = tmpResult.withSpring(sharedValue3.get(), SPRING_OPTIONS_POSITION);
+  const items2 = [closure_14, , , , , , , , , ];
+  const useAnimatedStyle = tmp2(tmp3[9]).useAnimatedStyle;
+  scale(translateY[9]);
+  items2[1] = scale(translateY[10]).withTiming;
+  items2[2] = sharedValue;
+  items2[3] = stateFromStores;
+  items2[4] = sharedValue3;
+  items2[5] = scale(translateY[11]).withSpring;
+  items2[6] = closure_11;
+  items2[7] = sharedValue2;
+  items2[8] = sharedValue4;
+  items2[9] = closure_10;
+  let c0;
+  let c1;
+  let c2;
+  let c3;
+  let c4;
+  let c5;
+  let c6;
+  let c7;
+  let c8;
+  [tmp16, tmp17, tmp18, tmp19, tmp20, tmp21, tmp22, tmp23, tmp24, tmp25] = items2;
+  class GroupAvatarTsx1 {
+    constructor() {
+      let items;
+      let value;
+      let value3;
+      let value4;
+      const obj = { opacity: _undefined(_undefined2.get()), transform: items };
+      if (c2) {
+        value = _undefined3.get();
+      } else {
+        value = _undefined4(_undefined3.get(), c5);
+      }
+      items = [{ translateX: value }, , ];
+      if (c2) {
+        value3 = _undefined5.get();
+      } else {
+        value3 = _undefined4(_undefined5.get(), c5);
+      }
+      items[1] = { translateY: value3 };
+      if (c2) {
+        value4 = _undefined6.get();
+      } else {
+        value4 = _undefined4(_undefined6.get(), c8);
+      }
+      items[2] = { scale: value4 };
+      return obj;
     }
-    items = [{ translateX: withSpringResult }, , ];
-    if (stateFromStores) {
-      value3 = sharedValue2.get();
-    } else {
-      const tmpResult3 = spring;
-      value3 = tmpResult3.withSpring(sharedValue2.get(), SPRING_OPTIONS_POSITION);
-    }
-    items[1] = { translateY: value3 };
-    if (stateFromStores) {
-      value4 = sharedValue4.get();
-    } else {
-      const tmpResult4 = spring;
-      value4 = tmpResult4.withSpring(sharedValue4.get(), SPRING_OPTIONS_SCALE);
-    }
-    items[2] = { scale: value4 };
-    return obj;
-  };
-  const tmp2Result6 = scale(translateY[9]);
-  let obj2 = { withTiming: tmp2(tmp3[10]).withTiming, opacityAnimation: sharedValue, useReducedMotion: stateFromStores, translateXAnimation: sharedValue3, withSpring: tmp2(tmp3[11]).withSpring, SPRING_OPTIONS_POSITION, translateYAnimation: sharedValue2, scaleAnimation: sharedValue4, SPRING_OPTIONS_SCALE };
-  fn.__closure = obj2;
-  fn.__workletHash = 8800301056148;
-  fn.__initData = __initData;
-  const animatedStyle = tmp2Result6.useAnimatedStyle(fn);
-  const obj3 = { style: items2, children };
-  items2 = [tmp.avatarContainer, animatedStyle];
-  return sharedValue3(translateX(translateY[9]).View, obj3);
+  }
+  const items3 = [tmp17, tmp18, tmp19, tmp20, tmp21, tmp22, tmp23, tmp24, tmp25];
+  GroupAvatarTsx1.__closure = items3;
+  GroupAvatarTsx1.__workletHash = 10803845888973;
+  GroupAvatarTsx1.__initData = tmp16;
+  const animatedStyle = useAnimatedStyle(GroupAvatarTsx1);
+  const obj2 = { style: items4, children };
+  items4 = [tmp.avatarContainer, animatedStyle];
+  return sharedValue4(translateX(translateY[9]).View, obj2);
 }
 function GroupMemberCount(count) {
   let Text;
   let items;
+  let obj2;
   let obj3;
-  let obj4;
-  let tmp5;
+  let tmp4;
   count = count.count;
-  const obj = ManaTypeConsolidationExperiment;
-  const manaTypeConsolidationExperiment = obj.useManaTypeConsolidationExperiment("GroupAvatar");
-  const tmp2 = closure_12();
-  const obj2 = { style: tmp2.avatarWrapper, children: metroRequire(View, obj3) };
-  let str = "text-sm/semibold";
-  obj3 = { style: tmp2.overflowCount, children: tmp5(Text, obj4) };
+  const tmp = closure_12();
+  const obj = { style: tmp.avatarWrapper, children: metroRequire(View, obj2) };
+  let str = "body-sm/semibold";
+  obj2 = { style: tmp.overflowCount, children: tmp4(Text, obj3) };
   Text = Text_Text.Text;
-  tmp5 = metroImportDefault;
-  if (manaTypeConsolidationExperiment) {
-    str = "text-sm/semibold";
-    if (count < 100) {
-      str = "experimental/body-md/semibold";
-    }
+  tmp4 = metroImportDefault;
+  if (count < 100) {
+    str = "body-md/semibold";
   }
-  obj4 = { variant: str, children: items };
+  obj3 = { variant: str, children: items };
   items = ["+", count];
-  return metroRequire(View, obj2);
+  return metroRequire(View, obj);
 }
 function GroupMemberAvatar(guildId) {
   let obj2;
@@ -165,8 +185,8 @@ const View = react_native.View;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 const createElement = react2.createElement;
 let c9 = 38;
-const SPRING_OPTIONS_SCALE = { damping: 30, stiffness: 400 };
-const SPRING_OPTIONS_POSITION = { damping: 30, stiffness: 400 };
+let closure_10 = { damping: 30, stiffness: 400 };
+let closure_11 = { damping: 30, stiffness: 400 };
 let closure_12 = createStyles.createStyles(() => {
   let size1;
   let size2;
@@ -183,11 +203,11 @@ let items = [{ translateY: 0, translateX: 0, scale: 1 }, { translateY: 0, transl
 let items1 = [items, , , ];
 let items2 = [{ translateY: -14, translateX: -14, scale: 0.75 }, { translateY: 12, translateX: 12, scale: 0.875 }, { translateY: 0, translateX: 0, scale: 0 }, { translateY: 0, translateX: 0, scale: 0 }];
 items1[1] = items2;
-const items3 = [{ translateY: -4, translateX: 16, scale: 0.75 }, { translateY: 14, translateX: -14, scale: 0.875 }, { translateY: -18, translateX: -12, scale: 0.625 }, { translateY: 0, translateX: 0, scale: 0 }];
+let items3 = [{ translateY: -4, translateX: 16, scale: 0.75 }, { translateY: 14, translateX: -14, scale: 0.875 }, { translateY: -18, translateX: -12, scale: 0.625 }, { translateY: 0, translateX: 0, scale: 0 }];
 items1[2] = items3;
-const items4 = [{ translateY: -14, translateX: -14, scale: 0.875 }, { translateY: 14, translateX: 14, scale: 0.875 }, { translateY: -18, translateX: 18, scale: 0.625 }, { translateY: 18, translateX: -18, scale: 0.625 }];
+let items4 = [{ translateY: -14, translateX: -14, scale: 0.875 }, { translateY: 14, translateX: 14, scale: 0.875 }, { translateY: -18, translateX: 18, scale: 0.625 }, { translateY: 18, translateX: -18, scale: 0.625 }];
 items1[3] = items4;
-const __initData = { code: "function GroupAvatarTsx1(){const{withTiming,opacityAnimation,useReducedMotion,translateXAnimation,withSpring,SPRING_OPTIONS_POSITION,translateYAnimation,scaleAnimation,SPRING_OPTIONS_SCALE}=this.__closure;return{opacity:withTiming(opacityAnimation.get()),transform:[{translateX:useReducedMotion?translateXAnimation.get():withSpring(translateXAnimation.get(),SPRING_OPTIONS_POSITION)},{translateY:useReducedMotion?translateYAnimation.get():withSpring(translateYAnimation.get(),SPRING_OPTIONS_POSITION)},{scale:useReducedMotion?scaleAnimation.get():withSpring(scaleAnimation.get(),SPRING_OPTIONS_SCALE)}]};}" };
+let closure_14 = { code: "(function GroupAvatarTsx1(){let[withTiming,opacityAnimation,useReducedMotion,translateXAnimation,withSpring,SPRING_OPTIONS_POSITION,translateYAnimation,scaleAnimation,SPRING_OPTIONS_SCALE]=this.__closure;return{opacity:withTiming(opacityAnimation.get()),transform:[{translateX:useReducedMotion?translateXAnimation.get():withSpring(translateXAnimation.get(),SPRING_OPTIONS_POSITION)},{translateY:useReducedMotion?translateYAnimation.get():withSpring(translateYAnimation.get(),SPRING_OPTIONS_POSITION)},{scale:useReducedMotion?scaleAnimation.get():withSpring(scaleAnimation.get(),SPRING_OPTIONS_SCALE)}]};})" };
 let size = size_mod;
 let result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/GroupAvatar.tsx");
 

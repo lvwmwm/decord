@@ -1,17 +1,17 @@
-// Module ID: 12193
-// Function ID: 12194
+// Module ID: 12365
+// Function ID: 12366
 // Name: ConjureSaveBackupSheet
-// Dependencies: [32, 19, 17, 21, 5014, 575, 12183, 12179, 5712, 1113, 3868, 5258, 7366, 7321, 6027, 5624, 12181, 7082, 5634, 2]
+// Dependencies: [32, 19, 17, 21, 5140, 575, 12355, 12351, 5837, 1113, 4026, 5374, 7426, 7382, 6159, 5751, 12353, 7148, 5758, 2]
 // Exports: default
 
-// Module 12193 (ConjureSaveBackupSheet)
+// Module 12365 (ConjureSaveBackupSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import conjureDatabaseLock from "conjureDatabaseLock" /* 12183 */;
+import conjureDatabaseLock from "conjureDatabaseLock" /* 12355 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;
@@ -99,7 +99,7 @@ export default function ConjureSaveBackupSheet(projectId) {
   intl = projectId(onSaved[9]).intl;
   obj3 = { style: tmp.content, children: tmp15(Stack, obj8) };
   Stack = projectId(onSaved[14]).Stack;
-  const obj4 = { variant: "text-sm/normal", color: "text-muted", children: formatToPlainString(sXGNm5, obj5) };
+  const obj4 = { variant: "body-sm/normal", color: "text-muted", children: formatToPlainString(sXGNm5, obj5) };
   const Text = projectId(onSaved[15]).Text;
   const intl2 = projectId(onSaved[9]).intl;
   formatToPlainString = intl2.formatToPlainString;

@@ -1,21 +1,21 @@
-// Module ID: 9293
-// Function ID: 9294
+// Module ID: 9373
+// Function ID: 9374
 // Name: useGetGameForAppId
-// Dependencies: [19, 2014, 7330, 7480, 1379, 504, 2]
-// Exports: default, useGetGamesForAppIds
+// Dependencies: [19, 2138, 7391, 7544, 1380, 504, 2]
+// Exports: default, useGetGameResultsForAppIds, useGetGamesForAppIds
 
-// Module 9293 (useGetGameForAppId)
-import GlobalUtils from "GlobalUtils" /* 1379 */;
-import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7330 */;
+// Module 9373 (useGetGameForAppId)
+import GlobalUtils from "GlobalUtils" /* 1380 */;
+import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7391 */;
 import react from "react" /* 19 */;
-import GameStore from "GameStore" /* 2014 */;
+import GameStore from "GameStore" /* 2138 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
 let tmp;
-const useGame = tmp(7480);
+const useGame = tmp(7544);
 const result = size.fileFinishedImporting("modules/games/hooks/useGetGameForAppId.tsx");
 
 export default function useGetGameForAppId(applicationId) {
@@ -39,10 +39,55 @@ export default function useGetGameForAppId(applicationId) {
   }
   return obj2;
 };
+export function useGetGameResultsForAppIds(arg0) {
+  let closure_0;
+  let memo;
+  let stateFromStoresArray;
+  let stateFromStoresArray1;
+  let tmp = memo(stateFromStoresArray[2])(arg0);
+  _require = tmp;
+  const items = [tmp];
+  memo = stateFromStoresArray1.useMemo(() => closure_0.map((getCanonicalGameId) => {
+    let canonicalGameId;
+    if (getCanonicalGameId != null) {
+      canonicalGameId = getCanonicalGameId.getCanonicalGameId();
+    }
+    if (canonicalGameId == null) {
+      canonicalGameId = null;
+    }
+    return canonicalGameId;
+  }), items);
+  const items1 = [memo];
+  const memo1 = stateFromStoresArray1.useMemo(() => memo.filter(GlobalUtils.isNotNullish), items1);
+  let obj = require("useGame");
+  const games = obj.useGames(memo1);
+  const items2 = [GameStore];
+  const items3 = [memo];
+  const obj2 = require("get initialized");
+  stateFromStoresArray = obj2.useStateFromStoresArray(items2, () => memo.map((item) => {
+    game = game.getGame(item);
+    if (game == null) {
+      game = null;
+    }
+    return game;
+  }), items3);
+  const items4 = [GameStore];
+  const items5 = [memo];
+  const obj3 = require("get initialized");
+  stateFromStoresArray1 = obj3.useStateFromStoresArray(items4, () => memo.map((item) => {
+    const tmp = null != item && null == closure_1_4.getGame(item) && !closure_1_4.hasNoData(item) && !closure_1_4.didFetchingFail(item);
+    return tmp;
+  }), items5);
+  const items6 = [tmp, memo, stateFromStoresArray, stateFromStoresArray1];
+  return stateFromStoresArray1.useMemo(() => closure_0.map((item, index) => {
+    const obj = { gameId: memo[index], gameRecord: stateFromStoresArray[index], isLoading: tmp };
+    return obj;
+  }), items6);
+}
 export function useGetGamesForAppIds(stateFromStoresArray) {
   let closure_0;
   let memo;
-  const tmp = memo(7330)(stateFromStoresArray);
+  const tmp = memo(7391)(stateFromStoresArray);
   _require = tmp;
   const items = [tmp];
   memo = react.useMemo(() => {

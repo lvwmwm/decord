@@ -1,11 +1,11 @@
-// Module ID: 10888
-// Function ID: 10889
+// Module ID: 11010
+// Function ID: 11011
 // Name: EmbeddedAppFramePolicyExperiment
-// Dependencies: [1447, 2]
+// Dependencies: [1449, 2]
 // Exports: getIsEmbeddedAppFramePolicyEnabled, useIsEmbeddedAppFramePolicyEnabled
 
-// Module 10888 (EmbeddedAppFramePolicyExperiment)
-import ApexExperiment from "ApexExperiment" /* 1447 */;
+// Module 11010 (EmbeddedAppFramePolicyExperiment)
+import ApexExperiment from "ApexExperiment" /* 1449 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

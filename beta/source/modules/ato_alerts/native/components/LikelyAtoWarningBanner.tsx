@@ -1,27 +1,27 @@
-// Module ID: 11267
-// Function ID: 11268
+// Module ID: 11407
+// Function ID: 11408
 // Name: LikelyAtoWarningBanner
-// Dependencies: [19, 10804, 11268, 1072, 1082, 21, 5014, 575, 11269, 11270, 6744, 11071, 7496, 5709, 11271, 1113, 11274, 1994, 5624, 11285, 2]
+// Dependencies: [19, 10923, 11408, 1072, 1082, 21, 5140, 575, 11409, 11410, 6799, 11203, 7568, 5834, 11411, 1113, 11414, 2118, 5751, 11425, 2]
 
-// Module 11267 (LikelyAtoWarningBanner)
+// Module 11407 (LikelyAtoWarningBanner)
 import nativeDefault from "native" /* 575 */;
 import Constants2 from "Constants" /* 1072 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1082 */;
 import intl5 from "intl" /* 1113 */;
-import asyncRequire from "asyncRequire" /* 1994 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import LinkingDefault from "Linking" /* 5709 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6744 */;
-import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 7496 */;
-import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 10804 */;
-import MuteSettingsUtils from "MuteSettingsUtils" /* 11071 */;
-import SafetyWarningUtils from "SafetyWarningUtils" /* 11269 */;
-import ChannelSafetyWarningsActionCreators from "ChannelSafetyWarningsActionCreators" /* 11270 */;
-import LikelyAtoMoreTipsModalActionItemsDefault from "LikelyAtoMoreTipsModalActionItems" /* 11285 */;
+import asyncRequire from "asyncRequire" /* 2118 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import LinkingDefault from "Linking" /* 5834 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6799 */;
+import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 7568 */;
+import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 10923 */;
+import MuteSettingsUtils from "MuteSettingsUtils" /* 11203 */;
+import SafetyWarningUtils from "SafetyWarningUtils" /* 11409 */;
+import ChannelSafetyWarningsActionCreators from "ChannelSafetyWarningsActionCreators" /* 11410 */;
+import LikelyAtoMoreTipsModalActionItemsDefault from "LikelyAtoMoreTipsModalActionItems" /* 11425 */;
 import react_mod from "react" /* 19 */;
-import Constants from "Constants" /* 11268 */;
+import Constants from "Constants" /* 11408 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let c10;
@@ -103,9 +103,9 @@ class LikelyAtoWarningBanner {
             let items;
             const obj = { children: items };
             items = [, ];
-            const obj2 = { variant: "text-md/medium", color: "mobile-text-heading-primary", children: children.title };
+            const obj2 = { variant: "body-md/medium", color: "mobile-text-heading-primary", children: children.title };
             items[0] = closure_1_10(channelId(senderId[18]).Text, obj2, index);
-            const obj3 = { variant: "text-xs/medium", color: "text-subtle", children: children.description };
+            const obj3 = { variant: "body-xs/medium", color: "text-subtle", children: children.description };
             items[1] = closure_1_10(channelId(senderId[18]).Text, obj3, index);
             return closure_1_12(closure_1_11, obj);
           }),
@@ -113,7 +113,7 @@ class LikelyAtoWarningBanner {
           learnMore: authStore(Text, obj3)
         };
         ModalActionCreatorsDefault;
-        const tmp2 = asyncRequire(11274, dependencyMap.paths);
+        const tmp2 = asyncRequire(11414, dependencyMap.paths);
         intl = intl5.intl;
         obj2 = {
           senderId,
@@ -122,7 +122,7 @@ class LikelyAtoWarningBanner {
           }
         };
         arr = hasOwnProperty();
-        obj3 = { variant: "text-sm/normal", color: "text-link", children: intl2.format(intl5.t.UkH122, obj4) };
+        obj3 = { variant: "body-sm/normal", color: "text-link", children: intl2.format(intl5.t.UkH122, obj4) };
         Text = Text_Text.Text;
         intl2 = intl5.intl;
         obj4 = { learnMoreLink: handleLearnMore };

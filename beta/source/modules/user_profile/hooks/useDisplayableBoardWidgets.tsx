@@ -1,34 +1,41 @@
-// Module ID: 14966
-// Function ID: 14967
+// Module ID: 15176
+// Function ID: 15177
 // Name: useDisplayableBoardWidgets
-// Dependencies: [19, 7777, 7778, 7774, 14967, 2]
+// Dependencies: [19, 7853, 7854, 7850, 15177, 2]
 // Exports: useDisplayableBoardWidgets
 
-// Module 14966 (useDisplayableBoardWidgets)
-import UserProfileGameWidgetTypes from "UserProfileGameWidgetTypes" /* 7774 */;
-import UserProfileApplicationWidgetTypes from "UserProfileApplicationWidgetTypes" /* 7777 */;
-import useUserProfileWidgetsDefault from "useUserProfileWidgets" /* 14967 */;
+// Module 15176 (useDisplayableBoardWidgets)
+import useUserProfileWidgetsDefault from "useUserProfileWidgets" /* 15177 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
-function isNonEmptyBoardWidget(games) {
-  let tmp3 = games instanceof UserProfileApplicationWidgetTypes.ApplicationWidget;
-  if (!tmp3) {
-    let tmp4 = games instanceof tmp(7778).UserProfilePersonalWidget;
-    if (!tmp4) {
-      const tmpResult = UserProfileGameWidgetTypes;
-      tmp4 = tmpResult.isGameWidget(games) && games.games.length > 0;
-      const isGameWidgetResult = tmpResult.isGameWidget(games) && games.games.length > 0;
-    }
-    tmp3 = tmp4;
-  }
-  return tmp3;
-}
+let importDefault;
+
 const result = size.fileFinishedImporting("modules/user_profile/hooks/useDisplayableBoardWidgets.tsx");
 
-export function useDisplayableBoardWidgets(id) {
-  const tmp = useUserProfileWidgetsDefault(id);
-  let closure_0 = tmp;
-  const items = [tmp];
-  return react.useMemo(() => closure_0.filter(isNonEmptyBoardWidget), items);
+export function useDisplayableBoardWidgets(id, isEditing) {
+  let closure_1;
+  let flag = isEditing;
+  if (isEditing === undefined) {
+    flag = false;
+  }
+  let tmp = useUserProfileWidgetsDefault(id);
+  importDefault = tmp;
+  const items = [tmp, flag];
+  return react.useMemo(() => closure_1.filter((games) => {
+    let tmp = closure_1_0;
+    let tmp4 = games instanceof flag(dependencyMap[1]).ApplicationWidget || games instanceof tmp2(tmp3[2]).UserProfilePersonalWidget;
+    if (!tmp4) {
+      const tmp2Result = flag(dependencyMap[3]);
+      let isGameWidgetResult = tmp2Result.isGameWidget(games);
+      if (isGameWidgetResult) {
+        if (!tmp) {
+          tmp = games.games.length > 0;
+        }
+        isGameWidgetResult = tmp;
+      }
+      tmp4 = isGameWidgetResult;
+    }
+    return tmp4;
+  }), items);
 }

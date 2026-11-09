@@ -1,23 +1,23 @@
-// Module ID: 20091
-// Function ID: 20092
+// Module ID: 20499
+// Function ID: 20500
 // Name: ParentalConsentConnectionHeader
-// Dependencies: [19, 17, 1383, 21, 5014, 5586, 575, 1625, 504, 5624, 6740, 1113, 2836, 2]
+// Dependencies: [19, 17, 1385, 21, 5140, 5714, 575, 1627, 504, 5751, 6795, 1113, 2960, 2]
 // Exports: ParentalConsentConnectionNavbar
 
-// Module 20091 (ParentalConsentConnectionHeader)
+// Module 20499 (ParentalConsentConnectionHeader)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1625 */;
-import _modDef2836 from "module_2836" /* 2836 */;
-import NavigatorConstants from "NavigatorConstants" /* 5586 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6740 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
+import _modDef2960 from "module_2960" /* 2960 */;
+import NavigatorConstants from "NavigatorConstants" /* 5714 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6795 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1383 */;
+import UserStore from "UserStore" /* 1385 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let currentUser;
@@ -57,14 +57,14 @@ export function ParentalConsentConnectionNavbar() {
   obj3 = { style: tmp.row, children: items1 };
   const obj4 = {
     accessibilityRole: "button",
-    variant: "text-md/medium",
+    variant: "body-md/medium",
     color: "text-link",
     style: tmp.logOut,
     onPress() {
       const obj = AuthenticationActionCreatorsDefault;
       return obj.logout("safety_flows_parental_consent_connection");
     },
-    children: intl.string(_modDef2836["3HuGuY"])
+    children: intl.string(_modDef2960["3HuGuY"])
   };
   const Text = Text_Text.Text;
   intl = intl2.intl;
@@ -72,7 +72,7 @@ export function ParentalConsentConnectionNavbar() {
   let tmp5Result = null != stateFromStores;
   tmp7 = metroRequire;
   if (tmp5Result) {
-    const obj5 = { accessibilityRole: "header", variant: "text-md/semibold", color: "mobile-text-heading-primary", children: stateFromStores };
+    const obj5 = { accessibilityRole: "header", variant: "body-md/semibold", color: "mobile-text-heading-primary", children: stateFromStores };
     tmp5Result = tmp5(Text_Text.Text, obj5);
   }
   items1[1] = tmp5Result;

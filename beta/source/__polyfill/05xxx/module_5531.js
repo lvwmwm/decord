@@ -1,197 +1,102 @@
 // Module ID: 5531
 // Function ID: 5532
-// Dependencies: [5514, 5515, 5502]
+// Dependencies: [5, 32, 19, 17]
+// Exports: useIsScreenReaderEnabled
 
 // Module 5531
-import ErrorMessages from "ErrorMessages" /* 5502 */;
-import _createClassDefault from "_createClass" /* 5515 */;
-import _classCallCheck from "_classCallCheck" /* 5514 */;
+import react_native from "react-native" /* 17 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
 
-let size;
+let c4, c5;
 
-class ViewabilityHelper {
-  constructor(viewabilityConfig, viewableIndicesChanged) {
-    _classCallCheck(this, ViewabilityHelper);
-    this.possiblyViewableIndices = [];
-    this.hasInteracted = false;
-    this.viewableIndices = [];
-    this.lastReportedViewableIndices = [];
-    this.timers = new Set();
-    this.viewabilityConfig = viewabilityConfig;
-    this.viewableIndicesChanged = viewableIndicesChanged;
-    new Set();
-  }
-}
-const entry = {
-  key: "dispose",
-  value: function dispose() {
-    const timers = this.timers;
-    const item = timers.forEach(clearTimeout);
-  }
-};
-const items = [
-  entry,
-  {
-    key: "updateViewableItems",
-    value: function updateViewableItems(arg0, arg1, arg2, arg3, arg4, possiblyViewableIndices) {
-      const self = this;
-      let closure_1 = arg0;
-      let closure_2 = arg1;
-      let closure_3 = arg2;
-      let closure_4 = arg3;
-      let closure_5 = arg4;
-      if (undefined !== possiblyViewableIndices) {
-        self.possiblyViewableIndices = possiblyViewableIndices;
-      }
-      let viewabilityConfig = self.viewabilityConfig;
-      let prop;
-      if (viewabilityConfig != null) {
-        prop = viewabilityConfig.itemVisiblePercentThreshold;
-      }
-      if (null !== prop) {
-        let viewabilityConfig2 = self.viewabilityConfig;
-        let prop1;
-        if (viewabilityConfig2 != null) {
-          prop1 = viewabilityConfig2.itemVisiblePercentThreshold;
-        }
-        if (undefined !== prop1) {
-          const viewabilityConfig3 = self.viewabilityConfig;
-          let prop2;
-          if (viewabilityConfig3 != null) {
-            prop2 = viewabilityConfig3.viewAreaCoveragePercentThreshold;
-          }
-          if (null !== prop2) {
-            const viewabilityConfig4 = self.viewabilityConfig;
-            let prop3;
-            if (viewabilityConfig4 != null) {
-              prop3 = viewabilityConfig4.viewAreaCoveragePercentThreshold;
-            }
-            if (undefined !== prop3) {
-              const _Error = Error;
-              const self2 = this;
-              const self3 = this;
-              const error = new Error(ErrorMessages.ErrorMessages.multipleViewabilityThresholdTypesNotSupported);
-              throw error;
-            }
-          }
-        }
-      }
-      const viewabilityConfig5 = self.viewabilityConfig;
-      let waitForInteraction;
-      if (viewabilityConfig5 != null) {
-        waitForInteraction = viewabilityConfig5.waitForInteraction;
-      }
-      if (!waitForInteraction) {
-        const prop4 = self.possiblyViewableIndices;
-        const found = prop4.filter((item) => {
-          const viewabilityConfig = self.viewabilityConfig;
-          let prop;
-          const isItemViewable = self.isItemViewable;
-          const tmp = self;
-          const tmp2 = closure_1;
-          const tmp3 = closure_2;
-          const tmp4 = closure_3;
-          const tmp5 = closure_4;
-          if (viewabilityConfig != null) {
-            prop = viewabilityConfig.viewAreaCoveragePercentThreshold;
-          }
-          const viewabilityConfig2 = tmp.viewabilityConfig;
-          let prop1;
-          if (viewabilityConfig2 != null) {
-            prop1 = viewabilityConfig2.itemVisiblePercentThreshold;
-          }
-          return isItemViewable(item, tmp2, tmp3, tmp4, tmp5, prop, prop1, closure_5);
-        });
-        self.viewableIndices = found;
-        const viewabilityConfig6 = self.viewabilityConfig;
-        let num;
-        if (viewabilityConfig6 != null) {
-          num = viewabilityConfig6.minimumViewTime;
-        }
-        if (num == null) {
-          num = 250;
-        }
-        if (num > 0) {
-          const _setTimeout = setTimeout;
-          const timerId = setTimeout(() => {
-            const timers = self.timers;
-            timers.delete(timerId);
-            const result = self.checkViewableIndicesChanges(found);
-          }, num);
-          let timers = self.timers;
-          timers.add(timerId);
+let c2;
+let c3;
+({ useEffect: c2, useState: c3 } = react);
+const AccessibilityInfo = react_native.AccessibilityInfo;
+
+export function useIsScreenReaderEnabled() {
+  let closure_0;
+  let first;
+  [first, closure_0] = closure_3(false);
+  const tmp3 = closure_2(() => {
+    function checkStatus() {
+      return closure_0(...arguments);
+    }
+    closure_0(function*(arg0, value) {
+      if (c5 === 2) {
+        c5 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          const obj2 = { value, done: true };
+          return obj2;
         } else {
-          let result = self.checkViewableIndicesChanges(found);
+          return { value: "HermesInternal", done: null };
         }
-      }
-    }
-  },
-  {
-    key: "checkViewableIndicesChanges",
-    value: function checkViewableIndicesChanges(found) {
-      const self = this;
-      found = found.filter((item) => {
-        const viewableIndices = self.viewableIndices;
-        return viewableIndices.includes(item);
-      });
-      const found1 = found.filter((item) => {
-        const lastReportedViewableIndices = self.lastReportedViewableIndices;
-        return !lastReportedViewableIndices.includes(item);
-      });
-      const prop = this.lastReportedViewableIndices;
-      const found2 = prop.filter((item) => !found.includes(item));
-      const tmp = found1.length > 0 || found2.length > 0;
-      if (tmp) {
-        self.lastReportedViewableIndices = found;
-        const result = self.viewableIndicesChanged(found, found1, found2);
-      }
-    }
-  },
-  {
-    key: "clearLastReportedViewableIndices",
-    value: function clearLastReportedViewableIndices() {
-      this.lastReportedViewableIndices = [];
-    }
-  },
-  {
-    key: "isItemViewable",
-    value: function isItemViewable(item, arg1, arg2, arg3, width, prop, prop1, fn) {
-      size = fn(item);
-      if (undefined === size) {
-        return false;
       } else {
-        const diff = (arg1 ? size.x : size.y) - arg2;
-        const tmp3 = arg1 ? size.width : size.height;
-        if (arg1) {
-          width = width.width;
-        } else {
-          width = width.height - arg3;
-        }
-        const _Math = Math;
-        const _Math2 = Math;
-        const bound = Math.min(diff + tmp3, width);
-        const diff1 = bound - Math.max(diff, 0);
-        if (diff1 === tmp3) {
-          return true;
-        } else if (0 === diff1) {
-          return false;
-        } else {
-          let result;
-          const tmp13 = null != prop ? diff1 / width : diff1 / tmp3;
-          if (null != prop) {
-            result = 0.01 * prop;
-          } else {
-            let num2 = prop1;
-            if (prop1 == null) {
-              num2 = 0;
+        let c3;
+        try {
+          c5 = 2;
+          if (0 === c4) {
+            if (arg0 === 1) {
+              c5 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c5 = 3;
+              const obj3 = { value, done: true };
+              return obj3;
+            } else {
+              let closure_1 = tmp;
+              closure_0 = undefined;
+              c3 = 1;
+              c4 = 2;
+              c5 = 1;
+              const obj4 = { value: screenReaderEnabled.isScreenReaderEnabled(), done: false };
+              return obj4;
             }
-            result = 0.01 * num2;
+          } else {
+            if (1 === c4) {
+              c3 = 0;
+              const _console = console;
+              console.warn("Could not read accessibility info: defaulting to false");
+            } else if (arg0 === 1) {
+              c5 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c3 = 0;
+              c5 = 3;
+              const obj = { value, done: true };
+              return obj;
+            } else {
+              closure_0 = value;
+              closure_0(closure_0);
+              c3 = 0;
+            }
+            c5 = 3;
+            return { value: "HermesInternal", done: null };
           }
-          return tmp13 >= result;
+        } catch (tmp13) {
+          let closure_2 = tmp13;
+          if (0 === c3) {
+            c5 = 3;
+            throw tmp13;
+          } else {
+            c4 = 1;
+          }
         }
       }
-    }
-  }
-];
-
-export default _createClassDefault(ViewabilityHelper, items);
+    });
+    const tmp = checkStatus();
+    closure_0 = AccessibilityInfo.addEventListener("screenReaderChanged", (event) => {
+      closure_0(event);
+    });
+    return () => {
+      closure_0.remove();
+    };
+  }, []);
+  return first;
+}

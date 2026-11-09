@@ -1,19 +1,19 @@
-// Module ID: 18609
-// Function ID: 18610
+// Module ID: 18970
+// Function ID: 18971
 // Name: NavigationTTIRegionDebugOverlay
-// Dependencies: [32, 19, 17, 21, 5014, 575, 13329, 13330, 18607, 13332, 5624, 2]
+// Dependencies: [32, 19, 17, 21, 5140, 575, 13562, 13563, 18968, 13565, 5751, 2]
 // Exports: NavigationTTIRegionDebugOverlay
 
-// Module 18609 (NavigationTTIRegionDebugOverlay)
+// Module 18970 (NavigationTTIRegionDebugOverlay)
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import NavigationSpanTrackerDefault from "NavigationSpanTracker" /* 13330 */;
-import NavigationTTIDebugFreeze from "NavigationTTIDebugFreeze" /* 13332 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import NavigationSpanTrackerDefault from "NavigationSpanTracker" /* 13563 */;
+import NavigationTTIDebugFreeze from "NavigationTTIDebugFreeze" /* 13565 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -109,11 +109,11 @@ function NavigationTTIMilestoneReadout(surface) {
     str4 = "+" + firstContentfulPaintMs + "ms";
   }
   const obj2 = { style: tmp.milestoneReadout, pointerEvents: "none", accessible: false, children: closure_7(Text, obj3) };
-  obj3 = { variant: "text-xs/normal", color: "text-default", style: tmp.badgeText, lineClamp: 1, accessible: false, children: items2 };
-  Text = surface(5624).Text;
-  const obj4 = { variant: "text-xs/bold", color: "none", children: items1 };
+  obj3 = { variant: "body-xs/normal", color: "text-default", style: tmp.badgeText, lineClamp: 1, accessible: false, children: items2 };
+  Text = surface(5751).Text;
+  const obj4 = { variant: "body-xs/semibold", color: "none", children: items1 };
   items1 = ["FP ", str5];
-  items2 = [closure_7(surface(5624).Text, obj4), " \u00B7 FCP ", str4];
+  items2 = [closure_7(surface(5751).Text, obj4), " \u00B7 FCP ", str4];
   return closure_8(closure_6, obj2);
 }
 function NavigationTTIDebugFreezeControl(arg0) {
@@ -210,7 +210,7 @@ function NavigationTTIDebugFreezeControl(arg0) {
   if (null != target) {
     str5 = "text-feedback-info";
   }
-  obj2 = { variant: "text-xs/bold", color: str5, style: tmp.badgeText, lineClamp: 1, accessible: false, children: str };
+  obj2 = { variant: "body-xs/semibold", color: str5, style: tmp.badgeText, lineClamp: 1, accessible: false, children: str };
   return closure_8(tmp7, obj);
 }
 let _slicedToArray = _slicedToArray_mod;
@@ -223,18 +223,18 @@ let obj = { outline: obj2, includedOutline: obj3, excludedOutline: obj4, mixedOu
 obj2 = { zIndex: 10000, borderWidth: 2 };
 createStyles = createStyles.createStyles;
 const merged = Object.assign(StyleSheet.absoluteFillObject);
-obj3 = { borderColor: nativeDefault.colors.STATUS_POSITIVE, backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_POSITIVE };
+obj3 = { borderColor: nativeDefault.colors.STATUS_POSITIVE, backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_MOD_POSITIVE };
 obj4 = { borderColor: nativeDefault.colors.BORDER_STRONG, borderStyle: "dashed", backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE };
-obj5 = { backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_INFO };
-obj6 = { borderColor: nativeDefault.colors.STATUS_DANGER, backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_CRITICAL };
+obj5 = { backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_MOD_INFO };
+obj6 = { borderColor: nativeDefault.colors.STATUS_DANGER, backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_MOD_CRITICAL };
 obj7 = { paddingHorizontal: nativeDefault.space.PX_4, paddingVertical: nativeDefault.space.PX_4 };
 rect = { top: 0, left: 0, backgroundColor: nativeDefault.colors.STATUS_POSITIVE };
 rect1 = { top: 0, right: 0, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_STRONG };
-rect2 = { top: 0, right: 0, backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_INFO };
+rect2 = { top: 0, right: 0, backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_MOD_INFO };
 rect3 = { top: 0, left: 0, backgroundColor: nativeDefault.colors.STATUS_DANGER };
-obj8 = { backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_INFO };
+obj8 = { backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_MOD_INFO };
 rect4 = { position: "absolute", right: 0, bottom: 0, maxWidth: "60%", backgroundColor: nativeDefault.colors.BACKGROUND_MOD_STRONG };
-obj9 = { backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_INFO };
+obj9 = { backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_MOD_INFO };
 rect5 = { position: "absolute", left: 0, bottom: 0, maxWidth: "55%", backgroundColor: nativeDefault.colors.BACKGROUND_MOD_STRONG };
 let closure_11 = createStyles(obj);
 let result = size.fileFinishedImporting("modules/tti_analytics/native/navigation/debug/NavigationTTIRegionDebugOverlay.tsx");
@@ -274,14 +274,14 @@ export function NavigationTTIRegionDebugOverlay(name) {
   let tmp = closure_11();
   let tmp3 = dependencyMap;
   let tmp2 = name;
-  let obj = name(13329);
+  let obj = name(13562);
   const navTTISurface = obj.useNavTTISurface();
   [tmp6, c2] = _slicedToArray(react.useState(false), 2);
   const useSyncExternalStore = react.useSyncExternalStore;
   const tmp5 = _slicedToArray(react.useState(false), 2);
-  const subscribeNavigationTTIDebugFreezeTarget = name(13332).subscribeNavigationTTIDebugFreezeTarget;
-  const syncExternalStore = useSyncExternalStore(subscribeNavigationTTIDebugFreezeTarget, name(13332).getNavigationTTIDebugFreezeTarget, name(13332).getNavigationTTIDebugFreezeTarget);
-  let obj2 = name(13329);
+  const subscribeNavigationTTIDebugFreezeTarget = name(13565).subscribeNavigationTTIDebugFreezeTarget;
+  const syncExternalStore = useSyncExternalStore(subscribeNavigationTTIDebugFreezeTarget, name(13565).getNavigationTTIDebugFreezeTarget, name(13565).getNavigationTTIDebugFreezeTarget);
+  let obj2 = name(13562);
   const navTTISurface1 = obj2.useNavTTISurface();
   const items = [name, regionId, navTTISurface1, tracking];
   const callback = react.useCallback((arg0) => {
@@ -543,9 +543,9 @@ export function NavigationTTIRegionDebugOverlay(name) {
       }
       tmp54 = str34;
     }
-    obj6 = { variant: "text-xs/bold", color: str26, style: tmp.badgeText, lineClamp: num2, accessible: false, children: combined1 };
+    obj6 = { variant: "body-xs/semibold", color: str26, style: tmp.badgeText, lineClamp: num2, accessible: false, children: combined1 };
     num2 = 1;
-    Text = tmp2(5624).Text;
+    Text = tmp2(5751).Text;
     if (tmp6) {
       num2 = 3;
     }

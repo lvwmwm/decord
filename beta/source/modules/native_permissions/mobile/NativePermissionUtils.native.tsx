@@ -1,22 +1,22 @@
-// Module ID: 7962
-// Function ID: 7963
+// Module ID: 8031
+// Function ID: 8032
 // Name: mobile/NativePermissionUtils
-// Dependencies: [5, 19, 17, 7940, 21, 1375, 1622, 7963, 7959, 3, 7964, 7965, 1994, 5960, 1113, 2]
+// Dependencies: [5, 19, 17, 8009, 21, 1377, 1624, 8032, 8028, 3, 8033, 8034, 2118, 6092, 1113, 2]
 
-// Module 7962 (mobile/NativePermissionUtils)
+// Module 8031 (mobile/NativePermissionUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
-import useAlertStore from "useAlertStore" /* 5960 */;
-import NativePermissionBaseUtils2 from "NativePermissionBaseUtils" /* 7959 */;
-import react_nativeDefault from "react-native" /* 7964 */;
+import useAlertStore from "useAlertStore" /* 6092 */;
+import NativePermissionBaseUtils2 from "NativePermissionBaseUtils" /* 8028 */;
+import react_nativeDefault from "react-native" /* 8033 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 7940 */;
-import PlatformUtils_mod from "PlatformUtils" /* 1375 */;
-import MetaQuestUtils_mod from "MetaQuestUtils" /* 1622 */;
-import react_native2_mod from "react-native" /* 7963 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 8009 */;
+import PlatformUtils_mod from "PlatformUtils" /* 1377 */;
+import MetaQuestUtils_mod from "MetaQuestUtils" /* 1624 */;
+import react_native2_mod from "react-native" /* 8032 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -53,7 +53,7 @@ let requestPermissionLookup = function _combineStatuses() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       while (true) {
@@ -167,9 +167,9 @@ class NativePermissionIOSUtils extends NativePermissionBaseUtils {
   hasPermissionCore(arg0, arg1) {
     return this.performRequest(NativePermissionIOSUtils.hasPermissionLookup, arg0, arg1);
   }
-  performRequest(hasPermissionLookup, arg1, arg2) {
+  performRequest(arg0, arg1, arg2) {
     let resolved;
-    if (null == hasPermissionLookup[arg1]) {
+    if (null == arg0[arg1]) {
       const self2 = this;
       const self3 = this;
       const _HermesInternal = HermesInternal;

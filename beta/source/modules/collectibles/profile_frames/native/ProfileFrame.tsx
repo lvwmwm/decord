@@ -1,20 +1,20 @@
-// Module ID: 8793
-// Function ID: 8794
+// Module ID: 8866
+// Function ID: 8867
 // Name: ProfileFrame
-// Dependencies: [19, 17, 8776, 8794, 21, 5095, 5014, 8795, 5717, 5254, 8797, 8798, 2]
+// Dependencies: [19, 17, 8847, 8867, 21, 1652, 5140, 8868, 5842, 5370, 8870, 8871, 2]
 // Exports: default
 
-// Module 8793 (ProfileFrame)
+// Module 8866 (ProfileFrame)
 import Fragment from "Fragment" /* 21 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
-import timing from "timing" /* 5254 */;
-import FastImageDefault from "FastImage" /* 5717 */;
-import FramePreviewOverrideStore from "FramePreviewOverrideStore" /* 8776 */;
-import FramePreviewOverrideFrameDefault from "FramePreviewOverrideFrame" /* 8798 */;
+import _mod1652 from "module_1652" /* 1652 */;
+import timing_timing from "timing/timing" /* 5370 */;
+import FastImageDefault from "FastImage" /* 5842 */;
+import FramePreviewOverrideStore from "FramePreviewOverrideStore" /* 8847 */;
+import FramePreviewOverrideFrameDefault from "FramePreviewOverrideFrame" /* 8871 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ProfileFrameConstants from "ProfileFrameConstants" /* 8794 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import ProfileFrameConstants from "ProfileFrameConstants" /* 8867 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 let set;
@@ -142,7 +142,7 @@ function LiveProfileFrame(frame) {
   c9 = undefined;
   c10 = undefined;
   const tmp = c10();
-  let obj = frame(8795);
+  let obj = frame(8868);
   const settled = obj.usePreloadLayerImages({ frame, containerWidth, profileThemeType, filterLayer }).settled;
   const items = [frame.layers, frameOrder, profileThemeType, filterLayer];
   const memo = profileThemeType.useMemo(() => {
@@ -157,9 +157,9 @@ function LiveProfileFrame(frame) {
     });
   }, items);
   let num = 0;
-  const useSharedValue = frame(5095).useSharedValue;
+  const useSharedValue = frame(1652).useSharedValue;
   const obj2 = profileThemeType;
-  const tmp3 = frame(5095);
+  const tmp3 = frame(1652);
   if (settled) {
     num = 1;
   }
@@ -169,7 +169,7 @@ function LiveProfileFrame(frame) {
     let num = 0;
     set = sharedValue.set;
     if (settled) {
-      const obj = timing;
+      const obj = timing_timing;
       num = obj.withTiming(1, obj);
     }
     const result = set(num);
@@ -177,12 +177,12 @@ function LiveProfileFrame(frame) {
   if (0 !== memo.length) {
     if (0 !== containerWidth) {
       if (settled) {
-        ({ overflowTop: c8, overflowBottom: c9, overflowHorizontal: c10 } = containerWidth(8797)(frame, containerWidth));
+        ({ overflowTop: c8, overflowBottom: c9, overflowHorizontal: c10 } = containerWidth(8870)(frame, containerWidth));
         const items2 = [tmp.container, ];
         const obj4 = { opacity: sharedValue };
         items2[1] = obj4;
-        containerWidth(8797)(frame, containerWidth);
-        const View = containerWidth(5095).View;
+        containerWidth(8870)(frame, containerWidth);
+        const View = containerWidth(1652).View;
         return <View style={items2}>{memo.map((layer) => <ProfileFrameLayer key={arg0.id} skuId={frame.skuId} layer={arg0} overflowTop={c8} overflowBottom={c9} overflowHorizontal={c10} containerWidth={containerWidth} containerHeight={dependencyMap} />)}</View>;
       }
     }
@@ -193,8 +193,8 @@ function LiveProfileFrame(frame) {
 let closure_5 = FramePreviewOverrideStore.useFramePreviewOverrideStore;
 ({ PROFILE_FRAME_RESPONSIVE_RAIL_MIN_ASPECT_RATIO: metroRequire, PROFILE_FRAME_Z_INDEX: metroImportDefault } = ProfileFrameConstants);
 let jsx = Fragment.jsx;
-let source = { duration: 150, easing: Easing.in(ReanimatedRexport.Easing.ease) };
-Easing = ReanimatedRexport.Easing;
+let source = { duration: 150, easing: Easing.in(_mod1652.Easing.ease) };
+Easing = _mod1652.Easing;
 let createStyles = createStyles_mod;
 let obj2 = { container: obj3, layer: obj4 };
 obj3 = { pointerEvents: "none" };

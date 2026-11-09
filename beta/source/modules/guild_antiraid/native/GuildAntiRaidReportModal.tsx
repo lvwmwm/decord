@@ -1,24 +1,24 @@
-// Module ID: 15790
-// Function ID: 15791
+// Module ID: 16107
+// Function ID: 16108
 // Name: GuildAntiRaidReportModal
-// Dependencies: [5, 32, 19, 17, 15791, 21, 5014, 575, 1625, 5624, 5709, 1113, 7060, 6974, 5634, 6998, 10146, 7131, 13257, 7169, 2]
+// Dependencies: [5, 32, 19, 17, 16108, 21, 5140, 575, 1627, 5751, 5834, 1113, 7126, 7037, 5758, 7064, 10267, 7202, 13490, 7231, 2]
 // Exports: default
 
-// Module 15790 (GuildAntiRaidReportModal)
+// Module 16107 (GuildAntiRaidReportModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1625 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import components_Button_Button from "components/Button/Button" /* 5634 */;
-import NavigatorHeader from "NavigatorHeader" /* 6998 */;
-import TableRowGroup2 from "TableRowGroup" /* 7060 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import components_Button_Button from "components/Button/Button" /* 5758 */;
+import NavigatorHeader from "NavigatorHeader" /* 7064 */;
+import TableRowGroup2 from "TableRowGroup" /* 7126 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import GuildReportRaidModalConstants from "GuildReportRaidModalConstants" /* 15791 */;
+import GuildReportRaidModalConstants from "GuildReportRaidModalConstants" /* 16108 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let c1, dependencyMap;
@@ -47,7 +47,7 @@ function ReportModal(onSubmit) {
   const items = [tmp];
   const bottom = useSafeAreaInsetsDefault().bottom;
   let closure_3 = react.useCallback((arg0) => {
-    const obj = { style: formRow.formRow, variant: "text-md/semibold", color: "interactive-text-active", children: metroImportAll(arg0) };
+    const obj = { style: formRow.formRow, variant: "body-md/semibold", color: "interactive-text-active", children: metroImportAll(arg0) };
     const Text = Text_Text.Text;
     return authStore(Text, obj);
   }, items);
@@ -56,7 +56,7 @@ function ReportModal(onSubmit) {
     const obj = require("Linking");
     obj.openURL(closure_1_7());
   }, []);
-  const obj2 = { style: tmp.headerSubtitle, variant: "text-sm/medium", color: "text-default", children: intl.format(intl3.t.Hg8Ee7, { onClick: callback }) };
+  const obj2 = { style: tmp.headerSubtitle, variant: "body-sm/medium", color: "text-default", children: intl.format(intl3.t.Hg8Ee7, { onClick: callback }) };
   let Text = Text_Text.Text;
   intl = intl3.intl;
   items1 = [closure_10(Text, obj2), , ];
@@ -133,7 +133,7 @@ export default function GuildAntiRaidReportModal(onCloseModal) {
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -169,7 +169,7 @@ export default function GuildAntiRaidReportModal(onCloseModal) {
           closure_128_0();
         }
         first = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp15) {
         first = 3;
         throw tmp15;

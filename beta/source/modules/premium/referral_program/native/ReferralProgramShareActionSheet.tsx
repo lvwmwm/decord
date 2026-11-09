@@ -1,28 +1,28 @@
-// Module ID: 15322
-// Function ID: 15323
+// Module ID: 15608
+// Function ID: 15609
 // Name: ReferralProgramShareActionSheet
-// Dependencies: [5, 32, 19, 17, 1383, 7632, 1072, 21, 5014, 575, 504, 15323, 38, 1379, 10730, 15324, 1113, 5023, 15325, 7326, 7351, 1252, 7633, 5258, 15326, 1994, 5711, 7321, 5624, 5717, 15331, 15332, 10731, 6953, 5634, 5272, 9062, 10733, 2]
+// Dependencies: [5, 32, 19, 17, 1385, 7708, 1072, 21, 5140, 575, 504, 15609, 38, 1380, 10849, 15610, 1113, 5149, 15611, 7387, 7412, 1252, 7709, 5374, 15612, 2118, 5836, 7382, 5751, 5842, 15617, 15618, 10850, 7015, 5758, 5388, 9142, 10852, 2]
 // Exports: default
 
-// Module 15322 (ReferralProgramShareActionSheet)
+// Module 15608 (ReferralProgramShareActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl8 from "intl" /* 1113 */;
-import GlobalUtils from "GlobalUtils" /* 1379 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5023 */;
-import makeUserListPillDataDefault from "makeUserListPillData" /* 10730 */;
-import ReferralProgramShareActionSheetUtils from "ReferralProgramShareActionSheetUtils" /* 15325 */;
+import GlobalUtils from "GlobalUtils" /* 1380 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5149 */;
+import makeUserListPillDataDefault from "makeUserListPillData" /* 10849 */;
+import ReferralProgramShareActionSheetUtils from "ReferralProgramShareActionSheetUtils" /* 15611 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import UserStore from "UserStore" /* 1383 */;
-import ReferralTrialStore from "ReferralTrialStore" /* 7632 */;
+import UserStore from "UserStore" /* 1385 */;
+import ReferralTrialStore from "ReferralTrialStore" /* 7708 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
-let BottomSheet, closure_2, trialCreationResult, v3;
+let closure_2, trialCreationResult, v3;
 
 let c10;
 let obj2;
@@ -202,7 +202,7 @@ export default function ReferralProgramShareActionSheet(actionSheetKey) {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -252,7 +252,7 @@ export default function ReferralProgramShareActionSheet(actionSheetKey) {
               c3 = 0;
             }
             v3 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp16) {
           if (0 === c3) {
@@ -283,7 +283,7 @@ export default function ReferralProgramShareActionSheet(actionSheetKey) {
     return stringResult;
   }, items10);
   items11 = [isFetching(str(stateFromStores[27]).BottomSheetTitleHeader, { title: memo5 }), ];
-  let obj5 = { variant: "text-xs/medium", color: "text-default", lineClamp: 2, style: tmp.subtitle, children: stringResult };
+  let obj5 = { variant: "body-xs/medium", color: "text-default", lineClamp: 2, style: tmp.subtitle, children: stringResult };
   items11[1] = isFetching(str(stateFromStores[28]).Text, obj5);
   if (hasError) {
     let obj6 = { style: tmp.centeredContainer, children: items12 };
@@ -291,11 +291,11 @@ export default function ReferralProgramShareActionSheet(actionSheetKey) {
     obj8 = { uri: tmp9(tmp4[30]) };
     const tmp9Result = ref(tmp4[29]);
     items12 = [tmp29(tmp9Result, obj7), , ];
-    let obj9 = { variant: "heading-xl/bold", style: tmp.subtitle, children: intl4.string(tmp3(tmp4[16]).t.a9HOKg) };
+    let obj9 = { variant: "heading-xl/semibold", style: tmp.subtitle, children: intl4.string(tmp3(tmp4[16]).t.a9HOKg) };
     const Text3 = tmp3(tmp4[28]).Text;
     intl4 = tmp3(tmp4[16]).intl;
     items12[1] = isFetching(Text3, obj9);
-    const obj10 = { variant: "text-md/medium", color: "text-default", style: tmp.subtitle, children: intl5.string(tmp3(tmp4[16]).t.JjjeZb) };
+    const obj10 = { variant: "body-md/medium", color: "text-default", style: tmp.subtitle, children: intl5.string(tmp3(tmp4[16]).t.JjjeZb) };
     const Text4 = tmp3(tmp4[28]).Text;
     intl5 = tmp3(tmp4[16]).intl;
     items12[2] = isFetching(Text4, obj10);
@@ -309,11 +309,11 @@ export default function ReferralProgramShareActionSheet(actionSheetKey) {
       obj13 = { uri: ref(tmp4[31]) };
       const tmp9Result3 = ref(tmp4[29]);
       items13 = [tmp29(tmp9Result3, obj12), , ];
-      const obj14 = { variant: "heading-xl/bold", style: tmp.subtitle, children: intl2.string(tmp3(tmp4[16]).t["PFp+aJ"]) };
+      const obj14 = { variant: "heading-xl/semibold", style: tmp.subtitle, children: intl2.string(tmp3(tmp4[16]).t["PFp+aJ"]) };
       const Text = tmp3(tmp4[28]).Text;
       intl2 = tmp3(tmp4[16]).intl;
       items13[1] = isFetching(Text, obj14);
-      const obj15 = { variant: "text-md/medium", color: "text-default", style: tmp.subtitle, children: intl3.string(tmp3(tmp4[16]).t.eBIGB4) };
+      const obj15 = { variant: "body-md/medium", color: "text-default", style: tmp.subtitle, children: intl3.string(tmp3(tmp4[16]).t.eBIGB4) };
       const Text2 = tmp3(tmp4[28]).Text;
       intl3 = tmp3(tmp4[16]).intl;
       items13[2] = isFetching(Text2, obj15);
@@ -351,7 +351,7 @@ export default function ReferralProgramShareActionSheet(actionSheetKey) {
   intl6 = tmp3(tmp4[16]).intl;
   const obj19 = { scrollable: true, startExpanded: true, header: tmp27Result, footer: isFetching(memo, obj17), children: items15 };
   const obj20 = { style: tmp.searchBarContainer, children: isFetching(tmp9Result4, obj21) };
-  BottomSheet = tmp3(tmp4[35]).BottomSheet;
+  const BottomSheet = tmp3(tmp4[35]).BottomSheet;
   obj21 = { onChangeText: tmp7, onRemove: callback1, tags: memo1, placeholder: intl7.string(tmp3(tmp4[16]).t.Kd5RaI) };
   tmp9Result4 = ref(tmp4[36]);
   intl7 = tmp3(tmp4[16]).intl;

@@ -1,21 +1,21 @@
-// Module ID: 19882
-// Function ID: 19883
+// Module ID: 20292
+// Function ID: 20293
 // Name: HowItWorksSection
-// Dependencies: [19, 17, 21, 5014, 575, 5624, 1113, 19883, 1187, 19887, 19891, 2]
+// Dependencies: [19, 17, 21, 5140, 575, 5751, 1113, 20293, 1187, 20297, 20301, 2]
 // Exports: default
 
-// Module 19882 (HowItWorksSection)
+// Module 20292 (HowItWorksSection)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import PerksTicketSpotIllustration from "PerksTicketSpotIllustration" /* 19883 */;
-import AnnouncementMegaphoneSpotIllustration from "AnnouncementMegaphoneSpotIllustration" /* 19887 */;
-import CoinsAndBagSpotIllustration from "CoinsAndBagSpotIllustration" /* 19891 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import PerksTicketSpotIllustration from "PerksTicketSpotIllustration" /* 20293 */;
+import AnnouncementMegaphoneSpotIllustration from "AnnouncementMegaphoneSpotIllustration" /* 20297 */;
+import CoinsAndBagSpotIllustration from "CoinsAndBagSpotIllustration" /* 20301 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 let c3;
@@ -32,11 +32,11 @@ function HowItWorksCard(Illustration) {
   const tmp = closure_5();
   const obj = { style: tmp.card, accessible: true, accessibilityLabel: "" + cardNumber + " - " + description, children: items };
   items = [, , ];
-  const obj2 = { style: tmp.cardNumber, variant: "text-xs/bold", color: "text-overlay-light", children: cardNumber };
+  const obj2 = { style: tmp.cardNumber, variant: "body-xs/semibold", color: "text-overlay-light", children: cardNumber };
   items[0] = _false(Text_Text.Text, obj2);
   const obj3 = { style: tmp.howItWorksCardIcon, children: _false(Illustration, { width: 108 }) };
   items[1] = _false(View, obj3);
-  const obj4 = { style: tmp.howItWorksCardDescription, variant: "text-sm/normal", color: "mobile-text-heading-primary", children: description };
+  const obj4 = { style: tmp.howItWorksCardDescription, variant: "body-sm/normal", color: "mobile-text-heading-primary", children: description };
   items[2] = _false(Text_Text.Text, obj4);
   return React3(View, obj);
 }

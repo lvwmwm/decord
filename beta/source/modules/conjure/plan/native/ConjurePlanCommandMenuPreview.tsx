@@ -1,20 +1,20 @@
-// Module ID: 12747
-// Function ID: 12748
+// Module ID: 12948
+// Function ID: 12949
 // Name: ConjurePlanCommandMenuPreview
-// Dependencies: [19, 17, 21, 5014, 575, 12748, 5624, 1113, 5717, 1409, 2]
+// Dependencies: [19, 17, 21, 5140, 575, 12949, 5751, 1113, 5842, 1411, 2]
 // Exports: default
 
-// Module 12747 (ConjurePlanCommandMenuPreview)
+// Module 12948 (ConjurePlanCommandMenuPreview)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import AvatarUtils from "AvatarUtils" /* 1409 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import FastImageDefault from "FastImage" /* 5717 */;
-import ArrowAngleLeftUpIcon2 from "ArrowAngleLeftUpIcon" /* 12748 */;
+import AvatarUtils from "AvatarUtils" /* 1411 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import FastImageDefault from "FastImage" /* 5842 */;
+import ArrowAngleLeftUpIcon2 from "ArrowAngleLeftUpIcon" /* 12949 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_4;
@@ -63,7 +63,7 @@ export default function ConjurePlanCommandMenuPreview(appIconSrc) {
   const intl = intl2.intl;
   const string = intl.string;
   const t = intl2.t;
-  const obj4 = { variant: "text-sm/medium", color: "text-default", children: string("message" === target ? t["5IEsGx"] : t.LYju5J) };
+  const obj4 = { variant: "body-sm/medium", color: "text-default", children: string("message" === target ? t["5IEsGx"] : t.LYju5J) };
   items1[1] = React3(Text, obj4);
   items2 = [hasOwnProperty(View, obj2), ];
   const obj5 = { style: items3, children: items4 };
@@ -77,7 +77,7 @@ export default function ConjurePlanCommandMenuPreview(appIconSrc) {
     tmp10Result = tmp10(tmp15, obj6);
   }
   items4 = [tmp10Result, ];
-  const obj7 = { variant: "text-sm/medium", color: "text-strong", style: tmp.label, children: commandName };
+  const obj7 = { variant: "body-sm/medium", color: "text-strong", style: tmp.label, children: commandName };
   items4[1] = React3(Text_Text.Text, obj7);
   items2[1] = hasOwnProperty(View, obj5);
   return hasOwnProperty(View, obj);

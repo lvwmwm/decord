@@ -1,22 +1,22 @@
-// Module ID: 14264
-// Function ID: 14265
+// Module ID: 14500
+// Function ID: 14501
 // Name: ContactSyncLandingOnboardingRedesign
-// Dependencies: [5, 19, 17, 7940, 21, 5014, 575, 5586, 7957, 5717, 14265, 5624, 1113, 5634, 14266, 14257, 2]
+// Dependencies: [5, 19, 17, 8009, 21, 5140, 575, 5714, 8026, 5842, 14501, 5751, 1113, 5758, 14502, 14493, 2]
 // Exports: default
 
-// Module 14264 (ContactSyncLandingOnboardingRedesign)
+// Module 14500 (ContactSyncLandingOnboardingRedesign)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import NavigatorConstants from "NavigatorConstants" /* 5586 */;
-import FastImageDefault from "FastImage" /* 5717 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 7940 */;
-import RedesignContactSyncDiscoverabilityFooterDefault from "RedesignContactSyncDiscoverabilityFooter" /* 14257 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14265 */;
-import ContactSyncErrorDefault from "ContactSyncError" /* 14266 */;
+import NavigatorConstants from "NavigatorConstants" /* 5714 */;
+import FastImageDefault from "FastImage" /* 5842 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 8009 */;
+import RedesignContactSyncDiscoverabilityFooterDefault from "RedesignContactSyncDiscoverabilityFooter" /* 14493 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14501 */;
+import ContactSyncErrorDefault from "ContactSyncError" /* 14502 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 let c1, c2;
@@ -78,7 +78,7 @@ export default function ContactSyncLandingOnboardingRedesign(onNext) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -111,7 +111,7 @@ export default function ContactSyncLandingOnboardingRedesign(onNext) {
             closure_128_0();
           }
           c2 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp10) {
         c2 = 3;
@@ -122,17 +122,17 @@ export default function ContactSyncLandingOnboardingRedesign(onNext) {
   let obj3 = { resizeMode: "contain", style: tmp.headerImage, source: AssetRegistryDefault };
   const tmp3 = FastImageDefault;
   items1 = [closure_7(tmp3, obj3), , , , ];
-  let obj4 = { style: tmp.title, variant: "heading-xl/bold", children: intl.string(onNext(1113).t["/G+nci"]) };
-  const Text = onNext(5624).Text;
+  let obj4 = { style: tmp.title, variant: "heading-xl/semibold", children: intl.string(onNext(1113).t["/G+nci"]) };
+  const Text = onNext(5751).Text;
   intl = onNext(1113).intl;
   items1[1] = closure_7(Text, obj4);
-  let obj5 = { style: tmp.subtitle, variant: "text-sm/medium", children: intl2.string(onNext(1113).t.G8zcHt) };
-  const Text2 = onNext(5624).Text;
+  let obj5 = { style: tmp.subtitle, variant: "body-sm/medium", children: intl2.string(onNext(1113).t.G8zcHt) };
+  const Text2 = onNext(5751).Text;
   intl2 = onNext(1113).intl;
   items1[2] = closure_7(Text2, obj5);
   const obj6 = { style: tmp.buttonContainer, children: closure_7(Button, obj7) };
   obj7 = { variant: "primary", size: "lg", text: intl3.string(onNext(1113).t.LhlgY9), onPress: callback, loading };
-  Button = onNext(5634).Button;
+  Button = onNext(5758).Button;
   intl3 = onNext(1113).intl;
   items1[3] = closure_7(View, obj6);
   items1[4] = closure_7(ContactSyncErrorDefault, { error });

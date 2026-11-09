@@ -1,27 +1,27 @@
-// Module ID: 9315
-// Function ID: 9316
+// Module ID: 9396
+// Function ID: 9397
 // Name: GuildProfileGames
-// Dependencies: [19, 17, 21, 5014, 575, 9316, 9340, 14723, 5624, 14727, 5712, 5258, 14728, 1994, 6980, 2]
+// Dependencies: [19, 17, 21, 5140, 575, 9397, 9421, 14959, 5751, 14963, 5837, 5374, 14964, 2118, 7043, 2]
 // Exports: default
 
-// Module 9315 (GuildProfileGames)
+// Module 9396 (GuildProfileGames)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import asyncRequire from "asyncRequire" /* 1994 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 9316 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9340 */;
+import asyncRequire from "asyncRequire" /* 2118 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 9397 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9421 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
 let metroRequire;
 let rect;
 let tmp;
-const GameIconDefault = tmp(14723);
+const GameIconDefault = tmp(14959);
 function ClickableGameIcon(game) {
   let activityLevel;
   let onPress;
@@ -55,7 +55,7 @@ function FavoriteGame(game) {
   const activityLevel = game.activityLevel;
   const obj = { style: styles().favoriteGame, children: items };
   items = [hasOwnProperty(ClickableGameIcon, { game, activityLevel }), ];
-  const obj2 = { variant: "text-sm/medium", color: "text-subtle", children: game.name };
+  const obj2 = { variant: "body-sm/medium", color: "text-subtle", children: game.name };
   items[1] = hasOwnProperty(Text_Text.Text, obj2);
   return metroRequire(View, obj);
 }
@@ -113,7 +113,7 @@ export default function GuildProfileGames(profile) {
           items[1] = hasOwnProperty(View, obj4);
           const obj5 = { style: closure_3.lastItemText, children: hasOwnProperty(Text, obj6) };
           const _HermesInternal = HermesInternal;
-          obj6 = { variant: "text-xs/medium", color: "text-overlay-light", children: "+" + arr.length };
+          obj6 = { variant: "body-xs/medium", color: "text-overlay-light", children: "+" + arr.length };
           Text = Text_Text.Text;
           items[2] = hasOwnProperty(View, obj5);
           tmp8 = metroRequire(View, obj2);

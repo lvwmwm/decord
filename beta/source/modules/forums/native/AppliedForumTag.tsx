@@ -1,21 +1,21 @@
-// Module ID: 10522
-// Function ID: 10523
+// Module ID: 10641
+// Function ID: 10642
 // Name: AppliedForumTag
-// Dependencies: [19, 17, 6796, 1386, 21, 5014, 575, 504, 10523, 1113, 7300, 1409, 5624, 2]
+// Dependencies: [19, 17, 6851, 1388, 21, 5140, 575, 504, 10642, 1113, 7363, 1411, 5751, 2]
 // Exports: AppliedForumTagPill
 
-// Module 10522 (AppliedForumTag)
+// Module 10641 (AppliedForumTag)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import EmojiConstants from "EmojiConstants" /* 1386 */;
-import EmojiDefault from "Emoji" /* 7300 */;
-import ForumTagContextMenuDefault from "ForumTagContextMenu" /* 10523 */;
+import EmojiConstants from "EmojiConstants" /* 1388 */;
+import EmojiDefault from "Emoji" /* 7363 */;
+import ForumTagContextMenuDefault from "ForumTagContextMenu" /* 10642 */;
 import react from "react" /* 19 */;
-import EmojiStore from "EmojiStore" /* 6796 */;
+import EmojiStore from "EmojiStore" /* 6851 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, importDefault;
@@ -24,7 +24,7 @@ let metroImportDefault;
 let metroRequire;
 let obj2;
 let tmp5;
-const Text_Text = tmp5(5624);
+const Text_Text = tmp5(5751);
 class AppliedForumTag {
   constructor(hasUnreads) {
     let c2;
@@ -88,7 +88,7 @@ class AppliedForumTag {
           if (null != closure_5) {
             const obj6 = { id: null, animated: null, size: EMOJI_URL_BASE_SIZE };
             ({ id: obj5.id, animated: obj5.animated } = tmp14);
-            const tmp12Result = tmp12(1409);
+            const tmp12Result = tmp12(1411);
             emojiURL = tmp12Result.getEmojiURL(obj6);
           }
           if (str == null) {
@@ -97,7 +97,7 @@ class AppliedForumTag {
           tmp11Result = tmp11(tmp13, obj4);
         }
         items1 = [tmp11Result, ];
-        const obj10 = { lineClamp: 1, style: container.tagName, variant: "text-xs/semibold", color: str, children: tmp7 };
+        const obj10 = { lineClamp: 1, style: container.tagName, variant: "body-xs/semibold", color: str, children: tmp7 };
         items1[1] = metroRequire(Text_Text.Text, obj10);
         return tmp2(tmp3, obj);
       }

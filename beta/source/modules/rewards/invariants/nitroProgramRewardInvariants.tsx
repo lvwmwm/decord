@@ -1,12 +1,12 @@
-// Module ID: 16905
-// Function ID: 16906
+// Module ID: 17228
+// Function ID: 17229
 // Name: nitroProgramRewardInvariants
-// Dependencies: [15613, 4456, 2]
+// Dependencies: [15928, 4582, 2]
 // Exports: passesNitroGeneralUIInvariant, passesNitroProgressBarInvariant
 
-// Module 16905 (nitroProgramRewardInvariants)
-import differenceInCalendarDaysDefault from "differenceInCalendarDays" /* 4456 */;
-import ProgramRewardsTypes from "ProgramRewardsTypes" /* 15613 */;
+// Module 17228 (nitroProgramRewardInvariants)
+import differenceInCalendarDaysDefault from "differenceInCalendarDays" /* 4582 */;
+import ProgramRewardsTypes from "ProgramRewardsTypes" /* 15928 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/rewards/invariants/nitroProgramRewardInvariants.tsx");

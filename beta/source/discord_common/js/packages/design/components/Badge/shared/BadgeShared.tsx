@@ -1,9 +1,9 @@
-// Module ID: 7307
-// Function ID: 7308
+// Module ID: 7051
+// Function ID: 7052
 // Name: BadgeShared
 // Dependencies: [2]
 
-// Module 7307 (BadgeShared)
+// Module 7051 (BadgeShared)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/packages/design/components/Badge/shared/BadgeShared.tsx");

@@ -1,29 +1,29 @@
-// Module ID: 13760
-// Function ID: 13761
+// Module ID: 13993
+// Function ID: 13994
 // Name: AddMediaToOriginalForumPostActionSheet
-// Dependencies: [32, 5, 19, 17, 4863, 7701, 4885, 6061, 1072, 21, 5014, 575, 10208, 8216, 8231, 5258, 9781, 9778, 11, 8212, 9780, 8202, 1282, 13761, 7636, 8687, 5959, 1113, 504, 7326, 8204, 8220, 5272, 13762, 5624, 5635, 2]
+// Dependencies: [32, 5, 19, 17, 4989, 7777, 5011, 6194, 1072, 21, 5140, 575, 10327, 8286, 8301, 5374, 9871, 9868, 11, 8281, 9870, 8271, 1282, 13994, 7712, 8758, 6091, 1113, 504, 7387, 8273, 8290, 5388, 13995, 5751, 5759, 2]
 // Exports: default
 
-// Module 13760 (AddMediaToOriginalForumPostActionSheet)
+// Module 13993 (AddMediaToOriginalForumPostActionSheet)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import DraftStore from "DraftStore" /* 7701 */;
-import Tracking from "Tracking" /* 8204 */;
-import utils_UploadUtils from "utils/UploadUtils" /* 8220 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
+import DraftStore from "DraftStore" /* 7777 */;
+import Tracking from "Tracking" /* 8273 */;
+import utils_UploadUtils from "utils/UploadUtils" /* 8290 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
-import GuildStore from "GuildStore" /* 4885 */;
-import MessageStore from "MessageStore" /* 6061 */;
+import ChannelStore from "ChannelStore" /* 4989 */;
+import GuildStore from "GuildStore" /* 5011 */;
+import MessageStore from "MessageStore" /* 6194 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
-let BottomSheet, c9, closure_6;
+let c9, closure_6;
 
 let closure_12;
 let closure_14;
@@ -57,7 +57,7 @@ let obj = function _upload2() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c7;
@@ -261,7 +261,7 @@ let obj = function _upload2() {
               c7 = 0;
             }
             c9 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp72) {
           closure_6 = tmp72;
@@ -400,14 +400,14 @@ export default function AddMediaToOriginalForumPostActionSheet(threadId) {
   const obj5 = { startExpanded: true, children: closure_14(stateFromStores2, obj6) };
   obj6 = { style: tmp.container, children: items9 };
   const obj7 = { pointerEvents: "none", style: tmp.post, children: closure_13(threadId(sendMessage[33]).ForumPostListDisabled, obj8) };
-  BottomSheet = tmp4(tmp5[32]).BottomSheet;
+  const BottomSheet = tmp4(tmp5[32]).BottomSheet;
   obj8 = { threadId, localDeviceMedia: tmp16, style: tmp.postContent };
   items9 = [closure_13(stateFromStores2, obj7), , , , , ];
-  const obj9 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl.string(threadId(sendMessage[27]).t["+SZF6S"]) };
+  const obj9 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: intl.string(threadId(sendMessage[27]).t["+SZF6S"]) };
   const Text = tmp4(tmp5[34]).Text;
   intl = tmp4(tmp5[27]).intl;
   items9[1] = closure_13(Text, obj9);
-  const obj10 = { style: tmp.description, variant: "text-md/medium", color: "text-default", children: intl2.string(threadId(sendMessage[27]).t["0Ycgw5"]) };
+  const obj10 = { style: tmp.description, variant: "body-md/medium", color: "text-default", children: intl2.string(threadId(sendMessage[27]).t["0Ycgw5"]) };
   const Text2 = tmp4(tmp5[34]).Text;
   intl2 = tmp4(tmp5[27]).intl;
   items9[2] = closure_13(Text2, obj10);

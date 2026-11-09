@@ -1,15 +1,16 @@
-// Module ID: 11487
-// Function ID: 11488
+// Module ID: 11632
+// Function ID: 11633
 // Name: formatClearAfterOption
-// Dependencies: [11399, 4836, 1113, 1089, 1379, 2]
+// Dependencies: [11540, 4962, 1113, 11544, 1089, 1380, 2]
 // Exports: default
 
-// Module 11487 (formatClearAfterOption)
+// Module 11632 (formatClearAfterOption)
 import DurationsDefault from "Durations" /* 1089 */;
 import intl10 from "intl" /* 1113 */;
-import GlobalUtils from "GlobalUtils" /* 1379 */;
-import DateUtils from "DateUtils" /* 4836 */;
-import Constants from "Constants" /* 11399 */;
+import GlobalUtils from "GlobalUtils" /* 1380 */;
+import DateUtils from "DateUtils" /* 4962 */;
+import Constants from "Constants" /* 11540 */;
+import getClearAfterDurationDefault from "getClearAfterDuration" /* 11544 */;
 import size from "module_2" /* 2 */;
 
 const ClearAfterValues = Constants.ClearAfterValues;
@@ -25,7 +26,8 @@ export default function formatClearAfterOption(arg0) {
     const intl8 = intl10.intl;
     const _Date10 = Date;
     const formatToPlainStringResult = intl8.formatToPlainString(intl10.t.Rea2gR, { hours: 24 });
-    const sum = Date.now() + DurationsDefault.Millis.DAY;
+    const tmp61 = getClearAfterDurationDefault(ClearAfterValues.TODAY);
+    const sum = Date.now() + tmp61;
     const _Date11 = Date;
     const self13 = this;
     const self14 = this;

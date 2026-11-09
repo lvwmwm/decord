@@ -1,23 +1,23 @@
-// Module ID: 19824
-// Function ID: 19825
+// Module ID: 20234
+// Function ID: 20235
 // Name: GuildSettingsModalCommunityIntro
-// Dependencies: [19, 17, 4885, 4946, 9075, 1072, 21, 5014, 575, 10263, 1113, 5624, 10074, 5735, 1497, 504, 9074, 19825, 5717, 2061, 5634, 19829, 5711, 5606, 2]
+// Dependencies: [19, 17, 5011, 5072, 9155, 1072, 21, 5140, 575, 10382, 1113, 5751, 10195, 5859, 1499, 504, 9154, 20235, 5842, 2185, 5758, 20239, 5836, 5734, 2]
 // Exports: default
 
-// Module 19824 (GuildSettingsModalCommunityIntro)
+// Module 20234 (GuildSettingsModalCommunityIntro)
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import ToastUtils from "ToastUtils" /* 5711 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9074 */;
-import EnableCommunityModalActionCreatorsDefault from "EnableCommunityModalActionCreators" /* 19829 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import ToastUtils from "ToastUtils" /* 5836 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9154 */;
+import EnableCommunityModalActionCreatorsDefault from "EnableCommunityModalActionCreators" /* 20239 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildStore from "GuildStore" /* 4885 */;
-import PermissionStore from "PermissionStore" /* 4946 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 9075 */;
+import GuildStore from "GuildStore" /* 5011 */;
+import PermissionStore from "PermissionStore" /* 5072 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 9155 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -47,7 +47,7 @@ function FeatureCard(arg0) {
   const obj2 = { style: tmp.featureIcon, children: icon() };
   items[0] = map1(React3, obj2);
   const obj3 = { style: tmp.featureDescription, children: items1 };
-  items1 = [map1(Text_Text.Heading, { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: header }), map1(Text_Text.Text, { variant: "text-sm/medium", color: "text-default", children: body })];
+  items1 = [map1(Text_Text.Heading, { variant: "body-md/semibold", color: "mobile-text-heading-primary", children: header }), map1(Text_Text.Text, { variant: "body-sm/medium", color: "text-default", children: body })];
   items[1] = authStore3(React3, obj3);
   return authStore3(React3, obj);
 }
@@ -128,11 +128,11 @@ export default function GuildSettingsModalCommunityIntro(contentContainerStyle) 
   items5 = [, , , , , ];
   const obj8 = { resizeMode: "contain", source: introHeaderSource, style: tmp.headerImage };
   items5[0] = closure_13(onClose(navigation[18]), obj8);
-  const obj9 = { style: tmp.header, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl.string(require("intl").t["M/gBcA"]) };
+  const obj9 = { style: tmp.header, variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: intl.string(require("intl").t["M/gBcA"]) };
   const Heading = require("Text/Text").Heading;
   intl = require("intl").intl;
   items5[1] = closure_13(Heading, obj9);
-  const obj10 = { style: tmp.body, variant: "text-md/medium", color: "text-default", children: format(v52EgsM, obj11) };
+  const obj10 = { style: tmp.body, variant: "body-md/medium", color: "text-default", children: format(v52EgsM, obj11) };
   const Text = require("Text/Text").Text;
   const intl2 = require("intl").intl;
   format = intl2.format;
@@ -157,7 +157,7 @@ export default function GuildSettingsModalCommunityIntro(contentContainerStyle) 
   const Button = require("components/Button/Button").Button;
   intl3 = require("intl").intl;
   items5[3] = closure_13(Button, obj13);
-  const obj14 = { style: tmp.details, variant: "text-sm/medium", color: "text-default", children: intl4.string(require("intl").t.HgTI2N) };
+  const obj14 = { style: tmp.details, variant: "body-sm/medium", color: "text-default", children: intl4.string(require("intl").t.HgTI2N) };
   const Text2 = require("Text/Text").Text;
   intl4 = require("intl").intl;
   items5[4] = closure_13(Text2, obj14);
@@ -183,7 +183,7 @@ export default function GuildSettingsModalCommunityIntro(contentContainerStyle) 
   items6 = [obj16, , ];
   obj17 = {
     featureHook(children, arg1) {
-      const obj = { variant: "text-sm/semibold", color: "mobile-text-heading-primary", children };
+      const obj = { variant: "body-sm/semibold", color: "mobile-text-heading-primary", children };
       return closure_1_13(require("Text/Text").Text, obj, arg1);
     }
   };
@@ -203,7 +203,7 @@ export default function GuildSettingsModalCommunityIntro(contentContainerStyle) 
       return null;
     },
     featureHook(children, arg1) {
-      const obj = { variant: "text-sm/semibold", color: "mobile-text-heading-primary", children };
+      const obj = { variant: "body-sm/semibold", color: "mobile-text-heading-primary", children };
       return closure_1_13(require("Text/Text").Text, obj, arg1);
     }
   };

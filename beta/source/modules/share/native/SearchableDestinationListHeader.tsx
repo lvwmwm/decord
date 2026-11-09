@@ -1,19 +1,19 @@
-// Module ID: 13394
-// Function ID: 13395
+// Module ID: 13626
+// Function ID: 13627
 // Name: SearchableDestinationListHeader
-// Dependencies: [19, 21, 5014, 575, 1625, 1498, 1375, 7005, 9812, 6998, 2]
+// Dependencies: [19, 21, 5140, 575, 1627, 1500, 1377, 7071, 9902, 7064, 2]
 // Exports: default
 
-// Module 13394 (SearchableDestinationListHeader)
+// Module 13626 (SearchableDestinationListHeader)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import PlatformUtils from "PlatformUtils" /* 1375 */;
-import Link from "Link" /* 1498 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1625 */;
-import NavigatorHeader from "NavigatorHeader" /* 6998 */;
-import HeaderShared from "HeaderShared" /* 9812 */;
+import PlatformUtils from "PlatformUtils" /* 1377 */;
+import Link from "Link" /* 1500 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
+import NavigatorHeader from "NavigatorHeader" /* 7064 */;
+import HeaderShared from "HeaderShared" /* 9902 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -57,7 +57,7 @@ export default function SearchableDestinationListHeader(arg0) {
     headerStyle: tmp.header,
     title,
     headerTitle(children) {
-      return jsx(HeaderShared.GenericHeaderTitle, { title: children.children, subtitle: require, subtitleColor: importDefault, variant: "redesign/heading-18/bold" });
+      return jsx(HeaderShared.GenericHeaderTitle, { title: children.children, subtitle: require, subtitleColor: importDefault, variant: "heading-md/semibold" });
     },
     headerTitleAlign: "center",
     headerLeft: headerCloseButton,
@@ -67,7 +67,7 @@ export default function SearchableDestinationListHeader(arg0) {
     headerStatusBarHeight
   };
   headerCloseButton = undefined;
-  const Header = tmp4(7005).Header;
+  const Header = tmp4(7071).Header;
   const tmp9 = jsx;
   if (null != onClose) {
     const tmp4Result = NavigatorHeader;

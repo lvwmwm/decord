@@ -1,13 +1,13 @@
-// Module ID: 7095
-// Function ID: 7096
+// Module ID: 7166
+// Function ID: 7167
 // Name: useInputAttachments
-// Dependencies: [32, 19, 17, 21, 7096, 5624, 7097, 2]
+// Dependencies: [32, 19, 17, 21, 7167, 5751, 7168, 2]
 // Exports: estimateAttachmentWidth, renderInputAttachment, useInputAttachments
 
-// Module 7095 (useInputAttachments)
+// Module 7166 (useInputAttachments)
 import Fragment from "Fragment" /* 21 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import IconSize from "IconSize" /* 7096 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import IconSize from "IconSize" /* 7167 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -68,7 +68,7 @@ export function renderInputAttachment(arg0, leadingText, text) {
   } else {
     tmp2 = null;
     if (null != leadingText) {
-      tmp2 = jsx(Text_Text.Text, { variant: "text-md/normal", style: text, children: leadingText });
+      tmp2 = jsx(Text_Text.Text, { variant: "body-md/normal", style: text, children: leadingText });
     }
   }
   return tmp2;
@@ -85,7 +85,7 @@ export function useInputAttachments(merged, leading) {
   let tmp20;
   let trailingIcon;
   let trailingPressableProps;
-  const f89921 = () => {
+  const f91422 = () => {
     let num = 0;
     if (null != leadingIcon) {
       num = IconSize.ICON_SIZE.xs + tmp;
@@ -111,7 +111,7 @@ export function useInputAttachments(merged, leading) {
     } else {
       tmp6 = null;
       if (null != leadingText) {
-        tmp6 = jsx(tmp(tmp2[5]).Text, { variant: "text-md/normal", style: tmp5, children: leadingText });
+        tmp6 = jsx(tmp(tmp2[5]).Text, { variant: "body-md/normal", style: tmp5, children: leadingText });
       }
     }
     leading = tmp6;
@@ -127,7 +127,7 @@ export function useInputAttachments(merged, leading) {
     } else {
       tmp11 = null;
       if (null != trailingText) {
-        tmp11 = jsx(tmp(tmp2[5]).Text, { variant: "text-md/normal", style: tmp10, children: trailingText });
+        tmp11 = jsx(tmp(tmp2[5]).Text, { variant: "body-md/normal", style: tmp10, children: trailingText });
       }
     }
     trailing = tmp11;
@@ -149,8 +149,8 @@ export function useInputAttachments(merged, leading) {
         let trailingIcon2 = inputStyles.trailingText;
       }
       let num = 2;
-      [tmp19, tmp20] = trailingIcon(react.useState(f89921), 2);
-      trailingIcon(react.useState(f89921), 2);
+      [tmp19, tmp20] = trailingIcon(react.useState(f91422), 2);
+      trailingIcon(react.useState(f91422), 2);
       const tmp21 = trailingIcon(react.useState(() => {
         let num = 0;
         if (null != trailingIcon) {

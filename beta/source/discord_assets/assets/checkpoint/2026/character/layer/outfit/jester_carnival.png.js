@@ -1,8 +1,8 @@
-// Module ID: 6269
-// Function ID: 6270
+// Module ID: 6401
+// Function ID: 6402
 // Dependencies: [2]
 
-// Module 6269
+// Module 6401
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/layer/outfit/jester_carnival.png.js");

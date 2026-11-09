@@ -1,24 +1,24 @@
-// Module ID: 15168
-// Function ID: 15169
+// Module ID: 15455
+// Function ID: 15456
 // Name: InAppReportsSettingsUpsellsElement
-// Dependencies: [32, 19, 17, 4863, 1072, 21, 5014, 575, 5593, 8356, 15162, 7561, 504, 8364, 7060, 1113, 5624, 7563, 5760, 2]
+// Dependencies: [32, 19, 17, 4989, 1072, 21, 5140, 575, 5721, 8426, 15449, 7633, 504, 8435, 7126, 1113, 5751, 7635, 5889, 2]
 // Exports: default
 
-// Module 15168 (InAppReportsSettingsUpsellsElement)
+// Module 15455 (InAppReportsSettingsUpsellsElement)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import useMountEffectDefault from "useMountEffect" /* 5593 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5760 */;
-import SettingsIcon from "SettingsIcon" /* 7561 */;
-import openUserSettings from "openUserSettings" /* 7563 */;
-import in_app_reports_ReportUtils from "in_app_reports/ReportUtils" /* 8356 */;
-import InAppReportsUpsellsTableRowDefault from "InAppReportsUpsellsTableRow" /* 15162 */;
+import useMountEffectDefault from "useMountEffect" /* 5721 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5889 */;
+import SettingsIcon from "SettingsIcon" /* 7633 */;
+import openUserSettings from "openUserSettings" /* 7635 */;
+import in_app_reports_ReportUtils from "in_app_reports/ReportUtils" /* 8426 */;
+import InAppReportsUpsellsTableRowDefault from "InAppReportsUpsellsTableRow" /* 15449 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
+import ChannelStore from "ChannelStore" /* 4989 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -116,7 +116,7 @@ export default function SettingsUpsellElement(settingsUpsells) {
     TableRowGroup = tmp2(tmp3[14]).TableRowGroup;
     intl = tmp2(tmp3[15]).intl;
     items1 = [closure_9(closure_5, obj3), ];
-    const obj5 = { variant: "text-sm/medium", style: tmp.goToSettingsText, children: intl2.format(settingsUpsells(reportId[15]).t["u7mo+k"], obj6) };
+    const obj5 = { variant: "body-sm/medium", style: tmp.goToSettingsText, children: intl2.format(settingsUpsells(reportId[15]).t["u7mo+k"], obj6) };
     const Text = tmp2(tmp3[16]).Text;
     intl2 = tmp2(tmp3[15]).intl;
     obj6 = {

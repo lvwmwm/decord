@@ -1,18 +1,19 @@
-// Module ID: 1372
-// Function ID: 1373
+// Module ID: 1374
+// Function ID: 1375
 // Name: BuildOverrideUtils
-// Dependencies: [1373, 1072, 1374, 1375, 1377, 1282, 1380, 1382, 2]
+// Dependencies: [1375, 1072, 1376, 1377, 1378, 1282, 1381, 1383, 1384, 2]
 // Exports: getAPIEndpoint, getBuildOverride, getBuildOverrideExperiments, getBuildOverrideMeta, isBuildOverrideLink, isManualBuildOverrideLink, manualOverrideLinkMeta, probablyHasBuildOverride, validateURL
 
-// Module 1372 (BuildOverrideUtils)
+// Module 1374 (BuildOverrideUtils)
 import Constants from "Constants" /* 1072 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
-import BuildOverrideConstants from "BuildOverrideConstants" /* 1373 */;
-import URLUtilsDefault from "URLUtils" /* 1377 */;
-import urlParseAll from "urlParse" /* 1380 */;
-import _modDef1382 from "module_1382" /* 1382 */;
-import react_native_mod from "react-native" /* 1374 */;
-import PlatformUtils from "PlatformUtils" /* 1375 */;
+import BuildOverrideConstants from "BuildOverrideConstants" /* 1375 */;
+import URLUtilsDefault from "URLUtils" /* 1378 */;
+import urlParseAll from "urlParse" /* 1381 */;
+import AdsManagerBuildOverrideUtils from "AdsManagerBuildOverrideUtils" /* 1383 */;
+import _modDef1384 from "module_1384" /* 1384 */;
+import react_native_mod from "react-native" /* 1376 */;
+import PlatformUtils from "PlatformUtils" /* 1377 */;
 import size from "module_2" /* 2 */;
 
 let Version;
@@ -54,6 +55,7 @@ function manualOverrideLinkMeta(str) {
 }
 const regExp = new RegExp("^https://(?:ptb\\.|canary\\.)?(discordapp|discord)\\.com/__development/link/?\\?[\\S]+$", "i");
 const regExp1 = new RegExp("^dev://branch/([\\w-./]+)$", "i");
+let closure_8 = "s";
 const set = new Set(["canary.discord.com", "ptb.discord.com", "discord.com", "canary.discordapp.com", "ptb.discordapp.com", "discordapp.com"]);
 const set1 = new Set(["/__development/link", "/__development/link/"]);
 const result = size.fileFinishedImporting("modules/build_overrides/BuildOverrideUtils.tsx");
@@ -82,47 +84,54 @@ export function getBuildOverride() {
   return resolved;
 }
 export function getBuildOverrideMeta(url) {
-  let obj3;
+  let obj4;
   let obj5;
-  const isMatch = null != url && regExp1.test(url);
-  if (isMatch) {
-    const match = url.match(regExp1);
-    let tmp13 = null;
-    if (null != match) {
-      tmp13 = null;
-      if (2 === match.length) {
-        const obj2 = { targetBuildOverride: obj5, validForUserIds: [], expiresAt: "Mon, 1 Jan 2038 00:00:00 GMT" };
-        obj5 = {};
-        const _HermesInternal = HermesInternal;
-        const obj6 = { type: "branch", id: match[1] };
-        obj5["discord_" + PlatformUtils.getNativePlatform()] = obj6;
-        tmp13 = obj2;
-        PlatformUtils;
-      }
-    }
-    return resolve(tmp13);
+  const obj = AdsManagerBuildOverrideUtils;
+  if (obj.isAdsManagerBuildOverrideLink(url)) {
+    const resolve2 = Promise.resolve;
+    const tmpResult = AdsManagerBuildOverrideUtils;
+    return resolve2(tmpResult.adsManagerOverrideLinkMeta(url));
   } else {
-    let resolved;
-    const obj = URLUtilsDefault;
-    const safeParseWithQueryResult = obj.safeParseWithQuery(url);
-    if (null == safeParseWithQueryResult) {
-      resolved = Promise.resolve(null);
-    } else {
-      safeParseWithQueryResult.search = null;
-      safeParseWithQueryResult.query.meta = "true";
-      if (Version) {
-        safeParseWithQueryResult.query.version = tmp16;
+    const isMatch = null != url && regExp1.test(url);
+    if (isMatch) {
+      const match = url.match(regExp1);
+      let tmp14 = null;
+      if (null != match) {
+        tmp14 = null;
+        if (2 === match.length) {
+          const obj3 = { targetBuildOverride: obj5, validForUserIds: [], expiresAt: "Mon, 1 Jan 2038 00:00:00 GMT" };
+          obj5 = {};
+          const _HermesInternal = HermesInternal;
+          const obj6 = { type: "branch", id: match[1] };
+          obj5["discord_" + PlatformUtils.getNativePlatform()] = obj6;
+          tmp14 = obj3;
+          PlatformUtils;
+        }
       }
-      const _window = window;
-      safeParseWithQueryResult.host = window.location.host;
-      const HTTP = HTTPUtils.HTTP;
-      const get = HTTP.get;
-      const obj7 = { url: obj3.format(safeParseWithQueryResult), oldFormErrors: true, rejectWithError: false };
-      obj3 = urlParseAll;
-      const value = get(obj7);
-      resolved = value.then((body) => body.body || null, () => null);
+      return resolve(tmp14);
+    } else {
+      let resolved;
+      const obj2 = URLUtilsDefault;
+      const safeParseWithQueryResult = obj2.safeParseWithQuery(url);
+      if (null == safeParseWithQueryResult) {
+        resolved = Promise.resolve(null);
+      } else {
+        safeParseWithQueryResult.search = null;
+        safeParseWithQueryResult.query.meta = "true";
+        if (Version) {
+          safeParseWithQueryResult.query.version = tmp16;
+        }
+        const _window = window;
+        safeParseWithQueryResult.host = window.location.host;
+        const HTTP = tmp(1282).HTTP;
+        const get = HTTP.get;
+        const obj7 = { url: obj4.format(safeParseWithQueryResult), oldFormErrors: true, rejectWithError: false };
+        obj4 = urlParseAll;
+        const value = get(obj7);
+        resolved = value.then((body) => body.body || null, () => null);
+      }
+      return resolved;
     }
-    return resolved;
   }
 }
 export function probablyHasBuildOverride() {
@@ -132,7 +141,7 @@ export function getBuildOverrideExperiments() {
   try {
     let obj2;
     const _window = window;
-    const obj = _modDef1382;
+    const obj = _modDef1384;
     const tmp5 = obj.parse(window.document.cookie)[closure_4];
     if (null == tmp5) {
       obj2 = {};
@@ -147,41 +156,57 @@ export function getBuildOverrideExperiments() {
   }
 }
 export function isBuildOverrideLink(target) {
-  const isMatch = null != target && regExp.test(target);
-  return isMatch;
+  let tmp = null != target;
+  if (tmp) {
+    tmp = regExp.test(target) || false;
+    regExp.test(target) || false;
+  }
+  return tmp;
 }
 export { isManualBuildOverrideLink };
 export { manualOverrideLinkMeta };
 export function validateURL(url) {
-  let obj3;
-  const isMatch = null != url && regExp1.test(url);
-  if (isMatch) {
-    return { payload: null, url };
+  let obj4;
+  let searchParams;
+  const obj = AdsManagerBuildOverrideUtils;
+  if (obj.isAdsManagerBuildOverrideLink(url)) {
+    const _URL = URL;
+    const self = this;
+    const self2 = this;
+    const obj3 = { payload: searchParams.get(closure_8), url };
+    const uRL = new URL(url);
+    searchParams = uRL.searchParams;
+    return obj3;
   } else {
-    const obj = URLUtilsDefault;
-    url = obj.safeParseWithQuery(url);
-    if (null == url) {
-      return null;
+    const isMatch = null != url && regExp1.test(url);
+    if (isMatch) {
+      return { payload: null, url };
     } else {
-      if (set.has(url.hostname)) {
-        if ("s" in url.query) {
-          if (set1.has(url.pathname)) {
-            for (const key10021 in url.query) {
-              if ("s" === key10021) {
-                continue;
-              } else {
-                delete url.query[tmp9];
+      const obj2 = URLUtilsDefault;
+      url = obj2.safeParseWithQuery(url);
+      if (null == url) {
+        return null;
+      } else {
+        if (set.has(url.hostname)) {
+          if (closure_8 in url.query) {
+            if (set1.has(url.pathname)) {
+              for (const key10026 in url.query) {
+                if (key10026 === closure_8) {
+                  continue;
+                } else {
+                  delete url.query[tmp17];
+                  continue;
+                }
                 continue;
               }
-              continue;
+              const obj6 = { payload: url.query[closure_8], url: obj4.format(url) };
+              obj4 = urlParseAll;
+              return obj6;
             }
-            const obj4 = { payload: url.query.s, url: obj3.format(url) };
-            obj3 = urlParseAll;
-            return obj4;
           }
         }
+        return null;
       }
-      return null;
     }
   }
 }

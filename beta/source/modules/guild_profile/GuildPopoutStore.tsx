@@ -1,12 +1,12 @@
-// Module ID: 15794
-// Function ID: 15795
+// Module ID: 16111
+// Function ID: 16112
 // Name: GuildPopoutStore
-// Dependencies: [502, 7521, 504, 572, 2]
+// Dependencies: [502, 7593, 504, 572, 2]
 
-// Module 15794 (GuildPopoutStore)
+// Module 16111 (GuildPopoutStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import GuildDiscoveryUtils from "GuildDiscoveryUtils" /* 7521 */;
+import GuildDiscoveryUtils from "GuildDiscoveryUtils" /* 7593 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import size from "module_2" /* 2 */;
 

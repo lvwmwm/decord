@@ -1,17 +1,17 @@
-// Module ID: 11079
-// Function ID: 11080
+// Module ID: 11211
+// Function ID: 11212
 // Name: NotificationProgress
-// Dependencies: [32, 19, 17, 21, 5014, 575, 5095, 2]
+// Dependencies: [32, 19, 17, 21, 5140, 575, 1652, 2]
 // Exports: default
 
-// Module 11079 (NotificationProgress)
+// Module 11211 (NotificationProgress)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
+import _mod1652 from "module_1652" /* 1652 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -20,38 +20,47 @@ const jsx = Fragment.jsx;
 let obj = { progress: obj2, progressContainerBottom: { width: "100%", position: "absolute", bottom: -1 } };
 obj2 = { borderRadius: nativeDefault.radii.xs, backgroundColor: nativeDefault.colors.BACKGROUND_BRAND, height: 4 };
 let closure_7 = createStyles.createStyles(obj);
-const __initData = { code: "function NotificationProgressTsx1(){const{percent,width}=this.__closure;const percentRemaining=(typeof percent==='number'?percent:percent.get())/100;return{transform:[{translateX:-width+width*percentRemaining}]};}" };
+let closure_8 = { code: "(function NotificationProgressTsx1(){let[percent,width]=this.__closure;const percentRemaining=(typeof percent==='number'?percent:percent.get())/100;return{transform:[{translateX:-width+width*percentRemaining}]};})" };
 const result = size.fileFinishedImporting("modules/in_app_notifications/native/NotificationProgress.tsx");
 
 export default function NotificationProgress(percent) {
-  let closure_2;
-  let first;
-  let items;
+  let c0;
+  let items2;
+  let tmp3;
+  let tmp6;
+  let tmp7;
+  let tmp8;
   percent = percent.percent;
   const tmp = closure_7();
-  first = undefined;
-  closure_2 = undefined;
-  [first, closure_2] = react.useState(0);
-  const callback = react.useCallback((nativeEvent) => closure_2(nativeEvent.nativeEvent.layout.width), []);
-  let obj = ReanimatedRexport;
-  const fn = function s() {
-    let items;
-    let value = percent;
-    const obj = percent;
-    if (typeof percent !== "number") {
-      value = obj.get();
+  [tmp3, c0] = react.useState(0);
+  _slicedToArray(react.useState(0), 2);
+  const callback = react.useCallback((nativeEvent) => _undefined(nativeEvent.nativeEvent.layout.width), []);
+  let obj = _mod1652;
+  let items = [closure_8, percent, tmp3];
+  c0 = undefined;
+  let c1;
+  [tmp6, tmp7, tmp8] = items;
+  class NotificationProgressTsx1 {
+    constructor() {
+      let items;
+      let value = c0;
+      const obj = c0;
+      if (typeof c0 !== "number") {
+        value = obj.get();
+      }
+      const obj2 = { transform: items };
+      items = [];
+      const obj3 = { translateX: c1 * (value / 100) - c1 };
+      items[0] = obj3;
+      return obj2;
     }
-    const obj2 = { transform: items };
-    items = [];
-    const obj3 = { translateX: first * (value / 100) - first };
-    items[0] = obj3;
-    return obj2;
-  };
-  fn.__closure = { percent, width: first };
-  fn.__workletHash = 14879761869068;
-  fn.__initData = __initData;
-  const animatedStyle = obj.useAnimatedStyle(fn);
-  let obj3 = { style: items };
-  items = [tmp.progress, animatedStyle];
+  }
+  const items1 = [tmp7, tmp8];
+  NotificationProgressTsx1.__closure = items1;
+  NotificationProgressTsx1.__workletHash = 14085017050901;
+  NotificationProgressTsx1.__initData = tmp6;
+  const animatedStyle = obj.useAnimatedStyle(NotificationProgressTsx1);
+  let obj3 = { style: items2 };
+  items2 = [tmp.progress, animatedStyle];
   return <View onLayout={callback} style={tmp.progressContainerBottom}>{null}</View>;
 };

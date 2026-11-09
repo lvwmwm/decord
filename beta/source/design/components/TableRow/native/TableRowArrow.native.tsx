@@ -1,16 +1,16 @@
-// Module ID: 6984
-// Function ID: 6985
+// Module ID: 7047
+// Function ID: 7048
 // Name: TableRowArrow
-// Dependencies: [19, 21, 5014, 575, 5636, 6985, 2]
+// Dependencies: [19, 21, 5140, 575, 5760, 7048, 2]
 // Exports: TableRowArrow
 
-// Module 6984 (TableRowArrow)
+// Module 7047 (TableRowArrow)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import Icon from "Icon" /* 5636 */;
-import AssetRegistryDefault from "AssetRegistry" /* 6985 */;
+import Icon from "Icon" /* 5760 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7048 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 const IconDefault = Icon;

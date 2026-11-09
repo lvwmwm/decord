@@ -1,19 +1,19 @@
-// Module ID: 17712
-// Function ID: 17713
+// Module ID: 18040
+// Function ID: 18041
 // Name: DevToolsGuildTagBadgesScreen
-// Dependencies: [32, 19, 17, 8393, 21, 5014, 575, 6027, 5624, 5634, 15738, 2]
+// Dependencies: [32, 19, 17, 8464, 21, 5140, 575, 6159, 5751, 5758, 16052, 2]
 // Exports: default
 
-// Module 17712 (DevToolsGuildTagBadgesScreen)
+// Module 18040 (DevToolsGuildTagBadgesScreen)
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import badges_GuildBadge from "badges/GuildBadge" /* 15738 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import badges_GuildBadge from "badges/GuildBadge" /* 16052 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildTagConstants from "GuildTagConstants" /* 8393 */;
+import GuildTagConstants from "GuildTagConstants" /* 8464 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -48,7 +48,7 @@ let closure_9 = found.map((item) => {
   return { name, value };
 });
 let items = [
-  { label: "Untinted", primary: "diversity", secondary: "d" },
+  { label: "Untinted", primary: "disabled", secondary: "it" },
   ...GUILD_TAG_BADGE_PALETTE_PRESETS.map((primary, index) => {
     const obj = { label: "P" + index + 1, primary: primary.primary, secondary: primary.secondary };
     return obj;
@@ -85,7 +85,7 @@ export default function DevToolsGuildTagBadgesScreen() {
   let obj = { style: tmp.wrap, contentContainerStyle: tmp.contentContainer, children: closure_7(Stack, obj2) };
   obj2 = { spacing: 16, children: items1 };
   Stack = require("Stack/Stack").Stack;
-  let obj3 = { variant: "text-md/normal", children: items };
+  let obj3 = { variant: "body-md/normal", children: items };
   items = ["All ", closure_9.length, " badge kinds. Tint: "];
   items[3] = items[first].label;
   items[4] = " \u00B7 Size: ";
@@ -137,7 +137,7 @@ export default function DevToolsGuildTagBadgesScreen() {
       size = { badge: value, primaryTintColor: closure_4.primary, secondaryTintColor: closure_4.secondary, width: height, height };
       const tmp = metroRequire[value];
       items = [metroImportAll(hasOwnProperty, obj2), ];
-      const obj3 = { variant: "text-xs/normal", color: "text-muted", style: { textAlign: "center" }, children: items1 };
+      const obj3 = { variant: "body-xs/normal", color: "text-muted", style: { textAlign: "center" }, children: items1 };
       items1 = [name, ];
       let str = "";
       const Text = Text_Text.Text;

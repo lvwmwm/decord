@@ -1,36 +1,63 @@
-// Module ID: 7972
-// Function ID: 7973
+// Module ID: 8041
+// Function ID: 8042
 // Name: ModalScreen
-// Dependencies: [19, 17, 21, 5014, 575, 5607, 2]
+// Dependencies: [19, 17, 21, 575, 5140, 5735, 7272, 7233, 8042, 2]
 // Exports: ModalScreen
 
-// Module 7972 (ModalScreen)
+// Module 8041 (ModalScreen)
 import react_native from "react-native" /* 17 */;
-import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5607 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5735 */;
+import react2 from "react" /* 7233 */;
+import NavigatorGradientContext from "NavigatorGradientContext" /* 7272 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5014 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
+let hasOwnProperty;
+let metroRequire;
+let obj3;
+let tmp3;
+const ExpressiveGradient = tmp3(8042);
 const View = react_native.View;
-const jsx = Fragment.jsx;
-const obj = { container: { flex: 1, flexDirection: "column", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW } };
-({ flex: 1, flexDirection: "column", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW });
-let closure_4 = createStyles.createStyles(obj);
+({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
+let obj = { navigator: nativeDefault.colors.BACKGROUND_BASE_LOW, modal: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
+let createStyles = createStyles_mod;
+let obj2 = { container: { flex: 1, flexDirection: "column" }, navigator: obj3, modal: { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH } };
+obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
+createStyles = createStyles.createStyles;
+({ backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH });
+let closure_8 = createStyles(obj2);
 const result = size.fileFinishedImporting("design/components/Modal/native/ModalScreen.native.tsx");
 
 export function ModalScreen(backgroundColor) {
+  let items1;
   backgroundColor = backgroundColor.backgroundColor;
   const children = backgroundColor.children;
-  const tmp = closure_4();
+  const tmp = closure_8();
   const insets = useSafeAreaInsetsKeyboardAwareDefault().insets;
-  const style = [tmp.container, ];
-  const tmp2 = jsx;
-  const tmp3 = View;
+  const context = react.useContext(NavigatorGradientContext.NavigatorGradientContext);
+  const context1 = react.useContext(react2.NavigatorBackgroundContext);
+  const items = [tmp.container, , ];
+  const tmp6 = metroRequire;
+  const tmp7 = View;
   if (backgroundColor == null) {
-    backgroundColor = tmp.container.backgroundColor;
+    backgroundColor = tmp[context1].backgroundColor;
   }
-  style[1] = { backgroundColor, paddingLeft: insets.left, paddingRight: insets.right, paddingBottom: insets.bottom };
-  return tmp2(tmp3, { style, children });
+  items[1] = { backgroundColor, paddingLeft: insets.left, paddingRight: insets.right, paddingBottom: insets.bottom };
+  let tmp8 = null != context;
+  if (tmp8) {
+    obj = { paddingTop: context.headerHeight };
+    tmp8 = obj;
+  }
+  const obj2 = { style: items, children: items1 };
+  items[2] = tmp8;
+  let tmp9 = null != context;
+  if (tmp9) {
+    const obj3 = { color: context.color, backgroundColor: obj[context1] };
+    tmp9 = hasOwnProperty(ExpressiveGradient.ExpressiveGradient, obj3);
+  }
+  items1 = [tmp9, children];
+  return tmp6(tmp7, obj2);
 }

@@ -1,22 +1,22 @@
-// Module ID: 19972
-// Function ID: 19973
+// Module ID: 20382
+// Function ID: 20383
 // Name: GuildRoleSubscriptionBenefitTableRow
-// Dependencies: [19, 17, 17191, 21, 5014, 575, 17217, 5652, 5624, 1113, 17228, 6975, 17225, 2]
+// Dependencies: [19, 17, 17517, 21, 5140, 575, 17543, 5776, 5751, 1113, 17554, 7038, 17551, 2]
 // Exports: default
 
-// Module 19972 (GuildRoleSubscriptionBenefitTableRow)
+// Module 20382 (GuildRoleSubscriptionBenefitTableRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import TableRow2 from "TableRow" /* 6975 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 17191 */;
-import GuildRoleSubscriptionTierTemplatesUtils from "GuildRoleSubscriptionTierTemplatesUtils" /* 17217 */;
-import EmojiIconDefault from "EmojiIcon" /* 17225 */;
-import GuildRoleSubscriptionBenefitUtils from "GuildRoleSubscriptionBenefitUtils" /* 17228 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import TableRow2 from "TableRow" /* 7038 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 17517 */;
+import GuildRoleSubscriptionTierTemplatesUtils from "GuildRoleSubscriptionTierTemplatesUtils" /* 17543 */;
+import EmojiIconDefault from "EmojiIcon" /* 17551 */;
+import GuildRoleSubscriptionBenefitUtils from "GuildRoleSubscriptionBenefitUtils" /* 17554 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -31,8 +31,8 @@ function ChannelBenefitLabel(benefit) {
   const obj = GuildRoleSubscriptionTierTemplatesUtils;
   const channelWithTemplateFallback = obj.useChannelWithTemplateFallback(benefit.ref_id);
   if (null == channelWithTemplateFallback) {
-    const obj2 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: "[" + intl.string(intl2.t.bz1PZX) + "]" };
-    const Text = tmp2(5624).Text;
+    const obj2 = { variant: "body-md/semibold", color: "mobile-text-heading-primary", children: "[" + intl.string(intl2.t.bz1PZX) + "]" };
+    const Text = tmp2(5751).Text;
     intl = tmp2(1113).intl;
     const _HermesInternal = HermesInternal;
     tmp8 = hasOwnProperty(Text, obj2);
@@ -42,7 +42,7 @@ function ChannelBenefitLabel(benefit) {
     const obj4 = { style: tmp.channelIcon, size: "xs", color: "interactive-text-default" };
     const tmp2Result = GuildRoleSubscriptionBenefitUtils;
     items[0] = tmp2Result.renderChannelIcon(channelWithTemplateFallback, obj4);
-    const obj5 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: tmp5 };
+    const obj5 = { variant: "body-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: tmp5 };
     items[1] = hasOwnProperty(Text_Text.Text, obj5);
     tmp8 = metroRequire(View, obj3);
   }

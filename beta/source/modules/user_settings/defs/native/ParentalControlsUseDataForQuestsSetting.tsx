@@ -1,22 +1,23 @@
-// Module ID: 17942
-// Function ID: 17943
+// Module ID: 18279
+// Function ID: 18280
 // Name: ParentalControlsUseDataForQuestsSetting
-// Dependencies: [7715, 8432, 16717, 1113, 2538, 11540, 2]
+// Dependencies: [7791, 8503, 17039, 17043, 1113, 2664, 11685, 2]
 
-// Module 17942 (ParentalControlsUseDataForQuestsSetting)
+// Module 18279 (ParentalControlsUseDataForQuestsSetting)
 import intl2 from "intl" /* 1113 */;
-import _modDef2538 from "module_2538" /* 2538 */;
-import SettingsConstants from "SettingsConstants" /* 8432 */;
-import ParentalControlledUserSettings from "ParentalControlledUserSettings" /* 16717 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7715 */;
-import SettingBuilders from "SettingBuilders" /* 11540 */;
+import _modDef2664 from "module_2664" /* 2664 */;
+import SettingsConstants from "SettingsConstants" /* 8503 */;
+import ParentalControlledUserSettings from "ParentalControlledUserSettings" /* 17039 */;
+import FamilyCenterSaveErrorUtils from "FamilyCenterSaveErrorUtils" /* 17043 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7791 */;
+import SettingBuilders from "SettingBuilders" /* 11685 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const obj = {
   useTitle: function useDataForQuestsSettingTitle() {
     const intl = intl2.intl;
-    return intl.string(_modDef2538.ZhaNu8);
+    return intl.string(_modDef2664.ZhaNu8);
   },
   parent: MobileUserSettings.FAMILY_CENTER_PARENTAL_CONTROLS_SETTINGS,
   useValue: function useDataToSupportQuestsSettingValue() {
@@ -27,13 +28,15 @@ const obj = {
   },
   onValueChange: function onDataToSupportQuestsSettingValueChange(arg0) {
     const selectedTeenId = FamilyCenterStore.getSelectedTeenId();
+    const showToastIfSaveFails = FamilyCenterSaveErrorUtils.showToastIfSaveFails;
+    FamilyCenterSaveErrorUtils;
     const ParentalControlledDropsOptedOut = ParentalControlledUserSettings.ParentalControlledDropsOptedOut;
     const updateControlledSetting = ParentalControlledDropsOptedOut.updateControlledSetting;
-    const result = updateControlledSetting(selectedTeenId, !arg0);
+    showToastIfSaveFails(updateControlledSetting(selectedTeenId, !arg0));
   },
   unsearchable: true
 };
 const toggle = SettingBuilders.createToggle(obj);
-let result = size.fileFinishedImporting("modules/user_settings/defs/native/ParentalControlsUseDataForQuestsSetting.tsx");
+const result = size.fileFinishedImporting("modules/user_settings/defs/native/ParentalControlsUseDataForQuestsSetting.tsx");
 
 export default toggle;

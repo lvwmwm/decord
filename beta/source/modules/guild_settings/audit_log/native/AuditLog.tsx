@@ -1,34 +1,34 @@
-// Module ID: 19719
-// Function ID: 19720
+// Module ID: 20129
+// Function ID: 20130
 // Name: AuditLog
-// Dependencies: [19, 17, 1192, 1397, 4956, 1383, 1072, 21, 5014, 575, 1412, 1409, 6574, 5021, 7330, 5624, 1375, 5080, 19707, 5068, 1187, 1113, 4877, 5652, 6046, 2042, 1379, 1090, 10522, 7300, 6977, 19711, 6980, 5258, 8750, 16451, 504, 2]
+// Dependencies: [19, 17, 1192, 1404, 5082, 1385, 1072, 21, 5140, 575, 1414, 1411, 6629, 5147, 7391, 5751, 1377, 5199, 20117, 5194, 1187, 1113, 5003, 5776, 6178, 2166, 1380, 1090, 10641, 7363, 7040, 20121, 7043, 5374, 8821, 16772, 504, 2]
 
-// Module 19719 (AuditLog)
+// Module 20129 (AuditLog)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import GlobalUtils from "GlobalUtils" /* 1379 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1409 */;
-import GuildRecordUtils from "GuildRecordUtils" /* 4877 */;
-import UserUtilsDefault from "UserUtils" /* 5068 */;
-import native2 from "native" /* 5080 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import PlatformsDefault from "Platforms" /* 6574 */;
-import EmojiDefault from "Emoji" /* 7300 */;
-import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7330 */;
-import AppliedForumTag from "AppliedForumTag" /* 10522 */;
-import AuditLogUtilsAll from "AuditLogUtils" /* 19707 */;
+import GlobalUtils from "GlobalUtils" /* 1380 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
+import GuildRecordUtils from "GuildRecordUtils" /* 5003 */;
+import UserUtilsDefault from "UserUtils" /* 5194 */;
+import native2 from "native" /* 5199 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import PlatformsDefault from "Platforms" /* 6629 */;
+import EmojiDefault from "Emoji" /* 7363 */;
+import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7391 */;
+import AppliedForumTag from "AppliedForumTag" /* 10641 */;
+import AuditLogUtilsAll from "AuditLogUtils" /* 20117 */;
 import react from "react" /* 19 */;
 import ThemeStore from "ThemeStore" /* 1192 */;
-import UserRecord from "UserRecord" /* 1397 */;
-import RelationshipStore from "RelationshipStore" /* 4956 */;
-import UserStore from "UserStore" /* 1383 */;
+import UserRecord from "UserRecord" /* 1404 */;
+import RelationshipStore from "RelationshipStore" /* 5082 */;
+import UserStore from "UserStore" /* 1385 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
-import PlatformUtils from "PlatformUtils" /* 1375 */;
+import createStyles from "createStyles" /* 5140 */;
+import PlatformUtils from "PlatformUtils" /* 1377 */;
 import get_initialized from "get initialized" /* 504 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -54,7 +54,7 @@ let size;
 let size1;
 let tmp;
 let unpackModuleId;
-const showUserProfileActionSheetDefault = tmp(8750);
+const showUserProfileActionSheetDefault = tmp(8821);
 function ApplicationHook(applicationId) {
   applicationId = applicationId.applicationId;
   const obj = useGetOrFetchApplications;
@@ -68,7 +68,7 @@ function ApplicationHook(applicationId) {
   if (children == null) {
     children = applicationId;
   }
-  return tmp2(Text, { variant: "text-sm/semibold", children });
+  return tmp2(Text, { variant: "body-sm/semibold", children });
 }
 function InlineSegment(children) {
   children = children.children;
@@ -130,7 +130,7 @@ class AuditLog extends PureComponent {
     let tmp5Result = null;
     if (null != changeTitle) {
       const tmp5 = closure_14;
-      let obj2 = { style: tmp.title, accessibilityRole: "header", variant: "text-md/medium", color: "mobile-text-heading-primary", children: null };
+      let obj2 = { style: tmp.title, accessibilityRole: "header", variant: "body-md/medium", color: "mobile-text-heading-primary", children: null };
       let Text = require("Text/Text").Text;
       let intl = require("intl").intl;
       let obj3 = {
@@ -149,7 +149,7 @@ class AuditLog extends PureComponent {
                 const obj3 = { style: closure_0.discriminator, children: `#${user.discriminator}` };
                 tmp22 = authStore3(native.LegacyText, obj3);
               }
-              const obj5 = { variant: "text-md/medium", color: "text-default", children: items };
+              const obj5 = { variant: "body-md/medium", color: "text-default", children: items };
               items[1] = tmp22;
               return tmp16(Text, obj5, "user" + user.id);
             } else if (null != options.integration_type) {
@@ -163,7 +163,7 @@ class AuditLog extends PureComponent {
                 const intl2 = intl3.intl;
                 name = intl2.string(intl3.t["n+olu7"]);
               }
-              const obj6 = { variant: "text-md/medium", color: "text-default", children: name };
+              const obj6 = { variant: "body-md/medium", color: "text-default", children: name };
               return authStore3(Text_Text.Text, obj6, "integration" + options.integration_type);
             } else {
               const intl = intl3.intl;
@@ -187,7 +187,7 @@ class AuditLog extends PureComponent {
                   const obj2 = { style: closure_0.discriminator, children: `#${target.discriminator}` };
                   tmp12 = authStore3(tmp9(1187).LegacyText, obj2);
                 }
-                const obj4 = { variant: "text-md/medium", color: "text-default", children: items };
+                const obj4 = { variant: "body-md/medium", color: "text-default", children: items };
                 items[1] = tmp12;
                 tmp8Result = tmp8(Text, obj4, `target${tmp3.id}`);
               }
@@ -198,12 +198,12 @@ class AuditLog extends PureComponent {
                 const obj6 = GuildRecordUtils;
                 const tmp15 = require;
                 if (obj6.isGuildRecord(target)) {
-                  const obj5 = { variant: "text-md/medium", color: "text-default", children: target.name };
-                  tmp8Result = authStore3(tmp15(5624).Text, obj5, `target${tmp5.id}`);
+                  const obj5 = { variant: "body-md/medium", color: "text-default", children: target.name };
+                  tmp8Result = authStore3(tmp15(5751).Text, obj5, `target${tmp5.id}`);
                 }
               }
             }
-            const obj = { variant: "text-md/medium", color: "text-default", children };
+            const obj = { variant: "body-md/medium", color: "text-default", children };
             tmp8Result = authStore3(Text_Text.Text, obj, arg1);
           },
         count: str,
@@ -226,11 +226,11 @@ class AuditLog extends PureComponent {
                 const obj3 = { style: closure_0.discriminator, children: `#${tmp.discriminator}` };
                 tmp15 = authStore3(native.LegacyText, obj3);
               }
-              const obj4 = { variant: "text-md/medium", color: "text-default", children: items };
+              const obj4 = { variant: "body-md/medium", color: "text-default", children: items };
               items[1] = tmp15;
               tmp10Result = tmp10(Text2, obj4, `member${arg1}${tmp.id}`);
             } else {
-              const obj = { variant: "text-md/medium", color: "text-default", children: intl.string(intl3.t["30mdIx"]) };
+              const obj = { variant: "body-md/medium", color: "text-default", children: intl.string(intl3.t["30mdIx"]) };
               const Text = Text_Text.Text;
               intl = intl3.intl;
               tmp10Result = authStore3(Text, obj, arg1);
@@ -267,7 +267,7 @@ class AuditLog extends PureComponent {
         }
         obj3.channel = channel;
         obj3.channelHook = function channelHook(children, arg1) {
-          const obj = { variant: "text-md/medium", color: "text-default", children };
+          const obj = { variant: "body-md/medium", color: "text-default", children };
           return closure_1_14(closure_0(target[15]).Text, obj, arg1);
         };
         obj3.subtarget = options.subtarget;
@@ -283,7 +283,7 @@ class AuditLog extends PureComponent {
     let mapped = null;
     if (Array.isArray(newValue)) {
       mapped = newValue.map((children) => {
-        const obj = { variant: "text-sm/medium", color: "text-muted", children: children.name };
+        const obj = { variant: "body-sm/medium", color: "text-muted", children: children.name };
         return closure_1_14(require("Text/Text").Text, obj, children.id);
       });
     }
@@ -296,7 +296,7 @@ class AuditLog extends PureComponent {
     if (Array.isArray(newValue)) {
       mapped = newValue.map((item) => {
         let obj2;
-        const obj = { variant: "text-sm/medium", color: "text-muted", children: obj2.getStringForPermission(item, self.props.log) };
+        const obj = { variant: "body-sm/medium", color: "text-muted", children: obj2.getStringForPermission(item, self.props.log) };
         const Text = Text_Text.Text;
         obj2 = AuditLogUtilsAll;
         return authStore3(Text, obj, item);
@@ -408,7 +408,7 @@ class AuditLog extends PureComponent {
                                           str = ", ";
                                         }
                                         const obj = { children: items };
-                                        const obj2 = { variant: "text-sm/bold", children: "" + str + str2.toUpperCase() + " " };
+                                        const obj2 = { variant: "body-sm/semibold", children: "" + str + str2.toUpperCase() + " " };
                                         const tmp3Result = application_id(log[27]);
                                         str2 = tmp3Result.int2hex(item);
                                         items = [closure_2_14(Text, obj2), ];
@@ -515,7 +515,7 @@ class AuditLog extends PureComponent {
                           RED_400 = changeStrings(tmp[9]).unsafe_rawColors.RED_400;
                         }
                         application_id = application_id + 1;
-                        const obj13 = { variant: "text-sm/bold", style: items, children: items1 };
+                        const obj13 = { variant: "body-sm/semibold", style: items, children: items1 };
                         items = [children.changeNumberText, ];
                         const obj12 = { style: children.changeRow, children: items2 };
                         const obj14 = { color: RED_400 };
@@ -541,7 +541,7 @@ class AuditLog extends PureComponent {
                               if (0 !== children.length) {
                                 const push = items3.push;
                                 const _HermesInternal = HermesInternal;
-                                const obj = { variant: "text-sm/normal", style: changeItemTextLine, children };
+                                const obj = { variant: "body-sm/normal", style: changeItemTextLine, children };
                                 push(closure_2_14(changeItemTextLine(log[15]).Text, obj, "text-" + items3.length));
                                 children = [];
                               }
@@ -553,7 +553,7 @@ class AuditLog extends PureComponent {
                         if (0 !== children.length) {
                           let push = items3.push;
                           let _HermesInternal = HermesInternal;
-                          const obj18 = { variant: "text-sm/normal", style: changeItemTextLine, children };
+                          const obj18 = { variant: "body-sm/normal", style: changeItemTextLine, children };
                           const arr = push(tmp30(tmp39(tmp[15]).Text, obj18, "text-" + items3.length));
                           children = [];
                         }
@@ -670,7 +670,7 @@ class AuditLog extends PureComponent {
     const obj4 = { accessible: false, style: items1, variant: str2, border: str3, onPress: onHeaderClick, children: null };
     items1 = [tmp.container, containerStyle];
     str2 = "secondary";
-    const Card = tmp10(6977).Card;
+    const Card = tmp10(7040).Card;
     if (expanded) {
       str2 = "primary";
     }
@@ -681,7 +681,7 @@ class AuditLog extends PureComponent {
     const obj5 = { style: tmp.rowContainer, children: null };
     const items2 = [, , , ];
     const obj6 = { action: log.action };
-    items2[0] = closure_14(user(19711), obj6);
+    items2[0] = closure_14(user(20121), obj6);
     const obj7 = {
       accessibilityRole: "button",
       accessibilityLabel: intl.string(tmp10(1113).t.iXAna6),
@@ -696,7 +696,7 @@ class AuditLog extends PureComponent {
       },
       children: null
     };
-    const PressableOpacity = tmp10(6980).PressableOpacity;
+    const PressableOpacity = tmp10(7043).PressableOpacity;
     intl = tmp10(1113).intl;
     username = undefined;
     const tmp16 = View;
@@ -710,13 +710,13 @@ class AuditLog extends PureComponent {
           let source;
           if (log.action !== constants2.AUTO_MODERATION_QUARANTINE_USER) {
             if (null != log.options.integration_type) {
-              const tmp18Result = user(6574);
+              const tmp18Result = user(6629);
               const value = tmp18Result.get(log.options.integration_type);
               if (null != value) {
                 const icon = value.icon;
-                const tmp9Result = tmp9(5021);
+                const tmp9Result = tmp9(5147);
                 const tmp25 = tmp9Result.isThemeDark(theme) ? icon.darkPNG : icon.lightPNG;
-                const tmp9Result5 = tmp9(1409);
+                const tmp9Result5 = tmp9(1411);
                 source = tmp9Result5.makeSource(tmp25);
               }
             }
@@ -735,12 +735,12 @@ class AuditLog extends PureComponent {
           items2[1] = closure_14(PressableOpacity, obj7);
           const obj9 = { accessibilityRole: "button", accessibilityState: obj10, onPress: onHeaderClick, style: tmp.titleContainer, disabled: !checkChangesToRenderResult, children: items3 };
           obj10 = { expanded, disabled: !checkChangesToRenderResult };
-          const PressableOpacity2 = tmp10(6980).PressableOpacity;
+          const PressableOpacity2 = tmp10(7043).PressableOpacity;
           items3 = [self.renderTitle(), tmp8];
           items2[2] = closure_15(PressableOpacity2, obj9);
           let tmp17Result = null;
           if (checkChangesToRenderResult) {
-            const obj11 = { style: items4, size: tmp10(1187).Icon.Sizes.CUSTOM, source: user(16451) };
+            const obj11 = { style: items4, size: tmp10(1187).Icon.Sizes.CUSTOM, source: user(16772) };
             items4 = [tmp.arrow, rotate90];
             const Icon = tmp10(1187).Icon;
             tmp17Result = tmp17(Icon, obj11);
@@ -758,11 +758,11 @@ class AuditLog extends PureComponent {
         }
       }
     }
-    const ensureAvatarSource = tmp9(1412).ensureAvatarSource;
-    tmp9(1412);
-    const makeSource = tmp9(1409).makeSource;
-    tmp9(1409);
-    const tmp9Result8 = tmp9(1412);
+    const ensureAvatarSource = tmp9(1414).ensureAvatarSource;
+    tmp9(1414);
+    const makeSource = tmp9(1411).makeSource;
+    tmp9(1411);
+    const tmp9Result8 = tmp9(1414);
     source = ensureAvatarSource(makeSource(tmp9Result8.getAutomodAvatarURL()));
   }
 }

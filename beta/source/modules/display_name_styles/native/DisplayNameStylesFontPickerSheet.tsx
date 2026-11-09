@@ -1,26 +1,26 @@
-// Module ID: 17327
-// Function ID: 17328
+// Module ID: 17652
+// Function ID: 17653
 // Name: DisplayNameStylesFontPickerSheet
-// Dependencies: [32, 19, 17, 1401, 5039, 1083, 21, 9290, 575, 5014, 8741, 17324, 17326, 5042, 16461, 6784, 5082, 1403, 1400, 5260, 5258, 5272, 17328, 1113, 2932, 5634, 5624, 4285, 16483, 5080, 16477, 16472, 16478, 5717, 17329, 7062, 16480, 6027, 5735, 2]
+// Dependencies: [32, 19, 17, 1394, 5165, 1083, 21, 9370, 575, 5140, 8812, 17650, 17651, 5168, 16779, 6839, 5200, 1395, 1393, 5376, 5374, 5388, 17653, 1113, 3056, 5758, 5751, 4411, 16801, 5199, 16795, 16790, 16796, 5842, 17654, 7128, 16798, 6159, 5859, 2]
 // Exports: default
 
-// Module 17327 (DisplayNameStylesFontPickerSheet)
+// Module 17652 (DisplayNameStylesFontPickerSheet)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
-import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1401 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import HapticUtils from "HapticUtils" /* 5260 */;
-import useDisplayNameStylesFont from "useDisplayNameStylesFont" /* 9290 */;
+import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1394 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
+import HapticUtils from "HapticUtils" /* 5376 */;
+import useDisplayNameStylesFont from "useDisplayNameStylesFont" /* 9370 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5039 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5165 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let BottomSheet, importDefault;
+let importDefault;
 
 let c10;
 let c9;
@@ -161,8 +161,8 @@ export default function DisplayNameStylesFontPickerSheet(arg0) {
     obj2.hideActionSheet();
   }, items1);
   let obj3 = { ref: bottomSheetRef, startExpanded: hasItem, header: closure_14(tmp21, obj6), children: closure_14(first, obj8) };
-  BottomSheet = tmp2(tmp3[21]).BottomSheet;
-  obj6 = { title: intl.string(require("module_2932")["0JCuGm"]), trailing: closure_14(Button, obj7) };
+  const BottomSheet = tmp2(tmp3[21]).BottomSheet;
+  obj6 = { title: intl.string(require("module_3056")["0JCuGm"]), trailing: closure_14(Button, obj7) };
   tmp21 = require("DisplayNameStylesSheetHeader");
   intl = tmp2(tmp3[23]).intl;
   obj7 = { text: intl2.string(tmp2(tmp3[23]).t.XqMe3N), onPress: callback, variant: "primary", size: "sm" };
@@ -174,7 +174,7 @@ export default function DisplayNameStylesFontPickerSheet(arg0) {
     const obj10 = { style: tmp.campaignSection, children: closure_15(first, obj11) };
     obj11 = { style: tmp.campaignContent, children: items3 };
     const obj12 = { style: tmp.campaignHeader, children: items2 };
-    const obj13 = { variant: "text-sm/semibold", color: "text-subtle", children: intl3.string(require("module_4285")["2UCcmW"]) };
+    const obj13 = { variant: "body-sm/semibold", color: "text-subtle", children: intl3.string(require("module_4411")["2UCcmW"]) };
     let Text = tmp2(tmp3[26]).Text;
     intl3 = tmp2(tmp3[23]).intl;
     items2 = [closure_14(Text, obj13), ];
@@ -206,14 +206,14 @@ export default function DisplayNameStylesFontPickerSheet(arg0) {
     const obj21 = { selected: first === closure_8 };
     items5[3] = closure_14(tmp2(tmp3[35]).FormRadio, obj21);
     items3[1] = closure_14(ThemeContextProvider, obj15);
-    const obj22 = { variant: "text-xs/medium", color: "text-muted", style: tmp.campaignLegal, children: intl5.format(require("module_4285").y2YmJv, obj23) };
+    const obj22 = { variant: "body-xs/medium", color: "text-muted", style: tmp.campaignLegal, children: intl5.format(require("module_4411").y2YmJv, obj23) };
     const Text2 = tmp2(tmp3[26]).Text;
     intl5 = tmp2(tmp3[23]).intl;
     obj23 = {
       nonPremiumEndDate,
       premiumEndDate,
       learnMoreHook(children, arg1) {
-          const obj = { variant: "text-xs/medium", color: "text-link", accessibilityRole: "link", onPress: onSelectFont(visibleFontOrder[36]).openHexagonCampaignLearnMore, children };
+          const obj = { variant: "body-xs/medium", color: "text-link", accessibilityRole: "link", onPress: onSelectFont(visibleFontOrder[36]).openHexagonCampaignLearnMore, children };
           const Text = onSelectFont(visibleFontOrder[26]).Text;
           return closure_1_14(Text, obj, arg1);
         }
@@ -273,7 +273,7 @@ export default function DisplayNameStylesFontPickerSheet(arg0) {
       if (item === tmp) {
         str = "mobile-text-heading-primary";
       }
-      const obj3 = { variant: "text-lg/semibold", color: str, style: items1, children: "Gg" };
+      const obj3 = { variant: "body-lg/semibold", color: str, style: items1, children: "Gg" };
       items1 = [hasItem.fontText, { fontFamily: PRIMARY_SEMIBOLD }];
       items2 = [closure_1_14(Text, obj3), ];
       if (hasItem) {
@@ -292,7 +292,7 @@ export default function DisplayNameStylesFontPickerSheet(arg0) {
   if (tmp23Result) {
     const obj25 = { style: tmp.nonLatinDisclaimer, children: items7 };
     items7 = [closure_14(tmp2(tmp3[38]).CircleInformationIcon, { size: "sm" }), ];
-    const obj26 = { variant: "text-xs/normal", color: "text-subtle", style: tmp.disclaimerText, children: intl6.string(require("module_2932")["+O1xL2"]) };
+    const obj26 = { variant: "body-xs/normal", color: "text-subtle", style: tmp.disclaimerText, children: intl6.string(require("module_3056")["+O1xL2"]) };
     const Text3 = tmp2(tmp3[26]).Text;
     intl6 = tmp2(tmp3[23]).intl;
     items7[1] = closure_14(Text3, obj26);

@@ -1,21 +1,21 @@
-// Module ID: 17277
-// Function ID: 17278
+// Module ID: 17603
+// Function ID: 17604
 // Name: SettingsAppearanceChannelList
-// Dependencies: [19, 17, 21, 5014, 575, 17278, 17279, 17280, 5095, 1113, 17286, 7294, 17289, 2]
+// Dependencies: [19, 17, 21, 5140, 575, 17604, 17605, 17606, 1652, 1113, 17612, 7357, 17615, 2]
 // Exports: default
 
-// Module 17277 (SettingsAppearanceChannelList)
+// Module 17603 (SettingsAppearanceChannelList)
 import nativeDefault from "native" /* 575 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 5095 */;
-import SettingsAppearanceChannelRowItemDefault from "SettingsAppearanceChannelRowItem" /* 17278 */;
-import SettingsAppearanceMessagesHeaderItemDefault from "SettingsAppearanceMessagesHeaderItem" /* 17279 */;
-import SettingsAppearanceActivityCardsItemDefault from "SettingsAppearanceActivityCardsItem" /* 17280 */;
-import SettingsAppearanceGradientBackgroundDefault from "SettingsAppearanceGradientBackground" /* 17286 */;
-import SettingsAppearanceChannelListPreviewNitroUpsellDefault from "SettingsAppearanceChannelListPreviewNitroUpsell" /* 17289 */;
+import _modDef1652 from "module_1652" /* 1652 */;
+import SettingsAppearanceChannelRowItemDefault from "SettingsAppearanceChannelRowItem" /* 17604 */;
+import SettingsAppearanceMessagesHeaderItemDefault from "SettingsAppearanceMessagesHeaderItem" /* 17605 */;
+import SettingsAppearanceActivityCardsItemDefault from "SettingsAppearanceActivityCardsItem" /* 17606 */;
+import SettingsAppearanceGradientBackgroundDefault from "SettingsAppearanceGradientBackground" /* 17612 */;
+import SettingsAppearanceChannelListPreviewNitroUpsellDefault from "SettingsAppearanceChannelListPreviewNitroUpsell" /* 17615 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let item;
@@ -79,7 +79,7 @@ export default function ChannelListPreview(useGradientBackground) {
   }, items);
   const items1 = [tmp.channelPreviewCardContainer, animatedStyles.borderNormal, ];
   let bgSurfaceHigh = !useGradientBackground;
-  const View = ReanimatedRexportDefault.View;
+  const View = _modDef1652.View;
   const tmp3 = closure_6;
   if (!useGradientBackground) {
     bgSurfaceHigh = animatedStyles.bgSurfaceHigh;
@@ -107,7 +107,7 @@ export default function ChannelListPreview(useGradientBackground) {
     importantForAccessibility: "no-hide-descendants"
   };
   obj5 = { paddingVertical: nativeDefault.space.PX_16 };
-  const FlashList = tmp6(7294).FlashList;
+  const FlashList = tmp6(7357).FlashList;
   items2[1] = closure_5(FlashList, obj4);
   const obj6 = { visible: isNitroLocked, theme: themes[themeIndex] };
   items2[2] = closure_5(SettingsAppearanceChannelListPreviewNitroUpsellDefault, obj6);

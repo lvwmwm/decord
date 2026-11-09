@@ -1,18 +1,18 @@
-// Module ID: 15185
-// Function ID: 15186
+// Module ID: 15472
+// Function ID: 15473
 // Name: NUFTemplate
-// Dependencies: [19, 17, 21, 5014, 575, 5624, 5717, 5634, 2]
+// Dependencies: [19, 17, 21, 5140, 575, 5751, 5842, 5758, 2]
 // Exports: default
 
-// Module 15185 (NUFTemplate)
+// Module 15472 (NUFTemplate)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import components_Button_Button from "components/Button/Button" /* 5634 */;
-import FastImageDefault from "FastImage" /* 5717 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import components_Button_Button from "components/Button/Button" /* 5758 */;
+import FastImageDefault from "FastImage" /* 5842 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -36,9 +36,9 @@ export default function NUFActionSheetTemplate(arg0) {
   const tmp = closure_6();
   const obj = { style: tmp.container, children: items };
   items = [, , , ];
-  const obj2 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: title };
+  const obj2 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: title };
   items[0] = React3(Text_Text.Text, obj2);
-  const obj3 = { style: tmp.description, variant: "text-sm/medium", color: "text-default", children: description };
+  const obj3 = { style: tmp.description, variant: "body-sm/medium", color: "text-default", children: description };
   items[1] = React3(Text_Text.Text, obj3);
   const obj4 = { source: imageSrc, style: tmp.image };
   items[2] = React3(FastImageDefault, obj4);

@@ -1,16 +1,16 @@
-// Module ID: 9045
-// Function ID: 9046
+// Module ID: 9125
+// Function ID: 9126
 // Name: CreateChannelTypeDescription
-// Dependencies: [19, 17, 9046, 1072, 21, 9047, 6926, 5624, 1113, 2]
+// Dependencies: [19, 17, 9126, 1072, 21, 9127, 6981, 5751, 1113, 2]
 // Exports: default
 
-// Module 9045 (CreateChannelTypeDescription)
+// Module 9125 (CreateChannelTypeDescription)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
-import GuildProfileStore from "GuildProfileStore" /* 9046 */;
-import useGuildProfile from "useGuildProfile" /* 9047 */;
+import GuildProfileStore from "GuildProfileStore" /* 9126 */;
+import useGuildProfile from "useGuildProfile" /* 9127 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -34,7 +34,7 @@ export default function CreateChannelTypeDescription(guildId) {
   const fetchStatus = guildProfile1.fetchStatus;
   const FETCHED = GuildProfileFetchStatus.FETCHED;
   if (hasItem) {
-    const VISIBLE = tmp(6926).GuildProfileVisibilitySets.VISIBLE;
+    const VISIBLE = tmp(6981).GuildProfileVisibilitySets.VISIBLE;
     hasItem = VISIBLE.has(guildProfile.visibility);
   }
   let tmp6 = fetchStatus === FETCHED && !hasItem;
@@ -47,8 +47,8 @@ export default function CreateChannelTypeDescription(guildId) {
   }, items);
   let tmp9 = null;
   if (tmp6) {
-    ({ variant: "text-sm/normal", color: "text-subtle", children: intl.string(intl2.t["2Ab4Id"]) });
-    const Text = tmp(5624).Text;
+    ({ variant: "body-sm/normal", color: "text-subtle", children: intl.string(intl2.t["2Ab4Id"]) });
+    const Text = tmp(5751).Text;
     intl = tmp(1113).intl;
     tmp9 = <View>{null}</View>;
   }

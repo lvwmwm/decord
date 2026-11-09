@@ -1,8 +1,8 @@
-// Module ID: 17734
-// Function ID: 17735
+// Module ID: 18062
+// Function ID: 18063
 // Dependencies: [2]
 
-// Module 17734
+// Module 18062
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/SafetyChatSpotIllustration-3x.png.js");

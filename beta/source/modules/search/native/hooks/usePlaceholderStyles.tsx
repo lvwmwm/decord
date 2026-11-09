@@ -1,23 +1,21 @@
-// Module ID: 18706
-// Function ID: 18707
+// Module ID: 19069
+// Function ID: 19070
 // Name: usePlaceholderStyles
-// Dependencies: [5015, 9827, 1491, 504, 5095, 5254, 1187, 2]
+// Dependencies: [5141, 9917, 1493, 504, 1652, 5370, 1187, 2]
 // Exports: useFullscreenPlaceholderCount, usePlaceholderAnimatedStyle
 
-// Module 18706 (usePlaceholderStyles)
+// Module 19069 (usePlaceholderStyles)
+import get_initialized from "get initialized" /* 504 */;
 import native from "native" /* 1187 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1491 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
-import timing from "timing" /* 5254 */;
-import SearchConstants from "SearchConstants" /* 9827 */;
-import AccessibilityStore from "AccessibilityStore" /* 5015 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1493 */;
+import _mod1652 from "module_1652" /* 1652 */;
+import timing_timing from "timing/timing" /* 5370 */;
+import SearchConstants from "SearchConstants" /* 9917 */;
+import AccessibilityStore from "AccessibilityStore" /* 5141 */;
 import size from "module_2" /* 2 */;
 
-const require = globalThis.__r;
-let _require;
-
-const duration = SearchConstants.FADE_LAYOUT_ANIMATION_DURATION;
-const __initData = { code: "function usePlaceholderStylesTsx1(){const{useReducedMotion,visible,withRepeat,withSequence,withTiming,STANDARD_EASING,FADE_LAYOUT_ANIMATION_DURATION}=this.__closure;if(useReducedMotion){return{opacity:visible?1:0};}if(visible){return{opacity:withRepeat(withSequence(withTiming(0.5,{duration:0}),withTiming(1,{duration:1300,easing:STANDARD_EASING}),withTiming(0.5,{duration:1300,easing:STANDARD_EASING})),-1)};}return{opacity:withTiming(0,{duration:FADE_LAYOUT_ANIMATION_DURATION})};}" };
+let closure_4 = SearchConstants.FADE_LAYOUT_ANIMATION_DURATION;
+let closure_5 = { code: "(function usePlaceholderStylesTsx1(){let[useReducedMotion,visible,withRepeat,withSequence,withTiming,STANDARD_EASING,FADE_LAYOUT_ANIMATION_DURATION]=this.__closure;if(useReducedMotion){return{opacity:visible?1:0};}if(visible){return{opacity:withRepeat(withSequence(withTiming(0.5,{duration:0}),withTiming(1,{duration:1300,easing:STANDARD_EASING}),withTiming(0.5,{duration:1300,easing:STANDARD_EASING})),-1)};}return{opacity:withTiming(0,{duration:FADE_LAYOUT_ANIMATION_DURATION})};})" };
 const result = size.fileFinishedImporting("modules/search/native/hooks/usePlaceholderStyles.tsx");
 
 export function useFullscreenPlaceholderCount(arg0) {
@@ -27,51 +25,60 @@ export function useFullscreenPlaceholderCount(arg0) {
   return Math.ceil(useWindowDimensionsDefault({ ignoreKeyboard: true }).height / placeholderHeight) * numColumns;
 }
 export function usePlaceholderAnimatedStyle(visible) {
+  let tmp10;
+  let tmp3;
+  let tmp4;
+  let tmp5;
+  let tmp6;
+  let tmp7;
+  let tmp8;
+  let tmp9;
   let useReducedMotion;
-  _require = visible;
-  let obj = require("get initialized");
+  let obj = get_initialized;
   const items = [AccessibilityStore];
   const stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
-  let obj2 = require("ReanimatedRexport");
-  class A {
-    constructor() {
-      let tmp5;
-      const obj = { opacity: null };
-      if (stateFromStores) {
-        let num5 = 0;
-        if (visible) {
-          num5 = 1;
-        }
-        obj.opacity = num5;
-        tmp5 = obj;
-      } else if (visible) {
-        const withRepeat = ReanimatedRexport.withRepeat;
-        ReanimatedRexport;
-        const withSequence = ReanimatedRexport.withSequence;
-        ReanimatedRexport;
-        const obj4 = timing;
-        const withTimingResult = obj4.withTiming(0.5, { duration: 0 });
-        const obj2 = { duration: 1300, easing: native.STANDARD_EASING };
-        const withTiming = timing.withTiming;
-        timing;
-        const withTimingResult1 = withTiming(1, obj2);
-        const obj3 = { duration: 1300, easing: native.STANDARD_EASING };
-        const withTiming2 = timing.withTiming;
-        timing;
-        obj.opacity = withRepeat(withSequence(withTimingResult, withTimingResult1, withTiming2(0.5, obj3)), -1);
-        tmp5 = obj;
-      } else {
-        const obj5 = { duration };
-        const tmp2Result2 = timing;
-        obj.opacity = tmp2Result2.withTiming(0, obj5);
-        tmp5 = obj;
+  const items1 = [closure_5, stateFromStores, visible, , , , , ];
+  const useAnimatedStyle = _mod1652.useAnimatedStyle;
+  items1[3] = _mod1652.withRepeat;
+  items1[4] = _mod1652.withSequence;
+  items1[5] = timing_timing.withTiming;
+  items1[6] = native.STANDARD_EASING;
+  items1[7] = closure_4;
+  let c0;
+  let c1;
+  let c2;
+  let c3;
+  let c4;
+  let c5;
+  let c6;
+  [tmp3, tmp4, tmp5, tmp6, tmp7, tmp8, tmp9, tmp10] = items1;
+  function usePlaceholderStylesTsx1() {
+    let tmp4;
+    const obj = { opacity: null };
+    if (c0) {
+      let num5 = 0;
+      if (c1) {
+        num5 = 1;
       }
-      return tmp5;
+      obj.opacity = num5;
+      tmp4 = obj;
+    } else if (c1) {
+      const obj2 = { duration: 1300, easing };
+      const obj3 = { duration: 1300, easing };
+      const tmp8 = _undefined3(0.5, { duration: 0 });
+      const tmp10 = _undefined3(1, obj2);
+      obj.opacity = _undefined(_undefined2(tmp8, tmp10, _undefined3(0.5, obj3)), -1);
+      tmp4 = obj;
+    } else {
+      const obj4 = { duration };
+      obj.opacity = _undefined3(0, obj4);
+      tmp4 = obj;
     }
+    return tmp4;
   }
-  let obj3 = { useReducedMotion: stateFromStores, visible, withRepeat: require("ReanimatedRexport").withRepeat, withSequence: require("ReanimatedRexport").withSequence, withTiming: require("timing").withTiming, STANDARD_EASING: require("native").STANDARD_EASING, FADE_LAYOUT_ANIMATION_DURATION: duration };
-  A.__closure = obj3;
-  A.__workletHash = 9750536800906;
-  A.__initData = __initData;
-  return obj2.useAnimatedStyle(A);
+  const items2 = [tmp4, tmp5, tmp6, tmp7, tmp8, tmp9, tmp10];
+  usePlaceholderStylesTsx1.__closure = items2;
+  usePlaceholderStylesTsx1.__workletHash = 3033147489043;
+  usePlaceholderStylesTsx1.__initData = tmp3;
+  return useAnimatedStyle(usePlaceholderStylesTsx1);
 }

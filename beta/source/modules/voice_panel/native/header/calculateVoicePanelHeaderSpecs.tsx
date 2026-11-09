@@ -1,21 +1,28 @@
-// Module ID: 11229
-// Function ID: 11230
+// Module ID: 11369
+// Function ID: 11370
 // Name: calculateVoicePanelHeaderSpecs
 // Dependencies: [2]
 // Exports: default
 
-// Module 11229 (calculateVoicePanelHeaderSpecs)
+// Module 11369 (calculateVoicePanelHeaderSpecs)
 import size from "module_2" /* 2 */;
 
-const fn = function t(top, arg1) {
+let tmp2;
+let tmp3;
+const items = [{ code: "(function calculateVoicePanelHeaderSpecs_calculateVoicePanelHeaderSpecsTsx1(safeArea,edgeGutter){let[BASE_VOICE_PANEL_HEADER_HEIGHT]=this.__closure;const paddingTop=Math.max(edgeGutter,safeArea.top);const paddingLeft=Math.max(edgeGutter,safeArea.left);const paddingRight=Math.max(edgeGutter,safeArea.right);const height=BASE_VOICE_PANEL_HEADER_HEIGHT+paddingTop;return{height:height,paddingTop:paddingTop,paddingLeft:paddingLeft,paddingRight:paddingRight};})" }, 44];
+let c0;
+[tmp2, tmp3] = items;
+function calculateVoicePanelHeaderSpecs(top, arg1) {
   const bound = Math.max(arg1, top.top);
-  const obj = { height: 44 + bound, paddingTop: bound, paddingLeft: Math.max(arg1, top.left), paddingRight: Math.max(arg1, top.right) };
+  const bound1 = Math.max(arg1, top.left);
+  const obj = { height: c0 + bound, paddingTop: bound, paddingLeft: bound1, paddingRight: Math.max(arg1, top.right) };
   return obj;
-};
-fn.__closure = { BASE_VOICE_PANEL_HEADER_HEIGHT: 44 };
-fn.__workletHash = 6201232972174;
-fn.__initData = { code: "function calculateVoicePanelHeaderSpecs_calculateVoicePanelHeaderSpecsTsx1(safeArea,edgeGutter){const{BASE_VOICE_PANEL_HEADER_HEIGHT}=this.__closure;const paddingTop=Math.max(edgeGutter,safeArea.top);const paddingLeft=Math.max(edgeGutter,safeArea.left);const paddingRight=Math.max(edgeGutter,safeArea.right);const height=BASE_VOICE_PANEL_HEADER_HEIGHT+paddingTop;return{height:height,paddingTop:paddingTop,paddingLeft:paddingLeft,paddingRight:paddingRight};}" };
+}
+const items1 = [tmp3];
+calculateVoicePanelHeaderSpecs.__closure = items1;
+calculateVoicePanelHeaderSpecs.__workletHash = 618697222263;
+calculateVoicePanelHeaderSpecs.__initData = tmp2;
 const result = size.fileFinishedImporting("modules/voice_panel/native/header/calculateVoicePanelHeaderSpecs.tsx");
 
-export default fn;
+export default calculateVoicePanelHeaderSpecs;
 export const BASE_VOICE_PANEL_HEADER_HEIGHT = 44;

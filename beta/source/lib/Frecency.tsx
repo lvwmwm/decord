@@ -1,11 +1,11 @@
-// Module ID: 5780
-// Function ID: 5781
+// Module ID: 5909
+// Function ID: 5910
 // Name: Frecency
-// Dependencies: [12, 2042, 2]
+// Dependencies: [12, 2166, 2]
 
-// Module 5780 (Frecency)
+// Module 5909 (Frecency)
 import _modDef12 from "module_12" /* 12 */;
-import _modDef2042 from "module_2042" /* 2042 */;
+import _modDef2166 from "module_2166" /* 2166 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -166,9 +166,9 @@ class Frecency {
       self.markDirty();
     }
   }
-  getEntry(id) {
+  getEntry(arg0) {
     let tmp = null;
-    if (null != id) {
+    if (null != arg0) {
       const self = this;
       if (this.dirty) {
         self.compute();
@@ -176,8 +176,8 @@ class Frecency {
       const _Object = Object;
       hasOwnProperty = Object.prototype.hasOwnProperty;
       let tmp4;
-      if (hasOwnProperty.call(self.usageHistory, id)) {
-        tmp4 = self.usageHistory[id];
+      if (hasOwnProperty.call(self.usageHistory, arg0)) {
+        tmp4 = self.usageHistory[arg0];
       }
       tmp = tmp4;
     }
@@ -203,7 +203,7 @@ class Frecency {
     const self = this;
     const tmp = importDefault;
     let tmp2 = dependencyMap;
-    dependencyMap = _modDef2042();
+    dependencyMap = _modDef2166();
     let maxByResult = null;
     if (this.calculateMaxTotalUse) {
       let tmp4 = globalThis;
@@ -226,7 +226,7 @@ class Frecency {
           if (arg1 >= self.maxSamples) {
             return false;
           } else {
-            recentUses.score = recentUses.score + closure_1 * obj.computeWeight(closure_1.diff(_modDef2042(arg0), "days"));
+            recentUses.score = recentUses.score + closure_1 * obj.computeWeight(closure_1.diff(_modDef2166(arg0), "days"));
           }
         });
         const tmp4 = arg1;

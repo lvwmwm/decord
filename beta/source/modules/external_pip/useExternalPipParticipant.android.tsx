@@ -1,20 +1,20 @@
-// Module ID: 19108
-// Function ID: 19109
+// Module ID: 19484
+// Function ID: 19485
 // Name: useExternalPipParticipant
-// Dependencies: [19, 6843, 15627, 6714, 502, 2006, 5764, 5681, 11223, 19109, 11228, 504, 2]
+// Dependencies: [19, 6898, 15942, 6769, 502, 2130, 5893, 5805, 11363, 19485, 11368, 504, 2]
 // Exports: default
 
-// Module 19108 (useExternalPipParticipant)
-import CallConstants from "CallConstants" /* 5681 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11223 */;
-import VoicePanelPIPUtils from "VoicePanelPIPUtils" /* 19109 */;
+// Module 19484 (useExternalPipParticipant)
+import CallConstants from "CallConstants" /* 5805 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11363 */;
+import VoicePanelPIPUtils from "VoicePanelPIPUtils" /* 19485 */;
 import react from "react" /* 19 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6843 */;
-import PIPSpeakerStore from "PIPSpeakerStore" /* 15627 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6714 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6898 */;
+import PIPSpeakerStore from "PIPSpeakerStore" /* 15942 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6769 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import MediaEngineStore from "MediaEngineStore" /* 2006 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5764 */;
+import MediaEngineStore from "MediaEngineStore" /* 2130 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5893 */;
 import size from "module_2" /* 2 */;
 
 let mediaEngine;
@@ -41,7 +41,7 @@ function getExternalPipSelectedParticipant(batchedStoreListener, selectedPartici
         obj = { participantType: null, selectedParticipantId: null, selectedParticipantSpeaking: participant.type === tmp12.USER && participant.speaking, selectedParticipantStreamId: tmp3, selectedParticipantUserId: participant.user.id };
         ({ type: obj.participantType, id: obj.selectedParticipantId } = participant);
         tmp3 = undefined;
-        const tmp7Result = tmp7(11228);
+        const tmp7Result = tmp7(11368);
         if (tmp7Result.canRenderParticipantVideo(participant)) {
           const streamId = participant.streamId;
           tmp3 = streamId;
@@ -54,7 +54,7 @@ function getExternalPipSelectedParticipant(batchedStoreListener, selectedPartici
 }
 const ParticipantTypes = CallConstants.ParticipantTypes;
 const VoicePanelModes = VoicePanelConstants.VoicePanelModes;
-let closure_9 = { participantType: "flexDirection", selectedParticipantId: "createStyles", selectedParticipantSpeaking: null, selectedParticipantStreamId: null, selectedParticipantUserId: null };
+let closure_9 = { participantType: "flexDirection", selectedParticipantId: "content", selectedParticipantSpeaking: null, selectedParticipantStreamId: null, selectedParticipantUserId: null };
 let items = [ChannelRTCStore, ApplicationStreamingStore, AuthenticationStore, MediaEngineStore];
 const result = size.fileFinishedImporting("modules/external_pip/useExternalPipParticipant.android.tsx");
 

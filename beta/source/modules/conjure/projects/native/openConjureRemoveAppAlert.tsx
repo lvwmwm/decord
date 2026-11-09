@@ -1,16 +1,16 @@
-// Module ID: 12223
-// Function ID: 12224
+// Module ID: 12395
+// Function ID: 12396
 // Name: openConjureRemoveAppAlert
-// Dependencies: [5, 32, 19, 21, 5014, 12212, 1113, 3868, 12224, 10875, 10941, 5712, 5964, 5624, 6027, 5960, 2]
+// Dependencies: [5, 32, 19, 21, 5140, 12384, 1113, 4026, 12396, 10996, 11075, 5837, 6096, 5751, 6159, 6092, 2]
 // Exports: default
 
-// Module 12223 (openConjureRemoveAppAlert)
-import useAlertStore from "useAlertStore" /* 5960 */;
+// Module 12395 (openConjureRemoveAppAlert)
+import useAlertStore from "useAlertStore" /* 6092 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -63,7 +63,7 @@ function ConjureRemoveAppAlert(action) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -136,7 +136,7 @@ function ConjureRemoveAppAlert(action) {
                 open("CONJURE_APP_REMOVED", obj);
               }
               c3 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           }
         } catch (tmp36) {
@@ -183,7 +183,7 @@ function ConjureRemoveAppAlert(action) {
   }
   let obj3 = { title: tmp10Result7.conjureTitleWithAppTag(closure_6(tmp10(tmp9[13]).Text, obj4)), content: result3, extraContent: tmp20(Stack, { spacing: 12, children: items }), actions: tmp20(closure_8, obj9) };
   const AlertModal = tmp10(tmp9[12]).AlertModal;
-  obj4 = { variant: "heading-lg/bold", color: "none", style: tmp13.title, children: formatToPlainStringResult };
+  obj4 = { variant: "heading-lg/semibold", color: "none", style: tmp13.title, children: formatToPlainStringResult };
   tmp10Result7 = tmp10(tmp9[5]);
   if ("delete" === action) {
     const tmp10Result8 = tmp10(tmp9[5]);
@@ -208,13 +208,13 @@ function ConjureRemoveAppAlert(action) {
   items = [tmp18Result, , ];
   let tmp18Result3 = null;
   if (null != result2) {
-    let obj7 = { variant: "text-sm/normal", color: "text-muted", children: result2 };
+    let obj7 = { variant: "body-sm/normal", color: "text-muted", children: result2 };
     tmp18Result3 = tmp18(tmp10(tmp9[13]).Text, obj7);
   }
   items[1] = tmp18Result3;
   let tmp18Result4 = null;
   if (null != tmp5) {
-    const obj8 = { variant: "text-sm/medium", color: "text-feedback-critical", children: tmp5 };
+    const obj8 = { variant: "body-sm/medium", color: "text-feedback-critical", children: tmp5 };
     tmp18Result4 = tmp18(tmp10(tmp9[13]).Text, obj8);
   }
   items[2] = tmp18Result4;

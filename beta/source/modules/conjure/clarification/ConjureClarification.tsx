@@ -1,27 +1,27 @@
-// Module ID: 12587
-// Function ID: 12588
+// Module ID: 12790
+// Function ID: 12791
 // Name: ConjureClarification
-// Dependencies: [4863, 4956, 1383, 1072, 1113, 3868, 5652, 12588, 2]
-// Exports: clarificationAnswerAttachments, clarificationAnswersPayload, clarificationChannelEntities, clarificationChannelType, clarificationDraftAnswer, clarificationDraftPlaceholder, clarificationEntities, clarificationPickerPlaceholder, entityAnswer, followingClarificationStep, formatClarificationAnswers, isClarificationComplete, isTypedClarificationQuestion, liveClarification, multiSelectAnswer, nextClarificationStep, submitClarificationAnswers, toggleClarificationOption
+// Dependencies: [4989, 5082, 1385, 1072, 1113, 4026, 5776, 12791, 2]
+// Exports: clarificationAnswerAttachments, clarificationAnswersPayload, clarificationChannelEntities, clarificationChannelType, clarificationDraftAnswer, clarificationDraftPlaceholder, clarificationEntities, clarificationPickerPlaceholder, entityAnswer, followingClarificationStep, formatClarificationAnswers, isClarificationComplete, isTypedClarificationQuestion, liveClarification, nextClarificationStep, skippedClarificationAnswers, submitClarificationAnswers, toggleClarificationOption, uploadNoteAnswer
 
-// Module 12587 (ConjureClarification)
+// Module 12790 (ConjureClarification)
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
-import _modDef3868 from "module_3868" /* 3868 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
-import RelationshipStore from "RelationshipStore" /* 4956 */;
-import UserStore from "UserStore" /* 1383 */;
+import _modDef4026 from "module_4026" /* 4026 */;
+import ChannelStore from "ChannelStore" /* 4989 */;
+import RelationshipStore from "RelationshipStore" /* 5082 */;
+import UserStore from "UserStore" /* 1385 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, dependencyMap, user;
+let _require, dependencyMap, optionIds, user;
 
 let items;
 let items1;
 let items2;
 let items3;
 let items4;
-const f102585 = (answer) => {
+const f104326 = (answer) => {
   let tmp = null != answer.answer;
   if (tmp) {
     const str = answer.answer.text;
@@ -29,20 +29,58 @@ const f102585 = (answer) => {
   }
   return tmp;
 };
-const f102586 = (answer) => {
+const f104327 = (answer) => {
   const sum = answer.index + 1;
   const str = answer.answer.text;
   return "" + sum + ". " + answer.question.question + " \u2192 " + str.trim();
 };
+function multiSelectAnswer(options, answeredOptionIdsResult, str, conjureOwnImages) {
+  let items;
+  let items1;
+  let items2;
+  let obj2;
+  let obj3;
+  const trimmed = str.trim();
+  options = options.options;
+  const found = options.filter((id) => answeredOptionIdsResult.includes(id.id));
+  const mapped = found.map((label) => label.label);
+  obj = { kind: "multi", optionIds: answeredOptionIdsResult, text: items.join(", ") };
+  if ("" === trimmed) {
+    obj2 = {};
+  } else {
+    obj2 = { custom: trimmed };
+  }
+  const merged = Object.assign(obj2);
+  if (null == conjureOwnImages) {
+    obj3 = {};
+  } else {
+    obj3 = { attachment: conjureOwnImages.attachment };
+  }
+  const merged1 = Object.assign(obj3);
+  items = [...mapped];
+  if (null == conjureOwnImages) {
+    items1 = [];
+  } else {
+    items1 = [conjureOwnImages.text];
+  }
+  const arraySpreadResult = HermesBuiltin.arraySpread(items, items1, tmp7);
+  if ("" === trimmed) {
+    items2 = [];
+  } else {
+    items2 = [trimmed];
+  }
+  HermesBuiltin.arraySpread(items, items2, arraySpreadResult);
+  return obj;
+}
 const ChannelTypes = Constants.ChannelTypes;
-let closure_6 = { [ChannelTypes.GUILD_TEXT]: "text", [ChannelTypes.GUILD_VOICE]: "voice", [ChannelTypes.GUILD_ANNOUNCEMENT]: "announcement", [ChannelTypes.GUILD_STAGE_VOICE]: "stage", [ChannelTypes.GUILD_FORUM]: "forum", [ChannelTypes.GUILD_MEDIA]: "media" };
-let closure_7 = { channel: "#", role: "@", user: "@", project: "", server: "" };
+let closure_7 = { [ChannelTypes.GUILD_TEXT]: "text", [ChannelTypes.GUILD_VOICE]: "voice", [ChannelTypes.GUILD_ANNOUNCEMENT]: "announcement", [ChannelTypes.GUILD_STAGE_VOICE]: "stage", [ChannelTypes.GUILD_FORUM]: "forum", [ChannelTypes.GUILD_MEDIA]: "media" };
+let closure_8 = { channel: "#", role: "@", user: "@", project: "", server: "" };
 let obj = { channel: items, role: items1, user: items2, project: items3, server: items4 };
-items = [_modDef3868["9+dfPT"], _modDef3868.pGSJqE];
-items1 = [_modDef3868["2VkCoD"], _modDef3868.c8YlX8];
-items2 = [_modDef3868.GZIAxl, _modDef3868["4bptbQ"]];
-items3 = [_modDef3868.twlOb6, _modDef3868.twlOb6];
-items4 = [_modDef3868.ZWXDeI, _modDef3868.ZWXDeI];
+items = [_modDef4026["9+dfPT"], _modDef4026.pGSJqE];
+items1 = [_modDef4026["2VkCoD"], _modDef4026.c8YlX8];
+items2 = [_modDef4026.GZIAxl, _modDef4026["4bptbQ"]];
+items3 = [_modDef4026.twlOb6, _modDef4026.twlOb6];
+items4 = [_modDef4026.ZWXDeI, _modDef4026.ZWXDeI];
 let result = size.fileFinishedImporting("modules/conjure/clarification/ConjureClarification.tsx");
 
 export function liveClarification(memo) {
@@ -90,29 +128,43 @@ export function clarificationDraftPlaceholder(options) {
   if (tmp2) {
     tmp2 = null == options.input;
   }
-  const tmp4 = _modDef3868;
+  const tmp4 = _modDef4026;
   return string(tmp2 ? tmp4.yLN1x6 : tmp4["tOC+tn"]);
 }
 export function isClarificationComplete(questions, arg1) {
   let closure_0 = arg1;
   questions = questions.questions;
-  return questions.every((item) => {
-    let tmp2 = null != tmp;
-    if (tmp2) {
-      const str = closure_0[item.id].text;
-      tmp2 = "" !== str.trim();
+  return questions.every((optional) => {
+    let tmp2 = true === optional.optional;
+    if (!tmp2) {
+      let tmp4 = null != tmp;
+      if (tmp4) {
+        const str = closure_0[optional.id].text;
+        tmp4 = "" !== str.trim();
+      }
+      tmp2 = tmp4;
     }
     return tmp2;
   });
 }
 export function nextClarificationStep(questions, arg1, arg2) {
+  let result;
   questions = questions.questions;
   let num = 1;
   if (1 <= questions.length) {
-    const result = (arg2 + num) % questions.length;
-    while (null != arg1[questions[result].id]) {
-      let str = tmp2.text;
-      if ("" === str.trim()) {
+    while (true) {
+      result = (arg2 + num) % questions.length;
+      let tmp2 = arg1[questions[result].id];
+      let tmp3 = true === questions[result].optional;
+      if (!tmp3) {
+        let tmp5 = null != tmp2;
+        if (tmp5) {
+          let str = tmp2.text;
+          tmp5 = "" !== str.trim();
+        }
+        tmp3 = tmp5;
+      }
+      if (!tmp3) {
         break;
       } else {
         num = num + 1;
@@ -131,12 +183,20 @@ export function followingClarificationStep(clarification, arg1, bound) {
     let num = 1;
     sum = null;
     if (1 <= questions.length) {
-      const result = (bound + num) % questions.length;
-      sum = result;
-      while (null != arg1[questions[result].id]) {
-        let str2 = tmp4.text;
+      while (true) {
+        let result = (bound + num) % questions.length;
+        let tmp2 = arg1[questions[result].id];
+        let tmp3 = true === questions[result].optional;
+        if (!tmp3) {
+          let tmp5 = null != tmp2;
+          if (tmp5) {
+            let str = tmp2.text;
+            tmp5 = "" !== str.trim();
+          }
+          tmp3 = tmp5;
+        }
         sum = result;
-        if ("" === str2.trim()) {
+        if (!tmp3) {
           break;
         } else {
           let sum1 = num + 1;
@@ -151,12 +211,77 @@ export function followingClarificationStep(clarification, arg1, bound) {
   }
   return sum;
 }
+export function skippedClarificationAnswers(clarification, arg1, bound) {
+  const tmp = clarification.questions[bound];
+  const id = tmp;
+  let optional;
+  if (tmp != null) {
+    optional = tmp.optional;
+  }
+  if (true !== optional) {
+    return null;
+  } else {
+    let sum;
+    let tmp10;
+    const _Object = Object;
+    const _Object2 = Object;
+    const entries = Object.entries(arg1);
+    const fromEntriesResult = fromEntries(entries.filter((item) => {
+      let tmp;
+      [tmp] = item;
+      return tmp !== id.id;
+    }));
+    if (bound < clarification.questions.length - 1) {
+      sum = bound + 1;
+    } else {
+      const questions = clarification.questions;
+      let num = 1;
+      sum = null;
+      if (1 <= questions.length) {
+        while (true) {
+          let result = (bound + num) % questions.length;
+          let tmp4 = fromEntriesResult[questions[result].id];
+          let tmp5 = true === questions[result].optional;
+          if (!tmp5) {
+            let tmp7 = null != tmp4;
+            if (tmp7) {
+              let str = tmp4.text;
+              tmp7 = "" !== str.trim();
+            }
+            tmp5 = tmp7;
+          }
+          sum = result;
+          if (!tmp5) {
+            break;
+          } else {
+            let sum1 = num + 1;
+            num = sum1;
+            sum = null;
+            if (sum1 > questions.length) {
+              break;
+            }
+          }
+        }
+      }
+    }
+    if (null != sum) {
+      tmp10 = fromEntriesResult;
+    } else {
+      const questions1 = clarification.questions;
+      const mapped = questions1.map((question, index) => ({ question, index, answer: closure_0[question.id] }));
+      const found = mapped.filter(f104326);
+      const mapped1 = found.map(f104327);
+      tmp10 = null;
+    }
+    return tmp10;
+  }
+}
 export function formatClarificationAnswers(questions, arg1) {
   let closure_0 = arg1;
   questions = questions.questions;
   const mapped = questions.map((question, index) => ({ question, index, answer: closure_0[question.id] }));
-  const found = mapped.filter(f102585);
-  const mapped1 = found.map(f102586);
+  const found = mapped.filter(f104326);
+  const mapped1 = found.map(f104327);
   return mapped1.join("\n");
 }
 export function toggleClarificationOption(options, arr, id) {
@@ -172,48 +297,73 @@ export function toggleClarificationOption(options, arr, id) {
   const found1 = options.filter((id) => found.includes(id.id));
   return found1.map((id) => id.id);
 }
-export function multiSelectAnswer(options, answeredOptionIdsResult, str, conjureOwnImages) {
-  let items;
-  let items1;
-  let items2;
-  let obj2;
-  let obj3;
-  const trimmed = str.trim();
-  options = options.options;
-  const found = options.filter((id) => answeredOptionIdsResult.includes(id.id));
-  const mapped = found.map((label) => label.label);
-  obj = { kind: "multi", optionIds: answeredOptionIdsResult, text: items.join(", ") };
-  if ("" === trimmed) {
-    obj2 = {};
-  } else {
-    obj2 = { custom: trimmed };
+export { multiSelectAnswer };
+export function uploadNoteAnswer(upload, kind, str) {
+  let intl;
+  let closure_0 = kind;
+  let tmp = null;
+  if (true === upload.upload) {
+    tmp = null;
+    if (true !== upload.multi_select) {
+      tmp = null;
+      if (null != kind) {
+        tmp = kind;
+        if ("option" !== kind.kind) {
+          tmp = kind;
+          if ("image" !== kind.kind) {
+            tmp = null;
+            if ("multi" === kind.kind) {
+              if (null != kind.attachment) {
+                const obj2 = { kind: "image", attachment: kind.attachment, text: intl.string(_modDef4026.wTsP5l) };
+                intl = intl2.intl;
+                tmp = obj2;
+              } else {
+                const options = upload.options;
+                const found = options.find((id) => {
+                  optionIds = optionIds.optionIds;
+                  return optionIds.includes(id.id);
+                });
+                let tmp3 = null;
+                if (null != found) {
+                  obj = { kind: "option", optionId: null, text: null };
+                  ({ id: obj.optionId, label: obj.text } = found);
+                  tmp3 = obj;
+                }
+                tmp = tmp3;
+              }
+            }
+          }
+        }
+      }
+    }
   }
-  const merged = Object.assign(obj2);
-  if (null == conjureOwnImages) {
-    obj3 = {};
-  } else {
-    obj3 = { attachment: conjureOwnImages.attachment };
+  let tmp7 = null;
+  if (null != tmp) {
+    let tmp13;
+    if ("" === str.trim()) {
+      kind = undefined;
+      if (kind != null) {
+        kind = kind.kind;
+      }
+      let tmp16 = null;
+      if ("multi" === kind) {
+        tmp16 = tmp;
+      }
+      tmp13 = tmp16;
+    } else if ("option" === tmp.kind) {
+      const items = [tmp.optionId];
+      tmp13 = multiSelectAnswer(upload, items, str);
+    } else {
+      tmp13 = multiSelectAnswer(upload, [], str, tmp);
+    }
+    tmp7 = tmp13;
   }
-  const merged1 = Object.assign(obj3);
-  items = [...mapped];
-  if (null == conjureOwnImages) {
-    items1 = [];
-  } else {
-    items1 = [conjureOwnImages.text];
-  }
-  const arraySpreadResult = HermesBuiltin.arraySpread(items, items1, tmp7);
-  if ("" === trimmed) {
-    items2 = [];
-  } else {
-    items2 = [trimmed];
-  }
-  HermesBuiltin.arraySpread(items, items2, arraySpreadResult);
-  return obj;
+  return tmp7;
 }
 export function clarificationChannelType(arg0) {
   let tmp;
   if (null != arg0) {
-    tmp = closure_6[arg0];
+    tmp = closure_7[arg0];
   }
   return tmp;
 }
@@ -228,7 +378,7 @@ export function clarificationEntities(project, items, arg2, arg3) {
     let tmp;
     let closure_0 = id;
     obj = { id, name: tmp };
-    tmp = f102596(id);
+    tmp = f104338(id);
     if (tmp == null) {
       const found = closure_2.find((id) => id.id === closure_0);
       let name;
@@ -249,7 +399,7 @@ export function clarificationEntities(project, items, arg2, arg3) {
       }
       let tmp15;
       if (null != type) {
-        tmp15 = closure_2_6[type];
+        tmp15 = closure_2_7[type];
       }
       const obj2 = { kind: channel };
       if (null == tmp15) {
@@ -285,7 +435,7 @@ export function clarificationChannelEntities(stateFromStores1, arg1) {
   let closure_0 = stateFromStores1;
   const items = [stateFromStores1.id];
   let channel = "channel";
-  const f102596 = () => {
+  const f104338 = () => {
     obj = channel(dependencyMap[6]);
     return obj.computeChannelName(channel, user, RelationshipStore);
   };
@@ -296,7 +446,7 @@ export function clarificationChannelEntities(stateFromStores1, arg1) {
     let tmp;
     let closure_0 = id;
     obj = { id, name: tmp };
-    tmp = f102596(id);
+    tmp = f104338(id);
     if (tmp == null) {
       const found = closure_2.find((id) => id.id === closure_0);
       let name;
@@ -317,7 +467,7 @@ export function clarificationChannelEntities(stateFromStores1, arg1) {
       }
       let tmp15;
       if (null != type) {
-        tmp15 = closure_2_6[type];
+        tmp15 = closure_2_7[type];
       }
       const obj2 = { kind: channel };
       if (null == tmp15) {
@@ -373,9 +523,9 @@ export function entityAnswer(input, c10, str, guildId) {
     ...c10.map((name) => {
       let name2;
       name = name.name;
-      const tmp = closure_7;
+      const tmp = closure_8;
       const tmp2 = input;
-      if (name.startsWith(closure_7[input])) {
+      if (name.startsWith(closure_8[input])) {
         name2 = name.name;
       } else {
         const _HermesInternal = HermesInternal;
@@ -505,8 +655,8 @@ export function submitClarificationAnswers(projectId, clarification, arg2, first
   _require = arg2;
   let questions = clarification.questions;
   const mapped = questions.map((question, index) => ({ question, index, answer: closure_0[question.id] }));
-  const found = mapped.filter(f102585);
-  const mapped1 = found.map(f102586);
+  const found = mapped.filter(f104326);
+  const mapped1 = found.map(f104327);
   const joined = mapped1.join("\n");
   if ("" !== joined) {
     let tmp2 = projectId;
@@ -613,17 +763,17 @@ export function submitClarificationAnswers(projectId, clarification, arg2, first
     });
   }
 }
-export function clarificationDraftAnswer(entityAnswerResult, multiSelectAnswerResult, str) {
+export function clarificationDraftAnswer(entityAnswerResult, uploadNoteAnswerResult, str) {
   if (null != entityAnswerResult) {
     let tmp6 = null;
     if ("" !== entityAnswerResult.text) {
       tmp6 = entityAnswerResult;
     }
     return tmp6;
-  } else if (null != multiSelectAnswerResult) {
+  } else if (null != uploadNoteAnswerResult) {
     let tmp5 = null;
-    if ("" !== multiSelectAnswerResult.text) {
-      tmp5 = multiSelectAnswerResult;
+    if ("" !== uploadNoteAnswerResult.text) {
+      tmp5 = uploadNoteAnswerResult;
     }
     return tmp5;
   } else {

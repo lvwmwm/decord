@@ -1,21 +1,20 @@
-// Module ID: 11210
-// Function ID: 11211
+// Module ID: 11350
+// Function ID: 11351
 // Name: CallPTTButton
-// Dependencies: [32, 19, 4863, 2006, 5764, 1072, 21, 5014, 575, 5011, 504, 11192, 11006, 11211, 5303, 5095, 1187, 1113, 2]
+// Dependencies: [32, 19, 4989, 2130, 5893, 1072, 21, 5140, 575, 5137, 504, 11332, 11136, 11351, 5420, 1705, 1652, 1187, 1113, 2]
 
-// Module 11210 (CallPTTButton)
+// Module 11350 (CallPTTButton)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
-import MediaEngineActionCreators from "MediaEngineActionCreators" /* 11211 */;
+import MediaEngineActionCreators from "MediaEngineActionCreators" /* 11351 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
-import MediaEngineStore from "MediaEngineStore" /* 2006 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5764 */;
-import createStyles_mod from "createStyles" /* 5014 */;
-import ColorUtils_mod from "ColorUtils" /* 5011 */;
+import ChannelStore from "ChannelStore" /* 4989 */;
+import MediaEngineStore from "MediaEngineStore" /* 2130 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5893 */;
+import createStyles_mod from "createStyles" /* 5140 */;
+import ColorUtils_mod from "ColorUtils" /* 5137 */;
 import size from "module_2" /* 2 */;
 
 let ColorUtils;
@@ -35,14 +34,22 @@ obj4 = { backgroundColor: ColorUtils.hexWithOpacity(nativeDefault.unsafe_rawColo
 ColorUtils = ColorUtils_mod;
 obj5 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 let closure_11 = createStyles(obj2);
-const __initData = { code: "function CallPTTButtonTsx1(){const{runOnJS,setDragging}=this.__closure;runOnJS(setDragging)(false);}" };
-const __initData2 = { code: "function CallPTTButtonTsx2(){const{runOnJS,setDragging,setPressed,setIsSwipeToChatDisabled}=this.__closure;runOnJS(setDragging)(true);runOnJS(setPressed)(false);if(setIsSwipeToChatDisabled!=null){runOnJS(setIsSwipeToChatDisabled)(false);}}" };
+let closure_12 = { code: "(function CallPTTButtonTsx1(){let[scheduleOnRN,setDragging,setPressed,setIsSwipeToChatDisabled]=this.__closure;scheduleOnRN(setDragging,true);scheduleOnRN(setPressed,false);if(setIsSwipeToChatDisabled!=null){scheduleOnRN(setIsSwipeToChatDisabled,false);}})" };
+let closure_13 = { code: "(function CallPTTButtonTsx2(){let[scheduleOnRN,setDragging]=this.__closure;scheduleOnRN(setDragging,false);})" };
 const memoResult = react.memo((look) => {
   let closure_4;
   let intl;
   let obj;
   let sendCallback;
   let style;
+  let tmp21;
+  let tmp22;
+  let tmp23;
+  let tmp24;
+  let tmp25;
+  let tmp27;
+  let tmp28;
+  let tmp29;
   let BRAND = look.look;
   if (BRAND === undefined) {
     let tmp = obj;
@@ -61,8 +68,8 @@ const memoResult = react.memo((look) => {
   obj = sendCallback(stateFromStores1[10]);
   const items = [mode];
   const stateFromStores = obj.useStateFromStores(items, () => mode.getMode());
-  let obj2 = sendCallback(stateFromStores1[10]);
   const items1 = [ref];
+  const obj2 = sendCallback(stateFromStores1[10]);
   stateFromStores1 = obj2.useStateFromStores(items1, () => ref.getChannelId());
   const items2 = [first1];
   const items3 = [stateFromStores1];
@@ -107,51 +114,63 @@ const memoResult = react.memo((look) => {
     tmp2.current = first || first1;
   }, items4);
   const Gesture = tmp3(tmp4[14]).Gesture;
-  const PanResult = Gesture.Pan();
-  class F {
+  const items5 = [closure_12, , , , ];
+  const onStart = Gesture.Pan().onStart;
+  Gesture.Pan();
+  items5[1] = sendCallback(stateFromStores1[15]).scheduleOnRN;
+  items5[2] = tmp12[1];
+  items5[3] = tmp9[1];
+  items5[4] = prop;
+  let c0;
+  let c1;
+  let c2;
+  let c3;
+  [tmp21, tmp22, tmp23, tmp24, tmp25] = items5;
+  class CallPTTButtonTsx1 {
     constructor() {
-      const obj = ReanimatedRexport;
-      obj.runOnJS(mode)(true);
-      const obj2 = ReanimatedRexport;
-      obj2.runOnJS(closure_4)(false);
-      if (null != prop) {
-        const tmpResult = ReanimatedRexport;
-        tmpResult.runOnJS(tmp5)(false);
+      _undefined(c1, true);
+      _undefined(c2, false);
+      const tmp = _undefined;
+      if (null != c3) {
+        tmp(c3, false);
       }
     }
   }
-  F.__closure = { runOnJS: sendCallback(stateFromStores1[15]).runOnJS, setDragging: tmp12[1], setPressed: tmp9[1], setIsSwipeToChatDisabled: prop };
-  F.__workletHash = 10056118853836;
-  F.__initData = __initData2;
-  ({ runOnJS: sendCallback(stateFromStores1[15]).runOnJS, setDragging: tmp12[1], setPressed: tmp9[1], setIsSwipeToChatDisabled: prop });
-  PanResult.onStart(F);
-  class N {
+  const items6 = [tmp22, tmp23, tmp24, tmp25];
+  CallPTTButtonTsx1.__closure = items6;
+  CallPTTButtonTsx1.__workletHash = 7400317648187;
+  CallPTTButtonTsx1.__initData = tmp21;
+  onStart(CallPTTButtonTsx1);
+  const items7 = [closure_13, tmp3(tmp4[15]).scheduleOnRN, tmp12[1]];
+  c0 = undefined;
+  c1 = undefined;
+  [tmp27, tmp28, tmp29] = items7;
+  class CallPTTButtonTsx2 {
     constructor() {
-      const obj = ReanimatedRexport;
-      obj.runOnJS(mode)(false);
+      _undefined(c1, false);
     }
   }
-  N.__closure = { runOnJS: sendCallback(stateFromStores1[15]).runOnJS, setDragging: tmp12[1] };
-  N.__workletHash = 8439106360958;
-  N.__initData = __initData;
-  let tmp22 = null;
-  ({ runOnJS: sendCallback(stateFromStores1[15]).runOnJS, setDragging: tmp12[1] });
+  const items8 = [tmp28, tmp29];
+  CallPTTButtonTsx2.__closure = items8;
+  CallPTTButtonTsx2.__workletHash = 9346672580777;
+  CallPTTButtonTsx2.__initData = tmp27;
+  let tmp31 = null;
   if (null != stateFromStores1) {
-    tmp22 = null;
+    tmp31 = null;
     if (prop.VOICE_ACTIVITY !== stateFromStores) {
-      tmp22 = null;
+      tmp31 = null;
       if (!isGuildStageVoiceResult) {
         let buttonBlurPressed;
-        let items7;
+        let items11;
         if (BRAND === obj.BRAND) {
-          const items5 = [tmp2.brandButtonContainer];
-          const items6 = [tmp2.button, style];
-          buttonBlurPressed = items6;
-          items7 = items5;
+          const items9 = [tmp2.brandButtonContainer];
+          const items10 = [tmp2.button, style];
+          buttonBlurPressed = items10;
+          items11 = items9;
         } else {
-          items7 = [, , ];
-          ({ button: arr6[0], container: arr6[1] } = tmp2);
-          items7[2] = style;
+          items11 = [, , ];
+          ({ button: arr10[0], container: arr10[1] } = tmp2);
+          items11[2] = style;
           if (!first) {
             if (!first1) {
               buttonBlurPressed = tmp2.buttonBlur;
@@ -160,11 +179,11 @@ const memoResult = react.memo((look) => {
           buttonBlurPressed = tmp2.buttonBlurPressed;
         }
         const GestureDetector = tmp3(tmp4[14]).GestureDetector;
-        const View = tmp7(tmp4[15]).View;
+        const View = tmp7(tmp4[16]).View;
         ({
           style: buttonBlurPressed,
           textStyle: tmp2.textStyle,
-          text: intl.string(sendCallback(stateFromStores1[17]).t.Q8gkVL),
+          text: intl.string(sendCallback(stateFromStores1[18]).t.Q8gkVL),
           onTouchStart: function handleStartSend() {
                   closure_4(true);
                   mode(false);
@@ -180,13 +199,13 @@ const memoResult = react.memo((look) => {
                 },
           darkenOnPress: true
         });
-        const Button = tmp3(tmp4[16]).Button;
-        intl = tmp3(tmp4[17]).intl;
-        tmp22 = <GestureDetector gesture={tmp21}>{null}</GestureDetector>;
+        const Button = tmp3(tmp4[17]).Button;
+        intl = tmp3(tmp4[18]).intl;
+        tmp31 = <GestureDetector gesture={tmp30}>{null}</GestureDetector>;
       }
     }
   }
-  return tmp22;
+  return tmp31;
 });
 const result = size.fileFinishedImporting("components_native/calls/CallPTTButton.tsx");
 

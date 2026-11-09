@@ -1,21 +1,21 @@
-// Module ID: 8020
-// Function ID: 8021
+// Module ID: 8090
+// Function ID: 8091
 // Name: AgeVerificationOtherWindowScreen
-// Dependencies: [19, 21, 5014, 1113, 3096, 7972, 7973, 6027, 7127, 575, 5624, 2]
+// Dependencies: [19, 21, 5140, 1113, 3252, 8041, 8043, 6159, 7198, 575, 5751, 2]
 // Exports: default
 
-// Module 8020 (AgeVerificationOtherWindowScreen)
+// Module 8090 (AgeVerificationOtherWindowScreen)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import _modDef3096 from "module_3096" /* 3096 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import Stack_Stack from "Stack/Stack" /* 6027 */;
-import MobilePhoneIcon2 from "MobilePhoneIcon" /* 7127 */;
-import ModalScreen2 from "ModalScreen" /* 7972 */;
-import ModalContent2 from "ModalContent" /* 7973 */;
+import _modDef3252 from "module_3252" /* 3252 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import Stack_Stack from "Stack/Stack" /* 6159 */;
+import MobilePhoneIcon2 from "MobilePhoneIcon" /* 7198 */;
+import ModalScreen2 from "ModalScreen" /* 8041 */;
+import ModalContent2 from "ModalContent" /* 8043 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -39,7 +39,7 @@ export default function AgeVerificationOtherWindowScreen(copy) {
   }
   if (title == null) {
     const intl = intl3.intl;
-    title = intl.string(_modDef3096.MLPgsX);
+    title = intl.string(_modDef3252.MLPgsX);
   }
   let description;
   if (copy != null) {
@@ -47,7 +47,7 @@ export default function AgeVerificationOtherWindowScreen(copy) {
   }
   if (description == null) {
     const intl2 = intl3.intl;
-    description = intl2.string(_modDef3096.VcZF1q);
+    description = intl2.string(_modDef3252.VcZF1q);
   }
   const obj = { children: _false(ModalContent, obj2) };
   const ModalScreen = ModalScreen2.ModalScreen;
@@ -61,9 +61,9 @@ export default function AgeVerificationOtherWindowScreen(copy) {
   const obj5 = { align: "center", justify: "center", spacing: 8, children: items1 };
   const Stack2 = Stack_Stack.Stack;
   items1 = [, ];
-  const obj6 = { accessibilityRole: "header", variant: "heading-lg/bold", color: "mobile-text-heading-primary", style: tmp.text, children: title };
+  const obj6 = { accessibilityRole: "header", variant: "heading-lg/semibold", color: "mobile-text-heading-primary", style: tmp.text, children: title };
   items1[0] = _false(Text_Text.Text, obj6);
-  const obj7 = { variant: "text-md/medium", color: "text-muted", style: tmp.text, children: description };
+  const obj7 = { variant: "body-md/medium", color: "text-muted", style: tmp.text, children: description };
   items1[1] = _false(Text_Text.Text, obj7);
   items[1] = React3(Stack2, obj5);
   return _false(ModalScreen, obj);

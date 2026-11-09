@@ -1,13 +1,13 @@
-// Module ID: 17671
-// Function ID: 17672
+// Module ID: 17999
+// Function ID: 18000
 // Name: BackButton
-// Dependencies: [21, 1497, 17672, 1113, 17666, 2]
+// Dependencies: [21, 1499, 18000, 1113, 17994, 2]
 // Exports: default
 
-// Module 17671 (BackButton)
+// Module 17999 (BackButton)
 import Fragment from "Fragment" /* 21 */;
-import MfaStepsTypes from "MfaStepsTypes" /* 17666 */;
-import buttonDefault from "button" /* 17672 */;
+import MfaStepsTypes from "MfaStepsTypes" /* 17994 */;
+import buttonDefault from "button" /* 18000 */;
 import size from "module_2" /* 2 */;
 
 let importDefault;
@@ -18,7 +18,7 @@ const result = size.fileFinishedImporting("modules/mfa/native/components/BackBut
 export default function BackButton(props) {
   let closure_1;
   props = props.props;
-  const obj = props(1497);
+  const obj = props(1499);
   importDefault = obj.useNavigation();
   buttonDefault;
   const intl = props(1113).intl;

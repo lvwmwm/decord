@@ -1,17 +1,17 @@
-// Module ID: 16642
-// Function ID: 16643
+// Module ID: 16964
+// Function ID: 16965
 // Name: SafetyHubAccountStandingSubwayMarker
-// Dependencies: [19, 17, 21, 5014, 575, 1113, 5624, 2]
+// Dependencies: [19, 17, 21, 5140, 575, 1113, 5751, 2]
 // Exports: default
 
-// Module 16642 (SafetyHubAccountStandingSubwayMarker)
+// Module 16964 (SafetyHubAccountStandingSubwayMarker)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5624 */;
+import Text_Text from "Text/Text" /* 5751 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -81,11 +81,11 @@ export default function SafetyHubAccountStandingSubwayMarker(arg0) {
       const Text = Text_Text.Text;
       const tmp = React3;
       if (isSelected) {
-        const obj2 = { style: obj3, variant: "text-xxs/bold", children };
+        const obj2 = { style: obj3, variant: "footnote/semibold", children };
         obj = obj2;
         obj3 = { color: require.color };
       } else {
-        obj = { color: "interactive-text-default", variant: "text-xxs/normal", style: label.label, children };
+        obj = { color: "interactive-text-default", variant: "footnote/normal", style: label.label, children };
       }
       return tmp(Text, obj, arg1);
     }

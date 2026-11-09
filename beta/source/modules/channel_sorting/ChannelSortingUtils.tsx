@@ -1,13 +1,13 @@
-// Module ID: 14411
-// Function ID: 14412
+// Module ID: 14647
+// Function ID: 14648
 // Name: ChannelSortingUtils
-// Dependencies: [4867, 1072, 13980, 7281, 2]
+// Dependencies: [4993, 1072, 14214, 7344, 2]
 // Exports: areTypesInSameSection, getChannelPlacementUpdates, getDropData, getSectionSiblings
 
-// Module 14411 (ChannelSortingUtils)
-import getFlattedChannelListDefault from "getFlattedChannelList" /* 7281 */;
-import DragAndDropUtilsDefault from "DragAndDropUtils" /* 13980 */;
-import ChannelRecord from "ChannelRecord" /* 4867 */;
+// Module 14647 (ChannelSortingUtils)
+import getFlattedChannelListDefault from "getFlattedChannelList" /* 7344 */;
+import DragAndDropUtilsDefault from "DragAndDropUtils" /* 14214 */;
+import ChannelRecord from "ChannelRecord" /* 4993 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 

@@ -1,45 +1,58 @@
-// Module ID: 5637
-// Function ID: 5638
-// Name: spring
-// Dependencies: [5255, 5256, 5095, 2]
+// Module ID: 5761
+// Function ID: 5762
+// Name: spring/spring
+// Dependencies: [5371, 5372, 1652, 2]
 // Exports: withSpring
 
-// Module 5637 (spring)
-import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
-import ReanimatedConstants from "ReanimatedConstants" /* 5255 */;
-import reanimated_AccessibilityPreferencesSharedValue from "reanimated/AccessibilityPreferencesSharedValue" /* 5256 */;
+// Module 5761 (spring/spring)
+import _mod1652 from "module_1652" /* 1652 */;
+import ReanimatedConstants from "ReanimatedConstants" /* 5371 */;
+import reanimated_AccessibilityPreferencesSharedValue from "reanimated/AccessibilityPreferencesSharedValue" /* 5372 */;
 import size from "module_2" /* 2 */;
 
+let tmp2;
+let tmp3;
+let tmp4;
+let tmp5;
+let tmp6;
+const items = [{ code: "(function withSpring_springTsx1(toValue,config,shouldAnimate='respect-motion-settings',callback){let[accessibilityPreferencesSharedValue,CONFIG_NEVER_ANIMATE,ReduceMotion,REAwithSpring]=this.__closure;const reducedMotionEnabled=accessibilityPreferencesSharedValue.get().reduceMotion;const animate=shouldAnimate==='animate-always'||shouldAnimate==='respect-motion-settings'&&!reducedMotionEnabled;const configForRea=!animate?CONFIG_NEVER_ANIMATE:shouldAnimate==='animate-always'?{...(config!==null&&config!==void 0?config:{}),reduceMotion:ReduceMotion.Never}:config;return REAwithSpring(toValue,configForRea,callback);})" }, , , , ];
 const CONFIG_NEVER_ANIMATE = ReanimatedConstants.CONFIG_NEVER_ANIMATE;
-function withSpring(targetHeight, SUBTLE_SPRING, fn, fn2) {
-  let tmp5;
-  let str = fn;
-  if (fn === undefined) {
+items[1] = reanimated_AccessibilityPreferencesSharedValue.accessibilityPreferencesSharedValue;
+items[2] = CONFIG_NEVER_ANIMATE;
+items[3] = _mod1652.ReduceMotion;
+items[4] = _mod1652.withSpring;
+let c0;
+let c1;
+let c2;
+let c3;
+[tmp2, tmp3, tmp4, tmp5, tmp6] = items;
+function withSpring(point2, Reanimated3DefaultSpringConfig, arg2, BalanceCounterTsx1) {
+  let tmp3;
+  let str = arg2;
+  if (arg2 === undefined) {
     str = "respect-motion-settings";
   }
-  const accessibilityPreferencesSharedValue = reanimated_AccessibilityPreferencesSharedValue.accessibilityPreferencesSharedValue;
   if ("animate-always" === str) {
-    let tmp7 = SUBTLE_SPRING;
+    let tmp5 = Reanimated3DefaultSpringConfig;
     if ("animate-always" === str) {
-      let obj = SUBTLE_SPRING;
-      if (SUBTLE_SPRING == null) {
+      let obj = Reanimated3DefaultSpringConfig;
+      if (Reanimated3DefaultSpringConfig == null) {
         obj = {};
       }
-      const obj2 = { reduceMotion: ReanimatedRexport.ReduceMotion.Never };
+      const obj2 = { reduceMotion: Never.Never };
       const merged = Object.assign(obj);
-      tmp7 = obj2;
+      tmp5 = obj2;
     }
-    tmp5 = tmp7;
+    tmp3 = tmp5;
   } else {
-    tmp5 = CONFIG_NEVER_ANIMATE;
+    tmp3 = c1;
   }
-  const tmpResult = ReanimatedRexport;
-  return tmpResult.withSpring(targetHeight, tmp5, fn2);
+  return _undefined2(point2, tmp3, BalanceCounterTsx1);
 }
-let obj = { accessibilityPreferencesSharedValue: reanimated_AccessibilityPreferencesSharedValue.accessibilityPreferencesSharedValue, CONFIG_NEVER_ANIMATE, ReduceMotion: ReanimatedRexport.ReduceMotion, REAwithSpring: ReanimatedRexport.withSpring };
-withSpring.__closure = obj;
-withSpring.__workletHash = 14783154107972;
-withSpring.__initData = { code: "function withSpring_springTsx1(toValue,config,shouldAnimate='respect-motion-settings',callback){const{accessibilityPreferencesSharedValue,CONFIG_NEVER_ANIMATE,ReduceMotion,REAwithSpring}=this.__closure;const reducedMotionEnabled=accessibilityPreferencesSharedValue.get().reduceMotion;const animate=shouldAnimate==='animate-always'||shouldAnimate==='respect-motion-settings'&&!reducedMotionEnabled;const configForRea=!animate?CONFIG_NEVER_ANIMATE:shouldAnimate==='animate-always'?{...(config!==null&&config!==void 0?config:{}),reduceMotion:ReduceMotion.Never}:config;return REAwithSpring(toValue,configForRea,callback);}" };
+const items1 = [tmp3, tmp4, tmp5, tmp6];
+withSpring.__closure = items1;
+withSpring.__workletHash = 7534957405213;
+withSpring.__initData = tmp2;
 const result = size.fileFinishedImporting("design/animation/reanimated/spring/spring.tsx");
 
 export { withSpring };

@@ -1,8 +1,8 @@
-// Module ID: 6187
-// Function ID: 6188
+// Module ID: 6319
+// Function ID: 6320
 // Dependencies: [2]
 
-// Module 6187
+// Module 6319
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/layer/outfit/goth.png.js");

@@ -1,13 +1,13 @@
-// Module ID: 14979
-// Function ID: 14980
+// Module ID: 15252
+// Function ID: 15253
 // Name: useUserProfileGameFriendApplicationIds
-// Dependencies: [19, 4956, 1383, 504, 14920, 2]
+// Dependencies: [19, 5082, 1385, 504, 15153, 2]
 // Exports: useUserProfileGameFriendApplicationIds
 
-// Module 14979 (useUserProfileGameFriendApplicationIds)
+// Module 15252 (useUserProfileGameFriendApplicationIds)
 import react from "react" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4956 */;
-import UserStore from "UserStore" /* 1383 */;
+import RelationshipStore from "RelationshipStore" /* 5082 */;
+import UserStore from "UserStore" /* 1385 */;
 import size from "module_2" /* 2 */;
 
 let closure_5 = [];

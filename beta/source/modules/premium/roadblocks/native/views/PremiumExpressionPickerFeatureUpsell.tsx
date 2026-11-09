@@ -1,20 +1,22 @@
-// Module ID: 10044
-// Function ID: 10045
+// Module ID: 10166
+// Function ID: 10167
 // Name: PremiumExpressionPickerFeatureUpsell
-// Dependencies: [19, 17, 21, 5014, 575, 1625, 7101, 1092, 5095, 10045, 2]
+// Dependencies: [19, 17, 21, 5140, 575, 1627, 7172, 1092, 1652, 10167, 2]
 // Exports: default
 
-// Module 10044 (PremiumExpressionPickerFeatureUpsell)
+// Module 10166 (PremiumExpressionPickerFeatureUpsell)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import ConstantsIOS from "ConstantsIOS" /* 1092 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1625 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
-import useKeyboardIsOpenDefault from "useKeyboardIsOpen" /* 7101 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
+import _mod1652 from "module_1652" /* 1652 */;
+import useKeyboardIsOpenDefault from "useKeyboardIsOpen" /* 7172 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
+
+let num, num2, tmp, tmp2, value;
 
 const View = react_native.View;
 const jsx = Fragment.jsx;
@@ -24,40 +26,55 @@ let closure_5 = createStyles.createStyles((arg0) => {
   rect = { position: "absolute", bottom: arg0 + nativeDefault.space.PX_12, left: 0, right: 0 };
   return obj;
 });
-const __initData = { code: "function PremiumExpressionPickerFeatureUpsellTsx1(){const{shouldShow,inPortalKeyboard,bottomSheetIndex}=this.__closure;if(!shouldShow.get()){return false;}return inPortalKeyboard?bottomSheetIndex.get()===1:bottomSheetIndex.get()===0;}" };
+let closure_6 = { code: "(function PremiumExpressionPickerFeatureUpsellTsx1(){let[shouldShow,inPortalKeyboard,bottomSheetIndex]=this.__closure;if(!shouldShow.get()){return false;}return inPortalKeyboard?bottomSheetIndex.get()===1:bottomSheetIndex.get()===0;})" };
 const result = size.fileFinishedImporting("modules/premium/roadblocks/native/views/PremiumExpressionPickerFeatureUpsell.tsx");
 
-export default function PremiumExpressionPickerFeatureUpsell(bottomSheetIndex) {
+export default function PremiumExpressionPickerFeatureUpsell(arg0) {
   let analyticsLocation;
+  let bottomSheetIndex;
   let featureName;
-  bottomSheetIndex = bottomSheetIndex.bottomSheetIndex;
-  const inPortalKeyboard = bottomSheetIndex.inPortalKeyboard;
-  const shouldShow = bottomSheetIndex.shouldShow;
-  ({ featureName, analyticsLocation } = bottomSheetIndex);
+  let inPortalKeyboard;
+  let shouldShow;
+  let tmp6;
+  let tmp7;
+  let tmp8;
+  let tmp9;
+  ({ bottomSheetIndex, featureName, analyticsLocation, inPortalKeyboard, shouldShow } = arg0);
   const bottom = useSafeAreaInsetsDefault().bottom;
   const tmp3 = useKeyboardIsOpenDefault();
   const tmp4 = closure_5(ConstantsIOS.EXPRESSION_FOOTER_HEIGHT + bottom);
-  let tmp5 = ReanimatedRexport;
-  const fn = function _() {
-    let value1 = shouldShow.get();
-    if (value1) {
-      let tmp5;
-      const value = bottomSheetIndex.get();
-      if (inPortalKeyboard) {
-        tmp5 = 1 === value;
-      } else {
-        tmp5 = 0 === value;
+  let tmp5 = _mod1652;
+  const items = [closure_6, shouldShow, inPortalKeyboard, bottomSheetIndex];
+  let c0;
+  let c1;
+  let c2;
+  [tmp6, tmp7, tmp8, tmp9] = items;
+  class PremiumExpressionPickerFeatureUpsellTsx1 {
+    constructor() {
+      tmp = closure_0.get();
+      if (tmp) {
+        tmp2 = closure_1;
+        tmp3 = closure_2;
+        value = closure_2.get();
+        if (closure_1) {
+          num2 = 1;
+          tmp5 = 1 === value;
+        } else {
+          num = 0;
+          tmp5 = 0 === value;
+        }
+        tmp = tmp5;
       }
-      value1 = tmp5;
+      return tmp;
     }
-    return value1;
-  };
-  fn.__closure = { shouldShow, inPortalKeyboard, bottomSheetIndex };
-  fn.__workletHash = 15061973364879;
-  fn.__initData = __initData;
-  let tmp7 = null;
-  if (!tmp3) {
-    tmp7 = <View style={tmp4.container}>{null}</View>;
   }
-  return tmp7;
+  const items1 = [tmp7, tmp8, tmp9];
+  PremiumExpressionPickerFeatureUpsellTsx1.__closure = items1;
+  PremiumExpressionPickerFeatureUpsellTsx1.__workletHash = 15896580392790;
+  PremiumExpressionPickerFeatureUpsellTsx1.__initData = tmp6;
+  let tmp11 = null;
+  if (!tmp3) {
+    tmp11 = <View style={tmp4.container}>{null}</View>;
+  }
+  return tmp11;
 };

@@ -1,19 +1,19 @@
-// Module ID: 19257
-// Function ID: 19258
+// Module ID: 19652
+// Function ID: 19653
 // Name: ActivitiesDebugOverlay
-// Dependencies: [19, 17, 21, 5014, 5011, 575, 16293, 16294, 1625, 5624, 2]
+// Dependencies: [19, 17, 21, 5140, 5137, 575, 16613, 16614, 1627, 5751, 2]
 // Exports: default
 
-// Module 19257 (ActivitiesDebugOverlay)
+// Module 19652 (ActivitiesDebugOverlay)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import useThermalStateDefault from "useThermalState" /* 16293 */;
-import ThermalStates from "ThermalStates" /* 16294 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import useThermalStateDefault from "useThermalState" /* 16613 */;
+import ThermalStates from "ThermalStates" /* 16614 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
-import ColorUtils_mod from "ColorUtils" /* 5011 */;
+import createStyles_mod from "createStyles" /* 5140 */;
+import ColorUtils_mod from "ColorUtils" /* 5137 */;
 import size from "module_2" /* 2 */;
 
 let ColorUtils;
@@ -21,7 +21,7 @@ let closure_4;
 let hasOwnProperty;
 let rect;
 let tmp2;
-const useSafeAreaInsetsDefault = tmp2(1625);
+const useSafeAreaInsetsDefault = tmp2(1627);
 const View = react_native.View;
 ({ jsxs: closure_4, jsx: hasOwnProperty } = Fragment);
 let createStyles = createStyles_mod;
@@ -64,6 +64,6 @@ export default function ActivitiesDebugOverlay() {
   const obj2 = { paddingTop: rect.top + 16, paddingLeft: rect.left + 16 };
   items[1] = obj2;
   obj3 = { style: tmp.row, children: items1 };
-  items1 = [React3(Text_Text.Text, { variant: "text-md/normal", color: "text-overlay-light", children: ["thermal state:", " "] }), hasOwnProperty(Text_Text.Text, { variant: "text-md/normal", color: str, children: str2 })];
+  items1 = [React3(Text_Text.Text, { variant: "body-md/normal", color: "text-overlay-light", children: ["thermal state:", " "] }), hasOwnProperty(Text_Text.Text, { variant: "body-md/normal", color: str, children: str2 })];
   return hasOwnProperty(View, obj);
 };

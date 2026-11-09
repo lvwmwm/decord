@@ -1,27 +1,27 @@
-// Module ID: 17227
-// Function ID: 17228
+// Module ID: 17553
+// Function ID: 17554
 // Name: GuildRoleSubscriptionBenefitRow
-// Dependencies: [19, 17, 4863, 21, 5014, 575, 17225, 1187, 5624, 504, 5652, 1113, 17228, 2]
+// Dependencies: [19, 17, 4989, 21, 5140, 575, 17551, 1187, 5751, 504, 5776, 1113, 17554, 2]
 // Exports: ChannelBenefitRow, IntangibleBenefitRow
 
-// Module 17227 (GuildRoleSubscriptionBenefitRow)
+// Module 17553 (GuildRoleSubscriptionBenefitRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
-import useChannelNameDefault from "useChannelName" /* 5652 */;
-import EmojiIconDefault from "EmojiIcon" /* 17225 */;
-import GuildRoleSubscriptionBenefitUtils from "GuildRoleSubscriptionBenefitUtils" /* 17228 */;
+import useChannelNameDefault from "useChannelName" /* 5776 */;
+import EmojiIconDefault from "EmojiIcon" /* 17551 */;
+import GuildRoleSubscriptionBenefitUtils from "GuildRoleSubscriptionBenefitUtils" /* 17554 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
+import ChannelStore from "ChannelStore" /* 4989 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
 let metroRequire;
 let obj2;
 let tmp6;
-const Text_Text = tmp6(5624);
+const Text_Text = tmp6(5751);
 function BenefitRow(description) {
   let emojiId;
   let guildId;
@@ -38,7 +38,7 @@ function BenefitRow(description) {
   let tmp4Result = null;
   const tmp4 = hasOwnProperty;
   if (null != description) {
-    const obj3 = { style: tmp.description, variant: "text-sm/normal", color: "interactive-text-default", children: description };
+    const obj3 = { style: tmp.description, variant: "body-sm/normal", color: "interactive-text-default", children: description };
     tmp4Result = tmp4(Text_Text.Text, obj3);
   }
   items1[1] = tmp4Result;
@@ -63,23 +63,23 @@ export function ChannelBenefitRow(benefit) {
   const items1 = [benefit.ref_id];
   const obj = benefit(504);
   const stateFromStores = obj.useStateFromStores(items, () => ChannelStore.getChannel(benefit.ref_id), items1);
-  const obj2 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: "[" + intl.string(benefit(1113).t.bz1PZX) + "]" };
+  const obj2 = { variant: "body-md/semibold", color: "mobile-text-heading-primary", children: "[" + intl.string(benefit(1113).t.bz1PZX) + "]" };
   const tmp5 = useChannelNameDefault(stateFromStores);
-  const Text = benefit(5624).Text;
+  const Text = benefit(5751).Text;
   intl = benefit(1113).intl;
   let tmp7 = closure_5(Text, obj2);
   if (null != stateFromStores) {
     const obj3 = { style: tmp.channelTitle, children: items2 };
     items2 = [, ];
     const obj4 = { style: tmp.channelIcon, size: "xs", color: "interactive-text-default" };
-    const tmp2Result = benefit(17228);
+    const tmp2Result = benefit(17554);
     items2[0] = tmp2Result.renderChannelIcon(stateFromStores, obj4);
-    const obj5 = { variant: "text-md/medium", color: "mobile-text-heading-primary", children: tmp5 };
-    items2[1] = closure_5(benefit(5624).Text, obj5);
+    const obj5 = { variant: "body-md/medium", color: "mobile-text-heading-primary", children: tmp5 };
+    items2[1] = closure_5(benefit(5751).Text, obj5);
     tmp7 = closure_6(View, obj3);
   }
   const obj6 = { emojiId: tmp2Result2.getBenefitEmojiId(benefit), guildId, title: tmp7, description: benefit.description };
-  tmp2Result2 = benefit(17228);
+  tmp2Result2 = benefit(17554);
   return closure_5(BenefitRow, obj6);
 }
 export function IntangibleBenefitRow(benefit) {
@@ -90,6 +90,6 @@ export function IntangibleBenefitRow(benefit) {
   const obj = { emojiId: obj2.getBenefitEmojiId(benefit), guildId, title: hasOwnProperty(Text_Text.Text, obj3), description: benefit.description };
   guildId = benefit.guildId;
   obj2 = GuildRoleSubscriptionBenefitUtils;
-  obj3 = { variant: "text-md/medium", color: "mobile-text-heading-primary", children: benefit.name };
+  obj3 = { variant: "body-md/medium", color: "mobile-text-heading-primary", children: benefit.name };
   return hasOwnProperty(BenefitRow, obj);
 }

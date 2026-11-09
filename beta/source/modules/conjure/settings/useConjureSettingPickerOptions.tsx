@@ -1,17 +1,17 @@
-// Module ID: 12152
-// Function ID: 12153
+// Module ID: 12322
+// Function ID: 12323
 // Name: useConjureSettingPickerOptions
-// Dependencies: [19, 4944, 4956, 5069, 1383, 6844, 504, 7419, 12153, 5652, 6041, 2]
+// Dependencies: [19, 5070, 5082, 5195, 1385, 6899, 504, 7483, 12323, 5776, 6173, 2]
 // Exports: conjureSettingPickedIds, default, useConjureSettingsGuildId, withPickCap, withSavedPicks
 
-// Module 12152 (useConjureSettingPickerOptions)
-import ConjureUtils from "ConjureUtils" /* 7419 */;
+// Module 12322 (useConjureSettingPickerOptions)
+import ConjureUtils from "ConjureUtils" /* 7483 */;
 import react from "react" /* 19 */;
-import GuildChannelStore from "GuildChannelStore" /* 4944 */;
-import RelationshipStore from "RelationshipStore" /* 4956 */;
-import StreamerModeStore from "StreamerModeStore" /* 5069 */;
-import UserStore from "UserStore" /* 1383 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6844 */;
+import GuildChannelStore from "GuildChannelStore" /* 5070 */;
+import RelationshipStore from "RelationshipStore" /* 5082 */;
+import StreamerModeStore from "StreamerModeStore" /* 5195 */;
+import UserStore from "UserStore" /* 1385 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6899 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -47,8 +47,8 @@ export default function useConjureSettingPickerOptions(arg0, type) {
   }
   conjureGuildRoles = useConjureGuildRoles(tmp5);
   let tmp8 = null;
-  const useConjureGuildMemberUsers = tmp(12153).useConjureGuildMemberUsers;
-  tmp(12153);
+  const useConjureGuildMemberUsers = tmp(12323).useConjureGuildMemberUsers;
+  tmp(12323);
   if ("user" === type.type) {
     tmp8 = arg0;
   }
@@ -150,17 +150,16 @@ export function withSavedPicks(arr, value, arg2) {
   }
   return items3;
 }
-export function withPickCap(arr, arg1) {
+export function withPickCap(items1, first1) {
   let mapped;
-  let closure_0 = arg1;
-  if (arg1.length < 25) {
+  if (first1.length < 25) {
     const items = [];
-    HermesBuiltin.arraySpread(items, arr, 0);
+    HermesBuiltin.arraySpread(items, items1, 0);
     mapped = items;
   } else {
-    mapped = arr.map((id) => {
+    mapped = items1.map((id) => {
       let tmp = id;
-      if (!closure_0.includes(id.id)) {
+      if (!first1.includes(id.id)) {
         const obj = { disabled: true };
         const merged = Object.assign(id);
         tmp = obj;

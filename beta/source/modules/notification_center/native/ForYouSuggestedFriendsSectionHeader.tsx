@@ -1,17 +1,17 @@
-// Module ID: 18505
-// Function ID: 18506
+// Module ID: 18860
+// Function ID: 18861
 // Name: ForYouSuggestedFriendsSectionHeader
-// Dependencies: [19, 17, 21, 5014, 575, 5624, 1113, 2]
+// Dependencies: [19, 17, 21, 5140, 575, 5751, 1113, 2]
 // Exports: default
 
-// Module 18505 (ForYouSuggestedFriendsSectionHeader)
+// Module 18860 (ForYouSuggestedFriendsSectionHeader)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5624 */;
+import Text_Text from "Text/Text" /* 5751 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -35,7 +35,7 @@ export default function ForYouSuggestedFriendsSectionHeader(showDivider) {
     noDivider = tmp.noDivider;
   }
   items[1] = noDivider;
-  ({ style: tmp.text, color: "text-muted", variant: "text-sm/semibold", children: intl.string(intl2.t["1uAmCw"]) });
+  ({ style: tmp.text, color: "text-muted", variant: "body-sm/semibold", children: intl.string(intl2.t["1uAmCw"]) });
   const Text = Text_Text.Text;
   intl = intl2.intl;
   return <tmp3 style={items}>{null}</tmp3>;

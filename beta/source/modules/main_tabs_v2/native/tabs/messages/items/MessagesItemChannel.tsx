@@ -1,21 +1,21 @@
-// Module ID: 18083
-// Function ID: 18084
+// Module ID: 18425
+// Function ID: 18426
 // Name: MessagesItemChannel
-// Dependencies: [32, 19, 4863, 21, 11047, 575, 18084, 504, 18093, 7294, 14422, 2]
+// Dependencies: [32, 19, 4989, 21, 5883, 575, 18426, 504, 18435, 7357, 14658, 2]
 // Exports: getMessagesItemChannelSizes
 
-// Module 18083 (MessagesItemChannel)
+// Module 18425 (MessagesItemChannel)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
-import defaultMVCPConfig from "defaultMVCPConfig" /* 7294 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11047 */;
-import LegendList from "LegendList" /* 14422 */;
-import MessagesItemChannelBase from "MessagesItemChannelBase" /* 18084 */;
-import MessagesItemPlaceholderDefault from "MessagesItemPlaceholder" /* 18093 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 5883 */;
+import defaultMVCPConfig from "defaultMVCPConfig" /* 7357 */;
+import LegendList from "LegendList" /* 14658 */;
+import MessagesItemChannelBase from "MessagesItemChannelBase" /* 18426 */;
+import MessagesItemPlaceholderDefault from "MessagesItemPlaceholder" /* 18435 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
+import ChannelStore from "ChannelStore" /* 4989 */;
 import size from "module_2" /* 2 */;
 
 const MessagesItemChannelBaseDefault = MessagesItemChannelBase;
@@ -76,9 +76,9 @@ const result = size.fileFinishedImporting("modules/main_tabs_v2/native/tabs/mess
 export function getMessagesItemChannelSizes(fontScale) {
   let sum;
   const obj = useScaledTextLineHeight;
-  const scaleTextLineHeightResult = obj.scaleTextLineHeight("redesign/channel-title/semibold", fontScale);
+  const scaleTextLineHeightResult = obj.scaleTextLineHeight("heading-sm/semibold", fontScale);
   const obj2 = useScaledTextLineHeight;
-  const scaleTextLineHeightResult1 = obj2.scaleTextLineHeight("text-xs/medium", fontScale);
+  const scaleTextLineHeightResult1 = obj2.scaleTextLineHeight("body-xs/medium", fontScale);
   const PX_16 = nativeDefault.space.PX_16;
   const PX_32 = nativeDefault.space.PX_32;
   const obj3 = { avatar: PX_32, height: sum + MessagesItemChannelBase.MESSAGES_ITEM_CHANNEL_PRESSABLE_PADDING, label: scaleTextLineHeightResult, labelSecondary: scaleTextLineHeightResult1, padding: PX_16 };

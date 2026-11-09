@@ -1,25 +1,25 @@
-// Module ID: 10912
-// Function ID: 10913
+// Module ID: 11038
+// Function ID: 11039
 // Name: SuccessResultModal
-// Dependencies: [19, 17, 4863, 4946, 4917, 1072, 1496, 21, 5014, 575, 8903, 1113, 6744, 7522, 1252, 504, 5258, 5207, 1623, 7292, 5717, 10913, 5624, 5634, 2]
+// Dependencies: [19, 17, 4989, 5072, 5043, 1072, 1498, 21, 5140, 575, 8977, 1113, 6799, 7594, 1252, 504, 5374, 5323, 1625, 7355, 5842, 11039, 5751, 5758, 2]
 // Exports: default
 
-// Module 10912 (SuccessResultModal)
+// Module 11038 (SuccessResultModal)
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1496 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6744 */;
-import transitionToGuild2 from "transitionToGuild" /* 7522 */;
+import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1498 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6799 */;
+import transitionToGuild2 from "transitionToGuild" /* 7594 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
-import PermissionStore from "PermissionStore" /* 4946 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4917 */;
+import ChannelStore from "ChannelStore" /* 4989 */;
+import PermissionStore from "PermissionStore" /* 5072 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5043 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let c10;
@@ -221,14 +221,14 @@ export default function SuccessResultModal(guild) {
   const obj6 = { source: application(stateFromStores[21]) };
   const tmp18 = application(stateFromStores[20]);
   items8 = [closure_12(tmp18, obj6), , ];
-  const obj7 = { style: tmp.text, variant: "text-lg/medium", children: intl.string(tmp2(stateFromStores[11]).t.se5gLj) };
+  const obj7 = { style: tmp.text, variant: "body-lg/medium", children: intl.string(tmp2(stateFromStores[11]).t.se5gLj) };
   const Text = tmp2(tmp3[22]).Text;
   intl = tmp2(tmp3[11]).intl;
   items8[1] = closure_12(Text, obj7);
   let tmp15Result = null;
   const tmp16 = closure_5;
   if (null != memo) {
-    const obj8 = { style: tmp.text, variant: "text-sm/normal", children: memo };
+    const obj8 = { style: tmp.text, variant: "body-sm/normal", children: memo };
     tmp15Result = tmp15(tmp2(tmp3[22]).Text, obj8);
   }
   items8[2] = tmp15Result;

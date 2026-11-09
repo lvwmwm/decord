@@ -1,20 +1,20 @@
-// Module ID: 14565
-// Function ID: 14566
+// Module ID: 14801
+// Function ID: 14802
 // Name: ConversationCoachmark
-// Dependencies: [32, 19, 17, 4860, 21, 4847, 5014, 575, 5624, 1113, 7569, 9954, 2]
+// Dependencies: [32, 19, 17, 4986, 21, 4973, 5140, 575, 5751, 1113, 7641, 10076, 2]
 // Exports: ConversationCoachmark
 
-// Module 14565 (ConversationCoachmark)
+// Module 14801 (ConversationCoachmark)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import dismissible_content from "dismissible_content" /* 4847 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4860 */;
-import Text_Text from "Text/Text" /* 5624 */;
+import dismissible_content from "dismissible_content" /* 4973 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4986 */;
+import Text_Text from "Text/Text" /* 5751 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -23,7 +23,7 @@ let obj2;
 let obj3;
 function NewBadge() {
   let intl;
-  ({ variant: "text-sm/bold", color: "text-default", children: intl.string(intl3.t.c2GSIl) });
+  ({ variant: "body-sm/semibold", color: "text-default", children: intl.string(intl3.t.c2GSIl) });
   const Text = Text_Text.Text;
   intl = intl3.intl;
   return <View style={closure_9().badge}>{null}</View>;
@@ -49,7 +49,7 @@ export function ConversationCoachmark(arg0) {
   ({ children, isLast } = arg0);
   const tmp = closure_9();
   const ref = react.useRef(null);
-  let obj = first(7569);
+  let obj = first(7641);
   const tmp3 = _slicedToArray(obj.useSelectedDismissibleContent(items), 2);
   first = tmp3[0];
   dependencyMap = tmp5;
@@ -73,7 +73,7 @@ export function ConversationCoachmark(arg0) {
     intl2 = intl3.intl;
     return obj;
   }, items);
-  const obj2 = first(9954);
+  const obj2 = first(10076);
   const coachmark = obj2.useCoachmark(ref, memo);
   const items1 = [tmp3[1]];
   let coachmarkWrapper;

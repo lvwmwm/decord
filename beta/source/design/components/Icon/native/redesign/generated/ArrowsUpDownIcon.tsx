@@ -1,14 +1,14 @@
-// Module ID: 12482
-// Function ID: 12483
+// Module ID: 12685
+// Function ID: 12686
 // Name: ArrowsUpDownIcon
-// Dependencies: [19, 21, 575, 5716, 12483, 2]
+// Dependencies: [19, 21, 575, 5841, 12686, 2]
 // Exports: ArrowsUpDownIcon
 
-// Module 12482 (ArrowsUpDownIcon)
+// Module 12685 (ArrowsUpDownIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5716 */;
-import AssetRegistry from "AssetRegistry" /* 12483 */;
+import BaseIconImage2 from "BaseIconImage" /* 5841 */;
+import AssetRegistry from "AssetRegistry" /* 12686 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

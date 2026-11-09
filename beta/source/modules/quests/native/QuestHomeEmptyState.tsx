@@ -1,25 +1,25 @@
-// Module ID: 16974
-// Function ID: 16975
+// Module ID: 17297
+// Function ID: 17298
 // Name: QuestHomeEmptyState
-// Dependencies: [19, 17, 1072, 21, 5014, 575, 1113, 5596, 5201, 7292, 1375, 5624, 5717, 16975, 5587, 2]
+// Dependencies: [19, 17, 1072, 21, 5140, 575, 1113, 5724, 5317, 7355, 1377, 5751, 5842, 17298, 5715, 2]
 // Exports: default
 
-// Module 16974 (QuestHomeEmptyState)
+// Module 17297 (QuestHomeEmptyState)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl3 from "intl" /* 1113 */;
-import PlatformUtils from "PlatformUtils" /* 1375 */;
-import useChatLayoutDefault from "useChatLayout" /* 5201 */;
-import LinearGradientDefault from "LinearGradient" /* 5587 */;
-import useToken from "useToken" /* 5596 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import FastImageDefault from "FastImage" /* 5717 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7292 */;
-import AssetRegistryDefault from "AssetRegistry" /* 16975 */;
+import PlatformUtils from "PlatformUtils" /* 1377 */;
+import useChatLayoutDefault from "useChatLayout" /* 5317 */;
+import LinearGradientDefault from "LinearGradient" /* 5715 */;
+import useToken from "useToken" /* 5724 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import FastImageDefault from "FastImage" /* 5842 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7355 */;
+import AssetRegistryDefault from "AssetRegistry" /* 17298 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let StyleSheet;
@@ -86,9 +86,9 @@ export default function QuestHomeEmptyState(hasContentAbove) {
   const tmp14 = !flag && tmp5.emptyStateContentContainerScreenCentered;
   items1[1] = tmp14;
   items2 = [, , ];
-  const obj7 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: tmp5.emptyStateContentTitle, children: title };
+  const obj7 = { variant: "heading-xl/semibold", color: "mobile-text-heading-primary", style: tmp5.emptyStateContentTitle, children: title };
   items2[0] = hasOwnProperty(Text_Text.Text, obj7);
-  const obj8 = { variant: "text-md/normal", color: "text-default", style: tmp5.emptyStateContentDescription, children: subtitle };
+  const obj8 = { variant: "body-md/normal", color: "text-default", style: tmp5.emptyStateContentDescription, children: subtitle };
   items2[1] = hasOwnProperty(Text_Text.Text, obj8);
   let tmp10Result = null != action;
   if (tmp10Result) {

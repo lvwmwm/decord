@@ -1,25 +1,25 @@
-// Module ID: 15419
-// Function ID: 15420
+// Module ID: 15712
+// Function ID: 15713
 // Name: PremiumSubscriptionPricingUpsell
-// Dependencies: [32, 19, 17, 2062, 1383, 2051, 2052, 7597, 1072, 1385, 21, 5014, 504, 2047, 15282, 7604, 7593, 5624, 1375, 7414, 7413, 1113, 1895, 2]
+// Dependencies: [32, 19, 17, 2186, 1385, 2175, 2176, 7673, 1072, 1387, 21, 5140, 504, 2171, 15568, 7680, 7669, 5751, 1377, 7478, 7477, 1113, 2024, 2]
 // Exports: default
 
-// Module 15419 (PremiumSubscriptionPricingUpsell)
+// Module 15712 (PremiumSubscriptionPricingUpsell)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
 import intl6 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import useSubscriptionPlansLoaded from "useSubscriptionPlansLoaded" /* 15282 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import useSubscriptionPlansLoaded from "useSubscriptionPlansLoaded" /* 15568 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2062 */;
-import UserStore from "UserStore" /* 1383 */;
-import SubscriptionPlanStore from "SubscriptionPlanStore" /* 2051 */;
-import SubscriptionStore from "SubscriptionStore" /* 2052 */;
-import IAPStore from "IAPStore" /* 7597 */;
-import PremiumConstants from "PremiumConstants" /* 1385 */;
+import LocaleStore from "LocaleStore" /* 2186 */;
+import UserStore from "UserStore" /* 1385 */;
+import SubscriptionPlanStore from "SubscriptionPlanStore" /* 2175 */;
+import SubscriptionStore from "SubscriptionStore" /* 2176 */;
+import IAPStore from "IAPStore" /* 7673 */;
+import PremiumConstants from "PremiumConstants" /* 1387 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -65,7 +65,7 @@ function PricingSubheadingCopy() {
   let tmp16;
   let tmp2Result17;
   let tmp2Result18;
-  const f108401 = () => {
+  const f110084 = () => {
     const items = [IAPStore.getProduct(closure_0(str3[16]).ProductIds.PREMIUM_GUILD_1_MONTHLY), IAPStore.getProduct(closure_0(str3[16]).ProductIds.PREMIUM_TIER_2_MONTHLY), IAPStore.getProduct(closure_0(str3[16]).ProductIds.PREMIUM_TIER_2_PREMIUM_GUILD_1_MONTHLY), IAPStore.getProduct(closure_0(str3[16]).ProductIds.PREMIUM_TIER_2_YEARLY), IAPStore.getProduct(closure_0(str3[16]).ProductIds.PREMIUM_TIER_2_PREMIUM_GUILD_1_YEARLY)];
     return items;
   };
@@ -101,8 +101,8 @@ function PricingSubheadingCopy() {
   }, []);
   const items4 = [IAPStore];
   const obj7 = require("get initialized");
-  [tmp12, tmp13, tmp14, tmp15, tmp16] = str2(obj7.useStateFromStoresArray(items4, f108401), 5);
-  str2(obj7.useStateFromStoresArray(items4, f108401), 5);
+  [tmp12, tmp13, tmp14, tmp15, tmp16] = str2(obj7.useStateFromStoresArray(items4, f110084), 5);
+  str2(obj7.useStateFromStoresArray(items4, f110084), 5);
   const obj8 = IAPStore;
   if (stateFromStores2 == null) {
     stateFromStores2 = closure_13[constants.PREMIUM_MONTH_GUILD];
@@ -187,7 +187,7 @@ function PricingSubheadingCopy() {
         }
         const Text = tmp2(tmp3[17]).Text;
         if (result !== result1) {
-          const obj9 = { style: tmp.cardText, accessibilityLabel: intl2.formatToPlainString(require("intl").t.lEIwDw, obj10), variant: "text-md/medium", children: intl3.format(require("intl").t.eRSsbf, obj11) };
+          const obj9 = { style: tmp.cardText, accessibilityLabel: intl2.formatToPlainString(require("intl").t.lEIwDw, obj10), variant: "body-md/medium", children: intl3.format(require("intl").t.eRSsbf, obj11) };
           intl2 = tmp2(tmp3[21]).intl;
           obj10 = { price: str3, originalPrice: str2 };
           intl3 = tmp2(tmp3[21]).intl;
@@ -198,14 +198,14 @@ function PricingSubheadingCopy() {
             originalPriceHook(children, arg1) {
                       let tmp = null;
                       if (str3 !== str2) {
-                        const obj = { style: closure_0.originalPrice, variant: "text-sm/medium", color: "text-muted", children };
+                        const obj = { style: closure_0.originalPrice, variant: "body-sm/medium", color: "text-muted", children };
                         tmp = authStore5(Text_Text.Text, obj, arg1);
                       }
                       return tmp;
                     }
           };
         } else {
-          obj12 = { style: tmp.cardText, variant: "text-md/medium", children: intl.format(tmp2(tmp3[21]).t.Mmf63F, obj13) };
+          obj12 = { style: tmp.cardText, variant: "body-md/medium", children: intl.format(tmp2(tmp3[21]).t.Mmf63F, obj13) };
           intl = tmp2(tmp3[21]).intl;
           obj13 = { price: str3 };
         }
@@ -216,7 +216,7 @@ function PricingSubheadingCopy() {
             const tmp5Result3 = require("PremiumUtils");
             if (tmp5Result3.isPremium(stateFromStores, closure_14.TIER_2)) {
               const obj14 = { children: items5 };
-              const obj15 = { style: tmp.cardText, variant: "text-md/medium", children: format2(prop, obj16) };
+              const obj15 = { style: tmp.cardText, variant: "body-md/medium", children: format2(prop, obj16) };
               const Text3 = tmp2(tmp3[17]).Text;
               const intl5 = tmp2(tmp3[21]).intl;
               format2 = intl5.format;
@@ -235,7 +235,7 @@ function PricingSubheadingCopy() {
           const tmp5Result4 = require("PremiumUtils");
           if (tmp5Result4.isPremium(stateFromStores, closure_14.TIER_1)) {
             const obj17 = { children: items6 };
-            const obj18 = { style: tmp.cardText, variant: "text-md/medium", children: format(XVMAKU, obj19) };
+            const obj18 = { style: tmp.cardText, variant: "body-md/medium", children: format(XVMAKU, obj19) };
             const Text2 = tmp2(tmp3[17]).Text;
             const intl4 = tmp2(tmp3[21]).intl;
             format = intl4.format;
@@ -249,7 +249,7 @@ function PricingSubheadingCopy() {
       }
     }
   }
-  const obj20 = { style: tmp.cardText, variant: "text-md/medium", children: "..." };
+  const obj20 = { style: tmp.cardText, variant: "body-md/medium", children: "..." };
   return closure_18(require("Text/Text").Text, obj20);
 }
 const View = react_native.View;

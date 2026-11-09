@@ -1,14 +1,15 @@
-// Module ID: 10185
-// Function ID: 10186
+// Module ID: 9994
+// Function ID: 9995
 // Name: ConversationDeepLinkUtils
-// Dependencies: [5, 6932, 7770, 5655, 9849, 5654, 11, 10186, 2]
-// Exports: consumeConversationFocusParam
+// Dependencies: [5, 6987, 7846, 5779, 6178, 9969, 5778, 11, 9995, 2]
+// Exports: consumeConversationFocusParam, getConversationPermalink
 
-// Module 10185 (ConversationDeepLinkUtils)
-import ConversationConstants from "ConversationConstants" /* 5655 */;
-import PostConnectionCallbackStore from "PostConnectionCallbackStore" /* 6932 */;
+// Module 9994 (ConversationDeepLinkUtils)
+import ConversationConstants from "ConversationConstants" /* 5779 */;
+import ChannelUtils from "ChannelUtils" /* 6178 */;
+import PostConnectionCallbackStore from "PostConnectionCallbackStore" /* 6987 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
-import ConversationPreviewStore from "ConversationPreviewStore" /* 7770 */;
+import ConversationPreviewStore from "ConversationPreviewStore" /* 7846 */;
 import size from "module_2" /* 2 */;
 
 let c3, c4;
@@ -33,7 +34,7 @@ let obj = function _resolveConversationFocusLink() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -71,7 +72,7 @@ let obj = function _resolveConversationFocusLink() {
             c3 = 2;
             c4 = 1;
             const obj6 = { value: obj4.fetchConversation(c0, c1), done: false };
-            obj4 = closure_130_0(closure_130_2[4]);
+            obj4 = closure_130_0(closure_130_2[5]);
             return obj6;
           }
         } else if (arg0 === 1) {
@@ -89,7 +90,7 @@ let obj = function _resolveConversationFocusLink() {
             const messageIds = conversation.messageIds;
             let flag = messageIds.includes(c2);
             if (flag) {
-              obj = closure_130_0(closure_130_2[4]);
+              obj = closure_130_0(closure_130_2[5]);
               const result = obj.setSelectedConversation(c0, conversation.id, { cacheType: "preview", shouldJump: false });
               flag = true;
             }
@@ -112,6 +113,17 @@ const addPostConnectionCallback = PostConnectionCallbackStore.addPostConnectionC
 const CONVERSATION_QUERY_PARAM = ConversationConstants.CONVERSATION_QUERY_PARAM;
 let result = size.fileFinishedImporting("modules/conversations/ConversationDeepLinkUtils.tsx");
 
+export function getConversationPermalink(id) {
+  let channelId;
+  let guildId;
+  let startMessageId;
+  obj = { [closure_1_6]: id.id };
+  ({ guildId, channelId, startMessageId } = id);
+  const str = new URLSearchParams(obj);
+  const obj2 = ChannelUtils;
+  const channelPermalink = obj2.getChannelPermalink(guildId, channelId, startMessageId);
+  return "" + channelPermalink + "?" + str.toString();
+}
 export { resolveConversationFocusLink };
 export function consumeConversationFocusParam(state) {
   let closure_3;
@@ -132,7 +144,7 @@ export function consumeConversationFocusParam(state) {
     let sum;
     str.delete(tmp);
     const tmp16 = guildId;
-    let obj4 = channelId(guildId[5]);
+    let obj4 = channelId(guildId[6]);
     const tryParseChannelPathResult = obj4.tryParseChannelPath(pathname);
     channelId = undefined;
     if (tryParseChannelPathResult != null) {
@@ -145,11 +157,11 @@ export function consumeConversationFocusParam(state) {
     if (null != tryParseChannelPathResult) {
       if (null != channelId) {
         if (null != messageId) {
-          obj = messageId(tmp16[6]);
+          obj = messageId(tmp16[7]);
           const tmp5 = messageId;
           if (obj.isProbablyAValidSnowflake(value)) {
             guildId = tryParseChannelPathResult.guildId;
-            const tmp5Result = tmp5(tmp16[6]);
+            const tmp5Result = tmp5(tmp16[7]);
             _asyncToGenerator = tmp5Result.cast(value);
             addPostConnectionCallback(_asyncToGenerator(async (arg0, value) => {
               let c2;
@@ -165,7 +177,7 @@ export function consumeConversationFocusParam(state) {
                   const obj2 = { value, done: true };
                   return obj2;
                 } else {
-                  return { value: "HermesInternal", done: "HermesInternal" };
+                  return { value: "HermesInternal", done: null };
                 }
               } else {
                 try {
@@ -182,7 +194,7 @@ export function consumeConversationFocusParam(state) {
                       channelId = tmp3;
                       messageId = 1;
                       guildId = 1;
-                      const obj4 = { value: messageId(guildId[7])(guildId), done: false };
+                      const obj4 = { value: messageId(guildId[8])(guildId), done: false };
                       return obj4;
                     }
                   } else if (1 === messageId) {
@@ -209,11 +221,11 @@ export function consumeConversationFocusParam(state) {
                     return obj8;
                   } else {
                     if (value) {
-                      obj = channelId(guildId[4]);
+                      obj = channelId(guildId[5]);
                       const conversationFocus = obj.requestConversationFocus();
                     }
                     guildId = 3;
-                    return { value: "HermesInternal", done: "HermesInternal" };
+                    return { value: "HermesInternal", done: null };
                   }
                 } catch (tmp16) {
                   guildId = 3;

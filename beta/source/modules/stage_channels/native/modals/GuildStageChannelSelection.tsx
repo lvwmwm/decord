@@ -1,20 +1,20 @@
-// Module ID: 9113
-// Function ID: 9114
+// Module ID: 9193
+// Function ID: 9194
 // Name: GuildStageChannelSelection
-// Dependencies: [19, 4956, 1383, 21, 5014, 9004, 5652, 1888, 5258, 9002, 1994, 1113, 5624, 2]
+// Dependencies: [19, 5082, 1385, 21, 5140, 9084, 5776, 2017, 5374, 9082, 2118, 1113, 5751, 2]
 // Exports: default
 
-// Module 9113 (GuildStageChannelSelection)
+// Module 9193 (GuildStageChannelSelection)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
-import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 1888 */;
-import asyncRequire from "asyncRequire" /* 1994 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import Text_Text from "Text/Text" /* 5624 */;
+import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 2017 */;
+import asyncRequire from "asyncRequire" /* 2118 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
+import Text_Text from "Text/Text" /* 5751 */;
 import react from "react" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4956 */;
-import UserStore from "UserStore" /* 1383 */;
-import createStyles from "createStyles" /* 5014 */;
+import RelationshipStore from "RelationshipStore" /* 5082 */;
+import UserStore from "UserStore" /* 1385 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
@@ -52,7 +52,7 @@ export default function GuildStageChannelSelection(channel) {
       selectedItem: id,
       hasIcons: false
     };
-    const tmp4 = asyncRequire(9002, dependencyMap.paths);
+    const tmp4 = asyncRequire(9082, dependencyMap.paths);
     intl = intl2.intl;
     id = undefined;
     if (channel != null) {
@@ -61,7 +61,7 @@ export default function GuildStageChannelSelection(channel) {
     openLazy(tmp4, "SelectUpdatesChannel", obj2);
   }
   function renderChannelHook(children, arg1) {
-    return jsx(channel(handleSelectChannel[12]).Text, { variant: "text-sm/bold", color: "mobile-text-heading-primary", children }, arg1);
+    return jsx(channel(handleSelectChannel[12]).Text, { variant: "body-sm/semibold", color: "mobile-text-heading-primary", children }, arg1);
   }
   const guild = channel.guild;
   const tmp = closure_7();
@@ -70,7 +70,7 @@ export default function GuildStageChannelSelection(channel) {
   const tmp2 = channelsUserCanStartStageIn.length > 1;
   let tmp3 = onChangeChannel(handleSelectChannel[6])(channel);
   let tmp4 = jsx;
-  let obj2 = { style: tmp.channelText, variant: "text-xs/medium", color: "text-default", children: null };
+  let obj2 = { style: tmp.channelText, variant: "body-xs/medium", color: "text-default", children: null };
   const Text = channel(handleSelectChannel[12]).Text;
   let intl = channel(handleSelectChannel[11]).intl;
   const format = intl.format;
@@ -80,7 +80,7 @@ export default function GuildStageChannelSelection(channel) {
       stageName: tmp3,
       stageHook: renderChannelHook,
       changeHook: function renderChangeHook(children, arg1) {
-          return jsx(Text_Text.Text, { onPress: handleSelectChannel, variant: "text-xs/medium", color: "text-link", children }, arg1);
+          return jsx(Text_Text.Text, { onPress: handleSelectChannel, variant: "body-xs/medium", color: "text-link", children }, arg1);
         }
     };
     obj2.children = format(t.AkzLcV, obj3);

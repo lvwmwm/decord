@@ -1,27 +1,114 @@
-// Module ID: 13434
-// Function ID: 13435
+// Module ID: 13669
+// Function ID: 13670
 // Name: openCheckpoint
-// Dependencies: [1072, 1252, 6744, 13435, 1994, 2]
+// Dependencies: [5, 13668, 13670, 5836, 1113, 13667, 13666, 6799, 13672, 2118, 2]
 // Exports: openCheckpoint
 
-// Module 13434 (openCheckpoint)
-import Constants from "Constants" /* 1072 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import asyncRequire from "asyncRequire" /* 1994 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6744 */;
+// Module 13669 (openCheckpoint)
+import CheckpointStore from "CheckpointStore" /* 13668 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
-const AnalyticEvents = Constants.AnalyticEvents;
-const result = size.fileFinishedImporting("modules/checkpoint/openCheckpoint.native.tsx");
+let c5, c6;
 
-export function openCheckpoint(devtools, arg1) {
-  let flag = arg1;
-  if (arg1 === undefined) {
-    flag = true;
-  }
-  const obj = AnalyticsUtilsDefault;
-  const obj2 = { source: devtools };
-  obj.track(AnalyticEvents.CHECKPOINT_STARTED, obj2);
-  const obj3 = ModalActionCreatorsDefault;
-  obj3.pushLazy(asyncRequire(13435, dependencyMap.paths), { didPlayerShareDataWithDiscord: flag }, "CHECKPOINT_MODAL");
+let obj = function _openCheckpoint() {
+  obj = _asyncToGenerator(async (arg0, value) => {
+    let obj2;
+    let closure_0 = arg0;
+    let closure_1 = value;
+    let closure_2 = arg2;
+    if (c6 === 2) {
+      c6 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp3 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj3 = { value, done: true };
+        return obj3;
+      } else {
+        return { value: "HermesInternal", done: null };
+      }
+    } else {
+      try {
+        let closure_3;
+        let flag;
+        c6 = 2;
+        if (0 === c5) {
+          if (arg0 === 1) {
+            c6 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c6 = 3;
+            const obj4 = { value, done: true };
+            return obj4;
+          } else {
+            let closure_4 = tmp4;
+            closure_3 = tmp;
+            closure_2 = undefined;
+            flag = closure_1;
+            if (closure_1 === undefined) {
+              flag = true;
+            }
+            closure_3 = undefined;
+            c5 = 1;
+            c6 = 1;
+            return { value: "flexDirection", done: true };
+          }
+        } else if (1 === c5) {
+          if (arg0 === 1) {
+            c6 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c6 = 3;
+            const obj5 = { value, done: true };
+            return obj5;
+          } else {
+            c5 = 2;
+            c6 = 1;
+            const obj6 = { value: obj2.fetchCheckpointData(closure_2), done: false };
+            obj2 = closure_132_0(closure_132_2[2]);
+            return obj6;
+          }
+        } else if (arg0 === 1) {
+          c6 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c6 = 3;
+          obj = { value, done: true };
+          return obj;
+        } else {
+          closure_3 = value;
+          if (closure_3 !== closure_132_4.ERROR) {
+            if (closure_3 !== closure_132_4.FETCHING) {
+              const obj7 = closure_132_1(closure_132_2[5]);
+              obj7.initialize(flag);
+              const obj8 = closure_132_0(closure_132_2[6]);
+              const result = obj8.trackCheckpoint2026Started(closure_0);
+              const obj10 = { didPlayerShareDataWithDiscord: flag };
+              const obj9 = closure_132_1(closure_132_2[7]);
+              obj9.pushLazy(closure_132_0(closure_132_2[9])(closure_132_2[8], closure_132_2.paths), obj10, "CHECKPOINT_MODAL");
+            }
+          } else {
+            const presentError = closure_132_0(closure_132_2[3]).presentError;
+            const tmp8 = closure_132_0(closure_132_2[3]);
+            const intl = closure_132_0(closure_132_2[4]).intl;
+            presentError(intl.string(closure_132_0(closure_132_2[4]).t.fEptJP));
+          }
+          c6 = 3;
+          return { value: "HermesInternal", done: null };
+        }
+      } catch (tmp25) {
+        c6 = 3;
+        throw tmp25;
+      }
+    }
+  });
+  return obj(...arguments);
+};
+const CheckpointFetchStates = CheckpointStore.CheckpointFetchStates;
+let result = size.fileFinishedImporting("modules/checkpoint/openCheckpoint.native.tsx");
+
+export function openCheckpoint() {
+  return obj(...arguments);
 }

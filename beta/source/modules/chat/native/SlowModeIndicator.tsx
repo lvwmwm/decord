@@ -1,17 +1,17 @@
-// Module ID: 13749
-// Function ID: 13750
+// Module ID: 13982
+// Function ID: 13983
 // Name: SlowModeIndicator
-// Dependencies: [19, 7830, 21, 5014, 575, 504, 7831, 5712, 11641, 6980, 5624, 2]
+// Dependencies: [19, 7906, 21, 5140, 575, 504, 7907, 5837, 11800, 7043, 5751, 2]
 
-// Module 13749 (SlowModeIndicator)
+// Module 13982 (SlowModeIndicator)
 import nativeDefault from "native" /* 575 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5712 */;
-import SlowmodeUtils from "SlowmodeUtils" /* 7831 */;
-import TimerIcon from "TimerIcon" /* 11641 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5837 */;
+import SlowmodeUtils from "SlowmodeUtils" /* 7907 */;
+import TimerIcon from "TimerIcon" /* 11800 */;
 import react from "react" /* 19 */;
-import SlowmodeStore from "SlowmodeStore" /* 7830 */;
+import SlowmodeStore from "SlowmodeStore" /* 7906 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -58,7 +58,7 @@ const memoResult = react.memo(function SlowModeIndicator(channel) {
   }, items2);
   const obj3 = { onPress: callback, style: tmp.container, children: items3 };
   const PressableOpacity = channel(slowmodeType[9]).PressableOpacity;
-  items3 = [closure_5(channel(slowmodeType[10]).Text, { lineClamp: 1, allowFontScaling: false, variant: "text-xs/medium", color: "interactive-text-default", children: memo }), ];
+  items3 = [closure_5(channel(slowmodeType[10]).Text, { lineClamp: 1, allowFontScaling: false, variant: "body-xs/medium", color: "interactive-text-default", children: memo }), ];
   const obj4 = { style: tmp.icon, size: "xxs" };
   items3[1] = closure_5(channel(slowmodeType[8]).TimerIcon, obj4);
   return closure_6(PressableOpacity, obj3);

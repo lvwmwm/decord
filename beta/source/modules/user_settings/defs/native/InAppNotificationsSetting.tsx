@@ -1,19 +1,19 @@
-// Module ID: 17476
-// Function ID: 17477
+// Module ID: 17802
+// Function ID: 17803
 // Name: InAppNotificationsSetting
-// Dependencies: [8432, 1072, 4839, 11018, 1113, 2868, 1252, 11540, 16276, 17477, 2]
+// Dependencies: [8503, 1072, 4965, 11148, 1113, 2992, 1252, 11685, 16596, 17803, 2]
 
-// Module 17476 (InAppNotificationsSetting)
+// Module 17802 (InAppNotificationsSetting)
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import _modDef2868 from "module_2868" /* 2868 */;
-import UserSettings from "UserSettings" /* 4839 */;
-import SettingsConstants from "SettingsConstants" /* 8432 */;
-import FocusModeUtils from "FocusModeUtils" /* 11018 */;
-import notifications_NotificationSettingsUtils from "notifications/NotificationSettingsUtils" /* 16276 */;
-import MobileNotifSettings from "MobileNotifSettings" /* 17477 */;
-import SettingBuilders_mod from "SettingBuilders" /* 11540 */;
+import _modDef2992 from "module_2992" /* 2992 */;
+import UserSettings from "UserSettings" /* 4965 */;
+import SettingsConstants from "SettingsConstants" /* 8503 */;
+import FocusModeUtils from "FocusModeUtils" /* 11148 */;
+import notifications_NotificationSettingsUtils from "notifications/NotificationSettingsUtils" /* 16596 */;
+import MobileNotifSettings from "MobileNotifSettings" /* 17803 */;
+import SettingBuilders_mod from "SettingBuilders" /* 11685 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
@@ -64,7 +64,7 @@ const createToggle2 = SettingBuilders.createToggle;
 const obj3 = {
   useTitle() {
     const intl = intl2.intl;
-    return intl.string(_modDef2868.sH5mu9);
+    return intl.string(_modDef2992.sH5mu9);
   },
   useDescription: function useRedesignInAppNotificationsDescription() {
     let stringResult;
@@ -75,7 +75,7 @@ const obj3 = {
     if (focusModeEnabled) {
       stringResult = string(intl2.t.cIRG0s);
     } else {
-      stringResult = string(_modDef2868["T/zMdV"]);
+      stringResult = string(_modDef2992["T/zMdV"]);
     }
     return stringResult;
   },

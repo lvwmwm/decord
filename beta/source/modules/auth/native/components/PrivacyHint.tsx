@@ -1,21 +1,21 @@
-// Module ID: 18022
-// Function ID: 18023
+// Module ID: 18362
+// Function ID: 18363
 // Name: PrivacyHint
-// Dependencies: [19, 17, 6741, 17984, 1072, 21, 5014, 5624, 1113, 5082, 6989, 8177, 18023, 2]
+// Dependencies: [19, 17, 6796, 18323, 1072, 21, 5140, 5751, 1113, 5200, 7055, 8246, 18363, 2]
 // Exports: default
 
-// Module 18022 (PrivacyHint)
+// Module 18362 (PrivacyHint)
 import Constants from "Constants" /* 1072 */;
 import intl3 from "intl" /* 1113 */;
-import react_native from "react-native" /* 5082 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import PromoEmailConsentStore from "PromoEmailConsentStore" /* 6741 */;
-import RegistrationUIStore from "RegistrationUIStore" /* 17984 */;
-import PromotionalEmailCheckBoxDefault from "PromotionalEmailCheckBox" /* 18023 */;
+import react_native from "react-native" /* 5200 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import PromoEmailConsentStore from "PromoEmailConsentStore" /* 6796 */;
+import RegistrationUIStore from "RegistrationUIStore" /* 18323 */;
+import PromotionalEmailCheckBoxDefault from "PromotionalEmailCheckBox" /* 18363 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -25,7 +25,7 @@ let metroImportAll;
 function PrivacyPolicyDescription(style) {
   let intl;
   let obj2;
-  const obj = { style: style.style, variant: "text-xs/medium", color: "text-muted", children: intl.format(intl3.t["KI+BSb"], obj2) };
+  const obj = { style: style.style, variant: "body-xs/medium", color: "text-muted", children: intl.format(intl3.t["KI+BSb"], obj2) };
   const Text = Text_Text.Text;
   intl = intl3.intl;
   obj2 = { termsURL: MarketingURLs.TERMS, privacyURL: MarketingURLs.PRIVACY };
@@ -54,16 +54,16 @@ function PrivacyPolicyCheckbox(onToggleConsent) {
   const tmp6 = React3;
   if (asCheckbox) {
     const obj3 = { checked: consent };
-    tmp7Result = tmp7(tmp2(6989).FormCheckbox, obj3);
+    tmp7Result = tmp7(tmp2(7055).FormCheckbox, obj3);
     tmp9 = tmp7;
   } else {
     const obj4 = { selected: consent };
-    tmp7Result = tmp7(tmp2(8177).FormRow.Radio, obj4);
+    tmp7Result = tmp7(tmp2(8246).FormRow.Radio, obj4);
     tmp9 = tmp7;
   }
   items = [tmp7Result, ];
-  const obj5 = { variant: "text-xs/medium", color: "text-muted", style: tmp.checkboxLabel, children: intl2.format(intl3.t.qMDAP0, obj6) };
-  const Text = tmp2(5624).Text;
+  const obj5 = { variant: "body-xs/medium", color: "text-muted", style: tmp.checkboxLabel, children: intl2.format(intl3.t.qMDAP0, obj6) };
+  const Text = tmp2(5751).Text;
   intl2 = tmp2(1113).intl;
   obj6 = { termsURL: MarketingURLs.TERMS, privacyURL: MarketingURLs.PRIVACY };
   items[1] = tmp9(Text, obj5);

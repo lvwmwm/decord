@@ -1,15 +1,15 @@
-// Module ID: 18918
-// Function ID: 18919
+// Module ID: 19293
+// Function ID: 19294
 // Name: ChannelSettingsPermissionsOverrideCheckbox
-// Dependencies: [19, 17, 21, 575, 5014, 4951, 1113, 9883, 9285, 18919, 5082, 2]
+// Dependencies: [19, 17, 21, 575, 5140, 5077, 1113, 10005, 9365, 19294, 5200, 2]
 
-// Module 18918 (ChannelSettingsPermissionsOverrideCheckbox)
+// Module 19293 (ChannelSettingsPermissionsOverrideCheckbox)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import PermissionUtils from "PermissionUtils" /* 4951 */;
+import PermissionUtils from "PermissionUtils" /* 5077 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -103,13 +103,13 @@ const jsx = Fragment.jsx;
 const PX_4 = nativeDefault.space.PX_4;
 const md = nativeDefault.radii.md;
 let createStyles = createStyles_mod;
-let obj = { ternaryCheckBox: obj2, iconWrapper: { borderRadius: md - PX_4, marginHorizontal: PX_4 / 2, justifyContent: "center", height: "100%" }, icon: obj3, denyActive: obj4, denySelected: obj5, allowActive: { backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_POSITIVE }, allowSelected: { backgroundColor: nativeDefault.colors.ICON_FEEDBACK_POSITIVE }, passthroughSelected: { backgroundColor: nativeDefault.colors.INTERACTIVE_BACKGROUND_SELECTED }, passthroughActive: { backgroundColor: nativeDefault.colors.INTERACTIVE_BACKGROUND_HOVER }, disabled: { opacity: 0.3 } };
+let obj = { ternaryCheckBox: obj2, iconWrapper: { borderRadius: md - PX_4, marginHorizontal: PX_4 / 2, justifyContent: "center", height: "100%" }, icon: obj3, denyActive: obj4, denySelected: obj5, allowActive: { backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_MOD_POSITIVE }, allowSelected: { backgroundColor: nativeDefault.colors.ICON_FEEDBACK_POSITIVE }, passthroughSelected: { backgroundColor: nativeDefault.colors.INTERACTIVE_BACKGROUND_SELECTED }, passthroughActive: { backgroundColor: nativeDefault.colors.INTERACTIVE_BACKGROUND_HOVER }, disabled: { opacity: 0.3 } };
 obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderRadius: md, height: nativeDefault.space.PX_32, paddingVertical: PX_4, paddingHorizontal: PX_4 / 2, flexDirection: "row" };
 createStyles = createStyles.createStyles;
 obj3 = { marginHorizontal: nativeDefault.space.PX_8 };
-obj4 = { backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_CRITICAL };
+obj4 = { backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_MOD_CRITICAL };
 obj5 = { backgroundColor: nativeDefault.colors.ICON_FEEDBACK_CRITICAL, borderRadius: nativeDefault.radii.sm - 2 };
-({ backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_POSITIVE });
+({ backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_MOD_POSITIVE });
 ({ backgroundColor: nativeDefault.colors.ICON_FEEDBACK_POSITIVE });
 ({ backgroundColor: nativeDefault.colors.INTERACTIVE_BACKGROUND_SELECTED });
 ({ backgroundColor: nativeDefault.colors.INTERACTIVE_BACKGROUND_HOVER });

@@ -1,12 +1,12 @@
-// Module ID: 7428
-// Function ID: 7429
+// Module ID: 7492
+// Function ID: 7493
 // Name: useUnmountAbortSignal
-// Dependencies: [5612, 5593, 2]
+// Dependencies: [5739, 5721, 2]
 // Exports: default, useUnmountAbortSignalWithDelay
 
-// Module 7428 (useUnmountAbortSignal)
-import useMountEffect from "useMountEffect" /* 5593 */;
-import reactDefault from "react" /* 5612 */;
+// Module 7492 (useUnmountAbortSignal)
+import useMountEffect from "useMountEffect" /* 5721 */;
+import reactDefault from "react" /* 5739 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("hooks/useUnmountAbortSignal.tsx");

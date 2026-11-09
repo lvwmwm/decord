@@ -1,15 +1,15 @@
-// Module ID: 8435
-// Function ID: 8436
+// Module ID: 8506
+// Function ID: 8507
 // Name: RemoveRecipientSystemMessage
-// Dependencies: [4867, 4863, 1383, 8418, 8420, 1113, 8422, 2]
+// Dependencies: [4993, 4989, 1385, 8489, 8491, 1113, 8493, 2]
 // Exports: createRemoveRecipientSystemMessage
 
-// Module 8435 (RemoveRecipientSystemMessage)
-import ChannelRecord from "ChannelRecord" /* 4867 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8418 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8420 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
-import UserStore from "UserStore" /* 1383 */;
+// Module 8506 (RemoveRecipientSystemMessage)
+import ChannelRecord from "ChannelRecord" /* 4993 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8489 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8491 */;
+import ChannelStore from "ChannelStore" /* 4989 */;
+import UserStore from "UserStore" /* 1385 */;
 import size from "module_2" /* 2 */;
 
 const THREAD_CHANNEL_TYPES = ChannelRecord.THREAD_CHANNEL_TYPES;
@@ -37,7 +37,7 @@ export function createRemoveRecipientSystemMessage(message) {
       formatToPartsResult = formatToParts(t["Qn5+Lf"], obj2);
     }
     const obj3 = { content: formatToPartsResult };
-    const merged = Object.assign(tmp8(8422)(message));
+    const merged = Object.assign(tmp8(8493)(message));
     return obj3;
   } else {
     let formatToParts2Result;
@@ -56,7 +56,7 @@ export function createRemoveRecipientSystemMessage(message) {
       formatToParts2Result = formatToParts2(t2.QtZ0RD, obj4);
     }
     const obj6 = { content: formatToParts2Result };
-    const merged2 = Object.assign(tmp8(8422)(message));
+    const merged2 = Object.assign(tmp8(8493)(message));
     return obj6;
   }
 }

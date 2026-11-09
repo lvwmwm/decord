@@ -1,22 +1,22 @@
-// Module ID: 17870
-// Function ID: 17871
+// Module ID: 18206
+// Function ID: 18207
 // Name: ShelfBlock
-// Dependencies: [19, 17, 7720, 1074, 1072, 21, 5014, 575, 1497, 9462, 17842, 7326, 7351, 504, 17844, 16986, 7719, 9459, 5717, 5624, 5634, 1113, 5611, 7294, 2]
+// Dependencies: [19, 17, 7796, 1074, 1072, 21, 5140, 575, 1499, 9543, 18180, 7387, 7412, 504, 18182, 17309, 7795, 9540, 5842, 5751, 5758, 1113, 5738, 7357, 2]
 // Exports: default
 
-// Module 17870 (ShelfBlock)
+// Module 18206 (ShelfBlock)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7351 */;
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7719 */;
-import CollectiblesShopCardV2Default from "CollectiblesShopCardV2" /* 9459 */;
-import CollectiblesAnalyticsContext from "CollectiblesAnalyticsContext" /* 9462 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7412 */;
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7795 */;
+import CollectiblesShopCardV2Default from "CollectiblesShopCardV2" /* 9540 */;
+import CollectiblesAnalyticsContext from "CollectiblesAnalyticsContext" /* 9543 */;
 import react from "react" /* 19 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7720 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7796 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let navigation;
@@ -148,7 +148,7 @@ export default function _default(block) {
       tmp18 = { color: str };
       const obj12 = { color: str };
     }
-    obj13 = { variant: "text-md/semibold", style: tmp18, children: block.name };
+    obj13 = { variant: "body-md/semibold", style: tmp18, children: block.name };
     items6 = [closure_8(stateFromStores, obj11), ];
     let tmp14Result2 = block.showButton && null != stateFromStores;
     if (tmp14Result2) {

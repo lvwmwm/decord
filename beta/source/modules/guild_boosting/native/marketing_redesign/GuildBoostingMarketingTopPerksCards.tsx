@@ -1,23 +1,23 @@
-// Module ID: 15486
-// Function ID: 15487
+// Module ID: 15779
+// Function ID: 15780
 // Name: GuildBoostingMarketingTopPerksCards
-// Dependencies: [19, 17, 5015, 21, 5014, 575, 1113, 5717, 15487, 5618, 15488, 15489, 5624, 14138, 2]
+// Dependencies: [19, 17, 5141, 21, 5140, 575, 1113, 5842, 15780, 5745, 15781, 15782, 5751, 14381, 2]
 // Exports: default
 
-// Module 15486 (GuildBoostingMarketingTopPerksCards)
+// Module 15779 (GuildBoostingMarketingTopPerksCards)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import LottieAnimationViewDefault from "LottieAnimationView" /* 5618 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import FastImageDefault from "FastImage" /* 5717 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15487 */;
-import _mod15488 from "module_15488" /* 15488 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 15489 */;
+import LottieAnimationViewDefault from "LottieAnimationView" /* 5745 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import FastImageDefault from "FastImage" /* 5842 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15780 */;
+import _mod15781 from "module_15781" /* 15781 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 15782 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5015 */;
+import AccessibilityStore from "AccessibilityStore" /* 5141 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -62,7 +62,7 @@ let items = [
       return intl.string(intl2.t.wOYbTv);
     },
     getGraphic(style) {
-      const obj = { source: _mod15488, autoPlay: !AccessibilityStore.useReducedMotion, style };
+      const obj = { source: _mod15781, autoPlay: !AccessibilityStore.useReducedMotion, style };
       const tmp = LottieAnimationViewDefault;
       return hasOwnProperty(tmp, obj);
     }
@@ -92,7 +92,7 @@ export default function GuildBoostingMarketingTopPerksCards() {
   let tmp = closure_7();
   _require = tmp;
   let obj = { style: tmp.wrapper, children: items };
-  let obj2 = { style: tmp.heading, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl.string(require("intl").t.aGdB3E) };
+  let obj2 = { style: tmp.heading, variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: intl.string(require("intl").t.aGdB3E) };
   let Heading = require("Text/Text").Heading;
   intl = require("intl").intl;
   items = [closure_5(Heading, obj2), ];
@@ -113,10 +113,10 @@ export default function GuildBoostingMarketingTopPerksCards() {
       const obj = { style: items, children: items1 };
       items[1] = cardLast;
       items1 = [getGraphic.getGraphic(card.cardGraphic), , ];
-      const obj2 = { style: card.cardHeading, variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: getGraphic.getHeadingCopy() };
+      const obj2 = { style: card.cardHeading, variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: getGraphic.getHeadingCopy() };
       const Heading = Text_Text.Heading;
       items1[1] = hasOwnProperty(Heading, obj2);
-      const obj3 = { style: card.cardBody, variant: "text-sm/normal", color: "text-default", children: getGraphic.getBodyCopy() };
+      const obj3 = { style: card.cardBody, variant: "body-sm/normal", color: "text-default", children: getGraphic.getBodyCopy() };
       const Text = Text_Text.Text;
       items1[2] = hasOwnProperty(Text, obj3);
       return tmp(tmp2, obj, index);

@@ -1,27 +1,27 @@
-// Module ID: 17738
-// Function ID: 17739
+// Module ID: 18066
+// Function ID: 18067
 // Name: DevToolsDisplayNameEffectsBenchmarkScreen
-// Dependencies: [32, 19, 17, 1383, 1401, 21, 1402, 10779, 1113, 10775, 2932, 5014, 575, 6027, 5624, 5634, 10772, 10773, 504, 17739, 7060, 6975, 14621, 6441, 2]
+// Dependencies: [32, 19, 17, 1385, 1394, 21, 1396, 10898, 1113, 10894, 3056, 5140, 575, 6159, 5751, 5758, 10891, 10892, 504, 18067, 7126, 7038, 14856, 6574, 2]
 // Exports: default
 
-// Module 17738 (DevToolsDisplayNameEffectsBenchmarkScreen)
+// Module 18066 (DevToolsDisplayNameEffectsBenchmarkScreen)
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1401 */;
-import DisplayNameEffect from "DisplayNameEffect" /* 1402 */;
-import _modDef2932 from "module_2932" /* 2932 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import Stack_Stack from "Stack/Stack" /* 6027 */;
-import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10772 */;
-import types from "types" /* 10773 */;
-import useDisplayNameStylesEffectConfigs from "useDisplayNameStylesEffectConfigs" /* 10775 */;
-import _mod10779 from "module_10779" /* 10779 */;
+import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1394 */;
+import DisplayNameEffect from "DisplayNameEffect" /* 1396 */;
+import _modDef3056 from "module_3056" /* 3056 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import Stack_Stack from "Stack/Stack" /* 6159 */;
+import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10891 */;
+import types from "types" /* 10892 */;
+import useDisplayNameStylesEffectConfigs from "useDisplayNameStylesEffectConfigs" /* 10894 */;
+import _mod10898 from "module_10898" /* 10898 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserStore from "UserStore" /* 1383 */;
+import UserStore from "UserStore" /* 1385 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -38,7 +38,7 @@ function effectName(arg0) {
   const string = intl.string;
   let OpWJ3f = useDisplayNameStylesEffectConfigs.DISPLAY_NAME_STYLES_EFFECT_NAMES[arg0];
   if (OpWJ3f == null) {
-    OpWJ3f = _modDef2932.OpWJ3f;
+    OpWJ3f = _modDef3056.OpWJ3f;
   }
   return string(OpWJ3f);
 }
@@ -50,7 +50,7 @@ function OptionButtons(caption) {
   let tmp = closure_15();
   let obj = { spacing: 8, children: items };
   const Stack = Stack_Stack.Stack;
-  items = [closure_8(Text_Text.Text, { variant: "text-sm/semibold", color: "text-subtle", children: caption }), ];
+  items = [closure_8(Text_Text.Text, { variant: "body-sm/semibold", color: "text-subtle", children: caption }), ];
   const obj2 = {
     direction: "horizontal",
     spacing: 8,
@@ -89,17 +89,17 @@ function BenchmarkRow(arg0) {
   const obj2 = { style, children: metroImportAll(tmp2, obj3) };
   const obj = useDisplayNameStylesEffectConfigs;
   const displayNameStylesEffectConfig = obj.useDisplayNameStylesEffectConfig(effect);
-  obj3 = { userId, userName, effectDisplayType: types.EffectDisplayType.STATIC, pendingDisplayNameStyles: displayNameStylesEffectConfig.previewStyles, variant: "text-md/semibold" };
+  obj3 = { userId, userName, effectDisplayType: types.EffectDisplayType.STATIC, pendingDisplayNameStyles: displayNameStylesEffectConfig.previewStyles, variant: "body-md/semibold" };
   tmp2 = UsernameWithEffectsDefault;
   return metroImportAll(metroRequire, obj2);
 }
 ({ ScrollView: hasOwnProperty, View: metroRequire } = react_native);
 const EFFECT_ORDER = DisplayNameStylesConstants.EFFECT_ORDER;
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);
-let items = [...EFFECT_ORDER, DisplayNameEffect.DisplayNameEffect.GUMMY];
+let closure_10 = EFFECT_ORDER.filter((item) => item !== DisplayNameEffect.DisplayNameEffect.PRISM);
 let closure_12 = [10, 50, 100, 200];
 let closure_13 = { overrideSettings: true };
-let items1 = [{ key: "short", label: "Short", name: "Pixel7" }, { key: "medium", label: "Medium", name: "NebulaWanderer" }, { key: "long", label: "Long", name: "GalacticOverlord2049" }];
+let items = [{ key: "short", label: "Short", name: "Pixel7" }, { key: "medium", label: "Medium", name: "NebulaWanderer" }, { key: "long", label: "Long", name: "GalacticOverlord2049" }];
 let createStyles = createStyles_mod;
 let obj = { wrap: obj2, container: obj3, batchRow: { paddingVertical: 2 }, optionButtons: { flexWrap: "wrap" } };
 obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, paddingHorizontal: nativeDefault.space.PX_16 };
@@ -127,7 +127,6 @@ export default function DevToolsDisplayNameEffectsBenchmarkScreen() {
   let obj16;
   let obj17;
   let obj7;
-  let results;
   let tmp12;
   let tmp23;
   let tmp9;
@@ -161,25 +160,25 @@ export default function DevToolsDisplayNameEffectsBenchmarkScreen() {
   const run = mountTimer.run;
   const begin = mountTimer.begin;
   const measure = mountTimer.measure;
-  items1 = [addScroll];
+  const items1 = [addScroll];
   const cancel = mountTimer.cancel;
   const items2 = [first2];
   const callback = first1.useCallback((arg0) => {
     addScroll(arg0);
   }, items1);
-  const memo = first1.useMemo(() => items1.find((key) => key.key === first2).name, items2);
+  const memo = first1.useMemo(() => items.find((key) => key.key === first2).name, items2);
   const items3 = [memo];
   const memo1 = first1.useMemo(() => {
-    const obj = _mod10779;
+    const obj = _mod10898;
     return obj.splitGraphemes(memo).length;
   }, items3);
   const items4 = [first];
-  const memo2 = first1.useMemo(() => items.filter((item) => set.has(item)), items4);
+  const memo2 = first1.useMemo(() => measure.filter((item) => set.has(item)), items4);
   const items5 = [memo2];
   const memo3 = first1.useMemo(() => {
     let str = "All (rotation)";
     const arr = memo2;
-    if (memo2.length !== items.length) {
+    if (memo2.length !== measure.length) {
       const mapped = arr.map(effectName);
       str = mapped.join(" + ");
     }
@@ -223,7 +222,7 @@ export default function DevToolsDisplayNameEffectsBenchmarkScreen() {
   const TableRow = tmp2(tmp3[21]).TableRow;
   obj7 = { spacing: 8, children: items8 };
   Stack2 = tmp2(tmp3[13]).Stack;
-  items8 = [run(tmp2(tmp3[14]).Text, { variant: "text-sm/semibold", color: "text-subtle", children: "Effects (checked render in rotation)" }), ];
+  items8 = [run(tmp2(tmp3[14]).Text, { variant: "body-sm/semibold", color: "text-subtle", children: "Effects (checked render in rotation)" }), ];
   const obj8 = {
     spacing: 4,
     children: measure.map((item) => {
@@ -297,7 +296,7 @@ export default function DevToolsDisplayNameEffectsBenchmarkScreen() {
               const length = String(Math.max(run.params.rowCount - 1, 0)).length;
               const StringResult = String(arg1);
               const padStartResult = StringResult.padStart(length, "0");
-              const obj3 = _mod10779;
+              const obj3 = _mod10898;
               const splitGraphemesResult = obj3.splitGraphemes(name);
               sum = padStartResult;
               const tmp = metroImportAll;

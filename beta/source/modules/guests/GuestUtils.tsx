@@ -1,11 +1,11 @@
-// Module ID: 10119
-// Function ID: 10120
+// Module ID: 10240
+// Function ID: 10241
 // Name: GuestUtils
-// Dependencies: [4932, 1396, 8959, 2]
+// Dependencies: [5058, 1403, 9038, 2]
 
-// Module 10119 (GuestUtils)
-import FlagUtils from "FlagUtils" /* 1396 */;
-import GuildMemberConstants from "GuildMemberConstants" /* 4932 */;
+// Module 10240 (GuestUtils)
+import FlagUtils from "FlagUtils" /* 1403 */;
+import GuildMemberConstants from "GuildMemberConstants" /* 5058 */;
 import size from "module_2" /* 2 */;
 
 const GuildMemberFlags = GuildMemberConstants.GuildMemberFlags;
@@ -35,7 +35,7 @@ const obj = {
         if (num2 == null) {
           num2 = 0;
         }
-        hasFlag2Result = hasFlag2(num2, tmp2(8959).GuildInviteFlags.IS_GUEST_INVITE);
+        hasFlag2Result = hasFlag2(num2, tmp2(9038).GuildInviteFlags.IS_GUEST_INVITE);
       }
       tmp = hasFlag2Result;
     }

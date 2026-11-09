@@ -1,16 +1,16 @@
-// Module ID: 9951
-// Function ID: 9952
+// Module ID: 10073
+// Function ID: 10074
 // Name: DoubleTapEmojiUpdatedToast
-// Dependencies: [5015, 1386, 1409, 5274, 5023, 1113, 5712, 2]
+// Dependencies: [5141, 1388, 1411, 5390, 5149, 1113, 5837, 2]
 // Exports: getToastEmojiEntity, showDoubleTapEmojiUpdatedToast
 
-// Module 9951 (DoubleTapEmojiUpdatedToast)
+// Module 10073 (DoubleTapEmojiUpdatedToast)
 import intl3 from "intl" /* 1113 */;
-import EmojiConstants from "EmojiConstants" /* 1386 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1409 */;
-import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5274 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5712 */;
-import AccessibilityStore from "AccessibilityStore" /* 5015 */;
+import EmojiConstants from "EmojiConstants" /* 1388 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
+import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5390 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5837 */;
+import AccessibilityStore from "AccessibilityStore" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 const EMOJI_URL_BASE_SIZE = EmojiConstants.EMOJI_URL_BASE_SIZE;
@@ -49,7 +49,7 @@ export function showDoubleTapEmojiUpdatedToast(emoji) {
   emoji = emoji.emoji;
   const obj = useIsScreenReaderEnabled;
   if (obj.getIsScreenReaderEnabled()) {
-    const AccessibilityAnnouncer = tmp(5023).AccessibilityAnnouncer;
+    const AccessibilityAnnouncer = tmp(5149).AccessibilityAnnouncer;
     const announce = AccessibilityAnnouncer.announce;
     const intl2 = tmp(1113).intl;
     const obj2 = { emojiName: emoji.name };
@@ -64,7 +64,7 @@ export function showDoubleTapEmojiUpdatedToast(emoji) {
       const useReducedMotion = AccessibilityStore.useReducedMotion;
       const obj5 = { id: emoji.id, animated, size: EMOJI_URL_BASE_SIZE };
       animated = !useReducedMotion;
-      const getEmojiURL = tmp3(1409).getEmojiURL;
+      const getEmojiURL = tmp3(1411).getEmojiURL;
       AvatarUtilsDefault;
       if (!useReducedMotion) {
         animated = emoji.animated;

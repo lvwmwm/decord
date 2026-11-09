@@ -1,16 +1,16 @@
-// Module ID: 14119
-// Function ID: 14120
+// Module ID: 14362
+// Function ID: 14363
 // Name: GuildPowerupsDisabledWarning
-// Dependencies: [17, 21, 5014, 575, 8026, 5624, 2]
+// Dependencies: [17, 21, 5140, 575, 8096, 5751, 2]
 // Exports: default
 
-// Module 14119 (GuildPowerupsDisabledWarning)
+// Module 14362 (GuildPowerupsDisabledWarning)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import WarningIcon2 from "WarningIcon" /* 8026 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import WarningIcon2 from "WarningIcon" /* 8096 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -19,7 +19,7 @@ let obj2;
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let obj = { container: obj2, text: { flex: 1 } };
-obj2 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8, borderColor: nativeDefault.colors.STATUS_WARNING_BACKGROUND, borderWidth: 1, borderRadius: nativeDefault.radii.lg, padding: nativeDefault.space.PX_12, backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_WARNING };
+obj2 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8, borderColor: nativeDefault.colors.STATUS_WARNING_BACKGROUND, borderWidth: 1, borderRadius: nativeDefault.radii.lg, padding: nativeDefault.space.PX_12, backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_MOD_WARNING };
 let closure_6 = createStyles.createStyles(obj);
 const result = size.fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsDisabledWarning.tsx");
 
@@ -31,7 +31,7 @@ export default function GuildPowerupsDisabledWarning(text) {
   const obj2 = { color: nativeDefault.colors.TEXT_FEEDBACK_WARNING, size: "md" };
   const WarningIcon = WarningIcon2.WarningIcon;
   items = [React3(WarningIcon, obj2), ];
-  const obj3 = { style: tmp.text, variant: "text-md/semibold", color: "text-feedback-warning", children: text };
+  const obj3 = { style: tmp.text, variant: "body-md/semibold", color: "text-feedback-warning", children: text };
   items[1] = React3(Text_Text.Text, obj3);
   return hasOwnProperty(View, obj);
 };

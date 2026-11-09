@@ -1,20 +1,20 @@
-// Module ID: 19795
-// Function ID: 19796
+// Module ID: 20205
+// Function ID: 20206
 // Name: InRolePromptNotice
-// Dependencies: [19, 17, 1072, 21, 5014, 575, 1396, 19796, 1187, 11780, 5624, 1113, 2]
+// Dependencies: [19, 17, 1072, 21, 5140, 575, 1403, 20206, 1187, 11943, 5751, 1113, 2]
 // Exports: default
 
-// Module 19795 (InRolePromptNotice)
+// Module 20205 (InRolePromptNotice)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl3 from "intl" /* 1113 */;
-import FlagUtils from "FlagUtils" /* 1396 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11780 */;
-import GuildSettingsUtils from "GuildSettingsUtils" /* 19796 */;
+import FlagUtils from "FlagUtils" /* 1403 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11943 */;
+import GuildSettingsUtils from "GuildSettingsUtils" /* 20206 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -48,8 +48,8 @@ export default function InRolePromptNotice(role) {
     if (isRolePowerfulResult) {
       const obj3 = { style: tmp.icon, source: AssetRegistryDefault, color: nativeDefault.unsafe_rawColors.YELLOW_300 };
       const items = [hasOwnProperty(Icon, obj3), ];
-      const obj4 = { style: tmp.promptText, variant: "text-sm/medium", children: intl2.string(intl3.t.YRbgXz) };
-      const Text2 = tmp2(5624).Text;
+      const obj4 = { style: tmp.promptText, variant: "body-sm/medium", children: intl2.string(intl3.t.YRbgXz) };
+      const Text2 = tmp2(5751).Text;
       intl2 = tmp2(1113).intl;
       items[1] = hasOwnProperty(Text2, obj4);
       obj2.children = items;
@@ -57,8 +57,8 @@ export default function InRolePromptNotice(role) {
     } else {
       const obj5 = { style: tmp.icon, source: AssetRegistryDefault };
       const items1 = [hasOwnProperty(Icon, obj5), ];
-      const obj6 = { style: tmp.promptText, variant: "text-sm/medium", children: intl.string(intl3.t.mqeO2v) };
-      const Text = tmp2(5624).Text;
+      const obj6 = { style: tmp.promptText, variant: "body-sm/medium", children: intl.string(intl3.t.mqeO2v) };
+      const Text = tmp2(5751).Text;
       intl = tmp2(1113).intl;
       items1[1] = hasOwnProperty(Text, obj6);
       obj2.children = items1;

@@ -1,25 +1,25 @@
-// Module ID: 16005
-// Function ID: 16006
+// Module ID: 16323
+// Function ID: 16324
 // Name: InputView
-// Dependencies: [109, 19, 17, 1072, 21, 5014, 575, 6778, 5080, 1187, 5624, 1113, 7092, 5021, 12505, 1375, 2]
+// Dependencies: [109, 19, 17, 1072, 21, 5140, 575, 6833, 5199, 1187, 5751, 1113, 7158, 5147, 12708, 1377, 2]
 
-// Module 16005 (InputView)
+// Module 16323 (InputView)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import PlatformUtils from "PlatformUtils" /* 1375 */;
-import shared from "shared" /* 5021 */;
-import native2 from "native" /* 5080 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import LegacyTokens from "LegacyTokens" /* 6778 */;
-import CircleXIcon from "CircleXIcon" /* 7092 */;
-import components_BottomSheetTextInputDefault from "components/BottomSheetTextInput" /* 12505 */;
+import PlatformUtils from "PlatformUtils" /* 1377 */;
+import shared from "shared" /* 5147 */;
+import native2 from "native" /* 5199 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import LegacyTokens from "LegacyTokens" /* 6833 */;
+import CircleXIcon from "CircleXIcon" /* 7158 */;
+import components_BottomSheetTextInputDefault from "components/BottomSheetTextInput" /* 12708 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let Platform;
@@ -218,13 +218,13 @@ class InputView extends PureComponent {
           str5 = "text-feedback-critical";
         }
       }
-      const obj2 = { variant: "heading-md/semibold", color: str5, style: tmp.inputViewTitle, children: title };
+      const obj2 = { variant: "heading-sm/semibold", color: str5, style: tmp.inputViewTitle, children: title };
       tmp12Result = tmp12(Text, obj2);
     }
     let tmp16;
     const tmp15 = null != helpText && "" !== helpText;
     if (tmp15) {
-      const obj3 = { variant: "text-xs/medium", children: helpText };
+      const obj3 = { variant: "body-xs/medium", children: helpText };
       tmp16 = React4(Text_Text.Text, obj3);
     }
     const obj4 = { style: tmp.topContainer, children: items2 };

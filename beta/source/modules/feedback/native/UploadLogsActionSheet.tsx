@@ -1,26 +1,24 @@
-// Module ID: 19458
-// Function ID: 19459
+// Module ID: 19863
+// Function ID: 19864
 // Name: UploadLogsActionSheet
-// Dependencies: [19, 17, 1072, 21, 5014, 575, 5272, 7321, 1113, 5624, 5634, 11091, 1252, 5258, 2]
+// Dependencies: [19, 17, 1072, 21, 5140, 575, 5388, 7382, 1113, 5751, 5758, 11223, 1252, 5374, 2]
 // Exports: default
 
-// Module 19458 (UploadLogsActionSheet)
+// Module 19863 (UploadLogsActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5272 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import components_Button_Button from "components/Button/Button" /* 5634 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7321 */;
-import DebugUploadManager from "DebugUploadManager" /* 11091 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5388 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import components_Button_Button from "components/Button/Button" /* 5758 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7382 */;
+import DebugUploadManager from "DebugUploadManager" /* 11223 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
-
-let BottomSheet;
 
 let closure_4;
 let hasOwnProperty;
@@ -30,7 +28,7 @@ let obj2;
 let obj3;
 let obj4;
 let tmp3;
-const ActionSheetActionCreatorsDefault = tmp3(5258);
+const ActionSheetActionCreatorsDefault = tmp3(5374);
 const View = react_native.View;
 ({ AnalyticEvents: closure_4, DebugLogCategory: hasOwnProperty } = Constants);
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
@@ -55,12 +53,12 @@ export default function UploadLogsActionSheet(arg0) {
   ({ mediaSessionId: require, rtcConnectionId: importDefault } = arg0);
   const tmp = closure_8();
   let obj = { header: closure_6(BottomSheetTitleHeader, obj2), children: closure_7(View, obj3) };
-  BottomSheet = Sheet_BottomSheet.BottomSheet;
+  const BottomSheet = Sheet_BottomSheet.BottomSheet;
   obj2 = { title: intl.string(intl5.t.KTjjrG) };
   BottomSheetTitleHeader = BottomSheetTitleHeader2.BottomSheetTitleHeader;
   intl = intl5.intl;
   obj3 = { style: tmp.container, children: items };
-  const obj4 = { variant: "text-sm/normal", color: "text-muted", style: tmp.body, children: intl2.string(intl5.t["ZvRR/t"]) };
+  const obj4 = { variant: "body-sm/normal", color: "text-muted", style: tmp.body, children: intl2.string(intl5.t["ZvRR/t"]) };
   const Text = Text_Text.Text;
   intl2 = intl5.intl;
   items = [closure_6(Text, obj4), , , ];

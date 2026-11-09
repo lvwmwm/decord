@@ -1,13 +1,13 @@
-// Module ID: 8003
-// Function ID: 8004
+// Module ID: 8073
+// Function ID: 8074
 // Name: AppStoreAgeSignalSupport
-// Dependencies: [1622, 4971, 1375, 2]
+// Dependencies: [1624, 5097, 1377, 2]
 // Exports: isAppStoreAgeSignalSupported
 
-// Module 8003 (AppStoreAgeSignalSupport)
-import PlatformUtils from "PlatformUtils" /* 1375 */;
-import MetaQuestUtils from "MetaQuestUtils" /* 1622 */;
-import DeviceUtils from "DeviceUtils" /* 4971 */;
+// Module 8073 (AppStoreAgeSignalSupport)
+import PlatformUtils from "PlatformUtils" /* 1377 */;
+import MetaQuestUtils from "MetaQuestUtils" /* 1624 */;
+import DeviceUtils from "DeviceUtils" /* 5097 */;
 import size from "module_2" /* 2 */;
 
 let c2 = 26;

@@ -1,16 +1,16 @@
-// Module ID: 11046
-// Function ID: 11047
+// Module ID: 5882
+// Function ID: 5883
 // Name: RedesignChannelListConstants
-// Dependencies: [17, 1376, 11047, 2]
+// Dependencies: [17, 1357, 5883, 2]
 // Exports: getScaledCategoryRowHeight, getScaledChannelRowHeight, getScaledChannelSubtitleHeight, getScaledSearchBarHeight
 
-// Module 11046 (RedesignChannelListConstants)
+// Module 5882 (RedesignChannelListConstants)
 import react_native from "react-native" /* 17 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11047 */;
-import PlatformUtils_mod from "utils/PlatformUtils" /* 1376 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 5883 */;
+import PlatformUtils_mod from "utils/PlatformUtils" /* 1357 */;
 import size from "module_2" /* 2 */;
 
-let c2 = "text-xs/medium";
+let c2 = "body-xs/medium";
 const StyleSheet = react_native.StyleSheet;
 let PlatformUtils = PlatformUtils_mod;
 let num = 20;
@@ -22,20 +22,20 @@ PlatformUtils = PlatformUtils_mod;
 if (PlatformUtils.isIOS()) {
   num = 22;
 }
-let c5 = "text-sm/semibold";
+let c5 = "body-sm/semibold";
 const hairlineWidth = StyleSheet.hairlineWidth;
 const frozen = Object.freeze({ waitForInteraction: false, viewAreaCoveragePercentThreshold: 100, minimumViewTime: 25 });
 const result = size.fileFinishedImporting("modules/channel_list_v2/native/RedesignChannelListConstants.tsx");
 
-export const CHANNEL_SUBTITLE_TEXT_VARIANT = "text-xs/medium";
+export const CHANNEL_SUBTITLE_TEXT_VARIANT = "body-xs/medium";
 export const CHANNEL_PADDING_VERTICAL = 8;
 export const CHANNEL_TITLE_LINE_HEIGHT = num2;
 export const CATEGORY_NAME_LINE_HEIGHT = num;
 export const SEARCH_BAR_HEIGHT = 40;
 export const SEARCH_BAR_MARGIN_BOTTOM = 8;
 export const SEARCH_BAR_PADDING_VERTICAL = 12;
-export const SEARCH_BAR_TEXT_VARIANT = "text-sm/semibold";
-export const CATEGORY_NAME_TEXT_VARIANT = "text-sm/semibold";
+export const SEARCH_BAR_TEXT_VARIANT = "body-sm/semibold";
+export const CATEGORY_NAME_TEXT_VARIANT = "body-sm/semibold";
 export const PANEL_MARGIN = 8;
 export const CHANNEL_MARGIN_VERTICAL = hairlineWidth;
 export const CHANNEL_LIST_DESIGN_WIDTH = 375;

@@ -1,20 +1,20 @@
-// Module ID: 15709
-// Function ID: 15710
+// Module ID: 16023
+// Function ID: 16024
 // Name: ActivateDeviceError
-// Dependencies: [19, 17, 21, 5014, 5717, 14634, 15707, 5624, 1113, 5634, 2]
+// Dependencies: [19, 17, 21, 5140, 5842, 14869, 16021, 5751, 1113, 5758, 2]
 // Exports: ActivateDeviceError
 
-// Module 15709 (ActivateDeviceError)
+// Module 16023 (ActivateDeviceError)
 import react_native from "react-native" /* 17 */;
 import intl4 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import components_Button_Button from "components/Button/Button" /* 5634 */;
-import FastImageDefault from "FastImage" /* 5717 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14634 */;
-import ActivateDeviceSharedStylesDefault from "ActivateDeviceSharedStyles" /* 15707 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import components_Button_Button from "components/Button/Button" /* 5758 */;
+import FastImageDefault from "FastImage" /* 5842 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14869 */;
+import ActivateDeviceSharedStylesDefault from "ActivateDeviceSharedStyles" /* 16021 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -39,11 +39,11 @@ export function ActivateDeviceError(onRetry) {
   const tmp2 = FastImageDefault;
   items = [React3(tmp2, obj2), , ];
   const obj3 = { style: ActivateDeviceSharedStylesDefault.innerContent, children: items1 };
-  const obj4 = { variant: "heading-lg/bold", color: "mobile-text-heading-primary", style: ActivateDeviceSharedStylesDefault.centerText, children: intl.string(intl4.t["3dgwPD"]) };
+  const obj4 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", style: ActivateDeviceSharedStylesDefault.centerText, children: intl.string(intl4.t["3dgwPD"]) };
   const Text = Text_Text.Text;
   intl = intl4.intl;
   items1 = [React3(Text, obj4), ];
-  const obj5 = { variant: "text-md/medium", color: "text-default", style: ActivateDeviceSharedStylesDefault.centerText, children: intl2.string(intl4.t["/GAO1P"]) };
+  const obj5 = { variant: "body-md/medium", color: "text-default", style: ActivateDeviceSharedStylesDefault.centerText, children: intl2.string(intl4.t["/GAO1P"]) };
   const Text2 = Text_Text.Text;
   intl2 = intl4.intl;
   items1[1] = React3(Text2, obj5);

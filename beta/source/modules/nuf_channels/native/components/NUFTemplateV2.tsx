@@ -1,16 +1,16 @@
-// Module ID: 15179
-// Function ID: 15180
+// Module ID: 15466
+// Function ID: 15467
 // Name: NUFTemplateV2
-// Dependencies: [19, 17, 21, 5014, 5624, 5634, 2]
+// Dependencies: [19, 17, 21, 5140, 5751, 5758, 2]
 // Exports: default
 
-// Module 15179 (NUFTemplateV2)
+// Module 15466 (NUFTemplateV2)
 import react_native from "react-native" /* 17 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import components_Button_Button from "components/Button/Button" /* 5634 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import components_Button_Button from "components/Button/Button" /* 5758 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -33,9 +33,9 @@ export default function NUFActionSheetTemplate(arg0) {
   items = [, , , ];
   const obj2 = { style: tmp.illustration, children: illustration };
   items[0] = _false(View, obj2);
-  const obj3 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/bold", children: title };
+  const obj3 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/semibold", children: title };
   items[1] = _false(Text_Text.Text, obj3);
-  const obj4 = { style: tmp.description, variant: "text-md/medium", children: description };
+  const obj4 = { style: tmp.description, variant: "body-md/medium", children: description };
   items[2] = _false(Text_Text.Text, obj4);
   items[3] = _false(components_Button_Button.Button, { text: CTALabel, onPress: onCTAPress, grow: true });
   return React3(View, obj);

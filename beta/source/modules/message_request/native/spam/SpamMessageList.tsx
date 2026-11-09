@@ -1,21 +1,21 @@
-// Module ID: 18975
-// Function ID: 18976
+// Module ID: 19350
+// Function ID: 19351
 // Name: SpamMessageList
-// Dependencies: [19, 17, 1072, 21, 5014, 575, 1113, 14023, 5712, 5756, 6744, 14015, 1252, 6980, 18960, 1187, 15113, 16824, 8177, 1625, 18969, 18976, 18967, 5593, 6540, 6545, 18970, 7294, 1375, 5624, 2]
+// Dependencies: [19, 17, 1072, 21, 5140, 575, 1113, 14262, 5837, 5885, 6799, 14254, 1252, 7043, 19335, 1187, 15394, 17147, 8246, 1627, 19344, 19351, 19342, 5721, 6594, 6599, 19345, 7357, 1377, 5751, 2]
 // Exports: default
 
-// Module 18975 (SpamMessageList)
+// Module 19350 (SpamMessageList)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import transitionToChannel from "transitionToChannel" /* 5756 */;
-import MonitoringAgentDefault from "MonitoringAgent" /* 6540 */;
-import MetricEvents from "MetricEvents" /* 6545 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6744 */;
+import transitionToChannel from "transitionToChannel" /* 5885 */;
+import MonitoringAgentDefault from "MonitoringAgent" /* 6594 */;
+import MetricEvents from "MetricEvents" /* 6599 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6799 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -279,7 +279,7 @@ export default function SpamMessageList(goToMessageRequestPreview) {
     items[1] = obj5;
     obj6 = { paddingHorizontal: 16, paddingBottom: bottom, paddingTop: 12 };
     obj7 = { style: tmp.sectionContainer, children: closure_7(Text, obj8) };
-    obj8 = { variant: "eyebrow", color: "text-default", children: intl.format(goToMessageRequestPreview(tmp3[6]).t.aNh5Kf, obj9) };
+    obj8 = { variant: "body-sm/medium", color: "text-default", children: intl.format(goToMessageRequestPreview(tmp3[6]).t.aNh5Kf, obj9) };
     Text = tmp4(tmp3[29]).Text;
     intl = tmp4(tmp3[6]).intl;
     obj9 = { count: data.length };

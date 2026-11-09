@@ -1,11 +1,11 @@
-// Module ID: 14982
-// Function ID: 14983
+// Module ID: 15255
+// Function ID: 15256
 // Name: useProfileSectionTabs
-// Dependencies: [32, 19, 8754, 2]
+// Dependencies: [32, 19, 8825, 2]
 // Exports: getProfileTabSectionIndex, useProfileSectionTabs, useProfileTabIndices
 
-// Module 14982 (useProfileSectionTabs)
-import Constants from "Constants" /* 8754 */;
+// Module 15255 (useProfileSectionTabs)
+import Constants from "Constants" /* 8825 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -15,12 +15,12 @@ let activeIndex;
 const UserProfileSections = Constants.UserProfileSections;
 const result = size.fileFinishedImporting("modules/user_profile/hooks/native/useProfileSectionTabs.tsx");
 
-export function useProfileTabIndices(arg0, isRecentActivityMobileEnabled, arg2) {
+export function useProfileTabIndices(isMobileWidgetEditingEnabled, isRecentActivityMobileEnabled, arg2) {
   let tmp2;
   let num = -1;
   let num2 = 1;
   let num3 = -1;
-  if (arg0) {
+  if (isMobileWidgetEditingEnabled) {
     num2 = 2;
     num3 = 1;
   }
@@ -57,6 +57,7 @@ export function useProfileSectionTabs(boardTabIndex) {
   const activityTabIndex = boardTabIndex.activityTabIndex;
   const onTabChange = boardTabIndex.onTabChange;
   let num2;
+  let ref;
   const tmp = _slicedToArray(wishlistTabIndex.useState(() => {
     if (UserProfileSections.WISHLIST === _slicedToArray) {
       return UserProfileSections.WISHLIST;
@@ -87,15 +88,17 @@ export function useProfileSectionTabs(boardTabIndex) {
   if (num >= 0) {
     num2 = num;
   }
+  ref = obj.useRef(num2);
   const items = [wishlistTabIndex, boardTabIndex, activityTabIndex, onTabChange];
   const items1 = [num2];
-  const callback = obj.useCallback((arg0) => {
+  const callback = obj.useCallback((current) => {
     let MAIN;
-    if (wishlistTabIndex === arg0) {
+    ref.current = current;
+    if (wishlistTabIndex === current) {
       MAIN = UserProfileSections.WISHLIST;
-    } else if (boardTabIndex === arg0) {
+    } else if (boardTabIndex === current) {
       MAIN = UserProfileSections.WIDGETS;
-    } else if (activityTabIndex === arg0) {
+    } else if (activityTabIndex === current) {
       MAIN = UserProfileSections.ACTIVITY;
     } else {
       MAIN = UserProfileSections.MAIN;
@@ -110,9 +113,12 @@ export function useProfileSectionTabs(boardTabIndex) {
     setActiveProfileTabSection: tmp3,
     handleTabChange: callback,
     restoreActiveIndex: wishlistTabIndex.useCallback((activeIndex) => {
-      activeIndex = activeIndex.activeIndex;
-      if (activeIndex.get() !== num2) {
-        activeIndex.setActiveIndex(tmp, false, true);
+      if (ref.current !== num2) {
+        tmp.current = num2;
+        activeIndex = activeIndex.activeIndex;
+        if (activeIndex.get() !== num2) {
+          activeIndex.setActiveIndex(num2, false, true);
+        }
       }
     }, items1),
     activeProfileTabSectionIndex: num2

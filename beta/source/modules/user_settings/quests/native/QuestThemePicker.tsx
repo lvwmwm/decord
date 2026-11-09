@@ -1,19 +1,19 @@
-// Module ID: 17146
-// Function ID: 17147
+// Module ID: 17473
+// Function ID: 17474
 // Name: QuestThemePicker
-// Dependencies: [19, 17, 1193, 1192, 1240, 1083, 21, 5014, 575, 7326, 7351, 5250, 504, 1241, 5596, 2026, 17004, 5624, 12219, 1113, 2]
+// Dependencies: [19, 17, 1193, 1192, 1240, 1083, 21, 5140, 575, 7387, 7412, 5366, 504, 1241, 5724, 2150, 17327, 5751, 12391, 1113, 2]
 
-// Module 17146 (QuestThemePicker)
+// Module 17473 (QuestThemePicker)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
 import ClientThemesConstants from "ClientThemesConstants" /* 1240 */;
-import UserSettingsAppearanceThemeUtils from "UserSettingsAppearanceThemeUtils" /* 17004 */;
+import UserSettingsAppearanceThemeUtils from "UserSettingsAppearanceThemeUtils" /* 17327 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1193 */;
 import ThemeStore from "ThemeStore" /* 1192 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -130,7 +130,7 @@ class QuestThemePicker {
         }
         items[2] = themeCircleSelected;
         items1 = [callback(tmp5, { style: items }), ];
-        const obj2 = { variant: "text-xs/medium", color: "text-muted", style: backgroundColor.themeLabel, children: backgroundColor.name };
+        const obj2 = { variant: "body-xs/medium", color: "text-muted", style: backgroundColor.themeLabel, children: backgroundColor.name };
         items1[1] = callback(backgroundColor(allMobileThemes[17]).Text, obj2);
         return tmp(tmp2, obj, backgroundColor.theme);
       }),
@@ -140,7 +140,7 @@ class QuestThemePicker {
     items8 = [, ];
     const obj10 = { style: tmp.resetIcon, children: callback(require("RefreshIcon").RefreshIcon, { size: "sm" }) };
     items8[0] = callback(isSynced, obj10);
-    const obj11 = { variant: "text-xs/medium", color: "text-muted", style: tmp.themeLabel, children: intl.string(require("intl").t.yBZMsQ) };
+    const obj11 = { variant: "body-xs/medium", color: "text-muted", style: tmp.themeLabel, children: intl.string(require("intl").t.yBZMsQ) };
     const Text = require("Text/Text").Text;
     intl = require("intl").intl;
     items8[1] = callback(Text, obj11);

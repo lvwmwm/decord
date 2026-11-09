@@ -1,15 +1,15 @@
-// Module ID: 15728
-// Function ID: 15729
+// Module ID: 16042
+// Function ID: 16043
 // Name: MobileNativeUpdateUtils
-// Dependencies: [5, 5746, 3, 1282, 5709, 1375, 1092, 2]
+// Dependencies: [5, 5871, 3, 1282, 5834, 1377, 1092, 2]
 // Exports: checkForNewerBuild, openBuildInstaller
 
-// Module 15728 (MobileNativeUpdateUtils)
+// Module 16042 (MobileNativeUpdateUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
-import PlatformUtils from "PlatformUtils" /* 1375 */;
-import Linking from "Linking" /* 5709 */;
-import MobileNativeUpdateConstants from "MobileNativeUpdateConstants" /* 5746 */;
+import PlatformUtils from "PlatformUtils" /* 1377 */;
+import Linking from "Linking" /* 5834 */;
+import MobileNativeUpdateConstants from "MobileNativeUpdateConstants" /* 5871 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ let obj = function _checkForNewerBuild() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {

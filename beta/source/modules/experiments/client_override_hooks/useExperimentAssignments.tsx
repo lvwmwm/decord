@@ -1,13 +1,13 @@
-// Module ID: 13237
-// Function ID: 13238
+// Module ID: 13469
+// Function ID: 13470
 // Name: useExperimentAssignments
-// Dependencies: [32, 5238, 1246, 504, 5243, 2]
+// Dependencies: [32, 5354, 1246, 504, 5359, 2]
 // Exports: getExperimentServerAssignment, useExperimentAssignment, useExperimentServerAssignment
 
-// Module 13237 (useExperimentAssignments)
-import ExperimentManager from "ExperimentManager" /* 5243 */;
+// Module 13469 (useExperimentAssignments)
+import ExperimentManager from "ExperimentManager" /* 5359 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ExperimentStore from "ExperimentStore" /* 5238 */;
+import ExperimentStore from "ExperimentStore" /* 5354 */;
 import ApexExperimentStore from "ApexExperimentStore" /* 1246 */;
 import size from "module_2" /* 2 */;
 

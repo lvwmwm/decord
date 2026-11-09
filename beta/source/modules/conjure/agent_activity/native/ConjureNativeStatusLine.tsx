@@ -1,17 +1,17 @@
-// Module ID: 12625
-// Function ID: 12626
+// Module ID: 12827
+// Function ID: 12828
 // Name: ConjureNativeStatusLine
-// Dependencies: [19, 17, 21, 575, 5014, 5596, 11414, 7378, 12123, 5624, 12626, 6980, 1113, 3868, 2]
+// Dependencies: [19, 17, 21, 575, 5140, 5724, 11555, 7438, 11105, 5751, 12828, 7043, 1113, 4026, 2]
 // Exports: default, laneTintFor, laneTintIndexFor
 
-// Module 12625 (ConjureNativeStatusLine)
+// Module 12827 (ConjureNativeStatusLine)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import MagicWandIcon from "MagicWandIcon" /* 12123 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import MagicWandIcon from "MagicWandIcon" /* 11105 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -136,11 +136,11 @@ export default function ConjureNativeStatusLine(line) {
       tmp6Result2 = tmp6(tmp2, obj2);
     }
     items = [tmp6Result2, , , ];
-    let str = "text-sm/normal";
+    let str = "body-sm/normal";
     const obj4 = { style: row.label, children: hasOwnProperty(Text, obj5) };
     Text = Text_Text.Text;
     if (inGutter) {
-      str = "text-md/normal";
+      str = "body-md/normal";
     }
     obj5 = { variant: str, color: str2, children: line };
     items[1] = hasOwnProperty(View, obj4);

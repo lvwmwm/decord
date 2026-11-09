@@ -1,21 +1,21 @@
-// Module ID: 12720
-// Function ID: 12721
+// Module ID: 12921
+// Function ID: 12922
 // Name: ConjureTodoList
-// Dependencies: [19, 17, 21, 5014, 575, 1113, 3868, 12604, 12625, 5624, 6989, 12589, 12721, 2]
+// Dependencies: [19, 17, 21, 5140, 575, 1113, 4026, 12806, 12827, 5751, 7055, 12792, 12922, 2]
 // Exports: default
 
-// Module 12720 (ConjureTodoList)
+// Module 12921 (ConjureTodoList)
 import nativeDefault from "native" /* 575 */;
 import intl9 from "intl" /* 1113 */;
-import _modDef3868 from "module_3868" /* 3868 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import ConjureTodoState from "ConjureTodoState" /* 12589 */;
-import ConjureTodoAgents from "ConjureTodoAgents" /* 12604 */;
-import ConjureNativeStatusLine from "ConjureNativeStatusLine" /* 12625 */;
+import _modDef4026 from "module_4026" /* 4026 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import ConjureTodoState from "ConjureTodoState" /* 12792 */;
+import ConjureTodoAgents from "ConjureTodoAgents" /* 12806 */;
+import ConjureNativeStatusLine from "ConjureNativeStatusLine" /* 12827 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -54,7 +54,7 @@ function TodoAgents(agents) {
       shown.map((key) => {
           let intl;
           let obj3;
-          const obj = { style: items, accessibilityRole: "image", accessibilityLabel: intl.formatToPlainString(_modDef3868.TVvPCJ, obj3) };
+          const obj = { style: items, accessibilityRole: "image", accessibilityLabel: intl.formatToPlainString(_modDef4026.TVvPCJ, obj3) };
           items = [agentMark.agentMark, ];
           const obj2 = ConjureNativeStatusLine;
           const laneTintIndexForResult = obj2.laneTintIndexFor(key.key);
@@ -69,8 +69,8 @@ function TodoAgents(agents) {
     const tmp10 = closure_7;
     const tmp11 = closure_5;
     if (overflow > 0) {
-      let obj3 = { variant: "text-xs/medium", color: "text-muted", accessibilityLabel: intl.formatToPlainString(items(3868).SPGdDc, obj4), children: "+" + overflow };
-      const Text = tmp2(5624).Text;
+      let obj3 = { variant: "body-xs/medium", color: "text-muted", accessibilityLabel: intl.formatToPlainString(items(4026).SPGdDc, obj4), children: "+" + overflow };
+      const Text = tmp2(5751).Text;
       intl = tmp2(1113).intl;
       const _HermesInternal = HermesInternal;
       obj4 = { count: overflow };
@@ -97,16 +97,16 @@ function TodoMarker(status) {
       items[2] = tmp5;
       if ("completed" === status) {
         const intl4 = intl9.intl;
-        stringResult = intl4.string(_modDef3868.KvBdun);
+        stringResult = intl4.string(_modDef4026.KvBdun);
       } else if ("in_progress" === status) {
         const intl3 = intl9.intl;
-        stringResult = intl3.string(_modDef3868["m5G9+S"]);
+        stringResult = intl3.string(_modDef4026["m5G9+S"]);
       } else if ("unfinished" === status) {
         const intl2 = intl9.intl;
-        stringResult = intl2.string(_modDef3868.lRpwhD);
+        stringResult = intl2.string(_modDef4026.lRpwhD);
       } else {
         const intl = intl9.intl;
-        stringResult = intl.string(_modDef3868.sPGeWi);
+        stringResult = intl.string(_modDef4026.sPGeWi);
       }
       tmp2Result = null;
       if ("in_progress" === status) {
@@ -118,23 +118,23 @@ function TodoMarker(status) {
   }
   if ("completed" === status) {
     const intl8 = intl9.intl;
-    stringResult1 = intl8.string(_modDef3868.KvBdun);
+    stringResult1 = intl8.string(_modDef4026.KvBdun);
     tmp21 = require;
   } else if ("in_progress" === status) {
     const intl7 = intl9.intl;
-    stringResult1 = intl7.string(_modDef3868["m5G9+S"]);
+    stringResult1 = intl7.string(_modDef4026["m5G9+S"]);
     tmp21 = require;
   } else if ("unfinished" === status) {
     const intl6 = intl9.intl;
-    stringResult1 = intl6.string(_modDef3868.lRpwhD);
+    stringResult1 = intl6.string(_modDef4026.lRpwhD);
     tmp21 = require;
   } else {
     tmp21 = require;
     const intl5 = intl9.intl;
-    stringResult1 = intl5.string(_modDef3868.sPGeWi);
+    stringResult1 = intl5.string(_modDef4026.sPGeWi);
   }
-  obj = { accessible: true, accessibilityRole: "image", accessibilityLabel: stringResult1, children: metroRequire(tmp21(6989).FormCheckbox, { checked: "completed" === status }) };
-  ({ accessible: true, accessibilityRole: "image", accessibilityLabel: stringResult1, children: metroRequire(tmp21(6989).FormCheckbox, { checked: "completed" === status }) });
+  obj = { accessible: true, accessibilityRole: "image", accessibilityLabel: stringResult1, children: metroRequire(tmp21(7055).FormCheckbox, { checked: "completed" === status }) };
+  ({ accessible: true, accessibilityRole: "image", accessibilityLabel: stringResult1, children: metroRequire(tmp21(7055).FormCheckbox, { checked: "completed" === status }) });
 }
 let react = react_mod;
 ({ ActivityIndicator: closure_4, View: hasOwnProperty } = react_native);
@@ -195,7 +195,7 @@ export default function ConjureTodoList(announceProgress) {
   const onToggleExpanded = announceProgress.onToggleExpanded;
   let tmp = closure_8();
   dependencyMap = tmp;
-  let obj = agents(12589);
+  let obj = agents(12792);
   ({ completed, total } = obj.todoProgress(todos));
   let items = [agents];
   obj.todoProgress(todos);
@@ -213,15 +213,15 @@ export default function ConjureTodoList(announceProgress) {
     return null;
   }
   const intl = tmp2(1113).intl;
-  const formatToPlainStringResult = intl.formatToPlainString(flag2(3868)["P/I+JW"], { completed, total });
+  const formatToPlainStringResult = intl.formatToPlainString(flag2(4026)["P/I+JW"], { completed, total });
   const intl2 = tmp2(1113).intl;
   let tmp9 = closure_6;
-  let obj2 = { title: intl3.string(flag2(3868).RtzECX), meta: tmp9(ConjureNativeCollapsibleMeta, { accessibilityLiveRegion: str, accessibilityLabel: formatToPlainStringResult1, children: formatToPlainStringResult }), showHeader: total > 0, superseded: flag3, expanded: flag4, onToggleExpanded, showLabel: intl4.string(tmp6(3868).RKyN9q), hideLabel: intl5.string(tmp6(3868).xydHoj), children: closure_7(closure_5, obj3) };
-  formatToPlainStringResult1 = intl2.formatToPlainString(flag2(3868)["7tzwKB"], { completed, total });
-  const tmp10 = flag2(12721);
+  let obj2 = { title: intl3.string(flag2(4026).RtzECX), meta: tmp9(ConjureNativeCollapsibleMeta, { accessibilityLiveRegion: str, accessibilityLabel: formatToPlainStringResult1, children: formatToPlainStringResult }), showHeader: total > 0, superseded: flag3, expanded: flag4, onToggleExpanded, showLabel: intl4.string(tmp6(4026).RKyN9q), hideLabel: intl5.string(tmp6(4026).xydHoj), children: closure_7(closure_5, obj3) };
+  formatToPlainStringResult1 = intl2.formatToPlainString(flag2(4026)["7tzwKB"], { completed, total });
+  const tmp10 = flag2(12922);
   intl3 = tmp2(1113).intl;
   str = "none";
-  ConjureNativeCollapsibleMeta = tmp2(12721).ConjureNativeCollapsibleMeta;
+  ConjureNativeCollapsibleMeta = tmp2(12922).ConjureNativeCollapsibleMeta;
   if (flag) {
     str = "none";
     if (!flag3) {
@@ -249,7 +249,7 @@ export default function ConjureTodoList(announceProgress) {
       } else {
         str = "text-muted";
       }
-      const obj3 = { variant: "text-sm/normal", color: str, style: items1, children: tmpResult.todoLabel(status, todoMarkResult) };
+      const obj3 = { variant: "body-sm/normal", color: str, style: items1, children: tmpResult.todoLabel(status, todoMarkResult) };
       items1 = [row.text, "completed" === todoMarkResult && row.textCompleted];
       tmpResult = ConjureTodoState;
       items[1] = metroRequire(Text, obj3);
@@ -274,8 +274,8 @@ export default function ConjureTodoList(announceProgress) {
     if ("" !== provisional) {
       let obj4 = { style: tmp.row, children: items2 };
       items2 = [tmp9(TodoMarker, { status: "pending" }), ];
-      const obj5 = { variant: "text-sm/normal", color: "text-muted", style: tmp.text, children: provisional };
-      items2[1] = tmp9(agents(5624).Text, obj5);
+      const obj5 = { variant: "body-sm/normal", color: "text-muted", style: tmp.text, children: provisional };
+      items2[1] = tmp9(agents(5751).Text, obj5);
       tmp11Result = tmp11(tmp12, obj4);
     }
   }

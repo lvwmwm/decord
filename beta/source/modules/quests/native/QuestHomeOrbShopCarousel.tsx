@@ -1,27 +1,27 @@
-// Module ID: 16996
-// Function ID: 16997
+// Module ID: 17319
+// Function ID: 17320
 // Name: QuestHomeOrbShopCarousel
-// Dependencies: [32, 19, 17, 1192, 7845, 6781, 21, 575, 16983, 5014, 504, 5624, 1113, 9578, 7294, 16477, 16997, 9459, 7862, 7871, 9462, 5080, 2]
+// Dependencies: [32, 19, 17, 1192, 7921, 6836, 21, 575, 17306, 5140, 504, 5751, 1113, 9665, 7357, 16795, 17320, 9540, 7939, 7948, 9543, 5199, 2]
 // Exports: default, useQuestHomeOrbShopCarouselData
 
-// Module 16996 (QuestHomeOrbShopCarousel)
+// Module 17319 (QuestHomeOrbShopCarousel)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
-import intl2 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import QuestConstants from "QuestConstants" /* 6781 */;
-import AnalyticsActions from "AnalyticsActions" /* 7862 */;
-import CollectiblesAnalyticsContext from "CollectiblesAnalyticsContext" /* 9462 */;
-import SkeletonCardDefault from "SkeletonCard" /* 9578 */;
-import usePopularOrbShopProducts from "usePopularOrbShopProducts" /* 16983 */;
-import QuestHomeOrbShopRewardCardDefault from "QuestHomeOrbShopRewardCard" /* 16997 */;
+import intl3 from "intl" /* 1113 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import QuestConstants from "QuestConstants" /* 6836 */;
+import AnalyticsActions from "AnalyticsActions" /* 7939 */;
+import CollectiblesAnalyticsContext from "CollectiblesAnalyticsContext" /* 9543 */;
+import SkeletonCardDefault from "SkeletonCard" /* 9665 */;
+import usePopularOrbShopProducts from "usePopularOrbShopProducts" /* 17306 */;
+import QuestHomeOrbShopRewardCardDefault from "QuestHomeOrbShopRewardCard" /* 17320 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ThemeStore from "ThemeStore" /* 1192 */;
-import BountyStore from "BountyStore" /* 7845 */;
+import BountyStore from "BountyStore" /* 7921 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 let c10;
@@ -39,11 +39,14 @@ function ItemSeparator() {
 function QuestHomeOrbShopCarouselHeading(belowCarousel) {
   let Heading;
   let compactHeading;
-  let intl;
+  let format;
+  let intl2;
+  let kJtgUW;
   let listEdgeSpacing;
   let num;
   let num2;
   let obj3;
+  let obj4;
   let flag = belowCarousel.belowCarousel;
   const orbRewardAmount = belowCarousel.orbRewardAmount;
   if (flag === undefined) {
@@ -63,18 +66,22 @@ function QuestHomeOrbShopCarouselHeading(belowCarousel) {
   if (!flag) {
     num2 = nativeDefault.space.PX_8;
   }
-  let str = "text-xs/medium";
+  let str = "body-xs/medium";
   const obj2 = { style: obj, children: React4(Heading, obj3) };
   Heading = Text_Text.Heading;
   if (!flag) {
-    let str2 = "text-md/semibold";
+    let str2 = "body-md/semibold";
     if (compactHeading) {
-      str2 = "text-sm/semibold";
+      str2 = "body-sm/semibold";
     }
     str = str2;
   }
-  obj3 = { variant: str, color: "text-strong", children: intl.format(intl2.t.CXlsRP, { orbAmount: orbRewardAmount }) };
-  intl = tmp7(1113).intl;
+  obj3 = { variant: str, color: "text-strong", children: format(kJtgUW, obj4) };
+  const intl = tmp7(1113).intl;
+  format = intl.format;
+  obj4 = { orbAmount: orbRewardAmount, productNamePlural: intl2.string(intl3.t["JDvNF+"]) };
+  kJtgUW = tmp7(1113).t.kJtgUW;
+  intl2 = tmp7(1113).intl;
   return React4(tmp2, obj2);
 }
 function QuestHomeOrbShopCarouselPlaceholder(cardWidth) {
@@ -236,9 +243,9 @@ export default function QuestHomeOrbShopCarousel(showOrbShopPlaceholderCarousel)
       const trackQuestHomeOrbShopCarouselScroll = AnalyticsActions.trackQuestHomeOrbShopCarouselScroll;
       AnalyticsActions;
       if (rounded > tmp2) {
-        LEFT = tmp3(7871).HorizontalScrollingDirection.RIGHT;
+        LEFT = tmp3(7948).HorizontalScrollingDirection.RIGHT;
       } else {
-        LEFT = tmp3(7871).HorizontalScrollingDirection.LEFT;
+        LEFT = tmp3(7948).HorizontalScrollingDirection.LEFT;
       }
       const obj = { scrollingDirection: LEFT, carouselPosition: rounded, carouselSize: length };
       const result = trackQuestHomeOrbShopCarouselScroll(obj);

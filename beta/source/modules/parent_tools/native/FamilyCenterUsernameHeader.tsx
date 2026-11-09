@@ -1,16 +1,16 @@
-// Module ID: 16791
-// Function ID: 16792
+// Module ID: 17114
+// Function ID: 17115
 // Name: FamilyCenterUsernameHeader
-// Dependencies: [19, 17, 21, 5014, 5068, 5624, 2]
+// Dependencies: [19, 17, 21, 5140, 5194, 5751, 2]
 // Exports: default
 
-// Module 16791 (FamilyCenterUsernameHeader)
+// Module 17114 (FamilyCenterUsernameHeader)
 import react_native from "react-native" /* 17 */;
-import UserUtilsDefault from "UserUtils" /* 5068 */;
-import Text_Text from "Text/Text" /* 5624 */;
+import UserUtilsDefault from "UserUtils" /* 5194 */;
+import Text_Text from "Text/Text" /* 5751 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -31,9 +31,9 @@ export default function FamilyCenterUsernameHeader(user) {
   const obj3 = { style: tmp.container, children: hasOwnProperty(Text, obj4) };
   const obj2 = UserUtilsDefault;
   const combined = " (@" + obj2.getUserTag(user, { decoration: "never" }) + ")";
-  obj4 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: items };
+  obj4 = { variant: "body-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: items };
   items = [name, ];
   Text = Text_Text.Text;
-  items[1] = React3(Text_Text.Text, { variant: "text-md/medium", color: "text-muted", lineClamp: 1, children: combined });
+  items[1] = React3(Text_Text.Text, { variant: "body-md/medium", color: "text-muted", lineClamp: 1, children: combined });
   return React3(View, obj3);
 };

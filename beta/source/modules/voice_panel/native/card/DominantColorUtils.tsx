@@ -1,13 +1,13 @@
-// Module ID: 9522
-// Function ID: 9523
+// Module ID: 9606
+// Function ID: 9607
 // Name: DominantColorUtils
-// Dependencies: [32, 19, 17, 1451, 5011, 575, 558, 1893, 2]
+// Dependencies: [32, 19, 17, 1453, 5137, 575, 558, 2022, 2]
 // Exports: getCachedSourceFromURI, useDominantColorFromImage, useDominantRGBFromImage
 
-// Module 9522 (DominantColorUtils)
+// Module 9606 (DominantColorUtils)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import LRUCacheDefault from "LRUCache" /* 1451 */;
+import LRUCacheDefault from "LRUCache" /* 1453 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -15,7 +15,7 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require, importDefault;
 
-const f94912 = () => () => {
+const f96393 = () => () => {
   closure_1_1.current = false;
 };
 const Image = react_native.Image;
@@ -53,7 +53,7 @@ export function useDominantRGBFromImage(arg0) {
   let first;
   _require = arg0;
   importDefault = react.useRef(true);
-  const effect = react.useEffect(f94912, []);
+  const effect = react.useEffect(f96393, []);
   let hexToRgbResult;
   const useState = react.useState;
   const obj = react;
@@ -132,7 +132,7 @@ export function useDominantColorFromImage(uri) {
   _require = uri;
   let obj = react;
   importDefault = react.useRef(true);
-  const effect = react.useEffect(f94912, []);
+  const effect = react.useEffect(f96393, []);
   let hexToRgbResult;
   const useState = react.useState;
   if (null != uri) {

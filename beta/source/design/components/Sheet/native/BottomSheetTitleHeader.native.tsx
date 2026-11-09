@@ -1,20 +1,20 @@
-// Module ID: 7321
-// Function ID: 7322
+// Module ID: 7382
+// Function ID: 7383
 // Name: BottomSheetTitleHeader
-// Dependencies: [32, 19, 17, 21, 5014, 575, 1491, 5596, 5624, 6999, 2]
+// Dependencies: [32, 19, 17, 21, 5140, 575, 1493, 5724, 5751, 7065, 2]
 // Exports: BottomSheetTitleHeader
 
-// Module 7321 (BottomSheetTitleHeader)
+// Module 7382 (BottomSheetTitleHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1491 */;
-import useToken from "useToken" /* 5596 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import HeaderDebugOverlayDefault from "HeaderDebugOverlay" /* 6999 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1493 */;
+import useToken from "useToken" /* 5724 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import HeaderDebugOverlayDefault from "HeaderDebugOverlay" /* 7065 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;
@@ -132,14 +132,14 @@ function RedesignBottomSheetTitleHeaderComplex(subtitle) {
   return metroImportDefault(View, obj2);
 }
 function Title(arg0) {
-  const obj = { variant: "redesign/heading-18/semibold", color: "mobile-text-heading-primary", accessibilityRole: "header", style: closure_8().title };
+  const obj = { variant: "heading-md/semibold", color: "mobile-text-heading-primary", accessibilityRole: "header", style: closure_8().title };
   const Text = Text_Text.Text;
   const merged = Object.assign(arg0);
   return metroRequire(Text, obj);
 }
 function Subtitle(children) {
   children = children.children;
-  const obj = { variant: "text-sm/medium", color: "text-muted", style: closure_8().subtitle, textBreakStrategy: "balanced", lineBreakStrategyIOS: "push-out", children };
+  const obj = { variant: "body-sm/medium", color: "text-muted", style: closure_8().subtitle, textBreakStrategy: "balanced", lineBreakStrategyIOS: "push-out", children };
   return metroRequire(Text_Text.Text, obj);
 }
 const View = react_native.View;

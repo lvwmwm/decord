@@ -1,16 +1,16 @@
-// Module ID: 11346
-// Function ID: 11347
+// Module ID: 11486
+// Function ID: 11487
 // Name: PinotMemberNoticeHeaderArrow
-// Dependencies: [19, 17, 4863, 21, 5014, 575, 504, 11347, 11322, 11331, 2]
+// Dependencies: [19, 17, 4989, 21, 5140, 575, 504, 11487, 11462, 11471, 2]
 // Exports: PinotMemberNoticeHeaderArrow
 
-// Module 11346 (PinotMemberNoticeHeaderArrow)
+// Module 11486 (PinotMemberNoticeHeaderArrow)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import ChannelStore from "ChannelStore" /* 4989 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 let StyleSheet;
@@ -26,7 +26,7 @@ let obj = { anchor: { position: "absolute", top: 0, right: 0, bottom: 0, left: 0
 size = { position: "absolute", top: 9 - result / 2, left: (16 - result) / 2, width: result, height: result, transform: items, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_FEEDBACK_INFO, backgroundColor: nativeDefault.colors.STANDALONE_CHANNEL_CONTENT_BACKGROUND };
 items = [{ rotate: "45deg" }];
 createStyles = createStyles.createStyles;
-obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_INFO };
+obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_MOD_INFO };
 const merged = Object.assign(StyleSheet.absoluteFillObject);
 let closure_6 = createStyles(obj);
 size = size_mod;
@@ -42,11 +42,11 @@ export function PinotMemberNoticeHeaderArrow(channelId) {
   const items1 = [channelId];
   const obj = channelId(504);
   const stateFromStores = obj.useStateFromStores(items, () => ChannelStore.getChannel(channelId), items1);
-  const obj2 = channelId(11347);
+  const obj2 = channelId(11487);
   const isForumChannelSearchActive = obj2.useIsForumChannelSearchActive(channelId);
-  const obj3 = channelId(11322);
+  const obj3 = channelId(11462);
   const visible = obj3.usePinotMemberNotice(stateFromStores, "mobile_channel_header").visible;
-  const obj4 = channelId(11331);
+  const obj4 = channelId(11471);
   const pinotChannelLabelCenter = obj4.usePinotChannelLabelCenter(channelId, ref);
   const center = pinotChannelLabelCenter.center;
   let tmp9Result2 = null;

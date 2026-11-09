@@ -1,38 +1,60 @@
-// Module ID: 5045
-// Function ID: 5046
+// Module ID: 5171
+// Function ID: 5172
 // Name: SelectedGuildStore
-// Dependencies: [5046, 502, 5049, 4885, 1072, 1099, 504, 5050, 5063, 572, 2]
+// Dependencies: [5172, 502, 5175, 5011, 1072, 1099, 504, 5176, 5189, 572, 2]
 
-// Module 5045 (SelectedGuildStore)
+// Module 5171 (SelectedGuildStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import router_utils from "router_utils" /* 1099 */;
-import matchPathCompat from "matchPathCompat" /* 5050 */;
-import RouteUtils from "RouteUtils" /* 5063 */;
-import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 5046 */;
+import matchPathCompat from "matchPathCompat" /* 5176 */;
+import RouteUtils from "RouteUtils" /* 5189 */;
+import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 5172 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import DefaultRouteStore from "DefaultRouteStore" /* 5049 */;
-import GuildStore from "GuildStore" /* 4885 */;
+import DefaultRouteStore from "DefaultRouteStore" /* 5175 */;
+import GuildStore from "GuildStore" /* 5011 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
+let c9;
+let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 function handleConnectionOpen() {
-  const tmp = null != selectedGuildId && null == GuildStore.getGuild(selectedGuildId) && null == UserGuildJoinRequestStore.getRequest(selectedGuildId);
-  if (tmp) {
+  let tmp = null == selectedGuildId;
+  if (!tmp) {
+    tmp = selectedGuildId === metroImportDefault || tmp2 === React4;
+    const tmp4 = selectedGuildId === metroImportDefault || tmp2 === React4;
+  }
+  if (!tmp) {
+    tmp = null != GuildStore.getGuild(selectedGuildId);
+  }
+  if (!tmp) {
+    tmp = null != UserGuildJoinRequestStore.getRequest(selectedGuildId);
+  }
+  if (!tmp) {
     selectedGuildId = null;
   }
-  const tmp6 = null != lastSelectedGuildId && null == GuildStore.getGuild(lastSelectedGuildId) && null == UserGuildJoinRequestStore.getRequest(lastSelectedGuildId);
-  if (tmp6) {
+  let tmp10 = null == lastSelectedGuildId;
+  if (!tmp10) {
+    tmp10 = lastSelectedGuildId === metroImportDefault || tmp11 === React4;
+    const tmp13 = lastSelectedGuildId === metroImportDefault || tmp11 === React4;
+  }
+  if (!tmp10) {
+    tmp10 = null != GuildStore.getGuild(lastSelectedGuildId);
+  }
+  if (!tmp10) {
+    tmp10 = null != UserGuildJoinRequestStore.getRequest(lastSelectedGuildId);
+  }
+  if (!tmp10) {
     lastSelectedGuildId = null;
   }
   if (null != selectedGuildId) {
     const _Date = Date;
-    prop[tmp11] = Date.now();
+    prop[tmp19] = Date.now();
   }
 }
-({ ME: metroRequire, Routes: metroImportDefault } = Constants);
+({ ME: metroRequire, MOBILE_GUILD_UPSELL_LIST: metroImportDefault, Routes: metroImportAll, WATERWHEELS: c9 } = Constants);
 let selectedGuildId = null;
 let lastSelectedGuildId = null;
 let prop = {};
@@ -68,7 +90,7 @@ class SelectedGuildStore extends PersistedStore {
     const lastNonVoiceRoute = tmp2.lastNonVoiceRoute;
     const obj = { path: CHANNEL(RouteParam.guildId()) };
     const matchPath = matchPathCompat.matchPath;
-    CHANNEL = metroImportDefault.CHANNEL;
+    CHANNEL = metroImportAll.CHANNEL;
     matchPathCompat;
     RouteParam = RouteUtils.RouteParam;
     const matchPathResult = matchPath(lastNonVoiceRoute, obj);
@@ -191,12 +213,12 @@ let obj = {
         if (null != tmp5) {
           selectedGuildId = tmp5;
           const obj2 = router_utils;
-          obj2.replaceWith(metroImportDefault.CHANNEL(tmp5));
+          obj2.replaceWith(metroImportAll.CHANNEL(tmp5));
           flag = true;
         } else {
           selectedGuildId = null;
           const obj = router_utils;
-          obj.replaceWith(metroImportDefault.ME);
+          obj.replaceWith(metroImportAll.ME);
           flag = true;
         }
       }
@@ -263,17 +285,17 @@ let obj = {
           selectedGuildId = tmp5;
           let tmp11 = require;
           let tmp12 = dependencyMap;
-          let tmp13 = metroImportDefault;
+          let tmp13 = metroImportAll;
           const obj2 = router_utils;
-          obj2.replaceWith(metroImportDefault.CHANNEL(tmp5));
+          obj2.replaceWith(metroImportAll.CHANNEL(tmp5));
           flag = true;
         } else {
           selectedGuildId = null;
           let tmp7 = require;
           let tmp8 = dependencyMap;
-          let tmp9 = metroImportDefault;
+          let tmp9 = metroImportAll;
           const obj = router_utils;
-          obj.replaceWith(metroImportDefault.ME);
+          obj.replaceWith(metroImportAll.ME);
           flag = true;
         }
       }

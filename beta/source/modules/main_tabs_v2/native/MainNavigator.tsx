@@ -1,32 +1,31 @@
-// Module ID: 17978
-// Function ID: 17979
+// Module ID: 18317
+// Function ID: 18318
 // Name: MainNavigator
-// Dependencies: [32, 19, 17, 502, 17979, 1072, 21, 5014, 1375, 4971, 15866, 17980, 17981, 18047, 18816, 18823, 18855, 18881, 9855, 18947, 18948, 18951, 18955, 18957, 18986, 18992, 18993, 5207, 1495, 1623, 18994, 5760, 9812, 18998, 19056, 563, 11703, 5201, 7169, 11563, 18863, 19059, 19090, 11863, 19092, 10144, 2]
+// Dependencies: [32, 19, 17, 502, 18318, 1072, 21, 5140, 1377, 5097, 16183, 18319, 18320, 18387, 19180, 19187, 19220, 19256, 9975, 19322, 19323, 19326, 19330, 19332, 19361, 19367, 19368, 5323, 1497, 1625, 19369, 5889, 9902, 19373, 19432, 563, 11866, 5317, 7231, 11721, 19233, 19435, 19466, 12024, 19468, 10265, 2]
 // Exports: getChannelScreen
 
-// Module 17978 (MainNavigator)
+// Module 18317 (MainNavigator)
 import react_native from "react-native" /* 17 */;
-import KeyboardUIStore from "KeyboardUIStore" /* 1495 */;
-import KeyboardTypes from "KeyboardTypes" /* 1623 */;
-import DeviceUtils from "DeviceUtils" /* 4971 */;
-import ChatInputUtils from "ChatInputUtils" /* 5207 */;
-import StartupProfiler from "StartupProfiler" /* 11563 */;
-import GlobalStatusIndicatorDefault from "GlobalStatusIndicator" /* 11863 */;
-import createAccessibleNativeStackNavigatorDefault from "createAccessibleNativeStackNavigator" /* 15866 */;
-import NavigationConstants from "NavigationConstants" /* 17979 */;
-import createChatPanelNativeStackNavigatorDefault from "createChatPanelNativeStackNavigator" /* 17980 */;
-import AutoAnalytics from "AutoAnalytics" /* 18816 */;
-import VisualEffectViewTargetDefault from "VisualEffectViewTarget" /* 18863 */;
-import LaunchPadContainerDefault from "LaunchPadContainer" /* 19059 */;
-import ParentalConsentWarningBannerDefault from "ParentalConsentWarningBanner" /* 19090 */;
-import AppComponents from "AppComponents" /* 19092 */;
+import KeyboardUIStore from "KeyboardUIStore" /* 1497 */;
+import KeyboardTypes from "KeyboardTypes" /* 1625 */;
+import DeviceUtils from "DeviceUtils" /* 5097 */;
+import ChatInputUtils from "ChatInputUtils" /* 5323 */;
+import StartupProfiler from "StartupProfiler" /* 11721 */;
+import GlobalStatusIndicatorDefault from "GlobalStatusIndicator" /* 12024 */;
+import createAccessibleNativeStackNavigatorDefault from "createAccessibleNativeStackNavigator" /* 16183 */;
+import NavigationConstants from "NavigationConstants" /* 18318 */;
+import createChatPanelNativeStackNavigatorDefault from "createChatPanelNativeStackNavigator" /* 18319 */;
+import AutoAnalytics from "AutoAnalytics" /* 19180 */;
+import VisualEffectViewTargetDefault from "VisualEffectViewTarget" /* 19233 */;
+import LaunchPadContainerDefault from "LaunchPadContainer" /* 19435 */;
+import ParentalConsentWarningBannerDefault from "ParentalConsentWarningBanner" /* 19466 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
-import PlatformUtils_mod from "PlatformUtils" /* 1375 */;
+import createStyles from "createStyles" /* 5140 */;
+import PlatformUtils_mod from "PlatformUtils" /* 1377 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -39,7 +38,7 @@ let closure_12;
 let metroImportAll;
 let tmp2;
 let unpackModuleId;
-const getNavigationModalPresentationDefault = tmp2(10144);
+const getNavigationModalPresentationDefault = tmp2(10265);
 function getId(params) {
   return params.params.screenKey;
 }
@@ -225,7 +224,7 @@ const memoResult = react.memo(function StackNavigator() {
       tmpResult = tmp(WrappedAutoAnalytics, {});
     }
     let items = [tmpResult, ];
-    let obj3 = { profile: StartupProfiler.Profiles.StackNavigator, children: tmp6(Navigator, obj4) };
+    let obj3 = { profile: tmp5(11721).Profiles.StackNavigator, children: tmp6(Navigator, obj4) };
     obj4 = {
       id: "root",
       screenOptions() {
@@ -233,9 +232,7 @@ const memoResult = react.memo(function StackNavigator() {
       },
       children: items1
     };
-    Navigator = closure_16.Navigator;
-    items1 = [, , , , , , , , , , , , , , ];
-    const obj5 = {
+    let obj5 = {
       name: "main",
       options,
       children() {
@@ -295,8 +292,9 @@ const memoResult = react.memo(function StackNavigator() {
         return closure_2_11(tmp2, obj3);
       }
     };
+    Navigator = closure_16.Navigator;
     const tmp2Result = StartupProfilerDefault;
-    items1[0] = tmp(closure_16.Screen, obj5);
+    items1 = [tmp(closure_16.Screen, obj5), , , , , , , , , , , , , , ];
     const obj6 = { name: "search", getComponent: getSearchComponent };
     items1[1] = tmp(closure_16.Screen, obj6);
     const obj7 = {
@@ -329,30 +327,34 @@ const memoResult = react.memo(function StackNavigator() {
     const obj14 = {
       name: "you",
       options() {
-        let obj2;
         let obj4;
         const tmp2 = stateFromStores(first[45]);
         const obj = styles(first[9]);
         if (obj.isIpadOS()) {
-          obj2 = { presentation: "modal" };
-        } else {
-          const tmp3Result = styles(first[8]);
-          if (tmp3Result.isAndroid()) {
+          let obj2;
+          const tmp3Result = styles(first[9]);
+          if (!tmp3Result.isDuo()) {
+            obj2 = { presentation: "modal" };
+          }
+          const obj3 = { contentStyle: obj4, animation: "slide_from_bottom" };
+          const merged = Object.assign(tmp2(obj2));
+          obj4 = undefined;
+          const tmp3Result3 = styles(first[8]);
+          if (tmp3Result3.isAndroid()) {
             if (isChatBesideChannelList) {
-              obj2 = { presentation: "transparentModal" };
+              obj4 = { backgroundColor: "transparent" };
             }
           }
+          return obj3;
         }
-        const obj3 = { contentStyle: obj4, animation: "slide_from_bottom" };
-        const merged = Object.assign(tmp2(obj2));
-        obj4 = undefined;
-        const tmp3Result2 = styles(first[8]);
-        if (tmp3Result2.isAndroid()) {
+        let obj5;
+        const tmp3Result4 = styles(first[8]);
+        if (tmp3Result4.isAndroid()) {
           if (isChatBesideChannelList) {
-            obj4 = { backgroundColor: "transparent" };
+            obj5 = { presentation: "transparentModal" };
           }
         }
-        return obj3;
+        obj2 = obj5;
       },
       getComponent: getYouComponent
     };
@@ -406,13 +408,18 @@ const memoResult = react.memo(function StackNavigator() {
       name: "settings",
       options() {
         let obj2;
-        const tmp = stateFromStores(first[45]);
+        const tmp2 = stateFromStores(first[45]);
         const obj = styles(first[9]);
+        const tmp = first;
+        const tmp3 = styles;
         if (obj.isIpadOS()) {
-          obj2 = { presentation: "modal" };
+          const tmp3Result = tmp3(tmp[9]);
+          if (!tmp3Result.isDuo()) {
+            obj2 = { presentation: "modal" };
+          }
         }
         const obj3 = { animation: "slide_from_bottom", fullScreenGestureEnabled: true };
-        const merged = Object.assign(tmp(obj2));
+        const merged = Object.assign(tmp2(obj2));
         return obj3;
       },
       getComponent: getSettingsComponent
@@ -464,7 +471,7 @@ const memoResult = react.memo(function StackNavigator() {
     };
     items1[14] = tmp(closure_16.Screen, obj25);
     items[1] = tmp(tmp2Result, obj3);
-    items2 = [tmp(tmp8, obj16), AppComponents.APP_EXTRA_COMPONENTS, AppComponents.APP_EXTRA_COMPONENTS_NEVER_FREEZE, AppComponents.APP_EXTRA_COMPONENTS_EXTERNAL_PIP];
+    items2 = [tmp(tmp8, obj16), tmp5(19468).APP_EXTRA_COMPONENTS, tmp5(19468).APP_EXTRA_COMPONENTS_NEVER_FREEZE, tmp5(19468).APP_EXTRA_COMPONENTS_EXTERNAL_PIP];
     return tmp(tmp4, obj);
   }, items1);
 });

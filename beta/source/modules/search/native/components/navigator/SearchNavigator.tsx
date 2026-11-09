@@ -1,47 +1,38 @@
-// Module ID: 18948
-// Function ID: 18949
+// Module ID: 19323
+// Function ID: 19324
 // Name: SearchNavigator
-// Dependencies: [19, 17, 9826, 18703, 1072, 21, 5014, 575, 9856, 7169, 13907, 1625, 18949, 9812, 18943, 18944, 9867, 9868, 1376, 9889, 2]
+// Dependencies: [19, 9916, 19066, 1072, 21, 9976, 7231, 14141, 19219, 19324, 9902, 19318, 19319, 9987, 9988, 1357, 10011, 2]
 
-// Module 18948 (SearchNavigator)
-import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 575 */;
+// Module 19323 (SearchNavigator)
 import Constants from "Constants" /* 1072 */;
-import utils_PlatformUtils from "utils/PlatformUtils" /* 1376 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1625 */;
-import TrackingConstants from "TrackingConstants" /* 9826 */;
-import ConversationNavigatorHeader from "ConversationNavigatorHeader" /* 9868 */;
-import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 13907 */;
-import SearchNavigatorConstants from "SearchNavigatorConstants" /* 18703 */;
-import SearchNavigatorPreviewHeaderDefault from "SearchNavigatorPreviewHeader" /* 18943 */;
+import utils_PlatformUtils from "utils/PlatformUtils" /* 1357 */;
+import TrackingConstants from "TrackingConstants" /* 9916 */;
+import ConversationNavigatorHeader from "ConversationNavigatorHeader" /* 9988 */;
+import TrackingDefault from "Tracking" /* 14141 */;
+import SearchNavigatorConstants from "SearchNavigatorConstants" /* 19066 */;
+import AppFrameContainerDefault from "AppFrameContainer" /* 19219 */;
+import SearchNavigatorPreviewHeaderDefault from "SearchNavigatorPreviewHeader" /* 19318 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
-import NativeStackView from "NativeStackView" /* 9856 */;
+import NativeStackView from "NativeStackView" /* 9976 */;
 import size from "module_2" /* 2 */;
 
 let navigation;
 
-let c9;
 let metroImportAll;
-let obj2;
-const View = react_native.View;
-let closure_5 = TrackingConstants.SearchEntrypointAnalyticsLocations;
+let metroImportDefault;
+let closure_4 = TrackingConstants.SearchEntrypointAnalyticsLocations;
 const SearchNavigatorScreens = SearchNavigatorConstants.SearchNavigatorScreens;
 const SearchTypes = Constants.SearchTypes;
-({ jsx: metroImportAll, jsxs: c9 } = Fragment);
-let obj = { container: obj2 };
-obj2 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST };
-let closure_10 = createStyles.createStyles(obj);
-let closure_11 = NativeStackView.createNativeStackNavigator();
+({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
+let closure_9 = NativeStackView.createNativeStackNavigator();
 const memoResult = react.memo(function SearchNavigator(route) {
   let Navigator;
   let items1;
-  let items2;
   let obj3;
   let obj4;
   const searchContext = route.route.params.searchContext;
-  let obj = searchContext(7169);
+  let obj = searchContext(7231);
   const accessibilityNativeStackOptions = obj.useAccessibilityNativeStackOptions();
   const items = [searchContext];
   const effect = react.useEffect(() => {
@@ -52,32 +43,30 @@ const memoResult = react.memo(function SearchNavigator(route) {
     } else {
       DM_LIST = constants.DM_LIST;
     }
-    let obj = search_tracking_TrackingDefault;
+    let obj = TrackingDefault;
     obj.trackSearchOpened({ searchContext: tmp, searchLocation: DM_LIST });
     return () => {
-      const obj = search_tracking_TrackingDefault;
+      const obj = TrackingDefault;
       const obj2 = { searchContext };
       obj.trackSearchClosed(obj2);
     };
   }, items);
-  const tmp3 = closure_10();
-  const rect = useSafeAreaInsetsDefault();
-  let obj2 = { style: items1, children: closure_9(Navigator, obj3) };
-  items1 = [tmp3.container, { paddingLeft: rect.left, paddingRight: rect.right }];
-  Navigator = closure_11.Navigator;
-  obj3 = { id: "search-navigator", screenOptions: obj4, children: items2 };
+  let obj2 = { children: closure_8(Navigator, obj3) };
+  obj3 = { id: "search-navigator", screenOptions: obj4, children: items1 };
   obj4 = {};
+  Navigator = closure_9.Navigator;
+  const tmp3 = AppFrameContainerDefault;
   const merged = Object.assign(accessibilityNativeStackOptions);
-  items2 = [, , ];
+  items1 = [, , ];
   const obj5 = {
     initialParams: { searchContext },
     name: SearchNavigatorScreens.SEARCH_TABS,
     options: { headerShown: false, fullScreenGestureEnabled: true },
     getComponent() {
-      return searchContext(dependencyMap[12]).default;
+      return searchContext(dependencyMap[9]).default;
     }
   };
-  items2[0] = closure_8(closure_11.Screen, obj5);
+  items1[0] = closure_7(closure_9.Screen, obj5);
   const obj6 = {
     name: SearchNavigatorScreens.SEARCH_CHAT_PREVIEW,
     options(route) {
@@ -85,25 +74,25 @@ const memoResult = react.memo(function SearchNavigator(route) {
       route = route.route;
       let obj = {
         headerShown: true,
-        header: route(closure_2[13]).renderHeader,
+        header: route(closure_2[10]).renderHeader,
         headerLeft: obj2.getRenderBackImage(navigation),
         headerTitle() {
           const obj = { channelId: route.params.channelId };
-          return closure_2_8(SearchNavigatorPreviewHeaderDefault, obj);
+          return closure_2_7(SearchNavigatorPreviewHeaderDefault, obj);
         },
         fullScreenGestureEnabled: true
       };
       navigation = route.navigation;
-      obj2 = route(closure_2[13]);
+      obj2 = route(closure_2[10]);
       return obj;
     },
     getComponent() {
-      return searchContext(dependencyMap[15]).default;
+      return searchContext(dependencyMap[12]).default;
     }
   };
-  items2[1] = closure_8(closure_11.Screen, obj6);
+  items1[1] = closure_7(closure_9.Screen, obj6);
   const obj7 = {
-    name: searchContext(9867).ConversationNavigatorScreens.FOCUS,
+    name: searchContext(9987).ConversationNavigatorScreens.FOCUS,
     options(arg0) {
       let route;
       ({ route, navigation } = arg0);
@@ -114,11 +103,11 @@ const memoResult = react.memo(function SearchNavigator(route) {
       return conversationNavigatorFocusHeaderOptions(route, navigation, { shouldHandleSafeArea });
     },
     getComponent() {
-      return searchContext(dependencyMap[19]).default;
+      return searchContext(dependencyMap[16]).default;
     }
   };
-  items2[2] = closure_8(closure_11.Screen, obj7);
-  return closure_8(View, obj2);
+  items1[2] = closure_7(closure_9.Screen, obj7);
+  return closure_7(tmp3, obj2);
 });
 const result = size.fileFinishedImporting("modules/search/native/components/navigator/SearchNavigator.tsx");
 

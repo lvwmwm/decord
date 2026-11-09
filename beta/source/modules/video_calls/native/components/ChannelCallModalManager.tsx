@@ -1,13 +1,13 @@
-// Module ID: 11846
-// Function ID: 11847
+// Module ID: 12009
+// Function ID: 12010
 // Name: ChannelCallModalManager
-// Dependencies: [1383, 5679, 1996, 7939, 2]
+// Dependencies: [1385, 5803, 2120, 8008, 2]
 
-// Module 11846 (ChannelCallModalManager)
-import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7939 */;
-import UserStore from "UserStore" /* 1383 */;
-import VoiceStateStore from "VoiceStateStore" /* 5679 */;
-import LifecycleManager from "LifecycleManager" /* 1996 */;
+// Module 12009 (ChannelCallModalManager)
+import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 8008 */;
+import UserStore from "UserStore" /* 1385 */;
+import VoiceStateStore from "VoiceStateStore" /* 5803 */;
+import LifecycleManager from "LifecycleManager" /* 2120 */;
 import size from "module_2" /* 2 */;
 
 class ChannelCallModalManager extends LifecycleManager {

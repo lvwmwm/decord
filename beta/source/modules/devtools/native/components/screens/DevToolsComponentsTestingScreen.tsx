@@ -1,28 +1,28 @@
-// Module ID: 17717
-// Function ID: 17718
+// Module ID: 18045
+// Function ID: 18046
 // Name: DevToolsComponentsTestingScreen
-// Dependencies: [32, 19, 17, 4917, 21, 5014, 575, 6065, 1992, 8696, 6977, 5624, 17718, 17721, 5634, 6027, 17722, 572, 2]
+// Dependencies: [32, 19, 17, 5043, 21, 5140, 575, 6198, 2116, 8767, 7040, 5751, 18046, 18049, 5758, 6159, 18050, 572, 2]
 // Exports: default
 
-// Module 17717 (DevToolsComponentsTestingScreen)
+// Module 18045 (DevToolsComponentsTestingScreen)
 import react_native from "react-native" /* 17 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import nativeDefault from "native" /* 575 */;
-import Server from "Server" /* 1992 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import components_Button_Button from "components/Button/Button" /* 5634 */;
-import Stack_Stack from "Stack/Stack" /* 6027 */;
-import Card_Card from "Card/Card" /* 6977 */;
-import ComponentStateContext from "ComponentStateContext" /* 8696 */;
-import StringSelectActionComponentDefault from "StringSelectActionComponent" /* 17718 */;
-import SearchableSelectActionComponentDefault from "SearchableSelectActionComponent" /* 17721 */;
-import TextDisplayComponentDefault from "TextDisplayComponent" /* 17722 */;
+import Server from "Server" /* 2116 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import components_Button_Button from "components/Button/Button" /* 5758 */;
+import Stack_Stack from "Stack/Stack" /* 6159 */;
+import Card_Card from "Card/Card" /* 7040 */;
+import ComponentStateContext from "ComponentStateContext" /* 8767 */;
+import StringSelectActionComponentDefault from "StringSelectActionComponent" /* 18046 */;
+import SearchableSelectActionComponentDefault from "SearchableSelectActionComponent" /* 18049 */;
+import TextDisplayComponentDefault from "TextDisplayComponent" /* 18050 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4917 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5043 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
-import InteractionComponentUtils from "InteractionComponentUtils" /* 6065 */;
+import createStyles_mod from "createStyles" /* 5140 */;
+import InteractionComponentUtils from "InteractionComponentUtils" /* 6198 */;
 import size from "module_2" /* 2 */;
 
 let closure_12;
@@ -74,22 +74,22 @@ function Select(type) {
   }
   if (type1 === obj.type) {
     let mapped;
-    const Text = tmp4(5624).Text;
+    const Text = tmp4(5751).Text;
     if ("values" in state) {
       mapped = state.values;
     } else {
       const selectedOptions = state.selectedOptions;
       mapped = selectedOptions.map((label) => label.label);
     }
-    const obj6 = { variant: "text-md/normal", children: items1 };
+    const obj6 = { variant: "body-md/normal", children: items1 };
     items1 = ["Selected values: ", mapped.join(", ")];
     tmp7Result1 = tmp6(Text, obj6);
   } else {
-    tmp7Result1 = tmp7(tmp4(5624).Text, { variant: "text-md/normal", children: "Nothing selected" });
+    tmp7Result1 = tmp7(tmp4(5751).Text, { variant: "body-md/normal", children: "Nothing selected" });
   }
   items[2] = tmp7Result1;
   let str3 = "off";
-  const Button = tmp4(5634).Button;
+  const Button = tmp4(5758).Button;
   if (tmp2) {
     str3 = "on";
   }
@@ -135,7 +135,7 @@ export default function DevToolsComponentsTestingScreen() {
   let obj = { style: tmp.wrap, contentContainerStyle: tmp.contentContainer, children: metroImportAll(Stack, obj2) };
   obj2 = { spacing: 16, children: items };
   Stack = Stack_Stack.Stack;
-  items = [metroImportDefault(Text_Text.Text, { variant: "text-md/normal", children: "Test screen for embedding native components in RN" }), , ];
+  items = [metroImportDefault(Text_Text.Text, { variant: "body-md/normal", children: "Test screen for embedding native components in RN" }), , ];
   const obj3 = { modal: obj4, children: items1 };
   obj4 = { customId: modal, channelId: SelectedChannelStore.getChannelId(), components };
   const ComponentStateContextProvider = ComponentStateContext.ComponentStateContextProvider;

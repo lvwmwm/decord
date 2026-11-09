@@ -1,11 +1,11 @@
-// Module ID: 8681
-// Function ID: 8682
+// Module ID: 8752
+// Function ID: 8753
 // Name: GameAutocompleteUtils
-// Dependencies: [7776, 2]
-// Exports: isGameAutocompleteResultAllowedInGameWidgets, normalizeGameAutocompleteQuery, shouldSuppressAutocompleteFetch
+// Dependencies: [7852, 2]
+// Exports: isGameAutocompleteResultAllowedInGameWidgets, isRetryableGameSearchError, normalizeGameAutocompleteQuery, shouldSuppressAutocompleteFetch
 
-// Module 8681 (GameAutocompleteUtils)
-import GameWidgetLimits from "GameWidgetLimits" /* 7776 */;
+// Module 8752 (GameAutocompleteUtils)
+import GameWidgetLimits from "GameWidgetLimits" /* 7852 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/games/autocomplete/GameAutocompleteUtils.tsx");
@@ -22,6 +22,19 @@ export function shouldSuppressAutocompleteFetch(arr, fn) {
     return arr.length <= 0 && diff >= 7;
   }
   return false;
+}
+export function isRetryableGameSearchError(status) {
+  status = status.status;
+  let tmp = null != status;
+  if (tmp) {
+    let tmp2 = 429 === status;
+    if (!tmp2) {
+      tmp2 = status >= 500 && 503 !== status;
+      const tmp3 = status >= 500 && 503 !== status;
+    }
+    tmp = tmp2;
+  }
+  return tmp;
 }
 export function normalizeGameAutocompleteQuery(name) {
   if (null == name) {

@@ -1,20 +1,20 @@
-// Module ID: 19659
-// Function ID: 19660
+// Module ID: 20069
+// Function ID: 20070
 // Name: editorUtils
-// Dependencies: [32, 19660, 19661, 1282, 6446, 2]
+// Dependencies: [32, 20070, 20071, 1282, 6579, 2]
 // Exports: createDefaultDraftWidgets, filterCatalogWidgetsAtMaxInstances, getWidgetSaveError, isDraftWidgetId, toWidgetConfigUpdateRequest
 
-// Module 19659 (editorUtils)
+// Module 20069 (editorUtils)
 import HTTPUtils from "HTTPUtils" /* 1282 */;
-import guildSpaceWidgetLayout from "guildSpaceWidgetLayout" /* 19660 */;
-import GuildSpaceTypes from "GuildSpaceTypes" /* 19661 */;
+import guildSpaceWidgetLayout from "guildSpaceWidgetLayout" /* 20070 */;
+import GuildSpaceTypes from "GuildSpaceTypes" /* 20071 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
 let map, set;
 
 let tmp;
-const V6OrEarlierAPIError = tmp(6446);
+const V6OrEarlierAPIError = tmp(6579);
 function createDraftWidget(type, name, locked) {
   const obj = { id: "" + c3 + +closure_4, position: { column: guildSpaceWidgetLayout.LEFT_COLUMN, order: 0 }, requires_hydration: false, default_title: name, locked };
   closure_4 = tmp + 1;
@@ -31,29 +31,37 @@ function createDraftWidget(type, name, locked) {
 }
 let c3 = "draft:";
 let closure_4 = 0;
-let items = [GuildSpaceTypes.GuildSpaceWidgetType.POPULAR_MUSIC, GuildSpaceTypes.GuildSpaceWidgetType.LEADERBOARD, GuildSpaceTypes.GuildSpaceWidgetType.POPULAR_GAMES];
+let items = [GuildSpaceTypes.GuildSpaceWidgetType.LEADERBOARD, GuildSpaceTypes.GuildSpaceWidgetType.WHITEBOARD];
+const items1 = [items, ];
+const items2 = [GuildSpaceTypes.GuildSpaceWidgetType.POPULAR_GAMES];
+items1[1] = items2;
 let result = size.fileFinishedImporting("modules/guild_space/editorUtils.tsx");
 
 export { createDraftWidget };
 export function createDefaultDraftWidgets(arg0) {
   let closure_0 = arg0;
-  return items.flatMap((item, order) => {
-    let obj2;
-    closure_0 = item;
-    const found = closure_0.find((type) => type.type === closure_0);
-    if (null == found) {
-      items = [];
-    } else {
+  return items1.flatMap((arr, index) => {
+    let column = index;
+    const flatMapResult = arr.flatMap((item) => {
+      let items;
+      column = item;
+      const found = column.find((type) => type.type === closure_0);
+      if (null == found) {
+        items = [];
+      } else {
+        items = [found];
+      }
+      return items;
+    });
+    return flatMapResult.map((type, order) => {
       const obj = { position: obj2 };
-      const merged = Object.assign(createDraftWidget(item, found.name, found.locked));
-      items = [obj];
-      obj2 = { column: guildSpaceWidgetLayout.LEFT_COLUMN, order };
-    }
-    return items;
+      const merged = Object.assign(createDraftWidget(type.type, type.name, type.locked));
+      return obj;
+    });
   });
 }
-export function isDraftWidgetId(widget_id) {
-  return widget_id.startsWith(c3);
+export function isDraftWidgetId(id) {
+  return id.startsWith(c3);
 }
 export function filterCatalogWidgetsAtMaxInstances(arr, arg1) {
   map = new Map();

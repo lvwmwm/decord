@@ -1,58 +1,68 @@
-// Module ID: 12388
-// Function ID: 12389
+// Module ID: 12591
+// Function ID: 12592
 // Name: SubmittingOverlay
-// Dependencies: [21, 5014, 575, 5095, 5637, 5638, 5647, 2]
+// Dependencies: [21, 5140, 575, 1652, 5761, 5762, 5771, 2]
 // Exports: SubmittingOverlay
 
-// Module 12388 (SubmittingOverlay)
+// Module 12591 (SubmittingOverlay)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 5095 */;
-import spring from "spring" /* 5637 */;
-import createStyles from "createStyles" /* 5014 */;
+import _mod1652 from "module_1652" /* 1652 */;
+import spring_spring from "spring/spring" /* 5761 */;
+import springPresets from "springPresets" /* 5762 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
-let num, tmp3;
+const _modDef1652 = _mod1652;
+let num;
 
-let obj2;
-let tmp;
-const springPresets = tmp(5638);
+let tmp2;
+const ButtonEllipsis = tmp2(5771);
 const jsx = Fragment.jsx;
-let obj = { ellipsis: obj2 };
-obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_SCRIM, justifyContent: "center", alignItems: "center" };
+let obj = { ellipsis: { backgroundColor: nativeDefault.colors.BACKGROUND_SCRIM, justifyContent: "center", alignItems: "center" } };
+({ backgroundColor: nativeDefault.colors.BACKGROUND_SCRIM, justifyContent: "center", alignItems: "center" });
 let closure_4 = createStyles.createStyles(obj);
-const __initData = { code: "function SubmittingOverlayTsx1(){const{withSpring,submitting,SUBTLE_SPRING}=this.__closure;return{opacity:withSpring(submitting?1:0,SUBTLE_SPRING,'animate-always')};}" };
+let closure_5 = { code: "(function SubmittingOverlayTsx1(){let[withSpring,submitting,SUBTLE_SPRING]=this.__closure;return{opacity:withSpring(submitting?1:0,SUBTLE_SPRING,'animate-always')};})" };
 const result = size.fileFinishedImporting("modules/app_launcher/native/screens/home/SubmittingOverlay.tsx");
 
 export function SubmittingOverlay(submitting) {
+  let tmp5;
+  let tmp6;
+  let tmp7;
+  let tmp8;
   submitting = submitting.submitting;
   const style = submitting.style;
   let tmp = closure_4();
-  let obj = submitting(5095);
-  const tmp2 = submitting;
-  class S {
+  const items = [closure_5, , , ];
+  const useAnimatedStyle = _mod1652.useAnimatedStyle;
+  _mod1652;
+  items[1] = spring_spring.withSpring;
+  items[2] = submitting;
+  items[3] = springPresets.SUBTLE_SPRING;
+  let c0;
+  let c1;
+  let c2;
+  [tmp5, tmp6, tmp7, tmp8] = items;
+  class SubmittingOverlayTsx1 {
     constructor() {
-      tmp = closure_0;
-      tmp2 = closure_2;
-      tmp3 = closure_0(closure_2[4]);
       num = 0;
-      withSpring = tmp3.withSpring;
-      if (submitting) {
+      tmp = closure_0;
+      if (closure_1) {
         num = 1;
       }
-      obj = { opacity: withSpring(num, tmp(tmp2[5]).SUBTLE_SPRING, "animate-always") };
+      obj = { opacity: tmp(num, closure_2, "animate-always") };
       return obj;
     }
   }
-  S.__closure = { withSpring: submitting(5637).withSpring, submitting, SUBTLE_SPRING: submitting(5638).SUBTLE_SPRING };
-  S.__workletHash = 492443733468;
-  S.__initData = __initData;
-  ({ withSpring: submitting(5637).withSpring, submitting, SUBTLE_SPRING: submitting(5638).SUBTLE_SPRING });
-  const animatedStyle = obj.useAnimatedStyle(S);
-  const items = [style, tmp.ellipsis, animatedStyle];
-  const View = ReanimatedRexportDefault.View;
+  const items1 = [tmp6, tmp7, tmp8];
+  SubmittingOverlayTsx1.__closure = items1;
+  SubmittingOverlayTsx1.__workletHash = 16951680167717;
+  SubmittingOverlayTsx1.__initData = tmp5;
+  const animatedStyle = useAnimatedStyle(SubmittingOverlayTsx1);
+  const items2 = [style, tmp.ellipsis, animatedStyle];
+  const View = _modDef1652.View;
   if (submitting) {
-    submitting = tmp5(tmp2(5647).Ellipsis, { variant: "active", size: "md" });
+    submitting = tmp10(ButtonEllipsis.Ellipsis, { variant: "active", size: "md" });
   }
-  return <View style={items}>{submitting}</View>;
+  return <View style={items2}>{submitting}</View>;
 }

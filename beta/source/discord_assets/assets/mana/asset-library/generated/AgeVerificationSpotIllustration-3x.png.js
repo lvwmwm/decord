@@ -1,8 +1,8 @@
-// Module ID: 8024
-// Function ID: 8025
+// Module ID: 8094
+// Function ID: 8095
 // Dependencies: [2]
 
-// Module 8024
+// Module 8094
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/AgeVerificationSpotIllustration-3x.png.js");

@@ -1,50 +1,209 @@
 // Module ID: 10442
 // Function ID: 10443
-// Dependencies: []
-// Exports: zhStringToNumber, zhStringToYear
+// Dependencies: [41, 42, 10443, 10449]
 
 // Module 10442
+import _mod10443 from "module_10443" /* 10443 */;
+import ReferenceWithTimezone2 from "ReferenceWithTimezone" /* 10449 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
 
-export function zhStringToNumber(arg0) {
-  let num = 0;
-  let num2 = 0;
-  let num3 = 0;
-  if (0 < arg0.length) {
-    do {
-      let sum;
-      let tmp = arg0[num];
-      if ("\u5341" === tmp) {
-        let result;
-        if (0 === num2) {
-          result = exports.NUMBER[tmp];
-        } else {
-          result = num2 * exports.NUMBER[tmp];
-        }
-        sum = result;
-      } else {
-        sum = num2 + exports.NUMBER[tmp];
+let tmp2 = this && this.__importDefault || ((__esModule) => {
+  let tmp2;
+  const tmp = __esModule;
+  if (!tmp) {
+    tmp2 = { default: __esModule };
+    const obj = { default: __esModule };
+  } else {
+    tmp2 = __esModule;
+  }
+  return tmp2;
+});
+const module_10443 = tmp2(_mod10443);
+class Chrono {
+  constructor(configuration) {
+    const self = this;
+    let casualConfiguration = configuration;
+    _classCallCheck(this, Chrono);
+    this.defaultConfig = new module_10443.default();
+    new module_10443.default();
+    if (!configuration) {
+      const defaultConfig = self.defaultConfig;
+      casualConfiguration = defaultConfig.createCasualConfiguration();
+    }
+    const items = [...casualConfiguration.parsers];
+    self.parsers = items;
+    self.refiners = [...casualConfiguration.refiners];
+  }
+}
+const entry = {
+  key: "clone",
+  value: function clone() {
+    let items;
+    const obj = { parsers: items, refiners: [...this.refiners] };
+    items = [...this.parsers];
+    const obj2 = Object.create(Chrono.prototype);
+    _classCallCheck(obj2, Chrono);
+    obj2.defaultConfig = new module_10443.default();
+    obj2.parsers = [...obj.parsers];
+    obj2.refiners = [...obj.refiners];
+    new module_10443.default();
+    return obj2;
+  }
+};
+let items = [
+  entry,
+  {
+    key: "parseDate",
+    value: function parseDate(arg0, arg1, arg2) {
+      const parsed = this.parse(arg0, arg1, arg2);
+      let dateResult = null;
+      if (parsed.length > 0) {
+        const start = parsed[0].start;
+        dateResult = start.date();
       }
-      num = num + 1;
-      num2 = sum;
-      num3 = sum;
-    } while (num < arg0.length);
+      return dateResult;
+    }
+  },
+  {
+    key: "parse",
+    value: function parse(arg0, arg1, arg2) {
+      let closure_0 = new closure_1_4(arg0, arg1, arg2);
+      let closure_1 = [];
+      const parsers = this.parsers;
+      new closure_1_4(arg0, arg1, arg2);
+      const item = parsers.forEach((item) => {
+        closure_1 = closure_1.concat(Chrono.executeParser(closure_0, item));
+      });
+      const sorted = closure_1.sort((index, index2) => index.index - index2.index);
+      const refiners = this.refiners;
+      const item1 = refiners.forEach((refine) => {
+        closure_1 = refine.refine(closure_0, closure_1);
+      });
+      return closure_1;
+    }
   }
-  return num3;
-}
-export function zhStringToYear(arg0) {
-  let length;
-  let num = 0;
-  let str = "";
-  let str2 = "";
-  if (0 < arg0.length) {
-    do {
-      str = `${exports.NUMBER[arg0[num]]}`;
-      num = num + 1;
-      str2 = str;
-      length = arg0.length;
-    } while (num < length);
+];
+const entry1 = {
+  key: "executeParser",
+  value: function executeParser(createParsingResult, pattern) {
+    let match1;
+    let text;
+    let text2;
+    const constructor = pattern;
+    const items = [];
+    const patternResult = pattern.pattern(createParsingResult);
+    ({ text, text: text2 } = createParsingResult);
+    let match = patternResult.exec(text2);
+    if (match) {
+      do {
+        let substr1;
+        match.index = match.index + text.length - text2.length;
+        let extractResult = pattern.extract(createParsingResult, match);
+        if (extractResult) {
+          let tmp6 = require;
+          let parsingResult1 = extractResult;
+          if (!(extractResult instanceof ReferenceWithTimezone2.ParsingResult)) {
+            createParsingResult = createParsingResult.createParsingResult;
+            let index = match.index;
+            let first = match[0];
+            if (extractResult instanceof tmp6(10449).ParsingComponents) {
+              let parsingResult = createParsingResult(index, first);
+              parsingResult.start = extractResult;
+              parsingResult1 = parsingResult;
+            } else {
+              parsingResult1 = createParsingResult(index, first, extractResult);
+            }
+          }
+          let index2 = parsingResult1.index;
+          let text1 = parsingResult1.text;
+          let debugResult = createParsingResult.debug(() => console.log("" + constructor.constructor.name + " extracted (at index=" + index2 + ") '" + text1 + "'"));
+          let arr = items.push(parsingResult1);
+          let substr = text.substring(index2 + text1.length);
+          match1 = patternResult.exec(substr);
+          substr1 = substr;
+        } else {
+          substr1 = text.substring(match.index + 1);
+          match1 = patternResult.exec(substr1);
+        }
+        match = match1;
+        text2 = substr1;
+      } while (match1);
+    }
+    return items;
   }
-  return parseInt(str2);
+};
+const items1 = [entry1];
+class ParsingContext {
+  constructor(text, instant, arg2) {
+    const self = this;
+    let obj = arg2;
+    _classCallCheck(this, ParsingContext);
+    this.text = text;
+    if (null == arg2) {
+      obj = {};
+    }
+    self.option = obj;
+    const ReferenceWithTimezone = ReferenceWithTimezone2.ReferenceWithTimezone;
+    self.reference = ReferenceWithTimezone.fromInput(instant, self.option.timezones);
+    self.refDate = self.reference.instant;
+  }
 }
-export const NUMBER = { "\u96f6": 0, "\u4e00": 1, "\u4e8c": 2, "\u5169": 2, "\u4e09": 3, "\u56db": 4, "\u4e94": 5, "\u516d": 6, "\u4e03": 7, "\u516b": 8, "\u4e5d": 9, "\u5341": 10, "\u5eff": 20, "\u5345": 30 };
-export const WEEKDAY_OFFSET = { "\u5929": 0, "\u65e5": 0, "\u4e00": 1, "\u4e8c": 2, "\u4e09": 3, "\u56db": 4, "\u4e94": 5, "\u516d": 6 };
+const entry2 = {
+  key: "createParsingComponents",
+  value: function createParsingComponents(date) {
+    let parsingComponents = date;
+    if (!(date instanceof ReferenceWithTimezone2.ParsingComponents)) {
+      const self = this;
+      const self2 = this;
+      const self3 = this;
+      parsingComponents = new ReferenceWithTimezone2.ParsingComponents(this.reference, date);
+    }
+    return parsingComponents;
+  }
+};
+const items2 = [
+  entry2,
+  {
+    key: "createParsingResult",
+    value: function createParsingResult(sum, substr, extractResult, date) {
+      const self = this;
+      if (typeof substr !== "string") {
+        const str = self.text;
+        substr = str.substring(sum, substr);
+      }
+      let parsingComponents = null;
+      if (extractResult) {
+        parsingComponents = self.createParsingComponents(extractResult);
+      }
+      let parsingComponents1 = null;
+      if (date) {
+        parsingComponents1 = self.createParsingComponents(date);
+      }
+      const parsingResult = new ReferenceWithTimezone2.ParsingResult(self.reference, sum, substr, parsingComponents, parsingComponents1);
+      return parsingResult;
+    }
+  },
+  {
+    key: "debug",
+    value: function debug(arg0) {
+      const self = this;
+      if (this.option.debug) {
+        const _Function = Function;
+        const option = self.option;
+        const debug = option.debug;
+        if (self.option.debug instanceof Function) {
+          debug(arg0);
+        } else {
+          debug.debug(arg0);
+        }
+      }
+    }
+  }
+];
+const _moduleResult = _createClass(ParsingContext, items2);
+const Chrono_export = _createClass(Chrono, items, items1);
+const ParsingContext_export = _createClass(ParsingContext, items2);
+
+export { Chrono_export as Chrono };
+export { ParsingContext_export as ParsingContext };

@@ -1,11 +1,11 @@
-// Module ID: 12149
-// Function ID: 12150
+// Module ID: 12317
+// Function ID: 12318
 // Name: useConjureAttachmentImage
-// Dependencies: [32, 19, 12147, 2]
+// Dependencies: [32, 19, 12315, 2]
 // Exports: useConjureAttachmentImage
 
-// Module 12149 (useConjureAttachmentImage)
-import conjureAttachmentRequests from "conjureAttachmentRequests" /* 12147 */;
+// Module 12317 (useConjureAttachmentImage)
+import conjureAttachmentRequests from "conjureAttachmentRequests" /* 12315 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

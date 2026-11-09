@@ -1,19 +1,19 @@
-// Module ID: 11612
-// Function ID: 11613
+// Module ID: 11770
+// Function ID: 11771
 // Name: UserProfileSection
-// Dependencies: [19, 17, 21, 5014, 575, 5080, 7353, 5011, 8183, 5624, 2]
+// Dependencies: [19, 17, 21, 5140, 575, 5199, 7414, 5137, 8252, 5751, 2]
 // Exports: default
 
-// Module 11612 (UserProfileSection)
+// Module 11770 (UserProfileSection)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ColorUtils from "ColorUtils" /* 5011 */;
-import native from "native" /* 5080 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import useProfileThemeValues from "useProfileThemeValues" /* 7353 */;
+import ColorUtils from "ColorUtils" /* 5137 */;
+import native from "native" /* 5199 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import useProfileThemeValues from "useProfileThemeValues" /* 7414 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -53,7 +53,7 @@ export default function UserProfileSection(title) {
     let borderColor;
     if (null != profileThemeValues) {
       const tmp3Result = ColorUtils;
-      borderColor = tmp3Result.hexOpacityToRgba(tmp3(8183).DIVIDER_COLORS[theme], profileThemeValues.dividerOpacity);
+      borderColor = tmp3Result.hexOpacityToRgba(tmp3(8252).DIVIDER_COLORS[theme], profileThemeValues.dividerOpacity);
     }
     obj3.borderColor = borderColor;
     const obj4 = { style: items, children: items3 };
@@ -63,7 +63,7 @@ export default function UserProfileSection(title) {
     if (null != title) {
       const obj5 = { style: tmp2.titleContainer, children: items2 };
       const obj6 = { style: tmp2.title, children: items1 };
-      const obj7 = { variant: "eyebrow", accessibilityRole: "header", children: title };
+      const obj7 = { variant: "body-sm/medium", accessibilityRole: "header", children: title };
       items1 = [_false(Text_Text.Text, obj7), headerIcon];
       items2 = [React3(View, obj6), trailingIcon];
       tmp8Result = tmp8(tmp9, obj5);

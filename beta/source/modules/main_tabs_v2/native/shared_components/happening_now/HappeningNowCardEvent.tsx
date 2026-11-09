@@ -1,22 +1,22 @@
-// Module ID: 18142
-// Function ID: 18143
+// Module ID: 18484
+// Function ID: 18485
 // Name: HappeningNowCardEvent
-// Dependencies: [19, 17, 2062, 1383, 17282, 1072, 21, 5014, 575, 1187, 9509, 504, 7482, 8969, 8965, 1252, 8962, 1409, 9206, 17283, 8661, 5624, 1895, 5717, 1113, 2]
+// Dependencies: [19, 17, 2186, 1385, 17608, 1072, 21, 5140, 575, 1187, 9593, 504, 7546, 9048, 9044, 1252, 9041, 1411, 9286, 17609, 8732, 5751, 2024, 5842, 1113, 2]
 
-// Module 18142 (HappeningNowCardEvent)
+// Module 18484 (HappeningNowCardEvent)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import native from "native" /* 1187 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import GuildScheduledEventModalActionCreators from "GuildScheduledEventModalActionCreators" /* 8962 */;
-import ClipView from "ClipView" /* 9509 */;
+import GuildScheduledEventModalActionCreators from "GuildScheduledEventModalActionCreators" /* 9041 */;
+import ClipView from "ClipView" /* 9593 */;
 import react from "react" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2062 */;
-import UserStore from "UserStore" /* 1383 */;
-import HappeningNowConstants from "HappeningNowConstants" /* 17282 */;
+import LocaleStore from "LocaleStore" /* 2186 */;
+import UserStore from "UserStore" /* 1385 */;
+import HappeningNowConstants from "HappeningNowConstants" /* 17608 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 let HAPPENING_NOW_EVENT_BANNER_WIDTH;
@@ -169,7 +169,7 @@ const memoResult = react.memo(function HappeningNowCardEvent(event) {
   items7[0] = closure_11(event(creator_id[20]).GroupIcon, obj9);
   let tmp23Result4 = tmp10 > 0;
   if (tmp23Result4) {
-    const obj10 = { color: "mobile-text-heading-primary", variant: "text-xs/semibold", children: tmp26Result.humanizeValue(tmp10, stateFromStores) };
+    const obj10 = { color: "mobile-text-heading-primary", variant: "body-xs/semibold", children: tmp26Result.humanizeValue(tmp10, stateFromStores) };
     const Text = tmp26(tmp19[21]).Text;
     tmp26Result = event(creator_id[22]);
     tmp23Result4 = tmp23(Text, obj10);
@@ -202,7 +202,7 @@ const memoResult = react.memo(function HappeningNowCardEvent(event) {
   const obj15 = { color: str2, variant: str3, children: startDateTimeString };
   str3 = undefined;
   if (isLive) {
-    str3 = "text-xs/bold";
+    str3 = "body-xs/semibold";
   }
   if (isLive) {
     const intl = tmp26(tmp19[24]).intl;

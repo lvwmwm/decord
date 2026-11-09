@@ -1,75 +1,107 @@
-// Module ID: 16004
-// Function ID: 16005
+// Module ID: 16322
+// Function ID: 16323
 // Name: CarouselPagination
-// Dependencies: [19, 17, 21, 5014, 575, 5095, 5254, 15812, 2]
+// Dependencies: [19, 17, 21, 5140, 575, 1652, 5370, 16129, 2]
 // Exports: default
 
-// Module 16004 (CarouselPagination)
+// Module 16322 (CarouselPagination)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
-import timing from "timing" /* 5254 */;
+import _mod1652 from "module_1652" /* 1652 */;
+import timing_timing from "timing/timing" /* 5370 */;
+import Easing_Easing from "Easing/Easing" /* 16129 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
-let obj2;
+let num;
+
 let size;
-let tmp;
-const Easing = tmp(15812);
+let tmp10;
+const _modDef1652 = tmp10(1652);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let createStyles = createStyles_mod;
-let obj = { container: obj2, dot: size };
-obj2 = { position: "relative", top: -16, marginBottom: -16, flexDirection: "row", alignItems: "center", justifyContent: "center", paddingHorizontal: nativeDefault.space.PX_20, paddingVertical: nativeDefault.space.PX_32 };
+let obj = { container: { position: "relative", top: -16, marginBottom: -16, flexDirection: "row", alignItems: "center", justifyContent: "center", paddingHorizontal: nativeDefault.space.PX_20, paddingVertical: nativeDefault.space.PX_32 }, dot: size };
 createStyles = createStyles.createStyles;
+({ position: "relative", top: -16, marginBottom: -16, flexDirection: "row", alignItems: "center", justifyContent: "center", paddingHorizontal: nativeDefault.space.PX_20, paddingVertical: nativeDefault.space.PX_32 });
 size = { width: 8, height: 8, borderRadius: nativeDefault.radii.xs, marginHorizontal: 4, backgroundColor: nativeDefault.colors.ICON_STRONG };
 let closure_5 = createStyles(obj);
-const __initData = { code: "function CarouselPaginationTsx1(){const{withTiming,active,STANDARD_EASING}=this.__closure;return withTiming(active?1:0,{duration:250,easing:STANDARD_EASING},'animate-always');}" };
-const __initData2 = { code: "function CarouselPaginationTsx2(){const{interpolate,progress,interpolateColor,backgroundColor,brand500}=this.__closure;return{width:interpolate(progress.get(),[0,1],[8,16]),backgroundColor:interpolateColor(progress.get(),[0,1],[backgroundColor,brand500]),opacity:interpolate(progress.get(),[0,1],[0.3,1])};}" };
+let closure_6 = { code: "(function CarouselPaginationTsx1(){let[withTiming,active,STANDARD_EASING]=this.__closure;return withTiming(active?1:0,{duration:250,easing:STANDARD_EASING},'animate-always');})" };
+let closure_7 = { code: "(function CarouselPaginationTsx2(){let[interpolate,progress,interpolateColor,backgroundColor,brand500]=this.__closure;return{width:interpolate(progress.get(),[0,1],[8,16]),backgroundColor:interpolateColor(progress.get(),[0,1],[backgroundColor,brand500]),opacity:interpolate(progress.get(),[0,1],[0.3,1])};})" };
 let closure_8 = react.memo(function Dot(active) {
+  let tmp12;
+  let tmp13;
+  let tmp14;
+  let tmp15;
+  let tmp16;
+  let tmp17;
+  let tmp5;
+  let tmp6;
+  let tmp7;
+  let tmp8;
   active = active.active;
-  let BRAND_500;
   let tmp = closure_5();
-  let obj = active(BRAND_500[5]);
-  const fn = function o() {
-    let num = 0;
-    const withTiming = timing.withTiming;
-    timing;
-    if (active) {
-      num = 1;
+  let items = [closure_6, , , ];
+  const useDerivedValue = _mod1652.useDerivedValue;
+  _mod1652;
+  items[1] = timing_timing.withTiming;
+  items[2] = active;
+  items[3] = Easing_Easing.STANDARD_EASING;
+  let c0;
+  let c1;
+  let c2;
+  [tmp5, tmp6, tmp7, tmp8] = items;
+  class CarouselPaginationTsx1 {
+    constructor() {
+      num = 0;
+      tmp = closure_0;
+      if (closure_1) {
+        num = 1;
+      }
+      obj = { duration: 250, easing: closure_2 };
+      return tmp(num, obj, "animate-always");
     }
-    const obj = { duration: 250, easing: Easing.STANDARD_EASING };
-    return withTiming(num, obj, "animate-always");
-  };
-  let obj2 = { withTiming: active(BRAND_500[6]).withTiming, active, STANDARD_EASING: active(BRAND_500[7]).STANDARD_EASING };
-  fn.__closure = obj2;
-  fn.__workletHash = 5885711729227;
-  fn.__initData = __initData;
-  const derivedValue = obj.useDerivedValue(fn);
-  BRAND_500 = derivedValue(BRAND_500[4]).unsafe_rawColors.BRAND_500;
+  }
+  const items1 = [tmp6, tmp7, tmp8];
+  CarouselPaginationTsx1.__closure = items1;
+  CarouselPaginationTsx1.__workletHash = 5504332160978;
+  CarouselPaginationTsx1.__initData = tmp5;
+  const derivedValue = useDerivedValue(CarouselPaginationTsx1);
+  const BRAND_500 = nativeDefault.unsafe_rawColors.BRAND_500;
   const backgroundColor = tmp.dot.backgroundColor;
-  let obj3 = active(BRAND_500[5]);
-  const fn2 = function u() {
-    let items;
-    let obj2;
-    let obj3;
-    let obj4;
-    const obj = { width: obj2.interpolate(derivedValue.get(), [0, 1], [8, 16]), backgroundColor: obj3.interpolateColor(derivedValue.get(), [0, 1], items), opacity: obj4.interpolate(derivedValue.get(), [0, 1], [0.3, 1]) };
-    items = [backgroundColor, BRAND_500];
-    obj2 = ReanimatedRexport;
-    obj3 = ReanimatedRexport;
-    obj4 = ReanimatedRexport;
-    return obj;
-  };
-  let obj4 = { interpolate: active(BRAND_500[5]).interpolate, progress: derivedValue, interpolateColor: active(BRAND_500[5]).interpolateColor, backgroundColor, brand500: BRAND_500 };
-  fn2.__closure = obj4;
-  fn2.__workletHash = 7804335337011;
-  fn2.__initData = __initData2;
-  const animatedStyle = obj3.useAnimatedStyle(fn2);
-  let items = [tmp.dot, animatedStyle];
-  return jsx(derivedValue(BRAND_500[5]).View, { style: items });
+  const items2 = [closure_7, , , , , ];
+  const useAnimatedStyle = _mod1652.useAnimatedStyle;
+  _mod1652;
+  items2[1] = _mod1652.interpolate;
+  items2[2] = derivedValue;
+  items2[3] = _mod1652.interpolateColor;
+  items2[4] = backgroundColor;
+  items2[5] = BRAND_500;
+  c0 = undefined;
+  c1 = undefined;
+  c2 = undefined;
+  let c3;
+  let c4;
+  [tmp12, tmp13, tmp14, tmp15, tmp16, tmp17] = items2;
+  class CarouselPaginationTsx2 {
+    constructor() {
+      obj = { width: closure_0(closure_1.get(), [0, 1], [8, 16]), backgroundColor: null, opacity: closure_0(closure_1.get(), [0, 1], [0.3, 1]) };
+      items = [, ];
+      items[0] = closure_3;
+      items[1] = closure_4;
+      obj.backgroundColor = closure_2(closure_1.get(), [0, 1], items);
+      return obj;
+    }
+  }
+  const items3 = [tmp13, tmp14, tmp15, tmp16, tmp17];
+  CarouselPaginationTsx2.__closure = items3;
+  CarouselPaginationTsx2.__workletHash = 9539116065290;
+  CarouselPaginationTsx2.__initData = tmp12;
+  const animatedStyle = useAnimatedStyle(CarouselPaginationTsx2);
+  const items4 = [tmp.dot, animatedStyle];
+  return jsx(_modDef1652.View, { style: items4 });
 });
 size = size_mod;
 const result = size.fileFinishedImporting("design/void/CarouselPagination/native/CarouselPagination.tsx");

@@ -1,7 +1,7 @@
 // Module ID: 1347
 // Function ID: 1348
 // Name: getSuperProperties
-// Dependencies: [1348, 1349, 1350, 1351, 1352, 1353, 1354, 1355, 510, 1356, 1345, 2]
+// Dependencies: [1348, 1349, 1350, 1351, 1352, 1353, 1354, 1355, 1356, 1357, 510, 1358, 1345, 2]
 // Exports: extendSuperProperties, getCampaignParams, getSuperProperties, getSuperPropertiesBase64
 
 // Module 1347 (getSuperProperties)
@@ -9,16 +9,18 @@ import Storage7 from "Storage" /* 510 */;
 import encodeProperties from "encodeProperties" /* 1345 */;
 import react_native from "react-native" /* 1348 */;
 import react_native2 from "react-native" /* 1349 */;
-import ClientModDetectionUtils from "ClientModDetectionUtils" /* 1350 */;
-import clientLaunchId from "clientLaunchId" /* 1351 */;
-import _modDef1352 from "module_1352" /* 1352 */;
-import react_native3 from "react-native" /* 1353 */;
-import DesignIds from "DesignIds" /* 1355 */;
+import getOSVersionProperties from "getOSVersionProperties" /* 1350 */;
+import ClientModDetectionUtils from "ClientModDetectionUtils" /* 1351 */;
+import clientLaunchId from "clientLaunchId" /* 1352 */;
+import _modDef1353 from "module_1353" /* 1353 */;
+import react_native3 from "react-native" /* 1354 */;
+import DesignIds from "DesignIds" /* 1356 */;
+import utils_PlatformUtils from "utils/PlatformUtils" /* 1357 */;
 import size from "module_2" /* 2 */;
 
 let closure_5, constants;
 
-let _module;
+let _module1;
 let obj;
 function getCachedSuperProperties() {
   let obj7;
@@ -48,7 +50,7 @@ function getCachedSuperProperties() {
     const result2 = Storage6.set(tmp13, obj);
     value3 = obj;
   }
-  const SessionStorage = tmp(1356).SessionStorage;
+  const SessionStorage = tmp(1358).SessionStorage;
   let value4 = SessionStorage.get(tmp13);
   if (null == value4) {
     const obj2 = {};
@@ -59,26 +61,30 @@ function getCachedSuperProperties() {
       obj3["" + item + "_current"] = obj2[item];
       return obj2[item];
     });
-    const SessionStorage2 = tmp(1356).SessionStorage;
+    const SessionStorage2 = tmp(1358).SessionStorage;
     const result3 = SessionStorage2.set(tmp13, obj3);
     value4 = obj3;
   }
   const obj4 = {};
   const merged = Object.assign(tmp7);
-  const obj5 = { browser_user_agent: window.navigator.userAgent || "", browser_version: _modDef1352.version || "" };
-  _modDef1352.version || "";
+  const obj5 = { browser_user_agent: window.navigator.userAgent || "", browser_version: _modDef1353.version || "" };
+  _modDef1353.version || "";
   if (null == constants) {
     const _default = react_native2.default;
     constants = _default.getConstants();
   }
   if (null != constants) {
-    const obj6 = { os_version: constants.systemVersion || "", os_sdk_version: constants.osSdkVersion || undefined };
+    const obj6 = {};
     const merged1 = Object.assign(obj5);
+    const getNativeOSVersionProperties = tmp(1350).getNativeOSVersionProperties;
+    getOSVersionProperties;
+    const tmpResult2 = utils_PlatformUtils;
+    const merged2 = Object.assign(getNativeOSVersionProperties(tmp24, tmpResult2.isIOS()));
     obj7 = obj6;
   } else {
     obj7 = { os_version: str };
-    const merged2 = Object.assign(obj5);
-    const tmp22Result = _modDef1352;
+    const merged3 = Object.assign(obj5);
+    const tmp22Result = _modDef1353;
     str = undefined;
     if (tmp22Result != null) {
       const os = tmp22Result.os;
@@ -90,14 +96,14 @@ function getCachedSuperProperties() {
       str = "";
     }
   }
-  const merged3 = Object.assign(obj7);
-  const merged4 = Object.assign(value3);
-  const merged5 = Object.assign(value4);
+  const merged4 = Object.assign(obj7);
+  const merged5 = Object.assign(value3);
+  const merged6 = Object.assign(value4);
   return obj4;
 }
 function getContextualSuperProperties() {
   let obj2;
-  obj = { client_build_number: parseInt("35311000000000", 10), client_event_source: null, has_client_mods: obj2.usesClientMods(), client_launch_id: clientLaunchId.clientLaunchId };
+  obj = { client_build_number: parseInt("35410700000000", 10), client_event_source: null, has_client_mods: obj2.usesClientMods(), client_launch_id: clientLaunchId.clientLaunchId };
   let buildNumber;
   if (DiscordNative != null) {
     const app = DiscordNative.app;
@@ -203,7 +209,7 @@ function getDeviceProperties() {
   tmp = getOS();
   obj2 = ClientModDetectionUtils;
   try {
-    let _default = tmp2(1354).default;
+    let _default = tmp2(1355).default;
     constants = _default.getConstants();
     let str = "";
     ({ Version, ReleaseChannel, DeviceVendorID } = constants);
@@ -227,10 +233,12 @@ if (null != DiscordNative) {
   const platform = DiscordNative.process.platform;
   const app2 = DiscordNative.app;
   const version = app.getVersion();
+  const release = DiscordNative.os.release;
   const arch = DiscordNative.os.arch;
   const appArch = DiscordNative.os.appArch;
   let str4 = app2.getReleaseChannel();
   let str3 = "Windows";
+  let str7 = "win32";
   const systemLocale = getSystemLocale();
   if ("win32" !== platform) {
     let str = "darwin";
@@ -241,24 +249,27 @@ if (null != DiscordNative) {
       str3 = "linux" === platform ? "Linux" : platform;
     }
   }
-  obj = { os: str3, browser: "Discord Client", release_channel: str4, client_version: version, os_version: DiscordNative.os.release, os_arch: arch, app_arch: appArch, system_locale: systemLocale, has_client_mods: _module.usesClientMods(), client_launch_id: clientLaunchId.clientLaunchId };
+  obj = { os: str3, browser: "Discord Client", release_channel: str4, client_version: version, os_arch: arch, app_arch: appArch, system_locale: systemLocale, has_client_mods: _module1.usesClientMods(), client_launch_id: clientLaunchId.clientLaunchId };
   if (!str4) {
     str4 = "unknown";
   }
-  _module = ClientModDetectionUtils;
-  const name = _modDef1352.name;
+  const _module = getOSVersionProperties;
+  const tmp2 = obj;
+  let merged = Object.assign(_module.getDesktopOSVersionProperties(platform, release, DiscordNative.os.systemVersion));
+  _module1 = ClientModDetectionUtils;
+  const name = _modDef1353.name;
   let toLocaleLowerCaseResult;
   if (name != null) {
     toLocaleLowerCaseResult = name.toLocaleLowerCase();
   }
   let str5 = "electron";
   if ("electron" === toLocaleLowerCaseResult) {
-    let tmp3 = obj;
-    tmp3.browser_user_agent = _modDef1352.ua || "";
     let tmp5 = obj;
-    const tmp4 = _modDef1352.ua || "";
-    tmp5.browser_version = _modDef1352.version || "";
-    const tmp6 = _modDef1352.version || "";
+    tmp5.browser_user_agent = _modDef1353.ua || "";
+    let tmp7 = obj;
+    const tmp6 = _modDef1353.ua || "";
+    tmp7.browser_version = _modDef1353.version || "";
+    const tmp8 = _modDef1353.version || "";
   }
   if ("linux" === platform) {
     const crashReporter = DiscordNative.crashReporter;
@@ -268,23 +279,11 @@ if (null != DiscordNative) {
     const tmp13 = obj;
     obj.runtime_environment = metadata.runtime_environment;
     obj.display_server = metadata.display_server;
-  } else {
-    let str7 = "darwin";
-    if ("darwin" === platform) {
-      let first;
-      const tmp8 = obj;
-      if (DiscordNative.os.release != null) {
-        first = str10.split(".")[0];
-      }
-      tmp8.os_sdk_version = first;
-    } else if ("win32" === platform) {
-      let tmp7;
-      const tmp19 = obj;
-      if (DiscordNative.os.release != null) {
-        let str8 = ".";
-        tmp7 = str10.split(".")[2];
-      }
-      tmp19.os_sdk_version = tmp7;
+  } else if ("win32" === platform) {
+    let str8 = DiscordNative.os.buildRevision;
+    if (null != str8) {
+      let tmp9 = obj;
+      obj.os_build_revision = str8.toString();
     }
   }
 }

@@ -1,16 +1,16 @@
-// Module ID: 18097
-// Function ID: 18098
+// Module ID: 18439
+// Function ID: 18440
 // Name: useMessagesData
-// Dependencies: [32, 19, 6568, 502, 4956, 7395, 504, 18098, 4839, 2]
+// Dependencies: [32, 19, 6623, 502, 5082, 7459, 504, 18440, 4965, 2]
 // Exports: default
 
-// Module 18097 (useMessagesData)
+// Module 18439 (useMessagesData)
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6568 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6623 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import RelationshipStore from "RelationshipStore" /* 4956 */;
-import PrivateChannelSortStore from "PrivateChannelSortStore" /* 7395 */;
+import RelationshipStore from "RelationshipStore" /* 5082 */;
+import PrivateChannelSortStore from "PrivateChannelSortStore" /* 7459 */;
 import size from "module_2" /* 2 */;
 
 let _slicedToArray = _slicedToArray_mod;
@@ -26,7 +26,7 @@ export default function useMessagesData() {
   let stateFromStores;
   let tmp6;
   const tmp = connected;
-  let tmp2 = channelFavorites;
+  const tmp2 = channelFavorites;
   let obj = connected(channelFavorites[6]);
   let items = [numFriendSuggestions, friendSuggestions];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {
@@ -53,54 +53,44 @@ export default function useMessagesData() {
   const items2 = [setting];
   const tmpResult = tmp(tmp2[6]);
   stateFromStores = tmpResult.useStateFromStores(items2, () => setting.getFriendCount());
-  const ref = setAdded.useRef(-1);
   const items3 = [connected, connectedToGateway, channelFavorites, tmp6, numFriendSuggestions, friendSuggestions, setting, stateFromStores, setAdded];
   return setAdded.useMemo(() => {
     let EmptyState;
     let bound;
-    let combined;
     let obj;
-    if (-1 === ref.current) {
-      ref.current = 0;
-    } else {
-      const tmp2 = connected && connectedToGateway;
-      if (tmp2) {
-        ref.current = ref.current + 1;
-      }
-    }
     if (numFriendSuggestions <= 0) {
-      let num3;
+      let num2;
       if (channelFavorites.length + length.length > 0) {
-        num3 = 0;
+        num2 = 0;
       } else {
-        num3 = 15;
+        num2 = 15;
       }
-      bound = num3;
+      bound = num2;
     } else {
       const _Math = Math;
-      bound = Math.min(tmp4, 5);
+      bound = Math.min(tmp2, 5);
     }
     const items = [];
     items.push(channelFavorites.length);
     items.push(length.length);
-    let num4 = 0;
+    let num3 = 0;
     const push = items.push;
     if (numFriendSuggestions > 0) {
-      num4 = 1;
+      num3 = 1;
     }
-    push(num4);
-    let num5 = 0;
+    push(num3);
+    let num4 = 0;
     const push2 = items.push;
     if (numFriendSuggestions > 0) {
-      num5 = 0;
+      num4 = 0;
       if (connected) {
-        num5 = 0;
+        num4 = 0;
         if (connectedToGateway) {
-          num5 = friendSuggestions.length;
+          num4 = friendSuggestions.length;
         }
       }
     }
-    push2(num5);
+    push2(num4);
     items.push(bound);
     if (channelFavorites.length + length.length > 0) {
       let HappeningNow = null;
@@ -114,12 +104,7 @@ export default function useMessagesData() {
         EmptyState = obj.EmptyState;
       }
     }
-    obj = { channels: length, channelFavorites, dataKey: combined, showFullscreenEmptyState: channelFavorites.length + length.length <= 0 && connected && numFriendSuggestions <= 0, setAddedFriendSuggestions: setAdded, friendSuggestions, renderHeader: EmptyState, renderFooter: tmp26, sections: items };
-    combined = null;
-    if (ref.current > 0) {
-      const _HermesInternal = HermesInternal;
-      combined = "" + tmp.current;
-    }
+    obj = { channels: length, channelFavorites, showFullscreenEmptyState: channelFavorites.length + length.length <= 0 && connected && numFriendSuggestions <= 0, setAddedFriendSuggestions: setAdded, friendSuggestions, renderHeader: EmptyState, renderFooter: tmp22, sections: items };
     return obj;
   }, items3);
 };

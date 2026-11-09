@@ -1,11 +1,11 @@
-// Module ID: 4905
-// Function ID: 4906
+// Module ID: 5031
+// Function ID: 5032
 // Name: GuildEntityDao
-// Dependencies: [4897, 4899, 2]
+// Dependencies: [5023, 5025, 2]
 
-// Module 4905 (GuildEntityDao)
-import Table from "Table" /* 4897 */;
-import TableId from "TableId" /* 4899 */;
+// Module 5031 (GuildEntityDao)
+import Table from "Table" /* 5023 */;
+import TableId from "TableId" /* 5025 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

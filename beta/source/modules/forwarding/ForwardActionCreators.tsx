@@ -1,19 +1,18 @@
-// Module ID: 13390
-// Function ID: 13391
+// Module ID: 13622
+// Function ID: 13623
 // Name: ForwardActionCreators
-// Dependencies: [32, 5, 4863, 4946, 1072, 5019, 8919, 7824, 1095, 7826, 1396, 7636, 13386, 6456, 2]
+// Dependencies: [32, 5, 4989, 5072, 1072, 5145, 8993, 7900, 1095, 7902, 1403, 7712, 13618, 2]
 
-// Module 13390 (ForwardActionCreators)
+// Module 13622 (ForwardActionCreators)
 import Constants from "Constants" /* 1072 */;
-import MessageConstants from "MessageConstants" /* 5019 */;
-import allSettledDefault from "allSettled" /* 6456 */;
+import MessageConstants from "MessageConstants" /* 5145 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
-import PermissionStore from "PermissionStore" /* 4946 */;
+import ChannelStore from "ChannelStore" /* 4989 */;
+import PermissionStore from "PermissionStore" /* 5072 */;
 import size from "module_2" /* 2 */;
 
-let c2, c3, importDefault;
+let c2, c3;
 
 const MessageFlags = Constants.MessageFlags;
 const MessageSendLocation = MessageConstants.MessageSendLocation;
@@ -35,7 +34,7 @@ let obj = {
           const obj4 = { value, done: true };
           return obj4;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -162,7 +161,7 @@ let obj = {
               return obj;
             }
             c3 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp56) {
           c3 = 3;
@@ -172,11 +171,9 @@ let obj = {
     })();
   },
   sendForwards(arg0, arr, arg2) {
-    let closure_1;
     let closure_0 = arg0;
-    importDefault = arg2;
-    const tmp = allSettledDefault;
-    return tmp(arr.map((item) => obj.sendForward(closure_0, item, closure_1)));
+    let closure_1 = arg2;
+    return Promise.allSettled(arr.map((item) => obj.sendForward(closure_0, item, closure_1)));
   }
 };
 let result = size.fileFinishedImporting("modules/forwarding/ForwardActionCreators.tsx");

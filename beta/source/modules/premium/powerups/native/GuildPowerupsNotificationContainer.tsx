@@ -1,19 +1,19 @@
-// Module ID: 14129
-// Function ID: 14130
+// Module ID: 14372
+// Function ID: 14373
 // Name: GuildPowerupsNotificationContainer
-// Dependencies: [17, 21, 5014, 575, 7149, 5624, 14130, 14131, 1113, 2570, 14134, 2]
+// Dependencies: [17, 21, 5140, 575, 5751, 14373, 14374, 1113, 2696, 14377, 2]
 // Exports: default
 
-// Module 14129 (GuildPowerupsNotificationContainer)
+// Module 14372 (GuildPowerupsNotificationContainer)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import _modDef2570 from "module_2570" /* 2570 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7149 */;
-import useGuildPowerupTier3OverrideConfigDefault from "useGuildPowerupTier3OverrideConfig" /* 14130 */;
-import useGuildPowerupExpiringNotificationsConfigDefault from "useGuildPowerupExpiringNotificationsConfig" /* 14131 */;
+import intl2 from "intl" /* 1113 */;
+import _modDef2696 from "module_2696" /* 2696 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import useGuildPowerupTier3OverrideConfigDefault from "useGuildPowerupTier3OverrideConfig" /* 14373 */;
+import useGuildPowerupExpiringNotificationsConfigDefault from "useGuildPowerupExpiringNotificationsConfig" /* 14374 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -21,20 +21,9 @@ let hasOwnProperty;
 let obj2;
 let obj3;
 function Tier3OverrideNotice(text) {
-  let Text;
-  let str;
   text = text.text;
-  const tmp = closure_6();
-  const obj2 = { style: tmp.staffContainer, children: React3(Text, { variant: str, children: text }) };
-  const obj = ManaTypeConsolidationExperiment;
-  const manaTypeConsolidationExperiment = obj.useManaTypeConsolidationExperiment("Tier3OverrideNotice");
-  str = "text-sm/medium";
-  Text = Text_Text.Text;
-  const tmp4 = View;
-  if (manaTypeConsolidationExperiment) {
-    str = "experimental/body-sm/normal";
-  }
-  return React3(tmp4, obj2);
+  const obj = { style: closure_6().staffContainer, children: React3(Text_Text.Text, { variant: "body-sm/normal", children: text }) };
+  return React3(View, obj);
 }
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
@@ -49,46 +38,35 @@ const result = size.fileFinishedImporting("modules/premium/powerups/native/Guild
 export default function GuildPowerupsNotificationContainer(guildId) {
   let intl;
   let items;
-  let str2;
-  let tmp9Result;
+  let tmp7Result;
   guildId = guildId.guildId;
   const tmp = closure_6();
   const tmp4 = useGuildPowerupTier3OverrideConfigDefault(guildId);
   const tmp5 = useGuildPowerupExpiringNotificationsConfigDefault(guildId);
-  const obj = ManaTypeConsolidationExperiment;
-  const manaTypeConsolidationExperiment = obj.useManaTypeConsolidationExperiment("GuildPowerupsNotificationContainer");
   if (tmp4.shouldShow) {
-    let str = "text-subtle";
-    const obj2 = { style: tmp.container, children: items };
-    const Text = tmp6(5624).Text;
-    const tmp10 = View;
-    const tmp9 = hasOwnProperty;
-    if (manaTypeConsolidationExperiment) {
-      str = "text-strong";
-    }
-    const obj3 = { color: str, variant: str2, children: intl.string(_modDef2570["3FRirU"]) };
-    str2 = "eyebrow";
-    if (manaTypeConsolidationExperiment) {
-      str2 = "experimental/heading-lg/semibold";
-    }
-    intl = tmp6(1113).intl;
-    items = [React3(Text, obj3), , ];
+    const obj = { style: tmp.container, children: items };
+    const obj2 = { color: "text-strong", variant: "heading-lg/semibold", children: intl.string(_modDef2696["3FRirU"]) };
+    const Text = Text_Text.Text;
+    intl = intl2.intl;
+    items = [React3(Text, obj2), , ];
     let shouldShow = tmp4.shouldShow;
+    const tmp7 = hasOwnProperty;
+    const tmp8 = View;
     if (shouldShow) {
-      const obj4 = { text: tmp4.text };
-      shouldShow = tmp11(Tier3OverrideNotice, obj4);
+      const obj3 = { text: tmp4.text };
+      shouldShow = tmp9(Tier3OverrideNotice, obj3);
     }
     items[1] = shouldShow;
     let shouldShow2 = tmp5.shouldShow;
     if (shouldShow2) {
-      const obj9 = { guildId, powerupNames: null, warnings: null };
-      ({ expiringPowerupNames: obj5.powerupNames, warnings: obj5.warnings } = tmp5);
-      shouldShow2 = tmp11(tmp2(14134), obj9);
+      const obj7 = { guildId, powerupNames: null, warnings: null };
+      ({ expiringPowerupNames: obj4.powerupNames, warnings: obj4.warnings } = tmp5);
+      shouldShow2 = tmp9(tmp2(14377), obj7);
     }
     items[2] = shouldShow2;
-    tmp9Result = tmp9(tmp10, obj2);
+    tmp7Result = tmp7(tmp8, obj);
   } else {
-    tmp9Result = null;
+    tmp7Result = null;
   }
-  return tmp9Result;
+  return tmp7Result;
 };

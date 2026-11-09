@@ -1,24 +1,24 @@
-// Module ID: 18154
-// Function ID: 18155
+// Module ID: 18496
+// Function ID: 18497
 // Name: MessagesFlashList
-// Dependencies: [32, 19, 21, 18111, 18083, 18150, 18151, 18094, 18093, 18097, 18112, 18149, 18152, 7294, 2]
+// Dependencies: [32, 19, 21, 18453, 18425, 18492, 18493, 18436, 18435, 18439, 18454, 18491, 18494, 7357, 2]
 
-// Module 18154 (MessagesFlashList)
+// Module 18496 (MessagesFlashList)
 import Fragment from "Fragment" /* 21 */;
-import MessagesItemChannel from "MessagesItemChannel" /* 18083 */;
-import MessagesItemPlaceholderDefault from "MessagesItemPlaceholder" /* 18093 */;
-import MessagesItemSuggestedFriend from "MessagesItemSuggestedFriend" /* 18094 */;
-import useMessagesData from "useMessagesData" /* 18097 */;
-import MessagesItemHappeningNowDefault from "MessagesItemHappeningNow" /* 18112 */;
-import MessagesItemEmptyStateDefault from "MessagesItemEmptyState" /* 18149 */;
-import MessagesItemSeparatorDefault from "MessagesItemSeparator" /* 18150 */;
-import MessagesItemSuggestedFriendsHeaderDefault from "MessagesItemSuggestedFriendsHeader" /* 18151 */;
-import MessagesItemAddFriendsWidgetDefault from "MessagesItemAddFriendsWidget" /* 18152 */;
+import MessagesItemChannel from "MessagesItemChannel" /* 18425 */;
+import MessagesItemPlaceholderDefault from "MessagesItemPlaceholder" /* 18435 */;
+import MessagesItemSuggestedFriend from "MessagesItemSuggestedFriend" /* 18436 */;
+import useMessagesData from "useMessagesData" /* 18439 */;
+import MessagesItemHappeningNowDefault from "MessagesItemHappeningNow" /* 18454 */;
+import MessagesItemEmptyStateDefault from "MessagesItemEmptyState" /* 18491 */;
+import MessagesItemSeparatorDefault from "MessagesItemSeparator" /* 18492 */;
+import MessagesItemSuggestedFriendsHeaderDefault from "MessagesItemSuggestedFriendsHeader" /* 18493 */;
+import MessagesItemAddFriendsWidgetDefault from "MessagesItemAddFriendsWidget" /* 18494 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
-let item;
+let item, keyExtractor;
 
 const jsx = Fragment.jsx;
 const memoResult = react.memo(function MessagesFlashList(listItemHeight) {
@@ -87,7 +87,7 @@ const memoResult = react.memo(function MessagesFlashList(listItemHeight) {
   const items2 = [friendSuggestions];
   const getItemType = listRefHappeningNow.useCallback((kind) => kind.kind, []);
   const items3 = [renderHeader, listRefHappeningNow];
-  const keyExtractor = listRefHappeningNow.useCallback((kind) => {
+  keyExtractor = listRefHappeningNow.useCallback((kind) => {
     kind = kind.kind;
     if ("favorite" === kind) {
       const _HermesInternal4 = HermesInternal;

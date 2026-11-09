@@ -1,19 +1,19 @@
-// Module ID: 19942
-// Function ID: 19943
+// Module ID: 20352
+// Function ID: 20353
 // Name: FormBigRadioBox
-// Dependencies: [19, 17, 21, 5014, 575, 5082, 9109, 7062, 5624, 2]
+// Dependencies: [19, 17, 21, 5140, 575, 5200, 9189, 7128, 5751, 2]
 // Exports: default
 
-// Module 19942 (FormBigRadioBox)
+// Module 20352 (FormBigRadioBox)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import react_native2 from "react-native" /* 5082 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import FormRadio from "FormRadio" /* 7062 */;
-import TouchableHitBoxDefault from "TouchableHitBox" /* 9109 */;
+import react_native2 from "react-native" /* 5200 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import FormRadio from "FormRadio" /* 7128 */;
+import TouchableHitBoxDefault from "TouchableHitBox" /* 9189 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_4;
@@ -85,8 +85,8 @@ export default function FormBigRadioBox(arg0) {
   items2[1] = selected;
   const obj4 = { style: items2, children: React3(icon, { size: "md" }) };
   items1[1] = React3(tmp10, obj4);
-  const obj5 = { style: tmp.title, accessibilityRole: "header", variant: "text-md/semibold", color: "interactive-text-default", children: title };
+  const obj5 = { style: tmp.title, accessibilityRole: "header", variant: "body-md/semibold", color: "interactive-text-default", children: title };
   items1[2] = React3(Text_Text.Text, obj5);
-  items1[3] = React3(Text_Text.Text, { variant: "text-sm/medium", color: "interactive-text-default", children: description });
+  items1[3] = React3(Text_Text.Text, { variant: "body-sm/medium", color: "interactive-text-default", children: description });
   return tmp5(tmp6, obj2);
 };

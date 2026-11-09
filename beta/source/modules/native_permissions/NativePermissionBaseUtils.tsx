@@ -1,14 +1,14 @@
-// Module ID: 7959
-// Function ID: 7960
+// Module ID: 8028
+// Function ID: 8029
 // Name: NativePermissionBaseUtils
-// Dependencies: [5, 7960, 7940, 1072, 1252, 7961, 1113, 2]
+// Dependencies: [5, 8029, 8009, 1072, 1252, 8030, 1113, 2]
 
-// Module 7959 (NativePermissionBaseUtils)
+// Module 8028 (NativePermissionBaseUtils)
 import Constants from "Constants" /* 1072 */;
 import intl14 from "intl" /* 1113 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import NativePermissionStore from "NativePermissionStore" /* 7960 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 7940 */;
+import NativePermissionStore from "NativePermissionStore" /* 8029 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 8009 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -23,9 +23,9 @@ class NativePermissionBaseUtils {
     new NativePermissionStore();
     return merged;
   }
-  requestAuthorization(arg0, hasPermissionLookup, arg2) {
+  requestAuthorization(arg0, arg1, arg2) {
     let closure_0 = arg0;
-    let closure_1 = hasPermissionLookup;
+    let closure_1 = arg1;
     let closure_2 = arg2;
     let self = this;
     return self(function*() {

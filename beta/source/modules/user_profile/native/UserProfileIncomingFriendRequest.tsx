@@ -1,17 +1,17 @@
-// Module ID: 15008
-// Function ID: 15009
+// Module ID: 15281
+// Function ID: 15282
 // Name: UserProfileIncomingFriendRequest
-// Dependencies: [19, 17, 21, 5014, 575, 8814, 8761, 7326, 15009, 6041, 7330, 5624, 1113, 1187, 1409, 15010, 5634, 2]
+// Dependencies: [19, 17, 21, 5140, 575, 8888, 8832, 7387, 15282, 6173, 7391, 5751, 1113, 1187, 1411, 15283, 5758, 2]
 // Exports: default
 
-// Module 15008 (UserProfileIncomingFriendRequest)
+// Module 15281 (UserProfileIncomingFriendRequest)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1409 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -90,7 +90,7 @@ export default function UserProfileIncomingFriendRequest(style) {
     let tmp16;
     const obj6 = { style: items2, children: items3 };
     items2 = [tmp.container, tmp4.card, style];
-    const obj7 = { variant: "text-sm/semibold", color: "text-default", children: null };
+    const obj7 = { variant: "body-sm/semibold", color: "text-default", children: null };
     const Text = tmp5(tmp3[11]).Text;
     const intl = tmp5(tmp3[12]).intl;
     const format = intl.format;

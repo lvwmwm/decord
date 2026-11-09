@@ -1,34 +1,32 @@
-// Module ID: 18625
-// Function ID: 18626
+// Module ID: 18986
+// Function ID: 18987
 // Name: ChangeSubscriptionCard
-// Dependencies: [32, 19, 17, 1072, 21, 5014, 575, 5624, 1625, 17211, 2042, 5272, 1113, 1187, 18618, 6744, 18626, 1994, 5258, 2]
+// Dependencies: [32, 19, 17, 1072, 21, 5140, 575, 5751, 1627, 17537, 2166, 5388, 1113, 1187, 18979, 6799, 18987, 2118, 5374, 2]
 // Exports: default
 
-// Module 18625 (ChangeSubscriptionCard)
+// Module 18986 (ChangeSubscriptionCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1625 */;
-import asyncRequire from "asyncRequire" /* 1994 */;
-import _modDef2042 from "module_2042" /* 2042 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6744 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 17211 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
+import asyncRequire from "asyncRequire" /* 2118 */;
+import _modDef2166 from "module_2166" /* 2166 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6799 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 17537 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
-
-let BottomSheet;
 
 let c9;
 let metroImportAll;
 let metroImportDefault;
 let obj2;
 function emphasisHook(children) {
-  const obj = { variant: "text-sm/medium", color: "text-default", children };
+  const obj = { variant: "body-sm/medium", color: "text-default", children };
   return metroImportDefault(Text_Text.Text, obj);
 }
 const View = react_native.View;
@@ -56,7 +54,7 @@ export default function ChangeSubscriptionCard(activeSubscription) {
   const first = _slicedToArray(obj.useName(activeListingId), 1)[0];
   let obj2 = GuildRoleSubscriptionListingEditStateUtilsAll;
   const first1 = _slicedToArray(obj2.useName(changeToListingId), 1)[0];
-  let obj3 = _modDef2042(activeSubscription.currentPeriodEnd);
+  let obj3 = _modDef2166(activeSubscription.currentPeriodEnd);
   const status = activeSubscription.status;
   const CANCELED = SubscriptionStatusTypes.CANCELED;
   const obj4 = { style: items, children: items1 };
@@ -64,13 +62,13 @@ export default function ChangeSubscriptionCard(activeSubscription) {
   const obj5 = { paddingBottom: 16 + bottom };
   items[1] = obj5;
   const formatResult = obj3.format("MMMM Do");
-  BottomSheet = activeSubscription(5272).BottomSheet;
+  const BottomSheet = activeSubscription(5388).BottomSheet;
   const obj6 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: intl.format(activeSubscription(1113).t.l3uCCX, { activeListingName: first }) };
-  const Text = activeSubscription(5624).Text;
+  const Text = activeSubscription(5751).Text;
   intl = activeSubscription(1113).intl;
   items1 = [closure_7(Text, obj6), closure_7(activeSubscription(1187).Spacer, { size: 16 }), , ];
-  const obj7 = { variant: "text-sm/normal", color: "text-default", children: items2 };
-  const Text2 = activeSubscription(5624).Text;
+  const obj7 = { variant: "body-sm/normal", color: "text-default", children: items2 };
+  const Text2 = activeSubscription(5751).Text;
   const intl2 = activeSubscription(1113).intl;
   items2 = [, , ];
   const obj8 = { activeListingName: first, changeToListingName: first1, billingEndDate: formatResult, emphasisHook };
@@ -90,12 +88,12 @@ export default function ChangeSubscriptionCard(activeSubscription) {
       onPress: function handleCancelSubscription() {
           const obj = ModalActionCreatorsDefault;
           const obj2 = { subscriptionId: activeSubscription.id };
-          obj.pushLazy(asyncRequire(18626, dependencyMap.paths), obj2);
+          obj.pushLazy(asyncRequire(18987, dependencyMap.paths), obj2);
           const obj3 = ActionSheetActionCreatorsDefault;
           obj3.hideActionSheet();
         }
     };
-    const ArrowButton = tmp7(18618).ArrowButton;
+    const ArrowButton = tmp7(18979).ArrowButton;
     intl4 = tmp7(1113).intl;
     items3[1] = closure_7(ArrowButton, obj11);
     tmp8Result = tmp8(closure_9, obj10);

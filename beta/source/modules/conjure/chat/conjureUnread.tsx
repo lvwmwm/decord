@@ -1,18 +1,18 @@
-// Module ID: 10877
-// Function ID: 10878
+// Module ID: 10998
+// Function ID: 10999
 // Name: conjureUnread
-// Dependencies: [19, 1231, 6842, 6844, 6776, 572, 11, 504, 10878, 2]
+// Dependencies: [19, 1231, 6897, 6899, 6831, 572, 11, 504, 10999, 2]
 // Exports: ackConjureProject, getConjureProjectMentionCount, isConjureProjectUnread, useAckConjureProjectOnLeave, useAckConjureProjectWhileViewing, useConjureProjectBadge, useConjureUnreadSummary
 
-// Module 10877 (conjureUnread)
+// Module 10998 (conjureUnread)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import ReadStateConstants from "ReadStateConstants" /* 6776 */;
-import conjureProjectMute from "conjureProjectMute" /* 10878 */;
+import ReadStateConstants from "ReadStateConstants" /* 6831 */;
+import conjureProjectMute from "conjureProjectMute" /* 10999 */;
 import react from "react" /* 19 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
-import ReadStateStore from "ReadStateStore" /* 6842 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6844 */;
+import ReadStateStore from "ReadStateStore" /* 6897 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6899 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -59,9 +59,9 @@ export function ackConjureProject(projectId) {
   const obj2 = { type: "CONJURE_PROJECT_ACK", projectId };
   obj.dispatch(obj2);
 }
-export function isConjureProjectUnread(c0) {
-  const mentionCount = ReadStateStore.getMentionCount(c0, ReadStateTypes.CONJURING_PROJECT);
-  const ackMessageIdResult = ReadStateStore.ackMessageId(c0, ReadStateTypes.CONJURING_PROJECT);
+export function isConjureProjectUnread(c1) {
+  const mentionCount = ReadStateStore.getMentionCount(c1, ReadStateTypes.CONJURING_PROJECT);
+  const ackMessageIdResult = ReadStateStore.ackMessageId(c1, ReadStateTypes.CONJURING_PROJECT);
   let tmp3 = mentionCount > 0;
   if (!tmp3) {
     let tmp5 = null != ackMessageIdResult;

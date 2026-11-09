@@ -1,28 +1,75 @@
 // Module ID: 10630
 // Function ID: 10631
-// Dependencies: [19, 21, 10631, 10634, 10638, 10639, 10640]
+// Dependencies: [41, 42, 93, 95, 98, 10615, 10448, 10449, 10453]
 
 // Module 10630
-import Fragment from "Fragment" /* 21 */;
-import react2 from "react" /* 10631 */;
-import _mod10634 from "module_10634" /* 10634 */;
-import react3 from "react" /* 10638 */;
-import _mod10639 from "module_10639" /* 10639 */;
-import react from "react" /* 19 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10453 */;
+import _mod10615 from "module_10615" /* 10615 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
+import c3 from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
 
-const jsx = Fragment.jsx;
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
-export default react.forwardRef((defaultIndex, ref) => {
-  const obj = react2;
-  const initProps = obj.useInitProps(defaultIndex);
-  const dataLength = initProps.dataLength;
-  const obj2 = _mod10634;
-  const commonVariables = obj2.useCommonVariables(initProps);
-  const obj3 = { dataLength };
-  const usePropsErrorBoundary = react3.usePropsErrorBoundary;
-  react3;
-  const merged = Object.assign(initProps);
-  const propsErrorBoundary = usePropsErrorBoundary(obj3);
-  const GlobalStateProvider = _mod10639.GlobalStateProvider;
-  return <GlobalStateProvider value={{ props: initProps, common: commonVariables }}>{null}</GlobalStateProvider>;
-});
+    }));
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
+    };
+    return _isNativeReflectConstruct();
+  } catch (err) {
+  }
+}
+const regExp = new RegExp("(questo|ultimo|passato|prossimo|dopo|questa|ultima|passata|prossima|\\+|-)\\s*(" + _mod10615.TIME_UNITS_PATTERN + ")(?=\\W|$)", "i");
+class ENTimeUnitCasualRelativeFormatParser {
+  constructor() {
+    let constructResult;
+    const self = this;
+    _classCallCheck(this, ENTimeUnitCasualRelativeFormatParser);
+    const obj = _getPrototypeOf(ENTimeUnitCasualRelativeFormatParser);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = c3;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
+    } else {
+      constructResult = obj(...arguments);
+    }
+    return tmp3(self, constructResult);
+  }
+}
+_inherits(ENTimeUnitCasualRelativeFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+const entry = {
+  key: "innerPattern",
+  value: function innerPattern() {
+    return regExp;
+  }
+};
+const items = [
+  entry,
+  {
+    key: "innerExtract",
+    value: function innerExtract(reference, arg1) {
+      const str = arg1[1];
+      const formatted = str.toLowerCase();
+      const parseDurationResult = _mod10615.parseDuration(arg1[2]);
+      if ("last" !== formatted) {
+        let reverseDurationResult;
+        if ("past" !== formatted) {
+          reverseDurationResult = parseDurationResult;
+        }
+        const ParsingComponents = tmp2(10449).ParsingComponents;
+        return ParsingComponents.createRelativeFromReference(reference.reference, reverseDurationResult);
+      }
+      reverseDurationResult = tmp2(10448).reverseDuration(parseDurationResult);
+    }
+  }
+];
+
+export default _createClass(ENTimeUnitCasualRelativeFormatParser, items);

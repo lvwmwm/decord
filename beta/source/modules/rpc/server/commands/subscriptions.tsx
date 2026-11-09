@@ -1,11 +1,11 @@
-// Module ID: 16338
-// Function ID: 16339
+// Module ID: 16658
+// Function ID: 16659
 // Name: subscriptions
-// Dependencies: [5, 1072, 12, 9333, 9335, 1252, 16339, 2]
+// Dependencies: [5, 1072, 12, 9414, 9416, 1252, 16659, 2]
 
-// Module 16338 (subscriptions)
+// Module 16658 (subscriptions)
 import _modDef12 from "module_12" /* 12 */;
-import RPCErrorDefault from "RPCError" /* 9333 */;
+import RPCErrorDefault from "RPCError" /* 9414 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
@@ -63,7 +63,7 @@ let obj = {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let tmp45;

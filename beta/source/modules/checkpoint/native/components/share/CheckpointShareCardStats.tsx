@@ -1,24 +1,24 @@
-// Module ID: 13445
-// Function ID: 13446
+// Module ID: 13681
+// Function ID: 13682
 // Name: CheckpointShareCardStats
-// Dependencies: [19, 17, 21, 5014, 575, 8143, 5717, 13444, 5624, 9452, 1892, 1409, 11972, 8643, 9758, 9727, 2]
+// Dependencies: [19, 17, 21, 5140, 575, 8213, 5842, 13680, 5751, 9533, 2021, 1411, 12138, 8714, 9848, 9817, 2]
 // Exports: default
 
-// Module 13445 (CheckpointShareCardStats)
+// Module 13681 (CheckpointShareCardStats)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1409 */;
-import react_nativeDefault from "react-native" /* 1892 */;
-import FastImageDefault from "FastImage" /* 5717 */;
-import UnknownGameIcon from "UnknownGameIcon" /* 8143 */;
-import ChatIcon from "ChatIcon" /* 8643 */;
-import ReactionIcon from "ReactionIcon" /* 9452 */;
-import GameControllerIcon from "GameControllerIcon" /* 9727 */;
-import ServerIcon from "ServerIcon" /* 9758 */;
-import MicrophoneIcon from "MicrophoneIcon" /* 11972 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
+import react_nativeDefault from "react-native" /* 2021 */;
+import FastImageDefault from "FastImage" /* 5842 */;
+import UnknownGameIcon from "UnknownGameIcon" /* 8213 */;
+import ChatIcon from "ChatIcon" /* 8714 */;
+import ReactionIcon from "ReactionIcon" /* 9533 */;
+import GameControllerIcon from "GameControllerIcon" /* 9817 */;
+import ServerIcon from "ServerIcon" /* 9848 */;
+import MicrophoneIcon from "MicrophoneIcon" /* 12138 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -28,7 +28,7 @@ let obj3;
 let obj4;
 let obj5;
 let tmp2;
-const Text_Text = tmp2(5624);
+const Text_Text = tmp2(5751);
 function StatIcon(size) {
   size = size.size;
   const obj = { size: "custom", color: nativeDefault.colors.BLACK, style: { width: size, height: size } };
@@ -154,7 +154,7 @@ export default function CheckpointShareCardStats(arg0) {
     ({ statImage: arr3[0], guildAcronym: arr3[1] } = tmp);
     size = { width: iconSize, height: iconSize };
     items[2] = size;
-    obj7 = { variant: "text-xxs/normal", color: "text-overlay-dark", allowFontScaling: false, children: topGuildAcronymCharacter };
+    obj7 = { variant: "footnote/normal", color: "text-overlay-dark", allowFontScaling: false, children: topGuildAcronymCharacter };
     tmp13 = hasOwnProperty(View, obj6);
     tmp14 = hasOwnProperty;
   }
@@ -171,7 +171,7 @@ export default function CheckpointShareCardStats(arg0) {
     items1 = [tmp.statImage, ];
     const size1 = { width: iconSize, height: iconSize };
     items1[1] = size1;
-    obj12 = { variant: "text-xs/semibold", style: tmp.unicodeEmoji, allowFontScaling: false, children: topEmoji.emojiName };
+    obj12 = { variant: "body-xs/semibold", style: tmp.unicodeEmoji, allowFontScaling: false, children: topEmoji.emojiName };
     tmp14Result = tmp14(View, obj11);
   }
   const obj13 = { layout, rowStyle };

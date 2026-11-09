@@ -1,54 +1,51 @@
-// Module ID: 19271
-// Function ID: 19272
+// Module ID: 19668
+// Function ID: 19669
 // Name: VoicePanelPreJoinContent
-// Dependencies: [5, 32, 19, 17, 4862, 5765, 15616, 6714, 502, 4863, 2006, 4946, 5766, 1383, 5679, 5767, 11223, 11226, 1072, 15620, 5768, 21, 5014, 11229, 575, 11222, 504, 6734, 7950, 6706, 7901, 6717, 6960, 5624, 1113, 14894, 7330, 4935, 19261, 1491, 5095, 11790, 11793, 11842, 6980, 19259, 5634, 6028, 1260, 7086, 9232, 6041, 6975, 12411, 11358, 7326, 7351, 1252, 19201, 19224, 19272, 5637, 5080, 7241, 19146, 19274, 2]
+// Dependencies: [5, 32, 19, 17, 4988, 5894, 15931, 6769, 502, 4989, 2130, 5072, 5895, 1385, 5803, 5896, 11363, 11366, 1072, 15935, 5897, 21, 5140, 11369, 575, 11362, 504, 6789, 8019, 6761, 7978, 6772, 7023, 5751, 1113, 15129, 7391, 5061, 19656, 1493, 1652, 1705, 11953, 11956, 12005, 7043, 19654, 5758, 6160, 1260, 7152, 9312, 6173, 7038, 12614, 11498, 7387, 7412, 1252, 19577, 19597, 19669, 5761, 5199, 5762, 19522, 19671, 2]
 
-// Module 19271 (VoicePanelPreJoinContent)
+// Module 19668 (VoicePanelPreJoinContent)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl6 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
-import native from "native" /* 5080 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import spring from "spring" /* 5637 */;
-import Constants2 from "Constants" /* 5768 */;
-import useTrackImpressionDefault from "useTrackImpression" /* 6028 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 6041 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6706 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 6717 */;
-import NativeViewDefault from "NativeView" /* 6960 */;
-import CircleErrorIcon from "CircleErrorIcon" /* 7086 */;
-import StreamActionCreators from "StreamActionCreators" /* 7901 */;
-import StageChannelModalActionCreators from "StageChannelModalActionCreators" /* 7950 */;
-import FormComponents from "FormComponents" /* 9232 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11223 */;
-import VoicePanelCardConstants from "VoicePanelCardConstants" /* 11226 */;
-import calculateVoicePanelHeaderSpecs from "calculateVoicePanelHeaderSpecs" /* 11229 */;
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 12411 */;
-import SharedSpaceWarningConstants from "SharedSpaceWarningConstants" /* 15620 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import Constants2 from "Constants" /* 5897 */;
+import useTrackImpressionDefault from "useTrackImpression" /* 6160 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 6173 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6761 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 6772 */;
+import CircleErrorIcon from "CircleErrorIcon" /* 7152 */;
+import StreamActionCreators from "StreamActionCreators" /* 7978 */;
+import StageChannelModalActionCreators from "StageChannelModalActionCreators" /* 8019 */;
+import FormComponents from "FormComponents" /* 9312 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11362 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11363 */;
+import VoicePanelCardConstants from "VoicePanelCardConstants" /* 11366 */;
+import calculateVoicePanelHeaderSpecs from "calculateVoicePanelHeaderSpecs" /* 11369 */;
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 12614 */;
+import SharedSpaceWarningConstants from "SharedSpaceWarningConstants" /* 15935 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4862 */;
-import GameConsoleStore from "GameConsoleStore" /* 5765 */;
-import VoiceChannelBlockedUserStore from "VoiceChannelBlockedUserStore" /* 15616 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6714 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4988 */;
+import GameConsoleStore from "GameConsoleStore" /* 5894 */;
+import VoiceChannelBlockedUserStore from "VoiceChannelBlockedUserStore" /* 15931 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6769 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
-import MediaEngineStore from "MediaEngineStore" /* 2006 */;
-import PermissionStore from "PermissionStore" /* 4946 */;
-import SessionsStore from "SessionsStore" /* 5766 */;
-import UserStore from "UserStore" /* 1383 */;
-import VoiceStateStore from "VoiceStateStore" /* 5679 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5767 */;
+import ChannelStore from "ChannelStore" /* 4989 */;
+import MediaEngineStore from "MediaEngineStore" /* 2130 */;
+import PermissionStore from "PermissionStore" /* 5072 */;
+import SessionsStore from "SessionsStore" /* 5895 */;
+import UserStore from "UserStore" /* 1385 */;
+import VoiceStateStore from "VoiceStateStore" /* 5803 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5896 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
-let c0, dependencyMap, embeddedActivitiesForChannel;
+let _undefined, _undefined3, _undefined4, dependencyMap, embeddedActivitiesForChannel, flag;
 
 let closure_20;
 let closure_21;
@@ -61,6 +58,9 @@ let obj3;
 let obj4;
 let obj5;
 let obj6;
+let tmp3;
+const _modDef1652 = tmp3(1652);
+const NativeViewDefault = tmp3(7023);
 function StreamPreview(channelId) {
   let I0mOAs;
   let format;
@@ -109,7 +109,7 @@ function StreamPreview(channelId) {
   }
   if (!isGuildStageVoiceResult) {
     let obj2 = { style: tmp.activityInfoWrapper, children: items3 };
-    let obj5 = { variant: "text-sm/semibold", style: tmp.activityInfoHeader, color: "text-default", children: format(I0mOAs, obj6) };
+    let obj5 = { variant: "body-sm/semibold", style: tmp.activityInfoHeader, color: "text-default", children: format(I0mOAs, obj6) };
     const tmp2Result = channelId(setFocused[32]);
     const Text = tmp5(tmp3[33]).Text;
     const intl = tmp5(tmp3[34]).intl;
@@ -138,59 +138,83 @@ function ActivityInfo(activity) {
   let closure_5;
   let intl;
   let intl2;
-  let items2;
-  let items3;
+  let items6;
+  let items7;
   let obj11;
+  let obj12;
   let obj13;
-  let obj14;
-  let obj15;
-  let obj8;
+  let obj6;
+  let obj9;
+  let tmp10;
+  let tmp11;
+  let tmp12;
+  let tmp13;
+  let tmp14;
+  let tmp15;
+  let tmp8;
+  const f119089 = () => {
+    const obj = activity(first[39]);
+    return obj.getWindowDimensions().width - 2 * (EDGE_GUTTER + 16);
+  };
   activity = activity.activity;
   let analyticsLocations = activity.analyticsLocations;
   let application;
-  let windowDimensions;
+  let embeddedActivityJoinability;
   react = undefined;
   let tmp = closure_28();
   const tmp2 = analyticsLocations;
   const items = [activity.applicationId];
-  application = windowDimensions(analyticsLocations(application[36])(items), 1)[0];
+  application = embeddedActivityJoinability(analyticsLocations(application[36])(items), 1)[0];
   let obj2 = activity(application[37]);
   const embeddedActivityLocationChannelId = obj2.getEmbeddedActivityLocationChannelId(activity.location);
+  let obj3 = react;
   const arr2 = analyticsLocations(application[38])(activity.applicationId, embeddedActivityLocationChannelId);
   const context = react.useContext(analyticsLocations(application[25]));
   const channelId = context.channelId;
-  windowDimensions = context.windowDimensions;
-  const tmp7 = windowDimensions(react.useState(() => {
-    const obj = activity(first[39]);
-    return obj.getWindowDimensions().width - 2 * (EDGE_GUTTER + 16);
-  }), 2);
-  react = tmp9;
-  const first1 = tmp7[0];
-  let obj3 = activity(application[40]);
-  const fn = function u() {
-    return windowDimensions.get().width;
-  };
-  fn.__closure = { windowDimensions };
-  fn.__workletHash = 16837592262556;
-  fn.__initData = __initData;
-  const fn2 = function c(arg0, arg1) {
-    if (arg0 !== arg1) {
-      const obj = ReanimatedRexport;
-      obj.runOnJS(closure_5)(arg0 - 2 * (EDGE_GUTTER + 16));
+  const windowDimensions = context.windowDimensions;
+  [r10039, tmp8] = embeddedActivityJoinability(react.useState(f119089), 2);
+  embeddedActivityJoinability(react.useState(f119089), 2);
+  const items1 = [closure_31, windowDimensions];
+  let c0;
+  [tmp10, tmp11] = items1;
+  const tmp9 = activity(application[40]);
+  class VoicePanelPreJoinContentTsx1 {
+    constructor() {
+      return _undefined.get().width;
     }
-  };
-  let obj = { runOnJS: activity(application[40]).runOnJS, setActivityPreviewWidth: tmp9, EDGE_GUTTER };
-  fn2.__closure = obj;
-  fn2.__workletHash = 1481130207412;
-  fn2.__initData = __initData2;
-  const animatedReaction = obj3.useAnimatedReaction(fn, fn2);
-  let obj5 = activity(application[41]);
-  let obj4 = { userId: AuthenticationStore.getId(), channelId, application };
-  const embeddedActivityJoinability = obj5.useEmbeddedActivityJoinability(obj4);
-  const tmp12 = embeddedActivityJoinability === activity(application[41]).EmbeddedActivityJoinability.CAN_JOIN;
-  let closure_7 = tmp12;
-  const items1 = [activity.launchId, analyticsLocations, application, tmp12, channelId, embeddedActivityJoinability];
-  const callback = react.useCallback(() => {
+  }
+  const items2 = [tmp11];
+  VoicePanelPreJoinContentTsx1.__closure = items2;
+  VoicePanelPreJoinContentTsx1.__workletHash = 4150408530277;
+  VoicePanelPreJoinContentTsx1.__initData = tmp10;
+  const items3 = [closure_32, , , ];
+  const useAnimatedReaction = tmp9.useAnimatedReaction;
+  items3[1] = activity(application[41]).scheduleOnRN;
+  items3[2] = tmp8;
+  items3[3] = EDGE_GUTTER;
+  c0 = undefined;
+  let c1;
+  let c2;
+  [tmp12, tmp13, tmp14, tmp15] = items3;
+  class VoicePanelPreJoinContentTsx2 {
+    constructor(arg0, arg1) {
+      if (arg0 !== arg1) {
+        _undefined(c1, arg0 - 2 * (c2 + 16));
+      }
+    }
+  }
+  const items4 = [tmp13, tmp14, tmp15];
+  VoicePanelPreJoinContentTsx2.__closure = items4;
+  VoicePanelPreJoinContentTsx2.__workletHash = 12447763002016;
+  VoicePanelPreJoinContentTsx2.__initData = tmp12;
+  const animatedReaction = useAnimatedReaction(VoicePanelPreJoinContentTsx1, VoicePanelPreJoinContentTsx2);
+  const tmp4Result = activity(application[42]);
+  let obj = { userId: AuthenticationStore.getId(), channelId, application };
+  embeddedActivityJoinability = tmp4Result.useEmbeddedActivityJoinability(obj);
+  const tmp18 = embeddedActivityJoinability === activity(application[42]).EmbeddedActivityJoinability.CAN_JOIN;
+  react = tmp18;
+  const items5 = [activity.launchId, analyticsLocations, application, tmp18, channelId, embeddedActivityJoinability];
+  const callback = obj3.useCallback(() => {
     let inputApplication;
     let obj = {
       embeddedActivityJoinability,
@@ -198,7 +222,7 @@ function ActivityInfo(activity) {
         return closure_0(...arguments);
       }
     };
-    const tmp = analyticsLocations(first[42]);
+    const tmp = analyticsLocations(first[43]);
     let closure_0 = channelId(function*(arg0, value) {
       let v3;
       if (c0 === 2) {
@@ -211,7 +235,7 @@ function ActivityInfo(activity) {
           const obj4 = { value, done: true };
           return obj4;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -225,12 +249,12 @@ function ActivityInfo(activity) {
               const obj5 = { value, done: true };
               return obj5;
             } else {
-              const tmp19 = closure_1_7;
+              const tmp19 = closure_1_5;
               if (tmp19) {
                 if (null != inputApplication) {
                   const obj6 = { channelId, applicationId: inputApplication.id, launchId: c0.launchId, inputApplication, analyticsLocations };
                   analyticsLocations = 1;
-                  const obj3 = c0(application[42]);
+                  const obj3 = c0(application[43]);
                   c0 = 1;
                   const obj7 = { value: obj3.maybeJoinEmbeddedActivity(obj6), done: false };
                   return obj7;
@@ -249,7 +273,7 @@ function ActivityInfo(activity) {
             return obj;
           }
           c0 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp15) {
           c0 = 3;
           throw tmp15;
@@ -257,41 +281,47 @@ function ActivityInfo(activity) {
       }
     });
     tmp(obj);
-  }, items1);
-  let tmp16Result = null;
+  }, items5);
+  let tmp22Result = null;
   if (null != application) {
-    let obj6 = { style: tmp.activityInfoWrapper, children: items2 };
-    let obj7 = { variant: "text-sm/semibold", style: tmp.activityInfoHeader, color: "text-default", children: intl.format(tmp4(tmp3[34]).t["n/IJ6Y"], obj8) };
+    let obj4 = { style: tmp.activityInfoWrapper, children: items6 };
+    let obj5 = { variant: "body-sm/semibold", style: tmp.activityInfoHeader, color: "text-default", children: intl.format(tmp4(tmp3[34]).t["n/IJ6Y"], obj6) };
     const tmp2Result = tmp2(application[32]);
     const Text = tmp4(tmp3[33]).Text;
     intl = tmp4(tmp3[34]).intl;
-    obj8 = { n: arr2.length };
-    items2 = [closure_25(Text, obj7), ];
-    const obj9 = { activeOpacity: 0.7, onPress: callback, style: tmp.previewImageWrapper, accessible: false, children: items3 };
-    const PressableOpacity = tmp4(tmp3[44]).PressableOpacity;
-    const obj10 = { style: tmp.previewImage, children: closure_25(tmp2(application[45]), obj11) };
-    obj11 = { imageBackground: tmp14, aspectRatio: 1.7777777777777777 };
+    obj6 = { n: arr2.length };
+    items6 = [closure_25(Text, obj5), ];
+    let obj7 = { activeOpacity: 0.7, onPress: callback, style: tmp.previewImageWrapper, accessible: false, children: items7 };
+    const PressableOpacity = tmp4(tmp3[45]).PressableOpacity;
+    const obj8 = { style: tmp.previewImage, children: closure_25(tmp2(application[46]), obj9) };
+    obj9 = { imageBackground: tmp20, aspectRatio: 1.7777777777777777 };
     const tmp2Result3 = tmp2(application[32]);
-    items3 = [closure_25(tmp2Result3, obj10), ];
-    const obj12 = { style: tmp.joinButtonWrapper, children: closure_25(Button, obj13) };
-    obj13 = { text: intl2.formatToPlainString(activity(application[34]).t["YV/hE8"], obj14), size: "sm", iconPosition: "start", variant: "primary-overlay", icon: closure_25(Icon, obj15), onPress: callback };
+    items7 = [closure_25(tmp2Result3, obj8), ];
+    const obj10 = { style: tmp.joinButtonWrapper, children: closure_25(Button, obj11) };
+    obj11 = { text: intl2.formatToPlainString(activity(application[34]).t["YV/hE8"], obj12), size: "sm", iconPosition: "start", variant: "primary-overlay", icon: closure_25(Icon, obj13), onPress: callback };
     const tmp2Result4 = tmp2(application[32]);
-    Button = tmp4(tmp3[46]).Button;
+    Button = tmp4(tmp3[47]).Button;
     intl2 = tmp4(tmp3[34]).intl;
-    obj14 = { name: application.name };
-    Icon = tmp4(tmp3[46]).Button.Icon;
+    obj12 = { name: application.name };
+    Icon = tmp4(tmp3[47]).Button.Icon;
     const iconURL = application.getIconURL(20);
-    obj15 = { variant: "entity", source: size };
-    size = { uri: iconURL, width: 20, height: 20 };
-    items3[1] = closure_25(tmp2Result4, obj12);
-    items2[1] = closure_26(PressableOpacity, obj9);
-    tmp16Result = tmp16(tmp2Result, obj6);
+    obj13 = { variant: "entity", source: tmp28 };
+    class VoicePanelPreJoinContentTsx1 {
+      constructor() {
+        return _undefined.get().width;
+      }
+    }
+    tmp28[0] = iconURL;
+    items7[1] = closure_25(tmp2Result4, obj10);
+    items6[1] = closure_26(PressableOpacity, obj7);
+    tmp22Result = tmp22(tmp2Result, obj4);
   }
-  return tmp16Result;
+  return tmp22Result;
 }
 function RoomMembersSection(title) {
   let channelId;
   let guildId;
+  let require;
   ({ members: require, channelId: importDefault, guildId: dependencyMap } = title);
   let obj = {
     title: title.title,
@@ -299,7 +329,7 @@ function RoomMembersSection(title) {
     children: (() => {
       let obj2;
       const items = [];
-      const iter = require[Symbol.iterator]();
+      const iter = _require[Symbol.iterator]();
       const nextResult = iter.next();
       while (iter !== undefined) {
         let tmp3 = nextResult;
@@ -385,7 +415,7 @@ function RoomMembers(members) {
   let tmp7Result = diff > 0;
   if (tmp7Result) {
     let formatToPlainStringResult;
-    const VoicePanelFormSection = members(tmp[50]).VoicePanelFormSection;
+    const VoicePanelFormSection = members(tmp[51]).VoicePanelFormSection;
     if (0 === sum) {
       const intl4 = tmp21(tmp[34]).intl;
       const obj6 = { n: members.length };
@@ -431,7 +461,7 @@ function RoomMembers(members) {
               return closure_6(first + 20);
             }
       };
-      const TableRow = tmp21(tmp[52]).TableRow;
+      const TableRow = tmp21(tmp[53]).TableRow;
       intl5 = tmp21(tmp[34]).intl;
       tmp23 = closure_25(TableRow, obj9);
     }
@@ -441,85 +471,151 @@ function RoomMembers(members) {
   children[4] = tmp7Result;
   return tmp7(tmp8, { children });
 }
-function PreJoinTransitioner(transitionState) {
+function PreJoinTransitioner(arg0) {
+  let controlsSpecs;
+  let obj3;
   let obj4;
-  let obj5;
+  let safeArea;
+  let tmp10;
+  let tmp11;
+  let tmp12;
+  let tmp13;
+  let tmp14;
+  let tmp15;
+  let tmp16;
+  let tmp17;
+  let tmp18;
+  let tmp19;
+  let tmp20;
+  let tmp21;
+  let tmp3Result;
   let tmp7;
-  transitionState = transitionState.transitionState;
-  const transitionCleanUp = transitionState.transitionCleanUp;
-  const merged = Object.assign(transitionState, Object.assign({ transitionState: 0, transitionCleanUp: 0 }));
+  let tmp8;
+  let tmp9;
+  let transitionCleanUp;
+  let transitionState;
+  let useReducedMotion;
   let windowDimensions;
-  let preJoinContentSize;
+  ({ transitionState, transitionCleanUp } = arg0);
+  const merged = Object.assign(arg0, Object.assign({ transitionState: 0, transitionCleanUp: 0 }));
+  let obj = react;
+  const tmp3 = importDefault;
+  let tmp4 = dependencyMap;
   const tmp2 = closure_28();
-  const context = preJoinContentSize.useContext(transitionCleanUp(windowDimensions[25]));
-  windowDimensions = context.windowDimensions;
-  const controlsSpecs = context.controlsSpecs;
-  const safeArea = context.safeArea;
-  preJoinContentSize = context.preJoinContentSize;
-  const useReducedMotion = context.useReducedMotion;
-  let obj = transitionState(windowDimensions[40]);
-  let fn = function l() {
-    let fn;
-    let interpolateResult;
-    let items;
-    let num2;
-    let sum;
-    let withSpring;
-    const height = windowDimensions.get().height;
-    let obj = { paddingBottom: sum + safeArea.get().bottom, opacity: withSpring(num2), transform: items };
-    const diff = height - roundToNearestPixelDefault(0.8 * height);
-    sum = diff + controlsSpecs.get().height;
-    withSpring = spring.withSpring;
-    let num = 1;
-    num2 = 1;
-    if (transitionState === native.TransitionStates.YEETED) {
-      num2 = 0;
+  const context = react.useContext(VoicePanelStateContextDefault);
+  const preJoinContentSize = context.preJoinContentSize;
+  ({ windowDimensions, controlsSpecs, safeArea, useReducedMotion } = context);
+  let tmp6 = preJoinContentSize(1652);
+  let items = [closure_40, windowDimensions, , , , , , , , , , , , , ];
+  const useAnimatedStyle = tmp6.useAnimatedStyle;
+  items[2] = roundToNearestPixelDefault;
+  items[3] = controlsSpecs;
+  items[4] = safeArea;
+  items[5] = preJoinContentSize(5761).withSpring;
+  items[6] = transitionState;
+  items[7] = preJoinContentSize(5199).TransitionStates;
+  items[8] = preJoinContentSize(5762).Reanimated3DefaultSpringConfig;
+  items[9] = preJoinContentSize(1652).interpolate;
+  items[10] = useReducedMotion;
+  items[11] = MODE_CHANGE_PHYSICS;
+  items[12] = closure_39;
+  items[13] = preJoinContentSize(1705).scheduleOnRN;
+  items[14] = transitionCleanUp;
+  let c0;
+  let c1;
+  let c2;
+  let c3;
+  let c4;
+  let c5;
+  let c6;
+  let c7;
+  let c8;
+  let c9;
+  let c10;
+  let c11;
+  let c12;
+  let c13;
+  [tmp7, tmp8, tmp9, tmp10, tmp11, tmp12, tmp13, tmp14, tmp15, tmp16, tmp17, tmp18, tmp19, tmp20, tmp21] = items;
+  class VoicePanelPreJoinContentTsx4 {
+    constructor() {
+      let _undefined2;
+      let items2;
+      let num2;
+      let sum;
+      let tmp10;
+      let tmp11;
+      let tmp12;
+      let tmp13;
+      let tmp6Result;
+      let tmp8;
+      let tmp9;
+      const height = _undefined.get().height;
+      const obj = { paddingBottom: sum + _undefined4.get().bottom, opacity: tmp3(num2, c7), transform: items2 };
+      const diff = height - _undefined2(0.8 * height);
+      sum = diff + _undefined3.get().height;
+      let num = 1;
+      num2 = 1;
+      const tmp4 = c5;
+      const tmp5 = _undefined5;
+      if (c5 === _undefined5.YEETED) {
+        num2 = 0;
+      }
+      const tmp6 = c8;
+      if (_undefined6.get()) {
+        num = 0;
+      }
+      const items = [c11, tmp4, tmp5, c12, c13];
+      _undefined = undefined;
+      _undefined2 = undefined;
+      _undefined3 = undefined;
+      _undefined4 = undefined;
+      [tmp9, tmp10, tmp11, tmp12, tmp13] = items;
+      const obj2 = { translateY: _undefined(tmp6Result, tmp8, "respect-motion-settings", VoicePanelPreJoinContentTsx3) };
+      tmp6Result = tmp6(num, [0, 1], [0, 400]);
+      tmp8 = c10;
+      class VoicePanelPreJoinContentTsx3 {
+        constructor() {
+          flag = arg0;
+          if (arg0 === undefined) {
+            flag = false;
+          }
+          if (flag) {
+            tmp = closure_0;
+            tmp2 = closure_1;
+            flag = closure_0 === closure_1.YEETED;
+          }
+          if (flag) {
+            tmp3 = closure_2;
+            tmp4 = closure_3;
+            tmp5 = closure_2(closure_3);
+          }
+          return;
+        }
+      }
+      const items1 = [tmp10, tmp11, tmp12, tmp13];
+      VoicePanelPreJoinContentTsx3.__closure = items1;
+      VoicePanelPreJoinContentTsx3.__workletHash = 14656739936206;
+      VoicePanelPreJoinContentTsx3.__initData = tmp9;
+      items2 = [obj2];
+      return obj;
     }
-    const withSpring2 = tmp4(5637).withSpring;
-    spring;
-    const interpolate = tmp4(5095).interpolate;
-    ReanimatedRexport;
-    if (useReducedMotion.get()) {
-      num = 0;
-    }
-    const obj2 = { translateY: withSpring2(interpolateResult, MODE_CHANGE_PHYSICS, "respect-motion-settings", fn) };
-    fn = function o() {
-      let flag = arg0;
-      if (arg0 === undefined) {
-        flag = false;
-      }
-      if (flag) {
-        flag = closure_1_0 === transitionState(windowDimensions[62]).TransitionStates.YEETED;
-      }
-      if (flag) {
-        const obj = transitionState(windowDimensions[40]);
-        obj.runOnJS(transitionCleanUp)();
-      }
-    };
-    interpolateResult = interpolate(num, [0, 1], [0, 400]);
-    fn.__closure = { transitionState, TransitionStates: native.TransitionStates, runOnJS: ReanimatedRexport.runOnJS, transitionCleanUp };
-    fn.__workletHash = 2541522666097;
-    fn.__initData = __initData;
-    ({ transitionState, TransitionStates: native.TransitionStates, runOnJS: ReanimatedRexport.runOnJS, transitionCleanUp });
-    items = [obj2];
-    return obj;
-  };
-  let obj2 = { windowDimensions, roundToNearestPixel: transitionCleanUp(windowDimensions[53]), controlsSpecs, safeArea, withSpring: transitionState(windowDimensions[61]).withSpring, transitionState, TransitionStates: transitionState(windowDimensions[62]).TransitionStates, interpolate: transitionState(windowDimensions[40]).interpolate, useReducedMotion, MODE_CHANGE_PHYSICS, runOnJS: transitionState(windowDimensions[40]).runOnJS, transitionCleanUp };
-  fn.__closure = obj2;
-  fn.__workletHash = 16643118377748;
-  fn.__initData = __initData3;
-  let items = [preJoinContentSize];
-  const animatedStyle = obj.useAnimatedStyle(fn);
-  const callback = preJoinContentSize.useCallback((nativeEvent) => {
+  }
+  let items1 = [tmp8, tmp9, tmp10, tmp11, tmp12, tmp13, tmp14, tmp15, tmp16, tmp17, tmp18, tmp19, tmp20, tmp21];
+  VoicePanelPreJoinContentTsx4.__closure = items1;
+  VoicePanelPreJoinContentTsx4.__workletHash = 13025653846611;
+  VoicePanelPreJoinContentTsx4.__initData = tmp7;
+  let items2 = [preJoinContentSize];
+  const animatedStyle = useAnimatedStyle(VoicePanelPreJoinContentTsx4);
+  const callback = obj.useCallback((nativeEvent) => {
     const result = preJoinContentSize.set(roundToNearestPixelDefault(nativeEvent.nativeEvent.layout.height));
-  }, items);
-  const obj3 = { style: animatedStyle, collapsable: false, children: closure_25(tmp7, obj4) };
-  const tmp6 = transitionCleanUp(windowDimensions[63]);
-  obj4 = { onLayout: callback, collapsable: false, style: tmp2.contentWrapper, children: closure_25(closure_38, obj5) };
-  obj5 = {};
-  tmp7 = transitionCleanUp(windowDimensions[32]);
+  }, items2);
+  let obj2 = { style: animatedStyle, collapsable: false, children: closure_25(tmp3Result, obj3) };
+  const View = _modDef1652.View;
+  obj3 = { onLayout: callback, collapsable: false, style: tmp2.contentWrapper, children: closure_25(closure_38, obj4) };
+  obj4 = {};
+  tmp3Result = NativeViewDefault;
   const merged1 = Object.assign(merged);
-  return closure_25(tmp6, obj3);
+  return closure_25(View, obj2);
 }
 function renderItem(arg0, arg1, transitionState, transitionCleanUp) {
   const obj = { transitionState, transitionCleanUp };
@@ -543,7 +639,7 @@ obj4 = { opacity: 0.5 };
 let merged = Object.assign(StyleSheet.absoluteFillObject);
 obj5 = { display: "flex", alignItems: "center", justifyContent: "center" };
 let merged1 = Object.assign(StyleSheet.absoluteFillObject);
-obj6 = { display: "flex", flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8, padding: nativeDefault.space.PX_8, borderRadius: nativeDefault.radii.xs, borderColor: nativeDefault.colors.ICON_FEEDBACK_WARNING, borderWidth: 1, backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_WARNING, marginHorizontal: nativeDefault.space.PX_16 };
+obj6 = { display: "flex", flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8, padding: nativeDefault.space.PX_8, borderRadius: nativeDefault.radii.xs, borderColor: nativeDefault.colors.ICON_FEEDBACK_WARNING, borderWidth: 1, backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_MOD_WARNING, marginHorizontal: nativeDefault.space.PX_16 };
 let closure_28 = createStyles(obj);
 let closure_30 = react.memo(function ChannelInfo(hasMembers) {
   let Text;
@@ -554,7 +650,7 @@ let closure_30 = react.memo(function ChannelInfo(hasMembers) {
   let tmp2 = null;
   if (!hasMembers) {
     const obj = { style: tmp.channelInfoWrapper, children: closure_25(Text, obj2) };
-    obj2 = { variant: "text-sm/medium", color: "text-default", style: tmp.subheading, children: intl.string(intl6.t.sS2J0G) };
+    obj2 = { variant: "body-sm/medium", color: "text-default", style: tmp.subheading, children: intl.string(intl6.t.sS2J0G) };
     const tmp6 = NativeViewDefault;
     Text = Text_Text.Text;
     intl = intl6.intl;
@@ -562,8 +658,8 @@ let closure_30 = react.memo(function ChannelInfo(hasMembers) {
   }
   return tmp2;
 });
-const __initData = { code: "function VoicePanelPreJoinContentTsx1(){const{windowDimensions}=this.__closure;return windowDimensions.get().width;}" };
-const __initData2 = { code: "function VoicePanelPreJoinContentTsx2(width,previous){const{runOnJS,setActivityPreviewWidth,EDGE_GUTTER}=this.__closure;if(width===previous)return;runOnJS(setActivityPreviewWidth)(width-(EDGE_GUTTER+16)*2);}" };
+let closure_31 = { code: "(function VoicePanelPreJoinContentTsx1(){let[windowDimensions]=this.__closure;return windowDimensions.get().width;})" };
+let closure_32 = { code: "(function VoicePanelPreJoinContentTsx2(width,previous){let[scheduleOnRN,setActivityPreviewWidth,EDGE_GUTTER]=this.__closure;if(width===previous)return;scheduleOnRN(setActivityPreviewWidth,width-(EDGE_GUTTER+16)*2);})" };
 let closure_34 = react.memo(function BlockedMembersWarning(blockedUserIds) {
   let channelId;
   let ignoredUserIds;
@@ -590,14 +686,14 @@ let closure_34 = react.memo(function BlockedMembersWarning(blockedUserIds) {
     items = [, ];
     const tmp2Result = NativeViewDefault;
     items[0] = closure_25(CircleErrorIcon.CircleErrorIcon, { color: "text-feedback-warning" });
-    const obj4 = { variant: "text-sm/bold", color: "interactive-text-active", style: { flexShrink: 1 }, children: items1 };
+    const obj4 = { variant: "body-sm/semibold", color: "interactive-text-active", style: { flexShrink: 1 }, children: items1 };
     items1 = [stringResult1, " ", ];
     let tmp11Result = null;
-    const Text = tmp5(5624).Text;
+    const Text = tmp5(5751).Text;
     const tmp11 = closure_25;
     if (null != stringResult) {
-      const obj5 = { variant: "heading-sm/semibold", children: stringResult };
-      tmp11Result = tmp11(tmp5(5624).Text, obj5);
+      const obj5 = { variant: "heading-xs/semibold", children: stringResult };
+      tmp11Result = tmp11(tmp5(5751).Text, obj5);
     }
     items1[2] = tmp11Result;
     items[1] = closure_26(Text, obj4);
@@ -671,9 +767,9 @@ let closure_38 = react.memo(function VoicePanelPreJoinContentInner(members) {
   let obj = members(ignoredMembers[26]);
   const items = [ChannelStore];
   const stateFromStores = obj.useStateFromStores(items, () => ChannelStore.getChannel(channelId));
-  const tmp6 = blockedMembers(ignoredMembers[54])(stateFromStores);
-  const tmp7 = blockedMembers(ignoredMembers[55]);
-  analyticsLocations = tmp7(blockedMembers(ignoredMembers[56]).VOICE_PANEL_PRE_JOIN).analyticsLocations;
+  const tmp6 = blockedMembers(ignoredMembers[55])(stateFromStores);
+  const tmp7 = blockedMembers(ignoredMembers[56]);
+  analyticsLocations = tmp7(blockedMembers(ignoredMembers[57]).VOICE_PANEL_PRE_JOIN).analyticsLocations;
   const items1 = [channelId, guildId, analyticsLocations];
   const effect = analyticsLocations.useEffect(() => {
     const obj = AnalyticsUtilsDefault;
@@ -686,7 +782,7 @@ let closure_38 = react.memo(function VoicePanelPreJoinContentInner(members) {
     const tmp2 = !hasItem && !set2.has(user.user.id);
     return tmp2;
   }), items2);
-  const tmp10 = blockedMembers(ignoredMembers[58])();
+  const tmp10 = blockedMembers(ignoredMembers[59])();
   let closure_6 = tmp10;
   const items3 = [tmp10];
   const effect1 = analyticsLocations.useEffect(() => {
@@ -702,7 +798,7 @@ let closure_38 = react.memo(function VoicePanelPreJoinContentInner(members) {
   const tmp13 = closure_27;
   if (tmp6) {
     const obj3 = { style: tmp.optInChannelsContainer, channel: stateFromStores, analyticsSection: constants2.CHANNEL };
-    tmp14Result = tmp14(tmp2(tmp3[59]), obj3);
+    tmp14Result = tmp14(tmp2(tmp3[60]), obj3);
   }
   items4[1] = tmp14Result;
   items4[2] = activities.map((activity) => {
@@ -718,22 +814,22 @@ let closure_38 = react.memo(function VoicePanelPreJoinContentInner(members) {
   let tmp14Result4 = null != guildId;
   if (tmp14Result4) {
     const obj5 = { members: memo, guildId };
-    tmp14Result4 = tmp14(tmp2(tmp3[60]), obj5);
+    tmp14Result4 = tmp14(tmp2(tmp3[61]), obj5);
   }
   const obj6 = { children: items4 };
   items4[4] = tmp14Result4;
   items4[5] = closure_25(closure_37, { channelId });
   return tmp12(tmp13, obj6);
 });
-const __initData3 = { code: "function VoicePanelPreJoinContentTsx3(){const{windowDimensions,roundToNearestPixel,controlsSpecs,safeArea,withSpring,transitionState,TransitionStates,interpolate,useReducedMotion,MODE_CHANGE_PHYSICS,runOnJS,transitionCleanUp}=this.__closure;const{height:windowHeight}=windowDimensions.get();return{paddingBottom:windowHeight-roundToNearestPixel(windowHeight*0.8)+controlsSpecs.get().height+safeArea.get().bottom,opacity:withSpring(transitionState===TransitionStates.YEETED?0:1),transform:[{translateY:withSpring(interpolate(!useReducedMotion.get()&&transitionState===TransitionStates.YEETED?1:0,[0,1],[0,400]),MODE_CHANGE_PHYSICS,'respect-motion-settings',function(finished=false){finished&&transitionState===TransitionStates.YEETED&&runOnJS(transitionCleanUp)();})}]};}" };
-let closure_40 = { code: "function VoicePanelPreJoinContentTsx4(finished=false){const{transitionState,TransitionStates,runOnJS,transitionCleanUp}=this.__closure;finished&&transitionState===TransitionStates.YEETED&&runOnJS(transitionCleanUp)();}" };
+let closure_39 = { code: "(function VoicePanelPreJoinContentTsx3(finished=false){let[transitionState,TransitionStates,scheduleOnRN,transitionCleanUp]=this.__closure;finished&&transitionState===TransitionStates.YEETED&&scheduleOnRN(transitionCleanUp);})" };
+let closure_40 = { code: "(function VoicePanelPreJoinContentTsx4(){let[windowDimensions,roundToNearestPixel,controlsSpecs,safeArea,withSpring,transitionState,TransitionStates,Reanimated3DefaultSpringConfig,interpolate,useReducedMotion,MODE_CHANGE_PHYSICS,_worklet_14656739936206_init_data,scheduleOnRN,transitionCleanUp]=this.__closure;const{height:windowHeight}=windowDimensions.get();return{paddingBottom:windowHeight-roundToNearestPixel(windowHeight*0.8)+controlsSpecs.get().height+safeArea.get().bottom,opacity:withSpring(transitionState===TransitionStates.YEETED?0:1,Reanimated3DefaultSpringConfig),transform:[{translateY:withSpring(interpolate(!useReducedMotion.get()&&transitionState===TransitionStates.YEETED?1:0,[0,1],[0,400]),MODE_CHANGE_PHYSICS,'respect-motion-settings',function VoicePanelPreJoinContentTsx3Factory([_worklet_14656739936206_init_data,transitionState,TransitionStates,scheduleOnRN,transitionCleanUp]){const VoicePanelPreJoinContentTsx3=function(finished=false){finished&&transitionState===TransitionStates.YEETED&&scheduleOnRN(transitionCleanUp);};VoicePanelPreJoinContentTsx3.__closure=[transitionState,TransitionStates,scheduleOnRN,transitionCleanUp];VoicePanelPreJoinContentTsx3.__workletHash=14656739936206;VoicePanelPreJoinContentTsx3.__initData=_worklet_14656739936206_init_data;return VoicePanelPreJoinContentTsx3;}([_worklet_14656739936206_init_data,transitionState,TransitionStates,scheduleOnRN,transitionCleanUp]))}]};})" };
 const memoResult = react.memo(function VoicePanelPreJoinWrapper() {
   let closure_2;
   let guildId;
-  const context = react.useContext(guildId(11222));
+  const context = react.useContext(guildId(11362));
   const channelId = context.channelId;
   guildId = context.guildId;
-  const tmp2 = guildId(19146)(channelId);
+  const tmp2 = guildId(19522)(channelId);
   dependencyMap = tmp2;
   let obj = channelId(504);
   let items = [SortedVoiceStateStore, VoiceChannelBlockedUserStore, EmbeddedActivitiesStore, MediaEngineStore, ApplicationStreamingStore];
@@ -778,9 +874,9 @@ const memoResult = react.memo(function VoicePanelPreJoinWrapper() {
       };
       return obj;
     }
-  }, items1, channelId(19274).areVoicePanelPreJoinContentPropsEqual);
+  }, items1, channelId(19671).areVoicePanelPreJoinContentPropsEqual);
   const obj2 = { item: stateFromStores, renderItem };
-  return closure_25(channelId(5080).TransitionItem, obj2);
+  return closure_25(channelId(5199).TransitionItem, obj2);
 });
 let size = size_mod;
 let result = size.fileFinishedImporting("modules/voice_panel/native/prejoin/VoicePanelPreJoinContent.tsx");

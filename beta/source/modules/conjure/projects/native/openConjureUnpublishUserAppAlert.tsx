@@ -1,15 +1,15 @@
-// Module ID: 12227
-// Function ID: 12228
+// Module ID: 12399
+// Function ID: 12400
 // Name: openConjureUnpublishUserAppAlert
-// Dependencies: [5, 32, 19, 2038, 21, 504, 10941, 1113, 3868, 5712, 5964, 5624, 5960, 2]
+// Dependencies: [5, 32, 19, 2162, 21, 504, 11075, 1113, 4026, 5837, 6096, 5751, 6092, 2]
 // Exports: default
 
-// Module 12227 (openConjureUnpublishUserAppAlert)
-import useAlertStore from "useAlertStore" /* 5960 */;
+// Module 12399 (openConjureUnpublishUserAppAlert)
+import useAlertStore from "useAlertStore" /* 6092 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 2038 */;
+import ApplicationStore from "ApplicationStore" /* 2162 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
@@ -50,7 +50,7 @@ function ConjureUnpublishUserAppAlert(project) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -88,7 +88,7 @@ function ConjureUnpublishUserAppAlert(project) {
             obj7 = { app: closure_129_2 };
             open("CONJURE_USER_APP_UNPUBLISHED", obj);
             c3 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           } else {
             const intl = tmp(c2[7]).intl;
             tmp = intl.string(tmp4(c2[8])["rE/0SD"]);
@@ -127,14 +127,14 @@ function ConjureUnpublishUserAppAlert(project) {
     }
     return name;
   }, items1);
-  let obj2 = { title: intl.formatToPlainString(require("module_3868").m8KWic, { app: stateFromStores }), content: intl2.string(require("module_3868").wve4kB), extraContent: tmp6Result, actions: closure_9(closure_8, obj4) };
+  let obj2 = { title: intl.formatToPlainString(require("module_4026").m8KWic, { app: stateFromStores }), content: intl2.string(require("module_4026").wve4kB), extraContent: tmp6Result, actions: closure_9(closure_8, obj4) };
   const AlertModal = project(stateFromStores[10]).AlertModal;
   intl = project(stateFromStores[7]).intl;
   intl2 = project(stateFromStores[7]).intl;
   tmp6Result = undefined;
   const tmp7 = importDefault;
   if (null != tmp2) {
-    let obj3 = { variant: "text-sm/medium", color: "text-feedback-critical", children: tmp2 };
+    let obj3 = { variant: "body-sm/medium", color: "text-feedback-critical", children: tmp2 };
     tmp6Result = tmp6(tmp3(tmp4[11]).Text, obj3);
   }
   obj4 = { children: items2 };

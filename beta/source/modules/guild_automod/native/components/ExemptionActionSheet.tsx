@@ -1,22 +1,22 @@
-// Module ID: 19702
-// Function ID: 19703
+// Module ID: 20112
+// Function ID: 20113
 // Name: ExemptionActionSheet
-// Dependencies: [32, 19, 17, 21, 5014, 575, 7217, 6899, 6974, 5272, 7321, 9010, 1113, 5258, 7218, 7223, 2]
+// Dependencies: [32, 19, 17, 21, 5140, 575, 7281, 6954, 7037, 5388, 7382, 9090, 1113, 5374, 7282, 7287, 2]
 // Exports: default
 
-// Module 19702 (ExemptionActionSheet)
+// Module 20112 (ExemptionActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import fuzzysearchDefault from "fuzzysearch" /* 6899 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
+import fuzzysearchDefault from "fuzzysearch" /* 6954 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let BottomSheet, set;
+let set;
 
 let metroImportDefault;
 let metroRequire;
@@ -115,7 +115,7 @@ export default function ExemptionActionSheet(getSearchText) {
     return tmp3(TableCheckboxRow, obj, tmp2);
   }, items2);
   let obj = { scrollable: true, startExpanded: true, header: onSave(BottomSheetTitleHeader, obj2), children: items3 };
-  BottomSheet = items(getId[9]).BottomSheet;
+  const BottomSheet = items(getId[9]).BottomSheet;
   obj2 = { title, trailing: onSave(ActionSheetHeaderPressableText, obj3) };
   BottomSheetTitleHeader = items(getId[10]).BottomSheetTitleHeader;
   obj3 = {

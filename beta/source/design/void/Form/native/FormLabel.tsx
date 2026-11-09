@@ -1,12 +1,12 @@
-// Module ID: 7311
-// Function ID: 7312
+// Module ID: 7372
+// Function ID: 7373
 // Name: FormLabel
-// Dependencies: [19, 21, 5624, 2]
+// Dependencies: [19, 21, 5751, 2]
 // Exports: default
 
-// Module 7311 (FormLabel)
+// Module 7372 (FormLabel)
 import Fragment from "Fragment" /* 21 */;
-import Text_Text from "Text/Text" /* 5624 */;
+import Text_Text from "Text/Text" /* 5751 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -26,5 +26,5 @@ export default function FormLabel(numberOfLines) {
   if (color === undefined) {
     color = "mobile-text-heading-primary";
   }
-  return jsx(Text_Text.Text, { variant: "heading-md/semibold", color, lineClamp, style, maxFontSizeMultiplier: 2, accessible, children });
+  return jsx(Text_Text.Text, { variant: "heading-sm/semibold", color, lineClamp, style, maxFontSizeMultiplier: 2, accessible, children });
 };

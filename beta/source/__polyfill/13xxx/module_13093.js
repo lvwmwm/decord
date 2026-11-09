@@ -1,75 +1,113 @@
 // Module ID: 13093
 // Function ID: 13094
-// Dependencies: [13086, 13081, 13094, 13082, 13054]
-// Exports: sampleSpan
+// Dependencies: [13050, 13094]
 
 // Module 13093
-import _mod13081 from "module_13081" /* 13081 */;
-import _mod13082 from "module_13082" /* 13082 */;
-import _mod13086 from "module_13086" /* 13086 */;
-import _mod13094 from "module_13094" /* 13094 */;
+import tokenize from "tokenize" /* 13050 */;
+import tokenize2 from "tokenize" /* 13094 */;
 
-
-export function sampleSpan(tracesSampler, normalizedRequest) {
-  const obj = _mod13086;
-  if (obj.hasTracingEnabled(tracesSampler)) {
-    let num;
-    let items3;
-    const tmpResult = _mod13081;
-    const isolationScope = tmpResult.getIsolationScope();
-    const obj2 = { normalizedRequest: normalizedRequest.normalizedRequest || normalizedRequest };
-    normalizedRequest = isolationScope.getScopeData().sdkProcessingMetadata.normalizedRequest;
-    const merged = Object.assign(normalizedRequest);
-    if (typeof tracesSampler.tracesSampler === "function") {
-      num = tracesSampler.tracesSampler(obj2);
-    } else if (undefined !== obj2.parentSampled) {
-      num = obj2.parentSampled;
-    } else {
-      num = 1;
-      if (undefined !== tracesSampler.tracesSampleRate) {
-        num = tracesSampler.tracesSampleRate;
-      }
-    }
-    const tmpResult2 = _mod13094;
-    const parseSampleRateResult = tmpResult2.parseSampleRate(num);
-    if (undefined === parseSampleRateResult) {
-      if (_mod13082.DEBUG_BUILD) {
-        const logger3 = tmp(13054).logger;
-        logger3.warn("[Tracing] Discarding transaction because of invalid sample rate.");
-      }
-      const items = [false];
-      items3 = items;
-    } else if (parseSampleRateResult) {
-      let items2;
-      const _Math = Math;
-      if (Math.random() < parseSampleRateResult) {
-        const items1 = [true, parseSampleRateResult];
-        items2 = items1;
-      } else {
-        if (_mod13082.DEBUG_BUILD) {
-          const logger2 = tmp(13054).logger;
-          const _Number = Number;
-          const _HermesInternal = HermesInternal;
-          logger2.log("[Tracing] Discarding transaction because it's not included in the random sample (sampling rate = " + Number(num) + ")");
-        }
-        items2 = [false, parseSampleRateResult];
-      }
-      items3 = items2;
-    } else {
-      if (_mod13082.DEBUG_BUILD) {
-        const logger = tmp(13054).logger;
-        let str = "a negative sampling decision was inherited or tracesSampleRate is set to 0";
-        const log = logger.log;
-        if (typeof tracesSampler.tracesSampler === "function") {
-          str = "tracesSampler returned 0 or false";
-        }
-        log(`[Tracing] Discarding transaction because ${str}`);
-      }
-      items3 = [false, parseSampleRateResult];
-    }
-    return items3;
-  } else {
-    const items4 = [false];
-    return items4;
-  }
+let obj2;
+function consumeRaw(arg0) {
+  return this.Raw(arg0, tokenize2.mode.leftCurlyBracketOrSemicolon, true);
 }
+function isDeclarationBlockAtrule() {
+  const scanner = this.scanner;
+  let lookupTypeResult = scanner.lookupType(1);
+  let num = 1;
+  if (lookupTypeResult) {
+    while (lookupTypeResult !== RightCurlyBracket) {
+      if (lookupTypeResult !== LeftCurlyBracket) {
+        if (lookupTypeResult !== AtKeyword) {
+          let sum = num + 1;
+          let scanner2 = this.scanner;
+          lookupTypeResult = scanner2.lookupType(sum);
+          num = sum;
+        }
+      }
+      let flag = false;
+      return false;
+    }
+    return true;
+  }
+  return false;
+}
+const AtKeyword = tokenize.TYPE.AtKeyword;
+const Semicolon = tokenize.TYPE.Semicolon;
+const LeftCurlyBracket = tokenize.TYPE.LeftCurlyBracket;
+const RightCurlyBracket = tokenize.TYPE.RightCurlyBracket;
+let obj = {
+  name: "Atrule",
+  structure: obj2,
+  parse() {
+    let AtrulePrelude;
+    let parseWithFallback;
+    let tmp13;
+    const self = this;
+    const tokenStart = this.scanner.tokenStart;
+    this.eat(AtKeyword);
+    const scanner = this.scanner;
+    const str = scanner.substrToCursor(tokenStart + 1);
+    const formatted = str.toLowerCase();
+    const scanner2 = this.scanner;
+    scanner2.skipSC();
+    let tmp7 = null;
+    const tmp4 = false === this.scanner.eof && self.scanner.tokenType !== LeftCurlyBracket && self.scanner.tokenType !== Semicolon;
+    if (tmp4) {
+      let callResult;
+      if (self.parseAtrulePrelude) {
+        ({ AtrulePrelude, parseWithFallback } = self);
+        const element = parseWithFallback(AtrulePrelude.bind(self, str), consumeRaw);
+        callResult = element;
+        const tmp10 = "AtrulePrelude" === element.type && null === element.children.head;
+        if (tmp10) {
+          callResult = null;
+        }
+      } else {
+        callResult = consumeRaw.call(self, self.scanner.tokenIndex);
+      }
+      const scanner3 = self.scanner;
+      scanner3.skipSC();
+      tmp7 = callResult;
+    }
+    const tokenType = self.scanner.tokenType;
+    if (Semicolon === tokenType) {
+      const iter = self.scanner;
+      iter.next();
+      tmp13 = null;
+    } else {
+      tmp13 = null;
+      if (LeftCurlyBracket === tokenType) {
+        const atrule = self.atrule;
+        if (atrule.hasOwnProperty(formatted)) {
+          let callResult1;
+          if (typeof self.atrule[formatted].block === "function") {
+            const block = self.atrule[formatted].block;
+            callResult1 = block.call(self);
+          }
+          tmp13 = callResult1;
+        }
+        callResult1 = self.Block(isDeclarationBlockAtrule.call(self));
+      }
+    }
+    const obj = { type: "Atrule", loc: self.getLocation(tokenStart, self.scanner.tokenStart), name: str, prelude: tmp7, block: tmp13 };
+    return obj;
+  },
+  generate(name) {
+    const self = this;
+    this.chunk("@");
+    this.chunk(name.name);
+    if (null !== name.prelude) {
+      self.chunk(" ");
+      self.node(name.prelude);
+    }
+    if (name.block) {
+      self.node(name.block);
+    } else {
+      self.chunk(";");
+    }
+  },
+  walkContext: "atrule"
+};
+obj2 = { name: String, prelude: ["AtrulePrelude", "Raw", null], block: ["Block", null] };
+
+export default obj;

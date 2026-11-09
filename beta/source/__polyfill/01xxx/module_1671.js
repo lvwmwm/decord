@@ -1,94 +1,25 @@
 // Module ID: 1671
 // Function ID: 1672
-// Dependencies: []
-// Exports: getValueUnpackerCode
+// Dependencies: [1672, 1666]
 
 // Module 1671
-let __initData, map;
+import FONT_WEIGHT_MAPPINGS from "FONT_WEIGHT_MAPPINGS" /* 1666 */;
+import _mod1672 from "module_1672" /* 1672 */;
 
-function valueUnpacker(__workletHash, arg1, arg2) {
-  let __handleCache;
-  let __workletsCache;
-  let closure_0 = arg2;
-  ({ __workletsCache, __handleCache } = global);
-  if (undefined === __workletsCache) {
-    const tmp = globalThis;
-    const _Map = Map;
-    const self = this;
-    const self2 = this;
-    map = new Map();
-    global.__workletsCache = map;
-    const _WeakMap = WeakMap;
-    const self3 = this;
-    const self4 = this;
-    const weakMap = new WeakMap();
-    global.__handleCache = weakMap;
-    __handleCache = weakMap;
-    __workletsCache = map;
-  }
-  __workletHash = __workletHash.__workletHash;
-  if (undefined !== __workletHash) {
-    let value = __workletsCache.get(__workletHash);
-    if (undefined === value) {
-      let evalWithSourceMapResult;
-      __initData = __workletHash.__initData;
-      if (global.evalWithSourceMap) {
-        evalWithSourceMapResult = obj.evalWithSourceMap(`(${__initData.code}
-  )`, __initData.location, __initData.sourceMap);
-      } else if (global.evalWithSourceUrl) {
-        const _HermesInternal2 = HermesInternal;
-        const text = `(${__initData.code}`;
-        evalWithSourceMapResult = obj.evalWithSourceUrl(`${`(${__initData.code}`}
-  )`, "worklet_" + __workletHash);
-      } else {
-        const text1 = `${"(" + __initData.code}
-  )`;
-        evalWithSourceMapResult = globalThis.eval === Date.UTC ? eval() : globalThis.eval(`${"(" + __initData.code}
-  )`);
-      }
-      const result = __workletsCache.set(__workletHash, evalWithSourceMapResult);
-      value = evalWithSourceMapResult;
-    }
-    const bindResult = value.bind(__workletHash);
-    __workletHash._recur = bindResult;
-    return bindResult;
-  } else if (undefined !== __workletHash.__init) {
-    let value2 = __handleCache.get(__workletHash);
-    if (undefined === value2) {
-      const __initResult = __workletHash.__init();
-      const result1 = __handleCache.set(__workletHash, __initResult);
-      value2 = __initResult;
-    }
-    return value2;
-  } else {
-    let str = "RemoteFunction";
-    if ("RemoteFunction" === arg1) {
-      function fun() {
-        let str = "anonymous function";
-        const _Error = Error;
-        if (closure_0) {
-          const _HermesInternal = HermesInternal;
-          str = "function `" + tmp + "`";
-        }
-        const _Error1 = new _Error("[Reanimated] Tried to synchronously call a non-worklet " + str + " on the UI thread.\nSee https://docs.swmansion.com/react-native-reanimated/docs/guides/troubleshooting#tried-to-synchronously-call-a-non-worklet-function-on-the-ui-thread for more details.");
-        throw _Error1;
-      }
-      fun.__remoteFunction = __workletHash;
-      return fun;
-    } else {
-      let _Error = Error;
-      let _HermesInternal = HermesInternal;
-      const self5 = this;
-      const self6 = this;
-      const error = new Error("[Reanimated] Data type in category \"" + arg1 + "\" not recognized by value unpacker: \"" + globalThis._toString(__workletHash) + "\".");
-      throw error;
-    }
-  }
-}
-valueUnpacker.__closure = {};
-valueUnpacker.__workletHash = 7175751357828;
-valueUnpacker.__initData = { code: "function valueUnpacker_Pnpm_valueUnpackerTs1(objectToUnpack,category,remoteFunctionName){let workletsCache=global.__workletsCache;let handleCache=global.__handleCache;if(workletsCache===undefined){workletsCache=global.__workletsCache=new Map();handleCache=global.__handleCache=new WeakMap();}const workletHash=objectToUnpack.__workletHash;if(workletHash!==undefined){let workletFun=workletsCache.get(workletHash);if(workletFun===undefined){const initData=objectToUnpack.__initData;if(global.evalWithSourceMap){workletFun=global.evalWithSourceMap('('+initData.code+'\\n)',initData.location,initData.sourceMap);}else if(global.evalWithSourceUrl){workletFun=global.evalWithSourceUrl('('+initData.code+'\\n)',\"worklet_\"+workletHash);}else{workletFun=eval('('+initData.code+'\\n)');}workletsCache.set(workletHash,workletFun);}const functionInstance=workletFun.bind(objectToUnpack);objectToUnpack._recur=functionInstance;return functionInstance;}else if(objectToUnpack.__init!==undefined){let value=handleCache.get(objectToUnpack);if(value===undefined){value=objectToUnpack.__init();handleCache.set(objectToUnpack,value);}return value;}else if(category==='RemoteFunction'){const fun=function(){const label=remoteFunctionName?\"function `\"+remoteFunctionName+\"`\":'anonymous function';throw new Error(\"[Reanimated] Tried to synchronously call a non-worklet \"+label+\" on the UI thread.\\nSee https://docs.swmansion.com/react-native-reanimated/docs/guides/troubleshooting#tried-to-synchronously-call-a-non-worklet-function-on-the-ui-thread for more details.\");};fun.__remoteFunction=objectToUnpack;return fun;}else{throw new Error(\"[Reanimated] Data type in category \\\"\"+category+\"\\\" not recognized by value unpacker: \\\"\"+_toString(objectToUnpack)+\"\\\".\");}}" };
+const obj = { process: _mod1672.processColor };
+const size = { flex: true, flexBasis: true, flexDirection: true, justifyContent: true, alignItems: true, alignSelf: true, alignContent: true, flexGrow: true, flexShrink: true, flexWrap: true, gap: { process: _mod1672.processGap }, rowGap: true, columnGap: true, start: true, end: true, direction: true, height: true, width: true, maxHeight: true, maxWidth: true, minHeight: true, minWidth: true, margin: true, marginTop: true, marginRight: true, marginBottom: true, marginLeft: true, marginStart: true, marginEnd: true, marginBlock: { as: "marginVertical" }, marginBlockEnd: { as: "marginBottom" }, marginBlockStart: { as: "marginTop" }, marginInline: { as: "marginHorizontal" }, marginInlineEnd: { as: "marginRight" }, marginInlineStart: { as: "marginLeft" }, marginHorizontal: true, marginVertical: true, padding: true, paddingTop: true, paddingRight: true, paddingBottom: true, paddingLeft: true, paddingStart: true, paddingEnd: true, paddingBlock: { as: "paddingVertical" }, paddingBlockEnd: { as: "paddingBottom" }, paddingBlockStart: { as: "paddingTop" }, paddingInline: { as: "paddingHorizontal" }, paddingInlineEnd: { as: "paddingRight" }, paddingInlineStart: { as: "paddingLeft" }, paddingHorizontal: true, paddingVertical: true, top: true, left: true, bottom: true, right: true, inset: { process: _mod1672.processInset }, insetBlock: { process: _mod1672.processInsetBlock }, insetInline: { process: _mod1672.processInsetInline }, insetBlockStart: { as: "top" }, insetBlockEnd: { as: "bottom" }, insetInlineStart: { as: "left" }, insetInlineEnd: { as: "right" }, position: true, display: true, overflow: true, zIndex: true, aspectRatio: { process: _mod1672.processAspectRatio }, boxSizing: false, backgroundColor: obj, color: obj, textDecorationColor: obj, textShadowColor: obj, borderColor: obj, borderTopColor: obj, borderBlockStartColor: obj, borderRightColor: obj, borderEndColor: obj, borderBottomColor: obj, borderBlockEndColor: obj, borderLeftColor: obj, borderStartColor: obj, borderBlockColor: obj, outlineColor: obj, shadowColor: obj, overlayColor: FONT_WEIGHT_MAPPINGS.IS_ANDROID && obj, tintColor: obj, shadowOffset: !FONT_WEIGHT_MAPPINGS.IS_ANDROID, shadowOpacity: !FONT_WEIGHT_MAPPINGS.IS_ANDROID, shadowRadius: !FONT_WEIGHT_MAPPINGS.IS_ANDROID, elevation: FONT_WEIGHT_MAPPINGS.IS_ANDROID, textShadowOffset: true, textShadowRadius: true, boxShadow: { process: _mod1672.processBoxShadow }, borderRadius: true, borderTopLeftRadius: true, borderTopStartRadius: true, borderStartStartRadius: true, borderTopRightRadius: true, borderTopEndRadius: true, borderStartEndRadius: true, borderBottomLeftRadius: true, borderBottomStartRadius: true, borderEndStartRadius: true, borderBottomRightRadius: true, borderBottomEndRadius: true, borderEndEndRadius: true, borderWidth: true, borderTopWidth: true, borderStartWidth: true, borderBottomWidth: true, borderEndWidth: true, borderLeftWidth: true, borderRightWidth: true, borderCurve: false, borderStyle: true, outlineOffset: true, outlineStyle: true, outlineWidth: true, transformOrigin: { process: _mod1672.processTransformOrigin }, transform: { process: _mod1672.processTransform }, backfaceVisibility: true, opacity: true, mixBlendMode: true, backgroundImage: { process: _mod1672.processBackgroundImage }, experimental_backgroundImage: { process: _mod1672.processBackgroundImage }, experimental_backgroundPosition: false, backgroundPosition: false, experimental_backgroundSize: false, backgroundSize: false, experimental_backgroundRepeat: false, backgroundRepeat: false, fontFamily: true, fontSize: true, fontStyle: true, fontVariant: true, fontVariationSettings: false, fontWeight: { process: _mod1672.processFontWeight }, textAlign: true, textAlignVertical: true, verticalAlign: false, letterSpacing: true, lineHeight: true, textTransform: true, textDecorationLine: true, textDecorationStyle: true, userSelect: true, writingDirection: false, experimental_textWidthMode: false, includeFontPadding: true, resizeMode: true, objectFit: false, cursor: true, pointerEvents: true, filter: { process: _mod1672.processFilter }, isolation: true };
+({ process: _mod1672.processGap });
+({ process: _mod1672.processInset });
+({ process: _mod1672.processInsetBlock });
+({ process: _mod1672.processInsetInline });
+({ process: _mod1672.processAspectRatio });
+FONT_WEIGHT_MAPPINGS.IS_ANDROID && obj;
+({ process: _mod1672.processBoxShadow });
+({ process: _mod1672.processTransformOrigin });
+({ process: _mod1672.processTransform });
+({ process: _mod1672.processBackgroundImage });
+({ process: _mod1672.processBackgroundImage });
+({ process: _mod1672.processFontWeight });
+({ process: _mod1672.processFilter });
 
-export function getValueUnpackerCode() {
-  return valueUnpacker.__initData.code;
-}
+export const STYLE_PROPERTIES_CONFIG = size;

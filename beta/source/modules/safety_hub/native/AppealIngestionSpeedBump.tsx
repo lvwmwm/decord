@@ -1,20 +1,20 @@
-// Module ID: 13320
-// Function ID: 13321
+// Module ID: 13553
+// Function ID: 13554
 // Name: AppealIngestionSpeedBump
-// Dependencies: [19, 17, 7994, 7970, 1072, 21, 5014, 504, 13313, 13321, 1113, 13319, 13322, 13338, 13339, 5624, 2]
+// Dependencies: [19, 17, 8064, 8039, 1072, 21, 5140, 504, 13546, 13554, 1113, 13552, 13555, 13571, 13572, 5751, 2]
 // Exports: default
 
-// Module 13320 (AppealIngestionSpeedBump)
+// Module 13553 (AppealIngestionSpeedBump)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
-import AppealIngestionActivitySummaryDefault from "AppealIngestionActivitySummary" /* 13322 */;
-import AppealIngestionPolicySummaryDefault from "AppealIngestionPolicySummary" /* 13338 */;
-import AppealIngestionExternalLinkDefault from "AppealIngestionExternalLink" /* 13339 */;
+import AppealIngestionActivitySummaryDefault from "AppealIngestionActivitySummary" /* 13555 */;
+import AppealIngestionPolicySummaryDefault from "AppealIngestionPolicySummary" /* 13571 */;
+import AppealIngestionExternalLinkDefault from "AppealIngestionExternalLink" /* 13572 */;
 import react from "react" /* 19 */;
-import SafetyHubStore from "SafetyHubStore" /* 7994 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 7970 */;
+import SafetyHubStore from "SafetyHubStore" /* 8064 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 8039 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -39,13 +39,11 @@ export default function AppealIngestionSpeedBump(arg0) {
   let intl4;
   let intl5;
   let intl6;
-  let intl7;
   let isCoppa;
   let isDeveloperClassification;
   let isDsaEligible;
-  let isSpam;
   let items2;
-  ({ isCoppa, isSpam, isDeveloperClassification } = arg0);
+  ({ isCoppa, isDeveloperClassification } = arg0);
   _require = undefined;
   const items = [SafetyHubStore];
   const tmp = closure_10();
@@ -79,7 +77,7 @@ export default function AppealIngestionSpeedBump(arg0) {
   const stringResult = intl.string(require("intl").t["C5q+pW"]);
   const intl2 = tmp2(1113).intl;
   const stringResult1 = intl2.string(require("intl").t.URt7VI);
-  const AppealIngestionModalScreen = tmp2(13319).AppealIngestionModalScreen;
+  const AppealIngestionModalScreen = tmp2(13552).AppealIngestionModalScreen;
   const items1 = [closure_8(require("AppealIngestionModal").AppealIngestionModalHeader, { headerText: stringResult, subHeaderText: stringResult1 }), ];
   let tmp10Result = flagged_content.length > 0;
   const obj2 = { style: tmp.container, children: items2 };
@@ -88,7 +86,7 @@ export default function AppealIngestionSpeedBump(arg0) {
     const obj3 = { flaggedContent: flagged_content };
     tmp10Result = tmp10(AppealIngestionActivitySummaryDefault, obj3);
   }
-  items2 = [tmp10Result, , , , , , ];
+  items2 = [tmp10Result, , , , , ];
   const obj4 = { classification: safetyHubClassification.classification };
   items2[1] = closure_8(AppealIngestionPolicySummaryDefault, obj4);
   let tmp10Result3 = isCoppa;
@@ -105,57 +103,41 @@ export default function AppealIngestionSpeedBump(arg0) {
     tmp10Result3 = tmp10(tmp14Result, obj5);
   }
   items2[2] = tmp10Result3;
-  if (isSpam) {
-    isSpam = !isCoppa;
-  }
-  if (isSpam) {
-    const obj6 = {
-      text: intl4.string(require("intl").t.NBsJvm),
-      url: constants.SPAM_LINK,
-      onPress() {
-          return closure_0(hasOwnProperty.ClickSpamWebformLink);
-        }
-    };
-    const tmp14Result4 = AppealIngestionExternalLinkDefault;
-    intl4 = tmp2(1113).intl;
-    isSpam = tmp10(tmp14Result4, obj6);
-  }
-  items2[3] = isSpam;
   if (isDeveloperClassification) {
-    const obj7 = {
-      text: intl5.string(require("intl").t.n9cZTH),
+    const obj6 = {
+      text: intl4.string(require("intl").t.n9cZTH),
       url: constants.APP_APPEAL_LINK,
       onPress() {
           return closure_0(hasOwnProperty.ClickAppAppealLink);
         }
     };
-    const tmp14Result5 = AppealIngestionExternalLinkDefault;
-    intl5 = tmp2(1113).intl;
-    isDeveloperClassification = tmp10(tmp14Result5, obj7);
+    const tmp14Result3 = AppealIngestionExternalLinkDefault;
+    intl4 = tmp2(1113).intl;
+    isDeveloperClassification = tmp10(tmp14Result3, obj6);
   }
-  items2[4] = isDeveloperClassification;
+  items2[3] = isDeveloperClassification;
   let tmp10Result4 = !isCoppa;
   if (tmp10Result4) {
-    const obj8 = {
-      text: intl6.string(require("intl").t["Vtyn/7"]),
+    const obj7 = {
+      text: intl5.string(require("intl").t["Vtyn/7"]),
       url: str,
       onPress() {
           return closure_0(hasOwnProperty.ClickLearnMoreLink);
         }
     };
-    const tmp14Result6 = AppealIngestionExternalLinkDefault;
-    intl6 = tmp2(1113).intl;
-    tmp10Result4 = tmp10(tmp14Result6, obj8);
+    const tmp14Result4 = AppealIngestionExternalLinkDefault;
+    intl5 = tmp2(1113).intl;
+    tmp10Result4 = tmp10(tmp14Result4, obj7);
   }
-  items2[5] = tmp10Result4;
+  items2[4] = tmp10Result4;
   if (isDsaEligible) {
-    const obj9 = { variant: "text-xs/normal", children: intl7.format(require("intl").t.WMUgCX, {}) };
-    const Text = tmp2(5624).Text;
-    intl7 = tmp2(1113).intl;
-    isDsaEligible = tmp10(Text, obj9);
+    const obj8 = { variant: "body-xs/normal", children: intl6.format(require("intl").t.WMUgCX, {}) };
+    const Text = tmp2(5751).Text;
+    intl6 = tmp2(1113).intl;
+    isDsaEligible = tmp10(Text, obj8);
   }
-  const obj10 = { children: items1 };
-  items2[6] = isDsaEligible;
+  const obj9 = { children: items1 };
+  items2[5] = isDsaEligible;
   items1[1] = closure_9(tmp11, obj2);
-  return closure_9(AppealIngestionModalScreen, obj10);
+  return closure_9(AppealIngestionModalScreen, obj9);
 };

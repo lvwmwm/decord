@@ -1,37 +1,44 @@
-// Module ID: 8479
-// Function ID: 8480
+// Module ID: 8550
+// Function ID: 8551
 // Name: ThreadStarterSystemMessage
-// Dependencies: [7766, 1072, 38, 1113, 8422, 2]
+// Dependencies: [7842, 1072, 38, 1113, 8493, 2]
 // Exports: createThreadStarterSystemMessage
 
-// Module 8479 (ThreadStarterSystemMessage)
+// Module 8550 (ThreadStarterSystemMessage)
 import _modDef38 from "module_38" /* 38 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
-import ReferencedMessageStore2 from "ReferencedMessageStore" /* 7766 */;
+import ReferencedMessageStore2 from "ReferencedMessageStore" /* 7842 */;
 import size from "module_2" /* 2 */;
 
 const ReferencedMessageStore = ReferencedMessageStore2;
 
 let tmp;
-const createCommonMessageDefault = tmp(8422);
+const createCommonMessageDefault = tmp(8493);
 const ReferencedMessageState = ReferencedMessageStore2.ReferencedMessageState;
 const MessageTypes = Constants.MessageTypes;
 const result = size.fileFinishedImporting("modules/messages/native/renderer/system_messages/ThreadStarterSystemMessage.tsx");
 
 export function createThreadStarterSystemMessage(message) {
-  let intl;
   message = message.message;
   const type = message.type;
   const messageReference = message.messageReference;
   const tmp3 = _modDef38;
   tmp3(type === MessageTypes.THREAD_STARTER_MESSAGE, "cannot call createThreadStarterSystemMessage on a message of type " + type);
-  let tmp5 = null;
-  if (ReferencedMessageStore.getMessageByReference(messageReference).state !== ReferencedMessageState.LOADED) {
-    const obj = { content: intl.string(intl2.t.OCs36J) };
-    intl = intl2.intl;
+  const messageByReference = ReferencedMessageStore.getMessageByReference(messageReference);
+  let tmp7 = null;
+  if (messageByReference.state !== ReferencedMessageState.LOADED) {
+    let OCs36J;
+    const intl = intl2.intl;
+    const string = intl.string;
+    if (messageByReference.state === tmp6.DELETED) {
+      OCs36J = tmp10(1113).t.mE3KJN;
+    } else {
+      OCs36J = tmp10(1113).t.OCs36J;
+    }
+    const obj = { content: string(OCs36J) };
     const merged = Object.assign(createCommonMessageDefault(message));
-    tmp5 = obj;
+    tmp7 = obj;
   }
-  return tmp5;
+  return tmp7;
 }

@@ -1,36 +1,40 @@
-// Module ID: 12769
-// Function ID: 12770
+// Module ID: 12970
+// Function ID: 12971
 // Name: ConjureSecretsSheet
-// Dependencies: [5, 32, 19, 17, 10850, 21, 5014, 575, 5607, 7358, 12591, 12770, 1113, 3868, 7366, 7321, 7367, 12141, 5624, 5634, 7082, 2]
+// Dependencies: [5, 32, 19, 17, 10969, 21, 5140, 575, 7418, 12794, 12971, 1113, 4026, 7426, 7382, 7427, 12309, 5751, 5758, 7148, 2]
 // Exports: default
 
-// Module 12769 (ConjureSecretsSheet)
+// Module 12970 (ConjureSecretsSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 10850 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 10969 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5, closure_2, dependencyMap;
 
 let c9;
 let metroImportAll;
+let obj2;
+let obj3;
+let obj4;
+let obj5;
 let react = react_mod;
 const View = react_native.View;
 const sendUserMessage = ConjureConnectionStore.sendUserMessage;
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);
-let closure_10 = createStyles.createStyles((paddingBottom) => {
-  const obj = { container: { gap: nativeDefault.space.PX_16, paddingHorizontal: nativeDefault.space.PX_16, paddingBottom }, copyRow: { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8 }, copyInfo: { flex: 1, gap: nativeDefault.space.PX_4 }, field: { gap: nativeDefault.space.PX_4 } };
-  ({ gap: nativeDefault.space.PX_16, paddingHorizontal: nativeDefault.space.PX_16, paddingBottom });
-  ({ flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8 });
-  ({ flex: 1, gap: nativeDefault.space.PX_4 });
-  ({ gap: nativeDefault.space.PX_4 });
-  return obj;
-});
+let createStyles = createStyles_mod;
+let obj = { container: obj2, copyRow: obj3, copyInfo: obj4, field: obj5 };
+obj2 = { gap: nativeDefault.space.PX_16, paddingHorizontal: nativeDefault.space.PX_16 };
+createStyles = createStyles.createStyles;
+obj3 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8 };
+obj4 = { flex: 1, gap: nativeDefault.space.PX_4 };
+obj5 = { gap: nativeDefault.space.PX_4 };
+let closure_10 = createStyles(obj);
 let result = size.fileFinishedImporting("modules/conjure/secrets/native/ConjureSecretsSheet.tsx");
 
 export default function ConjureSecretsSheet(projectId) {
@@ -50,35 +54,32 @@ export default function ConjureSecretsSheet(projectId) {
   let obj2;
   let obj3;
   let obj4;
-  let tmp10;
   let tmp17;
   let tmp18;
+  let tmp8;
   projectId = projectId.projectId;
   const request = projectId.request;
-  dependencyMap = undefined;
   let first;
   react = undefined;
   c8 = undefined;
   c9 = undefined;
   c10 = undefined;
-  let tmp = request;
-  let tmp2 = dependencyMap;
-  let tmp3 = c10(request(5607)({ includeKeyboardHeight: true }).insets.bottom);
-  dependencyMap = tmp3;
+  let tmp = c10();
+  dependencyMap = tmp;
   const ref = react.useRef(null);
-  const tmp5 = first(react.useState({}), 2);
-  first = tmp5[0];
-  react = tmp5[1];
+  let tmp3 = first(react.useState({}), 2);
+  first = tmp3[0];
+  react = tmp3[1];
+  const tmp5 = first(react.useState(false), 2);
+  const first1 = tmp5[0];
+  let closure_7 = tmp5[1];
   let tmp7 = first(react.useState(false), 2);
-  const first1 = tmp7[0];
-  let closure_7 = tmp7[1];
-  [tmp10, c8] = first(react.useState(false), 2);
-  const tmp9 = first(react.useState(false), 2);
+  [tmp8, c8] = tmp7;
   [c9, c10] = first(react.useState(null), 2);
-  const tmp11 = first(react.useState(null), 2);
+  const tmp9 = first(react.useState(null), 2);
   let closure_11 = react.useCallback((arg0) => {
     let closure_0 = arg0;
-    const obj = projectId(closure_2[9]);
+    const obj = projectId(closure_2[8]);
     obj.copy(arg0, () => c10(closure_0));
   }, []);
   let closure_12 = react.useCallback((arg0, arg1) => {
@@ -101,12 +102,13 @@ export default function ConjureSecretsSheet(projectId) {
     }
     return "" !== str.trim();
   });
-  let closure_14 = tmp12;
-  let closure_15 = tmp13;
-  let items = [tmp12, found, tmp13, projectId, , , , ];
+  let closure_14 = tmp10;
+  let closure_15 = tmp11;
+  let items = [tmp10, found, tmp11, projectId, , , , ];
   ({ over_mcp: arr4[4], request_id: arr4[5] } = request);
   items[6] = first1;
   items[7] = first;
+  let tmp14 = projectId;
   const callback = react.useCallback(ref(function*(arg0, value) {
     let closure_0;
     let closure_1;
@@ -121,7 +123,7 @@ export default function ConjureSecretsSheet(projectId) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -145,7 +147,7 @@ export default function ConjureSecretsSheet(projectId) {
                 closure_7(true);
                 _undefined(false);
                 if (true === request.over_mcp) {
-                  const obj4 = projectId(closure_2[10]);
+                  const obj4 = projectId(closure_2[9]);
                   const result = obj4.markMcpSecretRequestSaved(request.request_id);
                 }
                 c3 = 1;
@@ -158,8 +160,8 @@ export default function ConjureSecretsSheet(projectId) {
                               }))
                 };
                 const _Object = Object;
-                const submitProjectSecrets = projectId(closure_2[11]).submitProjectSecrets;
-                const tmp59 = projectId(closure_2[11]);
+                const submitProjectSecrets = projectId(closure_2[10]).submitProjectSecrets;
+                const tmp59 = projectId(closure_2[10]);
                 const tmp60 = projectId;
                 if (null != request.request_id) {
                   const obj7 = { request_id: request.request_id };
@@ -178,13 +180,13 @@ export default function ConjureSecretsSheet(projectId) {
         } else if (1 === c4) {
           c3 = 0;
           projectId = closure_2;
-          const obj2 = projectId(closure_2[10]);
+          const obj2 = projectId(closure_2[9]);
           const result1 = obj2.unmarkMcpSecretRequestSaved(closure_129_1.request_id);
           closure_129_7(false);
-          if (projectId instanceof projectId(closure_2[11]).ConjureSecretRequestExpiredError) {
+          if (projectId instanceof projectId(closure_2[10]).ConjureSecretRequestExpiredError) {
             if (true !== closure_129_1.over_mcp) {
-              const intl2 = projectId(closure_2[12]).intl;
-              closure_1_7(closure_129_0, intl2.string(tmp(closure_2[13]).KVBvVy));
+              const intl2 = projectId(closure_2[11]).intl;
+              closure_1_7(closure_129_0, intl2.string(tmp(closure_2[12]).KVBvVy));
             }
             const current2 = closure_129_3.current;
             if (current2 != null) {
@@ -208,9 +210,9 @@ export default function ConjureSecretsSheet(projectId) {
           c3 = 0;
           if (true !== closure_129_1.over_mcp) {
             let UGqnoV;
-            const intl = projectId(closure_2[12]).intl;
+            const intl = projectId(closure_2[11]).intl;
             const string = intl.string;
-            const tmp14 = tmp(closure_2[13]);
+            const tmp14 = tmp(closure_2[12]);
             const tmp6 = closure_1_7;
             const tmp7 = closure_129_0;
             if (closure_129_15) {
@@ -226,7 +228,7 @@ export default function ConjureSecretsSheet(projectId) {
           }
         }
         c5 = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp67) {
         closure_2 = tmp67;
         if (0 === c3) {
@@ -239,9 +241,9 @@ export default function ConjureSecretsSheet(projectId) {
     }
   }), items);
   let obj = { ref, startExpanded: true, keyboardShouldPersistTaps: "always", header: c8(BottomSheetTitleHeader, obj2), children: tmp17(tmp18, obj4) };
-  const ActionSheet = projectId(7366).ActionSheet;
-  obj2 = { title: intl.string(request(3868).TuMGZp), trailing: c8(projectId(7367).ActionSheetCloseButton, obj3) };
-  BottomSheetTitleHeader = projectId(7321).BottomSheetTitleHeader;
+  const ActionSheet = projectId(7426).ActionSheet;
+  obj2 = { title: intl.string(request(4026).TuMGZp), trailing: c8(projectId(7427).ActionSheetCloseButton, obj3) };
+  BottomSheetTitleHeader = projectId(7382).BottomSheetTitleHeader;
   intl = projectId(1113).intl;
   obj3 = {
     onPress() {
@@ -253,31 +255,31 @@ export default function ConjureSecretsSheet(projectId) {
       return closeActionSheetResult;
     }
   };
-  obj4 = { style: tmp3.container, children: items1 };
-  let tmp15Result = null;
+  obj4 = { style: tmp.container, children: items1 };
+  let tmp13Result = null;
   tmp17 = c9;
   tmp18 = first1;
   if (null != request.note) {
     let str = "";
-    tmp15Result = null;
+    tmp13Result = null;
     if ("" !== request.note) {
-      let obj5 = { text: request.note, variant: "text-sm/normal", color: "text-default" };
-      tmp15Result = tmp15(tmp(12141), obj5);
+      let obj5 = { text: request.note, variant: "body-sm/normal", color: "text-default" };
+      tmp13Result = tmp13(tmp16(12309), obj5);
     }
   }
-  items1 = [tmp15Result, , , , , , ];
-  let obj6 = { variant: "text-xs/normal", color: "text-muted", children: intl2.string(tmp(3868).jgDBJZ) };
-  let Text = tmp16(5624).Text;
-  intl2 = tmp16(1113).intl;
+  items1 = [tmp13Result, , , , , , ];
+  let obj6 = { variant: "body-xs/normal", color: "text-muted", children: intl2.string(tmp16(4026).jgDBJZ) };
+  let Text = tmp14(5751).Text;
+  intl2 = tmp14(1113).intl;
   items1[1] = c8(Text, obj6);
-  let tmp15Result3 = null;
+  let tmp13Result3 = null;
   if (request.fields.length > 1) {
-    let obj7 = { variant: "text-xs/normal", color: "text-muted", children: intl3.string(tmp(3868)["La+pe4"]) };
-    const Text2 = tmp16(5624).Text;
-    intl3 = tmp16(1113).intl;
-    tmp15Result3 = tmp15(Text2, obj7);
+    let obj7 = { variant: "body-xs/normal", color: "text-muted", children: intl3.string(tmp16(4026)["La+pe4"]) };
+    const Text2 = tmp14(5751).Text;
+    intl3 = tmp14(1113).intl;
+    tmp13Result3 = tmp13(Text2, obj7);
   }
-  items1[2] = tmp15Result3;
+  items1[2] = tmp13Result3;
   let copy_values = request.copy_values;
   if (copy_values == null) {
     copy_values = [];
@@ -289,21 +291,21 @@ export default function ConjureSecretsSheet(projectId) {
     const obj2 = { style: closure_2.copyInfo, children: items };
     items = [, ];
     const obj = { style: closure_2.copyRow, children: items1 };
-    const obj3 = { variant: "text-xs/semibold", color: "text-muted", children: children.label };
-    items[0] = _undefined(projectId(closure_2[18]).Text, obj3);
-    const obj4 = { variant: "text-xs/normal", color: "text-default", children: children.value };
-    items[1] = _undefined(projectId(closure_2[18]).Text, obj4);
+    const obj3 = { variant: "body-xs/semibold", color: "text-muted", children: children.label };
+    items[0] = _undefined(projectId(closure_2[17]).Text, obj3);
+    const obj4 = { variant: "body-xs/normal", color: "text-default", children: children.value };
+    items[1] = _undefined(projectId(closure_2[17]).Text, obj4);
     items1 = [_undefined2(first1, obj2), ];
-    const Button = projectId(closure_2[19]).Button;
-    const intl = projectId(closure_2[12]).intl;
+    const Button = projectId(closure_2[18]).Button;
+    const intl = projectId(closure_2[11]).intl;
     const string = intl.string;
     const tmp = _undefined2;
     const tmp2 = first1;
     const tmp3 = _undefined;
     if (_undefined2 === children.value) {
-      OpuAlK = tmp4(tmp5[12]).t.t5VZ88;
+      OpuAlK = tmp4(tmp5[11]).t.t5VZ88;
     } else {
-      OpuAlK = tmp4(tmp5[12]).t.OpuAlK;
+      OpuAlK = tmp4(tmp5[11]).t.OpuAlK;
     }
     const obj5 = {
       variant: "secondary",
@@ -335,7 +337,7 @@ export default function ConjureSecretsSheet(projectId) {
     };
     str = first[label.name];
     const obj = { style: closure_2.field, children: items };
-    const TextInput = projectId(closure_2[20]).TextInput;
+    const TextInput = projectId(closure_2[19]).TextInput;
     const tmp = c9;
     const tmp2 = first1;
     if (str == null) {
@@ -346,8 +348,8 @@ export default function ConjureSecretsSheet(projectId) {
     if (null != label.hint) {
       tmp3Result = null;
       if ("" !== label.hint) {
-        const obj3 = { text: label.hint, variant: "text-xs/normal", color: "text-muted" };
-        tmp3Result = tmp3(request(tmp5[17]), obj3);
+        const obj3 = { text: label.hint, variant: "body-xs/normal", color: "text-muted" };
+        tmp3Result = tmp3(request(tmp5[16]), obj3);
       }
     }
     items[1] = tmp3Result;
@@ -357,32 +359,32 @@ export default function ConjureSecretsSheet(projectId) {
     }
     let tmp3Result2 = null;
     if (hosts.length > 0) {
-      const Text = tmp4(tmp5[18]).Text;
-      const intl = tmp4(tmp5[12]).intl;
+      const Text = tmp4(tmp5[17]).Text;
+      const intl = tmp4(tmp5[11]).intl;
       const formatToPlainString = intl.formatToPlainString;
       let hosts1 = label.hosts;
-      const Ww9HFO = request(tmp5[13]).Ww9HFO;
+      const Ww9HFO = request(tmp5[12]).Ww9HFO;
       if (hosts1 == null) {
         hosts1 = [];
       }
-      const obj4 = { variant: "text-xs/normal", color: "text-muted", children: formatToPlainString(Ww9HFO, obj5) };
+      const obj4 = { variant: "body-xs/normal", color: "text-muted", children: formatToPlainString(Ww9HFO, obj5) };
       obj5 = { hosts: hosts1.join(", ") };
       tmp3Result2 = tmp3(Text, obj4);
     }
     items[2] = tmp3Result2;
     return tmp(tmp2, obj, label.name);
   });
-  let tmp15Result4 = null;
-  if (tmp10) {
-    let obj8 = { variant: "text-xs/normal", color: "text-feedback-critical", children: intl4.string(tmp(3868).IrMuew) };
-    const Text3 = tmp16(5624).Text;
-    intl4 = tmp16(1113).intl;
-    tmp15Result4 = tmp15(Text3, obj8);
+  let tmp13Result4 = null;
+  if (tmp8) {
+    let obj8 = { variant: "body-xs/normal", color: "text-feedback-critical", children: intl4.string(tmp16(4026).IrMuew) };
+    const Text3 = tmp14(5751).Text;
+    intl4 = tmp14(1113).intl;
+    tmp13Result4 = tmp13(Text3, obj8);
   }
-  items1[5] = tmp15Result4;
-  let obj9 = { text: intl5.string(tmp(3868).DUdtms), variant: "primary", loading: first1, disabled: !tmp12, onPress: callback };
-  let Button = tmp16(5634).Button;
-  intl5 = tmp16(1113).intl;
+  items1[5] = tmp13Result4;
+  let obj9 = { text: intl5.string(tmp16(4026).DUdtms), variant: "primary", loading: first1, disabled: !tmp10, onPress: callback };
+  let Button = tmp14(5758).Button;
+  intl5 = tmp14(1113).intl;
   items1[6] = c8(Button, obj9);
   return c8(ActionSheet, obj);
 };

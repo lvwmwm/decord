@@ -1,13 +1,13 @@
-// Module ID: 18897
-// Function ID: 18898
+// Module ID: 19272
+// Function ID: 19273
 // Name: VoiceChannelAppActionSheet
-// Dependencies: [19, 21, 1113, 3966, 18894, 5258, 7366, 7321, 7058, 7061, 18896, 2]
+// Dependencies: [19, 21, 1113, 4124, 19269, 5374, 7426, 7382, 7124, 7127, 19271, 2]
 // Exports: default
 
-// Module 18897 (VoiceChannelAppActionSheet)
-import _modDef3966 from "module_3966" /* 3966 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import VoiceChannelAppIconDefault from "VoiceChannelAppIcon" /* 18896 */;
+// Module 19272 (VoiceChannelAppActionSheet)
+import _modDef4124 from "module_4124" /* 4124 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
+import VoiceChannelAppIconDefault from "VoiceChannelAppIcon" /* 19271 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -35,7 +35,7 @@ export default function VoiceChannelAppActionSheet(guildId) {
   let tmp = onChange;
   let tmp2 = dependencyMap;
   guildId = guildId.guildId;
-  let obj = onChange(18894);
+  let obj = onChange(19269);
   const voiceChannelAppSettingOptions = obj.useVoiceChannelAppSettingOptions(guildId, selectedApplicationId);
   ({ options, listState } = voiceChannelAppSettingOptions);
   const items = [onChange];
@@ -50,11 +50,11 @@ export default function VoiceChannelAppActionSheet(guildId) {
     obj.hideActionSheet();
   }, items);
   const intl = onChange(1113).intl;
-  const stringResult = intl.string(_modDef3966.AdT7SZ);
-  const obj2 = { header: closure_4(onChange(7321).BottomSheetTitleHeader, { title: stringResult }), children: tmp8(TableRadioGroup, obj3) };
-  const ActionSheet = onChange(7366).ActionSheet;
+  const stringResult = intl.string(_modDef4124.AdT7SZ);
+  const obj2 = { header: closure_4(onChange(7382).BottomSheetTitleHeader, { title: stringResult }), children: tmp8(TableRadioGroup, obj3) };
+  const ActionSheet = onChange(7426).ActionSheet;
   obj3 = { accessibilityLabel: stringResult, value: selectedApplicationId, onChange: callback, helperText: stringResult1, hasIcons: true, children: items1 };
-  TableRadioGroup = onChange(7058).TableRadioGroup;
+  TableRadioGroup = onChange(7124).TableRadioGroup;
   tmp8 = closure_5;
   if (selectedApplicationId == null) {
     selectedApplicationId = none;
@@ -64,10 +64,10 @@ export default function VoiceChannelAppActionSheet(guildId) {
     stringResult1 = intl4.string(tmp(1113).t.ZTNur7);
   } else if ("failed" === listState) {
     const intl3 = tmp(1113).intl;
-    stringResult1 = intl3.string(tmp5(3966).X2xOBn);
+    stringResult1 = intl3.string(tmp5(4124).X2xOBn);
   } else if ("empty" === listState) {
     const intl2 = tmp(1113).intl;
-    stringResult1 = intl2.string(tmp5(3966)["4S6iHa"]);
+    stringResult1 = intl2.string(tmp5(4124)["4S6iHa"]);
   }
   items1 = [
     options.map((iconApplication) => {
@@ -81,8 +81,8 @@ export default function VoiceChannelAppActionSheet(guildId) {
     }),
 
   ];
-  const obj4 = { value: none, label: intl5.string(_modDef3966.KEB4Rm) };
-  let TableRadioRow = tmp(7061).TableRadioRow;
+  const obj4 = { value: none, label: intl5.string(_modDef4124.KEB4Rm) };
+  let TableRadioRow = tmp(7127).TableRadioRow;
   intl5 = tmp(1113).intl;
   items1[1] = closure_4(TableRadioRow, obj4);
   return closure_4(ActionSheet, obj2);

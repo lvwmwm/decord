@@ -1,27 +1,27 @@
-// Module ID: 16270
-// Function ID: 16271
+// Module ID: 16591
+// Function ID: 16592
 // Name: NotificationTokenManager
-// Dependencies: [17, 1246, 13977, 15521, 502, 16271, 1072, 1996, 572, 10914, 16274, 1242, 1113, 2868, 1375, 16275, 1252, 13976, 2]
+// Dependencies: [17, 1246, 14211, 15815, 502, 16592, 1072, 2120, 1377, 16595, 572, 11040, 16598, 1242, 1113, 2992, 16599, 1252, 14210, 2]
 
-// Module 16270 (NotificationTokenManager)
+// Module 16591 (NotificationTokenManager)
 import react_native from "react-native" /* 17 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import intl32 from "intl" /* 1113 */;
 import SentryUtilsDefault from "SentryUtils" /* 1242 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import PlatformUtils from "PlatformUtils" /* 1375 */;
-import _modDef2868 from "module_2868" /* 2868 */;
-import PushNotificationDefault from "PushNotification" /* 10914 */;
-import PushNotificationActionCreatorsDefault from "PushNotificationActionCreators" /* 13976 */;
-import NotificationSettingsConstants from "NotificationSettingsConstants" /* 16271 */;
-import NotifSettingsUtilsDefault from "NotifSettingsUtils" /* 16274 */;
-import react_nativeDefault from "react-native" /* 16275 */;
+import PlatformUtils from "PlatformUtils" /* 1377 */;
+import _modDef2992 from "module_2992" /* 2992 */;
+import PushNotificationDefault from "PushNotification" /* 11040 */;
+import PushNotificationActionCreatorsDefault from "PushNotificationActionCreators" /* 14210 */;
+import NotificationSettingsConstants from "NotificationSettingsConstants" /* 16592 */;
+import NotifSettingsUtilsDefault from "NotifSettingsUtils" /* 16598 */;
+import react_nativeDefault from "react-native" /* 16599 */;
 import ApexExperimentStore from "ApexExperimentStore" /* 1246 */;
-import MultiAccountStore from "MultiAccountStore" /* 13977 */;
-import MultiAccountSwitchStore from "MultiAccountSwitchStore" /* 15521 */;
+import MultiAccountStore from "MultiAccountStore" /* 14211 */;
+import MultiAccountSwitchStore from "MultiAccountSwitchStore" /* 15815 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import LifecycleManager from "LifecycleManager" /* 1996 */;
+import LifecycleManager from "LifecycleManager" /* 2120 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -33,6 +33,7 @@ class NotificationTokenManager extends LifecycleManager {
   constructor() {
     const applyArgumentsResult = HermesBuiltin.applyArguments(this, new.target);
     require = applyArgumentsResult;
+    applyArgumentsResult._denylistUnsubscribe = null;
     applyArgumentsResult._experimentUnsubscribe = null;
     applyArgumentsResult.token = null;
     applyArgumentsResult.hasRegisterEventListener = false;
@@ -107,37 +108,48 @@ class NotificationTokenManager extends LifecycleManager {
   }
   _initialize() {
     const self = this;
-    if (null != this.token) {
+    const obj = self(1377);
+    const tmp = self;
+    if (obj.isAndroid()) {
+      const tmpResult = tmp(16595);
+      self._denylistUnsubscribe = tmpResult.initializeClientNotifDenylist();
+    }
+    if (null != self.token) {
       self.handleToken(self.token);
     }
     ApexExperimentStore.addChangeListener(self._handleExperimentsUpdated);
     self._experimentUnsubscribe = () => {
       ApexExperimentStore.removeChangeListener(self._handleExperimentsUpdated);
     };
-    const obj = DispatcherDefault;
-    const subscription = obj.subscribe("LOGIN_SUCCESS", self.handleSyncNoMultiAccountOnLoginSuccess);
-    const obj2 = DispatcherDefault;
-    const subscription1 = obj2.subscribe("REGISTER_SUCCESS", self.handleSyncNoMultiAccountOnRegisterSuccess);
     const obj3 = DispatcherDefault;
-    const subscription2 = obj3.subscribe("POST_CONNECTION_OPEN", self.handleSyncNoMultiAccountOnPostConnectionOpen);
+    const subscription = obj3.subscribe("LOGIN_SUCCESS", self.handleSyncNoMultiAccountOnLoginSuccess);
     const obj4 = DispatcherDefault;
-    const subscription3 = obj4.subscribe("POST_CONNECTION_OPEN", self.handleSyncWithMultiAccount);
+    const subscription1 = obj4.subscribe("REGISTER_SUCCESS", self.handleSyncNoMultiAccountOnRegisterSuccess);
     const obj5 = DispatcherDefault;
-    const subscription4 = obj5.subscribe("MULTI_ACCOUNT_REMOVE_ACCOUNT", self.handleSyncWithMultiAccount);
+    const subscription2 = obj5.subscribe("POST_CONNECTION_OPEN", self.handleSyncNoMultiAccountOnPostConnectionOpen);
+    const obj6 = DispatcherDefault;
+    const subscription3 = obj6.subscribe("POST_CONNECTION_OPEN", self.handleSyncWithMultiAccount);
+    const obj7 = DispatcherDefault;
+    const subscription4 = obj7.subscribe("MULTI_ACCOUNT_REMOVE_ACCOUNT", self.handleSyncWithMultiAccount);
   }
   _terminate() {
     const self = this;
+    const _denylistUnsubscribe = this._denylistUnsubscribe;
+    if (_denylistUnsubscribe != null) {
+      _denylistUnsubscribe();
+    }
+    self._denylistUnsubscribe = null;
     const obj = DispatcherDefault;
-    obj.unsubscribe("LOGIN_SUCCESS", this.handleSyncNoMultiAccountOnLoginSuccess);
+    obj.unsubscribe("LOGIN_SUCCESS", self.handleSyncNoMultiAccountOnLoginSuccess);
     const obj2 = DispatcherDefault;
-    obj2.unsubscribe("REGISTER_SUCCESS", this.handleSyncNoMultiAccountOnRegisterSuccess);
+    obj2.unsubscribe("REGISTER_SUCCESS", self.handleSyncNoMultiAccountOnRegisterSuccess);
     const obj3 = DispatcherDefault;
-    obj3.unsubscribe("POST_CONNECTION_OPEN", this.handleSyncNoMultiAccountOnPostConnectionOpen);
+    obj3.unsubscribe("POST_CONNECTION_OPEN", self.handleSyncNoMultiAccountOnPostConnectionOpen);
     const obj4 = DispatcherDefault;
-    obj4.unsubscribe("POST_CONNECTION_OPEN", this.handleSyncWithMultiAccount);
+    obj4.unsubscribe("POST_CONNECTION_OPEN", self.handleSyncWithMultiAccount);
     const obj5 = DispatcherDefault;
-    obj5.unsubscribe("MULTI_ACCOUNT_REMOVE_ACCOUNT", this.handleSyncWithMultiAccount);
-    if (null != this._experimentUnsubscribe) {
+    obj5.unsubscribe("MULTI_ACCOUNT_REMOVE_ACCOUNT", self.handleSyncWithMultiAccount);
+    if (null != self._experimentUnsubscribe) {
       const result = self._experimentUnsubscribe();
       self._experimentUnsubscribe = null;
     }
@@ -206,7 +218,7 @@ class NotificationTokenManager extends LifecycleManager {
     const registerNotificationCategories = NativeModules.DCDNotificationCategoryUtils.registerNotificationCategories;
     const registerNotificationCategoriesAndGroups = NativeModules.DCDNotificationCategoryUtils.registerNotificationCategoriesAndGroups;
     if (null != registerNotificationCategoriesAndGroups) {
-      const obj = { calls: intl.string(_modDef2868["IUH/Oe"]), mediaConnections: intl2.string(_modDef2868.VeBD1N), messages: intl3.string(_modDef2868["4qWUAO"]), directMessages: intl4.string(_modDef2868.NGdNZb), friendRequests: intl5.string(_modDef2868.NxgGZA), polls: intl6.string(_modDef2868.MOjygY), social: intl7.string(_modDef2868["UzRF+8"]), stageLive: intl8.string(_modDef2868["4n388K"]), guildEventLive: intl9.string(_modDef2868["40TIqW"]), guildHighlights: intl10.string(intl32.t.p5jg9S), forumThreadCreated: intl11.string(_modDef2868.HibKoy), systemMessages: intl12.string(_modDef2868.zJlwvV), other: intl13.string(_modDef2868.kIrLfg), default: intl14.string(_modDef2868["T+79Eo"]), reactions: intl15.string(intl32.t.gHp0C4) };
+      const obj = { calls: intl.string(_modDef2992["IUH/Oe"]), mediaConnections: intl2.string(_modDef2992.VeBD1N), messages: intl3.string(_modDef2992["4qWUAO"]), directMessages: intl4.string(_modDef2992.NGdNZb), friendRequests: intl5.string(_modDef2992.NxgGZA), polls: intl6.string(_modDef2992.MOjygY), social: intl7.string(_modDef2992["UzRF+8"]), stageLive: intl8.string(_modDef2992["4n388K"]), guildEventLive: intl9.string(_modDef2992["40TIqW"]), guildHighlights: intl10.string(intl32.t.p5jg9S), forumThreadCreated: intl11.string(_modDef2992.HibKoy), systemMessages: intl12.string(_modDef2992.zJlwvV), other: intl13.string(_modDef2992.kIrLfg), default: intl14.string(_modDef2992["T+79Eo"]), reactions: intl15.string(intl32.t.gHp0C4) };
       intl = intl32.intl;
       intl2 = intl32.intl;
       intl3 = intl32.intl;
@@ -222,7 +234,7 @@ class NotificationTokenManager extends LifecycleManager {
       intl13 = intl32.intl;
       intl14 = intl32.intl;
       intl15 = intl32.intl;
-      const obj2 = { realtime: intl16.string(_modDef2868.S5cB9e), social: intl17.string(_modDef2868["UzRF+8"]), server: intl18.string(_modDef2868.zRKbpz), other: intl19.string(_modDef2868.q5M7HV) };
+      const obj2 = { realtime: intl16.string(_modDef2992.S5cB9e), social: intl17.string(_modDef2992["UzRF+8"]), server: intl18.string(_modDef2992.zRKbpz), other: intl19.string(_modDef2992.q5M7HV) };
       intl16 = intl32.intl;
       intl17 = intl32.intl;
       intl18 = intl32.intl;

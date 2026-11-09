@@ -1,16 +1,16 @@
-// Module ID: 12590
-// Function ID: 12591
+// Module ID: 12793
+// Function ID: 12794
 // Name: ConjureTimelineTree
-// Dependencies: [32, 3868, 1113, 2]
+// Dependencies: [32, 4026, 1113, 2]
 // Exports: currentStep, describeNode, endsWithStreamedMessage, latestTodos, streamedContent, streamedMessages, turnLifecycle, turnSegments
 
-// Module 12590 (ConjureTimelineTree)
+// Module 12793 (ConjureTimelineTree)
 import intl2 from "intl" /* 1113 */;
-import _modDef3868 from "module_3868" /* 3868 */;
+import _modDef4026 from "module_4026" /* 4026 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
-let error, map, map1, set, set2;
+let error, map, map1, map2, set, set2;
 
 function isLegacyControlLineNode(label_key) {
   label_key = undefined;
@@ -149,7 +149,7 @@ function buildTimelineTree(steps, arg1) {
   map = new Map();
   map1 = new Map();
   let sum1 = 0;
-  const map2 = new Map();
+  map2 = new Map();
   const map3 = new Map();
   const segmentOf = ensure(steps).segmentOf;
   let closure_9 = cancelledLaneIds(steps);
@@ -599,7 +599,7 @@ function isTurnWorkFrame(task_id) {
   }
   return tmp;
 }
-let obj = { healthcheck_failed: _modDef3868.iwOTgo, preview_ready: _modDef3868.okkgSB, working: _modDef3868.t8skVB, error: _modDef3868.avt0ax, error_service_unavailable: _modDef3868.yreXyD, error_rate_limited: _modDef3868.d8lNBq, error_timeout: _modDef3868.t1R7Rt, error_usage_limit: _modDef3868["9zBM8L"], error_internal_error: _modDef3868.ZnbiGS };
+let obj = { healthcheck_failed: _modDef4026.iwOTgo, preview_ready: _modDef4026.okkgSB, working: _modDef4026.t8skVB, error: _modDef4026.avt0ax, error_service_unavailable: _modDef4026.yreXyD, error_rate_limited: _modDef4026.d8lNBq, error_timeout: _modDef4026.t1R7Rt, error_usage_limit: _modDef4026["9zBM8L"], error_internal_error: _modDef4026.ZnbiGS };
 const weakMap = new WeakMap();
 const weakMap1 = new WeakMap();
 let result = size.fileFinishedImporting("modules/conjure/agent_activity/ConjureTimelineTree.tsx");
@@ -624,7 +624,7 @@ export function describeNode(currentStepResult) {
   const intl = intl2.intl;
   const string = intl.string;
   if (t8skVB == null) {
-    t8skVB = _modDef3868.t8skVB;
+    t8skVB = _modDef4026.t8skVB;
   }
   return string(t8skVB);
 }

@@ -1,80 +1,105 @@
-// Module ID: 18557
-// Function ID: 18558
+// Module ID: 18915
+// Function ID: 18916
 // Name: useICYMIItems
-// Dependencies: [19, 8906, 8919, 504, 8924, 2]
+// Dependencies: [19, 8980, 8993, 9000, 504, 8998, 2]
 // Exports: default
 
-// Module 18557 (useICYMIItems)
-import ICYMITypes from "ICYMITypes" /* 8919 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8924 */;
+// Module 18915 (useICYMIItems)
+import ICYMITypes from "ICYMITypes" /* 8993 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8998 */;
 import react from "react" /* 19 */;
-import ICYMIStore from "ICYMIStore" /* 8906 */;
+import ICYMIStore from "ICYMIStore" /* 8980 */;
 import size from "module_2" /* 2 */;
 
-function createItem(id, type, unread) {
+function createItem(id, type, unread, arg3, fn) {
   let obj3;
   let obj5;
+  let obj9;
   type = type.type;
   if (ICYMITypes.ICYMIItemTypes.MESSAGE === type) {
     if (type.message.id === type.message.channel_id) {
       let obj4;
       if (null != type.threadChannel) {
-        const _Date5 = Date;
+        const _Date6 = Date;
         const obj2 = { id: id.id, timestamp: Date.now(), channelType: id.data.channel_type, data: obj3, score: id.score, debugScore: JSON.stringify(id.score_components), unread };
         obj3 = { kind: "forumThread", message: null, threadChannel: null };
-        ({ message: obj9.message, threadChannel: obj9.threadChannel } = type);
-        const _JSON5 = JSON;
+        ({ message: obj11.message, threadChannel: obj11.threadChannel } = type);
+        const _JSON6 = JSON;
         obj4 = obj2;
       }
       return obj4;
     }
     obj4 = { id: id.id, timestamp: Date.now(), channelType: id.data.channel_type, data: obj5, score: id.score, debugScore: JSON.stringify(id.score_components), unread };
-    const _Date4 = Date;
-    const _JSON4 = JSON;
+    const _Date5 = Date;
+    const _JSON5 = JSON;
     obj5 = { kind: "message", message: type.message, mentioned: id.data.has_mention, messageContext: id.data.message_context };
   } else {
     if (ICYMITypes.ICYMIItemTypes.ACTIVITY !== type) {
       if (ICYMITypes.ICYMIItemTypes.CUSTOM_STATUS !== type) {
         if (ICYMITypes.ICYMIItemTypes.GUILD_EVENT === type) {
-          const _Date2 = Date;
+          const _Date3 = Date;
           const obj6 = { id: id.id, timestamp: Date.now(), data: obj7, score: id.score, debugScore: JSON.stringify(id.score_components), unread };
-          const _JSON2 = JSON;
+          const _JSON3 = JSON;
           return obj6;
         } else if (ICYMITypes.ICYMIItemTypes.RECOMMENDED_GUILDS === type) {
-          const _Date = Date;
-          const _JSON = JSON;
-          const obj = { id: id.id, timestamp: Date.now(), data: { kind: "recommendedGuilds" }, score: id.score, debugScore: JSON.stringify(id.score_components), unread };
-          return obj;
+          const _Date2 = Date;
+          const _JSON2 = JSON;
+          const obj8 = { id: id.id, timestamp: Date.now(), data: { kind: "recommendedGuilds" }, score: id.score, debugScore: JSON.stringify(id.score_components), unread };
+          return obj8;
+        } else if (ICYMITypes.ICYMIItemTypes.DISCOVER_ITEM === type) {
+          let tmp6 = null;
+          if (arg3) {
+            let tmp8;
+            if (fn != null) {
+              tmp8 = fn(type.card);
+            }
+            tmp6 = null;
+            if (false !== tmp8) {
+              const _Date = Date;
+              const obj = { id: id.id, timestamp: Date.now(), data: obj9, score: id.score, debugScore: JSON.stringify(id.score_components), unread };
+              const _JSON = JSON;
+              tmp6 = obj;
+              obj9 = { kind: "waterwheelsItem", card: type.card };
+            }
+          }
+          return tmp6;
         } else {
           return null;
         }
       }
     }
-    const _Date3 = Date;
-    const obj8 = { id: id.id, timestamp: Date.now(), data: obj17, score: id.score, debugScore: JSON.stringify(id.score_components), unread };
-    const _JSON3 = JSON;
-    return obj8;
+    const _Date4 = Date;
+    const obj10 = { id: id.id, timestamp: Date.now(), data: obj21, score: id.score, debugScore: JSON.stringify(id.score_components), unread };
+    const _JSON4 = JSON;
+    return obj10;
   }
 }
 const result = size.fileFinishedImporting("modules/icymi/useICYMIItems.tsx");
 
 export default function useICYMIItems() {
+  let obj = arg0;
+  if (arg0 === undefined) {
+    obj = {};
+  }
+  const isWaterwheelsCardEligible = obj.isWaterwheelsCardEligible;
   let stateFromStores1;
-  let obj = stateFromStores1(504);
+  const obj2 = stateFromStores1(9000);
+  const waterwheelsDiscoverEnabled = obj2.useWaterwheelsDiscoverEnabled("icymi_items");
   const items = [ICYMIStore];
-  const stateFromStores = obj.useStateFromStores(items, () => ICYMIStore.getUnreadDisplayItems());
-  const items1 = [ICYMIStore];
-  const obj2 = stateFromStores1(504);
-  stateFromStores1 = obj2.useStateFromStores(items1, () => ICYMIStore.getReadDisplayItems());
-  const items2 = [ICYMIStore];
   const obj3 = stateFromStores1(504);
-  const stateFromStores2 = obj3.useStateFromStores(items2, () => ICYMIStore.getNextIndexToHydrate());
-  const items3 = [ICYMIStore];
+  const stateFromStores = obj3.useStateFromStores(items, () => ICYMIStore.getUnreadDisplayItems());
+  const items1 = [ICYMIStore];
   const obj4 = stateFromStores1(504);
-  const stateFromStoresObject = obj4.useStateFromStoresObject(items3, () => ICYMIStore.getHydratedItems());
-  const items4 = [ICYMIStore];
+  stateFromStores1 = obj4.useStateFromStores(items1, () => ICYMIStore.getReadDisplayItems());
+  const items2 = [ICYMIStore];
   const obj5 = stateFromStores1(504);
-  const stateFromStores3 = obj5.useStateFromStores(items4, () => ICYMIStore.getMissingItems());
+  const stateFromStores2 = obj5.useStateFromStores(items2, () => ICYMIStore.getNextIndexToHydrate());
+  const items3 = [ICYMIStore];
+  const obj6 = stateFromStores1(504);
+  const stateFromStoresObject = obj6.useStateFromStoresObject(items3, () => ICYMIStore.getHydratedItems());
+  const items4 = [ICYMIStore];
+  const obj7 = stateFromStores1(504);
+  const stateFromStores3 = obj7.useStateFromStores(items4, () => ICYMIStore.getMissingItems());
   const items5 = [stateFromStores1];
   const effect = react.useEffect(() => {
     let closure_0 = Date.now() + stateFromStores1.length;
@@ -93,28 +118,29 @@ export default function useICYMIItems() {
     num = 0;
     if (0 < stateFromStores2) {
       while (true) {
-        let tmp6 = stateFromStores[num3];
-        if (!stateFromStores3[tmp6.id]) {
-          let tmp9 = stateFromStoresObject[tmp6.id];
-          let tmp10 = null == tmp9;
-          if (tmp10) {
-            tmp10 = tmp6.type === stateFromStores1(8919).ICYMIItemTypes.MESSAGE;
+        let tmp7 = stateFromStores[num3];
+        if (!stateFromStores3[tmp7.id]) {
+          let tmp10 = stateFromStoresObject[tmp7.id];
+          let tmp11 = null == tmp10;
+          if (tmp11) {
+            tmp11 = tmp7.type === stateFromStores1(8993).ICYMIItemTypes.MESSAGE;
           }
-          if (tmp10) {
-            let message_context = tmp6.data.message_context;
+          if (tmp11) {
+            let message_context = tmp7.data.message_context;
             let reference_message_id;
             if (message_context != null) {
               reference_message_id = message_context.reference_message_id;
             }
-            tmp10 = null != reference_message_id;
+            tmp11 = null != reference_message_id;
           }
-          if (tmp10) {
-            tmp9 = stateFromStoresObject[tmp6.data.message_id];
+          if (tmp11) {
+            tmp10 = stateFromStoresObject[tmp7.data.message_id];
           }
-          if (null != tmp9) {
-            let tmp15 = createItem(tmp6, tmp9, true);
-            if (null != tmp15) {
-              let arr = items6.push(tmp15);
+          if (null != tmp10) {
+            let flag = true;
+            let tmp20 = createItem(tmp7, tmp10, true, waterwheelsDiscoverEnabled, isWaterwheelsCardEligible);
+            if (null != tmp20) {
+              let arr = items6.push(tmp20);
             }
           }
         }
@@ -136,40 +162,41 @@ export default function useICYMIItems() {
   }
   const items7 = [];
   if (0 < stateFromStores1.length) {
-    let num5 = 0;
+    let num7 = 0;
     if (num < stateFromStores2) {
       while (true) {
-        let tmp19 = stateFromStores1[num5];
-        if (!stateFromStores3[tmp19.id]) {
-          let tmp22 = stateFromStoresObject[tmp19.id];
-          let tmp23 = null == tmp22;
-          if (tmp23) {
-            tmp23 = tmp19.type === stateFromStores1(8919).ICYMIItemTypes.MESSAGE;
+        let tmp24 = stateFromStores1[num7];
+        if (!stateFromStores3[tmp24.id]) {
+          let tmp27 = stateFromStoresObject[tmp24.id];
+          let tmp28 = null == tmp27;
+          if (tmp28) {
+            tmp28 = tmp24.type === stateFromStores1(8993).ICYMIItemTypes.MESSAGE;
           }
-          if (tmp23) {
-            let message_context2 = tmp19.data.message_context;
+          if (tmp28) {
+            let message_context2 = tmp24.data.message_context;
             let reference_message_id1;
             if (message_context2 != null) {
               reference_message_id1 = message_context2.reference_message_id;
             }
-            tmp23 = null != reference_message_id1;
+            tmp28 = null != reference_message_id1;
           }
-          if (tmp23) {
-            tmp22 = stateFromStoresObject[tmp19.data.message_id];
+          if (tmp28) {
+            tmp27 = stateFromStoresObject[tmp24.data.message_id];
           }
-          if (null != tmp22) {
-            let tmp28 = createItem(tmp19, tmp22, false);
-            if (null != tmp28) {
-              let arr2 = items7.push(tmp28);
+          if (null != tmp27) {
+            let flag2 = false;
+            let tmp37 = createItem(tmp24, tmp27, false, waterwheelsDiscoverEnabled, isWaterwheelsCardEligible);
+            if (null != tmp37) {
+              let arr2 = items7.push(tmp37);
             }
           }
         }
-        let sum2 = num5 + 1;
+        let sum2 = num7 + 1;
         if (sum2 >= stateFromStores1.length) {
           break;
         } else {
           num = num + 1;
-          num5 = sum2;
+          num7 = sum2;
           if (num >= stateFromStores2) {
             break;
           }
@@ -177,5 +204,5 @@ export default function useICYMIItems() {
       }
     }
   }
-  return { unreadItems: items6, readItems: items7, allUnreadItemsHydrated: stateFromStores2 >= stateFromStores.length };
+  return { unreadItems: items6, readItems: items7, allUnreadItemsHydrated: stateFromStores2 >= stateFromStores.length, allItemsHydrated: stateFromStores2 >= stateFromStores.length + stateFromStores1.length, discoverEnabled: waterwheelsDiscoverEnabled };
 };

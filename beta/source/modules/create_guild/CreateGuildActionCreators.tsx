@@ -1,12 +1,12 @@
-// Module ID: 13868
-// Function ID: 13869
+// Module ID: 14102
+// Function ID: 14103
 // Name: create_guild/CreateGuildActionCreators
-// Dependencies: [5, 1072, 6747, 1260, 6446, 2]
+// Dependencies: [5, 1072, 6802, 1260, 7559, 7566, 6579, 2]
 
-// Module 13868 (create_guild/CreateGuildActionCreators)
+// Module 14102 (create_guild/CreateGuildActionCreators)
 import Constants from "Constants" /* 1072 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6747 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6802 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ let obj = function _createGuildFromTemplate() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -46,10 +46,11 @@ let obj = function _createGuildFromTemplate() {
             } else {
               closure_6 = tmp;
               closure_5 = tmp4;
+              name = undefined;
               c8 = 1;
               const request = { url: constants.GUILDS, body: obj4, trackedActionData: obj5, rejectWithError: false };
               obj4 = { name, icon, channels: null, system_channel_id: null, roles: null, guild_template_code: null, staff_only };
-              ({ channels: obj9.channels, system_channel_id: obj9.system_channel_id, roles: obj9.roles, code: obj9.guild_template_code } = id);
+              ({ channels: obj10.channels, system_channel_id: obj10.system_channel_id, roles: obj10.roles, code: obj10.guild_template_code } = id);
               const post = TrackedHTTPUtilsDefault.post;
               TrackedHTTPUtilsDefault;
               obj5 = { event: discord_common_AnalyticsUtils.NetworkActionNames.GUILD_CREATE, properties: obj6 };
@@ -61,10 +62,10 @@ let obj = function _createGuildFromTemplate() {
             }
           } else if (1 === c9) {
             c8 = 0;
-            name = closure_7;
+            icon = closure_7;
             const self = this;
             const self2 = this;
-            const aPIError = new closure_134_0(closure_134_2[4]).APIError(name);
+            const aPIError = new closure_134_0(closure_134_2[6]).APIError(icon);
             throw aPIError;
           } else if (arg0 === 1) {
             c10 = 3;
@@ -74,15 +75,18 @@ let obj = function _createGuildFromTemplate() {
             c10 = 3;
             return { value, done: true };
           } else {
+            name = value;
+            obj = closure_134_1(closure_134_2[4]);
+            obj.fireSurveyAction(closure_134_0(closure_134_2[5]).SurveyActionTypes.GUILD_CREATED);
             c8 = 0;
             c10 = 3;
-            return { value: value.body, done: true };
+            return { value: name.body, done: true };
           }
-        } catch (tmp17) {
-          closure_7 = tmp17;
+        } catch (tmp25) {
+          closure_7 = tmp25;
           if (0 === c8) {
             c10 = 3;
-            throw tmp17;
+            throw tmp25;
           } else {
             c9 = 1;
           }

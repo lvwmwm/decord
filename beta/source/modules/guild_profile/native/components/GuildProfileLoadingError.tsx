@@ -1,20 +1,20 @@
-// Module ID: 14736
-// Function ID: 14737
+// Module ID: 14966
+// Function ID: 14967
 // Name: GuildProfileLoadingError
-// Dependencies: [19, 17, 21, 9299, 5253, 5596, 575, 5587, 8026, 5624, 1113, 6980, 2]
+// Dependencies: [19, 17, 21, 9380, 5369, 5724, 575, 5715, 8096, 5751, 1113, 7043, 2]
 // Exports: default
 
-// Module 14736 (GuildProfileLoadingError)
+// Module 14966 (GuildProfileLoadingError)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
-import useThemeDefault from "useTheme" /* 5253 */;
-import LinearGradientDefault from "LinearGradient" /* 5587 */;
-import useToken from "useToken" /* 5596 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import Pressables from "Pressables" /* 6980 */;
-import WarningIcon3 from "WarningIcon" /* 8026 */;
-import GuildProfileView from "GuildProfileView" /* 9299 */;
+import useThemeDefault from "useTheme" /* 5369 */;
+import LinearGradientDefault from "LinearGradient" /* 5715 */;
+import useToken from "useToken" /* 5724 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import Pressables from "Pressables" /* 7043 */;
+import WarningIcon3 from "WarningIcon" /* 8096 */;
+import GuildProfileView from "GuildProfileView" /* 9380 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -65,7 +65,7 @@ export default function GuildProfileLoadingError(onRetry) {
   const obj13 = { size: "sm", color: nativeDefault.colors.TEXT_FEEDBACK_WARNING };
   const WarningIcon2 = WarningIcon3.WarningIcon;
   items2 = [React3(WarningIcon2, obj13), ];
-  const obj14 = { variant: "text-sm/normal", color: "text-feedback-warning", children: intl3.string(intl4.t.tmGHjc) };
+  const obj14 = { variant: "body-sm/normal", color: "text-feedback-warning", children: intl3.string(intl4.t.tmGHjc) };
   const Text2 = Text_Text.Text;
   intl3 = intl4.intl;
   items2[1] = React3(Text2, obj14);

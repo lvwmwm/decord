@@ -1,39 +1,37 @@
-// Module ID: 13835
-// Function ID: 13836
+// Module ID: 14069
+// Function ID: 14070
 // Name: MemberActionChatInputBanner
-// Dependencies: [32, 19, 17, 5015, 6796, 4863, 4926, 1072, 1386, 21, 5014, 575, 563, 5652, 5624, 1113, 1187, 13231, 5717, 1409, 4960, 13836, 7399, 5095, 5254, 13837, 6980, 1099, 13834, 7397, 2]
+// Dependencies: [32, 19, 17, 5141, 6851, 4989, 5052, 1072, 1388, 21, 5140, 575, 563, 5776, 5751, 1113, 1187, 13428, 5842, 1411, 5086, 14070, 7463, 1652, 5370, 14071, 7043, 1099, 14068, 7461, 2]
 
-// Module 13835 (MemberActionChatInputBanner)
+// Module 14069 (MemberActionChatInputBanner)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl4 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import EmojiConstants from "EmojiConstants" /* 1386 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1409 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4960 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
-import timing from "timing" /* 5254 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import useChannelNameDefault from "useChannelName" /* 5652 */;
-import FastImageDefault from "FastImage" /* 5717 */;
-import Pressables from "Pressables" /* 6980 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13231 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 13834 */;
-import MemberActionUtils from "MemberActionUtils" /* 13836 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 13837 */;
+import EmojiConstants from "EmojiConstants" /* 1388 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 5086 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import useChannelNameDefault from "useChannelName" /* 5776 */;
+import FastImageDefault from "FastImage" /* 5842 */;
+import Pressables from "Pressables" /* 7043 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13428 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 14068 */;
+import MemberActionUtils from "MemberActionUtils" /* 14070 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 14071 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5015 */;
-import EmojiStore from "EmojiStore" /* 6796 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
-import GuildMemberStore from "GuildMemberStore" /* 4926 */;
+import AccessibilityStore from "AccessibilityStore" /* 5141 */;
+import EmojiStore from "EmojiStore" /* 6851 */;
+import ChannelStore from "ChannelStore" /* 4989 */;
+import GuildMemberStore from "GuildMemberStore" /* 5052 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let importDefault;
+let easing, importDefault;
 
 let closure_12;
 let closure_14;
@@ -43,7 +41,7 @@ let obj3;
 let size;
 let size1;
 let tmp;
-const GuildOnboardingHomeTypes = tmp(7399);
+const GuildOnboardingHomeTypes = tmp(7463);
 function ActionChannelInfo(action) {
   let MkzlDL;
   let format;
@@ -57,10 +55,10 @@ function ActionChannelInfo(action) {
   const obj = action(563);
   const stateFromStores = obj.useStateFromStores(items, () => ChannelStore.getChannel(action.channelId));
   const tmp4 = useChannelNameDefault(stateFromStores, true);
-  const Text = action(5624).Text;
+  const Text = action(5751).Text;
   const tmp5 = closure_12;
   if (null == stateFromStores) {
-    const obj2 = { variant: "text-xxs/normal", color: "text-default", children: format(MkzlDL, obj3) };
+    const obj2 = { variant: "footnote/normal", color: "text-default", children: format(MkzlDL, obj3) };
     const intl2 = tmp(1113).intl;
     format = intl2.format;
     obj3 = { channelName: intl3.string(action(1113).t.J90oLW) };
@@ -68,7 +66,7 @@ function ActionChannelInfo(action) {
     intl3 = tmp(1113).intl;
     obj4 = obj2;
   } else {
-    obj4 = { variant: "text-xxs/normal", color: "text-default", children: intl.format(action(1113).t.MkzlDL, obj5) };
+    obj4 = { variant: "footnote/normal", color: "text-default", children: intl.format(action(1113).t.MkzlDL, obj5) };
     intl = tmp(1113).intl;
     obj5 = { channelName: tmp4 };
   }
@@ -122,8 +120,8 @@ function ChannelActionEmoji(emoji) {
       tmp2Result = tmp6;
       const tmp5Result6 = UnicodeEmojisDefault;
       if (null != getByName(tmp5Result6.convertSurrogateToName(name, false))) {
-        const obj6 = { style: tmp.textEmoji, variant: "heading-lg/normal", children: name };
-        tmp2Result = tmp2(tmp3(5624).Text, obj6);
+        const obj6 = { style: tmp.textEmoji, variant: "heading-lg/medium", children: name };
+        tmp2Result = tmp2(tmp3(5751).Text, obj6);
       }
     }
   }
@@ -131,18 +129,33 @@ function ChannelActionEmoji(emoji) {
 }
 function MemberActionChatInputBanner(channel) {
   let closure_1;
-  let items5;
-  let items6;
-  let items7;
+  let closure_5;
+  let items10;
+  let items11;
+  let items9;
+  let tmp23;
+  let tmp24;
+  let tmp25;
+  let tmp26;
+  let tmp27;
+  let tmp28;
+  let tmp29;
+  let tmp32;
+  let tmp33;
+  let tmp34;
+  let tmp35;
+  let tmp36;
+  let tmp37;
+  let tmp38;
+  let tmp39;
   channel = channel.channel;
   let channelAction;
   let nextMemberAction;
-  let stateFromStores;
-  let useReducedMotion;
+  easing = undefined;
   let first;
-  let closure_8;
+  let closure_7;
   let first1;
-  let closure_10;
+  let closure_9;
   let sharedValue;
   let sharedValue1;
   let tmp = closure_15();
@@ -161,22 +174,22 @@ function MemberActionChatInputBanner(channel) {
     channelId = channelAction.channelId;
   }
   nextMemberAction = useNextMemberAction(guild_id, channelId);
-  let items = [useReducedMotion];
+  let items = [first];
   const tmp2Result = tmp2(tmp3[12]);
-  stateFromStores = tmp2Result.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
+  const stateFromStores = tmp2Result.useStateFromStores(items, () => first.useReducedMotion);
   let actionType;
   if (channelAction != null) {
     actionType = channelAction.actionType;
   }
   const tmp10 = actionType === tmp2(tmp3[22]).NewMemberActionTypes.VIEW;
-  useReducedMotion = tmp10;
+  easing = tmp10;
   let obj3 = nextMemberAction;
   const tmp11 = completed(nextMemberAction.useState(tmp2(tmp3[22]).CHANNEL_ACTION_BANNER_HEIGHT), 2);
   first = tmp11[0];
-  closure_8 = tmp13;
+  closure_7 = tmp13;
   const tmp14 = completed(nextMemberAction.useState(tmp2(tmp3[22]).CHANNEL_ACTION_BANNER_HEIGHT), 2);
   first1 = tmp14[0];
-  closure_10 = tmp16;
+  closure_9 = tmp16;
   const tmp2Result5 = tmp2(tmp3[23]);
   sharedValue = tmp2Result5.useSharedValue(0);
   let num = 0;
@@ -190,7 +203,7 @@ function MemberActionChatInputBanner(channel) {
   const effect = obj3.useEffect(() => {
     const tmp = completed;
     if (!tmp) {
-      const tmp2 = useReducedMotion;
+      const tmp2 = closure_5;
       if (!tmp2) {
         const result = sharedValue.set(first);
       }
@@ -207,74 +220,94 @@ function MemberActionChatInputBanner(channel) {
     }
     const result1 = sharedValue1.set(0);
   }, items2);
-  const tmp2Result7 = tmp2(tmp3[23]);
-  class H {
+  const items3 = [closure_18, stateFromStores, sharedValue, , , , ];
+  const useAnimatedStyle = tmp2(tmp3[23]).useAnimatedStyle;
+  tmp2(tmp3[23]);
+  items3[3] = tmp2(tmp3[23]).withDelay;
+  items3[4] = completed;
+  items3[5] = tmp2(tmp3[24]).withTiming;
+  items3[6] = tmp2(tmp3[16]).DECELERATED_EASING;
+  let c0;
+  let c1;
+  let c2;
+  let c3;
+  let c4;
+  let c5;
+  [tmp23, tmp24, tmp25, tmp26, tmp27, tmp28, tmp29] = items3;
+  class MemberActionChatInputBannerTsx1 {
     constructor() {
-      let tmp8;
+      let tmp6;
       const obj = { height: null };
-      if (stateFromStores) {
-        obj.height = sharedValue.get();
-        tmp8 = obj;
+      if (c0) {
+        obj.height = _undefined.get();
+        tmp6 = obj;
       } else {
         let num = 200;
-        const withDelay = ReanimatedRexport.withDelay;
-        ReanimatedRexport;
-        if (completed) {
+        const tmp = c2;
+        if (c3) {
           num = 800;
         }
-        const withTiming = timing.withTiming;
-        const obj2 = { duration: 400, easing: native.DECELERATED_EASING };
-        timing;
-        const value = sharedValue.get();
-        obj.height = withDelay(num, withTiming(value, obj2));
-        tmp8 = obj;
+        const obj2 = { duration: 400, easing };
+        obj.height = tmp(num, _undefined2(_undefined.get(), obj2));
+        tmp6 = obj;
       }
-      return tmp8;
+      return tmp6;
     }
   }
-  let obj2 = { useReducedMotion: stateFromStores, height: sharedValue, withDelay: tmp2(tmp3[23]).withDelay, completed, withTiming: tmp2(tmp3[24]).withTiming, DECELERATED_EASING: tmp2(tmp3[16]).DECELERATED_EASING };
-  H.__closure = obj2;
-  H.__workletHash = 5585837927201;
-  H.__initData = __initData;
-  const animatedStyle = tmp2Result7.useAnimatedStyle(H);
-  const tmp2Result8 = tmp2(tmp3[23]);
-  class B {
+  const items4 = [tmp24, tmp25, tmp26, tmp27, tmp28, tmp29];
+  MemberActionChatInputBannerTsx1.__closure = items4;
+  MemberActionChatInputBannerTsx1.__workletHash = 16275727828088;
+  MemberActionChatInputBannerTsx1.__initData = tmp23;
+  const animatedStyle = useAnimatedStyle(MemberActionChatInputBannerTsx1);
+  const items5 = [closure_19, stateFromStores, sharedValue1, , , , , ];
+  const useAnimatedStyle2 = tmp2(tmp3[23]).useAnimatedStyle;
+  tmp2(tmp3[23]);
+  items5[3] = tmp2(tmp3[23]).withDelay;
+  items5[4] = tmp10;
+  items5[5] = completed;
+  items5[6] = tmp2(tmp3[24]).withTiming;
+  items5[7] = tmp2(tmp3[16]).DECELERATED_EASING;
+  c0 = undefined;
+  c1 = undefined;
+  c2 = undefined;
+  c3 = undefined;
+  c4 = undefined;
+  c5 = undefined;
+  let c6;
+  [tmp32, tmp33, tmp34, tmp35, tmp36, tmp37, tmp38, tmp39] = items5;
+  class MemberActionChatInputBannerTsx2 {
     constructor() {
-      let tmp9;
+      let tmp7;
       const obj = { height: null };
-      if (stateFromStores) {
-        obj.height = sharedValue1.get();
-        tmp9 = obj;
+      if (c0) {
+        obj.height = _undefined.get();
+        tmp7 = obj;
       } else {
         let num = 0;
-        const withDelay = ReanimatedRexport.withDelay;
-        ReanimatedRexport;
-        if (!useReducedMotion) {
+        const tmp = c2;
+        if (!c3) {
           num = 0;
-          if (completed) {
+          if (c4) {
             num = 1200;
           }
         }
-        const withTiming = timing.withTiming;
-        const obj2 = { duration: 400, easing: native.DECELERATED_EASING };
-        timing;
-        const value = sharedValue1.get();
-        obj.height = withDelay(num, withTiming(value, obj2));
-        tmp9 = obj;
+        const obj2 = { duration: 400, easing };
+        obj.height = tmp(num, _undefined2(_undefined.get(), obj2));
+        tmp7 = obj;
       }
-      return tmp9;
+      return tmp7;
     }
   }
-  let obj4 = { useReducedMotion: stateFromStores, nextHeight: sharedValue1, withDelay: tmp2(tmp3[23]).withDelay, isViewAction: tmp10, completed, withTiming: tmp2(tmp3[24]).withTiming, DECELERATED_EASING: tmp2(tmp3[16]).DECELERATED_EASING };
-  B.__closure = obj4;
-  B.__workletHash = 10256555667281;
-  B.__initData = __initData2;
-  const items3 = [tmp11[1]];
-  const animatedStyle1 = tmp2Result8.useAnimatedStyle(B);
+  const items6 = [tmp33, tmp34, tmp35, tmp36, tmp37, tmp38, tmp39];
+  MemberActionChatInputBannerTsx2.__closure = items6;
+  MemberActionChatInputBannerTsx2.__workletHash = 12940138330664;
+  MemberActionChatInputBannerTsx2.__initData = tmp32;
+  const items7 = [tmp11[1]];
+  const animatedStyle2 = useAnimatedStyle2(MemberActionChatInputBannerTsx2);
   [][0] = tmp14[1];
   const callback = obj3.useCallback((nativeEvent) => {
-    closure_8(nativeEvent.nativeEvent.layout.height);
-  }, items3);
+    closure_7(nativeEvent.nativeEvent.layout.height);
+  }, items7);
   if (null == channelAction) {
     return null;
   } else {
@@ -288,9 +321,9 @@ function MemberActionChatInputBanner(channel) {
         const obj2 = { emoji: channelAction.emoji };
         items = [authStore2(ChannelActionEmoji, obj2), , ];
         const obj3 = { style: closure_1.text, children: items1 };
-        const obj4 = { variant: "text-sm/medium", color: "mobile-text-heading-primary", style: closure_1.wrap, children: channelAction.title };
+        const obj4 = { variant: "body-sm/medium", color: "mobile-text-heading-primary", style: closure_1.wrap, children: channelAction.title };
         items1 = [authStore2(Text_Text.Text, obj4), ];
-        const obj5 = { variant: "text-xxs/normal", color: "text-muted", children: intl.string(intl4.t["ElGg8+"]) };
+        const obj5 = { variant: "footnote/normal", color: "text-muted", children: intl.string(intl4.t["ElGg8+"]) };
         const Text = Text_Text.Text;
         intl = intl4.intl;
         items1[1] = authStore2(Text, obj5);
@@ -309,20 +342,20 @@ function MemberActionChatInputBanner(channel) {
       }
       return tmp3Result;
     }
-    let obj5 = { style: tmp.measurement, onLayout: callback, children: renderAction() };
-    const items4 = [sharedValue1(stateFromStores, obj5), , ];
-    let tmp32Result = !tmp10;
-    const tmp33 = stateFromStores;
-    if (tmp32Result) {
-      let obj6 = { style: items5, children: renderAction() };
-      items5 = [tmp.animatedContainer, animatedStyle];
-      View = require("ReanimatedRexport").View;
-      tmp32Result = tmp32(View, obj6);
+    let obj2 = { style: tmp.measurement, onLayout: callback, children: renderAction() };
+    const items8 = [closure_12(easing, obj2), , ];
+    let tmp49Result = !tmp10;
+    const tmp50 = easing;
+    if (tmp49Result) {
+      let obj4 = { style: items9, children: renderAction() };
+      items9 = [tmp.animatedContainer, animatedStyle];
+      const View = require("module_1652").View;
+      tmp49Result = tmp49(View, obj4);
     }
-    items4[1] = tmp32Result;
-    let tmp30Result = null;
+    items8[1] = tmp49Result;
+    let tmp47Result = null;
     if (completed) {
-      tmp30Result = null;
+      tmp47Result = null;
       if (null != nextMemberAction) {
         function renderNextAction() {
           let Icon;
@@ -342,7 +375,7 @@ function MemberActionChatInputBanner(channel) {
               style: closure_1.container,
               onPress() {
                   const obj = channel(channelAction[27]);
-                  return obj.transitionTo(closure_10.CHANNEL(guild_id.guild_id, channelId.channelId));
+                  return obj.transitionTo(sharedValue.CHANNEL(guild_id.guild_id, channelId.channelId));
                 },
               children: items
             };
@@ -351,7 +384,7 @@ function MemberActionChatInputBanner(channel) {
             const obj2 = { emoji: nextMemberAction.emoji };
             items = [authStore2(ChannelActionEmoji, obj2), , ];
             const obj3 = { style: closure_1.text, children: items1 };
-            const obj4 = { variant: "text-sm/medium", color: "mobile-text-heading-primary", style: closure_1.wrap, children: intl2.format(intl4.t["/beONw"], obj5) };
+            const obj4 = { variant: "body-sm/medium", color: "mobile-text-heading-primary", style: closure_1.wrap, children: intl2.format(intl4.t["/beONw"], obj5) };
             const Text = Text_Text.Text;
             intl2 = intl4.intl;
             obj5 = { step: nextMemberAction.title };
@@ -367,19 +400,19 @@ function MemberActionChatInputBanner(channel) {
           }
           return tmp2;
         }
-        let obj7 = { children: items6 };
-        let obj8 = { style: tmp.measurement, onLayout: tmp25, children: renderNextAction() };
-        items6 = [sharedValue1(tmp33, obj8), ];
-        const obj9 = { style: items7, children: renderNextAction() };
-        items7 = [tmp.animatedContainer, animatedStyle1];
-        const View2 = require("ReanimatedRexport").View;
-        items6[1] = sharedValue1(View2, obj9);
-        tmp30Result = tmp30(tmp31, obj7);
+        let obj5 = { children: items10 };
+        let obj6 = { style: tmp.measurement, onLayout: tmp42, children: renderNextAction() };
+        items10 = [closure_12(tmp50, obj6), ];
+        let obj7 = { style: items11, children: renderNextAction() };
+        items11 = [tmp.animatedContainer, animatedStyle2];
+        const View2 = require("module_1652").View;
+        items10[1] = closure_12(View2, obj7);
+        tmp47Result = tmp47(tmp48, obj5);
       }
     }
-    const obj10 = { children: items4 };
-    items4[2] = tmp30Result;
-    return closure_13(closure_14, obj10);
+    let obj8 = { children: items8 };
+    items8[2] = tmp47Result;
+    return closure_13(closure_14, obj8);
   }
 }
 let View = react_native.View;
@@ -394,11 +427,11 @@ size = { width: 24, height: 24, backgroundColor: nativeDefault.colors.BACKGROUND
 size1 = { display: "flex", alignItems: "center", justifyContent: "center", height: 20, width: 20, borderRadius: 15, marginLeft: 8, backgroundColor: nativeDefault.colors.BACKGROUND_BRAND };
 obj3 = { tintColor: nativeDefault.colors.WHITE };
 let closure_15 = createStyles(obj);
-const __initData = { code: "function MemberActionChatInputBannerTsx1(){const{useReducedMotion,height,withDelay,completed,withTiming,DECELERATED_EASING}=this.__closure;if(useReducedMotion){return{height:height.get()};}return{height:withDelay(completed?800:200,withTiming(height.get(),{duration:400,easing:DECELERATED_EASING}))};}" };
-const __initData2 = { code: "function MemberActionChatInputBannerTsx2(){const{useReducedMotion,nextHeight,withDelay,isViewAction,completed,withTiming,DECELERATED_EASING}=this.__closure;if(useReducedMotion){return{height:nextHeight.get()};}return{height:withDelay(!isViewAction&&completed?1200:0,withTiming(nextHeight.get(),{duration:400,easing:DECELERATED_EASING}))};}" };
+let closure_18 = { code: "(function MemberActionChatInputBannerTsx1(){let[useReducedMotion,height,withDelay,completed,withTiming,DECELERATED_EASING]=this.__closure;if(useReducedMotion){return{height:height.get()};}return{height:withDelay(completed?800:200,withTiming(height.get(),{duration:400,easing:DECELERATED_EASING}))};})" };
+let closure_19 = { code: "(function MemberActionChatInputBannerTsx2(){let[useReducedMotion,nextHeight,withDelay,isViewAction,completed,withTiming,DECELERATED_EASING]=this.__closure;if(useReducedMotion){return{height:nextHeight.get()};}return{height:withDelay(!isViewAction&&completed?1200:0,withTiming(nextHeight.get(),{duration:400,easing:DECELERATED_EASING}))};})" };
 const memoResult = react.memo(function MemberActionChatInputBannerGuarded(channel) {
   channel = channel.channel;
-  const obj = channel(7397);
+  const obj = channel(7461);
   const canSeeOnboardingHome = obj.useCanSeeOnboardingHome(channel.guild_id);
   const items = [GuildMemberStore];
   const obj2 = channel(563);
@@ -411,7 +444,7 @@ const memoResult = react.memo(function MemberActionChatInputBannerGuarded(channe
     return true === isPending;
   });
   let tmp3 = null;
-  const obj3 = channel(13836);
+  const obj3 = channel(14070);
   if (!obj3.useAllActionsCompleted(channel.guild_id)) {
     tmp3 = null;
     if (!stateFromStores) {

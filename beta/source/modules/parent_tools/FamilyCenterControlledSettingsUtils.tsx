@@ -1,14 +1,15 @@
-// Module ID: 16720
-// Function ID: 16721
+// Module ID: 17042
+// Function ID: 17043
 // Name: FamilyCenterControlledSettingsUtils
-// Dependencies: [1196, 16717, 7472, 7470, 2]
+// Dependencies: [1196, 17039, 7536, 17043, 7534, 2]
 // Exports: isSetAndNotDefault, resolveExplicitContentSettingWithDefaultsForTeen, updateExplicitContentSetting, updateGoreContentSetting
 
-// Module 16720 (FamilyCenterControlledSettingsUtils)
+// Module 17042 (FamilyCenterControlledSettingsUtils)
 import preloaded_user_settings from "preloaded_user_settings" /* 1196 */;
-import SensitiveMediaExplicitRedactionSettingsUtils from "SensitiveMediaExplicitRedactionSettingsUtils" /* 7470 */;
-import SensitiveMediaGoreRedactionSettingsUtils from "SensitiveMediaGoreRedactionSettingsUtils" /* 7472 */;
-import ParentalControlledUserSettings from "ParentalControlledUserSettings" /* 16717 */;
+import SensitiveMediaExplicitRedactionSettingsUtils from "SensitiveMediaExplicitRedactionSettingsUtils" /* 7534 */;
+import SensitiveMediaGoreRedactionSettingsUtils from "SensitiveMediaGoreRedactionSettingsUtils" /* 7536 */;
+import ParentalControlledUserSettings from "ParentalControlledUserSettings" /* 17039 */;
+import FamilyCenterSaveErrorUtils from "FamilyCenterSaveErrorUtils" /* 17043 */;
 import size from "module_2" /* 2 */;
 
 function getGoreContentSettingOrDefault(arg0) {
@@ -52,7 +53,7 @@ function getExplicitContentSettingOrDefault(teenId) {
   const tmp5 = null != setting && setting !== preloaded_user_settings.ExplicitContentRedaction.UNSET_EXPLICIT_CONTENT_REDACTION;
   if (!tmp5) {
     let tmp8;
-    const ParentalControlledLegacyExplicitContent = tmp(16717).ParentalControlledLegacyExplicitContent;
+    const ParentalControlledLegacyExplicitContent = tmp(17039).ParentalControlledLegacyExplicitContent;
     const controlledSetting1 = ParentalControlledLegacyExplicitContent.getControlledSetting(teenId);
     const tmpResult = SensitiveMediaExplicitRedactionSettingsUtils;
     if (isFriend) {
@@ -69,13 +70,13 @@ function getExplicitContentSettingOrDefault(teenId) {
   }
   const tmp10 = null != prop1 && prop1 !== preloaded_user_settings.ExplicitContentRedaction.UNSET_EXPLICIT_CONTENT_REDACTION;
   if (!tmp10) {
-    const ParentalControlledLegacyExplicitContent2 = tmp(16717).ParentalControlledLegacyExplicitContent;
+    const ParentalControlledLegacyExplicitContent2 = tmp(17039).ParentalControlledLegacyExplicitContent;
     const controlledSetting2 = ParentalControlledLegacyExplicitContent2.getControlledSetting(teenId);
-    prop1 = tmp(7470).TEEN_EXPLICIT_CONTENT_FILTER_TO_EXPLICIT_CONTENT_REDACTION_FRIEND_DM[controlledSetting2];
+    prop1 = tmp(7534).TEEN_EXPLICIT_CONTENT_FILTER_TO_EXPLICIT_CONTENT_REDACTION_FRIEND_DM[controlledSetting2];
   }
   return obj2;
 }
-let result = size.fileFinishedImporting("modules/parent_tools/FamilyCenterControlledSettingsUtils.tsx");
+const result = size.fileFinishedImporting("modules/parent_tools/FamilyCenterControlledSettingsUtils.tsx");
 
 export function isSetAndNotDefault(goreContentFriendDm) {
   const tmp = null != goreContentFriendDm && goreContentFriendDm !== preloaded_user_settings.ExplicitContentRedaction.UNSET_EXPLICIT_CONTENT_REDACTION;
@@ -84,12 +85,14 @@ export function isSetAndNotDefault(goreContentFriendDm) {
 export { getGoreContentSettingOrDefault };
 export function updateGoreContentSetting(selectedTeenId, arg1) {
   const tmp = getGoreContentSettingOrDefault(selectedTeenId);
+  const showToastIfSaveFails = FamilyCenterSaveErrorUtils.showToastIfSaveFails;
+  FamilyCenterSaveErrorUtils;
   const ParentalControlledGoreContent = ParentalControlledUserSettings.ParentalControlledGoreContent;
   const updateControlledSetting = ParentalControlledGoreContent.updateControlledSetting;
   const obj = {};
   const merged = Object.assign(tmp);
   const merged1 = Object.assign(arg1);
-  const result = updateControlledSetting(selectedTeenId, obj);
+  showToastIfSaveFails(updateControlledSetting(selectedTeenId, obj));
 }
 export function resolveExplicitContentSettingWithDefaultsForTeen(teenId) {
   let isFriend;
@@ -118,10 +121,12 @@ export function resolveExplicitContentSettingWithDefaultsForTeen(teenId) {
 export { getExplicitContentSettingOrDefault };
 export function updateExplicitContentSetting(selectedTeenId, arg1) {
   const tmp = getExplicitContentSettingOrDefault(selectedTeenId);
+  const showToastIfSaveFails = FamilyCenterSaveErrorUtils.showToastIfSaveFails;
+  FamilyCenterSaveErrorUtils;
   const ParentalControlledExplicitContent = ParentalControlledUserSettings.ParentalControlledExplicitContent;
   const updateControlledSetting = ParentalControlledExplicitContent.updateControlledSetting;
   const obj = {};
   const merged = Object.assign(tmp);
   const merged1 = Object.assign(arg1);
-  const result = updateControlledSetting(selectedTeenId, obj);
+  showToastIfSaveFails(updateControlledSetting(selectedTeenId, obj));
 }

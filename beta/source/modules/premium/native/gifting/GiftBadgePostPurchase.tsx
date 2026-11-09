@@ -1,40 +1,40 @@
-// Module ID: 14448
-// Function ID: 14449
+// Module ID: 14684
+// Function ID: 14685
 // Name: GiftBadgePostPurchase
-// Dependencies: [19, 17, 8763, 14449, 4860, 21, 5014, 575, 1625, 6744, 5199, 5634, 13365, 1113, 2634, 14450, 5624, 10616, 5260, 5261, 10619, 14451, 5044, 4847, 504, 8755, 2]
+// Dependencies: [19, 17, 8834, 14685, 4986, 21, 5140, 575, 1627, 6799, 5315, 5758, 13597, 1113, 2760, 14686, 5751, 10736, 504, 8826, 11596, 5376, 5377, 8839, 10738, 14687, 5170, 4973, 2]
 // Exports: default
 
-// Module 14448 (GiftBadgePostPurchase)
+// Module 14684 (GiftBadgePostPurchase)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1625 */;
-import _modDef2634 from "module_2634" /* 2634 */;
-import dismissible_content from "dismissible_content" /* 4847 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4860 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5044 */;
-import HapticUtils from "HapticUtils" /* 5260 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5261 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6744 */;
-import BadgeId from "BadgeId" /* 8755 */;
-import GiftingBadgesUtils from "GiftingBadgesUtils" /* 10616 */;
-import GiftingBadgeProgressDefault from "GiftingBadgeProgress" /* 14450 */;
-import GiftingBadgeLevelUpProgressDefault from "GiftingBadgeLevelUpProgress" /* 14451 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
+import _modDef2760 from "module_2760" /* 2760 */;
+import dismissible_content from "dismissible_content" /* 4973 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4986 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5170 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6799 */;
+import BadgeId from "BadgeId" /* 8826 */;
+import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8839 */;
+import GiftingBadgeProgressDefault from "GiftingBadgeProgress" /* 14686 */;
 import react from "react" /* 19 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8763 */;
-import GiftingBadgeConstants from "GiftingBadgeConstants" /* 14449 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8834 */;
+import GiftingBadgeConstants from "GiftingBadgeConstants" /* 14685 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
-let badgeById;
+let importDefault;
 
 let c10;
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
+let tmp;
 let unpackModuleId;
+const GiftingBadgeIconDefault = tmp(10738);
+const GiftingBadgeLevelUpProgressDefault = tmp(14687);
 function PostPurchaseFooter(onSendGift) {
   let GiftIcon;
   let intl;
@@ -59,14 +59,14 @@ function PostPurchaseFooter(onSendGift) {
       rootNavigationRef.navigate("you");
     }
   }, []);
-  const obj2 = { grow: true, variant: "primary", icon: closure_10(GiftIcon, obj3), text: intl.string(_modDef2634.g86YiI), onPress: callback };
-  const Button = onSendGift(5634).Button;
+  const obj2 = { grow: true, variant: "primary", icon: closure_10(GiftIcon, obj3), text: intl.string(_modDef2760.g86YiI), onPress: callback };
+  const Button = onSendGift(5758).Button;
   obj3 = { size: "sm", color: nativeDefault.colors.CONTROL_PRIMARY_TEXT_DEFAULT };
-  GiftIcon = onSendGift(13365).GiftIcon;
+  GiftIcon = onSendGift(13597).GiftIcon;
   intl = onSendGift(1113).intl;
   items1 = [closure_10(Button, obj2), ];
-  const obj4 = { grow: true, variant: "secondary", text: intl2.string(_modDef2634["sa/cfM"]), onPress: callback1 };
-  const Button2 = onSendGift(5634).Button;
+  const obj4 = { grow: true, variant: "secondary", text: intl2.string(_modDef2760["sa/cfM"]), onPress: callback1 };
+  const Button2 = onSendGift(5758).Button;
   intl2 = onSendGift(1113).intl;
   items1[1] = closure_10(Button2, obj4);
   return closure_11(View, obj);
@@ -91,85 +91,110 @@ function InProgressScreen(arg0) {
   items[0] = authStore(View, obj3);
   const obj4 = { style: tmp.messageSection, children: items1 };
   items1 = [, ];
-  const obj5 = { variant: "heading-xxl/bold", style: tmp.centerText, children: title };
+  const obj5 = { variant: "heading-xxl/semibold", style: tmp.centerText, children: title };
   items1[0] = authStore(Text_Text.Text, obj5);
-  const obj6 = { variant: "text-md/medium", color: "text-subtle", style: tmp.centerText, children: description };
+  const obj6 = { variant: "body-md/medium", color: "text-subtle", style: tmp.centerText, children: description };
   items1[1] = authStore(Text_Text.Text, obj6);
   items[1] = unpackModuleId(View, obj4);
   items2 = [unpackModuleId(View, obj2), authStore(PostPurchaseFooter, { onSendGift })];
   return unpackModuleId(View, obj);
 }
-function LevelUpScreen(arg0) {
+function LevelUpScreen(newTier) {
+  let closure_1;
   let currentTier;
   let format;
   let format2;
   let giftsToNextTier;
-  let items;
-  let items1;
-  let items2;
   let items3;
+  let items4;
+  let items5;
+  let items6;
   let k8MmO8;
-  let newTier;
   let nextTier;
-  let obj11;
+  let obj13;
   let onSendGift;
   let simulatedProgress;
   let str;
   let str2;
-  let tmp9Result;
+  let tmp12Result;
   let v6QVlxw;
-  ({ newTier, nextTier, giftsToNextTier } = arg0);
-  ({ simulatedProgress, currentTier, onSendGift } = arg0);
+  newTier = newTier.newTier;
+  ({ nextTier, giftsToNextTier } = newTier);
+  importDefault = undefined;
+  let tmp = importDefault;
+  ({ simulatedProgress, currentTier, onSendGift } = newTier);
   const tmp3 = closure_12(useSafeAreaInsetsDefault().bottom);
-  let obj = GiftingBadgesUtils;
+  let obj = newTier(10736);
   const giftingBadgeTierIconUrl = obj.getGiftingBadgeTierIconUrl(newTier);
+  const items = [BadgeDirectoryStore];
+  const items1 = [newTier.key];
+  const obj2 = newTier(504);
+  const stateFromStores = obj2.useStateFromStores(items, () => {
+    const badgeById = BadgeDirectoryStore.getBadgeById(BadgeId.BadgeId.GIFTING);
+    let has_updates;
+    if (badgeById != null) {
+      has_updates = badgeById.has_updates;
+    }
+    return true === has_updates && badgeById.current_tier === newTier.key;
+  }, items1);
+  const obj3 = newTier(11596);
+  const tmp7 = stateFromStores && obj3.useIsBadgeUnreadStateEnabled({ location: "GiftBadgePostPurchase", hasUnread: stateFromStores });
+  importDefault = tmp7;
   const effect = react.useEffect(() => {
-    const obj = HapticUtils;
-    const result = obj.triggerHapticFeedback(haptics_HapticFeedbackTypesDefault.IMPACT_HEAVY);
+    const obj = newTier(dependencyMap[21]);
+    const result = obj.triggerHapticFeedback(closure_1(dependencyMap[22]).IMPACT_HEAVY);
   }, []);
-  const obj4 = { style: tmp3.levelUpIconWrapper, children: tmp9Result };
-  tmp9Result = null != giftingBadgeTierIconUrl;
-  const obj2 = { style: tmp3.screenContainer, children: items3 };
-  const obj3 = { style: tmp3.content, children: items };
-  if (tmp9Result) {
-    const obj5 = { icon: giftingBadgeTierIconUrl, size: 140 };
-    tmp9Result = tmp9(tmp(10619), obj5);
+  const items2 = [tmp7];
+  const effect1 = react.useEffect(() => {
+    const tmp = closure_1;
+    if (tmp) {
+      const obj = BadgeDirectoryActionCreators;
+      obj.ackBadge(BadgeId.BadgeId.GIFTING);
+    }
+  }, items2);
+  const obj6 = { style: tmp3.levelUpIconWrapper, children: tmp12Result };
+  tmp12Result = null != giftingBadgeTierIconUrl;
+  const obj4 = { style: tmp3.screenContainer, children: items6 };
+  const obj5 = { style: tmp3.content, children: items3 };
+  if (tmp12Result) {
+    const obj7 = { icon: giftingBadgeTierIconUrl, size: 140 };
+    tmp12Result = tmp12(GiftingBadgeIconDefault, obj7);
   }
-  items = [authStore(View, obj4), ];
-  const obj6 = { style: tmp3.levelUpBody, children: items1 };
-  items1 = [, ];
-  const obj7 = { progress: simulatedProgress, currentTier, newTier, style: tmp3.levelUpProgress };
-  items1[0] = authStore(GiftingBadgeLevelUpProgressDefault, obj7);
-  const obj8 = { style: tmp3.messageSection, children: items2 };
-  const obj9 = { variant: "heading-xxl/bold", style: tmp3.centerText, children: format(k8MmO8, { tierName: str }) };
-  const Text = tmp4(5624).Text;
+  items3 = [closure_10(View, obj6), ];
+  const obj8 = { style: tmp3.levelUpBody, children: items4 };
+  items4 = [, ];
+  const obj9 = { progress: simulatedProgress, currentTier, newTier, style: tmp3.levelUpProgress };
+  items4[0] = closure_10(GiftingBadgeLevelUpProgressDefault, obj9);
+  const obj10 = { style: tmp3.messageSection, children: items5 };
+  const obj11 = { variant: "heading-xxl/semibold", style: tmp3.centerText, children: format(k8MmO8, { tierName: str }) };
+  const Text = tmp4(5751).Text;
   const intl = tmp4(1113).intl;
   format = intl.format;
   str = newTier.name;
-  k8MmO8 = tmp(2634).k8MmO8;
+  k8MmO8 = _modDef2760.k8MmO8;
   if (str == null) {
     str = "";
   }
-  items2 = [authStore(Text, obj9), ];
-  let tmp9Result2 = null != nextTier && null != giftsToNextTier && giftsToNextTier > 0;
-  if (tmp9Result2) {
-    const obj10 = { variant: "text-md/normal", color: "text-subtle", style: tmp3.centerText, children: format2(v6QVlxw, obj11) };
-    const Text2 = tmp4(5624).Text;
+  items5 = [closure_10(Text, obj11), ];
+  let tmp12Result2 = null != nextTier && null != giftsToNextTier && giftsToNextTier > 0;
+  if (tmp12Result2) {
+    const obj12 = { variant: "body-md/normal", color: "text-subtle", style: tmp3.centerText, children: format2(v6QVlxw, obj13) };
+    const Text2 = tmp4(5751).Text;
     const intl2 = tmp4(1113).intl;
     format2 = intl2.format;
-    obj11 = { count: giftsToNextTier, nextTierName: str2 };
+    obj13 = { count: giftsToNextTier, nextTierName: str2 };
     str2 = nextTier.name;
-    v6QVlxw = tmp(2634)["6QVlxw"];
+    v6QVlxw = _modDef2760["6QVlxw"];
     if (str2 == null) {
       str2 = "";
     }
-    tmp9Result2 = tmp9(Text2, obj10);
+    tmp12Result2 = tmp12(Text2, obj12);
   }
-  items2[1] = tmp9Result2;
-  items1[1] = unpackModuleId(View, obj8);
-  items[1] = unpackModuleId(View, obj6);
-  items3 = [unpackModuleId(View, obj3), authStore(PostPurchaseFooter, { onSendGift })];
-  return unpackModuleId(View, obj2);
+  items5[1] = tmp12Result2;
+  items4[1] = closure_11(View, obj10);
+  items3[1] = closure_11(View, obj8);
+  items6 = [closure_11(View, obj5), closure_10(PostPurchaseFooter, { onSendGift })];
+  return closure_11(View, obj4);
 }
 const View = react_native.View;
 ({ getRemainingGiftsToNextTier: metroRequire, getTierForProgress: metroImportDefault, getNextTierForProgress: metroImportAll } = GiftingBadgeConstants);
@@ -247,14 +272,14 @@ export default function GiftBadgePostPurchase(arg0) {
       const intl2 = tmp2(1113).intl;
       const formatToPlainString2 = intl2.formatToPlainString;
       let str2;
-      const KjdBPz = _modDef2634.KjdBPz;
+      const KjdBPz = _modDef2760.KjdBPz;
       if (tmp8 != null) {
         str2 = tmp8.name;
       }
       if (str2 == null) {
         str2 = "";
       }
-      const obj3 = { title: formatToPlainString2(KjdBPz, obj4), description: intl3.string(_modDef2634.oqDrEM), progressBarTitle: intl4.string(_modDef2634["Ka5s+Q"]), progress: sum, currentTier: tmp18, nextTier: tmp19, onSendGift };
+      const obj3 = { title: formatToPlainString2(KjdBPz, obj4), description: intl3.string(_modDef2760.oqDrEM), progressBarTitle: intl4.string(_modDef2760["Ka5s+Q"]), progress: sum, currentTier: tmp18, nextTier: tmp19, onSendGift };
       obj4 = { nextTier: str2 };
       intl3 = tmp2(1113).intl;
       intl4 = tmp2(1113).intl;
@@ -262,7 +287,7 @@ export default function GiftBadgePostPurchase(arg0) {
       tmp18 = tmp26;
       tmp19 = tmp8;
     } else {
-      obj5 = { title: intl5.string(_modDef2634["/rBQud"]), description: intl6.string(_modDef2634.DDQMlx), progressBarTitle: str, progress: sum, currentTier: tmp15, nextTier: tmp16, onSendGift };
+      obj5 = { title: intl5.string(_modDef2760["/rBQud"]), description: intl6.string(_modDef2760.DDQMlx), progressBarTitle: str, progress: sum, currentTier: tmp15, nextTier: tmp16, onSendGift };
       intl5 = tmp2(1113).intl;
       intl6 = tmp2(1113).intl;
       let name;
@@ -275,7 +300,7 @@ export default function GiftBadgePostPurchase(arg0) {
         const intl = tmp2(1113).intl;
         const formatToPlainString = intl.formatToPlainString;
         let name1;
-        const bwyQt8 = tmp27(2634).bwyQt8;
+        const bwyQt8 = tmp27(2760).bwyQt8;
         if (tmp24 != null) {
           name1 = tmp24.name;
         }

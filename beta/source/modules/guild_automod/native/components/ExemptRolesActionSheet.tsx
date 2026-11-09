@@ -1,15 +1,15 @@
-// Module ID: 19701
-// Function ID: 19702
+// Module ID: 20111
+// Function ID: 20112
 // Name: ExemptRolesActionSheet
-// Dependencies: [19, 4921, 4920, 21, 13265, 504, 19702, 1113, 2]
+// Dependencies: [19, 5047, 5046, 21, 13498, 504, 20112, 1113, 2]
 // Exports: default
 
-// Module 19701 (ExemptRolesActionSheet)
+// Module 20111 (ExemptRolesActionSheet)
 import Fragment from "Fragment" /* 21 */;
-import GuildRoleRecord from "GuildRoleRecord" /* 4921 */;
-import RoleNameDefault from "RoleName" /* 13265 */;
+import GuildRoleRecord from "GuildRoleRecord" /* 5047 */;
+import RoleNameDefault from "RoleName" /* 13498 */;
 import react from "react" /* 19 */;
-import GuildRoleStore from "GuildRoleStore" /* 4920 */;
+import GuildRoleStore from "GuildRoleStore" /* 5046 */;
 import size from "module_2" /* 2 */;
 
 function renderRoleName(role) {
@@ -36,7 +36,7 @@ export default function ExemptRolesActionSheet(guildId) {
   const stateFromStores = obj.useStateFromStores(items, () => GuildRoleStore.getSortedRoles(guildId), items1);
   const items2 = [stateFromStores];
   const memo = react.useMemo(() => stateFromStores.filter((item) => !closure_1_4(item)), items2);
-  stateFromStores(19702);
+  stateFromStores(20112);
   const intl = guildId(1113).intl;
   const intl2 = guildId(1113).intl;
   return <tmp3 title={intl.string(guildId(1113).t["LPJmL/"])} searchPlaceholder={intl2.string(guildId(1113).t.aFO1I6)} listId="automod-exempt-roles" items={memo} initialSelected={exemptRoles} getId={getRoleId} getSearchText={getRoleName} renderLabel={renderRoleName} onSave={onSave} />;

@@ -1,59 +1,80 @@
-// Module ID: 8998
-// Function ID: 8999
+// Module ID: 9078
+// Function ID: 9079
 // Name: CollapsibleFloatingActionButton
-// Dependencies: [19, 21, 5640, 5014, 5095, 5637, 5638, 5635, 8999, 575, 2]
+// Dependencies: [19, 21, 5764, 5140, 1652, 5761, 5762, 5759, 9079, 575, 2]
 // Exports: CollapsibleFloatingActionButton
 
-// Module 8998 (CollapsibleFloatingActionButton)
+// Module 9078 (CollapsibleFloatingActionButton)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
-import spring from "spring" /* 5637 */;
-import springPresets from "springPresets" /* 5638 */;
-import FloatingActionButton from "FloatingActionButton" /* 8999 */;
+import _mod1652 from "module_1652" /* 1652 */;
+import spring_spring from "spring/spring" /* 5761 */;
+import springPresets from "springPresets" /* 5762 */;
+import FloatingActionButton from "FloatingActionButton" /* 9079 */;
 import react from "react" /* 19 */;
-import ButtonConstants from "ButtonConstants" /* 5640 */;
-import createStyles from "createStyles" /* 5014 */;
+import ButtonConstants from "ButtonConstants" /* 5764 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
-let interpolateResult, tmp;
-
+let tmp2;
+const BaseTextButton2 = tmp2(5759);
 function CollapsableButton(arg0) {
   let state;
   let style;
+  let tmp10;
+  let tmp11;
+  let tmp12;
+  let tmp5;
+  let tmp6;
+  let tmp7;
+  let tmp8;
+  let tmp9;
   ({ state, style } = arg0);
-  const collapseText = state.collapseText;
   const merged = Object.assign(arg0, Object.assign({ state: 0, style: 0 }));
-  let obj = collapseText(5095);
-  class B {
+  const collapseText = state.collapseText;
+  let items = [closure_7, , , , , , , ];
+  const useAnimatedStyle = _mod1652.useAnimatedStyle;
+  _mod1652;
+  items[1] = ButtonConstants.FAB_BUTTON_SIZE;
+  items[2] = spring_spring.withSpring;
+  items[3] = _mod1652.interpolate;
+  items[4] = collapseText;
+  items[5] = 20;
+  items[6] = buttonPadding;
+  items[7] = springPresets.SUBTLE_SPRING;
+  let c0;
+  let c1;
+  let c2;
+  let c3;
+  let c4;
+  let c5;
+  let c6;
+  [tmp5, tmp6, tmp7, tmp8, tmp9, tmp10, tmp11, tmp12] = items;
+  class CollapsibleFloatingActionButtonNativeTsx1 {
     constructor() {
-      obj = { minWidth: closure_0(closure_2[2]).FAB_BUTTON_SIZE, minHeight: closure_0(closure_2[2]).FAB_BUTTON_SIZE, paddingHorizontal: null, paddingVertical: null };
-      tmp = closure_0(closure_2[5]);
-      withSpring = tmp.withSpring;
-      obj2 = closure_0(closure_2[4]);
-      items = [20];
+      obj = { minWidth: closure_0, minHeight: closure_0, paddingHorizontal: null, paddingVertical: closure_5 };
+      items = [, ];
+      items[0] = closure_4;
       items[1] = closure_5;
-      interpolateResult = obj2.interpolate(collapseText.get(), [0, 1], items);
-      obj.paddingHorizontal = withSpring(interpolateResult, closure_0(closure_2[6]).SUBTLE_SPRING, "animate-always");
-      obj.paddingVertical = closure_5;
+      obj.paddingHorizontal = closure_1(closure_2(closure_3.get(), [0, 1], items), closure_6, "animate-always");
       return obj;
     }
   }
-  let obj2 = { FAB_BUTTON_SIZE: collapseText(5640).FAB_BUTTON_SIZE, withSpring: collapseText(5637).withSpring, interpolate: collapseText(5095).interpolate, collapseText, FAB_PADDING_HORIZONTAL: 20, FAB_PADDING_VERTICAL: buttonPadding, SUBTLE_SPRING: collapseText(5638).SUBTLE_SPRING };
-  B.__closure = obj2;
-  B.__workletHash = 5958377845220;
-  B.__initData = __initData;
-  const animatedStyle = obj.useAnimatedStyle(B);
-  const BaseTextButton = collapseText(5635).BaseTextButton;
+  const items1 = [tmp6, tmp7, tmp8, tmp9, tmp10, tmp11, tmp12];
+  CollapsibleFloatingActionButtonNativeTsx1.__closure = items1;
+  CollapsibleFloatingActionButtonNativeTsx1.__workletHash = 9222180405053;
+  CollapsibleFloatingActionButtonNativeTsx1.__initData = tmp5;
+  const animatedStyle = useAnimatedStyle(CollapsibleFloatingActionButtonNativeTsx1);
+  const BaseTextButton = BaseTextButton2.BaseTextButton;
   const merged1 = Object.assign(merged);
-  return <BaseTextButton size="lg" variant="primary" textVariant="text-md/semibold" collapseText={collapseText} style={style} pillStyle={animatedStyle} />;
+  return <BaseTextButton size="lg" variant="primary" textVariant="body-md/semibold" collapseText={collapseText} style={style} pillStyle={animatedStyle} />;
 }
 const jsx = Fragment.jsx;
 const getButtonPadding = ButtonConstants.getButtonPadding;
 const buttonPadding = getButtonPadding(ButtonConstants.FAB_BUTTON_SIZE, ButtonConstants.FAB_BUTTON_ICON_SIZE);
 let obj = { textButtonPill: { paddingHorizontal: 20, paddingVertical: buttonPadding } };
 let closure_6 = createStyles.createStyles(obj);
-const __initData = { code: "function CollapsibleFloatingActionButtonNativeTsx1(){const{FAB_BUTTON_SIZE,withSpring,interpolate,collapseText,FAB_PADDING_HORIZONTAL,FAB_PADDING_VERTICAL,SUBTLE_SPRING}=this.__closure;return{minWidth:FAB_BUTTON_SIZE,minHeight:FAB_BUTTON_SIZE,paddingHorizontal:withSpring(interpolate(collapseText.get(),[0,1],[FAB_PADDING_HORIZONTAL,FAB_PADDING_VERTICAL]),SUBTLE_SPRING,'animate-always'),paddingVertical:FAB_PADDING_VERTICAL};}" };
+let closure_7 = { code: "(function CollapsibleFloatingActionButtonNativeTsx1(){let[FAB_BUTTON_SIZE,withSpring,interpolate,collapseText,FAB_PADDING_HORIZONTAL,FAB_PADDING_VERTICAL,SUBTLE_SPRING]=this.__closure;return{minWidth:FAB_BUTTON_SIZE,minHeight:FAB_BUTTON_SIZE,paddingHorizontal:withSpring(interpolate(collapseText.get(),[0,1],[FAB_PADDING_HORIZONTAL,FAB_PADDING_VERTICAL]),SUBTLE_SPRING,'animate-always'),paddingVertical:FAB_PADDING_VERTICAL};})" };
 const result = size.fileFinishedImporting("design/components/experimental/Button/native/CollapsibleFloatingActionButton.native.tsx");
 
 export function CollapsibleFloatingActionButton(arg0) {
@@ -77,20 +98,20 @@ export function CollapsibleFloatingActionButton(arg0) {
   }
   const items = [styles.button, ];
   if (positionRight == null) {
-    positionRight = tmp3(8999).DEFAULT_POSITION_OFFSET;
+    positionRight = tmp3(9079).DEFAULT_POSITION_OFFSET;
   }
   const rect = { position: "absolute", right: positionRight, bottom: positionBottom };
   if (positionBottom == null) {
-    positionBottom = tmp3(8999).DEFAULT_POSITION_OFFSET;
+    positionBottom = tmp3(9079).DEFAULT_POSITION_OFFSET;
   }
   items[1] = rect;
   if (null != state) {
     const merged1 = Object.assign(merged);
     tmp13 = <CollapsableButton state={state} text={text} style={items} icon={cloneElementResult} />;
   } else {
-    const BaseTextButton = tmp3(5635).BaseTextButton;
+    const BaseTextButton = tmp3(5759).BaseTextButton;
     const merged2 = Object.assign(merged);
-    tmp13 = <BaseTextButton text={text} size="lg" variant="primary" textVariant="text-md/semibold" icon={cloneElementResult} style={items} pillStyle={tmp2.textButtonPill} />;
+    tmp13 = <BaseTextButton text={text} size="lg" variant="primary" textVariant="body-md/semibold" icon={cloneElementResult} style={items} pillStyle={tmp2.textButtonPill} />;
   }
   return tmp13;
 }

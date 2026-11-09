@@ -1,30 +1,29 @@
-// Module ID: 5624
-// Function ID: 5625
+// Module ID: 5751
+// Function ID: 5752
 // Name: Text/Text
-// Dependencies: [109, 19, 17, 1083, 21, 5095, 575, 12, 5625, 5626, 5014, 5628, 5629, 5632, 1376, 5633, 299, 2]
+// Dependencies: [109, 19, 17, 1083, 21, 1652, 575, 12, 5752, 5753, 5140, 5755, 5756, 1357, 5757, 299, 2]
 // Exports: Heading
 
-// Module 5624 (Text/Text)
+// Module 5751 (Text/Text)
 import _modDef12 from "module_12" /* 12 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
-import utils_PlatformUtils from "utils/PlatformUtils" /* 1376 */;
-import TextVariants from "TextVariants" /* 5625 */;
-import PlainTextExperimentContext from "PlainTextExperimentContext" /* 5628 */;
-import useTypographyVariantRemap from "useTypographyVariantRemap" /* 5629 */;
-import PlainTextEligibility from "PlainTextEligibility" /* 5632 */;
-import _modDef5633 from "module_5633" /* 5633 */;
+import utils_PlatformUtils from "utils/PlatformUtils" /* 1357 */;
+import TextVariants from "TextVariants" /* 5752 */;
+import PlainTextExperimentContext from "PlainTextExperimentContext" /* 5755 */;
+import PlainTextEligibility from "PlainTextEligibility" /* 5756 */;
+import _modDef5757 from "module_5757" /* 5757 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
-import useManaTextMigrationHighlight from "useManaTextMigrationHighlight" /* 5626 */;
-import createStyles from "createStyles" /* 5014 */;
+import module_1652 from "module_1652" /* 1652 */;
+import useManaTextMigrationHighlight from "useManaTextMigrationHighlight" /* 5753 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 class Text {
-  constructor(variant) {
+  constructor(animated) {
     let StringResult;
     let children;
     let color;
@@ -44,27 +43,27 @@ class Text {
     let textAlign;
     let textAlignVertical;
     let textDecorationLine;
-    let tmp21;
+    let tmp20;
     let tmp5Result3;
+    let variant;
     let verticalAlign;
-    ({ color, style, children, lineClamp, includeFontPadding } = variant);
-    variant = variant.variant;
+    ({ variant, color, style, children, lineClamp, includeFontPadding } = animated);
     if (includeFontPadding === undefined) {
       includeFontPadding = false;
     }
-    ({ ellipsizeMode, tabularNumbers } = variant);
+    ({ ellipsizeMode, tabularNumbers } = animated);
     if (tabularNumbers === undefined) {
       tabularNumbers = false;
     }
-    let flag = variant.animated;
+    let flag = animated.animated;
     if (flag === undefined) {
       flag = false;
     }
-    let flag2 = variant.experimental_useNativeText;
+    let flag2 = animated.experimental_useNativeText;
     if (flag2 === undefined) {
       flag2 = false;
     }
-    const merged = Object.assign(variant, Object.assign({ variant: 0, color: 0, style: 0, children: 0, lineClamp: 0, includeFontPadding: 0, ellipsizeMode: 0, tabularNumbers: 0, animated: 0, experimental_useNativeText: 0, ref: 0 }));
+    const merged = Object.assign(animated, Object.assign({ variant: 0, color: 0, style: 0, children: 0, lineClamp: 0, includeFontPadding: 0, ellipsizeMode: 0, tabularNumbers: 0, animated: 0, experimental_useNativeText: 0, ref: 0 }));
     const tmp3 = closure_16;
     if (color == null) {
       color = "text-default";
@@ -73,13 +72,11 @@ class Text {
     const obj = PlainTextExperimentContext;
     const plainTextExperimentEnabled = obj.usePlainTextExperimentEnabled();
     const context = react.useContext(closure_7);
-    const obj2 = useTypographyVariantRemap;
-    const typographyVariantRemap = obj2.useTypographyVariantRemap(variant, false);
-    items = [fromEntries2Result[typographyVariantRemap], tmp3Result.text, , ];
-    const obj3 = useManaTextMigrationHighlight;
-    const tmp11 = includeFontPadding ? items : closure_11;
-    const manaTextMigrationHighlight = obj3.useManaTextMigrationHighlight(fromEntries2Result[typographyVariantRemap], style);
-    const arraySpreadResult = HermesBuiltin.arraySpread(items, tmp11, 2);
+    items = [fromEntries2Result[variant], tmp3Result.text, , ];
+    const obj2 = useManaTextMigrationHighlight;
+    const tmp10 = includeFontPadding ? items : closure_11;
+    const manaTextMigrationHighlight = obj2.useManaTextMigrationHighlight(fromEntries2Result[variant], style);
+    const arraySpreadResult = HermesBuiltin.arraySpread(items, tmp10, 2);
     items[arraySpreadResult] = style;
     items[arraySpreadResult + 1] = manaTextMigrationHighlight;
     const element = { animated: flag, children, enabled: plainTextExperimentEnabled, experimentalUseNativeText: flag2, hasRef: null != ref, hasTextAncestor: context, isIOS: tmp5Result3.isIOS(), props: merged, style: items };
@@ -91,11 +88,11 @@ class Text {
     if (tmp5Result4.isPlainTextEligible(plainTextEligibility)) {
       ({ fontWeight, textAlignVertical, verticalAlign, letterSpacing } = plainTextEligibility);
       ({ color: color2, fontSize, fontFamily, fontStyle, textAlign, textDecorationLine, lineHeight } = plainTextEligibility);
-      const obj4 = { text: children, color: color2, fontSize, fontFamily, fontWeight: StringResult, fontStyle, textAlign, textAlignVertical, textDecorationLine, lineHeight, letterSpacing, hasLetterSpacing: undefined !== letterSpacing, style: tmp21, numberOfLines: lineClamp, ellipsizeMode, allowFontScaling: true };
+      const obj3 = { text: children, color: color2, fontSize, fontFamily, fontWeight: StringResult, fontStyle, textAlign, textAlignVertical, textDecorationLine, lineHeight, letterSpacing, hasLetterSpacing: undefined !== letterSpacing, style: tmp20, numberOfLines: lineClamp, ellipsizeMode, allowFontScaling: true };
       StringResult = undefined;
-      tmp21 = _objectWithoutProperties(plainTextEligibility, closure_3);
-      const tmp22 = jsx;
-      const tmp24 = _modDef5633;
+      tmp20 = _objectWithoutProperties(plainTextEligibility, closure_3);
+      const tmp21 = jsx;
+      const tmp23 = _modDef5757;
       if (null != fontWeight) {
         const _String = String;
         StringResult = String(fontWeight);
@@ -111,7 +108,7 @@ class Text {
         ellipsizeMode = "tail";
       }
       const merged1 = Object.assign(merged);
-      return tmp22(tmp24, obj4);
+      return tmp21(tmp23, obj3);
     } else {
       let NativeText;
       if (flag2) {
@@ -119,14 +116,14 @@ class Text {
       } else {
         NativeText = flag ? closure_9 : Text2;
       }
-      const obj5 = { style: items, numberOfLines: lineClamp, ellipsizeMode: str, allowFontScaling: true, ref: variant.ref, children };
+      const obj4 = { style: items, numberOfLines: lineClamp, ellipsizeMode: str, allowFontScaling: true, ref: animated.ref, children };
       str = ellipsizeMode;
-      const tmp15 = jsx;
+      const tmp14 = jsx;
       if (ellipsizeMode == null) {
         str = "tail";
       }
       const merged2 = Object.assign(merged);
-      return tmp15(NativeText, obj5);
+      return tmp14(NativeText, obj4);
     }
   }
 }
@@ -135,7 +132,7 @@ const Text2 = react_native.Text;
 let closure_7 = react_native.unstable_TextAncestorContext;
 const Fonts = Constants.Fonts;
 const jsx = Fragment.jsx;
-let closure_9 = ReanimatedRexport.createAnimatedComponent(Text2);
+let closure_9 = module_1652.createAnimatedComponent(Text2);
 let items = [{ includeFontPadding: true }];
 let closure_11 = [];
 const keys = Object.keys(nativeDefault.colors);
@@ -148,62 +145,54 @@ let closure_12 = fromEntries(keys.map((item) => {
 }));
 let obj = { 400: null, 500: null, 600: null, 700: null, 800: null };
 ({ PRIMARY_NORMAL: obj2[400], PRIMARY_MEDIUM: obj2[500], PRIMARY_SEMIBOLD: obj2[600], PRIMARY_BOLD: obj2[700], PRIMARY_EXTRABOLD: obj2[800] } = Fonts);
-let obj3 = { 800: null };
-obj3[800] = Fonts.GINTO_NORD_EXTRA_BOLD;
-let obj4 = { 700: null };
-obj4[700] = Fonts.GINTO_DISCORD_NORD_BOLD;
+let obj3 = { 700: null };
+obj3[700] = Fonts.GINTO_DISCORD_NORD_BOLD;
 const obj6 = { 400: null, 700: null };
-({ CODE_NORMAL: obj5[400], CODE_BOLD: obj5[700] } = Fonts);
-const obj8 = { 800: null };
-obj8[800] = Fonts.GINTO_NORD_EXTRA_BOLD_ITALIC;
-const obj9 = { 700: null, 900: null };
-({ GINTO_DISCORD_NORD_BOLD_ITALIC: obj7[700], GINTO_DISCORD_NORD_BLACK_ITALIC: obj7[900] } = Fonts);
-let closure_13 = { headline: obj3, nitro: obj4, primary: obj, code: obj6 };
-let closure_14 = { headline: obj8, nitro: obj9 };
+({ CODE_NORMAL: obj4[400], CODE_BOLD: obj4[700] } = Fonts);
+const obj7 = { 700: null, 900: null };
+({ GINTO_DISCORD_NORD_BOLD_ITALIC: obj5[700], GINTO_DISCORD_NORD_BLACK_ITALIC: obj5[900] } = Fonts);
+let closure_13 = { nitro: obj3, primary: obj, code: obj6 };
+let closure_14 = { nitro: obj7 };
 const fromEntries2 = Object.fromEntries;
 const TextVariantsFlat = TextVariants.TextVariantsFlat;
-const mapped = TextVariantsFlat.map((name) => {
+const mapped = TextVariantsFlat.map((fontSize) => {
   let fontStack;
+  let obj4;
   let result;
   let str;
   let weight;
-  let tmp = null;
-  if ("code" !== name.name) {
-    let obj;
-    items = [name.name, ];
-    const obj2 = { fontSize: null, lineHeight: null, textTransform: str, includeFontPadding: false, letterSpacing: result };
-    ({ size: obj4.fontSize, lineHeight: obj4.lineHeight } = name);
-    str = "none";
-    if (name.uppercase) {
-      str = "uppercase";
-    }
-    ({ fontStack, weight } = name);
-    const str1 = weight.toString();
-    if (name.italic) {
-      let obj7;
-      let tmp6;
-      if (closure_14[fontStack] != null) {
-        tmp6 = tmp5[str1];
-      }
-      if (null != tmp6) {
-        obj7 = { fontFamily: tmp6, fontStyle: "normal" };
-        const obj3 = { fontFamily: tmp6, fontStyle: "normal" };
-      } else {
-        obj7 = { fontFamily: closure_13[fontStack][str1], fontStyle: "italic" };
-      }
-      obj = obj7;
-    } else {
-      obj = { fontFamily: closure_13[fontStack][str1] };
-    }
-    const merged = Object.assign(obj);
-    result = undefined;
-    if ("letterSpacing" in name) {
-      result = name.letterSpacing / 10;
-    }
-    items[1] = obj2;
-    tmp = items;
+  const letterSpacing = fontSize.letterSpacing;
+  items = [fontSize.name, ];
+  const obj = { fontSize: fontSize.size, lineHeight: fontSize.lineHeight, textTransform: str, includeFontPadding: false, letterSpacing: result };
+  str = "none";
+  if (fontSize.uppercase) {
+    str = "uppercase";
   }
-  return tmp;
+  ({ fontStack, weight } = fontSize);
+  const str1 = weight.toString();
+  if (fontSize.italic) {
+    let obj3;
+    let tmp6;
+    if (closure_14[fontStack] != null) {
+      tmp6 = tmp4[str1];
+    }
+    if (null != tmp6) {
+      obj3 = { fontFamily: tmp6, fontStyle: "normal" };
+      const obj2 = { fontFamily: tmp6, fontStyle: "normal" };
+    } else {
+      obj3 = { fontFamily: closure_13[fontStack][str1], fontStyle: "italic" };
+    }
+    obj4 = obj3;
+  } else {
+    obj4 = { fontFamily: closure_13[fontStack][str1] };
+  }
+  const merged = Object.assign(obj4);
+  result = undefined;
+  if (null != letterSpacing) {
+    result = letterSpacing / 10;
+  }
+  items[1] = obj;
+  return items;
 });
 const fromEntries2Result = fromEntries2(mapped.filter(Boolean));
 let result = useManaTextMigrationHighlight.withManaTextMigrationHighlight(fromEntries2Result);
@@ -224,10 +213,6 @@ const result1 = size.fileFinishedImporting("design/components/Text/native/Text.t
 export const TextStyleSheet = result;
 export { Text };
 export function Heading(ref) {
-  ref = ref.ref;
-  const merged = Object.assign(ref, Object.assign({ ref: 0 }));
-  const obj = useTypographyVariantRemap;
-  const typographyVariantRemap = obj.useTypographyVariantRemap(merged.variant, true);
-  const merged1 = Object.assign(merged);
-  return <Text ref={ref} accessibilityRole="header" variant={typographyVariantRemap} />;
+  const merged = Object.assign(Object.assign(ref, Object.assign({ ref: 0 })));
+  return <Text ref={arg0.ref} accessibilityRole="header" />;
 }

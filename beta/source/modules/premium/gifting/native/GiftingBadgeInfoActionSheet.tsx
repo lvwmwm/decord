@@ -1,28 +1,28 @@
-// Module ID: 10615
-// Function ID: 10616
+// Module ID: 10735
+// Function ID: 10736
 // Name: GiftingBadgeInfoActionSheet
-// Dependencies: [19, 17, 5015, 8763, 1072, 21, 5014, 575, 1625, 504, 8755, 1252, 5272, 5624, 1113, 2634, 10616, 10619, 2]
+// Dependencies: [19, 17, 5141, 8834, 1072, 21, 5140, 575, 1627, 504, 8826, 1252, 5388, 5751, 1113, 2760, 10736, 10738, 2]
 // Exports: default
 
-// Module 10615 (GiftingBadgeInfoActionSheet)
+// Module 10735 (GiftingBadgeInfoActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1625 */;
-import _modDef2634 from "module_2634" /* 2634 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import BadgeDirectoryStore2 from "BadgeDirectoryStore" /* 8763 */;
-import GiftingBadgesUtils from "GiftingBadgesUtils" /* 10616 */;
-import GiftingBadgeIconDefault from "GiftingBadgeIcon" /* 10619 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
+import _modDef2760 from "module_2760" /* 2760 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import BadgeDirectoryStore2 from "BadgeDirectoryStore" /* 8834 */;
+import GiftingBadgesUtils from "GiftingBadgesUtils" /* 10736 */;
+import GiftingBadgeIconDefault from "GiftingBadgeIcon" /* 10738 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5015 */;
+import AccessibilityStore from "AccessibilityStore" /* 5141 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 const BadgeDirectoryStore = BadgeDirectoryStore2;
-let BottomSheet, _require, importDefault;
+let _require, importDefault;
 
 let c10;
 let c9;
@@ -79,15 +79,15 @@ export default function GiftingBadgeInfoActionSheet() {
   let obj3 = { style: items2, children: items4 };
   items2 = [tmp.container, ];
   let obj4 = { paddingBottom: bottom + nativeDefault.space.PX_16 };
-  BottomSheet = require("Sheet/BottomSheet").BottomSheet;
+  const BottomSheet = require("Sheet/BottomSheet").BottomSheet;
   let tmp5 = closure_10;
   items2[1] = obj4;
   let obj5 = { style: tmp.headerContainer, children: items3 };
-  let obj6 = { style: tmp.title, variant: "heading-xl/semibold", color: "text-strong", accessibilityRole: "header", children: intl.string(_modDef2634["0MB2C6"]) };
+  let obj6 = { style: tmp.title, variant: "heading-xl/semibold", color: "text-strong", accessibilityRole: "header", children: intl.string(_modDef2760["0MB2C6"]) };
   let Text = require("Text/Text").Text;
   intl = require("intl").intl;
   items3 = [closure_9(Text, obj6), ];
-  let obj7 = { style: tmp.description, variant: "text-md/medium", color: "text-default", children: intl2.string(_modDef2634.k9sNVH) };
+  let obj7 = { style: tmp.description, variant: "body-md/medium", color: "text-default", children: intl2.string(_modDef2760.k9sNVH) };
   const Text2 = require("Text/Text").Text;
   intl2 = require("intl").intl;
   items3[1] = closure_9(Text2, obj7);
@@ -132,13 +132,13 @@ export default function GiftingBadgeInfoActionSheet() {
           tmp10 = React4(tmp6, obj3);
         }
         items = [tmp10, , ];
-        const obj5 = { variant: "text-lg/semibold", color: "text-strong", children: children.name };
+        const obj5 = { variant: "body-lg/semibold", color: "text-strong", children: children.name };
         items[1] = React4(Text_Text.Text, obj5);
         let tmp13Result = null != tmp4;
         const tmp13 = React4;
         if (tmp13Result) {
-          const obj6 = { variant: "text-md/normal", color: "text-subtle", children: intl.formatToPlainString(_modDef2634.qvx9E4, obj7) };
-          const Text = tmp8(5624).Text;
+          const obj6 = { variant: "body-md/normal", color: "text-subtle", children: intl.formatToPlainString(_modDef2760.qvx9E4, obj7) };
+          const Text = tmp8(5751).Text;
           intl = tmp8(1113).intl;
           obj7 = { count: tmp4 };
           tmp13Result = tmp13(Text, obj6);

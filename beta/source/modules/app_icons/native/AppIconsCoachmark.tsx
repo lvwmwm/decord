@@ -1,26 +1,24 @@
-// Module ID: 19018
-// Function ID: 19019
+// Module ID: 19393
+// Function ID: 19394
 // Name: AppIconsCoachmark
-// Dependencies: [19, 17, 1383, 4860, 21, 5014, 575, 504, 2047, 5258, 5272, 5717, 19019, 1187, 10048, 5624, 1113, 5634, 15339, 2]
+// Dependencies: [19, 17, 1385, 4986, 21, 5140, 575, 504, 2171, 5374, 5388, 5842, 19394, 1187, 10169, 5751, 1113, 5758, 15625, 2]
 // Exports: default
 
-// Module 19018 (AppIconsCoachmark)
+// Module 19393 (AppIconsCoachmark)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 2047 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4860 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import FastImageDefault from "FastImage" /* 5717 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10048 */;
-import AppIconUtils from "AppIconUtils" /* 15339 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 19019 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 2171 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4986 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
+import FastImageDefault from "FastImage" /* 5842 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10169 */;
+import AppIconUtils from "AppIconUtils" /* 15625 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 19394 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1383 */;
+import UserStore from "UserStore" /* 1385 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
-
-let BottomSheet;
 
 let metroImportAll;
 let metroImportDefault;
@@ -72,7 +70,7 @@ export default function AppIconsCoachmarkActionSheet(markAsDismissed) {
     children: items4
   };
   const obj4 = { style: tmp.info, children: items2 };
-  BottomSheet = markAsDismissed(5272).BottomSheet;
+  const BottomSheet = markAsDismissed(5388).BottomSheet;
   const obj5 = { source: AssetRegistryDefault2, style: tmp.image };
   const tmp10 = FastImageDefault;
   items2 = [closure_7(tmp10, obj5), , ];
@@ -80,13 +78,13 @@ export default function AppIconsCoachmarkActionSheet(markAsDismissed) {
   const obj7 = { source: AssetRegistryDefault, size: markAsDismissed(1187).IconSizes.MEDIUM, style: tmp.nitroWheel, disableColor: true };
   const Icon = markAsDismissed(1187).Icon;
   items3 = [closure_7(Icon, obj7), ];
-  const obj8 = { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl.string(markAsDismissed(1113).t.EfA4Cq) };
-  const Text = markAsDismissed(5624).Text;
+  const obj8 = { variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: intl.string(markAsDismissed(1113).t.EfA4Cq) };
+  const Text = markAsDismissed(5751).Text;
   intl = markAsDismissed(1113).intl;
   items3[1] = closure_7(Text, obj8);
   items2[1] = closure_8(View, obj6);
-  const obj9 = { variant: "text-md/normal", color: "text-default", style: tmp.subtitle, children: stringResult };
-  const Text2 = markAsDismissed(5624).Text;
+  const obj9 = { variant: "body-md/normal", color: "text-default", style: tmp.subtitle, children: stringResult };
+  const Text2 = markAsDismissed(5751).Text;
   const intl2 = markAsDismissed(1113).intl;
   const string = intl2.string;
   const t = markAsDismissed(1113).t;
@@ -110,11 +108,11 @@ export default function AppIconsCoachmarkActionSheet(markAsDismissed) {
       const result = obj2.navigateToAppIconSettings();
     }
   };
-  const Button = tmp2(5634).Button;
+  const Button = tmp2(5758).Button;
   intl3 = tmp2(1113).intl;
   items5 = [closure_7(Button, obj11), ];
   const obj12 = { variant: "secondary", text: intl4.string(tmp2(1113).t.iSrIIZ), onPress: callback };
-  const Button2 = tmp2(5634).Button;
+  const Button2 = tmp2(5758).Button;
   intl4 = tmp2(1113).intl;
   items5[1] = closure_7(Button2, obj12);
   items4[1] = closure_8(View, obj10);

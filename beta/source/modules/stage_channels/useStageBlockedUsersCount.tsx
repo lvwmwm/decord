@@ -1,12 +1,12 @@
-// Module ID: 8175
-// Function ID: 8176
+// Module ID: 8244
+// Function ID: 8245
 // Name: useStageBlockedUsersCount
-// Dependencies: [6713, 504, 6759, 2]
+// Dependencies: [6768, 504, 6814, 2]
 // Exports: getStageBlockedUsersCount, getStageIgnoredUsersCount, useStageBlockedUsers, useStageBlockedUsersCount, useStageIgnoredUsers, useStageIgnoredUsersCount
 
-// Module 8175 (useStageBlockedUsersCount)
-import StageChannelParticipants from "StageChannelParticipants" /* 6759 */;
-import StageChannelParticipantStore from "StageChannelParticipantStore" /* 6713 */;
+// Module 8244 (useStageBlockedUsersCount)
+import StageChannelParticipants from "StageChannelParticipants" /* 6814 */;
+import StageChannelParticipantStore from "StageChannelParticipantStore" /* 6768 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -14,7 +14,20 @@ let _require;
 
 const result = size.fileFinishedImporting("modules/stage_channels/useStageBlockedUsersCount.tsx");
 
-export function useStageBlockedUsersCount(id1) {
+export function useStageBlockedUsersCount(id) {
+  _require = id;
+  const items = [StageChannelParticipantStore];
+  const items1 = [id];
+  const obj = require("get initialized");
+  return obj.useStateFromStores(items, () => {
+    let num = 0;
+    if (null != id) {
+      num = StageChannelParticipantStore.getParticipantCount(tmp, StageChannelParticipants.StageChannelParticipantNamedIndex.BLOCKED);
+    }
+    return num;
+  }, items1);
+}
+export function useStageIgnoredUsersCount(id1) {
   _require = id1;
   const items = [StageChannelParticipantStore];
   const items1 = [id1];
@@ -22,19 +35,6 @@ export function useStageBlockedUsersCount(id1) {
   return obj.useStateFromStores(items, () => {
     let num = 0;
     if (null != id1) {
-      num = StageChannelParticipantStore.getParticipantCount(tmp, StageChannelParticipants.StageChannelParticipantNamedIndex.BLOCKED);
-    }
-    return num;
-  }, items1);
-}
-export function useStageIgnoredUsersCount(id2) {
-  _require = id2;
-  const items = [StageChannelParticipantStore];
-  const items1 = [id2];
-  const obj = require("get initialized");
-  return obj.useStateFromStores(items, () => {
-    let num = 0;
-    if (null != id2) {
       num = StageChannelParticipantStore.getParticipantCount(tmp, StageChannelParticipants.StageChannelParticipantNamedIndex.IGNORED);
     }
     return num;

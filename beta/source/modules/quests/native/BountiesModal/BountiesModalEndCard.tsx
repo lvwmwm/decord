@@ -1,25 +1,26 @@
-// Module ID: 16973
-// Function ID: 16974
+// Module ID: 17296
+// Function ID: 17297
 // Name: BountiesModalEndCard
-// Dependencies: [17, 21, 5014, 5095, 5254, 5257, 5587, 16962, 2]
+// Dependencies: [17, 21, 5140, 1652, 5370, 5373, 5715, 17285, 2]
 // Exports: default
 
-// Module 16973 (BountiesModalEndCard)
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 5095 */;
-import timing from "timing" /* 5254 */;
-import LinearGradientDefault from "LinearGradient" /* 5587 */;
-import BountiesEndCardPressableCtaDefault from "BountiesEndCardPressableCta" /* 16962 */;
+// Module 17296 (BountiesModalEndCard)
+import _mod1652 from "module_1652" /* 1652 */;
+import timing_timing from "timing/timing" /* 5370 */;
+import timingPresets from "timingPresets" /* 5373 */;
+import LinearGradientDefault from "LinearGradient" /* 5715 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
+
+const _modDef1652 = _mod1652;
+let num;
 
 let c3;
 let closure_4;
 let hasOwnProperty;
 let metroRequire;
-let tmp;
-const timingPresets = tmp(5257);
 ({ StyleSheet: c3, View: closure_4 } = react_native);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let closure_7 = createStyles.createStyles(() => {
@@ -32,43 +33,62 @@ let closure_7 = createStyles.createStyles(() => {
   const merged1 = Object.assign(_false.absoluteFillObject);
   return obj;
 });
-const __initData = { code: "function BountiesModalEndCardTsx1(){const{withTiming,visible,timingStandard}=this.__closure;return{opacity:withTiming(visible?1:0,timingStandard)};}" };
+let closure_8 = { code: "(function BountiesModalEndCardTsx1(){let[withTiming,visible,timingStandard]=this.__closure;return{opacity:withTiming(visible?1:0,timingStandard)};})" };
 const result = size.fileFinishedImporting("modules/quests/native/BountiesModal/BountiesModalEndCard.tsx");
 
 export default function BountiesModalEndCard(visible) {
   let bounty;
-  let items;
-  let items1;
+  let items2;
+  let items3;
   let sourceQuestContent;
+  let tmp4;
+  let tmp5;
+  let tmp6;
+  let tmp7;
   visible = visible.visible;
   ({ bounty, sourceQuestContent } = visible);
   let tmp = closure_7();
-  const tmp3 = visible(5095);
-  const fn = function y() {
-    let num = 0;
-    const withTiming = timing.withTiming;
-    timing;
-    if (visible) {
-      num = 1;
+  _mod1652;
+  const items = [closure_8, timing_timing.withTiming, visible, timingPresets.timingStandard];
+  let c0;
+  let c1;
+  let c2;
+  [tmp4, tmp5, tmp6, tmp7] = items;
+  class BountiesModalEndCardTsx1 {
+    constructor() {
+      num = 0;
+      tmp = closure_0;
+      if (closure_1) {
+        num = 1;
+      }
+      obj = { opacity: tmp(num, closure_2) };
+      return obj;
     }
-    const obj = { opacity: withTiming(num, timingPresets.timingStandard) };
-    return obj;
-  };
-  let obj = { withTiming: visible(5254).withTiming, visible, timingStandard: visible(5257).timingStandard };
-  fn.__closure = obj;
-  fn.__workletHash = 15062259404736;
-  fn.__initData = __initData;
+  }
+  const items1 = [tmp5, tmp6, tmp7];
+  BountiesModalEndCardTsx1.__closure = items1;
+  BountiesModalEndCardTsx1.__workletHash = 9535355368761;
+  BountiesModalEndCardTsx1.__initData = tmp4;
   if (visible) {
-    const obj2 = { style: items, pointerEvents: "box-none", children: items1 };
-    items = [tmp.container, tmp4];
-    const obj3 = { style: tmp.backdropTint };
-    const View = ReanimatedRexportDefault.View;
-    items1 = [closure_5(closure_4, obj3), , ];
-    const obj4 = { colors: ["rgba(0, 0, 0, 0.60)", "rgba(0, 0, 0, 1)"], locations: [0, 0.841], style: tmp.backdropGradient };
-    items1[1] = closure_5(LinearGradientDefault, obj4);
-    const obj5 = { bounty, sourceQuestContent };
-    items1[2] = closure_5(BountiesEndCardPressableCtaDefault, obj5);
-    visible = closure_6(View, obj2);
+    let obj = { style: items2, pointerEvents: "box-none", children: items3 };
+    items2 = [tmp.container, tmp8];
+    const obj2 = { style: tmp.backdropTint };
+    const View = _modDef1652.View;
+    items3 = [hasOwnProperty(React3, obj2), , ];
+    const obj3 = { colors: ["rgba(0, 0, 0, 0.60)", "rgba(0, 0, 0, 1)"], locations: [0, 0.841], style: tmp.backdropGradient };
+    items3[1] = hasOwnProperty(LinearGradientDefault, obj3);
+    class BountiesModalEndCardTsx1 {
+      constructor() {
+        num = 0;
+        tmp = closure_0;
+        if (closure_1) {
+          num = 1;
+        }
+        obj = { opacity: tmp(num, closure_2) };
+        return obj;
+      }
+    }
+    visible = metroRequire(View, obj);
   }
   return visible;
 };

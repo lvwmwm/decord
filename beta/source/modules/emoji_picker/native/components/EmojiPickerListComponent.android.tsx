@@ -1,28 +1,27 @@
-// Module ID: 10040
-// Function ID: 10041
+// Module ID: 10162
+// Function ID: 10163
 // Name: EmojiPickerListComponent
-// Dependencies: [19, 6796, 6799, 9942, 1228, 21, 5014, 5095, 10041, 5275, 1622, 4960, 7238, 10029, 2]
+// Dependencies: [19, 6851, 6854, 10064, 1228, 21, 5140, 1652, 10163, 5392, 1624, 1705, 5086, 7302, 10151, 2]
 // Exports: default
 
-// Module 10040 (EmojiPickerListComponent)
+// Module 10162 (EmojiPickerListComponent)
 import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1228 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4960 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 5095 */;
-import EmojiPickerConstants from "EmojiPickerConstants" /* 6799 */;
-import PortalToNativeViewDefault from "PortalToNativeView" /* 7238 */;
-import EmojiPickerListConstants from "EmojiPickerListConstants" /* 9942 */;
-import EmojiPickerPremiumSearchUpsell from "EmojiPickerPremiumSearchUpsell" /* 10029 */;
-import EmojiPickerNativeComponent2 from "EmojiPickerNativeComponent" /* 10041 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 5086 */;
+import EmojiPickerConstants from "EmojiPickerConstants" /* 6854 */;
+import PortalToNativeViewDefault from "PortalToNativeView" /* 7302 */;
+import EmojiPickerListConstants from "EmojiPickerListConstants" /* 10064 */;
+import EmojiPickerPremiumSearchUpsell from "EmojiPickerPremiumSearchUpsell" /* 10151 */;
+import EmojiPickerNativeComponent2 from "EmojiPickerNativeComponent" /* 10163 */;
 import react from "react" /* 19 */;
-import EmojiStore from "EmojiStore" /* 6796 */;
+import EmojiStore from "EmojiStore" /* 6851 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
-import BottomSheetModal from "BottomSheetModal" /* 5275 */;
-import MetaQuestUtils from "MetaQuestUtils" /* 1622 */;
+import createStyles from "createStyles" /* 5140 */;
+import module_1652 from "module_1652" /* 1652 */;
+import BottomSheetModal from "BottomSheetModal" /* 5392 */;
+import MetaQuestUtils from "MetaQuestUtils" /* 1624 */;
 import size from "module_2" /* 2 */;
 
 const EmojiPickerNativeComponentDefault = EmojiPickerNativeComponent2;
-const ReanimatedRexport = ReanimatedRexport2;
 let emojiId;
 
 let c10;
@@ -33,36 +32,43 @@ const IMAGE_SIZE = EmojiPickerListConstants.IMAGE_SIZE;
 const PADDING_VERTICAL = ExpressionPickerConstants.PADDING_VERTICAL;
 ({ jsx: metroImportAll, Fragment: c9, jsxs: c10 } = Fragment);
 let closure_11 = createStyles.createStyles({ container: { flex: 1 } });
-const EmojiPickerNativeComponent = ReanimatedRexport.createAnimatedComponent(EmojiPickerNativeComponentDefault);
+const EmojiPickerNativeComponent = module_1652.createAnimatedComponent(EmojiPickerNativeComponentDefault);
 let closure_12 = BottomSheetModal.createBottomSheetScrollableComponent(BottomSheetModal.SCROLLABLE_TYPE.SCROLLVIEW, EmojiPickerNativeComponent);
 let closure_13 = MetaQuestUtils.isMetaQuest();
-const __initData = { code: "function EmojiPickerListComponentAndroidTsx1(){const{bottomSheetIndex}=this.__closure;return bottomSheetIndex.get();}" };
-const __initData2 = { code: "function EmojiPickerListComponentAndroidTsx2(index){const{inPortalKeyboard,IS_META_QUEST,runOnJS,scrollingEnabled}=this.__closure;if(!inPortalKeyboard||index<0||IS_META_QUEST){return;}if(index===0){runOnJS(scrollingEnabled)(false);}else if(index===1){runOnJS(scrollingEnabled)(true);}}" };
+let closure_14 = { code: "(function EmojiPickerListComponentAndroidTsx1(){let[bottomSheetIndex]=this.__closure;return bottomSheetIndex.get();})" };
+let closure_15 = { code: "(function EmojiPickerListComponentAndroidTsx2(index){let[inPortalKeyboard,IS_META_QUEST,scheduleOnRN,scrollingEnabled]=this.__closure;if(!inPortalKeyboard||index<0||IS_META_QUEST){return;}if(index===0){scheduleOnRN(scrollingEnabled,false);}else if(index===1){scheduleOnRN(scrollingEnabled,true);}})" };
 let result = size.fileFinishedImporting("modules/emoji_picker/native/components/EmojiPickerListComponent.android.tsx");
 
 export default function EmojiPickerListComponent(analyticsLocations) {
-  let items8;
+  let bottomSheetIndex;
+  let inPortalKeyboard;
+  let items12;
   let paddingBottom;
   let paddingTop;
   let ref;
+  let tmp10;
+  let tmp11;
+  let tmp12;
+  let tmp13;
+  let tmp14;
+  let tmp8;
+  let tmp9;
   analyticsLocations = analyticsLocations.analyticsLocations;
-  const bottomSheetIndex = analyticsLocations.bottomSheetIndex;
   const categoryIndexActive = analyticsLocations.categoryIndexActive;
   const data = analyticsLocations.data;
   const animateEmoji = analyticsLocations.animateEmoji;
   const guildId = analyticsLocations.guildId;
-  const inPortalKeyboard = analyticsLocations.inPortalKeyboard;
   const onPressEmoji = analyticsLocations.onPressEmoji;
   const onLongPressEmoji = analyticsLocations.onLongPressEmoji;
   const onShowNitroUpsell = analyticsLocations.onShowNitroUpsell;
   const useTier0UpsellContent = analyticsLocations.useTier0UpsellContent;
-  let ref1;
   let callback1;
-  ({ paddingTop, paddingBottom, ref } = analyticsLocations);
-  let tmp = ref1();
-  ref1 = data.useRef(null);
+  ({ bottomSheetIndex, inPortalKeyboard, paddingTop, paddingBottom, ref } = analyticsLocations);
+  let obj = animateEmoji;
+  let tmp = closure_11();
+  const ref1 = animateEmoji.useRef(null);
   const items = [ref1, data];
-  const effect = data.useEffect(() => {
+  const effect = animateEmoji.useEffect(() => {
     let hasGuildData = null != ref1.current;
     const tmp = ref1;
     if (hasGuildData) {
@@ -73,48 +79,61 @@ export default function EmojiPickerListComponent(analyticsLocations) {
       Commands.refreshEmojis(tmp.current);
     }
   }, items);
-  const scrollingEnabled = data.useCallback((arg0) => {
+  const callback = animateEmoji.useCallback((arg0) => {
     if (null != ref1.current) {
       const Commands = EmojiPickerNativeComponent2.Commands;
       Commands.scrollingEnabled(tmp.current, arg0);
     }
   }, []);
-  let obj = analyticsLocations(categoryIndexActive[7]);
-  class H {
+  let tmp5 = analyticsLocations;
+  const items1 = [closure_14, bottomSheetIndex];
+  let c0;
+  [tmp8, tmp9] = items1;
+  const tmp6 = data;
+  const tmp7 = analyticsLocations(data[7]);
+  class EmojiPickerListComponentAndroidTsx1 {
     constructor() {
-      return bottomSheetIndex.get();
+      return _undefined.get();
     }
   }
-  H.__closure = { bottomSheetIndex };
-  H.__workletHash = 10656486632396;
-  H.__initData = __initData;
-  class D {
+  const items2 = [tmp9];
+  EmojiPickerListComponentAndroidTsx1.__closure = items2;
+  EmojiPickerListComponentAndroidTsx1.__workletHash = 7865271848533;
+  EmojiPickerListComponentAndroidTsx1.__initData = tmp8;
+  const items3 = [closure_15, inPortalKeyboard, closure_13, , ];
+  const useAnimatedReaction = tmp7.useAnimatedReaction;
+  items3[3] = tmp5(tmp6[11]).scheduleOnRN;
+  items3[4] = callback;
+  c0 = undefined;
+  let c1;
+  let c2;
+  let c3;
+  [tmp10, tmp11, tmp12, tmp13, tmp14] = items3;
+  class EmojiPickerListComponentAndroidTsx2 {
     constructor(arg0) {
-      let tmp = !inPortalKeyboard;
-      if (inPortalKeyboard) {
+      let tmp = !c0;
+      if (c0) {
         tmp = arg0 < 0;
       }
       if (!tmp) {
-        tmp = closure_13;
+        tmp = c1;
       }
       if (!tmp) {
         if (0 === arg0) {
-          const obj2 = ReanimatedRexport2;
-          obj2.runOnJS(callback)(false);
+          _undefined(c3, false);
         } else if (1 === arg0) {
-          const obj = ReanimatedRexport2;
-          obj.runOnJS(callback)(true);
+          _undefined(c3, true);
         }
       }
     }
   }
-  let obj2 = { inPortalKeyboard, IS_META_QUEST: callback1, runOnJS: analyticsLocations(categoryIndexActive[7]).runOnJS, scrollingEnabled };
-  D.__closure = obj2;
-  D.__workletHash = 2460528828147;
-  D.__initData = __initData2;
-  const animatedReaction = obj.useAnimatedReaction(H, D);
-  const items1 = [guildId];
-  callback1 = data.useCallback((emojiId) => {
+  const items4 = [tmp11, tmp12, tmp13, tmp14];
+  EmojiPickerListComponentAndroidTsx2.__closure = items4;
+  EmojiPickerListComponentAndroidTsx2.__workletHash = 15639036497539;
+  EmojiPickerListComponentAndroidTsx2.__initData = tmp10;
+  const animatedReaction = useAnimatedReaction(EmojiPickerListComponentAndroidTsx1, EmojiPickerListComponentAndroidTsx2);
+  const items5 = [guildId];
+  callback1 = obj.useCallback((emojiId) => {
     let byId;
     emojiId = emojiId.emojiId;
     if (null != emojiId) {
@@ -125,30 +144,30 @@ export default function EmojiPickerListComponent(analyticsLocations) {
       byId = obj.getByName(tmp);
     }
     return byId;
-  }, items1);
-  const items2 = [onPressEmoji, callback1];
-  const items3 = [onLongPressEmoji, callback1];
-  const callback2 = data.useCallback((nativeEvent) => {
+  }, items5);
+  const items6 = [onPressEmoji, callback1];
+  const items7 = [onLongPressEmoji, callback1];
+  const callback2 = obj.useCallback((nativeEvent) => {
     const tmp = callback1(nativeEvent.nativeEvent);
     if (null != tmp) {
       onPressEmoji(tmp);
     }
-  }, items2);
-  const items4 = [categoryIndexActive];
-  const callback3 = data.useCallback((nativeEvent) => {
+  }, items6);
+  const items8 = [categoryIndexActive];
+  const callback3 = obj.useCallback((nativeEvent) => {
     const tmp = callback1(nativeEvent.nativeEvent);
     if (null != tmp) {
       onLongPressEmoji(tmp);
     }
-  }, items3);
-  const items5 = [onShowNitroUpsell];
-  const callback4 = data.useCallback((nativeEvent) => {
+  }, items7);
+  const items9 = [onShowNitroUpsell];
+  const callback4 = obj.useCallback((nativeEvent) => {
     const result = categoryIndexActive.set(nativeEvent.nativeEvent.index);
-  }, items4);
-  const callback5 = data.useCallback((nativeEvent) => {
+  }, items8);
+  const callback5 = obj.useCallback((nativeEvent) => {
     onShowNitroUpsell(nativeEvent.nativeEvent.showNitroUpsell);
-  }, items5);
-  const imperativeHandle = data.useImperativeHandle(ref, () => {
+  }, items9);
+  const imperativeHandle = obj.useImperativeHandle(ref, () => {
     let ref;
     return {
       scrollToHeaderIndex(animated) {
@@ -158,7 +177,7 @@ export default function EmojiPickerListComponent(analyticsLocations) {
           flag = true;
         }
         if (null != ref.current) {
-          const Commands = analyticsLocations(categoryIndexActive[8]).Commands;
+          const Commands = analyticsLocations(data[8]).Commands;
           Commands.scrollToHeaderIndex(tmp.current, index, flag);
         }
       },
@@ -170,13 +189,13 @@ export default function EmojiPickerListComponent(analyticsLocations) {
       }
     };
   });
-  const items6 = [animateEmoji];
-  const items7 = [guildId, analyticsLocations, useTier0UpsellContent, data.hasSearchUpsell];
-  const obj3 = { config: data.useMemo(() => ({ animateEmoji, scrollFastOptimizationEnabled: true, scrollFastVelocity: 8000, disableAnimationsOnScroll: true }), items6), emojiData: data, emojiMargin: onPressEmoji, emojiSize: inPortalKeyboard, onPressEmoji: callback2, onLongPressEmoji: callback3, onStickyHeaderRender: callback4, onShowNitroUpsell: callback5, paddingTop, paddingBottom, useTier0UpsellContent, ref: ref1, style: tmp.container };
-  const obj4 = { children: items8 };
-  items8 = [onLongPressEmoji(scrollingEnabled, obj3), ];
-  onLongPressEmoji(scrollingEnabled, obj3);
-  items8[1] = data.useMemo(() => {
+  const items10 = [animateEmoji];
+  let obj2 = { config: obj.useMemo(() => ({ animateEmoji, scrollFastOptimizationEnabled: true, scrollFastVelocity: 8000, disableAnimationsOnScroll: true }), items10), emojiData: data, emojiMargin: onShowNitroUpsell, emojiSize: onLongPressEmoji, onPressEmoji: callback2, onLongPressEmoji: callback3, onStickyHeaderRender: callback4, onShowNitroUpsell: callback5, paddingTop, paddingBottom, useTier0UpsellContent, ref: ref1, style: tmp.container };
+  const items11 = [guildId, analyticsLocations, useTier0UpsellContent, data.hasSearchUpsell];
+  const obj3 = { children: items12 };
+  items12 = [useTier0UpsellContent(closure_12, obj2), ];
+  useTier0UpsellContent(closure_12, obj2);
+  items12[1] = obj.useMemo(() => {
     let obj2;
     let tmp = null;
     if (data.hasSearchUpsell) {
@@ -186,6 +205,6 @@ export default function EmojiPickerListComponent(analyticsLocations) {
       tmp = metroImportAll(tmp5, obj);
     }
     return tmp;
-  }, items7);
-  return useTier0UpsellContent(onShowNitroUpsell, obj4);
+  }, items11);
+  return callback1(ref1, obj3);
 };

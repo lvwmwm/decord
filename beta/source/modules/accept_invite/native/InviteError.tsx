@@ -1,28 +1,28 @@
-// Module ID: 14331
-// Function ID: 14332
+// Module ID: 14567
+// Function ID: 14568
 // Name: InviteError
-// Dependencies: [19, 17, 1072, 21, 5014, 575, 5021, 5253, 14332, 14333, 14334, 1113, 5717, 5624, 5634, 1409, 1187, 14335, 6957, 2061, 2]
+// Dependencies: [19, 17, 1072, 21, 5140, 575, 5147, 5369, 14568, 14569, 14570, 1113, 5842, 5751, 5758, 1411, 1187, 14571, 7020, 2185, 2]
 // Exports: default
 
-// Module 14331 (InviteError)
+// Module 14567 (InviteError)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1409 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2061 */;
-import shared from "shared" /* 5021 */;
-import useThemeDefault from "useTheme" /* 5253 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import components_Button_Button from "components/Button/Button" /* 5634 */;
-import FastImageDefault from "FastImage" /* 5717 */;
-import GuildIcon from "GuildIcon" /* 6957 */;
-import InviteErrorUtils from "InviteErrorUtils" /* 14334 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14335 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2185 */;
+import shared from "shared" /* 5147 */;
+import useThemeDefault from "useTheme" /* 5369 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import components_Button_Button from "components/Button/Button" /* 5758 */;
+import FastImageDefault from "FastImage" /* 5842 */;
+import GuildIcon from "GuildIcon" /* 7020 */;
+import InviteErrorUtils from "InviteErrorUtils" /* 14570 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14571 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 const GuildIconDefault = GuildIcon;
@@ -46,7 +46,7 @@ function InviteErrorBase(invite) {
   const tmp = closure_10();
   const obj = shared;
   let code;
-  const tmp4Result = importDefault(obj.isThemeDark(useThemeDefault()) ? 14332 : 14333);
+  const tmp4Result = importDefault(obj.isThemeDark(useThemeDefault()) ? 14568 : 14569);
   const getDescriptiveInviteError = InviteErrorUtils.getDescriptiveInviteError;
   InviteErrorUtils;
   if (inviteError != null) {
@@ -69,9 +69,9 @@ function InviteErrorBase(invite) {
   const items = [, , , ];
   const obj2 = { style: tmp.expiredImage, source: tmp4Result };
   items[0] = metroImportDefault(FastImageDefault, obj2);
-  const obj3 = { style: tmp.expiredTitle, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: title };
+  const obj3 = { style: tmp.expiredTitle, variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: title };
   title = undefined;
-  const Text = tmp2(5624).Text;
+  const Text = tmp2(5751).Text;
   const tmp10 = React4;
   const tmp11 = metroImportAll;
   if (descriptiveInviteError != null) {
@@ -86,10 +86,10 @@ function InviteErrorBase(invite) {
   }
   const obj4 = { children: items };
   items[1] = metroImportDefault(Text, obj3);
-  const obj5 = { style: tmp.expiredBody, variant: "text-sm/medium", color: "text-default", children: stringResult };
+  const obj5 = { style: tmp.expiredBody, variant: "body-sm/medium", color: "text-default", children: stringResult };
   items[2] = metroImportDefault(Text_Text.Text, obj5);
   const obj6 = { variant: "primary", size: "lg", text: intl4.string(intl5.t.wcqOoF), onPress: handlePressClose };
-  const Button = tmp2(5634).Button;
+  const Button = tmp2(5758).Button;
   intl4 = tmp2(1113).intl;
   items[3] = metroImportDefault(Button, obj6);
   return tmp10(tmp11, obj4);
@@ -130,7 +130,7 @@ function InviteDisabledError(onPressClose) {
     const Text = Text_Text.Text;
     intl = intl5.intl;
     items1[1] = metroImportDefault(Text, obj8);
-    const obj9 = { style: tmp.disabledBody, variant: "text-md/normal", color: "text-default", children: format(RXSeLl, obj11) };
+    const obj9 = { style: tmp.disabledBody, variant: "body-md/normal", color: "text-default", children: format(RXSeLl, obj11) };
     const Text2 = Text_Text.Text;
     const intl2 = intl5.intl;
     format = intl2.format;

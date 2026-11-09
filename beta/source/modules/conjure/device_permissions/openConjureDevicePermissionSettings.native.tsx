@@ -1,13 +1,13 @@
-// Module ID: 14559
-// Function ID: 14560
+// Module ID: 14795
+// Function ID: 14796
 // Name: openConjureDevicePermissionSettings
-// Dependencies: [5258, 14560, 1994, 14560, 2]
+// Dependencies: [5374, 14796, 2118, 14796, 2]
 // Exports: default
 
-// Module 14559 (openConjureDevicePermissionSettings)
-import asyncRequire from "asyncRequire" /* 1994 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import ConjureDevicePermissionSettingsSheet from "ConjureDevicePermissionSettingsSheet" /* 14560 */;
+// Module 14795 (openConjureDevicePermissionSettings)
+import asyncRequire from "asyncRequire" /* 2118 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
+import ConjureDevicePermissionSettingsSheet from "ConjureDevicePermissionSettingsSheet" /* 14796 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/device_permissions/openConjureDevicePermissionSettings.native.tsx");
@@ -18,6 +18,6 @@ export default function _default(arg0) {
   ({ applicationId, appName } = arg0);
   const openLazy = ActionSheetActionCreatorsDefault.openLazy;
   ActionSheetActionCreatorsDefault;
-  const tmp2 = asyncRequire(14560, dependencyMap.paths);
+  const tmp2 = asyncRequire(14796, dependencyMap.paths);
   openLazy(tmp2, ConjureDevicePermissionSettingsSheet.CONJURE_DEVICE_PERMISSION_SETTINGS_SHEET_KEY, { applicationId, appName });
 };

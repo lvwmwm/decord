@@ -1,16 +1,16 @@
-// Module ID: 15976
-// Function ID: 15977
+// Module ID: 16294
+// Function ID: 16295
 // Name: SummarizedIconRow
-// Dependencies: [19, 17, 21, 5014, 575, 5624, 2]
+// Dependencies: [19, 17, 21, 5140, 575, 5751, 2]
 // Exports: OverflowCircle, OverflowText, OverflowTextSmall, default
 
-// Module 15976 (SummarizedIconRow)
+// Module 16294 (SummarizedIconRow)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5624 */;
+import Text_Text from "Text/Text" /* 5751 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -23,7 +23,7 @@ function OverflowSquircle(arg0) {
   ({ overflow, style } = arg0);
   const tmp = closure_4();
   const items = [tmp.overflowSquircleWrap, style];
-  ({ variant: "text-xs/medium", children: "+" + overflow });
+  ({ variant: "body-xs/medium", children: "+" + overflow });
   const Text = Text_Text.Text;
   return <View style={items}>{null}</View>;
 }
@@ -94,7 +94,7 @@ export function OverflowText(arg0) {
   let style;
   ({ overflow, style } = arg0);
   const items = [closure_4().overflowTextOnly, style];
-  ({ variant: "text-xs/medium", children: "+" + overflow });
+  ({ variant: "body-xs/medium", children: "+" + overflow });
   const Text = Text_Text.Text;
   return <View style={items}>{null}</View>;
 }
@@ -103,7 +103,7 @@ export function OverflowTextSmall(arg0) {
   let style;
   ({ overflow, style } = arg0);
   const items = [closure_4().overflowTextOnly, style];
-  ({ variant: "text-xxs/medium", children: "+" + overflow });
+  ({ variant: "footnote/medium", children: "+" + overflow });
   const Text = Text_Text.Text;
   return <View style={items}>{null}</View>;
 }
@@ -113,7 +113,7 @@ export function OverflowCircle(arg0) {
   ({ overflow, style } = arg0);
   const tmp = closure_4();
   const items = [tmp.overflowCircleWrap, style];
-  ({ variant: "text-xs/medium", children: "+" + overflow });
+  ({ variant: "body-xs/medium", children: "+" + overflow });
   const Text = Text_Text.Text;
   return <View style={items}>{null}</View>;
 }

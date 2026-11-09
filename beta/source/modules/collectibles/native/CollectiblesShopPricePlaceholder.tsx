@@ -1,19 +1,19 @@
-// Module ID: 9565
-// Function ID: 9566
+// Module ID: 9652
+// Function ID: 9653
 // Name: CollectiblesShopPricePlaceholder
-// Dependencies: [19, 21, 5014, 575, 5095, 5254, 2]
+// Dependencies: [19, 21, 5140, 575, 1652, 5370, 2]
 // Exports: CollectiblesShopPricePlaceholder
 
-// Module 9565 (CollectiblesShopPricePlaceholder)
+// Module 9652 (CollectiblesShopPricePlaceholder)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
-import timing from "timing" /* 5254 */;
+import _mod1652 from "module_1652" /* 1652 */;
+import timing_timing from "timing/timing" /* 5370 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
-const ReanimatedRexportDefault = ReanimatedRexport;
+const _modDef1652 = _mod1652;
 let set;
 
 let obj2;
@@ -21,32 +21,40 @@ const jsx = Fragment.jsx;
 let obj = { skeletonContainer: obj2 };
 obj2 = { height: 16, flex: 1, borderRadius: nativeDefault.radii.xs, backgroundColor: nativeDefault.colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND };
 let closure_5 = createStyles.createStyles(obj);
-const __initData = { code: "function CollectiblesShopPricePlaceholderTsx1(){const{opacity}=this.__closure;return{opacity:opacity.get()};}" };
+let closure_6 = { code: "(function CollectiblesShopPricePlaceholderTsx1(){let[opacity]=this.__closure;return{opacity:opacity.get()};})" };
 let result = size.fileFinishedImporting("modules/collectibles/native/CollectiblesShopPricePlaceholder.tsx");
 
 export function CollectiblesShopPricePlaceholder(style) {
+  let tmp5;
+  let tmp6;
   let sharedValue;
   style = style.style;
   const tmp = closure_5();
-  let obj = sharedValue(5095);
+  let obj = sharedValue(1652);
   sharedValue = obj.useSharedValue(0.3);
   const items = [sharedValue];
   const effect = react.useEffect(() => {
     set = sharedValue.set;
-    const withRepeat = ReanimatedRexport.withRepeat;
-    ReanimatedRexport;
-    const obj = timing;
+    const withRepeat = _mod1652.withRepeat;
+    _mod1652;
+    const obj = timing_timing;
     const result = set(withRepeat(obj.withTiming(1, { duration: 650 }), -1, true));
   }, items);
-  const fn = function h() {
-    const obj = { opacity: sharedValue.get() };
-    return obj;
-  };
-  fn.__closure = { opacity: sharedValue };
-  fn.__workletHash = 10107093534072;
-  fn.__initData = __initData;
-  const obj2 = sharedValue(5095);
-  const animatedStyle = obj2.useAnimatedStyle(fn);
-  const items1 = [tmp.skeletonContainer, style, animatedStyle];
-  return jsx(ReanimatedRexportDefault.View, { style: items1 });
+  const items1 = [closure_6, sharedValue];
+  let c0;
+  [tmp5, tmp6] = items1;
+  const obj2 = sharedValue(1652);
+  class CollectiblesShopPricePlaceholderTsx1 {
+    constructor() {
+      const obj = { opacity: _undefined.get() };
+      return obj;
+    }
+  }
+  const items2 = [tmp6];
+  CollectiblesShopPricePlaceholderTsx1.__closure = items2;
+  CollectiblesShopPricePlaceholderTsx1.__workletHash = 9548968657761;
+  CollectiblesShopPricePlaceholderTsx1.__initData = tmp5;
+  const animatedStyle = obj2.useAnimatedStyle(CollectiblesShopPricePlaceholderTsx1);
+  const items3 = [tmp.skeletonContainer, style, animatedStyle];
+  return jsx(_modDef1652.View, { style: items3 });
 }

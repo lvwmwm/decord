@@ -1,22 +1,22 @@
-// Module ID: 19090
-// Function ID: 19091
+// Module ID: 19466
+// Function ID: 19467
 // Name: ParentalConsentWarningBanner
-// Dependencies: [19, 17, 7716, 1072, 21, 575, 5014, 1625, 16765, 16764, 19091, 11858, 5596, 7730, 1252, 7717, 7563, 5624, 5587, 1113, 2538, 2]
+// Dependencies: [19, 17, 7792, 1072, 21, 575, 5140, 1627, 17088, 17087, 19467, 12020, 5724, 7806, 1252, 7793, 7635, 5751, 5715, 1113, 2664, 2]
 // Exports: default
 
-// Module 19090 (ParentalConsentWarningBanner)
+// Module 19466 (ParentalConsentWarningBanner)
 import nativeDefault from "native" /* 575 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import openUserSettings from "openUserSettings" /* 7563 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 7716 */;
-import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7717 */;
-import _modDef7730 from "module_7730" /* 7730 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import openUserSettings from "openUserSettings" /* 7635 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 7792 */;
+import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7793 */;
+import _modDef7806 from "module_7806" /* 7806 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -74,12 +74,12 @@ export default function ParentalConsentWarningBanner(children) {
   let obj4 = require("useGlobalStatusIndicatorState");
   const isVisible = obj4.useGlobalStatusIndicatorState().isVisible;
   let obj5 = require("useToken");
-  token = obj5.useToken(token(daysRemaining[5]).colors.BACKGROUND_FEEDBACK_WARNING);
+  token = obj5.useToken(token(daysRemaining[5]).colors.BACKGROUND_FEEDBACK_MOD_WARNING);
   let items = [token];
   daysRemaining = undefined;
   const memo = react.useMemo(() => {
     const items = [token, ];
-    const obj = _modDef7730(token);
+    const obj = _modDef7806(token);
     const setAlphaResult = obj.setAlpha(0);
     items[1] = setAlphaResult.toRgbString();
     return items;
@@ -116,7 +116,7 @@ export default function ParentalConsentWarningBanner(children) {
     obj4.openUserSettings(obj5);
   }, items1);
   const callback1 = obj6.useCallback((children, arg1) => {
-    const obj = { variant: "text-sm/medium", color: "text-strong", style: link.link, children };
+    const obj = { variant: "body-sm/medium", color: "text-strong", style: link.link, children };
     return unpackModuleId(Text_Text.Text, obj, arg1);
   }, items2);
   const items3 = [StyleSheet.absoluteFill, ];
@@ -145,7 +145,7 @@ export default function ParentalConsentWarningBanner(children) {
       items7 = [tmp.pressable, ];
       const obj12 = { paddingTop: tmp4.top + 8 };
       items7[1] = obj12;
-      obj13 = { variant: "text-sm/medium", color: "text-strong", lineClamp: 1, style: tmp.label, children: formatResult };
+      obj13 = { variant: "body-sm/medium", color: "text-strong", lineClamp: 1, style: tmp.label, children: formatResult };
       Text = tmp5(tmp3[17]).Text;
       const tmp24 = closure_4;
       if (0 === daysRemaining) {

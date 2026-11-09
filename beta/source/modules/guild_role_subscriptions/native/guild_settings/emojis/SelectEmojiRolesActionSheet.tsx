@@ -1,21 +1,21 @@
-// Module ID: 19992
-// Function ID: 19993
+// Module ID: 20402
+// Function ID: 20403
 // Name: SelectEmojiRolesActionSheet
-// Dependencies: [32, 19, 17, 4920, 21, 5014, 575, 1625, 7217, 17198, 504, 6980, 5624, 1113, 7321, 5272, 7223, 6974, 13265, 7306, 2]
+// Dependencies: [32, 19, 17, 5046, 21, 5140, 575, 1627, 7281, 17524, 504, 7043, 5751, 1113, 7382, 5388, 7287, 7037, 13498, 7050, 2]
 // Exports: default
 
-// Module 19992 (SelectEmojiRolesActionSheet)
+// Module 20402 (SelectEmojiRolesActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildRoleStore from "GuildRoleStore" /* 4920 */;
+import GuildRoleStore from "GuildRoleStore" /* 5046 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let BottomSheet, set;
+let set;
 
 let metroImportAll;
 let metroImportDefault;
@@ -83,7 +83,7 @@ export default function SelectEmojiRolesActionSheet(guildId) {
     accessibilityRole: "button",
     accessibilityState: { disabled: tmp10 },
     style: saveButtonDisabled,
-    children: tmp9(Text, { variant: "text-md/semibold", color: "text-brand", children: stringResult })
+    children: tmp9(Text, { variant: "body-md/semibold", color: "text-brand", children: stringResult })
   };
   tmp10 = !tmp7;
   saveButtonDisabled = undefined;
@@ -107,7 +107,7 @@ export default function SelectEmojiRolesActionSheet(guildId) {
   intl4 = tmp8(tmp3[13]).intl;
   let obj5 = { scrollable: true, header: tmp9(BottomSheetTitleHeader, obj4), startExpanded: true, onDismiss: onCancel, children: tmp9(tmp2(emoji[16]), obj6) };
   closure_7(BottomSheetTitleHeader, obj4);
-  BottomSheet = tmp8(tmp3[15]).BottomSheet;
+  const BottomSheet = tmp8(tmp3[15]).BottomSheet;
   obj6 = {
     inActionSheet: true,
     style: tmp.list,
@@ -157,7 +157,7 @@ export default function SelectEmojiRolesActionSheet(guildId) {
         obj5 = { role: closure_7[arg1], children: subscriptionListingsForGuild[arg1].name };
         tmp7Result = tmp7(tmp8, obj4);
       } else {
-        const obj6 = { style: closure_3.roleName, lineClamp: 1, variant: "text-md/medium", color: "interactive-text-active", children: subscriptionListingsForGuild[arg1].name };
+        const obj6 = { style: closure_3.roleName, lineClamp: 1, variant: "body-md/medium", color: "interactive-text-active", children: subscriptionListingsForGuild[arg1].name };
         tmp7Result = tmp7(tmp4(tmp5[12]).Text, obj6);
       }
       items = [tmp7Result, ];

@@ -1,25 +1,25 @@
-// Module ID: 11469
-// Function ID: 11470
+// Module ID: 11611
+// Function ID: 11612
 // Name: BadgeRarityPill
-// Dependencies: [19, 17, 21, 575, 1387, 11470, 1113, 11472, 5011, 11474, 11476, 5014, 5021, 5253, 5624, 2]
+// Dependencies: [19, 17, 21, 575, 1389, 11612, 1113, 11614, 5137, 11616, 11618, 5140, 5147, 5369, 5751, 2]
 // Exports: default
 
-// Module 11469 (BadgeRarityPill)
+// Module 11611 (BadgeRarityPill)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
-import BadgeRarity from "BadgeRarity" /* 1387 */;
-import ColorUtils from "ColorUtils" /* 5011 */;
-import shared from "shared" /* 5021 */;
-import useThemeDefault from "useTheme" /* 5253 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import ExperimentalCommonIcon from "ExperimentalCommonIcon" /* 11470 */;
-import ExperimentalRareIcon from "ExperimentalRareIcon" /* 11472 */;
-import ExperimentalEpicIcon from "ExperimentalEpicIcon" /* 11474 */;
-import ExperimentalMythicIcon from "ExperimentalMythicIcon" /* 11476 */;
+import BadgeRarity from "BadgeRarity" /* 1389 */;
+import ColorUtils from "ColorUtils" /* 5137 */;
+import shared from "shared" /* 5147 */;
+import useThemeDefault from "useTheme" /* 5369 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import ExperimentalCommonIcon from "ExperimentalCommonIcon" /* 11612 */;
+import ExperimentalRareIcon from "ExperimentalRareIcon" /* 11614 */;
+import ExperimentalEpicIcon from "ExperimentalEpicIcon" /* 11616 */;
+import ExperimentalMythicIcon from "ExperimentalMythicIcon" /* 11618 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -86,7 +86,7 @@ export default function BadgeRarityPill(rarity) {
     const label = tmp5.label;
     const obj9 = { size: "xxs", color: text };
     items1 = [React3(tmp5.Icon, obj9), ];
-    const obj11 = { variant: "text-xs/bold", color: "none", lineClamp: 1, style: items2, children: label };
+    const obj11 = { variant: "body-xs/semibold", color: "none", lineClamp: 1, style: items2, children: label };
     items2 = [tmp.label, ];
     const obj12 = { color: text };
     items2[1] = obj12;

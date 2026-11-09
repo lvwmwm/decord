@@ -1,19 +1,19 @@
-// Module ID: 16729
-// Function ID: 16730
+// Module ID: 17052
+// Function ID: 17053
 // Name: ExplicitMediaFiltersGuildsSetting
-// Dependencies: [8432, 8368, 16716, 16724, 8687, 7470, 1113, 16725, 1196, 11540, 2]
+// Dependencies: [8503, 8439, 17038, 17047, 8758, 7534, 1113, 17048, 1196, 11685, 2]
 
-// Module 16729 (ExplicitMediaFiltersGuildsSetting)
+// Module 17052 (ExplicitMediaFiltersGuildsSetting)
 import intl4 from "intl" /* 1113 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1196 */;
-import SensitiveMediaExplicitRedactionSettingsUtils from "SensitiveMediaExplicitRedactionSettingsUtils" /* 7470 */;
-import useUserIsTeen from "useUserIsTeen" /* 8368 */;
-import SettingsConstants from "SettingsConstants" /* 8432 */;
-import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 8687 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 16716 */;
-import useExplicitContentSettingsOrDefault from "useExplicitContentSettingsOrDefault" /* 16724 */;
-import ExplicitMediaRedactionNativeUtils from "ExplicitMediaRedactionNativeUtils" /* 16725 */;
-import SettingBuilders from "SettingBuilders" /* 11540 */;
+import SensitiveMediaExplicitRedactionSettingsUtils from "SensitiveMediaExplicitRedactionSettingsUtils" /* 7534 */;
+import useUserIsTeen from "useUserIsTeen" /* 8439 */;
+import SettingsConstants from "SettingsConstants" /* 8503 */;
+import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 8758 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 17038 */;
+import useExplicitContentSettingsOrDefault from "useExplicitContentSettingsOrDefault" /* 17047 */;
+import ExplicitMediaRedactionNativeUtils from "ExplicitMediaRedactionNativeUtils" /* 17048 */;
+import SettingBuilders from "SettingBuilders" /* 11685 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

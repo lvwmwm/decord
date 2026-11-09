@@ -1,20 +1,20 @@
-// Module ID: 7288
-// Function ID: 7289
+// Module ID: 7351
+// Function ID: 7352
 // Name: NotificationSettingsModalActionCreators
-// Dependencies: [5, 6775, 1072, 4959, 1082, 572, 7283, 7285, 11, 5021, 1113, 1396, 1282, 2]
+// Dependencies: [5, 6830, 1072, 5085, 1082, 572, 7346, 7348, 11, 5147, 1113, 1403, 1282, 2]
 
-// Module 7288 (NotificationSettingsModalActionCreators)
+// Module 7351 (NotificationSettingsModalActionCreators)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1082 */;
 import intl2 from "intl" /* 1113 */;
-import NotificationConstants from "NotificationConstants" /* 4959 */;
-import shared from "shared" /* 5021 */;
-import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7283 */;
-import UserGuildSettingsManagerDefault from "UserGuildSettingsManager" /* 7285 */;
+import NotificationConstants from "NotificationConstants" /* 5085 */;
+import shared from "shared" /* 5147 */;
+import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7346 */;
+import UserGuildSettingsManagerDefault from "UserGuildSettingsManager" /* 7348 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6775 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6830 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -184,7 +184,7 @@ let obj = {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -239,7 +239,7 @@ let obj = {
             return obj;
           } else {
             c3 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp10) {
           c3 = 3;

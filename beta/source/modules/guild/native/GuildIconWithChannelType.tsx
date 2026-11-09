@@ -1,20 +1,20 @@
-// Module ID: 13423
-// Function ID: 13424
+// Module ID: 13655
+// Function ID: 13656
 // Name: GuildIconWithChannelType
-// Dependencies: [19, 17, 21, 6957, 5014, 575, 8603, 13424, 9509, 1187, 2]
+// Dependencies: [19, 17, 21, 7020, 5140, 575, 8674, 13656, 9593, 1187, 2]
 // Exports: GuildIconWithChannelType
 
-// Module 13423 (GuildIconWithChannelType)
+// Module 13655 (GuildIconWithChannelType)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
-import GuildIcon from "GuildIcon" /* 6957 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 8603 */;
-import ClipView from "ClipView" /* 9509 */;
-import Pile2 from "Pile" /* 13424 */;
+import GuildIcon from "GuildIcon" /* 7020 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8674 */;
+import ClipView from "ClipView" /* 9593 */;
+import Pile2 from "Pile" /* 13656 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 const GuildIconDefault = GuildIcon;

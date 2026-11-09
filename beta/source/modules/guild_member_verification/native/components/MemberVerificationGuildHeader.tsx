@@ -1,189 +1,258 @@
-// Module ID: 6955
-// Function ID: 6956
+// Module ID: 7019
+// Function ID: 7020
 // Name: MemberVerificationGuildHeader
-// Dependencies: [19, 17, 6949, 21, 5014, 575, 1409, 6956, 1625, 5095, 5717, 5587, 6957, 6961, 5624, 1113, 2]
-// Exports: default
+// Dependencies: [19, 17, 7004, 21, 5140, 575, 1627, 1652, 5842, 1411, 5715, 7020, 7024, 5751, 1113, 2]
+// Exports: MemberVerificationGuildBanner, default
 
-// Module 6955 (MemberVerificationGuildHeader)
+// Module 7019 (MemberVerificationGuildHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
+import _mod1652 from "module_1652" /* 1652 */;
+import LinearGradientDefault from "LinearGradient" /* 5715 */;
+import FastImageDefault from "FastImage" /* 5842 */;
+import GuildIcon from "GuildIcon" /* 7020 */;
+import GuildBadgeDefault from "GuildBadge" /* 7024 */;
 import react from "react" /* 19 */;
-import MemberVerificationFormConstants from "MemberVerificationFormConstants" /* 6949 */;
+import MemberVerificationFormConstants from "MemberVerificationFormConstants" /* 7004 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
-const require = globalThis.__r;
-let importDefault;
+const _modDef1652 = _mod1652;
+const GuildIconDefault = GuildIcon;
+let obj1;
 
 let AVATAR_BORDER_WIDTH;
 let AVATAR_SIZE;
+let SHEET_RADIUS;
+let hasOwnProperty;
 let metroImportDefault;
 let metroRequire;
+let obj2;
 let size;
 let size1;
 let View = react_native.View;
 ({ AVATAR_BORDER_WIDTH, AVATAR_SIZE } = MemberVerificationFormConstants);
-const useBannerHeight = MemberVerificationFormConstants.useBannerHeight;
+({ useBannerHeight: hasOwnProperty, SHEET_RADIUS } = MemberVerificationFormConstants);
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
-let c8 = 1.20225424859375;
 let createStyles = createStyles_mod;
-let obj = { header: { flex: 1, flexDirection: "column", justifyContent: "flex-end", alignItems: "center", marginBottom: 12 }, headerContent: { alignItems: "center", marginTop: -48, paddingTop: 20, paddingBottom: 0, paddingHorizontal: 16 }, linearGradient: { position: "absolute", height: 140, top: 0, right: 0, left: 0 }, avatar: size, avatarContainer: size1, featureIcon: { position: "absolute", top: 56, right: -8 }, headerTitle: { textAlign: "center", marginBottom: 8 }, headerDescription: { lineHeight: 18, textAlign: "center" } };
+let obj = { header: { alignItems: "center", marginBottom: 12 }, headerContent: obj2, linearGradient: { position: "absolute", height: 140, top: 0, right: 0, left: 0 }, avatar: size, avatarContainer: size1, featureIcon: { position: "absolute", top: 56, right: -8 }, headerTitle: { textAlign: "center", marginBottom: 8 }, headerDescription: { lineHeight: 18, textAlign: "center" } };
+obj2 = { alignItems: "center", marginTop: -48 + SHEET_RADIUS, paddingTop: 20, paddingBottom: 0, paddingHorizontal: 16 };
 size = { borderRadius: nativeDefault.radii.lg, borderWidth: 0, borderColor: nativeDefault.colors.BACKGROUND_BASE_LOWER, height: AVATAR_SIZE, width: AVATAR_SIZE, margin: 0, backgroundColor: nativeDefault.colors.BACKGROUND_SCRIM };
 createStyles = createStyles.createStyles;
 size1 = { borderRadius: 20, borderWidth: AVATAR_BORDER_WIDTH, borderColor: nativeDefault.colors.BACKGROUND_BASE_LOWER, height: AVATAR_SIZE + 2 * AVATAR_BORDER_WIDTH, width: AVATAR_SIZE + 2 * AVATAR_BORDER_WIDTH, marginBottom: 16, marginTop: -16, marginLeft: -4, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };
-let closure_9 = createStyles(obj);
-const __initData = { code: "function MemberVerificationGuildHeaderTsx1(){const{scrollTop}=this.__closure;return scrollTop.get()*-1;}" };
-const __initData2 = { code: "function MemberVerificationGuildHeaderTsx2(){const{height,interpolate,scrollTop,safeAreaTop,scrollTopNegative}=this.__closure;return{width:'100%',height:height,opacity:interpolate(scrollTop.get(),[0,height-safeAreaTop],[1,0],'clamp'),transform:[{translateY:interpolate(scrollTopNegative.get(),[0,height],[0,-height],'clamp')},{scale:interpolate(scrollTopNegative.get(),[0,height],[1,1.08],'clamp')}]};}" };
-const __initData3 = { code: "function MemberVerificationGuildHeaderTsx3(){const{interpolate,scrollTopNegative,height,ANIMATION_GOLDEN_RATIO,AVATAR_SIZE}=this.__closure;return{transform:[{translateY:interpolate(scrollTopNegative.get(),[0,height],[0,-(height/ANIMATION_GOLDEN_RATIO)],'clamp')},{scale:interpolate(scrollTopNegative.get(),[0,AVATAR_SIZE],[1,ANIMATION_GOLDEN_RATIO],'clamp')}]};}" };
+let closure_8 = createStyles(obj);
+let closure_9 = { code: "(function MemberVerificationGuildHeaderTsx1(){let[scrollTop]=this.__closure;return scrollTop.get()*-1;})" };
+let closure_10 = { code: "(function MemberVerificationGuildHeaderTsx2(){let[height,interpolate,scrollTop,safeAreaTop,scrollTopNegative]=this.__closure;return{width:'100%',height:height,opacity:interpolate(scrollTop.get(),[0,height-safeAreaTop],[1,0],'clamp'),transform:[{translateY:interpolate(scrollTopNegative.get(),[0,height],[0,-height],'clamp')},{scale:interpolate(scrollTopNegative.get(),[0,height],[1,1.08],'clamp')}]};})" };
+let closure_11 = { code: "(function MemberVerificationGuildHeaderTsx3(){let[scrollTop]=this.__closure;return scrollTop.get()*-1;})" };
+let closure_12 = { code: "(function MemberVerificationGuildHeaderTsx4(){let[interpolate,scrollTopNegative,height,ANIMATION_GOLDEN_RATIO,AVATAR_SIZE]=this.__closure;return{transform:[{translateY:interpolate(scrollTopNegative.get(),[0,height],[0,-(height/ANIMATION_GOLDEN_RATIO)],'clamp')},{scale:interpolate(scrollTopNegative.get(),[0,AVATAR_SIZE],[1,ANIMATION_GOLDEN_RATIO],'clamp')}]};})" };
 size = size_mod;
 const result = size.fileFinishedImporting("modules/guild_member_verification/native/components/MemberVerificationGuildHeader.tsx");
 
-export default function MemberVerificationGuildHeader(hasManualFormFields) {
+export default function MemberVerificationGuildHeader(scrollTop) {
   let formatResult;
   let guild;
-  let guildBannerSource;
-  let height;
-  let items;
-  let items1;
-  let items2;
-  let items3;
+  let hasManualFormFields;
   let items4;
-  let scrollTop;
+  let items5;
+  let items6;
+  let obj3;
   let stringResult;
-  let tmp3;
+  let tmp10;
+  let tmp11;
+  let tmp12;
+  let tmp13;
+  let tmp14;
+  let tmp18;
   let tmp5;
-  ({ guild, scrollTop } = hasManualFormFields);
-  hasManualFormFields = hasManualFormFields.hasManualFormFields;
-  importDefault = undefined;
-  let top;
-  let derivedValue;
-  const tmp = closure_9();
-  if (null != guild.banner) {
-    let obj = require("AvatarUtils");
-    guildBannerSource = obj.getGuildBannerSource(guild);
-    tmp3 = top;
-    tmp5 = importDefault;
-  } else {
-    tmp3 = top;
-    guildBannerSource = require("AssetRegistry");
-    tmp5 = importDefault;
-  }
-  const tmp8 = useBannerHeight();
-  importDefault = tmp8;
-  top = tmp5(tmp3[8])().top;
-  let obj2 = scrollTop(tmp3[9]);
-  class N {
+  let tmp6;
+  let tmp9;
+  ({ guild, hasManualFormFields } = scrollTop);
+  scrollTop = scrollTop.scrollTop;
+  const tmp = closure_8();
+  const tmp2 = hasOwnProperty();
+  let obj = _mod1652;
+  let items = [closure_11, scrollTop];
+  let c0;
+  [tmp5, tmp6] = items;
+  class MemberVerificationGuildHeaderTsx3 {
     constructor() {
-      return -1 * scrollTop.get();
+      return -1 * closure_0.get();
     }
   }
-  N.__closure = { scrollTop };
-  N.__workletHash = 6997429707371;
-  N.__initData = __initData;
-  derivedValue = obj2.useDerivedValue(N);
-  let obj3 = scrollTop(tmp3[9]);
-  class I {
+  let items1 = [tmp6];
+  MemberVerificationGuildHeaderTsx3.__closure = items1;
+  MemberVerificationGuildHeaderTsx3.__workletHash = 12898463786096;
+  MemberVerificationGuildHeaderTsx3.__initData = tmp5;
+  const derivedValue = obj.useDerivedValue(MemberVerificationGuildHeaderTsx3);
+  let items2 = [closure_12, , , , , ];
+  const useAnimatedStyle = _mod1652.useAnimatedStyle;
+  _mod1652;
+  items2[1] = _mod1652.interpolate;
+  items2[2] = derivedValue;
+  items2[3] = tmp2;
+  items2[4] = 1.20225424859375;
+  items2[5] = AVATAR_SIZE;
+  c0 = undefined;
+  let c1;
+  let c2;
+  let c3;
+  let c4;
+  [tmp9, tmp10, tmp11, tmp12, tmp13, tmp14] = items2;
+  class MemberVerificationGuildHeaderTsx4 {
     constructor() {
-      let items;
-      let items1;
-      let items2;
-      let items3;
-      let items4;
-      let obj2;
-      let obj4;
-      let obj6;
-      size = { width: "100%", height, opacity: obj2.interpolate(scrollTop.get(), items, [1, 0], "clamp"), transform: items3 };
-      items = [0, height - top];
-      obj2 = ReanimatedRexport;
-      const obj = { translateY: obj4.interpolate(derivedValue.get(), items1, items2, "clamp") };
-      items1 = [0, height];
-      items2 = [0, -height];
-      items3 = [obj, ];
-      obj4 = ReanimatedRexport;
-      const obj3 = { scale: obj6.interpolate(derivedValue.get(), items4, [1, 1.08], "clamp") };
-      items4 = [0, height];
-      items3[1] = obj3;
-      obj6 = ReanimatedRexport;
-      return size;
+      obj = { transform: null };
+      obj1 = { translateY: null };
+      items = [0];
+      items[1] = closure_2;
+      items1 = [0];
+      items1[1] = -closure_2 / closure_3;
+      obj1.translateY = closure_0(closure_1.get(), items, items1, "clamp");
+      items2 = [, ];
+      items2[0] = obj1;
+      obj4 = { scale: null };
+      items3 = [0];
+      items3[1] = closure_4;
+      items4 = [1];
+      items4[1] = closure_3;
+      obj4.scale = closure_0(closure_1.get(), items3, items4, "clamp");
+      items2[1] = obj4;
+      obj.transform = items2;
+      return obj;
     }
   }
-  let obj4 = { height: tmp8, interpolate: scrollTop(tmp3[9]).interpolate, scrollTop, safeAreaTop: top, scrollTopNegative: derivedValue };
-  I.__closure = obj4;
-  I.__workletHash = 15738371977789;
-  I.__initData = __initData2;
-  const animatedStyle = obj3.useAnimatedStyle(I);
-  let obj5 = scrollTop(tmp3[9]);
-  const fn = function b() {
-    let items;
-    let items1;
-    let items2;
-    let items3;
-    let items4;
-    let obj3;
-    let obj5;
-    const obj = { transform: items2 };
-    const obj2 = { translateY: obj3.interpolate(derivedValue.get(), items, items1, "clamp") };
-    items = [0, height];
-    items1 = [0, -height / c8];
-    items2 = [obj2, ];
-    obj3 = ReanimatedRexport;
-    const obj4 = { scale: obj5.interpolate(derivedValue.get(), items3, items4, "clamp") };
-    items3 = [0, AVATAR_SIZE];
-    items4 = [1, c8];
-    items2[1] = obj4;
-    obj5 = ReanimatedRexport;
-    return obj;
-  };
-  let obj6 = { interpolate: scrollTop(tmp3[9]).interpolate, scrollTopNegative: derivedValue, height: tmp8, ANIMATION_GOLDEN_RATIO, AVATAR_SIZE };
-  fn.__closure = obj6;
-  fn.__workletHash = 62412230968;
-  fn.__initData = __initData3;
-  const obj7 = { style: tmp.header, children: items1 };
-  const animatedStyle1 = obj5.useAnimatedStyle(fn);
-  const obj8 = { style: animatedStyle, children: items };
-  View = tmp5(tmp3[9]).View;
-  items = [, ];
-  const obj9 = { style: { width: "100%", height: tmp8 }, resizeMode: "cover", source: guildBannerSource };
-  items[0] = closure_6(tmp5(tmp3[10]), obj9);
-  const obj10 = { start: { x: 0, y: 0 }, end: { x: 0, y: 1 }, style: tmp.linearGradient, colors: ["rgba(0,0,0,0.7)", "transparent"] };
-  items[1] = closure_6(tmp5(tmp3[11]), obj10);
-  items1 = [closure_7(View, obj8), ];
-  const obj12 = { style: items2, children: items3 };
-  items2 = [tmp.avatarContainer, animatedStyle1];
-  const obj11 = { style: tmp.headerContent, children: items4 };
-  const View2 = tmp5(tmp3[9]).View;
-  const obj13 = { style: tmp.avatar, guild, size: scrollTop(tmp3[12]).GuildIconSizes.XLARGE, animate: true };
-  const tmp5Result = tmp5(tmp3[12]);
-  items3 = [closure_6(tmp5Result, obj13), ];
-  const obj14 = { style: tmp.featureIcon, guild, disableColor: true };
-  items3[1] = closure_6(tmp5(tmp3[13]), obj14);
-  items4 = [closure_7(View2, obj12), , ];
-  const obj15 = { style: tmp.headerTitle, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: formatResult };
-  const Heading = scrollTop(tmp3[14]).Heading;
-  const intl = scrollTop(tmp3[15]).intl;
+  let items3 = [tmp10, tmp11, tmp12, tmp13, tmp14];
+  MemberVerificationGuildHeaderTsx4.__closure = items3;
+  MemberVerificationGuildHeaderTsx4.__workletHash = 3125659462790;
+  MemberVerificationGuildHeaderTsx4.__initData = tmp9;
+  let obj2 = { style: tmp.header, children: tmp18(View, obj3) };
+  obj3 = { style: tmp.headerContent, children: items6 };
+  const animatedStyle = useAnimatedStyle(MemberVerificationGuildHeaderTsx4);
+  const obj4 = { style: items4, children: items5 };
+  items4 = [tmp.avatarContainer, animatedStyle];
+  View = _modDef1652.View;
+  const obj5 = { style: tmp.avatar, guild, size: GuildIcon.GuildIconSizes.XLARGE, animate: true };
+  const tmp19 = GuildIconDefault;
+  items5 = [metroRequire(tmp19, obj5), ];
+  const obj6 = { style: tmp.featureIcon, guild, disableColor: true };
+  items5[1] = metroRequire(GuildBadgeDefault, obj6);
+  items6 = [metroImportDefault(View, obj4), , ];
+  const obj7 = { style: tmp.headerTitle, variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: formatResult };
+  const Heading = tmp3(5751).Heading;
+  const intl = tmp3(1113).intl;
   const format = intl.format;
-  const t = scrollTop(tmp3[15]).t;
+  const t = tmp3(1113).t;
+  tmp18 = metroImportDefault;
   if (hasManualFormFields) {
-    const obj16 = { guildName: guild.name };
-    formatResult = format(t.cgX47Z, obj16);
+    const obj8 = { guildName: guild.name };
+    formatResult = format(t.cgX47Z, obj8);
   } else {
-    const obj17 = { guildName: guild.name };
-    formatResult = format(t.VnxBOA, obj17);
+    const obj9 = { guildName: guild.name };
+    formatResult = format(t.VnxBOA, obj9);
   }
-  items4[1] = closure_6(Heading, obj15);
-  const obj18 = { style: tmp.headerDescription, variant: "text-sm/medium", color: "text-default", children: stringResult };
-  const Text = tmp9(tmp3[14]).Text;
-  const intl2 = tmp9(tmp3[15]).intl;
+  items6[1] = metroRequire(Heading, obj7);
+  const obj10 = { style: tmp.headerDescription, variant: "body-sm/medium", color: "text-default", children: stringResult };
+  const Text = tmp3(5751).Text;
+  const intl2 = tmp3(1113).intl;
   const string = intl2.string;
-  const t2 = tmp9(tmp3[15]).t;
+  const t2 = tmp3(1113).t;
   if (hasManualFormFields) {
     stringResult = string(t2["3smSPP"]);
   } else {
     stringResult = string(t2["7D3C5p"]);
   }
-  items4[2] = closure_6(Text, obj18);
-  items1[1] = closure_7(derivedValue, obj11);
-  return closure_7(derivedValue, obj7);
+  items6[2] = metroRequire(Text, obj10);
+  return metroRequire(View, obj2);
 };
+export function MemberVerificationGuildBanner(arg0) {
+  let guild;
+  let obj3;
+  let scrollTop;
+  let tmp10;
+  let tmp11;
+  let tmp12;
+  let tmp13;
+  let tmp14;
+  let tmp15;
+  let tmp19;
+  let tmp3Result2;
+  let tmp6;
+  let tmp7;
+  ({ guild, scrollTop } = arg0);
+  const tmp = closure_8();
+  const tmp2 = hasOwnProperty();
+  const top = useSafeAreaInsetsDefault().top;
+  let obj = _mod1652;
+  let items = [closure_9, scrollTop];
+  let c0;
+  [tmp6, tmp7] = items;
+  class MemberVerificationGuildHeaderTsx1 {
+    constructor() {
+      return -1 * closure_0.get();
+    }
+  }
+  let items1 = [tmp7];
+  MemberVerificationGuildHeaderTsx1.__closure = items1;
+  MemberVerificationGuildHeaderTsx1.__workletHash = 246931836658;
+  MemberVerificationGuildHeaderTsx1.__initData = tmp6;
+  const derivedValue = obj.useDerivedValue(MemberVerificationGuildHeaderTsx1);
+  _mod1652;
+  let items2 = [closure_10, tmp2, _mod1652.interpolate, scrollTop, top, derivedValue];
+  c0 = undefined;
+  let c1;
+  let c2;
+  let c3;
+  let c4;
+  [tmp10, tmp11, tmp12, tmp13, tmp14, tmp15] = items2;
+  class MemberVerificationGuildHeaderTsx2 {
+    constructor() {
+      size = { width: "100%", height: closure_0, opacity: null, transform: null };
+      items = [0];
+      items[1] = closure_0 - closure_3;
+      size.opacity = closure_1(closure_2.get(), items, [1, 0], "clamp");
+      obj1 = { translateY: null };
+      items1 = [0];
+      items1[1] = closure_0;
+      items2 = [0];
+      items2[1] = -closure_0;
+      obj1.translateY = closure_1(closure_4.get(), items1, items2, "clamp");
+      items3 = [, ];
+      items3[0] = obj1;
+      obj4 = { scale: null };
+      items4 = [0];
+      items4[1] = closure_0;
+      obj4.scale = closure_1(closure_4.get(), items4, [1, 1.08], "clamp");
+      items3[1] = obj4;
+      size.transform = items3;
+      return size;
+    }
+  }
+  let items3 = [tmp11, tmp12, tmp13, tmp14, tmp15];
+  MemberVerificationGuildHeaderTsx2.__closure = items3;
+  MemberVerificationGuildHeaderTsx2.__workletHash = 15981102036772;
+  MemberVerificationGuildHeaderTsx2.__initData = tmp10;
+  if (null == guild.banner) {
+    let obj2 = { style: obj3 };
+    obj3 = { height: tmp2 };
+    tmp19 = metroRequire(View, obj2);
+  } else {
+    const obj4 = { style: tmp16, children: null };
+    View = tmp3(1652).View;
+    const obj5 = { style: size, resizeMode: "cover", source: tmp3Result2.getGuildBannerSource(guild) };
+    size = { width: "100%", height: tmp2 };
+    const tmp3Result = FastImageDefault;
+    tmp3Result2 = AvatarUtilsDefault;
+    let items4 = [metroRequire(tmp3Result, obj5), ];
+    const obj6 = { start: { x: 0, y: 0 }, end: { x: 0, y: 1 }, style: tmp.linearGradient, colors: ["rgba(0,0,0,0.7)", "transparent"] };
+    items4[1] = metroRequire(LinearGradientDefault, obj6);
+    class MemberVerificationGuildHeaderTsx1 {
+      constructor() {
+        return -1 * closure_0.get();
+      }
+    }
+    tmp19 = metroImportDefault(View, obj4);
+  }
+  return tmp19;
+}

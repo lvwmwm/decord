@@ -1,21 +1,21 @@
-// Module ID: 17661
-// Function ID: 17662
+// Module ID: 17989
+// Function ID: 17990
 // Name: DevToolsBountyQaScreen
-// Dependencies: [5, 32, 19, 17, 7843, 21, 5014, 575, 5712, 1625, 504, 6784, 7844, 14691, 9682, 5624, 7058, 7061, 7060, 6975, 12177, 17079, 7137, 6788, 2]
+// Dependencies: [5, 32, 19, 17, 7919, 21, 5140, 575, 5837, 1627, 504, 6839, 7920, 14927, 9773, 5751, 7124, 7127, 7126, 7038, 12349, 17405, 7164, 6843, 2]
 // Exports: default
 
-// Module 17661 (DevToolsBountyQaScreen)
+// Module 17989 (DevToolsBountyQaScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5712 */;
-import AdCreativeType from "AdCreativeType" /* 6788 */;
-import QuestActionCreators from "QuestActionCreators" /* 9682 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5837 */;
+import AdCreativeType from "AdCreativeType" /* 6843 */;
+import QuestActionCreators from "QuestActionCreators" /* 9773 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AdDeliveryStore from "AdDeliveryStore" /* 7843 */;
+import AdDeliveryStore from "AdDeliveryStore" /* 7919 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let c1, c3;
@@ -62,7 +62,7 @@ export default function DevToolsBountyQaScreen() {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c2;
@@ -83,7 +83,7 @@ export default function DevToolsBountyQaScreen() {
                   closure_1_12("No dock bounty in memory. Pick a lookback window.", "bounty-qa-missing-id");
                   c2 = 0;
                   c3 = 3;
-                  return { value: "HermesInternal", done: "HermesInternal" };
+                  return { value: "HermesInternal", done: null };
                 } else {
                   c1 = 3;
                   c3 = 1;
@@ -131,7 +131,7 @@ export default function DevToolsBountyQaScreen() {
               c2 = 0;
             }
             c3 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp26) {
           if (0 === c2) {
@@ -197,7 +197,7 @@ export default function DevToolsBountyQaScreen() {
     const _HermesInternal2 = HermesInternal;
     str4 = "Last dock bounty still in memory: " + stateFromStores + ".";
   }
-  items5 = [tmp14(Text, { variant: "text-sm/medium", color: "text-muted", children: str4 }), , ];
+  items5 = [tmp14(Text, { variant: "body-sm/medium", color: "text-muted", children: str4 }), , ];
   let obj4 = {
     title: "Reset scope",
     description: "Used by Reset and re-serve. Refresh Organic Serve ignores this.",

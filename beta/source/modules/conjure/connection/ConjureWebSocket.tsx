@@ -1,9 +1,9 @@
-// Module ID: 10971
-// Function ID: 10972
+// Module ID: 11099
+// Function ID: 11100
 // Name: ConjureWebSocket
 // Dependencies: [2]
 
-// Module 10971 (ConjureWebSocket)
+// Module 11099 (ConjureWebSocket)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/connection/ConjureWebSocket.tsx");
@@ -90,7 +90,7 @@ class ConjureWebSocket {
       if (self.socket.readyState === WebSocket.OPEN) {
         const socket = self.socket;
         const _JSON = JSON;
-        const obj2 = { type: "user_message", content, nonce, attachment_ids, template_id: tmp, remix: tmp2, clarification_answers: tmp3, link_embeds: tmp4 };
+        const obj2 = { type: "user_message", content, nonce, attachment_ids, template_id: tmp, remix: tmp2, copy: tmp3, clarification_answers: tmp4, link_embeds: tmp5 };
         socket.send(JSON.stringify(obj2));
       }
     }
@@ -164,6 +164,19 @@ class ConjureWebSocket {
       }
     }
     const error = new Error("WebSocket not open");
+    throw error;
+  }
+  sendSafetyRecheck() {
+    const self = this;
+    if (null != this.socket) {
+      const _WebSocket = WebSocket;
+      if (self.socket.readyState === WebSocket.OPEN) {
+        const socket = self.socket;
+        const _JSON = JSON;
+        socket.send(JSON.stringify({ type: "request_safety_recheck" }));
+      }
+    }
+    const error = new Error("Not connected");
     throw error;
   }
   sendPublishOptions(combined) {
@@ -438,6 +451,20 @@ class ConjureWebSocket {
         const socket = self.socket;
         const _JSON = JSON;
         const obj = { type: "set_smart_context", enabled };
+        socket.send(JSON.stringify(obj));
+      }
+    }
+    const error = new Error("WebSocket not open");
+    throw error;
+  }
+  sendDownstreamUpdates(enabled) {
+    const self = this;
+    if (null != this.socket) {
+      const _WebSocket = WebSocket;
+      if (self.socket.readyState === WebSocket.OPEN) {
+        const socket = self.socket;
+        const _JSON = JSON;
+        const obj = { type: "set_downstream_updates", enabled };
         socket.send(JSON.stringify(obj));
       }
     }

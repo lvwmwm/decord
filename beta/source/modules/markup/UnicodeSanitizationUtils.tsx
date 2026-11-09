@@ -1,11 +1,11 @@
-// Module ID: 6038
-// Function ID: 6039
+// Module ID: 6170
+// Function ID: 6171
 // Name: UnicodeSanitizationUtils
-// Dependencies: [1377, 2]
+// Dependencies: [1378, 2]
 // Exports: safelyMakeUrlHumanReadable, sanitizeUnicodeConfusables, sanitizeWhitespace, sanitizeWhitespaceExcludingTabs
 
-// Module 6038 (UnicodeSanitizationUtils)
-import URLUtilsDefault from "URLUtils" /* 1377 */;
+// Module 6170 (UnicodeSanitizationUtils)
+import URLUtilsDefault from "URLUtils" /* 1378 */;
 import size from "module_2" /* 2 */;
 
 let regExp2;
@@ -219,8 +219,8 @@ let result = size.fileFinishedImporting("modules/markup/UnicodeSanitizationUtils
 
 export const BLANK_CHARACTERS_TO_SANITIZE_REGEX = regExp;
 export const BLANK_CHARACTERS_TO_SANITIZE_REGEX_EXCLUDING_TABS = regExp1;
-export function sanitizeWhitespace(assetURL) {
-  return assetURL.replace(regExp, "");
+export function sanitizeWhitespace(content) {
+  return content.replace(regExp, "");
 }
 export function sanitizeWhitespaceExcludingTabs(substr) {
   return substr.replace(regExp1, "");

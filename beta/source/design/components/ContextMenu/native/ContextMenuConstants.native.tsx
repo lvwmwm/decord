@@ -1,11 +1,11 @@
-// Module ID: 9876
-// Function ID: 9877
+// Module ID: 9998
+// Function ID: 9999
 // Name: ContextMenuConstants
-// Dependencies: [1375, 5260, 2]
+// Dependencies: [1377, 5376, 2]
 
-// Module 9876 (ContextMenuConstants)
-import HapticUtils from "HapticUtils" /* 5260 */;
-import PlatformUtils_mod from "PlatformUtils" /* 1375 */;
+// Module 9998 (ContextMenuConstants)
+import HapticUtils from "HapticUtils" /* 5376 */;
+import PlatformUtils_mod from "PlatformUtils" /* 1377 */;
 import size from "module_2" /* 2 */;
 
 let PlatformUtils = PlatformUtils_mod;
@@ -23,4 +23,4 @@ export const CONTEXT_MENU_EDGE_OFFSET = 12;
 export const CONTEXT_MENU_MIN_WIDTH = 220;
 export const CONTEXT_MENU_OFFSET = 10;
 export const CONTEXT_MENU_MIN_SCALE = 0.5;
-export const CONTEXT_MENU_SPRING = { mass: 0.3, damping: 20, stiffness: 200, overshootClamping: true, restDisplacementThreshold: 0.001 };
+export const CONTEXT_MENU_SPRING = { mass: 0.3, damping: 20, stiffness: 200, overshootClamping: true };

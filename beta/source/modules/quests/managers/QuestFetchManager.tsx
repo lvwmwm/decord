@@ -1,17 +1,17 @@
-// Module ID: 20026
-// Function ID: 20027
+// Module ID: 20436
+// Function ID: 20437
 // Name: QuestFetchManager
-// Dependencies: [5, 7846, 1089, 7287, 9673, 1242, 9682, 1375, 6872, 20027, 2]
+// Dependencies: [5, 7922, 1089, 7350, 9764, 1242, 9773, 1377, 6927, 20437, 2]
 
-// Module 20026 (QuestFetchManager)
+// Module 20436 (QuestFetchManager)
 import DurationsDefault from "Durations" /* 1089 */;
 import SentryUtilsDefault from "SentryUtils" /* 1242 */;
-import PlatformUtils from "PlatformUtils" /* 1375 */;
-import QuestsEligibility from "QuestsEligibility" /* 9673 */;
-import QuestActionCreators from "QuestActionCreators" /* 9682 */;
+import PlatformUtils from "PlatformUtils" /* 1377 */;
+import QuestsEligibility from "QuestsEligibility" /* 9764 */;
+import QuestActionCreators from "QuestActionCreators" /* 9773 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import QuestStore from "QuestStore" /* 7846 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7287 */;
+import QuestStore from "QuestStore" /* 7922 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7350 */;
 import size from "module_2" /* 2 */;
 
 let c0;
@@ -57,7 +57,7 @@ class QuestFetchManager extends AutomaticLifecycleManager {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -76,7 +76,7 @@ class QuestFetchManager extends AutomaticLifecycleManager {
                 obj._fetch("post_connect_recurring");
               }
               c0 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp6) {
             c0 = 3;
@@ -159,7 +159,7 @@ class QuestFetchManager extends AutomaticLifecycleManager {
       const tmp6 = importDefault;
       const tmpResult2 = PlatformUtils;
       if (tmpResult2.isMac()) {
-        const tmp6Result = tmp6(6872);
+        const tmp6Result = tmp6(6927);
         const state = tmp6Result.getState();
       }
     }

@@ -1,28 +1,28 @@
-// Module ID: 10578
-// Function ID: 10579
+// Module ID: 10697
+// Function ID: 10698
 // Name: GPlayManager
-// Dependencies: [109, 5, 19, 17, 7605, 7606, 502, 2052, 7597, 9912, 7598, 1072, 5747, 1385, 21, 3, 7593, 572, 9911, 1251, 2042, 7614, 4827, 6535, 1252, 5959, 1113, 10579, 1994, 6744, 7595, 2]
+// Dependencies: [109, 5, 19, 17, 7681, 7682, 502, 2176, 7673, 10034, 7674, 1072, 5872, 1387, 21, 3, 7669, 572, 10033, 1251, 10698, 2166, 7690, 4953, 6589, 1252, 6091, 1113, 10699, 2118, 6799, 7671, 2]
 
-// Module 10578 (GPlayManager)
+// Module 10697 (GPlayManager)
 import LoggerDefault from "Logger" /* 3 */;
 import Fragment from "Fragment" /* 21 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import PremiumConstants from "PremiumConstants" /* 1385 */;
-import PaymentConstants from "PaymentConstants" /* 5747 */;
-import actions_BillingActionCreators from "actions/BillingActionCreators" /* 6535 */;
-import ProductIds from "ProductIds" /* 7593 */;
-import GPlayActionCreators from "GPlayActionCreators" /* 9911 */;
-import GPlayAnalyticsStore from "GPlayAnalyticsStore" /* 9912 */;
+import PremiumConstants from "PremiumConstants" /* 1387 */;
+import PaymentConstants from "PaymentConstants" /* 5872 */;
+import actions_BillingActionCreators from "actions/BillingActionCreators" /* 6589 */;
+import ProductIds from "ProductIds" /* 7669 */;
+import GPlayActionCreators from "GPlayActionCreators" /* 10033 */;
+import GPlayAnalyticsStore from "GPlayAnalyticsStore" /* 10034 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GiftPromotionStore from "GiftPromotionStore" /* 7605 */;
-import PremiumPlanPurchasedStore from "PremiumPlanPurchasedStore" /* 7606 */;
+import GiftPromotionStore from "GiftPromotionStore" /* 7681 */;
+import PremiumPlanPurchasedStore from "PremiumPlanPurchasedStore" /* 7682 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import SubscriptionStore from "SubscriptionStore" /* 2052 */;
-import IAPStore from "IAPStore" /* 7597 */;
-import Constants_mod from "Constants" /* 7598 */;
+import SubscriptionStore from "SubscriptionStore" /* 2176 */;
+import IAPStore from "IAPStore" /* 7673 */;
+import Constants_mod from "Constants" /* 7674 */;
 import Constants_mod2 from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -78,8 +78,8 @@ let obj = function _handlePurchaseUpdated() {
       let obj21;
       let obj22;
       let obj30;
-      let obj42;
-      let obj49;
+      let obj45;
+      let obj48;
       let obj8;
       if (c7 === 2) {
         c7 = 3;
@@ -90,7 +90,7 @@ let obj = function _handlePurchaseUpdated() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -140,7 +140,7 @@ let obj = function _handlePurchaseUpdated() {
                 return { value, done: true };
               } else if (closure_131_11.isPurchasingProduct(purchase.productId)) {
                 c7 = 3;
-                return { value: "HermesInternal", done: "HermesInternal" };
+                return { value: "HermesInternal", done: null };
               } else {
                 closure_1 = closure_131_12.getState().analyticsByProductId[purchase.productId];
                 giftOptionsForKey = closure_131_25[purchase.productId];
@@ -162,39 +162,43 @@ let obj = function _handlePurchaseUpdated() {
                 obj40.dispatch(obj12);
                 const IAPProductIds = closure_131_0(closure_131_2[16]).IAPProductIds;
                 if (IAPProductIds.includes(purchase.productId)) {
-                  c5 = 3;
-                  const obj46 = closure_131_1(closure_131_2[20])();
-                  const subtractResult = obj46.subtract(closure_131_0(closure_131_2[21]).DRAFT_ORDER_LOOKBACK_DAYS, "days");
-                  createdAfter = subtractResult.toISOString();
-                  const obj48 = closure_131_0(closure_131_2[16]);
-                  planIdForGift = obj48.getPlanIdForGift(purchase.productId);
-                  let tmp196;
-                  if (null != planIdForGift) {
-                    skuId = undefined;
-                    if (closure_131_20[planIdForGift] != null) {
-                      skuId = tmp201.skuId;
+                  const AndroidNitroGiftOrdersExperiment = closure_131_0(closure_131_2[20]).AndroidNitroGiftOrdersExperiment;
+                  if (!AndroidNitroGiftOrdersExperiment.getConfig({ location: "GPlayManager" }).enabled) {
+                    c5 = 3;
+                    const obj42 = closure_131_1(closure_131_2[21])();
+                    const subtractResult = obj42.subtract(closure_131_0(closure_131_2[22]).DRAFT_ORDER_LOOKBACK_DAYS, "days");
+                    createdAfter = subtractResult.toISOString();
+                    const obj44 = closure_131_0(closure_131_2[16]);
+                    planIdForGift = obj44.getPlanIdForGift(purchase.productId);
+                    let tmp183;
+                    if (null != planIdForGift) {
+                      skuId = undefined;
+                      if (closure_131_20[planIdForGift] != null) {
+                        skuId = tmp188.skuId;
+                      }
+                      tmp183 = skuId;
                     }
-                    tmp196 = skuId;
+                    skuId = tmp183;
+                    c6 = 5;
+                    c7 = 1;
+                    const obj14 = { status: closure_131_19.DRAFT, createdAfter, skuId, paymentGateway: closure_131_18.GOOGLE, isGift: true };
+                    const obj16 = { value: obj45.getOrders(obj14), done: false };
+                    obj45 = closure_131_0(closure_131_2[22]);
+                    return obj16;
                   }
-                  skuId = tmp196;
-                  c6 = 5;
-                  c7 = 1;
-                  const obj14 = { status: closure_131_19.DRAFT, createdAfter, skuId, paymentGateway: closure_131_18.GOOGLE, isGift: true };
-                  const obj16 = { value: obj49.getOrders(obj14), done: false };
-                  obj49 = closure_131_0(closure_131_2[21]);
-                  return obj16;
-                } else if (purchase.purchaseState === closure_131_15.PENDING) {
+                }
+                if (purchase.purchaseState === closure_131_15.PENDING) {
                   c5 = 0;
                   const obj17 = { type: "GPLAY_VERIFICATION_END", productId: purchase.productId };
-                  const obj44 = closure_131_1(closure_131_2[17]);
-                  obj44.dispatch(obj17);
+                  const obj50 = closure_131_1(closure_131_2[17]);
+                  obj50.dispatch(obj17);
                   c7 = 3;
-                  return { value: "HermesInternal", done: "HermesInternal" };
+                  return { value: "HermesInternal", done: null };
                 } else {
                   c6 = 7;
                   c7 = 1;
-                  const obj18 = { value: obj42.verifyPurchase(purchase, giftOptionsForKey), done: false };
-                  obj42 = closure_131_0(closure_131_2[18]);
+                  const obj18 = { value: obj48.verifyPurchase(purchase, giftOptionsForKey), done: false };
+                  obj48 = closure_131_0(closure_131_2[18]);
                   return obj18;
                 }
               }
@@ -214,7 +218,7 @@ let obj = function _handlePurchaseUpdated() {
               let closure_13 = createdAfter;
               const obj20 = { tags: obj22 };
               obj22 = { productId: purchase.productId };
-              const obj29 = closure_131_0(closure_131_2[22]);
+              const obj29 = closure_131_0(closure_131_2[23]);
               const result = obj29.captureBillingException(closure_13, obj20);
               const _HermesInternal3 = HermesInternal;
               closure_131_22.error("[handlePurchaseUpdated] Error verifying purchase " + purchase.productId + ": " + closure_13.message);
@@ -228,9 +232,9 @@ let obj = function _handlePurchaseUpdated() {
               const succeededOnlyFieldsValue = succeededOnlyFields.succeededOnlyFields;
               closure_11 = closure_131_4(succeededOnlyFieldsValue, closure_131_3);
               const obj25 = { location: "handlePurchaseUpdated", product_id: purchase.productId, purchase_token: purchase.purchaseToken, error: closure_13.message };
-              const track = closure_131_1(closure_131_2[24]).track;
+              const track = closure_131_1(closure_131_2[25]).track;
               const GPLAY_PURCHASE_FAILED = closure_131_16.GPLAY_PURCHASE_FAILED;
-              closure_131_1(closure_131_2[24]);
+              closure_131_1(closure_131_2[25]);
               const merged1 = Object.assign(closure_11);
               track(GPLAY_PURCHASE_FAILED, obj25);
               c5 = 0;
@@ -245,7 +249,7 @@ let obj = function _handlePurchaseUpdated() {
               message = createdAfter;
               const obj28 = { tags: { source: "GPlayManager_handlePurchaseUpdated_sign" }, extra: obj30 };
               obj30 = { productId: purchase.productId };
-              const obj26 = closure_131_0(closure_131_2[22]);
+              const obj26 = closure_131_0(closure_131_2[23]);
               const result1 = obj26.captureBillingException(message, obj28);
               const _HermesInternal2 = HermesInternal;
               closure_131_22.error("[handlePurchaseUpdated] Failed to find or sign order: " + message.message);
@@ -272,7 +276,7 @@ let obj = function _handlePurchaseUpdated() {
                   c6 = 6;
                   c7 = 1;
                   const obj36 = { value: obj21.markOrderAsSigningInProgress(id), done: false };
-                  obj21 = closure_131_0(closure_131_2[21]);
+                  obj21 = closure_131_0(closure_131_2[22]);
                   return obj36;
                 } else {
                   const obj38 = { productId: purchase.productId, skuId };
@@ -319,9 +323,9 @@ let obj = function _handlePurchaseUpdated() {
                   delete closure_131_25[purchase.productId];
                 }
                 if (null != closure_9) {
-                  const obj50 = { type: "GPLAY_PURCHASE_VERIFIED", productId: purchase.productId };
+                  const obj49 = { type: "GPLAY_PURCHASE_VERIFIED", productId: purchase.productId };
                   const obj5 = closure_131_1(closure_131_2[17]);
-                  obj5.dispatch(obj50);
+                  obj5.dispatch(obj49);
                 }
                 if (null != closure_9) {
                   const SubscriptionProductIds = closure_131_0(closure_131_2[16]).SubscriptionProductIds;
@@ -341,7 +345,7 @@ let obj = function _handlePurchaseUpdated() {
                     c6 = 8;
                     c7 = 1;
                     const obj52 = { value: obj13.fetchSubscriptions(), done: false };
-                    obj13 = closure_131_0(closure_131_2[23]);
+                    obj13 = closure_131_0(closure_131_2[24]);
                     return obj52;
                   }
                 }
@@ -354,7 +358,7 @@ let obj = function _handlePurchaseUpdated() {
                   c6 = 9;
                   c7 = 1;
                   const obj55 = { value: obj8.fetchSubscriptions(), done: false };
-                  obj8 = closure_131_0(closure_131_2[23]);
+                  obj8 = closure_131_0(closure_131_2[24]);
                   return obj55;
                 }
               }
@@ -406,11 +410,11 @@ let obj = function _handlePurchaseUpdated() {
               break;
             }
           }
-        } catch (tmp224) {
-          createdAfter = tmp224;
+        } catch (tmp227) {
+          createdAfter = tmp227;
           if (0 === c5) {
             c7 = 3;
-            throw tmp224;
+            throw tmp227;
           } else if (1 === c5) {
             c6 = 2;
           } else if (2 === c5) {
@@ -494,7 +498,7 @@ obj = function _executePendingDowngrade() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -534,18 +538,18 @@ obj = function _executePendingDowngrade() {
           if (2 === c4) {
             c3 = 1;
             message = closure_2;
-            const obj6 = closure_129_0(closure_129_2[22]);
+            const obj6 = closure_129_0(closure_129_2[23]);
             const result = obj6.captureBillingException(message);
-            const obj7 = { title: intl.string(closure_129_0(closure_129_2[26]).t["U+H+kd"]), body: intl2.string(closure_129_0(closure_129_2[26]).t.LFFx5G) };
-            const show = closure_129_1(closure_129_2[25]).show;
-            const tmp27 = closure_129_1(closure_129_2[25]);
-            intl = closure_129_0(closure_129_2[26]).intl;
-            intl2 = closure_129_0(closure_129_2[26]).intl;
+            const obj7 = { title: intl.string(closure_129_0(closure_129_2[27]).t["U+H+kd"]), body: intl2.string(closure_129_0(closure_129_2[27]).t.LFFx5G) };
+            const show = closure_129_1(closure_129_2[26]).show;
+            const tmp27 = closure_129_1(closure_129_2[26]);
+            intl = closure_129_0(closure_129_2[27]).intl;
+            intl2 = closure_129_0(closure_129_2[27]).intl;
             show(obj7);
             let newSubscriptionSkuId;
-            const track = closure_129_1(closure_129_2[24]).track;
+            const track = closure_129_1(closure_129_2[25]).track;
             const GPLAY_PURCHASE_FAILED = closure_129_16.GPLAY_PURCHASE_FAILED;
-            const tmp39 = closure_129_1(closure_129_2[24]);
+            const tmp39 = closure_129_1(closure_129_2[25]);
             if (pendingDowngrade != null) {
               newSubscriptionSkuId = pendingDowngrade.newSubscriptionSkuId;
             }
@@ -591,7 +595,7 @@ obj = function _executePendingDowngrade() {
           obj9.dispatch({ type: "GPLAY_UPDATE_IS_DOWNGRADING", isDowngrading: false });
         }
         c5 = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp62) {
         closure_2 = tmp62;
         if (0 === c3) {
@@ -626,7 +630,7 @@ obj = function _fetchAndAlertActiveSubscription() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -660,19 +664,19 @@ obj = function _fetchAndAlertActiveSubscription() {
           premiumTypeSubscription = closure_129_10.getPremiumTypeSubscription();
           if (null == premiumTypeSubscription) {
             const _Error = Error;
-            const intl = closure_129_0(closure_129_2[26]).intl;
+            const intl = closure_129_0(closure_129_2[27]).intl;
             const self = this;
             const self2 = this;
-            const error = new Error(intl.string(closure_129_0(closure_129_2[26]).t.PjfUXe));
+            const error = new Error(intl.string(closure_129_0(closure_129_2[27]).t.PjfUXe));
             throw error;
           } else {
             closure_129_7();
             closure_129_8(() => {
-              obj = closure_1(paths[25]);
+              obj = closure_1(paths[26]);
               const obj2 = {
                 importer() {
                   let subscription;
-                  const promise = closure_2_0(paths[28])(paths[27], paths.paths);
+                  const promise = closure_2_0(paths[29])(paths[28], paths.paths);
                   return promise.then((result) => {
                     closure_0 = result.default;
                     return (arg0) => {
@@ -681,8 +685,8 @@ obj = function _fetchAndAlertActiveSubscription() {
                         subscription,
                         onClose() {
                           closure_0.onClose();
-                          obj = closure_2_1(closure_2_2[29]);
-                          obj.popWithKey(closure_2_0(closure_2_2[30]).PREMIUM_KEY);
+                          obj = closure_2_1(closure_2_2[30]);
+                          obj.popWithKey(closure_2_0(closure_2_2[31]).PREMIUM_KEY);
                         }
                       };
                       const merged = Object.assign(arg0);
@@ -695,7 +699,7 @@ obj = function _fetchAndAlertActiveSubscription() {
               obj.openLazy(obj2);
             });
             c3 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         }
       } catch (tmp21) {

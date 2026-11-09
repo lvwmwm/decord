@@ -1,15 +1,15 @@
-// Module ID: 12213
-// Function ID: 12214
+// Module ID: 12385
+// Function ID: 12386
 // Name: ConjureChatMoreSheet
-// Dependencies: [19, 12214, 21, 5258, 7369, 6983, 6975, 10878, 10923, 12216, 7366, 1113, 3868, 7060, 2]
+// Dependencies: [19, 12386, 21, 5374, 7429, 7046, 7038, 10999, 11049, 12388, 7426, 1113, 4026, 7126, 2]
 // Exports: default
 
-// Module 12213 (ConjureChatMoreSheet)
+// Module 12385 (ConjureChatMoreSheet)
 import Fragment from "Fragment" /* 21 */;
-import _modDef3868 from "module_3868" /* 3868 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
+import _modDef4026 from "module_4026" /* 4026 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
 import react from "react" /* 19 */;
-import conjureDesignFeedbackStore from "conjureDesignFeedbackStore" /* 12214 */;
+import conjureDesignFeedbackStore from "conjureDesignFeedbackStore" /* 12386 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -19,7 +19,7 @@ function MoreRow(row) {
   row = row.row;
   if ("switch" === row.kind) {
     ({ label: obj3.label, subLabel: obj3.subLabel } = row);
-    const TableSwitchRow = row(7369).TableSwitchRow;
+    const TableSwitchRow = row(7429).TableSwitchRow;
     ({ value: obj3.value, disabled: obj3.disabled } = row);
     return <TableSwitchRow label={null} subLabel={null} icon={null} value={null} disabled={null} onValueChange={function onValueChange(arg0) {
       const tmp = arg0 && true === row.closesOnEnable;
@@ -35,7 +35,7 @@ function MoreRow(row) {
       str = "danger";
     }
     let tmp = jsx;
-    const TableRow = row(6975).TableRow;
+    const TableRow = row(7038).TableRow;
     return <TableRow label={row.label} variant={str} icon={null} onPress={function onPress() {
       const obj = ActionSheetActionCreatorsDefault;
       obj.hideActionSheet(ConjureChatMoreSheet_str);
@@ -64,23 +64,23 @@ export default function ConjureChatMoreSheet(canAnnotate) {
   const merged = Object.assign(canAnnotate, Object.assign({ canAnnotate: 0 }));
   const id = merged.project.id;
   let tmp4 = dependencyMap;
-  let obj = id(10878);
+  let obj = id(10999);
   const isConjureProjectMuted = obj.useIsConjureProjectMuted(id);
   const active = closure_5(id).active;
-  const obj2 = id(10923);
+  const obj2 = id(11049);
   const conjureControlActive = obj2.useConjureControlActive(id);
   const obj3 = { muted: isConjureProjectMuted, annotate: tmp };
-  const conjureChatMoreSections = id(12216).conjureChatMoreSections;
-  id(12216);
+  const conjureChatMoreSections = id(12388).conjureChatMoreSections;
+  id(12388);
   const merged1 = Object.assign(merged);
   if (canAnnotate) {
     tmp = { active, busy: conjureControlActive, onToggle };
     const obj4 = { active, busy: conjureControlActive, onToggle };
   }
   const result = conjureChatMoreSections(obj3);
-  const ActionSheet = tmp3(7366).ActionSheet;
+  const ActionSheet = tmp3(7426).ActionSheet;
   const intl = tmp3(1113).intl;
-  return <ActionSheet dismissAccessibilityLabel={intl.string(_modDef3868.OsD9T0)}>{result.map((arr) => {
+  return <ActionSheet dismissAccessibilityLabel={intl.string(_modDef4026.OsD9T0)}>{result.map((arr) => {
     const TableRowGroup = id(dependencyMap[13]).TableRowGroup;
     return <TableRowGroup key={arg0[0].key} hasIcons>{arg0.map((row) => {
       const obj = { row };

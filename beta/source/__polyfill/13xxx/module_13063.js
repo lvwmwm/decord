@@ -1,151 +1,44 @@
 // Module ID: 13063
 // Function ID: 13064
-// Dependencies: [13061]
-// Exports: isMatchingPattern, safeJoin, snipLine, stringMatchesSomePattern, truncate
+// Dependencies: []
+// Exports: decode, encode
 
 // Module 13063
-import _mod13061 from "module_13061" /* 13061 */;
+const length = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/".split("");
 
-
-export function isMatchingPattern(arr, test) {
-  let flag = arg2;
-  if (arg2 === undefined) {
-    flag = false;
-  }
-  const obj = _mod13061;
-  let isStringResult = obj.isString(arr);
-  if (isStringResult) {
-    let isMatch;
-    const tmpResult = _mod13061;
-    if (tmpResult.isRegExp(test)) {
-      isMatch = test.test(arr);
-    } else {
-      const tmpResult2 = _mod13061;
-      isMatch = tmpResult2.isString(test);
-      if (isMatch) {
-        let hasItem;
-        if (flag) {
-          hasItem = arr === test;
-        } else {
-          hasItem = arr.includes(test);
-        }
-        isMatch = hasItem;
-      }
-    }
-    isStringResult = isMatch;
-  }
-  return isStringResult;
-}
-export function safeJoin(arg0, arg1) {
-  if (Array.isArray(arg0)) {
-    const items = [];
-    let num = 0;
-    if (0 < arg0.length) {
-      try {
-        const push = items.push;
-        const obj = _mod13061;
-        if (obj.isVueViewModel(arg0[num])) {
-          push("[VueViewModel]");
-        } else {
-          const _String = String;
-          push(String(arg0[num]));
-        }
-      } catch (err) {
-        items.push("[value cannot be serialized]");
-      }
-      num = num + 1;
-    }
-    return items.join(arg1);
-  } else {
-    return "";
-  }
-}
-export function snipLine(arr, arg1) {
-  if (arr.length <= 150) {
-    return arr;
-  } else {
-    let tmp = arg1;
-    if (arg1 > arr.length) {
-      tmp = length;
-    }
-    const _Math = Math;
-    let num3 = Math.max(tmp - 60, 0);
-    if (num3 < 5) {
-      num3 = 0;
-    }
-    const _Math2 = Math;
-    let bound = Math.min(num3 + 140, length);
-    if (bound > arr.length - 5) {
-      bound = length;
-    }
-    if (bound === arr.length) {
-      const _Math3 = Math;
-      num3 = Math.max(bound - 140, 0);
-    }
-    const substr = arr.slice(num3, bound);
-    let combined = substr;
-    if (num3 > 0) {
-      const _HermesInternal = HermesInternal;
-      combined = "'{snip} " + substr;
-    }
-    let text = combined;
-    if (bound < arr.length) {
-      text = `${tmp6} {snip}`;
-    }
-    return text;
-  }
-}
-export function stringMatchesSomePattern(arg0) {
-  let closure_0 = arg0;
-  let items = arg1;
-  if (arg1 === undefined) {
-    items = [];
-  }
-  let flag = arg2;
-  if (arg2 === undefined) {
-    flag = false;
-  }
-  return items.some((test) => {
-    const obj2 = _mod13061;
-    let isStringResult = obj2.isString(obj);
-    if (isStringResult) {
-      let isMatch;
-      const tmpResult = _mod13061;
-      if (tmpResult.isRegExp(test)) {
-        isMatch = test.test(obj);
-      } else {
-        const tmpResult2 = _mod13061;
-        isMatch = tmpResult2.isString(test);
-        if (isMatch) {
-          let hasItem;
-          if (flag) {
-            hasItem = obj === test;
-          } else {
-            hasItem = obj.includes(test);
-          }
-          isMatch = hasItem;
-        }
-      }
-      isStringResult = isMatch;
-    }
-    return isStringResult;
-  });
-}
-export function truncate(str) {
-  let num = arg1;
-  if (arg1 === undefined) {
-    num = 0;
-  }
-  let combined = str;
-  if (typeof str === "string") {
-    combined = str;
-    if (0 !== num) {
-      combined = str;
-      if (str.length > num) {
-        const _HermesInternal = HermesInternal;
-        combined = "" + str.slice(0, num) + "...";
-      }
+export const encode = (arg0) => {
+  if (0 <= arg0) {
+    if (arg0 < length.length) {
+      return length[arg0];
     }
   }
-  return combined;
-}
+  const typeError = new TypeError("Must be between 0 and 63: " + arg0);
+  throw typeError;
+};
+export const decode = (arg0) => {
+  let num4;
+  if (65 <= arg0) {
+    if (arg0 <= 90) {
+      num4 = arg0 - 65;
+    }
+    return num4;
+  }
+  if (97 <= arg0) {
+    if (arg0 <= 122) {
+      num4 = arg0 - 97 + 26;
+    }
+  }
+  if (48 <= arg0) {
+    if (arg0 <= 57) {
+      num4 = arg0 - 48 + 52;
+    }
+  }
+  num4 = 62;
+  if (43 != arg0) {
+    let num6 = -1;
+    if (47 == arg0) {
+      num6 = 63;
+    }
+    num4 = num6;
+  }
+};

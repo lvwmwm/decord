@@ -1,30 +1,30 @@
-// Module ID: 18307
-// Function ID: 18308
+// Module ID: 18645
+// Function ID: 18646
 // Name: GuildRoleSubscriptionTierTemplateUpsellActionSheet
-// Dependencies: [32, 19, 17, 5015, 1072, 4860, 21, 5014, 575, 8773, 563, 5272, 1113, 8873, 5624, 6027, 5634, 9074, 5258, 2]
+// Dependencies: [32, 19, 17, 5141, 1072, 4986, 21, 5140, 575, 8844, 563, 5388, 1113, 8947, 5751, 6159, 5758, 9154, 5374, 2]
 // Exports: default
 
-// Module 18307 (GuildRoleSubscriptionTierTemplateUpsellActionSheet)
+// Module 18645 (GuildRoleSubscriptionTierTemplateUpsellActionSheet)
 import react_native from "react-native" /* 17 */;
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import nativeDefault from "native" /* 575 */;
 import intl6 from "intl" /* 1113 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4860 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5272 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import components_Button_Button from "components/Button/Button" /* 5634 */;
-import Stack_Stack from "Stack/Stack" /* 6027 */;
-import useIsScreenLandscape from "useIsScreenLandscape" /* 8773 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9074 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4986 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5388 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import components_Button_Button from "components/Button/Button" /* 5758 */;
+import Stack_Stack from "Stack/Stack" /* 6159 */;
+import useIsScreenLandscape from "useIsScreenLandscape" /* 8844 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9154 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5015 */;
+import AccessibilityStore from "AccessibilityStore" /* 5141 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
-let BottomSheet, dependencyMap;
+let dependencyMap;
 
 let c10;
 let metroImportAll;
@@ -98,8 +98,8 @@ export default function GuildRoleSubscriptionTierTemplateUpsellActionSheet(arg0)
     },
     children: items2
   };
-  const obj5 = { accessibilityRole: "image", accessibilityLabel: intl.string(intl6.t.gCgirr), children: closure_10(markAsDismissed(8873), size) };
-  BottomSheet = Sheet_BottomSheet.BottomSheet;
+  const obj5 = { accessibilityRole: "image", accessibilityLabel: intl.string(intl6.t.gCgirr), children: closure_10(markAsDismissed(8947), size) };
+  const BottomSheet = Sheet_BottomSheet.BottomSheet;
   intl = intl6.intl;
   size = { style: tmp.videoContainer, src, width: tmp3, height: tmp3 / 1.7289156626506024, muted: true, paused: stateFromStores, ariaHidden: true };
   items2 = [closure_10(View, obj5), , ];
@@ -108,7 +108,7 @@ export default function GuildRoleSubscriptionTierTemplateUpsellActionSheet(arg0)
   const Text = Text_Text.Text;
   intl2 = intl6.intl;
   items3 = [closure_10(Text, obj7), ];
-  const obj8 = { variant: "text-md/normal", color: "text-default", style: tmp.subtitle, children: intl3.string(intl6.t.fLMZFw) };
+  const obj8 = { variant: "body-md/normal", color: "text-default", style: tmp.subtitle, children: intl3.string(intl6.t.fLMZFw) };
   const Text2 = Text_Text.Text;
   intl3 = intl6.intl;
   items3[1] = closure_10(Text2, obj8);

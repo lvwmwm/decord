@@ -1,19 +1,19 @@
-// Module ID: 6992
-// Function ID: 6993
+// Module ID: 7058
+// Function ID: 7059
 // Name: IdentityVerificationField
-// Dependencies: [19, 17, 21, 5014, 575, 5624, 1113, 6993, 5634, 5048, 6995, 6744, 7210, 1994, 7213, 7249, 7127, 2]
+// Dependencies: [19, 17, 21, 5140, 575, 5751, 1113, 7059, 5758, 5174, 7061, 6799, 7274, 2118, 7277, 7312, 7198, 2]
 // Exports: default
 
-// Module 6992 (IdentityVerificationField)
+// Module 7058 (IdentityVerificationField)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 5048 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import CheckmarkLargeIcon from "CheckmarkLargeIcon" /* 6993 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 5174 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import CheckmarkLargeIcon from "CheckmarkLargeIcon" /* 7059 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -22,8 +22,8 @@ let closure_4;
 let hasOwnProperty;
 let obj2;
 let tmp;
-const MobilePhoneIcon = tmp(7127);
-const EnvelopeIcon = tmp(7249);
+const MobilePhoneIcon = tmp(7198);
+const EnvelopeIcon = tmp(7312);
 function BaseIdentityVerificationField(icon) {
   let Button;
   let intl;
@@ -45,7 +45,7 @@ function BaseIdentityVerificationField(icon) {
     tmp4 = React3(icon, obj2);
   }
   items = [tmp4, , ];
-  const obj3 = { style: tmp.label, variant: "text-md/medium", color: "mobile-text-heading-primary", children: label };
+  const obj3 = { style: tmp.label, variant: "body-md/medium", color: "mobile-text-heading-primary", children: label };
   items[1] = React3(Text_Text.Text, obj3);
   if (passesVerification) {
     const obj4 = { style: tmp.verifiedContainer, accessible: true, accessibilityLabel: intl2.string(intl4.t.g62IJl), children: React3(CheckmarkLargeIcon.CheckmarkLargeIcon, { color: "status-positive" }) };
@@ -54,7 +54,7 @@ function BaseIdentityVerificationField(icon) {
   } else {
     obj5 = { style: tmp.ctaButton, children: React3(Button, obj6) };
     obj6 = { variant: "primary", size: "sm", grow: true, text: intl.string(intl4.t["13ofGu"]), onPress };
-    Button = tmp7(5634).Button;
+    Button = tmp7(5758).Button;
     intl = tmp7(1113).intl;
   }
   items[2] = React3(View, obj5);

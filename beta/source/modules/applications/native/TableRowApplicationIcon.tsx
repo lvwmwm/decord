@@ -1,16 +1,16 @@
-// Module ID: 9041
-// Function ID: 9042
+// Module ID: 9121
+// Function ID: 9122
 // Name: TableRowApplicationIcon
-// Dependencies: [19, 21, 5014, 575, 5717, 1409, 2]
+// Dependencies: [19, 21, 5140, 575, 5842, 1411, 2]
 // Exports: default
 
-// Module 9041 (TableRowApplicationIcon)
+// Module 9121 (TableRowApplicationIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1409 */;
-import FastImageDefault from "FastImage" /* 5717 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
+import FastImageDefault from "FastImage" /* 5842 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 let size;

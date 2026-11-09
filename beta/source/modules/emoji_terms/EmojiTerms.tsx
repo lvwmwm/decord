@@ -1,11 +1,11 @@
-// Module ID: 6802
-// Function ID: 6803
+// Module ID: 6857
+// Function ID: 6858
 // Name: EmojiTerms
-// Dependencies: [6803, 6804, 2]
+// Dependencies: [6858, 6859, 2]
 
-// Module 6802 (EmojiTerms)
-import LazyPromiseInitializerDefault from "LazyPromiseInitializer" /* 6803 */;
-import EmojiTermsImporter from "EmojiTermsImporter" /* 6804 */;
+// Module 6857 (EmojiTerms)
+import LazyPromiseInitializerDefault from "LazyPromiseInitializer" /* 6858 */;
+import EmojiTermsImporter from "EmojiTermsImporter" /* 6859 */;
 import size from "module_2" /* 2 */;
 
 function loadEmoji(arg0) {

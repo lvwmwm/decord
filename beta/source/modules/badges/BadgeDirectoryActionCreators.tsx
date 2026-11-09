@@ -1,18 +1,18 @@
-// Module ID: 8768
-// Function ID: 8769
+// Module ID: 8839
+// Function ID: 8840
 // Name: BadgeDirectoryActionCreators
-// Dependencies: [5, 1383, 1072, 572, 1282, 6540, 6545, 1242, 559, 1089, 2]
-// Exports: fetchBadge, fetchBadgeDirectory, fetchBadgeSummary, markBadgeDirectoryBadgeIndicatorSeen
+// Dependencies: [5, 1385, 1072, 572, 1282, 6594, 6599, 1242, 559, 1089, 2]
+// Exports: ackBadge, fetchBadgeDirectory, fetchBadgeSummary, markBadgeDirectoryBadgeIndicatorSeen
 
-// Module 8768 (BadgeDirectoryActionCreators)
+// Module 8839 (BadgeDirectoryActionCreators)
 import HTTPUtils from "HTTPUtils" /* 1282 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserStore from "UserStore" /* 1383 */;
+import UserStore from "UserStore" /* 1385 */;
 import Constants from "Constants" /* 1072 */;
 import Dispatcher from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 
-let backoff, set;
+let backoff, closure_2, closure_6, postResult, set;
 
 let hasOwnProperty;
 let metroRequire;
@@ -33,9 +33,9 @@ let obj = function _fetchBadgeDirectory() {
     let closure_3;
     let closure_4;
     let closure_5;
-    let closure_6;
     let items;
     let obj5;
+    let requestedAt;
     let userId;
     let closure_0 = arg0;
     let closure_1 = value;
@@ -77,7 +77,7 @@ let obj = function _fetchBadgeDirectory() {
           }
           closure_5 = "attempt:" + str3;
           const _Date3 = Date;
-          closure_6 = Date.now();
+          requestedAt = Date.now();
           const obj10 = { type: "BADGE_DIRECTORY_FETCH_START", userId };
           const obj9 = closure_132_1(closure_132_2[3]);
           obj9.dispatch(obj10);
@@ -96,10 +96,10 @@ let obj = function _fetchBadgeDirectory() {
       let closure_9 = closure_5;
       const obj13 = { name: closure_132_0(closure_132_2[6]).MetricEvents.BADGE_DIRECTORY_CATALOG_FETCH, tags: items };
       const distribution2 = closure_132_1(closure_132_2[5]).distribution;
-      const tmp27 = closure_132_1(closure_132_2[5]);
+      const tmp28 = closure_132_1(closure_132_2[5]);
       items = [closure_4, "result:failure", "catalog_state:unknown", closure_5];
       const _Date2 = Date;
-      distribution2(obj13, Date.now() - closure_6);
+      distribution2(obj13, Date.now() - requestedAt);
       const obj14 = { type: "BADGE_DIRECTORY_FETCH_FAILURE", userId };
       const obj6 = closure_132_1(closure_132_2[3]);
       obj6.dispatch(obj14);
@@ -126,8 +126,8 @@ let obj = function _fetchBadgeDirectory() {
       const distribution = closure_132_1(closure_132_2[5]).distribution;
       const tmp10 = closure_132_1(closure_132_2[5]);
       const _Date = Date;
-      distribution(obj, Date.now() - closure_6);
-      const obj16 = { type: "BADGE_DIRECTORY_FETCH_SUCCESS", userId, badges: body.badges };
+      distribution(obj, Date.now() - requestedAt);
+      const obj16 = { type: "BADGE_DIRECTORY_FETCH_SUCCESS", userId, badges: body.badges, requestedAt };
       const obj2 = closure_132_1(closure_132_2[3]);
       obj2.dispatch(obj16);
       c6 = 0;
@@ -142,9 +142,11 @@ let obj = function _fetchBadgeDirectory() {
   });
   return obj(...arguments);
 };
+function fetchBadge() {
+  return obj(...arguments);
+}
 obj = function _fetchBadge() {
-  obj = _asyncToGenerator(async (userId, arg1) => {
-    let body = arg1;
+  obj = _asyncToGenerator(async (userId, requestedAt) => {
     let c7 = 0;
     let c8 = 0;
     let c6 = 0;
@@ -158,7 +160,7 @@ obj = function _fetchBadge() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -172,12 +174,12 @@ obj = function _fetchBadge() {
               return { value, done: true };
             } else {
               closure_4 = tmp;
-              closure_3 = tmp4;
               userId = undefined;
+              requestedAt = undefined;
               body = undefined;
-              id = body;
-              const tmp35 = userId;
-              if (body == null) {
+              let id = requestedAt;
+              const tmp38 = userId;
+              if (requestedAt == null) {
                 currentUser = currentUser.getCurrentUser();
                 id = undefined;
                 if (currentUser != null) {
@@ -186,21 +188,23 @@ obj = function _fetchBadge() {
               }
               userId = id;
               if (null != id) {
+                const _Date = Date;
+                requestedAt = Date.now();
                 c6 = 1;
                 const HTTP = HTTPUtils.HTTP;
                 const get = HTTP.get;
+                const obj5 = { url: closure_2_5.USER_BADGE(urlUserId(tmp25), tmp38), rejectWithError: true };
+                value = get(obj5);
                 c7 = 2;
                 c8 = 1;
-                const obj5 = { url: closure_2_5.USER_BADGE(urlUserId(tmp23), tmp35), rejectWithError: true };
-                const obj6 = { value: get(obj5), done: false };
-                return obj6;
+                return { value, done: false };
               }
             }
-          } else if (1 === c7) {
+          } else if (1 === tmp4) {
             c6 = 0;
-            let closure_2 = closure_5;
+            let closure_3 = closure_5;
             const obj4 = closure_132_1(closure_132_2[7]);
-            obj4.captureException(closure_2);
+            obj4.captureException(closure_3);
           } else if (arg0 === 1) {
             c8 = 3;
             throw value;
@@ -210,18 +214,18 @@ obj = function _fetchBadge() {
             return { value, done: true };
           } else {
             body = value;
-            const obj8 = { type: "BADGE_FETCH_SUCCESS", userId, badge: body.body };
+            const obj8 = { type: "BADGE_FETCH_SUCCESS", userId, badge: body.body, requestedAt };
             obj = closure_132_1(closure_132_2[3]);
             obj.dispatch(obj8);
             c6 = 0;
           }
           c8 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
-        } catch (tmp28) {
-          closure_5 = tmp28;
+          return { value: "HermesInternal", done: null };
+        } catch (tmp30) {
+          closure_5 = tmp30;
           if (0 === c6) {
             c8 = 3;
-            throw tmp28;
+            throw tmp30;
           } else {
             c7 = 1;
           }
@@ -232,9 +236,8 @@ obj = function _fetchBadge() {
   return obj(...arguments);
 };
 obj = function _requestBadgeSummary() {
-  obj = _asyncToGenerator(async (arg0, userId, arg2) => {
+  obj = _asyncToGenerator(async (arg0, userId, requestedAt) => {
     let closure_0 = arg0;
-    let body = arg2;
     let c8 = 0;
     let c9 = 0;
     let c7 = 0;
@@ -249,7 +252,7 @@ obj = function _requestBadgeSummary() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -263,13 +266,14 @@ obj = function _requestBadgeSummary() {
               return { value, done: true };
             } else {
               closure_5 = tmp;
-              closure_4 = tmp4;
-              userId = body;
+              userId = requestedAt;
               body = undefined;
               backoff = undefined;
+              const _Date2 = Date;
+              requestedAt = Date.now();
               c7 = 1;
               const HTTP = HTTPUtils.HTTP;
-              const request = { url: closure_2_5.USER_BADGE(urlUserId(body), userId), query: { with_progress: false }, rejectWithError: true };
+              const request = { url: closure_2_5.USER_BADGE(urlUserId(requestedAt), userId), query: { with_progress: false }, rejectWithError: true };
               const get = HTTP.get;
               c8 = 2;
               c9 = 1;
@@ -277,29 +281,32 @@ obj = function _requestBadgeSummary() {
               return obj4;
             }
           } else {
-            if (1 === c8) {
+            if (1 === tmp4) {
               c7 = 0;
-              closure_4 = closure_6;
-              value = closure_133_8.get(closure_0);
+              closure_5 = closure_6;
+              let self = closure_133_8.get(closure_0);
               backoff = undefined;
-              if (value != null) {
-                backoff = value.backoff;
+              if (self != null) {
+                backoff = self.backoff;
               }
+              body = backoff;
               if (backoff == null) {
                 const tmp26 = closure_133_1(closure_133_2[8]);
                 const MINUTE = closure_133_1(closure_133_2[9]).Millis.MINUTE;
-                const self = this;
+                self = this;
                 const self2 = this;
-                backoff = new tmp26(MINUTE, closure_133_1(closure_133_2[9]).Millis.HOUR, true);
+                body = new tmp26(MINUTE, closure_133_1(closure_133_2[9]).Millis.HOUR, true);
                 const tmp262 = new tmp26(MINUTE, closure_133_1(closure_133_2[9]).Millis.HOUR, true);
               }
+              backoff = body;
               const _Date = Date;
-              const obj6 = { backoff, gateUntil: timestamp + backoff.fail() };
+              const obj5 = { backoff, gateUntil: timestamp + backoff.fail() };
               set = closure_133_8.set;
               timestamp = Date.now();
-              const result = set(closure_0, obj6);
-              const obj5 = closure_133_1(closure_133_2[7]);
-              obj5.captureException(closure_4);
+              const result = set(closure_0, obj5);
+              self = closure_133_1(closure_133_2[7]).captureException;
+              closure_133_1(closure_133_2[7]);
+              self(closure_5);
             } else if (arg0 === 1) {
               c9 = 3;
               throw value;
@@ -310,21 +317,104 @@ obj = function _requestBadgeSummary() {
             } else {
               body = value;
               closure_133_8.delete(closure_0);
-              const obj8 = { type: "BADGE_SUMMARY_FETCH_SUCCESS", userId, badge: body.body };
+              const obj7 = { type: "BADGE_SUMMARY_FETCH_SUCCESS", userId, badge: body.body, requestedAt };
               obj = closure_133_1(closure_133_2[3]);
-              obj.dispatch(obj8);
+              obj.dispatch(obj7);
               c7 = 0;
             }
             c9 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
-        } catch (tmp47) {
-          closure_6 = tmp47;
+        } catch (tmp48) {
+          closure_6 = tmp48;
           if (0 === c7) {
             c9 = 3;
-            throw tmp47;
+            throw tmp48;
           } else {
             c8 = 1;
+          }
+        }
+      }
+    })();
+  });
+  return obj(...arguments);
+};
+obj = function _ackBadge() {
+  obj = _asyncToGenerator(async (badgeId) => {
+    let c5 = 0;
+    let c6 = 0;
+    let c4 = 0;
+    return (async (arg0, value) => {
+      if (c6 === 2) {
+        c6 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          return { value, done: true };
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          let id;
+          c6 = 2;
+          if (0 === c5) {
+            if (arg0 === 1) {
+              c6 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c6 = 3;
+              return { value, done: true };
+            } else {
+              closure_2 = tmp;
+              currentUser = currentUser.getCurrentUser();
+              id = undefined;
+              const tmp35 = badgeId;
+              if (currentUser != null) {
+                id = currentUser.id;
+              }
+              if (null != id) {
+                c4 = 1;
+                const HTTP = HTTPUtils.HTTP;
+                const post = HTTP.post;
+                const obj5 = { url: closure_2_5.USER_BADGE_ACK(tmp35), rejectWithError: true };
+                postResult = post(obj5);
+                c5 = 2;
+                c6 = 1;
+                return { value: postResult, done: false };
+              }
+            }
+          } else if (1 === tmp4) {
+            c4 = 0;
+            closure_2 = closure_3;
+            const obj4 = closure_130_1(closure_130_2[7]);
+            obj4.captureException(closure_2);
+          } else if (arg0 === 1) {
+            c6 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c4 = 0;
+            c6 = 3;
+            return { value, done: true };
+          } else {
+            const obj8 = { type: "BADGE_ACK_SUCCESS", userId: id, badgeId };
+            obj = closure_130_1(closure_130_2[3]);
+            obj.dispatch(obj8);
+            postResult = badgeId;
+            closure_130_11(badgeId, id);
+            c4 = 0;
+          }
+          c6 = 3;
+          return { value: "HermesInternal", done: null };
+        } catch (tmp28) {
+          closure_3 = tmp28;
+          if (0 === c4) {
+            c6 = 3;
+            throw tmp28;
+          } else {
+            c5 = 1;
           }
         }
       }
@@ -344,9 +434,7 @@ let result = size.fileFinishedImporting("modules/badges/BadgeDirectoryActionCrea
 export function fetchBadgeDirectory() {
   return obj(...arguments);
 }
-export function fetchBadge() {
-  return obj(...arguments);
-}
+export { fetchBadge };
 export function fetchBadgeSummary(GIFTING, id) {
   function requestBadgeSummary() {
     return obj(...arguments);
@@ -395,6 +483,9 @@ export function fetchBadgeSummary(GIFTING, id) {
       }
     }
   }
+}
+export function ackBadge() {
+  return obj(...arguments);
 }
 export function markBadgeDirectoryBadgeIndicatorSeen(badgeId) {
   obj = Dispatcher;

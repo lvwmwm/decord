@@ -1,25 +1,25 @@
-// Module ID: 16599
-// Function ID: 16600
+// Module ID: 16921
+// Function ID: 16922
 // Name: AccountUsernameSetting
-// Dependencies: [19, 1383, 8432, 1072, 21, 504, 5068, 13301, 5624, 11540, 1113, 16600, 2]
+// Dependencies: [19, 1385, 8503, 1072, 21, 504, 5194, 13534, 5751, 11685, 1113, 16922, 2]
 
-// Module 16599 (AccountUsernameSetting)
+// Module 16921 (AccountUsernameSetting)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
-import UserUtilsDefault from "UserUtils" /* 5068 */;
-import SettingsConstants from "SettingsConstants" /* 8432 */;
-import AutomodQuarantineUtils from "AutomodQuarantineUtils" /* 13301 */;
+import UserUtilsDefault from "UserUtils" /* 5194 */;
+import SettingsConstants from "SettingsConstants" /* 8503 */;
+import AutomodQuarantineUtils from "AutomodQuarantineUtils" /* 13534 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1383 */;
-import SettingBuilders from "SettingBuilders" /* 11540 */;
+import UserStore from "UserStore" /* 1385 */;
+import SettingBuilders from "SettingBuilders" /* 11685 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
 let tmp;
-const Text_Text = tmp(5624);
+const Text_Text = tmp(5751);
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const UserSettingsSections = Constants.UserSettingsSections;
 const jsx = Fragment.jsx;
@@ -50,7 +50,7 @@ let obj = {
     }
     let tmp5 = null;
     if (null != first) {
-      tmp5 = jsx(Text_Text.Text, { variant: "text-xs/medium", color: "text-feedback-warning", children: first });
+      tmp5 = jsx(Text_Text.Text, { variant: "body-xs/medium", color: "text-feedback-warning", children: first });
     }
     return tmp5;
   },

@@ -1,54 +1,78 @@
-// Module ID: 17336
-// Function ID: 17337
+// Module ID: 17661
+// Function ID: 17662
 // Name: GummyStripesFromHue
-// Dependencies: [32, 19, 21, 5014, 1400, 5095, 16447, 2]
+// Dependencies: [32, 19, 21, 5140, 1393, 1652, 16768, 2]
 // Exports: default
 
-// Module 17336 (GummyStripesFromHue)
-import ColorPickerUtils from "ColorPickerUtils" /* 16447 */;
+// Module 17661 (GummyStripesFromHue)
+import _modDef1652 from "module_1652" /* 1652 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
+
+const require = globalThis.__r;
+let _require, dependencyMap, importDefault, obj1;
 
 let closure_4;
 let hasOwnProperty;
-function AnimatedStripe(hue) {
-  hue = hue.hue;
-  const shift = hue.shift;
-  const saturation = hue.saturation;
-  const lightness = hue.lightness;
-  let stripeOverlap = hue.overlap;
-  const tmp = closure_6();
-  let obj = hue(saturation[5]);
-  const fn = function c() {
-    const result = (hue.get() + shift) % 360;
-    const obj = ColorPickerUtils;
-    const obj2 = { h: (result + 360) % 360, s: saturation, l: lightness };
-    const tmp2 = _slicedToArray(obj.hslToRgbWorklet(obj2), 3);
-    const obj3 = { backgroundColor: "rgb(" + tmp2[0] + ", " + tmp2[1] + ", " + tmp2[2] + ")" };
-    return obj3;
-  };
-  let obj2 = { hue, shift, hslToRgbWorklet: hue(saturation[6]).hslToRgbWorklet, saturation, lightness };
-  fn.__closure = obj2;
-  fn.__workletHash = 8497009401863;
-  fn.__initData = __initData;
-  const animatedStyle = obj.useAnimatedStyle(fn);
+function AnimatedStripe(overlap) {
+  let _undefined;
+  let _undefined2;
+  let c1;
+  let hue;
+  let lightness;
+  let saturation;
+  let shift;
+  let tmp4;
+  let tmp5;
+  let tmp6;
+  let tmp7;
+  let tmp8;
+  let tmp9;
+  let stripeOverlap = overlap.overlap;
+  ({ hue, shift, saturation, lightness } = overlap);
+  let tmp = closure_6();
+  const items = [closure_7, hue, shift, , , ];
+  const useAnimatedStyle = require("module_1652").useAnimatedStyle;
+  require("module_1652");
+  items[3] = require("ColorPickerUtils").hslToRgbWorklet;
+  items[4] = saturation;
+  items[5] = lightness;
+  _require = undefined;
+  importDefault = undefined;
+  dependencyMap = undefined;
+  let c3;
+  let c4;
+  [tmp4, tmp5, tmp6, tmp7, tmp8, tmp9] = items;
+  class GummyStripesFromHueTsx1 {
+    constructor() {
+      obj = { h: ((closure_0.get() + closure_1) % 360 + 360) % 360, s: closure_3, l: closure_4 };
+      tmp = closure_3(closure_2(obj), 3);
+      obj1 = { backgroundColor: "rgb(" + tmp[0] + ", " + tmp[1] + ", " + tmp[2] + ")" };
+      return obj1;
+    }
+  }
+  const items1 = [tmp5, tmp6, tmp7, tmp8, tmp9];
+  GummyStripesFromHueTsx1.__closure = items1;
+  GummyStripesFromHueTsx1.__workletHash = 15518574329470;
+  GummyStripesFromHueTsx1.__initData = tmp4;
+  const animatedStyle = useAnimatedStyle(GummyStripesFromHueTsx1);
   const style = [tmp.stripe, , ];
-  const View = shift(saturation[5]).View;
-  const tmp3 = closure_4;
+  const View = _modDef1652.View;
+  const tmp11 = c4;
   if (stripeOverlap) {
     stripeOverlap = tmp.stripeOverlap;
   }
   style[1] = stripeOverlap;
   style[2] = animatedStyle;
-  return tmp3(View, { style });
+  return tmp11(View, { style });
 }
 ({ jsx: closure_4, Fragment: hasOwnProperty } = Fragment);
 let closure_6 = createStyles.createStyles({ stripe: { flex: 1 }, stripeOverlap: { marginLeft: -1 } });
-const __initData = { code: "function GummyStripesFromHueTsx1(){const{hue,shift,hslToRgbWorklet,saturation,lightness}=this.__closure;const h=((hue.get()+shift)%360+360)%360;const[r,g,b]=hslToRgbWorklet({h:h,s:saturation,l:lightness});return{backgroundColor:\"rgb(\"+r+\", \"+g+\", \"+b+\")\"};}" };
-let result = size.fileFinishedImporting("modules/display_name_styles/native/effects/GummyStripesFromHue.tsx");
+let closure_7 = { code: "(function GummyStripesFromHueTsx1(){let[hue,shift,hslToRgbWorklet,saturation,lightness]=this.__closure;const h=((hue.get()+shift)%360+360)%360;const[r,g,b]=hslToRgbWorklet({h:h,s:saturation,l:lightness});return{backgroundColor:\"rgb(\"+r+\", \"+g+\", \"+b+\")\"};})" };
+const result = size.fileFinishedImporting("modules/display_name_styles/native/effects/GummyStripesFromHue.tsx");
 
 export default function GummyStripesFromHue(hue) {
   let GUMMY_STRIPES;
@@ -56,9 +80,9 @@ export default function GummyStripesFromHue(hue) {
   let obj = {
     children: GUMMY_STRIPES.map((hueShift, index) => {
       const obj = { hue, shift: hueShift.hueShift, saturation: hueShift.saturation, lightness: hueShift.lightness, overlap: index > 0 };
-      return React3(AnimatedStripe, obj, index);
+      return l(AnimatedStripe, obj, index);
     })
   };
-  GUMMY_STRIPES = hue(1400).GUMMY_STRIPES;
-  return closure_4(closure_5, obj);
+  GUMMY_STRIPES = hue(1393).GUMMY_STRIPES;
+  return l(closure_5, obj);
 };

@@ -1,15 +1,15 @@
-// Module ID: 18744
-// Function ID: 18745
+// Module ID: 19107
+// Function ID: 19108
 // Name: GenericTextRow
-// Dependencies: [5, 19, 17, 21, 5014, 5624, 18697, 2]
+// Dependencies: [5, 19, 17, 21, 5140, 5751, 19060, 2]
 
-// Module 18744 (GenericTextRow)
+// Module 19107 (GenericTextRow)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import SearchListRow2 from "SearchListRow" /* 18697 */;
+import SearchListRow2 from "SearchListRow" /* 19060 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let c0, c1;
@@ -39,7 +39,7 @@ const memoResult = react.memo(function GenericTextRow(text) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -67,7 +67,7 @@ const memoResult = react.memo(function GenericTextRow(text) {
           return obj;
         } else {
           c0 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp6) {
         c0 = 3;
@@ -75,7 +75,7 @@ const memoResult = react.memo(function GenericTextRow(text) {
       }
     }
   }), items);
-  let obj2 = { lineClamp: 1, variant: "text-md/medium", color: "mobile-text-heading-primary", style: tmp.container, children: text };
+  let obj2 = { lineClamp: 1, variant: "body-md/medium", color: "mobile-text-heading-primary", style: tmp.container, children: text };
   const label = <View style={tmp.title}>{null}</View>;
   let icon1 = null != icon;
   const SearchListRow = SearchListRow2.SearchListRow;

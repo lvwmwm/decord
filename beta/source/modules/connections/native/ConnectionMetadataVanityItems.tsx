@@ -1,24 +1,24 @@
-// Module ID: 11605
-// Function ID: 11606
+// Module ID: 11763
+// Function ID: 11764
 // Name: ConnectionMetadataVanityItems
-// Dependencies: [19, 17, 7349, 21, 5014, 575, 1113, 11606, 11607, 12, 1895, 5624, 1187, 7348, 2]
+// Dependencies: [19, 17, 7410, 21, 5140, 575, 1113, 11764, 11765, 12, 2024, 5751, 1187, 7409, 2]
 // Exports: generateBlueskyMetadataItems, generateEbayMetadataItems, generateLetterboxdMetadataItems, generatePaypalMetadataItems, generateRedditMetadataItems, generateRoleConnectionMetadataItems, generateSteamMetadataItems, generateTikTokMetadataItems, generateTwitterMetadataItems
 
-// Module 11605 (ConnectionMetadataVanityItems)
+// Module 11763 (ConnectionMetadataVanityItems)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import NumberUtils from "NumberUtils" /* 1895 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import ConnectionsUtils from "ConnectionsUtils" /* 7348 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11606 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 11607 */;
+import NumberUtils from "NumberUtils" /* 2024 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import ConnectionsUtils from "ConnectionsUtils" /* 7409 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11764 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 11765 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 7349 */;
+import Constants from "Constants" /* 7410 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let application_metadata;
@@ -40,14 +40,15 @@ function PaypalVanityTag(style) {
   intl = intl5.intl;
   return metroRequire(VanityTag, obj, constants.PAYPAL_VERIFIED);
 }
-function VanityMetric(label) {
+function VanityMetric(arg0) {
   let count;
   let formatResult;
   let items;
+  let label;
   let percent;
   let style;
-  label = label.label;
-  ({ count, style, percent } = label);
+  ({ count, label } = arg0);
+  ({ style, percent } = arg0);
   let str = "";
   const tmp = closure_8();
   const obj = NumberUtils;
@@ -62,10 +63,10 @@ function VanityMetric(label) {
     formatResult = intl.format(tmp2(1113).t.HLoinF, obj2);
   } else {
     const intl2 = tmp2(1113).intl;
-    const obj3 = { value: sum };
+    const obj3 = { count, value: sum };
     formatResult = intl2.format(label, obj3);
   }
-  const obj4 = { variant: "text-xs/normal", color: "text-muted", style: items, children: formatResult };
+  const obj4 = { variant: "body-xs/normal", color: "text-muted", style: items, children: formatResult };
   items = [tmp.connectedAccountVanityMetadata, style];
   return metroRequire(Text_Text.Text, obj4);
 }
@@ -85,7 +86,7 @@ function VanityItem(style) {
   items1 = [, ];
   const obj2 = { source: imageSrc, accessibilityLabel: imageAlt, style: tmp.connectedAccountVanityMetadataItemIcon, disableColor: true };
   items1[0] = metroRequire(native.Icon, obj2);
-  items1[1] = metroRequire(Text_Text.Text, { variant: "text-xs/normal", color: "text-muted", style, children: label });
+  items1[1] = metroRequire(Text_Text.Text, { variant: "body-xs/normal", color: "text-muted", style, children: label });
   return metroImportDefault(View, obj);
 }
 function VanityTag(arg0) {
@@ -95,7 +96,7 @@ function VanityTag(arg0) {
   let textStyle;
   ({ label, style, textStyle } = arg0);
   const tmp = closure_8();
-  const obj = { style: items, children: metroRequire(Text_Text.Text, { variant: "text-xs/normal", color: "text-muted", style: textStyle, children: label }) };
+  const obj = { style: items, children: metroRequire(Text_Text.Text, { variant: "body-xs/normal", color: "text-muted", style: textStyle, children: label }) };
   items = [, , ];
   ({ connectedAccountVanityMetadata: arr[0], connectedAccountVanityMetadataTag: arr[1] } = tmp);
   items[2] = style;
@@ -112,7 +113,7 @@ function VanityDate(arg0) {
   let obj3;
   let style;
   ({ date, label, locale, style } = arg0);
-  const obj = { variant: "text-xs/normal", color: "text-muted", style: items, children: format(HLoinF, obj2) };
+  const obj = { variant: "body-xs/normal", color: "text-muted", style: items, children: format(HLoinF, obj2) };
   items = [closure_8().connectedAccountVanityMetadata, style];
   closure_8();
   const Text = Text_Text.Text;
@@ -182,12 +183,12 @@ export function generateTwitterMetadataItems(metadata, metadataItem) {
   const _Number2Result = _Number2(num2);
   if (_NumberResult > -1) {
     const push = items.push;
-    const obj = { style: metadataItem, count: _NumberResult, label: intl5.t.llwqqe };
+    const obj = { style: metadataItem, count: _NumberResult, label: intl5.t.wJZw02 };
     push(metroRequire(VanityMetric, obj, constants.TWITTER_STATUSES_COUNT));
   }
   if (_Number2Result > -1) {
     const push2 = items.push;
-    const obj2 = { style: metadataItem, count: _Number2Result, label: intl5.t.LMNOUQ };
+    const obj2 = { style: metadataItem, count: _Number2Result, label: intl5.t.grbQMy };
     push2(metroRequire(VanityMetric, obj2, constants.TWITTER_FOLLOWERS_COUNT));
   }
   return items;
@@ -208,12 +209,12 @@ export function generateBlueskyMetadataItems(arg0, style) {
   const _Number2Result = _Number2(num2);
   if (_NumberResult > -1) {
     const push = items.push;
-    const obj = { style, count: _NumberResult, label: intl5.t.thA2ir };
+    const obj = { style, count: _NumberResult, label: intl5.t.uHUdEs };
     push(metroRequire(VanityMetric, obj, constants.BLUESKY_STATUSES_COUNT));
   }
   if (_Number2Result > -1) {
     const push2 = items.push;
-    const obj2 = { style, count: _Number2Result, label: intl5.t.RQath2 };
+    const obj2 = { style, count: _Number2Result, label: intl5.t.NP5dCZ };
     push2(metroRequire(VanityMetric, obj2, constants.BLUESKY_FOLLOWERS_COUNT));
   }
   return items;
@@ -234,12 +235,12 @@ export function generateLetterboxdMetadataItems(metadata, metadataItem) {
   const _Number2Result = _Number2(num2);
   if (_NumberResult > -1) {
     const push = items.push;
-    const obj = { style: metadataItem, count: _NumberResult, label: intl5.t.wvFh8m };
+    const obj = { style: metadataItem, count: _NumberResult, label: intl5.t.Ck2y4x };
     push(metroRequire(VanityMetric, obj, constants.LETTERBOXD_WATCHES));
   }
   if (_Number2Result > -1) {
     const push2 = items.push;
-    const obj2 = { style: metadataItem, count: _Number2Result, label: intl5.t.heUoTj };
+    const obj2 = { style: metadataItem, count: _Number2Result, label: intl5.t["5JpDYR"] };
     push2(metroRequire(VanityMetric, obj2, constants.LETTERBOXD_FILMS_IN_DIARY_THIS_YEAR));
   }
   return items;
@@ -272,7 +273,7 @@ export function generateSteamMetadataItems(metadata, metadataItem) {
   const _Number3Result = _Number3(num3);
   if (_NumberResult > -1) {
     const push = items.push;
-    const obj = { style: metadataItem, count: _NumberResult, label: intl5.t["ppXMu/"] };
+    const obj = { style: metadataItem, count: _NumberResult, label: intl5.t.ZatMuX };
     push(metroRequire(VanityMetric, obj, constants.STEAM_GAME_COUNT));
   }
   if (_Number2Result > -1) {
@@ -349,7 +350,7 @@ export function generateTikTokMetadataItems(metadata, metadataItem) {
   const _Number3Result = _Number3(num3);
   if (_NumberResult > -1) {
     const push = items.push;
-    const obj = { style: metadataItem, count: _NumberResult, label: intl5.t["Mpm/Bc"] };
+    const obj = { style: metadataItem, count: _NumberResult, label: intl5.t["O0/8iD"] };
     push(metroRequire(VanityMetric, obj, constants.TIKTOK_FOLLOWER_COUNT));
   }
   if (_Number2Result > -1) {
@@ -359,7 +360,7 @@ export function generateTikTokMetadataItems(metadata, metadataItem) {
   }
   if (_Number3Result > -1) {
     const push3 = items.push;
-    const obj3 = { style: metadataItem, count: _Number3Result, label: intl5.t.Qwhe5j };
+    const obj3 = { style: metadataItem, count: _Number3Result, label: intl5.t.tEyTTp };
     push3(metroRequire(VanityMetric, obj3, constants.TIKTOK_LIKES_COUNT));
   }
   if ("1" === tmp3) {

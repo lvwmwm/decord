@@ -1,18 +1,18 @@
-// Module ID: 14206
-// Function ID: 14207
+// Module ID: 14443
+// Function ID: 14444
 // Name: MessageRequestEmptyChat
-// Dependencies: [19, 17, 1083, 21, 5014, 1375, 5624, 1113, 2]
+// Dependencies: [19, 17, 1083, 21, 5140, 1377, 5751, 1113, 2]
 // Exports: default
 
-// Module 14206 (MessageRequestEmptyChat)
+// Module 14443 (MessageRequestEmptyChat)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1083 */;
 import intl2 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5624 */;
+import Text_Text from "Text/Text" /* 5751 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5014 */;
-import PlatformUtils from "PlatformUtils" /* 1375 */;
+import createStyles_mod from "createStyles" /* 5140 */;
+import PlatformUtils from "PlatformUtils" /* 1377 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -36,7 +36,7 @@ const result = size.fileFinishedImporting("modules/message_request/native/Messag
 
 export default function MessageRequestEmptyChat(style) {
   let intl;
-  ({ style: closure_4().text, variant: "text-md/normal", color: "text-muted", children: intl.string(intl2.t.eeJvfA) });
+  ({ style: closure_4().text, variant: "body-md/normal", color: "text-muted", children: intl.string(intl2.t.eeJvfA) });
   const Text = Text_Text.Text;
   intl = intl2.intl;
   return <View style={arg0.style}>{null}</View>;

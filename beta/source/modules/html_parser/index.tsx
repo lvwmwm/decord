@@ -1,14 +1,14 @@
-// Module ID: 9404
-// Function ID: 9405
+// Module ID: 9485
+// Function ID: 9486
 // Name: DEFAULT_MAX_HTML_LENGTH
-// Dependencies: [9405, 9406, 9430, 9431, 2]
+// Dependencies: [9486, 9487, 9511, 9512, 2]
 // Exports: parseHTMLFromText
 
-// Module 9404 (DEFAULT_MAX_HTML_LENGTH)
-import _mod9406 from "module_9406" /* 9406 */;
-import HTMLParserRunUtils from "HTMLParserRunUtils" /* 9430 */;
-import HTMLParserLinkUtils from "HTMLParserLinkUtils" /* 9431 */;
-import HTMLParserConstants from "HTMLParserConstants" /* 9405 */;
+// Module 9485 (DEFAULT_MAX_HTML_LENGTH)
+import _mod9487 from "module_9487" /* 9487 */;
+import HTMLParserRunUtils from "HTMLParserRunUtils" /* 9511 */;
+import HTMLParserLinkUtils from "HTMLParserLinkUtils" /* 9512 */;
+import HTMLParserConstants from "HTMLParserConstants" /* 9486 */;
 import size from "module_2" /* 2 */;
 
 let c1, constants, map, regex;
@@ -355,7 +355,7 @@ function parseMarkupRuns(markup, keepInvalidAnchors) {
     keepInvalidAnchors = keepInvalidAnchors.keepInvalidAnchors;
   }
   const tmp2 = obj;
-  const Parser = obj(9406).Parser;
+  const Parser = obj(9487).Parser;
   class tmp4 extends Parser {
     onclosetag(arg0, arg1) {
       const markup = obj.markup;
@@ -523,7 +523,7 @@ function parseMarkupRuns(markup, keepInvalidAnchors) {
                     };
                     const self5 = this;
                     const self6 = this;
-                    const parser = new _mod9406.Parser(obj, { decodeEntities: true, recognizeSelfClosing: true });
+                    const parser = new _mod9487.Parser(obj, { decodeEntities: true, recognizeSelfClosing: true });
                     parser.end(markup);
                     map1 = map;
                   } else {
@@ -640,7 +640,7 @@ function parseMarkupRuns(markup, keepInvalidAnchors) {
     };
     let self = this;
     let self2 = this;
-    let parser = new tmp2(9406).Parser(obj3, { decodeEntities: true });
+    let parser = new tmp2(9487).Parser(obj3, { decodeEntities: true });
     let str2 = "&lt;";
     parser.end(str.replace(/</g, "&lt;"));
   }
@@ -694,15 +694,15 @@ export function parseHTMLFromText(arr, arg1) {
       items1 = parseMarkupRuns(str9, { keepInvalidAnchors: true });
     } else {
       let replaced = str9;
-      const tmp21 = collapseBlankLines;
+      const tmp24 = collapseBlankLines;
       if (str9.includes("\r")) {
         replaced = str9.replace(/\r\n?/g, "\n");
       }
-      const tmp21Result = tmp21(replaced, 0);
-      const tmp24 = findTextStart(tmp21Result);
-      const tmp26 = findTextEnd(tmp21Result, tmp24);
-      if (tmp26 > tmp24) {
-        const obj2 = { text: tmp21Result.slice(tmp24, tmp26) };
+      const tmp24Result = tmp24(replaced, 0);
+      const tmp27 = findTextStart(tmp24Result);
+      const tmp29 = findTextEnd(tmp24Result, tmp27);
+      if (tmp29 > tmp27) {
+        const obj2 = { text: tmp24Result.slice(tmp27, tmp29) };
         const merged = Object.assign(React4);
         const items = [obj2];
         items1 = items;
@@ -713,13 +713,15 @@ export function parseHTMLFromText(arr, arg1) {
     const obj4 = HTMLParserLinkUtils;
     return obj4.addTextLinks(items1);
   } else {
-    let items3;
+    let addTextLinksResult;
     if (hasItem) {
       const _Math = Math;
       const _Math2 = Math;
+      const addTextLinks = HTMLParserLinkUtils.addTextLinks;
+      HTMLParserLinkUtils;
       const bound1 = Math.max(0, Math.floor(maxLength));
       let diff1 = bound1;
-      const tmp11 = parseMarkupRuns;
+      const tmp14 = parseMarkupRuns;
       if (metroRequire.test(arr.charAt(bound1 - 1))) {
         diff1 = bound1 - 1;
       }
@@ -728,7 +730,7 @@ export function parseHTMLFromText(arr, arg1) {
       if (str4.includes("\r")) {
         replaced1 = str4.replace(/\r\n?/g, "\n");
       }
-      items3 = tmp11(replaced1);
+      addTextLinksResult = addTextLinks(tmp14(replaced1), false);
     } else {
       let replaced2 = arr;
       const tmp2 = collapseBlankLines;
@@ -742,11 +744,11 @@ export function parseHTMLFromText(arr, arg1) {
         const obj3 = { text: tmp2Result.slice(tmp5, tmp7) };
         const merged1 = Object.assign(React4);
         const items2 = [obj3];
-        items3 = items2;
+        addTextLinksResult = items2;
       } else {
-        items3 = [];
+        addTextLinksResult = [];
       }
     }
-    return items3;
+    return addTextLinksResult;
   }
 }

@@ -1,13 +1,13 @@
-// Module ID: 19970
-// Function ID: 19971
+// Module ID: 20380
+// Function ID: 20381
 // Name: FormEmojiPicker
-// Dependencies: [19, 1386, 21, 4960, 17226, 4964, 1113, 17225, 6975, 9452, 5624, 9939, 2]
+// Dependencies: [19, 1388, 21, 5086, 17552, 5090, 1113, 17551, 7038, 9533, 5751, 10061, 2]
 // Exports: default
 
-// Module 19970 (FormEmojiPicker)
+// Module 20380 (FormEmojiPicker)
 import Fragment from "Fragment" /* 21 */;
-import EmojiConstants from "EmojiConstants" /* 1386 */;
-import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 9939 */;
+import EmojiConstants from "EmojiConstants" /* 1388 */;
+import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 10061 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -25,29 +25,29 @@ export default function FormEmojiPicker(emoji) {
   const onChange = emoji.onChange;
   if (emojiId == null) {
     const tmp = onChange;
-    const tmp3 = onChange(4960);
+    const tmp3 = onChange(5086);
     const convertSurrogateToName = tmp3.convertSurrogateToName;
     if (emojiName == null) {
       emojiName = "";
     }
     emojiId = convertSurrogateToName(emojiName, false);
   }
-  let obj = guildId(17226);
+  let obj = guildId(17552);
   const emojiByIdOrName = obj.useEmojiByIdOrName(guildId, emojiId);
   let allEmojiNamesString = null;
   if (null != emojiByIdOrName) {
-    const tmp4Result = guildId(4964);
+    const tmp4Result = guildId(5090);
     allEmojiNamesString = tmp4Result.getAllEmojiNamesString(emojiByIdOrName);
   }
   const intl = tmp4(1113).intl;
   const stringResult = intl.string(guildId(1113).t.gXAN3P);
   if (null != emojiId) {
-    tmp10 = jsx(onChange(17225), { guildId, id: emojiId });
+    tmp10 = jsx(onChange(17551), { guildId, id: emojiId });
     tmp9 = jsx;
   } else {
     tmp9 = jsx;
-    const Icon = tmp4(6975).TableRow.Icon;
-    tmp10 = <Icon IconComponent={guildId(9452).ReactionIcon} />;
+    const Icon = tmp4(7038).TableRow.Icon;
+    tmp10 = <Icon IconComponent={guildId(9533).ReactionIcon} />;
   }
   const obj4 = {
     icon: tmp10,
@@ -75,10 +75,10 @@ export default function FormEmojiPicker(emoji) {
       const result = obj.openEmojiPickerActionSheet(obj2);
     }
   };
-  const TableRow = tmp4(6975).TableRow;
+  const TableRow = tmp4(7038).TableRow;
   if (allEmojiNamesString == null) {
-    const obj5 = { variant: "text-md/medium", color: "text-muted", children: stringResult };
-    allEmojiNamesString = tmp9(tmp4(5624).Text, obj5);
+    const obj5 = { variant: "body-md/medium", color: "text-muted", children: stringResult };
+    allEmojiNamesString = tmp9(tmp4(5751).Text, obj5);
   }
   return tmp9(TableRow, obj4);
 };

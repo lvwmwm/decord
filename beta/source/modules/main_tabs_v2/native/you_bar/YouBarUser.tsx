@@ -1,17 +1,17 @@
-// Module ID: 18454
-// Function ID: 18455
+// Module ID: 18811
+// Function ID: 18812
 // Name: YouBarUser
-// Dependencies: [19, 17, 1383, 17070, 21, 5014, 575, 504, 5095, 5637, 5068, 18455, 18456, 18457, 2]
+// Dependencies: [19, 17, 1385, 17396, 21, 5140, 575, 504, 1652, 5761, 5194, 18812, 18813, 18814, 2]
 
-// Module 18454 (YouBarUser)
+// Module 18811 (YouBarUser)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import spring from "spring" /* 5637 */;
+import spring_spring from "spring/spring" /* 5761 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1383 */;
-import YouBarConstants from "YouBarConstants" /* 17070 */;
+import UserStore from "UserStore" /* 1385 */;
+import YouBarConstants from "YouBarConstants" /* 17396 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -33,16 +33,18 @@ obj2 = { flexDirection: "row", alignItems: "center", borderRadius: nativeDefault
 createStyles = createStyles.createStyles;
 size = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED, borderRadius: nativeDefault.radii.round, height: 16, width: 80 };
 let closure_11 = createStyles(obj);
-const __initData = { code: "function YouBarUserTsx1(){const{nameMargin}=this.__closure;return{marginLeft:nameMargin.get()};}" };
+let closure_12 = { code: "(function YouBarUserTsx1(){let[nameMargin]=this.__closure;return{marginLeft:nameMargin.get()};})" };
 const memoResult = react.memo(function YouBarUser(isCondensed) {
   let closure_0;
   let currentUser;
-  let items2;
-  let items3;
   let items4;
   let items5;
+  let items6;
+  let items7;
   let obj10;
   let obj7;
+  let tmp8;
+  let tmp9;
   isCondensed = isCondensed.isCondensed;
   _require = undefined;
   const onAvatarPress = isCondensed.onAvatarPress;
@@ -52,48 +54,52 @@ const memoResult = react.memo(function YouBarUser(isCondensed) {
   const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
   const tmp2 = _require;
   _require = tmp5;
-  const obj2 = require("ReanimatedRexport");
+  const obj2 = require("module_1652");
   const sharedValue = obj2.useSharedValue(isCondensed ? closure_8 : closure_7);
   const items1 = [!isCondensed, sharedValue];
   const effect = react.useEffect(() => {
     set = sharedValue.set;
-    const obj = spring;
+    const obj = spring_spring;
     const result = set(obj.withSpring(closure_0 ? metroImportDefault : metroImportAll, metroRequire));
   }, items1);
-  const tmp2Result = tmp2(5095);
-  class S {
+  const items2 = [closure_12, sharedValue];
+  let c0;
+  [tmp8, tmp9] = items2;
+  const tmp2Result = tmp2(1652);
+  class YouBarUserTsx1 {
     constructor() {
-      const obj = { marginLeft: sharedValue.get() };
+      const obj = { marginLeft: _undefined.get() };
       return obj;
     }
   }
-  S.__closure = { nameMargin: sharedValue };
-  S.__workletHash = 12063452832866;
-  S.__initData = __initData;
-  const animatedStyle = tmp2Result.useAnimatedStyle(S);
-  const obj4 = sharedValue(5068);
+  const items3 = [tmp9];
+  YouBarUserTsx1.__closure = items3;
+  YouBarUserTsx1.__workletHash = 12382860773339;
+  YouBarUserTsx1.__initData = tmp8;
+  const animatedStyle = tmp2Result.useAnimatedStyle(YouBarUserTsx1);
+  const obj4 = sharedValue(5194);
   const name = obj4.useName(stateFromStores);
   if (null != stateFromStores) {
     let obj3;
     if (null != name) {
-      obj3 = { style: tmp.youButton, children: items2 };
+      obj3 = { style: tmp.youButton, children: items4 };
       const obj5 = { isLargeAvatar: !isCondensed, onPress: onAvatarPress };
-      items2 = [closure_9(sharedValue(18456), obj5), ];
-      const obj6 = { style: items3, children: closure_9(sharedValue(18457), obj7) };
-      items3 = [tmp.userText, animatedStyle, { flexShrink: 1 }];
-      const View2 = tmp9(5095).View;
+      items4 = [closure_9(sharedValue(18813), obj5), ];
+      const obj6 = { style: items5, children: closure_9(sharedValue(18814), obj7) };
+      items5 = [tmp.userText, animatedStyle, { flexShrink: 1 }];
+      const View2 = tmp11(1652).View;
       obj7 = { userId: stateFromStores.id, username: name };
-      items2[1] = closure_9(View2, obj6);
+      items4[1] = closure_9(View2, obj6);
     }
-    return tmp11(View, obj3);
+    return tmp13(View, obj3);
   }
-  const obj8 = { style: tmp.youButton, children: items4 };
-  items4 = [closure_9(sharedValue(18455), { isLarge: !isCondensed }), ];
-  const obj9 = { style: items5, children: closure_9(View, obj10) };
-  items5 = [tmp.userText, animatedStyle, { flexShrink: 1 }];
+  const obj8 = { style: tmp.youButton, children: items6 };
+  items6 = [closure_9(sharedValue(18812), { isLarge: !isCondensed }), ];
+  const obj9 = { style: items7, children: closure_9(View, obj10) };
+  items7 = [tmp.userText, animatedStyle, { flexShrink: 1 }];
   obj10 = { style: tmp.placeholder };
-  View = tmp9(5095).View;
-  items4[1] = closure_9(View, obj9);
+  View = tmp11(1652).View;
+  items6[1] = closure_9(View, obj9);
   obj3 = obj8;
 });
 size = size_mod;

@@ -1,23 +1,28 @@
-// Module ID: 11584
-// Function ID: 11585
+// Module ID: 11742
+// Function ID: 11743
 // Name: ChannelBrowser
-// Dependencies: [32, 19, 17, 7711, 7280, 4944, 4885, 6775, 1072, 4860, 21, 5014, 575, 5607, 11585, 504, 11587, 5044, 4847, 11583, 7218, 7294, 6977, 6980, 1113, 7092, 5717, 11589, 5624, 5652, 5082, 7060, 6989, 5596, 8603, 6974, 6983, 1187, 5754, 2]
+// Dependencies: [32, 19, 17, 7787, 7343, 5070, 5011, 6830, 1072, 4986, 21, 1377, 5879, 11187, 8642, 5140, 575, 5751, 5735, 11743, 504, 11745, 5170, 4973, 11741, 7282, 7357, 7040, 7043, 1113, 7158, 5842, 11747, 5776, 5200, 7126, 7055, 5724, 8674, 7037, 7046, 1187, 2]
 // Exports: default
 
-// Module 11584 (ChannelBrowser)
+// Module 11742 (ChannelBrowser)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4860 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4986 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import MarkupRulesUtils from "MarkupRulesUtils" /* 8642 */;
+import MarkupInlineChannelMentionRules from "MarkupInlineChannelMentionRules" /* 11187 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import NewChannelsStore from "NewChannelsStore" /* 7711 */;
-import GuildCategoryStore from "GuildCategoryStore" /* 7280 */;
-import GuildChannelStore from "GuildChannelStore" /* 4944 */;
-import GuildStore from "GuildStore" /* 4885 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6775 */;
+import NewChannelsStore from "NewChannelsStore" /* 7787 */;
+import GuildCategoryStore from "GuildCategoryStore" /* 7343 */;
+import GuildChannelStore from "GuildChannelStore" /* 5070 */;
+import GuildStore from "GuildStore" /* 5011 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6830 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import PlatformUtils_mod from "PlatformUtils" /* 1377 */;
+import MarkupUtils from "MarkupUtils" /* 5879 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -27,12 +32,21 @@ let closure_12;
 let closure_14;
 let items;
 let map1;
+let obj10;
+let obj11;
 let obj2;
 let obj3;
 let obj4;
-let obj5;
 let obj6;
+let obj7;
+let obj8;
+let obj9;
 let rect;
+function ChannelTopicMention(children) {
+  children = children.children;
+  const obj = { variant, color: "mention-foreground", style: closure_17().channelMention, children };
+  return authStore2(Text_Text.Text, obj);
+}
 function keyExtractor(section) {
   return "" + section.section + "-" + section.row;
 }
@@ -41,18 +55,46 @@ const View = react_native.View;
 const Fonts = Constants.Fonts;
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
 ({ jsx: closure_12, jsxs: map1, Fragment: closure_14 } = Fragment);
+let c15 = "body-xs/medium";
+let PlatformUtils = PlatformUtils_mod;
+PlatformUtils = PlatformUtils.isAndroid();
+if (PlatformUtils) {
+  let obj = { channelMention: obj2, guild: obj3, channel: obj4 };
+  const reactParserFor = MarkupUtils.reactParserFor;
+  let tmp5 = obj;
+  let merged = Object.assign(MarkupUtils.topicRules);
+  obj2 = {
+    react(inContent, fn, key) {
+        let inlineChannelMentionReact;
+        let obj2;
+        const obj = { children: inlineChannelMentionReact(inContent, fn, obj2) };
+        obj2 = { textColor: "mention-foreground" };
+        inlineChannelMentionReact = MarkupInlineChannelMentionRules.inlineChannelMentionReact;
+        MarkupInlineChannelMentionRules;
+        const merged = Object.assign(key);
+        return authStore2(ChannelTopicMention, obj, key.key);
+      }
+  };
+  const merged1 = Object.assign(MarkupUtils.topicRules.channelMention);
+  obj3 = { react: MarkupRulesUtils.smartOutput };
+  obj4 = { react: MarkupInlineChannelMentionRules.inlineChannelReact };
+  let parseTopic = reactParserFor(obj);
+} else {
+  parseTopic = MarkupUtils.parseTopic;
+}
 let createStyles = createStyles_mod;
-let obj = { container: { flex: 1 }, header: obj2, categoryContainer: obj3, categoryTitle: { marginBottom: 0 }, channelTitle: { flexDirection: "row", alignItems: "center" }, selectAllContainer: { display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", flexShrink: 0 }, selectAllCheckbox: obj4, newBadge: { fontFamily: Fonts.DISPLAY_EXTRABOLD }, nuxCard: obj5, nuxCloseContainer: rect, nuxHeader: obj6, nuxHeaderText: { display: "flex", flexDirection: "row", alignItems: "center", marginBottom: 8 }, nuxBody: { textAlign: "center", marginBottom: 4 } };
-obj2 = { marginTop: nativeDefault.space.PX_12, marginHorizontal: nativeDefault.space.PX_16 };
+let obj5 = { channelMention: obj6, container: { flex: 1 }, header: obj7, categoryContainer: obj8, categoryTitle: { marginBottom: 0 }, channelTitle: { flexDirection: "row", alignItems: "center" }, selectAllContainer: { display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", flexShrink: 0 }, selectAllCheckbox: obj9, newBadge: { fontFamily: Fonts.DISPLAY_EXTRABOLD }, nuxCard: obj10, nuxCloseContainer: rect, nuxHeader: obj11, nuxHeaderText: { display: "flex", flexDirection: "row", alignItems: "center", marginBottom: 8 }, nuxBody: { textAlign: "center", marginBottom: 4 } };
+obj6 = { backgroundColor: nativeDefault.colors.MENTION_BACKGROUND };
 createStyles = createStyles.createStyles;
-obj3 = { flexDirection: "row", justifyContent: "space-between", alignItems: "center", paddingTop: nativeDefault.space.PX_24, paddingBottom: nativeDefault.space.PX_8, borderRadius: nativeDefault.radii.md };
-obj4 = { marginRight: nativeDefault.space.PX_4, transform: items };
+obj7 = { marginTop: nativeDefault.space.PX_12, marginHorizontal: nativeDefault.space.PX_16 };
+obj8 = { flexDirection: "row", justifyContent: "space-between", alignItems: "center", paddingTop: nativeDefault.space.PX_24, paddingBottom: nativeDefault.space.PX_8, borderRadius: nativeDefault.radii.md };
+obj9 = { marginRight: nativeDefault.space.PX_4, transform: items };
 items = [{ scale: 0.75 }];
-obj5 = { position: "relative", padding: 0, marginTop: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_16, marginBottom: 0, borderRadius: nativeDefault.radii.md, alignItems: "center" };
+obj10 = { position: "relative", padding: 0, marginTop: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_16, marginBottom: 0, borderRadius: nativeDefault.radii.md, alignItems: "center" };
 rect = { position: "absolute", color: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT, top: 16, right: 16 };
-obj6 = { width: "100%", backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE, alignItems: "center", padding: 16, borderBottomLeftRadius: nativeDefault.radii.lg, borderBottomRightRadius: nativeDefault.radii.lg };
-let closure_15 = createStyles(obj);
-let closure_17 = react.memo(function CategoryRow(channel) {
+obj11 = { width: "100%", backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE, alignItems: "center", padding: 16, borderBottomLeftRadius: nativeDefault.radii.lg, borderBottomRightRadius: nativeDefault.radii.lg };
+let closure_17 = createStyles(obj5);
+let closure_20 = react.memo(function CategoryRow(channel) {
   let accessibilityState;
   let intl;
   let items1;
@@ -62,12 +104,12 @@ let closure_17 = react.memo(function CategoryRow(channel) {
   let tmp11;
   channel = channel.channel;
   const onChannelClick = channel.onChannelClick;
-  const tmp = closure_15();
+  const tmp = closure_17();
   const items = [UserGuildSettingsStore];
-  const tmp3 = onChannelClick(5652)(channel);
+  const tmp3 = onChannelClick(5776)(channel);
   const obj = channel(504);
   const stateFromStores = obj.useStateFromStores(items, () => UserGuildSettingsStore.isChannelOptedIn(channel.guild_id, channel.id));
-  const obj2 = channel(5082);
+  const obj2 = channel(5200);
   const checkboxA11yNative = obj2.useCheckboxA11yNative({ checked: stateFromStores });
   const obj3 = {
     style: tmp.categoryContainer,
@@ -79,7 +121,7 @@ let closure_17 = react.memo(function CategoryRow(channel) {
     children: closure_13(tmp11, { children: items1 })
   };
   str = "text";
-  const PressableOpacity = channel(6980).PressableOpacity;
+  const PressableOpacity = channel(7043).PressableOpacity;
   if ("null" !== channel.id) {
     str = checkboxA11yNative.accessibilityRole;
   }
@@ -89,16 +131,16 @@ let closure_17 = react.memo(function CategoryRow(channel) {
   }
   items1 = [, ];
   const obj4 = { style: tmp.categoryTitle, title: tmp3, lineClamp: 1 };
-  items1[0] = closure_12(channel(7060).TableRowGroupTitle, obj4);
+  items1[0] = closure_12(channel(7126).TableRowGroupTitle, obj4);
   let tmp10Result = null;
   tmp11 = closure_14;
   if ("null" !== channel.id) {
     const obj5 = { style: tmp.selectAllContainer, children: items2 };
-    const obj6 = { style: tmp.selectAllCheckbox, children: closure_12(channel(6989).FormCheckbox, obj7) };
+    const obj6 = { style: tmp.selectAllCheckbox, children: closure_12(channel(7055).FormCheckbox, obj7) };
     obj7 = { checked: stateFromStores };
     items2 = [closure_12(View, obj6), ];
-    const obj8 = { variant: "text-xs/semibold", color: "interactive-text-default", children: intl.string(channel(1113).t.mSQwnW) };
-    const Text = tmp4(5624).Text;
+    const obj8 = { variant: "body-xs/semibold", color: "interactive-text-default", children: intl.string(channel(1113).t.mSQwnW) };
+    const Text = tmp4(5751).Text;
     intl = tmp4(1113).intl;
     items2[1] = closure_12(Text, obj8);
     tmp10Result = tmp10(View, obj5);
@@ -106,7 +148,7 @@ let closure_17 = react.memo(function CategoryRow(channel) {
   items1[1] = tmp10Result;
   return closure_12(PressableOpacity, obj3);
 });
-let closure_18 = react.memo(function ChannelRow(channel) {
+let closure_21 = react.memo(function ChannelRow(channel) {
   let TextBadge;
   let _undefined;
   let c3;
@@ -117,9 +159,10 @@ let closure_18 = react.memo(function ChannelRow(channel) {
   let items4;
   let obj12;
   let obj13;
+  let obj15;
   let obj7;
   let obj8;
-  let parseTopicResult;
+  let tmp18Result;
   let tmp19;
   let tmp3;
   channel = channel.channel;
@@ -127,15 +170,15 @@ let closure_18 = react.memo(function ChannelRow(channel) {
   const onChannelClick = channel.onChannelClick;
   _slicedToArray = undefined;
   ({ isFirst, isLast, forceChecked } = channel);
-  const tmp = closure_15();
+  const tmp = closure_17();
   [tmp3, c3] = react.useState(0);
   _slicedToArray(react.useState(0), 2);
   const items = [UserGuildSettingsStore];
-  const obj2 = channel(onChannelClick[15]);
+  const obj2 = channel(onChannelClick[20]);
   let stateFromStores = obj2.useStateFromStores(items, () => UserGuildSettingsStore.isChannelOptedIn(channel.guild_id, channel.id));
   const items1 = [NewChannelsStore];
   const items2 = [channel.id, guild];
-  const obj3 = channel(onChannelClick[15]);
+  const obj3 = channel(onChannelClick[20]);
   let stateFromStores1 = obj3.useStateFromStores(items1, () => {
     let id;
     const shouldIndicateNewChannel = NewChannelsStore.shouldIndicateNewChannel;
@@ -145,7 +188,7 @@ let closure_18 = react.memo(function ChannelRow(channel) {
     return shouldIndicateNewChannel(id, channel.id);
   }, items2);
   const items3 = [UserGuildSettingsStore];
-  const obj4 = channel(onChannelClick[15]);
+  const obj4 = channel(onChannelClick[20]);
   const stateFromStores2 = obj4.useStateFromStores(items3, () => {
     const isChannelOptedInResult = null != channel.parent_id && UserGuildSettingsStore.isChannelOptedIn(tmp.guild_id, tmp.parent_id);
     return isChannelOptedInResult;
@@ -153,7 +196,8 @@ let closure_18 = react.memo(function ChannelRow(channel) {
   let topic = channel.topic;
   let isGuildVocalResult = null != topic;
   const obj = react;
-  const tmp10 = guild(onChannelClick[29])(channel);
+  const tmp10 = guild(onChannelClick[33])(channel);
+  const tmp9 = guild;
   if (isGuildVocalResult) {
     isGuildVocalResult = 0 !== topic.length;
   }
@@ -161,23 +205,23 @@ let closure_18 = react.memo(function ChannelRow(channel) {
     isGuildVocalResult = channel.isGuildVocal();
   }
   if (!isGuildVocalResult) {
-    const tmp4Result = channel(onChannelClick[16]);
+    const tmp4Result = channel(onChannelClick[21]);
     topic = tmp4Result.getActiveAgoTimestamp(channel.id);
   }
   const callback = obj.useCallback((nativeEvent) => {
     _undefined(nativeEvent.nativeEvent.layout.width);
   }, []);
-  const tmp4Result5 = channel(onChannelClick[33]);
-  const token = tmp4Result5.useToken(tmp9(tmp5[12]).modules.mobile.TABLE_ROW_LABEL_TEXT_STYLE);
-  channel(onChannelClick[33]);
+  const tmp4Result5 = channel(onChannelClick[37]);
+  const token = tmp4Result5.useToken(tmp9(tmp5[16]).modules.mobile.TABLE_ROW_LABEL_TEXT_STYLE);
+  channel(onChannelClick[37]);
   if (null == guild) {
     return null;
   } else {
-    const tmp4Result7 = channel(onChannelClick[34]);
+    const tmp4Result7 = channel(onChannelClick[38]);
     const channelIconWithGuild = tmp4Result7.getChannelIconWithGuild(channel, guild);
     let rulesChannelId;
-    const getChannelIconComponent = channel(onChannelClick[34]).getChannelIconComponent;
-    channel(onChannelClick[34]);
+    const getChannelIconComponent = channel(onChannelClick[38]).getChannelIconComponent;
+    channel(onChannelClick[38]);
     if (guild != null) {
       rulesChannelId = guild.rulesChannelId;
     }
@@ -187,20 +231,19 @@ let closure_18 = react.memo(function ChannelRow(channel) {
       start: isFirst,
       end: isLast,
       disabled: stateFromStores2,
-      icon: closure_12(channel(onChannelClick[36]).TableRowIcon, obj7),
+      icon: closure_12(channel(onChannelClick[40]).TableRowIcon, obj7),
       label: tmp19(View, obj8),
-      subLabel: parseTopicResult,
-      subLabelLineClamp: 1,
+      subLabel: tmp18Result,
       onPress() {
           return onChannelClick(guild.id, channel.id, channel.parent_id);
         },
       checked: stateFromStores
     };
-    const TableCheckboxRow = tmp4(tmp5[35]).TableCheckboxRow;
+    const TableCheckboxRow = tmp4(tmp5[39]).TableCheckboxRow;
     let tmp21;
     obj7 = { source: channelIconWithGuild, IconComponent: channelIconComponent };
     obj8 = { style: tmp.channelTitle, children: items4 };
-    const Text = tmp4(tmp5[28]).Text;
+    const Text = tmp4(tmp5[17]).Text;
     tmp19 = closure_13;
     if (stateFromStores1) {
       tmp21 = { marginRight: tmp3 + 8 };
@@ -211,19 +254,20 @@ let closure_18 = react.memo(function ChannelRow(channel) {
     if (stateFromStores1) {
       const obj11 = { style: obj12, onLayout: callback, children: closure_12(TextBadge, obj13) };
       obj12 = { marginLeft: -tmp3 };
-      obj13 = { color: channel(onChannelClick[37]).BadgeColors.BRAND, text: intl.string(channel(onChannelClick[24]).t.y2b7CA), textStyle: tmp.newBadge };
-      TextBadge = tmp4(tmp5[37]).TextBadge;
-      intl = tmp4(tmp5[24]).intl;
+      obj13 = { color: channel(onChannelClick[41]).BadgeColors.BRAND, text: intl.string(channel(onChannelClick[29]).t.y2b7CA), textStyle: tmp.newBadge };
+      TextBadge = tmp4(tmp5[41]).TextBadge;
+      intl = tmp4(tmp5[29]).intl;
       stateFromStores1 = tmp18(tmp20, obj11);
     }
     items4[1] = stateFromStores1;
-    parseTopicResult = null;
+    tmp18Result = null;
     if (null != topic) {
-      parseTopicResult = null;
+      tmp18Result = null;
       if (topic.length > 0) {
-        const obj14 = { channelId: channel.id, shouldCloseModal: true };
-        const tmp9Result = guild(onChannelClick[38]);
-        parseTopicResult = tmp9Result.parseTopic(topic, true, obj14);
+        const obj14 = { variant: bodyxsmedium, color: "text-subtle", lineClamp: 1, includeFontPadding: true, children: parseTopic(topic, true, obj15) };
+        obj15 = { allowLinks: true, allowGameMentions: true, channelId: channel.id, shouldCloseModal: true, textVariant: bodyxsmedium, linkVariant: bodyxsmedium, textColor: "text-subtle" };
+        const Text2 = tmp4(tmp5[17]).Text;
+        tmp18Result = tmp18(Text2, obj14);
       }
     }
     if (!stateFromStores) {
@@ -254,7 +298,7 @@ export default function ChannelBrowser(guildId) {
   let onChannelClick;
   let stateFromStores;
   let filterCategoriesByQuery;
-  let tmp = closure_15();
+  let tmp = closure_17();
   let tmp2 = stateFromStores(filterCategoriesByQuery.useState(""), 2);
   importDefault = tmp2[1];
   let tmp4 = importDefault;
@@ -262,20 +306,20 @@ export default function ChannelBrowser(guildId) {
   const first = tmp2[0];
   const insets = require("useSafeAreaInsetsKeyboardAware")({ includeKeyboardHeight: true }).insets;
   onChannelClick = require("useBatchUpdateChannelSettings")(guildId).onChannelClick;
-  let obj = guildId(onChannelClick[15]);
+  let obj = guildId(onChannelClick[20]);
   let items = [GuildStore];
   stateFromStores = obj.useStateFromStores(items, () => GuildStore.getGuild(guildId));
-  let obj2 = guildId(onChannelClick[15]);
+  let obj2 = guildId(onChannelClick[20]);
   const items1 = [GuildCategoryStore];
   const stateFromStores1 = obj2.useStateFromStores(items1, () => GuildCategoryStore.getCategories(guildId));
   const items2 = [GuildChannelStore];
-  const obj3 = guildId(onChannelClick[15]);
+  const obj3 = guildId(onChannelClick[20]);
   const stateFromStores2 = obj3.useStateFromStores(items2, () => GuildChannelStore.getChannels(guildId));
-  const obj4 = guildId(onChannelClick[16]);
+  const obj4 = guildId(onChannelClick[21]);
   filterCategoriesByQuery = obj4.useFilterCategoriesByQuery(guildId, stateFromStores1, stateFromStores2, first);
-  const obj5 = guildId(onChannelClick[17]);
-  let result = obj5.useIsDismissibleContentDismissed_UNSAFE(guildId(onChannelClick[18]).DismissibleContent.CHANNEL_BROWSER_NUX);
-  const obj6 = guildId(onChannelClick[16]);
+  const obj5 = guildId(onChannelClick[22]);
+  let result = obj5.useIsDismissibleContentDismissed_UNSAFE(guildId(onChannelClick[23]).DismissibleContent.CHANNEL_BROWSER_NUX);
+  const obj6 = guildId(onChannelClick[21]);
   const channelBrowserSections = obj6.useChannelBrowserSections(guildId, filterCategoriesByQuery, 64);
   const items3 = [filterCategoriesByQuery, channelBrowserSections];
   const memo = filterCategoriesByQuery.useMemo(() => {
@@ -303,16 +347,16 @@ export default function ChannelBrowser(guildId) {
     });
     return items;
   }, items3);
-  const obj7 = guildId(onChannelClick[19]);
+  const obj7 = guildId(onChannelClick[24]);
   const result1 = obj7.hasNotSetUpChannelOptIn(guildId);
   const effect = filterCategoriesByQuery.useEffect(() => {
-    const obj = guildId(onChannelClick[17]);
+    const obj = guildId(onChannelClick[22]);
     const obj2 = { dismissAction: constants.DISMISS };
-    const result = obj.UNSAFE_markDismissibleContentAsDismissed(guildId(onChannelClick[18]).DismissibleContent.CHANNEL_BROWSER_NEW_BADGE_NUX, obj2);
+    const result = obj.UNSAFE_markDismissibleContentAsDismissed(guildId(onChannelClick[23]).DismissibleContent.CHANNEL_BROWSER_NEW_BADGE_NUX, obj2);
   });
   const items4 = [stateFromStores, result1, onChannelClick];
   const obj8 = { style: tmp.container, children: items5 };
-  const obj9 = { style: tmp.header, children: closure_12(guildId(onChannelClick[20]).SearchBar, obj10) };
+  const obj9 = { style: tmp.header, children: closure_12(guildId(onChannelClick[25]).SearchBar, obj10) };
   const callback = filterCategoriesByQuery.useCallback((item) => {
     const channel = item.item.channel;
     let tmp4 = null;
@@ -320,10 +364,10 @@ export default function ChannelBrowser(guildId) {
       let tmp5Result;
       if (tmp) {
         const obj2 = { channel, onChannelClick };
-        tmp5Result = tmp5(closure_17, obj2, channel.id);
+        tmp5Result = tmp5(closure_20, obj2, channel.id);
       } else {
         const obj = { channel, guild: stateFromStores, isFirst: 0 === tmp2, isLast: tmp3, forceChecked: result1, onChannelClick };
-        tmp5Result = tmp5(closure_18, obj, channel.id);
+        tmp5Result = tmp5(closure_21, obj, channel.id);
       }
       tmp4 = tmp5Result;
     }
@@ -337,47 +381,47 @@ export default function ChannelBrowser(guildId) {
   };
   items5 = [closure_12(channelBrowserSections, obj9), ];
   let tmp17Result = null;
-  const FlashList = guildId(onChannelClick[21]).FlashList;
+  const FlashList = guildId(onChannelClick[26]).FlashList;
   if (!result) {
     const obj11 = { style: tmp.nuxCard, children: items6 };
-    const Card = tmp6(tmp5[22]).Card;
+    const Card = tmp6(tmp5[27]).Card;
     const obj12 = {
       onPress: function handleDismissNux() {
-          const obj = guildId(onChannelClick[17]);
+          const obj = guildId(onChannelClick[22]);
           const obj2 = { dismissAction: constants.DISMISS };
-          const result = obj.UNSAFE_markDismissibleContentAsDismissed(guildId(onChannelClick[18]).DismissibleContent.CHANNEL_BROWSER_NUX, obj2);
+          const result = obj.UNSAFE_markDismissibleContentAsDismissed(guildId(onChannelClick[23]).DismissibleContent.CHANNEL_BROWSER_NUX, obj2);
         },
       accessibilityRole: "button",
-      accessibilityLabel: intl.string(guildId(tmp5[24]).t.cpT0Cq),
+      accessibilityLabel: intl.string(guildId(tmp5[29]).t.cpT0Cq),
       style: tmp.nuxCloseContainer,
-      children: closure_12(guildId(tmp5[25]).CircleXIcon, {})
+      children: closure_12(guildId(tmp5[30]).CircleXIcon, {})
     };
-    const PressableOpacity = tmp6(tmp5[23]).PressableOpacity;
-    intl = tmp6(tmp5[24]).intl;
+    const PressableOpacity = tmp6(tmp5[28]).PressableOpacity;
+    intl = tmp6(tmp5[29]).intl;
     items6 = [closure_12(PressableOpacity, obj12), , ];
-    const obj13 = { source: tmp4(tmp5[27]) };
-    const tmp4Result = tmp4(tmp5[26]);
+    const obj13 = { source: tmp4(tmp5[32]) };
+    const tmp4Result = tmp4(tmp5[31]);
     items6[1] = closure_12(tmp4Result, obj13);
     const obj14 = { style: tmp.nuxHeader, children: items7 };
     const obj15 = { style: tmp.nuxHeaderText, children: closure_12(Text, obj16) };
-    obj16 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: intl2.string(guildId(tmp5[24]).t.utqWEC) };
-    Text = tmp6(tmp5[28]).Text;
-    intl2 = tmp6(tmp5[24]).intl;
+    obj16 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: intl2.string(guildId(tmp5[29]).t.utqWEC) };
+    Text = tmp6(tmp5[17]).Text;
+    intl2 = tmp6(tmp5[29]).intl;
     items7 = [closure_12(channelBrowserSections, obj15), , ];
-    const obj17 = { variant: "text-sm/normal", color: "text-default", style: tmp.nuxBody, children: intl3.string(guildId(tmp5[24]).t["+9etcM"]) };
-    const Text2 = tmp6(tmp5[28]).Text;
-    intl3 = tmp6(tmp5[24]).intl;
+    const obj17 = { variant: "body-sm/normal", color: "text-default", style: tmp.nuxBody, children: intl3.string(guildId(tmp5[29]).t["+9etcM"]) };
+    const Text2 = tmp6(tmp5[17]).Text;
+    intl3 = tmp6(tmp5[29]).intl;
     items7[1] = closure_12(Text2, obj17);
-    const obj18 = { variant: "text-sm/normal", color: "text-default", style: tmp.nuxBody, children: intl4.format(guildId(tmp5[24]).t.Z0axjk, {}) };
-    const Text3 = tmp6(tmp5[28]).Text;
-    intl4 = tmp6(tmp5[24]).intl;
+    const obj18 = { variant: "body-sm/normal", color: "text-default", style: tmp.nuxBody, children: intl4.format(guildId(tmp5[29]).t.Z0axjk, {}) };
+    const Text3 = tmp6(tmp5[17]).Text;
+    intl4 = tmp6(tmp5[29]).intl;
     items7[2] = closure_12(Text3, obj18);
     items6[2] = closure_13(channelBrowserSections, obj14);
     tmp17Result = tmp17(Card, obj11);
   }
-  const obj19 = { ListHeaderComponent: tmp17Result, accessibilityLabel: intl5.string(guildId(tmp5[24]).t.et6wav), renderItem: callback, data: memo, contentContainerStyle: { paddingBottom: insets.bottom + tmp4(tmp5[12]).space.PX_16, paddingHorizontal: tmp4(tmp5[12]).space.PX_16 }, keyExtractor };
-  intl5 = tmp6(tmp5[24]).intl;
-  ({ paddingBottom: insets.bottom + tmp4(tmp5[12]).space.PX_16, paddingHorizontal: tmp4(tmp5[12]).space.PX_16 });
+  const obj19 = { ListHeaderComponent: tmp17Result, accessibilityLabel: intl5.string(guildId(tmp5[29]).t.et6wav), renderItem: callback, data: memo, contentContainerStyle: { paddingBottom: insets.bottom + tmp4(tmp5[16]).space.PX_16, paddingHorizontal: tmp4(tmp5[16]).space.PX_16 }, keyExtractor };
+  intl5 = tmp6(tmp5[29]).intl;
+  ({ paddingBottom: insets.bottom + tmp4(tmp5[16]).space.PX_16, paddingHorizontal: tmp4(tmp5[16]).space.PX_16 });
   items5[1] = closure_12(FlashList, obj19);
   return closure_13(channelBrowserSections, obj8);
 };

@@ -1,39 +1,37 @@
-// Module ID: 14430
-// Function ID: 14431
+// Module ID: 14666
+// Function ID: 14667
 // Name: CollectiblesShopCheckoutDetails
-// Dependencies: [19, 17, 1074, 9494, 21, 5014, 575, 8799, 5717, 14431, 8774, 9518, 8742, 9493, 1984, 9514, 1987, 1075, 9541, 9540, 9506, 1113, 5624, 7731, 9551, 14432, 8749, 2047, 9568, 2]
+// Dependencies: [19, 17, 1074, 9578, 21, 5140, 575, 8872, 5842, 14667, 8845, 9602, 8813, 9577, 2108, 9598, 2111, 1075, 9625, 9624, 9590, 1113, 5751, 7807, 9635, 14668, 8820, 2171, 9655, 2]
 // Exports: default
 
-// Module 14430 (CollectiblesShopCheckoutDetails)
+// Module 14666 (CollectiblesShopCheckoutDetails)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
 import FractionalPremiumSKUs from "FractionalPremiumSKUs" /* 1075 */;
-import utils from "utils" /* 1984 */;
-import CollectiblesItemType from "CollectiblesItemType" /* 1987 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import FastImageDefault from "FastImage" /* 5717 */;
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7731 */;
-import useShopProductItems from "useShopProductItems" /* 8742 */;
-import useCurrentUser from "useCurrentUser" /* 8749 */;
-import useMaybeFetchProfileFrameDefault from "useMaybeFetchProfileFrame" /* 8774 */;
-import useProfileEffectDefault from "useProfileEffect" /* 8799 */;
-import BundleSampleV2Default from "BundleSampleV2" /* 9493 */;
-import AvatarDecorationSampleV2Default from "AvatarDecorationSampleV2" /* 9506 */;
-import NameplateDefault from "Nameplate" /* 9514 */;
-import ProfileFrameSamplePreviewDefault from "ProfileFrameSamplePreview" /* 9518 */;
-import _modDef9540 from "module_9540" /* 9540 */;
-import FractionalNitroCoinIllustration2 from "FractionalNitroCoinIllustration" /* 9541 */;
-import collectibles_CollectiblesUtils from "collectibles/CollectiblesUtils" /* 9551 */;
-import getProductName from "getProductName" /* 9568 */;
-import _modDef14431 from "module_14431" /* 14431 */;
-import react from "react" /* 19 */;
-import CollectiblesPreviewConstants from "CollectiblesPreviewConstants" /* 9494 */;
+import intl8 from "intl" /* 1113 */;
+import utils from "utils" /* 2108 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 2111 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import FastImageDefault from "FastImage" /* 5842 */;
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7807 */;
+import useShopProductItems from "useShopProductItems" /* 8813 */;
+import useMaybeFetchProfileFrameDefault from "useMaybeFetchProfileFrame" /* 8845 */;
+import useProfileEffectDefault from "useProfileEffect" /* 8872 */;
+import BundleSampleV2Default from "BundleSampleV2" /* 9577 */;
+import AvatarDecorationSampleV2Default from "AvatarDecorationSampleV2" /* 9590 */;
+import NameplateDefault from "Nameplate" /* 9598 */;
+import ProfileFrameSamplePreviewDefault from "ProfileFrameSamplePreview" /* 9602 */;
+import _modDef9624 from "module_9624" /* 9624 */;
+import FractionalNitroCoinIllustration2 from "FractionalNitroCoinIllustration" /* 9625 */;
+import collectibles_CollectiblesUtils from "collectibles/CollectiblesUtils" /* 9635 */;
+import getProductName from "getProductName" /* 9655 */;
+import _modDef14667 from "module_14667" /* 14667 */;
+import react_mod from "react" /* 19 */;
+import CollectiblesPreviewConstants from "CollectiblesPreviewConstants" /* 9578 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
-
-let dependencyMap;
 
 let SAMPLE_PROFILE_ASPECT_RATIO;
 let metroImportAll;
@@ -46,8 +44,6 @@ let obj5;
 let obj6;
 let obj7;
 let size;
-let tmp3;
-const intl8 = tmp3(1113);
 function ProfileEffectAssetPreview(item) {
   let items;
   let obj3;
@@ -59,7 +55,7 @@ function ProfileEffectAssetPreview(item) {
   if (null != tmp4) {
     const obj = { style: tmp.profileEffectContainer, children: items };
     const obj2 = { source: obj3, accessibilityLabel: tmp4.accessibilityLabel, style: tmp.profileEffect, resizeMode: "cover" };
-    obj3 = { uri: _modDef14431 };
+    obj3 = { uri: _modDef14667 };
     const tmp2Result = FastImageDefault;
     items = [metroImportDefault(tmp2Result, obj2), ];
     const obj4 = { style: tmp.profileEffect, source: obj5, accessibilityLabel: tmp4.title, resizeMode: "cover" };
@@ -168,11 +164,11 @@ function CollectibleProductPreviewContent(userAvatarSource) {
   const ALL = FractionalPremiumSKUs.FractionalPremiumSKUsSets.ALL;
   if (ALL.has(product.skuId)) {
     size = { skuId: product.skuId, width: FractionalNitroCoinIllustration2.FRACTIONAL_NITRO_COIN_SIZE.CHECKOUT, height: FractionalNitroCoinIllustration2.FRACTIONAL_NITRO_COIN_SIZE.CHECKOUT };
-    const FractionalNitroCoinIllustration = tmp2(9541).FractionalNitroCoinIllustration;
+    const FractionalNitroCoinIllustration = tmp2(9625).FractionalNitroCoinIllustration;
     return metroImportDefault(FractionalNitroCoinIllustration, size);
   } else if (product.skuId === EXTERNAL_PRODUCT_SKU_IDS.ORB_PROFILE_BADGE) {
     const obj = { source: obj2, style: tmp.externalProductImage };
-    obj2 = { uri: _modDef9540 };
+    obj2 = { uri: _modDef9624 };
     const tmp18 = FastImageDefault;
     return metroImportDefault(tmp18, obj);
   } else {
@@ -241,16 +237,16 @@ function ProductDetails(product) {
   if (null == memo) {
     const tmp3 = closure_7;
     const obj = { style: tmp.productDetails, children: closure_7(Text_Text.Text, obj2) };
-    obj2 = { variant: "text-md/semibold", children: product.name };
+    obj2 = { variant: "body-md/semibold", children: product.name };
     tmp7 = closure_7(View, obj);
   } else {
     const obj3 = { style: tmp.productDetails, children: items1 };
     const obj4 = { product, recipientUser };
     items1 = [closure_7(CollectibleProductPreview, obj4), ];
     const obj5 = { style: tmp.productDetailsTextContainer, children: items2 };
-    const obj6 = { variant: "text-md/semibold", children: product.name };
+    const obj6 = { variant: "body-md/semibold", children: product.name };
     items2 = [closure_7(Text_Text.Text, obj6), ];
-    const obj7 = { variant: "text-sm/medium", children: memo };
+    const obj7 = { variant: "body-sm/medium", children: memo };
     items2[1] = closure_7(Text_Text.Text, obj7);
     items1[1] = closure_8(View, obj5);
     tmp7 = closure_8(View, obj3);
@@ -263,6 +259,7 @@ function ProductPriceAmountTag(product) {
   require = product;
   const hasShopDiscount = product.hasShopDiscount;
   const useOrbPrice = product.useOrbPrice;
+  let orbPriceAmount = product.orbPriceAmount;
   const items = [product, hasShopDiscount, useOrbPrice];
   const memo = react.useMemo(() => {
     let orbPrice;
@@ -279,19 +276,23 @@ function ProductPriceAmountTag(product) {
   }, items);
   let orbPrice = memo.orbPrice;
   if (useOrbPrice) {
-    let amount;
     const tmp9 = hasShopDiscount(useOrbPrice[25]);
-    if (orbPrice != null) {
-      amount = orbPrice.amount;
+    if (undefined === orbPriceAmount) {
+      let amount;
+      if (orbPrice != null) {
+        amount = orbPrice.amount;
+      }
+      orbPriceAmount = amount;
     }
-    const obj2 = { orbAmount: amount };
+    const obj2 = { orbAmount: orbPriceAmount };
     tmp3Result = tmp3(tmp9, obj2);
   } else {
-    let obj = { variant: "text-md/semibold", children: tmp2 };
+    let obj = { variant: "body-md/semibold", children: tmp2 };
     tmp3Result = tmp3(require("Text/Text").Text, obj);
   }
   return tmp3Result;
 }
+let react = react_mod;
 const View = react_native.View;
 const EXTERNAL_PRODUCT_SKU_IDS = CollectiblesShopConstants.EXTERNAL_PRODUCT_SKU_IDS;
 ({ BUNDLE_PREVIEW_CONFIG: metroRequire, SAMPLE_PROFILE_ASPECT_RATIO } = CollectiblesPreviewConstants);
@@ -319,8 +320,8 @@ let closure_10 = createStyles.createStyles((arg0) => {
     BORDER_FEEDBACK_CRITICAL = colors.BORDER_FEEDBACK_CRITICAL;
     tmp5 = tmp;
   }
-  const obj = { giftProductContainer: { borderWidth: 2, borderColor: BORDER_FEEDBACK_CRITICAL, marginHorizontal: tmp5(575).space.PX_16, backgroundColor: "diversity" } };
-  ({ borderWidth: 2, borderColor: BORDER_FEEDBACK_CRITICAL, marginHorizontal: tmp5(575).space.PX_16, backgroundColor: "diversity" });
+  const obj = { giftProductContainer: { borderWidth: 2, borderColor: BORDER_FEEDBACK_CRITICAL, marginHorizontal: tmp5(575).space.PX_16, backgroundColor: "ip" } };
+  ({ borderWidth: 2, borderColor: BORDER_FEEDBACK_CRITICAL, marginHorizontal: tmp5(575).space.PX_16, backgroundColor: "ip" });
   return obj;
 });
 createStyles = createStyles_mod;
@@ -356,37 +357,45 @@ export default function CollectiblesShopCheckoutDetails(product) {
   if (flag3 === undefined) {
     flag3 = false;
   }
+  const orbPriceAmount = product.orbPriceAmount;
   const tmp = closure_9();
   const tmp3 = require;
   const tmp2 = closure_10(flag);
-  let obj = useCurrentUser;
+  let obj = require("useCurrentUser");
   const currentUser = obj.useCurrentUser();
-  let obj2 = flag2(2047);
+  let obj2 = flag2(orbPriceAmount[27]);
   const canUseShopDiscountsResult = obj2.canUseShopDiscounts(currentUser);
-  dependencyMap = canUseShopDiscountsResult;
-  const items = [product, flag2, canUseShopDiscountsResult];
+  react = canUseShopDiscountsResult;
+  const items = [product, flag2, canUseShopDiscountsResult, orbPriceAmount];
   const items1 = [tmp.productContainer, ];
   let giftProductContainer = flag3;
   const memo = react.useMemo(() => {
     let str;
+    let tmp5 = orbPriceAmount;
     const obj = getProductName;
     const productNameAndTypeLabel = obj.getProductNameAndTypeLabel(require);
-    if (flag2) {
-      const intl = tmp(1113).intl;
-      const formatToPlainString = intl.formatToPlainString;
-      const W4DfeF = tmp(1113).t.W4DfeF;
+    if (undefined === orbPriceAmount) {
       const obj2 = { product: require, hasShopDiscount };
       const tmpResult = CollectiblesProductUtils;
       const productOrbPrice = tmpResult.getProductOrbPrice(obj2);
-      let str2;
+      let amount;
       if (productOrbPrice != null) {
-        str2 = productOrbPrice.amount;
+        amount = productOrbPrice.amount;
       }
-      if (str2 == null) {
-        str2 = "";
+      tmp5 = amount;
+    }
+    const tmp10 = flag2;
+    if (tmp10) {
+      let stringResult;
+      if (null == tmp5) {
+        const intl2 = tmp(1113).intl;
+        stringResult = intl2.string(tmp(1113).t.pfChQr);
+      } else {
+        const intl = tmp(1113).intl;
+        const obj3 = { orbAmount: tmp5 };
+        stringResult = intl.formatToPlainString(tmp(1113).t.W4DfeF, obj3);
       }
-      const obj3 = { orbAmount: str2 };
-      str = formatToPlainString(W4DfeF, obj3);
+      str = stringResult;
     } else {
       const tmpResult2 = collectibles_CollectiblesUtils;
       str = tmpResult2.getFormattedPriceForCollectiblesProduct(tmp3, hasShopDiscount, true);
@@ -401,17 +410,18 @@ export default function CollectiblesShopCheckoutDetails(product) {
   }
   let obj3 = { style: items1, children: items3 };
   items1[1] = giftProductContainer;
+  let tmp10 = closure_7;
   const obj4 = { style: tmp.productDetailsContainer, accessibilityLabel: memo, accessible: true, children: items2 };
-  items2 = [closure_7(ProductDetails, { product, recipientUser }), closure_7(ProductPriceAmountTag, { product, hasShopDiscount: canUseShopDiscountsResult, useOrbPrice: flag2 })];
-  items3 = [closure_8(tmp9, obj4), ];
+  items2 = [closure_7(ProductDetails, { product, recipientUser }), closure_7(ProductPriceAmountTag, { product, hasShopDiscount: canUseShopDiscountsResult, useOrbPrice: flag2, orbPriceAmount })];
+  items3 = [tmp8(View, obj4), ];
   if (flag3) {
     flag3 = !flag;
   }
   if (flag3) {
-    const obj5 = { style: tmp.errorContainer, children: closure_7(Text, obj6) };
-    obj6 = { variant: "text-xs/semibold", color: "text-feedback-critical", children: intl.string(intl8.t["3YfczA"]) };
-    Text = Text_Text.Text;
-    intl = intl8.intl;
+    const obj5 = { style: tmp.errorContainer, children: tmp10(Text, obj6) };
+    obj6 = { variant: "body-xs/semibold", color: "text-feedback-critical", children: intl.string(tmp3(orbPriceAmount[21]).t["3YfczA"]) };
+    Text = tmp3(tmp4[22]).Text;
+    intl = tmp3(tmp4[21]).intl;
     flag3 = tmp10(tmp9, obj5);
   }
   items3[1] = flag3;

@@ -1,17 +1,17 @@
-// Module ID: 10031
-// Function ID: 10032
+// Module ID: 10153
+// Function ID: 10154
 // Name: PremiumExpressionPickerSearchUpsell
-// Dependencies: [19, 17, 21, 575, 5014, 6980, 5624, 2]
+// Dependencies: [19, 17, 21, 575, 5140, 7043, 5751, 2]
 // Exports: default
 
-// Module 10031 (PremiumExpressionPickerSearchUpsell)
+// Module 10153 (PremiumExpressionPickerSearchUpsell)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import Pressables from "Pressables" /* 6980 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import Pressables from "Pressables" /* 7043 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -46,8 +46,8 @@ export default function PremiumExpressionPickerSearchUpsell(arg0) {
   items = [icon, ];
   obj2 = { style: tmp.upsell, accessibilityRole: "button", disabled: loading, onPress, children: items1 };
   PressableOpacity = Pressables.PressableOpacity;
-  items[1] = _false(Text_Text.Text, { lineClamp: 2, variant: "text-sm/medium", color: "interactive-text-active", children: body });
-  items1 = [React3(View, obj3), _false(Text_Text.Text, { variant: "text-sm/medium", color: "text-link", children: ctaText })];
+  items[1] = _false(Text_Text.Text, { lineClamp: 2, variant: "body-sm/medium", color: "interactive-text-active", children: body });
+  items1 = [React3(View, obj3), _false(Text_Text.Text, { variant: "body-sm/medium", color: "text-link", children: ctaText })];
   return _false(View, obj);
 };
 export const PREMIUM_EXPRESSION_PICKER_SEARCH_UPSELL_HEIGHT = sum;

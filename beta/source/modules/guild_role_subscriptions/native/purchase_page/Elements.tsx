@@ -1,25 +1,25 @@
-// Module ID: 18618
-// Function ID: 18619
+// Module ID: 18979
+// Function ID: 18980
 // Name: Elements
-// Dependencies: [32, 19, 17, 2051, 21, 5014, 575, 5624, 1113, 6980, 1187, 18619, 9910, 17211, 563, 9913, 7413, 2]
+// Dependencies: [32, 19, 17, 2175, 21, 5140, 575, 5751, 1113, 7043, 1187, 18980, 10032, 17537, 563, 10035, 7477, 2]
 // Exports: ArrowButton, TruncatedText, useFormattedSubscriptionPlan
 
-// Module 18618 (Elements)
+// Module 18979 (Elements)
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import Pressables from "Pressables" /* 6980 */;
-import NativePaymentHooksDefault from "NativePaymentHooks" /* 9910 */;
-import useStoreFrontPriceDefault from "useStoreFrontPrice" /* 9913 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 17211 */;
-import AssetRegistryDefault from "AssetRegistry" /* 18619 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import Pressables from "Pressables" /* 7043 */;
+import NativePaymentHooksDefault from "NativePaymentHooks" /* 10032 */;
+import useStoreFrontPriceDefault from "useStoreFrontPrice" /* 10035 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 17537 */;
+import AssetRegistryDefault from "AssetRegistry" /* 18980 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SubscriptionPlanStore from "SubscriptionPlanStore" /* 2051 */;
+import SubscriptionPlanStore from "SubscriptionPlanStore" /* 2175 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -69,7 +69,7 @@ export function TruncatedText(lineClamp) {
   let tmp8Result = first;
   if (tmp8Result) {
     let stringResult;
-    let obj = { style: tmp2.toggleTruncateButton, children: React4(Text, obj2) };
+    const obj = { style: tmp2.toggleTruncateButton, children: React4(Text, obj2) };
     Text = Text_Text.Text;
     const intl = intl2.intl;
     const string = intl.string;
@@ -80,7 +80,7 @@ export function TruncatedText(lineClamp) {
     } else {
       stringResult = string(t.Fbrd8J);
     }
-    obj2 = { variant: "text-sm/medium", color: "text-default", children: stringResult };
+    obj2 = { variant: "body-sm/medium", color: "text-default", children: stringResult };
     tmp8Result = tmp8(tmp9, obj);
   }
   const obj3 = {
@@ -128,7 +128,7 @@ export function ArrowButton(arg0) {
   const obj = { accessibilityRole: "button", style: tmp.arrowButton, onPress, children: items };
   const PressableOpacity = Pressables.PressableOpacity;
   items = [, ];
-  const obj2 = { variant: "text-md/semibold", color: "text-default", style: tmp.arrowButtonText, children: text };
+  const obj2 = { variant: "body-md/semibold", color: "text-default", style: tmp.arrowButtonText, children: text };
   items[0] = React4(Text_Text.Text, obj2);
   const obj3 = { size: native.Icon.Sizes.SMALL, source: AssetRegistryDefault, style: tmp.arrowButtonIcon };
   const Icon = native.Icon;
@@ -149,7 +149,7 @@ export function useFormattedSubscriptionPlan(listingId) {
   const tmp3 = _require;
   if (null != price) {
     const _HermesInternal = HermesInternal;
-    const tmp3Result = tmp3(7413);
+    const tmp3Result = tmp3(7477);
     str = "" + tmp3Result.formatPrice(price.amount, price.currency) + "/mo.";
   }
   return str;

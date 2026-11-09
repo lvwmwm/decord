@@ -1,16 +1,16 @@
-// Module ID: 9402
-// Function ID: 9403
+// Module ID: 9483
+// Function ID: 9484
 // Name: GameProfileSummary
-// Dependencies: [19, 17, 21, 5014, 9403, 9404, 9340, 1113, 5624, 9432, 2]
+// Dependencies: [19, 17, 21, 5140, 9484, 9485, 9421, 1113, 5751, 9513, 2]
 // Exports: default
 
-// Module 9402 (GameProfileSummary)
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9340 */;
-import DEFAULT_MAX_HTML_LENGTH from "DEFAULT_MAX_HTML_LENGTH" /* 9404 */;
+// Module 9483 (GameProfileSummary)
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9421 */;
+import DEFAULT_MAX_HTML_LENGTH from "DEFAULT_MAX_HTML_LENGTH" /* 9485 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -75,20 +75,20 @@ export default function GameProfileSummary(arg0) {
     const tmp8 = closure_6;
     if (!isExpanded) {
       const obj3 = { style: tmp.measurement, pointerEvents: "none", accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: closure_5(Text, obj4) };
-      obj4 = { variant: "text-md/normal", color: "interactive-text-active", onTextLayout: tmp6, children: closure_5(trackAction(setHasOverflow[9]).HTMLText, obj5) };
+      obj4 = { variant: "body-md/normal", color: "interactive-text-active", onTextLayout: tmp6, children: closure_5(trackAction(setHasOverflow[9]).HTMLText, obj5) };
       Text = tmp2(tmp3[8]).Text;
       obj5 = { runs: memo, onLinkPress: callback };
       tmp10 = closure_5(tmp9, obj3);
     }
     items2 = [tmp10, , ];
     const Text2 = tmp2(tmp3[8]).Text;
-    const obj6 = { variant: "text-md/normal", color: "interactive-text-active", lineClamp: 3, children: closure_5(trackAction(setHasOverflow[9]).HTMLText, obj7) };
+    const obj6 = { variant: "body-md/normal", color: "interactive-text-active", lineClamp: 3, children: closure_5(trackAction(setHasOverflow[9]).HTMLText, obj7) };
     obj7 = { runs: memo, onLinkPress: callback };
     items2[1] = closure_5(Text2, obj6);
     let tmp12Result = null;
     if (showToggle) {
       const obj8 = { onPress: toggleExpanded, accessibilityRole: "button", accessibilityLabel: stringResult, accessibilityState: obj9, children: closure_5(trackAction(setHasOverflow[8]).Text, obj10) };
-      obj10 = { variant: "text-md/medium", color: "text-brand", children: stringResult };
+      obj10 = { variant: "body-md/medium", color: "text-brand", children: stringResult };
       obj9 = { expanded: isExpanded };
       tmp12Result = tmp12(closure_4, obj8);
     }

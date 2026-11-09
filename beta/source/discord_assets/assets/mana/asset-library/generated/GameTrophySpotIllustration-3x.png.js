@@ -1,8 +1,8 @@
-// Module ID: 17057
-// Function ID: 17058
+// Module ID: 17377
+// Function ID: 17378
 // Dependencies: [2]
 
-// Module 17057
+// Module 17377
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/GameTrophySpotIllustration-3x.png.js");

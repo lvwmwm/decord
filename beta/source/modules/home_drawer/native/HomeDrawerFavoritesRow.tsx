@@ -1,14 +1,14 @@
-// Module ID: 18384
-// Function ID: 18385
+// Module ID: 18723
+// Function ID: 18724
 // Name: HomeDrawerFavoritesRow
-// Dependencies: [19, 21, 18377, 5624, 1113, 2]
+// Dependencies: [19, 21, 18716, 5751, 1113, 2]
 // Exports: HomeDrawerFavoritesRowExpandedChildren
 
-// Module 18384 (HomeDrawerFavoritesRow)
+// Module 18723 (HomeDrawerFavoritesRow)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import HomeDrawerShared from "HomeDrawerShared" /* 18377 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import HomeDrawerShared from "HomeDrawerShared" /* 18716 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -18,7 +18,7 @@ const result = size.fileFinishedImporting("modules/home_drawer/native/HomeDrawer
 export function HomeDrawerFavoritesRowExpandedChildren() {
   let intl;
   const HomeDrawerSharedItem = HomeDrawerShared.HomeDrawerSharedItem;
-  ({ variant: "text-md/medium", color: "text-default", lineClamp: 1, children: intl.string(intl2.t.wMWyci) });
+  ({ variant: "body-md/medium", color: "text-default", lineClamp: 1, children: intl.string(intl2.t.wMWyci) });
   const Text = Text_Text.Text;
   intl = intl2.intl;
   return <HomeDrawerSharedItem title={null} subtitle={null} />;

@@ -1,18 +1,18 @@
-// Module ID: 13344
-// Function ID: 13345
+// Module ID: 13577
+// Function ID: 13578
 // Name: AppealIngestionRequestSent
-// Dependencies: [19, 17, 7970, 21, 5014, 13321, 1113, 13319, 5717, 13345, 5624, 13339, 2]
+// Dependencies: [19, 17, 8039, 21, 5140, 13554, 1113, 13552, 5842, 13578, 5751, 13572, 2]
 // Exports: default
 
-// Module 13344 (AppealIngestionRequestSent)
+// Module 13577 (AppealIngestionRequestSent)
 import react_native from "react-native" /* 17 */;
-import FastImageDefault from "FastImage" /* 5717 */;
-import AppealIngestionExternalLinkDefault from "AppealIngestionExternalLink" /* 13339 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13345 */;
+import FastImageDefault from "FastImage" /* 5842 */;
+import AppealIngestionExternalLinkDefault from "AppealIngestionExternalLink" /* 13572 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13578 */;
 import react from "react" /* 19 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 7970 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 8039 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -48,7 +48,7 @@ export default function AppealIngestionRequestSent() {
   const obj4 = { source: AssetRegistryDefault, style: tmp.checkboxPng };
   const tmp4 = FastImageDefault;
   items = [closure_6(tmp4, obj4), closure_6(require("AppealIngestionModal").AppealIngestionModalHeader, { headerText: stringResult, subHeaderText: stringResult1 }), , , ];
-  const obj5 = { variant: "heading-md/bold", color: "mobile-text-heading-primary", style: tmp.actionsHeader, children: intl3.string(require("intl").t["9BRc1N"]) };
+  const obj5 = { variant: "heading-sm/semibold", color: "mobile-text-heading-primary", style: tmp.actionsHeader, children: intl3.string(require("intl").t["9BRc1N"]) };
   const Text = require("Text/Text").Text;
   intl3 = require("intl").intl;
   items[2] = closure_6(Text, obj5);

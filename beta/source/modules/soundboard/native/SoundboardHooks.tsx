@@ -1,16 +1,16 @@
-// Module ID: 19176
-// Function ID: 19177
+// Module ID: 19552
+// Function ID: 19553
 // Name: SoundboardHooks
-// Dependencies: [5, 19, 5015, 1192, 19169, 5272, 504, 5021, 4844, 7517, 2]
+// Dependencies: [5, 19, 5141, 1192, 19545, 5388, 504, 5147, 5258, 4970, 7589, 2]
 // Exports: useMaybeFetchSoundboardSounds, useSoundButtonStyleConfig
 
-// Module 19176 (SoundboardHooks)
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5272 */;
+// Module 19552 (SoundboardHooks)
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5388 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5015 */;
+import AccessibilityStore from "AccessibilityStore" /* 5141 */;
 import ThemeStore from "ThemeStore" /* 1192 */;
-import SoundboardStyleConstants from "SoundboardStyleConstants" /* 19169 */;
+import SoundboardStyleConstants from "SoundboardStyleConstants" /* 19545 */;
 import size from "module_2" /* 2 */;
 
 let c0, c1;
@@ -60,7 +60,7 @@ export function useMaybeFetchSoundboardSounds(shouldFetch) {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -74,14 +74,16 @@ export function useMaybeFetchSoundboardSounds(shouldFetch) {
                 const obj4 = { value, done: true };
                 return obj4;
               } else {
-                const tmp4 = c0;
-                if (tmp4) {
-                  const FrecencyUserSettingsActionCreators = closure_2_0(closure_2_1[8]).FrecencyUserSettingsActionCreators;
-                  const ifNecessary = FrecencyUserSettingsActionCreators.loadIfNecessary();
+                const tmp12 = c0;
+                if (tmp12) {
+                  const ignoreErrors = closure_2_0(closure_2_1[8]).ignoreErrors;
+                  const tmp6 = closure_2_0(closure_2_1[8]);
+                  const FrecencyUserSettingsActionCreators = closure_2_0(closure_2_1[9]).FrecencyUserSettingsActionCreators;
+                  ignoreErrors(FrecencyUserSettingsActionCreators.loadIfNecessary());
                   c1 = 1;
                   c0 = 1;
                   const obj5 = { value: obj2.maybeFetchSoundboardSounds(), done: false };
-                  obj2 = closure_2_0(closure_2_1[9]);
+                  obj2 = closure_2_0(closure_2_1[10]);
                   return obj5;
                 }
               }
@@ -94,7 +96,7 @@ export function useMaybeFetchSoundboardSounds(shouldFetch) {
               return obj;
             }
             c0 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           } catch (tmp8) {
             c0 = 3;
             throw tmp8;

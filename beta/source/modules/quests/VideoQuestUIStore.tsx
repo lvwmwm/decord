@@ -1,13 +1,13 @@
-// Module ID: 7848
-// Function ID: 7849
+// Module ID: 7924
+// Function ID: 7925
 // Name: VideoQuestUIStore
-// Dependencies: [109, 1254, 5212, 7849, 1259, 7850, 2]
+// Dependencies: [109, 1254, 5328, 7925, 1259, 7926, 2]
 
-// Module 7848 (VideoQuestUIStore)
+// Module 7924 (VideoQuestUIStore)
 import react_native from "react-native" /* 1259 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import module_1254_mod from "module_1254" /* 1254 */;
-import combine_mod from "combine" /* 5212 */;
+import combine_mod from "combine" /* 5328 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -61,8 +61,6 @@ const withEqualityFnResult = module_1254(persist((arg0, arg1) => {
   let obj = {
     volume: require("DiscordVideoPlayerTypes").DEFAULT_VIDEO_VOLUME,
     muted: false,
-    transcriptEnabled: false,
-    captionEnabled: false,
     videoProgress: {},
     transcript: null,
     setVolume(volume) {
@@ -99,20 +97,6 @@ const withEqualityFnResult = module_1254(persist((arg0, arg1) => {
         const obj3 = { timestampSec, duration, maxTimestampSec };
         obj2[closure_0] = obj3;
         return closure_0(obj);
-      });
-    },
-    setTranscriptEnabled(transcriptEnabled) {
-      let obj = transcriptEnabled(dependencyMap[4]);
-      obj.batchUpdates(() => {
-        const obj = { transcriptEnabled };
-        return transcriptEnabled(obj);
-      });
-    },
-    setCaptionEnabled(captionEnabled) {
-      let obj = captionEnabled(dependencyMap[4]);
-      obj.batchUpdates(() => {
-        const obj = { captionEnabled };
-        return captionEnabled(obj);
       });
     },
     getVideoProgress(questId) {

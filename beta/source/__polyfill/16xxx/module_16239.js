@@ -1,221 +1,106 @@
 // Module ID: 16239
 // Function ID: 16240
-// Dependencies: [41, 42, 93, 95, 98, 19, 17, 21]
+// Dependencies: [16212, 16216, 16211]
 
 // Module 16239
-import _classCallCheck from "_classCallCheck" /* 41 */;
-import _createClass from "_createClass" /* 42 */;
-import map from "_possibleConstructorReturn" /* 93 */;
-import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
-import _inherits from "_inherits" /* 98 */;
-import react from "react" /* 19 */;
-import react_native from "react-native" /* 17 */;
-import Fragment from "Fragment" /* 21 */;
+import _mod16211 from "module_16211" /* 16211 */;
+import _mod16212 from "module_16212" /* 16212 */;
 
-let size;
 
-let value;
-let weakMap;
-function _isNativeReflectConstruct() {
-  try {
-    const _Boolean = Boolean;
-    const _Reflect = Reflect;
-    const _Boolean2 = Boolean;
-    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-    }));
-    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
-      return closure_0;
-    };
-    return _isNativeReflectConstruct();
-  } catch (err) {
-  }
-}
-if (typeof WeakMap === "function") {
-  const _WeakMap = WeakMap;
-  let self = this;
-  const self2 = this;
-  weakMap = new WeakMap();
-  const _WeakMap2 = WeakMap;
-  const self3 = this;
-  const weakMap1 = new WeakMap();
-}
-if (!react) {
-  let tmp7 = null;
-  let merged = Object.assign({ default: null });
-  merged[0] = react;
-  value = merged;
-  if (null !== react) {
-    if (typeof react === "object") {
-      if (!weakMap) {
-        value = merged;
-        const keys = Object.keys();
-        if (keys !== undefined) {
-          value = merged;
-          while (keys[tmp] !== undefined) {
-            let callResult = "default" !== tmp12;
-            if (callResult) {
-              let hasOwnProperty = {}.hasOwnProperty;
-              callResult = hasOwnProperty.call(react, tmp12);
+export default (num, arg1) => {
+  if (num instanceof _mod16212) {
+    return num;
+  } else {
+    let StringResult = num;
+    if (typeof num === "number") {
+      const _String = String;
+      StringResult = String(num);
+    }
+    if (typeof StringResult !== "string") {
+      return null;
+    } else {
+      let match3;
+      const tmp3 = arg1 || {};
+      if (tmp3.rtl) {
+        let obj;
+        const includePrerelease2 = tmp3.includePrerelease;
+        const safeRe2 = tmp(16216).safeRe;
+        const t2 = tmp(16216).t;
+        if (includePrerelease2) {
+          obj = safeRe2[t2.COERCERTLFULL];
+        } else {
+          obj = safeRe2[t2.COERCERTL];
+        }
+        let match1 = obj.exec(StringResult);
+        let tmp7 = null;
+        let tmp9 = null;
+        if (match1) {
+          while (true) {
+            let tmp11 = tmp7;
+            let tmp12 = tmp7 && match1.index + match1[0].length === tmp11.index + tmp11[0].length;
+            if (!tmp12) {
+              tmp11 = match1;
             }
-            if (!callResult) {
-              continue;
+            obj.lastIndex = match1.index + match1[1].length + match1[2].length;
+            let match2 = obj.exec(StringResult);
+            tmp9 = tmp11;
+            if (!match2) {
+              break;
             } else {
-              let _Object = Object;
-              let ownPropertyDescriptor = defineProperty;
-              if (ownPropertyDescriptor) {
-                let _Object2 = Object;
-                ownPropertyDescriptor = Object.getOwnPropertyDescriptor(react, tmp12);
-              }
-              if (!ownPropertyDescriptor) {
-                merged[tmp12] = react[tmp12];
+              match1 = match2;
+              tmp7 = tmp11;
+              if (!tmp7) {
                 continue;
               } else {
-                let definePropertyResult1 = defineProperty(merged, tmp12, ownPropertyDescriptor);
-                continue;
+                match1 = match2;
+                tmp7 = tmp11;
+                tmp9 = tmp11;
+                if (tmp11.index + tmp11[0].length === StringResult.length) {
+                  break;
+                }
               }
               continue;
             }
-            continue;
           }
         }
-      } else if (weakMap.has(react)) {
-        value = weakMap.get(react);
+        obj.lastIndex = -1;
+        match3 = tmp9;
       } else {
-        const result = weakMap.set(react, merged);
+        let tmp4;
+        const match = StringResult.match;
+        const includePrerelease = tmp3.includePrerelease;
+        const safeRe = tmp(16216).safeRe;
+        const t = tmp(16216).t;
+        if (includePrerelease) {
+          tmp4 = safeRe[t.COERCEFULL];
+        } else {
+          tmp4 = safeRe[t.COERCE];
+        }
+        match3 = match(tmp4);
       }
-    } else {
-      value = merged;
+      if (null === match3) {
+        return null;
+      } else {
+        let str2 = "";
+        if (tmp3.includePrerelease) {
+          str2 = "";
+          if (match3[5]) {
+            const _HermesInternal = HermesInternal;
+            str2 = "-" + match3[5];
+          }
+        }
+        let str4 = "";
+        if (tmp3.includePrerelease) {
+          str4 = "";
+          if (match3[6]) {
+            const _HermesInternal2 = HermesInternal;
+            str4 = "+" + match3[6];
+          }
+        }
+        const _HermesInternal3 = HermesInternal;
+        const tmp21 = _mod16211;
+        return tmp21("" + match3[2] + "." + match3[3] || "0" + "." + match3[4] || "0" + str2 + str4, tmp3);
+      }
     }
-  }
-} else {
-  value = react;
-}
-const metroRequire = { container: { position: "absolute", left: 0, top: 0, right: 0, bottom: 0, zIndex: 1000, opacity: 0.25 }, debugContainer: { position: "absolute", top: 0, left: 0, right: 0, bottom: 0, justifyContent: "center", alignItems: "center", backgroundColor: "transparent", zIndex: 2000 }, debugTextContainer: { backgroundColor: "lightgray", margin: 50, padding: 20 }, debugText: { color: "red", fontSize: 16, marginBottom: 10 } };
-class FullScreenOverlay {
-  constructor(emitter) {
-    let constructResult;
-    const self = this;
-    _classCallCheck(this, FullScreenOverlay);
-    const items = [emitter];
-    let obj = _getPrototypeOf(FullScreenOverlay);
-    const tmp2 = _getPrototypeOf;
-    const tmp3 = map;
-    if (_isNativeReflectConstruct()) {
-      const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, items, tmp2(self).constructor);
-    } else {
-      constructResult = obj.apply(self, items);
-    }
-    const tmp3Result = tmp3(self, constructResult);
-    let closure_0 = tmp3Result;
-    const obj2 = { opacity: container.container.opacity, uri: null, justifyContent: "center", alignItems: "center" };
-    tmp3Result.state = obj2;
-    emitter = emitter.emitter;
-    emitter.on("overlay", (arg0) => {
-      const setState = closure_0.setState;
-      const obj = {};
-      const merged = Object.assign(closure_0.state);
-      const merged1 = Object.assign(arg0);
-      setState(obj);
-    });
-    return tmp3Result;
-  }
-}
-_inherits(FullScreenOverlay, value.Component);
-const entry = {
-  key: "createContainerStyle",
-  value: function createContainerStyle() {
-    let alignItems;
-    let height;
-    let justifyContent;
-    let opacity;
-    let width;
-    const Dimensions = react_native.Dimensions;
-    ({ opacity, justifyContent, alignItems } = this.state);
-    const value = Dimensions.get("window");
-    const obj = { opacity, width, height, justifyContent, alignItems };
-    ({ width, height } = value);
-    const merged = Object.assign(container.container);
-    return obj;
   }
 };
-let items = [
-  entry,
-  {
-    key: "renderDebug",
-    value: function renderDebug() {
-      return null;
-    }
-  },
-  {
-    key: "render",
-    value: function render() {
-      let growToWindow;
-      let height;
-      let jsx2;
-      let jsxResult;
-      let jsxs;
-      let marginLeft;
-      let num4;
-      let resizeMode;
-      let tmp6;
-      let tmp7;
-      let uri;
-      let width;
-      const self = this;
-      const state = this.state;
-      ({ uri, growToWindow, marginLeft } = state);
-      let num = 0;
-      ({ width, height, resizeMode } = state);
-      if (undefined !== marginLeft) {
-        num = marginLeft;
-      }
-      const marginRight = state.marginRight;
-      let num2 = 0;
-      if (undefined !== marginRight) {
-        num2 = marginRight;
-      }
-      const marginTop = state.marginTop;
-      let num3 = 0;
-      if (undefined !== marginTop) {
-        num3 = marginTop;
-      }
-      const marginBottom = state.marginBottom;
-      size = { width, height, marginTop: num3, marginRight: num2, marginBottom: num4, marginLeft: num };
-      num4 = 0;
-      if (undefined !== marginBottom) {
-        num4 = marginBottom;
-      }
-      if (growToWindow) {
-        const Dimensions = react_native.Dimensions;
-        const value = Dimensions.get("window");
-        ({ width: obj.width, height: obj.height } = value);
-      }
-      const jsx = Fragment.jsx;
-      if (uri) {
-        let tmp8 = null;
-        const Image = tmp4.Image;
-        const obj3 = { uri };
-        if (growToWindow) {
-          tmp8 = resizeMode;
-        }
-        jsxResult = <Image source={obj3} style={size} resizeMode={tmp8} />;
-        tmp6 = tmp4;
-        tmp7 = tmp3;
-      } else {
-        jsxResult = <tmp4.View />;
-        tmp6 = tmp4;
-        tmp7 = tmp3;
-      }
-      ({ jsxs, Fragment, jsx: jsx2 } = tmp7);
-      const items = [, ];
-      const obj5 = { style: self.createContainerStyle(), pointerEvents: "none", children: jsxResult };
-      items[0] = jsx2(tmp6.View, obj5);
-      items[1] = self.renderDebug();
-      return <>{items}</>;
-    }
-  }
-];
-
-export default _createClass(FullScreenOverlay, items);

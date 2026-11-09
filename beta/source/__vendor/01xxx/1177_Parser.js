@@ -6,7 +6,7 @@
 // Module 1177 (Parser)
 import SPACE_SEPARATOR_REGEX from "SPACE_SEPARATOR_REGEX" /* 1178 */;
 
-let DUPLICATE_PLURAL_ARGUMENT_SELECTOR, EMPTY_ARGUMENT, EXPECT_ARGUMENT_CLOSING_BRACE, EXPECT_ARGUMENT_CLOSING_BRACE2, EXPECT_ARGUMENT_CLOSING_BRACE3, EXPECT_ARGUMENT_STYLE, EXPECT_PLURAL_ARGUMENT_OFFSET_VALUE, EXPECT_PLURAL_ARGUMENT_SELECTOR_FRAGMENT, EXPECT_SELECT_ARGUMENT_OPTIONS, ErrorKind, INVALID_TAG, INVALID_TAG2, INVALID_TAG3, MALFORMED_ARGUMENT, MALFORMED_ARGUMENT2, MISSING_OTHER_CLAUSE, UNCLOSED_QUOTE_IN_ARGUMENT_STYLE, UNCLOSED_TAG, UNMATCHED_CLOSING_TAG, _Error, _Error2, addResult, arr1, arr2, arr3, arr4, bestPattern, bound, bumpResult, bumpResult1, bumpResult2, bumpResult3, bumpResult4, bumpResult5, bumpResult6, bumpSpaceResult, bumpSpaceResult1, bumpSpaceResult2, bumpSpaceResult3, bumpSpaceResult4, bumpSpaceResult5, bumpToResult, bumpToResult1, charCodeAt, charResult, charResult1, clonePositionResult, clonePositionResult1, clonePositionResult2, clonePositionResult3, clonePositionResult4, clonePositionResult5, combined, concat, concat2, element, error, error2, error3, error3Result, error4, error4Result, error5, error6, errorResult, errorResult1, flag2, index, iter, message, message1, num10, num11, num12, num13, num14, num15, num16, num17, num18, num19, num20, num21, num22, num23, num24, num25, num26, num27, num28, num29, num30, num31, num32, num33, num34, num35, num36, num37, num38, num39, num4, num40, num41, num42, num43, num44, num45, num46, num47, num48, num49, num5, num50, num51, num52, num53, num54, num55, num56, num57, num58, num59, num6, num60, num61, num62, num63, num64, num65, num66, num67, num7, num8, num9, obj1, obj10, obj11, obj12, obj13, obj14, obj15, obj16, obj17, obj18, obj19, obj2, obj23, obj24, obj25, obj26, obj27, obj28, obj29, obj30, obj31, obj32, obj33, obj34, obj35, obj36, obj37, obj38, obj39, obj4, obj40, obj9, offset, offsetResult, parseArgumentResult, parseLiteralResult, parseMessageResult, parseNumberSkeletonResult, parseTagNameResult, parseTagResult, peekResult, position, position2, position3, position4, result, result1, result2, result3, result4, result5, result6, result7, set, str10, str11, str12, str13, str14, str15, str3, str4, str6, str7, str8, str9, style, style1, style2, substr, time, time2, tmp10, tmp16, tmp18, tmp20, tmp22, tmp26, tmp28, tmp30, tmp34, tmp38, tmp4, tmp40, tmp42, tmp44, tmp46, tmp52, tmp54, tmp60, tmp66, tryParseDecimalInteger, tryParseQuoteResult, tryParseUnquotedResult, val, value;
+let DUPLICATE_PLURAL_ARGUMENT_SELECTOR, EMPTY_ARGUMENT, EXPECT_ARGUMENT_CLOSING_BRACE, EXPECT_ARGUMENT_CLOSING_BRACE2, EXPECT_ARGUMENT_CLOSING_BRACE3, EXPECT_ARGUMENT_STYLE, EXPECT_PLURAL_ARGUMENT_OFFSET_VALUE, EXPECT_PLURAL_ARGUMENT_SELECTOR_FRAGMENT, EXPECT_SELECT_ARGUMENT_OPTIONS, ErrorKind, INVALID_TAG, INVALID_TAG2, INVALID_TAG3, MALFORMED_ARGUMENT, MALFORMED_ARGUMENT2, MISSING_OTHER_CLAUSE, UNCLOSED_QUOTE_IN_ARGUMENT_STYLE, UNCLOSED_TAG, UNMATCHED_CLOSING_TAG, _Error, _Error2, addResult, arr1, arr2, arr3, arr4, bestPattern, bound, bumpResult, bumpResult1, bumpResult2, bumpResult3, bumpResult4, bumpResult5, bumpResult6, bumpSpaceResult, bumpSpaceResult1, bumpSpaceResult2, bumpSpaceResult3, bumpSpaceResult4, bumpSpaceResult5, bumpToResult, bumpToResult1, charCodeAt, charResult, charResult1, clonePositionResult, clonePositionResult1, clonePositionResult2, clonePositionResult3, clonePositionResult4, clonePositionResult5, combined, concat, concat2, element, error, error2, error3, error3Result, error4, error4Result, error5, error6, errorResult, errorResult1, flag2, index, iter, message, message1, num10, num11, num12, num13, num14, num15, num16, num17, num18, num19, num20, num21, num22, num23, num24, num25, num26, num27, num28, num29, num30, num31, num32, num33, num34, num35, num36, num37, num38, num39, num4, num40, num41, num42, num43, num44, num45, num46, num47, num48, num49, num5, num50, num51, num52, num53, num54, num55, num56, num57, num58, num59, num6, num60, num61, num62, num63, num64, num65, num66, num67, num7, num8, num9, obj1, obj10, obj11, obj12, obj13, obj14, obj15, obj16, obj17, obj18, obj19, obj2, obj23, obj24, obj25, obj26, obj27, obj28, obj29, obj30, obj31, obj32, obj33, obj34, obj35, obj36, obj37, obj38, obj39, obj4, obj40, obj9, offset, offsetResult, parseArgumentResult, parseLiteralResult, parseMessageResult, parseNumberSkeletonResult, parseTagNameResult, parseTagResult, peekResult, position, position2, position3, position4, result, result2, result3, result4, result5, result6, result7, set, str10, str11, str12, str13, str14, str15, str3, str4, str6, str7, str8, str9, style, style1, style2, substr, time, time2, tmp10, tmp16, tmp18, tmp20, tmp22, tmp26, tmp28, tmp30, tmp34, tmp38, tmp4, tmp40, tmp42, tmp44, tmp46, tmp52, tmp54, tmp60, tmp66, tryParseDecimalInteger, tryParseQuoteResult, tryParseUnquotedResult, val, value;
 
 let flag;
 let tmp11;
@@ -29,19 +29,19 @@ if (Number.isSafeInteger) {
   const _Number = Number;
   let fn = Number.isSafeInteger;
 } else {
-  fn = (num) => {
-    let isFiniteResult = typeof num === "number";
-    if (typeof num === "number") {
+  fn = (result1) => {
+    let isFiniteResult = typeof result1 === "number";
+    if (typeof result1 === "number") {
       const _isFinite = isFinite;
-      isFiniteResult = isFinite(num);
+      isFiniteResult = isFinite(result1);
     }
     if (isFiniteResult) {
       const _Math = Math;
-      isFiniteResult = Math.floor(num) === num;
+      isFiniteResult = Math.floor(result1) === result1;
     }
     if (isFiniteResult) {
       const _Math2 = Math;
-      isFiniteResult = Math.abs(num) <= 9007199254740991;
+      isFiniteResult = Math.abs(result1) <= 9007199254740991;
     }
     return isFiniteResult;
   };

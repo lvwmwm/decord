@@ -1,17 +1,17 @@
-// Module ID: 10300
-// Function ID: 10301
+// Module ID: 10419
+// Function ID: 10420
 // Name: useStickerPickerListData
-// Dependencies: [19, 10269, 10236, 1228, 10021, 10268, 10046, 12, 1113, 6561, 9972, 2]
+// Dependencies: [19, 10388, 10355, 1228, 10143, 10387, 12, 1113, 6616, 10093, 2]
 // Exports: default
 
-// Module 10300 (useStickerPickerListData)
+// Module 10419 (useStickerPickerListData)
 import _modDef12 from "module_12" /* 12 */;
 import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1228 */;
-import StickersTypes from "StickersTypes" /* 6561 */;
-import PremiumUpsellSectionDivider from "PremiumUpsellSectionDivider" /* 10021 */;
-import StickerPickerStore from "StickerPickerStore" /* 10269 */;
+import StickersTypes from "StickersTypes" /* 6616 */;
+import PremiumUpsellSectionDivider from "PremiumUpsellSectionDivider" /* 10143 */;
+import StickerPickerStore from "StickerPickerStore" /* 10388 */;
 import react from "react" /* 19 */;
-import StickerPickerConstants from "StickerPickerConstants" /* 10236 */;
+import StickerPickerConstants from "StickerPickerConstants" /* 10355 */;
 import size from "module_2" /* 2 */;
 
 let c5, packToScrollToIndex;
@@ -21,7 +21,7 @@ let hasOwnProperty;
 let metroImportDefault;
 let metroRequire;
 let tmp2;
-const age_gate_AgeGateUtils = tmp2(9972);
+const age_gate_AgeGateUtils = tmp2(10093);
 let useStickerPickerStore = StickerPickerStore.useStickerPickerStore;
 ({ MIN_MARGIN: hasOwnProperty, ROW_HEIGHT: metroRequire, STICKER_SIZE: metroImportDefault, LABEL_HEIGHT } = StickerPickerConstants);
 const StickerPickerSectionType = { STICKERS: 0, [0]: "STICKERS", NSFW: 1, [1]: "NSFW" };
@@ -42,9 +42,7 @@ export default function useStickerPickerListData(containerWidth) {
   const stickerCategories = obj.useStickerCategories(channel);
   let tmp2 = useStickerPickerStore((packToScrollTo) => packToScrollTo.packToScrollTo);
   useStickerPickerStore = tmp2;
-  let obj2 = containerWidth(stickerFormats[6]);
-  const mobileStickerPickerUpsellRestyleEnabled = obj2.useMobileStickerPickerUpsellRestyleEnabled("native.useStickerPickerListData");
-  let items = [containerWidth, stickerCategories, stickerFormats, searchResults, tmp2, mobileStickerPickerUpsellRestyleEnabled];
+  let items = [containerWidth, stickerCategories, stickerFormats, searchResults, tmp2];
   return stickerCategories.useMemo(() => {
     let rounded;
     function pushCategory(nitroLocked, intl) {
@@ -72,26 +70,22 @@ export default function useStickerPickerListData(containerWidth) {
       items1.push(str);
       items2.push(flag);
     }
-    rounded = Math.floor((rounded - mobileStickerPickerUpsellRestyleEnabled) / (closure_1_7 + mobileStickerPickerUpsellRestyleEnabled));
+    rounded = Math.floor((rounded - closure_1_5) / (closure_1_7 + closure_1_5));
     const items = [];
     const items1 = [];
     const items2 = [];
     const items3 = [];
     packToScrollToIndex = undefined;
     if (null != items) {
-      let str = "";
-      if (!packToScrollToIndex) {
-        const intl = containerWidth(stickerFormats[8]).intl;
-        str = intl.string(containerWidth(stickerFormats[8]).t["zkoeq/"]);
-      }
       let num = 0;
       if (items.rest.length > 0) {
-        pushCategory(items.rest, str);
+        let str = "";
+        pushCategory(items.rest, "");
       }
       if (items.nitroLocked.length > 0) {
         const nitroLocked = tmp3.nitroLocked;
-        const intl2 = containerWidth(stickerFormats[8]).intl;
-        pushCategory(nitroLocked, intl2.string(containerWidth(stickerFormats[8]).t.pAF6xE));
+        const intl = containerWidth(stickerFormats[7]).intl;
+        pushCategory(nitroLocked, intl.string(containerWidth(stickerFormats[7]).t.pAF6xE));
       }
     } else {
       const mapped = items2.map((id, index) => {

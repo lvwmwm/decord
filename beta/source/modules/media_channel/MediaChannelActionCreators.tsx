@@ -1,10 +1,10 @@
-// Module ID: 10975
-// Function ID: 10976
+// Module ID: 11103
+// Function ID: 11104
 // Name: MediaChannelActionCreators
-// Dependencies: [5, 1072, 572, 1282, 6446, 2]
+// Dependencies: [5, 1072, 572, 1282, 6579, 2]
 // Exports: dismissMediaPostSharePrompt, fetchMediaPostEmbed, unfurlEmbedUrl
 
-// Module 10975 (MediaChannelActionCreators)
+// Module 11103 (MediaChannelActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
@@ -28,7 +28,7 @@ let obj = function _fetchMediaPostEmbed() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -78,7 +78,7 @@ let obj = function _fetchMediaPostEmbed() {
               c4 = 0;
             }
             c6 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp19) {
           closure_3 = tmp19;
@@ -110,7 +110,7 @@ obj = function _unfurlEmbedUrl() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -153,11 +153,11 @@ obj = function _unfurlEmbedUrl() {
             c6 = 3;
             return { value: value.body, done: true };
           }
-        } catch (tmp14) {
-          closure_3 = tmp14;
+        } catch (tmp18) {
+          closure_3 = tmp18;
           if (0 === c4) {
             c6 = 3;
-            throw tmp14;
+            throw tmp18;
           } else {
             c5 = 1;
           }

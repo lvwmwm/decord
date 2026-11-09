@@ -1,18 +1,18 @@
-// Module ID: 17283
-// Function ID: 17284
+// Module ID: 17609
+// Function ID: 17610
 // Name: HappeningNowCard
-// Dependencies: [19, 17, 17282, 21, 5014, 7112, 5194, 6977, 5624, 2]
+// Dependencies: [19, 17, 17608, 21, 5140, 7183, 5310, 7040, 5751, 2]
 // Exports: HappeningNowCardHeader, HappeningNowCardSubtitle, default
 
-// Module 17283 (HappeningNowCard)
+// Module 17609 (HappeningNowCard)
 import react_native from "react-native" /* 17 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import Card_Card from "Card/Card" /* 6977 */;
-import useIsWindowLargeDefault from "useIsWindowLarge" /* 7112 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import Card_Card from "Card/Card" /* 7040 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 7183 */;
 import react from "react" /* 19 */;
-import HappeningNowConstants from "HappeningNowConstants" /* 17282 */;
+import HappeningNowConstants from "HappeningNowConstants" /* 17608 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 let HAPPENING_NOW_BADGE_SIZE;
@@ -33,7 +33,7 @@ let metroRequire;
 let obj2;
 let tmp;
 let unpackModuleId;
-const useColorThemeBackgroundDefault = tmp(5194);
+const useColorThemeBackgroundDefault = tmp(5310);
 const View = react_native.View;
 const HAPPENING_NOW_CARD_MARGIN_RIGHT = HappeningNowConstants.HAPPENING_NOW_CARD_MARGIN_RIGHT;
 ({ HAPPENING_NOW_CARD_PADDING: hasOwnProperty, HAPPENING_NOW_CARD_HEIGHT: metroRequire, HAPPENING_NOW_BADGE_SIZE } = HappeningNowConstants);
@@ -151,7 +151,7 @@ export function HappeningNowCardHeader(displayNameFont) {
     tmp5 = { fontFamily: displayNameFont };
     const obj = { fontFamily: displayNameFont };
   }
-  const obj2 = { variant: "text-md/medium", color: "mobile-text-heading-primary", lineClamp: 1, maxFontSizeMultiplier: 2, style: items, children };
+  const obj2 = { variant: "body-md/medium", color: "mobile-text-heading-primary", lineClamp: 1, maxFontSizeMultiplier: 2, style: items, children };
   items[1] = tmp5;
   const merged1 = Object.assign(merged);
   return tmp3(Text, obj2);
@@ -163,7 +163,7 @@ export function HappeningNowCardSubtitle(variant) {
   const Text = Text_Text.Text;
   const tmp2 = authStore5;
   if (str == null) {
-    str = "text-sm/normal";
+    str = "body-sm/normal";
   }
   const obj = { variant: str, color: "text-subtle", lineClamp: 1, maxFontSizeMultiplier: 2, children };
   const merged1 = Object.assign(merged);

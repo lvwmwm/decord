@@ -1,23 +1,23 @@
-// Module ID: 9610
-// Function ID: 9611
+// Module ID: 9698
+// Function ID: 9699
 // Name: GameDetectionReportModal
-// Dependencies: [32, 19, 17, 21, 5014, 575, 1497, 9340, 9141, 9611, 9144, 6744, 1113, 7558, 7054, 6998, 5624, 7058, 7061, 7082, 5634, 7253, 7169, 2]
+// Dependencies: [32, 19, 17, 21, 5140, 575, 1499, 9421, 9221, 9699, 9224, 6799, 1113, 7630, 7120, 7064, 5751, 7124, 7127, 7148, 5758, 7316, 7231, 2]
 // Exports: default
 
-// Module 9610 (GameDetectionReportModal)
+// Module 9698 (GameDetectionReportModal)
 import nativeDefault from "native" /* 575 */;
 import intl10 from "intl" /* 1113 */;
-import NavigatorHeader from "NavigatorHeader" /* 6998 */;
-import Navigator from "Navigator" /* 7169 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9340 */;
+import NavigatorHeader from "NavigatorHeader" /* 7064 */;
+import Navigator from "Navigator" /* 7231 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9421 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
-let navigation;
+let navigation, results;
 
 let c9;
 let hasOwnProperty;
@@ -80,7 +80,7 @@ function ReportContent(applicationId) {
   let obj2 = applicationId(first[8]);
   let obj3 = { surface: applicationId(first[9]).GameSearchSurface.DETECTION_REPORT, filterGroup: applicationId(first[10]).GameSearchFilterGroup.DEFAULT };
   const debouncedGameAutocomplete = obj2.useDebouncedGameAutocomplete(str, obj3);
-  const results = debouncedGameAutocomplete.results;
+  results = debouncedGameAutocomplete.results;
   onSelect = debouncedGameAutocomplete.onSelect;
   const callback = str.useCallback(() => {
     const obj = navigation(first[11]);
@@ -175,7 +175,7 @@ function ReportContent(applicationId) {
   const tmp18 = closure_5;
   if ("issue_selection" === first) {
     let obj5 = { style: tmp.content, children: items3 };
-    const obj6 = { variant: "text-sm/normal", color: "text-muted", children: intl4.string(tmp2(first[12]).t.IQHicr) };
+    const obj6 = { variant: "body-sm/normal", color: "text-muted", children: intl4.string(tmp2(first[12]).t.IQHicr) };
     const Text2 = tmp2(tmp3[16]).Text;
     intl4 = tmp2(tmp3[12]).intl;
     items3 = [tmp17(Text2, obj6), ];
@@ -208,7 +208,7 @@ function ReportContent(applicationId) {
     tmp19Result = str2(first1, obj5);
   } else if ("game_search" === first) {
     const obj10 = { style: tmp.content, children: items5 };
-    const obj11 = { variant: "text-sm/normal", color: "text-muted", children: intl.string(tmp2(first[12]).t["79o/iq"]) };
+    const obj11 = { variant: "body-sm/normal", color: "text-muted", children: intl.string(tmp2(first[12]).t["79o/iq"]) };
     const Text = tmp2(tmp3[16]).Text;
     intl = tmp2(tmp3[12]).intl;
     items5 = [tmp17(Text, obj11), , ];
@@ -268,7 +268,7 @@ function ReportContent(applicationId) {
   } else if ("other_feedback" === first) {
     const obj17 = { children: items8 };
     const obj18 = { style: tmp.content, children: items7 };
-    const obj19 = { variant: "text-sm/normal", color: "text-muted", children: intl7.string(tmp2(first[12]).t.IblYEw) };
+    const obj19 = { variant: "body-sm/normal", color: "text-muted", children: intl7.string(tmp2(first[12]).t.IblYEw) };
     const Text3 = tmp2(tmp3[16]).Text;
     intl7 = tmp2(tmp3[12]).intl;
     items7 = [tmp17(Text3, obj19), ];

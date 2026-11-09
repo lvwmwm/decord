@@ -1,15 +1,15 @@
-// Module ID: 13677
-// Function ID: 13678
+// Module ID: 13906
+// Function ID: 13907
 // Name: CheckpointPressable
-// Dependencies: [17, 6066, 21, 575, 5014, 2]
+// Dependencies: [17, 6199, 21, 575, 5140, 2]
 // Exports: default
 
-// Module 13677 (CheckpointPressable)
+// Module 13906 (CheckpointPressable)
 import nativeDefault from "native" /* 575 */;
 import react_native from "react-native" /* 17 */;
-import CheckpointConstants from "CheckpointConstants" /* 6066 */;
+import CheckpointConstants from "CheckpointConstants" /* 6199 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let CHECKPOINT_CONTROL_SIZE;
@@ -27,8 +27,8 @@ let obj6;
 ({ jsx: c3, jsxs: closure_4 } = Fragment);
 const PX_4 = nativeDefault.space.PX_4;
 let obj = { sm: obj2, lg: obj3 };
-obj2 = { height: 32, gap: nativeDefault.space.PX_4, textVariant: "text-md/bold" };
-obj3 = { height: CHECKPOINT_CONTROL_SIZE, gap: nativeDefault.space.PX_8, textVariant: "text-lg/medium" };
+obj2 = { height: 32, gap: nativeDefault.space.PX_4, textVariant: "body-md/semibold" };
+obj3 = { height: CHECKPOINT_CONTROL_SIZE, gap: nativeDefault.space.PX_8, textVariant: "body-lg/medium" };
 let obj4 = { container: { paddingRight: PX_4, paddingBottom: PX_4 }, shadow: { position: "absolute", top: PX_4, left: PX_4, right: 0, bottom: 0 }, pressable: { flexDirection: "row", alignItems: "center", justifyContent: "center", paddingHorizontal: nativeDefault.space.PX_12 }, sm: { height: obj.sm.height, gap: obj.sm.gap }, lg: { height: obj.lg.height, gap: obj.lg.gap }, pressed: obj6 };
 obj6 = { transform: items };
 items = [{ translateX: PX_4 }, { translateY: PX_4 }];

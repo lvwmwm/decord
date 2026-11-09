@@ -1,17 +1,17 @@
-// Module ID: 1400
-// Function ID: 1401
+// Module ID: 1393
+// Function ID: 1394
 // Name: DisplayNameStylesUtils
-// Dependencies: [32, 1401, 558, 1404, 1402, 671, 1090, 2]
+// Dependencies: [32, 1394, 558, 1397, 1396, 671, 1090, 2]
 // Exports: areDisplayNameStylesEqual, buildGummyColors, createColorPaletteList, doesEffectImpactLayout, generateColorVariants, generateRandomDisplayNameStyles, getEffectColorCount, hasNonLatinLetters, hueToGummyColor, isSolidPresetColor, normalizeDisplayNameStylesForApply, parseServerDisplayNameStyles, rebuildGummySourceColor, toEditorDisplayNameStyles, wrapHue
 
-// Module 1400 (DisplayNameStylesUtils)
+// Module 1393 (DisplayNameStylesUtils)
 import shallowEqual from "shallowEqual" /* 558 */;
 import _modDef671 from "module_671" /* 671 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1090 */;
-import DisplayNameEffect from "DisplayNameEffect" /* 1402 */;
-import ColorPaletteUtils from "ColorPaletteUtils" /* 1404 */;
+import DisplayNameEffect from "DisplayNameEffect" /* 1396 */;
+import ColorPaletteUtils from "ColorPaletteUtils" /* 1397 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1401 */;
+import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1394 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -179,10 +179,10 @@ export function parseServerDisplayNameStyles(display_name_styles) {
   }
   return tmp;
 }
-export function generateRandomDisplayNameStyles(visibleFontOrder, visibleEffectOrder) {
+export function generateRandomDisplayNameStyles(visibleFontOrder, EFFECT_ORDER) {
   let items;
   let arr = visibleFontOrder;
-  const tmp = visibleEffectOrder[Math.floor(Math, Math.random(Math) * visibleEffectOrder.length)];
+  const tmp = EFFECT_ORDER[Math.floor(Math, Math.random(Math) * EFFECT_ORDER.length)];
   const found = visibleFontOrder.filter((item) => !closure_1_7.includes(item));
   if (found.length > 0) {
     arr = found;

@@ -1,16 +1,16 @@
-// Module ID: 19136
-// Function ID: 19137
+// Module ID: 19512
+// Function ID: 19513
 // Name: InviteActivityButton
-// Dependencies: [19, 11525, 6570, 21, 5258, 19137, 1994, 504, 11688, 5634, 10978, 1113, 2]
+// Dependencies: [19, 11670, 6625, 21, 5374, 19513, 2118, 504, 11849, 5758, 11108, 1113, 2]
 
-// Module 19136 (InviteActivityButton)
+// Module 19512 (InviteActivityButton)
 import Fragment from "Fragment" /* 21 */;
-import asyncRequire from "asyncRequire" /* 1994 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import getCurrentUserPresenceActivityDefault from "getCurrentUserPresenceActivity" /* 11688 */;
+import asyncRequire from "asyncRequire" /* 2118 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
+import getCurrentUserPresenceActivityDefault from "getCurrentUserPresenceActivity" /* 11849 */;
 import react from "react" /* 19 */;
-import LocalActivityStore from "LocalActivityStore" /* 11525 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 6570 */;
+import LocalActivityStore from "LocalActivityStore" /* 11670 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 6625 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
@@ -24,16 +24,16 @@ const memoResult = react.memo(function InviteActivityButton(applicationId) {
   const stateFromStores = obj.useStateFromStores(items, () => getCurrentUserPresenceActivityDefault(LocalActivityStore, SelfPresenceStore, applicationId), items1);
   let tmp4 = null;
   if (null != stateFromStores) {
-    const Button = tmp(5634).Button;
+    const Button = tmp(5758).Button;
     const intl = tmp(1113).intl;
     const intl2 = tmp(1113).intl;
     tmp4 = <Button onPress={function onPress() {
       const openLazy = ActionSheetActionCreatorsDefault.openLazy;
       ActionSheetActionCreatorsDefault;
       const obj = { activity: stateFromStores };
-      const tmp2 = asyncRequire(19137, dependencyMap.paths);
+      const tmp2 = asyncRequire(19513, dependencyMap.paths);
       openLazy(tmp2, "ActivityInviteSheet-" + stateFromStores.session_id, obj);
-    }} icon={stateFromStores(10978)} text={intl.string(tmp(1113).t["OzOM/q"])} accessibilityLabel={intl2.string(tmp(1113).t["OzOM/q"])} variant="secondary-overlay" size="sm" shrink maxFontSizeMultiplier={1} />;
+    }} icon={stateFromStores(11108)} text={intl.string(tmp(1113).t["OzOM/q"])} accessibilityLabel={intl2.string(tmp(1113).t["OzOM/q"])} variant="secondary-overlay" size="sm" shrink maxFontSizeMultiplier={1} />;
   }
   return tmp4;
 });

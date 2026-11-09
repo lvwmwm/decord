@@ -1,28 +1,26 @@
-// Module ID: 15442
-// Function ID: 15443
+// Module ID: 15735
+// Function ID: 15736
 // Name: OutboundPromotionCard
-// Dependencies: [32, 19, 17, 1072, 21, 5014, 575, 6778, 5272, 7321, 1113, 5624, 5754, 5253, 9667, 15443, 5959, 15444, 1994, 9668, 5717, 5634, 5258, 2]
+// Dependencies: [32, 19, 17, 1072, 21, 5140, 575, 6833, 5388, 7382, 1113, 5751, 5879, 5369, 9758, 15736, 6091, 15737, 2118, 9759, 5842, 5758, 5374, 2]
 // Exports: default
 
-// Module 15442 (OutboundPromotionCard)
+// Module 15735 (OutboundPromotionCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl4 from "intl" /* 1113 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5272 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import MarkupUtilsDefault from "MarkupUtils" /* 5754 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5959 */;
-import LegacyTokens from "LegacyTokens" /* 6778 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7321 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5388 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import MarkupUtilsDefault from "MarkupUtils" /* 5879 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6091 */;
+import LegacyTokens from "LegacyTokens" /* 6833 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7382 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
-
-let BottomSheet;
 
 let metroImportDefault;
 let metroRequire;
@@ -38,11 +36,11 @@ function TermsAndConditionsActionSheet(termsAndConditions) {
   termsAndConditions = termsAndConditions.termsAndConditions;
   const obj = { header: metroRequire(BottomSheetTitleHeader, obj2), children: metroRequire(Text, obj3) };
   const tmp = closure_8();
-  BottomSheet = Sheet_BottomSheet.BottomSheet;
+  const BottomSheet = Sheet_BottomSheet.BottomSheet;
   obj2 = { title: intl.string(intl4.t.PdKWVT) };
   BottomSheetTitleHeader = BottomSheetTitleHeader2.BottomSheetTitleHeader;
   intl = intl4.intl;
-  obj3 = { style: tmp.termsAndConditionsText, variant: "text-sm/medium", children: obj4.parse(termsAndConditions, false, { allowLinks: true }) };
+  obj3 = { style: tmp.termsAndConditionsText, variant: "body-sm/medium", children: obj4.parse(termsAndConditions, false, { allowLinks: true }) };
   Text = Text_Text.Text;
   obj4 = MarkupUtilsDefault;
   return metroRequire(BottomSheet, obj);
@@ -144,9 +142,9 @@ export default function OutboundPromotionCard(outboundPromotion) {
   const obj8 = { style: tmp.textContainer, children: closure_7(View, obj9) };
   obj9 = { children: items2 };
   items2 = [, ];
-  const obj10 = { style: tmp.title, accessibilityRole: "header", variant: "text-md/semibold", color: "mobile-text-heading-primary", children: outboundPromotion.outboundTitle };
+  const obj10 = { style: tmp.title, accessibilityRole: "header", variant: "body-md/semibold", color: "mobile-text-heading-primary", children: outboundPromotion.outboundTitle };
   items2[0] = closure_6(outboundPromotion(first[11]).Text, obj10);
-  const obj11 = { style: tmp.subText, variant: "text-sm/medium", color: "text-default", children: formatToPlainStringResult };
+  const obj11 = { style: tmp.subText, variant: "body-sm/medium", color: "text-default", children: formatToPlainStringResult };
   items2[1] = closure_6(outboundPromotion(first[11]).Text, obj11);
   items1[1] = closure_6(View, obj8);
   const obj12 = { style: tmp.buttonContainer, children: closure_6(View, obj13) };
@@ -162,7 +160,7 @@ export default function OutboundPromotionCard(outboundPromotion) {
   items1[2] = closure_6(View, obj12);
   items3 = [closure_7(View, obj5), ];
   const obj15 = { children: closure_6(Text, obj16) };
-  obj16 = { style: tmp.moreDetails, variant: "text-sm/medium", children: intl3.format(outboundPromotion(first[10]).t.sCm3Zb, obj17) };
+  obj16 = { style: tmp.moreDetails, variant: "body-sm/medium", children: intl3.format(outboundPromotion(first[10]).t.sCm3Zb, obj17) };
   Text = tmp5(tmp3[11]).Text;
   intl3 = tmp5(tmp3[10]).intl;
   obj17 = {

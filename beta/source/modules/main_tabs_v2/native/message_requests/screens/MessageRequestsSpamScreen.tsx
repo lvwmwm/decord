@@ -1,12 +1,12 @@
-// Module ID: 18977
-// Function ID: 18978
+// Module ID: 19352
+// Function ID: 19353
 // Name: MessageRequestsSpamScreen
-// Dependencies: [19, 21, 18975, 2]
+// Dependencies: [19, 21, 19350, 2]
 // Exports: default
 
-// Module 18977 (MessageRequestsSpamScreen)
+// Module 19352 (MessageRequestsSpamScreen)
 import Fragment from "Fragment" /* 21 */;
-import SpamMessageListDefault from "SpamMessageList" /* 18975 */;
+import SpamMessageListDefault from "SpamMessageList" /* 19350 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

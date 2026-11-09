@@ -1,22 +1,22 @@
-// Module ID: 16804
-// Function ID: 16805
+// Module ID: 17127
+// Function ID: 17128
 // Name: FamilyCenterActivityGiftRow
-// Dependencies: [19, 17, 21, 5014, 575, 8744, 16792, 16801, 16803, 5068, 16802, 5624, 2]
+// Dependencies: [19, 17, 21, 5140, 575, 8815, 17115, 17124, 17126, 5194, 17125, 5751, 2]
 // Exports: default
 
-// Module 16804 (FamilyCenterActivityGiftRow)
+// Module 17127 (FamilyCenterActivityGiftRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import UserUtilsDefault from "UserUtils" /* 5068 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import useCollectiblesDataDefault from "useCollectiblesData" /* 8744 */;
-import useSelectedTeenUser from "useSelectedTeenUser" /* 16792 */;
-import FamilyCenterActivityPurchaseRowUtils from "FamilyCenterActivityPurchaseRowUtils" /* 16801 */;
-import FamilyCenterActivityItemPreviewDefault from "FamilyCenterActivityItemPreview" /* 16802 */;
-import FamilyCenterActivityGiftRowUtils from "FamilyCenterActivityGiftRowUtils" /* 16803 */;
+import UserUtilsDefault from "UserUtils" /* 5194 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import useCollectiblesDataDefault from "useCollectiblesData" /* 8815 */;
+import useSelectedTeenUser from "useSelectedTeenUser" /* 17115 */;
+import FamilyCenterActivityPurchaseRowUtils from "FamilyCenterActivityPurchaseRowUtils" /* 17124 */;
+import FamilyCenterActivityItemPreviewDefault from "FamilyCenterActivityItemPreview" /* 17125 */;
+import FamilyCenterActivityGiftRowUtils from "FamilyCenterActivityGiftRowUtils" /* 17126 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -83,9 +83,9 @@ export default function FamilyCenterActivityGiftRow(arg0) {
     }
     items = [React3(tmp2Result2, obj4), ];
     const obj5 = { style: tmp.textContainer, children: items1 };
-    const obj6 = { variant: "text-md/semibold", color: "interactive-text-active", ellipsizeMode: "tail", lineClamp: 1, children: displayName };
+    const obj6 = { variant: "body-md/semibold", color: "interactive-text-active", ellipsizeMode: "tail", lineClamp: 1, children: displayName };
     items1 = [React3(Text_Text.Text, obj6), ];
-    const obj7 = { variant: "text-xs/medium", color: "text-muted", children: giftSubtext };
+    const obj7 = { variant: "body-xs/medium", color: "text-muted", children: giftSubtext };
     items1[1] = React3(Text_Text.Text, obj7);
     items[1] = hasOwnProperty(View, obj5);
     return hasOwnProperty(View, obj3);

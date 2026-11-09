@@ -1,11 +1,11 @@
-// Module ID: 9866
-// Function ID: 9867
+// Module ID: 9986
+// Function ID: 9987
 // Name: useSelectedConversation
-// Dependencies: [9850, 504, 2]
+// Dependencies: [9970, 504, 2]
 // Exports: default
 
-// Module 9866 (useSelectedConversation)
-import SelectedConversationStore from "SelectedConversationStore" /* 9850 */;
+// Module 9986 (useSelectedConversation)
+import SelectedConversationStore from "SelectedConversationStore" /* 9970 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

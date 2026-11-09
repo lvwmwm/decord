@@ -1,21 +1,21 @@
-// Module ID: 16978
-// Function ID: 16979
+// Module ID: 17301
+// Function ID: 17302
 // Name: BountiesNuxPromoSheet
-// Dependencies: [19, 17, 21, 5014, 575, 5258, 16977, 10837, 1113, 16979, 5634, 2]
+// Dependencies: [19, 17, 21, 5140, 575, 5374, 17300, 10956, 1113, 17302, 5758, 2]
 // Exports: default
 
-// Module 16978 (BountiesNuxPromoSheet)
+// Module 17301 (BountiesNuxPromoSheet)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import intl4 from "intl" /* 1113 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import components_Button_Button from "components/Button/Button" /* 5634 */;
-import PromoSheet2 from "PromoSheet" /* 10837 */;
-import openBountiesNuxPromoSheet from "openBountiesNuxPromoSheet" /* 16977 */;
-import BountiesPosterSpotIllustration from "BountiesPosterSpotIllustration" /* 16979 */;
+import intl5 from "intl" /* 1113 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
+import components_Button_Button from "components/Button/Button" /* 5758 */;
+import PromoSheet2 from "PromoSheet" /* 10956 */;
+import openBountiesNuxPromoSheet from "openBountiesNuxPromoSheet" /* 17300 */;
+import BountiesPosterSpotIllustration from "BountiesPosterSpotIllustration" /* 17302 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -28,17 +28,22 @@ const result = size.fileFinishedImporting("modules/quests/native/BountiesNuxProm
 
 export default function BountiesNuxPromoSheet() {
   let intl3;
+  let intl4;
   const tmp = closure_6();
   const callback = react.useCallback(() => {
     const obj = ActionSheetActionCreatorsDefault;
     obj.hideActionSheet(openBountiesNuxPromoSheet.PROMO_SHEET_KEY);
   }, []);
   const PromoSheet = PromoSheet2.PromoSheet;
-  const intl = intl4.intl;
-  const intl2 = intl4.intl;
+  const intl = intl5.intl;
+  const intl2 = intl5.intl;
+  const format = intl2.format;
+  const obj2 = { productNamePlural: intl3.string(intl5.t["JDvNF+"]) };
+  const uLPcSI = intl5.t.uLPcSI;
+  intl3 = intl5.intl;
   ({ style: tmp.illustrationContainer, children: jsx(BountiesPosterSpotIllustration.BountiesPosterSpotIllustration, { width: 273, height: 205 }) });
-  ({ grow: true, size: "lg", variant: "primary", text: intl3.string(intl4.t.cpT0Cq), onPress: callback });
+  ({ grow: true, size: "lg", variant: "primary", text: intl4.string(intl5.t.cpT0Cq), onPress: callback });
   const Button = components_Button_Button.Button;
-  intl3 = intl4.intl;
-  return <PromoSheet gradientColor="purple" title={intl.string(intl4.t.DDpHZG)} description={intl2.string(intl4.t.aC3Dwj)} illustration={null} actions={null} />;
+  intl4 = intl5.intl;
+  return <PromoSheet gradientColor="purple" title={intl.string(intl5.t.DDpHZG)} description={format(uLPcSI, obj2)} illustration={null} actions={null} />;
 };

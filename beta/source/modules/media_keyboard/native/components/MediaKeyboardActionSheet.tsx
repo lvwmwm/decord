@@ -1,23 +1,21 @@
-// Module ID: 10532
-// Function ID: 10533
+// Module ID: 10651
+// Function ID: 10652
 // Name: MediaKeyboardActionSheet
-// Dependencies: [19, 1621, 1072, 21, 5095, 1113, 10533, 10535, 10537, 5260, 5261, 1252, 5593, 10539, 8659, 5272, 1622, 10540, 2]
+// Dependencies: [19, 1623, 1072, 21, 1652, 1113, 10652, 10654, 10656, 5376, 5377, 1252, 5721, 10658, 8730, 5388, 1624, 10659, 2]
 // Exports: default
 
-// Module 10532 (MediaKeyboardActionSheet)
+// Module 10651 (MediaKeyboardActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import intl3 from "intl" /* 1113 */;
-import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1621 */;
-import ImageIcon from "ImageIcon" /* 8659 */;
-import PollsIcon from "PollsIcon" /* 10533 */;
-import AttachmentIcon from "AttachmentIcon" /* 10535 */;
-import MediaKeyboardBottomSheetHeaderSimpleDefault from "MediaKeyboardBottomSheetHeaderSimple" /* 10537 */;
-import MediaKeyboardBottomSheetActionsDefault from "MediaKeyboardBottomSheetActions" /* 10539 */;
+import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1623 */;
+import ImageIcon from "ImageIcon" /* 8730 */;
+import PollsIcon from "PollsIcon" /* 10652 */;
+import AttachmentIcon from "AttachmentIcon" /* 10654 */;
+import MediaKeyboardBottomSheetHeaderSimpleDefault from "MediaKeyboardBottomSheetHeaderSimple" /* 10656 */;
+import MediaKeyboardBottomSheetActionsDefault from "MediaKeyboardBottomSheetActions" /* 10658 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
-
-let BottomSheet;
 
 let closure_4 = MediaKeyboardConstants.MediaPickerActionSheetEngagedActions;
 const AnalyticEvents = Constants.AnalyticEvents;
@@ -97,7 +95,7 @@ export default function MediaKeyboardActionSheet(onAttachPress) {
     }} uploadDisabled={false} overflowButtons={items} />;
   }, items3);
   let obj2 = { handleComponent: callback, scrollable: true, startExpanded: obj3.isMetaQuest(), onExpand: callback1, onDismiss: callback2, animatedIndex: sharedValue, footer: memo1, children: callback2(onViewAll(onClose[17]), { channel, draftType, onPressCamera, onAttachPress, onPressItem, onLongPressItem, onViewAll, onManageLimited, includedUploadIds, extensions, allowCamera, uploadLimit, disableWhenReachedLimit }) };
-  BottomSheet = onAttachPress(onClose[15]).BottomSheet;
+  const BottomSheet = onAttachPress(onClose[15]).BottomSheet;
   obj3 = onAttachPress(onClose[16]);
   return callback2(BottomSheet, obj2);
 };

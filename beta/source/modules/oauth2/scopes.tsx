@@ -1,12 +1,12 @@
-// Module ID: 9743
-// Function ID: 9744
+// Module ID: 9833
+// Function ID: 9834
 // Name: scopes
-// Dependencies: [1113, 8910, 2]
+// Dependencies: [1113, 8984, 2]
 // Exports: getScopeNames, getSecurityMessage, isSocialLayerUmbrellaScope
 
-// Module 9743 (scopes)
+// Module 9833 (scopes)
 import intl66 from "intl" /* 1113 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 8910 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 8984 */;
 import size from "module_2" /* 2 */;
 
 let items = [

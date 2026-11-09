@@ -7,7 +7,7 @@
 // Module 64 (sizesDiffer)
 let size;
 
-let closure_0 = { width: "marginTop", height: "cix" };
+let closure_0 = { width: "Array", height: "flexDirection" };
 
 export default function sizesDiffer(arg0, arg1) {
   size = arg0 || closure_0;

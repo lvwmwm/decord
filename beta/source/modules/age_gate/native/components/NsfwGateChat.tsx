@@ -1,19 +1,19 @@
-// Module ID: 11216
-// Function ID: 11217
+// Module ID: 11356
+// Function ID: 11357
 // Name: NsfwGateChat
-// Dependencies: [19, 17, 21, 5014, 575, 5717, 11217, 5624, 1113, 2]
+// Dependencies: [19, 17, 21, 5140, 575, 5842, 11357, 5751, 1113, 2]
 // Exports: default
 
-// Module 11216 (NsfwGateChat)
+// Module 11356 (NsfwGateChat)
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import FastImageDefault from "FastImage" /* 5717 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11217 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import FastImageDefault from "FastImage" /* 5842 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11357 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let StyleSheet;
@@ -46,7 +46,7 @@ export default function NsfwGateChat() {
   const obj4 = { source: AssetRegistryDefault };
   const tmp2 = FastImageDefault;
   items1 = [React3(tmp2, obj4), ];
-  const obj5 = { style: tmp.description, variant: "text-md/medium", color: "text-muted", children: intl.string(intl2.t.W4Qyxr) };
+  const obj5 = { style: tmp.description, variant: "body-md/medium", color: "text-muted", children: intl.string(intl2.t.W4Qyxr) };
   const Text = Text_Text.Text;
   intl = intl2.intl;
   items1[1] = React3(Text, obj5);

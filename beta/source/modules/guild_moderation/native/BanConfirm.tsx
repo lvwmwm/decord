@@ -1,20 +1,20 @@
-// Module ID: 13281
-// Function ID: 13282
+// Module ID: 13514
+// Function ID: 13515
 // Name: BanConfirm
-// Dependencies: [32, 19, 17, 4885, 1383, 21, 1113, 1089, 5014, 575, 5607, 11405, 504, 6902, 5717, 13282, 5624, 5068, 7058, 7061, 7253, 5634, 2]
+// Dependencies: [32, 19, 17, 5011, 1385, 21, 1113, 1089, 5140, 575, 5735, 11546, 504, 6957, 5842, 13515, 5751, 5194, 7124, 7127, 7316, 5758, 2]
 
-// Module 13281 (BanConfirm)
+// Module 13514 (BanConfirm)
 import nativeDefault from "native" /* 575 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import intl7 from "intl" /* 1113 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6902 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6957 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildStore from "GuildStore" /* 4885 */;
-import UserStore from "UserStore" /* 1383 */;
+import GuildStore from "GuildStore" /* 5011 */;
+import UserStore from "UserStore" /* 1385 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -127,7 +127,7 @@ const memoResult = react.memo(function BanConfirm(arg0) {
   let tmp4Result5;
   let tmp4Result6;
   let v8jV9fx;
-  const f104243 = () => ({ banning: false, banError: false });
+  const f105985 = () => ({ banning: false, banError: false });
   ({ guildId: require, userId: importDefault, onBan } = arg0);
   let stateFromStores1;
   c7 = undefined;
@@ -146,10 +146,10 @@ const memoResult = react.memo(function BanConfirm(arg0) {
   stateFromStores1 = obj3.useStateFromStores(items2, () => UserStore.getUser(importDefault));
   ref = stateFromStores1.useRef(0);
   const ref2 = stateFromStores1.useRef("");
-  [tmp11, c7] = stateFromStores(stateFromStores1.useState(f104243), 2);
+  [tmp11, c7] = stateFromStores(stateFromStores1.useState(f105985), 2);
   const items3 = [stateFromStores, stateFromStores1, onBan];
   let tmp14Result2 = null;
-  const tmp10 = stateFromStores(stateFromStores1.useState(f104243), 2);
+  const tmp10 = stateFromStores(stateFromStores1.useState(f105985), 2);
   if (null != stateFromStores1) {
     tmp14Result2 = null;
     if (null != stateFromStores) {
@@ -159,7 +159,7 @@ const memoResult = react.memo(function BanConfirm(arg0) {
       const obj7 = { style: tmp.iconStyles, source: require("AssetRegistry"), resizeMode: "contain" };
       const tmp4Result = require("FastImage");
       items4 = [closure_9(tmp4Result, obj7), , ];
-      const obj8 = { style: tmp.redText, variant: "text-md/semibold", children: format(Qd6w7T, obj9) };
+      const obj8 = { style: tmp.redText, variant: "body-md/semibold", children: format(Qd6w7T, obj9) };
       const Text = tmp7(tmp5[16]).Text;
       const intl = tmp7(tmp5[6]).intl;
       format = intl.format;
@@ -167,10 +167,10 @@ const memoResult = react.memo(function BanConfirm(arg0) {
       Qd6w7T = tmp7(tmp5[6]).t.Qd6w7T;
       tmp4Result4 = require("UserUtils");
       items4[1] = closure_9(Text, obj8);
-      const obj10 = { variant: "text-lg/bold", color: "text-feedback-warning", children: stateFromStores.name };
+      const obj10 = { variant: "body-lg/semibold", color: "text-feedback-warning", children: stateFromStores.name };
       items4[2] = closure_9(require("Text/Text").Text, obj10);
       const items5 = [closure_10(ref, obj6), , , , , ];
-      const obj11 = { style: tmp.blurb, variant: "heading-md/normal", color: "text-feedback-warning", children: format2(v8jV9fx, obj12) };
+      const obj11 = { style: tmp.blurb, variant: "heading-sm/medium", color: "text-feedback-warning", children: format2(v8jV9fx, obj12) };
       const Text2 = tmp7(tmp5[16]).Text;
       const intl2 = tmp7(tmp5[6]).intl;
       format2 = intl2.format;
@@ -218,7 +218,7 @@ const memoResult = react.memo(function BanConfirm(arg0) {
       tmp16 = closure_10;
       tmp17 = closure_11;
       if (tmp11.banError) {
-        const obj19 = { style: tmp.errorText, variant: "text-md/semibold", color: "input-text-error-default", children: format3(prop, obj20) };
+        const obj19 = { style: tmp.errorText, variant: "body-md/semibold", color: "input-text-error-default", children: format3(prop, obj20) };
         const Text3 = tmp7(tmp5[16]).Text;
         const intl6 = tmp7(tmp5[6]).intl;
         format3 = intl6.format;

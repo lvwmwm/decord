@@ -1,12 +1,12 @@
-// Module ID: 10852
-// Function ID: 10853
+// Module ID: 10971
+// Function ID: 10972
 // Name: conjureChatTurns
-// Dependencies: [10853, 10854, 2]
-// Exports: findTurnSegment, hasOpenTurn, isOutsideTurn, isSegmentOfTurn, isStrandedSegment, replaceAt, resolveTurnIndex, stoppable, turnIdOfSegment, turnSettled
+// Dependencies: [10972, 10973, 2]
+// Exports: findTurnSegment, hasOpenTurn, hasShownMessages, isCopyMarker, isOutsideTurn, isSegmentOfTurn, isStrandedSegment, replaceAt, resolveTurnIndex, stoppable, turnIdOfSegment, turnSettled
 
-// Module 10852 (conjureChatTurns)
-import conjureStepTimeline from "conjureStepTimeline" /* 10853 */;
-import conjureChatHistory from "conjureChatHistory" /* 10854 */;
+// Module 10971 (conjureChatTurns)
+import conjureStepTimeline from "conjureStepTimeline" /* 10972 */;
+import conjureChatHistory from "conjureChatHistory" /* 10973 */;
 import size from "module_2" /* 2 */;
 
 function findOpenTurn(messages) {
@@ -137,7 +137,7 @@ export function turnIdOfSegment(message) {
     const tmp = require;
     if (id.startsWith(conjureChatHistory.TURN_ENTRY_PREFIX)) {
       const id1 = message.id;
-      turn_id = id1.slice(tmp(10854).TURN_ENTRY_PREFIX.length);
+      turn_id = id1.slice(tmp(10973).TURN_ENTRY_PREFIX.length);
     }
   }
   return turn_id;
@@ -244,4 +244,36 @@ export function stoppable(role) {
     tmp = true !== role.stopRequested;
   }
   return tmp;
+}
+export function isCopyMarker(role) {
+  let tmp = "user" === role.role && "" === role.content;
+  if (tmp) {
+    const attachments = role.attachments;
+    let num;
+    if (attachments != null) {
+      num = attachments.length;
+    }
+    if (num == null) {
+      num = 0;
+    }
+    tmp = 0 === num;
+  }
+  return tmp;
+}
+export function hasShownMessages(arr) {
+  return arr.some((role) => {
+    let tmp = "user" === role.role && "" === role.content;
+    if (tmp) {
+      const attachments = role.attachments;
+      let num;
+      if (attachments != null) {
+        num = attachments.length;
+      }
+      if (num == null) {
+        num = 0;
+      }
+      tmp = 0 === num;
+    }
+    return !tmp;
+  });
 }

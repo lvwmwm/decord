@@ -1,17 +1,17 @@
-// Module ID: 18026
-// Function ID: 18027
+// Module ID: 18366
+// Function ID: 18367
 // Name: AgeGateUnderage
-// Dependencies: [19, 17, 1072, 21, 5014, 575, 7111, 1497, 6998, 7004, 1113, 7142, 7145, 7974, 7141, 5624, 2061, 5634, 2]
+// Dependencies: [19, 17, 1072, 21, 5140, 575, 7182, 1499, 7064, 7070, 1113, 7010, 7209, 8044, 7208, 5751, 2185, 5758, 2]
 // Exports: default
 
-// Module 18026 (AgeGateUnderage)
+// Module 18366 (AgeGateUnderage)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import NavigatorHeader from "NavigatorHeader" /* 6998 */;
+import NavigatorHeader from "NavigatorHeader" /* 7064 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let navigation;
@@ -96,7 +96,7 @@ export default function AgeGateUnderage(onClose) {
   items1 = [tmp12, closure_6(tmp(tmp2[12]), {}), closure_6(onClose(tmp2[13]).ShieldSpotIllustration, {}), , , ];
   const obj4 = { style: tmp4.header, children: stringResult };
   items1[3] = closure_6(existingUser(flag2[14]), obj4);
-  const obj5 = { style: tmp4.body, variant: "text-md/medium", color: "interactive-text-default", children: stringResult1 };
+  const obj5 = { style: tmp4.body, variant: "body-md/medium", color: "interactive-text-default", children: stringResult1 };
   const Text = tmp5(tmp2[15]).Text;
   const intl2 = tmp5(tmp2[10]).intl;
   if (flag) {
@@ -116,7 +116,7 @@ export default function AgeGateUnderage(onClose) {
   let tmp10Result = null;
   if (existingUser) {
     const obj7 = { children: items2 };
-    const obj8 = { style: tmp4.body, variant: "text-md/medium", color: "interactive-text-default", children: intl4.format(onClose(flag2[10]).t.fjqIZp, { days: 30 }) };
+    const obj8 = { style: tmp4.body, variant: "body-md/medium", color: "interactive-text-default", children: intl4.format(onClose(flag2[10]).t.fjqIZp, { days: 30 }) };
     const Text2 = tmp5(tmp2[15]).Text;
     intl4 = tmp5(tmp2[10]).intl;
     items2 = [closure_6(Text2, obj8), ];

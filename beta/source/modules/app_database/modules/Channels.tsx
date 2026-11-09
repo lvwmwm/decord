@@ -1,13 +1,13 @@
-// Module ID: 7789
-// Function ID: 7790
+// Module ID: 7865
+// Function ID: 7866
 // Name: Channels
-// Dependencies: [4867, 502, 4863, 4892, 2]
+// Dependencies: [4993, 502, 4989, 5018, 2]
 
-// Module 7789 (Channels)
-import ChannelRecord from "ChannelRecord" /* 4867 */;
-import DatabaseDaosDefault from "DatabaseDaos" /* 4892 */;
+// Module 7865 (Channels)
+import ChannelRecord from "ChannelRecord" /* 4993 */;
+import DatabaseDaosDefault from "DatabaseDaos" /* 5018 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
+import ChannelStore from "ChannelStore" /* 4989 */;
 import size from "module_2" /* 2 */;
 
 let closure_2 = ChannelRecord.createChannelRecordFromServer;

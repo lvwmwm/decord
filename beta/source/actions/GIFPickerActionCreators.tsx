@@ -1,23 +1,23 @@
-// Module ID: 10244
-// Function ID: 10245
+// Module ID: 10363
+// Function ID: 10364
 // Name: GIFPickerActionCreators
-// Dependencies: [2062, 10243, 1072, 1082, 5760, 10245, 10246, 1282, 572, 12, 1266, 1377, 9831, 4844, 1232, 5958, 1113, 1252, 2]
+// Dependencies: [2186, 10362, 1072, 1082, 5889, 10364, 10365, 1282, 572, 12, 1266, 1378, 9951, 4970, 1232, 6090, 1113, 1252, 2]
 // Exports: addFavoriteGIF, fetchSuggestions, fetchTrending, fetchTrendingGIFs, fetchTrendingSearchTerms, gifUrlKey, initializeSearch, removeFavoriteGIF, resetSearch, search, trackSearchResultViewed, trackSearchStart, trackSelectGIF
 
-// Module 10244 (GIFPickerActionCreators)
+// Module 10363 (GIFPickerActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import intl3 from "intl" /* 1113 */;
 import frecency_user_settings from "frecency_user_settings" /* 1232 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import v1 from "v1" /* 1266 */;
-import URLUtilsDefault from "URLUtils" /* 1377 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5760 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5958 */;
-import AttachmentUrlUtilsAll from "AttachmentUrlUtils" /* 9831 */;
-import GifProvider from "GifProvider" /* 10245 */;
-import GIFPickerUtils from "GIFPickerUtils" /* 10246 */;
-import LocaleStore from "LocaleStore" /* 2062 */;
-import GIFPickerViewStore from "GIFPickerViewStore" /* 10243 */;
+import URLUtilsDefault from "URLUtils" /* 1378 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5889 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 6090 */;
+import AttachmentUrlUtilsAll from "AttachmentUrlUtils" /* 9951 */;
+import GifProvider from "GifProvider" /* 10364 */;
+import GIFPickerUtils from "GIFPickerUtils" /* 10365 */;
+import LocaleStore from "LocaleStore" /* 2186 */;
+import GIFPickerViewStore from "GIFPickerViewStore" /* 10362 */;
 import Constants from "Constants" /* 1072 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1082 */;
 import module_12 from "module_12" /* 12 */;
@@ -190,7 +190,6 @@ export function trackSelectGIF(arg0) {
   let obj3;
   let offset;
   let query;
-  let results;
   let totalResults;
   let type;
   ({ query, gifId } = arg0);
@@ -299,7 +298,7 @@ export function gifUrlKey(uri) {
     const obj2 = AttachmentUrlUtilsAll;
     const tmp5 = importAll;
     if (obj2.isAttachmentPathUrl(toURLSafeResult)) {
-      const tmp5Result = tmp5(9831);
+      const tmp5Result = tmp5(9951);
       const str = tmp5Result.removeSignedUrlParameters(toURLSafeResult);
       str1 = str.toString();
     }
@@ -334,7 +333,7 @@ export function addFavoriteGIF(size) {
             let result = obj6.isExternalProxiedAttachmentUrl(toURLSafeResult);
             const tmp11 = importAll;
             if (!result) {
-              const tmp11Result = tmp11(9831);
+              const tmp11Result = tmp11(9951);
               result = tmp11Result.isAttachmentPathUrl(toURLSafeResult);
             }
             tmp10 = result;
@@ -388,7 +387,7 @@ export function addFavoriteGIF(size) {
             const obj11 = AttachmentUrlUtilsAll;
             const tmp25 = importAll;
             if (obj11.isAttachmentPathUrl(toURLSafeResult1)) {
-              const tmp25Result = tmp25(9831);
+              const tmp25Result = tmp25(9951);
               const str9 = tmp25Result.removeSignedUrlParameters(toURLSafeResult1);
               url = str9.toString();
             }
@@ -428,7 +427,7 @@ export function addFavoriteGIF(size) {
       let result3 = obj3.isExternalProxiedAttachmentUrl(toURLSafeResult2);
       const tmp7 = importAll;
       if (!result3) {
-        const tmp7Result = tmp7(9831);
+        const tmp7Result = tmp7(9951);
         result3 = tmp7Result.isAttachmentPathUrl(toURLSafeResult2);
       }
       tmp6 = result3;
@@ -453,7 +452,7 @@ export function removeFavoriteGIF(uri) {
         const obj2 = AttachmentUrlUtilsAll;
         const tmp7 = importAll;
         if (obj2.isAttachmentPathUrl(toURLSafeResult)) {
-          const tmp7Result = tmp7(9831);
+          const tmp7Result = tmp7(9951);
           const str = tmp7Result.removeSignedUrlParameters(toURLSafeResult);
           str1 = str.toString();
         }

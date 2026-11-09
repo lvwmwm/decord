@@ -1,10 +1,10 @@
-// Module ID: 11092
-// Function ID: 11093
+// Module ID: 11224
+// Function ID: 11225
 // Name: uploadRtcLogFiles
-// Dependencies: [5, 1072, 3, 8778, 6446, 1282, 2]
+// Dependencies: [5, 1072, 3, 8849, 6579, 1282, 2]
 // Exports: uploadRtcLogFiles
 
-// Module 11092 (uploadRtcLogFiles)
+// Module 11224 (uploadRtcLogFiles)
 import LoggerDefault from "Logger" /* 3 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Constants from "Constants" /* 1072 */;
@@ -28,7 +28,7 @@ let obj = function _uploadRtcLogFiles() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       while (true) {
@@ -124,7 +124,7 @@ let obj = function _uploadRtcLogFiles() {
         }
         if (closure_1 === undefined) {
           c8 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } else {
           c1 = tmp51;
           body = "";

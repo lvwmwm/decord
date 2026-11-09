@@ -1,25 +1,26 @@
-// Module ID: 13450
-// Function ID: 13451
+// Module ID: 13670
+// Function ID: 13671
 // Name: CheckpointActionCreators
-// Dependencies: [5, 4863, 13436, 1072, 572, 1282, 13451, 6437, 7485, 1252, 7824, 7636, 13384, 1379, 2]
-// Exports: completeCheckpoint, fetchCheckpointData, resetCheckpoint, resetEditedCharacter, selectCharacterTrait, sendCheckpointCard, sendSidekickMessage, toggleMute
+// Dependencies: [5, 4989, 13668, 1072, 572, 13666, 1282, 13671, 6569, 7549, 7900, 7712, 13616, 1380, 2]
+// Exports: completeCheckpoint, fetchCheckpointData, resetCheckpoint, saveCheckpointProgress, selectCharacterTrait, sendCheckpointCard, sendSidekickMessage, setVolume, toggleMute
 
-// Module 13450 (CheckpointActionCreators)
+// Module 13670 (CheckpointActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import HTTPUtils from "HTTPUtils" /* 1282 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7485 */;
-import formatResults from "formatResults" /* 13384 */;
-import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
-import CheckpointStore from "CheckpointStore" /* 13436 */;
 import Constants from "Constants" /* 1072 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7549 */;
+import formatResults from "formatResults" /* 13616 */;
+import Tracking from "Tracking" /* 13666 */;
+import CheckpointStore2 from "CheckpointStore" /* 13668 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import ChannelStore from "ChannelStore" /* 4989 */;
 import size from "module_2" /* 2 */;
 
-let c1, c10, c9;
+const CheckpointStore = CheckpointStore2;
+let c1, c10, c5, c9;
 
-let metroImportDefault;
-let metroRequire;
 let obj = function _fetchCheckpointData() {
+  let constants2;
   obj = _asyncToGenerator(async (arg0, value) => {
     let obj3;
     let obj5;
@@ -35,7 +36,7 @@ let obj = function _fetchCheckpointData() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -55,59 +56,70 @@ let obj = function _fetchCheckpointData() {
             let closure_1 = tmp4;
             body = undefined;
             CheckpointStore.initializeIfNeeded();
-            const obj12 = DispatcherDefault;
-            obj12.dispatch({ type: "CHECKPOINT_FETCH_START" });
-            c3 = 1;
-            const HTTP = HTTPUtils.HTTP;
-            const obj7 = { url: constants.CHECKPOINT, rejectWithError: true };
-            c4 = 2;
-            c5 = 1;
-            const obj9 = { value: HTTP.get(obj7), done: false };
-            return obj9;
+            if (CheckpointStore.isFetching) {
+              c5 = 3;
+              const obj7 = { value: constants.FETCHING, done: true };
+              return obj7;
+            } else {
+              const obj11 = DispatcherDefault;
+              obj11.dispatch({ type: "CHECKPOINT_FETCH_START" });
+              c3 = 1;
+              const HTTP = HTTPUtils.HTTP;
+              const obj8 = { url: constants2.CHECKPOINT, rejectWithError: true };
+              c4 = 2;
+              c5 = 1;
+              const obj10 = { value: HTTP.get(obj8), done: false };
+              return obj10;
+            }
           }
         } else if (1 === c4) {
           c3 = 0;
-          const obj8 = closure_130_1(closure_130_2[4]);
-          obj8.dispatch({ type: "CHECKPOINT_FETCH_FAILED" });
+          const obj9 = closure_130_1(closure_130_2[4]);
+          obj9.dispatch({ type: "CHECKPOINT_FETCH_FAILED" });
           c5 = 3;
-          return { value: false, done: true };
+          const obj12 = { value: closure_130_6.ERROR, done: true };
+          return obj12;
         } else if (arg0 === 1) {
           c5 = 3;
           throw value;
         } else if (arg0 === 2) {
           c3 = 0;
           c5 = 3;
-          const obj10 = { value, done: true };
-          return obj10;
+          const obj13 = { value, done: true };
+          return obj13;
         } else {
+          let SUCCESS;
           body = value.body;
           if (null != closure_0) {
-            const obj11 = { type: "CHECKPOINT_FETCH_SUCCESS", stats: obj5.getMockCheckpointStats(closure_0), globalStats: obj6.globalStatsFromServer(body.global_stats), character: null };
+            const obj14 = { type: "CHECKPOINT_FETCH_SUCCESS", stats: obj5.getMockCheckpointStats(closure_0), globalStats: obj6.globalStatsFromServer(body.global_stats), character: null };
             const dispatch = closure_130_1(closure_130_2[4]).dispatch;
-            const tmp22 = closure_130_1(closure_130_2[4]);
-            obj5 = closure_130_0(closure_130_2[6]);
-            obj6 = closure_130_0(closure_130_2[7]);
-            dispatch(obj11);
+            const tmp23 = closure_130_1(closure_130_2[4]);
+            obj5 = closure_130_0(closure_130_2[7]);
+            obj6 = closure_130_0(closure_130_2[8]);
+            dispatch(obj14);
+            SUCCESS = closure_130_6.SUCCESS;
           } else {
             let statsFromServerResult = null;
             const dispatch2 = closure_130_1(closure_130_2[4]).dispatch;
-            const tmp46 = closure_130_1(closure_130_2[4]);
+            const tmp56 = closure_130_1(closure_130_2[4]);
             if (null != body.stats) {
-              obj = closure_130_0(closure_130_2[7]);
+              obj = closure_130_0(closure_130_2[8]);
               statsFromServerResult = obj.statsFromServer(body.stats);
             }
-            const obj13 = { type: "CHECKPOINT_FETCH_SUCCESS", stats: statsFromServerResult, globalStats: obj3.globalStatsFromServer(body.global_stats), character: body.character };
-            obj3 = closure_130_0(closure_130_2[7]);
-            dispatch2(obj13);
+            const obj15 = { type: "CHECKPOINT_FETCH_SUCCESS", stats: statsFromServerResult, globalStats: obj3.globalStatsFromServer(body.global_stats), character: body.character };
+            obj3 = closure_130_0(closure_130_2[8]);
+            dispatch2(obj15);
+            SUCCESS = closure_130_6.SUCCESS;
           }
           c3 = 0;
           c5 = 3;
-          return { value: true, done: true };
+          const obj16 = { value: SUCCESS, done: true };
+          return obj16;
         }
-      } catch (tmp34) {
+      } catch (tmp44) {
         if (0 === c3) {
           c5 = 3;
-          throw tmp34;
+          throw tmp44;
         } else {
           c4 = 1;
         }
@@ -129,7 +141,7 @@ obj = function _completeCheckpoint() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -141,25 +153,25 @@ obj = function _completeCheckpoint() {
             throw value;
           } else if (arg0 === 2) {
             c5 = 3;
-            const obj3 = { value, done: true };
-            return obj3;
+            const obj4 = { value, done: true };
+            return obj4;
           } else {
             let closure_2 = tmp;
             let closure_1 = tmp4;
-            const obj8 = DispatcherDefault;
-            obj8.dispatch({ type: "CHECKPOINT_COMPLETE_START" });
+            const obj9 = DispatcherDefault;
+            obj9.dispatch({ type: "CHECKPOINT_COMPLETE_START" });
             c3 = 1;
             const HTTP = HTTPUtils.HTTP;
             const request = { url: constants.CHECKPOINT_COMPLETE, body: character, rejectWithError: true };
             c4 = 2;
             c5 = 1;
-            const obj5 = { value: HTTP.post(request), done: false };
-            return obj5;
+            const obj6 = { value: HTTP.post(request), done: false };
+            return obj6;
           }
         } else if (1 === c4) {
           c3 = 0;
-          const obj4 = closure_130_1(closure_130_2[4]);
-          obj4.dispatch({ type: "CHECKPOINT_COMPLETE_FAILED" });
+          const obj5 = closure_130_1(closure_130_2[4]);
+          obj5.dispatch({ type: "CHECKPOINT_COMPLETE_FAILED" });
           c5 = 3;
           return { value: false, done: true };
         } else if (arg0 === 1) {
@@ -168,20 +180,22 @@ obj = function _completeCheckpoint() {
         } else if (arg0 === 2) {
           c3 = 0;
           c5 = 3;
-          const obj6 = { value, done: true };
-          return obj6;
+          const obj7 = { value, done: true };
+          return obj7;
         } else {
-          const obj7 = { type: "CHECKPOINT_COMPLETE_SUCCESS", character };
+          const obj8 = { type: "CHECKPOINT_COMPLETE_SUCCESS", character };
           obj = closure_130_1(closure_130_2[4]);
-          obj.dispatch(obj7);
+          obj.dispatch(obj8);
+          const obj3 = closure_130_0(closure_130_2[5]);
+          const result = obj3.trackCheckpoint2026Completed();
           c3 = 0;
           c5 = 3;
           return { value: true, done: true };
         }
-      } catch (tmp15) {
+      } catch (tmp18) {
         if (0 === c3) {
           c5 = 3;
-          throw tmp15;
+          throw tmp18;
         } else {
           c4 = 1;
         }
@@ -202,7 +216,7 @@ obj = function _resetCheckpoint() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c2;
@@ -262,50 +276,55 @@ obj = function _resetCheckpoint() {
   return obj(...arguments);
 };
 obj = function _sendSidekickMessage() {
-  obj = _asyncToGenerator(async (arg0, other_user_id) => {
+  obj = _asyncToGenerator(async function(arg0, value) {
+    let obj6;
     let closure_0 = arg0;
-    let c4 = 0;
-    let c5 = 0;
-    return (async function(arg0, value) {
-      let obj3;
-      if (c5 === 2) {
-        c5 = 3;
-        throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp3 === 3) {
-        if (arg0 === 1) {
-          throw value;
-        } else if (arg0 === 2) {
-          return { value, done: true };
-        } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
-        }
+    let closure_1 = value;
+    if (c5 === 2) {
+      c5 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp3 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj2 = { value, done: true };
+        return obj2;
       } else {
-        try {
-          let closure_4;
-          c5 = 2;
-          if (0 === c4) {
-            if (arg0 === 1) {
-              c5 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c5 = 3;
-              return { value, done: true };
-            } else {
-              closure_2 = undefined;
-              id = undefined;
-              closure_4 = undefined;
-              c4 = 1;
-              c5 = 1;
-              const obj5 = { value: obj3.getOrEnsurePrivateChannel(other_user_id), done: false };
-              obj3 = ChannelActionCreatorsDefault;
-              return obj5;
-            }
-          } else if (arg0 === 1) {
+        return { value: "HermesInternal", done: null };
+      }
+    } else {
+      try {
+        let closure_2;
+        let id;
+        let closure_4;
+        c5 = 2;
+        if (0 === c4) {
+          if (arg0 === 1) {
             c5 = 3;
             throw value;
           } else if (arg0 === 2) {
             c5 = 3;
-            return { value, done: true };
+            const obj3 = { value, done: true };
+            return obj3;
+          } else {
+            closure_2 = undefined;
+            id = undefined;
+            closure_4 = undefined;
+            value = undefined;
+            c4 = 1;
+            c5 = 1;
+            const obj4 = { value: obj6.getOrEnsurePrivateChannel(closure_1), done: false };
+            obj6 = ChannelActionCreatorsDefault;
+            return obj4;
+          }
+        } else if (1 === c4) {
+          if (arg0 === 1) {
+            c5 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c5 = 3;
+            const obj5 = { value, done: true };
+            return obj5;
           } else {
             closure_2 = value;
             id = closure_131_4.getChannel(closure_2);
@@ -316,23 +335,34 @@ obj = function _sendSidekickMessage() {
               const error = new Error("Failed to open private channel");
               throw error;
             } else {
-              const obj8 = { other_user_id };
-              const obj7 = closure_131_1(closure_131_2[9]);
-              obj7.track(closure_131_6.CHECKPOINT_SIDEKICK_MESSAGE_SENT, obj8);
-              const obj9 = closure_131_1(closure_131_2[10]);
-              closure_4 = obj9.parse(id, closure_0);
-              c5 = 3;
-              const obj10 = closure_131_1(closure_131_2[11]);
-              obj = { value: obj10.sendMessage(id.id, closure_4, false, { location: "checkpoint-sidekick" }), done: true };
-              return obj;
+              const obj10 = closure_131_1(closure_131_2[10]);
+              closure_4 = obj10.parse(id, closure_0);
+              const obj11 = closure_131_1(closure_131_2[11]);
+              c4 = 2;
+              c5 = 1;
+              const obj7 = { value: obj11.sendMessage(id.id, closure_4, false, { location: "checkpoint-sidekick" }), done: false };
+              return obj7;
             }
           }
-        } catch (tmp12) {
+        } else if (arg0 === 1) {
           c5 = 3;
-          throw tmp12;
+          throw value;
+        } else if (arg0 === 2) {
+          c5 = 3;
+          const obj8 = { value, done: true };
+          return obj8;
+        } else {
+          obj = closure_131_0(closure_131_2[5]);
+          const result = obj.trackCheckpoint2026SidekickMessageSent(closure_1);
+          c5 = 3;
+          const obj9 = { value, done: true };
+          return obj9;
         }
+      } catch (tmp18) {
+        c5 = 3;
+        throw tmp18;
       }
-    })();
+    }
   });
   return obj(...arguments);
 };
@@ -353,7 +383,7 @@ obj = function _sendCheckpointCard() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       while (true) {
@@ -435,33 +465,42 @@ obj = function _sendCheckpointCard() {
               }
             }
             c10 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           c8 = 0;
           closure_3.return();
-          throw closure_1_7;
+          throw Endpoints;
         }
       }
     }
   });
   return obj(...arguments);
 };
-({ AnalyticEvents: metroRequire, Endpoints: metroImportDefault } = Constants);
-const result = size.fileFinishedImporting("modules/checkpoint/CheckpointActionCreators.tsx");
+const CheckpointFetchStates = CheckpointStore2.CheckpointFetchStates;
+const Endpoints = Constants.Endpoints;
+let result = size.fileFinishedImporting("modules/checkpoint/CheckpointActionCreators.tsx");
 
 export function toggleMute() {
   obj = DispatcherDefault;
-  return obj.dispatch({ type: "CHECKPOINT_TOGGLE_MUTE" });
+  obj.dispatch({ type: "CHECKPOINT_TOGGLE_MUTE" });
+  const obj2 = Tracking;
+  const result = obj2.trackCheckpoint2026MuteToggled(CheckpointStore.isMuted);
+}
+export function setVolume(volume) {
+  obj = DispatcherDefault;
+  const obj2 = { type: "CHECKPOINT_SET_VOLUME", volume };
+  return obj.dispatch(obj2);
 }
 export function selectCharacterTrait(trait, optionId) {
   obj = DispatcherDefault;
   const obj2 = { type: "CHECKPOINT_SELECT_CHARACTER_TRAIT", trait, optionId };
   return obj.dispatch(obj2);
 }
-export function resetEditedCharacter() {
+export function saveCheckpointProgress(characterStage) {
   obj = DispatcherDefault;
-  return obj.dispatch({ type: "CHECKPOINT_RESET_EDITED_CHARACTER" });
+  const obj2 = { type: "CHECKPOINT_SAVE_PROGRESS", stage: characterStage };
+  return obj.dispatch(obj2);
 }
 export function fetchCheckpointData() {
   return obj(...arguments);

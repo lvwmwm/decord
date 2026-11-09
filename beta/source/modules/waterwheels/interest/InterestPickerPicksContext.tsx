@@ -1,35 +1,32 @@
-// Module ID: 19562
-// Function ID: 19563
+// Module ID: 19964
+// Function ID: 19965
 // Name: InterestPickerPicksContext
-// Dependencies: [19, 21, 38, 2]
+// Dependencies: [19, 8999, 21, 18763, 38, 2]
 // Exports: default, useInterestPickerPicks
 
-// Module 19562 (InterestPickerPicksContext)
+// Module 19964 (InterestPickerPicksContext)
 import Fragment from "Fragment" /* 21 */;
 import _modDef38 from "module_38" /* 38 */;
+import InterestPickerActionCreators from "InterestPickerActionCreators" /* 18763 */;
 import react from "react" /* 19 */;
+import InterestPickerSessionStore from "InterestPickerSessionStore" /* 8999 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 const redux = react.createContext(null);
+const value = {
+  getPicks() {
+    return InterestPickerSessionStore.getPicks();
+  },
+  setPicks(gameIds) {
+    const obj = InterestPickerActionCreators;
+    return obj.setInterestPickerPicks(gameIds);
+  }
+};
 const result = size.fileFinishedImporting("modules/waterwheels/interest/InterestPickerPicksContext.tsx");
 
 export default function InterestPickerPicksProvider(children) {
-  children = children.children;
-  let closure_0 = react.useRef([]);
-  return <redux.Provider value={react.useMemo(() => {
-    let ref;
-    return {
-      getPicks() {
-        const items = [...closure_1_0.current];
-        return items;
-      },
-      setPicks(arg0) {
-        const items = [...arg0];
-        ref.current = items;
-      }
-    };
-  }, [])}>{children}</redux.Provider>;
+  return <redux.Provider value={value}>{arg0.children}</redux.Provider>;
 };
 export function useInterestPickerPicks() {
   const context = react.useContext(redux);

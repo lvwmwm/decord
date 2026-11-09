@@ -1,82 +1,127 @@
-// Module ID: 5646
-// Function ID: 5647
+// Module ID: 5770
+// Function ID: 5771
 // Name: ButtonShine
-// Dependencies: [32, 19, 21, 5641, 671, 5021, 5095, 5254, 5014, 2]
+// Dependencies: [32, 19, 21, 5765, 671, 5147, 1652, 5370, 5140, 2]
 // Exports: ButtonShine
 
-// Module 5646 (ButtonShine)
+// Module 5770 (ButtonShine)
 import Fragment from "Fragment" /* 21 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
-import timing from "timing" /* 5254 */;
+import _modDef671 from "module_671" /* 671 */;
+import _mod1652 from "module_1652" /* 1652 */;
+import shared from "shared" /* 5147 */;
+import timing_timing from "timing/timing" /* 5370 */;
+import ButtonHooks from "ButtonHooks" /* 5765 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
-const require = globalThis.__r;
-const ReanimatedRexportDefault = ReanimatedRexport;
-let _require;
+const _modDef1652 = _mod1652;
+let num, num2, obj1, obj6, obj7, obj8, str, tmp3, tmp4, tmp5;
 
-function useShineEffectStyles(width, variant) {
+let tmp;
+const createStyles = tmp(5140);
+function useShineEffectStyles(arg0, variant) {
   let animatedStyle;
-  let enabled;
-  let items;
-  let obj6;
-  let obj7;
-  _require = width;
-  let obj = require("ButtonHooks");
+  let items2;
+  let obj4;
+  let tmp10;
+  let tmp11;
+  let tmp12;
+  let tmp13;
+  let tmp14;
+  let tmp15;
+  let tmp16;
+  let tmp6;
+  let tmp7;
+  let tmp8;
+  let tmp9;
+  let tmpResult;
+  let obj = ButtonHooks;
   const buttonTextColorStyles = obj.useButtonTextColorStyles(variant);
-  let obj2 = enabled(671)(buttonTextColorStyles.color);
+  let obj2 = _modDef671(buttonTextColorStyles.color);
   const alphaResult = obj2.alpha(0.1);
   const hexResult = alphaResult.hex();
-  enabled = react.useContext(require("shared").AccessibilityPreferencesContext).reducedMotion.enabled;
-  let obj4 = require("ReanimatedRexport");
-  const fn = function o() {
-    let items;
-    let tmp8;
-    if (null == width) {
-      const obj3 = { transform: items };
-      items = [{ translateX: -120 }];
-      tmp8 = obj3;
-    } else {
-      const obj4 = { transform: null };
-      const obj5 = { translateX: null };
-      if (enabled) {
-        obj5.translateX = (width - 56) / 2;
-        const items1 = [obj5];
-        obj4.transform = items1;
-        tmp8 = obj4;
+  const enabled = react.useContext(shared.AccessibilityPreferencesContext).reducedMotion.enabled;
+  let items = [closure_6, arg0, 120, enabled, 56, , , , , , ];
+  const useAnimatedStyle = _mod1652.useAnimatedStyle;
+  items[5] = _mod1652.withRepeat;
+  items[6] = _mod1652.withSequence;
+  items[7] = timing_timing.withTiming;
+  items[8] = _mod1652.withDelay;
+  items[9] = 750;
+  items[10] = 2000;
+  let c0;
+  let c1;
+  let c2;
+  let c3;
+  let c4;
+  let c5;
+  let c6;
+  let c7;
+  let c8;
+  let c9;
+  [tmp6, tmp7, tmp8, tmp9, tmp10, tmp11, tmp12, tmp13, tmp14, tmp15, tmp16] = items;
+  class ButtonShineNativeTsx1 {
+    constructor() {
+      tmp = closure_0;
+      if (null == closure_0) {
+        obj1 = { transform: null };
+        obj6 = { translateX: null };
+        tmp12 = closure_1;
+        obj6.translateX = -closure_1;
+        items = [];
+        items[0] = obj6;
+        obj1.transform = items;
+        tmp10 = obj1;
       } else {
-        const withRepeat = ReanimatedRexport.withRepeat;
-        ReanimatedRexport;
-        const withSequence = ReanimatedRexport.withSequence;
-        ReanimatedRexport;
-        const obj = timing;
-        const withTimingResult = obj.withTiming(-120, { duration: 0 }, "animate-always");
-        const withDelay = ReanimatedRexport.withDelay;
-        ReanimatedRexport;
-        const obj2 = timing;
-        obj5.translateX = withRepeat(withSequence(withTimingResult, withDelay(750, obj2.withTiming(width + 120, { duration: 2000 }, "animate-always"))), -1);
-        const items2 = [obj5];
-        obj4.transform = items2;
-        tmp8 = obj4;
+        tmp13 = closure_2;
+        obj7 = { transform: null };
+        obj8 = { translateX: null };
+        if (closure_2) {
+          tmp11 = closure_3;
+          num2 = 2;
+          obj8.translateX = (tmp - closure_3) / 2;
+          items1 = [];
+          items1[0] = obj8;
+          obj7.transform = items1;
+          tmp10 = obj7;
+        } else {
+          tmp2 = closure_4;
+          tmp3 = closure_5;
+          tmp4 = closure_6;
+          tmp5 = closure_1;
+          str = "animate-always";
+          tmp7 = closure_7;
+          tmp8 = closure_8;
+          obj = { duration: null };
+          tmp9 = closure_9;
+          obj.duration = closure_9;
+          tmp6 = closure_6(-closure_1, { duration: 0 }, "animate-always");
+          num = -1;
+          obj8.translateX = closure_4(closure_5(tmp6, closure_7(closure_8, closure_6(tmp + closure_1, obj, "animate-always"))), -1);
+          items2 = [];
+          items2[0] = obj8;
+          obj7.transform = items2;
+          tmp10 = obj7;
+        }
       }
+      return tmp10;
     }
-    return tmp8;
-  };
-  let obj3 = { width, SHINE_OFFSCREEN_OFFSET: 120, useReducedMotion: enabled, SHINE_WIDTH: 56, withRepeat: require("ReanimatedRexport").withRepeat, withSequence: require("ReanimatedRexport").withSequence, withTiming: require("timing").withTiming, withDelay: require("ReanimatedRexport").withDelay, SHINE_INITIAL_ANIMATION_DELAY: 750, SHINE_ANIMATION_DURATION: 2000 };
-  fn.__closure = obj3;
-  fn.__workletHash = 15814138938406;
-  fn.__initData = __initData;
-  let obj5 = { shineStyles: obj7.createStyles(obj6)(), shineAnimatedStyle: animatedStyle };
-  animatedStyle = obj4.useAnimatedStyle(fn);
-  obj6 = { shineContainer: { width: "100%", height: "200%", position: "absolute", overflow: "hidden" }, shine: size, shineInner: { width: 16, height: "100%", backgroundColor: hexResult } };
-  size = { width: 56, height: "500%", transform: items, backgroundColor: hexResult, top: "-100%", alignItems: "center" };
-  items = [{ rotate: "30deg" }];
-  obj7 = require("createStyles");
-  return obj5;
+  }
+  let items1 = [tmp7, tmp8, tmp9, tmp10, tmp11, tmp12, tmp13, tmp14, tmp15, tmp16];
+  ButtonShineNativeTsx1.__closure = items1;
+  ButtonShineNativeTsx1.__workletHash = 2724629163487;
+  ButtonShineNativeTsx1.__initData = tmp6;
+  let obj3 = { shineStyles: tmpResult.createStyles(obj4)(), shineAnimatedStyle: animatedStyle };
+  animatedStyle = useAnimatedStyle(ButtonShineNativeTsx1);
+  obj4 = { shineContainer: { width: "100%", height: "200%", position: "absolute", overflow: "hidden" }, shine: size, shineInner: { width: 16, height: "100%", backgroundColor: hexResult } };
+  size = { width: 56, height: "500%", transform: items2, backgroundColor: hexResult, top: "-100%", alignItems: "center" };
+  items2 = [{ rotate: "30deg" }];
+  tmpResult = createStyles;
+  return obj3;
 }
 const jsx = Fragment.jsx;
-const __initData = { code: "function ButtonShineNativeTsx1(){const{width,SHINE_OFFSCREEN_OFFSET,useReducedMotion,SHINE_WIDTH,withRepeat,withSequence,withTiming,withDelay,SHINE_INITIAL_ANIMATION_DELAY,SHINE_ANIMATION_DURATION}=this.__closure;if(width==null){return{transform:[{translateX:-SHINE_OFFSCREEN_OFFSET}]};}if(useReducedMotion){const centerOffset=(width-SHINE_WIDTH)/2;return{transform:[{translateX:centerOffset}]};}return{transform:[{translateX:withRepeat(withSequence(withTiming(-SHINE_OFFSCREEN_OFFSET,{duration:0},'animate-always'),withDelay(SHINE_INITIAL_ANIMATION_DELAY,withTiming(width+SHINE_OFFSCREEN_OFFSET,{duration:SHINE_ANIMATION_DURATION},'animate-always'))),-1)}]};}" };
+let closure_6 = { code: "(function ButtonShineNativeTsx1(){let[width,SHINE_OFFSCREEN_OFFSET,useReducedMotion,SHINE_WIDTH,withRepeat,withSequence,withTiming,withDelay,SHINE_INITIAL_ANIMATION_DELAY,SHINE_ANIMATION_DURATION]=this.__closure;if(width==null){return{transform:[{translateX:-SHINE_OFFSCREEN_OFFSET}]};}if(useReducedMotion){const centerOffset=(width-SHINE_WIDTH)/2;return{transform:[{translateX:centerOffset}]};}return{transform:[{translateX:withRepeat(withSequence(withTiming(-SHINE_OFFSCREEN_OFFSET,{duration:0},'animate-always'),withDelay(SHINE_INITIAL_ANIMATION_DELAY,withTiming(width+SHINE_OFFSCREEN_OFFSET,{duration:SHINE_ANIMATION_DURATION},'animate-always'))),-1)}]};})" };
 let size = size_mod;
 const result = size.fileFinishedImporting("design/components/Button/native/ButtonShine.native.tsx");
 
@@ -88,8 +133,8 @@ export function ButtonShine(variant) {
   const tmp2 = useShineEffectStyles(tmp[0], variant);
   const shineStyles = tmp2.shineStyles;
   const items = [shineStyles.shineContainer, tmp2.shineAnimatedStyle];
-  const View = ReanimatedRexportDefault.View;
-  const View2 = ReanimatedRexportDefault.View;
+  const View = _modDef1652.View;
+  const View2 = _modDef1652.View;
   return <View onLayout={function onLayout(nativeEvent) {
     return closure_0(nativeEvent.nativeEvent.layout.width);
   }} style={items}>{null}</View>;

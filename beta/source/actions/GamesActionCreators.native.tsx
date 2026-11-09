@@ -1,13 +1,14 @@
-// Module ID: 11693
-// Function ID: 11694
+// Module ID: 11854
+// Function ID: 11855
 // Name: GamesActionCreators
-// Dependencies: [5, 1072, 11694, 11695, 1092, 7483, 5709, 572, 1282, 11696, 11697, 2]
+// Dependencies: [5, 1072, 11855, 11856, 1092, 7547, 5834, 572, 1282, 11857, 11859, 11860, 2]
 
-// Module 11693 (GamesActionCreators)
+// Module 11854 (GamesActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import LinkingDefault from "Linking" /* 5709 */;
-import Constants2 from "Constants" /* 11694 */;
-import getOrFetchApplicationDefault from "getOrFetchApplication" /* 11695 */;
+import LinkingDefault from "Linking" /* 5834 */;
+import Constants2 from "Constants" /* 11855 */;
+import getOrFetchApplicationDefault from "getOrFetchApplication" /* 11856 */;
+import fetchDetectableGamesDefault from "fetchDetectableGames" /* 11857 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
@@ -144,7 +145,7 @@ obj = {
     return reject(error);
   },
   getDetectableGames() {
-
+    return fetchDetectableGamesDefault();
   },
   deleteEntry() {
 
@@ -154,7 +155,7 @@ obj = {
     return (async () => {
       let c1;
       let value;
-      const obj3 = value(c2[9]);
+      const obj3 = value(c2[10]);
       value = await obj3.tryStartAsEmbeddedApp(closure_0);
       if (arg1 == null) {
         value = false;
@@ -181,7 +182,7 @@ obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -217,7 +218,7 @@ obj = {
               c4 = 1;
               c5 = 1;
               const obj4 = { value: obj7.tryJoinAsFrame(_false), done: false };
-              obj7 = _false(closure_2[9]);
+              obj7 = _false(closure_2[10]);
               return obj4;
             }
           } else {
@@ -239,7 +240,7 @@ obj = {
                   if (tmp40) {
                     const obj6 = { applicationId, activityChannelId, source, locationObject, analyticsLocations };
                     activityChannelId = channelId;
-                    const tmp18 = activityChannelId(closure_2[10]);
+                    const tmp18 = activityChannelId(closure_2[11]);
                     if (channelId == null) {
                       activityChannelId = undefined;
                     }

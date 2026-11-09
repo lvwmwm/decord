@@ -1,467 +1,304 @@
-// Module ID: 14945
-// Function ID: 14946
+// Module ID: 15206
+// Function ID: 15207
 // Name: UserProfileWidgetsBoard
-// Dependencies: [32, 19, 17, 8754, 21, 5014, 575, 9316, 9340, 8761, 14946, 5624, 14951, 14952, 2026, 14953, 12, 7773, 1113, 14955, 7777, 12258, 7778, 14962, 14966, 2]
+// Dependencies: [19, 17, 8825, 7851, 21, 5140, 575, 15207, 8832, 8098, 9659, 1113, 15211, 15218, 12, 12549, 6153, 12546, 15219, 5751, 7849, 15220, 15222, 15233, 15224, 15234, 7853, 12445, 7854, 15237, 15176, 2]
 // Exports: default
 
-// Module 14945 (UserProfileWidgetsBoard)
+// Module 15206 (UserProfileWidgetsBoard)
 import _modDef12 from "module_12" /* 12 */;
-import nativeDefault from "native" /* 575 */;
-import StringUtils from "StringUtils" /* 2026 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import UserProfileApplicationWidgetTypes from "UserProfileApplicationWidgetTypes" /* 7777 */;
-import Constants from "Constants" /* 8754 */;
-import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 9316 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9340 */;
-import UserProfileApplicationWidgetCardDefault from "UserProfileApplicationWidgetCard" /* 12258 */;
-import useGameNameAndCoverImageDefault from "useGameNameAndCoverImage" /* 14951 */;
-import GameCoverImageDefault from "GameCoverImage" /* 14952 */;
-import UserProfilePersonalWidgetCardDefault from "UserProfilePersonalWidgetCard" /* 14962 */;
-import _slicedToArray_mod from "_slicedToArray" /* 32 */;
-import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
+import nativeDefault from "native" /* 575 */;
+import react_native2 from "react-native" /* 6153 */;
+import UserProfileApplicationWidgetTypes from "UserProfileApplicationWidgetTypes" /* 7853 */;
+import Constants from "Constants" /* 8825 */;
+import UserProfileApplicationWidgetCardDefault from "UserProfileApplicationWidgetCard" /* 12445 */;
+import UserProfileGameWidgetConstants from "UserProfileGameWidgetConstants" /* 15207 */;
+import openUserProfileAddGameActionSheetDefault from "openUserProfileAddGameActionSheet" /* 15211 */;
+import UserProfileGameDetailsRowDefault from "UserProfileGameDetailsRow" /* 15222 */;
+import UserProfileWidgetGameCoverDefault from "UserProfileWidgetGameCover" /* 15224 */;
+import UserProfilePersonalWidgetCardDefault from "UserProfilePersonalWidgetCard" /* 15237 */;
+import react from "react" /* 19 */;
+import UserProfileWidgetConstants from "UserProfileWidgetConstants" /* 7851 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
-let meta;
+let map;
 
-let c10;
 let c9;
-let hasOwnProperty;
 let metroImportAll;
+let metroImportDefault;
 let metroRequire;
-let obj10;
-let obj11;
-let obj12;
 let obj2;
 let obj3;
 let obj4;
-let obj5;
-let obj6;
-let obj7;
-let obj8;
-let obj9;
 let tmp;
-const UserProfilePersonalWidget = tmp(7778);
+const UserProfilePersonalWidget = tmp(7854);
+function AddGameButton(ref) {
+  let PlusSmallIcon;
+  let intl;
+  let obj2;
+  ref = ref.ref;
+  const widgetType = ref.widgetType;
+  const disabled = ref.disabled;
+  let obj = {
+    ref,
+    size: "sm",
+    variant: "secondary",
+    icon: closure_8(PlusSmallIcon, obj2),
+    accessibilityLabel: intl.string(ref(1113).t.E3l3Zx),
+    disabled,
+    onPress() {
+      const obj = { widgetType, returnFocusRef: ref };
+      return openUserProfileAddGameActionSheetDefault(obj);
+    }
+  };
+  const IconButton = ref(8098).IconButton;
+  obj2 = { size: "sm", color: widgetType(575).colors.ICON_DEFAULT };
+  PlusSmallIcon = ref(9659).PlusSmallIcon;
+  intl = ref(1113).intl;
+  return closure_8(IconButton, obj);
+}
 function WidgetRenderer(arg0) {
   let cardStyle;
+  let isEditing;
   let tmp3Result;
   let userId;
   let widget;
-  ({ userId, widget, cardStyle } = arg0);
+  ({ userId, widget, cardStyle, isEditing } = arg0);
   if (widget instanceof UserProfileApplicationWidgetTypes.ApplicationWidget) {
-    const obj2 = { userId, widget, cardStyle };
+    const obj2 = { userId, widget, cardStyle, isEditing };
     tmp3Result = metroImportAll(UserProfileApplicationWidgetCardDefault, obj2);
   } else if (widget instanceof UserProfilePersonalWidget.UserProfilePersonalWidget) {
-    const obj3 = { userId, widget, cardStyle };
+    const obj3 = { userId, widget, cardStyle, isEditing };
     tmp3Result = tmp3(UserProfilePersonalWidgetCardDefault, obj3);
   } else {
-    const obj = { userId, widget, cardStyle };
+    const obj = { userId, widget, cardStyle, isEditing };
     tmp3Result = tmp3(memoResult, obj);
   }
   return tmp3Result;
 }
-let _slicedToArray = _slicedToArray_mod;
-let react = react_mod;
-({ Pressable: hasOwnProperty, View: metroRequire } = react_native);
+const View = react_native.View;
 const UserProfileSections = Constants.UserProfileSections;
-({ jsx: metroImportAll, jsxs: c9, Fragment: c10 } = Fragment);
-const hitSlop = { top: 8, bottom: 8, left: 8, right: 8 };
+({ widgetSupportsComment: metroRequire, widgetSupportsTags: metroImportDefault } = UserProfileWidgetConstants);
+({ jsx: metroImportAll, jsxs: c9 } = Fragment);
 let createStyles = createStyles_mod;
-let obj = { board: obj2, favoriteRow: obj3, favoriteDetails: obj4, list: obj5, listRow: obj6, listDetails: obj7, comment: obj8, commentText: { flex: 1 }, grid: obj9, tags: obj10, tag: obj11, viewMore: obj12 };
+let obj = { board: obj2, emptyState: obj3, singleGameEmptyState: obj4, singleGameEmptyStateText: { flex: 1 } };
 obj2 = { gap: nativeDefault.space.PX_16 };
 createStyles = createStyles.createStyles;
-obj3 = { flexDirection: "row", gap: nativeDefault.space.PX_12 };
-obj4 = { flex: 1, gap: nativeDefault.space.PX_8 };
-obj5 = { gap: nativeDefault.space.PX_16 };
-obj6 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_12 };
-obj7 = { flex: 1, gap: nativeDefault.space.PX_8 };
-obj8 = { flexDirection: "row", alignItems: "flex-start", gap: nativeDefault.space.PX_4 };
-obj9 = { flexDirection: "row", flexWrap: "wrap", gap: nativeDefault.space.PX_16 };
-obj10 = { flexDirection: "row", flexWrap: "wrap", gap: nativeDefault.space.PX_4 };
-obj11 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4, paddingHorizontal: nativeDefault.space.PX_8, paddingVertical: nativeDefault.space.PX_4, borderRadius: nativeDefault.radii.sm, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE };
-obj12 = { marginTop: nativeDefault.space.PX_12 };
-let closure_12 = createStyles(obj);
-let closure_13 = react.memo(function WidgetTags(tags) {
-  tags = tags.tags;
-  const tmp = closure_12();
-  let closure_0 = tmp;
-  if (tags == null) {
-    tags = [];
-  }
-  const flatMapResult = tags.flatMap((tag) => {
-    let items1;
-    const obj = closure_0(dependencyMap[10]);
-    const widgetGameTagMetadata = obj.getWidgetGameTagMetadata(tag);
-    if (null != widgetGameTagMetadata) {
-      const items = [{ tag, meta: widgetGameTagMetadata }];
-      items1 = items;
-      const obj2 = { tag, meta: widgetGameTagMetadata };
-    } else {
-      items1 = [];
-    }
-    return items1;
-  });
-  let tmp2 = null;
-  if (0 !== flatMapResult.length) {
-    let obj = {
-      style: tmp.tags,
-      children: flatMapResult.map((meta) => {
-          let items;
-          meta = meta.meta;
-          const tag = meta.tag;
-          const obj = { style: closure_0.tag, children: items };
-          items = [, ];
-          const obj2 = { size: "xs", color: nativeDefault.colors.TEXT_MUTED };
-          items[0] = metroImportAll(meta.icon, obj2);
-          const obj3 = { variant: "text-xs/medium", color: "text-muted", children: meta.getText() };
-          const Text = Text_Text.Text;
-          items[1] = metroImportAll(Text, obj3);
-          return React4(metroRequire, obj, tag);
-        })
-    };
-    tmp2 = closure_8(closure_6, obj);
-  }
-  return tmp2;
-});
-let closure_14 = react.memo(function FavoriteGameItem(game) {
-  let coverWidth;
-  let disableInteraction;
-  let items;
-  let items1;
-  let items2;
-  let obj4;
-  let tmp2Result;
-  let userId;
-  game = game.game;
-  let closure_0;
-  ({ userId, coverWidth, disableInteraction } = game);
-  let tmp = closure_12();
-  const tmp4 = useGameNameAndCoverImageDefault(game.gameId);
-  const gameName = tmp4.gameName;
-  const obj = { location: "UserProfileWidgetsBoard", applicationId: game.gameId, source: GameProfileAnalyticUtils.GameProfileSources.UserProfile, sourceUserId: userId, trackEntryPointImpression: true, stackingBehavior: "stack" };
-  let tmp5Result;
-  const tmp5 = useOpenGameProfileModalDefault;
-  if (!disableInteraction) {
-    tmp5Result = tmp5(obj);
-  }
-  closure_0 = tmp5Result;
-  const obj2 = { style: tmp.favoriteRow, children: items };
-  const obj3 = {
-    onPress() {
-      let tmp;
-      if (closure_0 != null) {
-        tmp = closure_0();
-      }
-      return tmp;
-    },
-    disabled: null == tmp5Result,
-    accessibilityRole: "button",
-    accessibilityLabel: gameName,
-    children: metroImportAll(tmp2Result, obj4)
-  };
-  obj4 = { width: coverWidth };
-  tmp2Result = GameCoverImageDefault;
-  const merged = Object.assign(tmp4);
-  items = [metroImportAll(hasOwnProperty, obj3), ];
-  const obj5 = { style: tmp.favoriteDetails, children: items1 };
-  items1 = [, , ];
-  const obj6 = {
-    onPress() {
-      let tmp;
-      if (closure_0 != null) {
-        tmp = closure_0();
-      }
-      return tmp;
-    },
-    disabled: null == tmp5Result,
-    accessibilityRole: "button",
-    accessibilityLabel: gameName,
-    children: metroImportAll(Text_Text.Text, { variant: "text-md/semibold", color: "text-default", lineClamp: 2, children: gameName })
-  };
-  items1[0] = metroImportAll(hasOwnProperty, obj6);
-  let trimmed;
-  const isNullOrEmpty = StringUtils.isNullOrEmpty;
-  StringUtils;
-  if (game.comment != null) {
-    trimmed = str.trim();
-  }
-  let tmp8Result = !isNullOrEmpty(trimmed);
-  isNullOrEmpty(trimmed);
-  if (tmp8Result) {
-    const obj7 = { style: tmp.comment, children: items2 };
-    const obj8 = { size: "xxs", color: nativeDefault.colors.TEXT_MUTED };
-    const QuoteIcon = tmp6(14953).QuoteIcon;
-    items2 = [metroImportAll(QuoteIcon, obj8), ];
-    const obj9 = { variant: "text-sm/normal", color: "text-muted", lineClamp: 3, style: tmp.commentText, children: game.comment };
-    items2[1] = metroImportAll(Text_Text.Text, obj9);
-    tmp8Result = tmp8(tmp9, obj7);
-  }
-  items1[1] = tmp8Result;
-  const obj10 = { tags: game.tags };
-  items1[2] = metroImportAll(closure_13, obj10);
-  items[1] = React4(metroRequire, obj5);
-  return React4(metroRequire, obj2);
-});
-let closure_15 = react.memo(function GameListRow(game) {
-  let coverWidth;
-  let disableInteraction;
-  let items;
-  let items1;
-  let obj4;
-  let tmp2Result;
-  let userId;
-  game = game.game;
-  let closure_0;
-  ({ userId, coverWidth, disableInteraction } = game);
-  let tmp = closure_12();
-  const tmp4 = useGameNameAndCoverImageDefault(game.gameId);
-  const gameName = tmp4.gameName;
-  const obj = { location: "UserProfileWidgetsBoard", applicationId: game.gameId, source: GameProfileAnalyticUtils.GameProfileSources.UserProfile, sourceUserId: userId, trackEntryPointImpression: true, stackingBehavior: "stack" };
-  let tmp5Result;
-  const tmp5 = useOpenGameProfileModalDefault;
-  if (!disableInteraction) {
-    tmp5Result = tmp5(obj);
-  }
-  closure_0 = tmp5Result;
-  const obj2 = { style: tmp.listRow, children: items };
-  const obj3 = {
-    onPress() {
-      let tmp;
-      if (closure_0 != null) {
-        tmp = closure_0();
-      }
-      return tmp;
-    },
-    disabled: null == tmp5Result,
-    accessibilityRole: "button",
-    accessibilityLabel: gameName,
-    children: metroImportAll(tmp2Result, obj4)
-  };
-  obj4 = { width: coverWidth };
-  tmp2Result = GameCoverImageDefault;
-  const merged = Object.assign(tmp4);
-  items = [metroImportAll(hasOwnProperty, obj3), ];
-  const obj5 = { style: tmp.listDetails, children: items1 };
-  items1 = [, ];
-  const obj6 = {
-    onPress() {
-      let tmp;
-      if (closure_0 != null) {
-        tmp = closure_0();
-      }
-      return tmp;
-    },
-    disabled: null == tmp5Result,
-    accessibilityRole: "button",
-    accessibilityLabel: gameName,
-    children: metroImportAll(Text_Text.Text, { variant: "text-md/medium", color: "text-default", lineClamp: 2, children: gameName })
-  };
-  items1[0] = metroImportAll(hasOwnProperty, obj6);
-  const obj7 = { tags: game.tags };
-  items1[1] = metroImportAll(closure_13, obj7);
-  items[1] = React4(metroRequire, obj5);
-  return React4(metroRequire, obj2);
-});
-let closure_16 = react.memo(function GameGridCover(game) {
-  let coverWidth;
-  let disableInteraction;
-  let obj3;
-  let tmpResult;
-  let userId;
-  game = game.game;
-  let closure_0;
-  ({ userId, coverWidth, disableInteraction } = game);
-  let tmp = importDefault;
-  const tmp3 = useGameNameAndCoverImageDefault(game.gameId);
-  const gameName = tmp3.gameName;
-  const obj = { location: "UserProfileWidgetsBoard", applicationId: game.gameId, source: GameProfileAnalyticUtils.GameProfileSources.UserProfile, sourceUserId: userId, trackEntryPointImpression: true, stackingBehavior: "stack" };
-  let tmp4Result;
-  const tmp4 = useOpenGameProfileModalDefault;
-  if (!disableInteraction) {
-    tmp4Result = tmp4(obj);
-  }
-  closure_0 = tmp4Result;
-  const obj2 = {
-    onPress() {
-      let tmp;
-      if (closure_0 != null) {
-        tmp = closure_0();
-      }
-      return tmp;
-    },
-    disabled: null == tmp4Result,
-    accessibilityRole: "button",
-    accessibilityLabel: gameName,
-    children: metroImportAll(tmpResult, obj3)
-  };
-  obj3 = { width: coverWidth };
-  tmpResult = GameCoverImageDefault;
-  const merged = Object.assign(tmp3);
-  return metroImportAll(hasOwnProperty, obj2);
-});
+obj3 = { paddingVertical: nativeDefault.space.PX_16, textAlign: "center" };
+obj4 = { flexDirection: "row", alignItems: "center", gap: UserProfileGameWidgetConstants.GAME_COVER_DETAILS_GAP, paddingVertical: nativeDefault.space.PX_8 };
+let closure_10 = createStyles(obj);
 const memoResult = react.memo(function WidgetSection(userId) {
-  let Text;
-  let Text2;
-  let _undefined;
-  let _undefined2;
-  let c3;
-  let c4;
+  let columns;
   let coverWidth;
-  let mapped;
-  let mapped1;
-  let obj10;
-  let obj13;
-  let obj6;
-  let tmp12Result;
-  let tmp3;
-  let tmp5;
+  let isMeasured;
+  let items4;
+  let onLayout;
+  let ref;
+  let tmp20;
+  let tmp5Result;
   userId = userId.userId;
   const widget = userId.widget;
   const disableInteraction = userId.disableInteraction;
-  _slicedToArray = undefined;
-  react = undefined;
+  let flag = userId.isEditing;
   const cardStyle = userId.cardStyle;
-  const tmp = closure_12();
-  [tmp3, c3] = react.useState(false);
-  _slicedToArray(react.useState(false), 2);
-  [tmp5, c4] = react.useState(0);
-  _slicedToArray(react.useState(0), 2);
-  const result = (tmp5 - 2 * widget(disableInteraction[6]).space.PX_16) / 3;
-  let c5 = result;
-  const items = [widget.games];
-  const memo = react.useMemo(() => {
+  if (flag === undefined) {
+    flag = false;
+  }
+  coverWidth = undefined;
+  let onRemoveGame;
+  let type2;
+  let tmp = onRemoveGame();
+  let tmp2 = widget;
+  let tmp3 = disableInteraction;
+  const tmp4 = widget(disableInteraction[13])();
+  ({ isMeasured, coverWidth } = tmp4);
+  let obj = flag;
+  let items = [widget.games];
+  ({ ref, onLayout, columns } = tmp4);
+  const memo = flag.useMemo(() => {
     const obj = _modDef12;
     return obj.uniqBy(widget.games, "gameId");
   }, items);
-  const type = widget.type;
-  const tmp6 = widget;
-  if (userId(disableInteraction[17]).WidgetType.FAVORITE_GAMES === type) {
-    let tmp30 = tmp5 > 0;
-    if (tmp30) {
-      const obj2 = { userId, game: memo[0], coverWidth: result, disableInteraction };
-      tmp30 = closure_8(closure_14, obj2);
+  let tmp5 = userId;
+  const obj2 = userId(disableInteraction[15]);
+  const widgetMaxGamesResult = obj2.widgetMaxGames(widget.type);
+  let closure_6 = tmp7;
+  const ref1 = obj.useRef(null);
+  const useRef = obj.useRef;
+  map = new Map();
+  ref = useRef(map);
+  const items1 = [1 === widgetMaxGamesResult];
+  const registerCoverRef = obj.useCallback((arg0, current) => {
+    if (null != current) {
+      const current2 = ref.current;
+      const result = current2.set(arg0, current);
+    } else {
+      current = ref.current;
+      current.delete(arg0);
     }
-    tmp12Result = tmp30;
-  } else if (userId(disableInteraction[17]).WidgetType.CURRENT_GAMES === type) {
-    let tmp24Result = memo.length > 2;
-    let substr = memo;
-    if (!tmp3) {
-      substr = memo.slice(0, 2);
+    const tmp5 = closure_6;
+    if (tmp5) {
+      ref1.current = current;
     }
-    const obj3 = { style: tmp.list, children: mapped };
-    mapped = tmp5 > 0;
-    const tmp22 = closure_9;
-    const tmp23 = closure_10;
-    const tmp25 = closure_6;
-    if (mapped) {
-      mapped = substr.map((game) => {
-        const obj = { userId, game, coverWidth, disableInteraction };
-        return metroImportAll(closure_15, obj, game.gameId);
+  }, items1);
+  const items2 = [memo];
+  onRemoveGame = obj.useCallback((arg0) => {
+    let closure_0 = arg0;
+    const findIndexResult = memo.findIndex((gameId) => gameId.gameId === closure_0);
+    let tmp3 = memo[findIndexResult + 1];
+    let gameId;
+    const tmp = memo;
+    if (tmp3 != null) {
+      gameId = tmp3.gameId;
+    }
+    const items = [gameId, ];
+    let gameId1;
+    if (tmp[findIndexResult - 1] != null) {
+      gameId1 = tmp5.gameId;
+    }
+    items[1] = gameId1;
+    const timerId = setTimeout(() => {
+      let tmp3;
+      const mapped = items.map((item) => {
+        let value;
+        if (null != item) {
+          const current = ref.current;
+          value = current.get(item);
+        }
+        return value;
       });
-    }
-    const items1 = [closure_8(tmp25, obj3), ];
-    if (tmp24Result) {
-      let stringResult;
-      const obj4 = {
-        style: tmp.viewMore,
-        hitSlop,
-        onPress() {
-              return _undefined((arg0) => !arg0);
-            },
-        accessibilityRole: "button",
-        children: closure_8(Text2, obj6)
-      };
-      Text2 = tmp9(tmp7[11]).Text;
-      const intl2 = tmp9(tmp7[18]).intl;
-      const tmp27 = c5;
-      if (tmp3) {
-        stringResult = intl2.string(tmp9(tmp7[18]).t["6MwJo/"]);
+      const found = mapped.find((item) => null != item);
+      const setAccessibilityFocus = react_native2.setAccessibilityFocus;
+      if (null != found) {
+        tmp3 = { current: found };
+        const obj = { current: found };
       } else {
-        const obj5 = { numberOfItems: memo.length - 2 };
-        stringResult = intl2.formatToPlainString(tmp9(tmp7[18]).t.zr0Y5R, obj5);
+        tmp3 = ref1;
       }
-      obj6 = { variant: "text-sm/medium", color: "text-muted", children: stringResult };
-      tmp24Result = tmp24(tmp27, obj4);
+      const result = setAccessibilityFocus({ ref: tmp3 });
+    }, 100);
+  }, items2);
+  let type1;
+  if (flag) {
+    if (ref1(widget.type)) {
+      type1 = widget.type;
     }
-    const obj7 = { children: items1 };
-    items1[1] = tmp24Result;
-    tmp12Result = tmp22(tmp23, obj7);
-  } else {
-    if (userId(disableInteraction[17]).WidgetType.WANT_TO_PLAY_GAMES !== type) {
-      if (userId(disableInteraction[17]).WidgetType.PLAYED_GAMES !== type) {
-        return null;
-      }
-    }
-    let tmp14Result = memo.length > 6;
-    let substr1 = memo;
-    if (!tmp3) {
-      substr1 = memo.slice(0, 6);
-    }
-    let obj = { style: tmp.grid, children: mapped1 };
-    mapped1 = tmp5 > 0;
-    const tmp12 = closure_9;
-    const tmp13 = closure_10;
-    const tmp15 = closure_6;
-    if (mapped1) {
-      mapped1 = substr1.map((game) => {
-        const obj = { userId, game, coverWidth, disableInteraction };
-        return metroImportAll(closure_16, obj, game.gameId);
-      });
-    }
-    const items2 = [closure_8(tmp15, obj), ];
-    if (tmp14Result) {
-      let stringResult1;
-      const obj8 = {
-        style: tmp.viewMore,
-        hitSlop,
-        onPress() {
-              return _undefined((arg0) => !arg0);
-            },
-        accessibilityRole: "button",
-        children: closure_8(Text, obj10)
-      };
-      Text = tmp9(tmp7[11]).Text;
-      const intl = tmp9(tmp7[18]).intl;
-      const tmp17 = c5;
-      if (tmp3) {
-        stringResult1 = intl.string(tmp9(tmp7[18]).t["6MwJo/"]);
-      } else {
-        const obj9 = { numberOfItems: memo.length - 6 };
-        stringResult1 = intl.formatToPlainString(tmp9(tmp7[18]).t.zr0Y5R, obj9);
-      }
-      obj10 = { variant: "text-sm/medium", color: "text-muted", children: stringResult1 };
-      tmp14Result = tmp14(tmp17, obj8);
-    }
-    const obj11 = { children: items2 };
-    items2[1] = tmp14Result;
-    tmp12Result = tmp12(tmp13, obj11);
   }
-  const obj12 = { userId, widget, style: cardStyle, disableInteraction, children: closure_8(closure_6, obj13) };
-  obj13 = {
-    onLayout(nativeEvent) {
-      return _undefined2(nativeEvent.nativeEvent.layout.width);
-    },
-    children: tmp12Result
-  };
-  const tmp6Result = tmp6(disableInteraction[19]);
-  return closure_8(tmp6Result, obj12);
+  type2 = undefined;
+  if (flag) {
+    if (closure_6(widget.type)) {
+      type2 = widget.type;
+    }
+  }
+  let tmp15;
+  if (flag) {
+    let tmp16 = !tmp8;
+    if (tmp16) {
+      const obj3 = { ref: ref1, widgetType: widget.type, disabled: tmp5Result.isGameLimitReached(widget) };
+      tmp5Result = tmp5(tmp3[15]);
+      tmp16 = ref(type1, obj3, "add-game");
+    }
+    const items3 = [tmp16, ];
+    const obj4 = { widget };
+    items3[1] = ref(tmp2(tmp3[17]), obj4, "edit-options");
+    tmp15 = items3;
+  }
+  if (0 === memo.length) {
+    let stringResult;
+    let tmp26;
+    const intl = tmp5(tmp3[11]).intl;
+    if (1 === widgetMaxGamesResult) {
+      stringResult = intl.string(tmp5(tmp3[11]).t["3FdPBT"]);
+    } else {
+      const obj5 = { maxGames: widgetMaxGamesResult };
+      stringResult = intl.formatToPlainString(tmp5(tmp3[11]).t.W8K2GH, obj5);
+    }
+    if (flag && 1 === widgetMaxGamesResult) {
+      if (isMeasured) {
+        const obj6 = { style: tmp.singleGameEmptyState, children: items4 };
+        const obj7 = { ref: ref1, widgetType: widget.type, coverWidth };
+        items4 = [ref(tmp2(tmp3[18]), obj7), ];
+        const obj8 = { variant: "body-sm/medium", color: "text-muted", style: tmp.singleGameEmptyStateText, children: stringResult };
+        items4[1] = ref(tmp5(tmp3[19]).Text, obj8);
+        isMeasured = registerCoverRef(coverWidth, obj6);
+      }
+      tmp26 = isMeasured;
+    } else {
+      const obj9 = { variant: "body-sm/medium", color: "text-muted", style: tmp.emptyState, children: stringResult };
+      tmp26 = ref(tmp5(tmp3[19]).Text, obj9);
+    }
+    tmp20 = tmp26;
+  } else {
+    let type = widget.type;
+    if (tmp5(tmp3[20]).WidgetType.FAVORITE_GAMES !== type) {
+      if (tmp5(tmp3[20]).WidgetType.CURRENT_GAMES !== type) {
+        if (tmp5(tmp3[20]).WidgetType.WANT_TO_PLAY_GAMES !== type) {
+          if (tmp5(tmp3[20]).WidgetType.PLAYED_GAMES !== type) {
+            return null;
+          }
+        }
+        tmp20 = isMeasured;
+        if (tmp20) {
+          const obj10 = {
+            games: memo,
+            columns,
+            renderCover(game) {
+                      let type;
+                      const obj = { userId, game, coverWidth, disableInteraction, editableWidgetType: type, registerCoverRef, onRemoveGame };
+                      type = undefined;
+                      const tmp = metroImportAll;
+                      const tmp2 = UserProfileWidgetGameCoverDefault;
+                      if (flag) {
+                        type = widget.type;
+                      }
+                      return tmp(tmp2, obj, game.gameId);
+                    }
+          };
+          tmp20 = ref(tmp2(tmp3[23]), obj10);
+        }
+      }
+    }
+    let tmp22 = isMeasured;
+    if (tmp22) {
+      const obj11 = {
+        games: memo,
+        renderRow(game) {
+              let type;
+              const obj = { userId, game, coverWidth, disableInteraction, editableTagsWidgetType: type1, editableCommentWidgetType: type2, editableWidgetType: type, registerCoverRef, onRemoveGame };
+              type = undefined;
+              const tmp = metroImportAll;
+              const tmp2 = UserProfileGameDetailsRowDefault;
+              if (flag) {
+                type = widget.type;
+              }
+              return tmp(tmp2, obj, game.gameId);
+            }
+      };
+      tmp22 = ref(tmp2(tmp3[21]), obj11);
+    }
+    tmp20 = tmp22;
+  }
+  const obj12 = { userId, widget, style: cardStyle, disableInteraction, actionButtons: tmp15, children: ref(coverWidth, { ref, onLayout, children: tmp20 }) };
+  const tmp2Result = tmp2(tmp3[25]);
+  return ref(tmp2Result, obj12);
 });
 let result = size.fileFinishedImporting("modules/user_profile/native/UserProfileWidgetsBoard.tsx");
 
 export default function UserProfileWidgetsBoard(userId) {
+  let isEditing;
   userId = userId.userId;
   let flag = userId.isVisible;
   if (flag === undefined) {
     flag = true;
   }
-  const cardStyle = userId.cardStyle;
-  let tmp = closure_12();
-  let obj = userId(14966);
-  const displayableBoardWidgets = obj.useDisplayableBoardWidgets(userId);
-  let closure_1 = tmp2;
-  const obj2 = userId(8761);
+  ({ cardStyle: importDefault, isEditing } = userId);
+  let tmp = closure_10();
+  let obj = userId(isEditing[30]);
+  const displayableBoardWidgets = obj.useDisplayableBoardWidgets(userId, isEditing);
+  const cardStyle = tmp2;
+  const obj2 = userId(isEditing[8]);
   const trackUserProfileAction = obj2.useUserProfileAnalyticsContext().trackUserProfileAction;
   let closure_3 = react.useRef(false);
   const items = [flag, tmp2, trackUserProfileAction];
@@ -483,11 +320,11 @@ export default function UserProfileWidgetsBoard(userId) {
     const obj3 = {
       style: tmp.board,
       children: displayableBoardWidgets.map((widget) => {
-          const obj = { userId, widget, cardStyle };
+          const obj = { userId, widget, cardStyle: importDefault, isEditing };
           return metroImportAll(WidgetRenderer, obj, widget.getUniqueKey());
         })
     };
-    tmp4 = closure_8(closure_6, obj3);
+    tmp4 = closure_8(View, obj3);
   }
   return tmp4;
 };

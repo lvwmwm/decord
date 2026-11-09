@@ -1,17 +1,17 @@
-// Module ID: 13946
-// Function ID: 13947
+// Module ID: 14180
+// Function ID: 14181
 // Name: ChannelAutocompleteEmojiUpsell
-// Dependencies: [19, 17, 1386, 21, 5014, 575, 5717, 1409, 5624, 1113, 2]
+// Dependencies: [19, 17, 1388, 21, 5140, 575, 5842, 1411, 5751, 1113, 2]
 // Exports: default
 
-// Module 13946 (ChannelAutocompleteEmojiUpsell)
+// Module 14180 (ChannelAutocompleteEmojiUpsell)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import EmojiConstants from "EmojiConstants" /* 1386 */;
-import FastImageDefault from "FastImage" /* 5717 */;
+import EmojiConstants from "EmojiConstants" /* 1388 */;
+import FastImageDefault from "FastImage" /* 5842 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -21,7 +21,7 @@ let hasOwnProperty;
 let metroRequire;
 let size;
 let tmp3;
-const AvatarUtilsDefault = tmp3(1409);
+const AvatarUtilsDefault = tmp3(1411);
 const View = react_native.View;
 const EMOJI_URL_BASE_SIZE = EmojiConstants.EMOJI_URL_BASE_SIZE;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
@@ -65,7 +65,7 @@ export default function ChannelAutocompleteEmojiUpsell(results) {
     return hasOwnProperty(tmp2, obj, id.id);
   });
   const result = 24 * substr.length;
-  let obj2 = { style: tmp.title, accessibilityRole: "header", variant: "text-sm/medium", children: intl.format(require("intl").t.uEky42, obj3) };
+  let obj2 = { style: tmp.title, accessibilityRole: "header", variant: "body-sm/medium", children: intl.format(require("intl").t.uEky42, obj3) };
   const Text = require("Text/Text").Text;
   intl = require("intl").intl;
   obj3 = { count: results.length };

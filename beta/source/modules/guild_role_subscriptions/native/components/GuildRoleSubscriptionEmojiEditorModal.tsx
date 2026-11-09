@@ -1,21 +1,21 @@
-// Module ID: 19971
-// Function ID: 19972
+// Module ID: 20381
+// Function ID: 20382
 // Name: GuildRoleSubscriptionEmojiEditorModal
-// Dependencies: [5, 32, 19, 17, 4969, 21, 5014, 575, 19963, 504, 5717, 1409, 19969, 1113, 5958, 6030, 6974, 19959, 5624, 2]
+// Dependencies: [5, 32, 19, 17, 5095, 21, 5140, 575, 20373, 504, 5842, 1411, 20379, 1113, 6090, 6162, 7037, 20369, 5751, 2]
 // Exports: default
 
-// Module 19971 (GuildRoleSubscriptionEmojiEditorModal)
+// Module 20381 (GuildRoleSubscriptionEmojiEditorModal)
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5958 */;
-import AlertDefault from "Alert" /* 6030 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 6090 */;
+import AlertDefault from "Alert" /* 6162 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SubscriptionRoleStore from "SubscriptionRoleStore" /* 4969 */;
+import SubscriptionRoleStore from "SubscriptionRoleStore" /* 5095 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let c1, c4, roles, set;
@@ -71,7 +71,7 @@ export default function GuildRoleSubscriptionEmojiEditorModal(guildId) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c3;
@@ -109,7 +109,7 @@ export default function GuildRoleSubscriptionEmojiEditorModal(guildId) {
               c3 = 0;
             }
             c4 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp11) {
           let closure_2 = tmp11;
@@ -234,11 +234,11 @@ export default function GuildRoleSubscriptionEmojiEditorModal(guildId) {
       obj6 = { children: item.name };
       if (hasItem1) {
         const obj7 = { children: items };
-        const obj8 = { variant: "text-sm/normal", color: "interactive-text-active", children: intl.string(guildId(onClose[13]).t["1GlN06"]) };
+        const obj8 = { variant: "body-sm/normal", color: "interactive-text-active", children: intl.string(guildId(onClose[13]).t["1GlN06"]) };
         const Text = tmp4(tmp5[18]).Text;
         intl = tmp4(tmp5[13]).intl;
         items = [tmp3(Text, obj8), ];
-        const obj9 = { variant: "text-sm/normal", color: "text-feedback-critical", children: intl2.string(guildId(onClose[13]).t.J0XdJ4) };
+        const obj9 = { variant: "body-sm/normal", color: "text-feedback-critical", children: intl2.string(guildId(onClose[13]).t.J0XdJ4) };
         const Text2 = tmp4(tmp5[18]).Text;
         intl2 = tmp4(tmp5[13]).intl;
         items[1] = set(Text2, obj9);

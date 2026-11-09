@@ -1,14 +1,14 @@
-// Module ID: 11737
-// Function ID: 11738
+// Module ID: 11900
+// Function ID: 11901
 // Name: installApplicationOnDemandIfNeeded
-// Dependencies: [5, 2016, 2038, 1072, 11738, 6881, 5651, 5760, 5207, 10909, 2]
+// Dependencies: [5, 2140, 2162, 1072, 11901, 6936, 5775, 5889, 5323, 11035, 2]
 // Exports: installApplicationOnDemandIfNeeded
 
-// Module 11737 (installApplicationOnDemandIfNeeded)
+// Module 11900 (installApplicationOnDemandIfNeeded)
 import Constants from "Constants" /* 1072 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationRecord from "ApplicationRecord" /* 2016 */;
-import ApplicationStore from "ApplicationStore" /* 2038 */;
+import ApplicationRecord from "ApplicationRecord" /* 2140 */;
+import ApplicationStore from "ApplicationStore" /* 2162 */;
 import size from "module_2" /* 2 */;
 
 let c4;
@@ -32,7 +32,7 @@ let obj = function _installApplicationOnDemandIfNeeded() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {

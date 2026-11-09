@@ -14,11 +14,11 @@ import stringifyErrors from "stringifyErrors" /* 1338 */;
 import discord_common_V6OrEarlierAPIError from "discord_common/V6OrEarlierAPIError" /* 1339 */;
 import size from "module_2" /* 2 */;
 
-let c0, dependencyMap, importDefault;
+let c0, dependencyMap, errors, importDefault;
 
 function sendRequest(method, signal, arg2, fn, fn2, cause) {
   let closure_2;
-  const f121212 = () => {
+  const f123008 = () => {
     promise = awaitOnline(url.url);
     return promise.then(() => obj6(closure_1_0, url, closure_1_2, closure_1_3, closure_1_4, closure_1_5));
   };
@@ -165,7 +165,7 @@ function sendRequest(method, signal, arg2, fn, fn2, cause) {
               }
               tmp.retried = num5 + 1;
               const backoff2 = tmp.backoff;
-              backoff2.fail(f121212);
+              backoff2.fail(f123008);
             } else {
               throw new TypeError("Trying to call a non-function");
             }
@@ -239,7 +239,7 @@ function sendRequest(method, signal, arg2, fn, fn2, cause) {
                 }
                 const tmp17 = method;
                 if (code === method(closure_2[3]).INVALID_FORM_BODY_ERROR_CODE) {
-                  const errors = response.body.errors;
+                  errors = response.body.errors;
                   if (null != errors) {
                     const tmp17Result = tmp17(closure_2[4]);
                     response.body = tmp17Result.convertSkemaError(errors);
@@ -302,7 +302,7 @@ function sendRequest(method, signal, arg2, fn, fn2, cause) {
               }
               signal.retried = num2 + 1;
               const backoff2 = tmp.backoff;
-              backoff2.fail(f121212);
+              backoff2.fail(f123008);
             } else {
               throw new TypeError("Trying to call a non-function");
             }

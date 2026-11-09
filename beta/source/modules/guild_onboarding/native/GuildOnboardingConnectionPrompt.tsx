@@ -1,30 +1,30 @@
-// Module ID: 7323
-// Function ID: 7324
+// Module ID: 7384
+// Function ID: 7385
 // Name: GuildOnboardingConnectionPrompt
-// Dependencies: [19, 17, 6948, 7276, 6572, 4885, 7268, 7269, 7265, 1072, 21, 5014, 5586, 575, 1497, 1625, 504, 7274, 1252, 5760, 7267, 7292, 5624, 1113, 7324, 7351, 5634, 2]
+// Dependencies: [19, 17, 7003, 7339, 6627, 5011, 7331, 7332, 7328, 1072, 21, 5140, 5714, 575, 1499, 1627, 504, 7337, 1252, 5889, 7330, 7355, 5751, 1113, 7385, 7412, 5758, 2]
 // Exports: default
 
-// Module 7323 (GuildOnboardingConnectionPrompt)
+// Module 7384 (GuildOnboardingConnectionPrompt)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import NavigatorConstants from "NavigatorConstants" /* 5586 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5760 */;
-import GuildOnboardingConstants from "GuildOnboardingConstants" /* 7265 */;
-import GuildOnboardingPromptsActionCreators from "GuildOnboardingPromptsActionCreators" /* 7267 */;
-import GuildOnboardingPromptsConstants from "GuildOnboardingPromptsConstants" /* 7269 */;
-import GuildOnboardingUtils from "GuildOnboardingUtils" /* 7274 */;
-import ConnectionCardDefault from "ConnectionCard" /* 7324 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7351 */;
+import NavigatorConstants from "NavigatorConstants" /* 5714 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5889 */;
+import GuildOnboardingConstants from "GuildOnboardingConstants" /* 7328 */;
+import GuildOnboardingPromptsActionCreators from "GuildOnboardingPromptsActionCreators" /* 7330 */;
+import GuildOnboardingPromptsConstants from "GuildOnboardingPromptsConstants" /* 7332 */;
+import GuildOnboardingUtils from "GuildOnboardingUtils" /* 7337 */;
+import ConnectionCardDefault from "ConnectionCard" /* 7385 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7412 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import MemberVerificationFormStore from "MemberVerificationFormStore" /* 6948 */;
-import AuthorizedAppsStore from "AuthorizedAppsStore" /* 7276 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6572 */;
-import GuildStore from "GuildStore" /* 4885 */;
-import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7268 */;
+import MemberVerificationFormStore from "MemberVerificationFormStore" /* 7003 */;
+import AuthorizedAppsStore from "AuthorizedAppsStore" /* 7339 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6627 */;
+import GuildStore from "GuildStore" /* 5011 */;
+import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7331 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let navigation;
@@ -197,7 +197,7 @@ export default function GuildOnboardingConnectionPrompt(guildId) {
   if (stateFromStores3) {
     const obj9 = { style: items10, children: tmp13(Text3, obj10) };
     items10 = [tmp.flex, { justifyContent: "center", alignItems: "center" }];
-    obj10 = { variant: "text-md/normal", color: "text-muted", children: intl4.string(tmp2(tmp3[23]).t.ZTNur7) };
+    obj10 = { variant: "body-md/normal", color: "text-muted", children: intl4.string(tmp2(tmp3[23]).t.ZTNur7) };
     Text3 = tmp2(tmp3[22]).Text;
     intl4 = tmp2(tmp3[23]).intl;
     obj8.children = tmp13(ref, obj9);
@@ -216,7 +216,7 @@ export default function GuildOnboardingConnectionPrompt(guildId) {
     const Text = tmp2(tmp3[22]).Text;
     intl = tmp2(tmp3[23]).intl;
     items12 = [tmp13(Text, obj15), ];
-    const obj16 = { style: tmp.description, variant: "text-md/normal", color: "text-muted", children: intl2.string(tmp2(tmp3[23]).t.BozOXu) };
+    const obj16 = { style: tmp.description, variant: "body-md/normal", color: "text-muted", children: intl2.string(tmp2(tmp3[23]).t.BozOXu) };
     const Text2 = tmp2(tmp3[22]).Text;
     intl2 = tmp2(tmp3[23]).intl;
     items12[1] = tmp13(Text2, obj16);

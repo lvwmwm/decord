@@ -1,17 +1,17 @@
-// Module ID: 8028
-// Function ID: 8029
+// Module ID: 8098
+// Function ID: 8099
 // Name: IconButton
-// Dependencies: [19, 21, 5014, 575, 5643, 8029, 5624, 2]
+// Dependencies: [19, 21, 5140, 575, 5767, 8099, 5751, 2]
 // Exports: IconButton
 
-// Module 8028 (IconButton)
+// Module 8098 (IconButton)
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import Button_BaseButton from "Button/BaseButton" /* 5643 */;
-import BaseIconButton3 from "BaseIconButton" /* 8029 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import Button_BaseButton from "Button/BaseButton" /* 5767 */;
+import BaseIconButton3 from "BaseIconButton" /* 8099 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -48,7 +48,7 @@ export function IconButton(grow) {
     const BaseIconButton2 = BaseIconButton3.BaseIconButton;
     const merged2 = Object.assign(merged);
     items = [_false(BaseIconButton2, obj3), ];
-    const obj4 = { style: tmp2.label, variant: "text-xs/medium", color: "interactive-text-default", maxFontSizeMultiplier, children: label };
+    const obj4 = { style: tmp2.label, variant: "body-xs/medium", color: "interactive-text-default", maxFontSizeMultiplier, children: label };
     items[1] = _false(Text_Text.Text, obj4);
     tmp9 = React3(BaseButton, obj2);
   } else {

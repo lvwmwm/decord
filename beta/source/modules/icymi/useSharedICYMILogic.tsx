@@ -1,19 +1,19 @@
-// Module ID: 18556
-// Function ID: 18557
+// Module ID: 18914
+// Function ID: 18915
 // Name: useSharedICYMILogic
-// Dependencies: [32, 19, 8906, 18522, 18557, 504, 16227, 18527, 9098, 8924, 18526, 8919, 8923, 18558, 2]
+// Dependencies: [32, 19, 8980, 18877, 18915, 504, 16545, 18910, 9178, 8998, 18909, 8993, 8997, 18916, 2]
 // Exports: useSharedICYMILogic
 
-// Module 18556 (useSharedICYMILogic)
-import ICYMITypes from "ICYMITypes" /* 8919 */;
-import ICYMIUtils from "ICYMIUtils" /* 8923 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8924 */;
-import ICYMIAnalytics2 from "ICYMIAnalytics" /* 16227 */;
-import ICYMIConstants from "ICYMIConstants" /* 18522 */;
-import ICYMIStoreUtils from "ICYMIStoreUtils" /* 18526 */;
+// Module 18914 (useSharedICYMILogic)
+import ICYMITypes from "ICYMITypes" /* 8993 */;
+import ICYMIUtils from "ICYMIUtils" /* 8997 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8998 */;
+import ICYMIAnalytics2 from "ICYMIAnalytics" /* 16545 */;
+import ICYMIConstants from "ICYMIConstants" /* 18877 */;
+import ICYMIStoreUtils from "ICYMIStoreUtils" /* 18909 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ICYMIStore from "ICYMIStore" /* 8906 */;
+import ICYMIStore from "ICYMIStore" /* 8980 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -25,51 +25,54 @@ let result = size.fileFinishedImporting("modules/icymi/useSharedICYMILogic.tsx")
 export function useSharedICYMILogic(notificationItem) {
   let _undefined;
   let arr6;
-  let c9;
+  let c11;
   let closure_1;
+  let isWaterwheelsCardEligible;
+  let showDot;
   notificationItem = notificationItem.notificationItem;
   let unreadItems;
   let readItems;
   let allUnreadItemsHydrated;
-  let stateFromStores;
-  c9 = undefined;
-  const showDot = notificationItem.showDot;
+  c11 = undefined;
+  ({ showDot, isWaterwheelsCardEligible } = notificationItem);
   let tmp = readItems(allUnreadItemsHydrated.useState(false), 2);
   let tmp3 = tmp[1];
   importDefault = tmp3;
   const first = tmp[0];
-  let tmp4 = require("useICYMIItems")();
+  let tmp4 = require("useICYMIItems")({ isWaterwheelsCardEligible });
   unreadItems = tmp4.unreadItems;
   readItems = tmp4.readItems;
   allUnreadItemsHydrated = tmp4.allUnreadItemsHydrated;
+  const allItemsHydrated = tmp4.allItemsHydrated;
+  const discoverEnabled = tmp4.discoverEnabled;
   let obj = notificationItem(unreadItems[5]);
-  let items = [stateFromStores];
-  stateFromStores = obj.useStateFromStores(items, () => stateFromStores.getVersion(), []);
+  let items = [allItemsHydrated];
+  const stateFromStores = obj.useStateFromStores(items, () => allItemsHydrated.getVersion(), []);
   let obj2 = notificationItem(unreadItems[5]);
-  const items1 = [stateFromStores];
+  const items1 = [allItemsHydrated];
   const stateFromStores1 = obj2.useStateFromStores(items1, () => {
     const isFirstPageHydratedResult = ICYMIStore.isFirstPageHydrated() && stateFromStores > 0;
     return !isFirstPageHydratedResult;
   });
   const items2 = [stateFromStores];
   const effect = allUnreadItemsHydrated.useEffect(() => {
-    if (null != stateFromStores.getLoadId()) {
+    if (null != allItemsHydrated.getLoadId()) {
       const ICYMIAnalytics = notificationItem(unreadItems[6]).ICYMIAnalytics;
       ICYMIAnalytics.trackFeedShown({ homeSessionId: "gravity" });
     }
   }, items2);
   let obj3 = notificationItem(unreadItems[5]);
-  const items3 = [stateFromStores];
-  const stateFromStores2 = obj3.useStateFromStores(items3, () => stateFromStores.isRefreshing(), []);
+  const items3 = [allItemsHydrated];
+  const stateFromStores2 = obj3.useStateFromStores(items3, () => allItemsHydrated.isRefreshing(), []);
   let obj4 = notificationItem(unreadItems[5]);
-  const items4 = [stateFromStores];
-  const stateFromStores3 = obj4.useStateFromStores(items4, () => stateFromStores.isHydrating(), []);
-  [arr6, c9] = readItems(allUnreadItemsHydrated.useState([]), 2);
+  const items4 = [allItemsHydrated];
+  const stateFromStores3 = obj4.useStateFromStores(items4, () => allItemsHydrated.isHydrating(), []);
+  [arr6, c11] = readItems(allUnreadItemsHydrated.useState([]), 2);
   const tmp10 = readItems(allUnreadItemsHydrated.useState([]), 2);
   let obj5 = notificationItem(unreadItems[5]);
-  const items5 = [stateFromStores];
+  const items5 = [allItemsHydrated];
   const stateFromStoresObject = obj5.useStateFromStoresObject(items5, () => {
-    const obj = { loadId: stateFromStores.getLoadId(), lastScrollEventTimestamp: stateFromStores.lastScrollEvent() };
+    const obj = { loadId: allItemsHydrated.getLoadId(), lastScrollEventTimestamp: allItemsHydrated.lastScrollEvent() };
     return obj;
   });
   const lastScrollEventTimestamp = stateFromStoresObject.lastScrollEventTimestamp;
@@ -82,14 +85,14 @@ export function useSharedICYMILogic(notificationItem) {
   const mapped = found.map((item) => item.item.id);
   let arr = mapped.pop();
   const tmp13 = require("react")(arr);
-  let closure_12 = tmp13;
+  let closure_14 = tmp13;
   const items6 = [stateFromStores2, lastScrollEventTimestamp, tmp13, arr, loadId, stateFromStores1];
   const effect1 = allUnreadItemsHydrated.useEffect(() => {
     const tmp = stateFromStores2;
     if (!tmp) {
       const tmp2 = stateFromStores1;
       if (!tmp2) {
-        if (null != closure_12) {
+        if (null != closure_14) {
           if (null != arr) {
             if (arr !== tmp3) {
               const _Date = Date;
@@ -237,7 +240,7 @@ export function useSharedICYMILogic(notificationItem) {
     obj.openICYMITab();
   }, []);
   let obj6 = notificationItem(unreadItems[13]);
-  const items10 = [stateFromStores1, notificationItem, unreadItems, allUnreadItemsHydrated, readItems, stateFromStores3];
+  const items10 = [stateFromStores1, notificationItem, unreadItems, allUnreadItemsHydrated, allItemsHydrated, discoverEnabled, readItems, stateFromStores3];
   const iCYMIReloadHandler = obj6.useICYMIReloadHandler(showDot);
   const memo1 = allUnreadItemsHydrated.useMemo(() => {
     let obj2;
@@ -268,27 +271,33 @@ export function useSharedICYMILogic(notificationItem) {
           data.push(item);
         }
       });
-      const tmp15 = allUnreadItemsHydrated;
-      if (tmp15) {
+      let tmp15 = discoverEnabled;
+      const tmp16 = !discoverEnabled && allUnreadItemsHydrated;
+      if (tmp16) {
         const obj5 = { id: "end", timestamp: 0, unread: false, data: { kind: "end" } };
         data.push(obj5);
       }
-      const arr2 = readItems;
-      if (readItems.length > 0) {
-        const item1 = arr2.forEach((item) => {
-          const obj = notificationItem(unreadItems[12]);
-          if (!obj.isItemNSFW(item)) {
-            data.push(item);
-          }
-        });
+      const item1 = readItems.forEach((item) => {
+        const obj = notificationItem(unreadItems[12]);
+        if (!obj.isItemNSFW(item)) {
+          data.push(item);
+        }
+      });
+      if (tmp15) {
+        tmp15 = allItemsHydrated;
       }
-      const tmp18 = stateFromStores3;
-      if (tmp18) {
-        const obj6 = { id: "bottomLoading", timestamp: 0, unread: false, data: { kind: "bottomLoading" } };
+      if (tmp15) {
+        const obj6 = { id: "end", timestamp: 0, unread: false, data: { kind: "end" } };
         data.push(obj6);
+      }
+      const tmp21 = stateFromStores3;
+      if (tmp21) {
+        const obj7 = { id: "bottomLoading", timestamp: 0, unread: false, data: { kind: "bottomLoading" } };
+        data.push(obj7);
       }
     }
     return { data, stickyHeaderIndices: [] };
   }, items10);
-  return { data: memo1.data, loading: stateFromStores1, version: stateFromStores, visibleItemIds: arr6, endVisible: first, isRefreshing: stateFromStores2, handleOnRefresh: iCYMIReloadHandler, stickyHeaderIndices: memo1.stickyHeaderIndices, viewabilityConfigCallbackPairs: memo };
+  let obj7 = { data: memo1.data, loading: stateFromStores1, version: stateFromStores, visibleItemIds: arr6, endVisible: first, isRefreshing: stateFromStores2, handleOnRefresh: iCYMIReloadHandler, stickyHeaderIndices: memo1.stickyHeaderIndices, viewabilityConfigCallbackPairs: memo };
+  return obj7;
 }

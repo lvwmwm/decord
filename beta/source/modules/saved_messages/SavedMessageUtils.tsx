@@ -1,137 +1,142 @@
-// Module ID: 11163
-// Function ID: 11164
+// Module ID: 11295
+// Function ID: 11296
 // Name: SavedMessageUtils
-// Dependencies: [5, 19, 4867, 4863, 1072, 1113, 2042, 504, 7485, 7421, 2]
+// Dependencies: [5, 19, 4993, 502, 4989, 1072, 1113, 2166, 504, 7549, 7485, 2]
 // Exports: savedMessageJumpToMessage, useDueInString, useSavedMessageChannel
 
-// Module 11163 (SavedMessageUtils)
+// Module 11295 (SavedMessageUtils)
 import intl2 from "intl" /* 1113 */;
-import _modDef2042 from "module_2042" /* 2042 */;
-import ChannelRecord from "ChannelRecord" /* 4867 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7485 */;
+import _modDef2166 from "module_2166" /* 2166 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7549 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
+import ChannelRecord from "ChannelRecord" /* 4993 */;
+import AuthenticationStore from "AuthenticationStore" /* 502 */;
+import ChannelStore from "ChannelStore" /* 4989 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, closure_3, closure_4, type2;
+let _require, c6, c7;
 
-let metroImportAll;
-let metroImportDefault;
+let c10;
+let c9;
+let hasOwnProperty;
+let metroRequire;
 let obj = function _savedMessageJumpToMessage() {
-  obj = _asyncToGenerator(async (arg0, arg1) => {
+  let channel;
+  obj = _asyncToGenerator(async (arg0, value) => {
     let closure_0 = arg0;
-    let type = arg1;
-    let c6 = 0;
-    let c7 = 0;
-    let c5 = 0;
-    return (async (arg0, value) => {
-      if (c7 === 2) {
-        c7 = 3;
-        throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp3 === 3) {
-        if (arg0 === 1) {
-          throw value;
-        } else if (arg0 === 2) {
-          return { value, done: true };
-        } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
-        }
+    let closure_1 = value;
+    if (c7 === 2) {
+      c7 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp3 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj3 = { value, done: true };
+        return obj3;
       } else {
-        try {
-          c7 = 2;
-          if (0 === c6) {
-            if (arg0 === 1) {
-              c7 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c7 = 3;
-              return { value, done: true };
-            } else {
-              closure_3 = tmp;
-              type2 = undefined;
-              type = undefined;
-              if (type != null) {
-                type = type.type;
-              }
-              if (type === constants.UNKNOWN) {
-                if (null == closure_0.saveData.guildId) {
-                  c5 = 1;
-                  type = ChannelActionCreatorsDefault;
-                  c6 = 2;
-                  c7 = 1;
-                  const obj4 = { value: type.fetchChannel(closure_0.saveData.channelId), done: false };
-                  return obj4;
-                }
-              }
-            }
-          } else if (1 === c6) {
-            c5 = 0;
-          } else if (2 === c6) {
-            if (arg0 === 1) {
-              c7 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c5 = 0;
-              c7 = 3;
-              return { value, done: true };
-            } else {
-              type2 = value;
-              if (null == type2.recipients) {
-                c5 = 0;
-                c7 = 3;
-                return { value: "HermesInternal", done: "HermesInternal" };
-              } else if (type2.recipients.length > 1) {
-                c5 = 0;
-                c7 = 3;
-                return { value: "HermesInternal", done: "HermesInternal" };
-              } else {
-                type = closure_131_1(closure_131_2[8]);
-                const recipients = type2.recipients;
-                c6 = 3;
+        return { value: "HermesInternal", done: null };
+      }
+    } else {
+      let c5;
+      try {
+        let guildId;
+        c7 = 2;
+        if (0 === c6) {
+          if (arg0 === 1) {
+            c7 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c7 = 3;
+            const obj4 = { value, done: true };
+            return obj4;
+          } else {
+            let closure_3 = tmp;
+            guildId = closure_0.saveData.guildId;
+            if (null == guildId) {
+              guildId = channel.getChannel(tmp35.saveData.channelId);
+              if (null == guildId) {
+                c5 = 1;
+                const obj6 = ChannelActionCreatorsDefault;
+                guildId = obj6.fetchChannel(tmp35.saveData.channelId);
+                c6 = 2;
                 c7 = 1;
-                const obj6 = { value: type.ensurePrivateChannel(recipients.map((id) => id.id)), done: false };
-                return obj6;
+                const obj7 = { value: guildId, done: false };
+                return obj7;
               }
             }
-          } else if (arg0 === 1) {
+          }
+        } else if (1 === c6) {
+          c5 = 0;
+        } else if (2 === c6) {
+          if (arg0 === 1) {
             c7 = 3;
             throw value;
           } else if (arg0 === 2) {
             c5 = 0;
             c7 = 3;
-            return { value, done: true };
+            const obj8 = { value, done: true };
+            return obj8;
           } else {
-            c5 = 0;
+            guildId = value;
+            if (null == guildId.recipients) {
+              c5 = 0;
+              c7 = 3;
+              return { value: "HermesInternal", done: null };
+            } else if (guildId.recipients.length > 1) {
+              c5 = 0;
+              c7 = 3;
+              return { value: "HermesInternal", done: null };
+            } else {
+              const recipients = guildId.recipients;
+              const obj2 = closure_131_1(closure_131_2[9]);
+              guildId = obj2.ensurePrivateChannel(recipients.map((id) => id.id));
+              c6 = 3;
+              c7 = 1;
+              const obj9 = { value: guildId, done: false };
+              return obj9;
+            }
           }
-          let guildId;
-          const CHANNEL = closure_131_8.CHANNEL;
-          const tmp17 = closure_131_1(closure_131_2[9]);
-          if (type != null) {
-            guildId = type.getGuildId();
-          }
-          type = CHANNEL(guildId, closure_0.saveData.channelId, closure_0.saveData.messageId);
-          tmp17(type, { openChannel: true });
+        } else if (arg0 === 1) {
           c7 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
-        } catch (tmp26) {
-          closure_4 = tmp26;
-          if (0 === c5) {
-            c7 = 3;
-            throw tmp26;
-          } else {
-            c6 = 1;
-          }
+          throw value;
+        } else if (arg0 === 2) {
+          c5 = 0;
+          c7 = 3;
+          obj = { value, done: true };
+          return obj;
+        } else {
+          c5 = 0;
+        }
+        guildId = closure_1 == null;
+        let guildId1;
+        const CHANNEL = closure_131_10.CHANNEL;
+        const obj5 = closure_1;
+        const tmp16 = closure_131_1(closure_131_2[10]);
+        if (!guildId) {
+          guildId1 = obj5.getGuildId();
+        }
+        guildId = tmp16(CHANNEL(guildId1, closure_0.saveData.channelId, closure_0.saveData.messageId), { openChannel: true });
+        c7 = 3;
+        return { value: "HermesInternal", done: null };
+      } catch (tmp24) {
+        let closure_4 = tmp24;
+        if (0 === c5) {
+          c7 = 3;
+          throw tmp24;
+        } else {
+          c6 = 1;
         }
       }
-    })();
+    }
   });
   return obj(...arguments);
 };
-const UnknownChannelRecord = ChannelRecord.UnknownChannelRecord;
-({ ChannelTypes: metroImportDefault, Routes: metroImportAll } = Constants);
+({ PrivateChannelRecord: hasOwnProperty, UnknownChannelRecord: metroRequire } = ChannelRecord);
+({ ChannelTypes: c9, Routes: c10 } = Constants);
 obj = { LONG: 0, [0]: "LONG", SHORT: 1, [1]: "SHORT" };
 const result = size.fileFinishedImporting("modules/saved_messages/SavedMessageUtils.tsx");
 
@@ -170,35 +175,56 @@ export function useDueInString(arg0) {
     const intl = tmp(1113).intl;
     formatToPlainString = intl.formatToPlainString;
     obj2 = { duration: durationResult.humanize() };
-    const duration = _modDef2042.duration;
-    _modDef2042;
+    const duration = _modDef2166.duration;
+    _modDef2166;
     const time = dueAt.getTime();
     durationResult = duration(time - now.getTime(), "millisecond");
     return obj;
   }
 }
 export function useSavedMessageChannel(savedMessage) {
+  let id;
+  let stateFromStores1;
   _require = savedMessage;
   obj = require("get initialized");
-  const items = [ChannelStore];
+  let items = [ChannelStore];
   const stateFromStores = obj.useStateFromStores(items, () => ChannelStore.getChannel(savedMessage.saveData.channelId));
-  const items1 = [stateFromStores, savedMessage];
+  let obj2 = require("get initialized");
+  const items1 = [AuthenticationStore];
+  stateFromStores1 = obj2.useStateFromStores(items1, () => id.getId());
+  const items2 = [stateFromStores, savedMessage, stateFromStores1];
   return react.useMemo(function() {
     let intl;
-    let tmp = stateFromStores;
-    if (null == stateFromStores) {
-      let tmp7;
-      if (null != savedMessage.message) {
-        obj = { id: savedMessage.saveData.channelId, guild_id: savedMessage.saveData.guildId, type: metroImportDefault.UNKNOWN, name: intl.string(intl2.t.J90oLW) };
+    let items;
+    let message;
+    let saveData;
+    if (null != stateFromStores) {
+      return stateFromStores;
+    } else {
+      ({ message, saveData } = savedMessage);
+      let tmp11;
+      if (null != message) {
+        if (null == saveData.guildId) {
+          let tmp7;
+          if (message.author.id !== stateFromStores1) {
+            const obj2 = { id: saveData.channelId, type: constants.DM, name: "", guild_id: null, recipients: items };
+            items = [message.author.id];
+            const self3 = this;
+            const self4 = this;
+            tmp7 = new hasOwnProperty(obj2);
+          }
+          tmp11 = tmp7;
+        }
+        obj = { id: null, guild_id: null, type: constants.UNKNOWN, name: intl.string(intl2.t.J90oLW) };
+        ({ channelId: obj.id, guildId: obj.guild_id } = saveData);
         intl = intl2.intl;
         const self = this;
         const self2 = this;
-        tmp7 = new UnknownChannelRecord(obj);
+        tmp7 = new metroRequire(obj);
       }
-      tmp = tmp7;
+      return tmp11;
     }
-    return tmp;
-  }, items1);
+  }, items2);
 }
 export function savedMessageJumpToMessage() {
   return obj(...arguments);

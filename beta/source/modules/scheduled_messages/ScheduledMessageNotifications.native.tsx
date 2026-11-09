@@ -1,18 +1,18 @@
-// Module ID: 14598
-// Function ID: 14599
+// Module ID: 14834
+// Function ID: 14835
 // Name: ScheduledMessageNotifications
-// Dependencies: [1072, 5712, 1113, 5740, 9808, 14599, 7351, 5958, 6744, 9810, 1994, 2]
+// Dependencies: [1072, 5837, 1113, 5864, 9898, 14835, 7412, 6090, 6799, 9900, 2118, 2]
 // Exports: handleScheduleMessageError, showScheduleMessageDeleteFailureToast, showScheduleMessageDeleteSuccessToast, showScheduleMessageFailureToast, showScheduleMessageSentNowFailureToast, showScheduleMessageSentNowSuccessToast, showScheduleMessageSuccessToast, showScheduledMessageEditFailureToast, showScheduledMessageEditSuccessToast
 
-// Module 14598 (ScheduledMessageNotifications)
+// Module 14834 (ScheduledMessageNotifications)
 import Constants from "Constants" /* 1072 */;
 import intl6 from "intl" /* 1113 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5712 */;
-import ClockIcon from "ClockIcon" /* 5740 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5958 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7351 */;
-import ScheduledMessageUtils from "ScheduledMessageUtils" /* 9808 */;
-import openScheduledMessagesLimitUpsellDefault from "openScheduledMessagesLimitUpsell" /* 14599 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5837 */;
+import ClockIcon from "ClockIcon" /* 5864 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 6090 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7412 */;
+import ScheduledMessageUtils from "ScheduledMessageUtils" /* 9898 */;
+import openScheduledMessagesLimitUpsellDefault from "openScheduledMessagesLimitUpsell" /* 14835 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -61,7 +61,7 @@ export function handleScheduleMessageError(body) {
   }
   if (code === AbortCodes.TOO_MANY_SCHEDULED_MESSAGES) {
     const obj3 = ScheduledMessageUtils;
-    const scheduledMessagesLimit = obj3.getScheduledMessagesLimit("ScheduledMessagesCreateRoadblock");
+    const scheduledMessagesLimit = obj3.getScheduledMessagesLimit();
     if (scheduledMessagesLimit.isUpgradable) {
       const items = [];
       const tmp12Result = openScheduledMessagesLimitUpsellDefault;

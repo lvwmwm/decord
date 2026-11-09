@@ -1,21 +1,21 @@
-// Module ID: 18759
-// Function ID: 18760
+// Module ID: 19122
+// Function ID: 19123
 // Name: SmartSearchFeedback
-// Dependencies: [32, 19, 17, 13890, 21, 5014, 575, 13925, 13908, 504, 7294, 5624, 1113, 4123, 14555, 9870, 9872, 2]
+// Dependencies: [32, 19, 17, 14124, 21, 5140, 575, 14159, 14142, 504, 7357, 5751, 1113, 4249, 14791, 9990, 9992, 2]
 // Exports: SmartSearchFeedback
 
-// Module 18759 (SmartSearchFeedback)
+// Module 19122 (SmartSearchFeedback)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import _modDef4123 from "module_4123" /* 4123 */;
-import SearchSessionAnalyticsManagerDefault from "SearchSessionAnalyticsManager" /* 13908 */;
-import SmartSearchActionCreators from "SmartSearchActionCreators" /* 13925 */;
-import IconActionButtonDefault from "IconActionButton" /* 14555 */;
+import _modDef4249 from "module_4249" /* 4249 */;
+import SearchSessionAnalyticsManagerDefault from "SearchSessionAnalyticsManager" /* 14142 */;
+import SmartSearchActionCreators from "SmartSearchActionCreators" /* 14159 */;
+import IconActionButtonDefault from "IconActionButton" /* 14791 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import SmartSearchResultsStore from "SmartSearchResultsStore" /* 13890 */;
+import SmartSearchResultsStore from "SmartSearchResultsStore" /* 14124 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;
@@ -40,46 +40,46 @@ export function SmartSearchFeedback(smartSearchQuery) {
   const items1 = [, ];
   ({ guildId: arr2[0], requestKey: arr2[1] } = smartSearchQuery);
   const stateFromStores = obj.useStateFromStores(items, () => SmartSearchResultsStore.getResultFeedback(smartSearchQuery.guildId, smartSearchQuery.requestKey), items1);
-  let obj2 = smartSearchQuery(7294);
+  let obj2 = smartSearchQuery(7357);
   const items2 = [smartSearchQuery.requestKey];
   let tmp7Result2 = null;
   if (!_slicedToArray(obj2.useRecyclingState(null !== stateFromStores, items2), 1)[0]) {
     let stringResult;
     const obj3 = { style: tmp.feedbackContainer, children: items3 };
-    const Text = tmp2(5624).Text;
+    const Text = tmp2(5751).Text;
     const intl = tmp2(1113).intl;
     const string = intl.string;
     if (null !== stateFromStores) {
       stringResult = string(tmp2(1113).t.kZbFIO);
     } else {
-      stringResult = string(_modDef4123.uij9Dy);
+      stringResult = string(_modDef4249.uij9Dy);
     }
-    const obj4 = { variant: "text-sm/medium", color: "text-muted", children: stringResult };
+    const obj4 = { variant: "body-sm/medium", color: "text-muted", children: stringResult };
     items3 = [closure_6(Text, obj4), ];
     let tmp7Result = null === stateFromStores;
     if (tmp7Result) {
       const obj5 = { style: tmp.buttonContainer, children: items4 };
       const obj6 = {
-        IconComponent: smartSearchQuery(9870).ThumbsUpIcon,
+        IconComponent: smartSearchQuery(9990).ThumbsUpIcon,
         onPress() {
               const obj = SmartSearchActionCreators;
               const obj2 = { smartSearchQuery, hasPositiveFeedback: true, SearchSessionAnalyticsManager: SearchSessionAnalyticsManagerDefault };
               obj.setResultFeedback(obj2);
             },
-        accessibilityLabel: intl2.string(_modDef4123["x/H32X"])
+        accessibilityLabel: intl2.string(_modDef4249["x/H32X"])
       };
       const tmp14 = IconActionButtonDefault;
       intl2 = tmp2(1113).intl;
       items4 = [closure_6(tmp14, obj6), ];
       const obj7 = {
-        IconComponent: smartSearchQuery(9872).ThumbsDownIcon,
+        IconComponent: smartSearchQuery(9992).ThumbsDownIcon,
         noMargin: true,
         onPress() {
               const obj = SmartSearchActionCreators;
               const obj2 = { smartSearchQuery, hasPositiveFeedback: false, SearchSessionAnalyticsManager: SearchSessionAnalyticsManagerDefault };
               obj.setResultFeedback(obj2);
             },
-        accessibilityLabel: intl3.string(_modDef4123.FoToeH)
+        accessibilityLabel: intl3.string(_modDef4249.FoToeH)
       };
       const tmp15 = IconActionButtonDefault;
       intl3 = tmp2(1113).intl;

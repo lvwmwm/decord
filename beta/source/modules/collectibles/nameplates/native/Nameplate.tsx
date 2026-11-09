@@ -1,16 +1,16 @@
-// Module ID: 9514
-// Function ID: 9515
+// Module ID: 9598
+// Function ID: 9599
 // Name: Nameplate
-// Dependencies: [19, 5015, 21, 5014, 504, 5253, 5095, 5254, 1984, 9515, 5587, 1375, 9504, 5717, 2]
+// Dependencies: [19, 5141, 21, 5140, 504, 5369, 1652, 5370, 2108, 9599, 5715, 1377, 9588, 5842, 2]
 // Exports: default
 
-// Module 9514 (Nameplate)
-import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
-import timing from "timing" /* 5254 */;
+// Module 9598 (Nameplate)
+import _mod1652 from "module_1652" /* 1652 */;
+import timing_timing from "timing/timing" /* 5370 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5015 */;
+import AccessibilityStore from "AccessibilityStore" /* 5141 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -19,10 +19,12 @@ let hasOwnProperty;
 let metroRequire;
 function NameplateInner(isFocused) {
   let isPressed;
-  let items2;
-  let items3;
+  let items4;
+  let items5;
   let nameplate;
   let point;
+  let tmp10;
+  let tmp11;
   let useReducedMotion;
   ({ nameplate, isPressed } = isFocused);
   if (isPressed === undefined) {
@@ -65,9 +67,9 @@ function NameplateInner(isFocused) {
   const tmp4 = closure_7(flag3, isPressed, flag, flag2, flag5);
   const tmp5 = sharedValue;
   let num = 1;
-  const tmp6 = sharedValue(5253)();
-  const useSharedValue = flag6(5095).useSharedValue;
-  flag6(5095);
+  const tmp6 = sharedValue(5369)();
+  const useSharedValue = flag6(1652).useSharedValue;
+  flag6(1652);
   if (flag6) {
     num = 0;
   }
@@ -78,75 +80,79 @@ function NameplateInner(isFocused) {
     const tmp = flag6;
     if (tmp) {
       set = sharedValue.set;
-      const obj = { duration: 100, easing: Easing.in(ReanimatedRexport.Easing.ease) };
-      const withTiming = timing.withTiming;
-      timing;
-      Easing = ReanimatedRexport.Easing;
+      const obj = { duration: 100, easing: Easing.in(_mod1652.Easing.ease) };
+      const withTiming = timing_timing.withTiming;
+      timing_timing;
+      Easing = _mod1652.Easing;
       const result = set(withTiming(1, obj));
     }
   }, items1);
-  const tmpResult = tmp(5095);
-  class A {
+  const items2 = [closure_8, sharedValue];
+  let c0;
+  [tmp10, tmp11] = items2;
+  const tmpResult = tmp(1652);
+  class NameplateTsx1 {
     constructor() {
-      const obj = { opacity: sharedValue.get() };
+      const obj = { opacity: _undefined.get() };
       return obj;
     }
   }
-  A.__closure = { opacity: sharedValue };
-  A.__workletHash = 15588901070870;
-  A.__initData = __initData;
-  const animatedStyle = tmpResult.useAnimatedStyle(A);
-  const tmpResult4 = tmp(1984);
+  const items3 = [tmp11];
+  NameplateTsx1.__closure = items3;
+  NameplateTsx1.__workletHash = 2118555458479;
+  NameplateTsx1.__initData = tmp10;
+  const animatedStyle = tmpResult.useAnimatedStyle(NameplateTsx1);
+  const tmpResult4 = tmp(2108);
   const backgroundGradientColors = tmpResult4.getBackgroundGradientColors(nameplate.palette, tmp6);
-  const tmpResult5 = tmp(9515);
+  const tmpResult5 = tmp(9599);
   const nameplateAssets = tmpResult5.getNameplateAssets(nameplate);
   let str = nameplateAssets.staticImageUrl;
-  let tmp13 = true === flag7;
+  let tmp15 = true === flag7;
   const animatedImageUrl = nameplateAssets.animatedImageUrl;
-  if (tmp13) {
-    tmp13 = !stateFromStores;
+  if (tmp15) {
+    tmp15 = !stateFromStores;
   }
-  if (!tmp13) {
-    tmp13 = "always" === flag7;
+  if (!tmp15) {
+    tmp15 = "always" === flag7;
   }
-  if (tmp13) {
+  if (tmp15) {
     str = animatedImageUrl;
   }
   if (str == null) {
     str = "";
   }
-  const obj2 = { style: items2, children: null };
-  items2 = [tmp4.container, style, animatedStyle];
-  let tmp16Result = null;
-  const View = tmp5(5095).View;
-  const tmp14 = closure_6;
+  const obj2 = { style: items4, children: null };
+  items4 = [tmp4.container, style, animatedStyle];
+  let tmp18Result = null;
+  const View = tmp5(1652).View;
+  const tmp16 = closure_6;
   if (null != backgroundGradientColors) {
     let num2 = 0;
-    const obj3 = { style: tmp4.gradient, start: point, end: { x: 1, y: 0 }, colors: items3 };
-    const tmp16 = closure_5;
-    const tmp5Result = tmp5(5587);
+    const obj3 = { style: tmp4.gradient, start: point, end: { x: 1, y: 0 }, colors: items5 };
+    const tmp18 = closure_5;
+    const tmp5Result = tmp5(5715);
     if (flag4) {
       num2 = -2;
     }
     point = { x: num2, y: 0 };
-    items3 = [, ];
-    ({ left: arr4[0], right: arr4[1] } = backgroundGradientColors);
-    tmp16Result = tmp16(tmp5Result, obj3);
+    items5 = [, ];
+    ({ left: arr6[0], right: arr6[1] } = backgroundGradientColors);
+    tmp18Result = tmp18(tmp5Result, obj3);
   }
-  const items4 = [tmp16Result, ];
-  const tmpResult6 = tmp(1375);
+  const items6 = [tmp18Result, ];
+  const tmpResult6 = tmp(1377);
   if (tmpResult6.isAndroid()) {
-    let tmp18;
-    if (tmp13) {
+    let tmp20;
+    if (tmp15) {
       const obj4 = { url: str, style: tmp4.img, autoplay: true };
-      tmp18 = closure_5(tmp(9504).APNGPlayer, obj4);
+      tmp20 = closure_5(tmp(9588).APNGPlayer, obj4);
     }
-    items4[1] = tmp18;
-    obj2.children = items4;
-    return tmp14(View, obj2);
+    items6[1] = tmp20;
+    obj2.children = items6;
+    return tmp16(View, obj2);
   }
   const obj5 = { source: { uri: str }, style: tmp4.img, accessibilityRole: "image" };
-  tmp18 = closure_5(tmp5(5717), obj5);
+  tmp20 = closure_5(tmp5(5842), obj5);
 }
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let closure_7 = createStyles.createStyles((arg0, arg1, arg2, arg3, arg4) => {
@@ -201,7 +207,7 @@ let closure_7 = createStyles.createStyles((arg0, arg1, arg2, arg3, arg4) => {
   }
   return obj;
 });
-const __initData = { code: "function NameplateTsx1(){const{opacity}=this.__closure;return{opacity:opacity.get()};}" };
+let closure_8 = { code: "(function NameplateTsx1(){let[opacity]=this.__closure;return{opacity:opacity.get()};})" };
 let result = size.fileFinishedImporting("modules/collectibles/nameplates/native/Nameplate.tsx");
 
 export default function Nameplate(nameplate) {

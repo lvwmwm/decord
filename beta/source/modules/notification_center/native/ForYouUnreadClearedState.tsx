@@ -1,19 +1,19 @@
-// Module ID: 18513
-// Function ID: 18514
+// Module ID: 18868
+// Function ID: 18869
 // Name: ForYouUnreadClearedState
-// Dependencies: [19, 17, 21, 5014, 575, 1187, 10549, 5624, 1113, 2]
+// Dependencies: [19, 17, 21, 5140, 575, 1187, 10668, 5751, 1113, 2]
 // Exports: ForYouUnreadClearedState
 
-// Module 18513 (ForYouUnreadClearedState)
+// Module 18868 (ForYouUnreadClearedState)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10549 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10668 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_4;
@@ -45,11 +45,11 @@ export function ForYouUnreadClearedState() {
   const Icon = native.Icon;
   items[1] = React3(Icon, obj3);
   const obj4 = { children: items1 };
-  const obj5 = { color: "mobile-text-heading-primary", variant: "text-md/semibold", style: tmp.headerText, children: intl.string(intl3.t.DonStq) };
+  const obj5 = { color: "mobile-text-heading-primary", variant: "body-md/semibold", style: tmp.headerText, children: intl.string(intl3.t.DonStq) };
   const Text = Text_Text.Text;
   intl = intl3.intl;
   items1 = [React3(Text, obj5), ];
-  const obj6 = { color: "text-default", variant: "text-md/medium", children: intl2.string(intl3.t.jXFsai) };
+  const obj6 = { color: "text-default", variant: "body-md/medium", children: intl2.string(intl3.t.jXFsai) };
   const Text2 = Text_Text.Text;
   intl2 = intl3.intl;
   items1[1] = React3(Text2, obj6);

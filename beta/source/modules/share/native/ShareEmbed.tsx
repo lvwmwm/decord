@@ -1,18 +1,18 @@
-// Module ID: 15726
-// Function ID: 15727
+// Module ID: 16040
+// Function ID: 16041
 // Name: ShareEmbed
-// Dependencies: [19, 17, 21, 5014, 575, 6953, 5717, 5624, 2]
+// Dependencies: [19, 17, 21, 5140, 575, 7015, 5842, 5751, 2]
 // Exports: default
 
-// Module 15726 (ShareEmbed)
+// Module 16040 (ShareEmbed)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import FastImageDefault from "FastImage" /* 5717 */;
-import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 6953 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import FastImageDefault from "FastImage" /* 5842 */;
+import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 7015 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -100,7 +100,7 @@ export default function ShareEmbed(embed) {
         tmp5 = hasOwnProperty(FastImageDefault, obj2);
       }
       items = [tmp5, ];
-      const obj4 = { variant: "text-xs/semibold", color: "mobile-text-heading-primary", ellipsizeMode: "tail", lineClamp: 1, children: author.name };
+      const obj4 = { variant: "body-xs/semibold", color: "mobile-text-heading-primary", ellipsizeMode: "tail", lineClamp: 1, children: author.name };
       items[1] = hasOwnProperty(Text_Text.Text, obj4);
       return tmp2(tmp3, obj);
     }
@@ -112,7 +112,7 @@ export default function ShareEmbed(embed) {
     }
     let tmp2 = null;
     if (null != title) {
-      const obj = { style: { marginVertical: 1 }, variant: "text-xs/semibold", color: "mobile-text-heading-primary", lineClamp: 1, ellipsizeMode: "tail", children: title };
+      const obj = { style: { marginVertical: 1 }, variant: "body-xs/semibold", color: "mobile-text-heading-primary", lineClamp: 1, ellipsizeMode: "tail", children: title };
       tmp2 = hasOwnProperty(Text_Text.Text, obj);
     }
     return tmp2;
@@ -128,7 +128,7 @@ export default function ShareEmbed(embed) {
     if (null == memo3) {
       tmp = null;
       if (null != description) {
-        const obj = { style: { marginVertical: 1 }, variant: "text-xs/medium", color: "text-default", lineClamp: 1, ellipsizeMode: "tail", children: description };
+        const obj = { style: { marginVertical: 1 }, variant: "body-xs/medium", color: "text-default", lineClamp: 1, ellipsizeMode: "tail", children: description };
         tmp = hasOwnProperty(Text_Text.Text, obj);
       }
     }
@@ -147,7 +147,7 @@ export default function ShareEmbed(embed) {
       const tmp13 = closure_7;
       if (tmp9Result) {
         let obj2 = { style: tmp.thumbnail, source: memo, resizeMode: "cover" };
-        tmp9Result = tmp9(isLoadingEmbed(5717), obj2);
+        tmp9Result = tmp9(isLoadingEmbed(5842), obj2);
       }
       let obj3 = { children: items6 };
       items6 = [tmp9Result, ];

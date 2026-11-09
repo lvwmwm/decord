@@ -1,15 +1,15 @@
-// Module ID: 13816
-// Function ID: 13817
+// Module ID: 14050
+// Function ID: 14051
 // Name: useVoiceMessageTooltip
-// Dependencies: [19, 1493, 13725, 1113, 7101, 9955, 2]
+// Dependencies: [19, 1495, 13957, 1113, 7172, 10077, 2]
 // Exports: default
 
-// Module 13816 (useVoiceMessageTooltip)
+// Module 14050 (useVoiceMessageTooltip)
 import intl2 from "intl" /* 1113 */;
-import useKeyboardIsOpen from "useKeyboardIsOpen" /* 7101 */;
+import useKeyboardIsOpen from "useKeyboardIsOpen" /* 7172 */;
 import react from "react" /* 19 */;
-import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore" /* 1493 */;
-import VoiceMessagesUIStore from "VoiceMessagesUIStore" /* 13725 */;
+import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore" /* 1495 */;
+import VoiceMessagesUIStore from "VoiceMessagesUIStore" /* 13957 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

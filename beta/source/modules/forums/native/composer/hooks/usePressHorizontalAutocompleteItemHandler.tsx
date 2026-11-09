@@ -1,12 +1,12 @@
-// Module ID: 10223
-// Function ID: 10224
+// Module ID: 10342
+// Function ID: 10343
 // Name: usePressHorizontalAutocompleteItemHandler
-// Dependencies: [19, 1072, 10224, 2]
+// Dependencies: [19, 1072, 10343, 2]
 // Exports: usePressHorizontalAutocompleteItemHandler
 
-// Module 10223 (usePressHorizontalAutocompleteItemHandler)
+// Module 10342 (usePressHorizontalAutocompleteItemHandler)
 import Constants from "Constants" /* 1072 */;
-import autocompleter_AutocompleteUtils from "autocompleter/AutocompleteUtils" /* 10224 */;
+import autocompleter_AutocompleteUtils from "autocompleter/AutocompleteUtils" /* 10343 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -21,11 +21,11 @@ export function usePressHorizontalAutocompleteItemHandler(draftContent) {
   const setSelection = draftContent.setSelection;
   const channel = draftContent.channel;
   const items = [draftContent, handleTextChange, setSelection, channel];
-  return setSelection.useCallback((type, length2, arg2) => {
+  return setSelection.useCallback((type, arg1, arg2) => {
     const obj = autocompleter_AutocompleteUtils;
     const autocompleteResultText = obj.getAutocompleteResultText(type, channel, set);
-    const substr = draftContent.substring(0, length2);
-    handleTextChange(`${tmp2}${tmp} ${draftContent.substring(length2 + arg2.length + 1)}`);
+    const substr = draftContent.substring(0, arg1);
+    handleTextChange(`${tmp2}${tmp} ${draftContent.substring(arg1 + arg2.length + 1)}`);
     setSelection({ start: (substr + autocompleteResultText).length, end: (substr + autocompleteResultText).length });
   }, items);
 }

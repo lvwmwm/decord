@@ -1,158 +1,105 @@
-// Module ID: 9296
-// Function ID: 9297
+// Module ID: 9376
+// Function ID: 9377
 // Name: GuildProfileActionSheet
-// Dependencies: [19, 17, 9046, 9297, 1072, 21, 5014, 575, 5253, 9047, 504, 5596, 8741, 7326, 7351, 9048, 9298, 5634, 1113, 14730, 14736, 9299, 14737, 671, 5272, 5587, 5275, 5595, 2]
+// Dependencies: [19, 17, 1072, 21, 5140, 575, 5369, 5724, 8812, 671, 9377, 14973, 14967, 5388, 5715, 5392, 5723, 2]
 // Exports: default
 
-// Module 9296 (GuildProfileActionSheet)
+// Module 9376 (GuildProfileActionSheet)
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
 import Constants from "Constants" /* 1072 */;
-import GuildProfileStore2 from "GuildProfileStore" /* 9046 */;
-import GuildProfileActionCreators from "GuildProfileActionCreators" /* 9048 */;
-import GuildProfileConstants from "GuildProfileConstants" /* 9297 */;
-import react from "react" /* 19 */;
-import react_native from "react-native" /* 17 */;
+import useThemeDefault from "useTheme" /* 5369 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5388 */;
+import BottomSheetModal from "BottomSheetModal" /* 5392 */;
+import LinearGradientDefault from "LinearGradient" /* 5715 */;
+import ActionSheetHeaderBar from "ActionSheetHeaderBar" /* 5723 */;
+import GuildProfileSheetBodyDefault from "GuildProfileSheetBody" /* 9377 */;
+import GuildProfileCTADefault from "GuildProfileCTA" /* 14973 */;
+import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
-const GuildProfileStore = GuildProfileStore2;
-let BottomSheet;
-
-let c10;
-let closure_4;
-let hasOwnProperty;
+let metroImportDefault;
+let metroRequire;
 let obj2;
-let unpackModuleId;
-({ View: closure_4, ActivityIndicator: hasOwnProperty } = react_native);
-const GuildProfileFetchStatus = GuildProfileStore2.GuildProfileFetchStatus;
-const INVALID_ACCESS_ERROR_CODE = GuildProfileConstants.INVALID_ACCESS_ERROR_CODE;
+let tmp4;
+const GuildProfileCreateTagUpsellDefault = tmp4(14967);
+let react = react_mod;
+const View = react_native.View;
 const VerticalGradient = Constants.VerticalGradient;
-({ jsx: c10, jsxs: unpackModuleId } = Fragment);
-let obj = { loadingContainer: { paddingTop: 40 }, footerContainer: { paddingHorizontal: 16, paddingVertical: 40 }, footerStack: { gap: 8 }, scrollView: obj2 };
+({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
+let obj = { footerContainer: { paddingHorizontal: 16, paddingVertical: 40 }, footerStack: { gap: 8 }, scrollView: obj2 };
 obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
-let closure_12 = createStyles.createStyles(obj);
-let result = size.fileFinishedImporting("modules/guild_profile/native/components/GuildProfileActionSheet.tsx");
+let closure_8 = createStyles.createStyles(obj);
+const result = size.fileFinishedImporting("modules/guild_profile/native/components/GuildProfileActionSheet.tsx");
 
 export default function GuildProfileActionSheet(guildId) {
   let bottomSheetClose;
-  let bottomSheetRef;
+  let c5;
+  let closure_3;
   let context;
-  let fetchGuildProfile;
-  let guildProfile;
-  let intl;
-  let intl2;
   let inviteKey;
-  let items4;
-  let items5;
-  let items7;
-  let obj17;
-  let obj20;
+  let ref;
   guildId = guildId.guildId;
-  fetchGuildProfile = undefined;
-  let analyticsLocations;
-  ({ context, inviteKey } = guildId);
-  const tmp = closure_12();
-  const tmp4 = fetchGuildProfile(analyticsLocations[8])();
-  let obj = guildId(analyticsLocations[9]);
-  const guildProfile1 = obj.useGuildProfile(guildId);
-  ({ guildProfile, fetchGuildProfile } = guildProfile1);
-  const fetchStatus = guildProfile1.fetchStatus;
-  let items = [GuildProfileStore];
-  const obj2 = guildId(analyticsLocations[10]);
-  const stateFromStores = obj2.useStateFromStores(items, () => GuildProfileStore.getErrorCode(guildId));
-  const obj3 = guildId(analyticsLocations[11]);
-  const token = obj3.useToken(fetchGuildProfile(analyticsLocations[7]).colors.INTERACTIVE_TEXT_HOVER, tmp4);
-  const obj4 = guildId(analyticsLocations[12]);
-  const bottomSheetRef1 = obj4.useBottomSheetRef();
-  ({ bottomSheetClose, bottomSheetRef } = bottomSheetRef1);
-  const tmp10 = fetchGuildProfile(analyticsLocations[13]);
-  analyticsLocations = tmp10(fetchGuildProfile(analyticsLocations[14]).GUILD_PROFILE).analyticsLocations;
-  const obj5 = guildId(analyticsLocations[11]);
-  const token1 = obj5.useToken(fetchGuildProfile(analyticsLocations[7]).colors.BACKGROUND_BASE_LOW);
-  const items1 = [guildId, analyticsLocations];
-  const effect = token1.useEffect(() => {
-    const obj = GuildProfileActionCreators;
-    const result = obj.trackGuildProfileViewed(guildId, analyticsLocations);
-  }, items1);
-  const items2 = [fetchGuildProfile];
-  const items3 = [fetchGuildProfile];
-  const callback = token1.useCallback(() => {
-    fetchGuildProfile(true);
-  }, items2);
-  const effect1 = token1.useEffect(() => {
-    fetchGuildProfile();
-  }, items3);
-  const obj6 = token1;
-  if (fetchStatus !== GuildProfileFetchStatus.NOT_FETCHED) {
-    let tmp18;
-    let tmp30Result;
-    let tmp19;
-    if (fetchStatus !== GuildProfileFetchStatus.FETCHING) {
-      if (null == guildProfile) {
-        if (stateFromStores === INVALID_ACCESS_ERROR_CODE) {
-          tmp18 = closure_10(tmp2(tmp3[16]), {});
-          const obj7 = { style: tmp.footerStack, children: items4 };
-          const obj8 = { size: "lg", text: intl2.string(guildId(analyticsLocations[18]).t.cpT0Cq), onPress: bottomSheetClose };
-          const Button2 = tmp5(tmp3[17]).Button;
-          intl2 = tmp5(tmp3[18]).intl;
-          items4 = [closure_10(Button2, obj8), ];
-          const obj9 = { guildId };
-          items4[1] = closure_10(fetchGuildProfile(analyticsLocations[19]), obj9);
-          tmp30Result = closure_11(closure_4, obj7);
-          tmp19 = closure_10;
-        }
+  ({ context: importDefault, inviteKey: dependencyMap } = guildId);
+  c5 = undefined;
+  bottomSheetClose = undefined;
+  let colors;
+  react = colors();
+  let tmp = useThemeDefault();
+  let obj = guildId(5724);
+  const backgroundColor = obj.useToken(nativeDefault.colors.INTERACTIVE_TEXT_HOVER, tmp);
+  let obj2 = guildId(8812);
+  const bottomSheetRef = obj2.useBottomSheetRef();
+  ({ bottomSheetRef: c5, bottomSheetClose } = bottomSheetRef);
+  let obj3 = guildId(5724);
+  const token = obj3.useToken(nativeDefault.colors.BACKGROUND_BASE_LOW);
+  let items = [token];
+  colors = react.useMemo(() => {
+    const items = [, ];
+    const obj = _modDef671(token);
+    const alphaResult = obj.alpha(0);
+    items[0] = alphaResult.hex();
+    items[1] = token;
+    return items;
+  }, items);
+  let obj4 = {
+    guildId,
+    onClose: bottomSheetClose,
+    footer(profile) {
+      let items;
+      const obj = { style: closure_3.footerStack, children: items };
+      items = [, ];
+      const obj2 = { profile, context: importDefault, inviteKey: dependencyMap };
+      items[0] = metroRequire(GuildProfileCTADefault, obj2);
+      let tmp3Result = null != profile.tag;
+      const tmp = metroImportDefault;
+      const tmp2 = View;
+      const tmp3 = metroRequire;
+      if (tmp3Result) {
+        const obj3 = { guildId };
+        tmp3Result = tmp3(GuildProfileCreateTagUpsellDefault, obj3);
       }
-      if (null == guildProfile) {
-        const obj10 = { onRetry: callback };
-        tmp18 = closure_10(tmp2(tmp3[20]), obj10);
-        const obj11 = { size: "lg", text: intl.string(guildId(analyticsLocations[18]).t.cpT0Cq), onPress: bottomSheetClose };
-        const Button = tmp5(tmp3[17]).Button;
-        intl = tmp5(tmp3[18]).intl;
-        tmp30Result = closure_10(Button, obj11);
-        tmp19 = closure_10;
-      } else {
-        const obj13 = { style: tmp.footerStack, children: items5 };
-        items5 = [, ];
-        const obj12 = { guildProfile };
-        const obj14 = { profile: guildProfile, context, inviteKey };
-        const tmp29 = closure_10(fetchGuildProfile(analyticsLocations[21]), obj12);
-        items5[0] = closure_10(fetchGuildProfile(analyticsLocations[22]), obj14);
-        let tmp28Result = null != guildProfile.tag;
-        const tmp30 = closure_11;
-        const tmp31 = closure_4;
-        if (tmp28Result) {
-          const obj15 = { guildId };
-          tmp28Result = tmp28(tmp2(tmp3[19]), obj15);
-        }
-        items5[1] = tmp28Result;
-        tmp30Result = tmp30(tmp31, obj13);
-        tmp18 = tmp29;
-        tmp19 = tmp28;
-      }
+      items[1] = tmp3Result;
+      return tmp(tmp2, obj);
+    },
+    children(children, children2) {
+      let items;
+      let obj2;
+      let obj5;
+      const obj = { ref, scrollable: true, handleDisabled: true, footer: metroRequire(LinearGradientDefault, obj2), children: items };
+      const BottomSheet = Sheet_BottomSheet.BottomSheet;
+      items = [, ];
+      obj2 = { start: VerticalGradient.START, end: { x: 0, y: 0.5 }, style: closure_3.footerContainer, colors, children: children2 };
+      const obj3 = { enableFooterMarginAdjustment: true, style: closure_3.scrollView, children };
+      items[0] = metroRequire(BottomSheetModal.BottomSheetScrollView, obj3);
+      const obj4 = { variant: "floating", tabStyle: obj5, onPress: bottomSheetClose };
+      obj5 = { backgroundColor };
+      items[1] = metroRequire(ActionSheetHeaderBar.ActionSheetHeaderBar, obj4);
+      return metroImportDefault(BottomSheet, obj);
     }
-    const items6 = [token1];
-    const memo = obj6.useMemo(() => {
-      const items = [, ];
-      const obj = _modDef671(token1);
-      const alphaResult = obj.alpha(0);
-      items[0] = alphaResult.hex();
-      items[1] = token1;
-      return items;
-    }, items6);
-    const obj16 = { ref: bottomSheetRef, scrollable: true, handleDisabled: true, footer: tmp19(fetchGuildProfile(analyticsLocations[25]), obj17), children: items7 };
-    BottomSheet = tmp5(tmp3[24]).BottomSheet;
-    obj17 = { start: VerticalGradient.START, end: { x: 0, y: 0.5 }, style: tmp.footerContainer, colors: memo, children: tmp30Result };
-    const obj18 = { enableFooterMarginAdjustment: true, style: tmp.scrollView, children: tmp18 };
-    items7 = [tmp19(guildId(analyticsLocations[26]).BottomSheetScrollView, obj18), ];
-    const obj19 = { variant: "floating", tabStyle: obj20, onPress: bottomSheetClose };
-    obj20 = { backgroundColor: token };
-    items7[1] = tmp19(guildId(analyticsLocations[27]).ActionSheetHeaderBar, obj19);
-    return closure_11(BottomSheet, obj16);
-  }
-  const obj21 = { style: tmp.loadingContainer, children: closure_10(closure_5, { animating: true, size: "large" }) };
-  tmp18 = closure_10(closure_4, obj21);
-  tmp30Result = null;
-  tmp19 = closure_10;
+  };
+  return bottomSheetClose(GuildProfileSheetBodyDefault, obj4);
 };

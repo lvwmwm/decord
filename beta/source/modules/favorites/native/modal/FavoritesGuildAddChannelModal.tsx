@@ -1,20 +1,20 @@
-// Module ID: 14403
-// Function ID: 14404
+// Module ID: 14639
+// Function ID: 14640
 // Name: FavoritesGuildAddChannelModal
-// Dependencies: [5, 32, 19, 17, 4876, 10727, 21, 5014, 575, 14404, 14405, 13384, 1379, 5711, 1113, 10831, 14402, 1491, 1375, 13394, 3450, 10736, 13395, 13419, 14406, 2]
+// Dependencies: [5, 32, 19, 17, 5002, 10846, 21, 5140, 575, 14640, 14641, 13616, 1380, 5836, 1113, 10950, 14638, 1493, 1377, 13626, 3608, 10855, 13627, 13651, 14642, 2]
 // Exports: default
 
-// Module 14403 (FavoritesGuildAddChannelModal)
+// Module 14639 (FavoritesGuildAddChannelModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import PlatformUtils from "PlatformUtils" /* 1375 */;
-import FavoritesConstants from "FavoritesConstants" /* 4876 */;
-import UserRowConstants from "UserRowConstants" /* 10727 */;
+import PlatformUtils from "PlatformUtils" /* 1377 */;
+import FavoritesConstants from "FavoritesConstants" /* 5002 */;
+import UserRowConstants from "UserRowConstants" /* 10846 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let c3, c4, dependencyMap;
@@ -46,8 +46,8 @@ export default function FavoritesGuildAddChannelModal(parentId) {
   const source = parentId.source;
   const tmp = closure_11();
   const tmp3 = dependencyMap;
-  const tmp4 = first(14404)();
-  first(14405)(source);
+  const tmp4 = first(14640)();
+  first(14641)(source);
   const tmp2 = first;
   [first, dependencyMap] = react.useState([]);
   const callback = react.useCallback((arg0) => {
@@ -65,7 +65,7 @@ export default function FavoritesGuildAddChannelModal(parentId) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -116,7 +116,7 @@ export default function FavoritesGuildAddChannelModal(parentId) {
             presentError(intl.string(_null(c2[14]).t.R0RpRX));
           }
           c4 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp32) {
         c4 = 3;
@@ -124,7 +124,7 @@ export default function FavoritesGuildAddChannelModal(parentId) {
       }
     }
   }), items);
-  height = first(1491)({ ignoreKeyboard: true }).height;
+  height = first(1493)({ ignoreKeyboard: true }).height;
   const items1 = [height];
   let obj = {
     style: react.useMemo(() => {
@@ -134,22 +134,22 @@ export default function FavoritesGuildAddChannelModal(parentId) {
     }, items1),
     children: items2
   };
-  let obj2 = { title: intl.string(first(3450).Rp35U1), onClose: parentId(14402).closeFavoritesGuildAddChannelModal };
-  const tmp12 = first(13394);
+  let obj2 = { title: intl.string(first(3608).Rp35U1), onClose: parentId(14638).closeFavoritesGuildAddChannelModal };
+  const tmp12 = first(13626);
   intl = parentId(1113).intl;
   items2 = [closure_9(tmp12, obj2), ];
   let obj3 = { style: tmp.container, children: items3 };
-  items3 = [closure_9(first(10736), { absolute: true }), , ];
+  items3 = [closure_9(first(10855), { absolute: true }), , ];
   let obj4 = { rowMode: UserRowModes.TOGGLE, initialSelectedDestinations: [], onSelectedDestinationChange: callback, channelFilter: tmp4, insetEnd: num, disableGradient: true, disableStickySections: true, disableSelection: first.length >= closure_7 };
   num = 0;
-  const tmp14 = first(13395);
+  const tmp14 = first(13627);
   if (first.length > 0) {
     num = tmp2(575).space.PX_80;
   }
   items3[1] = closure_9(tmp14, obj4);
   let obj5 = { isVisible: length > 0, floatingBackgroundColor: tmp.container.backgroundColor, text: tmp13Result.getFavoritesAddButtonLabel(first.length), onPress: callback1 };
-  const ModalFloatingAction = tmp13(13419).ModalFloatingAction;
-  tmp13Result = parentId(14406);
+  const ModalFloatingAction = tmp13(13651).ModalFloatingAction;
+  tmp13Result = parentId(14642);
   items3[2] = closure_9(ModalFloatingAction, obj5);
   items2[1] = closure_10(View, obj3);
   return closure_10(View, obj);

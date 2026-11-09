@@ -1,75 +1,74 @@
 // Module ID: 8329
 // Function ID: 8330
-// Dependencies: [8279]
+// Dependencies: [8321, 8322]
+// Exports: isAVI, isFLV, isM4V, isMKV, isMOV, isMP4, isOGG, isSWF, isWEBM
 
 // Module 8329
-import _mod8279 from "module_8279" /* 8279 */;
+import _mod8321 from "module_8321" /* 8321 */;
+import _mod8322 from "module_8322" /* 8322 */;
 
 
-export default {
-  read(byteLength) {
-    let str5;
-    let str6;
-    let str9;
-    let tmp11;
-    let tmp13;
-    let tmp16;
-    let tmp5;
-    let tmp8;
-    let tmp;
-    if (6 <= byteLength.byteLength) {
-      const obj = _mod8279;
-      const stringFromDataView = obj.getStringFromDataView(byteLength, 3, 3);
-      tmp = { value: stringFromDataView, description: stringFromDataView };
-      const obj2 = { value: stringFromDataView, description: stringFromDataView };
+export function isAVI(fileChunk) {
+  fileChunk = _mod8321.getFileChunk(fileChunk);
+  const FileTypes = _mod8322.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "avi");
+}
+export function isFLV(fileChunk) {
+  fileChunk = _mod8321.getFileChunk(fileChunk);
+  const FileTypes = _mod8322.FileTypes;
+  const tmp4 = FileTypes.checkByFileType(fileChunk, "flv") && _mod8321.isFlvStringIncluded(fileChunk);
+  return tmp4;
+}
+export function isM4V(fileChunk) {
+  fileChunk = _mod8321.getFileChunk(fileChunk);
+  const FileTypes = _mod8322.FileTypes;
+  const tmp4 = FileTypes.checkByFileType(fileChunk, "m4v") && _mod8321.isftypStringIncluded(fileChunk);
+  return tmp4;
+}
+export function isMKV(fileChunk) {
+  fileChunk = _mod8321.getFileChunk(fileChunk, 64);
+  const FileTypes = _mod8322.FileTypes;
+  const tmp4 = FileTypes.checkByFileType(fileChunk, "mkv") && "mkv" === _mod8321.findMatroskaDocTypeElements(fileChunk);
+  return tmp4;
+}
+export function isMOV(fileChunk) {
+  fileChunk = _mod8321.getFileChunk(fileChunk);
+  const FileTypes = _mod8322.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "mov");
+}
+export function isMP4(fileChunk, excludeSimilarTypes) {
+  fileChunk = _mod8321.getFileChunk(fileChunk);
+  const FileTypes = _mod8322.FileTypes;
+  let checkByFileTypeResult = FileTypes.checkByFileType(fileChunk, "mp4");
+  if (!checkByFileTypeResult) {
+    excludeSimilarTypes = undefined;
+    if (null != excludeSimilarTypes) {
+      excludeSimilarTypes = excludeSimilarTypes.excludeSimilarTypes;
     }
-    const obj3 = { "GIF Version": tmp, "Image Width": tmp5, "Image Height": tmp8, "Global Color Map": tmp11, "Bits Per Pixel": tmp13, "Color Resolution Depth": tmp16 };
-    tmp5 = undefined;
-    if (8 <= byteLength.byteLength) {
-      const uint16 = byteLength.getUint16(6, true);
-      const _HermesInternal = HermesInternal;
-      tmp5 = { value: uint16, description: "" + uint16 + "px" };
-      const obj4 = { value: uint16, description: "" + uint16 + "px" };
+    let tmp8 = !excludeSimilarTypes;
+    if (tmp8) {
+      const fileChunk1 = tmp(8321).getFileChunk(fileChunk);
+      const FileTypes2 = tmp(8322).FileTypes;
+      tmp8 = FileTypes2.checkByFileType(fileChunk1, "m4v") && _mod8321.isftypStringIncluded(fileChunk1);
+      FileTypes2.checkByFileType(fileChunk1, "m4v") && _mod8321.isftypStringIncluded(fileChunk1);
     }
-    tmp8 = undefined;
-    if (10 <= byteLength.byteLength) {
-      const uint161 = byteLength.getUint16(8, true);
-      const _HermesInternal2 = HermesInternal;
-      tmp8 = { value: uint161, description: "" + uint161 + "px" };
-      const obj5 = { value: uint161, description: "" + uint161 + "px" };
-    }
-    tmp11 = undefined;
-    if (11 <= byteLength.byteLength) {
-      const tmp12 = (128 & byteLength.getUint8(10)) >>> 7;
-      const obj6 = { value: tmp12, description: str5 };
-      str5 = "No";
-      if (1 === tmp12) {
-        str5 = "Yes";
-      }
-      tmp11 = obj6;
-    }
-    tmp13 = undefined;
-    if (11 <= byteLength.byteLength) {
-      const sum = 1 + (7 & byteLength.getUint8(10));
-      const obj7 = { value: sum, description: "" + sum + " " + str6 };
-      str6 = "bits";
-      if (1 === sum) {
-        str6 = "bit";
-      }
-      const _HermesInternal3 = HermesInternal;
-      tmp13 = obj7;
-    }
-    tmp16 = undefined;
-    if (11 <= byteLength.byteLength) {
-      const sum1 = 1 + ((112 & byteLength.getUint8(10)) >>> 4);
-      const obj8 = { value: sum1, description: "" + sum1 + " " + str9 };
-      str9 = "bits";
-      if (1 === sum1) {
-        str9 = "bit";
-      }
-      const _HermesInternal4 = HermesInternal;
-      tmp16 = obj8;
-    }
-    return obj3;
+    checkByFileTypeResult = tmp8;
   }
-};
+  return checkByFileTypeResult;
+}
+export function isOGG(fileChunk) {
+  fileChunk = _mod8321.getFileChunk(fileChunk);
+  const FileTypes = _mod8322.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "ogg");
+}
+export function isSWF(fileChunk) {
+  fileChunk = _mod8321.getFileChunk(fileChunk);
+  const FileTypes = _mod8322.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "swf");
+}
+export function isWEBM(fileChunk) {
+  fileChunk = _mod8321.getFileChunk(fileChunk, 64);
+  const FileTypes = _mod8322.FileTypes;
+  const tmp4 = FileTypes.checkByFileType(fileChunk, "webm") && "webm" === _mod8321.findMatroskaDocTypeElements(fileChunk);
+  return tmp4;
+}

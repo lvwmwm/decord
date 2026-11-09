@@ -1,14 +1,14 @@
-// Module ID: 20105
-// Function ID: 20106
+// Module ID: 20513
+// Function ID: 20514
 // Name: SentryExperimentFeatureFlagManager
-// Dependencies: [5238, 1246, 5045, 1242, 7287, 2]
+// Dependencies: [5354, 1246, 5171, 1242, 7350, 2]
 
-// Module 20105 (SentryExperimentFeatureFlagManager)
+// Module 20513 (SentryExperimentFeatureFlagManager)
 import SentryUtilsDefault from "SentryUtils" /* 1242 */;
-import ExperimentStore from "ExperimentStore" /* 5238 */;
+import ExperimentStore from "ExperimentStore" /* 5354 */;
 import ApexExperimentStore from "ApexExperimentStore" /* 1246 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5045 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7287 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5171 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7350 */;
 import size from "module_2" /* 2 */;
 
 let map;

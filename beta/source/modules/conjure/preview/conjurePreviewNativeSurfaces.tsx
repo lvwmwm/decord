@@ -1,13 +1,17 @@
-// Module ID: 10924
-// Function ID: 10925
+// Module ID: 11050
+// Function ID: 11051
 // Name: conjurePreviewNativeSurfaces
-// Dependencies: [1072, 9338, 2]
-// Exports: beginNativeSurfaceSessionForFrame
+// Dependencies: [6901, 1072, 11051, 11055, 11056, 9419, 2]
+// Exports: beginNativeSurfaceSessionForFrame, holdPreviewGameCaptureAnswers
 
-// Module 10924 (conjurePreviewNativeSurfaces)
+// Module 11050 (conjurePreviewNativeSurfaces)
 import Constants from "Constants" /* 1072 */;
-import RpcCommandInterception from "RpcCommandInterception" /* 9338 */;
+import RpcCommandInterception from "RpcCommandInterception" /* 9419 */;
+import FramesStore from "FramesStore" /* 6901 */;
 import size from "module_2" /* 2 */;
+
+const require = globalThis.__r;
+let _require, c0;
 
 function asString(str) {
   let tmp;
@@ -50,38 +54,104 @@ function menuOptionIds(items, items2) {
   }
 }
 function answerFor(cmd) {
+  let answered;
+  let obj4;
   let options;
+  let prop;
+  let result;
   let subject;
-  let closure_0 = cmd;
-  const found = closure_6.find((iframeId) => iframeId.iframeId === iframeId.iframeId);
-  if (null == found) {
-    return null;
-  } else if (null == obj[cmd.cmd]) {
+  let tmp3;
+  let tmp9Result;
+  _require = cmd;
+  const found = closure_8.find((iframeId) => iframeId.iframeId === cmd.iframeId);
+  let applicationId;
+  if (cmd.cmd === RPCCommands.CAPTURE_SCREEN) {
+    const frameByIframeId = FramesStore.getFrameByIframeId(cmd.iframeId);
+    applicationId = undefined;
+    if (frameByIframeId != null) {
+      applicationId = frameByIframeId.applicationId;
+    }
+    let tmp8 = null;
+    if (null != applicationId) {
+      obj = require("conjurePreviewGameCapture");
+      tmp8 = null;
+      if (obj.hasConjurePreviewGameCapture(applicationId)) {
+        let obj3;
+        if (cmd.cmd === RPCCommands.CAPTURE_SCREEN) {
+          let obj2 = { result: tmp9Result.readConjurePreviewGameCapture(applicationId), answered: "returned the selected game capture" };
+          obj3 = obj2;
+          tmp9Result = require("conjurePreviewGameCapture");
+        } else {
+          obj3 = { result: obj4, answered: "screen capture allowed for the selected game capture" };
+          obj4 = {
+            permissions: prop.map((permission) => {
+                      let conjureDevicePermissionStatus;
+                      if ("screen_capture" === permission) {
+                        conjureDevicePermissionStatus = { permission, state: "granted" };
+                        const obj2 = { permission, state: "granted" };
+                      } else {
+                        obj = applicationId(dependencyMap[4]);
+                        conjureDevicePermissionStatus = obj.getConjureDevicePermissionStatus(applicationId, permission);
+                      }
+                      return conjureDevicePermissionStatus;
+                    })
+          };
+          prop = tmp9(11055).CONJURE_DEVICE_PERMISSION_NAMES;
+        }
+        tmp8 = obj3;
+      }
+    }
+    tmp3 = tmp8;
+  } else {
+    tmp3 = null;
+  }
+  if (tmp3 == null) {
+    let tmp11 = null;
+    if (null != found) {
+      let tmp12Result;
+      if (obj[cmd.cmd] != null) {
+        tmp12Result = tmp12(cmd);
+      }
+      if (tmp12Result == null) {
+        tmp12Result = null;
+      }
+      tmp11 = tmp12Result;
+    }
+    tmp3 = tmp11;
+  }
+  if (null == tmp3) {
     return null;
   } else {
-    const tmp10Result = obj[cmd.cmd](cmd);
-    ({ options, subject } = tmp10Result);
-    const result = tmp10Result.result;
-    if (found.recorded.length < 20) {
+    ({ options, subject } = tmp3);
+    let tmp14 = null != found;
+    ({ result, answered } = tmp3);
+    if (tmp14) {
+      tmp14 = cmd.cmd !== tmp2.GET_DEVICE_PERMISSIONS;
+    }
+    if (tmp14) {
+      tmp14 = found.recorded.length < 20;
+    }
+    if (tmp14) {
       const recorded = found.recorded;
-      const obj2 = { command: cmd.cmd, answered: tmp12 };
+      const obj5 = { command: cmd.cmd, answered };
       if (null != options) {
-        let obj5;
+        let obj9;
+        let obj8;
         if (options.length > 0) {
-          obj = { options };
-          const obj3 = { options };
+          obj9 = { options };
+          const obj6 = { options };
         }
-        const merged = Object.assign(obj);
+        const merged = Object.assign(obj9);
         if (null != subject) {
-          obj5 = { subject };
-          const obj4 = { subject };
+          obj8 = { subject };
+          const obj7 = { subject };
         } else {
-          obj5 = {};
+          obj8 = {};
         }
-        const merged1 = Object.assign(obj5);
-        tmp13(obj2);
+        const merged1 = Object.assign(obj8);
+        tmp15(obj5);
       }
-      obj = {};
+      obj9 = {};
     }
     return { result };
   }
@@ -145,15 +215,15 @@ let obj = {
   },
   [RPCCommands.REQUEST_DEVICE_PERMISSIONS]: (args) => {
     let found;
-    const f98491 = (permission) => ({ permission, state: "denied" });
+    const f100136 = (permission) => ({ permission, state: "denied" });
     if (Array.isArray(args.args.permissions)) {
       const permissions = args.args.permissions;
       found = permissions.filter((item) => typeof item === "string");
     } else {
       found = [];
     }
-    obj = { result: { permissions: found.map(f98491) }, answered: "denied; an agent may not grant device access", options: found };
-    ({ permissions: found.map(f98491) });
+    obj = { result: { permissions: found.map(f100136) }, answered: "denied; an agent may not grant device access", options: found };
+    ({ permissions: found.map(f100136) });
     return obj;
   },
   [RPCCommands.CAPTURE_SCREEN]: () => ({ result: { status: "permission_denied" }, answered: "denied; an agent may not capture the screen" }),
@@ -174,10 +244,10 @@ let obj = {
   [RPCCommands.HIDE_TOOLTIP]: () => ({ result: { hidden: true }, answered: "hidden" }),
   [RPCCommands.OPEN_MEDIA_VIEWER]: () => ({ result: { opened: true }, answered: "opened" }),
   [RPCCommands.SHOW_TOAST]: () => ({ result: { shown: true }, answered: "shown" }),
-  [RPCCommands.OPEN_INVITE_DIALOG]: () => ({ result: "children", answered: "<string:25167697>" }),
-  [RPCCommands.OPEN_SHARE_MOMENT_DIALOG]: () => ({ result: "children", answered: "<string:25167697>" })
+  [RPCCommands.OPEN_INVITE_DIALOG]: () => ({ result: "channel", answered: "man_artist_tone5" }),
+  [RPCCommands.OPEN_SHARE_MOMENT_DIALOG]: () => ({ result: "channel", answered: "man_artist_tone5" })
 };
-let closure_5 = {
+let closure_7 = {
   drain() {
     return [];
   },
@@ -186,32 +256,39 @@ let closure_5 = {
   },
   iframeId: null
 };
-let closure_6 = [];
+let closure_8 = [];
+let closure_10 = 0;
 const keys = Object.keys(obj);
 let result = size.fileFinishedImporting("modules/conjure/preview/conjurePreviewNativeSurfaces.tsx");
 
 export const ANSWERED_NATIVE_COMMANDS = keys;
 export function beginNativeSurfaceSessionForFrame(iframeId, beneathBatches) {
   if (null == iframeId) {
-    return closure_5;
+    return closure_7;
   } else {
     let arr;
+    let tmp10;
     const obj2 = { iframeId, recorded: [] };
     beneathBatches = undefined;
     if (beneathBatches != null) {
       beneathBatches = beneathBatches.beneathBatches;
     }
     if (true === beneathBatches) {
-      closure_6.push(obj2);
-      arr = closure_6;
+      closure_8.push(obj2);
+      arr = closure_8;
     } else {
-      arr = closure_6;
-      closure_6.unshift(obj2);
+      closure_8.unshift(obj2);
+      arr = closure_8;
     }
-    if (1 === arr.length) {
-      obj = obj2(9338);
-      let result = obj.setRpcCommandInterceptor(answerFor);
+    let tmp7 = dependencyMap;
+    let setRpcCommandInterceptor = obj2(9419).setRpcCommandInterceptor;
+    obj2(9419);
+    if (arr.length > 0) {
+      tmp10 = answerFor;
+    } else {
+      tmp10 = null;
     }
+    let result = setRpcCommandInterceptor(tmp10);
     return {
       iframeId,
       drain() {
@@ -219,15 +296,49 @@ export function beginNativeSurfaceSessionForFrame(iframeId, beneathBatches) {
           return recorded.splice(0, obj2.recorded.length);
         },
       end() {
-          const index = closure_6.indexOf(obj2);
+          const index = closure_8.indexOf(obj2);
           if (-1 !== index) {
-            closure_6.splice(index, 1);
-            if (0 === closure_6.length) {
-              obj = RpcCommandInterception;
-              const result = obj.setRpcCommandInterceptor(null);
+            let tmp7;
+            closure_8.splice(index, 1);
+            const setRpcCommandInterceptor = RpcCommandInterception.setRpcCommandInterceptor;
+            RpcCommandInterception;
+            if (closure_8.length > 0) {
+              tmp7 = answerFor;
+            } else {
+              tmp7 = null;
             }
+            const result = setRpcCommandInterceptor(tmp7);
           }
         }
     };
   }
+}
+export function holdPreviewGameCaptureAnswers() {
+  let tmp3;
+  closure_10 = closure_10 + 1;
+  let tmp = require("RpcCommandInterception");
+  let setRpcCommandInterceptor = tmp.setRpcCommandInterceptor;
+  if (length.length > 0) {
+    tmp3 = answerFor;
+  } else {
+    tmp3 = null;
+  }
+  let result = setRpcCommandInterceptor(tmp3);
+  _require = false;
+  return () => {
+    const tmp = c0;
+    if (!tmp) {
+      let tmp8;
+      c0 = true;
+      closure_10 = closure_10 - 1;
+      const setRpcCommandInterceptor = RpcCommandInterception.setRpcCommandInterceptor;
+      RpcCommandInterception;
+      if (length.length > 0) {
+        tmp8 = answerFor;
+      } else {
+        tmp8 = null;
+      }
+      const result = setRpcCommandInterceptor(tmp8);
+    }
+  };
 }

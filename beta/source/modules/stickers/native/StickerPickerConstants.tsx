@@ -1,10 +1,10 @@
-// Module ID: 10236
-// Function ID: 10237
+// Module ID: 10355
+// Function ID: 10356
 // Name: StickerPickerConstants
-// Dependencies: [1228, 6561, 2]
+// Dependencies: [1228, 6616, 2]
 
-// Module 10236 (StickerPickerConstants)
-import StickersTypes from "StickersTypes" /* 6561 */;
+// Module 10355 (StickerPickerConstants)
+import StickersTypes from "StickersTypes" /* 6616 */;
 import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1228 */;
 import size from "module_2" /* 2 */;
 

@@ -1,20 +1,20 @@
-// Module ID: 17281
-// Function ID: 17282
+// Module ID: 17607
+// Function ID: 17608
 // Name: SettingsAppearanceActivityCardItem
-// Dependencies: [19, 17, 2062, 17282, 21, 5095, 1187, 5014, 575, 563, 9509, 5717, 5624, 1895, 17283, 17284, 17285, 2]
+// Dependencies: [19, 17, 2186, 17608, 21, 1652, 1187, 5140, 575, 563, 9593, 5842, 5751, 2024, 17609, 17610, 17611, 2]
 // Exports: default
 
-// Module 17281 (SettingsAppearanceActivityCardItem)
+// Module 17607 (SettingsAppearanceActivityCardItem)
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
-import ClipView from "ClipView" /* 9509 */;
+import ClipView from "ClipView" /* 9593 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import LocaleStore from "LocaleStore" /* 2062 */;
-import HappeningNowConstants from "HappeningNowConstants" /* 17282 */;
+import LocaleStore from "LocaleStore" /* 2186 */;
+import HappeningNowConstants from "HappeningNowConstants" /* 17608 */;
 import Fragment from "Fragment" /* 21 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import module_1652 from "module_1652" /* 1652 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -41,7 +41,7 @@ let size2;
 ({ View: c3, StyleSheet } = react_native);
 ({ HAPPENING_NOW_BADGE_SIZE, HAPPENING_NOW_CONTENT_HEIGHT, HAPPENING_NOW_CARD_HEIGHT, HAPPENING_NOW_CARD_MARGIN_RIGHT, HAPPENING_NOW_CARD_PADDING, HAPPENING_NOW_CARD_PADDING_RIGHT } = HappeningNowConstants);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
-let closure_7 = ReanimatedRexport.createAnimatedComponent(native.Icon);
+let closure_7 = module_1652.createAnimatedComponent(native.Icon);
 let createStyles = createStyles_mod;
 let obj = { card: obj2, cardBadgeWrapper: { position: "absolute", top: 0, right: 0 }, cardImage: obj3, cardBadge: size, cardImageAssetContainer: obj4, cardImageAssetBackground: size1, cardImageAsset: size2, shiftedAvatar: { marginLeft: -4 }, userCounter: obj5 };
 obj2 = { borderRadius: nativeDefault.radii.lg, borderWidth: StyleSheet.hairlineWidth, padding: HAPPENING_NOW_CARD_PADDING, paddingRight: HAPPENING_NOW_CARD_PADDING_RIGHT, marginRight: HAPPENING_NOW_CARD_MARGIN_RIGHT, height: HAPPENING_NOW_CARD_HEIGHT, flexDirection: "row", alignItems: "center" };
@@ -145,7 +145,7 @@ export default function ActivityCardItem(arg0) {
     const obj7 = { style: items5, children: tmp6(Text, obj8) };
     items5 = [tmp4.userCounter, animatedStyles.bgModStrong];
     const View3 = tmp7(tmp2[5]).View;
-    obj8 = { animated: true, variant: "text-xxs/semibold", allowFontScaling: false, style: animatedStyles.textNormal, children: items6 };
+    obj8 = { animated: true, variant: "footnote/semibold", allowFontScaling: false, style: animatedStyles.textNormal, children: items6 };
     Text = tmp(tmp2[12]).Text;
     items6 = ["+"];
     const tmpResult = require("NumberUtils");

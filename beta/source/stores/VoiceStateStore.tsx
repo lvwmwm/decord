@@ -1,17 +1,17 @@
-// Module ID: 5679
-// Function ID: 5680
+// Module ID: 5803
+// Function ID: 5804
 // Name: VoiceStateStore
-// Dependencies: [32, 5680, 1072, 5681, 12, 504, 1622, 572, 2]
+// Dependencies: [32, 5804, 1072, 5805, 12, 504, 1624, 572, 2]
 
-// Module 5679 (VoiceStateStore)
+// Module 5803 (VoiceStateStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
-import MetaQuestUtils from "MetaQuestUtils" /* 1622 */;
-import CallConstants from "CallConstants" /* 5681 */;
+import MetaQuestUtils from "MetaQuestUtils" /* 1624 */;
+import CallConstants from "CallConstants" /* 5805 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import VoiceStateRecord from "VoiceStateRecord" /* 5680 */;
+import VoiceStateRecord from "VoiceStateRecord" /* 5804 */;
 import size from "module_2" /* 2 */;
 
 let closure_14, closure_16, closure_9, sessionId, set2, set3;

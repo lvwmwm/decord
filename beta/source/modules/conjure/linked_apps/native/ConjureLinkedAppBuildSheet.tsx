@@ -1,15 +1,15 @@
-// Module ID: 12163
-// Function ID: 12164
+// Module ID: 12335
+// Function ID: 12336
 // Name: ConjureLinkedAppBuildSheet
-// Dependencies: [19, 21, 5014, 575, 1625, 1113, 3868, 7366, 7321, 6027, 7058, 5258, 12158, 7061, 7368, 2]
+// Dependencies: [19, 21, 5140, 575, 1627, 1113, 4026, 7426, 7382, 6159, 7124, 5374, 12330, 7127, 7428, 2]
 // Exports: default
 
-// Module 12163 (ConjureLinkedAppBuildSheet)
+// Module 12335 (ConjureLinkedAppBuildSheet)
 import nativeDefault from "native" /* 575 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -40,7 +40,7 @@ export default function ConjureLinkedAppBuildSheet(arg0) {
   ({ title, value } = arg0);
   const tmp3 = closure_5(require("useSafeAreaInsets")().bottom);
   const intl = require("intl").intl;
-  const stringResult = intl.string(require("module_3868").Odrcmq);
+  const stringResult = intl.string(require("module_4026").Odrcmq);
   let obj = { header: closure_3(require("BottomSheetTitleHeader").BottomSheetTitleHeader, { title }), children: tmp7(Stack, obj2) };
   const ActionSheet = require("ActionSheet").ActionSheet;
   obj2 = { spacing: require("native").space.PX_16, style: tmp3.content, children: items };

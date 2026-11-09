@@ -1,18 +1,18 @@
-// Module ID: 18015
-// Function ID: 18016
+// Module ID: 18355
+// Function ID: 18356
 // Name: AccountDisabledOrDeletionScheduled
-// Dependencies: [19, 17, 502, 1072, 21, 5014, 575, 1497, 504, 6740, 7111, 1113, 7139, 18016, 5624, 6767, 5634, 2]
+// Dependencies: [19, 17, 502, 1072, 21, 5140, 575, 1499, 504, 6795, 7182, 1113, 7206, 18356, 5751, 6822, 5758, 2]
 // Exports: default
 
-// Module 18015 (AccountDisabledOrDeletionScheduled)
+// Module 18355 (AccountDisabledOrDeletionScheduled)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6740 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6795 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let navigation;
@@ -135,9 +135,9 @@ export default function AccountDisabledOrDeletionScheduled(handleLogin) {
   const obj6 = { style: tmp9.image };
   const tmp8Result = tmp8(tmp2[12]);
   items4[0] = closure_7(tmp(tmp2[13]).WumpTrash, obj6);
-  const obj7 = { style: tmp9.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: stringResult };
+  const obj7 = { style: tmp9.title, accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: stringResult };
   items4[1] = closure_7(tmp(tmp2[14]).Text, obj7);
-  const obj8 = { style: tmp9.description, variant: "text-sm/medium", color: "text-default", children: string2Result };
+  const obj8 = { style: tmp9.description, variant: "body-sm/medium", color: "text-default", children: string2Result };
   items4[2] = closure_7(tmp(tmp2[14]).Text, obj8);
   items5 = [closure_8(ref, obj5), ];
   const obj9 = { children: closure_8(ButtonGroup, obj10) };

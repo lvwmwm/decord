@@ -1,17 +1,17 @@
-// Module ID: 7240
-// Function ID: 7241
+// Module ID: 7304
+// Function ID: 7305
 // Name: FastList
-// Dependencies: [109, 32, 19, 17, 21, 12, 558, 6960, 5624, 1375, 5095, 7241, 7242, 5275, 7243, 2]
+// Dependencies: [109, 32, 19, 17, 21, 12, 558, 7023, 5751, 1377, 1652, 7305, 5392, 7306, 2]
 // Exports: getItemSizeOverrideKey
 
-// Module 7240 (FastList)
+// Module 7304 (FastList)
 import _modDef12 from "module_12" /* 12 */;
 import shallowEqual from "shallowEqual" /* 558 */;
-import PlatformUtils from "PlatformUtils" /* 1375 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 5095 */;
-import BottomSheetModal from "BottomSheetModal" /* 5275 */;
-import NativeViewDefault from "NativeView" /* 6960 */;
-import refObjectUnionAsPropDefault from "refObjectUnionAsProp" /* 7243 */;
+import PlatformUtils from "PlatformUtils" /* 1377 */;
+import _mod1652 from "module_1652" /* 1652 */;
+import BottomSheetModal from "BottomSheetModal" /* 5392 */;
+import NativeViewDefault from "NativeView" /* 7023 */;
+import refObjectUnionAsPropDefault from "refObjectUnionAsProp" /* 7306 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -21,8 +21,8 @@ import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 const shallowEqualDefault = shallowEqual;
-const ReanimatedRexport = ReanimatedRexport2;
-let _require, interpolateResult, obj1, set, transform;
+const module_1652 = _mod1652;
+let _require, obj1, set, transform;
 
 let StyleSheet;
 let c10;
@@ -38,33 +38,49 @@ function defaultRecyclerKey() {
 
 }
 function FastListScrollWorklet(scrollViewRef) {
+  let horizontal;
+  let onScrollWorklet;
+  let scrollPosValue;
+  let tmp2;
+  let tmp3;
+  let tmp4;
+  let tmp5;
+  let tmp6;
   scrollViewRef = scrollViewRef.scrollViewRef;
-  const scrollPosValue = scrollViewRef.scrollPosValue;
-  const horizontal = scrollViewRef.horizontal;
-  const onScrollWorklet = scrollViewRef.onScrollWorklet;
-  obj = scrollViewRef(horizontal[10]);
+  let event;
+  ({ scrollPosValue, horizontal, onScrollWorklet } = scrollViewRef);
+  obj = scrollViewRef(1652);
   const mutable = obj.makeMutable(false);
-  const fn = function l(contentOffset) {
-    contentOffset = contentOffset.contentOffset;
-    const tmp2 = horizontal ? contentOffset.x : contentOffset.y;
-    const contentSize = contentOffset.contentSize;
-    const tmp3 = horizontal ? contentSize.width : contentSize.height;
-    if (0 !== tmp3) {
-      const result = mutable.set(true);
-      const _Math = Math;
-      const result1 = scrollPosValue.set(Math.min(tmp2, tmp3));
-      if (null != onScrollWorklet) {
-        const layoutMeasurement = contentOffset.layoutMeasurement;
-        tmp10(tmp2, tmp3, horizontal ? layoutMeasurement.width : layoutMeasurement.height);
+  const items = [closure_29, horizontal, mutable, scrollPosValue, onScrollWorklet];
+  let c0;
+  let c1;
+  let c2;
+  let c3;
+  [tmp2, tmp3, tmp4, tmp5, tmp6] = items;
+  const obj2 = scrollViewRef(1652);
+  class FastListTsx2 {
+    constructor(contentOffset) {
+      contentOffset = contentOffset.contentOffset;
+      const tmp2 = c0 ? contentOffset.x : contentOffset.y;
+      const contentSize = contentOffset.contentSize;
+      const tmp3 = c0 ? contentSize.width : contentSize.height;
+      if (0 !== tmp3) {
+        const result = _undefined.set(true);
+        const _Math = Math;
+        const result1 = _undefined2.set(Math.min(tmp2, tmp3));
+        if (null != c3) {
+          const layoutMeasurement = contentOffset.layoutMeasurement;
+          tmp10(tmp2, tmp3, c0 ? layoutMeasurement.width : layoutMeasurement.height);
+        }
       }
     }
-  };
-  fn.__closure = { horizontal, workletMounted: mutable, scrollPosValue, onScrollWorklet };
-  fn.__workletHash = 16225357996403;
-  fn.__initData = __initData2;
-  const obj2 = scrollViewRef(horizontal[10]);
-  const event = obj2.useEvent(fn, ["onScroll"]);
-  const items = [event, scrollViewRef];
+  }
+  const items1 = [tmp3, tmp4, tmp5, tmp6];
+  FastListTsx2.__closure = items1;
+  FastListTsx2.__workletHash = 15276307591274;
+  FastListTsx2.__initData = tmp2;
+  event = obj2.useEvent(FastListTsx2, ["onScroll"]);
+  const items2 = [event, scrollViewRef];
   const effect = react.useEffect(() => {
     let closure_0;
     const tmp = closure_1_9(scrollViewRef.current);
@@ -77,7 +93,7 @@ function FastListScrollWorklet(scrollViewRef) {
         workletEventHandler.unregisterFromEvents(closure_0);
       };
     }
-  }, items);
+  }, items2);
   return null;
 }
 let closure_3 = ["manualRef", "onScroll", "onScrollWorklet", "onScrollEnd", "onLayout", "renderHeader", "renderFooter", "renderSection", "renderItem", "renderSectionFooter", "getRecyclerKey", "onEndReached", "endReachedThreshold", "headerSize", "footerSize", "sectionSize", "sectionFooterSize", "itemSize", "sections", "scrollPosValue", "batchesToRender", "optimizeListItemRender", "initialScrollSection", "initialScrollItem", "initialScrollOrientation", "initialScrollStart", "getAnchorIdFromIndex", "getAnchorIndexFromId", "EXPERIMENTAL_enableAnchorWhileScrolling", "chunkBase", "disableContentWrappers", "childrenWrapper", "stickyHeaderFooter", "stickySectionsVariant", "persistantKeys", "disableRecyclingOnFullCompute", "disableLegacyGestureHandling", "viewabilityConfig", "onViewableItemsChanged", "debugLayout", "renderAccessory", "removeClippedSubviews", "inActionSheet"];
@@ -1043,22 +1059,26 @@ class FastListComputer {
   }
 }
 const prototype2 = FastListComputer.prototype;
-const __initData = { code: "function FastListTsx1(){const{scrollPosValue,interpolate,inputRange,outputRange,horizontal}=this.__closure;const interpolatedValue=scrollPosValue!=null?interpolate(scrollPosValue.get(),inputRange,outputRange):null;return{transform:interpolatedValue!=null?[horizontal?{translateX:interpolatedValue}:{translateY:interpolatedValue}]:undefined};}" };
+let closure_19 = { code: "(function FastListTsx1(){let[scrollPosValue,interpolate,inputRange,outputRange,horizontal]=this.__closure;const interpolatedValue=scrollPosValue!=null?interpolate(scrollPosValue.get(),inputRange,outputRange):null;return{transform:interpolatedValue!=null?[horizontal?{translateX:interpolatedValue}:{translateY:interpolatedValue}]:undefined};})" };
 let closure_20 = react.memo(function FastListStickySectionRendererComponent(children) {
   let debug;
   let fastListInstance;
   let horizontal;
-  let items3;
+  let items5;
   let layoutSize;
   let layoutStart;
   let nextSectionLayoutPosition;
   let recyclerKey;
   let scrollPosValue;
   let section;
+  let tmp12;
+  let tmp13;
+  let tmp14;
+  let tmp15;
   let tmp16;
-  ({ layoutStart, layoutSize, horizontal } = children);
-  ({ nextSectionLayoutPosition, scrollPosValue } = children);
-  ({ fastListInstance, section, debug, recyclerKey } = children);
+  let tmp17;
+  let tmp23;
+  ({ layoutStart, layoutSize, horizontal, nextSectionLayoutPosition, scrollPosValue, fastListInstance, section, debug, recyclerKey } = children);
   let items = [-1, 0];
   const items1 = [0, 0];
   children = children.children;
@@ -1069,8 +1089,8 @@ let closure_20 = react.memo(function FastListStickySectionRendererComponent(chil
   }
   const diff = nextSectionLayoutPosition - layoutSize;
   if (diff >= layoutStart) {
-    let tmp7 = items;
-    obj = horizontal(items[9]);
+    let tmp6 = require;
+    obj = PlatformUtils;
     let num2 = 0;
     if (obj.isAndroid()) {
       num2 = -1;
@@ -1081,73 +1101,83 @@ let closure_20 = react.memo(function FastListStickySectionRendererComponent(chil
     items.push(layoutStart + 1);
     items1.push(1);
   }
-  let obj2 = horizontal(items[10]);
-  class I {
+  const items2 = [closure_19, scrollPosValue, , , , ];
+  const useAnimatedStyle = _mod1652.useAnimatedStyle;
+  _mod1652;
+  items2[2] = _mod1652.interpolate;
+  items2[3] = items;
+  items2[4] = items1;
+  items2[5] = horizontal;
+  let c0;
+  let c1;
+  let c2;
+  let c3;
+  let c4;
+  [tmp12, tmp13, tmp14, tmp15, tmp16, tmp17] = items2;
+  class FastListTsx1 {
     constructor() {
-      obj = scrollPosValue;
-      interpolateResult = null;
-      if (null != scrollPosValue) {
-        tmp2 = closure_0;
+      obj = closure_0;
+      tmp = null;
+      if (null != closure_0) {
+        tmp2 = closure_1;
         tmp3 = closure_2;
-        obj2 = closure_0(closure_2[10]);
-        tmp4 = closure_2;
-        tmp5 = closure_3;
-        interpolateResult = obj2.interpolate(obj.get(), closure_2, closure_3);
+        tmp4 = closure_3;
+        tmp = closure_1(obj.get(), closure_2, closure_3);
       }
       transform = undefined;
-      if (null != interpolateResult) {
-        tmp7 = horizontal;
-        if (tmp7) {
+      if (null != tmp) {
+        tmp6 = closure_4;
+        if (tmp6) {
           obj1 = { translateX: null };
-          obj1.translateX = interpolateResult;
-          obj5 = obj1;
+          obj1.translateX = tmp;
+          obj4 = obj1;
         } else {
-          obj5 = { translateY: null };
-          obj5.translateY = interpolateResult;
+          obj4 = { translateY: null };
+          obj4.translateY = tmp;
         }
         items = [];
-        items[0] = obj5;
+        items[0] = obj4;
         transform = items;
       }
       return { transform };
     }
   }
-  let obj3 = { scrollPosValue, interpolate: horizontal(items[10]).interpolate, inputRange: items, outputRange: items1, horizontal };
-  I.__closure = obj3;
-  I.__workletHash = 699810682881;
-  I.__initData = __initData;
-  let obj4 = react;
+  const items3 = [tmp13, tmp14, tmp15, tmp16, tmp17];
+  FastListTsx1.__closure = items3;
+  FastListTsx1.__workletHash = 2474480770200;
+  FastListTsx1.__initData = tmp12;
+  let obj2 = react;
   const Children = react.Children;
-  const animatedStyle = obj2.useAnimatedStyle(I);
+  const animatedStyle = useAnimatedStyle(FastListTsx1);
   const onlyResult = Children.only(children(section, fastListInstance, scrollPosValue, layoutStart));
   let style;
-  const tmp12 = closure_10;
-  const tmp13 = scrollPosValue(items[11]);
+  const View = module_1652.View;
+  const tmp20 = authStore;
   if (null != onlyResult) {
     if ("props" in onlyResult) {
       style = onlyResult.props.style;
     }
   }
-  const items2 = [style, , ];
-  let tmp15;
+  const items4 = [style, , ];
+  let tmp22;
   if (!horizontal) {
-    tmp15 = layoutSize;
+    tmp22 = layoutSize;
   }
-  size = { zIndex: 10, position: "relative", height: tmp15, width: tmp16 };
-  tmp16 = undefined;
+  size = { zIndex: 10, position: "relative", height: tmp22, width: tmp23 };
+  tmp23 = undefined;
   if (horizontal) {
-    tmp16 = layoutSize;
+    tmp23 = layoutSize;
   }
-  const obj5 = { style: items2, collapsable: false, children: items3 };
-  items2[1] = size;
-  items2[2] = animatedStyle;
+  let obj3 = { style: items4, collapsable: false, children: items5 };
+  items4[1] = size;
+  items4[2] = animatedStyle;
   let cloneElementResult;
   if (null != onlyResult) {
-    const obj6 = { style: { flex: 1 } };
-    cloneElementResult = obj4.cloneElement(onlyResult, obj6);
+    const obj4 = { style: { flex: 1 } };
+    cloneElementResult = obj2.cloneElement(onlyResult, obj4);
   }
-  items3 = [cloneElementResult, false];
-  return tmp12(tmp13, obj5);
+  items5 = [cloneElementResult, false];
+  return tmp20(View, obj3);
 });
 let closure_21 = react.memo(function _FastListSectionRenderer(disableWrapper) {
   let children;
@@ -1875,7 +1905,7 @@ class FastList extends PureComponent {
     const fastListComputer = this.state.fastListComputer;
     return fastListComputer.computeScrollPosition(false, arg0, arg1);
   }
-  getInitialState(containerSize, setInfo, isFirstLayout) {
+  getInitialState(endImportTime, setInfo, isFirstLayout) {
     let batchSize;
     let batchesToRender;
     let blockEnd;
@@ -1911,7 +1941,7 @@ class FastList extends PureComponent {
     const horizontal = props.horizontal;
     const scrollPosValue = props.scrollPosValue;
     const tmp = undefined !== horizontal && horizontal;
-    setInfo.setInfo(containerSize);
+    setInfo.setInfo(endImportTime);
     let num2 = initialScrollStart;
     if (initialScrollStart == null) {
       num2 = 0;
@@ -1921,7 +1951,7 @@ class FastList extends PureComponent {
       tmp3 = num2;
     } else if (num > 0) {
       tmp3 = num2;
-      if (containerSize > 0) {
+      if (endImportTime > 0) {
         const scrollPosition = setInfo.computeScrollPosition("default" === str2, num, initialScrollItem);
         tmp3 = num2;
         if (null != scrollPosition) {
@@ -1945,13 +1975,13 @@ class FastList extends PureComponent {
     const tmp7 = isFirstLayout;
     if (tmp7) {
       let computeResult;
-      if (containerSize > 0) {
+      if (endImportTime > 0) {
         let obj2;
-        if (0 === containerSize) {
+        if (0 === endImportTime) {
           obj2 = { batchSize: 0, blockStart: 0, blockEnd: 0 };
         } else {
           const _Math = Math;
-          const rounded = Math.ceil(containerSize);
+          const rounded = Math.ceil(endImportTime);
           const _Math2 = Math;
           const _Math3 = Math;
           const rounded1 = Math.floor(tmp3);
@@ -1972,10 +2002,10 @@ class FastList extends PureComponent {
         const result2 = scrollPosValue.set(tmp8);
         self.scrollPosValue = scrollPosValue;
       } else {
-        const obj3 = ReanimatedRexport2;
+        const obj3 = _mod1652;
         self.scrollPosValue = obj3.makeMutable(tmp8);
       }
-      if (containerSize > 0) {
+      if (endImportTime > 0) {
         computeResult = setInfo.compute(blockStart, blockEnd, items, true);
       } else {
         computeResult = { size: 0, items: [] };
@@ -1984,8 +2014,8 @@ class FastList extends PureComponent {
       const merged = Object.assign(computeResult);
       return obj4;
     }
-    batchSize = Math.ceil(containerSize / 4);
-    blockEnd = tmp3 + containerSize;
+    batchSize = Math.ceil(endImportTime / 4);
+    blockEnd = tmp3 + endImportTime;
     blockStart = tmp3;
   }
   componentDidMount() {
@@ -2473,8 +2503,8 @@ class FastList extends PureComponent {
 }
 const prototype4 = FastList.prototype;
 FastList.defaultProps = { batchesToRender: 12, contentInset: { top: 0, right: 0, left: 0, bottom: 0 }, disableLegacyGestureHandling: false, disableRecyclingOnFullCompute: false, stickyHeaderFooter: false };
-const __initData2 = { code: "function FastListTsx2(event){const{horizontal,workletMounted,scrollPosValue,onScrollWorklet}=this.__closure;const scrollPosition=!horizontal?event.contentOffset.y:event.contentOffset.x;const contentSize=!horizontal?event.contentSize.height:event.contentSize.width;if(contentSize===0&&!workletMounted.get())return;workletMounted.set(true);scrollPosValue.set(Math.min(scrollPosition,contentSize));if(onScrollWorklet!=null){const layoutSize=!horizontal?event.layoutMeasurement.height:event.layoutMeasurement.width;onScrollWorklet(scrollPosition,contentSize,layoutSize);}}" };
-const animatedComponent = ReanimatedRexport.createAnimatedComponent(FastList);
+let closure_29 = { code: "(function FastListTsx2(event){let[horizontal,workletMounted,scrollPosValue,onScrollWorklet]=this.__closure;const scrollPosition=!horizontal?event.contentOffset.y:event.contentOffset.x;const contentSize=!horizontal?event.contentSize.height:event.contentSize.width;if(contentSize===0&&!workletMounted.get())return;workletMounted.set(true);scrollPosValue.set(Math.min(scrollPosition,contentSize));if(onScrollWorklet!=null){const layoutSize=!horizontal?event.layoutMeasurement.height:event.layoutMeasurement.width;onScrollWorklet(scrollPosition,contentSize,layoutSize);}})" };
+const animatedComponent = module_1652.createAnimatedComponent(FastList);
 let size = size_mod;
 let result = size.fileFinishedImporting("lib/native/FastList.tsx");
 

@@ -1,17 +1,17 @@
-// Module ID: 13644
-// Function ID: 13645
+// Module ID: 13883
+// Function ID: 13884
 // Name: CheckpointApngPlayer
-// Dependencies: [17, 5015, 21, 5014, 504, 5717, 1376, 9504, 2]
+// Dependencies: [17, 5141, 21, 5140, 504, 5842, 1357, 9588, 2]
 // Exports: default
 
-// Module 13644 (CheckpointApngPlayer)
+// Module 13883 (CheckpointApngPlayer)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
-import utils_PlatformUtils from "utils/PlatformUtils" /* 1376 */;
-import FastImageDefault from "FastImage" /* 5717 */;
-import AccessibilityStore from "AccessibilityStore" /* 5015 */;
-import createStyles from "createStyles" /* 5014 */;
+import utils_PlatformUtils from "utils/PlatformUtils" /* 1357 */;
+import FastImageDefault from "FastImage" /* 5842 */;
+import AccessibilityStore from "AccessibilityStore" /* 5141 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 const View = react_native.View;
@@ -43,7 +43,7 @@ export default function CheckpointApngPlayer(staticUri) {
       tmp4Result = tmp4(FastImageDefault, obj5);
     } else {
       const obj7 = { url: animatedUri, autoplay: true, style };
-      tmp4Result = tmp4(tmp2(9504).APNGPlayer, obj7);
+      tmp4Result = tmp4(tmp2(9588).APNGPlayer, obj7);
     }
     obj2.children = tmp4Result;
     tmp8 = obj2;

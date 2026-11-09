@@ -1,9 +1,9 @@
-// Module ID: 12584
-// Function ID: 12585
+// Module ID: 12787
+// Function ID: 12788
 // Name: ConjureComposerDraftStore
 // Dependencies: [32, 510, 12, 504, 572, 2]
 
-// Module 12584 (ConjureComposerDraftStore)
+// Module 12787 (ConjureComposerDraftStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import Storage2 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
@@ -68,7 +68,7 @@ let obj = {
     closure_6.cancel();
     const Storage = Storage2.Storage;
     Storage.remove(ConjureComposerDrafts);
-    return false;
+    return true;
   },
   CONJURE_COMPOSER_DRAFT_SET: function handleDraftSet(draft) {
     draft = draft.draft;
@@ -78,7 +78,7 @@ let obj = {
     if ("" === draft) {
       obj.flush();
     }
-    return false;
+    return true;
   }
 };
 const conjureComposerDraftStore = new ConjureComposerDraftStore(DispatcherDefault, obj);

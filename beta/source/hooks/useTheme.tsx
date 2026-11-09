@@ -1,12 +1,12 @@
-// Module ID: 5253
-// Function ID: 5254
+// Module ID: 5369
+// Function ID: 5370
 // Name: useTheme
-// Dependencies: [1072, 5021, 2]
+// Dependencies: [1072, 5147, 2]
 // Exports: default, getThemeIndex, useTheme, useThemeIndex
 
-// Module 5253 (useTheme)
+// Module 5369 (useTheme)
 import Constants from "Constants" /* 1072 */;
-import shared from "shared" /* 5021 */;
+import shared from "shared" /* 5147 */;
 import size from "module_2" /* 2 */;
 
 function useTheme() {

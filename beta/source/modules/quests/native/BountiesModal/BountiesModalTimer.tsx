@@ -1,24 +1,24 @@
-// Module ID: 16960
-// Function ID: 16961
+// Module ID: 17283
+// Function ID: 17284
 // Name: BountiesModalTimer
-// Dependencies: [19, 17, 21, 5640, 5095, 8031, 5014, 575, 1375, 5254, 5624, 9203, 2]
+// Dependencies: [19, 17, 21, 5764, 1652, 8101, 5140, 575, 1377, 5370, 5751, 9283, 2]
 // Exports: default
 
-// Module 16960 (BountiesModalTimer)
+// Module 17283 (BountiesModalTimer)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 5095 */;
-import timing from "timing" /* 5254 */;
-import ButtonConstants from "ButtonConstants" /* 5640 */;
-import inlineStyles from "inlineStyles" /* 8031 */;
+import _mod1652 from "module_1652" /* 1652 */;
+import timing_timing from "timing/timing" /* 5370 */;
+import ButtonConstants from "ButtonConstants" /* 5764 */;
+import inlineStyles from "inlineStyles" /* 8101 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
-import PlatformUtils from "PlatformUtils" /* 1375 */;
+import createStyles_mod from "createStyles" /* 5140 */;
+import PlatformUtils from "PlatformUtils" /* 1377 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-const ReanimatedRexport = ReanimatedRexport2;
+const module_1652 = _mod1652;
 let _require, importDefault, set, set2;
 
 let hasOwnProperty;
@@ -36,13 +36,13 @@ let c7 = "#2ECC71";
 let result = (ButtonConstants.SMALL_BUTTON_HEIGHT - 4) / 2;
 const metroImportAll = result;
 let closure_9 = 2 * Math.PI * result;
-const Easing = ReanimatedRexport2.Easing;
+const Easing = _mod1652.Easing;
 let closure_10 = Easing.bezier(0.15, 0.21, 0.58, 1);
-const Easing2 = ReanimatedRexport2.Easing;
+const Easing2 = _mod1652.Easing;
 let closure_11 = Easing2.bezier(0.61, 0, 0.58, 1);
-const Easing3 = ReanimatedRexport2.Easing;
+const Easing3 = _mod1652.Easing;
 let closure_12 = Easing3.bezier(0.42, 0, 0.58, 1);
-let closure_13 = ReanimatedRexport.createAnimatedComponent(inlineStyles.Circle);
+let closure_13 = module_1652.createAnimatedComponent(inlineStyles.Circle);
 let createStyles = createStyles_mod;
 let obj = { progress: size, ring: obj2, trackPath: obj3, countdownText: obj4, checkmarkLayer: { position: "absolute", inset: 6, alignItems: "center", justifyContent: "center" }, checkmarkBackground: size1, checkmarkIcon: { width: 20, height: 20 } };
 size = { alignItems: "center", justifyContent: "center", backgroundColor: nativeDefault.colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT, borderRadius: nativeDefault.radii.round, width: ButtonConstants.SMALL_BUTTON_HEIGHT, height: ButtonConstants.SMALL_BUTTON_HEIGHT };
@@ -57,9 +57,9 @@ if (PlatformUtils.isAndroid()) {
 }
 size1 = { width: 20, height: 20, backgroundColor: "#2ECC71", borderRadius: nativeDefault.radii.round };
 let closure_14 = createStyles(obj);
-const __initData = { code: "function BountiesModalTimerTsx1(){const{PROGRESS_CIRCUMFERENCE,animatedProgress}=this.__closure;return{strokeDashoffset:PROGRESS_CIRCUMFERENCE-PROGRESS_CIRCUMFERENCE*animatedProgress.get()};}" };
-const __initData2 = { code: "function BountiesModalTimerTsx2(){const{checkmarkBackgroundScale}=this.__closure;return{transform:[{scale:checkmarkBackgroundScale.get()}]};}" };
-const __initData3 = { code: "function BountiesModalTimerTsx3(){const{checkmarkScale}=this.__closure;return{transform:[{scale:checkmarkScale.get()}]};}" };
+let closure_15 = { code: "(function BountiesModalTimerTsx1(){let[PROGRESS_CIRCUMFERENCE,animatedProgress]=this.__closure;return{strokeDashoffset:PROGRESS_CIRCUMFERENCE-PROGRESS_CIRCUMFERENCE*animatedProgress.get()};})" };
+let closure_16 = { code: "(function BountiesModalTimerTsx2(){let[checkmarkBackgroundScale]=this.__closure;return{transform:[{scale:checkmarkBackgroundScale.get()}]};})" };
+let closure_17 = { code: "(function BountiesModalTimerTsx3(){let[checkmarkScale]=this.__closure;return{transform:[{scale:checkmarkScale.get()}]};})" };
 size = size_mod;
 let result1 = size.fileFinishedImporting("modules/quests/native/BountiesModal/BountiesModalTimer.tsx");
 
@@ -71,14 +71,21 @@ export default function BountiesModalTimer(arg0) {
   let easing2;
   let easing3;
   let isCompleted;
-  let items2;
-  let items3;
-  let items4;
-  let items5;
+  let items10;
+  let items11;
+  let items8;
+  let items9;
   let num2;
-  let obj13;
-  let obj15;
+  let obj10;
+  let obj12;
   let remainingSeconds;
+  let tmp13;
+  let tmp14;
+  let tmp15;
+  let tmp17;
+  let tmp18;
+  let tmp20;
+  let tmp21;
   let totalSeconds;
   ({ isCompleted, totalSeconds, remainingSeconds } = arg0);
   _require = undefined;
@@ -107,16 +114,16 @@ export default function BountiesModalTimer(arg0) {
     }
   }
   let tmp5 = _require;
-  let obj = require("ReanimatedRexport");
+  let obj = require("module_1652");
   sharedValue = obj.useSharedValue(num2);
-  let obj2 = require("ReanimatedRexport");
+  let obj2 = require("module_1652");
   sharedValue1 = obj2.useSharedValue(0);
-  let obj3 = require("ReanimatedRexport");
+  let obj3 = require("module_1652");
   sharedValue2 = obj3.useSharedValue(0);
   let items = [sharedValue, num2];
   const effect = sharedValue1.useEffect(() => {
     set = sharedValue.set;
-    const obj = timing;
+    const obj = timing_timing;
     const result = set(obj.withTiming(c1, { duration: 500 }, "animate-always"));
   }, items);
   ref = sharedValue1.useRef(false);
@@ -127,24 +134,24 @@ export default function BountiesModalTimer(arg0) {
     ref.current = true;
     if (closure_0) {
       if (current) {
-        const withSequence = ReanimatedRexport2.withSequence;
-        ReanimatedRexport2;
+        const withSequence = _mod1652.withSequence;
+        _mod1652;
         const obj2 = { duration: 267, easing };
-        const obj = timing;
+        const obj = timing_timing;
         const obj4 = { duration: 233, easing: easing2 };
         const withTimingResult = obj.withTiming(1.65, obj2);
-        const obj3 = timing;
+        const obj3 = timing_timing;
         const result = set(withSequence(withTimingResult, obj3.withTiming(1, obj4)));
         set2 = sharedValue2.set;
-        const withDelay = ReanimatedRexport2.withDelay;
-        ReanimatedRexport2;
-        const withSequence2 = ReanimatedRexport2.withSequence;
-        ReanimatedRexport2;
+        const withDelay = _mod1652.withDelay;
+        _mod1652;
+        const withSequence2 = _mod1652.withSequence;
+        _mod1652;
         const obj6 = { duration: 167, easing: easing3 };
-        const obj5 = timing;
+        const obj5 = timing_timing;
         const obj8 = { duration: 333, easing: easing3 };
         const withTimingResult1 = obj5.withTiming(1.25, obj6);
-        const obj7 = timing;
+        const obj7 = timing_timing;
         set2(withDelay(167, withSequence2(withTimingResult1, obj7.withTiming(1, obj8))));
       } else {
         const result1 = set(1);
@@ -157,71 +164,85 @@ export default function BountiesModalTimer(arg0) {
     }
     return tmp5;
   }, items1);
-  let obj4 = require("ReanimatedRexport");
-  class U {
+  let obj4 = require("module_1652");
+  const items2 = [closure_15, closure_9, sharedValue];
+  let c0;
+  importDefault = undefined;
+  [tmp13, tmp14, tmp15] = items2;
+  class BountiesModalTimerTsx1 {
     constructor() {
-      const obj = { strokeDashoffset: closure_9 - closure_9 * sharedValue.get() };
+      const obj = { strokeDashoffset: c0 - c0 * _undefined.get() };
       return obj;
     }
   }
-  let obj5 = { PROGRESS_CIRCUMFERENCE: strokeDasharray, animatedProgress: sharedValue };
-  U.__closure = obj5;
-  U.__workletHash = 12964700773124;
-  U.__initData = __initData;
-  const animatedProps = obj4.useAnimatedProps(U);
-  let obj6 = require("ReanimatedRexport");
-  const fn = function x() {
-    let items;
-    const obj = { transform: items };
-    items = [{ scale: sharedValue1.get() }];
-    ({ scale: sharedValue1.get() });
-    return obj;
-  };
-  fn.__closure = { checkmarkBackgroundScale: sharedValue1 };
-  fn.__workletHash = 10834015407160;
-  fn.__initData = __initData2;
-  const animatedStyle = obj6.useAnimatedStyle(fn);
-  let obj7 = require("ReanimatedRexport");
-  class G {
+  const items3 = [tmp14, tmp15];
+  BountiesModalTimerTsx1.__closure = items3;
+  BountiesModalTimerTsx1.__workletHash = 1981431490589;
+  BountiesModalTimerTsx1.__initData = tmp13;
+  const tmp12 = closure_9;
+  const animatedProps = obj4.useAnimatedProps(BountiesModalTimerTsx1);
+  const items4 = [closure_16, sharedValue1];
+  c0 = undefined;
+  [tmp17, tmp18] = items4;
+  const tmp5Result = tmp5(sharedValue[4]);
+  class BountiesModalTimerTsx2 {
     constructor() {
       let items;
       const obj = { transform: items };
-      items = [{ scale: sharedValue2.get() }];
-      ({ scale: sharedValue2.get() });
+      items = [{ scale: _undefined.get() }];
+      ({ scale: _undefined.get() });
       return obj;
     }
   }
-  G.__closure = { checkmarkScale: sharedValue2 };
-  G.__workletHash = 7510845920441;
-  G.__initData = __initData3;
-  let obj8 = { style: tmp.progress, children: items3 };
-  const animatedStyle1 = obj7.useAnimatedStyle(G);
-  size = { height: require("ButtonConstants").SMALL_BUTTON_HEIGHT, width: require("ButtonConstants").SMALL_BUTTON_HEIGHT, style: tmp.ring, children: items2 };
-  const tmp18 = require("inlineStyles");
-  const tmp19 = ref;
-  const obj9 = { cx: require("ButtonConstants").SMALL_BUTTON_HEIGHT / 2, cy: require("ButtonConstants").SMALL_BUTTON_HEIGHT / 2, r, fill: "none", stroke: tmp.trackPath.color, strokeWidth: 4 };
-  const Circle = require("inlineStyles").Circle;
-  items2 = [ref(Circle, obj9), ];
-  const obj10 = { cx: require("ButtonConstants").SMALL_BUTTON_HEIGHT / 2, cy: require("ButtonConstants").SMALL_BUTTON_HEIGHT / 2, r, fill: "none", stroke, strokeWidth: 4, strokeDasharray, strokeLinecap: "round", animatedProps };
-  items2[1] = ref(closure_13, obj10);
-  items3 = [closure_6(tmp18, size), , , ];
-  let tmp19Result = !tmp2;
-  const tmp15 = closure_6;
-  if (tmp19Result) {
-    const obj11 = { variant: "text-sm/semibold", style: tmp.countdownText, maxFontSizeMultiplier: 1, children: bound };
-    tmp19Result = tmp19(tmp5(tmp6[10]).Text, obj11);
+  const items5 = [tmp18];
+  BountiesModalTimerTsx2.__closure = items5;
+  BountiesModalTimerTsx2.__workletHash = 3015849196897;
+  BountiesModalTimerTsx2.__initData = tmp17;
+  const animatedStyle = tmp5Result.useAnimatedStyle(BountiesModalTimerTsx2);
+  const items6 = [closure_17, sharedValue2];
+  c0 = undefined;
+  [tmp20, tmp21] = items6;
+  const tmp5Result2 = tmp5(sharedValue[4]);
+  class BountiesModalTimerTsx3 {
+    constructor() {
+      let items;
+      const obj = { transform: items };
+      items = [{ scale: _undefined.get() }];
+      ({ scale: _undefined.get() });
+      return obj;
+    }
   }
-  items3[1] = tmp19Result;
-  const obj12 = { style: items4, children: tmp19(sharedValue2, obj13) };
-  items4 = [tmp.checkmarkLayer, animatedStyle];
-  obj13 = { style: tmp.checkmarkBackground };
-  View = tmp17(tmp6[4]).View;
-  items3[2] = tmp19(View, obj12);
-  const obj14 = { style: items5, children: tmp19(CheckmarkSmallBoldIcon, obj15) };
-  items5 = [tmp.checkmarkLayer, animatedStyle1];
-  const View2 = tmp17(tmp6[4]).View;
-  obj15 = { size: "custom", color: require("native").colors.CONTROL_OVERLAY_PRIMARY_TEXT_DEFAULT, style: tmp.checkmarkIcon };
+  const items7 = [tmp21];
+  BountiesModalTimerTsx3.__closure = items7;
+  BountiesModalTimerTsx3.__workletHash = 10659255628480;
+  BountiesModalTimerTsx3.__initData = tmp20;
+  let obj5 = { style: tmp.progress, children: items9 };
+  const animatedStyle1 = tmp5Result2.useAnimatedStyle(BountiesModalTimerTsx3);
+  size = { height: tmp5(sharedValue[3]).SMALL_BUTTON_HEIGHT, width: tmp5(sharedValue[3]).SMALL_BUTTON_HEIGHT, style: tmp.ring, children: items8 };
+  const tmp26 = require("inlineStyles");
+  let obj6 = { cx: tmp5(sharedValue[3]).SMALL_BUTTON_HEIGHT / 2, cy: tmp5(sharedValue[3]).SMALL_BUTTON_HEIGHT / 2, r, fill: "none", stroke: tmp.trackPath.color, strokeWidth: 4 };
+  const Circle = tmp5(tmp6[5]).Circle;
+  items8 = [ref(Circle, obj6), ];
+  let obj7 = { cx: tmp5(tmp6[3]).SMALL_BUTTON_HEIGHT / 2, cy: tmp5(tmp6[3]).SMALL_BUTTON_HEIGHT / 2, r, fill: "none", stroke, strokeWidth: 4, strokeDasharray: tmp12, strokeLinecap: "round", animatedProps };
+  items8[1] = ref(closure_13, obj7);
+  items9 = [closure_6(tmp26, size), , , ];
+  let tmp27Result = !tmp2;
+  const tmp23 = closure_6;
+  if (tmp27Result) {
+    let obj8 = { variant: "body-sm/semibold", style: tmp.countdownText, maxFontSizeMultiplier: 1, children: bound };
+    tmp27Result = tmp27(tmp5(tmp6[10]).Text, obj8);
+  }
+  items9[1] = tmp27Result;
+  const obj9 = { style: items10, children: ref(sharedValue2, obj10) };
+  items10 = [tmp.checkmarkLayer, animatedStyle];
+  obj10 = { style: tmp.checkmarkBackground };
+  View = tmp25(tmp6[4]).View;
+  items9[2] = ref(View, obj9);
+  const obj11 = { style: items11, children: ref(CheckmarkSmallBoldIcon, obj12) };
+  items11 = [tmp.checkmarkLayer, animatedStyle1];
+  const View2 = tmp25(tmp6[4]).View;
+  obj12 = { size: "custom", color: require("native").colors.CONTROL_OVERLAY_PRIMARY_TEXT_DEFAULT, style: tmp.checkmarkIcon };
   CheckmarkSmallBoldIcon = tmp5(tmp6[11]).CheckmarkSmallBoldIcon;
-  items3[3] = tmp19(View2, obj14);
-  return tmp15(sharedValue2, obj8);
+  items9[3] = ref(View2, obj11);
+  return tmp23(sharedValue2, obj5);
 };

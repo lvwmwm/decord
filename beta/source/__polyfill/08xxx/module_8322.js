@@ -1,49 +1,71 @@
 // Module ID: 8322
 // Function ID: 8323
-// Dependencies: [8299, 8300, 8279]
+// Dependencies: [8323, 8335, 8343]
 
 // Module 8322
-import _mod8279 from "module_8279" /* 8279 */;
-import get0thIfdOffset from "get0thIfdOffset" /* 8299 */;
-import IFD_TYPE_0TH from "IFD_TYPE_0TH" /* 8300 */;
+import FILE_TYPES_REQUIRED_ADDITIONAL_CHECK from "FILE_TYPES_REQUIRED_ADDITIONAL_CHECK" /* 8323 */;
+import _mod8335 from "module_8335" /* 8335 */;
+import _mod8343 from "module_8343" /* 8343 */;
 
+let hasOwnProperty;
 
-export default {
-  read(byteLength, sum, arg2, byteOrder, arg4) {
-    let str;
-    const obj = get0thIfdOffset;
-    const ifd = obj.readIfd(byteLength, IFD_TYPE_0TH.IFD_TYPE_CANON, sum, sum + arg2, byteOrder, arg4);
-    let tmp4 = ifd;
-    if (ifd.ShotInfo) {
-      const value = ifd.ShotInfo.value;
-      const obj2 = {};
-      const objectAssign = tmp(8279).objectAssign;
-      _mod8279;
-      if (undefined !== value[27]) {
-        const obj3 = { value: value[27], description: str };
-        str = "None";
-        if (0 !== value[27]) {
-          let str2 = "Rotate 90 CW";
-          if (1 !== value[27]) {
-            let str3 = "Rotate 180";
-            if (2 !== value[27]) {
-              let str4 = "Unknown";
-              if (3 === value[27]) {
-                str4 = "Rotate 270 CW";
-              }
-              str3 = str4;
-            }
-            str2 = str3;
-          }
-          str = str2;
-        }
-        obj2.AutoRotate = obj3;
-      }
-      const objectAssignResult = objectAssign({}, ifd, obj2);
-      delete tmp7["ShotInfo"];
-      tmp4 = objectAssignResult;
+const self = this;
+let tmp = this && self.__createBinding;
+if (!tmp) {
+  let tmp2 = globalThis;
+  let _Object = Object;
+  tmp = Object.create ? ((arg0, __esModule, arg2, arg3) => {
+    function get() {
+      return __esModule[closure_1];
     }
-    return tmp4;
-  },
-  SHOT_INFO_AUTO_ROTATE: 27
-};
+    closure_0 = __esModule;
+    let closure_1 = arg2;
+    let tmp = arg3;
+    if (undefined === arg3) {
+      tmp = arg2;
+    }
+    let ownPropertyDescriptor = Object.getOwnPropertyDescriptor(__esModule, arg2);
+    let tmp3 = ownPropertyDescriptor;
+    if (tmp3) {
+      let tmp4;
+      if ("get" in ownPropertyDescriptor) {
+        tmp4 = !__esModule.__esModule;
+      } else {
+        tmp4 = ownPropertyDescriptor.writable || ownPropertyDescriptor.configurable;
+      }
+      tmp3 = !tmp4;
+    }
+    if (!tmp3) {
+      ownPropertyDescriptor = { enumerable: true, get };
+      const obj = { enumerable: true, get };
+    }
+    Object.defineProperty(arg0, tmp, ownPropertyDescriptor);
+  }) : ((arg0, arg1, arg2, arg3) => {
+    let tmp = arg3;
+    if (undefined === arg3) {
+      tmp = arg2;
+    }
+    arg0[tmp] = arg1[arg2];
+  });
+}
+let closure_0 = tmp;
+let tmp3 = self && self.__exportStar || ((obj, arg1) => {
+  for (const key10007 in obj) {
+    let callResult = "default" === key10007;
+    if (!callResult) {
+      let _Object = Object;
+      hasOwnProperty = Object.prototype.hasOwnProperty;
+      callResult = hasOwnProperty.call(arg1, key10007);
+    }
+    if (callResult) {
+      continue;
+    } else {
+      let tmp3 = closure_0(arg1, obj, key10007);
+      continue;
+    }
+    continue;
+  }
+});
+tmp3(FILE_TYPES_REQUIRED_ADDITIONAL_CHECK, exports);
+tmp3(_mod8335, exports);
+tmp3(_mod8343, exports);

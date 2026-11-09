@@ -1,17 +1,17 @@
-// Module ID: 14258
-// Function ID: 14259
+// Module ID: 14494
+// Function ID: 14495
 // Name: ContactSyncSettingsActionSheet
-// Dependencies: [19, 17, 14248, 1072, 21, 5014, 575, 8177, 1113, 5624, 14251, 7366, 2]
+// Dependencies: [19, 17, 14484, 1072, 21, 5140, 575, 8246, 1113, 5751, 14487, 7426, 2]
 // Exports: default
 
-// Module 14258 (ContactSyncSettingsActionSheet)
+// Module 14494 (ContactSyncSettingsActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import react from "react" /* 19 */;
-import ContactSyncModalStore from "ContactSyncModalStore" /* 14248 */;
+import ContactSyncModalStore from "ContactSyncModalStore" /* 14484 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -95,7 +95,7 @@ export default function ContactSyncSettingsActionSheet() {
   intl4 = allowPhone(allowEmail[8]).intl;
   obj7 = {
     learnMoreHook: function LearnMore(children, arg1) {
-      const obj = { onPress: allowPhone(allowEmail[10]).handleOpenLearnMoreLink, variant: "text-sm/medium", color: "text-link", children };
+      const obj = { onPress: allowPhone(allowEmail[10]).handleOpenLearnMoreLink, variant: "body-sm/medium", color: "text-link", children };
       const Text = allowPhone(allowEmail[9]).Text;
       return closure_1_7(Text, obj, arg1);
     }
@@ -118,7 +118,7 @@ export default function ContactSyncSettingsActionSheet() {
   obj10 = { style: tmp.formText, text: intl6.string(allowPhone(allowEmail[8]).t["eJnn0+"]) };
   Label2 = allowPhone(allowEmail[7]).FormRow.Label;
   intl6 = allowPhone(allowEmail[8]).intl;
-  obj11 = { variant: "text-sm/medium", color: "text-default", children: intl7.string(allowPhone(allowEmail[8]).t.X7pIKN) };
+  obj11 = { variant: "body-sm/medium", color: "text-default", children: intl7.string(allowPhone(allowEmail[8]).t.X7pIKN) };
   Text = allowPhone(allowEmail[9]).Text;
   intl7 = allowPhone(allowEmail[8]).intl;
   items1[5] = closure_7(FormRow2, obj9);
@@ -135,7 +135,7 @@ export default function ContactSyncSettingsActionSheet() {
   obj13 = { style: tmp.formText, text: intl8.string(allowPhone(allowEmail[8]).t.dI4d4S) };
   Label3 = allowPhone(allowEmail[7]).FormRow.Label;
   intl8 = allowPhone(allowEmail[8]).intl;
-  obj14 = { variant: "text-sm/medium", color: "text-default", children: intl9.string(allowPhone(allowEmail[8]).t.ilGsHE) };
+  obj14 = { variant: "body-sm/medium", color: "text-default", children: intl9.string(allowPhone(allowEmail[8]).t.ilGsHE) };
   Text2 = allowPhone(allowEmail[9]).Text;
   intl9 = allowPhone(allowEmail[8]).intl;
   items1[6] = closure_7(FormRow3, obj12);

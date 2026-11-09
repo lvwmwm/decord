@@ -1,19 +1,19 @@
-// Module ID: 7214
-// Function ID: 7215
+// Module ID: 7278
+// Function ID: 7279
 // Name: FormPhoneOrEmail
-// Dependencies: [19, 17, 21, 5014, 575, 6980, 1113, 5624, 7130, 7104, 7105, 7107, 2]
+// Dependencies: [19, 17, 21, 5140, 575, 7043, 1113, 5751, 7201, 7175, 7176, 7178, 2]
 // Exports: default
 
-// Module 7214 (FormPhoneOrEmail)
+// Module 7278 (FormPhoneOrEmail)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import Pressables from "Pressables" /* 6980 */;
-import PhoneOrEmailUtils from "PhoneOrEmailUtils" /* 7130 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import Pressables from "Pressables" /* 7043 */;
+import PhoneOrEmailUtils from "PhoneOrEmailUtils" /* 7201 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -43,7 +43,7 @@ function CountryCodeSelector(alpha2) {
     const obj3 = { onPress, style: tmp.selectorPressable, androidRippleConfig: { borderless: true }, accessibilityRole: "button", accessibilityLabel: combined, accessibilityHint: intl.string(intl2.t.GwAW3k), children: hasOwnProperty(Text_Text.Text, obj4) };
     const PressableOpacity = Pressables.PressableOpacity;
     intl = intl2.intl;
-    obj4 = { style: tmp.selectorText, variant: "text-md/medium", color: "mobile-text-heading-primary", children: combined };
+    obj4 = { style: tmp.selectorText, variant: "body-md/medium", color: "mobile-text-heading-primary", children: combined };
     items = [hasOwnProperty(PressableOpacity, obj3), ];
     const obj5 = { style: tmp.separator };
     items[1] = hasOwnProperty(View, obj5);
@@ -146,7 +146,7 @@ export default function FormPhoneOrEmail(arg0) {
   items1[2] = tmp12Result;
   let tmp12Result2 = null;
   if (null != hint) {
-    const obj7 = { style: tmp2.hint, variant: "text-xs/medium", color: "text-muted", children: hint };
+    const obj7 = { style: tmp2.hint, variant: "body-xs/medium", color: "text-muted", children: hint };
     tmp12Result2 = tmp12(tmp3(tmp4[7]).Text, obj7);
   }
   items1[3] = tmp12Result2;

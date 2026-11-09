@@ -1,17 +1,17 @@
-// Module ID: 19086
-// Function ID: 19087
+// Module ID: 19462
+// Function ID: 19463
 // Name: VoiceOrStageSummaryRow
-// Dependencies: [19, 17, 21, 5014, 575, 18722, 5624, 1187, 18717, 2]
+// Dependencies: [19, 17, 21, 5140, 575, 19085, 5751, 1187, 19080, 2]
 
-// Module 19086 (VoiceOrStageSummaryRow)
+// Module 19462 (VoiceOrStageSummaryRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import getLayoutStylesDefault from "getLayoutStyles" /* 18722 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import getLayoutStylesDefault from "getLayoutStyles" /* 19085 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -19,7 +19,7 @@ let dependencyMap;
 let closure_4;
 let hasOwnProperty;
 let tmp;
-const AssetRegistryDefault = tmp(18717);
+const AssetRegistryDefault = tmp(19080);
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let closure_6 = createStyles.createStyles((height) => {
@@ -81,7 +81,7 @@ const memoResult = react.memo(function VoiceOrStageSummaryRow(arg0) {
             const obj3 = { style: items, children: React3(View, obj4) };
             obj4 = { style: tmp15.overflowCircle, children: React3(Text, obj5) };
             const _HermesInternal = HermesInternal;
-            obj5 = { variant: "text-xs/medium", children: "+" + tmp2 + 1 };
+            obj5 = { variant: "body-xs/medium", children: "+" + tmp2 + 1 };
             Text = Text_Text.Text;
             tmp3Result = tmp13(tmp14, obj3, "overflow");
           }
@@ -114,8 +114,8 @@ const memoResult = react.memo(function VoiceOrStageSummaryRow(arg0) {
     let obj5 = { size: max(1187).Icon.Sizes.CUSTOM, style: { height: 14, width: 14 }, source: AssetRegistryDefault };
     const Icon = max(1187).Icon;
     items4 = [tmp8(Icon, obj5), ];
-    let obj6 = { variant: "text-sm/bold", style: { marginLeft: 4 }, children: audienceCount };
-    items4[1] = closure_4(max(5624).Text, obj6);
+    let obj6 = { variant: "body-sm/semibold", style: { marginLeft: 4 }, children: audienceCount };
+    items4[1] = closure_4(max(5751).Text, obj6);
     tmp8Result = tmp8(tmp6, obj3);
   }
   items1[1] = tmp8Result;

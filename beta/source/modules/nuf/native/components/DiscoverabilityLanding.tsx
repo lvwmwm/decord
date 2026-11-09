@@ -1,21 +1,21 @@
-// Module ID: 14362
-// Function ID: 14363
+// Module ID: 14598
+// Function ID: 14599
 // Name: DiscoverabilityLanding
-// Dependencies: [19, 17, 14248, 1072, 21, 5014, 575, 6723, 1625, 5258, 14363, 1994, 5586, 5717, 14364, 5624, 1113, 8177, 14276, 5634, 2]
+// Dependencies: [19, 17, 14484, 1072, 21, 5140, 575, 6778, 1627, 5374, 14599, 2118, 5714, 5842, 14600, 5751, 1113, 8246, 14512, 5758, 2]
 // Exports: default
 
-// Module 14362 (DiscoverabilityLanding)
+// Module 14598 (DiscoverabilityLanding)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import asyncRequire from "asyncRequire" /* 1994 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import ContactSyncModalStore from "ContactSyncModalStore" /* 14248 */;
+import asyncRequire from "asyncRequire" /* 2118 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import ContactSyncModalStore from "ContactSyncModalStore" /* 14484 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
-import TextStyles from "TextStyles" /* 6723 */;
+import createStyles_mod from "createStyles" /* 5140 */;
+import TextStyles from "TextStyles" /* 6778 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -66,7 +66,7 @@ export default function DiscoverabilityLanding(onNext) {
   react = react.useCallback(() => {
     const obj = ActionSheetActionCreatorsDefault;
     const obj2 = { allowPhone, allowEmail };
-    obj.openLazy(asyncRequire(14363, dependencyMap.paths), "Discoverability Landing", obj2);
+    obj.openLazy(asyncRequire(14599, dependencyMap.paths), "Discoverability Landing", obj2);
   }, items);
   let obj = { style: tmp.container, contentContainerStyle: obj2, children: items2 };
   obj2 = { paddingTop: onNext(allowPhone[12]).NAV_BAR_HEIGHT + 32, paddingBottom: bottom + 16 };
@@ -75,11 +75,11 @@ export default function DiscoverabilityLanding(onNext) {
   const obj5 = { resizeMode: "contain", style: tmp.image, source: allowEmail(allowPhone[14]) };
   const tmp9 = allowEmail(allowPhone[13]);
   items1 = [closure_7(tmp9, obj5), , ];
-  const obj6 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl.string(onNext(allowPhone[16]).t.n8nw6j) };
+  const obj6 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: intl.string(onNext(allowPhone[16]).t.n8nw6j) };
   const Text = onNext(allowPhone[15]).Text;
   intl = onNext(allowPhone[16]).intl;
   items1[1] = closure_7(Text, obj6);
-  const obj7 = { style: tmp.subtitle, variant: "text-sm/medium", color: "text-subtle", children: intl2.string(onNext(allowPhone[16]).t.KMW0kP) };
+  const obj7 = { style: tmp.subtitle, variant: "body-sm/medium", color: "text-subtle", children: intl2.string(onNext(allowPhone[16]).t.KMW0kP) };
   const Text2 = onNext(allowPhone[15]).Text;
   intl2 = onNext(allowPhone[16]).intl;
   items1[2] = closure_7(Text2, obj7);
@@ -95,14 +95,14 @@ export default function DiscoverabilityLanding(onNext) {
     allowEmail = allowPhone;
   }
   items3 = [closure_7(FormCheckboxRow, obj9), , ];
-  const obj11 = { style: tmp.info, variant: "heading-deprecated-12/medium", color: "text-default", children: items4 };
+  const obj11 = { style: tmp.info, variant: "body-xs/medium", color: "text-default", children: items4 };
   const Text3 = tmp6(tmp3[15]).Text;
   const intl4 = tmp6(tmp3[16]).intl;
   items4 = [intl4.string(onNext(allowPhone[16]).t["DGZg+k"]), " ", ];
   const intl5 = tmp6(tmp3[16]).intl;
   const obj12 = {
     learnMoreHook: function LearnMore(children, arg1) {
-      const obj = { onPress, variant: "text-sm/medium", color: "text-link", children };
+      const obj = { onPress, variant: "body-sm/medium", color: "text-link", children };
       return metroImportDefault(Text_Text.Text, obj, arg1);
     }
   };

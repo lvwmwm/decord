@@ -1,20 +1,20 @@
-// Module ID: 17814
-// Function ID: 17815
+// Module ID: 18146
+// Function ID: 18147
 // Name: UserSettingsDesignSystemHaptics
-// Dependencies: [19, 17, 21, 5014, 5634, 5260, 5261, 6027, 6977, 5624, 5262, 2]
+// Dependencies: [19, 17, 21, 5140, 5758, 5376, 5377, 6159, 7040, 5751, 5378, 2]
 // Exports: default
 
-// Module 17814 (UserSettingsDesignSystemHaptics)
+// Module 18146 (UserSettingsDesignSystemHaptics)
 import react_native from "react-native" /* 17 */;
-import HapticUtils from "HapticUtils" /* 5260 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5261 */;
-import Patterns from "Patterns" /* 5262 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import Stack_Stack from "Stack/Stack" /* 6027 */;
-import Card_Card from "Card/Card" /* 6977 */;
+import HapticUtils from "HapticUtils" /* 5376 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5377 */;
+import Patterns from "Patterns" /* 5378 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import Stack_Stack from "Stack/Stack" /* 6159 */;
+import Card_Card from "Card/Card" /* 7040 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let description;
@@ -31,7 +31,7 @@ function HapticButton(text) {
     },
     text: text.label
   };
-  return closure_3(type(5634).Button, obj);
+  return closure_3(type(5758).Button, obj);
 }
 const ScrollView = react_native.ScrollView;
 ({ jsx: c3, jsxs: closure_4 } = Fragment);
@@ -126,7 +126,7 @@ export default function UserSettingsDesignSystemHaptics() {
   const Card = Card_Card.Card;
   obj4 = { children: items };
   Stack2 = Stack_Stack.Stack;
-  items = [_false(Text_Text.Text, { variant: "text-lg/bold", children: "Semantic Types" }), _false(Text_Text.Text, { variant: "text-md/medium", color: "text-subtle", children: "Existing haptic types with platform-specific remapping for the best feel." }), ];
+  items = [_false(Text_Text.Text, { variant: "body-lg/semibold", children: "Semantic Types" }), _false(Text_Text.Text, { variant: "body-md/medium", color: "text-subtle", children: "Existing haptic types with platform-specific remapping for the best feel." }), ];
   items[2] = items.map((label) => {
     label = label.label;
     const obj = { type: label.type, label };
@@ -138,8 +138,8 @@ export default function UserSettingsDesignSystemHaptics() {
   obj6 = { children: items2 };
   Stack3 = Stack_Stack.Stack;
   items2 = [
-    _false(Text_Text.Text, { variant: "text-lg/bold", children: "Impact / Notification Types" }),
-    _false(Text_Text.Text, { variant: "text-md/medium", color: "text-subtle", children: "Direct 1:1 mappings for impact and notification feedback." }),
+    _false(Text_Text.Text, { variant: "body-lg/semibold", children: "Impact / Notification Types" }),
+    _false(Text_Text.Text, { variant: "body-md/medium", color: "text-subtle", children: "Direct 1:1 mappings for impact and notification feedback." }),
     items1.map((label) => {
       label = label.label;
       const obj = { type: label.type, label };
@@ -152,8 +152,8 @@ export default function UserSettingsDesignSystemHaptics() {
   obj8 = { children: items3 };
   Stack4 = Stack_Stack.Stack;
   items3 = [
-    _false(Text_Text.Text, { variant: "text-lg/bold", children: "Gesture / UI Types" }),
-    _false(Text_Text.Text, { variant: "text-md/medium", color: "text-subtle", children: "Feedback for gestures, toggles, and UI confirmations. New in v3." }),
+    _false(Text_Text.Text, { variant: "body-lg/semibold", children: "Gesture / UI Types" }),
+    _false(Text_Text.Text, { variant: "body-md/medium", color: "text-subtle", children: "Feedback for gestures, toggles, and UI confirmations. New in v3." }),
     items2.map((label) => {
       label = label.label;
       const obj = { type: label.type, label };
@@ -166,8 +166,8 @@ export default function UserSettingsDesignSystemHaptics() {
   obj10 = { children: items4 };
   Stack5 = Stack_Stack.Stack;
   items4 = [
-    _false(Text_Text.Text, { variant: "text-lg/bold", children: "Platform Haptic Types" }),
-    _false(Text_Text.Text, { variant: "text-md/medium", color: "text-subtle", children: "Native Android haptics with iOS Core Haptics approximations. Cross-platform in v3." }),
+    _false(Text_Text.Text, { variant: "body-lg/semibold", children: "Platform Haptic Types" }),
+    _false(Text_Text.Text, { variant: "body-md/medium", color: "text-subtle", children: "Native Android haptics with iOS Core Haptics approximations. Cross-platform in v3." }),
     items3.map((label) => {
       label = label.label;
       const obj = { type: label.type, label };
@@ -180,8 +180,8 @@ export default function UserSettingsDesignSystemHaptics() {
   obj12 = { children: items5 };
   Stack6 = Stack_Stack.Stack;
   items5 = [
-    _false(Text_Text.Text, { variant: "text-lg/bold", children: "Pattern Presets" }),
-    _false(Text_Text.Text, { variant: "text-md/medium", color: "text-subtle", children: "Built-in haptic sequences using triggerPattern(). Each preset uses a compact notation (o=soft, O=strong, .=short gap, -=medium gap, ==long gap)." }),
+    _false(Text_Text.Text, { variant: "body-lg/semibold", children: "Pattern Presets" }),
+    _false(Text_Text.Text, { variant: "body-md/medium", color: "text-subtle", children: "Built-in haptic sequences using triggerPattern(). Each preset uses a compact notation (o=soft, O=strong, .=short gap, -=medium gap, ==long gap)." }),
     items4.map((description) => {
       let closure_0;
       let label;

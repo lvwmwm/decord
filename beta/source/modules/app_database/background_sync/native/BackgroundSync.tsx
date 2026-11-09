@@ -1,32 +1,32 @@
-// Module ID: 19406
-// Function ID: 19407
+// Module ID: 19810
+// Function ID: 19811
 // Name: background_sync/BackgroundSync
-// Dependencies: [32, 5, 4867, 4863, 6842, 1993, 7658, 1072, 6837, 6796, 4885, 3, 1089, 510, 10210, 1375, 572, 1242, 1252, 4892, 1282, 11, 12, 7795, 7798, 7796, 15557, 17566, 7656, 1379, 7666, 2]
+// Dependencies: [32, 5, 4993, 4989, 6897, 2117, 7734, 1072, 6892, 6851, 5011, 3, 1089, 510, 10329, 1377, 572, 1242, 1252, 5018, 1282, 11, 12, 7871, 7874, 7872, 15851, 17898, 7732, 1380, 7742, 2]
 // Exports: backgroundSync
 
-// Module 19406 (background_sync/BackgroundSync)
+// Module 19810 (background_sync/BackgroundSync)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef12 from "module_12" /* 12 */;
 import Storage4 from "Storage" /* 510 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
-import DatabaseDaosDefault from "DatabaseDaos" /* 4892 */;
-import modules_Messages from "modules/Messages" /* 7656 */;
-import GuildVersionsDefault from "GuildVersions" /* 7795 */;
-import KvCacheVersionDefault from "KvCacheVersion" /* 7796 */;
-import NonGuildVersionsDefault from "NonGuildVersions" /* 7798 */;
+import DatabaseDaosDefault from "DatabaseDaos" /* 5018 */;
+import modules_Messages from "modules/Messages" /* 7732 */;
+import GuildVersionsDefault from "GuildVersions" /* 7871 */;
+import KvCacheVersionDefault from "KvCacheVersion" /* 7872 */;
+import NonGuildVersionsDefault from "NonGuildVersions" /* 7874 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelRecord from "ChannelRecord" /* 4867 */;
+import ChannelRecord from "ChannelRecord" /* 4993 */;
 import "ChannelStore";
-import ReadStateStore from "ReadStateStore" /* 6842 */;
-import AppStateStore from "AppStateStore" /* 1993 */;
-import FileSystemStore from "FileSystemStore" /* 7658 */;
+import ReadStateStore from "ReadStateStore" /* 6897 */;
+import AppStateStore from "AppStateStore" /* 2117 */;
+import FileSystemStore from "FileSystemStore" /* 7734 */;
 import Constants from "Constants" /* 1072 */;
-import StickersStore from "StickersStore" /* 6837 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
-import EmojiStore from "EmojiStore" /* 6796 */;
-import GuildStore from "GuildStore" /* 4885 */;
+import StickersStore from "StickersStore" /* 6892 */;
+import ChannelStore from "ChannelStore" /* 4989 */;
+import EmojiStore from "EmojiStore" /* 6851 */;
+import GuildStore from "GuildStore" /* 5011 */;
 import size from "module_2" /* 2 */;
 
 let basicChannel, c1, c11, c21, c22, closure_13, config, readStatesByChannel;
@@ -47,7 +47,9 @@ let obj = function _backgroundSync() {
       let closure_5;
       let closure_6;
       let closure_7;
+      let flag;
       let obj18;
+      let tmp;
       closure_131_14.verbose("Starting Background Sync");
       const tmp184 = flag;
       if (!tmp184) {
@@ -63,7 +65,7 @@ let obj = function _backgroundSync() {
           closure_131_14.log("Skipping Background Sync because of clock skew");
           const Storage2 = closure_131_0(closure_131_2[13]).Storage;
           const _Date4 = Date;
-          const result = Storage2.set(closure_131_16, Date.now());
+          let result = Storage2.set(closure_131_16, Date.now());
           c7 = 3;
           return { value: undefined, done: true };
         } else {
@@ -195,6 +197,7 @@ let obj = function _backgroundSync() {
       }
       await "HermesInternal";
       closure_3 = tmp;
+      flag = force.force ?? false;
       return "flexDirection";
     })();
     iter.next();
@@ -224,7 +227,7 @@ obj = function _backgroundSyncPrivateChannels() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -321,7 +324,7 @@ obj = function _backgroundSyncPrivateChannels() {
           closure_1.time_save_private_channel_messages = Date.now() - closure_2;
         }
         c6 = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp41) {
         c6 = 3;
         throw tmp41;
@@ -351,7 +354,7 @@ obj = function _backgroundSyncGuildData() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -554,7 +557,7 @@ obj = function _backgroundSyncGuildData() {
             closure_0.time_save_guild_data = Date.now() - closure_1;
           }
           c6 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp45) {
         c6 = 3;
@@ -584,7 +587,7 @@ obj = function _backgroundSyncGuildChannels() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       while (true) {
@@ -870,7 +873,7 @@ obj = function _backgroundSyncGuildChannels() {
           }
         }
         c22 = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     }
   });
@@ -896,7 +899,7 @@ obj = function _processChannelChanges() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       while (true) {
@@ -959,7 +962,7 @@ obj = function _processChannelChanges() {
               }
             }
             c12 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           let closure_5;

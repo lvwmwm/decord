@@ -1,18 +1,20 @@
-// Module ID: 19250
-// Function ID: 19251
+// Module ID: 19644
+// Function ID: 19645
 // Name: getRandomNumberInRange
 // Dependencies: [2]
 // Exports: default
 
-// Module 19250 (getRandomNumberInRange)
+// Module 19644 (getRandomNumberInRange)
 import size from "module_2" /* 2 */;
 
-const fn = function n(arg0, arg1) {
+let tmp2;
+const items = [{ code: "(function getRandomNumberInRange_getRandomNumberInRangeTsx1(min,max){return Math.random()*(max-min)+min;})" }];
+[tmp2] = items;
+function getRandomNumberInRange(arg0, arg1) {
   return Math.random() * (arg1 - arg0) + arg0;
-};
-fn.__closure = {};
-fn.__workletHash = 3489295446061;
-fn.__initData = { code: "function getRandomNumberInRange_getRandomNumberInRangeTsx1(min,max){return Math.random()*(max-min)+min;}" };
+}
+getRandomNumberInRange.__workletHash = 13744554648652;
+getRandomNumberInRange.__initData = tmp2;
 const result = size.fileFinishedImporting("modules/voice_panel/native/utils/getRandomNumberInRange.tsx");
 
-export default fn;
+export default getRandomNumberInRange;

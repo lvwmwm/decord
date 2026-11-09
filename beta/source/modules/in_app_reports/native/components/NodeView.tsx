@@ -1,31 +1,32 @@
-// Module ID: 8360
-// Function ID: 8361
+// Module ID: 8430
+// Function ID: 8431
 // Name: NodeView
-// Dependencies: [32, 19, 17, 5627, 4863, 4946, 8361, 8358, 1072, 1083, 21, 5014, 575, 5612, 6031, 5624, 5011, 5735, 504, 6980, 8362, 1497, 5274, 6021, 8355, 8353, 5760, 8364, 8368, 8369, 7292, 8373, 8374, 8375, 8376, 15153, 15154, 15155, 15156, 15157, 15158, 15159, 15160, 15161, 15163, 15164, 15165, 15166, 15167, 15168, 15169, 15170, 15173, 2]
+// Dependencies: [32, 19, 17, 5754, 4989, 5072, 8431, 8428, 1072, 1083, 21, 5140, 575, 5739, 6163, 5751, 5137, 5859, 504, 8432, 8433, 1499, 5390, 6153, 8425, 8423, 5889, 8435, 8439, 8440, 7355, 8444, 8445, 8446, 8447, 15440, 15441, 15442, 15443, 15444, 15445, 15446, 15447, 15448, 15450, 15451, 15452, 15453, 15454, 15455, 15456, 15457, 15460, 2]
 // Exports: default
 
-// Module 8360 (NodeView)
+// Module 8430 (NodeView)
 import nativeDefault from "native" /* 575 */;
 import Constants2 from "Constants" /* 1083 */;
-import ColorUtils from "ColorUtils" /* 5011 */;
-import reactDefault from "react" /* 5612 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 5735 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5760 */;
-import CustomMarkupAll from "CustomMarkup" /* 6031 */;
-import MenuTypes from "MenuTypes" /* 8353 */;
-import InAppReportsConstants from "InAppReportsConstants" /* 8358 */;
-import MenuConstants from "MenuConstants" /* 8361 */;
-import ArrowDefault from "Arrow" /* 8362 */;
+import ColorUtils from "ColorUtils" /* 5137 */;
+import reactDefault from "react" /* 5739 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 5859 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5889 */;
+import CustomMarkupAll from "CustomMarkup" /* 6163 */;
+import MenuTypes from "MenuTypes" /* 8423 */;
+import InAppReportsConstants from "InAppReportsConstants" /* 8428 */;
+import MenuConstants from "MenuConstants" /* 8431 */;
+import InAppReportsOptionRowDefault from "InAppReportsOptionRow" /* 8432 */;
+import ArrowDefault from "Arrow" /* 8433 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import DevSettingsStore from "DevSettingsStore" /* 5627 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
-import PermissionStore from "PermissionStore" /* 4946 */;
+import DevSettingsStore from "DevSettingsStore" /* 5754 */;
+import ChannelStore from "ChannelStore" /* 4989 */;
+import PermissionStore from "PermissionStore" /* 5072 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -40,7 +41,6 @@ let metroRequire;
 let obj2;
 let obj3;
 let obj4;
-let obj5;
 function HeaderView(node) {
   let description;
   let header;
@@ -61,7 +61,7 @@ function HeaderView(node) {
     tmp6 = "" !== header;
   }
   if (tmp6) {
-    const obj2 = { ref: headerRef, style: tmp.header, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: header };
+    const obj2 = { ref: headerRef, style: tmp.header, variant: "heading-xl/semibold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: header };
     tmp6 = authStore4(Text_Text.Text, obj2);
   }
   items = [tmp6, , ];
@@ -69,7 +69,7 @@ function HeaderView(node) {
   if (null != subheader) {
     tmp9 = null;
     if (subheader.length > 0) {
-      const obj3 = { style: tmp.subheader, variant: "text-md/medium", color: "text-default", children: tmp3(subheader) };
+      const obj3 = { style: tmp.subheader, variant: "body-md/medium", color: "text-default", children: tmp3(subheader) };
       const Text = Text_Text.Text;
       tmp9 = authStore4(Text, obj3);
     }
@@ -79,7 +79,7 @@ function HeaderView(node) {
   if (null != description) {
     tmp12 = null;
     if (description.length > 0) {
-      const obj4 = { style: tmp.description, variant: "text-xs/medium", color: "text-default", children: description };
+      const obj4 = { style: tmp.description, variant: "body-xs/medium", color: "text-default", children: description };
       tmp12 = authStore4(Text_Text.Text, obj4);
     }
   }
@@ -104,7 +104,7 @@ function InfoView(node) {
     const obj4 = { size: "md", color: tmp.infoBox.backgroundColor };
     items1 = [authStore4(CircleInformationIcon.CircleInformationIcon, obj4), ];
     const obj5 = { style: tmp.infoBoxText, children: authStore4(Text, obj6) };
-    obj6 = { variant: "text-sm/normal", color: "interactive-text-active", includeFontPadding: true, children: tmp3(info) };
+    obj6 = { variant: "body-sm/normal", color: "interactive-text-active", includeFontPadding: true, children: tmp3(info) };
     Text = Text_Text.Text;
     items1[1] = authStore4(metroRequire, obj5);
     tmp4 = closure_17(metroRequire, obj);
@@ -113,42 +113,33 @@ function InfoView(node) {
 }
 function ChildItem(child) {
   let closure_1;
-  let items1;
-  let items2;
-  let obj3;
   let report_type;
   let tmp3;
   let tmp4;
   child = child.child;
   const nodeMap = child.nodeMap;
   importDefault = Object.assign(child, Object.assign({ child: 0, nodeMap: 0 }));
-  const tmp = closure_18();
   [tmp3, tmp4] = child;
+  const tmp = closure_18();
   _slicedToArray(child, 2);
   const first = _slicedToArray(react.useState(() => () => closure_1_1.onPress(child)), 1)[0];
   const items = [DevSettingsStore];
   const obj = child(504);
   let stateFromStores = obj.useStateFromStores(items, () => DevSettingsStore.get("iar_show_report_sub_type_labels"));
+  const tmp6 = child;
   if (nodeMap[tmp4] != null) {
     report_type = tmp9.report_type;
   }
-  const obj2 = { style: tmp.childButton, accessibilityRole: "button", onPress: first, children: closure_17(closure_6, obj3) };
-  obj3 = { style: tmp.childContainer, children: items2 };
-  const obj4 = { style: tmp.childContent, children: items1 };
-  const PressableHighlight = tmp6(6980).PressableHighlight;
-  items1 = [, ];
-  const obj5 = { style: tmp.childButtonText, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: tmp3 };
-  items1[0] = closure_16(child(5624).Text, obj5);
+  const obj2 = { label: tmp3, trailing: closure_16(ArrowDefault, {}), onPress: first, accessibilityRole: "button", children: stateFromStores };
+  const tmp11 = InAppReportsOptionRowDefault;
   if (stateFromStores) {
     stateFromStores = null != report_type;
   }
   if (stateFromStores) {
-    const obj6 = { style: tmp.debugText, variant: "text-xs/normal", color: "text-muted", children: report_type };
-    stateFromStores = tmp10(tmp6(5624).Text, obj6);
+    const obj3 = { style: tmp.debugText, variant: "body-xs/normal", color: "text-muted", children: report_type };
+    stateFromStores = tmp10(tmp6(5751).Text, obj3);
   }
-  items1[1] = stateFromStores;
-  items2 = [closure_17(closure_6, obj4), closure_16(ArrowDefault, {})];
-  return closure_16(PressableHighlight, obj2);
+  return closure_16(tmp11, obj2);
 }
 function ChildrenView(node) {
   let nodeMap;
@@ -185,12 +176,11 @@ const IN_APP_REPORTS_NODE = InAppReportsConstants.IN_APP_REPORTS_NODE;
 const Permissions = Constants2.Permissions;
 ({ jsx: closure_16, jsxs: closure_17 } = Fragment);
 let createStyles = createStyles_mod;
-let obj = { container: obj2, scrollView: { flex: 1, alignSelf: "stretch", marginTop: 24 }, childrenContainer: { flex: 1, alignSelf: "stretch", paddingHorizontal: 16 }, headerContainer: { alignSelf: "stretch", marginBottom: 24, paddingHorizontal: 16 }, header: { marginBottom: 8, textAlign: "center" }, subheader: { lineHeight: 20, marginBottom: 8, textAlign: "center" }, description: { lineHeight: 16, marginBottom: 8, textAlign: "center" }, infoBox: obj3, infoBoxText: { flex: 1, marginStart: 8 }, childButton: obj4, childContainer: obj5, childContent: { flex: 1 }, childButtonText: { lineHeight: 20 }, debugText: { marginTop: 4, lineHeight: 16 } };
+let obj = { container: obj2, scrollView: { flex: 1, alignSelf: "stretch", marginTop: 24 }, childrenContainer: obj3, headerContainer: { alignSelf: "stretch", marginBottom: 24, paddingHorizontal: 16 }, header: { marginBottom: 8, textAlign: "center" }, subheader: { lineHeight: 20, marginBottom: 8, textAlign: "center" }, description: { lineHeight: 16, marginBottom: 8, textAlign: "center" }, infoBox: obj4, infoBoxText: { flex: 1, marginStart: 8 }, debugText: { marginTop: 4, lineHeight: 16 } };
 obj2 = { flex: 1, alignSelf: "stretch", justifyContent: "flex-start", alignItems: "center", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER, marginTop: 30 };
 createStyles = createStyles.createStyles;
-obj3 = { alignSelf: "stretch", alignItems: "center", backgroundColor: nativeDefault.unsafe_rawColors.BLUE_345, borderRadius: nativeDefault.radii.xs, borderColor: nativeDefault.unsafe_rawColors.BLUE_345, borderWidth: 1, padding: 8, flexDirection: "row", marginBottom: 16, marginHorizontal: 16 };
-obj4 = { marginBottom: 8, borderRadius: nativeDefault.radii.xs };
-obj5 = { minHeight: 60, flexDirection: "row", alignItems: "center", justifyContent: "flex-start", backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, paddingVertical: 16, paddingStart: 16, paddingEnd: 8, borderRadius: nativeDefault.radii.xs };
+obj3 = { flex: 1, alignSelf: "stretch", paddingHorizontal: 16, gap: nativeDefault.space.PX_8, marginBottom: nativeDefault.space.PX_8 };
+obj4 = { alignSelf: "stretch", alignItems: "center", backgroundColor: nativeDefault.unsafe_rawColors.BLUE_345, borderRadius: nativeDefault.radii.xs, borderColor: nativeDefault.unsafe_rawColors.BLUE_345, borderWidth: 1, padding: 8, flexDirection: "row", marginBottom: 16, marginHorizontal: 16 };
 let closure_18 = createStyles(obj);
 let result = size.fileFinishedImporting("modules/in_app_reports/native/components/NodeView.tsx");
 

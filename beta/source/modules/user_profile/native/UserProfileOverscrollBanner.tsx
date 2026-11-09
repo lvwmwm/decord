@@ -1,24 +1,24 @@
-// Module ID: 8817
-// Function ID: 8818
+// Module ID: 8891
+// Function ID: 8892
 // Name: UserProfileOverscrollBanner
-// Dependencies: [19, 17, 21, 5095, 8818, 8819, 1375, 2]
+// Dependencies: [19, 17, 21, 1652, 8892, 8893, 1377, 2]
 // Exports: default
 
-// Module 8817 (UserProfileOverscrollBanner)
+// Module 8891 (UserProfileOverscrollBanner)
 import react_native from "react-native" /* 17 */;
-import PlatformUtils from "PlatformUtils" /* 1375 */;
-import VisualEffectViewThemedDefault from "VisualEffectViewThemed" /* 8818 */;
-import UserProfileBannerDefault from "UserProfileBanner" /* 8819 */;
+import PlatformUtils from "PlatformUtils" /* 1377 */;
+import VisualEffectViewThemedDefault from "VisualEffectViewThemed" /* 8892 */;
+import UserProfileBannerDefault from "UserProfileBanner" /* 8893 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
+import module_1652 from "module_1652" /* 1652 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
 let hasOwnProperty;
 const StyleSheet = react_native.StyleSheet;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
-const VisualEffectViewThemed = ReanimatedRexport.createAnimatedComponent(VisualEffectViewThemedDefault);
+const VisualEffectViewThemed = module_1652.createAnimatedComponent(VisualEffectViewThemedDefault);
 const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileOverscrollBanner.tsx");
 
 export default function UserProfileOverscrollBanner(arg0) {
@@ -33,9 +33,9 @@ export default function UserProfileOverscrollBanner(arg0) {
   ({ bannerAnimatedStyle, bannerImageAnimatedStyle, blurAnimatedProps, showBlur } = arg0);
   const merged = Object.assign(arg0, Object.assign({ bannerAnimatedStyle: 0, bannerImageAnimatedStyle: 0, blurAnimatedProps: 0, showBlur: 0 }));
   const obj = { style: bannerAnimatedStyle, children: tmp3(View2, obj2) };
-  const View = ReanimatedRexport.View;
+  const View = module_1652.View;
   obj2 = { style: bannerImageAnimatedStyle, children: items };
-  View2 = ReanimatedRexport.View;
+  View2 = module_1652.View;
   const obj3 = {};
   const tmp4 = UserProfileBannerDefault;
   const merged1 = Object.assign(merged);

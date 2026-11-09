@@ -1,14 +1,14 @@
-// Module ID: 18392
-// Function ID: 18393
+// Module ID: 18731
+// Function ID: 18732
 // Name: VoiceSubtitle
-// Dependencies: [19, 21, 5624, 1113, 6041, 2]
+// Dependencies: [19, 21, 5751, 1113, 6173, 2]
 // Exports: default
 
-// Module 18392 (VoiceSubtitle)
+// Module 18731 (VoiceSubtitle)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 6041 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 6173 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -29,5 +29,5 @@ export default function VoiceSubtitle(arg0) {
     const obj = NicknameUtilsDefault;
     return obj.getName(require, null, item);
   });
-  return <Text variant="text-xs/medium" color="text-voice-connected" lineClamp={1}>{format(r1Vkoc, obj2)}</Text>;
+  return <Text variant="body-xs/medium" color="text-voice-connected" lineClamp={1}>{format(r1Vkoc, obj2)}</Text>;
 };

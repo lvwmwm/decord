@@ -1,21 +1,21 @@
-// Module ID: 12631
-// Function ID: 12632
+// Module ID: 12833
+// Function ID: 12834
 // Name: ConjureTipCallout
-// Dependencies: [19, 17, 21, 575, 5014, 12624, 12136, 8028, 7054, 1113, 5624, 2]
+// Dependencies: [19, 17, 21, 575, 5140, 12826, 12304, 8098, 7120, 1113, 5751, 2]
 // Exports: ConjureTipActions, ConjureTipBody, ConjureTipTitle, default
 
-// Module 12631 (ConjureTipCallout)
+// Module 12833 (ConjureTipCallout)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import XSmallIcon from "XSmallIcon" /* 7054 */;
-import IconButton2 from "IconButton" /* 8028 */;
-import ConjureNativeCardSurfaceDefault from "ConjureNativeCardSurface" /* 12136 */;
-import ConjureTipGutterRowDefault from "ConjureTipGutterRow" /* 12624 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import XSmallIcon from "XSmallIcon" /* 7120 */;
+import IconButton2 from "IconButton" /* 8098 */;
+import ConjureNativeCardSurfaceDefault from "ConjureNativeCardSurface" /* 12304 */;
+import ConjureTipGutterRowDefault from "ConjureTipGutterRow" /* 12826 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -50,7 +50,7 @@ export default function ConjureTipCallout(onDismiss) {
   onDismiss = onDismiss.onDismiss;
   ({ icon, children } = onDismiss);
   const tmp = closure_7();
-  const obj = { icon, tone: "brand", firstLine: "text-md/semibold", firstLineInset, children: tmp5(tmp6, obj2) };
+  const obj = { icon, tone: "brand", firstLine: "body-md/semibold", firstLineInset, children: tmp5(tmp6, obj2) };
   obj2 = { style: tmp.card, children: items };
   items = [children, ];
   let tmp2Result = null;
@@ -69,11 +69,11 @@ export default function ConjureTipCallout(onDismiss) {
 };
 export function ConjureTipTitle(children) {
   children = children.children;
-  const obj = { style: closure_7().title, children: React3(Text_Text.Text, { variant: "text-md/semibold", color: "text-strong", accessibilityRole: "header", children }) };
+  const obj = { style: closure_7().title, children: React3(Text_Text.Text, { variant: "body-md/semibold", color: "text-strong", accessibilityRole: "header", children }) };
   return React3(View, obj);
 }
 export function ConjureTipBody(children) {
-  return React3(Text_Text.Text, { variant: "text-sm/normal", color: "text-muted", children: children.children });
+  return React3(Text_Text.Text, { variant: "body-sm/normal", color: "text-muted", children: children.children });
 }
 export function ConjureTipActions(children) {
   const obj = { style: closure_7().actions, children: children.children };

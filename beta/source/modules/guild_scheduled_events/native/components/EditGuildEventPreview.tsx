@@ -1,23 +1,23 @@
-// Module ID: 9083
-// Function ID: 9084
+// Module ID: 9163
+// Function ID: 9164
 // Name: EditGuildEventPreview
-// Dependencies: [19, 17, 4863, 1072, 21, 5014, 575, 1375, 504, 5652, 8972, 9084, 5624, 1113, 9085, 1187, 9086, 8968, 7292, 8981, 5634, 8969, 5959, 9087, 1994, 2]
+// Dependencies: [19, 17, 4989, 1072, 21, 5140, 575, 1377, 504, 5776, 9051, 9164, 5751, 1113, 9165, 1187, 9166, 9047, 7355, 9060, 5758, 9048, 6091, 9167, 2118, 2]
 // Exports: default
 
-// Module 9083 (EditGuildEventPreview)
+// Module 9163 (EditGuildEventPreview)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5959 */;
-import EditGuildEventUtils from "EditGuildEventUtils" /* 8968 */;
-import ScheduleUtils from "ScheduleUtils" /* 8969 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6091 */;
+import EditGuildEventUtils from "EditGuildEventUtils" /* 9047 */;
+import ScheduleUtils from "ScheduleUtils" /* 9048 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
+import ChannelStore from "ChannelStore" /* 4989 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
-import PlatformUtils from "PlatformUtils" /* 1375 */;
+import createStyles_mod from "createStyles" /* 5140 */;
+import PlatformUtils from "PlatformUtils" /* 1377 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -31,7 +31,7 @@ let obj3;
 let obj4;
 let obj5;
 let tmp9;
-const guildEventDetailsParser = tmp9(9086);
+const guildEventDetailsParser = tmp9(9166);
 function PreviewBody(event) {
   let channelContainer;
   let closure_2;
@@ -54,7 +54,7 @@ function PreviewBody(event) {
   const items1 = [channel_id];
   const stateFromStores = obj.useStateFromStores(items, () => ChannelStore.getChannel(channel_id), items1);
   const tmp5 = channel_id;
-  const tmp6 = channel_id(5652)(stateFromStores);
+  const tmp6 = channel_id(5776)(stateFromStores);
   dependencyMap = tmp6;
   let obj2 = require("EntityUtils");
   let locationFromEvent = obj2.getLocationFromEvent(event);
@@ -63,23 +63,23 @@ function PreviewBody(event) {
     tmp8 = locationFromEvent;
   }
   locationFromEvent = tmp8;
-  let tmp2Result = tmp2(9084);
+  let tmp2Result = tmp2(9164);
   eventLocationIconSource = tmp2Result.getEventLocationIconSource(event, stateFromStores, true);
   let obj3 = { style: tmp.header, children: items2 };
   let tmp9 = closure_7;
   let tmp11 = closure_6;
-  const obj4 = { style: tmp.headerTitle, variant: "heading-xl/bold", color: "mobile-text-heading-primary", children: intl.string(tmp2(1113).t.yBsFE3) };
-  let Text = tmp2(5624).Text;
+  const obj4 = { style: tmp.headerTitle, variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: intl.string(tmp2(1113).t.yBsFE3) };
+  let Text = tmp2(5751).Text;
   intl = tmp2(1113).intl;
   items2 = [closure_6(Text, obj4), ];
-  const obj5 = { style: tmp.headerSubtitle, accessibilityLabel: formatToPlainStringResult, variant: "text-sm/medium", color: "text-default", children: formatResult };
+  const obj5 = { style: tmp.headerSubtitle, accessibilityLabel: formatToPlainStringResult, variant: "body-sm/medium", color: "text-default", children: formatResult };
   formatToPlainStringResult = undefined;
-  const Text2 = tmp2(5624).Text;
+  const Text2 = tmp2(5751).Text;
   const tmp10 = locationFromEvent;
   if (null != stateFromStores) {
     const intl2 = tmp2(1113).intl;
     const formatToPlainString = intl2.formatToPlainString;
-    const obj6 = { channelName: tmp5(9085)(obj7) };
+    const obj6 = { channelName: tmp5(9165)(obj7) };
     const sxcQPE = tmp2(1113).t.sxcQPE;
     obj7 = { channel: stateFromStores };
     formatToPlainStringResult = formatToPlainString(sxcQPE, obj6);
@@ -112,7 +112,7 @@ function PreviewBody(event) {
             tmp11 = result;
           }
           const obj3 = { children: items };
-          items[1] = metroRequire(Text, { accessibilityElementsHidden: true, importantForAccessibility: "no", variant: "text-sm/medium", color: "text-default", children: tmp11 });
+          items[1] = metroRequire(Text, { accessibilityElementsHidden: true, importantForAccessibility: "no", variant: "body-sm/medium", color: "text-default", children: tmp11 });
           let str = locationFromEvent;
           if (locationFromEvent == null) {
             str = "preview-body";

@@ -1,23 +1,44 @@
-// Module ID: 12759
-// Function ID: 12760
+// Module ID: 12960
+// Function ID: 12961
 // Name: ConjureImageOptions
-// Dependencies: [32, 1113, 3868, 8943, 2]
-// Exports: answeredOptionIds, imageOptionCaption, imageOptionViewerSize, imageOptionsLayout, isImageQuestion, ownImageOption, ownImageUploadText, registrableDomain, viewableImageOptions
+// Dependencies: [32, 1113, 4026, 9022, 2]
+// Exports: answeredOptionIds, hasTypedAnswer, imageOptionCaption, imageOptionViewerSize, imageOptionsLayout, isImageQuestion, noImageAnswer, ownImageOption, ownImageUploadText, registrableDomain, uploadHint, viewableImageOptions
 
-// Module 12759 (ConjureImageOptions)
-import intl2 from "intl" /* 1113 */;
-import _modDef3868 from "module_3868" /* 3868 */;
-import MaskedLinkStoreMethodsAdditional from "MaskedLinkStoreMethodsAdditional" /* 8943 */;
+// Module 12960 (ConjureImageOptions)
+import intl3 from "intl" /* 1113 */;
+import _modDef4026 from "module_4026" /* 4026 */;
+import MaskedLinkStoreMethodsAdditional from "MaskedLinkStoreMethodsAdditional" /* 9022 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size_mod from "module_2" /* 2 */;
 
+const f104673 = (image) => null != image.image;
 let closure_4 = [];
 let size = size_mod;
 const result = size.fileFinishedImporting("modules/conjure/clarification/ConjureImageOptions.tsx");
 
-export function isImageQuestion(options) {
-  options = options.options;
-  return options.some((image) => null != image.image);
+export function isImageQuestion(upload) {
+  let someResult = true === upload.upload;
+  if (!someResult) {
+    const options = upload.options;
+    someResult = options.some(f104673);
+  }
+  return someResult;
+}
+export function hasTypedAnswer(allow_custom) {
+  let tmp = false !== allow_custom.allow_custom;
+  if (tmp) {
+    let tmp2 = true === allow_custom.upload;
+    if (!tmp2) {
+      let someResult = true === allow_custom.upload;
+      if (!someResult) {
+        const options = allow_custom.options;
+        someResult = options.some(f104673);
+      }
+      tmp2 = !someResult;
+    }
+    tmp = tmp2;
+  }
+  return tmp;
 }
 export function imageOptionsLayout(options) {
   let str = "row";
@@ -41,18 +62,22 @@ export function viewableImageOptions(items) {
   });
 }
 export function answeredOptionIds(kind) {
-  let tmp2;
+  let tmp3;
   kind = undefined;
   if (kind != null) {
     kind = kind.kind;
   }
   if ("option" === kind) {
     const items = [kind.optionId];
-    tmp2 = items;
+    tmp3 = items;
   } else {
-    tmp2 = closure_4;
+    let kind1;
+    if (kind != null) {
+      kind1 = kind.kind;
+    }
+    tmp3 = "multi" === kind1 ? kind.optionIds : closure_4;
   }
-  return tmp2;
+  return tmp3;
 }
 export function imageOptionViewerSize(value) {
   const bound = Math.max(1, 480 / Math.max(value.width, value.height));
@@ -61,8 +86,8 @@ export function imageOptionViewerSize(value) {
 }
 export function ownImageOption(image) {
   let intl;
-  const obj = { id: "own:" + image.attachment.id, label: intl.string(_modDef3868.SUdqCQ), image: { attachment_id: image.attachment.id } };
-  intl = intl2.intl;
+  const obj = { id: "own:" + image.attachment.id, label: intl.string(_modDef4026.SUdqCQ), image: { attachment_id: image.attachment.id } };
+  intl = intl3.intl;
   return obj;
 }
 export function registrableDomain(str) {
@@ -149,10 +174,38 @@ export function imageOptionCaption(option) {
   return label;
 }
 export function ownImageUploadText(question) {
-  const intl = intl2.intl;
+  const intl = intl3.intl;
   const string = intl.string;
   const obj = /\bicons?\b/i;
   const isMatch = obj.test(question.question);
-  const tmp2 = _modDef3868;
+  const tmp2 = _modDef4026;
   return string(isMatch ? tmp2.qU4WN6 : tmp2.cbMDDB);
+}
+export function uploadHint(upload) {
+  let tmp = null;
+  if (true === upload.upload) {
+    let stringResult;
+    if (0 === upload.options.length) {
+      const intl2 = intl3.intl;
+      stringResult = intl2.string(_modDef4026.ZZ641e);
+    } else {
+      let dkzChE;
+      const intl = intl3.intl;
+      const string = intl.string;
+      if (1 === upload.options.length) {
+        dkzChE = _modDef4026["2g3gk9"];
+      } else {
+        dkzChE = _modDef4026.dkzChE;
+      }
+      stringResult = string(dkzChE);
+    }
+    tmp = stringResult;
+  }
+  return tmp;
+}
+export function noImageAnswer() {
+  let intl;
+  const obj = { kind: "custom", text: intl.string(_modDef4026.zxSq2q) };
+  intl = intl3.intl;
+  return obj;
 }

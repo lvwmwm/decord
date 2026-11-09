@@ -1,12 +1,12 @@
-// Module ID: 7390
-// Function ID: 7391
+// Module ID: 7450
+// Function ID: 7451
 // Name: useNSFWAllowed
-// Dependencies: [1383, 504, 2]
+// Dependencies: [1385, 504, 2]
 // Exports: useNSFWAllowed
 
-// Module 7390 (useNSFWAllowed)
+// Module 7450 (useNSFWAllowed)
 import get_initialized from "get initialized" /* 504 */;
-import UserStore from "UserStore" /* 1383 */;
+import UserStore from "UserStore" /* 1385 */;
 import size from "module_2" /* 2 */;
 
 let currentUser;

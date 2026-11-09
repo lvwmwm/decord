@@ -1,20 +1,20 @@
-// Module ID: 17818
-// Function ID: 17819
+// Module ID: 18150
+// Function ID: 18151
 // Name: UserSettingsDesignSystemAIShimmer
-// Dependencies: [32, 19, 17, 21, 5014, 5634, 6027, 6977, 5624, 12785, 2]
+// Dependencies: [32, 19, 17, 21, 5140, 5758, 6159, 7040, 5751, 12987, 2]
 // Exports: default
 
-// Module 17818 (UserSettingsDesignSystemAIShimmer)
-import Text_Text from "Text/Text" /* 5624 */;
-import components_Button_Button from "components/Button/Button" /* 5634 */;
-import Stack_Stack from "Stack/Stack" /* 6027 */;
-import Card_Card from "Card/Card" /* 6977 */;
-import AIShimmer from "AIShimmer" /* 12785 */;
+// Module 18150 (UserSettingsDesignSystemAIShimmer)
+import Text_Text from "Text/Text" /* 5751 */;
+import components_Button_Button from "components/Button/Button" /* 5758 */;
+import Stack_Stack from "Stack/Stack" /* 6159 */;
+import Card_Card from "Card/Card" /* 7040 */;
+import AIShimmer from "AIShimmer" /* 12987 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -54,7 +54,7 @@ function Stage(children) {
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let closure_8 = createStyles.createStyles({ container: { padding: 16 }, buttonRow: { flexDirection: "row", flexWrap: "wrap", gap: 8 }, stage: { minHeight: 28, justifyContent: "center" } });
 const text = ["Reading the channel", "Finding the highlights", "Writing it up"];
-const options = ["text-xs/normal", "text-sm/normal", "text-md/normal", "text-lg/semibold"];
+const options = ["body-xs/normal", "body-sm/normal", "body-md/normal", "body-lg/semibold"];
 const options2 = ["text-default", "text-subtle"];
 const result = size.fileFinishedImporting("modules/user_settings/design_system/native/UserSettingsDesignSystemAIShimmer.tsx");
 
@@ -83,7 +83,7 @@ export default function UserSettingsDesignSystemAIShimmer() {
   let tmp8;
   const tmp = closure_8();
   const ref = react.useRef(null);
-  [first, tmp5] = react.useState("text-md/normal");
+  [first, tmp5] = react.useState("body-md/normal");
   [first1, tmp8] = react.useState("text-default");
   [first2, tmp11] = react.useState("text-subtle");
   const obj = { contentContainerStyle: tmp.container, children: metroImportDefault(Stack, obj2) };
@@ -93,7 +93,7 @@ export default function UserSettingsDesignSystemAIShimmer() {
   const Card = Card_Card.Card;
   obj4 = { children: items };
   Stack2 = Stack_Stack.Stack;
-  items = [metroRequire(Text_Text.Text, { variant: "text-lg/bold", children: "Variant" }), metroRequire(Text_Text.Text, { variant: "text-md/medium", color: "text-subtle", children: "Any Mana text variant. The glyph band scales with the font size. Default `text-md/normal`." }), , ];
+  items = [metroRequire(Text_Text.Text, { variant: "body-lg/semibold", children: "Variant" }), metroRequire(Text_Text.Text, { variant: "body-md/medium", color: "text-subtle", children: "Any Mana text variant. The glyph band scales with the font size. Default `body-md/normal`." }), , ];
   const obj5 = { options, value: first, onChange: tmp5 };
   items[2] = metroRequire(Picker, obj5);
   const obj6 = { children: metroRequire(AIShimmer.AIShimmer, obj7) };
@@ -104,10 +104,10 @@ export default function UserSettingsDesignSystemAIShimmer() {
   const Card2 = Card_Card.Card;
   obj9 = { children: items2 };
   Stack3 = Stack_Stack.Stack;
-  items2 = [metroRequire(Text_Text.Text, { variant: "text-lg/bold", children: "Colors" }), metroRequire(Text_Text.Text, { variant: "text-md/medium", color: "text-subtle", children: "The text and moving glyph band can use different colors." }), metroRequire(Text_Text.Text, { variant: "text-md/medium", children: "Text color" }), , , , ];
+  items2 = [metroRequire(Text_Text.Text, { variant: "body-lg/semibold", children: "Colors" }), metroRequire(Text_Text.Text, { variant: "body-md/medium", color: "text-subtle", children: "The text and moving glyph band can use different colors." }), metroRequire(Text_Text.Text, { variant: "body-md/medium", children: "Text color" }), , , , ];
   const obj10 = { options: options2, value: first1, onChange: tmp8 };
   items2[3] = metroRequire(Picker, obj10);
-  items2[4] = metroRequire(Text_Text.Text, { variant: "text-md/medium", children: "Glyph color" });
+  items2[4] = metroRequire(Text_Text.Text, { variant: "body-md/medium", children: "Glyph color" });
   const obj11 = { options: options2, value: first2, onChange: tmp11 };
   items2[5] = metroRequire(Picker, obj11);
   const obj12 = { children: metroRequire(AIShimmer.AIShimmer, obj13) };
@@ -118,7 +118,7 @@ export default function UserSettingsDesignSystemAIShimmer() {
   const Card3 = Card_Card.Card;
   obj15 = { children: items3 };
   Stack4 = Stack_Stack.Stack;
-  items3 = [metroRequire(Text_Text.Text, { variant: "text-lg/bold", children: "Manual Trigger" }), metroImportDefault(Text_Text.Text, { variant: "text-md/medium", color: "text-subtle", children: ["`delay=", null, "` turns off automatic changes. Use play() to run the next animation."] }), , ];
+  items3 = [metroRequire(Text_Text.Text, { variant: "body-lg/semibold", children: "Manual Trigger" }), metroImportDefault(Text_Text.Text, { variant: "body-md/medium", color: "text-subtle", children: ["`delay=", null, "` turns off automatic changes. Use play() to run the next animation."] }), , ];
   const obj16 = { style: tmp.buttonRow, children: items4 };
   items4 = [, ];
   const obj17 = {

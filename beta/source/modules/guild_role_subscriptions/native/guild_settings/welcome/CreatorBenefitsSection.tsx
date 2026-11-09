@@ -1,26 +1,26 @@
-// Module ID: 19895
-// Function ID: 19896
+// Module ID: 20305
+// Function ID: 20306
 // Name: CreatorBenefitsSection
-// Dependencies: [19, 17, 17191, 21, 5014, 575, 5021, 5253, 5624, 1113, 19896, 19900, 19904, 19908, 19912, 19916, 2]
+// Dependencies: [19, 17, 17517, 21, 5140, 575, 5147, 5369, 5751, 1113, 20306, 20310, 20314, 20318, 20322, 20326, 2]
 // Exports: default
 
-// Module 19895 (CreatorBenefitsSection)
+// Module 20305 (CreatorBenefitsSection)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import shared from "shared" /* 5021 */;
-import useThemeDefault from "useTheme" /* 5253 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 17191 */;
-import AvatarRoseExample from "AvatarRoseExample" /* 19896 */;
-import AvatarLokyExample from "AvatarLokyExample" /* 19900 */;
-import AvatarGraggleExample from "AvatarGraggleExample" /* 19904 */;
-import AvatarMoatmonsturrExample from "AvatarMoatmonsturrExample" /* 19908 */;
-import StarKeySpotIllustration from "StarKeySpotIllustration" /* 19912 */;
-import StarCoinsSpotIllustration from "StarCoinsSpotIllustration" /* 19916 */;
+import shared from "shared" /* 5147 */;
+import useThemeDefault from "useTheme" /* 5369 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 17517 */;
+import AvatarRoseExample from "AvatarRoseExample" /* 20306 */;
+import AvatarLokyExample from "AvatarLokyExample" /* 20310 */;
+import AvatarGraggleExample from "AvatarGraggleExample" /* 20314 */;
+import AvatarMoatmonsturrExample from "AvatarMoatmonsturrExample" /* 20318 */;
+import StarKeySpotIllustration from "StarKeySpotIllustration" /* 20322 */;
+import StarCoinsSpotIllustration from "StarCoinsSpotIllustration" /* 20326 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -47,14 +47,14 @@ function EarningPreview() {
   obj3 = { style: items1, children: items3 };
   const tmp6Result = shared;
   items1[2] = tmp6Result.isThemeDark(tmp2) ? tmp3.earningMetricsDarkMode : tmp3.earningMetricsLightMode;
-  const obj4 = { variant: "text-sm/normal", color: "mobile-text-heading-primary", children: intl.string(intl3.t.TXPK7B) };
-  const Text = tmp6(5624).Text;
+  const obj4 = { variant: "body-sm/normal", color: "mobile-text-heading-primary", children: intl.string(intl3.t.TXPK7B) };
+  const Text = tmp6(5751).Text;
   intl = tmp6(1113).intl;
   const items2 = [hasOwnProperty(Text, obj4), ];
-  const Text2 = tmp6(5624).Text;
+  const Text2 = tmp6(5751).Text;
   const obj5 = { children: items2 };
   const tmp6Result2 = shared;
-  const obj6 = { style: tmp6Result2.isThemeDark(tmp2) ? tmp3.greenTextDarkMode : tmp3.greenTextLightMode, variant: "heading-lg/extrabold", children: intl2.string(intl3.t.LdjJG5) };
+  const obj6 = { style: tmp6Result2.isThemeDark(tmp2) ? tmp3.greenTextDarkMode : tmp3.greenTextLightMode, variant: "heading-lg/semibold", children: intl2.string(intl3.t.LdjJG5) };
   intl2 = tmp6(1113).intl;
   items2[1] = hasOwnProperty(Text2, obj6);
   items3 = [metroRequire(View, obj5), hasOwnProperty(AvatarRoseExample.AvatarRoseExample, { width: 54 })];
@@ -67,7 +67,7 @@ function ConsistentEarningBenefit() {
   let items2;
   const tmp = closure_7();
   const obj = { style: tmp.benefitCard, children: items };
-  const obj2 = { style: tmp.benefitCardTitle, variant: "heading-md/medium", color: "text-default", children: intl.string(intl3.t["9CdmS8"]) };
+  const obj2 = { style: tmp.benefitCardTitle, variant: "heading-sm/medium", color: "text-default", children: intl.string(intl3.t["9CdmS8"]) };
   const Text = Text_Text.Text;
   intl = intl3.intl;
   items = [hasOwnProperty(Text, obj2), hasOwnProperty(EarningPreview, {}), ];
@@ -89,7 +89,7 @@ function FollowerAwardBenefit() {
   let items;
   const tmp = closure_7();
   const obj = { style: tmp.benefitCard, children: items };
-  const obj2 = { style: tmp.benefitCardTitle, variant: "heading-md/medium", color: "text-default", children: intl.string(intl3.t.qsKRUQ) };
+  const obj2 = { style: tmp.benefitCardTitle, variant: "heading-sm/medium", color: "text-default", children: intl.string(intl3.t.qsKRUQ) };
   const Text = Text_Text.Text;
   intl = intl3.intl;
   items = [hasOwnProperty(Text, obj2), ];
@@ -108,12 +108,12 @@ function RevenueShareBenefit() {
   ({ benefitCard: arr[0], revenueShareContainer: arr[1] } = tmp3);
   const items1 = [tmp3.revenueShare, ];
   const Text = Text_Text.Text;
-  const obj3 = { style: items1, variant: "heading-xxl/extrabold", color: "status-positive", children: `${closure_4}%` };
+  const obj3 = { style: items1, variant: "heading-xxl/semibold", color: "status-positive", children: `${closure_4}%` };
   const obj2 = shared;
   items1[1] = obj2.isThemeDark(tmp2) ? tmp3.greenTextDarkMode : tmp3.greenTextLightMode;
   items2 = [hasOwnProperty(Text, obj3), , ];
-  const obj4 = { style: tmp3.revenueShareDescription, variant: "heading-md/medium", color: "text-default", children: intl.string(intl3.t.AewsXD) };
-  const Text2 = tmp7(5624).Text;
+  const obj4 = { style: tmp3.revenueShareDescription, variant: "heading-sm/medium", color: "text-default", children: intl.string(intl3.t.AewsXD) };
+  const Text2 = tmp7(5751).Text;
   intl = tmp7(1113).intl;
   items2[1] = hasOwnProperty(Text2, obj4);
   const obj5 = { style: tmp3.revenueShareIllo, children: hasOwnProperty(StarCoinsSpotIllustration.StarCoinsSpotIllustration, { width: 128 }) };

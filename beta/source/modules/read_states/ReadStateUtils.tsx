@@ -1,13 +1,13 @@
-// Module ID: 9148
-// Function ID: 9149
+// Module ID: 9228
+// Function ID: 9229
 // Name: ReadStateUtils
-// Dependencies: [6842, 6775, 6776, 504, 2]
+// Dependencies: [6897, 6830, 6831, 504, 2]
 // Exports: getHasImportantUnread, useHasImportantUnread
 
-// Module 9148 (ReadStateUtils)
-import ReadStateConstants from "ReadStateConstants" /* 6776 */;
-import ReadStateStore from "ReadStateStore" /* 6842 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6775 */;
+// Module 9228 (ReadStateUtils)
+import ReadStateConstants from "ReadStateConstants" /* 6831 */;
+import ReadStateStore from "ReadStateStore" /* 6897 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6830 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

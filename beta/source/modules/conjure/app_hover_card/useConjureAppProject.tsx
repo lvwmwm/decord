@@ -1,35 +1,38 @@
-// Module ID: 14417
-// Function ID: 14418
+// Module ID: 14653
+// Function ID: 14654
 // Name: useConjureAppProject
-// Dependencies: [19, 6844, 6879, 10875, 504, 2]
+// Dependencies: [19, 6899, 6934, 10996, 504, 2]
 // Exports: default
 
-// Module 14417 (useConjureAppProject)
-import ConjureProjectStore2 from "ConjureProjectStore" /* 6844 */;
-import ConjureActionCreators from "ConjureActionCreators" /* 10875 */;
+// Module 14653 (useConjureAppProject)
+import ConjureActionCreators from "ConjureActionCreators" /* 10996 */;
 import react_mod from "react" /* 19 */;
+import ConjureProjectStore_mod from "ConjureProjectStore" /* 6899 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-const ConjureProjectStore = ConjureProjectStore2;
 let _require, dependencyMap;
 
+let c3;
+let closure_4;
 let react = react_mod;
-const canRemixProject = ConjureProjectStore2.canRemixProject;
+let ConjureProjectStore = ConjureProjectStore_mod;
+({ canRemixProject: c3, isProjectOwner: closure_4 } = ConjureProjectStore);
+ConjureProjectStore = ConjureProjectStore_mod;
 let result = size.fileFinishedImporting("modules/conjure/app_hover_card/useConjureAppProject.tsx");
 
-export default function useConjureAppProject(arg0, guildId, arg2) {
+export default function useConjureAppProject(arg0, arg1, arg2) {
   let closure_0;
   let closure_1;
   let closure_2;
-  let project;
   _require = arg0;
   dependencyMap = arg2;
   let tmp = _require;
   let tmp2 = dependencyMap;
+  let tmp4 = arg1;
   const useIsConjureGuildEnabled = require("ConjureGuildExperiment").useIsConjureGuildEnabled;
   const tmp3 = require("ConjureGuildExperiment");
-  const tmp5 = useIsConjureGuildEnabled({ guildId, location: "ConjureAppHoverCard" }) && null != guildId;
+  const tmp5 = useIsConjureGuildEnabled({ guildId: tmp4, location: "ConjureAppHoverCard" }) && null != arg1;
   react = tmp5;
   let items = [arg2, arg0];
   const effect = react.useEffect(() => {
@@ -40,7 +43,7 @@ export default function useConjureAppProject(arg0, guildId, arg2) {
       const missingConjureProjects = obj.loadMissingConjureProjects(items);
     }
   }, items);
-  const items1 = [project];
+  const items1 = [ConjureProjectStore];
   const items2 = [arg0];
   const tmpResult = tmp(504);
   const stateFromStoresObject = tmpResult.useStateFromStoresObject(items1, () => {
@@ -61,20 +64,28 @@ export default function useConjureAppProject(arg0, guildId, arg2) {
     }
     return obj;
   }, items2);
-  project = stateFromStoresObject.project;
+  let project = stateFromStoresObject.project;
   const isUnavailable = stateFromStoresObject.isUnavailable;
   const items3 = [project, tmp5, arg0, isUnavailable];
   return react.useMemo(() => {
     let tmp2;
-    const obj = { project, remixProject: tmp2, isSettled: null == closure_0 || null != project || isUnavailable };
+    let tmp4;
+    const obj = { project, remixProject: tmp2, editProject: tmp4, isSettled: null == closure_0 || null != project || isUnavailable };
     tmp2 = null;
     if (closure_2) {
       tmp2 = null;
       if (null != project) {
         tmp2 = null;
-        if (canRemixProject(project)) {
+        if (_false(project)) {
           tmp2 = tmp;
         }
+      }
+    }
+    tmp4 = null;
+    if (null != project) {
+      tmp4 = null;
+      if (React3(project)) {
+        tmp4 = tmp;
       }
     }
     return obj;

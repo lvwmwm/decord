@@ -1,23 +1,22 @@
-// Module ID: 18140
-// Function ID: 18141
+// Module ID: 18482
+// Function ID: 18483
 // Name: HappeningNowCardEmbeddedActivity
-// Dependencies: [32, 19, 17, 1383, 17282, 1072, 21, 5014, 575, 563, 18141, 7330, 1252, 7351, 13184, 1994, 18113, 5095, 6028, 1260, 18124, 17283, 8678, 5717, 18137, 2]
+// Dependencies: [32, 19, 17, 1385, 17608, 1072, 21, 5140, 575, 563, 18483, 7391, 1252, 7412, 13408, 2118, 18455, 1652, 1705, 6160, 1260, 18466, 17609, 8749, 5842, 18479, 2]
 // Exports: default
 
-// Module 18140 (HappeningNowCardEmbeddedActivity)
+// Module 18482 (HappeningNowCardEmbeddedActivity)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import asyncRequire from "asyncRequire" /* 1994 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7351 */;
+import asyncRequire from "asyncRequire" /* 2118 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7412 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1383 */;
-import HappeningNowConstants from "HappeningNowConstants" /* 17282 */;
+import UserStore from "UserStore" /* 1385 */;
+import HappeningNowConstants from "HappeningNowConstants" /* 17608 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 let user;
@@ -34,8 +33,8 @@ const AnalyticEvents = Constants.AnalyticEvents;
 let obj = { content: { flexShrink: 1, gap: 2 }, cardImage: { height: HAPPENING_NOW_CONTENT_HEIGHT, minWidth: HAPPENING_NOW_CONTENT_HEIGHT, marginRight: 12 }, activityBackground: size, cardTitle: { marginTop: 2 } };
 size = { width: HAPPENING_NOW_CONTENT_HEIGHT, height: HAPPENING_NOW_CONTENT_HEIGHT, borderRadius: nativeDefault.radii.sm, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE };
 let closure_11 = createStyles.createStyles(obj);
-const __initData = { code: "function HappeningNowCardEmbeddedActivityTsx1(){const{viewableCardKeys,cardKey}=this.__closure;return viewableCardKeys.get().find(function(key){return key===cardKey;})!=null;}" };
-const __initData2 = { code: "function HappeningNowCardEmbeddedActivityTsx2(isViewable,previous){const{runOnJS,setHasViewed}=this.__closure;if(!isViewable||isViewable===previous)return;runOnJS(setHasViewed)(true);}" };
+let closure_12 = { code: "(function HappeningNowCardEmbeddedActivityTsx1(){let[viewableCardKeys,cardKey]=this.__closure;return viewableCardKeys.get().find(function(key){return key===cardKey;})!=null;})" };
+let closure_13 = { code: "(function HappeningNowCardEmbeddedActivityTsx2(isViewable,previous){let[scheduleOnRN,setHasViewed]=this.__closure;if(!isViewable||isViewable===previous)return;scheduleOnRN(setHasViewed,true);})" };
 size = size_mod;
 let result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/happening_now/HappeningNowCardEmbeddedActivity.tsx");
 
@@ -44,14 +43,20 @@ export default function HappeningNowCardEmbeddedActivity(guildId) {
   let fullwidth;
   let iconURL;
   let id1;
-  let items5;
-  let items6;
+  let items10;
+  let items9;
+  let obj10;
   let obj11;
-  let obj12;
+  let obj5;
   let obj6;
-  let obj7;
   let str;
-  let tmp30Result;
+  let tmp18;
+  let tmp19;
+  let tmp20;
+  let tmp21;
+  let tmp22;
+  let tmp23;
+  let tmp37Result;
   let voiceState;
   guildId = guildId.guildId;
   const index = guildId.index;
@@ -132,7 +137,7 @@ export default function HappeningNowCardEmbeddedActivity(guildId) {
     }
     items1 = [userId];
     track(ACTIVITY_CARD_CLICKED, obj);
-    const promise = asyncRequire(13184, tmp.paths);
+    const promise = asyncRequire(13408, tmp.paths);
     promise.then((result) => {
       if (null != channelId) {
         tmp(tmp2, true);
@@ -159,32 +164,45 @@ export default function HappeningNowCardEmbeddedActivity(guildId) {
       closure_9(null != value.find((item) => item === cardKey));
     }
   }, items4);
-  const fn = function b() {
-    const value = context.get();
-    return null != value.find((item) => item === cardKey);
-  };
-  fn.__closure = { viewableCardKeys: context, cardKey };
-  fn.__workletHash = 3043999664691;
-  fn.__initData = __initData;
+  const items5 = [closure_12, context, cardKey];
+  let c0;
+  let c1;
+  [tmp18, tmp19, tmp20] = items5;
   const tmp2Result = tmp2(activity[17]);
-  class T {
+  class HappeningNowCardEmbeddedActivityTsx1 {
+    constructor() {
+      const value = _undefined.get();
+      return null != value.find((item) => item === closure_1_1);
+    }
+  }
+  const items6 = [tmp19, tmp20];
+  HappeningNowCardEmbeddedActivityTsx1.__closure = items6;
+  HappeningNowCardEmbeddedActivityTsx1.__workletHash = 14378880099274;
+  HappeningNowCardEmbeddedActivityTsx1.__initData = tmp18;
+  const items7 = [closure_13, , ];
+  const useAnimatedReaction = tmp2Result.useAnimatedReaction;
+  items7[1] = tmp2(activity[18]).scheduleOnRN;
+  items7[2] = tmp8Result[1];
+  c0 = undefined;
+  c1 = undefined;
+  [tmp21, tmp22, tmp23] = items7;
+  class HappeningNowCardEmbeddedActivityTsx2 {
     constructor(arg0, arg1) {
       const tmp = arg0 && arg0 !== arg1;
       if (tmp) {
-        const obj = ReanimatedRexport;
-        obj.runOnJS(closure_9)(true);
+        _undefined(c1, true);
       }
     }
   }
-  T.__closure = { runOnJS: tmp2(activity[17]).runOnJS, setHasViewed: tmp8Result[1] };
-  T.__workletHash = 17292462926115;
-  T.__initData = __initData2;
-  ({ runOnJS: tmp2(activity[17]).runOnJS, setHasViewed: tmp8Result[1] });
-  const animatedReaction = tmp2Result.useAnimatedReaction(fn, T);
-  const tmp5Result = index(activity[18]);
+  const items8 = [tmp22, tmp23];
+  HappeningNowCardEmbeddedActivityTsx2.__closure = items8;
+  HappeningNowCardEmbeddedActivityTsx2.__workletHash = 1153066654263;
+  HappeningNowCardEmbeddedActivityTsx2.__initData = tmp21;
+  const animatedReaction = useAnimatedReaction(HappeningNowCardEmbeddedActivityTsx1, HappeningNowCardEmbeddedActivityTsx2);
+  const tmp5Result = index(activity[19]);
   if (first1) {
-    const obj5 = { type: tmp2(activity[19]).ImpressionTypes.VIEW, name: tmp2(activity[19]).ImpressionNames.EMBEDDED_ACTIVITY_HAPPENING_NOW, properties: obj6 };
-    obj6 = { user_id: userId, guild_id: guildId, application_id: id1, activity_session_id: compositeInstanceId };
+    const obj3 = { type: tmp2(activity[20]).ImpressionTypes.VIEW, name: tmp2(activity[20]).ImpressionNames.EMBEDDED_ACTIVITY_HAPPENING_NOW, properties: obj5 };
+    obj5 = { user_id: userId, guild_id: guildId, application_id: id1, activity_session_id: compositeInstanceId };
     id1 = undefined;
     if (first != null) {
       id1 = first.id;
@@ -193,45 +211,45 @@ export default function HappeningNowCardEmbeddedActivity(guildId) {
     if (activity != null) {
       compositeInstanceId = activity.compositeInstanceId;
     }
-    obj7 = obj5;
+    obj6 = obj3;
   } else {
-    obj7 = {};
+    obj6 = {};
   }
-  tmp5Result(obj7);
+  tmp5Result(obj6);
   if (0 === stateFromStoresArray.length) {
-    const obj8 = { panelVariant: flag };
-    tmp30Result = closure_9(tmp2(tmp3[20]).HappeningNowCardPlaceholder, obj8);
+    const obj7 = { panelVariant: flag };
+    tmp37Result = closure_9(tmp2(tmp3[21]).HappeningNowCardPlaceholder, obj7);
   } else {
-    const obj9 = { onPress: callback, width: str, IconComponent: tmp2(activity[22]).AppsIcon, panelVariant: flag, children: items5 };
+    const obj8 = { onPress: callback, width: str, IconComponent: tmp2(activity[23]).AppsIcon, panelVariant: flag, children: items9 };
     str = "medium";
-    const tmp5Result2 = index(activity[21]);
+    const tmp5Result2 = index(activity[22]);
     if (fullwidth) {
       str = "full";
     }
-    let tmp22 = null != iconURL;
-    if (tmp22) {
-      const obj10 = { style: tmp.cardImage, children: closure_9(index(activity[23]), obj11) };
-      obj11 = { source: obj12, style: tmp.activityBackground };
-      obj12 = { uri: iconURL };
-      tmp22 = closure_9(channelId, obj10);
+    let tmp29 = null != iconURL;
+    if (tmp29) {
+      const obj9 = { style: tmp.cardImage, children: closure_9(index(activity[24]), obj10) };
+      obj10 = { source: obj11, style: tmp.activityBackground };
+      obj11 = { uri: iconURL };
+      tmp29 = closure_9(channelId, obj9);
     }
-    items5 = [tmp22, ];
-    const obj13 = { style: tmp.content, children: items6 };
-    const obj14 = { users: stateFromStoresArray, userLimit: 3, guildId };
-    items6 = [closure_9(tmp2(tmp3[24]).HappeningNowAvatarStack, obj14), , ];
-    const obj15 = { lineClamp: 1, style: tmp.cardTitle, children: result };
-    items6[1] = closure_9(tmp2(activity[21]).HappeningNowCardHeader, obj15);
+    items9 = [tmp29, ];
+    const obj12 = { style: tmp.content, children: items10 };
+    const obj13 = { users: stateFromStoresArray, userLimit: 3, guildId };
+    items10 = [closure_9(tmp2(tmp3[25]).HappeningNowAvatarStack, obj13), , ];
+    const obj14 = { lineClamp: 1, style: tmp.cardTitle, children: result };
+    items10[1] = closure_9(tmp2(activity[22]).HappeningNowCardHeader, obj14);
     let name;
-    const HappeningNowCardSubtitle = tmp2(tmp3[21]).HappeningNowCardSubtitle;
-    const tmp25 = channelId;
-    const tmp26 = closure_9;
+    const HappeningNowCardSubtitle = tmp2(tmp3[22]).HappeningNowCardSubtitle;
+    const tmp32 = channelId;
+    const tmp33 = closure_9;
     if (first != null) {
       name = first.name;
     }
-    const obj16 = { children: name };
-    items6[2] = tmp26(HappeningNowCardSubtitle, obj16);
-    items5[1] = ref2(tmp25, obj13);
-    tmp30Result = tmp30(tmp5Result2, obj9);
+    const obj15 = { children: name };
+    items10[2] = tmp33(HappeningNowCardSubtitle, obj15);
+    items9[1] = ref2(tmp32, obj12);
+    tmp37Result = tmp37(tmp5Result2, obj8);
   }
-  return tmp30Result;
+  return tmp37Result;
 };

@@ -1,10 +1,10 @@
-// Module ID: 5791
-// Function ID: 5792
+// Module ID: 5920
+// Function ID: 5921
 // Name: Constants
-// Dependencies: [5768, 2]
+// Dependencies: [5897, 2]
 
-// Module 5791 (Constants)
-import Constants from "Constants" /* 5768 */;
+// Module 5920 (Constants)
+import Constants from "Constants" /* 5897 */;
 import size from "module_2" /* 2 */;
 
 const InputModes = Constants.InputModes;

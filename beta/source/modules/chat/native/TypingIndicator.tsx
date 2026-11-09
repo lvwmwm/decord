@@ -1,39 +1,37 @@
-// Module ID: 13728
-// Function ID: 13729
+// Module ID: 13961
+// Function ID: 13962
 // Name: TypingIndicator
-// Dependencies: [19, 17, 9895, 5627, 6797, 7830, 13729, 1383, 1072, 21, 13730, 504, 5014, 575, 13731, 13732, 13733, 6041, 1252, 7326, 7351, 13734, 13735, 5095, 5596, 5080, 5637, 5638, 13745, 1187, 5624, 13749, 2]
+// Dependencies: [19, 17, 10017, 5754, 6852, 7906, 13962, 1385, 1072, 21, 13963, 504, 5140, 575, 13964, 13965, 13966, 6173, 1252, 7387, 7412, 13967, 13968, 1652, 5724, 5199, 5761, 5762, 13978, 1187, 5751, 13982, 2]
 // Exports: hasTypingIndicatorContent, useTypingUserIdsForDisplay
 
-// Module 13728 (TypingIndicator)
+// Module 13961 (TypingIndicator)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import native from "native" /* 5080 */;
-import spring from "spring" /* 5637 */;
-import springPresets from "springPresets" /* 5638 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 6041 */;
-import SlowmodeStore from "SlowmodeStore" /* 7830 */;
-import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 9895 */;
-import CustomTypingIndicatorUtils from "CustomTypingIndicatorUtils" /* 13733 */;
-import CustomTypingIndicatorAnalytics from "CustomTypingIndicatorAnalytics" /* 13734 */;
-import openCustomTypingIndicatorAnnounceActionSheet from "openCustomTypingIndicatorAnnounceActionSheet" /* 13735 */;
+import native from "native" /* 5199 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 6173 */;
+import SlowmodeStore from "SlowmodeStore" /* 7906 */;
+import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 10017 */;
+import CustomTypingIndicatorUtils from "CustomTypingIndicatorUtils" /* 13966 */;
+import CustomTypingIndicatorAnalytics from "CustomTypingIndicatorAnalytics" /* 13967 */;
+import openCustomTypingIndicatorAnnounceActionSheet from "openCustomTypingIndicatorAnnounceActionSheet" /* 13968 */;
 import react from "react" /* 19 */;
-import DevSettingsStore from "DevSettingsStore" /* 5627 */;
-import RawGuildEmojiStore from "RawGuildEmojiStore" /* 6797 */;
-import TypingStore from "TypingStore" /* 13729 */;
-import UserStore from "UserStore" /* 1383 */;
+import DevSettingsStore from "DevSettingsStore" /* 5754 */;
+import RawGuildEmojiStore from "RawGuildEmojiStore" /* 6852 */;
+import TypingStore from "TypingStore" /* 13962 */;
+import UserStore from "UserStore" /* 1385 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
-let currentUser, set;
+let currentUser;
 
 let closure_12;
 let closure_14;
 let map1;
-const f104839 = () => DevSettingsStore.get("preview_own_typing_indicator");
-const f104840 = () => {
+const f106567 = () => DevSettingsStore.get("preview_own_typing_indicator");
+const f106568 = () => {
   currentUser = currentUser.getCurrentUser();
   let id;
   if (currentUser != null) {
@@ -42,12 +40,23 @@ const f104840 = () => {
   return id;
 };
 function TypingIndicatorInner(channel) {
-  let items7;
-  let items8;
-  let items9;
-  let obj7;
-  let tmp22Result;
+  let items13;
+  let items14;
+  let items15;
+  let obj5;
+  let tmp20;
+  let tmp21;
+  let tmp22;
+  let tmp23;
+  let tmp24;
+  let tmp25;
   let tmp28;
+  let tmp29;
+  let tmp30;
+  let tmp31;
+  let tmp32;
+  let tmp35Result;
+  let tmp41;
   let transitionState;
   let typingUserIds;
   channel = channel.channel;
@@ -166,16 +175,28 @@ function TypingIndicatorInner(channel) {
       cleanUp();
     }
   }, items6);
+  const items7 = [closure_16, sharedValue];
+  let c0;
+  [tmp20, tmp21] = items7;
   const tmpResult9 = tmp(cleanUp[23]);
-  class O {
+  class TypingIndicatorTsx1 {
     constructor() {
-      return sharedValue.get();
+      return _undefined.get();
     }
   }
-  O.__closure = { typingIndicatorLayout: sharedValue };
-  O.__workletHash = 10758673194436;
-  O.__initData = __initData;
-  class P {
+  const items8 = [tmp21];
+  TypingIndicatorTsx1.__closure = items8;
+  TypingIndicatorTsx1.__workletHash = 14813085565405;
+  TypingIndicatorTsx1.__initData = tmp20;
+  const items9 = [closure_17, sharedValue1, , ];
+  const useAnimatedReaction = tmpResult9.useAnimatedReaction;
+  items9[2] = tmp(cleanUp[26]).withSpring;
+  items9[3] = tmp(cleanUp[27]).springStandard;
+  c0 = undefined;
+  let c1;
+  let c2;
+  [tmp22, tmp23, tmp24, tmp25] = items9;
+  class TypingIndicatorTsx2 {
     constructor(arg0, arg1) {
       let tmp = arg0 !== arg1 && null != arg0;
       if (tmp) {
@@ -185,77 +206,84 @@ function TypingIndicatorInner(channel) {
         tmp = toFixedResult === height.toFixed(2);
       }
       if (tmp) {
-        set = sharedValue1.set;
-        const obj = spring;
-        const tmp7 = -arg0.height;
-        const result = set(obj.withSpring(tmp7, springPresets.springStandard, "respect-motion-settings"));
+        const result = _undefined.set(_undefined2(-arg0.height, c2, "respect-motion-settings"));
       }
     }
   }
-  P.__closure = { translateYValue: sharedValue1, withSpring: tmp(cleanUp[26]).withSpring, springStandard: tmp(cleanUp[27]).springStandard };
-  P.__workletHash = 14874351700395;
-  P.__initData = __initData2;
-  ({ translateYValue: sharedValue1, withSpring: tmp(cleanUp[26]).withSpring, springStandard: tmp(cleanUp[27]).springStandard });
-  const animatedReaction = tmpResult9.useAnimatedReaction(O, P);
-  const fn = function j() {
-    let height;
-    let items;
-    let num;
-    const value = sharedValue.get();
-    if (0 === sharedValue1.get()) {
-      num = 0;
-    } else {
-      num = 1;
+  const items10 = [tmp23, tmp24, tmp25];
+  TypingIndicatorTsx2.__closure = items10;
+  TypingIndicatorTsx2.__workletHash = 3866076667250;
+  TypingIndicatorTsx2.__initData = tmp22;
+  const animatedReaction = useAnimatedReaction(TypingIndicatorTsx1, TypingIndicatorTsx2);
+  const items11 = [closure_18, sharedValue, sharedValue1, transitionState, ];
+  const useAnimatedStyle = tmp(tmp2[23]).useAnimatedStyle;
+  tmp(cleanUp[23]);
+  items11[4] = tmp(cleanUp[25]).TransitionStates;
+  c0 = undefined;
+  c1 = undefined;
+  c2 = undefined;
+  let c3;
+  [tmp28, tmp29, tmp30, tmp31, tmp32] = items11;
+  class TypingIndicatorTsx3 {
+    constructor() {
+      let height;
+      let items;
+      let num;
+      const value = _undefined.get();
+      if (0 === _undefined2.get()) {
+        num = 0;
+      } else {
+        num = 1;
+      }
+      const obj2 = { opacity: num, top: height, transform: items };
+      height = undefined;
+      if (value != null) {
+        height = value.height;
+      }
+      items = [{ translateY: obj.get() }];
+      ({ translateY: _undefined2.get() });
+      return obj2;
     }
-    const obj2 = { opacity: num, top: height, transform: items };
-    height = undefined;
-    if (value != null) {
-      height = value.height;
-    }
-    items = [{ translateY: obj.get() }];
-    ({ translateY: sharedValue1.get() });
-    return obj2;
-  };
-  const tmpResult10 = tmp(cleanUp[23]);
-  fn.__closure = { typingIndicatorLayout: sharedValue, translateYValue: sharedValue1, transitionState, TransitionStates: tmp(cleanUp[25]).TransitionStates };
-  fn.__workletHash = 15240163018691;
-  fn.__initData = __initData3;
-  ({ typingIndicatorLayout: sharedValue, translateYValue: sharedValue1, transitionState, TransitionStates: tmp(cleanUp[25]).TransitionStates });
-  const animatedStyle = tmpResult10.useAnimatedStyle(fn);
-  const obj6 = { style: items7, onLayout: callback1, children: closure_14(stateFromStores, obj7) };
-  items7 = [tmp16.typingWrapper, animatedStyle];
-  obj7 = { style: tmp16.wrapperHoriz, children: items9 };
-  const obj8 = { style: tmp16.horiz, children: tmp22Result };
+  }
+  const items12 = [tmp29, tmp30, tmp31, tmp32];
+  TypingIndicatorTsx3.__closure = items12;
+  TypingIndicatorTsx3.__workletHash = 15288723177178;
+  TypingIndicatorTsx3.__initData = tmp28;
+  const animatedStyle = useAnimatedStyle(TypingIndicatorTsx3);
+  const obj4 = { style: items13, onLayout: callback1, children: closure_14(stateFromStores, obj5) };
+  items13 = [tmp16.typingWrapper, animatedStyle];
+  obj5 = { style: tmp16.wrapperHoriz, children: items15 };
+  const obj6 = { style: tmp16.horiz, children: tmp35Result };
   View = tmp5(tmp2[23]).View;
   if (null != stateFromStoresObject.config) {
-    const obj9 = { config: null, username: null, onPress: tmp28 };
-    ({ config: obj17.config, name: obj17.username } = stateFromStoresObject);
-    tmp28 = undefined;
+    const obj7 = { config: null, username: null, onPress: tmp41 };
+    ({ config: obj13.config, name: obj13.username } = stateFromStoresObject);
+    tmp41 = undefined;
     const tmp5Result2 = tmp5(cleanUp[28]);
     if (canSet) {
-      tmp28 = callback;
+      tmp41 = callback;
     }
-    tmp22Result = tmp21(tmp5Result2, obj9);
+    tmp35Result = tmp34(tmp5Result2, obj7);
   } else {
-    let tmp21Result3 = null;
-    const tmp24 = closure_13;
+    let tmp34Result3 = null;
+    const tmp37 = closure_13;
     if (null != tmp6Result) {
-      tmp21Result3 = tmp21(tmp(tmp2[29]).Ellipsis, {});
+      tmp34Result3 = tmp34(tmp(tmp2[29]).Ellipsis, {});
     }
-    const obj10 = { children: items8 };
-    items8 = [tmp21Result3, ];
-    const obj11 = { style: tmp16.text, lineClamp: 1, maxFontSizeMultiplier: 2, variant: "text-xs/medium", color: "interactive-text-default", includeFontPadding: true, ellipsizeMode: "tail", children: tmp6Result };
-    items8[1] = closure_12(tmp(cleanUp[30]).Text, obj11);
-    tmp22Result = tmp22(tmp24, obj10);
+    const obj8 = { children: items14 };
+    items14 = [tmp34Result3, ];
+    const obj9 = { style: tmp16.text, lineClamp: 1, maxFontSizeMultiplier: 2, variant: "body-xs/medium", color: "interactive-text-default", includeFontPadding: true, ellipsizeMode: "tail", children: tmp6Result };
+    items14[1] = closure_12(tmp(cleanUp[30]).Text, obj9);
+    tmp35Result = tmp35(tmp37, obj8);
   }
-  items9 = [closure_12(stateFromStores, obj8), ];
-  let tmp21Result4 = null;
+  items15 = [closure_12(stateFromStores, obj6), ];
+  let tmp34Result4 = null;
   if (channel.rateLimitPerUser > 0) {
-    const obj12 = { channel, hasTypingText: null != tmp6Result, slowmodeType: analyticsLocations.SendMessage };
-    tmp21Result4 = tmp21(tmp5(tmp2[31]), obj12);
+    const obj10 = { channel, hasTypingText: null != tmp6Result, slowmodeType: analyticsLocations.SendMessage };
+    tmp34Result4 = tmp34(tmp5(tmp2[31]), obj10);
   }
-  items9[1] = tmp21Result4;
-  return closure_12(View, obj6);
+  items15[1] = tmp34Result4;
+  return closure_12(View, obj4);
 }
 function renderTypingIndicator(arg0, arg1, transitionState, cleanUp) {
   const obj = { transitionState, cleanUp };
@@ -273,9 +301,9 @@ let closure_15 = createStyles.createStyles((arg0) => {
   ({ marginRight: nativeDefault.space.PX_8, alignItems: "center", flexDirection: "row", flex: 1 });
   return obj;
 });
-const __initData = { code: "function TypingIndicatorTsx1(){const{typingIndicatorLayout}=this.__closure;return typingIndicatorLayout.get();}" };
-const __initData2 = { code: "function TypingIndicatorTsx2(current,prev){const{translateYValue,withSpring,springStandard}=this.__closure;if(current===prev)return;if(current==null)return;if(current.y.toFixed(2)!==current.height.toFixed(2))return;translateYValue.set(withSpring(-current.height,springStandard,'respect-motion-settings'));}" };
-const __initData3 = { code: "function TypingIndicatorTsx3(){const{typingIndicatorLayout,translateYValue,transitionState,TransitionStates}=this.__closure;const layout=typingIndicatorLayout.get();return{opacity:translateYValue.get()===0||transitionState===TransitionStates.YEETED?0:1,top:layout===null||layout===void 0?void 0:layout.height,transform:[{translateY:translateYValue.get()}]};}" };
+let closure_16 = { code: "(function TypingIndicatorTsx1(){let[typingIndicatorLayout]=this.__closure;return typingIndicatorLayout.get();})" };
+let closure_17 = { code: "(function TypingIndicatorTsx2(current,prev){let[translateYValue,withSpring,springStandard]=this.__closure;if(current===prev)return;if(current==null)return;if(current.y.toFixed(2)!==current.height.toFixed(2))return;translateYValue.set(withSpring(-current.height,springStandard,'respect-motion-settings'));})" };
+let closure_18 = { code: "(function TypingIndicatorTsx3(){let[typingIndicatorLayout,translateYValue,transitionState,TransitionStates]=this.__closure;const layout=typingIndicatorLayout.get();return{opacity:translateYValue.get()===0||transitionState===TransitionStates.YEETED?0:1,top:layout===null||layout===void 0?void 0:layout.height,transform:[{translateY:translateYValue.get()}]};})" };
 const memoResult = react.memo(function TypingIndicator(channel) {
   channel = channel.channel;
   let tmp = closure_5(channel.screenIndex);
@@ -287,10 +315,10 @@ const memoResult = react.memo(function TypingIndicator(channel) {
   typingUserIds = obj.useTypingUserIds(id, 4);
   let items = [DevSettingsStore];
   const obj2 = typingUserIds(stateFromStores1[11]);
-  const stateFromStores = obj2.useStateFromStores(items, f104839);
+  const stateFromStores = obj2.useStateFromStores(items, f106567);
   const items1 = [UserStore];
   const obj3 = typingUserIds(stateFromStores1[11]);
-  stateFromStores1 = obj3.useStateFromStores(items1, f104840);
+  stateFromStores1 = obj3.useStateFromStores(items1, f106568);
   const items2 = [stateFromStores, stateFromStores1, typingUserIds];
   const memo = react.useMemo(() => {
     const tmp = stateFromStores;
@@ -338,10 +366,10 @@ export function useTypingUserIdsForDisplay(id, arg1) {
   typingUserIds = obj.useTypingUserIds(id, arg1);
   const items = [DevSettingsStore];
   const obj2 = typingUserIds(stateFromStores1[11]);
-  const stateFromStores = obj2.useStateFromStores(items, f104839);
+  const stateFromStores = obj2.useStateFromStores(items, f106567);
   const items1 = [UserStore];
   const obj3 = typingUserIds(stateFromStores1[11]);
-  stateFromStores1 = obj3.useStateFromStores(items1, f104840);
+  stateFromStores1 = obj3.useStateFromStores(items1, f106568);
   const items2 = [stateFromStores, stateFromStores1, typingUserIds];
   return react.useMemo(() => {
     const tmp = stateFromStores;

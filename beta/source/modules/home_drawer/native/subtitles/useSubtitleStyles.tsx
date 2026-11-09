@@ -1,10 +1,10 @@
-// Module ID: 18394
-// Function ID: 18395
+// Module ID: 18733
+// Function ID: 18734
 // Name: useSubtitleStyles
-// Dependencies: [5014, 2]
+// Dependencies: [5140, 2]
 
-// Module 18394 (useSubtitleStyles)
-import createStyles from "createStyles" /* 5014 */;
+// Module 18733 (useSubtitleStyles)
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 const styles = createStyles.createStyles({ subtitleRow: { flexDirection: "row", alignItems: "center" }, subtitleText: { flexShrink: 1 }, channelIcon: { marginRight: 2 }, unreadChannelIcon: { marginLeft: 2, marginRight: 2 } });

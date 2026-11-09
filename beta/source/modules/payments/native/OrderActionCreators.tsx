@@ -1,18 +1,18 @@
-// Module ID: 7614
-// Function ID: 7615
+// Module ID: 7690
+// Function ID: 7691
 // Name: payments/OrderActionCreators
-// Dependencies: [5, 5747, 1072, 3, 1282, 4827, 572, 7418, 2]
+// Dependencies: [5, 5872, 1072, 3, 1282, 4953, 572, 7482, 2]
 // Exports: cancelOrderSigning, discardOrder, getOrCreateOrder, markOrderAsSigningInProgress, patchOrder, patchOrderLineItem, updateOrder
 
-// Module 7614 (payments/OrderActionCreators)
+// Module 7690 (payments/OrderActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants from "Constants" /* 1072 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
-import PaymentConstants from "PaymentConstants" /* 5747 */;
+import PaymentConstants from "PaymentConstants" /* 5872 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
-let closure_3, closure_4, expected_revision, external_gateway_facet, gift_customization, orderLineItemId, order_line_items, recipient_id, request_gateway_country_code, subscription_facet;
+let closure_3, closure_4, expected_revision, external_gateway_facet, orderLineItemId, order_line_items, request_gateway_country_code, subscription_facet;
 
 function getOrders() {
   return obj(...arguments);
@@ -33,7 +33,7 @@ let obj = function _getOrders() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -169,7 +169,7 @@ obj = function _createOrder() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -382,24 +382,27 @@ obj = function _getOrCreateOrder() {
     let c6;
     let c7;
     let c8;
+    let c9;
     let isGift;
     let items;
     let purchase_type;
+    let tmp3;
     let closure_0 = arg0;
     if (isGift === 2) {
       isGift = 3;
       throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp2 === 3) {
+    } else if (tmp3 === 3) {
       if (arg0 === 1) {
         throw value;
       } else if (arg0 === 2) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
+        let closure_1;
         let sku_id;
         let paymentGateway;
         let recipientUserId;
@@ -407,8 +410,10 @@ obj = function _getOrCreateOrder() {
         let createdAfter;
         let subscription_plan_id;
         let externalGatewayFacet;
-        let length;
+        let countryCode;
+        let id;
         isGift = 2;
+        let tmp4 = purchase_type;
         if (0 === purchase_type) {
           if (arg0 === 1) {
             isGift = 3;
@@ -418,7 +423,8 @@ obj = function _getOrCreateOrder() {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            let closure_2 = tmp3;
+            let closure_2 = tmp4;
+            closure_1 = tmp;
             sku_id = undefined;
             paymentGateway = undefined;
             recipientUserId = undefined;
@@ -426,14 +432,14 @@ obj = function _getOrCreateOrder() {
             createdAfter = undefined;
             subscription_plan_id = undefined;
             externalGatewayFacet = undefined;
-            ({ skuId: c0, paymentGateway: c1, recipientUserId: c2, purchaseType: c3, isGift: c4, giftInfo: c5, createdAfter: c6, subscriptionPlanId: c7, externalGatewayFacet: c8 } = closure_0);
-            length = undefined;
-            value = undefined;
+            countryCode = undefined;
+            ({ skuId: c0, paymentGateway: c1, recipientUserId: c2, purchaseType: c3, isGift: c4, giftInfo: c5, createdAfter: c6, subscriptionPlanId: c7, externalGatewayFacet: c8, countryCode: c9 } = closure_0);
+            id = undefined;
             purchase_type = 1;
             isGift = 1;
             return { value: "flexDirection", done: true };
           }
-        } else if (1 === purchase_type) {
+        } else if (1 === tmp4) {
           if (arg0 === 1) {
             isGift = 3;
             throw value;
@@ -442,54 +448,96 @@ obj = function _getOrCreateOrder() {
             const obj4 = { value, done: true };
             return obj4;
           } else {
-            const obj5 = { isGift, status: closure_130_4.DRAFT, skuId: sku_id, createdAfter, recipientUserId };
+            const obj5 = { isGift, status: closure_130_4.DRAFT, skuId: sku_id, createdAfter, recipientUserId, paymentGateway };
             purchase_type = 2;
             isGift = 1;
             const obj6 = { value: closure_130_7(obj5), done: false };
             return obj6;
           }
-        } else if (2 === purchase_type) {
-          if (arg0 === 1) {
+        } else {
+          let tmp5;
+          if (2 === tmp4) {
+            if (arg0 === 1) {
+              isGift = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              isGift = 3;
+              const obj7 = { value, done: true };
+              return obj7;
+            } else {
+              id = value.find((order_line_items) => {
+                closure_0 = closure_1_0;
+                let closure_1 = subscription_plan_id;
+                let someResult = null == subscription_plan_id;
+                if (!someResult) {
+                  order_line_items = order_line_items.order_line_items;
+                  someResult = order_line_items.some((sku_id) => sku_id.sku_id === closure_0 && sku_id.subscription_plan_id === closure_1);
+                }
+                if (someResult) {
+                  let recipient_id;
+                  let tmp3;
+                  const gifting_facet = order_line_items.gifting_facet;
+                  if (gifting_facet != null) {
+                    const gift_customization = gifting_facet.gift_customization;
+                    if (gift_customization != null) {
+                      recipient_id = gift_customization.recipient_id;
+                    }
+                  }
+                  if (null == recipientUserId) {
+                    tmp3 = null == recipient_id || 0 === recipient_id.length;
+                    const tmp4 = null == recipient_id || 0 === recipient_id.length;
+                  } else {
+                    tmp3 = recipient_id === tmp2;
+                  }
+                  someResult = tmp3;
+                }
+                if (someResult) {
+                  let tmp6 = null == countryCode;
+                  if (!tmp6) {
+                    const location_facet = order_line_items.location_facet;
+                    let prop;
+                    if (location_facet != null) {
+                      prop = location_facet.determined_country_code;
+                    }
+                    tmp6 = prop === tmp5;
+                  }
+                  someResult = tmp6;
+                }
+                return someResult;
+              });
+              if (null != id) {
+                let tmp6 = closure_1;
+                const obj8 = { orderId: id.id, skuId: sku_id, isGift, paymentGateway };
+                closure_130_6.info("reusing existing draft order", obj8);
+                tmp5 = id;
+              } else {
+                const obj9 = { paymentGateway, recipientUserId, isGift, giftInfo, orderLineItems: items, externalGatewayFacet, countryCode };
+                const obj10 = { sku_id, quantity: 1, purchase_type, subscription_plan_id };
+                items = [obj10];
+                purchase_type = 3;
+                isGift = 1;
+                const obj11 = { value: closure_130_9(obj9), done: false };
+                return obj11;
+              }
+            }
+          } else if (arg0 === 1) {
             isGift = 3;
             throw value;
-          } else if (arg0 === 2) {
-            isGift = 3;
-            const obj7 = { value, done: true };
-            return obj7;
           } else {
-            length = value;
-            if (length.length > 0) {
-              value = length[0];
-              const obj8 = { orderId: value.id, skuId: sku_id, isGift };
-              closure_130_6.info("reusing existing draft order", obj8);
+            tmp5 = value;
+            if (arg0 === 2) {
               isGift = 3;
-              const obj9 = { value, done: true };
-              return obj9;
-            } else {
-              const obj10 = { paymentGateway, recipientUserId, isGift, giftInfo, orderLineItems: items, externalGatewayFacet };
-              const obj11 = { sku_id, quantity: 1, purchase_type, subscription_plan_id };
-              items = [obj11];
-              purchase_type = 3;
-              isGift = 1;
-              const obj12 = { value: closure_130_9(obj10), done: false };
-              return obj12;
+              obj = { value, done: true };
+              return obj;
             }
           }
-        } else if (arg0 === 1) {
           isGift = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          isGift = 3;
-          const obj13 = { value, done: true };
-          return obj13;
-        } else {
-          isGift = 3;
-          obj = { value, done: true };
-          return obj;
+          const obj12 = { value: tmp5, done: true };
+          return obj12;
         }
-      } catch (tmp20) {
+      } catch (tmp23) {
         isGift = 3;
-        throw tmp20;
+        throw tmp23;
       }
     }
   });
@@ -517,7 +565,7 @@ obj = function _patchOrderLineItem() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -657,7 +705,7 @@ obj = function _patchOrder() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -806,7 +854,7 @@ obj = function _updateOrder() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c4;
@@ -988,7 +1036,7 @@ obj = function _markOrderAsSigningInProgress() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -1027,7 +1075,7 @@ obj = function _markOrderAsSigningInProgress() {
                   const obj2 = { value, done: true };
                   return obj2;
                 } else {
-                  return { value: "HermesInternal", done: "HermesInternal" };
+                  return { value: "HermesInternal", done: null };
                 }
               } else {
                 let c3;
@@ -1156,7 +1204,7 @@ obj = function _markOrderAsSigningInProgress() {
                     c3 = 0;
                     c11 = null;
                     c5 = 3;
-                    return { value: "HermesInternal", done: "HermesInternal" };
+                    return { value: "HermesInternal", done: null };
                   }
                 } catch (tmp38) {
                   closure_2 = tmp38;
@@ -1199,7 +1247,7 @@ obj = function _markOrderAsSigningInProgress() {
           return obj;
         } else {
           c1 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp8) {
         c1 = 3;
@@ -1224,7 +1272,7 @@ obj = function _cancelOrderSigning() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -1265,7 +1313,7 @@ obj = function _cancelOrderSigning() {
                     const obj2 = { value, done: true };
                     return obj2;
                   } else {
-                    return { value: "HermesInternal", done: "HermesInternal" };
+                    return { value: "HermesInternal", done: null };
                   }
                 } else {
                   let c3;

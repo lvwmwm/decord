@@ -1,15 +1,15 @@
-// Module ID: 19959
-// Function ID: 19960
+// Module ID: 20369
+// Function ID: 20370
 // Name: EmojiAlias
-// Dependencies: [19, 17, 21, 5014, 5624, 2]
+// Dependencies: [19, 17, 21, 5140, 5751, 2]
 // Exports: default
 
-// Module 19959 (EmojiAlias)
+// Module 20369 (EmojiAlias)
 import react_native from "react-native" /* 17 */;
-import Text_Text from "Text/Text" /* 5624 */;
+import Text_Text from "Text/Text" /* 5751 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -29,10 +29,10 @@ export default function EmojiAlias(arg0) {
   const obj = { style: items, children: items1 };
   items = [tmp.emojiAlias, style];
   items1 = [, , ];
-  const obj2 = { style: tmp.emojiColon, "aria-hidden": true, variant: "text-md/medium", color: "text-muted", children: ":" };
+  const obj2 = { style: tmp.emojiColon, "aria-hidden": true, variant: "body-md/medium", color: "text-muted", children: ":" };
   items1[0] = _false(Text_Text.Text, obj2);
-  items1[1] = _false(Text_Text.Text, { lineClamp: 1, variant: "text-md/medium", color: "mobile-text-heading-primary", children });
-  const obj3 = { style: tmp.emojiColon, "aria-hidden": true, variant: "text-md/medium", color: "text-muted", children: ":" };
+  items1[1] = _false(Text_Text.Text, { lineClamp: 1, variant: "body-md/medium", color: "mobile-text-heading-primary", children });
+  const obj3 = { style: tmp.emojiColon, "aria-hidden": true, variant: "body-md/medium", color: "text-muted", children: ":" };
   items1[2] = _false(Text_Text.Text, obj3);
   return React3(View, obj);
 };

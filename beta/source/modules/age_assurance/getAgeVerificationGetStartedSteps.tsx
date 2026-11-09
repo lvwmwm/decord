@@ -1,14 +1,14 @@
-// Module ID: 8159
-// Function ID: 8160
+// Module ID: 8229
+// Function ID: 8230
 // Name: getAgeVerificationGetStartedSteps
-// Dependencies: [1072, 1113, 7955, 2061, 6729, 2]
+// Dependencies: [1072, 1113, 8024, 2185, 6784, 2]
 // Exports: getAgeVerificationGetStartedSteps
 
-// Module 8159 (getAgeVerificationGetStartedSteps)
+// Module 8229 (getAgeVerificationGetStartedSteps)
 import Constants from "Constants" /* 1072 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2061 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6729 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7955 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2185 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6784 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8024 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -42,7 +42,7 @@ export function getAgeVerificationGetStartedSteps(modalSessionId) {
       const openUrl = AgeVerificationActionCreatorsDefault.openUrl;
       AgeVerificationActionCreatorsDefault;
       const obj = HelpdeskUtilsDefault;
-      openUrl(obj.getArticleURL(HelpdeskArticles.TIGGER_PAWTECT_SYSTEM_DMS));
+      openUrl(obj.getArticleURL(HelpdeskArticles.SYSTEM_DMS));
       const trackAgeVerificationModalClicked = AgeVerificationAnalyticsUtils.trackAgeVerificationModalClicked;
       AgeVerificationAnalyticsUtils;
       const result = trackAgeVerificationModalClicked(modalSessionId, AgeVerificationAnalyticsUtils.AgeVerificationModalVersion.PRIMARY, AgeVerificationAnalyticsUtils.AgeVerificationModalCta.SYSTEM_DMS_LEARN_MORE);

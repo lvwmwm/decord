@@ -1,11 +1,11 @@
-// Module ID: 16403
-// Function ID: 16404
+// Module ID: 16724
+// Function ID: 16725
 // Name: CollectiblesMarketingCacheExperiment
-// Dependencies: [1447, 2]
+// Dependencies: [1449, 2]
 // Exports: getCollectiblesMarketingCacheTTL
 
-// Module 16403 (CollectiblesMarketingCacheExperiment)
-import ApexExperiment from "ApexExperiment" /* 1447 */;
+// Module 16724 (CollectiblesMarketingCacheExperiment)
+import ApexExperiment from "ApexExperiment" /* 1449 */;
 import size from "module_2" /* 2 */;
 
 let obj = { name: "2026-10-collectibles-marketing-client-cache", kind: "user", defaultConfig: { ttlMs: null }, variations: { 0: { ttlMs: null }, 1: { ttlMs: 3600000 }, 2: { ttlMs: 10800000 }, 3: { ttlMs: 21600000 }, 4: { ttlMs: 86400000 } } };

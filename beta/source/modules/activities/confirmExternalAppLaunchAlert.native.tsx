@@ -1,22 +1,22 @@
-// Module ID: 11746
-// Function ID: 11747
+// Module ID: 11909
+// Function ID: 11910
 // Name: confirmExternalAppLaunchAlert
-// Dependencies: [19, 17, 2018, 21, 5014, 5717, 11747, 5624, 1113, 5634, 5709, 5958, 2]
+// Dependencies: [19, 17, 2142, 21, 5140, 5842, 11910, 5751, 1113, 5758, 5834, 6090, 2]
 // Exports: confirmExternalAppLaunchAlert
 
-// Module 11746 (confirmExternalAppLaunchAlert)
+// Module 11909 (confirmExternalAppLaunchAlert)
 import react_native from "react-native" /* 17 */;
 import intl4 from "intl" /* 1113 */;
-import Constants from "Constants" /* 2018 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import components_Button_Button from "components/Button/Button" /* 5634 */;
-import LinkingDefault from "Linking" /* 5709 */;
-import FastImageDefault from "FastImage" /* 5717 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5958 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11747 */;
+import Constants from "Constants" /* 2142 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import components_Button_Button from "components/Button/Button" /* 5758 */;
+import LinkingDefault from "Linking" /* 5834 */;
+import FastImageDefault from "FastImage" /* 5842 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 6090 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11910 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -33,16 +33,16 @@ function ConfirmActivityGateContent(application) {
   const obj2 = { source: AssetRegistryDefault, style: tmp.announcementBirb };
   const tmp2 = FastImageDefault;
   items = [hasOwnProperty(tmp2, obj2), , , ];
-  const obj3 = { style: tmp.alertEyebrowText, variant: "eyebrow", children: intl.string(intl4.t["06YebE"]) };
+  const obj3 = { style: tmp.alertEyebrowText, variant: "body-sm/medium", children: intl.string(intl4.t["06YebE"]) };
   const Text = Text_Text.Text;
   intl = intl4.intl;
   items[1] = hasOwnProperty(Text, obj3);
-  const obj4 = { style: tmp.alertTitleText, variant: "heading-lg/bold", children: intl2.format(intl4.t["Z/eMDT"], obj5) };
+  const obj4 = { style: tmp.alertTitleText, variant: "heading-lg/semibold", children: intl2.format(intl4.t["Z/eMDT"], obj5) };
   const Text2 = Text_Text.Text;
   intl2 = intl4.intl;
   obj5 = { activityName: application.name };
   items[2] = hasOwnProperty(Text2, obj4);
-  const obj6 = { style: tmp.alertSubtitleText, variant: "text-sm/normal", children: intl3.string(intl4.t.z81WwD) };
+  const obj6 = { style: tmp.alertSubtitleText, variant: "body-sm/normal", children: intl3.string(intl4.t.z81WwD) };
   const Text3 = Text_Text.Text;
   intl3 = intl4.intl;
   items[3] = hasOwnProperty(Text3, obj6);

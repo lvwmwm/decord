@@ -1,20 +1,20 @@
-// Module ID: 17009
-// Function ID: 17010
+// Module ID: 17332
+// Function ID: 17333
 // Name: HexagonCampaignThemeLegal
-// Dependencies: [19, 17, 5039, 21, 5014, 575, 5624, 1113, 4285, 16480, 5717, 17010, 2]
+// Dependencies: [19, 17, 5165, 21, 5140, 575, 5751, 1113, 4411, 16798, 5842, 17333, 2]
 // Exports: default
 
-// Module 17009 (HexagonCampaignThemeLegal)
+// Module 17332 (HexagonCampaignThemeLegal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import _modDef4285 from "module_4285" /* 4285 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import FastImageDefault from "FastImage" /* 5717 */;
-import AssetRegistryDefault from "AssetRegistry" /* 17010 */;
+import _modDef4411 from "module_4411" /* 4411 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import FastImageDefault from "FastImage" /* 5842 */;
+import AssetRegistryDefault from "AssetRegistry" /* 17333 */;
 import react from "react" /* 19 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5039 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5165 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, importDefault;
@@ -25,7 +25,7 @@ let metroImportDefault;
 let metroRequire;
 let obj2;
 let tmp2;
-const openHexagonCampaignLearnMore = tmp2(16480);
+const openHexagonCampaignLearnMore = tmp2(16798);
 const View = react_native.View;
 ({ HEXAGON_CAMPAIGN_NON_PREMIUM_CUTOFF_AT_MS: closure_4, HEXAGON_CAMPAIGN_PREMIUM_CUTOFF_AT_MS: hasOwnProperty } = HexagonCampaignConstants);
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
@@ -51,8 +51,8 @@ export default function HexagonCampaignThemeLegal(animatedStyles) {
   let tmp2 = null != animatedStyles;
   dependencyMap = tmp2;
   let tmp5 = dependencyMap;
-  let obj = { animated: tmp2, variant: "text-xs/medium", color: str, style: items, children: intl.format(_modDef4285.y2YmJv, obj2) };
-  let Text = animatedStyles(5624).Text;
+  let obj = { animated: tmp2, variant: "body-xs/medium", color: str, style: items, children: intl.format(_modDef4411.y2YmJv, obj2) };
+  let Text = animatedStyles(5751).Text;
   let headerSecondary;
   const tmp4 = animatedStyles;
   if (animatedStyles != null) {
@@ -65,7 +65,7 @@ export default function HexagonCampaignThemeLegal(animatedStyles) {
     premiumEndDate,
     learnMoreHook(children, arg1) {
       let tmp5;
-      const obj = { animated, variant: "text-xs/medium", color: "text-link", style: tmp5, accessibilityRole: "link", onPress: openHexagonCampaignLearnMore.openHexagonCampaignLearnMore, children };
+      const obj = { animated, variant: "body-xs/medium", color: "text-link", style: tmp5, accessibilityRole: "link", onPress: openHexagonCampaignLearnMore.openHexagonCampaignLearnMore, children };
       const Text = Text_Text.Text;
       tmp5 = undefined;
       const tmp = metroRequire;

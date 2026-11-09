@@ -1,26 +1,26 @@
-// Module ID: 14355
-// Function ID: 14356
+// Module ID: 14591
+// Function ID: 14592
 // Name: HubEmailConnectionGuildSelectSearch
-// Dependencies: [5, 32, 19, 17, 14329, 21, 5014, 575, 5717, 14356, 5624, 1113, 1497, 6899, 1625, 14342, 6446, 6998, 7557, 7294, 1187, 14351, 2]
+// Dependencies: [5, 32, 19, 17, 14565, 21, 5140, 575, 5842, 14592, 5751, 1113, 1499, 6954, 1627, 14578, 6579, 7064, 7629, 7357, 1187, 14587, 2]
 // Exports: default
 
-// Module 14355 (HubEmailConnectionGuildSelectSearch)
+// Module 14591 (HubEmailConnectionGuildSelectSearch)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import useNavigation from "useNavigation" /* 1497 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1625 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import FastImageDefault from "FastImage" /* 5717 */;
-import fuzzysearchDefault from "fuzzysearch" /* 6899 */;
-import HubConstants from "HubConstants" /* 14329 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14356 */;
+import useNavigation from "useNavigation" /* 1499 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import FastImageDefault from "FastImage" /* 5842 */;
+import fuzzysearchDefault from "fuzzysearch" /* 6954 */;
+import HubConstants from "HubConstants" /* 14565 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14592 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -33,9 +33,9 @@ let obj2;
 let obj3;
 let tmp2;
 let tmp9;
-const NavigatorHeader = tmp2(6998);
-const defaultMVCPConfig = tmp2(7294);
-const SearchBarNavDefault = tmp9(7557);
+const NavigatorHeader = tmp2(7064);
+const defaultMVCPConfig = tmp2(7357);
+const SearchBarNavDefault = tmp9(7629);
 function EmptyState() {
   let intl;
   let items;
@@ -44,7 +44,7 @@ function EmptyState() {
   const obj2 = { style: tmp.emptyStateImage, source: AssetRegistryDefault };
   const tmp2 = FastImageDefault;
   items = [metroImportAll(tmp2, obj2), ];
-  const obj3 = { style: tmp.emptyStateTitle, variant: "text-sm/semibold", color: "mobile-text-heading-primary", children: intl.string(intl2.t["6HXiuE"]) };
+  const obj3 = { style: tmp.emptyStateTitle, variant: "body-sm/semibold", color: "mobile-text-heading-primary", children: intl.string(intl2.t["6HXiuE"]) };
   const Text = Text_Text.Text;
   intl = intl2.intl;
   items[1] = metroImportAll(Text, obj3);
@@ -148,7 +148,7 @@ export default function HubEmailConnectionGuildSelectSearch(arg0) {
               const obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           } else {
             let c3;
@@ -205,7 +205,7 @@ export default function HubEmailConnectionGuildSelectSearch(arg0) {
                 c3 = 0;
                 constants(false);
                 c5 = 3;
-                return { value: "HermesInternal", done: "HermesInternal" };
+                return { value: "HermesInternal", done: null };
               }
             } catch (tmp42) {
               closure_2 = tmp42;

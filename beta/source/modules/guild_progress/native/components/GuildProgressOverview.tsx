@@ -1,25 +1,25 @@
-// Module ID: 15801
-// Function ID: 15802
+// Module ID: 16118
+// Function ID: 16119
 // Name: GuildProgressOverview
-// Dependencies: [19, 17, 1072, 21, 5014, 575, 14047, 14050, 7363, 1113, 6980, 1187, 5624, 11911, 15802, 2]
+// Dependencies: [19, 17, 1072, 21, 5140, 575, 14286, 14289, 7423, 1113, 7043, 1187, 5751, 12077, 16119, 2]
 // Exports: default
 
-// Module 15801 (GuildProgressOverview)
+// Module 16118 (GuildProgressOverview)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import Pressables from "Pressables" /* 6980 */;
-import showSimpleActionSheet2 from "showSimpleActionSheet" /* 7363 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11911 */;
-import GuildProgressUtils from "GuildProgressUtils" /* 14047 */;
-import GuildProgressActionCreatorsDefault from "GuildProgressActionCreators" /* 14050 */;
-import GuildProgressBarDefault from "GuildProgressBar" /* 15802 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import Pressables from "Pressables" /* 7043 */;
+import showSimpleActionSheet2 from "showSimpleActionSheet" /* 7423 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12077 */;
+import GuildProgressUtils from "GuildProgressUtils" /* 14286 */;
+import GuildProgressActionCreatorsDefault from "GuildProgressActionCreators" /* 14289 */;
+import GuildProgressBarDefault from "GuildProgressBar" /* 16119 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -46,7 +46,7 @@ class GuildProgressOverviewView {
     const obj4 = { style: items, children: title };
     items = [tmp.title, titleStyle];
     items1 = [hasOwnProperty(native.LegacyText, obj4), ];
-    const obj5 = { style: tmp.step, variant: "text-xs/medium", color: "text-default", children: subtitle };
+    const obj5 = { style: tmp.step, variant: "body-xs/medium", color: "text-default", children: subtitle };
     items1[1] = hasOwnProperty(Text_Text.Text, obj5);
     items2 = [metroRequire(View, obj3), ];
     const obj6 = { source: AssetRegistryDefault };

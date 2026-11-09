@@ -1,22 +1,22 @@
-// Module ID: 7942
-// Function ID: 7943
+// Module ID: 8011
+// Function ID: 8012
 // Name: useIsOnStartStageScreenStore
-// Dependencies: [19, 4946, 4917, 560, 1259, 504, 4871, 7943, 2]
+// Dependencies: [19, 5072, 5043, 560, 1259, 504, 4997, 8012, 2]
 // Exports: setIsOnStartStageScreen, useUpdateIsOnStartStageScreenEffect
 
-// Module 7942 (useIsOnStartStageScreenStore)
+// Module 8011 (useIsOnStartStageScreenStore)
 import react_native from "react-native" /* 1259 */;
-import StageChannelPermissions from "StageChannelPermissions" /* 4871 */;
+import StageChannelPermissions from "StageChannelPermissions" /* 4997 */;
 import react from "react" /* 19 */;
-import PermissionStore from "PermissionStore" /* 4946 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4917 */;
+import PermissionStore from "PermissionStore" /* 5072 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5043 */;
 import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, dependencyMap;
 
-const f91928 = () => {
+const f93405 = () => {
   obj = { isOnStartStageScreen };
   return state.setState(obj);
 };
@@ -28,7 +28,7 @@ export function setIsOnStartStageScreen(arg0) {
   let closure_0;
   _require = arg0;
   obj = require("react-native");
-  obj.batchUpdates(f91928);
+  obj.batchUpdates(f93405);
 }
 export function useUpdateIsOnStartStageScreenEffect(id) {
   let closure_2;
@@ -40,7 +40,7 @@ export function useUpdateIsOnStartStageScreenEffect(id) {
   const items1 = [PermissionStore];
   const items2 = [id];
   const stateFromStores1 = obj2.useStateFromStores(items1, () => PermissionStore.can(StageChannelPermissions.MODERATE_STAGE_CHANNEL_PERMISSIONS, id), items2);
-  const tmp3 = stateFromStores1 && !stateFromStores(7943)(id.id);
+  const tmp3 = stateFromStores1 && !stateFromStores(8012)(id.id);
   dependencyMap = tmp3;
   const items3 = [stateFromStores, tmp3];
   const effect = react.useEffect(() => {
@@ -49,12 +49,12 @@ export function useUpdateIsOnStartStageScreenEffect(id) {
       if (!closure_2) {
         let c0 = false;
         const obj2 = react_native;
-        obj2.batchUpdates(f91928);
+        obj2.batchUpdates(f93405);
       }
     } else {
       let closure_0 = tmp;
       obj = react_native;
-      obj.batchUpdates(f91928);
+      obj.batchUpdates(f93405);
     }
   }, items3);
 }

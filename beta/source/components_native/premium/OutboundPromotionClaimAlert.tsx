@@ -1,19 +1,19 @@
-// Module ID: 15444
-// Function ID: 15445
+// Module ID: 15737
+// Function ID: 15738
 // Name: OutboundPromotionClaimAlert
-// Dependencies: [32, 19, 17, 21, 5014, 575, 15445, 7326, 7351, 9667, 5717, 15446, 5624, 1113, 5634, 7358, 15447, 6030, 5709, 2]
+// Dependencies: [32, 19, 17, 21, 5140, 575, 15738, 7387, 7412, 9758, 5842, 15739, 5751, 1113, 5758, 7418, 15740, 6162, 5834, 2]
 // Exports: default
 
-// Module 15444 (OutboundPromotionClaimAlert)
+// Module 15737 (OutboundPromotionClaimAlert)
 import nativeDefault from "native" /* 575 */;
-import LinkingDefault from "Linking" /* 5709 */;
-import ClipboardUtils from "ClipboardUtils" /* 7358 */;
-import PromotionUtils from "PromotionUtils" /* 9667 */;
+import LinkingDefault from "Linking" /* 5834 */;
+import ClipboardUtils from "ClipboardUtils" /* 7418 */;
+import PromotionUtils from "PromotionUtils" /* 9758 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let c9;
@@ -94,14 +94,14 @@ export default function OutboundPromotionClaimAlert(onCancel) {
     let obj3 = { source: tmp4(tmp5[11]), style: tmp.promotionArt };
     const tmp4Result = onClaim(code[10]);
     items1 = [closure_8(tmp4Result, obj3), , , ];
-    const obj4 = { style: tmp.title, variant: "heading-xl/bold", color: "mobile-text-heading-primary", children: intl.string(onCancel(code[13]).t["23BfZh"]) };
+    const obj4 = { style: tmp.title, variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: intl.string(onCancel(code[13]).t["23BfZh"]) };
     const Heading = onCancel(tmp5[12]).Heading;
     intl = onCancel(tmp5[13]).intl;
     items1[1] = closure_8(Heading, obj4);
-    const obj5 = { style: tmp.bodyText, variant: "text-md/medium", children: outboundPromotion.outboundRedemptionModalBody };
+    const obj5 = { style: tmp.bodyText, variant: "body-md/medium", children: outboundPromotion.outboundRedemptionModalBody };
     items1[2] = closure_8(onCancel(code[12]).Text, obj5);
     const obj6 = { style: tmp.copyInputContainer, children: items2 };
-    const obj7 = { style: tmp.copyInputLabel, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: intl2.string(onCancel(code[13]).t.s9LFQh) };
+    const obj7 = { style: tmp.copyInputLabel, variant: "body-md/semibold", color: "mobile-text-heading-primary", children: intl2.string(onCancel(code[13]).t.s9LFQh) };
     const Text = onCancel(tmp5[12]).Text;
     intl2 = onCancel(tmp5[13]).intl;
     items2 = [closure_8(Text, obj7), , ];
@@ -122,7 +122,7 @@ export default function OutboundPromotionClaimAlert(onCancel) {
         },
       children: closure_8(onCancel(code[12]).Text, obj12)
     };
-    obj12 = { lineClamp: 1, variant: "text-sm/medium", color: "interactive-text-active", children: code };
+    obj12 = { lineClamp: 1, variant: "body-sm/medium", color: "interactive-text-active", children: code };
     items3 = [closure_8(analyticsLocations, obj10), ];
     const obj13 = { style: tmp.copyButton, children: closure_8(Button, obj14) };
     Button = tmp18(tmp5[14]).Button;
@@ -145,7 +145,7 @@ export default function OutboundPromotionClaimAlert(onCancel) {
     };
     items3[1] = closure_8(closure_6, obj13);
     items2[1] = closure_9(closure_6, obj9);
-    items2[2] = closure_8(onCancel(code[12]).Text, { variant: "text-sm/medium", color: "text-muted", children: "This code is included in your confirmation email" });
+    items2[2] = closure_8(onCancel(code[12]).Text, { variant: "body-sm/medium", color: "text-muted", children: "This code is included in your confirmation email" });
     items1[3] = closure_9(closure_6, obj6);
     tmp14Result = tmp14(tmp15, obj2);
     tmp11 = tmp16;
@@ -158,11 +158,11 @@ export default function OutboundPromotionClaimAlert(onCancel) {
   const obj16 = { source: onClaim(code[16]), style: tmp.errorArt };
   const tmp4Result3 = onClaim(code[10]);
   items4 = [tmp11(tmp4Result3, obj16), , ];
-  const obj17 = { style: tmp.errorTitle, variant: "text-lg/bold", color: "mobile-text-heading-primary", children: intl4.string(onCancel(code[13]).t.iufib1) };
+  const obj17 = { style: tmp.errorTitle, variant: "body-lg/semibold", color: "mobile-text-heading-primary", children: intl4.string(onCancel(code[13]).t.iufib1) };
   const Text2 = onCancel(tmp5[12]).Text;
   intl4 = onCancel(tmp5[13]).intl;
   items4[1] = tmp11(Text2, obj17);
-  const obj18 = { style: tmp.bodyText, variant: "text-md/medium", children: intl5.string(onCancel(code[13]).t.eAn6z2) };
+  const obj18 = { style: tmp.bodyText, variant: "body-md/medium", children: intl5.string(onCancel(code[13]).t.eAn6z2) };
   const Text3 = onCancel(tmp5[12]).Text;
   intl5 = onCancel(tmp5[13]).intl;
   items4[2] = tmp11(Text3, obj18);

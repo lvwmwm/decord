@@ -1,20 +1,19 @@
-// Module ID: 18683
-// Function ID: 18684
+// Module ID: 19046
+// Function ID: 19047
 // Name: SearchBarActivityIcon
-// Dependencies: [19, 17, 6863, 13900, 9827, 21, 5014, 575, 563, 13893, 5095, 5254, 7219, 1375, 2]
+// Dependencies: [19, 17, 6918, 14134, 9917, 21, 5140, 575, 563, 14127, 1652, 5370, 7283, 1377, 2]
 
-// Module 18683 (SearchBarActivityIcon)
+// Module 19046 (SearchBarActivityIcon)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
-import timing from "timing" /* 5254 */;
-import SearchConstants from "SearchConstants" /* 9827 */;
-import SearchUtils from "SearchUtils" /* 13893 */;
+import timing_timing from "timing/timing" /* 5370 */;
+import SearchConstants from "SearchConstants" /* 9917 */;
+import SearchUtils from "SearchUtils" /* 14127 */;
 import react from "react" /* 19 */;
-import SearchMessageStore from "SearchMessageStore" /* 6863 */;
-import SearchQueryStore from "SearchQueryStore" /* 13900 */;
+import SearchMessageStore from "SearchMessageStore" /* 6918 */;
+import SearchQueryStore from "SearchQueryStore" /* 14134 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let c10;
@@ -30,17 +29,27 @@ let closure_11 = createStyles.createStyles(obj);
 let obj3 = { START: 0, [0]: "START", END: 1, [1]: "END" };
 let items = [, ];
 ({ START: arr[0], END: arr[1] } = obj3);
-const __initData = { code: "function SearchBarActivityIconTsx1(){const{interpolate,fadeAnimationState,ANIMATION_STATE_INPUT}=this.__closure;return{opacity:interpolate(fadeAnimationState.get(),ANIMATION_STATE_INPUT,[0,0.5])};}" };
-const __initData2 = { code: "function SearchBarActivityIconTsx2(){const{interpolate,fadeAnimationState,ANIMATION_STATE_INPUT}=this.__closure;return{opacity:interpolate(fadeAnimationState.get(),ANIMATION_STATE_INPUT,[1,0])};}" };
+let closure_14 = { code: "(function SearchBarActivityIconTsx1(){let[interpolate,fadeAnimationState,ANIMATION_STATE_INPUT]=this.__closure;return{opacity:interpolate(fadeAnimationState.get(),ANIMATION_STATE_INPUT,[0,0.5])};})" };
+let closure_15 = { code: "(function SearchBarActivityIconTsx2(){let[interpolate,fadeAnimationState,ANIMATION_STATE_INPUT]=this.__closure;return{opacity:interpolate(fadeAnimationState.get(),ANIMATION_STATE_INPUT,[1,0])};})" };
 const memoResult = react.memo(function SearchBarActivityIcon(searchContext) {
   let MagnifyingGlassIcon;
-  let items3;
-  let obj10;
-  let obj8;
+  let items7;
+  let obj4;
+  let obj6;
   let str;
+  let tmp10;
+  let tmp11;
+  let tmp12;
+  let tmp15;
+  let tmp16;
+  let tmp17;
+  let tmp18;
+  let tmp9;
   searchContext = searchContext.searchContext;
   let sharedValue;
   const tmp = closure_11();
+  const tmp2 = searchContext;
+  let tmp3 = sharedValue;
   let obj = searchContext(sharedValue[8]);
   items = [SearchQueryStore, SearchMessageStore];
   const items1 = [searchContext];
@@ -59,64 +68,80 @@ const memoResult = react.memo(function SearchBarActivityIcon(searchContext) {
     }
     return tmp3;
   }, items1);
-  let obj2 = searchContext(sharedValue[10]);
+  const obj2 = searchContext(sharedValue[10]);
   sharedValue = obj2.useSharedValue(obj3.START);
   const items2 = [stateFromStores, sharedValue];
   const effect = react.useEffect(() => {
-    const withTiming = timing.withTiming;
-    timing;
+    const withTiming = timing_timing.withTiming;
+    timing_timing;
     if (stateFromStores) {
       const result = set(withTiming(tmp3.END));
     } else {
       const result1 = set(withTiming(tmp3.START));
     }
   }, items2);
-  obj3 = searchContext(sharedValue[10]);
-  class E {
+  const items3 = [closure_14, , , ];
+  const useAnimatedStyle = searchContext(sharedValue[10]).useAnimatedStyle;
+  searchContext(sharedValue[10]);
+  items3[1] = searchContext(sharedValue[10]).interpolate;
+  items3[2] = sharedValue;
+  items3[3] = items;
+  let c0;
+  let c1;
+  let c2;
+  [tmp9, tmp10, tmp11, tmp12] = items3;
+  class SearchBarActivityIconTsx1 {
     constructor() {
-      let obj2;
-      const obj = { opacity: obj2.interpolate(sharedValue.get(), items, [0, 0.5]) };
-      obj2 = ReanimatedRexport;
+      const obj = { opacity: _undefined(_undefined2.get(), c2, [0, 0.5]) };
       return obj;
     }
   }
-  E.__closure = { interpolate: searchContext(sharedValue[10]).interpolate, fadeAnimationState: sharedValue, ANIMATION_STATE_INPUT: items };
-  E.__workletHash = 12880513119188;
-  E.__initData = __initData;
-  ({ interpolate: searchContext(sharedValue[10]).interpolate, fadeAnimationState: sharedValue, ANIMATION_STATE_INPUT: items });
-  const animatedStyle = obj3.useAnimatedStyle(E);
-  const fn = function v() {
-    let obj2;
-    const obj = { opacity: obj2.interpolate(sharedValue.get(), items, [1, 0]) };
-    obj2 = ReanimatedRexport;
-    return obj;
-  };
-  const obj5 = searchContext(sharedValue[10]);
-  fn.__closure = { interpolate: searchContext(sharedValue[10]).interpolate, fadeAnimationState: sharedValue, ANIMATION_STATE_INPUT: items };
-  fn.__workletHash = 11061952032557;
-  fn.__initData = __initData2;
-  ({ interpolate: searchContext(sharedValue[10]).interpolate, fadeAnimationState: sharedValue, ANIMATION_STATE_INPUT: items });
-  const animatedStyle1 = obj5.useAnimatedStyle(fn);
-  const obj7 = { style: animatedStyle, children: closure_8(ActivityIndicator, obj8) };
-  obj8 = { color: tmp.spinnerColor.color, style: items3 };
-  items3 = [, ];
-  ({ icon: arr4[0], spinner: arr4[1] } = tmp);
-  const View = stateFromStores(sharedValue[10]).View;
-  const items4 = [closure_8(View, obj7), ];
-  const obj9 = { style: animatedStyle1, children: closure_8(MagnifyingGlassIcon, obj10) };
-  const View2 = stateFromStores(sharedValue[10]).View;
-  obj10 = { style: tmp.icon, size: str, color: "interactive-text-default" };
-  MagnifyingGlassIcon = searchContext(sharedValue[12]).MagnifyingGlassIcon;
+  const items4 = [tmp10, tmp11, tmp12];
+  SearchBarActivityIconTsx1.__closure = items4;
+  SearchBarActivityIconTsx1.__workletHash = 14380742529421;
+  SearchBarActivityIconTsx1.__initData = tmp9;
+  const animatedStyle = useAnimatedStyle(SearchBarActivityIconTsx1);
+  const items5 = [closure_15, , , ];
+  const useAnimatedStyle2 = tmp2(tmp3[10]).useAnimatedStyle;
+  tmp2(tmp3[10]);
+  items5[1] = tmp2(tmp3[10]).interpolate;
+  items5[2] = sharedValue;
+  items5[3] = items;
+  c0 = undefined;
+  c1 = undefined;
+  c2 = undefined;
+  [tmp15, tmp16, tmp17, tmp18] = items5;
+  class SearchBarActivityIconTsx2 {
+    constructor() {
+      const obj = { opacity: _undefined(_undefined2.get(), c2, [1, 0]) };
+      return obj;
+    }
+  }
+  const items6 = [tmp16, tmp17, tmp18];
+  SearchBarActivityIconTsx2.__closure = items6;
+  SearchBarActivityIconTsx2.__workletHash = 4711746497812;
+  SearchBarActivityIconTsx2.__initData = tmp15;
+  const animatedStyle2 = useAnimatedStyle2(SearchBarActivityIconTsx2);
+  obj3 = { style: animatedStyle, children: closure_8(ActivityIndicator, obj4) };
+  obj4 = { color: tmp.spinnerColor.color, style: items7 };
+  items7 = [, ];
+  ({ icon: arr8[0], spinner: arr8[1] } = tmp);
+  const View = stateFromStores(tmp3[10]).View;
+  const items8 = [closure_8(View, obj3), ];
+  const obj5 = { style: animatedStyle2, children: closure_8(MagnifyingGlassIcon, obj6) };
+  const View2 = stateFromStores(tmp3[10]).View;
+  obj6 = { style: tmp.icon, size: str, color: "interactive-text-default" };
+  MagnifyingGlassIcon = tmp2(tmp3[12]).MagnifyingGlassIcon;
   str = "xs";
-  const obj11 = searchContext(sharedValue[13]);
-  const tmp7 = closure_10;
-  const tmp8 = closure_9;
-  if (obj11.isAndroid()) {
+  const tmp20 = closure_10;
+  const tmp21 = closure_9;
+  const tmp2Result2 = tmp2(tmp3[13]);
+  if (tmp2Result2.isAndroid()) {
     str = "sm";
   }
-  const obj12 = { children: items4 };
-  items4[1] = closure_8(View2, obj9);
-  return tmp7(tmp8, obj12);
+  const obj7 = { children: items8 };
+  items8[1] = closure_8(View2, obj5);
+  return tmp20(tmp21, obj7);
 });
 let result = size.fileFinishedImporting("modules/search/native/components/layout/SearchBarActivityIcon.tsx");
 

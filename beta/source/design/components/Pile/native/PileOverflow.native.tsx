@@ -1,18 +1,18 @@
-// Module ID: 13425
-// Function ID: 13426
+// Module ID: 13657
+// Function ID: 13658
 // Name: PileOverflow
-// Dependencies: [19, 17, 2062, 21, 5014, 575, 563, 5624, 1895, 2]
+// Dependencies: [19, 17, 2186, 21, 5140, 575, 563, 5751, 2024, 2]
 // Exports: PileOverflow
 
-// Module 13425 (PileOverflow)
+// Module 13657 (PileOverflow)
 import react_native from "react-native" /* 17 */;
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import nativeDefault from "native" /* 575 */;
-import NumberUtils from "NumberUtils" /* 1895 */;
+import NumberUtils from "NumberUtils" /* 2024 */;
 import react from "react" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2062 */;
+import LocaleStore from "LocaleStore" /* 2186 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_4;
@@ -23,7 +23,7 @@ const View = react_native.View;
 let obj = { container: obj2 };
 obj2 = { alignItems: "center", justifyContent: "center", backgroundColor: nativeDefault.colors.BACKGROUND_MOD_STRONG, flexShrink: 0 };
 let closure_6 = createStyles.createStyles(obj);
-let items = [[64, "text-lg/semibold"], [48, "text-md/semibold"], [40, "text-md/semibold"], [30, "text-sm/semibold"], [24, "text-xs/semibold"], [16, "text-xxs/semibold"]];
+let items = [[64, "body-lg/semibold"], [48, "body-md/semibold"], [40, "body-md/semibold"], [30, "body-sm/semibold"], [24, "body-xs/semibold"], [16, "footnote/semibold"]];
 const map = new Map(items);
 let size = size_mod;
 const result = size.fileFinishedImporting("design/components/Pile/native/PileOverflow.native.tsx");
@@ -52,11 +52,11 @@ export function PileOverflow(size) {
   }
   items1[1] = obj2;
   const obj3 = { style: items1, children: tmp6(Text, obj4) };
-  Text = tmp(5624).Text;
+  Text = tmp(5751).Text;
   let str = map.get(size);
   tmp6 = React3;
   if (str == null) {
-    str = "text-md/semibold";
+    str = "body-md/semibold";
   }
   obj4 = { lineClamp: 1, maxFontSizeMultiplier: 2, variant: str, children: items2 };
   items2 = ["+"];

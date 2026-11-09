@@ -1,29 +1,29 @@
-// Module ID: 9586
-// Function ID: 9587
+// Module ID: 9674
+// Function ID: 9675
 // Name: GameProfileDetails
-// Dependencies: [19, 17, 8922, 21, 8913, 9587, 7127, 9362, 9589, 9591, 9352, 5014, 575, 5709, 9593, 9594, 9373, 1113, 1992, 4836, 9595, 5624, 2]
+// Dependencies: [19, 17, 8996, 21, 8987, 9675, 7198, 9443, 9677, 9679, 9433, 5140, 575, 5834, 9681, 9682, 9454, 1113, 2116, 4962, 9683, 5751, 2]
 // Exports: default
 
-// Module 9586 (GameProfileDetails)
+// Module 9674 (GameProfileDetails)
 import nativeDefault from "native" /* 575 */;
 import intl13 from "intl" /* 1113 */;
-import Server from "Server" /* 1992 */;
-import DateUtilsAll from "DateUtils" /* 4836 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import LinkingDefault from "Linking" /* 5709 */;
-import MobilePhoneIcon from "MobilePhoneIcon" /* 7127 */;
-import PlatformType from "PlatformType" /* 8913 */;
-import ContentInventoryConstants from "ContentInventoryConstants" /* 8922 */;
-import RobloxNeutralIcon from "RobloxNeutralIcon" /* 9352 */;
-import XboxNeutralIcon from "XboxNeutralIcon" /* 9362 */;
-import SKUUtils from "SKUUtils" /* 9373 */;
-import ScreenIcon from "ScreenIcon" /* 9587 */;
-import PlaystationNeutralIcon from "PlaystationNeutralIcon" /* 9589 */;
-import NintendoSwitchNeutralIcon from "NintendoSwitchNeutralIcon" /* 9591 */;
+import Server from "Server" /* 2116 */;
+import DateUtilsAll from "DateUtils" /* 4962 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import LinkingDefault from "Linking" /* 5834 */;
+import MobilePhoneIcon from "MobilePhoneIcon" /* 7198 */;
+import PlatformType from "PlatformType" /* 8987 */;
+import ContentInventoryConstants from "ContentInventoryConstants" /* 8996 */;
+import RobloxNeutralIcon from "RobloxNeutralIcon" /* 9433 */;
+import XboxNeutralIcon from "XboxNeutralIcon" /* 9443 */;
+import SKUUtils from "SKUUtils" /* 9454 */;
+import ScreenIcon from "ScreenIcon" /* 9675 */;
+import PlaystationNeutralIcon from "PlaystationNeutralIcon" /* 9677 */;
+import NintendoSwitchNeutralIcon from "NintendoSwitchNeutralIcon" /* 9679 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let c9;
@@ -254,7 +254,7 @@ export default function GameProfileDetails(game) {
   if (0 !== memo.length) {
     let tmp7 = closure_9;
     let obj2 = { style: tmp.container, children: items1 };
-    let obj3 = { variant: "heading-sm/semibold", color: "mobile-text-heading-primary", style: tmp.headerText, children: intl.string(tmp2(tmp3[17]).t["7OjmmH"]) };
+    let obj3 = { variant: "heading-xs/semibold", color: "mobile-text-heading-primary", style: tmp.headerText, children: intl.string(tmp2(tmp3[17]).t["7OjmmH"]) };
     const Text = tmp2(tmp3[21]).Text;
     intl = tmp2(tmp3[17]).intl;
     items1 = [closure_8(Text, obj3), ];
@@ -276,11 +276,11 @@ export default function GameProfileDetails(game) {
           obj = { style: items, children: items1 };
           items[1] = prop;
           items1 = [, ];
-          const obj2 = { variant: "text-sm/medium", color: "text-subtle", lineClamp: 1, children: children.label };
+          const obj2 = { variant: "body-sm/medium", color: "text-subtle", lineClamp: 1, children: children.label };
           items1[0] = metroImportAll(Text_Text.Text, obj2);
           const tmp6 = metroImportAll;
           if (typeof children.value === "string") {
-            const obj3 = { variant: "text-sm/normal", color: "text-subtle", lineClamp: 1, style: closure_2.detailsRowValue, children: children.value };
+            const obj3 = { variant: "body-sm/normal", color: "text-subtle", lineClamp: 1, style: closure_2.detailsRowValue, children: children.value };
             value = tmp6(Text_Text.Text, obj3);
           } else {
             value = children.value;

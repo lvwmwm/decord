@@ -1,19 +1,21 @@
-// Module ID: 7717
-// Function ID: 7718
+// Module ID: 7793
+// Function ID: 7794
 // Name: FamilyCenterActionCreators
-// Dependencies: [5, 7718, 7716, 1072, 7719, 572, 1282, 1252, 4845, 1196, 1233, 2]
+// Dependencies: [5, 7794, 7792, 1072, 7554, 7795, 7568, 1282, 572, 1252, 4971, 1196, 1233, 2]
 // Exports: getLinkCodeForCurrentUser, removeLinkForUserId, shareIarWithParents, updateLinkForUserId
 
-// Module 7717 (FamilyCenterActionCreators)
+// Module 7793 (FamilyCenterActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 7716 */;
+import Constants2 from "Constants" /* 7554 */;
+import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 7568 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 7792 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
-import FamilyCenterControlledSettingsStore from "FamilyCenterControlledSettingsStore" /* 7718 */;
+import FamilyCenterControlledSettingsStore from "FamilyCenterControlledSettingsStore" /* 7794 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, c0, c12, c13, c15, c16, constants, set;
+let _require, c0, c12, c13, c15, c16, closure_10, constants, set;
 
 let metroImportDefault;
 let metroRequire;
@@ -34,7 +36,7 @@ let obj = function _maybeFetchCollectiblesForInvoices() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -67,7 +69,7 @@ let obj = function _maybeFetchCollectiblesForInvoices() {
             c1 = 1;
             const obj4 = {
               value: all(arr.map((item) => {
-                        obj = closure_1_0(closure_1_2[4]);
+                        obj = closure_1_0(closure_1_2[5]);
                         return obj.maybeFetchCollectiblesProduct(item);
                       })),
               done: false
@@ -84,7 +86,7 @@ let obj = function _maybeFetchCollectiblesForInvoices() {
           return obj;
         } else {
           c1 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp4) {
         c1 = 3;
@@ -111,7 +113,7 @@ obj = function _maybeFetchCollectiblesForGifts() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -139,7 +141,7 @@ obj = function _maybeFetchCollectiblesForGifts() {
             c1 = 1;
             const obj4 = {
               value: all(arr.map((item) => {
-                        obj = closure_1_0(closure_1_2[4]);
+                        obj = closure_1_0(closure_1_2[5]);
                         return obj.maybeFetchCollectiblesProduct(item);
                       })),
               done: false
@@ -156,13 +158,108 @@ obj = function _maybeFetchCollectiblesForGifts() {
           return obj;
         } else {
           c1 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp4) {
         c1 = 3;
         throw tmp4;
       }
     }
+  });
+  return obj(...arguments);
+};
+function showTeenSettingsLoadErrorToast() {
+  obj = SafetyToastsActionCreatorsDefault;
+  obj.showFailedToast(SafetyToastType.FAMILY_CENTER_TEEN_SETTINGS_LOAD_ERROR);
+}
+obj = function _requestTeenSettingsAndConsents() {
+  obj = _asyncToGenerator(async (userId) => {
+    let c4 = 0;
+    let c5 = 0;
+    let c3 = 0;
+    return (async (arg0, value) => {
+      let obj8;
+      if (c5 === 2) {
+        c5 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          return { value, done: true };
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          let body;
+          let settings;
+          let consents;
+          let closure_4;
+          c5 = 2;
+          if (0 === c4) {
+            if (arg0 === 1) {
+              c5 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c5 = 3;
+              return { value, done: true };
+            } else {
+              closure_2 = tmp;
+              closure_1 = tmp4;
+              body = undefined;
+              settings = undefined;
+              consents = undefined;
+              closure_4 = undefined;
+              c3 = 1;
+              const HTTP = require("HTTPUtils").HTTP;
+              const get = HTTP.get;
+              const obj4 = { url: closure_2_7.FAMILY_CENTER_TEEN_SETTINGS_AND_CONSENTS(userId), rejectWithError: obj8.rejectWithMigratedError() };
+              c4 = 2;
+              c5 = 1;
+              obj8 = require("HTTPUtils");
+              const obj5 = { value: get(obj4), done: false };
+              return obj5;
+            }
+          } else {
+            if (1 === c4) {
+              c3 = 0;
+              closure_4 = closure_130_14.get(userId);
+              if (null != closure_4) {
+                if (closure_4.size > 0) {
+                  const item = closure_4.forEach((fn) => fn());
+                }
+              }
+              closure_130_15();
+            } else if (arg0 === 1) {
+              c5 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c3 = 0;
+              c5 = 3;
+              return { value, done: true };
+            } else {
+              body = value.body;
+              settings = body.settings;
+              consents = body.consents;
+              const obj7 = { type: "FAMILY_CENTER_TEEN_SETTINGS_AND_CONSENTS_FETCH_SUCCESS", userId, settings, consents };
+              obj = closure_130_1(closure_130_2[8]);
+              obj.dispatch(obj7);
+              c3 = 0;
+            }
+            c5 = 3;
+            return { value: "HermesInternal", done: null };
+          }
+        } catch (tmp28) {
+          if (0 === c3) {
+            c5 = 3;
+            throw tmp28;
+          } else {
+            c4 = 1;
+          }
+        }
+      }
+    })();
   });
   return obj(...arguments);
 };
@@ -183,7 +280,7 @@ obj = function _updateLinkForUserId() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -206,7 +303,7 @@ obj = function _updateLinkForUserId() {
               const obj5 = {
                 value: patchResult.then((body) => {
                           body = body.body;
-                          obj = link_status(closure_1_2[5]);
+                          obj = link_status(closure_1_2[8]);
                           obj.dispatch({ type: "FAMILY_CENTER_REQUEST_LINK_UPDATE_SUCCESS", linkedUsers: body });
                           return body;
                         }),
@@ -224,7 +321,7 @@ obj = function _updateLinkForUserId() {
             return obj;
           } else {
             c2 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp4) {
           c2 = 3;
@@ -253,7 +350,7 @@ obj = function _removeLinkForUserId() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -276,7 +373,7 @@ obj = function _removeLinkForUserId() {
               const obj5 = {
                 value: delResult.then((body) => {
                           body = body.body;
-                          obj = closure_2_1(closure_2_2[5]);
+                          obj = closure_2_1(closure_2_2[8]);
                           const obj2 = { type: "FAMILY_CENTER_REQUEST_LINK_REMOVE_SUCCESS", linkedUsers: body, deletedUserId };
                           obj.dispatch(obj2);
                           return body;
@@ -295,7 +392,7 @@ obj = function _removeLinkForUserId() {
             return obj;
           } else {
             c1 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp4) {
           c1 = 3;
@@ -319,7 +416,7 @@ obj = function _getLinkCodeForCurrentUser() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -345,7 +442,7 @@ obj = function _getLinkCodeForCurrentUser() {
                         body = body.body;
                         const link_code = body.link_code;
                         const expires_at = body.expires_at;
-                        obj = closure_1_1(closure_1_2[5]);
+                        obj = closure_1_1(closure_1_2[8]);
                         obj.dispatch({ type: "FAMILY_CENTER_LINK_CODE_FETCH_SUCCESS", linkCode: link_code, expiresAt: expires_at });
                         return link_code;
                       }),
@@ -362,7 +459,7 @@ obj = function _getLinkCodeForCurrentUser() {
           return obj;
         } else {
           c0 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp4) {
         c0 = 3;
@@ -384,7 +481,7 @@ obj = function _shareIarWithParents() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -414,7 +511,7 @@ obj = function _shareIarWithParents() {
           return obj;
         } else {
           c0 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp7) {
         c0 = 3;
@@ -427,6 +524,9 @@ obj = function _shareIarWithParents() {
 let _asyncToGenerator = _asyncToGenerator_mod;
 const FamilyCenterAction = FamilyCenterConstants.FamilyCenterAction;
 ({ AnalyticEvents: metroRequire, Endpoints: metroImportDefault } = Constants);
+const SafetyToastType = Constants2.SafetyToastType;
+new Map();
+const map1 = new Map();
 obj = {
   initialPageLoad(arg0) {
     obj = arg0;
@@ -460,7 +560,7 @@ obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c14;
@@ -493,14 +593,14 @@ obj = {
               obj9 = undefined;
               const tmp106 = flag;
               if (tmp106) {
-                const obj13 = actions(users[5]);
+                const obj13 = actions(users[8]);
                 obj13.dispatch({ type: "FAMILY_CENTER_FETCH_START" });
               }
               c14 = 1;
-              const HTTP = totals(users[6]).HTTP;
+              const HTTP = totals(users[7]).HTTP;
               const obj5 = { url: totalSpendCurrency.FAMILY_CENTER_TEEN_ACTIVITY_ME, rejectWithError: obj15.rejectWithMigratedError() };
               const get = HTTP.get;
-              obj15 = totals(users[6]);
+              obj15 = totals(users[7]);
               c15 = 2;
               c16 = 1;
               const obj7 = { value: get(obj5), done: false };
@@ -508,7 +608,7 @@ obj = {
             }
           } else if (1 === c15) {
             c14 = 0;
-            const obj12 = actions(users[5]);
+            const obj12 = actions(users[8]);
             obj12.dispatch({ type: "FAMILY_CENTER_INITIAL_LOAD_FAILURE" });
             c16 = 3;
             return { value: null, done: true };
@@ -633,7 +733,7 @@ obj = {
                 if (tmp46) {
                   c15 = 3;
                   c16 = 1;
-                  const obj10 = { value: spendingLimit(obj9.invoices), done: false };
+                  const obj10 = { value: monthlyPurchases(obj9.invoices), done: false };
                   return obj10;
                 }
               }
@@ -656,12 +756,12 @@ obj = {
                 return obj;
               }
               const obj14 = { type: "FAMILY_CENTER_INITIAL_LOAD", familyCenterTeenActivity: obj9, linkedUsers: linked_users, users, ageGroup: age_group };
-              const obj4 = actions(users[5]);
+              const obj4 = actions(users[8]);
               obj4.dispatch(obj14);
               const tmp64 = null != body.restricted_schedule && null != obj9.teenId;
               if (tmp64) {
                 const obj16 = { type: "USER_RESTRICTED_SCHEDULE_UPDATE", userId: obj9.teenId, restrictedSchedule: body.restricted_schedule };
-                const obj6 = actions(users[5]);
+                const obj6 = actions(users[8]);
                 obj6.dispatch(obj16);
               }
               c16 = 3;
@@ -672,7 +772,7 @@ obj = {
             if (tmp51) {
               c15 = 4;
               c16 = 1;
-              const obj18 = { value: invoices(obj9.gifts), done: false };
+              const obj18 = { value: gifts(obj9.gifts), done: false };
               return obj18;
             }
           }
@@ -702,8 +802,8 @@ obj = {
       const body = arg1.body;
       const obj7 = { linkedUsers: body.linked_users, users: body.users };
       const obj8 = { type: "FAMILY_CENTER_LINKED_USERS_FETCH_SUCCESS" };
-      const dispatch = closure_129_1(closure_129_2[5]).dispatch;
-      const tmp15 = closure_129_1(closure_129_2[5]);
+      const dispatch = closure_129_1(closure_129_2[8]).dispatch;
+      const tmp15 = closure_129_1(closure_129_2[8]);
       const merged = Object.assign(obj7);
       dispatch(obj8);
       return obj7;
@@ -713,7 +813,7 @@ obj = {
     let closure_1 = arg1;
     return (async () => {
       let obj4;
-      const HTTP = teen_id(dependencyMap[6]).HTTP;
+      const HTTP = teen_id(dependencyMap[7]).HTTP;
       const request = { url: constants.FAMILY_CENTER_CONNECTION_PREREQUISITES, query: obj4, rejectWithError: true };
       obj4 = { teen_id, link_code };
       await HTTP.get(request);
@@ -738,17 +838,17 @@ obj = {
       let obj4;
       const code = tmp;
       const recipient_id = tmp4;
-      const HTTP = recipient_id(c2[6]).HTTP;
+      const HTTP = recipient_id(c2[7]).HTTP;
       const request = { url: constants.FAMILY_CENTER_LINKED_USERS, body: obj4, rejectWithError: obj10.rejectWithMigratedError() };
       obj4 = { recipient_id, code };
       const post = HTTP.post;
-      obj10 = recipient_id(c2[6]);
+      obj10 = recipient_id(c2[7]);
       await post(request);
       const body = arg1.body;
       const obj7 = { linkedUsers: body.linked_users, users: body.users };
       const obj8 = { type: "FAMILY_CENTER_REQUEST_LINK_SUCCESS" };
-      const dispatch = code(c2[5]).dispatch;
-      const tmp15 = code(c2[5]);
+      const dispatch = code(c2[8]).dispatch;
+      const tmp15 = code(c2[8]);
       const merged = Object.assign(obj7);
       dispatch(obj8);
       return obj7;
@@ -757,7 +857,7 @@ obj = {
   fetchTeenActivity(arg0) {
     let closure_0 = arg0;
     return (async (arg0, value) => {
-      let closure_10;
+      let closure_9;
       let gifts;
       let invoices;
       let monthlyPurchases;
@@ -766,6 +866,7 @@ obj = {
       let topGuildActivities;
       let totalSpendAmount;
       let totalSpendCurrency;
+      let v0;
       if (c13 === 2) {
         c13 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
@@ -776,12 +877,11 @@ obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c11;
         try {
-          let closure_8;
           let topUserActivities;
           let body;
           let teen_audit_log;
@@ -796,20 +896,19 @@ obj = {
               const obj4 = { value, done: true };
               return obj4;
             } else {
-              let closure_9 = tmp;
-              closure_8 = tmp4;
+              let closure_8 = tmp4;
               topUserActivities = undefined;
               body = undefined;
               teen_audit_log = undefined;
               obj9 = undefined;
-              const obj16 = topGuildActivities(totalSpendAmount[5]);
+              const obj16 = topGuildActivities(totalSpendAmount[8]);
               obj16.dispatch({ type: "FAMILY_CENTER_FETCH_START" });
               c11 = 1;
               const result = gifts.FAMILY_CENTER_TEEN_ACTIVITY(topUserActivities);
-              const HTTP = topUserActivities(totalSpendAmount[6]).HTTP;
+              const HTTP = topUserActivities(totalSpendAmount[7]).HTTP;
               const obj6 = { url: result, rejectWithError: obj18.rejectWithMigratedError() };
               const get = HTTP.get;
-              obj18 = topUserActivities(totalSpendAmount[6]);
+              obj18 = topUserActivities(totalSpendAmount[7]);
               c12 = 2;
               c13 = 1;
               const obj7 = { value: get(obj6), done: false };
@@ -817,8 +916,8 @@ obj = {
             }
           } else if (1 === c12) {
             c11 = 0;
-            let closure_4 = tmp66;
-            const obj11 = topGuildActivities(totalSpendAmount[5]);
+            let closure_4 = closure_10;
+            const obj11 = topGuildActivities(totalSpendAmount[8]);
             obj11.dispatch({ type: "FAMILY_CENTER_TEEN_ACTIVITY_FETCH_FAILURE" });
             throw closure_4;
           } else {
@@ -899,7 +998,7 @@ obj = {
                 if (invoices) {
                   c12 = 3;
                   c13 = 1;
-                  const obj10 = { value: closure_8(obj9.invoices), done: false };
+                  const obj10 = { value: tmp(obj9.invoices), done: false };
                   return obj10;
                 }
               }
@@ -922,11 +1021,11 @@ obj = {
                 return obj;
               }
               const obj13 = { type: "FAMILY_CENTER_TEEN_ACTIVITY_FETCH_SUCCESS", familyCenterTeenActivity: obj9 };
-              const obj3 = topGuildActivities(totalSpendAmount[5]);
+              const obj3 = topGuildActivities(totalSpendAmount[8]);
               obj3.dispatch(obj13);
               if (null != body.restricted_schedule) {
                 const obj14 = { type: "USER_RESTRICTED_SCHEDULE_UPDATE", userId: closure_137_0, restrictedSchedule: body.restricted_schedule };
-                const obj5 = topGuildActivities(totalSpendAmount[5]);
+                const obj5 = topGuildActivities(totalSpendAmount[8]);
                 obj5.dispatch(obj14);
               }
               c13 = 3;
@@ -937,11 +1036,12 @@ obj = {
             if (gifts) {
               c12 = 4;
               c13 = 1;
-              const obj17 = { value: tmp66(obj9.gifts), done: false };
+              const obj17 = { value: c11(obj9.gifts), done: false };
               return obj17;
             }
           }
         } catch (tmp66) {
+          closure_10 = tmp66;
           if (0 === c11) {
             c13 = 3;
             throw tmp66;
@@ -971,10 +1071,10 @@ obj = {
       let totalSpendAmount;
       let totalSpendCurrency;
       constants = tmp4;
-      const HTTP = topUserActivities(totalSpendAmount[6]).HTTP;
+      const HTTP = topUserActivities(totalSpendAmount[7]).HTTP;
       const obj5 = { url: tmp.FAMILY_CENTER_TEEN_ACTIVITY_MORE(topUserActivities, topGuildActivities, closure_2, event_id), rejectWithError: obj12.rejectWithMigratedError() };
       const get = HTTP.get;
-      obj12 = topUserActivities(totalSpendAmount[6]);
+      obj12 = topUserActivities(totalSpendAmount[7]);
       await get(obj5);
       const teen_audit_log = arg1.body.teen_audit_log;
       const obj8 = { teenId: teen_audit_log.teen_user_id, rangeStartId: teen_audit_log.range_start_id, actions: teen_audit_log.actions, users: teen_audit_log.users, guilds: teen_audit_log.guilds, topUserActivities, topGuildActivities, totalSpendAmount, totalSpendCurrency, invoices, gifts };
@@ -1021,10 +1121,10 @@ obj = {
         gifts = [];
       }
       const obj9 = { action: gifts.LoadMore, selected_teen_id: closure_135_0, action_display_type: closure_135_1 };
-      obj = topGuildActivities(totalSpendAmount[7]);
+      obj = topGuildActivities(totalSpendAmount[9]);
       obj.track(constants.FAMILY_CENTER_ACTION, obj9);
       const obj10 = { type: "FAMILY_CENTER_TEEN_ACTIVITY_MORE_FETCH_SUCCESS", familyCenterTeenActivity: obj8 };
-      const obj3 = topGuildActivities(totalSpendAmount[5]);
+      const obj3 = topGuildActivities(totalSpendAmount[8]);
       obj3.dispatch(obj10);
       return teen_audit_log;
     })();
@@ -1035,23 +1135,104 @@ obj = {
     obj.dispatch(obj2);
   },
   fetchTeenSettingsAndConsents(id) {
-    let obj2;
-    let userId;
-    _require = id;
-    const HTTP = require("HTTPUtils").HTTP;
-    obj = { url: closure_7.FAMILY_CENTER_TEEN_SETTINGS_AND_CONSENTS(id), rejectWithError: obj2.rejectWithMigratedError() };
-    const get = HTTP.get;
-    obj2 = require("HTTPUtils");
-    const value = get(obj);
-    return value.then((body) => {
-      let consents;
-      let settings;
-      ({ settings, consents } = body.body);
-      obj = DispatcherDefault;
-      const obj2 = { type: "FAMILY_CENTER_TEEN_SETTINGS_AND_CONSENTS_FETCH_SUCCESS", userId, settings, consents };
-      obj.dispatch(obj2);
-    });
+    let closure_0 = id;
+    return (async (arg0, value) => {
+      function requestTeenSettingsAndConsents() {
+        return closure_1_16(...arguments);
+      }
+      if (c4 === 2) {
+        c4 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          const obj2 = { value, done: true };
+          return obj2;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        let c3;
+        try {
+          c4 = 2;
+          if (0 === c1) {
+            if (arg0 === 1) {
+              c4 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c4 = 3;
+              const obj3 = { value, done: true };
+              return obj3;
+            } else {
+              let closure_0 = tmp;
+              value = map.get(closure_0);
+              if (null != value) {
+                c4 = 3;
+                const obj4 = { value, done: true };
+                return obj4;
+              } else {
+                const tmp23 = requestTeenSettingsAndConsents(closure_0);
+                const result = map.set(closure_0, tmp23);
+                c3 = 1;
+                c1 = 2;
+                c4 = 1;
+                const obj5 = { value: tmp23, done: false };
+                return obj5;
+              }
+            }
+          } else if (1 === tmp4) {
+            c3 = 0;
+            map.delete(closure_128_0);
+            throw closure_2;
+          } else if (arg0 === 1) {
+            c4 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c3 = 0;
+            map.delete(closure_128_0);
+            c4 = 3;
+            obj = { value, done: true };
+            return obj;
+          } else {
+            c3 = 0;
+            map.delete(closure_128_0);
+            c4 = 3;
+            return { value: "HermesInternal", done: null };
+          }
+        } catch (tmp27) {
+          closure_2 = tmp27;
+          if (0 === c3) {
+            c4 = 3;
+            throw tmp27;
+          } else {
+            c1 = 1;
+          }
+        }
+      }
+    })();
   },
+  onTeenSettingsLoadFailure(arg0, arg1) {
+    let closure_0 = arg0;
+    let closure_1 = arg1;
+    set = map1.get(arg0);
+    obj = map1;
+    if (set == null) {
+      const _Set = Set;
+      const self = this;
+      const self2 = this;
+      set = new Set();
+    }
+    set.add(arg1);
+    const result = obj.set(arg0, set);
+    return () => {
+      set.delete(closure_1);
+      if (0 === set.size) {
+        map1.delete(closure_0);
+      }
+    };
+  },
+  showTeenSettingsLoadErrorToast,
   updateTeenSettings(arg0, arg1, arg2) {
     let closure_0 = arg0;
     let closure_1 = arg1;
@@ -1070,7 +1251,7 @@ obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -1086,22 +1267,22 @@ obj = {
               return obj3;
             } else {
               settings = undefined;
-              const obj12 = tmp4(c2[8]);
-              const protoFieldClass = obj12.getProtoFieldClass(tmp4(c2[9]).PreloadedUserSettings, tmp);
+              const obj12 = tmp4(c2[10]);
+              const protoFieldClass = obj12.getProtoFieldClass(tmp4(c2[11]).PreloadedUserSettings, tmp);
               settings = settings.getSettings(tmp4);
               let tmp12;
               if (settings != null) {
                 tmp12 = settings[tmp34];
               }
-              const tmp31Result = tmp4(c2[8]);
-              const modifiedProto = tmp31Result.createModifiedProto(tmp12, closure_2, protoFieldClass, tmp31(c2[9]).PreloadedUserSettings, tmp34);
+              const tmp31Result = tmp4(c2[10]);
+              const modifiedProto = tmp31Result.createModifiedProto(tmp12, closure_2, protoFieldClass, tmp31(c2[11]).PreloadedUserSettings, tmp34);
               if (null != modifiedProto) {
-                const HTTP = tmp31(c2[6]).HTTP;
+                const HTTP = tmp31(c2[7]).HTTP;
                 const request = { url: closure_1_7.FAMILY_CENTER_TEEN_SETTINGS(tmp4), body: obj4, rejectWithError: tmp31Result4.rejectWithMigratedError() };
                 const patch = HTTP.patch;
-                obj4 = { settings: tmp31Result3.protoToB64(tmp4(c2[9]).PreloadedUserSettings, modifiedProto) };
-                tmp31Result3 = tmp4(c2[10]);
-                tmp31Result4 = tmp4(c2[6]);
+                obj4 = { settings: tmp31Result3.protoToB64(tmp4(c2[11]).PreloadedUserSettings, modifiedProto) };
+                tmp31Result3 = tmp4(c2[12]);
+                tmp31Result4 = tmp4(c2[7]);
                 c2 = 1;
                 c3 = 1;
                 const obj5 = { value: patch(request), done: false };
@@ -1118,11 +1299,11 @@ obj = {
           } else {
             settings = value.body.settings;
             const obj7 = { type: "FAMILY_CENTER_TEEN_UPDATE_SETTINGS_SUCCESS", userId: closure_129_0, settings };
-            obj = tmp(c2[5]);
+            obj = tmp(c2[8]);
             obj.dispatch(obj7);
           }
           c3 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp27) {
           c3 = 3;
           throw tmp27;

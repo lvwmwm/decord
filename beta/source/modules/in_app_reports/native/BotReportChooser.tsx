@@ -1,20 +1,20 @@
-// Module ID: 14830
-// Function ID: 14831
+// Module ID: 15065
+// Function ID: 15066
 // Name: BotReportChooser
-// Dependencies: [19, 2038, 21, 7366, 5624, 1113, 7368, 5258, 8352, 504, 6881, 2]
+// Dependencies: [19, 2162, 21, 7426, 5751, 1113, 7428, 5374, 8422, 504, 6936, 2]
 // Exports: default
 
-// Module 14830 (BotReportChooser)
+// Module 15065 (BotReportChooser)
 import get_initialized from "get initialized" /* 504 */;
 import intl3 from "intl" /* 1113 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import ApplicationActionCreators from "ApplicationActionCreators" /* 6881 */;
-import ActionSheet2 from "ActionSheet" /* 7366 */;
-import ActionSheetRow2 from "ActionSheetRow" /* 7368 */;
-import ReportModals from "ReportModals" /* 8352 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import ApplicationActionCreators from "ApplicationActionCreators" /* 6936 */;
+import ActionSheet2 from "ActionSheet" /* 7426 */;
+import ActionSheetRow2 from "ActionSheetRow" /* 7428 */;
+import ReportModals from "ReportModals" /* 8422 */;
 import react from "react" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 2038 */;
+import ApplicationStore from "ApplicationStore" /* 2162 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
@@ -40,10 +40,10 @@ function ReportAppProfile(arg0) {
     arrow: true
   };
   const ActionSheetRow = ActionSheetRow2.ActionSheetRow;
-  obj2 = { variant: "heading-md/semibold", children: intl.string(intl3.t.eyEkG1) };
+  obj2 = { variant: "heading-sm/semibold", children: intl.string(intl3.t.eyEkG1) };
   Text = Text_Text.Text;
   intl = intl3.intl;
-  obj3 = { variant: "text-xs/medium", children: intl2.string(intl3.t.ptItsj) };
+  obj3 = { variant: "body-xs/medium", children: intl2.string(intl3.t.ptItsj) };
   Text2 = Text_Text.Text;
   intl2 = intl3.intl;
   return closure_4(ActionSheetRow, obj);
@@ -84,10 +84,10 @@ function ReportAppBehavior(arg0) {
     disabled: null == data
   };
   const ActionSheetRow = ActionSheetRow2.ActionSheetRow;
-  obj4 = { variant: "heading-md/semibold", children: intl.string(intl3.t.atP0yX) };
+  obj4 = { variant: "heading-sm/semibold", children: intl.string(intl3.t.atP0yX) };
   Text = Text_Text.Text;
   intl = intl3.intl;
-  obj5 = { variant: "text-xs/medium", children: intl2.string(intl3.t.UGg603) };
+  obj5 = { variant: "body-xs/medium", children: intl2.string(intl3.t.UGg603) };
   Text2 = Text_Text.Text;
   intl2 = intl3.intl;
   return onSubmit(ActionSheetRow, obj3);
@@ -105,7 +105,7 @@ export default function BotReportChooser(arg0) {
   let obj3;
   const obj = { header: React3(Text, obj2), children: hasOwnProperty(Group, obj3) };
   const ActionSheet = ActionSheet2.ActionSheet;
-  obj2 = { style: { textAlign: "center" }, variant: "redesign/heading-18/bold", children: intl.string(intl3.t.Bd10bR) };
+  obj2 = { style: { textAlign: "center" }, variant: "heading-md/semibold", children: intl.string(intl3.t.Bd10bR) };
   Text = Text_Text.Text;
   intl = intl3.intl;
   obj3 = { hasIcons: false, children: items };

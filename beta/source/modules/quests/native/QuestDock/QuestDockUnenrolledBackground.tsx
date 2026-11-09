@@ -1,16 +1,16 @@
-// Module ID: 17168
-// Function ID: 17169
+// Module ID: 17495
+// Function ID: 17496
 // Name: QuestDockUnenrolledBackground
-// Dependencies: [19, 17067, 21, 17095, 17063, 5596, 575, 17169, 2]
+// Dependencies: [19, 17393, 21, 17422, 17388, 5724, 575, 17496, 2]
 
-// Module 17168 (QuestDockUnenrolledBackground)
+// Module 17495 (QuestDockUnenrolledBackground)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import useToken from "useToken" /* 5596 */;
-import QuestHooks from "QuestHooks" /* 17063 */;
-import QuestDockConstants from "QuestDockConstants" /* 17067 */;
-import QuestDockCreativeContext from "QuestDockCreativeContext" /* 17095 */;
-import QuestDockVideoBackgroundDefault from "QuestDockVideoBackground" /* 17169 */;
+import useToken from "useToken" /* 5724 */;
+import QuestHooks from "QuestHooks" /* 17388 */;
+import QuestDockConstants from "QuestDockConstants" /* 17393 */;
+import QuestDockCreativeContext from "QuestDockCreativeContext" /* 17422 */;
+import QuestDockVideoBackgroundDefault from "QuestDockVideoBackground" /* 17496 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

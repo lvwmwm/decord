@@ -1,35 +1,19 @@
-// Module ID: 6879
-// Function ID: 6880
+// Module ID: 6934
+// Function ID: 6935
 // Name: ConjureGuildExperiment
-// Dependencies: [4885, 1072, 1447, 6880, 504, 2]
+// Dependencies: [5011, 1072, 1449, 6935, 504, 2]
 // Exports: useHasConjureGuild, useIsConjureGuildEnabled
 
-// Module 6879 (ConjureGuildExperiment)
+// Module 6934 (ConjureGuildExperiment)
 import Constants from "Constants" /* 1072 */;
-import ConjureUserExperiment from "ConjureUserExperiment" /* 6880 */;
-import GuildStore from "GuildStore" /* 4885 */;
-import ApexExperiment from "ApexExperiment" /* 1447 */;
+import ConjureUserExperiment from "ConjureUserExperiment" /* 6935 */;
+import GuildStore from "GuildStore" /* 5011 */;
+import ApexExperiment from "ApexExperiment" /* 1449 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-function isEnabledForUser(config, location) {
-  let enabled;
-  let requiresUserExperiment;
-  ({ enabled, requiresUserExperiment } = config);
-  if (enabled) {
-    let isConjureUserEnabledResult = !requiresUserExperiment;
-    if (requiresUserExperiment) {
-      const obj2 = { location };
-      const obj3 = { autoTrackExposure: false };
-      const obj = ConjureUserExperiment;
-      isConjureUserEnabledResult = obj.isConjureUserEnabled(obj2, obj3);
-    }
-    enabled = isConjureUserEnabledResult;
-  }
-  return enabled;
-}
 function isConjureGuildEnabled(arg0) {
   let _location;
   let enabled;
@@ -67,12 +51,28 @@ function hasConjureGuild(arg0, DMAppChannel) {
   }
   return false;
 }
-function hasConjureGuildWithoutExposure(conjure_resume) {
+function isConjureGuildEnabledWithoutExposure(id, location) {
+  let enabled;
+  let requiresUserExperiment;
+  const obj = { guildId: id, location };
+  const config = closure_4.getConfig(obj, { autoTrackExposure: false });
+  ({ enabled, requiresUserExperiment } = config);
+  if (enabled) {
+    let isConjureUserEnabledResult = !requiresUserExperiment;
+    if (requiresUserExperiment) {
+      const obj3 = { location };
+      const obj4 = { autoTrackExposure: false };
+      const obj2 = ConjureUserExperiment;
+      isConjureUserEnabledResult = obj2.isConjureUserEnabled(obj3, obj4);
+    }
+    enabled = isConjureUserEnabledResult;
+  }
+  return enabled;
+}
+function hasConjureGuildWithoutExposure(ConjureProjectReconnectManager) {
   const values = Object.values(GuildStore.getGuilds());
-  const obj = values[Symbol.iterator]();
-  while (obj !== undefined) {
-    let obj2 = { guildId: tmp2.id, location: conjure_resume };
-    if (isEnabledForUser(closure_4.getConfig(obj2, { autoTrackExposure: false }), conjure_resume, false)) {
+  for (const item10012 of values) {
+    if (isConjureGuildEnabledWithoutExposure(item10012.id, ConjureProjectReconnectManager)) {
       obj.return();
       let flag = true;
       return true;
@@ -120,6 +120,7 @@ export function useIsConjureGuildEnabled(arg0) {
 }
 export { isConjureGuildEnabled };
 export { hasConjureGuild };
+export { isConjureGuildEnabledWithoutExposure };
 export { hasConjureGuildWithoutExposure };
 export function useHasConjureGuild(DMAppChannel, arg1) {
   _require = DMAppChannel;

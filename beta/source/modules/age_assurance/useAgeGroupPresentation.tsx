@@ -1,16 +1,16 @@
-// Module ID: 10132
-// Function ID: 10133
+// Module ID: 10253
+// Function ID: 10254
 // Name: useAgeGroupPresentation
-// Dependencies: [1072, 6726, 7955, 2061, 6729, 1113, 2]
+// Dependencies: [1072, 6781, 8024, 2185, 6784, 1113, 2]
 // Exports: handleOpenAgeGatedContentArticle, handleShowAgeVerification, useAgeGroupState, useAgeGroupValueLabel
 
-// Module 10132 (useAgeGroupPresentation)
+// Module 10253 (useAgeGroupPresentation)
 import Constants from "Constants" /* 1072 */;
 import intl4 from "intl" /* 1113 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2061 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 6726 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6729 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7955 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2185 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 6781 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6784 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8024 */;
 import size from "module_2" /* 2 */;
 
 const HelpdeskArticles = Constants.HelpdeskArticles;
@@ -34,7 +34,7 @@ export function handleOpenAgeGatedContentArticle() {
   const openUrl = AgeVerificationActionCreatorsDefault.openUrl;
   AgeVerificationActionCreatorsDefault;
   const obj = HelpdeskUtilsDefault;
-  openUrl(obj.getArticleURL(HelpdeskArticles.TIGGER_PAWTECT_LEARN_MORE));
+  openUrl(obj.getArticleURL(HelpdeskArticles.AGE_VERIFICATION_LEARN_MORE));
 }
 export function handleShowAgeVerification() {
   const obj = AgeVerificationActionCreatorsDefault;

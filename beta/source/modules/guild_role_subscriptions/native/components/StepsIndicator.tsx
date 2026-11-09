@@ -1,76 +1,89 @@
-// Module ID: 19984
-// Function ID: 19985
+// Module ID: 20394
+// Function ID: 20395
 // Name: StepsIndicator
-// Dependencies: [19, 17, 5015, 21, 5014, 575, 5095, 5254, 5624, 504, 2]
+// Dependencies: [19, 17, 5141, 21, 5140, 575, 1652, 5370, 5751, 504, 2]
 // Exports: default
 
-// Module 19984 (StepsIndicator)
+// Module 20394 (StepsIndicator)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
-import timing from "timing" /* 5254 */;
+import _mod1652 from "module_1652" /* 1652 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5015 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import AccessibilityStore from "AccessibilityStore" /* 5141 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
+const _modDef1652 = _mod1652;
 let set;
 
 let obj2;
 let obj3;
+let tmp2;
+const timing_timing = tmp2(5370);
+const Text_Text = tmp2(5751);
 function StepNode(isCurrent) {
   let isDone;
   let label;
+  let tmp10;
+  let tmp11;
+  let tmp12;
+  let tmp7;
+  let tmp8;
+  let tmp9;
   let useReducedMotion;
   isCurrent = isCurrent.isCurrent;
   let sharedValue;
-  let num2;
   ({ label, isDone, useReducedMotion } = isCurrent);
-  const tmp = closure_7();
-  const tmp2 = isCurrent;
+  let tmp = closure_7();
+  let tmp2 = require;
+  let tmp3 = dependencyMap;
   let num = 0;
-  const useSharedValue = isCurrent(num2[6]).useSharedValue;
-  isCurrent(num2[6]);
+  const useSharedValue = _mod1652.useSharedValue;
+  _mod1652;
   if (isCurrent) {
     num = 1;
   }
   sharedValue = useSharedValue(num);
-  num2 = 180;
+  let num2 = 180;
   if (useReducedMotion) {
     num2 = 0;
   }
-  const fn = function p() {
-    let Easing;
-    let Easing2;
-    let interpolateResult1;
-    let items;
-    let obj5;
-    let withTiming2;
-    const obj = ReanimatedRexport;
-    const interpolateResult = obj.interpolate(sharedValue.get(), [0, 1], [0.4, 1]);
-    const obj2 = { duration: num2, easing: Easing.out(ReanimatedRexport.Easing.ease) };
-    const withTiming = timing.withTiming;
-    timing;
-    Easing = ReanimatedRexport.Easing;
-    const withTimingResult = withTiming(interpolateResult, obj2);
-    const obj4 = { marginHorizontal: withTiming2(interpolateResult1, obj5), transform: items };
-    const obj3 = ReanimatedRexport;
-    interpolateResult1 = obj3.interpolate(sharedValue.get(), [0, 1], [-2, 6]);
-    obj5 = { duration: num2, easing: Easing2.out(ReanimatedRexport.Easing.ease) };
-    withTiming2 = timing.withTiming;
-    timing;
-    Easing2 = ReanimatedRexport.Easing;
-    items = [{ scale: withTimingResult }];
-    return obj4;
-  };
-  const tmp2Result = tmp2(num2[6]);
-  let obj = { interpolate: tmp2(tmp3[6]).interpolate, state: sharedValue, withTiming: tmp2(tmp3[7]).withTiming, duration: num2, Easing: tmp2(tmp3[6]).Easing };
-  fn.__closure = obj;
-  fn.__workletHash = 4051275727555;
-  fn.__initData = __initData;
-  let items = [sharedValue, isCurrent];
-  const animatedStyle = tmp2Result.useAnimatedStyle(fn);
+  let items = [closure_8, , , , , ];
+  const useAnimatedStyle = _mod1652.useAnimatedStyle;
+  _mod1652;
+  items[1] = _mod1652.interpolate;
+  items[2] = sharedValue;
+  items[3] = timing_timing.withTiming;
+  items[4] = num2;
+  items[5] = _mod1652.Easing;
+  let c0;
+  let c1;
+  let c2;
+  let c3;
+  let c4;
+  [tmp7, tmp8, tmp9, tmp10, tmp11, tmp12] = items;
+  class StepsIndicatorTsx1 {
+    constructor() {
+      let items;
+      let obj3;
+      let tmp3;
+      const obj = { duration, easing: _undefined4.out(_undefined4.ease) };
+      const tmp = _undefined(_undefined2.get(), [0, 1], [0.4, 1]);
+      const obj2 = { marginHorizontal: _undefined3(tmp3, obj3), transform: items };
+      obj3 = { duration, easing: _undefined4.out(_undefined4.ease) };
+      const tmp2 = _undefined3(tmp, obj);
+      items = [{ scale: tmp2 }];
+      tmp3 = _undefined(_undefined2.get(), [0, 1], [-2, 6]);
+      return obj2;
+    }
+  }
+  const items1 = [tmp8, tmp9, tmp10, tmp11, tmp12];
+  StepsIndicatorTsx1.__closure = items1;
+  StepsIndicatorTsx1.__workletHash = 3353878627962;
+  StepsIndicatorTsx1.__initData = tmp7;
+  const items2 = [sharedValue, isCurrent];
+  const animatedStyle = useAnimatedStyle(StepsIndicatorTsx1);
   const effect = react.useEffect(() => {
     let num = 0;
     set = sharedValue.set;
@@ -78,19 +91,19 @@ function StepNode(isCurrent) {
       num = 1;
     }
     const result = set(num);
-  }, items);
+  }, items2);
   if (!isDone) {
     let filledNode;
     if (!isCurrent) {
       filledNode = tmp.emptyNode;
     }
-    const items1 = [tmp.node, animatedStyle, filledNode];
-    View = sharedValue(tmp3[6]).View;
+    const items3 = [tmp.node, animatedStyle, filledNode];
+    View = _modDef1652.View;
     if (isCurrent) {
-      let obj3 = { variant: "heading-deprecated-12/extrabold", color: "interactive-text-active", children: label };
-      isCurrent = tmp8(tmp2(tmp3[8]).Text, obj3);
+      let obj2 = { variant: "body-xs/semibold", color: "interactive-text-active", children: label };
+      isCurrent = tmp15(Text_Text.Text, obj2);
     }
-    return <View style={items1}>{isCurrent}</View>;
+    return <View style={items3}>{isCurrent}</View>;
   }
   filledNode = tmp.filledNode;
 }
@@ -102,7 +115,7 @@ obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BRAND, alignItems: "ce
 createStyles = createStyles.createStyles;
 obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_NORMAL };
 let closure_7 = createStyles(obj);
-const __initData = { code: "function StepsIndicatorTsx1(){const{interpolate,state,withTiming,duration,Easing}=this.__closure;const rawScale=interpolate(state.get(),[0,1],[8/20,1]);const scale=withTiming(rawScale,{duration:duration,easing:Easing.out(Easing.ease)});const rawMargin=interpolate(state.get(),[0,1],[-2,6]);const marginHorizontal=withTiming(rawMargin,{duration:duration,easing:Easing.out(Easing.ease)});return{marginHorizontal:marginHorizontal,transform:[{scale:scale}]};}" };
+let closure_8 = { code: "(function StepsIndicatorTsx1(){let[interpolate,state,withTiming,duration,Easing]=this.__closure;const rawScale=interpolate(state.get(),[0,1],[8/20,1]);const scale=withTiming(rawScale,{duration:duration,easing:Easing.out(Easing.ease)});const rawMargin=interpolate(state.get(),[0,1],[-2,6]);const marginHorizontal=withTiming(rawMargin,{duration:duration,easing:Easing.out(Easing.ease)});return{marginHorizontal:marginHorizontal,transform:[{scale:scale}]};})" };
 let result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/components/StepsIndicator.tsx");
 
 export default function StepsIndicator(current) {

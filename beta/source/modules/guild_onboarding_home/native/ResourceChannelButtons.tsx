@@ -1,17 +1,17 @@
-// Module ID: 13831
-// Function ID: 13832
+// Module ID: 14065
+// Function ID: 14066
 // Name: ResourceChannelButtons
-// Dependencies: [32, 19, 17, 21, 5014, 575, 1498, 13832, 13833, 5634, 1187, 11609, 13834, 2]
+// Dependencies: [32, 19, 17, 21, 5140, 575, 1500, 14066, 14067, 5758, 1187, 11767, 14068, 2]
 // Exports: default
 
-// Module 13831 (ResourceChannelButtons)
+// Module 14065 (ResourceChannelButtons)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import GuildOnboardingHomeActionCreators from "GuildOnboardingHomeActionCreators" /* 13833 */;
+import GuildOnboardingHomeActionCreators from "GuildOnboardingHomeActionCreators" /* 14067 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let navigation;

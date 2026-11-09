@@ -1,23 +1,23 @@
-// Module ID: 17516
-// Function ID: 17517
+// Module ID: 17849
+// Function ID: 17850
 // Name: UserSettingsAppIcons
-// Dependencies: [5, 32, 19, 17, 1383, 1072, 9979, 5039, 21, 5014, 504, 15339, 1983, 7326, 16460, 5712, 1113, 17003, 16461, 6784, 9980, 5042, 9905, 9906, 9785, 8177, 17517, 10290, 2]
+// Dependencies: [5, 32, 19, 17, 1385, 1072, 10101, 5165, 21, 5140, 504, 15625, 2107, 7387, 16778, 5837, 1113, 17326, 16779, 6839, 10102, 5168, 10027, 10028, 9875, 8246, 17850, 10409, 2]
 
-// Module 17516 (UserSettingsAppIcons)
+// Module 17849 (UserSettingsAppIcons)
 import react_native from "react-native" /* 17 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5039 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7326 */;
-import openPremiumModalDefault from "openPremiumModal" /* 9905 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9906 */;
-import AppIconRowsDefault from "AppIconRows" /* 17517 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5165 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7387 */;
+import openPremiumModalDefault from "openPremiumModal" /* 10027 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 10028 */;
+import AppIconRowsDefault from "AppIconRows" /* 17850 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1383 */;
+import UserStore from "UserStore" /* 1385 */;
 import Constants from "Constants" /* 1072 */;
-import AppIconConstants from "AppIconConstants" /* 9979 */;
+import AppIconConstants from "AppIconConstants" /* 10101 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let c1, c2, c7, c8, closure_1, closure_2, dependencyMap, importDefault;
@@ -30,7 +30,7 @@ let map1;
 let metroImportAll;
 let tmp6;
 let unpackModuleId;
-const NitroUpsellButtonDefault = tmp6(10290);
+const NitroUpsellButtonDefault = tmp6(10409);
 const View = react_native.View;
 ({ UpsellTypes: metroImportAll, AnalyticsPages: c9 } = Constants);
 ({ getIconById: c10, isHexagonCampaignAppIcon: unpackModuleId } = AppIconConstants);
@@ -66,7 +66,7 @@ const memoResult = react.memo(function UserSettingsAppIcons() {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c5;
@@ -172,7 +172,7 @@ const memoResult = react.memo(function UserSettingsAppIcons() {
             c5 = 0;
             closure_132_7(null);
             c8 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp68) {
           closure_6 = tmp68;
@@ -206,7 +206,7 @@ const memoResult = react.memo(function UserSettingsAppIcons() {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -307,7 +307,7 @@ const memoResult = react.memo(function UserSettingsAppIcons() {
             return obj;
           }
           c1 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp27) {
           c1 = 3;
           throw tmp27;
@@ -322,9 +322,9 @@ const memoResult = react.memo(function UserSettingsAppIcons() {
   obj = stateFromStores(504);
   let items = [setPending];
   stateFromStores = obj.useStateFromStores(items, () => setPending.getCurrentUser());
-  let obj2 = stateFromStores(15339);
+  let obj2 = stateFromStores(15625);
   importDefault = obj2.useCurrentAppIcon();
-  let obj3 = stateFromStores(1983);
+  let obj3 = stateFromStores(2107);
   const isPremiumResult = obj3.isPremium(stateFromStores);
   dependencyMap = isPremiumResult;
   let tmp6 = importDefault;
@@ -336,7 +336,7 @@ const memoResult = react.memo(function UserSettingsAppIcons() {
   let tmp9 = closure_15;
   let obj5 = { children: closure_13(closure_6, obj6) };
   obj6 = { accessibilityRole: "radiogroup", children: closure_13(AppIconRowsDefault, obj7) };
-  const Form = stateFromStores(8177).Form;
+  const Form = stateFromStores(8246).Form;
   let tmp12 = closure_6;
   obj7 = {
     onSelect(arg0) {

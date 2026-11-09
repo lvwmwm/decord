@@ -1,18 +1,18 @@
-// Module ID: 10099
-// Function ID: 10100
+// Module ID: 10220
+// Function ID: 10221
 // Name: TabBar
-// Dependencies: [32, 19, 17, 21, 5014, 575, 7294, 5303, 1113, 2]
+// Dependencies: [32, 19, 17, 21, 5140, 575, 7357, 5420, 1113, 2]
 // Exports: default
 
-// Module 10099 (TabBar)
+// Module 10220 (TabBar)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5303 */;
-import defaultMVCPConfig from "defaultMVCPConfig" /* 7294 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5420 */;
+import defaultMVCPConfig from "defaultMVCPConfig" /* 7357 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;

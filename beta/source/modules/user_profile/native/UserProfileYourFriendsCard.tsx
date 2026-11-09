@@ -1,22 +1,22 @@
-// Module ID: 18880
-// Function ID: 18881
+// Module ID: 19255
+// Function ID: 19256
 // Name: UserProfileYourFriendsCard
-// Dependencies: [32, 19, 17, 7801, 4956, 1383, 1072, 21, 1187, 5014, 504, 14920, 9151, 12, 1379, 6975, 5624, 1113, 2]
+// Dependencies: [32, 19, 17, 7877, 5082, 1385, 1072, 21, 1187, 5140, 504, 15153, 9231, 12, 1380, 7038, 5751, 1113, 2]
 // Exports: default
 
-// Module 18880 (UserProfileYourFriendsCard)
+// Module 19255 (UserProfileYourFriendsCard)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import native from "native" /* 1187 */;
-import GlobalUtils from "GlobalUtils" /* 1379 */;
+import GlobalUtils from "GlobalUtils" /* 1380 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7801 */;
-import RelationshipStore from "RelationshipStore" /* 4956 */;
-import UserStore from "UserStore" /* 1383 */;
-import createStyles from "createStyles" /* 5014 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7877 */;
+import RelationshipStore from "RelationshipStore" /* 5082 */;
+import UserStore from "UserStore" /* 1385 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -108,7 +108,7 @@ export default function UserProfileYourFriendsCard(navigateToFriends) {
     return <View style={closure_0.facepile} accessibilityElementsHidden importantForAccessibility="no-hide-descendants">{null}</View>;
   }, items3);
   const TableRow = require("TableRow").TableRow;
-  ({ variant: "text-sm/semibold", color: "text-default", children: intl.string(require("intl").t.TdEu5X) });
+  ({ variant: "body-sm/semibold", color: "text-default", children: intl.string(require("intl").t.TdEu5X) });
   const Text = require("Text/Text").Text;
   intl = require("intl").intl;
   const intl2 = require("intl").intl;

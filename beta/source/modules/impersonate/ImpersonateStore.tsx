@@ -1,19 +1,19 @@
-// Module ID: 4919
-// Function ID: 4920
+// Module ID: 5045
+// Function ID: 5046
 // Name: ImpersonateStore
-// Dependencies: [4920, 4885, 1072, 1082, 11, 4925, 1396, 504, 2034, 572, 2]
+// Dependencies: [5046, 5011, 1072, 1082, 11, 5051, 1403, 504, 2158, 572, 2]
 
-// Module 4919 (ImpersonateStore)
+// Module 5045 (ImpersonateStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1082 */;
-import FlagUtilsAll from "FlagUtils" /* 1396 */;
-import FunctionUtils from "FunctionUtils" /* 2034 */;
-import ImpersonateTypes from "ImpersonateTypes" /* 4925 */;
-import GuildRoleStore from "GuildRoleStore" /* 4920 */;
-import GuildStore from "GuildStore" /* 4885 */;
+import FlagUtilsAll from "FlagUtils" /* 1403 */;
+import FunctionUtils from "FunctionUtils" /* 2158 */;
+import ImpersonateTypes from "ImpersonateTypes" /* 5051 */;
+import GuildRoleStore from "GuildRoleStore" /* 5046 */;
+import GuildStore from "GuildStore" /* 5011 */;
 import size from "module_2" /* 2 */;
 
 const GuildSettingsSections = Constants.GuildSettingsSections;
@@ -182,7 +182,7 @@ let obj = {
     if (null != guildId) {
       if (null != closure_8[guildId]) {
         if (null != closure_8[guildId]) {
-          if (closure_8[guildId].type === overrides(4925).ImpersonateType.NEW_MEMBER) {
+          if (closure_8[guildId].type === overrides(5051).ImpersonateType.NEW_MEMBER) {
             optInChannels = tmp4.optInChannels;
             if (optInChannels == null) {
               let tmp = globalThis;
@@ -270,7 +270,7 @@ let obj = {
           }, {});
         }
         flag = true;
-        const tmp3 = null != flags && tmp2.type === guildId(4925).ImpersonateType.NEW_MEMBER;
+        const tmp3 = null != flags && tmp2.type === guildId(5051).ImpersonateType.NEW_MEMBER;
         if (tmp3) {
           closure_8[guildId].memberOptions.flags = flags;
           flag = true;

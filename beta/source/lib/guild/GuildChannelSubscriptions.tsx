@@ -1,11 +1,11 @@
-// Module ID: 7449
-// Function ID: 7450
+// Module ID: 7513
+// Function ID: 7514
 // Name: GuildChannelSubscriptions
-// Dependencies: [1451, 12, 2]
+// Dependencies: [1453, 12, 2]
 
-// Module 7449 (GuildChannelSubscriptions)
+// Module 7513 (GuildChannelSubscriptions)
 import _modDef12 from "module_12" /* 12 */;
-import LRUCacheDefault from "LRUCache" /* 1451 */;
+import LRUCacheDefault from "LRUCache" /* 1453 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("lib/guild/GuildChannelSubscriptions.tsx");

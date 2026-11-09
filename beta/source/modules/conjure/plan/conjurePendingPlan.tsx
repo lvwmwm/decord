@@ -1,11 +1,11 @@
-// Module ID: 12593
-// Function ID: 12594
+// Module ID: 12796
+// Function ID: 12797
 // Name: conjurePendingPlan
-// Dependencies: [10852, 2]
+// Dependencies: [10971, 2]
 // Exports: pendingPlanRenderId, planVersions, takeArrivedPlan
 
-// Module 12593 (conjurePendingPlan)
-import conjureChatTurns from "conjureChatTurns" /* 10852 */;
+// Module 12796 (conjurePendingPlan)
+import conjureChatTurns from "conjureChatTurns" /* 10971 */;
 import size from "module_2" /* 2 */;
 
 let map;

@@ -1,21 +1,20 @@
-// Module ID: 17221
-// Function ID: 17222
+// Module ID: 17547
+// Function ID: 17548
 // Name: GuildRoleSubscriptionCard
-// Dependencies: [32, 19, 17, 21, 5014, 575, 7148, 5624, 17211, 17222, 1113, 1187, 17223, 17224, 17227, 2]
+// Dependencies: [32, 19, 17, 21, 5140, 575, 5751, 17537, 17548, 1113, 1187, 17549, 17550, 17553, 2]
 // Exports: Content
 
-// Module 17221 (GuildRoleSubscriptionCard)
+// Module 17547 (GuildRoleSubscriptionCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7148 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 17211 */;
-import GuildRoleSubscriptionEmojiGalleryDefault from "GuildRoleSubscriptionEmojiGallery" /* 17224 */;
-import GuildRoleSubscriptionBenefitRow from "GuildRoleSubscriptionBenefitRow" /* 17227 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 17537 */;
+import GuildRoleSubscriptionEmojiGalleryDefault from "GuildRoleSubscriptionEmojiGallery" /* 17550 */;
+import GuildRoleSubscriptionBenefitRow from "GuildRoleSubscriptionBenefitRow" /* 17553 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 let metroImportAll;
@@ -24,14 +23,7 @@ let metroRequire;
 let size;
 class SectionTitle {
   constructor(children) {
-    let items;
-    children = children.children;
-    const tmp = closure_9();
-    const obj = useTypeConsolidationTextTransform;
-    const typeConsolidationEyebrow = obj.useTypeConsolidationEyebrow("GuildRoleSubscriptionCard", "text-xs/bold");
-    const obj2 = { variant: typeConsolidationEyebrow.variant, color: "text-default", style: items, children };
-    items = [tmp.sectionTitle, typeConsolidationEyebrow.style];
-    return metroRequire(Text_Text.Text, obj2);
+    return metroRequire(Text_Text.Text, { variant: "body-sm/medium", color: "text-default", children: children.children });
   }
 }
 class Separator {
@@ -42,7 +34,7 @@ class Separator {
 }
 const View = react_native.View;
 ({ jsx: metroRequire, Fragment: metroImportDefault, jsxs: metroImportAll } = Fragment);
-let obj = { sectionTitle: { textTransform: "uppercase" }, section: { gap: 14 }, separator: size };
+let obj = { section: { gap: 14 }, separator: size };
 size = { width: "100%", height: 1, backgroundColor: nativeDefault.colors.BORDER_SUBTLE, marginVertical: nativeDefault.space.PX_24 };
 const React4 = createStyles.createStyles(obj);
 size = size_mod;
@@ -78,11 +70,11 @@ export function Content(arg0) {
   const role = obj4.useRole(listingId, guildId);
   size = first.size;
   const obj5 = { separator: closure_6(Separator, {}), children: items1 };
-  const SeparatedList = guildId(17222).SeparatedList;
+  const SeparatedList = guildId(17548).SeparatedList;
   const obj6 = { children: items };
   const obj7 = { children: intl.string(guildId(1113).t["DJ+bGu"]) };
   intl = guildId(1113).intl;
-  items = [closure_6(SectionTitle, obj7), closure_6(guildId(1187).Spacer, { size: 8 }), closure_6(guildId(17223).GuildRoleSubscriptionMemberPreview, { guildId, role })];
+  items = [closure_6(SectionTitle, obj7), closure_6(guildId(1187).Spacer, { size: 8 }), closure_6(guildId(17549).GuildRoleSubscriptionMemberPreview, { guildId, role })];
   items1 = [closure_8(closure_7, obj6), , , ];
   let tmp6Result = null;
   if (size > 0) {

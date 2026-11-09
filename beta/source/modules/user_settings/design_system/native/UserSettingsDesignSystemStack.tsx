@@ -1,18 +1,18 @@
-// Module ID: 17797
-// Function ID: 17798
+// Module ID: 18129
+// Function ID: 18130
 // Name: UserSettingsDesignSystemStack
-// Dependencies: [19, 17, 21, 5014, 575, 6027, 6977, 5624, 2]
+// Dependencies: [19, 17, 21, 5140, 575, 6159, 7040, 5751, 2]
 // Exports: default
 
-// Module 17797 (UserSettingsDesignSystemStack)
+// Module 18129 (UserSettingsDesignSystemStack)
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import Stack_Stack from "Stack/Stack" /* 6027 */;
-import Card_Card from "Card/Card" /* 6977 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import Stack_Stack from "Stack/Stack" /* 6159 */;
+import Card_Card from "Card/Card" /* 7040 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let c2;
@@ -56,7 +56,7 @@ export default function UserSettingsDesignSystemStack() {
   const Card = Card_Card.Card;
   obj5 = { children: items };
   Stack2 = Stack_Stack.Stack;
-  items = [React3(Text_Text.Text, { variant: "text-lg/bold", children: "Basic Example" }), React3(Text_Text.Text, { variant: "text-md/medium", color: "text-subtle", children: "By default, stacks are vertical and have a spacing of 8." }), ];
+  items = [React3(Text_Text.Text, { variant: "body-lg/semibold", children: "Basic Example" }), React3(Text_Text.Text, { variant: "body-md/medium", color: "text-subtle", children: "By default, stacks are vertical and have a spacing of 8." }), ];
   const obj6 = { children: items1 };
   const Stack3 = Stack_Stack.Stack;
   items1 = [React3(StackBlock, {}), React3(StackBlock, {})];
@@ -66,7 +66,7 @@ export default function UserSettingsDesignSystemStack() {
   const Card2 = Card_Card.Card;
   obj8 = { children: items3 };
   Stack4 = Stack_Stack.Stack;
-  items3 = [React3(Text_Text.Text, { variant: "text-lg/bold", children: "Spacing" }), React3(Text_Text.Text, { variant: "text-md/medium", color: "text-subtle", children: "You can control the spacing with the spacing prop. The spacing prop uses our 4px-based spacing scale. By default, stacks are vertical and have a spacing of 8." }), ];
+  items3 = [React3(Text_Text.Text, { variant: "body-lg/semibold", children: "Spacing" }), React3(Text_Text.Text, { variant: "body-md/medium", color: "text-subtle", children: "You can control the spacing with the spacing prop. The spacing prop uses our 4px-based spacing scale. By default, stacks are vertical and have a spacing of 8." }), ];
   const obj9 = { spacing: 24, children: items4 };
   const Stack5 = Stack_Stack.Stack;
   items4 = [React3(StackBlock, {}), React3(StackBlock, {})];
@@ -76,7 +76,7 @@ export default function UserSettingsDesignSystemStack() {
   const Card3 = Card_Card.Card;
   obj11 = { children: items5 };
   Stack6 = Stack_Stack.Stack;
-  items5 = [React3(Text_Text.Text, { variant: "text-lg/bold", children: "Horizontal" }), React3(Text_Text.Text, { variant: "text-md/medium", color: "text-subtle", children: "You can control the direction with the direction prop. The direction prop can be either horizontal or vertical." }), ];
+  items5 = [React3(Text_Text.Text, { variant: "body-lg/semibold", children: "Horizontal" }), React3(Text_Text.Text, { variant: "body-md/medium", color: "text-subtle", children: "You can control the direction with the direction prop. The direction prop can be either horizontal or vertical." }), ];
   const obj12 = { direction: "horizontal", children: items6 };
   const Stack7 = Stack_Stack.Stack;
   items6 = [React3(StackBlock, {}), React3(StackBlock, {})];

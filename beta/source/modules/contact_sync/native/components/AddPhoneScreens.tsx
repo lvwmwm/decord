@@ -1,24 +1,24 @@
-// Module ID: 14275
-// Function ID: 14276
+// Module ID: 14511
+// Function ID: 14512
 // Name: AddPhoneScreens
-// Dependencies: [5, 32, 19, 17, 1383, 14248, 21, 5014, 5586, 575, 1497, 5624, 1113, 7212, 7213, 14247, 563, 7207, 38, 7246, 7163, 2]
+// Dependencies: [5, 32, 19, 17, 1385, 14484, 21, 5140, 5714, 575, 1499, 5751, 1113, 7276, 7277, 14483, 563, 7270, 38, 7309, 7225, 2]
 // Exports: AddPhoneScreen, VerifyPasswordScreen, VerifyPhoneScreen
 
-// Module 14275 (AddPhoneScreens)
+// Module 14511 (AddPhoneScreens)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import NavigatorConstants from "NavigatorConstants" /* 5586 */;
-import RunAfterInteractionsUtils from "RunAfterInteractionsUtils" /* 7207 */;
-import AddPhoneDefault from "AddPhone" /* 7212 */;
-import PhoneActionCreators from "PhoneActionCreators" /* 7213 */;
-import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 14247 */;
-import ContactSyncModalStore from "ContactSyncModalStore" /* 14248 */;
+import NavigatorConstants from "NavigatorConstants" /* 5714 */;
+import RunAfterInteractionsUtils from "RunAfterInteractionsUtils" /* 7270 */;
+import AddPhoneDefault from "AddPhone" /* 7276 */;
+import PhoneActionCreators from "PhoneActionCreators" /* 7277 */;
+import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 14483 */;
+import ContactSyncModalStore from "ContactSyncModalStore" /* 14484 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1383 */;
+import UserStore from "UserStore" /* 1385 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 const PhoneActionCreatorsDefault = PhoneActionCreators;
@@ -49,11 +49,11 @@ export function AddPhoneScreen() {
   _require = obj.useNavigation();
   const tmp = closure_11();
   const obj2 = { style: tmp.header, children: items };
-  const obj3 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl.string(require("intl").t.Xgb497) };
+  const obj3 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: intl.string(require("intl").t.Xgb497) };
   const Text = require("Text/Text").Text;
   intl = require("intl").intl;
   items = [closure_9(Text, obj3), ];
-  const obj4 = { style: tmp.subtitle, variant: "text-sm/medium", color: "text-default", children: intl2.string(require("intl").t.qFmzyo) };
+  const obj4 = { style: tmp.subtitle, variant: "body-sm/medium", color: "text-default", children: intl2.string(require("intl").t.qFmzyo) };
   const Text2 = require("Text/Text").Text;
   intl2 = require("intl").intl;
   items[1] = closure_9(Text2, obj4);
@@ -87,7 +87,7 @@ export function VerifyPhoneScreen() {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

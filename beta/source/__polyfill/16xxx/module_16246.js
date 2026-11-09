@@ -1,20 +1,41 @@
 // Module ID: 16246
 // Function ID: 16247
-// Dependencies: []
-// Exports: default
+// Dependencies: [16241, 16212]
 
 // Module 16246
-let size;
+import _mod16212 from "module_16212" /* 16212 */;
+
+const require = globalThis.__r;
+let _require, c1, dependencyMap;
 
 
-export default () => (arg0) => {
-  let closure_0 = arg0;
-  return {
-    features: {
-      image(dependencyMap) {
-        size = { uri: dependencyMap.uri, preview: dependencyMap.preview, filename: dependencyMap.filename, width: dependencyMap.width, height: dependencyMap.height, caption: dependencyMap.caption };
-        return closure_0.send("image", size);
+export default function(arr, arg1, arg2) {
+  let closure_0;
+  _require = arg2;
+  dependencyMap = null;
+  let closure_2 = null;
+  let regex = null;
+  try {
+    let tmp = arg1;
+    let self = this;
+    let self2 = this;
+    const tmp6 = new require("module_16241")(arg1, arg2);
+    let tmp7 = tmp6;
+    regex = tmp6;
+    const item = arr.forEach(function(item) {
+      if (regex.test(item)) {
+        const tmp = c1 && 1 !== closure_2.compare(item);
+        if (!tmp) {
+          c1 = item;
+          const self = this;
+          const self2 = this;
+          closure_2 = new _mod16212(c1, closure_0);
+          const tmp7 = new _mod16212(c1, closure_0);
+        }
       }
-    }
-  };
+    });
+    return dependencyMap;
+  } catch (err) {
+    return null;
+  }
 };

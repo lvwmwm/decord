@@ -1,13 +1,13 @@
-// Module ID: 17310
-// Function ID: 17311
+// Module ID: 17636
+// Function ID: 17637
 // Name: ExactSearchResultCountsSetting
-// Dependencies: [8432, 1113, 11540, 4839, 2]
+// Dependencies: [8503, 1113, 11685, 4965, 2]
 
-// Module 17310 (ExactSearchResultCountsSetting)
+// Module 17636 (ExactSearchResultCountsSetting)
 import intl2 from "intl" /* 1113 */;
-import UserSettings from "UserSettings" /* 4839 */;
-import SettingsConstants from "SettingsConstants" /* 8432 */;
-import SettingBuilders from "SettingBuilders" /* 11540 */;
+import UserSettings from "UserSettings" /* 4965 */;
+import SettingsConstants from "SettingsConstants" /* 8503 */;
+import SettingBuilders from "SettingBuilders" /* 11685 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

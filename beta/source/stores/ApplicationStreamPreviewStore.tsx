@@ -1,14 +1,14 @@
-// Module ID: 7903
-// Function ID: 7904
+// Module ID: 7980
+// Function ID: 7981
 // Name: ApplicationStreamPreviewStore
-// Dependencies: [6715, 12, 6717, 504, 572, 2]
+// Dependencies: [6770, 12, 6772, 504, 572, 2]
 
-// Module 7903 (ApplicationStreamPreviewStore)
+// Module 7980 (ApplicationStreamPreviewStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import Constants from "Constants" /* 6715 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 6717 */;
+import Constants from "Constants" /* 6770 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 6772 */;
 import size from "module_2" /* 2 */;
 
 let closure_4, closure_5;
@@ -106,13 +106,22 @@ let obj = {
   STREAM_PREVIEW_FETCH_FAIL: function handleStreamPreviewFetchFail(arg0) {
     let retryAfter;
     let streamKey;
+    let timestamp;
     ({ streamKey, retryAfter } = arg0);
-    const timestamp = Date.now();
+    let url;
     const tmp = closure_4;
+    if (closure_4[streamKey] != null) {
+      url = tmp2.url;
+    }
+    if (url == null) {
+      url = null;
+    }
+    const obj = { url, expires: timestamp + retryAfter };
+    timestamp = Date.now();
     if (null == retryAfter) {
       retryAfter = 10000 * closure_5[streamKey];
     }
-    tmp[streamKey] = { url: null, expires: timestamp + retryAfter };
+    tmp[streamKey] = obj;
     set.delete(streamKey);
   },
   VOICE_STATE_UPDATES: function handleVoiceStateUpdates(voiceStates) {

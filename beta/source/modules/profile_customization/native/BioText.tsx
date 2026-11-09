@@ -1,21 +1,21 @@
-// Module ID: 11493
-// Function ID: 11494
+// Module ID: 11638
+// Function ID: 11639
 // Name: BioText
-// Dependencies: [19, 17, 1072, 4916, 21, 5014, 5709, 1252, 5624, 11494, 1375, 4915, 1113, 2]
+// Dependencies: [19, 17, 1072, 5042, 21, 5140, 5834, 1252, 5751, 11639, 1377, 5041, 1113, 2]
 // Exports: default
 
-// Module 11493 (BioText)
+// Module 11638 (BioText)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import PlatformUtils from "PlatformUtils" /* 1375 */;
-import ChangelogConstants from "ChangelogConstants" /* 4916 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import LinkingDefault from "Linking" /* 5709 */;
-import BioMarkupUtils from "BioMarkupUtils" /* 11494 */;
+import PlatformUtils from "PlatformUtils" /* 1377 */;
+import ChangelogConstants from "ChangelogConstants" /* 5042 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import LinkingDefault from "Linking" /* 5834 */;
+import BioMarkupUtils from "BioMarkupUtils" /* 11639 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let c9;
@@ -40,7 +40,7 @@ function LinkButton(arg0) {
     style: tmp.link,
     children: metroImportDefault(Text_Text.Text, obj2)
   };
-  obj2 = { variant: "text-md/normal", color: "text-link", lineClamp, style: tmp.link, children: items };
+  obj2 = { variant: "body-md/normal", color: "text-link", lineClamp, style: tmp.link, children: items };
   items = ["\n", text];
   return metroImportAll(Pressable, obj);
 }
@@ -67,7 +67,7 @@ export default function BioText(lineClamp) {
   ({ userId, guildId } = lineClamp);
   let str = lineClamp.textVariant;
   if (str === undefined) {
-    str = "text-md/normal";
+    str = "body-md/normal";
   }
   const tmp = closure_10();
   const items = [bio, guildId, str];
@@ -75,7 +75,7 @@ export default function BioText(lineClamp) {
     let num;
     const parseBioReact = BioMarkupUtils.parseBioReact;
     BioMarkupUtils;
-    const obj = { guildId, linkVariant: str, textVariant: str, customEmojiOffsetY: num };
+    const obj = { guildId, linkVariant: str, textVariant: str, enableEmojiInteraction: true, customEmojiSize: Text_Text.TextStyleSheet[str].fontSize, customEmojiOffsetY: num };
     num = undefined;
     const tmp4 = bio;
     const tmpResult = PlatformUtils;

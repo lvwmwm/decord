@@ -1,22 +1,22 @@
-// Module ID: 18832
-// Function ID: 18833
+// Module ID: 19196
+// Function ID: 19197
 // Name: GroupDMRecipientLimitTitle
-// Dependencies: [19, 17, 1072, 21, 5014, 575, 1375, 11627, 5596, 1113, 5624, 9528, 12523, 2]
+// Dependencies: [19, 17, 1072, 21, 5140, 575, 1377, 11786, 5724, 1113, 5751, 9612, 12726, 2]
 // Exports: default
 
-// Module 18832 (GroupDMRecipientLimitTitle)
+// Module 19196 (GroupDMRecipientLimitTitle)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
-import useToken from "useToken" /* 5596 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import GroupDMNitroUpsellModel from "GroupDMNitroUpsellModel" /* 11627 */;
-import openGroupDMNitroCapInfoActionSheetDefault from "openGroupDMNitroCapInfoActionSheet" /* 12523 */;
+import useToken from "useToken" /* 5724 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import GroupDMNitroUpsellModel from "GroupDMNitroUpsellModel" /* 11786 */;
+import openGroupDMNitroCapInfoActionSheetDefault from "openGroupDMNitroCapInfoActionSheet" /* 12726 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
-import PlatformUtils from "PlatformUtils" /* 1375 */;
+import createStyles_mod from "createStyles" /* 5140 */;
+import PlatformUtils from "PlatformUtils" /* 1377 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -80,7 +80,7 @@ export default function GroupDMRecipientLimitTitle(arg0) {
   const obj6 = { style: tmp.subtitleRow, children: items1 };
   const tmp14 = metroImportAll;
   if ("entitled" === groupDMNitroAudience && recipientLimit > MAX_GROUP_DM_PARTICIPANTS) {
-    const NitroWheelIcon = tmp2(9528).NitroWheelIcon;
+    const NitroWheelIcon = tmp2(9612).NitroWheelIcon;
     if (memberCount > MAX_GROUP_DM_PARTICIPANTS) {
       token2 = token1;
     }
@@ -89,7 +89,7 @@ export default function GroupDMRecipientLimitTitle(arg0) {
   }
   items1 = [tmp15Result, ];
   const obj8 = { children: items };
-  const obj9 = { lineClamp: 1, variant: "text-xs/medium", color: str2, style: tmp.subtitle, maxFontSizeMultiplier: 2, children: formatToPlainStringResult };
+  const obj9 = { lineClamp: 1, variant: "body-xs/medium", color: str2, style: tmp.subtitle, maxFontSizeMultiplier: 2, children: formatToPlainStringResult };
   items1[1] = metroRequire(Text_Text.Text, obj9);
   items[1] = metroImportDefault(React3, obj6);
   const tmp13Result = metroImportDefault(tmp14, obj8);

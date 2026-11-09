@@ -1,26 +1,26 @@
-// Module ID: 17609
-// Function ID: 17610
+// Module ID: 17937
+// Function ID: 17938
 // Name: DevToolsDataStorageScreen
-// Dependencies: [32, 19, 17, 505, 502, 21, 5014, 575, 6975, 4892, 5712, 504, 4909, 1498, 5607, 7217, 10737, 10735, 7218, 5258, 5624, 7223, 7366, 7321, 7368, 2]
+// Dependencies: [32, 19, 17, 505, 502, 21, 5140, 575, 7038, 5018, 5837, 504, 5035, 1500, 5735, 7281, 10856, 10854, 7282, 5374, 5751, 7287, 7426, 7382, 7428, 2]
 // Exports: default
 
-// Module 17609 (DevToolsDataStorageScreen)
+// Module 17937 (DevToolsDataStorageScreen)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import PersistedStore2 from "PersistedStore" /* 505 */;
 import nativeDefault from "native" /* 575 */;
-import Link from "Link" /* 1498 */;
-import DatabaseDaosDefault from "DatabaseDaos" /* 4892 */;
-import DatabaseManagerDefault from "DatabaseManager" /* 4909 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5712 */;
-import TableRow3 from "TableRow" /* 6975 */;
+import Link from "Link" /* 1500 */;
+import DatabaseDaosDefault from "DatabaseDaos" /* 5018 */;
+import DatabaseManagerDefault from "DatabaseManager" /* 5035 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5837 */;
+import TableRow3 from "TableRow" /* 7038 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -28,10 +28,10 @@ let obj3;
 function DevToolsPersistedStoresActionSheet(store) {
   store = store.store;
   const close = store.close;
-  const ActionSheet = store(7366).ActionSheet;
+  const ActionSheet = store(7426).ActionSheet;
   ({ title: store.getName() });
-  const BottomSheetTitleHeader = store(7321).BottomSheetTitleHeader;
-  const Group = store(7368).ActionSheetRow.Group;
+  const BottomSheetTitleHeader = store(7382).BottomSheetTitleHeader;
+  const Group = store(7428).ActionSheetRow.Group;
   return <ActionSheet header={null}>{null}</ActionSheet>;
 }
 const View = react_native.View;
@@ -211,7 +211,7 @@ export default function DevToolsDataStorageScreen() {
   }, items);
   const callback2 = react.useCallback((arg0) => {
     let str;
-    const obj = { style: closure_0.sectionHeader, variant: "text-sm/semibold", color: "text-default", children: str };
+    const obj = { style: closure_0.sectionHeader, variant: "body-sm/semibold", color: "text-default", children: str };
     str = "Database Controls";
     const Text = Text_Text.Text;
     const tmp = jsx;

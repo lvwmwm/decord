@@ -1,13 +1,13 @@
-// Module ID: 17965
-// Function ID: 17966
+// Module ID: 18304
+// Function ID: 18305
 // Name: RedesignSettingsCategoryFriendsActivityScreen
-// Dependencies: [19, 21, 11540, 17958, 16583, 2]
+// Dependencies: [19, 21, 11685, 18295, 18300, 2]
 
-// Module 17965 (RedesignSettingsCategoryFriendsActivityScreen)
+// Module 18304 (RedesignSettingsCategoryFriendsActivityScreen)
 import Fragment from "Fragment" /* 21 */;
-import SettingBuilders from "SettingBuilders" /* 11540 */;
-import SettingLayoutDefault from "SettingLayout" /* 16583 */;
-import MobileNotifSettingsRouteBuilders from "MobileNotifSettingsRouteBuilders" /* 17958 */;
+import SettingBuilders from "SettingBuilders" /* 11685 */;
+import MobileNotifSettingsRouteBuilders from "MobileNotifSettingsRouteBuilders" /* 18295 */;
+import EffectiveNotifSettingsLayoutDefault from "EffectiveNotifSettingsLayout" /* 18300 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -23,7 +23,7 @@ const memoResult = react.memo(function RedesignSettingsCategoryFriendsActivitySc
     items[0] = obj2.buildCategoryFriendsActivitySettingsSection();
     return createList(obj);
   }, []);
-  return jsx(SettingLayoutDefault, { node });
+  return jsx(EffectiveNotifSettingsLayoutDefault, { node });
 });
 const result = size.fileFinishedImporting("modules/notifications/settings/native/routes/RedesignSettingsCategoryFriendsActivityScreen.tsx");
 

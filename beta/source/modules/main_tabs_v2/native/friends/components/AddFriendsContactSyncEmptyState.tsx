@@ -1,21 +1,21 @@
-// Module ID: 18841
-// Function ID: 18842
+// Module ID: 19205
+// Function ID: 19206
 // Name: AddFriendsContactSyncEmptyState
-// Dependencies: [19, 17, 21, 5014, 575, 18842, 5624, 1113, 14251, 5634, 14247, 2]
+// Dependencies: [19, 17, 21, 5140, 575, 19206, 5751, 1113, 14487, 5758, 14483, 2]
 // Exports: default
 
-// Module 18841 (AddFriendsContactSyncEmptyState)
+// Module 19205 (AddFriendsContactSyncEmptyState)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import components_Button_Button from "components/Button/Button" /* 5634 */;
-import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 14247 */;
-import ContactSyncUtils from "ContactSyncUtils" /* 14251 */;
-import CompassSpotIllustration from "CompassSpotIllustration" /* 18842 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import components_Button_Button from "components/Button/Button" /* 5758 */;
+import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 14483 */;
+import ContactSyncUtils from "ContactSyncUtils" /* 14487 */;
+import CompassSpotIllustration from "CompassSpotIllustration" /* 19206 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -54,12 +54,12 @@ export default function AddFriendsContactSyncEmptyState() {
   items = [, , , ];
   const obj2 = { style: tmp.headerIllustration, children: _false(CompassSpotIllustration.CompassSpotIllustration, { width: 240, accessible: false }) };
   items[0] = _false(View, obj2);
-  const obj3 = { style: tmp.title, variant: "heading-lg/bold", color: "mobile-text-heading-primary", children: intl.string(intl4.t["/G+nci"]) };
+  const obj3 = { style: tmp.title, variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: intl.string(intl4.t["/G+nci"]) };
   const Heading = Text_Text.Heading;
   intl = intl4.intl;
   items[1] = _false(Heading, obj3);
   const obj4 = { style: tmp.subtitle, children: _false(Text, obj5) };
-  obj5 = { style: tmp.subtitleText, variant: "text-sm/medium", children: format(OXdOPf, obj6) };
+  obj5 = { style: tmp.subtitleText, variant: "body-sm/medium", children: format(OXdOPf, obj6) };
   Text = Text_Text.Text;
   const intl2 = intl4.intl;
   format = intl2.format;

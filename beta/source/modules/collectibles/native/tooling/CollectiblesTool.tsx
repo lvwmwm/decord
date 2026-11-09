@@ -1,28 +1,28 @@
-// Module ID: 17725
-// Function ID: 17726
+// Module ID: 18053
+// Function ID: 18054
 // Name: CollectiblesTool
-// Dependencies: [32, 19, 17, 10563, 1383, 7720, 7735, 8776, 1072, 1385, 21, 5014, 575, 9459, 5624, 5635, 11373, 563, 10604, 17726, 1187, 14495, 2]
+// Dependencies: [32, 19, 17, 10682, 1385, 7796, 7811, 8847, 1072, 1387, 21, 5140, 575, 9540, 5751, 5759, 11514, 563, 10725, 18054, 1187, 14731, 2]
 // Exports: default
 
-// Module 17725 (CollectiblesTool)
+// Module 18053 (CollectiblesTool)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import PremiumConstants from "PremiumConstants" /* 1385 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import BaseTextButton from "BaseTextButton" /* 5635 */;
-import FramePreviewOverrideStore from "FramePreviewOverrideStore" /* 8776 */;
-import CollectiblesShopCardV2Default from "CollectiblesShopCardV2" /* 9459 */;
-import actions_GiftCodeActionCreators from "actions/GiftCodeActionCreators" /* 11373 */;
-import ProductPurchaseSuccessActionCreatorsDefault from "ProductPurchaseSuccessActionCreators" /* 14495 */;
+import PremiumConstants from "PremiumConstants" /* 1387 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import BaseTextButton from "BaseTextButton" /* 5759 */;
+import FramePreviewOverrideStore from "FramePreviewOverrideStore" /* 8847 */;
+import CollectiblesShopCardV2Default from "CollectiblesShopCardV2" /* 9540 */;
+import actions_GiftCodeActionCreators from "actions/GiftCodeActionCreators" /* 11514 */;
+import ProductPurchaseSuccessActionCreatorsDefault from "ProductPurchaseSuccessActionCreators" /* 14731 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GiftCodeRecord from "GiftCodeRecord" /* 10563 */;
-import UserStore from "UserStore" /* 1383 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7720 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7735 */;
+import GiftCodeRecord from "GiftCodeRecord" /* 10682 */;
+import UserStore from "UserStore" /* 1385 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7796 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7811 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -59,7 +59,7 @@ class GiftingFlowSection {
     _require = undefined;
     let obj;
     if (null == product) {
-      return closure_14(require("Text/Text").Text, { variant: "text-xs/normal", color: "text-muted", children: "Enter a valid product SKU ID above to preview the gift screens." });
+      return closure_14(require("Text/Text").Text, { variant: "body-xs/normal", color: "text-muted", children: "Enter a valid product SKU ID above to preview the gift screens." });
     } else {
       _require = "devtools-collectibles-gift";
       const currentUser = UserStore.getCurrentUser();
@@ -120,11 +120,11 @@ function FramePreviewOverrideSection() {
   }
   const obj = { style: tmp.section, children: items };
   const obj2 = { style: tmp.sectionHeader, children: authStore3(Text_Text.Text, obj3) };
-  obj3 = { variant: "heading-md/semibold", style: tmp.sectionTitle, children: "Frame Preview Override" };
+  obj3 = { variant: "heading-sm/semibold", style: tmp.sectionTitle, children: "Frame Preview Override" };
   items = [authStore3(metroRequire, obj2), , , , ];
-  const obj4 = { variant: "text-sm/normal", style: tmp.description, children: "Overrides every profile-frame preview with a frame pushed to this device. Tap Load after Cap (or pushFrameOverride.mjs) pushes one." };
+  const obj4 = { variant: "body-sm/normal", style: tmp.description, children: "Overrides every profile-frame preview with a frame pushed to this device. Tap Load after Cap (or pushFrameOverride.mjs) pushes one." };
   items[1] = authStore3(Text_Text.Text, obj4);
-  const obj5 = { variant: "text-xs/normal", style: items1, children: str3 };
+  const obj5 = { variant: "body-xs/normal", style: items1, children: str3 };
   items1 = [tmp.statusText, statusError];
   items[2] = authStore3(Text_Text.Text, obj5);
   const obj6 = {
@@ -285,16 +285,16 @@ export default function _default() {
   const obj5 = { contentContainerStyle: tmp.scrollContainer, showsVerticalScrollIndicator: false, children: null };
   const obj6 = { style: tmp.section, children: items4 };
   const obj7 = { style: tmp.sectionHeader, children: closure_14(tmp2(product[14]).Text, obj8) };
-  obj8 = { variant: "heading-md/semibold", style: tmp.sectionTitle, children: "Shop Settings" };
+  obj8 = { variant: "heading-sm/semibold", style: tmp.sectionTitle, children: "Shop Settings" };
   items4 = [closure_14(closure_6, obj7), closure_14(tmp2(tmp3[19]).ShopSkipCategoriesFilter, {})];
   const items5 = [closure_15(closure_6, obj6), , , ];
   const obj9 = { style: tmp.section, children: items6 };
   const obj10 = { style: tmp.sectionHeader, children: closure_14(tmp2(product[14]).Text, obj11) };
-  obj11 = { variant: "heading-md/semibold", style: tmp.sectionTitle, children: "Product Configuration" };
+  obj11 = { variant: "heading-sm/semibold", style: tmp.sectionTitle, children: "Product Configuration" };
   items6 = [closure_14(closure_6, obj10), ];
   const obj12 = { style: tmp.inputContainer, children: items7 };
   items7 = [, , , , ];
-  const obj13 = { variant: "text-md/semibold", style: tmp.inputLabel, children: "Primary Product SKU ID" };
+  const obj13 = { variant: "body-md/semibold", style: tmp.inputLabel, children: "Primary Product SKU ID" };
   items7[0] = closure_14(tmp2(product[14]).Text, obj13);
   const obj14 = { style: tmp.inputWrapper, children: closure_14(TextInput, obj15) };
   obj15 = { value: str, onChangeText: tmp14, placeholder: "Enter product SKU ID (e.g., 1366494385482502184)", returnKeyType: "done", style: obj16 };
@@ -304,7 +304,7 @@ export default function _default() {
   let tmp20Result = !tmp20Result2 && "" !== str.trim();
   const tmp23 = closure_5;
   if (tmp20Result) {
-    const obj17 = { variant: "text-xs/normal", style: items8, children: "Loading products..." };
+    const obj17 = { variant: "body-xs/normal", style: items8, children: "Loading products..." };
     items8 = [, ];
     ({ statusText: arr9[0], statusLoading: arr9[1] } = tmp);
     tmp20Result = tmp20(tmp2(tmp3[14]).Text, obj17);
@@ -317,7 +317,7 @@ export default function _default() {
     tmp20Result2 = null == product;
   }
   if (tmp20Result2) {
-    const obj18 = { variant: "text-xs/normal", style: items9, children: "Product not found" };
+    const obj18 = { variant: "body-xs/normal", style: items9, children: "Product not found" };
     items9 = [, ];
     ({ statusText: arr10[0], statusError: arr10[1] } = tmp);
     tmp20Result2 = tmp20(tmp2(tmp3[14]).Text, obj18);
@@ -325,7 +325,7 @@ export default function _default() {
   items7[3] = tmp20Result2;
   let tmp22Result = null != product;
   if (tmp22Result) {
-    const obj19 = { variant: "text-xs/normal", style: items10, children: items11 };
+    const obj19 = { variant: "body-xs/normal", style: items10, children: items11 };
     items10 = [, ];
     ({ statusText: arr11[0], statusSuccess: arr11[1] } = tmp);
     items11 = ["Found: ", product.name];
@@ -336,7 +336,7 @@ export default function _default() {
   items5[1] = closure_15(closure_6, obj9);
   const obj20 = { style: tmp.section, children: null };
   const obj21 = { style: tmp.sectionHeader, children: closure_14(tmp2(product[14]).Text, obj22) };
-  obj22 = { variant: "heading-md/semibold", style: tmp.sectionTitle, children: "Product Preview" };
+  obj22 = { variant: "heading-sm/semibold", style: tmp.sectionTitle, children: "Product Preview" };
   const items12 = [closure_14(closure_6, obj21), ];
   if (null != product) {
     let tmp22Result2;
@@ -370,7 +370,7 @@ export default function _default() {
     return closure_14(closure_6, obj4);
   }
   const obj28 = { style: tmp.placeholder, children: closure_15(tmp2(product[14]).Text, obj29) };
-  obj29 = { variant: "text-sm/normal", style: tmp.placeholderText, children: ["Enter a valid product SKU ID above", "\n", "to see the product preview"] };
+  obj29 = { variant: "body-sm/normal", style: tmp.placeholderText, children: ["Enter a valid product SKU ID above", "\n", "to see the product preview"] };
   tmp22Result2 = tmp20(tmp21, obj28);
 };
 export { GiftingFlowSection };

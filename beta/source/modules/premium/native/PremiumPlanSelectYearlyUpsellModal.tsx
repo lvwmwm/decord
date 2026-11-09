@@ -1,25 +1,25 @@
-// Module ID: 15438
-// Function ID: 15439
+// Module ID: 15731
+// Function ID: 15732
 // Name: PremiumPlanSelectYearlyUpsellModal
-// Dependencies: [32, 19, 17, 2062, 7597, 15425, 1385, 1083, 21, 5014, 6723, 6778, 7592, 504, 1895, 6030, 5717, 15439, 1187, 1113, 2047, 5634, 2]
+// Dependencies: [32, 19, 17, 2186, 7673, 15718, 1387, 1083, 21, 5140, 6778, 6833, 7668, 504, 2024, 6162, 5842, 15732, 1187, 1113, 2171, 5758, 2]
 // Exports: default
 
-// Module 15438 (PremiumPlanSelectYearlyUpsellModal)
+// Module 15731 (PremiumPlanSelectYearlyUpsellModal)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1083 */;
-import PremiumConstants from "PremiumConstants" /* 1385 */;
-import FastImageDefault from "FastImage" /* 5717 */;
-import AlertDefault from "Alert" /* 6030 */;
-import TextStylesDefault from "TextStyles" /* 6723 */;
-import LegacyTokens from "LegacyTokens" /* 6778 */;
-import PremiumPlanSelectStore from "PremiumPlanSelectStore" /* 15425 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15439 */;
+import PremiumConstants from "PremiumConstants" /* 1387 */;
+import FastImageDefault from "FastImage" /* 5842 */;
+import AlertDefault from "Alert" /* 6162 */;
+import TextStylesDefault from "TextStyles" /* 6778 */;
+import LegacyTokens from "LegacyTokens" /* 6833 */;
+import PremiumPlanSelectStore from "PremiumPlanSelectStore" /* 15718 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15732 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2062 */;
-import IAPStore from "IAPStore" /* 7597 */;
+import LocaleStore from "LocaleStore" /* 2186 */;
+import IAPStore from "IAPStore" /* 7673 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let c10;
@@ -77,7 +77,7 @@ export default function PremiumPlanSelectYearlyUpsellModal(arg0) {
   const tmp2 = usePremiumPlanSelectStore((isPurchasing) => isPurchasing.isPurchasing);
   [tmp4, c3] = _slicedToArray(react.useState(null), 2);
   const tmp3 = _slicedToArray(react.useState(null), 2);
-  const obj2 = productId(7592);
+  const obj2 = productId(7668);
   const premiumBundledItemsFromProductId = obj2.getPremiumBundledItemsFromProductId(productId);
   let items = [LocaleStore];
   const obj3 = productId(504);
@@ -108,7 +108,7 @@ export default function PremiumPlanSelectYearlyUpsellModal(arg0) {
   if (null == premiumTier || null == orderPriceString) {
     return null;
   } else {
-    const tmp5Result = productId(1895);
+    const tmp5Result = productId(2024);
     const formatPercentResult = tmp5Result.formatPercent(stateFromStores, closure_9 / 100);
     const obj5 = { onClose, noDefaultButtons: true, children: closure_11(View, obj6) };
     obj6 = { style: tmp.container, children: items2 };
@@ -122,7 +122,7 @@ export default function PremiumPlanSelectYearlyUpsellModal(arg0) {
     format = intl.format;
     obj9 = { discountPercentage: formatPercentResult, planName: tmp5Result2.getPremiumTypeDisplayName(premiumTier) };
     LQCVfK = tmp5(1113).t.LQCVfK;
-    tmp5Result2 = productId(2047);
+    tmp5Result2 = productId(2171);
     items2[1] = closure_10(LegacyText, obj8);
     const obj10 = { style: tmp.description, children: intl2.format(productId(1113).t["7chOVL"], obj11) };
     const LegacyText2 = tmp5(1187).LegacyText;
@@ -140,7 +140,7 @@ export default function PremiumPlanSelectYearlyUpsellModal(arg0) {
       disabled: tmp2 || tmp9[1],
       loading: "upsell" === tmp4 && tmp2
     };
-    Button = tmp5(5634).Button;
+    Button = tmp5(5758).Button;
     intl3 = tmp5(1113).intl;
     obj14 = { price: orderPriceString };
     items2[3] = closure_10(View, obj12);
@@ -155,12 +155,12 @@ export default function PremiumPlanSelectYearlyUpsellModal(arg0) {
       disabled: tmp2 || tmp9[1],
       loading: "default" === tmp4 && tmp2
     };
-    Button2 = tmp5(5634).Button;
+    Button2 = tmp5(5758).Button;
     intl4 = tmp5(1113).intl;
     items2[4] = closure_10(View, obj15);
     const obj17 = { style: tmp.cancelButton, children: closure_10(Button3, obj18) };
     obj18 = { variant: "tertiary", text: intl5.string(productId(1113).t.cpT0Cq), onPress: onClose };
-    Button3 = tmp5(5634).Button;
+    Button3 = tmp5(5758).Button;
     intl5 = tmp5(1113).intl;
     items2[5] = closure_10(View, obj17);
     return closure_10(tmp19, obj5);

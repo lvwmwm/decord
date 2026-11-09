@@ -1,14 +1,14 @@
-// Module ID: 7264
-// Function ID: 7265
+// Module ID: 7327
+// Function ID: 7328
 // Name: GuildOnboardingStore
-// Dependencies: [1072, 504, 4888, 572, 2]
+// Dependencies: [1072, 504, 5014, 572, 2]
 // Exports: isOnboarding
 
-// Module 7264 (GuildOnboardingStore)
+// Module 7327 (GuildOnboardingStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
-import FavoritesUtils from "FavoritesUtils" /* 4888 */;
+import FavoritesUtils from "FavoritesUtils" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let closure_4, closure_5;

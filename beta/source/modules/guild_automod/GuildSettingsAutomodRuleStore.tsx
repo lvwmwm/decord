@@ -1,18 +1,18 @@
-// Module ID: 19669
-// Function ID: 19670
+// Module ID: 20079
+// Function ID: 20080
 // Name: GuildSettingsAutomodRuleStore
-// Dependencies: [5, 1072, 1113, 1254, 12, 1379, 1259, 19670, 19675, 19671, 8387, 19668, 13297, 6446, 4929, 2]
+// Dependencies: [5, 1072, 1113, 1254, 12, 1380, 1259, 20080, 20085, 20081, 8458, 20078, 13530, 6579, 5055, 2]
 // Exports: useAutomodEditingRuleActions, useAutomodEditingRuleState
 
-// Module 19669 (GuildSettingsAutomodRuleStore)
+// Module 20079 (GuildSettingsAutomodRuleStore)
 import Constants from "Constants" /* 1072 */;
 import react_native from "react-native" /* 1259 */;
-import _slicedToArray from "_slicedToArray" /* 4929 */;
+import _slicedToArray from "_slicedToArray" /* 5055 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import module_1254 from "module_1254" /* 1254 */;
 import size from "module_2" /* 2 */;
 
-let c10, c9, closure_7;
+let c10, c9, closure_7, errors;
 
 const AbortCodes = Constants.AbortCodes;
 let closure_5 = Object.freeze({ editingRule: null, hasChanges: false, isLoading: false, errorMessage: null });
@@ -91,7 +91,7 @@ let closure_6 = module_1254.createWithEqualityFn((arg0, arg1) => {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c8;
@@ -234,7 +234,7 @@ let closure_6 = module_1254.createWithEqualityFn((arg0, arg1) => {
           obj5.batchUpdates(() => {
             if (code.code === constants.INVALID_FORM_BODY) {
               let stringResult;
-              const errors = obj.errors;
+              errors = obj.errors;
               let regex_patterns;
               if (errors != null) {
                 const trigger_metadata = errors.trigger_metadata;

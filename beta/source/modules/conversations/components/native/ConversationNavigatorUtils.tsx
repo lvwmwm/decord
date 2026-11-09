@@ -1,15 +1,15 @@
-// Module ID: 9867
-// Function ID: 9868
+// Module ID: 9987
+// Function ID: 9988
 // Name: ConversationNavigatorUtils
-// Dependencies: [5199, 5756, 2]
+// Dependencies: [5315, 5885, 2]
 // Exports: closeConversationsAndJumpToMessage
 
-// Module 9867 (ConversationNavigatorUtils)
-import RootNavigationRef from "RootNavigationRef" /* 5199 */;
+// Module 9987 (ConversationNavigatorUtils)
+import RootNavigationRef from "RootNavigationRef" /* 5315 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const transitionToChannel = tmp(5756);
+const transitionToChannel = tmp(5885);
 const result = size.fileFinishedImporting("modules/conversations/components/native/ConversationNavigatorUtils.tsx");
 
 export function closeConversationsAndJumpToMessage(channelId, id2) {

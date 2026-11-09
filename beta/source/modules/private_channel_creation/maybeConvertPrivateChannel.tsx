@@ -1,13 +1,13 @@
-// Module ID: 15211
-// Function ID: 15212
+// Module ID: 15497
+// Function ID: 15498
 // Name: maybeConvertPrivateChannel
-// Dependencies: [4863, 7396, 7485, 2]
+// Dependencies: [4989, 7460, 7549, 2]
 // Exports: default
 
-// Module 15211 (maybeConvertPrivateChannel)
-import FakePlaceholderPrivateChannel from "FakePlaceholderPrivateChannel" /* 7396 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7485 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
+// Module 15497 (maybeConvertPrivateChannel)
+import FakePlaceholderPrivateChannel from "FakePlaceholderPrivateChannel" /* 7460 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7549 */;
+import ChannelStore from "ChannelStore" /* 4989 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/private_channel_creation/maybeConvertPrivateChannel.tsx");

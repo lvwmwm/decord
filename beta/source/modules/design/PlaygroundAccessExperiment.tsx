@@ -1,13 +1,13 @@
-// Module ID: 13401
-// Function ID: 13402
+// Module ID: 13633
+// Function ID: 13634
 // Name: PlaygroundAccessExperiment
-// Dependencies: [1383, 1447, 504, 2]
+// Dependencies: [1385, 1449, 504, 2]
 // Exports: getHasPlaygroundAccess, getPlaygroundAccessExperiment, useHasPlaygroundAccess, usePlaygroundAccessExperiment
 
-// Module 13401 (PlaygroundAccessExperiment)
+// Module 13633 (PlaygroundAccessExperiment)
 import get_initialized from "get initialized" /* 504 */;
-import UserStore from "UserStore" /* 1383 */;
-import ApexExperiment from "ApexExperiment" /* 1447 */;
+import UserStore from "UserStore" /* 1385 */;
+import ApexExperiment from "ApexExperiment" /* 1449 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

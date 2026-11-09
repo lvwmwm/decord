@@ -1,18 +1,18 @@
-// Module ID: 16490
-// Function ID: 16491
+// Module ID: 16808
+// Function ID: 16809
 // Name: UserProfileEditTheme
-// Dependencies: [19, 17, 21, 5014, 575, 8757, 8800, 8715, 5854, 16491, 5624, 1113, 6980, 5258, 16492, 1994, 9756, 16493, 2]
+// Dependencies: [19, 17, 21, 5140, 575, 8828, 8873, 8786, 5983, 16809, 5751, 1113, 7043, 5374, 16810, 2118, 9846, 16811, 2]
 // Exports: default
 
-// Module 16490 (UserProfileEditTheme)
+// Module 16808 (UserProfileEditTheme)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import asyncRequire from "asyncRequire" /* 1994 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import isEqualDefault from "isEqual" /* 5854 */;
+import asyncRequire from "asyncRequire" /* 2118 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
+import isEqualDefault from "isEqual" /* 5983 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -94,7 +94,7 @@ export default function UserProfileEditTheme(pendingThemeColors) {
     if (null != secondaryColor) {
       let obj2 = { style: tmp.container, children: items2 };
       const obj3 = { style: tmp.labelRow, children: items1 };
-      const obj4 = { variant: "text-sm/semibold", color: "text-subtle", children: intl.string(onProfileThemeColorsChanged(tmp3[11]).t.DMeO2X) };
+      const obj4 = { variant: "body-sm/semibold", color: "text-subtle", children: intl.string(onProfileThemeColorsChanged(tmp3[11]).t.DMeO2X) };
       const Text = tmp6(tmp3[10]).Text;
       intl = tmp6(tmp3[11]).intl;
       items1 = [closure_5(Text, obj4), ];
@@ -109,7 +109,7 @@ export default function UserProfileEditTheme(pendingThemeColors) {
                       return onChangeColors([null, null]);
                     }
                   };
-                  obj.openLazy(asyncRequire(16492, dependencyMap.paths), "Profile Theme", obj2);
+                  obj.openLazy(asyncRequire(16810, dependencyMap.paths), "Profile Theme", obj2);
                 },
           children: closure_5(onProfileThemeColorsChanged(tmp3[16]).MoreHorizontalIcon, obj6)
         };

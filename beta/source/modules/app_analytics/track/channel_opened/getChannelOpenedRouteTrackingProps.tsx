@@ -1,12 +1,12 @@
-// Module ID: 18820
-// Function ID: 18821
+// Module ID: 19184
+// Function ID: 19185
 // Name: getChannelOpenedRouteTrackingProps
-// Dependencies: [4863, 8336, 1099, 2]
+// Dependencies: [4989, 8406, 1099, 2]
 // Exports: getChannelOpenedRouteTrackingProps
 
-// Module 18820 (getChannelOpenedRouteTrackingProps)
-import ThreadAnalyticsUtils from "ThreadAnalyticsUtils" /* 8336 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
+// Module 19184 (getChannelOpenedRouteTrackingProps)
+import ThreadAnalyticsUtils from "ThreadAnalyticsUtils" /* 8406 */;
+import ChannelStore from "ChannelStore" /* 4989 */;
 import size from "module_2" /* 2 */;
 
 let tmp;

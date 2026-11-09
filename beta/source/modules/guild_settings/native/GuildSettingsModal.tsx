@@ -1,22 +1,25 @@
-// Module ID: 19646
-// Function ID: 19647
+// Module ID: 20056
+// Function ID: 20057
 // Name: GuildSettingsModal
-// Dependencies: [32, 19, 4885, 9075, 1072, 21, 18201, 9074, 1260, 1113, 6998, 19647, 19657, 19665, 19666, 19685, 19704, 19709, 19724, 19725, 19737, 19749, 19751, 18924, 18933, 19759, 19763, 19764, 18935, 18202, 19765, 19766, 19786, 19807, 19811, 19814, 19817, 13263, 13277, 13281, 19818, 19823, 19824, 19846, 19868, 19934, 19935, 19949, 19986, 19989, 19990, 19993, 20001, 20002, 1625, 5612, 504, 7169, 2]
+// Dependencies: [32, 19, 5011, 9155, 1072, 21, 18538, 9154, 1260, 1113, 7064, 20057, 20067, 20075, 20076, 20095, 20114, 20119, 20134, 20135, 20147, 20159, 20161, 19299, 19308, 20169, 20173, 20174, 19310, 18539, 20175, 20176, 20196, 20217, 20221, 20224, 20227, 13496, 13510, 13514, 20228, 20233, 20234, 20256, 20278, 20344, 20345, 20359, 20396, 20399, 20400, 20403, 20411, 20412, 1627, 5739, 504, 7231, 2]
 // Exports: default
 
-// Module 19646 (GuildSettingsModal)
+// Module 20056 (GuildSettingsModal)
 import Fragment from "Fragment" /* 21 */;
 import intl42 from "intl" /* 1113 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
-import NavigatorHeader from "NavigatorHeader" /* 6998 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9074 */;
-import GuildSettingsModalChannelsActionCreatorsDefault from "GuildSettingsModalChannelsActionCreators" /* 18201 */;
-import _slicedToArray_mod from "_slicedToArray" /* 32 */;
+import NavigatorHeader from "NavigatorHeader" /* 7064 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9154 */;
+import GuildSettingsModalChannelsActionCreatorsDefault from "GuildSettingsModalChannelsActionCreators" /* 18538 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4885 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 9075 */;
+import GuildStore from "GuildStore" /* 5011 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 9155 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
+
+const require = globalThis.__r;
+let importDefault;
 
 let metroImportAll;
 let metroImportDefault;
@@ -26,35 +29,24 @@ function close() {
   const obj2 = GuildSettingsActionCreatorsDefault;
   obj2.close();
 }
-let _slicedToArray = _slicedToArray_mod;
 ({ GuildSettingsSections: metroImportDefault, WebhookTypes: metroImportAll } = Constants);
 const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/guild_settings/native/GuildSettingsModal.tsx");
 
 export default function GuildSettingsModal() {
   let LANDING;
-  let closure_3;
-  let left;
-  let right;
+  let closure_1;
   let stateFromStores;
-  let tmp14;
-  let tmp = right;
-  let rect = left(right[54])();
-  const bottom = rect.bottom;
-  left = rect.left;
-  right = rect.right;
-  const items = [left, right];
-  const memo = stateFromStores.useMemo(() => {
-    const rect = { left, right };
-    return rect;
-  }, items);
-  const tmp3 = left(right[55])(() => GuildSettingsStore.getGuildId());
-  _slicedToArray = tmp3;
-  let obj = bottom(right[56]);
-  const items1 = [GuildStore];
-  stateFromStores = obj.useStateFromStores(items1, () => GuildStore.getGuild(closure_3));
-  const items2 = [bottom, tmp3];
-  const memo1 = stateFromStores.useMemo(() => {
+  let tmp13;
+  let tmp = stateFromStores;
+  const bottom = require("useSafeAreaInsets")().bottom;
+  let tmp2 = require("react")(() => GuildSettingsStore.getGuildId());
+  importDefault = tmp2;
+  let obj = bottom(stateFromStores[56]);
+  const items = [GuildStore];
+  stateFromStores = obj.useStateFromStores(items, () => GuildStore.getGuild(closure_1));
+  const items1 = [bottom, tmp2];
+  const memo = react.useMemo(() => {
     let closeGuildSettings;
     let intl;
     let intl10;
@@ -101,7 +93,7 @@ export default function GuildSettingsModal() {
     let obj5;
     let tmp;
     let tmp2;
-    if (null != closure_3) {
+    if (null != closure_1) {
       let closure_0 = tmp;
       let obj = { contentContainerStyle: obj2 };
       const obj3 = {};
@@ -113,7 +105,7 @@ export default function GuildSettingsModal() {
         headerLeft: obj5.getHeaderCloseButton(close),
         render() {
             obj = { guildId };
-            const tmp = left(right[11]);
+            const tmp = closure_2_1(stateFromStores[11]);
             const merged = Object.assign(obj);
             return closure_2_9(tmp, obj);
           }
@@ -127,7 +119,7 @@ export default function GuildSettingsModal() {
         title: intl2.string(intl42.t["/dp6yY"]),
         render() {
             obj = {};
-            const tmp = left(right[12]);
+            const tmp = closure_2_1(stateFromStores[12]);
             const merged = Object.assign(obj);
             return closure_2_9(tmp, obj);
           }
@@ -140,7 +132,7 @@ export default function GuildSettingsModal() {
         title: intl3.string(intl42.t["5tbTdV"]),
         render() {
             obj = {};
-            const tmp = left(right[13]);
+            const tmp = closure_2_1(stateFromStores[13]);
             const merged = Object.assign(obj);
             return closure_2_9(tmp, obj);
           }
@@ -153,7 +145,7 @@ export default function GuildSettingsModal() {
         postponeRender: true,
         render() {
             obj = { guildId };
-            const tmp = left(right[14]);
+            const tmp = closure_2_1(stateFromStores[14]);
             const merged = Object.assign(obj);
             return closure_2_9(tmp, obj);
           }
@@ -165,7 +157,7 @@ export default function GuildSettingsModal() {
         title: intl5.string(intl42.t.uRelgx),
         render(arg0) {
             obj = { guildId };
-            const tmp = left(right[15]);
+            const tmp = closure_2_1(stateFromStores[15]);
             const merged = Object.assign(arg0);
             const merged1 = Object.assign(obj);
             return closure_2_9(tmp, obj);
@@ -180,7 +172,7 @@ export default function GuildSettingsModal() {
         postponeRender: true,
         render() {
             obj = { guildId };
-            const tmp = left(right[16]);
+            const tmp = closure_2_1(stateFromStores[16]);
             const merged = Object.assign(obj);
             return closure_2_9(tmp, obj);
           }
@@ -192,7 +184,7 @@ export default function GuildSettingsModal() {
         title: intl7.string(intl42.t.pEasFX),
         render(arg0) {
             obj = { guildId };
-            const tmp = left(right[17]);
+            const tmp = closure_2_1(stateFromStores[17]);
             const merged = Object.assign(arg0);
             const merged1 = Object.assign(obj);
             return closure_2_9(tmp, obj);
@@ -206,7 +198,7 @@ export default function GuildSettingsModal() {
         title: intl8.string(intl42.t.CIsNZw),
         render() {
             obj = {};
-            const tmp = left(right[18]);
+            const tmp = closure_2_1(stateFromStores[18]);
             const merged = Object.assign(obj);
             return closure_2_9(tmp, obj);
           }
@@ -220,7 +212,7 @@ export default function GuildSettingsModal() {
         postponeRender: true,
         render() {
             obj = { guildId };
-            const tmp = left(right[19]);
+            const tmp = closure_2_1(stateFromStores[19]);
             const merged = Object.assign(obj);
             return closure_2_9(tmp, obj);
           }
@@ -234,7 +226,7 @@ export default function GuildSettingsModal() {
         postponeRender: true,
         render() {
             obj = { guildId };
-            const tmp = left(right[20]);
+            const tmp = closure_2_1(stateFromStores[20]);
             const merged = Object.assign(obj);
             return closure_2_9(tmp, obj);
           }
@@ -247,7 +239,7 @@ export default function GuildSettingsModal() {
         title: intl11.string(intl42.t["2QmKZ2"]),
         render() {
             obj = { guildId };
-            const tmp = left(right[21]);
+            const tmp = closure_2_1(stateFromStores[21]);
             const merged = Object.assign(obj);
             return closure_2_9(tmp, obj);
           }
@@ -259,7 +251,7 @@ export default function GuildSettingsModal() {
         title: intl12.string(intl42.t.r4R7mm),
         render() {
             obj = { guildId };
-            const tmp = left(right[22]);
+            const tmp = closure_2_1(stateFromStores[22]);
             const merged = Object.assign(obj);
             return closure_2_9(tmp, obj);
           }
@@ -272,7 +264,7 @@ export default function GuildSettingsModal() {
         title: intl13.string(intl42.t.jp25Id),
         render() {
             obj = { guildId, webhookType: constants.INCOMING };
-            const tmp = left(right[23]);
+            const tmp = closure_2_1(stateFromStores[23]);
             const merged = Object.assign(obj);
             return closure_2_9(tmp, obj);
           }
@@ -284,7 +276,7 @@ export default function GuildSettingsModal() {
         title: intl14.string(intl42.t["6SE3L3"]),
         render(arg0) {
             obj = {};
-            const tmp = left(right[24]);
+            const tmp = closure_2_1(stateFromStores[24]);
             const merged = Object.assign(arg0);
             const merged1 = Object.assign(obj);
             return closure_2_9(tmp, obj);
@@ -298,7 +290,7 @@ export default function GuildSettingsModal() {
         title: intl15.string(intl42.t.OrV60r),
         render() {
             obj = { guildId, webhookType: constants.CHANNEL_FOLLOWER };
-            const tmp = left(right[23]);
+            const tmp = closure_2_1(stateFromStores[23]);
             const merged = Object.assign(obj);
             return closure_2_9(tmp, obj);
           }
@@ -311,7 +303,7 @@ export default function GuildSettingsModal() {
         title: intl16.string(intl42.t.sE5hSZ),
         render(arg0) {
             obj = {};
-            const tmp = left(right[25]);
+            const tmp = closure_2_1(stateFromStores[25]);
             const merged = Object.assign(arg0);
             const merged1 = Object.assign(obj);
             return closure_2_9(tmp, obj);
@@ -324,7 +316,7 @@ export default function GuildSettingsModal() {
         title: intl17.string(intl42.t.CIsNZw),
         render(arg0) {
             obj = { closeGuildSettings };
-            const tmp = left(right[26]);
+            const tmp = closure_2_1(stateFromStores[26]);
             const merged = Object.assign(arg0);
             const merged1 = Object.assign(obj);
             return closure_2_9(tmp, obj);
@@ -337,7 +329,7 @@ export default function GuildSettingsModal() {
         title: intl18.string(intl42.t.tqtDXC),
         render() {
             obj = { guildId };
-            const tmp = left(right[27]);
+            const tmp = closure_2_1(stateFromStores[27]);
             const merged = Object.assign(obj);
             return closure_2_9(tmp, obj);
           }
@@ -349,7 +341,7 @@ export default function GuildSettingsModal() {
         title: intl19.string(intl42.t.OJknhi),
         render(arg0) {
             obj = {};
-            const tmp = left(right[28]);
+            const tmp = closure_2_1(stateFromStores[28]);
             const merged = Object.assign(arg0);
             const merged1 = Object.assign(obj);
             return closure_2_9(tmp, obj);
@@ -363,8 +355,8 @@ export default function GuildSettingsModal() {
         title: intl20.string(intl42.t.OGiMXJ),
         postponeRender: true,
         render() {
-            obj = { guildId, onDone: left(right[6]).stopReordering };
-            const tmp = left(right[29]);
+            obj = { guildId, onDone: closure_2_1(stateFromStores[6]).stopReordering };
+            const tmp = closure_2_1(stateFromStores[29]);
             const merged = Object.assign(obj);
             return closure_2_9(tmp, obj);
           }
@@ -377,7 +369,7 @@ export default function GuildSettingsModal() {
         title: intl21.string(intl42.t.Am9YHi),
         render() {
             obj = { guildId };
-            const tmp = left(right[30]);
+            const tmp = closure_2_1(stateFromStores[30]);
             const merged = Object.assign(obj);
             return closure_2_9(tmp, obj);
           }
@@ -390,7 +382,7 @@ export default function GuildSettingsModal() {
         title: intl22.string(intl42.t["LPJmL/"]),
         render() {
             obj = { guildId };
-            const tmp = left(right[31]);
+            const tmp = closure_2_1(stateFromStores[31]);
             const merged = Object.assign(obj);
             return closure_2_9(tmp, obj);
           }
@@ -402,7 +394,7 @@ export default function GuildSettingsModal() {
         title: intl23.string(intl42.t["LPJmL/"]),
         render(arg0) {
             obj = { guildId };
-            const tmp = left(right[32]);
+            const tmp = closure_2_1(stateFromStores[32]);
             const merged = Object.assign(arg0);
             const merged1 = Object.assign(obj);
             return closure_2_9(tmp, obj);
@@ -415,7 +407,7 @@ export default function GuildSettingsModal() {
         title: intl24.string(intl42.t["5XZKy/"]),
         render() {
             obj = { guildId };
-            const tmp = left(right[33]);
+            const tmp = closure_2_1(stateFromStores[33]);
             const merged = Object.assign(obj);
             return closure_2_9(tmp, obj);
           }
@@ -429,7 +421,7 @@ export default function GuildSettingsModal() {
         postponeRender: true,
         render() {
             obj = { guildId };
-            const tmp = left(right[34]);
+            const tmp = closure_2_1(stateFromStores[34]);
             const merged = Object.assign(obj);
             return closure_2_9(tmp, obj);
           }
@@ -443,7 +435,7 @@ export default function GuildSettingsModal() {
         postponeRender: true,
         render() {
             obj = { guildId };
-            const tmp = left(right[35]);
+            const tmp = closure_2_1(stateFromStores[35]);
             const merged = Object.assign(obj);
             return closure_2_9(tmp, obj);
           }
@@ -457,7 +449,7 @@ export default function GuildSettingsModal() {
         postponeRender: true,
         render() {
             obj = { guildId };
-            const tmp = left(right[36]);
+            const tmp = closure_2_1(stateFromStores[36]);
             const merged = Object.assign(obj);
             return closure_2_9(tmp, obj);
           }
@@ -467,7 +459,7 @@ export default function GuildSettingsModal() {
       const obj32 = {
         render(arg0) {
             obj = { guildId };
-            const GuildSettingsModalMemberEditScene = bottom(right[37]).GuildSettingsModalMemberEditScene;
+            const GuildSettingsModalMemberEditScene = bottom(stateFromStores[37]).GuildSettingsModalMemberEditScene;
             const merged = Object.assign(arg0);
             const merged1 = Object.assign(obj);
             return closure_2_9(GuildSettingsModalMemberEditScene, obj);
@@ -480,7 +472,7 @@ export default function GuildSettingsModal() {
           },
         render(arg0) {
             obj = { guildId };
-            const tmp = left(right[38]);
+            const tmp = closure_2_1(stateFromStores[38]);
             const merged = Object.assign(arg0);
             const merged1 = Object.assign(obj);
             return closure_2_9(tmp, obj);
@@ -493,7 +485,7 @@ export default function GuildSettingsModal() {
           },
         render(arg0) {
             obj = { guildId };
-            const tmp = left(right[39]);
+            const tmp = closure_2_1(stateFromStores[39]);
             const merged = Object.assign(arg0);
             const merged1 = Object.assign(obj);
             return closure_2_9(tmp, obj);
@@ -507,7 +499,7 @@ export default function GuildSettingsModal() {
         postponeRender: true,
         render() {
             obj = { guildId };
-            const tmp = left(right[40]);
+            const tmp = closure_2_1(stateFromStores[40]);
             const merged = Object.assign(obj);
             return closure_2_9(tmp, obj);
           }
@@ -521,7 +513,7 @@ export default function GuildSettingsModal() {
         postponeRender: true,
         render(arg0) {
             obj = { guildId };
-            const tmp = left(right[41]);
+            const tmp = closure_2_1(stateFromStores[41]);
             const merged = Object.assign(arg0);
             return closure_2_9(tmp, obj);
           }
@@ -534,7 +526,7 @@ export default function GuildSettingsModal() {
         title: intl30.string(intl42.t.ElKTeb),
         render(arg0) {
             obj = { guildId };
-            const tmp = left(right[42]);
+            const tmp = closure_2_1(stateFromStores[42]);
             const merged = Object.assign(arg0);
             const merged1 = Object.assign(obj);
             return closure_2_9(tmp, obj);
@@ -549,7 +541,7 @@ export default function GuildSettingsModal() {
         postponeRender: true,
         render() {
             obj = { guildId };
-            const tmp = left(right[43]);
+            const tmp = closure_2_1(stateFromStores[43]);
             const merged = Object.assign(obj);
             return closure_2_9(tmp, obj);
           }
@@ -561,7 +553,7 @@ export default function GuildSettingsModal() {
         title: intl32.string(intl42.t["KzCF/6"]),
         render() {
             obj = { guildId };
-            return closure_2_9(left(right[44]), obj);
+            return closure_2_9(closure_2_1(stateFromStores[44]), obj);
           }
       };
       intl32 = intl42.intl;
@@ -571,7 +563,7 @@ export default function GuildSettingsModal() {
         title: intl33.string(intl42.t["KzCF/6"]),
         render() {
             obj = { guildId };
-            return closure_2_9(left(right[45]), obj);
+            return closure_2_9(closure_2_1(stateFromStores[45]), obj);
           }
       };
       intl33 = intl42.intl;
@@ -581,7 +573,7 @@ export default function GuildSettingsModal() {
         title: intl34.string(intl42.t["/CfKoD"]),
         render() {
             obj = { guildId };
-            return closure_2_9(left(right[46]), obj);
+            return closure_2_9(closure_2_1(stateFromStores[46]), obj);
           }
       };
       intl34 = intl42.intl;
@@ -591,7 +583,7 @@ export default function GuildSettingsModal() {
         title: intl35.string(intl42.t.pXbGYc),
         render() {
             obj = { guildId };
-            return closure_2_9(left(right[47]), obj);
+            return closure_2_9(closure_2_1(stateFromStores[47]), obj);
           }
       };
       intl35 = intl42.intl;
@@ -601,7 +593,7 @@ export default function GuildSettingsModal() {
         title: intl36.string(intl42.t["KzCF/6"]),
         render(arg0) {
             obj = { guildId };
-            const tmp = left(right[48]);
+            const tmp = closure_2_1(stateFromStores[48]);
             const merged = Object.assign(arg0);
             return closure_2_9(tmp, obj);
           }
@@ -613,7 +605,7 @@ export default function GuildSettingsModal() {
         title: intl37.string(intl42.t.p2Rsdl),
         render() {
             obj = { guildId };
-            return closure_2_9(left(right[49]), obj);
+            return closure_2_9(closure_2_1(stateFromStores[49]), obj);
           }
       };
       intl37 = intl42.intl;
@@ -623,7 +615,7 @@ export default function GuildSettingsModal() {
         title: intl38.string(intl42.t.C5Dbwn),
         render() {
             obj = { guildId };
-            return closure_2_9(left(right[50]), obj);
+            return closure_2_9(closure_2_1(stateFromStores[50]), obj);
           }
       };
       intl38 = intl42.intl;
@@ -633,7 +625,7 @@ export default function GuildSettingsModal() {
         title: intl39.string(intl42.t["KzCF/6"]),
         render(arg0) {
             obj = { guildId };
-            const tmp = left(right[51]);
+            const tmp = closure_2_1(stateFromStores[51]);
             const merged = Object.assign(arg0);
             return closure_2_9(tmp, obj);
           }
@@ -645,7 +637,7 @@ export default function GuildSettingsModal() {
         title: intl40.string(intl42.t.xHEzFh),
         render() {
             obj = { guildId };
-            return closure_2_9(left(right[52]), obj);
+            return closure_2_9(closure_2_1(stateFromStores[52]), obj);
           }
       };
       intl40 = intl42.intl;
@@ -655,7 +647,7 @@ export default function GuildSettingsModal() {
         title: intl41.string(intl42.t.OBskVU),
         render() {
             obj = {};
-            const tmp = left(right[53]);
+            const tmp = closure_2_1(stateFromStores[53]);
             const merged = Object.assign(obj);
             return closure_2_9(tmp, obj);
           }
@@ -665,31 +657,31 @@ export default function GuildSettingsModal() {
       tmp2 = obj3;
     }
     return tmp2;
-  }, items2);
-  const items3 = [stateFromStores, tmp3];
-  const effect = stateFromStores.useEffect(() => {
-    const tmp = null != closure_3 && null != stateFromStores;
+  }, items1);
+  const items2 = [stateFromStores, tmp2];
+  const effect = react.useEffect(() => {
+    const tmp = null != closure_1 && null != stateFromStores;
     if (!tmp) {
       const obj = GuildSettingsActionCreatorsDefault;
       obj.close();
     }
-  }, items3);
-  const first = _slicedToArray(stateFromStores.useState(() => GuildSettingsStore.getSavedRouteState()), 1)[0];
-  let tmp11Result = null;
-  const tmp4 = bottom;
-  if (null != memo1) {
-    let obj2 = { onWillFocus: tmp9, initialRouteName: LANDING, initialRouteState: tmp14, screens: memo1, viewStyle: memo };
+  }, items2);
+  const first = _slicedToArray(react.useState(() => GuildSettingsStore.getSavedRouteState()), 1)[0];
+  let tmp10Result = null;
+  const tmp3 = bottom;
+  if (null != memo) {
+    let obj2 = { onWillFocus: tmp8, initialRouteName: LANDING, initialRouteState: tmp13, screens: memo };
     LANDING = undefined;
-    const Navigator = tmp4(tmp[57]).Navigator;
-    const tmp11 = jsx;
+    const Navigator = tmp3(tmp[57]).Navigator;
+    const tmp10 = jsx;
     if (null == first) {
       LANDING = constants.LANDING;
     }
-    tmp14 = undefined;
+    tmp13 = undefined;
     if (null != first) {
-      tmp14 = first;
+      tmp13 = first;
     }
-    tmp11Result = tmp11(Navigator, obj2);
+    tmp10Result = tmp10(Navigator, obj2);
   }
-  return tmp11Result;
+  return tmp10Result;
 };

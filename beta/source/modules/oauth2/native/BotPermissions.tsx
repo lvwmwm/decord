@@ -1,21 +1,21 @@
-// Module ID: 14620
-// Function ID: 14621
+// Module ID: 14855
+// Function ID: 14856
 // Name: BotPermissions
-// Dependencies: [32, 19, 17, 21, 5014, 575, 4951, 1084, 9752, 14621, 6027, 7054, 5624, 1113, 2]
+// Dependencies: [32, 19, 17, 21, 5140, 575, 5077, 1084, 9842, 14856, 6159, 7120, 5751, 1113, 2]
 // Exports: default
 
-// Module 14620 (BotPermissions)
+// Module 14855 (BotPermissions)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1084 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import Stack_Stack from "Stack/Stack" /* 6027 */;
-import XSmallIcon from "XSmallIcon" /* 7054 */;
-import permissions from "permissions" /* 9752 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import Stack_Stack from "Stack/Stack" /* 6159 */;
+import XSmallIcon from "XSmallIcon" /* 7120 */;
+import permissions from "permissions" /* 9842 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -96,13 +96,13 @@ export default function BotPermissions(guild) {
     const obj2 = { direction: "horizontal", align: "center", children: items };
     const obj3 = { style: closure_4.disabledPermissionIcon, children: metroRequire(XSmallIcon.XSmallIcon, { size: "sm", color: "white" }) };
     const Stack = Stack_Stack.Stack;
-    items = [metroRequire(View, obj3), metroRequire(Text_Text.Text, { variant: "text-md/medium", children: permissionName })];
+    items = [metroRequire(View, obj3), metroRequire(Text_Text.Text, { variant: "body-md/medium", children: permissionName })];
     return metroImportDefault(Stack, obj2, String(item));
   });
   let Stack = permissions(onPermissionsChange[10]).Stack;
   let obj = { children: items1 };
   const Stack2 = permissions(onPermissionsChange[10]).Stack;
-  let obj2 = { variant: "text-sm/medium", color: "text-subtle", children: intl.format(permissions(onPermissionsChange[13]).t.sOaT2j, obj3) };
+  let obj2 = { variant: "body-sm/medium", color: "text-subtle", children: intl.format(permissions(onPermissionsChange[13]).t.sOaT2j, obj3) };
   const Text = permissions(onPermissionsChange[12]).Text;
   intl = permissions(onPermissionsChange[13]).intl;
   obj3 = { applicationName: application.name, guildName: guild.name };
@@ -112,7 +112,7 @@ export default function BotPermissions(guild) {
   if (mapped1.length > 0) {
     const obj4 = { children: items3 };
     const Stack3 = tmp4(tmp[10]).Stack;
-    const obj5 = { variant: "text-sm/medium", color: "text-subtle", children: intl2.format(permissions(onPermissionsChange[13]).t.fsOkF4, obj6) };
+    const obj5 = { variant: "body-sm/medium", color: "text-subtle", children: intl2.format(permissions(onPermissionsChange[13]).t.fsOkF4, obj6) };
     const Text2 = tmp4(tmp[12]).Text;
     intl2 = tmp4(tmp[13]).intl;
     obj6 = { applicationName: application.name };

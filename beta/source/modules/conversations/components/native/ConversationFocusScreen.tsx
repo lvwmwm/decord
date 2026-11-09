@@ -1,14 +1,14 @@
-// Module ID: 9889
-// Function ID: 9890
+// Module ID: 10011
+// Function ID: 10012
 // Name: ConversationFocusScreen
-// Dependencies: [19, 9850, 21, 1500, 504, 9890, 2]
+// Dependencies: [19, 9970, 21, 1502, 504, 10012, 2]
 // Exports: default
 
-// Module 9889 (ConversationFocusScreen)
+// Module 10011 (ConversationFocusScreen)
 import Fragment from "Fragment" /* 21 */;
-import ConversationFocusViewDefault from "ConversationFocusView" /* 9890 */;
+import ConversationFocusViewDefault from "ConversationFocusView" /* 10012 */;
 import react from "react" /* 19 */;
-import SelectedConversationStore from "SelectedConversationStore" /* 9850 */;
+import SelectedConversationStore from "SelectedConversationStore" /* 9970 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
@@ -21,7 +21,7 @@ export default function ConversationFocusScreen() {
   let isFullFetchPending;
   let messageId;
   let startMessageId;
-  let obj = channelId(1500);
+  let obj = channelId(1502);
   const params = obj.useRoute().params;
   channelId = params.channelId;
   ({ conversationId, messageId } = params);

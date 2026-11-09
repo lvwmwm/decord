@@ -1,17 +1,17 @@
-// Module ID: 12352
-// Function ID: 12353
+// Module ID: 12539
+// Function ID: 12540
 // Name: UserProfileApplicationWidgetBottomStatsLayout
-// Dependencies: [19, 17, 21, 5014, 575, 12261, 12347, 5624, 12348, 2]
+// Dependencies: [19, 17, 21, 5140, 575, 12448, 12534, 5751, 12535, 2]
 // Exports: default
 
-// Module 12352 (UserProfileApplicationWidgetBottomStatsLayout)
+// Module 12539 (UserProfileApplicationWidgetBottomStatsLayout)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import _mod12261 from "module_12261" /* 12261 */;
-import UserProfileApplicationWidgetFieldUtils from "UserProfileApplicationWidgetFieldUtils" /* 12347 */;
+import _mod12448 from "module_12448" /* 12448 */;
+import UserProfileApplicationWidgetFieldUtils from "UserProfileApplicationWidgetFieldUtils" /* 12534 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -35,8 +35,8 @@ export default function UserProfileApplicationWidgetBottomStatsLayout(arg0) {
   const stat = tmp;
   let items = [1, 2, 3, 4, 5, 6];
   const mapped = items.map((item) => {
-    const resolveStatComponentValues = _mod12261.resolveStatComponentValues;
-    _mod12261;
+    const resolveStatComponentValues = _mod12448.resolveStatComponentValues;
+    _mod12448;
     return resolveStatComponentValues(require.components["stat_" + item], dependencyMap, View, UserProfileApplicationWidgetFieldUtils.formatDurationNarrow, true);
   });
   let obj = {
@@ -47,17 +47,17 @@ export default function UserProfileApplicationWidgetBottomStatsLayout(arg0) {
       if (tmp) {
         let tmp5Result;
         const obj = { style: stat.stat, children: items };
-        const obj2 = { field: value.value, variant: "text-sm/medium", color: "text-default", skeletonWidthChars: 8 };
+        const obj2 = { field: value.value, variant: "body-sm/medium", color: "text-default", skeletonWidthChars: 8 };
         items = [_false(UserProfileApplicationWidgetFieldUtils.FieldText, obj2), ];
         const tmp2 = React3;
         const tmp3 = View;
         if ("value" === value.label.status) {
-          const obj3 = { variant: "text-xs/normal", color: "text-muted", children: value.label.text };
-          tmp5Result = tmp5(tmp6(5624).Text, obj3);
+          const obj3 = { variant: "body-xs/normal", color: "text-muted", children: value.label.text };
+          tmp5Result = tmp5(tmp6(5751).Text, obj3);
         } else {
           tmp5Result = null;
           if ("skeleton" === value.label.status) {
-            tmp5Result = tmp5(tmp6(12348).TextSkeleton, { variant: "text-xs/normal", widthChars: 6 });
+            tmp5Result = tmp5(tmp6(12535).TextSkeleton, { variant: "body-xs/normal", widthChars: 6 });
           }
         }
         items[1] = tmp5Result;

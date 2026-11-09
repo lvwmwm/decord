@@ -1,16 +1,16 @@
-// Module ID: 17244
-// Function ID: 17245
+// Module ID: 17570
+// Function ID: 17571
 // Name: SidechainCompressionSetting
-// Dependencies: [2006, 8432, 5768, 504, 11540, 1113, 5915, 2]
+// Dependencies: [2130, 8503, 5897, 504, 11685, 1113, 6047, 2]
 
-// Module 17244 (SidechainCompressionSetting)
+// Module 17570 (SidechainCompressionSetting)
 import get_initialized from "get initialized" /* 504 */;
 import intl2 from "intl" /* 1113 */;
-import Constants from "Constants" /* 5768 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 5915 */;
-import SettingsConstants from "SettingsConstants" /* 8432 */;
-import MediaEngineStore from "MediaEngineStore" /* 2006 */;
-import SettingBuilders from "SettingBuilders" /* 11540 */;
+import Constants from "Constants" /* 5897 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 6047 */;
+import SettingsConstants from "SettingsConstants" /* 8503 */;
+import MediaEngineStore from "MediaEngineStore" /* 2130 */;
+import SettingBuilders from "SettingBuilders" /* 11685 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

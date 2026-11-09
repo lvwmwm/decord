@@ -1,59 +1,58 @@
-// Module ID: 7163
-// Function ID: 7164
+// Module ID: 7225
+// Function ID: 7226
 // Name: UserSettingsConfirmPassword
-// Dependencies: [5, 32, 19, 17, 1383, 1072, 21, 5014, 575, 7164, 504, 7165, 6446, 1242, 1113, 7167, 5624, 7081, 7107, 5634, 2]
+// Dependencies: [5, 32, 19, 17, 1385, 1072, 21, 5140, 575, 7226, 504, 7227, 6579, 1242, 1113, 7229, 5751, 7148, 7178, 5758, 2]
 // Exports: UserSettingsConfirmPasswordWrapped
 
-// Module 7163 (UserSettingsConfirmPassword)
+// Module 7225 (UserSettingsConfirmPassword)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import FreeFormInputGroupDefault from "FreeFormInputGroup" /* 7081 */;
-import useSettingNavigationRoute from "useSettingNavigationRoute" /* 7164 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 7165 */;
-import UserSettingsAccountUnverifiedHeaderDefault from "UserSettingsAccountUnverifiedHeader" /* 7167 */;
+import FreeFormErrorLabelDefault from "FreeFormErrorLabel" /* 7178 */;
+import useSettingNavigationRoute from "useSettingNavigationRoute" /* 7226 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 7227 */;
+import UserSettingsAccountUnverifiedHeaderDefault from "UserSettingsAccountUnverifiedHeader" /* 7229 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import _slicedToArray from "_slicedToArray" /* 32 */;
-import react_mod from "react" /* 19 */;
+import _slicedToArray_mod from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserStore from "UserStore" /* 1383 */;
+import UserStore from "UserStore" /* 1385 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let c4, closure_2;
+let c5, closure_2;
 
 let c10;
 let metroImportDefault;
 let metroRequire;
 let obj2;
 let obj3;
-let obj4;
 let tmp3;
 let unpackModuleId;
 const intl5 = tmp3(1113);
-const Text_Text = tmp3(5624);
-const components_Button_Button = tmp3(5634);
-let react = react_mod;
+const Text_Text = tmp3(5751);
+const components_Button_Button = tmp3(5758);
+const TextInput_TextInput = tmp3(7148);
+let _slicedToArray = _slicedToArray_mod;
 ({ View: metroRequire, ScrollView: metroImportDefault } = react_native);
 const UserSettingsSections = Constants.UserSettingsSections;
 ({ jsx: c10, jsxs: unpackModuleId } = Fragment);
 let createStyles = createStyles_mod;
-let obj = { background: obj2, container: { paddingVertical: 12, paddingHorizontal: 16 }, title: { textAlign: "center" }, prompt: { marginTop: 8, lineHeight: 18, textAlign: "center" }, input: { marginTop: 24 }, redesignInput: obj3, button: { marginTop: 16 }, hint: obj4 };
+let obj = { background: obj2, container: { paddingVertical: 12, paddingHorizontal: 16 }, title: { textAlign: "center" }, prompt: { marginTop: 8, lineHeight: 18, textAlign: "center" }, input: { marginTop: 24 }, button: { marginTop: 16 }, hint: obj3 };
 obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 createStyles = createStyles.createStyles;
-obj3 = { borderRadius: nativeDefault.radii.lg };
-obj4 = { color: nativeDefault.unsafe_rawColors.RED_400 };
+obj3 = { color: nativeDefault.unsafe_rawColors.RED_400 };
 const authStore2 = createStyles(obj);
 class UserSettingsConfirmPasswordInner {
   constructor(ref) {
     let Button;
     let _undefined;
-    let c3;
-    let c5;
-    let currentUser;
+    let c4;
+    let c6;
     let fieldMessage;
+    let handleSubmit;
     let hideUnverifiedBanner;
     let intl;
     let intl2;
@@ -62,11 +61,14 @@ class UserSettingsConfirmPasswordInner {
     let items1;
     let items2;
     let items3;
-    let obj18;
+    let obj10;
     let obj2;
     let parentLoading;
     let style;
+    let tmp10;
+    let tmp21;
     let tmp7;
+    let value;
     ({ onSubmit: require, onSuccess: importDefault, onError: dependencyMap, parentLoading } = ref);
     if (parentLoading === undefined) {
       parentLoading = false;
@@ -75,10 +77,11 @@ class UserSettingsConfirmPasswordInner {
     if (hideUnverifiedBanner === undefined) {
       hideUnverifiedBanner = false;
     }
-    c3 = undefined;
-    let value;
-    react = undefined;
+    _slicedToArray = undefined;
+    value = undefined;
+    c6 = undefined;
     let obj = function _handleSubmit() {
+      let ref;
       obj = _asyncToGenerator(async function(arg0, value) {
         let closure_1;
         if (c5 === 2) {
@@ -91,7 +94,7 @@ class UserSettingsConfirmPasswordInner {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           let c3;
@@ -108,16 +111,23 @@ class UserSettingsConfirmPasswordInner {
                 return obj3;
               } else {
                 closure_0 = undefined;
-                _undefined(true);
-                c3 = 2;
-                c4 = 3;
-                c5 = 1;
-                const obj5 = { value: require(_slicedToArray), done: false };
-                return obj5;
+                if (!ref.current) {
+                  const tmp69 = parentLoading;
+                  if (!tmp69) {
+                    ref.current = true;
+                    _undefined(true);
+                    c3 = 2;
+                    c4 = 3;
+                    c5 = 1;
+                    const obj5 = { value: require(react), done: false };
+                    return obj5;
+                  }
+                }
               }
             } else if (1 === c4) {
               c3 = 0;
-              closure_129_3(false);
+              closure_129_7.current = false;
+              closure_129_4(false);
               throw closure_2;
             } else {
               if (2 === c4) {
@@ -131,7 +141,7 @@ class UserSettingsConfirmPasswordInner {
                   const self3 = this;
                   const self4 = this;
                   const v6OrEarlierAPIError = new closure_0(closure_2[12]).V6OrEarlierAPIError(tmp);
-                  closure_129_5(v6OrEarlierAPIError);
+                  closure_129_6(v6OrEarlierAPIError);
                 }
                 if (closure_129_2 != null) {
                   closure_129_2();
@@ -141,7 +151,8 @@ class UserSettingsConfirmPasswordInner {
                 throw value;
               } else if (arg0 === 2) {
                 c3 = 0;
-                closure_129_3(false);
+                closure_129_7.current = false;
+                closure_129_4(false);
                 c5 = 3;
                 const obj6 = { value, done: true };
                 return obj6;
@@ -152,7 +163,8 @@ class UserSettingsConfirmPasswordInner {
                     closure_129_2();
                   }
                   c3 = 0;
-                  closure_129_3(false);
+                  closure_129_7.current = false;
+                  closure_129_4(false);
                   c5 = 3;
                   const obj7 = { value: undefined, done: true };
                   return obj7;
@@ -162,12 +174,13 @@ class UserSettingsConfirmPasswordInner {
                       const self = this;
                       const self2 = this;
                       const v6OrEarlierAPIError1 = new closure_0(closure_2[12]).V6OrEarlierAPIError(closure_0);
-                      closure_129_5(v6OrEarlierAPIError1);
+                      closure_129_6(v6OrEarlierAPIError1);
                       if (closure_129_2 != null) {
                         closure_129_2();
                       }
                       c3 = 0;
-                      closure_129_3(false);
+                      closure_129_7.current = false;
+                      closure_129_4(false);
                       c5 = 3;
                       obj = { value: undefined, done: true };
                       return obj;
@@ -178,16 +191,17 @@ class UserSettingsConfirmPasswordInner {
                 }
               }
               c3 = 0;
-              closure_129_3(false);
-              c5 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              closure_129_7.current = false;
+              closure_129_4(false);
             }
-          } catch (tmp67) {
-            closure_2 = tmp67;
+            c5 = 3;
+            return { value: "HermesInternal", done: null };
+          } catch (tmp75) {
+            closure_2 = tmp75;
             if (0 === c3) {
               c5 = 3;
-              throw tmp67;
-            } else if (1 === tmp69) {
+              throw tmp75;
+            } else if (1 === tmp77) {
               c4 = 1;
             } else {
               c4 = 2;
@@ -199,20 +213,19 @@ class UserSettingsConfirmPasswordInner {
     };
     ref = ref.ref;
     let tmp = closure_12();
-    const imperativeHandle = react.useImperativeHandle(ref, () => ({}));
+    const imperativeHandle = value.useImperativeHandle(ref, () => ({}));
     const tmp3 = require;
     const tmp4 = dependencyMap;
     obj = get_initialized;
-    const items = [UserStore];
-    const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
-    [tmp7, c3] = value(react.useState(false), 2);
-    const tmp6 = value(react.useState(false), 2);
-    const tmp8 = value(react.useState(""), 2);
-    value = tmp8[0];
-    const tmp10 = tmp8[1];
-    [obj2, c5] = value(react.useState(null), 2);
-    const tmp11 = value(react.useState(null), 2);
-    const effect = react.useEffect(() => {
+    const items = [obj];
+    const stateFromStores = obj.useStateFromStores(items, () => obj.getCurrentUser());
+    [tmp7, c4] = _slicedToArray(value.useState(false), 2);
+    const tmp6 = _slicedToArray(value.useState(false), 2);
+    [value, tmp10] = value.useState("");
+    [obj2, c6] = _slicedToArray(value.useState(null), 2);
+    const tmp11 = _slicedToArray(value.useState(null), 2);
+    let closure_7 = value.useRef(false);
+    const effect = value.useEffect(() => {
       obj = UserSettingsUtils;
       const obj2 = { destinationPane: constants.ACCOUNT_CONFIRM_PASSWORD };
       const result = obj.trackUserSettingsPaneViewed(obj2);
@@ -226,44 +239,43 @@ class UserSettingsConfirmPasswordInner {
       if (!hideUnverifiedBanner) {
         tmp16 = closure_10(UserSettingsAccountUnverifiedHeaderDefault, {});
       }
-      function handleSubmit() {
-        return obj(...arguments);
-      }
       items2 = [tmp16, ];
       let obj4 = { style: tmp.container, children: items3 };
-      let obj5 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl.string(intl5.t["x+d9t3"]) };
+      let obj5 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: intl.string(intl5.t["x+d9t3"]) };
       const Text = Text_Text.Text;
       intl = intl5.intl;
       items3 = [closure_10(Text, obj5), , , , ];
-      let obj6 = { style: tmp.prompt, variant: "text-sm/medium", color: "text-default", children: intl2.string(intl5.t.vaZmAx) };
+      let obj6 = { style: tmp.prompt, variant: "body-sm/medium", color: "text-default", children: intl2.string(intl5.t.vaZmAx) };
       const Text2 = Text_Text.Text;
       intl2 = intl5.intl;
       items3[1] = closure_10(Text2, obj6);
-      ({ input: obj7.style, redesignInput: obj7.textStyle } = tmp);
-      const obj8 = { style: null, textStyle: null, label: intl3.string(intl5.t["CIGa+7"]), textContentType: "password", keyboardType: "default", secureTextEntry: true, value, onChangeText: tmp10, onSubmitEditing: handleSubmit, error: fieldMessage, returnKeyType: "done", autoCapitalize: "none", autoFocus: true };
-      const tmp22 = FreeFormInputGroupDefault;
+      let obj7 = { containerStyle: tmp.input, label: intl3.string(intl5.t["CIGa+7"]), textContentType: "password", autoComplete: "current-password", secureTextEntry: true, revealable: true, disabled: tmp21, value, onChange: tmp10, onSubmitEditing: handleSubmit, errorMessage: fieldMessage, returnKeyType: "done", autoCapitalize: "none", autoFocus: true };
+      const TextInput = TextInput_TextInput.TextInput;
       intl3 = intl5.intl;
+      handleSubmit = function handleSubmit() {
+        return obj(...arguments);
+      };
       fieldMessage = undefined;
-      const tmp21 = importDefault;
+      tmp21 = tmp7 || parentLoading;
       if (obj2 != null) {
         fieldMessage = obj2.getFieldMessage("password");
       }
-      items3[2] = closure_10(tmp22, obj8);
+      items3[2] = closure_10(TextInput, obj7);
       let tmp20Result = null;
       if (null != obj2) {
         tmp20Result = null;
         if (null == obj2.getFieldMessage("password")) {
-          const obj9 = { style: tmp.hint, children: obj2.message };
-          tmp20Result = tmp20(tmp21(7107), obj9);
+          const obj8 = { style: tmp.hint, children: obj2.message };
+          tmp20Result = tmp20(FreeFormErrorLabelDefault, obj8);
         }
       }
       items3[3] = tmp20Result;
-      const obj10 = { style: tmp.button, children: closure_10(Button, obj18) };
-      obj18 = { variant: "primary", size: "lg", text: intl4.string(intl5.t.i4jeWR), onPress: handleSubmit, loading: tmp7 };
+      const obj9 = { style: tmp.button, children: closure_10(Button, obj10) };
+      obj10 = { variant: "primary", size: "lg", text: intl4.string(intl5.t.i4jeWR), onPress: handleSubmit, loading: tmp7 };
       Button = components_Button_Button.Button;
       intl4 = intl5.intl;
-      items3[4] = closure_10(obj, obj10);
-      items2[1] = closure_11(obj, obj4);
+      items3[4] = closure_10(c6, obj9);
+      items2[1] = closure_11(c6, obj4);
       tmp14Result = tmp14(tmp15, obj3);
     }
     return tmp14Result;

@@ -1,24 +1,24 @@
-// Module ID: 15674
-// Function ID: 15675
+// Module ID: 15988
+// Function ID: 15989
 // Name: AddFriendById
-// Dependencies: [32, 19, 17, 1072, 21, 5014, 575, 1113, 5624, 7089, 7493, 7488, 5711, 1252, 5023, 7253, 5634, 2]
+// Dependencies: [32, 19, 17, 1072, 21, 5140, 575, 1113, 5751, 7155, 7557, 7552, 5836, 1252, 5149, 7316, 5758, 2]
 // Exports: default
 
-// Module 15674 (AddFriendById)
+// Module 15988 (AddFriendById)
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5023 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import ToastUtils from "ToastUtils" /* 5711 */;
-import TextField2 from "TextField" /* 7089 */;
-import FriendsUtils from "FriendsUtils" /* 7493 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5149 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import ToastUtils from "ToastUtils" /* 5836 */;
+import TextField2 from "TextField" /* 7155 */;
+import FriendsUtils from "FriendsUtils" /* 7557 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -42,7 +42,7 @@ let unpackModuleId;
 function ErrorMessage(errorMessage) {
   let items;
   errorMessage = errorMessage.errorMessage;
-  const obj = { variant: "text-xs/medium", color: "text-feedback-critical", style: items, children: errorMessage };
+  const obj = { variant: "body-xs/medium", color: "text-feedback-critical", style: items, children: errorMessage };
   items = [, ];
   ({ inputAccessoryText: arr[0], errorStateText: arr[1] } = closure_12());
   closure_12();
@@ -101,7 +101,7 @@ function AddFriendByIdInput(arg0) {
       message = validationState.message;
     }
   }
-  const obj2 = { style: items, variant: "text-sm/semibold", color: "text-muted", children: headerText };
+  const obj2 = { style: items, variant: "body-sm/semibold", color: "text-muted", children: headerText };
   items = [, , ];
   const obj = { style: tmp3.textInputContainer, children: items1 };
   ({ redesignInputAccessoryText: arr[0], inputHeaderText: arr[1] } = tmp3);
@@ -369,16 +369,16 @@ export default function _default(arg0) {
   const length = str.trim().length;
   items5[0] = closure_9(AddFriendByIdInput, obj3);
   let obj4 = { style: tmp.friendMessageContainer, children: null };
-  let obj5 = { style: items6, variant: "text-sm/semibold", color: "text-muted", children: intl.string(sourcePage(1113).t.Yi6Mpu) };
+  let obj5 = { style: items6, variant: "body-sm/semibold", color: "text-muted", children: intl.string(sourcePage(1113).t.Yi6Mpu) };
   items6 = [, , ];
   ({ messageLabel: arr7[0], inputHeaderText: arr7[1] } = tmp);
   items6[2] = headerTextStyle;
-  const Text = sourcePage(5624).Text;
+  const Text = sourcePage(5751).Text;
   intl = sourcePage(1113).intl;
   const items7 = [closure_9(Text, obj5), , ];
   const obj6 = { returnKeyType: "done", submitBehavior: "submit", value: first2, maxLength: 120, onSubmitEditing: handleSubmitEditing, onChange: callback1, status: str2 };
   str2 = undefined;
-  const TextArea = sourcePage(7253).TextArea;
+  const TextArea = sourcePage(7316).TextArea;
   const tmp19 = constants3;
   if (first1.field === constants3.MESSAGE) {
     if (first1.status === tmp4.ERROR) {
@@ -401,13 +401,13 @@ export default function _default(arg0) {
     const obj9 = { style: tmp.redesignGrow };
     items8[1] = tmp16(tmp15, obj9);
     const obj10 = { size: "lg", text: intl3.string(sourcePage(1113).t["PMsq/b"]), disabled: length <= 0, onPress: handleSubmitEditing, loading: first1.status === tmp4.LOADING, grow: false };
-    const Button = tmp17(5634).Button;
+    const Button = tmp17(5758).Button;
     intl3 = tmp17(1113).intl;
     items8[2] = tmp16(Button, obj10);
     return tmp13(tmp14, obj8);
   }
-  const obj11 = { style: tmp.messageFooterText, variant: "text-xs/medium", color: "text-muted", children: intl2.string(sourcePage(1113).t.UtfQNw) };
-  const Text2 = tmp17(5624).Text;
+  const obj11 = { style: tmp.messageFooterText, variant: "body-xs/medium", color: "text-muted", children: intl2.string(sourcePage(1113).t.UtfQNw) };
+  const Text2 = tmp17(5751).Text;
   intl2 = tmp17(1113).intl;
   tmp16Result = tmp16(Text2, obj11);
 };

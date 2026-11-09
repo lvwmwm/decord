@@ -1,27 +1,27 @@
-// Module ID: 12433
-// Function ID: 12434
+// Module ID: 12636
+// Function ID: 12637
 // Name: SearchLocalAndGlobalContentView
-// Dependencies: [32, 19, 17, 9762, 12395, 1496, 21, 5014, 575, 12379, 12384, 12434, 11502, 1113, 6975, 9761, 12382, 1625, 7217, 8961, 12394, 5683, 7700, 12437, 12438, 5023, 12419, 12410, 12431, 5624, 12439, 8992, 12440, 2]
+// Dependencies: [32, 19, 17, 9852, 12598, 1498, 21, 5140, 575, 12582, 12587, 12637, 11647, 1113, 7038, 9851, 12585, 1627, 7281, 9040, 12597, 5807, 7776, 12640, 12641, 5149, 12622, 12613, 12634, 5751, 12642, 9072, 12643, 2]
 // Exports: SearchLocalAndGlobalContentView
 
-// Module 12433 (SearchLocalAndGlobalContentView)
+// Module 12636 (SearchLocalAndGlobalContentView)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5023 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5683 */;
-import TableRow2 from "TableRow" /* 6975 */;
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7700 */;
-import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9762 */;
-import AppLauncherTypes from "AppLauncherTypes" /* 11502 */;
-import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 12379 */;
-import react2 from "react" /* 12382 */;
-import ApplicationDirectorySearchStore from "ApplicationDirectorySearchStore" /* 12395 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5149 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5807 */;
+import TableRow2 from "TableRow" /* 7038 */;
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7776 */;
+import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9852 */;
+import AppLauncherTypes from "AppLauncherTypes" /* 11647 */;
+import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 12582 */;
+import react2 from "react" /* 12585 */;
+import ApplicationDirectorySearchStore from "ApplicationDirectorySearchStore" /* 12598 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1496 */;
+import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1498 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 let nativeEvent, navigation, set;
@@ -69,15 +69,15 @@ function CommandRow(arg0) {
   let onPressSend;
   let tmp = hasOptions;
   ({ context, onPress, isFirstRow, isLastRow, beforeExecuteCommand, onExecuteCommand } = arg0);
-  obj = hasOptions(12379);
+  obj = hasOptions(12582);
   const appLauncherIconSource = obj.getAppLauncherIconSource(application);
   let tmp4 = null != appLauncherIconSource;
   if (tmp4) {
     const obj2 = { iconSource: appLauncherIconSource };
-    tmp4 = closure_10(onPressSend(12384), obj2);
+    tmp4 = closure_10(onPressSend(12587), obj2);
   }
-  const tmpResult = tmp(12434);
-  const obj3 = { command, context, beforeExecuteCommand, onExecuteCommand, sectionName: tmp(11502).AppLauncherSectionName.SEARCH };
+  const tmpResult = tmp(12637);
+  const obj3 = { command, context, beforeExecuteCommand, onExecuteCommand, sectionName: tmp(11647).AppLauncherSectionName.SEARCH };
   const commandRowSend = tmpResult.useCommandRowSend(obj3);
   hasOptions = commandRowSend.hasOptions;
   onPressSend = commandRowSend.onPressSend;
@@ -100,9 +100,9 @@ function CommandRow(arg0) {
       onPressSend();
     }
   }, items1);
-  const obj4 = { icon: tmp4, label: command.displayName, subLabel: tmpResult2.getSectionName(application), subLabelLineClamp: 1, start: isFirstRow, end: isLastRow, onPress, accessibilityActions: memo, onAccessibilityAction: callback, trailing: closure_10(onPressSend(12434), { hasOptions, sending, onPressSend }) };
-  const TableRow = tmp(6975).TableRow;
-  tmpResult2 = tmp(9761);
+  const obj4 = { icon: tmp4, label: command.displayName, subLabel: tmpResult2.getSectionName(application), subLabelLineClamp: 1, start: isFirstRow, end: isLastRow, onPress, accessibilityActions: memo, onAccessibilityAction: callback, trailing: closure_10(onPressSend(12637), { hasOptions, sending, onPressSend }) };
+  const TableRow = tmp(7038).TableRow;
+  tmpResult2 = tmp(9851);
   return closure_10(TableRow, obj4);
 }
 function PlaceholderCommandRow(isFirstRow) {
@@ -449,7 +449,7 @@ export function SearchLocalAndGlobalContentView(context) {
   const tmp2Result = onScroll(tmp3[28]);
   if (0 !== memo.length) {
     let obj3 = { style: tmp.commandsHeaderContainer, children: items11 };
-    let obj4 = { accessibilityRole: "header", variant: "text-md/medium", color: "text-default", style: tmp.sectionHeader, children: intl4.string(tmp10(tmp3[13]).t["0hKkS+"]) };
+    let obj4 = { accessibilityRole: "header", variant: "body-md/medium", color: "text-default", style: tmp.sectionHeader, children: intl4.string(tmp10(tmp3[13]).t["0hKkS+"]) };
     const Text3 = tmp10(tmp3[29]).Text;
     intl4 = tmp10(tmp3[13]).intl;
     items11 = [applicationResults(Text3, obj4), ];
@@ -476,7 +476,7 @@ export function SearchLocalAndGlobalContentView(context) {
       } else {
         string2Result = string2(t2.xal319);
       }
-      obj6 = { color: "text-brand", variant: "text-md/semibold", children: string2Result };
+      obj6 = { color: "text-brand", variant: "body-md/semibold", children: string2Result };
       tmp33Result = tmp33(AnimatedPressableHighlight, obj5);
     }
     const obj7 = { children: items12 };
@@ -498,7 +498,7 @@ export function SearchLocalAndGlobalContentView(context) {
   items13[1] = tmp33Result4;
   let tmp33Result5 = null;
   if (0 !== memo1.length) {
-    const obj10 = { accessibilityRole: "header", variant: "text-md/medium", color: "text-default", style: tmp.sectionHeader, children: intl3.string(context(tmp3[13]).t.PHjkRE) };
+    const obj10 = { accessibilityRole: "header", variant: "body-md/medium", color: "text-default", style: tmp.sectionHeader, children: intl3.string(context(tmp3[13]).t.PHjkRE) };
     const Text2 = tmp10(tmp3[29]).Text;
     intl3 = tmp10(tmp3[13]).intl;
     tmp33Result5 = tmp33(Text2, obj10);

@@ -1,20 +1,20 @@
-// Module ID: 12776
-// Function ID: 12777
+// Module ID: 12977
+// Function ID: 12978
 // Name: ConjureIdeaCards
-// Dependencies: [19, 17, 21, 5014, 12634, 5624, 1113, 3868, 6977, 6027, 2]
+// Dependencies: [19, 17, 21, 5140, 12836, 5751, 1113, 4026, 7040, 6159, 2]
 // Exports: default
 
-// Module 12776 (ConjureIdeaCards)
+// Module 12977 (ConjureIdeaCards)
 import react_native from "react-native" /* 17 */;
 import intl2 from "intl" /* 1113 */;
-import _modDef3868 from "module_3868" /* 3868 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import Stack_Stack from "Stack/Stack" /* 6027 */;
-import Card_Card from "Card/Card" /* 6977 */;
-import conjureNativeChatLayout from "conjureNativeChatLayout" /* 12634 */;
+import _modDef4026 from "module_4026" /* 4026 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import Stack_Stack from "Stack/Stack" /* 6159 */;
+import Card_Card from "Card/Card" /* 7040 */;
+import conjureNativeChatLayout from "conjureNativeChatLayout" /* 12836 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -33,7 +33,7 @@ export default function ConjureIdeaCards(arg0) {
   let items;
   ({ ideas, onPick: require } = arg0);
   let obj = { style: closure_6().ideaCards, children: items };
-  let obj2 = { variant: "text-sm/semibold", color: "text-muted", children: intl.string(_modDef3868["wx/o8Y"]) };
+  let obj2 = { variant: "body-sm/semibold", color: "text-muted", children: intl.string(_modDef4026["wx/o8Y"]) };
   const Text = Text_Text.Text;
   intl = intl2.intl;
   items = [
@@ -56,7 +56,7 @@ export default function ConjureIdeaCards(arg0) {
           return tmpResult;
         },
         disabled: null == require,
-        accessibilityLabel: intl.formatToPlainString(_modDef3868.H8G39M, obj2),
+        accessibilityLabel: intl.formatToPlainString(_modDef4026.H8G39M, obj2),
         children: tmp5(Stack, { direction: "vertical", spacing: 4, children: items })
       };
       const Card = Card_Card.Card;
@@ -64,13 +64,13 @@ export default function ConjureIdeaCards(arg0) {
       obj2 = { title: title.title };
       Stack = Stack_Stack.Stack;
       items = [, ];
-      const obj3 = { variant: "text-md/semibold", color: "text-default", children: title.title };
+      const obj3 = { variant: "body-md/semibold", color: "text-default", children: title.title };
       items[0] = closure_1_4(Text_Text.Text, obj3);
       const tmp2 = require;
       const tmp3 = dependencyMap;
       tmp5 = closure_1_5;
       if ("" !== title.value) {
-        const obj4 = { variant: "text-sm/normal", color: "text-muted", children: title.value };
+        const obj4 = { variant: "body-sm/normal", color: "text-muted", children: title.value };
         tmpResult = tmp(tmp2(tmp3[5]).Text, obj4);
       }
       items[1] = tmpResult;

@@ -1,22 +1,22 @@
-// Module ID: 18725
-// Function ID: 18726
+// Module ID: 19088
+// Function ID: 19089
 // Name: renderChannelContent
-// Dependencies: [19, 17, 11046, 6776, 21, 5014, 1375, 18722, 7275, 18726, 5624, 8667, 8026, 18171, 2]
+// Dependencies: [19, 17, 5882, 6831, 21, 5140, 1377, 19085, 7338, 19089, 5751, 8738, 8096, 18513, 2]
 // Exports: default
 
-// Module 18725 (renderChannelContent)
+// Module 19088 (renderChannelContent)
 import react_native from "react-native" /* 17 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import ReadStateConstants from "ReadStateConstants" /* 6776 */;
-import WarningIcon from "WarningIcon" /* 8026 */;
-import LockIcon from "LockIcon" /* 8667 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11046 */;
-import getLayoutStylesDefault from "getLayoutStyles" /* 18722 */;
-import ChannelTitleDefault from "ChannelTitle" /* 18726 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 5882 */;
+import ReadStateConstants from "ReadStateConstants" /* 6831 */;
+import WarningIcon from "WarningIcon" /* 8096 */;
+import LockIcon from "LockIcon" /* 8738 */;
+import getLayoutStylesDefault from "getLayoutStyles" /* 19085 */;
+import ChannelTitleDefault from "ChannelTitle" /* 19089 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
-import PlatformUtils_mod from "PlatformUtils" /* 1375 */;
+import createStyles_mod from "createStyles" /* 5140 */;
+import PlatformUtils_mod from "PlatformUtils" /* 1377 */;
 import size from "module_2" /* 2 */;
 
 let metroImportAll;
@@ -53,7 +53,7 @@ function ChannelContent(arg0) {
   const tmp4 = getLayoutStylesDefault();
   if (tmp9Result5) {
     if (!locked) {
-      locked = tmp2(7275)(channel);
+      locked = tmp2(7338)(channel);
     }
     tmp9Result5 = locked;
   }
@@ -86,7 +86,7 @@ function ChannelContent(arg0) {
   items1 = [metroImportDefault(tmp2Result, obj6), , ];
   let tmp9Result = null;
   if (null != channelCategoryName) {
-    const obj7 = { variant: "text-xs/bold", color: "text-muted", style: { marginRight: 4 }, children: channelCategoryName };
+    const obj7 = { variant: "body-xs/semibold", color: "text-muted", style: { marginRight: 4 }, children: channelCategoryName };
     tmp9Result = tmp9(Text_Text.Text, obj7);
   }
   items1[1] = tmp9Result;
@@ -115,7 +115,7 @@ function ChannelContent(arg0) {
     items3[1] = isNSFWResult;
     if (isSubscriptionGated) {
       const obj12 = { locked: needSubscriptionToAccess, isInMainTabsExperiment: true };
-      isSubscriptionGated = tmp9(tmp2(18171), obj12);
+      isSubscriptionGated = tmp9(tmp2(18513), obj12);
     }
     items3[2] = isSubscriptionGated;
     tmp11Result = tmp11(tmp10, obj8);
@@ -148,7 +148,7 @@ function ChannelContent(arg0) {
     if (!muted) {
       num6 = SUBTITLE_OPACITY_NORMAL;
     }
-    const obj17 = { variant: "text-xs/medium", color: "text-muted", style: obj18, maxFontSizeMultiplier: 1.75, children: lastMessageTimestampString };
+    const obj17 = { variant: "body-xs/medium", color: "text-muted", style: obj18, maxFontSizeMultiplier: 1.75, children: lastMessageTimestampString };
     obj18 = { marginLeft: "auto", opacity: num6 };
     tmp9Result7 = tmp9(Text, obj17);
   }

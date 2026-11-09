@@ -1,21 +1,21 @@
-// Module ID: 14894
-// Function ID: 14895
+// Module ID: 15129
+// Function ID: 15130
 // Name: VoicePanelStreamPreview
-// Dependencies: [19, 17, 6714, 502, 21, 5095, 5634, 5014, 575, 12042, 504, 6717, 5254, 7241, 5717, 5624, 1113, 2]
+// Dependencies: [19, 17, 6769, 502, 21, 1652, 5758, 5140, 575, 12208, 504, 6772, 5370, 5842, 5751, 1113, 2]
 // Exports: VoicePanelStreamPreview
 
-// Module 14894 (VoicePanelStreamPreview)
+// Module 15129 (VoicePanelStreamPreview)
 import nativeDefault from "native" /* 575 */;
-import timing from "timing" /* 5254 */;
-import components_Button_Button from "components/Button/Button" /* 5634 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 6717 */;
+import components_Button_Button from "components/Button/Button" /* 5758 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 6772 */;
+import useFetchStreamPreviewDefault from "useFetchStreamPreview" /* 12208 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6714 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6769 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Fragment from "Fragment" /* 21 */;
-import ReanimatedRexport_mod from "ReanimatedRexport" /* 5095 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import module_1652_mod from "module_1652" /* 1652 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 let Pressable;
@@ -26,13 +26,15 @@ let metroImportDefault;
 let obj2;
 let obj3;
 let size;
+let tmp2;
+const FastImageDefault = tmp2(5842);
 ({ StyleSheet: c3, View: closure_4, Pressable } = react_native);
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
-let ReanimatedRexport = ReanimatedRexport_mod;
-let closure_9 = ReanimatedRexport.createAnimatedComponent(Pressable);
-ReanimatedRexport = ReanimatedRexport_mod;
-let closure_10 = ReanimatedRexport.createAnimatedComponent(components_Button_Button.Button);
-const OPACITY_TIMING = { duration: 200 };
+let module_1652 = module_1652_mod;
+let closure_9 = module_1652.createAnimatedComponent(Pressable);
+module_1652 = module_1652_mod;
+let closure_10 = module_1652.createAnimatedComponent(components_Button_Button.Button);
+let closure_11 = { duration: 200 };
 let createStyles = createStyles_mod;
 let obj = { roundedCard: size, streamPreviewImage: { position: "absolute", width: "100%", height: "100%", opacity: 0.5 }, ownStreamTextContainer: obj2, ownStreamText: obj3 };
 size = { position: "absolute", alignItems: "center", justifyContent: "center", width: "100%", height: "100%", backgroundColor: nativeDefault.colors.VOICE_VIDEO_VIDEO_TILE_BACKGROUND };
@@ -40,32 +42,36 @@ createStyles = createStyles.createStyles;
 obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_SCRIM, borderRadius: nativeDefault.radii.sm, marginHorizontal: nativeDefault.space.PX_16 };
 obj3 = { textAlign: "center", paddingHorizontal: nativeDefault.space.PX_16, paddingVertical: nativeDefault.space.PX_16 };
 let closure_12 = createStyles(obj);
-const __initData = { code: "function VoicePanelStreamPreviewTsx1(){const{mode,withTiming,OPACITY_TIMING}=this.__closure;if(mode==null){return{opacity:1};}return{opacity:withTiming(mode.get()==='pip'?0:1,OPACITY_TIMING)};}" };
+let closure_13 = { code: "(function VoicePanelStreamPreviewTsx1(){let[mode,withTiming,OPACITY_TIMING]=this.__closure;if(mode==null){return{opacity:1};}return{opacity:withTiming(mode.get()==='pip'?0:1,OPACITY_TIMING)};})" };
 size = size_mod;
 const result = size.fileFinishedImporting("modules/voice_panel/native/shared/VoicePanelStreamPreview.tsx");
 
-export function VoicePanelStreamPreview(mode) {
+export function VoicePanelStreamPreview(stream) {
   let Text;
+  let View3;
   let disabled;
   let intl;
   let intl2;
-  let items2;
+  let items4;
   let layout;
-  let obj11;
-  let obj6;
+  let obj4;
+  let obj5;
   let obj7;
   let obj9;
   let onPress;
+  let tmp11;
+  let tmp12;
   let tmp13;
-  let tmp18Result;
-  let tmp2Result4;
-  mode = mode.mode;
-  const stream = mode.stream;
-  ({ disabled, onPress, layout } = mode);
-  const tmp = closure_12();
-  let tmp2 = stream;
+  let tmp14;
+  let tmp18;
+  let tmp22Result;
+  stream = stream.stream;
+  ({ disabled, onPress, layout } = stream);
+  const mode = stream.mode;
+  let tmp = closure_12();
+  let tmp2 = importDefault;
   let guildId;
-  const tmp4 = stream(12042);
+  const tmp4 = useFetchStreamPreviewDefault;
   if (stream != null) {
     guildId = stream.guildId;
   }
@@ -78,7 +84,7 @@ export function VoicePanelStreamPreview(mode) {
     ownerId = stream.ownerId;
   }
   const previewUrl = tmp4(guildId, channelId, ownerId).previewUrl;
-  let obj = mode(504);
+  let obj = stream(504);
   const items = [ApplicationStreamingStore, AuthenticationStore];
   const items1 = [stream];
   const stateFromStores = obj.useStateFromStores(items, () => {
@@ -90,61 +96,68 @@ export function VoicePanelStreamPreview(mode) {
     }
     return tmp2;
   }, items1);
-  let obj2 = mode(5095);
-  class T {
+  const items2 = [closure_13, mode, , ];
+  const useAnimatedStyle = stream(1652).useAnimatedStyle;
+  stream(1652);
+  items2[2] = stream(5370).withTiming;
+  items2[3] = closure_11;
+  let c0;
+  let c1;
+  let c2;
+  [tmp11, tmp12, tmp13, tmp14] = items2;
+  class VoicePanelStreamPreviewTsx1 {
     constructor() {
       let obj2;
-      const obj = mode;
-      if (null == mode) {
+      const obj = c0;
+      if (null == c0) {
         obj2 = { opacity: 1 };
       } else {
-        const withTiming = timing.withTiming;
         let num = 1;
-        timing;
+        const tmp = c1;
         if ("pip" === obj.get()) {
           num = 0;
         }
-        obj2 = { opacity: withTiming(num, OPACITY_TIMING) };
+        obj2 = { opacity: tmp(num, c2) };
       }
       return obj2;
     }
   }
-  T.__closure = { mode, withTiming: mode(5254).withTiming, OPACITY_TIMING };
-  T.__workletHash = 15496474861955;
-  T.__initData = __initData;
-  const obj4 = { layout, onPress, style: tmp.roundedCard, disabled: tmp13, accessible: false, children: items2 };
-  tmp13 = disabled;
-  ({ mode, withTiming: mode(5254).withTiming, OPACITY_TIMING });
-  const animatedStyle = obj2.useAnimatedStyle(T);
-  const tmp11 = closure_8;
-  const tmp12 = closure_9;
+  const items3 = [tmp12, tmp13, tmp14];
+  VoicePanelStreamPreviewTsx1.__closure = items3;
+  VoicePanelStreamPreviewTsx1.__workletHash = 4349610028794;
+  VoicePanelStreamPreviewTsx1.__initData = tmp11;
+  let obj2 = { layout, onPress, style: tmp.roundedCard, disabled: tmp18, accessible: false, children: items4 };
+  tmp18 = disabled;
+  const animatedStyle = useAnimatedStyle(VoicePanelStreamPreviewTsx1);
+  const tmp16 = closure_8;
+  const tmp17 = closure_9;
   if (!disabled) {
-    tmp13 = stateFromStores;
+    tmp18 = stateFromStores;
   }
-  let tmp14 = null;
+  let tmp19 = null;
   if (null != previewUrl) {
-    const obj5 = { layout, style: tmp.streamPreviewImage, children: closure_7(tmp2(5717), obj6) };
-    obj6 = { source: obj7, style: absoluteFill.absoluteFill, resizeMode: "cover" };
-    obj7 = { uri: previewUrl };
-    const tmp2Result = tmp2(7241);
-    tmp14 = closure_7(tmp2Result, obj5);
+    const obj3 = { layout, style: tmp.streamPreviewImage, children: closure_7(FastImageDefault, obj4) };
+    const View = module_1652.View;
+    obj4 = { source: obj5, style: absoluteFill.absoluteFill, resizeMode: "cover" };
+    obj5 = { uri: previewUrl };
+    tmp19 = closure_7(View, obj3);
   }
-  items2 = [tmp14, ];
-  const obj8 = { layout, children: closure_7(tmp2Result4, obj9) };
-  obj9 = { style: animatedStyle, children: tmp18Result };
-  const tmp2Result3 = tmp2(7241);
-  tmp2Result4 = tmp2(7241);
+  items4 = [tmp19, ];
+  const obj6 = { layout, children: closure_7(View3, obj7) };
+  const View2 = module_1652.View;
+  obj7 = { style: animatedStyle, children: tmp22Result };
+  View3 = module_1652.View;
   if (stateFromStores) {
-    const obj10 = { style: tmp.ownStreamTextContainer, children: closure_7(Text, obj11) };
-    obj11 = { variant: "text-sm/semibold", color: "text-overlay-light", style: tmp.ownStreamText, children: intl2.string(mode(1113).t["ro/HN8"]) };
-    Text = tmp8(5624).Text;
+    const obj8 = { style: tmp.ownStreamTextContainer, children: closure_7(Text, obj9) };
+    obj9 = { variant: "body-sm/semibold", color: "text-overlay-light", style: tmp.ownStreamText, children: intl2.string(stream(1113).t["ro/HN8"]) };
+    Text = tmp8(5751).Text;
     intl2 = tmp8(1113).intl;
-    tmp18Result = tmp18(closure_4, obj10);
+    tmp22Result = tmp22(closure_4, obj8);
   } else {
-    const obj12 = { layout, disabled, text: intl.string(mode(1113).t["7Xq/nV"]), size: "sm", variant: "primary-overlay", onPress };
+    const obj10 = { layout, disabled, text: intl.string(stream(1113).t["7Xq/nV"]), size: "sm", variant: "primary-overlay", onPress };
     intl = tmp8(1113).intl;
-    tmp18Result = tmp18(closure_10, obj12);
+    tmp22Result = tmp22(closure_10, obj10);
   }
-  items2[1] = closure_7(tmp2Result3, obj8);
-  return tmp11(tmp12, obj4);
+  items4[1] = closure_7(View2, obj6);
+  return tmp16(tmp17, obj2);
 }

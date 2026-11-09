@@ -1,26 +1,26 @@
-// Module ID: 6030
-// Function ID: 6031
+// Module ID: 6162
+// Function ID: 6163
 // Name: Alert
-// Dependencies: [19, 17, 21, 5014, 575, 1187, 5080, 6031, 4858, 6021, 5624, 1113, 5634, 6980, 10736, 1491, 8773, 2]
+// Dependencies: [19, 17, 21, 5140, 575, 1187, 5199, 6163, 4984, 6153, 5751, 1113, 5758, 7043, 10855, 1493, 8844, 2]
 // Exports: getAlertButtonVariant
 
-// Module 6030 (Alert)
+// Module 6162 (Alert)
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1491 */;
-import Timers from "Timers" /* 4858 */;
-import native2 from "native" /* 5080 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import components_Button_Button from "components/Button/Button" /* 5634 */;
-import CustomMarkupAll from "CustomMarkup" /* 6031 */;
-import Pressables from "Pressables" /* 6980 */;
-import useIsScreenLandscape from "useIsScreenLandscape" /* 8773 */;
-import ThemedGradientDefault from "ThemedGradient" /* 10736 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1493 */;
+import Timers from "Timers" /* 4984 */;
+import native2 from "native" /* 5199 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import components_Button_Button from "components/Button/Button" /* 5758 */;
+import CustomMarkupAll from "CustomMarkup" /* 6163 */;
+import Pressables from "Pressables" /* 7043 */;
+import useIsScreenLandscape from "useIsScreenLandscape" /* 8844 */;
+import ThemedGradientDefault from "ThemedGradient" /* 10855 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 let StyleSheet;
@@ -143,7 +143,7 @@ class Alert extends PureComponent {
     if (null != title) {
       tmp3Result = null;
       if ("" !== title) {
-        const obj2 = { ref: self.titleRef, accessible: true, accessibilityRole: "header", variant: "heading-md/extrabold", color: "text-default", style: tmp.titleText, children: renderContentResult };
+        const obj2 = { ref: self.titleRef, accessible: true, accessibilityRole: "header", variant: "heading-sm/semibold", color: "text-default", style: tmp.titleText, children: renderContentResult };
         renderContentResult = title;
         const Text = Text_Text.Text;
         const tmp3 = metroImportAll;
@@ -174,7 +174,7 @@ class Alert extends PureComponent {
     const tmp3 = React4;
     if (null != body) {
       const obj = { style: obj2, children: metroImportDefault(Text, obj3) };
-      obj3 = { variant: "text-md/normal", style: tmp.body, children: renderContentResult };
+      obj3 = { variant: "body-md/normal", style: tmp.body, children: renderContentResult };
       renderContentResult = body;
       obj2 = { maxHeight: self.props.contentHeight };
       Text = Text_Text.Text;
@@ -223,7 +223,7 @@ class Alert extends PureComponent {
       if (null != secondaryConfirmText) {
         const obj3 = { accessibilityRole: "button", style: tmp.secondaryConfirm, onPress: self.handleSecondaryConfirm, children: metroImportDefault(Text_Text.Text, obj4) };
         const PressableOpacity = Pressables.PressableOpacity;
-        obj4 = { variant: "text-sm/semibold", color: "text-link", children: secondaryConfirmText };
+        obj4 = { variant: "body-sm/semibold", color: "text-link", children: secondaryConfirmText };
         tmp11 = metroImportDefault(PressableOpacity, obj3);
       }
       let renderConfirmButtonResult;

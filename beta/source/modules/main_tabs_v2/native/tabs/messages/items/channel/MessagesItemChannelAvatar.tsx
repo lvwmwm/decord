@@ -1,20 +1,20 @@
-// Module ID: 18087
-// Function ID: 18088
+// Module ID: 18429
+// Function ID: 18430
 // Name: MessagesItemChannelAvatar
-// Dependencies: [19, 5015, 502, 5761, 13729, 1383, 11046, 21, 5014, 575, 1187, 504, 10799, 2]
+// Dependencies: [19, 5141, 502, 5890, 13962, 1385, 5882, 21, 5140, 575, 1187, 504, 10918, 2]
 
-// Module 18087 (MessagesItemChannelAvatar)
+// Module 18429 (MessagesItemChannelAvatar)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import GroupDMAvatarDefault from "GroupDMAvatar" /* 10799 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11046 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 5882 */;
+import GroupDMAvatarDefault from "GroupDMAvatar" /* 10918 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5015 */;
+import AccessibilityStore from "AccessibilityStore" /* 5141 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import PresenceStore from "PresenceStore" /* 5761 */;
-import TypingStore from "TypingStore" /* 13729 */;
-import UserStore from "UserStore" /* 1383 */;
-import createStyles from "createStyles" /* 5014 */;
+import PresenceStore from "PresenceStore" /* 5890 */;
+import TypingStore from "TypingStore" /* 13962 */;
+import UserStore from "UserStore" /* 1385 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -118,7 +118,7 @@ const memoResult = react.memo(function MessagesItemChannelAvatar(channel) {
   } else {
     tmp11Result = null;
     if (null != stateFromStores2) {
-      const obj7 = { user: stateFromStores2, avatarDecoration: stateFromStores2.avatarDecoration, guildId: "e", isMobileOnline: stateFromStores3, isVROnline: stateFromStores4, status: tmp12, streaming: isStreaming, style: tmpResult.avatar, size: REFRESH_MEDIUM_32, animate: stateFromStores1, typing: stateFromStores, autoStatusCutout: true };
+      const obj7 = { user: stateFromStores2, avatarDecoration: stateFromStores2.avatarDecoration, guildId: "Button", isMobileOnline: stateFromStores3, isVROnline: stateFromStores4, status: tmp12, streaming: isStreaming, style: tmpResult.avatar, size: REFRESH_MEDIUM_32, animate: stateFromStores1, typing: stateFromStores, autoStatusCutout: true };
       const Avatar = tmp3(1187).Avatar;
       tmp12 = null;
       const tmp11 = jsx;

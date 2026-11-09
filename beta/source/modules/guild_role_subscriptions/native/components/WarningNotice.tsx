@@ -1,17 +1,17 @@
-// Module ID: 19873
-// Function ID: 19874
+// Module ID: 20283
+// Function ID: 20284
 // Name: WarningNotice
-// Dependencies: [19, 17, 21, 5014, 575, 7086, 5624, 5634, 2]
+// Dependencies: [19, 17, 21, 5140, 575, 7152, 5751, 5758, 2]
 // Exports: default
 
-// Module 19873 (WarningNotice)
+// Module 20283 (WarningNotice)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import CircleErrorIcon2 from "CircleErrorIcon" /* 7086 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import CircleErrorIcon2 from "CircleErrorIcon" /* 7152 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -19,14 +19,14 @@ let hasOwnProperty;
 let obj2;
 let obj3;
 let tmp5;
-const components_Button_Button = tmp5(5634);
+const components_Button_Button = tmp5(5758);
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let createStyles = createStyles_mod;
 let obj = { container: obj2, horizontalContainer: { flexDirection: "row", alignItems: "center" }, message: { flex: 1, marginStart: 10, textAlignVertical: "center" }, actionButtonWrapper: { marginTop: 24, alignSelf: "center", width: "100%" }, containerYellow: obj3, alertIcon: { alignSelf: "flex-start", width: 20, height: 20 } };
 obj2 = { borderRadius: nativeDefault.radii.xs, borderWidth: 1, padding: 12 };
 createStyles = createStyles.createStyles;
-obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_WARNING, borderColor: nativeDefault.colors.STATUS_WARNING };
+obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_MOD_WARNING, borderColor: nativeDefault.colors.STATUS_WARNING };
 let closure_6 = createStyles(obj);
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/components/WarningNotice.tsx");
 
@@ -51,7 +51,7 @@ export default function WarningNotice(arg0) {
   const obj3 = { style: tmp.alertIcon, size: "custom", color: nativeDefault.colors.ICON_FEEDBACK_WARNING, secondaryColor: nativeDefault.colors.WHITE };
   const CircleErrorIcon = CircleErrorIcon2.CircleErrorIcon;
   items1 = [React3(CircleErrorIcon, obj3), ];
-  const obj4 = { style: tmp.message, variant: "text-sm/medium", color: "text-feedback-warning", children: notice };
+  const obj4 = { style: tmp.message, variant: "body-sm/medium", color: "text-feedback-warning", children: notice };
   items1[1] = React3(Text_Text.Text, obj4);
   items2 = [hasOwnProperty(View, obj2), ];
   let tmp4Result = null != onClick && null != ctaLabel;

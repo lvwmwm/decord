@@ -1,22 +1,22 @@
-// Module ID: 9667
-// Function ID: 9668
+// Module ID: 9758
+// Function ID: 9759
 // Name: PromotionUtils
-// Dependencies: [5, 1231, 9627, 9626, 1385, 1072, 5021, 1282, 1375, 1252, 1396, 4847, 11, 4848, 9665, 2]
+// Dependencies: [5, 1231, 9715, 9714, 1387, 1072, 5147, 1282, 1377, 1252, 1403, 4973, 11, 4974, 9756, 2]
 // Exports: claimOutboundPromotion, getClaimedEndedOutboundPromotions, getClaimedOutboundPromotionCodeMap, getNextUnseenOutboundPromotionId, getOutboundPromotionRedemptionUrl, getPromotionImageURL, isDedicatedSurfacePromotion, isRecurringPromotion, shouldShowOutboundPromotionNotice, shouldShowOutboundPromotionOnPlatform
 
-// Module 9667 (PromotionUtils)
+// Module 9758 (PromotionUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import PlatformUtils from "PlatformUtils" /* 1375 */;
-import PremiumConstants from "PremiumConstants" /* 1385 */;
-import FlagUtils from "FlagUtils" /* 1396 */;
-import dismissible_content from "dismissible_content" /* 4847 */;
-import DismissibleContentUtils from "DismissibleContentUtils" /* 4848 */;
-import shared from "shared" /* 5021 */;
-import promotions_constants from "promotions/constants" /* 9665 */;
+import PlatformUtils from "PlatformUtils" /* 1377 */;
+import PremiumConstants from "PremiumConstants" /* 1387 */;
+import FlagUtils from "FlagUtils" /* 1403 */;
+import dismissible_content from "dismissible_content" /* 4973 */;
+import DismissibleContentUtils from "DismissibleContentUtils" /* 4974 */;
+import shared from "shared" /* 5147 */;
+import promotions_constants from "promotions/constants" /* 9756 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
-import PromotionRecord from "PromotionRecord" /* 9627 */;
-import PromotionsStore from "PromotionsStore" /* 9626 */;
+import PromotionRecord from "PromotionRecord" /* 9715 */;
+import PromotionsStore from "PromotionsStore" /* 9714 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ let closure_4, location_stack, name, partner, promotion_id, set;
 let c10;
 let c9;
 let metroImportAll;
-const f95296 = (startDate, startDate2) => {
+const f96777 = (startDate, startDate2) => {
   let num = 1;
   const date = new Date(startDate.startDate);
   const date1 = new Date(startDate2.startDate);
@@ -57,7 +57,7 @@ let obj = function _claimOutboundPromotion() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -221,7 +221,7 @@ export function getNextUnseenOutboundPromotionId() {
   }
   let id = null;
   if (0 !== found1.length) {
-    id = found1.sort(f95296)[0].id;
+    id = found1.sort(f96777)[0].id;
   }
   return id;
 }
@@ -262,7 +262,7 @@ export function shouldShowOutboundPromotionNotice() {
   }
   let id = null;
   if (0 !== found1.length) {
-    id = found1.sort(f95296)[0].id;
+    id = found1.sort(f96777)[0].id;
   }
   let tmp6 = null != id;
   if (tmp6) {

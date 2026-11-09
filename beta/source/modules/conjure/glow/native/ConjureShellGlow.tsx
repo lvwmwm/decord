@@ -1,22 +1,22 @@
-// Module ID: 12607
-// Function ID: 12608
+// Module ID: 12809
+// Function ID: 12810
 // Name: ConjureShellGlow
-// Dependencies: [32, 19, 17, 5015, 1192, 21, 1375, 575, 671, 5014, 504, 5022, 5095, 5254, 5587, 12608, 7038, 2]
+// Dependencies: [32, 19, 17, 5141, 1192, 21, 1377, 575, 671, 5140, 504, 5148, 1652, 5370, 5715, 12810, 7104, 2]
 // Exports: default
 
-// Module 12607 (ConjureShellGlow)
+// Module 12809 (ConjureShellGlow)
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
-import timing from "timing" /* 5254 */;
+import _mod1652 from "module_1652" /* 1652 */;
+import timing_timing from "timing/timing" /* 5370 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
-import react from "react" /* 19 */;
+import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5015 */;
+import AccessibilityStore from "AccessibilityStore" /* 5141 */;
 import ThemeStore from "ThemeStore" /* 1192 */;
 import Fragment from "Fragment" /* 21 */;
-import PlatformUtils from "PlatformUtils" /* 1375 */;
-import createStyles from "createStyles" /* 5014 */;
+import PlatformUtils from "PlatformUtils" /* 1377 */;
+import createStyles from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 let set, set2, set3;
@@ -25,13 +25,20 @@ let c10;
 let c9;
 let hasOwnProperty;
 let metroRequire;
+let tmp4;
+let tmp5;
 let unpackModuleId;
 let _slicedToArray = _slicedToArray_mod;
+let react = react_mod;
 ({ StyleSheet: hasOwnProperty, View: metroRequire } = react_native);
 ({ jsx: c9, Fragment: c10, jsxs: unpackModuleId } = Fragment);
 let closure_12 = PlatformUtils.isAndroid();
 let c13 = 500;
-let items = [[0, 1], [0.09, 0.95], [0.17, 0.98], [0.29, 0.86], [0.37, 0.94], [0.48, 1], [0.56, 0.92], [0.64, 0.96], [0.76, 0.89], [0.84, 0.99], [1, 1]];
+let items = [{ code: "(function pulseAt_ConjureShellGlowTsx1(progress){let[PULSE_KEYFRAMES]=this.__closure;for(let i=1;i<PULSE_KEYFRAMES.length;i++){const[t1,v1]=PULSE_KEYFRAMES[i];if(progress<=t1){const[t0,v0]=PULSE_KEYFRAMES[i-1];const span=t1-t0;const local=span>0?(progress-t0)/span:1;return v0+(v1-v0)*local;}}return 1;})" }, ];
+let items1 = [[0, 1], [0.09, 0.95], [0.17, 0.98], [0.29, 0.86], [0.37, 0.94], [0.48, 1], [0.56, 0.92], [0.64, 0.96], [0.76, 0.89], [0.84, 0.99], [1, 1]];
+items[1] = items1;
+let c0;
+[tmp4, tmp5] = items;
 function pulseAt(arg0) {
   let first;
   let tmp4;
@@ -39,15 +46,15 @@ function pulseAt(arg0) {
   let tmp8;
   let num = 1;
   let num2 = 1;
-  if (1 < items.length) {
-    [first, tmp4] = items[num2];
+  if (1 < _undefined.length) {
+    [first, tmp4] = _undefined[num2];
     while (arg0 > first) {
       num2 = num2 + num;
     }
-    [tmp7, tmp8] = _slicedToArray(items[num2 - num], 2);
+    [tmp7, tmp8] = _slicedToArray(_undefined[num2 - num], 2);
     const diff = first - tmp7;
     const diff1 = tmp4 - tmp8;
-    _slicedToArray(items[num2 - num], 2);
+    _slicedToArray(_undefined[num2 - num], 2);
     if (diff > 0) {
       num = (arg0 - tmp7) / diff;
     }
@@ -55,87 +62,110 @@ function pulseAt(arg0) {
   }
   return num;
 }
-pulseAt.__closure = { PULSE_KEYFRAMES: items };
-pulseAt.__workletHash = 10785188429539;
-pulseAt.__initData = { code: "function pulseAt_ConjureShellGlowTsx1(progress){const{PULSE_KEYFRAMES}=this.__closure;for(let i=1;i<PULSE_KEYFRAMES.length;i++){const[t1,v1]=PULSE_KEYFRAMES[i];if(progress<=t1){const[t0,v0]=PULSE_KEYFRAMES[i-1];const span=t1-t0;const local=span>0?(progress-t0)/span:1;return v0+(v1-v0)*local;}}return 1;}" };
+let items2 = [tmp5];
+pulseAt.__closure = items2;
+pulseAt.__workletHash = 3950886674746;
+pulseAt.__initData = tmp4;
 const colors = ["rgba(0,0,0,0)", "rgba(0,0,0,0)", "rgba(0,0,0,1)"];
 const locations = [0, 0.45, 1];
 const start = { x: 0.5, y: 0 };
 const end = { x: 0.5, y: 1 };
 const start2 = { x: 0, y: 0.5 };
 const end2 = { x: 1, y: 0.5 };
-let closure_22 = createStyles.createStyles({ root: { position: "absolute", top: 0, left: 0, right: 0, bottom: 0, overflow: "hidden", zIndex: 0 }, band: { position: "absolute", left: 0, right: 0, bottom: 0, height: 500 }, sweep: { position: "absolute", top: 0, bottom: 0, left: 0, width: "200%" }, fill: { flex: 1 }, ditherClip: { position: "absolute", left: 0, right: 0, bottom: 0, overflow: "hidden" }, ditherField: { position: "absolute", left: 0, right: 0, bottom: 0, height: 500 } });
-const __initData = { code: "function ConjureShellGlowTsx2(){const{lift,pulseAt,pulse,BAND_HEIGHT}=this.__closure;const scale=lift.get()*pulseAt(pulse.get());return{transform:[{translateY:BAND_HEIGHT*(1-scale)/2},{scaleY:scale}]};}" };
-const __initData2 = { code: "function ConjureShellGlowTsx3(){const{chromaMix,layerAlpha,driftBase,width}=this.__closure;return{opacity:(1-chromaMix.get())*layerAlpha,transform:[{translateX:-driftBase.get()*width}]};}" };
-const __initData3 = { code: "function ConjureShellGlowTsx4(){const{chromaMix,layerAlpha,driftChroma,width}=this.__closure;return{opacity:chromaMix.get()*layerAlpha,transform:[{translateX:-driftChroma.get()*width}]};}" };
-const __initData4 = { code: "function ConjureShellGlowTsx5(){const{ANDROID,BAND_HEIGHT,lift,pulseAt,pulse,ditherHeight}=this.__closure;return{height:ANDROID?BAND_HEIGHT*lift.get()*pulseAt(pulse.get()):ditherHeight.get()};}" };
+let closure_21 = createStyles.createStyles({ root: { position: "absolute", top: 0, left: 0, right: 0, bottom: 0, overflow: "hidden", zIndex: 0 }, band: { position: "absolute", left: 0, right: 0, bottom: 0, height: 500 }, sweep: { position: "absolute", top: 0, bottom: 0, left: 0, width: "200%" }, fill: { flex: 1 }, ditherClip: { position: "absolute", left: 0, right: 0, bottom: 0, overflow: "hidden" }, ditherField: { position: "absolute", left: 0, right: 0, bottom: 0, height: 500 } });
+let closure_22 = { code: "(function ConjureShellGlowTsx2(){let[lift,pulseAt,pulse,BAND_HEIGHT]=this.__closure;const scale=lift.get()*pulseAt(pulse.get());return{transform:[{translateY:BAND_HEIGHT*(1-scale)/2},{scaleY:scale}]};})" };
+let closure_23 = { code: "(function ConjureShellGlowTsx3(){let[chromaMix,layerAlpha,driftBase,width]=this.__closure;return{opacity:(1-chromaMix.get())*layerAlpha,transform:[{translateX:-driftBase.get()*width}]};})" };
+let closure_24 = { code: "(function ConjureShellGlowTsx4(){let[chromaMix,layerAlpha,driftChroma,width]=this.__closure;return{opacity:chromaMix.get()*layerAlpha,transform:[{translateX:-driftChroma.get()*width}]};})" };
+let closure_25 = { code: "(function ConjureShellGlowTsx5(){let[ANDROID,BAND_HEIGHT,lift,pulseAt,pulse,ditherHeight]=this.__closure;return{height:ANDROID?BAND_HEIGHT*lift.get()*pulseAt(pulse.get()):ditherHeight.get()};})" };
 let size = size_mod;
 let result = size.fileFinishedImporting("modules/conjure/glow/native/ConjureShellGlow.tsx");
 
 export default function ConjureShellGlow(thinking) {
+  let _undefined;
   let c3;
-  let closure_6;
-  let items11;
-  let items12;
-  let items13;
-  let items14;
-  let items7;
-  let items8;
-  let items9;
+  let c4;
+  let items15;
+  let items16;
+  let items17;
+  let items19;
+  let items20;
+  let items21;
+  let items22;
   let num6;
   let obj10;
-  let obj12;
-  let obj22;
+  let obj20;
+  let obj8;
   let str;
-  let tmp29Result5;
-  let tmp29Result6;
+  let tmp10;
+  let tmp26;
+  let tmp27;
+  let tmp28;
+  let tmp29;
+  let tmp30;
+  let tmp32;
+  let tmp33;
+  let tmp34;
+  let tmp35;
+  let tmp36;
   let tmp38;
+  let tmp39;
+  let tmp40;
   let tmp41;
-  let width;
+  let tmp42;
+  let tmp45;
+  let tmp46;
+  let tmp47;
+  let tmp48;
+  let tmp49;
+  let tmp50;
+  let tmp51;
+  let tmp53Result5;
+  let tmp53Result6;
+  let tmp62;
+  let tmp65;
   thinking = thinking.thinking;
   let num = thinking.bleedBottom;
   if (num === undefined) {
     num = 0;
   }
   let stateFromStores1;
-  let num2;
-  width = undefined;
-  closure_6 = undefined;
+  react = undefined;
   let sharedValue;
   let sharedValue2;
   let sharedValue3;
   let sharedValue1;
   let sharedValue4;
   let sharedValue5;
-  let tmp = closure_22();
+  let tmp = closure_21();
   let tmp2 = thinking;
   let obj = thinking(stateFromStores1[10]);
-  items = [sharedValue];
-  const stateFromStores = obj.useStateFromStores(items, () => sharedValue.useReducedMotion);
+  let items = [sharedValue3];
+  const stateFromStores = obj.useStateFromStores(items, () => sharedValue3.useReducedMotion);
   let obj2 = thinking(stateFromStores1[10]);
-  let items1 = [sharedValue2];
-  stateFromStores1 = obj2.useStateFromStores(items1, () => sharedValue2.theme);
+  let items1 = [sharedValue1];
+  stateFromStores1 = obj2.useStateFromStores(items1, () => sharedValue1.theme);
   let obj3 = thinking(stateFromStores1[11]);
   const isThemeDarkResult = obj3.isThemeDark(stateFromStores1);
   _slicedToArray = isThemeDarkResult;
-  let obj4 = num2;
+  let obj4 = react;
   let items2 = [stateFromStores1];
   let items3 = [isThemeDarkResult];
-  const memo = num2.useMemo(() => {
+  const memo = react.useMemo(() => {
     const internal = nativeDefault.internal;
     const semanticColor = internal.resolveSemanticColor(stateFromStores1, nativeDefault.colors.BACKGROUND_BASE_LOW);
-    items = [semanticColor, semanticColor, ];
+    const items = [semanticColor, semanticColor, ];
     const obj = _modDef671(semanticColor);
     const alphaResult = obj.alpha(0);
     items[2] = alphaResult.css();
     return items;
   }, items2);
-  const memo1 = num2.useMemo(() => {
+  const memo1 = react.useMemo(() => {
     let BG_GRADIENT_CHROMA_GLOW_1;
     let BG_GRADIENT_CHROMA_GLOW_2;
     let BG_GRADIENT_MIDNIGHT_BLURPLE_1;
     let ILLO_PURPLE_30;
     let ILLO_PURPLE_40;
+    let items;
     let items1;
     let items2;
     let items3;
@@ -159,14 +189,15 @@ export default function ConjureShellGlow(thinking) {
     }
     return obj2;
   }, items3);
-  num2 = 0.2;
+  let num2 = 0.2;
   if (isThemeDarkResult) {
     num2 = 0.3;
   }
-  [width, closure_6] = obj4.useState(0);
+  const tmp9 = _slicedToArray(obj4.useState(0), 2);
+  [tmp10, c4] = tmp9;
   const callback = obj4.useCallback((nativeEvent) => {
     let closure_0 = Math.round(nativeEvent.nativeEvent.layout.width);
-    let tmp = closure_6((arg0) => {
+    let tmp = _undefined((arg0) => {
       let tmp = closure_0;
       if (arg0 === closure_0) {
         tmp = arg0;
@@ -192,7 +223,7 @@ export default function ConjureShellGlow(thinking) {
   const useSharedValue3 = tmp2(tmp3[12]).useSharedValue;
   tmp2(stateFromStores1[12]);
   if (thinking) {
-    num5 = v500;
+    num5 = c13;
   }
   sharedValue3 = useSharedValue3(num5);
   const tmp2Result12 = tmp2(stateFromStores1[12]);
@@ -203,28 +234,28 @@ export default function ConjureShellGlow(thinking) {
   sharedValue5 = tmp2Result14.useSharedValue(0);
   const items4 = [sharedValue2, sharedValue3, sharedValue, thinking];
   const effect = obj4.useEffect(() => {
-    const Easing = ReanimatedRexport.Easing;
+    const Easing = _mod1652.Easing;
     const bezierResult = Easing.bezier(0.4, 0, 0.2, 1);
     let num = 0;
     set = sharedValue.set;
-    const withTiming = timing.withTiming;
-    timing;
+    const withTiming = timing_timing.withTiming;
+    timing_timing;
     if (thinking) {
       num = 1;
     }
     const result = set(withTiming(num, { duration: 700, easing: bezierResult }, "animate-always"));
-    num2 = 0;
+    let num2 = 0;
     set2 = sharedValue2.set;
-    const withTiming2 = timing.withTiming;
-    timing;
+    const withTiming2 = timing_timing.withTiming;
+    timing_timing;
     if (thinking) {
       num2 = 1;
     }
     set2(withTiming2(num2, { duration: 700, easing: bezierResult }, "animate-always"));
     let num3 = 0;
     set3 = sharedValue3.set;
-    const withTiming3 = timing.withTiming;
-    timing;
+    const withTiming3 = timing_timing.withTiming;
+    timing_timing;
     if (thinking) {
       num3 = c13;
     }
@@ -237,28 +268,28 @@ export default function ConjureShellGlow(thinking) {
     let fn;
     const tmp = stateFromStores;
     if (tmp) {
-      const obj3 = ReanimatedRexport;
+      const obj3 = _mod1652;
       obj3.cancelAnimation(sharedValue4);
-      const obj4 = ReanimatedRexport;
+      const obj4 = _mod1652;
       obj4.cancelAnimation(sharedValue5);
       const result = sharedValue4.set(0);
       const result1 = sharedValue5.set(0);
     } else if (thinking) {
       set = sharedValue4.set;
-      const withRepeat = ReanimatedRexport.withRepeat;
-      ReanimatedRexport;
-      let obj = { duration: 24000, easing: Easing.inOut(ReanimatedRexport.Easing.ease) };
-      const withTiming = timing.withTiming;
-      timing;
-      Easing = ReanimatedRexport.Easing;
+      const withRepeat = _mod1652.withRepeat;
+      _mod1652;
+      let obj = { duration: 24000, easing: Easing.inOut(_mod1652.Easing.ease) };
+      const withTiming = timing_timing.withTiming;
+      timing_timing;
+      Easing = _mod1652.Easing;
       const result2 = set(withRepeat(withTiming(1, obj), -1, true));
       set2 = sharedValue5.set;
-      const withRepeat2 = ReanimatedRexport.withRepeat;
-      ReanimatedRexport;
-      let obj2 = { duration: 12000, easing: Easing2.inOut(ReanimatedRexport.Easing.ease) };
-      const withTiming2 = timing.withTiming;
-      timing;
-      Easing2 = ReanimatedRexport.Easing;
+      const withRepeat2 = _mod1652.withRepeat;
+      _mod1652;
+      let obj2 = { duration: 12000, easing: Easing2.inOut(_mod1652.Easing.ease) };
+      const withTiming2 = timing_timing.withTiming;
+      timing_timing;
+      Easing2 = _mod1652.Easing;
       set2(withRepeat2(withTiming2(1, obj2), -1, true));
       fn = () => {
         const obj = thinking(stateFromStores1[12]);
@@ -278,11 +309,11 @@ export default function ConjureShellGlow(thinking) {
       if (tmp2) {
         const result = sharedValue1.set(0);
         set = sharedValue1.set;
-        const withRepeat = ReanimatedRexport.withRepeat;
-        ReanimatedRexport;
-        let obj = { duration: 5500, easing: ReanimatedRexport.Easing.ease };
-        const withTiming = timing.withTiming;
-        timing;
+        const withRepeat = _mod1652.withRepeat;
+        _mod1652;
+        let obj = { duration: 5500, easing: _mod1652.Easing.ease };
+        const withTiming = timing_timing.withTiming;
+        timing_timing;
         const result1 = set(withRepeat(withTiming(1, obj), -1, false));
         fn = () => {
           const obj = thinking(stateFromStores1[12]);
@@ -291,151 +322,130 @@ export default function ConjureShellGlow(thinking) {
       }
       return fn;
     }
-    const obj2 = ReanimatedRexport;
+    const obj2 = _mod1652;
     obj2.cancelAnimation(sharedValue1);
     set2 = sharedValue1.set;
-    const obj3 = timing;
+    const obj3 = timing_timing;
     set2(obj3.withTiming(0, { duration: 700 }));
   }, items6);
-  let fn = function q() {
-    let first;
-    let tmp11;
-    let tmp12;
-    let tmp7;
-    const value = sharedValue.get();
-    const value2 = sharedValue1.get();
-    if (typeof pulseAt === "function") {
-      let num3 = 1;
-      let num4 = 1;
-      if (1 < items.length) {
-        [first, tmp7] = items[num3];
-        while (value2 > first) {
-          let sum = num3 + 1;
-          num3 = sum;
-          num4 = 1;
-        }
-        [tmp11, tmp12] = _slicedToArray(items[num3 - 1], 2);
-        const diff = first - tmp11;
-        let num6 = 1;
-        const diff1 = tmp7 - tmp12;
-        _slicedToArray(items[num3 - 1], 2);
-        if (diff > 0) {
-          num6 = (value2 - tmp11) / diff;
-        }
-        num4 = tmp12 + diff1 * num6;
-      }
-      const result = value * num4;
-      const obj = { transform: items };
-      items = [{ translateY: c13 * (1 - result) / 2 }, ];
-      const obj2 = { translateY: c13 * (1 - result) / 2 };
-      const obj3 = { scaleY: result };
-      items[1] = obj3;
-      return obj;
-    } else {
-      throw new TypeError("Trying to call a non-function");
-    }
-  };
-  const obj5 = { lift: sharedValue, pulseAt, pulse: sharedValue1, BAND_HEIGHT: v500 };
-  fn.__closure = obj5;
-  fn.__workletHash = 14122773184727;
-  fn.__initData = __initData;
+  const items7 = [closure_22, sharedValue, pulseAt, sharedValue1, ];
+  items7[4] = c13;
+  let c0;
+  let c1;
+  let c2;
+  _slicedToArray = undefined;
+  [tmp26, tmp27, tmp28, tmp29, tmp30] = items7;
   const tmp2Result15 = tmp2(stateFromStores1[12]);
-  const animatedStyle = tmp2Result15.useAnimatedStyle(fn);
+  class ConjureShellGlowTsx2 {
+    constructor() {
+      let items;
+      const value = _undefined.get();
+      const result = value * _undefined2(_undefined3.get());
+      const obj = { transform: items };
+      items = [, ];
+      const obj2 = { translateY: c3 * (1 - result) / 2 };
+      items[0] = obj2;
+      items[1] = { scaleY: result };
+      return obj;
+    }
+  }
+  const items8 = [tmp27, tmp28, tmp29, tmp30];
+  ConjureShellGlowTsx2.__closure = items8;
+  ConjureShellGlowTsx2.__workletHash = 16357624272846;
+  ConjureShellGlowTsx2.__initData = tmp26;
+  const animatedStyle = tmp2Result15.useAnimatedStyle(ConjureShellGlowTsx2);
+  const items9 = [closure_23, sharedValue2, num2, sharedValue4, tmp10];
+  c0 = undefined;
+  c1 = undefined;
+  c2 = undefined;
+  _slicedToArray = undefined;
+  [tmp32, tmp33, tmp34, tmp35, tmp36] = items9;
+  const tmp24 = pulseAt;
   const tmp2Result16 = tmp2(stateFromStores1[12]);
-  class J {
+  class ConjureShellGlowTsx3 {
     constructor() {
-      const obj = { opacity: (1 - sharedValue2.get()) * num2, transform: items };
-      items = [{ translateX: -sharedValue4.get() * first }];
-      ({ translateX: -sharedValue4.get() * first });
+      let items;
+      const obj = { opacity: (1 - _undefined.get()) * c1, transform: items };
+      items = [{ translateX: -_undefined2.get() * c3 }];
+      ({ translateX: -_undefined2.get() * c3 });
       return obj;
     }
   }
-  J.__closure = { chromaMix: sharedValue2, layerAlpha: num2, driftBase: sharedValue4, width };
-  J.__workletHash = 11778214036579;
-  J.__initData = __initData2;
-  const animatedStyle1 = tmp2Result16.useAnimatedStyle(J);
+  const items10 = [tmp33, tmp34, tmp35, tmp36];
+  ConjureShellGlowTsx3.__closure = items10;
+  ConjureShellGlowTsx3.__workletHash = 17164869251802;
+  ConjureShellGlowTsx3.__initData = tmp32;
+  const animatedStyle1 = tmp2Result16.useAnimatedStyle(ConjureShellGlowTsx3);
+  const items11 = [closure_24, sharedValue2, num2, sharedValue5, tmp10];
+  c0 = undefined;
+  c1 = undefined;
+  c2 = undefined;
+  _slicedToArray = undefined;
+  [tmp38, tmp39, tmp40, tmp41, tmp42] = items11;
   const tmp2Result17 = tmp2(stateFromStores1[12]);
-  class Q {
+  class ConjureShellGlowTsx4 {
     constructor() {
-      const obj = { opacity: sharedValue2.get() * num2, transform: items };
-      items = [{ translateX: -sharedValue5.get() * first }];
-      ({ translateX: -sharedValue5.get() * first });
+      let items;
+      const obj = { opacity: _undefined.get() * c1, transform: items };
+      items = [{ translateX: -_undefined2.get() * c3 }];
+      ({ translateX: -_undefined2.get() * c3 });
       return obj;
     }
   }
-  Q.__closure = { chromaMix: sharedValue2, layerAlpha: num2, driftChroma: sharedValue5, width };
-  Q.__workletHash = 12832282995257;
-  Q.__initData = __initData3;
-  const animatedStyle2 = tmp2Result17.useAnimatedStyle(Q);
+  const items12 = [tmp39, tmp40, tmp41, tmp42];
+  ConjureShellGlowTsx4.__closure = items12;
+  ConjureShellGlowTsx4.__workletHash = 6789154933248;
+  ConjureShellGlowTsx4.__initData = tmp38;
+  const animatedStyle2 = tmp2Result17.useAnimatedStyle(ConjureShellGlowTsx4);
+  const items13 = [closure_25, closure_12, tmp25, sharedValue, tmp24, sharedValue1, sharedValue3];
+  c0 = undefined;
+  c1 = undefined;
+  c2 = undefined;
+  _slicedToArray = undefined;
+  react = undefined;
+  let c5;
+  [tmp45, tmp46, tmp47, tmp48, tmp49, tmp50, tmp51] = items13;
   const tmp2Result18 = tmp2(stateFromStores1[12]);
-  class Z {
+  class ConjureShellGlowTsx5 {
     constructor() {
-      let first;
       let height;
-      let tmp14;
-      let tmp18;
-      let tmp19;
-      const tmp = closure_12;
+      const tmp = c0;
       if (tmp) {
-        const result = c13 * sharedValue.get();
-        const value = sharedValue1.get();
-        if (typeof pulseAt === "function") {
-          let num = 1;
-          let num3 = 1;
-          let num4 = 1;
-          if (1 < items.length) {
-            [first, tmp14] = items[num3];
-            while (value > first) {
-              let sum = num3 + num;
-              num3 = sum;
-              num4 = num;
-            }
-            [tmp18, tmp19] = _slicedToArray(items[num3 - num], 2);
-            const diff = first - tmp18;
-            const diff1 = tmp14 - tmp19;
-            _slicedToArray(items[num3 - num], 2);
-            if (diff > 0) {
-              num = (value - tmp18) / diff;
-            }
-            num4 = tmp19 + diff1 * num;
-          }
-          height = result * num4;
-        } else {
-          throw new TypeError("Trying to call a non-function");
-        }
+        const result = c1 * _undefined.get();
+        height = result * _undefined2(_undefined3.get());
       } else {
-        height = sharedValue3.get();
+        height = _undefined4.get();
       }
       return { height };
     }
   }
-  const obj6 = { ANDROID: sharedValue5, BAND_HEIGHT: v500, lift: sharedValue, pulseAt, pulse: sharedValue1, ditherHeight: sharedValue3 };
-  Z.__closure = obj6;
-  Z.__workletHash = 9289670122768;
-  Z.__initData = __initData4;
-  const animatedStyle3 = tmp2Result18.useAnimatedStyle(Z);
-  const obj7 = { style: tmp.fill, colors, locations, start, end };
-  const tmp34 = sharedValue3(stateFromStores(stateFromStores1[14]), obj7);
-  const obj8 = { children: items8 };
-  const obj9 = { style: items7, children: sharedValue3(stateFromStores(stateFromStores1[14]), obj10) };
-  items7 = [tmp.sweep, animatedStyle1];
+  const items14 = [tmp46, tmp47, tmp48, tmp49, tmp50, tmp51];
+  ConjureShellGlowTsx5.__closure = items14;
+  ConjureShellGlowTsx5.__workletHash = 6143578775689;
+  ConjureShellGlowTsx5.__initData = tmp45;
+  const animatedStyle3 = tmp2Result18.useAnimatedStyle(ConjureShellGlowTsx5);
+  const obj5 = { style: tmp.fill, colors, locations, start, end };
+  const tmp58 = sharedValue4(stateFromStores(stateFromStores1[14]), obj5);
+  const obj6 = { children: items16 };
+  const obj7 = { style: items15, children: sharedValue4(stateFromStores(stateFromStores1[14]), obj8) };
+  items15 = [tmp.sweep, animatedStyle1];
   const View = stateFromStores(tmp3[12]).View;
-  obj10 = { style: tmp.fill, colors: memo1.base, start: start2, end: end2 };
-  items8 = [sharedValue3(View, obj9), ];
-  const obj11 = { style: items9, children: sharedValue3(stateFromStores(stateFromStores1[14]), obj12) };
-  items9 = [tmp.sweep, animatedStyle2];
+  obj8 = { style: tmp.fill, colors: memo1.base, start: start2, end: end2 };
+  items16 = [sharedValue4(View, obj7), ];
+  const obj9 = { style: items17, children: sharedValue4(stateFromStores(stateFromStores1[14]), obj10) };
+  items17 = [tmp.sweep, animatedStyle2];
   const View2 = stateFromStores(tmp3[12]).View;
-  obj12 = { style: tmp.fill, colors: memo1.chroma, start: start2, end: end2 };
-  items8[1] = sharedValue3(View2, obj11);
-  const tmp36 = sharedValue4(sharedValue1, obj8);
-  const obj13 = { style: tmp.ditherField, children: sharedValue3(tmp38, size) };
-  size = { width, height: v500, thinking, fill: str, fillOpacity: num6 };
+  obj10 = { style: tmp.fill, colors: memo1.chroma, start: start2, end: end2 };
+  items16[1] = sharedValue4(View2, obj9);
+  const tmp60 = closure_11(sharedValue5, obj6);
+  const obj11 = { style: tmp.ditherField, children: sharedValue4(tmp62, size) };
+  size = { width: tmp10, height: tmp25, thinking, fill: str, fillOpacity: num6 };
   str = "rgb(120, 60, 200)";
-  const tmp31 = locations;
-  const tmp32 = start;
-  const tmp33 = end;
-  const tmp35 = sharedValue4;
-  tmp38 = stateFromStores(stateFromStores1[15]);
+  const tmp55 = locations;
+  const tmp56 = start;
+  const tmp57 = end;
+  const tmp59 = closure_11;
+  tmp62 = stateFromStores(stateFromStores1[15]);
   if (isThemeDarkResult) {
     str = "rgb(225, 240, 255)";
   }
@@ -443,49 +453,49 @@ export default function ConjureShellGlow(thinking) {
   if (isThemeDarkResult) {
     num6 = 0.18;
   }
-  const tmp29Result = sharedValue3(closure_6, obj13);
-  const items10 = [tmp.root, ];
-  let tmp40 = num > 0;
-  if (tmp40) {
-    tmp40 = { bottom: -num };
-    const obj14 = { bottom: -num };
+  const tmp53Result = sharedValue4(sharedValue2, obj11);
+  const items18 = [tmp.root, ];
+  let tmp64 = num > 0;
+  if (tmp64) {
+    tmp64 = { bottom: -num };
+    const obj12 = { bottom: -num };
   }
-  const obj15 = { style: items10, pointerEvents: "none", onLayout: callback, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: items12 };
-  items10[1] = tmp40;
-  const obj16 = { style: items11, children: tmp29Result5 };
-  items11 = [tmp.band, animatedStyle];
-  const View3 = tmp30(tmp3[12]).View;
-  if (sharedValue5) {
-    const obj17 = { style: width.absoluteFill, children: tmp36 };
-    tmp29Result5 = tmp29(tmp37, obj17);
-    tmp41 = width;
+  const obj13 = { style: items18, pointerEvents: "none", onLayout: callback, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: items20 };
+  items18[1] = tmp64;
+  const obj14 = { style: items19, children: tmp53Result5 };
+  items19 = [tmp.band, animatedStyle];
+  const View3 = tmp54(tmp3[12]).View;
+  if (closure_12) {
+    const obj15 = { style: sharedValue.absoluteFill, children: tmp60 };
+    tmp53Result5 = tmp53(tmp61, obj15);
+    tmp65 = sharedValue;
   } else {
-    tmp41 = width;
-    const obj18 = { style: width.absoluteFill, maskElement: tmp34, children: tmp36 };
-    tmp29Result5 = tmp29(tmp30(tmp3[16]), obj18);
+    tmp65 = sharedValue;
+    const obj16 = { style: sharedValue.absoluteFill, maskElement: tmp58, children: tmp60 };
+    tmp53Result5 = tmp53(tmp54(tmp3[16]), obj16);
   }
-  items12 = [tmp29(View3, obj16), , ];
-  let tmp29Result7 = null;
+  items20 = [sharedValue4(View3, obj14), , ];
+  let tmp53Result7 = null;
   if (!stateFromStores) {
-    const obj19 = { style: items13, children: tmp29Result6 };
-    items13 = [tmp.ditherClip, animatedStyle3];
-    tmp29Result6 = tmp29Result;
-    const View4 = tmp30(tmp3[12]).View;
-    if (!sharedValue5) {
-      const obj20 = { style: tmp41.absoluteFill, maskElement: tmp34, children: tmp29Result };
-      tmp29Result6 = tmp29(tmp30(tmp3[16]), obj20);
+    const obj17 = { style: items21, children: tmp53Result6 };
+    items21 = [tmp.ditherClip, animatedStyle3];
+    tmp53Result6 = tmp53Result;
+    const View4 = tmp54(tmp3[12]).View;
+    if (!closure_12) {
+      const obj18 = { style: tmp65.absoluteFill, maskElement: tmp58, children: tmp53Result };
+      tmp53Result6 = tmp53(tmp54(tmp3[16]), obj18);
     }
-    tmp29Result7 = tmp29(View4, obj19);
+    tmp53Result7 = tmp53(View4, obj17);
   }
-  items12[1] = tmp29Result7;
-  let tmp29Result8 = null;
-  if (sharedValue5) {
-    const obj21 = { style: items14, children: sharedValue3(stateFromStores(stateFromStores1[14]), obj22) };
-    items14 = [tmp.band, animatedStyle];
-    const View5 = tmp30(tmp3[12]).View;
-    obj22 = { style: tmp.fill, colors: memo, locations: tmp31, start: tmp32, end: tmp33 };
-    tmp29Result8 = tmp29(View5, obj21);
+  items20[1] = tmp53Result7;
+  let tmp53Result8 = null;
+  if (closure_12) {
+    const obj19 = { style: items22, children: sharedValue4(stateFromStores(stateFromStores1[14]), obj20) };
+    items22 = [tmp.band, animatedStyle];
+    const View5 = tmp54(tmp3[12]).View;
+    obj20 = { style: tmp.fill, colors: memo, locations: tmp55, start: tmp56, end: tmp57 };
+    tmp53Result8 = tmp53(View5, obj19);
   }
-  items12[2] = tmp29Result8;
-  return tmp35(closure_6, obj15);
+  items20[2] = tmp53Result8;
+  return tmp59(sharedValue2, obj13);
 };

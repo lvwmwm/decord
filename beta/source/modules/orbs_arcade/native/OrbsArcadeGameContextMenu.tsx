@@ -1,19 +1,18 @@
-// Module ID: 17059
-// Function ID: 17060
+// Module ID: 17384
+// Function ID: 17385
 // Name: OrbsArcadeGameContextMenu
-// Dependencies: [5, 19, 1383, 21, 17024, 5712, 1113, 504, 14516, 17036, 12219, 9874, 8028, 9207, 2]
+// Dependencies: [5, 19, 1385, 21, 17347, 5837, 1113, 504, 14752, 17351, 17352, 12391, 9996, 8098, 9287, 2]
 // Exports: default
 
-// Module 17059 (OrbsArcadeGameContextMenu)
+// Module 17384 (OrbsArcadeGameContextMenu)
 import Fragment from "Fragment" /* 21 */;
 import intl3 from "intl" /* 1113 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9207 */;
-import RefreshIcon from "RefreshIcon" /* 12219 */;
-import CircleQuestionIcon from "CircleQuestionIcon" /* 14516 */;
-import OrbsArcadeActionCreators from "OrbsArcadeActionCreators" /* 17024 */;
+import RefreshIcon from "RefreshIcon" /* 12391 */;
+import CircleQuestionIcon from "CircleQuestionIcon" /* 14752 */;
+import OrbsArcadeActionCreators from "OrbsArcadeActionCreators" /* 17347 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1383 */;
+import UserStore from "UserStore" /* 1385 */;
 import size from "module_2" /* 2 */;
 
 let c2, c4, currentUser;
@@ -33,7 +32,7 @@ let obj = function _handleResetGame() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -76,7 +75,7 @@ let obj = function _handleResetGame() {
             c3 = 0;
           }
           c4 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp17) {
         if (0 === c3) {
@@ -91,14 +90,15 @@ let obj = function _handleResetGame() {
   return obj(...arguments);
 };
 const jsx = Fragment.jsx;
-const result = size.fileFinishedImporting("modules/orbs_arcade/native/OrbsArcadeGameContextMenu.tsx");
+let result = size.fileFinishedImporting("modules/orbs_arcade/native/OrbsArcadeGameContextMenu.tsx");
 
 export default function OrbsArcadeGameContextMenu(game) {
   let items4;
   game = game.game;
+  const surface = game.surface;
   obj = game(504);
   let items = [UserStore];
-  const items1 = [game.id];
+  const items1 = [game, surface];
   const stateFromStores = obj.useStateFromStores(items, () => {
     currentUser = currentUser.getCurrentUser();
     let flag;
@@ -117,8 +117,11 @@ export default function OrbsArcadeGameContextMenu(game) {
       label: intl.string(intl3.t["3AT3DL"]),
       IconComponent: CircleQuestionIcon.CircleQuestionIcon,
       action() {
-        obj = game(dependencyMap[9]);
-        return obj.openOrbsArcadeInfoSheet(id.id);
+        const trackOrbsArcadeCtaClicked = game(dependencyMap[9]).trackOrbsArcadeCtaClicked;
+        game(dependencyMap[9]);
+        const result = trackOrbsArcadeCtaClicked(id, game(dependencyMap[9]).OrbsArcadeCta.WHAT_IS_ORBS_ARCADE, game(dependencyMap[9]).OrbsArcadeCtaLocation.GAME_TILE, surface);
+        obj = game(dependencyMap[10]);
+        const result1 = obj.openOrbsArcadeInfoSheet(id.id, surface);
       }
     };
     intl = intl3.intl;
@@ -144,7 +147,7 @@ export default function OrbsArcadeGameContextMenu(game) {
     const items = [obj];
     return items;
   }, items2);
-  const ContextMenu = game(9874).ContextMenu;
+  const ContextMenu = game(9996).ContextMenu;
   const tmp4 = jsx;
   if (stateFromStores) {
     const items3 = [memo, memo1];
@@ -158,11 +161,11 @@ export default function OrbsArcadeGameContextMenu(game) {
     children(ref) {
       ref = ref.ref;
       const merged = Object.assign(ref, Object.assign({ ref: 0 }));
-      const IconButton = game(dependencyMap[12]).IconButton;
+      const IconButton = game(dependencyMap[13]).IconButton;
       const merged1 = Object.assign(merged);
       const intl = game(dependencyMap[6]).intl;
       const intl2 = game(dependencyMap[6]).intl;
-      return <IconButton ref={ref} variant="secondary-overlay" size="sm" icon={AssetRegistryDefault} accessibilityLabel={intl.string(game(dependencyMap[6]).t.reWgFH)} accessibilityHint={intl2.string(game(dependencyMap[6]).t.hd0b7t)} />;
+      return <IconButton ref={ref} variant="secondary-overlay" size="sm" icon={surface(dependencyMap[14])} accessibilityLabel={intl.string(game(dependencyMap[6]).t.reWgFH)} accessibilityHint={intl2.string(game(dependencyMap[6]).t.hd0b7t)} />;
     }
   };
   return tmp4(ContextMenu, obj2);

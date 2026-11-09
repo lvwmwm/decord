@@ -1,17 +1,17 @@
-// Module ID: 19335
-// Function ID: 19336
+// Module ID: 19739
+// Function ID: 19740
 // Name: HideSelfStreamAndVideoConfirmDialog
-// Dependencies: [19, 17, 19334, 21, 5014, 1113, 6030, 5624, 5932, 2]
+// Dependencies: [19, 17, 19738, 21, 5140, 1113, 6162, 5751, 6064, 2]
 // Exports: default
 
-// Module 19335 (HideSelfStreamAndVideoConfirmDialog)
+// Module 19739 (HideSelfStreamAndVideoConfirmDialog)
 import react_native from "react-native" /* 17 */;
-import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 5932 */;
-import AlertDefault from "Alert" /* 6030 */;
-import HideSelfStreamAndVideoConstants from "HideSelfStreamAndVideoConstants" /* 19334 */;
+import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 6064 */;
+import AlertDefault from "Alert" /* 6162 */;
+import HideSelfStreamAndVideoConstants from "HideSelfStreamAndVideoConstants" /* 19738 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -66,8 +66,8 @@ export default function HideSelfStreamAndVideoConfirmDialog(arg0) {
   intl6 = tmp6(1113).intl;
   obj2 = { style: tmp2.body, children: items };
   items = [, ];
-  const obj3 = { style: tmp2.description, variant: "text-sm/medium", children: stringResult1 };
-  items[0] = closure_5(tmp6(5624).Text, obj3);
+  const obj3 = { style: tmp2.description, variant: "body-sm/medium", children: stringResult1 };
+  items[0] = closure_5(tmp6(5751).Text, obj3);
   const obj4 = {
     accessibilityRole: "link",
     style: items1,
@@ -76,12 +76,12 @@ export default function HideSelfStreamAndVideoConfirmDialog(arg0) {
       const result = obj.updatedUnsyncedSettings({ disableHideSelfStreamAndVideoConfirmationAlert: true });
       onConfirm();
     },
-    variant: "text-sm/medium",
+    variant: "body-sm/medium",
     children: intl7.string(tmp6(1113).t["JdIQ/Y"])
   };
   items1 = [, ];
   ({ ctaLink: arr2[0], description: arr2[1] } = tmp2);
-  const Text = tmp6(5624).Text;
+  const Text = tmp6(5751).Text;
   intl7 = tmp6(1113).intl;
   items[1] = closure_5(Text, obj4);
   return closure_5(tmp12, obj);

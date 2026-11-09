@@ -1,11 +1,11 @@
-// Module ID: 11755
-// Function ID: 11756
+// Module ID: 11918
+// Function ID: 11919
 // Name: useParticipantTileTapGesture
-// Dependencies: [5303, 2]
+// Dependencies: [5420, 2]
 // Exports: default
 
-// Module 11755 (useParticipantTileTapGesture)
-import LegacyBaseButton from "LegacyBaseButton" /* 5303 */;
+// Module 11918 (useParticipantTileTapGesture)
+import LegacyBaseButton from "LegacyBaseButton" /* 5420 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/video_calls/native/useParticipantTileTapGesture.tsx");

@@ -1,21 +1,21 @@
-// Module ID: 11497
-// Function ID: 11498
+// Module ID: 11642
+// Function ID: 11643
 // Name: UserProfileAboutMeCardCommand
-// Dependencies: [19, 1072, 21, 5014, 575, 5624, 5207, 11498, 1252, 5760, 5258, 11504, 7700, 5683, 2]
+// Dependencies: [19, 1072, 21, 5140, 575, 5751, 5323, 11643, 1252, 5889, 5374, 11649, 7776, 5807, 2]
 
-// Module 11497 (UserProfileAboutMeCardCommand)
+// Module 11642 (UserProfileAboutMeCardCommand)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5683 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5760 */;
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7700 */;
-import MarkupReactCommandRule from "MarkupReactCommandRule" /* 11498 */;
-import navigateToLastChannelDefault from "navigateToLastChannel" /* 11504 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5807 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5889 */;
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7776 */;
+import MarkupReactCommandRule from "MarkupReactCommandRule" /* 11643 */;
+import navigateToLastChannelDefault from "navigateToLastChannel" /* 11649 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -33,7 +33,7 @@ const memoResult = react.memo(function UserProfileAboutMeCardCommand(channel) {
   let tmp = closure_5();
   const items = ["/", command.displayName];
   return jsxs(require("Text/Text").Text, {
-    variant: "text-md/bold",
+    variant: "body-md/semibold",
     onPress() {
       let str;
       let obj = require("ChatInputUtils");

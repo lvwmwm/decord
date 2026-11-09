@@ -1,16 +1,18 @@
-// Module ID: 7239
-// Function ID: 7240
+// Module ID: 7303
+// Function ID: 7304
 // Name: FastestList
-// Dependencies: [19, 17, 21, 7234, 7228, 7240, 7232, 2]
+// Dependencies: [19, 17, 21, 7298, 7292, 7304, 7296, 2]
 // Exports: default
 
-// Module 7239 (FastestList)
+// Module 7303 (FastestList)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import FastestListItemTypeDefault from "FastestListItemType" /* 7232 */;
-import FastList from "FastList" /* 7240 */;
+import FastestListItemTypeDefault from "FastestListItemType" /* 7296 */;
+import FastList from "FastList" /* 7304 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
+
+let keyExtractor;
 
 function noop() {
 
@@ -64,7 +66,7 @@ export default function FastestList(inActionSheet) {
     horizontal = false;
   }
   inActionSheet = inActionSheet.inActionSheet;
-  const keyExtractor = inActionSheet.keyExtractor;
+  keyExtractor = inActionSheet.keyExtractor;
   ({ listFooterAlwaysMounted, insetStart, insetEnd, itemSize, keyboardDismissMode, keyboardShouldPersistTaps, listFooterSize } = inActionSheet);
   if (listFooterAlwaysMounted === undefined) {
     listFooterAlwaysMounted = false;

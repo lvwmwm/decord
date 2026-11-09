@@ -1,19 +1,19 @@
-// Module ID: 12111
-// Function ID: 12112
+// Module ID: 12274
+// Function ID: 12275
 // Name: useConjurePublishPanel
-// Dependencies: [5, 32, 19, 4885, 4946, 6844, 1072, 6845, 3868, 12112, 12113, 12115, 10960, 12116, 1113, 504, 9031, 10875, 2]
-// Exports: default
+// Dependencies: [5, 32, 19, 5011, 5072, 6899, 1072, 6900, 4026, 1113, 12275, 12276, 12278, 10994, 12279, 504, 9111, 10996, 2]
+// Exports: conjurePublishComponents, default
 
-// Module 12111 (useConjurePublishPanel)
-import _modDef3868 from "module_3868" /* 3868 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6844 */;
-import ConjureProjectTypes from "ConjureProjectTypes" /* 6845 */;
-import ChannelPermissionsUtils from "ChannelPermissionsUtils" /* 9031 */;
+// Module 12274 (useConjurePublishPanel)
+import _modDef4026 from "module_4026" /* 4026 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6899 */;
+import ConjureProjectTypes from "ConjureProjectTypes" /* 6900 */;
+import ChannelPermissionsUtils from "ChannelPermissionsUtils" /* 9111 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4885 */;
-import PermissionStore_mod from "PermissionStore" /* 4946 */;
+import GuildStore_mod from "GuildStore" /* 5011 */;
+import PermissionStore from "PermissionStore" /* 5072 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -22,19 +22,30 @@ let _require, c1, c4, closure_2, importDefault;
 
 let c10;
 let c9;
+const f102467 = (item) => {
+  let intl;
+  let tmp;
+  let tmp2;
+  [tmp, tmp2] = item;
+  obj = { surface: tmp, label: intl.string(tmp2) };
+  intl = id(first[9]).intl;
+  return obj;
+};
 let _slicedToArray = _slicedToArray_mod;
-let PermissionStore = PermissionStore_mod;
+let GuildStore = GuildStore_mod;
 const isProjectOwner = ConjureProjectStore.isProjectOwner;
 ({ ChannelTypes: c9, Permissions: c10 } = Constants);
-let items = [ConjureProjectTypes.ConjureSupportedSurface.BOT, _modDef3868.UnoAgo];
-let items1 = [items, , , ];
-let items2 = [ConjureProjectTypes.ConjureSupportedSurface.ACTIVITY, _modDef3868["I88/iG"]];
+let items = [ConjureProjectTypes.ConjureSupportedSurface.BOT, _modDef4026.UnoAgo];
+let items1 = [items, , , , ];
+let items2 = [ConjureProjectTypes.ConjureSupportedSurface.ACTIVITY, _modDef4026["I88/iG"]];
 items1[1] = items2;
-let items3 = [ConjureProjectTypes.ConjureSupportedSurface.PROFILE_WIDGET, _modDef3868.gXY1x1];
+let items3 = [ConjureProjectTypes.ConjureSupportedSurface.VOICE_CHANNEL, _modDef4026.skjf5I];
 items1[2] = items3;
-let items4 = [ConjureProjectTypes.ConjureSupportedSurface.AUTOMOD, _modDef3868.Q9ruoM];
+let items4 = [ConjureProjectTypes.ConjureSupportedSurface.PROFILE_WIDGET, _modDef4026.gXY1x1];
 items1[3] = items4;
-let obj = { screen_capture: _modDef3868["8/7kE7"], connect_user_to_voice: _modDef3868.uvDWXa };
+const items5 = [ConjureProjectTypes.ConjureSupportedSurface.AUTOMOD, _modDef4026.Q9ruoM];
+items1[4] = items5;
+let obj = { screen_capture: _modDef4026["8/7kE7"], connect_user_to_voice: _modDef4026.uvDWXa };
 let result = size.fileFinishedImporting("modules/conjure/publish/useConjurePublishPanel.tsx");
 
 export default function useConjurePublishPanel(id, guildId) {
@@ -47,7 +58,6 @@ export default function useConjurePublishPanel(id, guildId) {
   let guild;
   let guild_id;
   let intl3;
-  let items;
   let liveDescription;
   let liveName;
   let memberCount;
@@ -59,11 +69,12 @@ export default function useConjurePublishPanel(id, guildId) {
   let tmp25;
   let tmp27;
   let tmp7;
+  let trimmed;
   _require = id;
   let obj = function _save() {
     let name;
     let user;
-    let obj = _asyncToGenerator(async (arg0, value) => {
+    obj = _asyncToGenerator(async (arg0, value) => {
       let closure_0;
       if (c4 === 2) {
         c4 = 3;
@@ -75,7 +86,7 @@ export default function useConjurePublishPanel(id, guildId) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c3;
@@ -92,7 +103,7 @@ export default function useConjurePublishPanel(id, guildId) {
             } else {
               const tmp36 = saving;
               if (!tmp36) {
-                if (null == PermissionStore) {
+                if (null == GuildStore) {
                   closure_2_3(true);
                   c3 = 1;
                   let tmp14 = closure_2_4;
@@ -127,7 +138,7 @@ export default function useConjurePublishPanel(id, guildId) {
             c3 = 0;
             closure_128_3(false);
             c4 = 3;
-            const obj = { value, done: true };
+            obj = { value, done: true };
             return obj;
           }
           c3 = 0;
@@ -154,9 +165,9 @@ export default function useConjurePublishPanel(id, guildId) {
   const tmp4 = require("useConjureAppIdentityDraft")(id.id);
   importDefault = tmp4;
   let items4 = require("useConjurePreviewDevicePermissions")(id.id);
-  obj = items;
-  [str, tmp7] = items.useState(id.name);
-  [saving, closure_3] = items.useState(false);
+  obj = trimmed;
+  [str, tmp7] = trimmed.useState(id.name);
+  [saving, closure_3] = trimmed.useState(false);
   let tmp10 = null == guildId.status;
   if (!tmp10) {
     let obj2 = require("ConjurePublishTypes");
@@ -164,20 +175,20 @@ export default function useConjurePublishPanel(id, guildId) {
   }
   let tmp12 = tmp10;
   if (tmp12) {
-    tmp12 = guild_id(id);
+    tmp12 = obj(id);
   }
   _slicedToArray = tmp12;
-  items = tmp10 ? id.preview_supported_surfaces : id.supported_surfaces;
+  let items = tmp10 ? id.preview_supported_surfaces : id.supported_surfaces;
   if (items == null) {
     items = [];
   }
-  const trimmed = str.trim();
+  trimmed = str.trim();
   let result = null;
   if (tmp12) {
     let obj3 = require("conjureProjectNameError");
     result = obj3.conjureProjectNameError(trimmed);
   }
-  PermissionStore = result;
+  GuildStore = result;
   const status = guildId.status;
   let previewAppChannels;
   if (status != null) {
@@ -191,7 +202,7 @@ export default function useConjurePublishPanel(id, guildId) {
     arr4 = previewAppChannels;
     const tmp17 = _require;
     if (items.includes(require("ConjureProjectTypes").ConjureSupportedSurface.APP_CHANNEL)) {
-      let intl = tmp17(tmp2[14]).intl;
+      let intl = tmp17(tmp2[9]).intl;
       items1 = [intl.string(tmp(tmp2[8]).xI4N6Q)];
       arr4 = items1;
     }
@@ -217,7 +228,7 @@ export default function useConjurePublishPanel(id, guildId) {
   }
   guild_id = tmp21;
   let obj4 = require("get initialized");
-  const items2 = [trimmed, PermissionStore];
+  const items2 = [GuildStore, guild_id];
   const items3 = [tmp21];
   let obj5 = {
     initial: tmp10,
@@ -231,15 +242,7 @@ export default function useConjurePublishPanel(id, guildId) {
     initialChannelNames: arr4,
     channels,
     appChannelsPrivate: tmp25,
-    components: found.map((item) => {
-      let intl;
-      let tmp;
-      let tmp2;
-      [tmp, tmp2] = item;
-      const obj = { surface: tmp, label: intl.string(tmp2) };
-      intl = id(first[14]).intl;
-      return obj;
-    }),
+    components: found.map(f102467),
     devicePermissions: items4,
     note: stringResult,
     sharing: tmp27,
@@ -288,7 +291,7 @@ export default function useConjurePublishPanel(id, guildId) {
     if ("guild" === id.install_scope) {
       stringResult = null;
       if (items.includes(require("ConjureProjectTypes").ConjureSupportedSurface.AUTOMOD)) {
-        const intl2 = tmp23(tmp2[14]).intl;
+        const intl2 = tmp23(tmp2[9]).intl;
         stringResult = intl2.string(tmp(tmp2[8]).bljqPk);
       }
     }
@@ -297,7 +300,7 @@ export default function useConjurePublishPanel(id, guildId) {
     const obj7 = { guild, caption: formatToPlainStringResult };
     formatToPlainStringResult = null;
     if (null != memberCount) {
-      const intl4 = tmp23(tmp2[14]).intl;
+      const intl4 = tmp23(tmp2[9]).intl;
       const obj8 = { count: memberCount };
       formatToPlainStringResult = intl4.formatToPlainString(tmp(tmp2[8]).ZpZxK9, obj8);
     }
@@ -306,11 +309,20 @@ export default function useConjurePublishPanel(id, guildId) {
     tmp27 = null;
     if ("user" === id.install_scope) {
       const obj9 = { guild: null, caption: intl3.string(tmp(tmp2[8]).RUhWLH) };
-      intl3 = tmp23(tmp2[14]).intl;
+      intl3 = tmp23(tmp2[9]).intl;
       tmp27 = obj9;
     }
   }
   return obj5;
 };
 export const CONJURE_PUBLISH_COMPONENTS = items1;
+export function conjurePublishComponents(arg0) {
+  let closure_0 = arg0;
+  const found = items1.filter((item) => {
+    let tmp;
+    [tmp] = item;
+    return items.includes(tmp);
+  });
+  return found.map(f102467);
+}
 export const CONJURE_PUBLISH_PERMISSION_LABELS = obj;

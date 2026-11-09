@@ -1,18 +1,18 @@
-// Module ID: 18578
-// Function ID: 18579
+// Module ID: 18936
+// Function ID: 18937
 // Name: ReplyRow
-// Dependencies: [19, 17, 21, 18523, 575, 6980, 5624, 9452, 2]
+// Dependencies: [19, 17, 21, 18878, 575, 7043, 5751, 9533, 2]
 // Exports: ContentInventoryReplyRow
 
-// Module 18578 (ReplyRow)
+// Module 18936 (ReplyRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import Pressables from "Pressables" /* 6980 */;
-import ReactionIcon from "ReactionIcon" /* 9452 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import Pressables from "Pressables" /* 7043 */;
+import ReactionIcon from "ReactionIcon" /* 9533 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createICYMIStyles from "createICYMIStyles" /* 18523 */;
+import createICYMIStyles from "createICYMIStyles" /* 18878 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_4;
@@ -47,7 +47,7 @@ export function ContentInventoryReplyRow(reactText) {
   obj3 = { style: tmp.contentInventoryContainer, children: items };
   PressableOpacity = Pressables.PressableOpacity;
   items = [, ];
-  const obj4 = { variant: "text-md/medium", color: "input-placeholder-text-default", lineClamp: 1, style: tmp.contentInventoryText, children: reactText };
+  const obj4 = { variant: "body-md/medium", color: "input-placeholder-text-default", lineClamp: 1, style: tmp.contentInventoryText, children: reactText };
   items[0] = React3(Text_Text.Text, obj4);
   const obj5 = { style: tmp.icon, size: "custom" };
   items[1] = React3(ReactionIcon.ReactionIcon, obj5);

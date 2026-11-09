@@ -1,114 +1,132 @@
-// Module ID: 17395
-// Function ID: 17396
+// Module ID: 17721
+// Function ID: 17722
 // Name: FloatingApplyButton
-// Dependencies: [19, 5015, 1621, 21, 504, 1625, 5095, 575, 5637, 5260, 5634, 2]
+// Dependencies: [19, 5141, 1623, 21, 504, 1627, 1652, 575, 5761, 5376, 5758, 2]
 // Exports: default
 
-// Module 17395 (FloatingApplyButton)
+// Module 17721 (FloatingApplyButton)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1621 */;
-import HapticUtils from "HapticUtils" /* 5260 */;
-import spring from "spring" /* 5637 */;
+import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1623 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
+import HapticUtils from "HapticUtils" /* 5376 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5015 */;
+import AccessibilityStore from "AccessibilityStore" /* 5141 */;
 import size from "module_2" /* 2 */;
 
-const MEDIA_PICKER_SEND_BUTTON_SPRING = MediaKeyboardConstants.MEDIA_PICKER_SEND_BUTTON_SPRING;
+let closure_5 = MediaKeyboardConstants.MEDIA_PICKER_SEND_BUTTON_SPRING;
 const jsx = Fragment.jsx;
-const __initData = { code: "function FloatingApplyButtonTsx1(){const{visible}=this.__closure;return{pointerEvents:visible?'box-none':'none'};}" };
-const __initData2 = { code: "function FloatingApplyButtonTsx2(){const{visible,tokens,reducedMotion,withSpring,MEDIA_PICKER_SEND_BUTTON_SPRING}=this.__closure;const targetOpacity=visible?1:0;const targetTranslateY=visible?0:60;const targetScale=visible?1:0.9;return{position:'absolute',bottom:0,left:0,right:0,marginHorizontal:tokens.space.PX_16,flexDirection:'column',justifyContent:'flex-end',transform:[{translateY:reducedMotion?targetTranslateY:withSpring(targetTranslateY,MEDIA_PICKER_SEND_BUTTON_SPRING)},{scale:reducedMotion?targetScale:withSpring(targetScale,MEDIA_PICKER_SEND_BUTTON_SPRING)}],opacity:reducedMotion?targetOpacity:withSpring(targetOpacity,MEDIA_PICKER_SEND_BUTTON_SPRING)};}" };
+let closure_7 = { code: "(function FloatingApplyButtonTsx1(){let[visible]=this.__closure;return{pointerEvents:visible?'box-none':'none'};})" };
+let closure_8 = { code: "(function FloatingApplyButtonTsx2(){let[visible,tokens,reducedMotion,withSpring,MEDIA_PICKER_SEND_BUTTON_SPRING]=this.__closure;const targetOpacity=visible?1:0;const targetTranslateY=visible?0:60;const targetScale=visible?1:0.9;return{position:'absolute',bottom:0,left:0,right:0,marginHorizontal:tokens.space.PX_16,flexDirection:'column',justifyContent:'flex-end',transform:[{translateY:reducedMotion?targetTranslateY:withSpring(targetTranslateY,MEDIA_PICKER_SEND_BUTTON_SPRING)},{scale:reducedMotion?targetScale:withSpring(targetScale,MEDIA_PICKER_SEND_BUTTON_SPRING)}],opacity:reducedMotion?targetOpacity:withSpring(targetOpacity,MEDIA_PICKER_SEND_BUTTON_SPRING)};})" };
 let result = size.fileFinishedImporting("modules/custom_typing_indicator/native/FloatingApplyButton.tsx");
 
-export default function FloatingApplyButton(visible) {
+export default function FloatingApplyButton(renderButton) {
   let disabled;
   let onPress;
   let text;
+  let tmp10;
+  let tmp11;
+  let tmp12;
+  let tmp13;
+  let tmp14;
+  let tmp5;
+  let tmp6;
+  let tmp9;
   let useReducedMotion;
-  visible = visible.visible;
-  ({ disabled, text, onPress } = visible);
-  const renderButton = visible.renderButton;
-  let stateFromStores;
-  const loading = visible.loading;
-  let obj = visible(stateFromStores[4]);
+  let visible;
+  ({ visible, disabled, text, onPress } = renderButton);
+  renderButton = renderButton.renderButton;
+  const loading = renderButton.loading;
+  let obj = onPress(504);
   let items = [AccessibilityStore];
-  const tmp2 = stateFromStores;
-  stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
-  const bottom = onPress(stateFromStores[5])().bottom;
-  let obj2 = visible(stateFromStores[6]);
-  const tmp = visible;
-  class I {
+  const stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
+  const bottom = useSafeAreaInsetsDefault().bottom;
+  const items1 = [closure_7, visible];
+  let c0;
+  [tmp5, tmp6] = items1;
+  const obj2 = onPress(1652);
+  class FloatingApplyButtonTsx1 {
     constructor() {
       let pointerEvents = "none";
-      if (visible) {
+      if (c0) {
         pointerEvents = "box-none";
       }
       return { pointerEvents };
     }
   }
-  I.__closure = { visible };
-  I.__workletHash = 8866673550486;
-  I.__initData = __initData;
-  const animatedProps = obj2.useAnimatedProps(I);
-  let obj3 = visible(stateFromStores[6]);
-  class P {
+  const items2 = [tmp6];
+  FloatingApplyButtonTsx1.__closure = items2;
+  FloatingApplyButtonTsx1.__workletHash = 4329148887087;
+  FloatingApplyButtonTsx1.__initData = tmp5;
+  const animatedProps = obj2.useAnimatedProps(FloatingApplyButtonTsx1);
+  const items3 = [closure_8, visible, , , , ];
+  const useAnimatedStyle = tmp(1652).useAnimatedStyle;
+  onPress(1652);
+  items3[2] = nativeDefault;
+  items3[3] = stateFromStores;
+  items3[4] = onPress(5761).withSpring;
+  items3[5] = closure_5;
+  c0 = undefined;
+  let c1;
+  let c2;
+  let c3;
+  let c4;
+  [tmp9, tmp10, tmp11, tmp12, tmp13, tmp14] = items3;
+  class FloatingApplyButtonTsx2 {
     constructor() {
       let items;
-      let withSpringResult2;
+      let tmp9;
       let num = 0;
-      if (visible) {
+      if (c0) {
         num = 1;
       }
       let num2 = 60;
-      if (visible) {
+      if (c0) {
         num2 = 0;
       }
       let num3 = 0.9;
-      if (visible) {
+      if (c0) {
         num3 = 1;
       }
-      const rect = { position: "absolute", bottom: 0, left: 0, right: 0, marginHorizontal: nativeDefault.space.PX_16, flexDirection: "column", justifyContent: "flex-end", transform: items, opacity: withSpringResult2 };
-      let withSpringResult = num2;
-      if (!stateFromStores) {
-        const obj2 = spring;
-        withSpringResult = obj2.withSpring(num2, MEDIA_PICKER_SEND_BUTTON_SPRING);
+      const rect = { position: "absolute", bottom: 0, left: 0, right: 0, marginHorizontal: _undefined.space.PX_16, flexDirection: "column", justifyContent: "flex-end", transform: items, opacity: tmp9 };
+      let tmp3 = num2;
+      if (!c2) {
+        tmp3 = _undefined2(num2, c4);
       }
-      items = [{ translateY: withSpringResult }, ];
-      let withSpringResult1 = num3;
-      if (!stateFromStores) {
-        const obj3 = spring;
-        withSpringResult1 = obj3.withSpring(num3, MEDIA_PICKER_SEND_BUTTON_SPRING);
+      items = [{ translateY: tmp3 }, ];
+      let tmp6 = num3;
+      if (!c2) {
+        tmp6 = _undefined2(num3, c4);
       }
-      items[1] = { scale: withSpringResult1 };
-      withSpringResult2 = num;
-      if (!stateFromStores) {
-        const obj4 = spring;
-        withSpringResult2 = obj4.withSpring(num, MEDIA_PICKER_SEND_BUTTON_SPRING);
+      items[1] = { scale: tmp6 };
+      tmp9 = num;
+      if (!c2) {
+        tmp9 = _undefined2(num, c4);
       }
       return rect;
     }
   }
-  let obj4 = { visible, tokens: onPress(stateFromStores[7]), reducedMotion: stateFromStores, withSpring: visible(stateFromStores[8]).withSpring, MEDIA_PICKER_SEND_BUTTON_SPRING };
-  P.__closure = obj4;
-  P.__workletHash = 17409059357308;
-  P.__initData = __initData2;
-  const items1 = [onPress];
-  const animatedStyle = obj3.useAnimatedStyle(P);
+  const items4 = [tmp10, tmp11, tmp12, tmp13, tmp14];
+  FloatingApplyButtonTsx2.__closure = items4;
+  FloatingApplyButtonTsx2.__workletHash = 13112691757829;
+  FloatingApplyButtonTsx2.__initData = tmp9;
+  const items5 = [onPress];
+  const animatedStyle = useAnimatedStyle(FloatingApplyButtonTsx2);
   const callback = react.useCallback(() => {
     const obj = HapticUtils;
     const result = obj.triggerHapticFeedback(HapticUtils.HapticFeedbackTypes.IMPACT_MEDIUM);
     onPress();
-  }, items1);
-  const View = onPress(stateFromStores[6]).View;
+  }, items5);
+  const View = tmp4(1652).View;
   let renderButtonResult;
-  const View2 = onPress(stateFromStores[6]).View;
+  const View2 = tmp4(1652).View;
   if (renderButton != null) {
-    const obj7 = { text, disabled, onPress: callback };
-    renderButtonResult = renderButton(obj7);
+    const obj5 = { text, disabled, onPress: callback };
+    renderButtonResult = renderButton(obj5);
   }
   if (renderButtonResult == null) {
-    const obj8 = { variant: "primary", size: "lg", disabled, onPress: callback, text, loading };
-    renderButtonResult = tmp7(tmp(tmp2[10]).Button, obj8);
+    const obj6 = { variant: "primary", size: "lg", disabled, onPress: callback, text, loading };
+    renderButtonResult = tmp17(tmp(5758).Button, obj6);
   }
   return <View style={animatedStyle}>{null}</View>;
 };

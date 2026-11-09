@@ -1,15 +1,15 @@
-// Module ID: 14689
-// Function ID: 14690
+// Module ID: 14925
+// Function ID: 14926
 // Name: useRefocusOrLaunchActivity
-// Dependencies: [5, 19, 6846, 4862, 6847, 6881, 504, 10927, 11698, 11693, 2]
+// Dependencies: [5, 19, 6901, 4988, 6902, 6936, 504, 11061, 11861, 11854, 2]
 // Exports: default
 
-// Module 14689 (useRefocusOrLaunchActivity)
-import FramesConstants from "FramesConstants" /* 6847 */;
+// Module 14925 (useRefocusOrLaunchActivity)
+import FramesConstants from "FramesConstants" /* 6902 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import FramesStore from "FramesStore" /* 6846 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4862 */;
+import FramesStore from "FramesStore" /* 6901 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4988 */;
 import size from "module_2" /* 2 */;
 
 let c4;
@@ -45,7 +45,7 @@ export default function useRefocusOrLaunchActivity(applicationId) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -113,7 +113,7 @@ export default function useRefocusOrLaunchActivity(applicationId) {
           }
         }
         c4 = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp22) {
         runBeforeLaunchAttempt = tmp22;
         if (0 === c3) {

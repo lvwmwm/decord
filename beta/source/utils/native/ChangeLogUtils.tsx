@@ -1,20 +1,18 @@
-// Module ID: 8569
-// Function ID: 8570
+// Module ID: 8640
+// Function ID: 8641
 // Name: utils/ChangeLogUtils
-// Dependencies: [19, 17, 21, 5014, 575, 6778, 6031, 5624, 8570, 7149, 8571, 8572, 2]
+// Dependencies: [19, 17, 21, 5140, 575, 6833, 6163, 5751, 8641, 8642, 8643, 2]
 
-// Module 8569 (utils/ChangeLogUtils)
+// Module 8640 (utils/ChangeLogUtils)
 import react_native from "react-native" /* 17 */;
 import Fragment2 from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import LegacyTokens from "LegacyTokens" /* 6778 */;
-import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7149 */;
-import MarkupRulesUtils from "MarkupRulesUtils" /* 8571 */;
-import ChangelogInlineImageDefault from "ChangelogInlineImage" /* 8572 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import LegacyTokens from "LegacyTokens" /* 6833 */;
+import ChangelogInlineImageDefault from "ChangelogInlineImage" /* 8643 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5014 */;
-import CustomMarkup from "CustomMarkup" /* 6031 */;
+import createStyles_mod from "createStyles" /* 5140 */;
+import CustomMarkup from "CustomMarkup" /* 6163 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -22,6 +20,8 @@ let closure_4, item, length;
 
 let obj2;
 let obj3;
+let tmp2;
+const MarkupRulesUtils = tmp2(8642);
 function ChangeLogLink(arg0) {
   let node;
   let output;
@@ -58,7 +58,7 @@ function ChangeLogList(styling) {
         if ("list" === type.type) {
           if (closure_4.length > 0) {
             const push2 = items.push;
-            const obj2 = { variant: "text-sm/normal", children: closure_0(closure_4, obj) };
+            const obj2 = { variant: "body-sm/normal", children: closure_0(closure_4, obj) };
             const Text = item(closure_2_2[7]).Text;
             const merged = Object.assign(closure_2);
             const _HermesInternal = HermesInternal;
@@ -74,11 +74,11 @@ function ChangeLogList(styling) {
       });
       if (length.length > 0) {
         let push = items.push;
-        let obj2 = { variant: "text-sm/normal", children: tmp(length, obj) };
+        let obj2 = { variant: "body-sm/normal", children: tmp(length, obj) };
         let Text = Text_Text.Text;
         const merged1 = Object.assign(arg0);
         let _HermesInternal = HermesInternal;
-        push(<Text key={"text-" + items.length} variant="text-sm/normal">{require(length, obj)}</Text>);
+        push(<Text key={"text-" + items.length} variant="body-sm/normal">{require(length, obj)}</Text>);
         length = [];
       }
       return items;
@@ -100,15 +100,15 @@ function ChangeLogParagraph(state) {
     Paragraph = components.Paragraph;
   }
   if (Paragraph == null) {
-    Paragraph = output(5624).Text;
+    Paragraph = output(5751).Text;
   }
   let tmp6 = dependencyMap;
-  const obj = output(8570);
+  const obj = output(8641);
   const result = obj.splitParagraphAtImages(node.content);
   const tmp5 = output;
   if (true !== state.changelogImagesDisabled) {
     let tmp7;
-    const tmp5Result = tmp5(8570);
+    const tmp5Result = tmp5(8641);
     if (tmp5Result.hasImageSegment(result)) {
       tmp7 = <View key={state.key}>{result.map((type, index) => {
         let tmp6;
@@ -119,41 +119,33 @@ function ChangeLogParagraph(state) {
           const merged = Object.assign(state);
           tmp6 = < key={arg1}>{output(items, obj3)}</>;
         } else {
-          tmp6 = <Paragraph key={arg1} variant="text-sm/normal" style={text.text}>{output(arg0.nodes, state)}</Paragraph>;
+          tmp6 = <Paragraph key={arg1} variant="body-sm/normal" style={text.text}>{output(arg0.nodes, state)}</Paragraph>;
         }
         return tmp6;
       })}</View>;
     }
     return tmp7;
   }
-  tmp7 = <Paragraph key={state.key} variant="text-sm/normal" style={tmp.text}>{output(node.content, state)}</Paragraph>;
+  tmp7 = <Paragraph key={state.key} variant="body-sm/normal" style={tmp.text}>{output(node.content, state)}</Paragraph>;
 }
-function ChangeLogStrong(arg0) {
+function ChangeLogStrong(state) {
   let node;
   let output;
-  let reactResult;
-  let state;
-  let tmpResult;
-  ({ node, output, state } = arg0);
-  const obj = ManaTypeConsolidationExperiment;
-  if (obj.useManaTypeConsolidationExperiment("ChangeLogStrong")) {
-    let str;
-    const Text = tmp(5624).Text;
-    const tmp5 = jsx;
-    if (state != null) {
-      str = state.textColor;
-    }
-    if (str == null) {
-      str = "text-default";
-    }
-    const obj2 = { variant: "experimental/body-sm/semibold", color: str, children: tmpResult.smartOutput(node, output, state) };
-    tmpResult = MarkupRulesUtils;
-    reactResult = tmp5(Text, obj2);
-  } else {
-    const strong = rules.strong;
-    reactResult = strong.react(node, output, state);
+  let tmp2Result;
+  state = state.state;
+  ({ node, output } = state);
+  let str;
+  const Text = Text_Text.Text;
+  const tmp = jsx;
+  if (state != null) {
+    str = state.textColor;
   }
-  return reactResult;
+  if (str == null) {
+    str = "text-default";
+  }
+  const obj = { variant: "body-sm/semibold", color: str, children: tmp2Result.smartOutput(node, output, state) };
+  tmp2Result = MarkupRulesUtils;
+  return tmp(Text, obj);
 }
 function ChangeLogBlockQuote(state) {
   let content;
@@ -163,7 +155,7 @@ function ChangeLogBlockQuote(state) {
   state = state.state;
   ({ node, output } = state);
   const tmp = closure_6();
-  ({ variant: "text-sm/normal", style: tmp.text, children: output(content, obj3) });
+  ({ variant: "body-sm/normal", style: tmp.text, children: output(content, obj3) });
   obj3 = { changelogImagesDisabled: true };
   const Text = Text_Text.Text;
   content = node.content;
@@ -179,12 +171,12 @@ createStyles = createStyles.createStyles;
 obj3 = { borderLeftWidth: 2, paddingLeft: 8, marginBottom: 10, borderLeftColor: LegacyTokens.DARK_PRIMARY_500_LIGHT_PRIMARY_300 };
 ({ fontSize: 14, lineHeight: 18, marginBottom: 8, color: nativeDefault.colors.TEXT_MUTED });
 let closure_6 = createStyles(obj);
-const rules = CustomMarkup.createRules({});
 const obj5 = {
-  link(dependencyMap) {
+  link(inlineStoreParams) {
+    const styling = inlineStoreParams;
     return {
       react(node, output, state) {
-        return <ChangeLogLink key={arg2.key} accessibilityRole="link" node={arg0} output={arg1} state={arg2} styling={dependencyMap} />;
+        return <ChangeLogLink key={arg2.key} accessibilityRole="link" node={arg0} output={arg1} state={arg2} styling={styling} />;
       }
     };
   },
@@ -238,6 +230,7 @@ const obj5 = {
     };
   }
 };
+const rules = CustomMarkup.createRules({});
 let result = size.fileFinishedImporting("utils/native/ChangeLogUtils.tsx");
 
 export const baseRules = rules;

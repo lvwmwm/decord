@@ -1,16 +1,17 @@
-// Module ID: 14134
-// Function ID: 14135
+// Module ID: 14377
+// Function ID: 14378
 // Name: GuildPowerupsWarning
-// Dependencies: [19, 17, 21, 5014, 575, 7149, 14135, 7086, 5624, 2]
+// Dependencies: [19, 17, 21, 5140, 575, 14378, 7152, 5751, 2]
 // Exports: default
 
-// Module 14134 (GuildPowerupsWarning)
+// Module 14377 (GuildPowerupsWarning)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5624 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import useGuildPowerupsWarningConfigDefault from "useGuildPowerupsWarningConfig" /* 14378 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -25,7 +26,7 @@ const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let createStyles = createStyles_mod;
 let obj = { container: obj2, contentContainer: obj3, warningText: obj4, text: { textAlign: "center" } };
-obj2 = { flexDirection: "row", alignItems: "flex-start", padding: nativeDefault.space.PX_24, backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_WARNING, borderWidth: 1, borderColor: nativeDefault.colors.STATUS_WARNING, borderRadius: nativeDefault.radii.lg, gap: nativeDefault.space.PX_8, overflow: "hidden" };
+obj2 = { flexDirection: "row", alignItems: "flex-start", padding: nativeDefault.space.PX_24, backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_MOD_WARNING, borderWidth: 1, borderColor: nativeDefault.colors.STATUS_WARNING, borderRadius: nativeDefault.radii.lg, gap: nativeDefault.space.PX_8, overflow: "hidden" };
 createStyles = createStyles.createStyles;
 obj3 = { flex: 1, gap: nativeDefault.space.PX_4, alignItems: "center" };
 obj4 = { marginTop: nativeDefault.space.PX_4 };
@@ -36,52 +37,39 @@ export default function GuildPowerupsWarning(warnings) {
   let closure_0;
   let guildId;
   let items;
-  let obj3;
+  let obj2;
   let powerupNames;
-  let tmp12;
+  let tmp10;
   warnings = warnings.warnings;
   ({ guildId, powerupNames } = warnings);
-  let tmp = closure_6();
+  const tmp = closure_6();
   _require = tmp;
-  let obj = require("ManaTypeConsolidationExperiment");
-  const manaTypeConsolidationExperiment = obj.useManaTypeConsolidationExperiment("GuildPowerupsWarning");
-  let tmp10Result = null;
-  const tmp5 = manaTypeConsolidationExperiment;
-  const tmp6 = manaTypeConsolidationExperiment(14135)(guildId, powerupNames);
-  if (tmp6.shouldShow) {
-    const obj2 = { style: tmp.container, children: tmp12(View, obj3) };
-    obj3 = { style: tmp.contentContainer, children: items };
-    const obj4 = { color: tmp5(575).colors.TEXT_FEEDBACK_WARNING, size: "md" };
-    const CircleErrorIcon = tmp2(7086).CircleErrorIcon;
-    items = [closure_4(CircleErrorIcon, obj4), , , ];
-    const obj5 = { variant: "text-md/semibold", color: "text-feedback-warning", style: tmp.text, children: tmp7 };
-    items[1] = closure_4(require("Text/Text").Text, obj5);
-    let str = "text-sm/medium";
-    let Text = tmp2(5624).Text;
-    tmp12 = closure_5;
-    if (manaTypeConsolidationExperiment) {
-      str = "experimental/body-sm/normal";
-    }
-    const obj6 = { variant: str, style: tmp.text, children: tmp8 };
-    items[2] = closure_4(Text, obj6);
+  let tmp8Result = null;
+  const tmp4 = useGuildPowerupsWarningConfigDefault(guildId, powerupNames);
+  if (tmp4.shouldShow) {
+    let obj = { style: tmp.container, children: tmp10(View, obj2) };
+    obj2 = { style: tmp.contentContainer, children: items };
+    const obj3 = { color: nativeDefault.colors.TEXT_FEEDBACK_WARNING, size: "md" };
+    const CircleErrorIcon = require("CircleErrorIcon").CircleErrorIcon;
+    items = [closure_4(CircleErrorIcon, obj3), , , ];
+    const obj4 = { variant: "body-md/semibold", color: "text-feedback-warning", style: tmp.text, children: tmp5 };
+    items[1] = closure_4(require("Text/Text").Text, obj4);
+    const obj5 = { variant: "body-sm/normal", style: tmp.text, children: tmp6 };
+    items[2] = closure_4(require("Text/Text").Text, obj5);
     let mapped;
+    tmp10 = closure_5;
+    const tmp8 = closure_4;
     if (warnings != null) {
       mapped = warnings.map((children, index) => {
         let items;
-        let str = "text-sm/medium";
-        const Text = Text_Text.Text;
-        const tmp = React3;
-        if (manaTypeConsolidationExperiment) {
-          str = "experimental/body-sm/normal";
-        }
-        const obj = { variant: str, color: "text-feedback-warning", style: items, children };
+        const obj = { variant: "body-sm/normal", color: "text-feedback-warning", style: items, children };
         items = [, ];
         ({ warningText: arr[0], text: arr[1] } = closure_0);
-        return tmp(Text, obj, "warning-" + index);
+        return React3(Text_Text.Text, obj, "warning-" + index);
       });
     }
     items[3] = mapped;
-    tmp10Result = tmp10(tmp11, obj2);
+    tmp8Result = tmp8(tmp9, obj);
   }
-  return tmp10Result;
+  return tmp8Result;
 };

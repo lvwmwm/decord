@@ -1,23 +1,26 @@
-// Module ID: 19329
-// Function ID: 19330
+// Module ID: 19733
+// Function ID: 19734
 // Name: useControlAccessoryHeight
-// Dependencies: [19, 11222, 19294, 5095, 19300, 19161, 19298, 2]
+// Dependencies: [19, 11362, 19699, 1652, 19705, 19537, 19703, 2]
 // Exports: default
 
-// Module 19329 (useControlAccessoryHeight)
-import VoicePanelConsoleStatus from "VoicePanelConsoleStatus" /* 19300 */;
+// Module 19733 (useControlAccessoryHeight)
+import VoicePanelConsoleStatus from "VoicePanelConsoleStatus" /* 19705 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
 let set;
 
-let closure_4 = { code: "function useControlAccessoryHeightTsx1(){const{consoleStatusHeight,floatingCTAHeight}=this.__closure;return consoleStatusHeight.get()+floatingCTAHeight.get();}" };
+let closure_4 = { code: "(function useControlAccessoryHeightTsx1(){let[consoleStatusHeight,floatingCTAHeight]=this.__closure;return consoleStatusHeight.get()+floatingCTAHeight.get();})" };
 let result = size.fileFinishedImporting("modules/voice_panel/native/hooks/useControlAccessoryHeight.tsx");
 
 export default function useControlAccessoryHeight() {
   let sharedValue;
   let sharedValue1;
   let shouldShowFloatingCTA;
+  let tmp7;
+  let tmp8;
+  let tmp9;
   const channelId = sharedValue1.useContext(sharedValue(shouldShowFloatingCTA[1])).channelId;
   const isConnectingOrConnectedToConsole = sharedValue(shouldShowFloatingCTA[2])(channelId).isConnectingOrConnectedToConsole;
   const obj = isConnectingOrConnectedToConsole(shouldShowFloatingCTA[3]);
@@ -46,13 +49,18 @@ export default function useControlAccessoryHeight() {
     }
     const result = set(num);
   }, items1);
-  const fn = function l() {
-    const value = sharedValue.get();
-    return value + sharedValue1.get();
-  };
-  fn.__closure = { consoleStatusHeight: sharedValue, floatingCTAHeight: sharedValue1 };
-  fn.__workletHash = 7974849446653;
-  fn.__initData = floatingCTATotalViewHeight;
+  const items2 = [floatingCTATotalViewHeight, sharedValue, sharedValue1];
+  let c0;
+  let c1;
+  [tmp7, tmp8, tmp9] = items2;
+  function useControlAccessoryHeightTsx1() {
+    const value = _undefined.get();
+    return value + _undefined2.get();
+  }
+  const items3 = [tmp8, tmp9];
+  useControlAccessoryHeightTsx1.__closure = items3;
+  useControlAccessoryHeightTsx1.__workletHash = 1979848822852;
+  useControlAccessoryHeightTsx1.__initData = tmp7;
   const obj5 = isConnectingOrConnectedToConsole(shouldShowFloatingCTA[3]);
-  return obj5.useDerivedValue(fn);
+  return obj5.useDerivedValue(useControlAccessoryHeightTsx1);
 };

@@ -1,17 +1,17 @@
-// Module ID: 12009
-// Function ID: 12010
+// Module ID: 12175
+// Function ID: 12176
 // Name: ScreenshareParticipant
-// Dependencies: [19, 17, 6714, 1072, 21, 5014, 575, 11755, 504, 5303, 5624, 1113, 5634, 11920, 2]
+// Dependencies: [19, 17, 6769, 1072, 21, 5140, 575, 11918, 504, 5420, 5751, 1113, 5758, 12086, 2]
 // Exports: default
 
-// Module 12009 (ScreenshareParticipant)
+// Module 12175 (ScreenshareParticipant)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import react from "react" /* 19 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6714 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6769 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let currentUserActiveStream;
@@ -72,7 +72,7 @@ export default function ScreenshareParticipant(participant) {
   obj3 = { style: items3, children: items4 };
   items3 = [tmp5.container, containerStyle];
   const GestureDetector = participant(onDoubleTap[9]).GestureDetector;
-  const obj4 = { style: tmp5.title, accessibilityRole: "header", variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: stringResult };
+  const obj4 = { style: tmp5.title, accessibilityRole: "header", variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: stringResult };
   const Text = participant(onDoubleTap[10]).Text;
   const intl = participant(onDoubleTap[11]).intl;
   const string = intl.string;
@@ -85,7 +85,7 @@ export default function ScreenshareParticipant(participant) {
     stringResult = string(t.gMOwov);
   }
   items4 = [closure_7(Text, obj4), , ];
-  const obj5 = { style: tmp5.description, variant: "text-sm/medium", color: "interactive-text-default", children: string2Result };
+  const obj5 = { style: tmp5.description, variant: "body-sm/medium", color: "interactive-text-default", children: string2Result };
   const Text2 = tmp6(tmp3[10]).Text;
   const intl2 = tmp6(tmp3[11]).intl;
   const string2 = intl2.string;

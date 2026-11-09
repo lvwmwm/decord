@@ -1,17 +1,17 @@
-// Module ID: 13415
-// Function ID: 13416
+// Module ID: 13647
+// Function ID: 13648
 // Name: Checkpoint2026ForwardPreview
-// Dependencies: [19, 17, 21, 5014, 6088, 6091, 6087, 1892, 5717, 13416, 575, 2]
+// Dependencies: [19, 17, 21, 5140, 6570, 6223, 6220, 2021, 5842, 13648, 575, 2]
 // Exports: default
 
-// Module 13415 (Checkpoint2026ForwardPreview)
+// Module 13647 (Checkpoint2026ForwardPreview)
 import Fragment from "Fragment" /* 21 */;
-import react_nativeDefault from "react-native" /* 1892 */;
-import FastImageDefault from "FastImage" /* 5717 */;
-import checkpoint_CheckpointMessageComponentUtils from "checkpoint/CheckpointMessageComponentUtils" /* 6087 */;
+import react_nativeDefault from "react-native" /* 2021 */;
+import FastImageDefault from "FastImage" /* 5842 */;
+import checkpoint_CheckpointMessageComponentUtils from "checkpoint/CheckpointMessageComponentUtils" /* 6220 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -68,7 +68,7 @@ export default function Checkpoint2026ForwardPreview(checkpointData) {
       });
     } else {
       const obj5 = { color: character(575).colors.BLACK };
-      const ExperimentalCheckpointIcon = tmp2(13416).ExperimentalCheckpointIcon;
+      const ExperimentalCheckpointIcon = tmp2(13648).ExperimentalCheckpointIcon;
       mapped = tmp6(ExperimentalCheckpointIcon, obj5);
     }
     tmp6Result = tmp6(tmp7, obj3);

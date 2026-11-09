@@ -1,20 +1,20 @@
-// Module ID: 17145
-// Function ID: 17146
+// Module ID: 17472
+// Function ID: 17473
 // Name: MobileQuestPreviewControlBar
-// Dependencies: [5, 32, 19, 17, 7846, 1083, 21, 5014, 575, 9681, 504, 9682, 7364, 1113, 7358, 17146, 17147, 8028, 12219, 14777, 5624, 2]
+// Dependencies: [5, 32, 19, 17, 7922, 1083, 21, 5140, 575, 9772, 504, 9773, 7424, 1113, 7418, 17473, 17474, 8098, 12391, 15012, 5751, 2]
 
-// Module 17145 (MobileQuestPreviewControlBar)
+// Module 17472 (MobileQuestPreviewControlBar)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
 import intl5 from "intl" /* 1113 */;
-import Sheet_showSimpleActionSheet from "Sheet/showSimpleActionSheet" /* 7364 */;
+import Sheet_showSimpleActionSheet from "Sheet/showSimpleActionSheet" /* 7424 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import QuestStore from "QuestStore" /* 7846 */;
+import QuestStore from "QuestStore" /* 7922 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let c1, c4, config;
@@ -113,7 +113,7 @@ class MobileQuestPreviewControlBar {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -154,7 +154,7 @@ class MobileQuestPreviewControlBar {
             closure_128_3(false);
           }
           c4 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp24) {
           refreshQuest = tmp24;
           if (0 === v0) {
@@ -182,7 +182,7 @@ class MobileQuestPreviewControlBar {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -223,7 +223,7 @@ class MobileQuestPreviewControlBar {
             closure_128_3(false);
           }
           c4 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp24) {
           refreshQuest = tmp24;
           if (0 === v0) {
@@ -251,7 +251,7 @@ class MobileQuestPreviewControlBar {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -294,7 +294,7 @@ class MobileQuestPreviewControlBar {
             closure_128_3(false);
           }
           c4 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp25) {
           refreshQuest = tmp25;
           if (0 === v0) {
@@ -371,7 +371,7 @@ class MobileQuestPreviewControlBar {
     items10[1] = closure_10(callback2, obj5);
     let tmp17Result2 = null != stateFromStores;
     if (tmp17Result2) {
-      const obj11 = { variant: "text-sm/medium", color: "text-feedback-critical", style: tmp.errorText, children: stateFromStores.message };
+      const obj11 = { variant: "body-sm/medium", color: "text-feedback-critical", style: tmp.errorText, children: stateFromStores.message };
       tmp17Result2 = tmp17(tmp4(tmp5[20]).Text, obj11);
     }
     items10[2] = tmp17Result2;

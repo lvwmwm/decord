@@ -1,20 +1,19 @@
-// Module ID: 15156
-// Function ID: 15157
+// Module ID: 15443
+// Function ID: 15444
 // Name: InAppReportsGuildPreviewElement
-// Dependencies: [19, 17, 21, 5014, 575, 7148, 5011, 5624, 1113, 6957, 2]
+// Dependencies: [19, 17, 21, 5140, 575, 5137, 5751, 1113, 7020, 2]
 // Exports: default
 
-// Module 15156 (InAppReportsGuildPreviewElement)
+// Module 15443 (InAppReportsGuildPreviewElement)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import intl3 from "intl" /* 1113 */;
-import ColorUtils from "ColorUtils" /* 5011 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import GuildIcon from "GuildIcon" /* 6957 */;
-import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7148 */;
+import intl2 from "intl" /* 1113 */;
+import ColorUtils from "ColorUtils" /* 5137 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import GuildIcon from "GuildIcon" /* 7020 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 const GuildIconDefault = GuildIcon;
@@ -34,42 +33,26 @@ let closure_6 = createStyles(obj);
 const result = size.fileFinishedImporting("modules/in_app_reports/native/components/InAppReportsGuildPreviewElement.tsx");
 
 export default function GuildPreview(guild) {
+  let intl;
+  let items;
   let items1;
   let items2;
-  let items3;
-  let stringResult;
-  let title;
   guild = guild.guild;
   const tmp = closure_6();
-  const obj = useTypeConsolidationTextTransform;
-  const typeConsolidationEyebrow = obj.useTypeConsolidationEyebrow("InAppReportsGuildPreview", "text-xs/bold");
-  const obj3 = { style: tmp.container, children: items1 };
-  const obj2 = ColorUtils;
-  const hexWithOpacityResult = obj2.hexWithOpacity(tmp.borderColor.color, 0.08);
+  const obj2 = { style: tmp.container, children: items };
+  const obj = ColorUtils;
+  const obj3 = { style: tmp.title, accessibilityRole: "header", variant: "body-sm/medium", children: intl.string(intl2.t["0ox7Hq"]) };
+  const hexWithOpacityResult = obj.hexWithOpacity(tmp.borderColor.color, 0.08);
   const Text = Text_Text.Text;
-  if (null != typeConsolidationEyebrow.style) {
-    const items = [tmp.title, typeConsolidationEyebrow.style];
-    title = items;
-  } else {
-    title = tmp.title;
-  }
-  const obj4 = { style: title, accessibilityRole: "header", variant: typeConsolidationEyebrow.variant, children: stringResult };
-  if (null != typeConsolidationEyebrow.style) {
-    const intl2 = tmp2(1113).intl;
-    stringResult = intl2.string(tmp2(1113).t["0ox7Hq"]);
-  } else {
-    const intl = tmp2(1113).intl;
-    const str = intl.string(intl3.t["0ox7Hq"]);
-    stringResult = str.toUpperCase();
-  }
-  items1 = [React3(Text, obj4), ];
-  const obj5 = { style: items2, children: items3 };
-  items2 = [tmp.guildContainer, { borderColor: hexWithOpacityResult }];
-  const obj6 = { size: GuildIcon.GuildIconSizes.LARGE, guild };
-  const tmp10 = GuildIconDefault;
-  items3 = [React3(tmp10, obj6), ];
-  const obj7 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", style: tmp.guildInfo, children: guild.name };
-  items3[1] = React3(Text_Text.Text, obj7);
-  items1[1] = hasOwnProperty(View, obj5);
-  return hasOwnProperty(View, obj3);
+  intl = intl2.intl;
+  items = [React3(Text, obj3), ];
+  const obj4 = { style: items1, children: items2 };
+  items1 = [tmp.guildContainer, { borderColor: hexWithOpacityResult }];
+  const obj5 = { size: GuildIcon.GuildIconSizes.LARGE, guild };
+  const tmp3 = GuildIconDefault;
+  items2 = [React3(tmp3, obj5), ];
+  const obj6 = { variant: "body-md/semibold", color: "mobile-text-heading-primary", style: tmp.guildInfo, children: guild.name };
+  items2[1] = React3(Text_Text.Text, obj6);
+  items[1] = hasOwnProperty(View, obj4);
+  return hasOwnProperty(View, obj2);
 };

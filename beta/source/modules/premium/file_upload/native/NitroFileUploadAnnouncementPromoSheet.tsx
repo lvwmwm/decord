@@ -1,16 +1,16 @@
-// Module ID: 19042
-// Function ID: 19043
+// Module ID: 19417
+// Function ID: 19418
 // Name: NitroFileUploadAnnouncementPromoSheet
-// Dependencies: [19, 17, 4860, 21, 5014, 575, 5593, 10837, 19043, 1113, 2642, 5634, 2]
+// Dependencies: [19, 17, 4986, 21, 5140, 575, 5721, 10956, 19418, 1113, 2766, 5758, 2]
 // Exports: default
 
-// Module 19042 (NitroFileUploadAnnouncementPromoSheet)
+// Module 19417 (NitroFileUploadAnnouncementPromoSheet)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4860 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4986 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -52,5 +52,5 @@ export default function NitroFileUploadAnnouncementPromoSheet(markAsDismissed) {
   ({ grow: true, size: "lg", variant: "primary", text: intl3.string(markAsDismissed(callback[9]).t["NX+WJN"]), onPress: callback1 });
   const Button = markAsDismissed(callback[11]).Button;
   intl3 = markAsDismissed(callback[9]).intl;
-  return <PromoSheet illustration={null} title={intl.string(require("module_2642").IyCdAU)} description={intl2.string(require("module_2642").LhfXZN)} onDismiss={callback1} actions={null} />;
+  return <PromoSheet illustration={null} title={intl.string(require("module_2766").IyCdAU)} description={intl2.string(require("module_2766").LhfXZN)} onDismiss={callback1} actions={null} />;
 };

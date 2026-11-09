@@ -1,21 +1,21 @@
-// Module ID: 17204
-// Function ID: 17205
+// Module ID: 17530
+// Function ID: 17531
 // Name: ResubscribedAlert
-// Dependencies: [19, 17, 21, 5014, 575, 6030, 1113, 5717, 17205, 1187, 5624, 2]
+// Dependencies: [19, 17, 21, 5140, 575, 6162, 1113, 5842, 17531, 1187, 5751, 2]
 // Exports: default
 
-// Module 17204 (ResubscribedAlert)
+// Module 17530 (ResubscribedAlert)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import FastImageDefault from "FastImage" /* 5717 */;
-import AlertDefault from "Alert" /* 6030 */;
-import AssetRegistryDefault from "AssetRegistry" /* 17205 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import FastImageDefault from "FastImage" /* 5842 */;
+import AlertDefault from "Alert" /* 6162 */;
+import AssetRegistryDefault from "AssetRegistry" /* 17531 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -43,12 +43,12 @@ export default function ResubscribedAlert(onClose) {
   const obj3 = { source: AssetRegistryDefault, style: tmp.headerImage };
   const tmp3 = FastImageDefault;
   items = [React3(tmp3, obj3), React3(native.Spacer, { size: 27 }), , , ];
-  const obj4 = { variant: "text-lg/semibold", color: "mobile-text-heading-primary", style: tmp.centerText, children: intl2.string(intl4.t.oPV2cy) };
+  const obj4 = { variant: "body-lg/semibold", color: "mobile-text-heading-primary", style: tmp.centerText, children: intl2.string(intl4.t.oPV2cy) };
   const Text = Text_Text.Text;
   intl2 = intl4.intl;
   items[2] = React3(Text, obj4);
   items[3] = React3(native.Spacer, { size: 12 });
-  const obj5 = { variant: "text-md/normal", color: "mobile-text-heading-primary", style: tmp.centerText, children: intl3.string(intl4.t.DdRizV) };
+  const obj5 = { variant: "body-md/normal", color: "mobile-text-heading-primary", style: tmp.centerText, children: intl3.string(intl4.t.DdRizV) };
   const Text2 = Text_Text.Text;
   intl3 = intl4.intl;
   items[4] = React3(Text2, obj5);

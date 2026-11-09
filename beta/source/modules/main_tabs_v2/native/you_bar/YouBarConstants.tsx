@@ -1,9 +1,9 @@
-// Module ID: 17070
-// Function ID: 17071
+// Module ID: 17396
+// Function ID: 17397
 // Name: YouBarConstants
 // Dependencies: [17, 575, 1187, 2]
 
-// Module 17070 (YouBarConstants)
+// Module 17396 (YouBarConstants)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
@@ -30,7 +30,7 @@ const diff1 = sum1 + 8 - (native.AVATAR_SIZE_MAP[REFRESH_MEDIUM_32] + PX_12);
 const result1 = size.fileFinishedImporting("modules/main_tabs_v2/native/you_bar/YouBarConstants.tsx");
 
 export const CONNECTION_BANNER_HEIGHT = 48;
-export const YOU_BAR_SPRING_CONFIG = { damping: 20, stiffness: 300, mass: 1.5, overshootClamping: true, restSpeedThreshold: 0.001, restDisplacementThreshold: 0.001 };
+export const YOU_BAR_SPRING_CONFIG = { damping: 20, stiffness: 300, mass: 1.5, overshootClamping: true };
 export const YOU_BAR_PADDING = PX_12;
 export const YOU_BAR_HEIGHT = 32 + result;
 export const YOU_BAR_MARGIN = PX_16;

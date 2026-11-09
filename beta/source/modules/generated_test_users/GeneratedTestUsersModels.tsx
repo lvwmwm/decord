@@ -1,10 +1,10 @@
-// Module ID: 17608
-// Function ID: 17609
+// Module ID: 17936
+// Function ID: 17937
 // Name: GeneratedTestUsersModels
-// Dependencies: [1398, 2]
+// Dependencies: [1405, 2]
 
-// Module 17608 (GeneratedTestUsersModels)
-import Record from "Record" /* 1398 */;
+// Module 17936 (GeneratedTestUsersModels)
+import Record from "Record" /* 1405 */;
 import size from "module_2" /* 2 */;
 
 class GeneratedTestPoolRecord extends Record {

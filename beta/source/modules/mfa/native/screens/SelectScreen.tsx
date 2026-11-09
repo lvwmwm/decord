@@ -1,18 +1,18 @@
-// Module ID: 17667
-// Function ID: 17668
+// Module ID: 17995
+// Function ID: 17996
 // Name: SelectScreen
-// Dependencies: [19, 17, 17664, 21, 5014, 5586, 8179, 7111, 1497, 7292, 5624, 1113, 2]
+// Dependencies: [19, 17, 17992, 21, 5140, 5714, 8248, 7182, 1499, 7355, 5751, 1113, 2]
 // Exports: default
 
-// Module 17667 (SelectScreen)
+// Module 17995 (SelectScreen)
 import react_native from "react-native" /* 17 */;
-import NavigatorConstants from "NavigatorConstants" /* 5586 */;
-import useWideAuthViewDefault from "useWideAuthView" /* 7111 */;
-import RowButton from "RowButton" /* 8179 */;
-import MFAConstants from "MFAConstants" /* 17664 */;
+import NavigatorConstants from "NavigatorConstants" /* 5714 */;
+import useWideAuthViewDefault from "useWideAuthView" /* 7182 */;
+import RowButton from "RowButton" /* 8248 */;
+import MFAConstants from "MFAConstants" /* 17992 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -51,11 +51,11 @@ export default function SelectScreen(mfaChallenge) {
   const obj2 = { top: !tmp, style: tmp2.container, children: items1 };
   const obj3 = { style: tmp2.selectContainer, children: items };
   const SafeAreaPaddingView = require("common/SafeAreaView").SafeAreaPaddingView;
-  const obj4 = { variant: "heading-xl/extrabold", children: intl.string(require("intl").t.S9b9bX) };
+  const obj4 = { variant: "heading-xl/semibold", children: intl.string(require("intl").t.S9b9bX) };
   const Heading = require("Text/Text").Heading;
   intl = require("intl").intl;
   items = [closure_5(Heading, obj4), ];
-  const obj5 = { variant: "text-sm/medium", children: intl2.string(require("intl").t.Jz1lXO) };
+  const obj5 = { variant: "body-sm/medium", children: intl2.string(require("intl").t.Jz1lXO) };
   const Text = require("Text/Text").Text;
   intl2 = require("intl").intl;
   items[1] = closure_5(Text, obj5);

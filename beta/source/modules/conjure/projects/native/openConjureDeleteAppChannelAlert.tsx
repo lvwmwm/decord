@@ -1,11 +1,11 @@
-// Module ID: 18888
-// Function ID: 18889
+// Module ID: 19263
+// Function ID: 19264
 // Name: openConjureDeleteAppChannelAlert
-// Dependencies: [5, 32, 19, 21, 13278, 13280, 1113, 3868, 5964, 12224, 6027, 5624, 5960, 2]
+// Dependencies: [5, 32, 19, 21, 13511, 13513, 1113, 4026, 6096, 12396, 6159, 5751, 6092, 2]
 // Exports: default
 
-// Module 18888 (openConjureDeleteAppChannelAlert)
-import useAlertStore from "useAlertStore" /* 5960 */;
+// Module 19263 (openConjureDeleteAppChannelAlert)
+import useAlertStore from "useAlertStore" /* 6092 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -52,7 +52,7 @@ function ConjureDeleteAppChannelAlert(arg0) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -100,7 +100,7 @@ function ConjureDeleteAppChannelAlert(arg0) {
             throw error;
           }
           c3 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp31) {
           c3 = 3;
           throw tmp31;
@@ -128,7 +128,7 @@ function ConjureDeleteAppChannelAlert(arg0) {
   const tmp6 = tmp4[1];
   [tmp8, c5] = checked(react.useState(null), 2);
   const tmp7 = checked(react.useState(null), 2);
-  let obj2 = { title: intl.string(tmp(tmp2[6]).t["8D8Rsb"]), content: tmpResult2.formatWithAppTag(require("module_3868")["HmNT/r"], conjureServerApp.targetAppName), extraContent: tmp11Result, actions: closure_7(closure_8, obj6) };
+  let obj2 = { title: intl.string(tmp(tmp2[6]).t["8D8Rsb"]), content: tmpResult2.formatWithAppTag(require("module_4026")["HmNT/r"], conjureServerApp.targetAppName), extraContent: tmp11Result, actions: closure_7(closure_8, obj6) };
   const AlertModal = tmp(tmp2[8]).AlertModal;
   intl = tmp(tmp2[6]).intl;
   tmpResult2 = tmp(tmp2[9]);
@@ -143,7 +143,7 @@ function ConjureDeleteAppChannelAlert(arg0) {
     const items1 = [tmp9Result, ];
     let tmp9Result2 = null;
     if (null != tmp8) {
-      let obj4 = { variant: "text-sm/medium", color: "text-feedback-critical", children: tmp8 };
+      let obj4 = { variant: "body-sm/medium", color: "text-feedback-critical", children: tmp8 };
       tmp9Result2 = tmp9(tmp(tmp2[11]).Text, obj4);
     }
     const obj5 = { spacing: 12, children: items1 };

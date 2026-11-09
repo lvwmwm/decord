@@ -1,15 +1,15 @@
-// Module ID: 17501
-// Function ID: 17502
+// Module ID: 17834
+// Function ID: 17835
 // Name: UpcomingServerEventNotificationSetting
-// Dependencies: [8432, 17502, 11540, 1113, 4839, 17503, 2]
+// Dependencies: [8503, 17835, 11685, 1113, 4965, 17836, 2]
 
-// Module 17501 (UpcomingServerEventNotificationSetting)
+// Module 17834 (UpcomingServerEventNotificationSetting)
 import intl2 from "intl" /* 1113 */;
-import UserSettings from "UserSettings" /* 4839 */;
-import SettingsConstants from "SettingsConstants" /* 8432 */;
-import UpcomingServerEventExperiment from "UpcomingServerEventExperiment" /* 17502 */;
-import UpcomingServerEventNotificationUtils from "UpcomingServerEventNotificationUtils" /* 17503 */;
-import SettingBuilders from "SettingBuilders" /* 11540 */;
+import UserSettings from "UserSettings" /* 4965 */;
+import SettingsConstants from "SettingsConstants" /* 8503 */;
+import UpcomingServerEventExperiment from "UpcomingServerEventExperiment" /* 17835 */;
+import UpcomingServerEventNotificationUtils from "UpcomingServerEventNotificationUtils" /* 17836 */;
+import SettingBuilders from "SettingBuilders" /* 11685 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

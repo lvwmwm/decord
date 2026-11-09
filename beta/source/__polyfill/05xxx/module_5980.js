@@ -1,26 +1,48 @@
 // Module ID: 5980
 // Function ID: 5981
-// Dependencies: [17, 81, 106, 65]
+// Dependencies: []
 
 // Module 5980
-import react_native from "react-native" /* 17 */;
-import resolveAssetSource_mod from "resolveAssetSource" /* 81 */;
-import DynamicallyInjectedByGestureHandler from "DynamicallyInjectedByGestureHandler" /* 106 */;
-import module_65 from "module_65" /* 65 */;
-
-let obj2;
-const codegenNativeComponent = react_native.codegenNativeComponent;
-const __INTERNAL_VIEW_CONFIG = { uiViewClassName: "RNSTabsScreenAndroid", directEventTypes: { topWillAppear: { registrationName: "onWillAppear" }, topDidAppear: { registrationName: "onDidAppear" }, topWillDisappear: { registrationName: "onWillDisappear" }, topDidDisappear: { registrationName: "onDidDisappear" } }, validAttributes: obj2 };
-let resolveAssetSource = resolveAssetSource_mod;
-if ("default" in resolveAssetSource) {
-  resolveAssetSource = resolveAssetSource.default;
+module.exports.timeout = function(arg0, arg1) {
+  const f90009 = (arg0, arg1) => {
+    let closure_1;
+    closure_0 = arg1;
+    const timeout = setTimeout(() => {
+      closure_0(self);
+    }, closure_0);
+  };
+  let closure_0 = arg1;
+  const self = this;
+  if (typeof tmp === "function") {
+    Error.call(self);
+    const _Error = Error;
+    self.stack = Error().stack;
+    self.message = "Timeout";
+    const items = [arg0, ];
+    const self2 = this;
+    const self3 = this;
+    items[1] = new Promise(f90009);
+    const promise = new Promise(f90009);
+    const raceResult = race(items);
+    return raceResult.then((result) => {
+      clearTimeout(closure_1_1);
+      return result;
+    }, (arg0) => {
+      clearTimeout(closure_1_1);
+      throw arg0;
+    });
+  } else {
+    throw new TypeError("Trying to call a non-function");
+  }
+};
+class tmp {
+  constructor() {
+    const self = this;
+    Error.call(self);
+    self.stack = Error().stack;
+    self.message = "Timeout";
+  }
 }
-obj2 = { screenKey: true, preventNativeSelection: true, title: true, badgeValue: true, tabBarItemTestID: true, tabBarItemAccessibilityLabel: true, specialEffects: true, drawableIconResourceName: true, imageIconResource: { process: resolveAssetSource }, selectedDrawableIconResourceName: true, selectedImageIconResource: { process: resolveAssetSource }, standardAppearance: true };
-resolveAssetSource = resolveAssetSource_mod;
-if ("default" in resolveAssetSource) {
-  resolveAssetSource = resolveAssetSource.default;
-}
-const merged = Object.assign(DynamicallyInjectedByGestureHandler.ConditionallyIgnoredEventHandlers({ onWillAppear: true, onDidAppear: true, onWillDisappear: true, onDidDisappear: true }));
-
-export default module_65.get("RNSTabsScreenAndroid", () => obj);
-export { __INTERNAL_VIEW_CONFIG };
+module.exports.TimeoutError = tmp;
+tmp.prototype = Object.create(Error.prototype);
+tmp.prototype.name = "TimeoutError";

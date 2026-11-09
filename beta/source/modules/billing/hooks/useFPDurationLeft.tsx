@@ -1,12 +1,12 @@
-// Module ID: 15345
-// Function ID: 15346
+// Module ID: 15631
+// Function ID: 15632
 // Name: useFPDurationLeft
-// Dependencies: [1113, 7624, 4836, 1242, 2]
+// Dependencies: [1113, 7700, 4962, 1242, 2]
 // Exports: default
 
-// Module 15345 (useFPDurationLeft)
+// Module 15631 (useFPDurationLeft)
 import intl from "intl" /* 1113 */;
-import useCountdownDefault from "useCountdown" /* 7624 */;
+import useCountdownDefault from "useCountdown" /* 7700 */;
 import size from "module_2" /* 2 */;
 
 let tmp16;
@@ -105,7 +105,7 @@ export default function useFPDurationLeft(arg0, arg1) {
   useCountdownDefault;
   let str3 = "";
   try {
-    const tmp7Result = tmp7(4836);
+    const tmp7Result = tmp7(4962);
     str3 = tmp7Result.unitsAsStrings(tmp18, time4);
   } catch (err) {
     const tmp16Result = SentryUtilsDefault;

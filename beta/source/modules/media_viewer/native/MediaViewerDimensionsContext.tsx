@@ -1,13 +1,13 @@
-// Module ID: 8867
-// Function ID: 8868
+// Module ID: 8941
+// Function ID: 8942
 // Name: MediaViewerDimensionsContext
-// Dependencies: [19, 21, 1491, 38, 2]
+// Dependencies: [19, 21, 1493, 38, 2]
 // Exports: MediaViewerDimensionsProvider, useMediaViewerDimensions
 
-// Module 8867 (MediaViewerDimensionsContext)
+// Module 8941 (MediaViewerDimensionsContext)
 import Fragment from "Fragment" /* 21 */;
 import _modDef38 from "module_38" /* 38 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1491 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1493 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

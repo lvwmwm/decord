@@ -1,59 +1,79 @@
-// Module ID: 17348
-// Function ID: 17349
+// Module ID: 17674
+// Function ID: 17675
 // Name: CustomTypingIndicatorTypingSuggestionPickerSheet
-// Dependencies: [32, 19, 21, 5014, 575, 7366, 7321, 1113, 3870, 7058, 13733, 7061, 2]
+// Dependencies: [32, 19, 21, 5140, 575, 7426, 7382, 1113, 4028, 7124, 7127, 13966, 2]
 // Exports: default
 
-// Module 17348 (CustomTypingIndicatorTypingSuggestionPickerSheet)
+// Module 17674 (CustomTypingIndicatorTypingSuggestionPickerSheet)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import _modDef3870 from "module_3870" /* 3870 */;
+import intl3 from "intl" /* 1113 */;
+import _modDef4028 from "module_4028" /* 4028 */;
+import TableRadioGroup2 from "TableRadioGroup" /* 7124 */;
+import TableRadioRow2 from "TableRadioRow" /* 7127 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7382 */;
+import ActionSheet2 from "ActionSheet" /* 7426 */;
+import CustomTypingIndicatorUtils from "CustomTypingIndicatorUtils" /* 13966 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
-let importDefault;
+let dependencyMap;
 
 let obj2;
 const jsx = Fragment.jsx;
-const obj = { content: obj2 };
+let obj = { content: obj2 };
 obj2 = { paddingHorizontal: nativeDefault.space.PX_16 };
 let closure_6 = createStyles.createStyles(obj);
 const result = size.fileFinishedImporting("modules/custom_typing_indicator/native/CustomTypingIndicatorTypingSuggestionPickerSheet.tsx");
 
-export default function CustomTypingIndicatorTypingSuggestionPickerSheet(onChange) {
-  let closure_1;
-  let customTypingIndicatorSuggestionPresets;
+export default function CustomTypingIndicatorTypingSuggestionPickerSheet(arg0) {
+  let closure_2;
   let first;
+  let initialValue;
   let intl;
-  onChange = onChange.onChange;
-  importDefault = undefined;
-  const initialValue = onChange.initialValue;
+  let onDismiss;
+  let presets;
+  ({ presets, highlightedPresets: require, onChange: importDefault } = arg0);
+  dependencyMap = undefined;
+  ({ initialValue, onDismiss } = arg0);
   const tmp = closure_6();
-  [first, importDefault] = react.useState(initialValue);
-  const ActionSheet = onChange(7366).ActionSheet;
-  let obj2 = { title: intl.string(_modDef3870["X+ijyw"]) };
-  const BottomSheetTitleHeader = onChange(7321).BottomSheetTitleHeader;
-  intl = onChange(1113).intl;
-  const intl2 = onChange(1113).intl;
-  ({
+  [first, dependencyMap] = react.useState(initialValue);
+  const ActionSheet = ActionSheet2.ActionSheet;
+  let obj2 = { title: intl.string(_modDef4028["X+ijyw"]) };
+  const BottomSheetTitleHeader = BottomSheetTitleHeader2.BottomSheetTitleHeader;
+  intl = intl3.intl;
+  const intl2 = intl3.intl;
+  let obj3 = {
     value: first,
     onChange: function handleChange(arg0) {
-      closure_1(arg0);
-      onChange(arg0);
+      closure_2(arg0);
+      importDefault(arg0);
     },
     hasIcons: false,
-    children: customTypingIndicatorSuggestionPresets.map((value) => {
-      const TableRadioRow = onChange(dependencyMap[11]).TableRadioRow;
-      const intl = onChange(dependencyMap[7]).intl;
-      const string = intl.string;
-      const obj2 = onChange(dependencyMap[10]);
-      return <TableRadioRow key={arg0} value={arg0} label={string(obj2.getCustomTypingIndicatorSuggestionMessage(arg0))} />;
+    children: presets.map((value) => {
+      let obj3;
+      let obj4;
+      let string;
+      let hasItem;
+      const obj = require;
+      if (require != null) {
+        hasItem = obj.includes(value);
+      }
+      const obj2 = { value, label: string(obj3.getCustomTypingIndicatorSuggestionMessage(value)), badge: obj4 };
+      const TableRadioRow = TableRadioRow2.TableRadioRow;
+      const intl = intl3.intl;
+      string = intl.string;
+      obj4 = undefined;
+      obj3 = CustomTypingIndicatorUtils;
+      const tmp2 = jsx;
+      if (true === hasItem) {
+        obj4 = { type: "new", variant: "primary" };
+      }
+      return tmp2(TableRadioRow, obj2, value);
     })
-  });
-  const TableRadioGroup = onChange(7058).TableRadioGroup;
-  const obj4 = onChange(13733);
-  customTypingIndicatorSuggestionPresets = obj4.getCustomTypingIndicatorSuggestionPresets();
-  return <ActionSheet contentStyles={tmp.content} header={null} dismissAccessibilityLabel={intl2.string(_modDef3870.hrl2cG)}>{null}</ActionSheet>;
+  };
+  const TableRadioGroup = TableRadioGroup2.TableRadioGroup;
+  return <ActionSheet contentStyles={tmp.content} onDismiss={onDismiss} header={null} dismissAccessibilityLabel={intl2.string(_modDef4028.hrl2cG)}>{null}</ActionSheet>;
 };

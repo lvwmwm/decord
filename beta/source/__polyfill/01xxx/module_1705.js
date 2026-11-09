@@ -1,164 +1,94 @@
 // Module ID: 1705
 // Function ID: 1706
-// Dependencies: [1675, 1706, 1654, 1719, 1720, 1738, 1736, 1737, 1702]
-// Exports: tryActivateLayoutTransition
+// Dependencies: [1706, 1710, 1748, 1749, 1750, 1751, 1719, 1716, 1717, 1752, 1753, 1707, 1724, 1708, 1718, 1709]
 
 // Module 1705
-import react_native from "react-native" /* 1654 */;
-import LayoutAnimationType from "LayoutAnimationType" /* 1675 */;
-import TransitionType from "TransitionType" /* 1706 */;
-import maybeModifyStyleForKeyframe from "maybeModifyStyleForKeyframe" /* 1719 */;
-import _mod1736 from "module_1736" /* 1736 */;
-import configureWebLayoutAnimations from "configureWebLayoutAnimations" /* 1737 */;
-import TransitionGenerator from "TransitionGenerator" /* 1738 */;
+import RuntimeKind from "RuntimeKind" /* 1707 */;
+import threadsNative from "threadsNative" /* 1708 */;
+import WorkletsModule from "WorkletsModule" /* 1709 */;
+import bundleModeNative from "bundleModeNative" /* 1710 */;
+import registerCustomSerializable from "registerCustomSerializable" /* 1716 */;
+import serializableMappingFlag from "serializableMappingFlag" /* 1717 */;
+import _mod1718 from "module_1718" /* 1718 */;
+import _mod1719 from "module_1719" /* 1719 */;
+import runtimesNative from "runtimesNative" /* 1724 */;
+import toggleSlowAnimationsOnUIRuntime from "toggleSlowAnimationsOnUIRuntime" /* 1748 */;
+import _mod1749 from "module_1749" /* 1749 */;
+import DynamicFlags from "DynamicFlags" /* 1750 */;
+import _mod1751 from "module_1751" /* 1751 */;
+import _mod1752 from "module_1752" /* 1752 */;
+import _mod1753 from "module_1753" /* 1753 */;
+import initializersNative_mod from "module_1706" /* 1706 */;
 
-let set, size;
+globalThis._WORKLETS_BUNDLE_MODE_ENABLED = false;
+let initializersNative = initializersNative_mod;
+initializersNative = initializersNative.init();
+const toggleSlowAnimationsOnUIRuntime_export = toggleSlowAnimationsOnUIRuntime.toggleSlowAnimationsOnUIRuntime;
+const registerCustomSerializable_export = registerCustomSerializable.registerCustomSerializable;
+const RuntimeKind_export = RuntimeKind.RuntimeKind;
+const WorkletsModule_export = WorkletsModule.WorkletsModule;
 
-function startWebLayoutAnimation(props, _componentDOMRef, ENTERING, easingY) {
-  let entering;
-  function maybeReportOverwrittenProperties(style, style2) {
-    set = new Set();
-    const matchAllResult = style.matchAll(/([a-zA-Z-]+)(?=:)/g);
-    for (const item10014 of matchAllResult) {
-      let addResult = set.add(item10014[1]);
-      continue;
-    }
-    const arr = Array.from(style2);
-    const found = arr.filter((item) => set.has(item));
-    if (0 !== found.length) {
-      const logger = react_native.logger;
-      let str = "Properties";
-      const warn = logger.warn;
-      if (1 === found.length) {
-        str = "Property";
-      }
-      const _HermesInternal = HermesInternal;
-      warn("" + str + " [" + found.join(", ") + "] may be overwritten by a layout animation. Please wrap your component with an animated view and apply the layout animation on the wrapper.");
-    }
-  }
-  if (ENTERING === LayoutAnimationType.LayoutAnimationType.ENTERING) {
-    entering = props.entering;
-  } else if (ENTERING === LayoutAnimationType.LayoutAnimationType.EXITING) {
-    entering = props.exiting;
-  } else {
-    entering = null;
-    if (ENTERING === LayoutAnimationType.LayoutAnimationType.LAYOUT) {
-      entering = props.layout;
-    }
-  }
-  let processedConfig = null;
-  if (entering) {
-    let presetName;
-    const LAYOUT = tmp(1675).LayoutAnimationType.LAYOUT;
-    const tmp5 = entering instanceof tmp(1720).Keyframe;
-    const initialValues = entering.initialValues;
-    if (tmp5) {
-      const tmpResult = TransitionGenerator;
-      presetName = tmpResult.createCustomKeyFrameAnimation(entering.definitions);
-    } else if (typeof entering === "function") {
-      presetName = entering.presetName;
-    } else {
-      presetName = entering.constructor.presetName;
-    }
-    let animationWithInitialValues = presetName;
-    if (undefined !== initialValues) {
-      const tmpResult8 = TransitionGenerator;
-      animationWithInitialValues = tmpResult8.createAnimationWithInitialValues(presetName, entering.initialValues);
-    }
-    const tmp8 = ENTERING === LAYOUT || tmp5 || undefined !== initialValues;
-    let flag = !(animationWithInitialValues in tmp(1706).Animations) && !tmp8;
-    if (flag) {
-      let logger = tmp(1654).logger;
-      let str = "Couldn't load entering/exiting animation. Current version supports only predefined animations with modifiers: duration, delay, easing, randomizeDelay, withCallback, reducedMotion.";
-      logger.warn("Couldn't load entering/exiting animation. Current version supports only predefined animations with modifiers: duration, delay, easing, randomizeDelay, withCallback, reducedMotion.");
-      flag = true;
-    }
-    processedConfig = null;
-    if (!flag) {
-      if (tmp5) {
-        const _Object = Object;
-        const keys = Object.keys(entering.definitions);
-        let hasItem = keys.includes("100");
-        if (!hasItem) {
-          hasItem = keys.includes("to");
-        }
-        if (!hasItem) {
-          const logger2 = tmp(1654).logger;
-          logger2.warn("Neither '100' nor 'to' was specified in Keyframe definition. This may result in wrong final position of your component. One possible solution is to duplicate last timestamp in definition as '100' (or 'to')");
-        }
-      }
-      const tmpResult9 = maybeModifyStyleForKeyframe;
-      processedConfig = tmpResult9.getProcessedConfig(animationWithInitialValues, ENTERING, entering);
-    }
-  }
-  const tmpResult10 = maybeModifyStyleForKeyframe;
-  const result = tmpResult10.maybeModifyStyleForKeyframe(_componentDOMRef, props.entering);
-  let animationName;
-  if (processedConfig != null) {
-    animationName = processedConfig.animationName;
-  }
-  if (animationName in TransitionType.Animations) {
-    let animationName1;
-    const Animations = tmp(1706).Animations;
-    if (processedConfig != null) {
-      animationName1 = processedConfig.animationName;
-    }
-    maybeReportOverwrittenProperties(Animations[animationName1].style, _componentDOMRef.style);
-  }
-  if (processedConfig) {
-    if (LayoutAnimationType.LayoutAnimationType.ENTERING === ENTERING) {
-      const tmpResult11 = maybeModifyStyleForKeyframe;
-      tmpResult11.setElementAnimation(_componentDOMRef, processedConfig, true);
-    } else if (LayoutAnimationType.LayoutAnimationType.LAYOUT === ENTERING) {
-      easingY.reversed = processedConfig.reversed;
-      const tmpResult12 = maybeModifyStyleForKeyframe;
-      const result1 = tmpResult12.handleLayoutTransition(_componentDOMRef, processedConfig, easingY);
-    } else if (LayoutAnimationType.LayoutAnimationType.EXITING === ENTERING) {
-      const tmpResult13 = maybeModifyStyleForKeyframe;
-      const result2 = tmpResult13.handleExitingAnimation(_componentDOMRef, processedConfig);
-    }
-  } else {
-    const tmpResult14 = _mod1736;
-    const elementVisible = tmpResult14.makeElementVisible(_componentDOMRef, 0);
-  }
-}
-
-export { startWebLayoutAnimation };
-export function tryActivateLayoutTransition(props, _componentDOMRef, arg2) {
-  let str;
-  let str2;
-  if (props.layout) {
-    size = _componentDOMRef.getBoundingClientRect();
-    const obj = configureWebLayoutAnimations;
-    if (!obj.areDOMRectsEqual(size, arg2)) {
-      const enteringV = props.layout.enteringV;
-      let presetName;
-      if (enteringV != null) {
-        presetName = enteringV.presetName;
-      }
-      const exitingV = props.layout.exitingV;
-      let presetName1;
-      if (exitingV != null) {
-        presetName1 = exitingV.presetName;
-      }
-      const easingXV = props.layout.easingXV;
-      const obj2 = { translateX: arg2.x - size.x + (arg2.width - size.width) / 2, translateY: arg2.y - size.y + (arg2.height - size.height) / 2, scaleX: arg2.width / size.width, scaleY: arg2.height / size.height, reversed: false, easingX: str, easingY: str2, entering: presetName, exiting: presetName1 };
-      str = undefined;
-      if (easingXV != null) {
-        str = easingXV[tmp3(undefined, 1702).EasingNameSymbol];
-      }
-      if (str == null) {
-        str = "ease";
-      }
-      const easingYV = props.layout.easingYV;
-      str2 = undefined;
-      if (easingYV != null) {
-        str2 = easingYV[tmp3(undefined, 1702).EasingNameSymbol];
-      }
-      if (str2 == null) {
-        str2 = "ease";
-      }
-      startWebLayoutAnimation(props, _componentDOMRef, LayoutAnimationType.LayoutAnimationType.LAYOUT, obj2);
-    }
-  }
-}
+export const isBundleModeEnabled = bundleModeNative.isBundleModeEnabled;
+export { toggleSlowAnimationsOnUIRuntime_export as toggleSlowAnimationsOnUIRuntime };
+export const callMicrotasks = _mod1749.callMicrotasks;
+export const isShareableRef = _mod1749.isShareableRef;
+export const makeShareable = _mod1749.makeShareable;
+export const makeShareableCloneOnUIRecursive = _mod1749.makeShareableCloneOnUIRecursive;
+export const makeShareableCloneRecursive = _mod1749.makeShareableCloneRecursive;
+export const shareableMappingCache = _mod1749.shareableMappingCache;
+export const getDynamicFeatureFlag = DynamicFlags.getDynamicFeatureFlag;
+export const getStaticFeatureFlag = DynamicFlags.getStaticFeatureFlag;
+export const setDynamicFeatureFlag = DynamicFlags.setDynamicFeatureFlag;
+export const isShareable = _mod1751.isShareable;
+export const isSynchronizable = _mod1719.isSynchronizable;
+export const createSerializable = registerCustomSerializable.createSerializable;
+export const createSerializableArray = registerCustomSerializable.createSerializableArray;
+export const createSerializableArrayBuffer = registerCustomSerializable.createSerializableArrayBuffer;
+export const createSerializableArrayBufferView = registerCustomSerializable.createSerializableArrayBufferView;
+export const createSerializableBigInt = registerCustomSerializable.createSerializableBigInt;
+export const createSerializableBoolean = registerCustomSerializable.createSerializableBoolean;
+export const createSerializableError = registerCustomSerializable.createSerializableError;
+export const createSerializableHostObject = registerCustomSerializable.createSerializableHostObject;
+export const createSerializableMap = registerCustomSerializable.createSerializableMap;
+export const createSerializableNull = registerCustomSerializable.createSerializableNull;
+export const createSerializableNumber = registerCustomSerializable.createSerializableNumber;
+export const createSerializableObject = registerCustomSerializable.createSerializableObject;
+export const createSerializableRegExp = registerCustomSerializable.createSerializableRegExp;
+export const createSerializableRemoteFunction = registerCustomSerializable.createSerializableRemoteFunction;
+export const createSerializableSet = registerCustomSerializable.createSerializableSet;
+export const createSerializableString = registerCustomSerializable.createSerializableString;
+export const createSerializableUndefined = registerCustomSerializable.createSerializableUndefined;
+export const createSerializableWorklet = registerCustomSerializable.createSerializableWorklet;
+export const isSerializableRef = registerCustomSerializable.isSerializableRef;
+export { registerCustomSerializable_export as registerCustomSerializable };
+export const serializableMappingCache = serializableMappingFlag.serializableMappingCache;
+export const createShareable = _mod1752.createShareable;
+export const createSynchronizable = _mod1753.createSynchronizable;
+export const getRuntimeKind = RuntimeKind.getRuntimeKind;
+export const isRNRuntime = RuntimeKind.isRNRuntime;
+export const isUIRuntime = RuntimeKind.isUIRuntime;
+export const isWorkerRuntime = RuntimeKind.isWorkerRuntime;
+export const isWorkletRuntime = RuntimeKind.isWorkletRuntime;
+export { RuntimeKind_export as RuntimeKind };
+export const createWorkletRuntime = runtimesNative.createWorkletRuntime;
+export const getUIRuntimeHolder = runtimesNative.getUIRuntimeHolder;
+export const getUISchedulerHolder = runtimesNative.getUISchedulerHolder;
+export const runOnRuntime = runtimesNative.runOnRuntime;
+export const runOnRuntimeAsync = runtimesNative.runOnRuntimeAsync;
+export const runOnRuntimeAsyncWithId = runtimesNative.runOnRuntimeAsyncWithId;
+export const runOnRuntimeSync = runtimesNative.runOnRuntimeSync;
+export const runOnRuntimeSyncWithId = runtimesNative.runOnRuntimeSyncWithId;
+export const scheduleOnRuntime = runtimesNative.scheduleOnRuntime;
+export const scheduleOnRuntimeWithId = runtimesNative.scheduleOnRuntimeWithId;
+export const UIRuntimeId = runtimesNative.UIRuntimeId;
+export const executeOnUIRuntimeSync = threadsNative.executeOnUIRuntimeSync;
+export const getCurrentThreadId = threadsNative.getCurrentThreadId;
+export const runOnJS = threadsNative.runOnJS;
+export const runOnRNSync = threadsNative.runOnRNSync;
+export const runOnUI = threadsNative.runOnUI;
+export const runOnUIAsync = threadsNative.runOnUIAsync;
+export const runOnUISync = threadsNative.runOnUISync;
+export const scheduleOnRN = threadsNative.scheduleOnRN;
+export const scheduleOnUI = threadsNative.scheduleOnUI;
+export const isWorkletFunction = _mod1718.isWorkletFunction;
+export { WorkletsModule_export as WorkletsModule };

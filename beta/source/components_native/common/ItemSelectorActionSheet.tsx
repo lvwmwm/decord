@@ -1,17 +1,15 @@
-// Module ID: 9002
-// Function ID: 9003
+// Module ID: 9082
+// Function ID: 9083
 // Name: ItemSelectorActionSheet
-// Dependencies: [19, 21, 5596, 575, 1625, 5272, 7321, 7367, 5275, 7058, 7061, 2]
+// Dependencies: [19, 21, 5724, 575, 1627, 5388, 7382, 7427, 5392, 7124, 7127, 2]
 // Exports: default
 
-// Module 9002 (ItemSelectorActionSheet)
+// Module 9082 (ItemSelectorActionSheet)
 import nativeDefault from "native" /* 575 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1625 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
-
-let BottomSheet;
 
 let c3;
 let closure_4;
@@ -33,25 +31,25 @@ export default function ItemSelectorActionSheet(arg0) {
   ({ title, items } = arg0);
   ({ selectedItem: importDefault, onItemSelect: dependencyMap, onClose } = arg0);
   ({ body, hasIcons } = arg0);
-  let obj = items(5596);
+  let obj = items(5724);
   const token = obj.useToken(nativeDefault.modules.mobile.TABLE_ROW_PADDING);
   const bottom = useSafeAreaInsetsDefault().bottom;
   const findIndexResult = items.findIndex((value) => value.value === importDefault);
-  BottomSheet = items(5272).BottomSheet;
+  const BottomSheet = items(5388).BottomSheet;
   const obj2 = { title, trailing: tmp6Result };
   tmp6Result = null;
-  const BottomSheetTitleHeader = items(7321).BottomSheetTitleHeader;
+  const BottomSheetTitleHeader = items(7382).BottomSheetTitleHeader;
   if (null != onClose) {
     const obj3 = { onPress: onClose };
-    tmp6Result = tmp6(tmp(7367).ActionSheetCloseButton, obj3);
+    tmp6Result = tmp6(tmp(7427).ActionSheetCloseButton, obj3);
   }
   const obj4 = { scrollable: true, header: closure_3(BottomSheetTitleHeader, obj2), children: tmp8(BottomSheetScrollView, obj5) };
   obj5 = { contentContainerStyle: obj6, children: items1 };
   obj6 = { paddingHorizontal: token, paddingBottom: bottom + nativeDefault.space.PX_16 };
-  BottomSheetScrollView = tmp(5275).BottomSheetScrollView;
+  BottomSheetScrollView = tmp(5392).BottomSheetScrollView;
   items1 = [body, ];
   let num = -1;
-  const TableRadioGroup = tmp(7058).TableRadioGroup;
+  const TableRadioGroup = tmp(7124).TableRadioGroup;
   tmp8 = closure_4;
   if (findIndexResult >= 0) {
     num = findIndexResult;

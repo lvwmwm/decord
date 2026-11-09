@@ -1,14 +1,14 @@
-// Module ID: 19194
-// Function ID: 19195
+// Module ID: 19570
+// Function ID: 19571
 // Name: useSelfHasVideo
-// Dependencies: [6843, 502, 2006, 504, 11228, 2]
+// Dependencies: [6898, 502, 2130, 504, 11368, 2]
 // Exports: default
 
-// Module 19194 (useSelfHasVideo)
-import participantHasVideo from "participantHasVideo" /* 11228 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6843 */;
+// Module 19570 (useSelfHasVideo)
+import participantHasVideo from "participantHasVideo" /* 11368 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6898 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import MediaEngineStore from "MediaEngineStore" /* 2006 */;
+import MediaEngineStore from "MediaEngineStore" /* 2130 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

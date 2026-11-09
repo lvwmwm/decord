@@ -1,18 +1,18 @@
-// Module ID: 11894
-// Function ID: 11895
+// Module ID: 12060
+// Function ID: 12061
 // Name: RequestToSpeakParticipantList
-// Dependencies: [19, 17, 1072, 21, 5014, 575, 7326, 6980, 8750, 11895, 1187, 5624, 11896, 1113, 11897, 6048, 8359, 6765, 7945, 7240, 2]
+// Dependencies: [19, 17, 1072, 21, 5140, 575, 7387, 7043, 8821, 12061, 1187, 5751, 12062, 1113, 12063, 6180, 8429, 6820, 8014, 7304, 2]
 // Exports: default
 
-// Module 11894 (RequestToSpeakParticipantList)
+// Module 12060 (RequestToSpeakParticipantList)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import StageChannelActionCreators from "StageChannelActionCreators" /* 7945 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8750 */;
+import StageChannelActionCreators from "StageChannelActionCreators" /* 8014 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8821 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -74,7 +74,7 @@ function RequestToSpeakParticipant(participant) {
   const obj7 = { style: items2, numberOfLines: 1, children: participant.user.username };
   items2[1] = { color: colorString };
   items3 = [closure_4(LegacyText, obj7), ];
-  const obj8 = { variant: "text-xs/medium", color: "text-default", children: tmp6Result.participantMemberInfo(participant) };
+  const obj8 = { variant: "body-xs/medium", color: "text-default", children: tmp6Result.participantMemberInfo(participant) };
   const Text = tmp6(tmp3[11]).Text;
   tmp6Result = participant(analyticsLocations[9]);
   items3[1] = closure_4(Text, obj8);
@@ -122,11 +122,11 @@ export default function RequestToSpeakParticipantList(channel) {
   if (0 === sortedRequestToSpeakParticipants.length) {
     let obj2 = { style: tmp.container, children: closure_5(View, obj3) };
     obj3 = { style: tmp.emptyContainer, children: items };
-    const obj4 = { style: tmp.emptyTitle, accessibilityRole: "header", variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: intl.string(channel(sortedRequestToSpeakParticipants[13]).t["7R24mX"]) };
+    const obj4 = { style: tmp.emptyTitle, accessibilityRole: "header", variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: intl.string(channel(sortedRequestToSpeakParticipants[13]).t["7R24mX"]) };
     const Text = tmp2(tmp3[11]).Text;
     intl = tmp2(tmp3[13]).intl;
     items = [closure_4(Text, obj4), ];
-    const obj5 = { style: tmp.emptyBody, variant: "text-sm/medium", color: "text-default", children: intl2.string(channel(sortedRequestToSpeakParticipants[13]).t.Rpr2s0) };
+    const obj5 = { style: tmp.emptyBody, variant: "body-sm/medium", color: "text-default", children: intl2.string(channel(sortedRequestToSpeakParticipants[13]).t.Rpr2s0) };
     const Text2 = tmp2(tmp3[11]).Text;
     intl2 = tmp2(tmp3[13]).intl;
     items[1] = closure_4(Text2, obj5);

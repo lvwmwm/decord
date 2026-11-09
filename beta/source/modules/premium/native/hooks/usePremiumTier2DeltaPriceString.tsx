@@ -1,16 +1,16 @@
-// Module ID: 15436
-// Function ID: 15437
+// Module ID: 15729
+// Function ID: 15730
 // Name: usePremiumTier2DeltaPriceString
-// Dependencies: [19, 7609, 7597, 1385, 7592, 7593, 1375, 7413, 4827, 504, 2]
+// Dependencies: [19, 7685, 7673, 1387, 7668, 7669, 1377, 7477, 4953, 504, 2]
 // Exports: usePremiumTier2DeltaPriceString
 
-// Module 15436 (usePremiumTier2DeltaPriceString)
-import PremiumConstants from "PremiumConstants" /* 1385 */;
-import PremiumBundledPlansUtils from "PremiumBundledPlansUtils" /* 7592 */;
-import ProductIds from "ProductIds" /* 7593 */;
-import NativeCheckoutStore from "NativeCheckoutStore" /* 7609 */;
+// Module 15729 (usePremiumTier2DeltaPriceString)
+import PremiumConstants from "PremiumConstants" /* 1387 */;
+import PremiumBundledPlansUtils from "PremiumBundledPlansUtils" /* 7668 */;
+import ProductIds from "ProductIds" /* 7669 */;
+import NativeCheckoutStore from "NativeCheckoutStore" /* 7685 */;
 import react from "react" /* 19 */;
-import IAPStore from "IAPStore" /* 7597 */;
+import IAPStore from "IAPStore" /* 7673 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -88,7 +88,7 @@ export function usePremiumTier2DeltaPriceString(plan, subscription, currencyCode
         const tmp2Result = tmp2(subscription);
         let tmp11 = null;
         if (null != tmp2Result) {
-          tmp11 = tmp4(7593).AppStorePremiumProductIdsToPremiumBundledItems[tmp2Result];
+          tmp11 = tmp4(7669).AppStorePremiumProductIdsToPremiumBundledItems[tmp2Result];
         }
         flag = null != tmp11 && tmp11.basePlanId === plan.basePlanId && tmp11.numPremiumGuild < plan.numPremiumGuild;
       }
@@ -112,7 +112,7 @@ export function usePremiumTier2DeltaPriceString(plan, subscription, currencyCode
             if (addOnPrice.majorUnits > 0) {
               let tmp17 = null;
               if (null != tmp3) {
-                tmp17 = tmp4(7593).AppStorePremiumProductIdsToPremiumBundledItems[tmp3];
+                tmp17 = tmp4(7669).AppStorePremiumProductIdsToPremiumBundledItems[tmp3];
               }
               if (null != tmp3) {
                 if (null != tmp17) {

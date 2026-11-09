@@ -1,13 +1,13 @@
-// Module ID: 18161
-// Function ID: 18162
+// Module ID: 18503
+// Function ID: 18504
 // Name: useFavoritesGuildCategoryLongPress
-// Dependencies: [19, 1072, 4888, 1113, 18162, 2]
+// Dependencies: [19, 1072, 5014, 1113, 18504, 2]
 // Exports: default
 
-// Module 18161 (useFavoritesGuildCategoryLongPress)
+// Module 18503 (useFavoritesGuildCategoryLongPress)
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
-import FavoritesUtils from "FavoritesUtils" /* 4888 */;
+import FavoritesUtils from "FavoritesUtils" /* 5014 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

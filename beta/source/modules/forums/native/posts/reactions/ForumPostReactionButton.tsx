@@ -1,28 +1,28 @@
-// Module ID: 11131
-// Function ID: 11132
+// Module ID: 11263
+// Function ID: 11264
 // Name: ForumPostReactionButton
-// Dependencies: [19, 17, 21, 5014, 575, 11132, 6980, 1113, 5624, 5615, 9896, 11145, 4839, 10096, 1090, 1409, 4958, 7300, 11147, 2]
+// Dependencies: [19, 17, 21, 5140, 575, 11264, 7043, 1113, 5751, 5742, 10018, 11277, 4965, 10217, 1090, 1411, 5084, 7363, 11279, 2]
 // Exports: AddReactionButton, AdditionalReactionCount, ForumPostReactionButton
 
-// Module 11131 (ForumPostReactionButton)
+// Module 11263 (ForumPostReactionButton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1090 */;
 import intl2 from "intl" /* 1113 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1409 */;
-import UserSettings from "UserSettings" /* 4839 */;
-import ReactionUtils from "ReactionUtils" /* 4958 */;
-import MessageReactionsTypes from "MessageReactionsTypes" /* 5615 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import Pressables from "Pressables" /* 6980 */;
-import EmojiDefault from "Emoji" /* 7300 */;
-import reactions_ReactionUtils from "reactions/ReactionUtils" /* 9896 */;
-import useEmojiColorPalette from "useEmojiColorPalette" /* 10096 */;
-import useNativeForumPostHandlersDefault from "useNativeForumPostHandlers" /* 11132 */;
-import useReactionPermissionsDefault from "useReactionPermissions" /* 11145 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
+import UserSettings from "UserSettings" /* 4965 */;
+import ReactionUtils from "ReactionUtils" /* 5084 */;
+import MessageReactionsTypes from "MessageReactionsTypes" /* 5742 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import Pressables from "Pressables" /* 7043 */;
+import EmojiDefault from "Emoji" /* 7363 */;
+import reactions_ReactionUtils from "reactions/ReactionUtils" /* 10018 */;
+import useEmojiColorPalette from "useEmojiColorPalette" /* 10217 */;
+import useNativeForumPostHandlersDefault from "useNativeForumPostHandlers" /* 11264 */;
+import useReactionPermissionsDefault from "useReactionPermissions" /* 11277 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -30,7 +30,7 @@ let metroRequire;
 let obj2;
 let obj3;
 let tmp10;
-const AnimatedCounterDefault = tmp10(11147);
+const AnimatedCounterDefault = tmp10(11279);
 class BurstReactionButton {
   constructor(arg0) {
     let accentColor;
@@ -177,7 +177,7 @@ export function AdditionalReactionCount(arg0) {
   const PressableOpacity = Pressables.PressableOpacity;
   intl = intl2.intl;
   items = [tmp.container, containerStyle];
-  obj2 = { variant: "heading-sm/medium", color: "interactive-text-default", children: items1 };
+  obj2 = { variant: "heading-xs/medium", color: "interactive-text-default", children: items1 };
   items1 = ["+", count];
   return metroRequire(PressableOpacity, obj);
 }

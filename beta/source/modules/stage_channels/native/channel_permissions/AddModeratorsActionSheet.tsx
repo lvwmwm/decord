@@ -1,22 +1,22 @@
-// Module ID: 18907
-// Function ID: 18908
+// Module ID: 19282
+// Function ID: 19283
 // Name: AddModeratorsActionSheet
-// Dependencies: [5, 32, 19, 17, 4885, 7947, 21, 5014, 575, 504, 5652, 6710, 1992, 9032, 5711, 5258, 5272, 7321, 1113, 5634, 9071, 4871, 2]
+// Dependencies: [5, 32, 19, 17, 5011, 8016, 21, 5140, 575, 504, 5776, 6765, 2116, 9112, 5836, 5374, 5388, 7382, 1113, 5758, 9151, 4997, 2]
 // Exports: default
 
-// Module 18907 (AddModeratorsActionSheet)
+// Module 19282 (AddModeratorsActionSheet)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 7947 */;
+import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 8016 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4885 */;
-import createStyles from "createStyles" /* 5014 */;
+import GuildStore from "GuildStore" /* 5011 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
-let BottomSheet, c4, c5, closure_0, closure_1, closure_2, id, row;
+let c4, c5, closure_0, closure_1, closure_2, id, row;
 
 let obj2;
 const View = react_native.View;
@@ -51,7 +51,7 @@ export default function AddModeratorsActionSheet(channel) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c3;
@@ -115,7 +115,7 @@ export default function AddModeratorsActionSheet(channel) {
               c3 = 0;
             }
             c5 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp16) {
           closure_2 = tmp16;
@@ -156,7 +156,7 @@ export default function AddModeratorsActionSheet(channel) {
     let _Object = Object;
     let num = 0;
     const tmp12 = 0 === Object.keys(pendingAdditions).length;
-    BottomSheet = tmp5(tmp6[16]).BottomSheet;
+    const BottomSheet = tmp5(tmp6[16]).BottomSheet;
     let obj2 = { title: intl3.string(tmp5(tmp6[18]).t.n3bcy8), subtitle: str, trailing: null };
     const BottomSheetTitleHeader = tmp5(tmp6[17]).BottomSheetTitleHeader;
     intl3 = tmp5(tmp6[18]).intl;

@@ -1,25 +1,23 @@
-// Module ID: 19167
-// Function ID: 19168
+// Module ID: 19543
+// Function ID: 19544
 // Name: SoundboardSoundPicker
-// Dependencies: [32, 19, 17, 19168, 5764, 1383, 6060, 19169, 1072, 21, 5014, 575, 5095, 563, 19170, 7524, 5607, 7326, 7351, 6028, 1260, 1375, 9966, 5272, 5214, 5624, 1113, 7218, 19174, 19184, 19185, 2]
+// Dependencies: [32, 19, 17, 19544, 5893, 1385, 6193, 19545, 1072, 21, 5140, 575, 1652, 563, 19546, 7596, 5735, 7387, 7412, 6160, 1260, 1377, 10087, 5388, 5330, 5751, 1113, 7282, 19550, 19560, 19561, 2]
 
-// Module 19167 (SoundboardSoundPicker)
+// Module 19543 (SoundboardSoundPicker)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import SoundboardConstants from "SoundboardConstants" /* 6060 */;
-import searchSounds from "searchSounds" /* 7524 */;
-import SoundboardStyleConstants from "SoundboardStyleConstants" /* 19169 */;
+import SoundboardConstants from "SoundboardConstants" /* 6193 */;
+import searchSounds from "searchSounds" /* 7596 */;
+import SoundboardStyleConstants from "SoundboardStyleConstants" /* 19545 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ExpressionPickerStore from "ExpressionPickerStore" /* 19168 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5764 */;
-import UserStore from "UserStore" /* 1383 */;
+import ExpressionPickerStore from "ExpressionPickerStore" /* 19544 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5893 */;
+import UserStore from "UserStore" /* 1385 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
-
-let BottomSheet;
 
 let closure_12;
 let map1;
@@ -59,10 +57,14 @@ const memoResult = react.memo(function SoundboardSoundPicker(channel) {
   let tmp4;
   channel = channel.channel;
   const initialScrollLocation = channel.initialScrollLocation;
+  let flag = channel.startExpanded;
+  const analyticsSource = channel.analyticsSource;
+  if (flag === undefined) {
+    flag = true;
+  }
   let stateFromStores;
   availableSounds = undefined;
   c5 = undefined;
-  const analyticsSource = channel.analyticsSource;
   let tmp = closure_14();
   [tmp3, tmp4] = stateFromStores(availableSounds.useState(0), 2);
   const tmp2 = stateFromStores(availableSounds.useState(0), 2);
@@ -124,19 +126,19 @@ const memoResult = react.memo(function SoundboardSoundPicker(channel) {
   const obj11 = channel(ref[21]);
   let isIOSResult = obj11.isIOS();
   if (isIOSResult) {
-    const obj12 = { animatedSheetIndex: sharedValue1, portalHostName: "soundboard-footer", followSystemKeyboard: true };
+    const obj12 = { animatedSheetIndex: sharedValue1, portalHostName: "soundboard-footer", followSystemKeyboard: true, constrainToActionSheet: true };
     isIOSResult = closure_12(tmp11(tmp7[22]), obj12);
   }
   items4 = [isIOSResult, ];
-  const obj13 = { animatedIndex: sharedValue1, scrollable: true, startExpanded: true, onExpand: callback1, footer: tmp27, children: items6 };
-  BottomSheet = tmp6(tmp7[23]).BottomSheet;
+  const obj13 = { animatedIndex: sharedValue1, scrollable: true, startExpanded: flag, onExpand: callback1, footer: tmp27, children: items6 };
+  const BottomSheet = tmp6(tmp7[23]).BottomSheet;
   tmp27 = undefined;
   const tmp6Result = channel(ref[21]);
   if (tmp6Result.isAndroid()) {
     tmp27 = closure_12(tmp6(tmp7[24]).PortalHost, { name: "soundboard-footer" });
   }
   const obj14 = { style: tmp.container, children: items5 };
-  const obj15 = { accessibilityRole: "header", variant: "heading-lg/bold", style: tmp.title, children: intl.string(channel(ref[26]).t.ABjMWI) };
+  const obj15 = { accessibilityRole: "header", variant: "heading-lg/semibold", style: tmp.title, children: intl.string(channel(ref[26]).t.ABjMWI) };
   const Text = tmp6(tmp7[25]).Text;
   intl = tmp6(tmp7[26]).intl;
   items5 = [closure_12(Text, obj15), , , ];

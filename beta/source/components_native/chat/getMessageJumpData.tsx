@@ -1,22 +1,22 @@
-// Module ID: 11553
-// Function ID: 11554
+// Module ID: 11698
+// Function ID: 11699
 // Name: getMessageJumpData
-// Dependencies: [32, 19, 1493, 1383, 1375, 1891, 5249, 11, 2]
+// Dependencies: [32, 19, 1495, 1385, 1377, 2020, 5365, 11, 2]
 // Exports: default, useMessageJumpAndroidKeyboardHeight
 
-// Module 11553 (getMessageJumpData)
+// Module 11698 (getMessageJumpData)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import flow_Client from "flow/Client" /* 5249 */;
+import flow_Client from "flow/Client" /* 5365 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore" /* 1493 */;
-import UserStore from "UserStore" /* 1383 */;
+import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore" /* 1495 */;
+import UserStore from "UserStore" /* 1385 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
 let tmp4;
-const PlatformUtils = tmp4(1375);
-const useSystemKeyboardHeight = tmp(1891);
+const PlatformUtils = tmp4(1377);
+const useSystemKeyboardHeight = tmp(2020);
 const result = size.fileFinishedImporting("components_native/chat/getMessageJumpData.tsx");
 
 export default function getMessageJumpData(messages, isAtBottom, messages2) {

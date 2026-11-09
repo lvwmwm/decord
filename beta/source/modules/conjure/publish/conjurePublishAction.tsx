@@ -1,14 +1,14 @@
-// Module ID: 12099
-// Function ID: 12100
+// Module ID: 12262
+// Function ID: 12263
 // Name: conjurePublishAction
-// Dependencies: [10960, 1113, 3868, 12083, 2]
+// Dependencies: [10994, 1113, 4026, 12246, 2]
 // Exports: resolveConjurePublishAction
 
-// Module 12099 (conjurePublishAction)
+// Module 12262 (conjurePublishAction)
 import intl5 from "intl" /* 1113 */;
-import _modDef3868 from "module_3868" /* 3868 */;
-import ConjurePublishTypes from "ConjurePublishTypes" /* 10960 */;
-import conjurePreviewModes from "conjurePreviewModes" /* 12083 */;
+import _modDef4026 from "module_4026" /* 4026 */;
+import ConjurePublishTypes from "ConjurePublishTypes" /* 10994 */;
+import conjurePreviewModes from "conjurePreviewModes" /* 12246 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/conjure/publish/conjurePublishAction.tsx");
@@ -26,6 +26,7 @@ export function resolveConjurePublishAction(input) {
   let status;
   let tmp24;
   let tmp29;
+  let usesAppChannels;
   ({ integrationStatus, status } = input);
   const installScope = input.installScope;
   if (status == null) {
@@ -45,7 +46,7 @@ export function resolveConjurePublishAction(input) {
   const merged1 = Object.assign(input);
   const status2 = obj3.status;
   let tmp6 = "guild" !== obj3.installScope;
-  ({ appChannelName, appChannelPending, botInGuild } = obj3);
+  ({ appChannelName, appChannelPending, usesAppChannels, botInGuild } = obj3);
   if (!tmp6) {
     tmp6 = null == status2;
   }
@@ -55,27 +56,25 @@ export function resolveConjurePublishAction(input) {
   }
   let tmp9 = !tmp6;
   if (tmp9) {
-    let tmp10;
-    if ("activity" === status2.surface) {
-      tmp10 = null == appChannelName && true !== appChannelPending;
-      const tmp11 = null == appChannelName && true !== appChannelPending;
-    } else {
-      tmp10 = "bot" === status2.surface && false === botInGuild;
+    let tmp10 = false === botInGuild;
+    if (!tmp10) {
+      tmp10 = "activity" === status2.surface && usesAppChannels && null == appChannelName && true !== appChannelPending;
+      const tmp11 = "activity" === status2.surface && usesAppChannels && null == appChannelName && true !== appChannelPending;
     }
     tmp9 = tmp10;
   }
-  let str4 = input.guildName;
+  let str3 = input.guildName;
   let formatResult = null;
   if ("guild" === input.installScope) {
     formatResult = null;
     if (false === tmp12) {
       const intl = intl5.intl;
       const format = intl.format;
-      const N4NkyR = _modDef3868.N4NkyR;
-      if (str4 == null) {
-        str4 = "";
+      const N4NkyR = _modDef4026.N4NkyR;
+      if (str3 == null) {
+        str3 = "";
       }
-      const obj5 = { server: str4 };
+      const obj5 = { server: str3 };
       formatResult = format(N4NkyR, obj5);
     }
   }
@@ -98,14 +97,14 @@ export function resolveConjurePublishAction(input) {
     prop1 = integrationStatus.bot_permissions_changed;
   }
   const result = requiresPermissionReview(obj6);
-  let str5 = "publish";
+  let str4 = "publish";
   if (result) {
-    str5 = "consent_then_publish";
+    str4 = "consent_then_publish";
   }
-  const obj7 = { intent: str5, isUpdate: "live_outdated" === tmp.publishState && !tmp9, upToDate: "live_current" === tmp.publishState && !tmp9, disabledReason: formatResult, confirmReason: tmp24, missingSurface: tmp29 };
+  const obj7 = { intent: str4, isUpdate: "live_outdated" === tmp.publishState && !tmp9, upToDate: "live_current" === tmp.publishState && !tmp9, disabledReason: formatResult, confirmReason: tmp24, missingSurface: tmp29 };
   tmp24 = null;
   if (null == formatResult) {
-    let str6 = input.guildName;
+    let str5 = input.guildName;
     let format2Result = null;
     if ("guild" === input.installScope) {
       format2Result = null;
@@ -114,11 +113,11 @@ export function resolveConjurePublishAction(input) {
         if (false === tmp25) {
           const intl2 = tmp17(1113).intl;
           const format2 = intl2.format;
-          const eHYXFg = _modDef3868.eHYXFg;
-          if (str6 == null) {
-            str6 = "";
+          const eHYXFg = _modDef4026.eHYXFg;
+          if (str5 == null) {
+            str5 = "";
           }
-          const obj8 = { server: str6 };
+          const obj8 = { server: str5 };
           format2Result = format2(eHYXFg, obj8);
         }
       }
@@ -127,11 +126,14 @@ export function resolveConjurePublishAction(input) {
   }
   tmp29 = null;
   if (tmp9) {
-    let str7 = "bot";
+    let str8 = "bot";
     if ("activity" === tmp.surface) {
-      str7 = "channel";
+      str8 = "bot";
+      if (false !== input.botInGuild) {
+        str8 = "channel";
+      }
     }
-    tmp29 = str7;
+    tmp29 = str8;
   }
   if (result) {
     let obj10;
@@ -140,14 +142,14 @@ export function resolveConjurePublishAction(input) {
       prop2 = integrationStatus.bot_permissions_changed;
     }
     if (true === prop2) {
-      const obj9 = { label: intl4.string(_modDef3868["tUeY/h"]), action: "review_permissions" };
+      const obj9 = { label: intl4.string(_modDef4026["tUeY/h"]), action: "review_permissions" };
       const merged2 = Object.assign(obj7);
       intl4 = tmp17(1113).intl;
       obj10 = obj9;
     }
     return obj10;
   }
-  obj10 = { label: intl3.string(_modDef3868["120EFN"]), action: "publish" };
+  obj10 = { label: intl3.string(_modDef4026["120EFN"]), action: "publish" };
   const merged3 = Object.assign(obj7);
   intl3 = tmp17(1113).intl;
 }

@@ -1,16 +1,16 @@
-// Module ID: 15376
-// Function ID: 15377
+// Module ID: 15669
+// Function ID: 15670
 // Name: useOpenPremiumMarketingPayment
-// Dependencies: [19, 1072, 1385, 7326, 7627, 7626, 7607, 1113, 2047, 2]
+// Dependencies: [19, 1072, 1387, 7387, 7703, 7702, 7683, 1113, 2171, 2]
 // Exports: default
 
-// Module 15376 (useOpenPremiumMarketingPayment)
+// Module 15669 (useOpenPremiumMarketingPayment)
 import intl2 from "intl" /* 1113 */;
-import PremiumUtils from "PremiumUtils" /* 2047 */;
-import openPremiumPlanSelectionActionSheetDefault from "openPremiumPlanSelectionActionSheet" /* 7607 */;
+import PremiumUtils from "PremiumUtils" /* 2171 */;
+import openPremiumPlanSelectionActionSheetDefault from "openPremiumPlanSelectionActionSheet" /* 7683 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
-import PremiumConstants from "PremiumConstants" /* 1385 */;
+import PremiumConstants from "PremiumConstants" /* 1387 */;
 import size from "module_2" /* 2 */;
 
 let AnalyticsObjectTypes;

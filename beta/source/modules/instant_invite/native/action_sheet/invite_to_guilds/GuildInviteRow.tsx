@@ -1,14 +1,14 @@
-// Module ID: 14818
-// Function ID: 14819
+// Module ID: 15053
+// Function ID: 15054
 // Name: GuildInviteRow
-// Dependencies: [19, 17, 14814, 7879, 21, 14813, 9204, 6957, 5624, 1113, 6975, 2]
+// Dependencies: [19, 17, 15049, 7956, 21, 15048, 9284, 7020, 5751, 1113, 7038, 2]
 
-// Module 14818 (GuildInviteRow)
+// Module 15053 (GuildInviteRow)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 7879 */;
-import GuildInviteUtils from "GuildInviteUtils" /* 14813 */;
-import GuildInviteSendStateStore from "GuildInviteSendStateStore" /* 14814 */;
+import Constants from "Constants" /* 7956 */;
+import GuildInviteUtils from "GuildInviteUtils" /* 15048 */;
+import GuildInviteSendStateStore from "GuildInviteSendStateStore" /* 15049 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -47,7 +47,7 @@ const memoResult = react.memo(function GuildInviteRow(arg0) {
   const obj4 = { count: row.memberCount };
   const tmp3 = guild;
   const tmp6 = require;
-  const tmp8 = <Text variant="text-xs/medium" color="text-default">{intl.format(require("intl").t.zRl6XR, obj4)}</Text>;
+  const tmp8 = <Text variant="body-xs/medium" color="text-default">{intl.format(require("intl").t.zRl6XR, obj4)}</Text>;
   if (!tmp9) {
     tmp9 = tmp === InviteSendStates.SENT;
   }

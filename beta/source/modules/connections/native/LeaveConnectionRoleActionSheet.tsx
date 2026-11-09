@@ -1,21 +1,19 @@
-// Module ID: 11601
-// Function ID: 11602
+// Module ID: 11759
+// Function ID: 11760
 // Name: LeaveConnectionRoleActionSheet
-// Dependencies: [19, 17, 21, 5014, 5272, 5624, 1113, 5634, 2]
+// Dependencies: [19, 17, 21, 5140, 5388, 5751, 1113, 5758, 2]
 // Exports: default
 
-// Module 11601 (LeaveConnectionRoleActionSheet)
+// Module 11759 (LeaveConnectionRoleActionSheet)
 import react_native from "react-native" /* 17 */;
 import intl4 from "intl" /* 1113 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5272 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import components_Button_Button from "components/Button/Button" /* 5634 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5388 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import components_Button_Button from "components/Button/Button" /* 5758 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
-
-let BottomSheet;
 
 let c3;
 let closure_4;
@@ -36,12 +34,12 @@ export default function LeaveConnectionRoleActionSheet(onLeaveRolePressed) {
   const tmp = closure_5();
   const obj = { children: React3(View, obj2) };
   obj2 = { style: tmp.container, children: items };
-  BottomSheet = Sheet_BottomSheet.BottomSheet;
-  const obj3 = { variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: intl.string(intl4.t.vytvJF) };
+  const BottomSheet = Sheet_BottomSheet.BottomSheet;
+  const obj3 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: intl.string(intl4.t.vytvJF) };
   const Text = Text_Text.Text;
   intl = intl4.intl;
   items = [_false(Text, obj3), , ];
-  const obj4 = { style: tmp.marginTop, variant: "text-md/normal", color: "text-default", children: intl2.string(intl4.t.caJwb5) };
+  const obj4 = { style: tmp.marginTop, variant: "body-md/normal", color: "text-default", children: intl2.string(intl4.t.caJwb5) };
   const Text2 = Text_Text.Text;
   intl2 = intl4.intl;
   items[1] = _false(Text2, obj4);

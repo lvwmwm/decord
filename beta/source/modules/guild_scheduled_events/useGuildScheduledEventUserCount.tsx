@@ -1,13 +1,13 @@
-// Module ID: 8965
-// Function ID: 8966
+// Module ID: 9044
+// Function ID: 9045
 // Name: useGuildScheduledEventUserCount
-// Dependencies: [19, 6855, 504, 8966, 2]
+// Dependencies: [19, 6910, 504, 9045, 2]
 // Exports: default
 
-// Module 8965 (useGuildScheduledEventUserCount)
+// Module 9044 (useGuildScheduledEventUserCount)
 import react from "react" /* 19 */;
-import GuildScheduledEventManagerDefault from "GuildScheduledEventManager" /* 8966 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6855 */;
+import GuildScheduledEventManagerDefault from "GuildScheduledEventManager" /* 9045 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6910 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

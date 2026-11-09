@@ -1,16 +1,16 @@
-// Module ID: 14621
-// Function ID: 14622
+// Module ID: 14856
+// Function ID: 14857
 // Name: Checkbox
-// Dependencies: [17, 21, 5014, 5082, 1113, 6027, 6989, 5624, 2]
+// Dependencies: [17, 21, 5140, 5200, 1113, 6159, 7055, 5751, 2]
 // Exports: Checkbox
 
-// Module 14621 (Checkbox)
+// Module 14856 (Checkbox)
 import intl3 from "intl" /* 1113 */;
-import react_native from "react-native" /* 5082 */;
-import FormCheckbox from "FormCheckbox" /* 6989 */;
+import react_native from "react-native" /* 5200 */;
+import FormCheckbox from "FormCheckbox" /* 7055 */;
 import react_native2 from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let c2;
@@ -64,15 +64,15 @@ export function Checkbox(onToggle) {
     const _HermesInternal2 = HermesInternal;
     str = ", " + description;
   }
-  Stack = tmp2(6027).Stack;
+  Stack = tmp2(6159).Stack;
   const items = [React3(FormCheckbox.FormCheckbox, { checked }), ];
   const obj3 = { style: tmp.textContainer, children: items2 };
-  const obj4 = { style: tmp.labelContainer, children: hasOwnProperty(Text, { variant: "text-md/medium", children: items1 }) };
+  const obj4 = { style: tmp.labelContainer, children: hasOwnProperty(Text, { variant: "body-md/medium", children: items1 }) };
   items1 = [label, ];
-  Text = tmp2(5624).Text;
+  Text = tmp2(5751).Text;
   if (required) {
-    const obj5 = { variant: "text-md/bold", color: "text-feedback-critical", "aria-label": intl2.string(intl3.t.EkokLy), children: [" ", "*"] };
-    const Text2 = tmp2(5624).Text;
+    const obj5 = { variant: "body-md/semibold", color: "text-feedback-critical", "aria-label": intl2.string(intl3.t.EkokLy), children: [" ", "*"] };
+    const Text2 = tmp2(5751).Text;
     intl2 = tmp2(1113).intl;
     required = tmp10(Text2, obj5);
   }
@@ -80,8 +80,8 @@ export function Checkbox(onToggle) {
   items2 = [React3(_false, obj4), ];
   let tmp5Result = null != description;
   if (tmp5Result) {
-    const obj6 = { variant: "text-sm/normal", color: "text-subtle", children: description };
-    tmp5Result = tmp5(tmp2(5624).Text, obj6);
+    const obj6 = { variant: "body-sm/normal", color: "text-subtle", children: description };
+    tmp5Result = tmp5(tmp2(5751).Text, obj6);
   }
   obj7 = { direction: "horizontal", children: items };
   items2[1] = tmp5Result;

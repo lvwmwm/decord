@@ -1,20 +1,20 @@
-// Module ID: 13648
-// Function ID: 13649
+// Module ID: 13887
+// Function ID: 13888
 // Name: CheckpointVoiceStatsScreen
-// Dependencies: [19, 17, 13436, 6066, 21, 5014, 575, 504, 6437, 1113, 3092, 13637, 13644, 13649, 13650, 11972, 13639, 13651, 13652, 13653, 2]
+// Dependencies: [19, 17, 13668, 6199, 21, 5140, 575, 504, 6569, 1113, 3248, 13876, 13883, 13888, 13889, 12138, 13878, 13890, 13891, 13892, 2]
 // Exports: default
 
-// Module 13648 (CheckpointVoiceStatsScreen)
+// Module 13887 (CheckpointVoiceStatsScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import _modDef3092 from "module_3092" /* 3092 */;
-import CheckpointConstants from "CheckpointConstants" /* 6066 */;
-import CheckpointStatsUtils from "CheckpointStatsUtils" /* 6437 */;
-import CheckpointEmphasisDefault from "CheckpointEmphasis" /* 13653 */;
+import _modDef3248 from "module_3248" /* 3248 */;
+import CheckpointConstants from "CheckpointConstants" /* 6199 */;
+import CheckpointStatsUtils from "CheckpointStatsUtils" /* 6569 */;
+import CheckpointEmphasisDefault from "CheckpointEmphasis" /* 13892 */;
 import react from "react" /* 19 */;
-import CheckpointStore from "CheckpointStore" /* 13436 */;
+import CheckpointStore from "CheckpointStore" /* 13668 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let metroImportAll;
@@ -86,15 +86,15 @@ export default function CheckpointVoiceStatsScreen() {
     return obj.formatCheckpointPeakHour(stateFromStores1);
   }, items2);
   let prop;
-  const getCheckpointTopPercent = stateFromStores1(6437).getCheckpointTopPercent;
-  stateFromStores1(6437);
+  const getCheckpointTopPercent = stateFromStores1(6569).getCheckpointTopPercent;
+  stateFromStores1(6569);
   if (stateFromStores != null) {
     prop = stateFromStores.totalVoiceMinutesPercentile;
   }
   const checkpointTopPercent = getCheckpointTopPercent(prop);
   const intl = tmp2(1113).intl;
   const string = intl.string;
-  const tmp13 = _modDef3092;
+  const tmp13 = _modDef3248;
   if (roundResult <= 0) {
     stringResult = string(tmp13.ZCwB8J);
     tmp14 = tmp12;
@@ -107,44 +107,44 @@ export default function CheckpointVoiceStatsScreen() {
     if (null != checkpointTopPercent) {
       const intl2 = tmp2(1113).intl;
       const obj3 = { percent: checkpointTopPercent };
-      formatToPlainStringResult = intl2.formatToPlainString(tmp14(3092)["5vpcvA"], obj3);
+      formatToPlainStringResult = intl2.formatToPlainString(tmp14(3248)["5vpcvA"], obj3);
     }
   }
   const obj4 = { style: tmp.container, children: items3 };
   const obj5 = { style: tmp.imageContainer, children: closure_7(tmp14Result4, obj6) };
-  obj6 = { animatedUri: tmp14(13649), staticUri: tmp14(13650), style: tmp.image };
-  const tmp14Result = tmp14(13637);
-  tmp14Result4 = tmp14(13644);
+  obj6 = { animatedUri: tmp14(13888), staticUri: tmp14(13889), style: tmp.image };
+  const tmp14Result = tmp14(13876);
+  tmp14Result4 = tmp14(13883);
   items3 = [closure_7(View, obj5), ];
   const obj8 = { style: tmp.title, children: items4 };
   items4 = [, ];
   const obj7 = { style: tmp.copy, children: items5 };
   const obj9 = { size: "xs", color: CHECKPOINT_PRIMARY };
-  items4[0] = closure_7(stateFromStores1(11972).MicrophoneIcon, obj9);
-  const obj10 = { isStepHeading: true, variant: "heading-md/extrabold", style: tmp.titleText, children: stringResult.toLocaleUpperCase() };
-  const tmp14Result5 = tmp14(13639);
+  items4[0] = closure_7(stateFromStores1(12138).MicrophoneIcon, obj9);
+  const obj10 = { isStepHeading: true, variant: "heading-sm/semibold", style: tmp.titleText, children: stringResult.toLocaleUpperCase() };
+  const tmp14Result5 = tmp14(13878);
   items4[1] = closure_7(tmp14Result5, obj10);
   items5 = [closure_8(View, obj8), , , ];
   let tmp16Result = tmp7 && null != memo;
   if (tmp16Result) {
     const obj11 = { value: null, accessibilityLabel: null };
     ({ value: obj12.value, label: obj12.accessibilityLabel } = memo);
-    tmp16Result = tmp16(tmp14(13651), obj11);
+    tmp16Result = tmp16(tmp14(13890), obj11);
   }
   items5[1] = tmp16Result;
   let tmp16Result2 = !tmp7;
   if (tmp16Result2) {
     const _HermesInternal = HermesInternal;
-    const obj13 = { accessible: true, accessibilityLabel: "" + roundResult + " " + stringResult.toLocaleLowerCase(), style: tmp.number, children: closure_7(tmp14(13652), obj14) };
+    const obj13 = { accessible: true, accessibilityLabel: "" + roundResult + " " + stringResult.toLocaleLowerCase(), style: tmp.number, children: closure_7(tmp14(13891), obj14) };
     obj14 = { end: roundResult };
     tmp16Result2 = tmp16(tmp19, obj13);
   }
   items5[2] = tmp16Result2;
   const obj15 = { variant: "heading-lg/medium", accessibilityLabel: formatToPlainStringResult, children: stringResult1 };
-  const tmp14Result6 = tmp14(13639);
+  const tmp14Result6 = tmp14(13878);
   if (roundResult <= 0) {
     const intl5 = tmp2(1113).intl;
-    stringResult1 = intl5.string(tmp14(3092).huiTne);
+    stringResult1 = intl5.string(tmp14(3248).huiTne);
   } else if (null != checkpointTopPercent) {
     const intl4 = tmp2(1113).intl;
     const obj16 = {
@@ -155,11 +155,11 @@ export default function CheckpointVoiceStatsScreen() {
           return closure_1_7(CheckpointEmphasisDefault, obj, arg1);
         }
     };
-    stringResult1 = intl4.format(tmp14(3092).RqXsIs, obj16);
+    stringResult1 = intl4.format(tmp14(3248).RqXsIs, obj16);
   } else {
     const intl3 = tmp2(1113).intl;
     const obj17 = { numMinutes: roundResult };
-    stringResult1 = intl3.format(tmp14(3092).Y3poDW, obj17);
+    stringResult1 = intl3.format(tmp14(3248).Y3poDW, obj17);
   }
   const obj18 = { children: closure_8(View, obj4) };
   items5[3] = closure_7(tmp14Result6, obj15);

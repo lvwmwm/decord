@@ -1,23 +1,23 @@
-// Module ID: 9380
-// Function ID: 9381
+// Module ID: 9461
+// Function ID: 9462
 // Name: GameProfileMedia
-// Dependencies: [32, 19, 17, 5015, 1083, 21, 575, 9381, 5014, 9340, 8833, 5717, 8873, 1113, 9382, 9368, 504, 9385, 8834, 7294, 9386, 2]
+// Dependencies: [32, 19, 17, 5141, 1083, 21, 575, 9462, 5140, 9421, 8907, 5842, 8947, 1113, 9463, 9449, 504, 9069, 9466, 8908, 7357, 9467, 2]
 // Exports: default
 
-// Module 9380 (GameProfileMedia)
+// Module 9461 (GameProfileMedia)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
 import intl2 from "intl" /* 1113 */;
-import openMediaModal from "openMediaModal" /* 8833 */;
-import useMediaViewerSources from "useMediaViewerSources" /* 8834 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9340 */;
-import GameProfileMediaSources from "GameProfileMediaSources" /* 9381 */;
+import openMediaModal from "openMediaModal" /* 8907 */;
+import useMediaViewerSources from "useMediaViewerSources" /* 8908 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9421 */;
+import GameProfileMediaSources from "GameProfileMediaSources" /* 9462 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5015 */;
+import AccessibilityStore from "AccessibilityStore" /* 5141 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 let nativeEvent;
@@ -240,54 +240,68 @@ let result = size.fileFinishedImporting("modules/game_profile/native/components/
 
 export default function GameProfileMedia(game) {
   let closure_4;
-  let obj6;
-  let tmp34Result;
+  let obj5;
+  let onLayout;
+  let ref;
+  let tmp32Result;
   game = game.game;
   const trackAction = game.trackAction;
   let stateFromStores;
-  let first;
   react = undefined;
+  let first1;
   let setMediaModalOpen;
+  let ref1;
+  let memo;
+  let memo1;
+  let dimensions;
+  let recordDimensions;
+  let memo2;
+  let memo3;
   let memo4;
-  let tmp = memo4();
-  let tmp3 = stateFromStores;
+  let memo5;
+  let callback1;
+  let num2;
+  let tmp = memo5();
   let tmp2 = game;
+  let tmp3 = stateFromStores;
   let obj = game(stateFromStores[15]);
   const obscured = obj.useObscuredSurface().obscured;
   const obj2 = game(stateFromStores[16]);
-  const items = [setMediaModalOpen];
-  stateFromStores = obj2.useStateFromStores(items, () => setMediaModalOpen.useReducedMotion);
-  const tmp6 = first(react.useState(0), 2);
-  first = tmp6[0];
-  const tmp5 = react;
-  react = tmp6[1];
-  const tmp8 = first(react.useState(0), 2);
-  let closure_5 = tmp8[1];
-  const first1 = tmp8[0];
-  const tmp10 = first(react.useState(false), 2);
-  const first2 = tmp10[0];
+  const items = [ref1];
+  stateFromStores = obj2.useStateFromStores(items, () => ref1.useReducedMotion);
+  const tmp6 = trackAction(stateFromStores[17])();
+  const width = tmp6.width;
+  let num = 0;
+  ({ ref, onLayout } = tmp6);
+  const tmp5 = trackAction;
+  if (undefined !== width) {
+    num = width;
+  }
+  const tmp8 = num(react.useState(0), 2);
+  const tmp7 = react;
+  react = tmp8[1];
+  const first = tmp8[0];
+  const tmp10 = num(react.useState(false), 2);
+  first1 = tmp10[0];
   setMediaModalOpen = tmp10[1];
-  const ref = react.useRef(null);
-  const memo = react.useMemo(() => {
+  ref1 = react.useRef(null);
+  memo = react.useMemo(() => {
     const obj = game(stateFromStores[7]);
     return obj.getCarouselPreviewPixelSize();
   }, []);
   const items1 = [game];
-  const callback = react.useCallback((nativeEvent) => {
-    closure_4(nativeEvent.nativeEvent.layout.width);
-  }, []);
-  const memo1 = react.useMemo(() => {
+  memo1 = react.useMemo(() => {
     const obj = GameProfileMediaSources;
     return obj.buildMediaEntries(game);
   }, items1);
-  const obj3 = game(stateFromStores[17]);
-  const gameProfileMediaDimensions = obj3.useGameProfileMediaDimensions(game(stateFromStores[7]).MEDIA_VIEWER_ITEM_SIZE.width);
-  const dimensions = gameProfileMediaDimensions.dimensions;
-  const recordDimensions = gameProfileMediaDimensions.recordDimensions;
-  const items2 = [first];
-  const memo2 = react.useMemo(() => Math.max(0, Math.min(GameProfileMediaSources.MEDIA_ITEM_MAX_WIDTH, first - PX_12 - 2 * PX_16)), items2);
+  const tmp2Result = tmp2(tmp3[18]);
+  const gameProfileMediaDimensions = tmp2Result.useGameProfileMediaDimensions(tmp2(tmp3[7]).MEDIA_VIEWER_ITEM_SIZE.width);
+  dimensions = gameProfileMediaDimensions.dimensions;
+  recordDimensions = gameProfileMediaDimensions.recordDimensions;
+  const items2 = [num];
+  memo2 = react.useMemo(() => Math.max(0, Math.min(GameProfileMediaSources.MEDIA_ITEM_MAX_WIDTH, num - PX_12 - 2 * PX_16)), items2);
   const items3 = [memo2];
-  const memo3 = react.useMemo(() => {
+  memo3 = react.useMemo(() => {
     return min(GameProfileMediaSources.MEDIA_ITEM_MAX_HEIGHT, memo2 / GameProfileMediaSources.MEDIA_ITEM_ASPECT_RATIO);
   }, items3);
   const items4 = [memo1, memo, dimensions];
@@ -295,26 +309,26 @@ export default function GameProfileMedia(game) {
     const obj = GameProfileMediaSources;
     return obj.buildMediaViewerSources(memo1, memo, dimensions);
   }, items4);
-  const items5 = [memo4, first2];
+  const items5 = [memo4, first1];
   const effect = react.useEffect(() => {
-    const tmp = first2;
+    const tmp = first1;
     if (tmp) {
       const obj = useMediaViewerSources;
       const result = obj.updateMediaViewerSources(memo4);
     }
   }, items5);
-  const items6 = [memo1, first, memo2];
-  const memo5 = react.useMemo(() => memo1.map((item, index) => Math.max(0, index * (closure_1_13 + recordDimensions) - (first - closure_1_13 - 2 * memo2) / 2)), items6);
+  const items6 = [memo1, num, memo2];
+  memo5 = react.useMemo(() => memo1.map((item, index) => Math.max(0, index * (closure_1_12 + memo2) - (num - closure_1_12 - 2 * memo3) / 2)), items6);
   const items7 = [memo5];
   const items8 = [memo5];
-  const callback1 = react.useCallback((nativeEvent) => {
+  const callback = react.useCallback((nativeEvent) => {
     let arr2;
     if (0 !== memo5.length) {
       const x = nativeEvent.nativeEvent.contentOffset.x;
       const _Math2 = Math;
       num = 1;
       let absolute = Math.abs(arr[0] - x);
-      let num2 = 0;
+      num2 = 0;
       let num3 = 0;
       if (1 < memo5.length) {
         do {
@@ -333,38 +347,38 @@ export default function GameProfileMedia(game) {
           num3 = tmp4;
         } while (num < arr2.length);
       }
-      closure_5(num3);
+      closure_4(num3);
     }
   }, items7);
-  const callback2 = react.useCallback((arg0) => {
+  callback1 = react.useCallback((arg0) => {
     if (null != memo5[arg0]) {
-      const current = ref.current;
+      const current = ref1.current;
       if (current != null) {
         const obj = { offset: memo5[arg0], animated: false };
         current.scrollToOffset(obj);
       }
     }
-    closure_5(arg0);
+    closure_4(arg0);
   }, items8);
-  let num = -1;
+  num2 = -1;
   if (!obscured) {
-    num = -1;
-    if (!first2) {
-      num = -1;
+    num2 = -1;
+    if (!first1) {
+      num2 = -1;
       if (!stateFromStores) {
-        num = first1;
+        num2 = first;
       }
     }
   }
-  const items9 = [num, memo4, trackAction, memo2, memo3, callback2, stateFromStores, recordDimensions, ];
+  const items9 = [num2, memo4, trackAction, memo2, memo3, callback1, stateFromStores, recordDimensions, ];
   let name;
-  const useCallback = tmp5.useCallback;
+  const useCallback = tmp7.useCallback;
   if (game != null) {
     name = game.name;
   }
   items9[8] = name;
-  const items10 = [num, memo2, memo3, memo4, stateFromStores];
-  const callback3 = useCallback((arg0) => {
+  const items10 = [num2, memo2, memo3, memo4, stateFromStores];
+  const callback2 = useCallback((arg0) => {
     let COYYrn;
     let formatToPlainString;
     let index;
@@ -373,11 +387,11 @@ export default function GameProfileMedia(game) {
     let tmp20Result;
     ({ item, index } = arg0);
     if ("trailer" === item.type) {
-      size = { url: null, posterUrl: null, active: index === num, reducedMotion: stateFromStores, index, sources: memo4, trackAction, width: memo2, height: memo3, onScrollToIndex: callback2, setMediaModalOpen };
+      size = { url: null, posterUrl: null, active: index === num2, reducedMotion: stateFromStores, index, sources: memo4, trackAction, width: memo2, height: memo3, onScrollToIndex: callback1, setMediaModalOpen };
       ({ originalUrl: obj2.url, previewUrl: obj2.posterUrl } = item);
       tmp20Result = React4(closure_21, size);
     } else {
-      const size1 = { url: item.previewUrl, accessibilityLabel: formatToPlainString(COYYrn, obj), recordDimensions, index, sources: memo4, trackAction, width: memo2, height: memo3, onScrollToIndex: callback2, setMediaModalOpen };
+      const size1 = { url: item.previewUrl, accessibilityLabel: formatToPlainString(COYYrn, obj), recordDimensions, index, sources: memo4, trackAction, width: memo2, height: memo3, onScrollToIndex: callback1, setMediaModalOpen };
       const intl = intl2.intl;
       formatToPlainString = intl.formatToPlainString;
       let name;
@@ -392,18 +406,18 @@ export default function GameProfileMedia(game) {
     }
     return tmp20Result;
   }, items9);
-  let tmp34Result2 = null;
+  let tmp32Result2 = null;
   if (0 !== memo1.length) {
-    const obj4 = { style: tmp.container, onLayout: callback, children: tmp34Result };
-    tmp34Result = memo2 > 0;
-    const tmp35 = closure_5;
-    if (tmp34Result) {
-      const obj5 = { ref, horizontal: true, renderScrollComponent: trackAction(tmp3[20]), style: tmp.list, overrideProps: obj6, data: memo1, extraData: tmp25, renderItem: callback3, keyExtractor: num, getItemType, drawDistance: memo3, showsHorizontalScrollIndicator: false, ItemSeparatorComponent: memo5, ListHeaderComponent: callback2, ListFooterComponent: callback2, decelerationRate: "fast", snapToOffsets: memo5, snapToStart: false, snapToEnd: false, onMomentumScrollEnd: callback1 };
-      const FlashList = tmp2(tmp3[19]).FlashList;
-      obj6 = { style: tmp.list };
-      tmp34Result = tmp34(FlashList, obj5);
+    const obj3 = { style: tmp.container, ref, onLayout, children: tmp32Result };
+    tmp32Result = memo2 > 0;
+    const tmp33 = first1;
+    if (tmp32Result) {
+      const obj4 = { ref: ref1, horizontal: true, renderScrollComponent: tmp5(tmp3[21]), style: tmp.list, overrideProps: obj5, data: memo1, extraData: tmp24, renderItem: callback2, keyExtractor, getItemType, drawDistance: memo4, showsHorizontalScrollIndicator: false, ItemSeparatorComponent: callback1, ListHeaderComponent: num2, ListFooterComponent: num2, decelerationRate: "fast", snapToOffsets: memo5, snapToStart: false, snapToEnd: false, onMomentumScrollEnd: callback };
+      const FlashList = tmp2(tmp3[20]).FlashList;
+      obj5 = { style: tmp.list };
+      tmp32Result = tmp32(FlashList, obj4);
     }
-    tmp34Result2 = tmp34(tmp35, obj4);
+    tmp32Result2 = tmp32(tmp33, obj3);
   }
-  return tmp34Result2;
+  return tmp32Result2;
 };

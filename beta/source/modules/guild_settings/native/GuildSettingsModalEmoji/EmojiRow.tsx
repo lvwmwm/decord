@@ -1,23 +1,23 @@
-// Module ID: 19728
-// Function ID: 19729
+// Module ID: 20138
+// Function ID: 20139
 // Name: EmojiRow
-// Dependencies: [32, 19, 17, 4885, 1383, 21, 5014, 575, 1375, 7294, 504, 9020, 10057, 4964, 19729, 5274, 5624, 1187, 6975, 5712, 1113, 5717, 1409, 6041, 5068, 6980, 19731, 2]
+// Dependencies: [32, 19, 17, 5011, 1385, 21, 5140, 575, 1377, 7357, 504, 9100, 10178, 5090, 20139, 5390, 5751, 1187, 7038, 5837, 1113, 5842, 1411, 6173, 5194, 7043, 20141, 2]
 // Exports: EmojiRow
 
-// Module 19728 (EmojiRow)
+// Module 20138 (EmojiRow)
 import nativeDefault from "native" /* 575 */;
-import EmojiUtilsDefault from "EmojiUtils" /* 4964 */;
-import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5274 */;
-import EmojiActionCreators from "EmojiActionCreators" /* 10057 */;
-import showEmojiOverflowActionSheetDefault from "showEmojiOverflowActionSheet" /* 19729 */;
+import EmojiUtilsDefault from "EmojiUtils" /* 5090 */;
+import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5390 */;
+import EmojiActionCreators from "EmojiActionCreators" /* 10178 */;
+import showEmojiOverflowActionSheetDefault from "showEmojiOverflowActionSheet" /* 20139 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildStore from "GuildStore" /* 4885 */;
-import UserStore from "UserStore" /* 1383 */;
+import GuildStore from "GuildStore" /* 5011 */;
+import UserStore from "UserStore" /* 1385 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
-import PlatformUtils_mod from "PlatformUtils" /* 1375 */;
+import createStyles_mod from "createStyles" /* 5140 */;
+import PlatformUtils_mod from "PlatformUtils" /* 1377 */;
 import size from "module_2" /* 2 */;
 
 let c10;
@@ -214,11 +214,11 @@ export function EmojiRow(guildId) {
   }
   const obj22 = { style: tmp.nameContainer, children: items11 };
   items11 = [, , ];
-  const obj23 = { style: tmp.colon, variant: "text-md/medium", color: "text-muted", children: ":" };
+  const obj23 = { style: tmp.colon, variant: "body-md/medium", color: "text-muted", children: ":" };
   items11[0] = closure_9(tmp2(onSelectRolesForEmoji[16]).Text, obj23);
-  const obj24 = { lineClamp: 1, style: tmp.emojiText, variant: "text-md/medium", color: "mobile-text-heading-primary", children };
+  const obj24 = { lineClamp: 1, style: tmp.emojiText, variant: "body-md/medium", color: "mobile-text-heading-primary", children };
   items11[1] = closure_9(tmp2(onSelectRolesForEmoji[16]).Text, obj24);
-  const obj25 = { style: tmp.colon, variant: "text-md/medium", color: "text-muted", children: ":" };
+  const obj25 = { style: tmp.colon, variant: "body-md/medium", color: "text-muted", children: ":" };
   items11[2] = closure_9(tmp2(onSelectRolesForEmoji[16]).Text, obj25);
   tmp15Result4 = tmp19(tmp20, obj22);
 }

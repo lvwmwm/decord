@@ -1,25 +1,25 @@
-// Module ID: 18874
-// Function ID: 18875
+// Module ID: 19249
+// Function ID: 19250
 // Name: YouExpiringTrialOfferCard
-// Dependencies: [19, 17, 15606, 1072, 7617, 1385, 21, 1089, 5014, 575, 18875, 1252, 1113, 2042, 563, 7627, 7624, 18873, 2061, 5624, 2047, 6980, 1187, 9528, 5587, 7376, 2]
+// Dependencies: [19, 17, 15921, 1072, 7693, 1387, 21, 1089, 5140, 575, 19250, 1252, 1113, 2166, 563, 7703, 7700, 19248, 2185, 5751, 2171, 7043, 1187, 9612, 5715, 7436, 2]
 // Exports: default
 
-// Module 18874 (YouExpiringTrialOfferCard)
+// Module 19249 (YouExpiringTrialOfferCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import PremiumConstants from "PremiumConstants" /* 1385 */;
-import _modDef2042 from "module_2042" /* 2042 */;
-import LinearGradientDefault from "LinearGradient" /* 5587 */;
-import ColorConstants from "ColorConstants" /* 7617 */;
-import useCountdownDefault from "useCountdown" /* 7624 */;
-import NoticeActionCreatorsDefault from "NoticeActionCreators" /* 18875 */;
+import PremiumConstants from "PremiumConstants" /* 1387 */;
+import _modDef2166 from "module_2166" /* 2166 */;
+import LinearGradientDefault from "LinearGradient" /* 5715 */;
+import ColorConstants from "ColorConstants" /* 7693 */;
+import useCountdownDefault from "useCountdown" /* 7700 */;
+import NoticeActionCreatorsDefault from "NoticeActionCreators" /* 19250 */;
 import react from "react" /* 19 */;
-import NoticeStore from "NoticeStore" /* 15606 */;
+import NoticeStore from "NoticeStore" /* 15921 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap, importDefault;
@@ -34,8 +34,8 @@ let metroRequire;
 let obj2;
 let obj3;
 let tmp;
-const HelpdeskUtilsDefault = tmp(2061);
-const UserProfileCardDefault = tmp(7376);
+const HelpdeskUtilsDefault = tmp(2185);
+const UserProfileCardDefault = tmp(7436);
 const View = react_native.View;
 ({ AnalyticEvents: metroRequire, HelpdeskArticles: metroImportDefault, HorizontalGradient: metroImportAll, NoticeTypes: c9 } = Constants);
 const Gradients = ColorConstants.Gradients;
@@ -46,7 +46,7 @@ let createStyles = createStyles_mod;
 let obj = { header: { flexDirection: "row", alignItems: "flex-start", marginBottom: 16, marginRight: 32 }, closeButton: { position: "absolute", top: 16, right: 16 }, closeIcon: obj2, linearGradient: { width: "100%", height: "100%", position: "absolute", overflow: "hidden" }, primaryCTA: obj3 };
 obj2 = { color: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT };
 createStyles = createStyles.createStyles;
-obj3 = { borderRadius: nativeDefault.radii.round, gap: 4 };
+obj3 = { borderRadius: nativeDefault.modules.button.BORDER_RADIUS_LG, gap: 4 };
 let closure_16 = createStyles(obj);
 let size = size_mod;
 let result = size.fileFinishedImporting("modules/main_tabs_v2/native/tabs/you/YouExpiringTrialOfferCard.tsx");
@@ -67,7 +67,7 @@ export default function YouExpiringTrialOfferCard(navigateToPremium) {
   let tmp = importDefault;
   let tmp2 = dependencyMap;
   const style = navigateToPremium.style;
-  let obj = _modDef2042();
+  let obj = _modDef2166();
   importDefault = obj.add(5, "days");
   const tmp3 = closure_16();
   dependencyMap = tmp3;
@@ -75,7 +75,7 @@ export default function YouExpiringTrialOfferCard(navigateToPremium) {
   let obj2 = navigateToPremium(563);
   const items = [shouldShowExpiringTrialOfferCard];
   const stateFromStores = obj2.useStateFromStores(items, () => shouldShowExpiringTrialOfferCard.getNoticeType());
-  let obj3 = navigateToPremium(7627);
+  let obj3 = navigateToPremium(7703);
   const premiumTrialOffer = obj3.usePremiumTrialOffer();
   let num = 0;
   const tmp7 = useCountdownDefault;
@@ -87,7 +87,7 @@ export default function YouExpiringTrialOfferCard(navigateToPremium) {
     }
   }
   const time = tmp7(num, closure_15);
-  const tmp4Result = tmp4(18873);
+  const tmp4Result = tmp4(19248);
   shouldShowExpiringTrialOfferCard = tmp4Result.useShouldShowExpiringTrialOfferCard();
   const items1 = [stateFromStores, shouldShowExpiringTrialOfferCard, premiumTrialOffer];
   const effect = stateFromStores.useEffect(() => {
@@ -113,11 +113,11 @@ export default function YouExpiringTrialOfferCard(navigateToPremium) {
         }
         const articleURL = getArticleURL(PREMIUM_TRIAL);
         let obj4 = { style: tmp3.header, children: closure_12(Text, obj10) };
-        Text = tmp4(5624).Text;
+        Text = tmp4(5751).Text;
         const subscriptionTrial = premiumTrialOffer.subscriptionTrial;
         let interval;
-        const formatIntervalDuration = tmp4(2047).formatIntervalDuration;
-        tmp4(2047);
+        const formatIntervalDuration = tmp4(2171).formatIntervalDuration;
+        tmp4(2171);
         const tmp16 = premiumTrialOffer;
         if (subscriptionTrial != null) {
           interval = subscriptionTrial.interval;
@@ -146,7 +146,7 @@ export default function YouExpiringTrialOfferCard(navigateToPremium) {
           formatResult = format(SxXB42, obj8);
         }
         const obj9 = { children: items2 };
-        obj10 = { variant: "heading-sm/medium", color: "text-default", children: formatResult };
+        obj10 = { variant: "heading-xs/medium", color: "text-default", children: formatResult };
         items2 = [closure_12(tmp16, obj4), , ];
         const obj11 = {
           style: tmp3.closeButton,
@@ -165,7 +165,7 @@ export default function YouExpiringTrialOfferCard(navigateToPremium) {
                 },
           children: closure_12(tmp4(1187).CloseIcon, size)
         };
-        const PressableOpacity = tmp4(6980).PressableOpacity;
+        const PressableOpacity = tmp4(7043).PressableOpacity;
         intl4 = tmp4(1113).intl;
         size = { width: 16, height: 16, color: tmp3.closeIcon.color };
         items2[1] = closure_12(PressableOpacity, obj11);

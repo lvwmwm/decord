@@ -1,22 +1,18 @@
 // Module ID: 8129
 // Function ID: 8130
-// Dependencies: [41, 42, 93, 95, 98, 19, 8130, 21, 8039, 8046, 8047, 8053, 8132, 8055]
+// Dependencies: [41, 42, 93, 95, 98, 19, 21, 8116, 8130, 8125]
 
 // Module 8129
 import Fragment from "Fragment" /* 21 */;
-import extractProps from "extractProps" /* 8046 */;
-import extractTextDefault from "extractText" /* 8053 */;
-import multiplyMatricesDefault from "multiplyMatrices" /* 8055 */;
-import _modDef8132 from "module_8132" /* 8132 */;
+import extractProps from "extractProps" /* 8116 */;
+import multiplyMatricesDefault from "multiplyMatrices" /* 8125 */;
+import _modDef8130 from "module_8130" /* 8130 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import _possibleConstructorReturn from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 import react from "react" /* 19 */;
-import TSpan from "TSpan" /* 8130 */;
-
-const extractPropsDefault = extractProps;
 
 function _isNativeReflectConstruct() {
   try {
@@ -34,61 +30,46 @@ function _isNativeReflectConstruct() {
   }
 }
 const jsx = Fragment.jsx;
-class Text {
+class Circle {
   constructor() {
     let constructResult;
     const self = this;
-    const items = [...arguments];
-    let closure_0;
-    let tmp = _classCallCheck(this, Text);
-    const items1 = [...items];
-    let obj = _getPrototypeOf(Text);
+    _classCallCheck(this, Circle);
+    const obj = _getPrototypeOf(Circle);
     const tmp2 = _getPrototypeOf;
     const tmp3 = _possibleConstructorReturn;
     if (_isNativeReflectConstruct()) {
       const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, items1, tmp2(self).constructor);
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
     } else {
-      constructResult = obj.apply(self, items1);
+      constructResult = obj(...arguments);
     }
-    const tmp3Result = tmp3(self, constructResult);
-    closure_0 = tmp3Result;
-    tmp3Result.setNativeProps = (matrix) => {
-      const tmp = matrix && !matrix.matrix && closure_2_1(closure_2_2[8])(matrix);
-      if (tmp) {
-        matrix.matrix = tmp;
-      }
-      const obj = Text(closure_2_2[9]);
-      const propsAndStylesResult = obj.propsAndStyles(matrix);
-      const obj2 = Text(closure_2_2[10]);
-      assign(propsAndStylesResult, obj2.pickNotNil(closure_2_1(closure_2_2[11])(propsAndStylesResult, true)));
-      if (closure_0.root) {
-        const root = closure_0.root;
-        root.setNativeProps(propsAndStylesResult);
-      }
-    };
-    return tmp3Result;
+    return tmp3(self, constructResult);
   }
 }
-_inherits(Text, multiplyMatricesDefault);
+_inherits(Circle, multiplyMatricesDefault);
 const entry = {
   key: "render",
   value: function render() {
-    const obj = extractProps;
-    const propsAndStylesResult = obj.propsAndStyles(this.props);
-    const obj2 = { x: null, y: null };
-    const tmp2 = extractPropsDefault;
-    const merged = Object.assign(propsAndStylesResult);
-    const tmp2Result = tmp2(obj2, this);
-    const merged1 = Object.assign(tmp2Result, extractTextDefault(propsAndStylesResult, true));
-    tmp2Result.ref = this.refMethod;
-    _modDef8132;
-    const merged2 = Object.assign(tmp2Result);
-    return <tmp6 />;
+    let cx;
+    let cy;
+    let r;
+    const self = this;
+    const props = this.props;
+    const obj = { cx, cy, r };
+    ({ cx, cy, r } = props);
+    const obj2 = extractProps;
+    const merged = Object.assign(obj2.extract(this, props));
+    _modDef8130;
+    const merged1 = Object.assign(obj);
+    return <tmp2 ref={function ref(arg0) {
+      return self.refMethod(arg0);
+    }} />;
   }
 };
-let items = [entry];
-const importDefaultResultResult = _createClass(Text, items);
-importDefaultResultResult.displayName = "Text";
+const items = [entry];
+const importDefaultResultResult = _createClass(Circle, items);
+importDefaultResultResult.displayName = "Circle";
+importDefaultResultResult.defaultProps = { cx: 0, cy: 0, r: 0 };
 
 export default importDefaultResultResult;

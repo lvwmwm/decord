@@ -1,18 +1,18 @@
-// Module ID: 15859
-// Function ID: 15860
+// Module ID: 16176
+// Function ID: 16177
 // Name: ToastEntity
-// Dependencies: [19, 17, 21, 5014, 575, 5624, 5717, 2027, 2]
+// Dependencies: [19, 17, 21, 5140, 575, 5751, 5842, 2151, 2]
 // Exports: ToastEntity
 
-// Module 15859 (ToastEntity)
+// Module 16176 (ToastEntity)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import utils_StringUtils from "utils/StringUtils" /* 2027 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import FastImageDefault from "FastImage" /* 5717 */;
+import utils_StringUtils from "utils/StringUtils" /* 2151 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import FastImageDefault from "FastImage" /* 5842 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -27,7 +27,7 @@ function ToastEntityContent(arg0) {
   if ("emoji" === type) {
     let tmp14Result;
     if ("unicode" in entity) {
-      const obj2 = { variant: "text-lg/normal", color: "text-default", style: styles.glyph, lineClamp: 1, children: entity.unicode };
+      const obj2 = { variant: "body-lg/normal", color: "text-default", style: styles.glyph, lineClamp: 1, children: entity.unicode };
       tmp14Result = tmp14(Text_Text.Text, obj2);
     } else {
       const obj3 = { style: styles.image, source: obj4, accessibilityLabel: entity.alt };
@@ -42,13 +42,13 @@ function ToastEntityContent(arg0) {
     if (null == entity.src) {
       const obj5 = utils_StringUtils;
       const acronym = obj5.getAcronym(entity.name);
-      let str2 = "text-md/semibold";
+      let str2 = "body-md/semibold";
       const Text = Text_Text.Text;
       const tmp10 = jsx;
       if (acronym.length > 2) {
-        let str3 = "text-xs/semibold";
+        let str3 = "body-xs/semibold";
         if (acronym.length <= 4) {
-          str3 = "text-sm/semibold";
+          str3 = "body-sm/semibold";
         }
         str2 = str3;
       }

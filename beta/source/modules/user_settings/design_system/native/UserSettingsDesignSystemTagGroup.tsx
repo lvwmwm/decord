@@ -1,20 +1,20 @@
-// Module ID: 17805
-// Function ID: 17806
+// Module ID: 18137
+// Function ID: 18138
 // Name: UserSettingsDesignSystemTagGroup
-// Dependencies: [19, 17, 21, 5014, 575, 5596, 6027, 5624, 6977, 12185, 2]
+// Dependencies: [19, 17, 21, 5140, 575, 5724, 6159, 5751, 7040, 12357, 2]
 // Exports: default
 
-// Module 17805 (UserSettingsDesignSystemTagGroup)
+// Module 18137 (UserSettingsDesignSystemTagGroup)
 import nativeDefault from "native" /* 575 */;
-import useToken from "useToken" /* 5596 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import Stack_Stack from "Stack/Stack" /* 6027 */;
-import Card_Card from "Card/Card" /* 6977 */;
-import TagGroup from "TagGroup" /* 12185 */;
+import useToken from "useToken" /* 5724 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import Stack_Stack from "Stack/Stack" /* 6159 */;
+import Card_Card from "Card/Card" /* 7040 */;
+import TagGroup from "TagGroup" /* 12357 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -53,12 +53,12 @@ export default function UserSettingsDesignSystemTagGroup() {
   const token = obj.useToken(nativeDefault.colors.ICON_BRAND);
   obj3 = { spacing: nativeDefault.space.PX_24, children: items };
   Stack = Stack_Stack.Stack;
-  items = [hasOwnProperty(Text_Text.Text, { variant: "text-md/normal", color: "text-subtle", children: "Tag groups display read-only values. They do not select or remove tags." }), , , , ];
+  items = [hasOwnProperty(Text_Text.Text, { variant: "body-md/normal", color: "text-subtle", children: "Tag groups display read-only values. They do not select or remove tags." }), , , , ];
   const obj4 = { children: metroRequire(Stack2, obj5) };
   const Card = Card_Card.Card;
   obj5 = { spacing: nativeDefault.space.PX_12, children: items1 };
   Stack2 = Stack_Stack.Stack;
-  items1 = [hasOwnProperty(Text_Text.Heading, { variant: "text-lg/bold", children: "Default layout" }), hasOwnProperty(Text_Text.Text, { variant: "text-sm/normal", color: "text-subtle", children: "Medium tags wrap onto new lines as space runs out." }), ];
+  items1 = [hasOwnProperty(Text_Text.Heading, { variant: "body-lg/semibold", children: "Default layout" }), hasOwnProperty(Text_Text.Text, { variant: "body-sm/normal", color: "text-subtle", children: "Medium tags wrap onto new lines as space runs out." }), ];
   const obj6 = { label: "Default wrapping tags", items: items2 };
   items2 = [{ id: "community", label: "Community" }, , , , ];
   const obj7 = { id: "moderators", label: "Moderators", icon: { type: "role", color: token } };
@@ -72,10 +72,10 @@ export default function UserSettingsDesignSystemTagGroup() {
   const Card2 = Card_Card.Card;
   obj9 = { spacing: nativeDefault.space.PX_12, children: items3 };
   Stack3 = Stack_Stack.Stack;
-  items3 = [hasOwnProperty(Text_Text.Heading, { variant: "text-lg/bold", children: "Sizes" }), hasOwnProperty(Text_Text.Text, { variant: "text-sm/normal", color: "text-subtle", children: "Compare the extra-small and small densities with the default medium group above." }), hasOwnProperty(Text_Text.Text, { variant: "text-sm/medium", children: "Extra small" }), , , ];
+  items3 = [hasOwnProperty(Text_Text.Heading, { variant: "body-lg/semibold", children: "Sizes" }), hasOwnProperty(Text_Text.Text, { variant: "body-sm/normal", color: "text-subtle", children: "Compare the extra-small and small densities with the default medium group above." }), hasOwnProperty(Text_Text.Text, { variant: "body-sm/medium", children: "Extra small" }), , , ];
   const obj10 = { label: "Extra-small tags", size: "xs", items };
   items3[3] = hasOwnProperty(TagGroup.TagGroup, obj10);
-  items3[4] = hasOwnProperty(Text_Text.Text, { variant: "text-sm/medium", children: "Small" });
+  items3[4] = hasOwnProperty(Text_Text.Text, { variant: "body-sm/medium", children: "Small" });
   const obj11 = { label: "Small tags", size: "sm", items };
   items3[5] = hasOwnProperty(TagGroup.TagGroup, obj11);
   items[2] = hasOwnProperty(Card2, obj8);
@@ -83,7 +83,7 @@ export default function UserSettingsDesignSystemTagGroup() {
   const Card3 = Card_Card.Card;
   obj13 = { spacing: nativeDefault.space.PX_12, children: items4 };
   Stack4 = Stack_Stack.Stack;
-  items4 = [hasOwnProperty(Text_Text.Heading, { variant: "text-lg/bold", children: "Filter treatment" }), hasOwnProperty(Text_Text.Text, { variant: "text-sm/normal", color: "text-subtle", children: "Filter tags have fully rounded corners but remain read-only." }), ];
+  items4 = [hasOwnProperty(Text_Text.Heading, { variant: "body-lg/semibold", children: "Filter treatment" }), hasOwnProperty(Text_Text.Text, { variant: "body-sm/normal", color: "text-subtle", children: "Filter tags have fully rounded corners but remain read-only." }), ];
   const obj14 = { label: "Filter-style tags", variant: "filter", items: items1 };
   items4[2] = hasOwnProperty(TagGroup.TagGroup, obj14);
   items[3] = hasOwnProperty(Card3, obj12);
@@ -91,13 +91,13 @@ export default function UserSettingsDesignSystemTagGroup() {
   const Card4 = Card_Card.Card;
   obj16 = { spacing: nativeDefault.space.PX_12, children: items5 };
   Stack5 = Stack_Stack.Stack;
-  items5 = [hasOwnProperty(Text_Text.Heading, { variant: "text-lg/bold", children: "Inline layout" }), hasOwnProperty(Text_Text.Text, { variant: "text-sm/normal", color: "text-subtle", children: "Inline uses small tags by default and stays on one line. In narrow columns, labels truncate and the row can clip. Use default layout for longer collections." }), , , , , ];
+  items5 = [hasOwnProperty(Text_Text.Heading, { variant: "body-lg/semibold", children: "Inline layout" }), hasOwnProperty(Text_Text.Text, { variant: "body-sm/normal", color: "text-subtle", children: "Inline uses small tags by default and stays on one line. In narrow columns, labels truncate and the row can clip. Use default layout for longer collections." }), , , , , ];
   const obj17 = { label: "Inline tags", layout: "inline", items: items2 };
   items5[2] = hasOwnProperty(TagGroup.TagGroup, obj17);
-  items5[3] = hasOwnProperty(Text_Text.Text, { variant: "text-sm/medium", children: "Medium inline tags (explicit size)" });
+  items5[3] = hasOwnProperty(Text_Text.Text, { variant: "body-sm/medium", children: "Medium inline tags (explicit size)" });
   const obj18 = { label: "Medium inline tags", layout: "inline", size: "md", items: items2 };
   items5[4] = hasOwnProperty(TagGroup.TagGroup, obj18);
-  items5[5] = hasOwnProperty(Text_Text.Text, { variant: "text-sm/medium", children: "Narrow column with a long label" });
+  items5[5] = hasOwnProperty(Text_Text.Text, { variant: "body-sm/medium", children: "Narrow column with a long label" });
   const obj19 = { style: tmp.narrow, children: hasOwnProperty(TagGroup.TagGroup, obj20) };
   obj20 = { label: "Narrow inline tags", layout: "inline", items: items3 };
   items5[6] = hasOwnProperty(React3, obj19);

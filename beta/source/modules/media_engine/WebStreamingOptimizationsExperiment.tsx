@@ -1,10 +1,10 @@
-// Module ID: 5886
-// Function ID: 5887
+// Module ID: 6017
+// Function ID: 6018
 // Name: WebStreamingOptimizationsExperiment
-// Dependencies: [1447, 2]
+// Dependencies: [1449, 2]
 
-// Module 5886 (WebStreamingOptimizationsExperiment)
-import ApexExperiment from "ApexExperiment" /* 1447 */;
+// Module 6017 (WebStreamingOptimizationsExperiment)
+import ApexExperiment from "ApexExperiment" /* 1449 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

@@ -1,15 +1,17 @@
-// Module ID: 8214
-// Function ID: 8215
+// Module ID: 8284
+// Function ID: 8285
 // Name: ClipsConstants
 // Dependencies: [1089, 3, 2]
 // Exports: CLIP_NAME_TEMPLATE, getClipCropAspectRatio, getClipCropBounds, getDefaultImageTrackWidthFraction, snapTrackRotationDeg
 
-// Module 8214 (ClipsConstants)
+// Module 8284 (ClipsConstants)
 import LoggerDefault from "Logger" /* 3 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import size from "module_2" /* 2 */;
 
 let MINUTE;
+let NONE;
+let SMALL;
 let result;
 let result1;
 let obj = { SECONDS_30: result, MINUTES_1: MINUTE, MINUTES_2: result1 };
@@ -28,7 +30,7 @@ const obj4 = { NONE: "none", SMALL: "small", MEDIUM: "medium", LARGE: "large" };
 const obj6 = { NONE: "none", SMALL: "small", MEDIUM: "medium", LARGE: "large" };
 const obj5 = { fontSize: 0.06, color: "#FFFFFF", strokeWidth: obj4.NONE, strokeColor: "#000000" };
 const result4 = 14 * DurationsDefault.Millis.DAY;
-const NONE = obj6.NONE;
+({ NONE, SMALL } = obj6);
 const result5 = size.fileFinishedImporting("modules/clips/ClipsConstants.tsx");
 
 export const ClipsLengthSettings = obj;
@@ -40,10 +42,8 @@ export const DEFAULT_SAVE_SCREENSHOT_KEYBIND = "f12";
 export const CLIPS_TOAST_DURATION = result2;
 export const ClipsLogger = tmp5;
 export const CURRENT_CLIP_METADATA_VERSION = 6;
-export const CLIPS_HARDWARE_CLASSIFICATION_VERSION = 2;
+export const CLIPS_HARDWARE_CLASSIFICATION_VERSION = 3;
 export const CLIPS_DEFAULT_SETTINGS_VERSION = 1;
-export const WINDOWS_HARDWARE_MINIMUM_GPU_REGEX = /(NVIDIA GeForce GTX (98|10|16).*|Radeon RX 5(500|600|).*|Radeon RX5.*)/;
-export const WINDOWS_HARDWARE_AUTO_ENABLE_GPU_REGEX = /(NVIDIA GeForce (RTX (20|30|40|50).*))|(.*Radeon RX (57|58|59|6|7|9).*)/;
 export const MIN_CLIP_DURATION_SECONDS = 0.1;
 export const CLIPS_EDIT_MODAL_KEY = "clips-edit";
 export const CLIPS_GALLERY_MODAL_KEY = "clips-gallery";
@@ -158,5 +158,14 @@ export const IMAGE_TRACK_SHADOW_TO_WIDTH_RATIO = { [obj6.NONE]: 0, [obj6.SMALL]:
 export const IMAGE_TRACK_SHADOW_OFFSET_TO_BLUR_RATIO = 0.4;
 export const DEFAULT_IMAGE_TRACK_SHADOW = NONE;
 export const DEFAULT_IMAGE_TRACK_SHADOW_COLOR = "#000000";
+export const CLIP_SHARE_WATERMARK_TRACK_ID = "clip-share-watermark";
+export const CLIP_SHARE_WATERMARK_LANDSCAPE_WIDTH_TO_SHORT_EDGE_RATIO = 0.19722222222222222;
+export const CLIP_SHARE_WATERMARK_LANDSCAPE_PADDING_TO_SHORT_EDGE_RATIO = 0.022222222222222223;
+export const CLIP_SHARE_WATERMARK_PORTRAIT_WIDTH_TO_SHORT_EDGE_RATIO = 0.21875;
+export const CLIP_SHARE_WATERMARK_PORTRAIT_PADDING_TO_SHORT_EDGE_RATIO = 0.06578947368421052;
+export const CLIP_SHARE_WATERMARK_VERTICAL_CENTER_FRACTION = 0.75;
+export const CLIP_SHARE_WATERMARK_SHADOW = SMALL;
+export const CLIP_SHARE_WATERMARK_SHADOW_COLOR = "#00000024";
+export const CLIP_SHARE_WATERMARK_OPACITY = 0.65;
 export const ClipType = { CLIP: "clip", SCREENSHOT: "screenshot", VOICE_CLIP: "voice_clip" };
 export const GameEventType = { UNCLASSIFIED: "unclassified", KILL: "kill", MULTIKILL: "multikill", DEATH: "death", ASSIST: "assist", ITEM: "item", VICTORY: "victory", DEFEAT: "defeat", LEVEL_UP: "level_up", TREASURE: "treasure", OBJECTIVE_KILL: "objective_kill" };

@@ -1,15 +1,15 @@
-// Module ID: 5735
-// Function ID: 5736
+// Module ID: 5859
+// Function ID: 5860
 // Name: CircleInformationIcon
-// Dependencies: [19, 17, 21, 575, 5716, 5736, 5737, 2]
+// Dependencies: [19, 17, 21, 575, 5841, 5860, 5861, 2]
 // Exports: CircleInformationIcon
 
-// Module 5735 (CircleInformationIcon)
+// Module 5859 (CircleInformationIcon)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage3 from "BaseIconImage" /* 5716 */;
-import AssetRegistry from "AssetRegistry" /* 5736 */;
-import AssetRegistry2 from "AssetRegistry" /* 5737 */;
+import BaseIconImage3 from "BaseIconImage" /* 5841 */;
+import AssetRegistry from "AssetRegistry" /* 5860 */;
+import AssetRegistry2 from "AssetRegistry" /* 5861 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;

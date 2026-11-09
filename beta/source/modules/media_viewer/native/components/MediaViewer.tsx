@@ -1,23 +1,20 @@
-// Module ID: 14799
-// Function ID: 14800
+// Module ID: 15034
+// Function ID: 15035
 // Name: MediaViewer
-// Dependencies: [32, 19, 17, 21, 1375, 5095, 14800, 14801, 8841, 5303, 7240, 7326, 7351, 8867, 14806, 14807, 14784, 6022, 5254, 8836, 8903, 11212, 5096, 14808, 11703, 2]
+// Dependencies: [32, 19, 17, 21, 1377, 1652, 15035, 15036, 8915, 5420, 7304, 7387, 7412, 8941, 15041, 15042, 15019, 6154, 5370, 1705, 8910, 8977, 11352, 15043, 11866, 2]
 
-// Module 14799 (MediaViewer)
-import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
-import timing from "timing" /* 5254 */;
-import useVideoControls from "useVideoControls" /* 8836 */;
-import MediaViewerDimensionsContext from "MediaViewerDimensionsContext" /* 8867 */;
-import MediaViewerItem2 from "MediaViewerItem" /* 14801 */;
+// Module 15034 (MediaViewer)
+import useVideoControls from "useVideoControls" /* 8910 */;
+import MediaViewerDimensionsContext from "MediaViewerDimensionsContext" /* 8941 */;
+import MediaViewerItem2 from "MediaViewerItem" /* 15036 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import PlatformUtils from "PlatformUtils" /* 1375 */;
+import PlatformUtils from "PlatformUtils" /* 1377 */;
 import size from "module_2" /* 2 */;
 
-const require = globalThis.__r;
-let _require, dependencyMap;
+let _undefined, _undefined2;
 
 let StyleSheet;
 let hasOwnProperty;
@@ -25,195 +22,288 @@ let metroImportAll;
 let metroImportDefault;
 let obj2;
 function MediaViewer(arg0) {
-  let closure_2;
-  let closure_6;
   let height;
   let index;
-  let items10;
-  let items7;
-  let items8;
-  let items9;
+  let isClosing;
+  let isInteracting;
+  let items15;
+  let items16;
+  let items17;
+  let items18;
   let onClose;
   let onContentSizeChange;
   let onLongPress;
   let onScroll;
   let onScrollWorklets;
   let originLayout;
+  let overlayEnabled;
   let pagerIndex;
   let ref;
   let renderMedia;
   let renderOverlay;
-  let setShowHeader;
   let sources;
   let str;
   let swipeVelocityThreshold;
   let syncer;
-  let tmp5;
+  let tmp23;
+  let tmp24;
+  let tmp25;
+  let tmp26;
+  let tmp27;
+  let tmp28;
+  let tmp29;
+  let tmp35;
+  let tmp36;
+  let tmp37;
+  let tmp38;
+  let tmp39;
+  let tmp40;
+  let tmp41;
+  let tmp42;
+  let tmp43;
+  let tmp44;
+  let tmp47;
+  let tmp48;
+  let tmp49;
+  let tmp50;
+  let tmp51;
+  let tmp55;
+  let tmp56;
+  let tmp57;
+  let tmp58;
+  let tmp59;
   let tmp6;
+  let tmp60;
+  let tmp61;
+  let tmp7;
+  let translatePos;
   let useItemVisible;
   let width;
   let zoomed;
   ({ onClose, onLongPress, originLayout, renderMedia, syncer } = arg0);
   ({ index, sources, zoomed } = syncer);
   height = undefined;
-  let sharedValue;
   let sharedValue1;
-  __initData = undefined;
-  let tmp = height;
+  let animatedRef;
+  let closure_3;
+  let dismiss;
+  isClosing = undefined;
+  StyleSheet = undefined;
+  let callback;
+  let ref2;
+  let tmp = sharedValue1;
   ({ renderOverlay, swipeVelocityThreshold } = arg0);
   const useViewerProps = syncer.useViewerProps;
-  let tmp3 = height(7326);
-  let items = [height(7351).MEDIA_VIEWER];
+  let tmp3 = sharedValue1(animatedRef[11]);
+  let items = [sharedValue1(animatedRef[12]).MEDIA_VIEWER];
+  let obj = dismiss;
   const analyticsLocations = tmp3(items).analyticsLocations;
-  [tmp5, tmp6] = sharedValue(sharedValue1.useState(true), 2);
-  _require = tmp6;
-  const tmp4 = sharedValue(sharedValue1.useState(true), 2);
-  let obj = require("MediaViewerDimensionsContext");
-  const mediaViewerDimensions = obj.useMediaViewerDimensions();
+  [tmp6, tmp7] = closure_3(dismiss.useState(true), 2);
+  const tmp5 = closure_3(dismiss.useState(true), 2);
+  let obj2 = height(animatedRef[13]);
+  const mediaViewerDimensions = obj2.useMediaViewerDimensions();
   ({ width, height } = mediaViewerDimensions);
-  const tmp9 = height(14806)({ index, onClose, sources, windowHeight: height, windowWidth: width });
-  dependencyMap = tmp9;
-  let obj2 = require("ReanimatedRexport");
-  sharedValue = obj2.useSharedValue(0);
-  let obj3 = require("ReanimatedRexport");
-  sharedValue1 = obj3.useSharedValue(false);
-  const obj4 = require("ReanimatedRexport");
-  const animatedRef = obj4.useAnimatedRef();
-  StyleSheet = tmp13;
-  const obj5 = require("MediaViewerImprovementsExperiment");
-  const isMediaViewerImprovementsEnabled = obj5.useIsMediaViewerImprovementsEnabled();
-  const obj6 = require("MediaViewerEntranceJankExperiment");
-  const isMediaViewerEntranceJankFixEnabled = obj6.useIsMediaViewerEntranceJankFixEnabled();
+  const tmp10 = sharedValue1(animatedRef[14])({ index, onClose, sources, windowHeight: height, windowWidth: width });
+  let obj3 = height(animatedRef[5]);
+  const sharedValue = obj3.useSharedValue(0);
+  const obj4 = height(animatedRef[5]);
+  sharedValue1 = obj4.useSharedValue(false);
+  const obj5 = height(animatedRef[5]);
+  animatedRef = obj5.useAnimatedRef();
+  const tmp14 = sources.length > 1;
+  const tmp4 = closure_3;
+  closure_3 = tmp14;
+  const obj6 = height(animatedRef[15]);
+  const isMediaViewerImprovementsEnabled = obj6.useIsMediaViewerImprovementsEnabled();
+  const obj7 = height(animatedRef[16]);
+  const isMediaViewerEntranceJankFixEnabled = obj7.useIsMediaViewerEntranceJankFixEnabled();
   const viewerProps = useViewerProps(isMediaViewerImprovementsEnabled);
   ({ useItemVisible, ref, onScroll, onScrollWorklets, pagerIndex, onContentSizeChange } = viewerProps);
-  const obj7 = require("useMediaViewerPanGesture");
-  const mediaViewerPanGestureConfig = obj7.useMediaViewerPanGestureConfig(tmp9, swipeVelocityThreshold, onClose);
-  const dismiss = mediaViewerPanGestureConfig.dismiss;
-  const translatePos = mediaViewerPanGestureConfig.translatePos;
-  const isClosing = mediaViewerPanGestureConfig.isClosing;
-  const isInteracting = mediaViewerPanGestureConfig.isInteracting;
-  const overlayEnabled = mediaViewerPanGestureConfig.overlayEnabled;
-  const items1 = [dismiss, isClosing];
-  const tmp18 = height(6022);
-  tmp18(sharedValue1.useCallback(() => {
+  const obj8 = height(animatedRef[6]);
+  const mediaViewerPanGestureConfig = obj8.useMediaViewerPanGestureConfig(tmp10, swipeVelocityThreshold, onClose);
+  dismiss = mediaViewerPanGestureConfig.dismiss;
+  ({ translatePos, isClosing } = mediaViewerPanGestureConfig);
+  ({ isInteracting, overlayEnabled } = mediaViewerPanGestureConfig);
+  let items1 = [dismiss, isClosing];
+  const tmp19 = sharedValue1(animatedRef[17]);
+  tmp19(dismiss.useCallback(() => {
     if (!isClosing.get()) {
       dismiss();
     }
     return true;
   }, items1));
   const items2 = [height];
-  const memo = sharedValue1.useMemo(() => {
+  const memo = dismiss.useMemo(() => {
     const obj = { height, backgroundColor: "black" };
     const merged = Object.assign(StyleSheet.absoluteFillObject);
     return obj;
   }, items2);
-  function re() {
-    let items;
-    let min;
-    let obj2;
-    let value;
-    let tmp = null;
-    if (!isMediaViewerEntranceJankFixEnabled) {
-      tmp = memo;
+  const items3 = [closure_14, isMediaViewerEntranceJankFixEnabled, memo, sharedValue, , , ];
+  const useAnimatedStyle = height(animatedRef[5]).useAnimatedStyle;
+  height(animatedRef[5]);
+  items3[4] = height(animatedRef[5]).interpolate;
+  items3[5] = translatePos;
+  items3[6] = tmp10;
+  let c0;
+  let c1;
+  let c2;
+  let c3;
+  let c4;
+  let c5;
+  [tmp23, tmp24, tmp25, tmp26, tmp27, tmp28, tmp29] = items3;
+  class MediaViewerTsx3 {
+    constructor() {
+      let items;
+      let min;
+      let value;
+      let tmp = null;
+      if (!c0) {
+        tmp = c1;
+      }
+      const obj = { opacity: min(value, _undefined2(_undefined3.get(), items, [0, 1, 0])) };
+      const merged = Object.assign(tmp);
+      min = Math.min;
+      value = _undefined.get();
+      items = [-c5, 0, c5];
+      return obj;
     }
-    const obj = { opacity: min(value, obj2.interpolate(translatePos.get(), items, [0, 1, 0])) };
-    const merged = Object.assign(tmp);
-    min = Math.min;
-    value = sharedValue.get();
-    items = [-closure_2, 0, closure_2];
-    obj2 = ReanimatedRexport;
-    return obj;
   }
-  const obj8 = require("ReanimatedRexport");
-  re.__closure = { isEntranceJankFixEnabled: isMediaViewerEntranceJankFixEnabled, backdropLayout: memo, entranceAnimationDriver: sharedValue, interpolate: require("ReanimatedRexport").interpolate, translatePos, closePosition: tmp9 };
-  re.__workletHash = 7563599196274;
-  re.__initData = __initData;
-  const obj10 = { backgroundColor: "transparent" };
-  ({ isEntranceJankFixEnabled: isMediaViewerEntranceJankFixEnabled, backdropLayout: memo, entranceAnimationDriver: sharedValue, interpolate: require("ReanimatedRexport").interpolate, translatePos, closePosition: tmp9 });
-  const animatedStyle = obj8.useAnimatedStyle(re);
-  const useState = sharedValue1.useState;
+  const items4 = [tmp24, tmp25, tmp26, tmp27, tmp28, tmp29];
+  MediaViewerTsx3.__closure = items4;
+  MediaViewerTsx3.__workletHash = 1493258125771;
+  MediaViewerTsx3.__initData = tmp23;
+  const obj9 = { backgroundColor: "transparent" };
+  const animatedStyle = useAnimatedStyle(MediaViewerTsx3);
+  const useState = obj.useState;
   let merged = Object.assign(StyleSheet.absoluteFillObject);
-  const first = sharedValue(useState(obj10), 1)[0];
-  function oe() {
-    let opacity = 0;
-    if (!isClosing.get()) {
-      opacity = 0;
-      if (!sharedValue1.get()) {
-        if (overlayEnabled.get()) {
-          let withTimingResult;
-          if (!isInteracting.get()) {
-            let obj = { easing: ReanimatedRexport.Easing.linear, duration: 150 };
-            const withTiming = timing.withTiming;
-            timing;
-            withTimingResult = withTiming(1, obj);
+  const first = tmp4(useState(obj9), 1)[0];
+  const items5 = [closure_16, isClosing, sharedValue1, overlayEnabled, isInteracting, , , , , ];
+  const useAnimatedStyle2 = tmp8(tmp2[5]).useAnimatedStyle;
+  height(animatedRef[5]);
+  items5[5] = height(animatedRef[18]).withTiming;
+  items5[6] = height(animatedRef[5]).Easing;
+  items5[7] = closure_15;
+  items5[8] = height(animatedRef[19]).scheduleOnRN;
+  items5[9] = tmp7;
+  c0 = undefined;
+  c1 = undefined;
+  c2 = undefined;
+  c3 = undefined;
+  c4 = undefined;
+  c5 = undefined;
+  let c6;
+  let c7;
+  let c8;
+  [tmp35, tmp36, tmp37, tmp38, tmp39, tmp40, tmp41, tmp42, tmp43, tmp44] = items5;
+  const tmp31 = StyleSheet;
+  class MediaViewerTsx5 {
+    constructor() {
+      let tmp12;
+      let tmp13;
+      let tmp14;
+      let opacity = 0;
+      if (!_undefined.get()) {
+        opacity = 0;
+        if (!_undefined2.get()) {
+          if (_undefined3.get()) {
+            let tmp6;
+            if (!_undefined4.get()) {
+              const obj = { easing: _undefined6.linear, duration: 150 };
+              tmp6 = _undefined5(1, obj);
+            }
+            opacity = tmp6;
           }
-          opacity = withTimingResult;
+          const items = [c6, c7, c8];
+          _undefined = undefined;
+          _undefined2 = undefined;
+          const obj2 = { easing: _undefined6.linear, duration: 75 };
+          [tmp12, tmp13, tmp14] = items;
+          class MediaViewerTsx4 {
+            constructor() {
+              tmp = closure_0(closure_1, false);
+              return;
+            }
+          }
+          const items1 = [tmp13, tmp14];
+          MediaViewerTsx4.__closure = items1;
+          MediaViewerTsx4.__workletHash = 14835611840757;
+          MediaViewerTsx4.__initData = tmp12;
+          tmp6 = _undefined5(0, obj2, "respect-motion-settings", MediaViewerTsx4);
         }
-        const tmp12 = timing;
-        const withTiming2 = tmp12.withTiming;
-        const fn = function n() {
-          const obj = c0(closure_2[5]);
-          obj.runOnJS(setShowHeader)(false);
-        };
-        const obj2 = { easing: ReanimatedRexport.Easing.linear, duration: 75 };
-        fn.__closure = { runOnJS: ReanimatedRexport.runOnJS, setShowHeader };
-        fn.__workletHash = 11572173694016;
-        fn.__initData = __initData;
-        const obj3 = { runOnJS: ReanimatedRexport.runOnJS, setShowHeader };
-        withTimingResult = withTiming2(0, obj2, "respect-motion-settings", fn);
+      }
+      return { opacity };
+    }
+  }
+  const items6 = [tmp36, tmp37, tmp38, tmp39, tmp40, tmp41, tmp42, tmp43, tmp44];
+  MediaViewerTsx5.__closure = items6;
+  MediaViewerTsx5.__workletHash = 1237930573376;
+  MediaViewerTsx5.__initData = tmp35;
+  const animatedStyle2 = useAnimatedStyle2(MediaViewerTsx5);
+  const items7 = [closure_17, overlayEnabled, isInteracting, , ];
+  const useDerivedValue = tmp8(tmp2[5]).useDerivedValue;
+  height(animatedRef[5]);
+  items7[3] = height(animatedRef[19]).scheduleOnRN;
+  items7[4] = tmp7;
+  c0 = undefined;
+  c1 = undefined;
+  c2 = undefined;
+  c3 = undefined;
+  [tmp47, tmp48, tmp49, tmp50, tmp51] = items7;
+  class MediaViewerTsx6 {
+    constructor() {
+      const value = _undefined.get() && !_undefined2.get();
+      if (value) {
+        _undefined3(c3, true);
       }
     }
-    return { opacity };
   }
-  const obj11 = require("ReanimatedRexport");
-  oe.__closure = { isClosing, hideRelayoutSharedValue: sharedValue1, overlayEnabled, isInteracting, withTiming: require("timing").withTiming, Easing: require("ReanimatedRexport").Easing, runOnJS: require("ReanimatedRexport").runOnJS, setShowHeader: tmp6 };
-  oe.__workletHash = 14874736878670;
-  oe.__initData = __initData;
-  ({ isClosing, hideRelayoutSharedValue: sharedValue1, overlayEnabled, isInteracting, withTiming: require("timing").withTiming, Easing: require("ReanimatedRexport").Easing, runOnJS: require("ReanimatedRexport").runOnJS, setShowHeader: tmp6 });
-  const animatedStyle1 = obj11.useAnimatedStyle(oe);
-  function se() {
-    const value = overlayEnabled.get() && !isInteracting.get();
-    if (value) {
-      const obj = ReanimatedRexport;
-      obj.runOnJS(c0)(true);
+  const items8 = [tmp48, tmp49, tmp50, tmp51];
+  MediaViewerTsx6.__closure = items8;
+  MediaViewerTsx6.__workletHash = 15736275157365;
+  MediaViewerTsx6.__initData = tmp47;
+  const derivedValue = useDerivedValue(MediaViewerTsx6);
+  const items9 = [closure_18, isMediaViewerEntranceJankFixEnabled, closure_10, translatePos, sharedValue1, , ];
+  const useAnimatedStyle3 = tmp8(tmp2[5]).useAnimatedStyle;
+  height(animatedRef[5]);
+  items9[5] = height(animatedRef[18]).withTiming;
+  items9[6] = height(animatedRef[5]).Easing;
+  c0 = undefined;
+  c1 = undefined;
+  c2 = undefined;
+  c3 = undefined;
+  c4 = undefined;
+  c5 = undefined;
+  [tmp55, tmp56, tmp57, tmp58, tmp59, tmp60, tmp61] = items9;
+  const tmp54 = closure_10;
+  class MediaViewerTsx7 {
+    constructor() {
+      let items;
+      let num;
+      let pan = null;
+      if (!c0) {
+        pan = _undefined.pan;
+      }
+      const obj = { transform: items, opacity: num };
+      const merged = Object.assign(pan);
+      items = [{ translateY: _undefined2.get() }];
+      num = 0;
+      ({ translateY: _undefined2.get() });
+      if (!_undefined3.get()) {
+        const obj3 = { easing: _undefined5.linear, duration: 75 };
+        num = _undefined4(1, obj3);
+      }
+      return obj;
     }
   }
-  const obj13 = require("ReanimatedRexport");
-  se.__closure = { overlayEnabled, isInteracting, runOnJS: require("ReanimatedRexport").runOnJS, setShowHeader: tmp6 };
-  se.__workletHash = 2199049578465;
-  se.__initData = __initData2;
-  ({ overlayEnabled, isInteracting, runOnJS: require("ReanimatedRexport").runOnJS, setShowHeader: tmp6 });
-  const derivedValue = obj13.useDerivedValue(se);
-  function he() {
-    let items;
-    let num;
-    let pan = null;
-    if (!isMediaViewerEntranceJankFixEnabled) {
-      pan = isClosing.pan;
-    }
-    const obj = { transform: items, opacity: num };
-    const merged = Object.assign(pan);
-    items = [{ translateY: translatePos.get() }];
-    num = 0;
-    ({ translateY: translatePos.get() });
-    if (!sharedValue1.get()) {
-      const obj3 = { easing: ReanimatedRexport.Easing.linear, duration: 75 };
-      const withTiming = timing.withTiming;
-      timing;
-      num = withTiming(1, obj3);
-    }
-    return obj;
-  }
-  const obj15 = require("ReanimatedRexport");
-  he.__closure = { isEntranceJankFixEnabled: isMediaViewerEntranceJankFixEnabled, styles: isClosing, translatePos, hideRelayoutSharedValue: sharedValue1, withTiming: require("timing").withTiming, Easing: require("ReanimatedRexport").Easing };
-  he.__workletHash = 9249298896824;
-  he.__initData = __initData3;
-  ({ isEntranceJankFixEnabled: isMediaViewerEntranceJankFixEnabled, styles: isClosing, translatePos, hideRelayoutSharedValue: sharedValue1, withTiming: require("timing").withTiming, Easing: require("ReanimatedRexport").Easing });
-  const animatedStyle2 = obj15.useAnimatedStyle(he);
-  sharedValue1.useRef(null);
-  const items3 = [tmp13, animatedRef, sharedValue1];
-  sharedValue1.useCallback(() => {
-    const tmp = closure_6 && null != animatedRef.current;
+  const items10 = [tmp56, tmp57, tmp58, tmp59, tmp60, tmp61];
+  MediaViewerTsx7.__closure = items10;
+  MediaViewerTsx7.__workletHash = 12989144735041;
+  MediaViewerTsx7.__initData = tmp55;
+  const animatedStyle3 = useAnimatedStyle3(MediaViewerTsx7);
+  StyleSheet = obj.useRef(null);
+  const items11 = [tmp14, animatedRef, sharedValue1];
+  callback = obj.useCallback(() => {
+    const tmp = closure_3 && null != animatedRef.current;
     if (tmp) {
       let result = sharedValue1.set(true);
       const _clearTimeout = clearTimeout;
@@ -223,22 +313,22 @@ function MediaViewer(arg0) {
         const result = sharedValue1.set(false);
       }, 250);
     }
-  }, items3);
-  const items4 = [sharedValue1];
-  const callback1 = sharedValue1.useCallback(() => {
+  }, items11);
+  const items12 = [sharedValue1];
+  const callback1 = obj.useCallback(() => {
     const result = sharedValue1.set(false);
-  }, items4);
-  __initData = sharedValue1.useRef(false);
-  const items5 = [width, height, __initData];
-  const effect = sharedValue1.useEffect(() => {
-    if (__initData.current) {
+  }, items12);
+  ref2 = obj.useRef(false);
+  const items13 = [width, height, callback];
+  const effect = obj.useEffect(() => {
+    if (ref2.current) {
       callback();
     } else {
       tmp.current = true;
     }
-  }, items5);
-  const items6 = [__initData];
-  const callback2 = sharedValue1.useCallback((orientation, orientation2) => {
+  }, items13);
+  const items14 = [callback];
+  const callback2 = obj.useCallback((orientation, orientation2) => {
     if (orientation.orientation !== orientation2.orientation) {
       callback();
     }
@@ -247,39 +337,38 @@ function MediaViewer(arg0) {
       const obj = useVideoControls;
       const result = obj.unpauseCurrentVideoIfNeeded();
     }
-  }, items6);
-  const obj17 = require("DeviceOrientation");
-  const orientationListener = obj17.useOrientationListener(callback2);
-  let tmp32Result = isMediaViewerEntranceJankFixEnabled(memo, { entranceAnimationDriver: sharedValue, onContentSizeChange, onScroll, onLongPress, originLayout, panGestureConfig: mediaViewerPanGestureConfig, ref, renderMedia, sources, useItemVisible, windowHeight: height, windowWidth: width, index, zoomed });
-  const obj18 = { style: StyleSheet.absoluteFill, onAccessibilityEscape: dismiss, onLayout: callback1, children: items7 };
-  items7 = [, , , , ];
-  const obj19 = { barStyle: "light-content", hidden: !tmp5 };
-  items7[0] = isMediaViewerEntranceJankFixEnabled(height(11212), obj19);
-  const obj20 = { style: items8 };
-  items8 = [memo, animatedStyle];
-  items7[1] = isMediaViewerEntranceJankFixEnabled(height(5095).View, obj20);
-  const obj21 = { ref: animatedRef, style: items9, children: tmp32Result };
-  items9 = [isClosing.pan, animatedStyle2];
-  const tmp34 = dismiss;
-  const tmp35 = animatedRef;
-  const tmp36 = height(5096);
-  const tmp7 = _require;
+  }, items14);
+  const tmp8Result6 = height(animatedRef[21]);
+  const orientationListener = tmp8Result6.useOrientationListener(callback2);
+  let tmp68Result = callback(closure_13, { entranceAnimationDriver: sharedValue, onContentSizeChange, onScroll, onLongPress, originLayout, panGestureConfig: mediaViewerPanGestureConfig, ref, renderMedia, sources, useItemVisible, windowHeight: height, windowWidth: width, index, zoomed });
+  const obj10 = { style: tmp31.absoluteFill, onAccessibilityEscape: dismiss, onLayout: callback1, children: items15 };
+  items15 = [, , , , ];
+  const obj11 = { barStyle: "light-content", hidden: !tmp6 };
+  items15[0] = callback(tmp(animatedRef[22]), obj11);
+  const obj12 = { style: items16 };
+  items16 = [memo, animatedStyle];
+  items15[1] = callback(tmp(animatedRef[5]).View, obj12);
+  const obj13 = { ref: animatedRef, style: items17, children: tmp68Result };
+  items17 = [tmp54.pan, animatedStyle3];
+  const View = tmp(tmp2[5]).View;
+  const tmp70 = ref2;
+  const tmp71 = isClosing;
   if (isMediaViewerImprovementsEnabled) {
-    const obj22 = { entranceAnimationDriver: sharedValue, onLongPress, onScrollWorklets, originLayout, pagerIndex, panGestureConfig: mediaViewerPanGestureConfig, renderMedia, sources, useItemVisible, windowWidth: width, windowHeight: height, zoomed };
-    tmp32Result = tmp32(tmp(14808), obj22);
+    const obj14 = { entranceAnimationDriver: sharedValue, onLongPress, onScrollWorklets, originLayout, pagerIndex, panGestureConfig: mediaViewerPanGestureConfig, renderMedia, sources, useItemVisible, windowWidth: width, windowHeight: height, zoomed };
+    tmp68Result = tmp68(tmp(tmp2[23]), obj14);
   }
-  items7[2] = isMediaViewerEntranceJankFixEnabled(tmp36, obj21);
-  const obj23 = { style: items10, pointerEvents: str, children: renderOverlay(dismiss, overlayEnabled, sharedValue) };
-  items10 = [first, animatedStyle1];
+  items15[2] = callback(View, obj13);
+  const obj15 = { style: items18, pointerEvents: str, children: renderOverlay(dismiss, overlayEnabled, sharedValue) };
+  items18 = [first, animatedStyle2];
   str = "none";
-  const tmpResult = tmp(5096);
-  if (tmp5) {
+  const View2 = tmp(tmp2[5]).View;
+  if (tmp6) {
     str = "box-none";
   }
-  items7[3] = isMediaViewerEntranceJankFixEnabled(tmpResult, obj23);
-  items7[4] = isMediaViewerEntranceJankFixEnabled(tmp(11703), {});
-  const children = tmp34(tmp35, obj18);
-  return isMediaViewerEntranceJankFixEnabled(tmp7(7326).AnalyticsLocationProvider, { value: analyticsLocations, children });
+  items15[3] = callback(View2, obj15);
+  items15[4] = callback(tmp(animatedRef[24]), {});
+  const children = tmp70(tmp71, obj10);
+  return callback(height(animatedRef[11]).AnalyticsLocationProvider, { value: analyticsLocations, children });
 }
 ({ View: hasOwnProperty, StyleSheet } = react_native);
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
@@ -289,15 +378,20 @@ obj2 = { alignItems: "center", justifyContent: "center" };
 const create = StyleSheet.create;
 let merged = Object.assign(StyleSheet.absoluteFillObject);
 let closure_10 = create(obj);
-let closure_11 = { code: "function MediaViewerTsx1(){const{zoomed,pinching}=this.__closure;return!zoomed.get()&&!pinching.get();}" };
-let closure_12 = { code: "function MediaViewerTsx2(){const{scrollEnabled}=this.__closure;return{scrollEnabled:scrollEnabled.get()};}" };
+let closure_11 = { code: "(function MediaViewerTsx1(){let[zoomed,pinching]=this.__closure;return!zoomed.get()&&!pinching.get();})" };
+let closure_12 = { code: "(function MediaViewerTsx2(){let[scrollEnabled]=this.__closure;return{scrollEnabled:scrollEnabled.get()};})" };
 let closure_13 = react.memo(function MediaViewer(entranceAnimationDriver) {
   let index;
-  let items3;
-  let obj6;
+  let items7;
+  let obj4;
   let onContentSizeChange;
   let onScroll;
   let ref;
+  let tmp12;
+  let tmp13;
+  let tmp4;
+  let tmp5;
+  let tmp6;
   entranceAnimationDriver = entranceAnimationDriver.entranceAnimationDriver;
   const onLongPress = entranceAnimationDriver.onLongPress;
   const originLayout = entranceAnimationDriver.originLayout;
@@ -308,57 +402,69 @@ let closure_13 = react.memo(function MediaViewer(entranceAnimationDriver) {
   const windowWidth = entranceAnimationDriver.windowWidth;
   const windowHeight = entranceAnimationDriver.windowHeight;
   const zoomed = entranceAnimationDriver.zoomed;
-  let derivedValue;
+  let panGestureGenerator;
+  let tmp2 = originLayout;
   ({ onContentSizeChange, onScroll, ref, index } = entranceAnimationDriver);
   let obj = entranceAnimationDriver(originLayout[5]);
   const sharedValue = obj.useSharedValue(false);
-  const fn = function k() {
-    const value = zoomed.get();
-    const tmp2 = !value && !sharedValue.get();
-    return tmp2;
-  };
-  fn.__closure = { zoomed, pinching: sharedValue };
-  fn.__workletHash = 9157951736691;
-  fn.__initData = derivedValue;
+  const items = [panGestureGenerator, zoomed, sharedValue];
+  let c0;
+  let c1;
+  [tmp4, tmp5, tmp6] = items;
   const obj2 = entranceAnimationDriver(originLayout[5]);
-  derivedValue = obj2.useDerivedValue(fn);
-  const items = [sharedValue];
-  const items1 = [sharedValue];
-  const callback = renderMedia.useCallback((nativeEvent) => sharedValue.set(2 === nativeEvent.nativeEvent.touches.length), items);
-  const callback1 = renderMedia.useCallback(() => sharedValue.set(false), items1);
-  const obj3 = entranceAnimationDriver(originLayout[6]);
-  const mediaViewerPanGesture = obj3.useMediaViewerPanGesture(panGestureConfig, derivedValue);
-  const panGestureGenerator = mediaViewerPanGesture.panGestureGenerator;
-  const items2 = [entranceAnimationDriver, onLongPress, originLayout, panGestureConfig, panGestureGenerator, renderMedia, sources, useItemVisible, windowHeight, windowWidth, zoomed];
+  class MediaViewerTsx1 {
+    constructor() {
+      const value = _undefined.get();
+      const tmp2 = !value && !_undefined2.get();
+      return tmp2;
+    }
+  }
+  const items1 = [tmp5, tmp6];
+  MediaViewerTsx1.__closure = items1;
+  MediaViewerTsx1.__workletHash = 3986226128458;
+  MediaViewerTsx1.__initData = tmp4;
+  const derivedValue = obj2.useDerivedValue(MediaViewerTsx1);
+  const items2 = [sharedValue];
+  const items3 = [sharedValue];
+  const callback = renderMedia.useCallback((nativeEvent) => sharedValue.set(2 === nativeEvent.nativeEvent.touches.length), items2);
+  const callback1 = renderMedia.useCallback(() => sharedValue.set(false), items3);
+  const tmpResult = entranceAnimationDriver(tmp2[6]);
+  const mediaViewerPanGesture = tmpResult.useMediaViewerPanGesture(panGestureConfig, derivedValue);
+  panGestureGenerator = mediaViewerPanGesture.panGestureGenerator;
+  const items4 = [entranceAnimationDriver, onLongPress, originLayout, panGestureConfig, panGestureGenerator, renderMedia, sources, useItemVisible, windowHeight, windowWidth, zoomed];
   const nativeGesture = mediaViewerPanGesture.nativeGesture;
   const callback2 = renderMedia.useCallback((arg0, index) => {
     const obj = { originLayout, renderMedia, onLongPress, windowWidth, windowHeight, panGestureConfig, entranceAnimationDriver, source: sources[index], index, zoomed, panGesture: panGestureGenerator(index), useItemVisible };
     const MediaViewerItem = MediaViewerItem2.MediaViewerItem;
     return metroImportDefault(MediaViewerItem, obj);
-  }, items2);
-  const obj4 = entranceAnimationDriver(originLayout[5]);
-  class M {
+  }, items4);
+  const items5 = [closure_12, derivedValue];
+  c0 = undefined;
+  [tmp12, tmp13] = items5;
+  const tmpResult2 = entranceAnimationDriver(tmp2[5]);
+  class MediaViewerTsx2 {
     constructor() {
-      const obj = { scrollEnabled: derivedValue.get() };
+      const obj = { scrollEnabled: _undefined.get() };
       return obj;
     }
   }
-  M.__closure = { scrollEnabled: derivedValue };
-  M.__workletHash = 13550782123441;
-  M.__initData = panGestureGenerator;
-  const animatedProps = obj4.useAnimatedProps(M);
-  const obj5 = { gesture: nativeGesture, children: windowWidth(entranceAnimationDriver(originLayout[10]).AnimatedFastList, obj6) };
-  const tmp8 = onLongPress(originLayout[8])(index);
-  const GestureDetector = entranceAnimationDriver(originLayout[9]).GestureDetector;
-  obj6 = { ref, style: useItemVisible.absoluteFill, sections: items3, onTouchStart: callback, onTouchEnd: callback1, onTouchCancel: callback1, initialScrollItem: tmp8, automaticallyAdjustContentInsets: false, showsVerticalScrollIndicator: false, showsHorizontalScrollIndicator: false, itemSize: windowWidth, renderItem: callback2, onContentSizeChange, pagingEnabled: true, onScroll, scrollEventThrottle: 16, animatedProps, disableLegacyGestureHandling: true, chunkBase: windowWidth, horizontal: true };
-  items3 = [sources.length];
-  return windowWidth(GestureDetector, obj5);
+  const items6 = [tmp13];
+  MediaViewerTsx2.__closure = items6;
+  MediaViewerTsx2.__workletHash = 8145051155624;
+  MediaViewerTsx2.__initData = tmp12;
+  const animatedProps = tmpResult2.useAnimatedProps(MediaViewerTsx2);
+  const obj3 = { gesture: nativeGesture, children: windowWidth(entranceAnimationDriver(tmp2[10]).AnimatedFastList, obj4) };
+  const tmp15 = onLongPress(tmp2[8])(index);
+  const GestureDetector = tmp(tmp2[9]).GestureDetector;
+  obj4 = { ref, style: useItemVisible.absoluteFill, sections: items7, onTouchStart: callback, onTouchEnd: callback1, onTouchCancel: callback1, initialScrollItem: tmp15, automaticallyAdjustContentInsets: false, showsVerticalScrollIndicator: false, showsHorizontalScrollIndicator: false, itemSize: windowWidth, renderItem: callback2, onContentSizeChange, pagingEnabled: true, onScroll, scrollEventThrottle: 16, animatedProps, disableLegacyGestureHandling: true, chunkBase: windowWidth, horizontal: true };
+  items7 = [sources.length];
+  return windowWidth(GestureDetector, obj3);
 });
-let __initData = { code: "function MediaViewerTsx3(){const{isEntranceJankFixEnabled,backdropLayout,entranceAnimationDriver,interpolate,translatePos,closePosition}=this.__closure;return{...(isEntranceJankFixEnabled?null:backdropLayout),opacity:Math.min(entranceAnimationDriver.get(),interpolate(translatePos.get(),[-closePosition,0,closePosition],[0,1,0]))};}" };
-let closure_15 = { code: "function MediaViewerTsx4(){const{isClosing,hideRelayoutSharedValue,overlayEnabled,isInteracting,withTiming,Easing,runOnJS,setShowHeader}=this.__closure;return{opacity:isClosing.get()||hideRelayoutSharedValue.get()?0:overlayEnabled.get()&&!isInteracting.get()?withTiming(1,{easing:Easing.linear,duration:150}):withTiming(0,{easing:Easing.linear,duration:75},'respect-motion-settings',function(){runOnJS(setShowHeader)(false);})};}" };
-let closure_16 = { code: "function MediaViewerTsx5(){const{runOnJS,setShowHeader}=this.__closure;runOnJS(setShowHeader)(false);}" };
-const __initData2 = { code: "function MediaViewerTsx6(){const{overlayEnabled,isInteracting,runOnJS,setShowHeader}=this.__closure;if(overlayEnabled.get()&&!isInteracting.get()){runOnJS(setShowHeader)(true);}}" };
-const __initData3 = { code: "function MediaViewerTsx7(){const{isEntranceJankFixEnabled,styles,translatePos,hideRelayoutSharedValue,withTiming,Easing}=this.__closure;return{...(isEntranceJankFixEnabled?null:styles.pan),transform:[{translateY:translatePos.get()}],opacity:hideRelayoutSharedValue.get()?0:withTiming(1,{easing:Easing.linear,duration:75})};}" };
+let closure_14 = { code: "(function MediaViewerTsx3(){let[isEntranceJankFixEnabled,backdropLayout,entranceAnimationDriver,interpolate,translatePos,closePosition]=this.__closure;return{...(isEntranceJankFixEnabled?null:backdropLayout),opacity:Math.min(entranceAnimationDriver.get(),interpolate(translatePos.get(),[-closePosition,0,closePosition],[0,1,0]))};})" };
+let closure_15 = { code: "(function MediaViewerTsx4(){let[scheduleOnRN,setShowHeader]=this.__closure;scheduleOnRN(setShowHeader,false);})" };
+let closure_16 = { code: "(function MediaViewerTsx5(){let[isClosing,hideRelayoutSharedValue,overlayEnabled,isInteracting,withTiming,Easing,_worklet_14835611840757_init_data,scheduleOnRN,setShowHeader]=this.__closure;return{opacity:isClosing.get()||hideRelayoutSharedValue.get()?0:overlayEnabled.get()&&!isInteracting.get()?withTiming(1,{easing:Easing.linear,duration:150}):withTiming(0,{easing:Easing.linear,duration:75},'respect-motion-settings',function MediaViewerTsx4Factory([_worklet_14835611840757_init_data,scheduleOnRN,setShowHeader]){const MediaViewerTsx4=function(){scheduleOnRN(setShowHeader,false);};MediaViewerTsx4.__closure=[scheduleOnRN,setShowHeader];MediaViewerTsx4.__workletHash=14835611840757;MediaViewerTsx4.__initData=_worklet_14835611840757_init_data;return MediaViewerTsx4;}([_worklet_14835611840757_init_data,scheduleOnRN,setShowHeader]))};})" };
+let closure_17 = { code: "(function MediaViewerTsx6(){let[overlayEnabled,isInteracting,scheduleOnRN,setShowHeader]=this.__closure;if(overlayEnabled.get()&&!isInteracting.get()){scheduleOnRN(setShowHeader,true);}})" };
+let closure_18 = { code: "(function MediaViewerTsx7(){let[isEntranceJankFixEnabled,styles,translatePos,hideRelayoutSharedValue,withTiming,Easing]=this.__closure;return{...(isEntranceJankFixEnabled?null:styles.pan),transform:[{translateY:translatePos.get()}],opacity:hideRelayoutSharedValue.get()?0:withTiming(1,{easing:Easing.linear,duration:75})};})" };
 const memoResult = react.memo(function MediaViewerWithProvider(arg0) {
   let obj2;
   const obj = { children: metroImportDefault(MediaViewer, obj2) };

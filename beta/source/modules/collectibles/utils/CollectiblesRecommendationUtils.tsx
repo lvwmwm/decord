@@ -1,10 +1,10 @@
-// Module ID: 15066
-// Function ID: 15067
+// Module ID: 15347
+// Function ID: 15348
 // Name: CollectiblesRecommendationUtils
 // Dependencies: [2]
 // Exports: reorderCollectiblesByRecommendation
 
-// Module 15066 (CollectiblesRecommendationUtils)
+// Module 15347 (CollectiblesRecommendationUtils)
 import size from "module_2" /* 2 */;
 
 let map;

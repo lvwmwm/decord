@@ -1,32 +1,32 @@
-// Module ID: 13312
-// Function ID: 13313
+// Module ID: 13545
+// Function ID: 13546
 // Name: ClassificationDetail
-// Dependencies: [19, 17, 2062, 7994, 7970, 1072, 21, 5014, 575, 5624, 7971, 1113, 504, 3192, 9109, 5709, 11281, 6975, 5634, 13313, 13315, 7993, 6729, 1252, 13316, 6540, 6545, 13318, 7292, 13323, 7969, 2]
+// Dependencies: [19, 17, 2186, 8064, 8039, 1072, 21, 5140, 575, 5751, 8040, 1113, 504, 3348, 9189, 5834, 11421, 7038, 5758, 13546, 13548, 8063, 6784, 1252, 13549, 6594, 6599, 13551, 7355, 13556, 8038, 2]
 // Exports: default
 
-// Module 13312 (ClassificationDetail)
+// Module 13545 (ClassificationDetail)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl4 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import _modDef3192 from "module_3192" /* 3192 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import components_Button_Button from "components/Button/Button" /* 5634 */;
-import LinkingDefault from "Linking" /* 5709 */;
-import MonitoringAgentDefault from "MonitoringAgent" /* 6540 */;
-import MetricEvents from "MetricEvents" /* 6545 */;
-import TableRow2 from "TableRow" /* 6975 */;
-import SafetyHubModels from "SafetyHubModels" /* 7971 */;
-import TouchableHitBoxDefault from "TouchableHitBox" /* 9109 */;
-import AutomatedUnderageAppealModalActionCreatorsDefault from "AutomatedUnderageAppealModalActionCreators" /* 13316 */;
-import AppealIngestionModalActionCreatorsDefault from "AppealIngestionModalActionCreators" /* 13318 */;
+import _modDef3348 from "module_3348" /* 3348 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import components_Button_Button from "components/Button/Button" /* 5758 */;
+import LinkingDefault from "Linking" /* 5834 */;
+import MonitoringAgentDefault from "MonitoringAgent" /* 6594 */;
+import MetricEvents from "MetricEvents" /* 6599 */;
+import TableRow2 from "TableRow" /* 7038 */;
+import SafetyHubModels from "SafetyHubModels" /* 8040 */;
+import TouchableHitBoxDefault from "TouchableHitBox" /* 9189 */;
+import AutomatedUnderageAppealModalActionCreatorsDefault from "AutomatedUnderageAppealModalActionCreators" /* 13549 */;
+import AppealIngestionModalActionCreatorsDefault from "AppealIngestionModalActionCreators" /* 13551 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import LocaleStore from "LocaleStore" /* 2062 */;
-import SafetyHubStore from "SafetyHubStore" /* 7994 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 7970 */;
+import LocaleStore from "LocaleStore" /* 2186 */;
+import SafetyHubStore from "SafetyHubStore" /* 8064 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 8039 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -60,7 +60,7 @@ function ClassificationHeader(classificationTypeText) {
   guildMetadata = classificationTypeText.guildMetadata;
   const tmp = closure_16();
   const items = [classificationTypeText, guildMetadata];
-  let obj = { style: tmp.header, children: closure_13(classificationTypeText(5624).Text, obj2) };
+  let obj = { style: tmp.header, children: closure_13(classificationTypeText(5751).Text, obj2) };
   const memo = react.useMemo(() => {
     let formatResult;
     let name;
@@ -68,7 +68,7 @@ function ClassificationHeader(classificationTypeText) {
     let obj = {
       classification_type: classificationTypeText,
       classificationHook(children, arg1) {
-        const obj = { variant: "heading-xl/bold", children };
+        const obj = { variant: "heading-xl/semibold", children };
         return closure_1_13(classificationTypeText(closure_1_2[9]).Text, obj, arg1);
       }
     };
@@ -108,7 +108,7 @@ function ClassificationHeader(classificationTypeText) {
     }
     return formatResult;
   }, items);
-  obj2 = { variant: "text-lg/normal", style: tmp.headerText, color: "mobile-text-heading-primary", children: memo };
+  obj2 = { variant: "body-lg/normal", style: tmp.headerText, color: "mobile-text-heading-primary", children: memo };
   return closure_13(closure_4, obj);
 }
 function SectionHeader(arg0) {
@@ -122,10 +122,10 @@ function SectionHeader(arg0) {
   const Text = Text_Text.Text;
   const tmp = map1;
   if (plain) {
-    obj = { variant: "text-sm/medium", color: "text-subtle", children };
-    const obj2 = { variant: "text-sm/medium", color: "text-subtle", children };
+    obj = { variant: "body-sm/medium", color: "text-subtle", children };
+    const obj2 = { variant: "body-sm/medium", color: "text-subtle", children };
   } else {
-    obj = { variant: "eyebrow", color: "text-muted", children };
+    obj = { variant: "body-sm/medium", color: "text-muted", children };
   }
   return tmp(Text, obj);
 }
@@ -137,9 +137,9 @@ function BulletRow(large) {
     flag = false;
   }
   const tmp = closure_16();
-  let str = "text-xs/normal";
+  let str = "body-xs/normal";
   if (flag) {
-    str = "text-md/medium";
+    str = "body-md/medium";
   }
   const obj = { style: tmp.classificationActionDescription, children: items };
   items = [authStore3(Text_Text.Text, { variant: str, children: [" ", "\u2022"] }), ];
@@ -207,7 +207,7 @@ function ManualReviewDecidedUnderageActionsTaken() {
   intl = intl4.intl;
   items = [map1(SectionHeader, obj2), ];
   const obj3 = { style: tmp.actionsTaken, children: map1(BulletRow, obj4) };
-  obj4 = { large: true, children: intl2.string(_modDef3192.rn3Gto) };
+  obj4 = { large: true, children: intl2.string(_modDef3348.rn3Gto) };
   intl2 = intl4.intl;
   items[1] = map1(React3, obj3);
   return authStore3(React3, obj);
@@ -235,7 +235,7 @@ function ManualReviewDecidedUnderageGuidance() {
   intl = intl4.intl;
   items = [map1(SectionHeader, obj2), ];
   const obj3 = { style: tmp.actionsTaken, children: map1(BulletRow, obj4) };
-  obj4 = { large: true, children: intl2.string(_modDef3192["yV/t/V"]) };
+  obj4 = { large: true, children: intl2.string(_modDef3348["yV/t/V"]) };
   intl2 = intl4.intl;
   items[1] = map1(React3, obj3);
   return authStore3(React3, obj);
@@ -251,11 +251,11 @@ function ClassificationGuidance(arg0) {
   let tosLink;
   ({ tosLink, communityGuidelinesLink, classificationTypeText, policyExplainerLink, appealComponent } = arg0);
   const obj = { style: closure_16().sectionContainer, children: items };
-  const obj2 = { variant: "eyebrow", color: "text-muted", children: intl.string(intl4.t["977iei"]) };
+  const obj2 = { variant: "body-sm/medium", color: "text-muted", children: intl.string(intl4.t["977iei"]) };
   const Text = Text_Text.Text;
   intl = intl4.intl;
   items = [map1(Text, obj2), , , ];
-  const obj3 = { variant: "text-sm/normal", children: intl2.format(intl4.t["1Z/+aA"], { tosLink, communityGuidelinesLink }) };
+  const obj3 = { variant: "body-sm/normal", children: intl2.format(intl4.t["1Z/+aA"], { tosLink, communityGuidelinesLink }) };
   const Text2 = Text_Text.Text;
   intl2 = intl4.intl;
   items[1] = map1(Text2, obj3);
@@ -287,18 +287,18 @@ function ClassificationPolicyCard(policyExplainerLink) {
   const obj3 = { style: tmp.classificationPolicyCardIcon, children: closure_13(ShieldIcon, obj4) };
   obj4 = { size: "sm", color: nativeDefault.colors.TEXT_LINK };
   tmp2 = TouchableHitBoxDefault;
-  ShieldIcon = policyExplainerLink(11281).ShieldIcon;
+  ShieldIcon = policyExplainerLink(11421).ShieldIcon;
   items = [closure_13(closure_4, obj3), ];
   const obj5 = { style: tmp.classificationPolicyCardContent, children: closure_13(Text, obj6) };
-  obj6 = { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: intl.format(policyExplainerLink(1113).t.zxUdpj, { classificationDescription: classificationTypeText }) };
-  Text = policyExplainerLink(5624).Text;
+  obj6 = { variant: "heading-sm/semibold", color: "mobile-text-heading-primary", children: intl.format(policyExplainerLink(1113).t.zxUdpj, { classificationDescription: classificationTypeText }) };
+  Text = policyExplainerLink(5751).Text;
   intl = policyExplainerLink(1113).intl;
   items[1] = closure_13(closure_4, obj5);
   return closure_13(closure_4, obj);
 }
 function AppealStatus() {
   let intl;
-  const obj = { variant: "text-md/normal", color: "text-muted", children: intl.string(intl4.t["I2H0/E"]) };
+  const obj = { variant: "body-md/normal", color: "text-muted", children: intl.string(intl4.t["I2H0/E"]) };
   const Text = Text_Text.Text;
   intl = intl4.intl;
   return map1(Text, obj);
@@ -308,12 +308,12 @@ function LetUsKnow(arg0) {
   let obj2;
   let onPressLetUsKnow;
   _require = arg0;
-  let obj = { variant: "text-sm/normal", color: "text-muted", children: intl.format(require("intl").t.IFxUaT, obj2) };
+  let obj = { variant: "body-sm/normal", color: "text-muted", children: intl.format(require("intl").t.IFxUaT, obj2) };
   const Text = require("Text/Text").Text;
   intl = require("intl").intl;
   obj2 = {
     letUsKnowHook(children, arg1) {
-      const obj = { onPress: onPressLetUsKnow.onPressLetUsKnow, variant: "text-sm/normal", color: "text-link", children };
+      const obj = { onPress: onPressLetUsKnow.onPressLetUsKnow, variant: "body-sm/normal", color: "text-link", children };
       return map1(Text_Text.Text, obj, arg1);
     }
   };
@@ -325,11 +325,11 @@ function AppealWindowExpired() {
   let items;
   const tmp = closure_16();
   const obj = { style: tmp.appealWindowExpiredContainer, children: items };
-  const obj2 = { variant: "text-md/medium", color: "text-default", style: tmp.appealWindowExpiredText, children: intl.string(intl4.t.PHriyz) };
+  const obj2 = { variant: "body-md/medium", color: "text-default", style: tmp.appealWindowExpiredText, children: intl.string(intl4.t.PHriyz) };
   const Text = Text_Text.Text;
   intl = intl4.intl;
   items = [map1(Text, obj2), ];
-  const obj3 = { variant: "text-sm/normal", color: "text-muted", style: tmp.appealWindowExpiredText, children: intl2.string(intl4.t.YsxY1D) };
+  const obj3 = { variant: "body-sm/normal", color: "text-muted", style: tmp.appealWindowExpiredText, children: intl2.string(intl4.t.YsxY1D) };
   const Text2 = Text_Text.Text;
   intl2 = intl4.intl;
   items[1] = map1(Text2, obj3);
@@ -367,7 +367,7 @@ function ConfirmMinimumAgeGuidance(arg0) {
   const TableRow = TableRow2.TableRow;
   intl2 = intl4.intl;
   items[1] = map1(TableRow, obj3);
-  const obj4 = { variant: "text-sm/normal", color: "text-muted", style: tmp.guidelinesFooter, children: intl3.format(intl4.t["1Z/+aA"], { tosLink, communityGuidelinesLink }) };
+  const obj4 = { variant: "body-sm/normal", color: "text-muted", style: tmp.guidelinesFooter, children: intl3.format(intl4.t["1Z/+aA"], { tosLink, communityGuidelinesLink }) };
   const Text = Text_Text.Text;
   intl3 = intl4.intl;
   items[2] = map1(Text, obj4);
@@ -378,7 +378,7 @@ function ManualReviewDecidedUnderageFooter(arg0) {
   let intl;
   let tosLink;
   ({ tosLink, communityGuidelinesLink } = arg0);
-  const obj = { variant: "text-sm/normal", color: "text-muted", children: intl.format(_modDef3192.vPOpia, { tosLink, communityGuidelinesLink }) };
+  const obj = { variant: "body-sm/normal", color: "text-muted", children: intl.format(_modDef3348.vPOpia, { tosLink, communityGuidelinesLink }) };
   const Text = Text_Text.Text;
   intl = intl4.intl;
   return map1(Text, obj);

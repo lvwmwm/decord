@@ -1,14 +1,14 @@
-// Module ID: 17355
-// Function ID: 17356
+// Module ID: 17681
+// Function ID: 17682
 // Name: EmojiCowboyHatFaceIcon
-// Dependencies: [19, 21, 575, 5716, 17356, 2]
+// Dependencies: [19, 21, 575, 5841, 17682, 2]
 // Exports: EmojiCowboyHatFaceIcon
 
-// Module 17355 (EmojiCowboyHatFaceIcon)
+// Module 17681 (EmojiCowboyHatFaceIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5716 */;
-import AssetRegistry from "AssetRegistry" /* 17356 */;
+import BaseIconImage2 from "BaseIconImage" /* 5841 */;
+import AssetRegistry from "AssetRegistry" /* 17682 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

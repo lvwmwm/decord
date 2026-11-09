@@ -1,26 +1,24 @@
-// Module ID: 10229
-// Function ID: 10230
+// Module ID: 10348
+// Function ID: 10349
 // Name: ForumGuidelinesActionSheet
-// Dependencies: [32, 19, 17, 7454, 21, 5014, 575, 9838, 1625, 10230, 1375, 10231, 5258, 7292, 5635, 1113, 5051, 5654, 8199, 5272, 5275, 6980, 5624, 10232, 5754, 10229, 1994, 2]
+// Dependencies: [32, 19, 17, 7518, 21, 5140, 575, 9958, 1627, 10349, 1377, 10350, 5374, 7355, 5759, 1113, 5177, 5778, 8268, 5388, 5392, 7043, 5751, 10351, 5879, 10348, 2118, 2]
 // Exports: default, openForumGuidelinesActionSheet
 
-// Module 10229 (ForumGuidelinesActionSheet)
+// Module 10348 (ForumGuidelinesActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import PlatformUtils from "PlatformUtils" /* 1375 */;
-import asyncRequire from "asyncRequire" /* 1994 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import LinkUtils from "LinkUtils" /* 5654 */;
-import ForumConstants from "ForumConstants" /* 7454 */;
-import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 8199 */;
-import ForumGuidelinesManagerDefault from "ForumGuidelinesManager" /* 10231 */;
+import PlatformUtils from "PlatformUtils" /* 1377 */;
+import asyncRequire from "asyncRequire" /* 2118 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
+import LinkUtils from "LinkUtils" /* 5778 */;
+import ForumConstants from "ForumConstants" /* 7518 */;
+import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 8268 */;
+import ForumGuidelinesManagerDefault from "ForumGuidelinesManager" /* 10350 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
-
-let BottomSheet;
 
 let c9;
 let metroImportAll;
@@ -167,7 +165,7 @@ export default function ForumGuidelinesActionSheet(channel) {
     obj2.open(channel.id);
   }, items5);
   const obj6 = { scrollable: true, contentHeight: tmp11, footer: tmp14, onDismiss: onClose, children: closure_8(BottomSheetScrollView, obj7) };
-  BottomSheet = tmp2(tmp3[19]).BottomSheet;
+  const BottomSheet = tmp2(tmp3[19]).BottomSheet;
   let tmp19Result = canManageChannel;
   obj7 = { style: tmp.scrollContainer, scrollIndicatorInsets: { bottom }, contentContainerStyle: { paddingBottom: memo1 }, onContentSizeChange: callback, children: items8 };
   const obj8 = { style: tmp.header, children: items7 };
@@ -177,7 +175,7 @@ export default function ForumGuidelinesActionSheet(channel) {
     const obj9 = { accessibilityLabel: intl2.string(channel(tmp3[15]).t.bt75uw), accessibilityRole: "button", style: tmp.editButton, onPress: callback1, children: items6 };
     const PressableOpacity = tmp2(tmp3[21]).PressableOpacity;
     intl2 = tmp2(tmp3[15]).intl;
-    const obj10 = { style: tmp.editText, variant: "text-sm/medium", color: "text-brand", children: intl3.string(channel(tmp3[15]).t.bt75uw) };
+    const obj10 = { style: tmp.editText, variant: "body-sm/medium", color: "text-brand", children: intl3.string(channel(tmp3[15]).t.bt75uw) };
     const Text = tmp2(tmp3[22]).Text;
     intl3 = tmp2(tmp3[15]).intl;
     items6 = [ref(Text, obj10), ];
@@ -186,13 +184,13 @@ export default function ForumGuidelinesActionSheet(channel) {
     tmp19Result = tmp19(PressableOpacity, obj9);
   }
   items7 = [tmp19Result, ];
-  const obj12 = { style: tmp.headerTitle, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl4.string(channel(tmp3[15]).t["4d4T4l"]) };
+  const obj12 = { style: tmp.headerTitle, variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: intl4.string(channel(tmp3[15]).t["4d4T4l"]) };
   const Text2 = tmp2(tmp3[22]).Text;
   intl4 = tmp2(tmp3[15]).intl;
   items7[1] = ref(Text2, obj12);
   items8 = [closure_8(closure_5, obj8), ];
   const obj13 = { style: tmp.guidelinesContainer, children: ref(Text3, obj14) };
-  obj14 = { variant: "text-md/medium", color: "text-default", children: tmp5Result.parseForumPostGuidelines(channel.topic, true, obj15) };
+  obj14 = { variant: "body-md/medium", color: "text-default", children: tmp5Result.parseForumPostGuidelines(channel.topic, true, obj15) };
   Text3 = tmp2(tmp3[22]).Text;
   obj15 = { channelId: channel.id, allowHeading: true, allowList: true, allowLinks: true };
   tmp5Result = tmp5(tmp3[24]);
@@ -214,7 +212,7 @@ export function openForumGuidelinesActionSheet(arg0) {
   const openLazy = ActionSheetActionCreatorsDefault.openLazy;
   const obj = {};
   ActionSheetActionCreatorsDefault;
-  const tmp2 = asyncRequire(10229, dependencyMap.paths);
+  const tmp2 = asyncRequire(10348, dependencyMap.paths);
   const merged = Object.assign(arg0);
   openLazy(tmp2, closure_6, obj);
 }

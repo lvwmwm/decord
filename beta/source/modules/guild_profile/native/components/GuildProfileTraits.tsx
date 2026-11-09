@@ -1,19 +1,19 @@
-// Module ID: 14729
-// Function ID: 14730
+// Module ID: 14965
+// Function ID: 14966
 // Name: GuildProfileTraits
-// Dependencies: [19, 17, 21, 5014, 575, 1409, 4964, 7300, 5624, 2]
+// Dependencies: [19, 17, 21, 5140, 575, 1411, 5090, 7363, 5751, 2]
 // Exports: default
 
-// Module 14729 (GuildProfileTraits)
+// Module 14965 (GuildProfileTraits)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1409 */;
-import EmojiUtilsDefault from "EmojiUtils" /* 4964 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import EmojiDefault from "Emoji" /* 7300 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
+import EmojiUtilsDefault from "EmojiUtils" /* 5090 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import EmojiDefault from "Emoji" /* 7363 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -44,7 +44,7 @@ function GuildProfileTraitView(trait) {
   items = [, ];
   const obj2 = { emoji: trait.emoji };
   items[0] = hasOwnProperty(TraitEmoji, obj2);
-  const obj3 = { variant: "text-sm/medium", color: "text-default", children: trait.label };
+  const obj3 = { variant: "body-sm/medium", color: "text-default", children: trait.label };
   items[1] = hasOwnProperty(Text_Text.Text, obj3);
   return metroRequire(View, obj);
 }

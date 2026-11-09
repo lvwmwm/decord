@@ -1,12 +1,12 @@
-// Module ID: 12977
-// Function ID: 12978
+// Module ID: 13192
+// Function ID: 13193
 // Name: createConjureProject
-// Dependencies: [5, 10850, 10875, 12978, 2]
+// Dependencies: [5, 10969, 10996, 13193, 2]
 // Exports: default
 
-// Module 12977 (createConjureProject)
+// Module 13192 (createConjureProject)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 10850 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 10969 */;
 import size from "module_2" /* 2 */;
 
 let closure_2, closure_3, guild_id, install_scope, templateId;
@@ -32,7 +32,7 @@ let obj = function _createConjureProject() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

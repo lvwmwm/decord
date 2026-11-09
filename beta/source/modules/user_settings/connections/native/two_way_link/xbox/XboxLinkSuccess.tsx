@@ -1,19 +1,19 @@
-// Module ID: 14626
-// Function ID: 14627
+// Module ID: 14861
+// Function ID: 14862
 // Name: XboxLinkSuccess
-// Dependencies: [32, 19, 17, 9723, 9737, 21, 5014, 575, 9730, 1375, 1497, 5717, 14627, 5624, 1113, 12045, 14628, 1187, 11994, 7292, 5634, 2]
+// Dependencies: [32, 19, 17, 9813, 9827, 21, 5140, 575, 9820, 1377, 1499, 5842, 14862, 5751, 1113, 12211, 14863, 1187, 12160, 7355, 5758, 2]
 // Exports: default
 
-// Module 14626 (XboxLinkSuccess)
+// Module 14861 (XboxLinkSuccess)
 import nativeDefault from "native" /* 575 */;
-import PlatformUtils from "PlatformUtils" /* 1375 */;
-import XboxLinkConstants from "XboxLinkConstants" /* 9723 */;
+import PlatformUtils from "PlatformUtils" /* 1377 */;
+import XboxLinkConstants from "XboxLinkConstants" /* 9813 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GameConsoleConstants from "GameConsoleConstants" /* 9737 */;
+import GameConsoleConstants from "GameConsoleConstants" /* 9827 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -92,11 +92,11 @@ export default function XboxLinkDiscordSuccess() {
   const obj5 = { source: require("AssetRegistry"), style: tmp.image };
   const tmp15 = require("FastImage");
   items2 = [closure_12(tmp15, obj5), , , ];
-  const obj6 = { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", style: twoWayLinkStyles.title, children: intl.string(first(navigation[14]).t.aGRPVq) };
+  const obj6 = { variant: "heading-xl/semibold", color: "mobile-text-heading-primary", style: twoWayLinkStyles.title, children: intl.string(first(navigation[14]).t.aGRPVq) };
   const Text = first(navigation[13]).Text;
   intl = first(navigation[14]).intl;
   items2[1] = closure_12(Text, obj6);
-  const obj7 = { variant: "text-md/normal", color: "text-default", style: twoWayLinkStyles.body, children: intl2.string(first(navigation[14]).t.m3mBYE) };
+  const obj7 = { variant: "body-md/normal", color: "text-default", style: twoWayLinkStyles.body, children: intl2.string(first(navigation[14]).t.m3mBYE) };
   const Text2 = first(navigation[13]).Text;
   intl2 = first(navigation[14]).intl;
   items2[2] = closure_12(Text2, obj7);
@@ -105,7 +105,7 @@ export default function XboxLinkDiscordSuccess() {
   obj10 = { source: require("AssetRegistry"), style: tmp.appLogo };
   tmp17 = require("FastImage");
   items3 = [closure_12(closure_5, obj9), , ];
-  const obj11 = { style: tmp.getAppTitle, variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: stringResult };
+  const obj11 = { style: tmp.getAppTitle, variant: "heading-sm/semibold", color: "mobile-text-heading-primary", children: stringResult };
   const Text3 = first(navigation[13]).Text;
   const intl3 = first(navigation[14]).intl;
   const string = intl3.string;

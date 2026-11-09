@@ -1,26 +1,26 @@
-// Module ID: 18433
-// Function ID: 18434
+// Module ID: 18790
+// Function ID: 18791
 // Name: PrivateProfileAbstractUI
-// Dependencies: [19, 21, 18434, 18435, 18436, 7069, 5717, 2]
+// Dependencies: [19, 21, 18791, 18792, 18793, 7135, 5842, 2]
 // Exports: PrivateProfileAbstractUI
 
-// Module 18433 (PrivateProfileAbstractUI)
+// Module 18790 (PrivateProfileAbstractUI)
 import Fragment from "Fragment" /* 21 */;
-import react_native from "react-native" /* 7069 */;
-import _modDef18434 from "module_18434" /* 18434 */;
-import _modDef18435 from "module_18435" /* 18435 */;
-import _modDef18436 from "module_18436" /* 18436 */;
+import react_native from "react-native" /* 7135 */;
+import _modDef18791 from "module_18791" /* 18791 */;
+import _modDef18792 from "module_18792" /* 18792 */;
+import _modDef18793 from "module_18793" /* 18793 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef18434 };
+let obj2 = { uri: _modDef18791 };
 obj[1] = obj2;
-let obj3 = { uri: _modDef18435 };
+let obj3 = { uri: _modDef18792 };
 obj[2] = obj3;
-obj[3] = { uri: _modDef18436 };
-({ uri: _modDef18436 });
+obj[3] = { uri: _modDef18793 };
+({ uri: _modDef18793 });
 let size = size_mod;
 const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/PrivateProfileAbstractUI.native.tsx");
 

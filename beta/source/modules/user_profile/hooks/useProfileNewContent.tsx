@@ -1,22 +1,21 @@
-// Module ID: 14974
-// Function ID: 14975
+// Module ID: 15247
+// Function ID: 15248
 // Name: useProfileNewContent
-// Dependencies: [9471, 1383, 7772, 7784, 14975, 14976, 504, 7783, 9470, 2]
+// Dependencies: [9555, 1385, 7848, 15248, 15249, 504, 7860, 7859, 9554, 2]
 // Exports: default
 
-// Module 14974 (useProfileNewContent)
-import ProfileReadStateUtils from "ProfileReadStateUtils" /* 7783 */;
-import ProfileReadStateConstants from "ProfileReadStateConstants" /* 7784 */;
-import WishlistStore from "WishlistStore" /* 9471 */;
-import UserStore from "UserStore" /* 1383 */;
-import UserProfileStore from "UserProfileStore" /* 7772 */;
+// Module 15247 (useProfileNewContent)
+import ProfileReadStateUtils from "ProfileReadStateUtils" /* 7859 */;
+import ProfileReadStateSection from "ProfileReadStateSection" /* 7860 */;
+import WishlistStore from "WishlistStore" /* 9555 */;
+import UserStore from "UserStore" /* 1385 */;
+import UserProfileStore from "UserProfileStore" /* 7848 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, currentUser, profileReadStateSectionAckedAt;
 
-const ProfileReadStateSection = ProfileReadStateConstants.ProfileReadStateSection;
-let closure_7 = { hasNewWishlistItems: false, newWishlistItemCount: 0, shouldLogExposure: false };
+let closure_6 = { hasNewWishlistItems: false, newWishlistItemCount: 0, shouldLogExposure: false };
 const result = size.fileFinishedImporting("modules/user_profile/hooks/useProfileNewContent.tsx");
 
 export default function useProfileNewContent(id) {
@@ -29,7 +28,7 @@ export default function useProfileNewContent(id) {
   let profileReadStateConfigPeek;
   let obj2 = require("ProfileReadStateExperiment");
   profileReadStateConfigPeek = obj2.useProfileReadStateConfigPeek();
-  const tmp2 = isItemShown(profileReadStateConfigPeek[5])(id);
+  const tmp2 = isItemShown(profileReadStateConfigPeek[4])(id);
   let wishlist = tmp2;
   let items = [UserProfileStore, UserStore];
   let items1 = [id, profileReadStateConfigPeek];
@@ -43,18 +42,18 @@ export default function useProfileNewContent(id) {
         id1 = currentUser.id;
       }
       if (id !== id1) {
-        const firstWishlistId = UserProfileStore.getFirstWishlistId(tmp9.id);
+        const firstWishlistId = UserProfileStore.getFirstWishlistId(tmp7.id);
         if (null == firstWishlistId) {
           return null;
         } else {
-          const wishlistSettings = obj.getWishlistSettings(tmp9.id, firstWishlistId);
-          profileReadStateSectionAckedAt = obj.getProfileReadStateSectionAckedAt(tmp9.id, ProfileReadStateSection.WISHLIST);
-          let tmp8 = null;
-          const obj2 = ProfileReadStateUtils;
-          if (obj2.hasWishlistBeenUpdatedSinceAcked(wishlistSettings, profileReadStateSectionAckedAt)) {
-            tmp8 = firstWishlistId;
+          const wishlistSettings = obj2.getWishlistSettings(tmp7.id, firstWishlistId);
+          profileReadStateSectionAckedAt = obj2.getProfileReadStateSectionAckedAt(tmp7.id, ProfileReadStateSection.ProfileReadStateSection.WISHLIST);
+          let tmp6 = null;
+          const obj = ProfileReadStateUtils;
+          if (obj.hasWishlistBeenUpdatedSinceAcked(wishlistSettings, profileReadStateSectionAckedAt)) {
+            tmp6 = firstWishlistId;
           }
-          return tmp8;
+          return tmp6;
         }
       }
     }
@@ -76,9 +75,9 @@ export default function useProfileNewContent(id) {
       }
       if (id !== id1) {
         const obj2 = profileReadStateSectionAckedAt;
-        profileReadStateSectionAckedAt = profileReadStateSectionAckedAt.getProfileReadStateSectionAckedAt(tmp7.id, constants.WISHLIST);
+        profileReadStateSectionAckedAt = profileReadStateSectionAckedAt.getProfileReadStateSectionAckedAt(tmp7.id, id(profileReadStateConfigPeek[6]).ProfileReadStateSection.WISHLIST);
         if (null == profileReadStateSectionAckedAt) {
-          return closure_1_7;
+          return closure_1_6;
         } else {
           let items1;
           let firstWishlistId = null;
@@ -118,6 +117,6 @@ export default function useProfileNewContent(id) {
         }
       }
     }
-    return closure_1_7;
+    return closure_1_6;
   }, items3);
 };

@@ -1,70 +1,103 @@
-// Module ID: 12077
-// Function ID: 12078
+// Module ID: 12240
+// Function ID: 12241
 // Name: AnimatedKeyboardProviderController
-// Dependencies: [19, 21, 5095, 12078, 1639, 2]
+// Dependencies: [19, 21, 1652, 12241, 1641, 2]
 
-// Module 12077 (AnimatedKeyboardProviderController)
-import KeyboardChatScrollView from "KeyboardChatScrollView" /* 1639 */;
-import KeyboardPreloadExperiment2 from "KeyboardPreloadExperiment" /* 12078 */;
+// Module 12240 (AnimatedKeyboardProviderController)
+import KeyboardChatScrollView from "KeyboardChatScrollView" /* 1641 */;
+import KeyboardPreloadExperiment2 from "KeyboardPreloadExperiment" /* 12241 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import ReanimatedRexport_mod from "ReanimatedRexport" /* 5095 */;
+import module_1652_mod from "module_1652" /* 1652 */;
 import size from "module_2" /* 2 */;
 
-let set;
+let OPEN, result1, set, tmp, tmp2, tmp3;
 
 let c2;
 let c3;
 ({ jsx: c2, jsxs: c3 } = Fragment);
-let ReanimatedRexport = ReanimatedRexport_mod;
-const mutable = ReanimatedRexport.makeMutable(0);
-ReanimatedRexport = ReanimatedRexport_mod;
-const mutable1 = ReanimatedRexport.makeMutable(ReanimatedRexport.KeyboardState.UNKNOWN);
-const __initData = { code: "function AnimatedKeyboardProviderControllerTsx1(e){const{animatedKeyboardState,KeyboardState}=this.__closure;animatedKeyboardState.set(e.height===0?KeyboardState.CLOSED:KeyboardState.OPEN);}" };
-const __initData2 = { code: "function AnimatedKeyboardProviderControllerTsx2(e){const{animatedKeyboardHeight}=this.__closure;animatedKeyboardHeight.set(e.height);}" };
-const __initData3 = { code: "function AnimatedKeyboardProviderControllerTsx3(e){const{animatedKeyboardState,KeyboardState,animatedKeyboardHeight}=this.__closure;animatedKeyboardState.set(e.height===0?KeyboardState.CLOSED:KeyboardState.OPEN);animatedKeyboardHeight.set(e.height);}" };
+let module_1652 = module_1652_mod;
+const mutable = module_1652.makeMutable(0);
+module_1652 = module_1652_mod;
+const mutable1 = module_1652.makeMutable(module_1652.KeyboardState.UNKNOWN);
+let closure_6 = { code: "(function AnimatedKeyboardProviderControllerTsx1(e){let[animatedKeyboardState,KeyboardState]=this.__closure;animatedKeyboardState.set(e.height===0?KeyboardState.CLOSED:KeyboardState.OPEN);})" };
+let closure_7 = { code: "(function AnimatedKeyboardProviderControllerTsx2(e){let[animatedKeyboardHeight]=this.__closure;animatedKeyboardHeight.set(e.height);})" };
+let closure_8 = { code: "(function AnimatedKeyboardProviderControllerTsx3(e){let[animatedKeyboardState,KeyboardState,animatedKeyboardHeight]=this.__closure;animatedKeyboardState.set(e.height===0?KeyboardState.CLOSED:KeyboardState.OPEN);animatedKeyboardHeight.set(e.height);})" };
 let closure_9 = react.memo(function ComponentInner() {
-  let fn;
-  let fn2;
-  let fn3;
-  const obj = { onStart: fn, onMove: fn2, onEnd: fn3 };
-  fn = function o(height) {
-    let OPEN;
-    set = mutable1.set;
-    if (0 === height.height) {
-      OPEN = ReanimatedRexport.KeyboardState.CLOSED;
-    } else {
-      OPEN = ReanimatedRexport.KeyboardState.OPEN;
-    }
-    const result = set(OPEN);
-  };
+  let tmp10;
+  let tmp11;
+  let tmp12;
+  let tmp13;
+  let tmp14;
+  let tmp5;
+  let tmp6;
+  let tmp7;
+  let tmp9;
+  const items = [closure_6, mutable1, ];
   const useKeyboardHandler = KeyboardChatScrollView.useKeyboardHandler;
-  fn.__closure = { animatedKeyboardState: mutable1, KeyboardState: ReanimatedRexport.KeyboardState };
-  fn.__workletHash = 12130162639136;
-  fn.__initData = __initData;
-  fn2 = function t(height) {
-    const result = mutable.set(height.height);
-  };
-  const obj3 = { animatedKeyboardHeight: mutable };
-  fn2.__closure = obj3;
-  fn2.__workletHash = 1398293011995;
-  fn2.__initData = __initData2;
-  fn3 = function e(height) {
-    let OPEN;
-    set = mutable1.set;
-    if (0 === height.height) {
-      OPEN = ReanimatedRexport.KeyboardState.CLOSED;
-    } else {
-      OPEN = ReanimatedRexport.KeyboardState.OPEN;
+  items[2] = module_1652.KeyboardState;
+  let c0;
+  let c1;
+  [tmp5, tmp6, tmp7] = items;
+  const obj = { onStart: AnimatedKeyboardProviderControllerTsx1, onMove: AnimatedKeyboardProviderControllerTsx2, onEnd: AnimatedKeyboardProviderControllerTsx3 };
+  const tmp4 = mutable1;
+  class AnimatedKeyboardProviderControllerTsx1 {
+    constructor(arg0) {
+      tmp = closure_0;
+      set = closure_0.set;
+      if (0 === arg0.height) {
+        tmp3 = closure_1;
+        OPEN = closure_1.CLOSED;
+      } else {
+        tmp2 = closure_1;
+        OPEN = closure_1.OPEN;
+      }
+      result = set(OPEN);
+      return;
     }
-    const result = set(OPEN);
-    const result1 = mutable.set(height.height);
-  };
-  ({ animatedKeyboardState: mutable1, KeyboardState: ReanimatedRexport.KeyboardState });
-  fn3.__closure = { animatedKeyboardState: mutable1, KeyboardState: ReanimatedRexport.KeyboardState, animatedKeyboardHeight: mutable };
-  fn3.__workletHash = 10688534401196;
-  fn3.__initData = __initData3;
-  ({ animatedKeyboardState: mutable1, KeyboardState: ReanimatedRexport.KeyboardState, animatedKeyboardHeight: mutable });
+  }
+  const items1 = [tmp6, tmp7];
+  AnimatedKeyboardProviderControllerTsx1.__closure = items1;
+  AnimatedKeyboardProviderControllerTsx1.__workletHash = 53414504345;
+  AnimatedKeyboardProviderControllerTsx1.__initData = tmp5;
+  const items2 = [closure_7, mutable];
+  c0 = undefined;
+  [tmp9, tmp10] = items2;
+  class AnimatedKeyboardProviderControllerTsx2 {
+    constructor(arg0) {
+      result = closure_0.set(arg0.height);
+      return;
+    }
+  }
+  const items3 = [tmp10];
+  AnimatedKeyboardProviderControllerTsx2.__closure = items3;
+  AnimatedKeyboardProviderControllerTsx2.__workletHash = 2792046606466;
+  AnimatedKeyboardProviderControllerTsx2.__initData = tmp9;
+  const items4 = [closure_8, tmp4, module_1652.KeyboardState, mutable];
+  c0 = undefined;
+  c1 = undefined;
+  let c2;
+  [tmp11, tmp12, tmp13, tmp14] = items4;
+  class AnimatedKeyboardProviderControllerTsx3 {
+    constructor(arg0) {
+      tmp = closure_0;
+      set = closure_0.set;
+      if (0 === arg0.height) {
+        tmp3 = closure_1;
+        OPEN = closure_1.CLOSED;
+      } else {
+        tmp2 = closure_1;
+        OPEN = closure_1.OPEN;
+      }
+      result = set(OPEN);
+      result1 = closure_2.set(arg0.height);
+      return;
+    }
+  }
+  const items5 = [tmp12, tmp13, tmp14];
+  AnimatedKeyboardProviderControllerTsx3.__closure = items5;
+  AnimatedKeyboardProviderControllerTsx3.__workletHash = 4434952784341;
+  AnimatedKeyboardProviderControllerTsx3.__initData = tmp11;
   useKeyboardHandler(obj, []);
   return null;
 });

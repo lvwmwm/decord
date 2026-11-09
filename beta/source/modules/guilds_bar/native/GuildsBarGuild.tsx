@@ -1,27 +1,26 @@
-// Module ID: 18385
-// Function ID: 18386
+// Module ID: 18724
+// Function ID: 18725
 // Name: GuildsBarGuild
-// Dependencies: [19, 4881, 6774, 6886, 4885, 5045, 6772, 18356, 18353, 1072, 21, 5014, 575, 5596, 18365, 18075, 18078, 18386, 504, 6957, 18397, 18398, 5958, 1113, 1252, 18380, 18404, 18357, 18405, 5095, 5637, 5717, 18408, 2]
+// Dependencies: [19, 5007, 6829, 6941, 5011, 5171, 6827, 18695, 18692, 1072, 21, 5140, 575, 5724, 18704, 18417, 18420, 18725, 504, 7020, 18736, 18737, 6090, 1113, 1252, 18719, 18743, 18696, 18744, 1652, 5761, 5842, 18747, 2]
 
-// Module 18385 (GuildsBarGuild)
+// Module 18724 (GuildsBarGuild)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl10 from "intl" /* 1113 */;
-import spring from "spring" /* 5637 */;
-import GuildIcon from "GuildIcon" /* 6957 */;
-import GuildsBarConstants from "GuildsBarConstants" /* 18353 */;
-import GuildsBarDnDStore from "GuildsBarDnDStore" /* 18356 */;
-import getGuildsBarGuildMenuItemsDefault from "getGuildsBarGuildMenuItems" /* 18357 */;
-import getGuildsBarGuildAccessibilityActionsDefault from "getGuildsBarGuildAccessibilityActions" /* 18405 */;
+import GuildIcon from "GuildIcon" /* 7020 */;
+import GuildsBarConstants from "GuildsBarConstants" /* 18692 */;
+import GuildsBarDnDStore from "GuildsBarDnDStore" /* 18695 */;
+import getGuildsBarGuildMenuItemsDefault from "getGuildsBarGuildMenuItems" /* 18696 */;
+import getGuildsBarGuildAccessibilityActionsDefault from "getGuildsBarGuildAccessibilityActions" /* 18744 */;
 import react_mod from "react" /* 19 */;
-import GuildRecord from "GuildRecord" /* 4881 */;
-import GuildAvailabilityStore from "GuildAvailabilityStore" /* 6774 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 6886 */;
-import GuildStore from "GuildStore" /* 4885 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5045 */;
-import SortedGuildStore from "SortedGuildStore" /* 6772 */;
+import GuildRecord from "GuildRecord" /* 5007 */;
+import GuildAvailabilityStore from "GuildAvailabilityStore" /* 6829 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 6941 */;
+import GuildStore from "GuildStore" /* 5011 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5171 */;
+import SortedGuildStore from "SortedGuildStore" /* 6827 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 let guildIds, set;
@@ -41,7 +40,7 @@ const AnalyticEvents = Constants.AnalyticEvents;
 let obj = { guildIcon: size };
 size = { width: nativeDefault.modules.mobile.GUILD_BAR_ITEM_SIZE, height: nativeDefault.modules.mobile.GUILD_BAR_ITEM_SIZE };
 let closure_17 = createStyles.createStyles(obj);
-const __initData = { code: "function GuildsBarGuildTsx1(values){const{dragDropInProgress,sharedId,guildId,isDragTarget,withSpring,TRANSITION_PHYSICS}=this.__closure;var _guildId;const shouldAnimate=dragDropInProgress.get()&&sharedId.get()===guildId&&!isDragTarget;sharedId.set((_guildId=guildId)!==null&&_guildId!==void 0?_guildId:null);return{animations:{originY:shouldAnimate?withSpring(values.targetOriginY,TRANSITION_PHYSICS,'animate-always'):values.targetOriginY,height:shouldAnimate?withSpring(values.targetHeight,TRANSITION_PHYSICS,'animate-always'):values.targetHeight},initialValues:{originY:values.currentOriginY,height:values.currentHeight}};}" };
+let closure_18 = { code: "(function GuildsBarGuildTsx1(values){let[dragDropInProgress,sharedId,guildId,isDragTarget,withSpring,TRANSITION_PHYSICS]=this.__closure;var _guildId;const shouldAnimate=dragDropInProgress.get()&&sharedId.get()===guildId&&!isDragTarget;sharedId.set((_guildId=guildId)!==null&&_guildId!==void 0?_guildId:null);return{animations:{originY:shouldAnimate?withSpring(values.targetOriginY,TRANSITION_PHYSICS,'animate-always'):values.targetOriginY,height:shouldAnimate?withSpring(values.targetHeight,TRANSITION_PHYSICS,'animate-always'):values.targetHeight},initialValues:{originY:values.currentOriginY,height:values.currentHeight}};})" };
 const memoResult = react.memo(function GuildsBarGuild(guildId) {
   let accessibilityActions;
   let asset;
@@ -49,16 +48,25 @@ const memoResult = react.memo(function GuildsBarGuild(guildId) {
   let badgeTopRight;
   let closure_3;
   let cutouts;
+  let dragDropInProgress;
   let dragState;
   let icon;
+  let isDragTarget;
   let itemSize;
-  let items9;
-  let obj10;
+  let items11;
+  let obj9;
   let onAccessibilityAction;
   let overState;
-  let tmp20Result;
-  let tmp20Result2;
+  let tmp20;
+  let tmp21;
   let tmp22;
+  let tmp23;
+  let tmp24;
+  let tmp25;
+  let tmp26;
+  let tmp28Result;
+  let tmp28Result2;
+  let tmp30;
   guildId = guildId.guildId;
   let flag = guildId.isDragPreview;
   if (flag === undefined) {
@@ -75,12 +83,13 @@ const memoResult = react.memo(function GuildsBarGuild(guildId) {
   let unread;
   let guildName;
   let mediaState;
-  let dragDropInProgress;
+  let stateFromStores1;
   const tmp = closure_17();
   let tmp2 = guildId;
   let obj = guildId(drawerOpen[13]);
   token = obj.useToken(token(drawerOpen[12]).modules.mobile.GUILD_BAR_ITEM_SIZE);
   let obj2 = guildId(drawerOpen[14]);
+  let tmp7 = react;
   const guildsBarAnimatedWrapperStyles = obj2.useGuildsBarAnimatedWrapperStyles({ disableSelectedColor: true, disableBGColor: true });
   const enableHome = react.useContext(guildId(drawerOpen[15]).HomeDrawerStateContext).enableHome;
   let obj3 = guildId(drawerOpen[16]);
@@ -89,9 +98,9 @@ const memoResult = react.memo(function GuildsBarGuild(guildId) {
   const callback = react.useCallback((current) => {
     closure_3.current = current;
   }, []);
-  const obj4 = guildId(drawerOpen[18]);
   let items = [mediaState, mentionCount, unread];
   const items1 = [guildId];
+  const obj4 = guildId(drawerOpen[18]);
   const stateFromStoresObject = obj4.useStateFromStoresObject(items, () => {
     const obj = { selected: SelectedGuildStore.getGuildId() === guildId, isUnavailable: GuildAvailabilityStore.isUnavailable(guildId), unread: GuildReadStateStore.hasUnread(guildId), mentionCount: GuildReadStateStore.getMentionCount(guildId), isMentionLowImportance: GuildReadStateStore.getIsMentionLowImportance(guildId) };
     return obj;
@@ -126,10 +135,10 @@ const memoResult = react.memo(function GuildsBarGuild(guildId) {
   }, items3, token(drawerOpen[20]));
   guildName = stateFromStores.guildName;
   ({ asset, icon } = stateFromStores);
-  const tmp11 = token(drawerOpen[21])(guildId, mentionCount, isMentionLowImportance);
-  mediaState = tmp11.mediaState;
+  const tmp12 = token(drawerOpen[21])(guildId, mentionCount, isMentionLowImportance);
+  mediaState = tmp12.mediaState;
   const items4 = [guildId, isUnavailable, drawerOpen];
-  ({ badgeTopRight, badgeBottomRight, cutouts } = tmp11);
+  ({ badgeTopRight, badgeBottomRight, cutouts } = tmp12);
   const items5 = [guildName, mentionCount, unread, mediaState];
   const memo = react.useMemo(() => {
     let guild_id;
@@ -143,7 +152,7 @@ const memoResult = react.memo(function GuildsBarGuild(guildId) {
           if (!tmp14) {
             const tmp2 = closure_1_2;
             if (tmp2) {
-              const guildFolders = isDragTarget.getGuildFolders();
+              const guildFolders = stateFromStores1.getGuildFolders();
               const findIndexResult = guildFolders.findIndex((guildIds) => {
                 guildIds = guildIds.guildIds;
                 return guildIds.includes(guild_id);
@@ -151,7 +160,7 @@ const memoResult = react.memo(function GuildsBarGuild(guildId) {
               if (findIndexResult > -1) {
                 const obj = { guild_id, index: findIndexResult, active_hook: ref.current };
                 const obj2 = token(drawerOpen[24]);
-                obj2.track(sharedValue.HOME_DRAWER_GUILD_CLICKED, obj);
+                obj2.track(constants.HOME_DRAWER_GUILD_CLICKED, obj);
               }
             }
             token(drawerOpen[25])(guild_id);
@@ -223,14 +232,12 @@ const memoResult = react.memo(function GuildsBarGuild(guildId) {
       formatToPlainStringResult = intl.formatToPlainString(intl10.t["/uzRss"], obj);
     }
   }, items5);
-  let tmp14 = token(drawerOpen[26])(guildId, icon, asset);
-  const tmp15 = dragDropInProgress(guildId, flag);
-  const isDragTarget = tmp15.isDragTarget;
-  dragDropInProgress = tmp15.dragDropInProgress;
-  ({ dragState, overState, itemSize } = tmp15);
-  const items6 = [isDragTarget];
+  const tmp15 = token(drawerOpen[26])(guildId, icon, asset);
+  ({ isDragTarget, dragDropInProgress, dragState, overState, itemSize } = useItemDragState(guildId, flag));
+  const items6 = [stateFromStores1];
+  const tmp16 = useItemDragState(guildId, flag);
   const obj6 = guildId(drawerOpen[18]);
-  const stateFromStores1 = obj6.useStateFromStores(items6, () => isDragTarget.getGuildsTree().version);
+  stateFromStores1 = obj6.useStateFromStores(items6, () => stateFromStores1.getGuildsTree().version);
   const items7 = [guildId, stateFromStores1];
   const memo2 = react.useMemo(() => {
     const items = [...getGuildsBarGuildMenuItemsDefault(guildId, stateFromStores1).map((label) => ({ name: label.label, label: label.label, action: label.action })), ...getGuildsBarGuildAccessibilityActionsDefault(guildId, stateFromStores1).map((name) => ({ name: name.name, label: name.label, action: name.action }))];
@@ -254,70 +261,79 @@ const memoResult = react.memo(function GuildsBarGuild(guildId) {
   ({ accessibilityActions, onAccessibilityAction } = memo2);
   const obj7 = guildId(drawerOpen[29]);
   const sharedValue = obj7.useSharedValue(guildId);
-  class R {
+  const items8 = [closure_18, dragDropInProgress, sharedValue, guildId, isDragTarget, , ];
+  const useCallback = react.useCallback;
+  items8[5] = guildId(drawerOpen[30]).withSpring;
+  items8[6] = TRANSITION_PHYSICS;
+  let c0;
+  let c1;
+  let c2;
+  let c3;
+  let c4;
+  let c5;
+  [tmp20, tmp21, tmp22, tmp23, tmp24, tmp25, tmp26] = items8;
+  class GuildsBarGuildTsx1 {
     constructor(originY) {
       let targetHeight;
       let targetOriginY;
-      const value = dragDropInProgress.get() && sharedValue.get() === guildId && !isDragTarget;
-      let tmp6 = guildId;
-      set = sharedValue.set;
-      if (guildId == null) {
+      const value = _undefined.get() && _undefined2.get() === c2 && !c3;
+      let tmp6 = c2;
+      set = _undefined2.set;
+      if (c2 == null) {
         tmp6 = null;
       }
       const result = set(tmp6);
       if (value) {
-        const obj = spring;
-        targetOriginY = obj.withSpring(originY.targetOriginY, TRANSITION_PHYSICS, "animate-always");
+        targetOriginY = _undefined3(originY.targetOriginY, c5, "animate-always");
       } else {
         targetOriginY = originY.targetOriginY;
       }
-      const obj2 = { originY: targetOriginY, height: targetHeight };
+      const obj = { originY: targetOriginY, height: targetHeight };
       if (value) {
-        const obj3 = spring;
-        targetHeight = obj3.withSpring(originY.targetHeight, TRANSITION_PHYSICS, "animate-always");
+        targetHeight = _undefined3(originY.targetHeight, c5, "animate-always");
       } else {
         targetHeight = originY.targetHeight;
       }
-      return { animations: obj2, initialValues: { originY: originY.currentOriginY, height: originY.currentHeight } };
+      return { animations: obj, initialValues: { originY: originY.currentOriginY, height: originY.currentHeight } };
     }
   }
-  R.__closure = { dragDropInProgress, sharedId: sharedValue, guildId, isDragTarget, withSpring: guildId(drawerOpen[30]).withSpring, TRANSITION_PHYSICS: stateFromStores1 };
-  R.__workletHash = 14096669603718;
-  R.__initData = __initData;
-  const items8 = [guildId, sharedValue, isDragTarget, dragDropInProgress];
-  ({ dragDropInProgress, sharedId: sharedValue, guildId, isDragTarget, withSpring: guildId(drawerOpen[30]).withSpring, TRANSITION_PHYSICS: stateFromStores1 });
-  const callback1 = react.useCallback(R, items8);
-  const obj9 = { id: guildId, draggedItemSize: itemSize, accessibilityActions, onAccessibilityAction, cutouts: tmp22, selected, isDragTarget, dragState, sharedId: sharedValue, circle: false, overState, unread, label: memo1, config: memo, styles: guildsBarAnimatedWrapperStyles, isDragPreview: flag, layout: callback1, externalChildren: closure_15(closure_14, obj10), expandedChildren: tmp20Result, children: tmp20Result2 };
-  tmp22 = undefined;
-  const tmp21 = token(drawerOpen[14]);
+  const items9 = [tmp21, tmp22, tmp23, tmp24, tmp25, tmp26];
+  GuildsBarGuildTsx1.__closure = items9;
+  GuildsBarGuildTsx1.__workletHash = 17577267237631;
+  GuildsBarGuildTsx1.__initData = tmp20;
+  const items10 = [guildId, sharedValue, isDragTarget, dragDropInProgress];
+  const callback1 = useCallback(GuildsBarGuildTsx1, items10);
+  const obj8 = { id: guildId, draggedItemSize: itemSize, accessibilityActions, onAccessibilityAction, cutouts: tmp30, selected, isDragTarget, dragState, sharedId: sharedValue, circle: false, overState, unread, label: memo1, config: memo, styles: guildsBarAnimatedWrapperStyles, isDragPreview: flag, layout: callback1, externalChildren: closure_15(closure_14, obj9), expandedChildren: tmp28Result, children: tmp28Result2 };
+  tmp30 = undefined;
+  const tmp4Result = token(drawerOpen[14]);
   if (!isDragTarget) {
-    tmp22 = cutouts;
+    tmp30 = cutouts;
   }
   if (!flag) {
     flag = isDragTarget;
   }
-  obj10 = { children: items9 };
-  items9 = [badgeTopRight, badgeBottomRight];
-  tmp20Result = undefined;
+  obj9 = { children: items11 };
+  items11 = [badgeTopRight, badgeBottomRight];
+  tmp28Result = undefined;
   if (enableHome) {
     if (!flag2) {
-      const obj11 = { guildId, onActiveHookChange: callback };
-      tmp20Result = tmp20(tmp4(tmp3[17]), obj11);
+      const obj10 = { guildId, onActiveHookChange: callback };
+      tmp28Result = tmp28(tmp4(tmp3[17]), obj10);
     }
   }
   if (isUnavailable) {
-    const obj12 = { source: token(drawerOpen[32]), style: tmp.guildIcon };
-    const tmp4Result = token(drawerOpen[31]);
-    tmp20Result2 = tmp20(tmp4Result, obj12);
-  } else if (null != tmp14) {
-    const obj13 = { source: tmp14, style: tmp.guildIcon };
-    tmp20Result2 = tmp20(tmp4(tmp3[31]), obj13);
+    const obj11 = { source: token(drawerOpen[32]), style: tmp.guildIcon };
+    const tmp4Result3 = token(drawerOpen[31]);
+    tmp28Result2 = tmp28(tmp4Result3, obj11);
+  } else if (null != tmp15) {
+    const obj12 = { source: tmp15, style: tmp.guildIcon };
+    tmp28Result2 = tmp28(tmp4(tmp3[31]), obj12);
   } else {
-    const obj14 = { value: guildName, selected, animate: selected, size: tmp2(drawerOpen[19]).GuildIconSizes.LARGE };
-    const tmp4Result2 = token(drawerOpen[19]);
-    tmp20Result2 = tmp20(tmp4Result2, obj14);
+    const obj13 = { value: guildName, selected, animate: selected, size: tmp2(drawerOpen[19]).GuildIconSizes.LARGE };
+    const tmp4Result4 = token(drawerOpen[19]);
+    tmp28Result2 = tmp28(tmp4Result4, obj13);
   }
-  return closure_16(tmp21, obj9);
+  return closure_16(tmp4Result, obj8);
 });
 size = size_mod;
 let result = size.fileFinishedImporting("modules/guilds_bar/native/GuildsBarGuild.tsx");

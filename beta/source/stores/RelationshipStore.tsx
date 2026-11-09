@@ -1,16 +1,16 @@
-// Module ID: 4956
-// Function ID: 4957
+// Module ID: 5082
+// Function ID: 5083
 // Name: RelationshipStore
-// Dependencies: [32, 4957, 1383, 1072, 572, 504, 4934, 2]
+// Dependencies: [32, 5083, 1385, 1072, 572, 504, 5060, 2]
 
-// Module 4956 (RelationshipStore)
+// Module 5082 (RelationshipStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
-import GuildLeaderboardTypes from "GuildLeaderboardTypes" /* 4934 */;
+import GuildLeaderboardTypes from "GuildLeaderboardTypes" /* 5060 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import MessageRecord from "MessageRecord" /* 4957 */;
-import UserStore from "UserStore" /* 1383 */;
+import MessageRecord from "MessageRecord" /* 5083 */;
+import UserStore from "UserStore" /* 1385 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_16;
@@ -113,7 +113,7 @@ let closure_15 = 0;
 const authStore4 = {};
 let closure_17 = 0;
 let size = 0;
-let closure_20 = { friends: "Array", blocked: "t", ignored: "isArray", blockedOrIgnored: "Button" };
+let closure_20 = { friends: "add", blocked: "sa", ignored: "paddingHorizontal", blockedOrIgnored: "Array" };
 const set3 = new Set();
 const map1 = new Map();
 const Store = get_initializedDefault.Store;
@@ -394,6 +394,7 @@ const prototype = RelationshipStore.prototype;
 RelationshipStore.displayName = "RelationshipStore";
 let obj = {
   CONNECTION_OPEN: function handleConnectionOpen(relationships) {
+    let set4;
     map.clear();
     map1.clear();
     obj6 = {};
@@ -674,6 +675,53 @@ let obj = {
     }
     flushStaleUserIdLists();
     recountPending();
+  },
+  RELATIONSHIP_IGNORE_USER_SUCCESS: function handleIgnoreUserSuccess(userId) {
+    userId = userId.userId;
+    const obj = set1;
+    if (!set1.has(userId)) {
+      obj.add(userId);
+      set3.add("ignored");
+      set3.add("blockedOrIgnored");
+    }
+    const tmp5 = RelationshipTypes;
+    if (map.get(userId) === RelationshipTypes.PENDING_INCOMING) {
+      set2.add(userId);
+    }
+    flushStaleUserIdLists();
+    size = set2.size;
+    const _Math = Math;
+    const value = map1.get(tmp5.PENDING_INCOMING);
+    let num;
+    if (value != null) {
+      num = value.size;
+    }
+    if (num == null) {
+      num = 0;
+    }
+    closure_17 = max(num - size - size, 0);
+    closure_15 = closure_15 + 1;
+  },
+  RELATIONSHIP_UNIGNORE_USER_SUCCESS: function handleUnignoreUserSuccess(userId) {
+    userId = userId.userId;
+    if (set1.delete(userId)) {
+      set3.add("ignored");
+      set3.add("blockedOrIgnored");
+    }
+    set2.delete(userId);
+    flushStaleUserIdLists();
+    size = set2.size;
+    const _Math = Math;
+    const value = map1.get(RelationshipTypes.PENDING_INCOMING);
+    let num;
+    if (value != null) {
+      num = value.size;
+    }
+    if (num == null) {
+      num = 0;
+    }
+    closure_17 = max(num - size - size, 0);
+    closure_15 = closure_15 + 1;
   },
   UPDATE_STRANGER_STATUS: function handleUpdateStrangerStatus(isStranger) {
     closure_16[isStranger.userId] = { expiry: Date.now() + 300000, isStranger: isStranger.isStranger };

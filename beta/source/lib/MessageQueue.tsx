@@ -1,22 +1,22 @@
-// Module ID: 8384
-// Function ID: 8385
+// Module ID: 8455
+// Function ID: 8456
 // Name: MessageQueue
-// Dependencies: [109, 5627, 502, 5901, 1072, 5019, 1089, 8385, 3, 5760, 8386, 7639, 1282, 6070, 38, 8209, 8212, 8231, 8216, 2]
+// Dependencies: [109, 5754, 502, 6032, 1072, 5145, 1089, 8456, 3, 5889, 8457, 7715, 1282, 6203, 38, 8278, 8281, 8301, 8286, 2]
 // Exports: getFailedMessageId, isMessageDataCommand, isMessageDataEdit, isMessageDataSend
 
-// Module 8384 (MessageQueue)
+// Module 8455 (MessageQueue)
 import LoggerDefault from "Logger" /* 3 */;
 import DurationsDefault from "Durations" /* 1089 */;
-import MessageConstants from "MessageConstants" /* 5019 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5760 */;
-import NetStats from "NetStats" /* 7639 */;
-import getOverlayMessageAnaylticsLocationDefault from "getOverlayMessageAnaylticsLocation" /* 8386 */;
+import MessageConstants from "MessageConstants" /* 5145 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5889 */;
+import NetStats from "NetStats" /* 7715 */;
+import getOverlayMessageAnaylticsLocationDefault from "getOverlayMessageAnaylticsLocation" /* 8457 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import DevSettingsStore from "DevSettingsStore" /* 5627 */;
+import DevSettingsStore from "DevSettingsStore" /* 5754 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import NetworkStore from "NetworkStore" /* 5901 */;
+import NetworkStore from "NetworkStore" /* 6032 */;
 import Constants from "Constants" /* 1072 */;
-import Queue from "Queue" /* 8385 */;
+import Queue from "Queue" /* 8456 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -96,20 +96,20 @@ class MessageQueue extends Queue {
       self.handleCommand(type.message, fn);
     }
   }
-  cancelRequest(id2) {
+  cancelRequest(StringResult1) {
     const self = this;
-    let closure_0 = id2;
+    let closure_0 = StringResult1;
     const logger = this.logger;
-    logger.log("Cancel message send: ", id2);
+    logger.log("Cancel message send: ", StringResult1);
     const requests = this.requests;
-    const value = requests.get(id2);
+    const value = requests.get(StringResult1);
     if (value != null) {
       value.abort();
     }
     const requests2 = self.requests;
-    requests2.delete(id2);
-    const result = self.cancelQueueMetricTimers(id2);
-    self.remove((type) => (type.type === obj.SEND || type.type === tmp.SEND_ANNOUNCEMENT || type.type === tmp.COMMAND) && type.message.nonce === id2);
+    requests2.delete(StringResult1);
+    const result = self.cancelQueueMetricTimers(StringResult1);
+    self.remove((type) => (type.type === obj.SEND || type.type === tmp.SEND_ANNOUNCEMENT || type.type === tmp.COMMAND) && type.message.nonce === StringResult1);
   }
   cancelPendingSendRequests(c0) {
     const self = this;

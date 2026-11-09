@@ -1,23 +1,23 @@
-// Module ID: 8025
-// Function ID: 8026
+// Module ID: 8095
+// Function ID: 8096
 // Name: InlineNotice
-// Dependencies: [19, 17, 21, 7086, 575, 2075, 8026, 5735, 7340, 5625, 5014, 5624, 5642, 1113, 5084, 1376, 5023, 5634, 8028, 7054, 2]
+// Dependencies: [19, 17, 21, 7152, 575, 2199, 8096, 5859, 7401, 5752, 5140, 5751, 5766, 1113, 5202, 1357, 5149, 5758, 8098, 7120, 2]
 // Exports: InlineNotice
 
-// Module 8025 (InlineNotice)
+// Module 8095 (InlineNotice)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import utils_PlatformUtils from "utils/PlatformUtils" /* 1376 */;
-import _modDef2075 from "module_2075" /* 2075 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import TextVariants from "TextVariants" /* 5625 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 5735 */;
-import CircleErrorIcon from "CircleErrorIcon" /* 7086 */;
-import CircleCheckIcon from "CircleCheckIcon" /* 7340 */;
-import WarningIcon from "WarningIcon" /* 8026 */;
+import utils_PlatformUtils from "utils/PlatformUtils" /* 1357 */;
+import _modDef2199 from "module_2199" /* 2199 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import TextVariants from "TextVariants" /* 5752 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 5859 */;
+import CircleErrorIcon from "CircleErrorIcon" /* 7152 */;
+import CircleCheckIcon from "CircleCheckIcon" /* 7401 */;
+import WarningIcon from "WarningIcon" /* 8096 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -31,7 +31,7 @@ let obj5;
 let obj7;
 let obj8;
 let tmp;
-const AccessibilityAnnouncer2 = tmp(5023);
+const AccessibilityAnnouncer2 = tmp(5149);
 function NoticeMessageList(color) {
   let closure_2;
   let items;
@@ -43,7 +43,7 @@ function NoticeMessageList(color) {
   const tmp = closure_10();
   dependencyMap = tmp;
   obj = { style: tmp.stack, children: items1 };
-  items1 = [closure_5(variant(5624).Text, { variant, color, children: intro }), ];
+  items1 = [closure_5(variant(5751).Text, { variant, color, children: intro }), ];
   let obj2 = {
     accessibilityRole: "list",
     style: tmp.stack,
@@ -64,12 +64,12 @@ function NoticeMessageList(color) {
 const View = react_native.View;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let obj = { critical: obj2, warning: obj3, info: obj4, success: obj5 };
-obj2 = { Icon: CircleErrorIcon.CircleErrorIcon, iconColor: nativeDefault.colors.ICON_FEEDBACK_CRITICAL, background: nativeDefault.colors.BACKGROUND_FEEDBACK_CRITICAL, border: nativeDefault.colors.INLINENOTICE_BORDER_CRITICAL, typeLabel: _modDef2075.uKMqrF };
-obj3 = { Icon: WarningIcon.WarningIcon, iconColor: nativeDefault.colors.ICON_FEEDBACK_WARNING, background: nativeDefault.colors.BACKGROUND_FEEDBACK_WARNING, border: nativeDefault.colors.INLINENOTICE_BORDER_WARNING, typeLabel: _modDef2075["7vL/d/"] };
-obj4 = { Icon: CircleInformationIcon.CircleInformationIcon, iconColor: nativeDefault.colors.ICON_FEEDBACK_INFO, background: nativeDefault.colors.BACKGROUND_FEEDBACK_INFO, border: nativeDefault.colors.INLINENOTICE_BORDER_INFO, typeLabel: _modDef2075.BReS7U };
-obj5 = { Icon: CircleCheckIcon.CircleCheckIcon, iconColor: nativeDefault.colors.ICON_FEEDBACK_POSITIVE, background: nativeDefault.colors.BACKGROUND_FEEDBACK_POSITIVE, border: nativeDefault.colors.INLINENOTICE_BORDER_POSITIVE, typeLabel: _modDef2075["1MXXPf"] };
+obj2 = { Icon: CircleErrorIcon.CircleErrorIcon, iconColor: nativeDefault.colors.ICON_FEEDBACK_CRITICAL, background: nativeDefault.colors.BACKGROUND_FEEDBACK_MOD_CRITICAL, border: nativeDefault.colors.INLINENOTICE_BORDER_CRITICAL, typeLabel: _modDef2199.uKMqrF };
+obj3 = { Icon: WarningIcon.WarningIcon, iconColor: nativeDefault.colors.ICON_FEEDBACK_WARNING, background: nativeDefault.colors.BACKGROUND_FEEDBACK_MOD_WARNING, border: nativeDefault.colors.INLINENOTICE_BORDER_WARNING, typeLabel: _modDef2199["7vL/d/"] };
+obj4 = { Icon: CircleInformationIcon.CircleInformationIcon, iconColor: nativeDefault.colors.ICON_FEEDBACK_INFO, background: nativeDefault.colors.BACKGROUND_FEEDBACK_MOD_INFO, border: nativeDefault.colors.INLINENOTICE_BORDER_INFO, typeLabel: _modDef2199.BReS7U };
+obj5 = { Icon: CircleCheckIcon.CircleCheckIcon, iconColor: nativeDefault.colors.ICON_FEEDBACK_POSITIVE, background: nativeDefault.colors.BACKGROUND_FEEDBACK_MOD_POSITIVE, border: nativeDefault.colors.INLINENOTICE_BORDER_POSITIVE, typeLabel: _modDef2199["1MXXPf"] };
 const TextVariantsFlat = TextVariants.TextVariantsFlat;
-let found = TextVariantsFlat.find((name) => "experimental/body-sm/normal" === name.name);
+let found = TextVariantsFlat.find((name) => "body-sm/normal" === name.name);
 let lineHeight;
 if (found != null) {
   lineHeight = found.lineHeight;
@@ -183,15 +183,15 @@ export function InlineNotice(hidden) {
     const obj7 = { style: tmp4Result.contents, children: items5 };
     const obj8 = { style: tmp4Result.copy, children: items4 };
     if (null != title) {
-      const obj9 = { variant: "experimental/body-sm/semibold", color: "text-strong", children: title };
+      const obj9 = { variant: "body-sm/semibold", color: "text-strong", children: title };
       tmp17Result = tmp17(tmp2(tmp3[11]).Text, obj9);
     }
     items4 = [tmp17Result, ];
     if (null != messageList) {
-      const obj10 = { intro: message, items: messageList, variant: "experimental/body-sm/normal", color: "text-strong" };
+      const obj10 = { intro: message, items: messageList, variant: "body-sm/normal", color: "text-strong" };
       tmp17Result4 = tmp17(NoticeMessageList, obj10);
     } else {
-      const obj11 = { variant: "experimental/body-sm/normal", color: "text-strong", children: message };
+      const obj11 = { variant: "body-sm/normal", color: "text-strong", children: message };
       tmp17Result4 = tmp17(tmp2(tmp3[11]).Text, obj11);
     }
     items4[1] = tmp17Result4;

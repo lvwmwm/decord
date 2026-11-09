@@ -1,49 +1,56 @@
-// Module ID: 17780
-// Function ID: 17781
+// Module ID: 18112
+// Function ID: 18113
 // Name: UserSettingsDesignSystemSegmentedControl
-// Dependencies: [32, 19, 17, 21, 5014, 575, 5624, 8980, 6027, 9214, 14192, 5634, 5023, 2]
+// Dependencies: [32, 19, 17, 21, 5140, 575, 5751, 9069, 9059, 6159, 9294, 14436, 5758, 5149, 2]
 // Exports: default
 
-// Module 17780 (UserSettingsDesignSystemSegmentedControl)
+// Module 18112 (UserSettingsDesignSystemSegmentedControl)
 import nativeDefault from "native" /* 575 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5023 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5149 */;
+import useMeasuredLayoutDefault from "useMeasuredLayout" /* 9069 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
-const require = globalThis.__r;
+let importDefault;
 
-let closure_4;
 let hasOwnProperty;
+let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let obj2;
-({ View: closure_4, ScrollView: hasOwnProperty } = react_native);
-({ jsxs: metroRequire, jsx: metroImportDefault } = Fragment);
+({ View: hasOwnProperty, ScrollView: metroRequire } = react_native);
+({ jsxs: metroImportDefault, jsx: metroImportAll } = Fragment);
 let obj = { container: { margin: 16, flex: 1, alignItems: "center", padding: 40 }, item: obj2 };
 obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderWidth: 2, borderColor: nativeDefault.colors.BORDER_STRONG, flex: 1, alignItems: "center", justifyContent: "center", height: 400 };
-let closure_8 = createStyles.createStyles(obj);
+let closure_9 = createStyles.createStyles(obj);
 const result = size.fileFinishedImporting("modules/user_settings/design_system/native/UserSettingsDesignSystemSegmentedControl.tsx");
 
 export default function UserSettingsDesignSystemSegmentedControl() {
   let Stack;
-  let closure_0;
-  let closure_2;
+  let closure_1;
   let first;
-  let first1;
   let items1;
   let items2;
   let obj3;
   let obj4;
-  [first, _require] = react.useState(0);
-  [first1, _slicedToArray] = react.useState(3);
-  let tmp5 = closure_8();
-  let tmp6 = closure_8();
-  let closure_1 = tmp6;
-  let items = [first1, tmp6.item];
+  let onLayout;
+  let ref;
+  let tmp2 = useMeasuredLayoutDefault();
+  const width = tmp2.width;
+  let num = 0;
+  ({ ref, onLayout } = tmp2);
+  if (undefined !== width) {
+    num = width;
+  }
+  [first, importDefault] = react.useState(3);
+  let tmp5 = closure_9();
+  let tmp6 = closure_9();
+  importDefault = tmp6;
+  let items = [first, tmp6.item];
   const memo = react.useMemo(() => {
     let items1;
     let obj2;
@@ -51,64 +58,58 @@ export default function UserSettingsDesignSystemSegmentedControl() {
     let sum;
     const items = [];
     let num = 0;
-    if (0 < first1) {
+    if (0 < first) {
       do {
-        let obj = { label: "Item " + sum, id: "item-" + sum, page: closure_2_7(closure_2_4, obj2) };
+        let obj = { label: "Item " + sum, id: "item-" + sum, page: closure_2_8(closure_2_5, obj2) };
         sum = num + 1;
         let _HermesInternal = HermesInternal;
         let push = items.push;
         let _HermesInternal2 = HermesInternal;
-        obj2 = { style: item.item, children: closure_2_6(first1(first1[6]).Text, obj3) };
-        obj3 = { variant: "heading-xxl/bold", children: items1 };
+        obj2 = { style: item.item, children: closure_2_7(first(dependencyMap[6]).Text, obj3) };
+        obj3 = { variant: "heading-xxl/semibold", children: items1 };
         items1 = ["Item ", sum];
         let arr = push(obj);
         num = sum;
-      } while (sum < first1);
+      } while (sum < first);
     }
     return items;
   }, items);
-  let obj = require("SegmentedControlState");
-  const segmentedControlState = obj.useSegmentedControlState({ items: memo, pageWidth: first, defaultIndex: 1 });
-  let obj2 = { children: closure_7(closure_4, obj3) };
-  obj3 = {
-    style: tmp5.container,
-    onLayout: react.useCallback((nativeEvent) => {
-      closure_0(nativeEvent.nativeEvent.layout.width);
-    }, []),
-    children: closure_6(Stack, obj4)
-  };
+  let obj = first(9059);
+  const segmentedControlState = obj.useSegmentedControlState({ items: memo, pageWidth: num, defaultIndex: 1 });
+  let obj2 = { children: closure_8(closure_5, obj3) };
+  obj3 = { style: tmp5.container, ref, onLayout, children: closure_7(Stack, obj4) };
   obj4 = { spacing: 24, children: items1 };
-  Stack = require("Stack/Stack").Stack;
-  items1 = [closure_7(require("SegmentedControl").SegmentedControl, { state: segmentedControlState }), closure_7(require("SegmentedControlPages").SegmentedControlPages, { state: segmentedControlState }), ];
+  Stack = first(6159).Stack;
+  items1 = [closure_8(first(9294).SegmentedControl, { state: segmentedControlState }), closure_8(first(14436).SegmentedControlPages, { state: segmentedControlState }), ];
   const obj5 = { spacing: 8, direction: "horizontal", children: items2 };
-  const Stack2 = require("Stack/Stack").Stack;
+  const Stack2 = first(6159).Stack;
   items2 = [, ];
   const obj6 = {
     text: "Add Tab",
     variant: "active",
     size: "sm",
-    disabled: first1 >= 5,
+    disabled: first >= 5,
     onPress() {
-      const sum = first1 + 1;
-      closure_2(sum);
+      const sum = first + 1;
+      closure_1(sum);
       const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
       AccessibilityAnnouncer.announce("Tab added, " + sum + " tabs", "polite");
     }
   };
-  items2[0] = closure_7(require("components/Button/Button").Button, obj6);
+  items2[0] = closure_8(first(5758).Button, obj6);
   const obj7 = {
     text: "Remove Tab",
     variant: "destructive",
     size: "sm",
-    disabled: 2 === first1,
+    disabled: 2 === first,
     onPress() {
-      const diff = first1 - 1;
-      closure_2(diff);
+      const diff = first - 1;
+      closure_1(diff);
       const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
       AccessibilityAnnouncer.announce("Tab removed, " + diff + " tabs", "polite");
     }
   };
-  items2[1] = closure_7(require("components/Button/Button").Button, obj7);
-  items1[2] = closure_6(Stack2, obj5);
-  return closure_7(closure_5, obj2);
+  items2[1] = closure_8(first(5758).Button, obj7);
+  items1[2] = closure_7(Stack2, obj5);
+  return closure_8(closure_6, obj2);
 };

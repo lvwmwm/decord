@@ -1,82 +1,54 @@
 // Module ID: 8325
 // Function ID: 8326
-// Dependencies: [8296]
+// Dependencies: [8321, 8322]
+// Exports: isAAC, isAMR, isFLAC, isM4A, isMP3, isWAV
 
 // Module 8325
-import _modDef8296 from "module_8296" /* 8296 */;
+import _mod8321 from "module_8321" /* 8321 */;
+import _mod8322 from "module_8322" /* 8322 */;
 
 
-export default {
-  read(byteLength, sum) {
-    let str6;
-    let str7;
-    let tmp11;
-    let tmp16;
-    let tmp20;
-    let tmp24;
-    let tmp28;
-    let tmp6;
-    let tmp;
-    if (sum + 4 <= byteLength.byteLength) {
-      const obj = _modDef8296;
-      const longAt = obj.getLongAt(byteLength, sum);
-      const _HermesInternal = HermesInternal;
-      tmp = { value: longAt, description: "" + longAt + "px" };
-      const obj2 = { value: longAt, description: "" + longAt + "px" };
+export function isAAC(fileChunk, excludeSimilarTypes) {
+  fileChunk = _mod8321.getFileChunk(fileChunk);
+  const FileTypes = _mod8322.FileTypes;
+  let checkByFileTypeResult1 = FileTypes.checkByFileType(fileChunk, "aac");
+  if (!checkByFileTypeResult1) {
+    excludeSimilarTypes = undefined;
+    if (null != excludeSimilarTypes) {
+      excludeSimilarTypes = excludeSimilarTypes.excludeSimilarTypes;
     }
-    const obj3 = { "Image Width": tmp, "Image Height": tmp6, "Bit Depth": tmp11, "Color Type": tmp16, Compression: tmp20, Filter: tmp24, Interlace: tmp28 };
-    tmp6 = undefined;
-    if (sum + 4 + 4 <= byteLength.byteLength) {
-      const obj4 = _modDef8296;
-      const longAt1 = obj4.getLongAt(byteLength, sum + 4);
-      const _HermesInternal2 = HermesInternal;
-      tmp6 = { value: longAt1, description: "" + longAt1 + "px" };
-      const obj5 = { value: longAt1, description: "" + longAt1 + "px" };
+    let checkByFileTypeResult = !excludeSimilarTypes;
+    if (checkByFileTypeResult) {
+      const fileChunk1 = tmp(8321).getFileChunk(fileChunk);
+      const FileTypes2 = tmp(8322).FileTypes;
+      checkByFileTypeResult = FileTypes2.checkByFileType(fileChunk1, "m4a");
     }
-    tmp11 = undefined;
-    if (sum + 8 + 1 <= byteLength.byteLength) {
-      const obj6 = _modDef8296;
-      const byteAt = obj6.getByteAt(byteLength, sum + 8);
-      const _HermesInternal3 = HermesInternal;
-      tmp11 = { value: byteAt, description: "" + byteAt };
-      const obj7 = { value: byteAt, description: "" + byteAt };
-    }
-    tmp16 = undefined;
-    if (sum + 9 + 1 <= byteLength.byteLength) {
-      const obj8 = _modDef8296;
-      const byteAt1 = obj8.getByteAt(byteLength, sum + 9);
-      tmp16 = { value: byteAt1, description: { 0: "Grayscale", 2: "RGB", 3: "Palette", 4: "Grayscale with Alpha", 6: "RGB with Alpha" }[byteAt1] || "Unknown" };
-      const obj9 = { value: byteAt1, description: { 0: "Grayscale", 2: "RGB", 3: "Palette", 4: "Grayscale with Alpha", 6: "RGB with Alpha" }[byteAt1] || "Unknown" };
-    }
-    tmp20 = undefined;
-    if (sum + 10 + 1 <= byteLength.byteLength) {
-      const obj10 = _modDef8296;
-      const byteAt2 = obj10.getByteAt(byteLength, sum + 10);
-      const obj11 = { value: byteAt2, description: str6 };
-      str6 = "Unknown";
-      if (0 === byteAt2) {
-        str6 = "Deflate/Inflate";
-      }
-      tmp20 = obj11;
-    }
-    tmp24 = undefined;
-    if (sum + 11 + 1 <= byteLength.byteLength) {
-      const obj12 = _modDef8296;
-      const byteAt3 = obj12.getByteAt(byteLength, sum + 11);
-      const obj13 = { value: byteAt3, description: str7 };
-      str7 = "Unknown";
-      if (0 === byteAt3) {
-        str7 = "Adaptive";
-      }
-      tmp24 = obj13;
-    }
-    tmp28 = undefined;
-    if (sum + 12 + 1 <= byteLength.byteLength) {
-      const obj14 = _modDef8296;
-      const byteAt4 = obj14.getByteAt(byteLength, sum + 12);
-      tmp28 = { value: byteAt4, description: { 0: "Noninterlaced", 1: "Adam7 Interlace" }[byteAt4] || "Unknown" };
-      const obj15 = { value: byteAt4, description: { 0: "Noninterlaced", 1: "Adam7 Interlace" }[byteAt4] || "Unknown" };
-    }
-    return obj3;
+    checkByFileTypeResult1 = checkByFileTypeResult;
   }
-};
+  return checkByFileTypeResult1;
+}
+export function isAMR(fileChunk) {
+  fileChunk = _mod8321.getFileChunk(fileChunk);
+  const FileTypes = _mod8322.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "amr");
+}
+export function isFLAC(fileChunk) {
+  fileChunk = _mod8321.getFileChunk(fileChunk);
+  const FileTypes = _mod8322.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "flac");
+}
+export function isM4A(fileChunk) {
+  fileChunk = _mod8321.getFileChunk(fileChunk);
+  const FileTypes = _mod8322.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "m4a");
+}
+export function isMP3(fileChunk) {
+  fileChunk = _mod8321.getFileChunk(fileChunk);
+  const FileTypes = _mod8322.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "mp3");
+}
+export function isWAV(fileChunk) {
+  fileChunk = _mod8321.getFileChunk(fileChunk);
+  const FileTypes = _mod8322.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "wav");
+}

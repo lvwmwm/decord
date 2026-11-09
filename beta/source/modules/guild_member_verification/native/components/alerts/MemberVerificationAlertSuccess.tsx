@@ -1,16 +1,16 @@
-// Module ID: 6909
-// Function ID: 6910
+// Module ID: 6964
+// Function ID: 6965
 // Name: MemberVerificationAlertSuccess
-// Dependencies: [19, 17, 5015, 4885, 21, 5014, 504, 6030, 1113, 5618, 6910, 5624, 2]
+// Dependencies: [19, 17, 5141, 5011, 21, 5140, 504, 6162, 1113, 5745, 6965, 5751, 2]
 // Exports: default
 
-// Module 6909 (MemberVerificationAlertSuccess)
+// Module 6964 (MemberVerificationAlertSuccess)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5015 */;
-import GuildStore from "GuildStore" /* 4885 */;
+import AccessibilityStore from "AccessibilityStore" /* 5141 */;
+import GuildStore from "GuildStore" /* 5011 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;
@@ -57,12 +57,12 @@ export default function MemberVerificationAlertSuccess(guildId) {
     obj4 = { source: guildId(merged[10]), autoPlay: !tmp7, style: tmp2.illustration };
     tmp16 = handleConfirmAndAck(merged[9]);
     items2 = [closure_6(View, obj3), , ];
-    const obj5 = { style: tmp2.header, variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: intl2.format(guildId(merged[8]).t["7hhNEn"], obj6) };
+    const obj5 = { style: tmp2.header, variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: intl2.format(guildId(merged[8]).t["7hhNEn"], obj6) };
     const Heading = tmp3(tmp4[11]).Heading;
     intl2 = tmp3(tmp4[8]).intl;
     obj6 = { guildName: stateFromStores.name };
     items2[1] = closure_6(Heading, obj5);
-    const obj7 = { style: tmp2.text, variant: "text-sm/medium", color: "text-default", children: intl3.string(guildId(merged[8]).t.nwpqyc) };
+    const obj7 = { style: tmp2.text, variant: "body-sm/medium", color: "text-default", children: intl3.string(guildId(merged[8]).t.nwpqyc) };
     const Text = tmp3(tmp4[11]).Text;
     intl3 = tmp3(tmp4[8]).intl;
     items2[2] = closure_6(Text, obj7);

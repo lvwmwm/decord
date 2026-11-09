@@ -1,23 +1,20 @@
-// Module ID: 13406
-// Function ID: 13407
+// Module ID: 13638
+// Function ID: 13639
 // Name: ShareFooterLayout
-// Dependencies: [19, 17, 21, 5014, 575, 5607, 5095, 5637, 5638, 5624, 2]
+// Dependencies: [19, 17, 21, 5140, 575, 5735, 1652, 5761, 5762, 5751, 2]
 // Exports: default
 
-// Module 13406 (ShareFooterLayout)
+// Module 13638 (ShareFooterLayout)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 5095 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5607 */;
-import spring from "spring" /* 5637 */;
-import springPresets from "springPresets" /* 5638 */;
+import _mod1652 from "module_1652" /* 1652 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5735 */;
+import spring_spring from "spring/spring" /* 5761 */;
+import springPresets from "springPresets" /* 5762 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
-
-const require = globalThis.__r;
-let _require;
 
 let closure_4;
 let hasOwnProperty;
@@ -25,6 +22,10 @@ let metroRequire;
 let obj2;
 let obj3;
 let obj4;
+let tmp2;
+let tmp5;
+const _modDef1652 = tmp2(1652);
+const Text_Text = tmp5(5751);
 let View = react_native.View;
 ({ jsx: closure_4, Fragment: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let createStyles = createStyles_mod;
@@ -34,62 +35,72 @@ createStyles = createStyles.createStyles;
 obj3 = { marginHorizontal: -nativeDefault.space.PX_16, borderBottomWidth: 1, borderBottomColor: nativeDefault.colors.BORDER_SUBTLE };
 obj4 = { display: "flex", flexDirection: "row", gap: nativeDefault.space.PX_12, alignItems: "flex-end" };
 let closure_7 = createStyles(obj);
-const __initData = { code: "function ShareFooterLayoutTsx1(){const{withSpring,footerPaddingBottom,ON_PRESS_SPRING}=this.__closure;return{paddingBottom:withSpring(footerPaddingBottom,ON_PRESS_SPRING,'respect-motion-settings')};}" };
+let closure_8 = { code: "(function ShareFooterLayoutTsx1(){let[withSpring,footerPaddingBottom,ON_PRESS_SPRING]=this.__closure;return{paddingBottom:withSpring(footerPaddingBottom,ON_PRESS_SPRING,'respect-motion-settings')};})" };
 const result = size.fileFinishedImporting("modules/share/native/ShareFooterLayout.tsx");
 
 export default function ShareFooterLayout(arg0) {
   let avoidKeyboard;
-  let c0;
   let chatInput;
-  let items;
-  let items1;
   let items2;
   let items3;
   let items4;
+  let items5;
+  let items6;
   let preview;
   let sendButton;
+  let tmp10;
+  let tmp7;
+  let tmp8;
+  let tmp9;
   let warningText;
   ({ preview, warningText } = arg0);
   ({ chatInput, sendButton, avoidKeyboard } = arg0);
   const tmp = closure_7();
   const sum = tmp.footer.paddingVertical + useSafeAreaInsetsKeyboardAwareDefault({ includeKeyboardHeight: avoidKeyboard, includeCustomKeyboardHeight: false }).insets.bottom;
-  _require = sum;
-  let obj = require("ReanimatedRexport");
-  const fn = function f() {
-    let obj2;
-    const obj = { paddingBottom: obj2.withSpring(c0, springPresets.ON_PRESS_SPRING, "respect-motion-settings") };
-    obj2 = spring;
-    return obj;
-  };
-  let obj2 = { withSpring: require("spring").withSpring, footerPaddingBottom: sum, ON_PRESS_SPRING: require("springPresets").ON_PRESS_SPRING };
-  fn.__closure = obj2;
-  fn.__workletHash = 2871405301293;
-  fn.__initData = __initData;
-  const animatedStyle = obj.useAnimatedStyle(fn);
-  const obj3 = { style: items, children: items2 };
-  items = [tmp.footer, animatedStyle];
-  let tmp6Result = null;
-  View = ReanimatedRexportDefault.View;
-  const tmp4 = _require;
+  const items = [closure_8, , , ];
+  const useAnimatedStyle = _mod1652.useAnimatedStyle;
+  _mod1652;
+  items[1] = spring_spring.withSpring;
+  items[2] = sum;
+  items[3] = springPresets.ON_PRESS_SPRING;
+  let c0;
+  let c1;
+  let c2;
+  [tmp7, tmp8, tmp9, tmp10] = items;
+  class ShareFooterLayoutTsx1 {
+    constructor() {
+      obj = { paddingBottom: closure_0(closure_1, closure_2, "respect-motion-settings") };
+      return obj;
+    }
+  }
+  const items1 = [tmp8, tmp9, tmp10];
+  ShareFooterLayoutTsx1.__closure = items1;
+  ShareFooterLayoutTsx1.__workletHash = 16457312043220;
+  ShareFooterLayoutTsx1.__initData = tmp7;
+  const animatedStyle = useAnimatedStyle(ShareFooterLayoutTsx1);
+  let obj = { style: items2, children: items4 };
+  items2 = [tmp.footer, animatedStyle];
+  let tmp12Result = null;
+  View = _modDef1652.View;
   if (null != preview) {
-    const obj4 = { children: items1 };
-    items1 = [preview, ];
-    const obj5 = { style: tmp.footerSeparator };
-    items1[1] = closure_4(View, obj5);
-    tmp6Result = tmp6(closure_5, obj4);
+    const obj2 = { children: items3 };
+    items3 = [preview, ];
+    const obj3 = { style: tmp.footerSeparator };
+    items3[1] = React3(View, obj3);
+    tmp12Result = tmp12(hasOwnProperty, obj2);
   }
-  items2 = [tmp6Result, ];
-  const obj7 = { style: tmp.chatRow, children: items3 };
-  items3 = [chatInput, sendButton];
-  const obj6 = { style: tmp.warningWrapper, children: items4 };
-  items4 = [closure_6(View, obj7), ];
-  let tmp12 = null != warningText;
-  const tmp11 = View;
-  if (tmp12) {
-    const obj8 = { variant: "text-sm/normal", color: "text-feedback-warning", children: warningText };
-    tmp12 = closure_4(tmp4(5624).Text, obj8);
+  items4 = [tmp12Result, ];
+  const obj5 = { style: tmp.chatRow, children: items5 };
+  items5 = [chatInput, sendButton];
+  const obj4 = { style: tmp.warningWrapper, children: items6 };
+  items6 = [metroRequire(View, obj5), ];
+  let tmp18 = null != warningText;
+  const tmp17 = View;
+  if (tmp18) {
+    const obj6 = { variant: "body-sm/normal", color: "text-feedback-warning", children: warningText };
+    tmp18 = React3(Text_Text.Text, obj6);
   }
-  items4[1] = tmp12;
-  items2[1] = closure_6(tmp11, obj6);
-  return closure_6(View, obj3);
+  items6[1] = tmp18;
+  items4[1] = metroRequire(tmp17, obj4);
+  return metroRequire(View, obj);
 };

@@ -1,22 +1,22 @@
-// Module ID: 19969
-// Function ID: 19970
+// Module ID: 20379
+// Function ID: 20380
 // Name: GuildRoleSubscriptionBenefitModalHeader
-// Dependencies: [32, 19, 17, 21, 5014, 575, 17211, 7292, 9109, 5624, 1113, 6998, 2]
+// Dependencies: [32, 19, 17, 21, 5140, 575, 17537, 7355, 9189, 5751, 1113, 7064, 2]
 // Exports: default
 
-// Module 19969 (GuildRoleSubscriptionBenefitModalHeader)
+// Module 20379 (GuildRoleSubscriptionBenefitModalHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import NavigatorHeader from "NavigatorHeader" /* 6998 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7292 */;
-import TouchableHitBoxDefault from "TouchableHitBox" /* 9109 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 17211 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import NavigatorHeader from "NavigatorHeader" /* 7064 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7355 */;
+import TouchableHitBoxDefault from "TouchableHitBox" /* 9189 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 17537 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;
@@ -53,7 +53,7 @@ export default function GuildRoleSubscriptionBenefitModalHeader(canSave) {
   const obj3 = { style: items, accessibilityRole: "button", onPress: onClose, children: metroRequire(Text, obj4) };
   items = [, ];
   ({ headerButtonContainer: arr[0], headerButtonStart: arr[1] } = tmp);
-  obj4 = { variant: "text-md/medium", color: "interactive-text-active", children: intl.string(intl3.t["ETE/oC"]) };
+  obj4 = { variant: "body-md/medium", color: "interactive-text-active", children: intl.string(intl3.t["ETE/oC"]) };
   const tmp7 = TouchableHitBoxDefault;
   Text = Text_Text.Text;
   intl = intl3.intl;
@@ -70,7 +70,7 @@ export default function GuildRoleSubscriptionBenefitModalHeader(canSave) {
   if (canSave) {
     str = "interactive-text-active";
   }
-  obj7 = { variant: "text-md/medium", color: str, children: intl2.string(intl3.t["R3BPH+"]) };
+  obj7 = { variant: "body-md/medium", color: str, children: intl2.string(intl3.t["R3BPH+"]) };
   intl2 = tmp5(1113).intl;
   items1[2] = metroRequire(tmp8, obj6);
   return tmp4(SafeAreaPaddingView, obj2);

@@ -1,30 +1,30 @@
-// Module ID: 16897
-// Function ID: 16898
+// Module ID: 17220
+// Function ID: 17221
 // Name: OrbWalletActionSheet
-// Dependencies: [19, 17, 1383, 15624, 16896, 1072, 1385, 21, 5014, 575, 16898, 7326, 16899, 504, 7351, 1113, 2172, 5624, 15626, 16900, 16901, 11417, 1252, 16909, 15625, 9553, 5258, 5080, 16912, 5272, 2]
+// Dependencies: [19, 17, 1385, 15939, 17219, 1072, 1387, 21, 5140, 575, 17221, 7387, 17222, 504, 7412, 1113, 2298, 5751, 15941, 17223, 17224, 11558, 1252, 17232, 15940, 9641, 5374, 5199, 17235, 5388, 2]
 
-// Module 16897 (OrbWalletActionSheet)
+// Module 17220 (OrbWalletActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl4 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import PremiumConstants from "PremiumConstants" /* 1385 */;
-import _modDef2172 from "module_2172" /* 2172 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7351 */;
-import OrbChallengesStore2 from "OrbChallengesStore" /* 15624 */;
-import OrbChallengeActionCreators from "OrbChallengeActionCreators" /* 15626 */;
-import OrbWalletConstants from "OrbWalletConstants" /* 16896 */;
-import OrbWalletCards from "OrbWalletCards" /* 16909 */;
+import PremiumConstants from "PremiumConstants" /* 1387 */;
+import _modDef2298 from "module_2298" /* 2298 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7412 */;
+import OrbChallengesStore2 from "OrbChallengesStore" /* 15939 */;
+import OrbChallengeActionCreators from "OrbChallengeActionCreators" /* 15941 */;
+import OrbWalletConstants from "OrbWalletConstants" /* 17219 */;
+import OrbWalletCards from "OrbWalletCards" /* 17232 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1383 */;
+import UserStore from "UserStore" /* 1385 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let BottomSheet, _require, importDefault;
+let _require, importDefault;
 
 let closure_12;
 let obj2;
@@ -68,13 +68,13 @@ function StatefulOrbChallengesCard(reopenWallet) {
       let stringResult;
       if (orbChallengesDisplayError.errorType === orbChallengesDisplayError.CLAIM_CHALLENGE) {
         const intl3 = intl4.intl;
-        stringResult = intl3.string(_modDef2172.FYb5rH);
+        stringResult = intl3.string(_modDef2298.FYb5rH);
       } else {
         const intl2 = intl4.intl;
         const obj2 = {
           underlineHook(children) {
                 const obj = {
-                  variant: "text-sm/normal",
+                  variant: "body-sm/normal",
                   color: "text-default",
                   style: tryAgainLink.tryAgainLink,
                   onPress() {
@@ -86,7 +86,7 @@ function StatefulOrbChallengesCard(reopenWallet) {
                 return closure_2_11(reopenWallet(orbWalletAnalyticsPage[17]).Text, obj);
               }
         };
-        stringResult = intl2.format(_modDef2172.ggLzeg, obj2);
+        stringResult = intl2.format(_modDef2298.ggLzeg, obj2);
       }
       tmp2 = { type: "warning", message: stringResult, role: "status" };
       const obj3 = { type: "warning", message: stringResult, role: "status" };
@@ -138,7 +138,7 @@ function StatefulOrbChallengesCard(reopenWallet) {
       return tmp4;
     });
   }, items4);
-  const obj6 = { title: intl.string(require("module_2172").H6Ny8N), isLoading: !hasFetchedChallenges, inlineNoticeProps: memo, challenges: memo1, onClaim: callback };
+  const obj6 = { title: intl.string(require("module_2298").H6Ny8N), isLoading: !hasFetchedChallenges, inlineNoticeProps: memo, challenges: memo1, onClaim: callback };
   const OrbChallengesCard = reopenWallet(orbWalletAnalyticsPage[20]).OrbChallengesCard;
   intl = reopenWallet(orbWalletAnalyticsPage[15]).intl;
   return closure_11(OrbChallengesCard, obj6);
@@ -212,6 +212,7 @@ let closure_13 = createStyles(obj);
 class OrbWalletActionSheet {
   constructor(source) {
     let AnalyticsLocationsProvider;
+    let BottomSheet;
     let Provider;
     let obj2;
     let obj3;

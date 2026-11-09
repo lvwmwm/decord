@@ -1,12 +1,12 @@
-// Module ID: 10825
-// Function ID: 10826
+// Module ID: 10944
+// Function ID: 10945
 // Name: InstantInviteUsesLabel
-// Dependencies: [19, 21, 5624, 2]
+// Dependencies: [19, 21, 5751, 2]
 // Exports: default
 
-// Module 10825 (InstantInviteUsesLabel)
+// Module 10944 (InstantInviteUsesLabel)
 import Fragment from "Fragment" /* 21 */;
-import Text_Text from "Text/Text" /* 5624 */;
+import Text_Text from "Text/Text" /* 5751 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -24,5 +24,5 @@ export default function InstantInviteUsesLabel(style) {
     combined = "" + uses + "/" + maxUses;
   }
   const items = ["Uses: ", combined];
-  return jsxs(Text_Text.Text, { variant: "text-md/semibold", color: "text-default", style, children: items });
+  return jsxs(Text_Text.Text, { variant: "body-md/semibold", color: "text-default", style, children: items });
 };

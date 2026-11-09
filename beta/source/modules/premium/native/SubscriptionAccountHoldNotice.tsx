@@ -1,18 +1,18 @@
-// Module ID: 15273
-// Function ID: 15274
+// Module ID: 15559
+// Function ID: 15560
 // Name: SubscriptionAccountHoldNotice
-// Dependencies: [19, 17, 1072, 21, 5014, 575, 1187, 15274, 5624, 1113, 2047, 5634, 2]
+// Dependencies: [19, 17, 1072, 21, 5140, 575, 1187, 15560, 5751, 1113, 2171, 5758, 2]
 // Exports: default
 
-// Module 15273 (SubscriptionAccountHoldNotice)
+// Module 15559 (SubscriptionAccountHoldNotice)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import PremiumUtils from "PremiumUtils" /* 2047 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15274 */;
+import PremiumUtils from "PremiumUtils" /* 2171 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15560 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -45,13 +45,13 @@ export default function SubscriptionAccountHoldNotice(subscription) {
     const obj3 = { size: subscription(1187).IconSizes.MEDIUM, style: tmp.icon, source: AssetRegistryDefault };
     const Icon = subscription(1187).Icon;
     items = [closure_6(Icon, obj3), ];
-    const obj4 = { style: tmp.text, variant: "text-sm/medium", children: format(v7I21Iz, obj5) };
-    const Text = subscription(5624).Text;
+    const obj4 = { style: tmp.text, variant: "body-sm/medium", children: format(v7I21Iz, obj5) };
+    const Text = subscription(5751).Text;
     const intl = subscription(1113).intl;
     format = intl.format;
     obj5 = { endDate: subscription.currentPeriodEnd, planDescription: obj6.getDisplayName(subscription.planId) };
     v7I21Iz = subscription(1113).t["7I21Iz"];
-    obj6 = subscription(2047);
+    obj6 = subscription(2171);
     items[1] = closure_6(Text, obj4);
     items1 = [closure_7(closure_4, obj2), ];
     const obj7 = {
@@ -63,7 +63,7 @@ export default function SubscriptionAccountHoldNotice(subscription) {
           return c3(obj.getExternalSubscriptionMethodUrl(subscription.paymentGateway, "PAYMENT_SOURCE_MANAGEMENT"));
         }
     };
-    const Button = subscription(5634).Button;
+    const Button = subscription(5758).Button;
     intl2 = subscription(1113).intl;
     items1[1] = closure_6(Button, obj7);
     tmp2 = closure_7(closure_4, obj);

@@ -1,9 +1,9 @@
-// Module ID: 6798
-// Function ID: 6799
+// Module ID: 6853
+// Function ID: 6854
 // Name: TopEmojiStore
 // Dependencies: [504, 572, 2]
 
-// Module 6798 (TopEmojiStore)
+// Module 6853 (TopEmojiStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;

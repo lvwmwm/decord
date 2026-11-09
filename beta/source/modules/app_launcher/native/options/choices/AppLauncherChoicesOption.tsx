@@ -1,18 +1,18 @@
-// Module ID: 12496
-// Function ID: 12497
+// Module ID: 12699
+// Function ID: 12700
 // Name: AppLauncherChoicesOption
-// Dependencies: [32, 19, 21, 5014, 575, 1888, 5258, 12497, 1994, 12501, 8177, 5624, 6984, 2]
+// Dependencies: [32, 19, 21, 5140, 575, 2017, 5374, 12700, 2118, 12704, 8246, 5751, 7047, 2]
 // Exports: default
 
-// Module 12496 (AppLauncherChoicesOption)
+// Module 12699 (AppLauncherChoicesOption)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1888 */;
-import asyncRequire from "asyncRequire" /* 1994 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
+import KeyboardManagerUtils from "KeyboardManagerUtils" /* 2017 */;
+import asyncRequire from "asyncRequire" /* 2118 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -84,7 +84,7 @@ export default function AppLauncherChoicesOption(option) {
     };
     index = undefined;
     ActionSheetActionCreatorsDefault;
-    const tmp4 = asyncRequire(12497, dependencyMap.paths);
+    const tmp4 = asyncRequire(12700, dependencyMap.paths);
     if (first != null) {
       index = first.index;
     }
@@ -94,10 +94,10 @@ export default function AppLauncherChoicesOption(option) {
   const animationDelayedAutoFocus = obj.useAnimationDelayedAutoFocus(autoFocus, callback);
   let obj2 = { start: true, end: true, style: tmp.container, hasError, label: first(Text, obj3), subLabel: tmp10Result, trailing: first(option(onSelect[12]).TableRowArrow, {}), onPress: callback };
   const FormRow = option(onSelect[10]).FormRow;
-  let str = "text-sm/medium";
+  let str = "body-sm/medium";
   Text = option(onSelect[11]).Text;
   if (null == first) {
-    str = "text-md/medium";
+    str = "body-md/medium";
   }
   obj3 = { variant: str, color: str2, lineClamp: 1, children: option.displayName };
   str2 = "interactive-text-default";
@@ -106,7 +106,7 @@ export default function AppLauncherChoicesOption(option) {
   }
   tmp10Result = null;
   if (null != first) {
-    const obj4 = { variant: "text-md/medium", color: "text-default", lineClamp: 1, children: first.choice.displayName };
+    const obj4 = { variant: "body-md/medium", color: "text-default", lineClamp: 1, children: first.choice.displayName };
     tmp10Result = tmp10(tmp7(tmp8[11]).Text, obj4);
   }
   return first(FormRow, obj2);

@@ -1,18 +1,18 @@
-// Module ID: 7376
-// Function ID: 7377
+// Module ID: 7436
+// Function ID: 7437
 // Name: UserProfileCard
-// Dependencies: [19, 17, 7377, 21, 5014, 575, 6980, 5624, 7378, 2]
+// Dependencies: [19, 17, 7437, 21, 5140, 575, 7043, 5751, 7438, 2]
 // Exports: UserProfileCardRows, UserProfileFormRow, default
 
-// Module 7376 (UserProfileCard)
+// Module 7436 (UserProfileCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import Pressables from "Pressables" /* 6980 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import Pressables from "Pressables" /* 7043 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 7377 */;
+import Constants from "Constants" /* 7437 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let CARD_ROWS_COLUMN_GAP;
@@ -24,7 +24,7 @@ let metroRequire;
 let obj2;
 let obj3;
 let tmp3;
-const ChevronSmallRightIcon = tmp3(7378);
+const ChevronSmallRightIcon = tmp3(7438);
 const View = react_native.View;
 ({ CARD_ROWS_COLUMN_GAP, CARD_ROWS_ICON_SIZE, CARD_ROWS_ICON_SIZE_VARIANT: closure_4 } = Constants);
 ({ jsx: hasOwnProperty, jsxs: metroRequire, Fragment: metroImportDefault } = Fragment);
@@ -62,7 +62,7 @@ export default function UserProfileCard(arg0) {
     if (tmp3Result) {
       const obj3 = { style: tmp2.titleContent, children: items1 };
       items1 = [titleLeadingIcon, , ];
-      const obj4 = { style: tmp2.text, accessibilityRole: "header", variant: "text-sm/medium", color: "text-strong", lineClamp: 1, children: title };
+      const obj4 = { style: tmp2.text, accessibilityRole: "header", variant: "body-sm/medium", color: "text-strong", lineClamp: 1, children: title };
       items1[1] = hasOwnProperty(Text_Text.Text, obj4);
       items1[2] = titleIcon;
       tmp3Result = tmp3(tmp4, obj3);
@@ -110,7 +110,7 @@ export function UserProfileFormRow(arg0) {
   if (labelColor == null) {
     labelColor = str2;
   }
-  const obj4 = { variant: "text-md/semibold", color: labelColor, style: tmp.rowLabelText, children: label };
+  const obj4 = { variant: "body-md/semibold", color: labelColor, style: tmp.rowLabelText, children: label };
   items[1] = hasOwnProperty(Text, obj4);
   let tmp6Result = null != hint;
   if (tmp6Result) {

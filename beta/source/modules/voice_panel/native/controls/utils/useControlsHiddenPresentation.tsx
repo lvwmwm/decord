@@ -1,84 +1,107 @@
-// Module ID: 19299
-// Function ID: 19300
+// Module ID: 19704
+// Function ID: 19705
 // Name: useControlsHiddenPresentation
-// Dependencies: [11223, 5080, 5095, 5637, 2]
+// Dependencies: [11363, 5199, 1652, 5761, 1705, 2]
 // Exports: default
 
-// Module 19299 (useControlsHiddenPresentation)
-import spring from "spring" /* 5637 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11223 */;
+// Module 19704 (useControlsHiddenPresentation)
+import _mod1652 from "module_1652" /* 1652 */;
+import native from "native" /* 5199 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11363 */;
 import size from "module_2" /* 2 */;
 
-const require = globalThis.__r;
-let _require, dependencyMap, num, tmp2, tmp3;
-
+let tmp;
+const _mod1705 = tmp(1705);
+const spring_spring = tmp(5761);
 const VoicePanelModes = VoicePanelConstants.VoicePanelModes;
 let obj = { overshootClamping: true };
 const merged = Object.assign(VoicePanelConstants.MODE_CHANGE_PHYSICS);
-const __initData = { code: "function useControlsHiddenPresentationTsx1(){const{yeeted,mode,VoicePanelModes,wrapperSpecs}=this.__closure;return{pointerEvents:yeeted||mode.get()!==VoicePanelModes.PANEL||wrapperSpecs.get().hidden?'none':'auto'};}" };
-const __initData2 = { code: "function useControlsHiddenPresentationTsx2(){const{withSpring,yeeted,wrapperSpecs,HIDDEN_OPACITY_PHYSICS,cleanUp,runOnJS}=this.__closure;return{opacity:withSpring(yeeted||wrapperSpecs.get().hidden?0:1,HIDDEN_OPACITY_PHYSICS,'respect-motion-settings',cleanUp!=null?function(finished){if(finished&&yeeted){runOnJS(cleanUp)();}}:undefined)};}" };
+let closure_4 = { code: "(function useControlsHiddenPresentationTsx1(){let[yeeted,mode,VoicePanelModes,wrapperSpecs]=this.__closure;return{pointerEvents:yeeted||mode.get()!==VoicePanelModes.PANEL||wrapperSpecs.get().hidden?'none':'auto'};})" };
+let closure_5 = { code: "(function useControlsHiddenPresentationTsx2(){let[withSpring,yeeted,wrapperSpecs,HIDDEN_OPACITY_PHYSICS,cleanUp,scheduleOnRN]=this.__closure;return{opacity:withSpring(yeeted||wrapperSpecs.get().hidden?0:1,HIDDEN_OPACITY_PHYSICS,'respect-motion-settings',cleanUp!=null?function(finished){if(finished&&yeeted){scheduleOnRN(cleanUp);}}:undefined)};})" };
 const result = size.fileFinishedImporting("modules/voice_panel/native/controls/utils/useControlsHiddenPresentation.tsx");
 
-export default function useControlsHiddenPresentation(mode, wrapperSpecs) {
-  let closure_3;
-  let fn;
-  let obj3;
-  let obj5;
-  _require = mode;
-  dependencyMap = wrapperSpecs;
-  let obj = arg2;
+export default function useControlsHiddenPresentation(arg0, arg1) {
+  let cleanUp;
+  let state;
+  let tmp11;
+  let tmp12;
+  let tmp13;
+  let tmp14;
+  let tmp15;
+  let tmp16;
+  let tmp17;
+  let tmp4;
+  let tmp5;
+  let tmp6;
+  let tmp7;
+  let tmp8;
+  obj = arg2;
   if (arg2 === undefined) {
     obj = {};
   }
-  const cleanUp = obj.cleanUp;
-  let tmp = obj.state === require("native").TransitionStates.YEETED;
-  HIDDEN_OPACITY_PHYSICS = tmp;
-  const obj2 = { hiddenProps: obj3.useAnimatedProps(fn), hiddenStyles: obj5.useAnimatedStyle(S) };
-  fn = function _() {
-    const tmp = closure_3;
+  let tmp = require;
+  ({ state, cleanUp } = obj);
+  let tmp3 = state === native.TransitionStates.YEETED;
+  const items = [closure_4, tmp3, arg0, VoicePanelModes, arg1];
+  [tmp4, tmp5, tmp6, tmp7, tmp8] = items;
+  function useControlsHiddenPresentationTsx1() {
+    const tmp = c0;
     if (!tmp) {
       let str;
-      if (mode.get() === VoicePanelModes.PANEL) {
+      if (_undefined.get() === _undefined2.PANEL) {
         str = "auto";
       }
       return { pointerEvents: str };
     }
     str = "none";
-  };
-  const obj4 = { yeeted: tmp, mode, VoicePanelModes: cleanUp, wrapperSpecs };
-  fn.__closure = obj4;
-  fn.__workletHash = 2182108251011;
-  fn.__initData = __initData;
-  obj3 = require("ReanimatedRexport");
-  obj5 = require("ReanimatedRexport");
-  class S {
-    constructor() {
-      tmp = closure_0(closure_1[3]);
-      withSpring = tmp.withSpring;
-      if (closure_3) {
-        num = 0;
-      } else {
-        tmp2 = closure_1;
-        num = 1;
-      }
-      tmp3 = closure_3;
-      fn = undefined;
-      if (null != cleanUp) {
-        fn = (arg0) => {
-          const tmp = arg0 && closure_1_3;
-          if (tmp) {
-            const obj = mode(wrapperSpecs[2]);
-            obj.runOnJS(cleanUp)();
-          }
-        };
-      }
-      obj = { opacity: withSpring(num, tmp3, "respect-motion-settings", fn) };
-      return obj;
-    }
   }
-  S.__closure = { withSpring: require("spring").withSpring, yeeted: tmp, wrapperSpecs, HIDDEN_OPACITY_PHYSICS, cleanUp, runOnJS: require("ReanimatedRexport").runOnJS };
-  S.__workletHash = 13662769817707;
-  S.__initData = __initData2;
-  ({ withSpring: require("spring").withSpring, yeeted: tmp, wrapperSpecs, HIDDEN_OPACITY_PHYSICS, cleanUp, runOnJS: require("ReanimatedRexport").runOnJS });
-  return obj2;
+  const items1 = [tmp5, tmp6, tmp7, tmp8];
+  useControlsHiddenPresentationTsx1.__closure = items1;
+  useControlsHiddenPresentationTsx1.__workletHash = 10191676178362;
+  useControlsHiddenPresentationTsx1.__initData = tmp4;
+  const obj2 = _mod1652;
+  const animatedProps = obj2.useAnimatedProps(useControlsHiddenPresentationTsx1);
+  const items2 = [closure_5, , , , , , ];
+  const useAnimatedStyle = _mod1652.useAnimatedStyle;
+  _mod1652;
+  items2[1] = spring_spring.withSpring;
+  items2[2] = tmp3;
+  items2[3] = arg1;
+  items2[4] = obj;
+  items2[5] = cleanUp;
+  items2[6] = _mod1705.scheduleOnRN;
+  let c0;
+  let c1;
+  let c2;
+  let c3;
+  let c4;
+  let c5;
+  [tmp11, tmp12, tmp13, tmp14, tmp15, tmp16, tmp17] = items2;
+  function useControlsHiddenPresentationTsx2() {
+    let num;
+    let tmp = c0;
+    if (c1) {
+      num = 0;
+    } else {
+      num = 1;
+    }
+    let fn;
+    const tmp3 = c3;
+    if (null != c4) {
+      fn = (arg0) => {
+        const tmp = arg0 && closure_1_1;
+        if (tmp) {
+          closure_1_5(closure_1_4);
+        }
+      };
+    }
+    obj = { opacity: tmp(num, tmp3, "respect-motion-settings", fn) };
+    return obj;
+  }
+  const items3 = [tmp12, tmp13, tmp14, tmp15, tmp16, tmp17];
+  useControlsHiddenPresentationTsx2.__closure = items3;
+  useControlsHiddenPresentationTsx2.__workletHash = 14159877281811;
+  useControlsHiddenPresentationTsx2.__initData = tmp11;
+  const obj3 = { hiddenProps: animatedProps, hiddenStyles: useAnimatedStyle(useControlsHiddenPresentationTsx2) };
+  return obj3;
 };

@@ -1,24 +1,24 @@
-// Module ID: 19799
-// Function ID: 19800
+// Module ID: 20209
+// Function ID: 20210
 // Name: GuildSettingsRoleMembers
-// Dependencies: [32, 19, 17, 7298, 1072, 21, 5014, 575, 5712, 1113, 19777, 7482, 504, 5958, 9074, 1187, 1252, 5258, 19778, 1994, 10819, 8028, 7092, 7218, 5735, 5624, 6975, 11489, 2]
+// Dependencies: [32, 19, 17, 7361, 1072, 21, 5140, 575, 5837, 1113, 20187, 7546, 504, 6090, 9154, 1187, 1252, 5374, 20188, 2118, 10938, 8098, 7158, 7282, 5859, 5751, 7038, 11634, 2]
 // Exports: default
 
-// Module 19799 (GuildSettingsRoleMembers)
+// Module 20209 (GuildSettingsRoleMembers)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl5 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import asyncRequire from "asyncRequire" /* 1994 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5712 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9074 */;
+import asyncRequire from "asyncRequire" /* 2118 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5837 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9154 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildRoleMemberCountStore from "GuildRoleMemberCountStore" /* 7298 */;
+import GuildRoleMemberCountStore from "GuildRoleMemberCountStore" /* 7361 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let item;
@@ -45,7 +45,7 @@ let obj = { container: obj2, containerSearchBar: obj3, missingMembers: obj4, mis
 obj2 = { paddingHorizontal: nativeDefault.space.PX_12, flex: 1 };
 createStyles = createStyles.createStyles;
 obj3 = { paddingBottom: nativeDefault.space.PX_12 };
-obj4 = { borderRadius: nativeDefault.radii.md, borderWidth: 1, borderColor: nativeDefault.colors.ICON_FEEDBACK_INFO, backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_INFO, marginBottom: nativeDefault.space.PX_16, padding: nativeDefault.space.PX_8, flexDirection: "row", alignItems: "center" };
+obj4 = { borderRadius: nativeDefault.radii.md, borderWidth: 1, borderColor: nativeDefault.colors.ICON_FEEDBACK_INFO, backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_MOD_INFO, marginBottom: nativeDefault.space.PX_16, padding: nativeDefault.space.PX_8, flexDirection: "row", alignItems: "center" };
 obj5 = { marginLeft: nativeDefault.space.PX_8, flex: 1 };
 let closure_10 = createStyles(obj);
 const result = size.fileFinishedImporting("modules/guild_settings/roles/native/GuildSettingsRoleMembers.tsx");
@@ -147,7 +147,7 @@ export default function GuildSettingsRoleMembers(guild) {
     const openLazy = ActionSheetActionCreatorsDefault.openLazy;
     ActionSheetActionCreatorsDefault;
     const obj2 = { guild, role };
-    const tmp3 = asyncRequire(19778, dependencyMap.paths);
+    const tmp3 = asyncRequire(20188, dependencyMap.paths);
     openLazy(tmp3, "role-add-members-" + guild.id + "-" + role.id, obj2);
   }, items3);
   closure_6 = found.useCallback((item) => {
@@ -190,7 +190,7 @@ export default function GuildSettingsRoleMembers(guild) {
     const obj10 = { color: role(locked[7]).colors.TEXT_LINK, size: "md" };
     const CircleInformationIcon = tmp5(tmp6[24]).CircleInformationIcon;
     items6 = [closure_8(CircleInformationIcon, obj10), ];
-    const obj11 = { style: tmp.missingMembersText, variant: "text-sm/medium", children: intl.string(guild(locked[9]).t.RQxHZ8) };
+    const obj11 = { style: tmp.missingMembersText, variant: "body-sm/medium", children: intl.string(guild(locked[9]).t.RQxHZ8) };
     const Text = tmp5(tmp6[25]).Text;
     intl = tmp5(tmp6[9]).intl;
     items6[1] = closure_8(Text, obj11);

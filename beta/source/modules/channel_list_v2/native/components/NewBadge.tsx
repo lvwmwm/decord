@@ -1,24 +1,24 @@
-// Module ID: 13844
-// Function ID: 13845
+// Module ID: 14078
+// Function ID: 14079
 // Name: NewBadge
-// Dependencies: [19, 17, 21, 5014, 1375, 575, 5021, 9822, 5253, 5624, 1113, 2]
+// Dependencies: [19, 17, 21, 5140, 1377, 575, 5147, 9912, 5369, 5751, 1113, 2]
 // Exports: default
 
-// Module 13844 (NewBadge)
+// Module 14078 (NewBadge)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import PlatformUtils from "PlatformUtils" /* 1375 */;
-import useThemeDefault from "useTheme" /* 5253 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 9822 */;
+import PlatformUtils from "PlatformUtils" /* 1377 */;
+import useThemeDefault from "useTheme" /* 5369 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 9912 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const shared = tmp(5021);
+const shared = tmp(5147);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let closure_5 = createStyles.createStyles((arg0, arg1) => {
@@ -27,7 +27,7 @@ let closure_5 = createStyles.createStyles((arg0, arg1) => {
   if (obj.isIOS()) {
     num = 1;
   }
-  const obj2 = { text: { textAlign: "center", textTransform: "uppercase", marginTop: num }, base: null };
+  const obj2 = { text: { textAlign: "center", marginTop: num }, base: null };
   const obj3 = { flexDirection: "row", alignItems: "center", justifyContent: "center", borderRadius: nativeDefault.radii.round, paddingHorizontal: 6, paddingVertical: 3, backgroundColor: null };
   const tmpResult = shared;
   if (tmpResult.isThemeLight(arg1)) {
@@ -45,12 +45,12 @@ let closure_5 = createStyles.createStyles((arg0, arg1) => {
 const result = size.fileFinishedImporting("modules/channel_list_v2/native/components/NewBadge.tsx");
 
 export default function NewBadge() {
-  let intl;
   let str;
+  let stringResult;
   const tmp2 = useIsUsingClientThemeDefault();
   const tmp3 = useThemeDefault();
   const tmp4 = closure_5(tmp2, tmp3);
-  ({ variant: "text-xxs/bold", style: tmp4.text, color: str, children: intl.string(intl2.t.y2b7CA) });
+  ({ variant: "footnote/semibold", style: tmp4.text, color: str, children: stringResult.toLocaleUpperCase(intl2.intl.currentLocale) });
   const Text = Text_Text.Text;
   const obj3 = shared;
   if (obj3.isThemeLight(tmp3)) {
@@ -58,6 +58,7 @@ export default function NewBadge() {
   } else {
     str = "text-brand";
   }
-  intl = tmp7(1113).intl;
+  const intl = tmp7(1113).intl;
+  stringResult = intl.string(intl2.t.y2b7CA);
   return <tmp6 style={tmp4.base}>{null}</tmp6>;
 };

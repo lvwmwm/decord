@@ -1,10 +1,10 @@
-// Module ID: 4876
-// Function ID: 4877
+// Module ID: 5002
+// Function ID: 5003
 // Name: FavoritesConstants
-// Dependencies: [4877, 2]
+// Dependencies: [5003, 2]
 
-// Module 4876 (FavoritesConstants)
-import GuildRecordUtils from "GuildRecordUtils" /* 4877 */;
+// Module 5002 (FavoritesConstants)
+import GuildRecordUtils from "GuildRecordUtils" /* 5003 */;
 import size from "module_2" /* 2 */;
 
 const constructFromPartialGuildRecord = GuildRecordUtils.constructFromPartialGuildRecord;
@@ -20,3 +20,10 @@ export const MAX_FAVORITE_CHANNELS = 200;
 export const MAX_FAVORITES_ADD_CHANNEL_COUNT = 20;
 export const MAX_FAVORITE_CATEGORY_NAME_LENGTH = 100;
 export const FAVORITES_AUTO_ADDED_THREADS_CATEGORY_NAME = "Auto-Added Threads";
+export const FAVORITES_AUTO_ADD_THREADS_PER_GUILD = "per-guild";
+export const FAVORITES_AUTO_ADD_THREADS_OWN_CATEGORY = "own-category";
+export const FAVORITES_AUTO_ADD_THREADS_NEVER = "never";
+export const FAVORITES_PRUNE_WHEN_ARCHIVED = 0;
+export const FAVORITES_PRUNE_INACTIVE_THREADS_DAY_OPTIONS = [0, 7, 14];
+export const FAVORITES_PRUNE_SCOPE_AUTO_ADDED = "auto-added";
+export const FAVORITES_PRUNE_SCOPE_ALL = "all";

@@ -1,16 +1,16 @@
-// Module ID: 10604
-// Function ID: 10605
+// Module ID: 10725
+// Function ID: 10726
 // Name: useFetchCollectiblesCategoriesAndPurchases
-// Dependencies: [32, 19, 5238, 7735, 563, 7719, 10605, 2]
+// Dependencies: [32, 19, 5354, 7811, 563, 7795, 10726, 2]
 // Exports: useGetOrFetchCollectiblesCategoriesAndPurchases, useGetOrFetchPurchase, useGetOrFetchPurchases
 
-// Module 10604 (useFetchCollectiblesCategoriesAndPurchases)
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7719 */;
-import useMaybeFetchCollectiblesCategoriesDefault from "useMaybeFetchCollectiblesCategories" /* 10605 */;
+// Module 10725 (useFetchCollectiblesCategoriesAndPurchases)
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7795 */;
+import useMaybeFetchCollectiblesCategoriesDefault from "useMaybeFetchCollectiblesCategories" /* 10726 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ExperimentStore from "ExperimentStore" /* 5238 */;
-import CollectiblesPurchaseStore_mod from "CollectiblesPurchaseStore" /* 7735 */;
+import ExperimentStore from "ExperimentStore" /* 5354 */;
+import CollectiblesPurchaseStore_mod from "CollectiblesPurchaseStore" /* 7811 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;

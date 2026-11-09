@@ -1,19 +1,19 @@
-// Module ID: 16821
-// Function ID: 16822
+// Module ID: 17144
+// Function ID: 17145
 // Name: FamilyCenterRequestorDetails
-// Dependencies: [19, 17, 21, 5014, 1187, 575, 8369, 16791, 5624, 2]
+// Dependencies: [19, 17, 21, 5140, 1187, 575, 8440, 17114, 5751, 2]
 // Exports: default
 
-// Module 16821 (FamilyCenterRequestorDetails)
+// Module 17144 (FamilyCenterRequestorDetails)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import useUserLinks from "useUserLinks" /* 8369 */;
-import FamilyCenterUsernameHeaderDefault from "FamilyCenterUsernameHeader" /* 16791 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import useUserLinks from "useUserLinks" /* 8440 */;
+import FamilyCenterUsernameHeaderDefault from "FamilyCenterUsernameHeader" /* 17114 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -42,7 +42,7 @@ export default function FamilyCenterRequestorDetails(otherUser) {
   const obj3 = { avatarStyle: tmp.avatar, user: otherUser, guildId: "HermesInternal", disablePlaceholder: null, avatarDecoration: otherUser.avatarDecoration };
   items = [React3(native.Avatar, obj3), ];
   const obj4 = { style: tmp.detailsContainer, children: items1 };
-  items1 = [React3(FamilyCenterUsernameHeaderDefault, { user: otherUser }), React3(Text_Text.Text, { variant: "text-xs/semibold", color: "text-muted", children: linkTimestampText })];
+  items1 = [React3(FamilyCenterUsernameHeaderDefault, { user: otherUser }), React3(Text_Text.Text, { variant: "body-xs/semibold", color: "text-muted", children: linkTimestampText })];
   items[1] = hasOwnProperty(View, obj4);
   return hasOwnProperty(View, obj2);
 };

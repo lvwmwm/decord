@@ -1,18 +1,19 @@
-// Module ID: 13693
-// Function ID: 13694
+// Module ID: 13921
+// Function ID: 13922
 // Name: useTraitPickerSelection
-// Dependencies: [19, 13436, 6434, 6111, 6174, 504, 2]
+// Dependencies: [19, 13668, 6566, 6243, 6306, 504, 13666, 2]
 // Exports: useTraitPickerSelection
 
-// Module 13693 (useTraitPickerSelection)
-import CheckpointCharacterTraits from "CheckpointCharacterTraits" /* 6111 */;
-import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6434 */;
+// Module 13921 (useTraitPickerSelection)
+import CheckpointCharacterTraits from "CheckpointCharacterTraits" /* 6243 */;
+import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6566 */;
+import Tracking from "Tracking" /* 13666 */;
 import react_mod from "react" /* 19 */;
-import CheckpointStore from "CheckpointStore" /* 13436 */;
+import CheckpointStore from "CheckpointStore" /* 13668 */;
 import size from "module_2" /* 2 */;
 
 let react = react_mod;
-const result = size.fileFinishedImporting("modules/checkpoint/hooks/useTraitPickerSelection.tsx");
+let result = size.fileFinishedImporting("modules/checkpoint/hooks/useTraitPickerSelection.tsx");
 
 export function useTraitPickerSelection(customizationOption) {
   let closure_2;
@@ -59,9 +60,11 @@ export function useTraitPickerSelection(customizationOption) {
   selectedOptionId = stateFromStoresObject.selectedOptionId;
   const items1 = [onSelectOption, selectedOptionId];
   const savedOptionId = stateFromStoresObject.savedOptionId;
-  const onSelectOption1 = react.useCallback((arg0, arg1) => {
-    if (arg1 !== selectedOptionId) {
-      onSelectOption(arg0, arg1);
+  const onSelectOption1 = react.useCallback((trait_type, option_id) => {
+    if (option_id !== selectedOptionId) {
+      const obj = Tracking;
+      const result = obj.trackCheckpoint2026CharacterChoiceSelected(trait_type, option_id);
+      onSelectOption(trait_type, option_id);
     }
   }, items1);
   if (customizationOption(onSelectOption[2]).CheckpointCustomizationOption.OUTFIT === customizationOption) {

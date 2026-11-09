@@ -1,25 +1,25 @@
-// Module ID: 14351
-// Function ID: 14352
+// Module ID: 14587
+// Function ID: 14588
 // Name: HubEmailConnectionGuildSelect
-// Dependencies: [5, 32, 19, 17, 14329, 21, 5014, 575, 8177, 6957, 4877, 5624, 1113, 1625, 5634, 1187, 1497, 7558, 7219, 14342, 6446, 14337, 7294, 2]
+// Dependencies: [5, 32, 19, 17, 14565, 21, 5140, 575, 8246, 7020, 5003, 5751, 1113, 1627, 5758, 1187, 1499, 7630, 7283, 14578, 6579, 14573, 7357, 2]
 // Exports: default
 
-// Module 14351 (HubEmailConnectionGuildSelect)
+// Module 14587 (HubEmailConnectionGuildSelect)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1625 */;
-import GuildRecordUtils from "GuildRecordUtils" /* 4877 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import components_Button_Button from "components/Button/Button" /* 5634 */;
-import GuildIconDefault from "GuildIcon" /* 6957 */;
-import _mod8177 from "module_8177" /* 8177 */;
-import HubConstants from "HubConstants" /* 14329 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
+import GuildRecordUtils from "GuildRecordUtils" /* 5003 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import components_Button_Button from "components/Button/Button" /* 5758 */;
+import GuildIconDefault from "GuildIcon" /* 7020 */;
+import _mod8246 from "module_8246" /* 8246 */;
+import HubConstants from "HubConstants" /* 14565 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5, closure_2, navigation;
@@ -43,8 +43,8 @@ class HubEmailConnectionGuildSelectRow {
     guildInfo = guildInfo.guildInfo;
     ({ signup, loading } = guildInfo);
     const tmp = closure_10();
-    const obj = { onPress: signup, disabled: loading, DEPRECATED_style: tmp.rowContainer, label: guildInfo.name, leading: metroImportAll(tmp2, obj2), trailing: metroImportAll(_mod8177.FormRow.Arrow, {}) };
-    const FormRow = _mod8177.FormRow;
+    const obj = { onPress: signup, disabled: loading, DEPRECATED_style: tmp.rowContainer, label: guildInfo.name, leading: metroImportAll(tmp2, obj2), trailing: metroImportAll(_mod8246.FormRow.Arrow, {}) };
+    const FormRow = _mod8246.FormRow;
     obj2 = { style: tmp.guildIcon, guild: fromGuildBasic(obj3) };
     obj3 = { features: [] };
     tmp2 = GuildIconDefault;
@@ -60,14 +60,13 @@ function HubEmailConnectionGuildSelectHeader() {
   let obj2;
   const tmp = closure_10();
   const obj = { style: tmp.header, children: metroImportAll(Text, obj2) };
-  obj2 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl.string(intl2.t.mOMeiR) };
+  obj2 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: intl.string(intl2.t.mOMeiR) };
   Text = Text_Text.Text;
   intl = intl2.intl;
   return metroImportAll(View, obj);
 }
 function HubEmailConnectionGuildSelectFooter(onFooterButtonPressed) {
   let anyErrorMessage;
-  let errors;
   let intl;
   let items;
   let items1;
@@ -183,7 +182,7 @@ export default function HubEmailConnectionGuildSelect(onClose) {
               const obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           } else {
             let c3;
@@ -238,7 +237,7 @@ export default function HubEmailConnectionGuildSelect(onClose) {
                 c3 = 0;
                 constants(false);
                 c5 = 3;
-                return { value: "HermesInternal", done: "HermesInternal" };
+                return { value: "HermesInternal", done: null };
               }
             } catch (tmp42) {
               closure_2 = tmp42;

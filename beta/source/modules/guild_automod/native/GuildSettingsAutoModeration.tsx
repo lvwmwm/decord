@@ -1,20 +1,20 @@
-// Module ID: 19666
-// Function ID: 19667
+// Module ID: 20076
+// Function ID: 20077
 // Name: GuildSettingsAutoModeration
-// Dependencies: [32, 19, 19667, 19669, 1072, 21, 5014, 575, 19671, 1113, 1497, 19676, 19684, 8177, 6027, 5624, 2061, 6953, 7060, 5606, 2]
+// Dependencies: [32, 19, 20077, 20079, 1072, 21, 5140, 575, 20081, 1113, 1499, 20086, 20094, 8246, 6159, 5751, 2185, 7015, 7126, 5734, 2]
 // Exports: default
 
-// Module 19666 (GuildSettingsAutoModeration)
+// Module 20076 (GuildSettingsAutoModeration)
 import nativeDefault from "native" /* 575 */;
-import TableRowGroup2 from "TableRowGroup" /* 7060 */;
-import GuildSettingsAutomodRuleStore from "GuildSettingsAutomodRuleStore" /* 19669 */;
-import AutomodTriggerConfigs from "AutomodTriggerConfigs" /* 19671 */;
+import TableRowGroup2 from "TableRowGroup" /* 7126 */;
+import GuildSettingsAutomodRuleStore from "GuildSettingsAutomodRuleStore" /* 20079 */;
+import AutomodTriggerConfigs from "AutomodTriggerConfigs" /* 20081 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AutomodStore from "AutomodStore" /* 19667 */;
+import AutomodStore from "AutomodStore" /* 20077 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -153,11 +153,11 @@ export default function GuildSettingsAutoModeration(guildId) {
   Stack = guildId(rulesByTriggerType[14]).Stack;
   const obj5 = { children: items };
   const Stack2 = guildId(rulesByTriggerType[14]).Stack;
-  const obj6 = { variant: "text-sm/normal", color: "text-default", children: intl.string(guildId(rulesByTriggerType[9]).t.EwuSCR) };
+  const obj6 = { variant: "body-sm/normal", color: "text-default", children: intl.string(guildId(rulesByTriggerType[9]).t.EwuSCR) };
   const Text = guildId(rulesByTriggerType[15]).Text;
   intl = guildId(rulesByTriggerType[9]).intl;
   items = [closure_9(Text, obj6), ];
-  const obj7 = { variant: "text-sm/normal", color: "text-default", children: format(prop, obj8) };
+  const obj7 = { variant: "body-sm/normal", color: "text-default", children: format(prop, obj8) };
   const Text2 = guildId(rulesByTriggerType[15]).Text;
   let intl2 = guildId(rulesByTriggerType[9]).intl;
   format = intl2.format;

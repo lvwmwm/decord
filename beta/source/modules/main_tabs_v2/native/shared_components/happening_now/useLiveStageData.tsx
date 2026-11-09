@@ -1,15 +1,15 @@
-// Module ID: 18126
-// Function ID: 18127
+// Module ID: 18468
+// Function ID: 18469
 // Name: useLiveStageData
-// Dependencies: [19, 6713, 4863, 563, 6759, 12, 2]
+// Dependencies: [19, 6768, 4989, 563, 6814, 12, 2]
 // Exports: useLiveStageData
 
-// Module 18126 (useLiveStageData)
+// Module 18468 (useLiveStageData)
 import _modDef12 from "module_12" /* 12 */;
-import StageChannelParticipants from "StageChannelParticipants" /* 6759 */;
+import StageChannelParticipants from "StageChannelParticipants" /* 6814 */;
 import react from "react" /* 19 */;
-import StageChannelParticipantStore from "StageChannelParticipantStore" /* 6713 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
+import StageChannelParticipantStore from "StageChannelParticipantStore" /* 6768 */;
+import ChannelStore from "ChannelStore" /* 4989 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

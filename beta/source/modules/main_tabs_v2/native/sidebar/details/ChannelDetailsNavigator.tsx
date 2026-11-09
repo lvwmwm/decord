@@ -1,23 +1,23 @@
-// Module ID: 18881
-// Function ID: 18882
+// Module ID: 19256
+// Function ID: 19257
 // Name: ChannelDetailsNavigator
-// Dependencies: [19, 17, 4863, 10137, 1072, 18703, 21, 9856, 563, 7443, 14012, 9812, 1113, 14386, 1252, 8199, 18882, 7169, 7004, 5199, 1625, 18942, 1375, 18943, 18944, 9867, 9868, 9889, 18945, 18946, 18784, 2]
+// Dependencies: [19, 17, 4989, 10258, 1072, 19066, 21, 9976, 563, 7507, 14251, 9902, 1113, 14622, 1252, 8268, 19257, 7231, 7070, 5315, 19317, 1377, 19318, 19319, 9987, 9988, 10011, 19320, 19321, 19147, 19219, 2]
 
-// Module 18881 (ChannelDetailsNavigator)
+// Module 19256 (ChannelDetailsNavigator)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import HeaderShared from "HeaderShared" /* 9812 */;
-import ChannelDetailsConstants from "ChannelDetailsConstants" /* 10137 */;
-import navigateToThreadCreation from "navigateToThreadCreation" /* 14012 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14386 */;
-import SearchNavigatorConstants from "SearchNavigatorConstants" /* 18703 */;
-import ChannelSettingsModal from "ChannelSettingsModal" /* 18882 */;
+import HeaderShared from "HeaderShared" /* 9902 */;
+import ChannelDetailsConstants from "ChannelDetailsConstants" /* 10258 */;
+import navigateToThreadCreation from "navigateToThreadCreation" /* 14251 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14622 */;
+import SearchNavigatorConstants from "SearchNavigatorConstants" /* 19066 */;
+import ChannelSettingsModal from "ChannelSettingsModal" /* 19257 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
+import ChannelStore from "ChannelStore" /* 4989 */;
 import Fragment from "Fragment" /* 21 */;
-import NativeStackView from "NativeStackView" /* 9856 */;
+import NativeStackView from "NativeStackView" /* 9976 */;
 import size from "module_2" /* 2 */;
 
 let c10;
@@ -37,13 +37,13 @@ function ConnectedCreateThreadHeaderButton(channelId) {
 function CreateThreadHeaderButton(channel) {
   let intl;
   channel = channel.channel;
-  let obj = channel(7443);
+  let obj = channel(7507);
   [][0] = channel;
   const canStartThread = obj.useCanStartThread(channel);
   let tmp5 = null;
   if (canStartThread) {
     const obj2 = { accessibilityLabel: intl.string(channel(1113).t.rBIGBL), onPress: tmp4, source: AssetRegistryDefault };
-    const HeaderIconButton = tmp(9812).HeaderIconButton;
+    const HeaderIconButton = tmp(9902).HeaderIconButton;
     intl = tmp(1113).intl;
     tmp5 = closure_9(HeaderIconButton, obj2);
   }
@@ -62,7 +62,6 @@ const memoResult = react.memo(function ChannelDetailsNavigator(navigation) {
   let applicationId;
   let expandTopic;
   let items4;
-  let items5;
   let obj5;
   let obj6;
   let search;
@@ -135,23 +134,21 @@ const memoResult = react.memo(function ChannelDetailsNavigator(navigation) {
     }
     return tmp2;
   });
-  const rect = channelId(tmp5[20])();
-  const obj4 = { style: items4, children: closure_10(Navigator, obj5) };
-  items4 = [channelSettingsScreensStyles.container, { paddingLeft: rect.left, paddingRight: rect.right }];
+  const obj4 = { style: channelSettingsScreensStyles.container, children: closure_10(Navigator, obj5) };
   Navigator = Screen.Navigator;
-  obj5 = { id: "channel-details-navigator", screenOptions: obj6, initialRouteName: DETAILS, children: items5 };
+  obj5 = { id: "channel-details-navigator", screenOptions: obj6, initialRouteName: DETAILS, children: items4 };
   obj6 = { headerTitle: navigation(source[11]).renderGenericTitle, headerTitleAlign: "center" };
   let merged = Object.assign(accessibilityNativeStackOptions);
-  items5 = [, , , , , , ];
+  items4 = [, , , , , , ];
   const obj7 = {
     initialParams: { channelId, search, expandTopic },
     name: constants.DETAILS,
     options: { headerShown: false },
     getComponent() {
-      return navigation(source[21]).default;
+      return navigation(source[20]).default;
     }
   };
-  items5[0] = closure_9(Screen.Screen, obj7);
+  items4[0] = closure_9(Screen.Screen, obj7);
   const obj8 = {
     name: SearchNavigatorScreens.SEARCH_CHAT_PREVIEW,
     options(route) {
@@ -164,12 +161,12 @@ const memoResult = react.memo(function ChannelDetailsNavigator(navigation) {
           const renderHeader = route(source[11]).renderHeader;
           route(source[11]);
           const merged = Object.assign(arg0);
-          obj2 = route(source[22]);
+          obj2 = route(source[21]);
           return renderHeader(obj);
         },
         headerTitle() {
           const obj = { channelId: route.params.channelId };
-          return closure_2_9(channelId(source[23]), obj);
+          return closure_2_9(channelId(source[22]), obj);
         },
         headerLeft: obj2.getRenderBackImage(navigation)
       };
@@ -178,23 +175,23 @@ const memoResult = react.memo(function ChannelDetailsNavigator(navigation) {
       return obj;
     },
     getComponent() {
-      return navigation(source[24]).default;
+      return navigation(source[23]).default;
     }
   };
-  items5[1] = closure_9(Screen.Screen, obj8);
+  items4[1] = closure_9(Screen.Screen, obj8);
   const obj9 = {
-    name: navigation(source[25]).ConversationNavigatorScreens.FOCUS,
+    name: navigation(source[24]).ConversationNavigatorScreens.FOCUS,
     options(arg0) {
       let route;
       ({ route, navigation } = arg0);
-      const obj = navigation(source[26]);
+      const obj = navigation(source[25]);
       return obj.conversationNavigatorFocusHeaderOptions(route, navigation);
     },
     getComponent() {
-      return navigation(source[27]).default;
+      return navigation(source[26]).default;
     }
   };
-  items5[2] = closure_9(Screen.Screen, obj9);
+  items4[2] = closure_9(Screen.Screen, obj9);
   const obj10 = {
     name: constants.PINNED_MESSAGES,
     initialParams: { channelId },
@@ -215,10 +212,10 @@ const memoResult = react.memo(function ChannelDetailsNavigator(navigation) {
       return obj;
     },
     getComponent() {
-      return navigation(source[28]).default;
+      return navigation(source[27]).default;
     }
   };
-  items5[3] = closure_9(Screen.Screen, obj10);
+  items4[3] = closure_9(Screen.Screen, obj10);
   const obj11 = {
     initialParams: { channelId, applicationId },
     name: constants.MUTE,
@@ -239,10 +236,10 @@ const memoResult = react.memo(function ChannelDetailsNavigator(navigation) {
       return obj;
     },
     getComponent() {
-      return navigation(source[29]).default;
+      return navigation(source[28]).default;
     }
   };
-  items5[4] = closure_9(Screen.Screen, obj11);
+  items4[4] = closure_9(Screen.Screen, obj11);
   Screen = Screen.Screen;
   const obj12 = {
     name: constants.THREADS,
@@ -270,13 +267,13 @@ const memoResult = react.memo(function ChannelDetailsNavigator(navigation) {
       return obj;
     },
     getComponent() {
-      return navigation(source[30]).default;
+      return navigation(source[29]).default;
     }
   };
   const merged1 = Object.assign(memo);
-  items5[5] = closure_9(Screen, obj12);
+  items4[5] = closure_9(Screen, obj12);
   const entries = Object.entries(memo1);
-  items5[6] = entries.map((item) => {
+  items4[6] = entries.map((item) => {
     let tmp;
     [tmp, ] = item;
     let obj = {
@@ -305,7 +302,8 @@ const memoResult = react.memo(function ChannelDetailsNavigator(navigation) {
     };
     return closure_1_9(Screen.Screen, obj, tmp);
   });
-  return closure_9(channelSettingsScreensStyles, obj4);
+  const children = closure_9(channelSettingsScreensStyles, obj4);
+  return closure_9(channelId(source[30]), { children });
 });
 let result = size.fileFinishedImporting("modules/main_tabs_v2/native/sidebar/details/ChannelDetailsNavigator.tsx");
 

@@ -1,70 +1,91 @@
-// Module ID: 18453
-// Function ID: 18454
+// Module ID: 18810
+// Function ID: 18811
 // Name: YouBarNameplate
-// Dependencies: [19, 5015, 17070, 21, 5596, 575, 17151, 504, 5095, 5637, 9514, 2]
+// Dependencies: [19, 5141, 17396, 21, 5724, 575, 17478, 504, 1652, 5761, 9598, 2]
 
-// Module 18453 (YouBarNameplate)
+// Module 18810 (YouBarNameplate)
 import Fragment from "Fragment" /* 21 */;
-import spring from "spring" /* 5637 */;
-import YouBarConstants from "YouBarConstants" /* 17070 */;
+import get_initialized from "get initialized" /* 504 */;
+import nativeDefault from "native" /* 575 */;
+import _mod1652 from "module_1652" /* 1652 */;
+import useToken from "useToken" /* 5724 */;
+import spring_spring from "spring/spring" /* 5761 */;
+import NameplateDefault from "Nameplate" /* 9598 */;
+import YouBarConstants from "YouBarConstants" /* 17396 */;
+import useQuestDockAnimatedBorderRadiusDefault from "useQuestDockAnimatedBorderRadius" /* 17478 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5015 */;
+import AccessibilityStore from "AccessibilityStore" /* 5141 */;
 import size from "module_2" /* 2 */;
-
-let dependencyMap;
 
 const YOU_BAR_SPRING_CONFIG = YouBarConstants.YOU_BAR_SPRING_CONFIG;
 const jsx = Fragment.jsx;
-const __initData = { code: "function YouBarNameplateTsx1(){const{withSpring,isQuestRendered,questDockAnimatedBorderRadius,borderRadius,YOU_BAR_SPRING_CONFIG}=this.__closure;return{borderTopRightRadius:withSpring(isQuestRendered?questDockAnimatedBorderRadius.get():borderRadius,YOU_BAR_SPRING_CONFIG)};}" };
-const memoResult = react.memo(function YouBarNameplate(isQuestRendered) {
+let closure_6 = { code: "(function YouBarNameplateTsx1(){let[withSpring,isQuestRendered,questDockAnimatedBorderRadius,borderRadius,YOU_BAR_SPRING_CONFIG]=this.__closure;return{borderTopRightRadius:withSpring(isQuestRendered?questDockAnimatedBorderRadius.get():borderRadius,YOU_BAR_SPRING_CONFIG)};})" };
+const memoResult = react.memo(function YouBarNameplate(arg0) {
+  let avatarSize;
   let barWidth;
-  let closure_2;
+  let isQuestRendered;
   let nameplate;
   let num;
-  isQuestRendered = isQuestRendered.isQuestRendered;
-  const avatarSize = isQuestRendered.avatarSize;
-  let token;
-  dependencyMap = undefined;
-  ({ nameplate, barWidth } = isQuestRendered);
-  let obj = isQuestRendered(5596);
-  const tmp2 = token;
-  token = obj.useToken(token(575).modules.mobile.YOU_BAR_BORDER_RADIUS);
-  const tmp4 = token(17151)(token);
-  dependencyMap = tmp4;
+  let tmp10;
+  let tmp11;
+  let tmp12;
+  let tmp7;
+  let tmp8;
+  let tmp9;
+  ({ isQuestRendered, avatarSize } = arg0);
+  let tmp = dependencyMap;
+  ({ nameplate, barWidth } = arg0);
+  let obj = useToken;
+  const token = obj.useToken(nativeDefault.modules.mobile.YOU_BAR_BORDER_RADIUS);
   const items = [AccessibilityStore];
-  const obj2 = isQuestRendered(504);
+  const tmp4 = useQuestDockAnimatedBorderRadiusDefault(token);
+  const obj2 = get_initialized;
   const stateFromStores = obj2.useStateFromStores(items, () => AccessibilityStore.animateYouBarNameplate);
-  const fn = function p() {
-    let value;
-    const withSpring = spring.withSpring;
-    spring;
-    if (isQuestRendered) {
-      value = closure_2.get();
-    } else {
-      value = token;
+  const items1 = [closure_6, , , , , ];
+  const useAnimatedStyle = _mod1652.useAnimatedStyle;
+  _mod1652;
+  items1[1] = spring_spring.withSpring;
+  items1[2] = isQuestRendered;
+  items1[3] = tmp4;
+  items1[4] = token;
+  items1[5] = YOU_BAR_SPRING_CONFIG;
+  let c0;
+  let c1;
+  let c2;
+  let c3;
+  let c4;
+  [tmp7, tmp8, tmp9, tmp10, tmp11, tmp12] = items1;
+  class YouBarNameplateTsx1 {
+    constructor() {
+      let value;
+      const tmp = c0;
+      if (c1) {
+        value = _undefined.get();
+      } else {
+        value = c3;
+      }
+      const obj = { borderTopRightRadius: tmp(value, c4) };
+      return obj;
     }
-    const obj = { borderTopRightRadius: withSpring(value, YOU_BAR_SPRING_CONFIG) };
-    return obj;
-  };
-  const obj3 = isQuestRendered(5095);
-  fn.__closure = { withSpring: isQuestRendered(5637).withSpring, isQuestRendered, questDockAnimatedBorderRadius: tmp4, borderRadius: token, YOU_BAR_SPRING_CONFIG };
-  fn.__workletHash = 17156260157738;
-  fn.__initData = __initData;
-  ({ withSpring: isQuestRendered(5637).withSpring, isQuestRendered, questDockAnimatedBorderRadius: tmp4, borderRadius: token, YOU_BAR_SPRING_CONFIG });
-  const animatedStyle = obj3.useAnimatedStyle(fn);
+  }
+  const items2 = [tmp8, tmp9, tmp10, tmp11, tmp12];
+  YouBarNameplateTsx1.__closure = items2;
+  YouBarNameplateTsx1.__workletHash = 1217151381395;
+  YouBarNameplateTsx1.__initData = tmp7;
+  const animatedStyle = useAnimatedStyle(YouBarNameplateTsx1);
   const rect = { position: "absolute", top: 0, left: avatarSize, right: -1, bottom: 0, borderTopRightRadius: num, borderTopLeftRadius: 0, borderBottomRightRadius: token, borderBottomLeftRadius: 0, overflow: "hidden", width: barWidth - avatarSize };
   num = 0;
-  const View = token(5095).View;
+  const View = tmp2(1652).View;
   if (!isQuestRendered) {
     num = token;
   }
-  const items1 = [rect, animatedStyle];
+  const items3 = [rect, animatedStyle];
   let str = stateFromStores;
-  tmp2(9514);
+  NameplateDefault;
   if (str) {
     str = "always";
   }
-  return <View style={items1} pointerEvents="none">{null}</View>;
+  return <View style={items3} pointerEvents="none">{null}</View>;
 });
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/you_bar/YouBarNameplate.tsx");
 

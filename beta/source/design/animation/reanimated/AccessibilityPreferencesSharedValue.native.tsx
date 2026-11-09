@@ -1,13 +1,13 @@
-// Module ID: 5256
-// Function ID: 5257
+// Module ID: 5372
+// Function ID: 5373
 // Name: reanimated/AccessibilityPreferencesSharedValue
-// Dependencies: [5095, 2]
+// Dependencies: [1652, 2]
 
-// Module 5256 (reanimated/AccessibilityPreferencesSharedValue)
-import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
+// Module 5372 (reanimated/AccessibilityPreferencesSharedValue)
+import module_1652 from "module_1652" /* 1652 */;
 import size from "module_2" /* 2 */;
 
-const mutable = ReanimatedRexport.makeMutable({ reduceMotion: false, prefersCrossfades: false, screenReaderEnabled: false });
+const mutable = module_1652.makeMutable({ reduceMotion: false, prefersCrossfades: false, screenReaderEnabled: false });
 const result = size.fileFinishedImporting("design/animation/reanimated/AccessibilityPreferencesSharedValue.native.tsx");
 
 export const accessibilityPreferencesSharedValue = mutable;

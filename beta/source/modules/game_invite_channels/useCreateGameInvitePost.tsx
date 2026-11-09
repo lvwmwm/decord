@@ -1,20 +1,20 @@
-// Module ID: 14384
-// Function ID: 14385
+// Module ID: 14620
+// Function ID: 14621
 // Name: useCreateGameInvitePost
-// Dependencies: [5, 32, 19, 11525, 6570, 7830, 1072, 4870, 7453, 14385, 504, 11688, 9776, 7831, 2]
+// Dependencies: [5, 32, 19, 11670, 6625, 7906, 1072, 4996, 7517, 14621, 504, 11849, 9866, 7907, 2]
 // Exports: useCreateGameInvitePost
 
-// Module 14384 (useCreateGameInvitePost)
+// Module 14620 (useCreateGameInvitePost)
 import Constants from "Constants" /* 1072 */;
-import ChannelConstants from "ChannelConstants" /* 4870 */;
-import GameInvitesChannelUtils from "GameInvitesChannelUtils" /* 7453 */;
-import SlowmodeStore2 from "SlowmodeStore" /* 7830 */;
-import getCurrentUserPresenceActivityDefault from "getCurrentUserPresenceActivity" /* 11688 */;
+import ChannelConstants from "ChannelConstants" /* 4996 */;
+import GameInvitesChannelUtils from "GameInvitesChannelUtils" /* 7517 */;
+import SlowmodeStore2 from "SlowmodeStore" /* 7906 */;
+import getCurrentUserPresenceActivityDefault from "getCurrentUserPresenceActivity" /* 11849 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import LocalActivityStore from "LocalActivityStore" /* 11525 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 6570 */;
+import LocalActivityStore from "LocalActivityStore" /* 11670 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 6625 */;
 import size from "module_2" /* 2 */;
 
 const SlowmodeStore = SlowmodeStore2;
@@ -137,7 +137,7 @@ export function useCreateGameInvitePost(parentChannel) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c2;
@@ -183,7 +183,7 @@ export function useCreateGameInvitePost(parentChannel) {
           c2 = 0;
         }
         c3 = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp16) {
         if (0 === c2) {
           c3 = 3;

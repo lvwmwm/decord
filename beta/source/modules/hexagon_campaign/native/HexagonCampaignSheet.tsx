@@ -1,32 +1,32 @@
-// Module ID: 17001
-// Function ID: 17002
+// Module ID: 17324
+// Function ID: 17325
 // Name: HexagonCampaignSheet
-// Dependencies: [5, 32, 19, 17, 1193, 1383, 16221, 5039, 5273, 9979, 1240, 1083, 21, 1403, 1402, 9290, 5014, 575, 5042, 504, 7326, 7351, 15339, 5041, 1625, 2047, 9980, 16461, 6784, 17002, 5712, 1113, 5258, 17000, 4285, 10736, 5624, 17007, 5272, 7321, 16483, 5634, 17008, 7060, 7369, 17009, 2]
+// Dependencies: [5, 32, 19, 17, 1193, 1385, 16539, 5165, 5389, 10101, 1240, 1083, 21, 1395, 1396, 9370, 5140, 575, 5168, 504, 7387, 7412, 15625, 5167, 9069, 1627, 2171, 10102, 16779, 6839, 17325, 5837, 1113, 5374, 17323, 4411, 10855, 5751, 17330, 5388, 7382, 16801, 5758, 17331, 7126, 7429, 17332, 2]
 // Exports: default
 
-// Module 17001 (HexagonCampaignSheet)
+// Module 17324 (HexagonCampaignSheet)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
 import ClientThemesConstants from "ClientThemesConstants" /* 1240 */;
-import DisplayNameEffect from "DisplayNameEffect" /* 1402 */;
-import DisplayNameFont from "DisplayNameFont" /* 1403 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 5273 */;
-import useDisplayNameStylesFont from "useDisplayNameStylesFont" /* 9290 */;
-import AppIconConstants from "AppIconConstants" /* 9979 */;
+import DisplayNameFont from "DisplayNameFont" /* 1395 */;
+import DisplayNameEffect from "DisplayNameEffect" /* 1396 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 5389 */;
+import useDisplayNameStylesFont from "useDisplayNameStylesFont" /* 9370 */;
+import AppIconConstants from "AppIconConstants" /* 10101 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1193 */;
-import UserStore from "UserStore" /* 1383 */;
-import HexagonCampaignPersistedStore from "HexagonCampaignPersistedStore" /* 16221 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5039 */;
+import UserStore from "UserStore" /* 1385 */;
+import HexagonCampaignPersistedStore from "HexagonCampaignPersistedStore" /* 16539 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5165 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let BottomSheet, c3, c4, importDefault, perk;
+let c3, c4, importDefault, perk;
 
 let Platform;
 let StyleSheet;
@@ -128,6 +128,7 @@ export default function HexagonCampaignSheet() {
   let closure_1;
   let closure_7;
   let currentUser;
+  let displayNameStyles1;
   let first1;
   let intl;
   let intl2;
@@ -157,11 +158,11 @@ export default function HexagonCampaignSheet() {
   let obj38;
   let obj39;
   let obj41;
-  let result1;
+  let onLayout;
+  let ref;
   let stateFromStores;
   let tmp17;
-  let tmp23;
-  let tmp36;
+  let tmp34;
   let tmp5Result3;
   let tmp5Result4;
   let username;
@@ -186,7 +187,7 @@ export default function HexagonCampaignSheet() {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -212,7 +213,7 @@ export default function HexagonCampaignSheet() {
                   c3 = 2;
                   c4 = 1;
                   const obj6 = { value: obj7.applyHexagonCampaignPerks(obj5), done: false };
-                  obj7 = closure_0(analyticsLocations[29]);
+                  obj7 = closure_0(analyticsLocations[30]);
                   return obj6;
                 }
               }
@@ -237,34 +238,34 @@ export default function HexagonCampaignSheet() {
             closure_129_7(false);
             const tmp12 = closure_0;
             if (tmp12) {
-              const obj8 = { perks: values.filter((item) => closure_1_5[item]), content: closure_0(analyticsLocations[28]).QuestContent.AD_PERK_MODAL, sourceQuestContent: closure_0(analyticsLocations[28]).QuestContent.QUEST_HOME_MOBILE };
+              const obj8 = { perks: values.filter((item) => closure_1_5[item]), content: closure_0(analyticsLocations[29]).QuestContent.AD_PERK_MODAL, sourceQuestContent: closure_0(analyticsLocations[29]).QuestContent.QUEST_HOME_MOBILE };
               const _Object = Object;
-              const trackHexagonCampaignPerkAction = closure_0(analyticsLocations[27]).trackHexagonCampaignPerkAction;
-              const tmp26 = closure_0(analyticsLocations[27]);
-              values = Object.values(result1);
+              const trackHexagonCampaignPerkAction = closure_0(analyticsLocations[28]).trackHexagonCampaignPerkAction;
+              const tmp26 = closure_0(analyticsLocations[28]);
+              values = Object.values(closure_1_11);
               const result = trackHexagonCampaignPerkAction(obj8);
-              obj4 = tmp(analyticsLocations[32]);
-              obj4.hideActionSheet(closure_0(analyticsLocations[33]).HEXAGON_CAMPAIGN_SHEET_KEY);
+              obj4 = tmp(analyticsLocations[33]);
+              obj4.hideActionSheet(closure_0(analyticsLocations[34]).HEXAGON_CAMPAIGN_SHEET_KEY);
               const _Object2 = Object;
               const values2 = Object.values(closure_129_5);
               const _Boolean = Boolean;
               if (values2.some(Boolean)) {
-                const obj9 = { text: intl2.string(tmp(analyticsLocations[34]).fX2UkH), variant: "success" };
-                const open2 = tmp(analyticsLocations[30]).open;
-                const tmp42 = tmp(analyticsLocations[30]);
-                intl2 = closure_0(analyticsLocations[31]).intl;
+                const obj9 = { text: intl2.string(tmp(analyticsLocations[35]).fX2UkH), variant: "success" };
+                const open2 = tmp(analyticsLocations[31]).open;
+                const tmp42 = tmp(analyticsLocations[31]);
+                intl2 = closure_0(analyticsLocations[32]).intl;
                 open2("HEXAGON_CAMPAIGN_THEME_EQUIPPED", obj9);
               }
             } else {
-              const obj10 = { text: intl.string(closure_0(analyticsLocations[31]).t.F8FvUy) };
-              const open = tmp(analyticsLocations[30]).open;
-              const tmp16 = tmp(analyticsLocations[30]);
-              intl = closure_0(analyticsLocations[31]).intl;
+              const obj10 = { text: intl.string(closure_0(analyticsLocations[32]).t.F8FvUy) };
+              const open = tmp(analyticsLocations[31]).open;
+              const tmp16 = tmp(analyticsLocations[31]);
+              intl = closure_0(analyticsLocations[32]).intl;
               open("HEXAGON_CAMPAIGN_APPLY_ERROR", obj10);
             }
           }
           c4 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp57) {
           if (0 === analyticsLocations) {
             c4 = 3;
@@ -292,21 +293,21 @@ export default function HexagonCampaignSheet() {
   let obj3 = stateFromStores(analyticsLocations[22]);
   const currentAppIcon = obj3.useCurrentAppIcon();
   let obj4 = {};
-  ({ CLIENT_THEME, CLIENT_THEME: CLIENT_THEME2 } = result1);
+  ({ CLIENT_THEME, CLIENT_THEME: CLIENT_THEME2 } = memo);
   let obj5 = stateFromStores(analyticsLocations[18]);
-  obj4[CLIENT_THEME] = obj5.useHexagonCampaignPerkAvailability(CLIENT_THEME2, "HexagonCampaignSheet") === memo.SELECTABLE;
-  ({ DISPLAY_NAME_STYLE, DISPLAY_NAME_STYLE: DISPLAY_NAME_STYLE2 } = result1);
+  obj4[CLIENT_THEME] = obj5.useHexagonCampaignPerkAvailability(CLIENT_THEME2, "HexagonCampaignSheet") === obj.SELECTABLE;
+  ({ DISPLAY_NAME_STYLE, DISPLAY_NAME_STYLE: DISPLAY_NAME_STYLE2 } = memo);
   let obj6 = stateFromStores(analyticsLocations[18]);
-  obj4[DISPLAY_NAME_STYLE] = obj6.useHexagonCampaignPerkAvailability(DISPLAY_NAME_STYLE2, "HexagonCampaignSheet") === memo.SELECTABLE;
-  ({ APP_ICON, APP_ICON: APP_ICON2 } = result1);
+  obj4[DISPLAY_NAME_STYLE] = obj6.useHexagonCampaignPerkAvailability(DISPLAY_NAME_STYLE2, "HexagonCampaignSheet") === obj.SELECTABLE;
+  ({ APP_ICON, APP_ICON: APP_ICON2 } = memo);
   let obj7 = stateFromStores(analyticsLocations[18]);
-  obj4[APP_ICON] = obj7.useHexagonCampaignPerkAvailability(APP_ICON2, "HexagonCampaignSheet") === memo.SELECTABLE;
+  obj4[APP_ICON] = obj7.useHexagonCampaignPerkAvailability(APP_ICON2, "HexagonCampaignSheet") === obj.SELECTABLE;
   let obj8 = stateFromStores(analyticsLocations[19]);
-  const items2 = [HexagonCampaignPersistedStore];
-  const stateFromStores1 = obj8.useStateFromStores(items2, () => HexagonCampaignPersistedStore.hasAppliedPerk);
+  const items2 = [displayNameStyles1];
+  const stateFromStores1 = obj8.useStateFromStores(items2, () => displayNameStyles1.hasAppliedPerk);
   let obj9 = stateFromStores(analyticsLocations[19]);
-  const items3 = [HexagonCampaignPersistedStore];
-  const stateFromStores2 = obj9.useStateFromStores(items3, () => HexagonCampaignPersistedStore.previousPerkValues);
+  const items3 = [displayNameStyles1];
+  const stateFromStores2 = obj9.useStateFromStores(items3, () => displayNameStyles1.previousPerkValues);
   let displayNameStyles;
   const hasHexagonCampaignDisplayNameFont = stateFromStores(analyticsLocations[23]).hasHexagonCampaignDisplayNameFont;
   const tmp11 = stateFromStores(analyticsLocations[23]);
@@ -324,19 +325,24 @@ export default function HexagonCampaignSheet() {
   let merged1 = Object.assign(tmp17);
   [first1, closure_7] = obj11.useState(false);
   currentUser = obj11.useRef(false);
-  [tmp23, HexagonCampaignPersistedStore] = _slicedToArray(obj11.useState(0), 2);
-  const tmp22 = _slicedToArray(obj11.useState(0), 2);
-  const sum = Math.max(tmp5(tmp3[24])().bottom, obj) + 4;
-  let displayNameStyles1;
+  const tmp22 = tmp5(tmp3[24])();
+  const height = tmp22.height;
+  let num = 0;
+  ({ ref, onLayout } = tmp22);
+  if (undefined !== height) {
+    num = height;
+  }
+  const sum = Math.max(tmp5(tmp3[25])().bottom, closure_13) + 4;
+  displayNameStyles1 = undefined;
   if (stateFromStores != null) {
     displayNameStyles1 = stateFromStores.displayNameStyles;
   }
   if (displayNameStyles1 == null) {
     displayNameStyles1 = obj;
   }
-  const tmp5Result = tmp5(tmp3[25]);
-  result1 = tmp5Result.canUsePremiumProfileCustomization(stateFromStores);
-  let tmp27 = displayNameStyles1;
+  const tmp5Result = tmp5(tmp3[26]);
+  const result1 = tmp5Result.canUsePremiumProfileCustomization(stateFromStores);
+  let tmp26 = displayNameStyles1;
   if (result) {
     let displayNameStyles2;
     const getHexagonCampaignRestoredDisplayNameStyles = tmp2(tmp3[23]).getHexagonCampaignRestoredDisplayNameStyles;
@@ -349,7 +355,7 @@ export default function HexagonCampaignSheet() {
     if (hexagonCampaignRestoredDisplayNameStyles == null) {
       hexagonCampaignRestoredDisplayNameStyles = obj;
     }
-    tmp27 = hexagonCampaignRestoredDisplayNameStyles;
+    tmp26 = hexagonCampaignRestoredDisplayNameStyles;
   }
   const items4 = [result1, displayNameStyles1];
   memo = obj10.useMemo(() => {
@@ -366,62 +372,62 @@ export default function HexagonCampaignSheet() {
     }
     return tmp5;
   }, items4);
-  if (obj11[result1.DISPLAY_NAME_STYLE]) {
-    tmp27 = memo;
+  if (obj11[memo.DISPLAY_NAME_STYLE]) {
+    tmp26 = memo;
   }
   let HEXAGON = currentAppIcon;
   if (tmp14) {
     let DEFAULT = stateFromStores2.appIconId;
     if (DEFAULT == null) {
-      DEFAULT = tmp2(tmp3[26]).FreemiumAppIconIds.DEFAULT;
+      DEFAULT = tmp2(tmp3[27]).FreemiumAppIconIds.DEFAULT;
     }
     HEXAGON = DEFAULT;
   }
-  if (obj11[result1.APP_ICON]) {
-    HEXAGON = tmp2(tmp3[26]).LimitedTimeAppIconIds.HEXAGON;
+  if (obj11[memo.APP_ICON]) {
+    HEXAGON = tmp2(tmp3[27]).LimitedTimeAppIconIds.HEXAGON;
   }
   const effect = obj10.useEffect(() => {
-    obj = stateFromStores(analyticsLocations[27]);
-    const obj2 = { content: stateFromStores(analyticsLocations[28]).QuestContent.AD_PERK_MODAL, sourceQuestContent: stateFromStores(analyticsLocations[28]).QuestContent.QUEST_HOME_MOBILE };
+    obj = stateFromStores(analyticsLocations[28]);
+    const obj2 = { content: stateFromStores(analyticsLocations[29]).QuestContent.AD_PERK_MODAL, sourceQuestContent: stateFromStores(analyticsLocations[29]).QuestContent.QUEST_HOME_MOBILE };
     const result = obj.trackHexagonCampaignContentViewed(obj2);
   }, []);
   if (null == stateFromStores) {
     return null;
   } else {
-    const obj13 = { perk: result1.CLIENT_THEME, label: intl2.string(tmp5(tmp3[34]).TTUKuI), icon: closure_16(first1, obj14) };
-    intl2 = tmp2(tmp3[31]).intl;
-    obj14 = { style: tmp.rowIcon, children: closure_16(tmp2(tmp3[35]).Gradient, obj15) };
+    const obj13 = { perk: memo.CLIENT_THEME, label: intl2.string(tmp5(tmp3[35]).TTUKuI), icon: closure_16(first1, obj14) };
+    intl2 = tmp2(tmp3[32]).intl;
+    obj14 = { style: tmp.rowIcon, children: closure_16(tmp2(tmp3[36]).Gradient, obj15) };
     const items5 = [obj13, , ];
     obj15 = { gradient: HEXAGON_GRADIENT_PRESET, absolute: true };
-    const obj16 = { perk: result1.DISPLAY_NAME_STYLE, label: intl3.string(tmp5(tmp3[34]).fobter), icon: closure_16(first1, obj17) };
-    intl3 = tmp2(tmp3[31]).intl;
-    obj17 = { style: items6, children: closure_16(tmp2(tmp3[36]).Text, obj18) };
+    const obj16 = { perk: memo.DISPLAY_NAME_STYLE, label: intl3.string(tmp5(tmp3[35]).fobter), icon: closure_16(first1, obj17) };
+    intl3 = tmp2(tmp3[32]).intl;
+    obj17 = { style: items6, children: closure_16(tmp2(tmp3[37]).Text, obj18) };
     items6 = [, ];
     ({ rowIcon: arr11[0], fontRowIcon: arr11[1] } = tmp);
-    obj18 = { variant: "text-sm/semibold", color: "text-overlay-light", style: tmp.fontRowIconText, children: "Gg" };
+    obj18 = { variant: "body-sm/semibold", color: "text-overlay-light", style: tmp.fontRowIconText, children: "Gg" };
     items5[1] = obj16;
-    const obj19 = { perk: result1.APP_ICON, label: intl4.string(tmp5(tmp3[34]).DTv8Yq), icon: closure_16(tmp5Result3, obj20) };
-    intl4 = tmp2(tmp3[31]).intl;
-    obj20 = { id: tmp2(tmp3[26]).LimitedTimeAppIconIds.HEXAGON, size: 32, style: tmp.rowIcon };
+    const obj19 = { perk: memo.APP_ICON, label: intl4.string(tmp5(tmp3[35]).DTv8Yq), icon: closure_16(tmp5Result3, obj20) };
+    intl4 = tmp2(tmp3[32]).intl;
+    obj20 = { id: tmp2(tmp3[27]).LimitedTimeAppIconIds.HEXAGON, size: 32, style: tmp.rowIcon };
     items5[2] = obj19;
-    tmp5Result3 = tmp5(tmp3[37]);
-    const obj21 = { header: closure_17(first1, obj22), footer: closure_16(first1, obj26), startExpanded: true, children: tmp43(first1, obj29) };
+    tmp5Result3 = tmp5(tmp3[38]);
+    const obj21 = { header: closure_17(first1, obj22), footer: closure_16(first1, obj26), startExpanded: true, children: tmp41(first1, obj29) };
     obj22 = { children: items7 };
-    BottomSheet = tmp2(tmp3[38]).BottomSheet;
-    const obj23 = { title: intl5.string(tmp5(tmp3[34]).rZmLDm) };
-    const BottomSheetTitleHeader = tmp2(tmp3[39]).BottomSheetTitleHeader;
-    intl5 = tmp2(tmp3[31]).intl;
+    const BottomSheet = tmp2(tmp3[39]).BottomSheet;
+    const obj23 = { title: intl5.string(tmp5(tmp3[35]).rZmLDm) };
+    const BottomSheetTitleHeader = tmp2(tmp3[40]).BottomSheetTitleHeader;
+    intl5 = tmp2(tmp3[32]).intl;
     items7 = [closure_16(BottomSheetTitleHeader, obj23), ];
-    const obj24 = { style: tmp.badgeRow, children: closure_16(tmp5(tmp3[40]), {}) };
+    const obj24 = { style: tmp.badgeRow, children: closure_16(tmp5(tmp3[41]), {}) };
     items7[1] = closure_16(first1, obj24);
-    obj26 = { style: items8, onLayout: tmp33, children: closure_16(Button, obj28) };
+    obj26 = { style: items8, ref, onLayout, children: closure_16(Button, obj28) };
     items8 = [tmp.footer, ];
     const obj27 = { paddingBottom: sum };
     items8[1] = obj27;
-    Button = tmp2(tmp3[41]).Button;
-    const intl6 = tmp2(tmp3[31]).intl;
+    Button = tmp2(tmp3[42]).Button;
+    const intl6 = tmp2(tmp3[32]).intl;
     const string = intl6.string;
-    const t = tmp2(tmp3[31]).t;
+    const t = tmp2(tmp3[32]).t;
     obj28 = {
       size: "lg",
       grow: true,
@@ -434,34 +440,34 @@ export default function HexagonCampaignSheet() {
     };
     obj29 = { style: obj30, children: items12 };
     const _Math = Math;
-    let tmp43Result = obj11[tmp8.CLIENT_THEME];
-    obj30 = { paddingBottom: Math.max(tmp23 - sum, 0) };
+    let tmp41Result = obj11[tmp8.CLIENT_THEME];
+    obj30 = { paddingBottom: Math.max(num - sum, 0) };
     const obj31 = { style: tmp.content, children: items11 };
     const obj32 = { style: tmp.card, children: items10 };
-    const tmp41 = HEXAGON_GRADIENT_PRESET;
-    if (tmp43Result) {
+    const tmp39 = HEXAGON_GRADIENT_PRESET;
+    if (tmp41Result) {
       const obj33 = { children: items9 };
-      const obj34 = { gradient: tmp41, absolute: true, angleOverride: 143.48 };
-      items9 = [tmp39(tmp2(tmp3[35]).Gradient, obj34), ];
+      const obj34 = { gradient: tmp39, absolute: true, angleOverride: 143.48 };
+      items9 = [closure_16(tmp2(tmp3[36]).Gradient, obj34), ];
       const obj35 = { style: tmp.cardShade };
       items9[1] = closure_16(first1, obj35);
-      tmp43Result = tmp43(closure_18, obj33);
+      tmp41Result = tmp41(closure_18, obj33);
     }
-    items10 = [tmp43Result, ];
-    const obj36 = { style: tmp.previewArea, children: closure_16(tmp36, obj37) };
-    obj37 = { overlay: closure_16(tmp5(tmp3[37]), obj38), children: closure_16(tmp5Result4, obj39) };
+    items10 = [tmp41Result, ];
+    const obj36 = { style: tmp.previewArea, children: closure_16(tmp34, obj37) };
+    obj37 = { overlay: closure_16(tmp5(tmp3[38]), obj38), children: closure_16(tmp5Result4, obj39) };
     obj38 = { id: HEXAGON, size, style: tmp.previewAppIcon };
-    obj39 = { user: stateFromStores, displayName: username, selectedFontId: null, selectedEffectId: null, selectedColors: null, hideNameplate: true, hideBadges: true, hidePronouns: true, hideGuildTag: true, tilted: true, chatMessage: intl.string(tmp5(tmp3[34])["U/irIt"]) };
+    obj39 = { user: stateFromStores, displayName: username, selectedFontId: null, selectedEffectId: null, selectedColors: null, hideNameplate: true, hideBadges: true, hidePronouns: true, hideGuildTag: true, tilted: true, chatMessage: intl.string(tmp5(tmp3[35])["U/irIt"]) };
     username = stateFromStores.globalName;
-    tmp36 = ScaledPreview;
-    tmp5Result4 = tmp5(tmp3[42]);
+    tmp34 = ScaledPreview;
+    tmp5Result4 = tmp5(tmp3[43]);
     if (username == null) {
       username = stateFromStores.username;
     }
-    ({ fontId: obj25.selectedFontId, effectId: obj25.selectedEffectId, colors: obj25.selectedColors } = tmp27);
-    intl = tmp2(tmp3[31]).intl;
+    ({ fontId: obj25.selectedFontId, effectId: obj25.selectedEffectId, colors: obj25.selectedColors } = tmp26);
+    intl = tmp2(tmp3[32]).intl;
     items10[1] = closure_16(first1, obj36);
-    items11 = [tmp43(tmp40, obj32), ];
+    items11 = [tmp41(tmp38, obj32), ];
     const obj40 = { style: tmp.rows, children: closure_16(TableRowGroup, obj41) };
     obj41 = {
       hasIcons: true,
@@ -487,7 +493,7 @@ export default function HexagonCampaignSheet() {
             }
           };
           tmp2 = first1;
-          const TableSwitchRow = stateFromStores(analyticsLocations[44]).TableSwitchRow;
+          const TableSwitchRow = stateFromStores(analyticsLocations[45]).TableSwitchRow;
           const tmp = closure_1_16;
           if (!first1) {
             tmp2 = !obj4[perk];
@@ -495,10 +501,10 @@ export default function HexagonCampaignSheet() {
           return tmp(TableSwitchRow, obj, perk);
         })
     };
-    TableRowGroup = tmp2(tmp3[43]).TableRowGroup;
+    TableRowGroup = tmp2(tmp3[44]).TableRowGroup;
     items11[1] = closure_16(first1, obj40);
-    items12 = [tmp43(tmp40, obj31), ];
-    const obj42 = { style: tmp.legal, children: closure_16(tmp5(tmp3[45]), { showLogo: true }) };
+    items12 = [tmp41(tmp38, obj31), ];
+    const obj42 = { style: tmp.legal, children: closure_16(tmp5(tmp3[46]), { showLogo: true }) };
     items12[1] = closure_16(first1, obj42);
     return closure_16(BottomSheet, obj21);
   }

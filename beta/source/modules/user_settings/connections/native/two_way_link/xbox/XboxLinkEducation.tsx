@@ -1,23 +1,23 @@
-// Module ID: 14629
-// Function ID: 14630
+// Module ID: 14864
+// Function ID: 14865
 // Name: XboxLinkEducation
-// Dependencies: [19, 17, 1072, 21, 5014, 9730, 2061, 14630, 5717, 5624, 1113, 7292, 5634, 2]
+// Dependencies: [19, 17, 1072, 21, 5140, 9820, 2185, 14865, 5842, 5751, 1113, 7355, 5758, 2]
 // Exports: default
 
-// Module 14629 (XboxLinkEducation)
+// Module 14864 (XboxLinkEducation)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
 import intl4 from "intl" /* 1113 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2061 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import components_Button_Button from "components/Button/Button" /* 5634 */;
-import FastImageDefault from "FastImage" /* 5717 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7292 */;
-import TwoWayLinkStyles from "TwoWayLinkStyles" /* 9730 */;
-import _modDef14630 from "module_14630" /* 14630 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2185 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import components_Button_Button from "components/Button/Button" /* 5758 */;
+import FastImageDefault from "FastImage" /* 5842 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7355 */;
+import TwoWayLinkStyles from "TwoWayLinkStyles" /* 9820 */;
+import _modDef14865 from "module_14865" /* 14865 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;
@@ -46,17 +46,17 @@ export default function XboxLinkEducation(onClose) {
   const obj3 = { style: twoWayLinkStyles.container, children: items1 };
   const obj4 = { style: twoWayLinkStyles.content, children: items };
   const memo = react.useMemo(() => {
-    const obj = { uri: _modDef14630 };
+    const obj = { uri: _modDef14865 };
     return obj;
   }, []);
   items = [, , ];
   const obj5 = { source: memo, style: tmp.image };
   items[0] = metroRequire(FastImageDefault, obj5);
-  const obj6 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: twoWayLinkStyles.title, children: intl.string(intl4.t.jHytat) };
+  const obj6 = { variant: "heading-xl/semibold", color: "mobile-text-heading-primary", style: twoWayLinkStyles.title, children: intl.string(intl4.t.jHytat) };
   const Text = Text_Text.Text;
   intl = intl4.intl;
   items[1] = metroRequire(Text, obj6);
-  const obj7 = { variant: "text-md/medium", color: "text-default", style: twoWayLinkStyles.body, children: intl2.format(intl4.t.yhozpz, { helpdeskArticleUrl: articleURL }) };
+  const obj7 = { variant: "body-md/medium", color: "text-default", style: twoWayLinkStyles.body, children: intl2.format(intl4.t.yhozpz, { helpdeskArticleUrl: articleURL }) };
   const Text2 = Text_Text.Text;
   intl2 = intl4.intl;
   items[2] = metroRequire(Text2, obj7);

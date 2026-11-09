@@ -1,27 +1,28 @@
-// Module ID: 19190
-// Function ID: 19191
+// Module ID: 19566
+// Function ID: 19567
 // Name: useVoicePanelParticipants
-// Dependencies: [32, 19, 6843, 502, 4863, 5764, 5679, 5767, 11223, 1072, 19146, 504, 18292, 11222, 11225, 2]
+// Dependencies: [32, 19, 6898, 6812, 502, 4989, 5893, 5803, 5896, 11363, 1072, 11327, 19522, 504, 18630, 11362, 11365, 2]
 // Exports: default, useChunkedParticipants
 
-// Module 19190 (useVoicePanelParticipants)
+// Module 19566 (useVoicePanelParticipants)
 import Constants from "Constants" /* 1072 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import react_mod from "react" /* 19 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6843 */;
+import react from "react" /* 19 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6898 */;
+import StageChannelRoleStore from "StageChannelRoleStore" /* 6812 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5764 */;
-import VoiceStateStore from "VoiceStateStore" /* 5679 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5767 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11223 */;
+import ChannelStore from "ChannelStore" /* 4989 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5893 */;
+import VoiceStateStore from "VoiceStateStore" /* 5803 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5896 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11363 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, importDefault, map, set;
+let _require, importDefault, map, set, voiceParticipantsHidden;
 
 let closure_12;
-let unpackModuleId;
+let map1;
 function getMemoizedParticipant(item10013, get) {
   const combined = "" + item10013.type + "-" + item10013.id;
   let value = get.get(combined);
@@ -31,20 +32,18 @@ function getMemoizedParticipant(item10013, get) {
   }
   return value;
 }
-let react = react_mod;
-({ VoicePanelCardItemType: unpackModuleId, VoicePanelCTACard: closure_12 } = VoicePanelConstants);
+({ VoicePanelCardItemType: closure_12, VoicePanelCTACard: map1 } = VoicePanelConstants);
 const RTCConnectionStates = Constants.RTCConnectionStates;
-let closure_14 = [];
+let closure_15 = [];
 let result = size.fileFinishedImporting("modules/voice_panel/native/hooks/useVoicePanelParticipants.tsx");
 
 export default function useVoicePanelCards(arg0, arg1) {
   let closure_0;
   let closure_1;
-  let closure_4;
   let desyncedChannelParticipants;
   let items2;
   let items3;
-  let obj5;
+  let obj6;
   let state;
   let stateFromStores;
   _require = arg0;
@@ -58,72 +57,91 @@ export default function useVoicePanelCards(arg0, arg1) {
   if (flag == null) {
     flag = false;
   }
-  let tmp2 = require("useIsConnectedToVoiceChannel")(arg0);
-  react = tmp2;
-  const first = flag(react.useState(() => {
+  let obj2 = require("StageChannelUnifiedCallExperiment");
+  const isStageUnifiedCall = obj2.useIsStageUnifiedCall(channel, "useVoicePanelCards");
+  let tmp3 = require("useIsConnectedToVoiceChannel")(arg0);
+  let closure_5 = tmp3;
+  const first = flag(isStageUnifiedCall.useState(() => {
     map = new Map();
     return map;
   }), 1)[0];
   let items = [first];
-  const effect = react.useEffect(() => () => first.clear(), items);
-  let obj2 = require("get initialized");
+  const effect = isStageUnifiedCall.useEffect(() => () => first.clear(), items);
+  let obj3 = require("get initialized");
   let items1 = [RTCConnectionStore];
-  stateFromStores = obj2.useStateFromStores(items1, () => state.getState() === constants2.RTC_CONNECTED);
-  let obj3 = require("RTCConnectionDesyncHooks");
-  desyncedChannelParticipants = obj3.useDesyncedChannelParticipants(arg0);
+  stateFromStores = obj3.useStateFromStores(items1, () => state.getState() === constants2.RTC_CONNECTED);
+  let obj4 = require("RTCConnectionDesyncHooks");
+  desyncedChannelParticipants = obj4.useDesyncedChannelParticipants(arg0);
   let obj = {
-    items: obj5.useStateFromStoresArray(items2, () => {
-      let tmp;
-      const tmp2 = closure_4;
-      if (tmp2) {
-        let voiceParticipantsHidden = ChannelRTCStore.getVoiceParticipantsHidden(closure_0);
-        const items = [];
-        const filteredParticipants = ChannelRTCStore.getFilteredParticipants(closure_0);
-        for (const item10024 of filteredParticipants) {
-          let arr = items.push(item10024);
-          continue;
+    items: obj6.useStateFromStoresArray(items2, () => {
+      let tmp2;
+      const tmp3 = closure_5;
+      if (tmp3) {
+        let stageSpeakerParticipants;
+        let obj = ChannelRTCStore;
+        voiceParticipantsHidden = ChannelRTCStore.getVoiceParticipantsHidden(closure_0);
+        const tmp11 = isStageUnifiedCall;
+        if (tmp11) {
+          stageSpeakerParticipants = obj.getStageSpeakerParticipants(tmp9);
+        } else {
+          stageSpeakerParticipants = obj.getFilteredParticipants(tmp9);
         }
+        const items = [];
+        HermesBuiltin.arraySpread(items, stageSpeakerParticipants, 0);
         if (!voiceParticipantsHidden) {
           if (null != desyncedChannelParticipants) {
-            for (const item10034 of tmp13) {
-              let arr2 = items.push(item10034);
+            for (const item10038 of tmp18) {
+              let tmp22 = item10038;
+              let tmp23 = isStageUnifiedCall;
+              if (tmp23) {
+                tmp23 = !StageChannelRoleStore.isSpeaker(tmp22.user.id, closure_0);
+              }
+              if (!tmp23) {
+                let arr = items.push(tmp22);
+              }
               continue;
             }
           }
         }
         let items1 = [];
-        const tmp19 = items[Symbol.iterator]();
-        while (tmp19 !== undefined) {
-          let obj = { type: unpackModuleId.PARTICIPANT, id: tmp21.id };
-          let tmp26 = getMemoizedParticipant(obj, first);
-          let tmp27 = flag;
-          if (tmp27) {
-            if (tmp26.id === id) {
-              tmp = tmp26;
+        for (const item10058 of items) {
+          let obj2 = { type: constants.PARTICIPANT, id: item10058.id };
+          let tmp35 = getMemoizedParticipant(obj2, first);
+          let tmp36 = flag;
+          if (tmp36) {
+            if (tmp35.id === id) {
+              tmp2 = tmp35;
               continue;
             }
           }
-          let arr3 = items1.push(tmp26);
+          let arr2 = items1.push(tmp35);
         }
-        if (null != tmp) {
-          items1.push(tmp);
+        if (null != tmp2) {
+          items1.push(tmp2);
         }
-        const tmp35 = flag && stateFromStores && 1 === items1.length;
-        if (tmp35) {
-          let obj2 = { type: unpackModuleId.CTA, id: constants.CALLER_DISCONNECTED };
-          items1.push(getMemoizedParticipant(obj2, first));
+        const tmp44 = flag && stateFromStores && 1 === items1.length;
+        if (tmp44) {
+          const obj3 = { type: constants.CTA, id: map1.CALLER_DISCONNECTED };
+          items1.push(getMemoizedParticipant(obj3, first));
+        }
+        const tmp50 = isStageUnifiedCall;
+        if (tmp50) {
+          if (0 === items.length) {
+            const obj4 = { type: constants.CTA, id: map1.NO_STAGE_SPEAKERS };
+            items1.push(getMemoizedParticipant(obj4, first));
+          }
+          if (items1.length <= 0) {
+            items1 = closure_15;
+          }
+          return items1;
         }
         if (voiceParticipantsHidden) {
           voiceParticipantsHidden = 0 === items.length;
         }
         if (voiceParticipantsHidden) {
-          const obj3 = { type: unpackModuleId.CTA, id: constants.NO_VIDEO_PARTICIPANTS };
-          items1.push(getMemoizedParticipant(obj3, first));
+          const obj5 = { type: constants.CTA, id: map1.NO_VIDEO_PARTICIPANTS };
+          items1.push(getMemoizedParticipant(obj5, first));
         }
-        if (items1.length <= 0) {
-          items1 = closure_14;
-        }
-        return items1;
       } else {
         const voiceStatesForChannelAlt = SortedVoiceStateStore.getVoiceStatesForChannelAlt(closure_0, closure_1);
         let mapped = voiceStatesForChannelAlt.map((id) => {
@@ -138,16 +156,16 @@ export default function useVoicePanelCards(arg0, arg1) {
           return value;
         });
         if (mapped.length <= 0) {
-          mapped = closure_14;
+          mapped = closure_15;
         }
         return mapped;
       }
     }, items3),
-    isConnected: tmp2
+    isConnected: tmp3
   };
-  items2 = [first, SortedVoiceStateStore];
-  items3 = [tmp2, desyncedChannelParticipants, arg0, arg1, first, flag, id, stateFromStores];
-  obj5 = require("get initialized");
+  items2 = [closure_5, SortedVoiceStateStore, first];
+  items3 = [tmp3, desyncedChannelParticipants, arg0, arg1, first, flag, isStageUnifiedCall, id, stateFromStores];
+  obj6 = require("get initialized");
   return obj;
 };
 export function useChunkedParticipants(channelId, arg1) {
@@ -171,7 +189,7 @@ export function useChunkedParticipants(channelId, arg1) {
   return obj2.useStateFromStoresArray(items1, function() {
     let chunk;
     if (managerSubscription < 0) {
-      return closure_14;
+      return closure_15;
     } else {
       let items = [];
       if (VoiceStateStore.isInChannel(channelId, id)) {
@@ -205,11 +223,11 @@ export function useChunkedParticipants(channelId, arg1) {
         let tmp9 = channelId;
         const tmp10 = ChannelRTCStore.getVoiceParticipantsHidden(channelId) && 0 === items.length;
         if (tmp10) {
-          const obj = { type: unpackModuleId.CTA, id: constants.NO_VIDEO_PARTICIPANTS };
+          const obj = { type: constants.CTA, id: map1.NO_VIDEO_PARTICIPANTS };
           items.push(getMemoizedParticipant(obj, first));
         }
         if (items.length <= 0) {
-          items = closure_14;
+          items = closure_15;
         }
         return items;
       } else {

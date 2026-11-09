@@ -1,16 +1,16 @@
-// Module ID: 12563
-// Function ID: 12564
+// Module ID: 12766
+// Function ID: 12767
 // Name: MessageBlock
-// Dependencies: [19, 17, 21, 575, 5014, 5624, 2]
+// Dependencies: [19, 17, 21, 575, 5140, 5751, 2]
 // Exports: default
 
-// Module 12563 (MessageBlock)
+// Module 12766 (MessageBlock)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5624 */;
+import Text_Text from "Text/Text" /* 5751 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 const View = react_native.View;
@@ -21,11 +21,11 @@ let closure_6 = createStyles.createStyles((arg0) => {
   let obj4;
   let tmp2;
   if (obj.RED === arg0) {
-    obj = { backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_CRITICAL, borderColor: nativeDefault.colors.BORDER_FEEDBACK_CRITICAL };
+    obj = { backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_MOD_CRITICAL, borderColor: nativeDefault.colors.BORDER_FEEDBACK_CRITICAL };
     tmp2 = obj;
   } else if (tmp.YELLOW === arg0) {
-    tmp2 = { backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_WARNING, borderColor: nativeDefault.colors.STATUS_WARNING };
-    const obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_WARNING, borderColor: nativeDefault.colors.STATUS_WARNING };
+    tmp2 = { backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_MOD_WARNING, borderColor: nativeDefault.colors.STATUS_WARNING };
+    const obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_MOD_WARNING, borderColor: nativeDefault.colors.STATUS_WARNING };
   }
   const obj3 = { container: obj4, text: { textAlign: "center" } };
   obj4 = { alignItems: "center", borderRadius: nativeDefault.radii.xs, borderWidth: 1, padding: 8, width: "100%" };

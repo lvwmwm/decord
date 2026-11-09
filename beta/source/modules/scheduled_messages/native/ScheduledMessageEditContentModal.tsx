@@ -1,24 +1,24 @@
-// Module ID: 14597
-// Function ID: 14598
+// Module ID: 14833
+// Function ID: 14834
 // Name: ScheduledMessageEditContentModal
-// Dependencies: [5, 32, 19, 17, 4863, 21, 5014, 575, 1625, 9775, 504, 7824, 9808, 9807, 6744, 1113, 7005, 9812, 1375, 6998, 6980, 5624, 7253, 2]
+// Dependencies: [5, 32, 19, 17, 4989, 21, 5140, 575, 1627, 9865, 504, 7900, 9898, 9897, 6799, 1113, 7071, 9902, 1377, 7064, 7043, 5751, 7316, 2]
 // Exports: default
 
-// Module 14597 (ScheduledMessageEditContentModal)
+// Module 14833 (ScheduledMessageEditContentModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import Pressables from "Pressables" /* 6980 */;
-import MessageParserDefault from "MessageParser" /* 7824 */;
-import ScheduledMessageUtils from "ScheduledMessageUtils" /* 9808 */;
-import HeaderShared from "HeaderShared" /* 9812 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import Pressables from "Pressables" /* 7043 */;
+import MessageParserDefault from "MessageParser" /* 7900 */;
+import ScheduledMessageUtils from "ScheduledMessageUtils" /* 9898 */;
+import HeaderShared from "HeaderShared" /* 9902 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
+import ChannelStore from "ChannelStore" /* 4989 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let c9;
@@ -84,7 +84,7 @@ export default function ScheduledMessageEditContentModal(scheduledMessage) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -120,7 +120,7 @@ export default function ScheduledMessageEditContentModal(scheduledMessage) {
             arr.pop();
           }
           stateFromStores = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp8) {
         stateFromStores = 3;
@@ -149,7 +149,7 @@ export default function ScheduledMessageEditContentModal(scheduledMessage) {
       let obj2;
       const obj = { accessibilityRole: "button", onPress, children: metroImportAll(Text, obj2) };
       const PressableOpacity = Pressables.PressableOpacity;
-      obj2 = { variant: "text-md/semibold", color: "control-brand-foreground", children: intl.string(intl2.t["R3BPH+"]) };
+      obj2 = { variant: "body-md/semibold", color: "control-brand-foreground", children: intl.string(intl2.t["R3BPH+"]) };
       Text = Text_Text.Text;
       intl = intl2.intl;
       return metroImportAll(PressableOpacity, obj);

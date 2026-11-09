@@ -1,8 +1,8 @@
-// Module ID: 6231
-// Function ID: 6232
+// Module ID: 6363
+// Function ID: 6364
 // Dependencies: [2]
 
-// Module 6231
+// Module 6363
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/layer/outfit/camper_glamp.png.js");

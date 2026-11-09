@@ -1,23 +1,21 @@
-// Module ID: 18656
-// Function ID: 18657
+// Module ID: 19017
+// Function ID: 19018
 // Name: JoinRequestActionSheet
-// Dependencies: [19, 17, 5015, 1397, 1383, 1072, 21, 5014, 504, 8757, 8741, 5095, 8800, 5253, 7353, 5596, 575, 1090, 8802, 6918, 4915, 8758, 5272, 1187, 8805, 1113, 5080, 5275, 18657, 5595, 2]
+// Dependencies: [19, 17, 5141, 1404, 1385, 1072, 21, 5140, 504, 8828, 8812, 1652, 8873, 5369, 7414, 5724, 575, 1090, 8875, 6973, 5041, 8829, 5388, 1187, 8879, 1113, 5199, 5392, 19018, 5723, 2]
 
-// Module 18656 (JoinRequestActionSheet)
+// Module 19017 (JoinRequestActionSheet)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
-import isChangelogUserDefault from "isChangelogUser" /* 4915 */;
-import GuildJoinRequestAnalyticUtils from "GuildJoinRequestAnalyticUtils" /* 6918 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8758 */;
+import isChangelogUserDefault from "isChangelogUser" /* 5041 */;
+import GuildJoinRequestAnalyticUtils from "GuildJoinRequestAnalyticUtils" /* 6973 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8829 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5015 */;
-import UserRecord from "UserRecord" /* 1397 */;
-import UserStore from "UserStore" /* 1383 */;
+import AccessibilityStore from "AccessibilityStore" /* 5141 */;
+import UserRecord from "UserRecord" /* 1404 */;
+import UserStore from "UserStore" /* 1385 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
-
-let BottomSheet;
 
 let c10;
 let c9;
@@ -134,7 +132,7 @@ class JoinRequestActionSheet {
     }, items5);
     if (null == user) {
       let obj2 = { children: closure_9(EmptyState, obj4) };
-      BottomSheet = tmp2(tmp3[22]).BottomSheet;
+      const BottomSheet = tmp2(tmp3[22]).BottomSheet;
       obj4 = { style: { marginTop: 42 }, Illustration: joinRequest(userId[24]).NoResults, body: intl.string(joinRequest(userId[25]).t.eAn6z2) };
       EmptyState = tmp2(tmp3[23]).EmptyState;
       intl = tmp2(tmp3[25]).intl;

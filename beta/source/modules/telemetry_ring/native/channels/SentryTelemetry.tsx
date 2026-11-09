@@ -1,11 +1,11 @@
-// Module ID: 15958
-// Function ID: 15959
+// Module ID: 16276
+// Function ID: 16277
 // Name: SentryTelemetry
-// Dependencies: [2000, 2001, 2]
+// Dependencies: [2124, 2125, 2]
 
-// Module 15958 (SentryTelemetry)
-import TelemetryRingNative2 from "TelemetryRingNative" /* 2001 */;
-import BaseTelemetryChannel from "BaseTelemetryChannel" /* 2000 */;
+// Module 16276 (SentryTelemetry)
+import TelemetryRingNative2 from "TelemetryRingNative" /* 2125 */;
+import BaseTelemetryChannel from "BaseTelemetryChannel" /* 2124 */;
 import size from "module_2" /* 2 */;
 
 const TelemetryRingNative = TelemetryRingNative2;

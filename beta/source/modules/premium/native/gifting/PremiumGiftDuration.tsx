@@ -1,21 +1,21 @@
-// Module ID: 14463
-// Function ID: 14464
+// Module ID: 14699
+// Function ID: 14700
 // Name: PremiumGiftDuration
-// Dependencies: [19, 17, 1385, 21, 5014, 575, 10562, 6975, 8179, 10621, 5082, 5624, 1113, 2]
+// Dependencies: [19, 17, 1387, 21, 5140, 575, 10681, 7038, 8248, 10740, 5200, 5751, 1113, 2]
 // Exports: default
 
-// Module 14463 (PremiumGiftDuration)
+// Module 14699 (PremiumGiftDuration)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
-import react_native2 from "react-native" /* 5082 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import NativeGiftContext from "NativeGiftContext" /* 10562 */;
-import usePremiumProductPricingStringDefault from "usePremiumProductPricingString" /* 10621 */;
+import react_native2 from "react-native" /* 5200 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import NativeGiftContext from "NativeGiftContext" /* 10681 */;
+import usePremiumProductPricingStringDefault from "usePremiumProductPricingString" /* 10740 */;
 import react from "react" /* 19 */;
-import PremiumConstants from "PremiumConstants" /* 1385 */;
+import PremiumConstants from "PremiumConstants" /* 1387 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let SubscriptionIntervalTypes;
@@ -46,9 +46,9 @@ function PremiumGiftDurationButton(arg0) {
   const premiumType = nativeGiftContext.premiumType;
   const tmp4 = closure_9();
   if (selected) {
-    RowButton = tmp(6975).TableRow;
+    RowButton = tmp(7038).TableRow;
   } else {
-    RowButton = tmp(8179).RowButton;
+    RowButton = tmp(8248).RowButton;
   }
   let combined = null;
   const tmp5 = SubscriptionIntervalTypes;
@@ -67,7 +67,7 @@ function PremiumGiftDurationButton(arg0) {
   items[1] = selected;
   const obj2 = { style: items, children: metroRequire(RowButton, obj7) };
   const obj3 = { style: tmp4.labelContainer, children: items1 };
-  const Text = tmp(5624).Text;
+  const Text = tmp(5751).Text;
   const tmp13 = metroImportDefault;
   if (planInterval === tmp5.MONTH) {
     const intl2 = tmp(1113).intl;
@@ -76,12 +76,12 @@ function PremiumGiftDurationButton(arg0) {
     const intl = tmp(1113).intl;
     stringResult = intl.string(tmp(1113).t.DRgqMo);
   }
-  items1 = [metroRequire(Text, { variant: "text-md/semibold", children: stringResult }), ];
+  items1 = [metroRequire(Text, { variant: "body-md/semibold", children: stringResult }), ];
   let tmp11Result = null != combined;
   if (tmp11Result) {
     const obj4 = { style: tmp4.labelPromo, children: metroRequire(Text2, obj5) };
-    obj5 = { variant: "text-md/bold", color: "text-overlay-light", children: str3.toUpperCase() };
-    Text2 = tmp(5624).Text;
+    obj5 = { variant: "body-md/semibold", color: "text-overlay-light", children: str3.toUpperCase() };
+    Text2 = tmp(5751).Text;
     const intl3 = tmp(1113).intl;
     const obj6 = { discount: combined };
     str3 = intl3.formatToPlainString(intl4.t.IAybsG, obj6);
@@ -90,7 +90,7 @@ function PremiumGiftDurationButton(arg0) {
   items1[1] = tmp11Result;
   obj7 = {
     label: tmp13(View, obj3),
-    trailing: metroRequire(Text_Text.Text, { variant: "text-md/semibold", children: tmp9 }),
+    trailing: metroRequire(Text_Text.Text, { variant: "body-md/semibold", children: tmp9 }),
     onPress() {
       setPlanInterval(planInterval);
     },
@@ -126,11 +126,11 @@ export default function PremiumGiftDuration() {
   let intl;
   let planInterval;
   const tmp = closure_11();
-  let obj = planInterval(10562);
+  let obj = planInterval(10681);
   planInterval = obj.useNativeGiftContext().planInterval;
   const obj2 = { style: tmp.durationContainer, children: items };
-  const obj3 = { style: tmp.durationTitle, variant: "text-sm/semibold", children: intl.string(planInterval(1113).t["8XT6Nf"]) };
-  const Text = planInterval(5624).Text;
+  const obj3 = { style: tmp.durationTitle, variant: "body-sm/semibold", children: intl.string(planInterval(1113).t["8XT6Nf"]) };
+  const Text = planInterval(5751).Text;
   intl = planInterval(1113).intl;
   items = [closure_6(Text, obj3), ];
   items[1] = items.map((planInterval, index) => {

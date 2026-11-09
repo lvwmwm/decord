@@ -1,12 +1,12 @@
-// Module ID: 16669
-// Function ID: 16670
+// Module ID: 16991
+// Function ID: 16992
 // Name: UserSettingsInputAlert
-// Dependencies: [19, 21, 1282, 6027, 5624, 7082, 6030, 6954, 2]
+// Dependencies: [19, 21, 1282, 6159, 5751, 7148, 6162, 7016, 2]
 
-// Module 16669 (UserSettingsInputAlert)
+// Module 16991 (UserSettingsInputAlert)
 import HTTPUtils from "HTTPUtils" /* 1282 */;
-import Stack_Stack from "Stack/Stack" /* 6027 */;
-import AlertDefault from "Alert" /* 6030 */;
+import Stack_Stack from "Stack/Stack" /* 6159 */;
+import AlertDefault from "Alert" /* 6162 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -14,9 +14,9 @@ import size from "module_2" /* 2 */;
 let c3;
 let closure_4;
 let tmp2;
-const KeyboardAwareViewDefault = tmp2(6954);
+const KeyboardAwareViewDefault = tmp2(7016);
 ({ jsx: c3, jsxs: closure_4 } = Fragment);
-const hasOwnProperty = { input: "", error: "cix" };
+const hasOwnProperty = { input: "", error: "add" };
 const PureComponent = react.PureComponent;
 class UserSettingsInputAlert extends PureComponent {
   constructor() {
@@ -74,29 +74,37 @@ class UserSettingsInputAlert extends PureComponent {
     return applyArgumentsResult;
   }
   renderContent() {
+    let helpText;
+    let secureTextEntry;
     let str2;
+    let str3;
+    let str4;
     const self = this;
-    const helpText = this.props.helpText;
+    ({ secureTextEntry, helpText } = this.props);
     if (null != this.props.error) {
       let error;
       if ("" !== self.props.error) {
         error = self.props.error;
       }
-      let tmp7 = null != helpText;
+      let tmp6 = null != helpText;
       const Stack = Stack_Stack.Stack;
-      const tmp4 = React3;
-      if (tmp7) {
-        let obj = { variant: "text-md/normal", children: helpText };
-        tmp7 = _false(tmp5(5624).Text, obj);
+      const tmp3 = React3;
+      if (tmp6) {
+        let obj = { variant: "body-md/normal", children: helpText };
+        tmp6 = _false(tmp4(5751).Text, obj);
       }
-      const items = [tmp7, ];
+      const items = [tmp6, ];
       const obj2 = {
-        label: tmp3,
+        label: tmp2,
         placeholder: tmp,
-        secureTextEntry: tmp2,
+        secureTextEntry,
+        revealable: true,
+        autoCapitalize: "none",
+        autoComplete: str2,
+        textContentType: str3,
         returnKeyType: "done",
         autoFocus: true,
-        status: str2,
+        status: str4,
         errorMessage: error,
         onSubmitEditing: self.handleSubmit,
         onChange(input) {
@@ -104,15 +112,23 @@ class UserSettingsInputAlert extends PureComponent {
             return self.setState(obj);
           }
       };
-      str2 = "default";
-      const TextInput = tmp5(7082).TextInput;
-      const tmp9 = _false;
+      str2 = undefined;
+      const TextInput = tmp4(7148).TextInput;
+      const tmp8 = _false;
+      if (secureTextEntry) {
+        str2 = "current-password";
+      }
+      str3 = undefined;
+      if (secureTextEntry) {
+        str3 = "password";
+      }
+      str4 = "default";
       if (null != error) {
-        str2 = "error";
+        str4 = "error";
       }
       const obj3 = { spacing: 16, children: items };
-      items[1] = tmp9(TextInput, obj2);
-      return tmp4(Stack, obj3);
+      items[1] = tmp8(TextInput, obj2);
+      return tmp3(Stack, obj3);
     }
     error = self.state.error;
   }

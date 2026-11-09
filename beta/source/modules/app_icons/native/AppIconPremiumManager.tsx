@@ -1,19 +1,19 @@
-// Module ID: 19396
-// Function ID: 19397
+// Module ID: 19800
+// Function ID: 19801
 // Name: AppIconPremiumManager
-// Dependencies: [5, 1383, 9979, 1072, 5039, 3, 9980, 7287, 1375, 15339, 5042, 14608, 1252, 2]
+// Dependencies: [5, 1385, 10101, 1072, 5165, 3, 10102, 7350, 1377, 15625, 5168, 2171, 1252, 2]
 
-// Module 19396 (AppIconPremiumManager)
+// Module 19800 (AppIconPremiumManager)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import PlatformUtils from "PlatformUtils" /* 1375 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5039 */;
-import AppIconTypes from "AppIconTypes" /* 9980 */;
+import PlatformUtils from "PlatformUtils" /* 1377 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5165 */;
+import AppIconTypes from "AppIconTypes" /* 10102 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserStore from "UserStore" /* 1383 */;
-import AppIconConstants from "AppIconConstants" /* 9979 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7287 */;
+import UserStore from "UserStore" /* 1385 */;
+import AppIconConstants from "AppIconConstants" /* 10101 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7350 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -68,12 +68,12 @@ class AppIconPremiumManager extends AutomaticLifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
           let closure_1;
-          let _undefined2;
+          let _undefined3;
           let _undefined;
           c6 = 2;
           if (0 === c5) {
@@ -88,12 +88,12 @@ class AppIconPremiumManager extends AutomaticLifecycleManager {
               const currentUser = tmp4;
               let closure_3 = tmp;
               closure_1 = undefined;
-              _undefined2 = undefined;
+              _undefined3 = undefined;
               _undefined = currentUser.getCurrentUser();
               c5 = 1;
               c6 = 1;
               const obj4 = { value: obj5.fetchCurrentAppIcon(), done: false };
-              obj5 = _undefined(_undefined2[9]);
+              obj5 = _undefined(_undefined3[9]);
               return obj4;
             }
           } else if (arg0 === 1) {
@@ -106,8 +106,9 @@ class AppIconPremiumManager extends AutomaticLifecycleManager {
           } else {
             closure_1 = value;
             if (closure_1 !== DEFAULT) {
+              let _undefined2;
               if (c6(closure_1)) {
-                const obj = _undefined(_undefined2[10]);
+                const obj = _undefined(_undefined3[10]);
                 if (obj.isHexagonCampaignPerkExpiredForCurrentUser(constants.APP_ICON)) {
                   const _HermesInternal3 = HermesInternal;
                   logger.info("Campaign icon " + closure_1 + " has expired for this user, resetting to default");
@@ -127,8 +128,8 @@ class AppIconPremiumManager extends AutomaticLifecycleManager {
                   return obj7;
                 }
               }
-              _undefined2 = c5(closure_1);
-              if (closure_1 !== _undefined2.id) {
+              _undefined3 = c5(closure_1);
+              if (closure_1 !== _undefined3.id) {
                 const _HermesInternal2 = HermesInternal;
                 logger.info("Icon " + closure_1 + " is no longer available, resetting to default");
                 let premiumType1;
@@ -137,18 +138,18 @@ class AppIconPremiumManager extends AutomaticLifecycleManager {
                 if (_undefined != null) {
                   premiumType1 = _undefined.premiumType;
                 }
-                let c1 = premiumType1;
+                _undefined2 = premiumType1;
                 if (premiumType1 == null) {
-                  c1 = undefined;
+                  _undefined2 = undefined;
                 }
-                resetIcon2(tmp38, c1, constants2.ORPHANED);
+                resetIcon2(tmp38, _undefined2, constants2.ORPHANED);
                 c6 = 3;
                 const obj8 = { value: undefined, done: true };
                 return obj8;
               } else {
-                const obj9 = _undefined(_undefined2[11]);
-                const canUseAllAppIconsResult = obj9.canUseAllAppIcons(_undefined);
-                const isPremium = !canUseAllAppIconsResult && _undefined2.isPremium;
+                const obj9 = _undefined2(_undefined3[11]);
+                const result = obj9.canUsePremiumAppIcons(_undefined);
+                const isPremium = !result && _undefined3.isPremium;
                 if (isPremium) {
                   const _HermesInternal = HermesInternal;
                   logger.info("User is not premium, resetting icon " + closure_1 + " to default");
@@ -158,16 +159,16 @@ class AppIconPremiumManager extends AutomaticLifecycleManager {
                   if (_undefined != null) {
                     premiumType2 = _undefined.premiumType;
                   }
-                  _undefined2 = premiumType2;
+                  _undefined3 = premiumType2;
                   if (premiumType2 == null) {
-                    _undefined2 = undefined;
+                    _undefined3 = undefined;
                   }
-                  resetIcon(tmp24, _undefined2, constants2.PREMIUM_LOST);
+                  resetIcon(tmp24, _undefined3, constants2.PREMIUM_LOST);
                 }
               }
             }
             c6 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp62) {
           c6 = 3;

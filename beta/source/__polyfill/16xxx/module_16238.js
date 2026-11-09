@@ -1,62 +1,88 @@
 // Module ID: 16238
 // Function ID: 16239
-// Dependencies: []
+// Dependencies: [16234, 16235, 16232, 16236, 16233, 16237]
 
 // Module 16238
-let map;
+import _mod16232 from "module_16232" /* 16232 */;
+import _mod16233 from "module_16233" /* 16233 */;
+import _mod16234 from "module_16234" /* 16234 */;
+import _mod16235 from "module_16235" /* 16235 */;
+import _mod16236 from "module_16236" /* 16236 */;
+import _mod16237 from "module_16237" /* 16237 */;
 
 
-export default function(arg0) {
-  map = arg0;
-  if (!map) {
-    const _Map = Map;
-    const self = this;
-    const self2 = this;
-    map = new Map();
-  }
-  let obj = {
-    all: map,
-    on(arg0, arg1) {
-      const value = map.get(arg0);
-      const obj = map;
-      if (value) {
-        value.push(arg1);
-      } else {
-        const items = [arg1];
-        const result = obj.set(arg0, items);
+export default function(version, arg1, version2, arg3) {
+  let tmp13;
+  let tmp13Result;
+  switch (arg1) {
+    case "===":
+    {
+      let version3 = version;
+      if (typeof version === "object") {
+        version3 = version.version;
       }
-    },
-    off(arg0, arg1) {
-      const value = map.get(arg0);
-      const obj = map;
-      if (value) {
-        const tmp = arg1;
-        if (tmp) {
-          value.splice(value.indexOf(arg1) >>> 0, 1);
-        } else {
-          const result = obj.set(arg0, []);
-        }
+      let version4 = version2;
+      if (typeof version2 === "object") {
+        version4 = version2.version;
       }
-    },
-    emit(arg0, arg1) {
-      let closure_0 = arg0;
-      let closure_1 = arg1;
-      const value = map.get(arg0);
-      const obj = map;
-      if (value) {
-        const substr = value.slice();
-        const mapped = substr.map((fn) => {
-          fn(closure_1);
-        });
-      }
-      const value2 = obj.get("*");
-      if (value2) {
-        const substr1 = value2.slice();
-        const mapped1 = substr1.map((fn) => {
-          fn(closure_0, closure_1);
-        });
-      }
+      return version3 === version4;
     }
-  };
-  return obj;
+    case "!==":
+    {
+      if (typeof version === "object") {
+        const versionValue = version.version;
+      }
+      if (typeof version2 === "object") {
+        version2 = version2.version;
+      }
+      return version !== version2;
+    }
+    case "":
+    {
+      tmp13 = _mod16234;
+      tmp13Result = tmp13(version, version2, arg3);
+      return tmp13Result;
+    }
+    case "=":
+    {
+      tmp13 = _mod16234;
+      tmp13Result = tmp13(version, version2, arg3);
+      return tmp13Result;
+    }
+    case "==":
+    {
+      tmp13 = _mod16234;
+      tmp13Result = tmp13(version, version2, arg3);
+      return tmp13Result;
+    }
+    case "!=":
+    {
+      return _mod16235(version, version2, arg3);
+    }
+    case ">":
+    {
+      return _mod16232(version, version2, arg3);
+    }
+    case ">=":
+    {
+      return _mod16236(version, version2, arg3);
+    }
+    case "<":
+    {
+      return _mod16233(version, version2, arg3);
+    }
+    case "<=":
+    {
+      return _mod16237(version, version2, arg3);
+    }
+    default:
+    {
+      const _TypeError = TypeError;
+      const _HermesInternal = HermesInternal;
+      const self = this;
+      const self2 = this;
+      const typeError = new TypeError("Invalid operator: " + arg1);
+      throw typeError;
+    }
+  }
 };

@@ -1,17 +1,17 @@
-// Module ID: 9202
-// Function ID: 9203
+// Module ID: 9282
+// Function ID: 9283
 // Name: BotTag
-// Dependencies: [19, 17, 1360, 21, 5014, 575, 1113, 9203, 5624, 2]
+// Dependencies: [19, 17, 1362, 21, 5140, 575, 1113, 9283, 5751, 2]
 
-// Module 9202 (BotTag)
+// Module 9282 (BotTag)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
-import ApplicationConstants from "ApplicationConstants" /* 1360 */;
-import CheckmarkSmallBoldIcon2 from "CheckmarkSmallBoldIcon" /* 9203 */;
+import ApplicationConstants from "ApplicationConstants" /* 1362 */;
+import CheckmarkSmallBoldIcon2 from "CheckmarkSmallBoldIcon" /* 9283 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -104,13 +104,13 @@ class BotTag {
     const obj2 = { style: items, accessible: true, accessibilityRole: "image", accessibilityLabel: stringResult, children: items1 };
     items = [tmp2.tag, tmp11, style, prop];
     items1 = [tmp7Result, ];
-    let str3 = "text-xs/semibold";
-    const Text = tmp17(5624).Text;
+    let str3 = "body-xs/semibold";
+    const Text = tmp17(5751).Text;
     const tmp24 = metroRequire;
     const tmp25 = View;
     const tmp26 = hasOwnProperty;
     if ("sm" === size) {
-      str3 = "text-xxs/semibold";
+      str3 = "footnote/semibold";
     }
     items1[1] = tmp26(Text, { variant: str3, lineClamp: 1, maxFontSizeMultiplier: 2, style: tmp12, children: tmp3 });
     return tmp24(tmp25, obj2);

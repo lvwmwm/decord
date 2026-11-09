@@ -1,20 +1,20 @@
-// Module ID: 10683
-// Function ID: 10684
+// Module ID: 10802
+// Function ID: 10803
 // Name: SKUActionCreators
-// Dependencies: [5, 9481, 6896, 1072, 572, 6455, 1282, 4835, 9557, 7762, 6446, 4834, 4827, 6535, 6553, 1379, 2]
+// Dependencies: [5, 9565, 6951, 1072, 572, 6588, 1282, 4961, 9645, 7838, 6579, 4960, 4953, 6589, 6608, 1380, 2]
 // Exports: clearPurchaseError, fetchPublicSKU, fetchPublishedSKU, fetchSKU, fetchTestSKUsForApplication, grantChannelBranchEntitlement, orderSKU, previewPurchaseSku, purchaseSKU, resendPaymentVerificationEmail, showPurchaseConfirmationStep, updateSKUPaymentIsGift
 
-// Module 10683 (SKUActionCreators)
+// Module 10802 (SKUActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
-import BillingUtils from "BillingUtils" /* 4827 */;
-import StoreUtils from "StoreUtils" /* 6455 */;
-import PurchaseTokenUtils from "PurchaseTokenUtils" /* 6553 */;
-import ShopVariantsReturnStyle from "ShopVariantsReturnStyle" /* 7762 */;
-import TestModeUtils from "TestModeUtils" /* 9557 */;
+import BillingUtils from "BillingUtils" /* 4953 */;
+import StoreUtils from "StoreUtils" /* 6588 */;
+import PurchaseTokenUtils from "PurchaseTokenUtils" /* 6608 */;
+import ShopVariantsReturnStyle from "ShopVariantsReturnStyle" /* 7838 */;
+import TestModeUtils from "TestModeUtils" /* 9645 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import StorefrontPromotionOverrideStore from "StorefrontPromotionOverrideStore" /* 9481 */;
-import SKUStore from "SKUStore" /* 6896 */;
+import StorefrontPromotionOverrideStore from "StorefrontPromotionOverrideStore" /* 9565 */;
+import SKUStore from "SKUStore" /* 6951 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -38,7 +38,7 @@ let obj = function _fetchSKU() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -94,7 +94,7 @@ let obj = function _fetchSKU() {
             c4 = 0;
           }
           c6 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp32) {
           closure_3 = tmp32;
           if (0 === c4) {
@@ -125,7 +125,7 @@ obj = function _fetchPublicSKU() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -181,7 +181,7 @@ obj = function _fetchPublicSKU() {
             c4 = 0;
           }
           c6 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp32) {
           closure_3 = tmp32;
           if (0 === c4) {
@@ -215,7 +215,7 @@ obj = function _fetchPublishedSKU() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -308,7 +308,7 @@ obj = function _fetchPublishedSKU() {
             c7 = 0;
           }
           c9 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp36) {
           closure_6 = tmp36;
           if (0 === c7) {
@@ -338,7 +338,7 @@ obj = function _fetchTestSKUsForApplication() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -441,7 +441,7 @@ obj = function _previewPurchaseSku() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let currency;
@@ -572,7 +572,7 @@ obj = function _grantChannelBranchEntitlement() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -665,7 +665,7 @@ obj = function _orderSKU() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -694,8 +694,8 @@ obj = function _orderSKU() {
               const tmp40 = closure_4;
               if (closure_3) {
                 const obj8 = { is_gift: true, gift_customization: obj10 };
-                obj10 = { is_recurring: null, recipient_id: null, gift_style: null, emoji_id: null, emoji_name: null, sound_id: null, reward_sku_ids: null, custom_message_contents: null };
-                ({ is_recurring: obj7.is_recurring, recipient_id: obj7.recipient_id, gift_style: obj7.gift_style, emoji_id: obj7.emoji_id, emoji_name: obj7.emoji_name, sound_id: obj7.sound_id, reward_sku_ids: obj7.reward_sku_ids, custom_message: obj7.custom_message_contents } = tmp40);
+                obj10 = { recipient_id: null, gift_style: null, emoji_id: null, emoji_name: null, sound_id: null, reward_sku_ids: null, custom_message_contents: null };
+                ({ recipient_id: obj7.recipient_id, gift_style: obj7.gift_style, emoji_id: obj7.emoji_id, emoji_name: obj7.emoji_name, sound_id: obj7.sound_id, reward_sku_ids: obj7.reward_sku_ids, custom_message: obj7.custom_message_contents } = tmp40);
                 result.gifting_facet = obj8;
               }
               const HTTP = HTTPUtils.HTTP;
@@ -777,15 +777,15 @@ obj = function _purchaseSKU() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
-          let closure_15;
           let closure_16;
+          let closure_17;
           let billingError;
           let paymentSource;
-          let closure_12;
+          let closure_13;
           c12 = 2;
           if (0 === c11) {
             if (arg0 === 1) {
@@ -805,8 +805,8 @@ obj = function _purchaseSKU() {
               quantity = undefined;
               body = undefined;
               promotion_id_override = undefined;
-              closure_15 = undefined;
               closure_16 = undefined;
+              closure_17 = undefined;
               billingError = undefined;
               const obj5 = {};
               const merged = Object.assign(closure_2_14);
@@ -814,13 +814,13 @@ obj = function _purchaseSKU() {
               paymentSource = obj5.paymentSource;
               ({ expectedAmount: c3, expectedCurrency: c4, analyticsLoadId: c5, isGift } = obj5);
               ({ giftInfoOptions: c7, loadId } = obj5);
-              ({ countryCode: c9, quantity: c10, applyWalletBalance: c11 } = obj5);
+              ({ countryCode: c9, quantity: c10, applyWalletBalance: c11, expectedPaymentLegs: c12 } = obj5);
               const subscriptionPlanId = obj5.subscriptionPlanId;
               const obj6 = { type: "SKU_PURCHASE_START", applicationId, skuId, isGift, loadId };
               const obj27 = DispatcherDefault;
               obj27.dispatch(obj6);
               const obj29 = TestModeUtils;
-              closure_12 = obj29.isTestModeForApplication(applicationId);
+              closure_13 = obj29.isTestModeForApplication(applicationId);
               country_code = 1;
               obj8 = { gift: isGift, sku_subscription_plan_id: subscriptionPlanId };
               c11 = 2;
@@ -833,16 +833,16 @@ obj = function _purchaseSKU() {
             let prop;
             if (1 === c11) {
               country_code = 0;
-              let closure_18 = closure_10;
-              if (closure_18 instanceof closure_136_0(closure_136_2[10]).BillingError) {
-                billingError = closure_18;
+              let closure_19 = closure_10;
+              if (closure_19 instanceof closure_136_0(closure_136_2[10]).BillingError) {
+                billingError = closure_19;
               } else {
                 const self = this;
                 const self2 = this;
-                billingError = new closure_136_0(closure_136_2[10]).BillingError(closure_18);
+                billingError = new closure_136_0(closure_136_2[10]).BillingError(closure_19);
               }
-              const tmp105 = billingError.code !== closure_136_0(closure_136_2[11]).ErrorCodes.CONFIRMATION_REQUIRED && billingError.code !== closure_136_0(closure_136_2[11]).ErrorCodes.AUTHENTICATION_REQUIRED;
-              if (!tmp105) {
+              const tmp110 = billingError.code !== closure_136_0(closure_136_2[11]).ErrorCodes.CONFIRMATION_REQUIRED && billingError.code !== closure_136_0(closure_136_2[11]).ErrorCodes.AUTHENTICATION_REQUIRED;
+              if (!tmp110) {
                 prop = skuId;
                 const obj12 = { type: "SKU_PURCHASE_AWAIT_CONFIRMATION", skuId, isGift };
                 const obj16 = closure_136_1(closure_136_2[4]);
@@ -853,9 +853,9 @@ obj = function _purchaseSKU() {
               prop.dispatch(obj13);
               if (billingError.code !== closure_136_0(closure_136_2[11]).ErrorCodes.CONFIRMATION_REQUIRED) {
                 throw billingError;
-              } else if (closure_18.body.payment_id) {
+              } else if (closure_19.body.payment_id) {
                 c12 = 3;
-                const obj14 = { value: obj20.handlePaymentConfirmation(closure_18.body, paymentSource), done: true };
+                const obj14 = { value: obj20.handlePaymentConfirmation(closure_19.body, paymentSource), done: true };
                 obj20 = closure_136_0(closure_136_2[13]);
                 return obj14;
               } else {
@@ -881,7 +881,7 @@ obj = function _purchaseSKU() {
                   if (null != promotion_id_override) {
                     body.promotion_id_override = promotion_id_override;
                   }
-                  const tmp42 = closure_12;
+                  const tmp42 = closure_13;
                   if (tmp42) {
                     body.test_mode = true;
                   } else if (null != paymentSource) {
@@ -911,6 +911,9 @@ obj = function _purchaseSKU() {
                     _false = false;
                   }
                   tmp74.apply_wallet_balance = _false;
+                  if (null != c12) {
+                    body.expected_payment_legs = c12.map((payment_gateway) => ({ payment_gateway: payment_gateway.payment_gateway, amount: payment_gateway.amount }));
+                  }
                   const HTTP = closure_136_0(closure_136_2[6]).HTTP;
                   const request = { url: closure_136_7.STORE_SKU_PURCHASE(skuId), body, context: obj18, oldFormErrors: true, rejectWithError: prop.rejectWithMigratedError() };
                   const post = HTTP.post;
@@ -930,14 +933,14 @@ obj = function _purchaseSKU() {
                   c12 = 3;
                   return { value, done: true };
                 } else {
-                  closure_15 = value;
+                  closure_16 = value;
                   prop = closure_136_7.BILLING_POPUP_BRIDGE_CALLBACK_REDIRECT_PREFIX;
-                  expected_amount = closure_15;
+                  expected_amount = closure_16;
                   const obj7 = closure_136_0(closure_136_2[6]);
                   const aPIBaseURL = obj7.getAPIBaseURL();
                   const type = paymentSource.type;
                   const tmp30 = body;
-                  if (closure_15 == null) {
+                  if (closure_16 == null) {
                     expected_amount = "";
                   }
                   tmp30.return_url = aPIBaseURL + prop(type, expected_amount, "success");
@@ -968,21 +971,21 @@ obj = function _purchaseSKU() {
                 c12 = 3;
                 return { value, done: true };
               } else {
-                closure_16 = value;
-                const obj26 = { type: "SKU_PURCHASE_SUCCESS", skuId, libraryApplications: prop, entitlements: closure_16.body.entitlements, giftCode: closure_16.body.gift_code, loadId };
+                closure_17 = value;
+                const obj26 = { type: "SKU_PURCHASE_SUCCESS", skuId, libraryApplications: prop, entitlements: closure_17.body.entitlements, giftCode: closure_17.body.gift_code, loadId };
                 prop = skuId;
                 const dispatch = closure_136_1(closure_136_2[4]).dispatch;
                 closure_136_1(closure_136_2[4]);
-                if (null != closure_16.body.library_applications) {
-                  const library_applications = closure_16.body.library_applications;
+                if (null != closure_17.body.library_applications) {
+                  const library_applications = closure_17.body.library_applications;
                   prop = library_applications.filter(closure_136_0(closure_136_2[15]).isNotNullish);
                 } else {
                   prop = [];
                 }
                 prop = loadId;
                 dispatch(obj26);
-                obj = { appliedUserDiscounts: closure_16.body.applied_user_discounts, redirectConfirmation: false };
-                const merged2 = Object.assign(closure_16.body);
+                obj = { appliedUserDiscounts: closure_17.body.applied_user_discounts, redirectConfirmation: false };
+                const merged2 = Object.assign(closure_17.body);
                 country_code = 0;
                 c12 = 3;
                 return { value: obj, done: true };
@@ -992,11 +995,11 @@ obj = function _purchaseSKU() {
               }
             }
           }
-        } catch (tmp139) {
-          closure_10 = tmp139;
+        } catch (tmp144) {
+          closure_10 = tmp144;
           if (0 === country_code) {
             c12 = 3;
-            throw tmp139;
+            throw tmp144;
           } else {
             c11 = 1;
           }
@@ -1020,7 +1023,7 @@ obj = function _resendPaymentVerificationEmail() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;

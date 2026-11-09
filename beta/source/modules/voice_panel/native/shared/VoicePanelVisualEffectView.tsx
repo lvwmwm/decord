@@ -1,16 +1,16 @@
-// Module ID: 19302
-// Function ID: 19303
+// Module ID: 19707
+// Function ID: 19708
 // Name: VoicePanelVisualEffectView
-// Dependencies: [19, 17, 1192, 21, 5014, 575, 5596, 504, 5021, 1375, 8992, 2]
+// Dependencies: [19, 17, 1192, 21, 5140, 575, 5724, 504, 5147, 1377, 9072, 2]
 
-// Module 19302 (VoicePanelVisualEffectView)
+// Module 19707 (VoicePanelVisualEffectView)
 import nativeDefault from "native" /* 575 */;
-import PlatformUtils from "PlatformUtils" /* 1375 */;
+import PlatformUtils from "PlatformUtils" /* 1377 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ThemeStore from "ThemeStore" /* 1192 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let StyleSheet;

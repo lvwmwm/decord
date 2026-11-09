@@ -1,160 +1,223 @@
-// Module ID: 18795
-// Function ID: 18796
+// Module ID: 19158
+// Function ID: 19159
 // Name: SearchTabsTransitionGroup
-// Dependencies: [19, 21, 4839, 12170, 5095, 5080, 5637, 5638, 13998, 2]
+// Dependencies: [19, 21, 4965, 12342, 1652, 5199, 5761, 5762, 1705, 14232, 2]
 // Exports: default
 
-// Module 18795 (SearchTabsTransitionGroup)
+// Module 19158 (SearchTabsTransitionGroup)
 import Fragment from "Fragment" /* 21 */;
-import native from "native" /* 5080 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
-import spring from "spring" /* 5637 */;
-import springPresets from "springPresets" /* 5638 */;
+import native from "native" /* 5199 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
-let set;
+let set, tmp2;
 
 function getItemKey(items) {
   items = items.items;
   const mapped = items.map((id) => id.id);
   return mapped.join("-");
 }
-function AnimatedTabs(state) {
-  let Tabs;
+function AnimatedTabs(cleanUp) {
   let gesture;
-  let obj3;
+  let state;
+  let tmp10;
+  let tmp11;
+  let tmp12;
+  let tmp13;
   let tmp14;
-  state = state.state;
-  const transitionState = state.transitionState;
-  const cleanUp = state.cleanUp;
+  let tmp21;
+  let tmp22;
+  let tmp24;
+  let tmp25;
+  let tmp26;
+  let tmp27;
+  let tmp31;
+  let tmp6;
+  let tmp7;
+  let tmp8;
+  let tmp9;
+  let transitionState;
+  ({ state, transitionState } = cleanUp);
   let sharedValue;
-  let context;
-  let tmp = state;
-  const useSharedValue = state(cleanUp[4]).useSharedValue;
+  let tmp = transitionState;
+  cleanUp = cleanUp.cleanUp;
+  let tmp3 = transitionState(1652);
+  const useSharedValue = tmp3.useSharedValue;
   let num = 0;
-  const tmp3 = state(cleanUp[4]);
-  if (transitionState === state(cleanUp[5]).TransitionStates.MOUNTED) {
+  if (transitionState === transitionState(5199).TransitionStates.MOUNTED) {
     num = 1;
   }
   sharedValue = useSharedValue(num);
-  let fn = function f() {
-    let fn;
-    let springStandard;
-    let str;
-    let value;
-    let withSpring;
-    let obj = { opacity: withSpring(value, springStandard, "respect-motion-settings", fn), position: str };
-    let tmp = spring;
-    withSpring = tmp.withSpring;
-    value = sharedValue.get();
-    fn = function t(arg0) {
-      const tmp = arg0 && transitionState === state(cleanUp[5]).TransitionStates.YEETED;
-      if (tmp) {
-        const obj = state(cleanUp[4]);
-        obj.runOnJS(closure_1_2)();
+  let items = [closure_7, , , , , , , , ];
+  const useAnimatedStyle = tmp(1652).useAnimatedStyle;
+  tmp(1652);
+  items[1] = tmp(5761).withSpring;
+  items[2] = sharedValue;
+  items[3] = tmp(5762).springStandard;
+  items[4] = closure_6;
+  items[5] = transitionState;
+  items[6] = tmp(5199).TransitionStates;
+  items[7] = tmp(1705).scheduleOnRN;
+  items[8] = cleanUp;
+  let c0;
+  let c1;
+  let c2;
+  let c3;
+  let c4;
+  let c5;
+  let c6;
+  let c7;
+  [tmp6, tmp7, tmp8, tmp9, tmp10, tmp11, tmp12, tmp13, tmp14] = items;
+  class SearchTabsTransitionGroupTsx2 {
+    constructor() {
+      let _undefined;
+      let str;
+      let tmp4;
+      let tmp5;
+      let tmp6;
+      let tmp7;
+      let tmp8;
+      let tmp = c0;
+      const value = _undefined.get();
+      const items = [c3, c4, c5, c6, c7];
+      c0 = undefined;
+      const obj = _undefined;
+      _undefined = undefined;
+      const tmp3 = c2;
+      c2 = undefined;
+      c3 = undefined;
+      [tmp4, tmp5, tmp6, tmp7, tmp8] = items;
+      const obj2 = { opacity: tmp(value, tmp3, "respect-motion-settings", SearchTabsTransitionGroupTsx1), position: str };
+      class SearchTabsTransitionGroupTsx1 {
+        constructor(arg0) {
+          tmp = arg0;
+          if (tmp) {
+            tmp2 = closure_0;
+            tmp3 = closure_1;
+            tmp = closure_0 === closure_1.YEETED;
+          }
+          if (tmp) {
+            tmp4 = closure_2;
+            tmp5 = closure_3;
+            tmp6 = closure_2(closure_3);
+          }
+          return;
+        }
       }
-    };
-    const obj2 = { transitionState, TransitionStates: native.TransitionStates, runOnJS: ReanimatedRexport.runOnJS, cleanUp };
-    springStandard = springPresets.springStandard;
-    fn.__closure = obj2;
-    fn.__workletHash = 15209468679721;
-    fn.__initData = __initData;
-    str = "absolute";
-    if (1 === sharedValue.get()) {
-      str = "relative";
+      const items1 = [tmp5, tmp6, tmp7, tmp8];
+      SearchTabsTransitionGroupTsx1.__closure = items1;
+      SearchTabsTransitionGroupTsx1.__workletHash = 537193228402;
+      SearchTabsTransitionGroupTsx1.__initData = tmp4;
+      str = "absolute";
+      if (1 === obj.get()) {
+        str = "relative";
+      }
+      return obj2;
     }
-    return obj;
-  };
-  const tmpResult = tmp(cleanUp[4]);
-  let obj = { withSpring: tmp(tmp2[6]).withSpring, opacity: sharedValue, springStandard: tmp(tmp2[7]).springStandard, transitionState, TransitionStates: tmp(tmp2[5]).TransitionStates, runOnJS: tmp(tmp2[4]).runOnJS, cleanUp };
-  fn.__closure = obj;
-  fn.__workletHash = 10740262883803;
-  fn.__initData = __initData;
-  const items = [sharedValue, transitionState];
-  const animatedStyle = tmpResult.useAnimatedStyle(fn);
-  const effect = sharedValue.useEffect(() => {
+  }
+  let items1 = [tmp7, tmp8, tmp9, tmp10, tmp11, tmp12, tmp13, tmp14];
+  SearchTabsTransitionGroupTsx2.__closure = items1;
+  SearchTabsTransitionGroupTsx2.__workletHash = 1226548959062;
+  SearchTabsTransitionGroupTsx2.__initData = tmp6;
+  const items2 = [sharedValue, transitionState];
+  const animatedStyle = useAnimatedStyle(SearchTabsTransitionGroupTsx2);
+  const effect = react.useEffect(() => {
     let num = 1;
     set = sharedValue.set;
     if (transitionState === native.TransitionStates.YEETED) {
       num = 0;
     }
     const result = set(num);
-  }, items);
-  const SearchResultExactCountEnabled = tmp(cleanUp[2]).SearchResultExactCountEnabled;
+  }, items2);
+  const SearchResultExactCountEnabled = tmp(4965).SearchResultExactCountEnabled;
   const setting = SearchResultExactCountEnabled.useSetting();
-  const items1 = [setting];
-  const callback = sharedValue.useCallback((toLocaleString) => {
+  const items3 = [setting];
+  const callback = react.useCallback((toLocaleString) => {
     const tmp = setting;
     if (!tmp) {
       let combined;
       if (toLocaleString > 1000) {
         const _HermesInternal = HermesInternal;
-        const obj = state(cleanUp[3]);
+        const obj = transitionState(dependencyMap[3]);
         combined = "(" + obj.defaultCountFormatter(1000) + "+)";
       }
       return combined;
     }
-    const obj2 = state(cleanUp[3]);
+    const obj2 = transitionState(dependencyMap[3]);
     combined = "(" + obj2.defaultCountFormatter(toLocaleString) + ")";
-  }, items1);
-  context = sharedValue.useContext(tmp(tmp2[8]).SwipeForMemberListContext);
-  const fn2 = function h() {
-    if (context != null) {
-      const disallowGesture = context.disallowGesture;
-      const result = disallowGesture.set(false);
-    }
-  };
-  fn2.__closure = { swipeForMemberListContext: context };
-  fn2.__workletHash = 5080152010224;
-  fn2.__initData = __initData2;
-  const items2 = [context];
-  const callback1 = sharedValue.useCallback(fn2, items2);
-  const tmpResult2 = tmp(cleanUp[4]);
-  class F {
+  }, items3);
+  const context = react.useContext(tmp(14232).SwipeForMemberListContext);
+  const items4 = [closure_8, context];
+  c0 = undefined;
+  [tmp21, tmp22] = items4;
+  class SearchTabsTransitionGroupTsx3 {
     constructor() {
-      const scrollOffset = state.scrollOffset;
+      if (_undefined != null) {
+        const disallowGesture = _undefined.disallowGesture;
+        const result = disallowGesture.set(false);
+      }
+    }
+  }
+  const items5 = [tmp22];
+  SearchTabsTransitionGroupTsx3.__closure = items5;
+  SearchTabsTransitionGroupTsx3.__workletHash = 14662172823401;
+  SearchTabsTransitionGroupTsx3.__initData = tmp21;
+  const items6 = [context];
+  const callback1 = react.useCallback(SearchTabsTransitionGroupTsx3, items6);
+  const items7 = [closure_9, state];
+  c0 = undefined;
+  [tmp24, tmp25] = items7;
+  const tmpResult2 = tmp(1652);
+  class SearchTabsTransitionGroupTsx4 {
+    constructor() {
+      const scrollOffset = _undefined.scrollOffset;
       return scrollOffset.get() > 0;
     }
   }
-  F.__closure = { state };
-  F.__workletHash = 7791091456487;
-  F.__initData = __initData3;
-  const fn3 = function w(arg0, arg1) {
-    if (arg0 !== arg1) {
-      if (context != null) {
-        const disallowGesture = context.disallowGesture;
-        const result = disallowGesture.set(arg0);
+  const items8 = [tmp25];
+  SearchTabsTransitionGroupTsx4.__closure = items8;
+  SearchTabsTransitionGroupTsx4.__workletHash = 470062012350;
+  SearchTabsTransitionGroupTsx4.__initData = tmp24;
+  const items9 = [closure_10, context];
+  c0 = undefined;
+  [tmp26, tmp27] = items9;
+  class SearchTabsTransitionGroupTsx5 {
+    constructor(arg0, arg1) {
+      if (arg0 !== arg1) {
+        if (_undefined != null) {
+          const disallowGesture = _undefined.disallowGesture;
+          const result = disallowGesture.set(arg0);
+        }
       }
     }
-  };
-  fn3.__closure = { swipeForMemberListContext: context };
-  fn3.__workletHash = 15386779064911;
-  fn3.__initData = __initData4;
-  const animatedReaction = tmpResult2.useAnimatedReaction(F, fn3);
-  let obj2 = { style: animatedStyle, children: context(Tabs, obj3) };
-  const View = transitionState(tmp2[4]).View;
-  obj3 = { state, grow: false, formatCount: callback, simultaneousHandlers: gesture, onEndDrag: tmp14 };
+  }
+  const items10 = [tmp27];
+  SearchTabsTransitionGroupTsx5.__closure = items10;
+  SearchTabsTransitionGroupTsx5.__workletHash = 15943463641590;
+  SearchTabsTransitionGroupTsx5.__initData = tmp26;
+  const animatedReaction = tmpResult2.useAnimatedReaction(SearchTabsTransitionGroupTsx4, SearchTabsTransitionGroupTsx5);
+  const View = sharedValue(1652).View;
+  let obj2 = { state, grow: false, formatCount: callback, simultaneousHandlers: gesture, onEndDrag: tmp31 };
   gesture = undefined;
-  Tabs = tmp(tmp2[3]).Tabs;
+  const Tabs = tmp(12342).Tabs;
   if (context != null) {
     gesture = context.gesture;
   }
-  tmp14 = undefined;
+  tmp31 = undefined;
   if (null != context) {
-    tmp14 = callback1;
+    tmp31 = callback1;
   }
-  return context(View, obj2);
+  return <View style={animatedStyle}>{null}</View>;
 }
 function renderItem(arg0, state, transitionState, cleanUp) {
   return <AnimatedTabs key={arg0} state={arg1} transitionState={arg2} cleanUp={arg3} />;
 }
 const jsx = Fragment.jsx;
-const __initData = { code: "function SearchTabsTransitionGroupTsx1(){const{withSpring,opacity,springStandard,transitionState,TransitionStates,runOnJS,cleanUp}=this.__closure;return{opacity:withSpring(opacity.get(),springStandard,'respect-motion-settings',function(finished){if(finished&&transitionState===TransitionStates.YEETED){runOnJS(cleanUp)();}}),position:opacity.get()===1?'relative':'absolute'};}" };
-let closure_7 = { code: "function SearchTabsTransitionGroupTsx2(finished){const{transitionState,TransitionStates,runOnJS,cleanUp}=this.__closure;if(finished&&transitionState===TransitionStates.YEETED){runOnJS(cleanUp)();}}" };
-const __initData2 = { code: "function SearchTabsTransitionGroupTsx3(){const{swipeForMemberListContext}=this.__closure;var _swipeForMemberListCo;(_swipeForMemberListCo=swipeForMemberListContext)===null||_swipeForMemberListCo===void 0||_swipeForMemberListCo.disallowGesture.set(false);}" };
-const __initData3 = { code: "function SearchTabsTransitionGroupTsx4(){const{state}=this.__closure;return state.scrollOffset.get()>0;}" };
-const __initData4 = { code: "function SearchTabsTransitionGroupTsx5(isOffsetFromStart,prevIsOffsetFromStart){const{swipeForMemberListContext}=this.__closure;if(isOffsetFromStart!==prevIsOffsetFromStart){var _swipeForMemberListCo;(_swipeForMemberListCo=swipeForMemberListContext)===null||_swipeForMemberListCo===void 0||_swipeForMemberListCo.disallowGesture.set(isOffsetFromStart);}}" };
+let closure_6 = { code: "(function SearchTabsTransitionGroupTsx1(finished){let[transitionState,TransitionStates,scheduleOnRN,cleanUp]=this.__closure;if(finished&&transitionState===TransitionStates.YEETED){scheduleOnRN(cleanUp);}})" };
+let closure_7 = { code: "(function SearchTabsTransitionGroupTsx2(){let[withSpring,opacity,springStandard,_worklet_537193228402_init_data,transitionState,TransitionStates,scheduleOnRN,cleanUp]=this.__closure;return{opacity:withSpring(opacity.get(),springStandard,'respect-motion-settings',function SearchTabsTransitionGroupTsx1Factory([_worklet_537193228402_init_data,transitionState,TransitionStates,scheduleOnRN,cleanUp]){const SearchTabsTransitionGroupTsx1=function(finished){if(finished&&transitionState===TransitionStates.YEETED){scheduleOnRN(cleanUp);}};SearchTabsTransitionGroupTsx1.__closure=[transitionState,TransitionStates,scheduleOnRN,cleanUp];SearchTabsTransitionGroupTsx1.__workletHash=537193228402;SearchTabsTransitionGroupTsx1.__initData=_worklet_537193228402_init_data;return SearchTabsTransitionGroupTsx1;}([_worklet_537193228402_init_data,transitionState,TransitionStates,scheduleOnRN,cleanUp])),position:opacity.get()===1?'relative':'absolute'};})" };
+let closure_8 = { code: "(function SearchTabsTransitionGroupTsx3(){let[swipeForMemberListContext]=this.__closure;var _swipeForMemberListCo;(_swipeForMemberListCo=swipeForMemberListContext)===null||_swipeForMemberListCo===void 0||_swipeForMemberListCo.disallowGesture.set(false);})" };
+let closure_9 = { code: "(function SearchTabsTransitionGroupTsx4(){let[state]=this.__closure;return state.scrollOffset.get()>0;})" };
+let closure_10 = { code: "(function SearchTabsTransitionGroupTsx5(isOffsetFromStart,prevIsOffsetFromStart){let[swipeForMemberListContext]=this.__closure;if(isOffsetFromStart!==prevIsOffsetFromStart){var _swipeForMemberListCo;(_swipeForMemberListCo=swipeForMemberListContext)===null||_swipeForMemberListCo===void 0||_swipeForMemberListCo.disallowGesture.set(isOffsetFromStart);}})" };
 let result = size.fileFinishedImporting("modules/search/native/components/tabs/SearchTabsTransitionGroup.tsx");
 
 export default function SearchTabsTransitionGroup(state) {

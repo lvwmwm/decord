@@ -1,18 +1,18 @@
-// Module ID: 16476
-// Function ID: 16477
+// Module ID: 16794
+// Function ID: 16795
 // Name: HexagonCampaignDisplayNameStylePromo
-// Dependencies: [19, 17, 21, 5014, 575, 5080, 16477, 16478, 5624, 1113, 4285, 16480, 2]
+// Dependencies: [19, 17, 21, 5140, 575, 5199, 16795, 16796, 5751, 1113, 4411, 16798, 2]
 // Exports: default
 
-// Module 16476 (HexagonCampaignDisplayNameStylePromo)
+// Module 16794 (HexagonCampaignDisplayNameStylePromo)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import HexagonCampaignPromoGradientDefault from "HexagonCampaignPromoGradient" /* 16478 */;
-import openHexagonCampaignLearnMore from "openHexagonCampaignLearnMore" /* 16480 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import HexagonCampaignPromoGradientDefault from "HexagonCampaignPromoGradient" /* 16796 */;
+import openHexagonCampaignLearnMore from "openHexagonCampaignLearnMore" /* 16798 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -52,15 +52,15 @@ export default function HexagonCampaignDisplayNameStylePromo(showLearnMore) {
   if (flag) {
     const obj3 = {
       learnMoreHook(children, arg1) {
-          const obj = { variant: "text-xxs/medium", color: "text-strong", style: link.link, accessibilityRole: "link", onPress: openHexagonCampaignLearnMore.openHexagonCampaignLearnMore, children };
+          const obj = { variant: "footnote/medium", color: "text-strong", style: link.link, accessibilityRole: "link", onPress: openHexagonCampaignLearnMore.openHexagonCampaignLearnMore, children };
           const Text = Text_Text.Text;
           return React3(Text, obj, arg1);
         }
     };
-    formatResult = intl.format(tmp6(4285).eb99JA, obj3);
+    formatResult = intl.format(tmp6(4411).eb99JA, obj3);
   } else {
-    formatResult = intl.string(tmp6(4285).WyZOg3);
+    formatResult = intl.string(tmp6(4411).WyZOg3);
   }
-  items[1] = closure_4(Text, { variant: "text-xxs/medium", color: "text-default", lineClamp: 1, children: formatResult });
+  items[1] = closure_4(Text, { variant: "footnote/medium", color: "text-default", lineClamp: 1, children: formatResult });
   return closure_4(ThemeContextProvider, obj);
 };

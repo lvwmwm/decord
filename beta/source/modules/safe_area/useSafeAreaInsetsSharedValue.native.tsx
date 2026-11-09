@@ -1,30 +1,48 @@
-// Module ID: 11244
-// Function ID: 11245
+// Module ID: 11384
+// Function ID: 11385
 // Name: useSafeAreaInsetsSharedValue
-// Dependencies: [5095, 1625, 11245, 11227, 1638, 1494, 2]
+// Dependencies: [1652, 1627, 11385, 11367, 1640, 1496, 2]
 // Exports: default
 
-// Module 11244 (useSafeAreaInsetsSharedValue)
-import AppEntryKeyContext from "AppEntryKeyContext" /* 1494 */;
-import AppEntryKey from "AppEntryKey" /* 1638 */;
-import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 11227 */;
-import subscribeToSafeAreaInsetsDefault from "subscribeToSafeAreaInsets" /* 11245 */;
-import ReanimatedRexport_mod from "ReanimatedRexport" /* 5095 */;
-import useSafeAreaInsets_mod from "useSafeAreaInsets" /* 1625 */;
+// Module 11384 (useSafeAreaInsetsSharedValue)
+import AppEntryKeyContext from "AppEntryKeyContext" /* 1496 */;
+import AppEntryKey from "AppEntryKey" /* 1640 */;
+import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 11367 */;
+import subscribeToSafeAreaInsetsDefault from "subscribeToSafeAreaInsets" /* 11385 */;
+import module_1652_mod from "module_1652" /* 1652 */;
+import useSafeAreaInsets_mod from "useSafeAreaInsets" /* 1627 */;
 import size from "module_2" /* 2 */;
 
 let makeMutable;
 let makeMutable2;
 let obj2;
 let obj3;
+function getSafeAreaInsetsWorklet_useSafeAreaInsetsSharedValueNativeTsx1Factory(items) {
+  let tmp;
+  let tmp2;
+  [tmp, tmp2] = items;
+  function getSafeAreaInsetsWorklet() {
+    let str = arg0;
+    if (arg0 === undefined) {
+      str = "main";
+    }
+    obj = require[str];
+    return obj.get();
+  }
+  items = [tmp2];
+  getSafeAreaInsetsWorklet.__closure = items;
+  getSafeAreaInsetsWorklet.__workletHash = 50436263204;
+  getSafeAreaInsetsWorklet.__initData = tmp;
+  return getSafeAreaInsetsWorklet;
+}
 let obj = { main: makeMutable(obj2), share: makeMutable2(obj3) };
-let ReanimatedRexport = ReanimatedRexport_mod;
-makeMutable = ReanimatedRexport.makeMutable;
+let module_1652 = module_1652_mod;
+makeMutable = module_1652.makeMutable;
 obj2 = {};
 let useSafeAreaInsets = useSafeAreaInsets_mod;
 const merged = Object.assign(useSafeAreaInsets.getSafeAreaInsets("main"));
-ReanimatedRexport = ReanimatedRexport_mod;
-makeMutable2 = ReanimatedRexport.makeMutable;
+module_1652 = module_1652_mod;
+makeMutable2 = module_1652.makeMutable;
 obj3 = {};
 useSafeAreaInsets = useSafeAreaInsets_mod;
 const merged1 = Object.assign(useSafeAreaInsets.getSafeAreaInsets("share"));
@@ -39,23 +57,8 @@ while (iter !== undefined) {
   let _loopResult = _loop(iter.next());
   continue;
 }
-const __initData = { code: "function getSafeAreaInsetsWorklet_useSafeAreaInsetsSharedValueNativeTsx1(appEntryKey='main'){const{safeAreaInsetsSharedValues}=this.__closure;return safeAreaInsetsSharedValues[appEntryKey].get();}" };
-const tmp7 = (() => {
-  let __closure;
-  function getSafeAreaInsetsWorklet() {
-    let str = arg0;
-    if (arg0 === undefined) {
-      str = "main";
-    }
-    obj = closure_1_3[str];
-    return obj.get();
-  }
-  __closure = { safeAreaInsetsSharedValues: __closure };
-  getSafeAreaInsetsWorklet.__closure = __closure;
-  getSafeAreaInsetsWorklet.__workletHash = 5220247127549;
-  getSafeAreaInsetsWorklet.__initData = __initData;
-  return getSafeAreaInsetsWorklet;
-})();
+let items = [{ code: "(function getSafeAreaInsetsWorklet_useSafeAreaInsetsSharedValueNativeTsx1(appEntryKey='main'){let[safeAreaInsetsSharedValues]=this.__closure;return safeAreaInsetsSharedValues[appEntryKey].get();})" }, obj];
+const tmp7 = getSafeAreaInsetsWorklet_useSafeAreaInsetsSharedValueNativeTsx1Factory(items);
 const result = size.fileFinishedImporting("modules/safe_area/useSafeAreaInsetsSharedValue.native.tsx");
 
 export default function useSafeAreaInsetsSharedValue() {

@@ -1,12 +1,12 @@
-// Module ID: 10246
-// Function ID: 10247
+// Module ID: 10365
+// Function ID: 10366
 // Name: GIFPickerUtils
-// Dependencies: [1072, 10245, 2]
+// Dependencies: [1072, 10364, 2]
 // Exports: calculateAnalyticsMetadata, getGIFThumbnailForFavorite, isKlipyProvider, shouldUseAnimatedWebPThumbnail
 
-// Module 10246 (GIFPickerUtils)
+// Module 10365 (GIFPickerUtils)
 import Constants from "Constants" /* 1072 */;
-import GifProvider from "GifProvider" /* 10245 */;
+import GifProvider from "GifProvider" /* 10364 */;
 import size from "module_2" /* 2 */;
 
 const SearchTypes = Constants.SearchTypes;
@@ -38,7 +38,6 @@ export function calculateAnalyticsMetadata(analyticsID, TRENDING_GIFS, arg2) {
   let num2;
   let obj;
   let offset;
-  let results;
   let tmp2;
   let totalResults;
   if (null != TRENDING_GIFS) {

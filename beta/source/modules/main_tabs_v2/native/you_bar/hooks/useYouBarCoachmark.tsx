@@ -1,15 +1,15 @@
-// Module ID: 18431
-// Function ID: 18432
+// Module ID: 18788
+// Function ID: 18789
 // Name: useYouBarCoachmark
-// Dependencies: [32, 19, 5045, 4860, 1113, 4847, 5095, 16611, 1498, 504, 15586, 5772, 7569, 18432, 9954, 2]
+// Dependencies: [32, 19, 5171, 4986, 1113, 4973, 1652, 16933, 1500, 504, 15901, 5901, 7641, 18789, 10076, 2]
 // Exports: useYouBarCoachmark
 
-// Module 18431 (useYouBarCoachmark)
-import dismissible_content from "dismissible_content" /* 4847 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4860 */;
+// Module 18788 (useYouBarCoachmark)
+import dismissible_content from "dismissible_content" /* 4973 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4986 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5045 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5171 */;
 import size from "module_2" /* 2 */;
 
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
@@ -21,23 +21,23 @@ export function useYouBarCoachmark(isCondensed) {
   let tmp7;
   let tmp8;
   isCondensed = isCondensed.isCondensed;
-  let isTinyBroncoEligible;
-  let obj = isCondensed(isTinyBroncoEligible[6]);
+  let isAgeNoticeEligible;
+  let obj = isCondensed(isAgeNoticeEligible[6]);
   const animatedRef = obj.useAnimatedRef();
-  let obj2 = isCondensed(isTinyBroncoEligible[7]);
-  isTinyBroncoEligible = obj2.useIsTinyBroncoEligible();
-  const obj3 = isCondensed(isTinyBroncoEligible[8]);
+  let obj2 = isCondensed(isAgeNoticeEligible[7]);
+  isAgeNoticeEligible = obj2.useIsAgeNoticeEligible();
+  const obj3 = isCondensed(isAgeNoticeEligible[8]);
   const isFocused = obj3.useIsFocused();
   let items = [SelectedGuildStore];
-  const obj4 = isCondensed(isTinyBroncoEligible[9]);
+  const obj4 = isCondensed(isAgeNoticeEligible[9]);
   const stateFromStores = obj4.useStateFromStores(items, () => {
-    const obj = isCondensed(isTinyBroncoEligible[10]);
-    const obj2 = { from: "authed", unit: isCondensed(isTinyBroncoEligible[11]).TimeUnits.DAYS };
+    const obj = isCondensed(isAgeNoticeEligible[10]);
+    const obj2 = { from: "authed", unit: isCondensed(isAgeNoticeEligible[11]).TimeUnits.DAYS };
     const tmp = obj.getFirstInstallTimeElapsed(obj2) >= 10;
     const tmp2 = null != guildId.getGuildId() && tmp;
     return tmp2;
   });
-  const items1 = [isCondensed, stateFromStores, isTinyBroncoEligible, isFocused];
+  const items1 = [isCondensed, stateFromStores, isAgeNoticeEligible, isFocused];
   const memo = stateFromStores.useMemo(() => {
     const tmp = isCondensed;
     if (!tmp) {
@@ -49,7 +49,7 @@ export function useYouBarCoachmark(isCondensed) {
           items.push(dismissible_content.DismissibleContent.YOU_BAR_DM_SWIPE_COACHMARK);
         }
         items.push(dismissible_content.DismissibleContent.PRIVATE_PROFILE_COACHMARK);
-        const tmp10 = isTinyBroncoEligible;
+        const tmp10 = isAgeNoticeEligible;
         if (tmp10) {
           items.push(dismissible_content.DismissibleContent.TINY_BRONCO);
         }
@@ -58,7 +58,7 @@ export function useYouBarCoachmark(isCondensed) {
     }
     return closure_6;
   }, items1);
-  const obj5 = isCondensed(isTinyBroncoEligible[12]);
+  const obj5 = isCondensed(isAgeNoticeEligible[12]);
   [tmp7, tmp8] = isFocused(obj5.useSelectedDismissibleContent(memo), 2);
   const items2 = [markAsDismissed, visibleContent];
   isFocused(obj5.useSelectedDismissibleContent(memo), 2);
@@ -66,23 +66,23 @@ export function useYouBarCoachmark(isCondensed) {
     let intl;
     let intl2;
     const obj = {
-      title: intl.string(isCondensed(isTinyBroncoEligible[4]).t.gMFchc),
-      description: intl2.string(isCondensed(isTinyBroncoEligible[4]).t["V3j11+"]),
+      title: intl.string(isCondensed(isAgeNoticeEligible[4]).t.gMFchc),
+      description: intl2.string(isCondensed(isAgeNoticeEligible[4]).t["V3j11+"]),
       position: "top",
-      visible: visibleContent === isCondensed(isTinyBroncoEligible[5]).DismissibleContent.YOU_BAR_DM_SWIPE_COACHMARK,
+      visible: visibleContent === isCondensed(isAgeNoticeEligible[5]).DismissibleContent.YOU_BAR_DM_SWIPE_COACHMARK,
       onDismiss() {
         return markAsDismissed(constants.USER_DISMISS);
       }
     };
-    intl = isCondensed(isTinyBroncoEligible[4]).intl;
-    intl2 = isCondensed(isTinyBroncoEligible[4]).intl;
+    intl = isCondensed(isAgeNoticeEligible[4]).intl;
+    intl2 = isCondensed(isAgeNoticeEligible[4]).intl;
     return obj;
   }, items2);
-  const obj6 = isCondensed(isTinyBroncoEligible[13]);
+  const obj6 = isCondensed(isAgeNoticeEligible[13]);
   const privateProfileCoachmarkProps = obj6.usePrivateProfileCoachmarkProps({ visibleContent, markAsDismissed });
-  const obj7 = isCondensed(isTinyBroncoEligible[14]);
+  const obj7 = isCondensed(isAgeNoticeEligible[14]);
   const coachmark = obj7.useCoachmark(animatedRef, privateProfileCoachmarkProps);
-  const obj8 = isCondensed(isTinyBroncoEligible[14]);
+  const obj8 = isCondensed(isAgeNoticeEligible[14]);
   const coachmark1 = obj8.useCoachmark(animatedRef, memo1);
   return { animatedRef, visibleContent, markAsDismissed };
 }

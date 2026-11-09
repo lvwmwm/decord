@@ -1,85 +1,112 @@
-// Module ID: 16961
-// Function ID: 16962
+// Module ID: 17284
+// Function ID: 17285
 // Name: BountiesScrollEndCard
-// Dependencies: [19, 17, 5015, 6781, 21, 5014, 575, 5254, 5257, 5095, 5587, 16962, 16964, 16922, 504, 16923, 9960, 2]
+// Dependencies: [19, 17, 5141, 6836, 21, 5140, 575, 5370, 5373, 1652, 5715, 17285, 17287, 17245, 504, 17246, 10082, 2]
 // Exports: default
 
-// Module 16961 (BountiesScrollEndCard)
+// Module 17284 (BountiesScrollEndCard)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
-import timing from "timing" /* 5254 */;
-import timingPresets from "timingPresets" /* 5257 */;
-import QuestConstants from "QuestConstants" /* 6781 */;
-import AnimatedEnterExitItemDefault from "AnimatedEnterExitItem" /* 9960 */;
-import BountiesModalTransitionsRefactorExperiment from "BountiesModalTransitionsRefactorExperiment" /* 16922 */;
-import useVisibilityTransition from "useVisibilityTransition" /* 16923 */;
+import _mod1652 from "module_1652" /* 1652 */;
+import timing_timing from "timing/timing" /* 5370 */;
+import timingPresets from "timingPresets" /* 5373 */;
+import LinearGradientDefault from "LinearGradient" /* 5715 */;
+import QuestConstants from "QuestConstants" /* 6836 */;
+import AnimatedEnterExitItemDefault from "AnimatedEnterExitItem" /* 10082 */;
+import BountiesModalTransitionsRefactorExperiment from "BountiesModalTransitionsRefactorExperiment" /* 17245 */;
+import useVisibilityTransition from "useVisibilityTransition" /* 17246 */;
+import BountiesEndCardPressableCtaDefault from "BountiesEndCardPressableCta" /* 17285 */;
+import BountiesModalEndedCtaButtonsDefault from "BountiesModalEndedCtaButtons" /* 17287 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5015 */;
+import AccessibilityStore from "AccessibilityStore" /* 5141 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
+
+const _modDef1652 = _mod1652;
 
 let c9;
 let closure_4;
 let hasOwnProperty;
 let metroImportAll;
-function BountiesScrollEndCardContent(isScrollingInBoundsSharedValue) {
+let tmp4;
+let tmp5;
+let tmp6;
+let tmp7;
+let tmp8;
+let tmp9;
+function BountiesScrollEndCardContent(arg0) {
   let bounty;
   let isActive;
-  let items;
-  let items1;
+  let isScrollingInBoundsSharedValue;
   let items2;
   let items3;
-  let obj9;
+  let items4;
+  let items5;
+  let obj7;
   let opacityStyle;
+  let sourceQuestContent;
+  let tmp4;
+  let tmp5;
+  let tmp6;
+  let tmp7;
+  let tmp8;
   let visible;
-  ({ bounty, isActive } = isScrollingInBoundsSharedValue);
-  isScrollingInBoundsSharedValue = isScrollingInBoundsSharedValue.isScrollingInBoundsSharedValue;
-  const sourceQuestContent = isScrollingInBoundsSharedValue.sourceQuestContent;
-  ({ visible, opacityStyle } = isScrollingInBoundsSharedValue);
+  ({ bounty, isActive, sourceQuestContent } = arg0);
+  ({ visible, isScrollingInBoundsSharedValue, opacityStyle } = arg0);
   const tmp = closure_10();
-  let obj = isActive(5095);
-  class S {
+  let tmp2 = dependencyMap;
+  const items = [closure_13, isScrollingInBoundsSharedValue, , , ];
+  const useAnimatedStyle = _mod1652.useAnimatedStyle;
+  _mod1652;
+  items[2] = timing_timing.withTiming;
+  items[3] = isActive;
+  items[4] = timingPresets.timingStandard;
+  let c0;
+  let c1;
+  let c2;
+  let c3;
+  [tmp4, tmp5, tmp6, tmp7, tmp8] = items;
+  class BountiesScrollEndCardTsx3 {
     constructor() {
       let value;
-      const obj = isScrollingInBoundsSharedValue;
-      if (isScrollingInBoundsSharedValue != null) {
+      const obj = c0;
+      if (c0 != null) {
         value = obj.get();
       }
       let num = 0;
-      const withTiming = timing.withTiming;
-      timing;
-      if (isActive) {
+      const tmp2 = c1;
+      if (c2) {
         num = 0;
         if (true !== value) {
           num = 1;
         }
       }
-      const obj2 = { opacity: withTiming(num, timingPresets.timingStandard) };
+      const obj2 = { opacity: tmp2(num, c3) };
       return obj2;
     }
   }
-  let obj2 = { isScrollingInBoundsSharedValue, withTiming: isActive(5254).withTiming, isActive, timingStandard: isActive(5257).timingStandard };
-  S.__closure = obj2;
-  S.__workletHash = 4903386092677;
-  S.__initData = __initData;
-  const animatedStyle = obj.useAnimatedStyle(S);
-  const obj3 = { style: items, pointerEvents: "box-none", children: items1 };
-  items = [tmp.container, opacityStyle];
-  const obj4 = { style: tmp.backdropTint, pointerEvents: "none" };
-  const View = isScrollingInBoundsSharedValue(5095).View;
-  items1 = [closure_8(closure_5, obj4), , ];
-  const obj5 = { colors: ["rgba(0, 0, 0, 0.48)", "rgba(0, 0, 0, 0.8)"], style: tmp.backdropGradient, pointerEvents: "none" };
-  items1[1] = closure_8(isScrollingInBoundsSharedValue(5587), obj5);
-  const obj6 = { style: items2, pointerEvents: "box-none", children: items3 };
-  items2 = [tmp.overlayContent, animatedStyle];
-  const View2 = isScrollingInBoundsSharedValue(5095).View;
-  items3 = [, ];
-  const obj7 = { bounty, sourceQuestContent, disabled: !isActive };
-  items3[0] = closure_8(isScrollingInBoundsSharedValue(16962), obj7);
-  const obj8 = { style: tmp.endedCtaButtonsContainer, pointerEvents: "box-none", children: closure_8(isScrollingInBoundsSharedValue(16964), obj9) };
-  obj9 = {
+  const items1 = [tmp5, tmp6, tmp7, tmp8];
+  BountiesScrollEndCardTsx3.__closure = items1;
+  BountiesScrollEndCardTsx3.__workletHash = 11141440579356;
+  BountiesScrollEndCardTsx3.__initData = tmp4;
+  const animatedStyle = useAnimatedStyle(BountiesScrollEndCardTsx3);
+  let obj = { style: items2, pointerEvents: "box-none", children: items3 };
+  items2 = [tmp.container, opacityStyle];
+  let obj2 = { style: tmp.backdropTint, pointerEvents: "none" };
+  const View = _modDef1652.View;
+  items3 = [metroImportAll(hasOwnProperty, obj2), , ];
+  const obj3 = { colors: ["rgba(0, 0, 0, 0.48)", "rgba(0, 0, 0, 0.8)"], style: tmp.backdropGradient, pointerEvents: "none" };
+  items3[1] = metroImportAll(LinearGradientDefault, obj3);
+  const obj4 = { style: items4, pointerEvents: "box-none", children: items5 };
+  items4 = [tmp.overlayContent, animatedStyle];
+  const View2 = _modDef1652.View;
+  items5 = [, ];
+  const obj5 = { bounty, sourceQuestContent, disabled: !isActive };
+  items5[0] = metroImportAll(BountiesEndCardPressableCtaDefault, obj5);
+  const obj6 = { style: tmp.endedCtaButtonsContainer, pointerEvents: "box-none", children: metroImportAll(BountiesModalEndedCtaButtonsDefault, obj7) };
+  obj7 = {
     bounty,
     visible,
     sourceQuestContent,
@@ -89,9 +116,9 @@ function BountiesScrollEndCardContent(isScrollingInBoundsSharedValue) {
     showCloseButton: false,
     disabled: !isActive
   };
-  items3[1] = closure_8(closure_5, obj8);
-  items1[2] = closure_9(View2, obj6);
-  return closure_9(View, obj3);
+  items5[1] = metroImportAll(hasOwnProperty, obj6);
+  items3[2] = React4(View2, obj4);
+  return React4(View, obj);
 }
 ({ StyleSheet: closure_4, View: hasOwnProperty } = react_native);
 const QuestsExperimentLocations = QuestConstants.QuestsExperimentLocations;
@@ -114,27 +141,35 @@ let closure_10 = createStyles.createStyles(() => {
   rect = { position: "absolute", left: nativeDefault.space.PX_16, right: nativeDefault.space.PX_16, bottom: nativeDefault.space.PX_16 };
   return obj;
 });
-const entering = function t(value) {
-  let obj2;
-  const obj = { opacity: obj2.withTiming(value, timingPresets.timingStandard, "respect-motion-settings") };
-  obj2 = timing;
-  return obj;
-};
-let obj = { withTiming: timing.withTiming, timingStandard: timingPresets.timingStandard };
-entering.__closure = obj;
-entering.__workletHash = 12127714049951;
-entering.__initData = { code: "function BountiesScrollEndCardTsx1(visible){const{withTiming,timingStandard}=this.__closure;return{opacity:withTiming(visible,timingStandard,'respect-motion-settings')};}" };
-const fn2 = function n(value, fn2) {
-  let obj2;
-  const obj = { opacity: obj2.withTiming(value, timingPresets.timingStandard, "respect-motion-settings", fn2) };
-  obj2 = timing;
-  return obj;
-};
-let obj2 = { withTiming: timing.withTiming, timingStandard: timingPresets.timingStandard };
-fn2.__closure = obj2;
-fn2.__workletHash = 7470211880124;
-fn2.__initData = { code: "function BountiesScrollEndCardTsx2(visible,cleanUp){const{withTiming,timingStandard}=this.__closure;return{opacity:withTiming(visible,timingStandard,'respect-motion-settings',cleanUp)};}" };
-const __initData = { code: "function BountiesScrollEndCardTsx3(){const{isScrollingInBoundsSharedValue,withTiming,isActive,timingStandard}=this.__closure;var _isScrollingInBoundsS;const isScrollingInBounds=((_isScrollingInBoundsS=isScrollingInBoundsSharedValue)===null||_isScrollingInBoundsS===void 0?void 0:_isScrollingInBoundsS.get())===true;return{opacity:withTiming(isActive&&!isScrollingInBounds?1:0,timingStandard)};}" };
+let items = [{ code: "(function BountiesScrollEndCardTsx1(visible){let[withTiming,timingStandard]=this.__closure;return{opacity:withTiming(visible,timingStandard,'respect-motion-settings')};})" }, timing_timing.withTiming, timingPresets.timingStandard];
+let c0;
+let c1;
+[tmp4, tmp5, tmp6] = items;
+class BountiesScrollEndCardTsx1 {
+  constructor(arg0) {
+    const obj = { opacity: _undefined(arg0, c1, "respect-motion-settings") };
+    return obj;
+  }
+}
+let items1 = [tmp5, tmp6];
+BountiesScrollEndCardTsx1.__closure = items1;
+BountiesScrollEndCardTsx1.__workletHash = 17037395898182;
+BountiesScrollEndCardTsx1.__initData = tmp4;
+let items2 = [{ code: "(function BountiesScrollEndCardTsx2(visible,cleanUp){let[withTiming,timingStandard]=this.__closure;return{opacity:withTiming(visible,timingStandard,'respect-motion-settings',cleanUp)};})" }, timing_timing.withTiming, timingPresets.timingStandard];
+c0 = undefined;
+c1 = undefined;
+[tmp7, tmp8, tmp9] = items2;
+class BountiesScrollEndCardTsx2 {
+  constructor(arg0, arg1) {
+    const obj = { opacity: _undefined(arg0, c1, "respect-motion-settings", arg1) };
+    return obj;
+  }
+}
+let items3 = [tmp8, tmp9];
+BountiesScrollEndCardTsx2.__closure = items3;
+BountiesScrollEndCardTsx2.__workletHash = 14533750403909;
+BountiesScrollEndCardTsx2.__initData = tmp7;
+let closure_13 = { code: "(function BountiesScrollEndCardTsx3(){let[isScrollingInBoundsSharedValue,withTiming,isActive,timingStandard]=this.__closure;var _isScrollingInBoundsS;const isScrollingInBounds=((_isScrollingInBoundsS=isScrollingInBoundsSharedValue)===null||_isScrollingInBoundsS===void 0?void 0:_isScrollingInBoundsS.get())===true;return{opacity:withTiming(isActive&&!isScrollingInBounds?1:0,timingStandard)};})" };
 const result = size.fileFinishedImporting("modules/quests/native/BountiesModal/BountiesScrollEndCard.tsx");
 
 export default function BountiesScrollEndCard(visible) {
@@ -156,7 +191,7 @@ export default function BountiesScrollEndCard(visible) {
   const visibilityTransition = obj3.useVisibilityTransition(obj4);
   let shouldRender = visibilityTransition.shouldRender;
   if (isBountiesModalTransitionsRefactorEnabled) {
-    const obj5 = { useReducedMotion: stateFromStores, item: tmp15, entering, exiting: fn2, renderItem: callback };
+    const obj5 = { useReducedMotion: stateFromStores, item: tmp15, entering: BountiesScrollEndCardTsx1, exiting: BountiesScrollEndCardTsx2, renderItem: callback };
     tmp15 = undefined;
     const tmp12 = metroImportAll;
     const tmp14 = AnimatedEnterExitItemDefault;

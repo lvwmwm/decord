@@ -1,38 +1,43 @@
-// Module ID: 15811
-// Function ID: 15812
+// Module ID: 16128
+// Function ID: 16129
 // Name: Menu
-// Dependencies: [32, 19, 17, 1072, 21, 15812, 5014, 575, 5095, 5028, 1625, 1491, 1375, 5023, 1113, 6021, 5254, 6022, 15813, 15814, 5637, 2]
+// Dependencies: [32, 19, 17, 1072, 21, 16129, 5140, 575, 1652, 1705, 5154, 1627, 1493, 1377, 5149, 1113, 6153, 5370, 6154, 16130, 16131, 5761, 2]
 // Exports: Menu
 
-// Module 15811 (Menu)
+// Module 16128 (Menu)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
-import PlatformUtils from "PlatformUtils" /* 1375 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
-import timing from "timing" /* 5254 */;
-import spring from "spring" /* 5637 */;
-import react_native from "react-native" /* 6021 */;
-import Easing from "Easing" /* 15812 */;
+import PlatformUtils from "PlatformUtils" /* 1377 */;
+import _mod1652 from "module_1652" /* 1652 */;
+import _mod1705 from "module_1705" /* 1705 */;
+import timing_timing from "timing/timing" /* 5370 */;
+import spring_spring from "spring/spring" /* 5761 */;
+import react_native from "react-native" /* 6153 */;
+import Easing_Easing from "Easing/Easing" /* 16129 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
-let set;
+const require = globalThis.__r;
+let importDefault, set;
 
 let StyleSheet;
 let hasOwnProperty;
 let obj3;
 let obj4;
+let tmp6;
+let tmp7;
+let tmp8;
 let _slicedToArray = _slicedToArray_mod;
 ({ ScrollView: hasOwnProperty, StyleSheet } = react_native2);
 const NOOP = Constants.NOOP;
 const jsx = Fragment.jsx;
-let closure_8 = { mass: 1, stiffness: 300, damping: 25, restSpeedThreshold: 0.01, restDisplacementThreshold: 0.01 };
-let __closure = { duration: 250, easing: Easing.STANDARD_EASING };
+let closure_8 = { mass: 1, stiffness: 300, damping: 25 };
+let obj = { duration: 250, easing: Easing_Easing.STANDARD_EASING };
 let createStyles = createStyles_mod;
 let obj2 = { backdrop: obj3, menu: obj4 };
 obj3 = { zIndex: 1 };
@@ -41,21 +46,23 @@ const merged = Object.assign(StyleSheet.absoluteFillObject);
 obj4 = { position: "absolute", backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.radii.sm, width: 220 };
 let closure_10 = createStyles(obj2);
 const context = react.createContext({ menuClose: NOOP, menuDismiss: NOOP });
+let items = [{ code: "(function measureButtonRef_MenuTsx1(ref,setDimensions){let[measure,scheduleOnRN]=this.__closure;const measurements=measure(ref);if(measurements==null)return;scheduleOnRN(setDimensions,measurements);})" }, _mod1652.measure, _mod1705.scheduleOnRN];
+let c0;
+let c1;
+[tmp6, tmp7, tmp8] = items;
 function measureButtonRef(arg0, arg1) {
-  const obj = ReanimatedRexport;
-  const measureResult = obj.measure(arg0);
-  if (null != measureResult) {
-    const tmpResult = ReanimatedRexport;
-    tmpResult.runOnJS(arg1)(measureResult);
+  const tmp = _undefined(arg0);
+  if (null != tmp) {
+    _undefined2(arg1, tmp);
   }
 }
-let obj5 = { measure: ReanimatedRexport.measure, runOnJS: ReanimatedRexport.runOnJS };
-measureButtonRef.__closure = obj5;
-measureButtonRef.__workletHash = 15651320687527;
-measureButtonRef.__initData = { code: "function measureButtonRef_MenuTsx1(ref,setDimensions){const{measure,runOnJS}=this.__closure;const measurements=measure(ref);if(measurements==null)return;runOnJS(setDimensions)(measurements);}" };
-let closure_13 = { code: "function MenuTsx2(){const{runOnJS,openMenuCallback}=this.__closure;return runOnJS(openMenuCallback)();}" };
-let closure_14 = { code: "function MenuTsx3(){const{runOnJS,closeMenuCallback}=this.__closure;return runOnJS(closeMenuCallback)();}" };
-let __initData = { code: "function MenuTsx4(){const{visible,useReducedMotion,interpolate,dirX,size,offsetAnimated,dirY}=this.__closure;var _offsetAnimated,_offsetAnimated$get,_offsetAnimated2,_offsetAnimated$get2;return{opacity:visible.get(),transform:useReducedMotion?[]:[{translateX:interpolate(visible.get(),[0,1],[(dirX==='left'?-1:1)*size.get().width/4,((_offsetAnimated=offsetAnimated)===null||_offsetAnimated===void 0||(_offsetAnimated=_offsetAnimated.get())===null||_offsetAnimated===void 0?void 0:_offsetAnimated.x)!=null?(_offsetAnimated$get=offsetAnimated.get())===null||_offsetAnimated$get===void 0?void 0:_offsetAnimated$get.x:0])},{translateY:interpolate(visible.get(),[0,1],[(dirY==='top'?-1:1)*size.get().height/4,((_offsetAnimated2=offsetAnimated)===null||_offsetAnimated2===void 0||(_offsetAnimated2=_offsetAnimated2.get())===null||_offsetAnimated2===void 0?void 0:_offsetAnimated2.y)!=null?(_offsetAnimated$get2=offsetAnimated.get())===null||_offsetAnimated$get2===void 0?void 0:_offsetAnimated$get2.y:0])},{scale:visible.get()/2+0.5}]};}" };
+let items1 = [tmp7, tmp8];
+measureButtonRef.__closure = items1;
+measureButtonRef.__workletHash = 5907268262035;
+measureButtonRef.__initData = tmp6;
+let closure_13 = { code: "(function MenuTsx2(){let[scheduleOnRN,openMenuCallback]=this.__closure;return scheduleOnRN(openMenuCallback);})" };
+let closure_14 = { code: "(function MenuTsx3(){let[scheduleOnRN,closeMenuCallback]=this.__closure;return scheduleOnRN(closeMenuCallback);})" };
+let closure_15 = { code: "(function MenuTsx4(){let[visible,useReducedMotion,interpolate,dirX,size,offsetAnimated,dirY]=this.__closure;var _offsetAnimated,_offsetAnimated$get,_offsetAnimated2,_offsetAnimated$get2;return{opacity:visible.get(),transform:useReducedMotion?[]:[{translateX:interpolate(visible.get(),[0,1],[(dirX==='left'?-1:1)*size.get().width/4,((_offsetAnimated=offsetAnimated)===null||_offsetAnimated===void 0||(_offsetAnimated=_offsetAnimated.get())===null||_offsetAnimated===void 0?void 0:_offsetAnimated.x)!=null?(_offsetAnimated$get=offsetAnimated.get())===null||_offsetAnimated$get===void 0?void 0:_offsetAnimated$get.x:0])},{translateY:interpolate(visible.get(),[0,1],[(dirY==='top'?-1:1)*size.get().height/4,((_offsetAnimated2=offsetAnimated)===null||_offsetAnimated2===void 0||(_offsetAnimated2=_offsetAnimated2.get())===null||_offsetAnimated2===void 0?void 0:_offsetAnimated2.y)!=null?(_offsetAnimated$get2=offsetAnimated.get())===null||_offsetAnimated$get2===void 0?void 0:_offsetAnimated$get2.y:0])},{scale:visible.get()/2+0.5}]};})" };
 let size = size_mod;
 let result = size.fileFinishedImporting("design/components/Menu/native/Menu.tsx");
 
@@ -66,12 +73,11 @@ export function Menu(toggleButtonRef) {
   let Provider;
   let View;
   let children;
-  let closure_5;
-  let items6;
+  let closure_3;
+  let items8;
+  let obj6;
   let obj7;
   let obj8;
-  let obj9;
-  let offset;
   let offsetAnimated;
   let onClose;
   let pageX;
@@ -86,6 +92,17 @@ export function Menu(toggleButtonRef) {
   let style;
   let sum4;
   let sum5;
+  let tmp27;
+  let tmp28;
+  let tmp29;
+  let tmp31;
+  let tmp32;
+  let tmp33;
+  let tmp34;
+  let tmp35;
+  let tmp36;
+  let tmp37;
+  let tmp38;
   let x;
   toggleButtonRef = toggleButtonRef.toggleButtonRef;
   ({ onClose, position } = toggleButtonRef);
@@ -96,19 +113,18 @@ export function Menu(toggleButtonRef) {
   if (str === undefined) {
     str = "start";
   }
-  ({ offset, offsetAnimated } = toggleButtonRef);
-  let enabled;
+  const offset = toggleButtonRef.offset;
+  importDefault = undefined;
   size2 = undefined;
-  closure_5 = undefined;
+  _slicedToArray = undefined;
+  let sharedValue;
   onClose = undefined;
   let menuClose;
   let callback1;
-  let closure_12;
-  __initData = undefined;
   function openMenuCallback() {
-    const obj = PlatformUtils;
+    obj = PlatformUtils;
     if (obj.isAndroid()) {
-      const AccessibilityAnnouncer = tmp(5023).AccessibilityAnnouncer;
+      const AccessibilityAnnouncer = tmp(5149).AccessibilityAnnouncer;
       const announce = AccessibilityAnnouncer.announce;
       const intl = tmp(1113).intl;
       announce(intl.string(intl2.t.ZqK0uI));
@@ -117,54 +133,66 @@ export function Menu(toggleButtonRef) {
     const tmpResult = react_native;
     const result = tmpResult.setAccessibilityFocus(obj2);
   }
-  ({ style, children } = toggleButtonRef);
-  let tmp = menuClose();
-  let obj = size2;
+  ({ offsetAnimated, style, children } = toggleButtonRef);
+  let tmp = closure_10();
+  obj = sharedValue;
   const tmp2 = toggleButtonRef;
-  let tmp3 = enabled;
-  enabled = size2.useContext(toggleButtonRef(enabled[9]).AccessibilityPreferencesContext).reducedMotion.enabled;
-  const tmp4 = offsetAnimated;
-  const rect = offsetAnimated(enabled[10])();
-  size = offsetAnimated(enabled[11])();
-  _slicedToArray = size2.useRef(null);
-  [size2, closure_5] = size2.useState(null);
-  let obj2 = toggleButtonRef(enabled[8]);
-  const sharedValue = obj2.useSharedValue(0);
-  let obj3 = toggleButtonRef(enabled[8]);
+  let tmp3 = size2;
+  let tmp4 = importDefault;
+  const enabled = sharedValue.useContext(toggleButtonRef(size2[10]).AccessibilityPreferencesContext).reducedMotion.enabled;
+  const rect = require("useSafeAreaInsets")();
+  size = require("useWindowDimensions")();
+  importDefault = sharedValue.useRef(null);
+  const tmp5 = _slicedToArray;
+  [size2, _slicedToArray] = sharedValue.useState(null);
+  let obj2 = toggleButtonRef(size2[8]);
+  sharedValue = obj2.useSharedValue(0);
+  let obj3 = toggleButtonRef(size2[8]);
   const sharedValue1 = obj3.useSharedValue({ width: 0, height: 0 });
   let items = [toggleButtonRef, size2];
-  const layoutEffect = size2.useLayoutEffect(() => {
+  const layoutEffect = sharedValue.useLayoutEffect(() => {
     let current;
     if (toggleButtonRef != null) {
       current = tmp.current;
     }
     const tmp3 = null != current && null == size2;
     if (tmp3) {
-      const obj = ReanimatedRexport;
-      obj.runOnUI(measureButtonRef)(toggleButtonRef, closure_5);
+      obj = _mod1705;
+      obj.scheduleOnUI(measureButtonRef, toggleButtonRef, closure_3);
     }
   }, items);
-  const tmp5 = _slicedToArray;
   if (onClose == null) {
-    onClose = sharedValue;
+    onClose = openMenuCallback;
   }
   let items1 = [onClose, sharedValue];
   menuClose = obj.useCallback(() => {
+    let tmp4;
+    let tmp5;
+    let tmp6;
+    const items = [closure_14, , ];
     set = sharedValue.set;
-    let obj = timing;
-    const fn = function t() {
-      const obj = toggleButtonRef(enabled[8]);
-      return obj.runOnJS(onClose)();
-    };
-    fn.__closure = { runOnJS: ReanimatedRexport.runOnJS, closeMenuCallback: onClose };
-    fn.__workletHash = 5879184549724;
-    fn.__initData = __initData2;
-    ({ runOnJS: ReanimatedRexport.runOnJS, closeMenuCallback: onClose });
-    const result = set(obj.withTiming(0, obj, "respect-motion-settings", fn));
+    const withTiming = timing_timing.withTiming;
+    timing_timing;
+    items[1] = _mod1705.scheduleOnRN;
+    items[2] = onClose;
+    let c0;
+    let c1;
+    [tmp4, tmp5, tmp6] = items;
+    const tmp3 = obj;
+    class MenuTsx3 {
+      constructor() {
+        return closure_0(closure_1);
+      }
+    }
+    const items1 = [tmp5, tmp6];
+    MenuTsx3.__closure = items1;
+    MenuTsx3.__workletHash = 8034387170500;
+    MenuTsx3.__initData = tmp4;
+    const result = set(withTiming(0, tmp3, "respect-motion-settings", MenuTsx3));
   }, items1);
   let items2 = [menuClose, toggleButtonRef];
   callback1 = obj.useCallback(() => {
-    const obj = react_native;
+    obj = react_native;
     const obj2 = { ref: toggleButtonRef };
     const result = obj.setAccessibilityFocus(obj2);
     callback();
@@ -174,11 +202,11 @@ export function Menu(toggleButtonRef) {
     callback1();
     return true;
   }, items3);
-  tmp4(tmp3[17])(callback2);
+  tmp4(tmp3[18])(callback2);
   const items4 = [menuClose, callback1];
   const memo = obj.useMemo(() => ({ menuClose, menuDismiss: callback1 }), items4);
-  const tmp2Result = tmp2(tmp3[18]);
-  const boxShadowStyle = tmp2Result.generateBoxShadowStyle(tmp2(tmp3[18]).EIGHT_DP_ELEVATION_SHADOW_PARAMS);
+  const tmp2Result = tmp2(tmp3[19]);
+  const boxShadowStyle = tmp2Result.generateBoxShadowStyle(tmp2(tmp3[19]).EIGHT_DP_ELEVATION_SHADOW_PARAMS);
   if ("left" === position) {
     str2 = "column";
   } else {
@@ -258,113 +286,136 @@ export function Menu(toggleButtonRef) {
   obj4[str9] = sum4;
   obj4[str12] = sum5;
   const items5 = [obj4, str9, str12];
-  closure_12 = tmp28;
-  __initData = tmp29;
-  const first = tmp5(items5, 3)[0];
-  let fn = function z() {
-    let items;
-    const obj = { opacity: sharedValue.get(), transform: items };
-    const tmp = enabled;
-    if (tmp) {
-      items = [];
-    } else {
-      const interpolate = ReanimatedRexport.interpolate;
-      let num = 1;
-      let num2 = 1;
-      ReanimatedRexport;
-      const value = obj2.get();
-      if ("left" === closure_12) {
-        num2 = -1;
-      }
-      const items1 = [num2 * sharedValue1.get().width / 4, ];
-      let x;
-      const obj3 = sharedValue1;
-      if (offsetAnimated != null) {
-        const value6 = obj4.get();
-        if (value6 != null) {
-          x = value6.x;
+  [tmp27, tmp28, tmp29] = tmp5(items5, 3);
+  tmp5(items5, 3);
+  const items6 = [closure_15, sharedValue, enabled, , , , , ];
+  const useAnimatedStyle = tmp2(tmp3[8]).useAnimatedStyle;
+  tmp2(tmp3[8]);
+  items6[3] = tmp2(tmp3[8]).interpolate;
+  items6[4] = tmp28;
+  items6[5] = sharedValue1;
+  items6[6] = offsetAnimated;
+  items6[7] = tmp29;
+  let c0;
+  let c1;
+  let c2;
+  let c3;
+  let c4;
+  let c5;
+  let c6;
+  [tmp31, tmp32, tmp33, tmp34, tmp35, tmp36, tmp37, tmp38] = items6;
+  class MenuTsx4 {
+    constructor() {
+      let items;
+      obj = { opacity: _undefined.get(), transform: items };
+      const tmp = c1;
+      if (tmp) {
+        items = [];
+      } else {
+        let num = 1;
+        let num2 = 1;
+        const value = obj2.get();
+        if ("left" === c3) {
+          num2 = -1;
         }
-      }
-      let num4 = 0;
-      if (null != x) {
-        const value7 = obj4.get();
-        let x1;
-        if (value7 != null) {
-          x1 = value7.x;
+        const items1 = [num2 * _undefined2.get().width / 4, ];
+        let x;
+        const obj3 = _undefined2;
+        if (c5 != null) {
+          const value6 = obj4.get();
+          if (value6 != null) {
+            x = value6.x;
+          }
         }
-        num4 = x1;
-      }
-      items1[1] = num4;
-      items = [{ translateX: interpolate(value, [0, 1], items1) }, , ];
-      const obj5 = { translateX: interpolate(value, [0, 1], items1) };
-      const interpolate2 = tmp2(5095).interpolate;
-      ReanimatedRexport;
-      const value8 = obj2.get();
-      if ("top" === __initData) {
-        num = -1;
-      }
-      const items2 = [num * obj3.get().height / 4, ];
-      let y;
-      if (offsetAnimated != null) {
-        const value9 = obj4.get();
-        if (value9 != null) {
-          y = value9.y;
+        let num4 = 0;
+        if (null != x) {
+          const value7 = obj4.get();
+          let x1;
+          if (value7 != null) {
+            x1 = value7.x;
+          }
+          num4 = x1;
         }
-      }
-      let num5 = 0;
-      if (null != y) {
-        const value10 = obj4.get();
-        let y1;
-        if (value10 != null) {
-          y1 = value10.y;
+        items1[1] = num4;
+        items = [{ translateX: _undefined(value, [0, 1], items1) }, , ];
+        const obj5 = { translateX: _undefined(value, [0, 1], items1) };
+        const value8 = obj2.get();
+        if ("top" === c6) {
+          num = -1;
         }
-        num5 = y1;
+        const items2 = [num * obj3.get().height / 4, ];
+        let y;
+        if (c5 != null) {
+          const value9 = obj4.get();
+          if (value9 != null) {
+            y = value9.y;
+          }
+        }
+        let num5 = 0;
+        if (null != y) {
+          const value10 = obj4.get();
+          let y1;
+          if (value10 != null) {
+            y1 = value10.y;
+          }
+          num5 = y1;
+        }
+        items2[1] = num5;
+        items[1] = { translateY: _undefined(value8, [0, 1], items2) };
+        const obj6 = { translateY: _undefined(value8, [0, 1], items2) };
+        items[2] = { scale: _undefined.get() / 2 + 0.5 };
+        const obj7 = { scale: _undefined.get() / 2 + 0.5 };
       }
-      items2[1] = num5;
-      items[1] = { translateY: interpolate2(value8, [0, 1], items2) };
-      const obj6 = { translateY: interpolate2(value8, [0, 1], items2) };
-      items[2] = { scale: sharedValue.get() / 2 + 0.5 };
-      const obj7 = { scale: sharedValue.get() / 2 + 0.5 };
+      return obj;
     }
-    return obj;
-  };
-  const tmp5Result = tmp5(items5, 3);
-  const tmp2Result2 = tmp2(tmp3[8]);
-  let obj5 = { visible: sharedValue, useReducedMotion: enabled, interpolate: tmp2(tmp3[8]).interpolate, dirX: tmp28, size: sharedValue1, offsetAnimated, dirY: tmp29 };
-  fn.__closure = obj5;
-  fn.__workletHash = 7884133597410;
-  fn.__initData = __initData;
-  const animatedStyle = tmp2Result2.useAnimatedStyle(fn);
-  let obj6 = { style: tmp.backdrop, accessibilityViewIsModal: true, importantForAccessibility: "yes", onTouchDown: callback1, onAccessibilityEscape: callback1, children: sharedValue1(View, obj7) };
-  obj7 = {
+  }
+  const items7 = [tmp32, tmp33, tmp34, tmp35, tmp36, tmp37, tmp38];
+  MenuTsx4.__closure = items7;
+  MenuTsx4.__workletHash = 14672287725499;
+  MenuTsx4.__initData = tmp31;
+  const animatedStyle = useAnimatedStyle(MenuTsx4);
+  let obj5 = { style: tmp.backdrop, accessibilityViewIsModal: true, importantForAccessibility: "yes", onTouchDown: callback1, onAccessibilityEscape: callback1, children: onClose(View, obj6) };
+  obj6 = {
     accessibilityRole: "list",
-    style: items6,
+    style: items8,
     onLayout: function handleOpen(nativeEvent) {
+      let tmp5;
+      let tmp6;
+      let tmp7;
       size = { width: nativeEvent.nativeEvent.layout.width, height: nativeEvent.nativeEvent.layout.height };
       const result = sharedValue1.set(size);
-      const fn = function n() {
-        const obj = toggleButtonRef(enabled[8]);
-        return obj.runOnJS(openMenuCallback)();
-      };
+      const items = [closure_13, , ];
       set = sharedValue.set;
-      const obj2 = spring;
-      __closure = { runOnJS: ReanimatedRexport.runOnJS, openMenuCallback };
-      fn.__closure = __closure;
-      fn.__workletHash = 14966618105405;
-      fn.__initData = __initData;
-      const result1 = set(obj2.withSpring(1, closure_8, "respect-motion-settings", fn));
+      const withSpring = spring_spring.withSpring;
+      spring_spring;
+      items[1] = _mod1705.scheduleOnRN;
+      items[2] = openMenuCallback;
+      let c0;
+      let c1;
+      [tmp5, tmp6, tmp7] = items;
+      const tmp4 = closure_8;
+      class MenuTsx2 {
+        constructor() {
+          return closure_0(closure_1);
+        }
+      }
+      const items1 = [tmp6, tmp7];
+      MenuTsx2.__closure = items1;
+      MenuTsx2.__workletHash = 9487274314277;
+      MenuTsx2.__initData = tmp5;
+      const result1 = set(withSpring(1, tmp4, "respect-motion-settings", MenuTsx2));
     },
-    children: sharedValue1(closure_5, obj8)
+    children: onClose(sharedValue1, obj7)
   };
-  items6 = [tmp.menu, boxShadowStyle, first, animatedStyle, style];
-  obj8 = { children: sharedValue1(Provider, obj9) };
-  obj9 = {
+  items8 = [tmp.menu, boxShadowStyle, tmp27, animatedStyle, style];
+  obj7 = { children: onClose(Provider, obj8) };
+  obj8 = {
     value: memo,
     children: Children.map(children, (icon, arg1) => {
       let cloneElementResult = icon;
       if (0 === arg1) {
         cloneElementResult = icon;
-        const obj = react;
+        obj = react;
         if (react.isValidElement(icon)) {
           const obj2 = { ref };
           cloneElementResult = obj.cloneElement(icon, obj2);
@@ -374,8 +425,8 @@ export function Menu(toggleButtonRef) {
     })
   };
   Children = obj.Children;
-  const tmp4Result = tmp4(tmp3[19]);
+  const tmp4Result = tmp4(tmp3[20]);
   View = tmp4(tmp3[8]).View;
-  Provider = callback1.Provider;
-  return sharedValue1(tmp4Result, obj6);
+  Provider = context.Provider;
+  return onClose(tmp4Result, obj5);
 }

@@ -1,22 +1,22 @@
-// Module ID: 8937
-// Function ID: 8938
+// Module ID: 9016
+// Function ID: 9017
 // Name: SharePreparingModal
-// Dependencies: [19, 17, 21, 5014, 575, 5598, 8938, 8939, 1113, 7054, 6953, 5624, 2]
+// Dependencies: [19, 17, 21, 5140, 575, 5726, 9017, 9018, 1113, 7120, 7015, 5751, 2]
 // Exports: default
 
-// Module 8937 (SharePreparingModal)
+// Module 9016 (SharePreparingModal)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import Backdrop from "Backdrop" /* 5598 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 6953 */;
-import XSmallIcon from "XSmallIcon" /* 7054 */;
-import MediaModalOverlayHeaderWrapper2 from "MediaModalOverlayHeaderWrapper" /* 8938 */;
-import MediaViewerOverlayButtonDefault from "MediaViewerOverlayButton" /* 8939 */;
+import Backdrop from "Backdrop" /* 5726 */;
+import Text_Text from "Text/Text" /* 5751 */;
+import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 7015 */;
+import XSmallIcon from "XSmallIcon" /* 7120 */;
+import MediaModalOverlayHeaderWrapper2 from "MediaModalOverlayHeaderWrapper" /* 9017 */;
+import MediaViewerOverlayButtonDefault from "MediaViewerOverlayButton" /* 9018 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let StyleSheet;
@@ -58,7 +58,7 @@ export default function SharePreparingModal(onCancel) {
   intl = intl3.intl;
   items1[1] = hasOwnProperty(React3, obj2);
   items1[2] = hasOwnProperty(ActivityIndicator_ActivityIndicator.ActivityIndicator, {});
-  const obj5 = { variant: "text-sm/medium", color: "text-overlay-light", children: intl2.string(intl3.t.DwTQE5) };
+  const obj5 = { variant: "body-sm/medium", color: "text-overlay-light", children: intl2.string(intl3.t.DwTQE5) };
   const Text = Text_Text.Text;
   intl2 = intl3.intl;
   items1[3] = hasOwnProperty(Text, obj5);
