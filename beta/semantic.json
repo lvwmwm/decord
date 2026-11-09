@@ -391,6 +391,66 @@
     },
     "BACKGROUND_FEEDBACK_CRITICAL": {
         "ash": [
+            "#620615",
+            {
+                "raw": "RED_NEW_80",
+                "opacity": 1
+            }
+        ],
+        "light": [
+            "#620615",
+            {
+                "raw": "RED_NEW_80",
+                "opacity": 1
+            }
+        ],
+        "onyx": [
+            "#620615",
+            {
+                "raw": "RED_NEW_80",
+                "opacity": 1
+            }
+        ],
+        "dark": [
+            "#620615",
+            {
+                "raw": "RED_NEW_80",
+                "opacity": 1
+            }
+        ]
+    },
+    "BACKGROUND_FEEDBACK_INFO": {
+        "ash": [
+            "#003064",
+            {
+                "raw": "BLUE_NEW_80",
+                "opacity": 1
+            }
+        ],
+        "light": [
+            "#003064",
+            {
+                "raw": "BLUE_NEW_80",
+                "opacity": 1
+            }
+        ],
+        "onyx": [
+            "#003064",
+            {
+                "raw": "BLUE_NEW_80",
+                "opacity": 1
+            }
+        ],
+        "dark": [
+            "#003064",
+            {
+                "raw": "BLUE_NEW_80",
+                "opacity": 1
+            }
+        ]
+    },
+    "BACKGROUND_FEEDBACK_MOD_CRITICAL": {
+        "ash": [
             "#d22d3914",
             {
                 "raw": "OPACITY_RED_8",
@@ -419,7 +479,7 @@
             }
         ]
     },
-    "BACKGROUND_FEEDBACK_INFO": {
+    "BACKGROUND_FEEDBACK_MOD_INFO": {
         "ash": [
             "#0074e314",
             {
@@ -445,6 +505,66 @@
             "#0074e314",
             {
                 "raw": "OPACITY_BLUE_8",
+                "opacity": 0.0784313725490196
+            }
+        ]
+    },
+    "BACKGROUND_FEEDBACK_MOD_POSITIVE": {
+        "ash": [
+            "#00854514",
+            {
+                "raw": "OPACITY_GREEN_8",
+                "opacity": 0.0784313725490196
+            }
+        ],
+        "light": [
+            "#00854514",
+            {
+                "raw": "OPACITY_GREEN_8",
+                "opacity": 0.0784313725490196
+            }
+        ],
+        "onyx": [
+            "#00854514",
+            {
+                "raw": "OPACITY_GREEN_8",
+                "opacity": 0.0784313725490196
+            }
+        ],
+        "dark": [
+            "#00854514",
+            {
+                "raw": "OPACITY_GREEN_8",
+                "opacity": 0.0784313725490196
+            }
+        ]
+    },
+    "BACKGROUND_FEEDBACK_MOD_WARNING": {
+        "ash": [
+            "#f8a30014",
+            {
+                "raw": "OPACITY_YELLOW_8",
+                "opacity": 0.0784313725490196
+            }
+        ],
+        "light": [
+            "#f8a30014",
+            {
+                "raw": "OPACITY_YELLOW_8",
+                "opacity": 0.0784313725490196
+            }
+        ],
+        "onyx": [
+            "#f8a30014",
+            {
+                "raw": "OPACITY_YELLOW_8",
+                "opacity": 0.0784313725490196
+            }
+        ],
+        "dark": [
+            "#f8a30014",
+            {
+                "raw": "OPACITY_YELLOW_8",
                 "opacity": 0.0784313725490196
             }
         ]
@@ -481,61 +601,61 @@
     },
     "BACKGROUND_FEEDBACK_POSITIVE": {
         "ash": [
-            "#00854514",
+            "#003d19",
             {
-                "raw": "OPACITY_GREEN_8",
-                "opacity": 0.0784313725490196
+                "raw": "GREEN_NEW_80",
+                "opacity": 1
             }
         ],
         "light": [
-            "#00854514",
+            "#003d19",
             {
-                "raw": "OPACITY_GREEN_8",
-                "opacity": 0.0784313725490196
+                "raw": "GREEN_NEW_80",
+                "opacity": 1
             }
         ],
         "onyx": [
-            "#00854514",
+            "#003d19",
             {
-                "raw": "OPACITY_GREEN_8",
-                "opacity": 0.0784313725490196
+                "raw": "GREEN_NEW_80",
+                "opacity": 1
             }
         ],
         "dark": [
-            "#00854514",
+            "#003d19",
             {
-                "raw": "OPACITY_GREEN_8",
-                "opacity": 0.0784313725490196
+                "raw": "GREEN_NEW_80",
+                "opacity": 1
             }
         ]
     },
     "BACKGROUND_FEEDBACK_WARNING": {
         "ash": [
-            "#f8a30014",
+            "#e09000",
             {
-                "raw": "OPACITY_YELLOW_8",
-                "opacity": 0.0784313725490196
+                "raw": "YELLOW_NEW_55",
+                "opacity": 1
             }
         ],
         "light": [
-            "#f8a30014",
+            "#e09000",
             {
-                "raw": "OPACITY_YELLOW_8",
-                "opacity": 0.0784313725490196
+                "raw": "YELLOW_NEW_55",
+                "opacity": 1
             }
         ],
         "onyx": [
-            "#f8a30014",
+            "#e09000",
             {
-                "raw": "OPACITY_YELLOW_8",
-                "opacity": 0.0784313725490196
+                "raw": "YELLOW_NEW_55",
+                "opacity": 1
             }
         ],
         "dark": [
-            "#f8a30014",
+            "#e09000",
             {
-                "raw": "OPACITY_YELLOW_8",
-                "opacity": 0.0784313725490196
+                "raw": "YELLOW_NEW_55",
+                "opacity": 1
             }
         ]
     },
