@@ -48,6 +48,13 @@
         "width": 14,
         "height": 14
     },
+    "age-notice-spot": {
+        "file": "app/modules/age_assurance/age_notice/native/images/age-notice-spot.png",
+        "hash": "f08317e805d614c5dd09a300df6ccaab",
+        "scales": [],
+        "width": 198,
+        "height": 132
+    },
     "airplay": {
         "file": "app/modules/voice_panel/native/images/airplay.png",
         "hash": "2e77386663ba77387d021543bdafafef",
@@ -439,20 +446,6 @@
         "scales": [],
         "width": 132,
         "height": 132
-    },
-    "background": {
-        "file": "app/images/native/oauth2/background.png",
-        "hash": "9f0466452ea774e0a27ad50f4f806303",
-        "scales": [],
-        "width": 375,
-        "height": 812
-    },
-    "background-splash-mobile": {
-        "file": "app/images/auth/background-splash-mobile.png",
-        "hash": "1241abd72512c72c105ef9e9870d04e3",
-        "scales": [],
-        "width": 1424,
-        "height": 1500
     },
     "BackspaceIcon": {
         "file": "app/design/components/Icon/native/redesign/generated/images/BackspaceIcon.png",
@@ -2078,13 +2071,6 @@
         "width": 24,
         "height": 24
     },
-    "empty": {
-        "file": "app/modules/stickers/native/images/empty.png",
-        "hash": "215c6cf6cc2b74cad508b12b0e602266",
-        "scales": [],
-        "width": 77.5,
-        "height": 72
-    },
     "empty_castle": {
         "file": "app/modules/media_keyboard/native/images/empty_castle.png",
         "hash": "86035f94bc8c78da758eed4788f623cf",
@@ -2311,7 +2297,7 @@
     },
     "ExperimentalWebBadgeIcon-primary": {
         "file": "app/design/components/Icon/native/redesign/generated/images/ExperimentalWebBadgeIcon-primary.png",
-        "hash": "332d08a018b5d0cc24855eb27732248b",
+        "hash": "87e5a62f5dcc855456ad06c47b7b25a5",
         "scales": [],
         "width": 24,
         "height": 24
@@ -7013,6 +6999,13 @@
         "width": 24,
         "height": 24
     },
+    "MobilePhoneXIcon": {
+        "file": "app/design/components/Icon/native/redesign/generated/images/MobilePhoneXIcon.png",
+        "hash": "7130af78aa8ba064d8c79243ff2e60a2",
+        "scales": [],
+        "width": 24,
+        "height": 24
+    },
     "ModerationIcon": {
         "file": "app/design/components/Icon/native/redesign/generated/images/ModerationIcon.png",
         "hash": "44367cf78a4a6bf3f05d89256b2c8ccd",
@@ -7706,13 +7699,6 @@
         "width": 56,
         "height": 65
     },
-    "RemixIcon": {
-        "file": "app/design/components/Icon/native/redesign/generated/images/RemixIcon.png",
-        "hash": "5d10367ba9fc709d8c368aae16aadbae",
-        "scales": [],
-        "width": 24,
-        "height": 24
-    },
     "report": {
         "file": "app/modules/video_calls/native/images/report.png",
         "hash": "2b649615a70a14244330a855517175bb",
@@ -8210,6 +8196,13 @@
         "width": 24,
         "height": 24
     },
+    "StageModeratorIcon": {
+        "file": "app/design/components/Icon/native/redesign/generated/images/StageModeratorIcon.png",
+        "hash": "95d7e93c2793e11c61d9325838069af2",
+        "scales": [],
+        "width": 24,
+        "height": 24
+    },
     "stamp-wave": {
         "file": "app/modules/guild_onboarding/native/images/stamp-wave.png",
         "hash": "5048f3c6d8b18fc7809b7e99f1c62a70",
@@ -8692,13 +8685,6 @@
         "scales": [],
         "width": 24,
         "height": 24
-    },
-    "tiny-bronco-spot": {
-        "file": "app/modules/tiny_bronco/native/images/tiny-bronco-spot.png",
-        "hash": "f08317e805d614c5dd09a300df6ccaab",
-        "scales": [],
-        "width": 198,
-        "height": 132
     },
     "top_perk_streaming_quality": {
         "file": "app/modules/guild_boosting/native/images/top_perk_streaming_quality.png",
