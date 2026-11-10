@@ -7321,6 +7321,13 @@
         "width": 24,
         "height": 24
     },
+    "omnibutton_coachmark_static": {
+        "file": "app/modules/chat_input/native/images/omnibutton_coachmark_static.png",
+        "hash": "145762114c01b711fbf68400d2eda882",
+        "scales": [],
+        "width": 160,
+        "height": 120
+    },
     "onboarding_v2_upsell": {
         "file": "app/modules/guild_role_subscriptions/native/images/onboarding_v2_upsell.png",
         "hash": "21d9af173c2aa764d18866600cd204ee",
