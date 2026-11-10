@@ -1,24 +1,24 @@
-// Module ID: 7225
-// Function ID: 7226
+// Module ID: 7228
+// Function ID: 7229
 // Name: UserSettingsConfirmPassword
-// Dependencies: [5, 32, 19, 17, 1385, 1072, 21, 5140, 575, 7226, 504, 7227, 6579, 1242, 1113, 7229, 5751, 7148, 7178, 5758, 2]
+// Dependencies: [5, 32, 19, 17, 1385, 1072, 21, 5142, 575, 7229, 504, 7230, 6581, 1242, 1113, 7232, 5753, 7151, 7181, 5760, 2]
 // Exports: UserSettingsConfirmPasswordWrapped
 
-// Module 7225 (UserSettingsConfirmPassword)
+// Module 7228 (UserSettingsConfirmPassword)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import FreeFormErrorLabelDefault from "FreeFormErrorLabel" /* 7178 */;
-import useSettingNavigationRoute from "useSettingNavigationRoute" /* 7226 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 7227 */;
-import UserSettingsAccountUnverifiedHeaderDefault from "UserSettingsAccountUnverifiedHeader" /* 7229 */;
+import FreeFormErrorLabelDefault from "FreeFormErrorLabel" /* 7181 */;
+import useSettingNavigationRoute from "useSettingNavigationRoute" /* 7229 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 7230 */;
+import UserSettingsAccountUnverifiedHeaderDefault from "UserSettingsAccountUnverifiedHeader" /* 7232 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserStore from "UserStore" /* 1385 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5142 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -32,9 +32,9 @@ let obj3;
 let tmp3;
 let unpackModuleId;
 const intl5 = tmp3(1113);
-const Text_Text = tmp3(5751);
-const components_Button_Button = tmp3(5758);
-const TextInput_TextInput = tmp3(7148);
+const Text_Text = tmp3(5753);
+const components_Button_Button = tmp3(5760);
+const TextInput_TextInput = tmp3(7151);
 let _slicedToArray = _slicedToArray_mod;
 ({ View: metroRequire, ScrollView: metroImportDefault } = react_native);
 const UserSettingsSections = Constants.UserSettingsSections;

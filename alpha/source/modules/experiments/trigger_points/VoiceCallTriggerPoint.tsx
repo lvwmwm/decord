@@ -1,16 +1,16 @@
-// Module ID: 19824
-// Function ID: 19825
+// Module ID: 19853
+// Function ID: 19854
 // Name: VoiceCallTriggerPoint
-// Dependencies: [5355, 10797, 19825, 19290, 19826, 19827, 15363, 2]
+// Dependencies: [5357, 10806, 19854, 19319, 19855, 19856, 15388, 2]
 
-// Module 19824 (VoiceCallTriggerPoint)
-import ExperimentConstants from "ExperimentConstants" /* 5355 */;
-import Helpers from "Helpers" /* 10797 */;
-import VoiceChannelBadgeExperiment from "VoiceChannelBadgeExperiment" /* 15363 */;
-import HangoutWindowExperiment from "HangoutWindowExperiment" /* 19290 */;
-import VoiceChannelHoistingExperiment from "VoiceChannelHoistingExperiment" /* 19825 */;
-import PastVcActivityMessagesExperimentDefault from "PastVcActivityMessagesExperiment" /* 19826 */;
-import VoiceCallTriggerPointExperimentDefault from "VoiceCallTriggerPointExperiment" /* 19827 */;
+// Module 19853 (VoiceCallTriggerPoint)
+import ExperimentConstants from "ExperimentConstants" /* 5357 */;
+import Helpers from "Helpers" /* 10806 */;
+import VoiceChannelBadgeExperiment from "VoiceChannelBadgeExperiment" /* 15388 */;
+import HangoutWindowExperiment from "HangoutWindowExperiment" /* 19319 */;
+import VoiceChannelHoistingExperiment from "VoiceChannelHoistingExperiment" /* 19854 */;
+import PastVcActivityMessagesExperimentDefault from "PastVcActivityMessagesExperiment" /* 19855 */;
+import VoiceCallTriggerPointExperimentDefault from "VoiceCallTriggerPointExperiment" /* 19856 */;
 import size from "module_2" /* 2 */;
 
 const CommonTriggerPoints = ExperimentConstants.CommonTriggerPoints;

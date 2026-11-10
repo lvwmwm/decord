@@ -1,18 +1,18 @@
-// Module ID: 6989
-// Function ID: 6990
+// Module ID: 6990
+// Function ID: 6991
 // Name: Spellchecker
-// Dependencies: [5, 32, 2186, 3, 4951, 6990, 6991, 6992, 6993, 1380, 12, 2153, 2]
+// Dependencies: [5, 32, 2186, 3, 4953, 6991, 6992, 6993, 6994, 1380, 12, 2153, 2]
 // Exports: install
 
-// Module 6989 (Spellchecker)
+// Module 6990 (Spellchecker)
 import LoggerDefault from "Logger" /* 3 */;
 import DOMUtils from "DOMUtils" /* 2153 */;
-import fallbackLocalesDefault from "fallbackLocales" /* 6990 */;
-import _mod6991 from "module_6991" /* 6991 */;
+import fallbackLocalesDefault from "fallbackLocales" /* 6991 */;
+import _mod6992 from "module_6992" /* 6992 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import LocaleStore from "LocaleStore" /* 2186 */;
-import DiscordNative from "DiscordNative" /* 4951 */;
+import DiscordNative from "DiscordNative" /* 4953 */;
 import module_12 from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 
@@ -71,7 +71,7 @@ class Spellchecker {
       if (str2 == null) {
         str2 = str;
       }
-      obj = _mod6991;
+      obj = _mod6992;
       const parsed = obj.parse(str2.replace(/[_-]/g, "-"));
       if (null != parsed) {
         if (null != parsed.langtag.language) {
@@ -172,8 +172,12 @@ class Spellchecker {
   getCachedMisspelling() {
     return { misspelledWord: this.misspelledWord, corrections: this.corrections };
   }
-  replaceMisspelling(arg0) {
-    spellCheck.replaceMisspelling(arg0);
+  clearCachedMisspelling() {
+    this.misspelledWord = "";
+    this.corrections = [];
+  }
+  replaceMisspelling(arg0, arg1) {
+    spellCheck.replaceMisspelling(arg0, arg1);
   }
   applyLocale(mapped1) {
     let closure_0 = mapped1;
@@ -203,7 +207,7 @@ class Spellchecker {
       if (str2 == null) {
         str2 = str;
       }
-      obj = _mod6991;
+      obj = _mod6992;
       const parsed = obj.parse(str2.replace(/[_-]/g, "-"));
       if (null != parsed) {
         if (null != parsed.langtag.language) {

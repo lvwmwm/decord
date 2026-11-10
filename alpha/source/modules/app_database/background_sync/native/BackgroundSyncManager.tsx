@@ -1,13 +1,13 @@
-// Module ID: 19809
-// Function ID: 19810
+// Module ID: 19838
+// Function ID: 19839
 // Name: BackgroundSyncManager
-// Dependencies: [502, 1385, 7350, 19810, 2]
+// Dependencies: [502, 1385, 7353, 19839, 2]
 
-// Module 19809 (BackgroundSyncManager)
-import background_sync_BackgroundSync from "background_sync/BackgroundSync" /* 19810 */;
+// Module 19838 (BackgroundSyncManager)
+import background_sync_BackgroundSync from "background_sync/BackgroundSync" /* 19839 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import UserStore from "UserStore" /* 1385 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7350 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7353 */;
 import size from "module_2" /* 2 */;
 
 class BackgroundSyncManager extends AutomaticLifecycleManager {

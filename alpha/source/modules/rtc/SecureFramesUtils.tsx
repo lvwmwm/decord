@@ -1,32 +1,32 @@
-// Module ID: 9345
-// Function ID: 9346
+// Module ID: 9351
+// Function ID: 9352
 // Name: SecureFramesUtils
-// Dependencies: [32, 5, 502, 2130, 5893, 7962, 1385, 5911, 9346, 1072, 2185, 9347, 9348, 9330, 9349, 1113, 5194, 2166, 1089, 38, 206, 1282, 1242, 6090, 6173, 2]
+// Dependencies: [32, 5, 502, 2130, 5895, 7966, 1385, 5913, 9352, 1072, 2185, 9353, 9354, 9336, 9355, 1113, 5196, 2166, 1089, 38, 206, 1282, 1242, 6092, 6175, 2]
 // Exports: addVerification, deletePersistentVerification, deleteUserPersistentVerifications, deleteVerification, ensureCurrentUserPublicKey, getSecureFramesHelpdeskArticle, getSecureFramesPersistentCodesHelpdeskArticle, getSecureFramesUserVerifiedTimestamp, getSecureFramesVerifiedDevicesHelpdeskArticle, getUserVerificationDeeplink, getUserVerificationFooterText, getUserVerifyStateText, isCurrentUserPublicKeyMatch, showSecureFramesKeyInconsistentAlert, validateSecureFramesKeyConsistent
 
-// Module 9345 (SecureFramesUtils)
+// Module 9351 (SecureFramesUtils)
 import _modDef38 from "module_38" /* 38 */;
 import byteLengthDefault from "byteLength" /* 206 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import intl15 from "intl" /* 1113 */;
 import _modDef2166 from "module_2166" /* 2166 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2185 */;
-import UserUtilsDefault from "UserUtils" /* 5194 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 6090 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 6173 */;
-import _mod9330 from "module_9330" /* 9330 */;
-import SecureFramesActionCreatorsDefault from "SecureFramesActionCreators" /* 9347 */;
-import SecureFramesTracking from "SecureFramesTracking" /* 9348 */;
-import SecureFramesPlatformUtilsDefault from "SecureFramesPlatformUtils" /* 9349 */;
+import UserUtilsDefault from "UserUtils" /* 5196 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 6092 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 6175 */;
+import _mod9336 from "module_9336" /* 9336 */;
+import SecureFramesActionCreatorsDefault from "SecureFramesActionCreators" /* 9353 */;
+import SecureFramesTracking from "SecureFramesTracking" /* 9354 */;
+import SecureFramesPlatformUtilsDefault from "SecureFramesPlatformUtils" /* 9355 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MediaEngineStore from "MediaEngineStore" /* 2130 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5893 */;
-import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 7962 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5895 */;
+import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 7966 */;
 import UserStore from "UserStore" /* 1385 */;
-import SecureFramesPersistedStore from "SecureFramesPersistedStore" /* 5911 */;
-import SecureFramesConstants from "SecureFramesConstants" /* 9346 */;
+import SecureFramesPersistedStore from "SecureFramesPersistedStore" /* 5913 */;
+import SecureFramesConstants from "SecureFramesConstants" /* 9352 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -478,8 +478,8 @@ export function deleteVerification(userId, arg1, isOtherUserKeyPersistent) {
     const _Uint8Array = Uint8Array;
     const self = this;
     const self2 = this;
-    const serializeKey = _mod9330.serializeKey;
-    _mod9330;
+    const serializeKey = _mod9336.serializeKey;
+    _mod9336;
     const uint8Array = new Uint8Array(arg1);
     const serializeKeyResult = serializeKey(uint8Array);
     const obj2 = SecureFramesActionCreatorsDefault;
@@ -580,7 +580,7 @@ export function getSecureFramesUserVerifiedTimestamp(timestamp) {
   }
 }
 export function getUserVerificationDeeplink(userId, arg1) {
-  const FEATUREResult = authStore3.FEATURE(map1.DAVE_PROTOCOL_VERIFICATION);
+  const FEATUREResult = gesture.FEATURE(map1.DAVE_PROTOCOL_VERIFICATION);
   return "" + protocol + "//" + location.host + FEATUREResult + "?userId=" + userId + "&fingerprint=" + encodeURIComponent(arg1);
 }
 export function getUserVerifyStateText(memo, name) {

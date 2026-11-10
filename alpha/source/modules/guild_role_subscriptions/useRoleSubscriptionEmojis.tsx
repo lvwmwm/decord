@@ -1,12 +1,12 @@
-// Module ID: 20373
-// Function ID: 20374
+// Module ID: 20401
+// Function ID: 20402
 // Name: useRoleSubscriptionEmojis
-// Dependencies: [19, 6851, 504, 5094, 2]
+// Dependencies: [19, 6854, 504, 5096, 2]
 // Exports: default
 
-// Module 20373 (useRoleSubscriptionEmojis)
+// Module 20401 (useRoleSubscriptionEmojis)
 import react from "react" /* 19 */;
-import EmojiStore from "EmojiStore" /* 6851 */;
+import EmojiStore from "EmojiStore" /* 6854 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

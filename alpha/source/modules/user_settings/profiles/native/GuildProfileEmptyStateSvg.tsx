@@ -1,11 +1,11 @@
-// Module ID: 16883
-// Function ID: 16884
+// Module ID: 16910
+// Function ID: 16911
 // Name: GuildProfileEmptyStateSvg
-// Dependencies: [19, 21, 8101, 2]
+// Dependencies: [19, 21, 8105, 2]
 // Exports: default
 
-// Module 16883 (GuildProfileEmptyStateSvg)
-import inlineStyles from "inlineStyles" /* 8101 */;
+// Module 16910 (GuildProfileEmptyStateSvg)
+import inlineStyles from "inlineStyles" /* 8105 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size_mod from "module_2" /* 2 */;

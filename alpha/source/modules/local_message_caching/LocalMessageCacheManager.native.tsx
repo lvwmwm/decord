@@ -1,27 +1,27 @@
-// Module ID: 16728
-// Function ID: 16729
+// Module ID: 16755
+// Function ID: 16756
 // Name: LocalMessageCacheManager
-// Dependencies: [5, 32, 5083, 502, 4989, 6194, 10319, 1072, 16729, 3, 1089, 510, 2166, 4962, 10438, 7712, 11834, 14772, 2118, 2120, 572, 6618, 9920, 2]
+// Dependencies: [5, 32, 5085, 502, 4991, 6196, 10325, 1072, 16756, 3, 1089, 510, 2166, 4964, 10444, 7715, 11843, 14798, 2118, 2120, 572, 6620, 9926, 2]
 
-// Module 16728 (LocalMessageCacheManager)
+// Module 16755 (LocalMessageCacheManager)
 import LoggerDefault from "Logger" /* 3 */;
 import Storage3 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import _modDef2166 from "module_2166" /* 2166 */;
-import DateUtils from "DateUtils" /* 4962 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7712 */;
-import createMessageDefault from "createMessage" /* 10438 */;
-import UploadActionCreatorsDefault from "UploadActionCreators" /* 11834 */;
+import DateUtils from "DateUtils" /* 4964 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7715 */;
+import createMessageDefault from "createMessage" /* 10444 */;
+import UploadActionCreatorsDefault from "UploadActionCreators" /* 11843 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import MessageRecord from "MessageRecord" /* 5083 */;
+import MessageRecord from "MessageRecord" /* 5085 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4989 */;
-import MessageStore from "MessageStore" /* 6194 */;
-import SendMessageOptionsStore from "SendMessageOptionsStore" /* 10319 */;
+import ChannelStore from "ChannelStore" /* 4991 */;
+import MessageStore from "MessageStore" /* 6196 */;
+import SendMessageOptionsStore from "SendMessageOptionsStore" /* 10325 */;
 import Constants from "Constants" /* 1072 */;
-import MutexUtils from "MutexUtils" /* 16729 */;
+import MutexUtils from "MutexUtils" /* 16756 */;
 import LifecycleManager from "LifecycleManager" /* 2120 */;
 import size from "module_2" /* 2 */;
 

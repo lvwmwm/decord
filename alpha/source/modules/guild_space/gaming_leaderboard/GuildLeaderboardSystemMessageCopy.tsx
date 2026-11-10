@@ -1,14 +1,14 @@
-// Module ID: 8481
-// Function ID: 8482
+// Module ID: 8485
+// Function ID: 8486
 // Name: GuildLeaderboardSystemMessageCopy
-// Dependencies: [5060, 2568, 1089, 1113, 2]
+// Dependencies: [5062, 2568, 1089, 1113, 2]
 // Exports: getLeaderboardSystemMessage, getMobileLeaderboardSystemMessage, resolveGuildSpaceLeaderboardMessage
 
-// Module 8481 (GuildLeaderboardSystemMessageCopy)
+// Module 8485 (GuildLeaderboardSystemMessageCopy)
 import DurationsDefault from "Durations" /* 1089 */;
 import intl3 from "intl" /* 1113 */;
 import _modDef2568 from "module_2568" /* 2568 */;
-import GuildLeaderboardTypes from "GuildLeaderboardTypes" /* 5060 */;
+import GuildLeaderboardTypes from "GuildLeaderboardTypes" /* 5062 */;
 import size from "module_2" /* 2 */;
 
 function getLeaderboardSystemMessageValues(secondaryValue, arg1) {

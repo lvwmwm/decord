@@ -1,78 +1,47 @@
 // Module ID: 13136
 // Function ID: 13137
 // Name: tokenize
-// Dependencies: [13050]
+// Dependencies: [13064, 13108]
 
 // Module 13136 (tokenize)
-import tokenize from "tokenize" /* 13050 */;
+import tokenize from "tokenize" /* 13064 */;
+import tokenize2 from "tokenize" /* 13108 */;
 
-const Delim = tokenize.TYPE.Delim;
-const Ident = tokenize.TYPE.Ident;
-const Dimension = tokenize.TYPE.Dimension;
-const Percentage = tokenize.TYPE.Percentage;
-const Number = tokenize.TYPE.Number;
-const Hash = tokenize.TYPE.Hash;
-const Colon = tokenize.TYPE.Colon;
-const LeftSquareBracket = tokenize.TYPE.LeftSquareBracket;
-const obj = {
-  getNode(arg0) {
-    const self = this;
-    const tokenType = this.scanner.tokenType;
-    if (LeftSquareBracket === tokenType) {
-      return self.AttributeSelector();
-    } else if (Hash === tokenType) {
-      return self.IdSelector();
-    } else if (Colon === tokenType) {
-      let result;
-      const scanner = self.scanner;
-      if (scanner.lookupType(1) === tmp6) {
-        result = self.PseudoElementSelector();
-      } else {
-        result = self.PseudoClassSelector();
-      }
-      return result;
-    } else if (Ident === tokenType) {
-      return self.TypeSelector();
-    } else {
-      if (Number !== tokenType) {
-        if (Percentage !== tokenType) {
-          if (Dimension === tokenType) {
-            const source = self.scanner.source;
-            if (46 === source.charCodeAt(self.scanner.tokenStart)) {
-              self.error("Identifier is expected", self.scanner.tokenStart + 1);
-            }
-          } else if (Delim === tokenType) {
-            const source2 = self.scanner.source;
-            const charCodeAtResult = source2.charCodeAt(self.scanner.tokenStart);
-            if (43 !== charCodeAtResult) {
-              if (62 !== charCodeAtResult) {
-                if (126 !== charCodeAtResult) {
-                  if (47 === charCodeAtResult) {
-                    return self.Combinator();
-                  } else if (46 === charCodeAtResult) {
-                    return self.ClassSelector();
-                  } else {
-                    if (42 !== charCodeAtResult) {
-                      if (124 !== charCodeAtResult) {
-                        if (35 === charCodeAtResult) {
-                          return self.IdSelector();
-                        }
-                      }
-                    }
-                    return self.TypeSelector();
-                  }
-                }
-              }
-            }
-            arg0.space = null;
-            arg0.ignoreWSAfter = true;
-            return self.Combinator();
-          }
-        }
-      }
-      return self.Percentage();
-    }
+function consumeRaw(arg0) {
+  return this.Raw(arg0, tokenize2.mode.leftCurlyBracket, true);
+}
+function consumePrelude() {
+  const self = this;
+  const SelectorListResult = this.SelectorList();
+  const tmp2 = "Raw" !== SelectorListResult.type && false === self.scanner.eof && self.scanner.tokenType !== LeftCurlyBracket;
+  if (tmp2) {
+    self.error();
   }
+  return SelectorListResult;
+}
+const LeftCurlyBracket = tokenize.TYPE.LeftCurlyBracket;
+let obj = {
+  name: "Rule",
+  structure: { prelude: ["SelectorList", "Raw"], block: ["Block"] },
+  parse() {
+    let BlockResult;
+    let parseWithFallbackResult;
+    const self = this;
+    const tokenStart = this.scanner.tokenStart;
+    if (this.parseRulePrelude) {
+      parseWithFallbackResult = self.parseWithFallback(consumePrelude, consumeRaw);
+    } else {
+      parseWithFallbackResult = consumeRaw.call(self, tmp);
+    }
+    const obj = { type: "Rule", loc: self.getLocation(tokenStart, self.scanner.tokenStart), prelude: parseWithFallbackResult, block: BlockResult };
+    BlockResult = self.Block(true);
+    return obj;
+  },
+  generate(prelude) {
+    this.node(prelude.prelude);
+    this.node(prelude.block);
+  },
+  walkContext: "rule"
 };
 
 export default obj;

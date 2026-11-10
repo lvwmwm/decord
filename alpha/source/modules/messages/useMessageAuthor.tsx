@@ -1,17 +1,17 @@
-// Module ID: 6571
-// Function ID: 6572
+// Module ID: 6573
+// Function ID: 6574
 // Name: useMessageAuthor
-// Dependencies: [4989, 5052, 5046, 5011, 5082, 1385, 38, 504, 5194, 6572, 2]
+// Dependencies: [4991, 5054, 5048, 5013, 5084, 1385, 38, 504, 5196, 6574, 2]
 // Exports: default, getMessageAuthor, useUserNickAndColor
 
-// Module 6571 (useMessageAuthor)
+// Module 6573 (useMessageAuthor)
 import _modDef38 from "module_38" /* 38 */;
-import UserUtilsDefault from "UserUtils" /* 5194 */;
-import ChannelStore from "ChannelStore" /* 4989 */;
-import GuildMemberStore from "GuildMemberStore" /* 5052 */;
-import GuildRoleStore from "GuildRoleStore" /* 5046 */;
-import GuildStore from "GuildStore" /* 5011 */;
-import RelationshipStore from "RelationshipStore" /* 5082 */;
+import UserUtilsDefault from "UserUtils" /* 5196 */;
+import ChannelStore from "ChannelStore" /* 4991 */;
+import GuildMemberStore from "GuildMemberStore" /* 5054 */;
+import GuildRoleStore from "GuildRoleStore" /* 5048 */;
+import GuildStore from "GuildStore" /* 5013 */;
+import RelationshipStore from "RelationshipStore" /* 5084 */;
 import UserStore from "UserStore" /* 1385 */;
 import size from "module_2" /* 2 */;
 

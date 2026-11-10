@@ -1,21 +1,23 @@
-// Module ID: 13984
-// Function ID: 13985
+// Module ID: 14009
+// Function ID: 14010
 // Name: RefreshChatInputCoachmark
-// Dependencies: [32, 19, 4986, 7641, 4973, 1113, 5291, 10076, 2]
+// Dependencies: [32, 19, 4988, 7644, 4975, 5156, 1113, 14010, 5293, 10082, 2]
 // Exports: default, useRefreshChatInputCoachmark
 
-// Module 13984 (RefreshChatInputCoachmark)
+// Module 14009 (RefreshChatInputCoachmark)
 import intl3 from "intl" /* 1113 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4986 */;
-import OmnibuttonCoachmarkRive from "OmnibuttonCoachmarkRive" /* 5291 */;
-import useCoachmark from "useCoachmark" /* 10076 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4988 */;
+import useCoachmark from "useCoachmark" /* 10082 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14010 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, dependencyMap;
+let _require;
 
+let tmp;
+const OmnibuttonCoachmarkRive = tmp(5293);
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
 const result = size.fileFinishedImporting("modules/chat_input/native/RefreshChatInputCoachmark.tsx");
 
@@ -29,27 +31,30 @@ export default function RefreshChatInputCoachmark(buttonRef) {
 export function useRefreshChatInputCoachmark(disabled) {
   let closure_0;
   let items;
-  let visible;
   _require = undefined;
-  dependencyMap = undefined;
+  let visible;
+  let reducedMotion;
+  let tmp = _require;
   disabled = disabled.disabled;
   const useSelectedDismissibleContent = require("useSelectedDismissibleContent").useSelectedDismissibleContent;
-  require("useSelectedDismissibleContent");
+  const tmp3 = require("useSelectedDismissibleContent");
   if (disabled) {
     items = [];
   } else {
-    items = [tmp(4973).DismissibleContent.MOBILE_REFRESH_CHAT_INPUT_PLUS_BUTTON_COACHMARK];
+    items = [tmp(tmp2[4]).DismissibleContent.MOBILE_REFRESH_CHAT_INPUT_PLUS_BUTTON_COACHMARK];
   }
   const tmp4 = _slicedToArray(useSelectedDismissibleContent(items), 2);
   _require = tmp5;
-  const tmp6 = tmp4[0] === require("dismissible_content").DismissibleContent.MOBILE_REFRESH_CHAT_INPUT_PLUS_BUTTON_COACHMARK;
-  dependencyMap = tmp6;
-  const items1 = [tmp6, tmp4[1]];
+  const tmp6 = tmp4[0] === tmp(reducedMotion[4]).DismissibleContent.MOBILE_REFRESH_CHAT_INPUT_PLUS_BUTTON_COACHMARK;
+  visible = tmp6;
+  reducedMotion = react.useContext(tmp(tmp2[5]).AccessibilityPreferencesContext).reducedMotion;
+  const items1 = [tmp6, tmp4[1], reducedMotion.enabled];
   let memo = null;
   if (tmp6) {
     memo = react.useMemo(() => {
       let intl;
       let intl2;
+      let obj3;
       const obj = {
         title: intl.string(intl3.t.eqI1WA),
         description: intl2.string(intl3.t.nxO3NK),
@@ -59,11 +64,16 @@ export function useRefreshChatInputCoachmark(disabled) {
         onDismiss() {
           closure_1_0(constants.USER_DISMISS);
         },
-        graphic: { type: "rive", rive: OmnibuttonCoachmarkRive.OmnibuttonCoachmarkRive, aspectRatio: "16/9" }
+        graphic: obj3
       };
       intl = intl3.intl;
       intl2 = intl3.intl;
-      ({ type: "rive", rive: OmnibuttonCoachmarkRive.OmnibuttonCoachmarkRive, aspectRatio: "16/9" });
+      if (reducedMotion.enabled) {
+        obj3 = { type: "image", src: AssetRegistryDefault, aspectRatio: "16/9" };
+        const obj2 = { type: "image", src: AssetRegistryDefault, aspectRatio: "16/9" };
+      } else {
+        obj3 = { type: "rive", rive: OmnibuttonCoachmarkRive.OmnibuttonCoachmarkRive, aspectRatio: "16/9" };
+      }
       return obj;
     }, items1);
   }

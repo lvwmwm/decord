@@ -1,22 +1,22 @@
-// Module ID: 19637
-// Function ID: 19638
+// Module ID: 19666
+// Function ID: 19667
 // Name: VoicePanelVideoRenderer
-// Dependencies: [32, 19, 17, 11363, 11361, 19486, 11364, 21, 1652, 11936, 5140, 11362, 5761, 10210, 1705, 5376, 5420, 6019, 19575, 11931, 11929, 19565, 11367, 19483, 6003, 5724, 575, 5370, 11933, 2]
+// Dependencies: [32, 19, 17, 11372, 11370, 19515, 11373, 21, 1652, 11945, 5142, 11371, 5763, 10216, 1705, 5378, 5422, 6021, 19604, 11940, 11938, 19594, 11376, 19512, 6005, 5726, 575, 5372, 11942, 2]
 
-// Module 19637 (VoicePanelVideoRenderer)
+// Module 19666 (VoicePanelVideoRenderer)
 import react_native from "react-native" /* 17 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11361 */;
-import MorphablePanelConstants from "MorphablePanelConstants" /* 11364 */;
-import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 11367 */;
-import DCDVideoRendererDefault from "DCDVideoRenderer" /* 11936 */;
-import VideoActionCreators from "VideoActionCreators" /* 19483 */;
-import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 19486 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11370 */;
+import MorphablePanelConstants from "MorphablePanelConstants" /* 11373 */;
+import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 11376 */;
+import DCDVideoRendererDefault from "DCDVideoRenderer" /* 11945 */;
+import VideoActionCreators from "VideoActionCreators" /* 19512 */;
+import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 19515 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11363 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11372 */;
 import Fragment from "Fragment" /* 21 */;
 import module_1652 from "module_1652" /* 1652 */;
-import createStyles from "createStyles" /* 5140 */;
+import createStyles from "createStyles" /* 5142 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap, diff2, diff3, failResult, set, set2, set2Result, set3, set3Result, timestamp, value1;

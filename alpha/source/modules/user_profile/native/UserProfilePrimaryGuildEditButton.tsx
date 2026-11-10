@@ -1,25 +1,25 @@
-// Module ID: 16827
-// Function ID: 16828
+// Module ID: 16854
+// Function ID: 16855
 // Name: UserProfilePrimaryGuildEditButton
-// Dependencies: [19, 5011, 8464, 21, 5140, 575, 504, 16828, 14968, 8807, 8806, 1113, 1377, 5751, 16793, 5374, 16829, 2118, 7020, 9375, 2]
+// Dependencies: [19, 5013, 8468, 21, 5142, 575, 504, 16855, 14994, 8813, 8812, 1113, 1377, 5753, 16820, 5376, 16856, 2118, 7023, 9381, 2]
 // Exports: default
 
-// Module 16827 (UserProfilePrimaryGuildEditButton)
+// Module 16854 (UserProfilePrimaryGuildEditButton)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import asyncRequire from "asyncRequire" /* 2118 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
-import GuildTagConstants from "GuildTagConstants" /* 8464 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5376 */;
+import GuildTagConstants from "GuildTagConstants" /* 8468 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 5011 */;
-import createStyles from "createStyles" /* 5140 */;
+import GuildStore from "GuildStore" /* 5013 */;
+import createStyles from "createStyles" /* 5142 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
 const GuildTagBadgeSize = GuildTagConstants.GuildTagBadgeSize;
 const jsx = Fragment.jsx;
 let obj = { tag: obj2 };
-obj2 = { paddingHorizontal: 6, paddingVertical: 2, columnGap: 4, borderRadius: nativeDefault.radii.sm };
+obj2 = { paddingHorizontal: 6, paddingVertical: 2, columnGap: 4, borderRadius: nativeDefault.radii.sm, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_MUTED };
 let closure_6 = createStyles.createStyles(obj);
 const result = size.fileFinishedImporting("modules/user_profile/native/UserProfilePrimaryGuildEditButton.tsx");
 
@@ -142,7 +142,7 @@ export default function UserProfilePrimaryGuildEditButton(arg0) {
     return <UserProfileEditFormButton label={intl2.string(pendingPrimaryGuildId(handleSelectPrimaryGuild[11]).t["DUD+5n"])} buttonText={name} accessibilityValue={obj5} onPress={function handleOpenSelectPrimaryGuild() {
       const obj = ActionSheetActionCreatorsDefault;
       const obj2 = { availableGuilds: userAvailableGuildsWithTags, selectedGuildId: pendingPrimaryGuildId, onSelectGuild: handleSelectPrimaryGuild };
-      obj.openLazy(asyncRequire(16829, dependencyMap.paths), "UserPrimaryGuildListBottomSheet", obj2);
+      obj.openLazy(asyncRequire(16856, dependencyMap.paths), "UserPrimaryGuildListBottomSheet", obj2);
     }} leading={tmp23Result} trailing={tmp23Result2} disabled={disabled} />;
   }
   return null;

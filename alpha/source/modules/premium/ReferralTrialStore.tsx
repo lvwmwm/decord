@@ -1,18 +1,18 @@
-// Module ID: 7708
-// Function ID: 7709
+// Module ID: 7711
+// Function ID: 7712
 // Name: ReferralTrialStore
-// Dependencies: [1385, 1072, 7709, 1088, 504, 572, 2]
+// Dependencies: [1385, 1072, 7712, 1088, 504, 572, 2]
 
-// Module 7708 (ReferralTrialStore)
+// Module 7711 (ReferralTrialStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import MessageTypes from "MessageTypes" /* 1088 */;
-import ReferralTrialActionCreators from "ReferralTrialActionCreators" /* 7709 */;
+import ReferralTrialActionCreators from "ReferralTrialActionCreators" /* 7712 */;
 import UserStore from "UserStore" /* 1385 */;
 import size from "module_2" /* 2 */;
 
-let closure_14;
+let closure_14, closure_15;
 
 function emitChanges() {
   return true;
@@ -62,8 +62,8 @@ map = map1;
 let c11 = 0;
 let c12 = null;
 let set3 = new Set();
-const authStore3 = [];
-let closure_15 = [];
+const gesture = [];
+const clientStatuses = [];
 let c16 = false;
 let c17 = false;
 let refresh_at = null;

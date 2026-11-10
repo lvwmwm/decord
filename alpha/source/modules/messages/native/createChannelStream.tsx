@@ -1,21 +1,20 @@
-// Module ID: 13947
-// Function ID: 13948
+// Module ID: 13972
+// Function ID: 13973
 // Name: createChannelStream
-// Dependencies: [11510, 7899, 8463, 8449, 1072, 11, 10241, 13948, 1113, 4962, 8504, 11833, 7507, 13951, 2]
+// Dependencies: [11519, 7903, 8467, 8453, 1072, 11, 8492, 10247, 13973, 1113, 4964, 8508, 11842, 7510, 13976, 2]
 // Exports: default
 
-// Module 13947 (createChannelStream)
+// Module 13972 (createChannelStream)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import Constants from "Constants" /* 1072 */;
-import isNewMessageGroupDefault from "isNewMessageGroup" /* 10241 */;
-import tryInjectMessage from "tryInjectMessage" /* 13948 */;
-import PushFeedbackStore_mod from "PushFeedbackStore" /* 11510 */;
-import EditMessageStore from "EditMessageStore" /* 7899 */;
-import UploadStore from "UploadStore" /* 8463 */;
-import RowGeneratorConstants from "RowGeneratorConstants" /* 8449 */;
+import UnlinkedGamePlayerPlaceholders from "UnlinkedGamePlayerPlaceholders" /* 8492 */;
+import isNewMessageGroupDefault from "isNewMessageGroup" /* 10247 */;
+import tryInjectMessage from "tryInjectMessage" /* 13973 */;
+import PushFeedbackStore_mod from "PushFeedbackStore" /* 11519 */;
+import EditMessageStore from "EditMessageStore" /* 7903 */;
+import UploadStore from "UploadStore" /* 8467 */;
+import RowGeneratorConstants from "RowGeneratorConstants" /* 8453 */;
 import size from "module_2" /* 2 */;
-
-const require = globalThis.__r;
 
 let c9;
 let metroImportAll;
@@ -26,28 +25,29 @@ let PushFeedbackStore = PushFeedbackStore_mod;
 const MessageFlags = Constants.MessageFlags;
 let result = size.fileFinishedImporting("modules/messages/native/createChannelStream.tsx");
 
-export default function createChannelStream(forceRender) {
+export default function createChannelStream(roleStyle) {
   let canAddNewReactions;
+  let chatManager;
   let closure_11;
   let closure_12;
   let closure_13;
   let closure_6;
   let closure_7;
-  let closure_8;
   let editing;
   let id;
   let intl;
   let messages;
   let pushFeedback;
   let renderContentOnly;
-  let roleStyle;
   let updateMessageIds;
   let uploads;
-  ({ channel: require, messages } = forceRender);
-  ({ uploads, oldestUnreadMessageId: id, replyingMessageId: PushFeedbackStore, currentUserId: EditMessageStore, canAddNewReactions: UploadStore, selectedSummary: closure_6, selectedConversation: closure_7, chatManager: closure_8, roleStyle } = forceRender);
-  forceRender = forceRender.forceRender;
-  ({ updateMessageIds: closure_11, isResourceChannel: closure_12, unloadableContentEntryMessageIds: closure_13 } = forceRender);
+  ({ channel: require, messages } = roleStyle);
+  ({ uploads, oldestUnreadMessageId: id, replyingMessageId: PushFeedbackStore, currentUserId: EditMessageStore, canAddNewReactions: UploadStore, selectedSummary: closure_6, selectedConversation: closure_7, chatManager } = roleStyle);
+  roleStyle = roleStyle.roleStyle;
+  const forceRender = roleStyle.forceRender;
+  ({ updateMessageIds: closure_11, isResourceChannel: closure_12, unloadableContentEntryMessageIds: closure_13 } = roleStyle);
   let items1;
+  let length;
   function unreadFilter(id) {
     let tmp3;
     const tmp = require;
@@ -64,28 +64,48 @@ export default function createChannelStream(forceRender) {
     }
     return tmp3;
   }
+  function isCollapsiblePlaceholder(id) {
+    let result = id.id !== messages.jumpTargetId;
+    if (result) {
+      obj = UnlinkedGamePlayerPlaceholders;
+      result = obj.isUnlinkedGamePlayerPlaceholder(require, id);
+    }
+    return result;
+  }
   function insertMessage(message) {
     const first = items1[0];
     if (null != first) {
       let tmp;
       if (require.isForumPost()) {
-        let tmp2 = tmp13;
+        let tmp2 = tmp21;
         if (tmp2) {
           id = message.id;
           obj = SnowflakeUtilsDefault;
-          tmp2 = id !== obj.castChannelIdAsMessageId(tmp11.id);
+          tmp2 = id !== obj.castChannelIdAsMessageId(tmp19.id);
         }
         tmp = tmp2;
       } else {
-        tmp = tmp13;
+        tmp = tmp21;
       }
       if (!tmp) {
-        if (isNewMessageGroupDefault(require, first[first.length - 1], message)) {
-          items = [message];
-          items1.unshift(items);
-        } else {
-          first.unshift(message);
+        if (!isNewMessageGroupDefault(require, first[first.length - 1], message)) {
+          let result = tmp6.id !== messages.jumpTargetId;
+          const tmp9 = messages;
+          if (result) {
+            const obj2 = UnlinkedGamePlayerPlaceholders;
+            result = obj2.isUnlinkedGamePlayerPlaceholder(tmp19, tmp6);
+          }
+          let result1 = message.id !== tmp9.jumpTargetId;
+          if (result1) {
+            const obj3 = UnlinkedGamePlayerPlaceholders;
+            result1 = obj3.isUnlinkedGamePlayerPlaceholder(tmp19, message);
+          }
+          if (result === result1) {
+            first.unshift(message);
+          }
         }
+        items = [message];
+        items1.unshift(items);
       }
     }
     items1 = [message];
@@ -97,11 +117,11 @@ export default function createChannelStream(forceRender) {
       flag = false;
     }
     obj = { message, updateMessageIds, forceRender };
-    return constants2.determineChangeType(obj, flag);
+    return chatManager.determineChangeType(obj, flag);
   }
   let items = [];
   let obj = {};
-  const substr = uploads.slice();
+  let substr = uploads.slice();
   const reversed = substr.reverse();
   let iter = reversed[Symbol.iterator]();
   let nextResult = iter.next();
@@ -122,7 +142,7 @@ export default function createChannelStream(forceRender) {
     continue;
   }
   items1 = [];
-  let item = messages.forEach((id) => {
+  const item = messages.forEach((id) => {
     obj = tryInjectMessage;
     const result = obj.tryCreateInjectedMessage(id, require);
     const tmp2 = null != result && "before" === result.position;
@@ -142,55 +162,72 @@ export default function createChannelStream(forceRender) {
       tmp6(result.message);
     }
   });
-  const item1 = items1.forEach((item, index) => {
+  let tmp11 = null;
+  if ("getPreviousMessages" in chatManager) {
+    const previousMessages = chatManager.getPreviousMessages();
+    length = undefined;
+    if (previousMessages != null) {
+      length = previousMessages.length;
+    }
+    if (length == null) {
+      length = null;
+    }
+    tmp11 = length;
+  }
+  length = tmp11;
+  const item1 = items1.forEach((arr, index) => {
     let flag;
     let hasItem;
     let intl;
     let intl6;
     let isForumPostResult;
     let isSystemDMResult;
-    let obj22;
+    let obj24;
     let pushType;
     let stringResult;
-    let tmp162;
-    let tmp8;
-    let tmp85;
-    let tmp96;
-    let message = item[item.length - 1];
+    let tmp195;
+    let tmp88;
+    let tmp9;
+    let tmp99;
+    const f130924 = (message) => {
+      obj = { message, updateMessageIds, forceRender };
+      return chatManager.determineChangeType(obj, false) !== constants.NOOP;
+    };
+    require = arr;
+    let message = arr[arr.length - 1];
     let hasMoreAfter = 0 === index;
     const diff = items1.length - 1;
-    const tmp = items1;
+    const tmp2 = items1;
     if (hasMoreAfter) {
-      let tmp3 = message;
+      let tmp4 = message;
       hasMoreAfter = message.hasMoreAfter;
     }
     if (hasMoreAfter) {
+      let tmp6 = items;
+      let obj2 = { rowType: constants2.LOAD_AFTER, changeType: forceRender ? tmp9.UPDATE : tmp9.NOOP, roleStyle, isLoading: message.loadingMore, text: intl.string(require("intl").t.XBlaiC) };
+      let tmp7 = constants2;
+      let tmp8 = forceRender;
+      tmp9 = constants;
+      let tmp11 = roleStyle;
+      let tmp12 = message;
+      let tmp13 = require;
+      let tmp14 = id;
       let tmp5 = items;
-      let obj2 = { rowType: constants2.LOAD_AFTER, changeType: forceRender ? tmp8.UPDATE : tmp8.NOOP, roleStyle, isLoading: message.loadingMore, text: intl.string(require("intl").t.XBlaiC) };
-      let tmp6 = constants2;
-      let tmp7 = forceRender;
-      tmp8 = constants;
-      let tmp9 = roleStyle;
-      let tmp11 = message;
-      let tmp12 = require;
-      let tmp13 = id;
-      let tmp4 = items;
       const push = items.push;
       intl = require("intl").intl;
-      let tmp14 = require;
       push(obj2);
     }
-    let tmp19 = message.hasMoreBefore && tmp17;
+    let tmp19 = message.hasMoreBefore && tmp18;
     let tmp20 = unreadFilter(message);
     let timestamp = null;
     if (index !== diff) {
-      timestamp = tmp[index + 1][0].timestamp;
+      timestamp = tmp2[index + 1][0].timestamp;
     }
     if (index === diff) {
-      let tmp25 = item.isDM() && !tmp18.hasMoreBefore && tmp17;
+      let tmp25 = require.isDM() && !arr.hasMoreBefore && tmp18;
       if (!tmp25) {
-        tmp25 = obj4.isThread() && !obj4.isForumPost() && !tmp18.hasMoreBefore && tmp17;
-        const isThreadResult = obj4.isThread() && !obj4.isForumPost() && !tmp18.hasMoreBefore && tmp17;
+        tmp25 = obj4.isThread() && !obj4.isForumPost() && !arr.hasMoreBefore && tmp18;
+        const isThreadResult = obj4.isThread() && !obj4.isForumPost() && !arr.hasMoreBefore && tmp18;
       }
       flag = false;
       if (tmp25) {
@@ -201,8 +238,9 @@ export default function createChannelStream(forceRender) {
       require("DateUtils");
     }
     function processHiddenMessageRow(changeType) {
+      let closure_0;
       let isSystemDMResult;
-      const iter = item[Symbol.iterator]();
+      const iter = closure_0[Symbol.iterator]();
       const nextResult = iter.next();
       while (iter !== undefined) {
         message = nextResult;
@@ -218,7 +256,7 @@ export default function createChannelStream(forceRender) {
         if (isSystemDMResult) {
           isSystemDMResult = message.isSystemDM();
         }
-        let arr = unshift(obj2);
+        closure_0 = unshift(obj2);
         continue;
       }
       changeType.revealed = message.id === messages.revealedMessageId;
@@ -226,122 +264,160 @@ export default function createChannelStream(forceRender) {
       return changeType;
     }
     const obj5 = { roleStyle, message, isFirst: true, content: [], text: "", revealed: false };
-    let arr = items;
-    let tmp30 = items[items.length - 1];
+    let tmp32 = items[items.length - 1];
+    const tmp30 = roleStyle;
     if (message.hasFlag(forceRender.HIDDEN_SUSPENDED_USER)) {
-      if (null == tmp30) {
-        const obj10 = { rowType: closure_8.SUSPENDED_USER_GROUP, changeType: tmp162, canUncollapse: false };
-        tmp162 = determineChangeType(message);
+      if (null == tmp32) {
+        const obj10 = { rowType: chatManager.SUSPENDED_USER_GROUP, changeType: tmp195, canUncollapse: false };
+        tmp195 = determineChangeType(message);
         const merged = Object.assign(obj5);
-        arr.push(obj10);
-        tmp30 = obj10;
+        items.push(obj10);
+        tmp32 = obj10;
       }
-      const result = processHiddenMessageRow(tmp30);
+      const result = processHiddenMessageRow(tmp32);
       const intl4 = require("intl").intl;
-      const obj11 = { count: tmp30.content.length };
-      tmp30.text = intl4.formatToPlainString(require("intl").t.rHRovo, obj11);
+      const obj11 = { count: tmp32.content.length };
+      tmp32.text = intl4.formatToPlainString(require("intl").t.rHRovo, obj11);
     } else if (message.blocked) {
-      let tmp143;
-      if (null == tmp30) {
+      let tmp174;
+      if (null == tmp32) {
         let INSERT2 = determineChangeType(message);
-        const blocked = INSERT2 === constants.NOOP && closure_8.getBlocked(message);
+        const blocked = INSERT2 === constants.NOOP && chatManager.getBlocked(message);
         if (blocked) {
           INSERT2 = constants.INSERT;
         }
-        const obj12 = { rowType: closure_8.BLOCKED_GROUP, changeType: INSERT2 };
+        const obj12 = { rowType: chatManager.BLOCKED_GROUP, changeType: INSERT2 };
         const merged1 = Object.assign(obj5);
-        arr.push(obj12);
-        tmp143 = obj12;
+        items.push(obj12);
+        tmp174 = obj12;
       } else {
-        tmp143 = tmp30;
+        tmp174 = tmp32;
       }
-      const result1 = processHiddenMessageRow(tmp143);
+      const result1 = processHiddenMessageRow(tmp174);
       const intl3 = require("intl").intl;
-      const obj14 = { count: tmp143.content.length };
-      tmp143.text = intl3.formatToPlainString(require("intl").t["+FcYM/"], obj14);
+      const obj14 = { count: tmp174.content.length };
+      tmp174.text = intl3.formatToPlainString(require("intl").t["+FcYM/"], obj14);
     } else if (message.ignored) {
-      let tmp125;
-      if (null == tmp30) {
+      let tmp154;
+      if (null == tmp32) {
         let INSERT = determineChangeType(message);
-        const ignored = INSERT === constants.NOOP && closure_8.getIgnored(message);
+        const ignored = INSERT === constants.NOOP && chatManager.getIgnored(message);
         if (ignored) {
           INSERT = constants.INSERT;
         }
-        const obj15 = { rowType: closure_8.IGNORED_GROUP, changeType: INSERT };
+        const obj15 = { rowType: chatManager.IGNORED_GROUP, changeType: INSERT };
         const merged2 = Object.assign(obj5);
-        arr.push(obj15);
-        tmp125 = obj15;
+        items.push(obj15);
+        tmp154 = obj15;
       } else {
-        tmp125 = tmp30;
+        tmp154 = tmp32;
       }
-      const result2 = processHiddenMessageRow(tmp125);
+      const result2 = processHiddenMessageRow(tmp154);
       const intl2 = require("intl").intl;
-      const obj16 = { count: tmp125.content.length };
-      tmp125.text = intl2.formatToPlainString(require("intl").t["VFWjc+"], obj16);
+      const obj16 = { count: tmp154.content.length };
+      tmp154.text = intl2.formatToPlainString(require("intl").t["VFWjc+"], obj16);
+    } else if (isCollapsiblePlaceholder(message)) {
+      let obj17;
+      let tmp130 = !renderContentOnly;
+      if (tmp130) {
+        tmp130 = flag || tmp20 || tmp19;
+      }
+      let rowType;
+      if (tmp32 != null) {
+        rowType = tmp32.rowType;
+      }
+      const tmp134 = chatManager;
+      if (rowType === chatManager.MESSAGE) {
+        if (null != tmp32.unlinkedGamePlayerPlaceholders) {
+          tmp32.message = message;
+          tmp32.separatorBefore = tmp130;
+          obj17 = tmp32;
+        }
+        const substr = arr.slice();
+        items = [];
+        let prop = obj17.unlinkedGamePlayerPlaceholders;
+        const arraySpreadResult = HermesBuiltin.arraySpread(items, substr.reverse(), 0);
+        if (prop == null) {
+          prop = [];
+        }
+        HermesBuiltin.arraySpread(items, prop, arraySpreadResult);
+        obj17.unlinkedGamePlayerPlaceholders = items;
+        obj17.changeType = determineChangeType(message);
+        let tmp148 = obj17.changeType === constants.NOOP;
+        if (tmp148) {
+          tmp148 = null != length && tmp149 !== message.length || items.some(f130924);
+          null != length && tmp149 !== message.length || items.some(f130924);
+        }
+        if (tmp148) {
+          obj17.changeType = constants.UPDATE;
+        }
+      }
+      obj17 = { roleStyle: tmp30, message, isFirst: true, separatorBefore: tmp130, rowType: tmp134.MESSAGE, changeType: constants.NOOP };
+      items.push(obj17);
     } else {
-      let iter = item[Symbol.iterator]();
+      let iter = arr[Symbol.iterator]();
       let nextResult = iter.next();
       while (iter !== undefined) {
         let result3;
         let obj6 = nextResult;
-        let tmp35 = nextResult !== message;
-        let obj7 = item;
-        let isEditingResult = EditMessageStore.isEditing(item.id, nextResult.id);
+        let tmp38 = nextResult !== message;
+        let obj7 = require;
+        let isEditingResult = EditMessageStore.isEditing(require.id, nextResult.id);
         if (!isEditingResult) {
           isEditingResult = closure_3 === obj6.id;
         }
-        let tmp41 = isEditingResult;
+        let tmp44 = isEditingResult;
         PushFeedbackStore = PushFeedbackStore.getPushFeedback(obj6.channel_id, obj6.id);
         let obj8 = require("canReplyToMessage");
-        let tmp49 = messages;
+        let tmp52 = messages;
         let canReplyToMessageResult = obj8.canReplyToMessage(obj7, obj6);
-        let tmp52 = messages(id[11])(obj6, closure_4);
-        if (tmp52) {
+        let tmp55 = messages(id[12])(obj6, closure_4);
+        if (tmp55) {
           let obj9 = require("ThreadHooks");
-          tmp52 = !obj9.isNonModInLockedThread(obj7);
+          tmp55 = !obj9.isNonModInLockedThread(obj7);
         }
-        let tmp57 = message;
+        let tmp60 = message;
         if (message.hasOwnProperty(obj6.id)) {
-          result3 = closure_8.determineChangeTypeForUploadProgress(tmp57[obj6.id]);
+          result3 = chatManager.determineChangeTypeForUploadProgress(tmp60[obj6.id]);
         } else {
           result3 = determineChangeType(obj6, true);
         }
-        let tmp64 = constants;
-        let tmp65 = null != constants;
-        if (tmp65) {
-          tmp65 = tmp64.endId === obj6.id;
+        let tmp67 = constants;
+        let tmp68 = null != constants;
+        if (tmp68) {
+          tmp68 = tmp67.endId === obj6.id;
         }
-        if (tmp65) {
-          tmp65 = tmp64.count > 1;
+        if (tmp68) {
+          tmp68 = tmp67.count > 1;
         }
-        if (tmp65) {
-          let obj17 = { rowType: roleStyle.SUMMARY, changeType: determineChangeType(obj6), roleStyle, summary: tmp64, isBeforeContent: false };
+        if (tmp68) {
+          let obj18 = { rowType: roleStyle.SUMMARY, changeType: determineChangeType(obj6), roleStyle, summary: tmp67, isBeforeContent: false };
           let push2 = items.push;
-          let push2Result = push2(obj17);
+          let push2Result = push2(obj18);
         }
-        let arr2 = items;
-        let obj18 = { roleStyle, message: obj6, isSystemDM: isSystemDMResult, isFirst: obj6 === message, isEditing: tmp41, separatorBefore: tmp85, canAddNewReactions, alwaysShowAddReaction: isForumPostResult, renderContentOnly, pushFeedbackType: pushType, canReply: !tmp96 && canReplyToMessageResult, canEdit: !tmp96 && tmp52, rowType: closure_8.MESSAGE, changeType: result3, showContentInventoryEntryFallbackEmbed: hasItem };
-        let tmp77 = roleStyle;
+        let arr3 = items;
+        let obj19 = { roleStyle, message: obj6, isSystemDM: isSystemDMResult, isFirst: obj6 === message, isEditing: tmp44, separatorBefore: tmp88, canAddNewReactions, alwaysShowAddReaction: isForumPostResult, renderContentOnly, pushFeedbackType: pushType, canReply: !tmp99 && canReplyToMessageResult, canEdit: !tmp99 && tmp55, rowType: chatManager.MESSAGE, changeType: result3, showContentInventoryEntryFallbackEmbed: hasItem };
+        let tmp80 = roleStyle;
         let push3 = items.push;
         isSystemDMResult = obj7.isSystemDM();
         if (isSystemDMResult) {
           isSystemDMResult = obj6.isSystemDM();
         }
-        tmp85 = !tmp35;
-        if (tmp85) {
-          tmp85 = !renderContentOnly;
+        tmp88 = !tmp38;
+        if (tmp88) {
+          tmp88 = !renderContentOnly;
         }
-        if (tmp85) {
-          let tmp88 = flag || tmp20 || tmp19;
-          tmp85 = tmp88;
+        if (tmp88) {
+          let tmp91 = flag || tmp20 || tmp19;
+          tmp88 = tmp91;
         }
         isForumPostResult = obj7.isForumPost();
         if (isForumPostResult) {
           id = obj6.id;
-          let tmp49Result = tmp49(id[5]);
-          isForumPostResult = id === tmp49Result.castChannelIdAsMessageId(obj7.id);
+          let tmp52Result = tmp52(id[5]);
+          isForumPostResult = id === tmp52Result.castChannelIdAsMessageId(obj7.id);
         }
-        tmp96 = renderContentOnly;
+        tmp99 = renderContentOnly;
         pushType = undefined;
         if (PushFeedbackStore != null) {
           pushType = PushFeedbackStore.pushType;
@@ -351,45 +427,45 @@ export default function createChannelStream(forceRender) {
         if (closure_13 != null) {
           hasItem = obj13.has(obj6.id);
         }
-        let push3Result = push3(obj18);
-        let tmp106 = constants2;
-        let tmp107 = null != constants2;
-        if (tmp107) {
-          tmp107 = obj6.id === tmp106.startMessageId;
+        let push3Result = push3(obj19);
+        let tmp110 = constants2;
+        let tmp111 = null != constants2;
+        if (tmp111) {
+          tmp111 = obj6.id === tmp110.startMessageId;
         }
-        if (tmp107) {
-          tmp107 = tmp106.messageCount > 1;
+        if (tmp111) {
+          tmp111 = tmp110.messageCount > 1;
         }
-        if (tmp107) {
-          let obj19 = { rowType: roleStyle.CONVERSATION, changeType: determineChangeType(obj6), roleStyle: tmp77, conversationHeader: tmp49(id[13])(tmp106) };
-          let push4 = arr2.push;
-          let push4Result = push4(obj19);
+        if (tmp111) {
+          let obj20 = { rowType: roleStyle.CONVERSATION, changeType: determineChangeType(obj6), roleStyle: tmp80, conversationHeader: tmp52(id[14])(tmp110) };
+          let push4 = arr3.push;
+          let push4Result = push4(obj20);
         }
-        let tmp116 = null != tmp64;
-        if (tmp116) {
-          tmp116 = tmp64.startId === obj6.id;
+        let tmp120 = null != tmp67;
+        if (tmp120) {
+          tmp120 = tmp67.startId === obj6.id;
         }
-        if (tmp116) {
-          tmp116 = tmp64.count > 1;
+        if (tmp120) {
+          tmp120 = tmp67.count > 1;
         }
-        if (tmp116) {
-          let obj20 = { rowType: roleStyle.SUMMARY, changeType: determineChangeType(obj6), roleStyle: tmp77, summary: tmp64, isBeforeContent: true };
-          let push5 = arr2.push;
-          let push5Result = push5(obj20);
+        if (tmp120) {
+          let obj21 = { rowType: roleStyle.SUMMARY, changeType: determineChangeType(obj6), roleStyle: tmp80, summary: tmp67, isBeforeContent: true };
+          let push5 = arr3.push;
+          let push5Result = push5(obj21);
         }
         continue;
       }
     }
     if (flag) {
-      const tmp175 = renderContentOnly;
-      if (!tmp175) {
+      const tmp209 = renderContentOnly;
+      if (!tmp209) {
         let NOOP = determineChangeType(message);
         if (NOOP === constants.UPDATE) {
           NOOP = constants.NOOP;
         }
-        const obj21 = { rowType: roleStyle.DAY, changeType: NOOP, roleStyle, text: obj22.dateFormat(message.timestamp, "LL") };
-        obj22 = require("DateUtils");
-        items.push(obj21);
+        const obj22 = { rowType: roleStyle.DAY, changeType: NOOP, roleStyle, text: obj24.dateFormat(message.timestamp, "LL") };
+        obj24 = require("DateUtils");
+        items.push(obj22);
       }
     }
     if (tmp20) {
@@ -407,23 +483,23 @@ export default function createChannelStream(forceRender) {
     }
     if (tmp19) {
       const push7 = items.push;
-      const obj24 = { rowType: constants2.LOAD_BEFORE, changeType: forceRender ? constants.UPDATE : constants.NOOP, roleStyle, isLoading: message.loadingMore, text: intl6.string(require("intl").t.XBlaiC) };
+      const obj25 = { rowType: constants2.LOAD_BEFORE, changeType: forceRender ? constants.UPDATE : constants.NOOP, roleStyle, isLoading: message.loadingMore, text: intl6.string(require("intl").t.XBlaiC) };
       intl6 = require("intl").intl;
-      push7(obj24);
+      push7(obj25);
     }
   });
-  let tmp12 = 0 === items1.length && !messages.loadingMore;
-  if (tmp12) {
-    let tmp13 = messages.hasMoreAfter || messages.hasMoreBefore;
-    tmp12 = tmp13;
+  let tmp14 = 0 === items1.length && !messages.loadingMore;
+  if (tmp14) {
+    tmp14 = messages.hasMoreAfter || messages.hasMoreBefore;
+    const tmp15 = messages.hasMoreAfter || messages.hasMoreBefore;
   }
-  if (tmp12) {
-    let tmp14 = constants2;
-    let obj2 = { rowType: messages.hasMoreBefore ? tmp14.LOAD_BEFORE : tmp14.LOAD_AFTER, changeType: forceRender ? tmp15.UPDATE : tmp15.NOOP, roleStyle, isLoading: messages.loadingMore, text: intl.string(require("intl").t.XBlaiC) };
-    const tmp17 = id;
+  if (tmp14) {
+    let obj2 = { rowType: messages.hasMoreBefore ? tmp16.LOAD_BEFORE : tmp16.LOAD_AFTER, changeType: forceRender ? constants.UPDATE : constants.NOOP, roleStyle, isLoading: messages.loadingMore, text: intl.string(require("intl").t.XBlaiC) };
+    const tmp18 = require;
+    let tmp19 = id;
     let push = items.push;
     intl = require("intl").intl;
-    let arr = push(obj2);
+    const arr = push(obj2);
   }
   return items;
 };

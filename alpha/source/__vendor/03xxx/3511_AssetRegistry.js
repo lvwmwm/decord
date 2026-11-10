@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1119 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/application_account_linking", scales: [1], hash: "d5dfb452e37245cc55dbdee5bc59a106", name: "IncentivizedAccountLinking.compiled.messages", type: "jsona" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/application_account_linking", scales: [1], hash: "afaa87fb58d04dd4aaa33ea5c4f832f7", name: "IncentivizedAccountLinking.compiled.messages", type: "jsona" });

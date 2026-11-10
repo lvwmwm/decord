@@ -1,28 +1,28 @@
-// Module ID: 18053
-// Function ID: 18054
+// Module ID: 18080
+// Function ID: 18081
 // Name: CollectiblesTool
-// Dependencies: [32, 19, 17, 10682, 1385, 7796, 7811, 8847, 1072, 1387, 21, 5140, 575, 9540, 5751, 5759, 11514, 563, 10725, 18054, 1187, 14731, 2]
+// Dependencies: [32, 19, 17, 10691, 1385, 7799, 7814, 8853, 1072, 1387, 21, 5142, 575, 9546, 5753, 5761, 11523, 563, 10734, 18081, 1187, 14757, 2]
 // Exports: default
 
-// Module 18053 (CollectiblesTool)
+// Module 18080 (CollectiblesTool)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
-import Text_Text from "Text/Text" /* 5751 */;
-import BaseTextButton from "BaseTextButton" /* 5759 */;
-import FramePreviewOverrideStore from "FramePreviewOverrideStore" /* 8847 */;
-import CollectiblesShopCardV2Default from "CollectiblesShopCardV2" /* 9540 */;
-import actions_GiftCodeActionCreators from "actions/GiftCodeActionCreators" /* 11514 */;
-import ProductPurchaseSuccessActionCreatorsDefault from "ProductPurchaseSuccessActionCreators" /* 14731 */;
+import Text_Text from "Text/Text" /* 5753 */;
+import BaseTextButton from "BaseTextButton" /* 5761 */;
+import FramePreviewOverrideStore from "FramePreviewOverrideStore" /* 8853 */;
+import CollectiblesShopCardV2Default from "CollectiblesShopCardV2" /* 9546 */;
+import actions_GiftCodeActionCreators from "actions/GiftCodeActionCreators" /* 11523 */;
+import ProductPurchaseSuccessActionCreatorsDefault from "ProductPurchaseSuccessActionCreators" /* 14757 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GiftCodeRecord from "GiftCodeRecord" /* 10682 */;
+import GiftCodeRecord from "GiftCodeRecord" /* 10691 */;
 import UserStore from "UserStore" /* 1385 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7796 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7811 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7799 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7814 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5142 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -119,14 +119,14 @@ function FramePreviewOverrideSection() {
     str3 = str4;
   }
   const obj = { style: tmp.section, children: items };
-  const obj2 = { style: tmp.sectionHeader, children: authStore3(Text_Text.Text, obj3) };
+  const obj2 = { style: tmp.sectionHeader, children: gesture(Text_Text.Text, obj3) };
   obj3 = { variant: "heading-sm/semibold", style: tmp.sectionTitle, children: "Frame Preview Override" };
-  items = [authStore3(metroRequire, obj2), , , , ];
+  items = [gesture(metroRequire, obj2), , , , ];
   const obj4 = { variant: "body-sm/normal", style: tmp.description, children: "Overrides every profile-frame preview with a frame pushed to this device. Tap Load after Cap (or pushFrameOverride.mjs) pushes one." };
-  items[1] = authStore3(Text_Text.Text, obj4);
+  items[1] = gesture(Text_Text.Text, obj4);
   const obj5 = { variant: "body-xs/normal", style: items1, children: str3 };
   items1 = [tmp.statusText, statusError];
-  items[2] = authStore3(Text_Text.Text, obj5);
+  items[2] = gesture(Text_Text.Text, obj5);
   const obj6 = {
     pillStyle: tmp.secondaryButton,
     text: "Load from device",
@@ -134,11 +134,11 @@ function FramePreviewOverrideSection() {
       closure_0();
     }
   };
-  items[3] = authStore3(BaseTextButton.BaseTextButton, obj6);
+  items[3] = gesture(BaseTextButton.BaseTextButton, obj6);
   let tmp12Result = null != tmp2;
-  const tmp10 = closure_15;
+  const tmp10 = clientStatuses;
   const tmp11 = metroRequire;
-  const tmp12 = authStore3;
+  const tmp12 = gesture;
   if (tmp12Result) {
     const obj7 = { pillStyle: tmp.secondaryButton, text: "Clear override", onPress: tmp4 };
     tmp12Result = tmp12(BaseTextButton.BaseTextButton, obj7);

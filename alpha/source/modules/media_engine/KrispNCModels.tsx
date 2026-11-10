@@ -1,9 +1,9 @@
-// Module ID: 16270
-// Function ID: 16271
+// Module ID: 16297
+// Function ID: 16298
 // Name: KrispNCModels
 // Dependencies: [2]
 
-// Module 16270 (KrispNCModels)
+// Module 16297 (KrispNCModels)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/media_engine/KrispNCModels.tsx");

@@ -1,9 +1,9 @@
-// Module ID: 4961
-// Function ID: 4962
+// Module ID: 4963
+// Function ID: 4964
 // Name: errors/V6OrEarlierAPIError
 // Dependencies: [1072, 1282, 1113, 2]
 
-// Module 4961 (errors/V6OrEarlierAPIError)
+// Module 4963 (errors/V6OrEarlierAPIError)
 import Constants from "Constants" /* 1072 */;
 import intl3 from "intl" /* 1113 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;

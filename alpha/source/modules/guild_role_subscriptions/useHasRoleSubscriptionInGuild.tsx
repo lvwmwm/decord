@@ -1,15 +1,15 @@
-// Module ID: 7490
-// Function ID: 7491
+// Module ID: 7493
+// Function ID: 7494
 // Name: useHasRoleSubscriptionInGuild
-// Dependencies: [502, 5052, 5046, 5011, 1072, 504, 2]
+// Dependencies: [502, 5054, 5048, 5013, 1072, 504, 2]
 // Exports: default
 
-// Module 7490 (useHasRoleSubscriptionInGuild)
+// Module 7493 (useHasRoleSubscriptionInGuild)
 import Constants from "Constants" /* 1072 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildMemberStore from "GuildMemberStore" /* 5052 */;
-import GuildRoleStore from "GuildRoleStore" /* 5046 */;
-import GuildStore from "GuildStore" /* 5011 */;
+import GuildMemberStore from "GuildMemberStore" /* 5054 */;
+import GuildRoleStore from "GuildRoleStore" /* 5048 */;
+import GuildStore from "GuildStore" /* 5013 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

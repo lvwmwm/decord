@@ -11,6 +11,8 @@ import GatewaySocketOpcode from "GatewaySocketOpcode" /* 2128 */;
 import RTCControlSocket from "RTCControlSocket" /* 2129 */;
 import size from "module_2" /* 2 */;
 
+let gesture;
+
 const AnalyticEvents = Constants.AnalyticEvents;
 let closure_3 = { Gateway: "gateway", RtcControl: "rtc_control", RemoteAuth: "remote_auth", Spotify: "spotify", Rpc: "rpc", GameServerPing: "game_server_ping" };
 let closure_4 = {
@@ -395,7 +397,7 @@ let closure_5 = {
       if (typeof view_hierarchy === "string") {
         tmp13 = view_hierarchy;
       }
-      const gesture = data.gesture;
+      gesture = data.gesture;
       tmp14 = null;
       if (typeof gesture === "string") {
         tmp14 = gesture;
@@ -531,7 +533,7 @@ let closure_5 = {
     let obj;
     data = data.data;
     if (null == data) {
-      obj = { message_identity: "unknown", socket_kind: "add" };
+      obj = { message_identity: "unknown", socket_kind: "channel" };
     } else {
       const url = data.url;
       let tmp58 = null;

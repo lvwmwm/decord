@@ -1,11 +1,12 @@
-// Module ID: 13669
-// Function ID: 13670
+// Module ID: 13682
+// Function ID: 13683
 // Name: openCheckpoint
-// Dependencies: [5, 13668, 13670, 5836, 1113, 13667, 13666, 6799, 13672, 2118, 2]
+// Dependencies: [5, 13681, 13683, 13684, 5838, 1113, 13680, 13679, 6801, 13686, 2118, 2]
 // Exports: openCheckpoint
 
-// Module 13669 (openCheckpoint)
-import CheckpointStore from "CheckpointStore" /* 13668 */;
+// Module 13682 (openCheckpoint)
+import CheckpointStore from "CheckpointStore" /* 13681 */;
+import CheckpointModalConstants from "CheckpointModalConstants" /* 13683 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -67,7 +68,7 @@ let obj = function _openCheckpoint() {
             c5 = 2;
             c6 = 1;
             const obj6 = { value: obj2.fetchCheckpointData(closure_2), done: false };
-            obj2 = closure_132_0(closure_132_2[2]);
+            obj2 = closure_132_0(closure_132_2[3]);
             return obj6;
           }
         } else if (arg0 === 1) {
@@ -81,19 +82,19 @@ let obj = function _openCheckpoint() {
           closure_3 = value;
           if (closure_3 !== closure_132_4.ERROR) {
             if (closure_3 !== closure_132_4.FETCHING) {
-              const obj7 = closure_132_1(closure_132_2[5]);
+              const obj7 = closure_132_1(closure_132_2[6]);
               obj7.initialize(flag);
-              const obj8 = closure_132_0(closure_132_2[6]);
+              const obj8 = closure_132_0(closure_132_2[7]);
               const result = obj8.trackCheckpoint2026Started(closure_0);
               const obj10 = { didPlayerShareDataWithDiscord: flag };
-              const obj9 = closure_132_1(closure_132_2[7]);
-              obj9.pushLazy(closure_132_0(closure_132_2[9])(closure_132_2[8], closure_132_2.paths), obj10, "CHECKPOINT_MODAL");
+              const obj9 = closure_132_1(closure_132_2[8]);
+              obj9.pushLazy(closure_132_0(closure_132_2[10])(closure_132_2[9], closure_132_2.paths), obj10, closure_132_5);
             }
           } else {
-            const presentError = closure_132_0(closure_132_2[3]).presentError;
-            const tmp8 = closure_132_0(closure_132_2[3]);
-            const intl = closure_132_0(closure_132_2[4]).intl;
-            presentError(intl.string(closure_132_0(closure_132_2[4]).t.fEptJP));
+            const presentError = closure_132_0(closure_132_2[4]).presentError;
+            const tmp8 = closure_132_0(closure_132_2[4]);
+            const intl = closure_132_0(closure_132_2[5]).intl;
+            presentError(intl.string(closure_132_0(closure_132_2[5]).t.fEptJP));
           }
           c6 = 3;
           return { value: "HermesInternal", done: null };
@@ -107,6 +108,7 @@ let obj = function _openCheckpoint() {
   return obj(...arguments);
 };
 const CheckpointFetchStates = CheckpointStore.CheckpointFetchStates;
+const CHECKPOINT_MODAL_KEY = CheckpointModalConstants.CHECKPOINT_MODAL_KEY;
 let result = size.fileFinishedImporting("modules/checkpoint/openCheckpoint.native.tsx");
 
 export function openCheckpoint() {

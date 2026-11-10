@@ -1,20 +1,20 @@
-// Module ID: 14018
-// Function ID: 14019
+// Module ID: 14044
+// Function ID: 14045
 // Name: ForumPostListBody
-// Dependencies: [19, 17, 7518, 21, 5140, 7517, 14011, 14000, 14010, 14012, 14019, 14005, 2]
+// Dependencies: [19, 17, 7521, 21, 5142, 7520, 14037, 14026, 14036, 14038, 14045, 14031, 2]
 // Exports: default
 
-// Module 14018 (ForumPostListBody)
+// Module 14044 (ForumPostListBody)
 import react_native from "react-native" /* 17 */;
-import GameInvitesChannelUtils from "GameInvitesChannelUtils" /* 7517 */;
-import ForumConstants from "ForumConstants" /* 7518 */;
-import ForumPostUsername from "ForumPostUsername" /* 14000 */;
-import ForumPostTimestampDefault from "ForumPostTimestamp" /* 14010 */;
-import ForumPostNewTagDefault from "ForumPostNewTag" /* 14011 */;
-import ForumPostMessageContentDefault from "ForumPostMessageContent" /* 14019 */;
+import GameInvitesChannelUtils from "GameInvitesChannelUtils" /* 7520 */;
+import ForumConstants from "ForumConstants" /* 7521 */;
+import ForumPostUsername from "ForumPostUsername" /* 14026 */;
+import ForumPostTimestampDefault from "ForumPostTimestamp" /* 14036 */;
+import ForumPostNewTagDefault from "ForumPostNewTag" /* 14037 */;
+import ForumPostMessageContentDefault from "ForumPostMessageContent" /* 14045 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5140 */;
+import createStyles from "createStyles" /* 5142 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -62,7 +62,7 @@ export default function ForumPostListBody(arg0) {
   let tmp9Result = !isGameInvitesPost;
   if (tmp9Result) {
     const obj7 = { title: thread.name, lineClamp: 2, ellipsizeMode: "tail", hasUnreads };
-    tmp9Result = tmp9(tmp10(14012), obj7);
+    tmp9Result = tmp9(tmp10(14038), obj7);
   }
   items2[1] = tmp9Result;
   items2[2] = hasOwnProperty(ForumPostMessageContentDefault, { messageContent, message: firstMessage, isMessageDeleted: false, messageLoaded: firstMessageLoaded, hasUnreads, senderModifier });
@@ -77,7 +77,7 @@ export default function ForumPostListBody(arg0) {
     if (null != media) {
       const obj8 = { channel: thread, media, isEmbed, isLocalDeviceMedia, firstMessageId: id, containerStyle: tmp.thumbnailContainer };
       id = undefined;
-      const ForumPostMediaThumbnail = tmp2(14005).ForumPostMediaThumbnail;
+      const ForumPostMediaThumbnail = tmp2(14031).ForumPostMediaThumbnail;
       if (firstMessage != null) {
         id = firstMessage.id;
       }

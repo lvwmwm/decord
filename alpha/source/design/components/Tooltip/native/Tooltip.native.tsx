@@ -1,21 +1,21 @@
-// Module ID: 10079
-// Function ID: 10080
+// Module ID: 10085
+// Function ID: 10086
 // Name: Tooltip
-// Dependencies: [32, 19, 17, 21, 5140, 575, 1652, 5724, 10080, 5761, 5751, 2]
+// Dependencies: [32, 19, 17, 21, 5142, 575, 1652, 5726, 10086, 5763, 5753, 2]
 // Exports: Tooltip
 
-// Module 10079 (Tooltip)
+// Module 10085 (Tooltip)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1652 from "module_1652" /* 1652 */;
-import useToken from "useToken" /* 5724 */;
-import Text_Text from "Text/Text" /* 5751 */;
-import spring_spring from "spring/spring" /* 5761 */;
-import reactDefault from "react" /* 10080 */;
+import useToken from "useToken" /* 5726 */;
+import Text_Text from "Text/Text" /* 5753 */;
+import spring_spring from "spring/spring" /* 5763 */;
+import reactDefault from "react" /* 10086 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5142 */;
 import size_mod from "module_2" /* 2 */;
 
 let metroImportDefault;

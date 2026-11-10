@@ -1,10 +1,10 @@
-// Module ID: 8418
-// Function ID: 8419
+// Module ID: 8422
+// Function ID: 8423
 // Name: ThreadNotificationSettingsToast
-// Dependencies: [5837, 2]
+// Dependencies: [5839, 2]
 
-// Module 8418 (ThreadNotificationSettingsToast)
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5837 */;
+// Module 8422 (ThreadNotificationSettingsToast)
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5839 */;
 import size from "module_2" /* 2 */;
 
 let obj = {

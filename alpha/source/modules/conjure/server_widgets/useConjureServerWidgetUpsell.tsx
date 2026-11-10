@@ -1,16 +1,16 @@
-// Module ID: 15179
-// Function ID: 15180
+// Module ID: 15205
+// Function ID: 15206
 // Name: useConjureServerWidgetUpsell
-// Dependencies: [32, 19, 5011, 6899, 510, 15180, 504, 7391, 11720, 12542, 2]
+// Dependencies: [32, 19, 5013, 6902, 510, 15206, 504, 7394, 11729, 12555, 2]
 // Exports: useConjureServerWidgetUpsellDetails, useConjureServerWidgetUpsellOffer
 
-// Module 15179 (useConjureServerWidgetUpsell)
+// Module 15205 (useConjureServerWidgetUpsell)
 import Storage3 from "Storage" /* 510 */;
-import useConjureServerWidgetOffersDefault from "useConjureServerWidgetOffers" /* 15180 */;
+import useConjureServerWidgetOffersDefault from "useConjureServerWidgetOffers" /* 15206 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 5011 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6899 */;
+import GuildStore from "GuildStore" /* 5013 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6902 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -80,7 +80,7 @@ export function useConjureServerWidgetUpsellDetails(userId, widget, guildId) {
   }, items2);
   const obj4 = require("conjureMessageAuthors");
   const messageAuthorUser = obj4.useMessageAuthorUser(stateFromStores1);
-  const tmp5 = applicationId(12542)(userId, applicationId);
+  const tmp5 = applicationId(12555)(userId, applicationId);
   dependencyMap = tmp5;
   [][0] = tmp5;
   let tmp7 = null;

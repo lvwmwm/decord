@@ -1,16 +1,16 @@
-// Module ID: 11707
-// Function ID: 11708
+// Module ID: 11716
+// Function ID: 11717
 // Name: socialLayerStorefrontEmbedPrice
-// Dependencies: [19, 502, 6951, 1072, 7673, 504, 2183, 10033, 2]
+// Dependencies: [19, 502, 6954, 1072, 7676, 504, 2183, 10039, 2]
 // Exports: getSocialLayerStorefrontEmbedPrice, useFetchSocialLayerStorefrontEmbedPrices
 
-// Module 11707 (socialLayerStorefrontEmbedPrice)
+// Module 11716 (socialLayerStorefrontEmbedPrice)
 import Constants from "Constants" /* 1072 */;
-import IAPStoreDefault from "IAPStore" /* 7673 */;
-import GPlayActionCreators from "GPlayActionCreators" /* 10033 */;
+import IAPStoreDefault from "IAPStore" /* 7676 */;
+import GPlayActionCreators from "GPlayActionCreators" /* 10039 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import SKUStore from "SKUStore" /* 6951 */;
+import SKUStore from "SKUStore" /* 6954 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -51,7 +51,7 @@ export function useFetchSocialLayerStorefrontEmbedPrices(singleSkuIds) {
   let items = [SKUStore];
   let items1 = [singleSkuIds];
   const stateFromStoresArray = obj.useStateFromStoresArray(items, () => {
-    const f128959 = (item) => {
+    const f129158 = (item) => {
       let items1;
       const value = closure_1_5.get(item);
       let tmp2;
@@ -69,8 +69,8 @@ export function useFetchSocialLayerStorefrontEmbedPrices(singleSkuIds) {
       }
       return items1;
     };
-    let items = [...new Set(singleSkuIds.flatMap(f128959))];
-    new Set(singleSkuIds.flatMap(f128959));
+    let items = [...new Set(singleSkuIds.flatMap(f129158))];
+    new Set(singleSkuIds.flatMap(f129158));
     return items;
   }, items1);
   let tmp2 = require("get initialized");

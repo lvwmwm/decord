@@ -1,13 +1,13 @@
-// Module ID: 19673
-// Function ID: 19674
+// Module ID: 19702
+// Function ID: 19703
 // Name: voiceChannelAppLayerLayout
-// Dependencies: [11366, 11361, 11369, 2]
+// Dependencies: [11375, 11370, 11378, 2]
 // Exports: getVoiceChannelAppLayerInsets, shouldRestoreVoiceChannelAppControls
 
-// Module 19673 (voiceChannelAppLayerLayout)
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11361 */;
-import VoicePanelCardConstants from "VoicePanelCardConstants" /* 11366 */;
-import calculateVoicePanelHeaderSpecsDefault from "calculateVoicePanelHeaderSpecs" /* 11369 */;
+// Module 19702 (voiceChannelAppLayerLayout)
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11370 */;
+import VoicePanelCardConstants from "VoicePanelCardConstants" /* 11375 */;
+import calculateVoicePanelHeaderSpecsDefault from "calculateVoicePanelHeaderSpecs" /* 11378 */;
 import size from "module_2" /* 2 */;
 
 let tmp2;

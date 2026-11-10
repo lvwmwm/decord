@@ -1,17 +1,17 @@
-// Module ID: 13934
-// Function ID: 13935
+// Module ID: 13959
+// Function ID: 13960
 // Name: CheckpointButton
-// Dependencies: [19, 17, 6199, 21, 5140, 13906, 575, 5724, 13878, 2]
+// Dependencies: [19, 17, 6201, 21, 5142, 13927, 575, 5726, 13897, 2]
 // Exports: default
 
-// Module 13934 (CheckpointButton)
+// Module 13959 (CheckpointButton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import CheckpointPressable from "CheckpointPressable" /* 13906 */;
+import CheckpointPressable from "CheckpointPressable" /* 13927 */;
 import react from "react" /* 19 */;
-import CheckpointConstants from "CheckpointConstants" /* 6199 */;
+import CheckpointConstants from "CheckpointConstants" /* 6201 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5142 */;
 import size from "module_2" /* 2 */;
 
 let CHECKPOINT_CONTROL_ICON_SIZE;
@@ -33,7 +33,7 @@ obj3 = { backgroundColor: nativeDefault.colors.BLACK, borderWidth: 2 };
 let closure_10 = createStyles(obj);
 const result = size.fileFinishedImporting("modules/checkpoint/native/components/CheckpointButton.tsx");
 
-export default function CheckpointButton(onPress) {
+export default function CheckpointButton(loading) {
   let Icon;
   let accessibilityHint;
   let accessibilityLabel;
@@ -46,36 +46,38 @@ export default function CheckpointButton(onPress) {
   let label;
   let labelStyle;
   let labelVariant;
+  let onPress;
+  let onPressIn;
   let shadowColor;
   let style;
   let tmp7;
-  ({ Icon, label, labelVariant } = onPress);
-  onPress = onPress.onPress;
+  ({ Icon, label, labelVariant } = loading);
+  ({ onPress, onPressIn } = loading);
   if (labelVariant === undefined) {
     labelVariant = disabled(color[5]).CHECKPOINT_PRESSABLE_SIZES.lg.textVariant;
   }
-  ({ accessibilityLabel, disabled, labelStyle, accessibilityHint, accessibilityState } = onPress);
+  ({ accessibilityLabel, disabled, labelStyle, accessibilityHint, accessibilityState } = loading);
   if (disabled === undefined) {
     disabled = false;
   }
-  let flag = onPress.loading;
+  let flag = loading.loading;
   if (flag === undefined) {
     flag = false;
   }
-  let str = onPress.iconPosition;
+  let str = loading.iconPosition;
   if (str === undefined) {
     str = "start";
   }
-  color = onPress.color;
+  color = loading.color;
   if (color === undefined) {
     color = closure_7;
   }
-  let borderColor = onPress.borderColor;
+  let borderColor = loading.borderColor;
   if (borderColor === undefined) {
     borderColor = closure_5;
   }
   color = undefined;
-  ({ shadowColor, style } = onPress);
+  ({ shadowColor, style } = loading);
   const tmp3 = closure_10();
   const obj = disabled(color[7]);
   if (disabled) {
@@ -95,7 +97,7 @@ export default function CheckpointButton(onPress) {
       tmp7 = closure_8(Icon, obj3);
     }
   }
-  const obj4 = { size: "lg", containerStyle: tmp3.container, style: items2, shadowColor, onPress, disabled, accessibilityRole: "button", accessibilityLabel, accessibilityHint, accessibilityState, children: items3 };
+  const obj4 = { size: "lg", containerStyle: tmp3.container, style: items2, shadowColor, onPress, onPressIn, disabled, accessibilityRole: "button", accessibilityLabel, accessibilityHint, accessibilityState, children: items3 };
   items2 = [tmp3.button, memo, style];
   const tmp11 = closure_9;
   const tmp12 = borderColor;

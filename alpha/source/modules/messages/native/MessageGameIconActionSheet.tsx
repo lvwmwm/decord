@@ -1,10 +1,10 @@
-// Module ID: 13480
-// Function ID: 13481
+// Module ID: 13493
+// Function ID: 13494
 // Name: MessageGameIconActionSheet
-// Dependencies: [19, 17, 2162, 1072, 21, 5140, 1377, 575, 504, 5388, 1187, 5751, 1113, 2185, 2]
+// Dependencies: [19, 17, 2162, 1072, 21, 5142, 1377, 575, 504, 5390, 1187, 5753, 1113, 2185, 2]
 // Exports: default
 
-// Module 13480 (MessageGameIconActionSheet)
+// Module 13493 (MessageGameIconActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -12,7 +12,7 @@ import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2185 */;
 import react from "react" /* 19 */;
 import ApplicationStore from "ApplicationStore" /* 2162 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5142 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -51,7 +51,7 @@ export default function MessageGameIconActionSheet(applicationId) {
   if (null != stateFromStores) {
     const obj2 = { style: tmp.contentWrapper, children: closure_7(View, obj3) };
     obj3 = { style: tmp.gameDescriptionWrapperOuter, children: items1 };
-    const BottomSheet = tmp2(5388).BottomSheet;
+    const BottomSheet = tmp2(5390).BottomSheet;
     let str;
     const obj4 = { style: tmp.gameIcon, resizeMode: "contain", source: obj6, disableColor: true };
     const Icon = tmp2(1187).Icon;
@@ -66,9 +66,9 @@ export default function MessageGameIconActionSheet(applicationId) {
     items1 = [closure_6(Icon, obj4), ];
     const obj7 = { style: tmp.gameDescriptionWrapper, children: items2 };
     const obj8 = { style: tmp.timestamp, variant: "body-xs/medium", color: "text-muted", children: messageTimestamp };
-    items2 = [closure_6(applicationId(5751).Text, obj8), ];
+    items2 = [closure_6(applicationId(5753).Text, obj8), ];
     const obj9 = { variant: "body-sm/medium", children: items3 };
-    const Text = tmp2(5751).Text;
+    const Text = tmp2(5753).Text;
     const intl = tmp2(1113).intl;
     const obj10 = { applicationName: stateFromStores.name };
     items3 = [intl.format(applicationId(1113).t.J3s8JP, obj10), " ", ];

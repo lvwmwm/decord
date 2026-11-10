@@ -1,13 +1,14 @@
-// Module ID: 19253
-// Function ID: 19254
+// Module ID: 19282
+// Function ID: 19283
 // Name: CheckpointTestingOptions
-// Dependencies: [5, 13669, 13671, 3250, 13670, 19254, 1113, 2]
+// Dependencies: [5, 13682, 13685, 3250, 13684, 19283, 1113, 2]
+// Exports: getCheckpointTestingOptions
 
-// Module 19253 (CheckpointTestingOptions)
+// Module 19282 (CheckpointTestingOptions)
 import _modDef3250 from "module_3250" /* 3250 */;
-import openCheckpoint from "openCheckpoint" /* 13669 */;
-import CheckpointActionCreators from "CheckpointActionCreators" /* 13670 */;
-import CheckpointMockData from "CheckpointMockData" /* 13671 */;
+import openCheckpoint from "openCheckpoint" /* 13682 */;
+import CheckpointActionCreators from "CheckpointActionCreators" /* 13684 */;
+import CheckpointMockData from "CheckpointMockData" /* 13685 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -18,16 +19,16 @@ function action() {
   return obj.openCheckpoint("qa_menu", ZERO_DATA !== CheckpointMockData.CheckpointMockStats.NO_PERSONAL_DATA, ZERO_DATA);
 }
 let c0;
-let obj = { id: "open", label: _modDef3250.yLZjcu, description: "Array", action };
+let obj = { id: "open", label: _modDef3250.yLZjcu, action };
 const items = [obj, , , , ];
 let obj2 = {
   id: "reset",
   label: _modDef3250["2DL3aX"],
   action() {
-    return closure_3(...arguments);
+    return closure_2(...arguments);
   }
 };
-let closure_3 = _asyncToGenerator(async (arg0, value) => {
+let closure_2 = _asyncToGenerator(async (arg0, value) => {
   let obj2;
   if (c2 === 2) {
     c2 = 3;
@@ -68,15 +69,15 @@ let closure_3 = _asyncToGenerator(async (arg0, value) => {
         const obj = { value, done: true };
         return obj;
       } else {
-        const showCheckpointTestingToast = closure_128_0(closure_128_2[5]).showCheckpointTestingToast;
-        const tmp15 = closure_128_0(closure_128_2[5]);
-        const intl = closure_128_0(closure_128_2[6]).intl;
+        const showCheckpointTestingToast = closure_128_0(closure_128_1[5]).showCheckpointTestingToast;
+        const tmp15 = closure_128_0(closure_128_1[5]);
+        const intl = closure_128_0(closure_128_1[6]).intl;
         const string = intl.string;
-        const tmp20 = closure_128_1(closure_128_2[3]);
+        const t = closure_128_0(closure_128_1[6]).t;
         if (value) {
-          const result = showCheckpointTestingToast(string(tmp20.D5x6qE), "success");
+          const result = showCheckpointTestingToast(string(t.i4jeWR), "success");
         } else {
-          const result1 = showCheckpointTestingToast(string(tmp20.EkMBfH), "failure");
+          const result1 = showCheckpointTestingToast(string(t.fEptJP), "failure");
         }
         c2 = 3;
         return { value: "HermesInternal", done: null };
@@ -89,17 +90,24 @@ let closure_3 = _asyncToGenerator(async (arg0, value) => {
 });
 items[1] = obj2;
 const kPBZ5M = _modDef3250.kPBZ5M;
-const cf0nfD = _modDef3250.cf0nfD;
 const DEFAULT = CheckpointMockData.CheckpointMockStats.DEFAULT;
-items[2] = { id: "open-fake-data", label: kPBZ5M, description: cf0nfD, action };
+items[2] = { id: "open-fake-data", label: kPBZ5M, action };
 const UwiUbM = _modDef3250.UwiUbM;
-const prop = _modDef3250["+5dICr"];
 const NO_PERSONAL_DATA = CheckpointMockData.CheckpointMockStats.NO_PERSONAL_DATA;
-items[3] = { id: "open-global-stats", label: UwiUbM, description: prop, action };
+items[3] = { id: "open-global-stats", label: UwiUbM, action };
 const BYW9oX = _modDef3250.BYW9oX;
-const NffC17 = _modDef3250.NffC17;
 const ZERO_DATA = CheckpointMockData.CheckpointMockStats.ZERO_DATA;
-items[4] = { id: "open-zero-stats", label: BYW9oX, description: NffC17, action };
+items[4] = { id: "open-zero-stats", label: BYW9oX, action };
+let closure_4 = ["reset"];
 let result = size.fileFinishedImporting("modules/checkpoint/testing/CheckpointTestingOptions.tsx");
 
 export const CHECKPOINT_TESTING_OPTIONS = items;
+export function getCheckpointTestingOptions(mode) {
+  if ("off" === mode) {
+    return [];
+  } else if ("reset_only" === mode) {
+    return items.filter((id) => closure_1_4.includes(id.id));
+  } else if ("all" === mode) {
+    return items;
+  }
+}

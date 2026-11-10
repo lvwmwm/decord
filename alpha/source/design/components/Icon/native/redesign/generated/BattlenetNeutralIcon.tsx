@@ -1,14 +1,14 @@
-// Module ID: 9435
-// Function ID: 9436
+// Module ID: 9441
+// Function ID: 9442
 // Name: BattlenetNeutralIcon
-// Dependencies: [19, 21, 575, 5841, 9436, 2]
+// Dependencies: [19, 21, 575, 5843, 9442, 2]
 // Exports: BattlenetNeutralIcon
 
-// Module 9435 (BattlenetNeutralIcon)
+// Module 9441 (BattlenetNeutralIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5841 */;
-import AssetRegistry from "AssetRegistry" /* 9436 */;
+import BaseIconImage2 from "BaseIconImage" /* 5843 */;
+import AssetRegistry from "AssetRegistry" /* 9442 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -1,31 +1,31 @@
-// Module ID: 19970
-// Function ID: 19971
+// Module ID: 19998
+// Function ID: 19999
 // Name: InterestGuildRecommendations
-// Dependencies: [32, 19, 17, 4991, 1072, 21, 7064, 5140, 575, 5751, 1113, 18774, 5724, 1411, 7043, 2534, 5374, 19971, 9593, 7020, 6159, 9387, 5003, 7438, 19974, 504, 18771, 18772, 1252, 7070, 7355, 9902, 19975, 1652, 19976, 5758, 2]
+// Dependencies: [32, 19, 17, 4993, 1072, 21, 7067, 5142, 575, 5753, 1113, 18803, 5726, 1411, 7046, 2534, 5376, 19999, 9599, 7023, 6161, 9393, 5005, 7441, 20002, 504, 18800, 18801, 1252, 7073, 7358, 9908, 20003, 1652, 20004, 5760, 2]
 // Exports: default
 
-// Module 19970 (InterestGuildRecommendations)
+// Module 19998 (InterestGuildRecommendations)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
 import _modDef2534 from "module_2534" /* 2534 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
-import Text_Text from "Text/Text" /* 5751 */;
-import GuildIconDefault from "GuildIcon" /* 7020 */;
-import GuildBadgeV2Default from "GuildBadgeV2" /* 9387 */;
-import ClipViewDefault from "ClipView" /* 9593 */;
-import InterestGhostDefault from "InterestGhost" /* 18774 */;
-import InterestGuildProfileSheetDefault from "InterestGuildProfileSheet" /* 19971 */;
-import InterestGuildJoinButtonDefault from "InterestGuildJoinButton" /* 19974 */;
-import InterestGuildActions from "InterestGuildActions" /* 19975 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5376 */;
+import Text_Text from "Text/Text" /* 5753 */;
+import GuildIconDefault from "GuildIcon" /* 7023 */;
+import GuildBadgeV2Default from "GuildBadgeV2" /* 9393 */;
+import ClipViewDefault from "ClipView" /* 9599 */;
+import InterestGhostDefault from "InterestGhost" /* 18803 */;
+import InterestGuildProfileSheetDefault from "InterestGuildProfileSheet" /* 19999 */;
+import InterestGuildJoinButtonDefault from "InterestGuildJoinButton" /* 20002 */;
+import InterestGuildActions from "InterestGuildActions" /* 20003 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import GuildMembershipStore from "GuildMembershipStore" /* 4991 */;
+import GuildMembershipStore from "GuildMembershipStore" /* 4993 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import NavigatorHeader from "NavigatorHeader" /* 7064 */;
-import createStyles from "createStyles" /* 5140 */;
+import NavigatorHeader from "NavigatorHeader" /* 7067 */;
+import createStyles from "createStyles" /* 5142 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -193,9 +193,9 @@ let closure_15 = react.memo(function InterestGuildRow(guild) {
   ({ rowPosition: importDefault, onRowLayout: dependencyMap, onJoinTapped: _slicedToArray, onProfileOpened: react, onJoinResult: View } = guild);
   const tmp = closure_13();
   let tmp2 = guild;
-  let obj = guild(5724);
+  let obj = guild(5726);
   const token = obj.useToken(nativeDefault.modules.mobile.GUILD_ITEM_SELECTED_BORDER_RADIUS);
-  let obj2 = guild(5724);
+  let obj2 = guild(5726);
   const token1 = obj2.useToken(nativeDefault.modules.mobile.GUILD_BAR_ITEM_SIZE);
   const obj5 = {
     onLayout(arg0) {
@@ -231,7 +231,7 @@ let closure_15 = react.memo(function InterestGuildRow(guild) {
     style: tmp.row,
     children: items6
   };
-  const PressableHighlight = guild(7043).PressableHighlight;
+  const PressableHighlight = guild(7046).PressableHighlight;
   intl = guild(1113).intl;
   const obj7 = { style: tmp.rowHeader, children: items5 };
   const obj8 = { style: tmp.profile, children: items1 };
@@ -240,15 +240,15 @@ let closure_15 = react.memo(function InterestGuildRow(guild) {
   const obj10 = { borderRadius: token * nativeDefault.space.PX_40 / token1 };
   items[1] = obj10;
   const tmp11 = ClipViewDefault;
-  obj11 = { icon: guildIconURL, value: guild.name, size: guild(7020).GuildIconSizes.NORMAL, selected: false, style: tmp.guildIconImage };
+  obj11 = { icon: guildIconURL, value: guild.name, size: guild(7023).GuildIconSizes.NORMAL, selected: false, style: tmp.guildIconImage };
   tmp12 = GuildIconDefault;
   items1 = [closure_9(tmp11, obj9), ];
   const obj12 = { style: tmp.details, spacing: nativeDefault.space.PX_0, children: items3 };
-  const Stack = guild(6159).Stack;
+  const Stack = guild(6161).Stack;
   const obj13 = { style: tmp.name, children: items2 };
   items2 = [, , ];
   const obj14 = { style: tmp.nameText, variant: "body-md/semibold", color: "text-strong", lineClamp: 1, children: guild.name };
-  items2[0] = closure_9(guild(5751).Text, obj14);
+  items2[0] = closure_9(guild(5753).Text, obj14);
   const features = guild.features;
   let hasItem = features.includes(constants2.VERIFIED);
   const tmp13 = constants2;
@@ -264,20 +264,20 @@ let closure_15 = react.memo(function InterestGuildRow(guild) {
     const self = this;
     const self2 = this;
     const tmp4Result = GuildBadgeV2Default;
-    constructFromPartialGuildRecord = tmp2(5003).constructFromPartialGuildRecord;
-    tmp2(5003);
+    constructFromPartialGuildRecord = tmp2(5005).constructFromPartialGuildRecord;
+    tmp2(5005);
     set = new Set(guild.features);
     hasItem = tmp10(tmp4Result, obj15);
   }
   items2[1] = hasItem;
-  items2[2] = closure_9(tmp2(7438).ChevronSmallRightIcon, { size: "xxs", accessible: false });
+  items2[2] = closure_9(tmp2(7441).ChevronSmallRightIcon, { size: "xxs", accessible: false });
   items3 = [closure_10(View, obj13), ];
   const obj18 = { style: tmp.online, children: items4 };
   items4 = [, ];
   const obj19 = { style: tmp.dot };
   items4[0] = closure_9(View, obj19);
   const obj20 = { variant: "body-xs/medium", color: "text-muted", children: intl2.format(tmp2(1113).t["LC+S+m"], obj21) };
-  const Text = tmp2(5751).Text;
+  const Text = tmp2(5753).Text;
   intl2 = tmp2(1113).intl;
   obj21 = { membersOnline: guild.approximate_presence_count };
   items4[1] = closure_9(Text, obj20);
@@ -290,7 +290,7 @@ let closure_15 = react.memo(function InterestGuildRow(guild) {
   let tmp10Result = null != guild.description && "" !== guild.description;
   if (tmp10Result) {
     const obj23 = { variant: "body-sm/normal", color: "text-subtle", lineClamp: 2, children: guild.description };
-    tmp10Result = tmp10(tmp2(5751).Text, obj23);
+    tmp10Result = tmp10(tmp2(5753).Text, obj23);
   }
   items6[1] = tmp10Result;
   items7 = [closure_10(PressableHighlight, obj6), ];

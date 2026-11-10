@@ -1,15 +1,15 @@
-// Module ID: 18392
-// Function ID: 18393
+// Module ID: 18421
+// Function ID: 18422
 // Name: MainTabsBackgroundChat
-// Dependencies: [19, 21, 5317, 18391, 5330, 1500, 2]
+// Dependencies: [19, 21, 5319, 18419, 5332, 1500, 2]
 // Exports: BackgroundChatHost, BackgroundChatPortal, useIsBackgroundChatInGuilds
 
-// Module 18392 (MainTabsBackgroundChat)
+// Module 18421 (MainTabsBackgroundChat)
 import Fragment from "Fragment" /* 21 */;
 import Link from "Link" /* 1500 */;
-import useChatLayoutDefault from "useChatLayout" /* 5317 */;
-import Portal2 from "Portal" /* 5330 */;
-import useChannelScreensFromNavigation from "useChannelScreensFromNavigation" /* 18391 */;
+import useChatLayoutDefault from "useChatLayout" /* 5319 */;
+import Portal2 from "Portal" /* 5332 */;
+import useChannelScreensFromNavigation from "useChannelScreensFromNavigation" /* 18419 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -43,11 +43,11 @@ export function BackgroundChatPortal(arg0) {
     if (screen != null) {
       type = screen.type;
     }
-    isChatLockedOpen = type !== tmp(18391).ChannelScreenType.DEFAULT;
+    isChatLockedOpen = type !== tmp(18419).ChannelScreenType.DEFAULT;
   }
   let tmp7 = children;
   if (isChatLockedOpen) {
-    const Portal = tmp(5330).Portal;
+    const Portal = tmp(5332).Portal;
     const Provider = tmp(1500).NavigationContext.Provider;
     tmp7 = <Portal hostName={c5}>{null}</Portal>;
   }

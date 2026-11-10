@@ -1,14 +1,14 @@
-// Module ID: 13266
-// Function ID: 13267
+// Module ID: 13280
+// Function ID: 13281
 // Name: CloudDownloadIcon
-// Dependencies: [19, 21, 575, 5841, 13267, 2]
+// Dependencies: [19, 21, 575, 5843, 13281, 2]
 // Exports: CloudDownloadIcon
 
-// Module 13266 (CloudDownloadIcon)
+// Module 13280 (CloudDownloadIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5841 */;
-import AssetRegistry from "AssetRegistry" /* 13267 */;
+import BaseIconImage2 from "BaseIconImage" /* 5843 */;
+import AssetRegistry from "AssetRegistry" /* 13281 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

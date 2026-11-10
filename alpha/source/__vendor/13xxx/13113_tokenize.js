@@ -1,45 +1,24 @@
 // Module ID: 13113
 // Function ID: 13114
 // Name: tokenize
-// Dependencies: [13050]
+// Dependencies: [13064]
 
 // Module 13113 (tokenize)
-import tokenize from "tokenize" /* 13050 */;
+import tokenize from "tokenize" /* 13064 */;
 
-let items;
-let obj2;
-const Comma = tokenize.TYPE.Comma;
-const obj = {
-  name: "MediaQueryList",
-  structure: obj2,
-  parse(arg0) {
-    const self = this;
-    const list = this.createList();
-    const scanner = this.scanner;
-    scanner.skipSC();
-    if (!this.scanner.eof) {
-      list.push(self.MediaQuery(arg0));
-      if (self.scanner.tokenType === Comma) {
-        const iter = self.scanner;
-        iter.next();
-        while (!self.scanner.eof) {
-          let arr3 = list.push(self.MediaQuery(arg0));
-          if (self.scanner.tokenType !== Comma) {
-            break;
-          }
-        }
-      }
-    }
-    const element = { type: "MediaQueryList", loc: self.getLocationFromList(list), children: list };
-    return element;
+const CDC = tokenize.TYPE.CDC;
+let obj = {
+  name: "CDC",
+  structure: [],
+  parse() {
+    const tokenStart = this.scanner.tokenStart;
+    this.eat(CDC);
+    const obj = { type: "CDC", loc: this.getLocation(tokenStart, this.scanner.tokenStart) };
+    return obj;
   },
-  generate(arg0) {
-    this.children(arg0, function() {
-      this.chunk(",");
-    });
+  generate() {
+    this.chunk("-->");
   }
 };
-obj2 = { children: items };
-items = [["MediaQuery"]];
 
 export default obj;

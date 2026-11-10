@@ -1,34 +1,32 @@
-// Module ID: 13692
-// Function ID: 13693
+// Module ID: 13922
+// Function ID: 13923
 // Name: useCheckpointSound
-// Dependencies: [19, 13668, 504, 11160, 2]
+// Dependencies: [19, 13681, 504, 11169, 2]
 // Exports: default
 
-// Module 13692 (useCheckpointSound)
-import SoundUtils from "SoundUtils" /* 11160 */;
-import react from "react" /* 19 */;
-import CheckpointStore from "CheckpointStore" /* 13668 */;
+// Module 13922 (useCheckpointSound)
+import SoundUtils from "SoundUtils" /* 11169 */;
+import react_mod from "react" /* 19 */;
+import CheckpointStore from "CheckpointStore" /* 13681 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-let c2;
-let c3;
-let closure_4;
-({ useCallback: c2, useEffect: c3, useRef: closure_4 } = react);
+let react = react_mod;
 const result = size.fileFinishedImporting("modules/checkpoint/native/useCheckpointSound.tsx");
 
 export default function useCheckpointSound(arg0) {
   let closure_0;
   let isMuted;
+  let ref;
   let stateFromStores;
   _require = arg0;
   let obj = require("get initialized");
   const items = [CheckpointStore];
   stateFromStores = obj.useStateFromStores(items, () => isMuted.isMuted);
-  const ref = closure_4(null);
-  const tmp2 = closure_3(() => () => {
+  react = react.useRef(null);
+  const effect = react.useEffect(() => () => {
     const current = ref.current;
     let stopResult;
     if (current != null) {
@@ -36,8 +34,18 @@ export default function useCheckpointSound(arg0) {
     }
     return stopResult;
   }, []);
-  const items1 = [stateFromStores, arg0];
-  return ref(() => {
+  const items1 = [stateFromStores];
+  const effect1 = react.useEffect(() => {
+    const tmp = stateFromStores;
+    if (tmp) {
+      const current = ref.current;
+      if (current != null) {
+        current.stop();
+      }
+    }
+  }, items1);
+  const items2 = [stateFromStores, arg0];
+  return react.useCallback(() => {
     const tmp = stateFromStores;
     if (!tmp) {
       const current = ref.current;
@@ -49,5 +57,5 @@ export default function useCheckpointSound(arg0) {
       const current2 = tmp2.current;
       current2.play();
     }
-  }, items1);
+  }, items2);
 };

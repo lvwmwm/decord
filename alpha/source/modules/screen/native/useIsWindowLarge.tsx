@@ -1,11 +1,11 @@
-// Module ID: 7183
-// Function ID: 7184
+// Module ID: 7186
+// Function ID: 7187
 // Name: useIsWindowLarge
-// Dependencies: [5318, 2]
+// Dependencies: [5320, 2]
 // Exports: default, getIsWindowLarge
 
-// Module 7183 (useIsWindowLarge)
-import useWindowSizeClassifier from "useWindowSizeClassifier" /* 5318 */;
+// Module 7186 (useIsWindowLarge)
+import useWindowSizeClassifier from "useWindowSizeClassifier" /* 5320 */;
 import size from "module_2" /* 2 */;
 
 const useWindowSizeClassifierDefault = useWindowSizeClassifier;

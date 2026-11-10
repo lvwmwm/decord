@@ -1,22 +1,293 @@
 // Module ID: 13089
 // Function ID: 13090
-// Dependencies: []
+// Dependencies: [13066]
 
 // Module 13089
-let obj2;
-let obj3;
-let obj4;
-let obj5;
-let obj6;
-let obj7;
-let size;
-const obj = { "@charset": { syntax: "@charset \"<charset>\";", groups: ["CSS Charsets"], status: "standard", mdn_url: "https://developer.mozilla.org/docs/Web/CSS/@charset" }, "@counter-style": obj2, "@document": { syntax: "@document [ <url> | url-prefix(<string>) | domain(<string>) | media-document(<string>) | regexp(<string>) ]# {\n  <group-rule-body>\n}", interfaces: ["CSSGroupingRule", "CSSConditionRule"], groups: ["CSS Conditional Rules"], status: "nonstandard", mdn_url: "https://developer.mozilla.org/docs/Web/CSS/@document" }, "@font-face": obj3, "@font-feature-values": { syntax: "@font-feature-values <family-name># {\n  <feature-value-block-list>\n}", interfaces: ["CSSFontFeatureValuesRule"], groups: ["CSS Fonts"], status: "standard", mdn_url: "https://developer.mozilla.org/docs/Web/CSS/@font-feature-values" }, "@import": { syntax: "@import [ <string> | <url> ] [ <media-query-list> ]?;", groups: ["Media Queries"], status: "standard", mdn_url: "https://developer.mozilla.org/docs/Web/CSS/@import" }, "@keyframes": { syntax: "@keyframes <keyframes-name> {\n  <keyframe-block-list>\n}", interfaces: ["CSSKeyframeRule", "CSSKeyframesRule"], groups: ["CSS Animations"], status: "standard", mdn_url: "https://developer.mozilla.org/docs/Web/CSS/@keyframes" }, "@media": { syntax: "@media <media-query-list> {\n  <group-rule-body>\n}", interfaces: ["CSSGroupingRule", "CSSConditionRule", "CSSMediaRule", "CSSCustomMediaRule"], groups: ["CSS Conditional Rules", "Media Queries"], status: "standard", mdn_url: "https://developer.mozilla.org/docs/Web/CSS/@media" }, "@namespace": { syntax: "@namespace <namespace-prefix>? [ <string> | <url> ];", groups: ["CSS Namespaces"], status: "standard", mdn_url: "https://developer.mozilla.org/docs/Web/CSS/@namespace" }, "@page": obj4, "@property": obj6, "@supports": { syntax: "@supports <supports-condition> {\n  <group-rule-body>\n}", interfaces: ["CSSGroupingRule", "CSSConditionRule", "CSSSupportsRule"], groups: ["CSS Conditional Rules"], status: "standard", mdn_url: "https://developer.mozilla.org/docs/Web/CSS/@supports" }, "@viewport": obj7 };
-obj4 = { syntax: "@page <page-selector-list> {\n  <page-body>\n}", interfaces: ["CSSPageRule"], groups: ["CSS Pages"], descriptors: obj5, status: "standard", mdn_url: "https://developer.mozilla.org/docs/Web/CSS/@page" };
-obj7 = { syntax: "@viewport {\n  <group-rule-body>\n}", interfaces: ["CSSViewportRule"], groups: ["CSS Device Adaptation"], descriptors: size, status: "standard", mdn_url: "https://developer.mozilla.org/docs/Web/CSS/@viewport" };
-size = { height: { syntax: "<viewport-length>{1,2}", media: ["visual", "continuous"], initial: ["min-height", "max-height"], percentages: ["min-height", "max-height"], computed: ["min-height", "max-height"], order: "orderOfAppearance", status: "standard" }, "max-height": { syntax: "<viewport-length>", media: ["visual", "continuous"], initial: "auto", percentages: "referToHeightOfInitialViewport", computed: "lengthAbsolutePercentageAsSpecifiedOtherwiseAuto", order: "uniqueOrder", status: "standard" }, "max-width": { syntax: "<viewport-length>", media: ["visual", "continuous"], initial: "auto", percentages: "referToWidthOfInitialViewport", computed: "lengthAbsolutePercentageAsSpecifiedOtherwiseAuto", order: "uniqueOrder", status: "standard" }, "max-zoom": { syntax: "auto | <number> | <percentage>", media: ["visual", "continuous"], initial: "auto", percentages: "the zoom factor itself", computed: "autoNonNegativeOrPercentage", order: "uniqueOrder", status: "standard" }, "min-height": { syntax: "<viewport-length>", media: ["visual", "continuous"], initial: "auto", percentages: "referToHeightOfInitialViewport", computed: "lengthAbsolutePercentageAsSpecifiedOtherwiseAuto", order: "uniqueOrder", status: "standard" }, "min-width": { syntax: "<viewport-length>", media: ["visual", "continuous"], initial: "auto", percentages: "referToWidthOfInitialViewport", computed: "lengthAbsolutePercentageAsSpecifiedOtherwiseAuto", order: "uniqueOrder", status: "standard" }, "min-zoom": { syntax: "auto | <number> | <percentage>", media: ["visual", "continuous"], initial: "auto", percentages: "the zoom factor itself", computed: "autoNonNegativeOrPercentage", order: "uniqueOrder", status: "standard" }, orientation: { syntax: "auto | portrait | landscape", media: ["visual", "continuous"], initial: "auto", percentages: "referToSizeOfBoundingBox", computed: "asSpecified", order: "uniqueOrder", status: "standard" }, "user-zoom": { syntax: "zoom | fixed", media: ["visual", "continuous"], initial: "zoom", percentages: "referToSizeOfBoundingBox", computed: "asSpecified", order: "uniqueOrder", status: "standard" }, "viewport-fit": { syntax: "auto | contain | cover", media: ["visual", "continuous"], initial: "auto", percentages: "no", computed: "asSpecified", order: "uniqueOrder", status: "standard" }, width: { syntax: "<viewport-length>{1,2}", media: ["visual", "continuous"], initial: ["min-width", "max-width"], percentages: ["min-width", "max-width"], computed: ["min-width", "max-width"], order: "orderOfAppearance", status: "standard" }, zoom: { syntax: "auto | <number> | <percentage>", media: ["visual", "continuous"], initial: "auto", percentages: "the zoom factor itself", computed: "autoNonNegativeOrPercentage", order: "uniqueOrder", status: "standard" } };
-obj2 = { syntax: "@counter-style <counter-style-name> {\n  [ system: <counter-system>; ] ||\n  [ symbols: <counter-symbols>; ] ||\n  [ additive-symbols: <additive-symbols>; ] ||\n  [ negative: <negative-symbol>; ] ||\n  [ prefix: <prefix>; ] ||\n  [ suffix: <suffix>; ] ||\n  [ range: <range>; ] ||\n  [ pad: <padding>; ] ||\n  [ speak-as: <speak-as>; ] ||\n  [ fallback: <counter-style-name>; ]\n}", interfaces: ["CSSCounterStyleRule"], groups: ["CSS Counter Styles"], descriptors: { "additive-symbols": { syntax: "[ <integer> && <symbol> ]#", media: "all", initial: "n/a (required)", percentages: "no", computed: "asSpecified", order: "orderOfAppearance", status: "standard" }, fallback: { syntax: "<counter-style-name>", media: "all", initial: "decimal", percentages: "no", computed: "asSpecified", order: "uniqueOrder", status: "standard" }, negative: { syntax: "<symbol> <symbol>?", media: "all", initial: "\"-\" hyphen-minus", percentages: "no", computed: "asSpecified", order: "orderOfAppearance", status: "standard" }, pad: { syntax: "<integer> && <symbol>", media: "all", initial: "0 \"\"", percentages: "no", computed: "asSpecified", order: "uniqueOrder", status: "standard" }, prefix: { syntax: "<symbol>", media: "all", initial: "\"\"", percentages: "no", computed: "asSpecified", order: "uniqueOrder", status: "standard" }, range: { syntax: "[ [ <integer> | infinite ]{2} ]# | auto", media: "all", initial: "auto", percentages: "no", computed: "asSpecified", order: "orderOfAppearance", status: "standard" }, "speak-as": { syntax: "auto | bullets | numbers | words | spell-out | <counter-style-name>", media: "all", initial: "auto", percentages: "no", computed: "asSpecified", order: "uniqueOrder", status: "standard" }, suffix: { syntax: "<symbol>", media: "all", initial: "\". \"", percentages: "no", computed: "asSpecified", order: "uniqueOrder", status: "standard" }, symbols: { syntax: "<symbol>+", media: "all", initial: "n/a (required)", percentages: "no", computed: "asSpecified", order: "orderOfAppearance", status: "standard" }, system: { syntax: "cyclic | numeric | alphabetic | symbolic | additive | [ fixed <integer>? ] | [ extends <counter-style-name> ]", media: "all", initial: "symbolic", percentages: "no", computed: "asSpecified", order: "uniqueOrder", status: "standard" } }, status: "standard", mdn_url: "https://developer.mozilla.org/docs/Web/CSS/@counter-style" };
-obj3 = { syntax: "@font-face {\n  [ font-family: <family-name>; ] ||\n  [ src: <src>; ] ||\n  [ unicode-range: <unicode-range>; ] ||\n  [ font-variant: <font-variant>; ] ||\n  [ font-feature-settings: <font-feature-settings>; ] ||\n  [ font-variation-settings: <font-variation-settings>; ] ||\n  [ font-stretch: <font-stretch>; ] ||\n  [ font-weight: <font-weight>; ] ||\n  [ font-style: <font-style>; ]\n}", interfaces: ["CSSFontFaceRule"], groups: ["CSS Fonts"], descriptors: { "font-display": { syntax: "[ auto | block | swap | fallback | optional ]", media: "visual", percentages: "no", initial: "auto", computed: "asSpecified", order: "uniqueOrder", status: "experimental" }, "font-family": { syntax: "<family-name>", media: "all", initial: "n/a (required)", percentages: "no", computed: "asSpecified", order: "uniqueOrder", status: "standard" }, "font-feature-settings": { syntax: "normal | <feature-tag-value>#", media: "all", initial: "normal", percentages: "no", computed: "asSpecified", order: "orderOfAppearance", status: "standard" }, "font-variation-settings": { syntax: "normal | [ <string> <number> ]#", media: "all", initial: "normal", percentages: "no", computed: "asSpecified", order: "orderOfAppearance", status: "standard" }, "font-stretch": { syntax: "<font-stretch-absolute>{1,2}", media: "all", initial: "normal", percentages: "no", computed: "asSpecified", order: "uniqueOrder", status: "standard" }, "font-style": { syntax: "normal | italic | oblique <angle>{0,2}", media: "all", initial: "normal", percentages: "no", computed: "asSpecified", order: "uniqueOrder", status: "standard" }, "font-weight": { syntax: "<font-weight-absolute>{1,2}", media: "all", initial: "normal", percentages: "no", computed: "asSpecified", order: "uniqueOrder", status: "standard" }, "font-variant": { syntax: "normal | none | [ <common-lig-values> || <discretionary-lig-values> || <historical-lig-values> || <contextual-alt-values> || stylistic(<feature-value-name>) || historical-forms || styleset(<feature-value-name>#) || character-variant(<feature-value-name>#) || swash(<feature-value-name>) || ornaments(<feature-value-name>) || annotation(<feature-value-name>) || [ small-caps | all-small-caps | petite-caps | all-petite-caps | unicase | titling-caps ] || <numeric-figure-values> || <numeric-spacing-values> || <numeric-fraction-values> || ordinal || slashed-zero || <east-asian-variant-values> || <east-asian-width-values> || ruby ]", media: "all", initial: "normal", percentages: "no", computed: "asSpecified", order: "orderOfAppearance", status: "standard" }, src: { syntax: "[ <url> [ format( <string># ) ]? | local( <family-name> ) ]#", media: "all", initial: "n/a (required)", percentages: "no", computed: "asSpecified", order: "orderOfAppearance", status: "standard" }, "unicode-range": { syntax: "<unicode-range>#", media: "all", initial: "U+0-10FFFF", percentages: "no", computed: "asSpecified", order: "orderOfAppearance", status: "standard" } }, status: "standard", mdn_url: "https://developer.mozilla.org/docs/Web/CSS/@font-face" };
-obj5 = { bleed: { syntax: "auto | <length>", media: ["visual", "paged"], initial: "auto", percentages: "no", computed: "asSpecified", order: "uniqueOrder", status: "standard" }, marks: { syntax: "none | [ crop || cross ]", media: ["visual", "paged"], initial: "none", percentages: "no", computed: "asSpecified", order: "orderOfAppearance", status: "standard" }, size: { syntax: "<length>{1,2} | auto | [ <page-size> || [ portrait | landscape ] ]", media: ["visual", "paged"], initial: "auto", percentages: "no", computed: "asSpecifiedRelativeToAbsoluteLengths", order: "orderOfAppearance", status: "standard" } };
-obj6 = { syntax: "@property <custom-property-name> {\n  <declaration-list>\n}", interfaces: ["CSS", "CSSPropertyRule"], groups: ["CSS Houdini"], descriptors: { syntax: { syntax: "<string>", media: "all", percentages: "no", initial: "n/a (required)", computed: "asSpecified", order: "uniqueOrder", status: "experimental" }, inherits: { syntax: "true | false", media: "all", percentages: "no", initial: "auto", computed: "asSpecified", order: "uniqueOrder", status: "experimental" }, "initial-value": { syntax: "<string>", media: "all", initial: "n/a (required)", percentages: "no", computed: "asSpecified", order: "uniqueOrder", status: "experimental" } }, status: "experimental", mdn_url: "https://developer.mozilla.org/docs/Web/CSS/@property" };
+import List from "List" /* 13066 */;
+
+function isValidLocation(start) {
+  let BooleanResult = Boolean(start);
+  if (BooleanResult) {
+    const offset = start.offset;
+    let isFiniteResult = typeof offset === "number";
+    if (typeof offset === "number") {
+      const _isFinite = isFinite;
+      isFiniteResult = isFinite(offset);
+    }
+    if (isFiniteResult) {
+      const _Math = Math;
+      isFiniteResult = Math.floor(offset) === offset;
+    }
+    if (isFiniteResult) {
+      isFiniteResult = offset >= 0;
+    }
+    BooleanResult = isFiniteResult;
+  }
+  if (BooleanResult) {
+    const line = start.line;
+    let isFiniteResult1 = typeof line === "number";
+    if (typeof line === "number") {
+      const _isFinite2 = isFinite;
+      isFiniteResult1 = isFinite(line);
+    }
+    if (isFiniteResult1) {
+      const _Math2 = Math;
+      isFiniteResult1 = Math.floor(line) === line;
+    }
+    if (isFiniteResult1) {
+      isFiniteResult1 = line >= 0;
+    }
+    BooleanResult = isFiniteResult1;
+  }
+  if (BooleanResult) {
+    const column = start.column;
+    let isFiniteResult2 = typeof column === "number";
+    if (typeof column === "number") {
+      const _isFinite3 = isFinite;
+      isFiniteResult2 = isFinite(column);
+    }
+    if (isFiniteResult2) {
+      const _Math3 = Math;
+      isFiniteResult2 = Math.floor(column) === column;
+    }
+    if (isFiniteResult2) {
+      isFiniteResult2 = column >= 0;
+    }
+    BooleanResult = isFiniteResult2;
+  }
+  return BooleanResult;
+}
+let obj = {
+  getStructureFromConfig(node) {
+    let key10016;
+    const obj = {};
+    if (node.node) {
+      let num = 0;
+      let tmp2 = null;
+      let flag = false;
+      for (const key10016 in node.node) {
+        let tmp15 = key10016;
+        if (!hasOwnProperty.call(node.node, key10016)) {
+          continue;
+        } else {
+          let tmp3 = node.node[key10016];
+          if (tmp3.structure) {
+            let structure = tmp3.structure;
+            let obj2 = { type: String, loc: true };
+            let _String = String;
+            let obj3 = { type: "\"" + key10016 + "\"" };
+            let tmp6 = structure;
+            for (const key10038 in structure) {
+              let tmp16 = key10038;
+              if (false === hasOwnProperty.call(structure, key10038)) {
+                continue;
+              } else {
+                let substr;
+                let _Array = Array;
+                let arr = structure[key10038];
+                if (Array.isArray(structure[key10038])) {
+                  substr = arr.slice();
+                } else {
+                  substr = [arr];
+                }
+                let items = [];
+                obj2[key10038] = substr;
+                let num3 = 0;
+                if (0 < substr.length) {
+                  while (true) {
+                    let tmp7 = substr[num3];
+                    let _String2 = String;
+                    let tmp8 = num3;
+                    if (tmp7 !== String) {
+                      let _Boolean = Boolean;
+                      if (tmp7 !== Boolean) {
+                        if (null === tmp7) {
+                          let arr2 = items.push("null");
+                        } else if (typeof tmp7 === "string") {
+                          let arr3 = items.push("<" + tmp7 + ">");
+                        } else {
+                          let _Array2 = Array;
+                          if (Array.isArray(tmp7)) {
+                            let arr7 = items.push("List");
+                          } else {
+                            let _Error2 = Error;
+                            let str9 = "Wrong value `";
+                            let str10 = "` in `";
+                            let str11 = ".";
+                            let self3 = this;
+                            let str12 = "` structure definition";
+                            let self4 = this;
+                            let error = new Error("Wrong value `" + tmp7 + "` in `" + key10016 + "." + key10038 + "` structure definition");
+                            let tmp10 = error;
+                            throw error;
+                          }
+                        }
+                      }
+                      num3 = num3 + 1;
+                      if (num3 >= substr.length) {
+                        break;
+                      }
+                    }
+                    let arr8 = items.push(tmp7.name);
+                  }
+                }
+                obj3[key10038] = items.join(" | ");
+                continue;
+              }
+              continue;
+            }
+            let obj4 = {
+              docs: obj3,
+              check: function checkNode(type, fn) {
+                        if (type) {
+                          const _Object = Object;
+                          if (type.constructor === Object) {
+                            for (const key10005 in type) {
+                              if (false === hasOwnProperty.call(type, key10005)) {
+                                continue;
+                              } else {
+                                let tmp4;
+                                let flag;
+                                if ("type" === key10005) {
+                                  flag = true;
+                                  tmp4 = key10005;
+                                  if (type.type !== key10016) {
+                                    let tmp14 = fn(type, "Wrong node type `" + type.type + "`, expected `" + tmp13 + "`");
+                                    flag = true;
+                                    tmp4 = key10005;
+                                  }
+                                  if (flag) {
+                                    continue;
+                                  } else {
+                                    let tmp16 = fn(type, "Bad value for `" + key10016 + "." + tmp4 + "`");
+                                    continue;
+                                  }
+                                  continue;
+                                } else if ("loc" === key10005) {
+                                  if (null === type.loc) {
+                                    continue;
+                                  } else {
+                                    let text = key10005;
+                                    if (type.loc) {
+                                      let _Object2 = Object;
+                                      text = key10005;
+                                      if (type.loc.constructor === Object) {
+                                        if (typeof type.loc.source !== "string") {
+                                          text = `${key10005}.source`;
+                                        } else {
+                                          let tmp27 = isValidLocation;
+                                          if (isValidLocation(type.loc.start)) {
+                                            if (tmp27(type.loc.end)) {
+                                              continue;
+                                            } else {
+                                              text = `${key10005}.end`;
+                                            }
+                                          } else {
+                                            text = `${key10005}.start`;
+                                          }
+                                        }
+                                        continue;
+                                      }
+                                    }
+                                    tmp4 = text;
+                                    flag = false;
+                                  }
+                                } else {
+                                  let tmp26 = obj2;
+                                  if (obj2.hasOwnProperty(key10005)) {
+                                    let num = 0;
+                                    let flag2 = false;
+                                    flag = false;
+                                    tmp4 = key10005;
+                                    if (0 < tmp26[key10005].length) {
+                                      while (true) {
+                                        let tmp6 = obj2[key10005][num];
+                                        let _String = String;
+                                        let tmp8 = flag2;
+                                        let tmp5 = obj2;
+                                        if (String === tmp6) {
+                                          tmp8 = typeof type[key10005] === "string";
+                                        } else {
+                                          let _Boolean = Boolean;
+                                          if (Boolean === tmp6) {
+                                            tmp8 = typeof type[key10005] === "boolean";
+                                          } else if (null === tmp6) {
+                                            tmp8 = null === type[key10005];
+                                          } else if (typeof tmp6 === "string") {
+                                            let tmp11 = type[key10005] && type[key10005].type === tmp6;
+                                            tmp8 = tmp11;
+                                          } else {
+                                            let _Array = Array;
+                                            if (Array.isArray(tmp6)) {
+                                              tmp8 = type[key10005] instanceof List;
+                                            }
+                                          }
+                                        }
+                                        flag = tmp8;
+                                        tmp4 = key10005;
+                                        if (tmp8) {
+                                          break;
+                                        } else {
+                                          num = num + 1;
+                                          flag2 = tmp8;
+                                          flag = tmp8;
+                                          tmp4 = key10005;
+                                          if (num < tmp5[key10005].length) {
+                                            continue;
+                                          } else {
+                                            break;
+                                          }
+                                          break;
+                                        }
+                                      }
+                                    }
+                                  } else {
+                                    let tmp3 = fn(type, "Unknown field `" + key10005 + "` for " + key10016 + " node type");
+                                    flag = true;
+                                    tmp4 = key10005;
+                                  }
+                                }
+                                continue;
+                              }
+                              continue;
+                            }
+                            const keys = Object.keys();
+                            if (keys !== undefined) {
+                              const first = keys[0];
+                              while (first !== undefined) {
+                                let tmp20 = hasOwnProperty.call(obj2, first) && false === hasOwnProperty.call(type, first);
+                                if (!tmp20) {
+                                  continue;
+                                } else {
+                                  let tmp22 = fn(type, `Field \`${key10016}.${tmp19}\` is missed`);
+                                  continue;
+                                }
+                                continue;
+                              }
+                            }
+                          }
+                        }
+                        return fn(type, "Type of node should be an Object");
+                      }
+            };
+            obj[key10016] = obj4;
+            continue;
+          } else {
+            let _Error = Error;
+            let str7 = "Missed `structure` field in `";
+            let self = this;
+            let str8 = "` node type definition";
+            let self2 = this;
+            let error1 = new Error("Missed `structure` field in `" + key10016 + "` node type definition");
+            let tmp5 = error1;
+            throw error1;
+          }
+        }
+        continue;
+      }
+    }
+    return obj;
+  }
+};
 
 export default obj;

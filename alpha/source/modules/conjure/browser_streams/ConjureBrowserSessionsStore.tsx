@@ -1,9 +1,9 @@
-// Module ID: 10979
-// Function ID: 10980
+// Module ID: 10988
+// Function ID: 10989
 // Name: ConjureBrowserSessionsStore
 // Dependencies: [504, 572, 2]
 
-// Module 10979 (ConjureBrowserSessionsStore)
+// Module 10988 (ConjureBrowserSessionsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;

@@ -1,10 +1,10 @@
-// Module ID: 14210
-// Function ID: 14211
+// Module ID: 14236
+// Function ID: 14237
 // Name: PushNotificationActionCreators
-// Dependencies: [5, 14211, 502, 1072, 14212, 6798, 3, 1098, 1282, 1242, 14215, 510, 6802, 1377, 1260, 1380, 572, 2]
+// Dependencies: [5, 14237, 502, 1072, 14238, 6800, 3, 1098, 1282, 1242, 14241, 510, 6804, 1377, 1260, 1380, 572, 2]
 // Exports: setPushNotificationPermissionEligibleForPrompt, setPushPermissionReactivationSeen, setPushPermissionState, updateNotificationAuthorizationStatus
 
-// Module 14210 (PushNotificationActionCreators)
+// Module 14236 (PushNotificationActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import Storage2 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
@@ -12,13 +12,13 @@ import TokenManagerAll from "TokenManager" /* 1098 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6802 */;
-import Constants2 from "Constants" /* 14212 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6804 */;
+import Constants2 from "Constants" /* 14238 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import MultiAccountStore from "MultiAccountStore" /* 14211 */;
+import MultiAccountStore from "MultiAccountStore" /* 14237 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Constants from "Constants" /* 1072 */;
-import PushNotificationConstants from "PushNotificationConstants" /* 6798 */;
+import PushNotificationConstants from "PushNotificationConstants" /* 6800 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3, c5, c6, closure_3;
@@ -161,7 +161,7 @@ body = {
       }
       body = { provider: tmp9, token, bypass_server_throttling_supported: isAndroidResult, bundle_id: unpackModuleId };
       const tmp2Result = PlatformUtils;
-      isAndroidResult = tmp2Result.isAndroid() && !authStore3;
+      isAndroidResult = tmp2Result.isAndroid() && !gesture;
       obj2 = { event: discord_common_AnalyticsUtils.NetworkActionNames.USER_REGISTER_DEVICE_TOKEN };
       syncDeviceResult = post(request);
     }

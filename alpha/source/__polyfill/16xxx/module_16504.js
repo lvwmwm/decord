@@ -1,19 +1,26 @@
 // Module ID: 16504
 // Function ID: 16505
-// Dependencies: [16456, 16463]
+// Dependencies: [16493, 16468]
 
 // Module 16504
-import _mod16456 from "module_16456" /* 16456 */;
-import _mod16463 from "module_16463" /* 16463 */;
+import _mod16468 from "module_16468" /* 16468 */;
+import module_16493 from "module_16493" /* 16493 */;
 
-let closure_2 = _mod16456("keys");
+let _moduleResult = module_16493(_mod16468.document);
+if (_moduleResult) {
+  const _module1 = module_16493;
+  _moduleResult = _module1(_mod16468.document.createElement);
+}
+let c2 = _moduleResult;
 
 export default (arg0) => {
-  let tmp2 = closure_2[arg0];
-  if (!tmp2) {
-    const tmp5 = _mod16463(arg0);
-    tmp[arg0] = tmp5;
-    tmp2 = tmp5;
+  let element;
+  const tmp = c2;
+  if (tmp) {
+    const _document = _mod16468.document;
+    element = _document.createElement(arg0);
+  } else {
+    element = {};
   }
-  return tmp2;
+  return element;
 };

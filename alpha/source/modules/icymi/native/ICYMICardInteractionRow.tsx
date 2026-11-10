@@ -1,38 +1,38 @@
-// Module ID: 18928
-// Function ID: 18929
+// Module ID: 18957
+// Function ID: 18958
 // Name: ICYMICardInteractionRow
-// Dependencies: [32, 19, 17, 7541, 4989, 6763, 5072, 1072, 1388, 21, 5084, 8476, 5140, 575, 1377, 5137, 504, 7549, 7712, 10061, 7043, 1113, 9533, 5751, 10217, 1090, 4965, 1411, 10016, 5842, 10885, 11279, 13623, 12949, 18920, 8714, 5742, 8500, 10312, 8998, 13611, 10320, 5724, 5715, 671, 7438, 2]
+// Dependencies: [32, 19, 17, 7544, 4991, 6765, 5074, 1072, 1388, 21, 5086, 8480, 5142, 575, 1377, 5139, 504, 7552, 7715, 10067, 7046, 1113, 9539, 5753, 10223, 1090, 4967, 1411, 10022, 5844, 10894, 11288, 13636, 12963, 18949, 8720, 5744, 8504, 10318, 9004, 13624, 10326, 5726, 5717, 671, 7441, 2]
 // Exports: default, onAddReaction, useThread
 
-// Module 18928 (ICYMICardInteractionRow)
+// Module 18957 (ICYMICardInteractionRow)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import EmojiConstants from "EmojiConstants" /* 1388 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
-import ReactionUtils from "ReactionUtils" /* 5084 */;
-import MessageReactionsTypes from "MessageReactionsTypes" /* 5742 */;
-import Pressables from "Pressables" /* 7043 */;
-import ReactionActionCreators from "ReactionActionCreators" /* 8476 */;
-import canAddNewReactionsDefault from "canAddNewReactions" /* 8500 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8998 */;
-import messages_MessagesUtils from "messages/MessagesUtils" /* 10016 */;
-import openEmojiPickerActionSheet2 from "openEmojiPickerActionSheet" /* 10061 */;
-import PendingReplyActionCreators from "PendingReplyActionCreators" /* 10320 */;
-import ArrowAngleLeftUpIcon from "ArrowAngleLeftUpIcon" /* 12949 */;
-import ForwardModalUtils from "ForwardModalUtils" /* 13611 */;
-import ForwardingIconDefault from "ForwardingIcon" /* 13623 */;
-import ICYMIShared from "ICYMIShared" /* 18920 */;
+import ReactionUtils from "ReactionUtils" /* 5086 */;
+import MessageReactionsTypes from "MessageReactionsTypes" /* 5744 */;
+import Pressables from "Pressables" /* 7046 */;
+import ReactionActionCreators from "ReactionActionCreators" /* 8480 */;
+import canAddNewReactionsDefault from "canAddNewReactions" /* 8504 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 9004 */;
+import messages_MessagesUtils from "messages/MessagesUtils" /* 10022 */;
+import openEmojiPickerActionSheet2 from "openEmojiPickerActionSheet" /* 10067 */;
+import PendingReplyActionCreators from "PendingReplyActionCreators" /* 10326 */;
+import ArrowAngleLeftUpIcon from "ArrowAngleLeftUpIcon" /* 12963 */;
+import ForwardModalUtils from "ForwardModalUtils" /* 13624 */;
+import ForwardingIconDefault from "ForwardingIcon" /* 13636 */;
+import ICYMIShared from "ICYMIShared" /* 18949 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ThreadMessageStore from "ThreadMessageStore" /* 7541 */;
-import ChannelStore from "ChannelStore" /* 4989 */;
-import GuildVerificationStore from "GuildVerificationStore" /* 6763 */;
-import PermissionStore from "PermissionStore" /* 5072 */;
+import ThreadMessageStore from "ThreadMessageStore" /* 7544 */;
+import ChannelStore from "ChannelStore" /* 4991 */;
+import GuildVerificationStore from "GuildVerificationStore" /* 6765 */;
+import PermissionStore from "PermissionStore" /* 5074 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5140 */;
+import createStyles from "createStyles" /* 5142 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -47,7 +47,7 @@ let map1;
 let metroRequire;
 let tmp4;
 let unpackModuleId;
-const ColorUtils = tmp4(5137);
+const ColorUtils = tmp4(5139);
 function AddEmojiButton(channel) {
   let disabled;
   let handleItemInteracted;
@@ -246,7 +246,7 @@ function ForwardButton(disabled) {
   disabled = disabled.disabled;
   const onPress = disabled.onPress;
   const tmp = closure_19();
-  const obj = { onPress, style: items, accessible: true, disabled, accessibilityLabel: intl.string(intl3.t.xIUfJS), children: closure_15(ForwardingIconDefault, { size: "sm" }) };
+  const obj = { onPress, style: items, accessible: true, disabled, accessibilityLabel: intl.string(intl3.t.xIUfJS), children: clientStatuses(ForwardingIconDefault, { size: "sm" }) };
   items = [, , ];
   ({ emojiContainer: arr[0], addEmojiContainer: arr[1] } = tmp);
   let disabled1 = null;
@@ -256,7 +256,7 @@ function ForwardButton(disabled) {
   }
   items[2] = disabled1;
   intl = tmp3(1113).intl;
-  return closure_15(PressableOpacity, obj);
+  return clientStatuses(PressableOpacity, obj);
 }
 function ReplyButton(disabled) {
   let intl;
@@ -264,7 +264,7 @@ function ReplyButton(disabled) {
   disabled = disabled.disabled;
   const onPress = disabled.onPress;
   const tmp = closure_19();
-  const obj = { onPress, style: items, accessible: true, disabled, accessibilityLabel: intl.string(intl3.t["5NwaNY"]), children: closure_15(ArrowAngleLeftUpIcon.ArrowAngleLeftUpIcon, { size: "sm" }) };
+  const obj = { onPress, style: items, accessible: true, disabled, accessibilityLabel: intl.string(intl3.t["5NwaNY"]), children: clientStatuses(ArrowAngleLeftUpIcon.ArrowAngleLeftUpIcon, { size: "sm" }) };
   items = [, , ];
   ({ emojiContainer: arr[0], addEmojiContainer: arr[1] } = tmp);
   let disabled1 = null;
@@ -274,7 +274,7 @@ function ReplyButton(disabled) {
   }
   items[2] = disabled1;
   intl = tmp3(1113).intl;
-  return closure_15(PressableOpacity, obj);
+  return clientStatuses(PressableOpacity, obj);
 }
 function ThreadAsCommentsButton(parentMessage) {
   let handleItemInteracted;
@@ -609,8 +609,8 @@ export default function ICYMICardInteractionRow(message) {
         tmp25Result,
         memo.map((reaction, index) => {
               const obj = { messageId: message.id, channel, reaction, count: reaction.type === MessageReactionsTypes.ReactionTypes.BURST ? reaction.burst_count : reaction.count, isBurstReaction: reaction.type === MessageReactionsTypes.ReactionTypes.BURST, handleItemInteracted };
-              const obj2 = { children: closure_15(EmojiReaction, obj) };
-              return closure_15(hasOwnProperty, obj2, "reaction-" + index);
+              const obj2 = { children: clientStatuses(EmojiReaction, obj) };
+              return clientStatuses(hasOwnProperty, obj2, "reaction-" + index);
             }),
 
       ];

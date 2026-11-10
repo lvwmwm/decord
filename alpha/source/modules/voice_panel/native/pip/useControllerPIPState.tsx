@@ -1,19 +1,19 @@
-// Module ID: 19568
-// Function ID: 19569
+// Module ID: 19597
+// Function ID: 19598
 // Name: useControllerPIPState
-// Dependencies: [32, 19, 4988, 6901, 4989, 15942, 11363, 5781, 6902, 19522, 504, 5061, 9040, 10210, 1652, 19569, 19570, 19485, 19571, 19572, 2]
+// Dependencies: [32, 19, 4990, 6904, 4991, 15970, 11372, 5783, 6905, 19551, 504, 5063, 9046, 10216, 1652, 19598, 19599, 19514, 19600, 19601, 2]
 // Exports: useControllerPIPState
 
-// Module 19568 (useControllerPIPState)
-import ActivityPanelConstants from "ActivityPanelConstants" /* 5781 */;
-import FramesConstants from "FramesConstants" /* 6902 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11363 */;
+// Module 19597 (useControllerPIPState)
+import ActivityPanelConstants from "ActivityPanelConstants" /* 5783 */;
+import FramesConstants from "FramesConstants" /* 6905 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11372 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4988 */;
-import FramesStore from "FramesStore" /* 6901 */;
-import ChannelStore from "ChannelStore" /* 4989 */;
-import PIPSpeakerStore from "PIPSpeakerStore" /* 15942 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4990 */;
+import FramesStore from "FramesStore" /* 6904 */;
+import ChannelStore from "ChannelStore" /* 4991 */;
+import PIPSpeakerStore from "PIPSpeakerStore" /* 15970 */;
 import size from "module_2" /* 2 */;
 
 let channel, connectedActivityLocation, targetDimensions;
@@ -49,7 +49,7 @@ export function useControllerPIPState(channelId) {
   let tmp28;
   let tmp29;
   let windowDimensions;
-  const f118840 = () => layoutManager.getTargetDimensions(focusedId);
+  const f119026 = () => layoutManager.getTargetDimensions(focusedId);
   channelId = channelId.channelId;
   ({ connected, focusedId } = channelId);
   const layoutManager = channelId.layoutManager;
@@ -61,7 +61,7 @@ export function useControllerPIPState(channelId) {
   const useSharedValue = tmp3.useSharedValue;
   let obj = channelId(layoutManager[15]);
   const sharedValue = useSharedValue(obj.getVoicePanelPIPScaleCached());
-  const ref = react.useRef({ id: "disabled", mode: "isArray", width: false, height: null, containerHeight: 0, showSecondaryPIP: null, scale: sharedValue });
+  const ref = react.useRef({ id: "disabled", mode: "isArray", width: false, height: null, containerHeight: "box-none", showSecondaryPIP: null, scale: sharedValue });
   let obj3 = channelId(layoutManager[10]);
   const items = [PIPSpeakerStore];
   const stateFromStores = obj3.useStateFromStores(items, () => PIPSpeakerStore.getSpeakerId(channelId));
@@ -119,8 +119,8 @@ export function useControllerPIPState(channelId) {
     }
   }, items2);
   let tmp10 = focusedId(layoutManager[16])(channelId);
-  [tmp12, c3] = _slicedToArray(react.useState(f118840), 2);
-  const tmp11 = _slicedToArray(react.useState(f118840), 2);
+  [tmp12, c3] = _slicedToArray(react.useState(f119026), 2);
+  const tmp11 = _slicedToArray(react.useState(f119026), 2);
   let obj5 = channelId(layoutManager[17]);
   const pIPMode = obj5.getPIPMode({ channelId, connected, manuallyFocusedId: focusedId, mode, selfHasVideo: tmp10 });
   const obj6 = { connected, mode, focusedId, participantTargetDimensions: tmp12, selfHasVideo: tmp10, showSecondaryPIP: stateFromStores1 };
@@ -181,7 +181,7 @@ export function useControllerPIPState(channelId) {
   const animatedReaction = useAnimatedReaction(useControllerPIPStateTsx1, useControllerPIPStateTsx2);
   const items7 = [focusedId, layoutManager, tmp12];
   const effect1 = obj2.useEffect(() => {
-    const f141006 = (safeAreaState) => {
+    const f141253 = (safeAreaState) => {
       targetDimensions = targetDimensions.getTargetDimensions(closure_1_1);
       const obj = channelId(layoutManager[13]);
       if (obj.cheapWorkletShallowEqual(safeAreaState, targetDimensions)) {
@@ -189,9 +189,9 @@ export function useControllerPIPState(channelId) {
       }
       return targetDimensions;
     };
-    _undefined(f141006);
+    _undefined(f141253);
     return layoutManager.subscribeFromItem(function updateParticipantDimensions() {
-      _undefined(f141006);
+      _undefined(f141253);
     });
   }, items7);
   tmp7(layoutManager[19])(channelId, layoutManager, pIPMode);

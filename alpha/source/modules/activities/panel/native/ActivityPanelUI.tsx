@@ -1,14 +1,14 @@
-// Module ID: 19503
-// Function ID: 19504
+// Module ID: 19532
+// Function ID: 19533
 // Name: ActivityPanelUI
-// Dependencies: [19, 17, 5781, 21, 19504, 19509, 19522, 5738, 5199, 19523, 19502, 2]
+// Dependencies: [19, 17, 5783, 21, 19533, 19538, 19551, 5740, 5201, 19552, 19531, 2]
 // Exports: default
 
-// Module 19503 (ActivityPanelUI)
-import ActivityPanelConstants from "ActivityPanelConstants" /* 5781 */;
-import ActivityPanelStateContextDefault from "ActivityPanelStateContext" /* 19502 */;
-import useIsConnectedToVoiceChannelDefault from "useIsConnectedToVoiceChannel" /* 19522 */;
-import ActivityPanelSystemUIManagerDefault from "ActivityPanelSystemUIManager" /* 19523 */;
+// Module 19532 (ActivityPanelUI)
+import ActivityPanelConstants from "ActivityPanelConstants" /* 5783 */;
+import ActivityPanelStateContextDefault from "ActivityPanelStateContext" /* 19531 */;
+import useIsConnectedToVoiceChannelDefault from "useIsConnectedToVoiceChannel" /* 19551 */;
+import ActivityPanelSystemUIManagerDefault from "ActivityPanelSystemUIManager" /* 19552 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -25,9 +25,9 @@ function renderActivityOrPIP(arg0, arg1, transitionState, transitionCleanUp) {
   const tmp = metroImportDefault;
   const tmp2 = importDefault;
   if ("pip" === arg1) {
-    tmp4 = 19504;
+    tmp4 = 19533;
   } else {
-    tmp4 = 19509;
+    tmp4 = 19538;
   }
   const obj = { transitionState, transitionCleanUp };
   return tmp(tmp2(tmp4), obj, arg0);
@@ -60,10 +60,10 @@ class BaseActivityPanelUI {
       tmp4 = closure_12;
     }, items);
     const obj = { children: items1 };
-    const LayerScope = mode(5738).LayerScope;
+    const LayerScope = mode(5740).LayerScope;
     items1 = [renderActivityPanelSystemUIManager(), ];
     const obj2 = { items: memo, renderItem: renderActivityOrPIP, getItemKey: getKey, wrapChildren };
-    items1[1] = closure_7(mode(5199).TransitionGroup, obj2);
+    items1[1] = closure_7(mode(5201).TransitionGroup, obj2);
     return closure_8(LayerScope, obj);
   }
 }

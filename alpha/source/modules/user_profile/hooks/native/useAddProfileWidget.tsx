@@ -1,17 +1,17 @@
-// Module ID: 15197
-// Function ID: 15198
+// Module ID: 15223
+// Function ID: 15224
 // Name: useAddProfileWidget
-// Dependencies: [19, 502, 8825, 1072, 11663, 12549, 8833, 5374, 5314, 2]
+// Dependencies: [19, 502, 8831, 1072, 11672, 12562, 8839, 5376, 5316, 2]
 // Exports: default
 
-// Module 15197 (useAddProfileWidget)
+// Module 15223 (useAddProfileWidget)
 import Constants from "Constants" /* 1072 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5314 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
-import Constants2 from "Constants" /* 8825 */;
-import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8833 */;
-import useOpenProfileSettingsDefault from "useOpenProfileSettings" /* 11663 */;
-import WidgetUtils from "WidgetUtils" /* 12549 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5316 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5376 */;
+import Constants2 from "Constants" /* 8831 */;
+import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8839 */;
+import useOpenProfileSettingsDefault from "useOpenProfileSettings" /* 11672 */;
+import WidgetUtils from "WidgetUtils" /* 12562 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import size from "module_2" /* 2 */;

@@ -1,20 +1,20 @@
-// Module ID: 14823
-// Function ID: 14824
+// Module ID: 14849
+// Function ID: 14850
 // Name: SafetyToolsButton
-// Dependencies: [32, 19, 17, 21, 5140, 575, 11439, 11441, 1113, 11409, 5721, 11410, 11436, 10077, 14791, 11422, 2]
+// Dependencies: [32, 19, 17, 21, 5142, 575, 11448, 11450, 1113, 11418, 5723, 11419, 11445, 10083, 14817, 11431, 2]
 // Exports: SafetyToolsButton
 
-// Module 14823 (SafetyToolsButton)
+// Module 14849 (SafetyToolsButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import SafetyWarningUtils from "SafetyWarningUtils" /* 11409 */;
-import ChannelSafetyWarningsActionCreators from "ChannelSafetyWarningsActionCreators" /* 11410 */;
-import SafetyToolsActionCreators from "SafetyToolsActionCreators" /* 11436 */;
+import SafetyWarningUtils from "SafetyWarningUtils" /* 11418 */;
+import ChannelSafetyWarningsActionCreators from "ChannelSafetyWarningsActionCreators" /* 11419 */;
+import SafetyToolsActionCreators from "SafetyToolsActionCreators" /* 11445 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5140 */;
+import createStyles from "createStyles" /* 5142 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

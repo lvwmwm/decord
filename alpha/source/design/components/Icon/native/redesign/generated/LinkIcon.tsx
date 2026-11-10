@@ -1,14 +1,14 @@
-// Module ID: 5851
-// Function ID: 5852
+// Module ID: 5853
+// Function ID: 5854
 // Name: LinkIcon
-// Dependencies: [19, 21, 575, 5841, 5852, 2]
+// Dependencies: [19, 21, 575, 5843, 5854, 2]
 // Exports: LinkIcon
 
-// Module 5851 (LinkIcon)
+// Module 5853 (LinkIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5841 */;
-import AssetRegistry from "AssetRegistry" /* 5852 */;
+import BaseIconImage2 from "BaseIconImage" /* 5843 */;
+import AssetRegistry from "AssetRegistry" /* 5854 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

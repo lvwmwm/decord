@@ -1,27 +1,27 @@
-// Module ID: 12566
-// Function ID: 12567
+// Module ID: 12579
+// Function ID: 12580
 // Name: AppLauncherKeyboard
-// Dependencies: [19, 17, 1072, 4986, 12567, 21, 5140, 575, 11648, 11646, 11387, 5390, 12568, 1652, 12577, 1705, 5199, 5392, 12578, 1377, 5889, 1624, 1497, 1625, 6153, 12609, 11647, 12612, 2]
+// Dependencies: [19, 17, 1072, 4988, 12580, 21, 5142, 575, 11657, 11655, 11396, 5392, 12581, 1652, 12590, 1705, 5201, 5394, 12591, 1377, 5891, 1624, 1497, 1625, 6155, 12622, 11656, 12625, 2]
 // Exports: setAppLauncherA11yFocusReturnRef
 
-// Module 12566 (AppLauncherKeyboard)
+// Module 12579 (AppLauncherKeyboard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import KeyboardUIStore from "KeyboardUIStore" /* 1497 */;
 import MetaQuestUtils from "MetaQuestUtils" /* 1624 */;
 import KeyboardTypes from "KeyboardTypes" /* 1625 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4986 */;
-import native from "native" /* 5199 */;
-import BottomSheetModal from "BottomSheetModal" /* 5392 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5889 */;
-import react_native2 from "react-native" /* 6153 */;
-import PortalKeyboardConstants from "PortalKeyboardConstants" /* 12567 */;
-import completeAppLauncherOnboardingDefault from "completeAppLauncherOnboarding" /* 12577 */;
-import AppLauncherOnboardingLayerDefault from "AppLauncherOnboardingLayer" /* 12578 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4988 */;
+import native from "native" /* 5201 */;
+import BottomSheetModal from "BottomSheetModal" /* 5394 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5891 */;
+import react_native2 from "react-native" /* 6155 */;
+import PortalKeyboardConstants from "PortalKeyboardConstants" /* 12580 */;
+import completeAppLauncherOnboardingDefault from "completeAppLauncherOnboarding" /* 12590 */;
+import AppLauncherOnboardingLayerDefault from "AppLauncherOnboardingLayer" /* 12591 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5142 */;
 import size from "module_2" /* 2 */;
 
 let animationConfigs;
@@ -182,11 +182,11 @@ const memoResult = react.memo(function AppLauncherKeyboard(context) {
       if (1 === arg1) {
         let current;
         if (arg2 === BottomSheetModal.ANIMATION_SOURCE.KEYBOARD) {
-          current = tmp7(11646).AppLauncherBottomSheetExpandReason.KEYBOARD;
+          current = tmp7(11655).AppLauncherBottomSheetExpandReason.KEYBOARD;
         } else if (arg2 === BottomSheetModal.ANIMATION_SOURCE.GESTURE) {
-          current = tmp7(11646).AppLauncherBottomSheetExpandReason.GESTURE;
+          current = tmp7(11655).AppLauncherBottomSheetExpandReason.GESTURE;
         } else if (arg2 !== BottomSheetModal.ANIMATION_SOURCE.USER) {
-          current = tmp7(11646).AppLauncherBottomSheetExpandReason.OTHER;
+          current = tmp7(11655).AppLauncherBottomSheetExpandReason.OTHER;
         } else {
           current = ref1.current;
         }

@@ -1,25 +1,25 @@
-// Module ID: 14683
-// Function ID: 14684
+// Module ID: 14709
+// Function ID: 14710
 // Name: CollectiblesShopGiftBadgePostPurchaseModal
-// Dependencies: [19, 17, 21, 5140, 575, 1627, 6799, 7795, 7412, 8041, 1113, 7120, 5751, 2760, 14684, 2]
+// Dependencies: [19, 17, 21, 5142, 575, 1627, 6801, 7798, 7415, 8045, 1113, 7123, 5753, 2760, 14710, 2]
 // Exports: default
 
-// Module 14683 (CollectiblesShopGiftBadgePostPurchaseModal)
+// Module 14709 (CollectiblesShopGiftBadgePostPurchaseModal)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
 import _modDef2760 from "module_2760" /* 2760 */;
-import Text_Text from "Text/Text" /* 5751 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6799 */;
-import XSmallIcon from "XSmallIcon" /* 7120 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7412 */;
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7795 */;
-import ModalScreen2 from "ModalScreen" /* 8041 */;
-import GiftBadgePostPurchaseDefault from "GiftBadgePostPurchase" /* 14684 */;
+import Text_Text from "Text/Text" /* 5753 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6801 */;
+import XSmallIcon from "XSmallIcon" /* 7123 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7415 */;
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7798 */;
+import ModalScreen2 from "ModalScreen" /* 8045 */;
+import GiftBadgePostPurchaseDefault from "GiftBadgePostPurchase" /* 14710 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5140 */;
+import createStyles from "createStyles" /* 5142 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;

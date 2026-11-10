@@ -1,19 +1,19 @@
-// Module ID: 16048
-// Function ID: 16049
+// Module ID: 16075
+// Function ID: 16076
 // Name: ServerTagPreviewActionSheet
-// Dependencies: [19, 17, 9126, 21, 5140, 575, 9127, 9128, 16049, 5374, 5751, 1113, 5758, 7271, 7426, 7382, 2]
+// Dependencies: [19, 17, 9132, 21, 5142, 575, 9133, 9134, 16076, 5376, 5753, 1113, 5760, 7274, 7429, 7385, 2]
 // Exports: default
 
-// Module 16048 (ServerTagPreviewActionSheet)
+// Module 16075 (ServerTagPreviewActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
-import GuildProfileStore from "GuildProfileStore" /* 9126 */;
-import GuildProfileActionCreators from "GuildProfileActionCreators" /* 9128 */;
-import GuildSettingsServerTagPreviewDefault from "GuildSettingsServerTagPreview" /* 16049 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5376 */;
+import GuildProfileStore from "GuildProfileStore" /* 9132 */;
+import GuildProfileActionCreators from "GuildProfileActionCreators" /* 9134 */;
+import GuildSettingsServerTagPreviewDefault from "GuildSettingsServerTagPreview" /* 16076 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5140 */;
+import createStyles from "createStyles" /* 5142 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;
@@ -37,7 +37,7 @@ export default function ServerTagPreviewActionSheet(guildId) {
   let tmp8;
   guildId = guildId.guildId;
   const tmp = closure_8();
-  let obj = guildId(9127);
+  let obj = guildId(9133);
   const guildProfile1 = obj.useGuildProfile(guildId);
   let guildProfile = guildProfile1.guildProfile;
   const items = [guildId];
@@ -66,7 +66,7 @@ export default function ServerTagPreviewActionSheet(guildId) {
   } else if (fetchStatus === GuildProfileFetchStatus.FETCHED) {
     const obj3 = { style: tmp.error, children: items1 };
     const obj4 = { variant: "body-md/medium", color: "text-muted", children: intl.string(guildId(1113).t.tmGHjc) };
-    const Text = tmp2(5751).Text;
+    const Text = tmp2(5753).Text;
     intl = tmp2(1113).intl;
     items1 = [closure_6(Text, obj4), ];
     const obj6 = {
@@ -77,19 +77,19 @@ export default function ServerTagPreviewActionSheet(guildId) {
           return obj.getGuildProfile(guildId, true);
         }
     };
-    const Button = tmp2(5758).Button;
+    const Button = tmp2(5760).Button;
     intl2 = tmp2(1113).intl;
     items1[1] = closure_6(Button, obj6);
     tmp7 = closure_7(View, obj3);
     tmp8 = closure_6;
   } else {
-    tmp7 = closure_6(tmp2(7271).SceneLoadingIndicator, {});
+    tmp7 = closure_6(tmp2(7274).SceneLoadingIndicator, {});
     tmp8 = closure_6;
   }
   const obj7 = { children: items2 };
-  const ActionSheet = tmp2(7426).ActionSheet;
+  const ActionSheet = tmp2(7429).ActionSheet;
   const obj13 = { title: intl3.string(guildId(1113).t["2QmKZ2"]) };
-  const BottomSheetTitleHeader = tmp2(7382).BottomSheetTitleHeader;
+  const BottomSheetTitleHeader = tmp2(7385).BottomSheetTitleHeader;
   intl3 = tmp2(1113).intl;
   items2 = [tmp8(BottomSheetTitleHeader, obj13), tmp7];
   return closure_7(ActionSheet, obj7);

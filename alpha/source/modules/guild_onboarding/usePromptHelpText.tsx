@@ -1,15 +1,15 @@
-// Module ID: 7358
-// Function ID: 7359
+// Module ID: 7361
+// Function ID: 7362
 // Name: usePromptHelpText
-// Dependencies: [4989, 5046, 5072, 5082, 1385, 1072, 1113, 504, 5776, 2]
+// Dependencies: [4991, 5048, 5074, 5084, 1385, 1072, 1113, 504, 5778, 2]
 // Exports: default, useCustomizeCommunityPromptHelpText
 
-// Module 7358 (usePromptHelpText)
+// Module 7361 (usePromptHelpText)
 import Constants from "Constants" /* 1072 */;
-import ChannelStore from "ChannelStore" /* 4989 */;
-import GuildRoleStore from "GuildRoleStore" /* 5046 */;
-import PermissionStore from "PermissionStore" /* 5072 */;
-import RelationshipStore from "RelationshipStore" /* 5082 */;
+import ChannelStore from "ChannelStore" /* 4991 */;
+import GuildRoleStore from "GuildRoleStore" /* 5048 */;
+import PermissionStore from "PermissionStore" /* 5074 */;
+import RelationshipStore from "RelationshipStore" /* 5084 */;
 import UserStore from "UserStore" /* 1385 */;
 import size from "module_2" /* 2 */;
 

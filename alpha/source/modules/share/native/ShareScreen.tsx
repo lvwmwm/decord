@@ -1,26 +1,26 @@
-// Module ID: 16035
-// Function ID: 16036
+// Module ID: 16062
+// Function ID: 16063
 // Name: ShareScreen
-// Dependencies: [5, 32, 19, 17, 4993, 4989, 5072, 1072, 13615, 10846, 21, 5140, 575, 1113, 16036, 13616, 16037, 16038, 1252, 9920, 5885, 1377, 9011, 9870, 13654, 2118, 6092, 16039, 16040, 7071, 13626, 1624, 13627, 16041, 2]
+// Dependencies: [5, 32, 19, 17, 4995, 4991, 5074, 1072, 13628, 10855, 21, 5142, 575, 1113, 16063, 13629, 16064, 16065, 1252, 9926, 5887, 1377, 9017, 9876, 13667, 2118, 6094, 16066, 16067, 7074, 13639, 1624, 13640, 16068, 2]
 // Exports: default
 
-// Module 16035 (ShareScreen)
+// Module 16062 (ShareScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl6 from "intl" /* 1113 */;
-import UserRowConstants from "UserRowConstants" /* 10846 */;
-import ForwardConstants from "ForwardConstants" /* 13615 */;
-import ShareAttachmentsDefault from "ShareAttachments" /* 16039 */;
-import ShareEmbedDefault from "ShareEmbed" /* 16040 */;
+import UserRowConstants from "UserRowConstants" /* 10855 */;
+import ForwardConstants from "ForwardConstants" /* 13628 */;
+import ShareAttachmentsDefault from "ShareAttachments" /* 16066 */;
+import ShareEmbedDefault from "ShareEmbed" /* 16067 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ChannelRecord from "ChannelRecord" /* 4993 */;
-import ChannelStore from "ChannelStore" /* 4989 */;
-import PermissionStore from "PermissionStore" /* 5072 */;
+import ChannelRecord from "ChannelRecord" /* 4995 */;
+import ChannelStore from "ChannelStore" /* 4991 */;
+import PermissionStore from "PermissionStore" /* 5074 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5140 */;
+import createStyles from "createStyles" /* 5142 */;
 import size from "module_2" /* 2 */;
 
 let React, attachment_mimetypes, c4, channelId, closure_0, closure_1, closure_4, destination;
@@ -473,12 +473,12 @@ export default function ShareScreen(appEntryKey) {
     let tmp4Result;
     if (null != embed) {
       const obj = { attachments: sharedContent.attachments, isRevamp: true };
-      const items = [authStore4(ShareAttachmentsDefault, obj), ];
+      const items = [authStore3(ShareAttachmentsDefault, obj), ];
       embed = undefined;
       const tmp10 = ShareEmbedDefault;
-      const tmp4 = authStore5;
+      const tmp4 = authStore4;
       const tmp5 = closure_17;
-      const tmp6 = authStore4;
+      const tmp6 = authStore3;
       if (embed != null) {
         embed = tmp.embed;
       }

@@ -1,22 +1,22 @@
-// Module ID: 14341
-// Function ID: 14342
+// Module ID: 14367
+// Function ID: 14368
 // Name: GuildPowerupsCardFooter
-// Dependencies: [17, 21, 5140, 7401, 575, 5751, 7152, 1113, 2696, 14342, 14313, 10042, 2]
+// Dependencies: [17, 21, 5142, 7404, 575, 5753, 7155, 1113, 2696, 14368, 14339, 10048, 2]
 // Exports: GuildPowerupsCardFooter
 
-// Module 14341 (GuildPowerupsCardFooter)
+// Module 14367 (GuildPowerupsCardFooter)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import _modDef2696 from "module_2696" /* 2696 */;
-import Text_Text from "Text/Text" /* 5751 */;
-import CircleErrorIcon2 from "CircleErrorIcon" /* 7152 */;
-import CircleCheckIcon2 from "CircleCheckIcon" /* 7401 */;
-import BoostGemIcon2 from "BoostGemIcon" /* 10042 */;
-import getGuildPowerupFormattedDateStringDefault from "getGuildPowerupFormattedDateString" /* 14313 */;
-import entitlementExpirationDateToStringDefault from "entitlementExpirationDateToString" /* 14342 */;
+import Text_Text from "Text/Text" /* 5753 */;
+import CircleErrorIcon2 from "CircleErrorIcon" /* 7155 */;
+import CircleCheckIcon2 from "CircleCheckIcon" /* 7404 */;
+import BoostGemIcon2 from "BoostGemIcon" /* 10048 */;
+import getGuildPowerupFormattedDateStringDefault from "getGuildPowerupFormattedDateString" /* 14339 */;
+import entitlementExpirationDateToStringDefault from "entitlementExpirationDateToString" /* 14368 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5140 */;
+import createStyles from "createStyles" /* 5142 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;

@@ -1,23 +1,23 @@
-// Module ID: 6074
-// Function ID: 6075
+// Module ID: 6076
+// Function ID: 6077
 // Name: StreamQualityUtils
-// Dependencies: [19, 6075, 502, 5011, 5893, 1385, 1072, 5993, 1387, 5897, 1113, 504, 6076, 1252, 2]
+// Dependencies: [19, 6077, 502, 5013, 5895, 1385, 1072, 5995, 1387, 5899, 1113, 504, 6078, 1252, 2]
 // Exports: getFPSText, getMaxQuality, getPremiumRequirement, getResolutionText, isPremiumFPS, isPremiumRequirement, isPremiumResolution, trackStreamSettingsUpdate, useMaxQuality
 
-// Module 6074 (StreamQualityUtils)
+// Module 6076 (StreamQualityUtils)
 import Constants from "Constants" /* 1072 */;
 import intl3 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
-import Constants2 from "Constants" /* 5897 */;
-import getReportedStreamResolutionDefault from "getReportedStreamResolution" /* 6076 */;
+import Constants2 from "Constants" /* 5899 */;
+import getReportedStreamResolutionDefault from "getReportedStreamResolution" /* 6078 */;
 import react from "react" /* 19 */;
-import ApplicationStreamingSettingsStore from "ApplicationStreamingSettingsStore" /* 6075 */;
+import ApplicationStreamingSettingsStore from "ApplicationStreamingSettingsStore" /* 6077 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildStore from "GuildStore" /* 5011 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5893 */;
+import GuildStore from "GuildStore" /* 5013 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5895 */;
 import UserStore from "UserStore" /* 1385 */;
-import StreamSettingsConstants from "StreamSettingsConstants" /* 5993 */;
+import StreamSettingsConstants from "StreamSettingsConstants" /* 5995 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;

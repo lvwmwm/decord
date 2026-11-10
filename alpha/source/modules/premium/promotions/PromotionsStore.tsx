@@ -1,24 +1,24 @@
-// Module ID: 9714
-// Function ID: 9715
+// Module ID: 9720
+// Function ID: 9721
 // Name: PromotionsStore
-// Dependencies: [1231, 9715, 1385, 9716, 9756, 504, 9757, 9717, 9718, 572, 2]
+// Dependencies: [1231, 9721, 1385, 9722, 9762, 504, 9763, 9723, 9724, 572, 2]
 
-// Module 9714 (PromotionsStore)
+// Module 9720 (PromotionsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import MarketingSurfaceTypeUtils from "MarketingSurfaceTypeUtils" /* 9717 */;
-import selectActiveMarketingComponentDefault from "selectActiveMarketingComponent" /* 9757 */;
+import MarketingSurfaceTypeUtils from "MarketingSurfaceTypeUtils" /* 9723 */;
+import selectActiveMarketingComponentDefault from "selectActiveMarketingComponent" /* 9763 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
-import PromotionRecord from "PromotionRecord" /* 9715 */;
+import PromotionRecord from "PromotionRecord" /* 9721 */;
 import UserStore from "UserStore" /* 1385 */;
-import MarketingComponentRecord from "MarketingComponentRecord" /* 9716 */;
+import MarketingComponentRecord from "MarketingComponentRecord" /* 9722 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let closure_12, hasBogoReward;
 
 let tmp;
-const MarketingSurfaceType = tmp(9718);
+const MarketingSurfaceType = tmp(9724);
 function createEmptyPromotionsByType() {
   return { [closure_1_0(closure_1_2[4]).PromotionTypes.THIRD_PARTY]: {}, [closure_1_0(closure_1_2[4]).PromotionTypes.BOGO]: {}, [closure_1_0(closure_1_2[4]).PromotionTypes.THIRD_PARTY_DIRECT_FULFILLMENT]: {}, [closure_1_0(closure_1_2[4]).PromotionTypes.MARKETING_MOMENT]: {}, [closure_1_0(closure_1_2[4]).PromotionTypes.THIRD_PARTY_INBOUND]: {}, [closure_1_0(closure_1_2[4]).PromotionTypes.THIRD_PARTY_OUTBOUND]: {}, [closure_1_0(closure_1_2[4]).PromotionTypes.GIFT_PROMOTION]: {}, [closure_1_0(closure_1_2[4]).PromotionTypes.THIRD_PARTY_OUTBOUND_RECURRING]: {} };
 }

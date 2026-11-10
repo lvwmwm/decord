@@ -1,29 +1,29 @@
-// Module ID: 9137
-// Function ID: 9138
+// Module ID: 9143
+// Function ID: 9144
 // Name: AddMembersActionSheet
-// Dependencies: [5, 109, 32, 19, 17, 5052, 5046, 5011, 1385, 8016, 1083, 21, 5140, 575, 5077, 5735, 5780, 504, 9111, 5149, 1113, 1187, 5751, 9138, 5392, 7357, 9142, 6956, 8095, 9147, 5776, 6178, 9112, 5836, 5374, 5388, 7382, 5758, 2]
+// Dependencies: [5, 109, 32, 19, 17, 5054, 5048, 5013, 1385, 8020, 1083, 21, 5142, 575, 5079, 5737, 5782, 504, 9117, 5151, 1113, 1187, 5753, 9144, 5394, 7360, 9148, 6959, 8099, 9153, 5778, 6180, 9118, 5838, 5376, 5390, 7385, 5760, 2]
 // Exports: default
 
-// Module 9137 (AddMembersActionSheet)
+// Module 9143 (AddMembersActionSheet)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
 import intl9 from "intl" /* 1113 */;
-import PermissionUtilsAll from "PermissionUtils" /* 5077 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5149 */;
-import RegexUtilsDefault from "RegexUtils" /* 5780 */;
-import GuildUtilsDefault from "GuildUtils" /* 6956 */;
+import PermissionUtilsAll from "PermissionUtils" /* 5079 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5151 */;
+import RegexUtilsDefault from "RegexUtils" /* 5782 */;
+import GuildUtilsDefault from "GuildUtils" /* 6959 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildMemberStore from "GuildMemberStore" /* 5052 */;
-import GuildRoleStore from "GuildRoleStore" /* 5046 */;
-import GuildStore from "GuildStore" /* 5011 */;
+import GuildMemberStore from "GuildMemberStore" /* 5054 */;
+import GuildRoleStore from "GuildRoleStore" /* 5048 */;
+import GuildStore from "GuildStore" /* 5013 */;
 import UserStore from "UserStore" /* 1385 */;
-import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 8016 */;
+import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 8020 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5142 */;
 import size_mod from "module_2" /* 2 */;
 
 let c4, c5, closure_1, dependencyMap, row, user;
@@ -41,7 +41,7 @@ let obj4;
 let obj5;
 let size;
 let tmp10;
-const ChannelPermissionsUtilsAll = tmp10(9111);
+const ChannelPermissionsUtilsAll = tmp10(9117);
 function _toPropertyKey(obj) {
   let StringResult = obj;
   if (typeof obj === "object") {
@@ -134,7 +134,7 @@ class AddMembersBody {
     const tmp8 = pendingAdditions;
     let obj2 = { isKeyboardAwareOnAndroid: !emptyStateInActionSheet };
     let tmp10 = importAll;
-    const insets = pendingAdditions(5735)(obj2).insets;
+    const insets = pendingAdditions(5737)(obj2).insets;
     let obj3 = PermissionUtilsAll;
     let canEveryoneRoleResult = obj3.canEveryoneRole(Permissions.ADMINISTRATOR, guild);
     const tmp12 = guild;
@@ -216,11 +216,11 @@ class AddMembersBody {
       return obj;
     });
     if (emptyStateInActionSheet) {
-      BottomSheetScrollView = tmp12(5392).BottomSheetScrollView;
+      BottomSheetScrollView = tmp12(5394).BottomSheetScrollView;
     } else {
       BottomSheetScrollView = num3;
     }
-    const tmp12Result = tmp12(7357);
+    const tmp12Result = tmp12(7360);
     const obj9 = { style: tmp4.inputContainer, children: closure_17(tmp8Result, obj10) };
     obj10 = {
       accessibilityLabel: intl5.string(tmp12(1113).t["5h0QOP"]),
@@ -236,7 +236,7 @@ class AddMembersBody {
         if (tmp) {
           substr = str.slice(1);
         }
-        const members = requestMembers(id, substr, closure_15);
+        const members = requestMembers(id, substr, clientStatuses);
         closure_7(str);
         closure_5(tmp);
       },
@@ -249,7 +249,7 @@ class AddMembersBody {
       }
     };
     const tmp31 = emptyStateInActionSheet ? tmp12Result.BottomSheetFlashList : tmp12Result.FlashList;
-    tmp8Result = tmp8(9142);
+    tmp8Result = tmp8(9148);
     intl5 = tmp12(1113).intl;
     intl6 = tmp12(1113).intl;
     const items10 = [closure_17(c8, obj9), , ];
@@ -259,7 +259,7 @@ class AddMembersBody {
     if (canEveryoneRoleResult) {
       const obj11 = { style: tmp4.adminWarning, children: closure_17(InlineNotice, obj12) };
       obj12 = { type: "warning", message: intl7.string(tmp12(1113).t["5f3HIC"]), role: "status" };
-      InlineNotice = tmp12(8095).InlineNotice;
+      InlineNotice = tmp12(8099).InlineNotice;
       intl7 = tmp12(1113).intl;
       canEveryoneRoleResult = tmp34(tmp35, obj11);
     }
@@ -270,7 +270,7 @@ class AddMembersBody {
         if (0 === membersRows.length) {
           const obj13 = { children: closure_17(EmptyState, obj14) };
           const merged1 = Object.assign(merged);
-          obj14 = { Illustration: tmp12(9147).NoResultsAlt, style: items11, bodyStyle: tmp4.emptyStateText, body: intl8.format(tmp12(1113).t.ErpIY3, obj15) };
+          obj14 = { Illustration: tmp12(9153).NoResultsAlt, style: items11, bodyStyle: tmp4.emptyStateText, body: intl8.format(tmp12(1113).t.ErpIY3, obj15) };
           EmptyState = tmp12(1187).EmptyState;
           items11 = [tmp4.emptyState, ];
           if (emptyStateInActionSheet) {
@@ -515,7 +515,7 @@ export default function AddMembersActionSheet(channel) {
     }
     return getGuild(guildId);
   });
-  let str = pendingAdditions(5776)(channel, true);
+  let str = pendingAdditions(5778)(channel, true);
   if (str == null) {
     str = "";
   }
@@ -527,9 +527,9 @@ export default function AddMembersActionSheet(channel) {
     let num = 0;
     const tmp11 = 0 === Object.keys(pendingAdditions).length;
     let tmp12 = closure_17;
-    const BottomSheet = tmp5(5388).BottomSheet;
+    const BottomSheet = tmp5(5390).BottomSheet;
     let obj2 = { title: intl3.string(tmp5(1113).t.dMJ3Y6), subtitle: str, trailing: null };
-    const BottomSheetTitleHeader = tmp5(7382).BottomSheetTitleHeader;
+    const BottomSheetTitleHeader = tmp5(7385).BottomSheetTitleHeader;
     intl3 = tmp5(1113).intl;
     if (canSkip) {
       let obj7;

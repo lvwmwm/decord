@@ -1,18 +1,18 @@
-// Module ID: 13457
-// Function ID: 13458
+// Module ID: 13470
+// Function ID: 13471
 // Name: OutcomeStep
-// Dependencies: [32, 19, 5011, 11504, 13446, 21, 5140, 1113, 2530, 13443, 504, 7594, 13444, 13448, 8043, 6159, 575, 5751, 13452, 5758, 2]
+// Dependencies: [32, 19, 5013, 11513, 13460, 21, 5142, 1113, 2530, 13457, 504, 7597, 13458, 8045, 8047, 6161, 575, 5753, 13465, 5760, 2]
 // Exports: OutcomeStep
 
-// Module 13457 (OutcomeStep)
-import transitionToGuild from "transitionToGuild" /* 7594 */;
-import GameOrganizationJoinModalConstants from "GameOrganizationJoinModalConstants" /* 13446 */;
+// Module 13470 (OutcomeStep)
+import transitionToGuild from "transitionToGuild" /* 7597 */;
+import GameOrganizationJoinModalConstants from "GameOrganizationJoinModalConstants" /* 13460 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 5011 */;
-import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11504 */;
+import GuildStore from "GuildStore" /* 5013 */;
+import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11513 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5140 */;
+import createStyles from "createStyles" /* 5142 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -67,7 +67,7 @@ export function OutcomeStep(code) {
   code = code.code;
   let tmp = closure_12();
   let tmp2 = stateFromStores;
-  const tmp4 = stateFromStores(13443)(code);
+  const tmp4 = stateFromStores(13457)(code);
   let guildId;
   if (tmp4 != null) {
     guildId = tmp4.guildId;
@@ -117,7 +117,7 @@ export function OutcomeStep(code) {
     }
   }, items2);
   let displayNoun;
-  const tmp2Result = tmp2(13444);
+  const tmp2Result = tmp2(13458);
   if (tmp4 != null) {
     displayNoun = tmp4.displayNoun;
   }
@@ -202,32 +202,32 @@ export function OutcomeStep(code) {
     intl5 = tmp6(1113).intl;
     obj22 = obj20;
   } else {
-    const OTHER = tmp27.OTHER;
+    const OTHER = tmp26.OTHER;
     obj22 = { title: intl3.string(tmp2(2530).sXbaMb), cta: obj3 };
     intl3 = tmp6(1113).intl;
   }
   ({ subtitle, cta } = obj22);
   const title = obj22.title;
-  const tmp2Result2 = tmp2(13448);
-  const ModalContent = tmp6(8043).ModalContent;
+  const ModalScreen = tmp6(8045).ModalScreen;
+  const ModalContent = tmp6(8047).ModalContent;
   const obj23 = { spacing: tmp2(575).space.PX_8, children: items3 };
-  const Stack = tmp6(6159).Stack;
+  const Stack = tmp6(6161).Stack;
   items3 = [, ];
   const obj24 = { variant: "heading-xl/semibold", style: tmp.text, accessibilityRole: "header", children: title };
-  items3[0] = closure_10(guildId(5751).Text, obj24);
-  let tmp25Result = null != subtitle;
-  if (tmp25Result) {
+  items3[0] = closure_10(guildId(5753).Text, obj24);
+  let tmp24Result = null != subtitle;
+  if (tmp24Result) {
     const obj25 = { variant: "body-md/normal", color: "text-muted", style: tmp.text, children: subtitle };
-    tmp25Result = tmp25(tmp6(5751).Text, obj25);
+    tmp24Result = tmp24(tmp6(5753).Text, obj25);
   }
   const obj26 = { children: items4 };
-  items3[1] = tmp25Result;
+  items3[1] = tmp24Result;
   items4 = [, ];
   const obj27 = { children: closure_11(Stack, obj23) };
   items4[0] = closure_10(ModalContent, obj27);
-  const obj28 = { children: closure_10(guildId(5758).Button, obj29) };
-  const ModalFooter = tmp6(13452).ModalFooter;
+  const obj28 = { children: closure_10(guildId(5760).Button, obj29) };
+  const ModalFooter = tmp6(13465).ModalFooter;
   obj29 = { text: cta.text, size: "lg", onPress: cta.onPress, disabled: tmp9 };
   items4[1] = closure_10(ModalFooter, obj28);
-  return closure_11(tmp2Result2, obj26);
+  return closure_11(ModalScreen, obj26);
 }

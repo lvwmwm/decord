@@ -1,86 +1,82 @@
 // Module ID: 13363
 // Function ID: 13364
-// Dependencies: [13278, 13279, 13364, 13305, 13334, 13365, 13289, 13287, 13326]
+// Dependencies: [13288, 13291, 13320, 13306, 13319, 13340, 13310, 13311, 13297, 13328, 13305, 13304, 13292]
+// Exports: getTraceData
 
 // Module 13363
-import _mod13305 from "module_13305" /* 13305 */;
-import _mod13365 from "module_13365" /* 13365 */;
-import module_13334 from "module_13334" /* 13334 */;
+import _mod13297 from "module_13297" /* 13297 */;
+import _mod13304 from "module_13304" /* 13304 */;
+import BAGGAGE_HEADER_NAME from "BAGGAGE_HEADER_NAME" /* 13305 */;
+import _mod13310 from "module_13310" /* 13310 */;
+import _mod13311 from "module_13311" /* 13311 */;
+import _mod13319 from "module_13319" /* 13319 */;
+import _mod13328 from "module_13328" /* 13328 */;
+import _mod13340 from "module_13340" /* 13340 */;
+import registerSpanErrorInstrumentation from "module_13288" /* 13288 */;
+import "module_13291";
+import DEBUG_BUILD from "module_13320" /* 13320 */;
+import _browserPerformanceTimeOriginMode from "_browserPerformanceTimeOriginMode" /* 13306 */;
 
 
-export const captureConsoleIntegration = module_13334.defineIntegration(() => {
+export function getTraceData() {
+  let sampled;
+  let spanId;
+  let traceId;
   let obj = arg0;
   if (arg0 === undefined) {
     obj = {};
   }
-  let handled;
-  let CONSOLE_LEVELS = obj.levels;
-  if (!CONSOLE_LEVELS) {
-    let tmp = CONSOLE_LEVELS;
-    let tmp2 = handled;
-    CONSOLE_LEVELS = CONSOLE_LEVELS(handled[0]).CONSOLE_LEVELS;
-  }
-  handled = obj.handled;
-  let obj2 = {
-    name: "CaptureConsole",
-    setup(arg0) {
-      let closure_0 = arg0;
-      const tmp2 = handled;
-      const tmp = CONSOLE_LEVELS;
-      if ("console" in CONSOLE_LEVELS(handled[1]).GLOBAL_OBJ) {
-        let tmpResult = tmp(tmp2[2]);
-        let result = tmpResult.addConsoleInstrumentationHandler((arg0) => {
-          let args;
-          let level;
-          let obj3;
-          let tmpResult;
-          ({ args, level } = arg0);
-          let obj = _mod13305;
-          let hasItem = obj.getClient() === closure_0;
-          if (hasItem) {
-            let tmp4 = CONSOLE_LEVELS;
-            hasItem = CONSOLE_LEVELS.includes(level);
-          }
-          if (hasItem) {
-            let closure_2 = handled;
-            let obj2 = { level: tmpResult.severityLevelFromString(level), extra: obj3 };
-            obj3 = { arguments: args };
-            tmpResult = _mod13365;
-            const tmpResult2 = _mod13305;
-            tmpResult2.withScope((addEventProcessor) => {
-              addEventProcessor.addEventProcessor((arg0) => {
-                arg0.logger = "console";
-                const obj = args(level[6]);
-                obj2 = { handled, type: "console" };
-                const result = obj.addExceptionMechanism(arg0, obj2);
-                return arg0;
-              });
-              if ("assert" !== level) {
-                const found = args.find((item) => item instanceof Error);
-                const tmp12 = args;
-                if (found) {
-                  const tmp14Result = closure_2_0(closure_2_1[8]);
-                  tmp14Result.captureException(found, obj2);
-                } else {
-                  const tmp14Result2 = closure_2_0(closure_2_1[7]);
-                  const safeJoinResult = tmp14Result2.safeJoin(tmp12, " ");
-                  const obj4 = closure_2_0(closure_2_1[8]);
-                  obj4.captureMessage(safeJoinResult, obj2);
-                }
-              } else if (!args[0]) {
-                let obj = closure_2_0(closure_2_1[7]);
-                const _HermesInternal = HermesInternal;
-                const tmp4 = obj.safeJoin(args.slice(1), " ") || "console.assert";
-                const combined = "Assertion failed: " + tmp4;
-                addEventProcessor.setExtra("arguments", args.slice(1));
-                obj2 = closure_2_0(closure_2_1[8]);
-                obj2.captureMessage(combined, obj2);
-              }
-            });
-          }
-        });
+  const obj2 = _mod13319;
+  const client = obj2.getClient();
+  const obj3 = _mod13340;
+  if (obj3.isEnabled()) {
+    if (client) {
+      const tmpResult = _mod13310;
+      const mainCarrier = tmpResult.getMainCarrier();
+      const tmpResult8 = _mod13311;
+      const asyncContextStrategy = tmpResult8.getAsyncContextStrategy(mainCarrier);
+      if (asyncContextStrategy.getTraceData) {
+        return asyncContextStrategy.getTraceData(obj);
+      } else {
+        let spanToTraceHeaderResult;
+        let dynamicSamplingContextFromSpan;
+        let obj5;
+        const tmpResult9 = _mod13319;
+        const currentScope = tmpResult9.getCurrentScope();
+        let span = obj.span;
+        if (!span) {
+          const tmpResult10 = _mod13297;
+          span = tmpResult10.getActiveSpan();
+        }
+        if (span) {
+          const tmpResult11 = _mod13297;
+          spanToTraceHeaderResult = tmpResult11.spanToTraceHeader(span);
+        } else {
+          const propagationContext = currentScope.getPropagationContext();
+          ({ traceId, sampled, spanId } = propagationContext);
+          const tmpResult12 = _mod13304;
+          spanToTraceHeaderResult = tmpResult12.generateSentryTraceHeader(traceId, spanId, sampled);
+        }
+        const tmpResult13 = _mod13328;
+        if (span) {
+          dynamicSamplingContextFromSpan = tmpResult13.getDynamicSamplingContextFromSpan(span);
+        } else {
+          dynamicSamplingContextFromSpan = tmpResult13.getDynamicSamplingContextFromScope(client, currentScope);
+        }
+        const tmpResult14 = BAGGAGE_HEADER_NAME;
+        const result = tmpResult14.dynamicSamplingContextToSentryBaggageHeader(dynamicSamplingContextFromSpan);
+        const TRACEPARENT_REGEXP = tmp(13304).TRACEPARENT_REGEXP;
+        if (TRACEPARENT_REGEXP.test(spanToTraceHeaderResult)) {
+          obj5 = { "sentry-trace": spanToTraceHeaderResult, baggage: result };
+          const obj4 = { "sentry-trace": spanToTraceHeaderResult, baggage: result };
+        } else {
+          const logger = tmp(13292).logger;
+          logger.warn("Invalid sentry-trace data. Cannot generate trace data");
+          obj5 = {};
+        }
+        return obj5;
       }
     }
-  };
-  return obj2;
-});
+  }
+  return {};
+}

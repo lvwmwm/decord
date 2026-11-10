@@ -1,21 +1,21 @@
-// Module ID: 19229
-// Function ID: 19230
+// Module ID: 19258
+// Function ID: 19259
 // Name: useReferralProgramCoachmark
-// Dependencies: [32, 19, 17, 1072, 4986, 21, 5140, 5842, 19230, 5170, 4973, 8595, 7641, 1113, 575, 7635, 2]
+// Dependencies: [32, 19, 17, 1072, 4988, 21, 5142, 5844, 19259, 5172, 4975, 8601, 7644, 1113, 575, 7638, 2]
 // Exports: useReferralProgramCoachmark
 
-// Module 19229 (useReferralProgramCoachmark)
+// Module 19258 (useReferralProgramCoachmark)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl4 from "intl" /* 1113 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4986 */;
-import FastImageDefault from "FastImage" /* 5842 */;
-import AssetRegistryDefault from "AssetRegistry" /* 19230 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4988 */;
+import FastImageDefault from "FastImage" /* 5844 */;
+import AssetRegistryDefault from "AssetRegistry" /* 19259 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5140 */;
+import createStyles from "createStyles" /* 5142 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -52,7 +52,7 @@ export function useReferralProgramCoachmark(disabled) {
   if (isEligibleSenderForReferralProgram) {
     let items;
     if (!disabled) {
-      items = [tmp(4973).DismissibleContent.REFERRAL_TRIAL_MOBILE_SENDER_COACHMARK];
+      items = [tmp(4975).DismissibleContent.REFERRAL_TRIAL_MOBILE_SENDER_COACHMARK];
     }
     const tmp9 = _slicedToArray(tmp7(items), 2);
     _require = tmp10;

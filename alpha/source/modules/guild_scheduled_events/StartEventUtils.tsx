@@ -1,16 +1,16 @@
-// Module ID: 9183
-// Function ID: 9184
+// Module ID: 9189
+// Function ID: 9190
 // Name: StartEventUtils
-// Dependencies: [5, 4993, 4989, 5011, 4995, 1072, 9110, 38, 8022, 9046, 2]
+// Dependencies: [5, 4995, 4991, 5013, 4997, 1072, 9116, 38, 8026, 9052, 2]
 // Exports: preStartEventActions, setEventAsActive
 
-// Module 9183 (StartEventUtils)
+// Module 9189 (StartEventUtils)
 import Constants from "Constants" /* 1072 */;
-import ChannelRecord from "ChannelRecord" /* 4993 */;
+import ChannelRecord from "ChannelRecord" /* 4995 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 4989 */;
-import GuildStore from "GuildStore" /* 5011 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4995 */;
+import ChannelStore from "ChannelStore" /* 4991 */;
+import GuildStore from "GuildStore" /* 5013 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4997 */;
 import size from "module_2" /* 2 */;
 
 let permissionOverwrites;

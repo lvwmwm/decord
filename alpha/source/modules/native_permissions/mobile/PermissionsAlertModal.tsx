@@ -1,12 +1,12 @@
-// Module ID: 8034
-// Function ID: 8035
+// Module ID: 8038
+// Function ID: 8039
 // Name: PermissionsAlertModal
-// Dependencies: [19, 21, 6096, 6096, 1113, 2]
+// Dependencies: [19, 21, 6098, 6098, 1113, 2]
 // Exports: default
 
-// Module 8034 (PermissionsAlertModal)
+// Module 8038 (PermissionsAlertModal)
 import intl3 from "intl" /* 1113 */;
-import AlertModal2 from "AlertModal" /* 6096 */;
+import AlertModal2 from "AlertModal" /* 6098 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;

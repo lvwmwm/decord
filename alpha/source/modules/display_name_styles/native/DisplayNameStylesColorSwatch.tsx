@@ -1,16 +1,16 @@
-// Module ID: 16791
-// Function ID: 16792
+// Module ID: 16818
+// Function ID: 16819
 // Name: DisplayNameStylesColorSwatch
-// Dependencies: [17, 21, 5140, 575, 1396, 16792, 5715, 1090, 2]
+// Dependencies: [17, 21, 5142, 575, 1396, 16819, 5717, 1090, 2]
 // Exports: default
 
-// Module 16791 (DisplayNameStylesColorSwatch)
+// Module 16818 (DisplayNameStylesColorSwatch)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import DisplayNameEffect from "DisplayNameEffect" /* 1396 */;
-import LinearGradientDefault from "LinearGradient" /* 5715 */;
-import createStyles from "createStyles" /* 5140 */;
+import LinearGradientDefault from "LinearGradient" /* 5717 */;
+import createStyles from "createStyles" /* 5142 */;
 import size_mod from "module_2" /* 2 */;
 
 let size;

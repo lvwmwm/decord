@@ -1,16 +1,16 @@
-// Module ID: 8230
-// Function ID: 8231
+// Module ID: 8234
+// Function ID: 8235
 // Name: SafetyTipsRow
-// Dependencies: [19, 17, 21, 5140, 575, 7038, 5751, 2]
+// Dependencies: [19, 17, 21, 5142, 575, 7041, 5753, 2]
 // Exports: default
 
-// Module 8230 (SafetyTipsRow)
+// Module 8234 (SafetyTipsRow)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5751 */;
+import Text_Text from "Text/Text" /* 5753 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5140 */;
+import createStyles from "createStyles" /* 5142 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;

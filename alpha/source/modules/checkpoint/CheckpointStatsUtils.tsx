@@ -1,13 +1,13 @@
-// Module ID: 6569
-// Function ID: 6570
+// Module ID: 6571
+// Function ID: 6572
 // Name: CheckpointStatsUtils
-// Dependencies: [1404, 2150, 1113, 5003, 11, 2]
+// Dependencies: [1404, 2150, 1113, 5005, 11, 2]
 // Exports: formatCheckpointCompactNumber, formatCheckpointPeakHour, getCheckpointOdysseyCopies, getCheckpointTopPercent, getGuildAcronymCharacter, globalStatsFromServer, hasCheckpointEmojis, hasCheckpointGameDays, hasCheckpointGames, hasCheckpointGuilds, hasCheckpointMessages, hasCheckpointSidekick, hasCheckpointSquad, hasCheckpointVoiceMinutes, statsFromServer
 
-// Module 6569 (CheckpointStatsUtils)
+// Module 6571 (CheckpointStatsUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import StringUtils from "StringUtils" /* 2150 */;
-import GuildRecordUtils from "GuildRecordUtils" /* 5003 */;
+import GuildRecordUtils from "GuildRecordUtils" /* 5005 */;
 import UserRecord from "UserRecord" /* 1404 */;
 import size from "module_2" /* 2 */;
 

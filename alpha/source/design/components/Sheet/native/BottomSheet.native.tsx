@@ -1,27 +1,27 @@
-// Module ID: 5388
-// Function ID: 5389
+// Module ID: 5390
+// Function ID: 5391
 // Name: Sheet/BottomSheet
-// Dependencies: [32, 19, 17, 5389, 21, 5140, 575, 1377, 1627, 5390, 5391, 5392, 5714, 5715, 1092, 1493, 1652, 5719, 5154, 5720, 5721, 1705, 5723, 5725, 5734, 5310, 5737, 5738, 5199, 2]
+// Dependencies: [32, 19, 17, 5391, 21, 5142, 575, 1377, 1627, 5392, 5393, 5394, 5716, 5717, 1092, 1493, 1652, 5721, 5156, 5722, 5723, 1705, 5725, 5727, 5736, 5312, 5739, 5740, 5201, 2]
 // Exports: BottomSheet, useBottomSheetContainerStyle, useBottomSheetWidth
 
-// Module 5388 (Sheet/BottomSheet)
+// Module 5390 (Sheet/BottomSheet)
 import nativeDefault from "native" /* 575 */;
 import ConstantsIOS from "ConstantsIOS" /* 1092 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1493 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5390 */;
-import BottomSheetSnapPoints from "BottomSheetSnapPoints" /* 5391 */;
-import BottomSheetModal from "BottomSheetModal" /* 5392 */;
-import LinearGradientDefault from "LinearGradient" /* 5715 */;
-import ActionSheetHeaderBar from "ActionSheetHeaderBar" /* 5723 */;
-import Sheet_BottomSheetBackdrop from "Sheet/BottomSheetBackdrop" /* 5725 */;
+import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5392 */;
+import BottomSheetSnapPoints from "BottomSheetSnapPoints" /* 5393 */;
+import BottomSheetModal from "BottomSheetModal" /* 5394 */;
+import LinearGradientDefault from "LinearGradient" /* 5717 */;
+import ActionSheetHeaderBar from "ActionSheetHeaderBar" /* 5725 */;
+import Sheet_BottomSheetBackdrop from "Sheet/BottomSheetBackdrop" /* 5727 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 5389 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 5391 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5140 */;
+import createStyles from "createStyles" /* 5142 */;
 import size from "module_2" /* 2 */;
 
 let Platform;
@@ -40,21 +40,21 @@ let metroRequire;
 let tmp2;
 let tmp4;
 let unpackModuleId;
-const BottomSheetModalDefault = tmp2(5392);
-const NavigatorConstants = tmp4(5714);
-const NavScrim = tmp2(5734);
+const BottomSheetModalDefault = tmp2(5394);
+const NavigatorConstants = tmp4(5716);
+const NavScrim = tmp2(5736);
 function Background(arg0) {
   const obj = {};
   const merged = Object.assign(arg0);
-  return authStore4(metroRequire, obj);
+  return authStore3(metroRequire, obj);
 }
 function GradientBackground(arg0) {
   let obj2;
-  const obj = { children: authStore4(metroRequire, obj2) };
+  const obj = { children: authStore3(metroRequire, obj2) };
   const tmp = closure_18(false);
   const merged = Object.assign(arg0);
   obj2 = { style: tmp.backgroundOverlay };
-  return authStore4(metroRequire, obj);
+  return authStore3(metroRequire, obj);
 }
 function BorderGradientBackground(borderGradient) {
   let items;
@@ -71,10 +71,10 @@ function BorderGradientBackground(borderGradient) {
   const merged1 = Object.assign(merged);
   const obj2 = { style: tmp2.gradient, start: ConstantsIOS.VerticalGradient.START, end: ConstantsIOS.VerticalGradient.END, colors: borderGradient };
   const tmp4 = LinearGradientDefault;
-  items = [authStore4(tmp4, obj2), ];
+  items = [authStore3(tmp4, obj2), ];
   const obj3 = { style: items1 };
   items1 = [tmp2.gradientInnerFill, { backgroundColor }];
-  items[1] = authStore4(metroRequire, obj3);
+  items[1] = authStore3(metroRequire, obj3);
   return closure_17(metroRequire, obj);
 }
 ({ StyleSheet: hasOwnProperty, View: metroRequire, Platform } = react_native);
@@ -296,7 +296,7 @@ function ScrollableBottomSheetInner(windowDimensions) {
     }
   }, items1);
   const obj3 = { ref, enableDynamicSizing: false, contentHeight, snapPoints: memo, onChange: callback, children: items3 };
-  const tmp9 = authStore4(metroRequire, obj2);
+  const tmp9 = authStore3(metroRequire, obj2);
   const tmp2Result = BottomSheetModalDefault;
   const merged1 = Object.assign(merged);
   items3 = [tmp9, extraContent];
@@ -533,7 +533,7 @@ export function BottomSheet(scrollable) {
         }
       }
     };
-    return authStore4(ActionSheetHeaderBar.ActionSheetHeaderBar, obj);
+    return authStore3(ActionSheetHeaderBar.ActionSheetHeaderBar, obj);
   }, items10);
   const items12 = [footer];
   const callback3 = obj.useCallback((animatedIndex) => {
@@ -543,7 +543,7 @@ export function BottomSheet(scrollable) {
     items = [hasOwnProperty.absoluteFill, animatedIndex.style];
     items1 = [, ];
     const obj2 = { animatedIndex: animatedIndex.animatedIndex, opacity: backdropOpacity };
-    items1[0] = authStore4(Sheet_BottomSheetBackdrop.BottomSheetBackdrop, obj2);
+    items1[0] = authStore3(Sheet_BottomSheetBackdrop.BottomSheetBackdrop, obj2);
     items1[1] = backdropChildren;
     return closure_17(metroRequire, obj);
   }, items11);
@@ -556,7 +556,7 @@ export function BottomSheet(scrollable) {
     if (footer == null) {
       tmpResult = tmp(NavScrim.NavScrim, {});
     }
-    return authStore4(BottomSheetFooter, obj);
+    return authStore3(BottomSheetFooter, obj);
   }, items12);
   const tmp32 = tmp2(dismissAccessibilityLabel[15])({ ignoreKeyboard: true });
   const width = tmp32.width;
@@ -582,7 +582,7 @@ export function BottomSheet(scrollable) {
     if (null != borderGradient) {
       const obj = { borderGradient: tmp };
       const merged = Object.assign(arg0);
-      tmp2 = authStore4(BorderGradientBackground, obj);
+      tmp2 = authStore3(BorderGradientBackground, obj);
     }
     return tmp2;
   }, items14);

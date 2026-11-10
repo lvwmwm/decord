@@ -1,26 +1,26 @@
-// Module ID: 19039
-// Function ID: 19040
+// Module ID: 19068
+// Function ID: 19069
 // Name: SwipeForMemberListWrapper
-// Dependencies: [32, 19, 17, 9915, 9903, 1072, 21, 3, 5140, 575, 5889, 11383, 5317, 1652, 5721, 5369, 7270, 5323, 11700, 1108, 18393, 8915, 18404, 12230, 5315, 5314, 6154, 1500, 18963, 14232, 18397, 18402, 18399, 5420, 19040, 13952, 18956, 10855, 5738, 19041, 2]
+// Dependencies: [32, 19, 17, 9921, 9909, 1072, 21, 3, 5142, 575, 5891, 11392, 5319, 1652, 5723, 5371, 7273, 5325, 11709, 1108, 18422, 8921, 18433, 12239, 5317, 5316, 6156, 1500, 18992, 14258, 18426, 18431, 18428, 5422, 19069, 13977, 18985, 10864, 5740, 19070, 2]
 // Exports: default
 
-// Module 19039 (SwipeForMemberListWrapper)
+// Module 19068 (SwipeForMemberListWrapper)
 import LoggerDefault from "Logger" /* 3 */;
 import nativeDefault from "native" /* 575 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1108 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5314 */;
-import RootNavigationRef from "RootNavigationRef" /* 5315 */;
-import useChatLayout from "useChatLayout" /* 5317 */;
-import ChatInputUtils from "ChatInputUtils" /* 5323 */;
-import react_native from "react-native" /* 9903 */;
-import getJankSurfaceName from "getJankSurfaceName" /* 18404 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5316 */;
+import RootNavigationRef from "RootNavigationRef" /* 5317 */;
+import useChatLayout from "useChatLayout" /* 5319 */;
+import ChatInputUtils from "ChatInputUtils" /* 5325 */;
+import react_native from "react-native" /* 9909 */;
+import getJankSurfaceName from "getJankSurfaceName" /* 18433 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
-import ChannelDetailsStore from "ChannelDetailsStore" /* 9915 */;
+import ChannelDetailsStore from "ChannelDetailsStore" /* 9921 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5142 */;
 import size from "module_2" /* 2 */;
 
 let navigation;
@@ -67,7 +67,6 @@ export default function _default(channelId) {
   let children;
   let closure_4;
   let closure_5;
-  let gesture;
   let isDragging;
   let isNavigationTTIVisible;
   let items30;

@@ -1,20 +1,20 @@
-// Module ID: 15592
-// Function ID: 15593
+// Module ID: 15620
+// Function ID: 15621
 // Name: PremiumMarketingButtonActions
-// Dependencies: [9714, 1387, 1072, 9723, 15593, 7683, 7669, 15594, 7412, 7795, 7635, 2]
+// Dependencies: [9720, 1387, 1072, 9729, 15621, 7686, 7672, 15622, 7415, 7798, 7638, 2]
 // Exports: getButtonActionHandler
 
-// Module 15592 (PremiumMarketingButtonActions)
+// Module 15620 (PremiumMarketingButtonActions)
 import PremiumConstants from "PremiumConstants" /* 1387 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7412 */;
-import openUserSettings from "openUserSettings" /* 7635 */;
-import ProductIds from "ProductIds" /* 7669 */;
-import openPremiumPlanSelectionActionSheetDefault from "openPremiumPlanSelectionActionSheet" /* 7683 */;
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7795 */;
-import cta_button from "cta_button" /* 9723 */;
-import navigateToSocialLayerStorefrontDefault from "navigateToSocialLayerStorefront" /* 15593 */;
-import showMarketingMomentRewardScreen from "showMarketingMomentRewardScreen" /* 15594 */;
-import PromotionsStore from "PromotionsStore" /* 9714 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7415 */;
+import openUserSettings from "openUserSettings" /* 7638 */;
+import ProductIds from "ProductIds" /* 7672 */;
+import openPremiumPlanSelectionActionSheetDefault from "openPremiumPlanSelectionActionSheet" /* 7686 */;
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7798 */;
+import cta_button from "cta_button" /* 9729 */;
+import navigateToSocialLayerStorefrontDefault from "navigateToSocialLayerStorefront" /* 15621 */;
+import showMarketingMomentRewardScreen from "showMarketingMomentRewardScreen" /* 15622 */;
+import PromotionsStore from "PromotionsStore" /* 9720 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 

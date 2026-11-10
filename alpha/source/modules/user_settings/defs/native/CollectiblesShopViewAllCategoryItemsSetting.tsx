@@ -1,12 +1,12 @@
-// Module ID: 18213
-// Function ID: 18214
+// Module ID: 18242
+// Function ID: 18243
 // Name: CollectiblesShopViewAllCategoryItemsSetting
-// Dependencies: [1072, 11685, 17064, 18214, 2]
+// Dependencies: [1072, 11694, 17091, 18243, 2]
 
-// Module 18213 (CollectiblesShopViewAllCategoryItemsSetting)
+// Module 18242 (CollectiblesShopViewAllCategoryItemsSetting)
 import Constants from "Constants" /* 1072 */;
-import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 17064 */;
-import SettingBuilders from "SettingBuilders" /* 11685 */;
+import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 17091 */;
+import SettingBuilders from "SettingBuilders" /* 11694 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

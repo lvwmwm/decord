@@ -1,23 +1,23 @@
-// Module ID: 12615
-// Function ID: 12616
+// Module ID: 12628
+// Function ID: 12629
 // Name: HeroMedia
-// Dependencies: [19, 5141, 1498, 21, 5140, 11648, 12005, 504, 7391, 12589, 8947, 1113, 2]
+// Dependencies: [19, 5143, 1498, 21, 5142, 11657, 12014, 504, 7394, 12602, 8953, 1113, 2]
 // Exports: default, useHeroMediaDimensions
 
-// Module 12615 (HeroMedia)
+// Module 12628 (HeroMedia)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1498 */;
-import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7391 */;
-import useDefaultAppLauncherWidth from "useDefaultAppLauncherWidth" /* 11648 */;
-import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground" /* 12005 */;
+import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7394 */;
+import useDefaultAppLauncherWidth from "useDefaultAppLauncherWidth" /* 11657 */;
+import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground" /* 12014 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5141 */;
-import createStyles from "createStyles" /* 5140 */;
+import AccessibilityStore from "AccessibilityStore" /* 5143 */;
+import createStyles from "createStyles" /* 5142 */;
 import size_mod from "module_2" /* 2 */;
 
 let tmp6;
-const getPreviewVideoAssetUrlDefault = tmp6(12589);
+const getPreviewVideoAssetUrlDefault = tmp6(12602);
 const DEFAULT_CONTENT_PADDING = AppLauncherNativeConstants.DEFAULT_CONTENT_PADDING;
 const jsx = Fragment.jsx;
 let closure_6 = createStyles.createStyles({ mediaBackground: { backgroundColor: "black" } });

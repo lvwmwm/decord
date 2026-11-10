@@ -1,11 +1,11 @@
-// Module ID: 13411
-// Function ID: 13412
+// Module ID: 13425
+// Function ID: 13426
 // Name: showVoiceChannelCall
-// Dependencies: [13408, 2]
+// Dependencies: [13422, 2]
 // Exports: default
 
-// Module 13411 (showVoiceChannelCall)
-import openChannelCallModalForChannelIdDefault from "openChannelCallModalForChannelId" /* 13408 */;
+// Module 13425 (showVoiceChannelCall)
+import openChannelCallModalForChannelIdDefault from "openChannelCallModalForChannelId" /* 13422 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/voice_channel_apps/showVoiceChannelCall.native.tsx");

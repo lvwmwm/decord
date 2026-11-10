@@ -1,26 +1,26 @@
-// Module ID: 19995
-// Function ID: 19996
+// Module ID: 20023
+// Function ID: 20024
 // Name: FamilyKeysSpotIllustration
-// Dependencies: [19, 21, 19996, 19997, 19998, 7135, 5842, 2]
+// Dependencies: [19, 21, 20024, 20025, 20026, 7138, 5844, 2]
 // Exports: FamilyKeysSpotIllustration
 
-// Module 19995 (FamilyKeysSpotIllustration)
+// Module 20023 (FamilyKeysSpotIllustration)
 import Fragment from "Fragment" /* 21 */;
-import react_native from "react-native" /* 7135 */;
-import _modDef19996 from "module_19996" /* 19996 */;
-import _modDef19997 from "module_19997" /* 19997 */;
-import _modDef19998 from "module_19998" /* 19998 */;
+import react_native from "react-native" /* 7138 */;
+import _modDef20024 from "module_20024" /* 20024 */;
+import _modDef20025 from "module_20025" /* 20025 */;
+import _modDef20026 from "module_20026" /* 20026 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef19996 };
+let obj2 = { uri: _modDef20024 };
 obj[1] = obj2;
-let obj3 = { uri: _modDef19997 };
+let obj3 = { uri: _modDef20025 };
 obj[2] = obj3;
-obj[3] = { uri: _modDef19998 };
-({ uri: _modDef19998 });
+obj[3] = { uri: _modDef20026 };
+({ uri: _modDef20026 });
 let size = size_mod;
 const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/FamilyKeysSpotIllustration.native.tsx");
 

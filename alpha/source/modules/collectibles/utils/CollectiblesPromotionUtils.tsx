@@ -1,13 +1,13 @@
-// Module ID: 15300
-// Function ID: 15301
+// Module ID: 15325
+// Function ID: 15326
 // Name: CollectiblesPromotionUtils
-// Dependencies: [9568, 15301, 9639, 2]
+// Dependencies: [9574, 15326, 9645, 2]
 // Exports: getPromotionForCollectiblesProduct
 
-// Module 15300 (CollectiblesPromotionUtils)
-import StorefrontCollectiblesTypes from "StorefrontCollectiblesTypes" /* 9568 */;
-import CollectiblesTargetedOfferPromotionUtils from "CollectiblesTargetedOfferPromotionUtils" /* 9639 */;
-import CollectiblesCollectAndClaimPromotionUtils from "CollectiblesCollectAndClaimPromotionUtils" /* 15301 */;
+// Module 15325 (CollectiblesPromotionUtils)
+import StorefrontCollectiblesTypes from "StorefrontCollectiblesTypes" /* 9574 */;
+import CollectiblesTargetedOfferPromotionUtils from "CollectiblesTargetedOfferPromotionUtils" /* 9645 */;
+import CollectiblesCollectAndClaimPromotionUtils from "CollectiblesCollectAndClaimPromotionUtils" /* 15326 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/collectibles/utils/CollectiblesPromotionUtils.tsx");

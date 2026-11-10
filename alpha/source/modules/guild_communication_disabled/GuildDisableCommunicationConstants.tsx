@@ -1,10 +1,10 @@
-// Module ID: 5054
-// Function ID: 5055
+// Module ID: 5056
+// Function ID: 5057
 // Name: GuildDisableCommunicationConstants
 // Dependencies: [1072, 1113, 2185, 2]
 // Exports: getDisableCommunicationDurationOptions
 
-// Module 5054 (GuildDisableCommunicationConstants)
+// Module 5056 (GuildDisableCommunicationConstants)
 import Constants from "Constants" /* 1072 */;
 import intl7 from "intl" /* 1113 */;
 import HelpdeskUtils from "HelpdeskUtils" /* 2185 */;

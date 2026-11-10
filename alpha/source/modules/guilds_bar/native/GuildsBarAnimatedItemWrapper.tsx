@@ -1,20 +1,20 @@
-// Module ID: 18704
-// Function ID: 18705
+// Module ID: 18733
+// Function ID: 18734
 // Name: GuildsBarAnimatedItemWrapper
-// Dependencies: [19, 5768, 18692, 21, 5140, 575, 5724, 5199, 5761, 1705, 1652, 18705, 18417, 18420, 1113, 5149, 18706, 7023, 9593, 2]
+// Dependencies: [19, 5770, 18721, 21, 5142, 575, 5726, 5201, 1652, 5763, 1705, 18734, 18446, 18449, 1113, 5151, 18735, 7026, 9599, 2]
 // Exports: default, useGuildsBarAnimatedWrapperStyles
 
-// Module 18704 (GuildsBarAnimatedItemWrapper)
+// Module 18733 (GuildsBarAnimatedItemWrapper)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5149 */;
-import native from "native" /* 5199 */;
-import useToken from "useToken" /* 5724 */;
-import react_native from "react-native" /* 5768 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5151 */;
+import native from "native" /* 5201 */;
+import useToken from "useToken" /* 5726 */;
+import react_native from "react-native" /* 5770 */;
 import react from "react" /* 19 */;
-import GuildsBarConstants from "GuildsBarConstants" /* 18692 */;
+import GuildsBarConstants from "GuildsBarConstants" /* 18721 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5142 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -27,72 +27,91 @@ let metroImportDefault;
 let metroRequire;
 class UnreadIndicator {
   constructor(selected) {
+    let animatedStyle;
     let id;
-    let num;
     let sharedId;
-    let tmp12;
-    let tmp13;
-    let tmp14;
-    let tmp15;
+    let tmp10;
     let tmp16;
     let tmp17;
     let tmp18;
+    let tmp19;
     let tmp20;
     let tmp21;
     let tmp22;
-    let tmp23;
     let tmp24;
     let tmp25;
     let tmp26;
+    let tmp27;
+    let tmp28;
+    let tmp29;
+    let tmp30;
+    let tmp9;
     let transitionState;
     let unreadIndicator;
     ({ sharedId, id, transitionState } = selected);
     selected = selected.selected;
     if (transitionState === undefined) {
       let tmp = transitionState;
-      transitionState = transitionState(num[7]).TransitionStates.MOUNTED;
+      transitionState = transitionState(animatedStyle[7]).TransitionStates.MOUNTED;
     }
     const cleanUp = selected.cleanUp;
     importDefault = undefined;
-    num = undefined;
-    let obj = transitionState(num[6]);
+    animatedStyle = undefined;
+    let num;
+    let obj = transitionState(animatedStyle[6]);
     const token = obj.useToken(require("native").modules.mobile.GUILD_BAR_ITEM_SIZE);
     const tmp7 = closure_12(closure_7());
     const tmp5 = importDefault;
     importDefault = tmp7;
+    let obj2 = transitionState(animatedStyle[6]);
+    const token1 = obj2.useToken(require("native").colors.TEXT_STRONG);
+    let obj3 = transitionState(animatedStyle[8]);
+    let items = [closure_14, token1];
+    let c0;
+    [tmp9, tmp10] = items;
+    class GuildsBarAnimatedItemWrapperTsx1 {
+      constructor() {
+        return { backgroundColor };
+      }
+    }
+    const items1 = [tmp10];
+    GuildsBarAnimatedItemWrapperTsx1.__closure = items1;
+    GuildsBarAnimatedItemWrapperTsx1.__workletHash = 8131945779231;
+    GuildsBarAnimatedItemWrapperTsx1.__initData = tmp9;
+    animatedStyle = obj3.useAnimatedStyle(GuildsBarAnimatedItemWrapperTsx1);
     num = 8;
-    const MOUNTED = transitionState(num[7]).TransitionStates.MOUNTED;
+    const MOUNTED = tmp3(tmp4[7]).TransitionStates.MOUNTED;
     if (selected) {
       num = 8;
-      if (transitionState !== transitionState(num[7]).TransitionStates.YEETED) {
+      if (transitionState !== transitionState(animatedStyle[7]).TransitionStates.YEETED) {
         num = 40;
       }
     }
-    let items = [num, transitionState, tmp7.unreadIndicator];
-    const items1 = [closure_14, transitionState === MOUNTED, sharedId, id, , , ];
-    const style = react.useMemo(() => {
-      const items = [unreadIndicator.unreadIndicator, ];
+    const items2 = [num, transitionState, tmp7.unreadIndicator, animatedStyle];
+    const items3 = [closure_15, transitionState === MOUNTED, sharedId, id, , , ];
+    const style = num.useMemo(() => {
+      const items = [unreadIndicator.unreadIndicator, animatedStyle, ];
       const obj = { height: num, marginTop: num / 2 * -1, marginLeft: num };
       num = 0;
       if (transitionState === native.TransitionStates.YEETED) {
         num = -4;
       }
-      items[1] = obj;
+      items[2] = obj;
       return items;
-    }, items);
-    const useCallback = react.useCallback;
-    items1[4] = transitionState(num[8]).withSpring;
-    items1[5] = closure_11;
-    items1[6] = token;
-    let c0;
+    }, items2);
+    const useCallback = num.useCallback;
+    items3[4] = transitionState(animatedStyle[9]).withSpring;
+    items3[5] = closure_11;
+    items3[6] = token;
+    c0 = undefined;
     let c1;
     let c2;
     let c3;
     let c4;
     let c5;
-    [tmp12, tmp13, tmp14, tmp15, tmp16, tmp17, tmp18] = items1;
-    const tmp9 = react;
-    class GuildsBarAnimatedItemWrapperTsx1 {
+    [tmp16, tmp17, tmp18, tmp19, tmp20, tmp21, tmp22] = items3;
+    const tmp13 = num;
+    class GuildsBarAnimatedItemWrapperTsx2 {
       constructor(targetOriginY) {
         let obj3;
         let obj4;
@@ -109,28 +128,28 @@ class UnreadIndicator {
         return obj3;
       }
     }
-    const items2 = [tmp13, tmp14, tmp15, tmp16, tmp17, tmp18];
-    GuildsBarAnimatedItemWrapperTsx1.__closure = items2;
-    GuildsBarAnimatedItemWrapperTsx1.__workletHash = 14383411265202;
-    GuildsBarAnimatedItemWrapperTsx1.__initData = tmp12;
-    const items3 = [transitionState === MOUNTED, sharedId, id, token];
-    const items4 = [closure_15, , , , , , ];
-    const entering = useCallback(GuildsBarAnimatedItemWrapperTsx1, items3);
-    const useCallback2 = tmp9.useCallback;
-    items4[1] = transitionState(num[8]).withSpring;
-    items4[2] = closure_11;
-    items4[3] = transitionState;
-    items4[4] = transitionState(num[7]).TransitionStates;
-    items4[5] = cleanUp;
-    items4[6] = transitionState(num[9]).scheduleOnRN;
+    const items4 = [tmp17, tmp18, tmp19, tmp20, tmp21, tmp22];
+    GuildsBarAnimatedItemWrapperTsx2.__closure = items4;
+    GuildsBarAnimatedItemWrapperTsx2.__workletHash = 2950744618769;
+    GuildsBarAnimatedItemWrapperTsx2.__initData = tmp16;
+    const items5 = [transitionState === MOUNTED, sharedId, id, token];
+    const items6 = [closure_16, , , , , , ];
+    const entering = useCallback(GuildsBarAnimatedItemWrapperTsx2, items5);
+    const useCallback2 = tmp13.useCallback;
+    items6[1] = transitionState(animatedStyle[9]).withSpring;
+    items6[2] = closure_11;
+    items6[3] = transitionState;
+    items6[4] = transitionState(animatedStyle[7]).TransitionStates;
+    items6[5] = cleanUp;
+    items6[6] = transitionState(animatedStyle[10]).scheduleOnRN;
     c0 = undefined;
     c1 = undefined;
     c2 = undefined;
     c3 = undefined;
     c4 = undefined;
     c5 = undefined;
-    [tmp20, tmp21, tmp22, tmp23, tmp24, tmp25, tmp26] = items4;
-    class GuildsBarAnimatedItemWrapperTsx2 {
+    [tmp24, tmp25, tmp26, tmp27, tmp28, tmp29, tmp30] = items6;
+    class GuildsBarAnimatedItemWrapperTsx3 {
       constructor(arg0) {
         obj = { animations: null, initialValues: null, callback: null };
         obj1 = { originY: closure_0(selected.targetOriginY, closure_1, "animate-always"), originX: closure_0(selected.targetOriginX, closure_1, "animate-always"), height: closure_0(selected.targetHeight, closure_1, "animate-always") };
@@ -145,13 +164,13 @@ class UnreadIndicator {
         return obj;
       }
     }
-    const items5 = [tmp21, tmp22, tmp23, tmp24, tmp25, tmp26];
-    GuildsBarAnimatedItemWrapperTsx2.__closure = items5;
-    GuildsBarAnimatedItemWrapperTsx2.__workletHash = 14169006071008;
-    GuildsBarAnimatedItemWrapperTsx2.__initData = tmp20;
-    const items6 = [transitionState, cleanUp];
-    const layout = useCallback2(GuildsBarAnimatedItemWrapperTsx2, items6);
-    return closure_8(tmp5(num[10]).View, { collapsable: false, entering, layout, style, pointerEvents: "none" });
+    const items7 = [tmp25, tmp26, tmp27, tmp28, tmp29, tmp30];
+    GuildsBarAnimatedItemWrapperTsx3.__closure = items7;
+    GuildsBarAnimatedItemWrapperTsx3.__workletHash = 3173579933441;
+    GuildsBarAnimatedItemWrapperTsx3.__initData = tmp24;
+    const items8 = [transitionState, cleanUp];
+    const layout = useCallback2(GuildsBarAnimatedItemWrapperTsx3, items8);
+    return closure_8(tmp5(animatedStyle[8]).View, { collapsable: false, entering, layout, style, pointerEvents: "none" });
   }
 }
 function renderUnreadIndicator(arg0, sharedId, transitionState, cleanUp) {
@@ -171,7 +190,7 @@ const authStore2 = createStyles.createStyles(() => {
     num = 56;
   }
   const obj = { draggedElement: { opacity: 0 }, selectedBackgroundOverlay: { position: "absolute", top: 0, left: 0, right: 0, bottom: 0 }, container: { position: "relative", overflow: "visible" }, unreadIndicator: size, expandedChildrenWrapper: rect };
-  size = { position: "absolute", top: num / 2, left: -4, height: 8, width: 8, borderRadius: nativeDefault.radii.xs, backgroundColor: nativeDefault.colors.TEXT_STRONG };
+  size = { position: "absolute", top: num / 2, left: -4, height: 8, width: 8, borderRadius: nativeDefault.radii.xs };
   rect = { position: "absolute", left: num + 16, top: 0, right: 8, height: num, display: "flex", flexDirection: "row", alignItems: "center" };
   return obj;
 });
@@ -198,15 +217,17 @@ let closure_13 = createStyles.createStyles((arg0, arg1, width, height) => {
   }
   return obj;
 });
-let closure_14 = { code: "(function GuildsBarAnimatedItemWrapperTsx1(values){let[disableEntering,sharedId,id,withSpring,BAR_SPRING_PHYSICS,guildItemSize]=this.__closure;if(disableEntering||sharedId!=null&&sharedId.get()!==id){return{animations:{},initialValues:{}};}return{animations:{originY:withSpring(values.targetOriginY,BAR_SPRING_PHYSICS,'animate-always'),originX:withSpring(values.targetOriginX,BAR_SPRING_PHYSICS,'animate-always'),height:withSpring(values.targetHeight,BAR_SPRING_PHYSICS,'animate-always')},initialValues:{height:8,originY:guildItemSize/2,originX:-12}};})" };
-let closure_15 = { code: "(function GuildsBarAnimatedItemWrapperTsx2(values){let[withSpring,BAR_SPRING_PHYSICS,transitionState,TransitionStates,cleanUp,scheduleOnRN]=this.__closure;return{animations:{originY:withSpring(values.targetOriginY,BAR_SPRING_PHYSICS,'animate-always'),originX:withSpring(values.targetOriginX,BAR_SPRING_PHYSICS,'animate-always'),height:withSpring(values.targetHeight,BAR_SPRING_PHYSICS,'animate-always')},initialValues:{height:values.currentHeight,originY:values.currentOriginY,originX:values.currentOriginX},callback:function(finished){if(transitionState===TransitionStates.YEETED&&finished&&cleanUp!=null){scheduleOnRN(cleanUp);}}};})" };
-let closure_18 = { code: "(function GuildsBarAnimatedItemWrapperTsx3(){let[withSpring,circle,guildItemSelectedBorderRadius,guildItemSize,CORNER_SPRING_PHYSICS]=this.__closure;return{borderRadius:withSpring(!circle?guildItemSelectedBorderRadius:guildItemSize/2,CORNER_SPRING_PHYSICS,'animate-always')};})" };
+let closure_14 = { code: "(function GuildsBarAnimatedItemWrapperTsx1(){let[indicatorColor]=this.__closure;return{backgroundColor:indicatorColor};})" };
+let closure_15 = { code: "(function GuildsBarAnimatedItemWrapperTsx2(values){let[disableEntering,sharedId,id,withSpring,BAR_SPRING_PHYSICS,guildItemSize]=this.__closure;if(disableEntering||sharedId!=null&&sharedId.get()!==id){return{animations:{},initialValues:{}};}return{animations:{originY:withSpring(values.targetOriginY,BAR_SPRING_PHYSICS,'animate-always'),originX:withSpring(values.targetOriginX,BAR_SPRING_PHYSICS,'animate-always'),height:withSpring(values.targetHeight,BAR_SPRING_PHYSICS,'animate-always')},initialValues:{height:8,originY:guildItemSize/2,originX:-12}};})" };
+let closure_16 = { code: "(function GuildsBarAnimatedItemWrapperTsx3(values){let[withSpring,BAR_SPRING_PHYSICS,transitionState,TransitionStates,cleanUp,scheduleOnRN]=this.__closure;return{animations:{originY:withSpring(values.targetOriginY,BAR_SPRING_PHYSICS,'animate-always'),originX:withSpring(values.targetOriginX,BAR_SPRING_PHYSICS,'animate-always'),height:withSpring(values.targetHeight,BAR_SPRING_PHYSICS,'animate-always')},initialValues:{height:values.currentHeight,originY:values.currentOriginY,originX:values.currentOriginX},callback:function(finished){if(transitionState===TransitionStates.YEETED&&finished&&cleanUp!=null){scheduleOnRN(cleanUp);}}};})" };
+let closure_19 = { code: "(function GuildsBarAnimatedItemWrapperTsx4(){let[withSpring,circle,guildItemSelectedBorderRadius,guildItemSize,CORNER_SPRING_PHYSICS]=this.__closure;return{borderRadius:withSpring(!circle?guildItemSelectedBorderRadius:guildItemSize/2,CORNER_SPRING_PHYSICS,'animate-always')};})" };
 let size = size_mod;
 let result = size.fileFinishedImporting("modules/guilds_bar/native/GuildsBarAnimatedItemWrapper.tsx");
 
 export default function GuildsBarAnimatedItemWrapper(id) {
   let children;
   let circle;
+  let closure_18;
   let config;
   let cutouts;
   let entering;
@@ -223,7 +244,6 @@ export default function GuildsBarAnimatedItemWrapper(id) {
   let label;
   let layout;
   let obj6;
-  let ref;
   let str;
   let style;
   let tmp10;
@@ -272,9 +292,9 @@ export default function GuildsBarAnimatedItemWrapper(id) {
   }
   const sharedId = id.sharedId;
   flag2 = undefined;
+  let ref;
   renderItem = undefined;
-  closure_18 = undefined;
-  let closure_19;
+  closure_19 = undefined;
   let tmp = overState();
   closure_14 = tmp;
   let tmp2 = id;
@@ -287,10 +307,10 @@ export default function GuildsBarAnimatedItemWrapper(id) {
   const tmp7 = selected(hint[11])(config);
   let obj2 = id(hint[6]);
   const token1 = obj2.useToken(selected(hint[5]).modules.mobile.GUILD_ITEM_SELECTED_BORDER_RADIUS);
-  let tmp9 = id(hint[10]);
-  let items = [closure_18, , , , , ];
+  let tmp9 = id(hint[8]);
+  let items = [closure_19, , , , , ];
   const useAnimatedStyle = tmp9.useAnimatedStyle;
-  items[1] = id(hint[8]).withSpring;
+  items[1] = id(hint[9]).withSpring;
   items[2] = circle;
   items[3] = token1;
   items[4] = token;
@@ -301,7 +321,7 @@ export default function GuildsBarAnimatedItemWrapper(id) {
   let c3;
   let c4;
   [tmp10, tmp11, tmp12, tmp13, tmp14, tmp15] = items;
-  class GuildsBarAnimatedItemWrapperTsx3 {
+  class GuildsBarAnimatedItemWrapperTsx4 {
     constructor() {
       let result;
       const tmp = c0;
@@ -315,10 +335,10 @@ export default function GuildsBarAnimatedItemWrapper(id) {
     }
   }
   let items1 = [tmp11, tmp12, tmp13, tmp14, tmp15];
-  GuildsBarAnimatedItemWrapperTsx3.__closure = items1;
-  GuildsBarAnimatedItemWrapperTsx3.__workletHash = 2090076448645;
-  GuildsBarAnimatedItemWrapperTsx3.__initData = tmp10;
-  const animatedStyle = useAnimatedStyle(GuildsBarAnimatedItemWrapperTsx3);
+  GuildsBarAnimatedItemWrapperTsx4.__closure = items1;
+  GuildsBarAnimatedItemWrapperTsx4.__workletHash = 1300086607522;
+  GuildsBarAnimatedItemWrapperTsx4.__initData = tmp10;
+  const animatedStyle = useAnimatedStyle(GuildsBarAnimatedItemWrapperTsx4);
   const enableHome = flag.useContext(tmp2(tmp3[12]).HomeDrawerStateContext).enableHome;
   const tmp2Result = tmp2(tmp3[13]);
   const drawerOpen = tmp2Result.useDrawerOpen(enableHome);
@@ -394,7 +414,7 @@ export default function GuildsBarAnimatedItemWrapper(id) {
       return { selected, sharedId, id };
     }
   }, items4);
-  renderItem = obj3.useRef(undefined);
+  ref = obj3.useRef(undefined);
   const items5 = [expanded];
   const effect = obj3.useEffect(() => {
     if (undefined !== ref.current) {
@@ -412,7 +432,7 @@ export default function GuildsBarAnimatedItemWrapper(id) {
     }
   }, items5);
   const tmp23 = tmp4(tmp3[16])(enableHome, drawerOpen);
-  closure_18 = tmp23;
+  renderItem = tmp23;
   const items6 = [accessibilityActions, tmp23];
   const memo3 = obj3.useMemo(() => {
     let items1;
@@ -495,7 +515,7 @@ export default function GuildsBarAnimatedItemWrapper(id) {
   items9[2] = accessibilityActions(ClipViewAnimated, obj7);
   let container = null;
   const tmp26Result = accessibilityActions(tmp4Result, obj4);
-  const View = tmp4(tmp3[10]).View;
+  const View = tmp4(tmp3[8]).View;
   if (enableHome) {
     container = tmp6.container;
   }

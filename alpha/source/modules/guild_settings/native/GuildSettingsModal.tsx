@@ -1,20 +1,20 @@
-// Module ID: 20056
-// Function ID: 20057
+// Module ID: 20084
+// Function ID: 20085
 // Name: GuildSettingsModal
-// Dependencies: [32, 19, 5011, 9155, 1072, 21, 18538, 9154, 1260, 1113, 7064, 20057, 20067, 20075, 20076, 20095, 20114, 20119, 20134, 20135, 20147, 20159, 20161, 19299, 19308, 20169, 20173, 20174, 19310, 18539, 20175, 20176, 20196, 20217, 20221, 20224, 20227, 13496, 13510, 13514, 20228, 20233, 20234, 20256, 20278, 20344, 20345, 20359, 20396, 20399, 20400, 20403, 20411, 20412, 1627, 5739, 504, 7231, 2]
+// Dependencies: [32, 19, 5013, 9161, 1072, 21, 18567, 9160, 1260, 1113, 7067, 20085, 20095, 20103, 20104, 20123, 20142, 20147, 20162, 20163, 20175, 20187, 20189, 19328, 19337, 20197, 20201, 20202, 19339, 18568, 20203, 20204, 20224, 20245, 20249, 20252, 20255, 13509, 13523, 13527, 20256, 20261, 20262, 20284, 20306, 20372, 20373, 20387, 20424, 20427, 20428, 20431, 20439, 20440, 1627, 5741, 504, 7234, 2]
 // Exports: default
 
-// Module 20056 (GuildSettingsModal)
+// Module 20084 (GuildSettingsModal)
 import Fragment from "Fragment" /* 21 */;
 import intl42 from "intl" /* 1113 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
-import NavigatorHeader from "NavigatorHeader" /* 7064 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9154 */;
-import GuildSettingsModalChannelsActionCreatorsDefault from "GuildSettingsModalChannelsActionCreators" /* 18538 */;
+import NavigatorHeader from "NavigatorHeader" /* 7067 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9160 */;
+import GuildSettingsModalChannelsActionCreatorsDefault from "GuildSettingsModalChannelsActionCreators" /* 18567 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 5011 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 9155 */;
+import GuildStore from "GuildStore" /* 5013 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 9161 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 

@@ -1,9 +1,9 @@
-// Module ID: 12752
-// Function ID: 12753
+// Module ID: 12766
+// Function ID: 12767
 // Name: PollMessageChatDataTypes
 // Dependencies: [2]
 
-// Module 12752 (PollMessageChatDataTypes)
+// Module 12766 (PollMessageChatDataTypes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/polls/chat/PollMessageChatDataTypes.tsx");

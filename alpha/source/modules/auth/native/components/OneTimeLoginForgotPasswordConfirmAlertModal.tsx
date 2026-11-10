@@ -1,13 +1,13 @@
-// Module ID: 7185
-// Function ID: 7186
+// Module ID: 7188
+// Function ID: 7189
 // Name: OneTimeLoginForgotPasswordConfirmAlertModal
-// Dependencies: [19, 21, 6096, 1113, 6096, 2]
+// Dependencies: [19, 21, 6098, 1113, 6098, 2]
 // Exports: default
 
-// Module 7185 (OneTimeLoginForgotPasswordConfirmAlertModal)
+// Module 7188 (OneTimeLoginForgotPasswordConfirmAlertModal)
 import Fragment from "Fragment" /* 21 */;
 import intl4 from "intl" /* 1113 */;
-import AlertModal2 from "AlertModal" /* 6096 */;
+import AlertModal2 from "AlertModal" /* 6098 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

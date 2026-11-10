@@ -1,10 +1,10 @@
-// Module ID: 18180
-// Function ID: 18181
+// Module ID: 18209
+// Function ID: 18210
 // Name: CollectiblesCoachmarkScrollDismissContext
 // Dependencies: [19, 1083, 21, 2]
 // Exports: CollectiblesCoachmarkScrollDismissProvider, useCollectiblesCoachmarkScrollDismissContext
 
-// Module 18180 (CollectiblesCoachmarkScrollDismissContext)
+// Module 18209 (CollectiblesCoachmarkScrollDismissContext)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1083 */;
 import react from "react" /* 19 */;

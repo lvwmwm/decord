@@ -1,34 +1,34 @@
-// Module ID: 13672
-// Function ID: 13673
+// Module ID: 13686
+// Function ID: 13687
 // Name: CheckpointModal
-// Dependencies: [5, 32, 19, 17, 5083, 13668, 6199, 1083, 21, 575, 5374, 13673, 2118, 5140, 13686, 1627, 1493, 13687, 504, 13690, 13691, 6567, 6223, 12116, 8744, 13692, 13693, 13694, 6566, 13696, 9069, 5376, 6799, 2116, 6206, 6220, 13611, 13670, 13666, 5836, 1113, 6243, 5199, 13697, 13872, 13874, 13883, 6228, 6229, 7120, 13918, 13919, 13933, 13698, 13935, 2]
+// Dependencies: [5, 32, 19, 17, 5085, 13681, 6201, 1083, 21, 575, 5376, 13687, 2118, 5142, 13700, 1627, 1493, 13701, 504, 13704, 13705, 6569, 6225, 12125, 8750, 13706, 13713, 6568, 13715, 9075, 5378, 6801, 13707, 2116, 6208, 6222, 13624, 13684, 13679, 5838, 1113, 6245, 5201, 13716, 13891, 13893, 13902, 6230, 6231, 7123, 13939, 13940, 13954, 13717, 13960, 2]
 // Exports: default
 
-// Module 13672 (CheckpointModal)
+// Module 13686 (CheckpointModal)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
 import Server from "Server" /* 2116 */;
 import asyncRequire from "asyncRequire" /* 2118 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
-import HapticUtils from "HapticUtils" /* 5376 */;
-import InteractionComponentTypes from "InteractionComponentTypes" /* 6206 */;
-import checkpoint_CheckpointMessageComponentUtils from "checkpoint/CheckpointMessageComponentUtils" /* 6220 */;
-import CheckpointNavigation from "CheckpointNavigation" /* 6567 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6799 */;
-import ForwardModalUtils from "ForwardModalUtils" /* 13611 */;
-import CheckpointHeaderButton from "CheckpointHeaderButton" /* 13686 */;
-import CheckpointFlows from "CheckpointFlows" /* 13687 */;
-import useCheckpointStepAnalytics from "useCheckpointStepAnalytics" /* 13691 */;
-import useCheckpointPreloaderDefault from "useCheckpointPreloader" /* 13935 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5376 */;
+import HapticUtils from "HapticUtils" /* 5378 */;
+import InteractionComponentTypes from "InteractionComponentTypes" /* 6208 */;
+import checkpoint_CheckpointMessageComponentUtils from "checkpoint/CheckpointMessageComponentUtils" /* 6222 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6801 */;
+import ForwardModalUtils from "ForwardModalUtils" /* 13624 */;
+import CheckpointHeaderButton from "CheckpointHeaderButton" /* 13700 */;
+import CheckpointFlows from "CheckpointFlows" /* 13701 */;
+import useCheckpointStepAnalytics from "useCheckpointStepAnalytics" /* 13705 */;
+import CheckpointSounds from "CheckpointSounds" /* 13707 */;
+import useCheckpointPreloaderDefault from "useCheckpointPreloader" /* 13960 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import MessageRecord from "MessageRecord" /* 5083 */;
-import CheckpointStore from "CheckpointStore" /* 13668 */;
-import CheckpointConstants from "CheckpointConstants" /* 6199 */;
+import MessageRecord from "MessageRecord" /* 5085 */;
+import CheckpointStore from "CheckpointStore" /* 13681 */;
+import CheckpointConstants from "CheckpointConstants" /* 6201 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5142 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -82,10 +82,10 @@ function CheckpointModal(didPlayerShareDataWithDiscord) {
   let str5;
   let string;
   let t;
+  let tmp26;
   let tmp27;
-  let tmp28;
-  let tmp2Result13;
-  let tmp40;
+  let tmp2Result11;
+  let tmp39;
   let tmp45;
   let width;
   let flag = didPlayerShareDataWithDiscord.didPlayerShareDataWithDiscord;
@@ -127,9 +127,11 @@ function CheckpointModal(didPlayerShareDataWithDiscord) {
           const obj4 = HapticUtils;
           const result = obj4.triggerHapticFeedback(IMPACT_LIGHT);
         }
-        const SILENT_CHECKPOINT_ROUTES = CheckpointNavigation.SILENT_CHECKPOINT_ROUTES;
-        if (!SILENT_CHECKPOINT_ROUTES.has(tmp10)) {
-          closure_7();
+        const obj6 = { previousRoute: tmp10, route: adjacentCheckpointRoute };
+        const obj5 = CheckpointSounds;
+        const checkpointRouteSounds = obj5.getCheckpointRouteSounds(obj6);
+        if (null != checkpointRouteSounds) {
+          closure_7(checkpointRouteSounds);
         }
         closure_3(adjacentCheckpointRoute);
       } else if (1 === direction) {
@@ -322,7 +324,7 @@ function CheckpointModal(didPlayerShareDataWithDiscord) {
             return obj7;
           } else {
             if (value) {
-              obj = { skipThrottle: true, hapticType: tmp(closure_2[31]).HapticFeedbackTypes.NOTIFICATION_SUCCESS };
+              obj = { skipThrottle: true, hapticType: tmp(closure_2[30]).HapticFeedbackTypes.NOTIFICATION_SUCCESS };
               closure_128_10(1, obj);
             } else {
               const presentError = tmp(closure_2[39]).presentError;
@@ -372,11 +374,11 @@ function CheckpointModal(didPlayerShareDataWithDiscord) {
   let obj5 = checkpointFlow(tmp3[21]);
   const checkpointRoutePresentation = obj5.getCheckpointRoutePresentation(route);
   ({ characterStage, statsScreen } = checkpointRoutePresentation);
-  let tmp44Result = route === checkpointFlow(tmp3[21]).CheckpointRoute.HOME;
-  if (!tmp44Result) {
-    tmp44Result = null != statsScreen;
+  let tmp43Result = route === checkpointFlow(tmp3[21]).CheckpointRoute.HOME;
+  if (!tmp43Result) {
+    tmp43Result = null != statsScreen;
   }
-  let tmp44Result4 = tmp44Result || route === tmp5(tmp3[21]).CheckpointRoute.INTRODUCTION;
+  let tmp43Result4 = tmp43Result || route === tmp5(tmp3[21]).CheckpointRoute.INTRODUCTION;
   const tmp5Result = checkpointFlow(tmp3[21]);
   let result = tmp5Result.isCheckpointCustomizationRoute(route);
   const tmp17 = route === checkpointFlow(tmp3[21]).CheckpointRoute.FINALIZE_CHARACTER;
@@ -398,86 +400,85 @@ function CheckpointModal(didPlayerShareDataWithDiscord) {
   } else {
     VoiceNormalIcon = tmp5(tmp3[24]).VoiceNormalIcon;
   }
-  const tmp2Result = tmp2(tmp3[25]);
-  closure_7 = tmp2Result(tmp2(tmp3[26]));
-  tmp2(tmp3[27])();
-  [tmp27, tmp28] = _slicedToArray(obj4.useState(checkpointFlow(tmp3[28]).CheckpointCustomizationOption.BASE), 2);
-  _slicedToArray(obj4.useState(checkpointFlow(tmp3[28]).CheckpointCustomizationOption.BASE), 2);
+  closure_7 = tmp2(tmp3[25])();
+  tmp2(tmp3[26])();
+  [tmp26, tmp27] = _slicedToArray(obj4.useState(checkpointFlow(tmp3[27]).CheckpointCustomizationOption.BASE), 2);
+  _slicedToArray(obj4.useState(checkpointFlow(tmp3[27]).CheckpointCustomizationOption.BASE), 2);
   if (!tmp17) {
-    const tmp5Result11 = checkpointFlow(tmp3[28]);
+    const tmp5Result11 = checkpointFlow(tmp3[27]);
     let BASE = tmp5Result11.getCustomizationOptionForCharacterStage(characterStage);
     if (BASE == null) {
-      BASE = tmp5(tmp3[28]).CheckpointCustomizationOption.BASE;
+      BASE = tmp5(tmp3[27]).CheckpointCustomizationOption.BASE;
     }
   }
-  const tmp31 = checkpointFlow(tmp3[28]).CUSTOMIZATION_OPTION_TO_TRAIT[tmp27];
+  const tmp30 = checkpointFlow(tmp3[27]).CUSTOMIZATION_OPTION_TO_TRAIT[tmp26];
   const items3 = [tmp7];
   const tmp5Result12 = checkpointFlow(tmp3[18]);
   stateFromStores2 = tmp5Result12.useStateFromStores(items3, () => _undefined.selectedCharacterTraits);
-  const obj13 = tmp2(tmp3[29])();
-  const hasItem = obj13.includes(tmp31);
-  let tmp35 = result;
-  const tmp2Result8 = tmp2(tmp3[30]);
+  const obj13 = tmp2(tmp3[28])();
+  const hasItem = obj13.includes(tmp30);
+  let tmp34 = result;
+  const tmp2Result = tmp2(tmp3[29]);
   if (result) {
-    tmp35 = !tmp30;
+    tmp34 = !tmp29;
   }
-  const tmp2Result1Result = tmp2Result8({ isMounted: tmp35 });
-  const height2 = tmp2Result1Result.height;
+  const tmp2ResultResult = tmp2Result({ isMounted: tmp34 });
+  const height2 = tmp2ResultResult.height;
   let sum = null;
-  ({ ref, onLayout } = tmp2Result1Result);
+  ({ ref, onLayout } = tmp2ResultResult);
   if (result) {
     sum = null;
     if (null != height2) {
-      const tmp38 = sum1;
       sum = rect.bottom + sum1 + height2;
     }
   }
-  [tmp40, c9] = _slicedToArray(obj4.useState(false), 2);
+  [tmp39, c9] = _slicedToArray(obj4.useState(false), 2);
   _slicedToArray(obj4.useState(false), 2);
   if (tmp17) {
     first1 = obj13[0];
   } else if (hasItem) {
-    first1 = tmp31;
+    first1 = tmp30;
   }
-  let tmp42 = result;
-  if (tmp42) {
-    let tmp43 = null != first1 || null == stateFromStores2[tmp31];
-    tmp42 = tmp43;
+  let tmp41 = result;
+  if (tmp41) {
+    const tmp42 = null != first1 || null == stateFromStores2[tmp30];
+    tmp41 = tmp42;
   }
-  let obj6 = { theme: handleForward.DARK, children: tmp45(tmp46, obj7) };
-  tmp45 = closure_13;
+  let tmp43 = obj;
+  let obj6 = { theme: handleForward.DARK, children: tmp44(tmp45, obj7) };
+  tmp45 = closure_7;
   obj7 = { style: tmp.container, children: items5 };
   const items4 = [tmp.layer, ];
-  let coveredCharacterLayer = tmp44Result;
+  let coveredCharacterLayer = tmp43Result;
   const ThemeContextProvider = tmp5(tmp3[42]).ThemeContextProvider;
-  if (tmp44Result) {
+  if (tmp43Result) {
     coveredCharacterLayer = tmp.coveredCharacterLayer;
   }
-  const obj8 = { collapsable: false, style: items4, pointerEvents: str3, accessibilityElementsHidden: tmp44Result4, importantForAccessibility: str4, children: tmp44(tmp2(tmp3[43]), obj9) };
+  const obj8 = { collapsable: false, style: items4, pointerEvents: str3, accessibilityElementsHidden: tmp43Result4, importantForAccessibility: str4, children: tmp43(tmp2(tmp3[43]), obj9) };
   items4[1] = coveredCharacterLayer;
   let str2 = "auto";
   str3 = "auto";
-  if (tmp44Result4) {
+  if (tmp43Result4) {
     str3 = "none";
   }
   str4 = str2;
-  if (tmp44Result4) {
+  if (tmp43Result4) {
     str4 = "no-hide-descendants";
   }
-  obj9 = { stage: characterStage, layout: str, isActive: !tmp44Result4, isHidden: tmp44Result, characterBottomInset: sum };
-  items5 = [tmp44(tmp46, obj8), , , , , , ];
-  if (tmp44Result) {
+  obj9 = { stage: characterStage, layout: str, isActive: !tmp43Result4, isHidden: tmp43Result, characterBottomInset: sum };
+  items5 = [tmp43(tmp45, obj8), , , , , , ];
+  if (tmp43Result) {
     let prop;
-    const tmp2Result9 = tmp2(tmp3[44]);
+    const tmp2Result7 = tmp2(tmp3[44]);
     if (tmp18) {
       prop = cardColors.backgroundGradientStartColor;
     }
     const obj10 = { gradientStartColor: prop };
-    tmp44Result = tmp44(tmp2Result9, obj10);
+    tmp43Result = tmp43(tmp2Result7, obj10);
   }
-  items5[1] = tmp44Result;
-  if (tmp44Result4) {
-    const obj11 = { style: tmp.layer, children: obj(tmp2(tmp3[45]), obj12) };
+  items5[1] = tmp43Result;
+  if (tmp43Result4) {
+    const obj11 = { style: tmp.layer, children: tmp43(tmp2(tmp3[45]), obj12) };
     obj12 = {
       route,
       onNextStep: function handleNextStep() {
@@ -487,12 +488,12 @@ function CheckpointModal(didPlayerShareDataWithDiscord) {
           transition(-1, { skipThrottle: true, hapticType: null });
         }
     };
-    tmp44Result4 = tmp44(tmp46, obj11);
+    tmp43Result4 = tmp43(tmp45, obj11);
   }
-  items5[2] = tmp44Result4;
+  items5[2] = tmp43Result4;
   const obj14 = { style: items6, children: items7 };
   items6 = [tmp.nav, { marginTop: rect.top, marginLeft: rect.left, marginRight: rect.right }];
-  const tmp2Result10 = tmp2(tmp3[46]);
+  const tmp2Result8 = tmp2(tmp3[46]);
   if (tmp18) {
     clydeLogoImage = cardColors.clydeLogoImage;
   } else {
@@ -504,68 +505,68 @@ function CheckpointModal(didPlayerShareDataWithDiscord) {
   } else {
     clydeLogoStaticImage = tmp2(tmp3[48]);
   }
-  items7 = [tmp44(tmp2Result10, obj15), ];
+  items7 = [tmp43(tmp2Result8, obj15), ];
   const obj16 = { style: tmp.headerActions, children: items8 };
-  const obj17 = { onPress: checkpointFlow(tmp3[37]).toggleMute, accessibilityLabel: string(stateFromStores1 ? t.YqAjXy : t.w4m945), color: tmp22, children: obj(VoiceNormalIcon, { color: tmp22, size: "xs" }) };
-  const tmp2Result11 = tmp2(tmp3[14]);
+  const obj17 = { onPress: checkpointFlow(tmp3[37]).toggleMute, accessibilityLabel: string(stateFromStores1 ? t.YqAjXy : t.w4m945), color: tmp22, children: tmp43(VoiceNormalIcon, { color: tmp22, size: "xs" }) };
+  const tmp2Result9 = tmp2(tmp3[14]);
   let intl = tmp5(tmp3[40]).intl;
   string = intl.string;
   t = tmp5(tmp3[40]).t;
-  items8 = [tmp44(tmp2Result11, obj17), ];
+  items8 = [tmp43(tmp2Result9, obj17), ];
   const obj18 = {
     onPress: function handleClose() {
-      obj = checkpointFlow(route[31]);
-      const result = obj.triggerHapticFeedback(checkpointFlow(route[31]).HapticFeedbackTypes.IMPACT_LIGHT);
-      const arr = stats(route[32]);
+      obj = checkpointFlow(route[30]);
+      const result = obj.triggerHapticFeedback(checkpointFlow(route[30]).HapticFeedbackTypes.IMPACT_LIGHT);
+      const arr = stats(route[31]);
       arr.pop();
     },
     accessibilityLabel: intl2.string(checkpointFlow(tmp3[40]).t.cpT0Cq),
     color: tmp22,
-    children: obj(checkpointFlow(tmp3[49]).XSmallIcon, { color: tmp22, size: "xs" })
+    children: tmp43(checkpointFlow(tmp3[49]).XSmallIcon, { color: tmp22, size: "xs" })
   };
-  const tmp2Result12 = tmp2(tmp3[14]);
+  const tmp2Result10 = tmp2(tmp3[14]);
   intl2 = tmp5(tmp3[40]).intl;
-  items8[1] = obj(tmp2Result12, obj18);
-  items7[1] = tmp45(closure_7, obj16);
-  items5[3] = tmp45(closure_7, obj14);
-  let tmp44Result5 = result && tmp30 && !tmp17;
-  if (tmp44Result5) {
-    tmp44Result5 = width / height >= 1.3333333333333333;
+  items8[1] = tmp43(tmp2Result10, obj18);
+  items7[1] = closure_13(tmp45, obj16);
+  items5[3] = closure_13(tmp45, obj14);
+  let tmp43Result5 = result && tmp29 && !tmp17;
+  if (tmp43Result5) {
+    tmp43Result5 = width / height >= 1.3333333333333333;
   }
-  if (tmp44Result5) {
-    const obj19 = { style: items9, children: obj(tmp2(tmp3[50]), obj21) };
+  if (tmp43Result5) {
+    const obj19 = { style: items9, children: tmp43(tmp2(tmp3[50]), obj21) };
     items9 = [tmp.landscapeStat, ];
     const obj20 = { marginTop: null, marginLeft: null };
     ({ top: obj27.marginTop, left: obj27.marginLeft } = rect);
     items9[1] = obj20;
-    obj21 = { customizationOption: tmp27 };
-    tmp44Result5 = tmp44(tmp46, obj19);
+    obj21 = { customizationOption: tmp26 };
+    tmp43Result5 = tmp43(tmp45, obj19);
   }
-  items5[4] = tmp44Result5;
+  items5[4] = tmp43Result5;
   if (result) {
     const items10 = [tmp.customizationSection, , ];
     const obj22 = { marginLeft: null, marginRight: null, marginBottom: null };
     ({ left: obj29.marginLeft, right: obj29.marginRight, bottom: obj29.marginBottom } = rect);
     items10[1] = obj22;
-    let tmp53 = tmp30;
-    if (tmp53) {
+    let tmp52 = tmp29;
+    if (tmp52) {
       const items11 = [tmp.landscapeCustomizationSection, ];
       const obj23 = { marginTop: rect.top };
       items11[1] = obj23;
-      tmp53 = items11;
+      tmp52 = items11;
     }
-    items10[2] = tmp53;
-    const obj24 = { style: items10, ref, onLayout, pointerEvents: str5, accessibilityElementsHidden: tmp40, importantForAccessibility: str2, children: obj(tmp2Result13, obj25) };
+    items10[2] = tmp52;
+    const obj24 = { style: items10, ref, onLayout, pointerEvents: str5, accessibilityElementsHidden: tmp39, importantForAccessibility: str2, children: tmp43(tmp2Result11, obj25) };
     str5 = str2;
-    if (tmp40) {
+    if (tmp39) {
       str5 = "none";
     }
-    if (tmp40) {
+    if (tmp39) {
       str2 = "no-hide-descendants";
     }
-    obj25 = { activeCustomizationOption: tmp27, isFinalizeRoute: tmp17, isCurrentTraitBlocked: hasItem, isSaving: tmp40, isLandscape: "MobileLandscape" === str, onSelectFinalizeOption: tmp28, onSelectTraitOption: checkpointFlow(tmp3[37]).selectCharacterTrait };
-    tmp2Result13 = tmp2(tmp3[51]);
-    result = tmp44(tmp46, obj24);
+    obj25 = { activeCustomizationOption: tmp26, isFinalizeRoute: tmp17, isCurrentTraitBlocked: hasItem, isSaving: tmp39, isLandscape: "MobileLandscape" === str, onSelectFinalizeOption: tmp27, onSelectTraitOption: checkpointFlow(tmp3[37]).selectCharacterTrait };
+    tmp2Result11 = tmp2(tmp3[51]);
+    result = tmp43(tmp45, obj24);
   }
   items5[5] = result;
   const obj26 = {
@@ -579,31 +580,37 @@ function CheckpointModal(didPlayerShareDataWithDiscord) {
     onReplay: function handleReplay() {
       obj = HapticUtils;
       const result = obj.triggerHapticFeedback(HapticUtils.HapticFeedbackTypes.IMPACT_LIGHT);
-      closure_7();
       const obj2 = CheckpointFlows;
       const obj3 = { flow: checkpointFlow, stats };
-      closure_3(obj2.getCheckpointReplayRoute(obj3));
+      const checkpointReplayRoute = obj2.getCheckpointReplayRoute(obj3);
+      const obj4 = CheckpointSounds;
+      const obj5 = { previousRoute: route, route: checkpointReplayRoute };
+      const checkpointRouteSounds = obj4.getCheckpointRouteSounds(obj5);
+      if (null != checkpointRouteSounds) {
+        closure_7(checkpointRouteSounds);
+      }
+      closure_3(checkpointReplayRoute);
     },
     onShare: function handleShare() {
       obj = { character: stateFromStores, stats, onForward: handleForward };
       const obj2 = ActionSheetActionCreatorsDefault;
-      obj2.openLazy(asyncRequire(13673, dependencyMap.paths), "CheckpointShare", obj);
+      obj2.openLazy(asyncRequire(13687, dependencyMap.paths), "CheckpointShare", obj);
     },
     color: tmp22,
     shadowColor,
-    backDisabled: tmp40,
-    nextDisabled: tmp42,
-    nextLoading: tmp40,
+    backDisabled: tmp39,
+    nextDisabled: tmp41,
+    nextLoading: tmp39,
     nextBlockedTrait: first1
   };
   shadowColor = undefined;
-  const tmp2Result14 = tmp2(tmp3[52]);
+  const tmp2Result12 = tmp2(tmp3[52]);
   if (tmp18) {
     shadowColor = cardColors.shadowColor;
   }
-  items5[6] = obj(tmp2Result14, obj26);
-  const tmp44Result6 = obj(ThemeContextProvider, obj6);
-  return obj(checkpointFlow(tmp3[53]).CheckpointStepFocusProvider, { route, children: tmp44Result6 });
+  items5[6] = tmp43(tmp2Result12, obj26);
+  const tmp43Result6 = tmp43(ThemeContextProvider, obj6);
+  return tmp43(checkpointFlow(tmp3[53]).CheckpointStepFocusProvider, { route, children: tmp43Result6 });
 }
 let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;

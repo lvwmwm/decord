@@ -1,16 +1,20 @@
 // Module ID: 16503
 // Function ID: 16504
-// Dependencies: [16467, 16441]
+// Dependencies: [16471, 16472, 16504]
 
 // Module 16503
-import _mod16441 from "module_16441" /* 16441 */;
-import module_16467 from "module_16467" /* 16467 */;
+import _mod16472 from "module_16472" /* 16472 */;
+import _mod16504 from "module_16504" /* 16504 */;
+import getOwnPropertyDescriptor from "module_16471" /* 16471 */;
 
-let _moduleResult = module_16467(_mod16441.WeakMap);
-if (_moduleResult) {
-  const _String = String;
-  const obj = /native code/;
-  _moduleResult = obj.test(String(_mod16441.WeakMap));
-}
+const f68530 = () => {
+  const obj = {
+    get() {
+      return 7;
+    }
+  };
+  return 7 !== Object.defineProperty(_mod16504("div"), "a", obj).a;
+};
+!getOwnPropertyDescriptor && !_mod16472(f68530);
 
-export default _moduleResult;
+export default !getOwnPropertyDescriptor && !_mod16472(f68530);

@@ -1,14 +1,14 @@
-// Module ID: 12391
-// Function ID: 12392
+// Module ID: 12400
+// Function ID: 12401
 // Name: RefreshIcon
-// Dependencies: [19, 21, 575, 5841, 12392, 2]
+// Dependencies: [19, 21, 575, 5843, 12401, 2]
 // Exports: RefreshIcon
 
-// Module 12391 (RefreshIcon)
+// Module 12400 (RefreshIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5841 */;
-import AssetRegistry from "AssetRegistry" /* 12392 */;
+import BaseIconImage2 from "BaseIconImage" /* 5843 */;
+import AssetRegistry from "AssetRegistry" /* 12401 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

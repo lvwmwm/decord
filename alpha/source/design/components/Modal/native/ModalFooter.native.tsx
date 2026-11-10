@@ -1,16 +1,16 @@
-// Module ID: 13452
-// Function ID: 13453
+// Module ID: 13465
+// Function ID: 13466
 // Name: ModalFooter
-// Dependencies: [19, 17, 21, 5140, 575, 5735, 2]
+// Dependencies: [19, 17, 21, 5142, 575, 5737, 2]
 // Exports: ModalFooter
 
-// Module 13452 (ModalFooter)
+// Module 13465 (ModalFooter)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5735 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5737 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5140 */;
+import createStyles from "createStyles" /* 5142 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

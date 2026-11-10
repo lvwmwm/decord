@@ -1,28 +1,28 @@
-// Module ID: 19649
-// Function ID: 19650
+// Module ID: 19678
+// Function ID: 19679
 // Name: VoicePanelAnimatedActivityCard
-// Dependencies: [32, 19, 4988, 11868, 4989, 11363, 11361, 1072, 2142, 11855, 21, 5140, 575, 11362, 12238, 504, 19650, 11885, 7391, 11951, 7387, 7412, 10170, 5800, 1652, 1705, 6906, 5420, 2143, 1493, 11135, 19651, 11957, 19652, 19653, 19657, 5199, 2]
+// Dependencies: [32, 19, 4990, 11877, 4991, 11372, 11370, 1072, 2142, 11864, 21, 5142, 575, 11371, 12247, 504, 19679, 11894, 7394, 11960, 7390, 7415, 10176, 5802, 1652, 1705, 6909, 5422, 2143, 1493, 11144, 19680, 11966, 19681, 19682, 19686, 5201, 2]
 
-// Module 19649 (VoicePanelAnimatedActivityCard)
+// Module 19678 (VoicePanelAnimatedActivityCard)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import useWindowDimensions from "useWindowDimensions" /* 1493 */;
 import _mod1705 from "module_1705" /* 1705 */;
 import Constants2 from "Constants" /* 2142 */;
 import EmbeddedActivityOrientationLockState from "EmbeddedActivityOrientationLockState" /* 2143 */;
-import native from "native" /* 5199 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5420 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11361 */;
-import Constants3 from "Constants" /* 11855 */;
-import fetchShelf from "fetchShelf" /* 11885 */;
+import native from "native" /* 5201 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5422 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11370 */;
+import Constants3 from "Constants" /* 11864 */;
+import fetchShelf from "fetchShelf" /* 11894 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4988 */;
-import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 11868 */;
-import ChannelStore from "ChannelStore" /* 4989 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11363 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4990 */;
+import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 11877 */;
+import ChannelStore from "ChannelStore" /* 4991 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11372 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5140 */;
+import createStyles from "createStyles" /* 5142 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -526,11 +526,11 @@ let closure_23 = { code: "(function VoicePanelAnimatedActivityCardTsx7(){let[IS_
 let closure_24 = { code: "(function VoicePanelAnimatedActivityCardTsx8(event,manager){let[controlsSpecs,VoicePanelControlsModes,scheduleOnRN,hideControls]=this.__closure;manager.fail();if(controlsSpecs.get().mode!==VoicePanelControlsModes.HIDDEN){scheduleOnRN(hideControls,{debounce:true});}})" };
 const memoResult = react.memo(function VoicePanelAnimatedActivityCard(arg0) {
   let obj2;
-  const obj = { theme: ThemeTypes.DARK, children: authStore3(VoicePanelAnimatedActivityCardInner, obj2) };
+  const obj = { theme: ThemeTypes.DARK, children: gesture(VoicePanelAnimatedActivityCardInner, obj2) };
   obj2 = {};
   const ThemeContextProvider = native.ThemeContextProvider;
   const merged = Object.assign(arg0);
-  return authStore3(ThemeContextProvider, obj);
+  return gesture(ThemeContextProvider, obj);
 });
 let size = size_mod;
 const result = size.fileFinishedImporting("modules/voice_panel/native/card/VoicePanelAnimatedActivityCard.tsx");

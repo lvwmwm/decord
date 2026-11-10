@@ -1,10 +1,10 @@
-// Module ID: 16588
-// Function ID: 16589
+// Module ID: 16615
+// Function ID: 16616
 // Name: SystemTelecomPlatform
 // Dependencies: [2]
 // Exports: flushCallPushToken, subscribeToCallPushToken
 
-// Module 16588 (SystemTelecomPlatform)
+// Module 16615 (SystemTelecomPlatform)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/calls/native/SystemTelecomPlatform.android.tsx");

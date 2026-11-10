@@ -1,16 +1,16 @@
-// Module ID: 18640
-// Function ID: 18641
+// Module ID: 18669
+// Function ID: 18670
 // Name: IAPUpsellActionSheet
-// Dependencies: [19, 1072, 4996, 4986, 21, 18641, 18642, 1113, 1099, 2]
+// Dependencies: [19, 1072, 4998, 4988, 21, 18670, 18671, 1113, 1099, 2]
 // Exports: default
 
-// Module 18640 (IAPUpsellActionSheet)
+// Module 18669 (IAPUpsellActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import router_utils from "router_utils" /* 1099 */;
 import intl4 from "intl" /* 1113 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4986 */;
-import ChannelConstants from "ChannelConstants" /* 4996 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4988 */;
+import ChannelConstants from "ChannelConstants" /* 4998 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -23,11 +23,11 @@ const result = size.fileFinishedImporting("modules/guild_role_subscriptions/nati
 export default function IAPUpsellActionSheet(arg0) {
   let markAsDismissed;
   ({ guildId: require, markAsDismissed } = arg0);
-  markAsDismissed(18641);
+  markAsDismissed(18670);
   const intl = intl4.intl;
   const intl2 = intl4.intl;
   const intl3 = intl4.intl;
-  return <tmp imageSource={markAsDismissed(18642)} header={intl.string(intl4.t.rBw4cE)} body={intl2.string(intl4.t.mKHibc)} cta={intl3.string(intl4.t.RzWDqY)} onCTAPress={function handleCTAPress() {
+  return <tmp imageSource={markAsDismissed(18671)} header={intl.string(intl4.t.rBw4cE)} body={intl2.string(intl4.t.mKHibc)} cta={intl3.string(intl4.t.RzWDqY)} onCTAPress={function handleCTAPress() {
     const obj = router_utils;
     obj.transitionTo(Routes.CHANNEL(require, StaticChannelRoute.ROLE_SUBSCRIPTIONS));
     markAsDismissed(ContentDismissActionType.UNKNOWN);

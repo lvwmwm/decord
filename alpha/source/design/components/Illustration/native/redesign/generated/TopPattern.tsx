@@ -1,14 +1,14 @@
-// Module ID: 15694
-// Function ID: 15695
+// Module ID: 15722
+// Function ID: 15723
 // Name: TopPattern
-// Dependencies: [19, 21, 8880, 15695, 15696, 15697, 5147, 5842, 2]
+// Dependencies: [19, 21, 8886, 15723, 15724, 15725, 5149, 5844, 2]
 // Exports: TopPattern, getTopPatternSource, useTopPatternSource
 
-// Module 15694 (TopPattern)
+// Module 15722 (TopPattern)
 import Fragment from "Fragment" /* 21 */;
-import shared from "shared" /* 5147 */;
-import FastImageDefault from "FastImage" /* 5842 */;
-import _mod8880 from "module_8880" /* 8880 */;
+import shared from "shared" /* 5149 */;
+import FastImageDefault from "FastImage" /* 5844 */;
+import _mod8886 from "module_8886" /* 8886 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -27,21 +27,21 @@ const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("design/components/Illustration/native/redesign/generated/TopPattern.tsx");
 
 export function getTopPatternSource(theme) {
-  const obj = _mod8880;
+  const obj = _mod8886;
   const obj2 = { dark, darker, light };
   return obj.getIllustrationSource(theme, obj2);
 }
 export function useTopPatternSource() {
   const obj = shared;
   const theme = obj.useThemeContext().theme;
-  const obj2 = _mod8880;
+  const obj2 = _mod8886;
   const obj3 = { dark, darker, light };
   return obj2.getIllustrationSource(theme, obj3);
 }
 export function TopPattern(arg0) {
   const obj = shared;
   const theme = obj.useThemeContext().theme;
-  const obj2 = _mod8880;
+  const obj2 = _mod8886;
   const obj3 = { dark, darker, light };
   const illustrationSource = obj2.getIllustrationSource(theme, obj3);
   FastImageDefault;

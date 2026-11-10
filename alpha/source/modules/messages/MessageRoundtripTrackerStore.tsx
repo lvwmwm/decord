@@ -1,19 +1,19 @@
-// Module ID: 7714
-// Function ID: 7715
+// Module ID: 7717
+// Function ID: 7718
 // Name: MessageRoundtripTrackerStore
-// Dependencies: [4989, 5358, 6032, 1072, 3, 7715, 1252, 7895, 504, 572, 2]
+// Dependencies: [4991, 5360, 6034, 1072, 3, 7718, 1252, 7899, 504, 572, 2]
 
-// Module 7714 (MessageRoundtripTrackerStore)
+// Module 7717 (MessageRoundtripTrackerStore)
 import LoggerDefault from "Logger" /* 3 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import NetStats from "NetStats" /* 7715 */;
-import getDeviceMetadataDefault from "getDeviceMetadata" /* 7895 */;
-import ChannelStore from "ChannelStore" /* 4989 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 5358 */;
-import NetworkStore from "NetworkStore" /* 6032 */;
+import NetStats from "NetStats" /* 7718 */;
+import getDeviceMetadataDefault from "getDeviceMetadata" /* 7899 */;
+import ChannelStore from "ChannelStore" /* 4991 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 5360 */;
+import NetworkStore from "NetworkStore" /* 6034 */;
 import size from "module_2" /* 2 */;
 
 function trackRoundtrip(channelId) {

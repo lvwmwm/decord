@@ -1,14 +1,14 @@
-// Module ID: 18356
-// Function ID: 18357
+// Module ID: 18385
+// Function ID: 18386
 // Name: WumpTrash
-// Dependencies: [19, 21, 8880, 18357, 18358, 5147, 5842, 2]
+// Dependencies: [19, 21, 8886, 18386, 18387, 5149, 5844, 2]
 // Exports: WumpTrash, getWumpTrashSource, useWumpTrashSource
 
-// Module 18356 (WumpTrash)
+// Module 18385 (WumpTrash)
 import Fragment from "Fragment" /* 21 */;
-import shared from "shared" /* 5147 */;
-import FastImageDefault from "FastImage" /* 5842 */;
-import _mod8880 from "module_8880" /* 8880 */;
+import shared from "shared" /* 5149 */;
+import FastImageDefault from "FastImage" /* 5844 */;
+import _mod8886 from "module_8886" /* 8886 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -24,21 +24,21 @@ const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("design/components/Illustration/native/redesign/generated/WumpTrash.tsx");
 
 export function getWumpTrashSource(theme) {
-  const obj = _mod8880;
+  const obj = _mod8886;
   const obj2 = { dark, darker };
   return obj.getIllustrationSource(theme, obj2);
 }
 export function useWumpTrashSource() {
   const obj = shared;
   const theme = obj.useThemeContext().theme;
-  const obj2 = _mod8880;
+  const obj2 = _mod8886;
   const obj3 = { dark, darker };
   return obj2.getIllustrationSource(theme, obj3);
 }
 export function WumpTrash(arg0) {
   const obj = shared;
   const theme = obj.useThemeContext().theme;
-  const obj2 = _mod8880;
+  const obj2 = _mod8886;
   const obj3 = { dark, darker };
   const illustrationSource = obj2.getIllustrationSource(theme, obj3);
   FastImageDefault;

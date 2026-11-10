@@ -1,22 +1,22 @@
-// Module ID: 18748
-// Function ID: 18749
+// Module ID: 18777
+// Function ID: 18778
 // Name: GuildsBarDirectMessage
-// Dependencies: [19, 502, 6624, 4989, 6941, 5082, 1385, 1072, 21, 5140, 575, 18704, 504, 9165, 1113, 18707, 5885, 10921, 18749, 10918, 1187, 5842, 2]
+// Dependencies: [19, 502, 6626, 4991, 6944, 5084, 1385, 1072, 21, 5142, 575, 18733, 504, 9171, 1113, 18736, 5887, 10930, 18778, 10927, 1187, 5844, 2]
 
-// Module 18748 (GuildsBarDirectMessage)
+// Module 18777 (GuildsBarDirectMessage)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
-import getChannelA11yLabelDefault from "getChannelA11yLabel" /* 9165 */;
+import getChannelA11yLabelDefault from "getChannelA11yLabel" /* 9171 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import CallStore from "CallStore" /* 6624 */;
-import ChannelStore from "ChannelStore" /* 4989 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 6941 */;
-import RelationshipStore from "RelationshipStore" /* 5082 */;
+import CallStore from "CallStore" /* 6626 */;
+import ChannelStore from "ChannelStore" /* 4991 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 6944 */;
+import RelationshipStore from "RelationshipStore" /* 5084 */;
 import UserStore from "UserStore" /* 1385 */;
-import createStyles from "createStyles" /* 5140 */;
+import createStyles from "createStyles" /* 5142 */;
 import size_mod from "module_2" /* 2 */;
 
 let size;

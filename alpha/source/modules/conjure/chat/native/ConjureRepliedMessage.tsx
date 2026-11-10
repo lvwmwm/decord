@@ -1,18 +1,18 @@
-// Module ID: 12837
-// Function ID: 12838
+// Module ID: 12851
+// Function ID: 12852
 // Name: ConjureRepliedMessage
-// Dependencies: [19, 17, 21, 12827, 5140, 575, 11720, 5194, 12387, 12838, 1113, 4026, 12839, 1187, 5751, 12845, 2]
+// Dependencies: [19, 17, 21, 12841, 5142, 575, 11729, 5196, 12396, 12852, 1113, 4028, 12853, 1187, 5753, 12859, 2]
 // Exports: default
 
-// Module 12837 (ConjureRepliedMessage)
+// Module 12851 (ConjureRepliedMessage)
 import nativeDefault from "native" /* 575 */;
-import _modDef4026 from "module_4026" /* 4026 */;
-import ConjureDesignFeedback from "ConjureDesignFeedback" /* 12387 */;
-import ConjureNativeStatusLine from "ConjureNativeStatusLine" /* 12827 */;
+import _modDef4028 from "module_4028" /* 4028 */;
+import ConjureDesignFeedback from "ConjureDesignFeedback" /* 12396 */;
+import ConjureNativeStatusLine from "ConjureNativeStatusLine" /* 12841 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5142 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -22,7 +22,7 @@ let metroRequire;
 let obj2;
 let rect;
 let tmp11;
-const ConjureSelectedMentionDefault = tmp11(12845);
+const ConjureSelectedMentionDefault = tmp11(12859);
 ({ Pressable: closure_4, View: hasOwnProperty } = react_native);
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 const diff = ConjureNativeStatusLine.MESSAGE_EDGE_INSET + ConjureNativeStatusLine.MESSAGE_AVATAR_SIZE / 2 - 1;
@@ -44,9 +44,9 @@ export default function ConjureRepliedMessage(replied) {
   replied = replied.replied;
   const onJump = replied.onJump;
   const tmp = closure_8();
-  let obj = replied(11720);
+  let obj = replied(11729);
   const messageAuthorUser = obj.useMessageAuthorUser(replied.userId);
-  const obj2 = replied(5194);
+  const obj2 = replied(5196);
   let str = obj2.useName(messageAuthorUser);
   if (str == null) {
     str = "";
@@ -57,8 +57,8 @@ export default function ConjureRepliedMessage(replied) {
     return obj.parseConjureDesignRemark(replied.content);
   }, items);
   let body;
-  const useConjureMentionNames = replied(12838).useConjureMentionNames;
-  replied(12838);
+  const useConjureMentionNames = replied(12852).useConjureMentionNames;
+  replied(12852);
   if (memo != null) {
     body = memo.body;
   }
@@ -67,7 +67,7 @@ export default function ConjureRepliedMessage(replied) {
   }
   const str2 = body.replace(/\s+/g, " ");
   const conjureMentionNames = useConjureMentionNames(str2.trim());
-  const obj3 = { style: tmp.root, onPress: onJump, disabled: null == onJump, accessibilityRole: "button", accessibilityLabel: intl.formatToPlainString(_modDef4026.K0046m, { name: str, content: conjureMentionNames }), children: items1 };
+  const obj3 = { style: tmp.root, onPress: onJump, disabled: null == onJump, accessibilityRole: "button", accessibilityLabel: intl.formatToPlainString(_modDef4028.K0046m, { name: str, content: conjureMentionNames }), children: items1 };
   intl = tmp2(1113).intl;
   items1 = [, , , ];
   const obj4 = { style: tmp.spine };
@@ -78,15 +78,15 @@ export default function ConjureRepliedMessage(replied) {
   if (null != messageAuthorUser) {
     const obj5 = { style: tmp.avatar, children: closure_6(ConjureUserAvatar, obj6) };
     obj6 = { userId: replied.userId, size: replied(1187).AvatarSizes.SIZE_16 };
-    ConjureUserAvatar = tmp2(12839).ConjureUserAvatar;
+    ConjureUserAvatar = tmp2(12853).ConjureUserAvatar;
     tmp12Result = tmp12(tmp13, obj5);
   }
   items1[1] = tmp12Result;
   const obj7 = { variant: "body-xs/semibold", color: "text-default", style: tmp.name, lineClamp: 1, children: str };
-  items1[2] = closure_6(replied(5751).Text, obj7);
+  items1[2] = closure_6(replied(5753).Text, obj7);
   let tmp12Result2 = null;
   const obj8 = { variant: "body-xs/medium", color: "interactive-text-default", style: tmp.content, lineClamp: 1, children: items2 };
-  const Text = tmp2(5751).Text;
+  const Text = tmp2(5753).Text;
   if (null != memo) {
     const obj9 = { label: memo.label, variant: "body-xs/medium" };
     tmp12Result2 = tmp12(ConjureSelectedMentionDefault, obj9);

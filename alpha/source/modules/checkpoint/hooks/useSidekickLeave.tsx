@@ -1,11 +1,11 @@
-// Module ID: 13914
-// Function ID: 13915
+// Module ID: 13935
+// Function ID: 13936
 // Name: useSidekickLeave
-// Dependencies: [19, 6567, 2]
+// Dependencies: [19, 6569, 2]
 // Exports: useSidekickLeave
 
-// Module 13914 (useSidekickLeave)
-import CheckpointNavigation from "CheckpointNavigation" /* 6567 */;
+// Module 13935 (useSidekickLeave)
+import CheckpointNavigation from "CheckpointNavigation" /* 6569 */;
 import react_mod from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

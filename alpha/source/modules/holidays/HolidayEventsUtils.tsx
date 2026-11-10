@@ -1,10 +1,10 @@
-// Module ID: 19890
-// Function ID: 19891
+// Module ID: 19918
+// Function ID: 19919
 // Name: HolidayEventsUtils
-// Dependencies: [19886, 2]
+// Dependencies: [19915, 2]
 
-// Module 19890 (HolidayEventsUtils)
-import HolidayEventsConfigDefault from "HolidayEventsConfig" /* 19886 */;
+// Module 19918 (HolidayEventsUtils)
+import HolidayEventsConfigDefault from "HolidayEventsConfig" /* 19915 */;
 import size from "module_2" /* 2 */;
 
 let obj = {
@@ -45,7 +45,7 @@ let obj = {
     let appSpinnerSources = null;
     const tmp4 = timestamp >= HolidayEventsConfigDefault.startTimeMs && timestamp <= HolidayEventsConfigDefault.endTimeMs;
     if (tmp4) {
-      appSpinnerSources = tmp2(19886).appSpinnerSources;
+      appSpinnerSources = tmp2(19915).appSpinnerSources;
     }
     return appSpinnerSources;
   },
@@ -73,7 +73,7 @@ let obj = {
     if (tmp5) {
       soundpack = null;
       if (null != HolidayEventsConfigDefault.soundpack) {
-        soundpack = tmp(19886).soundpack;
+        soundpack = tmp(19915).soundpack;
       }
     }
     return soundpack;

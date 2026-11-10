@@ -1,21 +1,21 @@
-// Module ID: 13929
-// Function ID: 13930
+// Module ID: 13950
+// Function ID: 13951
 // Name: FinalizeTraitTabs
-// Dependencies: [19, 17, 6199, 21, 5374, 13930, 2118, 5140, 575, 1377, 1113, 13906, 5751, 6566, 13931, 3248, 5724, 13932, 11555, 2]
+// Dependencies: [19, 17, 6201, 21, 5376, 13951, 2118, 5142, 575, 1377, 1113, 13927, 5753, 6568, 13952, 5726, 13953, 3248, 11564, 2]
 // Exports: FinalizeTraitTabs
 
-// Module 13929 (FinalizeTraitTabs)
+// Module 13950 (FinalizeTraitTabs)
 import nativeDefault from "native" /* 575 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import asyncRequire from "asyncRequire" /* 2118 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
-import CheckpointPressable from "CheckpointPressable" /* 13906 */;
-import showNitroLockedToastDefault from "showNitroLockedToast" /* 13932 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5376 */;
+import CheckpointPressable from "CheckpointPressable" /* 13927 */;
+import showNitroLockedToastDefault from "showNitroLockedToast" /* 13953 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import CheckpointConstants from "CheckpointConstants" /* 6199 */;
+import CheckpointConstants from "CheckpointConstants" /* 6201 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5142 */;
 import size from "module_2" /* 2 */;
 
 const CheckpointPressableDefault = CheckpointPressable;
@@ -70,7 +70,7 @@ function TraitTab(arg0) {
   const obj3 = { size: "sm", containerStyle: tabContainerActive, style: items1, disabled: isActive || disabled, onPress, accessibilityRole: "tab", accessibilityHint: joined, accessibilityState: { selected: isActive, disabled }, shadowColor: hasOwnProperty, children: items3 };
   items1 = [tmp.tab, isActive && tmp.tabActive, disabled && tmp.tabDisabled];
   const obj4 = { variant: CheckpointPressable.CHECKPOINT_PRESSABLE_SIZES.sm.textVariant, style: items2, children: label };
-  const Text = tmp2(5751).Text;
+  const Text = tmp2(5753).Text;
   items2 = [tmp.tabLabel, , ];
   const tmp8 = metroImportDefault;
   if (isActive) {
@@ -101,14 +101,13 @@ let closure_9 = createStyles(obj);
 const result = size.fileFinishedImporting("modules/checkpoint/native/components/customization/FinalizeTraitTabs.tsx");
 
 export function FinalizeTraitTabs(activeCustomizationOption) {
-  let customizationOptionName;
   let items;
   let obj2;
   let str2;
   let stringResult;
   let tabCount;
+  let tmp14;
   let tmp15;
-  let tmp16;
   activeCustomizationOption = activeCustomizationOption.activeCustomizationOption;
   const onSelectOption = activeCustomizationOption.onSelectOption;
   let flag = activeCustomizationOption.disableSwitching;
@@ -120,8 +119,6 @@ export function FinalizeTraitTabs(activeCustomizationOption) {
     flag2 = false;
   }
   let c6;
-  let isMoreMenuActive;
-  let moreTabOption;
   let tmp = closure_9();
   let tmp2 = activeCustomizationOption;
   let tmp3 = flag;
@@ -137,49 +134,44 @@ export function FinalizeTraitTabs(activeCustomizationOption) {
   const arr = onSelectOption(tmp3[14])(activeCustomizationOption, onSelectOption);
   const sum = arr.length + 1;
   c6 = sum;
-  const tmp2Result6 = tmp2(tmp3[14]);
-  const finalizeMoreTabOption = tmp2Result6.useFinalizeMoreTabOption(activeCustomizationOption);
-  isMoreMenuActive = finalizeMoreTabOption.isMoreMenuActive;
-  moreTabOption = finalizeMoreTabOption.moreTabOption;
-  if (isMoreMenuActive) {
-    const intl = tmp2(tmp3[10]).intl;
-    stringResult = intl.string(onSelectOption(tmp3[15])["8cGmXF"]);
-  }
-  const tmp2Result7 = tmp2(tmp3[16]);
-  const token = tmp2Result7.useToken("text-subtle");
-  let tmp12 = token;
+  const FINALIZE_TRAIT_TAB_ITEMS = tmp2(tmp3[14]).FINALIZE_TRAIT_TAB_ITEMS;
+  const hasItem = FINALIZE_TRAIT_TAB_ITEMS.includes(activeCustomizationOption);
+  const tmp9 = !hasItem;
+  const tmp2Result5 = tmp2(tmp3[15]);
+  const token = tmp2Result5.useToken("text-subtle");
+  let tmp11 = token;
   if (!flag) {
-    tmp12 = token;
+    tmp11 = token;
     if (!flag2) {
       let BLACK;
-      if (isMoreMenuActive) {
-        BLACK = c6;
-      } else {
+      if (hasItem) {
         BLACK = tmp6(tmp3[8]).colors.BLACK;
+      } else {
+        BLACK = c6;
       }
-      tmp12 = BLACK;
+      tmp11 = BLACK;
     }
   }
   let str;
-  const tmp14 = flag2;
-  const tmp2Result8 = tmp2(tmp3[9]);
-  if (tmp2Result8.isIOS()) {
+  const tmp13 = flag2;
+  const tmp2Result6 = tmp2(tmp3[9]);
+  if (tmp2Result6.isIOS()) {
     str = "tabbar";
   }
-  let obj = { horizontal: true, accessibilityRole: str, alwaysBounceHorizontal: false, style: tmp.scroll, contentContainerStyle: tmp.scrollContent, children: tmp15(tmp16, obj2) };
+  let obj = { horizontal: true, accessibilityRole: str, alwaysBounceHorizontal: false, style: tmp.scroll, contentContainerStyle: tmp.scrollContent, children: tmp14(tmp15, obj2) };
   obj2 = { style: tmp.row, accessibilityRole: str2, children: items };
   str2 = undefined;
-  tmp15 = moreTabOption;
-  tmp16 = closure_4;
-  const tmp2Result9 = tmp2(tmp3[9]);
-  if (tmp2Result9.isAndroid()) {
+  tmp14 = closure_8;
+  tmp15 = closure_4;
+  const tmp2Result7 = tmp2(tmp3[9]);
+  if (tmp2Result7.isAndroid()) {
     str2 = "tablist";
   }
   items = [
     arr.map((item, index) => {
       let obj2;
       let closure_0 = item;
-      const tmp = isMoreMenuActive;
+      const tmp = closure_1_7;
       let tmp2 = TraitTab;
       const obj = {
         label: obj2.getCustomizationOptionName(item),
@@ -208,8 +200,8 @@ export function FinalizeTraitTabs(activeCustomizationOption) {
   const obj3 = {
     position: sum,
     tabCount: sum,
-    label: customizationOptionName,
-    isActive: isMoreMenuActive,
+    label: stringResult,
+    isActive: tmp9,
     disabled: flag,
     accessibilityHint: nitroLockedMessage,
     onPress: function handleMorePress() {
@@ -219,34 +211,29 @@ export function FinalizeTraitTabs(activeCustomizationOption) {
         if (tmp2) {
           showNitroLockedToastDefault(closure_4);
         } else {
-          const tmp3 = isMoreMenuActive;
-          if (!tmp3) {
-            if (null != moreTabOption) {
-              onSelectOption(tmp4);
-            }
-          }
           const obj = { selectedOption: activeCustomizationOption, onSelectOption };
           const obj2 = ActionSheetActionCreatorsDefault;
-          obj2.openLazy(asyncRequire(13930, dependencyMap.paths), "CheckpointFinalizeTraitPicker", obj);
+          obj2.openLazy(asyncRequire(13951, dependencyMap.paths), "CheckpointFinalizeTraitPicker", obj);
         }
       }
     },
-    trailing: isMoreMenuActive(tmp2(tmp3[18]).ChevronSmallDownIcon, { color: tmp12, size: "xs" })
+    trailing: closure_7(tmp2(tmp3[18]).ChevronSmallDownIcon, { color: tmp11, size: "xs" })
   };
-  const tmp17 = TraitTab;
-  if (null != moreTabOption) {
-    const tmp2Result10 = tmp2(tmp3[13]);
-    customizationOptionName = tmp2Result10.getCustomizationOptionName(moreTabOption);
+  const tmp16 = TraitTab;
+  if (hasItem) {
+    const intl = tmp2(tmp3[10]).intl;
+    stringResult = intl.string(tmp6(tmp3[17])["iXpQc+"]);
   } else {
-    const intl2 = tmp2(tmp3[10]).intl;
-    customizationOptionName = intl2.string(tmp6(tmp3[15])["iXpQc+"]);
+    const tmp2Result8 = tmp2(tmp3[13]);
+    stringResult = tmp2Result8.getCustomizationOptionName(activeCustomizationOption);
   }
   if (!flag) {
     flag = flag2;
   }
   if (nitroLockedMessage == null) {
-    nitroLockedMessage = stringResult;
+    const intl2 = tmp2(tmp3[10]).intl;
+    nitroLockedMessage = intl2.string(tmp6(tmp3[17])["8cGmXF"]);
   }
-  items[1] = isMoreMenuActive(tmp17, obj3);
-  return isMoreMenuActive(tmp14, obj);
+  items[1] = closure_7(tmp16, obj3);
+  return closure_7(tmp13, obj);
 }

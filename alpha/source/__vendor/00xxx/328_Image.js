@@ -62,7 +62,7 @@ let obj = function _queryCache() {
 const use = react2.use;
 const jsx = Fragment.jsx;
 let closure_6 = 1;
-let closure_8 = { uri: "Array", width: "channel", height: "find" };
+let closure_8 = { uri: "paddingHorizontal", width: "channel", height: "set" };
 function _BaseImage(arg0) {
   let accessibilityLabel;
   let accessibilityLabelledBy;
@@ -271,7 +271,7 @@ if (null != unstable_setImageComponentDecorator) {
 }
 resultResult.displayName = "Image";
 resultResult.getSize = function getSize(arg0, fn, arg2) {
-  const f79531 = (width) => closure_1(width.width, width.height);
+  const f79645 = (width) => closure_1(width.width, width.height);
   let closure_0 = arg0;
   let closure_1 = fn;
   obj = ImageLoaderDefault;
@@ -280,8 +280,8 @@ resultResult.getSize = function getSize(arg0, fn, arg2) {
     return size;
   } else {
     fn = arg2;
-    const _catch = size.then(f79531).catch;
-    size.then(f79531);
+    const _catch = size.then(f79645).catch;
+    size.then(f79645);
     if (!arg2) {
       fn = () => {
         console.warn(`Failed to get size for image: ${closure_0}`);
@@ -291,7 +291,7 @@ resultResult.getSize = function getSize(arg0, fn, arg2) {
   }
 };
 resultResult.getSizeWithHeaders = function getSizeWithHeaders(arg0, arg1, fn, arg3) {
-  const f79533 = (width) => closure_1(width.width, width.height);
+  const f79647 = (width) => closure_1(width.width, width.height);
   let closure_0 = arg0;
   let closure_1 = fn;
   obj = ImageLoaderDefault;
@@ -300,8 +300,8 @@ resultResult.getSizeWithHeaders = function getSizeWithHeaders(arg0, arg1, fn, ar
     return sizeWithHeaders;
   } else {
     fn = arg3;
-    const _catch = sizeWithHeaders.then(f79533).catch;
-    sizeWithHeaders.then(f79533);
+    const _catch = sizeWithHeaders.then(f79647).catch;
+    sizeWithHeaders.then(f79647);
     if (!arg3) {
       fn = () => {
         console.warn(`Failed to get size for image: ${closure_0}`);

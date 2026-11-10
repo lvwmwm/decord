@@ -1,15 +1,15 @@
-// Module ID: 9512
-// Function ID: 9513
+// Module ID: 9518
+// Function ID: 9519
 // Name: HTMLParserLinkUtils
-// Dependencies: [109, 9486, 6170, 5873, 1378, 2067, 6169, 9511, 2]
+// Dependencies: [109, 9492, 6172, 5875, 1378, 2067, 6171, 9517, 2]
 // Exports: addTextLinks
 
-// Module 9512 (HTMLParserLinkUtils)
-import MarkupLinkRule2 from "MarkupLinkRule" /* 6169 */;
-import UnicodeSanitizationUtils from "UnicodeSanitizationUtils" /* 6170 */;
-import HTMLParserRunUtils from "HTMLParserRunUtils" /* 9511 */;
+// Module 9518 (HTMLParserLinkUtils)
+import MarkupLinkRule2 from "MarkupLinkRule" /* 6171 */;
+import UnicodeSanitizationUtils from "UnicodeSanitizationUtils" /* 6172 */;
+import HTMLParserRunUtils from "HTMLParserRunUtils" /* 9517 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import HTMLParserConstants from "HTMLParserConstants" /* 9486 */;
+import HTMLParserConstants from "HTMLParserConstants" /* 9492 */;
 import module_2067_mod from "module_2067" /* 2067 */;
 import size from "module_2" /* 2 */;
 
@@ -79,7 +79,7 @@ function normalizeLabelForComparison(content) {
   const str = obj.sanitizeWhitespace(content);
   const sanitizeUnicodeConfusables = UnicodeSanitizationUtils.sanitizeUnicodeConfusables;
   UnicodeSanitizationUtils;
-  const normalizer = str.replace(authStore3, "");
+  const normalizer = str.replace(gesture, "");
   return sanitizeUnicodeConfusables(normalizer.normalize("NFKC"));
 }
 function hasMisleadingURLLabel(str, href) {
@@ -489,7 +489,7 @@ obj2 = {
       const str = obj4.sanitizeWhitespace(tmp12);
       const sanitizeUnicodeConfusables = UnicodeSanitizationUtils.sanitizeUnicodeConfusables;
       UnicodeSanitizationUtils;
-      const normalizer = str.replace(authStore3, "");
+      const normalizer = str.replace(gesture, "");
       if (!hasMisleadingURLLabel(sanitizeUnicodeConfusables(normalizer.normalize("NFKC")), tmp4)) {
         const tmpResult = MarkupLinkRuleDefault;
         parsed = tmpResult.parse(content, arg1, arg2);
@@ -532,7 +532,7 @@ obj3 = {
   },
   parse(arg0) {
     let items;
-    const searchResult = arg0[1].search(authStore4);
+    const searchResult = arg0[1].search(authStore3);
     let str = arr;
     if (-1 !== searchResult) {
       str = arr.slice(0, searchResult);

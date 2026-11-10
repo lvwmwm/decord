@@ -1,16 +1,16 @@
-// Module ID: 8258
-// Function ID: 8259
+// Module ID: 8262
+// Function ID: 8263
 // Name: FormText
-// Dependencies: [19, 21, 5140, 6833, 575, 1187, 2]
+// Dependencies: [19, 21, 5142, 6836, 575, 1187, 2]
 // Exports: default
 
-// Module 8258 (FormText)
+// Module 8262 (FormText)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
-import LegacyTokens from "LegacyTokens" /* 6833 */;
+import LegacyTokens from "LegacyTokens" /* 6836 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5140 */;
+import createStyles from "createStyles" /* 5142 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

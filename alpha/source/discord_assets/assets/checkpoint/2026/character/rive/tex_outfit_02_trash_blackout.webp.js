@@ -1,8 +1,8 @@
-// Module ID: 13770
-// Function ID: 13771
+// Module ID: 13789
+// Function ID: 13790
 // Dependencies: [2]
 
-// Module 13770
+// Module 13789
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/rive/tex_outfit_02_trash_blackout.webp.js");

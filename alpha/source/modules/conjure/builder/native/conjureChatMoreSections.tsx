@@ -1,15 +1,15 @@
-// Module ID: 12388
-// Function ID: 12389
+// Module ID: 12397
+// Function ID: 12398
 // Name: conjureChatMoreSections
-// Dependencies: [6899, 1113, 4026, 7633, 10965, 12389, 12391, 9288, 10999, 5864, 11215, 7196, 5851, 12393, 5857, 12397, 12400, 12402, 10643, 12046, 12395, 7162, 12399, 5862, 2]
+// Dependencies: [6902, 1113, 4028, 7636, 10974, 12398, 12400, 9294, 11008, 5866, 11224, 7199, 5853, 12402, 5859, 12406, 12415, 12417, 10652, 12055, 12404, 7165, 12414, 5864, 2]
 // Exports: conjureChatMoreSections
 
-// Module 12388 (conjureChatMoreSections)
-import conjureProjectMute from "conjureProjectMute" /* 10999 */;
-import conjureProjectActions from "conjureProjectActions" /* 12393 */;
-import openConjureRemoveAppAlertDefault from "openConjureRemoveAppAlert" /* 12395 */;
-import openConjureUnpublishUserAppAlertDefault from "openConjureUnpublishUserAppAlert" /* 12399 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6899 */;
+// Module 12397 (conjureChatMoreSections)
+import conjureProjectMute from "conjureProjectMute" /* 11008 */;
+import conjureProjectActions from "conjureProjectActions" /* 12402 */;
+import openConjureRemoveAppAlertDefault from "openConjureRemoveAppAlert" /* 12404 */;
+import openConjureUnpublishUserAppAlertDefault from "openConjureUnpublishUserAppAlert" /* 12414 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6902 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -56,14 +56,14 @@ export function conjureChatMoreSections(project) {
   ({ annotate, onRefresh, onDebug, onConnectTool, preview } = project);
   ({ onOpenSettings, onRemix, onHistory } = project);
   const tmp = closure_4(project);
-  let obj = { kind: "action", key: "settings", label: intl.string(require("module_4026").I2XSKe), IconComponent: project(removeTarget[3]).SettingsIcon, onPress: onOpenSettings };
+  let obj = { kind: "action", key: "settings", label: intl.string(require("module_4028").I2XSKe), IconComponent: project(removeTarget[3]).SettingsIcon, onPress: onOpenSettings };
   const tmp2 = project;
   intl = project(removeTarget[1]).intl;
   const items = [obj];
   const tmp5 = preview(project) && !managedCopy;
   if (tmp5) {
     const push = items.push;
-    const obj2 = { kind: "action", key: "remix", label: intl2.string(require("module_4026")["276ll6"]), IconComponent: tmp2(removeTarget[4]).PaperPlusIcon, onPress: onRemix };
+    const obj2 = { kind: "action", key: "remix", label: intl2.string(require("module_4028")["276ll6"]), IconComponent: tmp2(removeTarget[4]).PaperPlusIcon, onPress: onRemix };
     intl2 = tmp2(tmp3[1]).intl;
     push(obj2);
   }
@@ -81,7 +81,7 @@ export function conjureChatMoreSections(project) {
   }
   if (null != onRefresh) {
     const push2 = items.push;
-    const obj3 = { kind: "action", key: "refresh", label: intl4.string(require("module_4026")["p4B/7M"]), IconComponent: tmp2(removeTarget[6]).RefreshIcon, onPress: onRefresh };
+    const obj3 = { kind: "action", key: "refresh", label: intl4.string(require("module_4028")["p4B/7M"]), IconComponent: tmp2(removeTarget[6]).RefreshIcon, onPress: onRefresh };
     intl4 = tmp2(tmp3[1]).intl;
     push2(obj3);
   }
@@ -98,7 +98,7 @@ export function conjureChatMoreSections(project) {
   };
   const push3 = items.push;
   intl5 = tmp2(tmp3[1]).intl;
-  const obj4 = { kind: "action", key: "history", label: intl6.string(require("module_4026")["3hIVou"]), IconComponent: tmp2(removeTarget[9]).ClockIcon, onPress: onHistory };
+  const obj4 = { kind: "action", key: "history", label: intl6.string(require("module_4028")["3hIVou"]), IconComponent: tmp2(removeTarget[9]).ClockIcon, onPress: onHistory };
   intl6 = tmp2(tmp3[1]).intl;
   push3(entry1, obj4);
   let items1;
@@ -147,7 +147,7 @@ export function conjureChatMoreSections(project) {
   const obj6 = {
     kind: "action",
     key: "export",
-    label: intl8.string(require("module_4026").WsEEP7),
+    label: intl8.string(require("module_4028").WsEEP7),
     IconComponent: tmp2(removeTarget[14]).DownloadIcon,
     onPress() {
       const obj = conjureProjectActions;
@@ -162,7 +162,7 @@ export function conjureChatMoreSections(project) {
     const obj7 = {
       kind: "action",
       key: "import",
-      label: intl9.string(require("module_4026").rWGY3e),
+      label: intl9.string(require("module_4028").rWGY3e),
       IconComponent: tmp2(removeTarget[15]).FileUpIcon,
       onPress() {
           const obj = conjureProjectActions;
@@ -175,13 +175,13 @@ export function conjureChatMoreSections(project) {
   const items3 = [];
   if (null != onDebug) {
     const push5 = items3.push;
-    const obj8 = { kind: "action", key: "debug", label: intl10.string(require("module_4026")["Q4FN+H"]), IconComponent: tmp2(removeTarget[16]).BugIcon, onPress: onDebug };
+    const obj8 = { kind: "action", key: "debug", label: intl10.string(require("module_4028")["Q4FN+H"]), IconComponent: tmp2(removeTarget[16]).BugIcon, onPress: onDebug };
     intl10 = tmp2(tmp3[1]).intl;
     push5(obj8);
   }
   if (null != onConnectTool) {
     const push6 = items3.push;
-    const obj9 = { kind: "action", key: "connect-tool", label: intl11.string(require("module_4026").yOIql5), IconComponent: tmp2(removeTarget[17]).LinkPlusIcon, onPress: onConnectTool };
+    const obj9 = { kind: "action", key: "connect-tool", label: intl11.string(require("module_4028").yOIql5), IconComponent: tmp2(removeTarget[17]).LinkPlusIcon, onPress: onConnectTool };
     intl11 = tmp2(tmp3[1]).intl;
     push6(obj9);
   }
@@ -189,7 +189,7 @@ export function conjureChatMoreSections(project) {
   const obj10 = {
     kind: "action",
     key: "copy-project-id",
-    label: intl12.string(require("module_4026")["nm/zuU"]),
+    label: intl12.string(require("module_4028")["nm/zuU"]),
     IconComponent: tmp2(removeTarget[18]).IdIcon,
     onPress() {
       const obj = conjureProjectActions;
@@ -207,7 +207,7 @@ export function conjureChatMoreSections(project) {
     const obj11 = {
       kind: "action",
       key: "remove-from-server",
-      label: intl13.formatToPlainString(require("module_4026")["3gKG2j"], obj12),
+      label: intl13.formatToPlainString(require("module_4028")["3gKG2j"], obj12),
       IconComponent: tmp2(removeTarget[19]).DoorExitIcon,
       destructive: true,
       onPress() {
@@ -225,7 +225,7 @@ export function conjureChatMoreSections(project) {
     const obj13 = {
       kind: "action",
       key: "unpublish",
-      label: intl14.string(require("module_4026").jYAR58),
+      label: intl14.string(require("module_4028").jYAR58),
       IconComponent: tmp2(removeTarget[21]).EyeSlashIcon,
       destructive: true,
       onPress() {

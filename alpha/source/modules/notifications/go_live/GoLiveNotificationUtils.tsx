@@ -1,14 +1,14 @@
-// Module ID: 18289
-// Function ID: 18290
+// Module ID: 18318
+// Function ID: 18319
 // Name: go_live/GoLiveNotificationUtils
-// Dependencies: [5085, 1072, 4965, 1252, 2]
+// Dependencies: [5087, 1072, 4967, 1252, 2]
 // Exports: onNotifyServerMembersOnGoLiveSettingsChanged
 
-// Module 18289 (go_live/GoLiveNotificationUtils)
+// Module 18318 (go_live/GoLiveNotificationUtils)
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import UserSettings from "UserSettings" /* 4965 */;
-import NotificationConstants from "NotificationConstants" /* 5085 */;
+import UserSettings from "UserSettings" /* 4967 */;
+import NotificationConstants from "NotificationConstants" /* 5087 */;
 import size from "module_2" /* 2 */;
 
 const constants = NotificationConstants.NotificationSettingsUpdateType;

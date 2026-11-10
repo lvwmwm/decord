@@ -1,24 +1,24 @@
-// Module ID: 13632
-// Function ID: 13633
+// Module ID: 13645
+// Function ID: 13646
 // Name: ChannelTabsActionCreators
-// Dependencies: [4989, 5043, 5171, 13630, 1072, 4996, 5888, 1099, 5885, 5189, 5176, 5014, 5889, 572, 2]
+// Dependencies: [4991, 5045, 5173, 13643, 1072, 4998, 5890, 1099, 5887, 5191, 5178, 5016, 5891, 572, 2]
 // Exports: closeChannelTab, cycleChannelTab, goBackInActiveTab, goForwardInActiveTab, moveChannelTab, navigateToRoute, openChannelTab, openDuplicateTab, setChannelTabPinned, setChannelTabsEnabled
 
-// Module 13632 (ChannelTabsActionCreators)
+// Module 13645 (ChannelTabsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import router_utils from "router_utils" /* 1099 */;
-import FavoritesUtils from "FavoritesUtils" /* 5014 */;
-import matchPathCompat from "matchPathCompat" /* 5176 */;
-import RouteUtils from "RouteUtils" /* 5189 */;
-import transitionToChannel from "transitionToChannel" /* 5885 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5888 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5889 */;
-import ChannelStore from "ChannelStore" /* 4989 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5043 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5171 */;
-import ChannelTabsStore from "ChannelTabsStore" /* 13630 */;
+import FavoritesUtils from "FavoritesUtils" /* 5016 */;
+import matchPathCompat from "matchPathCompat" /* 5178 */;
+import RouteUtils from "RouteUtils" /* 5191 */;
+import transitionToChannel from "transitionToChannel" /* 5887 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5890 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5891 */;
+import ChannelStore from "ChannelStore" /* 4991 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5045 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5173 */;
+import ChannelTabsStore from "ChannelTabsStore" /* 13643 */;
 import Constants from "Constants" /* 1072 */;
-import ChannelConstants from "ChannelConstants" /* 4996 */;
+import ChannelConstants from "ChannelConstants" /* 4998 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -176,7 +176,7 @@ function openChannelTabActive(id, guildId, quick_switcher) {
       const channel1 = ChannelStore.getChannel(id);
       const tmp27 = null != channel1 && channel1.isGuildVocal();
       if (tmp27) {
-        const tmp15Result = tmp15(5888);
+        const tmp15Result = tmp15(5890);
         tmp15Result.updateChatOpen(id, true);
       }
       if (null != guildId) {
@@ -252,7 +252,7 @@ function navigateActiveTabHistory(arg0) {
               const channel = obj11.getChannel(channelId);
               const tmp8 = null != channel && channel.isGuildVocal();
               if (tmp8) {
-                const tmp36Result = tmp36(5888);
+                const tmp36Result = tmp36(5890);
                 tmp36Result.updateChatOpen(channelId, true);
               }
               if (null != guildId) {
@@ -455,7 +455,7 @@ export function moveChannelTab(tabId, toIndex) {
   const tmp6 = -1 !== findIndexResult && -1 !== findIndexResult1 && findIndexResult1 !== findIndexResult;
   if (tmp6) {
     const obj3 = { from_index: findIndexResult, to_index: findIndexResult1, is_pinned: tabs1[findIndexResult1].pinned };
-    const trackWithMetadata = tmp2(5889).trackWithMetadata;
+    const trackWithMetadata = tmp2(5891).trackWithMetadata;
     const CHANNEL_TAB_REORDERED = metroImportDefault.CHANNEL_TAB_REORDERED;
     AppAnalyticsUtilsDefault;
     const merged = Object.assign(getTabProperties(tabs1[findIndexResult1]));
@@ -479,7 +479,7 @@ export function setChannelTabPinned(tabId, pinned, source) {
   const tmp7 = null != found1 && pinned !== found1.pinned;
   if (tmp7) {
     const obj4 = { source, pinned: found1.pinned };
-    const trackWithMetadata = tmp3(5889).trackWithMetadata;
+    const trackWithMetadata = tmp3(5891).trackWithMetadata;
     const CHANNEL_TAB_PIN_TOGGLED = metroImportDefault.CHANNEL_TAB_PIN_TOGGLED;
     AppAnalyticsUtilsDefault;
     const merged = Object.assign(getTabProperties(found1));
@@ -500,7 +500,7 @@ export function closeChannelTab(tabId, source) {
     const tmp20 = !someResult;
     if (tmp20) {
       const obj4 = { source, was_active: tmp15, was_pinned: found.pinned };
-      const trackWithMetadata = tmp16(5889).trackWithMetadata;
+      const trackWithMetadata = tmp16(5891).trackWithMetadata;
       const CHANNEL_TAB_CLOSED = metroImportDefault.CHANNEL_TAB_CLOSED;
       AppAnalyticsUtilsDefault;
       const merged = Object.assign(getTabProperties(found));

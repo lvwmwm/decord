@@ -1,19 +1,19 @@
-// Module ID: 14726
-// Function ID: 14727
+// Module ID: 14752
+// Function ID: 14753
 // Name: PremiumGiftSuccess
-// Dependencies: [19, 17, 9714, 4986, 21, 5140, 575, 1627, 10681, 38, 14727, 10741, 10725, 504, 4974, 4973, 14728, 14729, 14730, 2]
+// Dependencies: [19, 17, 9720, 4988, 21, 5142, 575, 1627, 10690, 38, 14753, 10750, 10734, 504, 4976, 4975, 14754, 14755, 14756, 2]
 // Exports: default
 
-// Module 14726 (PremiumGiftSuccess)
+// Module 14752 (PremiumGiftSuccess)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import dismissible_content from "dismissible_content" /* 4973 */;
-import DismissibleContentUtils from "DismissibleContentUtils" /* 4974 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4986 */;
+import dismissible_content from "dismissible_content" /* 4975 */;
+import DismissibleContentUtils from "DismissibleContentUtils" /* 4976 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4988 */;
 import react from "react" /* 19 */;
-import PromotionsStore from "PromotionsStore" /* 9714 */;
+import PromotionsStore from "PromotionsStore" /* 9720 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5140 */;
+import createStyles from "createStyles" /* 5142 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

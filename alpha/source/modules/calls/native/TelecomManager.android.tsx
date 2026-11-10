@@ -1,35 +1,35 @@
-// Module ID: 20033
-// Function ID: 20034
+// Module ID: 20061
+// Function ID: 20062
 // Name: TelecomManager
-// Dependencies: [5, 17, 11161, 6769, 502, 6624, 4989, 2130, 11141, 5893, 5082, 5195, 1385, 1072, 5897, 3, 16708, 7350, 20034, 6761, 7551, 8008, 6047, 12081, 12086, 1624, 5776, 11160, 2]
+// Dependencies: [5, 17, 11170, 6771, 502, 6626, 4991, 2130, 11150, 5895, 5084, 5197, 1385, 1072, 5899, 3, 16735, 7353, 20062, 6763, 7554, 8012, 6049, 12090, 12095, 1624, 5778, 11169, 2]
 
-// Module 20033 (TelecomManager)
+// Module 20061 (TelecomManager)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants from "Constants" /* 1072 */;
 import MetaQuestUtils from "MetaQuestUtils" /* 1624 */;
-import Constants2 from "Constants" /* 5897 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 6047 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6761 */;
-import CallActionCreatorsDefault from "CallActionCreators" /* 7551 */;
-import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 8008 */;
-import useHasVideoPermission from "useHasVideoPermission" /* 12081 */;
-import useScreenshareUtils from "useScreenshareUtils" /* 12086 */;
-import react_nativeDefault from "react-native" /* 16708 */;
-import react_nativeDefault2 from "react-native" /* 20034 */;
+import Constants2 from "Constants" /* 5899 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 6049 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6763 */;
+import CallActionCreatorsDefault from "CallActionCreators" /* 7554 */;
+import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 8012 */;
+import useHasVideoPermission from "useHasVideoPermission" /* 12090 */;
+import useScreenshareUtils from "useScreenshareUtils" /* 12095 */;
+import react_nativeDefault from "react-native" /* 16735 */;
+import react_nativeDefault2 from "react-native" /* 20062 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_native from "react-native" /* 17 */;
-import SoundpackStore from "SoundpackStore" /* 11161 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6769 */;
+import SoundpackStore from "SoundpackStore" /* 11170 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6771 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import CallStore from "CallStore" /* 6624 */;
-import ChannelStore from "ChannelStore" /* 4989 */;
+import CallStore from "CallStore" /* 6626 */;
+import ChannelStore from "ChannelStore" /* 4991 */;
 import MediaEngineStore from "MediaEngineStore" /* 2130 */;
-import NotificationSettingsStore from "NotificationSettingsStore" /* 11141 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5893 */;
-import RelationshipStore from "RelationshipStore" /* 5082 */;
-import StreamerModeStore from "StreamerModeStore" /* 5195 */;
+import NotificationSettingsStore from "NotificationSettingsStore" /* 11150 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5895 */;
+import RelationshipStore from "RelationshipStore" /* 5084 */;
+import StreamerModeStore from "StreamerModeStore" /* 5197 */;
 import UserStore from "UserStore" /* 1385 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7350 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7353 */;
 import size from "module_2" /* 2 */;
 
 let _require, c4, c5, closure_2, map, set;
@@ -37,7 +37,7 @@ let _require, c4, c5, closure_2, map, set;
 let NativeEventEmitter;
 let closure_4;
 let tmp;
-const SoundUtils = tmp(11160);
+const SoundUtils = tmp(11169);
 ({ DeviceEventEmitter: closure_4, NativeEventEmitter } = react_native);
 const ApplicationStreamStates = Constants.ApplicationStreamStates;
 const MediaEngineContextTypes = Constants2.MediaEngineContextTypes;
@@ -158,7 +158,7 @@ class TelecomManager extends AutomaticLifecycleManager {
                 if (obj3.getOSRequirement()) {
                   if (videoPermission) {
                     obj.info("Starting screen share from Call Bar");
-                    const tmp5Result = tmp5(12086);
+                    const tmp5Result = tmp5(12095);
                     tmp5Result.startStream();
                   } else {
                     obj.warn("Cannot start screen share from Call Bar: user lacks streaming permission in this channel");
@@ -374,8 +374,8 @@ class TelecomManager extends AutomaticLifecycleManager {
       currentCall.info("Reporting incoming call to Telecom:", channelId, "callerName:", channelName);
       self.startRingtone();
       let tmp20 = null;
-      const reportIncomingCall = self(20034).reportIncomingCall;
-      self(20034);
+      const reportIncomingCall = self(20062).reportIncomingCall;
+      self(20062);
       if (null != guildId) {
         tmp20 = { guildId };
         const obj3 = { guildId };
@@ -402,7 +402,7 @@ class TelecomManager extends AutomaticLifecycleManager {
     const self = this;
     let closure_0 = channelId;
     obj.info("Cancelling incoming call:", channelId);
-    obj = self(20034);
+    obj = self(20062);
     const cancelIncomingCallResult = obj.cancelIncomingCall(channelId);
     const nextPromise = cancelIncomingCallResult.then(() => {
       self.clearCall(channelId);
@@ -831,7 +831,7 @@ class TelecomManager extends AutomaticLifecycleManager {
     let obj;
     const self = this;
     obj.info("Ending call:", channelId.channelId);
-    obj = self(20034);
+    obj = self(20062);
     const endCallResult = obj.endCall(channelId.channelId);
     const nextPromise = endCallResult.then((result) => {
       self.clearCall(channelId.channelId);
@@ -986,7 +986,7 @@ class TelecomManager extends AutomaticLifecycleManager {
             const result = self.clearPendingScreenShareOffSync();
             if (null != currentUserActiveStream && currentUserActiveStream.state === ApplicationStreamStates.ACTIVE) {
               obj.info("Syncing Discord -> Call Bar screen share state: true");
-              obj = self(20034);
+              obj = self(20062);
               obj.setScreenShareState(self.currentCall.channelId, true, true);
             } else {
               let channelId = self.currentCall.channelId;

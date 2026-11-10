@@ -1,14 +1,14 @@
-// Module ID: 5172
-// Function ID: 5173
+// Module ID: 5174
+// Function ID: 5175
 // Name: UserGuildJoinRequestStore
-// Dependencies: [1385, 5173, 504, 5003, 572, 2]
+// Dependencies: [1385, 5175, 504, 5005, 572, 2]
 // Exports: joinRequestFromServer
 
-// Module 5172 (UserGuildJoinRequestStore)
+// Module 5174 (UserGuildJoinRequestStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import GuildRecordUtils from "GuildRecordUtils" /* 5003 */;
-import GuildJoinRequestUtils from "GuildJoinRequestUtils" /* 5173 */;
+import GuildRecordUtils from "GuildRecordUtils" /* 5005 */;
+import GuildJoinRequestUtils from "GuildJoinRequestUtils" /* 5175 */;
 import UserStore from "UserStore" /* 1385 */;
 import size from "module_2" /* 2 */;
 

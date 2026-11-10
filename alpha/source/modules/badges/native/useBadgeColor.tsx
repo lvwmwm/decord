@@ -1,13 +1,13 @@
-// Module ID: 11622
-// Function ID: 11623
+// Module ID: 11631
+// Function ID: 11632
 // Name: useBadgeColor
-// Dependencies: [5, 32, 19, 575, 1453, 5258, 11623, 2022, 2]
+// Dependencies: [5, 32, 19, 575, 1453, 5260, 11632, 2022, 2]
 // Exports: useBadgeColor
 
-// Module 11622 (useBadgeColor)
+// Module 11631 (useBadgeColor)
 import nativeDefault from "native" /* 575 */;
 import LRUCacheDefault from "LRUCache" /* 1453 */;
-import utils_FunctionUtils from "utils/FunctionUtils" /* 5258 */;
+import utils_FunctionUtils from "utils/FunctionUtils" /* 5260 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

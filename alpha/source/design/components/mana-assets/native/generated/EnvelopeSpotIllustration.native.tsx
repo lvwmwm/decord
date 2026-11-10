@@ -1,26 +1,26 @@
-// Module ID: 13600
-// Function ID: 13601
+// Module ID: 13613
+// Function ID: 13614
 // Name: EnvelopeSpotIllustration
-// Dependencies: [19, 21, 13601, 13602, 13603, 7135, 5842, 2]
+// Dependencies: [19, 21, 13614, 13615, 13616, 7138, 5844, 2]
 // Exports: EnvelopeSpotIllustration
 
-// Module 13600 (EnvelopeSpotIllustration)
+// Module 13613 (EnvelopeSpotIllustration)
 import Fragment from "Fragment" /* 21 */;
-import react_native from "react-native" /* 7135 */;
-import _modDef13601 from "module_13601" /* 13601 */;
-import _modDef13602 from "module_13602" /* 13602 */;
-import _modDef13603 from "module_13603" /* 13603 */;
+import react_native from "react-native" /* 7138 */;
+import _modDef13614 from "module_13614" /* 13614 */;
+import _modDef13615 from "module_13615" /* 13615 */;
+import _modDef13616 from "module_13616" /* 13616 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef13601 };
+let obj2 = { uri: _modDef13614 };
 obj[1] = obj2;
-let obj3 = { uri: _modDef13602 };
+let obj3 = { uri: _modDef13615 };
 obj[2] = obj3;
-obj[3] = { uri: _modDef13603 };
-({ uri: _modDef13603 });
+obj[3] = { uri: _modDef13616 };
+({ uri: _modDef13616 });
 let size = size_mod;
 const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/EnvelopeSpotIllustration.native.tsx");
 

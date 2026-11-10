@@ -1,9 +1,9 @@
-// Module ID: 19425
-// Function ID: 19426
+// Module ID: 19454
+// Function ID: 19455
 // Name: MainViewTooltipActionSheetsDisabledExperiment
 // Dependencies: [1449, 2]
 
-// Module 19425 (MainViewTooltipActionSheetsDisabledExperiment)
+// Module 19454 (MainViewTooltipActionSheetsDisabledExperiment)
 import ApexExperiment from "ApexExperiment" /* 1449 */;
 import size from "module_2" /* 2 */;
 

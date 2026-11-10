@@ -1,20 +1,20 @@
-// Module ID: 15180
-// Function ID: 15181
+// Module ID: 15206
+// Function ID: 15207
 // Name: useConjureServerWidgetOffers
-// Dependencies: [5, 19, 11077, 5011, 1385, 6899, 559, 6900, 11076, 1282, 504, 1449, 7483, 10996, 15177, 7853, 15181, 15182, 2]
+// Dependencies: [5, 19, 11086, 5013, 1385, 6902, 559, 6903, 11085, 1282, 504, 1449, 7486, 11005, 15203, 7857, 15207, 15208, 2]
 // Exports: default
 
-// Module 15180 (useConjureServerWidgetOffers)
+// Module 15206 (useConjureServerWidgetOffers)
 import BackoffDefault from "Backoff" /* 559 */;
-import ConjureProjectTypes from "ConjureProjectTypes" /* 6900 */;
-import UserProfileApplicationWidgetTypes from "UserProfileApplicationWidgetTypes" /* 7853 */;
-import useAddableWidgets from "useAddableWidgets" /* 15182 */;
+import ConjureProjectTypes from "ConjureProjectTypes" /* 6903 */;
+import UserProfileApplicationWidgetTypes from "UserProfileApplicationWidgetTypes" /* 7857 */;
+import useAddableWidgets from "useAddableWidgets" /* 15208 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ApplicationWidgetConfigStore from "ApplicationWidgetConfigStore" /* 11077 */;
-import GuildStore from "GuildStore" /* 5011 */;
+import ApplicationWidgetConfigStore from "ApplicationWidgetConfigStore" /* 11086 */;
+import GuildStore from "GuildStore" /* 5013 */;
 import UserStore from "UserStore" /* 1385 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6899 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6902 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -104,7 +104,7 @@ let obj = function _loadWidgetConfigs() {
                       closure_0 = undefined;
                       if (closure_0()) {
                         c6 = 3;
-                        const obj5 = { value: { v: "uri" }, done: true };
+                        const obj5 = { value: { v: "r" }, done: true };
                         return obj5;
                       } else {
                         c4 = 1;
@@ -159,7 +159,7 @@ let obj = function _loadWidgetConfigs() {
                         return obj10;
                       } else if (closure_130_0()) {
                         c6 = 3;
-                        const obj11 = { value: { v: "uri" }, done: true };
+                        const obj11 = { value: { v: "r" }, done: true };
                         return obj11;
                       } else {
                         c4 = 2;

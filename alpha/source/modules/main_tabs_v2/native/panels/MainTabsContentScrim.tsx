@@ -1,15 +1,15 @@
-// Module ID: 18956
-// Function ID: 18957
+// Module ID: 18985
+// Function ID: 18986
 // Name: MainTabsContentScrim
-// Dependencies: [17, 21, 5140, 575, 1652, 2]
+// Dependencies: [17, 21, 5142, 575, 1652, 2]
 // Exports: MainTabsContentScrim
 
-// Module 18956 (MainTabsContentScrim)
+// Module 18985 (MainTabsContentScrim)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1652 from "module_1652" /* 1652 */;
-import createStyles_mod from "createStyles" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5142 */;
 import size from "module_2" /* 2 */;
 
 const _modDef1652 = _mod1652;

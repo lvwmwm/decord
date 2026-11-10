@@ -1,14 +1,14 @@
-// Module ID: 8042
-// Function ID: 8043
+// Module ID: 8046
+// Function ID: 8047
 // Name: ExpressiveGradient
-// Dependencies: [19, 17, 21, 575, 5724, 671, 5715, 2]
+// Dependencies: [19, 17, 21, 575, 5726, 671, 5717, 2]
 // Exports: ExpressiveGradient
 
-// Module 8042 (ExpressiveGradient)
+// Module 8046 (ExpressiveGradient)
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
-import LinearGradientDefault from "LinearGradient" /* 5715 */;
-import useToken from "useToken" /* 5724 */;
+import LinearGradientDefault from "LinearGradient" /* 5717 */;
+import useToken from "useToken" /* 5726 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;

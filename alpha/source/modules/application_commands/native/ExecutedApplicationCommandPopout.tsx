@@ -1,41 +1,41 @@
-// Module ID: 10274
-// Function ID: 10275
+// Module ID: 10280
+// Function ID: 10281
 // Name: ExecutedApplicationCommandPopout
-// Dependencies: [19, 17, 5141, 4989, 5046, 5011, 6194, 5082, 1385, 9852, 6167, 1072, 1498, 6168, 21, 5140, 575, 2116, 1187, 5374, 8821, 5194, 5751, 5776, 1113, 7387, 504, 6572, 9370, 8490, 5842, 1414, 7040, 10275, 5836, 7038, 1625, 5807, 6159, 7126, 7412, 8772, 5388, 2]
+// Dependencies: [19, 17, 5143, 4991, 5048, 5013, 6196, 5084, 1385, 9858, 6169, 1072, 1498, 6170, 21, 5142, 575, 2116, 1187, 5376, 8827, 5196, 5753, 5778, 1113, 7390, 504, 6574, 9376, 8494, 5844, 1414, 7043, 10281, 5838, 7041, 1625, 5809, 6161, 7129, 7415, 8778, 5390, 2]
 // Exports: default
 
-// Module 10274 (ExecutedApplicationCommandPopout)
+// Module 10280 (ExecutedApplicationCommandPopout)
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
 import utils_AvatarUtils from "utils/AvatarUtils" /* 1414 */;
 import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1498 */;
 import KeyboardTypes from "KeyboardTypes" /* 1625 */;
 import Server from "Server" /* 2116 */;
-import UserUtilsDefault from "UserUtils" /* 5194 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
-import Text_Text from "Text/Text" /* 5751 */;
-import useChannelName from "useChannelName" /* 5776 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5807 */;
-import ToastUtils from "ToastUtils" /* 5836 */;
-import FastImageDefault from "FastImage" /* 5842 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6167 */;
-import InteractionActionCreatorsAll from "InteractionActionCreators" /* 8772 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8821 */;
-import react_nativeDefault from "react-native" /* 10275 */;
+import UserUtilsDefault from "UserUtils" /* 5196 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5376 */;
+import Text_Text from "Text/Text" /* 5753 */;
+import useChannelName from "useChannelName" /* 5778 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5809 */;
+import ToastUtils from "ToastUtils" /* 5838 */;
+import FastImageDefault from "FastImage" /* 5844 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6169 */;
+import InteractionActionCreatorsAll from "InteractionActionCreators" /* 8778 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8827 */;
+import react_nativeDefault from "react-native" /* 10281 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5141 */;
-import ChannelStore from "ChannelStore" /* 4989 */;
-import GuildRoleStore from "GuildRoleStore" /* 5046 */;
-import GuildStore from "GuildStore" /* 5011 */;
-import MessageStore from "MessageStore" /* 6194 */;
-import RelationshipStore from "RelationshipStore" /* 5082 */;
+import AccessibilityStore from "AccessibilityStore" /* 5143 */;
+import ChannelStore from "ChannelStore" /* 4991 */;
+import GuildRoleStore from "GuildRoleStore" /* 5048 */;
+import GuildStore from "GuildStore" /* 5013 */;
+import MessageStore from "MessageStore" /* 6196 */;
+import RelationshipStore from "RelationshipStore" /* 5084 */;
 import UserStore from "UserStore" /* 1385 */;
-import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9852 */;
+import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9858 */;
 import Constants from "Constants" /* 1072 */;
-import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 6168 */;
+import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 6170 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5142 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_16;
@@ -111,7 +111,7 @@ function getCommandOptionComponents(option) {
         }
         function getCommandValueText(intl) {
           const obj = { variant: "body-sm/medium", color: "mobile-text-heading-primary", children: intl };
-          return authStore6(Text_Text.Text, obj, "optionValue-" + iter.name);
+          return authStore5(Text_Text.Text, obj, "optionValue-" + iter.name);
         }
         const type = iter.type;
         if (iter(2116).ApplicationCommandOptionType.USER === type) {
@@ -129,7 +129,7 @@ function getCommandOptionComponents(option) {
             let obj = { style: styles.commandOptionMentionText, children: items1 };
             items1 = [closure_19, ];
             let LegacyText = tmp6(1187).LegacyText;
-            const tmp6Result = iter(5776);
+            const tmp6Result = iter(5778);
             items1[1] = tmp6Result.computeChannelName(channel1, UserStore, RelationshipStore);
             const _HermesInternal3 = HermesInternal;
             userComponent = closure_23(LegacyText, obj, "optionValue-" + iter.name);
@@ -421,7 +421,7 @@ function CommandContentContainer(channelId) {
       let tmp3;
       let tmp2;
       const Text = Text_Text.Text;
-      const tmp = authStore6;
+      const tmp = authStore5;
       if (closure_14) {
         tmp2 = processColorStringsArray;
       }
@@ -443,7 +443,7 @@ function CommandContentContainer(channelId) {
     commandHook() {
       let children;
       const Text = Text_Text.Text;
-      const tmp = authStore6;
+      const tmp = authStore5;
       if (closure_5 === constants.CHAT_INPUT_COMMAND) {
         const _HermesInternal = HermesInternal;
         children = "" + closure_20 + name_localized;
@@ -459,9 +459,9 @@ function CommandContentContainer(channelId) {
       const obj2 = { style: styles.applicationIcon, source: obj3.ensureAvatarSource(importAll.getAvatarSource(guildId)) };
       const tmp = FastImageDefault;
       obj3 = utils_AvatarUtils;
-      items = [authStore6(tmp, obj2, "icon-" + importAll.id), ];
+      items = [authStore5(tmp, obj2, "icon-" + importAll.id), ];
       const obj4 = { variant: "body-md/semibold", color: "mobile-text-heading-primary", children: importAll.username };
-      items[1] = authStore6(Text_Text.Text, obj4);
+      items[1] = authStore5(Text_Text.Text, obj4);
       return sidebars(metroRequire, obj, "application");
     }
   };
@@ -474,7 +474,7 @@ function CommandContentContainer(channelId) {
   const memo = guildId.useMemo(() => {
     let items = [];
     const obj = { children: `/${name_localized}` };
-    items[0] = authStore6(native.LegacyText, obj, "integrationName-" + data.name);
+    items[0] = authStore5(native.LegacyText, obj, "integrationName-" + data.name);
     let combined = items;
     if (null != data.options) {
       const application_command = tmp.application_command;
@@ -736,8 +736,8 @@ export default function ExecutedCommandPopout(channelId) {
   const stateFromStores = obj.useStateFromStores(items, () => MessageStore.getMessage(channelId, messageId));
   const items1 = [channelId, messageId, ];
   let interactionData;
-  const tmp5 = messageId(7387);
-  const analyticsLocations = tmp5(messageId(7412).EXECUTED_COMMAND).analyticsLocations;
+  const tmp5 = messageId(7390);
+  const analyticsLocations = tmp5(messageId(7415).EXECUTED_COMMAND).analyticsLocations;
   const useEffect = react.useEffect;
   if (stateFromStores != null) {
     interactionData = stateFromStores.interactionData;
@@ -770,10 +770,10 @@ export default function ExecutedCommandPopout(channelId) {
     }
   }, items1);
   const obj2 = { value: analyticsLocations, children: closure_22(BottomSheet, obj3) };
-  const AnalyticsLocationProvider = tmp2(7387).AnalyticsLocationProvider;
+  const AnalyticsLocationProvider = tmp2(7390).AnalyticsLocationProvider;
   let interactionData1;
   obj3 = { startExpanded: true, bodyStyles: tmp.container, children: tmp9Result };
-  BottomSheet = tmp2(5388).BottomSheet;
+  BottomSheet = tmp2(5390).BottomSheet;
   if (stateFromStores != null) {
     interactionData1 = stateFromStores.interactionData;
   }

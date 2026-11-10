@@ -1,18 +1,18 @@
-// Module ID: 13410
-// Function ID: 13411
+// Module ID: 13424
+// Function ID: 13425
 // Name: joinFrameActivity
-// Dependencies: [5, 2162, 4989, 5803, 6902, 1072, 11855, 572, 11894, 11850, 5799, 11895, 11071, 1113, 11913, 13411, 11689, 11066, 6580, 13412, 9405, 7549, 11839, 2]
+// Dependencies: [5, 2162, 4991, 5805, 6905, 1072, 11864, 572, 11859, 5801, 11904, 11080, 1113, 11922, 13425, 11698, 11075, 6582, 13426, 11903, 9411, 7552, 11848, 2]
 // Exports: default
 
-// Module 13410 (joinFrameActivity)
-import FramesConstants from "FramesConstants" /* 6902 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7549 */;
-import UserActivityActionCreators from "UserActivityActionCreators" /* 11839 */;
-import Constants2 from "Constants" /* 11855 */;
+// Module 13424 (joinFrameActivity)
+import FramesConstants from "FramesConstants" /* 6905 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7552 */;
+import UserActivityActionCreators from "UserActivityActionCreators" /* 11848 */;
+import Constants2 from "Constants" /* 11864 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ApplicationStore from "ApplicationStore" /* 2162 */;
-import ChannelStore from "ChannelStore" /* 4989 */;
-import VoiceStateStore from "VoiceStateStore" /* 5803 */;
+import ChannelStore from "ChannelStore" /* 4991 */;
+import VoiceStateStore from "VoiceStateStore" /* 5805 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -28,8 +28,9 @@ let obj = function _joinFrameActivity() {
     let c10 = 0;
     let c8 = 0;
     const iter = (async function(arg0, value) {
-      let obj20;
-      let tmp117;
+      let obj19;
+      let tmp112;
+      let tmp47;
       function getActivityChannelId() {
         return closure_1_14(...arguments);
       }
@@ -59,7 +60,6 @@ let obj = function _joinFrameActivity() {
           let closure_16;
           let frameId;
           let fail;
-          let tmp47;
           let tmp46;
           c10 = 2;
           switch (preferredChannelId) {
@@ -134,134 +134,131 @@ let obj = function _joinFrameActivity() {
                   obj6 = tmp58;
                 }
                 session_id2 = obj6;
-                tmp47 = undefined;
                 if (null != session_id2) {
-                  const obj15 = closure_134_0(closure_134_2[8]);
-                  if (obj15.shouldOpenAppChannel(idValue)) {
-                    session_id = getActivityChannelId(session_id2, c1);
-                    preferredChannelId = 2;
-                    c10 = 1;
-                    return { value: session_id, done: false };
-                  }
-                }
-                preferredChannelId = tmp47;
-                const obj16 = closure_134_0(closure_134_2[9]);
-                set = obj16.getFrameSurfaces(closure_134_4.getApplication(idValue));
-                const hasItem = set.has(closure_134_0(closure_134_2[10]).EmbeddedSurfaceType.MAIN);
-                hasItem1 = !hasItem && set.has(closure_134_0(closure_134_2[10]).EmbeddedSurfaceType.APP_CHANNEL);
-                tmp46 = null;
-                if (null != preferredChannelId) {
-                  const obj8 = { preferredChannelId, fallback: hasItem1 };
-                  session_id = closure_134_1(closure_134_2[11])(idValue, obj8);
-                  preferredChannelId = 3;
+                  session_id = getActivityChannelId(session_id2, c1);
+                  preferredChannelId = 2;
                   c10 = 1;
                   return { value: session_id, done: false };
                 } else {
-                  channel = tmp46;
-                  session_id = null;
-                  if (null == channel) {
-                    session_id = undefined;
-                    const tmp169 = idValue;
-                    const tmp170 = c1;
-                    if (session_id2 != null) {
-                      session_id = session_id2.session_id;
-                    }
-                    closure_2 = session_id;
-                    if (session_id == null) {
-                      closure_2 = session_id;
-                    }
-                    session_id = getVoiceChannelAppChannelId(tmp169, tmp170, closure_2);
-                    preferredChannelId = 4;
+                  preferredChannelId = tmp47;
+                  const obj15 = closure_134_0(closure_134_2[8]);
+                  set = obj15.getFrameSurfaces(closure_134_4.getApplication(idValue));
+                  const hasItem = set.has(closure_134_0(closure_134_2[9]).EmbeddedSurfaceType.MAIN);
+                  hasItem1 = !hasItem && set.has(closure_134_0(closure_134_2[9]).EmbeddedSurfaceType.APP_CHANNEL);
+                  tmp46 = null;
+                  if (null != preferredChannelId) {
+                    const obj8 = { preferredChannelId, fallback: hasItem1 };
+                    session_id = closure_134_1(closure_134_2[10])(idValue, obj8);
+                    preferredChannelId = 3;
                     c10 = 1;
                     return { value: session_id, done: false };
                   } else {
+                    channel = tmp46;
+                    session_id = null;
                     if (null == channel) {
-                      if (null == session_id) {
-                        session_id = set.has;
-                        if (!session_id(closure_134_0(closure_134_2[10]).EmbeddedSurfaceType.MAIN)) {
-                          session_id = hasItem1;
-                          if (session_id) {
-                            if (null == preferredChannelId) {
-                              session_id = closure_134_1(closure_134_2[11])(idValue);
-                              preferredChannelId = 5;
-                              c10 = 1;
-                              return { value: session_id, done: false };
-                            }
-                          } else {
-                            const tmp96 = closure_134_1(closure_134_2[12]);
-                            const intl2 = closure_134_0(closure_134_2[13]).intl;
-                            tmp96(intl2.string(closure_134_0(closure_134_2[13]).t["7XR9+7"]));
-                            session_id = fail();
-                            c10 = 3;
-                            return { value: false, done: true };
-                          }
-                        }
+                      session_id = undefined;
+                      const tmp164 = idValue;
+                      const tmp165 = c1;
+                      if (session_id2 != null) {
+                        session_id = session_id2.session_id;
                       }
-                    }
-                    if (null != session_id) {
-                      const obj13 = { channelId: session_id };
-                      session_id = closure_134_1(closure_134_2[14])(obj13);
-                      preferredChannelId = 6;
+                      closure_2 = session_id;
+                      if (session_id == null) {
+                        closure_2 = session_id;
+                      }
+                      session_id = getVoiceChannelAppChannelId(tmp164, tmp165, closure_2);
+                      preferredChannelId = 4;
                       c10 = 1;
                       return { value: session_id, done: false };
                     } else {
-                      secret = null;
-                      if (null != session_id) {
-                        c8 = 1;
-                        session_id = closure_134_2[16];
-                        const getJoinSecret = closure_134_1(session_id).getJoinSecret;
-                        const tmp143 = closure_134_1(session_id);
-                        if (null != messageId) {
-                          session_id = channelId;
-                        } else {
-                          channelId = session_id;
-                          if (session_id == null) {
-                            session_id = channel;
-                            channelId = undefined;
-                            if (channel != null) {
-                              channelId = session_id.channelId;
+                      if (null == channel) {
+                        if (null == session_id) {
+                          session_id = set.has;
+                          if (!session_id(closure_134_0(closure_134_2[9]).EmbeddedSurfaceType.MAIN)) {
+                            session_id = hasItem1;
+                            if (session_id) {
+                              if (null == preferredChannelId) {
+                                session_id = closure_134_1(closure_134_2[10])(idValue);
+                                preferredChannelId = 5;
+                                c10 = 1;
+                                return { value: session_id, done: false };
+                              }
+                            } else {
+                              const tmp91 = closure_134_1(closure_134_2[11]);
+                              const intl2 = closure_134_0(closure_134_2[12]).intl;
+                              tmp91(intl2.string(closure_134_0(closure_134_2[12]).t["7XR9+7"]));
+                              session_id = fail();
+                              c10 = 3;
+                              return { value: false, done: true };
                             }
                           }
-                          let closure_3 = channelId;
-                          if (channelId == null) {
-                            closure_3 = channelId;
-                          }
-                          session_id = closure_3;
                         }
-                        session_id = getJoinSecret(tmp144, tmp145, tmp146, session_id, messageId);
-                        preferredChannelId = 9;
+                      }
+                      if (null != session_id) {
+                        const obj13 = { channelId: session_id };
+                        session_id = closure_134_1(closure_134_2[13])(obj13);
+                        preferredChannelId = 6;
                         c10 = 1;
                         return { value: session_id, done: false };
                       } else {
+                        secret = null;
                         if (null != session_id) {
-                          const obj18 = { frameId: closure_134_7(id, obj20.voiceChannelAppSurface(session_id)), launched: Promise.resolve() };
-                          session_id = obj18;
-                          obj20 = closure_134_0(closure_134_2[19]);
-                        } else {
-                          session_id = closure_134_1(closure_134_2[8]);
-                          const obj19 = { applicationId: id, channel, invite: tmp117 };
-                          tmp117 = undefined;
-                          if (null != channelId) {
-                            if (null != messageId) {
-                              tmp117 = { channelId, messageId };
-                              const obj22 = { channelId, messageId };
+                          c8 = 1;
+                          session_id = closure_134_2[15];
+                          const getJoinSecret = closure_134_1(session_id).getJoinSecret;
+                          const tmp138 = closure_134_1(session_id);
+                          if (null != messageId) {
+                            session_id = channelId;
+                          } else {
+                            channelId = session_id;
+                            if (session_id == null) {
+                              session_id = channel;
+                              channelId = undefined;
+                              if (channel != null) {
+                                channelId = session_id.channelId;
+                              }
                             }
+                            let closure_3 = channelId;
+                            if (channelId == null) {
+                              closure_3 = channelId;
+                            }
+                            session_id = closure_3;
                           }
-                          session_id = session_id(obj19);
-                        }
-                        frameId = session_id.frameId;
-                        session_id = session_id.launched;
-                        if (null == secret) {
-                          c10 = 3;
-                          return { value: true, done: true };
-                        } else {
-                          const obj23 = { type: "ACTIVITY_JOIN_NAVIGATION_COMPLETE", applicationId: id };
-                          const obj21 = closure_134_1(closure_134_2[7]);
-                          obj21.dispatch(obj23);
-                          c8 = 2;
-                          preferredChannelId = 11;
+                          session_id = getJoinSecret(tmp139, tmp140, tmp141, session_id, messageId);
+                          preferredChannelId = 9;
                           c10 = 1;
                           return { value: session_id, done: false };
+                        } else {
+                          if (null != session_id) {
+                            const obj17 = { frameId: closure_134_7(id, obj19.voiceChannelAppSurface(session_id)), launched: Promise.resolve() };
+                            session_id = obj17;
+                            obj19 = closure_134_0(closure_134_2[18]);
+                          } else {
+                            session_id = closure_134_1(closure_134_2[19]);
+                            const obj18 = { applicationId: id, channel, invite: tmp112 };
+                            tmp112 = undefined;
+                            if (null != channelId) {
+                              if (null != messageId) {
+                                tmp112 = { channelId, messageId };
+                                const obj21 = { channelId, messageId };
+                              }
+                            }
+                            session_id = session_id(obj18);
+                          }
+                          frameId = session_id.frameId;
+                          session_id = session_id.launched;
+                          if (null == secret) {
+                            c10 = 3;
+                            return { value: true, done: true };
+                          } else {
+                            const obj22 = { type: "ACTIVITY_JOIN_NAVIGATION_COMPLETE", applicationId: id };
+                            const obj20 = closure_134_1(closure_134_2[7]);
+                            obj20.dispatch(obj22);
+                            c8 = 2;
+                            preferredChannelId = 11;
+                            c10 = 1;
+                            return { value: session_id, done: false };
+                          }
                         }
                       }
                     }
@@ -334,7 +331,7 @@ let obj = function _joinFrameActivity() {
                 c10 = 3;
                 return { value, done: true };
               } else if (value) {
-                session_id = closure_134_1(closure_134_2[15]);
+                session_id = closure_134_1(closure_134_2[14]);
                 session_id(session_id);
               } else {
                 session_id = fail();
@@ -347,11 +344,11 @@ let obj = function _joinFrameActivity() {
             {
               c8 = 0;
               let closure_20 = closure_7;
-              const getActivityLaunchErrorInfo = closure_134_0(closure_134_2[17]).getActivityLaunchErrorInfo;
+              const getActivityLaunchErrorInfo = closure_134_0(closure_134_2[16]).getActivityLaunchErrorInfo;
               const self = this;
               const self2 = this;
-              closure_134_0(closure_134_2[17]);
-              const tmp35 = new closure_134_1(closure_134_2[18])(closure_20);
+              closure_134_0(closure_134_2[16]);
+              const tmp35 = new closure_134_1(closure_134_2[17])(closure_20);
               session_id = getActivityLaunchErrorInfo(tmp35, id);
               preferredChannelId = 8;
               c10 = 1;
@@ -368,14 +365,14 @@ let obj = function _joinFrameActivity() {
               } else {
                 closure_16 = value;
                 session_id = closure_16.errorCode;
-                const tmp205 = closure_134_1(closure_134_2[12]);
+                const tmp200 = closure_134_1(closure_134_2[11]);
                 if (session_id === closure_134_8.UNKNOWN_SESSION) {
-                  const intl = closure_134_0(closure_134_2[13]).intl;
-                  session_id = intl.string(closure_134_0(closure_134_2[13]).t["7XR9+7"]);
+                  const intl = closure_134_0(closure_134_2[12]).intl;
+                  session_id = intl.string(closure_134_0(closure_134_2[12]).t["7XR9+7"]);
                 } else {
                   session_id = closure_16.message;
                 }
-                session_id = tmp205(session_id);
+                session_id = tmp200(session_id);
                 fail();
                 c10 = 3;
                 return { value: false, done: true };
@@ -433,21 +430,21 @@ let obj = function _joinFrameActivity() {
                 return { value, done: true };
               } else {
                 c8 = 0;
-                const obj37 = { type: "ACTIVITY_JOIN", applicationId: id, parentApplicationId: null, frameId, secret, intent, embedded: true };
-                const obj33 = closure_134_1(closure_134_2[7]);
-                obj33.dispatch(obj37);
+                const obj36 = { type: "ACTIVITY_JOIN", applicationId: id, parentApplicationId: null, frameId, secret, intent, embedded: true };
+                const obj32 = closure_134_1(closure_134_2[7]);
+                obj32.dispatch(obj36);
                 c10 = 3;
                 return { value: true, done: true };
               }
               break;
             }
           }
-        } catch (tmp193) {
-          closure_7 = tmp193;
+        } catch (tmp188) {
+          closure_7 = tmp188;
           if (0 === c8) {
             c10 = 3;
-            throw tmp193;
-          } else if (1 === tmp195) {
+            throw tmp188;
+          } else if (1 === tmp190) {
             preferredChannelId = 7;
           } else {
             preferredChannelId = 10;

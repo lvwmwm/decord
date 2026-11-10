@@ -1,8 +1,8 @@
-// Module ID: 17316
-// Function ID: 17317
+// Module ID: 17343
+// Function ID: 17344
 // Dependencies: [2]
 
-// Module 17316
+// Module 17343
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/quests/bounties/bounty_banner.mp4.js");

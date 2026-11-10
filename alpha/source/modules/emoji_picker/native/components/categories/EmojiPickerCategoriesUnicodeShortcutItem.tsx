@@ -1,20 +1,20 @@
-// Module ID: 10209
-// Function ID: 10210
+// Module ID: 10215
+// Function ID: 10216
 // Name: EmojiPickerCategoriesUnicodeShortcutItem
-// Dependencies: [32, 19, 17, 1072, 21, 5140, 1652, 10210, 1705, 7043, 1113, 10194, 2]
+// Dependencies: [32, 19, 17, 1072, 21, 5142, 1652, 10216, 1705, 7046, 1113, 10200, 2]
 // Exports: default
 
-// Module 10209 (EmojiPickerCategoriesUnicodeShortcutItem)
+// Module 10215 (EmojiPickerCategoriesUnicodeShortcutItem)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
 import _mod1652 from "module_1652" /* 1652 */;
 import _mod1705 from "module_1705" /* 1705 */;
-import cheapWorkletShallowEqual from "cheapWorkletShallowEqual" /* 10210 */;
+import cheapWorkletShallowEqual from "cheapWorkletShallowEqual" /* 10216 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
-import createStyles from "createStyles" /* 5140 */;
+import createStyles from "createStyles" /* 5142 */;
 import size_mod from "module_2" /* 2 */;
 
 let end, num, tmp, tmp2, tmp5;
@@ -111,7 +111,7 @@ export default function EmojiPickerCategoriesUnicodeShortcutItem(category) {
   let tmp19 = null;
   const tmp17 = closure_8();
   if (first) {
-    const PressableOpacity = tmp4(7043).PressableOpacity;
+    const PressableOpacity = tmp4(7046).PressableOpacity;
     const intl = tmp4(1113).intl;
     const items5 = [, ];
     ({ itemInner: arr6[0], fadedItemOpacity: arr6[1] } = tmp17);

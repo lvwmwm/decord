@@ -1,12 +1,12 @@
-// Module ID: 8753
-// Function ID: 8754
+// Module ID: 8759
+// Function ID: 8760
 // Name: useGameProfileObscured
-// Dependencies: [1385, 5784, 504, 2]
+// Dependencies: [1385, 5786, 504, 2]
 // Exports: default, isGameProfileObscured
 
-// Module 8753 (useGameProfileObscured)
+// Module 8759 (useGameProfileObscured)
 import get_initialized from "get initialized" /* 504 */;
-import utils from "utils" /* 5784 */;
+import utils from "utils" /* 5786 */;
 import UserStore from "UserStore" /* 1385 */;
 import size from "module_2" /* 2 */;
 

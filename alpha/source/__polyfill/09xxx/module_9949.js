@@ -1,313 +1,405 @@
 // Module ID: 9949
 // Function ID: 9950
-// Dependencies: [32, 109, 5, 9926, 9940]
-// Exports: callRefreshEndpoint, clearTokenRefresh, getStoredTokenRefreshConfig, registerTokenRefresh
+// Dependencies: [9933, 9940, 9941]
+// Exports: buildNitroRequest, buildNitroRequestPure
 
 // Module 9949
-import _mod9926 from "module_9926" /* 9926 */;
-import hybridObject from "hybridObject" /* 9940 */;
-import _slicedToArray from "_slicedToArray" /* 32 */;
-import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import NitroRequest from "NitroRequest" /* 9933 */;
+import serializeFormData from "serializeFormData" /* 9940 */;
+import TEXT_CONTENT_TYPE from "TEXT_CONTENT_TYPE" /* 9941 */;
 
-let c14, c15;
-
-function getNestedField(arg0, str) {
-  const parts = str.split(".");
-  let tmp2 = arg0;
-  const iter = parts[Symbol.iterator]();
-  const nextResult = iter.next();
-  while (iter !== undefined) {
-    if (null != tmp2) {
-      if (typeof tmp2 === "object") {
-        tmp2 = tmp2[tmp4];
-        continue;
-      }
-    }
-    iter.return();
+let tmp10;
+let tmp11;
+let tmp12;
+let tmp13;
+let tmp14;
+let tmp15;
+let tmp16;
+let tmp17;
+let tmp18;
+let tmp2;
+let tmp3;
+let tmp4;
+let tmp5;
+let tmp6;
+let tmp7;
+let tmp8;
+let tmp9;
+let items = [{ code: "(function buildNitroRequest_Pnpm_requestJs1(input,init){let[NitroRequestClass,rawBodyOf,URL,assertBodyAllowed,headersToPairs,normalizeBody,applyDefaultContentType,applyCacheHeaders,normalizeAndValidateHeaders]=this.__closure;var _init$redirect,_headersToPairs,_method$toUpperCase,_method;let url;let method;let headersInit;let body;let redirectOption=(_init$redirect=init===null||init===void 0?void 0:init.redirect)!==null&&_init$redirect!==void 0?_init$redirect:'follow';let cacheOption=init===null||init===void 0?void 0:init.cache;let credentialsOption=init===null||init===void 0?void 0:init.credentials;if(input instanceof NitroRequestClass){var _init$method,_init$headers,_ref,_init$body;url=input.url;method=(_init$method=init===null||init===void 0?void 0:init.method)!==null&&_init$method!==void 0?_init$method:input.method;headersInit=(_init$headers=init===null||init===void 0?void 0:init.headers)!==null&&_init$headers!==void 0?_init$headers:input.headers;body=(_ref=(_init$body=init===null||init===void 0?void 0:init.body)!==null&&_init$body!==void 0?_init$body:rawBodyOf(input))!==null&&_ref!==void 0?_ref:null;if(!(init!==null&&init!==void 0&&init.redirect))redirectOption=input.redirect;if(!(init!==null&&init!==void 0&&init.cache))cacheOption=input.cache;if(!(init!==null&&init!==void 0&&init.credentials))credentialsOption=input.credentials;}else if(typeof input==='string'||input instanceof URL){var _init$body2;url=String(input);method=init===null||init===void 0?void 0:init.method;headersInit=init===null||init===void 0?void 0:init.headers;body=(_init$body2=init===null||init===void 0?void 0:init.body)!==null&&_init$body2!==void 0?_init$body2:null;}else{var _init$method2,_init$body3;url=input.url;method=(_init$method2=init===null||init===void 0?void 0:init.method)!==null&&_init$method2!==void 0?_init$method2:input.method;headersInit=input.headers;body=(_init$body3=init===null||init===void 0?void 0:init.body)!==null&&_init$body3!==void 0?_init$body3:null;if(!(init!==null&&init!==void 0&&init.credentials))credentialsOption=input.credentials;}assertBodyAllowed(method,body);const headers=(_headersToPairs=headersToPairs(headersInit))!==null&&_headersToPairs!==void 0?_headersToPairs:[];const normalized=normalizeBody(body);applyDefaultContentType(headers,normalized===null||normalized===void 0?void 0:normalized.contentType);applyCacheHeaders(headers,cacheOption);normalizeAndValidateHeaders(headers);const followRedirects=redirectOption==='follow';const prefetchCacheTtlMs=typeof(init===null||init===void 0?void 0:init.prefetchCacheTtlMs)==='number'?init.prefetchCacheTtlMs:undefined;const timeoutMs=typeof(init===null||init===void 0?void 0:init.timeoutMs)==='number'?init.timeoutMs:undefined;const priority=(init===null||init===void 0?void 0:init.priority)==='high'||(init===null||init===void 0?void 0:init.priority)==='low'?init.priority:undefined;return{url:url,method:(_method$toUpperCase=(_method=method)===null||_method===void 0?void 0:_method.toUpperCase())!==null&&_method$toUpperCase!==void 0?_method$toUpperCase:'GET',headers:headers.length>0?headers:undefined,bodyString:normalized===null||normalized===void 0?void 0:normalized.bodyString,bodyBytes:normalized===null||normalized===void 0?void 0:normalized.bodyBytes,bodyFormData:normalized===null||normalized===void 0?void 0:normalized.bodyFormData,followRedirects:followRedirects,credentials:credentialsOption,prefetchCacheTtlMs:prefetchCacheTtlMs,timeoutMs:timeoutMs,priority:priority};})" }, NitroRequest.NitroRequest, NitroRequest.rawBodyOf, URL, serializeFormData.assertBodyAllowed, TEXT_CONTENT_TYPE.headersToPairs, serializeFormData.normalizeBody, TEXT_CONTENT_TYPE.applyDefaultContentType, TEXT_CONTENT_TYPE.applyCacheHeaders, TEXT_CONTENT_TYPE.normalizeAndValidateHeaders];
+let c6;
+let c7;
+let c8;
+[tmp2, tmp3, tmp4, tmp5, tmp6, tmp7, tmp8, tmp9, tmp10, tmp11] = items;
+function buildNitroRequest(url, redirect) {
+  let bodyBytes;
+  let bodyFormData;
+  let bodyString;
+  let cache;
+  let credentials;
+  let credentials2;
+  let priority;
+  let str2;
+  let str4;
+  let tmp35;
+  let tmp4;
+  let tmp5;
+  let tmp6;
+  let tmp7;
+  let tmp8;
+  let str;
+  if (redirect != null) {
+    str = redirect.redirect;
   }
-  let StringResult;
-  if (null != tmp2) {
-    const _String = String;
-    StringResult = String(tmp2);
+  if (str == null) {
+    str = "follow";
   }
-  return StringResult;
-}
-function applyTemplate(str, arg1) {
-  return str.replace(/\{\{value\}\}/g, arg1);
-}
-function applyCompositeTemplate(str, arg1) {
-  let closure_0 = arg1;
-  return str.replace(/\{\{(\w+)\}\}/g, (arg0, arg1) => {
-    let str = closure_0[arg1];
-    if (str == null) {
-      str = "";
+  if (redirect != null) {
+    cache = redirect.cache;
+  }
+  if (redirect != null) {
+    credentials = redirect.credentials;
+  }
+  if (url instanceof c0) {
+    const url2 = url.url;
+    let method;
+    if (redirect != null) {
+      method = redirect.method;
     }
-    return str;
-  });
-}
-let obj = function _callRefreshEndpoint() {
-  obj = _asyncToGenerator(async function(arg0, value) {
-    let JSON;
-    let closure_0 = arg0;
-    if (c15 === 2) {
-      c15 = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp3 === 3) {
-      if (arg0 === 1) {
-        throw value;
-      } else if (arg0 === 2) {
-        const obj2 = { value, done: true };
-        return obj2;
-      } else {
-        return { value: "HermesInternal", done: null };
-      }
-    } else {
-      while (true) {
-        let closure_3;
-        let closure_4;
-        let compositeHeaders;
-        let closure_6;
-        let entries;
-        let closure_8;
-        let c9;
-        let closure_10;
-        let closure_11;
-        let closure_12;
-        let POST;
-        c15 = 2;
-        let tmp4 = c14;
-        if (0 === c14) {
-          if (arg0 === 1) {
-            c15 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c15 = 3;
-            let obj3 = { value, done: true };
-            return obj3;
-          } else {
-            let tmp109 = closure_0;
-            value = undefined;
-            closure_3 = undefined;
-            closure_4 = undefined;
-            compositeHeaders = undefined;
-            closure_6 = undefined;
-            entries = undefined;
-            closure_8 = undefined;
-            c9 = undefined;
-            closure_10 = undefined;
-            closure_11 = undefined;
-            closure_12 = undefined;
-            let method = closure_0.method;
-            POST = method;
-            if (method == null) {
-              POST = "POST";
-            }
-            let obj8 = _mod9926;
-            let request = { method: POST, headers: null, body: null };
-            ({ headers: obj9.headers, body: obj9.body } = tmp109);
-            c14 = 1;
-            c15 = 1;
-            let obj4 = { value: obj8.nitroFetch(tmp109.url, request), done: false };
-            return obj4;
-          }
-        } else {
-          let parse;
-          if (1 === tmp4) {
-            if (arg0 === 1) {
-              c15 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c15 = 3;
-              let obj5 = { value, done: true };
-              return obj5;
-            } else {
-              POST = value;
-              if (POST.ok) {
-                value = {};
-                if ("text" === closure_0.responseType) {
-                  c14 = 2;
-                  c15 = 1;
-                  let obj6 = { value: POST.text(), done: false };
-                  return obj6;
-                } else {
-                  let _JSON = JSON;
-                  parse = JSON.parse;
-                  c14 = 3;
-                  c15 = 1;
-                  let obj7 = { value: POST.text(), done: false };
-                  return obj7;
-                }
-              } else {
-                let _Error = Error;
-                let _HermesInternal = HermesInternal;
-                let self = this;
-                let self2 = this;
-                let error = new Error("Token refresh failed: " + POST.status + " " + POST.statusText);
-                throw error;
-              }
-            }
-          } else if (2 === tmp4) {
-            if (arg0 === 1) {
-              c15 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c15 = 3;
-              let obj10 = { value, done: true };
-              return obj10;
-            } else {
-              closure_3 = value;
-              if (closure_0.textHeader) {
-                let tmp67;
-                let tmp63 = value;
-                let textHeader = closure_0.textHeader;
-                if (closure_0.textTemplate) {
-                  tmp67 = closure_139_9(closure_0.textTemplate, closure_3);
-                } else {
-                  tmp67 = closure_3;
-                }
-                tmp63[textHeader] = tmp67;
-              }
-              c15 = 3;
-              let obj11 = { value, done: true };
-              return obj11;
-            }
-          } else if (3 === tmp4) {
-            if (arg0 === 1) {
-              c15 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c15 = 3;
-              let obj12 = { value, done: true };
-              return obj12;
-            } else {
-              closure_4 = parse(value);
-              if (closure_0.mappings) {
-                let mappings = closure_0.mappings;
-                value = mappings[Symbol.iterator]();
-                while (value !== undefined) {
-                  let c12 = 1;
-                  compositeHeaders = tmp19;
-                  closure_6 = closure_139_8(closure_4, compositeHeaders.jsonPath);
-                  if (null != closure_6) {
-                    let tmp25;
-                    let tmp21 = value;
-                    let header = compositeHeaders.header;
-                    if (compositeHeaders.valueTemplate) {
-                      tmp25 = closure_139_9(compositeHeaders.valueTemplate, closure_6);
-                    } else {
-                      tmp25 = closure_6;
-                    }
-                    tmp21[header] = tmp25;
-                  }
-                  c12 = 0;
-                  continue;
-                }
-              }
-              if (closure_0.compositeHeaders) {
-                compositeHeaders = closure_0.compositeHeaders;
-                closure_4 = compositeHeaders[Symbol.iterator]();
-                while (closure_4 !== undefined) {
-                  c12 = 2;
-                  entries = tmp37;
-                  closure_8 = {};
-                  let _Object = Object;
-                  entries = Object.entries(entries.paths);
-                  closure_6 = entries[Symbol.iterator]();
-                  while (closure_6 !== undefined) {
-                    c12 = 3;
-                    c9 = tmp40;
-                    closure_10 = closure_139_3(c9, 2);
-                    closure_11 = closure_10[0];
-                    closure_12 = closure_139_8(closure_4, closure_10[1]);
-                    if (null != closure_12) {
-                      closure_8[closure_11] = closure_12;
-                    }
-                    c12 = 2;
-                    continue;
-                  }
-                  value[entries.header] = closure_139_10(entries.template, closure_8);
-                  c12 = 0;
-                  continue;
-                }
-              }
-              c15 = 3;
-              obj = { value, done: true };
-              return obj;
-            }
-          } else if (4 === tmp4) {
-            c12 = 0;
-            value.return();
-            throw closure_1_13;
-          } else if (5 === tmp4) {
-            c12 = 0;
-            closure_4.return();
-            throw closure_1_13;
-          } else {
-            c12 = 2;
-            closure_6.return();
-            throw closure_1_13;
-          }
+    if (method == null) {
+      method = url.method;
+    }
+    let headers1;
+    if (redirect != null) {
+      headers1 = redirect.headers;
+    }
+    if (headers1 == null) {
+      headers1 = url.headers;
+    }
+    let body;
+    if (redirect != null) {
+      body = redirect.body;
+    }
+    if (body == null) {
+      body = _undefined(url);
+    }
+    if (body == null) {
+      body = null;
+    }
+    redirect = undefined;
+    if (redirect != null) {
+      redirect = redirect.redirect;
+    }
+    if (!redirect) {
+      str = url.redirect;
+    }
+    let cache1;
+    if (redirect != null) {
+      cache1 = redirect.cache;
+    }
+    if (!cache1) {
+      cache = url.cache;
+    }
+    let credentials1;
+    if (redirect != null) {
+      credentials1 = redirect.credentials;
+    }
+    credentials2 = credentials;
+    tmp4 = cache;
+    tmp5 = str;
+    tmp6 = body;
+    tmp7 = headers1;
+    str2 = method;
+    tmp8 = url2;
+    if (!credentials1) {
+      credentials2 = url.credentials;
+      tmp4 = cache;
+      tmp5 = str;
+      tmp6 = body;
+      tmp7 = headers1;
+      str2 = method;
+      tmp8 = url2;
+    }
+  } else {
+    if (typeof url !== "string") {
+      if (!(url instanceof c2)) {
+        url = url.url;
+        let method1;
+        if (redirect != null) {
+          method1 = redirect.method;
+        }
+        if (method1 == null) {
+          method1 = url.method;
+        }
+        const headers = url.headers;
+        let body1;
+        if (redirect != null) {
+          body1 = redirect.body;
+        }
+        if (body1 == null) {
+          body1 = null;
+        }
+        let credentials3;
+        if (redirect != null) {
+          credentials3 = redirect.credentials;
+        }
+        credentials2 = credentials;
+        tmp4 = cache;
+        tmp5 = str;
+        tmp6 = body1;
+        tmp7 = headers;
+        str2 = method1;
+        tmp8 = url;
+        if (!credentials3) {
+          credentials2 = url.credentials;
+          tmp4 = cache;
+          tmp5 = str;
+          tmp6 = body1;
+          tmp7 = headers;
+          str2 = method1;
+          tmp8 = url;
         }
       }
     }
-  });
-  return obj(...arguments);
-};
-let closure_2 = ["target"];
-const nitro_token_refresh_websocket = "nitro_token_refresh_websocket";
-const nitro_token_refresh_fetch = "nitro_token_refresh_fetch";
-
-export { getNestedField };
-export { applyTemplate };
-export function callRefreshEndpoint(arg0) {
-  return obj(...arguments);
-}
-export function registerTokenRefresh(target) {
-  target = target.target;
-  const json = JSON.stringify(_objectWithoutProperties(target, closure_2));
-  const tmp2 = "websocket" !== target && "all" !== target;
-  if (!tmp2) {
-    const NativeStorage = hybridObject.NativeStorage;
-    NativeStorage.setSecureString(nitro_token_refresh_websocket, json);
-  }
-  const tmp7 = "fetch" !== target && "all" !== target;
-  if (!tmp7) {
-    const NativeStorage2 = hybridObject.NativeStorage;
-    NativeStorage2.setSecureString(nitro_token_refresh_fetch, json);
-  }
-}
-export function clearTokenRefresh(arg0) {
-  let str = arg0;
-  if (arg0 == null) {
-    str = "all";
-  }
-  const tmp = "websocket" !== str && "all" !== str;
-  if (!tmp) {
-    const NativeStorage = hybridObject.NativeStorage;
-    NativeStorage.removeSecureString(nitro_token_refresh_websocket);
-    const NativeStorage2 = hybridObject.NativeStorage;
-    NativeStorage2.removeSecureString("nitro_token_refresh_ws_cache");
-  }
-  const tmp7 = "fetch" !== str && "all" !== str;
-  if (!tmp7) {
-    const NativeStorage3 = hybridObject.NativeStorage;
-    NativeStorage3.removeSecureString(nitro_token_refresh_fetch);
-    const NativeStorage4 = hybridObject.NativeStorage;
-    NativeStorage4.removeSecureString("nitro_token_refresh_fetch_cache");
-  }
-}
-export function getStoredTokenRefreshConfig(arg0) {
-  try {
-    const NativeStorage = hybridObject.NativeStorage;
-    const secureString = NativeStorage.getSecureString(tmp);
-    let parsed = null;
-    if (secureString) {
-      const _JSON = JSON;
-      parsed = JSON.parse(secureString);
+    const _String = String;
+    let method2;
+    const StringResult = String(url);
+    if (redirect != null) {
+      method2 = redirect.method;
     }
-    return parsed;
-  } catch (err) {
-    return null;
+    let headers2;
+    if (redirect != null) {
+      headers2 = redirect.headers;
+    }
+    let body2;
+    if (redirect != null) {
+      body2 = redirect.body;
+    }
+    if (body2 == null) {
+      body2 = null;
+    }
+    tmp6 = body2;
+    credentials2 = credentials;
+    tmp4 = cache;
+    tmp5 = str;
+    tmp7 = headers2;
+    str2 = method2;
+    tmp8 = StringResult;
   }
+  _undefined2(str2, tmp6);
+  const tmp22 = _undefined3(tmp7);
+  let items = tmp22;
+  if (tmp22 == null) {
+    items = [];
+  }
+  const tmp23 = _undefined4(tmp6);
+  let contentType;
+  const tmp24 = c6;
+  if (tmp23 != null) {
+    contentType = tmp23.contentType;
+  }
+  tmp24(items, contentType);
+  _undefined5(items, tmp4);
+  _undefined6(items);
+  let prefetchCacheTtlMs;
+  if (redirect != null) {
+    prefetchCacheTtlMs = redirect.prefetchCacheTtlMs;
+  }
+  let prefetchCacheTtlMs1;
+  if (typeof prefetchCacheTtlMs === "number") {
+    prefetchCacheTtlMs1 = redirect.prefetchCacheTtlMs;
+  }
+  let timeoutMs;
+  if (redirect != null) {
+    timeoutMs = redirect.timeoutMs;
+  }
+  let timeoutMs1;
+  if (typeof timeoutMs === "number") {
+    timeoutMs1 = redirect.timeoutMs;
+  }
+  let priority1;
+  if (redirect != null) {
+    priority1 = redirect.priority;
+  }
+  if ("high" === priority1) {
+    priority = redirect.priority;
+  } else {
+    let priority2;
+    if (redirect != null) {
+      priority2 = redirect.priority;
+    }
+  }
+  const request = { url: tmp8, method: str4, headers: tmp35, bodyString, bodyBytes, bodyFormData, followRedirects: "follow" === tmp5, credentials: credentials2, prefetchCacheTtlMs: prefetchCacheTtlMs1, timeoutMs: timeoutMs1, priority };
+  str4 = undefined;
+  if (str2 != null) {
+    str4 = str2.toUpperCase();
+  }
+  if (str4 == null) {
+    str4 = "GET";
+  }
+  tmp35 = undefined;
+  if (items.length > 0) {
+    tmp35 = items;
+  }
+  bodyString = undefined;
+  if (tmp23 != null) {
+    bodyString = tmp23.bodyString;
+  }
+  bodyBytes = undefined;
+  if (tmp23 != null) {
+    bodyBytes = tmp23.bodyBytes;
+  }
+  bodyFormData = undefined;
+  if (tmp23 != null) {
+    bodyFormData = tmp23.bodyFormData;
+  }
+  return request;
 }
+const items1 = [tmp3, tmp4, tmp5, tmp6, tmp7, tmp8, tmp9, tmp10, tmp11];
+buildNitroRequest.__closure = items1;
+buildNitroRequest.__workletHash = 3106736496530;
+buildNitroRequest.__initData = tmp2;
+const items2 = [{ code: "(function buildNitroRequestPure_Pnpm_requestJs2(input,init){let[assertBodyAllowed,headersToPairsPure,normalizeBodyPure,applyDefaultContentType,applyCacheHeaders,normalizeAndValidateHeaders]=this.__closure;var _headersToPairsPure,_method$toUpperCase,_method;let url;let method;let headersInit;let body;const isUrlObject=typeof input==='object'&&input!==null&&Object.prototype.toString.call(input)==='[object URL]';if(typeof input==='string'||isUrlObject){var _init$body;url=String(input);method=init===null||init===void 0?void 0:init.method;headersInit=init===null||init===void 0?void 0:init.headers;body=(_init$body=init===null||init===void 0?void 0:init.body)!==null&&_init$body!==void 0?_init$body:null;}else{var _init$method,_init$body2;const req=input;url=req.url;method=(_init$method=init===null||init===void 0?void 0:init.method)!==null&&_init$method!==void 0?_init$method:req.method;headersInit=req.headers;body=(_init$body2=init===null||init===void 0?void 0:init.body)!==null&&_init$body2!==void 0?_init$body2:null;}assertBodyAllowed(method,body);const headers=(_headersToPairsPure=headersToPairsPure(headersInit))!==null&&_headersToPairsPure!==void 0?_headersToPairsPure:[];const normalized=normalizeBodyPure(body);applyDefaultContentType(headers,normalized===null||normalized===void 0?void 0:normalized.contentType);applyCacheHeaders(headers,init===null||init===void 0?void 0:init.cache);normalizeAndValidateHeaders(headers);const prefetchCacheTtlMs=typeof(init===null||init===void 0?void 0:init.prefetchCacheTtlMs)==='number'?init.prefetchCacheTtlMs:undefined;const timeoutMs=typeof(init===null||init===void 0?void 0:init.timeoutMs)==='number'?init.timeoutMs:undefined;const priority=(init===null||init===void 0?void 0:init.priority)==='high'||(init===null||init===void 0?void 0:init.priority)==='low'?init.priority:undefined;return{url:url,method:(_method$toUpperCase=(_method=method)===null||_method===void 0?void 0:_method.toUpperCase())!==null&&_method$toUpperCase!==void 0?_method$toUpperCase:'GET',headers:headers.length>0?headers:undefined,bodyString:normalized===null||normalized===void 0?void 0:normalized.bodyString,bodyBytes:normalized===null||normalized===void 0?void 0:normalized.bodyBytes,followRedirects:true,credentials:init===null||init===void 0?void 0:init.credentials,prefetchCacheTtlMs:prefetchCacheTtlMs,timeoutMs:timeoutMs,priority:priority};})" }, serializeFormData.assertBodyAllowed, TEXT_CONTENT_TYPE.headersToPairsPure, serializeFormData.normalizeBodyPure, TEXT_CONTENT_TYPE.applyDefaultContentType, TEXT_CONTENT_TYPE.applyCacheHeaders, TEXT_CONTENT_TYPE.normalizeAndValidateHeaders];
+let c0;
+let c1;
+let c2;
+let c3;
+let c4;
+let c5;
+[tmp12, tmp13, tmp14, tmp15, tmp16, tmp17, tmp18] = items2;
+function buildNitroRequestPure(url, method) {
+  let bodyBytes;
+  let bodyString;
+  let credentials;
+  let str4;
+  let tmp31;
+  let tmp = typeof url === "object";
+  if (typeof url === "object") {
+    tmp = null !== url;
+  }
+  if (tmp) {
+    const _Object = Object;
+    tmp = "[object URL]" === toString.call(url);
+  }
+  if (typeof url !== "string") {
+    let headers;
+    let body;
+    let priority;
+    if (!tmp) {
+      url = url.url;
+      method = undefined;
+      if (method != null) {
+        method = method.method;
+      }
+      if (method == null) {
+        method = url.method;
+      }
+      headers = url.headers;
+      body = undefined;
+      if (method != null) {
+        body = method.body;
+      }
+      if (body == null) {
+        body = null;
+      }
+    }
+    _undefined(method, body);
+    let items = _undefined2(headers);
+    if (items == null) {
+      items = [];
+    }
+    const tmp16 = _undefined3(body);
+    let contentType;
+    const tmp17 = c3;
+    if (tmp16 != null) {
+      contentType = tmp16.contentType;
+    }
+    tmp17(items, contentType);
+    let cache;
+    const tmp20 = c4;
+    if (method != null) {
+      cache = method.cache;
+    }
+    tmp20(items, cache);
+    _undefined4(items);
+    let prefetchCacheTtlMs;
+    if (method != null) {
+      prefetchCacheTtlMs = method.prefetchCacheTtlMs;
+    }
+    let prefetchCacheTtlMs1;
+    if (typeof prefetchCacheTtlMs === "number") {
+      prefetchCacheTtlMs1 = method.prefetchCacheTtlMs;
+    }
+    let timeoutMs;
+    if (method != null) {
+      timeoutMs = method.timeoutMs;
+    }
+    let timeoutMs1;
+    if (typeof timeoutMs === "number") {
+      timeoutMs1 = method.timeoutMs;
+    }
+    let priority1;
+    if (method != null) {
+      priority1 = method.priority;
+    }
+    if ("high" === priority1) {
+      priority = method.priority;
+    } else {
+      let priority2;
+      if (method != null) {
+        priority2 = method.priority;
+      }
+    }
+    const request = { url, method: str4, headers: tmp31, bodyString, bodyBytes, followRedirects: true, credentials, prefetchCacheTtlMs: prefetchCacheTtlMs1, timeoutMs: timeoutMs1, priority };
+    str4 = undefined;
+    if (method != null) {
+      str4 = method.toUpperCase();
+    }
+    if (str4 == null) {
+      str4 = "GET";
+    }
+    tmp31 = undefined;
+    if (items.length > 0) {
+      tmp31 = items;
+    }
+    bodyString = undefined;
+    if (tmp16 != null) {
+      bodyString = tmp16.bodyString;
+    }
+    bodyBytes = undefined;
+    if (tmp16 != null) {
+      bodyBytes = tmp16.bodyBytes;
+    }
+    credentials = undefined;
+    if (method != null) {
+      credentials = method.credentials;
+    }
+    return request;
+  }
+  let method1;
+  const StringResult = String(url);
+  if (method != null) {
+    method1 = method.method;
+  }
+  let headers1;
+  if (method != null) {
+    headers1 = method.headers;
+  }
+  let body1;
+  if (method != null) {
+    body1 = method.body;
+  }
+  if (body1 == null) {
+    body1 = null;
+  }
+  body = body1;
+  headers = headers1;
+  method = method1;
+  url = StringResult;
+}
+const items3 = [tmp13, tmp14, tmp15, tmp16, tmp17, tmp18];
+buildNitroRequestPure.__closure = items3;
+buildNitroRequestPure.__workletHash = 6882032400301;
+buildNitroRequestPure.__initData = tmp12;
+
+export { buildNitroRequest };
+export { buildNitroRequestPure };

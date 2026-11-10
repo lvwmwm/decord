@@ -1,10 +1,10 @@
-// Module ID: 9898
-// Function ID: 9899
+// Module ID: 9904
+// Function ID: 9905
 // Name: ScheduledMessageUtils
-// Dependencies: [32, 5072, 1385, 1072, 1387, 9885, 3, 7902, 1403, 1252, 504, 2166, 1113, 11, 2107, 6196, 9899, 1380, 2]
+// Dependencies: [32, 5074, 1385, 1072, 1387, 9891, 3, 7906, 1403, 1252, 504, 2166, 1113, 11, 2107, 6198, 9905, 1380, 2]
 // Exports: canSendScheduledMessagesInChannel, convertServerScheduledMessageCreateArgs, convertServerScheduledMessageSend, getDefaultScheduledTime, getEarliestScheduledTime, getLatestScheduledTime, getMessageForState, getPresetScheduledTimes, getScheduledMessagesLimit, getScheduledTimeError, parseContentAndFlagsForSilentMessage, trackScheduledMessageTimePickerOpened, unparseContentAndFlagsForSilentMessage, useCanSendScheduledMessagesInChannel, useScheduledMessagesLimit
 
-// Module 9898 (ScheduledMessageUtils)
+// Module 9904 (ScheduledMessageUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initialized from "get initialized" /* 504 */;
@@ -15,14 +15,14 @@ import PremiumConstants from "PremiumConstants" /* 1387 */;
 import FlagUtils from "FlagUtils" /* 1403 */;
 import PremiumTypeUtils from "PremiumTypeUtils" /* 2107 */;
 import _modDef2166 from "module_2166" /* 2166 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 6196 */;
-import parseContentForSuppressNotificationsDefault from "parseContentForSuppressNotifications" /* 7902 */;
-import ScheduledMessageTypes from "ScheduledMessageTypes" /* 9899 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 6198 */;
+import parseContentForSuppressNotificationsDefault from "parseContentForSuppressNotifications" /* 7906 */;
+import ScheduledMessageTypes from "ScheduledMessageTypes" /* 9905 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import PermissionStore from "PermissionStore" /* 5072 */;
+import PermissionStore from "PermissionStore" /* 5074 */;
 import UserStore from "UserStore" /* 1385 */;
 import Constants from "Constants" /* 1072 */;
-import ScheduledMessagesConstants from "ScheduledMessagesConstants" /* 9885 */;
+import ScheduledMessagesConstants from "ScheduledMessagesConstants" /* 9891 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -37,7 +37,7 @@ let metroImportDefault;
 let metroRequire;
 let tmp;
 let unpackModuleId;
-const parseContentForSuppressNotifications = tmp(7902);
+const parseContentForSuppressNotifications = tmp(7906);
 ({ AnalyticEvents: metroRequire, MessageFlags: metroImportDefault, Permissions: metroImportAll } = Constants);
 const PremiumTypes = PremiumConstants.PremiumTypes;
 ({ MAX_SCHEDULE_TIME_AFTER_CREATION_SECONDS: c10, MAX_SCHEDULE_TIME_INTO_FUTURE_SECONDS: unpackModuleId, MAX_SCHEDULED_MESSAGES_PER_USER: closure_12, MAX_SCHEDULED_MESSAGES_PER_USER_WITHOUT_NITRO: map1, MIN_SCHEDULE_TIME_INTO_FUTURE_SECONDS: closure_14 } = ScheduledMessagesConstants);
@@ -120,7 +120,7 @@ export function getPresetScheduledTimes() {
   let tmp7;
   let tmp9;
   const obj = _modDef2166();
-  const addResult = obj.add(authStore3, "seconds");
+  const addResult = obj.add(gesture, "seconds");
   const obj2 = _modDef2166();
   const startOfResult = obj2.startOf("day");
   const result = startOfResult.set("hours", 9);
@@ -174,7 +174,7 @@ export function getDefaultScheduledTime() {
   const isBefore = addResult.isBefore;
   let addResult1 = addResult;
   const obj4 = _modDef2166();
-  if (isBefore(obj4.add(authStore3, "seconds"))) {
+  if (isBefore(obj4.add(gesture, "seconds"))) {
     addResult1 = addResult.add(1, "hour");
   }
   return addResult1;
@@ -183,7 +183,7 @@ export function getScheduledTimeError(isBefore, arg1) {
   let stringResult;
   isBefore = isBefore.isBefore;
   const obj = _modDef2166();
-  if (isBefore(obj.add(authStore3, "seconds"))) {
+  if (isBefore(obj.add(gesture, "seconds"))) {
     const intl2 = intl7.intl;
     stringResult = intl2.string(intl7.t["w/fgvh"]);
   } else {
@@ -208,7 +208,7 @@ export function getScheduledTimeError(isBefore, arg1) {
 }
 export function getEarliestScheduledTime() {
   const obj = _modDef2166();
-  return obj.add(authStore3, "seconds");
+  return obj.add(gesture, "seconds");
 }
 export function getLatestScheduledTime(arg0) {
   const obj = _modDef2166();

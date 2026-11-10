@@ -1,10 +1,10 @@
-// Module ID: 20060
-// Function ID: 20061
+// Module ID: 20088
+// Function ID: 20089
 // Name: GuildSettingsVanityURLUtils
 // Dependencies: [1072, 1113, 2]
 // Exports: canSeeVanityUrlSettings, getErrorMessageFromErrorCode
 
-// Module 20060 (GuildSettingsVanityURLUtils)
+// Module 20088 (GuildSettingsVanityURLUtils)
 import intl8 from "intl" /* 1113 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;

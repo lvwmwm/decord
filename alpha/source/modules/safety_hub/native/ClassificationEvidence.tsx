@@ -1,18 +1,18 @@
-// Module ID: 13556
-// Function ID: 13557
+// Module ID: 13569
+// Function ID: 13570
 // Name: ClassificationEvidence
-// Dependencies: [19, 17, 21, 5140, 1187, 575, 5751, 1113, 13557, 2]
+// Dependencies: [19, 17, 21, 5142, 1187, 575, 5753, 1113, 13570, 2]
 // Exports: default
 
-// Module 13556 (ClassificationEvidence)
+// Module 13569 (ClassificationEvidence)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5751 */;
-import ClassificationMessageEvidenceDefault from "ClassificationMessageEvidence" /* 13557 */;
+import Text_Text from "Text/Text" /* 5753 */;
+import ClassificationMessageEvidenceDefault from "ClassificationMessageEvidence" /* 13570 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5142 */;
 import native_mod from "native" /* 1187 */;
 import size from "module_2" /* 2 */;
 

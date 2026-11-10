@@ -1,27 +1,27 @@
-// Module ID: 19074
-// Function ID: 19075
+// Module ID: 19103
+// Function ID: 19104
 // Name: DMRow
-// Dependencies: [5, 32, 19, 17, 5141, 5890, 5082, 1072, 21, 5140, 575, 5751, 5194, 10864, 504, 9282, 1187, 9140, 15677, 19060, 2]
+// Dependencies: [5, 32, 19, 17, 5143, 5892, 5084, 1072, 21, 5142, 575, 5753, 5196, 10873, 504, 9288, 1187, 9146, 15705, 19089, 2]
 
-// Module 19074 (DMRow)
+// Module 19103 (DMRow)
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
-import UserUtils from "UserUtils" /* 5194 */;
-import Text_Text from "Text/Text" /* 5751 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9140 */;
-import BotTagDefault from "BotTag" /* 9282 */;
-import ActivityStatusDefault from "ActivityStatus" /* 10864 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 15677 */;
+import UserUtils from "UserUtils" /* 5196 */;
+import Text_Text from "Text/Text" /* 5753 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9146 */;
+import BotTagDefault from "BotTag" /* 9288 */;
+import ActivityStatusDefault from "ActivityStatus" /* 10873 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 15705 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5141 */;
-import PresenceStore from "PresenceStore" /* 5890 */;
-import RelationshipStore from "RelationshipStore" /* 5082 */;
+import AccessibilityStore from "AccessibilityStore" /* 5143 */;
+import PresenceStore from "PresenceStore" /* 5892 */;
+import RelationshipStore from "RelationshipStore" /* 5084 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5140 */;
+import createStyles from "createStyles" /* 5142 */;
 import size from "module_2" /* 2 */;
 
 const UserUtilsDefault = UserUtils;
@@ -194,7 +194,7 @@ const memoResult = react.memo(function DMRow(user) {
     const obj2 = { lineClamp: 1, variant: "body-md/semibold", color: "mobile-text-heading-primary", children: name };
     items[0] = map1(Text_Text.Text, obj2);
     let bot = user.bot;
-    const tmp = authStore3;
+    const tmp = gesture;
     if (bot) {
       const obj4 = { style: title.tag, verified: user.isVerifiedBot(), type: isSystemUserResult ? Types.SYSTEM_DM : Types.BOT };
       const tmp8 = BotTagDefault;

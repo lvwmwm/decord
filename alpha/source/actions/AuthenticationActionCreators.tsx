@@ -1,25 +1,25 @@
-// Module ID: 6795
-// Function ID: 6796
+// Module ID: 6797
+// Function ID: 6798
 // Name: AuthenticationActionCreators
-// Dependencies: [5, 6796, 502, 6797, 1072, 6798, 3, 5146, 572, 5315, 1099, 6799, 6802, 1260, 1282, 6579, 6803, 6804, 510, 1098, 2]
+// Dependencies: [5, 6798, 502, 6799, 1072, 6800, 3, 5148, 572, 5317, 1099, 6801, 6804, 1260, 1282, 6581, 6805, 6806, 6807, 510, 1098, 2]
 
-// Module 6795 (AuthenticationActionCreators)
+// Module 6797 (AuthenticationActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import TokenManagerAll from "TokenManager" /* 1098 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
-import CrossPlatformNativeUtilsDefault from "CrossPlatformNativeUtils" /* 5146 */;
-import RootNavigationRef from "RootNavigationRef" /* 5315 */;
-import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 6579 */;
-import PromoEmailConsentStore from "PromoEmailConsentStore" /* 6796 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6799 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6802 */;
+import CrossPlatformNativeUtilsDefault from "CrossPlatformNativeUtils" /* 5148 */;
+import RootNavigationRef from "RootNavigationRef" /* 5317 */;
+import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 6581 */;
+import PromoEmailConsentStore from "PromoEmailConsentStore" /* 6798 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6801 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6804 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ConsentStore from "ConsentStore" /* 6797 */;
+import ConsentStore from "ConsentStore" /* 6799 */;
 import Constants from "Constants" /* 1072 */;
-import PushNotificationConstants from "PushNotificationConstants" /* 6798 */;
+import PushNotificationConstants from "PushNotificationConstants" /* 6800 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -32,7 +32,7 @@ let closure_14;
 let closure_15;
 let map1;
 let unpackModuleId;
-const f90678 = (error) => {
+const f90798 = (error) => {
   logger.error("Error while dispatching LOGOUT", error);
   if (DiscordErrors != null) {
     DiscordErrors.softCrash(error);
@@ -52,7 +52,7 @@ function handleLogout(source, CHANNELResult) {
   const merged = Object.assign(undefined);
   const tmp2Result = DispatcherDefault;
   const dispatchResult = tmp2Result.dispatch(obj2);
-  dispatchResult.catch(f90678);
+  dispatchResult.catch(f90798);
   if (null != DEFAULT_LOGGED_OUT) {
     const obj8 = RootNavigationRef;
     const rootNavigationRef = obj8.getRootNavigationRef();
@@ -168,7 +168,7 @@ let obj2 = {
             const merged = Object.assign({ isSwitchingAccount: true });
             const tmp21Result = DispatcherDefault;
             const dispatchResult = tmp21Result.dispatch(obj2);
-            dispatchResult.catch(f90678);
+            dispatchResult.catch(f90798);
           }
           const body3 = body.body;
           let suspended_user_token1;
@@ -234,7 +234,7 @@ let obj2 = {
     ({ isMultiAccount: require, loginInstanceId } = arg0);
     ({ code, ticket, source, giftCodeSKUId, mfaType } = arg0);
     let tmp = dependencyMap;
-    const tmp2 = self(6802);
+    const tmp2 = self(6804);
     const request = { url: closure_9.LOGIN_MFA(mfaType), body, retries: 2, oldFormErrors: true, trackedActionData: obj2, rejectWithError: true };
     const post = tmp2.post;
     body = { code, ticket, login_source: source, gift_code_sku_id: giftCodeSKUId, login_instance_id: loginInstanceId };
@@ -283,8 +283,8 @@ let obj2 = {
     const self = this;
     return self(function*(arg0, value) {
       let closure_1;
-      let obj13;
-      let obj3;
+      let obj14;
+      let obj4;
       if (c5 === 2) {
         c5 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
@@ -309,32 +309,32 @@ let obj2 = {
               throw value;
             } else if (arg0 === 2) {
               c5 = 3;
-              const obj4 = { value, done: true };
-              return obj4;
+              const obj5 = { value, done: true };
+              return obj5;
             } else {
               closure_0 = undefined;
               challenge = undefined;
               ticket = undefined;
               credential = undefined;
-              const obj17 = importDefault;
+              const obj18 = importDefault;
               if (importDefault != null) {
-                obj17.abort("Starting non-conditional mediation");
+                obj18.abort("Starting non-conditional mediation");
               }
-              const obj12 = tmp(credential[8]);
-              obj12.dispatch({ type: "PASSWORDLESS_START" });
+              const obj13 = tmp(credential[8]);
+              obj13.dispatch({ type: "PASSWORDLESS_START" });
               credential = 1;
               c4 = 2;
               c5 = 1;
-              const obj5 = { value: obj13.fetchWebAuthnPasswordlessChallenge(), done: false };
-              obj13 = closure_0(credential[16]);
-              return obj5;
+              const obj6 = { value: obj14.fetchWebAuthnPasswordlessChallenge(), done: false };
+              obj14 = closure_0(credential[16]);
+              return obj6;
             }
           } else if (1 === c4) {
             credential = 0;
             const error = closure_2;
-            const obj6 = { type: "PASSWORDLESS_FAILURE", error };
-            const obj10 = tmp(credential[8]);
-            obj10.dispatch(obj6);
+            const obj7 = { type: "PASSWORDLESS_FAILURE", error };
+            const obj11 = tmp(credential[8]);
+            obj11.dispatch(obj7);
             throw error;
           } else if (2 === c4) {
             if (arg0 === 1) {
@@ -343,16 +343,16 @@ let obj2 = {
             } else if (arg0 === 2) {
               credential = 0;
               c5 = 3;
-              const obj7 = { value, done: true };
-              return obj7;
+              const obj8 = { value, done: true };
+              return obj8;
             } else {
               closure_0 = value;
               challenge = closure_0.challenge;
               ticket = closure_0.ticket;
               c4 = 3;
               c5 = 1;
-              const obj8 = { value: closure_129_0(challenge), done: false };
-              return obj8;
+              const obj9 = { value: closure_129_0(challenge), done: false };
+              return obj9;
             }
           } else if (3 === c4) {
             if (arg0 === 1) {
@@ -361,27 +361,27 @@ let obj2 = {
             } else if (arg0 === 2) {
               credential = 0;
               c5 = 3;
-              const obj9 = { value, done: true };
-              return obj9;
+              const obj10 = { value, done: true };
+              return obj10;
             } else {
               credential = 2;
-              const obj11 = { ticket, credential, source: closure_129_2, giftCodeSKUId: closure_129_3, isMultiAccount: closure_129_4 };
+              const obj12 = { ticket, credential, source: closure_129_2, giftCodeSKUId: closure_129_3, isMultiAccount: closure_129_4 };
               c4 = 5;
               c5 = 1;
-              const obj14 = { value: closure_129_5.loginWebAuthn(obj11), done: false };
-              return obj14;
+              const obj15 = { value: closure_129_5.loginWebAuthn(obj12), done: false };
+              return obj15;
             }
           } else {
             if (4 === c4) {
               credential = 1;
               closure_4 = closure_2;
-              const tmp12 = closure_4 instanceof closure_0(credential[15]).APIError && null != closure_4.status && closure_4.status >= 400 && closure_4.status < 500;
-              if (tmp12) {
+              const obj3 = closure_0(credential[17]);
+              if (obj3.isUnknownPasskeyError(closure_4)) {
                 c4 = 6;
                 c5 = 1;
-                const obj15 = { value: obj3.signalUnknownCredential(credential), done: false };
-                obj3 = tmp(credential[17]);
-                return obj15;
+                const obj16 = { value: obj4.signalUnknownCredential(credential), done: false };
+                obj4 = tmp(credential[18]);
+                return obj16;
               }
             } else if (5 === c4) {
               if (arg0 === 1) {
@@ -390,8 +390,8 @@ let obj2 = {
               } else if (arg0 === 2) {
                 credential = 0;
                 c5 = 3;
-                const obj16 = { value, done: true };
-                return obj16;
+                const obj17 = { value, done: true };
+                return obj17;
               } else {
                 credential = 0;
                 c5 = 3;
@@ -408,12 +408,12 @@ let obj2 = {
             }
             throw closure_4;
           }
-        } catch (tmp55) {
-          closure_2 = tmp55;
+        } catch (tmp48) {
+          closure_2 = tmp48;
           if (0 === credential) {
             c5 = 3;
-            throw tmp55;
-          } else if (1 === tmp57) {
+            throw tmp48;
+          } else if (1 === tmp50) {
             c4 = 1;
           } else {
             c4 = 4;
@@ -431,7 +431,7 @@ let obj2 = {
     let self = this;
     isMultiAccount = isMultiAccount.isMultiAccount;
     ({ ticket, credential, source, giftCodeSKUId } = isMultiAccount);
-    obj = self(6802);
+    obj = self(6804);
     const request = { url: closure_9.WEBAUTHN_CONDITIONAL_UI_LOGIN, body: { credential, ticket, source, giftCodeSKUId }, retries: 1, trackedActionData: obj2, rejectWithError: true };
     obj2 = { event: isMultiAccount(1260).NetworkActionNames.USER_LOGIN_PASSWORDLESS };
     const postResult = obj.post(request);
@@ -623,7 +623,7 @@ let obj2 = {
     const merged = Object.assign(arg0);
     const tmpResult = DispatcherDefault;
     const dispatchResult = tmpResult.dispatch(obj2);
-    dispatchResult.catch(f90678);
+    dispatchResult.catch(f90798);
   },
   logout(TTI_test, LOGIN) {
     let Storage;
@@ -640,7 +640,7 @@ let obj2 = {
     }
     importAll = arg2;
     let tmp2 = dependencyMap;
-    const tmp3 = DEFAULT_LOGGED_OUT(6802);
+    const tmp3 = DEFAULT_LOGGED_OUT(6804);
     const request = { url: closure_9.LOGOUT, body, oldFormErrors: true, trackedActionData: { event: require("discord_common/AnalyticsUtils").NetworkActionNames.USER_LOGOUT, properties: { logout_source: TTI_test } }, rejectWithError: tmp4Result.rejectWithMigratedError() };
     body = { provider: closure_15(), token: Storage.get(closure_10), voip_provider, voip_token: Storage2.get(closure_11) };
     const post = tmp3.post;
@@ -686,7 +686,7 @@ let obj2 = {
     const merged = Object.assign(obj2);
     const tmp3Result = DispatcherDefault;
     const dispatchResult = tmp3Result.dispatch(obj4);
-    dispatchResult.catch(f90678);
+    dispatchResult.catch(f90798);
     const loginTokenResult = this.loginToken(token, true);
     return loginTokenResult.then(() => {
       const tmp = token === AuthenticationStore.getToken();
@@ -817,7 +817,7 @@ let obj2 = {
               const obj12 = password(closure_3[8]);
               obj12.dispatch({ type: "LOGIN" });
               const obj5 = { token, password, source };
-              const Storage2 = token(closure_3[18]).Storage;
+              const Storage2 = token(closure_3[19]).Storage;
               value = Storage2.get(closure_1_10);
               const tmp71 = closure_1_15();
               const tmp38 = null != tmp71 && null != value;
@@ -825,7 +825,7 @@ let obj2 = {
                 obj5.push_provider = tmp71;
                 obj5.push_token = value;
               }
-              const Storage = token(closure_3[18]).Storage;
+              const Storage = token(closure_3[19]).Storage;
               const value2 = Storage.get(closure_1_11);
               let tmp44 = null != voip_provider;
               const tmp43 = voip_provider;

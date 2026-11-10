@@ -1,88 +1,88 @@
-// Module ID: 4921
-// Function ID: 4922
+// Module ID: 4923
+// Function ID: 4924
 // Name: moment
-// Dependencies: [4922, 2118, 4923, 4924, 4925, 4926, 4927, 4928, 4929, 4930, 4931, 4932, 4933, 4934, 4935, 4936, 4937, 4938, 4939, 4940, 4941, 4942, 4943, 4944, 4945, 4946, 4947, 4948, 4949, 4950, 2]
+// Dependencies: [4924, 2118, 4925, 4926, 4927, 4928, 4929, 4930, 4931, 4932, 4933, 4934, 4935, 4936, 4937, 4938, 4939, 4940, 4941, 4942, 4943, 4944, 4945, 4946, 4947, 4948, 4949, 4950, 4951, 4952, 2]
 
-// Module 4921 (moment)
+// Module 4923 (moment)
 import asyncRequire from "asyncRequire" /* 2118 */;
 import size from "module_2" /* 2 */;
 
 const obj = {
   bg() {
-    return asyncRequire(4922, dependencyMap.paths);
-  },
-  cs() {
-    return asyncRequire(4923, dependencyMap.paths);
-  },
-  da() {
     return asyncRequire(4924, dependencyMap.paths);
   },
-  de() {
+  cs() {
     return asyncRequire(4925, dependencyMap.paths);
   },
-  el() {
+  da() {
     return asyncRequire(4926, dependencyMap.paths);
   },
-  "en-GB": () => asyncRequire(4927, dependencyMap.paths),
-  "es-ES": () => asyncRequire(4928, dependencyMap.paths),
-  "es-419": () => asyncRequire(4928, dependencyMap.paths),
+  de() {
+    return asyncRequire(4927, dependencyMap.paths);
+  },
+  el() {
+    return asyncRequire(4928, dependencyMap.paths);
+  },
+  "en-GB": () => asyncRequire(4929, dependencyMap.paths),
+  "es-ES": () => asyncRequire(4930, dependencyMap.paths),
+  "es-419": () => asyncRequire(4930, dependencyMap.paths),
   fi() {
-    return asyncRequire(4929, dependencyMap.paths);
-  },
-  fr() {
-    return asyncRequire(4930, dependencyMap.paths);
-  },
-  hr() {
     return asyncRequire(4931, dependencyMap.paths);
   },
-  hu() {
+  fr() {
     return asyncRequire(4932, dependencyMap.paths);
   },
-  it() {
+  hr() {
     return asyncRequire(4933, dependencyMap.paths);
   },
-  ja() {
+  hu() {
     return asyncRequire(4934, dependencyMap.paths);
   },
-  ko() {
+  it() {
     return asyncRequire(4935, dependencyMap.paths);
   },
-  lt() {
+  ja() {
     return asyncRequire(4936, dependencyMap.paths);
   },
-  nl() {
+  ko() {
     return asyncRequire(4937, dependencyMap.paths);
   },
-  no() {
+  lt() {
     return asyncRequire(4938, dependencyMap.paths);
   },
-  pl() {
+  nl() {
     return asyncRequire(4939, dependencyMap.paths);
   },
-  "pt-BR": () => asyncRequire(4940, dependencyMap.paths),
-  ro() {
+  no() {
+    return asyncRequire(4940, dependencyMap.paths);
+  },
+  pl() {
     return asyncRequire(4941, dependencyMap.paths);
   },
-  ru() {
-    return asyncRequire(4942, dependencyMap.paths);
+  "pt-BR": () => asyncRequire(4942, dependencyMap.paths),
+  ro() {
+    return asyncRequire(4943, dependencyMap.paths);
   },
-  "sv-SE": () => asyncRequire(4943, dependencyMap.paths),
-  th() {
+  ru() {
     return asyncRequire(4944, dependencyMap.paths);
   },
-  tr() {
-    return asyncRequire(4945, dependencyMap.paths);
-  },
-  uk() {
+  "sv-SE": () => asyncRequire(4945, dependencyMap.paths),
+  th() {
     return asyncRequire(4946, dependencyMap.paths);
   },
-  vi() {
+  tr() {
     return asyncRequire(4947, dependencyMap.paths);
   },
-  "zh-CN": () => asyncRequire(4948, dependencyMap.paths),
-  "zh-TW": () => asyncRequire(4949, dependencyMap.paths),
+  uk() {
+    return asyncRequire(4948, dependencyMap.paths);
+  },
+  vi() {
+    return asyncRequire(4949, dependencyMap.paths);
+  },
+  "zh-CN": () => asyncRequire(4950, dependencyMap.paths),
+  "zh-TW": () => asyncRequire(4951, dependencyMap.paths),
   hi() {
-    return asyncRequire(4950, dependencyMap.paths);
+    return asyncRequire(4952, dependencyMap.paths);
   }
 };
 const result = size.fileFinishedImporting("intl/locale-data/moment.tsx");

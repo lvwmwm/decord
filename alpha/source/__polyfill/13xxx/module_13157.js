@@ -3,9 +3,14 @@
 // Dependencies: []
 
 // Module 13157
-const obj = {
-  parse: function nth() {
-    return this.createSingleNodeList(this.Nth(false));
+let obj2;
+const obj = { parse: obj2 };
+obj2 = {
+  prelude() {
+    return this.createSingleNodeList(this.MediaQueryList());
+  },
+  block() {
+    return this.Block(false);
   }
 };
 

@@ -1,25 +1,25 @@
-// Module ID: 15134
-// Function ID: 15135
+// Module ID: 15160
+// Function ID: 15161
 // Name: UserProfileVoiceSettings
-// Dependencies: [19, 17, 6191, 2130, 5072, 5893, 1072, 1083, 21, 5140, 8832, 504, 6180, 9364, 12115, 6047, 7436, 1113, 9322, 12138, 15135, 14345, 1252, 15137, 11172, 7152, 5751, 12554, 14975, 8246, 5374, 9349, 9345, 2]
+// Dependencies: [19, 17, 6193, 2130, 5074, 5895, 1072, 1083, 21, 5142, 8838, 504, 6182, 9370, 12124, 6049, 7439, 1113, 9328, 12147, 15161, 14371, 1252, 15163, 11181, 7155, 5753, 12567, 15001, 8250, 5376, 9355, 9351, 2]
 // Exports: default
 
-// Module 15134 (UserProfileVoiceSettings)
+// Module 15160 (UserProfileVoiceSettings)
 import react_native from "react-native" /* 17 */;
 import Constants2 from "Constants" /* 1083 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 6047 */;
-import SecureFramesPlatformUtilsDefault from "SecureFramesPlatformUtils" /* 9349 */;
-import UserProfileAlertUtils from "UserProfileAlertUtils" /* 12554 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5376 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 6049 */;
+import SecureFramesPlatformUtilsDefault from "SecureFramesPlatformUtils" /* 9355 */;
+import UserProfileAlertUtils from "UserProfileAlertUtils" /* 12567 */;
 import react from "react" /* 19 */;
-import SoundboardStore from "SoundboardStore" /* 6191 */;
+import SoundboardStore from "SoundboardStore" /* 6193 */;
 import MediaEngineStore from "MediaEngineStore" /* 2130 */;
-import PermissionStore from "PermissionStore" /* 5072 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5893 */;
+import PermissionStore from "PermissionStore" /* 5074 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5895 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5140 */;
+import createStyles from "createStyles" /* 5142 */;
 import size from "module_2" /* 2 */;
 
 let c9;
@@ -258,7 +258,7 @@ function CurrentUserVoiceSettings(channel) {
   channel = channel.channel;
   ({ user, style } = channel);
   let tmp = closure_13();
-  let obj = channel(8832);
+  let obj = channel(8838);
   const trackUserProfileAction = obj.useUserProfileAnalyticsContext().trackUserProfileAction;
   const items = [MediaEngineStore];
   const obj2 = channel(504);
@@ -280,10 +280,10 @@ function CurrentUserVoiceSettings(channel) {
       let stringResult;
       const obj4 = { style: items2, title: intl.string(channel(1113).t.NiTd0e), titleStyle: tmp.cardTitle, children: closure_11(UserProfileCardRows, obj6) };
       items2 = [tmp.card, style];
-      const tmp6Result = tmp6(7436);
+      const tmp6Result = tmp6(7439);
       intl = tmp2(1113).intl;
-      UserProfileCardRows = tmp2(7436).UserProfileCardRows;
-      const UserProfileFormRow = tmp2(7436).UserProfileFormRow;
+      UserProfileCardRows = tmp2(7439).UserProfileCardRows;
+      const UserProfileFormRow = tmp2(7439).UserProfileFormRow;
       const intl2 = tmp2(1113).intl;
       const string = intl2.string;
       const t = tmp2(1113).t;
@@ -302,9 +302,9 @@ function CurrentUserVoiceSettings(channel) {
             }
       };
       if (stateFromStores) {
-        MicrophoneIcon = tmp2(9322).MicrophoneSlashIcon;
+        MicrophoneIcon = tmp2(9328).MicrophoneSlashIcon;
       } else {
-        MicrophoneIcon = tmp2(12138).MicrophoneIcon;
+        MicrophoneIcon = tmp2(12147).MicrophoneIcon;
       }
       obj6 = { children: closure_11(UserProfileFormRow, obj5, "mute") };
       tmp9Result = tmp9(tmp6Result, obj4);

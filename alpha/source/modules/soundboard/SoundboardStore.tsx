@@ -1,9 +1,9 @@
-// Module ID: 6191
-// Function ID: 6192
+// Module ID: 6193
+// Function ID: 6194
 // Name: SoundboardStore
-// Dependencies: [32, 1231, 5893, 1385, 6192, 6193, 1072, 1082, 5909, 2166, 12, 4965, 1252, 6055, 11, 504, 572, 2]
+// Dependencies: [32, 1231, 5895, 1385, 6194, 6195, 1072, 1082, 5911, 2166, 12, 4967, 1252, 6057, 11, 504, 572, 2]
 
-// Module 6191 (SoundboardStore)
+// Module 6193 (SoundboardStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
@@ -11,15 +11,15 @@ import Constants from "Constants" /* 1072 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1082 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import _modDef2166 from "module_2166" /* 2166 */;
-import UserSettings from "UserSettings" /* 4965 */;
-import FrecencyDefault from "Frecency" /* 5909 */;
-import PerceptualVolumeUtils from "PerceptualVolumeUtils" /* 6055 */;
+import UserSettings from "UserSettings" /* 4967 */;
+import FrecencyDefault from "Frecency" /* 5911 */;
+import PerceptualVolumeUtils from "PerceptualVolumeUtils" /* 6057 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5893 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5895 */;
 import UserStore from "UserStore" /* 1385 */;
-import TopSoundboardSoundStore from "TopSoundboardSoundStore" /* 6192 */;
-import SoundboardConstants from "SoundboardConstants" /* 6193 */;
+import TopSoundboardSoundStore from "TopSoundboardSoundStore" /* 6194 */;
+import SoundboardConstants from "SoundboardConstants" /* 6195 */;
 import module_12_mod from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 
@@ -139,7 +139,7 @@ let obj2 = {
   }
 };
 let tmp9 = new FrecencyDefault(obj2);
-const authStore6 = tmp9;
+const authStore5 = tmp9;
 const sidebars = [];
 let c24 = false;
 let closure_25 = false;

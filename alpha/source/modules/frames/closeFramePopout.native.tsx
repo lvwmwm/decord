@@ -1,10 +1,10 @@
-// Module ID: 14634
-// Function ID: 14635
+// Module ID: 14660
+// Function ID: 14661
 // Name: closeFramePopout
 // Dependencies: [2]
 // Exports: default
 
-// Module 14634 (closeFramePopout)
+// Module 14660 (closeFramePopout)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/frames/closeFramePopout.native.tsx");

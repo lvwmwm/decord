@@ -1,17 +1,17 @@
-// Module ID: 10140
-// Function ID: 10141
+// Module ID: 10146
+// Function ID: 10147
 // Name: useEmojiPickerData
-// Dependencies: [19, 6851, 6854, 10064, 504, 10141, 10142, 10143, 10145, 2]
+// Dependencies: [19, 6854, 6857, 10070, 504, 10147, 10148, 10149, 10151, 2]
 // Exports: default
 
-// Module 10140 (useEmojiPickerData)
-import EmojiStore2 from "EmojiStore" /* 6851 */;
-import EmojiPickerConstants from "EmojiPickerConstants" /* 6854 */;
-import EmojiPickerListConstants from "EmojiPickerListConstants" /* 10064 */;
-import getEmojiPickerDataRowItemNativeSectionDefault from "getEmojiPickerDataRowItemNativeSection" /* 10141 */;
-import getEmojiPickerDataRowPremiumInlineRoadblockDefault from "getEmojiPickerDataRowPremiumInlineRoadblock" /* 10142 */;
-import PremiumUpsellSectionDivider from "PremiumUpsellSectionDivider" /* 10143 */;
-import getEmojiPickerDataRowItemSlimEmojiDefault from "getEmojiPickerDataRowItemSlimEmoji" /* 10145 */;
+// Module 10146 (useEmojiPickerData)
+import EmojiStore2 from "EmojiStore" /* 6854 */;
+import EmojiPickerConstants from "EmojiPickerConstants" /* 6857 */;
+import EmojiPickerListConstants from "EmojiPickerListConstants" /* 10070 */;
+import getEmojiPickerDataRowItemNativeSectionDefault from "getEmojiPickerDataRowItemNativeSection" /* 10147 */;
+import getEmojiPickerDataRowPremiumInlineRoadblockDefault from "getEmojiPickerDataRowPremiumInlineRoadblock" /* 10148 */;
+import PremiumUpsellSectionDivider from "PremiumUpsellSectionDivider" /* 10149 */;
+import getEmojiPickerDataRowItemSlimEmojiDefault from "getEmojiPickerDataRowItemSlimEmoji" /* 10151 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

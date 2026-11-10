@@ -1,26 +1,26 @@
-// Module ID: 14219
-// Function ID: 14220
+// Module ID: 14245
+// Function ID: 14246
 // Name: ChatInputContextBar
-// Dependencies: [19, 17, 5141, 7777, 1385, 1072, 21, 1187, 5140, 575, 5724, 5751, 1113, 7043, 7177, 504, 5200, 6572, 9370, 8490, 14220, 5308, 1652, 5370, 1705, 10320, 1252, 10318, 1099, 6571, 14221, 8413, 9897, 9899, 2]
+// Dependencies: [19, 17, 5143, 7780, 1385, 1072, 21, 1187, 5142, 575, 5726, 5753, 1113, 7046, 7180, 504, 5202, 6574, 9376, 8494, 14246, 5310, 1652, 5372, 1705, 10326, 1252, 10324, 1099, 6573, 14247, 8417, 9903, 9905, 2]
 
-// Module 14219 (ChatInputContextBar)
+// Module 14245 (ChatInputContextBar)
 import nativeDefault from "native" /* 575 */;
 import intl9 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import useToken from "useToken" /* 5724 */;
-import Text_Text from "Text/Text" /* 5751 */;
-import Pressables from "Pressables" /* 7043 */;
-import DraftStore2 from "DraftStore" /* 7777 */;
-import DraftActionCreatorsDefault from "DraftActionCreators" /* 8413 */;
-import ScheduledMessagesUtils from "ScheduledMessagesUtils" /* 9897 */;
-import ScheduledMessageTypes from "ScheduledMessageTypes" /* 9899 */;
+import useToken from "useToken" /* 5726 */;
+import Text_Text from "Text/Text" /* 5753 */;
+import Pressables from "Pressables" /* 7046 */;
+import DraftStore2 from "DraftStore" /* 7780 */;
+import DraftActionCreatorsDefault from "DraftActionCreators" /* 8417 */;
+import ScheduledMessagesUtils from "ScheduledMessagesUtils" /* 9903 */;
+import ScheduledMessageTypes from "ScheduledMessageTypes" /* 9905 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5141 */;
+import AccessibilityStore from "AccessibilityStore" /* 5143 */;
 import UserStore from "UserStore" /* 1385 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5142 */;
 import size_mod from "module_2" /* 2 */;
 
 const DraftStore = DraftStore2;
@@ -34,7 +34,7 @@ let hasOwnProperty;
 let map1;
 let tmp4;
 let unpackModuleId;
-const AssetRegistryDefault = tmp4(7177);
+const AssetRegistryDefault = tmp4(7180);
 function ChatInputReplyBarNoAuthor(onCancelReplying) {
   let Icon;
   let PressableOpacity;
@@ -114,7 +114,7 @@ class ChatInputReplyBar {
           const Text2 = Text_Text.Text;
           const tmp15 = authStore2;
           const tmp8 = map1;
-          const tmp9 = authStore3;
+          const tmp9 = gesture;
           if (null != closure_7) {
             tmp19 = { fontFamily: tmp18 };
             const obj4 = { fontFamily: tmp18 };
@@ -312,7 +312,7 @@ function ChatInputEditBar(onCancelEditing) {
   }
   obj5 = { source: AssetRegistryDefault, size: native.Icon.Sizes.CUSTOM, style: tmp.floatingCloseIcon };
   Icon = tmp2(1187).Icon;
-  const obj6 = { style: tmp.contextBarRow, children: map1(authStore3, obj7) };
+  const obj6 = { style: tmp.contextBarRow, children: map1(gesture, obj7) };
   obj7 = { children: items };
   items = [tmp8, ];
   const obj8 = { style: tmp.floatingRightActions, children: authStore2(PressableOpacity, obj4) };
@@ -356,7 +356,7 @@ function ChatInputScheduledMessageBar(scheduledTimestamp) {
   }
   obj6 = { source: AssetRegistryDefault, size: native.Icon.Sizes.CUSTOM, style: tmp.floatingCloseIcon };
   Icon = tmp2(1187).Icon;
-  const obj7 = { style: tmp.contextBarRow, children: map1(authStore3, obj8) };
+  const obj7 = { style: tmp.contextBarRow, children: map1(gesture, obj8) };
   obj8 = { children: items };
   items = [tmp9, ];
   const obj9 = { style: tmp.floatingRightActions, children: authStore2(PressableOpacity2, obj5) };
@@ -376,8 +376,8 @@ function ContextBarItem(arg0) {
   dependencyMap = undefined;
   ({ children, ref } = arg0);
   let tmp = dependencyMap;
-  obj = sharedValue(5308);
-  backgroundColor = closure_16(obj.useGradientValue(sharedValue(5308).GradientPercentage.END)).contextBar.backgroundColor;
+  obj = sharedValue(5310);
+  backgroundColor = closure_16(obj.useGradientValue(sharedValue(5310).GradientPercentage.END)).contextBar.backgroundColor;
   let tmp2 = closure_17();
   const obj2 = sharedValue(1652);
   sharedValue = obj2.useSharedValue(0);

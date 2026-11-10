@@ -1,16 +1,16 @@
-// Module ID: 16819
-// Function ID: 16820
+// Module ID: 16846
+// Function ID: 16847
 // Name: useProfileFrameSections
-// Dependencies: [32, 19, 7796, 7811, 563, 7808, 1113, 15344, 2]
+// Dependencies: [32, 19, 7799, 7814, 563, 7811, 1113, 15369, 2]
 // Exports: default
 
-// Module 16819 (useProfileFrameSections)
+// Module 16846 (useProfileFrameSections)
 import react from "react" /* 19 */;
 import intl4 from "intl" /* 1113 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7808 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7811 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7796 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7811 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7799 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7814 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, premium_purchase;
@@ -79,7 +79,7 @@ export default function useProfileFrameSections() {
     items1[2] = obj3;
     return items1.filter((items) => items.items.length > 0);
   }, items2);
-  return first(15344)(tmp5, obj.PREVIEW);
+  return first(15369)(tmp5, obj.PREVIEW);
 };
 export { Section };
 export const NONE_ITEM = obj2;

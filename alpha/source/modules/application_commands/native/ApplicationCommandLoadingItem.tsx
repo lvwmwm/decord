@@ -1,17 +1,17 @@
-// Module ID: 14197
-// Function ID: 14198
+// Module ID: 14223
+// Function ID: 14224
 // Name: ApplicationCommandLoadingItem
-// Dependencies: [19, 17, 10344, 21, 5140, 575, 5766, 2]
+// Dependencies: [19, 17, 10350, 21, 5142, 575, 5768, 2]
 // Exports: default
 
-// Module 14197 (ApplicationCommandLoadingItem)
+// Module 14223 (ApplicationCommandLoadingItem)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import useFontScale from "useFontScale" /* 5766 */;
-import ApplicationCommandsConstants from "ApplicationCommandsConstants" /* 10344 */;
+import useFontScale from "useFontScale" /* 5768 */;
+import ApplicationCommandsConstants from "ApplicationCommandsConstants" /* 10350 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5140 */;
+import createStyles from "createStyles" /* 5142 */;
 import size_mod from "module_2" /* 2 */;
 
 let hasOwnProperty;

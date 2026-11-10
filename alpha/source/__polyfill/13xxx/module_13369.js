@@ -1,178 +1,114 @@
 // Module ID: 13369
 // Function ID: 13370
-// Dependencies: [13334, 13279, 13370]
-// Exports: generateIteratee
+// Dependencies: [13299, 13301]
+// Exports: applyAggregateErrorsToEvent
 
 // Module 13369
-import _mod13370 from "module_13370" /* 13370 */;
-import module_13334 from "module_13334" /* 13334 */;
+import _mod13299 from "module_13299" /* 13299 */;
+import _mod13301 from "module_13301" /* 13301 */;
 
 const require = globalThis.__r;
-let _require, stacktrace;
+let _require, dependencyMap, length;
 
-
-export function generateIteratee(arg0) {
+function aggregateExceptionsFromError(fn, arg1, arg2, errors, source, arg5, mechanism, exception_id) {
+  let closure_1;
   let closure_2;
-  let require;
-  ({ isBrowser: require, root: dependencyMap, prefix: closure_2 } = arg0);
-  return (filename) => {
-    if (filename.filename) {
-      const obj = /^[a-zA-Z]:\\/;
-      let isMatch = obj.test(filename.filename);
-      if (!isMatch) {
-        filename = filename.filename;
-        let hasItem = filename.includes("\\");
-        if (hasItem) {
-          const filename2 = filename.filename;
-          hasItem = !filename2.includes("/");
-        }
-        isMatch = hasItem;
-      }
-      const tmp5 = closure_0;
-      if (tmp5) {
-        if (root) {
-          const filename1 = filename.filename;
-          if (0 === filename1.indexOf(root)) {
-            filename.filename = filename1.replace(root, prefix);
-          }
-        }
-      } else if (isMatch) {
-        let replaced;
-        let relativeResult;
-        if (isMatch) {
-          const str5 = filename.filename.replace(/^[a-zA-Z]:/, "");
-          replaced = str5.replace(/\\/g, "/");
-        } else {
-          replaced = str3;
-        }
-        const obj2 = _mod13370;
-        if (root) {
-          relativeResult = obj2.relative(tmp7, replaced);
-        } else {
-          relativeResult = obj2.basename(replaced);
-        }
-        const _HermesInternal = HermesInternal;
-        filename.filename = "" + prefix + relativeResult;
-      }
-      return filename;
-    } else {
-      return filename;
+  _require = fn;
+  dependencyMap = arg1;
+  aggregateExceptionsFromError = arg2;
+  let closure_3 = source;
+  if (arg5.length >= arg2 + 1) {
+    return arg5;
+  } else {
+    let items = [];
+    HermesBuiltin.arraySpread(items, arg5, 0);
+    length = items;
+    let obj3 = require("module_13299");
+    const _Error = Error;
+    if (obj3.isInstanceOf(errors[source], Error)) {
+      mechanism.mechanism = mechanism.mechanism || { type: "generic", handled: true };
+      let obj = { exception_id };
+      const tmp2 = obj;
+      let merged = Object.assign(mechanism.mechanism);
+      const tmp4 = "AggregateError" === mechanism.type && { is_exception_group: true };
+      let tmp6 = tmp4;
+      let merged1 = Object.assign(tmp4);
+      mechanism.mechanism = obj;
+      const tmp8 = fn(arg1, errors[source]);
+      length = length.length;
+      tmp8.mechanism = tmp8.mechanism || { type: "generic", handled: true };
+      let obj2 = { type: "chained", source, exception_id: length, parent_id: exception_id };
+      let merged2 = Object.assign(tmp8.mechanism);
+      tmp8.mechanism = obj2;
+      const tmp12 = aggregateExceptionsFromError;
+      const items1 = [tmp8];
+      let tmp13 = errors[source];
+      HermesBuiltin.arraySpread(items1, length, 1);
+      length = aggregateExceptionsFromError(fn, arg1, arg2, tmp13, source, items1, tmp8, length);
     }
-  };
-}
-export const rewriteFramesIntegration = module_13334.defineIntegration(() => {
-  let closure_0;
-  let prefix;
-  let root;
-  let obj = arg0;
-  if (arg0 === undefined) {
-    obj = {};
-  }
-  let fn;
-  ({ prefix, root } = obj);
-  if (!prefix) {
-    prefix = "app:///";
-  }
-  const tmp = _require;
-  let tmp2 = root;
-  fn = obj.iteratee;
-  const tmp3 = "window" in require("module_13279").GLOBAL_OBJ && undefined !== tmp(tmp2[1]).GLOBAL_OBJ.window;
-  if (!fn) {
-    _require = tmp3;
-    fn = (filename) => {
-      if (filename.filename) {
-        const obj = /^[a-zA-Z]:\\/;
-        let isMatch = obj.test(filename.filename);
-        if (!isMatch) {
-          filename = filename.filename;
-          let hasItem = filename.includes("\\");
-          if (hasItem) {
-            const filename2 = filename.filename;
-            hasItem = !filename2.includes("/");
-          }
-          isMatch = hasItem;
-        }
-        const tmp5 = closure_0;
-        if (tmp5) {
-          if (root) {
-            const filename1 = filename.filename;
-            if (0 === filename1.indexOf(root)) {
-              filename.filename = filename1.replace(root, prefix);
-            }
-          }
-        } else if (isMatch) {
-          let replaced;
-          let relativeResult;
-          if (isMatch) {
-            const str5 = filename.filename.replace(/^[a-zA-Z]:/, "");
-            replaced = str5.replace(/\\/g, "/");
-          } else {
-            replaced = str3;
-          }
-          const obj2 = _mod13370;
-          if (root) {
-            relativeResult = obj2.relative(tmp7, replaced);
-          } else {
-            relativeResult = obj2.basename(replaced);
-          }
+    const _Array = Array;
+    if (Array.isArray(errors.errors)) {
+      errors = errors.errors;
+      const item = errors.forEach((item, index) => {
+        const obj = _mod13299;
+        if (obj.isInstanceOf(item, Error)) {
+          mechanism.mechanism = mechanism.mechanism || { type: "generic", handled: true };
+          const obj2 = { exception_id };
+          const merged = Object.assign(tmp2.mechanism);
+          const tmp6 = "AggregateError" === mechanism.type && { is_exception_group: true };
+          const merged1 = Object.assign(tmp6);
+          mechanism.mechanism = obj2;
+          const tmp13 = fn(closure_1, item);
+          length = length.length;
           const _HermesInternal = HermesInternal;
-          filename.filename = "" + prefix + relativeResult;
+          mechanism = tmp13.mechanism;
+          const combined = "errors[" + index + "]";
+          if (!mechanism) {
+            mechanism = { type: "generic", handled: true };
+          }
+          tmp13.mechanism = mechanism;
+          const obj3 = { type: "chained", source: combined, exception_id: length, parent_id: exception_id };
+          const merged2 = Object.assign(tmp13.mechanism);
+          tmp13.mechanism = obj3;
+          const items = [tmp13];
+          HermesBuiltin.arraySpread(items, length, 1);
+          length = aggregateExceptionsFromError(tmp11, tmp12, closure_2, item, source, items, tmp13, length);
         }
-        return filename;
-      } else {
-        return filename;
-      }
-    };
-  }
-  let obj2 = {
-    name: "RewriteFrames",
-    processEvent(exception) {
-      function _processExceptionsEvent(exception) {
-        let obj2;
-        let values;
-        try {
-          let obj = { exception: obj2 };
-          let merged = Object.assign(exception);
-          obj2 = {
-            values: values.map((stacktrace) => {
-                let mapped;
-                const obj = {};
-                const merged = Object.assign(stacktrace);
-                stacktrace = stacktrace.stacktrace;
-                if (stacktrace) {
-                  const stacktrace2 = stacktrace.stacktrace;
-                  const obj2 = { frames: mapped };
-                  const merged1 = Object.assign(stacktrace2);
-                  mapped = stacktrace2 && stacktrace2.frames;
-                  if (mapped) {
-                    const frames = stacktrace2.frames;
-                    mapped = frames.map((item) => closure_1_0(item));
-                  }
-                  stacktrace = { stacktrace: obj2 };
-                  const obj3 = { stacktrace: obj2 };
-                }
-                const merged2 = Object.assign(stacktrace);
-                return obj;
-              })
-          };
-          let merged1 = Object.assign(exception.exception);
-          values = exception.exception.values;
-          return obj;
-        } catch (err) {
-          return exception;
-        }
-      }
-      exception = exception.exception;
-      if (exception) {
-        const _Array = Array;
-        exception = Array.isArray(exception.exception.values);
-      }
-      let tmp2 = exception;
-      if (exception) {
-        tmp2 = _processExceptionsEvent(exception);
-      }
-      return tmp2;
+      });
     }
-  };
-  return obj2;
-});
+    return length;
+  }
+}
+
+export function applyAggregateErrorsToEvent(arg0, arg1, arg2, arg3, arg4, exception, originalException) {
+  let num = arg2;
+  if (arg2 === undefined) {
+    num = 250;
+  }
+  if (exception.exception) {
+    if (exception.exception.values) {
+      const tmp = originalException;
+      if (tmp) {
+        let obj = num(13299);
+        const _Error = Error;
+        if (obj.isInstanceOf(originalException.originalException, Error)) {
+          let tmp5;
+          if (exception.exception.values.length > 0) {
+            tmp5 = exception.exception.values[exception.exception.values.length - 1];
+          }
+          if (tmp5) {
+            exception = exception.exception;
+            const arr = aggregateExceptionsFromError(arg0, arg1, arg4, originalException.originalException, arg3, exception.exception.values, tmp5, 0);
+            exception.values = arr.map((value) => {
+              if (value.value) {
+                const obj = _mod13301;
+                value.value = obj.truncate(value.value, num);
+              }
+              return value;
+            });
+          }
+        }
+      }
+    }
+  }
+}

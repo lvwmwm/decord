@@ -1,13 +1,13 @@
-// Module ID: 8063
-// Function ID: 8064
+// Module ID: 8067
+// Function ID: 8068
 // Name: ExpressiveModalV2Experiment
-// Dependencies: [8064, 1449, 8038, 504, 2]
+// Dependencies: [8068, 1449, 8042, 504, 2]
 // Exports: isExpressiveModalV2Enabled, useIsExpressiveModalV2Enabled
 
-// Module 8063 (ExpressiveModalV2Experiment)
+// Module 8067 (ExpressiveModalV2Experiment)
 import get_initialized from "get initialized" /* 504 */;
-import SafetyHubUtils from "SafetyHubUtils" /* 8038 */;
-import SafetyHubStore from "SafetyHubStore" /* 8064 */;
+import SafetyHubUtils from "SafetyHubUtils" /* 8042 */;
+import SafetyHubStore from "SafetyHubStore" /* 8068 */;
 import ApexExperiment from "ApexExperiment" /* 1449 */;
 import size from "module_2" /* 2 */;
 

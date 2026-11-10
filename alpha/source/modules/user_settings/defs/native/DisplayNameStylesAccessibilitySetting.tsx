@@ -1,17 +1,17 @@
-// Module ID: 17722
-// Function ID: 17723
+// Module ID: 17749
+// Function ID: 17750
 // Name: DisplayNameStylesAccessibilitySetting
-// Dependencies: [5141, 8503, 504, 16583, 11685, 1113, 3056, 2]
+// Dependencies: [5143, 8507, 504, 16610, 11694, 1113, 3056, 2]
 // Exports: onValueChange, useValue
 
-// Module 17722 (DisplayNameStylesAccessibilitySetting)
+// Module 17749 (DisplayNameStylesAccessibilitySetting)
 import get_initialized from "get initialized" /* 504 */;
 import intl2 from "intl" /* 1113 */;
 import _modDef3056 from "module_3056" /* 3056 */;
-import SettingsConstants from "SettingsConstants" /* 8503 */;
-import AccessibilityActionCreators from "AccessibilityActionCreators" /* 16583 */;
-import AccessibilityStore from "AccessibilityStore" /* 5141 */;
-import SettingBuilders from "SettingBuilders" /* 11685 */;
+import SettingsConstants from "SettingsConstants" /* 8507 */;
+import AccessibilityActionCreators from "AccessibilityActionCreators" /* 16610 */;
+import AccessibilityStore from "AccessibilityStore" /* 5143 */;
+import SettingBuilders from "SettingBuilders" /* 11694 */;
 import size from "module_2" /* 2 */;
 
 function useValue() {

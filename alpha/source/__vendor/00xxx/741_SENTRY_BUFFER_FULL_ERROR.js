@@ -39,7 +39,7 @@ export function makePromiseBuffer() {
       }
     },
     drain(arg0) {
-      const f122322 = (arg0) => {
+      const f122510 = (arg0) => {
         closure_0 = arg0;
         return setTimeout(() => closure_0(false), closure_0);
       };
@@ -52,8 +52,8 @@ export function makePromiseBuffer() {
           const items = [nextPromise, ];
           const self = this;
           const self2 = this;
-          items[1] = new Promise(f122322);
-          const promise = new Promise(f122322);
+          items[1] = new Promise(f122510);
+          const promise = new Promise(f122510);
           return Promise.race(items);
         } else {
           return nextPromise;

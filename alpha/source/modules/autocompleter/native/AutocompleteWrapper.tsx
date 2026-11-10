@@ -1,40 +1,40 @@
-// Module ID: 14178
-// Function ID: 14179
+// Module ID: 14204
+// Function ID: 14205
 // Name: AutocompleteWrapper
-// Dependencies: [32, 19, 17, 8416, 6851, 6623, 6892, 1072, 6167, 10344, 6168, 10428, 1388, 21, 8752, 7270, 10439, 5140, 1377, 575, 14179, 1493, 5735, 5714, 504, 5724, 5883, 14186, 14187, 4965, 7125, 10427, 14188, 10343, 6953, 10062, 14189, 7776, 13988, 2116, 7901, 1625, 5889, 9223, 9699, 9224, 14190, 14191, 9875, 8671, 14026, 1652, 14192, 5807, 14199, 5751, 1113, 7357, 8252, 14200, 14201, 2]
+// Dependencies: [32, 19, 17, 8420, 6854, 6625, 6895, 1072, 6169, 10350, 6170, 10434, 1388, 21, 8758, 7273, 10445, 5142, 1377, 575, 14205, 1493, 5737, 5716, 504, 5726, 5885, 14212, 14213, 4967, 7128, 10433, 14214, 10349, 6956, 10068, 14215, 7779, 14014, 2116, 7905, 1625, 10644, 5891, 9229, 9705, 9230, 14216, 14217, 9881, 8677, 14052, 1652, 14218, 5809, 14225, 5753, 1113, 7360, 8256, 14226, 14227, 2]
 
-// Module 14178 (AutocompleteWrapper)
+// Module 14204 (AutocompleteWrapper)
 import nativeDefault from "native" /* 575 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import EmojiConstants from "EmojiConstants" /* 1388 */;
 import KeyboardTypes from "KeyboardTypes" /* 1625 */;
 import Server from "Server" /* 2116 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5807 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5889 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6167 */;
-import utils_AutocompleteUtilsDefault from "utils/AutocompleteUtils" /* 6953 */;
-import RunAfterInteractionsUtils from "RunAfterInteractionsUtils" /* 7270 */;
-import GameAutocompleteUtils from "GameAutocompleteUtils" /* 8752 */;
-import GameSearchSession from "GameSearchSession" /* 9223 */;
-import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9875 */;
-import autocompleter_AutocompleteUtils from "autocompleter/AutocompleteUtils" /* 10343 */;
-import AutocompleteOptions from "AutocompleteOptions" /* 10427 */;
-import channel_text_area_ChannelAutocompleteConstants from "channel_text_area/ChannelAutocompleteConstants" /* 10428 */;
-import TimestampSuggestionUtils from "TimestampSuggestionUtils" /* 10439 */;
-import Autocomplete from "Autocomplete" /* 14179 */;
-import ChannelAutocompleteAnalytics from "ChannelAutocompleteAnalytics" /* 14190 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5809 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5891 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6169 */;
+import utils_AutocompleteUtilsDefault from "utils/AutocompleteUtils" /* 6956 */;
+import RunAfterInteractionsUtils from "RunAfterInteractionsUtils" /* 7273 */;
+import GameAutocompleteUtils from "GameAutocompleteUtils" /* 8758 */;
+import GameSearchSession from "GameSearchSession" /* 9229 */;
+import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9881 */;
+import autocompleter_AutocompleteUtils from "autocompleter/AutocompleteUtils" /* 10349 */;
+import AutocompleteOptions from "AutocompleteOptions" /* 10433 */;
+import channel_text_area_ChannelAutocompleteConstants from "channel_text_area/ChannelAutocompleteConstants" /* 10434 */;
+import TimestampSuggestionUtils from "TimestampSuggestionUtils" /* 10445 */;
+import Autocomplete from "Autocomplete" /* 14205 */;
+import ChannelAutocompleteAnalytics from "ChannelAutocompleteAnalytics" /* 14216 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ApplicationCommandStore from "ApplicationCommandStore" /* 8416 */;
-import EmojiStore from "EmojiStore" /* 6851 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6623 */;
-import StickersStore from "StickersStore" /* 6892 */;
+import ApplicationCommandStore from "ApplicationCommandStore" /* 8420 */;
+import EmojiStore from "EmojiStore" /* 6854 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6625 */;
+import StickersStore from "StickersStore" /* 6895 */;
 import Constants from "Constants" /* 1072 */;
-import ApplicationCommandsConstants from "ApplicationCommandsConstants" /* 10344 */;
-import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 6168 */;
+import ApplicationCommandsConstants from "ApplicationCommandsConstants" /* 10350 */;
+import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 6170 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5140 */;
+import createStyles from "createStyles" /* 5142 */;
 import size from "module_2" /* 2 */;
 
 let keyExtractor;
@@ -58,7 +58,7 @@ let map1;
 let metroRequire;
 let tmp;
 let unpackModuleId;
-const application_commands_ApplicationCommandUtils = tmp(14026);
+const application_commands_ApplicationCommandUtils = tmp(14052);
 function getItemKey(type, arg1) {
   type = type.type;
   if (unpackModuleId.USER === type) {
@@ -145,15 +145,15 @@ class ACWrapper {
     let closure_35;
     let format;
     let intl;
-    let items29;
     let items30;
-    let items32;
+    let items31;
     let items33;
     let items34;
     let items35;
-    let items37;
+    let items36;
     let items38;
     let items39;
+    let items40;
     let ksAVYt;
     let num3;
     let obj15;
@@ -167,8 +167,8 @@ class ACWrapper {
     let tmp22;
     let tmp38;
     let tmp46;
-    let tmp95Result4;
-    const f107058 = (arg0) => {
+    let tmp97Result4;
+    const f107224 = (arg0) => {
       closure_0 = arg0;
       if (arg0 > 0) {
         let tmp = commandsDisabled;
@@ -208,7 +208,7 @@ class ACWrapper {
     let ref4;
     let current;
     let diff1;
-    let memo3;
+    let memo4;
     let first6;
     let closure_57;
     let closure_58;
@@ -301,7 +301,7 @@ class ACWrapper {
           if (selectionStart === selectionEnd) {
             if (" " === text[selectionEnd - 1]) {
               const obj3 = autocompleter_AutocompleteUtils;
-              const result = obj3.findAutoInsertOnSpaceToken(tmp, tmp2, authStore5);
+              const result = obj3.findAutoInsertOnSpaceToken(tmp, tmp2, authStore4);
               if (null != result) {
                 const obj4 = utils_AutocompleteUtilsDefault;
                 const result1 = obj4.findAutoInsertOnSpaceMentionInlineAutocompleteType(result.trigger);
@@ -312,7 +312,7 @@ class ACWrapper {
                       const tmp32Result = autocompleter_AutocompleteUtils;
                       if (tmp32Result.isSpaceJustTypedAtCaret(text, selectionEnd, text, selectionEnd)) {
                         const current2 = chatInputRef.current;
-                        current2.insertText(authStore6, result.tokenStart, false, undefined, selectionEnd);
+                        current2.insertText(authStore5, result.tokenStart, false, undefined, selectionEnd);
                         beginSearch(result.tokenStart);
                       }
                     }
@@ -609,7 +609,7 @@ class ACWrapper {
       let tmp35 = tmp34[1](autocompleteType);
       tmp33(null);
     }
-    const items7 = [first2, obj5.useCallback(f107058, [])];
+    const items7 = [first2, obj5.useCallback(f107224, [])];
     [tmp38, c42] = keyboardType(items7, 2);
     keyboardType(items7, 2);
     const tmp11Result9 = keyboardType(obj5.useState(null), 2);
@@ -621,7 +621,7 @@ class ACWrapper {
       tmp11Result10[1](autocompleteType);
       tmp41(null);
     }
-    const items8 = [first3, obj5.useCallback(f107058, [])];
+    const items8 = [first3, obj5.useCallback(f107224, [])];
     [tmp46, c43] = keyboardType(items8, 2);
     keyboardType(items8, 2);
     const tmp11Result12 = keyboardType(obj5.useState(null), 2);
@@ -633,7 +633,7 @@ class ACWrapper {
       let tmp51 = tmp11Result13[1](autocompleteType);
       tmp49(null);
     }
-    const items9 = [first4, obj5.useCallback(f107058, [])];
+    const items9 = [first4, obj5.useCallback(f107224, [])];
     const tmp11Result14 = keyboardType(items9, 2);
     first5 = tmp11Result14[0];
     closure_45 = tmp11Result14[1];
@@ -717,8 +717,29 @@ class ACWrapper {
       }
       return tmp9;
     }, items15);
+    const items16 = [autocompleteType, memo2, nonStickerResults];
+    const memo3 = obj5.useMemo(() => {
+      let flatMapResult = null;
+      if (memo2) {
+        flatMapResult = null;
+        if (autocompleteType === AutocompleteTypes.MENTIONS) {
+          flatMapResult = nonStickerResults.flatMap((type) => {
+            let items1;
+            if (type.type === constants.USER) {
+              const items = [type.user.id];
+              items1 = items;
+            } else {
+              items1 = [];
+            }
+            return items1;
+          });
+        }
+      }
+      return flatMapResult;
+    }, items16);
+    tmp4(tmp2[42])(channel.guild_id, memo3);
     ref3 = obj5.useRef(false);
-    const items16 = [autocompleteType, activeCommand];
+    const items17 = [autocompleteType, activeCommand];
     const effect5 = obj5.useEffect(() => {
       let tmp4 = autocompleteType === AutocompleteTypes.SLASHES;
       if (ref3.current) {
@@ -737,16 +758,16 @@ class ACWrapper {
           obj.trackWithMetadata(map1.APPLICATION_COMMAND_TOP_OF_FUNNEL, { location: "slash_ui" });
         }
       }
-    }, items16);
-    const items17 = [autocompleteType];
+    }, items17);
+    const items18 = [autocompleteType];
     const effect6 = obj5.useEffect(() => autocompleteType === AutocompleteTypes.GAME_MENTIONS ? (() => {
-      const getGameSearchSession = analyticsLocations(canMentionEveryone[43]).getGameSearchSession;
-      analyticsLocations(canMentionEveryone[43]);
-      const gameSearchSession = getGameSearchSession(analyticsLocations(canMentionEveryone[44]).GameSearchSurface.CHAT_MENTION, analyticsLocations(canMentionEveryone[45]).GameSearchFilterGroup.DEFAULT);
+      const getGameSearchSession = analyticsLocations(canMentionEveryone[44]).getGameSearchSession;
+      analyticsLocations(canMentionEveryone[44]);
+      const gameSearchSession = getGameSearchSession(analyticsLocations(canMentionEveryone[45]).GameSearchSurface.CHAT_MENTION, analyticsLocations(canMentionEveryone[46]).GameSearchFilterGroup.DEFAULT);
       return gameSearchSession.end();
-    }) : undefined, items17);
+    }) : undefined, items18);
     ref4 = obj5.useRef(null);
-    const items18 = [onChangeAutoCompleteVisibility, activeCommand, memo2, autocompleteType, channel, callback2, setting1];
+    const items19 = [onChangeAutoCompleteVisibility, activeCommand, memo2, autocompleteType, channel, callback2, setting1];
     const effect7 = obj5.useEffect(() => {
       let tmp18;
       if (onChangeAutoCompleteVisibility != null) {
@@ -776,21 +797,21 @@ class ACWrapper {
       } else {
         ref4.current = null;
       }
-    }, items18);
-    current = tmp64;
-    const items19 = [tmp64];
+    }, items19);
+    current = tmp66;
+    const items20 = [tmp66];
     const layoutEffect = obj5.useLayoutEffect(() => {
       ref2.current = current;
       if (current) {
         _undefined(ref.current);
       }
-    }, items19);
-    const tmp66 = tmp4(tmp2[21])({ ignoreKeyboard: true });
+    }, items20);
+    const tmp68 = tmp4(tmp2[21])({ ignoreKeyboard: true });
     const insets = tmp4(tmp2[22])({ includeKeyboardHeight: true }).insets;
-    let diff = tmp66.height - insets.top - insets.bottom;
+    let diff = tmp68.height - insets.top - insets.bottom;
     diff1 = diff - tmp(tmp2[23]).NAV_BAR_HEIGHT - tmp22;
-    const items20 = [autocompleteType, stickerResults.length, diff1, scaledTextLineHeight, tmp38, tmp46];
-    memo3 = obj5.useMemo(() => {
+    const items21 = [autocompleteType, stickerResults.length, diff1, scaledTextLineHeight, tmp38, tmp46];
+    memo4 = obj5.useMemo(() => {
       let sum2;
       const sum = scaledTextLineHeight + 24;
       const sum1 = c31 + sum;
@@ -811,19 +832,19 @@ class ACWrapper {
         }
       }
       return Math.min(diff1, sum2);
-    }, items20);
+    }, items21);
     const tmp11Result15 = keyboardType(obj5.useState(null), 2);
     first6 = tmp11Result15[0];
-    closure_57 = tmp72;
-    const items21 = [resultCount, autocompleteType, memo2, hasStickerResults, hasNonStickerResults, nonStickerResults.length, memo3, first6, tmp46, context, token, scaledTextLineHeight, tmp38, first5];
-    const memo4 = obj5.useMemo(() => {
+    closure_57 = tmp74;
+    const items22 = [resultCount, autocompleteType, memo2, hasStickerResults, hasNonStickerResults, nonStickerResults.length, memo4, first6, tmp46, context, token, scaledTextLineHeight, tmp38, first5];
+    const memo5 = obj5.useMemo(() => {
       let num2;
       if (autocompleteType === AutocompleteTypes.EMOJIS_AND_STICKERS) {
         let tmp13 = token;
         let num7 = 0;
         if (0 !== nonStickerResults.length) {
           if (!context) {
-            tmp13 = tmp === tmp2.EMOJIS_AND_STICKERS ? authStore4 : closure_17;
+            tmp13 = tmp === tmp2.EMOJIS_AND_STICKERS ? authStore3 : closure_17;
           }
           num7 = length * tmp13 + (length - 1) * hairlineWidth;
         }
@@ -865,7 +886,7 @@ class ACWrapper {
                 let num4 = 0;
                 if (0 !== resultCount) {
                   if (!context) {
-                    tmp7 = tmp === tmp2.EMOJIS_AND_STICKERS ? authStore4 : closure_17;
+                    tmp7 = tmp === tmp2.EMOJIS_AND_STICKERS ? authStore3 : closure_17;
                   }
                   num4 = tmp5 * tmp7 + (tmp5 - 1) * hairlineWidth;
                 }
@@ -890,9 +911,9 @@ class ACWrapper {
       if (memo2) {
         num12 = num2;
       }
-      return min(num12, memo3);
-    }, items21);
-    closure_58 = tmp74;
+      return min(num12, memo4);
+    }, items22);
+    closure_58 = tmp76;
     let tmpResult = tmp(tmp2[25]);
     const token1 = tmpResult.useToken(tmp4(tmp2[19]).modules.mobile.CHAT_INPUT_FLOATING_BORDER_RADIUS);
     const tmpResult6 = tmp(tmp2[25]);
@@ -904,15 +925,15 @@ class ACWrapper {
     const tmpResult9 = tmp(tmp2[25]);
     token5 = tmpResult9.useToken(tmp4(tmp2[19]).modules.mobile.CHAT_INPUT_FLOATING_ACCESSORY_MARGIN_BOTTOM);
     let num = 0;
-    const tmp80 = beginSearch2;
-    if (memo4 > 0) {
+    const tmp82 = beginSearch2;
+    if (memo5 > 0) {
       num = token2;
     }
     let num2 = 0;
-    if (memo4 > 0) {
+    if (memo5 > 0) {
       num2 = token3;
     }
-    if (memo4 > 0) {
+    if (memo5 > 0) {
       num3 = token5;
     } else {
       num3 = 0;
@@ -920,29 +941,29 @@ class ACWrapper {
         num3 = 0;
       }
     }
-    const tmp80Result = tmp80(token1, num, num2, token4, num3);
+    const tmp82Result = tmp82(token1, num, num2, token4, num3);
     let prop = null;
     const tmpResult10 = tmp(tmp2[18]);
     if (tmpResult10.isIOS()) {
-      prop = tmp80Result.autocompletePositionRelative;
+      prop = tmp82Result.autocompletePositionRelative;
     }
-    const items22 = [tmp74, token5];
-    const memo5 = obj5.useMemo(() => {
+    const items23 = [tmp76, token5];
+    const memo6 = obj5.useMemo(() => {
       let tmp;
       if (closure_58) {
         tmp = { marginTop: token5 };
         obj = { marginTop: token5 };
       }
       return tmp;
-    }, items22);
-    const items23 = [analyticsLocations, beginSearch, beginSearch2, channel, chatInputRef];
-    const tmp84 = tmp4(tmp2[47])(memo4, screenIndex);
+    }, items23);
+    const items24 = [analyticsLocations, beginSearch, beginSearch2, channel, chatInputRef];
+    const tmp86 = tmp4(tmp2[48])(memo5, screenIndex);
     callback3 = obj5.useCallback((type, tokenStart, arg2) => {
       if (type.type !== unpackModuleId.EMOJI_PREMIUM_UPSELL) {
         if (type.type === unpackModuleId.GLOBAL) {
           if ("gameMentionInput" === type.inlineAutocompleteType) {
             const current5 = chatInputRef.current;
-            current5.insertText(authStore6, tokenStart, false);
+            current5.insertText(authStore5, tokenStart, false);
             beginSearch(tokenStart);
           }
         }
@@ -981,7 +1002,7 @@ class ACWrapper {
           tmp18 = autocompleteResultText;
           tmp19 = tmp13;
           if (null != applicationCommandManager) {
-            const tmp8Result = tmp8(8671);
+            const tmp8Result = tmp8(8677);
             const result = tmp8Result.formatTimestampMention(type.mention);
             tmp18 = autocompleteResultText;
             tmp19 = tmp13;
@@ -1010,9 +1031,9 @@ class ACWrapper {
         obj = PremiumUpsellUtilsDefault;
         const result2 = obj.handleShowUpsellAlert(obj2);
       }
-    }, items23);
-    const items24 = [chatInputRef, optionStates, channel];
-    const items25 = [autocompleteSelectionStart, autocompleteType, callback2, channel, callback3, showOptionValuesPicker];
+    }, items24);
+    const items25 = [chatInputRef, optionStates, channel];
+    const items26 = [autocompleteSelectionStart, autocompleteType, callback2, channel, callback3, showOptionValuesPicker];
     const callback4 = obj5.useCallback((type) => {
       current = chatInputRef.current;
       const applicationCommandManager = current.getApplicationCommandManager();
@@ -1037,7 +1058,7 @@ class ACWrapper {
           const result2 = applicationCommandManager.insertOrJumpCommandOption(type, length);
         }
       }
-    }, items24);
+    }, items25);
     callback5 = obj5.useCallback((type) => {
       let id;
       let id1;
@@ -1063,7 +1084,7 @@ class ACWrapper {
         if (type.type === unpackModuleId.GAME_MENTION) {
           const getGameSearchSession = GameSearchSession.getGameSearchSession;
           GameSearchSession;
-          const gameSearchSession = getGameSearchSession(tmp2(9699).GameSearchSurface.CHAT_MENTION, tmp2(9224).GameSearchFilterGroup.DEFAULT);
+          const gameSearchSession = getGameSearchSession(tmp2(9705).GameSearchSurface.CHAT_MENTION, tmp2(9230).GameSearchFilterGroup.DEFAULT);
           gameSearchSession.select(type.game.id);
         }
         let num = autocompleteSelectionStart;
@@ -1079,19 +1100,19 @@ class ACWrapper {
         }
       }
       type = type.type;
-    }, items25);
+    }, items26);
     const tmp11Result16 = keyboardType(obj5.useState(null), 2);
     first7 = tmp11Result16[0];
     closure_63 = tmp11Result16[1];
     ref1 = obj5.useRef(null);
     ref2 = obj5.useRef(null);
-    const items26 = [query, autocompleteType, ];
+    const items27 = [query, autocompleteType, ];
     let name;
     const useEffect = obj5.useEffect;
     if (activeOption != null) {
       name = activeOption.name;
     }
-    items26[2] = name;
+    items27[2] = name;
     const effect8 = useEffect(() => {
       current = ref1.current;
       if (current != null) {
@@ -1101,8 +1122,8 @@ class ACWrapper {
       if (current2 != null) {
         current2.scrollToOffset({ offset: 0, animated: false });
       }
-    }, items26);
-    const items27 = [autocompleteType, callback5, first7, channel, activeCommand];
+    }, items27);
+    const items28 = [autocompleteType, callback5, first7, channel, activeCommand];
     const callback6 = obj5.useCallback((item) => {
       let tmp65;
       item = item.item;
@@ -1219,17 +1240,17 @@ class ACWrapper {
       } else {
         return null;
       }
-    }, items27);
-    const items28 = [tmp80Result.autocomplete, { maxHeight: memo3 }];
-    let obj8 = { style: items29, children: items39 };
-    items29 = [tmp80Result.autocompleteWrapper, prop];
-    let obj9 = { style: items30, children: tmp95Result4 };
-    items30 = [tmp80Result.autocompleteContainer, tmp84];
-    tmp95Result4 = null != autocompleteType;
-    const View = tmp4(tmp2[51]).View;
-    if (tmp95Result4) {
-      let tmp97Result = autocompleteType === selectionEnd.SLASHES_DISCOVERY;
-      if (tmp97Result) {
+    }, items28);
+    const items29 = [tmp82Result.autocomplete, { maxHeight: memo4 }];
+    let obj8 = { style: items30, children: items40 };
+    items30 = [tmp82Result.autocompleteWrapper, prop];
+    let obj9 = { style: items31, children: tmp97Result4 };
+    items31 = [tmp82Result.autocompleteContainer, tmp86];
+    tmp97Result4 = null != autocompleteType;
+    const View = tmp4(tmp2[52]).View;
+    if (tmp97Result4) {
+      let tmp99Result = autocompleteType === selectionEnd.SLASHES_DISCOVERY;
+      if (tmp99Result) {
         let obj10 = {
           channel,
           onPressSlashItem(command, section, visualSection) {
@@ -1241,14 +1262,14 @@ class ACWrapper {
                 }
                 tmp(obj, num);
               },
-          onHeightChange: tmp72,
+          onHeightChange: tmp74,
           canOnlyUseTextCommands
         };
-        tmp97Result = tmp97(tmp4(tmp2[52]), obj10);
+        tmp99Result = tmp99(tmp4(tmp2[53]), obj10);
       }
-      const items31 = [tmp97Result, , , , , ];
-      let tmp97Result6 = autocompleteType === tmp100.SLASHES;
-      if (tmp97Result6) {
+      const items32 = [tmp99Result, , , , , ];
+      let tmp99Result6 = autocompleteType === tmp102.SLASHES;
+      if (tmp99Result6) {
         let obj11 = {
           channel,
           query: str,
@@ -1261,7 +1282,7 @@ class ACWrapper {
                 }
                 tmp(obj, num);
               },
-          style: items32,
+          style: items33,
           ItemSeparatorComponent: tmp(tmp2[33]).getItemSeparator,
           onCommandsChange(commands) {
                 let tmp3 = token;
@@ -1269,7 +1290,7 @@ class ACWrapper {
                 const tmp = closure_57;
                 if (0 !== commands) {
                   if (!context) {
-                    tmp3 = tmp2 === AutocompleteTypes.EMOJIS_AND_STICKERS ? authStore4 : closure_17;
+                    tmp3 = tmp2 === AutocompleteTypes.EMOJIS_AND_STICKERS ? authStore3 : closure_17;
                   }
                   num = commands * tmp3 + (commands - 1) * hairlineWidth;
                 }
@@ -1277,92 +1298,92 @@ class ACWrapper {
               }
         };
         str = query;
-        const tmp4Result = tmp4(tmp2[54]);
+        const tmp4Result = tmp4(tmp2[55]);
         if (query == null) {
           str = "";
         }
-        items32 = [];
+        items33 = [];
         let num4 = 0;
-        items32[HermesBuiltin.arraySpread(items32, items28, 0)] = tmp80Result.applicationCommands;
-        tmp97Result6 = tmp97(tmp4Result, obj11);
+        items33[HermesBuiltin.arraySpread(items33, items29, 0)] = tmp82Result.applicationCommands;
+        tmp99Result6 = tmp99(tmp4Result, obj11);
       }
-      items31[1] = tmp97Result6;
-      let tmp95Result3 = autocompleteType === tmp100.EMOJIS_AND_STICKERS;
-      if (tmp95Result3) {
-        let tmp95Result = hasStickerResults;
-        if (tmp95Result) {
-          let obj12 = { children: items34 };
-          let obj13 = { style: items33, children: ref(Text, obj15) };
-          items33 = [tmp80Result.sectionTitle, ];
+      items32[1] = tmp99Result6;
+      let tmp97Result3 = autocompleteType === tmp102.EMOJIS_AND_STICKERS;
+      if (tmp97Result3) {
+        let tmp97Result = hasStickerResults;
+        if (tmp97Result) {
+          let obj12 = { children: items35 };
+          let obj13 = { style: items34, children: ref(Text, obj15) };
+          items34 = [tmp82Result.sectionTitle, ];
           let obj14 = { height: scaledTextLineHeight };
-          items33[1] = obj14;
-          obj15 = { variant: tmp6, children: intl.format(tmp(tmp2[56]).t.uferGG, obj16) };
-          Text = tmp(tmp2[55]).Text;
-          intl = tmp(tmp2[56]).intl;
+          items34[1] = obj14;
+          obj15 = { variant: tmp6, children: intl.format(tmp(tmp2[57]).t.uferGG, obj16) };
+          Text = tmp(tmp2[56]).Text;
+          intl = tmp(tmp2[57]).intl;
           obj16 = { prefix: query };
-          items34 = [ref(chatInputRef, obj13), ];
-          const obj17 = { ref: ref2, maintainVisibleContentPosition: { disabled: true }, horizontal: true, style: items35, contentContainerStyle: tmp80Result.stickersAutocompleteContent, keyExtractor, data: stickerResults, extraData: first7, renderItem: callback6, showsHorizontalScrollIndicator: false, contentInset: { right: 12 } };
-          items35 = [items28, tmp80Result.stickersAutocompleteList];
-          items34[1] = ref(tmp(tmp2[57]).FlashList, obj17);
-          tmp95Result = tmp95(tmp99, obj12);
+          items35 = [ref(chatInputRef, obj13), ];
+          const obj17 = { ref: ref2, maintainVisibleContentPosition: { disabled: true }, horizontal: true, style: items36, contentContainerStyle: tmp82Result.stickersAutocompleteContent, keyExtractor, data: stickerResults, extraData: first7, renderItem: callback6, showsHorizontalScrollIndicator: false, contentInset: { right: 12 } };
+          items36 = [items29, tmp82Result.stickersAutocompleteList];
+          items35[1] = ref(tmp(tmp2[58]).FlashList, obj17);
+          tmp97Result = tmp97(tmp101, obj12);
         }
-        const items36 = [tmp95Result, , ];
+        const items37 = [tmp97Result, , ];
         if (hasStickerResults) {
           hasStickerResults = hasNonStickerResults;
         }
         if (hasStickerResults) {
-          const obj18 = { style: tmp80Result.sectionDivider };
-          hasStickerResults = tmp97(tmp4(tmp2[58]), obj18);
+          const obj18 = { style: tmp82Result.sectionDivider };
+          hasStickerResults = tmp99(tmp4(tmp2[59]), obj18);
         }
-        items36[1] = hasStickerResults;
-        let tmp97Result7 = hasNonStickerResults;
-        if (tmp97Result7) {
-          const obj19 = { style: items37, children: ref(Text2, obj21) };
-          items37 = [tmp80Result.sectionTitle, ];
+        items37[1] = hasStickerResults;
+        let tmp99Result7 = hasNonStickerResults;
+        if (tmp99Result7) {
+          const obj19 = { style: items38, children: ref(Text2, obj21) };
+          items38 = [tmp82Result.sectionTitle, ];
           const obj20 = { height: scaledTextLineHeight };
-          items37[1] = obj20;
+          items38[1] = obj20;
           obj21 = { variant: tmp6, children: format(ksAVYt, obj22) };
-          Text2 = tmp(tmp2[55]).Text;
-          const intl2 = tmp(tmp2[56]).intl;
+          Text2 = tmp(tmp2[56]).Text;
+          const intl2 = tmp(tmp2[57]).intl;
           format = intl2.format;
           let _HermesInternal = HermesInternal;
           let str2 = "";
           obj22 = { prefix: "" + memo + query };
-          ksAVYt = tmp(tmp2[56]).t.ksAVYt;
-          tmp97Result7 = tmp97(tmp96, obj19);
+          ksAVYt = tmp(tmp2[57]).t.ksAVYt;
+          tmp99Result7 = tmp99(tmp98, obj19);
         }
-        const obj23 = { children: items36 };
-        items36[2] = tmp97Result7;
-        tmp95Result3 = tmp95(tmp99, obj23);
+        const obj23 = { children: items37 };
+        items37[2] = tmp99Result7;
+        tmp97Result3 = tmp97(tmp101, obj23);
       }
-      items31[2] = tmp95Result3;
-      let tmp97Result8 = autocompleteType === tmp100.GAME_MENTIONS;
-      if (tmp97Result8) {
+      items32[2] = tmp97Result3;
+      let tmp99Result8 = autocompleteType === tmp102.GAME_MENTIONS;
+      if (tmp99Result8) {
         const obj24 = {
           onLayout(nativeEvent) {
                 return _undefined2(nativeEvent.nativeEvent.layout.height);
               },
-          children: ref(tmp4(tmp2[59]), {})
+          children: ref(tmp4(tmp2[60]), {})
         };
-        tmp97Result8 = tmp97(tmp96, obj24);
+        tmp99Result8 = tmp99(tmp98, obj24);
       }
-      items31[3] = tmp97Result8;
-      let tmp97Result9 = autocompleteType === tmp100.TIMESTAMPS;
-      if (tmp97Result9) {
+      items32[3] = tmp99Result8;
+      let tmp99Result9 = autocompleteType === tmp102.TIMESTAMPS;
+      if (tmp99Result9) {
         const obj25 = {
           onLayout(nativeEvent) {
                 return _undefined3(nativeEvent.nativeEvent.layout.height);
               },
           children: ref(tmp4(tmp2[28]), {})
         };
-        tmp97Result9 = tmp97(tmp96, obj25);
+        tmp99Result9 = tmp99(tmp98, obj25);
       }
-      items31[4] = tmp97Result9;
+      items32[4] = tmp99Result9;
       if (hasNonStickerResults) {
         const obj26 = {
           ref: ref1,
           maintainVisibleContentPosition: { disabled: true },
-          style: items38,
+          style: items39,
           keyExtractor,
           getItemType(type) {
                 return type.type;
@@ -1374,23 +1395,23 @@ class ACWrapper {
                 return closure_45(arg1);
               }
         };
-        items38 = [items28, tmp80Result.resultsList];
-        const FlashList = tmp(tmp2[57]).FlashList;
-        hasNonStickerResults = tmp97(FlashList, obj26);
+        items39 = [items29, tmp82Result.resultsList];
+        const FlashList = tmp(tmp2[58]).FlashList;
+        hasNonStickerResults = tmp99(FlashList, obj26);
       }
-      const obj27 = { children: items31 };
-      items31[5] = hasNonStickerResults;
-      tmp95Result4 = tmp95(tmp99, obj27);
+      const obj27 = { children: items32 };
+      items32[5] = hasNonStickerResults;
+      tmp97Result4 = tmp97(tmp101, obj27);
     }
-    items39 = [ref(View, obj9), ];
-    let tmp97Result10 = null != activeCommand && !commandsDisabled;
-    if (tmp97Result10) {
-      const obj28 = { style: memo5, children: ref(tmp4(tmp2[60]), obj29) };
+    items40 = [ref(View, obj9), ];
+    let tmp99Result10 = null != activeCommand && !commandsDisabled;
+    if (tmp99Result10) {
+      const obj28 = { style: memo6, children: ref(tmp4(tmp2[61]), obj29) };
       obj29 = { command: activeCommand, section: activeSection, guildId: channel.guild_id, onPressOption: callback4, currentOption: activeOption, optionStates };
-      tmp97Result10 = tmp97(tmp96, obj28);
+      tmp99Result10 = tmp99(tmp98, obj28);
     }
-    items39[1] = tmp97Result10;
-    const obj30 = { style: tmp80Result.autocompletePositionRelative, children: setChatInputHeight(chatInputRef, obj8) };
+    items40[1] = tmp99Result10;
+    const obj30 = { style: tmp82Result.autocompletePositionRelative, children: setChatInputHeight(chatInputRef, obj8) };
     return ref(chatInputRef, obj30);
   }
 }

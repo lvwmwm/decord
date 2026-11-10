@@ -1,14 +1,14 @@
-// Module ID: 19029
-// Function ID: 19030
+// Module ID: 19058
+// Function ID: 19059
 // Name: useFrameLifecycle
-// Dependencies: [32, 5, 19, 6902, 11061, 19030, 19031, 6936, 2148, 5796, 2]
+// Dependencies: [32, 5, 19, 6905, 11070, 19059, 19060, 6939, 2148, 5798, 2]
 // Exports: default
 
-// Module 19029 (useFrameLifecycle)
+// Module 19058 (useFrameLifecycle)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import FramesConstants from "FramesConstants" /* 6902 */;
+import FramesConstants from "FramesConstants" /* 6905 */;
 import size from "module_2" /* 2 */;
 
 let c3;

@@ -1,13 +1,13 @@
-// Module ID: 19721
-// Function ID: 19722
+// Module ID: 19750
+// Function ID: 19751
 // Name: VoicePanelVideoButton
-// Dependencies: [19, 17, 21, 11362, 19710, 19584, 19711, 1113, 14826, 5269, 11172, 15137, 2]
+// Dependencies: [19, 17, 21, 11371, 19739, 19613, 19740, 1113, 14852, 5271, 11181, 15163, 2]
 // Exports: default
 
-// Module 19721 (VoicePanelVideoButton)
+// Module 19750 (VoicePanelVideoButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import CameraRive2 from "CameraRive" /* 5269 */;
+import CameraRive2 from "CameraRive" /* 5271 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -21,9 +21,9 @@ function VideoButtonRive(arg0) {
     str = "CamOn";
   }
   if (isVideoEnabled) {
-    let VideoSlashIcon = tmp3(11172).VideoIcon;
+    let VideoSlashIcon = tmp3(11181).VideoIcon;
   } else {
-    VideoSlashIcon = tmp3(15137).VideoSlashIcon;
+    VideoSlashIcon = tmp3(15163).VideoSlashIcon;
   }
   return <tmp2 style={{ width: 24, height: 24, pointerEvents: "none" }}>{null}</tmp2>;
 }
@@ -41,10 +41,10 @@ export default function VideoButton(arg0) {
   let isVideoEnabled;
   let color;
   ({ props, wrapperSpecs } = arg0);
-  const channelId = react.useContext(color(11362)).channelId;
-  const obj2 = isVideoEnabled(19710);
+  const channelId = react.useContext(color(11371)).channelId;
+  const obj2 = isVideoEnabled(19739);
   const voicePanelButtonStyles = obj2.useVoicePanelButtonStyles(wrapperSpecs);
-  const tmp5 = color(19584)(channelId, "VoicePanelVideoButton");
+  const tmp5 = color(19613)(channelId, "VoicePanelVideoButton");
   isVideoEnabled = tmp5.isVideoEnabled;
   ({ videoSupported, videoBlocked, onPress } = tmp5);
   const obj = react;
@@ -63,7 +63,7 @@ export default function VideoButton(arg0) {
   const items = [color, isVideoEnabled];
   let memo = obj.useMemo(() => <VideoButtonRive isVideoEnabled={isVideoEnabled} color={color} />, items);
   let tmp9 = !videoBlocked;
-  tmp(19711);
+  tmp(19740);
   if (!videoBlocked) {
     tmp9 = !videoSupported;
   }
@@ -77,7 +77,7 @@ export default function VideoButton(arg0) {
   }
   if (videoBlocked) {
     const obj3 = { color: voicePanelButtonStyles.iconFill.color };
-    memo = tmp7(tmp3(14826).VideoDenyIcon, obj3);
+    memo = tmp7(tmp3(14852).VideoDenyIcon, obj3);
   }
   return <tmpResult onPress={onPress} disabled={tmp9} props={props} accessibilityLabel={stringResult} style={isVideoEnabled ? voicePanelButtonStyles.iconBgSelected : voicePanelButtonStyles.iconBg}>{memo}</tmpResult>;
 };

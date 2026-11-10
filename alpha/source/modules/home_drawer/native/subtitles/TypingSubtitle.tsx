@@ -1,13 +1,13 @@
-// Module ID: 18734
-// Function ID: 18735
+// Module ID: 18763
+// Function ID: 18764
 // Name: TypingSubtitle
-// Dependencies: [19, 17, 21, 18733, 8674, 8723, 5751, 2]
+// Dependencies: [19, 17, 21, 18762, 8680, 8729, 5753, 2]
 // Exports: default
 
-// Module 18734 (TypingSubtitle)
+// Module 18763 (TypingSubtitle)
 import react_native from "react-native" /* 17 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 8674 */;
-import useSubtitleStyles from "useSubtitleStyles" /* 18733 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8680 */;
+import useSubtitleStyles from "useSubtitleStyles" /* 18762 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -36,7 +36,7 @@ export default function TypingSubtitle(arg0) {
     channelIconComponentWithGuild = tmpResult.getChannelIconComponentWithGuild(channel, guild);
   }
   if (channelIconComponentWithGuild == null) {
-    channelIconComponentWithGuild = tmp(8723).TextIcon;
+    channelIconComponentWithGuild = tmp(8729).TextIcon;
   }
   let tmp7 = null;
   const obj2 = { style: subtitleStyles.subtitleRow, children: items };
@@ -48,11 +48,11 @@ export default function TypingSubtitle(arg0) {
   items = [tmp7, ];
   let tmp5Result = null;
   const obj4 = { variant: "body-xs/medium", color: "text-muted", lineClamp: 1, style: subtitleStyles.subtitleText, children: items2 };
-  const Text = tmp(5751).Text;
+  const Text = tmp(5753).Text;
   if (null != channelName) {
     const obj5 = { variant: "body-xs/medium", children: items1 };
     items1 = [channelName, "  \u00B7  "];
-    tmp5Result = tmp5(tmp(5751).Text, obj5);
+    tmp5Result = tmp5(tmp(5753).Text, obj5);
   }
   items2 = [tmp5Result, text];
   items[1] = React3(Text, obj4);

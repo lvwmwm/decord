@@ -1,19 +1,19 @@
-// Module ID: 12024
-// Function ID: 12025
+// Module ID: 12033
+// Function ID: 12034
 // Name: GlobalStatusIndicator
-// Dependencies: [19, 17, 5375, 6898, 10323, 4989, 5893, 21, 12022, 504, 11136, 8008, 1113, 12025, 1652, 12020, 2]
+// Dependencies: [19, 17, 5377, 6901, 10329, 4991, 5895, 21, 12031, 504, 11145, 8012, 1113, 12034, 1652, 12029, 2]
 // Exports: default, useGlobalStatusIndicatorHeightSharedValue
 
-// Module 12024 (GlobalStatusIndicator)
+// Module 12033 (GlobalStatusIndicator)
 import _mod1652 from "module_1652" /* 1652 */;
-import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 8008 */;
+import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 8012 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ActionSheetStore from "ActionSheetStore" /* 5375 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6898 */;
-import NativeMenuStore from "NativeMenuStore" /* 10323 */;
-import ChannelStore from "ChannelStore" /* 4989 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5893 */;
+import ActionSheetStore from "ActionSheetStore" /* 5377 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6901 */;
+import NativeMenuStore from "NativeMenuStore" /* 10329 */;
+import ChannelStore from "ChannelStore" /* 4991 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5895 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
@@ -147,7 +147,7 @@ export default function GlobalStatusIndicator(children) {
   return height.useMemo(() => {
     let items;
     let str;
-    const tmp = authStore3;
+    const tmp = gesture;
     const tmp2 = map1;
     const tmp4 = React3;
     if (accessibilityElementsHidden) {

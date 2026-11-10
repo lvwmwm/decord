@@ -1,25 +1,25 @@
-// Module ID: 19780
-// Function ID: 19781
+// Module ID: 19809
+// Function ID: 19810
 // Name: RestrictedHoursModal
-// Dependencies: [32, 19, 17, 1385, 21, 5140, 575, 7015, 1627, 19781, 504, 1652, 5370, 1113, 2664, 8041, 5842, 19782, 5297, 5751, 7231, 19783, 6795, 19779, 6154, 11627, 2]
+// Dependencies: [32, 19, 17, 1385, 21, 5142, 575, 7018, 1627, 19810, 504, 1652, 5372, 1113, 2664, 8045, 5844, 19811, 5299, 5753, 7234, 19812, 6797, 19808, 6156, 11636, 2]
 // Exports: default
 
-// Module 19780 (RestrictedHoursModal)
+// Module 19809 (RestrictedHoursModal)
 import nativeDefault from "native" /* 575 */;
 import _mod1652 from "module_1652" /* 1652 */;
-import timing_timing from "timing/timing" /* 5370 */;
-import Text_Text from "Text/Text" /* 5751 */;
-import useBackPressHandlerDefault from "useBackPressHandler" /* 6154 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6795 */;
-import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 7015 */;
-import RestrictedHoursActionCreators from "RestrictedHoursActionCreators" /* 19779 */;
-import useIsInRestrictedHoursDefault from "useIsInRestrictedHours" /* 19783 */;
+import timing_timing from "timing/timing" /* 5372 */;
+import Text_Text from "Text/Text" /* 5753 */;
+import useBackPressHandlerDefault from "useBackPressHandler" /* 6156 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6797 */;
+import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 7018 */;
+import RestrictedHoursActionCreators from "RestrictedHoursActionCreators" /* 19808 */;
+import useIsInRestrictedHoursDefault from "useIsInRestrictedHours" /* 19812 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserStore from "UserStore" /* 1385 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5142 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

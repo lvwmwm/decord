@@ -1,10 +1,10 @@
-// Module ID: 15714
-// Function ID: 15715
+// Module ID: 15742
+// Function ID: 15743
 // Name: PremiumSubscriptionUpsell
-// Dependencies: [19, 17, 2186, 1385, 1072, 7693, 1387, 21, 5140, 575, 7059, 1113, 2024, 504, 2171, 5715, 1092, 5751, 5842, 15715, 15716, 10058, 5758, 2]
+// Dependencies: [19, 17, 2186, 1385, 1072, 7696, 1387, 21, 5142, 575, 7062, 1113, 2024, 504, 2171, 5717, 1092, 5753, 5844, 15743, 15744, 10064, 5760, 2]
 // Exports: default
 
-// Module 15714 (PremiumSubscriptionUpsell)
+// Module 15742 (PremiumSubscriptionUpsell)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -12,20 +12,20 @@ import ConstantsIOS from "ConstantsIOS" /* 1092 */;
 import intl7 from "intl" /* 1113 */;
 import NumberUtils from "NumberUtils" /* 2024 */;
 import PremiumUtilsDefault from "PremiumUtils" /* 2171 */;
-import LinearGradientDefault from "LinearGradient" /* 5715 */;
-import FastImageDefault from "FastImage" /* 5842 */;
-import CheckmarkLargeIcon from "CheckmarkLargeIcon" /* 7059 */;
-import ColorConstants from "ColorConstants" /* 7693 */;
-import PremiumFeatureListDefault from "PremiumFeatureList" /* 10058 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15715 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 15716 */;
+import LinearGradientDefault from "LinearGradient" /* 5717 */;
+import FastImageDefault from "FastImage" /* 5844 */;
+import CheckmarkLargeIcon from "CheckmarkLargeIcon" /* 7062 */;
+import ColorConstants from "ColorConstants" /* 7696 */;
+import PremiumFeatureListDefault from "PremiumFeatureList" /* 10064 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15743 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 15744 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import LocaleStore from "LocaleStore" /* 2186 */;
 import UserStore from "UserStore" /* 1385 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5142 */;
 import size from "module_2" /* 2 */;
 
 let StyleSheet;
@@ -97,18 +97,18 @@ export default function PremiumSubscriptionUpsell(arg0) {
     if (tmp5Result5.isPremium(stateFromStores)) {
       const obj5 = { children: items2 };
       const obj6 = { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/semibold", color: "text-overlay-light", children: intl2.string(intl7.t.YYfHlx) };
-      const Text2 = tmp2(5751).Text;
+      const Text2 = tmp2(5753).Text;
       intl2 = tmp2(1113).intl;
       items2 = [React4(Text2, obj6), ];
       const obj7 = { style: tmp.subtitle, variant: "body-md/semibold", color: "text-overlay-light", children: intl3.format(intl7.t.Af0zEZ, obj8) };
-      const Text3 = tmp2(5751).Text;
+      const Text3 = tmp2(5753).Text;
       intl3 = tmp2(1113).intl;
       obj8 = { numFreeGuildSubscriptions: metroImportDefault };
       items2[1] = React4(Text3, obj7);
       tmp7Result1 = tmp9(authStore, obj5);
     } else {
       const obj9 = { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/semibold", color: "text-overlay-light", children: intl.string(intl7.t["qUl+K4"]) };
-      const Text = tmp2(5751).Text;
+      const Text = tmp2(5753).Text;
       intl = tmp2(1113).intl;
       tmp7Result1 = tmp7(Text, obj9);
     }
@@ -138,7 +138,7 @@ export default function PremiumSubscriptionUpsell(arg0) {
     items3[1] = unpackModuleId(_false, obj10);
     const obj19 = { style: tmp.upsellButton, children: React4(Button, obj20) };
     obj20 = { variant: "experimental_premium-secondary", text: intl6.string(intl7.t.fJOECn), onPress: onLearnMorePremium };
-    Button = tmp2(5758).Button;
+    Button = tmp2(5760).Button;
     intl6 = tmp2(1113).intl;
     items3[2] = React4(_false, obj19);
     tmp7Result = tmp7(tmp8, obj3);

@@ -18,7 +18,7 @@ let c0, dependencyMap, errors, importDefault;
 
 function sendRequest(method, signal, arg2, fn, fn2, cause) {
   let closure_2;
-  const f123008 = () => {
+  const f123196 = () => {
     promise = awaitOnline(url.url);
     return promise.then(() => obj6(closure_1_0, url, closure_1_2, closure_1_3, closure_1_4, closure_1_5));
   };
@@ -165,7 +165,7 @@ function sendRequest(method, signal, arg2, fn, fn2, cause) {
               }
               tmp.retried = num5 + 1;
               const backoff2 = tmp.backoff;
-              backoff2.fail(f123008);
+              backoff2.fail(f123196);
             } else {
               throw new TypeError("Trying to call a non-function");
             }
@@ -302,7 +302,7 @@ function sendRequest(method, signal, arg2, fn, fn2, cause) {
               }
               signal.retried = num2 + 1;
               const backoff2 = tmp.backoff;
-              backoff2.fail(f123008);
+              backoff2.fail(f123196);
             } else {
               throw new TypeError("Trying to call a non-function");
             }

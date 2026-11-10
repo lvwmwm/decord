@@ -1,12 +1,12 @@
-// Module ID: 11822
-// Function ID: 11823
+// Module ID: 11831
+// Function ID: 11832
 // Name: showEmojiActionSheet
-// Dependencies: [5374, 10172, 2118, 2]
+// Dependencies: [5376, 10178, 2118, 2]
 // Exports: default
 
-// Module 11822 (showEmojiActionSheet)
+// Module 11831 (showEmojiActionSheet)
 import asyncRequire from "asyncRequire" /* 2118 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5376 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/messages/native/emoji/showEmojiActionSheet.tsx");
@@ -14,5 +14,5 @@ const result = size.fileFinishedImporting("modules/messages/native/emoji/showEmo
 export default function showEmojiActionSheet(emojiNode) {
   const obj = ActionSheetActionCreatorsDefault;
   const obj2 = { emojiNode };
-  obj.openLazy(asyncRequire(10172, dependencyMap.paths), "MessageEmojiActionSheet", obj2);
+  obj.openLazy(asyncRequire(10178, dependencyMap.paths), "MessageEmojiActionSheet", obj2);
 };

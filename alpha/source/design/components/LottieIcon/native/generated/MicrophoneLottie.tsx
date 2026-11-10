@@ -1,13 +1,13 @@
-// Module ID: 16145
-// Function ID: 16146
+// Module ID: 16172
+// Function ID: 16173
 // Name: MicrophoneLottie
-// Dependencies: [19, 21, 12083, 16146, 2]
+// Dependencies: [19, 21, 12092, 16173, 2]
 // Exports: MicrophoneLottie
 
-// Module 16145 (MicrophoneLottie)
+// Module 16172 (MicrophoneLottie)
 import Fragment from "Fragment" /* 21 */;
-import LottieIcon2 from "LottieIcon" /* 12083 */;
-import AssetRegistry from "AssetRegistry" /* 16146 */;
+import LottieIcon2 from "LottieIcon" /* 12092 */;
+import AssetRegistry from "AssetRegistry" /* 16173 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

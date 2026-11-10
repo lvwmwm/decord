@@ -1,11 +1,11 @@
-// Module ID: 10187
-// Function ID: 10188
+// Module ID: 10193
+// Function ID: 10194
 // Name: guild/GuildUtils
-// Dependencies: [6957, 6961, 2]
+// Dependencies: [6960, 6964, 2]
 // Exports: handleJoinGuild
 
-// Module 10187 (guild/GuildUtils)
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6957 */;
+// Module 10193 (guild/GuildUtils)
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6960 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

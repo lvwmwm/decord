@@ -1,13 +1,13 @@
-// Module ID: 20533
-// Function ID: 20534
+// Module ID: 20561
+// Function ID: 20562
 // Name: reactAssetProvider
-// Dependencies: [17, 20534, 20535, 2]
+// Dependencies: [17, 20562, 20563, 2]
 // Exports: default
 
-// Module 20533 (reactAssetProvider)
+// Module 20561 (reactAssetProvider)
 import react_native from "react-native" /* 17 */;
-import react_nativeDefault from "react-native" /* 20534 */;
-import native_required_assets from "native_required_assets" /* 20535 */;
+import react_nativeDefault from "react-native" /* 20562 */;
+import native_required_assets from "native_required_assets" /* 20563 */;
 import size from "module_2" /* 2 */;
 
 const Image = react_native.Image;

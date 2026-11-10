@@ -1,26 +1,26 @@
-// Module ID: 6625
-// Function ID: 6626
+// Module ID: 6627
+// Function ID: 6628
 // Name: SelfPresenceStore
-// Dependencies: [4988, 6626, 1231, 4989, 2156, 6760, 2160, 11670, 5890, 5895, 1072, 5891, 7655, 4965, 15813, 10881, 1342, 12, 504, 572, 2]
+// Dependencies: [4990, 6628, 1231, 4991, 2156, 6762, 2160, 11679, 5892, 5897, 1072, 5893, 7658, 4967, 15841, 10890, 1342, 12, 504, 572, 2]
 
-// Module 6625 (SelfPresenceStore)
+// Module 6627 (SelfPresenceStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import _modDef1342 from "module_1342" /* 1342 */;
-import UserSettings from "UserSettings" /* 4965 */;
-import PresenceStore2 from "PresenceStore" /* 5890 */;
-import ActivityTypes from "ActivityTypes" /* 5891 */;
-import LibraryApplicationUtils from "LibraryApplicationUtils" /* 7655 */;
-import isGuildSpaceEmbeddedActivityDefault from "isGuildSpaceEmbeddedActivity" /* 15813 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4988 */;
-import SpotifyStore from "SpotifyStore" /* 6626 */;
+import UserSettings from "UserSettings" /* 4967 */;
+import PresenceStore2 from "PresenceStore" /* 5892 */;
+import ActivityTypes from "ActivityTypes" /* 5893 */;
+import LibraryApplicationUtils from "LibraryApplicationUtils" /* 7658 */;
+import isGuildSpaceEmbeddedActivityDefault from "isGuildSpaceEmbeddedActivity" /* 15841 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4990 */;
+import SpotifyStore from "SpotifyStore" /* 6628 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
-import ChannelStore from "ChannelStore" /* 4989 */;
+import ChannelStore from "ChannelStore" /* 4991 */;
 import DetectableGameStore from "DetectableGameStore" /* 2156 */;
-import IdleStore from "IdleStore" /* 6760 */;
+import IdleStore from "IdleStore" /* 6762 */;
 import LibraryApplicationStore from "LibraryApplicationStore" /* 2160 */;
-import LocalActivityStore from "LocalActivityStore" /* 11670 */;
-import SessionsStore from "SessionsStore" /* 5895 */;
+import LocalActivityStore from "LocalActivityStore" /* 11679 */;
+import SessionsStore from "SessionsStore" /* 5897 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ const PresenceStore = PresenceStore2;
 let IDLE;
 let closure_18;
 let tmp;
-const isListeningOnSpotifyDefault = tmp(10881);
+const isListeningOnSpotifyDefault = tmp(10890);
 function filterPlayingActivities(arg0) {
   if (0 === arg0.length) {
     return arg0;
@@ -91,14 +91,14 @@ function shouldShowActivity(type) {
           const tmp3Result5 = LibraryApplicationUtils;
           result = tmp3Result5.shouldShareApplicationActivity(first, LibraryApplicationStore);
         } else {
-          const ShowCurrentGame = tmp3(4965).ShowCurrentGame;
+          const ShowCurrentGame = tmp3(4967).ShowCurrentGame;
           result = ShowCurrentGame.getSetting();
         }
       }
       return result;
     } else {
       if (ActivityTypes.ActivityTypes.STREAMING !== type) {
-        const WATCHING = tmp3(5891).ActivityTypes.WATCHING;
+        const WATCHING = tmp3(5893).ActivityTypes.WATCHING;
       }
       let result1 = null == type.application_id;
       if (!result1) {
@@ -186,7 +186,7 @@ let c16 = false;
 let num = 0;
 let found = [];
 let activities = [];
-const authStore6 = false;
+const authStore5 = false;
 let c23 = true;
 let remoteActivities = Object.freeze([]);
 let hiddenActivities = Object.freeze([]);

@@ -1,14 +1,14 @@
-// Module ID: 9848
-// Function ID: 9849
+// Module ID: 9854
+// Function ID: 9855
 // Name: ServerIcon
-// Dependencies: [19, 21, 575, 5841, 9849, 2]
+// Dependencies: [19, 21, 575, 5843, 9855, 2]
 // Exports: ServerIcon
 
-// Module 9848 (ServerIcon)
+// Module 9854 (ServerIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5841 */;
-import AssetRegistry from "AssetRegistry" /* 9849 */;
+import BaseIconImage2 from "BaseIconImage" /* 5843 */;
+import AssetRegistry from "AssetRegistry" /* 9855 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

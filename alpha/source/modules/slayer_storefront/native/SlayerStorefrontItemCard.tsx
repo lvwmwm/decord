@@ -1,17 +1,17 @@
-// Module ID: 9605
-// Function ID: 9606
+// Module ID: 9611
+// Function ID: 9612
 // Name: SlayerStorefrontItemCard
-// Dependencies: [19, 17, 21, 5140, 575, 7468, 9606, 7806, 5842, 5715, 2]
+// Dependencies: [19, 17, 21, 5142, 575, 7471, 9612, 7809, 5844, 5717, 2]
 // Exports: default
 
-// Module 9605 (SlayerStorefrontItemCard)
+// Module 9611 (SlayerStorefrontItemCard)
 import nativeDefault from "native" /* 575 */;
-import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 7468 */;
-import _modDef7806 from "module_7806" /* 7806 */;
+import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 7471 */;
+import _modDef7809 from "module_7809" /* 7809 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5142 */;
 import size_mod from "module_2" /* 2 */;
 
 let StyleSheet;

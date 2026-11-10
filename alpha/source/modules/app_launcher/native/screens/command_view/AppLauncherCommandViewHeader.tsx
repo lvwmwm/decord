@@ -1,21 +1,21 @@
-// Module ID: 12688
-// Function ID: 12689
+// Module ID: 12701
+// Function ID: 12702
 // Name: AppLauncherCommandViewHeader
-// Dependencies: [19, 17, 1498, 21, 12664, 5140, 575, 12582, 1652, 5724, 8786, 5842, 5751, 12689, 2]
+// Dependencies: [19, 17, 1498, 21, 12677, 5142, 575, 12595, 1652, 5726, 8792, 5844, 5753, 12702, 2]
 // Exports: AppLauncherCommandViewHeader
 
-// Module 12688 (AppLauncherCommandViewHeader)
+// Module 12701 (AppLauncherCommandViewHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef1652 from "module_1652" /* 1652 */;
-import useAvatarColorDefault from "useAvatarColor" /* 8786 */;
-import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 12582 */;
-import AppLauncherBackButton from "AppLauncherBackButton" /* 12664 */;
-import CommandDetailsOverflowMenuDefault from "CommandDetailsOverflowMenu" /* 12689 */;
+import useAvatarColorDefault from "useAvatarColor" /* 8792 */;
+import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 12595 */;
+import AppLauncherBackButton from "AppLauncherBackButton" /* 12677 */;
+import CommandDetailsOverflowMenuDefault from "CommandDetailsOverflowMenu" /* 12702 */;
 import react from "react" /* 19 */;
 import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1498 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5142 */;
 import size_mod from "module_2" /* 2 */;
 
 const AppLauncherBackButtonDefault = AppLauncherBackButton;
@@ -189,7 +189,7 @@ export function AppLauncherCommandViewHeader(onPressBack) {
   AppLauncherCommandViewHeaderTsx3.__workletHash = 3726184428877;
   AppLauncherCommandViewHeaderTsx3.__initData = tmp22;
   const animatedStyle3 = useAnimatedStyle3(AppLauncherCommandViewHeaderTsx3);
-  const tmp3Result4 = section(5724);
+  const tmp3Result4 = section(5726);
   let str = tmp3Result4.useToken(nativeDefault.colors.BACKGROUND_BASE_LOW);
   let tmp29 = memo;
   const tmp28 = useAvatarColorDefault;
@@ -206,7 +206,7 @@ export function AppLauncherCommandViewHeader(onPressBack) {
   const tmp28Result = tmp28(tmp29, str);
   if (null != memo) {
     let obj = { style: tmp.appIcon, source: memo };
-    tmp34 = closure_6(tmp27(5842), obj);
+    tmp34 = closure_6(tmp27(5844), obj);
     tmp35 = closure_6;
   } else {
     let obj2 = { style: items7 };
@@ -230,7 +230,7 @@ export function AppLauncherCommandViewHeader(onPressBack) {
   const obj5 = { lineClamp: 1, animated: true, style: items11, variant: "heading-lg/semibold", color: "text-overlay-light", children: displayName };
   items11 = [tmp.appSmallName, animatedStyle];
   displayName = undefined;
-  const Text = tmp3(5751).Text;
+  const Text = tmp3(5753).Text;
   if (command != null) {
     displayName = command.displayName;
   }

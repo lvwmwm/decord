@@ -1,16 +1,16 @@
-// Module ID: 13447
-// Function ID: 13448
+// Module ID: 13461
+// Function ID: 13462
 // Name: ViewStep
-// Dependencies: [32, 19, 11504, 13446, 21, 5140, 1499, 13443, 13440, 13444, 13448, 8043, 6159, 575, 13449, 5751, 1113, 2530, 8732, 13450, 13452, 5758, 2]
+// Dependencies: [32, 19, 11513, 13460, 21, 5142, 1499, 13457, 13454, 13458, 8045, 8047, 6161, 575, 13462, 5753, 1113, 2530, 8738, 13463, 13465, 5760, 2]
 // Exports: ViewStep
 
-// Module 13447 (ViewStep)
-import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11504 */;
-import GameOrganizationJoinModalConstants from "GameOrganizationJoinModalConstants" /* 13446 */;
+// Module 13461 (ViewStep)
+import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11513 */;
+import GameOrganizationJoinModalConstants from "GameOrganizationJoinModalConstants" /* 13460 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5140 */;
+import createStyles from "createStyles" /* 5142 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -79,7 +79,7 @@ export function ViewStep(code) {
     ({ memberCount, maxMembers } = organization);
     const obj2 = { displayNoun: tmp5.displayNoun, lowercase: true };
     const tmp16 = require("getGameOrganizationDisplayNoun")(obj2);
-    const tmp4Result = require("GameOrganizationJoinModalScreen");
+    const ModalScreen = tmp2(tmp3[10]).ModalScreen;
     const ModalContent = tmp2(tmp3[11]).ModalContent;
     const obj3 = { spacing: require("native").space.PX_48, children: items5 };
     const Stack2 = tmp2(tmp3[12]).Stack;
@@ -100,8 +100,8 @@ export function ViewStep(code) {
     const obj10 = { spacing: require("native").space.PX_4, direction: "horizontal", align: "center", style: tmp.inlineStack, children: items2 };
     const Stack6 = tmp2(tmp3[12]).Stack;
     const obj11 = { iconUrl: application.iconUrl, size: 16, borderRadius: require("native").radii.xs };
-    const tmp4Result2 = require("GameOrganizationIcon");
-    items2 = [closure_7(tmp4Result2, obj11), ];
+    const tmp4Result = require("GameOrganizationIcon");
+    items2 = [closure_7(tmp4Result, obj11), ];
     const obj12 = { variant: "heading-sm/medium", children: application.name };
     items2[1] = closure_7(tmp2(tmp3[15]).Text, obj12);
     items3 = [closure_8(Stack6, obj10), ];
@@ -122,12 +122,12 @@ export function ViewStep(code) {
     items3[1] = tmp17Result;
     items1[1] = closure_8(Stack5, obj9);
     items5 = [closure_8(Stack3, obj4), ];
-    let tmp19Result = tmp7;
-    if (tmp19Result) {
+    let tmp18Result = tmp7;
+    if (tmp18Result) {
       const obj17 = { characters: data, selectedCharacterId, onSelect: tmp12, noun: tmp16 };
-      tmp19Result = tmp19(tmp4(tmp3[19]), obj17);
+      tmp18Result = tmp18(tmp4(tmp3[19]), obj17);
     }
-    items5[1] = tmp19Result;
+    items5[1] = tmp18Result;
     const obj18 = { children: closure_8(Stack2, obj3) };
     const items6 = [closure_7(ModalContent, obj18), ];
     const ModalFooter = tmp2(tmp3[20]).ModalFooter;
@@ -156,6 +156,6 @@ export function ViewStep(code) {
     const obj20 = { children: items6 };
     const obj21 = { children: closure_7(Button, obj19) };
     items6[1] = closure_7(ModalFooter, obj21);
-    return closure_8(tmp4Result, obj20);
+    return closure_8(ModalScreen, obj20);
   }
 }

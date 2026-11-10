@@ -1,14 +1,14 @@
-// Module ID: 17368
-// Function ID: 17369
+// Module ID: 17395
+// Function ID: 17396
 // Name: OrbsArcadeRewardRing
-// Dependencies: [19, 17, 21, 1652, 8101, 2]
+// Dependencies: [19, 17, 21, 1652, 8105, 2]
 // Exports: default
 
-// Module 17368 (OrbsArcadeRewardRing)
+// Module 17395 (OrbsArcadeRewardRing)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import _mod1652 from "module_1652" /* 1652 */;
-import inlineStyles from "inlineStyles" /* 8101 */;
+import inlineStyles from "inlineStyles" /* 8105 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -1,17 +1,17 @@
-// Module ID: 17555
-// Function ID: 17556
+// Module ID: 17582
+// Function ID: 17583
 // Name: PremiumRestoreSubscriptionSetting
-// Dependencies: [1385, 21, 7680, 6091, 1113, 17556, 2118, 504, 1377, 11685, 9612, 2]
+// Dependencies: [1385, 21, 7683, 6093, 1113, 17583, 2118, 504, 1377, 11694, 9618, 2]
 
-// Module 17555 (PremiumRestoreSubscriptionSetting)
+// Module 17582 (PremiumRestoreSubscriptionSetting)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import intl4 from "intl" /* 1113 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6091 */;
-import BillingActionCreatorsDefault from "BillingActionCreators" /* 7680 */;
-import NitroWheelIcon from "NitroWheelIcon" /* 9612 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6093 */;
+import BillingActionCreatorsDefault from "BillingActionCreators" /* 7683 */;
+import NitroWheelIcon from "NitroWheelIcon" /* 9618 */;
 import UserStore from "UserStore" /* 1385 */;
-import SettingBuilders from "SettingBuilders" /* 11685 */;
+import SettingBuilders from "SettingBuilders" /* 11694 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

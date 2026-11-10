@@ -1,14 +1,14 @@
-// Module ID: 9913
-// Function ID: 9914
+// Module ID: 9919
+// Function ID: 9920
 // Name: useActiveTheme
-// Dependencies: [1194, 5164, 1238, 1195, 504, 5313, 2]
+// Dependencies: [1194, 5166, 1238, 1195, 504, 5315, 2]
 // Exports: useIsClientThemeOrCustomThemeActive, useIsCustomThemeActive
 
-// Module 9913 (useActiveTheme)
+// Module 9919 (useActiveTheme)
 import get_initialized from "get initialized" /* 504 */;
-import useRoutedActiveGuildThemeDefault from "useRoutedActiveGuildTheme" /* 5313 */;
+import useRoutedActiveGuildThemeDefault from "useRoutedActiveGuildTheme" /* 5315 */;
 import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1194 */;
-import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 5164 */;
+import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 5166 */;
 import CustomThemeMobileStore from "CustomThemeMobileStore" /* 1238 */;
 import ThemeConstants from "ThemeConstants" /* 1195 */;
 import size from "module_2" /* 2 */;

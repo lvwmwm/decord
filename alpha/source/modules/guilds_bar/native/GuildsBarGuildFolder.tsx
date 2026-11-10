@@ -1,31 +1,31 @@
-// Module ID: 18703
-// Function ID: 18704
+// Module ID: 18732
+// Function ID: 18733
 // Name: GuildsBarGuildFolder
-// Dependencies: [19, 5141, 6941, 5011, 5171, 6827, 18695, 18700, 18692, 21, 5140, 575, 5724, 504, 7020, 5761, 5137, 1090, 1652, 5199, 1705, 5842, 8677, 18704, 18707, 13008, 18714, 1113, 5376, 6957, 7023, 18697, 18715, 2]
+// Dependencies: [19, 5143, 6944, 5013, 5173, 6830, 18724, 18729, 18721, 21, 5142, 575, 5726, 504, 7023, 5763, 5139, 1090, 1652, 5201, 1705, 5844, 8683, 18733, 18736, 13022, 18743, 1113, 5378, 6960, 7026, 18726, 18744, 2]
 
-// Module 18703 (GuildsBarGuildFolder)
+// Module 18732 (GuildsBarGuildFolder)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1090 */;
 import intl3 from "intl" /* 1113 */;
-import native from "native" /* 5199 */;
-import useToken from "useToken" /* 5724 */;
-import FastImageDefault from "FastImage" /* 5842 */;
-import SortedGuildStore2 from "SortedGuildStore" /* 6827 */;
-import NativeViewDefault from "NativeView" /* 7023 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8677 */;
-import ListUtils from "ListUtils" /* 13008 */;
-import GuildsBarFolderMenuItems from "GuildsBarFolderMenuItems" /* 18697 */;
+import native from "native" /* 5201 */;
+import useToken from "useToken" /* 5726 */;
+import FastImageDefault from "FastImage" /* 5844 */;
+import SortedGuildStore2 from "SortedGuildStore" /* 6830 */;
+import NativeViewDefault from "NativeView" /* 7026 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8683 */;
+import ListUtils from "ListUtils" /* 13022 */;
+import GuildsBarFolderMenuItems from "GuildsBarFolderMenuItems" /* 18726 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5141 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 6941 */;
-import GuildStore from "GuildStore" /* 5011 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5171 */;
-import GuildsBarDnDStore from "GuildsBarDnDStore" /* 18695 */;
-import GuildsBarConstants_mod from "guilds_bar/GuildsBarConstants" /* 18700 */;
-import GuildsBarConstants_mod2 from "GuildsBarConstants" /* 18692 */;
+import AccessibilityStore from "AccessibilityStore" /* 5143 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 6944 */;
+import GuildStore from "GuildStore" /* 5013 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5173 */;
+import GuildsBarDnDStore from "GuildsBarDnDStore" /* 18724 */;
+import GuildsBarConstants_mod from "guilds_bar/GuildsBarConstants" /* 18729 */;
+import GuildsBarConstants_mod2 from "GuildsBarConstants" /* 18721 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5140 */;
+import createStyles from "createStyles" /* 5142 */;
 import size from "module_2" /* 2 */;
 
 const SortedGuildStore = SortedGuildStore2;
@@ -42,9 +42,9 @@ let map1;
 let tmp;
 let tmp3;
 let unpackModuleId;
-const ColorUtils = tmp(5137);
-const GuildIcon = tmp(7020);
-const GuildIconDefault = tmp3(7020);
+const ColorUtils = tmp(5139);
+const GuildIcon = tmp(7023);
+const GuildIconDefault = tmp3(7023);
 function MiniGuildIcon(arg0) {
   let guildPreview3;
   let position;
@@ -117,13 +117,13 @@ function TransitionWrapper(fromTop) {
     num = 0;
   }
   sharedValue = useSharedValue(num);
-  let items1 = [closure_24, , , , , , , , , , ];
+  let items1 = [closure_25, , , , , , , , , , ];
   const useAnimatedStyle = tmp(tmp2[18]).useAnimatedStyle;
   tmp(stateFromStores[18]);
   items1[1] = tmp(stateFromStores[15]).withSpring;
   items1[2] = sharedValue;
   items1[3] = closure_16;
-  items1[4] = closure_23;
+  items1[4] = closure_24;
   items1[5] = state;
   items1[6] = tmp(stateFromStores[19]).TransitionStates;
   items1[7] = tmp(stateFromStores[20]).scheduleOnRN;
@@ -141,7 +141,7 @@ function TransitionWrapper(fromTop) {
   let c8;
   let c9;
   [tmp10, tmp11, tmp12, tmp13, tmp14, tmp15, tmp16, tmp17, tmp18, tmp19, tmp20] = items1;
-  class GuildsBarGuildFolderTsx3 {
+  class GuildsBarGuildFolderTsx4 {
     constructor() {
       let _undefined;
       let items2;
@@ -158,8 +158,8 @@ function TransitionWrapper(fromTop) {
       let c2;
       c3 = undefined;
       [tmp4, tmp5, tmp6, tmp7, tmp8] = items;
-      const obj2 = { opacity: tmp(value, c2, undefined, GuildsBarGuildFolderTsx2), transform: items2 };
-      class GuildsBarGuildFolderTsx2 {
+      const obj2 = { opacity: tmp(value, c2, undefined, GuildsBarGuildFolderTsx3), transform: items2 };
+      class GuildsBarGuildFolderTsx3 {
         constructor(arg0) {
           tmp = arg0;
           if (tmp) {
@@ -176,9 +176,9 @@ function TransitionWrapper(fromTop) {
         }
       }
       const items1 = [tmp5, tmp6, tmp7, tmp8];
-      GuildsBarGuildFolderTsx2.__closure = items1;
-      GuildsBarGuildFolderTsx2.__workletHash = 6478186376441;
-      GuildsBarGuildFolderTsx2.__initData = tmp4;
+      GuildsBarGuildFolderTsx3.__closure = items1;
+      GuildsBarGuildFolderTsx3.__workletHash = 6023937526744;
+      GuildsBarGuildFolderTsx3.__initData = tmp4;
       let num = 1;
       let num2 = 0;
       if (1 !== _undefined.get()) {
@@ -199,11 +199,11 @@ function TransitionWrapper(fromTop) {
     }
   }
   let items2 = [tmp11, tmp12, tmp13, tmp14, tmp15, tmp16, tmp17, tmp18, tmp19, tmp20];
-  GuildsBarGuildFolderTsx3.__closure = items2;
-  GuildsBarGuildFolderTsx3.__workletHash = 12641678463555;
-  GuildsBarGuildFolderTsx3.__initData = tmp10;
+  GuildsBarGuildFolderTsx4.__closure = items2;
+  GuildsBarGuildFolderTsx4.__workletHash = 7096753639625;
+  GuildsBarGuildFolderTsx4.__initData = tmp10;
   const items3 = [state, sharedValue, stateFromStores, cleanUp];
-  const animatedStyle = useAnimatedStyle(GuildsBarGuildFolderTsx3);
+  const animatedStyle = useAnimatedStyle(GuildsBarGuildFolderTsx4);
   const effect = sharedValue.useEffect(() => {
     const tmp = stateFromStores;
     if (tmp) {
@@ -294,36 +294,40 @@ let closure_19 = createStyles.createStyles(() => {
     num2 = 0;
   }
   const obj = { folderBackground: rect, folderScaleContainer: { position: "absolute", top: 0, left: 0, width: num, height: num, justifyContent: "center", alignItems: "center" }, guildPreviewIcon: { position: "absolute", margin: nativeDefault.modules.mobile.GUILD_FOLDER_PREVIEW_ICON_MARGIN }, guildPreviewIconUnselected: { borderRadius: nativeDefault.radii.sm }, guildPreview0: { top: 0, left: 0 }, guildPreview1: { top: 0, right: 0 }, guildPreview2: { bottom: 0, left: 0 }, guildPreview3: { bottom: 0, right: 0 }, guildPreviewWrapper: { position: "absolute", width: num, height: num } };
-  rect = { position: "absolute", top: nativeDefault.modules.mobile.GUILD_BAR_ITEM_MARGIN, left: nativeDefault.modules.mobile.GUILD_FOLDER_BACKGROUND_LEFT, backgroundColor: nativeDefault.colors.GUILD_FOLDER_BACKGROUND, borderTopLeftRadius: nativeDefault.modules.mobile.GUILD_FOLDER_BACKGROUND_RADIUS, borderTopRightRadius: nativeDefault.modules.mobile.GUILD_FOLDER_BACKGROUND_RADIUS, borderBottomLeftRadius: nativeDefault.modules.mobile.GUILD_FOLDER_BACKGROUND_RADIUS, borderBottomRightRadius: nativeDefault.modules.mobile.GUILD_FOLDER_BACKGROUND_RADIUS, width: num + num2 };
+  rect = { position: "absolute", top: nativeDefault.modules.mobile.GUILD_BAR_ITEM_MARGIN, left: nativeDefault.modules.mobile.GUILD_FOLDER_BACKGROUND_LEFT, borderTopLeftRadius: nativeDefault.modules.mobile.GUILD_FOLDER_BACKGROUND_RADIUS, borderTopRightRadius: nativeDefault.modules.mobile.GUILD_FOLDER_BACKGROUND_RADIUS, borderBottomLeftRadius: nativeDefault.modules.mobile.GUILD_FOLDER_BACKGROUND_RADIUS, borderBottomRightRadius: nativeDefault.modules.mobile.GUILD_FOLDER_BACKGROUND_RADIUS, width: num + num2 };
   ({ position: "absolute", margin: nativeDefault.modules.mobile.GUILD_FOLDER_PREVIEW_ICON_MARGIN });
   ({ borderRadius: nativeDefault.radii.sm });
   return obj;
 });
 let closure_21 = { code: "(function GuildsBarGuildFolderTsx1(values){let[withSpring,TRANSITION_PHYSICS]=this.__closure;return{animations:{height:withSpring(values.targetHeight,TRANSITION_PHYSICS,'animate-always')},initialValues:{height:values.currentHeight}};})" };
-let closure_23 = { code: "(function GuildsBarGuildFolderTsx2(finished){let[state,TransitionStates,scheduleOnRN,cleanUp]=this.__closure;if(finished&&state===TransitionStates.YEETED)scheduleOnRN(cleanUp);})" };
-let closure_24 = { code: "(function GuildsBarGuildFolderTsx3(){let[withSpring,visible,FOLDER_SPRING_PHYSICS,_worklet_6478186376441_init_data,state,TransitionStates,scheduleOnRN,cleanUp,fromTop,guildItemSize]=this.__closure;return{opacity:withSpring(visible.get(),FOLDER_SPRING_PHYSICS,undefined,function GuildsBarGuildFolderTsx2Factory([_worklet_6478186376441_init_data,state,TransitionStates,scheduleOnRN,cleanUp]){const GuildsBarGuildFolderTsx2=function(finished){if(finished&&state===TransitionStates.YEETED)scheduleOnRN(cleanUp);};GuildsBarGuildFolderTsx2.__closure=[state,TransitionStates,scheduleOnRN,cleanUp];GuildsBarGuildFolderTsx2.__workletHash=6478186376441;GuildsBarGuildFolderTsx2.__initData=_worklet_6478186376441_init_data;return GuildsBarGuildFolderTsx2;}([_worklet_6478186376441_init_data,state,TransitionStates,scheduleOnRN,cleanUp])),transform:[{translateY:withSpring(visible.get()===1?0:fromTop?-guildItemSize:guildItemSize,FOLDER_SPRING_PHYSICS)},{scale:withSpring(visible.get()===1?1:fromTop?0.3:1.3,FOLDER_SPRING_PHYSICS)}]};})" };
-let closure_29 = { code: "(function GuildsBarGuildFolderTsx4(values){let[dragDropInProgress,sharedId,id,isDragTarget,withSpring,TRANSITION_PHYSICS]=this.__closure;var _id;const shouldAnimate=dragDropInProgress.get()&&sharedId.get()===\"\"+id&&!isDragTarget;sharedId.set(\"\"+((_id=id)!==null&&_id!==void 0?_id:null));return{animations:{originY:shouldAnimate?withSpring(values.targetOriginY,TRANSITION_PHYSICS,'animate-always'):values.targetOriginY,height:shouldAnimate?withSpring(values.targetHeight,TRANSITION_PHYSICS,'animate-always'):values.targetHeight},initialValues:{originY:values.currentOriginY,height:values.currentHeight}};})" };
+let closure_22 = { code: "(function GuildsBarGuildFolderTsx2(){let[backgroundColor]=this.__closure;return{backgroundColor:backgroundColor};})" };
+let closure_24 = { code: "(function GuildsBarGuildFolderTsx3(finished){let[state,TransitionStates,scheduleOnRN,cleanUp]=this.__closure;if(finished&&state===TransitionStates.YEETED)scheduleOnRN(cleanUp);})" };
+let closure_25 = { code: "(function GuildsBarGuildFolderTsx4(){let[withSpring,visible,FOLDER_SPRING_PHYSICS,_worklet_6023937526744_init_data,state,TransitionStates,scheduleOnRN,cleanUp,fromTop,guildItemSize]=this.__closure;return{opacity:withSpring(visible.get(),FOLDER_SPRING_PHYSICS,undefined,function GuildsBarGuildFolderTsx3Factory([_worklet_6023937526744_init_data,state,TransitionStates,scheduleOnRN,cleanUp]){const GuildsBarGuildFolderTsx3=function(finished){if(finished&&state===TransitionStates.YEETED)scheduleOnRN(cleanUp);};GuildsBarGuildFolderTsx3.__closure=[state,TransitionStates,scheduleOnRN,cleanUp];GuildsBarGuildFolderTsx3.__workletHash=6023937526744;GuildsBarGuildFolderTsx3.__initData=_worklet_6023937526744_init_data;return GuildsBarGuildFolderTsx3;}([_worklet_6023937526744_init_data,state,TransitionStates,scheduleOnRN,cleanUp])),transform:[{translateY:withSpring(visible.get()===1?0:fromTop?-guildItemSize:guildItemSize,FOLDER_SPRING_PHYSICS)},{scale:withSpring(visible.get()===1?1:fromTop?0.3:1.3,FOLDER_SPRING_PHYSICS)}]};})" };
+let closure_30 = { code: "(function GuildsBarGuildFolderTsx5(values){let[dragDropInProgress,sharedId,id,isDragTarget,withSpring,TRANSITION_PHYSICS]=this.__closure;var _id;const shouldAnimate=dragDropInProgress.get()&&sharedId.get()===\"\"+id&&!isDragTarget;sharedId.set(\"\"+((_id=id)!==null&&_id!==void 0?_id:null));return{animations:{originY:shouldAnimate?withSpring(values.targetOriginY,TRANSITION_PHYSICS,'animate-always'):values.targetOriginY,height:shouldAnimate?withSpring(values.targetHeight,TRANSITION_PHYSICS,'animate-always'):values.targetHeight},initialValues:{originY:values.currentOriginY,height:values.currentHeight}};})" };
 const memoResult = react.memo(function FolderBGInner(color) {
   let folderId;
-  let items3;
+  let items5;
   let tmp10;
+  let tmp15;
+  let tmp16;
   let tmp8;
   let tmp9;
   let totalItems;
   color = color.color;
   let token2;
-  ({ folderId, totalItems } = color);
+  let token3;
   let tmp = color;
-  let obj = color(5724);
-  const token = obj.useToken(token2(575).modules.mobile.GUILD_BAR_ITEM_SIZE);
-  let obj2 = color(5724);
-  const token1 = obj2.useToken(token2(575).modules.mobile.GUILD_BAR_ITEM_MARGIN);
+  ({ folderId, totalItems } = color);
+  let obj = color(token3[12]);
+  const token = obj.useToken(token2(token3[11]).modules.mobile.GUILD_BAR_ITEM_SIZE);
+  const obj2 = color(token3[12]);
+  const token1 = obj2.useToken(token2(token3[11]).modules.mobile.GUILD_BAR_ITEM_MARGIN);
+  const obj3 = color(token3[12]);
   const items = [closure_21, , ];
-  const obj3 = color(5724);
-  const tmp6 = closure_19(token, obj3.useToken(token2(575).modules.mobile.GUILD_FOLDER_BACKGROUND_WIDTH_OFFSET));
+  const tmp6 = closure_19(token, obj3.useToken(token2(token3[11]).modules.mobile.GUILD_FOLDER_BACKGROUND_WIDTH_OFFSET));
   const tmp7 = closure_11(folderId);
   const useCallback = react.useCallback;
-  items[1] = color(5761).withSpring;
+  items[1] = color(token3[15]).withSpring;
   items[2] = closure_15;
   let c0;
   let c1;
@@ -341,26 +345,43 @@ const memoResult = react.memo(function FolderBGInner(color) {
   GuildsBarGuildFolderTsx1.__workletHash = 3223849263087;
   GuildsBarGuildFolderTsx1.__initData = tmp8;
   const callback = useCallback(GuildsBarGuildFolderTsx1, []);
-  const tmpResult = tmp(5724);
-  token2 = tmpResult.useToken(tmp3(575).modules.mobile.GUILD_FOLDER_COLOR_OPACITY);
-  const items2 = [color, token2];
+  const tmpResult = tmp(token3[12]);
+  token2 = tmpResult.useToken(tmp3(tmp2[11]).modules.mobile.GUILD_FOLDER_COLOR_OPACITY);
+  const tmpResult3 = tmp(token3[12]);
+  token3 = tmpResult3.useToken(tmp3(tmp2[11]).colors.GUILD_FOLDER_BACKGROUND);
+  const items2 = [color, token2, token3];
   const memo = obj4.useMemo(() => {
-    let hexWithOpacity;
-    let obj2;
-    const tmp = authStore3(color);
+    let hexWithOpacityResult;
+    const tmp = gesture(color);
     if (null != tmp) {
-      const obj = { backgroundColor: hexWithOpacity(obj2.int2hex(tmp), token2) };
-      hexWithOpacity = ColorUtils.hexWithOpacity;
+      const hexWithOpacity = ColorUtils.hexWithOpacity;
       ColorUtils;
-      obj2 = utils_ColorUtils;
-      return obj;
+      const obj = utils_ColorUtils;
+      hexWithOpacityResult = hexWithOpacity(obj.int2hex(tmp), token2);
+    } else {
+      hexWithOpacityResult = token3;
     }
+    return hexWithOpacityResult;
   }, items2);
-  const obj5 = { pointerEvents: "none", collapsable: false, layout: callback, style: items3 };
-  items3 = [tmp6.folderBackground, memo, ];
+  const items3 = [closure_22, memo];
+  c0 = undefined;
+  [tmp15, tmp16] = items3;
+  const tmpResult4 = tmp(token3[18]);
+  class GuildsBarGuildFolderTsx2 {
+    constructor() {
+      return { backgroundColor };
+    }
+  }
+  const items4 = [tmp16];
+  GuildsBarGuildFolderTsx2.__closure = items4;
+  GuildsBarGuildFolderTsx2.__workletHash = 14463623001088;
+  GuildsBarGuildFolderTsx2.__initData = tmp15;
+  const animatedStyle = tmpResult4.useAnimatedStyle(GuildsBarGuildFolderTsx2);
+  const obj5 = { pointerEvents: "none", collapsable: false, layout: callback, style: items5 };
+  items5 = [tmp6.folderBackground, animatedStyle, ];
   const obj6 = { height: token + token1 + (token + 2 * token1) * totalItems + tmp7 };
-  items3[2] = obj6;
-  return closure_17(token2(1652).View, obj5);
+  items5[2] = obj6;
+  return closure_17(token2(token3[18]).View, obj5);
 });
 const memoResult1 = react.memo(function GuildsBarGuildFolder(id) {
   let accessibilityActions;
@@ -629,7 +650,7 @@ const memoResult1 = react.memo(function GuildsBarGuildFolder(id) {
     const Fragment = react.Fragment;
     const items = [guildPreviewWrapper.guildPreviewWrapper, ];
     let tmp4;
-    const tmp = authStore5;
+    const tmp = authStore4;
     const tmp2 = closure_17;
     const tmp3 = NativeViewDefault;
     if (!expanded) {
@@ -665,7 +686,7 @@ const memoResult1 = react.memo(function GuildsBarGuildFolder(id) {
   ({ accessibilityActions, onAccessibilityAction } = memo4);
   const obj8 = id(name[18]);
   const sharedValue = obj8.useSharedValue("" + id);
-  const items11 = [closure_29, dragDropInProgress, sharedValue, id, isDragTarget, , ];
+  const items11 = [closure_30, dragDropInProgress, sharedValue, id, isDragTarget, , ];
   const useCallback = color.useCallback;
   items11[5] = id(name[15]).withSpring;
   items11[6] = closure_15;
@@ -676,7 +697,7 @@ const memoResult1 = react.memo(function GuildsBarGuildFolder(id) {
   let c4;
   let c5;
   [tmp20, tmp21, tmp22, tmp23, tmp24, tmp25, tmp26] = items11;
-  class GuildsBarGuildFolderTsx4 {
+  class GuildsBarGuildFolderTsx5 {
     constructor(originY) {
       let targetHeight;
       let targetOriginY;
@@ -710,11 +731,11 @@ const memoResult1 = react.memo(function GuildsBarGuildFolder(id) {
     }
   }
   const items12 = [tmp21, tmp22, tmp23, tmp24, tmp25, tmp26];
-  GuildsBarGuildFolderTsx4.__closure = items12;
-  GuildsBarGuildFolderTsx4.__workletHash = 4596060370334;
-  GuildsBarGuildFolderTsx4.__initData = tmp20;
+  GuildsBarGuildFolderTsx5.__closure = items12;
+  GuildsBarGuildFolderTsx5.__workletHash = 7515711363519;
+  GuildsBarGuildFolderTsx5.__initData = tmp20;
   const items13 = [id, sharedValue, isDragTarget, dragDropInProgress];
-  const callback1 = useCallback(GuildsBarGuildFolderTsx4, items13);
+  const callback1 = useCallback(GuildsBarGuildFolderTsx5, items13);
   const obj9 = { id: "" + id, draggedItemSize: itemSize, accessibilityActions, onAccessibilityAction, selected: hasGuildSelected, unread: !expanded && unread, circle: false, styles: guildsBarAnimatedWrapperStyles, label: memo, isDragTarget, dragState, sharedId: sharedValue, cutouts, config: memo2, isDragPreview: flag, overState, preventClipping: true, expanded, layout: callback1, externalChildren: tmp28Result, expandedChildren: tmp28Result2, children: closure_17(tmp(tmp2[19]).TransitionGroup, obj12) };
   tmp28Result = badge;
   const tmp3Result = tmp3(tmp2[23]);
@@ -722,7 +743,7 @@ const memoResult1 = react.memo(function GuildsBarGuildFolder(id) {
     tmp28Result = badge;
     if (!flag) {
       const obj10 = { color, folderId: id, totalItems: childNodes.length };
-      tmp28Result = tmp28(closure_22, obj10);
+      tmp28Result = tmp28(closure_23, obj10);
     }
   }
   tmp28Result2 = undefined;

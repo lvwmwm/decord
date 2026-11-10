@@ -1,40 +1,40 @@
-// Module ID: 20396
-// Function ID: 20397
+// Module ID: 20424
+// Function ID: 20425
 // Name: GuildSettingsRoleSubscriptionTierEdit
-// Dependencies: [32, 19, 17, 5065, 20354, 17517, 1072, 4986, 21, 5140, 575, 1499, 20365, 20361, 7491, 7126, 5751, 5758, 5862, 7355, 20392, 20390, 20368, 17524, 20350, 12765, 20397, 1113, 17537, 5836, 7064, 7630, 9059, 4973, 20398, 2118, 10639, 10640, 9294, 2]
+// Dependencies: [32, 19, 17, 5067, 20382, 17544, 1072, 4988, 21, 5142, 575, 1499, 20393, 20389, 7494, 7129, 5753, 5760, 5864, 7358, 20420, 20418, 20396, 17551, 20378, 12779, 20425, 1113, 17564, 5838, 7067, 7633, 9065, 4975, 20426, 2118, 10648, 10649, 9300, 2]
 // Exports: default
 
-// Module 20396 (GuildSettingsRoleSubscriptionTierEdit)
+// Module 20424 (GuildSettingsRoleSubscriptionTierEdit)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl4 from "intl" /* 1113 */;
 import useNavigation from "useNavigation" /* 1499 */;
-import dismissible_content from "dismissible_content" /* 4973 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4986 */;
-import GuildRoleSubscriptionsStore2 from "GuildRoleSubscriptionsStore" /* 5065 */;
-import Text_Text from "Text/Text" /* 5751 */;
-import components_Button_Button from "components/Button/Button" /* 5758 */;
-import ToastUtils from "ToastUtils" /* 5836 */;
-import TrashIcon2 from "TrashIcon" /* 5862 */;
-import TableRowGroup from "TableRowGroup" /* 7126 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7355 */;
-import CreatorMonetizationRestrictionsHooks from "CreatorMonetizationRestrictionsHooks" /* 7491 */;
-import ErrorBlockDefault from "ErrorBlock" /* 12765 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 17517 */;
-import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 17524 */;
-import RoleSubscriptionSettingsDisabledContext from "RoleSubscriptionSettingsDisabledContext" /* 20350 */;
-import useArchiveOrDeleteDefault from "useArchiveOrDelete" /* 20361 */;
-import EditStateContextProvider2 from "EditStateContextProvider" /* 20365 */;
-import GuildRoleSubscriptionTierBenefitsModal from "GuildRoleSubscriptionTierBenefitsModal" /* 20368 */;
-import GuildRoleSubscriptionTierDesignModal from "GuildRoleSubscriptionTierDesignModal" /* 20390 */;
-import GuildRoleSubscriptionTierDetailsModal from "GuildRoleSubscriptionTierDetailsModal" /* 20392 */;
-import ActionableNoticeDefault from "ActionableNotice" /* 20397 */;
+import dismissible_content from "dismissible_content" /* 4975 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4988 */;
+import GuildRoleSubscriptionsStore2 from "GuildRoleSubscriptionsStore" /* 5067 */;
+import Text_Text from "Text/Text" /* 5753 */;
+import components_Button_Button from "components/Button/Button" /* 5760 */;
+import ToastUtils from "ToastUtils" /* 5838 */;
+import TrashIcon2 from "TrashIcon" /* 5864 */;
+import TableRowGroup from "TableRowGroup" /* 7129 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7358 */;
+import CreatorMonetizationRestrictionsHooks from "CreatorMonetizationRestrictionsHooks" /* 7494 */;
+import ErrorBlockDefault from "ErrorBlock" /* 12779 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 17544 */;
+import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 17551 */;
+import RoleSubscriptionSettingsDisabledContext from "RoleSubscriptionSettingsDisabledContext" /* 20378 */;
+import useArchiveOrDeleteDefault from "useArchiveOrDelete" /* 20389 */;
+import EditStateContextProvider2 from "EditStateContextProvider" /* 20393 */;
+import GuildRoleSubscriptionTierBenefitsModal from "GuildRoleSubscriptionTierBenefitsModal" /* 20396 */;
+import GuildRoleSubscriptionTierDesignModal from "GuildRoleSubscriptionTierDesignModal" /* 20418 */;
+import GuildRoleSubscriptionTierDetailsModal from "GuildRoleSubscriptionTierDetailsModal" /* 20420 */;
+import ActionableNoticeDefault from "ActionableNotice" /* 20425 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import RoleTierEditStore from "RoleTierEditStore" /* 20354 */;
+import RoleTierEditStore from "RoleTierEditStore" /* 20382 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5142 */;
 import size from "module_2" /* 2 */;
 
 const GuildRoleSubscriptionsStore = GuildRoleSubscriptionsStore2;
@@ -49,7 +49,7 @@ let obj3;
 let obj4;
 let obj5;
 let tmp;
-const DismissibleActionSheet = tmp(10640);
+const DismissibleActionSheet = tmp(10649);
 function ArchiveOrDeleteTierSection() {
   let TrashIcon;
   let archiving;
@@ -75,16 +75,16 @@ function ArchiveOrDeleteTierSection() {
   const allowSelfRemoveMonetization = obj3.useShouldRestrictUpdatingCreatorMonetizationSettings(guildId).allowSelfRemoveMonetization;
   const obj4 = { style: tmp.actionSection, children: items1 };
   const obj5 = { children: items };
-  items = [authStore3(TableRowGroup.TableRowGroupTitle, { title: buttonText }), authStore3(Text_Text.Text, { variant: "body-sm/medium", color: "text-default", children: descriptionText })];
-  items1 = [closure_15(metroRequire, obj5), ];
-  const obj6 = { variant: "destructive", grow: true, icon: authStore3(TrashIcon, obj7), onPress: handleArchiveOrDelete, disabled: tmp8, text: buttonText };
+  items = [gesture(TableRowGroup.TableRowGroupTitle, { title: buttonText }), gesture(Text_Text.Text, { variant: "body-sm/medium", color: "text-default", children: descriptionText })];
+  items1 = [clientStatuses(metroRequire, obj5), ];
+  const obj6 = { variant: "destructive", grow: true, icon: gesture(TrashIcon, obj7), onPress: handleArchiveOrDelete, disabled: tmp8, text: buttonText };
   const Button = components_Button_Button.Button;
   obj7 = { size: "xs", color: nativeDefault.colors.CONTROL_CRITICAL_PRIMARY_TEXT_DEFAULT };
   TrashIcon = TrashIcon2.TrashIcon;
   tmp8 = !allowSelfRemoveMonetization;
-  const tmp5 = closure_15;
+  const tmp5 = clientStatuses;
   const tmp6 = metroRequire;
-  const tmp7 = authStore3;
+  const tmp7 = gesture;
   if (allowSelfRemoveMonetization) {
     tmp8 = deleting;
   }
@@ -102,18 +102,18 @@ function TabContent(selectedTab) {
   selectedTab = selectedTab.selectedTab;
   const tmp = closure_16();
   if (GuildRoleSubscriptionsTierScenes.DETAILS === selectedTab) {
-    const obj2 = { style: tmp.tabContent, children: closure_15(SafeAreaPaddingView2, obj3) };
+    const obj2 = { style: tmp.tabContent, children: clientStatuses(SafeAreaPaddingView2, obj3) };
     obj3 = { bottom: true, children: items };
     SafeAreaPaddingView2 = common_SafeAreaView.SafeAreaPaddingView;
-    items = [authStore3(GuildRoleSubscriptionTierDetailsModal.GuildRoleSubscriptionTierDetailsTab, {}), authStore3(ArchiveOrDeleteTierSection, {})];
-    return authStore3(metroImportDefault, obj2);
+    items = [gesture(GuildRoleSubscriptionTierDetailsModal.GuildRoleSubscriptionTierDetailsTab, {}), gesture(ArchiveOrDeleteTierSection, {})];
+    return gesture(metroImportDefault, obj2);
   } else if (GuildRoleSubscriptionsTierScenes.DESIGN === selectedTab) {
-    const obj = { style: tmp.tabContent, children: authStore3(SafeAreaPaddingView, obj4) };
-    obj4 = { bottom: true, children: authStore3(GuildRoleSubscriptionTierDesignModal.GuildRoleSubscriptionTierDesignTab, {}) };
+    const obj = { style: tmp.tabContent, children: gesture(SafeAreaPaddingView, obj4) };
+    obj4 = { bottom: true, children: gesture(GuildRoleSubscriptionTierDesignModal.GuildRoleSubscriptionTierDesignTab, {}) };
     SafeAreaPaddingView = common_SafeAreaView.SafeAreaPaddingView;
-    return authStore3(metroImportDefault, obj);
+    return gesture(metroImportDefault, obj);
   } else if (GuildRoleSubscriptionsTierScenes.BENEFITS === selectedTab) {
-    return authStore3(GuildRoleSubscriptionTierBenefitsModal.GuildRoleSubscriptionTierBenefitsTab, {});
+    return gesture(GuildRoleSubscriptionTierBenefitsModal.GuildRoleSubscriptionTierBenefitsTab, {});
   } else {
     const _Error = Error;
     const _HermesInternal = HermesInternal;
@@ -161,10 +161,10 @@ function DraftPublishPrompt(ref) {
       if (!subscriptionListing.published) {
         let tmp15;
         if (null != error) {
-          const obj5 = { style: tmp2.publishError, children: authStore3(tmp14, obj6) };
+          const obj5 = { style: tmp2.publishError, children: gesture(tmp14, obj6) };
           obj6 = { children: error.getAnyErrorMessage() };
           tmp14 = ErrorBlockDefault;
-          tmp15 = authStore3(metroRequire, obj5);
+          tmp15 = gesture(metroRequire, obj5);
         } else {
           const obj7 = {
             message: intl.string(intl4.t.V5mSpz),
@@ -183,7 +183,7 @@ function DraftPublishPrompt(ref) {
           const tmp18 = ActionableNoticeDefault;
           intl = tmp3(1113).intl;
           intl2 = tmp3(1113).intl;
-          tmp15 = authStore3(tmp18, obj7);
+          tmp15 = gesture(tmp18, obj7);
         }
         tmp10 = tmp15;
       }
@@ -226,7 +226,7 @@ export default function GuildSettingsRoleSubscriptionTierEdit(guildId) {
   let obj7;
   let obj8;
   let tmp17;
-  const f120960 = (currentScene) => {
+  const f121148 = (currentScene) => {
     let DETAILS = currentScene.currentScene;
     if (DETAILS == null) {
       DETAILS = handleCreateOrUpdateFromEditState.DETAILS;
@@ -306,9 +306,9 @@ export default function GuildSettingsRoleSubscriptionTierEdit(guildId) {
       presentError(anyErrorMessage);
     }
   }, items1);
-  [tmp17, c14] = _slicedToArray(loading.useRoleTierEditStore(f120960), 2);
+  [tmp17, c14] = _slicedToArray(loading.useRoleTierEditStore(f121148), 2);
   const items2 = [navigation, hasChanges, first1, loading, callback];
-  _slicedToArray(loading.useRoleTierEditStore(f120960), 2);
+  _slicedToArray(loading.useRoleTierEditStore(f121148), 2);
   const layoutEffect1 = obj.useLayoutEffect(() => {
     let onPress;
     let title;
@@ -396,7 +396,7 @@ export default function GuildSettingsRoleSubscriptionTierEdit(guildId) {
               actionSheetKey: "TierTemplateSelected",
               importer: GuildRoleSubscriptionsTierTemplateSelectedActionSheetImporter
             };
-            tmp3 = authStore3(DismissibleActionSheet.DismissibleActionSheet, obj);
+            tmp3 = gesture(DismissibleActionSheet.DismissibleActionSheet, obj);
           }
           return tmp3;
         }

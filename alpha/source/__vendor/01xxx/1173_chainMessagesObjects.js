@@ -40,7 +40,7 @@ export function chainMessagesObjects(messagesProxy, $$loader2) {
   }
 }
 export function makeMessagesProxy(loader) {
-  const f122972 = (arg0) => loader.get(loader, arg0);
+  const f123160 = (arg0) => loader.get(loader, arg0);
   let closure_0 = loader;
   const obj = {};
   const obj2 = {
@@ -50,7 +50,7 @@ export function makeMessagesProxy(loader) {
     getOwnPropertyDescriptor(arg0, arg1) {
       if (!arg0[arg1]) {
         let closure_0 = arg1;
-        arg0[arg1] = f122972;
+        arg0[arg1] = f123160;
       }
       return Reflect.getOwnPropertyDescriptor(arg0, arg1);
     },
@@ -62,7 +62,7 @@ export function makeMessagesProxy(loader) {
         if (arg1 !== Symbol.toStringTag) {
           if (!arg0[arg1]) {
             let closure_0 = arg1;
-            arg0[arg1] = f122972;
+            arg0[arg1] = f123160;
           }
           str2 = arg0[arg1];
         }

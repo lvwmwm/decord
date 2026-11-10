@@ -1,28 +1,28 @@
-// Module ID: 20188
-// Function ID: 20189
+// Module ID: 20216
+// Function ID: 20217
 // Name: AddMembersActionSheet
-// Dependencies: [32, 19, 17, 20182, 21, 5140, 575, 5200, 10938, 7055, 5735, 5780, 1187, 5149, 1113, 7357, 9142, 6956, 20187, 11, 9147, 7546, 5388, 7382, 5758, 9154, 5374, 5751, 2]
+// Dependencies: [32, 19, 17, 20210, 21, 5142, 575, 5202, 10947, 7058, 5737, 5782, 1187, 5151, 1113, 7360, 9148, 6959, 20215, 11, 9153, 7549, 5390, 7385, 5760, 9160, 5376, 5753, 2]
 // Exports: default
 
-// Module 20188 (AddMembersActionSheet)
+// Module 20216 (AddMembersActionSheet)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5149 */;
-import react_native2 from "react-native" /* 5200 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
-import RegexUtilsDefault from "RegexUtils" /* 5780 */;
-import GuildUtilsDefault from "GuildUtils" /* 6956 */;
-import FormCheckbox from "FormCheckbox" /* 7055 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9154 */;
-import DetailedGuildIdentityUserRowDefault from "DetailedGuildIdentityUserRow" /* 10938 */;
-import GuildSettingsRoleConstants from "GuildSettingsRoleConstants" /* 20182 */;
-import GuildSettingsRolesUtils from "GuildSettingsRolesUtils" /* 20187 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5151 */;
+import react_native2 from "react-native" /* 5202 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5376 */;
+import RegexUtilsDefault from "RegexUtils" /* 5782 */;
+import GuildUtilsDefault from "GuildUtils" /* 6959 */;
+import FormCheckbox from "FormCheckbox" /* 7058 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9160 */;
+import DetailedGuildIdentityUserRowDefault from "DetailedGuildIdentityUserRow" /* 10947 */;
+import GuildSettingsRoleConstants from "GuildSettingsRoleConstants" /* 20210 */;
+import GuildSettingsRolesUtils from "GuildSettingsRolesUtils" /* 20215 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5142 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;

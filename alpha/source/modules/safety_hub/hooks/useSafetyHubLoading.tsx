@@ -1,12 +1,12 @@
-// Module ID: 16961
-// Function ID: 16962
+// Module ID: 16988
+// Function ID: 16989
 // Name: useSafetyHubLoading
-// Dependencies: [8064, 504, 2]
+// Dependencies: [8068, 504, 2]
 // Exports: default
 
-// Module 16961 (useSafetyHubLoading)
+// Module 16988 (useSafetyHubLoading)
 import get_initialized from "get initialized" /* 504 */;
-import SafetyHubStore from "SafetyHubStore" /* 8064 */;
+import SafetyHubStore from "SafetyHubStore" /* 8068 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/safety_hub/hooks/useSafetyHubLoading.tsx");

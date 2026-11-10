@@ -1,23 +1,23 @@
-// Module ID: 10085
-// Function ID: 10086
+// Module ID: 10091
+// Function ID: 10092
 // Name: Coachmark
-// Dependencies: [109, 32, 19, 17, 1072, 21, 1652, 5140, 575, 10080, 5765, 10086, 5842, 6153, 5751, 5758, 1113, 7120, 9072, 8042, 1377, 5199, 2]
+// Dependencies: [109, 32, 19, 17, 1072, 21, 1652, 5142, 575, 10086, 5767, 10092, 5844, 6155, 5753, 5760, 1113, 7123, 9078, 8046, 1377, 5201, 2]
 // Exports: CoachmarkContainer
 
-// Module 10085 (Coachmark)
+// Module 10091 (Coachmark)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import native from "native" /* 5199 */;
-import FastImageDefault from "FastImage" /* 5842 */;
-import react_native from "react-native" /* 6153 */;
-import Graphic2 from "Graphic" /* 10086 */;
+import native from "native" /* 5201 */;
+import FastImageDefault from "FastImage" /* 5844 */;
+import react_native from "react-native" /* 6155 */;
+import Graphic2 from "Graphic" /* 10092 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import module_1652 from "module_1652" /* 1652 */;
-import createStyles_mod from "createStyles" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5142 */;
 import size_mod from "module_2" /* 2 */;
 
 let Pressable;
@@ -304,7 +304,7 @@ size = { height: 8, width: 8, borderRadius: nativeDefault.radii.xs, borderWidth:
 size1 = { width: 2, height: 16, backgroundColor: nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE };
 obj9 = { marginBottom: nativeDefault.modules.mobile.COACHMARK_BUTTON_SPACING };
 rect = { position: "absolute", top: nativeDefault.modules.mobile.COACHMARK_BUTTON_SPACING, right: nativeDefault.modules.mobile.COACHMARK_BUTTON_SPACING };
-const authStore3 = createStyles(obj);
+const gesture = createStyles(obj);
 let closure_15 = { "21/9": 90, "16/9": 90, "6/4": 60, "2/1": 40, "1/1": 40 };
 size = size_mod;
 let result = size.fileFinishedImporting("design/components/Coachmark/native/Coachmark.native.tsx");

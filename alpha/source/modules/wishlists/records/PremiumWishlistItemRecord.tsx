@@ -1,13 +1,13 @@
-// Module ID: 9559
-// Function ID: 9560
+// Module ID: 9565
+// Function ID: 9566
 // Name: PremiumWishlistItemRecord
-// Dependencies: [2164, 9557, 1072, 2]
+// Dependencies: [2164, 9563, 1072, 2]
 // Exports: isPremiumWishlistItemRecord
 
-// Module 9559 (PremiumWishlistItemRecord)
+// Module 9565 (PremiumWishlistItemRecord)
 import Constants from "Constants" /* 1072 */;
 import SKURecord from "SKURecord" /* 2164 */;
-import BaseWishlistItemRecord from "BaseWishlistItemRecord" /* 9557 */;
+import BaseWishlistItemRecord from "BaseWishlistItemRecord" /* 9563 */;
 import size from "module_2" /* 2 */;
 
 const SKUProductLines = Constants.SKUProductLines;

@@ -1,14 +1,14 @@
-// Module ID: 19224
-// Function ID: 19225
+// Module ID: 19253
+// Function ID: 19254
 // Name: useConsoleConnectionCoachmark
-// Dependencies: [32, 19, 4986, 19225, 7641, 4973, 1113, 575, 5374, 19226, 2118, 19228, 2]
+// Dependencies: [32, 19, 4988, 19254, 7644, 4975, 1113, 575, 5376, 19255, 2118, 19257, 2]
 // Exports: useConsoleConnectionCoachmark
 
-// Module 19224 (useConsoleConnectionCoachmark)
+// Module 19253 (useConsoleConnectionCoachmark)
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4986 */;
-import _modDef19228 from "module_19228" /* 19228 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4988 */;
+import _modDef19257 from "module_19257" /* 19257 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -31,7 +31,7 @@ export function useConsoleConnectionCoachmark(disabled) {
   if (isConsoleConnectionCoachmarkEligible) {
     let items;
     if (!disabled) {
-      items = [tmp(4973).DismissibleContent.CONSOLE_CONNECTION_COACHMARK];
+      items = [tmp(4975).DismissibleContent.CONSOLE_CONNECTION_COACHMARK];
     }
     const tmp7 = _slicedToArray(tmp5(items), 2);
     _require = tmp8;

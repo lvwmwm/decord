@@ -1,10 +1,10 @@
-// Module ID: 13943
-// Function ID: 13944
+// Module ID: 13968
+// Function ID: 13969
 // Name: SharedCustomThemeActionSheet
-// Dependencies: [32, 19, 17, 2176, 1072, 1387, 21, 5140, 575, 1252, 13944, 5198, 5388, 7382, 1113, 2896, 5751, 6064, 5758, 504, 2171, 7683, 7412, 1187, 1239, 2]
+// Dependencies: [32, 19, 17, 2176, 1072, 1387, 21, 5142, 575, 1252, 13969, 5200, 5390, 7385, 1113, 2896, 5753, 6066, 5760, 504, 2171, 7686, 7415, 1187, 1239, 2]
 // Exports: default
 
-// Module 13943 (SharedCustomThemeActionSheet)
+// Module 13968 (SharedCustomThemeActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -13,17 +13,17 @@ import ClientThemesUtils from "ClientThemesUtils" /* 1239 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
 import PremiumUtilsDefault from "PremiumUtils" /* 2171 */;
-import ThemeActionCreators from "ThemeActionCreators" /* 5198 */;
-import UserSettingsActionCreators from "UserSettingsActionCreators" /* 6064 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7412 */;
-import openPremiumPlanSelectionActionSheetDefault from "openPremiumPlanSelectionActionSheet" /* 7683 */;
-import CustomThemeMobileActionCreators from "CustomThemeMobileActionCreators" /* 13944 */;
+import ThemeActionCreators from "ThemeActionCreators" /* 5200 */;
+import UserSettingsActionCreators from "UserSettingsActionCreators" /* 6066 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7415 */;
+import openPremiumPlanSelectionActionSheetDefault from "openPremiumPlanSelectionActionSheet" /* 7686 */;
+import CustomThemeMobileActionCreators from "CustomThemeMobileActionCreators" /* 13969 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import "react";
 import react from "react" /* 19 */;
 import SubscriptionStore from "SubscriptionStore" /* 2176 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5140 */;
+import createStyles from "createStyles" /* 5142 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -71,7 +71,7 @@ function PrimaryActionButton(onPressApply) {
     tmp6 = closure_12(ShinyButton, obj3);
   } else {
     const obj4 = { text: intl.string(require("intl").t["1Qm822"]), onPress: onPressApply, variant: "primary" };
-    const Button = tmp2(5758).Button;
+    const Button = tmp2(5760).Button;
     intl = tmp2(1113).intl;
     tmp6 = closure_12(Button, obj4);
   }
@@ -99,7 +99,7 @@ export default function _default(message) {
   let items4;
   let items5;
   let obj8;
-  const f106506 = (item) => "#" + item;
+  const f106671 = (item) => "#" + item;
   const sharedClientTheme = message.message.sharedClientTheme;
   let tmp = closure_14();
   let tmp2 = closure_7(null);
@@ -108,7 +108,7 @@ export default function _default(message) {
   let tmp4;
   const useState = first1.useState;
   if (undefined !== sharedClientTheme) {
-    let obj4 = { colors: colors.map(f106506), gradientColorStops: [], gradientAngle: null, baseMix: null };
+    let obj4 = { colors: colors.map(f106671), gradientColorStops: [], gradientAngle: null, baseMix: null };
     colors = sharedClientTheme.colors;
     ({ gradient_angle: obj2.gradientAngle, base_mix: obj2.baseMix } = sharedClientTheme);
     tmp4 = obj4;
@@ -133,7 +133,7 @@ export default function _default(message) {
     let tmp4;
     const tmp = closure_3;
     if (undefined !== sharedClientTheme) {
-      const obj = { colors: colors.map(f106506), gradientColorStops: [], gradientAngle: null, baseMix: null };
+      const obj = { colors: colors.map(f106671), gradientColorStops: [], gradientAngle: null, baseMix: null };
       colors = tmp2.colors;
       ({ gradient_angle: obj.gradientAngle, base_mix: obj.baseMix } = sharedClientTheme);
       tmp4 = obj;

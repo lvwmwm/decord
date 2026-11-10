@@ -1,19 +1,19 @@
-// Module ID: 11458
-// Function ID: 11459
+// Module ID: 11467
+// Function ID: 11468
 // Name: notficationSettingsChannelFlagUtils
-// Dependencies: [6830, 6831, 1082, 7351, 11201, 7346, 2]
+// Dependencies: [6833, 6834, 1082, 7354, 11210, 7349, 2]
 // Exports: updateChannelUnreadSetting
 
-// Module 11458 (notficationSettingsChannelFlagUtils)
+// Module 11467 (notficationSettingsChannelFlagUtils)
 import UserSettingsConstants from "UserSettingsConstants" /* 1082 */;
-import ReadStateConstants from "ReadStateConstants" /* 6831 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7351 */;
-import notificationSettingsFlagUtils from "notificationSettingsFlagUtils" /* 11201 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6830 */;
+import ReadStateConstants from "ReadStateConstants" /* 6834 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7354 */;
+import notificationSettingsFlagUtils from "notificationSettingsFlagUtils" /* 11210 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6833 */;
 import size from "module_2" /* 2 */;
 
 let tmp4;
-const NotificationSettingsUtils = tmp4(7346);
+const NotificationSettingsUtils = tmp4(7349);
 const UnreadSetting = ReadStateConstants.UnreadSetting;
 const constants = UserSettingsConstants.ChannelNotificationSettingsFlags;
 let result = size.fileFinishedImporting("modules/notifications/settings/utils/notficationSettingsChannelFlagUtils.tsx");

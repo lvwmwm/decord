@@ -1,16 +1,16 @@
-// Module ID: 18952
-// Function ID: 18953
+// Module ID: 18981
+// Function ID: 18982
 // Name: useNotificationPermissionPrompt
-// Dependencies: [19, 4982, 6623, 4983, 14207, 504, 4985, 14216, 18953, 18955, 2]
+// Dependencies: [19, 4984, 6625, 4985, 14233, 504, 4987, 14242, 18982, 18984, 2]
 // Exports: default
 
-// Module 18952 (useNotificationPermissionPrompt)
-import NotificationUtilsDefault from "NotificationUtils" /* 14216 */;
+// Module 18981 (useNotificationPermissionPrompt)
+import NotificationUtilsDefault from "NotificationUtils" /* 14242 */;
 import react from "react" /* 19 */;
-import LoginRequiredActionStore from "LoginRequiredActionStore" /* 4982 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6623 */;
-import UserRequiredActionStore from "UserRequiredActionStore" /* 4983 */;
-import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 14207 */;
+import LoginRequiredActionStore from "LoginRequiredActionStore" /* 4984 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6625 */;
+import UserRequiredActionStore from "UserRequiredActionStore" /* 4985 */;
+import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 14233 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/nuf/native/useNotificationPermissionPrompt.tsx");
@@ -39,8 +39,8 @@ export default function useNotificationPermissionPrompt() {
       }
     }
   }, items2);
-  const obj3 = stateFromStores(18953);
+  const obj3 = stateFromStores(18982);
   const guildOpenNudge = obj3.useGuildOpenNudge();
-  const obj4 = stateFromStores(18955);
+  const obj4 = stateFromStores(18984);
   const postCallDisconnectNudge = obj4.usePostCallDisconnectNudge();
 };

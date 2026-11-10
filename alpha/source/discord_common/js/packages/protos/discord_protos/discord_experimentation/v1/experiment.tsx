@@ -1,14 +1,14 @@
-// Module ID: 8659
-// Function ID: 8660
+// Module ID: 8665
+// Function ID: 8666
 // Name: experiment
-// Dependencies: [32, 1197, 1226, 1227, 8660, 8661, 2]
+// Dependencies: [32, 1197, 1226, 1227, 8666, 8667, 2]
 
-// Module 8659 (experiment)
+// Module 8665 (experiment)
 import _mod1197 from "module_1197" /* 1197 */;
 import timestamp from "timestamp" /* 1226 */;
 import wrappers from "wrappers" /* 1227 */;
-import rules from "rules" /* 8660 */;
-import duration from "duration" /* 8661 */;
+import rules from "rules" /* 8666 */;
+import duration from "duration" /* 8667 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -101,7 +101,7 @@ const obj14 = { UNSPECIFIED: 0, [0]: "UNSPECIFIED", FULL: 1, [1]: "FULL", FORCE_
 const obj15 = { UNSPECIFIED: 0, [0]: "UNSPECIFIED", ENABLED: 1, [1]: "ENABLED", DISABLED: 2, [2]: "DISABLED" };
 const obj16 = { UNSPECIFIED: 0, [0]: "UNSPECIFIED", ACTIVE: 1, [1]: "ACTIVE", UNUSED: 2, [2]: "UNUSED", BURNED: 3, [3]: "BURNED", PRESERVED: 4, [4]: "PRESERVED" };
 const obj17 = { UNSPECIFIED: 0, [0]: "UNSPECIFIED", DRAFT: 1, [1]: "DRAFT", ACTIVE: 2, [2]: "ACTIVE", PAUSED_MANUAL: 3, [3]: "PAUSED_MANUAL", PAUSED_HEALTH_CHECK: 4, [4]: "PAUSED_HEALTH_CHECK", COMPLETED: 5, [5]: "COMPLETED", CANCELED: 6, [6]: "CANCELED" };
-const obj18 = { UNSPECIFIED: 0, [0]: "UNSPECIFIED", PENDING: 1, [1]: "PENDING", IN_PROGRESS: 2, [2]: "IN_PROGRESS", AWAITING_MANUAL_APPROVAL: 3, [3]: "AWAITING_MANUAL_APPROVAL", COMPLETED: 4, [4]: "COMPLETED" };
+const obj18 = { UNSPECIFIED: 0, [0]: "UNSPECIFIED", PENDING: 1, [1]: "PENDING", IN_PROGRESS: 2, [2]: "IN_PROGRESS", AWAITING_MANUAL_APPROVAL: 3, [3]: "AWAITING_MANUAL_APPROVAL", COMPLETED: 4, [4]: "COMPLETED", AWAITING_FINAL_HEALTH_CHECK: 5, [5]: "AWAITING_FINAL_HEALTH_CHECK" };
 const obj19 = { UNSPECIFIED: 0, [0]: "UNSPECIFIED", DRAFT: 1, [1]: "DRAFT", MEASUREMENT: 2, [2]: "MEASUREMENT", ROLLING_OUT: 4, [4]: "ROLLING_OUT", ARCHIVED: 6, [6]: "ARCHIVED", AA_MODE: 7, [7]: "AA_MODE", PAUSED: 8, [8]: "PAUSED" };
 const MessageType = _mod1197.MessageType;
 class Experiment$Type extends MessageType {
@@ -799,7 +799,7 @@ items[0] = obj20;
 items[1] = { no: 2, name: "linked_id", kind: "scalar", T: 6 };
 items[2] = { no: 3, name: "shared_control", kind: "scalar", T: 8 };
 let tmp9 = new "AWAITING_MANUAL_APPROVAL"("discord_protos.discord_experimentation.v1.Experiment.NumberLineSettings", items, tmp6, tmp5, "create", tmp4, "internalBinaryRead", "internalBinaryWrite", tmp3, tmp2, tmp, require, dependencyMap, Experiment_NumberLineSettings_Mode, obj2);
-const authStore6 = tmp9;
+const authStore5 = tmp9;
 const MessageType3 = _mod1197.MessageType;
 class Experiment_ChangeSource$Type extends MessageType3 {
   constructor() {
@@ -2061,7 +2061,6 @@ const items10 = [{ no: 1, name: "variation_id", kind: "scalar", T: 5 }, ];
 const obj30 = { no: 2, name: "buckets", kind: "message", repeat: 1, T: T18 };
 items10[1] = obj30;
 let tmp21 = new "internalBinaryRead"("discord_protos.discord_experimentation.v1.LifecyclePlan.VariationBuckets", items10, tmp6, LifecyclePlan_RampStep$Type, "create", LifecyclePlan_VariationBuckets$Type, "internalBinaryRead", items10, this, undefined, tmp, require, dependencyMap, Experiment_NumberLineSettings_Mode, obj2, obj3, obj4, obj5, obj6, obj7, obj8, obj9, obj10, obj11, obj12, obj13, obj14, obj15, obj16, obj17, obj18, obj19, experimentType, tmp9, tmp10, tmp11, tmp12, tmp13, this, items41, this, items42, bucket_AllocationExposureModeType, bucket_AllocationExposureModeType1, bucket_AllocationExposureModeType2, lifecyclePlan_MeasurementPlanType, lifecyclePlan_RolloutPlanType, exports, obj30, undefined, 8, 7, 6);
-let closure_32 = tmp21;
 let result = size.fileFinishedImporting("../discord_common/js/packages/protos/discord_protos/discord_experimentation/v1/experiment.tsx");
 
 export { Experiment_NumberLineSettings_Mode };

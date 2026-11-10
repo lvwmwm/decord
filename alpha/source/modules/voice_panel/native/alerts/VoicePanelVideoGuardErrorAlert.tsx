@@ -1,15 +1,15 @@
-// Module ID: 14807
-// Function ID: 14808
+// Module ID: 14833
+// Function ID: 14834
 // Name: VoicePanelVideoGuardErrorAlert
-// Dependencies: [19, 21, 6096, 6096, 1113, 5751, 14804, 2]
+// Dependencies: [19, 21, 6098, 6098, 1113, 5753, 14830, 2]
 // Exports: default
 
-// Module 14807 (VoicePanelVideoGuardErrorAlert)
+// Module 14833 (VoicePanelVideoGuardErrorAlert)
 import Fragment from "Fragment" /* 21 */;
 import intl4 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5751 */;
-import AlertModal2 from "AlertModal" /* 6096 */;
-import VideoGuardExperiment from "VideoGuardExperiment" /* 14804 */;
+import Text_Text from "Text/Text" /* 5753 */;
+import AlertModal2 from "AlertModal" /* 6098 */;
+import VideoGuardExperiment from "VideoGuardExperiment" /* 14830 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

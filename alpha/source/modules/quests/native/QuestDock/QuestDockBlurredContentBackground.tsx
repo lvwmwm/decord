@@ -1,12 +1,12 @@
-// Module ID: 17458
-// Function ID: 17459
+// Module ID: 17485
+// Function ID: 17486
 // Name: QuestDockBlurredContentBackground
-// Dependencies: [19, 17, 21, 5727, 2]
+// Dependencies: [19, 17, 21, 5729, 2]
 
-// Module 17458 (QuestDockBlurredContentBackground)
+// Module 17485 (QuestDockBlurredContentBackground)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import VisualEffectViewAnimatedDefault from "VisualEffectViewAnimated" /* 5727 */;
+import VisualEffectViewAnimatedDefault from "VisualEffectViewAnimated" /* 5729 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

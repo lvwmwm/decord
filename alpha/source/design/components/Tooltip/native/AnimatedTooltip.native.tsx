@@ -1,17 +1,17 @@
-// Module ID: 10078
-// Function ID: 10079
+// Module ID: 10084
+// Function ID: 10085
 // Name: AnimatedTooltip
-// Dependencies: [32, 19, 17, 21, 1652, 10079, 5154, 10081, 10082, 2]
+// Dependencies: [32, 19, 17, 21, 1652, 10085, 5156, 10087, 10088, 2]
 // Exports: AnimatedTooltip
 
-// Module 10078 (AnimatedTooltip)
+// Module 10084 (AnimatedTooltip)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import _modDef1652 from "module_1652" /* 1652 */;
-import react2 from "react" /* 5154 */;
-import Tooltip2 from "Tooltip" /* 10079 */;
-import TooltipConstants from "TooltipConstants" /* 10081 */;
-import AnimatedEnterExitItemDefault from "AnimatedEnterExitItem" /* 10082 */;
+import react2 from "react" /* 5156 */;
+import Tooltip2 from "Tooltip" /* 10085 */;
+import TooltipConstants from "TooltipConstants" /* 10087 */;
+import AnimatedEnterExitItemDefault from "AnimatedEnterExitItem" /* 10088 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

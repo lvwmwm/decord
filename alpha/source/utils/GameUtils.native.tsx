@@ -1,11 +1,11 @@
-// Module ID: 9405
-// Function ID: 9406
+// Module ID: 9411
+// Function ID: 9412
 // Name: GameUtils
-// Dependencies: [9406, 9409, 2]
+// Dependencies: [9412, 9415, 2]
 
-// Module 9405 (GameUtils)
-import waitForFrameSubscriptionDefault from "waitForFrameSubscription" /* 9406 */;
-import NativeRPCServerDefault from "NativeRPCServer" /* 9409 */;
+// Module 9411 (GameUtils)
+import waitForFrameSubscriptionDefault from "waitForFrameSubscription" /* 9412 */;
+import NativeRPCServerDefault from "NativeRPCServer" /* 9415 */;
 import size from "module_2" /* 2 */;
 
 let c2 = "not supported";

@@ -1,16 +1,16 @@
-// Module ID: 8902
-// Function ID: 8903
+// Module ID: 8908
+// Function ID: 8909
 // Name: UserProfileAvatar
-// Dependencies: [19, 17, 8825, 7437, 21, 8888, 8903, 8832, 8906, 1113, 2]
+// Dependencies: [19, 17, 8831, 7440, 21, 8894, 8909, 8838, 8912, 1113, 2]
 // Exports: OpenableUserProfileAvatar
 
-// Module 8902 (UserProfileAvatar)
+// Module 8908 (UserProfileAvatar)
 import react_native from "react-native" /* 17 */;
-import Constants from "Constants" /* 7437 */;
-import Constants2 from "Constants" /* 8825 */;
-import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 8888 */;
-import HeaderAvatarDefault from "HeaderAvatar" /* 8903 */;
-import openUserProfileAvatarMediaViewerDefault from "openUserProfileAvatarMediaViewer" /* 8906 */;
+import Constants from "Constants" /* 7440 */;
+import Constants2 from "Constants" /* 8831 */;
+import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 8894 */;
+import HeaderAvatarDefault from "HeaderAvatar" /* 8909 */;
+import openUserProfileAvatarMediaViewerDefault from "openUserProfileAvatarMediaViewer" /* 8912 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size_mod from "module_2" /* 2 */;

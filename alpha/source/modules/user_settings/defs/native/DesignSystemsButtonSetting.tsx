@@ -1,12 +1,12 @@
-// Module ID: 18092
-// Function ID: 18093
+// Module ID: 18119
+// Function ID: 18120
 // Name: DesignSystemsButtonSetting
-// Dependencies: [8503, 1072, 11685, 18093, 2]
+// Dependencies: [8507, 1072, 11694, 18120, 2]
 
-// Module 18092 (DesignSystemsButtonSetting)
+// Module 18119 (DesignSystemsButtonSetting)
 import Constants from "Constants" /* 1072 */;
-import SettingsConstants from "SettingsConstants" /* 8503 */;
-import SettingBuilders from "SettingBuilders" /* 11685 */;
+import SettingsConstants from "SettingsConstants" /* 8507 */;
+import SettingBuilders from "SettingBuilders" /* 11694 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

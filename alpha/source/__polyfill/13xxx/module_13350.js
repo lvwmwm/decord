@@ -1,20 +1,30 @@
 // Module ID: 13350
 // Function ID: 13351
-// Dependencies: [13349]
-// Exports: getTraceMetaTags
+// Dependencies: [13306, 13336]
+// Exports: createClientReportEnvelope
 
 // Module 13350
-import _mod13349 from "module_13349" /* 13349 */;
+import _browserPerformanceTimeOriginMode from "_browserPerformanceTimeOriginMode" /* 13306 */;
+import _mod13336 from "module_13336" /* 13336 */;
 
 
-export function getTraceMetaTags() {
-  const obj = _mod13349;
-  const entries1 = entries(obj.getTraceData());
-  const mapped = entries1.map((item) => {
-    let tmp;
-    let tmp2;
-    [tmp, tmp2] = item;
-    return "<meta name=\"" + tmp + "\" content=\"" + tmp2 + "\"/>";
-  });
-  return mapped.join("\n");
+export function createClientReportEnvelope(discarded_events, dsn, arg2) {
+  let obj3;
+  let result = arg2;
+  const items = [{ type: "client_report" }, ];
+  if (!arg2) {
+    const obj = _browserPerformanceTimeOriginMode;
+    result = obj.dateTimestampInSeconds();
+  }
+  items[1] = { timestamp: result, discarded_events };
+  const createEnvelope = _mod13336.createEnvelope;
+  _mod13336;
+  if (dsn) {
+    obj3 = { dsn };
+    const obj2 = { dsn };
+  } else {
+    obj3 = {};
+  }
+  const items1 = [items];
+  return createEnvelope(obj3, items1);
 }

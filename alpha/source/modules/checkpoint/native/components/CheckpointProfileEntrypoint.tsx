@@ -1,55 +1,52 @@
-// Module ID: 19251
-// Function ID: 19252
+// Module ID: 19280
+// Function ID: 19281
 // Name: CheckpointProfileEntrypoint
-// Dependencies: [17, 13668, 21, 13669, 5374, 19252, 2118, 6570, 504, 7038, 1113, 3248, 13648, 2]
+// Dependencies: [17, 13681, 21, 13682, 5376, 19281, 2118, 6572, 504, 7041, 1113, 3248, 13661, 2]
 // Exports: default
 
-// Module 19251 (CheckpointProfileEntrypoint)
+// Module 19280 (CheckpointProfileEntrypoint)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import get_initialized from "get initialized" /* 504 */;
-import intl3 from "intl" /* 1113 */;
 import asyncRequire from "asyncRequire" /* 2118 */;
 import _modDef3248 from "module_3248" /* 3248 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
-import CheckpointExperiments from "CheckpointExperiments" /* 6570 */;
-import TableRow2 from "TableRow" /* 7038 */;
-import ExperimentalCheckpointIcon from "ExperimentalCheckpointIcon" /* 13648 */;
-import openCheckpoint from "openCheckpoint" /* 13669 */;
-import CheckpointStore from "CheckpointStore" /* 13668 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5376 */;
+import CheckpointExperiments from "CheckpointExperiments" /* 6572 */;
+import openCheckpoint from "openCheckpoint" /* 13682 */;
+import CheckpointStore from "CheckpointStore" /* 13681 */;
 import size from "module_2" /* 2 */;
 
 function handlePress() {
   const obj = openCheckpoint;
   obj.openCheckpoint("user_profile");
 }
-function handleLongPress() {
-  const obj = ActionSheetActionCreatorsDefault;
-  obj.openLazy(asyncRequire(19252, dependencyMap.paths), "CheckpointTestingActionSheet");
-}
 function CheckpointProfileEntrypointRow() {
+  let checkpointQAMode;
   let isFetching;
   let tmp5Result;
-  const obj = CheckpointExperiments;
-  const isCheckpointQAEnabled = obj.useIsCheckpointQAEnabled("CheckpointProfileEntrypoint");
+  let obj = checkpointQAMode(6572);
+  checkpointQAMode = obj.useCheckpointQAMode("CheckpointProfileEntrypoint");
+  let obj2 = checkpointQAMode(504);
   const items = [CheckpointStore];
-  const obj2 = get_initialized;
   const stateFromStores = obj2.useStateFromStores(items, () => isFetching.isFetching);
-  const TableRow = TableRow2.TableRow;
-  const intl = intl3.intl;
-  const intl2 = intl3.intl;
+  const TableRow = checkpointQAMode(7041).TableRow;
+  const intl = checkpointQAMode(1113).intl;
+  const intl2 = checkpointQAMode(1113).intl;
   if (stateFromStores) {
     tmp5Result = tmp5(ActivityIndicator, {});
   } else {
-    const obj4 = { IconComponent: ExperimentalCheckpointIcon.ExperimentalCheckpointIcon };
-    const Icon = tmp(7038).TableRow.Icon;
+    const obj4 = { IconComponent: checkpointQAMode(13661).ExperimentalCheckpointIcon };
+    const Icon = tmp(7041).TableRow.Icon;
     tmp5Result = tmp5(Icon, obj4);
   }
-  let tmp8;
-  if (isCheckpointQAEnabled) {
-    tmp8 = handleLongPress;
+  let fn;
+  if ("off" !== checkpointQAMode) {
+    fn = () => {
+      const obj = ActionSheetActionCreatorsDefault;
+      const obj2 = { mode: checkpointQAMode };
+      obj.openLazy(asyncRequire(19281, dependencyMap.paths), "CheckpointTestingActionSheet", obj2);
+    };
   }
-  return <TableRow label={intl.string(_modDef3248["8hclXY"])} subLabel={intl2.string(_modDef3248.BFc4lY)} icon={tmp5Result} onPress={handlePress} onLongPress={tmp8} arrow start end />;
+  return <TableRow label={intl.string(_modDef3248["8hclXY"])} subLabel={intl2.string(_modDef3248.BFc4lY)} icon={tmp5Result} onPress={handlePress} onLongPress={fn} arrow start end />;
 }
 const ActivityIndicator = react_native.ActivityIndicator;
 const jsx = Fragment.jsx;

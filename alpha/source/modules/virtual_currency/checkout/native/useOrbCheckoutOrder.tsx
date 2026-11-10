@@ -1,12 +1,12 @@
-// Module ID: 15331
-// Function ID: 15332
+// Module ID: 15356
+// Function ID: 15357
 // Name: useOrbCheckoutOrder
-// Dependencies: [5, 32, 19, 5872, 1083, 15332, 7690, 10798, 4953, 4960, 2]
+// Dependencies: [5, 32, 19, 5874, 1083, 15357, 7693, 10807, 4955, 4962, 2]
 // Exports: useOrbCheckoutOrder
 
-// Module 15331 (useOrbCheckoutOrder)
+// Module 15356 (useOrbCheckoutOrder)
 import Constants from "Constants" /* 1083 */;
-import PaymentConstants from "PaymentConstants" /* 5872 */;
+import PaymentConstants from "PaymentConstants" /* 5874 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -36,7 +36,7 @@ export function useOrbCheckoutOrder(skuId) {
   c3 = undefined;
   _slicedToArray = undefined;
   react = undefined;
-  let obj = isOrdersCheckout(15332);
+  let obj = isOrdersCheckout(15357);
   isOrdersCheckout = obj.useConfig({ location: "orb_checkout_modal" }).enabled;
   let tmp = _slicedToArray(react.useState(null), 2);
   [tmp2, c2] = tmp;

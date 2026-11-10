@@ -1,113 +1,125 @@
 // Module ID: 13093
 // Function ID: 13094
-// Dependencies: [13050, 13094]
+// Dependencies: []
 
 // Module 13093
-import tokenize from "tokenize" /* 13050 */;
-import tokenize2 from "tokenize" /* 13094 */;
-
-let obj2;
-function consumeRaw(arg0) {
-  return this.Raw(arg0, tokenize2.mode.leftCurlyBracketOrSemicolon, true);
-}
-function isDeclarationBlockAtrule() {
-  const scanner = this.scanner;
-  let lookupTypeResult = scanner.lookupType(1);
-  let num = 1;
-  if (lookupTypeResult) {
-    while (lookupTypeResult !== RightCurlyBracket) {
-      if (lookupTypeResult !== LeftCurlyBracket) {
-        if (lookupTypeResult !== AtKeyword) {
-          let sum = num + 1;
-          let scanner2 = this.scanner;
-          lookupTypeResult = scanner2.lookupType(sum);
-          num = sum;
-        }
-      }
-      let flag = false;
-      return false;
-    }
-    return true;
-  }
-  return false;
-}
-const AtKeyword = tokenize.TYPE.AtKeyword;
-const Semicolon = tokenize.TYPE.Semicolon;
-const LeftCurlyBracket = tokenize.TYPE.LeftCurlyBracket;
-const RightCurlyBracket = tokenize.TYPE.RightCurlyBracket;
+let closure_1 = Object.create(null);
+let closure_2 = Object.create(null);
 let obj = {
-  name: "Atrule",
-  structure: obj2,
-  parse() {
-    let AtrulePrelude;
-    let parseWithFallback;
-    let tmp13;
-    const self = this;
-    const tokenStart = this.scanner.tokenStart;
-    this.eat(AtKeyword);
-    const scanner = this.scanner;
-    const str = scanner.substrToCursor(tokenStart + 1);
-    const formatted = str.toLowerCase();
-    const scanner2 = this.scanner;
-    scanner2.skipSC();
-    let tmp7 = null;
-    const tmp4 = false === this.scanner.eof && self.scanner.tokenType !== LeftCurlyBracket && self.scanner.tokenType !== Semicolon;
-    if (tmp4) {
-      let callResult;
-      if (self.parseAtrulePrelude) {
-        ({ AtrulePrelude, parseWithFallback } = self);
-        const element = parseWithFallback(AtrulePrelude.bind(self, str), consumeRaw);
-        callResult = element;
-        const tmp10 = "AtrulePrelude" === element.type && null === element.children.head;
-        if (tmp10) {
-          callResult = null;
-        }
+  keyword: function getKeywordDescriptor(str) {
+    const obj = hasOwnProperty;
+    if (hasOwnProperty.call(closure_1, str)) {
+      return closure_1[str];
+    } else {
+      const formatted = str.toLowerCase();
+      if (obj.call(closure_1, formatted)) {
+        closure_1[str] = closure_1[formatted];
+        return closure_1[formatted];
       } else {
-        callResult = consumeRaw.call(self, self.scanner.tokenIndex);
-      }
-      const scanner3 = self.scanner;
-      scanner3.skipSC();
-      tmp7 = callResult;
-    }
-    const tokenType = self.scanner.tokenType;
-    if (Semicolon === tokenType) {
-      const iter = self.scanner;
-      iter.next();
-      tmp13 = null;
-    } else {
-      tmp13 = null;
-      if (LeftCurlyBracket === tokenType) {
-        const atrule = self.atrule;
-        if (atrule.hasOwnProperty(formatted)) {
-          let callResult1;
-          if (typeof self.atrule[formatted].block === "function") {
-            const block = self.atrule[formatted].block;
-            callResult1 = block.call(self);
-          }
-          tmp13 = callResult1;
+        let tmp2 = length >= 2;
+        if (2 <= formatted.length) {
+          tmp2 = 45 === formatted.charCodeAt(0);
         }
-        callResult1 = self.Block(isDeclarationBlockAtrule.call(self));
+        if (tmp2) {
+          tmp2 = 45 === formatted.charCodeAt(1);
+        }
+        let str2 = "";
+        if (!tmp2) {
+          let str3 = "";
+          if (3 <= formatted.length) {
+            str3 = "";
+            if (45 === formatted.charCodeAt(0)) {
+              str3 = "";
+              if (45 !== formatted.charCodeAt(1)) {
+                const index = formatted.indexOf("-", 2);
+                str3 = "";
+                if (-1 !== index) {
+                  str3 = formatted.substring(0, index + 1);
+                }
+              }
+            }
+          }
+          str2 = str3;
+        }
+        const _Object = Object;
+        const obj2 = { basename: formatted.substr(str2.length), name: formatted, vendor: str2, prefix: str2, custom: tmp2 };
+        const freezeResult = freeze(obj2);
+        closure_1[str] = freezeResult;
+        return freezeResult;
       }
     }
-    const obj = { type: "Atrule", loc: self.getLocation(tokenStart, self.scanner.tokenStart), name: str, prelude: tmp7, block: tmp13 };
-    return obj;
   },
-  generate(name) {
-    const self = this;
-    this.chunk("@");
-    this.chunk(name.name);
-    if (null !== name.prelude) {
-      self.chunk(" ");
-      self.node(name.prelude);
-    }
-    if (name.block) {
-      self.node(name.block);
+  property: function getPropertyDescriptor(str) {
+    const obj = hasOwnProperty;
+    if (hasOwnProperty.call(closure_2, str)) {
+      return closure_2[str];
     } else {
-      self.chunk(";");
+      str = str[0];
+      let str2 = "/";
+      if ("/" === str) {
+        if (`/` === str[1]) {
+          str2 = "//";
+        }
+        str = str2;
+      } else {
+        const tmp2 = "_" !== str && "*" !== str && "$" !== str && "#" !== str && "+" !== str && "&" !== str;
+        if (tmp2) {
+          str = "";
+        }
+      }
+      const tmp4 = str.length - tmp3 >= 2 && 45 === str.charCodeAt(tmp3) && 45 === str.charCodeAt(tmp3 + 1);
+      let arr = str;
+      if (!tmp4) {
+        const formatted = str.toLowerCase();
+        arr = formatted;
+        if (obj.call(closure_2, formatted)) {
+          closure_2[str] = closure_2[formatted];
+          return closure_2[formatted];
+        }
+      }
+      let str10 = "";
+      if (!tmp4) {
+        let str11 = "";
+        if (arr.length - (str.length || 0) >= 3) {
+          str11 = "";
+          if (45 === arr.charCodeAt(str.length || 0)) {
+            str11 = "";
+            if (45 !== arr.charCodeAt((str.length || 0) + 1)) {
+              const index = arr.indexOf("-", tmp7 + 2);
+              str11 = "";
+              if (-1 !== index) {
+                str11 = arr.substring(tmp7, index + 1);
+              }
+            }
+          }
+        }
+        str10 = str11;
+      }
+      const substr = arr.substr(0, str.length + str10.length);
+      const _Object = Object;
+      const obj2 = { basename: arr.substr(substr.length), name: arr.substr(str.length), hack: str, vendor: str10, prefix: substr, custom: tmp4 };
+      const freezeResult = freeze(obj2);
+      closure_2[str] = freezeResult;
+      return freezeResult;
     }
   },
-  walkContext: "atrule"
+  isCustomProperty(callResult, arg1) {
+    const tmp2 = callResult.length - tmp >= 2 && 45 === callResult.charCodeAt(tmp) && 45 === callResult.charCodeAt(tmp + 1);
+    return tmp2;
+  },
+  vendorPrefix: function getVendorPrefix(str, arg1) {
+    if (str.length - (arg1 || 0) >= 3) {
+      if (45 === str.charCodeAt(arg1 || 0)) {
+        if (45 !== str.charCodeAt((arg1 || 0) + 1)) {
+          const index = str.indexOf("-", tmp + 2);
+          if (-1 !== index) {
+            return str.substring(arg1 || 0, index + 1);
+          }
+        }
+      }
+    }
+    return "";
+  }
 };
-obj2 = { name: String, prelude: ["AtrulePrelude", "Raw", null], block: ["Block", null] };
 
 export default obj;

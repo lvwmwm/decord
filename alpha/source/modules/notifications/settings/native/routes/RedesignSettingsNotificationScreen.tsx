@@ -1,20 +1,20 @@
-// Module ID: 18294
-// Function ID: 18295
+// Module ID: 18323
+// Function ID: 18324
 // Name: RedesignSettingsNotificationScreen
-// Dependencies: [19, 17797, 8503, 21, 18295, 1113, 2992, 17798, 11685, 17800, 5721, 18296, 18300, 2]
+// Dependencies: [19, 17824, 8507, 21, 18324, 1113, 2992, 17825, 11694, 17827, 5723, 18325, 18329, 2]
 
-// Module 18294 (RedesignSettingsNotificationScreen)
+// Module 18323 (RedesignSettingsNotificationScreen)
 import Fragment from "Fragment" /* 21 */;
 import intl3 from "intl" /* 1113 */;
 import _modDef2992 from "module_2992" /* 2992 */;
-import useMountEffectDefault from "useMountEffect" /* 5721 */;
-import SettingsConstants from "SettingsConstants" /* 8503 */;
-import SettingBuilders from "SettingBuilders" /* 11685 */;
-import AndroidNotificationSettingsStore from "AndroidNotificationSettingsStore" /* 17797 */;
-import ContextualOptInNudgeHoldoutExperimentDefault from "ContextualOptInNudgeHoldoutExperiment" /* 17798 */;
-import NotificationPermissionSettingsHeaderDefault from "NotificationPermissionSettingsHeader" /* 17800 */;
-import MobileNotifSettingsRouteBuilders from "MobileNotifSettingsRouteBuilders" /* 18295 */;
-import EffectiveNotifSettingsLayoutDefault from "EffectiveNotifSettingsLayout" /* 18300 */;
+import useMountEffectDefault from "useMountEffect" /* 5723 */;
+import SettingsConstants from "SettingsConstants" /* 8507 */;
+import SettingBuilders from "SettingBuilders" /* 11694 */;
+import AndroidNotificationSettingsStore from "AndroidNotificationSettingsStore" /* 17824 */;
+import ContextualOptInNudgeHoldoutExperimentDefault from "ContextualOptInNudgeHoldoutExperiment" /* 17825 */;
+import NotificationPermissionSettingsHeaderDefault from "NotificationPermissionSettingsHeader" /* 17827 */;
+import MobileNotifSettingsRouteBuilders from "MobileNotifSettingsRouteBuilders" /* 18324 */;
+import EffectiveNotifSettingsLayoutDefault from "EffectiveNotifSettingsLayout" /* 18329 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

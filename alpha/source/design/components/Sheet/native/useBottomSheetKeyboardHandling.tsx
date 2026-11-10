@@ -1,11 +1,11 @@
-// Module ID: 7173
-// Function ID: 7174
+// Module ID: 7176
+// Function ID: 7177
 // Name: useBottomSheetKeyboardHandling
-// Dependencies: [19, 5392, 2]
+// Dependencies: [19, 5394, 2]
 // Exports: default
 
-// Module 7173 (useBottomSheetKeyboardHandling)
-import BottomSheetModal from "BottomSheetModal" /* 5392 */;
+// Module 7176 (useBottomSheetKeyboardHandling)
+import BottomSheetModal from "BottomSheetModal" /* 5394 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

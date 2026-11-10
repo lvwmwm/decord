@@ -1,17 +1,17 @@
-// Module ID: 5725
-// Function ID: 5726
+// Module ID: 5727
+// Function ID: 5728
 // Name: Sheet/BottomSheetBackdrop
-// Dependencies: [19, 21, 5140, 5392, 5420, 1705, 1652, 5726, 2]
+// Dependencies: [19, 21, 5142, 5394, 5422, 1705, 1652, 5728, 2]
 
-// Module 5725 (Sheet/BottomSheetBackdrop)
+// Module 5727 (Sheet/BottomSheetBackdrop)
 import Fragment from "Fragment" /* 21 */;
 import _mod1652 from "module_1652" /* 1652 */;
 import _mod1705 from "module_1705" /* 1705 */;
-import BottomSheetModal from "BottomSheetModal" /* 5392 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5420 */;
-import Backdrop from "Backdrop" /* 5726 */;
+import BottomSheetModal from "BottomSheetModal" /* 5394 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5422 */;
+import Backdrop from "Backdrop" /* 5728 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5140 */;
+import createStyles from "createStyles" /* 5142 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
@@ -127,7 +127,7 @@ const memoResult = react.memo(function BottomSheetBackdropComponent(opacity) {
   const tmp20 = jsx;
   if ("none" !== str) {
     const obj3 = { gesture: onEndResult, children: tmp21 };
-    tmp20Result = tmp20(tmp2(5420).GestureDetector, obj3);
+    tmp20Result = tmp20(tmp2(5422).GestureDetector, obj3);
   }
   return tmp20Result;
 });

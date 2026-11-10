@@ -1,25 +1,47 @@
-// Module ID: 12288
-// Function ID: 12289
+// Module ID: 12297
+// Function ID: 12298
 // Name: useConjureShareToServer
-// Dependencies: [5, 32, 19, 5072, 6899, 10987, 1072, 6900, 504, 12289, 1113, 4026, 11074, 10996, 12260, 10994, 2]
+// Dependencies: [5, 32, 19, 5074, 6902, 10996, 1072, 504, 12298, 1113, 4028, 11083, 11005, 6903, 12269, 11003, 2]
 // Exports: default
 
-// Module 12288 (useConjureShareToServer)
+// Module 12297 (useConjureShareToServer)
 import Constants from "Constants" /* 1072 */;
-import ConjureProjectStore2 from "ConjureProjectStore" /* 6899 */;
-import ConjureProjectTypes from "ConjureProjectTypes" /* 6900 */;
-import ConjurePublishTypes from "ConjurePublishTypes" /* 10994 */;
+import ConjureProjectStore2 from "ConjureProjectStore" /* 6902 */;
+import ConjurePublishTypes from "ConjurePublishTypes" /* 11003 */;
+import ConjureActionCreators from "ConjureActionCreators" /* 11005 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import PermissionStore from "PermissionStore" /* 5072 */;
-import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 10987 */;
+import PermissionStore_mod from "PermissionStore" /* 5074 */;
+import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 10996 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 const ConjureProjectStore = ConjureProjectStore2;
-let _require, c4, c5, importDefault;
+let _require, c4, c5;
 
+function refreshUntilBotJoins(arg0, arg1) {
+  const f102622 = () => {
+    const integrationStatus = ConjureProjectStore.getIntegrationStatus(closure_0);
+    let prop;
+    if (integrationStatus != null) {
+      prop = integrationStatus.integration_installed;
+    }
+    if (true !== prop) {
+      obj = ConjureActionCreators;
+      const result = obj.refreshConjureInstallState(tmp);
+      if (1 < c1) {
+        closure_0 = tmp;
+        let closure_1 = tmp7 - 1;
+        const _setTimeout = setTimeout;
+        const timerId = setTimeout(f102622, 1500);
+      }
+    }
+  };
+  let closure_0 = arg0;
+  let c1 = 6;
+  let timerId = setTimeout(f102622, 1500);
+}
 let obj = function _waitForPublishStatus() {
   obj = _asyncToGenerator(async function(arg0, value) {
     let closure_0 = arg0;
@@ -100,25 +122,24 @@ function isPublishable(id) {
   return canPublishResult;
 }
 let _slicedToArray = _slicedToArray_mod;
+let PermissionStore = PermissionStore_mod;
 const isProjectOwner = ConjureProjectStore2.isProjectOwner;
 const Permissions = Constants.Permissions;
-let items = [ConjureProjectTypes.ConjureSupportedSurface.PROFILE_WIDGET, ConjureProjectTypes.ConjureSupportedSurface.OVERLAY];
-const result = size.fileFinishedImporting("modules/conjure/server_share/useConjureShareToServer.tsx");
+let result = size.fileFinishedImporting("modules/conjure/server_share/useConjureShareToServer.tsx");
 
 export default function useConjureShareToServer(arg0, arg1, arg2) {
-  let closure_1;
   let closure_4;
   let conjureEligibleGuilds;
   let error;
   let guild;
-  let tmp23;
-  let tmp25;
+  let tmp13;
+  let tmp15;
   _require = arg0;
-  importDefault = arg2;
-  const tmp2 = _require;
-  const tmp3 = conjureEligibleGuilds;
+  let closure_1 = arg2;
+  let tmp = _require;
+  const tmp2 = conjureEligibleGuilds;
   obj = require("get initialized");
-  items = [ConjureProjectStore];
+  const items = [ConjureProjectStore];
   const items1 = [arg0];
   const stateFromStores = obj.useStateFromStores(items, () => ConjureProjectStore.getProject(closure_0), items1);
   let obj2 = require("get initialized");
@@ -136,23 +157,24 @@ export default function useConjureShareToServer(arg0, arg1, arg2) {
   conjureEligibleGuilds = obj3.useConjureEligibleGuilds("ConjureShareToServer");
   let available = null != stateFromStores;
   if (available) {
+    let str = "user";
     available = "user" === stateFromStores.install_scope;
   }
   if (available) {
     available = null == stateFromStores.install_scope_setup;
   }
   if (available) {
-    const tmp8 = isProjectOwner;
     available = isProjectOwner(stateFromStores);
   }
   const items4 = [PermissionStore];
   const items5 = [conjureEligibleGuilds];
-  const tmp2Result = tmp2(tmp3[8]);
-  const guilds = tmp2Result.useStateFromStoresArray(items4, () => conjureEligibleGuilds.filter((item) => closure_1_6.can(constants.MANAGE_GUILD, item)), items5);
+  const tmpResult = tmp(tmp2[7]);
+  const guilds = tmpResult.useStateFromStoresArray(items4, () => conjureEligibleGuilds.filter((item) => closure_1_6.can(constants.MANAGE_GUILD, item)), items5);
   let obj5 = guild;
-  const tmp10 = _slicedToArray(guild.useState(null), 2);
-  _slicedToArray = tmp10[1];
-  const items6 = [tmp10[0], , ];
+  const tmp8 = _slicedToArray;
+  const tmp9 = _slicedToArray(guild.useState(null), 2);
+  _slicedToArray = tmp9[1];
+  const items6 = [tmp9[0], , ];
   let guild_id;
   if (stateFromStores != null) {
     guild_id = stateFromStores.guild_id;
@@ -170,45 +192,27 @@ export default function useConjureShareToServer(arg0, arg1, arg2) {
   if (guild == null) {
     guild = null;
   }
-  let blockedReason = null;
-  if (null != stateFromStores) {
-    let supported_surfaces = stateFromStores.supported_surfaces;
-    if (supported_surfaces == null) {
-      supported_surfaces = [];
-    }
-    const items7 = [];
-    const tmp14 = items7;
-    const arraySpreadResult = HermesBuiltin.arraySpread(items7, supported_surfaces, 0);
-    let prop = stateFromStores.preview_supported_surfaces;
-    if (prop == null) {
-      prop = [];
-    }
-    HermesBuiltin.arraySpread(items7, prop, arraySpreadResult);
-    blockedReason = null;
-    if (items7.some((item) => items.includes(item))) {
-      let intl = tmp2(tmp3[10]).intl;
-      blockedReason = intl.string(require("module_4026")["/Ow58q"]);
-    }
-  }
-  [tmp23, PermissionStore] = _slicedToArray(obj5.useState(false), 2);
-  _slicedToArray(obj5.useState(false), 2);
-  [tmp25, ConjureProjectStore] = _slicedToArray(obj5.useState(null), 2);
-  _slicedToArray(obj5.useState(null), 2);
+  [tmp13, PermissionStore] = tmp8(obj5.useState(false), 2);
+  tmp8(obj5.useState(false), 2);
+  [tmp15, ConjureProjectStore] = tmp8(obj5.useState(null), 2);
+  tmp8(obj5.useState(null), 2);
   const pickGuild = obj5.useCallback((arg0) => {
     closure_4(arg0);
     ConjureProjectStore(null);
   }, []);
-  const items8 = [guild, arg0];
+  const items7 = [guild, arg0];
   const share = obj5.useCallback(guilds(function*(arg0, value) {
     let closure_2;
-    let tmp45Result2;
+    let obj19;
+    let publishStatus;
+    let tmp43;
     function waitForPublishStatus() {
       return closure_1_12(...arguments);
     }
     if (c5 === 2) {
       c5 = 3;
       throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp4 === 3) {
+    } else if (tmp3 === 3) {
       if (arg0 === 1) {
         throw value;
       } else if (arg0 === 2) {
@@ -223,7 +227,8 @@ export default function useConjureShareToServer(arg0, arg1, arg2) {
         let tmp;
         let message;
         let error;
-        let testAppReady;
+        let project2;
+        let closure_5;
         let c0;
         c5 = 2;
         if (0 === c4) {
@@ -238,9 +243,11 @@ export default function useConjureShareToServer(arg0, arg1, arg2) {
             tmp = undefined;
             message = undefined;
             error = undefined;
-            testAppReady = undefined;
-            const intl = tmp2(conjureEligibleGuilds[10]).intl;
-            const stringResult = intl.string(tmp(conjureEligibleGuilds[11]).qDjkvv);
+            project2 = undefined;
+            closure_5 = undefined;
+            PermissionStore = undefined;
+            const intl = tmp43(conjureEligibleGuilds[9]).intl;
+            const stringResult = intl.string(tmp(conjureEligibleGuilds[10]).qDjkvv);
             c0 = stringResult;
             if (null == guild) {
               const obj4 = { shared: false, error: stringResult };
@@ -250,98 +257,133 @@ export default function useConjureShareToServer(arg0, arg1, arg2) {
             } else {
               PermissionStore(true);
               ConjureProjectStore(null);
-              const tmp45Result = tmp2(conjureEligibleGuilds[12]);
-              tmp = tmp45Result.nextConjurePreviewAppPublished(tmp2, 30000);
+              const obj18 = tmp43(conjureEligibleGuilds[11]);
+              tmp = obj18.nextConjurePreviewAppPublished(tmp43, 30000);
               c3 = 1;
-              c4 = 3;
+              c4 = 2;
               c5 = 1;
-              const obj6 = { value: tmp45Result2.shareConjureProject(tmp2, tmp49.id), done: false };
-              tmp45Result2 = tmp2(conjureEligibleGuilds[13]);
+              const obj6 = { value: obj19.shareConjureProject(tmp43, tmp70.id), done: false };
+              obj19 = tmp43(conjureEligibleGuilds[12]);
               return obj6;
             }
           }
-        } else if (1 === c4) {
-          let tmp24;
-          c3 = 0;
-          let body = conjureEligibleGuilds;
-          tmp.cancel();
-          message = undefined;
-          if (body != null) {
-            body = body.body;
-            if (body != null) {
-              message = body.message;
-            }
-          }
-          if (typeof message === "string") {
-            tmp24 = message;
-          } else {
-            tmp24 = c0;
-          }
-          error = tmp24;
-          closure_129_7(error);
-          closure_129_6(false);
-          const obj7 = { shared: false, error };
-          c5 = 3;
-          const obj8 = { value: obj7, done: true };
-          return obj8;
         } else {
-          if (2 === c4) {
+          let project;
+          if (1 === c4) {
+            let tmp41;
+            c3 = 0;
+            project = conjureEligibleGuilds;
+            tmp.cancel();
+            message = undefined;
+            if (project != null) {
+              const body = project.body;
+              if (body != null) {
+                message = body.message;
+              }
+            }
+            if (typeof message === "string") {
+              tmp41 = message;
+            } else {
+              tmp41 = c0;
+            }
+            error = tmp41;
+            tmp43 = closure_129_7;
+            closure_129_7(error);
+            closure_129_6(false);
+            const obj7 = { shared: false, error };
+            c5 = 3;
+            const obj8 = { value: obj7, done: true };
+            return obj8;
+          } else if (2 === c4) {
             if (arg0 === 1) {
               c5 = 3;
               throw value;
             } else if (arg0 === 2) {
+              c3 = 0;
               c5 = 3;
               const obj9 = { value, done: true };
               return obj9;
-            } else if (value) {
-              c4 = 4;
-              c5 = 1;
-              const obj10 = { value: waitForPublishStatus(closure_129_0), done: false };
-              return obj10;
-            }
-          } else if (3 === c4) {
-            if (arg0 === 1) {
-              c5 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c3 = 0;
-              c5 = 3;
-              const obj11 = { value, done: true };
-              return obj11;
             } else {
               c3 = 0;
-              c4 = 2;
+              tmp43 = project;
+              project2 = project.getProject(closure_129_0);
+              if (null != project2) {
+                const obj17 = tmp43(conjureEligibleGuilds[13]);
+                if (!obj17.usesPreviewApp(project2)) {
+                  tmp.cancel();
+                  closure_129_6(false);
+                  publishStatus = publishStatus.getPublishStatus(closure_129_0);
+                  let publishState;
+                  if (publishStatus != null) {
+                    publishState = publishStatus.publishState;
+                  }
+                  closure_5 = "not_live" === publishState;
+                  const tmp24 = closure_5;
+                  if (!tmp24) {
+                    refreshUntilBotJoins(closure_129_0, 6);
+                  }
+                  let str2 = "added";
+                  if (closure_5) {
+                    str2 = "publish";
+                  }
+                  const obj10 = { shared: true, next: str2 };
+                  c5 = 3;
+                  const obj11 = { value: obj10, done: true };
+                  return obj11;
+                }
+              }
+              c4 = 3;
               c5 = 1;
               const obj12 = { value: tmp.published, done: false };
               return obj12;
             }
-          } else if (arg0 === 1) {
+          } else {
+            if (3 === c4) {
+              if (arg0 === 1) {
+                c5 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c5 = 3;
+                const obj13 = { value, done: true };
+                return obj13;
+              } else if (value) {
+                c4 = 4;
+                c5 = 1;
+                const obj14 = { value: waitForPublishStatus(closure_129_0), done: false };
+                return obj14;
+              }
+            } else if (arg0 === 1) {
+              c5 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c5 = 3;
+              obj = { value, done: true };
+              return obj;
+            }
+            PermissionStore = value;
+            closure_129_6(false);
+            let str = "await_test_app";
+            if (PermissionStore) {
+              str = "publish";
+            }
+            const obj15 = { shared: true, next: str };
             c5 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c5 = 3;
-            obj = { value, done: true };
-            return obj;
+            const obj16 = { value: obj15, done: true };
+            return obj16;
           }
-          testAppReady = value;
-          closure_129_6(false);
-          const obj13 = { shared: true, testAppReady };
-          c5 = 3;
-          const obj14 = { value: obj13, done: true };
-          return obj14;
         }
-      } catch (tmp38) {
-        conjureEligibleGuilds = tmp38;
+      } catch (tmp49) {
+        conjureEligibleGuilds = tmp49;
         if (0 === c3) {
           c5 = 3;
-          throw tmp38;
+          throw tmp49;
         } else {
           c4 = 1;
         }
       }
     }
-  }), items8);
-  const items9 = [guild, arg0, arg2];
+  }), items7);
+  const items8 = [guild, arg0, arg2];
   const publish = obj5.useCallback(guilds(function*(arg0, value) {
     let c2;
     let v3;
@@ -403,12 +445,12 @@ export default function useConjureShareToServer(arg0, arg1, arg2) {
         }
       }
     }
-  }), items9);
+  }), items8);
   if (available) {
     available = stateFromStores1;
   }
   if (available) {
     available = guilds.length > 0;
   }
-  return { available, guilds, guild, pickGuild, blockedReason, sharing, error, share, publish };
+  return { available, guilds, guild, pickGuild, sharing, error, share, publish };
 };

@@ -1,15 +1,15 @@
-// Module ID: 14211
-// Function ID: 14212
+// Module ID: 14237
+// Function ID: 14238
 // Name: MultiAccountStore
-// Dependencies: [14212, 14213, 1098, 14214, 504, 572, 2]
+// Dependencies: [14238, 14239, 1098, 14240, 504, 572, 2]
 
-// Module 14211 (MultiAccountStore)
+// Module 14237 (MultiAccountStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import TokenManagerAll from "TokenManager" /* 1098 */;
-import Constants from "Constants" /* 14212 */;
-import isStaffFromRawUserDefault from "isStaffFromRawUser" /* 14213 */;
-import DragAndDropUtils from "DragAndDropUtils" /* 14214 */;
+import Constants from "Constants" /* 14238 */;
+import isStaffFromRawUserDefault from "isStaffFromRawUser" /* 14239 */;
+import DragAndDropUtils from "DragAndDropUtils" /* 14240 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5, canUseMultiAccountMobile;
@@ -40,6 +40,15 @@ class MultiAccountStore extends PersistedStore {
   }
   getValidUsers() {
     return users.filter((tokenStatus) => tokenStatus.tokenStatus !== constants.INVALID);
+  }
+  getLastChannelId(id) {
+    let closure_0 = id;
+    const found = users.find((id) => id.id === closure_0);
+    let lastChannelId;
+    if (found != null) {
+      lastChannelId = found.lastChannelId;
+    }
+    return lastChannelId;
   }
   getHasLoggedInAccounts() {
     return users.length > 0;
@@ -111,6 +120,19 @@ let obj2 = {
       users = users.filter((id) => id.id !== closure_1_4);
     }
     c4 = null;
+  },
+  MULTI_ACCOUNT_SWITCH_START: function handleSwitchStart(lastChannelId) {
+    let closure_8;
+    lastChannelId = lastChannelId.lastChannelId;
+    users = users.map((id) => {
+      let tmp = id;
+      if (id.id === c4) {
+        const obj = { lastChannelId };
+        const merged = Object.assign(id);
+        tmp = obj;
+      }
+      return tmp;
+    });
   },
   MULTI_ACCOUNT_VALIDATE_TOKEN_REQUEST(userId) {
     userId = userId.userId;

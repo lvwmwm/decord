@@ -1,21 +1,21 @@
-// Module ID: 19205
-// Function ID: 19206
+// Module ID: 19234
+// Function ID: 19235
 // Name: AddFriendsContactSyncEmptyState
-// Dependencies: [19, 17, 21, 5140, 575, 19206, 5751, 1113, 14487, 5758, 14483, 2]
+// Dependencies: [19, 17, 21, 5142, 575, 19235, 5753, 1113, 14513, 5760, 14509, 2]
 // Exports: default
 
-// Module 19205 (AddFriendsContactSyncEmptyState)
+// Module 19234 (AddFriendsContactSyncEmptyState)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5751 */;
-import components_Button_Button from "components/Button/Button" /* 5758 */;
-import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 14483 */;
-import ContactSyncUtils from "ContactSyncUtils" /* 14487 */;
-import CompassSpotIllustration from "CompassSpotIllustration" /* 19206 */;
+import Text_Text from "Text/Text" /* 5753 */;
+import components_Button_Button from "components/Button/Button" /* 5760 */;
+import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 14509 */;
+import ContactSyncUtils from "ContactSyncUtils" /* 14513 */;
+import CompassSpotIllustration from "CompassSpotIllustration" /* 19235 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5142 */;
 import size from "module_2" /* 2 */;
 
 let c3;

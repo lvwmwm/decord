@@ -1,16 +1,16 @@
-// Module ID: 14236
-// Function ID: 14237
+// Module ID: 14262
+// Function ID: 14263
 // Name: useVoicePanelDockLevelProps
-// Dependencies: [19, 4989, 2130, 5043, 6811, 1072, 13960, 504, 12136, 7598, 2]
+// Dependencies: [19, 4991, 2130, 5045, 6814, 1072, 13985, 504, 12145, 7601, 2]
 // Exports: useVoicePanelDockGlowLevelProps, useVoicePanelDockSpeakerLevelProps
 
-// Module 14236 (useVoicePanelDockLevelProps)
+// Module 14262 (useVoicePanelDockLevelProps)
 import Constants from "Constants" /* 1072 */;
 import MediaEngineStore2 from "MediaEngineStore" /* 2130 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4989 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5043 */;
-import SpeakingStore from "SpeakingStore" /* 6811 */;
+import ChannelStore from "ChannelStore" /* 4991 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5045 */;
+import SpeakingStore from "SpeakingStore" /* 6814 */;
 import size from "module_2" /* 2 */;
 
 const MediaEngineStore = MediaEngineStore2;
@@ -27,13 +27,13 @@ export function useVoicePanelDockGlowLevelProps() {
   let num;
   let voiceChannelId;
   let tmp;
-  let obj = num(13960);
+  let obj = num(13985);
   const shouldAnimateSpeakerLevels = obj.useShouldAnimateSpeakerLevels("VoicePanelDock");
   const items = [SelectedChannelStore, ChannelStore];
   const obj2 = num(504);
   const stateFromStores = obj2.useStateFromStores(items, () => channel.getChannel(voiceChannelId.getVoiceChannelId()));
-  const obj3 = num(12136);
-  const mute = obj3.createMuteHandler(floorDb(7598)(stateFromStores)).mute;
+  const obj3 = num(12145);
+  const mute = obj3.createMuteHandler(floorDb(7601)(stateFromStores)).mute;
   const items1 = [MediaEngineStore, SpeakingStore];
   const obj4 = num(504);
   const stateFromStoresObject = obj4.useStateFromStoresObject(items1, () => {
@@ -67,7 +67,7 @@ export function useVoicePanelDockGlowLevelProps() {
 }
 export function useVoicePanelDockSpeakerLevelProps() {
   let shouldAnimateSpeakerLevels;
-  let obj = shouldAnimateSpeakerLevels(13960);
+  let obj = shouldAnimateSpeakerLevels(13985);
   shouldAnimateSpeakerLevels = obj.useShouldAnimateSpeakerLevels("VoicePanelDock");
   const items = [shouldAnimateSpeakerLevels];
   return react.useMemo(() => {

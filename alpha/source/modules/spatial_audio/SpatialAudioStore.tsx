@@ -1,38 +1,47 @@
-// Module ID: 6048
-// Function ID: 6049
+// Module ID: 6050
+// Function ID: 6051
 // Name: SpatialAudioStore
-// Dependencies: [1246, 2130, 5893, 6049, 5897, 12, 510, 6050, 504, 5918, 572, 2]
+// Dependencies: [1246, 2130, 5895, 6051, 5899, 12, 510, 6052, 504, 5920, 572, 2]
 
-// Module 6048 (SpatialAudioStore)
+// Module 6050 (SpatialAudioStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import Storage2 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import SpatialAudioConstants from "SpatialAudioConstants" /* 6049 */;
-import SpatialAudioForVoiceExperimentDefault from "SpatialAudioForVoiceExperiment" /* 6050 */;
+import SpatialAudioForVoiceExperimentDefault from "SpatialAudioForVoiceExperiment" /* 6052 */;
 import ApexExperimentStore from "ApexExperimentStore" /* 1246 */;
 import MediaEngineStore from "MediaEngineStore" /* 2130 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5893 */;
-import Constants from "Constants" /* 5897 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5895 */;
+import SpatialAudioConstants from "SpatialAudioConstants" /* 6051 */;
+import Constants from "Constants" /* 5899 */;
 import module_12 from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 
 let SpatialAudioStatus;
+let c9;
 let metroImportAll;
-let metroImportDefault;
 function applyActiveOptions(arg0) {
+  let enabled;
+  let positioningModel;
   let flag = arg0;
   if (arg0 === undefined) {
     flag = false;
   }
   let isSpatial2;
+  obj = SpatialAudioForVoiceExperimentDefault;
+  const config = obj.getConfig({ location: "SpatialAudioStore" });
+  ({ enabled, positioningModel } = config);
   const merge = module_12.merge;
   module_12;
-  obj = module_12;
-  const cloneDeepResult = obj.cloneDeep(DEFAULT_SPATIAL_AUDIO_OPTIONS);
   const obj2 = module_12;
-  mergeResult = merge(cloneDeepResult, obj2.cloneDeep(isSpatial));
-  const obj3 = SpatialAudioForVoiceExperimentDefault;
-  let enabled = obj3.getConfig({ location: "SpatialAudioStore" }).enabled;
+  const cloneDeepResult = obj2.cloneDeep(DEFAULT_SPATIAL_AUDIO_OPTIONS);
+  const mediaEngine = MediaEngineStore.getMediaEngine();
+  let str = "";
+  if (mediaEngine.getSpatialAudioVersion() >= MIN_POSITIONING_SPATIAL_AUDIO_VERSION) {
+    str = positioningModel;
+  }
+  const obj4 = { positioning: { model: str } };
+  const tmpResult = module_12;
+  map1 = merge(cloneDeepResult, obj4, tmpResult.cloneDeep(isSpatial));
   isSpatial = isSpatial.isSpatial;
   if (isSpatial == null) {
     if (enabled) {
@@ -45,22 +54,22 @@ function applyActiveOptions(arg0) {
     isSpatial = enabled;
   }
   if (isSpatial) {
-    isSpatial = MediaEngineStore.supports(metroImportDefault.SPATIAL_AUDIO);
+    isSpatial = obj3.supports(metroImportAll.SPATIAL_AUDIO);
   }
-  mergeResult.isSpatial = isSpatial;
+  map1.isSpatial = isSpatial;
   if (!flag) {
-    const tmpResult = module_12;
-    if (tmpResult.isEqual(mergeResult, mergeResult)) {
+    const tmpResult2 = module_12;
+    if (tmpResult2.isEqual(map1, map1)) {
       return false;
     }
   }
-  isSpatial2 = mergeResult.isSpatial;
-  const mediaEngine = MediaEngineStore.getMediaEngine();
-  mediaEngine.setAudioMixerOptions(mergeResult);
+  isSpatial2 = map1.isSpatial;
+  const mediaEngine1 = obj3.getMediaEngine();
+  mediaEngine1.setAudioMixerOptions(map1);
   if (!isSpatial2) {
     UNKNOWN = SpatialAudioStatus.UNKNOWN;
   }
-  mediaEngine.eachConnection((setSpatialAudioEnabled) => setSpatialAudioEnabled.setSpatialAudioEnabled(isSpatial2), metroImportAll.DEFAULT);
+  mediaEngine1.eachConnection((setSpatialAudioEnabled) => setSpatialAudioEnabled.setSpatialAudioEnabled(isSpatial2), constants2.DEFAULT);
   const rTCConnection = RTCConnectionStore.getRTCConnection();
   if (rTCConnection != null) {
     const result = rTCConnection.setSpatialAudioEnabled(isSpatial2);
@@ -85,10 +94,11 @@ function handleExperimentChange() {
   return tmp;
 }
 const DEFAULT_SPATIAL_AUDIO_OPTIONS = SpatialAudioConstants.DEFAULT_SPATIAL_AUDIO_OPTIONS;
-({ Features: metroImportDefault, MediaEngineContextTypes: metroImportAll, SpatialAudioStatus } = Constants);
+const MIN_POSITIONING_SPATIAL_AUDIO_VERSION = SpatialAudioConstants.MIN_POSITIONING_SPATIAL_AUDIO_VERSION;
+({ Features: metroImportAll, MediaEngineContextTypes: c9, SpatialAudioStatus } = Constants);
 let obj = {};
 let isSpatial = {};
-let mergeResult = module_12.cloneDeep(DEFAULT_SPATIAL_AUDIO_OPTIONS);
+let map1 = module_12.cloneDeep(DEFAULT_SPATIAL_AUDIO_OPTIONS);
 let UNKNOWN = SpatialAudioStatus.UNKNOWN;
 let defaultOn = false;
 const DeviceSettingsStore = get_initializedDefault.DeviceSettingsStore;
@@ -99,13 +109,13 @@ class SpatialAudioStore extends DeviceSettingsStore {
     if (enabled != null) {
       enabled = enabled.enabled;
     }
-    let closure_10 = { enabled };
+    let closure_11 = { enabled };
     self.waitFor(ApexExperimentStore, MediaEngineStore, RTCConnectionStore);
     const items = [ApexExperimentStore];
     self.syncWith(items, handleExperimentChange);
     const mediaEngine = MediaEngineStore.getMediaEngine();
-    mediaEngine.on(self(5918).MediaEngineEvent.Connection, (setSpatialAudioEnabled) => setSpatialAudioEnabled.setSpatialAudioEnabled(isSpatial.isSpatial));
-    mediaEngine.on(self(5918).MediaEngineEvent.SpatialAudioStatus, (arg0) => {
+    mediaEngine.on(self(5920).MediaEngineEvent.Connection, (setSpatialAudioEnabled) => setSpatialAudioEnabled.setSpatialAudioEnabled(isSpatial.isSpatial));
+    mediaEngine.on(self(5920).MediaEngineEvent.SpatialAudioStatus, (arg0) => {
       let flag = arg0 !== UNKNOWN;
       if (flag) {
         UNKNOWN = arg0;
@@ -130,16 +140,24 @@ class SpatialAudioStore extends DeviceSettingsStore {
     return enabled;
   }
   isSpatialAudioActive() {
-    return mergeResult.isSpatial;
+    return map1.isSpatial;
   }
   getActiveSpatialAudioOptions() {
-    return mergeResult;
+    return map1;
   }
   getSpatialAudioOverrides() {
     return isSpatial;
   }
   getSpatialAudioStatus() {
     return UNKNOWN;
+  }
+  getExperimentPositioningModel(arg0) {
+    const mediaEngine = MediaEngineStore.getMediaEngine();
+    let str = "";
+    if (mediaEngine.getSpatialAudioVersion() >= MIN_POSITIONING_SPATIAL_AUDIO_VERSION) {
+      str = arg0;
+    }
+    return str;
   }
 }
 const prototype = SpatialAudioStore.prototype;
@@ -151,7 +169,7 @@ let items = [
     const value = Storage.get("MediaEngineStore");
     let tmp2;
     if (value != null) {
-      tmp2 = value[metroImportAll.DEFAULT];
+      tmp2 = value[constants2.DEFAULT];
     }
     let num;
     if (tmp2 != null) {
@@ -199,7 +217,7 @@ obj = {
     return false;
   },
   LOGOUT: function handleLogout() {
-    let closure_11 = {};
+    let closure_12 = {};
     applyActiveOptions();
   }
 };

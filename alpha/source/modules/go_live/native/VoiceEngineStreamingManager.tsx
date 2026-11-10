@@ -1,9 +1,9 @@
-// Module ID: 7976
-// Function ID: 7977
+// Module ID: 7980
+// Function ID: 7981
 // Name: VoiceEngineStreamingManager
-// Dependencies: [5, 17, 6769, 4989, 5043, 1072, 2142, 3, 4984, 4965, 572, 1282, 7977, 2120, 2132, 38, 7978, 5888, 6772, 1493, 1377, 12086, 11040, 1113, 2]
+// Dependencies: [5, 17, 6771, 4991, 5045, 1072, 2142, 3, 4986, 4967, 572, 1282, 7981, 2120, 2132, 38, 7982, 5890, 6774, 1493, 1377, 12095, 11049, 1113, 2]
 
-// Module 7976 (VoiceEngineStreamingManager)
+// Module 7980 (VoiceEngineStreamingManager)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
 import _modDef38 from "module_38" /* 38 */;
@@ -13,16 +13,16 @@ import PlatformUtils from "PlatformUtils" /* 1377 */;
 import useWindowDimensions from "useWindowDimensions" /* 1493 */;
 import inject from "inject" /* 2132 */;
 import Constants2 from "Constants" /* 2142 */;
-import UserSettings from "UserSettings" /* 4965 */;
-import Timers from "Timers" /* 4984 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 6772 */;
-import AndroidStopAndPauseVideoExperimentDefault from "AndroidStopAndPauseVideoExperiment" /* 7977 */;
-import StreamActionCreators from "StreamActionCreators" /* 7978 */;
-import PushNotificationDefault from "PushNotification" /* 11040 */;
+import UserSettings from "UserSettings" /* 4967 */;
+import Timers from "Timers" /* 4986 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 6774 */;
+import AndroidStopAndPauseVideoExperimentDefault from "AndroidStopAndPauseVideoExperiment" /* 7981 */;
+import StreamActionCreators from "StreamActionCreators" /* 7982 */;
+import PushNotificationDefault from "PushNotification" /* 11049 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6769 */;
-import ChannelStore from "ChannelStore" /* 4989 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5043 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6771 */;
+import ChannelStore from "ChannelStore" /* 4991 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5045 */;
 import Constants from "Constants" /* 1072 */;
 import LifecycleManager from "LifecycleManager" /* 2120 */;
 import size_mod from "module_2" /* 2 */;
@@ -35,7 +35,7 @@ let c9;
 let metroImportAll;
 let tmp2;
 let unpackModuleId;
-const useScreenshareUtils = tmp2(12086);
+const useScreenshareUtils = tmp2(12095);
 function handleThumbnailUpload() {
   return obj(...arguments);
 }

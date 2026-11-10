@@ -1,17 +1,17 @@
-// Module ID: 19236
-// Function ID: 19237
+// Module ID: 19265
+// Function ID: 19266
 // Name: DisplayNameStylesFlywheelProfileCoachmark
-// Dependencies: [19, 17, 1385, 4986, 21, 5140, 504, 2171, 1113, 3056, 10076, 19237, 2]
+// Dependencies: [19, 17, 1385, 4988, 21, 5142, 504, 2171, 1113, 3056, 10082, 19266, 2]
 // Exports: default
 
-// Module 19236 (DisplayNameStylesFlywheelProfileCoachmark)
+// Module 19265 (DisplayNameStylesFlywheelProfileCoachmark)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4986 */;
-import DisplayNameLockeAbstractUI from "DisplayNameLockeAbstractUI" /* 19237 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4988 */;
+import DisplayNameLockeAbstractUI from "DisplayNameLockeAbstractUI" /* 19266 */;
 import react_mod from "react" /* 19 */;
 import UserStore from "UserStore" /* 1385 */;
-import createStyles from "createStyles" /* 5140 */;
+import createStyles from "createStyles" /* 5142 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -77,7 +77,7 @@ export default function DisplayNameStylesFlywheelProfileCoachmark(visible) {
       return closure_1_7(closure_1_9, {});
     }
   }), items2);
-  const tmpResult = visible(10076);
+  const tmpResult = visible(10082);
   const coachmark = tmpResult.useCoachmark(targetRef, memo);
   return null;
 };

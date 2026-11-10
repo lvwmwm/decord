@@ -1,9 +1,9 @@
-// Module ID: 7947
-// Function ID: 7948
+// Module ID: 7951
+// Function ID: 7952
 // Name: QuestType
 // Dependencies: [2]
 
-// Module 7947 (QuestType)
+// Module 7951 (QuestType)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/QuestType.tsx");

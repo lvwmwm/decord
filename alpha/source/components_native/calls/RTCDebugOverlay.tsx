@@ -1,30 +1,30 @@
-// Module ID: 12186
-// Function ID: 12187
+// Module ID: 12195
+// Function ID: 12196
 // Name: RTCDebugOverlay
-// Dependencies: [19, 17, 4989, 5011, 5893, 5916, 7962, 1385, 5897, 21, 5140, 5137, 575, 1187, 504, 5776, 12187, 5917, 7355, 5758, 1113, 2]
+// Dependencies: [19, 17, 4991, 5013, 5895, 5918, 7966, 1385, 5899, 21, 5142, 5139, 575, 1187, 504, 5778, 12196, 5919, 7358, 5760, 1113, 2]
 // Exports: default
 
-// Module 12186 (RTCDebugOverlay)
+// Module 12195 (RTCDebugOverlay)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import components_Button_Button from "components/Button/Button" /* 5758 */;
-import Constants from "Constants" /* 5897 */;
-import RTCDebugActionCreatorsAll from "RTCDebugActionCreators" /* 5917 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7355 */;
-import RTCConnectionUtilsDefault from "RTCConnectionUtils" /* 12187 */;
+import components_Button_Button from "components/Button/Button" /* 5760 */;
+import Constants from "Constants" /* 5899 */;
+import RTCDebugActionCreatorsAll from "RTCDebugActionCreators" /* 5919 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7358 */;
+import RTCConnectionUtilsDefault from "RTCConnectionUtils" /* 12196 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelStore from "ChannelStore" /* 4989 */;
-import GuildStore from "GuildStore" /* 5011 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5893 */;
-import RTCDebugStore from "RTCDebugStore" /* 5916 */;
-import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 7962 */;
+import ChannelStore from "ChannelStore" /* 4991 */;
+import GuildStore from "GuildStore" /* 5013 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5895 */;
+import RTCDebugStore from "RTCDebugStore" /* 5918 */;
+import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 7966 */;
 import UserStore from "UserStore" /* 1385 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5140 */;
-import ColorUtils_mod from "ColorUtils" /* 5137 */;
+import createStyles_mod from "createStyles" /* 5142 */;
+import ColorUtils_mod from "ColorUtils" /* 5139 */;
 import size from "module_2" /* 2 */;
 
 let userId;
@@ -44,7 +44,7 @@ function Text(arg0) {
   tmp = closure_18();
   const LegacyText = native.LegacyText;
   const merged = Object.assign(arg0);
-  return authStore3(LegacyText, obj);
+  return gesture(LegacyText, obj);
 }
 function Section(arg0) {
   let children;
@@ -57,10 +57,10 @@ function Section(arg0) {
   const obj = { children: items1 };
   items1 = [, ];
   const tmp = closure_18();
-  items1[0] = closure_15(Text, obj2);
+  items1[0] = clientStatuses(Text, obj2);
   const obj3 = { style: tmp.indent, children };
-  items1[1] = authStore3(hasOwnProperty, obj3);
-  return closure_15(authStore4, obj);
+  items1[1] = gesture(hasOwnProperty, obj3);
+  return clientStatuses(authStore3, obj);
 }
 function ObjectKV(obj) {
   obj = obj.obj;
@@ -86,9 +86,9 @@ function ObjectKV(obj) {
     }
     if (null != value) {
       if (typeof value === "object") {
-        const obj2 = { title: tmp, children: authStore3(ObjectKV, obj3) };
+        const obj2 = { title: tmp, children: gesture(ObjectKV, obj3) };
         obj3 = { obj: value };
-        tmp4Result = authStore3(Section, obj2, tmp);
+        tmp4Result = gesture(Section, obj2, tmp);
       }
       return tmp4Result;
     }
@@ -127,7 +127,7 @@ function RTCDebugGeneral() {
   const stateFromStores1 = obj3.useStateFromStores(items3, () => ChannelStore.getChannel(channelId), items4);
   const obj4 = { id: guildId, name };
   name = null;
-  const tmp4 = channelId(5776)(stateFromStores1);
+  const tmp4 = channelId(5778)(stateFromStores1);
   const tmp6 = Section;
   const tmp7 = ObjectKV;
   if (null != stateFromStores) {
@@ -153,14 +153,14 @@ function RTCDebugContext(context) {
         let obj3;
         let obj = { title: "" + context + " - " + mediaEngineConnectionId.mediaEngineConnectionId, children: items };
         let tmp4 = null;
-        const tmp = closure_15;
+        const tmp = clientStatuses;
         if (null != closure_25[context]) {
-          tmp4 = authStore3(tmp3, {});
+          tmp4 = gesture(tmp3, {});
         }
         items = [tmp4, , , ];
-        const obj2 = { title: "transport", children: authStore3(ObjectKV, obj3) };
+        const obj2 = { title: "transport", children: gesture(ObjectKV, obj3) };
         obj3 = { obj: mediaEngineConnectionId.transport };
-        items[1] = authStore3(Section, obj2);
+        items[1] = gesture(Section, obj2);
         const outbound = mediaEngineConnectionId.rtp.outbound;
         const obj4 = {
           title: "outbound",
@@ -169,11 +169,11 @@ function RTCDebugContext(context) {
             return closure_1_14(closure_1_22, obj, index);
           })
         };
-        items[2] = authStore3(Section, obj4);
+        items[2] = gesture(Section, obj4);
         const inbound = mediaEngineConnectionId.rtp.inbound;
         const keys = Object.keys(inbound);
         let tmp6Result = null;
-        const tmp6 = authStore3;
+        const tmp6 = gesture;
         if (0 !== keys.length) {
           const obj5 = {
             title: "inbound",
@@ -208,9 +208,9 @@ let closure_18 = createStyles(obj);
 let closure_22 = react.memo((data) => {
   let obj2;
   data = data.data;
-  const obj = { title: data.type, children: authStore3(ObjectKV, obj2) };
+  const obj = { title: data.type, children: gesture(ObjectKV, obj2) };
   obj2 = { obj: Object.assign(data, Object.assign({ type: 0 })) };
-  return authStore3(Section, obj);
+  return gesture(Section, obj);
 });
 let closure_23 = react.memo((userId) => {
   userId = userId.userId;
@@ -246,7 +246,7 @@ let closure_25 = {
         return obj;
       }, [])
     };
-    return authStore3(ObjectKV, obj2);
+    return gesture(ObjectKV, obj2);
   },
   [MediaEngineContextTypes.STREAM]: function StreamContextInfo() {
     const first = StreamRTCConnectionStore.getAllActiveStreamKeys()[0];
@@ -286,17 +286,17 @@ export default function RTCDebugOverlay(arg0) {
   items = [tmp.container, style];
   let obj = { style: tmp.scroller, indicatorStyle: "white", children: items1 };
   const SafeAreaPaddingView = common_SafeAreaView.SafeAreaPaddingView;
-  items1 = [authStore3(RTCDebugGeneral, {}), ];
+  items1 = [gesture(RTCDebugGeneral, {}), ];
   const values = Object.values(MediaEngineContextTypes);
   items1[1] = values.map((context) => {
     const obj = { context };
     return closure_1_14(RTCDebugContext, obj, context);
   });
-  items2 = [closure_15(metroRequire, obj), ];
-  const obj2 = { style: tmp.buttonClose, children: authStore3(Button, obj3) };
+  items2 = [clientStatuses(metroRequire, obj), ];
+  const obj2 = { style: tmp.buttonClose, children: gesture(Button, obj3) };
   obj3 = { text: intl.string(intl2.t.cpT0Cq), onPress: onClose };
   Button = components_Button_Button.Button;
   intl = intl2.intl;
-  items2[1] = authStore3(hasOwnProperty, obj2);
-  return closure_15(SafeAreaPaddingView, rect);
+  items2[1] = gesture(hasOwnProperty, obj2);
+  return clientStatuses(SafeAreaPaddingView, rect);
 };

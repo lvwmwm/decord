@@ -1,24 +1,24 @@
-// Module ID: 12745
-// Function ID: 12746
+// Module ID: 12759
+// Function ID: 12760
 // Name: PollsActionCreators
-// Dependencies: [5, 5073, 7842, 502, 4989, 7777, 6763, 6194, 8277, 11509, 1072, 38, 6090, 1113, 6957, 6961, 12746, 12748, 5889, 12, 504, 572, 5742, 12757, 5147, 12751, 7712, 9870, 6579, 2]
+// Dependencies: [5, 5075, 7846, 502, 4991, 7780, 6765, 6196, 8281, 11518, 1072, 38, 6092, 1113, 6960, 6964, 12760, 12762, 5891, 12, 504, 572, 5744, 12771, 5149, 12765, 7715, 9876, 6581, 2]
 
-// Module 12745 (PollsActionCreators)
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5889 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 6090 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6957 */;
-import JoinGuildRefusedError from "JoinGuildRefusedError" /* 6961 */;
-import DraftStore from "DraftStore" /* 7777 */;
-import PollInteractionUtilsAll from "PollInteractionUtils" /* 12746 */;
+// Module 12759 (PollsActionCreators)
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5891 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 6092 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6960 */;
+import JoinGuildRefusedError from "JoinGuildRefusedError" /* 6964 */;
+import DraftStore from "DraftStore" /* 7780 */;
+import PollInteractionUtilsAll from "PollInteractionUtils" /* 12760 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import LurkingStore from "LurkingStore" /* 5073 */;
-import ReferencedMessageStore from "ReferencedMessageStore" /* 7842 */;
+import LurkingStore from "LurkingStore" /* 5075 */;
+import ReferencedMessageStore from "ReferencedMessageStore" /* 7846 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4989 */;
-import GuildVerificationStore from "GuildVerificationStore" /* 6763 */;
-import MessageStore from "MessageStore" /* 6194 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 8277 */;
-import PollsInteractionStore from "PollsInteractionStore" /* 11509 */;
+import ChannelStore from "ChannelStore" /* 4991 */;
+import GuildVerificationStore from "GuildVerificationStore" /* 6765 */;
+import MessageStore from "MessageStore" /* 6196 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 8281 */;
+import PollsInteractionStore from "PollsInteractionStore" /* 11518 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -142,7 +142,7 @@ function handleShowVotesForAnswer(messageId) {
 function handleUpdateVoteEditingState(channelId) {
   channelId = channelId.channelId;
   const isEditing = channelId.isEditing;
-  authStore3(channelId, channelId.messageId, (showResults) => {
+  gesture(channelId, channelId.messageId, (showResults) => {
     let flag;
     obj = { channelId, selectedAnswerIds: new Set(), submitting: false, editing: isEditing, showResults: flag };
     flag = undefined;

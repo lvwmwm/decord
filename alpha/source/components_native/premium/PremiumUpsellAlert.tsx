@@ -1,28 +1,28 @@
-// Module ID: 10100
-// Function ID: 10101
+// Module ID: 10106
+// Function ID: 10107
 // Name: PremiumUpsellAlert
-// Dependencies: [32, 19, 17, 1194, 1385, 1072, 10101, 1387, 21, 5140, 575, 5199, 5842, 5751, 7703, 1113, 2171, 9876, 9877, 5369, 5147, 10129, 10130, 10131, 9865, 10132, 10133, 10134, 10135, 504, 7429, 6064, 9875, 1493, 7387, 7412, 5721, 1252, 10136, 6584, 6162, 1187, 10137, 10138, 9879, 2]
+// Dependencies: [32, 19, 17, 1194, 1385, 1072, 10107, 1387, 21, 5142, 575, 5201, 5844, 5753, 7706, 1113, 2171, 9882, 9883, 5371, 5149, 10135, 10136, 10137, 9871, 10138, 10139, 10140, 10141, 504, 7432, 6066, 9881, 1493, 7390, 7415, 5723, 1252, 10142, 6586, 6164, 1187, 10143, 10144, 9885, 2]
 
-// Module 10100 (PremiumUpsellAlert)
+// Module 10106 (PremiumUpsellAlert)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl6 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import PremiumUtils from "PremiumUtils" /* 2171 */;
-import shared from "shared" /* 5147 */;
-import native from "native" /* 5199 */;
-import useThemeDefault from "useTheme" /* 5369 */;
-import Text_Text from "Text/Text" /* 5751 */;
-import FastImageDefault from "FastImage" /* 5842 */;
-import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 6064 */;
-import usePremiumTrialOffer from "usePremiumTrialOffer" /* 7703 */;
-import useMessageMaxLengthDefault from "useMessageMaxLength" /* 9865 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9876 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 9877 */;
-import AppIconConstants from "AppIconConstants" /* 10101 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 10131 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 10137 */;
+import shared from "shared" /* 5149 */;
+import native from "native" /* 5201 */;
+import useThemeDefault from "useTheme" /* 5371 */;
+import Text_Text from "Text/Text" /* 5753 */;
+import FastImageDefault from "FastImage" /* 5844 */;
+import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 6066 */;
+import usePremiumTrialOffer from "usePremiumTrialOffer" /* 7706 */;
+import useMessageMaxLengthDefault from "useMessageMaxLength" /* 9871 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9882 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 9883 */;
+import AppIconConstants from "AppIconConstants" /* 10107 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 10137 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 10143 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1194 */;
@@ -30,7 +30,7 @@ import UserStore from "UserStore" /* 1385 */;
 import Constants from "Constants" /* 1072 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5140 */;
+import createStyles from "createStyles" /* 5142 */;
 import size_mod from "module_2" /* 2 */;
 
 let c9;
@@ -68,7 +68,7 @@ class PremiumUpsellItem {
     items2[1] = map1(Text_Text.Text, obj4);
     const obj5 = { style: legacyClassComponentStyles.premiumUpsellDescription, variant: "body-md/medium", children: description };
     items2[2] = map1(Text_Text.Text, obj5);
-    return authStore3(View, obj2);
+    return gesture(View, obj2);
   }
 }
 function GlobalEmojiUpsell(arg0) {
@@ -165,9 +165,9 @@ function PremiumGuildIdentityUpsell(alertWidth) {
   const tmp6 = map1;
   const tmp7 = PremiumUpsellItem;
   if (obj3.isThemeDark(tmp5)) {
-    tmp4Result = tmp4(10129);
+    tmp4Result = tmp4(10135);
   } else {
-    tmp4Result = tmp4(10130);
+    tmp4Result = tmp4(10136);
   }
   obj4 = { image: tmp4Result, title: intl.string(intl6.t.OVN9la), description: intl2.string(intl6.t.j0dyAG) };
   intl = tmp(1113).intl;
@@ -231,9 +231,9 @@ function LongerMessageUpsell(alertWidth) {
   const tmp7 = map1;
   const tmp8 = PremiumUpsellItem;
   if (obj3.isThemeDark(tmp5)) {
-    tmp4Result = tmp4(10132);
+    tmp4Result = tmp4(10138);
   } else {
-    tmp4Result = tmp4(10133);
+    tmp4Result = tmp4(10139);
   }
   obj4 = { image: tmp4Result, title: intl.string(intl6.t["8cjmTj"]), description: intl2.formatToPlainString(intl6.t.moN9wh, { maxLength: tmp6 }) };
   intl = tmp(1113).intl;
@@ -254,9 +254,9 @@ function GuildCapUpsell(alertWidth) {
   const tmp6 = map1;
   const tmp7 = PremiumUpsellItem;
   if (obj3.isThemeDark(tmp5)) {
-    tmp4Result = tmp4(10134);
+    tmp4Result = tmp4(10140);
   } else {
-    tmp4Result = tmp4(10135);
+    tmp4Result = tmp4(10141);
   }
   obj4 = { image: tmp4Result, title: intl.string(intl6.t["CoNXB+"]), description: intl2.format(intl6.t.mkXb2F, {}) };
   intl = tmp(1113).intl;
@@ -276,8 +276,8 @@ function UploadUpsell(arg0) {
   const first = _slicedToArray(react.useState(!stateFromStores), 1)[0];
   const children = [map1(UpsellItem, { isInitial: true, upsellItem: item, alertWidth }, constants2.UPLOAD), ];
   let tmp7Result = null;
-  const tmp5 = authStore3;
-  const tmp6 = closure_15;
+  const tmp5 = gesture;
+  const tmp6 = clientStatuses;
   const tmp7 = map1;
   if (first) {
     let obj2 = {
@@ -292,7 +292,7 @@ function UploadUpsell(arg0) {
           const result = obj.updatedUnsyncedSettings(obj2);
         }
     };
-    const TableSwitchRow = tmp(7429).TableSwitchRow;
+    const TableSwitchRow = tmp(7432).TableSwitchRow;
     intl = tmp(1113).intl;
     intl2 = tmp(1113).intl;
     tmp7Result = tmp7(TableSwitchRow, obj2);
@@ -471,7 +471,7 @@ obj2 = { marginVertical: nativeDefault.space.PX_8, textAlign: "center" };
 const createLegacyClassComponentStyles = createStyles.createLegacyClassComponentStyles;
 obj3 = { borderColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderWidth: 2 };
 size = { height: 80, width: 80, borderRadius: nativeDefault.radii.lg };
-const authStore4 = createLegacyClassComponentStyles(obj);
+const authStore3 = createLegacyClassComponentStyles(obj);
 const PureComponent = react.PureComponent;
 class UpsellItem extends PureComponent {
   render() {
@@ -493,7 +493,7 @@ class UpsellItem extends PureComponent {
     items1[0] = map1(FastImageDefault, obj2);
     const obj3 = { style: tmp.upsellTitle, variant: "body-md/medium", color: "mobile-text-heading-primary", children: passiveTitle };
     const Text = Text_Text.Text;
-    const tmp2 = authStore3;
+    const tmp2 = gesture;
     const tmp3 = View;
     if (isInitial) {
       passiveTitle = activeTitle;

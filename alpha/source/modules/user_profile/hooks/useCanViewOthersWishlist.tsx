@@ -1,15 +1,15 @@
-// Module ID: 15249
-// Function ID: 15250
+// Module ID: 15275
+// Function ID: 15276
 // Name: useCanViewOthersWishlist
-// Dependencies: [9555, 5082, 7848, 13915, 504, 15250, 2]
+// Dependencies: [9561, 5084, 7852, 13936, 504, 15276, 2]
 // Exports: default
 
-// Module 15249 (useCanViewOthersWishlist)
-import useCanDMDefault from "useCanDM" /* 13915 */;
-import WishlistVisibility from "WishlistVisibility" /* 15250 */;
-import WishlistStore from "WishlistStore" /* 9555 */;
-import RelationshipStore from "RelationshipStore" /* 5082 */;
-import UserProfileStore from "UserProfileStore" /* 7848 */;
+// Module 15275 (useCanViewOthersWishlist)
+import useCanDMDefault from "useCanDM" /* 13936 */;
+import WishlistVisibility from "WishlistVisibility" /* 15276 */;
+import WishlistStore from "WishlistStore" /* 9561 */;
+import RelationshipStore from "RelationshipStore" /* 5084 */;
+import UserProfileStore from "UserProfileStore" /* 7852 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

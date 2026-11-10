@@ -1,56 +1,45 @@
 // Module ID: 13127
 // Function ID: 13128
 // Name: tokenize
-// Dependencies: [13050]
+// Dependencies: [13064]
 
 // Module 13127 (tokenize)
-import tokenize from "tokenize" /* 13050 */;
+import tokenize from "tokenize" /* 13064 */;
 
+let items;
 let obj2;
-function eatIdentifierOrAsterisk() {
-  const self = this;
-  let tmp = this.scanner.tokenType !== Ident;
-  if (tmp) {
-    const scanner = self.scanner;
-    tmp = false === scanner.isDelim(42);
-  }
-  if (tmp) {
-    self.error("Identifier or asterisk is expected");
-  }
-  const iter = self.scanner;
-  iter.next();
-}
-const Ident = tokenize.TYPE.Ident;
-let obj = {
-  name: "TypeSelector",
+const Comma = tokenize.TYPE.Comma;
+const obj = {
+  name: "MediaQueryList",
   structure: obj2,
-  parse() {
-    let scanner3;
+  parse(arg0) {
     const self = this;
-    const tokenStart = this.scanner.tokenStart;
+    const list = this.createList();
     const scanner = this.scanner;
-    if (scanner.isDelim(124)) {
-      const iter2 = self.scanner;
-      iter2.next();
-      eatIdentifierOrAsterisk.call(self);
-    } else {
-      eatIdentifierOrAsterisk.call(self);
-      const scanner2 = self.scanner;
-      const obj = eatIdentifierOrAsterisk;
-      if (scanner2.isDelim(124)) {
+    scanner.skipSC();
+    if (!this.scanner.eof) {
+      list.push(self.MediaQuery(arg0));
+      if (self.scanner.tokenType === Comma) {
         const iter = self.scanner;
         iter.next();
-        obj.call(self);
+        while (!self.scanner.eof) {
+          let arr3 = list.push(self.MediaQuery(arg0));
+          if (self.scanner.tokenType !== Comma) {
+            break;
+          }
+        }
       }
     }
-    const obj2 = { type: "TypeSelector", loc: self.getLocation(tokenStart, self.scanner.tokenStart), name: scanner3.substrToCursor(tokenStart) };
-    scanner3 = self.scanner;
-    return obj2;
+    const element = { type: "MediaQueryList", loc: self.getLocationFromList(list), children: list };
+    return element;
   },
-  generate(name) {
-    this.chunk(name.name);
+  generate(arg0) {
+    this.children(arg0, function() {
+      this.chunk(",");
+    });
   }
 };
-obj2 = { name: String };
+obj2 = { children: items };
+items = [["MediaQuery"]];
 
 export default obj;

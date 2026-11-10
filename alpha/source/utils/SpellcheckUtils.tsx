@@ -1,12 +1,12 @@
-// Module ID: 6986
-// Function ID: 6987
+// Module ID: 6987
+// Function ID: 6988
 // Name: SpellcheckUtils
-// Dependencies: [5, 6987, 4951, 1377, 6989, 2]
-// Exports: addResultListener, getCachedMisspelling, getCorrections, isMisspelled, isSupported, replaceWithCorrection, setAppLocale, setEnabled, setLearnedWords
+// Dependencies: [5, 6988, 4953, 1377, 6990, 2]
+// Exports: addResultListener, clearCachedMisspelling, getCachedMisspelling, getCorrections, isMisspelled, isSupported, isSupportedInPopouts, replaceWithCorrection, setAppLocale, setEnabled, setLearnedWords
 
-// Module 6986 (SpellcheckUtils)
-import DiscordNativeDefault from "DiscordNative" /* 4951 */;
-import PostConnectionCallbackStore from "PostConnectionCallbackStore" /* 6987 */;
+// Module 6987 (SpellcheckUtils)
+import DiscordNativeDefault from "DiscordNative" /* 4953 */;
+import PostConnectionCallbackStore from "PostConnectionCallbackStore" /* 6988 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import PlatformUtils_mod from "PlatformUtils" /* 1377 */;
 import size from "module_2" /* 2 */;
@@ -386,10 +386,11 @@ obj = function _getCachedMisspelling() {
 obj = function _replaceWithCorrection() {
   let value;
   obj = _asyncToGenerator(async (arg0, value) => {
-    let closure_1;
+    let closure_2;
     let closure_0 = arg0;
-    if (c3 === 2) {
-      c3 = 3;
+    let closure_1 = value;
+    if (c4 === 2) {
+      c4 = 3;
       throw new TypeError("Generator functions may not be called on executing generators");
     } else if (tmp3 === 3) {
       if (arg0 === 1) {
@@ -403,40 +404,40 @@ obj = function _replaceWithCorrection() {
     } else {
       try {
         let tmp;
-        c3 = 2;
-        if (0 === c2) {
+        c4 = 2;
+        if (0 === c3) {
           if (arg0 === 1) {
-            c3 = 3;
+            c4 = 3;
             throw value;
           } else if (arg0 === 2) {
-            c3 = 3;
+            c4 = 3;
             const obj3 = { value, done: true };
             return obj3;
           } else {
             tmp = undefined;
-            c2 = 1;
             c3 = 1;
+            c4 = 1;
             const obj4 = { value, done: false };
             return obj4;
           }
         } else if (arg0 === 1) {
-          c3 = 3;
+          c4 = 3;
           throw value;
         } else if (arg0 === 2) {
-          c3 = 3;
+          c4 = 3;
           obj = { value, done: true };
           return obj;
         } else {
           tmp = value;
           if (null != tmp) {
-            tmp.replaceMisspelling(closure_0);
+            tmp.replaceMisspelling(closure_0, closure_1);
           }
-          c3 = 3;
+          c4 = 3;
           return { value: "HermesInternal", done: null };
         }
-      } catch (tmp13) {
-        c3 = 3;
-        throw tmp13;
+      } catch (tmp15) {
+        c4 = 3;
+        throw tmp15;
       }
     }
   });
@@ -486,9 +487,31 @@ function isSupported() {
   }
   return isDesktopResult;
 }
-const result = size.fileFinishedImporting("utils/SpellcheckUtils.tsx");
+let result = size.fileFinishedImporting("utils/SpellcheckUtils.tsx");
 
 export { isSupported };
+export function isSupportedInPopouts() {
+  obj = PlatformUtils;
+  let isDesktopResult = obj.isDesktop();
+  if (isDesktopResult) {
+    const tmp4 = DiscordNativeDefault;
+    let spellCheck;
+    if (tmp4 != null) {
+      spellCheck = tmp4.spellCheck;
+    }
+    isDesktopResult = null != spellCheck;
+  }
+  if (isDesktopResult) {
+    const tmp8 = DiscordNativeDefault;
+    let supportsResult;
+    if (tmp8 != null) {
+      const features = tmp8.features;
+      supportsResult = features.supports("spellcheck_popout_windows");
+    }
+    isDesktopResult = true === supportsResult;
+  }
+  return isDesktopResult;
+}
 export function setEnabled() {
   return obj(...arguments);
 }
@@ -503,6 +526,12 @@ export function getCorrections() {
 }
 export function getCachedMisspelling() {
   return obj(...arguments);
+}
+export function clearCachedMisspelling() {
+  obj = c6;
+  if (c6 != null) {
+    const result = obj.clearCachedMisspelling();
+  }
 }
 export function replaceWithCorrection() {
   return obj(...arguments);

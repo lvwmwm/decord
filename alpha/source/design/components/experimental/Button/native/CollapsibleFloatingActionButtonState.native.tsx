@@ -1,10 +1,10 @@
-// Module ID: 9080
-// Function ID: 9081
+// Module ID: 9086
+// Function ID: 9087
 // Name: CollapsibleFloatingActionButtonState
 // Dependencies: [19, 1652, 2]
 // Exports: useCollapsibleFloatingActionButtonScroll, useCollapsibleFloatingActionButtonState
 
-// Module 9080 (CollapsibleFloatingActionButtonState)
+// Module 9086 (CollapsibleFloatingActionButtonState)
 import _mod1652 from "module_1652" /* 1652 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

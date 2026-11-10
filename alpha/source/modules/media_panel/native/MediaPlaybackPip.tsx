@@ -1,26 +1,26 @@
-// Module ID: 19752
-// Function ID: 19753
+// Module ID: 19781
+// Function ID: 19782
 // Name: MediaPlaybackPip
-// Dependencies: [32, 19, 17, 4989, 6194, 5082, 1385, 1072, 19486, 21, 5140, 575, 5724, 504, 5776, 8914, 5751, 19753, 5715, 7712, 7485, 1652, 5370, 1113, 9072, 7068, 10887, 1252, 16713, 5057, 19750, 8924, 8922, 19754, 2]
+// Dependencies: [32, 19, 17, 4991, 6196, 5084, 1385, 1072, 19515, 21, 5142, 575, 5726, 504, 5778, 8920, 5753, 19782, 5717, 7715, 7488, 1652, 5372, 1113, 9078, 7071, 10896, 1252, 16740, 5059, 19779, 8930, 8928, 19783, 2]
 // Exports: default
 
-// Module 19752 (MediaPlaybackPip)
+// Module 19781 (MediaPlaybackPip)
 import nativeDefault from "native" /* 575 */;
 import _modDef1652 from "module_1652" /* 1652 */;
-import useChannelName from "useChannelName" /* 5776 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7712 */;
-import MediaPlayerManagerDefault from "MediaPlayerManager" /* 16713 */;
-import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 19486 */;
+import useChannelName from "useChannelName" /* 5778 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7715 */;
+import MediaPlayerManagerDefault from "MediaPlayerManager" /* 16740 */;
+import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 19515 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelStore from "ChannelStore" /* 4989 */;
-import MessageStore from "MessageStore" /* 6194 */;
-import RelationshipStore from "RelationshipStore" /* 5082 */;
+import ChannelStore from "ChannelStore" /* 4991 */;
+import MessageStore from "MessageStore" /* 6196 */;
+import RelationshipStore from "RelationshipStore" /* 5084 */;
 import UserStore from "UserStore" /* 1385 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5142 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -56,7 +56,7 @@ function MediaInfo(message) {
   react = undefined;
   ({ isVoiceMessage, isControlVisible } = message);
   const tmp = closure_17();
-  let obj = message(5724);
+  let obj = message(5726);
   const token = obj.useToken(first(575).colors.BACKGROUND_SURFACE_HIGH);
   const items = [ChannelStore, UserStore, RelationshipStore];
   const items1 = [message];
@@ -97,7 +97,7 @@ function MediaInfo(message) {
           if (contentMessage.attachments.length > 0) {
             str2 = "";
             if (null != activeMediaPlayerSource.attachmentIndex) {
-              str2 = tmp4(8914)(contentMessage.attachments[activeMediaPlayerSource.attachmentIndex]);
+              str2 = tmp4(8920)(contentMessage.attachments[activeMediaPlayerSource.attachmentIndex]);
             }
           }
         }
@@ -110,7 +110,7 @@ function MediaInfo(message) {
                 },
           children: str2
         };
-        const tmp14 = closure_15(message(5751).Text, obj3);
+        const tmp14 = closure_15(message(5753).Text, obj3);
         const obj4 = {
           accessibilityElementsHidden: isControlVisible,
           style: tmp.infoContent,
@@ -124,17 +124,17 @@ function MediaInfo(message) {
         if (memo) {
           const obj6 = { style: { flex: 1 }, children: items3 };
           const obj7 = { spacing: 20, speed: 0.2, children: tmp14 };
-          items3 = [closure_15(message(19753).Marquee, obj7), ];
+          items3 = [closure_15(message(19782).Marquee, obj7), ];
           const obj8 = { start: { x: 0, y: 0 }, end: { x: 1, y: 0 }, locations: [0, 0.1, 0.2, 0.8, 0.9, 1], colors: items4, style: tmp.infoContainerGradient };
           items4 = [token, `${tmp5}CC`, `${tmp5}00`, `${tmp5}00`, `${tmp5}CC`, token];
-          items3[1] = closure_15(first(5715), obj8);
+          items3[1] = closure_15(first(5717), obj8);
           tmp16Result = tmp16(tmp15, obj6);
         }
         items5 = [tmp16Result, ];
         let tmp13Result = null != stateFromStores;
         if (tmp13Result) {
           const obj9 = { variant: "body-xs/medium", color: "text-subtle", lineClamp: 1, children: stateFromStores };
-          tmp13Result = tmp13(tmp2(5751).Text, obj9);
+          tmp13Result = tmp13(tmp2(5753).Text, obj9);
         }
         items5[1] = tmp13Result;
         return closure_15(closure_7, obj4);
@@ -172,8 +172,8 @@ function PiPControls(message) {
           if (channel != null) {
             guildId = channel.getGuildId();
           }
-          const tmp6Result = tmp6(7485);
-          tmp6Result(authStore3.CHANNEL(guildId, message.channel_id, message.id), { navigationReplace: true, openChannel: true });
+          const tmp6Result = tmp6(7488);
+          tmp6Result(gesture.CHANNEL(guildId, message.channel_id, message.id), { navigationReplace: true, openChannel: true });
         }
       }
     }
@@ -181,7 +181,7 @@ function PiPControls(message) {
   const items1 = [closure_19, , ];
   const useAnimatedStyle = message(1652).useAnimatedStyle;
   message(1652);
-  items1[1] = message(5370).withTiming;
+  items1[1] = message(5372).withTiming;
   items1[2] = visible;
   let c0;
   let c1;
@@ -221,12 +221,12 @@ function PiPControls(message) {
   let obj = { style: items3, children: items4 };
   items3 = [tmp.pipControls, animatedStyle];
   const View = _modDef1652.View;
-  items4 = [closure_15(message(9072).BackgroundBlurFill, { blurAmount: 0.05 }), , ];
-  const obj2 = { disabled: !visible, style: items5, onPress: callback, accessible: true, accessibilityRole: "button", accessibilityLabel: stringResult, children: closure_15(message(7068).ArrowLargeLeftIcon, { size: "sm" }) };
+  items4 = [closure_15(message(9078).BackgroundBlurFill, { blurAmount: 0.05 }), , ];
+  const obj2 = { disabled: !visible, style: items5, onPress: callback, accessible: true, accessibilityRole: "button", accessibilityLabel: stringResult, children: closure_15(message(7071).ArrowLargeLeftIcon, { size: "sm" }) };
   items5 = [, ];
   ({ pipButton: arr6[0], backButton: arr6[1] } = tmp);
   items4[1] = closure_15(closure_6, obj2);
-  const obj3 = { disabled: !visible, style: items6, onPress: handleClosePip, accessible: true, accessibilityRole: "button", accessibilityLabel: string2Result, children: closure_15(message(10887).XLargeIcon, { size: "sm" }) };
+  const obj3 = { disabled: !visible, style: items6, onPress: handleClosePip, accessible: true, accessibilityRole: "button", accessibilityLabel: string2Result, children: closure_15(message(10896).XLargeIcon, { size: "sm" }) };
   items6 = [, ];
   ({ pipButton: arr7[0], dismissButton: arr7[1] } = tmp);
   items4[2] = closure_15(closure_6, obj3);
@@ -476,11 +476,11 @@ export default function MediaPlaybackPip() {
   const items8 = [mediaSourceMessage, activeMediaPlayerSource, tmp10, first];
   const memo = obj.useMemo(() => {
     let PlayIcon;
-    const tmp = closure_15;
+    const tmp = clientStatuses;
     if (isPlaying) {
-      PlayIcon = tmp2(8924).PauseIcon;
+      PlayIcon = tmp2(8930).PauseIcon;
     } else {
-      PlayIcon = tmp2(8922).PlayIcon;
+      PlayIcon = tmp2(8928).PlayIcon;
     }
     const obj = { color: nativeDefault.colors.WHITE, size: "md" };
     return tmp(PlayIcon, obj);
@@ -488,11 +488,11 @@ export default function MediaPlaybackPip() {
   const items9 = [mediaSourceMessage, handleClosePip, first, tmp10];
   const memo1 = obj.useMemo(() => {
     const obj = { message: mediaSourceMessage, activeMediaPlayerSource, isVoiceMessage: react, isControlVisible: first };
-    return closure_15(MediaInfo, obj);
+    return clientStatuses(MediaInfo, obj);
   }, items8);
   const memo2 = obj.useMemo(() => {
     const obj = { message: mediaSourceMessage, handleClosePip, visible: first, isVoiceMessage: react };
-    return closure_15(PiPControls, obj);
+    return clientStatuses(PiPControls, obj);
   }, items9);
   const intl = tmp3(tmp4[23]).intl;
   const string = intl.string;

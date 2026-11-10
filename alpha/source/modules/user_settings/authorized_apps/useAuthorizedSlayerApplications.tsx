@@ -1,12 +1,12 @@
-// Module ID: 18248
-// Function ID: 18249
+// Module ID: 18277
+// Function ID: 18278
 // Name: useAuthorizedSlayerApplications
-// Dependencies: [19, 7339, 504, 14416, 7393, 2]
+// Dependencies: [19, 7342, 504, 14442, 7396, 2]
 // Exports: default
 
-// Module 18248 (useAuthorizedSlayerApplications)
-import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 7339 */;
-import AuthorizedAppsActionCreatorsDefault from "AuthorizedAppsActionCreators" /* 7393 */;
+// Module 18277 (useAuthorizedSlayerApplications)
+import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 7342 */;
+import AuthorizedAppsActionCreatorsDefault from "AuthorizedAppsActionCreators" /* 7396 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

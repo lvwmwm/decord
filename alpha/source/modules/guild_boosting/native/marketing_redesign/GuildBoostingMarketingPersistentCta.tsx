@@ -1,24 +1,24 @@
-// Module ID: 7659
-// Function ID: 7660
+// Module ID: 7662
+// Function ID: 7663
 // Name: GuildBoostingMarketingPersistentCta
-// Dependencies: [19, 17, 5141, 1072, 21, 5140, 575, 563, 1652, 5761, 5715, 7020, 5751, 7660, 2]
+// Dependencies: [19, 17, 5143, 1072, 21, 5142, 575, 563, 1652, 5763, 5717, 7023, 5753, 7663, 2]
 // Exports: default
 
-// Module 7659 (GuildBoostingMarketingPersistentCta)
+// Module 7662 (GuildBoostingMarketingPersistentCta)
 import react_native from "react-native" /* 17 */;
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import _mod1652 from "module_1652" /* 1652 */;
-import LinearGradientDefault from "LinearGradient" /* 5715 */;
-import Text_Text from "Text/Text" /* 5751 */;
-import spring_spring from "spring/spring" /* 5761 */;
-import GuildIcon from "GuildIcon" /* 7020 */;
-import GuildBoostingSubscribeButtonDefault from "GuildBoostingSubscribeButton" /* 7660 */;
+import LinearGradientDefault from "LinearGradient" /* 5717 */;
+import Text_Text from "Text/Text" /* 5753 */;
+import spring_spring from "spring/spring" /* 5763 */;
+import GuildIcon from "GuildIcon" /* 7023 */;
+import GuildBoostingSubscribeButtonDefault from "GuildBoostingSubscribeButton" /* 7663 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5141 */;
+import AccessibilityStore from "AccessibilityStore" /* 5143 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5142 */;
 import size_mod from "module_2" /* 2 */;
 
 const _modDef1652 = _mod1652;

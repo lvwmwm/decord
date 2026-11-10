@@ -1,19 +1,19 @@
-// Module ID: 13626
-// Function ID: 13627
+// Module ID: 13639
+// Function ID: 13640
 // Name: SearchableDestinationListHeader
-// Dependencies: [19, 21, 5140, 575, 1627, 1500, 1377, 7071, 9902, 7064, 2]
+// Dependencies: [19, 21, 5142, 575, 1627, 1500, 1377, 7074, 9908, 7067, 2]
 // Exports: default
 
-// Module 13626 (SearchableDestinationListHeader)
+// Module 13639 (SearchableDestinationListHeader)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import Link from "Link" /* 1500 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import NavigatorHeader from "NavigatorHeader" /* 7064 */;
-import HeaderShared from "HeaderShared" /* 9902 */;
+import NavigatorHeader from "NavigatorHeader" /* 7067 */;
+import HeaderShared from "HeaderShared" /* 9908 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5142 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -67,7 +67,7 @@ export default function SearchableDestinationListHeader(arg0) {
     headerStatusBarHeight
   };
   headerCloseButton = undefined;
-  const Header = tmp4(7071).Header;
+  const Header = tmp4(7074).Header;
   const tmp9 = jsx;
   if (null != onClose) {
     const tmp4Result = NavigatorHeader;

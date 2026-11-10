@@ -1,156 +1,325 @@
 // Module ID: 13341
 // Function ID: 13342
-// Dependencies: [13342, 13322, 13343, 13302, 13306, 13278, 13335]
-// Exports: createTransport
+// Dependencies: [13303, 13306, 13319, 13342, 13343, 13329, 13301, 13344, 13337, 13313]
+// Exports: parseEventHintOrCaptureContext, prepareEvent
 
 // Module 13341
-import _mod13302 from "module_13302" /* 13302 */;
-import _mod13306 from "module_13306" /* 13306 */;
-import _mod13322 from "module_13322" /* 13322 */;
-import _mod13335 from "module_13335" /* 13335 */;
-import _slicedToArray from "_slicedToArray" /* 13343 */;
+import _mod13301 from "module_13301" /* 13301 */;
+import _mod13313 from "module_13313" /* 13313 */;
+import _mod13329 from "module_13329" /* 13329 */;
+import _mod13337 from "module_13337" /* 13337 */;
+import _mod13344 from "module_13344" /* 13344 */;
 
-const require = globalThis.__r;
-let _require, dependencyMap;
+let breadcrumbs, data, filename, integrations;
 
-
-export const DEFAULT_TRANSPORT_BUFFER_SIZE = 64;
-export function createTransport(bufferSize, arg1) {
-  _require = bufferSize;
-  dependencyMap = arg1;
-  let promiseBuffer = arg2;
-  if (arg2 === undefined) {
-    let tmp2 = _require;
-    let tmp4 = require("module_13342");
-    let num = bufferSize.bufferSize;
-    const makePromiseBuffer = tmp4.makePromiseBuffer;
-    if (!num) {
-      num = 64;
-    }
-    promiseBuffer = makePromiseBuffer(num);
+function applyClientOptions(environment, environment2) {
+  let dist;
+  let maxValueLength;
+  let release;
+  ({ release, dist, maxValueLength } = environment2);
+  let num = 250;
+  environment = environment2.environment;
+  if (undefined !== maxValueLength) {
+    num = maxValueLength;
   }
-  let closure_3 = {};
-  let obj = {
-    send(arg0) {
-      const items = [];
-      let tmp = bufferSize;
-      const tmp2 = closure_1;
-      let obj = bufferSize(closure_1[1]);
-      obj.forEachEnvelopeItem(arg0, (arg0, arg1) => {
-        const obj = _mod13322;
-        const result = obj.envelopeItemTypeToDataCategory(arg1);
-        const obj2 = _slicedToArray;
-        if (obj2.isRateLimited(closure_3, result)) {
-          let tmp4;
-          if ("event" === arg1) {
-            const _Array = Array;
-            let tmp6;
-            if (Array.isArray(arg0)) {
-              tmp6 = arg0[1];
-            }
-            tmp4 = tmp6;
-          }
-          items.recordDroppedEvent("ratelimit_backoff", result, tmp4);
-        } else {
-          items.push(arg0);
+  const DEFAULT_ENVIRONMENT = environment.environment || environment || _mod13329.DEFAULT_ENVIRONMENT;
+  environment.environment = DEFAULT_ENVIRONMENT;
+  const tmp3 = !environment.release && release;
+  if (tmp3) {
+    environment.release = release;
+  }
+  const tmp4 = !environment.dist && dist;
+  if (tmp4) {
+    environment.dist = dist;
+  }
+  if (environment.message) {
+    const obj = _mod13301;
+    environment.message = obj.truncate(environment.message, num);
+  }
+  const tmp7 = environment.exception && environment.exception.values && environment.exception.values[0] && (environment.exception && environment.exception.values && environment.exception.values[0]).value;
+  if (tmp7) {
+    const obj2 = _mod13301;
+    (environment.exception && environment.exception.values && environment.exception.values[0]).value = obj2.truncate((environment.exception && environment.exception.values && environment.exception.values[0]).value, num);
+  }
+  const request = environment.request;
+  const tmp10 = request && request.url;
+  if (tmp10) {
+    const obj3 = _mod13301;
+    request.url = obj3.truncate(request.url, num);
+  }
+}
+function applyDebugIds(exception, arg1) {
+  const obj = _mod13344;
+  const filenameToDebugIdMap = obj.getFilenameToDebugIdMap(arg1);
+  try {
+    const values = exception.exception.values;
+    let item = values.forEach((stacktrace) => {
+      const frames = stacktrace.stacktrace.frames;
+      const item = frames.forEach((filename) => {
+        filename = closure_1_0 && filename.filename;
+        if (filename) {
+          filename.debug_id = closure_1_0[filename.filename];
         }
       });
-      if (0 === items.length) {
-        let tmpResult = tmp(tmp2[3]);
-        return tmpResult.resolvedSyncPromise({});
-      } else {
-        let tmpResult2 = tmp(tmp2[1]);
-        closure_1 = tmpResult2.createEnvelope(arg0[0], items);
-        function recordEnvelopeLoss(arg0) {
-
-        }
-        let tmp4 = recordEnvelopeLoss;
-        const addResult = recordEnvelopeLoss.add(() => {
-          let obj2;
-          let obj = { body: obj2.serializeEnvelope(closure_1) };
-          obj2 = _mod13322;
-          const promise = closure_1(obj);
-          return promise.then((statusCode) => {
-            let DEBUG_BUILD = undefined !== statusCode.statusCode;
-            if (DEBUG_BUILD) {
-              DEBUG_BUILD = statusCode.statusCode < 200 || statusCode.statusCode >= 300;
-              const tmp = statusCode.statusCode < 200 || statusCode.statusCode >= 300;
-            }
-            if (DEBUG_BUILD) {
-              DEBUG_BUILD = items(closure_1[4]).DEBUG_BUILD;
-            }
-            if (DEBUG_BUILD) {
-              const logger = items(closure_1[5]).logger;
-              const _HermesInternal = HermesInternal;
-              logger.warn("Sentry responded with status code " + statusCode.statusCode + " to sent event.");
-            }
-            const obj = items(closure_1[2]);
-            closure_3 = obj.updateRateLimits(closure_3, statusCode);
-            return statusCode;
-          }, (arg0) => {
-            let recordDroppedEvent;
-            if (typeof recordEnvelopeLoss === "function") {
-              let tmp = arg0;
-              const network_error = "network_error";
-              let obj = recordDroppedEvent(closure_1[1]);
-              let tmp4 = closure_1_1;
-              obj.forEachEnvelopeItem(closure_1_1, (arg0, arg1) => {
-                let tmp;
-                if ("event" === arg1) {
-                  const _Array = Array;
-                  let tmp4;
-                  if (Array.isArray(arg0)) {
-                    tmp4 = arg0[1];
-                  }
-                  tmp = tmp4;
-                }
-                recordDroppedEvent = recordDroppedEvent.recordDroppedEvent;
-                const obj = items(closure_3_1[1]);
-                recordDroppedEvent(network_error, obj.envelopeItemTypeToDataCategory(arg1), tmp);
-              });
-              throw arg0;
-            } else {
-              throw new TypeError("Trying to call a non-function");
-            }
-          });
-        });
-        return addResult.then((result) => result, (arg0) => {
-          if (arg0 instanceof _mod13335.SentryError) {
-            if (_mod13306.DEBUG_BUILD) {
-              const logger = tmp(13278).logger;
-              logger.error("Skipped sending event because buffer is full.");
-            }
-            if (typeof recordEnvelopeLoss === "function") {
-              const queue_overflow = "queue_overflow";
-              const tmpResult = _mod13322;
-              tmpResult.forEachEnvelopeItem(closure_1, (arg0, arg1) => {
-                let tmp;
-                if ("event" === arg1) {
-                  const _Array = Array;
-                  let tmp4;
-                  if (Array.isArray(arg0)) {
-                    tmp4 = arg0[1];
-                  }
-                  tmp = tmp4;
-                }
-                recordDroppedEvent = recordDroppedEvent.recordDroppedEvent;
-                const obj = items(closure_3_1[1]);
-                recordDroppedEvent(network_error, obj.envelopeItemTypeToDataCategory(arg1), tmp);
-              });
-              const tmpResult2 = _mod13302;
-              return tmpResult2.resolvedSyncPromise({});
-            } else {
-              throw new TypeError("Trying to call a non-function");
-            }
-          } else {
-            throw arg0;
+    });
+  } catch (err) {
+  }
+}
+function applyDebugMeta(exception) {
+  const obj = {};
+  try {
+    const values = exception.exception.values;
+    let item = values.forEach((stacktrace) => {
+      const frames = stacktrace.stacktrace.frames;
+      const item = frames.forEach((debug_id) => {
+        if (debug_id.debug_id) {
+          if (debug_id.abs_path) {
+            obj[debug_id.abs_path] = debug_id.debug_id;
+          } else if (debug_id.filename) {
+            obj[debug_id.filename] = debug_id.debug_id;
           }
-        });
-      }
-    },
-    flush(arg0) {
-      return promiseBuffer.drain(arg0);
+          delete tmp["debug_id"];
+        }
+      });
+    });
+  } catch (err) {
+  }
+  if (0 !== Object.keys(obj).length) {
+    exception.debug_meta = exception.debug_meta || {};
+    let images = exception.debug_meta.images;
+    const debug_meta = exception.debug_meta;
+    if (!images) {
+      images = [];
     }
-  };
-  return obj;
+    debug_meta.images = images;
+    images = exception.debug_meta.images;
+    const _Object = Object;
+    const entries = Object.entries(obj);
+    const item1 = entries.forEach((item) => {
+      let tmp;
+      let tmp2;
+      [tmp, tmp2] = item;
+      images.push({ type: "sourcemap", code_file: tmp, debug_id: tmp2 });
+    });
+  }
+}
+let closure_5 = ["user", "level", "extra", "contexts", "tags", "fingerprint", "requestSession", "propagationContext"];
+
+export { applyClientOptions };
+export { applyDebugIds };
+export { applyDebugMeta };
+export function parseEventHintOrCaptureContext(captureContext) {
+  if (captureContext) {
+    let tmp5;
+    const tmp3 = captureContext instanceof _mod13313.Scope || typeof captureContext === "function";
+    if (tmp3) {
+      tmp5 = { captureContext };
+      const obj = { captureContext };
+    } else {
+      const _Object = Object;
+      const keys = Object.keys(captureContext);
+      tmp5 = captureContext;
+    }
+    return tmp5;
+  }
+}
+export function prepareEvent(normalizeDepth, event_id, event_id2, clone, emit, getScopeData) {
+  let timestamp;
+  let uuid4Result;
+  normalizeDepth = normalizeDepth.normalizeDepth;
+  let num = 3;
+  if (undefined !== normalizeDepth) {
+    num = normalizeDepth;
+  }
+  const normalizeMaxBreadth = normalizeDepth.normalizeMaxBreadth;
+  let num2 = 1000;
+  if (undefined !== normalizeMaxBreadth) {
+    num2 = normalizeMaxBreadth;
+  }
+  let obj = { event_id: uuid4Result, timestamp };
+  let merged = Object.assign(event_id);
+  uuid4Result = event_id.event_id || event_id2.event_id;
+  if (!uuid4Result) {
+    const tmp4 = num;
+    let tmp5 = num2;
+    let obj2 = num(num2[0]);
+    uuid4Result = obj2.uuid4();
+  }
+  timestamp = event_id.timestamp;
+  if (!timestamp) {
+    let obj3 = num(num2[1]);
+    timestamp = obj3.dateTimestampInSeconds();
+  }
+  integrations = event_id2.integrations;
+  if (!integrations) {
+    const integrations1 = normalizeDepth.integrations;
+    integrations = integrations1.map((name) => name.name);
+  }
+  applyClientOptions(obj, normalizeDepth);
+  if (integrations.length > 0) {
+    obj.sdk = obj.sdk || {};
+    let integrations2 = obj.sdk.integrations;
+    const sdk = obj.sdk;
+    if (!integrations2) {
+      integrations2 = [];
+    }
+    const items = [];
+    HermesBuiltin.arraySpread(items, integrations, HermesBuiltin.arraySpread(items, integrations2, 0));
+    sdk.integrations = items;
+  }
+  const tmp14 = emit;
+  if (tmp14) {
+    emit.emit("applyFrameMetadata", event_id);
+  }
+  if (undefined === event_id.type) {
+    applyDebugIds(obj, normalizeDepth.stackParser);
+  }
+  const captureContext = event_id2.captureContext;
+  let obj4 = clone;
+  if (captureContext) {
+    let cloneResult;
+    if (clone) {
+      cloneResult = clone.clone();
+    } else {
+      const self = this;
+      const self2 = this;
+      cloneResult = new num(num2[9]).Scope();
+    }
+    cloneResult.update(captureContext);
+    obj4 = cloneResult;
+  }
+  if (event_id2.mechanism) {
+    const obj6 = num(num2[0]);
+    const result = obj6.addExceptionMechanism(obj, event_id2.mechanism);
+  }
+  if (emit) {
+    let eventProcessors = emit.getEventProcessors();
+  } else {
+    eventProcessors = [];
+  }
+  const obj7 = num(num2[2]);
+  const globalScope = obj7.getGlobalScope();
+  const scopeData = globalScope.getScopeData();
+  if (getScopeData) {
+    const scopeData1 = getScopeData.getScopeData();
+    const tmp24Result = num(num2[3]);
+    tmp24Result.mergeScopeData(scopeData, scopeData1);
+  }
+  if (obj4) {
+    const scopeData2 = obj4.getScopeData();
+    const tmp24Result4 = num(num2[3]);
+    tmp24Result4.mergeScopeData(scopeData, scopeData2);
+  }
+  let tmp31 = event_id2.attachments || [];
+  const items1 = [...scopeData.attachments];
+  if (items1.length) {
+    event_id2.attachments = items1;
+  }
+  const tmp24Result5 = num(num2[3]);
+  const result1 = tmp24Result5.applyScopeDataToEvent(obj, scopeData);
+  const items2 = [...scopeData.eventProcessors];
+  const tmp24Result6 = num(num2[4]);
+  const result2 = tmp24Result6.notifyEventProcessors(items2, obj, event_id2);
+  return result2.then((breadcrumbs) => {
+    let breadcrumbs1;
+    let normalizer;
+    let normalizer2;
+    let normalizer3;
+    const tmp = breadcrumbs;
+    if (tmp) {
+      applyDebugMeta(breadcrumbs);
+    }
+    let tmp5 = breadcrumbs;
+    if (typeof num === "number") {
+      num2 = 0;
+      tmp5 = breadcrumbs;
+      if (num > 0) {
+        let closure_0 = tmp4;
+        let closure_1 = num2;
+        let tmp31 = null;
+        if (breadcrumbs) {
+          let obj = {};
+          let merged = Object.assign(breadcrumbs);
+          breadcrumbs = breadcrumbs.breadcrumbs;
+          if (breadcrumbs) {
+            let obj2 = {
+              breadcrumbs: breadcrumbs1.map((data) => {
+                        let normalizer;
+                        const obj = {};
+                        const merged = Object.assign(data);
+                        data = data.data;
+                        if (data) {
+                          const obj2 = { data: normalizer.normalize(data.data, closure_0, closure_1) };
+                          normalizer = num(num2[8]);
+                          data = obj2;
+                        }
+                        const merged1 = Object.assign(data);
+                        return obj;
+                      })
+            };
+            breadcrumbs1 = breadcrumbs.breadcrumbs;
+            breadcrumbs = obj2;
+          }
+          let merged1 = Object.assign(breadcrumbs);
+          let user = breadcrumbs.user;
+          if (user) {
+            const obj3 = { user: normalizer.normalize(breadcrumbs.user, num, num2) };
+            normalizer = _mod13337;
+            user = obj3;
+          }
+          const merged2 = Object.assign(user);
+          let contexts = breadcrumbs.contexts;
+          if (contexts) {
+            const obj4 = { contexts: normalizer2.normalize(breadcrumbs.contexts, num, num2) };
+            normalizer2 = _mod13337;
+            contexts = obj4;
+          }
+          const merged3 = Object.assign(contexts);
+          let extra = breadcrumbs.extra;
+          if (extra) {
+            const obj5 = { extra: normalizer3.normalize(breadcrumbs.extra, num, num2) };
+            normalizer3 = _mod13337;
+            extra = obj5;
+          }
+          const merged4 = Object.assign(extra);
+          const tmp27 = breadcrumbs.contexts && breadcrumbs.contexts.trace && obj.contexts;
+          if (tmp27) {
+            obj.contexts.trace = breadcrumbs.contexts.trace;
+            if (breadcrumbs.contexts.trace.data) {
+              const trace = obj.contexts.trace;
+              const normalizer4 = _mod13337;
+              trace.data = normalizer4.normalize(breadcrumbs.contexts.trace.data, num, num2);
+            }
+          }
+          if (breadcrumbs.spans) {
+            const spans = breadcrumbs.spans;
+            obj.spans = spans.map((data) => {
+              let normalizer;
+              const obj = {};
+              const merged = Object.assign(data);
+              data = data.data;
+              if (data) {
+                const obj2 = { data: normalizer.normalize(data.data, closure_0, closure_1) };
+                normalizer = num(num2[8]);
+                data = obj2;
+              }
+              const merged1 = Object.assign(data);
+              return obj;
+            });
+          }
+          tmp31 = obj;
+          const tmp30 = breadcrumbs.contexts && breadcrumbs.contexts.flags && obj.contexts;
+          if (tmp30) {
+            const contexts2 = obj.contexts;
+            const normalizer5 = _mod13337;
+            num = 3;
+            contexts2.flags = normalizer5.normalize(breadcrumbs.contexts.flags, 3, num2);
+            tmp31 = obj;
+          }
+        }
+        tmp5 = tmp31;
+      }
+    }
+    return tmp5;
+  });
 }

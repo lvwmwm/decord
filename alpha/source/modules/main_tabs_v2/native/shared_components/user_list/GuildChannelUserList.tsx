@@ -1,22 +1,22 @@
-// Module ID: 11779
-// Function ID: 11780
+// Module ID: 11788
+// Function ID: 11789
 // Name: GuildChannelUserList
-// Dependencies: [32, 19, 17, 7510, 4989, 5052, 5011, 5043, 1385, 1072, 21, 9215, 6956, 550, 7515, 7387, 504, 7281, 5077, 11780, 9111, 6173, 5194, 1113, 8821, 575, 7282, 10852, 2]
+// Dependencies: [32, 19, 17, 7513, 4991, 5054, 5013, 5045, 1385, 1072, 21, 9221, 504, 10644, 6959, 550, 7518, 7390, 7284, 5079, 11789, 9117, 6175, 5196, 1113, 8827, 575, 7285, 10861, 2]
 
-// Module 11779 (GuildChannelUserList)
+// Module 11788 (GuildChannelUserList)
 import react_native from "react-native" /* 17 */;
 import intl2 from "intl" /* 1113 */;
-import PermissionUtilsAll from "PermissionUtils" /* 5077 */;
-import UserUtilsDefault from "UserUtils" /* 5194 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 6173 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8821 */;
+import PermissionUtilsAll from "PermissionUtils" /* 5079 */;
+import UserUtilsDefault from "UserUtils" /* 5196 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 6175 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8827 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelMemberStore_mod from "ChannelMemberStore" /* 7510 */;
-import ChannelStore from "ChannelStore" /* 4989 */;
-import GuildMemberStore from "GuildMemberStore" /* 5052 */;
-import GuildStore from "GuildStore" /* 5011 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5043 */;
+import ChannelMemberStore_mod from "ChannelMemberStore" /* 7513 */;
+import ChannelStore from "ChannelStore" /* 4991 */;
+import GuildMemberStore from "GuildMemberStore" /* 5054 */;
+import GuildStore from "GuildStore" /* 5013 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5045 */;
 import UserStore from "UserStore" /* 1385 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
@@ -44,15 +44,15 @@ const memoResult = react.memo(function GuildChannelUserList(searchable) {
   let disableThemedGradient;
   let inActionSheet;
   let insetEnd;
-  let items17;
+  let items20;
   let listActionHeight;
   let listActionRenderer;
   let listStyleOverride;
   let mapped;
-  let obj8;
+  let obj10;
   let obj9;
   let searchableEmptyState;
-  let tmp29;
+  let tmp33;
   let flag = searchable.searchable;
   if (flag === undefined) {
     flag = false;
@@ -75,12 +75,13 @@ const memoResult = react.memo(function GuildChannelUserList(searchable) {
   if (canShowDisplayNameStylesFont === undefined) {
     canShowDisplayNameStylesFont = false;
   }
-  let stateFromStoresArray;
+  let groups;
+  let stateFromStoresArray1;
   closure_20 = undefined;
-  let memo3;
+  let memo4;
   let tmp2 = onUserPress;
   let tmp = guildId;
-  const analyticsLocations = guildId(onUserPress[15])().analyticsLocations;
+  const analyticsLocations = guildId(onUserPress[17])().analyticsLocations;
   let obj = flag3;
   const ref = flag3.useRef(null);
   const ref1 = flag3.useRef(null);
@@ -120,45 +121,60 @@ const memoResult = react.memo(function GuildChannelUserList(searchable) {
   }, items);
   let tmp10 = "" !== str.trim();
   let closure_10 = tmp10;
-  let tmp11 = onUserLongPress(flag3.useState(flag), 2);
-  const first2 = tmp11[0];
-  let closure_12 = tmp11[1];
-  const items1 = [first, tmp10];
+  let tmp11 = channelId;
+  let obj2 = channelId(onUserPress[12]);
+  const items1 = [groups];
+  const items2 = [guildId, first];
+  const tmp12 = groups;
+  const stateFromStoresArray = obj2.useStateFromStoresArray(items1, () => first.filter((record) => stateFromStoresArray.isMember(guildId, record.record.id)), items2);
+  const items3 = [tmp10, stateFromStoresArray];
+  const memo = flag3.useMemo(() => {
+    let mapped = null;
+    if (closure_10) {
+      mapped = stateFromStoresArray.map((record) => record.record.id);
+    }
+    return mapped;
+  }, items3);
+  let tmp15 = guildId(onUserPress[13])(guildId, memo);
+  const tmp16 = onUserLongPress(flag3.useState(flag), 2);
+  const first2 = tmp16[0];
+  let closure_13 = tmp16[1];
+  const items4 = [stateFromStoresArray, tmp10];
   const effect1 = flag3.useEffect(() => {
     let closure_0;
-    if (first.length <= 0) {
+    if (stateFromStoresArray.length <= 0) {
       const tmp = closure_10;
       if (tmp) {
         const _setTimeout = setTimeout;
         const timeout = setTimeout(() => {
-          closure_1_12(false);
+          closure_1_13(false);
         }, 300);
         return () => {
           clearTimeout(closure_0);
         };
       }
     }
-    closure_12(true);
-  }, items1);
-  const items2 = [ref, str];
+    closure_13(true);
+  }, items4);
+  const items5 = [ref, str];
   const layoutEffect = flag3.useLayoutEffect(() => {
     const current = ref.current;
     if (current != null) {
       current.scrollToTop(false);
     }
-  }, items2);
-  const items3 = [first1, guildId];
-  const items4 = [flag, searchableEmptyState, first2, str];
+  }, items5);
+  const items6 = [first1, guildId];
+  const items7 = [flag, searchableEmptyState, first2, str];
   const callback = flag3.useCallback((str) => {
     first1.search(str);
     closure_6(str);
     if ("" !== str.trim()) {
-      const obj = guildId(onUserPress[12]);
+      const obj = guildId(onUserPress[14]);
       const members = obj.requestMembers(guildId, str);
     }
-  }, items3);
+  }, items6);
   let closure_9 = tmp10;
-  const memo = flag3.useMemo(() => {
+  const memo1 = flag3.useMemo(() => {
     let tmp = null;
     if (flag) {
       tmp = null;
@@ -171,10 +187,10 @@ const memoResult = react.memo(function GuildChannelUserList(searchable) {
       }
     }
     return tmp;
-  }, items4);
-  let obj2 = channelId(onUserPress[16]);
-  const items5 = [closure_9];
-  const stateFromStoresObject = obj2.useStateFromStoresObject(items5, () => {
+  }, items7);
+  const obj3 = channelId(onUserPress[12]);
+  const items8 = [closure_9];
+  const stateFromStoresObject = obj3.useStateFromStoresObject(items8, () => {
     let tmp3 = null;
     const getProps = ChannelMemberStore.getProps;
     const tmp2 = guildId;
@@ -183,21 +199,21 @@ const memoResult = react.memo(function GuildChannelUserList(searchable) {
     }
     return getProps(tmp2, tmp3);
   });
-  const groups = stateFromStoresObject.groups;
+  groups = stateFromStoresObject.groups;
   const rows = stateFromStoresObject.rows;
-  const obj3 = channelId(onUserPress[16]);
-  const items6 = [first];
-  const stateFromStores = obj3.useStateFromStores(items6, () => {
+  let obj4 = channelId(onUserPress[12]);
+  const items9 = [stateFromStoresArray];
+  const stateFromStores = obj4.useStateFromStores(items9, () => {
     if (channelId !== metroImportDefault) {
       return ChannelStore.getChannel(tmp);
     }
   });
-  let obj4 = channelId(onUserPress[16]);
-  const items7 = [stateFromStores];
-  const stateFromStores1 = obj4.useStateFromStores(items7, () => stateFromStores.getChannelId());
-  const tmp21 = guildId(onUserPress[17])();
-  const items8 = [guildId];
-  const memo1 = flag3.useMemo(() => {
+  let obj5 = channelId(onUserPress[12]);
+  const items10 = [stateFromStores];
+  const stateFromStores1 = obj5.useStateFromStores(items10, () => stateFromStores.getChannelId());
+  const tmp25 = guildId(onUserPress[18])();
+  const items11 = [guildId];
+  const memo2 = flag3.useMemo(() => {
     const guild = GuildStore.getGuild(guildId);
     let guildVisualOwnerId;
     if (null != guild) {
@@ -205,15 +221,15 @@ const memoResult = react.memo(function GuildChannelUserList(searchable) {
       guildVisualOwnerId = obj.getGuildVisualOwnerId(guild);
     }
     return guildVisualOwnerId;
-  }, items8);
+  }, items11);
   const ref2 = flag3.useRef(0);
   const ref3 = flag3.useRef(0);
   let closure_2 = tmp10;
-  let closure_6 = tmp21;
-  const items9 = [channelId, guildId, tmp10, tmp21, ref2, ref, ref3];
-  const memo2 = flag3.useMemo(() => {
+  let closure_6 = tmp25;
+  const items12 = [channelId, guildId, tmp10, tmp25, ref2, ref, ref3];
+  const memo3 = flag3.useMemo(() => {
     let rowHeight;
-    return guildId(onUserPress[13])(() => {
+    return guildId(onUserPress[15])(() => {
       let tmp = null == ref.current || closure_1_2;
       if (!tmp) {
         tmp = channelId !== canShowDisplayNameStylesFont && null == channel.getChannel(tmp2);
@@ -221,40 +237,40 @@ const memoResult = react.memo(function GuildChannelUserList(searchable) {
       }
       if (!tmp) {
         const obj2 = { guildId, channelId, y: ref2.current, height: ref3.current, rowHeight };
-        const obj = guildId(ref[14]);
+        const obj = guildId(ref[16]);
         const result = obj.subscribeChannelDimensions(obj2);
       }
     }, 50);
-  }, items9);
-  const items10 = [memo2];
-  const items11 = [memo2];
+  }, items12);
+  const items13 = [memo3];
+  const items14 = [memo3];
   const callback1 = flag3.useCallback((nativeEvent) => {
     ref2.current = nativeEvent.nativeEvent.layout.height;
-    memo2();
-  }, items10);
+    memo3();
+  }, items13);
   const callback2 = flag3.useCallback((nativeEvent) => {
     ref3.current = nativeEvent.nativeEvent.contentOffset.y;
-    memo2();
-  }, items11);
-  let obj5 = { channel: stateFromStores, disable: tmp29 };
-  tmp29 = tmp10;
-  const tmp28 = guildId(onUserPress[19]);
+    memo3();
+  }, items14);
+  const obj6 = { channel: stateFromStores, disable: tmp33 };
+  tmp33 = tmp10;
+  const tmp32 = guildId(onUserPress[20]);
   if (!tmp10) {
-    tmp29 = !flag2;
+    tmp33 = !flag2;
   }
-  const items12 = [stateFromStores, memo2];
-  ({ listActionRenderer, listActionHeight } = tmp28(obj5));
-  tmp28(obj5);
+  const items15 = [stateFromStores, memo3];
+  ({ listActionRenderer, listActionHeight } = tmp32(obj6));
+  tmp32(obj6);
   const effect2 = obj.useEffect(() => {
     if (null != stateFromStores) {
-      memo2();
+      memo3();
     }
-  }, items12);
-  const items13 = [groups, stateFromStores1];
-  const tmp17Result = channelId(tmp2[16]);
-  stateFromStoresArray = tmp17Result.useStateFromStoresArray(items13, () => {
+  }, items15);
+  const items16 = [tmp12, stateFromStores1];
+  const tmp11Result = tmp11(tmp2[12]);
+  stateFromStoresArray1 = tmp11Result.useStateFromStoresArray(items16, () => {
     if (null != roleId) {
-      let obj = channelId(onUserPress[20]);
+      let obj = channelId(onUserPress[21]);
       const tmp4 = guildId;
       if (!obj.isEveryoneRoleId(guildId, tmp)) {
         let tmp5 = canShowDisplayNameStylesFont;
@@ -299,20 +315,20 @@ const memoResult = react.memo(function GuildChannelUserList(searchable) {
     }
     return [];
   });
-  let tmp32 = null != roleId;
-  if (tmp32) {
-    const tmp17Result2 = channelId(tmp2[20]);
-    tmp32 = !tmp17Result2.isEveryoneRoleId(guildId, roleId);
+  let tmp36 = null != roleId;
+  if (tmp36) {
+    const tmp11Result2 = tmp11(tmp2[21]);
+    tmp36 = !tmp11Result2.isEveryoneRoleId(guildId, roleId);
   }
-  closure_20 = tmp32;
-  const items14 = [guildId, roleId, tmp32, tmp10, first];
-  memo3 = obj.useMemo(() => {
+  closure_20 = tmp36;
+  const items17 = [guildId, roleId, tmp36, tmp10, stateFromStoresArray];
+  memo4 = obj.useMemo(() => {
     const tmp = closure_20;
     if (tmp) {
       let found;
       const tmp2 = closure_9;
       if (tmp2) {
-        found = first.filter((record) => {
+        found = stateFromStoresArray.filter((record) => {
           const member = groups.getMember(guildId, record.record.id);
           let found;
           if (member != null) {
@@ -326,17 +342,17 @@ const memoResult = react.memo(function GuildChannelUserList(searchable) {
       }
       return found;
     }
-    found = first;
-  }, items14);
-  const items15 = [groups, memo3, tmp32];
-  const items16 = [tmp32, stateFromStoresArray, memo3, tmp10, guildId, rows, groups, memo1, onUserPress, flag3, channelId, stateFromStores1, onUserLongPress, analyticsLocations, isNameplatedList, canShowDisplayNameStylesFont];
+    found = stateFromStoresArray;
+  }, items17);
+  const items18 = [groups, memo4, tmp36];
+  const items19 = [tmp36, stateFromStoresArray1, memo4, tmp10, guildId, rows, groups, memo2, onUserPress, flag3, channelId, stateFromStores1, onUserLongPress, analyticsLocations, isNameplatedList, canShowDisplayNameStylesFont];
   const callback3 = obj.useCallback((arg0) => {
     let count;
     let intl;
     let obj;
     let obj2;
     let title;
-    if (memo3.length > 0) {
+    if (memo4.length > 0) {
       const element = { type: "section", props: obj };
       obj = { title: intl.string(intl2.t["zkoeq/"]) };
       intl = intl2.intl;
@@ -360,8 +376,8 @@ const memoResult = react.memo(function GuildChannelUserList(searchable) {
         }
       }
     }
-  }, items15);
-  let tmp35Result = null;
+  }, items18);
+  let tmp39Result = null;
   const callback4 = obj.useCallback((arg0, arg1) => {
     let closure_1;
     let colorString;
@@ -382,11 +398,11 @@ const memoResult = react.memo(function GuildChannelUserList(searchable) {
     if (tmp) {
       let tmp2 = closure_9;
       if (!tmp2) {
-        if (arg1 < stateFromStoresArray.length) {
+        if (arg1 < stateFromStoresArray1.length) {
           let tmp5 = stateFromStores1;
           const user1 = stateFromStores1.getUser(tmp4.userId);
           if (null != user1) {
-            let obj = { user: user1, guildMember: tmp4, end: arg1 === stateFromStoresArray.length - 1 };
+            let obj = { user: user1, guildMember: tmp4, end: arg1 === stateFromStoresArray1.length - 1 };
             tmp3 = obj;
           }
         }
@@ -397,7 +413,7 @@ const memoResult = react.memo(function GuildChannelUserList(searchable) {
         const memberListMember = tmp3.memberListMember;
         ({ guildMember, comparator: comparator2 } = tmp3);
         let obj2 = {
-          type: memo1.NONE,
+          type: memo2.NONE,
           user,
           nickname: nick,
           usernameColor: colorString,
@@ -499,7 +515,7 @@ const memoResult = react.memo(function GuildChannelUserList(searchable) {
         if (null != memberListMember) {
           isOwner = memberListMember.isOwner;
         } else {
-          isOwner = memo1 === user.id;
+          isOwner = memo2 === user.id;
         }
         fn = undefined;
         if (null != onUserLongPress) {
@@ -540,9 +556,9 @@ const memoResult = react.memo(function GuildChannelUserList(searchable) {
     if (tmp8) {
       let num3 = 1;
       let tmp15;
-      const diff = memo3.length - 1;
-      if (arg1 < memo3.length) {
-        tmp15 = memo3[arg1];
+      const diff = memo4.length - 1;
+      if (arg1 < memo4.length) {
+        tmp15 = memo4[arg1];
       }
       if (null != tmp15) {
         const record = tmp15.record;
@@ -567,52 +583,52 @@ const memoResult = react.memo(function GuildChannelUserList(searchable) {
         }
       }
     }
-  }, items16);
+  }, items19);
   if (flag) {
-    const obj6 = { children: items17 };
-    const obj7 = { style: obj8, children: ref3(channelId(tmp2[26]).SearchBar, obj9) };
-    obj8 = { marginHorizontal: tmp(tmp2[25]).space.PX_16 };
-    obj9 = { size: "md", onChange: callback, ref: ref1 };
-    items17 = [ref3(isNameplatedList, obj7), memo];
-    tmp35Result = tmp35(tmp36, obj6);
+    const obj7 = { children: items20 };
+    const obj8 = { style: obj9, children: ref3(tmp11(tmp2[27]).SearchBar, obj10) };
+    obj10 = { size: "md", onChange: callback, ref: ref1 };
+    obj9 = { marginHorizontal: tmp(tmp2[26]).space.PX_16 };
+    items20 = [ref3(isNameplatedList, obj8), memo1];
+    tmp39Result = tmp39(tmp40, obj7);
   }
-  const items18 = [tmp35Result, ];
-  const obj10 = { ref, sections: null, getItemProps: null, getSectionProps: null, renderListHeader: null, listHeaderSize: null, onLayout: null, onScroll: null, disableStickySections: null, inActionSheet: null, disableThemedGradient: null, listStyleOverride: null, disableBottomSafeZone: null, insetEnd: null };
-  const tmp40 = ref3;
-  if (tmp32) {
-    let items19;
+  const items21 = [tmp39Result, ];
+  const obj11 = { ref, sections: null, getItemProps: null, getSectionProps: null, renderListHeader: null, listHeaderSize: null, onLayout: null, onScroll: null, disableStickySections: null, inActionSheet: null, disableThemedGradient: null, listStyleOverride: null, disableBottomSafeZone: null, insetEnd: null };
+  const tmp44 = ref3;
+  if (tmp36) {
+    let items22;
     if (!tmp10) {
-      items19 = [stateFromStoresArray.length];
+      items22 = [stateFromStoresArray1.length];
     }
-    obj10.sections = items19;
-    obj10.getItemProps = callback4;
-    obj10.getSectionProps = callback3;
-    obj10.renderListHeader = listActionRenderer;
-    obj10.listHeaderSize = listActionHeight;
-    obj10.onLayout = callback1;
-    obj10.onScroll = callback2;
-    obj10.disableStickySections = disableStickySections;
-    obj10.inActionSheet = inActionSheet;
-    obj10.disableThemedGradient = disableThemedGradient;
-    obj10.listStyleOverride = listStyleOverride;
-    obj10.disableBottomSafeZone = disableBottomSafeZone;
-    obj10.insetEnd = insetEnd;
+    obj11.sections = items22;
+    obj11.getItemProps = callback4;
+    obj11.getSectionProps = callback3;
+    obj11.renderListHeader = listActionRenderer;
+    obj11.listHeaderSize = listActionHeight;
+    obj11.onLayout = callback1;
+    obj11.onScroll = callback2;
+    obj11.disableStickySections = disableStickySections;
+    obj11.inActionSheet = inActionSheet;
+    obj11.disableThemedGradient = disableThemedGradient;
+    obj11.listStyleOverride = listStyleOverride;
+    obj11.disableBottomSafeZone = disableBottomSafeZone;
+    obj11.insetEnd = insetEnd;
     let str2 = "guild-channel-user-list";
     if (tmp10) {
       str2 = "guild-channel-user-list-search-results";
     }
-    const obj11 = { children: items18 };
-    items18[1] = tmp40(tmp41, obj10, str2);
-    return stateFromStoresArray(memo2, obj11);
+    const obj12 = { children: items21 };
+    items21[1] = tmp44(tmp45, obj11, str2);
+    return stateFromStoresArray1(memo3, obj12);
   }
   if (tmp10) {
-    const items20 = [memo3.length];
-    mapped = items20;
+    const items23 = [memo4.length];
+    mapped = items23;
   } else {
     const groups1 = stateFromStoresObject.groups;
     mapped = groups1.map((count) => count.count);
   }
-  items19 = mapped;
+  items22 = mapped;
 });
 let result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/GuildChannelUserList.tsx");
 

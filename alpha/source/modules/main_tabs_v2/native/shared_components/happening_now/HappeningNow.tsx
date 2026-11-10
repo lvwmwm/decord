@@ -1,33 +1,33 @@
-// Module ID: 18455
-// Function ID: 18456
+// Module ID: 18484
+// Function ID: 18485
 // Name: HappeningNow
-// Dependencies: [32, 19, 17, 17608, 1072, 21, 7305, 5140, 575, 5420, 7202, 18456, 1252, 5721, 1500, 18457, 7387, 7412, 18464, 18465, 1652, 11367, 12, 7357, 1113, 18466, 18467, 18484, 18485, 18486, 18470, 18483, 18487, 18482, 18469, 1380, 2]
+// Dependencies: [32, 19, 17, 17635, 1072, 21, 7308, 5142, 575, 5422, 7205, 18485, 1252, 5723, 1500, 18486, 7390, 7415, 18493, 18494, 1652, 11376, 12, 7360, 1113, 18495, 18496, 18513, 18514, 18515, 18499, 18512, 18516, 18511, 18498, 1380, 2]
 
-// Module 18455 (HappeningNow)
+// Module 18484 (HappeningNow)
 import _mod12 from "module_12" /* 12 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import GlobalUtils from "GlobalUtils" /* 1380 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5420 */;
-import updateSharedValueIfChanged from "updateSharedValueIfChanged" /* 11367 */;
-import happeningNowRankingUtils from "happeningNowRankingUtils" /* 18464 */;
-import HappeningNowCardPlaceholder from "HappeningNowCardPlaceholder" /* 18466 */;
-import HappeningNowCardLiveStageDefault from "HappeningNowCardLiveStage" /* 18467 */;
-import HappeningNowCardUnifiedVCDefault from "HappeningNowCardUnifiedVC" /* 18469 */;
-import HappeningNowCardActivityDefault from "HappeningNowCardActivity" /* 18470 */;
-import HappeningNowCardEmbeddedActivityDefault from "HappeningNowCardEmbeddedActivity" /* 18482 */;
-import HappeningNowCardVoiceDefault from "HappeningNowCardVoice" /* 18483 */;
-import HappeningNowCardEventDefault from "HappeningNowCardEvent" /* 18484 */;
-import HappeningNowCardActiveChannelDefault from "HappeningNowCardActiveChannel" /* 18485 */;
-import HappeningNowCardUserDefault from "HappeningNowCardUser" /* 18486 */;
-import HappeningNowActions from "HappeningNowActions" /* 18487 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5422 */;
+import updateSharedValueIfChanged from "updateSharedValueIfChanged" /* 11376 */;
+import happeningNowRankingUtils from "happeningNowRankingUtils" /* 18493 */;
+import HappeningNowCardPlaceholder from "HappeningNowCardPlaceholder" /* 18495 */;
+import HappeningNowCardLiveStageDefault from "HappeningNowCardLiveStage" /* 18496 */;
+import HappeningNowCardUnifiedVCDefault from "HappeningNowCardUnifiedVC" /* 18498 */;
+import HappeningNowCardActivityDefault from "HappeningNowCardActivity" /* 18499 */;
+import HappeningNowCardEmbeddedActivityDefault from "HappeningNowCardEmbeddedActivity" /* 18511 */;
+import HappeningNowCardVoiceDefault from "HappeningNowCardVoice" /* 18512 */;
+import HappeningNowCardEventDefault from "HappeningNowCardEvent" /* 18513 */;
+import HappeningNowCardActiveChannelDefault from "HappeningNowCardActiveChannel" /* 18514 */;
+import HappeningNowCardUserDefault from "HappeningNowCardUser" /* 18515 */;
+import HappeningNowActions from "HappeningNowActions" /* 18516 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import HappeningNowConstants from "HappeningNowConstants" /* 17608 */;
-import ReanimatedHelperTypes from "ReanimatedHelperTypes" /* 7305 */;
-import createStyles from "createStyles" /* 5140 */;
+import HappeningNowConstants from "HappeningNowConstants" /* 17635 */;
+import ReanimatedHelperTypes from "ReanimatedHelperTypes" /* 7308 */;
+import createStyles from "createStyles" /* 5142 */;
 import size from "module_2" /* 2 */;
 
 let viewableItems;
@@ -256,7 +256,7 @@ obj2 = { paddingHorizontal: nativeDefault.space.PX_8, flex: 1 };
 let closure_13 = createStyles.createStyles(obj);
 const Gesture = LegacyBaseButton.Gesture;
 const NativeResult = Gesture.Native();
-const authStore3 = NativeResult.disallowInterruption(true);
+const gesture = NativeResult.disallowInterruption(true);
 const maintainVisibleContentPosition = { disabled: true };
 HappeningNowScrollView.displayName = "HappeningNowScrollView";
 const memoResult = react.memo(function HappeningNow(listRef) {
@@ -277,7 +277,7 @@ const memoResult = react.memo(function HappeningNow(listRef) {
   let tmp3 = data;
   let obj = listRef(data[14]);
   const isFocused1 = obj.useIsFocused();
-  let obj2 = { withoutUserCards: "HermesInternal", guildId: "Array", showMultipleActivitiesPerChannel: "en-BE", isFocused: isFocused1 };
+  let obj2 = { withoutUserCards: "HermesInternal", guildId: "Array", showMultipleActivitiesPerChannel: "en-BI", isFocused: isFocused1 };
   const tmp7 = _slicedToArray(isFocused1(data[15])(cards, obj2), 2);
   data = tmp7[0];
   const tmp6 = _slicedToArray;

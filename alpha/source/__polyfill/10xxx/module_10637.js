@@ -1,20 +1,17 @@
 // Module ID: 10637
 // Function ID: 10638
-// Dependencies: [41, 42, 93, 95, 98, 10470, 10452, 10453]
+// Dependencies: [41, 42, 93, 95, 98, 10621, 10454, 10455, 10471]
 
 // Module 10637
-import assignSimilarDate from "assignSimilarDate" /* 10452 */;
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10453 */;
-import now2 from "now" /* 10470 */;
+import ReferenceWithTimezone2 from "ReferenceWithTimezone" /* 10455 */;
+import _mod10471 from "module_10471" /* 10471 */;
+import _mod10621 from "module_10621" /* 10621 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import c3 from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
-let hasOwnProperty;
-
-let self = this;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -30,108 +27,12 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-let self2 = this;
-if (this) {
-  self2 = self.__createBinding;
-}
-if (!self2) {
-  let tmp3 = globalThis;
-  let _Object = Object;
-  self2 = Object.create ? ((arg0, __esModule, arg2, arg3) => {
-    function get() {
-      return __esModule[closure_1];
-    }
-    let closure_0 = __esModule;
-    let closure_1 = arg2;
-    let tmp = arg3;
-    if (undefined === arg3) {
-      tmp = arg2;
-    }
-    let ownPropertyDescriptor = Object.getOwnPropertyDescriptor(__esModule, arg2);
-    let tmp3 = ownPropertyDescriptor;
-    if (tmp3) {
-      let tmp4;
-      if ("get" in ownPropertyDescriptor) {
-        tmp4 = !__esModule.__esModule;
-      } else {
-        tmp4 = ownPropertyDescriptor.writable || ownPropertyDescriptor.configurable;
-      }
-      tmp3 = !tmp4;
-    }
-    if (!tmp3) {
-      ownPropertyDescriptor = { enumerable: true, get };
-      const obj = { enumerable: true, get };
-    }
-    Object.defineProperty(arg0, tmp, ownPropertyDescriptor);
-  }) : ((arg0, arg1, arg2, arg3) => {
-    let tmp = arg3;
-    if (undefined === arg3) {
-      tmp = arg2;
-    }
-    arg0[tmp] = arg1[arg2];
-  });
-}
-let tmp4 = self && self.__setModuleDefault;
-if (!tmp4) {
-  let tmp5 = globalThis;
-  const _Object2 = Object;
-  tmp4 = Object.create ? ((arg0, value) => {
-    const obj = { enumerable: true, value };
-    Object.defineProperty(arg0, "default", obj);
-  }) : ((arg0, arg1) => {
-    arg0.default = arg1;
-  });
-}
-let closure_8 = tmp4;
-let fn = self && self.__importStar;
-if (!fn) {
-  fn = function c(arg0) {
-    fn = Object.getOwnPropertyNames || ((obj) => {
-      const items = [];
-      for (const key10005 in obj) {
-        let _Object = Object;
-        hasOwnProperty = Object.prototype.hasOwnProperty;
-        if (!hasOwnProperty.call(obj, key10005)) {
-          continue;
-        } else {
-          items[items.length] = key10005;
-          continue;
-        }
-        continue;
-      }
-      return items;
-    });
-    return fn(arg0);
-  };
-  fn = (__esModule) => {
-    const tmp = __esModule;
-    if (tmp) {
-      if (__esModule.__esModule) {
-        return __esModule;
-      }
-    }
-    const obj = {};
-    if (null != __esModule) {
-      let num;
-      const arr = fn(__esModule);
-      for (let num = 0; num < arr.length; num = num + 1) {
-        if ("default" !== arr[num]) {
-          let tmp5 = self2(obj, __esModule, arr[num]);
-        }
-      }
-    }
-    closure_8(obj, __esModule);
-    return obj;
-  };
-}
-const now = fn(now2);
-const regExp = new RegExp("(nu|idag|imorgon|\u00F6vermorgon|ig\u00E5r|f\u00F6rrg\u00E5r|i\\s*f\u00F6rrg\u00E5r)(?:\\s*(?:p\u00E5\\s*)?(morgonen?|f\u00F6rmiddagen?|middagen?|eftermiddagen?|kv\u00E4llen?|natten?|midnatt))?(?=\\W|$)", "i");
-class SVCasualDateParser {
+class ENMergeRelativeDateRefiner {
   constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, SVCasualDateParser);
-    const obj = _getPrototypeOf(SVCasualDateParser);
+    _classCallCheck(this, ENMergeRelativeDateRefiner);
+    const obj = _getPrototypeOf(ENMergeRelativeDateRefiner);
     const tmp2 = _getPrototypeOf;
     const tmp3 = c3;
     if (_isNativeReflectConstruct()) {
@@ -143,184 +44,65 @@ class SVCasualDateParser {
     return tmp3(self, constructResult);
   }
 }
-_inherits(SVCasualDateParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+_inherits(ENMergeRelativeDateRefiner, _mod10471.MergingRefiner);
 const entry = {
-  key: "innerPattern",
-  value: function innerPattern(arg0) {
-    return regExp;
+  key: "patternBetween",
+  value: function patternBetween() {
+    return /^\s*$/i;
   }
 };
-let items = [
+const items = [
   entry,
   {
-    key: "innerExtract",
-    value: function innerExtract(refDate, arg1) {
-      let nowResult;
-      refDate = refDate.refDate;
-      const str = arg1[1] || "";
-      const formatted = str.toLowerCase();
-      const str2 = arg1[2] || "";
-      const formatted1 = str2.toLowerCase();
-      const parsingComponents = refDate.createParsingComponents();
-      if ("nu" === formatted) {
-        nowResult = now.now(refDate.reference);
-      } else if ("idag" === formatted) {
-        nowResult = now.today(refDate.reference);
-      } else {
-        if ("imorgon" !== formatted) {
-          if ("imorn" !== formatted) {
-            if ("ig\u00E5r" === formatted) {
-              const _Date2 = Date;
-              const self3 = this;
-              const self4 = this;
-              const date = new Date(refDate.getTime());
-              date.setDate(date.getDate() - 1);
-              assignSimilarDate.assignSimilarDate(parsingComponents, date);
-              assignSimilarDate.implySimilarTime(parsingComponents, date);
-              nowResult = parsingComponents;
-            } else if ("f\u00F6rrg\u00E5r" === formatted) {
-              const _Date = Date;
-              const self = this;
-              self2 = this;
-              const date1 = new Date(refDate.getTime());
-              date1.setDate(date1.getDate() - 2);
-              assignSimilarDate.assignSimilarDate(parsingComponents, date1);
-              assignSimilarDate.implySimilarTime(parsingComponents, date1);
-              nowResult = parsingComponents;
-            } else {
-              nowResult = parsingComponents;
-            }
-          }
+    key: "shouldMergeResults",
+    value: function shouldMergeResults(str, text, start) {
+      let match = str.match(this.patternBetween());
+      if (match) {
+        let tmp5 = null == str.match(/\s+(prima|dal)$/i);
+        null != text.text.match(/\s+(prima|dal)$/i);
+        if (tmp5) {
+          const str2 = text.text;
+          tmp5 = null == str2.match(/\s+(dopo|dal|fino)$/i);
         }
-        const _Date3 = Date;
-        const self5 = this;
-        const self6 = this;
-        const date2 = new Date(refDate.getTime());
-        date2.setDate(date2.getDate() + 1);
-        assignSimilarDate.assignSimilarDate(parsingComponents, date2);
-        assignSimilarDate.implySimilarTime(parsingComponents, date2);
-        nowResult = parsingComponents;
+        let tmp6 = !tmp5;
+        if (tmp6) {
+          start = start.start;
+          let value = start.get("day");
+          if (value) {
+            const start2 = start.start;
+            value = start2.get("month");
+          }
+          if (value) {
+            const start3 = start.start;
+            value = start3.get("year");
+          }
+          tmp6 = value;
+        }
+        match = tmp6;
       }
-      switch (formatted1) {
-        case "morgon":
-        {
-          nowResult.imply("hour", 6);
-          nowResult.imply("minute", 0);
-          nowResult.imply("second", 0);
-          nowResult.imply("millisecond", 0);
-          return nowResult;
-        }
-        case "morgonen":
-        {
-          nowResult.imply("hour", 6);
-          nowResult.imply("minute", 0);
-          nowResult.imply("second", 0);
-          nowResult.imply("millisecond", 0);
-          return nowResult;
-        }
-        case "f\u00F6rmiddag":
-        {
-          nowResult.imply("hour", 9);
-          nowResult.imply("minute", 0);
-          nowResult.imply("second", 0);
-          nowResult.imply("millisecond", 0);
-          break;
-        }
-        case "f\u00F6rmiddagen":
-        {
-          nowResult.imply("hour", 9);
-          nowResult.imply("minute", 0);
-          nowResult.imply("second", 0);
-          nowResult.imply("millisecond", 0);
-          break;
-        }
-        case "middag":
-        {
-          nowResult.imply("hour", 12);
-          nowResult.imply("minute", 0);
-          nowResult.imply("second", 0);
-          nowResult.imply("millisecond", 0);
-          break;
-        }
-        case "middagen":
-        {
-          nowResult.imply("hour", 12);
-          nowResult.imply("minute", 0);
-          nowResult.imply("second", 0);
-          nowResult.imply("millisecond", 0);
-          break;
-        }
-        case "eftermiddag":
-        {
-          nowResult.imply("hour", 15);
-          nowResult.imply("minute", 0);
-          nowResult.imply("second", 0);
-          nowResult.imply("millisecond", 0);
-          break;
-        }
-        case "eftermiddagen":
-        {
-          nowResult.imply("hour", 15);
-          nowResult.imply("minute", 0);
-          nowResult.imply("second", 0);
-          nowResult.imply("millisecond", 0);
-          break;
-        }
-        case "kv\u00E4ll":
-        {
-          nowResult.imply("hour", 20);
-          nowResult.imply("minute", 0);
-          nowResult.imply("second", 0);
-          nowResult.imply("millisecond", 0);
-          break;
-        }
-        case "kv\u00E4llen":
-        {
-          nowResult.imply("hour", 20);
-          nowResult.imply("minute", 0);
-          nowResult.imply("second", 0);
-          nowResult.imply("millisecond", 0);
-          break;
-        }
-        case "natt":
-        {
-          if ("midnatt" === formatted1) {
-            nowResult.imply("hour", 0);
-          } else {
-            nowResult.imply("hour", 2);
-          }
-          nowResult.imply("minute", 0);
-          nowResult.imply("second", 0);
-          nowResult.imply("millisecond", 0);
-          break;
-        }
-        case "natten":
-        {
-          if ("midnatt" === formatted1) {
-            nowResult.imply("hour", 0);
-          } else {
-            nowResult.imply("hour", 2);
-          }
-          nowResult.imply("minute", 0);
-          nowResult.imply("second", 0);
-          nowResult.imply("millisecond", 0);
-          break;
-        }
-        case "midnatt":
-        {
-          if ("midnatt" === formatted1) {
-            nowResult.imply("hour", 0);
-          } else {
-            nowResult.imply("hour", 2);
-          }
-          nowResult.imply("minute", 0);
-          nowResult.imply("second", 0);
-          nowResult.imply("millisecond", 0);
-          break;
-        }
+      return match;
+    }
+  },
+  {
+    key: "mergeResults",
+    value: function mergeResults(arg0, text, start) {
+      const parseDurationResult = _mod10621.parseDuration(text.text);
+      let reverseDurationResult = parseDurationResult;
+      const str = text.text;
+      if (null != str.match(/\s+(prima|dal)$/i)) {
+        reverseDurationResult = tmp(10454).reverseDuration(parseDurationResult);
       }
+      const ParsingComponents = tmp(10455).ParsingComponents;
+      const createRelativeFromReference = ParsingComponents.createRelativeFromReference;
+      const ReferenceWithTimezone = tmp(10455).ReferenceWithTimezone;
+      start = start.start;
+      const relativeFromReference = createRelativeFromReference(ReferenceWithTimezone.fromDate(start.date()), reverseDurationResult);
+      const reference = start.reference;
+      const index = text.index;
+      const parsingResult = new ReferenceWithTimezone2.ParsingResult(reference, index, "" + text.text + arg0 + start.text, relativeFromReference);
+      return parsingResult;
     }
   }
 ];
 
-export default _createClass(SVCasualDateParser, items);
+export default _createClass(ENMergeRelativeDateRefiner, items);

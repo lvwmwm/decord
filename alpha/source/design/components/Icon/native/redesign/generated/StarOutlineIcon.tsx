@@ -1,14 +1,14 @@
-// Module ID: 10182
-// Function ID: 10183
+// Module ID: 10188
+// Function ID: 10189
 // Name: StarOutlineIcon
-// Dependencies: [19, 21, 575, 5841, 10183, 2]
+// Dependencies: [19, 21, 575, 5843, 10189, 2]
 // Exports: StarOutlineIcon
 
-// Module 10182 (StarOutlineIcon)
+// Module 10188 (StarOutlineIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5841 */;
-import AssetRegistry from "AssetRegistry" /* 10183 */;
+import BaseIconImage2 from "BaseIconImage" /* 5843 */;
+import AssetRegistry from "AssetRegistry" /* 10189 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

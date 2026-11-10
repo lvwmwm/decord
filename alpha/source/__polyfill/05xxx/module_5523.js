@@ -1,18 +1,105 @@
 // Module ID: 5523
 // Function ID: 5524
-// Dependencies: [17, 26, 106, 65]
+// Dependencies: [32, 5466, 5493, 5510, 5484]
+// Exports: usePanGesture
 
 // Module 5523
-import react_native from "react-native" /* 17 */;
-import _mod26 from "module_26" /* 26 */;
-import DynamicallyInjectedByGestureHandler from "DynamicallyInjectedByGestureHandler" /* 106 */;
-import module_65 from "module_65" /* 65 */;
+import reanimatedWrapper from "reanimatedWrapper" /* 5466 */;
+import ComposedGestureName from "ComposedGestureName" /* 5484 */;
+import _mod5493 from "module_5493" /* 5493 */;
+import _mod5510 from "module_5510" /* 5510 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
 
-let obj2;
-const codegenNativeComponent = react_native.codegenNativeComponent;
-const __INTERNAL_VIEW_CONFIG = { uiViewClassName: "RNGestureHandlerButton", directEventTypes: { topButtonPress: { registrationName: "onButtonPress" }, topButtonPressIn: { registrationName: "onButtonPressIn" }, topButtonPressOut: { registrationName: "onButtonPressOut" }, topButtonLongPress: { registrationName: "onButtonLongPress" }, topButtonHoverIn: { registrationName: "onButtonHoverIn" }, topButtonHoverOut: { registrationName: "onButtonHoverOut" }, topButtonInteractionFinished: { registrationName: "onButtonInteractionFinished" } }, validAttributes: obj2 };
-obj2 = { hasLongPressHandler: true, moduleId: true, handlerTag: true, cancelOnLeave: true, gestureTestID: true, gestureHitSlop: true, exclusive: true, foreground: true, borderless: true, enabled: true, rippleColor: _mod26.colorAttribute, rippleRadius: true, touchSoundDisabled: true, pointerEvents: true, tapAnimationInDuration: true, tapAnimationOutDuration: true, longPressDuration: true, immediatePressOut: true, longPressAnimationOutDuration: true, needsOffscreenAlphaCompositing: true, activeOpacity: true, activeScale: true, activeUnderlayOpacity: true, hoverOpacity: true, hoverScale: true, hoverUnderlayOpacity: true, hoverAnimationInDuration: true, hoverAnimationOutDuration: true, defaultOpacity: true, defaultScale: true, defaultUnderlayOpacity: true, underlayColor: _mod26.colorAttribute, borderWidth: true, borderColor: _mod26.colorAttribute, borderStyle: true, overflow: true, borderLeftWidth: true, borderRightWidth: true, borderTopWidth: true, borderBottomWidth: true, borderStartWidth: true, borderEndWidth: true, borderLeftColor: _mod26.colorAttribute, borderRightColor: _mod26.colorAttribute, borderTopColor: _mod26.colorAttribute, borderBottomColor: _mod26.colorAttribute, borderStartColor: _mod26.colorAttribute, borderEndColor: _mod26.colorAttribute, borderBlockColor: _mod26.colorAttribute, borderBlockEndColor: _mod26.colorAttribute, borderBlockStartColor: _mod26.colorAttribute, borderRadius: true, borderTopLeftRadius: true, borderTopRightRadius: true, borderBottomLeftRadius: true, borderBottomRightRadius: true, borderTopStartRadius: true, borderTopEndRadius: true, borderBottomStartRadius: true, borderBottomEndRadius: true, borderEndEndRadius: true, borderEndStartRadius: true, borderStartEndRadius: true, borderStartStartRadius: true };
-const merged = Object.assign(DynamicallyInjectedByGestureHandler.ConditionallyIgnoredEventHandlers({ onButtonPress: true, onButtonPressIn: true, onButtonPressOut: true, onButtonLongPress: true, onButtonHoverIn: true, onButtonHoverOut: true, onButtonInteractionFinished: true }));
+let tmp3;
+let tmp4;
+function transformOffsetProp(iter, activeOffsetX) {
+  let tmp10;
+  let tmp9;
+  if (undefined !== iter[activeOffsetX]) {
+    const _Array = Array;
+    if (Array.isArray(iter[activeOffsetX])) {
+      const _HermesInternal4 = HermesInternal;
+      iter["" + activeOffsetX + "Start"] = iter[activeOffsetX][0];
+      const _HermesInternal5 = HermesInternal;
+      iter["" + activeOffsetX + "End"] = iter[activeOffsetX][1];
+    } else {
+      const Reanimated = reanimatedWrapper.Reanimated;
+      let isSharedValueResult;
+      const tmp3 = require;
+      if (Reanimated != null) {
+        isSharedValueResult = Reanimated.isSharedValue(iter);
+      }
+      if (isSharedValueResult) {
+        const tmp3Result = tmp3(5493);
+        const _HermesInternal2 = HermesInternal;
+        [tmp9, tmp10] = tmp3Result.splitSingleOffset(iter[activeOffsetX].value);
+        iter["" + activeOffsetX + "Start"] = tmp9;
+        const _HermesInternal3 = HermesInternal;
+        iter["" + activeOffsetX + "End"] = tmp10;
+        _slicedToArray(tmp3Result.splitSingleOffset(iter[activeOffsetX].value), 2);
+      } else {
+        let str = "End";
+        if (iter[activeOffsetX] < 0) {
+          str = "Start";
+        }
+        const _HermesInternal = HermesInternal;
+        iter["" + activeOffsetX + str] = iter[activeOffsetX];
+      }
+    }
+    delete tmp[tmp2];
+  }
+}
+function transformPanProps(iter) {
+  transformOffsetProp(iter, "activeOffsetY");
+  transformOffsetProp(iter, "failOffsetX");
+  transformOffsetProp(iter, "failOffsetY");
+  transformOffsetProp(iter, "activeOffsetX");
+  const obj = _mod5493;
+  iter.changeEventCalculator = obj.getChangeEventCalculator(diffCalculator);
+  iter.fillInDefaultValues = fillInDefaultValues;
+  return iter;
+}
+const items = [["minDistance", "minDist"], ["averageTouches", "avgTouches"]];
+const map = new Map(items);
+const items1 = [{ code: "(function diffCalculator_Pnpm_usePanGestureTs1(current,previous){return{changeX:previous?current.translationX-previous.translationX:current.translationX,changeY:previous?current.translationY-previous.translationY:current.translationY};})" }];
+[tmp3] = items1;
+function diffCalculator(translationX, translationX2) {
+  let diff;
+  let diff1;
+  translationX = translationX.translationX;
+  if (translationX2) {
+    diff = translationX - translationX2.translationX;
+  } else {
+    diff = translationX;
+  }
+  const translationY = translationX.translationY;
+  const obj = { changeX: diff, changeY: diff1 };
+  if (translationX2) {
+    diff1 = translationY - translationX2.translationY;
+  } else {
+    diff1 = translationY;
+  }
+  return obj;
+}
+diffCalculator.__workletHash = 15159965948275;
+diffCalculator.__initData = tmp3;
+const items2 = [{ code: "(function fillInDefaultValues_Pnpm_usePanGestureTs2(event){event.changeX=0;event.changeY=0;})" }];
+[tmp4] = items2;
+function fillInDefaultValues(arg0) {
+  arg0.changeX = 0;
+  arg0.changeY = 0;
+}
+fillInDefaultValues.__workletHash = 1036941275160;
+fillInDefaultValues.__initData = tmp4;
+let closure_8 = {};
 
-export default module_65.get("RNGestureHandlerButton", () => obj);
-export { __INTERNAL_VIEW_CONFIG };
+export function usePanGesture(gestureHandlerProps) {
+  let tmp = gestureHandlerProps;
+  if (gestureHandlerProps === undefined) {
+    tmp = closure_8;
+  }
+  const obj = _mod5493;
+  const clonedAndRemappedConfig = obj.useClonedAndRemappedConfig(tmp, map, transformPanProps);
+  const obj2 = _mod5510;
+  return obj2.useGesture(ComposedGestureName.SingleGestureName.Pan, clonedAndRemappedConfig);
+}

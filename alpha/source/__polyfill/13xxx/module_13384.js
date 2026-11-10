@@ -1,232 +1,308 @@
 // Module ID: 13384
 // Function ID: 13385
-// Dependencies: [5, 13274, 13277, 13278, 13306, 13292, 13302, 13326, 13305, 13323, 13312, 13293]
-// Exports: trpcMiddleware
+// Dependencies: []
+// Exports: basename, dirname, isAbsolute, join, relative
 
 // Module 13384
-import _mod13302 from "module_13302" /* 13302 */;
-import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import registerSpanErrorInstrumentation from "module_13274" /* 13274 */;
-import "module_13277";
-import CONSOLE_LEVELS from "module_13278" /* 13278 */;
-import DEBUG_BUILD from "module_13306" /* 13306 */;
-import _browserPerformanceTimeOriginMode from "_browserPerformanceTimeOriginMode" /* 13292 */;
-
-let c5, c6;
-
-_mod13302;
-let obj = { mechanism: { handled: false, data: { function: "trpcMiddleware" } } };
-
-export function trpcMiddleware() {
-  obj = arg0;
-  if (arg0 === undefined) {
-    obj = {};
-  }
-  let closure_0 = _asyncToGenerator(async (arg0, value) => {
-    let c1;
-    let fn;
-    let getRawInput;
-    let rawInput;
-    let tmp;
-    let tmp4;
-    closure_0 = arg0;
-    if (c6 === 2) {
-      c6 = 3;
-      let str = "Generator functions may not be called on executing generators";
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp3 === 3) {
-      if (arg0 === 1) {
-        throw value;
-      } else if (arg0 === 2) {
-        let obj2 = { value, done: true };
-        return obj2;
-      } else {
-        return { value: "HermesInternal", done: null };
+function resolve() {
+  let tmp17;
+  const items = [...arguments];
+  let diff = items.length - 1;
+  let flag = false;
+  let str = "";
+  let flag2 = false;
+  let str2 = "";
+  if (-1 <= diff) {
+    while (true) {
+      let tmp3 = flag;
+      let str3 = "/";
+      if (0 <= diff) {
+        str3 = items[diff];
       }
-    } else {
-      let c4;
-      let closure_3;
-      try {
-        let closure_2;
-        let obj5;
-        c6 = 2;
-        if (0 === c5) {
-          if (arg0 === 1) {
-            c6 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c6 = 3;
-            let obj4 = { value, done: true };
-            return obj4;
-          } else {
-            closure_2 = tmp;
-            const tmp24 = closure_0;
-            c1 = undefined;
-            closure_3 = undefined;
-            const path = closure_0.path;
-            ({ next: c1, rawInput, getRawInput } = closure_0);
-            const type = closure_0.type;
-            const obj8 = closure_0(dependencyMap[8]);
-            const client = obj8.getClient();
-            const options = client && client.getOptions();
-            obj5 = { procedure_path: path, procedure_type: type };
-            value = closure_0.attachRpcInput;
-            if (undefined !== value) {
-              value = closure_0.attachRpcInput;
-            } else {
-              value = options && options.sendDefaultPii;
-            }
-            if (value) {
-              if (undefined !== rawInput) {
-                const normalizer2 = closure_0(dependencyMap[9]);
-                value = normalizer2.normalize(rawInput);
-                obj5.input = value;
-              }
-              if (undefined !== getRawInput) {
-                if (typeof getRawInput === "function") {
-                  c4 = 1;
-                  value = getRawInput();
-                  c5 = 2;
-                  c6 = 1;
-                  let obj6 = { value, done: false };
-                  return obj6;
-                }
-              }
-            }
-          }
-        } else if (1 === tmp4) {
-          c4 = 0;
-        } else if (arg0 === 1) {
-          c6 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c4 = 0;
-          c6 = 3;
-          obj = { value, done: true };
-          return obj;
-        } else {
-          let tmp6 = closure_2;
-          closure_3 = value;
-          value = obj5;
-          const normalizer = closure_0(dependencyMap[9]);
-          obj5.input = normalizer.normalize(closure_3);
-          c4 = 0;
-        }
-        let obj3 = closure_0(dependencyMap[8]);
-        value = (setContext) => {
-          setContext.setContext("trpc", closure_2);
-          const tmp2 = closure_1_0(fn[10]);
-          obj = { name: "trpc/" + closure_0, op: "rpc.server", attributes: { [closure_1_0(closure_1_1[11]).SEMANTIC_ATTRIBUTE_SENTRY_SOURCE]: "route", [closure_1_0(closure_1_1[11]).SEMANTIC_ATTRIBUTE_SENTRY_ORIGIN]: "auto.rpc.trpc" } };
-          const startSpanManual = tmp2.startSpanManual;
-          closure_0 = closure_1_2(function*(arg0, value) {
-            let tmp;
-            function captureIfError(ok) {
-              let tmp = typeof ok === "object";
-              if (typeof ok === "object") {
-                tmp = null !== ok;
-              }
-              if (tmp) {
-                tmp = "ok" in ok;
-              }
-              if (tmp) {
-                tmp = !ok.ok;
-              }
-              if (tmp) {
-                tmp = "error" in ok;
-              }
-              if (tmp) {
-                obj = closure_1_0(closure_1_1[7]);
-                obj.captureException(ok.error, closure_1_3);
-              }
-            }
-            closure_0 = arg0;
-            if (c6 === 2) {
-              c6 = 3;
-              const str = "Generator functions may not be called on executing generators";
-              throw new TypeError("Generator functions may not be called on executing generators");
-            } else if (tmp3 === 3) {
-              if (arg0 === 1) {
-                throw value;
-              } else if (arg0 === 2) {
-                const obj2 = { value, done: true };
-                return obj2;
-              } else {
-                return { value: "HermesInternal", done: null };
-              }
-            } else {
-              try {
-                c6 = 2;
-                const tmp4 = c5;
-                if (0 === c5) {
-                  if (arg0 === 1) {
-                    c6 = 3;
-                    throw value;
-                  } else if (arg0 === 2) {
-                    c6 = 3;
-                    const obj4 = { value, done: true };
-                    return obj4;
-                  } else {
-                    closure_2 = tmp;
-                    value = undefined;
-                    c4 = 1;
-                    c5 = 2;
-                    c6 = 1;
-                    const obj5 = { value: value(), done: false };
-                    return obj5;
-                  }
-                } else if (1 === tmp4) {
-                  c4 = 0;
-                  closure_2 = closure_3;
-                  const obj3 = closure_0(fn[7]);
-                  const captureExceptionResult = obj3.captureException(closure_2, closure_2_3);
-                  closure_0.end();
-                  throw closure_2;
-                } else if (arg0 === 1) {
-                  c6 = 3;
-                  throw value;
-                } else if (arg0 === 2) {
-                  c4 = 0;
-                  c6 = 3;
-                  const obj6 = { value, done: true };
-                  return obj6;
-                } else {
-                  captureIfError(value);
-                  closure_0.end();
-                  c4 = 0;
-                  c6 = 3;
-                  obj = { value, done: true };
-                  return obj;
-                }
-              } catch (tmp24) {
-                closure_3 = tmp24;
-                if (0 === c4) {
-                  c6 = 3;
-                  throw tmp24;
-                } else {
-                  c5 = 1;
-                }
-              }
-            }
-          });
-          return startSpanManual(obj, function(arg0) {
-            return closure_0(...arguments);
-          });
-        };
-        c6 = 3;
-        const obj7 = { value: obj3.withScope(value), done: true };
-        return obj7;
-      } catch (tmp18) {
-        closure_3 = tmp18;
-        if (0 === c4) {
-          c6 = 3;
-          throw tmp18;
-        } else {
-          c5 = 1;
+      let combined = str;
+      if (str3) {
+        let _HermesInternal = HermesInternal;
+        combined = "" + str3 + "/" + str;
+        tmp3 = "/" === str3.charAt(0);
+      }
+      let diff1 = diff - 1;
+      flag2 = tmp3;
+      str2 = combined;
+      if (-1 > diff1) {
+        break;
+      } else {
+        diff = diff1;
+        flag = tmp3;
+        str = combined;
+        str2 = combined;
+        flag2 = tmp3;
+        if (flag2) {
+          break;
         }
       }
     }
-  });
-  return function(arg0) {
-    return closure_0(...arguments);
-  };
+  }
+  let str4 = "";
+  if (flag2) {
+    str4 = "/";
+  }
+  const parts = str2.split("/");
+  const found = parts.filter((item) => item);
+  let diff2 = found.length - 1;
+  let num = 0;
+  let num2 = 0;
+  if (0 <= diff2) {
+    do {
+      let sum;
+      let tmp8 = found[diff2];
+      if ("." === tmp8) {
+        let spliceResult = found.splice(diff2, 1);
+        sum = num;
+      } else if (".." === tmp8) {
+        let spliceResult1 = found.splice(diff2, 1);
+        sum = num + 1;
+      } else {
+        sum = num;
+        if (sum) {
+          let spliceResult2 = found.splice(diff2, 1);
+          sum = num - 1;
+        }
+      }
+      diff2 = diff2 - 1;
+      num = sum;
+      num2 = sum;
+    } while (0 <= diff2);
+  }
+  if (!flag2) {
+    let diff3 = num2 - 1;
+    if (num2) {
+      do {
+        let arr = found.unshift("..");
+        tmp17 = diff3;
+        diff3 = diff3 - 1;
+      } while (tmp17);
+    }
+  }
+  const tmp18 = str4 + found.join("/") || ".";
+  return tmp18;
 }
+function normalizePath(str) {
+  let tmp14;
+  const charAtResult = str.charAt(0);
+  const substr = str.slice(-1);
+  const parts = str.split("/");
+  const found = parts.filter((item) => item);
+  let diff = found.length - 1;
+  let num = 0;
+  let num2 = 0;
+  if (0 <= diff) {
+    do {
+      let sum;
+      let tmp4 = found[diff];
+      if ("." === tmp4) {
+        let spliceResult = found.splice(diff, 1);
+        sum = num;
+      } else if (".." === tmp4) {
+        let spliceResult1 = found.splice(diff, 1);
+        sum = num + 1;
+      } else {
+        sum = num;
+        if (sum) {
+          let spliceResult2 = found.splice(diff, 1);
+          sum = num - 1;
+        }
+      }
+      diff = diff - 1;
+      num = sum;
+      num2 = sum;
+    } while (0 <= diff);
+  }
+  if ("/" !== charAtResult) {
+    let diff1 = num2 - 1;
+    if (num2) {
+      do {
+        let arr = found.unshift("..");
+        tmp14 = diff1;
+        diff1 = diff1 - 1;
+      } while (tmp14);
+    }
+  }
+  str = found.join("/");
+  const tmp15 = str || "/" === charAtResult;
+  if (!tmp15) {
+    str = ".";
+  }
+  let text = str;
+  const tmp16 = str && "/" === substr;
+  if (tmp16) {
+    text = `${str}/`;
+  }
+  let str2 = "";
+  if ("/" === charAtResult) {
+    str2 = "/";
+  }
+  return str2 + text;
+}
+const re0 = /^(\S+:\\|\/?)([\s\S]*?)((?:\.{1,2}|[^/\\]+?|)(\.[^./\\]*|))(?:[/\\]*)$/;
+
+export function basename(arr, arg1) {
+  let combined = arr;
+  if (arr.length > 1024) {
+    const _HermesInternal = HermesInternal;
+    combined = "<truncated>" + arr.slice(-1024);
+  }
+  const match = re0.exec(combined);
+  if (match) {
+    let substr = match.slice(1);
+  } else {
+    substr = [];
+  }
+  let substr1 = arr3;
+  const tmp3 = arg1 && arr3.slice(-1 * arg1.length) === arg1;
+  if (tmp3) {
+    substr1 = arr3.slice(0, arr3.length - arg1.length);
+  }
+  return substr1;
+}
+export function dirname(arr) {
+  let str2;
+  let substr;
+  let combined = arr;
+  if (arr.length > 1024) {
+    const _HermesInternal = HermesInternal;
+    combined = "<truncated>" + arr.slice(-1024);
+  }
+  const match = re0.exec(combined);
+  if (match) {
+    substr = match.slice(1);
+  } else {
+    substr = [];
+  }
+  if (substr[0] || "") {
+    const substr1 = arr3 && arr3.slice(0, arr3.length - 1);
+    str2 = tmp3 + substr1;
+  } else {
+    str2 = ".";
+  }
+  return str2;
+}
+export function isAbsolute(str) {
+  return "/" === str.charAt(0);
+}
+export function join() {
+  const items = [...arguments];
+  return normalizePath(items.join("/"));
+}
+export { normalizePath };
+export function relative(arg0, arg1) {
+  let items;
+  let items1;
+  let length;
+  const arr = resolve(arg0);
+  const str = arr.slice(1);
+  const arr2 = resolve(arg1);
+  const str2 = arr2.slice(1);
+  const parts = str.split("/");
+  let num = 0;
+  if (0 < parts.length) {
+    let num2 = 0;
+    num = 0;
+    if ("" === parts[0]) {
+      const sum = num2 + 1;
+      num = sum;
+      while (sum < parts.length) {
+        num2 = sum;
+        num = sum;
+        if ("" !== parts[sum]) {
+          break;
+        }
+      }
+    }
+  }
+  const diff = parts.length - 1;
+  let tmp3 = diff;
+  if (0 <= diff) {
+    let tmp4 = diff;
+    tmp3 = diff;
+    if ("" === parts[diff]) {
+      const diff1 = tmp4 - 1;
+      tmp3 = diff1;
+      while (0 <= diff1) {
+        tmp4 = diff1;
+        tmp3 = diff1;
+        if ("" !== parts[diff1]) {
+          break;
+        }
+      }
+    }
+  }
+  if (tmp3 < num) {
+    items = [];
+  } else {
+    items = parts.slice(num, tmp3 - num + 1);
+  }
+  const parts1 = str2.split("/");
+  let num3 = 0;
+  if (0 < parts1.length) {
+    let num4 = 0;
+    num3 = 0;
+    if ("" === parts1[0]) {
+      const sum1 = num4 + 1;
+      num3 = sum1;
+      while (sum1 < parts1.length) {
+        num4 = sum1;
+        num3 = sum1;
+        if ("" !== parts1[sum1]) {
+          break;
+        }
+      }
+    }
+  }
+  const diff2 = parts1.length - 1;
+  let tmp8 = diff2;
+  if (0 <= diff2) {
+    let tmp9 = diff2;
+    tmp8 = diff2;
+    if ("" === parts1[diff2]) {
+      const diff3 = tmp9 - 1;
+      tmp8 = diff3;
+      while (0 <= diff3) {
+        tmp9 = diff3;
+        tmp8 = diff3;
+        if ("" !== parts1[diff3]) {
+          break;
+        }
+      }
+    }
+  }
+  if (tmp8 < num3) {
+    items1 = [];
+  } else {
+    items1 = parts1.slice(num3, tmp8 - num3 + 1);
+  }
+  const bound = Math.min(items.length, items1.length);
+  let num5 = 0;
+  let tmp12 = bound;
+  if (0 < bound) {
+    tmp12 = num5;
+    while (items[num5] === items1[num5]) {
+      num5 = num5 + 1;
+      tmp12 = bound;
+      if (num5 >= bound) {
+        break;
+      }
+    }
+  }
+  const items2 = [];
+  let sum2 = tmp12;
+  if (tmp12 < items.length) {
+    do {
+      let arr3 = items2.push("..");
+      sum2 = sum2 + 1;
+      length = items.length;
+    } while (sum2 < length);
+  }
+  const combined = items2.concat(items1.slice(tmp12));
+  return combined.join("/");
+}
+export { resolve };

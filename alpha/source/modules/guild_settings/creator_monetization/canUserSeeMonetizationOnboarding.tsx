@@ -1,13 +1,13 @@
-// Module ID: 7497
-// Function ID: 7498
+// Module ID: 7500
+// Function ID: 7501
 // Name: canUserSeeMonetizationOnboarding
-// Dependencies: [1385, 7498, 7499, 5064, 2]
+// Dependencies: [1385, 7501, 7502, 5066, 2]
 // Exports: canUserSeeMonetizationOnboarding
 
-// Module 7497 (canUserSeeMonetizationOnboarding)
-import CreatorMonetizationRestrictionsUtils from "CreatorMonetizationRestrictionsUtils" /* 5064 */;
-import GuildRoleSubscriptionSettingUtils from "GuildRoleSubscriptionSettingUtils" /* 7498 */;
-import CreatorMonetizationEligibilityExperimentUtils from "CreatorMonetizationEligibilityExperimentUtils" /* 7499 */;
+// Module 7500 (canUserSeeMonetizationOnboarding)
+import CreatorMonetizationRestrictionsUtils from "CreatorMonetizationRestrictionsUtils" /* 5066 */;
+import GuildRoleSubscriptionSettingUtils from "GuildRoleSubscriptionSettingUtils" /* 7501 */;
+import CreatorMonetizationEligibilityExperimentUtils from "CreatorMonetizationEligibilityExperimentUtils" /* 7502 */;
 import UserStore from "UserStore" /* 1385 */;
 import size from "module_2" /* 2 */;
 

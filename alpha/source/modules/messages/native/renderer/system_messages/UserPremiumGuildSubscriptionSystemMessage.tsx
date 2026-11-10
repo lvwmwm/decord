@@ -1,17 +1,17 @@
-// Module ID: 8531
-// Function ID: 8532
+// Module ID: 8537
+// Function ID: 8538
 // Name: UserPremiumGuildSubscriptionSystemMessage
-// Dependencies: [8532, 8489, 8491, 1113, 8493, 2]
+// Dependencies: [8538, 8493, 8495, 1113, 8497, 2]
 // Exports: createUserPremiumGuildSubscriptionSystemMessage
 
-// Module 8531 (UserPremiumGuildSubscriptionSystemMessage)
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8489 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8491 */;
-import getNumSubscriptionsPurchasedFromSystemMessageDefault from "getNumSubscriptionsPurchasedFromSystemMessage" /* 8532 */;
+// Module 8537 (UserPremiumGuildSubscriptionSystemMessage)
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8493 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8495 */;
+import getNumSubscriptionsPurchasedFromSystemMessageDefault from "getNumSubscriptionsPurchasedFromSystemMessage" /* 8538 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const createCommonMessageDefault = tmp(8493);
+const createCommonMessageDefault = tmp(8497);
 const result = size.fileFinishedImporting("modules/messages/native/renderer/system_messages/UserPremiumGuildSubscriptionSystemMessage.tsx");
 
 export function createUserPremiumGuildSubscriptionSystemMessage(message) {

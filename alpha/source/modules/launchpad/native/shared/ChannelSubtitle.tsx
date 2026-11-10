@@ -1,15 +1,15 @@
-// Module ID: 19458
-// Function ID: 19459
+// Module ID: 19487
+// Function ID: 19488
 // Name: ChannelSubtitle
-// Dependencies: [19, 5882, 21, 19085, 5751, 18621, 11181, 11190, 2]
+// Dependencies: [19, 5884, 21, 19114, 5753, 18650, 11190, 11199, 2]
 // Exports: renderChannelSubtitle
 
-// Module 19458 (ChannelSubtitle)
+// Module 19487 (ChannelSubtitle)
 import Fragment from "Fragment" /* 21 */;
-import Text_Text from "Text/Text" /* 5751 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 5882 */;
-import MessagePreviewMarkup from "MessagePreviewMarkup" /* 11181 */;
-import getLayoutStylesDefault from "getLayoutStyles" /* 19085 */;
+import Text_Text from "Text/Text" /* 5753 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 5884 */;
+import MessagePreviewMarkup from "MessagePreviewMarkup" /* 11190 */;
+import getLayoutStylesDefault from "getLayoutStyles" /* 19114 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

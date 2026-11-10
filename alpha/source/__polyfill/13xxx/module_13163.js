@@ -4,11 +4,8 @@
 
 // Module 13163
 const obj = {
-  trueFunc() {
-    return true;
-  },
-  falseFunc() {
-    return false;
+  parse() {
+    return this.createSingleNodeList(this.Identifier());
   }
 };
 

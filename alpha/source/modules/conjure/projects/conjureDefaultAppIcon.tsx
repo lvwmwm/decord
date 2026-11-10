@@ -1,14 +1,14 @@
-// Module ID: 11482
-// Function ID: 11483
+// Module ID: 11491
+// Function ID: 11492
 // Name: conjureDefaultAppIcon
-// Dependencies: [9378, 10897, 5137, 671, 2]
+// Dependencies: [9384, 10906, 5139, 671, 2]
 // Exports: getConjureDefaultAppIcon, getConjureDefaultAppIconColors
 
-// Module 11482 (conjureDefaultAppIcon)
+// Module 11491 (conjureDefaultAppIcon)
 import _modDef671 from "module_671" /* 671 */;
-import ColorUtils from "ColorUtils" /* 5137 */;
-import GuildProfileConstants from "GuildProfileConstants" /* 9378 */;
-import _modDef10897 from "module_10897" /* 10897 */;
+import ColorUtils from "ColorUtils" /* 5139 */;
+import GuildProfileConstants from "GuildProfileConstants" /* 9384 */;
+import _modDef10906 from "module_10906" /* 10906 */;
 import size from "module_2" /* 2 */;
 
 const BANNER_PALETTE_PRESETS = GuildProfileConstants.BANNER_PALETTE_PRESETS;
@@ -34,7 +34,7 @@ export function getConjureDefaultAppIcon(str, str2) {
   if (null != str2) {
     let first;
     const replaced = str2.replace(/^(?:[\t-\r \xA0\xAD\u0600-\u0605\u061C\u06DD\u070F\u0890\u0891\u08E2\u1680\u180E\u2000-\u200F\u2028-\u202F\u205F-\u2064\u2066-\u206F\u3000\uFEFF\uFFF9-\uFFFB]|\uD804[\uDCBD\uDCCD]|\uD80D[\uDC30-\uDC3F]|\uD82F[\uDCA0-\uDCA3]|\uD834[\uDD73-\uDD7A]|\uDB40[\uDC01\uDC20-\uDC7F])+/, "");
-    const obj = _modDef10897();
+    const obj = _modDef10906();
     const match = obj.exec(replaced);
     let index;
     if (match != null) {

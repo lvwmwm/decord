@@ -1,16 +1,16 @@
-// Module ID: 10073
-// Function ID: 10074
+// Module ID: 10079
+// Function ID: 10080
 // Name: DoubleTapEmojiUpdatedToast
-// Dependencies: [5141, 1388, 1411, 5390, 5149, 1113, 5837, 2]
+// Dependencies: [5143, 1388, 1411, 5392, 5151, 1113, 5839, 2]
 // Exports: getToastEmojiEntity, showDoubleTapEmojiUpdatedToast
 
-// Module 10073 (DoubleTapEmojiUpdatedToast)
+// Module 10079 (DoubleTapEmojiUpdatedToast)
 import intl3 from "intl" /* 1113 */;
 import EmojiConstants from "EmojiConstants" /* 1388 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
-import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5390 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5837 */;
-import AccessibilityStore from "AccessibilityStore" /* 5141 */;
+import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5392 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5839 */;
+import AccessibilityStore from "AccessibilityStore" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 const EMOJI_URL_BASE_SIZE = EmojiConstants.EMOJI_URL_BASE_SIZE;
@@ -49,7 +49,7 @@ export function showDoubleTapEmojiUpdatedToast(emoji) {
   emoji = emoji.emoji;
   const obj = useIsScreenReaderEnabled;
   if (obj.getIsScreenReaderEnabled()) {
-    const AccessibilityAnnouncer = tmp(5149).AccessibilityAnnouncer;
+    const AccessibilityAnnouncer = tmp(5151).AccessibilityAnnouncer;
     const announce = AccessibilityAnnouncer.announce;
     const intl2 = tmp(1113).intl;
     const obj2 = { emojiName: emoji.name };

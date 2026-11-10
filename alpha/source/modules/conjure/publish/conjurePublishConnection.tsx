@@ -1,28 +1,28 @@
-// Module ID: 11083
-// Function ID: 11084
+// Module ID: 11092
+// Function ID: 11093
 // Name: conjurePublishConnection
-// Dependencies: [5, 2162, 6899, 10987, 572, 11056, 10995, 11084, 11085, 2118, 11055, 11088, 11075, 10994, 2]
+// Dependencies: [5, 2162, 6902, 10996, 572, 11065, 11004, 11093, 11094, 2118, 11064, 11097, 11084, 11003, 2]
 // Exports: draftPatchNotes, failPendingSafetyRecheck, forgetClearedSafetyRecheck, parseSafetyRecheck, preparePublish, publishProject, publishStateFromFrame, recordPatchNotesSent, rejectPendingPublish, requestConjureSafetyRecheck, requestPublishOptions
 
-// Module 11083 (conjurePublishConnection)
+// Module 11092 (conjurePublishConnection)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import ConjurePublishTypes from "ConjurePublishTypes" /* 10994 */;
-import conjureProjectSockets from "conjureProjectSockets" /* 10995 */;
-import conjureDevicePermissions from "conjureDevicePermissions" /* 11055 */;
-import ConjurePublishActionCreators from "ConjurePublishActionCreators" /* 11075 */;
-import conjureVoiceChannelPin from "conjureVoiceChannelPin" /* 11088 */;
+import ConjurePublishTypes from "ConjurePublishTypes" /* 11003 */;
+import conjureProjectSockets from "conjureProjectSockets" /* 11004 */;
+import conjureDevicePermissions from "conjureDevicePermissions" /* 11064 */;
+import ConjurePublishActionCreators from "ConjurePublishActionCreators" /* 11084 */;
+import conjureVoiceChannelPin from "conjureVoiceChannelPin" /* 11097 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ApplicationStore from "ApplicationStore" /* 2162 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6899 */;
-import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 10987 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6902 */;
+import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 10996 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, paths;
 
 let tmp;
-const requestConjureDevicePermissionsDefault = tmp(11056);
-const f100184 = () => {
+const requestConjureDevicePermissionsDefault = tmp(11065);
+const f100319 = () => {
   const safetyRecheck = ConjurePublishStatusStore.getSafetyRecheck(projectId);
   let status;
   if (safetyRecheck != null) {
@@ -37,7 +37,7 @@ const f100184 = () => {
     const obj4 = map;
     if ("pending" === obj2.status) {
       const _setTimeout = setTimeout;
-      const result = obj4.set(tmp, setTimeout(f100184, 180000));
+      const result = obj4.set(tmp, setTimeout(f100319, 180000));
     }
     const obj3 = { type: "CONJURE_PROJECT_SAFETY_RECHECK", projectId, recheck: obj2 };
     const obj = DispatcherDefault;
@@ -128,7 +128,7 @@ let obj2 = {
         }
         if ("pending" === status1) {
           const _setTimeout = setTimeout;
-          const result = obj6.set(projectId, setTimeout(f100184, 180000));
+          const result = obj6.set(projectId, setTimeout(f100319, 180000));
         }
         const obj10 = { type: "CONJURE_PROJECT_SAFETY_RECHECK", projectId, recheck: obj2 };
         const obj3 = DispatcherDefault;
@@ -519,7 +519,7 @@ export function failPendingSafetyRecheck(projectId) {
     const obj4 = map;
     if ("pending" === obj2.status) {
       const _setTimeout = setTimeout;
-      const result = obj4.set(projectId, setTimeout(f100184, 180000));
+      const result = obj4.set(projectId, setTimeout(f100319, 180000));
     }
     const obj3 = { type: "CONJURE_PROJECT_SAFETY_RECHECK", projectId, recheck: obj2 };
     const obj = DispatcherDefault;
@@ -558,7 +558,7 @@ export function requestConjureSafetyRecheck(projectId) {
     map.delete(projectId);
     if ("pending" === tmp3.status) {
       let _setTimeout = setTimeout;
-      let result = obj.set(projectId, setTimeout(f100184, 180000));
+      let result = obj.set(projectId, setTimeout(f100319, 180000));
     }
     let obj2 = DispatcherDefault;
     let obj3 = { type: "CONJURE_PROJECT_SAFETY_RECHECK", projectId, recheck: tmp3 };

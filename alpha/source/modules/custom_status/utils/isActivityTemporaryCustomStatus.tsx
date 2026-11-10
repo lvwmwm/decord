@@ -1,11 +1,11 @@
-// Module ID: 18462
-// Function ID: 18463
+// Module ID: 18491
+// Function ID: 18492
 // Name: isActivityTemporaryCustomStatus
-// Dependencies: [5891, 2]
+// Dependencies: [5893, 2]
 // Exports: isActivityTemporaryCustomStatus
 
-// Module 18462 (isActivityTemporaryCustomStatus)
-import ActivityTypes from "ActivityTypes" /* 5891 */;
+// Module 18491 (isActivityTemporaryCustomStatus)
+import ActivityTypes from "ActivityTypes" /* 5893 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/custom_status/utils/isActivityTemporaryCustomStatus.tsx");

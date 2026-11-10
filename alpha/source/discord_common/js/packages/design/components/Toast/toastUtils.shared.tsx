@@ -1,16 +1,17 @@
-// Module ID: 5839
-// Function ID: 5840
-// Dependencies: [5151, 1259, 2]
+// Module ID: 5841
+// Function ID: 5842
+// Dependencies: [5153, 1259, 2]
 // Exports: popToast, showToast
 
-// Module 5839
-import module_5151 from "module_5151" /* 5151 */;
+// Module 5841
+import module_5153 from "module_5153" /* 5153 */;
 import size from "module_2" /* 2 */;
 
-let closure_2, map, map1, map2;
+const require = globalThis.__r;
+let _require, map, map1, map2;
 
 let c2 = 1;
-const useToastStore = module_5151.create(() => {
+const useToastStore = module_5153.create(() => {
   const obj = { currentToastMap: new Map(), queuedToastsMap: new Map() };
   new Map();
   new Map();
@@ -20,7 +21,7 @@ let result = size.fileFinishedImporting("../discord_common/js/packages/design/co
 
 export { useToastStore };
 export function showToast(surface) {
-  let tmp;
+  _require = surface;
   let str;
   if (surface != null) {
     str = surface.surface;
@@ -28,37 +29,46 @@ export function showToast(surface) {
   if (str == null) {
     str = "app";
   }
-  let obj = { toast: surface, key: tmp };
-  tmp = +closure_2;
-  closure_2 = tmp + 1;
-  let obj2 = str(obj[1]);
+  let obj = { toast: surface, key: null };
+  const tmp = +obj;
+  obj = tmp + 1;
+  obj.key = tmp;
+  let obj2 = require("react-native");
   obj2.batchUpdates(() => {
+    let toastKey;
     obj.setState(function(currentToastMap) {
       currentToastMap = currentToastMap.currentToastMap;
-      const _Map = Map;
-      if (currentToastMap.has(str)) {
-        const self4 = this;
-        const self3 = this;
-        const _Map1 = new _Map(currentToastMap.queuedToastsMap);
-        let items1 = _Map1.get(tmp);
-        if (items1 == null) {
-          items1 = [];
+      const value = currentToastMap.get(str);
+      if (null != value) {
+        const _Map = Map;
+        const self2 = this;
+        const self = this;
+        map = new Map(currentToastMap.queuedToastsMap);
+        let value2 = map.get(tmp);
+        if (value2 == null) {
+          value2 = [];
         }
         const items = [];
-        items[HermesBuiltin.arraySpread(items, items1, 0)] = closure_1_1;
-        const result = _Map1.set(tmp, items);
-        obj = { queuedToastsMap: _Map1 };
+        HermesBuiltin.arraySpread(items, value2, 0);
+        let num3 = -1;
+        if (null != toastKey.toastKey) {
+          num3 = items.findIndex((toast) => toast.toast.toastKey === toastKey.toastKey);
+        }
+        if (-1 === num3) {
+          items.push(closure_1_2);
+        } else {
+          items[num3] = closure_1_2;
+        }
+        const result = map.set(tmp, items);
+        obj = { queuedToastsMap: map };
         const merged = Object.assign(currentToastMap);
         return obj;
-      } else {
-        const self = this;
-        const self2 = this;
-        const _Map2 = new _Map(currentToastMap.currentToastMap);
-        const result1 = _Map2.set(tmp, closure_1_1);
-        const obj2 = { currentToastMap: _Map2 };
-        const merged1 = Object.assign(currentToastMap);
-        return obj2;
       }
+      map1 = new Map(currentToastMap.currentToastMap);
+      const result1 = map1.set(tmp, closure_1_2);
+      const obj2 = { currentToastMap: map1 };
+      const merged1 = Object.assign(currentToastMap);
+      return obj2;
     });
   });
 }

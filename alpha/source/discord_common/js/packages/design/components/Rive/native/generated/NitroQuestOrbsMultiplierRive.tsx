@@ -1,13 +1,13 @@
-// Module ID: 5289
-// Function ID: 5290
+// Module ID: 5291
+// Function ID: 5292
 // Name: NitroQuestOrbsMultiplierRive
-// Dependencies: [109, 19, 21, 5207, 5290, 5260, 2]
+// Dependencies: [109, 19, 21, 5209, 5292, 5262, 2]
 // Exports: NitroQuestOrbsMultiplierRive
 
-// Module 5289 (NitroQuestOrbsMultiplierRive)
+// Module 5291 (NitroQuestOrbsMultiplierRive)
 import Fragment from "Fragment" /* 21 */;
-import BaseRive2 from "BaseRive" /* 5207 */;
-import RiveErrorBoundary2 from "RiveErrorBoundary" /* 5260 */;
+import BaseRive2 from "BaseRive" /* 5209 */;
+import RiveErrorBoundary2 from "RiveErrorBoundary" /* 5262 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

@@ -1,14 +1,14 @@
-// Module ID: 17925
-// Function ID: 17926
+// Module ID: 17952
+// Function ID: 17953
 // Name: InventoryIcon
-// Dependencies: [19, 21, 575, 5841, 17926, 2]
+// Dependencies: [19, 21, 575, 5843, 17953, 2]
 // Exports: InventoryIcon
 
-// Module 17925 (InventoryIcon)
+// Module 17952 (InventoryIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5841 */;
-import AssetRegistry from "AssetRegistry" /* 17926 */;
+import BaseIconImage2 from "BaseIconImage" /* 5843 */;
+import AssetRegistry from "AssetRegistry" /* 17953 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

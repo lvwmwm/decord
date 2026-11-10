@@ -1,19 +1,19 @@
-// Module ID: 12327
-// Function ID: 12328
+// Module ID: 12335
+// Function ID: 12336
 // Name: ConjureGuildPickerSheet
-// Dependencies: [32, 19, 4989, 5011, 21, 6206, 12322, 12323, 7360, 8775, 5374, 12328, 8674, 7046, 12326, 9165, 2]
+// Dependencies: [32, 19, 4991, 5013, 21, 6208, 12330, 12331, 7363, 8781, 5376, 12336, 8680, 7049, 12334, 9171, 2]
 // Exports: default
 
-// Module 12327 (ConjureGuildPickerSheet)
+// Module 12335 (ConjureGuildPickerSheet)
 import Fragment from "Fragment" /* 21 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
-import InteractionComponentTypes from "InteractionComponentTypes" /* 6206 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 8674 */;
-import MentionableSelectOptionParts from "MentionableSelectOptionParts" /* 12328 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5376 */;
+import InteractionComponentTypes from "InteractionComponentTypes" /* 6208 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8680 */;
+import MentionableSelectOptionParts from "MentionableSelectOptionParts" /* 12336 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4989 */;
-import GuildStore_mod from "GuildStore" /* 5011 */;
+import ChannelStore from "ChannelStore" /* 4991 */;
+import GuildStore_mod from "GuildStore" /* 5013 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -29,7 +29,7 @@ export default function ConjureGuildPickerSheet(guildId) {
   let channelFilter;
   let str;
   let title;
-  const f129449 = (id) => ({ id: id.value, label: id.label });
+  const f129650 = (id) => ({ id: id.value, label: id.label });
   guildId = guildId.guildId;
   const type = guildId.type;
   const maxPicks = guildId.maxPicks;
@@ -108,7 +108,7 @@ export default function ConjureGuildPickerSheet(guildId) {
       }
       let tmp8 = null;
       if (null != channelIconWithGuild) {
-        tmp8 = jsx(tmp(7046).TableRowIcon, { source: channelIconWithGuild });
+        tmp8 = jsx(tmp(7049).TableRowIcon, { source: channelIconWithGuild });
       }
       return tmp8;
     }
@@ -132,7 +132,7 @@ export default function ConjureGuildPickerSheet(guildId) {
         } else {
           items = [value];
         }
-        onSubmit(items.map(f129449));
+        onSubmit(items.map(f129650));
         obj = ActionSheetActionCreatorsDefault;
         obj.hideActionSheet();
       } else if (hasItem) {
@@ -144,7 +144,7 @@ export default function ConjureGuildPickerSheet(guildId) {
       }
     },
     submitSelection() {
-      onSubmit(first.map(f129449));
+      onSubmit(first.map(f129650));
       obj = ActionSheetActionCreatorsDefault;
       obj.hideActionSheet();
     },

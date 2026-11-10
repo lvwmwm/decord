@@ -1,13 +1,13 @@
-// Module ID: 16746
-// Function ID: 16747
+// Module ID: 16773
+// Function ID: 16774
 // Name: AccessibilityPreferencesContextProvider
-// Dependencies: [19, 5141, 21, 504, 5154, 2]
+// Dependencies: [19, 5143, 21, 504, 5156, 2]
 // Exports: default
 
-// Module 16746 (AccessibilityPreferencesContextProvider)
+// Module 16773 (AccessibilityPreferencesContextProvider)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5141 */;
+import AccessibilityStore from "AccessibilityStore" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;

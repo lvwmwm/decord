@@ -1,11 +1,11 @@
-// Module ID: 12426
-// Function ID: 12427
+// Module ID: 12439
+// Function ID: 12440
 // Name: useEdgeOnlySwipeExit
-// Dependencies: [19, 11383, 2]
+// Dependencies: [19, 11392, 2]
 // Exports: default
 
-// Module 12426 (useEdgeOnlySwipeExit)
-import MainTabsNavigatorPanelContext from "MainTabsNavigatorPanelContext" /* 11383 */;
+// Module 12439 (useEdgeOnlySwipeExit)
+import MainTabsNavigatorPanelContext from "MainTabsNavigatorPanelContext" /* 11392 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

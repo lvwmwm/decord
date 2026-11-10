@@ -1,21 +1,21 @@
-// Module ID: 19600
-// Function ID: 19601
+// Module ID: 19629
+// Function ID: 19630
 // Name: useVoicePanelDockStatus
-// Dependencies: [32, 19, 6898, 502, 5893, 6811, 1385, 5803, 19601, 5805, 11362, 504, 2]
+// Dependencies: [32, 19, 6901, 502, 5895, 6814, 1385, 5805, 19630, 5807, 11371, 504, 2]
 // Exports: default
 
-// Module 19600 (useVoicePanelDockStatus)
-import CallConstants from "CallConstants" /* 5805 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11362 */;
+// Module 19629 (useVoicePanelDockStatus)
+import CallConstants from "CallConstants" /* 5807 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11371 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6898 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6901 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5893 */;
-import SpeakingStore from "SpeakingStore" /* 6811 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5895 */;
+import SpeakingStore from "SpeakingStore" /* 6814 */;
 import UserStore from "UserStore" /* 1385 */;
-import VoiceStateStore from "VoiceStateStore" /* 5803 */;
-import VoicePanelDockStatusStore from "VoicePanelDockStatusStore" /* 19601 */;
+import VoiceStateStore from "VoiceStateStore" /* 5805 */;
+import VoicePanelDockStatusStore from "VoicePanelDockStatusStore" /* 19630 */;
 import size from "module_2" /* 2 */;
 
 let importDefault, set, streamParticipants;
@@ -173,7 +173,7 @@ export default function useVoicePanelDockStatus() {
     let participant;
     let tmp;
     let user;
-    const f142951 = (item) => {
+    const f143199 = (item) => {
       const tmp = item !== closure_1_1 && null != participant.getParticipant(batchedStoreListener, item) && null != user.getUser(item);
       return tmp;
     };
@@ -184,11 +184,11 @@ export default function useVoicePanelDockStatus() {
       const self2 = this;
       batchedStoreListener = new tmp3(closure_1_2[11]).BatchedStoreListener(items, function update() {
         const speakers = closure_2_8.getSpeakers();
-        let tmp = closure_2_14(batchedStoreListener, speakers.filter(f142951));
+        let tmp = closure_2_14(batchedStoreListener, speakers.filter(f143199));
       });
       batchedStoreListener.attach("useVoicePanelDockStatus.speakers");
       let speakers = closure_1_8.getSpeakers();
-      closure_1_14(tmp, speakers.filter(f142951));
+      closure_1_14(tmp, speakers.filter(f143199));
       return () => batchedStoreListener.detach();
     }
   }, items4);

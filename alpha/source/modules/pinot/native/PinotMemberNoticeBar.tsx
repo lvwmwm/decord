@@ -1,20 +1,20 @@
-// Module ID: 11485
-// Function ID: 11486
+// Module ID: 11494
+// Function ID: 11495
 // Name: PinotMemberNoticeBar
-// Dependencies: [19, 17, 1072, 21, 5140, 575, 11475, 5834, 2185, 5751, 1113, 3316, 7043, 7120, 2]
+// Dependencies: [19, 17, 1072, 21, 5142, 575, 11484, 5836, 2185, 5753, 1113, 3316, 7046, 7123, 2]
 // Exports: PinotMemberNoticeBar
 
-// Module 11485 (PinotMemberNoticeBar)
+// Module 11494 (PinotMemberNoticeBar)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2185 */;
-import Text_Text from "Text/Text" /* 5751 */;
-import LinkingDefault from "Linking" /* 5834 */;
-import PinotAnalytics from "PinotAnalytics" /* 11475 */;
+import Text_Text from "Text/Text" /* 5753 */;
+import LinkingDefault from "Linking" /* 5836 */;
+import PinotAnalytics from "PinotAnalytics" /* 11484 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5142 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -64,7 +64,7 @@ export function PinotMemberNoticeBar(channel) {
   let obj = { style: tmp.underlay, children: closure_7(View, obj2) };
   obj2 = { style: tmp.bar, children: items1 };
   let obj3 = { variant: "body-sm/normal", color: "text-default", style: tmp.text, children: intl.format(onDismiss(3316).Jry6Gr, obj4) };
-  const Text = channel(5751).Text;
+  const Text = channel(5753).Text;
   intl = channel(1113).intl;
   obj4 = {
     learnMoreHook(children, arg1) {
@@ -83,9 +83,9 @@ export function PinotMemberNoticeBar(channel) {
       const result = obj.trackPinotNoticeAction(obj2, "dismiss");
       onDismiss();
     },
-    children: closure_6(channel(7120).XSmallIcon, { size: "sm", color: "icon-muted" })
+    children: closure_6(channel(7123).XSmallIcon, { size: "sm", color: "icon-muted" })
   };
-  const PressableOpacity = channel(7043).PressableOpacity;
+  const PressableOpacity = channel(7046).PressableOpacity;
   intl2 = channel(1113).intl;
   items1[1] = closure_6(PressableOpacity, obj5);
   return closure_6(View, obj);

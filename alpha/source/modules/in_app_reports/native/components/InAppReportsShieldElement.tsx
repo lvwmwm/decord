@@ -1,15 +1,15 @@
-// Module ID: 8444
-// Function ID: 8445
+// Module ID: 8448
+// Function ID: 8449
 // Name: InAppReportsShieldElement
-// Dependencies: [19, 17, 21, 5140, 8044, 2]
+// Dependencies: [19, 17, 21, 5142, 8048, 2]
 // Exports: default
 
-// Module 8444 (InAppReportsShieldElement)
+// Module 8448 (InAppReportsShieldElement)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import ShieldSpotIllustration from "ShieldSpotIllustration" /* 8044 */;
+import ShieldSpotIllustration from "ShieldSpotIllustration" /* 8048 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5140 */;
+import createStyles from "createStyles" /* 5142 */;
 import size from "module_2" /* 2 */;
 
 const View = react_native.View;

@@ -1,14 +1,14 @@
-// Module ID: 8735
-// Function ID: 8736
+// Module ID: 8741
+// Function ID: 8742
 // Name: AnnouncementsSpoilerIcon
-// Dependencies: [19, 21, 575, 5841, 8693, 2]
+// Dependencies: [19, 21, 575, 5843, 8699, 2]
 // Exports: AnnouncementsSpoilerIcon
 
-// Module 8735 (AnnouncementsSpoilerIcon)
+// Module 8741 (AnnouncementsSpoilerIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5841 */;
-import AssetRegistry from "AssetRegistry" /* 8693 */;
+import BaseIconImage2 from "BaseIconImage" /* 5843 */;
+import AssetRegistry from "AssetRegistry" /* 8699 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

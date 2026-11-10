@@ -1,19 +1,19 @@
-// Module ID: 12828
-// Function ID: 12829
+// Module ID: 12842
+// Function ID: 12843
 // Name: ConjureShimmer
-// Dependencies: [32, 19, 17, 5141, 21, 5140, 504, 1652, 5370, 671, 7104, 5715, 2]
+// Dependencies: [32, 19, 17, 5143, 21, 5142, 504, 1652, 5372, 671, 7107, 5717, 2]
 // Exports: default
 
-// Module 12828 (ConjureShimmer)
+// Module 12842 (ConjureShimmer)
 import _modDef671 from "module_671" /* 671 */;
 import _mod1652 from "module_1652" /* 1652 */;
-import timing_timing from "timing/timing" /* 5370 */;
+import timing_timing from "timing/timing" /* 5372 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5141 */;
+import AccessibilityStore from "AccessibilityStore" /* 5143 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5140 */;
+import createStyles from "createStyles" /* 5142 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -154,7 +154,7 @@ export default function ConjureShimmer(epoch) {
     const obj5 = { style: closure_5.absoluteFill, pointerEvents: "none", accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: closure_8(tmp22, obj6) };
     obj6 = { style: closure_5.absoluteFill, androidRenderingMode: "software", maskElement: closure_8(closure_6, obj7), children: closure_8(View, obj8) };
     obj7 = { children: renderFace() };
-    tmp22 = require("module_7104");
+    tmp22 = require("module_7107");
     obj8 = { style: items6, children: closure_8(require("LinearGradient"), obj10) };
     items6 = [tmp.band, , ];
     const obj9 = { width: result };

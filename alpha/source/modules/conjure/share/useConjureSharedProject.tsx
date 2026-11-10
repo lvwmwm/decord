@@ -1,16 +1,16 @@
-// Module ID: 12999
-// Function ID: 13000
+// Module ID: 13013
+// Function ID: 13014
 // Name: useConjureSharedProject
-// Dependencies: [19, 2162, 1385, 6899, 11713, 504, 11719, 2]
+// Dependencies: [19, 2162, 1385, 6902, 11722, 504, 11728, 2]
 // Exports: default
 
-// Module 12999 (useConjureSharedProject)
-import ConjureProjectStore2 from "ConjureProjectStore" /* 6899 */;
-import loadConjureSharedProjectDefault from "loadConjureSharedProject" /* 11719 */;
+// Module 13013 (useConjureSharedProject)
+import ConjureProjectStore2 from "ConjureProjectStore" /* 6902 */;
+import loadConjureSharedProjectDefault from "loadConjureSharedProject" /* 11728 */;
 import react from "react" /* 19 */;
 import ApplicationStore from "ApplicationStore" /* 2162 */;
 import UserStore from "UserStore" /* 1385 */;
-import ConjureSharedProjectStore from "ConjureSharedProjectStore" /* 11713 */;
+import ConjureSharedProjectStore from "ConjureSharedProjectStore" /* 11722 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

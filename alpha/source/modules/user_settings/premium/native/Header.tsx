@@ -1,18 +1,18 @@
-// Module ID: 15638
-// Function ID: 15639
+// Module ID: 15666
+// Function ID: 15667
 // Name: Header
-// Dependencies: [19, 17, 21, 5140, 5369, 5842, 1113, 5147, 15639, 15640, 5751, 2]
+// Dependencies: [19, 17, 21, 5142, 5371, 5844, 1113, 5149, 15667, 15668, 5753, 2]
 // Exports: default
 
-// Module 15638 (Header)
+// Module 15666 (Header)
 import react_native from "react-native" /* 17 */;
 import intl3 from "intl" /* 1113 */;
-import shared from "shared" /* 5147 */;
-import useThemeDefault from "useTheme" /* 5369 */;
-import FastImageDefault from "FastImage" /* 5842 */;
+import shared from "shared" /* 5149 */;
+import useThemeDefault from "useTheme" /* 5371 */;
+import FastImageDefault from "FastImage" /* 5844 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5140 */;
+import createStyles from "createStyles" /* 5142 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -40,13 +40,13 @@ export default function Header(style) {
   const tmp5 = hasOwnProperty;
   const tmp6 = View;
   if (obj3.isThemeDark(tmp4)) {
-    tmp2Result = tmp2(15639);
+    tmp2Result = tmp2(15667);
   } else {
-    tmp2Result = tmp2(15640);
+    tmp2Result = tmp2(15668);
   }
   items1 = [React3(tmp8, obj2), ];
   const obj4 = { style: tmp.headerText, variant: "body-md/medium", color: "mobile-text-heading-primary", children: intl2.string(intl3.t.SD5MJW) };
-  const Text = tmp9(5751).Text;
+  const Text = tmp9(5753).Text;
   intl2 = tmp9(1113).intl;
   items1[1] = React3(Text, obj4);
   return tmp5(tmp6, obj);

@@ -1,35 +1,35 @@
-// Module ID: 14335
-// Function ID: 14336
+// Module ID: 14361
+// Function ID: 14362
 // Name: GuildPowerupsBottomSheet
-// Dependencies: [17, 5141, 5346, 5347, 21, 5140, 575, 14315, 14311, 14336, 14337, 504, 14338, 5285, 14340, 5751, 14341, 14343, 14344, 5859, 1113, 2696, 14330, 14350, 5349, 9157, 14351, 14352, 14356, 14361, 14362, 5758, 14360, 5388, 2]
+// Dependencies: [17, 5143, 5348, 5349, 21, 5142, 575, 14341, 14337, 14362, 14363, 504, 14364, 5287, 14366, 5753, 14367, 14369, 14370, 5861, 1113, 2696, 14356, 14376, 5351, 9163, 14377, 14378, 14382, 14387, 14388, 5760, 14386, 5390, 2]
 // Exports: default
 
-// Module 14335 (GuildPowerupsBottomSheet)
+// Module 14361 (GuildPowerupsBottomSheet)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import _modDef2696 from "module_2696" /* 2696 */;
-import GameServerHostingRive from "GameServerHostingRive" /* 5285 */;
-import GameServerConstants from "GameServerConstants" /* 5347 */;
-import Powerups from "Powerups" /* 5349 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5388 */;
-import Text_Text from "Text/Text" /* 5751 */;
-import components_Button_Button from "components/Button/Button" /* 5758 */;
-import useGuildPowerupRollbackEnabledDefault from "useGuildPowerupRollbackEnabled" /* 14311 */;
-import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 14315 */;
-import useHasAllocateBoostPermissionDefault from "useHasAllocateBoostPermission" /* 14330 */;
-import useCalculatePowerupCardStatus from "useCalculatePowerupCardStatus" /* 14336 */;
-import useGetGuildPowerupBannerImageDefault from "useGetGuildPowerupBannerImage" /* 14337 */;
-import GuildPowerupsCardFooter from "GuildPowerupsCardFooter" /* 14341 */;
-import useGuildPowerupLevelPerksDefault from "useGuildPowerupLevelPerks" /* 14343 */;
-import GuildBoostingMarketingUtils from "GuildBoostingMarketingUtils" /* 14344 */;
-import useGuildPowerupCardFooterConfigDefault from "useGuildPowerupCardFooterConfig" /* 14350 */;
-import GuildPowerupAnalytics from "GuildPowerupAnalytics" /* 14360 */;
-import AccessibilityStore from "AccessibilityStore" /* 5141 */;
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5346 */;
+import GameServerHostingRive from "GameServerHostingRive" /* 5287 */;
+import GameServerConstants from "GameServerConstants" /* 5349 */;
+import Powerups from "Powerups" /* 5351 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5390 */;
+import Text_Text from "Text/Text" /* 5753 */;
+import components_Button_Button from "components/Button/Button" /* 5760 */;
+import useGuildPowerupRollbackEnabledDefault from "useGuildPowerupRollbackEnabled" /* 14337 */;
+import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 14341 */;
+import useHasAllocateBoostPermissionDefault from "useHasAllocateBoostPermission" /* 14356 */;
+import useCalculatePowerupCardStatus from "useCalculatePowerupCardStatus" /* 14362 */;
+import useGetGuildPowerupBannerImageDefault from "useGetGuildPowerupBannerImage" /* 14363 */;
+import GuildPowerupsCardFooter from "GuildPowerupsCardFooter" /* 14367 */;
+import useGuildPowerupLevelPerksDefault from "useGuildPowerupLevelPerks" /* 14369 */;
+import GuildBoostingMarketingUtils from "GuildBoostingMarketingUtils" /* 14370 */;
+import useGuildPowerupCardFooterConfigDefault from "useGuildPowerupCardFooterConfig" /* 14376 */;
+import GuildPowerupAnalytics from "GuildPowerupAnalytics" /* 14386 */;
+import AccessibilityStore from "AccessibilityStore" /* 5143 */;
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5348 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5142 */;
 import size from "module_2" /* 2 */;
 
 let c10;
@@ -47,10 +47,10 @@ let obj7;
 let obj8;
 let obj9;
 let tmp2;
-const useCanGuildPowerupBeToggledDefault = tmp2(14351);
-const useGuildPowerupOnActivateDefault = tmp2(14352);
-const useGuildPowerupOnShowDeactivateDefault = tmp2(14356);
-const GuildPowerupsDisabledWarningDefault = tmp2(14362);
+const useCanGuildPowerupBeToggledDefault = tmp2(14377);
+const useGuildPowerupOnActivateDefault = tmp2(14378);
+const useGuildPowerupOnShowDeactivateDefault = tmp2(14382);
+const GuildPowerupsDisabledWarningDefault = tmp2(14388);
 function GuildPowerupsBottomSheetHeader(arg0) {
   let guildId;
   let items1;
@@ -81,7 +81,7 @@ function GuildPowerupsBottomSheetHeader(arg0) {
   }
   if (powerup.type === hasOwnProperty.LEVEL) {
     const obj2 = { style: tmp.gemContainer };
-    tmp15 = metroImportAll(tmp2(14338), obj2);
+    tmp15 = metroImportAll(tmp2(14364), obj2);
     tmp14 = metroImportAll;
   } else if (tmp10 === tmp9) {
     const obj3 = { style: tmp.image, children: metroImportAll(GameServerHostingRive.GameServerHostingRive, obj4) };
@@ -92,7 +92,7 @@ function GuildPowerupsBottomSheetHeader(arg0) {
   } else {
     tmp14 = metroImportAll;
     const obj6 = { imageUrl: str, style: tmp.image, isAnimated: true };
-    tmp15 = metroImportAll(tmp2(14340), obj6);
+    tmp15 = metroImportAll(tmp2(14366), obj6);
   }
   const obj7 = { children: items1 };
   items1 = [tmp15, ];
@@ -145,10 +145,10 @@ function GuildPowerupsBottomSheetBody(powerup) {
     if (tmp5Result) {
       const obj3 = { style: tmp.cooldownInfo, children: items1 };
       const obj4 = { size: "xs", color: nativeDefault.colors.TEXT_MUTED };
-      const CircleInformationIcon = tmp8(5859).CircleInformationIcon;
+      const CircleInformationIcon = tmp8(5861).CircleInformationIcon;
       items1 = [metroImportAll(CircleInformationIcon, obj4), ];
       const obj5 = { variant: "body-sm/medium", color: "text-muted", children: intl.formatToPlainString(_modDef2696.GMhQcE, obj6) };
-      const Text = tmp8(5751).Text;
+      const Text = tmp8(5753).Text;
       intl = tmp8(1113).intl;
       obj6 = { cooldownDays: powerup.deactivationCooldownPeriodDays };
       items1[1] = metroImportAll(Text, obj5);
@@ -189,7 +189,7 @@ function GuildPowerupsBottomSheetFooter(arg0) {
     let result = powerup.skuId !== Powerups.GUILD_POWERUP_TAG_SKU_ID;
     const tmp6 = require;
     if (!result) {
-      const tmp6Result = tmp6(9157);
+      const tmp6Result = tmp6(9163);
       result = tmp6Result.canUseMobileServerTagSettings(guildId);
     }
     showConfigureButton = result;

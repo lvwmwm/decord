@@ -1,65 +1,26 @@
 // Module ID: 16242
 // Function ID: 16243
-// Dependencies: [41, 42]
+// Dependencies: []
 
 // Module 16242
-import _createClass from "_createClass" /* 42 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
-
-let map, map2;
-
-class LRUCache {
-  constructor() {
-    _classCallCheck(this, LRUCache);
-    this.max = 1000;
-    this.map = new Map();
-    new Map();
+if (typeof process === "object") {
+  const _process3 = process;
+  if (process.env) {
+    const _process = process;
+    if (process.env.NODE_DEBUG) {
+      let fn;
+      const _process2 = process;
+      const obj = /\bsemver\b/i;
+      if (obj.test(process.env.NODE_DEBUG)) {
+        fn = () => {
+          const items = ["SEMVER", ...HermesBuiltin.copyRestArgs()];
+          return console.error.apply(items);
+        };
+      }
+      module.exports = fn;
+    }
   }
 }
-const entry = {
-  key: "get",
-  value: function get(arg0) {
-    const self = this;
-    map = this.map;
-    const value = map.get(arg0);
-    let tmp2;
-    if (undefined !== value) {
-      map2 = self.map;
-      map2.delete(arg0);
-      const map3 = self.map;
-      const result = map3.set(arg0, value);
-      tmp2 = value;
-    }
-    return tmp2;
-  }
-};
-const items = [
-  entry,
-  {
-    key: "delete",
-    value: function _delete(arg0) {
-      map = this.map;
-      return map.delete(arg0);
-    }
-  },
-  {
-    key: "set",
-    value: function set(arg0, arg1) {
-      const self = this;
-      if (!this.delete(arg0)) {
-        if (undefined !== arg1) {
-          if (self.map.size >= self.max) {
-            map = self.map;
-            const iter = map.keys();
-            self.delete(iter.next().value);
-          }
-          map2 = self.map;
-          const result = map2.set(arg0, arg1);
-        }
-      }
-      return self;
-    }
-  }
-];
+fn = () => {
 
-export default _createClass(LRUCache, items);
+};

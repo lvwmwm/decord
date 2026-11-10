@@ -1,31 +1,31 @@
-// Module ID: 9830
-// Function ID: 9831
+// Module ID: 9836
+// Function ID: 9837
 // Name: useOAuth2AuthorizeForm
-// Dependencies: [5, 32, 19, 17, 5087, 5141, 2140, 6627, 1385, 9831, 1072, 21, 5140, 5077, 504, 5390, 1652, 5370, 6936, 9832, 9833, 1084, 9834, 1282, 1266, 9835, 9837, 9839, 5775, 7393, 1242, 9840, 9841, 5889, 9842, 6154, 9843, 5758, 1113, 7015, 6629, 9845, 9847, 8984, 9838, 14848, 14852, 14851, 14853, 14854, 14855, 14857, 14860, 7363, 2]
+// Dependencies: [5, 32, 19, 17, 5089, 5143, 2140, 6629, 1385, 9837, 1072, 21, 5142, 5079, 504, 5392, 1652, 5372, 6939, 9838, 9839, 1084, 9840, 1282, 1266, 9841, 9843, 9845, 5777, 7396, 1242, 9846, 9847, 5891, 9848, 6156, 9849, 5760, 1113, 7018, 6631, 9851, 9853, 8990, 9844, 14874, 14878, 14877, 14879, 14880, 14881, 14883, 14886, 7366, 2]
 // Exports: default
 
-// Module 9830 (useOAuth2AuthorizeForm)
+// Module 9836 (useOAuth2AuthorizeForm)
 import react_native from "react-native" /* 17 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1084 */;
-import PermissionUtilsAll from "PermissionUtils" /* 5077 */;
-import ApplicationIntegrationType from "ApplicationIntegrationType" /* 5775 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5889 */;
-import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6936 */;
-import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 7015 */;
-import Authorize from "Authorize" /* 9832 */;
-import react_nativeDefault from "react-native" /* 9834 */;
+import PermissionUtilsAll from "PermissionUtils" /* 5079 */;
+import ApplicationIntegrationType from "ApplicationIntegrationType" /* 5777 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5891 */;
+import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6939 */;
+import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 7018 */;
+import Authorize from "Authorize" /* 9838 */;
+import react_nativeDefault from "react-native" /* 9840 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import module_5087 from "module_5087" /* 5087 */;
-import AccessibilityStore from "AccessibilityStore" /* 5141 */;
+import module_5089 from "module_5089" /* 5089 */;
+import AccessibilityStore from "AccessibilityStore" /* 5143 */;
 import ApplicationRecord from "ApplicationRecord" /* 2140 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6627 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6629 */;
 import UserStore from "UserStore" /* 1385 */;
-import Constants_mod from "Constants" /* 9831 */;
+import Constants_mod from "Constants" /* 9837 */;
 import Constants_mod2 from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5140 */;
+import createStyles from "createStyles" /* 5142 */;
 import size from "module_2" /* 2 */;
 
 let _require, c5, c6, isAuthorized;
@@ -38,7 +38,7 @@ let closure_18;
 let closure_19;
 let map1;
 let tmp4;
-const scopes2 = tmp4(9833);
+const scopes2 = tmp4(9839);
 let View = react_native.View;
 let Constants = Constants_mod2;
 ({ EMOJI_POINTING_DOWN_CODE_POINT: map1, OAuth2Steps: closure_14 } = Constants);
@@ -955,7 +955,7 @@ export default function useOAuth2AuthorizeForm(clientId) {
       ref2.current = first1;
       const obj = { step: first1, application_id: clientId, integration_type: first7, scopes: requestedScopes, permissions: memo4.toString() };
       const trackWithMetadata = AppAnalyticsUtils.trackWithMetadata;
-      const OAUTH2_AUTHORIZE_STEP_VIEWED = connectedAccountProvider.OAUTH2_AUTHORIZE_STEP_VIEWED;
+      const OAUTH2_AUTHORIZE_STEP_VIEWED = clientStatuses.OAUTH2_AUTHORIZE_STEP_VIEWED;
       AppAnalyticsUtils;
       trackWithMetadata(OAUTH2_AUTHORIZE_STEP_VIEWED, obj);
     }
@@ -1033,7 +1033,7 @@ export default function useOAuth2AuthorizeForm(clientId) {
             const error1 = new Error("Invalid scope: " + found[0]);
             closure_23(error1);
           } else {
-            const tmp27Result = tmp27(9842);
+            const tmp27Result = tmp27(9848);
             if (tmp27Result.containsDisallowedPermission(memo4)) {
               const _Error = Error;
               const self = this;

@@ -1,9 +1,9 @@
-// Module ID: 20431
-// Function ID: 20432
+// Module ID: 20459
+// Function ID: 20460
 // Name: FriendOnlineTimerStore
 // Dependencies: [1089, 504, 572, 2]
 
-// Module 20431 (FriendOnlineTimerStore)
+// Module 20459 (FriendOnlineTimerStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import DurationsDefault from "Durations" /* 1089 */;

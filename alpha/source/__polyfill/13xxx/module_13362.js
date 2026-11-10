@@ -1,48 +1,34 @@
 // Module ID: 13362
 // Function ID: 13363
-// Dependencies: []
-// Exports: parseCookie
+// Dependencies: [13294]
+// Exports: applySdkMetadata
 
 // Module 13362
+import _mod13294 from "module_13294" /* 13294 */;
 
-export function parseCookie(arr) {
-  const obj = {};
-  let num = 0;
-  if (0 < arr.length) {
-    const index = arr.indexOf("=", num);
-    if (-1 !== index) {
-      let length = arr.indexOf(";", num);
-      if (-1 === length) {
-        length = arr.length;
-      } else {
-        let sum;
-        if (length < index) {
-          sum = arr.lastIndexOf(";", index - 1) + 1;
-        }
-        num = sum;
-      }
-      const str = arr.slice(num, index);
-      const trimmed = str.trim();
-      if (undefined === obj[trimmed]) {
-        const str2 = arr.slice(index + 1, length);
-        const trimmed1 = str2.trim();
-        let substr = trimmed1;
-        if (34 === trimmed1.charCodeAt(0)) {
-          substr = trimmed1.slice(1, -1);
-        }
-        try {
-          let decodeURIComponentResult = substr;
-          if (-1 !== substr.indexOf("%")) {
-            const _decodeURIComponent = decodeURIComponent;
-            decodeURIComponentResult = decodeURIComponent(substr);
-          }
-          obj[trimmed] = decodeURIComponentResult;
-        } catch (err) {
-          obj[trimmed] = substr;
-        }
-      }
-      sum = length + 1;
-    }
+
+export function applySdkMetadata(_metadata, arg1) {
+  let arr = arg2;
+  if (arg2 === undefined) {
+    const items = [arg1];
+    arr = items;
   }
-  return obj;
+  let str = arg3;
+  if (arg3 === undefined) {
+    str = "npm";
+  }
+  const tmp = _metadata._metadata || {};
+  if (!tmp.sdk) {
+    let obj = {
+      name: "sentry.javascript." + arg1,
+      packages: arr.map((item) => {
+          const obj = { name: "" + str + ":@sentry/" + item, version: _mod13294.SDK_VERSION };
+          return obj;
+        }),
+      version: str(13294).SDK_VERSION
+    };
+    const _HermesInternal = HermesInternal;
+    tmp.sdk = obj;
+  }
+  _metadata._metadata = tmp;
 }

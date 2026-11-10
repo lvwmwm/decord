@@ -1,17 +1,17 @@
-// Module ID: 18869
-// Function ID: 18870
+// Module ID: 18898
+// Function ID: 18899
 // Name: ForYouLoadMore
-// Dependencies: [19, 17, 6913, 21, 5140, 563, 5758, 1113, 2]
+// Dependencies: [19, 17, 6916, 21, 5142, 563, 5760, 1113, 2]
 // Exports: ForYouLoadMore
 
-// Module 18869 (ForYouLoadMore)
+// Module 18898 (ForYouLoadMore)
 import Fragment from "Fragment" /* 21 */;
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import intl2 from "intl" /* 1113 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import NotificationCenterItemsStore from "NotificationCenterItemsStore" /* 6913 */;
-import createStyles from "createStyles" /* 5140 */;
+import NotificationCenterItemsStore from "NotificationCenterItemsStore" /* 6916 */;
+import createStyles from "createStyles" /* 5142 */;
 import size from "module_2" /* 2 */;
 
 let c2;
@@ -33,7 +33,7 @@ export function ForYouLoadMore(onPressLoad) {
     tmp4Result = tmp4(React2, {});
   } else {
     const obj3 = { variant: "secondary", grow: true, size: "md", text: intl.string(intl2.t["Q/LSXp"]), onPress: onPressLoad };
-    const Button = tmp2(5758).Button;
+    const Button = tmp2(5760).Button;
     intl = tmp2(1113).intl;
     tmp4Result = tmp4(Button, obj3);
   }

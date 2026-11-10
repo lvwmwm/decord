@@ -1,12 +1,12 @@
-// Module ID: 12997
-// Function ID: 12998
+// Module ID: 13011
+// Function ID: 13012
 // Name: openConjureProjectAboutSheet
-// Dependencies: [5374, 12998, 2118, 2]
+// Dependencies: [5376, 13012, 2118, 2]
 // Exports: default
 
-// Module 12997 (openConjureProjectAboutSheet)
+// Module 13011 (openConjureProjectAboutSheet)
 import asyncRequire from "asyncRequire" /* 2118 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5376 */;
 import size from "module_2" /* 2 */;
 
 const ConjureProjectAboutSheet = "ConjureProjectAboutSheet";
@@ -19,6 +19,6 @@ export default function openConjureProjectAboutSheet(applicationId, source) {
   }
   const obj = ActionSheetActionCreatorsDefault;
   const obj2 = { applicationId, source, ticket: tmp };
-  obj.openLazy(asyncRequire(12998, dependencyMap.paths), ConjureProjectAboutSheet, obj2);
+  obj.openLazy(asyncRequire(13012, dependencyMap.paths), ConjureProjectAboutSheet, obj2);
 };
 export const CONJURE_PROJECT_ABOUT_SHEET_KEY = "ConjureProjectAboutSheet";

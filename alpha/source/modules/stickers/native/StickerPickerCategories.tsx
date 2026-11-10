@@ -1,24 +1,24 @@
-// Module ID: 10423
-// Function ID: 10424
+// Module ID: 10429
+// Function ID: 10430
 // Name: StickerPickerCategories
-// Dependencies: [32, 19, 17, 5011, 10388, 1072, 1228, 21, 5140, 575, 4965, 6615, 6616, 1252, 7043, 1187, 1411, 7020, 10401, 8738, 5376, 5377, 10207, 10208, 7287, 1113, 10424, 2]
+// Dependencies: [32, 19, 17, 5013, 10394, 1072, 1228, 21, 5142, 575, 4967, 6617, 6618, 1252, 7046, 1187, 1411, 7023, 10407, 8744, 5378, 5379, 10213, 10214, 7290, 1113, 10430, 2]
 // Exports: default
 
-// Module 10423 (StickerPickerCategories)
+// Module 10429 (StickerPickerCategories)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1228 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import HapticUtils from "HapticUtils" /* 5376 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5377 */;
-import StickersTypes from "StickersTypes" /* 6616 */;
-import StickerPickerStore from "StickerPickerStore" /* 10388 */;
+import HapticUtils from "HapticUtils" /* 5378 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5379 */;
+import StickersTypes from "StickersTypes" /* 6618 */;
+import StickerPickerStore from "StickerPickerStore" /* 10394 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 5011 */;
+import GuildStore from "GuildStore" /* 5013 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5142 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -247,24 +247,24 @@ export default function _default(categories) {
   }, items7);
   const callback5 = first.useCallback((arg0, index) => {
     const obj = { category: categories[index], index, isActive: index === categoryIndex, locked: categories[index].isNitroLocked, onPressCategory: callback2 };
-    return authStore3(closure_17, obj);
+    return gesture(closure_17, obj);
   }, items8);
   let obj = { portalHostName: "expression-footer", style, children: items9 };
   items9 = [, ];
-  const obj2 = { estimatedListSize: "windowSize", horizontal: true, itemSize: EXPRESSION_FOOTER_HEIGHT, keyboardShouldPersistTaps: "always", listId: ExpressionPickerViewType.STICKER, onLayout: callback4, onScroll: callback1, placeholderConfig: categoryIndex(10207)(), ref, scrollReporting: "callbacks", sections: memo, renderItem: callback5, showsHorizontalScrollIndicator: false, style: tmp.list };
-  const tmp21 = categoryIndex(10208);
-  items9[0] = closure_14(categoryIndex(7287), obj2);
+  const obj2 = { estimatedListSize: "windowSize", horizontal: true, itemSize: EXPRESSION_FOOTER_HEIGHT, keyboardShouldPersistTaps: "always", listId: ExpressionPickerViewType.STICKER, onLayout: callback4, onScroll: callback1, placeholderConfig: categoryIndex(10213)(), ref, scrollReporting: "callbacks", sections: memo, renderItem: callback5, showsHorizontalScrollIndicator: false, style: tmp.list };
+  const tmp21 = categoryIndex(10214);
+  items9[0] = closure_14(categoryIndex(7290), obj2);
   let tmp22Result = null != first && first1;
   const tmp17 = categoryIndex;
   const tmp20 = closure_15;
   if (tmp22Result) {
     const obj3 = { onPress: callback3, accessibilityRole: "button", accessibilityLabel: intl.string(categories(1113).t.rzCcjK), children: closure_14(closure_5, obj4) };
-    const PressableOpacity = categories(7043).PressableOpacity;
+    const PressableOpacity = categories(7046).PressableOpacity;
     intl = categories(1113).intl;
     obj4 = { style: items10, children: closure_14(Icon, obj5) };
     items10 = [, ];
     ({ item: arr11[0], fadedItem: arr11[1] } = tmp);
-    obj5 = { style: tmp.guildIcon, source: tmp17(10424) };
+    obj5 = { style: tmp.guildIcon, source: tmp17(10430) };
     Icon = categories(1187).Icon;
     tmp22Result = tmp22(PressableOpacity, obj3);
   }

@@ -1,13 +1,13 @@
-// Module ID: 6149
-// Function ID: 6150
+// Module ID: 6151
+// Function ID: 6152
 // Name: Dialog
-// Dependencies: [19, 17, 21, 6150, 2]
+// Dependencies: [19, 17, 21, 6152, 2]
 // Exports: Dialog
 
-// Module 6149 (Dialog)
+// Module 6151 (Dialog)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import AccessibilityView2 from "AccessibilityView" /* 6150 */;
+import AccessibilityView2 from "AccessibilityView" /* 6152 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

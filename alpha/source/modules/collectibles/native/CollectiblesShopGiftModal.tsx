@@ -1,33 +1,33 @@
-// Module ID: 14664
-// Function ID: 14665
+// Module ID: 14690
+// Function ID: 14691
 // Name: CollectiblesShopGiftModal
-// Dependencies: [19, 17, 7796, 1072, 1083, 21, 10031, 1377, 2183, 14665, 14663, 10808, 10795, 10812, 14666, 14669, 7231, 1113, 7064, 1187, 8879, 10731, 8839, 8826, 504, 9667, 7387, 7412, 2150, 7795, 10811, 2]
+// Dependencies: [19, 17, 7799, 1072, 1083, 21, 10037, 1377, 2183, 14691, 14689, 10817, 10804, 10821, 14692, 14695, 7234, 1113, 7067, 1187, 8885, 10740, 8845, 8832, 504, 9673, 7390, 7415, 2150, 7798, 10820, 2]
 // Exports: default
 
-// Module 14664 (CollectiblesShopGiftModal)
+// Module 14690 (CollectiblesShopGiftModal)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import Constants2 from "Constants" /* 1083 */;
 import intl2 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
 import StringUtils from "StringUtils" /* 2150 */;
-import NavigatorHeader from "NavigatorHeader" /* 7064 */;
-import Navigator2 from "Navigator" /* 7231 */;
-import BadgeId from "BadgeId" /* 8826 */;
-import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8839 */;
-import NoResults from "NoResults" /* 8879 */;
-import openGiftModal from "openGiftModal" /* 14663 */;
-import CollectiblesShopCheckoutDetailsDefault from "CollectiblesShopCheckoutDetails" /* 14666 */;
-import CollectiblesShopGiftPurchaseSectionDefault from "CollectiblesShopGiftPurchaseSection" /* 14669 */;
+import NavigatorHeader from "NavigatorHeader" /* 7067 */;
+import Navigator2 from "Navigator" /* 7234 */;
+import BadgeId from "BadgeId" /* 8832 */;
+import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8845 */;
+import NoResults from "NoResults" /* 8885 */;
+import openGiftModal from "openGiftModal" /* 14689 */;
+import CollectiblesShopCheckoutDetailsDefault from "CollectiblesShopCheckoutDetails" /* 14692 */;
+import CollectiblesShopGiftPurchaseSectionDefault from "CollectiblesShopGiftPurchaseSection" /* 14695 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7796 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7799 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
 let hasOwnProperty;
 let tmp;
-const CollectiblesActionCreators = tmp(7795);
+const CollectiblesActionCreators = tmp(7798);
 function CollectiblesShopGiftModalContent(product) {
   let GOOGLE;
   let analyticsLocations;

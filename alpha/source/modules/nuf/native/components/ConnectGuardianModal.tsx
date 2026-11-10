@@ -1,18 +1,18 @@
-// Module ID: 19983
-// Function ID: 19984
+// Module ID: 20011
+// Function ID: 20012
 // Name: ConnectGuardianModal
-// Dependencies: [19, 17, 1072, 7792, 21, 5140, 575, 1627, 19984, 1252, 7015, 5751, 1113, 2664, 17103, 5758, 2]
+// Dependencies: [19, 17, 1072, 7795, 21, 5142, 575, 1627, 20012, 1252, 7018, 5753, 1113, 2664, 17130, 5760, 2]
 // Exports: default
 
-// Module 19983 (ConnectGuardianModal)
+// Module 20011 (ConnectGuardianModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 7792 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 7795 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5142 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -61,7 +61,7 @@ export default function ConnectGuardianModal(route) {
   const onComplete = route.route.params.onComplete;
   const tmp = closure_9();
   const bottom = connectGuardianGate(1627)().bottom;
-  let obj = onComplete(19984);
+  let obj = onComplete(20012);
   connectGuardianGate = obj.useConnectGuardianGate();
   dependencyMap = react.useRef(false);
   const items = [connectGuardianGate.state, onComplete];
@@ -78,7 +78,7 @@ export default function ConnectGuardianModal(route) {
     }
   }, items);
   if ("gate" !== connectGuardianGate.state) {
-    let obj2 = { style: items1, children: closure_7(tmp4(7015).ActivityIndicator, {}) };
+    let obj2 = { style: items1, children: closure_7(tmp4(7018).ActivityIndicator, {}) };
     items1 = [, ];
     ({ container: arr2[0], centered: arr2[1] } = tmp);
     tmp9 = closure_7(View, obj2);
@@ -86,22 +86,22 @@ export default function ConnectGuardianModal(route) {
     const obj3 = { style: tmp.container, children: items3 };
     const obj4 = { style: tmp.header, children: items2 };
     const obj5 = { style: tmp.title, variant: "heading-xl/semibold", color: "text-default", children: intl.string(connectGuardianGate(2664).ITlV6p) };
-    const Text = tmp4(5751).Text;
+    const Text = tmp4(5753).Text;
     intl = tmp4(1113).intl;
     items2 = [closure_7(Text, obj5), ];
     const obj6 = { style: tmp.description, variant: "body-sm/medium", color: "text-muted", children: intl2.format(connectGuardianGate(2664).F4GT2S, { link: "https://support.discord.com/hc/articles/14155060633623" }) };
-    const Text2 = tmp4(5751).Text;
+    const Text2 = tmp4(5753).Text;
     intl2 = tmp4(1113).intl;
     items2[1] = closure_7(Text2, obj6);
     items3 = [closure_8(View, obj4), , , ];
     const obj7 = { style: tmp.cardSection, children: items4 };
     const obj8 = { style: tmp.scanPrompt, variant: "body-md/semibold", color: "text-default", children: intl3.string(connectGuardianGate(2664).Mi60fm) };
-    const Text3 = tmp4(5751).Text;
+    const Text3 = tmp4(5753).Text;
     intl3 = tmp4(1113).intl;
     items4 = [closure_7(Text3, obj8), ];
     const obj10 = { shareActions: "compact", linkCode: null, expiresAt: null, onRefresh: null };
     ({ linkCode: obj9.linkCode, expiresAt: obj9.expiresAt, refresh: obj9.onRefresh } = connectGuardianGate);
-    items4[1] = closure_7(onComplete(17103).ConnectGuardianCard, obj10);
+    items4[1] = closure_7(onComplete(17130).ConnectGuardianCard, obj10);
     items3[1] = closure_8(View, obj7);
     const obj11 = { style: tmp.grow };
     items3[2] = closure_7(View, obj11);
@@ -121,7 +121,7 @@ export default function ConnectGuardianModal(route) {
           return tmpResult;
         }
     };
-    Button = tmp4(5758).Button;
+    Button = tmp4(5760).Button;
     intl4 = tmp4(1113).intl;
     items3[3] = closure_7(View, obj12);
     tmp9 = closure_8(View, obj3);

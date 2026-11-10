@@ -1,19 +1,19 @@
-// Module ID: 13670
-// Function ID: 13671
+// Module ID: 13684
+// Function ID: 13685
 // Name: CheckpointActionCreators
-// Dependencies: [5, 4989, 13668, 1072, 572, 13666, 1282, 13671, 6569, 7549, 7900, 7712, 13616, 1380, 2]
+// Dependencies: [5, 4991, 13681, 1072, 572, 13679, 1282, 13685, 6571, 7552, 7904, 7715, 13629, 1380, 2]
 // Exports: completeCheckpoint, fetchCheckpointData, resetCheckpoint, saveCheckpointProgress, selectCharacterTrait, sendCheckpointCard, sendSidekickMessage, setVolume, toggleMute
 
-// Module 13670 (CheckpointActionCreators)
+// Module 13684 (CheckpointActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7549 */;
-import formatResults from "formatResults" /* 13616 */;
-import Tracking from "Tracking" /* 13666 */;
-import CheckpointStore2 from "CheckpointStore" /* 13668 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7552 */;
+import formatResults from "formatResults" /* 13629 */;
+import Tracking from "Tracking" /* 13679 */;
+import CheckpointStore2 from "CheckpointStore" /* 13681 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 4989 */;
+import ChannelStore from "ChannelStore" /* 4991 */;
 import size from "module_2" /* 2 */;
 
 const CheckpointStore = CheckpointStore2;
@@ -42,6 +42,7 @@ let obj = function _fetchCheckpointData() {
       let c3;
       try {
         let body;
+        let compact_assets;
         c5 = 2;
         if (0 === c4) {
           if (arg0 === 1) {
@@ -55,6 +56,7 @@ let obj = function _fetchCheckpointData() {
             let closure_2 = tmp;
             let closure_1 = tmp4;
             body = undefined;
+            compact_assets = undefined;
             CheckpointStore.initializeIfNeeded();
             if (CheckpointStore.isFetching) {
               c5 = 3;
@@ -90,10 +92,11 @@ let obj = function _fetchCheckpointData() {
         } else {
           let SUCCESS;
           body = value.body;
+          compact_assets = body.compact_assets;
           if (null != closure_0) {
-            const obj14 = { type: "CHECKPOINT_FETCH_SUCCESS", stats: obj5.getMockCheckpointStats(closure_0), globalStats: obj6.globalStatsFromServer(body.global_stats), character: null };
+            const obj14 = { type: "CHECKPOINT_FETCH_SUCCESS", stats: obj5.getMockCheckpointStats(closure_0), globalStats: obj6.globalStatsFromServer(body.global_stats), character: null, compactAssets: compact_assets };
             const dispatch = closure_130_1(closure_130_2[4]).dispatch;
-            const tmp23 = closure_130_1(closure_130_2[4]);
+            const tmp24 = closure_130_1(closure_130_2[4]);
             obj5 = closure_130_0(closure_130_2[7]);
             obj6 = closure_130_0(closure_130_2[8]);
             dispatch(obj14);
@@ -101,12 +104,12 @@ let obj = function _fetchCheckpointData() {
           } else {
             let statsFromServerResult = null;
             const dispatch2 = closure_130_1(closure_130_2[4]).dispatch;
-            const tmp56 = closure_130_1(closure_130_2[4]);
+            const tmp59 = closure_130_1(closure_130_2[4]);
             if (null != body.stats) {
               obj = closure_130_0(closure_130_2[8]);
               statsFromServerResult = obj.statsFromServer(body.stats);
             }
-            const obj15 = { type: "CHECKPOINT_FETCH_SUCCESS", stats: statsFromServerResult, globalStats: obj3.globalStatsFromServer(body.global_stats), character: body.character };
+            const obj15 = { type: "CHECKPOINT_FETCH_SUCCESS", stats: statsFromServerResult, globalStats: obj3.globalStatsFromServer(body.global_stats), character: body.character, compactAssets: compact_assets };
             obj3 = closure_130_0(closure_130_2[8]);
             dispatch2(obj15);
             SUCCESS = closure_130_6.SUCCESS;
@@ -116,10 +119,10 @@ let obj = function _fetchCheckpointData() {
           const obj16 = { value: SUCCESS, done: true };
           return obj16;
         }
-      } catch (tmp44) {
+      } catch (tmp46) {
         if (0 === c3) {
           c5 = 3;
-          throw tmp44;
+          throw tmp46;
         } else {
           c4 = 1;
         }

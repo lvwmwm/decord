@@ -1,14 +1,14 @@
-// Module ID: 11467
-// Function ID: 11468
+// Module ID: 11476
+// Function ID: 11477
 // Name: PinotMemberSettingState
-// Dependencies: [11468, 4969, 1227, 504, 2]
+// Dependencies: [11477, 4971, 1227, 504, 2]
 // Exports: usePinotMemberSettingState
 
-// Module 11467 (PinotMemberSettingState)
+// Module 11476 (PinotMemberSettingState)
 import get_initialized from "get initialized" /* 504 */;
 import wrappers from "wrappers" /* 1227 */;
-import PinotMemberSettingStore from "PinotMemberSettingStore" /* 11468 */;
-import UserSettingDefinitions from "UserSettingDefinitions" /* 4969 */;
+import PinotMemberSettingStore from "PinotMemberSettingStore" /* 11477 */;
+import UserSettingDefinitions from "UserSettingDefinitions" /* 4971 */;
 import size from "module_2" /* 2 */;
 
 const defineProtoSettingResult = UserSettingDefinitions.defineProtoSetting("privacy", "swpMessagePromotionOptedOut", (value) => {

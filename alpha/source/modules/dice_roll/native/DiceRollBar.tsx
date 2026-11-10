@@ -1,19 +1,19 @@
-// Module ID: 14176
-// Function ID: 14177
+// Module ID: 14202
+// Function ID: 14203
 // Name: DiceRollBar
-// Dependencies: [19, 17, 5141, 13956, 21, 5140, 575, 504, 1652, 5370, 1187, 14177, 9613, 5751, 2]
+// Dependencies: [19, 17, 5143, 13981, 21, 5142, 575, 504, 1652, 5372, 1187, 14203, 9619, 5753, 2]
 // Exports: default
 
-// Module 14176 (DiceRollBar)
+// Module 14202 (DiceRollBar)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1652 from "module_1652" /* 1652 */;
-import timing_timing from "timing/timing" /* 5370 */;
-import DiceRollStore from "DiceRollStore" /* 13956 */;
+import timing_timing from "timing/timing" /* 5372 */;
+import DiceRollStore from "DiceRollStore" /* 13981 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5141 */;
+import AccessibilityStore from "AccessibilityStore" /* 5143 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5140 */;
+import createStyles from "createStyles" /* 5142 */;
 import size from "module_2" /* 2 */;
 
 let duration, set, set2;

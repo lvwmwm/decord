@@ -1,9 +1,9 @@
-// Module ID: 10730
-// Function ID: 10731
+// Module ID: 10739
+// Function ID: 10740
 // Name: MarketingComponentType
 // Dependencies: [2]
 
-// Module 10730 (MarketingComponentType)
+// Module 10739 (MarketingComponentType)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/MarketingComponentType.tsx");

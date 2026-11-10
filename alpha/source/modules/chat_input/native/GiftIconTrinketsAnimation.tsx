@@ -1,23 +1,23 @@
-// Module ID: 14042
-// Function ID: 14043
+// Module ID: 14068
+// Function ID: 14069
 // Name: GiftIconTrinketsAnimation
-// Dependencies: [19, 17, 5141, 21, 5140, 5724, 575, 504, 2150, 14043, 1377, 9588, 5842, 2]
+// Dependencies: [19, 17, 5143, 21, 5142, 5726, 575, 504, 2150, 14069, 1377, 9594, 5844, 2]
 
-// Module 14042 (GiftIconTrinketsAnimation)
+// Module 14068 (GiftIconTrinketsAnimation)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import StringUtils from "StringUtils" /* 2150 */;
-import useToken from "useToken" /* 5724 */;
+import useToken from "useToken" /* 5726 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5141 */;
-import createStyles from "createStyles" /* 5140 */;
+import AccessibilityStore from "AccessibilityStore" /* 5143 */;
+import createStyles from "createStyles" /* 5142 */;
 import size from "module_2" /* 2 */;
 
 let tmp3;
-const FastImageDefault = tmp3(5842);
+const FastImageDefault = tmp3(5844);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let closure_6 = createStyles.createStyles((width) => ({ containerRefresh: { position: "absolute", top: 0, left: 0, width, height: width, overflow: "visible", marginLeft: 0, zIndex: 0 }, trinketsRefresh: { zIndex: 4, position: "absolute", pointerEvents: "none", width: "175%", height: "175%", top: "-37.5%", left: "-37.5%" } }));
@@ -45,7 +45,7 @@ const memoResult = react.memo(function GiftIconTrinketsAnimation(arg0) {
       const tmpResult2 = PlatformUtils;
       if (tmpResult2.isAndroid()) {
         const obj5 = { url: trinketsAnimationUrl, autoplay: !stateFromStores, style: trinketsRefresh };
-        tmp10Result = tmp10(tmp(9588).APNGPlayer, obj5);
+        tmp10Result = tmp10(tmp(9594).APNGPlayer, obj5);
       } else {
         const obj6 = { source: obj7, style: trinketsRefresh, resizeMode: "contain", enableAnimation: !stateFromStores };
         obj7 = { uri: trinketsAnimationUrl };

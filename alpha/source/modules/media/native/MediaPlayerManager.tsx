@@ -1,27 +1,27 @@
-// Module ID: 16713
-// Function ID: 16714
+// Module ID: 16740
+// Function ID: 16741
 // Name: MediaPlayerManager
-// Dependencies: [17, 4988, 6930, 4989, 6194, 5072, 2117, 1072, 5781, 16714, 1083, 3, 560, 1259, 2120, 5315, 572, 1377, 558, 7712, 6928, 2]
+// Dependencies: [17, 4990, 6933, 4991, 6196, 5074, 2117, 1072, 5783, 16741, 1083, 3, 560, 1259, 2120, 5317, 572, 1377, 558, 7715, 6931, 2]
 // Exports: isPlaybackComplete
 
-// Module 16713 (MediaPlayerManager)
+// Module 16740 (MediaPlayerManager)
 import LoggerDefault from "Logger" /* 3 */;
 import shallowEqualDefault from "shallowEqual" /* 558 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import Constants2 from "Constants" /* 1083 */;
 import react_native from "react-native" /* 1259 */;
-import RootNavigationRef from "RootNavigationRef" /* 5315 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 5781 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7712 */;
+import RootNavigationRef from "RootNavigationRef" /* 5317 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 5783 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7715 */;
 import react_native2 from "react-native" /* 17 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4988 */;
-import VoicePanelStore from "VoicePanelStore" /* 6930 */;
-import ChannelStore from "ChannelStore" /* 4989 */;
-import MessageStore from "MessageStore" /* 6194 */;
-import PermissionStore from "PermissionStore" /* 5072 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4990 */;
+import VoicePanelStore from "VoicePanelStore" /* 6933 */;
+import ChannelStore from "ChannelStore" /* 4991 */;
+import MessageStore from "MessageStore" /* 6196 */;
+import PermissionStore from "PermissionStore" /* 5074 */;
 import AppStateStore from "AppStateStore" /* 2117 */;
-import MediaPlaybackPanelConstants from "MediaPlaybackPanelConstants" /* 16714 */;
+import MediaPlaybackPanelConstants from "MediaPlaybackPanelConstants" /* 16741 */;
 import module_560 from "module_560" /* 560 */;
 import LifecycleManager from "LifecycleManager" /* 2120 */;
 import size from "module_2" /* 2 */;
@@ -42,7 +42,7 @@ const ActivityPanelModes = ActivityPanelConstants.ActivityPanelModes;
 ({ PLAYBACK_COMPLETION_DETECTION_TOLERANCE: map1, PLAYBACK_PROGRESS_UPDATE_INTERVAL: closure_14 } = MediaPlaybackPanelConstants);
 const Permissions = Constants2.Permissions;
 const tmp6 = new LoggerDefault("MediaPlayerManager");
-const authStore4 = tmp6;
+const authStore3 = tmp6;
 const useMediaPlayerManagerStore = module_560.create((arg0) => {
   let closure_0 = arg0;
   let obj = {
@@ -53,7 +53,7 @@ const useMediaPlayerManagerStore = module_560.create((arg0) => {
     wasPipClosedByUser: null,
     progress: null,
     rate: "flexDirection",
-    showPip: "en-BB",
+    showPip: "en-BE",
     closePip() {
       const obj = react_native;
       obj.batchUpdates(() => closure_1_0({ showPip: false }));
@@ -282,7 +282,7 @@ class MediaPlayerManager extends LifecycleManager {
           let tmp9 = null != progress && null != tmp7;
           if (tmp9) {
             const _Math = Math;
-            tmp9 = Math.abs(tmp7.time - progress.time) < authStore3;
+            tmp9 = Math.abs(tmp7.time - progress.time) < gesture;
           }
           if (tmp9) {
             tmp9 = tmp7.time !== tmp7.duration;
@@ -320,7 +320,7 @@ class MediaPlayerManager extends LifecycleManager {
       const tmp8 = source;
       if (!tmp7(activeMediaPlayerSource, tmp8)) {
         const setState = tmp.setState;
-        obj = { activeMediaPlayerSource: source, mediaSourceMessage: orFetchMediaSourceMessage, progress: "description", rate: false, isPlaying: false, wasPipClosedByUser: "_invalidateIfOrientationChanged" };
+        obj = { activeMediaPlayerSource: source, mediaSourceMessage: orFetchMediaSourceMessage, progress: "description", rate: false, isPlaying: false, wasPipClosedByUser: "add" };
         orFetchMediaSourceMessage = undefined;
         if (null != source) {
           orFetchMediaSourceMessage = self.getOrFetchMediaSourceMessage(tmp4);

@@ -1,14 +1,14 @@
-// Module ID: 8588
-// Function ID: 8589
+// Module ID: 8594
+// Function ID: 8595
 // Name: PremiumGroupUtils
-// Dependencies: [1385, 2184, 5194, 1113, 3444, 2, 8589]
+// Dependencies: [1385, 2184, 5196, 1113, 3444, 2, 8595]
 // Exports: getPremiumGroupInviteEmbedText, useCheckoutInstancePremiumGroupPurchaseEligibility, useIsEligibleForPremiumGroupMarketingMaterials, useIsEligibleForPremiumGroupNitroTabMarketingMaterials, useIsEligibleForPremiumGroupPurchase
 
-// Module 8588 (PremiumGroupUtils)
+// Module 8594 (PremiumGroupUtils)
 import intl7 from "intl" /* 1113 */;
 import _modDef3444 from "module_3444" /* 3444 */;
-import UserUtils from "UserUtils" /* 5194 */;
-import _mod8589 from "module_8589" /* 8589 */;
+import UserUtils from "UserUtils" /* 5196 */;
+import _mod8595 from "module_8595" /* 8595 */;
 import UserStore from "UserStore" /* 1385 */;
 import PremiumGroupConstants from "PremiumGroupConstants" /* 2184 */;
 import size from "module_2" /* 2 */;
@@ -17,8 +17,8 @@ let closure_4;
 let hasOwnProperty;
 ({ getPremiumGroupProductName: closure_4, HELP_CENTER_LINK: hasOwnProperty } = PremiumGroupConstants);
 const result = size.fileFinishedImporting("modules/premium/premium_group/PremiumGroupUtils.native.tsx");
-for (const key10025 in _mod8589) {
-  exports[key10025] = _mod8589[key10025];
+for (const key10025 in _mod8595) {
+  exports[key10025] = _mod8595[key10025];
   continue;
 }
 

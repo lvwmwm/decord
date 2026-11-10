@@ -1,27 +1,27 @@
-// Module ID: 14230
-// Function ID: 14231
+// Module ID: 14256
+// Function ID: 14257
 // Name: EmojiSuggestionChatButton
-// Dependencies: [32, 19, 17, 1192, 4986, 1228, 21, 5140, 575, 1377, 5724, 14224, 14231, 1652, 5761, 1705, 11383, 14232, 5420, 12709, 7043, 1113, 5842, 5147, 7364, 7365, 10148, 1187, 2]
+// Dependencies: [32, 19, 17, 1192, 4988, 1228, 21, 5142, 575, 1377, 5726, 14250, 14257, 1652, 5763, 1705, 11392, 14258, 5422, 12722, 7046, 1113, 5844, 5149, 7367, 7368, 10154, 1187, 2]
 // Exports: EmojiSuggestionChatButton
 
-// Module 14230 (EmojiSuggestionChatButton)
+// Module 14256 (EmojiSuggestionChatButton)
 import nativeDefault from "native" /* 575 */;
 import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1228 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import _mod1705 from "module_1705" /* 1705 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4986 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5420 */;
-import spring_spring from "spring/spring" /* 5761 */;
-import EmojiSuggestionBarUtils from "EmojiSuggestionBarUtils" /* 14224 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4988 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5422 */;
+import spring_spring from "spring/spring" /* 5763 */;
+import EmojiSuggestionBarUtils from "EmojiSuggestionBarUtils" /* 14250 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ThemeStore from "ThemeStore" /* 1192 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5140 */;
+import createStyles from "createStyles" /* 5142 */;
 import size_mod from "module_2" /* 2 */;
 
-let set, set2, tmp;
+let gesture, set, set2, tmp;
 
 let c10;
 let hasOwnProperty;
@@ -92,7 +92,7 @@ export function EmojiSuggestionChatButton(arg0) {
   let dismissCoachmark;
   let sharedValue;
   let callback1;
-  let gesture;
+  gesture = undefined;
   let gesture1;
   let gesture2;
   const tmp2 = onPress;

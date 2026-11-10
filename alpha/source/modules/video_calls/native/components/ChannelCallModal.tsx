@@ -1,26 +1,26 @@
-// Module ID: 11862
-// Function ID: 11863
+// Module ID: 11871
+// Function ID: 11872
 // Name: ChannelCallModal
-// Dependencies: [32, 19, 6898, 4989, 11130, 11131, 11863, 1072, 21, 11134, 11864, 5314, 11867, 12009, 11352, 12010, 1652, 1705, 5323, 12222, 504, 1493, 11865, 12223, 7387, 7412, 13407, 8008, 5420, 11136, 2]
+// Dependencies: [32, 19, 6901, 4991, 11139, 11140, 11872, 1072, 21, 11143, 11873, 5316, 11876, 12018, 11361, 12019, 1652, 1705, 5325, 12231, 504, 1493, 11874, 12232, 7390, 7415, 13421, 8012, 5422, 11145, 2]
 
-// Module 11862 (ChannelCallModal)
+// Module 11871 (ChannelCallModal)
 import Constants2 from "Constants" /* 1072 */;
 import _mod1705 from "module_1705" /* 1705 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5314 */;
-import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 8008 */;
-import ChannelCallConstants from "ChannelCallConstants" /* 11131 */;
-import VoiceChatHooks from "VoiceChatHooks" /* 11134 */;
-import RevealProvider from "RevealProvider" /* 11864 */;
-import CameraPreviewDefault from "CameraPreview" /* 11867 */;
-import ChannelCallModalManagerDefault from "ChannelCallModalManager" /* 12009 */;
-import ChannelCallNavigatorDefault from "ChannelCallNavigator" /* 12010 */;
-import RouteManagerUtils from "RouteManagerUtils" /* 12223 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5316 */;
+import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 8012 */;
+import ChannelCallConstants from "ChannelCallConstants" /* 11140 */;
+import VoiceChatHooks from "VoiceChatHooks" /* 11143 */;
+import RevealProvider from "RevealProvider" /* 11873 */;
+import CameraPreviewDefault from "CameraPreview" /* 11876 */;
+import ChannelCallModalManagerDefault from "ChannelCallModalManager" /* 12018 */;
+import ChannelCallNavigatorDefault from "ChannelCallNavigator" /* 12019 */;
+import RouteManagerUtils from "RouteManagerUtils" /* 12232 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6898 */;
-import ChannelStore from "ChannelStore" /* 4989 */;
-import ChannelCallStore from "ChannelCallStore" /* 11130 */;
-import Constants from "Constants" /* 11863 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6901 */;
+import ChannelStore from "ChannelStore" /* 4991 */;
+import ChannelCallStore from "ChannelCallStore" /* 11139 */;
+import Constants from "Constants" /* 11872 */;
 import Fragment from "Fragment" /* 21 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -46,10 +46,10 @@ class ChannelCallCameraPreview {
     NavigationRouteUtils;
     let tmp9 = null;
     if (isConnectedToVoiceChannel) {
-      const obj3 = { value: revealProviderValue, children: closure_15(CameraPreviewDefault, obj4) };
+      const obj3 = { value: revealProviderValue, children: clientStatuses(CameraPreviewDefault, obj4) };
       const Provider = RevealProvider.RevealContext.Provider;
       obj4 = { channel, participantScreenIsFocused: !tmp, isChannelCallModalOpen: tmp8 };
-      tmp9 = closure_15(Provider, obj3);
+      tmp9 = clientStatuses(Provider, obj3);
     }
     return tmp9;
   }
@@ -58,7 +58,7 @@ class ChannelCallModal {
   constructor(channel) {
     channel = channel.channel;
     const obj = { channelId: channel.id, guildId: channel.guild_id };
-    return closure_15(closure_30, obj);
+    return clientStatuses(closure_30, obj);
   }
 }
 ({ useChannelCallOrientationHandlers: metroImportDefault, resetChannelCallStore: metroImportAll, useChannelCallStore: c9, setVoiceChatDrawerState: c10, useIsVoiceChatFocused: unpackModuleId } = ChannelCallStore);

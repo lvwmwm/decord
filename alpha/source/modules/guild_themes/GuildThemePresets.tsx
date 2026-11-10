@@ -1,13 +1,13 @@
-// Module ID: 5311
-// Function ID: 5312
+// Module ID: 5313
+// Function ID: 5314
 // Name: GuildThemePresets
-// Dependencies: [1083, 671, 5312, 2]
+// Dependencies: [1083, 671, 5314, 2]
 // Exports: getDefaultGuildThemePresetSettings, getGuildThemePreset, getGuildThemePresetAppearance, getGuildThemeToneRange, getHueAdjustedColor, getLinearGradientForGuildThemePreset, getRandomSingleColorGuildTheme, getSaturationPinnedColor, getSingleColorGuildThemeGradientColors, getThemeAdjustedToneColor, getToneAdjustedColor
 
-// Module 5311 (GuildThemePresets)
+// Module 5313 (GuildThemePresets)
 import _modDef671 from "module_671" /* 671 */;
 import Constants from "Constants" /* 1083 */;
-import CustomThemesRandomUtils from "CustomThemesRandomUtils" /* 5312 */;
+import CustomThemesRandomUtils from "CustomThemesRandomUtils" /* 5314 */;
 import size from "module_2" /* 2 */;
 
 let items1;

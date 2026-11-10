@@ -1,18 +1,18 @@
-// Module ID: 7658
-// Function ID: 7659
+// Module ID: 7661
+// Function ID: 7662
 // Name: useEaseInEaseOutLayoutAnimations
-// Dependencies: [32, 19, 5141, 1652, 504, 1377, 2]
+// Dependencies: [32, 19, 5143, 1652, 504, 1377, 2]
 // Exports: default, useTriggeredLayoutTransition
 
-// Module 7658 (useEaseInEaseOutLayoutAnimations)
+// Module 7661 (useEaseInEaseOutLayoutAnimations)
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import _mod1652 from "module_1652" /* 1652 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5141 */;
+import AccessibilityStore from "AccessibilityStore" /* 5143 */;
 import size from "module_2" /* 2 */;
 
-const f92483 = () => useReducedMotion.useReducedMotion;
+const f92602 = () => useReducedMotion.useReducedMotion;
 const Easing = _mod1652.Easing;
 let closure_5 = Easing.inOut(_mod1652.Easing.ease);
 const result = size.fileFinishedImporting("modules/animations/native/useEaseInEaseOutLayoutAnimations.tsx");
@@ -21,7 +21,7 @@ export default function useEaseInEaseOutLayoutAnimations() {
   let stateFromStores;
   const items = [AccessibilityStore];
   const obj = stateFromStores(504);
-  stateFromStores = obj.useStateFromStores(items, f92483);
+  stateFromStores = obj.useStateFromStores(items, f92602);
   const items1 = [stateFromStores];
   return react.useMemo(() => {
     let easingResult;
@@ -29,7 +29,7 @@ export default function useEaseInEaseOutLayoutAnimations() {
     let easingResult2;
     const obj = PlatformUtils;
     if (obj.isAndroid()) {
-      return { entering: "Array", exiting: "channel", layout: "find" };
+      return { entering: "paddingHorizontal", exiting: "channel", layout: "set" };
     } else {
       const ReduceMotion = tmp(1652).ReduceMotion;
       const tmp4 = stateFromStores ? ReduceMotion.Always : ReduceMotion.Never;
@@ -54,7 +54,7 @@ export function useTriggeredLayoutTransition() {
   let useReducedMotion;
   let obj = stateFromStores(504);
   const items = [AccessibilityStore];
-  stateFromStores = obj.useStateFromStores(items, f92483);
+  stateFromStores = obj.useStateFromStores(items, f92602);
   let obj2 = react;
   const items1 = [stateFromStores];
   const layout = react.useMemo(() => {
@@ -63,7 +63,7 @@ export function useTriggeredLayoutTransition() {
     let easingResult2;
     const obj = PlatformUtils;
     if (obj.isAndroid()) {
-      return { entering: "Array", exiting: "channel", layout: "find" };
+      return { entering: "paddingHorizontal", exiting: "channel", layout: "set" };
     } else {
       const ReduceMotion = tmp(1652).ReduceMotion;
       const tmp4 = stateFromStores ? ReduceMotion.Always : ReduceMotion.Never;

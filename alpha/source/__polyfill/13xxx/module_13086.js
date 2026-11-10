@@ -1,148 +1,103 @@
 // Module ID: 13086
 // Function ID: 13087
-// Dependencies: [13087, 13088, 13089, 13090]
+// Dependencies: [13059, 13064]
 
 // Module 13086
-import _mod13088 from "module_13088" /* 13088 */;
-import module_13087_mod from "module_13087" /* 13087 */;
-import module_13089 from "module_13089" /* 13089 */;
-import size_mod from "module_13090" /* 13090 */;
+import TokenStream from "TokenStream" /* 13059 */;
+import tokenize from "tokenize" /* 13064 */;
 
-let module_13087;
-let obj5;
-let size;
-function patchDictionary(descriptors, descriptors1) {
-  const obj = {};
-  for (const key10004 in descriptors) {
-    let syntax = descriptors[key10004].syntax || descriptors[key10004];
-    obj[key10004] = syntax;
-    continue;
+function prepareTokens(arg0, items) {
+  let node1 = null;
+  if (items) {
+    node1 = items[0].node;
   }
-  for (const key10011 in descriptors1) {
-    let syntax3 = descriptors1[key10011].syntax;
-    if (key10011 in descriptors) {
-      if (syntax3) {
-        let syntax2;
-        if (re0.test(descriptors1[key10011].syntax)) {
-          let str2 = descriptors1[key10011].syntax;
-          let text = `${obj[key10011]} `;
-          syntax2 = `${obj[key10011]} ${str2.trim()}`;
-        } else {
-          syntax2 = descriptors1[key10011].syntax;
-        }
-        obj[key10011] = syntax2;
-        continue;
-      } else {
-        delete obj[tmp5];
-        continue;
-      }
-      continue;
-    } else {
-      if (!syntax3) {
-        continue;
-      } else {
-        let str = descriptors1[key10011].syntax;
-        obj[key10011] = str.replace(re0, "");
-        continue;
-      }
-      continue;
-    }
-    continue;
-  }
-  return obj;
-}
-const re0 = /^\s*\|\s*/;
-let obj = { types: patchDictionary(module_13087, _mod13088.syntaxes), atrules: obj5, properties: patchDictionary(size, _mod13088.properties) };
-module_13087 = module_13087_mod;
-const obj2 = Object.create(null);
-for (const key10022 in module_13089) {
-  let tmp23 = module_13089[key10022];
-  let tmp7 = null;
-  if (tmp23.descriptors) {
-    let _Object = Object;
-    let obj3 = Object.create(null);
-    tmp7 = obj3;
-    let keys = Object.keys();
-    if (keys !== undefined) {
-      tmp7 = obj3;
-      let tmp9 = keys[tmp2];
-      while (tmp9 !== undefined) {
-        obj3[tmp9] = tmp23.descriptors[tmp9].syntax;
-        continue;
-      }
-    }
-  }
-  let str = tmp23.syntax;
-  let substr = key10022.substr(1);
-  let str2 = str.trim();
-  let str3 = str2.match(/^@\S+\s+([^;\{]*)/)[1];
-  let trimmed = str3.trim() || null;
-  let obj4 = { prelude: trimmed, descriptors: tmp7 };
-  obj2[substr] = obj4;
-  continue;
-}
-const atrules = _mod13088.atrules;
-obj5 = {};
-for (const key10049 in obj2) {
-  let descriptors1 = atrules[key10049] && atrules[key10049].descriptors || null;
-  if (key10049 in atrules) {
-    if ("prelude" in atrules[key10049]) {
-      let patchDictionaryResult;
-      let obj6 = { prelude: atrules[key10049].prelude, descriptors: patchDictionaryResult };
-      if (obj2[key10049].descriptors) {
-        let descriptors = obj2[key10049].descriptors;
-        if (!descriptors1) {
-          descriptors1 = {};
-        }
-        patchDictionaryResult = patchDictionary(descriptors, descriptors1);
-      } else {
-        patchDictionaryResult = descriptors1;
-        if (patchDictionaryResult) {
-          let obj7 = {};
-          patchDictionaryResult = obj7;
-          let keys1 = Object.keys();
-          if (keys1 !== undefined) {
-            patchDictionaryResult = obj7;
-            let tmp16 = keys1[tmp];
-            while (tmp16 !== undefined) {
-              obj7[tmp16] = descriptors1[tmp16].syntax;
-              continue;
+  items = [];
+  tokenize(arg0, closure_2);
+  let num = 0;
+  let num2 = 0;
+  while (!closure_2.eof) {
+    let tmp6 = node1;
+    let tmp7 = num;
+    let tmp8 = num2;
+    if (items) {
+      tmp6 = node1;
+      tmp7 = num;
+      tmp8 = num2;
+      if (num < items.length) {
+        let tmp12 = num;
+        let tmp13 = num2;
+        tmp6 = node1;
+        tmp7 = num;
+        tmp8 = num2;
+        if (num2 + items[num].len <= closure_2.tokenStart) {
+          let sum = tmp12 + 1;
+          let sum1 = tmp13 + items[tmp12].len;
+          let node = items[sum].node;
+          tmp6 = node;
+          tmp8 = sum1;
+          tmp7 = sum;
+          while (sum < items.length) {
+            tmp12 = sum;
+            tmp13 = sum1;
+            tmp6 = node;
+            tmp7 = sum;
+            tmp8 = sum1;
+            if (sum1 + items[sum].len > closure_2.tokenStart) {
+              break;
             }
           }
         }
       }
-      obj5[key10049] = obj6;
-      continue;
     }
+    let obj = { type: closure_2.tokenType, value: closure_2.getTokenValue(), index: closure_2.tokenIndex, balance: closure_2.balance[closure_2.tokenIndex], node: tmp6 };
+    let push = items.push;
+    let arr = push(obj);
+    let nextResult = closure_2.next();
+    node1 = tmp6;
+    num = tmp7;
+    num2 = tmp8;
   }
-  let prelude = obj2[key10049].prelude || null;
+  return items;
 }
-for (const key10070 in atrules) {
-  if (globalThis.hasOwnProperty.call(obj2, key10070)) {
-    continue;
-  } else {
-    let prelude1 = atrules[key10070].prelude || null;
-    let obj8 = { prelude: prelude1, descriptors: descriptors2 };
-    let descriptors2 = atrules[key10070].descriptors;
-    if (descriptors2) {
-      let descriptors3 = atrules[key10070].descriptors;
-      let obj16 = {};
-      descriptors2 = obj16;
-      let keys2 = Object.keys();
-      if (keys2 !== undefined) {
-        descriptors2 = obj16;
-        let tmp20 = keys2[tmp];
-        while (tmp20 !== undefined) {
-          obj16[tmp20] = descriptors3[tmp20].syntax;
-          continue;
+let tmp = new TokenStream();
+let closure_2 = tmp;
+let closure_3 = {
+  decorator(children) {
+    let node = null;
+    let obj = { len: 0, node: null };
+    const items = [obj];
+    let closure_4 = "";
+    return {
+      children: children.children,
+      node(arg0) {
+        let closure_1 = arg0;
+        node = children.node;
+        node.call(this, arg0);
+        const tmp = closure_1;
+        closure_1 = tmp;
+      },
+      chunk(arg0) {
+        closure_4 = closure_4 + arg0;
+        if (obj.node !== node) {
+          obj = { len: arg0.length, node };
+          items.push(obj);
+        } else {
+          obj.len = obj.len + arg0.length;
         }
+      },
+      result() {
+        return prepareTokens(closure_4, items);
       }
-    }
-    obj5[key10070] = obj8;
-    continue;
+    };
   }
-  continue;
-}
-size = size_mod;
+};
 
-export default obj;
+export default (str, generate) => {
+  let generateResult;
+  if (typeof str === "string") {
+    generateResult = prepareTokens(str, null);
+  } else {
+    generateResult = generate.generate(str, closure_3);
+  }
+  return generateResult;
+};

@@ -1,85 +1,58 @@
 // Module ID: 13290
 // Function ID: 13291
-// Dependencies: [13291, 13288]
-// Exports: extractTraceparentData, generateSentryTraceHeader, propagationContextFromHeaders
+// Dependencies: [13291, 13292, 13295]
+// Exports: addHandler, maybeInstrument, resetInstrumentationHandlers, triggerHandlers
 
 // Module 13290
-import generatePropagationContext from "generatePropagationContext" /* 13288 */;
-import BAGGAGE_HEADER_NAME from "BAGGAGE_HEADER_NAME" /* 13291 */;
+import _mod13291 from "module_13291" /* 13291 */;
+import _mod13295 from "module_13295" /* 13295 */;
 
-const regExp = new RegExp("^[ \\t]*([0-9a-f]{32})?-?([0-9a-f]{16})?-?([01])?[ \\t]*$");
+let closure_2 = {};
+let closure_3 = {};
 
-export const TRACEPARENT_REGEXP = regExp;
-export function extractTraceparentData(str) {
-  const tmp = str;
-  if (tmp) {
-    const match = str.match(regExp);
-    if (match) {
-      let flag = true;
-      if ("1" !== match[3]) {
-        if ("0" === match[3]) {
-          flag = false;
-        }
+export function addHandler(arg0, arg1) {
+  const tmp2 = closure_2[arg0] || [];
+  closure_2[arg0] = tmp2;
+  const arr = closure_2[arg0];
+  arr.push(arg1);
+}
+export function maybeInstrument(arg0, fn) {
+  if (!closure_3[arg0]) {
+    tmp[arg0] = true;
+    try {
+      fn();
+    } catch (tmp4) {
+      const tmp5 = require;
+      if (_mod13291.DEBUG_BUILD) {
+        const logger = tmp5(13292).logger;
+        const _HermesInternal = HermesInternal;
+        logger.error("Error while instrumenting " + arg0, tmp4);
       }
-      return { traceId: match[1], parentSampled: flag, parentSpanId: match[2] };
     }
   }
 }
-export function generateSentryTraceHeader() {
-  let traceId = arg0;
-  if (arg0 === undefined) {
-    const obj = generatePropagationContext;
-    traceId = obj.generateTraceId();
-  }
-  let spanId = arg1;
-  if (arg1 === undefined) {
-    const obj2 = generatePropagationContext;
-    spanId = obj2.generateSpanId();
-  }
-  let str = "";
-  if (undefined !== arg2) {
-    let str2 = "-0";
-    if (arg2) {
-      str2 = "-1";
-    }
-    str = str2;
-  }
-  return "" + traceId + "-" + spanId + str;
+export function resetInstrumentationHandlers() {
+  const keys = Object.keys(closure_2);
+  const item = keys.forEach((item) => {
+    closure_1_2[item] = undefined;
+  });
 }
-export function propagationContextFromHeaders(str, arg1) {
-  let parentSampled;
-  let tmp4Result;
-  let tmp4Result3;
-  let tmp4Result4;
-  let tmp;
-  if (str) {
-    const match = str.match(regExp);
-    if (match) {
-      let flag = true;
-      if ("1" !== match[3]) {
-        if ("0" === match[3]) {
-          flag = false;
+export function triggerHandlers(arg0, arg1) {
+  if (arg0 && closure_2[arg0]) {
+    const iter = (arg0 && closure_2[arg0])[Symbol.iterator]();
+    const nextResult = iter.next();
+    if (iter !== undefined) {
+      try {
+        nextResult(arg1);
+      } catch (tmp11) {
+        if (_mod13291.DEBUG_BUILD) {
+          const logger = tmp12(13292).logger;
+          const error = logger.error;
+          const _HermesInternal = HermesInternal;
+          const tmp12Result = _mod13295;
+          error("Error while triggering instrumentation handler.\nType: " + arg0 + "\nName: " + tmp12Result.getFunctionName(nextResult) + "\nError:", tmp11);
         }
       }
-      tmp = { traceId: match[1], parentSampled: flag, parentSpanId: match[2] };
-      const obj = { traceId: match[1], parentSampled: flag, parentSpanId: match[2] };
     }
   }
-  const obj2 = BAGGAGE_HEADER_NAME;
-  let result = obj2.baggageHeaderToDynamicSamplingContext(arg1);
-  if (tmp) {
-    if (tmp.traceId) {
-      const obj3 = { traceId: null, parentSpanId: null, spanId: tmp4Result.generateSpanId(), sampled: parentSampled, dsc: result };
-      ({ traceId: obj7.traceId, parentSpanId: obj7.parentSpanId, parentSampled } = tmp);
-      tmp4Result = generatePropagationContext;
-      if (!result) {
-        result = {};
-      }
-      return obj3;
-    }
-  }
-  const obj4 = { traceId: tmp4Result3.generateTraceId(), spanId: tmp4Result4.generateSpanId() };
-  tmp4Result3 = generatePropagationContext;
-  tmp4Result4 = generatePropagationContext;
-  return obj4;
 }

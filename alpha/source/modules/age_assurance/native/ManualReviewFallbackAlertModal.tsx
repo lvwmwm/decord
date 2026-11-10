@@ -1,15 +1,15 @@
-// Module ID: 8240
-// Function ID: 8241
+// Module ID: 8244
+// Function ID: 8245
 // Name: ManualReviewFallbackAlertModal
-// Dependencies: [19, 21, 6096, 1113, 3348, 6096, 8241, 1260, 2]
+// Dependencies: [19, 21, 6098, 1113, 3348, 6098, 8245, 1260, 2]
 // Exports: default
 
-// Module 8240 (ManualReviewFallbackAlertModal)
+// Module 8244 (ManualReviewFallbackAlertModal)
 import intl5 from "intl" /* 1113 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
 import _modDef3348 from "module_3348" /* 3348 */;
-import AlertModal2 from "AlertModal" /* 6096 */;
-import ManualReviewActionCreators from "ManualReviewActionCreators" /* 8241 */;
+import AlertModal2 from "AlertModal" /* 6098 */;
+import ManualReviewActionCreators from "ManualReviewActionCreators" /* 8245 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;

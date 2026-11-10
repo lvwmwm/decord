@@ -1,142 +1,131 @@
 // Module ID: 16559
 // Function ID: 16560
-// Dependencies: [473, 16560, 190, 863]
-// Exports: default
+// Dependencies: [42, 41, 93, 95, 98, 158, 17, 16560]
 
 // Module 16559
-import ArgType from "ArgType" /* 16560 */;
-import react_mod from "react" /* 473 */;
+import react_native from "react-native" /* 17 */;
+import base64Decode from "base64Decode" /* 16560 */;
+import _createClass from "_createClass" /* 42 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _possibleConstructorReturn from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
+import _wrapNativeSuper from "_wrapNativeSuper" /* 158 */;
 
-let _default2, logger;
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
-let tmp3;
-let react = react_mod;
-if (!react) {
-  let obj = { default: react };
-  tmp3 = obj;
-} else {
-  tmp3 = react;
+    }));
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
+    };
+    return _isNativeReflectConstruct();
+  } catch (err) {
+  }
 }
-react = tmp3.default;
-let closure_5 = { veto: null };
-function objectifyError(headers) {
-  let closure_0 = headers;
-  const obj = {};
-  const ownPropertyNames = Object.getOwnPropertyNames(headers);
-  const item = ownPropertyNames.forEach((item) => {
-    obj[item] = closure_0[item];
-  });
-  return obj;
+const NativeModules = react_native.NativeModules;
+class TypeMismatchError {
+  constructor() {
+    let constructResult;
+    const self = this;
+    _classCallCheck(this, TypeMismatchError);
+    const obj = _getPrototypeOf(TypeMismatchError);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = _possibleConstructorReturn;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
+    } else {
+      constructResult = obj(...arguments);
+    }
+    return tmp3(self, constructResult);
+  }
 }
-
-export default (arg0) => {
-  let closure_0 = arg0;
-  return (arg0) => {
-    let addException;
-    function reportError(stack) {
-      logger = stack;
-      try {
-        const tmp2 = _default;
-        if (!tmp2) {
-          const tmp3 = logger;
-          const tmp5 = logger(veto[2]);
-          if (typeof tmp5 === "function") {
-            _default = tmp5;
-          } else {
-            _default = tmp6.default;
-          }
-        }
-        const tmp9 = _default2;
-        if (!tmp9) {
-          const tmp12 = logger(veto[3]);
-          if (typeof tmp12 === "function") {
-            _default2 = tmp12;
-          } else {
-            _default2 = tmp13.default;
-          }
-        }
-        if (_default) {
-          if (_default2) {
-            if (typeof tmp16 !== "function") {
-              logger.error("parseErrorStack is not a function", []);
-              const obj2 = { parseErrorStackType: typeof _default, parseErrorStack: _default };
-              logger.debug(obj2);
-            } else if (typeof tmp18 !== "function") {
-              logger.error("symbolicateStackTrace is not a function", []);
-              const obj3 = { symbolicateStackTraceType: typeof _default2, symbolicateStackTrace: _default2 };
-              logger.debug(obj3);
-            } else {
-              try {
-                const promise = _default2(_default(stack.stack));
-                const nextPromise = promise.then((stack) => {
-                  stack = stack.stack;
-                  const mapped = stack.map((file) => ({ fileName: file.file, functionName: file.methodName, lineNumber: file.lineNumber }));
-                  let found = mapped;
-                  if (veto.veto) {
-                    found = mapped.filter((item) => {
-                      let vetoResult;
-                      const obj = veto;
-                      if (veto != null) {
-                        vetoResult = obj.veto(item);
-                      }
-                      return vetoResult;
-                    });
-                  }
-                  stack.error(stack.message, found);
-                });
-                nextPromise.catch((error) => {
-                  stack.error("Unable to symbolicate stack trace from error object", []);
-                  if (typeof closure_2_6 === "function") {
-                    stack = error;
-                    const obj = {};
-                    const _Object = Object;
-                    const ownPropertyNames = Object.getOwnPropertyNames(error);
-                    const item = ownPropertyNames.forEach((item) => {
-                      obj[item] = closure_0[item];
-                    });
-                    tmp3(obj);
-                  } else {
-                    throw new TypeError("Trying to call a non-function");
-                  }
-                });
-              } catch (tmp32) {
-                logger.error("Unable to parse stack trace from error object", []);
-                logger.debug(closure_1_6(tmp32));
+_inherits(TypeMismatchError, _wrapNativeSuper(Error));
+let closure_8 = _createClass(TypeMismatchError);
+class QuotaExceededError {
+  constructor() {
+    let constructResult;
+    const self = this;
+    _classCallCheck(this, QuotaExceededError);
+    const obj = _getPrototypeOf(QuotaExceededError);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = _possibleConstructorReturn;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
+    } else {
+      constructResult = obj(...arguments);
+    }
+    return tmp3(self, constructResult);
+  }
+}
+_inherits(QuotaExceededError, _wrapNativeSuper(Error));
+let closure_9 = _createClass(QuotaExceededError);
+if (typeof global.crypto !== "object") {
+  global.crypto = {};
+}
+if (typeof global.crypto.getRandomValues !== "function") {
+  global.crypto.getRandomValues = function getRandomValues(uint8Array) {
+    if (!(uint8Array instanceof Int8Array)) {
+      const _Uint8Array = Uint8Array;
+      if (!(uint8Array instanceof Uint8Array)) {
+        const _Int16Array = Int16Array;
+        if (!(uint8Array instanceof Int16Array)) {
+          const _Uint16Array = Uint16Array;
+          if (!(uint8Array instanceof Uint16Array)) {
+            const _Int32Array = Int32Array;
+            if (!(uint8Array instanceof Int32Array)) {
+              const _Uint32Array = Uint32Array;
+              if (!(uint8Array instanceof Uint32Array)) {
+                const _Uint8ClampedArray = Uint8ClampedArray;
+                if (!(uint8Array instanceof Uint8ClampedArray)) {
+                  const self = this;
+                  const self2 = this;
+                  const tmp2 = new closure_8("Expected an integer array");
+                  throw tmp2;
+                }
               }
             }
           }
         }
-        logger.error("parseErrorStack or symbolicateStackTrace is not available", []);
-        let obj = { parseErrorStackAvailable: _default, symbolicateStackTraceAvailable: _default2 };
-        logger.debug(obj);
-      } catch (tmp47) {
-        logger.error("Unable to load \"react-native/Libraries/Core/Devtools/parseErrorStack\" or \"react-native/Libraries/Core/Devtools/symbolicateStackTrace\"", []);
-        logger.debug(closure_1_6(tmp47));
       }
     }
-    let _default = reportError;
-    const result = ArgType.assertHasLoggerPlugin(arg0);
-    closure_0 = arg0;
-    let obj = closure_0;
-    let _Object = Object;
-    let tmp2 = closure_5;
-    if (!closure_0) {
-      obj = {};
+    if (uint8Array.byteLength > 65536) {
+      const self7 = this;
+      const self8 = this;
+      const tmp11 = new closure_9("Can only request a maximum of 65536 bytes");
+      throw tmp11;
+    } else {
+      let randomBase64;
+      const byteLength = uint8Array.byteLength;
+      const tmp15 = base64Decode;
+      if (NativeModules.RNGetRandomValues) {
+        const RNGetRandomValues = tmp16.RNGetRandomValues;
+        randomBase64 = RNGetRandomValues.getRandomBase64(byteLength);
+      } else if (NativeModules.ExpoRandom) {
+        const ExpoRandom2 = tmp16.ExpoRandom;
+        randomBase64 = ExpoRandom2.getRandomBase64String(byteLength);
+      } else if (global.ExpoModules) {
+        const ExpoRandom = global.ExpoModules.ExpoRandom;
+        randomBase64 = ExpoRandom.getRandomBase64String(byteLength);
+      } else {
+        const _Error = Error;
+        const self3 = this;
+        const self4 = this;
+        const error = new Error("Native module not found");
+        throw error;
+      }
+      const _Uint8Array2 = Uint8Array;
+      const self5 = this;
+      const self6 = this;
+      uint8Array = new Uint8Array(uint8Array.buffer, uint8Array.byteOffset, uint8Array.byteLength);
+      tmp15(randomBase64, uint8Array);
+      return uint8Array;
     }
-    let closure_1 = assign({}, tmp2, obj);
-    let obj2 = {
-      onConnect() {
-        const obj = {
-          apply(apply, arg1, arg2) {
-            _default(arg2[0]);
-            return apply.apply(arg1, arg2);
-          }
-        };
-        const proxy = new Proxy(addException.addException, obj);
-        addException.addException = proxy;
-      },
-      features: { reportError }
-    };
-    return obj2;
   };
-};
+}

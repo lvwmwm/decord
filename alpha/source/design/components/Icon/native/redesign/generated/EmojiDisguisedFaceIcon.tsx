@@ -1,14 +1,14 @@
-// Module ID: 17685
-// Function ID: 17686
+// Module ID: 17712
+// Function ID: 17713
 // Name: EmojiDisguisedFaceIcon
-// Dependencies: [19, 21, 575, 5841, 17686, 2]
+// Dependencies: [19, 21, 575, 5843, 17713, 2]
 // Exports: EmojiDisguisedFaceIcon
 
-// Module 17685 (EmojiDisguisedFaceIcon)
+// Module 17712 (EmojiDisguisedFaceIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5841 */;
-import AssetRegistry from "AssetRegistry" /* 17686 */;
+import BaseIconImage2 from "BaseIconImage" /* 5843 */;
+import AssetRegistry from "AssetRegistry" /* 17713 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

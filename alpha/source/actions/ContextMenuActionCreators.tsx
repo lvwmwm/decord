@@ -1,25 +1,28 @@
-// Module ID: 6983
-// Function ID: 6984
+// Module ID: 6986
+// Function ID: 6987
 // Name: ContextMenuActionCreators
-// Dependencies: [1072, 572, 6984, 1377, 6986, 2]
+// Dependencies: [1072, 572, 6987, 7000, 1377, 2]
 // Exports: closeContextMenu, openContextMenuLazy
 
-// Module 6983 (ContextMenuActionCreators)
+// Module 6986 (ContextMenuActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
+import SpellcheckUtils from "SpellcheckUtils" /* 6987 */;
 import size_mod from "module_2" /* 2 */;
 
-let importDefault;
+const require = globalThis.__r;
+let _null, c1, importDefault;
 
 function openContextMenu(stopPropagation, render, enableSpellCheck, renderLazy) {
   let bottom;
-  let closure_1;
+  let closure_3;
   let currentTarget2;
   let dOMRect;
   let left;
   let obj2;
   let pageX;
   let pageY;
+  let settle;
   stopPropagation.stopPropagation();
   if (null == stopPropagation.currentTarget.contains) {
     pageY = 0;
@@ -113,7 +116,7 @@ function openContextMenu(stopPropagation, render, enableSpellCheck, renderLazy) 
     const self = this;
     const self2 = this;
     dOMRect = new DOMRect(tmp3, sum1, 0, 0);
-    const obj3 = contextMenu(6984);
+    let obj3 = contextMenu(settle[3]);
     let APP = obj3.getCurrentlyInteractingAppContext();
     if (APP == null) {
       APP = AppContext.APP;
@@ -129,33 +132,133 @@ function openContextMenu(stopPropagation, render, enableSpellCheck, renderLazy) 
       enableSpellCheck = enableSpellCheck.enableSpellCheck;
     }
     if (enableSpellCheck) {
-      const tmp14Result = contextMenu(1377);
+      const tmp14Result = contextMenu(settle[4]);
       if (tmp14Result.isDesktop()) {
         if (nativeEvent.isTrusted) {
-          const tmp14Result2 = contextMenu(6986);
-          importDefault = tmp14Result2.addResultListener(function handler() {
-            closure_1();
-            contextMenu = DispatcherDefault;
-            const obj2 = { type: "CONTEXT_MENU_OPEN", contextMenu };
-            contextMenu.dispatch(obj2);
+          settle = function settle() {
+            let flag = !c1;
+            if (flag) {
+              c1 = true;
+              const _clearTimeout = clearTimeout;
+              clearTimeout(closure_3);
+              settle();
+              flag = true;
+              if (c4 === settle) {
+                c4 = null;
+                flag = true;
+              }
+            }
+            return flag;
+          };
+          if (settle != null) {
+            if (typeof settle === "function") {
+              const tmp32 = importDefault;
+              if (!tmp32) {
+                importDefault = true;
+                const _clearTimeout2 = clearTimeout;
+                clearTimeout(closure_130_3);
+                closure_130_4();
+                if (c4 === closure_130_2) {
+                  c4 = null;
+                }
+              }
+            } else {
+              throw new TypeError("Trying to call a non-function");
+            }
+          }
+          importDefault = false;
+          const _setTimeout = setTimeout;
+          AppContext = setTimeout(() => {
+            let flag = !c1;
+            if (flag) {
+              c1 = true;
+              const _clearTimeout = clearTimeout;
+              clearTimeout(closure_3);
+              settle();
+              flag = true;
+              if (c4 === settle) {
+                c4 = null;
+                flag = true;
+              }
+            }
+            if (flag) {
+              contextMenu = SpellcheckUtils;
+              const result = contextMenu.clearCachedMisspelling();
+              const obj3 = { type: "CONTEXT_MENU_OPEN", contextMenu };
+              const obj2 = DispatcherDefault;
+              obj2.dispatch(obj3);
+            }
+          }, 500);
+          const tmp14Result2 = contextMenu(settle[2]);
+          settle = tmp14Result2.addResultListener(() => {
+            let flag = !c1;
+            if (flag) {
+              c1 = true;
+              const _clearTimeout = clearTimeout;
+              clearTimeout(closure_3);
+              settle();
+              flag = true;
+              if (c4 === settle) {
+                c4 = null;
+                flag = true;
+              }
+            }
+            if (flag) {
+              contextMenu = DispatcherDefault;
+              const obj2 = { type: "CONTEXT_MENU_OPEN", contextMenu };
+              contextMenu.dispatch(obj2);
+            }
           });
         }
       }
     }
+    if (settle != null) {
+      if (typeof settle === "function") {
+        const tmp22 = importDefault;
+        if (!tmp22) {
+          let flag = true;
+          importDefault = true;
+          let _clearTimeout = clearTimeout;
+          clearTimeout(AppContext);
+          settle();
+          if (c4 === settle) {
+            c4 = null;
+          }
+        }
+      } else {
+        throw new TypeError("Trying to call a non-function");
+      }
+    }
     stopPropagation.preventDefault();
     const obj4 = { type: "CONTEXT_MENU_OPEN", contextMenu };
-    const obj6 = DispatcherDefault;
+    const obj6 = require("Dispatcher");
     obj6.dispatch(obj4);
   } else {
     const currentTarget = stopPropagation.currentTarget;
   }
 }
-const AppContext = Constants.AppContext;
+let AppContext = Constants.AppContext;
+let c4 = null;
 let size = size_mod;
-const result = size.fileFinishedImporting("actions/ContextMenuActionCreators.tsx");
+let result = size.fileFinishedImporting("actions/ContextMenuActionCreators.tsx");
 
 export function closeContextMenu() {
-
+  if (_null != null) {
+    if (typeof _null === "function") {
+      const tmp = c1;
+      if (!tmp) {
+        c1 = true;
+        const _clearTimeout = clearTimeout;
+        clearTimeout(AppContext);
+        _null();
+        if (_null === dependencyMap) {
+          _null = null;
+        }
+      }
+    } else {
+      throw new TypeError("Trying to call a non-function");
+    }
+  }
 }
 export { openContextMenu };
 export function openContextMenuLazy(stopPropagation, renderLazy, enableSpellCheck) {

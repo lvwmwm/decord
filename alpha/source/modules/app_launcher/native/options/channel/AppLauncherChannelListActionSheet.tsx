@@ -1,23 +1,23 @@
-// Module ID: 12729
-// Function ID: 12730
+// Module ID: 12743
+// Function ID: 12744
 // Name: AppLauncherChannelListActionSheet
-// Dependencies: [32, 19, 5011, 21, 5140, 575, 8723, 8674, 12717, 6834, 5374, 12701, 12702, 5776, 7038, 5751, 2]
+// Dependencies: [32, 19, 5013, 21, 5142, 575, 8729, 8680, 12730, 6837, 5376, 12714, 12715, 5778, 7041, 5753, 2]
 // Exports: default
 
-// Module 12729 (AppLauncherChannelListActionSheet)
+// Module 12743 (AppLauncherChannelListActionSheet)
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5751 */;
-import useChannelNameDefault from "useChannelName" /* 5776 */;
-import AutocompleteUtilsDefault from "AutocompleteUtils" /* 6834 */;
-import TableRow2 from "TableRow" /* 7038 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 8674 */;
-import TextIcon3 from "TextIcon" /* 8723 */;
-import AppLauncherOptionIconDefault from "AppLauncherOptionIcon" /* 12717 */;
+import Text_Text from "Text/Text" /* 5753 */;
+import useChannelNameDefault from "useChannelName" /* 5778 */;
+import AutocompleteUtilsDefault from "AutocompleteUtils" /* 6837 */;
+import TableRow2 from "TableRow" /* 7041 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8680 */;
+import TextIcon3 from "TextIcon" /* 8729 */;
+import AppLauncherOptionIconDefault from "AppLauncherOptionIcon" /* 12730 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 5011 */;
+import GuildStore from "GuildStore" /* 5013 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5140 */;
+import createStyles from "createStyles" /* 5142 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -43,7 +43,7 @@ class ChannelIcon {
       const tmp2Result = utils_ChannelUtils;
       let TextIcon2 = tmp2Result.getChannelIconComponentWithGuild(channel, guild);
       if (TextIcon2 == null) {
-        TextIcon2 = tmp2(8723).TextIcon;
+        TextIcon2 = tmp2(8729).TextIcon;
       }
       TextIcon = TextIcon2;
     }

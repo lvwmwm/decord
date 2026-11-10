@@ -1,20 +1,20 @@
-// Module ID: 12937
-// Function ID: 12938
+// Module ID: 12951
+// Function ID: 12952
 // Name: useConjurePlanBotPreviewItems
-// Dependencies: [19, 2162, 4993, 1404, 1385, 6899, 1072, 504, 8823, 6196, 10438, 6203, 12938, 1113, 4026, 5194, 2]
+// Dependencies: [19, 2162, 4995, 1404, 1385, 6902, 1072, 504, 8829, 6198, 10444, 6205, 12952, 1113, 4028, 5196, 2]
 // Exports: useConjurePlanBotExchanges, useConjurePlanBotPreviewItems, useConjurePlanCommandExchanges
 
-// Module 12937 (useConjurePlanBotPreviewItems)
+// Module 12951 (useConjurePlanBotPreviewItems)
 import intl4 from "intl" /* 1113 */;
-import _modDef4026 from "module_4026" /* 4026 */;
-import ChannelRecord from "ChannelRecord" /* 4993 */;
-import UserActionCreators from "UserActionCreators" /* 8823 */;
-import conjurePlanBot from "conjurePlanBot" /* 12938 */;
+import _modDef4028 from "module_4028" /* 4028 */;
+import ChannelRecord from "ChannelRecord" /* 4995 */;
+import UserActionCreators from "UserActionCreators" /* 8829 */;
+import conjurePlanBot from "conjurePlanBot" /* 12952 */;
 import react from "react" /* 19 */;
 import ApplicationStore from "ApplicationStore" /* 2162 */;
 import UserRecord from "UserRecord" /* 1404 */;
 import UserStore from "UserStore" /* 1385 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6899 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6902 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -96,7 +96,7 @@ export function useConjurePlanBotExchanges(proposal) {
       if (null == conjurePlanBotInteraction) {
         items = [];
       } else {
-        const obj = { message: intl.string(_modDef4026.J7qggf), reply: intl2.string(_modDef4026.nqYtiy), event: intl3.string(_modDef4026["05lU9W"]) };
+        const obj = { message: intl.string(_modDef4028.J7qggf), reply: intl2.string(_modDef4028.nqYtiy), event: intl3.string(_modDef4028["05lU9W"]) };
         const getConjurePlanBotExchanges = conjurePlanBot.getConjurePlanBotExchanges;
         conjurePlanBot;
         intl = intl4.intl;
@@ -122,7 +122,7 @@ export function useConjurePlanCommandExchanges(proposal) {
       const getConjurePlanBotExchanges = conjurePlanBot.getConjurePlanBotExchanges;
       conjurePlanBot;
       const merged = Object.assign(tmp);
-      const obj2 = { message: intl.string(_modDef4026.J7qggf), reply: intl2.string(_modDef4026.nqYtiy), event: intl3.string(_modDef4026["05lU9W"]) };
+      const obj2 = { message: intl.string(_modDef4028.J7qggf), reply: intl2.string(_modDef4028.nqYtiy), event: intl3.string(_modDef4028["05lU9W"]) };
       intl = tmp2(1113).intl;
       intl2 = tmp2(1113).intl;
       intl3 = tmp2(1113).intl;
@@ -149,15 +149,22 @@ export function useConjurePlanBotPreviewItems(projectId, exchanges) {
   let obj2 = require("get initialized");
   const items1 = [ConjureProjectStore];
   const stateFromStores1 = obj2.useStateFromStores(items1, () => ConjureProjectStore.getProject(projectId));
-  let application_id;
+  let prop;
   if (stateFromStores1 != null) {
-    application_id = stateFromStores1.application_id;
+    prop = stateFromStores1.preview_application_id;
+  }
+  if (prop == null) {
+    let application_id;
+    if (stateFromStores1 != null) {
+      application_id = stateFromStores1.application_id;
+    }
+    prop = application_id;
   }
   const items2 = [obj6];
-  const items3 = [application_id];
+  const items3 = [prop];
   const tmpResult = tmp(tmp2[7]);
   let stateFromStores2 = tmpResult.useStateFromStores(items2, () => {
-    const application = ApplicationStore.getApplication(application_id);
+    const application = ApplicationStore.getApplication(prop);
     let iconURL;
     if (application != null) {
       iconURL = application.getIconURL(80);
@@ -173,15 +180,14 @@ export function useConjurePlanBotPreviewItems(projectId, exchanges) {
   }
   if (name == null) {
     let intl = tmp(tmp2[13]).intl;
-    let tmp9 = importDefault;
-    name = intl.string(require("module_4026").JEYq8M);
+    name = intl.string(require("module_4028").JEYq8M);
   }
   const items4 = [tmp3];
-  const items5 = [application_id];
+  const items5 = [prop];
   const tmpResult3 = tmp(tmp2[7]);
   const stateFromStores3 = tmpResult3.useStateFromStores(items4, () => {
     let user;
-    if (null != application_id) {
+    if (null != prop) {
       user = UserStore.getUser(tmp);
     }
     return user;
@@ -190,26 +196,26 @@ export function useConjurePlanBotPreviewItems(projectId, exchanges) {
   if (stateFromStores3 != null) {
     bot = stateFromStores3.bot;
   }
-  let tmp12 = true === bot;
-  let tmp13 = useSampleUser;
-  let obj3 = { bot: true, enabled: !tmp12 };
+  let tmp13 = true === bot;
+  let tmp14 = useSampleUser;
+  let obj3 = { bot: true, enabled: !tmp13 };
   obj6 = useSampleUser("31337", name, obj3);
-  if (tmp12) {
+  if (tmp13) {
     obj6 = stateFromStores3;
   }
   let intl2 = tmp(tmp2[13]).intl;
-  const tmp13Result = tmp13("31338", intl2.string(require("module_4026")["9iAOsw"]), { discriminator: "0003" });
-  let closure_5 = tmp13Result;
+  const tmp14Result = tmp14("31338", intl2.string(require("module_4028")["9iAOsw"]), { discriminator: "0003" });
+  let closure_5 = tmp14Result;
   const tmpResult4 = tmp(tmp2[15]);
   let str = tmpResult4.getName(stateFromStores);
   if (str == null) {
     str = "";
   }
   let obj4 = { enabled: null != stateFromStores };
-  const tmp13Result2 = tmp13("31339", str, obj4);
-  currentUser = tmp13Result2;
+  const tmp14Result2 = tmp14("31339", str, obj4);
+  currentUser = tmp14Result2;
   let obj5 = {
-    items: application_id.useMemo(() => {
+    items: prop.useMemo(() => {
       let constants2;
       let id;
       let intl;
@@ -324,7 +330,7 @@ export function useConjurePlanBotPreviewItems(projectId, exchanges) {
             if (null != closure_5) {
               let tmp6 = exchanges;
               let obj = { bot: tmp4, currentUser: tmp, viewer: tmp3, member: tmp5 };
-              let obj2 = { targetMessage: intl.string(_modDef4026["y+QYes"]), memberMessage: intl2.string(_modDef4026.BUTRDc) };
+              let obj2 = { targetMessage: intl.string(_modDef4028["y+QYes"]), memberMessage: intl2.string(_modDef4028.BUTRDc) };
               let tmp7 = require;
               let tmp8 = dependencyMap;
               intl = intl4.intl;
@@ -340,7 +346,7 @@ export function useConjurePlanBotPreviewItems(projectId, exchanges) {
     botIcon: stateFromStores2,
     appIconSrc: stateFromStores2
   };
-  items6 = [exchanges, obj6, stateFromStores, tmp13Result2, tmp13Result];
+  items6 = [exchanges, obj6, stateFromStores, tmp14Result2, tmp14Result];
   if (stateFromStores2 == null) {
     let avatarURL;
     if (obj6 != null) {

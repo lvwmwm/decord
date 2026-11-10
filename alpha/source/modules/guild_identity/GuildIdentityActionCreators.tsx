@@ -1,10 +1,10 @@
-// Module ID: 11665
-// Function ID: 11666
+// Module ID: 11674
+// Function ID: 11675
 // Name: GuildIdentityActionCreators
-// Dependencies: [5, 1072, 572, 1282, 7215, 7219, 2]
+// Dependencies: [5, 1072, 572, 1282, 7218, 7222, 2]
 // Exports: clearErrors, initGuildIdentitySettings, resetAllPending, resetPendingMemberChanges, resetPendingProfileChanges, saveGuildIdentityChanges, setCurrentGuild
 
-// Module 11665 (GuildIdentityActionCreators)
+// Module 11674 (GuildIdentityActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;

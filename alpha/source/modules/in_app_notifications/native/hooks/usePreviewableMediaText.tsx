@@ -1,12 +1,12 @@
-// Module ID: 11196
-// Function ID: 11197
+// Module ID: 11205
+// Function ID: 11206
 // Name: usePreviewableMediaText
-// Dependencies: [19, 11191, 1113, 2]
+// Dependencies: [19, 11200, 1113, 2]
 // Exports: usePreviewableMediaText
 
-// Module 11196 (usePreviewableMediaText)
+// Module 11205 (usePreviewableMediaText)
 import intl21 from "intl" /* 1113 */;
-import usePreviewableMedia from "usePreviewableMedia" /* 11191 */;
+import usePreviewableMedia from "usePreviewableMedia" /* 11200 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

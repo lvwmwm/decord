@@ -1,23 +1,23 @@
-// Module ID: 18829
-// Function ID: 18830
+// Module ID: 18858
+// Function ID: 18859
 // Name: ForLaterOpenActionButton
-// Dependencies: [19, 17, 10310, 21, 9593, 14950, 5140, 575, 5369, 5724, 5765, 10311, 5864, 11293, 504, 11282, 8098, 1113, 2]
+// Dependencies: [19, 17, 10316, 21, 9599, 14976, 5142, 575, 5371, 5726, 5767, 10317, 5866, 11302, 504, 11291, 8102, 1113, 2]
 // Exports: default
 
-// Module 18829 (ForLaterOpenActionButton)
+// Module 18858 (ForLaterOpenActionButton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import useThemeDefault from "useTheme" /* 5369 */;
-import useToken from "useToken" /* 5724 */;
-import ButtonHooks from "ButtonHooks" /* 5765 */;
-import ClipView from "ClipView" /* 9593 */;
-import SavedMessagesTypes from "SavedMessagesTypes" /* 10311 */;
-import showForLaterModal from "showForLaterModal" /* 11282 */;
-import getIconSize from "getIconSize" /* 14950 */;
+import useThemeDefault from "useTheme" /* 5371 */;
+import useToken from "useToken" /* 5726 */;
+import ButtonHooks from "ButtonHooks" /* 5767 */;
+import ClipView from "ClipView" /* 9599 */;
+import SavedMessagesTypes from "SavedMessagesTypes" /* 10317 */;
+import showForLaterModal from "showForLaterModal" /* 11291 */;
+import getIconSize from "getIconSize" /* 14976 */;
 import react from "react" /* 19 */;
-import SavedMessagesStore from "SavedMessagesStore" /* 10310 */;
+import SavedMessagesStore from "SavedMessagesStore" /* 10316 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5142 */;
 import size_mod from "module_2" /* 2 */;
 
 let metroImportDefault;
@@ -25,7 +25,7 @@ let metroRequire;
 let size;
 let size1;
 let tmp;
-const ClipViewDefault = tmp(9593);
+const ClipViewDefault = tmp(9599);
 function BadgedIcon(arg0) {
   let BookmarkIcon;
   let items;
@@ -43,9 +43,9 @@ function BadgedIcon(arg0) {
   const obj2 = ButtonHooks;
   const iconSizeStyles = obj2.useIconSizeStyles("sm", true, 2);
   if (type === SavedMessagesTypes.SavedMessageSortTypes.REMINDER) {
-    BookmarkIcon = tmp4(5864).ClockIcon;
+    BookmarkIcon = tmp4(5866).ClockIcon;
   } else {
-    BookmarkIcon = tmp4(11293).BookmarkIcon;
+    BookmarkIcon = tmp4(11302).BookmarkIcon;
   }
   const obj3 = { style: items, children: tmp8Result };
   items = [tmp6.container, iconSizeStyles];
@@ -97,13 +97,13 @@ export default function ForLaterActionButton(type) {
     obj.showForLaterModal(type);
   }, items1);
   const obj3 = { type, showRedDot: tmp8 };
-  IconButton = type(8098).IconButton;
-  tmp8 = type === type(10311).SavedMessageSortTypes.REMINDER && stateFromStores;
+  IconButton = type(8102).IconButton;
+  tmp8 = type === type(10317).SavedMessageSortTypes.REMINDER && stateFromStores;
   obj4 = { variant: "tertiary", size: "sm", icon: closure_6(BadgedIcon, obj3), onPress: callback, accessibilityLabel: string(aUXxzT), maxFontSizeMultiplier: 2 };
   const intl = tmp(1113).intl;
   string = intl.string;
   const tmp6 = View;
-  if (type === type(10311).SavedMessageSortTypes.REMINDER) {
+  if (type === type(10317).SavedMessageSortTypes.REMINDER) {
     aUXxzT = tmp(1113).t.aUXxzT;
   } else {
     aUXxzT = tmp(1113).t["2pAkDA"];

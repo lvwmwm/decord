@@ -1,11 +1,11 @@
-// Module ID: 10149
-// Function ID: 10150
+// Module ID: 10155
+// Function ID: 10156
 // Name: EmojiPickerListRowView
-// Dependencies: [17, 1377, 10150, 2]
+// Dependencies: [17, 1377, 10156, 2]
 
-// Module 10149 (EmojiPickerListRowView)
+// Module 10155 (EmojiPickerListRowView)
 import react_native from "react-native" /* 17 */;
-import EmojiPickerRowViewNativeComponentDefault from "EmojiPickerRowViewNativeComponent" /* 10150 */;
+import EmojiPickerRowViewNativeComponentDefault from "EmojiPickerRowViewNativeComponent" /* 10156 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import size from "module_2" /* 2 */;
 

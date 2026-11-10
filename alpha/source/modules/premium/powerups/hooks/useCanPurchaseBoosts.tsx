@@ -1,13 +1,13 @@
-// Module ID: 14324
-// Function ID: 14325
+// Module ID: 14350
+// Function ID: 14351
 // Name: useCanPurchaseBoosts
-// Dependencies: [1385, 1387, 7653, 504, 2]
+// Dependencies: [1385, 1387, 7656, 504, 2]
 // Exports: default
 
-// Module 14324 (useCanPurchaseBoosts)
+// Module 14350 (useCanPurchaseBoosts)
 import get_initialized from "get initialized" /* 504 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
-import useFractionalPremiumInfoDefault from "useFractionalPremiumInfo" /* 7653 */;
+import useFractionalPremiumInfoDefault from "useFractionalPremiumInfo" /* 7656 */;
 import UserStore from "UserStore" /* 1385 */;
 import size from "module_2" /* 2 */;
 

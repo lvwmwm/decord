@@ -1,31 +1,31 @@
-// Module ID: 12356
-// Function ID: 12357
+// Module ID: 12364
+// Function ID: 12365
 // Name: ConjureHistorySheet
-// Dependencies: [5, 32, 19, 17, 21, 5140, 575, 6159, 5751, 5758, 1113, 4026, 7015, 12353, 7126, 7038, 12357, 12362, 7040, 9996, 8098, 9287, 9069, 9059, 12342, 5374, 9089, 2118, 2166, 1627, 12363, 12355, 12296, 6096, 12354, 5837, 5836, 12351, 12365, 12365, 7426, 7382, 5392, 12366, 12364, 2]
+// Dependencies: [5, 32, 19, 17, 21, 5142, 575, 6161, 5753, 5760, 1113, 4028, 7018, 12361, 7129, 7041, 12365, 12370, 7043, 10002, 8102, 9293, 9075, 9065, 12350, 5376, 9095, 2118, 2166, 1627, 12371, 12363, 12372, 6098, 12362, 5839, 5838, 12359, 12374, 12374, 7429, 7385, 5394, 12375, 12373, 2]
 // Exports: default
 
-// Module 12356 (ConjureHistorySheet)
+// Module 12364 (ConjureHistorySheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl8 from "intl" /* 1113 */;
 import asyncRequire from "asyncRequire" /* 2118 */;
-import _modDef4026 from "module_4026" /* 4026 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
-import Text_Text from "Text/Text" /* 5751 */;
-import Stack_Stack from "Stack/Stack" /* 6159 */;
-import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 7015 */;
-import IconButton2 from "IconButton" /* 8098 */;
-import useMeasuredLayoutDefault from "useMeasuredLayout" /* 9069 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9287 */;
-import conjureHistoryRequests from "conjureHistoryRequests" /* 12351 */;
-import ConjureHistoryFormat from "ConjureHistoryFormat" /* 12353 */;
-import ConjureVersionRestoreConfirm from "ConjureVersionRestoreConfirm" /* 12362 */;
-import ConjureSaveBackupSheet from "ConjureSaveBackupSheet" /* 12365 */;
+import _modDef4028 from "module_4028" /* 4028 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5376 */;
+import Text_Text from "Text/Text" /* 5753 */;
+import Stack_Stack from "Stack/Stack" /* 6161 */;
+import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 7018 */;
+import IconButton2 from "IconButton" /* 8102 */;
+import useMeasuredLayoutDefault from "useMeasuredLayout" /* 9075 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9293 */;
+import conjureHistoryRequests from "conjureHistoryRequests" /* 12359 */;
+import ConjureHistoryFormat from "ConjureHistoryFormat" /* 12361 */;
+import ConjureVersionRestoreConfirm from "ConjureVersionRestoreConfirm" /* 12370 */;
+import ConjureSaveBackupSheet from "ConjureSaveBackupSheet" /* 12374 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5140 */;
+import createStyles from "createStyles" /* 5142 */;
 import size from "module_2" /* 2 */;
 
 let c3, c7, closure_4, dependencyMap, label;
@@ -34,11 +34,11 @@ let c9;
 let metroImportAll;
 let metroImportDefault;
 let tmp4;
-const components_Button_Button = tmp4(5758);
-const TableRow2 = tmp4(7038);
-const Card_Card = tmp4(7040);
-const TableRowGroup3 = tmp4(7126);
-const ContextMenu = tmp4(9996);
+const components_Button_Button = tmp4(5760);
+const TableRow2 = tmp4(7041);
+const Card_Card = tmp4(7043);
+const TableRowGroup3 = tmp4(7129);
+const ContextMenu = tmp4(10002);
 function HistoryMessage(onRetry) {
   let Button;
   let Stack;
@@ -67,8 +67,8 @@ function HistoryMessage(onRetry) {
   tmp4 = metroImportAll;
   if (null != onRetry) {
     const obj4 = { style: tmp.centeredRow, children: metroImportDefault(Button, obj5) };
-    obj5 = { variant: "secondary", size: "sm", text: intl.string(_modDef4026.HOuQ9H), onPress: onRetry };
-    Button = tmp5(5758).Button;
+    obj5 = { variant: "secondary", size: "sm", text: intl.string(_modDef4028.HOuQ9H), onPress: onRetry };
+    Button = tmp5(5760).Button;
     intl = tmp5(1113).intl;
     tmp2Result = tmp2(tmp3, obj4);
   }
@@ -101,8 +101,8 @@ function HistoryDayGroups(renderItem) {
       return metroImportDefault(TableRowGroup, obj, label.key);
     })
   };
-  const Stack = renderItem(6159).Stack;
-  const obj2 = renderItem(12353);
+  const Stack = renderItem(6161).Stack;
+  const obj2 = renderItem(12361);
   groupHistoryByDayResult = obj2.groupHistoryByDay(items, getMs, nowMs);
   return closure_7(Stack, obj);
 }
@@ -125,7 +125,7 @@ function VersionsPanel(onRetry) {
     return closure_7(HistoryLoading, {});
   } else if ("failed" === versions.status) {
     let tmp7 = closure_7;
-    let obj2 = { title: intl3.string(_modDef4026.Xduqn2), body: intl4.string(_modDef4026.TOFCh3), onRetry };
+    let obj2 = { title: intl3.string(_modDef4028.Xduqn2), body: intl4.string(_modDef4028.TOFCh3), onRetry };
     intl3 = intl8.intl;
     intl4 = intl8.intl;
     return closure_7(HistoryMessage, obj2);
@@ -137,7 +137,7 @@ function VersionsPanel(onRetry) {
     let obj4 = ConjureHistoryFormat;
     closure_6 = obj4.historyPreviewSha(versions.data);
     if (0 === entries.length) {
-      let obj3 = { title: intl.string(_modDef4026.MczNnb), body: intl2.string(_modDef4026["8L/U2T"]) };
+      let obj3 = { title: intl.string(_modDef4028.MczNnb), body: intl2.string(_modDef4028["8L/U2T"]) };
       intl = tmp14(1113).intl;
       let tmp6 = importDefault;
       intl2 = tmp14(1113).intl;
@@ -176,7 +176,7 @@ function VersionsPanel(onRetry) {
               const tmp7 = dependencyMap && subject.sha === closure_6;
               if (tmp7) {
                 const push = items.push;
-                const obj3 = { id: "preview", label: intl.string(_modDef4026.KVnLPd) };
+                const obj3 = { id: "preview", label: intl.string(_modDef4028.KVnLPd) };
                 intl = tmp(tmp2[10]).intl;
                 push(obj3);
               }
@@ -185,7 +185,7 @@ function VersionsPanel(onRetry) {
               }
               if (tmp6) {
                 const push2 = items.push;
-                const obj4 = { id: "published", label: intl2.string(_modDef4026.qulPhb) };
+                const obj4 = { id: "published", label: intl2.string(_modDef4028.qulPhb) };
                 intl2 = tmp(tmp2[10]).intl;
                 push2(obj4);
               }
@@ -204,7 +204,7 @@ function VersionsPanel(onRetry) {
               items1 = [tmp13Result, ];
               let tmp13Result3 = null;
               if (items.length > 0) {
-                const obj8 = { label: intl3.string(_modDef4026.IxKJ5y), items, size: "xs" };
+                const obj8 = { label: intl3.string(_modDef4028.IxKJ5y), items, size: "xs" };
                 const TagGroup = tmp(tmp2[16]).TagGroup;
                 intl3 = tmp(tmp2[10]).intl;
                 tmp13Result3 = tmp13(TagGroup, obj8);
@@ -219,8 +219,8 @@ function VersionsPanel(onRetry) {
                     const obj9 = {
                       variant: "secondary",
                       size: "sm",
-                      text: intl4.string(_modDef4026["1NAPyC"]),
-                      accessibilityLabel: intl5.formatToPlainString(_modDef4026["2KgEnm"], obj10),
+                      text: intl4.string(_modDef4028["1NAPyC"]),
+                      accessibilityLabel: intl5.formatToPlainString(_modDef4028["2KgEnm"], obj10),
                       disabled: importDefault,
                       onPress() {
                               let obj2;
@@ -296,7 +296,7 @@ function DatabaseSection(sharedDatabase) {
     tmp24Result = _window(HistoryLoading, {});
     tmp13 = _window;
   } else if ("failed" === state.status) {
-    let obj2 = { title: intl3.string(busy(4026).Xduqn2), body: intl4.string(busy(4026)["VGh9H+"]), onRetry: backups.retry };
+    let obj2 = { title: intl3.string(busy(4028).Xduqn2), body: intl4.string(busy(4028)["VGh9H+"]), onRetry: backups.retry };
     intl3 = intl8.intl;
     intl4 = intl8.intl;
     tmp24Result = _window(HistoryMessage, obj2);
@@ -304,7 +304,7 @@ function DatabaseSection(sharedDatabase) {
   } else if (0 === state.data.points.length) {
     let obj3 = { hasIcons: false, children: _window(TableRow, obj4) };
     const TableRowGroup = TableRowGroup3.TableRowGroup;
-    obj4 = { label: intl2.string(busy(4026).G2DTWl), disabled: true };
+    obj4 = { label: intl2.string(busy(4028).G2DTWl), disabled: true };
     TableRow = TableRow2.TableRow;
     intl2 = intl8.intl;
     tmp24Result = _window(TableRowGroup, obj3);
@@ -368,7 +368,7 @@ function DatabaseSection(sharedDatabase) {
       Button = components_Button_Button.Button;
       let intl = intl8.intl;
       const string = intl.string;
-      const tmp10 = busy(4026);
+      const tmp10 = busy(4028);
       obj7 = {
         variant: "tertiary",
         size: "sm",
@@ -385,10 +385,10 @@ function DatabaseSection(sharedDatabase) {
     tmp13 = tmp26;
   }
   const intl5 = intl8.intl;
-  const formatToPlainStringResult = intl5.formatToPlainString(busy(4026).tmSDLN, { database: historyDatabaseTitleResult });
+  const formatToPlainStringResult = intl5.formatToPlainString(busy(4028).tmSDLN, { database: historyDatabaseTitleResult });
   c8 = formatToPlainStringResult;
   const obj9 = {
-    label: intl6.string(busy(4026).uNd2Je),
+    label: intl6.string(busy(4028).uNd2Je),
     disabled: "failed" === state.status || busy,
     action() {
       return _slicedToArray(environment);
@@ -397,7 +397,7 @@ function DatabaseSection(sharedDatabase) {
   intl6 = intl8.intl;
   const items1 = [obj9, ];
   const obj10 = {
-    label: intl7.string(busy(4026).Xi6pDt),
+    label: intl7.string(busy(4028).Xi6pDt),
     disabled: null == _window || busy,
     action() {
       if (null != _window) {
@@ -450,18 +450,18 @@ function HistoryTabs(onChange) {
     let intl;
     let intl2;
     let intl3;
-    const obj = { id: "versions", label: intl.string(_modDef4026.aEg2bh), page: null };
+    const obj = { id: "versions", label: intl.string(_modDef4028.aEg2bh), page: null };
     intl = onChange(dependencyMap[10]).intl;
     const items = [obj, , ];
-    const obj2 = { id: "database", label: intl2.string(_modDef4026["GSu/n6"]), page: null };
+    const obj2 = { id: "database", label: intl2.string(_modDef4028["GSu/n6"]), page: null };
     intl2 = onChange(dependencyMap[10]).intl;
     items[1] = obj2;
-    const obj3 = { id: "publishes", label: intl3.string(_modDef4026["656Avb"]), page: null };
+    const obj3 = { id: "publishes", label: intl3.string(_modDef4028["656Avb"]), page: null };
     intl3 = onChange(dependencyMap[10]).intl;
     items[2] = obj3;
     return items;
   }, []);
-  let obj = onChange(9059);
+  let obj = onChange(9065);
   let obj2 = {
     items: memo,
     pageWidth: num,
@@ -472,7 +472,7 @@ function HistoryTabs(onChange) {
       }
     }
   };
-  let obj3 = { ref, onLayout, accessibilityLabel: intl.string(_modDef4026["/2GnYy"]), children: closure_7(onChange(12342).Tabs, { state: segmentedControlState }) };
+  let obj3 = { ref, onLayout, accessibilityLabel: intl.string(_modDef4028["/2GnYy"]), children: closure_7(onChange(12350).Tabs, { state: segmentedControlState }) };
   segmentedControlState = obj.useSegmentedControlState(obj2);
   intl = onChange(1113).intl;
   return closure_7(View, obj3);
@@ -527,13 +527,13 @@ export default function ConjureHistorySheet(projectId) {
   const tmp3 = onSaveBackup(onRestoreVersion(1627)().bottom + onRestoreVersion(575).space.PX_16);
   let tmp4 = versionTitles(conjureDatabaseBusy.useState("versions"), 2);
   [tmp5, tmp6] = tmp4;
-  const tmp7 = onRestoreVersion(12363)(projectId);
+  const tmp7 = onRestoreVersion(12371)(projectId);
   ({ sharedDatabase: c2, versions, databases, refreshAllBackups } = tmp7);
   versionTitles = tmp7.versionTitles;
   ({ previewBackups, previewBackupsLoading } = tmp7);
-  let obj = projectId(12355);
+  let obj = projectId(12363);
   conjureDatabaseBusy = obj.useConjureDatabaseBusy(projectId);
-  const tmp10 = onRestoreVersion(12296)(projectId);
+  const tmp10 = onRestoreVersion(12372)(projectId);
   [tmp12, c6] = versionTitles(conjureDatabaseBusy.useState(false), 2);
   const refresh = versions.refresh;
   const tmp11 = versionTitles(conjureDatabaseBusy.useState(false), 2);
@@ -762,7 +762,7 @@ export default function ConjureHistorySheet(projectId) {
           ActionSheetActionCreatorsDefault;
           let obj = {
             mode: "time",
-            title: intl.string(_modDef4026.L2iFYN),
+            title: intl.string(_modDef4028.L2iFYN),
             startDate: toDateResult,
             minimumDate: null,
             maximumDate: null,
@@ -774,7 +774,7 @@ export default function ConjureHistorySheet(projectId) {
               });
             }
           };
-          const tmp5 = asyncRequire(9089, dependencyMap.paths);
+          const tmp5 = asyncRequire(9095, dependencyMap.paths);
           intl = intl8.intl;
           [obj.minimumDate, obj.maximumDate] = items;
           openLazy(tmp5, "ConjureHistoryRewindTime", obj, "stack");
@@ -790,18 +790,18 @@ export default function ConjureHistorySheet(projectId) {
     const openLazy = ActionSheetActionCreatorsDefault.openLazy;
     ActionSheetActionCreatorsDefault;
     const obj = { projectId, environment, onSaved: refreshAllBackups };
-    const tmp2 = asyncRequire(12365, dependencyMap.paths);
+    const tmp2 = asyncRequire(12374, dependencyMap.paths);
     return openLazy(tmp2, ConjureSaveBackupSheet.CONJURE_SAVE_BACKUP_SHEET_KEY, obj, "stack");
   }, items4);
   let obj2 = { scrollable: true, startExpanded: true, header: callback1(onRestoreBackup, obj3), children: tmp15(BottomSheetScrollView, obj5) };
   obj3 = { children: items5 };
-  const ActionSheet = projectId(7426).ActionSheet;
-  let obj4 = { title: intl.string(onRestoreVersion(4026)["3hIVou"]) };
-  const BottomSheetTitleHeader = projectId(7382).BottomSheetTitleHeader;
+  const ActionSheet = projectId(7429).ActionSheet;
+  let obj4 = { title: intl.string(onRestoreVersion(4028)["3hIVou"]) };
+  const BottomSheetTitleHeader = projectId(7385).BottomSheetTitleHeader;
   intl = projectId(1113).intl;
   items5 = [refresh(BottomSheetTitleHeader, obj4), refresh(HistoryTabs, { tab: tmp5, onChange: tmp6 })];
   obj5 = { contentContainerStyle: tmp3.content, children: tmp16Result };
-  BottomSheetScrollView = projectId(5392).BottomSheetScrollView;
+  BottomSheetScrollView = projectId(5394).BottomSheetScrollView;
   const tmp16 = callback1;
   const tmp17 = onRestoreBackup;
   if ("versions" === tmp5) {
@@ -822,15 +822,15 @@ export default function ConjureHistorySheet(projectId) {
     let str = "publishes";
     if ("publishes" === tmp5) {
       const obj7 = { projectId };
-      tmp16Result = tmp15(tmp(12366), obj7, projectId);
+      tmp16Result = tmp15(tmp(12375), obj7, projectId);
     } else {
       const obj8 = { children: items6 };
       const obj9 = { variant: "body-sm/normal", color: "text-muted", children: formatToPlainString(ptsHZu, obj10) };
-      const Text = tmp8(5751).Text;
+      const Text = tmp8(5753).Text;
       let intl2 = tmp8(1113).intl;
       formatToPlainString = intl2.formatToPlainString;
-      obj10 = { days: projectId(12364).RESTORE_WINDOW_DAYS };
-      ptsHZu = tmp(4026).ptsHZu;
+      obj10 = { days: projectId(12373).RESTORE_WINDOW_DAYS };
+      ptsHZu = tmp(4028).ptsHZu;
       items6 = [
         tmp15(Text, obj9),
         databases.map((database) => {

@@ -1,16 +1,16 @@
-// Module ID: 10301
-// Function ID: 10302
+// Module ID: 10307
+// Function ID: 10308
 // Name: FeedbackModal
-// Dependencies: [32, 19, 17, 21, 5140, 8246, 1113, 5751, 2185, 5758, 6799, 7231, 7064, 2]
+// Dependencies: [32, 19, 17, 21, 5142, 8250, 1113, 5753, 2185, 5760, 6801, 7234, 7067, 2]
 // Exports: default
 
-// Module 10301 (FeedbackModal)
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6799 */;
+// Module 10307 (FeedbackModal)
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6801 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5140 */;
+import createStyles from "createStyles" /* 5142 */;
 import size from "module_2" /* 2 */;
 
 let _require, importDefault;
@@ -41,9 +41,9 @@ function FeedbackForm(result) {
   const tmp = closure_9();
   const reason = result.reason;
   [value, tmp4] = react.useState("");
-  const FormSection = require("module_8246").FormSection;
+  const FormSection = require("module_8250").FormSection;
   let label;
-  const FormInput = require("module_8246").FormInput;
+  const FormInput = require("module_8250").FormInput;
   const tmp6 = closure_6;
   if (reason != null) {
     label = reason.label;
@@ -53,7 +53,7 @@ function FeedbackForm(result) {
     const intl = tmp7(tmp8[6]).intl;
     titleLabel = intl.string(tmp7(tmp8[6]).t.vcqwCj);
   }
-  const items = [closure_7(FormInput, obj, "channel-input"), closure_7(require("module_8246").FormDivider, {}), ];
+  const items = [closure_7(FormInput, obj, "channel-input"), closure_7(require("module_8250").FormDivider, {}), ];
   const obj2 = { value, title: descriptionLabel, onChange: tmp4, multiline: true, numberOfLines: 4, autoCorrect: true };
   const FormInput2 = tmp7(tmp8[5]).FormInput;
   if (descriptionLabel == null) {

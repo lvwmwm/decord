@@ -1,24 +1,24 @@
-// Module ID: 12609
-// Function ID: 12610
+// Module ID: 12622
+// Function ID: 12623
 // Name: PortalKeyboardBottomSheet
-// Dependencies: [32, 19, 17, 10323, 21, 1377, 5140, 575, 9072, 5390, 1652, 12610, 5199, 5720, 12611, 504, 5392, 5376, 6928, 1705, 2017, 5721, 5724, 1627, 1493, 5330, 5310, 6150, 10087, 5734, 2]
+// Dependencies: [32, 19, 17, 10329, 21, 1377, 5142, 575, 9078, 5392, 1652, 12623, 5201, 5722, 12624, 504, 5394, 5378, 6931, 1705, 2017, 5723, 5726, 1627, 1493, 5332, 5312, 6152, 10093, 5736, 2]
 // Exports: default
 
-// Module 12609 (PortalKeyboardBottomSheet)
+// Module 12622 (PortalKeyboardBottomSheet)
 import nativeDefault from "native" /* 575 */;
 import _modDef1652 from "module_1652" /* 1652 */;
-import HapticUtils from "HapticUtils" /* 5376 */;
-import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5390 */;
-import BottomSheetModal from "BottomSheetModal" /* 5392 */;
-import isChannelFocused from "isChannelFocused" /* 6928 */;
-import native from "native" /* 9072 */;
+import HapticUtils from "HapticUtils" /* 5378 */;
+import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5392 */;
+import BottomSheetModal from "BottomSheetModal" /* 5394 */;
+import isChannelFocused from "isChannelFocused" /* 6931 */;
+import native from "native" /* 9078 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import NativeMenuStore from "NativeMenuStore" /* 10323 */;
+import NativeMenuStore from "NativeMenuStore" /* 10329 */;
 import Fragment from "Fragment" /* 21 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
-import createStyles_mod from "createStyles" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5142 */;
 import size_mod from "module_2" /* 2 */;
 
 let Platform;

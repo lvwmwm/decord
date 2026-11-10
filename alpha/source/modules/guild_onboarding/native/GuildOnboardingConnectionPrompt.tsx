@@ -1,30 +1,30 @@
-// Module ID: 7384
-// Function ID: 7385
+// Module ID: 7387
+// Function ID: 7388
 // Name: GuildOnboardingConnectionPrompt
-// Dependencies: [19, 17, 7003, 7339, 6627, 5011, 7331, 7332, 7328, 1072, 21, 5140, 5714, 575, 1499, 1627, 504, 7337, 1252, 5889, 7330, 7355, 5751, 1113, 7385, 7412, 5758, 2]
+// Dependencies: [19, 17, 7006, 7342, 6629, 5013, 7334, 7335, 7331, 1072, 21, 5142, 5716, 575, 1499, 1627, 504, 7340, 1252, 5891, 7333, 7358, 5753, 1113, 7388, 7415, 5760, 2]
 // Exports: default
 
-// Module 7384 (GuildOnboardingConnectionPrompt)
+// Module 7387 (GuildOnboardingConnectionPrompt)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import NavigatorConstants from "NavigatorConstants" /* 5714 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5889 */;
-import GuildOnboardingConstants from "GuildOnboardingConstants" /* 7328 */;
-import GuildOnboardingPromptsActionCreators from "GuildOnboardingPromptsActionCreators" /* 7330 */;
-import GuildOnboardingPromptsConstants from "GuildOnboardingPromptsConstants" /* 7332 */;
-import GuildOnboardingUtils from "GuildOnboardingUtils" /* 7337 */;
-import ConnectionCardDefault from "ConnectionCard" /* 7385 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7412 */;
+import NavigatorConstants from "NavigatorConstants" /* 5716 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5891 */;
+import GuildOnboardingConstants from "GuildOnboardingConstants" /* 7331 */;
+import GuildOnboardingPromptsActionCreators from "GuildOnboardingPromptsActionCreators" /* 7333 */;
+import GuildOnboardingPromptsConstants from "GuildOnboardingPromptsConstants" /* 7335 */;
+import GuildOnboardingUtils from "GuildOnboardingUtils" /* 7340 */;
+import ConnectionCardDefault from "ConnectionCard" /* 7388 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7415 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import MemberVerificationFormStore from "MemberVerificationFormStore" /* 7003 */;
-import AuthorizedAppsStore from "AuthorizedAppsStore" /* 7339 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6627 */;
-import GuildStore from "GuildStore" /* 5011 */;
-import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7331 */;
+import MemberVerificationFormStore from "MemberVerificationFormStore" /* 7006 */;
+import AuthorizedAppsStore from "AuthorizedAppsStore" /* 7342 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6629 */;
+import GuildStore from "GuildStore" /* 5013 */;
+import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7334 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5142 */;
 import size from "module_2" /* 2 */;
 
 let navigation;
@@ -226,7 +226,7 @@ export default function GuildOnboardingConnectionPrompt(guildId) {
       children: stateFromStores.map((connection, index) => {
           const obj = { connection, guildId, location: AnalyticsLocationDefault.GUILD_ONBOARDING };
           const tmp = ConnectionCardDefault;
-          return authStore3(tmp, obj, index);
+          return gesture(tmp, obj, index);
         })
     };
     items13[1] = tmp13(ref, obj17);

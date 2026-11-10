@@ -1,17 +1,17 @@
-// Module ID: 15325
-// Function ID: 15326
+// Module ID: 15350
+// Function ID: 15351
 // Name: OrbCheckoutModal
-// Dependencies: [19, 1072, 1083, 21, 15326, 6159, 15328, 15330, 9779, 10796, 1252, 6799, 8041, 8043, 13452, 38, 1266, 15331, 1113, 7064, 11627, 2]
+// Dependencies: [19, 1072, 1083, 21, 15351, 6161, 15353, 15355, 9785, 10805, 1252, 6801, 8045, 8047, 13465, 38, 1266, 15356, 1113, 7067, 11636, 2]
 // Exports: default
 
-// Module 15325 (OrbCheckoutModal)
+// Module 15350 (OrbCheckoutModal)
 import Constants2 from "Constants" /* 1083 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import Stack_Stack from "Stack/Stack" /* 6159 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6799 */;
-import VirtualCurrencyUtils from "VirtualCurrencyUtils" /* 9779 */;
-import OrbCheckoutModalContext from "OrbCheckoutModalContext" /* 15326 */;
-import OrbCheckoutModalComponents from "OrbCheckoutModalComponents" /* 15328 */;
+import Stack_Stack from "Stack/Stack" /* 6161 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6801 */;
+import VirtualCurrencyUtils from "VirtualCurrencyUtils" /* 9785 */;
+import OrbCheckoutModalContext from "OrbCheckoutModalContext" /* 15351 */;
+import OrbCheckoutModalComponents from "OrbCheckoutModalComponents" /* 15353 */;
 import "react";
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
@@ -40,12 +40,12 @@ function OrbCheckoutModalContent(orbBalance) {
   const tmp4 = authStore2;
   if (tmp5) {
     const obj2 = { error: orbCheckoutErrorMessage };
-    tmp5 = unpackModuleId(tmp(15328).OrbCheckoutErrorCard, obj2);
+    tmp5 = unpackModuleId(tmp(15353).OrbCheckoutErrorCard, obj2);
   }
   const items = [tmp5, , ];
   const obj3 = { skuId, orbPriceAmount };
   orbPriceAmount = undefined;
-  const OrbCheckoutOrderSummary = tmp(15328).OrbCheckoutOrderSummary;
+  const OrbCheckoutOrderSummary = tmp(15353).OrbCheckoutOrderSummary;
   if (orbProductContext != null) {
     orbPriceAmount = orbProductContext.orbPriceAmount;
   }

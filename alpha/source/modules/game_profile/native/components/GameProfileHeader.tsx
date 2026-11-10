@@ -1,22 +1,22 @@
-// Module ID: 9453
-// Function ID: 9454
+// Module ID: 9459
+// Function ID: 9460
 // Name: GameProfileHeader
-// Dependencies: [19, 17, 9451, 21, 5140, 575, 1652, 9454, 9455, 5842, 5715, 9456, 9458, 5751, 9460, 2]
+// Dependencies: [19, 17, 9457, 21, 5142, 575, 1652, 9460, 9461, 5844, 5717, 9462, 9464, 5753, 9466, 2]
 // Exports: default
 
-// Module 9453 (GameProfileHeader)
+// Module 9459 (GameProfileHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1652 from "module_1652" /* 1652 */;
-import LinearGradientDefault from "LinearGradient" /* 5715 */;
-import FastImageDefault from "FastImage" /* 5842 */;
-import useGameProfileHeroBackgroundURLDefault from "useGameProfileHeroBackgroundURL" /* 9455 */;
-import GameCoverArt from "GameCoverArt" /* 9456 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9460 */;
+import LinearGradientDefault from "LinearGradient" /* 5717 */;
+import FastImageDefault from "FastImage" /* 5844 */;
+import useGameProfileHeroBackgroundURLDefault from "useGameProfileHeroBackgroundURL" /* 9461 */;
+import GameCoverArt from "GameCoverArt" /* 9462 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9466 */;
 import react from "react" /* 19 */;
-import GameProfileConstants from "GameProfileConstants" /* 9451 */;
+import GameProfileConstants from "GameProfileConstants" /* 9457 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5142 */;
 import size from "module_2" /* 2 */;
 
 const _modDef1652 = _mod1652;
@@ -93,7 +93,7 @@ export default function GameProfileHeader(arg0) {
   const genres = game.genres;
   const animatedStyle = useAnimatedStyle(GameProfileHeaderTsx1);
   const name = game.name;
-  const mapped = genres.map(tmp2(9454).getGenreText);
+  const mapped = genres.map(tmp2(9460).getGenreText);
   const joined = mapped.join(", ");
   const l30Rank = game.l30Rank;
   const tmp11 = useGameProfileHeroBackgroundURLDefault(game, 1024);
@@ -114,7 +114,7 @@ export default function GameProfileHeader(arg0) {
   if (tmp14) {
     const obj4 = { source: obj5, style: tmp.artHeroImage };
     obj5 = { uri: tmp11 };
-    tmp14 = metroRequire(tmp10(5842), obj4);
+    tmp14 = metroRequire(tmp10(5844), obj4);
   }
   items4 = [tmp14, ];
   const obj6 = { colors: items5, style: tmp.artHeroGradient };
@@ -130,14 +130,14 @@ export default function GameProfileHeader(arg0) {
   const obj10 = { style: tmp.titleContainer, children: items8 };
   if (tmp16Result) {
     const obj11 = { rank: l30Rank };
-    tmp16Result = tmp16(tmp10(9458), obj11);
+    tmp16Result = tmp16(tmp10(9464), obj11);
   }
   items8 = [tmp16Result, , ];
   const obj13 = { variant: "heading-xxl/semibold", color: "text-overlay-light", lineClamp: 2, style: items9, children: name };
   items9 = [, ];
   const obj12 = { style: tmp.titleRow, children: items10 };
   ({ textShadow: arr11[0], title: arr11[1] } = tmp);
-  items10 = [metroRequire(tmp2(5751).Text, obj13), ];
+  items10 = [metroRequire(tmp2(5753).Text, obj13), ];
   let tmp16Result3 = game.id === hasOwnProperty;
   if (tmp16Result3) {
     const obj14 = { source: AssetRegistryDefault, style: tmp.wavingWumpus, accessible: false, importantForAccessibility: "no" };
@@ -151,7 +151,7 @@ export default function GameProfileHeader(arg0) {
     tmp16Result4 = null;
     if ("" !== joined) {
       const obj15 = { variant: "body-md/normal", color: "text-overlay-light", lineClamp: 2, style: tmp.textShadow, children: joined };
-      tmp16Result4 = tmp16(tmp2(5751).Text, obj15);
+      tmp16Result4 = tmp16(tmp2(5753).Text, obj15);
     }
   }
   items8[2] = tmp16Result4;

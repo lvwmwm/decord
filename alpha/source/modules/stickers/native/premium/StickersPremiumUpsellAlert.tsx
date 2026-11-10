@@ -1,26 +1,26 @@
-// Module ID: 10411
-// Function ID: 10412
+// Module ID: 10417
+// Function ID: 10418
 // Name: StickersPremiumUpsellAlert
-// Dependencies: [19, 17, 7673, 1072, 1387, 21, 10412, 1113, 575, 10413, 10414, 5140, 1187, 5751, 7680, 10030, 1493, 7387, 6162, 1252, 10027, 7043, 8429, 5842, 10415, 2]
+// Dependencies: [19, 17, 7676, 1072, 1387, 21, 10418, 1113, 575, 10419, 10420, 5142, 1187, 5753, 7683, 10036, 1493, 7390, 6164, 1252, 10033, 7046, 8433, 5844, 10421, 2]
 // Exports: default
 
-// Module 10411 (StickersPremiumUpsellAlert)
+// Module 10417 (StickersPremiumUpsellAlert)
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import Text_Text from "Text/Text" /* 5751 */;
-import openPremiumModalDefault from "openPremiumModal" /* 10027 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10412 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 10413 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 10414 */;
+import Text_Text from "Text/Text" /* 5753 */;
+import openPremiumModalDefault from "openPremiumModal" /* 10033 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10418 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 10419 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 10420 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import IAPStore from "IAPStore" /* 7673 */;
+import IAPStore from "IAPStore" /* 7676 */;
 import Constants from "Constants" /* 1072 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5142 */;
 import size from "module_2" /* 2 */;
 
 let c10;
@@ -42,7 +42,7 @@ function PerkRow(perk) {
   const tmp = closure_16();
   items = [tmp.perkRow, ];
   let lastPerkRow;
-  const tmp2 = authStore3;
+  const tmp2 = gesture;
   const tmp3 = React3;
   if (isLastPerk) {
     lastPerkRow = tmp.lastPerkRow;
@@ -119,13 +119,13 @@ export default function StickersPremiumUpsellAlert(arg0) {
       const products = obj.loadProducts();
     }
   }, []);
-  const tmp5 = analyticsLocations(10030)(PREMIUM_MONTH_TIER_2.PREMIUM_MONTH_TIER_2);
+  const tmp5 = analyticsLocations(10036)(PREMIUM_MONTH_TIER_2.PREMIUM_MONTH_TIER_2);
   let priceString;
   if (tmp5 != null) {
     priceString = tmp5.priceString;
   }
   const height = tmp3(1493)().height;
-  analyticsLocations = tmp3(7387)().analyticsLocations;
+  analyticsLocations = tmp3(7390)().analyticsLocations;
   let obj = {
     cancelText: intl.string(intl4.t.f3Pet9),
     confirmColor: native.ButtonColors.GREEN,
@@ -147,7 +147,7 @@ export default function StickersPremiumUpsellAlert(arg0) {
     style: items,
     children: items1
   };
-  const tmp3Result = analyticsLocations(6162);
+  const tmp3Result = analyticsLocations(6164);
   intl = intl4.intl;
   intl2 = intl4.intl;
   items = [tmp.alert, ];
@@ -158,8 +158,8 @@ export default function StickersPremiumUpsellAlert(arg0) {
   items[1] = shortHeightAlert;
   let obj2 = { style: tmp.closeContainer, children: closure_13(PressableOpacity, obj3) };
   obj3 = { accessibilityRole: "button", accessibilityLabel: "close", onPress: onClose, children: closure_13(Icon, obj4) };
-  PressableOpacity = tmp9(7043).PressableOpacity;
-  obj4 = { source: analyticsLocations(8429) };
+  PressableOpacity = tmp9(7046).PressableOpacity;
+  obj4 = { source: analyticsLocations(8433) };
   Icon = tmp9(1187).Icon;
   items1 = [closure_13(closure_4, obj2), ];
   const obj5 = {
@@ -169,11 +169,11 @@ export default function StickersPremiumUpsellAlert(arg0) {
     },
     children: items2
   };
-  const obj6 = { source: analyticsLocations(10415), style: tmp.imageHeader };
-  const tmp3Result2 = analyticsLocations(5842);
+  const obj6 = { source: analyticsLocations(10421), style: tmp.imageHeader };
+  const tmp3Result2 = analyticsLocations(5844);
   items2 = [closure_13(tmp3Result2, obj6), , ];
   const obj7 = { style: tmp.description, variant: "body-md/medium", children: format(TBsJfQ, { monthlyPrice: priceString }) };
-  const Text = tmp9(5751).Text;
+  const Text = tmp9(5753).Text;
   const intl3 = tmp9(1113).intl;
   format = intl3.format;
   TBsJfQ = tmp9(1113).t.TBsJfQ;

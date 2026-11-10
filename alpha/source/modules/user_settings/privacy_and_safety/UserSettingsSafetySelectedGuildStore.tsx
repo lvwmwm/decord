@@ -1,10 +1,10 @@
-// Module ID: 18243
-// Function ID: 18244
+// Module ID: 18272
+// Function ID: 18273
 // Name: UserSettingsSafetySelectedGuildStore
 // Dependencies: [560, 2]
 // Exports: getSelectedGuildId, setSelectedGuildId
 
-// Module 18243 (UserSettingsSafetySelectedGuildStore)
+// Module 18272 (UserSettingsSafetySelectedGuildStore)
 import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;
 

@@ -1,15 +1,15 @@
-// Module ID: 12177
-// Function ID: 12178
+// Module ID: 12186
+// Function ID: 12187
 // Name: SingleVideoCall
-// Dependencies: [19, 11130, 21, 1627, 7387, 11941, 1187, 11928, 5888, 8821, 2]
+// Dependencies: [19, 11139, 21, 1627, 7390, 11950, 1187, 11937, 5890, 8827, 2]
 // Exports: default
 
-// Module 12177 (SingleVideoCall)
+// Module 12186 (SingleVideoCall)
 import Fragment from "Fragment" /* 21 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5888 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8821 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5890 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8827 */;
 import react from "react" /* 19 */;
-import ChannelCallStore from "ChannelCallStore" /* 11130 */;
+import ChannelCallStore from "ChannelCallStore" /* 11139 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;

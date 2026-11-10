@@ -1,10 +1,10 @@
-// Module ID: 8221
-// Function ID: 8222
+// Module ID: 8225
+// Function ID: 8226
 // Name: AppStoreAgeAssurance
-// Dependencies: [5, 8222, 2]
+// Dependencies: [5, 8226, 2]
 
-// Module 8221 (AppStoreAgeAssurance)
-import PlayAgeSignals from "PlayAgeSignals" /* 8222 */;
+// Module 8225 (AppStoreAgeAssurance)
+import PlayAgeSignals from "PlayAgeSignals" /* 8226 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 

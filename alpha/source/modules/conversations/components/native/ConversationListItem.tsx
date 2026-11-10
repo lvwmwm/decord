@@ -1,22 +1,22 @@
-// Module ID: 10002
-// Function ID: 10003
+// Module ID: 10008
+// Function ID: 10009
 // Name: ConversationListItem
-// Dependencies: [19, 17, 7843, 5779, 1072, 21, 5140, 575, 1499, 504, 9969, 9987, 9972, 7040, 5751, 1113, 7104, 5715, 10003, 10004, 10006, 2]
+// Dependencies: [19, 17, 7847, 5781, 1072, 21, 5142, 575, 1499, 504, 9975, 9993, 9978, 7043, 5753, 1113, 7107, 5717, 10009, 10010, 10012, 2]
 
-// Module 10002 (ConversationListItem)
+// Module 10008 (ConversationListItem)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import ConversationConstants from "ConversationConstants" /* 5779 */;
-import ConversationsActionCreators from "ConversationsActionCreators" /* 9969 */;
-import ConversationsAnalytics2 from "ConversationsAnalytics" /* 9972 */;
-import ConversationNavigatorUtils from "ConversationNavigatorUtils" /* 9987 */;
-import ConversationPreviewBlockedMessageDefault from "ConversationPreviewBlockedMessage" /* 10004 */;
-import ConversationPreviewMessageDefault from "ConversationPreviewMessage" /* 10006 */;
+import ConversationConstants from "ConversationConstants" /* 5781 */;
+import ConversationsActionCreators from "ConversationsActionCreators" /* 9975 */;
+import ConversationsAnalytics2 from "ConversationsAnalytics" /* 9978 */;
+import ConversationNavigatorUtils from "ConversationNavigatorUtils" /* 9993 */;
+import ConversationPreviewBlockedMessageDefault from "ConversationPreviewBlockedMessage" /* 10010 */;
+import ConversationPreviewMessageDefault from "ConversationPreviewMessage" /* 10012 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelConversationsStore from "ChannelConversationsStore" /* 7843 */;
+import ChannelConversationsStore from "ChannelConversationsStore" /* 7847 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5142 */;
 import size from "module_2" /* 2 */;
 
 let navigation;

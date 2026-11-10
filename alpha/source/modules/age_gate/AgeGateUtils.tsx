@@ -1,28 +1,28 @@
-// Module ID: 6789
-// Function ID: 6790
+// Module ID: 6791
+// Function ID: 6792
 // Name: AgeGateUtils
-// Dependencies: [5007, 4989, 6790, 5011, 5043, 1385, 1097, 1072, 1113, 11, 5817, 6786, 6791, 6781, 504, 6780, 6784, 2185, 6794, 6807, 6808, 2]
+// Dependencies: [5009, 4991, 6792, 5013, 5045, 1385, 1097, 1072, 1113, 11, 5819, 6788, 6793, 6783, 504, 6782, 6786, 2185, 6796, 6810, 6811, 2]
 // Exports: getAgeGateType, guildNeedsAgeGate, isChannelAgeVerificationGated, isCurrentUserMissingDateOfBirth, maybeOpenAgeGateForVoiceChannel, maybeShowAgeGate, shouldAgeVerifyForSettingsToggles, shouldShowAgeGateForChannelId, shouldShowAgeGateForCurrentUser, shouldShowAgeGateForGuildContentLevel, shouldShowAgeGateForVoiceChannel, useAgeGateVerifyContent, useAgeGateVerifyContentForGuild, useShouldAgeVerifyForSettingsToggles, useShouldHideChannelContent, userNeedsAgeGate
 
-// Module 6789 (AgeGateUtils)
+// Module 6791 (AgeGateUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initialized from "get initialized" /* 504 */;
 import intl17 from "intl" /* 1113 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2185 */;
-import GuildRecord from "GuildRecord" /* 5007 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5817 */;
-import shouldAgeVerifyForAgeGate2 from "shouldAgeVerifyForAgeGate" /* 6780 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 6781 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6784 */;
-import AgeGatedFeature from "AgeGatedFeature" /* 6786 */;
-import getAgeNoticeWarningDescriptions from "getAgeNoticeWarningDescriptions" /* 6791 */;
-import AgeGateModalActionCreators from "AgeGateModalActionCreators" /* 6794 */;
-import NSFWContentGate from "NSFWContentGate" /* 6807 */;
-import SpoilerChannelUtils from "SpoilerChannelUtils" /* 6808 */;
-import ChannelStore from "ChannelStore" /* 4989 */;
-import GuildNSFWAgreeStore from "GuildNSFWAgreeStore" /* 6790 */;
-import GuildStore from "GuildStore" /* 5011 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5043 */;
+import GuildRecord from "GuildRecord" /* 5009 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5819 */;
+import shouldAgeVerifyForAgeGate2 from "shouldAgeVerifyForAgeGate" /* 6782 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 6783 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6786 */;
+import AgeGatedFeature from "AgeGatedFeature" /* 6788 */;
+import getAgeNoticeWarningDescriptions from "getAgeNoticeWarningDescriptions" /* 6793 */;
+import AgeGateModalActionCreators from "AgeGateModalActionCreators" /* 6796 */;
+import NSFWContentGate from "NSFWContentGate" /* 6810 */;
+import SpoilerChannelUtils from "SpoilerChannelUtils" /* 6811 */;
+import ChannelStore from "ChannelStore" /* 4991 */;
+import GuildNSFWAgreeStore from "GuildNSFWAgreeStore" /* 6792 */;
+import GuildStore from "GuildStore" /* 5013 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5045 */;
 import UserStore from "UserStore" /* 1385 */;
 import AgeGateConstants from "AgeGateConstants" /* 1097 */;
 import Constants from "Constants" /* 1072 */;

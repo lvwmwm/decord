@@ -1,28 +1,28 @@
-// Module ID: 15212
-// Function ID: 15213
+// Module ID: 15238
+// Function ID: 15239
 // Name: UserProfileAddGameActionSheet
-// Dependencies: [32, 19, 17, 502, 12550, 8825, 21, 5140, 575, 7038, 5735, 7281, 504, 15177, 7850, 15213, 9699, 15216, 15214, 15215, 12549, 5149, 1113, 6153, 8833, 7583, 5374, 15211, 5388, 7382, 7282, 7015, 5751, 7287, 2]
+// Dependencies: [32, 19, 17, 502, 12563, 8831, 21, 5142, 575, 7041, 5737, 7284, 504, 15203, 7854, 15239, 9705, 15242, 15240, 15241, 12562, 5151, 1113, 6155, 8839, 7586, 5376, 15237, 5390, 7385, 7285, 7018, 5753, 7290, 2]
 // Exports: default
 
-// Module 15212 (UserProfileAddGameActionSheet)
+// Module 15238 (UserProfileAddGameActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5149 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
-import TableRow from "TableRow" /* 7038 */;
-import _extends from "_extends" /* 7583 */;
-import UserProfileGameWidgetTypes from "UserProfileGameWidgetTypes" /* 7850 */;
-import Constants from "Constants" /* 8825 */;
-import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8833 */;
-import WidgetUtils from "WidgetUtils" /* 12549 */;
-import openUserProfileAddGameActionSheet from "openUserProfileAddGameActionSheet" /* 15211 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5151 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5376 */;
+import TableRow from "TableRow" /* 7041 */;
+import _extends from "_extends" /* 7586 */;
+import UserProfileGameWidgetTypes from "UserProfileGameWidgetTypes" /* 7854 */;
+import Constants from "Constants" /* 8831 */;
+import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8839 */;
+import WidgetUtils from "WidgetUtils" /* 12562 */;
+import openUserProfileAddGameActionSheet from "openUserProfileAddGameActionSheet" /* 15237 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import WidgetStore from "WidgetStore" /* 12550 */;
+import WidgetStore from "WidgetStore" /* 12563 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5142 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -285,7 +285,7 @@ export default function UserProfileAddGameActionSheet(widgetType) {
       if (gameIds.includes(gameId)) {
         onAddGame(gameId);
       }
-      const AccessibilityAnnouncer = tmp5(5149).AccessibilityAnnouncer;
+      const AccessibilityAnnouncer = tmp5(5151).AccessibilityAnnouncer;
       const announce = AccessibilityAnnouncer.announce;
       const intl = tmp5(1113).intl;
       announce(intl.string(intl4.t.q0U3DE));

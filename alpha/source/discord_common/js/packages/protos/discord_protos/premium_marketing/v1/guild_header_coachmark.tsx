@@ -1,14 +1,14 @@
-// Module ID: 9744
-// Function ID: 9745
+// Module ID: 9750
+// Function ID: 9751
 // Name: guild_header_coachmark
-// Dependencies: [32, 1197, 9731, 9723, 9722, 9721, 2]
+// Dependencies: [32, 1197, 9737, 9729, 9728, 9727, 2]
 
-// Module 9744 (guild_header_coachmark)
+// Module 9750 (guild_header_coachmark)
 import _mod1197 from "module_1197" /* 1197 */;
-import localized_string from "localized_string" /* 9721 */;
-import help_article from "help_article" /* 9722 */;
-import cta_button from "cta_button" /* 9723 */;
-import theme_aware_asset from "theme_aware_asset" /* 9731 */;
+import localized_string from "localized_string" /* 9727 */;
+import help_article from "help_article" /* 9728 */;
+import cta_button from "cta_button" /* 9729 */;
+import theme_aware_asset from "theme_aware_asset" /* 9737 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 

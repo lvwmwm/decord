@@ -1,14 +1,14 @@
-// Module ID: 10407
-// Function ID: 10408
+// Module ID: 10413
+// Function ID: 10414
 // Name: StickerOptionsActionSheet
-// Dependencies: [19, 21, 7418, 5836, 5374, 7426, 7126, 7038, 5851, 1113, 2]
+// Dependencies: [19, 21, 7421, 5838, 5376, 7429, 7129, 7041, 5853, 1113, 2]
 // Exports: default
 
-// Module 10407 (StickerOptionsActionSheet)
+// Module 10413 (StickerOptionsActionSheet)
 import Fragment from "Fragment" /* 21 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
-import ToastUtils from "ToastUtils" /* 5836 */;
-import ClipboardUtils from "ClipboardUtils" /* 7418 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5376 */;
+import ToastUtils from "ToastUtils" /* 5838 */;
+import ClipboardUtils from "ClipboardUtils" /* 7421 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -27,11 +27,11 @@ export default function StickerOptionsActionSheet(stickerUrl) {
     const obj3 = ActionSheetActionCreatorsDefault;
     obj3.hideActionSheet();
   }, items);
-  const ActionSheet = stickerUrl(7426).ActionSheet;
+  const ActionSheet = stickerUrl(7429).ActionSheet;
   let obj2 = { hasIcons: true, children: null };
-  const TableRowGroup = stickerUrl(7126).TableRowGroup;
+  const TableRowGroup = stickerUrl(7129).TableRowGroup;
   let obj3 = { icon: null, label: intl.string(stickerUrl(1113).t.B1ubHx), onPress: callback };
-  const TableRow = stickerUrl(7038).TableRow;
+  const TableRow = stickerUrl(7041).TableRow;
   intl = stickerUrl(1113).intl;
   return <ActionSheet>{null}</ActionSheet>;
 };

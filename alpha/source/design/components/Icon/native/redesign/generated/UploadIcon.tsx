@@ -1,14 +1,14 @@
-// Module ID: 10038
-// Function ID: 10039
+// Module ID: 10044
+// Function ID: 10045
 // Name: UploadIcon
-// Dependencies: [19, 21, 575, 5841, 10039, 2]
+// Dependencies: [19, 21, 575, 5843, 10045, 2]
 // Exports: UploadIcon
 
-// Module 10038 (UploadIcon)
+// Module 10044 (UploadIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5841 */;
-import AssetRegistry from "AssetRegistry" /* 10039 */;
+import BaseIconImage2 from "BaseIconImage" /* 5843 */;
+import AssetRegistry from "AssetRegistry" /* 10045 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

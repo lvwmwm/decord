@@ -1,18 +1,18 @@
-// Module ID: 5148
-// Function ID: 5149
+// Module ID: 5150
+// Function ID: 5151
 // Name: design/shared
-// Dependencies: [2, 5149, 5154, 5155, 5156, 5157, 5158, 5159, 5160]
+// Dependencies: [2, 5151, 5156, 5157, 5158, 5159, 5160, 5161, 5162]
 
-// Module 5148 (design/shared)
-import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 5149 */;
-import react from "react" /* 5154 */;
-import ThemeUtils from "ThemeUtils" /* 5156 */;
-import ThemeContext from "ThemeContext" /* 5157 */;
-import ThemeContextProvider from "ThemeContextProvider" /* 5158 */;
-import ThemeContextProvider_ThemeTypes from "ThemeContextProvider/ThemeTypes" /* 5159 */;
-import ThemeContextFlags from "ThemeContextFlags" /* 5160 */;
+// Module 5150 (design/shared)
+import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 5151 */;
+import react from "react" /* 5156 */;
+import ThemeUtils from "ThemeUtils" /* 5158 */;
+import ThemeContext from "ThemeContext" /* 5159 */;
+import ThemeContextProvider from "ThemeContextProvider" /* 5160 */;
+import ThemeContextProvider_ThemeTypes from "ThemeContextProvider/ThemeTypes" /* 5161 */;
+import ThemeContextFlags from "ThemeContextFlags" /* 5162 */;
 import size from "module_2" /* 2 */;
-import AccessibilityConstants from "AccessibilityPreferencesContext/AccessibilityConstants" /* 5155 */;
+import AccessibilityConstants from "AccessibilityPreferencesContext/AccessibilityConstants" /* 5157 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/packages/design/shared.tsx");
 for (const key10018 in AccessibilityAnnouncer) {

@@ -1,14 +1,14 @@
-// Module ID: 19625
-// Function ID: 19626
+// Module ID: 19654
+// Function ID: 19655
 // Name: useConsoleConnectedAccountForVoiceUpsell
-// Dependencies: [6627, 6625, 5894, 9827, 504, 5891, 19626, 2]
+// Dependencies: [6629, 6627, 5896, 9833, 504, 5893, 19655, 2]
 // Exports: default
 
-// Module 19625 (useConsoleConnectedAccountForVoiceUpsell)
-import GameConsoleConstants from "GameConsoleConstants" /* 9827 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6627 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 6625 */;
-import GameConsoleStore from "GameConsoleStore" /* 5894 */;
+// Module 19654 (useConsoleConnectedAccountForVoiceUpsell)
+import GameConsoleConstants from "GameConsoleConstants" /* 9833 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6629 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 6627 */;
+import GameConsoleStore from "GameConsoleStore" /* 5896 */;
 import size from "module_2" /* 2 */;
 
 let account, platform;

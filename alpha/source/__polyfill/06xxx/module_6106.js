@@ -1,47 +1,50 @@
 // Module ID: 6106
 // Function ID: 6107
-// Dependencies: [19, 17, 6104]
-// Exports: useRenderDebugInfo
+// Dependencies: [6107]
 
 // Module 6106
-import react_native from "react-native" /* 17 */;
-import _mod6104 from "module_6104" /* 6104 */;
-import react from "react" /* 19 */;
+import get_synchronousScreenUpdatesEnabled from "get synchronousScreenUpdatesEnabled" /* 6107 */;
 
-const require = globalThis.__r;
-let _require;
 
-const findNodeHandle = react_native.findNodeHandle;
-
-export function useRenderDebugInfo(arg0) {
-  let closure_0;
-  let ref1;
-  _require = arg0;
-  const ref = ref1.useRef(null);
-  ref1 = ref1.useRef(-1);
-  let closure_3 = ref1.useEffectEvent((arg0) => {
-    const current = ref1.current;
-    const RNSLog = _mod6104.RNSLog;
-    RNSLog.log("" + closure_0 + " [" + current + "] " + arg0);
-  });
-  const effect = ref1.useEffect(() => {
-    if (null != ref.current) {
-      let num = findNodeHandle(tmp.current);
-      if (num == null) {
-        num = -1;
-      }
-      ref1.current = num;
-      if (-1 === ref1.current) {
-        closure_3("failed to find node handle");
-      }
+export const RNSLog = {
+  log(arg0) {
+    const substr = [...arguments].slice();
+    if (get_synchronousScreenUpdatesEnabled.featureFlags.stable.debugLogging) {
+      const _console = console;
+      const items = [arg0];
+      HermesBuiltin.arraySpread(items, substr, 1);
+      const _console2 = console;
+      HermesBuiltin.apply(log, items, console);
     }
-    closure_3("mounted");
-    return () => {
-      closure_1_3("unmounted");
-    };
-  }, []);
-  let current = ref1.current;
-  let RNSLog = require("module_6104").RNSLog;
-  RNSLog.log("" + arg0 + " [" + current + "] " + "rendered");
-  return ref;
-}
+  },
+  warn(arg0) {
+    const substr = [...arguments].slice();
+    if (get_synchronousScreenUpdatesEnabled.featureFlags.stable.debugLogging) {
+      const _console = console;
+      const items = [arg0];
+      HermesBuiltin.arraySpread(items, substr, 1);
+      const _console2 = console;
+      HermesBuiltin.apply(warn, items, console);
+    }
+  },
+  error(arg0) {
+    const substr = [...arguments].slice();
+    if (get_synchronousScreenUpdatesEnabled.featureFlags.stable.debugLogging) {
+      const _console = console;
+      const items = [arg0];
+      HermesBuiltin.arraySpread(items, substr, 1);
+      const _console2 = console;
+      HermesBuiltin.apply(error, items, console);
+    }
+  },
+  info(arg0) {
+    const substr = [...arguments].slice();
+    if (get_synchronousScreenUpdatesEnabled.featureFlags.stable.debugLogging) {
+      const _console = console;
+      const items = [arg0];
+      HermesBuiltin.arraySpread(items, substr, 1);
+      const _console2 = console;
+      HermesBuiltin.apply(info, items, console);
+    }
+  }
+};

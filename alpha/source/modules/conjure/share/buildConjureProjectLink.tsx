@@ -1,10 +1,10 @@
-// Module ID: 12420
-// Function ID: 12421
+// Module ID: 12433
+// Function ID: 12434
 // Name: buildConjureProjectLink
 // Dependencies: [2]
 // Exports: default
 
-// Module 12420 (buildConjureProjectLink)
+// Module 12433 (buildConjureProjectLink)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/share/buildConjureProjectLink.tsx");

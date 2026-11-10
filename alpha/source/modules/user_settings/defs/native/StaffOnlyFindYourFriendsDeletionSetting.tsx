@@ -1,23 +1,23 @@
-// Module ID: 17063
-// Function ID: 17064
+// Module ID: 17090
+// Function ID: 17091
 // Name: StaffOnlyFindYourFriendsDeletionSetting
-// Dependencies: [5, 17, 8503, 21, 1254, 1259, 5055, 14487, 1336, 5837, 11685, 17064, 2]
+// Dependencies: [5, 17, 8507, 21, 1254, 1259, 5057, 14513, 1336, 5839, 11694, 17091, 2]
 
-// Module 17063 (StaffOnlyFindYourFriendsDeletionSetting)
+// Module 17090 (StaffOnlyFindYourFriendsDeletionSetting)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import _slicedToArray from "_slicedToArray" /* 5055 */;
-import SettingsConstants from "SettingsConstants" /* 8503 */;
-import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 17064 */;
+import _slicedToArray from "_slicedToArray" /* 5057 */;
+import SettingsConstants from "SettingsConstants" /* 8507 */;
+import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 17091 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import module_1254 from "module_1254" /* 1254 */;
-import SettingBuilders from "SettingBuilders" /* 11685 */;
+import SettingBuilders from "SettingBuilders" /* 11694 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, c4, c5, closure_2;
 
-const f112547 = (isLoading) => isLoading.isLoading;
+const f112722 = (isLoading) => isLoading.isLoading;
 function setFindYourFriendsDeletionIsLoading(isLoading) {
   let state;
   _require = isLoading;
@@ -131,7 +131,7 @@ obj = {
   },
   parent: MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
   useIsDisabled: function useIsFindYourFriendsDeletionDisabled() {
-    return closure_6(f112547, _slicedToArray.shallow);
+    return closure_6(f112722, _slicedToArray.shallow);
   },
   onPress: function onFindYourFriendsDeletionPress() {
     return obj(...arguments);
@@ -139,7 +139,7 @@ obj = {
   usePredicate: useIsStaffOrDeveloperSettingPredicate.useStaffOrDeveloperSettingPredicate,
   useTrailing: function useIsFindYourFriendsDeletionTrailing() {
     let tmp = null;
-    if (closure_6(f112547, _slicedToArray.shallow)) {
+    if (closure_6(f112722, _slicedToArray.shallow)) {
       tmp = <ActivityIndicator />;
     }
     return tmp;

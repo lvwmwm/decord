@@ -1,10 +1,10 @@
-// Module ID: 10345
-// Function ID: 10346
+// Module ID: 10351
+// Function ID: 10352
 // Name: react
 // Dependencies: [19, 2]
 // Exports: useBackspaceHandler
 
-// Module 10345 (react)
+// Module 10351 (react)
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

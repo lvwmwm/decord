@@ -1,18 +1,18 @@
-// Module ID: 10803
-// Function ID: 10804
+// Module ID: 10812
+// Function ID: 10813
 // Name: SocialLayerStorefrontBadges
-// Dependencies: [19, 17, 21, 5140, 575, 1377, 10804, 5751, 1113, 2]
+// Dependencies: [19, 17, 21, 5142, 575, 1377, 10813, 5753, 1113, 2]
 // Exports: ExclusiveBadge
 
-// Module 10803 (SocialLayerStorefrontBadges)
+// Module 10812 (SocialLayerStorefrontBadges)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5751 */;
-import ClydeIcon2 from "ClydeIcon" /* 10804 */;
+import Text_Text from "Text/Text" /* 5753 */;
+import ClydeIcon2 from "ClydeIcon" /* 10813 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5142 */;
 import PlatformUtils_mod from "PlatformUtils" /* 1377 */;
 import size from "module_2" /* 2 */;
 

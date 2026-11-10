@@ -1,9 +1,9 @@
-// Module ID: 5899
-// Function ID: 5900
+// Module ID: 5901
+// Function ID: 5902
 // Name: RTCConnection
-// Dependencies: [5, 5900, 5910, 5911, 5912, 5913, 502, 4989, 5011, 2130, 5893, 5916, 5992, 1385, 1072, 5993, 5994, 5897, 5995, 559, 5901, 5921, 1242, 3, 5996, 5997, 1266, 5999, 6008, 6002, 6009, 1477, 1377, 4951, 1378, 572, 2129, 1403, 6011, 14, 6012, 6013, 6014, 6015, 6016, 6017, 6018, 6019, 6020, 1252, 5146, 6021, 5965, 6022, 6024, 6037, 6033, 6038, 6039, 6040, 2171, 6041, 6043, 6044, 6045, 5918, 6046, 6078, 6079, 6080, 6081, 6083, 6086, 6088, 6089, 6090, 1113, 551, 15969, 1251, 2]
+// Dependencies: [5, 5902, 5912, 5913, 5914, 5915, 502, 4991, 5013, 2130, 5895, 5918, 5994, 1385, 1072, 5995, 5996, 5899, 5997, 559, 5903, 5923, 1242, 3, 5998, 5999, 1266, 6001, 6010, 6004, 6011, 1477, 1377, 4953, 1378, 572, 2129, 1403, 6013, 14, 6014, 6015, 6016, 6017, 6018, 6019, 6020, 6021, 6022, 1252, 5148, 6023, 5967, 6024, 6026, 6039, 6035, 6040, 6041, 6042, 2171, 6043, 6045, 6046, 6047, 5920, 6048, 6080, 6081, 6082, 6083, 6085, 6088, 6090, 6091, 6092, 1113, 551, 15996, 1251, 2]
 
-// Module 5899 (RTCConnection)
+// Module 5901 (RTCConnection)
 import LoggerDefault from "Logger" /* 3 */;
 import debounceDefault from "debounce" /* 551 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
@@ -16,51 +16,51 @@ import PlatformUtils from "PlatformUtils" /* 1377 */;
 import URLUtilsDefault from "URLUtils" /* 1378 */;
 import FlagUtils from "FlagUtils" /* 1403 */;
 import RTCControlSocket from "RTCControlSocket" /* 2129 */;
-import CrossPlatformNativeUtilsDefault from "CrossPlatformNativeUtils" /* 5146 */;
-import TimeUtils from "TimeUtils" /* 5901 */;
-import SystemAnalyticsStore from "SystemAnalyticsStore" /* 5912 */;
-import flatRestDefault from "flatRest" /* 5965 */;
-import BrowserConstants from "BrowserConstants" /* 5994 */;
-import WindowVisibilityVideoManager3 from "WindowVisibilityVideoManager" /* 6002 */;
-import RTCConnectionEvent from "RTCConnectionEvent" /* 6011 */;
-import DesktopGeneralPerfExperiment from "DesktopGeneralPerfExperiment" /* 6012 */;
-import ProportionalVadIndicatorExperimentDefault from "ProportionalVadIndicatorExperiment" /* 6013 */;
-import SurfaceDirectRendererExperiment from "SurfaceDirectRendererExperiment" /* 6019 */;
-import LinuxGpuDecodeExperiment from "LinuxGpuDecodeExperiment" /* 6020 */;
-import getMediaPerformanceClassDefault from "getMediaPerformanceClass" /* 6021 */;
-import VoiceQuality from "VoiceQuality" /* 6024 */;
-import SystemResourcesDefault from "SystemResources" /* 6033 */;
-import SystemResponsivenessDefault from "SystemResponsiveness" /* 6037 */;
-import getFrontierTuningConfigIfEligibleDefault from "getFrontierTuningConfigIfEligible" /* 6041 */;
-import ServerLadderExperiment2 from "ServerLadderExperiment" /* 6043 */;
-import AV1BitrateTuningExperiment from "AV1BitrateTuningExperiment" /* 6044 */;
-import NativeMuteManagerDefault from "NativeMuteManager" /* 6046 */;
-import VoiceDurationDefault from "VoiceDuration" /* 6078 */;
-import AVError from "AVError" /* 6079 */;
-import VideoQuality from "VideoQuality" /* 6081 */;
-import VideoHealthManager from "VideoHealthManager" /* 6083 */;
-import ThermalUtilsDefault from "ThermalUtils" /* 6086 */;
-import BandwidthEstimationExperimentDefault from "BandwidthEstimationExperiment" /* 6088 */;
-import DaveMessageValidator from "DaveMessageValidator" /* 6089 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 6090 */;
-import E2eLatencyMeasurementExperiment2 from "E2eLatencyMeasurementExperiment" /* 15969 */;
+import CrossPlatformNativeUtilsDefault from "CrossPlatformNativeUtils" /* 5148 */;
+import TimeUtils from "TimeUtils" /* 5903 */;
+import SystemAnalyticsStore from "SystemAnalyticsStore" /* 5914 */;
+import flatRestDefault from "flatRest" /* 5967 */;
+import BrowserConstants from "BrowserConstants" /* 5996 */;
+import WindowVisibilityVideoManager3 from "WindowVisibilityVideoManager" /* 6004 */;
+import RTCConnectionEvent from "RTCConnectionEvent" /* 6013 */;
+import DesktopGeneralPerfExperiment from "DesktopGeneralPerfExperiment" /* 6014 */;
+import ProportionalVadIndicatorExperimentDefault from "ProportionalVadIndicatorExperiment" /* 6015 */;
+import SurfaceDirectRendererExperiment from "SurfaceDirectRendererExperiment" /* 6021 */;
+import LinuxGpuDecodeExperiment from "LinuxGpuDecodeExperiment" /* 6022 */;
+import getMediaPerformanceClassDefault from "getMediaPerformanceClass" /* 6023 */;
+import VoiceQuality from "VoiceQuality" /* 6026 */;
+import SystemResourcesDefault from "SystemResources" /* 6035 */;
+import SystemResponsivenessDefault from "SystemResponsiveness" /* 6039 */;
+import getFrontierTuningConfigIfEligibleDefault from "getFrontierTuningConfigIfEligible" /* 6043 */;
+import ServerLadderExperiment2 from "ServerLadderExperiment" /* 6045 */;
+import AV1BitrateTuningExperiment from "AV1BitrateTuningExperiment" /* 6046 */;
+import NativeMuteManagerDefault from "NativeMuteManager" /* 6048 */;
+import VoiceDurationDefault from "VoiceDuration" /* 6080 */;
+import AVError from "AVError" /* 6081 */;
+import VideoQuality from "VideoQuality" /* 6083 */;
+import VideoHealthManager from "VideoHealthManager" /* 6085 */;
+import ThermalUtilsDefault from "ThermalUtils" /* 6088 */;
+import BandwidthEstimationExperimentDefault from "BandwidthEstimationExperiment" /* 6090 */;
+import DaveMessageValidator from "DaveMessageValidator" /* 6091 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 6092 */;
+import E2eLatencyMeasurementExperiment2 from "E2eLatencyMeasurementExperiment" /* 15996 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import DeviceFrecencyStore from "DeviceFrecencyStore" /* 5900 */;
-import MediaEngineStatsStore from "MediaEngineStatsStore" /* 5910 */;
-import SecureFramesPersistedStore from "SecureFramesPersistedStore" /* 5911 */;
-import AudioRouteStore from "AudioRouteStore" /* 5913 */;
+import DeviceFrecencyStore from "DeviceFrecencyStore" /* 5902 */;
+import MediaEngineStatsStore from "MediaEngineStatsStore" /* 5912 */;
+import SecureFramesPersistedStore from "SecureFramesPersistedStore" /* 5913 */;
+import AudioRouteStore from "AudioRouteStore" /* 5915 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4989 */;
-import GuildStore from "GuildStore" /* 5011 */;
+import ChannelStore from "ChannelStore" /* 4991 */;
+import GuildStore from "GuildStore" /* 5013 */;
 import MediaEngineStore from "MediaEngineStore" /* 2130 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5893 */;
-import RTCDebugStore from "RTCDebugStore" /* 5916 */;
-import RTCRegionStore from "RTCRegionStore" /* 5992 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5895 */;
+import RTCDebugStore from "RTCDebugStore" /* 5918 */;
+import RTCRegionStore from "RTCRegionStore" /* 5994 */;
 import UserStore from "UserStore" /* 1385 */;
 import Constants_mod from "Constants" /* 1072 */;
-import StreamSettingsConstants from "StreamSettingsConstants" /* 5993 */;
-import Constants_mod2 from "Constants" /* 5897 */;
-import TypedEventEmitter from "TypedEventEmitter" /* 5921 */;
+import StreamSettingsConstants from "StreamSettingsConstants" /* 5995 */;
+import Constants_mod2 from "Constants" /* 5899 */;
+import TypedEventEmitter from "TypedEventEmitter" /* 5923 */;
 import size_mod from "module_2" /* 2 */;
 
 const RTCControlSocketDefault = RTCControlSocket;
@@ -87,12 +87,12 @@ let tmp11;
 let tmp8;
 const BackoffDefault = tmp11(559);
 const NetworkUtilsDefault = tmp11(1477);
-const DiscordNativeDefault = tmp11(4951);
-const DaveJoinTimerDefault = tmp11(5996);
-const RTCMediaSinkWantsManagerDefault = tmp11(5999);
-const GoLiveQualityManagerDefault = tmp11(6008);
-const setShouldRecordNextConnectionDefault = tmp11(6009);
-const VideoStabilizationExperimentDefault = tmp8(6018);
+const DiscordNativeDefault = tmp11(4953);
+const DaveJoinTimerDefault = tmp11(5998);
+const RTCMediaSinkWantsManagerDefault = tmp11(6001);
+const GoLiveQualityManagerDefault = tmp11(6010);
+const setShouldRecordNextConnectionDefault = tmp11(6011);
+const VideoStabilizationExperimentDefault = tmp8(6020);
 let obj = function _readAvx512EntropyHistogramSupported() {
   obj = _asyncToGenerator(async () => {
     let c2;
@@ -325,14 +325,14 @@ class RTCConnection extends TypedEventEmitter {
     obj.voiceVersion = null;
     obj.rtcWorkerVersion = null;
     if (createdTime == null) {
-      const obj4 = obj(5901);
+      const obj4 = obj(5903);
       createdTime = obj4.now();
     }
     obj._createdTime = createdTime;
     obj._daveJoinTimer = new DaveJoinTimerDefault(obj._createdTime);
     obj.state = constants3.AWAITING_ENDPOINT;
     new DaveJoinTimerDefault(obj._createdTime);
-    const stateHistory = new obj(5997).StateHistory(obj.state, obj._createdTime);
+    const stateHistory = new obj(5999).StateHistory(obj.state, obj._createdTime);
     obj.stateHistory = stateHistory;
     obj._socket = null;
     obj._backoff = new BackoffDefault(1000, 10000);
@@ -409,7 +409,7 @@ class RTCConnection extends TypedEventEmitter {
       obj._localMediaSinkWantsManager = new RTCMediaSinkWantsManagerDefault(userId, type === constants2.GUILD_STAGE_VOICE, tmp29);
       const _localMediaSinkWantsManager = obj._localMediaSinkWantsManager;
       const tmp37 = new RTCMediaSinkWantsManagerDefault(userId, type === constants2.GUILD_STAGE_VOICE, tmp29);
-      _localMediaSinkWantsManager.on(obj(5999).RTCMediaSinkWantsManagerEvent.Update, (localVideoSinkWants) => {
+      _localMediaSinkWantsManager.on(obj(6001).RTCMediaSinkWantsManagerEvent.Update, (localVideoSinkWants) => {
         const tmp2 = obj.state === constants.RTC_CONNECTED && null != tmp._socket;
         if (tmp2) {
           const logger = tmp.logger;
@@ -425,7 +425,7 @@ class RTCConnection extends TypedEventEmitter {
         }
       });
       const _localMediaSinkWantsManager2 = obj._localMediaSinkWantsManager;
-      _localMediaSinkWantsManager2.on(obj(5999).RTCMediaSinkWantsManagerEvent.UserSSRCUpdate, (arg0, arg1, arg2) => {
+      _localMediaSinkWantsManager2.on(obj(6001).RTCMediaSinkWantsManagerEvent.UserSSRCUpdate, (arg0, arg1, arg2) => {
         const _connection = obj._connection;
         if (_connection != null) {
           const user = _connection.createUser(arg0, arg1, arg2);
@@ -437,14 +437,14 @@ class RTCConnection extends TypedEventEmitter {
       obj._goLiveQualityManager = new GoLiveQualityManagerDefault();
       let _goLiveQualityManager = obj._goLiveQualityManager;
       const tmp47 = new GoLiveQualityManagerDefault();
-      _goLiveQualityManager.on(obj(6008).GoLiveQualityManagerEvent.RequestedSSRCsUpdate, (arg0, arg1, arg2) => {
+      _goLiveQualityManager.on(obj(6010).GoLiveQualityManagerEvent.RequestedSSRCsUpdate, (arg0, arg1, arg2) => {
         const _connection = obj._connection;
         if (_connection != null) {
           const user = _connection.createUser(arg0, arg1, arg2);
         }
       });
       const _goLiveQualityManager2 = obj._goLiveQualityManager;
-      _goLiveQualityManager2.on(obj(6008).GoLiveQualityManagerEvent.RequestedStreamsUpdate, (localVideoSinkWants) => {
+      _goLiveQualityManager2.on(obj(6010).GoLiveQualityManagerEvent.RequestedStreamsUpdate, (localVideoSinkWants) => {
         const tmp2 = obj.state === constants.RTC_CONNECTED && null != tmp._socket;
         if (tmp2) {
           const logger = tmp.logger;
@@ -460,11 +460,11 @@ class RTCConnection extends TypedEventEmitter {
         }
       });
     }
-    obj._remoteVideoSinkWants = obj(5999).DEFAULT_WANTS_FULL;
-    const WindowVisibilityVideoManager = tmp22(6002).WindowVisibilityVideoManager;
-    WindowVisibilityVideoManager.on(obj(6002).WindowVisibilityEvent.IncomingVideoEnabledChanged, obj.incomingVideoEnabledChanged);
-    const WindowVisibilityVideoManager2 = tmp22(6002).WindowVisibilityVideoManager;
-    WindowVisibilityVideoManager2.on(obj(6002).WindowVisibilityEvent.WindowVisibilityChanged, obj.windowVisibilityChanged);
+    obj._remoteVideoSinkWants = obj(6001).DEFAULT_WANTS_FULL;
+    const WindowVisibilityVideoManager = tmp22(6004).WindowVisibilityVideoManager;
+    WindowVisibilityVideoManager.on(obj(6004).WindowVisibilityEvent.IncomingVideoEnabledChanged, obj.incomingVideoEnabledChanged);
+    const WindowVisibilityVideoManager2 = tmp22(6004).WindowVisibilityVideoManager;
+    WindowVisibilityVideoManager2.on(obj(6004).WindowVisibilityEvent.WindowVisibilityChanged, obj.windowVisibilityChanged);
     if (RTCDebugStore.shouldRecordNextConnection()) {
       obj._recordingEnabled = true;
       setShouldRecordNextConnectionDefault(false);
@@ -688,9 +688,9 @@ class RTCConnection extends TypedEventEmitter {
     }
     const obj4 = { c: constants12.CONNECTION_DESTROY };
     self.recordEvent(obj4);
-    const WindowVisibilityVideoManager = tmp5(6002).WindowVisibilityVideoManager;
+    const WindowVisibilityVideoManager = tmp5(6004).WindowVisibilityVideoManager;
     WindowVisibilityVideoManager.off(WindowVisibilityVideoManager3.WindowVisibilityEvent.IncomingVideoEnabledChanged, self.incomingVideoEnabledChanged);
-    const WindowVisibilityVideoManager2 = tmp5(6002).WindowVisibilityVideoManager;
+    const WindowVisibilityVideoManager2 = tmp5(6004).WindowVisibilityVideoManager;
     WindowVisibilityVideoManager2.off(WindowVisibilityVideoManager3.WindowVisibilityEvent.WindowVisibilityChanged, self.windowVisibilityChanged);
     self._cancelReconnect();
     self._cleanupSocket();
@@ -1119,14 +1119,14 @@ class RTCConnection extends TypedEventEmitter {
     if (dontEmitVolumeOnlySpeakingEvents) {
       items.push("dont_emit_volume_only_speaking_events");
     }
-    const VoiceQualityScoringExperiment = tmp(6014).VoiceQualityScoringExperiment;
+    const VoiceQualityScoringExperiment = tmp(6016).VoiceQualityScoringExperiment;
     if (VoiceQualityScoringExperiment.getConfig({ location: "_chooseExperiments" }).enabled) {
       items.push("voice_quality_scoring");
     }
     const tmpResult9 = PlatformUtils;
     let enabled = tmpResult9.isWeb();
     if (enabled) {
-      const BrowserTransceiverPaddingRemovalExperiment = tmp(6015).BrowserTransceiverPaddingRemovalExperiment;
+      const BrowserTransceiverPaddingRemovalExperiment = tmp(6017).BrowserTransceiverPaddingRemovalExperiment;
       enabled = BrowserTransceiverPaddingRemovalExperiment.getConfig({ location: "RTCConnection" }).enabled;
     }
     if (enabled) {
@@ -1135,7 +1135,7 @@ class RTCConnection extends TypedEventEmitter {
     const tmpResult10 = PlatformUtils;
     let enabled2 = tmpResult10.isWeb() && self.context === constants7.STREAM;
     if (enabled2) {
-      const WebScreenShareAudioExperiment = tmp(6016).WebScreenShareAudioExperiment;
+      const WebScreenShareAudioExperiment = tmp(6018).WebScreenShareAudioExperiment;
       enabled2 = WebScreenShareAudioExperiment.getConfig({ location: "RTCConnection" }).enabled;
     }
     if (enabled2) {
@@ -1145,7 +1145,7 @@ class RTCConnection extends TypedEventEmitter {
     if (tmpResult11.isWeb()) {
       if (self.context === constants7.STREAM) {
         if (self.isStreamSender()) {
-          const WebStreamingOptimizationsExperiment = tmp(6017).WebStreamingOptimizationsExperiment;
+          const WebStreamingOptimizationsExperiment = tmp(6019).WebStreamingOptimizationsExperiment;
           const config1 = WebStreamingOptimizationsExperiment.getConfig({ location: "RTCConnection" });
           const degradationPreference = config1.degradationPreference;
           const motionContentHint = config1.motionContentHint;
@@ -1537,7 +1537,7 @@ class RTCConnection extends TypedEventEmitter {
         const tmp4 = importDefault;
         if (null != self._voiceDuration) {
           const _voiceDuration = self._voiceDuration;
-          const tmp4Result = tmp4(5965);
+          const tmp4Result = tmp4(5967);
           tmp4ResultResult = tmp4Result(_voiceDuration.getDurationStats(), ["duration_connected_ms", "duration_speaking_ms"]);
         }
         const _Math = Math;
@@ -2739,7 +2739,7 @@ class RTCConnection extends TypedEventEmitter {
             const self2 = this;
             const self3 = this;
             let tmp = windowLength;
-            const videoHealthManager = new tmp8(6083).VideoHealthManager(windowLength, allowedPoorFpsRatio, fpsThreshold, backoffTimeSec);
+            const videoHealthManager = new tmp8(6085).VideoHealthManager(windowLength, allowedPoorFpsRatio, fpsThreshold, backoffTimeSec);
             self._videoHealthManager = videoHealthManager;
           }
           if (null != self._localMediaSinkWantsManager) {
@@ -3056,7 +3056,7 @@ class RTCConnection extends TypedEventEmitter {
         const _daveJoinTimer = self._daveJoinTimer;
         _daveJoinTimer.clientDisconnected(self._userIds.size);
         if (1 === self._userIds.size) {
-          const tmp32Result = tmp32(5901);
+          const tmp32Result = tmp32(5903);
           self._secureFramesLastBecameAloneTime = tmp32Result.now();
         }
       }
@@ -3186,7 +3186,7 @@ class RTCConnection extends TypedEventEmitter {
           mediaEngine = obj2.getMediaEngine();
           mediaEngine1 = obj2.getMediaEngine();
           const mediaEngine2 = obj2.getMediaEngine();
-          tmp18 = mediaEngine2.getVideoInputDeviceId() !== closure_32;
+          tmp18 = mediaEngine2.getVideoInputDeviceId() !== map3;
           const tmp12 = constants;
           if (tmp18) {
             tmp18 = _connection.context === constants7.DEFAULT;
@@ -3829,7 +3829,7 @@ class RTCConnection extends TypedEventEmitter {
     dependencyMap = arg1;
     let logger = this.logger;
     logger.info("Received MLS commit for transition ID " + arg0);
-    obj = _connection(5901);
+    obj = _connection(5903);
     const commitReceivedTime = obj.now();
     _connection = this._connection;
     if (_connection != null) {
@@ -3852,7 +3852,7 @@ class RTCConnection extends TypedEventEmitter {
             const logger = obj.logger;
             const _HermesInternal = HermesInternal;
             logger.warn("Failed to process MLS commit for transition ID " + closure_1);
-            const tmp14Result = tmp14(5901);
+            const tmp14Result = tmp14(5903);
             self._mlsSessionResetStartTime = tmp14Result.now();
             if (self._flagMLSInvalidCommitWelcome(closure_1)) {
               const result4 = obj._handleSecureFramesInit(protocolVersion);
@@ -3870,7 +3870,7 @@ class RTCConnection extends TypedEventEmitter {
     dependencyMap = arg1;
     const logger = this.logger;
     logger.info("Received MLS welcome for transition ID " + arg0);
-    obj = _connection(5901);
+    obj = _connection(5903);
     const welcomeReceivedTime = obj.now();
     _connection = this._connection;
     if (_connection != null) {
@@ -3890,7 +3890,7 @@ class RTCConnection extends TypedEventEmitter {
             _daveJoinTimer.joinSucceeded(closure_1, 0 === closure_1);
             const result3 = obj._maybeTrackPreparedTransition(tmp10);
           } else {
-            const tmp12Result = tmp12(5901);
+            const tmp12Result = tmp12(5903);
             self._mlsSessionResetStartTime = tmp12Result.now();
             if (self._flagMLSInvalidCommitWelcome(closure_1)) {
               self._sendMLSKeyPackage();

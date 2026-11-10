@@ -1,15 +1,15 @@
-// Module ID: 19293
-// Function ID: 19294
+// Module ID: 19322
+// Function ID: 19323
 // Name: ChannelSettingsPermissionsOverrideCheckbox
-// Dependencies: [19, 17, 21, 575, 5140, 5077, 1113, 10005, 9365, 19294, 5200, 2]
+// Dependencies: [19, 17, 21, 575, 5142, 5079, 1113, 10011, 9371, 19323, 5202, 2]
 
-// Module 19293 (ChannelSettingsPermissionsOverrideCheckbox)
+// Module 19322 (ChannelSettingsPermissionsOverrideCheckbox)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import PermissionUtils from "PermissionUtils" /* 5077 */;
+import PermissionUtils from "PermissionUtils" /* 5079 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles_mod from "createStyles" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5142 */;
 import size from "module_2" /* 2 */;
 
 let c3;

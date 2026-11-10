@@ -1,28 +1,28 @@
-// Module ID: 13593
-// Function ID: 13594
+// Module ID: 13606
+// Function ID: 13607
 // Name: FamilyCenterDataConfirmation
-// Dependencies: [19, 21, 6159, 5751, 7126, 7038, 1113, 2664, 13594, 5845, 9848, 8731, 13595, 8085, 13597, 10205, 5864, 13598, 7633, 7120, 2]
+// Dependencies: [19, 21, 6161, 5753, 7129, 7041, 1113, 2664, 13607, 5847, 9854, 8737, 13608, 8089, 13610, 10211, 5866, 13611, 7636, 7123, 2]
 // Exports: default
 
-// Module 13593 (FamilyCenterDataConfirmation)
+// Module 13606 (FamilyCenterDataConfirmation)
 import intl37 from "intl" /* 1113 */;
 import _modDef2664 from "module_2664" /* 2664 */;
-import Text_Text from "Text/Text" /* 5751 */;
-import UserPlusIcon from "UserPlusIcon" /* 5845 */;
-import ClockIcon from "ClockIcon" /* 5864 */;
-import Stack_Stack from "Stack/Stack" /* 6159 */;
-import TableRow2 from "TableRow" /* 7038 */;
-import XSmallIcon from "XSmallIcon" /* 7120 */;
-import TableRowGroup2 from "TableRowGroup" /* 7126 */;
-import SettingsIcon from "SettingsIcon" /* 7633 */;
-import CreditCardIcon from "CreditCardIcon" /* 8085 */;
-import ForumIcon from "ForumIcon" /* 8731 */;
-import ServerIcon from "ServerIcon" /* 9848 */;
-import FlagIcon from "FlagIcon" /* 10205 */;
-import useAgeSpecificText12 from "useAgeSpecificText" /* 13594 */;
-import PhoneIcon from "PhoneIcon" /* 13595 */;
-import GiftIcon from "GiftIcon" /* 13597 */;
-import PiggyBankIcon from "PiggyBankIcon" /* 13598 */;
+import Text_Text from "Text/Text" /* 5753 */;
+import UserPlusIcon from "UserPlusIcon" /* 5847 */;
+import ClockIcon from "ClockIcon" /* 5866 */;
+import Stack_Stack from "Stack/Stack" /* 6161 */;
+import TableRow2 from "TableRow" /* 7041 */;
+import XSmallIcon from "XSmallIcon" /* 7123 */;
+import TableRowGroup2 from "TableRowGroup" /* 7129 */;
+import SettingsIcon from "SettingsIcon" /* 7636 */;
+import CreditCardIcon from "CreditCardIcon" /* 8089 */;
+import ForumIcon from "ForumIcon" /* 8737 */;
+import ServerIcon from "ServerIcon" /* 9854 */;
+import FlagIcon from "FlagIcon" /* 10211 */;
+import useAgeSpecificText12 from "useAgeSpecificText" /* 13607 */;
+import PhoneIcon from "PhoneIcon" /* 13608 */;
+import GiftIcon from "GiftIcon" /* 13610 */;
+import PiggyBankIcon from "PiggyBankIcon" /* 13611 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;

@@ -1,14 +1,14 @@
-// Module ID: 11602
-// Function ID: 11603
+// Module ID: 11611
+// Function ID: 11612
 // Name: BadgeUtils
-// Dependencies: [8825, 8826, 1113, 8835, 2150, 2]
+// Dependencies: [8831, 8832, 1113, 8841, 2150, 2]
 // Exports: findTier, getAlwaysVisibleCopy, getBadgeUnlockLabel, getDirectoryBadges, getDisplayTier, getLegacyDescriptionByBadgeId, getLegacyIconUrlByBadgeId, getProfileBadgeLabel, getTierRowSubtitle, getUnhideableBadgeIds, groupCustomizableBadges, isBetaBadgeId, isPersonalizationGatedBadge
 
-// Module 11602 (BadgeUtils)
+// Module 11611 (BadgeUtils)
 import intl2 from "intl" /* 1113 */;
-import Constants from "Constants" /* 8825 */;
-import BadgeId from "BadgeId" /* 8826 */;
-import BadgeIdResolution from "BadgeIdResolution" /* 8835 */;
+import Constants from "Constants" /* 8831 */;
+import BadgeId from "BadgeId" /* 8832 */;
+import BadgeIdResolution from "BadgeIdResolution" /* 8841 */;
 import size from "module_2" /* 2 */;
 
 let map;
@@ -36,8 +36,8 @@ export function isPersonalizationGatedBadge(badge_id) {
   return set.has(badge_id);
 }
 export const BETA_BADGE_IDS = set1;
-export function isBetaBadgeId(badge_id) {
-  return set1.has(badge_id);
+export function isBetaBadgeId(arg0) {
+  return set1.has(arg0);
 }
 export function getDisplayTier(badge) {
   const tiers = badge.tiers;

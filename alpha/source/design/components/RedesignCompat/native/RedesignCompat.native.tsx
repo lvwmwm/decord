@@ -1,10 +1,10 @@
-// Module ID: 7125
-// Function ID: 7126
+// Module ID: 7128
+// Function ID: 7129
 // Name: RedesignCompat
 // Dependencies: [19, 21, 2]
 // Exports: RedesignCompat
 
-// Module 7125 (RedesignCompat)
+// Module 7128 (RedesignCompat)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

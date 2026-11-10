@@ -1,23 +1,23 @@
-// Module ID: 20234
-// Function ID: 20235
+// Module ID: 20262
+// Function ID: 20263
 // Name: GuildSettingsModalCommunityIntro
-// Dependencies: [19, 17, 5011, 5072, 9155, 1072, 21, 5140, 575, 10382, 1113, 5751, 10195, 5859, 1499, 504, 9154, 20235, 5842, 2185, 5758, 20239, 5836, 5734, 2]
+// Dependencies: [19, 17, 5013, 5074, 9161, 1072, 21, 5142, 575, 10388, 1113, 5753, 10201, 5861, 1499, 504, 9160, 20263, 5844, 2185, 5760, 20267, 5838, 5736, 2]
 // Exports: default
 
-// Module 20234 (GuildSettingsModalCommunityIntro)
+// Module 20262 (GuildSettingsModalCommunityIntro)
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5751 */;
-import ToastUtils from "ToastUtils" /* 5836 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9154 */;
-import EnableCommunityModalActionCreatorsDefault from "EnableCommunityModalActionCreators" /* 20239 */;
+import Text_Text from "Text/Text" /* 5753 */;
+import ToastUtils from "ToastUtils" /* 5838 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9160 */;
+import EnableCommunityModalActionCreatorsDefault from "EnableCommunityModalActionCreators" /* 20267 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildStore from "GuildStore" /* 5011 */;
-import PermissionStore from "PermissionStore" /* 5072 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 9155 */;
+import GuildStore from "GuildStore" /* 5013 */;
+import PermissionStore from "PermissionStore" /* 5074 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 9161 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5142 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -48,8 +48,8 @@ function FeatureCard(arg0) {
   items[0] = map1(React3, obj2);
   const obj3 = { style: tmp.featureDescription, children: items1 };
   items1 = [map1(Text_Text.Heading, { variant: "body-md/semibold", color: "mobile-text-heading-primary", children: header }), map1(Text_Text.Text, { variant: "body-sm/medium", color: "text-default", children: body })];
-  items[1] = authStore3(React3, obj3);
-  return authStore3(React3, obj);
+  items[1] = gesture(React3, obj3);
+  return gesture(React3, obj);
 }
 ({ View: closure_4, ScrollView: hasOwnProperty } = react_native);
 ({ HelpdeskArticles: c9, GuildFeatures: c10, GuildSettingsSections: unpackModuleId, Permissions: closure_12 } = Constants);

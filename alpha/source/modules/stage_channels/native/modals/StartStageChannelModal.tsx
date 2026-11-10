@@ -1,10 +1,10 @@
-// Module ID: 9185
-// Function ID: 9186
+// Module ID: 9191
+// Function ID: 9192
 // Name: StartStageChannelModal
-// Dependencies: [5, 32, 19, 17, 4994, 6764, 1072, 4995, 21, 5140, 575, 6799, 7043, 1113, 1187, 7320, 9186, 7020, 504, 7441, 8246, 5751, 9189, 9190, 9191, 5721, 1252, 2017, 8014, 7445, 6579, 9192, 9193, 8023, 5758, 7355, 7016, 2]
+// Dependencies: [5, 32, 19, 17, 4996, 6766, 1072, 4997, 21, 5142, 575, 6801, 7046, 1113, 1187, 7323, 9192, 7023, 504, 7444, 8250, 5753, 9195, 9196, 9197, 5723, 1252, 2017, 8018, 7448, 6581, 9198, 9199, 8027, 5760, 7358, 7019, 2]
 // Exports: default
 
-// Module 9185 (StartStageChannelModal)
+// Module 9191 (StartStageChannelModal)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -12,22 +12,22 @@ import intl9 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 2017 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4995 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6799 */;
-import GuildIcon from "GuildIcon" /* 7020 */;
-import Pressables from "Pressables" /* 7043 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7320 */;
-import HotspotStore2 from "HotspotStore" /* 7441 */;
-import _mod8246 from "module_8246" /* 8246 */;
-import StageSparkleDefault from "StageSparkle" /* 9186 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4997 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6801 */;
+import GuildIcon from "GuildIcon" /* 7023 */;
+import Pressables from "Pressables" /* 7046 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7323 */;
+import HotspotStore2 from "HotspotStore" /* 7444 */;
+import _mod8250 from "module_8250" /* 8250 */;
+import StageSparkleDefault from "StageSparkle" /* 9192 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import StageInstanceStore from "StageInstanceStore" /* 4994 */;
-import StageChannelsConstants from "StageChannelsConstants" /* 6764 */;
+import StageInstanceStore from "StageInstanceStore" /* 4996 */;
+import StageChannelsConstants from "StageChannelsConstants" /* 6766 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5142 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -61,15 +61,15 @@ function NavigationBar(guild) {
   let tmp2 = null;
   const tmp = closure_16();
   if (null == guild) {
-    const obj = { style: items, children: authStore3(PressableOpacity, obj2) };
+    const obj = { style: items, children: gesture(PressableOpacity, obj2) };
     items = [, ];
     ({ contentContainer: arr[0], contentTopSpacing: arr[1] } = tmp);
-    obj2 = { accessibilityRole: "button", accessibilityLabel: intl.string(intl9.t.cpT0Cq), onPress: closeModal, children: authStore3(Icon, obj3) };
+    obj2 = { accessibilityRole: "button", accessibilityLabel: intl.string(intl9.t.cpT0Cq), onPress: closeModal, children: gesture(Icon, obj3) };
     PressableOpacity = Pressables.PressableOpacity;
     intl = intl9.intl;
     obj3 = { source: AssetRegistryDefault };
     Icon = native.Icon;
-    tmp2 = authStore3(metroImportDefault, obj);
+    tmp2 = gesture(metroImportDefault, obj);
   }
   return tmp2;
 }
@@ -77,11 +77,11 @@ function HeaderIcon(guild) {
   let tmp7;
   guild = guild.guild;
   if (null == guild) {
-    tmp7 = authStore3(StageSparkleDefault, {});
+    tmp7 = gesture(StageSparkleDefault, {});
   } else {
     const obj = { style: tmp.guildIcon, size: GuildIcon.GuildIconSizes.LARGE, guild };
     const tmp5 = GuildIconDefault;
-    tmp7 = authStore3(tmp5, obj);
+    tmp7 = gesture(tmp5, obj);
   }
   return tmp7;
 }
@@ -106,24 +106,24 @@ class NotificationToggle {
       const HotspotStore = HotspotStore2.HotspotStore;
       return HotspotStore.hasHotspot(HotspotStore2.HotspotLocations.LIVE_STAGE_NOTIFICATION_BADGE);
     });
-    const obj = { DEPRECATED_style: tmp.notificationToggle, label: tmp7(metroImportDefault, obj2), onPress: onToggle, trailing: authStore3(native.Checkbox, { selected: sendStartNotification }) };
+    const obj = { DEPRECATED_style: tmp.notificationToggle, label: tmp7(metroImportDefault, obj2), onPress: onToggle, trailing: gesture(native.Checkbox, { selected: sendStartNotification }) };
     obj2 = { style: tmp.label, children: items1 };
-    const FormRow = _mod8246.FormRow;
+    const FormRow = _mod8250.FormRow;
     const obj3 = { text: intl.string(intl9.t.BYJgew) };
-    const FormLabel = _mod8246.FormLabel;
+    const FormLabel = _mod8250.FormLabel;
     intl = intl9.intl;
-    items1 = [authStore3(FormLabel, obj3), ];
+    items1 = [gesture(FormLabel, obj3), ];
     let tmp6Result = null;
-    tmp7 = closure_15;
+    tmp7 = clientStatuses;
     if (stateFromStores) {
-      const obj4 = { style: tmp.pill, children: authStore3(Text, obj5) };
+      const obj4 = { style: tmp.pill, children: gesture(Text, obj5) };
       obj5 = { style: tmp.pillLabel, variant: "footnote/semibold", color: "text-overlay-light", children: intl2.string(intl9.t.y2b7CA) };
-      Text = tmp2(5751).Text;
+      Text = tmp2(5753).Text;
       intl2 = tmp2(1113).intl;
       tmp6Result = tmp6(tmp8, obj4);
     }
     items1[1] = tmp6Result;
-    return authStore3(FormRow, obj);
+    return gesture(FormRow, obj);
   }
 }
 let _slicedToArray = _slicedToArray_mod;
@@ -141,7 +141,7 @@ obj4 = { borderRadius: nativeDefault.radii.md };
 obj5 = { backgroundColor: nativeDefault.colors.BACKGROUND_BRAND, paddingHorizontal: 4, paddingVertical: 2, marginStart: 8, borderRadius: nativeDefault.radii.xs };
 obj6 = { marginTop: 16, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.radii.sm };
 obj7 = { marginBottom: nativeDefault.space.PX_16 };
-const authStore4 = createStyles(obj);
+const authStore3 = createStyles(obj);
 let result = size.fileFinishedImporting("modules/stage_channels/native/modals/StartStageChannelModal.tsx");
 
 export default function StartStageChannelModal(arg0) {

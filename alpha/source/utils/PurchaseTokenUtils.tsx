@@ -1,10 +1,10 @@
-// Module ID: 6608
-// Function ID: 6609
+// Module ID: 6610
+// Function ID: 6611
 // Name: PurchaseTokenUtils
 // Dependencies: [5, 1089, 510, 1266, 2]
 // Exports: getPurchaseTokenHash
 
-// Module 6608 (PurchaseTokenUtils)
+// Module 6610 (PurchaseTokenUtils)
 import Storage3 from "Storage" /* 510 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import v1 from "v1" /* 1266 */;

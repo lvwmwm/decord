@@ -1,9 +1,9 @@
-// Module ID: 17240
-// Function ID: 17241
+// Module ID: 17267
+// Function ID: 17268
 // Name: BountiesModal
-// Dependencies: [19, 21, 17241, 17242, 17295, 14941, 11627, 2]
+// Dependencies: [19, 21, 17268, 17269, 17322, 14967, 11636, 2]
 
-// Module 17240 (BountiesModal)
+// Module 17267 (BountiesModal)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

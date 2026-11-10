@@ -1,27 +1,27 @@
-// Module ID: 18999
-// Function ID: 19000
+// Module ID: 19028
+// Function ID: 19029
 // Name: GuildOnboardingNewMemberActions
-// Dependencies: [19, 17, 6851, 4989, 5052, 5011, 5072, 7462, 8410, 1072, 1388, 5058, 21, 5140, 575, 504, 5776, 1411, 14067, 5842, 5086, 5751, 1187, 13428, 7043, 1113, 14071, 19000, 1403, 19001, 2]
+// Dependencies: [19, 17, 6854, 4991, 5054, 5013, 5074, 7465, 8414, 1072, 1388, 5060, 21, 5142, 575, 504, 5778, 1411, 14093, 5844, 5088, 5753, 1187, 13442, 7046, 1113, 14097, 19029, 1403, 19030, 2]
 // Exports: default
 
-// Module 18999 (GuildOnboardingNewMemberActions)
+// Module 19028 (GuildOnboardingNewMemberActions)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import EmojiConstants from "EmojiConstants" /* 1388 */;
 import FlagUtils from "FlagUtils" /* 1403 */;
-import GuildMemberConstants from "GuildMemberConstants" /* 5058 */;
-import GuildOnboardingHomeActionCreators from "GuildOnboardingHomeActionCreators" /* 14067 */;
+import GuildMemberConstants from "GuildMemberConstants" /* 5060 */;
+import GuildOnboardingHomeActionCreators from "GuildOnboardingHomeActionCreators" /* 14093 */;
 import react from "react" /* 19 */;
-import EmojiStore from "EmojiStore" /* 6851 */;
-import ChannelStore from "ChannelStore" /* 4989 */;
-import GuildMemberStore from "GuildMemberStore" /* 5052 */;
-import GuildStore from "GuildStore" /* 5011 */;
-import PermissionStore from "PermissionStore" /* 5072 */;
-import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 7462 */;
-import GuildOnboardingMemberActionStore from "GuildOnboardingMemberActionStore" /* 8410 */;
+import EmojiStore from "EmojiStore" /* 6854 */;
+import ChannelStore from "ChannelStore" /* 4991 */;
+import GuildMemberStore from "GuildMemberStore" /* 5054 */;
+import GuildStore from "GuildStore" /* 5013 */;
+import PermissionStore from "PermissionStore" /* 5074 */;
+import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 7465 */;
+import GuildOnboardingMemberActionStore from "GuildOnboardingMemberActionStore" /* 8414 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5142 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_15;
@@ -224,7 +224,7 @@ export default function GuildOnboardingNewMemberActions(guildId) {
                   let flag;
                   const obj = { channelId: channelId.channelId, title: channelId.title, emoji: channelId.emoji, icon: channelId.icon, completed: flag };
                   flag = undefined;
-                  const tmp = closure_15;
+                  const tmp = clientStatuses;
                   const tmp2 = MemberActionRow;
                   if (stateFromStores1 != null) {
                     flag = tmp3[channelId.channelId];

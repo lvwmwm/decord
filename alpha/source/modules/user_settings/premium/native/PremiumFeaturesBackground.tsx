@@ -1,18 +1,18 @@
-// Module ID: 9611
-// Function ID: 9612
+// Module ID: 9617
+// Function ID: 9618
 // Name: PremiumFeaturesBackground
-// Dependencies: [19, 7693, 1387, 21, 5140, 575, 671, 5715, 1092, 2]
+// Dependencies: [19, 7696, 1387, 21, 5142, 575, 671, 5717, 1092, 2]
 // Exports: default
 
-// Module 9611 (PremiumFeaturesBackground)
+// Module 9617 (PremiumFeaturesBackground)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
-import LinearGradientDefault from "LinearGradient" /* 5715 */;
-import ColorConstants from "ColorConstants" /* 7693 */;
+import LinearGradientDefault from "LinearGradient" /* 5717 */;
+import ColorConstants from "ColorConstants" /* 7696 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5140 */;
+import createStyles from "createStyles" /* 5142 */;
 import size from "module_2" /* 2 */;
 
 const Gradients = ColorConstants.Gradients;

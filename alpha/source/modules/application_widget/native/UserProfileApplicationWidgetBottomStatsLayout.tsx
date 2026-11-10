@@ -1,17 +1,17 @@
-// Module ID: 12539
-// Function ID: 12540
+// Module ID: 12552
+// Function ID: 12553
 // Name: UserProfileApplicationWidgetBottomStatsLayout
-// Dependencies: [19, 17, 21, 5140, 575, 12448, 12534, 5751, 12535, 2]
+// Dependencies: [19, 17, 21, 5142, 575, 12547, 12461, 5753, 12548, 2]
 // Exports: default
 
-// Module 12539 (UserProfileApplicationWidgetBottomStatsLayout)
+// Module 12552 (UserProfileApplicationWidgetBottomStatsLayout)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import _mod12448 from "module_12448" /* 12448 */;
-import UserProfileApplicationWidgetFieldUtils from "UserProfileApplicationWidgetFieldUtils" /* 12534 */;
+import _mod12461 from "module_12461" /* 12461 */;
+import UserProfileApplicationWidgetFieldUtils from "UserProfileApplicationWidgetFieldUtils" /* 12547 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5142 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -33,13 +33,15 @@ export default function UserProfileApplicationWidgetBottomStatsLayout(arg0) {
   ({ bottomConfig: require, resolveFieldValue: dependencyMap, numberFormat: View } = arg0);
   let tmp = closure_5();
   const stat = tmp;
+  let obj = UserProfileApplicationWidgetFieldUtils;
+  const style = obj.useEmojiOverflowStyle("body-xs/normal");
   let items = [1, 2, 3, 4, 5, 6];
   const mapped = items.map((item) => {
-    const resolveStatComponentValues = _mod12448.resolveStatComponentValues;
-    _mod12448;
+    const resolveStatComponentValues = _mod12461.resolveStatComponentValues;
+    _mod12461;
     return resolveStatComponentValues(require.components["stat_" + item], dependencyMap, View, UserProfileApplicationWidgetFieldUtils.formatDurationNarrow, true);
   });
-  let obj = {
+  let obj2 = {
     style: tmp.statsGrid,
     children: mapped.map((value, index) => {
       let items;
@@ -52,12 +54,12 @@ export default function UserProfileApplicationWidgetBottomStatsLayout(arg0) {
         const tmp2 = React3;
         const tmp3 = View;
         if ("value" === value.label.status) {
-          const obj3 = { variant: "body-xs/normal", color: "text-muted", children: value.label.text };
-          tmp5Result = tmp5(tmp6(5751).Text, obj3);
+          const obj3 = { variant: "body-xs/normal", color: "text-muted", style, children: value.label.text };
+          tmp5Result = tmp5(tmp6(5753).Text, obj3);
         } else {
           tmp5Result = null;
           if ("skeleton" === value.label.status) {
-            tmp5Result = tmp5(tmp6(12535).TextSkeleton, { variant: "body-xs/normal", widthChars: 6 });
+            tmp5Result = tmp5(tmp6(12548).TextSkeleton, { variant: "body-xs/normal", widthChars: 6 });
           }
         }
         items[1] = tmp5Result;
@@ -66,5 +68,5 @@ export default function UserProfileApplicationWidgetBottomStatsLayout(arg0) {
       return tmp;
     })
   };
-  return stat(View, obj);
+  return stat(View, obj2);
 };

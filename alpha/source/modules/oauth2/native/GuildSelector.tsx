@@ -1,19 +1,19 @@
-// Module ID: 14853
-// Function ID: 14854
+// Module ID: 14879
+// Function ID: 14880
 // Name: GuildSelector
-// Dependencies: [19, 17, 1072, 21, 5140, 575, 5374, 9082, 2118, 1113, 1084, 5751, 1187, 8246, 2]
+// Dependencies: [19, 17, 1072, 21, 5142, 575, 5376, 9088, 2118, 1113, 1084, 5753, 1187, 8250, 2]
 // Exports: default
 
-// Module 14853 (GuildSelector)
+// Module 14879 (GuildSelector)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl4 from "intl" /* 1113 */;
 import asyncRequire from "asyncRequire" /* 2118 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5376 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5142 */;
 import size from "module_2" /* 2 */;
 
 let metroImportAll;
@@ -62,7 +62,7 @@ export default function GuildSelector(onGuildChange) {
       selectedItem: tmp4,
       hasIcons: false
     };
-    const tmp2 = asyncRequire(9082, dependencyMap.paths);
+    const tmp2 = asyncRequire(9088, dependencyMap.paths);
     intl = intl4.intl;
     found = guilds.filter((permissions) => {
       const obj = guilds(closure_1_3[10]);
@@ -75,7 +75,7 @@ export default function GuildSelector(onGuildChange) {
   let obj = { style: tmp.selectorGroup, children: items1 };
   let tmp4 = closure_8;
   const obj2 = { variant: "body-sm/medium", color: "text-default", children: intl.string(selectedGuildId(1113).t["1DXFFd"]) };
-  const Text = selectedGuildId(5751).Text;
+  const Text = selectedGuildId(5753).Text;
   intl = selectedGuildId(1113).intl;
   items1 = [closure_7(Text, obj2), , , ];
   let tmp6Result = null;
@@ -89,7 +89,7 @@ export default function GuildSelector(onGuildChange) {
   }
   items1[1] = tmp6Result;
   let name;
-  const FormRow = tmp7(8246).FormRow;
+  const FormRow = tmp7(8250).FormRow;
   if (found != null) {
     name = found.name;
   }
@@ -97,7 +97,7 @@ export default function GuildSelector(onGuildChange) {
     const intl2 = tmp7(1113).intl;
     name = intl2.string(tmp7(1113).t.oM4E1A);
   }
-  const obj4 = { label: name, disabled, trailing: closure_7(selectedGuildId(8246).FormRow.Arrow, {}), DEPRECATED_style: tmp.select, onPress: callback };
+  const obj4 = { label: name, disabled, trailing: closure_7(selectedGuildId(8250).FormRow.Arrow, {}), DEPRECATED_style: tmp.select, onPress: callback };
   items1[2] = closure_7(FormRow, obj4);
   const obj5 = { style: tmp.label, children: intl3.format(selectedGuildId(1113).t.t9Jm9o, {}) };
   const LegacyText = tmp7(1187).LegacyText;

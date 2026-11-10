@@ -1,26 +1,26 @@
-// Module ID: 10920
-// Function ID: 10921
+// Module ID: 10929
+// Function ID: 10930
 // Name: ChannelRow
-// Dependencies: [19, 17, 4989, 5011, 6897, 5082, 1385, 10846, 6831, 21, 5140, 575, 504, 5776, 10921, 13655, 8731, 8723, 5751, 4962, 2166, 7037, 7038, 2]
+// Dependencies: [19, 17, 4991, 5013, 6900, 5084, 1385, 10855, 6834, 21, 5142, 575, 504, 5778, 10930, 13668, 8737, 8729, 5753, 4964, 2166, 7040, 7041, 2]
 
-// Module 10920 (ChannelRow)
+// Module 10929 (ChannelRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import DateUtils from "DateUtils" /* 4962 */;
-import Text_Text from "Text/Text" /* 5751 */;
-import useChannelName from "useChannelName" /* 5776 */;
-import ReadStateConstants from "ReadStateConstants" /* 6831 */;
-import UserRowConstants from "UserRowConstants" /* 10846 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10921 */;
-import GuildIconWithChannelType2 from "GuildIconWithChannelType" /* 13655 */;
+import DateUtils from "DateUtils" /* 4964 */;
+import Text_Text from "Text/Text" /* 5753 */;
+import useChannelName from "useChannelName" /* 5778 */;
+import ReadStateConstants from "ReadStateConstants" /* 6834 */;
+import UserRowConstants from "UserRowConstants" /* 10855 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10930 */;
+import GuildIconWithChannelType2 from "GuildIconWithChannelType" /* 13668 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4989 */;
-import GuildStore from "GuildStore" /* 5011 */;
-import ReadStateStore from "ReadStateStore" /* 6897 */;
-import RelationshipStore from "RelationshipStore" /* 5082 */;
+import ChannelStore from "ChannelStore" /* 4991 */;
+import GuildStore from "GuildStore" /* 5013 */;
+import ReadStateStore from "ReadStateStore" /* 6900 */;
+import RelationshipStore from "RelationshipStore" /* 5084 */;
 import UserStore from "UserStore" /* 1385 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5140 */;
+import createStyles from "createStyles" /* 5142 */;
 import size from "module_2" /* 2 */;
 
 let closure_12;
@@ -144,9 +144,9 @@ const memoResult = react.memo(function ChannelRow(channel) {
         }
       }
       if (channel.isForumPost()) {
-        TextIcon = tmp3(8731).ForumIcon;
+        TextIcon = tmp3(8737).ForumIcon;
       } else {
-        TextIcon = tmp3(8723).TextIcon;
+        TextIcon = tmp3(8729).TextIcon;
       }
       const obj = { style: closure_7.subLabel, children: items };
       const obj2 = { color: nativeDefault.colors.TEXT_SUBTLE, style: closure_7.subLabelIcon };
@@ -168,7 +168,7 @@ const memoResult = react.memo(function ChannelRow(channel) {
         tmp5Result = tmp5(map1, obj4);
       }
       items[2] = tmp5Result;
-      return authStore3(tmp6, obj);
+      return gesture(tmp6, obj);
     }
   }, items7);
   const memo3 = obj4.useMemo(() => {

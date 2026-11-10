@@ -1,11 +1,11 @@
-// Module ID: 7914
-// Function ID: 7915
+// Module ID: 7918
+// Function ID: 7919
 // Name: appMessageEmbedTrackingConfig
-// Dependencies: [502, 7908, 2]
+// Dependencies: [502, 7912, 2]
 // Exports: trackingConfigWithDefaults
 
-// Module 7914 (appMessageEmbedTrackingConfig)
-import MessageEmbedConstants from "MessageEmbedConstants" /* 7908 */;
+// Module 7918 (appMessageEmbedTrackingConfig)
+import MessageEmbedConstants from "MessageEmbedConstants" /* 7912 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import size from "module_2" /* 2 */;
 

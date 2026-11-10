@@ -1,11 +1,11 @@
-// Module ID: 5173
-// Function ID: 5174
+// Module ID: 5175
+// Function ID: 5176
 // Name: GuildJoinRequestUtils
-// Dependencies: [5174, 2]
+// Dependencies: [5176, 2]
 // Exports: isActionedAndNotAcked, isActionedApplicationStatus, isApprovedAndAcked, isSubmittedApplicationStatus
 
-// Module 5173 (GuildJoinRequestUtils)
-import MemberVerificationTypes from "MemberVerificationTypes" /* 5174 */;
+// Module 5175 (GuildJoinRequestUtils)
+import MemberVerificationTypes from "MemberVerificationTypes" /* 5176 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_member_verification/GuildJoinRequestUtils.tsx");

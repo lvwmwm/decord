@@ -1,12 +1,12 @@
-// Module ID: 19265
-// Function ID: 19266
+// Module ID: 19294
+// Function ID: 19295
 // Name: ThreadAutoArchiveBottomSheet
-// Dependencies: [19, 4996, 21, 9867, 7124, 1113, 7127, 2]
+// Dependencies: [19, 4998, 21, 9873, 7127, 1113, 7130, 2]
 
-// Module 19265 (ThreadAutoArchiveBottomSheet)
+// Module 19294 (ThreadAutoArchiveBottomSheet)
 import Fragment from "Fragment" /* 21 */;
-import ChannelConstants from "ChannelConstants" /* 4996 */;
-import TableRadioRow from "TableRadioRow" /* 7127 */;
+import ChannelConstants from "ChannelConstants" /* 4998 */;
+import TableRadioRow from "TableRadioRow" /* 7130 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -28,7 +28,7 @@ const memoResult = react.memo(function AutoArchiveDurationOptions(channel) {
   const autoArchiveOptions = obj.getAutoArchiveOptions();
   _require = null != channel && channel.isForumPost() && channel.hasFlag(ChannelFlags.PINNED);
   const hasFlagResult = null != channel && channel.isForumPost() && channel.hasFlag(ChannelFlags.PINNED);
-  const TableRadioGroup = tmp(7124).TableRadioGroup;
+  const TableRadioGroup = tmp(7127).TableRadioGroup;
   const intl = tmp(1113).intl;
   return <TableRadioGroup value={selected} title={title} description={description} accessibilityLabel={intl.string(require("intl").t.H4mGfI)} onChange={onSelectDuration} hasIcons={false}>{autoArchiveOptions.map((value) => jsx(TableRadioRow.TableRadioRow, { value: value.value, disabled, label: value.label }, value.value))}</TableRadioGroup>;
 });

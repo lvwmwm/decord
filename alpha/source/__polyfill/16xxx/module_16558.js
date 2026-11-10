@@ -1,36 +1,108 @@
 // Module ID: 16558
 // Function ID: 16559
-// Dependencies: []
-// Exports: default
+// Dependencies: [41, 42]
+// Exports: memoize
 
 // Module 16558
-let closure_0 = { url: "http://localhost:8081" };
+import _createClassDefault from "_createClass" /* 42 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
 
-export default () => {
-  let obj = arg0;
-  if (arg0 === undefined) {
-    obj = {};
+function monadic(call, get, fn, num) {
+  let tmp2 = num;
+  const tmp = null == num || typeof num === "number" || typeof num === "boolean";
+  if (!tmp) {
+    tmp2 = fn(num);
   }
-  return () => {
-    closure_0 = Object.assign({}, closure_0, obj);
-    obj = {
-      onCommand(type) {
-        if ("editor.open" === type.type) {
-          const payload = type.payload;
-          let num = payload.lineNumber;
-          const _HermesInternal = HermesInternal;
-          obj = { file: payload.file, lineNumber: num };
-          const combined = "" + url.url + "/open-stack-frame";
-          if (!num) {
-            num = 1;
-          }
-          const _fetch = fetch;
-          const request = { method: "POST", body: JSON.stringify(obj) };
-          const _JSON = JSON;
-          const response = fetch(combined, request);
-        }
-      }
-    };
-    return obj;
-  };
+  let value = get.get(tmp2);
+  if (undefined === value) {
+    const callResult = call.call(this, num);
+    const result = get.set(tmp2, callResult);
+    value = callResult;
+  }
+  return value;
+}
+function variadic(apply, get, fn) {
+  const callResult = slice.call(arguments, 3);
+  const tmp2 = fn(callResult);
+  let value = get.get(tmp2);
+  if (undefined === value) {
+    const self = this;
+    const applyResult = apply.apply(this, callResult);
+    const result = get.set(tmp2, applyResult);
+    value = applyResult;
+  }
+  return value;
+}
+function strategyDefault(c165, cache) {
+  cache = cache.cache;
+  const obj = 1 === c165.length ? monadic : variadic;
+  return obj.bind(this, c165, cache.create(), cache.serializer);
+}
+function serializerDefault() {
+  return JSON.stringify(arguments);
+}
+class ObjectWithoutPrototypeCache {
+  constructor() {
+    _classCallCheck(this, ObjectWithoutPrototypeCache);
+    this.cache = Object.create(null);
+  }
+}
+const entry = {
+  key: "get",
+  value: function get(arg0) {
+    return this.cache[arg0];
+  }
 };
+const items = [
+  entry,
+  {
+    key: "set",
+    value: function set(arg0, arg1) {
+      this.cache[arg0] = arg1;
+    }
+  }
+];
+let closure_5 = _createClassDefault(ObjectWithoutPrototypeCache, items);
+let closure_6 = {
+  create() {
+    const tmp = new closure_5();
+    return tmp;
+  }
+};
+let obj = {
+  variadic: function strategyVariadic(c165, cache) {
+    cache = cache.cache;
+    return variadic.bind(this, c165, cache.create(), cache.serializer);
+  },
+  monadic: function strategyMonadic(c165, cache) {
+    cache = cache.cache;
+    return monadic.bind(this, c165, cache.create(), cache.serializer);
+  }
+};
+
+export function memoize(arg0, cache) {
+  const tmp = cache;
+  if (tmp) {
+    if (cache.cache) {
+      cache = cache.cache;
+    }
+    if (cache) {
+      let serializer;
+      if (cache.serializer) {
+        serializer = cache.serializer;
+      }
+      if (cache) {
+        let strategy;
+        if (cache.strategy) {
+          strategy = cache.strategy;
+        }
+        const obj = { cache, serializer };
+        return strategy(arg0, obj);
+      }
+      strategy = strategyDefault;
+    }
+    serializer = serializerDefault;
+  }
+  cache = closure_6;
+}
+export const strategies = obj;

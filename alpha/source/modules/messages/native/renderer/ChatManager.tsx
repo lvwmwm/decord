@@ -1,12 +1,12 @@
-// Module ID: 10014
-// Function ID: 10015
+// Module ID: 10020
+// Function ID: 10021
 // Name: ChatManager
-// Dependencies: [8449, 10015, 1342, 2]
+// Dependencies: [8453, 10021, 1342, 2]
 
-// Module 10014 (ChatManager)
+// Module 10020 (ChatManager)
 import _modDef1342 from "module_1342" /* 1342 */;
-import getEmbeddedActivityKeyDefault from "getEmbeddedActivityKey" /* 10015 */;
-import RowGeneratorConstants from "RowGeneratorConstants" /* 8449 */;
+import getEmbeddedActivityKeyDefault from "getEmbeddedActivityKey" /* 10021 */;
+import RowGeneratorConstants from "RowGeneratorConstants" /* 8453 */;
 import size from "module_2" /* 2 */;
 
 let c2;

@@ -1,46 +1,46 @@
-// Module ID: 18539
-// Function ID: 18540
+// Module ID: 18568
+// Function ID: 18569
 // Name: GuildSettingsModalChannels
-// Dependencies: [19, 17, 4989, 5011, 5072, 5082, 1385, 18537, 1072, 21, 5140, 6778, 575, 5014, 5199, 1113, 5147, 1090, 8246, 1187, 18540, 504, 8674, 5776, 7043, 1627, 5758, 7423, 9114, 9659, 7630, 5077, 14647, 18541, 5734, 8268, 18542, 18538, 13428, 17611, 10950, 11805, 6957, 6090, 1499, 38, 5766, 2]
+// Dependencies: [19, 17, 4991, 5013, 5074, 5084, 1385, 18566, 1072, 21, 5142, 6780, 575, 5016, 5201, 1113, 5149, 1090, 8250, 1187, 18569, 504, 8680, 5778, 7046, 1627, 5760, 7426, 9120, 9665, 7633, 5079, 14673, 18570, 5736, 8272, 18571, 18567, 13442, 17638, 10959, 11814, 6960, 6092, 1499, 38, 5768, 2]
 // Exports: default
 
-// Module 18539 (GuildSettingsModalChannels)
+// Module 18568 (GuildSettingsModalChannels)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1090 */;
 import intl5 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
 import useNavigation from "useNavigation" /* 1499 */;
-import FavoritesUtils from "FavoritesUtils" /* 5014 */;
-import PermissionUtilsAll from "PermissionUtils" /* 5077 */;
-import shared from "shared" /* 5147 */;
-import native2 from "native" /* 5199 */;
-import useFontScale from "useFontScale" /* 5766 */;
-import useChannelName from "useChannelName" /* 5776 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 6090 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6957 */;
-import Pressables from "Pressables" /* 7043 */;
-import showSimpleActionSheet2 from "showSimpleActionSheet" /* 7423 */;
-import HeaderActionButton2 from "HeaderActionButton" /* 7630 */;
-import ChannelSettingsActionCreators from "ChannelSettingsActionCreators" /* 8268 */;
-import FavoritesActionCreators from "FavoritesActionCreators" /* 10950 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13428 */;
-import ChannelSortingUtils from "ChannelSortingUtils" /* 14647 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 17611 */;
-import GuildSettingsModalChannelsActionCreatorsDefault from "GuildSettingsModalChannelsActionCreators" /* 18538 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 18542 */;
+import FavoritesUtils from "FavoritesUtils" /* 5016 */;
+import PermissionUtilsAll from "PermissionUtils" /* 5079 */;
+import shared from "shared" /* 5149 */;
+import native2 from "native" /* 5201 */;
+import useFontScale from "useFontScale" /* 5768 */;
+import useChannelName from "useChannelName" /* 5778 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 6092 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6960 */;
+import Pressables from "Pressables" /* 7046 */;
+import showSimpleActionSheet2 from "showSimpleActionSheet" /* 7426 */;
+import HeaderActionButton2 from "HeaderActionButton" /* 7633 */;
+import ChannelSettingsActionCreators from "ChannelSettingsActionCreators" /* 8272 */;
+import FavoritesActionCreators from "FavoritesActionCreators" /* 10959 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13442 */;
+import ChannelSortingUtils from "ChannelSortingUtils" /* 14673 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 17638 */;
+import GuildSettingsModalChannelsActionCreatorsDefault from "GuildSettingsModalChannelsActionCreators" /* 18567 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 18571 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelStore from "ChannelStore" /* 4989 */;
-import GuildStore from "GuildStore" /* 5011 */;
-import PermissionStore from "PermissionStore" /* 5072 */;
-import RelationshipStore from "RelationshipStore" /* 5082 */;
+import ChannelStore from "ChannelStore" /* 4991 */;
+import GuildStore from "GuildStore" /* 5013 */;
+import PermissionStore from "PermissionStore" /* 5074 */;
+import RelationshipStore from "RelationshipStore" /* 5084 */;
 import UserStore from "UserStore" /* 1385 */;
-import GuildSettingsModalChannelsStore from "GuildSettingsModalChannelsStore" /* 18537 */;
+import GuildSettingsModalChannelsStore from "GuildSettingsModalChannelsStore" /* 18566 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5140 */;
-import TextStyles_mod from "TextStyles" /* 6778 */;
+import createStyles from "createStyles" /* 5142 */;
+import TextStyles_mod from "TextStyles" /* 6780 */;
 import size from "module_2" /* 2 */;
 
 let _require, currentUser, dependencyMap, navigation;
@@ -82,9 +82,9 @@ function ChannelItem(isFavoritesGuild) {
   ({ sortingEnabled, onPress: importAll, sortHandlers } = isFavoritesGuild);
   let tmp = channel;
   ({ style, actionIconStyle } = isFavoritesGuild);
-  let obj = channel(5140);
+  let obj = channel(5142);
   const legacyClassComponentStyles = obj.useLegacyClassComponentStyles(closure_18);
-  let obj2 = channel(5147);
+  let obj2 = channel(5149);
   const theme = obj2.useThemeContext().theme;
   const items = [PermissionStore];
   const items1 = [channel, isFavoritesGuild];
@@ -104,11 +104,11 @@ function ChannelItem(isFavoritesGuild) {
     }
     return tmp;
   }, items1);
-  const tmpResult = tmp(8674);
+  const tmpResult = tmp(8680);
   const channelIcon = tmpResult.getChannelIcon(channel);
-  const tmpResult5 = tmp(8674);
+  const tmpResult5 = tmp(8680);
   const channelIconComponent = tmpResult5.getChannelIconComponent(channel);
-  const tmpResult6 = tmp(5147);
+  const tmpResult6 = tmp(5149);
   const isThemeDarkResult = tmpResult6.isThemeDark(theme);
   const hex2rgb = tmp(1090).hex2rgb;
   tmp(1090);
@@ -132,18 +132,18 @@ function ChannelItem(isFavoritesGuild) {
     }
   }
   obj6 = { style: obj5, children: closure_16(FormRow, obj9) };
-  FormRow = tmp(8246).FormRow;
+  FormRow = tmp(8250).FormRow;
   if (null != channelIconComponent) {
     const obj7 = { style: channelIconStyle, size: "sm" };
     tmp7Result = tmp7(channelIconComponent, obj7);
   } else {
     const obj8 = { size: tmp(1187).Icon.Sizes.SMALL_20, source: channelIcon, style: channelIconStyle };
-    const Icon = tmp(8246).FormRow.Icon;
+    const Icon = tmp(8250).FormRow.Icon;
     tmp7Result = tmp7(Icon, obj8);
   }
   obj9 = { leading: tmp7Result, style: legacyClassComponentStyles.formRowStyle, label: tmpResult8.computeChannelName(channel, UserStore, RelationshipStore), onPress: fn, trailing: tmp7Result2, numberOfLines: num3 };
   fn = undefined;
-  tmpResult8 = tmp(5776);
+  tmpResult8 = tmp(5778);
   if (!sortingEnabled) {
     fn = () => importAll(channel.id);
   }
@@ -151,8 +151,8 @@ function ChannelItem(isFavoritesGuild) {
   if (stateFromStores) {
     tmp7Result2 = null;
     if (sortingEnabled) {
-      const obj10 = { source: tmp13(18540), style: actionIconStyle };
-      const Icon2 = tmp(8246).FormRow.Icon;
+      const obj10 = { source: tmp13(18569), style: actionIconStyle };
+      const Icon2 = tmp(8250).FormRow.Icon;
       tmp7Result2 = tmp7(Icon2, obj10);
     }
   }
@@ -170,7 +170,7 @@ function CreateButton(guild) {
   guild = guild.guild;
   let bottom;
   const tmp = guild;
-  let obj = guild(5140);
+  let obj = guild(5142);
   const legacyClassComponentStyles = obj.useLegacyClassComponentStyles(closure_18);
   bottom = bottom(1627)().bottom;
   let items = [bottom];
@@ -213,9 +213,9 @@ function CreateButton(guild) {
           items[1] = obj4;
           const result = showSimpleActionSheet(obj);
         },
-      icon: closure_16(tmp(9659).PlusSmallIcon, { color: "white" })
+      icon: closure_16(tmp(9665).PlusSmallIcon, { color: "white" })
     };
-    Button = tmp(5758).Button;
+    Button = tmp(5760).Button;
     intl = tmp(1113).intl;
     tmp5 = closure_16(closure_5, obj2);
   }
@@ -238,7 +238,7 @@ obj5 = {};
 TextStyles = TextStyles_mod;
 const merged2 = Object.assign(TextStyles(Fonts.PRIMARY_SEMIBOLD, nativeDefault.colors.TEXT_SUBTLE, 14));
 obj6 = { backgroundColor: nativeDefault.unsafe_rawColors.GREEN_360, opacity: 0.3 };
-const authStore5 = createLegacyClassComponentStyles(obj);
+const authStore4 = createLegacyClassComponentStyles(obj);
 const PureComponent = react.PureComponent;
 class Category extends PureComponent {
   render() {
@@ -278,7 +278,7 @@ class Category extends PureComponent {
         return tmp;
       },
       underlayColor: hex2rgbResult,
-      children: authStore4(tmp13, obj7)
+      children: authStore3(tmp13, obj7)
     };
     const obj2 = { name: "activate", label: intl.string(intl5.t.bt75uw) };
     intl = intl5.intl;
@@ -300,7 +300,7 @@ class Category extends PureComponent {
     const obj4 = { title: category.name, numberOfLines: 1, textStyle: tmp.categoryText, viewStyle: items1, icon: tmp3Result };
     items1 = [tmp.categoryView, ];
     let sortingCategoryView = null;
-    const FormTitle = tmp5(8246).FormTitle;
+    const FormTitle = tmp5(8250).FormTitle;
     tmp13 = hasOwnProperty;
     if (sortingEnabled) {
       sortingCategoryView = tmp.sortingCategoryView;
@@ -317,13 +317,13 @@ class Category extends PureComponent {
     } else {
       tmp3Result = null;
       if (null != sortHandlers) {
-        const obj6 = { source: tmp11(18540), style: actionIconStyle };
+        const obj6 = { source: tmp11(18569), style: actionIconStyle };
         const Icon = tmp5(1187).Icon;
         tmp3Result = tmp3(Icon, obj6);
       }
     }
-    obj7 = { children: authStore4(FormTitle, obj4) };
-    return authStore4(tmp4, obj);
+    obj7 = { children: authStore3(FormTitle, obj4) };
+    return authStore3(tmp4, obj);
   }
 }
 const prototype = Category.prototype;
@@ -337,12 +337,12 @@ class SectionEditAction extends PureComponent2 {
     let onPress;
     let style;
     ({ style, onPress } = this.props);
-    const obj = { accessibilityRole: "button", onPress, children: authStore4(LegacyText, obj2) };
+    const obj = { accessibilityRole: "button", onPress, children: authStore3(LegacyText, obj2) };
     const PressableOpacity = Pressables.PressableOpacity;
     obj2 = { style, children: intl.string(intl5.t.bt75uw) };
     LegacyText = native.LegacyText;
     intl = intl5.intl;
-    return authStore4(PressableOpacity, obj);
+    return authStore3(PressableOpacity, obj);
   }
 }
 const prototype2 = SectionEditAction.prototype;
@@ -378,7 +378,7 @@ class GuildSettingsModalChannels extends PureComponent3 {
             let tmp12 = null != dropData;
             const tmp4 = require;
             if (tmp12) {
-              const tmp4Result = tmp4(5014);
+              const tmp4Result = tmp4(5016);
               let isFavoritesGuildIdResult = tmp4Result.isFavoritesGuildId(guild.id);
               if (!isFavoritesGuildIdResult) {
                 let canResult;
@@ -397,7 +397,7 @@ class GuildSettingsModalChannels extends PureComponent3 {
               items = [tmp.dropHighlight, ];
               const obj3 = { height };
               items[1] = obj3;
-              tmp20 = authStore4(hasOwnProperty, obj2);
+              tmp20 = authStore3(hasOwnProperty, obj2);
             }
             return tmp20;
           }
@@ -422,7 +422,7 @@ class GuildSettingsModalChannels extends PureComponent3 {
       if (null != localChannel) {
         const obj2 = { category: localChannel, sortingEnabled: hasItem, editStyle: tmp2.edit, onPress: handleChannelPress };
         hasItem = null != sortingType;
-        const tmp8 = authStore4;
+        const tmp8 = authStore3;
         const tmp9 = Category;
         if (hasItem) {
           hasItem = sortingType.has(map1.GUILD_CATEGORY);
@@ -434,7 +434,7 @@ class GuildSettingsModalChannels extends PureComponent3 {
         tmp5Result = tmp8(tmp9, obj2);
       } else {
         let obj = null;
-        const tmp5 = authStore4;
+        const tmp5 = authStore3;
         const tmp6 = hasOwnProperty;
         if (null == sortingType) {
           obj = null;
@@ -456,9 +456,9 @@ class GuildSettingsModalChannels extends PureComponent3 {
       if (null != channel) {
         const obj = { channel, isFavoritesGuild: obj2.isFavoritesGuildId(require.props.guild.id), sortingEnabled: null != sortingType, onPress: require.handleChannelPress, style: tmp2.row };
         obj2 = FavoritesUtils;
-        tmp5 = authStore4(ChannelItem, obj);
+        tmp5 = authStore3(ChannelItem, obj);
       } else {
-        tmp5 = authStore4(hasOwnProperty, {});
+        tmp5 = authStore3(hasOwnProperty, {});
       }
       return tmp5;
     };
@@ -726,7 +726,7 @@ class GuildSettingsModalChannels extends PureComponent3 {
           const obj = { textStyle: closure_0.headerRight, text: intl.string(intl5.t.i4jeWR), onPress: self.props.onDone };
           const HeaderActionButton = HeaderActionButton2.HeaderActionButton;
           intl = intl5.intl;
-          return authStore4(HeaderActionButton, obj);
+          return authStore3(HeaderActionButton, obj);
         };
       } else {
         const obj2 = PermissionUtilsAll;
@@ -736,7 +736,7 @@ class GuildSettingsModalChannels extends PureComponent3 {
             const obj = { textStyle: closure_0.headerRight, text: intl.string(intl5.t["0dOFq+"]), onPress: self.handleSortStart };
             const HeaderActionButton = HeaderActionButton2.HeaderActionButton;
             intl = intl5.intl;
-            return authStore4(HeaderActionButton, obj);
+            return authStore3(HeaderActionButton, obj);
           };
         }
       }

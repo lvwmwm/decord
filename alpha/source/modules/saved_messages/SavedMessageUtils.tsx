@@ -1,18 +1,18 @@
-// Module ID: 11295
-// Function ID: 11296
+// Module ID: 11304
+// Function ID: 11305
 // Name: SavedMessageUtils
-// Dependencies: [5, 19, 4993, 502, 4989, 1072, 1113, 2166, 504, 7549, 7485, 2]
+// Dependencies: [5, 19, 4995, 502, 4991, 1072, 1113, 2166, 504, 7552, 7488, 5316, 2]
 // Exports: savedMessageJumpToMessage, useDueInString, useSavedMessageChannel
 
-// Module 11295 (SavedMessageUtils)
+// Module 11304 (SavedMessageUtils)
 import intl2 from "intl" /* 1113 */;
 import _modDef2166 from "module_2166" /* 2166 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7549 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7552 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ChannelRecord from "ChannelRecord" /* 4993 */;
+import ChannelRecord from "ChannelRecord" /* 4995 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4989 */;
+import ChannelStore from "ChannelStore" /* 4991 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -57,11 +57,11 @@ let obj = function _savedMessageJumpToMessage() {
             let closure_3 = tmp;
             guildId = closure_0.saveData.guildId;
             if (null == guildId) {
-              guildId = channel.getChannel(tmp35.saveData.channelId);
+              guildId = channel.getChannel(tmp40.saveData.channelId);
               if (null == guildId) {
                 c5 = 1;
-                const obj6 = ChannelActionCreatorsDefault;
-                guildId = obj6.fetchChannel(tmp35.saveData.channelId);
+                const obj8 = ChannelActionCreatorsDefault;
+                guildId = obj8.fetchChannel(tmp40.saveData.channelId);
                 c6 = 2;
                 c7 = 1;
                 const obj7 = { value: guildId, done: false };
@@ -78,8 +78,8 @@ let obj = function _savedMessageJumpToMessage() {
           } else if (arg0 === 2) {
             c5 = 0;
             c7 = 3;
-            const obj8 = { value, done: true };
-            return obj8;
+            const obj9 = { value, done: true };
+            return obj9;
           } else {
             guildId = value;
             if (null == guildId.recipients) {
@@ -96,8 +96,8 @@ let obj = function _savedMessageJumpToMessage() {
               guildId = obj2.ensurePrivateChannel(recipients.map((id) => id.id));
               c6 = 3;
               c7 = 1;
-              const obj9 = { value: guildId, done: false };
-              return obj9;
+              const obj10 = { value: guildId, done: false };
+              return obj10;
             }
           }
         } else if (arg0 === 1) {
@@ -119,14 +119,18 @@ let obj = function _savedMessageJumpToMessage() {
         if (!guildId) {
           guildId1 = obj5.getGuildId();
         }
-        guildId = tmp16(CHANNEL(guildId1, closure_0.saveData.channelId, closure_0.saveData.messageId), { openChannel: true });
+        const CHANNELResult = CHANNEL(guildId1, closure_0.saveData.channelId, closure_0.saveData.messageId);
+        const obj6 = closure_131_0(closure_131_2[11]);
+        guildId = !obj6.isGuildsOnTopOfTabs();
+        const obj11 = { openChannel: true, navigationReplace: !guildId };
+        guildId = tmp16(CHANNELResult, obj11);
         c7 = 3;
         return { value: "HermesInternal", done: null };
-      } catch (tmp24) {
-        let closure_4 = tmp24;
+      } catch (tmp29) {
+        let closure_4 = tmp29;
         if (0 === c5) {
           c7 = 3;
-          throw tmp24;
+          throw tmp29;
         } else {
           c6 = 1;
         }

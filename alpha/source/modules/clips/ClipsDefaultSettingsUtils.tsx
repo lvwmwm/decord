@@ -1,11 +1,11 @@
-// Module ID: 16191
-// Function ID: 16192
+// Module ID: 16218
+// Function ID: 16219
 // Name: ClipsDefaultSettingsUtils
-// Dependencies: [8284, 2]
+// Dependencies: [8288, 2]
 // Exports: applyClipsDefaultSettingsDecision
 
-// Module 16191 (ClipsDefaultSettingsUtils)
-import ClipsConstants from "ClipsConstants" /* 8284 */;
+// Module 16218 (ClipsDefaultSettingsUtils)
+import ClipsConstants from "ClipsConstants" /* 8288 */;
 import size from "module_2" /* 2 */;
 
 let ClipsEnabledSettingsSource;

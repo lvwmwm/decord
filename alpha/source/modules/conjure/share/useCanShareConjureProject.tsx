@@ -1,12 +1,12 @@
-// Module ID: 12291
-// Function ID: 12292
+// Module ID: 12300
+// Function ID: 12301
 // Name: useCanShareConjureProject
-// Dependencies: [10987, 504, 10994, 2]
+// Dependencies: [10996, 504, 11003, 2]
 // Exports: default
 
-// Module 12291 (useCanShareConjureProject)
-import ConjurePublishTypes from "ConjurePublishTypes" /* 10994 */;
-import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 10987 */;
+// Module 12300 (useCanShareConjureProject)
+import ConjurePublishTypes from "ConjurePublishTypes" /* 11003 */;
+import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 10996 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

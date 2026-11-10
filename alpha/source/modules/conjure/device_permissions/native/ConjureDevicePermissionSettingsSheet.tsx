@@ -1,17 +1,17 @@
-// Module ID: 14796
-// Function ID: 14797
+// Module ID: 14822
+// Function ID: 14823
 // Name: ConjureDevicePermissionSettingsSheet
-// Dependencies: [19, 17, 21, 5140, 575, 14797, 7426, 7382, 1113, 4026, 7126, 7429, 11055, 2]
+// Dependencies: [19, 17, 21, 5142, 575, 14823, 7429, 7385, 1113, 4028, 7129, 7432, 11064, 2]
 // Exports: default
 
-// Module 14796 (ConjureDevicePermissionSettingsSheet)
+// Module 14822 (ConjureDevicePermissionSettingsSheet)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import _modDef4026 from "module_4026" /* 4026 */;
-import useConjureDevicePermissionSettingsDefault from "useConjureDevicePermissionSettings" /* 14797 */;
+import _modDef4028 from "module_4028" /* 4028 */;
+import useConjureDevicePermissionSettingsDefault from "useConjureDevicePermissionSettings" /* 14823 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5140 */;
+import createStyles from "createStyles" /* 5142 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -39,7 +39,7 @@ export default function ConjureDevicePermissionSettingsSheet(arg0) {
   let tmp2 = useConjureDevicePermissionSettingsDefault(applicationId);
   ({ settings, setAllowed: c0 } = tmp2);
   const ActionSheet = require("ActionSheet").ActionSheet;
-  let obj2 = { title: intl.string(_modDef4026["7a+RNP"]), subtitle: intl2.formatToPlainString(_modDef4026.IJY15p, { app: appName }) };
+  let obj2 = { title: intl.string(_modDef4028["7a+RNP"]), subtitle: intl2.formatToPlainString(_modDef4028.IJY15p, { app: appName }) };
   const BottomSheetTitleHeader = require("BottomSheetTitleHeader").BottomSheetTitleHeader;
   intl = require("intl").intl;
   intl2 = require("intl").intl;
@@ -65,7 +65,7 @@ export default function ConjureDevicePermissionSettingsSheet(arg0) {
       const tmp2 = _undefined;
       if (null == decision) {
         const intl = tmp2(tmp3[8]).intl;
-        stringResult = intl.string(require("module_4026")["wyav+H"]);
+        stringResult = intl.string(require("module_4028")["wyav+H"]);
       }
       return tmp(TableSwitchRow, obj, permission);
     })

@@ -1,33 +1,33 @@
-// Module ID: 12203
-// Function ID: 12204
+// Module ID: 12212
+// Function ID: 12213
 // Name: CallTile
-// Dependencies: [19, 17, 6769, 1385, 11130, 5805, 21, 5140, 5137, 575, 7387, 1627, 504, 5888, 8821, 11920, 12175, 11941, 11950, 12204, 12209, 12210, 12211, 12212, 12213, 1187, 11864, 1652, 5370, 12214, 2]
+// Dependencies: [19, 17, 6771, 1385, 11139, 5807, 21, 5142, 5139, 575, 7390, 1627, 504, 5890, 8827, 11929, 12184, 11950, 11959, 12213, 12218, 12219, 12220, 12221, 12222, 1187, 11873, 1652, 5372, 12223, 2]
 
-// Module 12203 (CallTile)
+// Module 12212 (CallTile)
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
 import _mod1652 from "module_1652" /* 1652 */;
-import timing_timing from "timing/timing" /* 5370 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5888 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8821 */;
-import RevealProvider from "RevealProvider" /* 11864 */;
-import TouchableStreamPreviewDefault from "TouchableStreamPreview" /* 12204 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12209 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 12210 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 12211 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 12212 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 12213 */;
-import ParticipantTitleDefault from "ParticipantTitle" /* 12214 */;
+import timing_timing from "timing/timing" /* 5372 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5890 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8827 */;
+import RevealProvider from "RevealProvider" /* 11873 */;
+import TouchableStreamPreviewDefault from "TouchableStreamPreview" /* 12213 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12218 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 12219 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 12220 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 12221 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 12222 */;
+import ParticipantTitleDefault from "ParticipantTitle" /* 12223 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6769 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6771 */;
 import UserStore from "UserStore" /* 1385 */;
-import ChannelCallStore from "ChannelCallStore" /* 11130 */;
-import CallConstants from "CallConstants" /* 5805 */;
+import ChannelCallStore from "ChannelCallStore" /* 11139 */;
+import CallConstants from "CallConstants" /* 5807 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5140 */;
-import ColorUtils_mod from "ColorUtils" /* 5137 */;
+import createStyles_mod from "createStyles" /* 5142 */;
+import ColorUtils_mod from "ColorUtils" /* 5139 */;
 import size from "module_2" /* 2 */;
 
 let obj1;
@@ -177,11 +177,11 @@ class TileOverlay {
       isActiveStream = map1(hasOwnProperty, obj2);
     }
     items3 = [isActiveStream, ];
-    const obj3 = { style: tmp.usernamePosition, children: closure_15(hasOwnProperty, obj4) };
+    const obj3 = { style: tmp.usernamePosition, children: clientStatuses(hasOwnProperty, obj4) };
     obj4 = { style: tmp.usernameContainer, children: items4 };
     items4 = [map1(ParticipantIcon, { participant }), map1(ParticipantTitleDefault, { channel, participant })];
     items3[1] = map1(hasOwnProperty, obj3);
-    return closure_15(View, obj);
+    return clientStatuses(View, obj);
   }
 }
 ({ StyleSheet: closure_4, View: hasOwnProperty } = react_native);
@@ -197,7 +197,7 @@ rect = { overflow: "hidden", position: "absolute", bottom: 8, left: 8, right: 40
 obj3 = { flex: 1, width: "100%", backgroundColor: nativeDefault.unsafe_rawColors.PRIMARY_600 };
 obj4 = { flex: 1, alignItems: "center", justifyContent: "center", overflow: "hidden", width: "100%", backgroundColor: nativeDefault.colors.BLACK };
 obj5 = { backgroundColor: nativeDefault.colors.BLACK };
-const authStore4 = createStyles(obj);
+const authStore3 = createStyles(obj);
 let closure_19 = { code: "(function CallTileTsx1(){let[withTiming,reveal,STANDARD_EASING]=this.__closure;return{opacity:withTiming(reveal?1:0,{easing:STANDARD_EASING,duration:250})};})" };
 const memoResult = react.memo(function CallTitle(participant) {
   let avatarSize;

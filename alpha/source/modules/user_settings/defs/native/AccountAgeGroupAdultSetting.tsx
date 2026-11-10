@@ -1,15 +1,15 @@
-// Module ID: 16945
-// Function ID: 16946
+// Module ID: 16972
+// Function ID: 16973
 // Name: AccountAgeGroupAdultSetting
-// Dependencies: [8503, 6781, 5817, 16901, 11685, 1113, 2]
+// Dependencies: [8507, 6783, 5819, 16928, 11694, 1113, 2]
 
-// Module 16945 (AccountAgeGroupAdultSetting)
+// Module 16972 (AccountAgeGroupAdultSetting)
 import intl2 from "intl" /* 1113 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5817 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 6781 */;
-import SettingsConstants from "SettingsConstants" /* 8503 */;
-import AgeNoticeSettingsPredicate from "AgeNoticeSettingsPredicate" /* 16901 */;
-import SettingBuilders from "SettingBuilders" /* 11685 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5819 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 6783 */;
+import SettingsConstants from "SettingsConstants" /* 8507 */;
+import AgeNoticeSettingsPredicate from "AgeNoticeSettingsPredicate" /* 16928 */;
+import SettingBuilders from "SettingBuilders" /* 11694 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

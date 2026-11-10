@@ -1,25 +1,26 @@
-// Module ID: 14215
-// Function ID: 14216
+// Module ID: 14241
+// Function ID: 14242
 // Name: MultiAccountActionCreators
-// Dependencies: [5, 502, 14211, 1072, 3, 1098, 572, 1282, 1252, 6795, 2]
+// Dependencies: [5, 502, 5045, 14237, 1072, 3, 1098, 572, 1282, 1252, 6797, 2]
 // Exports: invalidatePushSyncTokens, moveAccount, removeAccount, reportAccountSwitchTimeout, switchAccount, updatePushSyncToken, validateMultiAccountTokens
 
-// Module 14215 (MultiAccountActionCreators)
+// Module 14241 (MultiAccountActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import TokenManagerAll from "TokenManager" /* 1098 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import MultiAccountStore from "MultiAccountStore" /* 14211 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5045 */;
+import MultiAccountStore from "MultiAccountStore" /* 14237 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 let c6, closure_0;
 
+let c9;
 let metroImportAll;
-let metroImportDefault;
-({ AnalyticEvents: metroImportDefault, Endpoints: metroImportAll } = Constants);
+({ AnalyticEvents: metroImportAll, Endpoints: c9 } = Constants);
 const tmp3 = new LoggerDefault("MultiAccountActionCreators");
 const logger = tmp3;
 const result = size.fileFinishedImporting("modules/multi_account/MultiAccountActionCreators.tsx");
@@ -50,7 +51,7 @@ export function validateMultiAccountTokens() {
             const obj15 = DispatcherDefault;
             obj15.dispatch(obj8);
             let c5 = 1;
-            const HTTP = closure_0(dependencyMap[7]).HTTP;
+            const HTTP = closure_0(dependencyMap[8]).HTTP;
             const obj9 = { url: constants2.ME, headers: obj10, retries: 3, rejectWithError: false };
             obj10 = { authorization };
             c6 = 3;
@@ -158,7 +159,7 @@ export function switchAccount(id, switchSynchronously, CHOOSE_ACCOUNT) {
     resolved = Promise.resolve();
   } else {
     let tmp4 = CHOOSE_ACCOUNT;
-    const obj5 = { type: "MULTI_ACCOUNT_SWITCH_START", targetUserId: id, location: tmp4 };
+    const obj5 = { type: "MULTI_ACCOUNT_SWITCH_START", targetUserId: id, location: tmp4, lastChannelId: SelectedChannelStore.getCurrentlySelectedChannelId() };
     const dispatch = DispatcherDefault.dispatch;
     DispatcherDefault;
     const tmp5 = importDefault;
@@ -166,7 +167,7 @@ export function switchAccount(id, switchSynchronously, CHOOSE_ACCOUNT) {
       tmp4 = null;
     }
     dispatch(obj5);
-    const tmp5Result = tmp5(6795);
+    const tmp5Result = tmp5(6797);
     resolved = tmp5Result.switchAccountToken(token, switchSynchronously);
   }
   return resolved;

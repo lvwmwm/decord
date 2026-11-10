@@ -1,9 +1,9 @@
-// Module ID: 5780
-// Function ID: 5781
+// Module ID: 5782
+// Function ID: 5783
 // Name: RegexUtils
 // Dependencies: [2]
 
-// Module 5780 (RegexUtils)
+// Module 5782 (RegexUtils)
 import size from "module_2" /* 2 */;
 
 const obj = {

@@ -1,10 +1,10 @@
-// Module ID: 12318
-// Function ID: 12319
+// Module ID: 12326
+// Function ID: 12327
 // Name: openConjureNativeImages
-// Dependencies: [5, 17, 12315, 8907, 2]
+// Dependencies: [5, 17, 12323, 8913, 2]
 // Exports: openConjureNativeImages
 
-// Module 12318 (openConjureNativeImages)
+// Module 12326 (openConjureNativeImages)
 import react_native from "react-native" /* 17 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size_mod from "module_2" /* 2 */;

@@ -1,25 +1,37 @@
 // Module ID: 16482
 // Function ID: 16483
-// Dependencies: [16448, 16469, 16483, 16493, 16494]
+// Dependencies: [16483, 16486, 16468, 16490, 16491, 16487]
 
 // Module 16482
-import _mod16448 from "module_16448" /* 16448 */;
-import _mod16469 from "module_16469" /* 16469 */;
-import f2 from "f" /* 16483 */;
-import _mod16493 from "module_16493" /* 16493 */;
-import _mod16494 from "module_16494" /* 16494 */;
+import _mod16468 from "module_16468" /* 16468 */;
+import _mod16483 from "module_16483" /* 16483 */;
+import _mod16487 from "module_16487" /* 16487 */;
+import _mod16490 from "module_16490" /* 16490 */;
+import _mod16491 from "module_16491" /* 16491 */;
+import prop from "module_16486" /* 16486 */;
 
-function ownKeys(arg0) {
-  const obj = f2;
-  const fResult = obj.f(_mod16493(arg0));
-  const f = _mod16494.f;
-  let tmp2 = fResult;
-  if (f) {
-    tmp2 = closure_2(fResult, f(arg0));
-  }
-  return tmp2;
+let tmp2;
+let closure_2 = _mod16483("wks");
+const _Symbol = _mod16468.Symbol;
+if (prop) {
+  tmp2 = _Symbol.for || _mod16468.Symbol;
+  const tmp3 = _Symbol.for || _mod16468.Symbol;
+} else {
+  tmp2 = _Symbol && _mod16468.Symbol.withoutSetter || _mod16490;
 }
-let closure_2 = _mod16448([].concat);
-_mod16469("Reflect", "ownKeys") || ownKeys;
+let closure_3 = tmp2;
 
-export default _mod16469("Reflect", "ownKeys") || ownKeys;
+export default (arg0) => {
+  if (!_mod16491(closure_2, arg0)) {
+    if (_mod16487) {
+      let tmp6;
+      const tmpResult = _mod16491;
+      if (tmpResult(_mod16468.Symbol, arg0)) {
+        tmp6 = tmp(16468).Symbol[arg0];
+      }
+      closure_2[arg0] = tmp6;
+    }
+    tmp6 = closure_3(`Symbol.${arg0}`);
+  }
+  return closure_2[arg0];
+};

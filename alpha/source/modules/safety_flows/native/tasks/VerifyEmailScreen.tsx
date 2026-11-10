@@ -1,10 +1,10 @@
-// Module ID: 20495
-// Function ID: 20496
+// Module ID: 20523
+// Function ID: 20524
 // Name: VerifyEmailScreen
-// Dependencies: [5, 32, 19, 21, 20490, 20491, 20485, 5837, 1113, 2960, 20494, 6159, 575, 5751, 7148, 20496, 2]
+// Dependencies: [5, 32, 19, 21, 20518, 20519, 20513, 5839, 1113, 2960, 20522, 6161, 575, 5753, 7151, 20524, 2]
 // Exports: default
 
-// Module 20495 (VerifyEmailScreen)
+// Module 20523 (VerifyEmailScreen)
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;

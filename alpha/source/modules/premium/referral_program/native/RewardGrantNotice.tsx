@@ -1,21 +1,21 @@
-// Module ID: 15623
-// Function ID: 15624
+// Module ID: 15651
+// Function ID: 15652
 // Name: RewardGrantNotice
-// Dependencies: [19, 17, 15602, 21, 5140, 575, 15604, 14737, 5751, 1113, 7366, 2]
+// Dependencies: [19, 17, 15630, 21, 5142, 575, 15632, 14763, 5753, 1113, 7369, 2]
 // Exports: default
 
-// Module 15623 (RewardGrantNotice)
+// Module 15651 (RewardGrantNotice)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5751 */;
-import CheckmarkSmallIcon2 from "CheckmarkSmallIcon" /* 7366 */;
-import BalanceWidgetPill from "BalanceWidgetPill" /* 14737 */;
-import PremiumReferralIncentivesExperiment from "PremiumReferralIncentivesExperiment" /* 15604 */;
+import Text_Text from "Text/Text" /* 5753 */;
+import CheckmarkSmallIcon2 from "CheckmarkSmallIcon" /* 7369 */;
+import BalanceWidgetPill from "BalanceWidgetPill" /* 14763 */;
+import PremiumReferralIncentivesExperiment from "PremiumReferralIncentivesExperiment" /* 15632 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 15602 */;
+import Constants from "Constants" /* 15630 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5142 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -84,7 +84,7 @@ export default function RewardGrantNotice(arg0) {
       tmp4 = metroRequire(OrbsGrantNotice, obj2);
     } else {
       tmp4 = null;
-      if (referralRewardType === tmp2(15604).ReferralRewardType.DISCOUNT) {
+      if (referralRewardType === tmp2(15632).ReferralRewardType.DISCOUNT) {
         const obj = { nRewardsGranted };
         tmp4 = metroRequire(DiscountGrantNotice, obj);
       }

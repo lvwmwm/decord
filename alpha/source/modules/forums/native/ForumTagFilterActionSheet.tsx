@@ -1,20 +1,20 @@
-// Module ID: 14613
-// Function ID: 14614
+// Module ID: 14639
+// Function ID: 14640
 // Name: ForumTagFilterActionSheet
-// Dependencies: [32, 19, 6851, 13996, 1072, 21, 5140, 8273, 5721, 7426, 7382, 1113, 9090, 5392, 7126, 7037, 504, 7363, 1411, 2]
+// Dependencies: [32, 19, 6854, 14022, 1072, 21, 5142, 8277, 5723, 7429, 7385, 1113, 9096, 5394, 7129, 7040, 504, 7366, 1411, 2]
 // Exports: default
 
-// Module 14613 (ForumTagFilterActionSheet)
+// Module 14639 (ForumTagFilterActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
-import EmojiDefault from "Emoji" /* 7363 */;
-import Tracking from "Tracking" /* 8273 */;
+import EmojiDefault from "Emoji" /* 7366 */;
+import Tracking from "Tracking" /* 8277 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import EmojiStore from "EmojiStore" /* 6851 */;
-import ForumChannelStore from "ForumChannelStore" /* 13996 */;
+import EmojiStore from "EmojiStore" /* 6854 */;
+import ForumChannelStore from "ForumChannelStore" /* 14022 */;
 import Constants from "Constants" /* 1072 */;
-import createStyles from "createStyles" /* 5140 */;
+import createStyles from "createStyles" /* 5142 */;
 import size from "module_2" /* 2 */;
 
 let set;

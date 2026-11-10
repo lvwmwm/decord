@@ -1,12 +1,12 @@
-// Module ID: 20082
-// Function ID: 20083
+// Module ID: 20110
+// Function ID: 20111
 // Name: guild_automod/ExperimentUtils
-// Dependencies: [20083, 6934, 2]
+// Dependencies: [20111, 6937, 2]
 // Exports: useIsApplicationRuleEnabled
 
-// Module 20082 (guild_automod/ExperimentUtils)
-import ConjureGuildExperiment from "ConjureGuildExperiment" /* 6934 */;
-import AutomodExperiment from "AutomodExperiment" /* 20083 */;
+// Module 20110 (guild_automod/ExperimentUtils)
+import ConjureGuildExperiment from "ConjureGuildExperiment" /* 6937 */;
+import AutomodExperiment from "AutomodExperiment" /* 20111 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_automod/ExperimentUtils.tsx");

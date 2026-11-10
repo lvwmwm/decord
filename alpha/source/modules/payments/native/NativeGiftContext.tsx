@@ -1,10 +1,10 @@
-// Module ID: 10681
-// Function ID: 10682
+// Module ID: 10690
+// Function ID: 10691
 // Name: NativeGiftContext
-// Dependencies: [5, 32, 19, 8834, 9714, 10682, 1385, 1072, 7674, 1387, 1083, 21, 3, 7689, 10683, 7690, 4953, 10684, 1113, 10685, 2171, 7669, 10686, 10723, 504, 10724, 10731, 8839, 8826, 6091, 1252, 7412, 10732, 572, 1377, 10679, 10698, 2]
+// Dependencies: [5, 32, 19, 8840, 9720, 10691, 1385, 1072, 7677, 1387, 1083, 21, 3, 7692, 10692, 7693, 4955, 10693, 1113, 10694, 2171, 7672, 10695, 10732, 504, 10733, 10740, 8845, 8832, 6093, 1252, 7415, 10741, 572, 1377, 10688, 10707, 2]
 // Exports: NativeGiftContextProvider
 
-// Module 10681 (NativeGiftContext)
+// Module 10690 (NativeGiftContext)
 import LoggerDefault from "Logger" /* 3 */;
 import Fragment from "Fragment" /* 21 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
@@ -12,20 +12,20 @@ import Constants from "Constants" /* 1072 */;
 import Constants2 from "Constants" /* 1083 */;
 import intl3 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6091 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7412 */;
-import Constants3 from "Constants" /* 7674 */;
-import ContextUtilsDefault from "ContextUtils" /* 7689 */;
-import BadgeId from "BadgeId" /* 8826 */;
-import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8839 */;
-import PremiumAnalyticsUtils from "PremiumAnalyticsUtils" /* 10679 */;
-import PremiumGiftingIntentActionCreators from "PremiumGiftingIntentActionCreators" /* 10732 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6093 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7415 */;
+import Constants3 from "Constants" /* 7677 */;
+import ContextUtilsDefault from "ContextUtils" /* 7692 */;
+import BadgeId from "BadgeId" /* 8832 */;
+import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8845 */;
+import PremiumAnalyticsUtils from "PremiumAnalyticsUtils" /* 10688 */;
+import PremiumGiftingIntentActionCreators from "PremiumGiftingIntentActionCreators" /* 10741 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8834 */;
-import PromotionsStore from "PromotionsStore" /* 9714 */;
-import GiftCodeRecord from "GiftCodeRecord" /* 10682 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8840 */;
+import PromotionsStore from "PromotionsStore" /* 9720 */;
+import GiftCodeRecord from "GiftCodeRecord" /* 10691 */;
 import UserStore from "UserStore" /* 1385 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
 import size from "module_2" /* 2 */;

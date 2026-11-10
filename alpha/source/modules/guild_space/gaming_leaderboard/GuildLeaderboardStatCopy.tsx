@@ -1,12 +1,12 @@
-// Module ID: 10903
-// Function ID: 10904
+// Module ID: 10912
+// Function ID: 10913
 // Name: GuildLeaderboardStatCopy
-// Dependencies: [5060, 1113, 2568, 2]
+// Dependencies: [5062, 1113, 2568, 2]
 // Exports: getStatName
 
-// Module 10903 (GuildLeaderboardStatCopy)
+// Module 10912 (GuildLeaderboardStatCopy)
 import _modDef2568 from "module_2568" /* 2568 */;
-import GuildLeaderboardTypes from "GuildLeaderboardTypes" /* 5060 */;
+import GuildLeaderboardTypes from "GuildLeaderboardTypes" /* 5062 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_space/gaming_leaderboard/GuildLeaderboardStatCopy.tsx");

@@ -1,40 +1,40 @@
-// Module ID: 17224
-// Function ID: 17225
+// Module ID: 17251
+// Function ID: 17252
 // Name: OrbWalletComponents
-// Dependencies: [19, 17, 1072, 1387, 6836, 21, 5140, 575, 9612, 5751, 17225, 17229, 4566, 1113, 2298, 17221, 7412, 11558, 5842, 17230, 14745, 7015, 17231, 8095, 5374, 9769, 6839, 5830, 2185, 9641, 5758, 14955, 12672, 9459, 2]
+// Dependencies: [19, 17, 1072, 1387, 6839, 21, 5142, 575, 9618, 5753, 17252, 17256, 4568, 1113, 2298, 17248, 7415, 11567, 5844, 17257, 14771, 7018, 17258, 8099, 5376, 9775, 6842, 5832, 2185, 9647, 5760, 14981, 12685, 9465, 2]
 // Exports: OrbBalanceHeader, OrbChallengesCard, OrbWalletFooter
 
-// Module 17224 (OrbWalletComponents)
+// Module 17251 (OrbWalletComponents)
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2185 */;
 import _modDef2298 from "module_2298" /* 2298 */;
-import _mod4566 from "module_4566" /* 4566 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
-import Text_Text from "Text/Text" /* 5751 */;
-import components_Button_Button from "components/Button/Button" /* 5758 */;
-import openURLDefault from "openURL" /* 5830 */;
-import FastImageDefault from "FastImage" /* 5842 */;
-import QuestConstants from "QuestConstants" /* 6836 */;
-import QuestTypes from "QuestTypes" /* 6839 */;
-import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 7015 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7412 */;
-import NitroWheelIcon2 from "NitroWheelIcon" /* 9612 */;
-import _mod9641 from "module_9641" /* 9641 */;
-import QuestUtils from "QuestUtils" /* 9769 */;
-import useIsPremiumSubscriber from "useIsPremiumSubscriber" /* 11558 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12672 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 14955 */;
-import OrbWalletUtils from "OrbWalletUtils" /* 17221 */;
-import useNitroProgramReward from "useNitroProgramReward" /* 17225 */;
-import ProgramRewardsActionCreatorsDefault from "ProgramRewardsActionCreators" /* 17229 */;
-import _modDef17230 from "module_17230" /* 17230 */;
+import _mod4568 from "module_4568" /* 4568 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5376 */;
+import Text_Text from "Text/Text" /* 5753 */;
+import components_Button_Button from "components/Button/Button" /* 5760 */;
+import openURLDefault from "openURL" /* 5832 */;
+import FastImageDefault from "FastImage" /* 5844 */;
+import QuestConstants from "QuestConstants" /* 6839 */;
+import QuestTypes from "QuestTypes" /* 6842 */;
+import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 7018 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7415 */;
+import NitroWheelIcon2 from "NitroWheelIcon" /* 9618 */;
+import _mod9647 from "module_9647" /* 9647 */;
+import QuestUtils from "QuestUtils" /* 9775 */;
+import useIsPremiumSubscriber from "useIsPremiumSubscriber" /* 11567 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12685 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 14981 */;
+import OrbWalletUtils from "OrbWalletUtils" /* 17248 */;
+import useNitroProgramReward from "useNitroProgramReward" /* 17252 */;
+import ProgramRewardsActionCreatorsDefault from "ProgramRewardsActionCreators" /* 17256 */;
+import _modDef17257 from "module_17257" /* 17257 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5142 */;
 import size from "module_2" /* 2 */;
 
 let c10;
@@ -94,8 +94,8 @@ function OrbWalletNitroRewardTag() {
       const _Date = Date;
       const self = this;
       const self2 = this;
-      const differenceInCalendarDays = tmp(4566).differenceInCalendarDays;
-      _mod4566;
+      const differenceInCalendarDays = tmp(4568).differenceInCalendarDays;
+      _mod4568;
       const _Date2 = Date;
       const self3 = this;
       const self4 = this;
@@ -179,7 +179,7 @@ export function OrbBalanceHeader(orbBalance) {
   const obj = { style: tmp.header, children: items };
   const obj2 = { style: tmp.headerAssetSlot, importantForAccessibility: "no-hide-descendants", children: authStore(tmp7, obj3) };
   obj3 = { source: obj4, style: tmp.headerAsset, resizeMode: "contain" };
-  obj4 = { uri: _modDef17230 };
+  obj4 = { uri: _modDef17257 };
   tmp7 = FastImageDefault;
   items = [authStore(hasOwnProperty, obj2), ];
   const obj5 = { style: tmp.headerContent, children: items1 };
@@ -192,7 +192,7 @@ export function OrbBalanceHeader(orbBalance) {
     stringResult = intl.formatToPlainString(tmp8(1113).t.zPaLL9, obj6);
     tmp10 = tmp8;
   }
-  const obj7 = { accessible: true, accessibilityLabel: stringResult, accessibilityState: { busy: null == orbBalance }, children: authStore(tmp10(14745).BalanceCounter, obj8) };
+  const obj7 = { accessible: true, accessibilityLabel: stringResult, accessibilityState: { busy: null == orbBalance }, children: authStore(tmp10(14771).BalanceCounter, obj8) };
   obj8 = { value: orbBalance, onValueChange: onValueReached, onValueReached, targetTotalCounterTime: 1500, textVariant: "display-md", textColor: "text-strong" };
   items1 = [authStore(hasOwnProperty, obj7), authStore(OrbWalletHeaderTags, {})];
   items[1] = unpackModuleId(hasOwnProperty, obj5);
@@ -302,7 +302,7 @@ export function OrbWalletFooter() {
   let obj4;
   let obj6;
   const tmp = closure_13();
-  const obj = _mod9641;
+  const obj = _mod9647;
   const totalRedeemed = obj.useFetchVirtualCurrencyTotalRedeemed().totalRedeemed;
   const obj2 = { style: tmp.footerButtons, children: items };
   const obj3 = { style: tmp.footerButton, children: authStore(Button, obj4) };
@@ -322,10 +322,10 @@ export function OrbWalletFooter() {
   if (tmp4Result) {
     const obj8 = { children: items2 };
     const obj9 = { size: "xs", color: nativeDefault.colors.ICON_MUTED, accessible: false };
-    const TrophyIcon = tmp2(9459).TrophyIcon;
+    const TrophyIcon = tmp2(9465).TrophyIcon;
     items2 = [authStore(TrophyIcon, obj9), , ];
     const obj10 = { variant: "body-sm/normal", color: "text-muted", children: intl3.format(_modDef2298.B5tZXw, obj11) };
-    const Text = tmp2(5751).Text;
+    const Text = tmp2(5753).Text;
     intl3 = tmp2(1113).intl;
     obj11 = { orbAmount: totalRedeemed };
     items2[1] = authStore(Text, obj10);
@@ -336,7 +336,7 @@ export function OrbWalletFooter() {
   const obj12 = { children: items1 };
   const obj13 = { onPress: openOrbWalletHelp, accessibilityRole: "link", hitSlop: nativeDefault.space.PX_8, children: authStore(Text2, obj14) };
   obj14 = { variant: "body-sm/normal", color: "text-link", children: intl4.string(intl5.t["5qZv9E"]) };
-  Text2 = tmp2(5751).Text;
+  Text2 = tmp2(5753).Text;
   intl4 = tmp2(1113).intl;
   items3[1] = authStore(React3, obj13);
   items1[1] = unpackModuleId(tmp6, obj7);

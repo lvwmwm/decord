@@ -1,14 +1,14 @@
-// Module ID: 17707
-// Function ID: 17708
+// Module ID: 17734
+// Function ID: 17735
 // Name: EmojiSmilingFaceWithSunglassesIcon
-// Dependencies: [19, 21, 575, 5841, 17708, 2]
+// Dependencies: [19, 21, 575, 5843, 17735, 2]
 // Exports: EmojiSmilingFaceWithSunglassesIcon
 
-// Module 17707 (EmojiSmilingFaceWithSunglassesIcon)
+// Module 17734 (EmojiSmilingFaceWithSunglassesIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5841 */;
-import AssetRegistry from "AssetRegistry" /* 17708 */;
+import BaseIconImage2 from "BaseIconImage" /* 5843 */;
+import AssetRegistry from "AssetRegistry" /* 17735 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

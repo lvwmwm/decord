@@ -1,15 +1,15 @@
-// Module ID: 12075
-// Function ID: 12076
+// Module ID: 12084
+// Function ID: 12085
 // Name: useIsVoiceChannelFull
-// Dependencies: [5011, 5072, 5803, 1083, 504, 6178, 2]
+// Dependencies: [5013, 5074, 5805, 1083, 504, 6180, 2]
 // Exports: default, useIsVoiceChannelLocked
 
-// Module 12075 (useIsVoiceChannelFull)
+// Module 12084 (useIsVoiceChannelFull)
 import Constants from "Constants" /* 1083 */;
-import ChannelUtils from "ChannelUtils" /* 6178 */;
-import GuildStore from "GuildStore" /* 5011 */;
-import PermissionStore from "PermissionStore" /* 5072 */;
-import VoiceStateStore from "VoiceStateStore" /* 5803 */;
+import ChannelUtils from "ChannelUtils" /* 6180 */;
+import GuildStore from "GuildStore" /* 5013 */;
+import PermissionStore from "PermissionStore" /* 5074 */;
+import VoiceStateStore from "VoiceStateStore" /* 5805 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

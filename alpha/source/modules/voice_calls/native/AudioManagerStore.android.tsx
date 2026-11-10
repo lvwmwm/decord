@@ -1,9 +1,9 @@
-// Module ID: 9302
-// Function ID: 9303
+// Module ID: 9308
+// Function ID: 9309
 // Name: AudioManagerStore
-// Dependencies: [5, 17, 1072, 5897, 9303, 3, 12, 1242, 504, 572, 2]
+// Dependencies: [5, 17, 5045, 1072, 5899, 9309, 3, 12, 1242, 504, 572, 2]
 
-// Module 9302 (AudioManagerStore)
+// Module 9308 (AudioManagerStore)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
@@ -11,14 +11,23 @@ import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import SentryUtilsDefault from "SentryUtils" /* 1242 */;
-import Constants2 from "Constants" /* 5897 */;
-import NativeAudioManagerModuleDefault from "NativeAudioManagerModule" /* 9303 */;
+import Constants2 from "Constants" /* 5899 */;
+import NativeAudioManagerModuleDefault from "NativeAudioManagerModule" /* 9309 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5045 */;
 import size from "module_2" /* 2 */;
 
 const NativeAudioManagerModule_mod = NativeAudioManagerModuleDefault;
-let c5, c6, closure_3, closure_9, deviceString, devices;
+let c5, c6, closure_10, closure_3, deviceString, devices;
 
+function syncCommunicationMode() {
+  const tmp = c12 && null == SelectedChannelStore.getVoiceChannelId();
+  if (tmp) {
+    c12 = false;
+    setCommunicationModeOn(false);
+  }
+  return false;
+}
 function setCommunicationModeOn() {
   return obj(...arguments);
 }
@@ -66,7 +75,7 @@ let obj = function _setCommunicationModeOn() {
             c4 = 0;
             closure_1 = closure_3;
             let str = "off";
-            const error = closure_130_7.error;
+            const error = closure_130_8.error;
             if (closure_0) {
               str = "on";
             }
@@ -154,7 +163,7 @@ obj = function _setActiveAudioDevice() {
           c4 = 0;
           closure_1 = closure_3;
           const _HermesInternal2 = HermesInternal;
-          closure_130_7.error("Failed to set audio device " + deviceString.deviceId + " (" + deviceString.simpleDeviceType + ")", closure_1);
+          closure_130_8.error("Failed to set audio device " + deviceString.deviceId + " (" + deviceString.simpleDeviceType + ")", closure_1);
         } else if (arg0 === 1) {
           c6 = 3;
           throw value;
@@ -166,7 +175,7 @@ obj = function _setActiveAudioDevice() {
         } else {
           if (!value) {
             const _HermesInternal = HermesInternal;
-            closure_130_7.warn("Audio device " + deviceString.deviceId + " (" + deviceString.simpleDeviceType + ") was not applied");
+            closure_130_8.warn("Audio device " + deviceString.deviceId + " (" + deviceString.simpleDeviceType + ") was not applied");
           }
           c4 = 0;
         }
@@ -190,21 +199,23 @@ const RTCConnectionStates = Constants.RTCConnectionStates;
 const MediaEngineContextTypes = Constants2.MediaEngineContextTypes;
 const nativeEventEmitter = new NativeEventEmitter(NativeAudioManagerModuleDefault);
 const tmp3 = new LoggerDefault("AudioManagerStore");
-let closure_7 = tmp3;
-let closure_8 = [];
+let closure_8 = tmp3;
+let closure_9 = [];
 let NativeAudioManagerModule = NativeAudioManagerModule_mod;
 const invalidAndroidDevice = NativeAudioManagerModule.getInvalidAndroidDevice();
 NativeAudioManagerModule = NativeAudioManagerModule_mod;
 let device = NativeAudioManagerModule.getInvalidAndroidDevice();
-let c11 = false;
+let c12 = false;
 const Store = get_initializedDefault.Store;
 class AudioManagerStore extends Store {
   initialize() {
     const self = this;
+    const items = [SelectedChannelStore];
+    this.syncWith(items, syncCommunicationMode);
     obj = NativeAudioManagerModuleDefault;
     const audioDevices = obj.getAudioDevices();
     audioDevices.then((result) => {
-      closure_8 = result;
+      closure_9 = result;
       self.emitChange();
       nativeEventEmitter.addListener("android-audio-devices-updated", (devices) => {
         devices = devices.devices;
@@ -214,7 +225,7 @@ class AudioManagerStore extends Store {
     const obj2 = NativeAudioManagerModuleDefault;
     const activeAudioDevice = obj2.getActiveAudioDevice();
     activeAudioDevice.then((result) => {
-      closure_9 = result;
+      closure_10 = result;
       self.emitChange();
       nativeEventEmitter.addListener("android-active-audio-device-changed", (device) => {
         device = device.device;
@@ -225,10 +236,10 @@ class AudioManagerStore extends Store {
     obj3.setSCORetryCount(4);
   }
   getAudioDevices() {
-    return closure_8;
+    return closure_9;
   }
   getActiveAudioDevice() {
-    return closure_9;
+    return closure_10;
   }
   getRequestedActiveAudioDevice() {
     return device;
@@ -237,29 +248,32 @@ class AudioManagerStore extends Store {
 const prototype = AudioManagerStore.prototype;
 AudioManagerStore.displayName = "AudioManagerStore";
 obj = {
+  VOICE_CHANNEL_SELECT: function handleVoiceChannelSelect(channelId) {
+    const tmp = null == channelId.channelId || c12;
+    if (!tmp) {
+      c12 = true;
+      setCommunicationModeOn(true);
+    }
+    return false;
+  },
   RTC_CONNECTION_STATE: function handleRTCConnectionStateUpdate(context) {
     if (context.context !== MediaEngineContextTypes.DEFAULT) {
       return false;
     } else {
-      const state = context.state;
-      if (RTCConnectionStates.CONNECTING === state) {
-        c11 = true;
+      if (context.state === RTCConnectionStates.CONNECTING) {
+        c12 = true;
         setCommunicationModeOn(true);
-        const tmp6 = closure_9 !== device && device.simpleDeviceType !== NativeAudioManagerModule.AudioDeviceType.INVALID;
-        if (tmp6) {
+        const tmp5 = closure_10 !== device && device.simpleDeviceType !== NativeAudioManagerModule.AudioDeviceType.INVALID;
+        if (tmp5) {
           setActiveAudioDevice(device);
         }
-      } else if (tmp12.DISCONNECTED === state) {
-        if (!context.willReconnect) {
-          c11 = false;
-          setCommunicationModeOn(false);
-        }
       }
+      return false;
     }
   },
   NATIVE_AUDIO_SET_OUTPUT_DEVICE: function handleSetActiveAudioDevice(device) {
     device = device.device;
-    const tmp = c11;
+    const tmp = c12;
     if (tmp) {
       setActiveAudioDevice(device);
     }

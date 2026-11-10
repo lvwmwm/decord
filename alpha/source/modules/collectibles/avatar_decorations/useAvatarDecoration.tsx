@@ -1,12 +1,12 @@
-// Module ID: 6908
-// Function ID: 6909
+// Module ID: 6911
+// Function ID: 6912
 // Name: useAvatarDecoration
-// Dependencies: [32, 5052, 563, 2]
+// Dependencies: [32, 5054, 563, 2]
 // Exports: getAvatarDecoration, useAvatarDecoration
 
-// Module 6908 (useAvatarDecoration)
+// Module 6911 (useAvatarDecoration)
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import GuildMemberStore from "GuildMemberStore" /* 5052 */;
+import GuildMemberStore from "GuildMemberStore" /* 5054 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

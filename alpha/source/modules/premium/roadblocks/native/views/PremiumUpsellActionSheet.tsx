@@ -1,32 +1,32 @@
-// Module ID: 9884
-// Function ID: 9885
+// Module ID: 9890
+// Function ID: 9891
 // Name: PremiumUpsellActionSheet
-// Dependencies: [19, 17, 5141, 1192, 5893, 5171, 1385, 1387, 1072, 5993, 9885, 21, 5140, 575, 5724, 2171, 9886, 8301, 8286, 1113, 9887, 9891, 9895, 9896, 5374, 9883, 9897, 14836, 14840, 1092, 10094, 1377, 9588, 5842, 5715, 504, 7387, 9875, 7703, 8599, 14841, 1252, 10152, 5323, 7426, 14843, 5751, 5758, 8590, 2]
+// Dependencies: [19, 17, 5143, 1192, 5895, 5173, 1385, 1387, 1072, 5995, 9891, 21, 5142, 575, 5726, 2171, 9892, 8305, 8290, 1113, 9893, 9897, 9901, 9902, 5376, 9889, 9903, 14862, 14866, 1092, 10100, 1377, 9594, 5844, 5717, 504, 7390, 9881, 7706, 8605, 14867, 1252, 10158, 5325, 7429, 14869, 5753, 5760, 8596, 2]
 // Exports: default
 
-// Module 9884 (PremiumUpsellActionSheet)
+// Module 9890 (PremiumUpsellActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import PremiumUtils from "PremiumUtils" /* 2171 */;
-import ChatInputUtils from "ChatInputUtils" /* 5323 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
-import LinearGradientDefault from "LinearGradient" /* 5715 */;
-import FastImageDefault from "FastImage" /* 5842 */;
-import StreamSettingsConstants from "StreamSettingsConstants" /* 5993 */;
-import openPremiumUpsellActionSheet from "openPremiumUpsellActionSheet" /* 9883 */;
-import ScheduledMessagesConstants from "ScheduledMessagesConstants" /* 9885 */;
+import ChatInputUtils from "ChatInputUtils" /* 5325 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5376 */;
+import LinearGradientDefault from "LinearGradient" /* 5717 */;
+import FastImageDefault from "FastImage" /* 5844 */;
+import StreamSettingsConstants from "StreamSettingsConstants" /* 5995 */;
+import openPremiumUpsellActionSheet from "openPremiumUpsellActionSheet" /* 9889 */;
+import ScheduledMessagesConstants from "ScheduledMessagesConstants" /* 9891 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5141 */;
+import AccessibilityStore from "AccessibilityStore" /* 5143 */;
 import ThemeStore from "ThemeStore" /* 1192 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5893 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5171 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5895 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5173 */;
 import UserStore from "UserStore" /* 1385 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5142 */;
 import size from "module_2" /* 2 */;
 
 let guildId;
@@ -47,7 +47,7 @@ let obj6;
 let obj7;
 let tmp;
 let unpackModuleId;
-const APNGPlayer = tmp(9588);
+const APNGPlayer = tmp(9594);
 function PremiumUpsellImage(arg0) {
   let image;
   let style;
@@ -59,13 +59,13 @@ function PremiumUpsellImage(arg0) {
       let tmp5;
       if (null != image.uri) {
         const obj2 = { url: image.uri, style, autoplay: true };
-        tmp5 = authStore5(APNGPlayer.APNGPlayer, obj2);
+        tmp5 = authStore4(APNGPlayer.APNGPlayer, obj2);
       }
       return tmp5;
     }
   }
   const obj3 = { source: image, resizeMode: "contain", style, enableAnimation: !useReducedMotion, accessible: false };
-  tmp5 = authStore5(FastImageDefault, obj3);
+  tmp5 = authStore4(FastImageDefault, obj3);
 }
 function PremiumUpsellHero(arg0) {
   let items;
@@ -80,24 +80,24 @@ function PremiumUpsellHero(arg0) {
   ({ pageConfig, styles, useReducedMotion } = arg0);
   if (null != pageConfig.illustration) {
     const obj2 = { style: styles.hero, children: pageConfig.illustration };
-    tmp10 = authStore5(View, obj2);
+    tmp10 = authStore4(View, obj2);
   } else {
     tmp10 = null;
     if (null != pageConfig.image) {
       let tmp3;
       if (null != pageConfig.imageGradientBackground) {
-        const obj3 = { style: styles.imageGradientBackgroundContainer, children: authStore5(tmp8, obj4) };
-        obj4 = { colors: pageConfig.imageGradientBackground.colors, start: pageConfig.imageGradientBackground.start, end: pageConfig.imageGradientBackground.end, style: styles.imageGradientBackground, children: authStore5(PremiumUpsellImage, obj5) };
+        const obj3 = { style: styles.imageGradientBackgroundContainer, children: authStore4(tmp8, obj4) };
+        obj4 = { colors: pageConfig.imageGradientBackground.colors, start: pageConfig.imageGradientBackground.start, end: pageConfig.imageGradientBackground.end, style: styles.imageGradientBackground, children: authStore4(PremiumUpsellImage, obj5) };
         obj5 = { image: pageConfig.image, style: items, useReducedMotion };
         items = [, , ];
         ({ hero: arr2[0], image: arr2[1], imageInGradientBackground: arr2[2] } = styles);
         tmp8 = LinearGradientDefault;
-        tmp3 = authStore5(View, obj3);
+        tmp3 = authStore4(View, obj3);
       } else {
         const obj = { image: pageConfig.image, style: items1, useReducedMotion };
         items1 = [, ];
         ({ hero: arr[0], image: arr[1] } = styles);
-        tmp3 = authStore5(PremiumUpsellImage, obj);
+        tmp3 = authStore4(PremiumUpsellImage, obj);
       }
       tmp10 = tmp3;
     }

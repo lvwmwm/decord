@@ -1,17 +1,17 @@
-// Module ID: 10789
-// Function ID: 10790
+// Module ID: 10798
+// Function ID: 10799
 // Name: SocialLayerStorefrontActionCreators
-// Dependencies: [5, 9565, 7470, 1072, 1089, 572, 7468, 9645, 1282, 2150, 559, 2]
+// Dependencies: [5, 9571, 7473, 1072, 1089, 572, 7471, 9651, 1282, 2150, 559, 2]
 // Exports: fetchSocialLayerSKUPurchaseEligibility, fetchSocialLayerStorefront, fetchSocialLayerStorefrontAnnouncement, fetchSocialLayerStorefrontById, fetchSocialLayerStorefrontConfig, fetchSocialLayerStorefrontEntries, fetchSocialLayerStorefrontForApplication, fetchSocialLayerStorefrontLaunchAnnouncement, fetchSocialLayerStorefrontSku, fetchSocialLayerStorefrontSkuForApplication, setSocialLayerStorefrontState
 
-// Module 10789 (SocialLayerStorefrontActionCreators)
+// Module 10798 (SocialLayerStorefrontActionCreators)
 import BackoffDefault from "Backoff" /* 559 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import StorefrontPromotionOverrideStore from "StorefrontPromotionOverrideStore" /* 9565 */;
-import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 7470 */;
+import StorefrontPromotionOverrideStore from "StorefrontPromotionOverrideStore" /* 9571 */;
+import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 7473 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -728,7 +728,7 @@ obj = function _fetchSocialLayerStorefrontConfig() {
           if (storefronts != null) {
             mapped = storefronts.map((guildId) => {
               let excluded_platforms;
-              obj = { guildId: guildId.guild_id, applicationId: guildId.application_id, gameId: guildId.game_id, collectiblesShopNavigationEnabled: true === guildId.collectibles_shop_navigation_enabled, excludedPlatforms: excluded_platforms, disableMobileAccountLinking: true === guildId.disable_mobile_account_linking, allowOrbsSpending: true === guildId.allow_orbs_spending };
+              obj = { guildId: guildId.guild_id, applicationId: guildId.application_id, gameId: guildId.game_id, collectiblesShopNavigationEnabled: true === guildId.collectibles_shop_navigation_enabled, excludedPlatforms: excluded_platforms, disableMobileAccountLinking: true === guildId.disable_mobile_account_linking };
               excluded_platforms = guildId.excluded_platforms;
               if (excluded_platforms == null) {
                 excluded_platforms = [];

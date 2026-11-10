@@ -1,36 +1,44 @@
 // Module ID: 13117
 // Function ID: 13118
 // Name: tokenize
-// Dependencies: [13050]
+// Dependencies: [13064]
 
 // Module 13117 (tokenize)
-import tokenize from "tokenize" /* 13050 */;
+import tokenize from "tokenize" /* 13064 */;
 
-let items;
 let obj2;
-const LeftParenthesis = tokenize.TYPE.LeftParenthesis;
-const RightParenthesis = tokenize.TYPE.RightParenthesis;
-const obj = {
-  name: "Parentheses",
+const Comment = tokenize.TYPE.Comment;
+let obj = {
+  name: "Comment",
   structure: obj2,
-  parse(call, arg1) {
+  parse() {
     const self = this;
     const tokenStart = this.scanner.tokenStart;
-    this.eat(LeftParenthesis);
-    const callResult = call.call(self, arg1);
-    if (!self.scanner.eof) {
-      self.eat(RightParenthesis);
+    const tokenEnd = this.scanner.tokenEnd;
+    this.eat(Comment);
+    const sum = tokenEnd - tokenStart + 2;
+    let tmp3 = sum >= 2;
+    if (2 <= sum) {
+      const source = self.scanner.source;
+      tmp3 = 42 === source.charCodeAt(tokenEnd - 2);
     }
-    const element = { type: "Parentheses", loc: self.getLocation(tokenStart, self.scanner.tokenStart), children: callResult };
-    return element;
+    if (tmp3) {
+      const source2 = self.scanner.source;
+      tmp3 = 47 === source2.charCodeAt(tokenEnd - 1);
+    }
+    let diff = tokenEnd;
+    if (tmp3) {
+      diff = tokenEnd - 2;
+    }
+    const obj = { type: "Comment", loc: self.getLocation(tokenStart, self.scanner.tokenStart), value: str.substring(tokenStart + 2, diff) };
+    return obj;
   },
-  generate(arg0) {
-    this.chunk("(");
-    this.children(arg0);
-    this.chunk(")");
+  generate(value) {
+    this.chunk("/*");
+    this.chunk(value.value);
+    this.chunk("*/");
   }
 };
-obj2 = { children: items };
-items = [[]];
+obj2 = { value: String };
 
 export default obj;

@@ -1,12 +1,12 @@
-// Module ID: 10856
-// Function ID: 10857
+// Module ID: 10865
+// Function ID: 10866
 // Name: useScaledSectionHeight
-// Dependencies: [10853, 5766, 2]
+// Dependencies: [10862, 5768, 2]
 // Exports: default
 
-// Module 10856 (useScaledSectionHeight)
-import useFontScale from "useFontScale" /* 5766 */;
-import UsersFastListConstants from "UsersFastListConstants" /* 10853 */;
+// Module 10865 (useScaledSectionHeight)
+import useFontScale from "useFontScale" /* 5768 */;
+import UsersFastListConstants from "UsersFastListConstants" /* 10862 */;
 import size from "module_2" /* 2 */;
 
 let c2;

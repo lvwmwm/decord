@@ -1,18 +1,18 @@
-// Module ID: 14198
-// Function ID: 14199
+// Module ID: 14224
+// Function ID: 14225
 // Name: ApplicationCommandItem
-// Dependencies: [19, 17, 5052, 10344, 21, 5140, 575, 5766, 504, 14026, 7043, 1113, 5842, 5751, 2]
+// Dependencies: [19, 17, 5054, 10350, 21, 5142, 575, 5768, 504, 14052, 7046, 1113, 5844, 5753, 2]
 // Exports: default
 
-// Module 14198 (ApplicationCommandItem)
+// Module 14224 (ApplicationCommandItem)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ApplicationCommandsConstants from "ApplicationCommandsConstants" /* 10344 */;
-import application_commands_ApplicationCommandUtils from "application_commands/ApplicationCommandUtils" /* 14026 */;
+import ApplicationCommandsConstants from "ApplicationCommandsConstants" /* 10350 */;
+import application_commands_ApplicationCommandUtils from "application_commands/ApplicationCommandUtils" /* 14052 */;
 import react from "react" /* 19 */;
-import GuildMemberStore from "GuildMemberStore" /* 5052 */;
+import GuildMemberStore from "GuildMemberStore" /* 5054 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5140 */;
+import createStyles from "createStyles" /* 5142 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -23,7 +23,7 @@ const View = react_native.View;
 const AUTOCOMPLETE_ROW_HEIGHT = ApplicationCommandsConstants.AUTOCOMPLETE_ROW_HEIGHT;
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
 let closure_9 = createStyles.createStyles((arg0) => {
-  const obj = { applicationCommandItem: { flexDirection: "row", paddingVertical: 8, paddingHorizontal: 16, alignItems: "center", height: Math.max(arg0 * AUTOCOMPLETE_ROW_HEIGHT, AUTOCOMPLETE_ROW_HEIGHT) }, highlightedApplicationCommandItem: { backgroundColor: nativeDefault.colors.INTERACTIVE_BACKGROUND_HOVER }, applicationCommandIcon: size, applicationCommandDescriptionWrapper: { flexDirection: "column", flexShrink: 1, alignSelf: "flex-end" }, applicationCommandSectionName: { paddingLeft: 16, marginLeft: "auto" } };
+  const obj = { applicationCommandItem: { flexDirection: "row", paddingVertical: 8, paddingHorizontal: 16, alignItems: "center", height: Math.max(arg0 * AUTOCOMPLETE_ROW_HEIGHT, AUTOCOMPLETE_ROW_HEIGHT) }, highlightedApplicationCommandItem: { backgroundColor: nativeDefault.colors.INTERACTIVE_BACKGROUND_HOVER }, applicationCommandIcon: size, applicationCommandDescriptionWrapper: { flexDirection: "column", flex: 1, alignSelf: "flex-end" }, applicationCommandSectionName: { flexShrink: 1, maxWidth: "40%", paddingLeft: 16, marginLeft: "auto" } };
   ({ flexDirection: "row", paddingVertical: 8, paddingHorizontal: 16, alignItems: "center", height: Math.max(arg0 * AUTOCOMPLETE_ROW_HEIGHT, AUTOCOMPLETE_ROW_HEIGHT) });
   ({ backgroundColor: nativeDefault.colors.INTERACTIVE_BACKGROUND_HOVER });
   size = { width: 32, height: 32, borderRadius: nativeDefault.radii.lg, marginRight: 16 };
@@ -107,7 +107,7 @@ export default function ApplicationCommandItem(onPress) {
   const obj9 = { lineClamp: 1, variant: "body-xs/medium", color: "text-default", children: command.displayDescription };
   items3[1] = closure_7(tmp(tmp2[13]).Text, obj9);
   items2[1] = closure_8(View, obj7);
-  const obj10 = { style: tmp3.applicationCommandSectionName, variant: "body-sm/medium", color: "text-muted", children: name };
+  const obj10 = { style: tmp3.applicationCommandSectionName, lineClamp: 1, variant: "body-sm/medium", color: "text-muted", children: name };
   items2[2] = closure_7(tmp(tmp2[13]).Text, obj10);
   return closure_8(PressableOpacity, obj3);
 };

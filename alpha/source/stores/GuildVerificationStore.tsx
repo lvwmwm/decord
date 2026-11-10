@@ -1,17 +1,17 @@
-// Module ID: 6763
-// Function ID: 6764
+// Module ID: 6765
+// Function ID: 6766
 // Name: GuildVerificationStore
-// Dependencies: [5007, 5052, 5046, 5011, 1385, 1072, 5058, 1403, 572, 11, 504, 2]
+// Dependencies: [5009, 5054, 5048, 5013, 1385, 1072, 5060, 1403, 572, 11, 504, 2]
 
-// Module 6763 (GuildVerificationStore)
+// Module 6765 (GuildVerificationStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import GuildRecord from "GuildRecord" /* 5007 */;
-import GuildMemberConstants from "GuildMemberConstants" /* 5058 */;
-import GuildMemberStore from "GuildMemberStore" /* 5052 */;
-import GuildRoleStore from "GuildRoleStore" /* 5046 */;
-import GuildStore from "GuildStore" /* 5011 */;
+import GuildRecord from "GuildRecord" /* 5009 */;
+import GuildMemberConstants from "GuildMemberConstants" /* 5060 */;
+import GuildMemberStore from "GuildMemberStore" /* 5054 */;
+import GuildRoleStore from "GuildRoleStore" /* 5048 */;
+import GuildStore from "GuildStore" /* 5013 */;
 import UserStore from "UserStore" /* 1385 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
@@ -223,7 +223,7 @@ const isGuildOwner = GuildRecord.isGuildOwner;
 const GuildMemberFlags = GuildMemberConstants.GuildMemberFlags;
 let closure_12 = { notClaimed: false, notEmailVerified: false, notPhoneVerified: false, newAccount: false, newMember: false, missingVerificationRole: false, canChat: true };
 let set = new Set();
-const authStore3 = {};
+const gesture = {};
 const Store = get_initializedDefault.Store;
 class GuildVerificationStore extends Store {
   initialize() {

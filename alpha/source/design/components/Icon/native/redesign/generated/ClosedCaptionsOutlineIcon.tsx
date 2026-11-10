@@ -1,14 +1,14 @@
-// Module ID: 17269
-// Function ID: 17270
+// Module ID: 17296
+// Function ID: 17297
 // Name: ClosedCaptionsOutlineIcon
-// Dependencies: [19, 21, 575, 5841, 17270, 2]
+// Dependencies: [19, 21, 575, 5843, 17297, 2]
 // Exports: ClosedCaptionsOutlineIcon
 
-// Module 17269 (ClosedCaptionsOutlineIcon)
+// Module 17296 (ClosedCaptionsOutlineIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5841 */;
-import AssetRegistry from "AssetRegistry" /* 17270 */;
+import BaseIconImage2 from "BaseIconImage" /* 5843 */;
+import AssetRegistry from "AssetRegistry" /* 17297 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

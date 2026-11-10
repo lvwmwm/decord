@@ -1,12 +1,12 @@
-// Module ID: 18978
-// Function ID: 18979
+// Module ID: 19007
+// Function ID: 19008
 // Name: GuildRoleSubscriptionSettingsUtils
-// Dependencies: [5065, 6588, 2]
+// Dependencies: [5067, 6590, 2]
 // Exports: getCoverImageURI
 
-// Module 18978 (GuildRoleSubscriptionSettingsUtils)
-import StoreUtils from "StoreUtils" /* 6588 */;
-import GuildRoleSubscriptionsStore from "GuildRoleSubscriptionsStore" /* 5065 */;
+// Module 19007 (GuildRoleSubscriptionSettingsUtils)
+import StoreUtils from "StoreUtils" /* 6590 */;
+import GuildRoleSubscriptionsStore from "GuildRoleSubscriptionsStore" /* 5067 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/components/listing_elements/GuildRoleSubscriptionSettingsUtils.tsx");

@@ -1,22 +1,22 @@
-// Module ID: 13923
-// Function ID: 13924
+// Module ID: 13944
+// Function ID: 13945
 // Name: TraitOptionList
-// Dependencies: [32, 19, 17, 5141, 6199, 21, 575, 5140, 13924, 8101, 6566, 504, 5390, 1652, 5739, 1493, 5376, 2]
+// Dependencies: [32, 19, 17, 5143, 6201, 21, 575, 5142, 13945, 8105, 6568, 504, 13922, 13923, 5392, 1652, 5741, 1493, 5378, 2]
 // Exports: default
 
-// Module 13923 (TraitOptionList)
+// Module 13944 (TraitOptionList)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import HapticUtils from "HapticUtils" /* 5376 */;
-import CheckpointConstants from "CheckpointConstants" /* 6199 */;
-import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6566 */;
-import inlineStyles from "inlineStyles" /* 8101 */;
-import TraitOptionItem from "TraitOptionItem" /* 13924 */;
+import HapticUtils from "HapticUtils" /* 5378 */;
+import CheckpointConstants from "CheckpointConstants" /* 6201 */;
+import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6568 */;
+import inlineStyles from "inlineStyles" /* 8105 */;
+import TraitOptionItem from "TraitOptionItem" /* 13945 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5141 */;
+import AccessibilityStore from "AccessibilityStore" /* 5143 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5140 */;
+import createStyles from "createStyles" /* 5142 */;
 import size_mod from "module_2" /* 2 */;
 
 const inlineStylesDefault = inlineStyles;
@@ -49,66 +49,85 @@ let result = size.fileFinishedImporting("modules/checkpoint/native/components/cu
 
 export default function TraitOptionList(size) {
   let _undefined;
-  let c11;
+  let c12;
   let disabled;
-  let hideCornerFlag;
   let items2;
   let obj5;
-  let tmp16;
+  let tmp10;
+  let tmp17;
   let tmp2Result;
-  let tmp9;
   size = size.size;
   const options = size.options;
   ({ selectedOptionId: dependencyMap, disabled } = size);
   ({ hideRarity: react, onSelectOption: View } = size);
   let useReducedMotion;
-  c11 = undefined;
-  let c12;
+  c12 = undefined;
+  function handleScrollSettled(arg0) {
+    const tmp = disabled;
+    if (!tmp) {
+      const tmp2 = isScreenReaderEnabled;
+      if (!tmp2) {
+        const _Math = Math;
+        const _Math2 = Math;
+        const _Math3 = Math;
+        const tmp7 = options[Math.max(Math, 0, Math.min(Math, Math.round(Math, arg0 / c13), options.length - 1))];
+        if (null != tmp7) {
+          if (tmp7.optionId !== dependencyMap) {
+            View(tmp7.trait, tmp7.optionId);
+            const obj = HapticUtils;
+            const result = obj.triggerHapticFeedback(HapticUtils.HapticFeedbackTypes.IMPACT_LIGHT);
+            closure_7();
+          }
+        }
+      }
+    }
+  }
   function cancelScrollSettle() {
-    if (null != closure_10.current) {
+    if (null != closure_11.current) {
       const _clearTimeout = clearTimeout;
-      clearTimeout(closure_10.current);
-      closure_10.current = null;
+      clearTimeout(closure_11.current);
+      closure_11.current = null;
     }
   }
   const customizationOption = size.customizationOption;
   let tmp = c12();
   let tmp2 = size;
-  let tmp3 = dependencyMap;
   let obj = size(504);
   const items = [useReducedMotion];
   useReducedMotion = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
-  let obj2 = size(5390);
+  const tmp4 = options(13922);
+  let closure_7 = tmp4(options(13923));
+  let obj2 = size(5392);
   const isScreenReaderEnabled = obj2.useIsScreenReaderEnabled();
-  const obj3 = size(1652);
+  let obj3 = size(1652);
   const animatedRef = obj3.useAnimatedRef();
   const ref = react.useRef(false);
-  let closure_10 = react.useRef(null);
+  let closure_11 = react.useRef(null);
   const bound = Math.max(options.findIndex((optionId) => optionId.optionId === dependencyMap), 0);
-  let tmp7 = options(5739)(bound);
-  let tmp8 = disabled(react.useState(options(1493)().width), 2);
-  [tmp9, c11] = tmp8;
-  const width = size(13924).TRAIT_OPTION_SIZE_TO_DIMENSIONS[size].width;
-  const sum = width + closure_10;
-  c12 = sum;
+  const tmp8 = options(5741)(bound);
+  [tmp10, c12] = disabled(react.useState(options(1493)().width), 2);
+  const tmp9 = disabled(react.useState(options(1493)().width), 2);
+  const width = size(13945).TRAIT_OPTION_SIZE_TO_DIMENSIONS[size].width;
+  const sum = width + ref;
+  let c13 = sum;
   const items1 = [disabled, isScreenReaderEnabled];
-  const bound1 = Math.max(c11, tmp9 - c11 - width);
+  const bound1 = Math.max(closure_11, tmp10 - closure_11 - width);
   const effect = react.useEffect(() => cancelScrollSettle, items1);
   const obj4 = {
     ref: animatedRef,
     horizontal: true,
-    contentOffset: { x: tmp7 * sum, y: 0 },
+    contentOffset: { x: tmp8 * sum, y: 0 },
     scrollEnabled: !disabled,
     showsHorizontalScrollIndicator: false,
     decelerationRate: "fast",
-    snapToInterval: tmp16,
+    snapToInterval: tmp17,
     onScrollBeginDrag: function handleScrollBeginDrag() {
       const tmp = isScreenReaderEnabled;
       if (!tmp) {
-        if (null != closure_10.current) {
+        if (null != closure_11.current) {
           const _clearTimeout = clearTimeout;
-          clearTimeout(closure_10.current);
-          closure_10.current = null;
+          clearTimeout(closure_11.current);
+          closure_11.current = null;
         }
         ref.current = true;
       }
@@ -116,74 +135,40 @@ export default function TraitOptionList(size) {
     onScrollEndDrag: function scheduleScrollSettle(nativeEvent) {
       let closure_0;
       const x = nativeEvent.nativeEvent.contentOffset.x;
-      const tmp = closure_10;
-      if (null != closure_10.current) {
-        let tmp2 = globalThis;
+      if (null != closure_11.current) {
         const _clearTimeout = clearTimeout;
-        clearTimeout(tmp.current);
-        tmp.current = null;
+        clearTimeout(closure_11.current);
+        closure_11.current = null;
       }
-      tmp.current = setTimeout(() => {
-        closure_10.current = null;
+      closure_11.current = setTimeout(() => {
+        closure_11.current = null;
         ref.current = false;
-        const tmp2 = disabled;
-        if (!tmp2) {
-          const tmp3 = isScreenReaderEnabled;
-          if (!tmp3) {
-            const _Math = Math;
-            const _Math2 = Math;
-            const _Math3 = Math;
-            const tmp7 = options[Math.max(Math, 0, Math.min(Math, Math.round(Math, tmp / c12), options.length - 1))];
-            if (null != tmp7) {
-              if (tmp7.optionId !== dependencyMap) {
-                View(tmp7.trait, tmp7.optionId);
-                const obj = x(closure_1_2[16]);
-                const result = obj.triggerHapticFeedback(x(closure_1_2[16]).HapticFeedbackTypes.IMPACT_LIGHT);
-              }
-            }
-          }
-        }
+        handleScrollSettled(closure_0);
       }, 100);
     },
     onMomentumScrollBegin: cancelScrollSettle,
-    onMomentumScrollEnd: function handleMomentumScrollEnd(arg0) {
-      if (null != closure_10.current) {
+    onMomentumScrollEnd: function handleMomentumScrollEnd(nativeEvent) {
+      if (null != closure_11.current) {
         const _clearTimeout = clearTimeout;
-        clearTimeout(closure_10.current);
-        closure_10.current = null;
+        clearTimeout(closure_11.current);
+        closure_11.current = null;
       }
       if (ref.current) {
         tmp4.current = false;
-        const tmp7 = disabled;
-        if (!tmp7) {
-          const tmp8 = isScreenReaderEnabled;
-          if (!tmp8) {
-            const _Math = Math;
-            const _Math2 = Math;
-            const _Math3 = Math;
-            const tmp12 = options[Math.max(Math, 0, Math.min(Math, Math.round(Math, tmp6 / c12), options.length - 1))];
-            if (null != tmp12) {
-              if (tmp12.optionId !== dependencyMap) {
-                View(tmp12.trait, tmp12.optionId);
-                const obj = HapticUtils;
-                const result = obj.triggerHapticFeedback(HapticUtils.HapticFeedbackTypes.IMPACT_LIGHT);
-              }
-            }
-          }
-        }
+        handleScrollSettled(nativeEvent.nativeEvent.contentOffset.x);
       }
     },
     onLayout: function handleLayout(nativeEvent) {
       _undefined(nativeEvent.nativeEvent.layout.width);
     },
     contentContainerStyle: items2,
-    children: animatedRef(View, obj5)
+    children: isScreenReaderEnabled(View, obj5)
   };
-  tmp16 = undefined;
+  tmp17 = undefined;
   const ScrollView = options(1652).ScrollView;
-  const tmp13 = ref;
+  const tmp14 = animatedRef;
   if (!isScreenReaderEnabled) {
-    tmp16 = sum;
+    tmp17 = sum;
   }
   items2 = [tmp.assetList, { paddingRight: bound1 }];
   obj5 = {
@@ -192,15 +177,16 @@ export default function TraitOptionList(size) {
     accessibilityLabel: tmp2Result.getCustomizationOptionName(customizationOption),
     children: options.map((traitOption, index) => {
       let obj2;
+      let obj3;
       size = traitOption;
       let closure_1 = index;
       let obj = {
         size,
         traitOption,
-        accessibilityLabel: obj2.getAssetAccessibilityLabel(traitOption, hideCornerFlag),
+        accessibilityLabel: obj2.getAssetAccessibilityLabel(traitOption, obj3),
         isSelected: traitOption.optionId === dependencyMap,
         showSelectedBorder: isScreenReaderEnabled && traitOption.optionId === tmp4,
-        hideCornerFlag,
+        hideCornerFlag: skipDescription,
         disabled,
         onPress() {
           const tmp2 = index;
@@ -209,17 +195,18 @@ export default function TraitOptionList(size) {
             clearTimeout(ref.current);
             ref.current = null;
           }
-          closure_9.current = false;
+          closure_10.current = false;
           if (traitOption.optionId !== dependencyMap) {
             View(traitOption.trait, traitOption.optionId);
-            const obj = traitOption(closure_1_2[16]);
-            const result = obj.triggerHapticFeedback(traitOption(closure_1_2[16]).HapticFeedbackTypes.IMPACT_LIGHT);
+            const obj = traitOption(closure_1_2[18]);
+            const result = obj.triggerHapticFeedback(traitOption(closure_1_2[18]).HapticFeedbackTypes.IMPACT_LIGHT);
+            closure_7();
           }
-          const tmp11 = isScreenReaderEnabled;
-          if (!tmp11) {
+          const tmp13 = isScreenReaderEnabled;
+          if (!tmp13) {
             const current = animatedRef.current;
             if (current != null) {
-              const obj2 = { x: tmp2 * c12, animated: !useReducedMotion };
+              const obj2 = { x: tmp2 * c13, animated: !useReducedMotion };
               current.scrollTo(obj2);
             }
           }
@@ -227,18 +214,19 @@ export default function TraitOptionList(size) {
       };
       let tmp2 = options(dependencyMap[8]);
       obj2 = size(dependencyMap[10]);
-      return animatedRef(tmp2, obj, traitOption.optionId);
+      obj3 = { skipRarity: skipDescription, skipDescription };
+      return isScreenReaderEnabled(tmp2, obj, traitOption.optionId);
     })
   };
-  tmp2Result = tmp2(6566);
-  const children = [tmp15(ScrollView, obj4), ];
-  let tmp15Result = !isScreenReaderEnabled;
-  if (tmp15Result) {
+  tmp2Result = tmp2(6568);
+  const children = [tmp16(ScrollView, obj4), ];
+  let tmp16Result = !isScreenReaderEnabled;
+  if (tmp16Result) {
     const obj6 = { size };
-    tmp15Result = tmp15(cancelScrollSettle, obj6);
+    tmp16Result = tmp16(c13, obj6);
   }
-  children[1] = tmp15Result;
-  return tmp13(View, { children });
+  children[1] = tmp16Result;
+  return tmp14(View, { children });
 };
 export const TRAIT_OPTION_SPACING = PX_12;
 export const CONTENT_INSET = PX_16;

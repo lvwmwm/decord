@@ -1,13 +1,13 @@
-// Module ID: 7434
-// Function ID: 7435
+// Module ID: 7437
+// Function ID: 7438
 // Name: RoleIcon
-// Dependencies: [19, 21, 1377, 5842, 5751, 2]
+// Dependencies: [19, 21, 1377, 5844, 5753, 2]
 // Exports: default
 
-// Module 7434 (RoleIcon)
+// Module 7437 (RoleIcon)
 import Fragment from "Fragment" /* 21 */;
-import Text_Text from "Text/Text" /* 5751 */;
-import FastImageDefault from "FastImage" /* 5842 */;
+import Text_Text from "Text/Text" /* 5753 */;
+import FastImageDefault from "FastImage" /* 5844 */;
 import react from "react" /* 19 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import size_mod from "module_2" /* 2 */;
@@ -29,7 +29,7 @@ export default function RoleIcon(arg0) {
     size = 20;
   }
   const size1 = { height: size, width: size };
-  const obj = { fontFamily: "System", fontSize: size * num, lineHeight: "channel", textAlign: null, width: size, marginBottom: null };
+  const obj = { fontFamily: "System", fontSize: size * num, lineHeight: "channel", textAlign: -26148451, width: size, marginBottom: 297904 };
   if (null != src) {
     const obj3 = { uri: src };
     tmp = jsx(FastImageDefault, { resizeMode: "contain", source: obj3, style: size1 });

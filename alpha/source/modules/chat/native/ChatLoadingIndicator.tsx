@@ -1,29 +1,29 @@
-// Module ID: 14813
-// Function ID: 14814
+// Module ID: 14839
+// Function ID: 14840
 // Name: ChatLoadingIndicator
-// Dependencies: [32, 19, 17, 5141, 6623, 6194, 5043, 1385, 2117, 1072, 21, 5140, 575, 6091, 6162, 2118, 504, 5751, 14814, 1652, 5370, 1113, 7043, 2]
+// Dependencies: [32, 19, 17, 5143, 6625, 6196, 5045, 1385, 2117, 1072, 21, 5142, 575, 6093, 6164, 2118, 504, 5753, 14840, 1652, 5372, 1113, 7046, 2]
 // Exports: ChannelHeaderLoadingIndicator, useShouldChannelShowLoadingIndicator
 
-// Module 14813 (ChatLoadingIndicator)
+// Module 14839 (ChatLoadingIndicator)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import _mod1652 from "module_1652" /* 1652 */;
-import timing_timing from "timing/timing" /* 5370 */;
-import Text_Text from "Text/Text" /* 5751 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6091 */;
+import timing_timing from "timing/timing" /* 5372 */;
+import Text_Text from "Text/Text" /* 5753 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6093 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5141 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6623 */;
-import MessageStore from "MessageStore" /* 6194 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5043 */;
+import AccessibilityStore from "AccessibilityStore" /* 5143 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6625 */;
+import MessageStore from "MessageStore" /* 6196 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5045 */;
 import UserStore from "UserStore" /* 1385 */;
 import AppStateStore from "AppStateStore" /* 2117 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5140 */;
+import createStyles from "createStyles" /* 5142 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -117,13 +117,13 @@ let closure_18 = react.memo(function LoadingIndicatorDebugBody() {
   if (messagesCached !== false) {
     const obj3 = { variant: "body-md/normal", color: "text-muted", children: items2 };
     items2 = [" ", "(should be ", str3, " to hide loading indicator)"];
-    tmp4Result = tmp4(tmp(5751).Text, obj3);
+    tmp4Result = tmp4(tmp(5753).Text, obj3);
   }
   items1[4] = tmp4Result;
-  const items3 = [authStore3(closure_15, { children: items1 }), "\n", , , , , ];
+  const items3 = [gesture(clientStatuses, { children: items1 }), "\n", , , , , ];
   const items4 = ["messages.ready", ":", " ", , ];
   let str6 = str;
-  const Text3 = tmp(5751).Text;
+  const Text3 = tmp(5753).Text;
   if (messagesReady) {
     str6 = "text-feedback-positive";
   }
@@ -137,14 +137,14 @@ let closure_18 = react.memo(function LoadingIndicatorDebugBody() {
   if (messagesReady !== true) {
     const obj5 = { variant: "body-md/normal", color: "text-muted", children: items5 };
     items5 = [" ", "(should be ", "true", " to hide loading indicator)"];
-    tmp4Result3 = tmp4(tmp(5751).Text, obj5);
+    tmp4Result3 = tmp4(tmp(5753).Text, obj5);
   }
   items4[4] = tmp4Result3;
-  items3[2] = authStore3(closure_15, { children: items4 });
+  items3[2] = gesture(clientStatuses, { children: items4 });
   items3[3] = "\n";
   const items6 = ["connected", ":", " ", , ];
   let str10 = str;
-  const Text4 = tmp(5751).Text;
+  const Text4 = tmp(5753).Text;
   if (connected) {
     str10 = "text-feedback-positive";
   }
@@ -158,10 +158,10 @@ let closure_18 = react.memo(function LoadingIndicatorDebugBody() {
   if (connected !== true) {
     const obj7 = { variant: "body-md/normal", color: "text-muted", children: items7 };
     items7 = [" ", "(should be ", "true", " to hide loading indicator)"];
-    tmp4Result4 = tmp4(tmp(5751).Text, obj7);
+    tmp4Result4 = tmp4(tmp(5753).Text, obj7);
   }
   items6[4] = tmp4Result4;
-  items3[4] = authStore3(closure_15, { children: items6 });
+  items3[4] = gesture(clientStatuses, { children: items6 });
   items3[5] = "\n";
   if (!messagesCached) {
     messagesCached = !messagesReady;
@@ -170,7 +170,7 @@ let closure_18 = react.memo(function LoadingIndicatorDebugBody() {
     messagesCached = !connected;
   }
   const items8 = ["should show chat indicator", ":", " ", , ];
-  const Text5 = tmp(5751).Text;
+  const Text5 = tmp(5753).Text;
   if (messagesCached) {
     str = "text-feedback-positive";
   }
@@ -181,8 +181,8 @@ let closure_18 = react.memo(function LoadingIndicatorDebugBody() {
   items8[3] = map1(Text5, obj8);
   const obj9 = { variant: "body-md/normal", color: "text-default", children: items3 };
   items8[4] = null;
-  items3[6] = authStore3(closure_15, { children: items8 });
-  return authStore3(Text, obj9);
+  items3[6] = gesture(clientStatuses, { children: items8 });
+  return gesture(Text, obj9);
 });
 let closure_19 = { code: "(function ChatLoadingIndicatorTsx1(){let[useReducedMotion,withRepeat,withSequence,withTiming,Easing]=this.__closure;if(useReducedMotion){return{transform:[]};}return{transform:[{scale:withRepeat(withSequence(withTiming(1,{duration:0}),withTiming(0.5,{duration:1500,easing:Easing.bezier(0.4,0,0.2,1)}),withTiming(1,{duration:1500,easing:Easing.bezier(0.4,0,0.2,1)})),-1)}]};})" };
 size = size_mod;
@@ -316,15 +316,15 @@ export function ChannelHeaderLoadingIndicator() {
   items4 = [tmp.pulse, animatedStyle];
   items5 = [map1(_modDef1652.View, obj4), ];
   const obj5 = { variant: "body-xs/medium", color: "text-muted", children: intl.string(intl2.t.JwIJMV) };
-  const Text = tmp2(5751).Text;
+  const Text = tmp2(5753).Text;
   intl = tmp2(1113).intl;
   items5[1] = map1(Text, obj5);
-  const tmp15 = authStore3(View, obj3);
+  const tmp15 = gesture(View, obj3);
   let tmp14Result = tmp15;
   const tmp14 = map1;
   if (stateFromStores1) {
     const obj6 = { onPress: openLoadingIndicatorDebugBody, children: tmp15 };
-    tmp14Result = tmp14(tmp2(7043).PressableOpacity, obj6);
+    tmp14Result = tmp14(tmp2(7046).PressableOpacity, obj6);
   }
   return tmp14Result;
 }

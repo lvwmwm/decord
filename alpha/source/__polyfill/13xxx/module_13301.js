@@ -1,150 +1,151 @@
 // Module ID: 13301
 // Function ID: 13302
-// Dependencies: [13277, 13278, 13302, 13292, 13289, 13284]
-// Exports: closeSession, makeSession
+// Dependencies: [13299]
+// Exports: isMatchingPattern, safeJoin, snipLine, stringMatchesSomePattern, truncate
 
 // Module 13301
-import _mod13284 from "module_13284" /* 13284 */;
-import _mod13289 from "module_13289" /* 13289 */;
-import _browserPerformanceTimeOriginMode from "_browserPerformanceTimeOriginMode" /* 13292 */;
-import _mod13302 from "module_13302" /* 13302 */;
-import DEBUG_BUILD from "module_13277" /* 13277 */;
-import CONSOLE_LEVELS from "module_13278" /* 13278 */;
+import _mod13299 from "module_13299" /* 13299 */;
 
-function updateSession(ipAddress) {
-  let obj = arg1;
-  if (arg1 === undefined) {
-    obj = {};
+
+export function isMatchingPattern(arr, test) {
+  let flag = arg2;
+  if (arg2 === undefined) {
+    flag = false;
   }
-  if (obj.user) {
-    const tmp = !ipAddress.ipAddress && obj.user.ip_address;
-    if (tmp) {
-      ipAddress.ipAddress = obj.user.ip_address;
-    }
-    const tmp2 = ipAddress.did || obj.did;
-    if (!tmp2) {
-      ipAddress.did = obj.user.id || obj.user.email || obj.user.username;
-    }
-  }
-  let timestamp = obj.timestamp;
-  if (!timestamp) {
-    const obj2 = _browserPerformanceTimeOriginMode;
-    timestamp = obj2.timestampInSeconds();
-  }
-  ipAddress.timestamp = timestamp;
-  if (obj.abnormal_mechanism) {
-    ipAddress.abnormal_mechanism = obj.abnormal_mechanism;
-  }
-  if (obj.ignoreDuration) {
-    ipAddress.ignoreDuration = obj.ignoreDuration;
-  }
-  if (obj.sid) {
-    let sid;
-    if (32 === obj.sid.length) {
-      sid = obj.sid;
+  const obj = _mod13299;
+  let isStringResult = obj.isString(arr);
+  if (isStringResult) {
+    let isMatch;
+    const tmpResult = _mod13299;
+    if (tmpResult.isRegExp(test)) {
+      isMatch = test.test(arr);
     } else {
-      const obj3 = _mod13289;
-      sid = obj3.uuid4();
-    }
-    ipAddress.sid = sid;
-  }
-  if (undefined !== obj.init) {
-    ipAddress.init = obj.init;
-  }
-  const tmp7 = !ipAddress.did && obj.did;
-  if (tmp7) {
-    const _HermesInternal = HermesInternal;
-    ipAddress.did = "" + obj.did;
-  }
-  if (typeof obj.started === "number") {
-    ipAddress.started = obj.started;
-  }
-  if (ipAddress.ignoreDuration) {
-    ipAddress.duration = undefined;
-  } else if (typeof obj.duration === "number") {
-    ipAddress.duration = obj.duration;
-  } else {
-    const diff = ipAddress.timestamp - ipAddress.started;
-    let num2 = 0;
-    if (diff >= 0) {
-      num2 = diff;
-    }
-    ipAddress.duration = num2;
-  }
-  if (obj.release) {
-    ipAddress.release = obj.release;
-  }
-  if (obj.environment) {
-    ipAddress.environment = obj.environment;
-  }
-  const tmp9 = !ipAddress.ipAddress && obj.ipAddress;
-  if (tmp9) {
-    ipAddress.ipAddress = obj.ipAddress;
-  }
-  const tmp10 = !ipAddress.userAgent && obj.userAgent;
-  if (tmp10) {
-    ipAddress.userAgent = obj.userAgent;
-  }
-  if (typeof obj.errors === "number") {
-    ipAddress.errors = obj.errors;
-  }
-  if (obj.status) {
-    ipAddress.status = obj.status;
-  }
-}
-_mod13302;
-
-export function closeSession(status, status2) {
-  let obj;
-  const tmp = status2;
-  if (tmp) {
-    obj = { status: status2 };
-    const obj2 = { status: status2 };
-  } else {
-    obj = {};
-    if ("ok" === status.status) {
-      obj = { status: "exited" };
-    }
-  }
-  updateSession(status, obj);
-}
-export function makeSession(arg0) {
-  let obj2;
-  let obj3;
-  let obj = obj2(13292);
-  const timestampInSecondsResult = obj.timestampInSeconds();
-  obj2 = {
-    sid: obj3.uuid4(),
-    init: true,
-    timestamp: timestampInSecondsResult,
-    started: timestampInSecondsResult,
-    duration: 0,
-    status: "ok",
-    errors: 0,
-    ignoreDuration: false,
-    toJSON() {
-      let combined;
-      let date;
-      let date1;
-      const tmp2 = _mod13284;
-      const obj = { sid: "" + obj2.sid, init: obj2.init, started: date.toISOString(), timestamp: date1.toISOString(), status: null, errors: null, did: combined, duration: null, abnormal_mechanism: null, attrs: { release: obj2.release, environment: obj2.environment, ip_address: obj2.ipAddress, user_agent: obj2.userAgent } };
-      const dropUndefinedKeys = tmp2.dropUndefinedKeys;
-      date = new Date(1000 * obj2.started);
-      ({ status: obj.status, errors: obj.errors } = obj2);
-      date1 = new Date(1000 * obj2.timestamp);
-      if (typeof obj2.did === "number") {
-        const _HermesInternal = HermesInternal;
-        combined = "" + tmp.did;
+      const tmpResult2 = _mod13299;
+      isMatch = tmpResult2.isString(test);
+      if (isMatch) {
+        let hasItem;
+        if (flag) {
+          hasItem = arr === test;
+        } else {
+          hasItem = arr.includes(test);
+        }
+        isMatch = hasItem;
       }
-      ({ duration: obj.duration, abnormal_mechanism: obj.abnormal_mechanism } = obj2);
-      return dropUndefinedKeys(obj);
     }
-  };
-  obj3 = obj2(13289);
-  if (arg0) {
-    let tmp2 = updateSession;
-    updateSession(obj2, arg0);
+    isStringResult = isMatch;
   }
-  return obj2;
+  return isStringResult;
 }
-export { updateSession };
+export function safeJoin(arg0, arg1) {
+  if (Array.isArray(arg0)) {
+    const items = [];
+    let num = 0;
+    if (0 < arg0.length) {
+      try {
+        const push = items.push;
+        const obj = _mod13299;
+        if (obj.isVueViewModel(arg0[num])) {
+          push("[VueViewModel]");
+        } else {
+          const _String = String;
+          push(String(arg0[num]));
+        }
+      } catch (err) {
+        items.push("[value cannot be serialized]");
+      }
+      num = num + 1;
+    }
+    return items.join(arg1);
+  } else {
+    return "";
+  }
+}
+export function snipLine(arr, arg1) {
+  if (arr.length <= 150) {
+    return arr;
+  } else {
+    let tmp = arg1;
+    if (arg1 > arr.length) {
+      tmp = length;
+    }
+    const _Math = Math;
+    let num3 = Math.max(tmp - 60, 0);
+    if (num3 < 5) {
+      num3 = 0;
+    }
+    const _Math2 = Math;
+    let bound = Math.min(num3 + 140, length);
+    if (bound > arr.length - 5) {
+      bound = length;
+    }
+    if (bound === arr.length) {
+      const _Math3 = Math;
+      num3 = Math.max(bound - 140, 0);
+    }
+    const substr = arr.slice(num3, bound);
+    let combined = substr;
+    if (num3 > 0) {
+      const _HermesInternal = HermesInternal;
+      combined = "'{snip} " + substr;
+    }
+    let text = combined;
+    if (bound < arr.length) {
+      text = `${tmp6} {snip}`;
+    }
+    return text;
+  }
+}
+export function stringMatchesSomePattern(arg0) {
+  let closure_0 = arg0;
+  let items = arg1;
+  if (arg1 === undefined) {
+    items = [];
+  }
+  let flag = arg2;
+  if (arg2 === undefined) {
+    flag = false;
+  }
+  return items.some((test) => {
+    const obj2 = _mod13299;
+    let isStringResult = obj2.isString(obj);
+    if (isStringResult) {
+      let isMatch;
+      const tmpResult = _mod13299;
+      if (tmpResult.isRegExp(test)) {
+        isMatch = test.test(obj);
+      } else {
+        const tmpResult2 = _mod13299;
+        isMatch = tmpResult2.isString(test);
+        if (isMatch) {
+          let hasItem;
+          if (flag) {
+            hasItem = obj === test;
+          } else {
+            hasItem = obj.includes(test);
+          }
+          isMatch = hasItem;
+        }
+      }
+      isStringResult = isMatch;
+    }
+    return isStringResult;
+  });
+}
+export function truncate(str) {
+  let num = arg1;
+  if (arg1 === undefined) {
+    num = 0;
+  }
+  let combined = str;
+  if (typeof str === "string") {
+    combined = str;
+    if (0 !== num) {
+      combined = str;
+      if (str.length > num) {
+        const _HermesInternal = HermesInternal;
+        combined = "" + str.slice(0, num) + "...";
+      }
+    }
+  }
+  return combined;
+}

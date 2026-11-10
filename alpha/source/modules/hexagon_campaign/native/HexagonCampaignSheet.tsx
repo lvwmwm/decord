@@ -1,28 +1,28 @@
-// Module ID: 17324
-// Function ID: 17325
+// Module ID: 17351
+// Function ID: 17352
 // Name: HexagonCampaignSheet
-// Dependencies: [5, 32, 19, 17, 1193, 1385, 16539, 5165, 5389, 10101, 1240, 1083, 21, 1395, 1396, 9370, 5140, 575, 5168, 504, 7387, 7412, 15625, 5167, 9069, 1627, 2171, 10102, 16779, 6839, 17325, 5837, 1113, 5374, 17323, 4411, 10855, 5751, 17330, 5388, 7382, 16801, 5758, 17331, 7126, 7429, 17332, 2]
+// Dependencies: [5, 32, 19, 17, 1193, 1385, 16566, 5167, 5391, 10107, 1240, 1083, 21, 1395, 1396, 9376, 5142, 575, 5170, 504, 7390, 7415, 15653, 5169, 9075, 1627, 2171, 10108, 16806, 6842, 17352, 5839, 1113, 5376, 17350, 4413, 10864, 5753, 17357, 5390, 7385, 16828, 5760, 17358, 7129, 7432, 17359, 2]
 // Exports: default
 
-// Module 17324 (HexagonCampaignSheet)
+// Module 17351 (HexagonCampaignSheet)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
 import ClientThemesConstants from "ClientThemesConstants" /* 1240 */;
 import DisplayNameFont from "DisplayNameFont" /* 1395 */;
 import DisplayNameEffect from "DisplayNameEffect" /* 1396 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 5389 */;
-import useDisplayNameStylesFont from "useDisplayNameStylesFont" /* 9370 */;
-import AppIconConstants from "AppIconConstants" /* 10101 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 5391 */;
+import useDisplayNameStylesFont from "useDisplayNameStylesFont" /* 9376 */;
+import AppIconConstants from "AppIconConstants" /* 10107 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1193 */;
 import UserStore from "UserStore" /* 1385 */;
-import HexagonCampaignPersistedStore from "HexagonCampaignPersistedStore" /* 16539 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5165 */;
+import HexagonCampaignPersistedStore from "HexagonCampaignPersistedStore" /* 16566 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5167 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5142 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -75,7 +75,7 @@ function ScaledPreview(arg0) {
   items = [tmp.scaledPreviewContainer, { marginTop: PX_12 }];
   items1 = [, ];
   const obj2 = { style: tmp.scaledPreview, onLayout: callback, children };
-  items1[0] = authStore4(metroRequire, obj2);
+  items1[0] = authStore3(metroRequire, obj2);
   items1[1] = overlay;
   return closure_17(metroRequire, obj);
 }

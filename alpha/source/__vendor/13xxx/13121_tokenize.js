@@ -1,62 +1,44 @@
 // Module ID: 13121
 // Function ID: 13122
 // Name: tokenize
-// Dependencies: [13050]
+// Dependencies: [13064]
 
 // Module 13121 (tokenize)
-import tokenize from "tokenize" /* 13050 */;
+import tokenize from "tokenize" /* 13064 */;
 
-let rect;
-function consumeNumber() {
-  let num;
-  const self = this;
-  const scanner = this.scanner;
-  scanner.skipWS();
-  const consumeResult = this.consume(Number);
-  for (let num = 0; num < consumeResult.length; num = num + 1) {
-    let charCodeAtResult = consumeResult.charCodeAt(num);
-    let obj = tokenize;
-    let isDigitResult = obj.isDigit(charCodeAtResult);
-    if (!isDigitResult) {
-      isDigitResult = 46 === charCodeAtResult;
-    }
-    if (!isDigitResult) {
-      let errorResult = self.error("Unsigned number is expected", self.scanner.tokenStart - consumeResult.length + num);
-    }
-  }
-  if (0 === Number(consumeResult)) {
-    self.error("Zero number is not allowed", self.scanner.tokenStart - consumeResult.length);
-  }
-  return consumeResult;
-}
-const Number = tokenize.TYPE.Number;
-const Delim = tokenize.TYPE.Delim;
+let items;
+let obj2;
+const RightParenthesis = tokenize.TYPE.RightParenthesis;
 let obj = {
-  name: "Ratio",
-  structure: rect,
-  parse() {
-    let callResult1;
+  name: "Function",
+  structure: obj2,
+  parse(call, arg1) {
+    let callResult;
     const self = this;
     const tokenStart = this.scanner.tokenStart;
-    const scanner = self.scanner;
-    const callResult = consumeNumber.call(self);
-    scanner.skipWS();
-    const scanner2 = self.scanner;
-    const obj = consumeNumber;
-    if (!scanner2.isDelim(47)) {
-      self.error("Solidus is expected");
+    const str = this.consumeFunctionName();
+    const formatted = str.toLowerCase();
+    if (arg1.hasOwnProperty(formatted)) {
+      const obj = arg1[formatted];
+      callResult = obj.call(self, arg1);
+    } else {
+      callResult = call.call(self, arg1);
     }
-    self.eat(Delim);
-    const rect = { type: "Ratio", loc: self.getLocation(tokenStart, self.scanner.tokenStart), left: callResult, right: callResult1 };
-    callResult1 = obj.call(self);
-    return rect;
+    if (!self.scanner.eof) {
+      self.eat(RightParenthesis);
+    }
+    const element = { type: "Function", loc: self.getLocation(tokenStart, self.scanner.tokenStart), name: str, children: callResult };
+    return element;
   },
-  generate(left) {
-    this.chunk(left.left);
-    this.chunk("/");
-    this.chunk(left.right);
-  }
+  generate(name) {
+    this.chunk(name.name);
+    this.chunk("(");
+    this.children(name);
+    this.chunk(")");
+  },
+  walkContext: "function"
 };
-rect = { left: String, right: String };
+obj2 = { name: String, children: items };
+items = [[]];
 
 export default obj;

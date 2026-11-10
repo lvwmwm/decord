@@ -1,18 +1,18 @@
-// Module ID: 18124
-// Function ID: 18125
+// Module ID: 18151
+// Function ID: 18152
 // Name: UserSettingsDesignSystemTooltip
-// Dependencies: [32, 19, 17, 21, 5140, 8977, 10077, 5758, 7429, 7124, 7127, 5751, 7355, 5738, 2]
+// Dependencies: [32, 19, 17, 21, 5142, 8983, 10083, 5760, 7432, 7127, 7130, 5753, 7358, 5740, 2]
 // Exports: default, useCanRotate
 
-// Module 18124 (UserSettingsDesignSystemTooltip)
+// Module 18151 (UserSettingsDesignSystemTooltip)
 import react_native from "react-native" /* 17 */;
-import LayerScope2 from "LayerScope" /* 5738 */;
-import Text_Text from "Text/Text" /* 5751 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7355 */;
+import LayerScope2 from "LayerScope" /* 5740 */;
+import Text_Text from "Text/Text" /* 5753 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7358 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5140 */;
+import createStyles from "createStyles" /* 5142 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -67,10 +67,10 @@ function Content() {
       return closure_1_1(false);
     }
   }), items1);
-  const obj2 = visible(10077);
+  const obj2 = visible(10083);
   const tooltip = obj2.useTooltip(ref, memo);
   const obj3 = { children: items2 };
-  const obj4 = { style: tmp.container, children: closure_5(visible(5758).Button, obj5) };
+  const obj4 = { style: tmp.container, children: closure_5(visible(5760).Button, obj5) };
   obj5 = {
     ref,
     onPress() {
@@ -80,7 +80,7 @@ function Content() {
     text: str,
     size: "md"
   };
-  items2 = [closure_5(View, obj4), closure_5(visible(7429).TableSwitchRow, { label: "Unlock Orientation", value: tmp10, onValueChange: tmp11 }), , ];
+  items2 = [closure_5(View, obj4), closure_5(visible(7432).TableSwitchRow, { label: "Unlock Orientation", value: tmp10, onValueChange: tmp11 }), , ];
   const obj6 = {
     title: "Position",
     value: first2,
@@ -91,7 +91,7 @@ function Content() {
       return closure_1_5(first(closure_1[10]).TableRadioRow, obj, label);
     })
   };
-  const TableRadioGroup = visible(7124).TableRadioGroup;
+  const TableRadioGroup = visible(7127).TableRadioGroup;
   items2[2] = closure_5(TableRadioGroup, obj6);
   items2[3] = closure_5(TooltipNote, {});
   return closure_7(closure_6, obj3);

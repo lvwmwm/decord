@@ -1,88 +1,28 @@
 // Module ID: 16247
 // Function ID: 16248
-// Dependencies: [16241, 16212, 16232]
+// Dependencies: [16239]
 
 // Module 16247
-import _mod16212 from "module_16212" /* 16212 */;
+import _mod16239 from "module_16239" /* 16239 */;
 
-let tmp;
-const _mod16232 = tmp(16232);
 
-export default function(arg0, arg1) {
-  let obj;
-  let tmp = obj;
-  obj = new obj(16241)(arg0, arg1);
-  const tmp3 = new obj(16212)("0.0.0");
-  if (obj.test(tmp3)) {
-    return tmp3;
-  } else {
-    let self = this;
-    let self2 = this;
-    const tmp4 = new tmp(16212)("0.0.0-0");
-    if (obj.test(tmp4)) {
-      return tmp4;
-    } else {
-      let num = 0;
-      let num3 = 0;
-      let tmp7 = null;
-      let tmp8 = null;
-      if (0 < obj.set.length) {
-        do {
-          let arr = obj.set[num3];
-          obj = null;
-          let item = arr.forEach(function(semver) {
-            obj = new _mod16212(semver.semver.version);
-            const operator = semver.operator;
-            if (">" === operator) {
-              if (0 === obj.prerelease.length) {
-                obj.patch = obj.patch + 1;
-              } else {
-                const prerelease = obj.prerelease;
-                prerelease.push(0);
-              }
-              obj.raw = obj.format();
-            } else if ("" !== operator) {
-              if (">=" !== operator) {
-                if ("<" !== operator) {
-                  if ("<=" !== operator) {
-                    const _Error = Error;
-                    const _HermesInternal = HermesInternal;
-                    const self = this;
-                    const self2 = this;
-                    const error = new Error("Unexpected operation: " + semver.operator);
-                    throw error;
-                  }
-                }
-              }
-            }
-            obj && !_mod16232(obj, obj);
-          });
-          let tmp11 = !obj;
-          let tmp12 = tmp7;
-          if (obj) {
-            let tmp14 = tmp12;
-            if (tmp14) {
-              tmp14 = !obj(16232)(tmp12, obj);
-            }
-            tmp11 = tmp14;
-          }
-          if (!tmp11) {
-            tmp12 = obj;
-          }
-          num3 = num + 1;
-          tmp7 = tmp12;
-          tmp8 = tmp12;
-          num = num3;
-        } while (num3 < obj.set.length);
-      }
-      let tmp18 = null;
-      if (tmp8) {
-        tmp18 = null;
-        if (obj.test(tmp8)) {
-          tmp18 = tmp8;
-        }
-      }
-      return tmp18;
+export default function(version, pre, major2, arg3, arg4) {
+  let tmp = arg4;
+  let tmp2 = arg3;
+  if (typeof major2 === "string") {
+    tmp = arg3;
+    tmp2 = major2;
+  }
+  try {
+    const tmp7 = _mod16239;
+    if (version instanceof _mod16239) {
+      version = version.version;
     }
+    const self = this;
+    const self2 = this;
+    const tmp72 = new tmp7(version, major2);
+    return tmp72.inc(pre, tmp2, tmp).version;
+  } catch (err) {
+    return null;
   }
 };

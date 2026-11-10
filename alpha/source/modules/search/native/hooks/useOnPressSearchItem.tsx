@@ -1,27 +1,27 @@
-// Module ID: 19065
-// Function ID: 19066
+// Module ID: 19094
+// Function ID: 19095
 // Name: useOnPressSearchItem
-// Dependencies: [5, 19, 7846, 4989, 14134, 9917, 19066, 9916, 1072, 4996, 14120, 14145, 1378, 5836, 1113, 9019, 5834, 1499, 14232, 19067, 14123, 9969, 9987, 1108, 6808, 8907, 7549, 5885, 8008, 2118, 6789, 14981, 6177, 8703, 6999, 1099, 14141, 2]
+// Dependencies: [5, 19, 7850, 4991, 14160, 9923, 19095, 9922, 1072, 4998, 14146, 14171, 1378, 5838, 1113, 9025, 5836, 1499, 14258, 19096, 14149, 9975, 9993, 1108, 6811, 8913, 7552, 5887, 8012, 2118, 6791, 15007, 6179, 8709, 7002, 1099, 14167, 2]
 // Exports: useOnPressConversationCitation, useOnPressDMItem, useOnPressGroupDMItem, useOnPressGuildTextChannel, useOnPressGuildVoiceChannel, useOnPressMediaItem, useOnPressMessageItem, useOnPressSearchHistoryText, useOnPressSearchLink
 
-// Module 19065 (useOnPressSearchItem)
+// Module 19094 (useOnPressSearchItem)
 import intl2 from "intl" /* 1113 */;
 import URLUtilsDefault from "URLUtils" /* 1378 */;
-import ChannelConstants from "ChannelConstants" /* 4996 */;
-import ToastUtils from "ToastUtils" /* 5836 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7549 */;
-import MaskedLinkUtils from "MaskedLinkUtils" /* 9019 */;
-import TrackingConstants from "TrackingConstants" /* 9916 */;
-import SearchPlatformUtils from "SearchPlatformUtils" /* 14120 */;
-import TrackingDefault from "Tracking" /* 14141 */;
-import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 14145 */;
-import SearchNavigatorConstants from "SearchNavigatorConstants" /* 19066 */;
+import ChannelConstants from "ChannelConstants" /* 4998 */;
+import ToastUtils from "ToastUtils" /* 5838 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7552 */;
+import MaskedLinkUtils from "MaskedLinkUtils" /* 9025 */;
+import TrackingConstants from "TrackingConstants" /* 9922 */;
+import SearchPlatformUtils from "SearchPlatformUtils" /* 14146 */;
+import TrackingDefault from "Tracking" /* 14167 */;
+import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 14171 */;
+import SearchNavigatorConstants from "SearchNavigatorConstants" /* 19095 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ConversationPreviewStore from "ConversationPreviewStore" /* 7846 */;
-import ChannelStore from "ChannelStore" /* 4989 */;
-import SearchQueryStore from "SearchQueryStore" /* 14134 */;
-import SearchConstants from "SearchConstants" /* 9917 */;
+import ConversationPreviewStore from "ConversationPreviewStore" /* 7850 */;
+import ChannelStore from "ChannelStore" /* 4991 */;
+import SearchQueryStore from "SearchQueryStore" /* 14160 */;
+import SearchConstants from "SearchConstants" /* 9923 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -191,7 +191,7 @@ export function useOnPressMessageItem(searchContext) {
         tmp = searchContext;
         const tmp2 = context;
         if (guildId == null) {
-          guildId = closure_15;
+          guildId = clientStatuses;
         }
         if (null != tmp2) {
           const obj3 = { screen: SearchNavigatorScreens.SEARCH_CHAT_PREVIEW, params: obj4 };
@@ -354,7 +354,7 @@ export function useOnPressMediaItem(searchContext) {
           tmp = searchContext;
           const tmp2 = context;
           if (guildId == null) {
-            guildId = closure_15;
+            guildId = clientStatuses;
           }
           if (null != tmp2) {
             const obj3 = { screen: SearchNavigatorScreens.SEARCH_CHAT_PREVIEW, params: obj4 };
@@ -392,7 +392,7 @@ export function useOnPressMediaItem(searchContext) {
             tmp = searchContext;
             const tmp2 = context;
             if (guildId == null) {
-              guildId = closure_15;
+              guildId = clientStatuses;
             }
             if (null != tmp2) {
               const obj3 = { screen: SearchNavigatorScreens.SEARCH_CHAT_PREVIEW, params: obj4 };
@@ -453,7 +453,7 @@ export function useOnPressGroupDMItem(searchContext) {
       parent.goBack();
     }
     const obj4 = ChannelActionCreatorsDefault;
-    obj4.preload(closure_15, channelId);
+    obj4.preload(clientStatuses, channelId);
     const obj5 = SearchPlatformUtils;
     const result1 = obj5.performKeyboardAwareNavigation(() => {
       obj = searchContext(closure_2_2[27]);
@@ -482,7 +482,7 @@ export function useOnPressDMItem(searchContext) {
       parent.goBack();
     }
     const obj4 = ChannelActionCreatorsDefault;
-    obj4.preload(closure_15, arg1);
+    obj4.preload(clientStatuses, arg1);
     const obj5 = SearchPlatformUtils;
     const result1 = obj5.performKeyboardAwareNavigation(() => {
       obj = searchContext(closure_2_2[27]);

@@ -1,16 +1,16 @@
-// Module ID: 10425
-// Function ID: 10426
+// Module ID: 10431
+// Function ID: 10432
 // Name: HorizontalAutocompleteWrapper
-// Dependencies: [19, 1072, 21, 10426, 10638, 1652, 5370, 7357, 2]
+// Dependencies: [19, 1072, 21, 10432, 10644, 10647, 1652, 5372, 7360, 2]
 // Exports: default
 
-// Module 10425 (HorizontalAutocompleteWrapper)
+// Module 10431 (HorizontalAutocompleteWrapper)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
-let item;
+let item, keyExtractor, results;
 
 function getItemKey(type) {
   type = type.type;
@@ -36,41 +36,53 @@ let closure_7 = { code: "(function HorizontalAutocompleteWrapperTsx1(){let[withT
 const result = size.fileFinishedImporting("modules/forums/native/composer/horizontal_autocomplete/HorizontalAutocompleteWrapper.tsx");
 
 export default function HorizontalAutocompleteWrapper(channel) {
-  let autocompleteSelectionStart;
-  let items5;
+  let items6;
   let obj4;
   let selection;
   let style;
   let text;
-  let tmp11;
-  let tmp12;
-  let tmp13;
+  let tmp14;
+  let tmp15;
+  let tmp16;
   channel = channel.channel;
   const onPressAutocompleteItem = channel.onPressAutocompleteItem;
-  autocompleteSelectionStart = undefined;
-  let callback;
-  let tmp2 = autocompleteSelectionStart;
+  results = undefined;
+  keyExtractor = undefined;
+  let tmp2 = results;
   ({ style, text, selection } = channel);
-  let obj = channel(autocompleteSelectionStart[3]);
+  let obj = channel(results[3]);
   const horizontalAutocompleteResults = obj.useHorizontalAutocompleteResults({ channel, text, selection });
-  ({ results, autocompleteSelectionStart } = horizontalAutocompleteResults);
+  results = horizontalAutocompleteResults.results;
+  const autocompleteSelectionStart = horizontalAutocompleteResults.autocompleteSelectionStart;
   const query = horizontalAutocompleteResults.query;
-  let obj2 = query;
-  const ref = query.useRef(null);
+  let obj2 = autocompleteSelectionStart;
+  const ref = autocompleteSelectionStart.useRef(null);
   const first = results[0];
   let type;
   if (first != null) {
     type = first.type;
   }
-  const items = [query, type];
+  let items = [query, type];
   const effect = obj2.useEffect(() => {
     const current = ref.current;
     if (current != null) {
       current.scrollToOffset({ offset: 0, animated: false });
     }
   }, items);
-  const items1 = [onPressAutocompleteItem, autocompleteSelectionStart, query];
-  callback = obj2.useCallback((stopPropagation, arg1) => {
+  let items1 = [results];
+  const memo = obj2.useMemo(() => results.flatMap((type) => {
+    let items1;
+    if (type.type === constants.USER) {
+      const items = [type.user.id];
+      items1 = items;
+    } else {
+      items1 = [];
+    }
+    return items1;
+  }), items1);
+  onPressAutocompleteItem(tmp2[4])(channel.guild_id, memo);
+  const items2 = [onPressAutocompleteItem, autocompleteSelectionStart, query];
+  keyExtractor = obj2.useCallback((stopPropagation, arg1) => {
     stopPropagation.stopPropagation();
     let num = autocompleteSelectionStart;
     const tmp2 = onPressAutocompleteItem;
@@ -82,89 +94,90 @@ export default function HorizontalAutocompleteWrapper(channel) {
       str = "";
     }
     tmp2(arg1, num, str);
-  }, items1);
-  const items2 = [channel.guild_id, callback];
+  }, items2);
+  const items3 = [channel.guild_id, keyExtractor];
   let num = 0;
   const callback1 = obj2.useCallback((item) => {
     item = item.item;
     const type = item.type;
-    if (ref.USER === type) {
+    if (query.USER === type) {
       const obj2 = {
         guildId: item.guild_id,
         onPress(arg0) {
             return callback(arg0, item);
           }
       };
-      const User = onPressAutocompleteItem(autocompleteSelectionStart[4]).User;
+      const User = onPressAutocompleteItem(results[5]).User;
       const merged = Object.assign(item);
-      return callback(User, obj2);
-    } else if (ref.ROLE === type) {
+      return ref(User, obj2);
+    } else if (query.ROLE === type) {
       const obj3 = {
         guildId: item.guild_id,
         onPress(arg0) {
             return callback(arg0, item);
           }
       };
-      const Role = onPressAutocompleteItem(autocompleteSelectionStart[4]).Role;
+      const Role = onPressAutocompleteItem(results[5]).Role;
       const merged1 = Object.assign(item);
-      return callback(Role, obj3);
-    } else if (ref.CHANNEL === type) {
+      return ref(Role, obj3);
+    } else if (query.CHANNEL === type) {
       const obj4 = {
         onPress(arg0) {
             return callback(arg0, item);
           }
       };
-      const Channel = onPressAutocompleteItem(autocompleteSelectionStart[4]).Channel;
+      const Channel = onPressAutocompleteItem(results[5]).Channel;
       const merged2 = Object.assign(item);
-      return callback(Channel, obj4);
-    } else if (ref.EMOJI === type) {
+      return ref(Channel, obj4);
+    } else if (query.EMOJI === type) {
       const obj = {
         onPress(arg0) {
             return callback(arg0, item);
           }
       };
-      const Emoji = onPressAutocompleteItem(autocompleteSelectionStart[4]).Emoji;
+      const Emoji = onPressAutocompleteItem(results[5]).Emoji;
       const merged3 = Object.assign(item);
-      return callback(Emoji, obj);
+      return ref(Emoji, obj);
     } else {
       return null;
     }
-  }, items2);
+  }, items3);
+  const tmp9 = onPressAutocompleteItem;
   if (results.length > 0) {
     num = 1;
   }
-  const items3 = [closure_7, , ];
-  const useAnimatedStyle = tmp(tmp2[5]).useAnimatedStyle;
-  channel(tmp2[5]);
-  items3[1] = channel(tmp2[6]).withTiming;
-  items3[2] = num;
+  const items4 = [closure_7, , ];
+  const useAnimatedStyle = tmp(tmp2[6]).useAnimatedStyle;
+  channel(tmp2[6]);
+  items4[1] = channel(tmp2[7]).withTiming;
+  items4[2] = num;
   let c0;
   let c1;
-  [tmp11, tmp12, tmp13] = items3;
+  [tmp14, tmp15, tmp16] = items4;
   class HorizontalAutocompleteWrapperTsx1 {
     constructor() {
       const obj = { opacity: _undefined(c1) };
       return obj;
     }
   }
-  const items4 = [tmp12, tmp13];
-  HorizontalAutocompleteWrapperTsx1.__closure = items4;
+  const items5 = [tmp15, tmp16];
+  HorizontalAutocompleteWrapperTsx1.__closure = items5;
   HorizontalAutocompleteWrapperTsx1.__workletHash = 15765485703035;
-  HorizontalAutocompleteWrapperTsx1.__initData = tmp11;
+  HorizontalAutocompleteWrapperTsx1.__initData = tmp14;
   const animatedStyle = useAnimatedStyle(HorizontalAutocompleteWrapperTsx1);
-  let obj3 = { style: items5, children: callback(tmp(tmp2[7]).FlashList, obj4) };
-  items5 = [style, animatedStyle];
-  const View = onPressAutocompleteItem(tmp2[5]).View;
+  let obj3 = { style: items6, children: ref(tmp(tmp2[8]).FlashList, obj4) };
+  items6 = [style, animatedStyle];
+  const View = tmp9(tmp2[6]).View;
   obj4 = {
     ref,
     keyboardShouldPersistTaps: "always",
     horizontal: true,
-    keyExtractor: getItemKey,
+    keyExtractor,
     getItemType(type) {
       return type.type;
     },
     data: results,
     renderItem: callback1
   };
-  return callback(View, obj3);
+  return ref(View, obj3);
 };

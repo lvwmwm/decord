@@ -1,75 +1,311 @@
 // Module ID: 5542
 // Function ID: 5543
-// Dependencies: [5424, 5425]
+// Dependencies: [32, 109, 19, 17, 21, 5444, 5497, 5526, 5524, 5502]
+// Exports: Touchable
 
 // Module 5542
-import tagMessage from "tagMessage" /* 5424 */;
-import State from "State" /* 5425 */;
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import JSResponderContext from "JSResponderContext" /* 5497 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
+import react_mod from "react" /* 19 */;
 
-let activate;
-let deactivate;
-let fail;
-let tmp10;
-let tmp11;
-let tmp12;
-let tmp2;
-let tmp3;
-let tmp4;
-let tmp5;
-let tmp6;
-let tmp7;
-let tmp8;
-let tmp9;
-const items = [{ code: "(function pnpm_gestureStateManagerTs1(handlerTag,state){let[tagMessage]=this.__closure;if(globalThis._setGestureStateSync){globalThis._setGestureStateSync(handlerTag,state);}else if(globalThis._setGestureStateAsync){globalThis._setGestureStateAsync(handlerTag,state);}else{throw new Error(tagMessage('Failed to set gesture state'));}})" }, tagMessage.tagMessage];
-[tmp2, tmp3] = items;
-function pnpm_gestureStateManagerTs1(arg0, arg1) {
-  const _globalThis = globalThis;
-  if (globalThis._setGestureStateSync) {
-    _globalThis._setGestureStateSync(arg0, arg1);
-  } else if (_globalThis._setGestureStateAsync) {
-    const _globalThis2 = globalThis;
-    const result = globalThis._setGestureStateAsync(arg0, arg1);
-  } else {
-    const _Error = Error;
-    const self = this;
-    const self2 = this;
-    const error = new Error(_undefined("Failed to set gesture state"));
-    throw error;
+let c10;
+let c9;
+let metroImportAll;
+let metroImportDefault;
+let metroRequire;
+let closure_3 = ["underlayColor", "defaultUnderlayOpacity", "activeUnderlayOpacity", "defaultOpacity", "animationDuration", "androidRipple", "delayLongPress", "onLongPress", "onPress", "onPressIn", "onPressOut", "onHoverIn", "onHoverOut", "children", "disabled", "cancelOnLeave", "immediatePressOut", "ref"];
+let react = react_mod;
+({ use: metroRequire, useCallback: metroImportDefault, useMemo: metroImportAll, useRef: c9, useState: c10 } = react);
+react = react_mod;
+const Platform = react_native.Platform;
+const jsx = Fragment.jsx;
+let closure_12 = { rippleColor: "transparent" };
+
+export const Touchable = (underlayColor) => {
+  let androidRipple;
+  let animationDuration;
+  let borderless;
+  let delayLongPress;
+  let foreground;
+  let hitSlop;
+  let num10;
+  let num11;
+  let num8;
+  let num9;
+  let obj;
+  let radius;
+  let tmp19Result2;
+  let tmp30;
+  underlayColor = underlayColor.underlayColor;
+  let str = "transparent";
+  if (undefined !== underlayColor) {
+    str = underlayColor;
   }
-}
-const items1 = [tmp3];
-pnpm_gestureStateManagerTs1.__closure = items1;
-pnpm_gestureStateManagerTs1.__workletHash = 7329582373210;
-pnpm_gestureStateManagerTs1.__initData = tmp2;
-const items2 = [{ code: "(function activate_Pnpm_gestureStateManagerTs2(handlerTag){let[setGestureState,State]=this.__closure;setGestureState(handlerTag,State.ACTIVE);})" }, pnpm_gestureStateManagerTs1, State.State];
-[tmp4, tmp5, tmp6] = items2;
-const obj = { activate, fail, deactivate };
-activate = function activate(arg0) {
-  _undefined(arg0, _undefined2.ACTIVE);
+  const defaultUnderlayOpacity = underlayColor.defaultUnderlayOpacity;
+  let num = 0;
+  if (undefined !== defaultUnderlayOpacity) {
+    num = defaultUnderlayOpacity;
+  }
+  const activeUnderlayOpacity = underlayColor.activeUnderlayOpacity;
+  let num2 = 0.105;
+  if (undefined !== activeUnderlayOpacity) {
+    num2 = activeUnderlayOpacity;
+  }
+  const defaultOpacity = underlayColor.defaultOpacity;
+  let num3 = 1;
+  if (undefined !== defaultOpacity) {
+    num3 = defaultOpacity;
+  }
+  ({ animationDuration, androidRipple, delayLongPress } = underlayColor);
+  let num4 = 600;
+  if (undefined !== delayLongPress) {
+    num4 = delayLongPress;
+  }
+  const onLongPress = underlayColor.onLongPress;
+  const onPress = underlayColor.onPress;
+  const onPressIn = underlayColor.onPressIn;
+  const onPressOut = underlayColor.onPressOut;
+  const onHoverIn = underlayColor.onHoverIn;
+  const onHoverOut = underlayColor.onHoverOut;
+  let disabled = underlayColor.disabled;
+  let tmp = undefined !== disabled;
+  const children = underlayColor.children;
+  if (tmp) {
+    tmp = disabled;
+  }
+  disabled = tmp;
+  const cancelOnLeave = underlayColor.cancelOnLeave;
+  const immediatePressOut = underlayColor.immediatePressOut;
+  let ref = underlayColor.ref;
+  const tmp2 = undefined === cancelOnLeave || cancelOnLeave;
+  const tmp3 = undefined === immediatePressOut || immediatePressOut;
+  const tmp5 = onHoverOut(underlayColor, onPressOut);
+  const first = onHoverIn(closure_10(() => {
+    const obj = onLongPress(onPressIn[5]);
+    return obj.getNextHandlerTag();
+  }), 1)[0];
+  if (undefined === animationDuration) {
+    obj = { tapAnimationInDuration: 50, tapAnimationOutDuration: 100, longPressAnimationOutDuration: 100, hoverAnimationInDuration: 50, hoverAnimationOutDuration: 100 };
+  } else if (typeof animationDuration === "number") {
+    const _Number6 = Number;
+    let num12 = 0;
+    if (Number.isFinite(animationDuration)) {
+      num12 = 0;
+      if (animationDuration >= 0) {
+        num12 = animationDuration;
+      }
+    }
+    obj = { tapAnimationInDuration: num12, tapAnimationOutDuration: num12, longPressAnimationOutDuration: num12, hoverAnimationInDuration: num12, hoverAnimationOutDuration: num12 };
+    const obj2 = { tapAnimationInDuration: num12, tapAnimationOutDuration: num12, longPressAnimationOutDuration: num12, hoverAnimationInDuration: num12, hoverAnimationOutDuration: num12 };
+  } else {
+    let num5 = 0;
+    if ("in" in animationDuration) {
+      num5 = animationDuration.in;
+    }
+    let num6 = 0;
+    if ("out" in animationDuration) {
+      num6 = animationDuration.out;
+    }
+    const tap = animationDuration.tap;
+    let out;
+    if (tap != null) {
+      out = tap.out;
+    }
+    if (out == null) {
+      out = num6;
+    }
+    const tap2 = animationDuration.tap;
+    let _in;
+    if (tap2 != null) {
+      _in = tap2.in;
+    }
+    if (_in == null) {
+      _in = num5;
+    }
+    const _Number = Number;
+    let num7 = 0;
+    if (Number.isFinite(_in)) {
+      num7 = 0;
+      if (_in >= 0) {
+        num7 = _in;
+      }
+    }
+    obj = { tapAnimationInDuration: num7, tapAnimationOutDuration: num8, longPressAnimationOutDuration: num9, hoverAnimationInDuration: num10, hoverAnimationOutDuration: num11 };
+    const _Number2 = Number;
+    num8 = 0;
+    if (Number.isFinite(out)) {
+      num8 = 0;
+      if (out >= 0) {
+        num8 = out;
+      }
+    }
+    const longPress = animationDuration.longPress;
+    let out1;
+    if (longPress != null) {
+      out1 = longPress.out;
+    }
+    if (out1 == null) {
+      out1 = out;
+    }
+    const _Number3 = Number;
+    num9 = 0;
+    if (Number.isFinite(out1)) {
+      num9 = 0;
+      if (out1 >= 0) {
+        num9 = out1;
+      }
+    }
+    const hover = animationDuration.hover;
+    let _in1;
+    if (hover != null) {
+      _in1 = hover.in;
+    }
+    if (_in1 == null) {
+      _in1 = num5;
+    }
+    const _Number4 = Number;
+    num10 = 0;
+    if (Number.isFinite(_in1)) {
+      num10 = 0;
+      if (_in1 >= 0) {
+        num10 = _in1;
+      }
+    }
+    const hover2 = animationDuration.hover;
+    let out2;
+    if (hover2 != null) {
+      out2 = hover2.out;
+    }
+    if (out2 == null) {
+      out2 = num6;
+    }
+    const _Number5 = Number;
+    num11 = 0;
+    if (Number.isFinite(out2)) {
+      num11 = 0;
+      if (out2 >= 0) {
+        num11 = out2;
+      }
+    }
+  }
+  let num13 = 0;
+  if (Number.isFinite(num4)) {
+    num13 = 0;
+    if (num4 >= 0) {
+      num13 = num4;
+    }
+  }
+  const tmp21 = disabled(onLongPress(onPressIn[6]).JSResponderContext);
+  let closure_7 = tmp21;
+  let closure_8 = closure_9(null);
+  const items = [tmp, tmp21];
+  const items1 = [onPress];
+  const items2 = [tmp21, onPressIn];
+  const items3 = [onPressOut];
+  const tmp22 = closure_7(() => {
+    const tmp = disabled;
+    if (!tmp) {
+      const obj = JSResponderContext;
+      const result = obj.updateResponderEventValue(closure_7, true);
+    }
+    return false;
+  }, items);
+  const items4 = [onLongPress];
+  const tmp23 = closure_7((nativeEvent) => {
+    if (!closure_8.current) {
+      if (onPress != null) {
+        tmp(nativeEvent.nativeEvent);
+      }
+    }
+  }, items1);
+  const items5 = [onHoverIn];
+  const tmp24 = closure_7((nativeEvent) => {
+    if (closure_8.current == null) {
+      const obj = JSResponderContext;
+      closure_8.current = obj.isKeyboardDismissingTap(closure_7);
+    }
+    if (!closure_8.current) {
+      if (onPressIn != null) {
+        tmp5(nativeEvent.nativeEvent);
+      }
+    }
+  }, items2);
+  const items6 = [onHoverOut];
+  const tmp25 = closure_7((nativeEvent) => {
+    if (!closure_8.current) {
+      if (onPressOut != null) {
+        tmp(nativeEvent.nativeEvent);
+      }
+    }
+  }, items3);
+  const tmp26 = closure_7((nativeEvent) => {
+    if (!closure_8.current) {
+      if (onLongPress != null) {
+        tmp(nativeEvent.nativeEvent);
+      }
+    }
+  }, items4);
+  const tmp27 = closure_8(() => {
+    let fn;
+    if (onHoverIn) {
+      fn = (nativeEvent) => onHoverIn(nativeEvent.nativeEvent);
+    }
+    return fn;
+  }, items5);
+  const tmp28 = closure_8(() => {
+    let fn;
+    if (onHoverOut) {
+      fn = (nativeEvent) => onHoverOut(nativeEvent.nativeEvent);
+    }
+    return fn;
+  }, items6);
+  const tmp29 = closure_7(() => {
+    closure_8.current = null;
+  }, []);
+  if (undefined !== androidRipple) {
+    let color;
+    if (androidRipple != null) {
+      color = androidRipple.color;
+    }
+    const obj3 = { rippleColor: color, rippleRadius: radius, borderless, foreground };
+    radius = undefined;
+    if (androidRipple != null) {
+      radius = androidRipple.radius;
+    }
+    borderless = undefined;
+    if (androidRipple != null) {
+      borderless = androidRipple.borderless;
+    }
+    foreground = undefined;
+    if (androidRipple != null) {
+      foreground = androidRipple.foreground;
+    }
+    tmp30 = obj3;
+  } else {
+    tmp30 = closure_12;
+  }
+  const tmp19Result = onLongPress(onPressIn[7]);
+  const tVProps = tmp19Result.getTVProps(tmp5);
+  if (typeof underlayColor.hitSlop === "number") {
+    const rect = { top: null, left: null, bottom: null, right: null };
+    ({ hitSlop: obj5.top, hitSlop: obj5.left, hitSlop: obj5.bottom, hitSlop: obj5.right } = underlayColor);
+    hitSlop = rect;
+  } else {
+    hitSlop = underlayColor.hitSlop;
+  }
+  const obj4 = { ref, enabled: !tmp, onStartShouldSetResponderCapture: tmp22, moduleId: tmp19Result2.getModuleId(), handlerTag: first, cancelOnLeave: tmp2, gestureTestID: underlayColor.testID, gestureHitSlop: hitSlop, defaultOpacity: num3, defaultUnderlayOpacity: num, activeUnderlayOpacity: num2, underlayColor: str, longPressDuration: num13, immediatePressOut: tmp3, hasLongPressHandler: undefined !== onLongPress, onButtonPress: tmp23, onButtonPressIn: tmp24, onButtonPressOut: tmp25, onButtonLongPress: tmp26, onButtonHoverIn: tmp27, onButtonHoverOut: tmp28, onButtonInteractionFinished: tmp29, children };
+  const tmp37 = onPress(onPressIn[8]);
+  const merged = Object.assign(tmp5);
+  const merged1 = Object.assign(tVProps);
+  const merged2 = Object.assign(tmp30);
+  const merged3 = Object.assign(obj);
+  const tmp36 = jsx;
+  if (ref == null) {
+    ref = null;
+  }
+  tmp19Result2 = onLongPress(onPressIn[9]);
+  return tmp36(tmp37, obj4);
 };
-const items3 = [tmp5, tmp6];
-activate.__closure = items3;
-activate.__workletHash = 1857335023251;
-activate.__initData = tmp4;
-const items4 = [{ code: "(function fail_Pnpm_gestureStateManagerTs3(handlerTag){let[setGestureState,State]=this.__closure;setGestureState(handlerTag,State.FAILED);})" }, pnpm_gestureStateManagerTs1, State.State];
-[tmp7, tmp8, tmp9] = items4;
-fail = function fail(arg0) {
-  _undefined(arg0, _undefined2.FAILED);
-};
-const items5 = [tmp8, tmp9];
-fail.__closure = items5;
-fail.__workletHash = 2377190791686;
-fail.__initData = tmp7;
-const items6 = [{ code: "(function deactivate_Pnpm_gestureStateManagerTs4(handlerTag){let[setGestureState,State]=this.__closure;setGestureState(handlerTag,State.END);})" }, pnpm_gestureStateManagerTs1, State.State];
-let c0;
-let c1;
-[tmp10, tmp11, tmp12] = items6;
-deactivate = function deactivate(arg0) {
-  _undefined(arg0, _undefined2.END);
-};
-const items7 = [tmp11, tmp12];
-deactivate.__closure = items7;
-deactivate.__workletHash = 3880091307703;
-deactivate.__initData = tmp10;
-
-export const GestureStateManager = obj;

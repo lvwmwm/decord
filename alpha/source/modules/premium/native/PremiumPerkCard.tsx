@@ -1,43 +1,42 @@
-// Module ID: 15567
-// Function ID: 15568
+// Module ID: 15592
+// Function ID: 15593
 // Name: PremiumPerkCard
-// Dependencies: [19, 17, 1387, 1072, 21, 5766, 15568, 2171, 7635, 7412, 1113, 15569, 15570, 15571, 15572, 15573, 15574, 15575, 15576, 15577, 15578, 15579, 15580, 15581, 15582, 15583, 15584, 15585, 5751, 2185, 5140, 575, 5842, 15586, 5758, 2]
+// Dependencies: [19, 17, 1387, 1072, 21, 5768, 15593, 2171, 15594, 15595, 7638, 7415, 1113, 15597, 15598, 15599, 15600, 15601, 15602, 15603, 15604, 15605, 15606, 15607, 15608, 15609, 15610, 15611, 15612, 15613, 5753, 2185, 5142, 575, 5844, 15614, 5760, 2]
 // Exports: default, usePerkCardHeight, usePremiumPerkCard
 
-// Module 15567 (PremiumPerkCard)
+// Module 15592 (PremiumPerkCard)
 import nativeDefault from "native" /* 575 */;
-import intl37 from "intl" /* 1113 */;
+import intl38 from "intl" /* 1113 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2185 */;
-import Text_Text from "Text/Text" /* 5751 */;
-import components_Button_Button from "components/Button/Button" /* 5758 */;
-import useFontScale from "useFontScale" /* 5766 */;
-import FastImageDefault from "FastImage" /* 5842 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7412 */;
-import openUserSettings from "openUserSettings" /* 7635 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15569 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 15570 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 15571 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 15572 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 15573 */;
-import AssetRegistryDefault6 from "AssetRegistry" /* 15574 */;
-import AssetRegistryDefault7 from "AssetRegistry" /* 15575 */;
-import AssetRegistryDefault8 from "AssetRegistry" /* 15576 */;
-import AssetRegistryDefault9 from "AssetRegistry" /* 15577 */;
-import AssetRegistryDefault10 from "AssetRegistry" /* 15578 */;
-import AssetRegistryDefault11 from "AssetRegistry" /* 15579 */;
-import AssetRegistryDefault12 from "AssetRegistry" /* 15580 */;
-import AssetRegistryDefault13 from "AssetRegistry" /* 15581 */;
-import AssetRegistryDefault14 from "AssetRegistry" /* 15582 */;
-import AssetRegistryDefault15 from "AssetRegistry" /* 15583 */;
-import AssetRegistryDefault16 from "AssetRegistry" /* 15584 */;
-import _modDef15585 from "module_15585" /* 15585 */;
-import PillTextDefault from "PillText" /* 15586 */;
+import Text_Text from "Text/Text" /* 5753 */;
+import components_Button_Button from "components/Button/Button" /* 5760 */;
+import useFontScale from "useFontScale" /* 5768 */;
+import FastImageDefault from "FastImage" /* 5844 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7415 */;
+import openUserSettings from "openUserSettings" /* 7638 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15597 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 15598 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 15599 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 15600 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 15601 */;
+import AssetRegistryDefault6 from "AssetRegistry" /* 15602 */;
+import AssetRegistryDefault7 from "AssetRegistry" /* 15603 */;
+import AssetRegistryDefault8 from "AssetRegistry" /* 15604 */;
+import AssetRegistryDefault9 from "AssetRegistry" /* 15605 */;
+import AssetRegistryDefault10 from "AssetRegistry" /* 15606 */;
+import AssetRegistryDefault11 from "AssetRegistry" /* 15607 */;
+import AssetRegistryDefault12 from "AssetRegistry" /* 15608 */;
+import AssetRegistryDefault13 from "AssetRegistry" /* 15609 */;
+import AssetRegistryDefault14 from "AssetRegistry" /* 15610 */;
+import AssetRegistryDefault15 from "AssetRegistry" /* 15611 */;
+import AssetRegistryDefault16 from "AssetRegistry" /* 15612 */;
+import _modDef15613 from "module_15613" /* 15613 */;
+import PillTextDefault from "PillText" /* 15614 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5140 */;
+import createStyles from "createStyles" /* 5142 */;
 import size from "module_2" /* 2 */;
 
 let c10;
@@ -46,6 +45,8 @@ let closure_4;
 let hasOwnProperty;
 let metroImportAll;
 let metroImportDefault;
+let tmp12;
+const HelpdeskUtilsDefault = tmp12(2185);
 ({ View: closure_4, ScrollView: hasOwnProperty } = react_native);
 const PremiumTypes = PremiumConstants.PremiumTypes;
 ({ HelpdeskArticles: metroImportDefault, UserSettingsSections: metroImportAll } = Constants);
@@ -101,8 +102,8 @@ export default function PremiumPerkCard(variant) {
   ({ description, bodyComponent, headerComponent, imageSrc, imageStyle, buttonOnPress, cta } = variant);
   ({ style, title, titleStyle } = variant);
   if (cta === undefined) {
-    const intl = intl37.intl;
-    cta = intl.string(intl37.t.jVcuVY);
+    const intl = intl38.intl;
+    cta = intl.string(intl38.t.jVcuVY);
   }
   let WIDE = variant.variant;
   if (WIDE === undefined) {
@@ -123,7 +124,7 @@ export default function PremiumPerkCard(variant) {
       items1 = [React4(FastImageDefault, obj3), ];
       const obj4 = { style: tmp4.imageOverlayTextContainer, children: React4(Text, obj5) };
       obj5 = { style: tmp4.imageOverlayText, variant: "body-md/semibold", children: imageOverlayText.toUpperCase() };
-      Text = tmp6(5751).Text;
+      Text = tmp6(5753).Text;
       items1[1] = React4(React3, obj4);
       tmp15 = authStore(React3, obj2);
     } else {
@@ -141,7 +142,7 @@ export default function PremiumPerkCard(variant) {
   }
   if (null != description) {
     const obj8 = { variant: "body-sm/normal", children: description };
-    tmp20 = React4(tmp6(5751).Text, obj8);
+    tmp20 = React4(tmp6(5753).Text, obj8);
   } else {
     tmp20 = null;
     if (null != bodyComponent) {
@@ -234,35 +235,44 @@ export function usePremiumPerkCard() {
   let obj18;
   let obj19;
   let obj20;
-  let obj22;
+  let obj21;
   let obj23;
   let obj24;
-  let obj4;
   let obj5;
   let obj6;
   let obj7;
   let obj8;
   let obj9;
   let prop;
+  let stringResult;
   let subscriptionPlansLoaded;
-  let obj = subscriptionPlansLoaded(15568);
+  let tmp12Result;
+  const tmp = subscriptionPlansLoaded;
+  let obj = subscriptionPlansLoaded(15593);
   subscriptionPlansLoaded = obj.useSubscriptionPlansLoaded();
   let obj2 = subscriptionPlansLoaded(2171);
   const maxFileSizeForPremiumType = obj2.getMaxFileSizeForPremiumType(PremiumTypes.TIER_2);
+  let obj3 = subscriptionPlansLoaded(15594);
+  const isUserEligibleForThirdPartyPerks = obj3.useIsUserEligibleForThirdPartyPerks();
+  let state;
+  if (isUserEligibleForThirdPartyPerks != null) {
+    state = isUserEligibleForThirdPartyPerks.state;
+  }
+  const UPSELL = tmp(15595).ThirdPartyPerkClaimState.UPSELL;
   const callback = react.useCallback(() => {
     const obj2 = { screen: constants.COLLECTIBLES_SHOP, params: { analyticsSource: AnalyticsLocationDefault.PREMIUM_MARKETING_PERK_CARD } };
-    const obj = subscriptionPlansLoaded(dependencyMap[8]);
+    const obj = subscriptionPlansLoaded(dependencyMap[10]);
     ({ analyticsSource: AnalyticsLocationDefault.PREMIUM_MARKETING_PERK_CARD });
     obj.openUserSettings(obj2);
   }, []);
   const callback1 = react.useCallback(() => {
-    const obj = subscriptionPlansLoaded(dependencyMap[8]);
+    const obj = subscriptionPlansLoaded(dependencyMap[10]);
     const obj2 = { screen: constants.PROFILE_CUSTOMIZATION };
     obj.openUserSettings(obj2);
   }, []);
   const items = [subscriptionPlansLoaded];
   const callback2 = react.useCallback(() => {
-    const obj = subscriptionPlansLoaded(dependencyMap[8]);
+    const obj = subscriptionPlansLoaded(dependencyMap[10]);
     const obj2 = { screen: constants.APPEARANCE_THEME_PICKER };
     obj.openUserSettings(obj2);
   }, []);
@@ -273,71 +283,76 @@ export function usePremiumPerkCard() {
     const obj = openUserSettings;
     obj.openUserSettings(obj2);
   }, items);
-  let obj3 = { customProfile: obj4, clientThemes: obj5, serverBoosts: obj6, greyServerBoosts: obj7, customAppIcons: obj8, emoji: obj9, customSounds: obj10, sticker: obj11, earlyAccess: obj12, memberPricing: obj13, largeUploads: obj14, hdVideo: obj15, superReactions: obj16, entranceSounds: obj17, badge: obj18, greyBadge: obj19, xboxGamePass: obj20 };
-  obj4 = { title: intl.string(subscriptionPlansLoaded(1113).t.KcyDwF), description: intl2.string(subscriptionPlansLoaded(1113).t.Mt3U1W), imageSrc: AssetRegistryDefault, buttonOnPress: callback1 };
+  const obj4 = { customProfile: obj5, clientThemes: obj6, serverBoosts: obj7, greyServerBoosts: obj8, customAppIcons: obj9, emoji: obj10, customSounds: obj11, sticker: obj12, earlyAccess: obj13, memberPricing: obj14, largeUploads: obj15, hdVideo: obj16, superReactions: obj17, entranceSounds: obj18, badge: obj19, greyBadge: obj20, xboxGamePass: obj21 };
+  obj5 = { title: intl.string(tmp(1113).t.KcyDwF), description: intl2.string(tmp(1113).t.Mt3U1W), imageSrc: AssetRegistryDefault, buttonOnPress: callback1 };
   const callback4 = react.useCallback(() => {
-    const obj = subscriptionPlansLoaded(dependencyMap[8]);
+    const obj = subscriptionPlansLoaded(dependencyMap[10]);
     const obj2 = { screen: constants.APP_ICONS };
     obj.openUserSettings(obj2);
   }, []);
-  intl = subscriptionPlansLoaded(1113).intl;
-  intl2 = subscriptionPlansLoaded(1113).intl;
-  obj5 = { title: intl3.string(subscriptionPlansLoaded(1113).t.kWM48G), description: intl4.string(subscriptionPlansLoaded(1113).t.CjRASJ), imageSrc: AssetRegistryDefault2, buttonOnPress: callback2 };
-  intl3 = subscriptionPlansLoaded(1113).intl;
-  intl4 = subscriptionPlansLoaded(1113).intl;
-  obj6 = { title: intl5.string(subscriptionPlansLoaded(1113).t["NyDu/6"]), description: intl6.string(subscriptionPlansLoaded(1113).t["4pEwXL"]), imageSrc: AssetRegistryDefault3, buttonOnPress: callback3 };
-  intl5 = subscriptionPlansLoaded(1113).intl;
-  intl6 = subscriptionPlansLoaded(1113).intl;
-  obj7 = { title: intl7.string(subscriptionPlansLoaded(1113).t["NyDu/6"]), description: intl8.string(subscriptionPlansLoaded(1113).t["4pEwXL"]), imageSrc: AssetRegistryDefault4, imageOverlayText: intl9.string(subscriptionPlansLoaded(1113).t["/VzCKE"]) };
-  intl7 = subscriptionPlansLoaded(1113).intl;
-  intl8 = subscriptionPlansLoaded(1113).intl;
-  intl9 = subscriptionPlansLoaded(1113).intl;
-  obj8 = { title: intl10.string(subscriptionPlansLoaded(1113).t.OuItFi), description: intl11.string(subscriptionPlansLoaded(1113).t.mPyrE6), imageSrc: AssetRegistryDefault5, buttonOnPress: callback4 };
-  intl10 = subscriptionPlansLoaded(1113).intl;
-  intl11 = subscriptionPlansLoaded(1113).intl;
-  obj9 = { title: intl12.string(subscriptionPlansLoaded(1113).t["R2IV/Q"]), description: intl13.string(subscriptionPlansLoaded(1113).t.R5Xag2), imageSrc: AssetRegistryDefault6 };
-  intl12 = subscriptionPlansLoaded(1113).intl;
-  intl13 = subscriptionPlansLoaded(1113).intl;
-  obj10 = { title: intl14.string(subscriptionPlansLoaded(1113).t.LWsArT), description: intl15.string(subscriptionPlansLoaded(1113).t["4lSyCY"]), imageSrc: AssetRegistryDefault7 };
-  intl14 = subscriptionPlansLoaded(1113).intl;
-  intl15 = subscriptionPlansLoaded(1113).intl;
-  obj11 = { title: intl16.string(subscriptionPlansLoaded(1113).t.tzdIwI), description: intl17.string(subscriptionPlansLoaded(1113).t.hJG8ZN), imageSrc: AssetRegistryDefault8 };
-  intl16 = subscriptionPlansLoaded(1113).intl;
-  intl17 = subscriptionPlansLoaded(1113).intl;
-  obj12 = { title: intl18.string(subscriptionPlansLoaded(1113).t.EYxi0o), description: intl19.string(subscriptionPlansLoaded(1113).t.M9AIt1), imageSrc: AssetRegistryDefault9 };
-  intl18 = subscriptionPlansLoaded(1113).intl;
-  intl19 = subscriptionPlansLoaded(1113).intl;
-  obj13 = { title: intl20.string(subscriptionPlansLoaded(1113).t["H4/NBN"]), description: intl21.string(subscriptionPlansLoaded(1113).t.wo3D3T), imageSrc: AssetRegistryDefault10, buttonOnPress: callback };
-  intl20 = subscriptionPlansLoaded(1113).intl;
-  intl21 = subscriptionPlansLoaded(1113).intl;
-  obj14 = { title: intl22.formatToPlainString(subscriptionPlansLoaded(1113).t.jqhAdL, { premiumMaxSize: maxFileSizeForPremiumType }), description: intl23.formatToPlainString(subscriptionPlansLoaded(1113).t["HI+cfm"], { premiumMaxSize: maxFileSizeForPremiumType }), imageSrc: AssetRegistryDefault11 };
-  intl22 = subscriptionPlansLoaded(1113).intl;
-  intl23 = subscriptionPlansLoaded(1113).intl;
-  obj15 = { title: intl24.string(subscriptionPlansLoaded(1113).t.RSXQYO), description: intl25.string(subscriptionPlansLoaded(1113).t.ymCPxp), imageSrc: AssetRegistryDefault12 };
-  intl24 = subscriptionPlansLoaded(1113).intl;
-  intl25 = subscriptionPlansLoaded(1113).intl;
-  obj16 = { title: intl26.string(subscriptionPlansLoaded(1113).t["6S7kO7"]), description: intl27.string(subscriptionPlansLoaded(1113).t.A0U9fk), imageSrc: AssetRegistryDefault13 };
-  intl26 = subscriptionPlansLoaded(1113).intl;
-  intl27 = subscriptionPlansLoaded(1113).intl;
-  obj17 = { title: intl28.string(subscriptionPlansLoaded(1113).t["f4M+H9"]), description: intl29.string(subscriptionPlansLoaded(1113).t["7ZCYvC"]), imageSrc: AssetRegistryDefault14 };
-  intl28 = subscriptionPlansLoaded(1113).intl;
-  intl29 = subscriptionPlansLoaded(1113).intl;
-  obj18 = { title: intl30.string(subscriptionPlansLoaded(1113).t.dcFfSJ), description: intl31.string(subscriptionPlansLoaded(1113).t["37MFFq"]), imageSrc: AssetRegistryDefault15 };
-  intl30 = subscriptionPlansLoaded(1113).intl;
-  intl31 = subscriptionPlansLoaded(1113).intl;
-  obj19 = { title: intl32.string(subscriptionPlansLoaded(1113).t.dcFfSJ), description: intl33.string(subscriptionPlansLoaded(1113).t["37MFFq"]), imageSrc: AssetRegistryDefault16, imageOverlayText: intl34.string(subscriptionPlansLoaded(1113).t["/VzCKE"]) };
-  intl32 = subscriptionPlansLoaded(1113).intl;
-  intl33 = subscriptionPlansLoaded(1113).intl;
-  intl34 = subscriptionPlansLoaded(1113).intl;
-  obj20 = { title: intl35.string(subscriptionPlansLoaded(1113).t.aJE9i1), imageSrc: { uri: _modDef15585 }, imageStyle: { aspectRatio: 1.9789473684210526 }, bodyComponent: closure_9(Text, obj22) };
-  intl35 = subscriptionPlansLoaded(1113).intl;
-  obj22 = { variant: "body-sm/normal", children: format(prop, obj23) };
-  ({ uri: _modDef15585 });
-  Text = subscriptionPlansLoaded(5751).Text;
-  const intl36 = subscriptionPlansLoaded(1113).intl;
-  format = intl36.format;
-  obj23 = { termsLink: obj24.getArticleURL(NITRO_2_POINT_0.NITRO_2_POINT_0) };
-  prop = subscriptionPlansLoaded(1113).t["9Wv+8h"];
-  obj24 = HelpdeskUtilsDefault;
-  return obj3;
+  intl = tmp(1113).intl;
+  intl2 = tmp(1113).intl;
+  obj6 = { title: intl3.string(tmp(1113).t.kWM48G), description: intl4.string(tmp(1113).t.CjRASJ), imageSrc: AssetRegistryDefault2, buttonOnPress: callback2 };
+  intl3 = tmp(1113).intl;
+  intl4 = tmp(1113).intl;
+  obj7 = { title: intl5.string(tmp(1113).t["NyDu/6"]), description: intl6.string(tmp(1113).t["4pEwXL"]), imageSrc: AssetRegistryDefault3, buttonOnPress: callback3 };
+  intl5 = tmp(1113).intl;
+  intl6 = tmp(1113).intl;
+  obj8 = { title: intl7.string(tmp(1113).t["NyDu/6"]), description: intl8.string(tmp(1113).t["4pEwXL"]), imageSrc: AssetRegistryDefault4, imageOverlayText: intl9.string(tmp(1113).t["/VzCKE"]) };
+  intl7 = tmp(1113).intl;
+  intl8 = tmp(1113).intl;
+  intl9 = tmp(1113).intl;
+  obj9 = { title: intl10.string(tmp(1113).t.OuItFi), description: intl11.string(tmp(1113).t.mPyrE6), imageSrc: AssetRegistryDefault5, buttonOnPress: callback4 };
+  intl10 = tmp(1113).intl;
+  intl11 = tmp(1113).intl;
+  obj10 = { title: intl12.string(tmp(1113).t["R2IV/Q"]), description: intl13.string(tmp(1113).t.R5Xag2), imageSrc: AssetRegistryDefault6 };
+  intl12 = tmp(1113).intl;
+  intl13 = tmp(1113).intl;
+  obj11 = { title: intl14.string(tmp(1113).t.LWsArT), description: intl15.string(tmp(1113).t["4lSyCY"]), imageSrc: AssetRegistryDefault7 };
+  intl14 = tmp(1113).intl;
+  intl15 = tmp(1113).intl;
+  obj12 = { title: intl16.string(tmp(1113).t.tzdIwI), description: intl17.string(tmp(1113).t.hJG8ZN), imageSrc: AssetRegistryDefault8 };
+  intl16 = tmp(1113).intl;
+  intl17 = tmp(1113).intl;
+  obj13 = { title: intl18.string(tmp(1113).t.EYxi0o), description: intl19.string(tmp(1113).t.M9AIt1), imageSrc: AssetRegistryDefault9 };
+  intl18 = tmp(1113).intl;
+  intl19 = tmp(1113).intl;
+  obj14 = { title: intl20.string(tmp(1113).t["H4/NBN"]), description: intl21.string(tmp(1113).t.wo3D3T), imageSrc: AssetRegistryDefault10, buttonOnPress: callback };
+  intl20 = tmp(1113).intl;
+  intl21 = tmp(1113).intl;
+  obj15 = { title: intl22.formatToPlainString(tmp(1113).t.jqhAdL, { premiumMaxSize: maxFileSizeForPremiumType }), description: intl23.formatToPlainString(tmp(1113).t["HI+cfm"], { premiumMaxSize: maxFileSizeForPremiumType }), imageSrc: AssetRegistryDefault11 };
+  intl22 = tmp(1113).intl;
+  intl23 = tmp(1113).intl;
+  obj16 = { title: intl24.string(tmp(1113).t.RSXQYO), description: intl25.string(tmp(1113).t.ymCPxp), imageSrc: AssetRegistryDefault12 };
+  intl24 = tmp(1113).intl;
+  intl25 = tmp(1113).intl;
+  obj17 = { title: intl26.string(tmp(1113).t["6S7kO7"]), description: intl27.string(tmp(1113).t.A0U9fk), imageSrc: AssetRegistryDefault13 };
+  intl26 = tmp(1113).intl;
+  intl27 = tmp(1113).intl;
+  obj18 = { title: intl28.string(tmp(1113).t["f4M+H9"]), description: intl29.string(tmp(1113).t["7ZCYvC"]), imageSrc: AssetRegistryDefault14 };
+  intl28 = tmp(1113).intl;
+  intl29 = tmp(1113).intl;
+  obj19 = { title: intl30.string(tmp(1113).t.dcFfSJ), description: intl31.string(tmp(1113).t["37MFFq"]), imageSrc: AssetRegistryDefault15 };
+  intl30 = tmp(1113).intl;
+  intl31 = tmp(1113).intl;
+  obj20 = { title: intl32.string(tmp(1113).t.dcFfSJ), description: intl33.string(tmp(1113).t["37MFFq"]), imageSrc: AssetRegistryDefault16, imageOverlayText: intl34.string(tmp(1113).t["/VzCKE"]) };
+  intl32 = tmp(1113).intl;
+  intl33 = tmp(1113).intl;
+  intl34 = tmp(1113).intl;
+  obj21 = { title: intl35.string(tmp(1113).t.aJE9i1), imageSrc: { uri: _modDef15613 }, imageStyle: { aspectRatio: 1.9789473684210526 }, imageOverlayText: stringResult, bodyComponent: closure_9(Text, obj23) };
+  intl35 = tmp(1113).intl;
+  stringResult = null;
+  ({ uri: _modDef15613 });
+  if (state === UPSELL) {
+    const intl36 = tmp(1113).intl;
+    stringResult = intl36.string(tmp(1113).t["/VzCKE"]);
+  }
+  obj23 = { variant: "body-sm/normal", children: format(prop, obj24) };
+  Text = tmp(5753).Text;
+  const intl37 = tmp(1113).intl;
+  format = intl37.format;
+  obj24 = { termsLink: tmp12Result.getArticleURL(NITRO_2_POINT_0.NITRO_2_POINT_0) };
+  prop = tmp(1113).t["9Wv+8h"];
+  tmp12Result = HelpdeskUtilsDefault;
+  return obj4;
 }

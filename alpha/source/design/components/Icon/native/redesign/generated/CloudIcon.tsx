@@ -1,14 +1,14 @@
-// Module ID: 13260
-// Function ID: 13261
+// Module ID: 13274
+// Function ID: 13275
 // Name: CloudIcon
-// Dependencies: [19, 21, 575, 5841, 13261, 2]
+// Dependencies: [19, 21, 575, 5843, 13275, 2]
 // Exports: CloudIcon
 
-// Module 13260 (CloudIcon)
+// Module 13274 (CloudIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5841 */;
-import AssetRegistry from "AssetRegistry" /* 13261 */;
+import BaseIconImage2 from "BaseIconImage" /* 5843 */;
+import AssetRegistry from "AssetRegistry" /* 13275 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

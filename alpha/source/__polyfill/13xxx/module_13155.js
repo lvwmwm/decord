@@ -1,9 +1,15 @@
 // Module ID: 13155
 // Function ID: 13156
-// Dependencies: [13154]
+// Dependencies: []
 
 // Module 13155
-import _mod13154 from "module_13154" /* 13154 */;
+let obj2;
+const obj = { parse: obj2 };
+obj2 = {
+  prelude: null,
+  block() {
+    return this.Block(true);
+  }
+};
 
-
-export default _mod13154;
+export default obj;

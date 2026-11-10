@@ -1,20 +1,20 @@
-// Module ID: 7692
-// Function ID: 7693
+// Module ID: 7695
+// Function ID: 7696
 // Name: PremiumPlanActionSheetHeader
-// Dependencies: [19, 17, 1387, 7693, 21, 5140, 7694, 7695, 2171, 5715, 1092, 5842, 7696, 7697, 7698, 7699, 10052, 10705, 10057, 2]
+// Dependencies: [19, 17, 1387, 7696, 21, 5142, 7697, 7698, 2171, 5717, 1092, 5844, 7699, 7700, 7701, 7702, 10058, 10714, 10063, 2]
 // Exports: default
 
-// Module 7692 (PremiumPlanActionSheetHeader)
+// Module 7695 (PremiumPlanActionSheetHeader)
 import react_native from "react-native" /* 17 */;
 import ConstantsIOS from "ConstantsIOS" /* 1092 */;
 import PremiumUtils from "PremiumUtils" /* 2171 */;
-import LinearGradientDefault from "LinearGradient" /* 5715 */;
-import FastImageDefault from "FastImage" /* 5842 */;
-import ColorConstants from "ColorConstants" /* 7693 */;
+import LinearGradientDefault from "LinearGradient" /* 5717 */;
+import FastImageDefault from "FastImage" /* 5844 */;
+import ColorConstants from "ColorConstants" /* 7696 */;
 import react from "react" /* 19 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5140 */;
+import createStyles from "createStyles" /* 5142 */;
 import size from "module_2" /* 2 */;
 
 const PremiumUtilsDefault = PremiumUtils;
@@ -71,12 +71,12 @@ export default function PremiumPlanActionSheetHeader(arg0) {
   const tmp14 = LinearGradientDefault;
   tmp6Result = PremiumUtils;
   if (TIER_0.TIER_0 === premiumType) {
-    tmp17Result = tmp13(7694);
+    tmp17Result = tmp13(7697);
   } else {
     tmp17Result = null;
     if (TIER_0.TIER_1 !== premiumType) {
       if (TIER_0.TIER_2 === premiumType) {
-        tmp17Result = tmp13(7695);
+        tmp17Result = tmp13(7698);
       }
     }
   }
@@ -85,12 +85,12 @@ export default function PremiumPlanActionSheetHeader(arg0) {
     const tmp13Result7 = FastImageDefault;
     const tmp17 = metroImportDefault;
     if (TIER_0.TIER_0 === premiumType) {
-      tmp13Result8 = tmp13(7694);
+      tmp13Result8 = tmp13(7697);
     } else {
       tmp13Result8 = null;
       if (TIER_0.TIER_1 !== premiumType) {
         if (TIER_0.TIER_2 === premiumType) {
-          tmp13Result8 = tmp13(7695);
+          tmp13Result8 = tmp13(7698);
         }
       }
     }
@@ -102,33 +102,33 @@ export default function PremiumPlanActionSheetHeader(arg0) {
   const tmp13Result9 = FastImageDefault;
   const tmp20 = View;
   if (TIER_0.TIER_0 === premiumType) {
-    tmp13Result10 = tmp13(7696);
+    tmp13Result10 = tmp13(7699);
   } else if (TIER_0.TIER_1 === premiumType) {
-    tmp13Result10 = tmp13(7697);
+    tmp13Result10 = tmp13(7700);
   } else if (TIER_0.TIER_2 === premiumType) {
-    tmp13Result10 = tmp13(7698);
+    tmp13Result10 = tmp13(7701);
   }
   items1 = [metroImportDefault(tmp13Result9, { source: tmp13Result10, resizeMode: "contain" }), , ];
   let tmp21Result = null;
   if (tmp2) {
     const obj5 = { style: tmp.discountPill, trialOffer, premiumType, useWhiteBackground: true, hideTrialCountdown: true };
-    tmp21Result = tmp21(tmp6(7699).PremiumPill, obj5);
+    tmp21Result = tmp21(tmp6(7702).PremiumPill, obj5);
   }
   items1[1] = tmp21Result;
   let tmp21Result2 = null;
   if (tmp10) {
     const obj6 = { style: tmp.discountPill, discountOffer, premiumType, shouldShowDiscountUpsell: true, useWhiteBackground: true };
-    tmp21Result2 = tmp21(tmp6(7699).PremiumPill, obj6);
+    tmp21Result2 = tmp21(tmp6(7702).PremiumPill, obj6);
   }
   items1[2] = tmp21Result2;
   items[1] = metroImportAll(tmp20, obj4);
   const tmp13Result11 = FastImageDefault;
   if (TIER_0.TIER_0 === premiumType) {
-    tmp13Result12 = tmp13(10052);
+    tmp13Result12 = tmp13(10058);
   } else if (TIER_0.TIER_1 === premiumType) {
-    tmp13Result12 = tmp13(10705);
+    tmp13Result12 = tmp13(10714);
   } else if (TIER_0.TIER_2 === premiumType) {
-    tmp13Result12 = tmp13(10057);
+    tmp13Result12 = tmp13(10063);
   }
   const obj7 = { source: tmp13Result12, style: null, resizeMode: "contain" };
   const items2 = [tmp.imgWumpus, ];

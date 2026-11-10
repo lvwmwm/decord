@@ -1,21 +1,21 @@
-// Module ID: 19935
-// Function ID: 19936
+// Module ID: 19963
+// Function ID: 19964
 // Name: MultiAccountManagerNative
-// Dependencies: [14212, 1072, 3, 1089, 6799, 19936, 2118, 5315, 1108, 19937, 15, 14215, 1099, 5320, 5314, 5837, 1113, 19938, 2]
+// Dependencies: [14238, 1072, 3, 1089, 6801, 19964, 2118, 5317, 1108, 19965, 15, 14241, 7597, 5322, 5316, 5839, 1113, 19966, 2]
 
-// Module 19935 (MultiAccountManagerNative)
+// Module 19963 (MultiAccountManagerNative)
 import LoggerDefault from "Logger" /* 3 */;
 import fast_connect from "fast_connect" /* 15 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import intl2 from "intl" /* 1113 */;
 import asyncRequire from "asyncRequire" /* 2118 */;
-import RootNavigationRef from "RootNavigationRef" /* 5315 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5837 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6799 */;
-import Constants2 from "Constants" /* 14212 */;
-import ArrowsLeftRightIcon from "ArrowsLeftRightIcon" /* 19938 */;
+import RootNavigationRef from "RootNavigationRef" /* 5317 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5839 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6801 */;
+import Constants2 from "Constants" /* 14238 */;
+import ArrowsLeftRightIcon from "ArrowsLeftRightIcon" /* 19966 */;
 import Constants from "Constants" /* 1072 */;
-import MultiAccountManager from "MultiAccountManager" /* 19937 */;
+import MultiAccountManager from "MultiAccountManager" /* 19965 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -27,7 +27,7 @@ let tmp;
 const ComponentDispatchUtils = tmp(1108);
 function push() {
   obj = ModalActionCreatorsDefault;
-  obj.pushLazy(asyncRequire(19936, dependencyMap.paths), {}, c7);
+  obj.pushLazy(asyncRequire(19964, dependencyMap.paths), {}, c7);
   const tmp3 = c7;
   if (obj.cancelled) {
     const tmpResult = ModalActionCreatorsDefault;
@@ -59,7 +59,7 @@ function pop() {
   obj.popWithKey(c7);
 }
 const SWITCH_ACCOUNTS_MODAL_KEY = Constants2.SWITCH_ACCOUNTS_MODAL_KEY;
-({ ComponentActions: closure_4, Routes: hasOwnProperty } = Constants);
+({ ComponentActions: closure_4, ME: hasOwnProperty } = Constants);
 let tmp3 = new LoggerDefault("MultiAccountManagerNative");
 const metroRequire = tmp3;
 let c7 = "switch-accounts-spinner-modal";
@@ -100,13 +100,16 @@ class MultiAccountManagerNative extends MultiAccountManager {
     _require = currentUser;
     const tmp = navigateHome;
     if (tmp) {
-      obj = require("router_utils");
-      obj.transitionTo(constants2.ME, { navigationReplace: true });
+      const self = this;
+      if (!this.transitionToLastChannel(currentUser.id)) {
+        obj = require("transitionToGuild");
+        obj.transitionToGuild(closure_5);
+      }
       const MobileHomeDrawerExperiment = require("HomeDrawerExperiment").MobileHomeDrawerExperiment;
-      const tmp2 = _require;
+      const tmp6 = _require;
       if (MobileHomeDrawerExperiment.getConfig({ location: "multi-account" }).enableHome) {
-        const tmp2Result = tmp2(5314);
-        tmp2Result.setHomeDrawerState(false);
+        const tmp6Result = tmp6(5316);
+        tmp6Result.setHomeDrawerState(false);
       }
     }
     const timerId = setTimeout(() => {

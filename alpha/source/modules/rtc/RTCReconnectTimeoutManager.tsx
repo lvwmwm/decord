@@ -1,12 +1,12 @@
-// Module ID: 20013
-// Function ID: 20014
+// Module ID: 20041
+// Function ID: 20042
 // Name: RTCReconnectTimeoutManager
-// Dependencies: [5893, 7350, 6761, 2]
+// Dependencies: [5895, 7353, 6763, 2]
 
-// Module 20013 (RTCReconnectTimeoutManager)
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6761 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5893 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7350 */;
+// Module 20041 (RTCReconnectTimeoutManager)
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6763 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5895 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7353 */;
 import size from "module_2" /* 2 */;
 
 class RTCReconnectTimeoutManager extends AutomaticLifecycleManager {

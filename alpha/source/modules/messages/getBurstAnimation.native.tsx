@@ -1,10 +1,10 @@
-// Module ID: 5099
-// Function ID: 5100
+// Module ID: 5101
+// Function ID: 5102
 // Name: getBurstAnimation
-// Dependencies: [5, 5100, 5101, 5102, 5103, 5104, 5105, 5106, 5107, 5108, 5109, 5110, 5111, 5112, 5113, 5114, 5115, 5116, 5117, 5118, 5119, 5120, 5121, 5122, 5123, 5124, 5125, 5126, 5127, 5128, 5129, 5130, 5131, 5132, 5133, 5134, 5135, 5136, 2]
+// Dependencies: [5, 5102, 5103, 5104, 5105, 5106, 5107, 5108, 5109, 5110, 5111, 5112, 5113, 5114, 5115, 5116, 5117, 5118, 5119, 5120, 5121, 5122, 5123, 5124, 5125, 5126, 5127, 5128, 5129, 5130, 5131, 5132, 5133, 5134, 5135, 5136, 5137, 5138, 2]
 // Exports: getBurstAnimation
 
-// Module 5099 (getBurstAnimation)
+// Module 5101 (getBurstAnimation)
 import _asyncToGeneratorDefault from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -13,21 +13,11 @@ let closure_5;
 
 const obj = {
   load() {
-    return require("module_5100");
+    return require("module_5102");
   }
 };
 const items = [
   obj,
-  {
-    load() {
-      return require("module_5101");
-    }
-  },
-  {
-    load() {
-      return require("module_5102");
-    }
-  },
   {
     load() {
       return require("module_5103");
@@ -102,25 +92,25 @@ const items = [
     load() {
       return require("module_5117");
     }
-  }
-];
-const obj2 = {
-  load() {
-    return require("module_5118");
-  }
-};
-const items1 = [
-  obj2,
+  },
+  {
+    load() {
+      return require("module_5118");
+    }
+  },
   {
     load() {
       return require("module_5119");
     }
-  },
-  {
-    load() {
-      return require("module_5120");
-    }
-  },
+  }
+];
+const obj2 = {
+  load() {
+    return require("module_5120");
+  }
+};
+const items1 = [
+  obj2,
   {
     load() {
       return require("module_5121");
@@ -194,6 +184,16 @@ const items1 = [
   {
     load() {
       return require("module_5135");
+    }
+  },
+  {
+    load() {
+      return require("module_5136");
+    }
+  },
+  {
+    load() {
+      return require("module_5137");
     }
   }
 ];

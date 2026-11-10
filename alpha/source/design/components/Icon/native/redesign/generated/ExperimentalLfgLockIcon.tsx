@@ -1,14 +1,14 @@
-// Module ID: 8727
-// Function ID: 8728
+// Module ID: 8733
+// Function ID: 8734
 // Name: ExperimentalLfgLockIcon
-// Dependencies: [19, 21, 575, 5841, 8707, 2]
+// Dependencies: [19, 21, 575, 5843, 8713, 2]
 // Exports: ExperimentalLfgLockIcon
 
-// Module 8727 (ExperimentalLfgLockIcon)
+// Module 8733 (ExperimentalLfgLockIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5841 */;
-import AssetRegistry from "AssetRegistry" /* 8707 */;
+import BaseIconImage2 from "BaseIconImage" /* 5843 */;
+import AssetRegistry from "AssetRegistry" /* 8713 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

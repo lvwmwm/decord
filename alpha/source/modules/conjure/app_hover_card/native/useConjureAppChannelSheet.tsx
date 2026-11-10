@@ -1,15 +1,15 @@
-// Module ID: 14651
-// Function ID: 14652
+// Module ID: 14677
+// Function ID: 14678
 // Name: useConjureAppChannelSheet
-// Dependencies: [19, 6899, 21, 7484, 504, 14652, 13005, 1113, 4026, 5194, 2]
+// Dependencies: [19, 6902, 21, 7487, 504, 14678, 13019, 1113, 4028, 5196, 2]
 // Exports: default
 
-// Module 14651 (useConjureAppChannelSheet)
+// Module 14677 (useConjureAppChannelSheet)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
-import UserUtils from "UserUtils" /* 5194 */;
+import UserUtils from "UserUtils" /* 5196 */;
 import react from "react" /* 19 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6899 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6902 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
@@ -73,7 +73,7 @@ export default function useConjureAppChannelSheet(guild_id, arg1) {
         const intl = intl2.intl;
         const formatToPlainString = intl.formatToPlainString;
         const obj3 = { name: obj4.getName(tmp6) };
-        const prop = tmp4(4026)["6/x9LD"];
+        const prop = tmp4(4028)["6/x9LD"];
         obj4 = UserUtils;
         formatToPlainStringResult = formatToPlainString(prop, obj3);
       }

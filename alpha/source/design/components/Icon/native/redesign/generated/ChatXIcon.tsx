@@ -1,14 +1,14 @@
-// Module ID: 14277
-// Function ID: 14278
+// Module ID: 14303
+// Function ID: 14304
 // Name: ChatXIcon
-// Dependencies: [19, 21, 575, 5841, 14278, 2]
+// Dependencies: [19, 21, 575, 5843, 14304, 2]
 // Exports: ChatXIcon
 
-// Module 14277 (ChatXIcon)
+// Module 14303 (ChatXIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5841 */;
-import AssetRegistry from "AssetRegistry" /* 14278 */;
+import BaseIconImage2 from "BaseIconImage" /* 5843 */;
+import AssetRegistry from "AssetRegistry" /* 14304 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

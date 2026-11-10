@@ -1,33 +1,33 @@
-// Module ID: 18725
-// Function ID: 18726
+// Module ID: 18754
+// Function ID: 18755
 // Name: HomeDrawerGuildRow
-// Dependencies: [19, 17, 5074, 4993, 4989, 5070, 6941, 5011, 6897, 5082, 6830, 1385, 1072, 6831, 21, 5140, 504, 5320, 5317, 11304, 11122, 5751, 18726, 18727, 5776, 11, 18728, 18729, 13965, 18730, 18731, 18732, 18734, 18735, 18716, 2]
+// Dependencies: [19, 17, 5076, 4995, 4991, 5072, 6944, 5013, 6900, 5084, 6833, 1385, 1072, 6834, 21, 5142, 504, 5322, 5319, 11313, 11131, 5753, 18755, 18756, 5778, 11, 18757, 18758, 13990, 18759, 18760, 18761, 18763, 18764, 18745, 2]
 // Exports: default
 
-// Module 18725 (HomeDrawerGuildRow)
+// Module 18754 (HomeDrawerGuildRow)
 import react_native from "react-native" /* 17 */;
-import ChannelRecord from "ChannelRecord" /* 4993 */;
-import Text_Text from "Text/Text" /* 5751 */;
-import useChannelName from "useChannelName" /* 5776 */;
-import ReadStateConstants from "ReadStateConstants" /* 6831 */;
-import StreamingSubtitleDefault from "StreamingSubtitle" /* 18730 */;
-import VoiceSubtitleDefault from "VoiceSubtitle" /* 18731 */;
-import MentionSubtitleDefault from "MentionSubtitle" /* 18732 */;
-import TypingSubtitleDefault from "TypingSubtitle" /* 18734 */;
-import UnreadSubtitleDefault from "UnreadSubtitle" /* 18735 */;
+import ChannelRecord from "ChannelRecord" /* 4995 */;
+import Text_Text from "Text/Text" /* 5753 */;
+import useChannelName from "useChannelName" /* 5778 */;
+import ReadStateConstants from "ReadStateConstants" /* 6834 */;
+import StreamingSubtitleDefault from "StreamingSubtitle" /* 18759 */;
+import VoiceSubtitleDefault from "VoiceSubtitle" /* 18760 */;
+import MentionSubtitleDefault from "MentionSubtitle" /* 18761 */;
+import TypingSubtitleDefault from "TypingSubtitle" /* 18763 */;
+import UnreadSubtitleDefault from "UnreadSubtitle" /* 18764 */;
 import react_mod from "react" /* 19 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 5074 */;
-import ChannelStore from "ChannelStore" /* 4989 */;
-import GuildChannelStore from "GuildChannelStore" /* 5070 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 6941 */;
-import GuildStore from "GuildStore" /* 5011 */;
-import ReadStateStore from "ReadStateStore" /* 6897 */;
-import RelationshipStore from "RelationshipStore" /* 5082 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6830 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 5076 */;
+import ChannelStore from "ChannelStore" /* 4991 */;
+import GuildChannelStore from "GuildChannelStore" /* 5072 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 6944 */;
+import GuildStore from "GuildStore" /* 5013 */;
+import ReadStateStore from "ReadStateStore" /* 6900 */;
+import RelationshipStore from "RelationshipStore" /* 5084 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6833 */;
 import UserStore from "UserStore" /* 1385 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5140 */;
+import createStyles from "createStyles" /* 5142 */;
 import size from "module_2" /* 2 */;
 
 let closure_15;
@@ -90,13 +90,13 @@ function GuildRowWrapper(guild) {
     if (memo.isMuted) {
       let BellSlashIcon;
       if (memo.isTemporary) {
-        BellSlashIcon = tmp3(11304).BellZIcon;
+        BellSlashIcon = tmp3(11313).BellZIcon;
       } else {
-        BellSlashIcon = tmp3(11122).BellSlashIcon;
+        BellSlashIcon = tmp3(11131).BellSlashIcon;
       }
       tmp2 = BellSlashIcon;
     } else {
-      tmp2 = authStore4;
+      tmp2 = authStore3;
     }
     const obj2 = { variant: "body-md/medium", style: closure_3.guildNameText, lineClamp: 1, color: str, children: guild.name };
     str = "text-default";
@@ -107,7 +107,7 @@ function GuildRowWrapper(guild) {
     if (memo.isMuted) {
       str = "text-muted";
     }
-    items = [authStore5(Text, obj2), authStore5(tmp2, { size: "xs", color: "icon-muted" })];
+    items = [authStore4(Text, obj2), authStore4(tmp2, { size: "xs", color: "icon-muted" })];
     return tmp5(tmp6, obj);
   }, items3);
   let obj4 = guild(onActiveHookChange[22]);
@@ -290,25 +290,25 @@ function GuildRowWrapper(guild) {
     let obj;
     if (obj.STREAMING === memo2) {
       const obj2 = { guildId: guild.id, streamingUser };
-      return authStore5(StreamingSubtitleDefault, obj2);
+      return authStore4(StreamingSubtitleDefault, obj2);
     } else if (obj.VOICE === memo2) {
       const obj3 = { guildId: guild.id, voiceUsers: voiceUsers1 };
-      return authStore5(VoiceSubtitleDefault, obj3);
+      return authStore4(VoiceSubtitleDefault, obj3);
     } else if (obj.MENTION === memo2) {
       let tmp20 = null;
       if (null != mentionChannelName) {
         const obj4 = { guild, channel: mentionChannel, channelName: tmp19, count: mentionChannelCount };
-        tmp20 = authStore5(MentionSubtitleDefault, obj4);
+        tmp20 = authStore4(MentionSubtitleDefault, obj4);
       }
       return tmp20;
     } else if (obj.TYPING === memo2) {
       const obj5 = { guild, channel: stateFromStores2, channelName: typingChannelName, text };
-      return authStore5(TypingSubtitleDefault, obj5);
+      return authStore4(TypingSubtitleDefault, obj5);
     } else if (obj.UNREAD === memo2) {
       let tmp5 = null;
       if (null != unreadChannelName) {
         obj = { guild, channel: unreadChannel, channelName: tmp4, count: unreadChannelCount };
-        tmp5 = authStore5(UnreadSubtitleDefault, obj);
+        tmp5 = authStore4(UnreadSubtitleDefault, obj);
       }
       return tmp5;
     } else if (obj.NONE === memo2) {
@@ -348,7 +348,7 @@ export default function HomeDrawerGuildRow(guildId) {
   const items = [GuildStore];
   const obj = guildId(504);
   const stateFromStores = obj.useStateFromStores(items, () => GuildStore.getGuild(guildId));
-  const MobileHomeDrawerExperiment = guildId(5320).MobileHomeDrawerExperiment;
+  const MobileHomeDrawerExperiment = guildId(5322).MobileHomeDrawerExperiment;
   const enableHome = MobileHomeDrawerExperiment.useConfig({ location: "guild-row" }).enableHome;
   let tmp3 = null;
   if (null != stateFromStores) {

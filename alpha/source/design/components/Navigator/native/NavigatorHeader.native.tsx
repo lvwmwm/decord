@@ -1,26 +1,26 @@
-// Module ID: 7064
-// Function ID: 7065
+// Module ID: 7067
+// Function ID: 7068
 // Name: NavigatorHeader
-// Dependencies: [5, 19, 17, 1072, 21, 5140, 575, 5751, 5766, 7065, 7068, 1500, 7070, 1113, 7071, 7120, 1377, 1627, 5714, 2]
+// Dependencies: [5, 19, 17, 1072, 21, 5142, 575, 5753, 5768, 7068, 7071, 1500, 7073, 1113, 7074, 7123, 1377, 1627, 5716, 2]
 // Exports: FauxHeader, HeaderSubmittingIndicator, NavigatorHeader, getHeaderBackButton, getHeaderCloseButton, getHeaderConditionalBackButton, getHeaderNoTitle, getHeaderTextButton, renderBackImage, useNavigatorHeaderSize
 
-// Module 7064 (NavigatorHeader)
+// Module 7067 (NavigatorHeader)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import NavigatorConstants from "NavigatorConstants" /* 5714 */;
-import Text_Text from "Text/Text" /* 5751 */;
-import useFontScale from "useFontScale" /* 5766 */;
-import HeaderDebugOverlayDefault from "HeaderDebugOverlay" /* 7065 */;
-import ArrowLargeLeftIcon from "ArrowLargeLeftIcon" /* 7068 */;
-import _mod7071 from "module_7071" /* 7071 */;
-import XSmallIcon from "XSmallIcon" /* 7120 */;
+import NavigatorConstants from "NavigatorConstants" /* 5716 */;
+import Text_Text from "Text/Text" /* 5753 */;
+import useFontScale from "useFontScale" /* 5768 */;
+import HeaderDebugOverlayDefault from "HeaderDebugOverlay" /* 7068 */;
+import ArrowLargeLeftIcon from "ArrowLargeLeftIcon" /* 7071 */;
+import _mod7074 from "module_7074" /* 7074 */;
+import XSmallIcon from "XSmallIcon" /* 7123 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5142 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -80,7 +80,7 @@ function CloseButton(onPress) {
 function CustomHeaderBackButton(onPress) {
   onPress = onPress.onPress;
   const merged = Object.assign(onPress, Object.assign({ onPress: 0 }));
-  const obj = onPress(7070);
+  const obj = onPress(7073);
   obj.useNavigatorBackPressHandler(() => {
     if (null != onPress) {
       tmp();
@@ -94,7 +94,7 @@ function CustomHeaderBackButton(onPress) {
       return closure_1_6(HeaderBackImage, {});
     }
   };
-  const HeaderBackButton = onPress(7071).HeaderBackButton;
+  const HeaderBackButton = onPress(7074).HeaderBackButton;
   const merged1 = Object.assign(merged);
   return closure_6(HeaderBackButton, obj2);
 }
@@ -115,7 +115,7 @@ function HeaderTextButton(text) {
     },
     accessibilityLabel: tmp5
   };
-  const HeaderBackButton = _mod7071.HeaderBackButton;
+  const HeaderBackButton = _mod7074.HeaderBackButton;
   const merged2 = Object.assign(merged);
   tmp5 = undefined;
   const obj3 = PlatformUtils;
@@ -190,7 +190,7 @@ export function NavigatorHeader(subtitle) {
   }
   if (tmp9Result) {
     const obj4 = { lineClamp: 1, allowFontScaling: false, style: tmp.navigatorHeaderSubtitle, variant: subtitleVariant, color: "text-subtle", children: subtitle };
-    tmp9Result = tmp9(tmp4(5751).Text, obj4);
+    tmp9Result = tmp9(tmp4(5753).Text, obj4);
   }
   items1[1] = tmp9Result;
   items1[2] = tmp3;

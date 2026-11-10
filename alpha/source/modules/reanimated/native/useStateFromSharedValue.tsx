@@ -1,10 +1,10 @@
-// Module ID: 8915
-// Function ID: 8916
+// Module ID: 8921
+// Function ID: 8922
 // Name: useStateFromSharedValue
 // Dependencies: [32, 19, 1259, 1705, 2]
 // Exports: default, useDerivedStateFromSharedValue
 
-// Module 8915 (useStateFromSharedValue)
+// Module 8921 (useStateFromSharedValue)
 import _mod1705 from "module_1705" /* 1705 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

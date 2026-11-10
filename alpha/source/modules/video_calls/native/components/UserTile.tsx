@@ -1,34 +1,34 @@
-// Module ID: 11941
-// Function ID: 11942
+// Module ID: 11950
+// Function ID: 11951
 // Name: UserTile
-// Dependencies: [32, 19, 17, 6191, 11942, 502, 4989, 2130, 1072, 5805, 5897, 21, 5140, 575, 5137, 504, 8895, 1187, 11943, 5751, 1113, 11928, 11930, 11944, 11945, 11946, 11947, 9315, 6907, 11368, 11948, 11136, 11918, 5420, 11949, 2]
+// Dependencies: [32, 19, 17, 6193, 11951, 502, 4991, 2130, 1072, 5807, 5899, 21, 5142, 575, 5139, 504, 8901, 1187, 11952, 5753, 1113, 11937, 11939, 11953, 11954, 11955, 11956, 9321, 6910, 11377, 11957, 11145, 11927, 5422, 11958, 2]
 // Exports: default
 
-// Module 11941 (UserTile)
+// Module 11950 (UserTile)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5751 */;
-import CallConstants from "CallConstants" /* 5805 */;
-import Constants2 from "Constants" /* 5897 */;
-import VoiceChannelEffectsStore2 from "VoiceChannelEffectsStore" /* 11942 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11943 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 11944 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 11945 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 11946 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 11947 */;
-import mediaEngineContextFromParticipantTypeDefault from "mediaEngineContextFromParticipantType" /* 11948 */;
+import Text_Text from "Text/Text" /* 5753 */;
+import CallConstants from "CallConstants" /* 5807 */;
+import Constants2 from "Constants" /* 5899 */;
+import VoiceChannelEffectsStore2 from "VoiceChannelEffectsStore" /* 11951 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11952 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 11953 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 11954 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 11955 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 11956 */;
+import mediaEngineContextFromParticipantTypeDefault from "mediaEngineContextFromParticipantType" /* 11957 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import SoundboardStore from "SoundboardStore" /* 6191 */;
+import SoundboardStore from "SoundboardStore" /* 6193 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4989 */;
+import ChannelStore from "ChannelStore" /* 4991 */;
 import MediaEngineStore from "MediaEngineStore" /* 2130 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5140 */;
-import ColorUtils_mod from "ColorUtils" /* 5137 */;
+import createStyles_mod from "createStyles" /* 5142 */;
+import ColorUtils_mod from "ColorUtils" /* 5139 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -137,18 +137,18 @@ let closure_19 = react.memo(function VideoContent(guildId) {
       let tmp3;
       const tmp = closure_3;
       if (tmp) {
-        const obj = { style: closure_1.autoDisabledVideoWrapper, children: authStore4(View, obj2) };
+        const obj = { style: closure_1.autoDisabledVideoWrapper, children: authStore3(View, obj2) };
         obj2 = { style: items, children: items1 };
         items = [, ];
         ({ autoDisabledVideo: arr[0], autoDisabledVideoTextWrapper: arr[1] } = closure_1);
         const obj3 = { source: AssetRegistryDefault, size: native.Icon.Sizes.SMALL, disableColor: true };
         const Icon = native.Icon;
-        items1 = [closure_15(Icon, obj3), ];
+        items1 = [clientStatuses(Icon, obj3), ];
         const obj4 = { variant: "body-sm/normal", color: "text-default", style: closure_1.labelText, children: intl.string(intl2.t.m2Hyj0) };
         const Text = Text_Text.Text;
         intl = intl2.intl;
-        items1[1] = closure_15(Text, obj4);
-        tmp3 = closure_15(View, obj);
+        items1[1] = clientStatuses(Text, obj4);
+        tmp3 = clientStatuses(View, obj);
       } else {
         tmp3 = null;
       }

@@ -1,18 +1,18 @@
-// Module ID: 14791
-// Function ID: 14792
+// Module ID: 14817
+// Function ID: 14818
 // Name: IconActionButton
-// Dependencies: [19, 21, 5140, 575, 1377, 1187, 5766, 7043, 5751, 9908, 2]
+// Dependencies: [19, 21, 5142, 575, 1377, 1187, 5768, 7046, 5753, 9914, 2]
 // Exports: default
 
-// Module 14791 (IconActionButton)
+// Module 14817 (IconActionButton)
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
-import useFontScale from "useFontScale" /* 5766 */;
-import shared_components_Badge from "shared_components/Badge" /* 9908 */;
+import useFontScale from "useFontScale" /* 5768 */;
+import shared_components_Badge from "shared_components/Badge" /* 9914 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5140 */;
+import createStyles from "createStyles" /* 5142 */;
 import size from "module_2" /* 2 */;
 
 const shared_components_BadgeDefault = shared_components_Badge;
@@ -109,7 +109,7 @@ export default function IconActionButton(variant) {
   const obj = { ref, hitSlop, onPress, onLongPress, disabled, accessibilityRole: "button", accessibilityLabel, accessibilityActions, onAccessibilityAction, style: items, children: items1 };
   items = [tmp.actionIconButtonPressable, "outlined" === str ? tmp.outlined : tmp.filled, , , ];
   let roundButton;
-  const PressableOpacity = tmp2(7043).PressableOpacity;
+  const PressableOpacity = tmp2(7046).PressableOpacity;
   const tmp7 = hasOwnProperty;
   if (!tmp10Result) {
     roundButton = tmp.roundButton;
@@ -124,7 +124,7 @@ export default function IconActionButton(variant) {
   items1 = [React3(closure_7, { IconComponent, color, source }), , , ];
   if (tmp10Result) {
     const obj2 = { variant: "body-sm/semibold", color: buttonTextColor, style: tmp.actionText, children: buttonText };
-    tmp10Result = tmp10(tmp2(5751).Text, obj2);
+    tmp10Result = tmp10(tmp2(5753).Text, obj2);
   }
   items1[1] = tmp10Result;
   let tmp10Result2 = null;

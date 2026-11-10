@@ -1,11 +1,11 @@
-// Module ID: 11046
-// Function ID: 11047
+// Module ID: 11055
+// Function ID: 11056
 // Name: getPostMessageJavaScript
-// Dependencies: [11047, 2]
+// Dependencies: [11056, 2]
 // Exports: default
 
-// Module 11046 (getPostMessageJavaScript)
-import EmbeddedAppConstants from "EmbeddedAppConstants" /* 11047 */;
+// Module 11055 (getPostMessageJavaScript)
+import EmbeddedAppConstants from "EmbeddedAppConstants" /* 11056 */;
 import size from "module_2" /* 2 */;
 
 let closure_0 = EmbeddedAppConstants.EMBEDDED_APP_FRAME_ELEMENT_ID;

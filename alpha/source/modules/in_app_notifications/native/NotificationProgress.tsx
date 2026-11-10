@@ -1,17 +1,17 @@
-// Module ID: 11211
-// Function ID: 11212
+// Module ID: 11220
+// Function ID: 11221
 // Name: NotificationProgress
-// Dependencies: [32, 19, 17, 21, 5140, 575, 1652, 2]
+// Dependencies: [32, 19, 17, 21, 5142, 575, 1652, 2]
 // Exports: default
 
-// Module 11211 (NotificationProgress)
+// Module 11220 (NotificationProgress)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1652 from "module_1652" /* 1652 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5140 */;
+import createStyles from "createStyles" /* 5142 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

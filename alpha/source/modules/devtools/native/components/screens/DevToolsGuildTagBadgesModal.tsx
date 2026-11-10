@@ -1,15 +1,15 @@
-// Module ID: 18039
-// Function ID: 18040
+// Module ID: 18066
+// Function ID: 18067
 // Name: DevToolsGuildTagBadgesModal
-// Dependencies: [19, 21, 9976, 7231, 9902, 10265, 18040, 2]
+// Dependencies: [19, 21, 9982, 7234, 9908, 10271, 18067, 2]
 
-// Module 18039 (DevToolsGuildTagBadgesModal)
+// Module 18066 (DevToolsGuildTagBadgesModal)
 import Fragment from "Fragment" /* 21 */;
-import HeaderShared from "HeaderShared" /* 9902 */;
-import getNavigationModalPresentationDefault from "getNavigationModalPresentation" /* 10265 */;
-import DevToolsGuildTagBadgesScreenDefault from "DevToolsGuildTagBadgesScreen" /* 18040 */;
+import HeaderShared from "HeaderShared" /* 9908 */;
+import getNavigationModalPresentationDefault from "getNavigationModalPresentation" /* 10271 */;
+import DevToolsGuildTagBadgesScreenDefault from "DevToolsGuildTagBadgesScreen" /* 18067 */;
 import react from "react" /* 19 */;
-import NativeStackView from "NativeStackView" /* 9976 */;
+import NativeStackView from "NativeStackView" /* 9982 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

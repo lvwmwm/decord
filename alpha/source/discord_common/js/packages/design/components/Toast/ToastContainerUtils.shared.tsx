@@ -1,22 +1,22 @@
-// Module ID: 16179
-// Function ID: 16180
+// Module ID: 16206
+// Function ID: 16207
 // Name: DEFAULT_TOAST_POSITION
-// Dependencies: [32, 19, 5151, 5839, 5154, 5149, 2]
+// Dependencies: [32, 19, 5153, 5841, 5156, 5151, 2]
 // Exports: useToastContainer
 
-// Module 16179 (DEFAULT_TOAST_POSITION)
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5149 */;
+// Module 16206 (DEFAULT_TOAST_POSITION)
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5151 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import module_5151 from "module_5151" /* 5151 */;
+import module_5153 from "module_5153" /* 5153 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, containerIdsBySurface, currentToastMap, set;
+let _require, containerIdsBySurface, set;
 
 let _slicedToArray = _slicedToArray_mod;
 const top = "top";
-let closure_5 = module_5151.create(() => {
+let closure_5 = module_5153.create(() => {
   const obj = { containerIdsBySurface: new Map() };
   new Map();
   return obj;
@@ -30,7 +30,6 @@ export function useToastContainer(app) {
   let entry;
   let position1;
   let tmp10;
-  let obj = react;
   const id = react.useId();
   _require = app;
   let items = [app, id];
@@ -65,12 +64,12 @@ export function useToastContainer(app) {
       });
     };
   }, items);
-  const tmp3 = state((containerIdsBySurface) => {
+  let tmp3 = state((containerIdsBySurface) => {
     containerIdsBySurface = containerIdsBySurface.containerIdsBySurface;
     const value = containerIdsBySurface.get(closure_0);
     return null != value && value[value.length - 1] === id;
   });
-  const obj2 = require("module_5839");
+  const obj2 = require("module_5841");
   const tmp5 = entry;
   entry = undefined;
   const tmp4 = _require;
@@ -83,7 +82,7 @@ export function useToastContainer(app) {
   if (entry == null) {
     entry = null;
   }
-  [position1, tmp10] = obj.useState(top);
+  [position1, tmp10] = react.useState(top);
   let tmp11 = position1;
   const tmp7 = top;
   if (null != entry) {
@@ -111,10 +110,19 @@ export function useToastContainer(app) {
   const effect1 = obj.useEffect(() => {
     let closure_0;
     if (null != entry) {
+      let tmp = globalThis;
       const _setTimeout = setTimeout;
+      let tmp2 = closure_2;
       const timeout = setTimeout(() => {
-        const obj = app(entry[3]);
-        return obj.popToast(app);
+        const useToastStore = app(entry[3]).useToastStore;
+        const currentToastMap = useToastStore.getState().currentToastMap;
+        const tmp = app;
+        const tmp2 = entry;
+        const tmp3 = app;
+        if (currentToastMap.get(app) === closure_1_1) {
+          const tmpResult = tmp(tmp2[3]);
+          tmpResult.popToast(tmp3);
+        }
       }, closure_2);
       return () => clearTimeout(closure_0);
     }

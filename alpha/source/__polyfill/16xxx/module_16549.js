@@ -1,369 +1,675 @@
 // Module ID: 16549
 // Function ID: 16550
-// Dependencies: [5, 17, 82, 16550, 16552, 16554, 16555, 16558, 16559, 16572, 16574, 16576, 16577, 16578, 16579, 16560]
+// Dependencies: [41, 42, 32, 16543, 16550, 16551]
 
 // Module 16549
-import ArgType2 from "ArgType" /* 16560 */;
-import _mod16579 from "module_16579" /* 16579 */;
-import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
-import react_native_mod from "react-native" /* 17 */;
-import get_mod from "module_82" /* 82 */;
-import getReactNativeVersion from "getReactNativeVersion" /* 16550 */;
-import getReactNativeDimensions from "getReactNativeDimensions" /* 16552 */;
-import _asyncToGenerator_mod2 from "_asyncToGenerator" /* 16554 */;
-import OverlayCreator from "OverlayCreator" /* 16555 */;
-import module_16558 from "module_16558" /* 16558 */;
-import module_16559 from "module_16559" /* 16559 */;
-import module_16572 from "module_16572" /* 16572 */;
-import module_16574 from "module_16574" /* 16574 */;
-import react_native_mod2 from "react-native" /* 16576 */;
-import ArgType from "module_16577" /* 16577 */;
-import getReactNativePlatformConstants from "getReactNativePlatformConstants" /* 16578 */;
+import _mod16543 from "module_16543" /* 16543 */;
+import _mod16550 from "module_16550" /* 16550 */;
+import any from "any" /* 16551 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
 
-let c1, c3, c4, errors;
+const require = globalThis.__r;
+let _require;
 
-let forceTouch;
-let interfaceIdiom;
-let obj10;
-let obj12;
-let obj14;
-let obj16;
-let obj18;
-let obj20;
-let obj22;
-let obj24;
-let obj26;
-let obj28;
-let obj30;
-let obj32;
-let osRelease;
-let serial;
-let serverHost;
-let tmp13;
-let uiMode;
-let _asyncToGenerator = _asyncToGenerator_mod2;
-let react_native = react_native_mod2;
-let get = get_mod;
-if (!get) {
-  tmp13 = { default: get };
-  const obj9 = { default: get };
-} else {
-  tmp13 = get;
-}
-get = tmp13;
-if (!getReactNativeVersion) {
-  obj10 = { default: getReactNativeVersion };
-  const obj11 = { default: getReactNativeVersion };
-} else {
-  obj10 = getReactNativeVersion;
-}
-if (!getReactNativeDimensions) {
-  obj12 = { default: getReactNativeDimensions };
-  const obj13 = { default: getReactNativeDimensions };
-} else {
-  obj12 = getReactNativeDimensions;
-}
-_asyncToGenerator = _asyncToGenerator_mod2;
-if (!_asyncToGenerator) {
-  obj14 = { default: _asyncToGenerator };
-  const obj15 = { default: _asyncToGenerator };
-} else {
-  obj14 = _asyncToGenerator;
-}
-if (!OverlayCreator) {
-  obj16 = { default: OverlayCreator };
-  const obj17 = { default: OverlayCreator };
-} else {
-  obj16 = OverlayCreator;
-}
-if (!module_16558) {
-  obj18 = { default: module_16558 };
-  const obj19 = { default: module_16558 };
-} else {
-  obj18 = module_16558;
-}
-if (!module_16559) {
-  obj20 = { default: module_16559 };
-  const obj21 = { default: module_16559 };
-} else {
-  obj20 = module_16559;
-}
-if (!module_16572) {
-  obj22 = { default: module_16572 };
-  const obj23 = { default: module_16572 };
-} else {
-  obj22 = module_16572;
-}
-if (!module_16574) {
-  obj24 = { default: module_16574 };
-  const obj25 = { default: module_16574 };
-} else {
-  obj24 = module_16574;
-}
-react_native = react_native_mod2;
-if (!react_native) {
-  obj26 = { default: react_native };
-  const obj27 = { default: react_native };
-} else {
-  obj26 = react_native;
-}
-if (!ArgType) {
-  obj28 = { default: ArgType };
-  const obj29 = { default: ArgType };
-} else {
-  obj28 = ArgType;
-}
-if (!getReactNativePlatformConstants) {
-  obj30 = { default: getReactNativePlatformConstants };
-  const obj31 = { default: getReactNativePlatformConstants };
-} else {
-  obj30 = getReactNativePlatformConstants;
-}
-let c15 = "@REACTOTRON/clientId";
-const defaultResult = obj30.default();
-const model = defaultResult.model;
-const systemName = defaultResult.systemName;
-const url = {
-  createSocket(url) {
-    const webSocket = new WebSocket(url);
-    return webSocket;
+let obj = {
+  next: {
+    value: function next() {
+      let index;
+      let kind;
+      let tmp7;
+      let tmp8;
+      const tmp3 = this[_mod16543.iterInternalSymbol];
+      ({ kind, index } = tmp3);
+      const arr = Array.from(tmp3.target[_mod16543.implSymbol]);
+      if (index >= arr.length) {
+        return { value: "HermesInternal", done: null };
+      } else {
+        let tmp4;
+        tmp3.index = index + 1;
+        [tmp7, tmp8] = arr[index].map(_mod16543.tryWrapperForImpl);
+        _slicedToArray(arr[index].map(_mod16543.tryWrapperForImpl), 2);
+        if ("key" === kind) {
+          tmp4 = tmp7;
+        } else if ("value" === kind) {
+          tmp4 = tmp8;
+        } else if ("key+value" === kind) {
+          const items = [tmp7, tmp8];
+          tmp4 = items;
+        }
+        return { value: tmp4, done: false };
+      }
+    },
+    writable: true,
+    enumerable: true,
+    configurable: true
+  }
+};
+obj[Symbol.toStringTag] = { value: "URLSearchParams Iterator", configurable: true };
+let closure_6 = Object.create(_mod16543.IteratorPrototype, obj);
+let obj2 = {
+  _mixedIntoPredicates: [],
+  is(arg0) {
+    const tmp = arg0;
+    if (tmp) {
+      const obj = _mod16543;
+      if (obj.hasOwn(arg0, _mod16543.implSymbol)) {
+        if (arg0[_mod16543.implSymbol] instanceof _mod16550.implementation) {
+          return true;
+        }
+      }
+      const _mixedIntoPredicates = module.exports._mixedIntoPredicates;
+      for (const item10025 of _mixedIntoPredicates) {
+        if (item10025(arg0)) {
+          obj2.return();
+          let flag = true;
+          return true;
+        }
+      }
+    }
+    return false;
   },
-  host: (function() {
-    try {
-      const _default = get.default;
-      const scriptURL = _default.getConstants().scriptURL;
-      if (typeof scriptURL !== "string") {
+  isImpl(arg0) {
+    const tmp = arg0;
+    if (tmp) {
+      const tmp2 = require;
+      if (arg0 instanceof _mod16550.implementation) {
+        return true;
+      } else {
+        const _mixedIntoPredicates = module.exports._mixedIntoPredicates;
+        const tmp2Result = tmp2(16543);
+        for (const item10018 of _mixedIntoPredicates) {
+          if (item10018(tmp2Result.wrapperForImpl(arg0))) {
+            obj2.return();
+            let flag = true;
+            return true;
+          }
+        }
+      }
+    }
+    return false;
+  },
+  convert(arg0) {
+    let obj = arg1;
+    if (arg1 === undefined) {
+      obj = {};
+    }
+    let str = obj.context;
+    if (str === undefined) {
+      str = "The provided value";
+    }
+    const _exports = module.exports;
+    if (_exports.is(arg0)) {
+      obj2 = _mod16543;
+      return obj2.implForWrapper(arg0);
+    } else {
+      const _TypeError = TypeError;
+      const _HermesInternal = HermesInternal;
+      const self = this;
+      const self2 = this;
+      const typeError = new TypeError("" + str + " is not of type 'URLSearchParams'.");
+      throw typeError;
+    }
+  },
+  createDefaultIterator(self, key) {
+    let obj4;
+    obj2 = Object.create(closure_6);
+    const obj = { value: obj4, configurable: true };
+    obj4 = { target: self, kind: key, index: 0 };
+    Object.defineProperty(obj2, _mod16543.iterInternalSymbol, obj);
+    return obj2;
+  },
+  create(arg0, arg1, arg2) {
+    if (undefined === arg0[_mod16543.ctorRegistrySymbol]) {
+      const _Error2 = Error;
+      const self3 = this;
+      const self4 = this;
+      const error = new Error("Internal error: invalid global object");
+      throw error;
+    } else {
+      const _URLSearchParams = arg0[_mod16543.ctorRegistrySymbol].URLSearchParams;
+      if (undefined === _URLSearchParams) {
         const _Error = Error;
         const self = this;
         const self2 = this;
-        const error = new Error("Invalid non-string URL");
-        throw error;
+        const error1 = new Error("Internal error: constructor URLSearchParams is not installed on the passed global object");
+        throw error1;
       } else {
-        return _mod16579.getHostFromUrl(scriptURL);
+        const _Object = Object;
+        return obj2.setup(Object.create(_URLSearchParams.prototype), arg0, arg1, arg2);
       }
-    } catch (tmp6) {
-      const _console = console;
-      const _HermesInternal = HermesInternal;
-      console.warn("getHost: \"" + tmp6.message + "\" for scriptURL - Falling back to " + "localhost");
-      return "localhost";
     }
-  })("localhost"),
-  port: 9090,
-  name: "React Native App",
-  environment: "production",
-  client: obj32,
-  getClientId() {
-    return closure_14(...arguments);
   },
-  setClientId(payload) {
-    return closure_13(...arguments);
+  createImpl(arg0, arg1, arg2) {
+    obj2 = obj2.create(arg0, arg1, arg2);
+    const obj = _mod16543;
+    return obj.implForWrapper(obj2);
   },
-  proxyHack: true
-};
-({ osRelease, serverHost, forceTouch, interfaceIdiom, uiMode, serial } = defaultResult);
-obj32 = { reactotronLibraryName: "reactotron-react-native", reactotronLibraryVersion: "REACTOTRON_REACT_NATIVE_VERSION", platform: react_native.Platform.OS, platformVersion: react_native.Platform.Version, osRelease, model, serverHost, forceTouch, interfaceIdiom, systemName, uiMode, serial, reactNativeVersion: obj10.default() };
-const merged = Object.assign(obj12.default());
-let closure_14 = _asyncToGenerator(async (arg0, value) => {
-  let asyncStorageHandler;
-  let closure_1;
-  let closure_0 = arg0;
-  if (c4 === 2) {
-    c4 = 3;
-    throw new TypeError("Generator functions may not be called on executing generators");
-  } else if (tmp3 === 3) {
-    if (arg0 === 1) {
-      throw value;
-    } else if (arg0 === 2) {
-      const obj = { value, done: true };
-      return obj;
-    } else {
-      return { value: "HermesInternal", done: null };
-    }
-  } else {
-    try {
-      let str2;
-      let tmp;
-      let screenWidth;
-      let screenHeight;
-      let screenScale;
-      let closure_5;
-      let closure_6;
-      c4 = 2;
-      if (0 === c3) {
-        if (arg0 === 1) {
-          c4 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c4 = 3;
-          const obj2 = { value, done: true };
-          return obj2;
-        } else {
-          let closure_2 = tmp4;
-          str2 = closure_0;
-          if (closure_0 === undefined) {
-            str2 = "";
-          }
-          tmp = undefined;
-          screenWidth = undefined;
-          screenHeight = undefined;
-          screenScale = undefined;
-          closure_5 = undefined;
-          closure_6 = undefined;
-          c3 = 1;
-          c4 = 1;
-          return { value: "flexDirection", done: true };
-        }
-      } else if (arg0 === 1) {
-        c4 = 3;
-        throw value;
-      } else if (arg0 === 2) {
-        c4 = 3;
-        const obj3 = { value, done: true };
-        return obj3;
-      } else if (closure_130_18.asyncStorageHandler) {
-        c4 = 3;
-        const obj4 = { value: asyncStorageHandler.getItem(closure_130_15), done: true };
-        asyncStorageHandler = closure_130_18.asyncStorageHandler;
-        return obj4;
-      } else {
-        tmp = closure_130_4.default();
-        screenWidth = tmp.screenWidth;
-        screenHeight = tmp.screenHeight;
-        screenScale = tmp.screenScale;
-        const items = [screenWidth, screenHeight];
-        const sorted = items.sort();
-        closure_5 = sorted.join("-");
-        const Platform = closure_130_2.Platform;
-        const obj5 = { ios: closure_130_17, android: closure_130_16, default: "" };
-        closure_6 = Platform.select(obj5);
-        const items1 = [str2, closure_130_2.Platform.OS, closure_130_2.Platform.Version, closure_6, closure_5, screenScale];
-        const _Boolean = Boolean;
-        const found = items1.filter(Boolean);
-        c4 = 3;
-        const obj6 = { value: found.join("-"), done: true };
-        return obj6;
-      }
-    } catch (tmp24) {
-      c4 = 3;
-      throw tmp24;
-    }
-  }
-});
-let closure_13 = _asyncToGenerator(async (arg0, value) => {
-  let asyncStorageHandler;
-  let closure_0;
-  if (c1 === 2) {
-    c1 = 3;
-    throw new TypeError("Generator functions may not be called on executing generators");
-  } else if (tmp2 === 3) {
-    if (arg0 === 1) {
-      throw value;
-    } else if (arg0 === 2) {
-      const obj2 = { value, done: true };
-      return obj2;
-    } else {
-      return { value: "HermesInternal", done: null };
-    }
-  } else {
-    try {
-      c1 = 2;
-      if (arg0 === 1) {
-        c1 = 3;
-        throw value;
-      } else if (arg0 === 2) {
-        c1 = 3;
-        const obj3 = { value, done: true };
-        return obj3;
-      } else if (client.asyncStorageHandler) {
-        c1 = 3;
-        const obj = { value: asyncStorageHandler.setItem(c15, tmp3), done: true };
-        asyncStorageHandler = client.asyncStorageHandler;
-        return obj;
-      } else {
-        c1 = 3;
-        return { value: "HermesInternal", done: null };
-      }
-    } catch (tmp5) {
-      c1 = 3;
-      throw tmp5;
-    }
-  }
-});
-let items = [obj14.default(), obj20.default(), obj28.default(), obj18.default(), obj16.default(), obj22.default(), obj24.default(), obj26.default()];
-const client = ArgType2.createClient(url);
-client.useReactNative = () => {
-  let obj = arg0;
-  if (arg0 === undefined) {
-    obj = {};
-  }
-  if (false !== obj.errors) {
-    errors = obj.errors;
-    let tmp3 = null;
-    const use = client.use;
-    const _default = obj20.default;
-    if (typeof errors === "object") {
-      tmp3 = errors;
-    }
-    use(_default(tmp3));
-  }
-  if (false !== obj.log) {
-    client.use(obj28.default());
-  }
-  if (false !== obj.editor) {
-    const editor = obj.editor;
-    let tmp10 = null;
-    const use2 = client.use;
-    const _default2 = obj18.default;
-    if (typeof editor === "object") {
-      tmp10 = editor;
-    }
-    use2(_default2(tmp10));
-  }
-  if (false !== obj.overlay) {
-    client.use(obj16.default());
-  }
-  if (false !== obj.asyncStorage) {
-    const asyncStorage = obj.asyncStorage;
-    let tmp17 = null;
-    const use3 = client.use;
-    const _default3 = obj14.default;
-    if (typeof asyncStorage === "object") {
-      tmp17 = asyncStorage;
-    }
-    use3(_default3(tmp17));
-  }
-  if (false !== obj.networking) {
-    const networking = obj.networking;
-    let tmp21 = null;
-    const use4 = client.use;
-    const _default4 = obj22.default;
-    if (typeof networking === "object") {
-      tmp21 = networking;
-    }
-    use4(_default4(tmp21));
-  }
-  if (false !== obj.storybook) {
-    client.use(obj24.default());
-  }
-  if (false !== obj.devTools) {
-    client.use(obj26.default());
-  }
-  return client;
-};
-client.setAsyncStorageHandler = (asyncStorageHandler) => {
-  client.asyncStorageHandler = asyncStorageHandler;
-  return client;
-};
-const asyncStorage_export = obj14.default;
-const networking_export = obj22.default;
+  _internalSetup(arg0) {
 
-export { asyncStorage_export as asyncStorage };
-export const devTools = obj26.default;
-export { networking_export as networking };
-export const openInEditor = obj18.default;
-export const overlay = obj16.default;
-export const storybook = obj24.default;
-export const trackGlobalErrors = obj20.default;
-export const trackGlobalLogs = obj28.default;
-export const reactNativeCorePlugins = items;
-export default client;
+  },
+  setup(wrapper, arg1) {
+    let implementation;
+    let items = arg2;
+    if (arg2 === undefined) {
+      items = [];
+    }
+    let obj = arg3;
+    if (arg3 === undefined) {
+      obj = {};
+    }
+    obj.wrapper = wrapper;
+    obj2._internalSetup(wrapper);
+    obj2 = { value: implementation, configurable: true };
+    const implSymbol = _mod16543.implSymbol;
+    implementation = new _mod16550.implementation(arg1, items, obj);
+    defineProperty(wrapper, implSymbol, obj2);
+    wrapper[_mod16543.implSymbol][_mod16543.wrapperSymbol] = wrapper;
+    if (_mod16550.init) {
+      const tmp2Result = _mod16550;
+      tmp2Result.init(wrapper[_mod16543.implSymbol], obj);
+    }
+    return wrapper;
+  },
+  install(arg0) {
+    let closure_0;
+    _require = arg0;
+    class URLSearchParams {
+      constructor() {
+        _classCallCheck(this, URLSearchParams);
+        const first = arguments[0];
+        let str = "";
+        if (undefined !== first) {
+          const obj7 = _mod16543;
+          if (obj7.isObject(first)) {
+            const _Symbol = Symbol;
+            if (undefined !== first[Symbol.iterator]) {
+              const tmp50Result = _mod16543;
+              if (tmp50Result.isObject(first)) {
+                const items = [];
+                str = items;
+                for (const item10081 of first) {
+                  let obj5 = _mod16543;
+                  if (obj5.isObject(item10081)) {
+                    let items1 = [];
+                    for (const item10103 of item10081) {
+                      let obj6 = any;
+                      let arr = items1.push(obj6.USVString(item10103, { context: "Failed to construct 'URLSearchParams': parameter 1 sequence's element's element" }));
+                      continue;
+                    }
+                    let arr2 = items.push(items1);
+                    continue;
+                  } else {
+                    let _TypeError3 = TypeError;
+                    let self5 = this;
+                    let str4 = "Failed to construct 'URLSearchParams': parameter 1 sequence's element is not an iterable object.";
+                    let self6 = this;
+                    let typeError = new TypeError("Failed to construct 'URLSearchParams': parameter 1 sequence's element is not an iterable object.");
+                    throw typeError;
+                  }
+                }
+              } else {
+                const _TypeError2 = TypeError;
+                const self3 = this;
+                const self4 = this;
+                const typeError1 = new TypeError("Failed to construct 'URLSearchParams': parameter 1 sequence is not an iterable object.");
+                throw typeError1;
+              }
+            } else {
+              const tmp50Result3 = _mod16543;
+              if (tmp50Result3.isObject(first)) {
+                const _Object = Object;
+                const obj = Object.create(null);
+                const _Reflect = Reflect;
+                str = obj;
+                const ownKeysResult = Reflect.ownKeys(first);
+                for (const item10039 of ownKeysResult) {
+                  let tmp13 = item10039;
+                  let _Object2 = Object;
+                  let ownPropertyDescriptor = Object.getOwnPropertyDescriptor(first, item10039);
+                  if (ownPropertyDescriptor) {
+                    if (tmp15.enumerable) {
+                      obj2 = any;
+                      let USVStringResult = obj2.USVString(tmp13, { context: "Failed to construct 'URLSearchParams': parameter 1 record's key" });
+                      let tmp23 = first[tmp13];
+                      let obj3 = any;
+                      obj[USVStringResult] = obj3.USVString(tmp23, { context: "Failed to construct 'URLSearchParams': parameter 1 record's value" });
+                    }
+                  }
+                  continue;
+                }
+              } else {
+                const _TypeError = TypeError;
+                const self = this;
+                const self2 = this;
+                const typeError2 = new TypeError("Failed to construct 'URLSearchParams': parameter 1 record is not an object.");
+                throw typeError2;
+              }
+            }
+          } else {
+            const tmp50Result4 = any;
+            str = tmp50Result4.USVString(first, { context: "Failed to construct 'URLSearchParams': parameter 1" });
+          }
+        }
+        const items2 = [];
+        items2.push(str);
+        return obj2.setup(Object.create(this.constructor.prototype), closure_0, items2);
+      }
+    }
+    const entry = {
+      key: "append",
+      value: function append(arg0, arg1) {
+        const self = this;
+        if (self) {
+          const _exports = module.exports;
+          if (_exports.is(self)) {
+            if (arguments.length < 2) {
+              const _TypeError = TypeError;
+              const self2 = this;
+              const self3 = this;
+              const typeError = new TypeError("Failed to execute 'append' on 'URLSearchParams': 2 arguments required, but only " + arguments.length + " present.");
+              throw typeError;
+            } else {
+              const items = [];
+              const first = arguments[0];
+              const obj = closure_0(dependencyMap[5]);
+              items.push(obj.USVString(first, { context: "Failed to execute 'append' on 'URLSearchParams': parameter 1" }));
+              const tmp11 = arguments[1];
+              obj2 = closure_0(dependencyMap[5]);
+              items.push(obj2.USVString(tmp11, { context: "Failed to execute 'append' on 'URLSearchParams': parameter 2" }));
+              const tmp13 = self[closure_0(undefined, dependencyMap[3]).implSymbol];
+              const append = tmp13.append;
+              const items1 = [];
+              HermesBuiltin.arraySpread(items1, items, 0);
+              return HermesBuiltin.apply(append, items1, tmp13);
+            }
+          }
+        }
+        const typeError1 = new TypeError("Illegal invocation");
+        throw typeError1;
+      }
+    };
+    let items = [
+      entry,
+      {
+        key: "delete",
+        value: function _delete(arg0) {
+          const self = this;
+          if (self) {
+            const _exports = module.exports;
+            if (_exports.is(self)) {
+              if (arguments.length < 1) {
+                const _TypeError = TypeError;
+                const self2 = this;
+                const self3 = this;
+                const typeError = new TypeError("Failed to execute 'delete' on 'URLSearchParams': 1 argument required, but only " + arguments.length + " present.");
+                throw typeError;
+              } else {
+                const items = [];
+                const first = arguments[0];
+                const obj = closure_0(dependencyMap[5]);
+                items.push(obj.USVString(first, { context: "Failed to execute 'delete' on 'URLSearchParams': parameter 1" }));
+                const tmp8 = self[closure_0(undefined, dependencyMap[3]).implSymbol];
+                const _delete = tmp8.delete;
+                const items1 = [];
+                HermesBuiltin.arraySpread(items1, items, 0);
+                return HermesBuiltin.apply(_delete, items1, tmp8);
+              }
+            }
+          }
+          const typeError1 = new TypeError("Illegal invocation");
+          throw typeError1;
+        }
+      },
+      {
+        key: "get",
+        value: function get(arg0) {
+          const self = this;
+          if (self) {
+            const _exports = module.exports;
+            if (_exports.is(self)) {
+              if (arguments.length < 1) {
+                const _TypeError = TypeError;
+                const self2 = this;
+                const self3 = this;
+                const typeError = new TypeError("Failed to execute 'get' on 'URLSearchParams': 1 argument required, but only " + arguments.length + " present.");
+                throw typeError;
+              } else {
+                const items = [];
+                const first = arguments[0];
+                const obj = closure_0(dependencyMap[5]);
+                items.push(obj.USVString(first, { context: "Failed to execute 'get' on 'URLSearchParams': parameter 1" }));
+                const tmp8 = self[closure_0(undefined, dependencyMap[3]).implSymbol];
+                const get = tmp8.get;
+                const items1 = [];
+                HermesBuiltin.arraySpread(items1, items, 0);
+                return HermesBuiltin.apply(get, items1, tmp8);
+              }
+            }
+          }
+          const typeError1 = new TypeError("Illegal invocation");
+          throw typeError1;
+        }
+      },
+      {
+        key: "getAll",
+        value: function getAll(arg0) {
+          const self = this;
+          if (self) {
+            const _exports = module.exports;
+            if (_exports.is(self)) {
+              if (arguments.length < 1) {
+                const _TypeError = TypeError;
+                const self2 = this;
+                const self3 = this;
+                const typeError = new TypeError("Failed to execute 'getAll' on 'URLSearchParams': 1 argument required, but only " + arguments.length + " present.");
+                throw typeError;
+              } else {
+                const items = [];
+                const first = arguments[0];
+                const obj = closure_0(dependencyMap[5]);
+                items.push(obj.USVString(first, { context: "Failed to execute 'getAll' on 'URLSearchParams': parameter 1" }));
+                const tryWrapperForImpl = closure_0(dependencyMap[3]).tryWrapperForImpl;
+                const tmp12 = self[closure_0(undefined, dependencyMap[3]).implSymbol];
+                const getAll = tmp12.getAll;
+                const items1 = [];
+                HermesBuiltin.arraySpread(items1, items, 0);
+                return tryWrapperForImpl(HermesBuiltin.apply(getAll, items1, tmp12));
+              }
+            }
+          }
+          const typeError1 = new TypeError("Illegal invocation");
+          throw typeError1;
+        }
+      },
+      {
+        key: "has",
+        value: function has(arg0) {
+          const self = this;
+          if (self) {
+            const _exports = module.exports;
+            if (_exports.is(self)) {
+              if (arguments.length < 1) {
+                const _TypeError = TypeError;
+                const self2 = this;
+                const self3 = this;
+                const typeError = new TypeError("Failed to execute 'has' on 'URLSearchParams': 1 argument required, but only " + arguments.length + " present.");
+                throw typeError;
+              } else {
+                const items = [];
+                const first = arguments[0];
+                const obj = closure_0(dependencyMap[5]);
+                items.push(obj.USVString(first, { context: "Failed to execute 'has' on 'URLSearchParams': parameter 1" }));
+                const tmp8 = self[closure_0(undefined, dependencyMap[3]).implSymbol];
+                const has = tmp8.has;
+                const items1 = [];
+                HermesBuiltin.arraySpread(items1, items, 0);
+                return HermesBuiltin.apply(has, items1, tmp8);
+              }
+            }
+          }
+          const typeError1 = new TypeError("Illegal invocation");
+          throw typeError1;
+        }
+      },
+      {
+        key: "set",
+        value: function set(arg0, arg1) {
+          const self = this;
+          if (self) {
+            const _exports = module.exports;
+            if (_exports.is(self)) {
+              if (arguments.length < 2) {
+                const _TypeError = TypeError;
+                const self2 = this;
+                const self3 = this;
+                const typeError = new TypeError("Failed to execute 'set' on 'URLSearchParams': 2 arguments required, but only " + arguments.length + " present.");
+                throw typeError;
+              } else {
+                const items = [];
+                const first = arguments[0];
+                const obj = closure_0(dependencyMap[5]);
+                items.push(obj.USVString(first, { context: "Failed to execute 'set' on 'URLSearchParams': parameter 1" }));
+                const tmp11 = arguments[1];
+                obj2 = closure_0(dependencyMap[5]);
+                items.push(obj2.USVString(tmp11, { context: "Failed to execute 'set' on 'URLSearchParams': parameter 2" }));
+                const tmp13 = self[closure_0(undefined, dependencyMap[3]).implSymbol];
+                const items1 = [];
+                HermesBuiltin.arraySpread(items1, items, 0);
+                return HermesBuiltin.apply(tmp13.set, items1, tmp13);
+              }
+            }
+          }
+          const typeError1 = new TypeError("Illegal invocation");
+          throw typeError1;
+        }
+      },
+      {
+        key: "sort",
+        value: function sort() {
+          const self = this;
+          if (self) {
+            const _exports = module.exports;
+            if (_exports.is(self)) {
+              const obj = self[closure_0(undefined, dependencyMap[3]).implSymbol];
+              return obj.sort();
+            }
+          }
+          const typeError = new TypeError("Illegal invocation");
+          throw typeError;
+        }
+      },
+      {
+        key: "toString",
+        value: function toString() {
+          const self = this;
+          if (self) {
+            const _exports = module.exports;
+            if (_exports.is(self)) {
+              const str = self[closure_0(undefined, dependencyMap[3]).implSymbol];
+              return str.toString();
+            }
+          }
+          const typeError = new TypeError("Illegal invocation");
+          throw typeError;
+        }
+      },
+      {
+        key: "keys",
+        value: function keys() {
+          const self = this;
+          if (self) {
+            const _exports = module.exports;
+            const tmp = module;
+            if (_exports.is(self)) {
+              const _exports2 = tmp.exports;
+              return _exports2.createDefaultIterator(self, "key");
+            }
+          }
+          const typeError = new TypeError("Illegal invocation");
+          throw typeError;
+        }
+      },
+      {
+        key: "values",
+        value: function values() {
+          const self = this;
+          if (self) {
+            const _exports = module.exports;
+            const tmp = module;
+            if (_exports.is(self)) {
+              const _exports2 = tmp.exports;
+              return _exports2.createDefaultIterator(self, "value");
+            }
+          }
+          const typeError = new TypeError("Illegal invocation");
+          throw typeError;
+        }
+      },
+      {
+        key: "entries",
+        value: function entries() {
+          const self = this;
+          if (self) {
+            const _exports = module.exports;
+            const tmp = module;
+            if (_exports.is(self)) {
+              const _exports2 = tmp.exports;
+              return _exports2.createDefaultIterator(self, "key+value");
+            }
+          }
+          const typeError = new TypeError("Illegal invocation");
+          throw typeError;
+        }
+      },
+      {
+        key: "forEach",
+        value: function forEach(call) {
+          let arr3;
+          let tmp7;
+          let tmp8;
+          const self = this;
+          if (self) {
+            const _exports = module.exports;
+            if (_exports.is(self)) {
+              if (arguments.length < 1) {
+                const _TypeError2 = TypeError;
+                const self4 = this;
+                const self5 = this;
+                const typeError = new TypeError("Failed to execute 'forEach' on 'iterable': 1 argument required, but only 0 present.");
+                throw typeError;
+              } else if (typeof call !== "function") {
+                const _TypeError = TypeError;
+                const self2 = this;
+                const self3 = this;
+                const typeError1 = new TypeError("Failed to execute 'forEach' on 'iterable': The callback provided as parameter 1 is not a function.");
+                throw typeError1;
+              } else {
+                const tmp18 = arguments[1];
+                const _Array2 = Array;
+                const arr2 = Array.from(self[closure_0(undefined, dependencyMap[3]).implSymbol]);
+                let num2 = 0;
+                let tmp10 = arr2;
+                if (0 < arr2.length) {
+                  do {
+                    let arr = tmp10[num2];
+                    let tmp3 = closure_0;
+                    let tmp4 = dependencyMap;
+                    let tmp6 = _slicedToArray(arr.map(closure_0(dependencyMap[3]).tryWrapperForImpl), 2);
+                    [tmp7, tmp8] = tmp6;
+                    let callResult = call.call(tmp18, tmp8, tmp7, self);
+                    let _Array = Array;
+                    arr3 = Array.from(self[tmp3(undefined, tmp4[3]).implSymbol]);
+                    num2 = num2 + 1;
+                    tmp10 = arr3;
+                  } while (num2 < arr3.length);
+                }
+              }
+            }
+          }
+          const typeError2 = new TypeError("Illegal invocation");
+          throw typeError2;
+        }
+      }
+    ];
+    let tmp = _createClass(URLSearchParams, items);
+    let obj = { append: { enumerable: true }, delete: { enumerable: true }, get: { enumerable: true }, getAll: { enumerable: true }, has: { enumerable: true }, set: { enumerable: true }, sort: { enumerable: true }, toString: { enumerable: true }, keys: { enumerable: true }, values: { enumerable: true }, entries: { enumerable: true }, forEach: { enumerable: true } };
+    obj[Symbol.toStringTag] = { value: "URLSearchParams", configurable: true };
+    obj[Symbol.iterator] = { value: tmp.prototype.entries, configurable: true, writable: true };
+    Object.defineProperties(tmp.prototype, obj);
+    let tmp3 = _require;
+    let tmp4 = dependencyMap;
+    if (undefined === arg0[require("module_16543").ctorRegistrySymbol]) {
+      let _Object = Object;
+      let tmp5 = null;
+      const ctorRegistrySymbol = tmp3(16543).ctorRegistrySymbol;
+      class URLSearchParams {
+        constructor() {
+          _classCallCheck(this, URLSearchParams);
+          const first = arguments[0];
+          let str = "";
+          if (undefined !== first) {
+            const obj7 = _mod16543;
+            if (obj7.isObject(first)) {
+              const _Symbol = Symbol;
+              if (undefined !== first[Symbol.iterator]) {
+                const tmp50Result = _mod16543;
+                if (tmp50Result.isObject(first)) {
+                  const items = [];
+                  str = items;
+                  for (const item10081 of first) {
+                    let obj5 = _mod16543;
+                    if (obj5.isObject(item10081)) {
+                      let items1 = [];
+                      for (const item10103 of item10081) {
+                        let obj6 = any;
+                        let arr = items1.push(obj6.USVString(item10103, { context: "Failed to construct 'URLSearchParams': parameter 1 sequence's element's element" }));
+                        continue;
+                      }
+                      let arr2 = items.push(items1);
+                      continue;
+                    } else {
+                      let _TypeError3 = TypeError;
+                      let self5 = this;
+                      let str4 = "Failed to construct 'URLSearchParams': parameter 1 sequence's element is not an iterable object.";
+                      let self6 = this;
+                      let typeError = new TypeError("Failed to construct 'URLSearchParams': parameter 1 sequence's element is not an iterable object.");
+                      throw typeError;
+                    }
+                  }
+                } else {
+                  const _TypeError2 = TypeError;
+                  const self3 = this;
+                  const self4 = this;
+                  const typeError1 = new TypeError("Failed to construct 'URLSearchParams': parameter 1 sequence is not an iterable object.");
+                  throw typeError1;
+                }
+              } else {
+                const tmp50Result3 = _mod16543;
+                if (tmp50Result3.isObject(first)) {
+                  const _Object = Object;
+                  const obj = Object.create(null);
+                  const _Reflect = Reflect;
+                  str = obj;
+                  const ownKeysResult = Reflect.ownKeys(first);
+                  for (const item10039 of ownKeysResult) {
+                    let tmp13 = item10039;
+                    let _Object2 = Object;
+                    let ownPropertyDescriptor = Object.getOwnPropertyDescriptor(first, item10039);
+                    if (ownPropertyDescriptor) {
+                      if (tmp15.enumerable) {
+                        obj2 = any;
+                        let USVStringResult = obj2.USVString(tmp13, { context: "Failed to construct 'URLSearchParams': parameter 1 record's key" });
+                        let tmp23 = first[tmp13];
+                        let obj3 = any;
+                        obj[USVStringResult] = obj3.USVString(tmp23, { context: "Failed to construct 'URLSearchParams': parameter 1 record's value" });
+                      }
+                    }
+                    continue;
+                  }
+                } else {
+                  const _TypeError = TypeError;
+                  const self = this;
+                  const self2 = this;
+                  const typeError2 = new TypeError("Failed to construct 'URLSearchParams': parameter 1 record is not an object.");
+                  throw typeError2;
+                }
+              }
+            } else {
+              const tmp50Result4 = any;
+              str = tmp50Result4.USVString(first, { context: "Failed to construct 'URLSearchParams': parameter 1" });
+            }
+          }
+          const items2 = [];
+          items2.push(str);
+          return obj2.setup(Object.create(this.constructor.prototype), closure_0, items2);
+        }
+      }
+    }
+    arg0[tmp3(undefined, 16543).ctorRegistrySymbol].URLSearchParams = tmp;
+    Object.defineProperty(arg0, "URLSearchParams", { configurable: true, writable: true, value: tmp });
+  }
+};
+
+export default obj2;

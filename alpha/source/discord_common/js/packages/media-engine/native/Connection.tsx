@@ -1,22 +1,22 @@
-// Module ID: 5930
-// Function ID: 5931
+// Module ID: 5932
+// Function ID: 5933
 // Name: Connection
-// Dependencies: [32, 5, 5897, 5920, 5931, 2132, 4, 5935, 5979, 5980, 5981, 5929, 5983, 5932, 5984, 5936, 5985, 5988, 2]
+// Dependencies: [32, 5, 5899, 5922, 5933, 2132, 4, 5937, 5981, 5982, 5983, 5931, 5985, 5934, 5986, 5938, 5987, 5990, 2]
 
-// Module 5930 (Connection)
+// Module 5932 (Connection)
 import inject from "inject" /* 2132 */;
-import VideoQualityManager from "VideoQualityManager" /* 5932 */;
-import discord_common_BaseConnectionEvent from "discord_common/BaseConnectionEvent" /* 5935 */;
-import cloneDeepDefault from "cloneDeep" /* 5936 */;
-import VideoCodecUtils from "VideoCodecUtils" /* 5979 */;
-import isEqualDefault from "isEqual" /* 5983 */;
-import discord_common_VoiceEngine from "discord_common/VoiceEngine" /* 5984 */;
-import reduceDefault from "reduce" /* 5985 */;
+import VideoQualityManager from "VideoQualityManager" /* 5934 */;
+import discord_common_BaseConnectionEvent from "discord_common/BaseConnectionEvent" /* 5937 */;
+import cloneDeepDefault from "cloneDeep" /* 5938 */;
+import VideoCodecUtils from "VideoCodecUtils" /* 5981 */;
+import isEqualDefault from "isEqual" /* 5985 */;
+import discord_common_VoiceEngine from "discord_common/VoiceEngine" /* 5986 */;
+import reduceDefault from "reduce" /* 5987 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import Constants_mod from "Constants" /* 5897 */;
-import Constants_mod2 from "Constants" /* 5920 */;
-import BaseConnection from "BaseConnection" /* 5931 */;
+import Constants_mod from "Constants" /* 5899 */;
+import Constants_mod2 from "Constants" /* 5922 */;
+import BaseConnection from "BaseConnection" /* 5933 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -151,7 +151,7 @@ class Connection extends BaseConnection {
           tmp11 = false === obj.soundshareSentSpeakingEvent;
         }
         if (tmp11) {
-          closure_0.emit(tmp3(5935).BaseConnectionEvent.SoundshareSpeaking);
+          closure_0.emit(tmp3(5937).BaseConnectionEvent.SoundshareSpeaking);
           closure_0.soundshareSentSpeakingEvent = true;
         }
       }
@@ -404,7 +404,7 @@ class Connection extends BaseConnection {
               if (diff1 >= 0) {
                 let num = 1;
                 let num2 = 100;
-                const tmp6 = tmp24(5988)(diff1 / (diff + diff1), 0, 1);
+                const tmp6 = tmp24(5990)(diff1 / (diff + diff1), 0, 1);
                 closure_0.emit(discord_common_BaseConnectionEvent.BaseConnectionEvent.OutboundLossRate, 100 * tmp6);
               }
             }
@@ -1038,7 +1038,7 @@ class Connection extends BaseConnection {
   }
   destroyUser(arg0) {
     const self = this;
-    if (null != this.remoteAudioSSRCs[arg0]) {
+    if (arg0 in this.remoteAudioSSRCs) {
       const conn = self.conn;
       conn.destroyUser(arg0);
       delete self.remoteAudioSSRCs[arg0];
@@ -1183,7 +1183,7 @@ class Connection extends BaseConnection {
   getLocalVolume(arg0) {
     let tmp = this.localVolumes[arg0];
     if (null == tmp) {
-      tmp = this.context === constants5.DEFAULT ? closure_21 : authStore6;
+      tmp = this.context === constants5.DEFAULT ? closure_21 : authStore5;
     }
     if (null == tmp) {
       tmp = closure_21;
@@ -1712,7 +1712,7 @@ class Connection extends BaseConnection {
           FIXED = constants7.FIXED;
         }
         const emit = self.emit;
-        const Video = tmp8(5935).BaseConnectionEvent.Video;
+        const Video = tmp8(5937).BaseConnectionEvent.Video;
         ({ userId, audioSSRC } = self);
         const ssrc = self.videoStreamParameters[num5].ssrc;
         const ssrc2 = self.videoStreamParameters[num5].ssrc;
@@ -1854,7 +1854,7 @@ class Connection extends BaseConnection {
           const self2 = this;
           const error = new Error("Invalid rid");
           closure_0(error);
-          return { v: "uri" };
+          return { v: "r" };
         } else {
           const items = [];
           if (!isEqualDefault(self.videoStreamParameters[findIndexResult], closure_1[findIndexResult])) {

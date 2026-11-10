@@ -1,9 +1,9 @@
-// Module ID: 7513
-// Function ID: 7514
+// Module ID: 7516
+// Function ID: 7517
 // Name: GuildChannelSubscriptions
 // Dependencies: [1453, 12, 2]
 
-// Module 7513 (GuildChannelSubscriptions)
+// Module 7516 (GuildChannelSubscriptions)
 import _modDef12 from "module_12" /* 12 */;
 import LRUCacheDefault from "LRUCache" /* 1453 */;
 import size from "module_2" /* 2 */;

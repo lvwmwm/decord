@@ -1,20 +1,20 @@
-// Module ID: 17573
-// Function ID: 17574
+// Module ID: 17600
+// Function ID: 17601
 // Name: AppearanceSetting
-// Dependencies: [5164, 1195, 1072, 5369, 504, 1239, 9913, 1113, 2896, 11685, 17574, 17576, 2]
+// Dependencies: [5166, 1195, 1072, 5371, 504, 1239, 9919, 1113, 2896, 11694, 17601, 17603, 2]
 // Exports: useAppearanceSettingTrailing
 
-// Module 17573 (AppearanceSetting)
+// Module 17600 (AppearanceSetting)
 import get_initialized from "get initialized" /* 504 */;
 import Constants from "Constants" /* 1072 */;
 import intl3 from "intl" /* 1113 */;
 import ThemeConstants from "ThemeConstants" /* 1195 */;
 import ClientThemesUtils from "ClientThemesUtils" /* 1239 */;
-import useThemeDefault from "useTheme" /* 5369 */;
-import useActiveTheme from "useActiveTheme" /* 9913 */;
-import PaintPaletteIcon from "PaintPaletteIcon" /* 17574 */;
-import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 5164 */;
-import SettingBuilders from "SettingBuilders" /* 11685 */;
+import useThemeDefault from "useTheme" /* 5371 */;
+import useActiveTheme from "useActiveTheme" /* 9919 */;
+import PaintPaletteIcon from "PaintPaletteIcon" /* 17601 */;
+import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 5166 */;
+import SettingBuilders from "SettingBuilders" /* 11694 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

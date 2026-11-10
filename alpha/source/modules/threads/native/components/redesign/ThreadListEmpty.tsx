@@ -1,18 +1,18 @@
-// Module ID: 19151
-// Function ID: 19152
+// Module ID: 19180
+// Function ID: 19181
 // Name: ThreadListEmpty
-// Dependencies: [19, 17, 21, 5140, 575, 1187, 14032, 5751, 1113, 5758, 2]
+// Dependencies: [19, 17, 21, 5142, 575, 1187, 14058, 5753, 1113, 5760, 2]
 
-// Module 19151 (ThreadListEmpty)
+// Module 19180 (ThreadListEmpty)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5751 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14032 */;
+import Text_Text from "Text/Text" /* 5753 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14058 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5140 */;
+import createStyles from "createStyles" /* 5142 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -51,7 +51,7 @@ const memoResult = react.memo(function ThreadListEmpty(onCreateThreadPress) {
   const tmp4 = React3;
   if (tmp4Result) {
     const obj6 = { onPress: onCreateThreadPress, text: intl3.string(intl4.t.rBIGBL) };
-    const Button = tmp5(5758).Button;
+    const Button = tmp5(5760).Button;
     intl3 = tmp5(1113).intl;
     tmp4Result = tmp4(Button, obj6);
   }

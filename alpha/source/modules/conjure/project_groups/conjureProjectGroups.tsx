@@ -1,11 +1,11 @@
-// Module ID: 13222
-// Function ID: 13223
+// Module ID: 13236
+// Function ID: 13237
 // Name: conjureProjectGroups
-// Dependencies: [7456, 2]
+// Dependencies: [7459, 2]
 // Exports: groupConjureProjects
 
-// Module 13222 (conjureProjectGroups)
-import conjureServerProject from "conjureServerProject" /* 7456 */;
+// Module 13236 (conjureProjectGroups)
+import conjureServerProject from "conjureServerProject" /* 7459 */;
 import size from "module_2" /* 2 */;
 
 let map1;

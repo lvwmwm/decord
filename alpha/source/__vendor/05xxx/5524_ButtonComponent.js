@@ -1,0 +1,11 @@
+// Module ID: 5524
+// Function ID: 5525
+// Name: ButtonComponent
+// Dependencies: [5525]
+
+// Module 5524 (ButtonComponent)
+import _modDef5525 from "module_5525" /* 5525 */;
+
+
+export default _modDef5525;
+export const ButtonComponent = _modDef5525;

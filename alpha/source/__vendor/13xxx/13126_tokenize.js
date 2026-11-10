@@ -1,66 +1,82 @@
 // Module ID: 13126
 // Function ID: 13127
 // Name: tokenize
-// Dependencies: [13050]
+// Dependencies: [13064]
 
 // Module 13126 (tokenize)
-import tokenize from "tokenize" /* 13050 */;
+import tokenize from "tokenize" /* 13064 */;
 
 let items;
 let obj2;
-function consumeRaw(arg0) {
-  return this.Raw(arg0, null, false);
-}
 const WhiteSpace = tokenize.TYPE.WhiteSpace;
 const Comment = tokenize.TYPE.Comment;
-const AtKeyword = tokenize.TYPE.AtKeyword;
-const CDO = tokenize.TYPE.CDO;
-const CDC = tokenize.TYPE.CDC;
+const Ident = tokenize.TYPE.Ident;
+const LeftParenthesis = tokenize.TYPE.LeftParenthesis;
 const obj = {
-  name: "StyleSheet",
+  name: "MediaQuery",
   structure: obj2,
   parse() {
     const self = this;
-    const tokenStart = this.scanner.tokenStart;
+    const scanner = this.scanner;
+    scanner.skipSC();
     const list = this.createList();
+    let tmp2 = null;
+    let tmp3 = null;
+    let tmp4 = null;
     if (!this.scanner.eof) {
-      do {
+      while (true) {
+        let WhiteSpaceResult;
+        let IdentifierResult;
         let tokenType = self.scanner.tokenType;
-        if (WhiteSpace === tokenType) {
-          let iter2 = self.scanner;
-          let nextResult = iter2.next();
+        if (Comment === tokenType) {
+          let iter = self.scanner;
+          let nextResult = iter.next();
+          WhiteSpaceResult = tmp2;
+          IdentifierResult = tmp3;
         } else {
-          let CommentResult;
-          if (Comment === tokenType) {
-            let source = self.scanner.source;
-            if (33 !== source.charCodeAt(self.scanner.tokenStart + 2)) {
-              let iter = self.scanner;
-              let nextResult1 = iter.next();
-            } else {
-              CommentResult = self.Comment();
-            }
-          } else if (CDO === tokenType) {
-            CommentResult = self.CDO();
-          } else if (CDC === tokenType) {
-            CommentResult = self.CDC();
-          } else if (AtKeyword === tokenType) {
-            CommentResult = self.parseWithFallback(self.Atrule, consumeRaw);
+          if (WhiteSpace === tokenType) {
+            WhiteSpaceResult = self.WhiteSpace();
+            IdentifierResult = tmp3;
           } else {
-            CommentResult = self.parseWithFallback(self.Rule, consumeRaw);
+            if (Ident === tokenType) {
+              IdentifierResult = self.Identifier();
+              WhiteSpaceResult = tmp2;
+              if (null !== tmp2) {
+                let arr = list.push(tmp2);
+                WhiteSpaceResult = null;
+              }
+              let arr3 = list.push(IdentifierResult);
+            } else {
+              tmp4 = tmp3;
+              if (LeftParenthesis !== tokenType) {
+                break;
+              } else {
+                IdentifierResult = self.MediaFeature();
+              }
+            }
+            break;
           }
-          let arr = list.push(CommentResult);
+          break;
         }
-      } while (!self.scanner.eof);
+        tmp2 = WhiteSpaceResult;
+        tmp3 = IdentifierResult;
+        tmp4 = IdentifierResult;
+        if (self.scanner.eof) {
+          break;
+        }
+      }
     }
-    const element = { type: "StyleSheet", loc: self.getLocation(tokenStart, self.scanner.tokenStart), children: list };
+    if (null === tmp4) {
+      self.error("Identifier or parenthesis is expected");
+    }
+    const element = { type: "MediaQuery", loc: self.getLocationFromList(list), children: list };
     return element;
   },
   generate(arg0) {
     this.children(arg0);
-  },
-  walkContext: "stylesheet"
+  }
 };
 obj2 = { children: items };
-items = [["Comment", "CDO", "CDC", "Atrule", "Rule", "Raw"]];
+items = [["Identifier", "MediaFeature", "WhiteSpace"]];
 
 export default obj;

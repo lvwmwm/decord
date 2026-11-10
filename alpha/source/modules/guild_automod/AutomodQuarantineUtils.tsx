@@ -1,23 +1,23 @@
-// Module ID: 13534
-// Function ID: 13535
+// Module ID: 13547
+// Function ID: 13548
 // Name: AutomodQuarantineUtils
-// Dependencies: [19, 11601, 502, 5052, 5011, 5072, 5171, 1072, 5058, 1082, 563, 5078, 1113, 11664, 11665, 7635, 2]
+// Dependencies: [19, 11610, 502, 5054, 5013, 5074, 5173, 1072, 5060, 1082, 563, 5080, 1113, 11673, 11674, 7638, 2]
 // Exports: useCurrentUserHasAutomodQuarantinedProfile, useGuildAutomodProfileQuarantineErrors, useOpenFixQuarantinedProfileModal
 
-// Module 13534 (AutomodQuarantineUtils)
+// Module 13547 (AutomodQuarantineUtils)
 import UserSettingsConstants from "UserSettingsConstants" /* 1082 */;
 import intl4 from "intl" /* 1113 */;
-import GuildMemberConstants from "GuildMemberConstants" /* 5058 */;
-import AutomodPermissionUtils from "AutomodPermissionUtils" /* 5078 */;
-import openUserSettings2 from "openUserSettings" /* 7635 */;
-import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 11665 */;
+import GuildMemberConstants from "GuildMemberConstants" /* 5060 */;
+import AutomodPermissionUtils from "AutomodPermissionUtils" /* 5080 */;
+import openUserSettings2 from "openUserSettings" /* 7638 */;
+import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 11674 */;
 import react from "react" /* 19 */;
-import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 11601 */;
+import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 11610 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildMemberStore from "GuildMemberStore" /* 5052 */;
-import GuildStore from "GuildStore" /* 5011 */;
-import PermissionStore from "PermissionStore" /* 5072 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5171 */;
+import GuildMemberStore from "GuildMemberStore" /* 5054 */;
+import GuildStore from "GuildStore" /* 5013 */;
+import PermissionStore from "PermissionStore" /* 5074 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5173 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 

@@ -1,11 +1,11 @@
-// Module ID: 9717
-// Function ID: 9718
+// Module ID: 9723
+// Function ID: 9724
 // Name: MarketingSurfaceTypeUtils
-// Dependencies: [9718, 2]
+// Dependencies: [9724, 2]
 // Exports: classifyMarketingSurfaceType, isMarketingSurfaceType
 
-// Module 9717 (MarketingSurfaceTypeUtils)
-import MarketingSurfaceType from "MarketingSurfaceType" /* 9718 */;
+// Module 9723 (MarketingSurfaceTypeUtils)
+import MarketingSurfaceType from "MarketingSurfaceType" /* 9724 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/premium/promotions/MarketingSurfaceTypeUtils.tsx");

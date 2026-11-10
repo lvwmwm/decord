@@ -1,236 +1,336 @@
 // Module ID: 13323
 // Function ID: 13324
-// Dependencies: [32, 13324, 13284, 13285, 13281]
-// Exports: normalizeUrlToBase
+// Dependencies: [717, 13319, 13324, 13325, 13297, 13306, 13314, 13307, 13292, 13309, 13320, 13326]
+// Exports: startIdleSpan
 
 // Module 13323
-import _mod13281 from "module_13281" /* 13281 */;
-import _mod13284 from "module_13284" /* 13284 */;
-import _mod13285 from "module_13285" /* 13285 */;
-import memoBuilder from "memoBuilder" /* 13324 */;
-import _slicedToArray from "_slicedToArray" /* 32 */;
+import _mod13292 from "module_13292" /* 13292 */;
+import _mod13297 from "module_13297" /* 13297 */;
+import _browserPerformanceTimeOriginMode from "_browserPerformanceTimeOriginMode" /* 13306 */;
+import _mod13309 from "module_13309" /* 13309 */;
+import _mod13320 from "module_13320" /* 13320 */;
+import _toArray from "_toArray" /* 717 */;
 
-let hasOwnProperty;
+const require = globalThis.__r;
+let _require, closure_0, closure_1, heartbeatFailed, map;
 
-function normalize(arg0) {
-  let num = arg1;
-  if (arg1 === undefined) {
-    num = 100;
-  }
-  let num2 = arg2;
-  if (arg2 === undefined) {
-    num2 = Infinity;
-  }
-  try {
-    return visit("", arg0, num, num2);
-  } catch (tmp5) {
-    const _HermesInternal = HermesInternal;
-    const obj = { ERROR: "**non-serializable** (" + tmp5 + ")" };
-    return obj;
-  }
-}
-function visit(arg0, __sentry_skip_normalization__) {
-  function stringifyValue(arg0, _events) {
-    function getConstructorName(_events) {
-      const prototypeOf = Object.getPrototypeOf(_events);
-      let str = "null prototype";
-      if (prototypeOf) {
-        str = prototypeOf.constructor.name;
-      }
-      return str;
+const TRACING_DEFAULTS = { idleTimeout: 1000, finalTimeout: 30000, childSpanTimeout: 15000 };
+
+export { TRACING_DEFAULTS };
+export function startIdleSpan(arg0) {
+  let _undefined;
+  let closure_10;
+  let closure_11;
+  const f130576 = () => {
+    const tmp = !c2 && 0 === map.size && closure_4;
+    if (tmp) {
+      idleTimeout = "idleTimeout";
+      c12.end(closure_0);
     }
-    try {
-      let str = "domain";
-      if ("domain" === arg0) {
-        if (_events) {
-          if (typeof _events === "object") {
-            if (_events._events) {
-              return "[Domain]";
-            }
-          }
-        }
+  };
+  let obj = arg1;
+  if (arg1 === undefined) {
+    obj = {};
+  }
+  _require = undefined;
+  let finalTimeout;
+  let childSpanTimeout;
+  let beforeSpanEnd;
+  let currentScope;
+  let activeSpan;
+  let c12;
+  function onIdleSpanEnded(arg0) {
+    closure_0 = arg0;
+    c2 = true;
+    map.clear();
+    const item = items.forEach((fn) => fn());
+    let obj = closure_0(map[6]);
+    obj._setSpanForScope(closure_10, closure_11);
+    let obj2 = closure_0(map[4]);
+    let obj3 = c12;
+    let spanToJSONResult = obj2.spanToJSON(c12);
+    if (spanToJSONResult.start_timestamp) {
+      const tmp7 = spanToJSONResult.data || {};
+      if (!tmp7[closure_0(undefined, map[7]).SEMANTIC_ATTRIBUTE_SENTRY_IDLE_SPAN_FINISH_REASON]) {
+        const attr = obj3.setAttribute(tmp3(tmp4[7]).SEMANTIC_ATTRIBUTE_SENTRY_IDLE_SPAN_FINISH_REASON, idleTimeout);
       }
-      if ("domainEmitter" === arg0) {
-        return "[DomainEmitter]";
-      } else {
-        if (undefined !== global) {
-          if (_events === global) {
-            return "[Global]";
+      let logger = tmp3(tmp4[8]).logger;
+      const _HermesInternal = HermesInternal;
+      logger.log("[Tracing] Idle span \"" + spanToJSONResult.op + "\" finished");
+      const tmp3Result = closure_0(map[4]);
+      const spanDescendants = tmp3Result.getSpanDescendants(obj3);
+      const found = spanDescendants.filter((item) => item !== _undefined);
+      const item1 = found.forEach((isRecording) => {
+        if (isRecording.isRecording()) {
+          const setStatus = isRecording.setStatus;
+          const obj = { code: _mod13309.SPAN_STATUS_ERROR, message: "cancelled" };
+          setStatus(obj);
+          isRecording.end(closure_0);
+          if (_mod13320.DEBUG_BUILD) {
+            const logger = _mod13292.logger;
+            const _JSON = JSON;
+            logger.log("[Tracing] Cancelling span since span ended early", JSON.stringify(isRecording, undefined, 2));
           }
         }
-        const _window = window;
-        if (typeof window !== "undefined") {
-          const _window2 = window;
-          if (_events === window) {
-            return "[Window]";
-          }
+        const obj2 = _mod13297;
+        const spanToJSONResult = obj2.spanToJSON(isRecording);
+        const timestamp = spanToJSONResult.timestamp;
+        let num2 = 0;
+        if (undefined !== timestamp) {
+          num2 = timestamp;
         }
-        const _document = document;
-        if (typeof document !== "undefined") {
-          const _document2 = document;
-          if (_events === document) {
-            return "[Document]";
-          }
+        const start_timestamp = spanToJSONResult.start_timestamp;
+        let num3 = 0;
+        if (undefined !== start_timestamp) {
+          num3 = start_timestamp;
         }
-        const obj = _mod13285;
-        if (obj.isVueViewModel(_events)) {
-          return "[VueViewModel]";
-        } else {
-          const tmp4Result = _mod13285;
-          if (tmp4Result.isSyntheticEvent(_events)) {
-            return "[SyntheticEvent]";
-          } else {
-            if (typeof _events === "number") {
-              const _Number = Number;
-              if (!Number.isFinite(_events)) {
-                const _HermesInternal = HermesInternal;
-                return "[" + _events + "]";
-              }
+        let tmp14 = num2 - num3 <= (finalTimeout + idleTimeout) / 1000;
+        if (_mod13320.DEBUG_BUILD) {
+          const _JSON2 = JSON;
+          const json = JSON.stringify(isRecording, undefined, 2);
+          if (num3 <= closure_0) {
+            if (!tmp14) {
+              const logger3 = _mod13292.logger;
+              logger3.log("[Tracing] Discarding span since it finished after idle span final timeout", json);
             }
-            if (typeof _events === "function") {
-              const _HermesInternal4 = HermesInternal;
-              const tmp4Result2 = _mod13281;
-              return "[Function: " + tmp4Result2.getFunctionName(_events) + "]";
-            } else if (typeof _events === "symbol") {
-              const _String2 = String;
-              const _HermesInternal3 = HermesInternal;
-              return "[" + String(_events) + "]";
-            } else if (typeof _events === "bigint") {
-              const _String = String;
-              const _HermesInternal2 = HermesInternal;
-              return "[BigInt: " + String(_events) + "]";
-            } else {
-              let combined;
-              const _HermesInternal6 = HermesInternal;
-              const obj4 = /^HTML(\w*)Element$/;
-              const tmp9 = getConstructorName(_events);
-              if (obj4.test(tmp9)) {
-                combined = concat(tmp10, "]");
+          } else {
+            const logger2 = _mod13292.logger;
+            logger2.log("[Tracing] Discarding span since it happened after idle span was finished", json);
+          }
+        }
+        if (tmp14) {
+          tmp14 = tmp13;
+        }
+        if (!tmp14) {
+          const obj3 = _mod13297;
+          const result = obj3.removeChildSpanFromSpan(c12, isRecording);
+          closure_1 = closure_1 + 1;
+        }
+      });
+      const tmp13 = map;
+      if (0 > 0) {
+        let tmp14 = map;
+        const attr1 = obj3.setAttribute("sentry.idle_span_discarded_spans", map);
+      }
+    }
+  }
+  map = new Map();
+  let c2 = false;
+  let idleTimeout = "externalFinish";
+  let closure_4 = !obj.disableAutoFinish;
+  let items = [];
+  idleTimeout = obj.idleTimeout;
+  if (undefined === idleTimeout) {
+    const tmp2 = idleTimeout;
+    idleTimeout = idleTimeout.idleTimeout;
+  }
+  finalTimeout = obj.finalTimeout;
+  if (undefined === finalTimeout) {
+    const tmp3 = idleTimeout;
+    finalTimeout = idleTimeout.finalTimeout;
+  }
+  childSpanTimeout = obj.childSpanTimeout;
+  if (undefined === childSpanTimeout) {
+    const tmp4 = idleTimeout;
+    childSpanTimeout = idleTimeout.childSpanTimeout;
+  }
+  beforeSpanEnd = obj.beforeSpanEnd;
+  let tmp6 = map;
+  let obj2 = require("module_13319");
+  const client = obj2.getClient();
+  if (client) {
+    const tmp5Result = require("module_13324");
+    if (tmp5Result.hasTracingEnabled()) {
+      const tmp5Result6 = require("module_13319");
+      currentScope = tmp5Result6.getCurrentScope();
+      const tmp5Result7 = require("module_13297");
+      activeSpan = tmp5Result7.getActiveSpan();
+      const tmp5Result8 = require("module_13326");
+      const startInactiveSpanResult = tmp5Result8.startInactiveSpan(arg0);
+      const _setSpanForScope = tmp5(tmp6[6])._setSpanForScope;
+      require("module_13314");
+      const tmp5Result10 = require("module_13319");
+      _setSpanForScope(tmp5Result10.getCurrentScope(), startInactiveSpanResult);
+      if (require("module_13320").DEBUG_BUILD) {
+        let logger = tmp5(tmp6[8]).logger;
+        const str = "[Tracing] Started span is an idle span";
+        const logResult = logger.log("[Tracing] Started span is an idle span");
+      }
+      c12 = startInactiveSpanResult;
+      const _Proxy = Proxy;
+      let obj3 = {
+        apply(arg0, arg1, current) {
+              if (beforeSpanEnd) {
+                tmp2(c12);
+              }
+              const arr = _toArray(current);
+              let first = arr[0];
+              const substr = arr.slice(1);
+              if (!first) {
+                let obj = _browserPerformanceTimeOriginMode;
+                first = obj.timestampInSeconds();
+              }
+              const obj2 = _mod13297;
+              const result = obj2.spanTimeInputToSeconds(first);
+              const obj3 = _mod13297;
+              const spanDescendants = obj3.getSpanDescendants(c12);
+              const found = spanDescendants.filter((item) => item !== _undefined);
+              const tmp12 = c12;
+              if (found.length) {
+                const mapped = found.map((item) => {
+                  const obj = closure_1_0(map[4]);
+                  return obj.spanToJSON(item).timestamp;
+                });
+                const found1 = mapped.filter((item) => item);
+                let num2;
+                if (found1.length) {
+                  const _Math = Math;
+                  items = [];
+                  HermesBuiltin.arraySpread(items, found1, 0);
+                  const _Math2 = Math;
+                  num2 = HermesBuiltin.apply(max, items, Math);
+                }
+                const tmp9Result = _mod13297;
+                let num4 = tmp9Result.spanToJSON(tmp12).start_timestamp;
+                let num6 = Infinity;
+                const _Math3 = Math;
+                if (num4) {
+                  num6 = num4 + finalTimeout / 1000;
+                }
+                const _Math4 = Math;
+                const max2 = Math.max;
+                if (!num4) {
+                  num4 = -Infinity;
+                }
+                const _Math5 = Math;
+                const min2 = Math.min;
+                if (!num2) {
+                  num2 = Infinity;
+                }
+                const minResult = min(num6, max2(num4, min2(result, num2)));
+                onIdleSpanEnded(minResult);
+                const _Reflect2 = Reflect;
+                const items1 = [minResult];
+                const apply2 = Reflect.apply;
+                HermesBuiltin.arraySpread(items1, substr, 1);
+                return apply2(arg0, arg1, items1);
               } else {
-                combined = concat(tmp10, "]");
+                onIdleSpanEnded(result);
+                const _Reflect = Reflect;
+                const items2 = [result];
+                HermesBuiltin.arraySpread(items2, substr, 1);
+                return apply(arg0, arg1, items2);
               }
-              return combined;
             }
+      };
+      const self = this;
+      const self2 = this;
+      let tmp13 = obj3;
+      const proxy = new Proxy(startInactiveSpanResult.end, obj3);
+      startInactiveSpanResult.end = proxy;
+      const str2 = "spanStart";
+      let arr = items.push(client.on("spanStart", (spanContext) => {
+        let timeout;
+        let timestamp = c2 || spanContext === c12;
+        if (!timestamp) {
+          const obj = timeout(map[4]);
+          timestamp = obj.spanToJSON(spanContext).timestamp;
+        }
+        if (!timestamp) {
+          const obj2 = timeout(map[4]);
+          const spanDescendants = obj2.getSpanDescendants(c12);
+          if (spanDescendants.includes(spanContext)) {
+            const spanId = spanContext.spanContext().spanId;
+            if (timeout) {
+              const _clearTimeout = clearTimeout;
+              clearTimeout(timeout);
+              timeout = undefined;
+            }
+            const result = map.set(spanId, true);
+            const obj4 = timeout(map[5]);
+            obj4.timestampInSeconds() + childSpanTimeout / 1000;
+            const _setTimeout = setTimeout;
+            timeout = setTimeout(() => {
+              const tmp = !closure_2_2 && c4;
+              if (tmp) {
+                heartbeatFailed = "heartbeatFailed";
+                _undefined.end(closure_1_0);
+              }
+            }, childSpanTimeout);
           }
         }
-      }
-    } catch (tmp7) {
-      const _HermesInternal5 = HermesInternal;
-      return "**non-serializable** (" + tmp7 + ")";
-    }
-  }
-  let num = arg2;
-  if (arg2 === undefined) {
-    num = Infinity;
-  }
-  let num2 = arg3;
-  if (arg3 === undefined) {
-    num2 = Infinity;
-  }
-  let memoBuilderResult = arg4;
-  if (arg4 === undefined) {
-    let obj = memoBuilder;
-    memoBuilderResult = obj.memoBuilder();
-  }
-  _slicedToArray(memoBuilderResult, 2);
-  if (null != __sentry_skip_normalization__) {
-    const items = ["boolean", "string"];
-    if (!items.includes(typeof __sentry_skip_normalization__)) {
-      if (typeof __sentry_skip_normalization__ === "number") {
-        let _Number = Number;
-      }
-      let tmp9 = arg0;
-      let str = stringifyValue(arg0, __sentry_skip_normalization__);
-      if (str.startsWith("[object ")) {
-        if (__sentry_skip_normalization__.__sentry_skip_normalization__) {
-          return __sentry_skip_normalization__;
-        } else {
-          if (typeof __sentry_skip_normalization__.__sentry_override_normalization_depth__ === "number") {
-            num = __sentry_skip_normalization__.__sentry_override_normalization_depth__;
+      }));
+      const str3 = "spanEnd";
+      items.push(client.on("spanEnd", (spanContext) => {
+        let timeout;
+        const tmp = c2;
+        if (!tmp) {
+          const spanId = spanContext.spanContext().spanId;
+          if (map.has(spanId)) {
+            map.delete(spanId);
           }
-          if (0 === num) {
-            return str.replace("object ", "");
-          } else if (tmp6(__sentry_skip_normalization__)) {
-            return "[Circular ~]";
-          } else {
-            if (__sentry_skip_normalization__) {
-              if (typeof __sentry_skip_normalization__.toJSON === "function") {
-                try {
-                  const tmp10 = visit;
-                  return visit("", __sentry_skip_normalization__.toJSON(), num - 1, num2, memoBuilderResult);
-                } catch (err) {
-                }
-              }
+          if (0 === map.size) {
+            const obj2 = timeout(map[5]);
+            timeout = obj2.timestampInSeconds() + idleTimeout / 1000;
+            const tmp6 = idleTimeout;
+            if (timeout) {
+              const _clearTimeout = clearTimeout;
+              clearTimeout(timeout);
+              timeout = undefined;
             }
-            const _Array = Array;
-            const tmp14 = Array.isArray(__sentry_skip_normalization__) ? [] : {};
-            const obj2 = _mod13284;
-            const convertToPlainObjectResult = obj2.convertToPlainObject(__sentry_skip_normalization__);
-            const keys = Object.keys();
-            if (keys !== undefined) {
-              while (keys[tmp] !== undefined) {
-                let _Object = Object;
-                hasOwnProperty = Object.prototype.hasOwnProperty;
-                let tmp28 = tmp21;
-                if (!hasOwnProperty.call(convertToPlainObjectResult, tmp21)) {
-                  continue;
-                } else {
-                  if (tmp20 >= num2) {
-                    let str4 = "[MaxProperties ~]";
-                    tmp14[tmp21] = "[MaxProperties ~]";
-                    break;
-                  } else {
-                    tmp14[tmp21] = visit(tmp28, convertToPlainObjectResult[tmp21], num - 1, num2, tmp8);
-                    let num6 = tmp20 + 1;
-                    continue;
-                  }
-                  break;
-                }
-                break;
-              }
-            }
-            tmp7(__sentry_skip_normalization__);
-            return tmp14;
+            const _setTimeout = setTimeout;
+            timeout = setTimeout(f130576, tmp6);
           }
         }
-      } else {
-        return str;
+      }));
+      items.push(client.on("idleSpanEnableAutoFinish", (arg0) => {
+        if (arg0 === c12) {
+          let c4 = true;
+          let timeout;
+          let tmp = timeout;
+          if (tmp) {
+            const _clearTimeout = clearTimeout;
+            clearTimeout(timeout);
+            timeout = undefined;
+          }
+          const _setTimeout = setTimeout;
+          timeout = setTimeout(f130576, idleTimeout);
+          if (map.size) {
+            const _setTimeout2 = setTimeout;
+            timeout = setTimeout(() => {
+              const tmp = !closure_2_2 && c4;
+              if (tmp) {
+                heartbeatFailed = "heartbeatFailed";
+                _undefined.end(closure_1_0);
+              }
+            }, childSpanTimeout);
+          }
+        }
+      }));
+      if (!obj.disableAutoFinish) {
+        const tmp19 = _require;
+        if (tmp19) {
+          let _clearTimeout = clearTimeout;
+          clearTimeout(_require);
+          _require = undefined;
+        }
+        let _setTimeout = setTimeout;
+        _require = setTimeout(f130576, idleTimeout);
       }
+      let _setTimeout2 = setTimeout;
+      const timerId = setTimeout(() => {
+        const tmp = c2;
+        if (!tmp) {
+          const setStatus = _undefined.setStatus;
+          const obj = { code: _mod13309.SPAN_STATUS_ERROR, message: "deadline_exceeded" };
+          setStatus(obj);
+          idleTimeout = "finalTimeout";
+          _undefined.end();
+        }
+      }, finalTimeout);
+      return startInactiveSpanResult;
     }
   }
-  return __sentry_skip_normalization__;
-}
-function normalizeToSize(arg0) {
-  let num = arg1;
-  if (arg1 === undefined) {
-    num = 3;
-  }
-  let num2 = arg2;
-  if (arg2 === undefined) {
-    num2 = 102400;
-  }
-  let tmp = normalize(arg0, num);
-  const str = encodeURI(JSON.stringify(tmp));
-  if (~(-str.split(/%..|./).length) > num2) {
-    tmp = normalizeToSize(arg0, num - 1, num2);
-  }
-  return tmp;
-}
-
-export { normalize };
-export { normalizeToSize };
-export function normalizeUrlToBase(arg0, str) {
-  let str2 = arg0;
-  str = str.replace(/\\/g, "/");
-  const replaced = str.replace(/[|\\{}()[\]^$+*?.]/g, "\\$&");
-  try {
-    const _decodeURI = decodeURI;
-    str2 = decodeURI(arg0);
-  } catch (err) {
-  }
-  const str3 = str2.replace(/\\/g, "/");
-  const replace = str3.replace(/webpack:\/?/g, "").replace;
-  str3.replace(/webpack:\/?/g, "");
-  const regExp = new RegExp("(file://)?/*" + replaced + "/*", "ig");
-  return replace(regExp, "app:///");
+  const sentryNonRecordingSpan = new tmp5(tmp6[3]).SentryNonRecordingSpan();
+  return sentryNonRecordingSpan;
 }

@@ -14,7 +14,7 @@ let closure_2 = _classPrivateFieldKeyDefault("registry");
 class EventEmitter {
   constructor() {
     _classCallCheck(this, EventEmitter);
-    Object.defineProperty(this, closure_2, { writable: true, value: "Array" });
+    Object.defineProperty(this, closure_2, { writable: true, value: "a" });
     _classPrivateFieldBase(this, closure_2)[closure_2] = {};
   }
 }

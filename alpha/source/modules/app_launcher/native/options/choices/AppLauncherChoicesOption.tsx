@@ -1,18 +1,18 @@
-// Module ID: 12699
-// Function ID: 12700
+// Module ID: 12712
+// Function ID: 12713
 // Name: AppLauncherChoicesOption
-// Dependencies: [32, 19, 21, 5140, 575, 2017, 5374, 12700, 2118, 12704, 8246, 5751, 7047, 2]
+// Dependencies: [32, 19, 21, 5142, 575, 2017, 5376, 12713, 2118, 12717, 8250, 5753, 7050, 2]
 // Exports: default
 
-// Module 12699 (AppLauncherChoicesOption)
+// Module 12712 (AppLauncherChoicesOption)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import KeyboardManagerUtils from "KeyboardManagerUtils" /* 2017 */;
 import asyncRequire from "asyncRequire" /* 2118 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5374 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5376 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5140 */;
+import createStyles from "createStyles" /* 5142 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -84,7 +84,7 @@ export default function AppLauncherChoicesOption(option) {
     };
     index = undefined;
     ActionSheetActionCreatorsDefault;
-    const tmp4 = asyncRequire(12700, dependencyMap.paths);
+    const tmp4 = asyncRequire(12713, dependencyMap.paths);
     if (first != null) {
       index = first.index;
     }

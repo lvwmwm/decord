@@ -1,20 +1,20 @@
-// Module ID: 16770
-// Function ID: 16771
+// Module ID: 16797
+// Function ID: 16798
 // Name: SaturationValueColorPicker
-// Dependencies: [32, 19, 17, 21, 5140, 575, 1652, 16768, 1705, 5715, 5420, 2]
+// Dependencies: [32, 19, 17, 21, 5142, 575, 1652, 16795, 1705, 5717, 5422, 2]
 // Exports: default
 
-// Module 16770 (SaturationValueColorPicker)
+// Module 16797 (SaturationValueColorPicker)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1652 from "module_1652" /* 1652 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5420 */;
-import LinearGradientDefault from "LinearGradient" /* 5715 */;
-import ColorPickerUtils from "ColorPickerUtils" /* 16768 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5422 */;
+import LinearGradientDefault from "LinearGradient" /* 5717 */;
+import ColorPickerUtils from "ColorPickerUtils" /* 16795 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5142 */;
 import size_mod from "module_2" /* 2 */;
 
 const _modDef1652 = _mod1652;
@@ -304,7 +304,7 @@ export default function SaturationValueColorPicker(arg0) {
   ];
   const obj4 = { gesture: panGesture, children: metroRequire(View, obj5) };
   obj5 = { onLayout: callback, hitSlop: { top: result, bottom: result, left: result, right: result }, children: metroRequire(ColorBox, { hue, colorBoxStyle, colorBoxInnerStyle }) };
-  const GestureDetector = tmp8(5420).GestureDetector;
+  const GestureDetector = tmp8(5422).GestureDetector;
   items10 = [metroRequire(GestureDetector, obj4), ];
   const obj6 = { onLayout: callback1, pointerEvents: "box-none", style: items11 };
   items11 = [tmp.selector, animatedStyle, selectorStyle];

@@ -1,32 +1,53 @@
-// Module ID: 12534
-// Function ID: 12535
+// Module ID: 12547
+// Function ID: 12548
 // Name: UserProfileApplicationWidgetFieldUtils
-// Dependencies: [19, 17, 21, 5140, 575, 1113, 12535, 5751, 12536, 5842, 2]
-// Exports: FieldText, formatDurationNarrow
+// Dependencies: [19, 17, 21, 5142, 575, 5768, 1377, 5753, 1113, 12548, 12549, 5844, 2]
+// Exports: FieldText, formatDurationNarrow, useEmojiOverflowStyle
 
-// Module 12534 (UserProfileApplicationWidgetFieldUtils)
-import react_native from "react-native" /* 17 */;
+// Module 12547 (UserProfileApplicationWidgetFieldUtils)
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5751 */;
-import FastImageDefault from "FastImage" /* 5842 */;
-import UserProfileApplicationWidgetSkeletons from "UserProfileApplicationWidgetSkeletons" /* 12535 */;
-import ApplicationWidgetMarkupUtils from "ApplicationWidgetMarkupUtils" /* 12536 */;
+import PlatformUtils from "PlatformUtils" /* 1377 */;
+import useFontScale from "useFontScale" /* 5768 */;
+import FastImageDefault from "FastImage" /* 5844 */;
+import ApplicationWidgetMarkupUtils from "ApplicationWidgetMarkupUtils" /* 12549 */;
 import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5142 */;
 import size from "module_2" /* 2 */;
 
+let c3;
 let closure_4;
 let hasOwnProperty;
+let metroRequire;
 let obj2;
-const View = react_native.View;
-({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
+let tmp;
+const Text_Text = tmp(5753);
+({ PixelRatio: c3, View: closure_4 } = react_native);
+({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
+let createStyles = createStyles_mod;
 let obj = { fieldTextRow: obj2, fieldIcon: { width: 16, height: 16 } };
 obj2 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4 };
-let closure_6 = createStyles.createStyles(obj);
+let closure_7 = createStyles.createStyles(obj);
+createStyles = createStyles_mod;
+let closure_8 = createStyles.createStyles((paddingTop) => ({ text: { paddingTop, marginTop: -paddingTop } }));
 let result = size.fileFinishedImporting("modules/user_profile/native/UserProfileApplicationWidgetFieldUtils.tsx");
 
+export function useEmojiOverflowStyle(arg0) {
+  const obj = useFontScale;
+  const fontScale = obj.useFontScale();
+  let num = 0;
+  const obj2 = PlatformUtils;
+  if (obj2.isIOS()) {
+    num = _false.roundToNearestPixel(Text_Text.TextStyleSheet[arg0].fontSize * fontScale * 0.25);
+  }
+  let text;
+  if (num > 0) {
+    text = closure_8(num).text;
+  }
+  return text;
+}
 export function formatDurationNarrow(result1) {
   let num = 0;
   if (Number.isFinite(result1)) {
@@ -66,40 +87,51 @@ export function FieldText(arg0) {
   let color;
   let field;
   let items;
-  let obj5;
   let obj6;
-  let obj7;
+  let obj8;
   let skeletonWidthChars;
+  let text;
+  let tmp2Result;
   let variant;
   ({ field, variant } = arg0);
   ({ color, skeletonWidthChars } = arg0);
-  const tmp = closure_6();
-  let tmp2 = null;
-  if ("hidden" !== field.status) {
-    let tmp9Result;
-    if ("skeleton" === field.status) {
-      const obj2 = { variant, widthChars: skeletonWidthChars };
-      tmp9Result = React3(UserProfileApplicationWidgetSkeletons.TextSkeleton, obj2);
-    } else {
-      const obj3 = { style: tmp.fieldTextRow, children: items };
-      const obj4 = { variant, color, lineClamp: 2, children: obj6.parseApplicationWidgetText(field.text, obj5) };
-      const Text = Text_Text.Text;
-      obj5 = { linkVariant: variant };
-      obj6 = ApplicationWidgetMarkupUtils;
-      items = [React3(Text, obj4), ];
-      let tmp11Result = null != field.icon;
-      const tmp10 = View;
-      const tmp11 = React3;
-      const tmp9 = hasOwnProperty;
-      if (tmp11Result) {
-        const obj = { source: obj7, style: tmp.fieldIcon, resizeMode: "contain" };
-        obj7 = { uri: field.icon.url };
-        tmp11Result = tmp11(FastImageDefault, obj);
-      }
-      items[1] = tmp11Result;
-      tmp9Result = tmp9(tmp10, obj3);
-    }
-    tmp2 = tmp9Result;
+  const tmp = closure_7();
+  const obj = useFontScale;
+  const fontScale = obj.useFontScale();
+  let num = 0;
+  const obj2 = PlatformUtils;
+  if (obj2.isIOS()) {
+    num = _false.roundToNearestPixel(tmp2(5753).TextStyleSheet[variant].fontSize * fontScale * 0.25);
   }
-  return tmp2;
+  if (num > 0) {
+    text = closure_8(num).text;
+  }
+  let tmp6 = null;
+  if ("hidden" !== field.status) {
+    let tmp11Result;
+    if ("skeleton" === field.status) {
+      const obj3 = { variant, widthChars: skeletonWidthChars };
+      tmp11Result = hasOwnProperty(tmp2(12548).TextSkeleton, obj3);
+    } else {
+      const obj4 = { style: tmp.fieldTextRow, children: items };
+      const obj5 = { variant, color, lineClamp: 2, style: text, children: tmp2Result.parseApplicationWidgetText(field.text, obj6) };
+      const Text = tmp2(5753).Text;
+      obj6 = { linkVariant: variant };
+      tmp2Result = ApplicationWidgetMarkupUtils;
+      items = [hasOwnProperty(Text, obj5), ];
+      let tmp13Result = null != field.icon;
+      const tmp11 = metroRequire;
+      const tmp12 = React3;
+      const tmp13 = hasOwnProperty;
+      if (tmp13Result) {
+        const obj7 = { source: obj8, style: tmp.fieldIcon, resizeMode: "contain" };
+        obj8 = { uri: field.icon.url };
+        tmp13Result = tmp13(FastImageDefault, obj7);
+      }
+      items[1] = tmp13Result;
+      tmp11Result = tmp11(tmp12, obj4);
+    }
+    tmp6 = tmp11Result;
+  }
+  return tmp6;
 }

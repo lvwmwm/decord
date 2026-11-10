@@ -1,17 +1,17 @@
-// Module ID: 18067
-// Function ID: 18068
+// Module ID: 18094
+// Function ID: 18095
 // Name: FRAME_BUDGET_MS
-// Dependencies: [2, 18068, 18069, 18070, 18071, 18072, 18073, 18074, 18075]
+// Dependencies: [2, 18095, 18096, 18097, 18098, 18099, 18100, 18101, 18102]
 
-// Module 18067 (FRAME_BUDGET_MS)
-import types from "types" /* 18068 */;
-import startFrameMonitor from "startFrameMonitor" /* 18069 */;
-import useMountTimerDefault from "useMountTimer" /* 18070 */;
-import useFrameMonitorDefault from "useFrameMonitor" /* 18071 */;
-import useBenchmarkResultsDefault from "useBenchmarkResults" /* 18072 */;
-import BenchmarkResultsListDefault from "BenchmarkResultsList" /* 18073 */;
-import ScrollBenchmarkDefault from "ScrollBenchmark" /* 18074 */;
-import MountMeasureDefault from "MountMeasure" /* 18075 */;
+// Module 18094 (FRAME_BUDGET_MS)
+import types from "types" /* 18095 */;
+import startFrameMonitor from "startFrameMonitor" /* 18096 */;
+import useMountTimerDefault from "useMountTimer" /* 18097 */;
+import useFrameMonitorDefault from "useFrameMonitor" /* 18098 */;
+import useBenchmarkResultsDefault from "useBenchmarkResults" /* 18099 */;
+import BenchmarkResultsListDefault from "BenchmarkResultsList" /* 18100 */;
+import ScrollBenchmarkDefault from "ScrollBenchmark" /* 18101 */;
+import MountMeasureDefault from "MountMeasure" /* 18102 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/devtools/native/components/screens/performance/index.tsx");

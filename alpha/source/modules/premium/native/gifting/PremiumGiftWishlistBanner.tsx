@@ -1,24 +1,24 @@
-// Module ID: 10782
-// Function ID: 10783
+// Module ID: 10791
+// Function ID: 10792
 // Name: PremiumGiftWishlistBanner
-// Dependencies: [5, 19, 17, 7469, 1387, 1072, 1074, 8825, 21, 575, 5140, 9540, 9554, 10783, 10787, 7387, 7412, 1252, 8821, 10733, 10788, 5315, 5837, 1113, 7795, 14663, 5194, 5751, 14688, 14693, 2]
+// Dependencies: [5, 19, 17, 7472, 1387, 1072, 1074, 8831, 21, 575, 5142, 9546, 9560, 10792, 10796, 7390, 7415, 1252, 8827, 10742, 10797, 5317, 5839, 1113, 7798, 14689, 5196, 5753, 14714, 14719, 2]
 // Exports: PremiumGiftWishlistBanner
 
-// Module 10782 (PremiumGiftWishlistBanner)
+// Module 10791 (PremiumGiftWishlistBanner)
 import nativeDefault from "native" /* 575 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import WishlistRecommendationRecord from "WishlistRecommendationRecord" /* 7469 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8821 */;
-import Constants2 from "Constants" /* 8825 */;
-import WishlistBannerUtils from "WishlistBannerUtils" /* 10787 */;
+import WishlistRecommendationRecord from "WishlistRecommendationRecord" /* 7472 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8827 */;
+import Constants2 from "Constants" /* 8831 */;
+import WishlistBannerUtils from "WishlistBannerUtils" /* 10796 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5140 */;
+import createStyles from "createStyles" /* 5142 */;
 import size_mod from "module_2" /* 2 */;
 
 let set, sku;
@@ -276,7 +276,7 @@ export function PremiumGiftWishlistBanner(giftRecipient) {
         style: tmp12.placeholderRow,
         children: Array.from(obj9, (arg0, arg1) => {
               const obj = { style: closure_14.placeholder };
-              return authStore3(metroRequire, obj, arg1);
+              return gesture(metroRequire, obj, arg1);
             })
       };
       let _Array = Array;

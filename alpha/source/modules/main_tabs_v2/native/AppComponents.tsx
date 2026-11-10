@@ -1,28 +1,28 @@
-// Module ID: 19468
-// Function ID: 19469
+// Module ID: 19497
+// Function ID: 19498
 // Name: AppComponents
-// Dependencies: [21, 12564, 1377, 5314, 18951, 19373, 5329, 19392, 11138, 16171, 6096, 19469, 5150, 19477, 19487, 19496, 19524, 19533, 19748, 2]
+// Dependencies: [21, 12577, 1377, 5316, 18980, 19402, 5331, 19421, 11147, 16198, 6098, 19498, 5152, 19506, 19516, 19525, 19553, 19562, 19777, 2]
 
-// Module 19468 (AppComponents)
-import AccessibilityAnnouncerLiveRegion from "AccessibilityAnnouncerLiveRegion" /* 5150 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5314 */;
-import PortalKeyboard from "PortalKeyboard" /* 5329 */;
-import AlertModal from "AlertModal" /* 6096 */;
-import NotificationsDefault from "Notifications" /* 11138 */;
-import PortalKeyboardRenderer from "PortalKeyboardRenderer" /* 12564 */;
-import ContextMenuContainer from "ContextMenuContainer" /* 16171 */;
-import MainShared from "MainShared" /* 19373 */;
-import MainViewTooltipActionSheetsV2Default from "MainViewTooltipActionSheetsV2" /* 19392 */;
-import FramePoolDefault from "FramePool" /* 19469 */;
-import ExternalPipViewDefault from "ExternalPipView" /* 19477 */;
-import ConjureAppPictureInPicturesDefault from "ConjureAppPictureInPictures" /* 19487 */;
-import ActivityPanelContainerDefault from "ActivityPanelContainer" /* 19496 */;
-import FramePanelContainerDefault from "FramePanelContainer" /* 19524 */;
-import VoicePanelContainerDefault from "VoicePanelContainer" /* 19533 */;
-import MediaPlaybackPanelContainerDefault from "MediaPlaybackPanelContainer" /* 19748 */;
+// Module 19497 (AppComponents)
+import AccessibilityAnnouncerLiveRegion from "AccessibilityAnnouncerLiveRegion" /* 5152 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5316 */;
+import PortalKeyboard from "PortalKeyboard" /* 5331 */;
+import AlertModal from "AlertModal" /* 6098 */;
+import NotificationsDefault from "Notifications" /* 11147 */;
+import PortalKeyboardRenderer from "PortalKeyboardRenderer" /* 12577 */;
+import ContextMenuContainer from "ContextMenuContainer" /* 16198 */;
+import MainShared from "MainShared" /* 19402 */;
+import MainViewTooltipActionSheetsV2Default from "MainViewTooltipActionSheetsV2" /* 19421 */;
+import FramePoolDefault from "FramePool" /* 19498 */;
+import ExternalPipViewDefault from "ExternalPipView" /* 19506 */;
+import ConjureAppPictureInPicturesDefault from "ConjureAppPictureInPictures" /* 19516 */;
+import ActivityPanelContainerDefault from "ActivityPanelContainer" /* 19525 */;
+import FramePanelContainerDefault from "FramePanelContainer" /* 19553 */;
+import VoicePanelContainerDefault from "VoicePanelContainer" /* 19562 */;
+import MediaPlaybackPanelContainerDefault from "MediaPlaybackPanelContainer" /* 19777 */;
 import Fragment_mod from "Fragment" /* 21 */;
 import PlatformUtils_mod from "PlatformUtils" /* 1377 */;
-import AppFreezer_mod from "AppFreezer" /* 18951 */;
+import AppFreezer_mod from "AppFreezer" /* 18980 */;
 import size from "module_2" /* 2 */;
 
 let Fragment;
