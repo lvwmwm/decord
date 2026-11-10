@@ -2239,6 +2239,13 @@
         "width": 216,
         "height": 216
     },
+    "ExperimentalCheckpointIcon": {
+        "file": "app/design/components/Icon/native/redesign/generated/images/ExperimentalCheckpointIcon.png",
+        "hash": "e2f35893f933ba61ccefbd78592b084f",
+        "scales": [],
+        "width": 24,
+        "height": 24
+    },
     "ExperimentalCommonIcon": {
         "file": "app/design/components/Icon/native/redesign/generated/images/ExperimentalCommonIcon.png",
         "hash": "eb549ee942b74daf232ce014560f92c6",
@@ -2291,6 +2298,34 @@
     "ExperimentalRareIcon": {
         "file": "app/design/components/Icon/native/redesign/generated/images/ExperimentalRareIcon.png",
         "hash": "8a4ea231467053168dfa16359e4bd9c9",
+        "scales": [],
+        "width": 24,
+        "height": 24
+    },
+    "ExperimentalWebBadgeIcon": {
+        "file": "app/design/components/Icon/native/redesign/generated/images/ExperimentalWebBadgeIcon.png",
+        "hash": "d43362f3b7c53425661a9e07142eee32",
+        "scales": [],
+        "width": 24,
+        "height": 24
+    },
+    "ExperimentalWebBadgeIcon-primary": {
+        "file": "app/design/components/Icon/native/redesign/generated/images/ExperimentalWebBadgeIcon-primary.png",
+        "hash": "332d08a018b5d0cc24855eb27732248b",
+        "scales": [],
+        "width": 24,
+        "height": 24
+    },
+    "ExperimentalWebBadgeIcon-secondary": {
+        "file": "app/design/components/Icon/native/redesign/generated/images/ExperimentalWebBadgeIcon-secondary.png",
+        "hash": "d24fd30a4be11fedb417c4afcd1e21a5",
+        "scales": [],
+        "width": 24,
+        "height": 24
+    },
+    "ExperimentalWebIcon": {
+        "file": "app/design/components/Icon/native/redesign/generated/images/ExperimentalWebIcon.png",
+        "hash": "f2670bff50454573d21ee45dfe2257e4",
         "scales": [],
         "width": 24,
         "height": 24
@@ -2357,6 +2392,13 @@
         "scales": [],
         "width": 76,
         "height": 76
+    },
+    "FandomNeutralIcon": {
+        "file": "app/design/components/Icon/native/redesign/generated/images/FandomNeutralIcon.png",
+        "hash": "1e2c63f1ee26f8c3880e4c0e137e58ab",
+        "scales": [],
+        "width": 24,
+        "height": 24
     },
     "featured_page_footer_dark": {
         "file": "app/modules/collectibles/native/images/featured_page_footer_dark.png",
@@ -3373,27 +3415,6 @@
         "width": 16,
         "height": 16
     },
-    "ic_discoverable_guild_badge_dark_24px": {
-        "file": "app/images/native/icons/ic_discoverable_guild_badge_dark_24px.png",
-        "hash": "da49fe1fcc1d15f812a95db2869d9ae7",
-        "scales": [],
-        "width": 24,
-        "height": 24
-    },
-    "ic_discoverable_guild_badge_light_24px": {
-        "file": "app/images/native/icons/ic_discoverable_guild_badge_light_24px.png",
-        "hash": "76c5454ee97e41c899ae8f5539257d3c",
-        "scales": [],
-        "width": 24,
-        "height": 24
-    },
-    "ic_discoverable_guild_badge_premium_24px": {
-        "file": "app/images/native/icons/ic_discoverable_guild_badge_premium_24px.png",
-        "hash": "4f276c9d37ed9e072482570ea4ab1799",
-        "scales": [],
-        "width": 24,
-        "height": 24
-    },
     "ic_download_24px": {
         "file": "app/images/native/icons/ic_download_24px.png",
         "hash": "a252d183eacce43fd0ee5d8aedb6e162",
@@ -3579,13 +3600,6 @@
     "ic_flower_star_24px": {
         "file": "app/images/native/ic_flower_star_24px.png",
         "hash": "a22308efe22f297561f3f188b87b515b",
-        "scales": [],
-        "width": 24,
-        "height": 24
-    },
-    "ic_forward_chevron": {
-        "file": "app/images/native/ic_forward_chevron.png",
-        "hash": "edefaa7b105418ac79e91df5e7252965",
         "scales": [],
         "width": 24,
         "height": 24
@@ -4100,13 +4114,6 @@
         "scales": [],
         "width": 30,
         "height": 30
-    },
-    "ic_public": {
-        "file": "app/images/native/icons/ic_public.png",
-        "hash": "c34a0c861b7d42ccaa05d56a524cbcd8",
-        "scales": [],
-        "width": 14,
-        "height": 14
     },
     "ic_qr_code_24px": {
         "file": "app/images/native/icons/settings/ic_qr_code_24px.png",
@@ -4908,14 +4915,14 @@
     },
     "img_account_sync_letterboxd_dark": {
         "file": "app/images/platforms/img_account_sync_letterboxd_dark.png",
-        "hash": "94e785783bdc5358633f0ac49f888e99",
+        "hash": "59966e5b844184ad532c25b89628277b",
         "scales": [],
         "width": 500,
         "height": 500
     },
     "img_account_sync_letterboxd_light": {
         "file": "app/images/platforms/img_account_sync_letterboxd_light.png",
-        "hash": "59966e5b844184ad532c25b89628277b",
+        "hash": "94e785783bdc5358633f0ac49f888e99",
         "scales": [],
         "width": 500,
         "height": 500
@@ -6145,13 +6152,6 @@
         "width": 300,
         "height": 120
     },
-    "img_stream_full": {
-        "file": "app/images/native/application_streaming/img_stream_full.png",
-        "hash": "c73d40dd66a153a872cf68d5a6b8779e",
-        "scales": [],
-        "width": 272,
-        "height": 93
-    },
     "img_study": {
         "file": "app/modules/create_guild/native/images/img_study.png",
         "hash": "4baba2bad08c08e75957838b804dc091",
@@ -6529,6 +6529,13 @@
         "scales": [],
         "width": 70,
         "height": 47
+    },
+    "ItchNeutralIcon": {
+        "file": "app/design/components/Icon/native/redesign/generated/images/ItchNeutralIcon.png",
+        "hash": "c4c151d6ead96957c93181e4a41ea4b6",
+        "scales": [],
+        "width": 24,
+        "height": 24
     },
     "ja": {
         "file": "discord_common/js/shared/images/flags/ja.png",
@@ -7478,6 +7485,13 @@
     "PinIcon": {
         "file": "app/design/components/Icon/native/redesign/generated/images/PinIcon.png",
         "hash": "cc9053b1cd7f0215ee3d9ba69e2b389a",
+        "scales": [],
+        "width": 24,
+        "height": 24
+    },
+    "PinUprightSlashIcon": {
+        "file": "app/design/components/Icon/native/redesign/generated/images/PinUprightSlashIcon.png",
+        "hash": "cad1976e6067251c70a97ab450e89981",
         "scales": [],
         "width": 24,
         "height": 24
@@ -9085,6 +9099,13 @@
         "width": 24,
         "height": 24
     },
+    "WaveformSlashIcon": {
+        "file": "app/design/components/Icon/native/redesign/generated/images/WaveformSlashIcon.png",
+        "hash": "f1866c542e48fd1fe13979e0f76a481a",
+        "scales": [],
+        "width": 24,
+        "height": 24
+    },
     "webhook_empty_dark": {
         "file": "app/images/native/empties/webhook_empty_dark.png",
         "hash": "f94bdada98ce42ab7be865282d2b8eba",
@@ -9133,6 +9154,13 @@
         "scales": [],
         "width": 60,
         "height": 60
+    },
+    "WidgetsIcon": {
+        "file": "app/design/components/Icon/native/redesign/generated/images/WidgetsIcon.png",
+        "hash": "07694532fe5b5d77fc59f6774ff08cb4",
+        "scales": [],
+        "width": 24,
+        "height": 24
     },
     "WindowLaunchIcon": {
         "file": "app/design/components/Icon/native/redesign/generated/images/WindowLaunchIcon.png",
