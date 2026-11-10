@@ -1,11 +1,11 @@
-// Module ID: 6849
-// Function ID: 6850
+// Module ID: 6889
+// Function ID: 6890
 // Name: shouldRemoveSelfMention
-// Dependencies: [1087, 2]
+// Dependencies: [1072, 2]
 // Exports: default
 
-// Module 6849 (shouldRemoveSelfMention)
-import Constants from "Constants" /* 1087 */;
+// Module 6889 (shouldRemoveSelfMention)
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 const MessageTypesSets = Constants.MessageTypesSets;

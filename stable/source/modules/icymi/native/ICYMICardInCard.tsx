@@ -1,29 +1,27 @@
-// Module ID: 17983
-// Function ID: 17984
+// Module ID: 18564
+// Function ID: 18565
 // Name: ICYMICardInCard
-// Dependencies: [19, 17, 4855, 4915, 4877, 1087, 21, 17937, 587, 558, 576, 9438, 6915, 1202, 5285, 504, 6399, 9253, 6021, 5266, 5636, 17984, 1128, 8583, 17977, 6940, 6821, 9676, 2]
+// Dependencies: [19, 17, 4863, 4926, 4885, 1072, 21, 18523, 575, 9509, 6957, 1187, 5642, 504, 6439, 9290, 6041, 5624, 5652, 18565, 1113, 8652, 18563, 6980, 6860, 9756, 2]
 // Exports: default
 
-// Module 17983 (ICYMICardInCard)
+// Module 18564 (ICYMICardInCard)
 import react_native from "react-native" /* 17 */;
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1087 */;
-import intl3 from "intl" /* 1128 */;
-import native from "native" /* 1202 */;
-import Text_Text from "Text/Text" /* 5266 */;
-import GuildIcon from "GuildIcon" /* 6915 */;
-import TextIcon2 from "TextIcon" /* 8583 */;
-import ClipView from "ClipView" /* 9438 */;
-import openDetailsActionSheet from "openDetailsActionSheet" /* 17977 */;
-import getIconForChannel from "getIconForChannel" /* 17984 */;
+import nativeDefault from "native" /* 575 */;
+import Constants from "Constants" /* 1072 */;
+import intl3 from "intl" /* 1113 */;
+import native from "native" /* 1187 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import GuildIcon from "GuildIcon" /* 6957 */;
+import TextIcon2 from "TextIcon" /* 8652 */;
+import ClipView from "ClipView" /* 9509 */;
+import openDetailsActionSheet from "openDetailsActionSheet" /* 18563 */;
+import getIconForChannel from "getIconForChannel" /* 18565 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4855 */;
-import GuildMemberStore from "GuildMemberStore" /* 4915 */;
-import GuildStore from "GuildStore" /* 4877 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import GuildMemberStore from "GuildMemberStore" /* 4926 */;
+import GuildStore from "GuildStore" /* 4885 */;
 import Fragment from "Fragment" /* 21 */;
-import createICYMIStyles from "createICYMIStyles" /* 17937 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createICYMIStyles from "createICYMIStyles" /* 18523 */;
 import size_mod from "module_2" /* 2 */;
 
 const GuildIconDefault = GuildIcon;
@@ -32,90 +30,7 @@ const ClipViewDefault = ClipView;
 let c10;
 let c9;
 let unpackModuleId;
-const View = react_native.View;
-const DEFAULT_ROLE_COLOR_HEX = Constants.DEFAULT_ROLE_COLOR_HEX;
-({ jsx: c9, jsxs: c10, Fragment: unpackModuleId } = Fragment);
-let closure_12 = createICYMIStyles.createICYMIStyles((marginHorizontal) => {
-  const obj = { container: { marginTop: marginHorizontal.margin }, content: { flex: 1, overflow: "hidden" }, channelNameAndAccessory: { flexDirection: "row", justifyContent: "space-between", alignItems: "center", paddingBottom: nativeDefault.space.PX_4, marginHorizontal: marginHorizontal.margin }, channelNameAndAccessoryLarge: { flexDirection: "column", paddingBottom: nativeDefault.space.PX_4, marginHorizontal: marginHorizontal.margin }, header: { flexDirection: "row", flexGrow: 1 }, headerInfo: { flexGrow: 1, flexShrink: 1, marginLeft: nativeDefault.space.PX_12 }, title: { flexDirection: "row", alignItems: "center", justifyContent: "space-between", marginBottom: 2 }, titleLeft: { flexShrink: 1, flexGrow: 0, flexDirection: "row", alignItems: "center", gap: 6 }, subTitleContainer: { flexDirection: "row", justifyContent: "space-between", borderRadius: nativeDefault.radii.sm }, subtitle: { flexShrink: 1, flexGrow: 0, width: "100%" }, genContentSubtitle: { flexDirection: "row", alignItems: "center", gap: 2 }, genContentSubtitleChannel: { flexDirection: "row", alignItems: "center", gap: 2, flex: 1 }, subtitleTrailing: { paddingVertical: 1 }, separator: size, normalContent: { borderBottomWidth: 1, borderBottomColor: nativeDefault.colors.BORDER_STRONG, flexShrink: 0 }, authorAvatar: { position: "absolute", right: 0, bottom: 0 } };
-  ({ flexDirection: "row", justifyContent: "space-between", alignItems: "center", paddingBottom: nativeDefault.space.PX_4, marginHorizontal: marginHorizontal.margin });
-  ({ flexDirection: "column", paddingBottom: nativeDefault.space.PX_4, marginHorizontal: marginHorizontal.margin });
-  ({ flexGrow: 1, flexShrink: 1, marginLeft: nativeDefault.space.PX_12 });
-  ({ flexDirection: "row", justifyContent: "space-between", borderRadius: nativeDefault.radii.sm });
-  size = { height: 1, width: "100%", backgroundColor: nativeDefault.colors.BORDER_SUBTLE };
-  ({ borderBottomWidth: 1, borderBottomColor: nativeDefault.colors.BORDER_STRONG, flexShrink: 0 });
-  return obj;
-});
-let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function CutoutGuildIconWithUserCustom(arg0) {
-  let author;
-  let first;
-  let guild;
-  let items1;
-  let obj3;
-  let tmp11;
-  let tmp6;
-  let tmp7;
-  const obj = react2;
-  const cResult = obj.c(11);
-  ({ guild, author } = arg0);
-  const tmp4 = closure_12();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    size = { width: 40, height: 40 };
-    cResult[0] = size;
-    first = size;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const point = { shape: ClipView.CutoutShape.Circle, x: 18, y: 18, size: 24 };
-    const items = [point];
-    cResult[1] = items;
-    tmp6 = items;
-  } else {
-    tmp6 = cResult[1];
-  }
-  if (cResult[2] !== guild) {
-    const obj2 = { cutouts: tmp6, children: React4(tmp11, obj3) };
-    obj3 = { guild, size: GuildIcon.GuildIconSizes.SMALL_32 };
-    const tmp10 = ClipViewDefault;
-    tmp11 = GuildIconDefault;
-    const tmp12 = React4(tmp10, obj2);
-    cResult[2] = guild;
-    cResult[3] = tmp12;
-    tmp7 = tmp12;
-  } else {
-    tmp7 = cResult[3];
-  }
-  if (cResult[4] === author) {
-    if (cResult[5] === guild.id) {
-      let tmp13;
-      if (cResult[6] === tmp4.authorAvatar) {
-        tmp13 = cResult[7];
-      }
-      if (cResult[8] === tmp7) {
-        let tmp15;
-        if (cResult[9] === tmp13) {
-          tmp15 = cResult[10];
-        }
-        return tmp15;
-      }
-      const obj4 = { style: first, children: items1 };
-      items1 = [tmp7, tmp13];
-      const tmp18 = authStore(View, obj4);
-      cResult[8] = tmp7;
-      cResult[9] = tmp13;
-      cResult[10] = tmp18;
-      tmp15 = tmp18;
-    }
-  }
-  const obj5 = { animate: true, style: tmp4.authorAvatar, guildId: guild.id, user: author, size: native.AvatarSizes.XSMALL_20 };
-  const Avatar = tmp(1202).Avatar;
-  const tmp14 = React4(Avatar, obj5);
-  cResult[4] = author;
-  cResult[5] = guild.id;
-  cResult[6] = tmp4.authorAvatar;
-  cResult[7] = tmp14;
-  tmp13 = tmp14;
-}) : (function CutoutGuildIconWithUserCustom(guild) {
+function CutoutGuildIconWithUserCustom(guild) {
   let items;
   let items1;
   let obj3;
@@ -135,6 +50,19 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Cutout
   const Avatar = native.Avatar;
   items1[1] = React4(Avatar, obj4);
   return authStore(View, obj);
+}
+const View = react_native.View;
+const DEFAULT_ROLE_COLOR_HEX = Constants.DEFAULT_ROLE_COLOR_HEX;
+({ jsx: c9, jsxs: c10, Fragment: unpackModuleId } = Fragment);
+let closure_12 = createICYMIStyles.createICYMIStyles((marginHorizontal) => {
+  const obj = { container: { marginTop: marginHorizontal.margin }, content: { flex: 1, overflow: "hidden" }, channelNameAndAccessory: { flexDirection: "row", justifyContent: "space-between", alignItems: "center", paddingBottom: nativeDefault.space.PX_4, marginHorizontal: marginHorizontal.margin }, channelNameAndAccessoryLarge: { flexDirection: "column", paddingBottom: nativeDefault.space.PX_4, marginHorizontal: marginHorizontal.margin }, header: { flexDirection: "row", flexGrow: 1 }, headerInfo: { flexGrow: 1, flexShrink: 1, marginLeft: nativeDefault.space.PX_12 }, title: { flexDirection: "row", alignItems: "center", justifyContent: "space-between", marginBottom: 2 }, titleLeft: { flexShrink: 1, flexGrow: 0, flexDirection: "row", alignItems: "center", gap: 6 }, subTitleContainer: { flexDirection: "row", justifyContent: "space-between", borderRadius: nativeDefault.radii.sm }, subtitle: { flexShrink: 1, flexGrow: 0, width: "100%" }, genContentSubtitle: { flexDirection: "row", alignItems: "center", gap: 2 }, genContentSubtitleChannel: { flexDirection: "row", alignItems: "center", gap: 2, flex: 1 }, subtitleTrailing: { paddingVertical: 1 }, separator: size, normalContent: { borderBottomWidth: 1, borderBottomColor: nativeDefault.colors.BORDER_STRONG, flexShrink: 0 }, authorAvatar: { position: "absolute", right: 0, bottom: 0 } };
+  ({ flexDirection: "row", justifyContent: "space-between", alignItems: "center", paddingBottom: nativeDefault.space.PX_4, marginHorizontal: marginHorizontal.margin });
+  ({ flexDirection: "column", paddingBottom: nativeDefault.space.PX_4, marginHorizontal: marginHorizontal.margin });
+  ({ flexGrow: 1, flexShrink: 1, marginLeft: nativeDefault.space.PX_12 });
+  ({ flexDirection: "row", justifyContent: "space-between", borderRadius: nativeDefault.radii.sm });
+  size = { height: 1, width: "100%", backgroundColor: nativeDefault.colors.BORDER_SUBTLE };
+  ({ borderBottomWidth: 1, borderBottomColor: nativeDefault.colors.BORDER_STRONG, flexShrink: 0 });
+  return obj;
 });
 let size = size_mod;
 let result = size.fileFinishedImporting("modules/icymi/native/ICYMICardInCard.tsx");
@@ -180,9 +108,9 @@ export default function ICYMICardInCard(message) {
   let closure_7 = tmp;
   let tmp2 = message;
   let tmp3 = id;
-  let obj = message(id[14]);
+  let obj = message(id[12]);
   const fontScale = obj.useFontScale();
-  let obj2 = message(id[15]);
+  let obj2 = message(id[13]);
   let items = [channelId];
   let items1 = [channelId];
   const stateFromStores = obj2.useStateFromStores(items, () => ChannelStore.getChannel(channelId), items1);
@@ -195,7 +123,7 @@ export default function ICYMICardInCard(message) {
   }
   let items2 = [closure_7];
   let items3 = [guild_id];
-  const tmp2Result = tmp2(tmp3[15]);
+  const tmp2Result = tmp2(tmp3[13]);
   stateFromStores1 = tmp2Result.useStateFromStores(items2, () => {
     let guild = null;
     if (null != guild_id) {
@@ -205,7 +133,7 @@ export default function ICYMICardInCard(message) {
   }, items3);
   let items4 = [flag2];
   let items5 = [flag2, guild_id, message];
-  const tmp2Result5 = tmp2(tmp3[15]);
+  const tmp2Result5 = tmp2(tmp3[13]);
   stateFromStores2 = tmp2Result5.useStateFromStores(items4, () => {
     let member = null;
     if (flag2) {
@@ -225,7 +153,7 @@ export default function ICYMICardInCard(message) {
   }, items5);
   let tmp9 = actionLabel;
   let id1;
-  const tmp10 = actionLabel(tmp3[16]);
+  const tmp10 = actionLabel(tmp3[14]);
   if (message != null) {
     let author = message.author;
     if (author != null) {
@@ -233,9 +161,9 @@ export default function ICYMICardInCard(message) {
     }
   }
   const tmp10Result = tmp10({ userId: id1 });
-  const tmp2Result6 = tmp2(tmp3[17]);
+  const tmp2Result6 = tmp2(tmp3[15]);
   displayNameStylesFont = tmp2Result6.useDisplayNameStylesFont({ displayNameStyles: tmp10Result });
-  tmp2(tmp3[18]);
+  tmp2(tmp3[16]);
   if (stateFromStores != null) {
     const id2 = stateFromStores.id;
   }
@@ -281,7 +209,7 @@ export default function ICYMICardInCard(message) {
         }
         if (null != author) {
           const obj2 = { guild: stateFromStores1, author: message.author };
-          tmp11 = React4(closure_13, obj2);
+          tmp11 = React4(CutoutGuildIconWithUserCustom, obj2);
         }
         tmp2 = tmp11;
       }
@@ -299,7 +227,7 @@ export default function ICYMICardInCard(message) {
     }
     return tmp2;
   }, items7);
-  const tmp21 = tmp9(tmp3[20])(stateFromStores);
+  const tmp21 = tmp9(tmp3[18])(stateFromStores);
   children = tmp21;
   const items8 = [flag2, , , , , , , , , , , ];
   let author4;
@@ -446,19 +374,19 @@ export default function ICYMICardInCard(message) {
   let obj10 = { style: tmp.titleLeft, children: items12 };
   items12 = [memo1, ];
   let tmp28Result = !flag;
-  const PressableHighlight = tmp2(tmp3[25]).PressableHighlight;
+  const PressableHighlight = tmp2(tmp3[23]).PressableHighlight;
   if (!flag) {
     let obj11 = { lineClamp: 1, variant: "text-xs/normal", color: "text-muted", children: tmp2Result8.getRelativeTimestamp(timestamp) };
-    let Text = tmp2(tmp3[19]).Text;
-    tmp2Result8 = tmp2(tmp3[26]);
+    let Text = tmp2(tmp3[17]).Text;
+    tmp2Result8 = tmp2(tmp3[24]);
     tmp28Result = tmp28(Text, obj11);
   }
   items12[1] = tmp28Result;
   items13 = [tmp26(tmp27, obj10), ];
   let obj12 = { onPress: callback, style: tmp.subtitleTrailing, hitSlop: 8, children: tmp28(MoreHorizontalIcon, obj13) };
-  const PressableOpacity = tmp2(tmp3[25]).PressableOpacity;
+  const PressableOpacity = tmp2(tmp3[23]).PressableOpacity;
   obj13 = { color: tmp9(tmp3[8]).colors.ICON_MUTED, size: "sm" };
-  MoreHorizontalIcon = tmp2(tmp3[27]).MoreHorizontalIcon;
+  MoreHorizontalIcon = tmp2(tmp3[25]).MoreHorizontalIcon;
   items13[1] = stateFromStores(PressableOpacity, obj12);
   items14 = [tmp26(tmp27, obj9), ];
   let obj14 = { style: tmp.subTitleContainer, children: tmp28(tmp27, obj15) };

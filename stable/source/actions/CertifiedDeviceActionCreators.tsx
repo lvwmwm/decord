@@ -1,17 +1,17 @@
-// Module ID: 15757
-// Function ID: 15758
+// Module ID: 16308
+// Function ID: 16309
 // Name: CertifiedDeviceActionCreators
-// Dependencies: [584, 2]
+// Dependencies: [572, 2]
 // Exports: setCertifiedDevices
 
-// Module 15757 (CertifiedDeviceActionCreators)
-import DispatcherDefault from "Dispatcher" /* 584 */;
+// Module 16308 (CertifiedDeviceActionCreators)
+import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("actions/CertifiedDeviceActionCreators.tsx");
 
-export const setCertifiedDevices = function setCertifiedDevices(id, devices) {
+export function setCertifiedDevices(id, devices) {
   const obj = DispatcherDefault;
   const obj2 = { type: "CERTIFIED_DEVICES_SET", applicationId: id, devices };
   obj.dispatch(obj2);
-};
+}

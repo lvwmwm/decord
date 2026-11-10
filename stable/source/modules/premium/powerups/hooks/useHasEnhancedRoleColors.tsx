@@ -1,121 +1,36 @@
-// Module ID: 6020
-// Function ID: 6021
+// Module ID: 6040
+// Function ID: 6041
 // Name: useHasEnhancedRoleColors
-// Dependencies: [4877, 1087, 558, 576, 504, 2]
-// Exports: getHasEnhancedRoleColors, getHasEnhancedRoleColorsForRole
+// Dependencies: [4885, 1072, 504, 2]
+// Exports: default, getHasEnhancedRoleColors, getHasEnhancedRoleColorsForRole, useHasEnhancedRoleColorsForRole
 
-// Module 6020 (useHasEnhancedRoleColors)
-import Constants from "Constants" /* 1087 */;
-import GuildStore from "GuildStore" /* 4877 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+// Module 6040 (useHasEnhancedRoleColors)
+import Constants from "Constants" /* 1072 */;
+import GuildStore from "GuildStore" /* 4885 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
 const GuildFeatures = Constants.GuildFeatures;
-let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHasEnhancedRoleColors(arg0) {
-  let closure_0;
-  let first;
-  let tmp6;
-  _require = arg0;
-  const obj = require("react");
-  const cResult = obj.c(3);
-  const tmp = _require;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [GuildStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function s() {
-      const guild = GuildStore.getGuild(closure_0);
-      let hasItem = null != guild;
-      if (hasItem) {
-        const features = guild.features;
-        hasItem = features.has(GuildFeatures.ENHANCED_ROLE_COLORS);
-      }
-      return hasItem;
-    };
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-  }
-  const tmpResult = tmp(504);
-  return tmpResult.useStateFromStores(first, tmp6);
-}) : (function useHasEnhancedRoleColors(arg0) {
-  let closure_0;
-  _require = arg0;
-  const items = [GuildStore];
-  const obj = require("get initialized");
-  return obj.useStateFromStores(items, () => {
-    const guild = GuildStore.getGuild(closure_0);
-    let hasItem = null != guild;
-    if (hasItem) {
-      const features = guild.features;
-      hasItem = features.has(GuildFeatures.ENHANCED_ROLE_COLORS);
-    }
-    return hasItem;
-  });
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHasEnhancedRoleColorsForRole(arg0) {
-  let closure_0;
-  let first;
-  let tmp6;
-  _require = arg0;
-  const obj = require("react");
-  const cResult = obj.c(3);
-  const tmp = _require;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [GuildStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function s() {
-      const guild = GuildStore.getGuild(closure_0);
-      let hasItem = null != guild;
-      if (hasItem) {
-        const features = guild.features;
-        hasItem = features.has(GuildFeatures.ENHANCED_ROLE_COLORS);
-      }
-      return hasItem;
-    };
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-  }
-  const tmpResult = tmp(504);
-  return tmpResult.useStateFromStores(first, tmp6);
-}) : (function useHasEnhancedRoleColorsForRole(arg0) {
-  let closure_0;
-  _require = arg0;
-  const items = [GuildStore];
-  const obj = require("get initialized");
-  return obj.useStateFromStores(items, () => {
-    const guild = GuildStore.getGuild(closure_0);
-    let hasItem = null != guild;
-    if (hasItem) {
-      const features = guild.features;
-      hasItem = features.has(GuildFeatures.ENHANCED_ROLE_COLORS);
-    }
-    return hasItem;
-  });
-});
 const result = size.fileFinishedImporting("modules/premium/powerups/hooks/useHasEnhancedRoleColors.tsx");
 
-export default tmp2;
-export const getHasEnhancedRoleColors = function getHasEnhancedRoleColors(guildId1) {
+export default function useHasEnhancedRoleColors(arg0) {
+  let closure_0;
+  _require = arg0;
+  const items = [GuildStore];
+  const obj = require("get initialized");
+  return obj.useStateFromStores(items, () => {
+    const guild = GuildStore.getGuild(closure_0);
+    let hasItem = null != guild;
+    if (hasItem) {
+      const features = guild.features;
+      hasItem = features.has(GuildFeatures.ENHANCED_ROLE_COLORS);
+    }
+    return hasItem;
+  });
+};
+export function getHasEnhancedRoleColors(guildId1) {
   if (null == guildId1) {
     return false;
   } else {
@@ -127,9 +42,22 @@ export const getHasEnhancedRoleColors = function getHasEnhancedRoleColors(guildI
     }
     return hasItem;
   }
-};
-export const useHasEnhancedRoleColorsForRole = tmp3;
-export const getHasEnhancedRoleColorsForRole = function getHasEnhancedRoleColorsForRole(id) {
+}
+export function useHasEnhancedRoleColorsForRole(guildId) {
+  _require = guildId;
+  const items = [GuildStore];
+  const obj = require("get initialized");
+  return obj.useStateFromStores(items, () => {
+    const guild = GuildStore.getGuild(guildId);
+    let hasItem = null != guild;
+    if (hasItem) {
+      const features = guild.features;
+      hasItem = features.has(GuildFeatures.ENHANCED_ROLE_COLORS);
+    }
+    return hasItem;
+  });
+}
+export function getHasEnhancedRoleColorsForRole(id) {
   const guild = GuildStore.getGuild(id);
   let hasItem = null != guild;
   if (hasItem) {
@@ -137,4 +65,4 @@ export const getHasEnhancedRoleColorsForRole = function getHasEnhancedRoleColors
     hasItem = features.has(GuildFeatures.ENHANCED_ROLE_COLORS);
   }
   return hasItem;
-};
+}

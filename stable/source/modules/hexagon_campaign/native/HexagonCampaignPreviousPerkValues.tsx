@@ -1,21 +1,21 @@
-// Module ID: 16414
-// Function ID: 16415
+// Module ID: 17003
+// Function ID: 17004
 // Name: HexagonCampaignPreviousPerkValues
-// Dependencies: [5027, 1253, 1207, 1209, 9897, 1255, 1210, 9898, 5234, 1256, 5030, 15890, 2]
+// Dependencies: [5038, 1238, 1192, 1194, 9979, 1240, 1195, 9980, 5250, 1241, 5041, 16460, 2]
 // Exports: getHexagonCampaignClientThemeItem, saveHexagonCampaignPreviousAppIcon, saveHexagonCampaignPreviousClientTheme
 
-// Module 16414 (HexagonCampaignPreviousPerkValues)
-import ThemeConstants from "ThemeConstants" /* 1210 */;
-import HexagonCampaignUtils from "HexagonCampaignUtils" /* 5030 */;
-import MobileThemesUtils from "MobileThemesUtils" /* 5234 */;
-import AppIconConstants from "AppIconConstants" /* 9897 */;
-import AppIconTypes from "AppIconTypes" /* 9898 */;
-import HexagonActionCreators from "HexagonActionCreators" /* 15890 */;
-import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 5027 */;
-import CustomThemeMobileStore from "CustomThemeMobileStore" /* 1253 */;
-import ThemeStore from "ThemeStore" /* 1207 */;
-import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1209 */;
-import ClientThemesConstants from "ClientThemesConstants" /* 1255 */;
+// Module 17003 (HexagonCampaignPreviousPerkValues)
+import ThemeConstants from "ThemeConstants" /* 1195 */;
+import HexagonCampaignUtils from "HexagonCampaignUtils" /* 5041 */;
+import MobileThemesUtils from "MobileThemesUtils" /* 5250 */;
+import AppIconConstants from "AppIconConstants" /* 9979 */;
+import AppIconTypes from "AppIconTypes" /* 9980 */;
+import HexagonActionCreators from "HexagonActionCreators" /* 16460 */;
+import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 5038 */;
+import CustomThemeMobileStore from "CustomThemeMobileStore" /* 1238 */;
+import ThemeStore from "ThemeStore" /* 1192 */;
+import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1194 */;
+import ClientThemesConstants from "ClientThemesConstants" /* 1240 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -32,7 +32,7 @@ let result = size.fileFinishedImporting("modules/hexagon_campaign/native/Hexagon
 
 export { DEFAULT_HEXAGON_CAMPAIGN_CLIENT_THEME };
 export const DEFAULT_HEXAGON_CAMPAIGN_APP_ICON_ID = DEFAULT;
-export const getHexagonCampaignClientThemeItem = function getHexagonCampaignClientThemeItem(DEFAULT_HEXAGON_CAMPAIGN_CLIENT_THEME) {
+export function getHexagonCampaignClientThemeItem(DEFAULT_HEXAGON_CAMPAIGN_CLIENT_THEME) {
   let found;
   let theme;
   _require = DEFAULT_HEXAGON_CAMPAIGN_CLIENT_THEME;
@@ -55,8 +55,8 @@ export const getHexagonCampaignClientThemeItem = function getHexagonCampaignClie
     }
   }
   return found;
-};
-export const saveHexagonCampaignPreviousClientTheme = function saveHexagonCampaignPreviousClientTheme() {
+}
+export function saveHexagonCampaignPreviousClientTheme() {
   const gradientPreset = ClientThemesBackgroundStore.gradientPreset;
   let id;
   const isHexagonCampaignClientThemePreset = HexagonCampaignUtils.isHexagonCampaignClientThemePreset;
@@ -93,11 +93,11 @@ export const saveHexagonCampaignPreviousClientTheme = function saveHexagonCampai
     const obj8 = { clientTheme };
     const result = saveHexagonCampaignPreviousPerkValues(obj8);
   }
-};
-export const saveHexagonCampaignPreviousAppIcon = function saveHexagonCampaignPreviousAppIcon(appIconId) {
+}
+export function saveHexagonCampaignPreviousAppIcon(appIconId) {
   if (!isHexagonCampaignAppIcon(appIconId)) {
     const obj2 = { appIconId };
     obj = HexagonActionCreators;
     const result = obj.saveHexagonCampaignPreviousPerkValues(obj2);
   }
-};
+}

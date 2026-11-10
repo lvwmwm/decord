@@ -1,8 +1,8 @@
-// Module ID: 17933
-// Function ID: 17934
+// Module ID: 18519
+// Function ID: 18520
 // Dependencies: [2]
 
-// Module 17933
+// Module 18519
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/MailboxSpotIllustration-3x.png.js");

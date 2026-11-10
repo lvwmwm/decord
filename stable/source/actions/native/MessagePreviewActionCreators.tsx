@@ -1,11 +1,11 @@
-// Module ID: 18122
-// Function ID: 18123
+// Module ID: 18704
+// Function ID: 18705
 // Name: MessagePreviewActionCreators
-// Dependencies: [1087, 1297, 584, 2]
+// Dependencies: [1072, 1282, 572, 2]
 
-// Module 18122 (MessagePreviewActionCreators)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1087 */;
+// Module 18704 (MessagePreviewActionCreators)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

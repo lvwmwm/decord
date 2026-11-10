@@ -1,78 +1,31 @@
-// Module ID: 12461
-// Function ID: 12462
+// Module ID: 12708
+// Function ID: 12709
 // Name: BeeIllocon
-// Dependencies: [19, 21, 12462, 12463, 12464, 558, 576, 7027, 5701, 2]
+// Dependencies: [19, 21, 12709, 12710, 12711, 7069, 5717, 2]
+// Exports: BeeIllocon
 
-// Module 12461 (BeeIllocon)
+// Module 12708 (BeeIllocon)
 import Fragment from "Fragment" /* 21 */;
-import react2 from "react" /* 576 */;
-import FastImageDefault from "FastImage" /* 5701 */;
-import react_native from "react-native" /* 7027 */;
-import _modDef12462 from "module_12462" /* 12462 */;
-import _modDef12463 from "module_12463" /* 12463 */;
-import _modDef12464 from "module_12464" /* 12464 */;
+import FastImageDefault from "FastImage" /* 5717 */;
+import react_native from "react-native" /* 7069 */;
+import _modDef12709 from "module_12709" /* 12709 */;
+import _modDef12710 from "module_12710" /* 12710 */;
+import _modDef12711 from "module_12711" /* 12711 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef12462 };
+let obj2 = { uri: _modDef12709 };
 obj[1] = obj2;
-obj[2] = { uri: _modDef12463 };
-({ uri: _modDef12463 });
-obj[3] = { uri: _modDef12464 };
-({ uri: _modDef12464 });
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function BeeIllocon(arg0) {
-  let accessibilityLabel;
-  let accessible;
-  let resizeMode;
-  let tmp4;
-  let tmp6;
-  obj = react2;
-  const cResult = obj.c(8);
-  ({ accessible, accessibilityLabel, resizeMode, size } = arg0);
-  let num = 64;
-  if (undefined !== size) {
-    num = size;
-  }
-  if (cResult[0] !== num) {
-    const size1 = { width: num, height: num, intrinsicWidth: 64, intrinsicHeight: 64 };
-    const tmpResult = react_native;
-    const assetSizeStyle = tmpResult.getAssetSizeStyle(size1);
-    cResult[0] = num;
-    cResult[1] = assetSizeStyle;
-    tmp4 = assetSizeStyle;
-  } else {
-    tmp4 = cResult[1];
-  }
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult2 = react_native;
-    const assetSource = tmpResult2.getAssetSource(obj);
-    cResult[2] = assetSource;
-    tmp6 = assetSource;
-  } else {
-    tmp6 = cResult[2];
-  }
-  if (cResult[3] === accessibilityLabel) {
-    if (cResult[4] === accessible) {
-      if (cResult[5] === resizeMode) {
-        let tmp9;
-        if (cResult[6] === tmp4) {
-          tmp9 = cResult[7];
-        }
-        return tmp9;
-      }
-    }
-  }
-  const tmp10 = jsx(FastImageDefault, { fadeDuration: 0, source: tmp6, style: tmp4, accessible, accessibilityLabel, resizeMode });
-  cResult[3] = accessibilityLabel;
-  cResult[4] = accessible;
-  cResult[5] = resizeMode;
-  cResult[6] = tmp4;
-  cResult[7] = tmp10;
-  tmp9 = tmp10;
-}) : (function BeeIllocon(size) {
+obj[2] = { uri: _modDef12710 };
+({ uri: _modDef12710 });
+obj[3] = { uri: _modDef12711 };
+({ uri: _modDef12711 });
+let size = size_mod;
+const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/BeeIllocon.native.tsx");
+
+export function BeeIllocon(size) {
   let accessibilityLabel;
   let accessible;
   let obj2;
@@ -90,10 +43,6 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function BeeIllocon
   }, items);
   obj = { fadeDuration: 0, source: obj2.getAssetSource(obj), style: memo, accessible, accessibilityLabel, resizeMode };
   FastImageDefault;
-  obj2 = num(7027);
+  obj2 = num(7069);
   return <tmp2 fadeDuration={0} source={obj2.getAssetSource(obj)} style={memo} accessible={accessible} accessibilityLabel={accessibilityLabel} resizeMode={resizeMode} />;
-});
-let size = size_mod;
-const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/BeeIllocon.native.tsx");
-
-export const BeeIllocon = tmp2;
+}

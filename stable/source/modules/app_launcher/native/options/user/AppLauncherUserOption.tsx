@@ -1,22 +1,22 @@
-// Module ID: 12229
-// Function ID: 12230
+// Module ID: 12519
+// Function ID: 12520
 // Name: AppLauncherUserOption
-// Dependencies: [32, 19, 5004, 21, 5003, 587, 504, 12221, 1896, 5242, 12230, 2002, 12230, 1202, 12225, 10850, 12227, 5266, 2]
+// Dependencies: [32, 19, 5015, 21, 5014, 575, 504, 12509, 1888, 5258, 12520, 1994, 12520, 1187, 12514, 10805, 12517, 5624, 2]
 // Exports: default
 
-// Module 12229 (AppLauncherUserOption)
+// Module 12519 (AppLauncherUserOption)
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 587 */;
-import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1896 */;
-import asyncRequire from "asyncRequire" /* 2002 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5242 */;
-import AppLauncherSelectOptionFormRowDefault from "AppLauncherSelectOptionFormRow" /* 12221 */;
-import AppLauncherOptionIconDefault from "AppLauncherOptionIcon" /* 12225 */;
-import AppLauncherUserListActionSheet from "AppLauncherUserListActionSheet" /* 12230 */;
+import nativeDefault from "native" /* 575 */;
+import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1888 */;
+import asyncRequire from "asyncRequire" /* 1994 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
+import AppLauncherSelectOptionFormRowDefault from "AppLauncherSelectOptionFormRow" /* 12509 */;
+import AppLauncherOptionIconDefault from "AppLauncherOptionIcon" /* 12514 */;
+import AppLauncherUserListActionSheet from "AppLauncherUserListActionSheet" /* 12520 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5004 */;
-import createStyles from "createStyles" /* 5003 */;
+import AccessibilityStore from "AccessibilityStore" /* 5015 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -33,7 +33,6 @@ export default function AppLauncherUserOption(option) {
   let channel;
   let hasError;
   let onActionSheetDismiss;
-  let style;
   let tmp12;
   let tmp6;
   let tmp8;
@@ -44,7 +43,7 @@ export default function AppLauncherUserOption(option) {
   const onPress = option.onPress;
   jsx = undefined;
   c7 = undefined;
-  ({ style, autoFocus, hasError } = option);
+  ({ autoFocus, hasError } = option);
   const guild_id = channel.guild_id;
   const tmp = c7();
   let obj = option(504);
@@ -63,7 +62,6 @@ export default function AppLauncherUserOption(option) {
   [tmp6, c6] = tmp5;
   [tmp8, c7] = _slicedToArray(channel.useState(null), 2);
   let obj2 = {
-    style,
     option,
     hasError,
     selected: tmp12,
@@ -89,7 +87,7 @@ export default function AppLauncherUserOption(option) {
         },
         onActionSheetDismiss: _slicedToArray
       };
-      const tmp5 = asyncRequire(12230, dependencyMap.paths);
+      const tmp5 = asyncRequire(12520, dependencyMap.paths);
       openLazy(tmp5, AppLauncherUserListActionSheet.APP_LAUNCHER_USER_LIST_ACTION_SHEET_KEY, obj2);
     },
     leading: tmp9Result,
@@ -103,22 +101,22 @@ export default function AppLauncherUserOption(option) {
     tmp12 = null != tmp6;
   }
   if (null != tmp8) {
-    const obj3 = { user: tmp8, guildId: guild_id, animate: !stateFromStores, size: option(1202).AvatarSizes.REFRESH_MEDIUM_32 };
-    const Avatar = tmp2(1202).Avatar;
+    const obj3 = { user: tmp8, guildId: guild_id, animate: !stateFromStores, size: option(1187).AvatarSizes.REFRESH_MEDIUM_32 };
+    const Avatar = tmp2(1187).Avatar;
     tmp9Result = tmp9(Avatar, obj3);
   } else {
-    const obj4 = { icon: jsx(option(10850).UserCircleIcon, { size: "sm", color: "interactive-text-default" }), wrapperStyle: tmp.iconWrapper };
+    const obj4 = { icon: jsx(option(10805).UserCircleIcon, { size: "sm", color: "interactive-text-default" }), wrapperStyle: tmp.iconWrapper };
     const tmp10Result = AppLauncherOptionIconDefault;
     tmp9Result = tmp9(tmp10Result, obj4);
   }
   if (null != tmp8) {
     const obj5 = { guildId: guild_id, user: tmp8 };
-    tmp9Result2 = tmp9(tmp10(12227), obj5);
+    tmp9Result2 = tmp9(tmp10(12517), obj5);
   } else {
     tmp9Result2 = null;
     if (null != tmp6) {
       const obj6 = { variant: "text-md/medium", color: "text-default", children: tmp6 };
-      tmp9Result2 = tmp9(tmp2(5266).Text, obj6);
+      tmp9Result2 = tmp9(tmp2(5624).Text, obj6);
     }
   }
   return jsx(tmp11, obj2);

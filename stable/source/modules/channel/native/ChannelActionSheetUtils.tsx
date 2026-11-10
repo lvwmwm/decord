@@ -1,22 +1,22 @@
-// Module ID: 10895
-// Function ID: 10896
+// Module ID: 10981
+// Function ID: 10982
 // Name: ChannelActionSheetUtils
-// Dependencies: [6026, 7317, 5694, 2]
+// Dependencies: [6046, 7358, 5711, 2]
 // Exports: copyGuildChannelOrThreadLink
 
-// Module 10895 (ChannelActionSheetUtils)
-import ToastUtils from "ToastUtils" /* 5694 */;
-import ChannelUtils from "ChannelUtils" /* 6026 */;
-import ClipboardUtils from "ClipboardUtils" /* 7317 */;
+// Module 10981 (ChannelActionSheetUtils)
+import ToastUtils from "ToastUtils" /* 5711 */;
+import ChannelUtils from "ChannelUtils" /* 6046 */;
+import ClipboardUtils from "ClipboardUtils" /* 7358 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/channel/native/ChannelActionSheetUtils.tsx");
 
-export const copyGuildChannelOrThreadLink = function copyGuildChannelOrThreadLink(guild_id, id) {
+export function copyGuildChannelOrThreadLink(guild_id, id) {
   const obj = ChannelUtils;
   const channelPermalink = obj.getChannelPermalink(guild_id, id);
   const obj2 = ClipboardUtils;
   obj2.copy(channelPermalink);
   const obj3 = ToastUtils;
   obj3.presentLinkCopied();
-};
+}

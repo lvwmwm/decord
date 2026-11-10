@@ -1,18 +1,18 @@
-// Module ID: 13820
-// Function ID: 13821
+// Module ID: 11090
+// Function ID: 11091
 // Name: bug_reporter/BugReportUtils
-// Dependencies: [5, 1207, 1087, 1297, 1128, 13821, 1384, 6708, 1275, 2]
+// Dependencies: [5, 1192, 1072, 1282, 1113, 11091, 1375, 6747, 1260, 2]
 // Exports: fetchBugReportConfig, getFeatureId, getPriorities, submitReport
 
-// Module 13820 (bug_reporter/BugReportUtils)
-import intl9 from "intl" /* 1128 */;
-import HTTPUtils from "HTTPUtils" /* 1297 */;
-import PlatformUtils from "PlatformUtils" /* 1384 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6708 */;
-import DebugUploadManager from "DebugUploadManager" /* 13821 */;
+// Module 11090 (bug_reporter/BugReportUtils)
+import intl9 from "intl" /* 1113 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
+import PlatformUtils from "PlatformUtils" /* 1375 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6747 */;
+import DebugUploadManager from "DebugUploadManager" /* 11091 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ThemeStore from "ThemeStore" /* 1207 */;
-import Constants from "Constants" /* 1087 */;
+import ThemeStore from "ThemeStore" /* 1192 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 let c3, c4;
@@ -49,7 +49,7 @@ obj = function _submitReport() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c6;
@@ -188,10 +188,10 @@ obj = function _submitReport() {
 ({ DebugLogCategory: hasOwnProperty, Endpoints: metroRequire } = Constants);
 const result = size.fileFinishedImporting("modules/bug_reporter/BugReportUtils.tsx");
 
-export const fetchBugReportConfig = function fetchBugReportConfig() {
+export function fetchBugReportConfig() {
   return obj(...arguments);
-};
-export const getFeatureId = function getFeatureId(feature) {
+}
+export function getFeatureId(feature) {
   let str;
   if (feature != null) {
     str = feature.name;
@@ -211,8 +211,8 @@ export const getFeatureId = function getFeatureId(feature) {
     str3 = `${str}::${str2}`;
   }
   return str3;
-};
-export const getPriorities = function getPriorities() {
+}
+export function getPriorities() {
   let intl;
   let intl2;
   let intl3;
@@ -238,7 +238,7 @@ export const getPriorities = function getPriorities() {
   intl8 = intl9.intl;
   items[3] = obj4;
   return items;
-};
-export const submitReport = function submitReport() {
+}
+export function submitReport() {
   return obj(...arguments);
-};
+}

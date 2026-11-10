@@ -1,40 +1,20 @@
-// Module ID: 12545
-// Function ID: 12546
+// Module ID: 12794
+// Function ID: 12795
 // Name: ConjureScopeSetupCard
-// Dependencies: [19, 21, 558, 576, 12503, 12504, 2]
+// Dependencies: [19, 21, 12751, 12752, 2]
+// Exports: default
 
-// Module 12545 (ConjureScopeSetupCard)
+// Module 12794 (ConjureScopeSetupCard)
 import Fragment from "Fragment" /* 21 */;
-import react2 from "react" /* 576 */;
-import useConjureScopeCards from "useConjureScopeCards" /* 12503 */;
-import ConjureScopeCardViewDefault from "ConjureScopeCardView" /* 12504 */;
+import useConjureScopeCards from "useConjureScopeCards" /* 12751 */;
+import ConjureScopeCardViewDefault from "ConjureScopeCardView" /* 12752 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureScopeSetupCard(projectId) {
-  const obj = react2;
-  const cResult = obj.c(3);
-  projectId = projectId.projectId;
-  const obj2 = useConjureScopeCards;
-  const conjureScopeSetupCard = obj2.useConjureScopeSetupCard(projectId);
-  if (cResult[0] === conjureScopeSetupCard) {
-    let tmp4;
-    if (cResult[1] === projectId) {
-      tmp4 = cResult[2];
-    }
-    return tmp4;
-  }
-  let tmp5 = null;
-  if (null != conjureScopeSetupCard) {
-    tmp5 = jsx(ConjureScopeCardViewDefault, { projectId, card: conjureScopeSetupCard });
-  }
-  cResult[0] = conjureScopeSetupCard;
-  cResult[1] = projectId;
-  cResult[2] = tmp5;
-  tmp4 = tmp5;
-}) : (function ConjureScopeSetupCard(projectId) {
+const result = size.fileFinishedImporting("modules/conjure/scope_setup/native/ConjureScopeSetupCard.tsx");
+
+export default function ConjureScopeSetupCard(projectId) {
   projectId = projectId.projectId;
   const obj = useConjureScopeCards;
   const conjureScopeSetupCard = obj.useConjureScopeSetupCard(projectId);
@@ -43,7 +23,4 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureScope
     tmp3 = jsx(ConjureScopeCardViewDefault, { projectId, card: conjureScopeSetupCard });
   }
   return tmp3;
-});
-const result = size.fileFinishedImporting("modules/conjure/scope_setup/native/ConjureScopeSetupCard.tsx");
-
-export default tmp3;
+};

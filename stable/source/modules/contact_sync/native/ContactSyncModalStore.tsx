@@ -1,16 +1,15 @@
-// Module ID: 13613
-// Function ID: 13614
+// Module ID: 14248
+// Function ID: 14249
 // Name: ContactSyncModalStore
-// Dependencies: [6532, 1392, 13614, 1087, 570, 1274, 558, 2]
-// Exports: getIsOnboarding, initialize, setAllowEmail, setAllowPhone, setAllowSync, setError, setName, setPermissionState, setPhone, setPhoneToken, setSuggestions
+// Dependencies: [6572, 1383, 14249, 1072, 560, 1259, 2]
+// Exports: getIsOnboarding, initialize, setAllowEmail, setAllowPhone, setAllowSync, setError, setName, setPermissionState, setPhone, setPhoneToken, setSuggestions, useIsOnboarding
 
-// Module 13613 (ContactSyncModalStore)
-import Constants from "Constants" /* 1087 */;
-import ContactSyncConstants from "ContactSyncConstants" /* 13614 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6532 */;
-import UserStore from "UserStore" /* 1392 */;
-import module_570 from "module_570" /* 570 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 14248 (ContactSyncModalStore)
+import Constants from "Constants" /* 1072 */;
+import ContactSyncConstants from "ContactSyncConstants" /* 14249 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6572 */;
+import UserStore from "UserStore" /* 1383 */;
+import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -19,23 +18,16 @@ let _require, dependencyMap;
 const ContactPermissions = ContactSyncConstants.ContactPermissions;
 const PlatformTypes = Constants.PlatformTypes;
 const ContactSyncModes = { NORMAL: 0, [0]: "NORMAL", ONBOARDING: 1, [1]: "ONBOARDING", ONBOARDING_INVITE: 2, [2]: "ONBOARDING_INVITE" };
-let obj2 = module_570.create(() => {
+let obj2 = module_560.create(() => {
   let obj;
   obj = { mode: obj.NORMAL, permissionState: ContactPermissions.NOT_DETERMINED, error: "", phone: null, phoneToken: null, name: null, isNameFromContactBook: false, allowPhone: true, allowEmail: true, bulkAddToken: null, suggestions: [] };
   return obj;
-});
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsOnboarding() {
-  const mode = obj2().mode;
-  return mode === obj.ONBOARDING || mode === obj.ONBOARDING_INVITE;
-}) : (function useIsOnboarding() {
-  const mode = obj2().mode;
-  return mode === obj.ONBOARDING || mode === obj.ONBOARDING_INVITE;
 });
 const result = size.fileFinishedImporting("modules/contact_sync/native/ContactSyncModalStore.tsx");
 
 export { ContactSyncModes };
 export const useContactSyncModalStore = obj2;
-export const initialize = function initialize(arg0) {
+export function initialize(arg0) {
   let closure_0;
   let constants2;
   let phone;
@@ -60,8 +52,8 @@ export const initialize = function initialize(arg0) {
       return obj;
     });
   });
-};
-export const setAllowSync = function setAllowSync(arg0) {
+}
+export function setAllowSync(arg0) {
   let closure_0;
   _require = arg0;
   let obj = require("react-native");
@@ -72,8 +64,8 @@ export const setAllowSync = function setAllowSync(arg0) {
       return obj;
     });
   });
-};
-export const setAllowPhone = function setAllowPhone(arg0) {
+}
+export function setAllowPhone(arg0) {
   let closure_0;
   _require = arg0;
   let obj = require("react-native");
@@ -85,8 +77,8 @@ export const setAllowPhone = function setAllowPhone(arg0) {
       return obj;
     });
   });
-};
-export const setAllowEmail = function setAllowEmail(arg0) {
+}
+export function setAllowEmail(arg0) {
   let closure_0;
   _require = arg0;
   let obj = require("react-native");
@@ -98,8 +90,8 @@ export const setAllowEmail = function setAllowEmail(arg0) {
       return obj;
     });
   });
-};
-export const setSuggestions = function setSuggestions(arg0, arg1) {
+}
+export function setSuggestions(arg0, arg1) {
   let closure_0;
   let closure_1;
   _require = arg0;
@@ -114,8 +106,8 @@ export const setSuggestions = function setSuggestions(arg0, arg1) {
       return obj;
     });
   });
-};
-export const setPhone = function setPhone(arg0) {
+}
+export function setPhone(arg0) {
   let closure_0;
   _require = arg0;
   let obj = require("react-native");
@@ -127,8 +119,8 @@ export const setPhone = function setPhone(arg0) {
       return obj;
     });
   });
-};
-export const setPhoneToken = function setPhoneToken(arg0) {
+}
+export function setPhoneToken(arg0) {
   let closure_0;
   _require = arg0;
   let obj = require("react-native");
@@ -140,8 +132,8 @@ export const setPhoneToken = function setPhoneToken(arg0) {
       return obj;
     });
   });
-};
-export const setName = function setName(arg0) {
+}
+export function setName(arg0) {
   let closure_0;
   _require = arg0;
   let flag = arg1;
@@ -158,8 +150,8 @@ export const setName = function setName(arg0) {
       return obj;
     });
   });
-};
-export const setPermissionState = function setPermissionState(arg0) {
+}
+export function setPermissionState(arg0) {
   let closure_0;
   _require = arg0;
   let obj = require("react-native");
@@ -171,8 +163,8 @@ export const setPermissionState = function setPermissionState(arg0) {
       return obj;
     });
   });
-};
-export const setError = function setError(arg0) {
+}
+export function setError(arg0) {
   let closure_0;
   _require = arg0;
   let obj = require("react-native");
@@ -184,9 +176,12 @@ export const setError = function setError(arg0) {
       return obj;
     });
   });
-};
-export const useIsOnboarding = tmp3;
-export const getIsOnboarding = function getIsOnboarding() {
+}
+export function useIsOnboarding() {
+  const mode = obj2().mode;
+  return mode === obj.ONBOARDING || mode === obj.ONBOARDING_INVITE;
+}
+export function getIsOnboarding() {
   const mode = obj2.getState().mode;
   return mode === obj.ONBOARDING || mode === obj.ONBOARDING_INVITE;
-};
+}

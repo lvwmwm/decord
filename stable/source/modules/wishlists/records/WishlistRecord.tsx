@@ -1,17 +1,17 @@
-// Module ID: 9403
-// Function ID: 9404
+// Module ID: 9472
+// Function ID: 9473
 // Name: WishlistRecord
-// Dependencies: [1407, 2024, 9404, 9405, 9406, 9407, 1087, 2]
+// Dependencies: [1398, 2016, 9473, 9474, 9475, 9476, 1072, 2]
 // Exports: getWishlistProductLines, getWishlistSkuIds, wishlistHasSkuId
 
-// Module 9403 (WishlistRecord)
-import Constants from "Constants" /* 1087 */;
-import Record from "Record" /* 1407 */;
-import ApplicationRecord from "ApplicationRecord" /* 2024 */;
-import BaseWishlistItemRecord from "BaseWishlistItemRecord" /* 9404 */;
-import CollectiblesWishlistItemRecord from "CollectiblesWishlistItemRecord" /* 9405 */;
-import PremiumWishlistItemRecord from "PremiumWishlistItemRecord" /* 9406 */;
-import SKUWishlistItemRecord from "SKUWishlistItemRecord" /* 9407 */;
+// Module 9472 (WishlistRecord)
+import Constants from "Constants" /* 1072 */;
+import Record from "Record" /* 1398 */;
+import ApplicationRecord from "ApplicationRecord" /* 2016 */;
+import BaseWishlistItemRecord from "BaseWishlistItemRecord" /* 9473 */;
+import CollectiblesWishlistItemRecord from "CollectiblesWishlistItemRecord" /* 9474 */;
+import PremiumWishlistItemRecord from "PremiumWishlistItemRecord" /* 9475 */;
+import SKUWishlistItemRecord from "SKUWishlistItemRecord" /* 9476 */;
 import size from "module_2" /* 2 */;
 
 let set, sku_product_line;
@@ -69,17 +69,17 @@ class WishlistRecord extends Record {
 const result = size.fileFinishedImporting("modules/wishlists/records/WishlistRecord.tsx");
 
 export default WishlistRecord;
-export const getWishlistSkuIds = function getWishlistSkuIds(first1) {
-  const items = first1.items;
+export function getWishlistSkuIds(items) {
+  items = items.items;
   return items.map((skuId) => skuId.skuId);
-};
-export const wishlistHasSkuId = function wishlistHasSkuId(items, arg1) {
+}
+export function wishlistHasSkuId(items, arg1) {
   let closure_0 = arg1;
   items = items.items;
   return items.some((skuId) => skuId.skuId === closure_0);
-};
-export const getWishlistProductLines = function getWishlistProductLines(items) {
+}
+export function getWishlistProductLines(items) {
   items = items.items;
   set = new Set(items.map((skuProductLine) => skuProductLine.skuProductLine));
   return set;
-};
+}

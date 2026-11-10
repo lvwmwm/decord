@@ -1,33 +1,18 @@
-// Module ID: 8775
-// Function ID: 8776
+// Module ID: 8825
+// Function ID: 8826
 // Name: VideoBackgroundProfileFetchExperiment
-// Dependencies: [1455, 558, 576, 2]
+// Dependencies: [1447, 2]
+// Exports: useIsVideoBackgroundProfileFetchEnabled
 
-// Module 8775 (VideoBackgroundProfileFetchExperiment)
-import react from "react" /* 576 */;
-import ApexExperiment from "ApexExperiment" /* 1455 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 8825 (VideoBackgroundProfileFetchExperiment)
+import ApexExperiment from "ApexExperiment" /* 1447 */;
 import size from "module_2" /* 2 */;
 
 let obj = { name: "2026-09-video-background-profile-fetch", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } };
-let closure_2 = ApexExperiment.createApexExperiment(obj);
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsVideoBackgroundProfileFetchEnabled(location) {
-  let tmp2;
-  const obj = react;
-  const cResult = obj.c(2);
-  if (cResult[0] !== location) {
-    const obj2 = { location };
-    cResult[0] = location;
-    cResult[1] = obj2;
-    tmp2 = obj2;
-  } else {
-    tmp2 = cResult[1];
-  }
-  return closure_2.useConfig(tmp2).enabled;
-}) : (function useIsVideoBackgroundProfileFetchEnabled(location) {
-  const obj = { location };
-  return closure_2.useConfig(obj).enabled;
-});
+let closure_0 = ApexExperiment.createApexExperiment(obj);
 const result = size.fileFinishedImporting("modules/media/experiments/VideoBackgroundProfileFetchExperiment.tsx");
 
-export const useIsVideoBackgroundProfileFetchEnabled = tmp2;
+export function useIsVideoBackgroundProfileFetchEnabled(_location) {
+  const obj = { location: _location };
+  return closure_0.useConfig(obj).enabled;
+}

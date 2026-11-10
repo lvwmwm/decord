@@ -1,11 +1,11 @@
-// Module ID: 5634
-// Function ID: 5635
+// Module ID: 5650
+// Function ID: 5651
 // Name: isForwardMessage
-// Dependencies: [1087, 2]
+// Dependencies: [1072, 2]
 // Exports: default, isForwardServerMessage
 
-// Module 5634 (isForwardMessage)
-import Constants from "Constants" /* 1087 */;
+// Module 5650 (isForwardMessage)
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 const MessageReferenceTypes = Constants.MessageReferenceTypes;
@@ -19,11 +19,11 @@ export default function isForwardMessage(messageReference) {
   }
   return type === MessageReferenceTypes.FORWARD;
 };
-export const isForwardServerMessage = function isForwardServerMessage(message_reference) {
+export function isForwardServerMessage(message_reference) {
   message_reference = message_reference.message_reference;
   let type;
   if (message_reference != null) {
     type = message_reference.type;
   }
   return type === MessageReferenceTypes.FORWARD;
-};
+}

@@ -1,26 +1,26 @@
-// Module ID: 18085
-// Function ID: 18086
+// Module ID: 16362
+// Function ID: 16363
 // Name: conjureBackgroundFrameRules
-// Dependencies: [4854, 6807, 1209, 18086, 15745, 6808, 13897, 15743, 5658, 10760, 2]
+// Dependencies: [4862, 6846, 1194, 16363, 16289, 6847, 12093, 16287, 5675, 10883, 2]
 // Exports: isBuilderPreviewFrame, shouldRunInBackgroundOnRelease
 
-// Module 18085 (conjureBackgroundFrameRules)
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5658 */;
-import FramesConstants from "FramesConstants" /* 6808 */;
-import conjurePreviewSurface from "conjurePreviewSurface" /* 10760 */;
-import frameRunsInBackgroundDefault from "frameRunsInBackground" /* 13897 */;
-import validateConjureAppFrame from "validateConjureAppFrame" /* 15743 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4854 */;
-import FramesStore from "FramesStore" /* 6807 */;
-import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1209 */;
-import VoiceChannelAppStore from "VoiceChannelAppStore" /* 18086 */;
-import ConjureBuilderPreviewStore from "ConjureBuilderPreviewStore" /* 15745 */;
+// Module 16362 (conjureBackgroundFrameRules)
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5675 */;
+import FramesConstants from "FramesConstants" /* 6847 */;
+import conjurePreviewSurface from "conjurePreviewSurface" /* 10883 */;
+import frameRunsInBackgroundDefault from "frameRunsInBackground" /* 12093 */;
+import validateConjureAppFrame from "validateConjureAppFrame" /* 16287 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4862 */;
+import FramesStore from "FramesStore" /* 6846 */;
+import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1194 */;
+import VoiceChannelAppStore from "VoiceChannelAppStore" /* 16363 */;
+import ConjureBuilderPreviewStore from "ConjureBuilderPreviewStore" /* 16289 */;
 import size from "module_2" /* 2 */;
 
 const FrameIntent = FramesConstants.FrameIntent;
 let result = size.fileFinishedImporting("modules/conjure/background_frames/conjureBackgroundFrameRules.tsx");
 
-export const shouldRunInBackgroundOnRelease = function shouldRunInBackgroundOnRelease(frame) {
+export function shouldRunInBackgroundOnRelease(frame) {
   let isConjureApplicationResult = frameRunsInBackgroundDefault(frame, UnsyncedUserSettingsStore);
   if (isConjureApplicationResult) {
     const obj = validateConjureAppFrame;
@@ -37,7 +37,7 @@ export const shouldRunInBackgroundOnRelease = function shouldRunInBackgroundOnRe
     let tmp11 = frame.surface.type === EmbeddedSurfaceType.EmbeddedSurfaceType.VOICE_CHANNEL;
     const tmp10 = require;
     if (tmp11) {
-      const tmp10Result = tmp10(10760);
+      const tmp10Result = tmp10(10883);
       tmp11 = !tmp10Result.isConjurePreviewSurface(frame.surface);
     }
     let isAppVisibleResult = !tmp11;
@@ -47,8 +47,8 @@ export const shouldRunInBackgroundOnRelease = function shouldRunInBackgroundOnRe
     tmp9 = isAppVisibleResult;
   }
   return tmp9;
-};
-export const isBuilderPreviewFrame = function isBuilderPreviewFrame(frame) {
+}
+export function isBuilderPreviewFrame(frame) {
   const obj = conjurePreviewSurface;
   let result = obj.isConjurePreviewSurface(frame.surface);
   if (!result) {
@@ -60,4 +60,4 @@ export const isBuilderPreviewFrame = function isBuilderPreviewFrame(frame) {
     const tmp5 = frame.intent === FrameIntent.MAIN && frame.applicationId === ConjureBuilderPreviewStore.getLastBuilderPreviewApplicationId();
   }
   return result;
-};
+}

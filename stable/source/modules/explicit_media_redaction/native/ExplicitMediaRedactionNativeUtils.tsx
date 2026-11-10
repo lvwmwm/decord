@@ -1,22 +1,22 @@
-// Module ID: 16152
-// Function ID: 16153
+// Module ID: 16725
+// Function ID: 16726
 // Name: ExplicitMediaRedactionNativeUtils
-// Dependencies: [1392, 7424, 9746, 1211, 1128, 8618, 7915, 6689, 5242, 16153, 2002, 7421, 7427, 2]
+// Dependencies: [1383, 7466, 9827, 1196, 1113, 8687, 7955, 6729, 5258, 16726, 1994, 7463, 7469, 2]
 // Exports: handleSensitiveMediaFilterPress, shouldAgeVerifyForSearchMedia
 
-// Module 16152 (ExplicitMediaRedactionNativeUtils)
-import intl4 from "intl" /* 1128 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1211 */;
-import asyncRequire from "asyncRequire" /* 2002 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5242 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6689 */;
-import ObscuredMediaUtils from "ObscuredMediaUtils" /* 7421 */;
-import ExplicitMediaRedactionConstants from "ExplicitMediaRedactionConstants" /* 7424 */;
-import ExplicitMediaRedactionModels from "ExplicitMediaRedactionModels" /* 7427 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7915 */;
-import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 8618 */;
-import SearchConstants from "SearchConstants" /* 9746 */;
-import UserStore from "UserStore" /* 1392 */;
+// Module 16725 (ExplicitMediaRedactionNativeUtils)
+import intl4 from "intl" /* 1113 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1196 */;
+import asyncRequire from "asyncRequire" /* 1994 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6729 */;
+import ObscuredMediaUtils from "ObscuredMediaUtils" /* 7463 */;
+import ExplicitMediaRedactionConstants from "ExplicitMediaRedactionConstants" /* 7466 */;
+import ExplicitMediaRedactionModels from "ExplicitMediaRedactionModels" /* 7469 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7955 */;
+import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 8687 */;
+import SearchConstants from "SearchConstants" /* 9827 */;
+import UserStore from "UserStore" /* 1383 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -25,7 +25,7 @@ let closure_4 = ExplicitMediaRedactionConstants.EXPLICIT_MEDIA_SETTINGS_ACTION_S
 const SearchMediaTypes = SearchConstants.SearchMediaTypes;
 let result = size.fileFinishedImporting("modules/explicit_media_redaction/native/ExplicitMediaRedactionNativeUtils.tsx");
 
-export const handleSensitiveMediaFilterPress = function handleSensitiveMediaFilterPress(arg0) {
+export function handleSensitiveMediaFilterPress(arg0) {
   let currentValue;
   let excluded;
   let intl;
@@ -99,9 +99,9 @@ export const handleSensitiveMediaFilterPress = function handleSensitiveMediaFilt
     push3(obj3);
   }
   const obj4 = ActionSheetActionCreatorsDefault;
-  obj4.openLazy(asyncRequire(16153, dependencyMap.paths), closure_4, { title, subtitle, options: items, currentValue });
-};
-export const shouldAgeVerifyForSearchMedia = function shouldAgeVerifyForSearchMedia(media, found) {
+  obj4.openLazy(asyncRequire(16726, dependencyMap.paths), closure_4, { title, subtitle, options: items, currentValue });
+}
+export function shouldAgeVerifyForSearchMedia(media, found) {
   if (null == found) {
     return false;
   } else {
@@ -137,4 +137,4 @@ export const shouldAgeVerifyForSearchMedia = function shouldAgeVerifyForSearchMe
       return tmp2;
     }
   }
-};
+}

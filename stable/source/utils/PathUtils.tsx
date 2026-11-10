@@ -1,16 +1,16 @@
-// Module ID: 15332
-// Function ID: 15333
+// Module ID: 15874
+// Function ID: 15875
 // Name: PathUtils
-// Dependencies: [1384, 2]
+// Dependencies: [1375, 2]
 // Exports: pathBasename, pathFilenameWithoutExt, pathJoin
 
-// Module 15332 (PathUtils)
-import PlatformUtils from "PlatformUtils" /* 1384 */;
+// Module 15874 (PathUtils)
+import PlatformUtils from "PlatformUtils" /* 1375 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("utils/PathUtils.tsx");
 
-export const pathJoin = function pathJoin() {
+export function pathJoin() {
   const items = [...arguments];
   let str = "/";
   const obj = PlatformUtils;
@@ -19,8 +19,8 @@ export const pathJoin = function pathJoin() {
   }
   const found = items.filter((item) => item.length > 0);
   return found.join(str);
-};
-export const pathBasename = function pathBasename(str, arg1) {
+}
+export function pathBasename(str, arg1) {
   let arr = str;
   const parts = str.split(/[/\\]/);
   if ("" !== parts[parts.length - 1]) {
@@ -32,8 +32,8 @@ export const pathBasename = function pathBasename(str, arg1) {
     substr = arr.slice(0, -arg1.length);
   }
   return substr;
-};
-export const pathFilenameWithoutExt = function pathFilenameWithoutExt(str) {
+}
+export function pathFilenameWithoutExt(str) {
   let arr = str;
   const parts = str.split(/[/\\]/);
   if ("" !== parts[parts.length - 1]) {
@@ -45,4 +45,4 @@ export const pathFilenameWithoutExt = function pathFilenameWithoutExt(str) {
     substr = arr.slice(0, lastIndexOfResult);
   }
   return substr;
-};
+}

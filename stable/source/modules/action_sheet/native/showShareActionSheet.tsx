@@ -1,15 +1,15 @@
-// Module ID: 8883
-// Function ID: 8884
+// Module ID: 8931
+// Function ID: 8932
 // Name: showShareActionSheet
-// Dependencies: [17, 1385, 8884, 8885, 8888, 1257, 2]
+// Dependencies: [17, 1376, 8932, 8933, 8936, 1242, 2]
 // Exports: showShareActionSheet
 
-// Module 8883 (showShareActionSheet)
+// Module 8931 (showShareActionSheet)
 import react_native from "react-native" /* 17 */;
-import SentryUtilsDefault from "SentryUtils" /* 1257 */;
-import react_nativeDefault from "react-native" /* 8884 */;
-import ShowShareActionSheetUtils from "ShowShareActionSheetUtils" /* 8885 */;
-import PlatformUtils from "utils/PlatformUtils" /* 1385 */;
+import SentryUtilsDefault from "SentryUtils" /* 1242 */;
+import react_nativeDefault from "react-native" /* 8932 */;
+import ShowShareActionSheetUtils from "ShowShareActionSheetUtils" /* 8933 */;
+import PlatformUtils from "utils/PlatformUtils" /* 1376 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -31,7 +31,7 @@ if (PlatformUtils.isAndroid()) {
 }
 let result = size.fileFinishedImporting("modules/action_sheet/native/showShareActionSheet.tsx");
 
-export const showShareActionSheet = function showShareActionSheet(source, SECURE_FRAMES_STREAM_BOTTOM_SHEET) {
+export function showShareActionSheet(source, SECURE_FRAMES_STREAM_BOTTOM_SHEET) {
   let fn;
   let mediaFallbackUrl;
   let mediaShareParams;
@@ -44,7 +44,7 @@ export const showShareActionSheet = function showShareActionSheet(source, SECURE
     const obj2 = require("ShowShareActionSheetUtils");
     mediaShareParams = obj2.getMediaShareParams(source.source);
   } else {
-    mediaShareParams = { mediaFallbackUrl: "Array", mediaStagingOptions: "Reflect" };
+    mediaShareParams = { mediaFallbackUrl: "paths", mediaStagingOptions: "apply" };
   }
   ({ mediaFallbackUrl, mediaStagingOptions } = mediaShareParams);
   if (null == source.source) {
@@ -114,4 +114,4 @@ export const showShareActionSheet = function showShareActionSheet(source, SECURE
   catchPromise.finally(() => {
     fn();
   });
-};
+}

@@ -1,14 +1,14 @@
-// Module ID: 5655
-// Function ID: 5656
+// Module ID: 5672
+// Function ID: 5673
 // Name: getURLForApplication
-// Dependencies: [32, 5656, 5657, 1386, 2]
+// Dependencies: [32, 5673, 5674, 1377, 2]
 // Exports: default, getApplicationRouterOrigin, getNonTestModeUrlForApplication, isUsingDevShelfActivityUrlOverride
 
-// Module 5655 (getURLForApplication)
-import URLUtilsDefault from "URLUtils" /* 1386 */;
+// Module 5672 (getURLForApplication)
+import URLUtilsDefault from "URLUtils" /* 1377 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import TestModeStore from "TestModeStore" /* 5656 */;
-import DeveloperActivityShelfStore from "DeveloperActivityShelfStore" /* 5657 */;
+import TestModeStore from "TestModeStore" /* 5673 */;
+import DeveloperActivityShelfStore from "DeveloperActivityShelfStore" /* 5674 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/activities/getURLForApplication.tsx");
@@ -54,7 +54,7 @@ export default function getURLForApplication(arg0) {
   }
   return activityUrlOverride;
 };
-export const getNonTestModeUrlForApplication = function getNonTestModeUrlForApplication(arg0) {
+export function getNonTestModeUrlForApplication(arg0) {
   if (null == ACTIVITY_APPLICATION_HOST) {
     return null;
   } else if (ACTIVITY_APPLICATION_HOST.startsWith("//")) {
@@ -72,10 +72,10 @@ export const getNonTestModeUrlForApplication = function getNonTestModeUrlForAppl
     const _HermesInternal = HermesInternal;
     return "https://" + arg0 + "." + ACTIVITY_APPLICATION_HOST;
   }
-};
-export const getApplicationRouterOrigin = function getApplicationRouterOrigin(url) {
+}
+export function getApplicationRouterOrigin(assetURL) {
   const obj = URLUtilsDefault;
-  const toURLSafeResult = obj.toURLSafe(url);
+  const toURLSafeResult = obj.toURLSafe(assetURL);
   if (null == toURLSafeResult) {
     return null;
   } else {
@@ -116,9 +116,9 @@ export const getApplicationRouterOrigin = function getApplicationRouterOrigin(ur
     }
     return origin2;
   }
-};
-export const isUsingDevShelfActivityUrlOverride = function isUsingDevShelfActivityUrlOverride() {
+}
+export function isUsingDevShelfActivityUrlOverride() {
   const state = DeveloperActivityShelfStore.getState();
   const useActivityUrlOverride = state.useActivityUrlOverride && null != state.activityUrlOverride && "" !== state.activityUrlOverride;
   return useActivityUrlOverride;
-};
+}

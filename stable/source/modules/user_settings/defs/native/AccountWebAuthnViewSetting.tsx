@@ -1,21 +1,19 @@
-// Module ID: 16100
-// Function ID: 16101
+// Module ID: 16672
+// Function ID: 16673
 // Name: AccountWebAuthnViewSetting
-// Dependencies: [19, 16005, 1392, 8364, 1087, 558, 576, 5940, 1128, 6709, 504, 11240, 16101, 2]
+// Dependencies: [19, 16576, 1383, 8432, 1072, 5958, 1113, 6748, 504, 11540, 16673, 2]
 
-// Module 16100 (AccountWebAuthnViewSetting)
+// Module 16672 (AccountWebAuthnViewSetting)
 import get_initialized from "get initialized" /* 504 */;
-import react2 from "react" /* 576 */;
-import Constants from "Constants" /* 1087 */;
-import intl3 from "intl" /* 1128 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5940 */;
-import WebAuthnActionCreators from "WebAuthnActionCreators" /* 6709 */;
-import SettingsConstants from "SettingsConstants" /* 8364 */;
+import Constants from "Constants" /* 1072 */;
+import intl3 from "intl" /* 1113 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5958 */;
+import WebAuthnActionCreators from "WebAuthnActionCreators" /* 6748 */;
+import SettingsConstants from "SettingsConstants" /* 8432 */;
 import react from "react" /* 19 */;
-import WebAuthnStore from "WebAuthnStore" /* 16005 */;
-import UserStore from "UserStore" /* 1392 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11240 */;
+import WebAuthnStore from "WebAuthnStore" /* 16576 */;
+import UserStore from "UserStore" /* 1383 */;
+import SettingBuilders from "SettingBuilders" /* 11540 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -23,13 +21,14 @@ let currentUser;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const UserSettingsSections = Constants.UserSettingsSections;
-let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAccountCanUseWebAuthnView() {
-  let first;
-  let obj = react2;
-  const cResult = obj.c(1);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function t() {
+let obj = {
+  useTitle() {
+    const intl = intl3.intl;
+    return intl.string(intl3.t["0N1s81"]);
+  },
+  parent: MobileUserSettings.ACCOUNT,
+  usePreNavigationAction: function useAccountCanUseWebAuthnView() {
+    return react.useCallback(() => {
       let intl;
       let intl2;
       currentUser = currentUser.getCurrentUser();
@@ -49,91 +48,25 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAccount
         show(obj);
       }
       return flag;
-    };
-    cResult[0] = fn;
-    first = fn;
-  } else {
-    first = cResult[0];
-  }
-  return first;
-}) : (function useAccountCanUseWebAuthnView() {
-  return react.useCallback(() => {
-    let intl;
-    let intl2;
-    currentUser = currentUser.getCurrentUser();
-    let flag;
-    if (currentUser != null) {
-      flag = currentUser.verified;
+    }, []);
+  },
+  useTrailing: function useAccountSecurityKeysSettingTrailing() {
+    let credentials;
+    const tmp = WebAuthnStore;
+    if (!WebAuthnStore.hasFetchedCredentials()) {
+      let obj = WebAuthnActionCreators;
+      const webAuthnCredentials = obj.fetchWebAuthnCredentials();
     }
-    if (flag == null) {
-      flag = false;
-    }
-    if (!flag) {
-      const obj = { title: intl.string(intl3.t.v740sh), body: intl2.string(intl3.t.uggF7o) };
-      const show = AlertActionCreatorsDefault.show;
-      AlertActionCreatorsDefault;
-      intl = intl3.intl;
-      intl2 = intl3.intl;
-      show(obj);
-    }
-    return flag;
-  }, []);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAccountSecurityKeysSettingTrailing() {
-  let credentials;
-  let tmp6;
-  let tmp7;
-  let obj = react2;
-  const cResult = obj.c(2);
-  const tmp4 = WebAuthnStore;
-  if (!WebAuthnStore.hasFetchedCredentials()) {
-    const tmpResult = WebAuthnActionCreators;
-    const webAuthnCredentials = tmpResult.fetchWebAuthnCredentials();
-  }
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [tmp4];
-    const fn = function s() {
+    const items = [tmp];
+    const obj2 = get_initialized;
+    return obj2.useStateFromStores(items, () => {
       const intl = intl3.intl;
       const formatToPlainString = intl.formatToPlainString;
       const obj = { count: credentials.getCredentials().length };
       const n8mZ0X = intl3.t.n8mZ0X;
       return formatToPlainString(n8mZ0X, obj);
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp6 = items;
-    tmp7 = fn;
-  } else {
-    [tmp6, tmp7] = cResult;
-  }
-  const tmpResult2 = get_initialized;
-  return tmpResult2.useStateFromStores(tmp6, tmp7);
-}) : (function useAccountSecurityKeysSettingTrailing() {
-  let credentials;
-  const tmp = WebAuthnStore;
-  if (!WebAuthnStore.hasFetchedCredentials()) {
-    let obj = WebAuthnActionCreators;
-    const webAuthnCredentials = obj.fetchWebAuthnCredentials();
-  }
-  const items = [tmp];
-  const obj2 = get_initialized;
-  return obj2.useStateFromStores(items, () => {
-    const intl = intl3.intl;
-    const formatToPlainString = intl.formatToPlainString;
-    const obj = { count: credentials.getCredentials().length };
-    const n8mZ0X = intl3.t.n8mZ0X;
-    return formatToPlainString(n8mZ0X, obj);
-  });
-});
-let obj = {
-  useTitle() {
-    const intl = intl3.intl;
-    return intl.string(intl3.t["0N1s81"]);
+    });
   },
-  parent: MobileUserSettings.ACCOUNT,
-  usePreNavigationAction: tmp2,
-  useTrailing: tmp3,
   screen: {
     route: UserSettingsSections.WEBAUTHN_VIEW,
     getComponent() {

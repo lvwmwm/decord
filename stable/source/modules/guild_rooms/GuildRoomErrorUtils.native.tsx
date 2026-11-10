@@ -1,16 +1,16 @@
-// Module ID: 7896
-// Function ID: 7897
+// Module ID: 7936
+// Function ID: 7937
 // Name: GuildRoomErrorUtils
-// Dependencies: [1087, 2]
+// Dependencies: [1072, 2]
 // Exports: handleGuildRoomError
 
-// Module 7896 (GuildRoomErrorUtils)
-import Constants from "Constants" /* 1087 */;
+// Module 7936 (GuildRoomErrorUtils)
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 const NOOP_NULL = Constants.NOOP_NULL;
 const result = size.fileFinishedImporting("modules/guild_rooms/GuildRoomErrorUtils.native.tsx");
 
-export const handleGuildRoomError = function handleGuildRoomError() {
+export function handleGuildRoomError() {
   NOOP_NULL();
-};
+}

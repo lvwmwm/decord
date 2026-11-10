@@ -1,28 +1,28 @@
-// Module ID: 13481
-// Function ID: 13482
+// Module ID: 14101
+// Function ID: 14102
 // Name: GuildBoostingMarketingUtils
-// Dependencies: [1394, 9382, 13482, 10180, 13484, 13486, 9836, 9022, 12554, 9981, 8600, 13487, 2]
+// Dependencies: [1385, 9452, 14102, 10260, 14104, 14106, 9916, 9059, 12803, 10063, 8669, 11042, 2]
 // Exports: getIconForPerk
 
-// Module 13481 (GuildBoostingMarketingUtils)
-import PremiumConstants from "PremiumConstants" /* 1394 */;
-import StageIcon from "StageIcon" /* 8600 */;
-import ShieldUserIcon from "ShieldUserIcon" /* 9022 */;
-import ReactionIcon from "ReactionIcon" /* 9382 */;
-import UploadIcon from "UploadIcon" /* 9836 */;
-import StarIcon from "StarIcon" /* 9981 */;
-import GifIcon from "GifIcon" /* 10180 */;
-import ImagesIcon from "ImagesIcon" /* 12554 */;
-import SoundboardIcon from "SoundboardIcon" /* 13482 */;
-import HeadphonesIcon from "HeadphonesIcon" /* 13484 */;
-import ScreenArrowIcon from "ScreenArrowIcon" /* 13486 */;
-import StickerIcon from "StickerIcon" /* 13487 */;
+// Module 14101 (GuildBoostingMarketingUtils)
+import PremiumConstants from "PremiumConstants" /* 1385 */;
+import StageIcon from "StageIcon" /* 8669 */;
+import ShieldUserIcon from "ShieldUserIcon" /* 9059 */;
+import ReactionIcon from "ReactionIcon" /* 9452 */;
+import UploadIcon from "UploadIcon" /* 9916 */;
+import StarIcon from "StarIcon" /* 10063 */;
+import GifIcon from "GifIcon" /* 10260 */;
+import StickerIcon from "StickerIcon" /* 11042 */;
+import ImagesIcon from "ImagesIcon" /* 12803 */;
+import SoundboardIcon from "SoundboardIcon" /* 14102 */;
+import HeadphonesIcon from "HeadphonesIcon" /* 14104 */;
+import ScreenArrowIcon from "ScreenArrowIcon" /* 14106 */;
 import size from "module_2" /* 2 */;
 
 const PerkIcons = PremiumConstants.PerkIcons;
 const result = size.fileFinishedImporting("modules/guild_boosting/native/GuildBoostingMarketingUtils.tsx");
 
-export const getIconForPerk = function getIconForPerk(perkIcon) {
+export function getIconForPerk(perkIcon) {
   if (PerkIcons.EMOJI === perkIcon) {
     return ReactionIcon.ReactionIcon;
   } else if (PerkIcons.SOUNDBOARD === perkIcon) {
@@ -48,4 +48,4 @@ export const getIconForPerk = function getIconForPerk(perkIcon) {
   } else {
     return ReactionIcon.ReactionIcon;
   }
-};
+}

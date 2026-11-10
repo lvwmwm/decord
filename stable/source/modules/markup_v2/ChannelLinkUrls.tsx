@@ -1,25 +1,25 @@
-// Module ID: 8616
-// Function ID: 8617
+// Module ID: 8685
+// Function ID: 8686
 // Name: ChannelLinkUrls
-// Dependencies: [32, 5638, 2]
+// Dependencies: [32, 5654, 2]
 // Exports: parseChannelLinkUrl
 
-// Module 8616 (ChannelLinkUrls)
-import LinkUtils from "LinkUtils" /* 5638 */;
+// Module 8685 (ChannelLinkUrls)
+import LinkUtils from "LinkUtils" /* 5654 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/markup_v2/ChannelLinkUrls.tsx");
 
-export const parseChannelLinkUrl = function parseChannelLinkUrl(url) {
+export function parseChannelLinkUrl(url) {
   let tmpResult;
   const MEDIA_POST_URL_RE = LinkUtils.MEDIA_POST_URL_RE;
   const match = MEDIA_POST_URL_RE.exec(url);
   if (null != match) {
     const tmp6 = _slicedToArray(match, 5);
-    return { guildId: tmp6[1], channelId: tmp6[3], messageId: tmp6[4], parentChannelId: tmp6[2], conversationId: "gap" };
+    return { guildId: tmp6[1], channelId: tmp6[3], messageId: tmp6[4], parentChannelId: tmp6[2], conversationId: "ind" };
   } else {
-    const CHANNEL_OR_MESSAGES_URL_WITH_QUERY_RE = tmp(5638).CHANNEL_OR_MESSAGES_URL_WITH_QUERY_RE;
+    const CHANNEL_OR_MESSAGES_URL_WITH_QUERY_RE = tmp(5654).CHANNEL_OR_MESSAGES_URL_WITH_QUERY_RE;
     const match1 = CHANNEL_OR_MESSAGES_URL_WITH_QUERY_RE.exec(url);
     if (null == match1) {
       return null;
@@ -42,4 +42,4 @@ export const parseChannelLinkUrl = function parseChannelLinkUrl(url) {
       return tmp4;
     }
   }
-};
+}

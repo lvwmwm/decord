@@ -1,17 +1,18 @@
-// Module ID: 19311
-// Function ID: 19312
+// Module ID: 19939
+// Function ID: 19940
 // Name: FormGuildGatingModeSelector
-// Dependencies: [19, 17, 21, 5003, 558, 576, 19312, 5941, 1128, 5266, 19314, 8583, 7083, 2]
+// Dependencies: [19, 17, 21, 5014, 575, 19940, 5959, 1113, 5624, 19942, 8652, 7125, 2]
+// Exports: default
 
-// Module 19311 (FormGuildGatingModeSelector)
+// Module 19939 (FormGuildGatingModeSelector)
 import react_native from "react-native" /* 17 */;
-import intl5 from "intl" /* 1128 */;
-import Text_Text from "Text/Text" /* 5266 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5941 */;
+import nativeDefault from "native" /* 575 */;
+import intl5 from "intl" /* 1113 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5959 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5003 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -19,178 +20,19 @@ let dependencyMap;
 let hasOwnProperty;
 let metroImportDefault;
 let metroRequire;
+let obj2;
+let obj3;
 const View = react_native.View;
 ({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: metroImportDefault } = Fragment);
-let closure_8 = createStyles.createStyles({ container: { padding: 16 }, space: { height: 8 }, alertHeader: { paddingBottom: 16 } });
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FormGuildGatingModeSelector(isFullServerGating) {
-  let alertHeader;
-  let items;
-  let tmp6;
-  let tmp = isFullServerGating;
-  let obj = isFullServerGating(576);
-  const cResult = obj.c(28);
-  isFullServerGating = isFullServerGating.isFullServerGating;
-  const onChange = isFullServerGating.onChange;
-  const tmp4 = closure_8();
-  dependencyMap = tmp4;
-  let obj2 = isFullServerGating(19312);
-  const roleSubscriptionSettingsDisabled = obj2.useRoleSubscriptionSettingsDisabled();
-  if (cResult[0] !== onChange) {
-    const fn = function l() {
-      onChange(false);
-    };
-    cResult[0] = onChange;
-    cResult[1] = fn;
-    tmp6 = fn;
-  } else {
-    tmp6 = cResult[1];
-  }
-  if (cResult[2] === isFullServerGating) {
-    if (cResult[3] === onChange) {
-      let tmp7;
-      let tmp8;
-      let tmp11;
-      let tmp10;
-      if (cResult[4] === tmp4.alertHeader) {
-        tmp7 = cResult[5];
-      }
-      const container = tmp4.container;
-      if (cResult[6] !== roleSubscriptionSettingsDisabled) {
-        let obj3 = { disabled: roleSubscriptionSettingsDisabled };
-        cResult[6] = roleSubscriptionSettingsDisabled;
-        cResult[7] = obj3;
-        tmp8 = obj3;
-      } else {
-        tmp8 = cResult[7];
-      }
-      const _Symbol = Symbol;
-      if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-        let intl = tmp(1128).intl;
-        const stringResult = intl.string(tmp(1128).t.rXqxhF);
-        let intl2 = tmp(1128).intl;
-        const stringResult1 = intl2.string(tmp(1128).t.yQiJne);
-        cResult[8] = stringResult;
-        cResult[9] = stringResult1;
-        tmp11 = stringResult1;
-        tmp10 = stringResult;
-      } else {
-        tmp10 = cResult[8];
-        tmp11 = cResult[9];
-      }
-      if (cResult[10] === tmp6) {
-        if (cResult[11] === roleSubscriptionSettingsDisabled) {
-          let tmp15;
-          let tmp20;
-          let tmp25;
-          let tmp24;
-          if (cResult[12] === !isFullServerGating) {
-            tmp15 = cResult[13];
-          }
-          if (cResult[14] !== tmp4.space) {
-            let obj4 = { style: tmp4.space };
-            const tmp23 = closure_5(View, obj4);
-            cResult[14] = tmp4.space;
-            cResult[15] = tmp23;
-            tmp20 = tmp23;
-          } else {
-            tmp20 = cResult[15];
-          }
-          const _Symbol2 = Symbol;
-          if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
-            let intl3 = tmp(1128).intl;
-            const stringResult2 = intl3.string(tmp(1128).t.WzC9s6);
-            const intl4 = tmp(1128).intl;
-            const stringResult3 = intl4.string(tmp(1128).t.WmagiB);
-            cResult[16] = stringResult2;
-            cResult[17] = stringResult3;
-            tmp25 = stringResult3;
-            tmp24 = stringResult2;
-          } else {
-            tmp24 = cResult[16];
-            tmp25 = cResult[17];
-          }
-          if (cResult[18] === tmp7) {
-            if (cResult[19] === isFullServerGating) {
-              let tmp28;
-              if (cResult[20] === roleSubscriptionSettingsDisabled) {
-                tmp28 = cResult[21];
-              }
-              if (cResult[22] === tmp4.container) {
-                if (cResult[23] === tmp28) {
-                  if (cResult[24] === tmp8) {
-                    if (cResult[25] === tmp15) {
-                      let tmp33;
-                      if (cResult[26] === tmp20) {
-                        tmp33 = cResult[27];
-                      }
-                      return tmp33;
-                    }
-                  }
-                }
-              }
-              const obj5 = { style: container, accessibilityRole: "radiogroup", accessibilityState: tmp8, children: items };
-              items = [tmp15, tmp20, tmp28];
-              const tmp36 = closure_7(View, obj5);
-              cResult[22] = tmp4.container;
-              cResult[23] = tmp28;
-              cResult[24] = tmp8;
-              cResult[25] = tmp15;
-              cResult[26] = tmp20;
-              cResult[27] = tmp36;
-              tmp33 = tmp36;
-            }
-          }
-          const obj6 = { icon: tmp(7083).KeyIcon, title: tmp24, description: tmp25, selected: isFullServerGating, onPress: tmp7, disabled: roleSubscriptionSettingsDisabled };
-          const tmp31 = onChange(19314);
-          const tmp32 = closure_5(tmp31, obj6);
-          cResult[18] = tmp7;
-          cResult[19] = isFullServerGating;
-          cResult[20] = roleSubscriptionSettingsDisabled;
-          cResult[21] = tmp32;
-          tmp28 = tmp32;
-        }
-      }
-      const obj7 = { icon: tmp(8583).TextIcon, title: tmp10, description: tmp11, selected: !isFullServerGating, onPress: tmp6, disabled: roleSubscriptionSettingsDisabled };
-      const tmp18 = onChange(19314);
-      const tmp19 = closure_5(tmp18, obj7);
-      cResult[10] = tmp6;
-      cResult[11] = roleSubscriptionSettingsDisabled;
-      cResult[12] = !isFullServerGating;
-      cResult[13] = tmp19;
-      tmp15 = tmp19;
-    }
-  }
-  const fn2 = function v() {
-    let intl;
-    let intl2;
-    let intl3;
-    let items;
-    let obj2;
-    const tmp = isFullServerGating;
-    if (!tmp) {
-      const obj = { confirmText: intl.string(intl5.t["NX+WJN"]), children: metroImportDefault(metroRequire, obj2) };
-      const show = actions_AlertActionCreatorsDefault.show;
-      actions_AlertActionCreatorsDefault;
-      intl = intl5.intl;
-      obj2 = { children: items };
-      const obj3 = { style: alertHeader.alertHeader, variant: "heading-lg/bold", color: "mobile-text-heading-primary", children: intl2.string(intl5.t.dmVoOz) };
-      const Text = Text_Text.Text;
-      intl2 = intl5.intl;
-      items = [hasOwnProperty(Text, obj3), ];
-      const obj4 = { variant: "text-md/normal", children: intl3.string(intl5.t.mtwzdD) };
-      const Text2 = Text_Text.Text;
-      intl3 = intl5.intl;
-      items[1] = hasOwnProperty(Text2, obj4);
-      show(obj);
-    }
-    onChange(true);
-  };
-  cResult[2] = isFullServerGating;
-  cResult[3] = onChange;
-  cResult[4] = tmp4.alertHeader;
-  cResult[5] = fn2;
-  tmp7 = fn2;
-}) : (function FormGuildGatingModeSelector(isFullServerGating) {
+let createStyles = createStyles_mod;
+let obj = { container: obj2, alertHeader: obj3 };
+obj2 = { padding: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_8 };
+createStyles = createStyles.createStyles;
+obj3 = { paddingBottom: nativeDefault.space.PX_16 };
+let closure_8 = createStyles(obj);
+const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/components/FormGuildGatingModeSelector.tsx");
+
+export default function FormGuildGatingModeSelector(isFullServerGating) {
   let alertHeader;
   let intl;
   let intl2;
@@ -201,7 +43,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FormGuildG
   const onChange = isFullServerGating.onChange;
   let tmp = closure_8();
   dependencyMap = tmp;
-  let obj = isFullServerGating(19312);
+  let obj = isFullServerGating(19940);
   const roleSubscriptionSettingsDisabled = obj.useRoleSubscriptionSettingsDisabled();
   let items = [onChange];
   const items1 = [onChange, isFullServerGating, tmp];
@@ -234,20 +76,15 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FormGuildG
     }
     onChange(true);
   }, items1);
-  let obj3 = { icon: isFullServerGating(8583).TextIcon, title: intl.string(isFullServerGating(1128).t.rXqxhF), description: intl2.string(isFullServerGating(1128).t.yQiJne), selected: !isFullServerGating, onPress: callback, disabled: roleSubscriptionSettingsDisabled };
-  const tmp5 = onChange(19314);
-  intl = isFullServerGating(1128).intl;
-  intl2 = isFullServerGating(1128).intl;
-  items2 = [closure_5(tmp5, obj3), , ];
-  let obj4 = { style: tmp.space };
-  items2[1] = closure_5(View, obj4);
-  const obj5 = { icon: isFullServerGating(7083).KeyIcon, title: intl3.string(isFullServerGating(1128).t.WzC9s6), description: intl4.string(isFullServerGating(1128).t.WmagiB), selected: isFullServerGating, onPress: callback1, disabled: roleSubscriptionSettingsDisabled };
-  const tmp6 = onChange(19314);
-  intl3 = isFullServerGating(1128).intl;
-  intl4 = isFullServerGating(1128).intl;
-  items2[2] = closure_5(tmp6, obj5);
+  let obj3 = { icon: isFullServerGating(8652).TextIcon, title: intl.string(isFullServerGating(1113).t.rXqxhF), description: intl2.string(isFullServerGating(1113).t.yQiJne), selected: !isFullServerGating, onPress: callback, disabled: roleSubscriptionSettingsDisabled };
+  const tmp5 = onChange(19942);
+  intl = isFullServerGating(1113).intl;
+  intl2 = isFullServerGating(1113).intl;
+  items2 = [closure_5(tmp5, obj3), ];
+  let obj4 = { icon: isFullServerGating(7125).KeyIcon, title: intl3.string(isFullServerGating(1113).t.WzC9s6), description: intl4.string(isFullServerGating(1113).t.WmagiB), selected: isFullServerGating, onPress: callback1, disabled: roleSubscriptionSettingsDisabled };
+  const tmp6 = onChange(19942);
+  intl3 = isFullServerGating(1113).intl;
+  intl4 = isFullServerGating(1113).intl;
+  items2[1] = closure_5(tmp6, obj4);
   return closure_7(View, obj2);
-});
-const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/components/FormGuildGatingModeSelector.tsx");
-
-export default tmp3;
+};

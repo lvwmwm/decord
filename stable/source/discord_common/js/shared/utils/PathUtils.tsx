@@ -1,10 +1,10 @@
-// Module ID: 1096
-// Function ID: 1097
+// Module ID: 1081
+// Function ID: 1082
 // Name: utils/PathUtils
 // Dependencies: [2]
 // Exports: getLoginPath, wrapPaths
 
-// Module 1096 (utils/PathUtils)
+// Module 1081 (utils/PathUtils)
 import size from "module_2" /* 2 */;
 
 let closure_0;
@@ -63,7 +63,7 @@ class UnescapedPathParam {
 const prototype = UnescapedPathParam.prototype;
 const result = size.fileFinishedImporting("../discord_common/js/shared/utils/PathUtils.tsx");
 
-export const getLoginPath = function getLoginPath(arg0, flag) {
+export function getLoginPath(arg0, flag) {
   if (flag === undefined) {
     flag = true;
   }
@@ -72,10 +72,10 @@ export const getLoginPath = function getLoginPath(arg0, flag) {
     str = "";
   }
   return getAuthenticationPath("login", arg0, flag, str);
-};
+}
 export { getAuthenticationPath };
 export { UnescapedPathParam };
-export const wrapPaths = function wrapPaths(freeze3Result, arg1) {
+export function wrapPaths(freeze3Result, arg1) {
   let closure_1 = arg1;
   const obj = {};
   function _loop() {
@@ -129,4 +129,4 @@ export const wrapPaths = function wrapPaths(freeze3Result, arg1) {
     continue;
   }
   return obj;
-};
+}

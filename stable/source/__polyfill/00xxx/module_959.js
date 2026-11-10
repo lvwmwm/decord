@@ -1,51 +1,34 @@
 // Module ID: 959
 // Function ID: 960
-// Dependencies: [949, 693, 905]
-// Exports: checkAndWarnIfIsEmbeddedBrowserExtension
+// Dependencies: [681]
+// Exports: setActiveSpanInBrowser
 
 // Module 959
-import _mod693 from "module_693" /* 693 */;
-import _mod905 from "module_905" /* 905 */;
-import _mod949 from "module_949" /* 949 */;
+import _mod681 from "module_681" /* 681 */;
 
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export const checkAndWarnIfIsEmbeddedBrowserExtension = function checkAndWarnIfIsEmbeddedBrowserExtension() {
-  let flag = false;
-  if (undefined !== _mod905.WINDOW.window) {
-    const WINDOW = tmp(905).WINDOW;
-    flag = false;
-    if (!WINDOW.nw) {
-      let id;
-      if ((WINDOW.chrome || WINDOW.browser) != null) {
-        const runtime = tmp3.runtime;
-        if (runtime != null) {
-          id = runtime.id;
+export function setActiveSpanInBrowser(end) {
+  let activeSpan;
+  let currentScope;
+  let obj = activeSpan(currentScope[0]);
+  activeSpan = obj.getActiveSpan();
+  if (activeSpan !== end) {
+    const tmpResult = activeSpan(currentScope[0]);
+    currentScope = tmpResult.getCurrentScope();
+    const _Proxy = Proxy;
+    const self = this;
+    const self2 = this;
+    const obj2 = {
+      apply(arg0, arg1, arg2) {
+          const obj = _mod681;
+          const result = obj._INTERNAL_setSpanForScope(currentScope, activeSpan);
+          return Reflect.apply(arg0, arg1, arg2);
         }
-      }
-      flag = false;
-      if (id) {
-        const tmpResult = _mod693;
-        const locationHref = tmpResult.getLocationHref();
-        let someResult = tmp(905).WINDOW === tmp(905).WINDOW.top;
-        if (someResult) {
-          const items = ["chrome-extension", "moz-extension", "ms-browser-extension", "safari-web-extension"];
-          someResult = items.some((item) => closure_0.startsWith("" + item + "://"));
-        }
-        flag = !someResult;
-      }
-    }
+    };
+    const proxy = new Proxy(end.end, obj2);
+    end.end = proxy;
+    const tmpResult2 = activeSpan(currentScope[0]);
+    let result = tmpResult2._INTERNAL_setSpanForScope(currentScope, end);
   }
-  let flag2 = flag;
-  if (flag2) {
-    flag2 = true;
-    if (_mod949.DEBUG_BUILD) {
-      const tmpResult2 = _mod693;
-      tmpResult2.consoleSandbox(() => {
-        console.error("[Sentry] You cannot use Sentry.init() in a browser extension, see: https://docs.sentry.io/platforms/javascript/best-practices/browser-extensions/");
-      });
-      flag2 = true;
-    }
-  }
-  return flag2;
-};
+}

@@ -1,14 +1,14 @@
-// Module ID: 2011
-// Function ID: 2012
+// Module ID: 2003
+// Function ID: 2004
 // Name: ZoomedInAnalyticBuilder
-// Dependencies: [1087, 1378, 2012, 2013, 2]
+// Dependencies: [1072, 1369, 2004, 2005, 2]
 // Exports: buildZoomedInAnalyticsEvent
 
-// Module 2011 (ZoomedInAnalyticBuilder)
-import Constants from "Constants" /* 1087 */;
-import ProcessUtilsDefault from "ProcessUtils" /* 1378 */;
-import GatewaySocketOpcode from "GatewaySocketOpcode" /* 2012 */;
-import RTCControlSocket from "RTCControlSocket" /* 2013 */;
+// Module 2003 (ZoomedInAnalyticBuilder)
+import Constants from "Constants" /* 1072 */;
+import ProcessUtilsDefault from "ProcessUtils" /* 1369 */;
+import GatewaySocketOpcode from "GatewaySocketOpcode" /* 2004 */;
+import RTCControlSocket from "RTCControlSocket" /* 2005 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;
@@ -531,7 +531,7 @@ let closure_5 = {
     let obj;
     data = data.data;
     if (null == data) {
-      obj = { message_identity: "unknown", socket_kind: "application" };
+      obj = { message_identity: "unknown", socket_kind: "applicationId" };
     } else {
       const url = data.url;
       let tmp58 = null;
@@ -805,7 +805,7 @@ let closure_5 = {
 };
 const result = size.fileFinishedImporting("modules/telemetry_ring/native/channels/ZoomedInAnalyticBuilder.tsx");
 
-export const buildZoomedInAnalyticsEvent = function buildZoomedInAnalyticsEvent(key) {
+export function buildZoomedInAnalyticsEvent(key) {
   const tmp = closure_4;
   if (key.key in closure_4) {
     const tmp6 = tmp[key.key](key);
@@ -829,4 +829,4 @@ export const buildZoomedInAnalyticsEvent = function buildZoomedInAnalyticsEvent(
       return null;
     }
   }
-};
+}

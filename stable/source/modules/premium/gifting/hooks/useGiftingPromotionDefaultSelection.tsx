@@ -1,15 +1,15 @@
-// Module ID: 13942
-// Function ID: 13943
+// Module ID: 14462
+// Function ID: 14463
 // Name: useGiftingPromotionDefaultSelection
 // Dependencies: [2]
 // Exports: useGiftingPromotionDefaultSelectionV2
 
-// Module 13942 (useGiftingPromotionDefaultSelection)
+// Module 14462 (useGiftingPromotionDefaultSelection)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/premium/gifting/hooks/useGiftingPromotionDefaultSelection.tsx");
 
-export const useGiftingPromotionDefaultSelectionV2 = function useGiftingPromotionDefaultSelectionV2(claimableRewards, selectedGiftingPromotionReward) {
+export function useGiftingPromotionDefaultSelectionV2(claimableRewards, selectedGiftingPromotionReward) {
   if (null != claimableRewards) {
     if (0 !== claimableRewards.length) {
       let first = selectedGiftingPromotionReward;
@@ -19,4 +19,4 @@ export const useGiftingPromotionDefaultSelectionV2 = function useGiftingPromotio
       return first;
     }
   }
-};
+}

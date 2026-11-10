@@ -1,11 +1,11 @@
-// Module ID: 3862
-// Function ID: 3863
-// Dependencies: [1132, 3863, 1167, 2]
+// Module ID: 3868
+// Function ID: 3869
+// Dependencies: [1117, 3869, 1152, 2]
 
-// Module 3862
-import AssetJsonUtils from "AssetJsonUtils" /* 1132 */;
-import AssetRegistry from "AssetRegistry" /* 3863 */;
-import module_1167_mod from "module_1167" /* 1167 */;
+// Module 3868
+import AssetJsonUtils from "AssetJsonUtils" /* 1117 */;
+import AssetRegistry from "AssetRegistry" /* 3869 */;
+import module_1152_mod from "module_1152" /* 1152 */;
 import size from "module_2" /* 2 */;
 
 let obj = {
@@ -15,10 +15,10 @@ let obj = {
     return jsonAsset.then((result) => ({ default: result }));
   }
 };
-let module_1167 = module_1167_mod;
-const loader = module_1167.createLoader(obj, "en-US");
-module_1167 = module_1167_mod;
-const messagesProxy = module_1167.makeMessagesProxy(loader);
+let module_1152 = module_1152_mod;
+const loader = module_1152.createLoader(obj, "en-US");
+module_1152 = module_1152_mod;
+const messagesProxy = module_1152.makeMessagesProxy(loader);
 const result = size.fileFinishedImporting("modules/conjure/intl/ConjureUntranslated.messages.js");
 
 export default messagesProxy;

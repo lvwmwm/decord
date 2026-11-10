@@ -1,22 +1,22 @@
-// Module ID: 8621
-// Function ID: 8622
+// Module ID: 8690
+// Function ID: 8691
 // Name: RowGeneratorUtils
-// Dependencies: [5004, 4855, 4877, 5008, 8166, 1087, 5003, 5000, 587, 7399, 6044, 1447, 1498, 2]
+// Dependencies: [5015, 4863, 4885, 5019, 8378, 1072, 5014, 5011, 575, 7441, 6063, 1439, 1490, 2]
 
-// Module 8621 (RowGeneratorUtils)
-import nativeDefault from "native" /* 587 */;
-import utils_ImageUtilsDefault from "utils/ImageUtils" /* 1498 */;
-import ColorUtils from "ColorUtils" /* 5000 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 6044 */;
-import GuildOfficialMessageUtils from "GuildOfficialMessageUtils" /* 7399 */;
-import RowGeneratorConstants from "RowGeneratorConstants" /* 8166 */;
-import AccessibilityStore from "AccessibilityStore" /* 5004 */;
-import ChannelStore from "ChannelStore" /* 4855 */;
-import GuildStore from "GuildStore" /* 4877 */;
-import MessageConstants from "MessageConstants" /* 5008 */;
-import Constants from "Constants" /* 1087 */;
-import createStyles_mod from "createStyles" /* 5003 */;
-import react_native from "react-native" /* 1447 */;
+// Module 8690 (RowGeneratorUtils)
+import nativeDefault from "native" /* 575 */;
+import utils_ImageUtilsDefault from "utils/ImageUtils" /* 1490 */;
+import ColorUtils from "ColorUtils" /* 5011 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 6063 */;
+import GuildOfficialMessageUtils from "GuildOfficialMessageUtils" /* 7441 */;
+import RowGeneratorConstants from "RowGeneratorConstants" /* 8378 */;
+import AccessibilityStore from "AccessibilityStore" /* 5015 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import GuildStore from "GuildStore" /* 4885 */;
+import MessageConstants from "MessageConstants" /* 5019 */;
+import Constants from "Constants" /* 1072 */;
+import createStyles_mod from "createStyles" /* 5014 */;
+import react_native from "react-native" /* 1439 */;
 import size from "module_2" /* 2 */;
 
 let c10;
@@ -36,7 +36,7 @@ let obj = { ephemeralBackgroundColor: nativeDefault.colors.INTERACTIVE_BACKGROUN
 const nativeStyleProperties = createStyles.createNativeStyleProperties(obj);
 const set = new Set(react_native.getConstants().supportedExtensions);
 const obj2 = {
-  getImageSrc(proxy_url, c7, c72, arg3) {
+  getImageSrc(proxy_url, width, height, arg3) {
     let hasItem = !proxy_url.endsWith(".webp");
     proxy_url.endsWith(".webp");
     if (hasItem) {
@@ -55,7 +55,7 @@ const obj2 = {
     if (flag) {
       str3 = "png";
     }
-    return getMobileOptimizedSrc(proxy_url, c7, c72, str3);
+    return getMobileOptimizedSrc(proxy_url, width, height, str3);
   },
   createBackgroundHighlight(message) {
     let isAutomodBlockedMessage;

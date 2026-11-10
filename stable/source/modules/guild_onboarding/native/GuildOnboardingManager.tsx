@@ -1,17 +1,17 @@
-// Module ID: 18854
-// Function ID: 18855
+// Module ID: 19474
+// Function ID: 19475
 // Name: GuildOnboardingManager
-// Dependencies: [4915, 4877, 5034, 1087, 4921, 7246, 7222, 1405, 2]
+// Dependencies: [4926, 4885, 5045, 1072, 4932, 7287, 7263, 1396, 2]
 
-// Module 18854 (GuildOnboardingManager)
-import Constants from "Constants" /* 1087 */;
-import FlagUtils from "FlagUtils" /* 1405 */;
-import GuildMemberConstants from "GuildMemberConstants" /* 4921 */;
-import doGuildOnboarding from "doGuildOnboarding" /* 7222 */;
-import GuildMemberStore from "GuildMemberStore" /* 4915 */;
-import GuildStore from "GuildStore" /* 4877 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5034 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7246 */;
+// Module 19474 (GuildOnboardingManager)
+import Constants from "Constants" /* 1072 */;
+import FlagUtils from "FlagUtils" /* 1396 */;
+import GuildMemberConstants from "GuildMemberConstants" /* 4932 */;
+import doGuildOnboarding from "doGuildOnboarding" /* 7263 */;
+import GuildMemberStore from "GuildMemberStore" /* 4926 */;
+import GuildStore from "GuildStore" /* 4885 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5045 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7287 */;
 import size from "module_2" /* 2 */;
 
 const doGuildOnboardingDefault = doGuildOnboarding;

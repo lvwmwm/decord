@@ -1,18 +1,18 @@
-// Module ID: 11408
-// Function ID: 11409
+// Module ID: 11710
+// Function ID: 11711
 // Name: VideoSpeakerStore
-// Dependencies: [6674, 502, 2014, 6717, 6804, 5664, 6677, 12, 504, 584, 2]
+// Dependencies: [6714, 502, 2006, 6756, 6843, 5681, 6717, 12, 504, 572, 2]
 
-// Module 11408 (VideoSpeakerStore)
+// Module 11710 (VideoSpeakerStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import CallConstants from "CallConstants" /* 5664 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 6677 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6674 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import CallConstants from "CallConstants" /* 5681 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 6717 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6714 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import MediaEngineStore from "MediaEngineStore" /* 2014 */;
-import SpeakingStore from "SpeakingStore" /* 6717 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6804 */;
+import MediaEngineStore from "MediaEngineStore" /* 2006 */;
+import SpeakingStore from "SpeakingStore" /* 6756 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6843 */;
 import module_12 from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 
@@ -152,9 +152,9 @@ class VideoSpeakerStoreClass extends Store {
     const items = [ChannelRTCStore, ApplicationStreamingStore];
     this.syncWith(items, handleChannelRTCUpdate);
   }
-  getSpeaker(arg0) {
-    if (React2 !== arg0) {
-      React2 = arg0;
+  getSpeaker(stateFromStores) {
+    if (React2 !== stateFromStores) {
+      React2 = stateFromStores;
       c3 = null;
       updateSpeaker(false);
     }

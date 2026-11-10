@@ -1,14 +1,14 @@
-// Module ID: 13644
-// Function ID: 13645
+// Module ID: 14279
+// Function ID: 14280
 // Name: create_guild/CreateGuildConstants
-// Dependencies: [1087, 1128, 4940, 1099, 2]
+// Dependencies: [1072, 1113, 4951, 1084, 2]
 // Exports: getGuildTemplatesMap
 
-// Module 13644 (create_guild/CreateGuildConstants)
-import BigFlagUtilsAll from "BigFlagUtils" /* 1099 */;
-import intl77 from "intl" /* 1128 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4940 */;
-import Constants from "Constants" /* 1087 */;
+// Module 14279 (create_guild/CreateGuildConstants)
+import BigFlagUtilsAll from "BigFlagUtils" /* 1084 */;
+import intl77 from "intl" /* 1113 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4951 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -18,7 +18,7 @@ const GuildTemplateId = { CREATE: "CREATE", GAMING: "GAMING", FRIENDS: "FRIENDS"
 const result = size.fileFinishedImporting("modules/create_guild/CreateGuildConstants.tsx");
 
 export { GuildTemplateId };
-export const getGuildTemplatesMap = function getGuildTemplatesMap() {
+export function getGuildTemplatesMap() {
   let intl;
   let intl10;
   let intl11;
@@ -347,4 +347,4 @@ export const getGuildTemplatesMap = function getGuildTemplatesMap() {
   obj[SCHOOL_CLUB] = obj65;
   obj80 = BigFlagUtilsAll;
   return obj;
-};
+}

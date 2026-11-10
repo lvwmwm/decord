@@ -1,25 +1,25 @@
-// Module ID: 1383
-// Function ID: 1384
+// Module ID: 1374
+// Function ID: 1375
 // Name: react-native
-// Dependencies: [1369, 2]
+// Dependencies: [1354, 2]
 // Exports: getBuildNumberLabel, getConstants
 
-// Module 1383 (react-native)
-import react_nativeDefault from "react-native" /* 1369 */;
+// Module 1374 (react-native)
+import react_nativeDefault from "react-native" /* 1354 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("utils/native/ClientInfoUtils.tsx");
 
-export const getConstants = function getConstants() {
+export function getConstants() {
   const obj = react_nativeDefault;
   return obj.getConstants();
-};
-export const getBuildNumberLabel = function getBuildNumberLabel() {
+}
+export function getBuildNumberLabel() {
   const items = ["0", "123456", "1234567890"];
-  let str = "35201700000000";
-  if (items.includes("35201700000000")) {
+  let str = "35301100000000";
+  if (items.includes("35301100000000")) {
     const _HermesInternal = HermesInternal;
-    str = "dev (" + "35201700000000" + ")";
+    str = "dev (" + "35301100000000" + ")";
   }
   return str;
-};
+}

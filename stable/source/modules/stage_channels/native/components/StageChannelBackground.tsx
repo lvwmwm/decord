@@ -1,44 +1,24 @@
-// Module ID: 11729
-// Function ID: 11730
+// Module ID: 12024
+// Function ID: 12025
 // Name: StageChannelBackground
-// Dependencies: [19, 17, 21, 5003, 587, 558, 576, 2]
+// Dependencies: [19, 17, 21, 5014, 575, 2]
+// Exports: default
 
-// Module 11729 (StageChannelBackground)
+// Module 12024 (StageChannelBackground)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
+import nativeDefault from "native" /* 575 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5003 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
-let obj2;
 const View = react_native.View;
 const jsx = Fragment.jsx;
-let obj = { container: obj2 };
-obj2 = { flex: 1, backgroundColor: nativeDefault.colors.BLACK };
-let closure_4 = createStyles.createStyles(obj);
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function StageChannelBackground(children) {
-  const obj = react2;
-  const cResult = obj.c(3);
-  children = children.children;
-  const tmp2 = closure_4();
-  if (cResult[0] === children) {
-    let tmp3;
-    if (cResult[1] === tmp2.container) {
-      tmp3 = cResult[2];
-    }
-    return tmp3;
-  }
-  const tmp4 = <View style={tmp2.container}>{children}</View>;
-  cResult[0] = children;
-  cResult[1] = tmp2.container;
-  cResult[2] = tmp4;
-  tmp3 = tmp4;
-}) : (function StageChannelBackground(children) {
-  return <View style={closure_4().container}>{arg0.children}</View>;
-});
+const obj = { container: { flex: 1, backgroundColor: nativeDefault.colors.BLACK } };
+({ flex: 1, backgroundColor: nativeDefault.colors.BLACK });
+let closure_2 = createStyles.createStyles(obj);
 const result = size.fileFinishedImporting("modules/stage_channels/native/components/StageChannelBackground.tsx");
 
-export default tmp3;
+export default function StageChannelBackground(children) {
+  return <View style={closure_2().container}>{arg0.children}</View>;
+};

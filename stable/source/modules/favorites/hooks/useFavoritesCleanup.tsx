@@ -1,18 +1,18 @@
-// Module ID: 17606
-// Function ID: 17607
+// Module ID: 18195
+// Function ID: 18196
 // Name: useFavoritesCleanup
-// Dependencies: [5, 32, 19, 4855, 4935, 6803, 4858, 17607, 504, 10889, 10876, 2]
+// Dependencies: [5, 32, 19, 4863, 4946, 6842, 4866, 18196, 504, 10844, 10831, 2]
 // Exports: default
 
-// Module 17606 (useFavoritesCleanup)
-import FavoritesCleanup from "FavoritesCleanup" /* 10889 */;
+// Module 18195 (useFavoritesCleanup)
+import FavoritesCleanup from "FavoritesCleanup" /* 10844 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4855 */;
-import PermissionStore from "PermissionStore" /* 4935 */;
-import ReadStateStore from "ReadStateStore" /* 6803 */;
-import FavoriteStore from "FavoriteStore" /* 4858 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import PermissionStore from "PermissionStore" /* 4946 */;
+import ReadStateStore from "ReadStateStore" /* 6842 */;
+import FavoriteStore from "FavoriteStore" /* 4866 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -51,7 +51,7 @@ export default function useFavoritesCleanup(arg0) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c3;
@@ -139,7 +139,7 @@ export default function useFavoritesCleanup(arg0) {
                 closure_129_4(false);
               }
               c5 = 3;
-              return { value: "IconComponent", done: "+352" };
+              return { value: "HermesInternal", done: null };
             }
             c3 = 0;
             closure_129_11.current = false;
@@ -148,7 +148,7 @@ export default function useFavoritesCleanup(arg0) {
             }
           }
           c5 = 3;
-          return { value: "IconComponent", done: "+352" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp66) {
           closure_2 = tmp66;
           if (0 === c3) {
@@ -180,7 +180,7 @@ export default function useFavoritesCleanup(arg0) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c3;
@@ -248,7 +248,7 @@ export default function useFavoritesCleanup(arg0) {
             }
           }
           c4 = 3;
-          return { value: "IconComponent", done: "+352" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp35) {
           closure_2 = tmp35;
           if (0 === c3) {

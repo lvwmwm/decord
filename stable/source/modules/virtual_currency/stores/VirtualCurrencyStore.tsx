@@ -1,11 +1,11 @@
-// Module ID: 9484
-// Function ID: 9485
+// Module ID: 9555
+// Function ID: 9556
 // Name: VirtualCurrencyStore
-// Dependencies: [504, 584, 2]
+// Dependencies: [504, 572, 2]
 
-// Module 9484 (VirtualCurrencyStore)
+// Module 9555 (VirtualCurrencyStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 
 const Store = get_initializedDefault.Store;

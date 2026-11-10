@@ -1,25 +1,25 @@
-// Module ID: 7443
-// Function ID: 7444
+// Module ID: 7485
+// Function ID: 7486
 // Name: ChannelActionCreators
-// Dependencies: [32, 5, 7444, 4859, 4855, 6803, 1087, 7445, 1297, 6864, 5183, 5739, 6666, 584, 6853, 1267, 1114, 5010, 1128, 7456, 5741, 6415, 2]
+// Dependencies: [32, 5, 7486, 4867, 4863, 6842, 1072, 7487, 1282, 6904, 5199, 5756, 6706, 572, 6893, 1252, 1099, 5021, 1113, 7498, 5758, 6455, 2]
 
-// Module 7443 (ChannelActionCreators)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import intl2 from "intl" /* 1128 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import HTTPUtils from "HTTPUtils" /* 1297 */;
-import ChannelRecord from "ChannelRecord" /* 4859 */;
-import shared from "shared" /* 5010 */;
-import RootNavigationRef from "RootNavigationRef" /* 5183 */;
-import preloadChannelDefault from "preloadChannel" /* 5741 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6666 */;
-import isChangelogChannelDefault from "isChangelogChannel" /* 6853 */;
+// Module 7485 (ChannelActionCreators)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import intl2 from "intl" /* 1113 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
+import ChannelRecord from "ChannelRecord" /* 4867 */;
+import shared from "shared" /* 5021 */;
+import RootNavigationRef from "RootNavigationRef" /* 5199 */;
+import preloadChannelDefault from "preloadChannel" /* 5758 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6706 */;
+import isChangelogChannelDefault from "isChangelogChannel" /* 6893 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChangelogStore from "ChangelogStore" /* 7444 */;
-import ChannelStore from "ChannelStore" /* 4855 */;
-import ReadStateStore from "ReadStateStore" /* 6803 */;
-import Constants from "Constants" /* 1087 */;
+import ChangelogStore from "ChangelogStore" /* 7486 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import ReadStateStore from "ReadStateStore" /* 6842 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 let _require, c0, c5, recipient_id;
@@ -30,7 +30,7 @@ let closure_12;
 let map1;
 let tmp5;
 let unpackModuleId;
-const transitionToChannel = tmp5(5739);
+const transitionToChannel = tmp5(5756);
 let closure_6 = ChannelRecord.createChannelRecordFromServer;
 ({ AnalyticEvents: c9, AbortCodes: c10, Endpoints: unpackModuleId, Routes: closure_12, ChannelTypes: map1 } = Constants);
 let obj = {
@@ -73,7 +73,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -199,7 +199,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c3;
@@ -300,7 +300,7 @@ let obj = {
         const tmp6 = require;
         if (null != obj2.getRootNavigationRef()) {
           const obj4 = { navigationReplace: flag2 };
-          const tmp6Result = tmp6(5739);
+          const tmp6Result = tmp6(5756);
           tmp6Result.transitionToChannel(channel.id, obj4);
           tmp3 = channel;
         } else {
@@ -350,7 +350,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -394,8 +394,8 @@ let obj = {
       }
     })();
   },
-  getDMChannel(id) {
-    let closure_0 = id;
+  getDMChannel(arr) {
+    let closure_0 = arr;
     return (async () => {
       let c3;
       let closure_0;
@@ -471,17 +471,17 @@ let obj = {
     if (flag3 == null) {
       flag3 = false;
     }
-    const obj2 = { type: "CHANNEL_DELETE", channel: { id, guild_id: "Array", parent_id: "ix" }, silent: flag2 };
+    const obj2 = { type: "CHANNEL_DELETE", channel: { id, guild_id: "Array", parent_id: "applicationId" }, silent: flag2 };
     const tmpResult2 = DispatcherDefault;
     tmpResult2.dispatch(obj2);
     if (flag) {
-      const obj5 = flag3(1114);
+      const obj5 = flag3(1099);
       obj5.transitionTo(constants2.FRIENDS);
     }
-    const HTTP = flag3(1297).HTTP;
+    const HTTP = flag3(1282).HTTP;
     const request = { url: closure_11.CHANNEL(id), query: { silent: flag2 }, oldFormErrors: true, rejectWithError: obj7.rejectWithMigratedError() };
     const del = HTTP.del;
-    obj7 = flag3(1297);
+    obj7 = flag3(1282);
     const delResult = del(request);
     const nextPromise = delResult.then(() => {
       const AccessibilityAnnouncer = shared.AccessibilityAnnouncer;
@@ -657,7 +657,7 @@ let obj = {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c3;
@@ -804,7 +804,7 @@ let obj = {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c3;
@@ -1011,7 +1011,7 @@ let obj = {
       let closure_1;
       closure_0 = tmp4;
       await self.fetchChannel(closure_0);
-      closure_0 = await "IconComponent";
+      closure_0 = await "HermesInternal";
       const tmp = closure_1_6(closure_0);
       const obj6 = { type: "CHANNEL_CREATE", channel: tmp };
       const obj = tmp(c2[13]);

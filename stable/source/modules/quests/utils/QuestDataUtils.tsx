@@ -1,20 +1,20 @@
-// Module ID: 7804
-// Function ID: 7805
+// Module ID: 7842
+// Function ID: 7843
 // Name: QuestDataUtils
-// Dependencies: [7805, 2068, 7807, 7808, 6742, 6745, 1405, 7814, 7806, 1257, 2]
+// Dependencies: [7843, 2062, 7845, 7846, 6781, 6784, 1396, 7852, 7844, 1242, 2]
 // Exports: captureQuestsException, earnedDecisionIsValid, findQuestOrReplacement, getAdContext, getAdDecisionData, getAdMetadataSealed, getAdProvenanceMetadataSealed, getAdTrafficMetadataSealed, getBountyByPlacementAndId, getIsQuestExpiredButWithinThirtyDayLookback, getQuestFormattedDate, getQuestPlacementFromQuestContent, hasUnclaimedReward, isBillableQuestContent, isBountyQuestHomePlacement, isDismissed, isDismissible
 
-// Module 7804 (QuestDataUtils)
-import SentryUtilsDefault from "SentryUtils" /* 1257 */;
-import FlagUtils from "FlagUtils" /* 1405 */;
-import QuestTypes from "QuestTypes" /* 6745 */;
-import AdDecisionUtils from "AdDecisionUtils" /* 7806 */;
-import QuestExpirationUtils from "QuestExpirationUtils" /* 7814 */;
-import AdDeliveryStore from "AdDeliveryStore" /* 7805 */;
-import LocaleStore from "LocaleStore" /* 2068 */;
-import BountyStore from "BountyStore" /* 7807 */;
-import QuestStore from "QuestStore" /* 7808 */;
-import QuestConstants from "QuestConstants" /* 6742 */;
+// Module 7842 (QuestDataUtils)
+import SentryUtilsDefault from "SentryUtils" /* 1242 */;
+import FlagUtils from "FlagUtils" /* 1396 */;
+import QuestTypes from "QuestTypes" /* 6784 */;
+import AdDecisionUtils from "AdDecisionUtils" /* 7844 */;
+import QuestExpirationUtils from "QuestExpirationUtils" /* 7852 */;
+import AdDeliveryStore from "AdDeliveryStore" /* 7843 */;
+import LocaleStore from "LocaleStore" /* 2062 */;
+import BountyStore from "BountyStore" /* 7845 */;
+import QuestStore from "QuestStore" /* 7846 */;
+import QuestConstants from "QuestConstants" /* 6781 */;
 import size from "module_2" /* 2 */;
 
 let map, map1;
@@ -87,7 +87,7 @@ const set = new Set(items);
 const result = size.fileFinishedImporting("modules/quests/utils/QuestDataUtils.tsx");
 
 export const THIRTY_DAYS_MS = 2592000000;
-export const earnedDecisionIsValid = function earnedDecisionIsValid(value) {
+export function earnedDecisionIsValid(value) {
   let tmp = null != value;
   if (tmp) {
     const _Date = Date;
@@ -95,8 +95,8 @@ export const earnedDecisionIsValid = function earnedDecisionIsValid(value) {
     tmp = sum >= Date.now();
   }
   return tmp;
-};
-export const findQuestOrReplacement = function findQuestOrReplacement(scrollToQuestId, quests, excludedQuests) {
+}
+export function findQuestOrReplacement(questId, quests, excludedQuests) {
   map = quests;
   if (Array.isArray(quests)) {
     const _Map = Map;
@@ -117,11 +117,11 @@ export const findQuestOrReplacement = function findQuestOrReplacement(scrollToQu
       return items;
     }));
   }
-  const value = map.get(scrollToQuestId);
+  const value = map.get(questId);
   if (null != value) {
     return value;
   } else {
-    const value3 = map1.get(scrollToQuestId);
+    const value3 = map1.get(questId);
     let replacementId;
     if (value3 != null) {
       replacementId = value3.replacementId;
@@ -132,12 +132,12 @@ export const findQuestOrReplacement = function findQuestOrReplacement(scrollToQu
     }
     return value4;
   }
-};
-export const isDismissible = function isDismissible(arg0) {
+}
+export function isDismissible(arg0) {
   const keys = Object.keys(metroImportDefault);
   return keys.includes(QuestTypes.QuestContent[arg0]);
-};
-export const isDismissed = function isDismissed(dismissedQuestContent, arg1) {
+}
+export function isDismissed(dismissedQuestContent, arg1) {
   const keys = Object.keys(metroImportDefault);
   const tmp = metroImportDefault;
   if (keys.includes(QuestTypes.QuestContent[arg1])) {
@@ -147,8 +147,8 @@ export const isDismissed = function isDismissed(dismissedQuestContent, arg1) {
   } else {
     return false;
   }
-};
-export const getIsQuestExpiredButWithinThirtyDayLookback = function getIsQuestExpiredButWithinThirtyDayLookback(quest) {
+}
+export function getIsQuestExpiredButWithinThirtyDayLookback(quest) {
   obj = QuestExpirationUtils;
   if (obj.isQuestExpired(quest)) {
     const _Date = Date;
@@ -162,11 +162,11 @@ export const getIsQuestExpiredButWithinThirtyDayLookback = function getIsQuestEx
   } else {
     return false;
   }
-};
-export const hasUnclaimedReward = function hasUnclaimedReward(userStatus) {
+}
+export function hasUnclaimedReward(userStatus) {
   return null != userStatus && null != userStatus.completedAt && null == userStatus.claimedAt;
-};
-export const getQuestFormattedDate = function getQuestFormattedDate(expiresAtPremium) {
+}
+export function getQuestFormattedDate(expiresAtPremium) {
   obj = arg1;
   if (arg1 === undefined) {
     obj = { dateStyle: "short" };
@@ -180,11 +180,11 @@ export const getQuestFormattedDate = function getQuestFormattedDate(expiresAtPre
     str = date.toLocaleDateString(LocaleStore.locale, obj);
   }
   return str;
-};
-export const getQuestPlacementFromQuestContent = function getQuestPlacementFromQuestContent(questContent) {
+}
+export function getQuestPlacementFromQuestContent(questContent) {
   return obj[questContent];
-};
-export const isBillableQuestContent = function isBillableQuestContent(questContent, adCreativeType) {
+}
+export function isBillableQuestContent(questContent, adCreativeType) {
   if (null != adCreativeType) {
     if (set2.has(adCreativeType)) {
       return false;
@@ -192,11 +192,11 @@ export const isBillableQuestContent = function isBillableQuestContent(questConte
   }
   const hasItem = null != tmp2 && metroImportAll.has(tmp2);
   return hasItem;
-};
-export const isBountyQuestHomePlacement = function isBountyQuestHomePlacement(arg0) {
+}
+export function isBountyQuestHomePlacement(arg0) {
   return set.has(arg0);
-};
-export const getBountyByPlacementAndId = function getBountyByPlacementAndId(questPlacementFromQuestContent, bountyId) {
+}
+export function getBountyByPlacementAndId(questPlacementFromQuestContent, bountyId) {
   if (set.has(questPlacementFromQuestContent)) {
     const adDecisionByPlacementAndAdCreativeId = BountyStore.getAdDecisionByPlacementAndAdCreativeId(questPlacementFromQuestContent, bountyId);
     let creative;
@@ -233,8 +233,8 @@ export const getBountyByPlacementAndId = function getBountyByPlacementAndId(ques
     }
   }
   return tmp13;
-};
-export const getAdDecisionData = function getAdDecisionData(adContentId, questContent) {
+}
+export function getAdDecisionData(adContentId, questContent) {
   if (null == obj[questContent]) {
     return authStore;
   } else {
@@ -257,8 +257,8 @@ export const getAdDecisionData = function getAdDecisionData(adContentId, questCo
     }
     return tmp6;
   }
-};
-export const getAdMetadataSealed = function getAdMetadataSealed(sourceQuestContent, adCreativeId) {
+}
+export function getAdMetadataSealed(sourceQuestContent, adCreativeId) {
   if (null != obj[sourceQuestContent]) {
     const tmp4 = getQuestDeliveryDataForPlacement(obj[sourceQuestContent], adCreativeId);
     let metadataSealed;
@@ -267,8 +267,8 @@ export const getAdMetadataSealed = function getAdMetadataSealed(sourceQuestConte
     }
     return metadataSealed;
   }
-};
-export const getAdProvenanceMetadataSealed = function getAdProvenanceMetadataSealed(sourceQuestContent, item) {
+}
+export function getAdProvenanceMetadataSealed(sourceQuestContent, item) {
   if (null != obj[sourceQuestContent]) {
     const tmp4 = getQuestDeliveryDataForPlacement(obj[sourceQuestContent], item);
     let prop;
@@ -277,8 +277,8 @@ export const getAdProvenanceMetadataSealed = function getAdProvenanceMetadataSea
     }
     return prop;
   }
-};
-export const getAdTrafficMetadataSealed = function getAdTrafficMetadataSealed(sourceQuestContent, adCreativeId, adContentId) {
+}
+export function getAdTrafficMetadataSealed(sourceQuestContent, adCreativeId, adContentId) {
   if (null != obj[sourceQuestContent]) {
     obj = getQuestDeliveryDataForPlacement(tmp, adContentId);
     if (obj == null) {
@@ -297,8 +297,8 @@ export const getAdTrafficMetadataSealed = function getAdTrafficMetadataSealed(so
     }
     return prop;
   }
-};
-export const getAdContext = function getAdContext(sourceQuestContent, item) {
+}
+export function getAdContext(sourceQuestContent, item) {
   if (null != obj[sourceQuestContent]) {
     const tmp4 = getQuestDeliveryDataForPlacement(obj[sourceQuestContent], item);
     let adContext;
@@ -307,8 +307,8 @@ export const getAdContext = function getAdContext(sourceQuestContent, item) {
     }
     return adContext;
   }
-};
-export const captureQuestsException = function captureQuestsException(error, tags) {
+}
+export function captureQuestsException(error, tags) {
   let obj2;
   obj = { tags: obj2 };
   const captureException = SentryUtilsDefault.captureException;
@@ -321,4 +321,4 @@ export const captureQuestsException = function captureQuestsException(error, tag
   obj2 = { app_context: "quests" };
   const merged1 = Object.assign(tags);
   captureException(error, obj);
-};
+}

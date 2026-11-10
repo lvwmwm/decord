@@ -1,15 +1,15 @@
-// Module ID: 13075
-// Function ID: 13076
+// Module ID: 13709
+// Function ID: 13710
 // Name: nativeAppMessageEmbedUtil
-// Dependencies: [5000, 587, 8646, 8647, 1417, 2]
+// Dependencies: [5011, 575, 8715, 8716, 1409, 2]
 // Exports: getAppGradientColors, getAppIconSrc
 
-// Module 13075 (nativeAppMessageEmbedUtil)
-import nativeDefault from "native" /* 587 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
-import useAvatarColor from "useAvatarColor" /* 8646 */;
-import useHeroColors from "useHeroColors" /* 8647 */;
-import ColorUtils_mod from "ColorUtils" /* 5000 */;
+// Module 13709 (nativeAppMessageEmbedUtil)
+import nativeDefault from "native" /* 575 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1409 */;
+import useAvatarColor from "useAvatarColor" /* 8715 */;
+import useHeroColors from "useHeroColors" /* 8716 */;
+import ColorUtils_mod from "ColorUtils" /* 5011 */;
 import size from "module_2" /* 2 */;
 
 let c3 = "#000000";
@@ -19,7 +19,7 @@ ColorUtils = ColorUtils_mod;
 items[1] = ColorUtils.hexToRgba(nativeDefault.unsafe_rawColors.PRIMARY_760);
 const result = size.fileFinishedImporting("modules/applications/message_embed/native/utils/nativeAppMessageEmbedUtil.tsx");
 
-export const getAppGradientColors = function getAppGradientColors(appIconSrc) {
+export function getAppGradientColors(appIconSrc) {
   let primaryColor;
   let secondaryColor;
   if (null == appIconSrc) {
@@ -47,8 +47,8 @@ export const getAppGradientColors = function getAppGradientColors(appIconSrc) {
       return items;
     }
   }
-};
-export const getAppIconSrc = function getAppIconSrc(id, icon, bot) {
+}
+export function getAppIconSrc(id, icon, bot) {
   const obj = AvatarUtilsDefault;
   const obj2 = { id, icon, bot, fallbackAvatar: false };
   let applicationIconURL = obj.getApplicationIconURL(obj2);
@@ -56,4 +56,4 @@ export const getAppIconSrc = function getAppIconSrc(id, icon, bot) {
     applicationIconURL = null;
   }
   return applicationIconURL;
-};
+}

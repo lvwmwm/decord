@@ -1,41 +1,25 @@
-// Module ID: 8119
-// Function ID: 8120
+// Module ID: 8156
+// Function ID: 8157
 // Name: AgeVerificationExpressiveModalEverywhereExperiment
-// Dependencies: [1455, 558, 576, 2]
-// Exports: isAgeVerificationExpressiveModalEverywhereEnabled
+// Dependencies: [1447, 2]
+// Exports: isAgeVerificationExpressiveModalEverywhereEnabled, useIsAgeVerificationExpressiveModalEverywhereEnabled
 
-// Module 8119 (AgeVerificationExpressiveModalEverywhereExperiment)
-import react from "react" /* 576 */;
-import ApexExperiment from "ApexExperiment" /* 1455 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 8156 (AgeVerificationExpressiveModalEverywhereExperiment)
+import ApexExperiment from "ApexExperiment" /* 1447 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
 let obj = { kind: "user", name: "2025-11-age-verification-expressive-everywhere", defaultConfig: { enabled: false }, variations: obj2 };
 obj2 = { 1: null };
 obj2[1] = { enabled: true };
-let closure_2 = ApexExperiment.createApexExperiment(obj);
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsAgeVerificationExpressiveModalEverywhereEnabled(location) {
-  let tmp2;
-  const obj = react;
-  const cResult = obj.c(2);
-  if (cResult[0] !== location) {
-    const obj2 = { location };
-    cResult[0] = location;
-    cResult[1] = obj2;
-    tmp2 = obj2;
-  } else {
-    tmp2 = cResult[1];
-  }
-  return closure_2.useConfig(tmp2).enabled;
-}) : (function useIsAgeVerificationExpressiveModalEverywhereEnabled(location) {
-  const obj = { location };
-  return closure_2.useConfig(obj).enabled;
-});
+let closure_0 = ApexExperiment.createApexExperiment(obj);
 const result = size.fileFinishedImporting("modules/age_assurance/AgeVerificationExpressiveModalEverywhereExperiment.tsx");
 
-export const useIsAgeVerificationExpressiveModalEverywhereEnabled = tmp2;
-export const isAgeVerificationExpressiveModalEverywhereEnabled = function isAgeVerificationExpressiveModalEverywhereEnabled(entryPoint) {
+export function useIsAgeVerificationExpressiveModalEverywhereEnabled(location) {
+  const obj = { location };
+  return closure_0.useConfig(obj).enabled;
+}
+export function isAgeVerificationExpressiveModalEverywhereEnabled(entryPoint) {
   const obj = { location: entryPoint };
-  return closure_2.getConfig(obj).enabled;
-};
+  return closure_0.getConfig(obj).enabled;
+}

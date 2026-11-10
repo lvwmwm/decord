@@ -1,17 +1,17 @@
-// Module ID: 11448
-// Function ID: 11449
+// Module ID: 11749
+// Function ID: 11750
 // Name: showActivitiesInvalidPermissionsAlert
-// Dependencies: [5940, 1128, 2]
+// Dependencies: [5958, 1113, 2]
 // Exports: showActivitiesInvalidPermissionsAlert
 
-// Module 11448 (showActivitiesInvalidPermissionsAlert)
-import intl3 from "intl" /* 1128 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5940 */;
+// Module 11749 (showActivitiesInvalidPermissionsAlert)
+import intl3 from "intl" /* 1113 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5958 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/voice_calls/showActivitiesInvalidPermissionsAlert.tsx");
 
-export const showActivitiesInvalidPermissionsAlert = function showActivitiesInvalidPermissionsAlert() {
+export function showActivitiesInvalidPermissionsAlert() {
   let intl;
   let intl2;
   const obj = { title: intl.string(intl3.t.otsg2R), body: intl2.string(intl3.t["/Yx5qX"]), hideActionSheet: false };
@@ -20,4 +20,4 @@ export const showActivitiesInvalidPermissionsAlert = function showActivitiesInva
   intl = intl3.intl;
   intl2 = intl3.intl;
   show(obj);
-};
+}

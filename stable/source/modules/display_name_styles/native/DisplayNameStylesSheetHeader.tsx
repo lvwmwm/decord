@@ -1,141 +1,65 @@
-// Module ID: 16733
-// Function ID: 16734
+// Module ID: 17328
+// Function ID: 17329
 // Name: DisplayNameStylesSheetHeader
-// Dependencies: [109, 19, 17, 21, 5003, 587, 558, 576, 7280, 2]
+// Dependencies: [19, 17, 21, 5014, 575, 5624, 2]
+// Exports: default
 
-// Module 16733 (DisplayNameStylesSheetHeader)
+// Module 17328 (DisplayNameStylesSheetHeader)
 import react_native from "react-native" /* 17 */;
-import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 587 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7280 */;
-import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
+import nativeDefault from "native" /* 575 */;
+import Text_Text from "Text/Text" /* 5624 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5003 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
-const require = globalThis.__r;
-let _require;
-
+let c3;
+let closure_4;
 let obj2;
-let closure_2 = ["leading", "trailing"];
+let obj3;
+let obj4;
+let obj5;
+let obj6;
 const View = react_native.View;
-const jsx = Fragment.jsx;
-let obj = { trailingButtonClearance: obj2, centeredAccessory: { justifyContent: "center", alignItems: "center" } };
-obj2 = { paddingTop: nativeDefault.space.PX_8 };
-let closure_6 = createStyles.createStyles(obj);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNameStylesSheetHeader(arg0) {
-  let centeredAccessory;
-  let leading;
-  let tmp11;
-  let tmp4;
-  let tmp5;
-  let tmp6;
-  let trailing;
-  let tmp = _require;
-  const obj = require("react");
-  const cResult = obj.c(19);
-  if (cResult[0] !== arg0) {
-    ({ leading, trailing } = arg0);
-    const tmp9 = _objectWithoutProperties(arg0, closure_2);
-    cResult[0] = arg0;
-    cResult[1] = leading;
-    cResult[2] = tmp9;
-    cResult[3] = trailing;
-    tmp6 = trailing;
-    tmp5 = tmp9;
-    tmp4 = leading;
-  } else {
-    tmp4 = cResult[1];
-    tmp5 = cResult[2];
-    tmp6 = cResult[3];
-  }
-  const tmp10 = closure_6();
-  _require = tmp10;
-  if (cResult[4] !== tmp10.centeredAccessory) {
-    function centerAccessory(children) {
-      let tmp = children;
-      if (null != children) {
-        tmp = <View style={centeredAccessory.centeredAccessory}>{arg0}</View>;
-      }
-      return tmp;
-    }
-    cResult[4] = tmp10.centeredAccessory;
-    cResult[5] = centerAccessory;
-    tmp11 = centerAccessory;
-  } else {
-    tmp11 = cResult[5];
-  }
-  if (cResult[6] === tmp11) {
-    let tmp13;
-    if (cResult[7] === tmp4) {
-      tmp13 = cResult[8];
-    }
-    if (cResult[9] === tmp11) {
-      let tmp15;
-      if (cResult[10] === tmp6) {
-        tmp15 = cResult[11];
-      }
-      if (cResult[12] === tmp5) {
-        if (cResult[13] === tmp13) {
-          let tmp17;
-          if (cResult[14] === tmp15) {
-            tmp17 = cResult[15];
-          }
-          if (cResult[16] === tmp10.trailingButtonClearance) {
-            let tmp23;
-            if (cResult[17] === tmp17) {
-              tmp23 = cResult[18];
-            }
-            return tmp23;
-          }
-          const tmp26 = <View style={tmp12}>{tmp17}</View>;
-          cResult[16] = tmp10.trailingButtonClearance;
-          cResult[17] = tmp17;
-          cResult[18] = tmp26;
-          tmp23 = tmp26;
-        }
-      }
-      const BottomSheetTitleHeader = tmp(7280).BottomSheetTitleHeader;
-      const merged = Object.assign(tmp5);
-      const tmp22 = <BottomSheetTitleHeader leading={tmp13} trailing={tmp15} />;
-      cResult[12] = tmp5;
-      cResult[13] = tmp13;
-      cResult[14] = tmp15;
-      cResult[15] = tmp22;
-      tmp17 = tmp22;
-    }
-    const tmp11Result = tmp11(tmp6);
-    cResult[9] = tmp11;
-    cResult[10] = tmp6;
-    cResult[11] = tmp11Result;
-    tmp15 = tmp11Result;
-  }
-  const tmp11Result2 = tmp11(tmp4);
-  cResult[6] = tmp11;
-  cResult[7] = tmp4;
-  cResult[8] = tmp11Result2;
-  tmp13 = tmp11Result2;
-}) : (function DisplayNameStylesSheetHeader(arg0) {
-  let leading;
-  let trailing;
-  ({ leading, trailing } = arg0);
-  const merged = Object.assign(arg0, Object.assign({ leading: 0, trailing: 0 }));
-  const tmp2 = closure_6();
-  const BottomSheetTitleHeader = BottomSheetTitleHeader2.BottomSheetTitleHeader;
-  const merged1 = Object.assign(merged);
-  let tmp3Result = leading;
-  if (null != leading) {
-    const obj3 = { style: tmp2.centeredAccessory, children: leading };
-    tmp3Result = tmp3(tmp4, obj3);
-  }
-  let tmp3Result2 = trailing;
-  if (null != trailing) {
-    const obj4 = { style: tmp2.centeredAccessory, children: trailing };
-    tmp3Result2 = tmp3(tmp4, obj4);
-  }
-  return <View style={tmp2.trailingButtonClearance}>{null}</View>;
-});
+({ jsx: c3, jsxs: closure_4 } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { header: obj2, row: obj3, title: obj4, titleText: { textAlign: "center" }, leading: obj5, trailing: obj6 };
+obj2 = { paddingTop: nativeDefault.space.PX_6, paddingBottom: nativeDefault.space.PX_12 };
+createStyles = createStyles.createStyles;
+obj3 = { minHeight: nativeDefault.space.PX_32, justifyContent: "center" };
+obj4 = { paddingHorizontal: nativeDefault.space.PX_80, alignItems: "center" };
+obj5 = { position: "absolute", left: nativeDefault.space.PX_16 };
+obj6 = { position: "absolute", right: nativeDefault.space.PX_16, minWidth: nativeDefault.space.PX_64 };
+let closure_5 = createStyles(obj);
 const result = size.fileFinishedImporting("modules/display_name_styles/native/DisplayNameStylesSheetHeader.tsx");
 
-export default tmp3;
+export default function DisplayNameStylesSheetHeader(title) {
+  let items;
+  let leading;
+  let obj2;
+  let obj4;
+  let tmp4;
+  let trailing;
+  ({ leading, trailing } = title);
+  title = title.title;
+  const tmp = closure_5();
+  const obj = { style: tmp.header, children: tmp4(View, obj2) };
+  obj2 = { style: tmp.row, children: items };
+  const obj3 = { style: tmp.title, children: _false(Text_Text.Heading, obj4) };
+  obj4 = { variant: "redesign/heading-18/bold", color: "text-default", style: tmp.titleText, children: title };
+  items = [_false(View, obj3), , ];
+  let tmp2Result = null != leading;
+  tmp4 = React3;
+  if (tmp2Result) {
+    const obj5 = { style: tmp.leading, children: leading };
+    tmp2Result = tmp2(tmp3, obj5);
+  }
+  items[1] = tmp2Result;
+  let tmp2Result2 = null != trailing;
+  if (tmp2Result2) {
+    const obj6 = { style: tmp.trailing, children: trailing };
+    tmp2Result2 = tmp2(tmp3, obj6);
+  }
+  items[2] = tmp2Result2;
+  return _false(View, obj);
+};

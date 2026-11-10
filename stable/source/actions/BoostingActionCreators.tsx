@@ -1,17 +1,17 @@
-// Module ID: 8400
-// Function ID: 8401
+// Module ID: 8465
+// Function ID: 8466
 // Name: actions/BoostingActionCreators
-// Dependencies: [5, 8401, 8402, 2058, 1087, 1297, 584, 6406, 2]
+// Dependencies: [5, 8466, 8467, 2052, 1072, 1282, 572, 6446, 2]
 // Exports: applyToGuild, cancelGuildBoostSlot, fetchAppliedBoostsCooldown, fetchAppliedGuildBoostsForGuild, fetchAppliedGuildBoostsForUser, unapplyFromGuild, uncancelGuildBoostSlot
 
-// Module 8400 (actions/BoostingActionCreators)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1087 */;
-import HTTPUtils from "HTTPUtils" /* 1297 */;
+// Module 8465 (actions/BoostingActionCreators)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import Constants from "Constants" /* 1072 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import AppliedGuildBoostRecord from "AppliedGuildBoostRecord" /* 8401 */;
-import GuildBoostSlotRecord from "GuildBoostSlotRecord" /* 8402 */;
-import SubscriptionStore from "SubscriptionStore" /* 2058 */;
+import AppliedGuildBoostRecord from "AppliedGuildBoostRecord" /* 8466 */;
+import GuildBoostSlotRecord from "GuildBoostSlotRecord" /* 8467 */;
+import SubscriptionStore from "SubscriptionStore" /* 2052 */;
 import size from "module_2" /* 2 */;
 
 let boostId, closure_3, closure_4, closure_5;
@@ -32,7 +32,7 @@ let obj = function _fetchAppliedGuildBoostsForGuild() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -57,7 +57,7 @@ let obj = function _fetchAppliedGuildBoostsForGuild() {
               tmp = undefined;
               c4 = 1;
               c5 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "flexDirection", done: true };
             }
           } else if (1 === c4) {
             if (arg0 === 1) {
@@ -121,7 +121,7 @@ obj = function _fetchAppliedGuildBoostsForUser() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -145,7 +145,7 @@ obj = function _fetchAppliedGuildBoostsForUser() {
             tmp = undefined;
             c3 = 1;
             c4 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "flexDirection", done: true };
           }
         } else if (1 === c3) {
           if (arg0 === 1) {
@@ -228,7 +228,7 @@ obj = function _fetchAppliedBoostsCooldown() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -322,7 +322,7 @@ obj = function _applyToGuild() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -351,7 +351,7 @@ obj = function _applyToGuild() {
               appliedGuildBoostError = undefined;
               c7 = 1;
               c8 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "flexDirection", done: true };
             }
           } else if (1 === c7) {
             if (arg0 === 1) {
@@ -441,7 +441,7 @@ obj = function _unapplyFromGuild() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -495,7 +495,7 @@ obj = function _unapplyFromGuild() {
             obj = closure_131_1(closure_131_2[6]);
             obj.dispatch(obj10);
             c7 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp28) {
           closure_4 = tmp28;
@@ -524,8 +524,8 @@ obj = function _cancelGuildBoostSlot() {
     closure_0 = await post(obj4);
     const tmp4 = closure_130_5.createFromServer(closure_0.body, closure_130_6.getSubscriptionById(closure_0.body.subscription_id));
     const obj8 = { type: "GUILD_BOOST_SLOT_UPDATE_SUCCESS", guildBoostSlot: tmp4 };
-    const obj6 = closure_130_1(closure_130_2[6]);
-    obj6.dispatch(obj8);
+    const obj7 = closure_130_1(closure_130_2[6]);
+    obj7.dispatch(obj8);
     return tmp4;
   });
   return obj(...arguments);
@@ -543,8 +543,8 @@ obj = function _uncancelGuildBoostSlot() {
     closure_0 = await post(obj4);
     const tmp4 = closure_130_5.createFromServer(closure_0.body, closure_130_6.getSubscriptionById(closure_0.body.subscription_id));
     const obj8 = { type: "GUILD_BOOST_SLOT_UPDATE_SUCCESS", guildBoostSlot: tmp4 };
-    const obj6 = closure_130_1(closure_130_2[6]);
-    obj6.dispatch(obj8);
+    const obj7 = closure_130_1(closure_130_2[6]);
+    obj7.dispatch(obj8);
     return tmp4;
   });
   return obj(...arguments);
@@ -552,25 +552,25 @@ obj = function _uncancelGuildBoostSlot() {
 const Endpoints = Constants.Endpoints;
 const result = size.fileFinishedImporting("actions/BoostingActionCreators.tsx");
 
-export const fetchAppliedGuildBoostsForGuild = function fetchAppliedGuildBoostsForGuild() {
+export function fetchAppliedGuildBoostsForGuild() {
   return obj(...arguments);
-};
-export const fetchAppliedGuildBoostsForUser = function fetchAppliedGuildBoostsForUser() {
+}
+export function fetchAppliedGuildBoostsForUser() {
   return obj(...arguments);
-};
+}
 export { fetchGuildBoostSlots };
-export const fetchAppliedBoostsCooldown = function fetchAppliedBoostsCooldown() {
+export function fetchAppliedBoostsCooldown() {
   return obj(...arguments);
-};
-export const applyToGuild = function applyToGuild() {
+}
+export function applyToGuild() {
   return obj(...arguments);
-};
-export const unapplyFromGuild = function unapplyFromGuild() {
+}
+export function unapplyFromGuild() {
   return obj(...arguments);
-};
-export const cancelGuildBoostSlot = function cancelGuildBoostSlot() {
+}
+export function cancelGuildBoostSlot() {
   return obj(...arguments);
-};
-export const uncancelGuildBoostSlot = function uncancelGuildBoostSlot() {
+}
+export function uncancelGuildBoostSlot() {
   return obj(...arguments);
-};
+}

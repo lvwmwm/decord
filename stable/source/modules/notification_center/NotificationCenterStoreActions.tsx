@@ -1,25 +1,25 @@
-// Module ID: 17899
-// Function ID: 17900
+// Module ID: 18485
+// Function ID: 18486
 // Name: NotificationCenterStoreActions
-// Dependencies: [584, 2]
+// Dependencies: [572, 2]
 // Exports: clearNotificationGuildMentions, refreshNotifications, setTab
 
-// Module 17899 (NotificationCenterStoreActions)
-import DispatcherDefault from "Dispatcher" /* 584 */;
+// Module 18485 (NotificationCenterStoreActions)
+import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/notification_center/NotificationCenterStoreActions.tsx");
 
-export const setTab = function setTab(dependencyMap) {
+export function setTab(dependencyMap) {
   const obj = DispatcherDefault;
   const obj2 = { type: "NOTIFICATION_CENTER_SET_TAB", tab: dependencyMap };
   obj.dispatch(obj2);
-};
-export const clearNotificationGuildMentions = function clearNotificationGuildMentions() {
+}
+export function clearNotificationGuildMentions() {
   const obj = DispatcherDefault;
   obj.dispatch({ type: "NOTIFICATION_CENTER_CLEAR_GUILD_MENTIONS" });
-};
-export const refreshNotifications = function refreshNotifications() {
+}
+export function refreshNotifications() {
   const obj = DispatcherDefault;
   obj.dispatch({ type: "NOTIFICATION_CENTER_REFRESH" });
-};
+}

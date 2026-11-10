@@ -1,34 +1,34 @@
-// Module ID: 19041
-// Function ID: 19042
+// Module ID: 19669
+// Function ID: 19670
 // Name: GuildSettingsAutomodRuleStore
-// Dependencies: [5, 1087, 1128, 1269, 12, 1388, 1274, 19042, 19047, 19043, 8300, 19040, 12849, 6406, 4918, 2]
+// Dependencies: [5, 1072, 1113, 1254, 12, 1379, 1259, 19670, 19675, 19671, 8387, 19668, 13297, 6446, 4929, 2]
 // Exports: useAutomodEditingRuleActions, useAutomodEditingRuleState
 
-// Module 19041 (GuildSettingsAutomodRuleStore)
-import Constants from "Constants" /* 1087 */;
-import react_native from "react-native" /* 1274 */;
-import _slicedToArray from "_slicedToArray" /* 4918 */;
+// Module 19669 (GuildSettingsAutomodRuleStore)
+import Constants from "Constants" /* 1072 */;
+import react_native from "react-native" /* 1259 */;
+import _slicedToArray from "_slicedToArray" /* 4929 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import module_1269 from "module_1269" /* 1269 */;
+import module_1254 from "module_1254" /* 1254 */;
 import size from "module_2" /* 2 */;
 
 let c10, c9, closure_7;
 
 const AbortCodes = Constants.AbortCodes;
 let closure_5 = Object.freeze({ editingRule: null, hasChanges: false, isLoading: false, errorMessage: null });
-let closure_6 = module_1269.createWithEqualityFn((arg0, arg1) => {
+let closure_6 = module_1254.createWithEqualityFn((arg0, arg1) => {
   let closure_0 = arg0;
   let closure_1 = arg1;
   let obj = {
     editingRule: null,
     hasChanges: false,
-    setEditingRule(guildId) {
+    setEditingRule(id) {
       let actions;
       let obj2;
       const editingRule = obj2().editingRule;
-      const hasChanges = null != guildId && null != editingRule && guildId.id === editingRule.id;
+      const hasChanges = null != id && null != editingRule && id.id === editingRule.id;
       let obj = closure_1(closure_2[4]);
-      const cloneDeepResult = obj.cloneDeep(guildId);
+      const cloneDeepResult = obj.cloneDeep(id);
       obj2 = cloneDeepResult;
       if (null != cloneDeepResult) {
         obj2 = { actions: actions.filter(hasChanges(closure_2[5]).isNotNullish) };
@@ -91,7 +91,7 @@ let closure_6 = module_1269.createWithEqualityFn((arg0, arg1) => {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c8;
@@ -303,12 +303,12 @@ let closure_6 = module_1269.createWithEqualityFn((arg0, arg1) => {
 });
 let result = size.fileFinishedImporting("modules/guild_automod/GuildSettingsAutomodRuleStore.tsx");
 
-export const useAutomodEditingRuleActions = function useAutomodEditingRuleActions() {
+export function useAutomodEditingRuleActions() {
   return closure_6((hasChanges) => ({ hasChanges: hasChanges.hasChanges, editingRule: hasChanges.editingRule, isLoading: hasChanges.isLoading, errorMessage: hasChanges.errorMessage, saveRule: hasChanges.saveRule, saveEditingRule: hasChanges.saveEditingRule, cancelEditingRule: hasChanges.cancelEditingRule }), _slicedToArray.shallow);
-};
-export const useAutomodEditingRuleState = function useAutomodEditingRuleState(guildId) {
-  let tmp = guildId;
-  if (guildId === undefined) {
+}
+export function useAutomodEditingRuleState(id) {
+  let tmp = id;
+  if (id === undefined) {
     tmp = null;
   }
   const obj = closure_6((hasChanges) => ({ hasChanges: hasChanges.hasChanges, editingRule: hasChanges.editingRule, setEditingRule: hasChanges.setEditingRule, createNewEditingRule: hasChanges.createNewEditingRule }), _slicedToArray.shallow);
@@ -316,4 +316,4 @@ export const useAutomodEditingRuleState = function useAutomodEditingRuleState(gu
     obj.setEditingRule(tmp);
   }
   return obj;
-};
+}

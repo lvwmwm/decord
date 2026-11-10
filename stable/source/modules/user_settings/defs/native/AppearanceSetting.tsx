@@ -1,112 +1,27 @@
-// Module ID: 16652
-// Function ID: 16653
+// Module ID: 17247
+// Function ID: 17248
 // Name: AppearanceSetting
-// Dependencies: [5027, 1210, 1087, 558, 576, 5237, 504, 1254, 9742, 1128, 2768, 11240, 16653, 16655, 2]
+// Dependencies: [5038, 1195, 1072, 5253, 504, 1239, 9823, 1113, 2772, 11540, 17248, 17250, 2]
+// Exports: useAppearanceSettingTrailing
 
-// Module 16652 (AppearanceSetting)
+// Module 17247 (AppearanceSetting)
 import get_initialized from "get initialized" /* 504 */;
-import react from "react" /* 576 */;
-import Constants from "Constants" /* 1087 */;
-import intl3 from "intl" /* 1128 */;
-import ThemeConstants from "ThemeConstants" /* 1210 */;
-import ClientThemesUtils from "ClientThemesUtils" /* 1254 */;
-import useThemeDefault from "useTheme" /* 5237 */;
-import useActiveTheme from "useActiveTheme" /* 9742 */;
-import PaintPaletteIcon from "PaintPaletteIcon" /* 16653 */;
-import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 5027 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11240 */;
+import Constants from "Constants" /* 1072 */;
+import intl3 from "intl" /* 1113 */;
+import ThemeConstants from "ThemeConstants" /* 1195 */;
+import ClientThemesUtils from "ClientThemesUtils" /* 1239 */;
+import useThemeDefault from "useTheme" /* 5253 */;
+import useActiveTheme from "useActiveTheme" /* 9823 */;
+import PaintPaletteIcon from "PaintPaletteIcon" /* 17248 */;
+import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 5038 */;
+import SettingBuilders from "SettingBuilders" /* 11540 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
-let tmp4;
-const _modDef2768 = tmp4(2768);
-const ActiveThemeType = ThemeConstants.ActiveThemeType;
-const UserSettingsSections = Constants.UserSettingsSections;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAppearanceSettingTrailing() {
-  let gradientPreset;
-  let tmp10;
-  let tmp6;
-  let tmp7;
-  const obj = react;
-  const cResult = obj.c(9);
-  const tmp5 = useThemeDefault();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [ClientThemesBackgroundStore];
-    const fn = function c() {
-      return gradientPreset.gradientPreset;
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp6 = items;
-    tmp7 = fn;
-  } else {
-    [tmp6, tmp7] = cResult;
-  }
-  const tmpResult = get_initialized;
-  const stateFromStores = tmpResult.useStateFromStores(tmp6, tmp7);
-  if (cResult[2] !== tmp5) {
-    const tmpResult3 = ClientThemesUtils;
-    const themeName = tmpResult3.getThemeName(tmp5);
-    cResult[2] = tmp5;
-    cResult[3] = themeName;
-    tmp10 = themeName;
-  } else {
-    tmp10 = cResult[3];
-  }
-  const tmpResult4 = useActiveTheme;
-  const activeThemeType = tmpResult4.useActiveThemeType();
-  if (ActiveThemeType.CUSTOM === activeThemeType) {
-    let tmp19;
-    const _Symbol2 = Symbol;
-    if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl2 = tmp(1128).intl;
-      const stringResult = intl2.string(_modDef2768.KSBBpC);
-      cResult[4] = stringResult;
-      tmp19 = stringResult;
-    } else {
-      tmp19 = cResult[4];
-    }
-    return tmp19;
-  } else if (ActiveThemeType.CLIENT === activeThemeType) {
-    if (cResult[5] === stateFromStores) {
-      let tmp16;
-      if (cResult[6] === tmp10) {
-        tmp16 = cResult[7];
-      }
-      return tmp16;
-    }
-    let name;
-    if (stateFromStores != null) {
-      const getName = stateFromStores.getName;
-      if (getName != null) {
-        name = getName();
-      }
-    }
-    if (name == null) {
-      name = tmp10;
-    }
-    cResult[5] = stateFromStores;
-    cResult[6] = tmp10;
-    cResult[7] = name;
-    tmp16 = name;
-  } else if (ActiveThemeType.SYSTEM === activeThemeType) {
-    let tmp14;
-    const _Symbol = Symbol;
-    if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1128).intl;
-      const stringResult1 = intl.string(intl3.t.wFpwSk);
-      cResult[8] = stringResult1;
-      tmp14 = stringResult1;
-    } else {
-      tmp14 = cResult[8];
-    }
-    return tmp14;
-  } else {
-    return ActiveThemeType.DEFAULT === activeThemeType ? tmp10 : undefined;
-  }
-}) : (function useAppearanceSettingTrailing() {
+let tmp;
+const _modDef2772 = tmp(2772);
+function useAppearanceSettingTrailing() {
   let gradientPreset;
   const items = [ClientThemesBackgroundStore];
   const tmp3 = useThemeDefault();
@@ -117,8 +32,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAppeara
   const obj3 = useActiveTheme;
   const activeThemeType = obj3.useActiveThemeType();
   if (ActiveThemeType.CUSTOM === activeThemeType) {
-    const intl2 = tmp4(1128).intl;
-    return intl2.string(_modDef2768.KSBBpC);
+    const intl2 = tmp4(1113).intl;
+    return intl2.string(_modDef2772.KSBBpC);
   } else if (ActiveThemeType.CLIENT === activeThemeType) {
     let name;
     if (stateFromStores != null) {
@@ -132,12 +47,14 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAppeara
     }
     return name;
   } else if (ActiveThemeType.SYSTEM === activeThemeType) {
-    const intl = tmp4(1128).intl;
+    const intl = tmp4(1113).intl;
     return intl.string(intl3.t.wFpwSk);
   } else {
     return ActiveThemeType.DEFAULT === activeThemeType ? themeName : undefined;
   }
-});
+}
+const ActiveThemeType = ThemeConstants.ActiveThemeType;
+const UserSettingsSections = Constants.UserSettingsSections;
 let obj = {
   useTitle() {
     const intl = intl3.intl;
@@ -145,7 +62,7 @@ let obj = {
   },
   parent: null,
   IconComponent: PaintPaletteIcon.PaintPaletteIcon,
-  useTrailing: tmp2,
+  useTrailing: useAppearanceSettingTrailing,
   screen: {
     route: UserSettingsSections.APPEARANCE,
     getComponent() {
@@ -157,4 +74,4 @@ const route = SettingBuilders.createRoute(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/AppearanceSetting.tsx");
 
 export default route;
-export const useAppearanceSettingTrailing = tmp2;
+export { useAppearanceSettingTrailing };

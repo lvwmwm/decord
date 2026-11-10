@@ -1,101 +1,28 @@
-// Module ID: 10957
-// Function ID: 10958
+// Module ID: 11255
+// Function ID: 11256
 // Name: ChatViewStickyHeader
-// Dependencies: [32, 19, 10958, 21, 558, 576, 10959, 10964, 10968, 10969, 10990, 10996, 11020, 11025, 11050, 11053, 2]
+// Dependencies: [32, 19, 11256, 21, 11257, 11262, 11266, 11267, 11286, 11292, 11316, 11319, 11349, 11353, 11356, 2]
 
-// Module 10957 (ChatViewStickyHeader)
-import react2 from "react" /* 576 */;
-import Constants from "Constants" /* 10958 */;
-import useStrangerDangerWarning from "useStrangerDangerWarning" /* 10959 */;
-import useInappropriateConversationBannerForChannel from "useInappropriateConversationBannerForChannel" /* 10964 */;
-import useLikelyAtoWarning from "useLikelyAtoWarning" /* 10968 */;
-import LikelyAtoWarningBannerDefault from "LikelyAtoWarningBanner" /* 10969 */;
-import StrangerDangerWarningBannerDefault from "StrangerDangerWarningBanner" /* 10990 */;
-import InappropriateConversationWarningBannerDefault from "InappropriateConversationWarningBanner" /* 10996 */;
-import useUnreadSettingNoticeDefault from "useUnreadSettingNotice" /* 11020 */;
-import ChatBannerDefault from "ChatBanner" /* 11053 */;
+// Module 11255 (ChatViewStickyHeader)
+import Constants from "Constants" /* 11256 */;
+import useStrangerDangerWarning from "useStrangerDangerWarning" /* 11257 */;
+import useInappropriateConversationBannerForChannel from "useInappropriateConversationBannerForChannel" /* 11262 */;
+import useLikelyAtoWarning from "useLikelyAtoWarning" /* 11266 */;
+import LikelyAtoWarningBannerDefault from "LikelyAtoWarningBanner" /* 11267 */;
+import StrangerDangerWarningBannerDefault from "StrangerDangerWarningBanner" /* 11286 */;
+import InappropriateConversationWarningBannerDefault from "InappropriateConversationWarningBanner" /* 11292 */;
+import useUnreadSettingNoticeDefault from "useUnreadSettingNotice" /* 11316 */;
+import PinotLazy from "PinotLazy" /* 11319 */;
+import ChatBannerDefault from "ChatBanner" /* 11356 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
-const LOCATION_CONTEXT_MOBILE = Constants.LOCATION_CONTEXT_MOBILE;
-({ jsx: metroRequire, Fragment: metroImportDefault, jsxs: metroImportAll } = Fragment);
-let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatViewStickyHeaderAccountSafetyWarnings(arg0) {
-  let channelId;
-  let senderId;
-  let tmp10;
-  const obj = react2;
-  const cResult = obj.c(12);
-  ({ channelId, senderId } = arg0);
-  const obj2 = useStrangerDangerWarning;
-  const strangerDangerWarning = obj2.useStrangerDangerWarning(channelId);
-  const obj3 = useInappropriateConversationBannerForChannel;
-  const inappropriateConversationBannerForChannel = obj3.useInappropriateConversationBannerForChannel(channelId, LOCATION_CONTEXT_MOBILE);
-  const obj4 = useLikelyAtoWarning;
-  const likelyAtoWarning = obj4.useLikelyAtoWarning(channelId);
-  if (null != likelyAtoWarning) {
-    if (cResult[0] === channelId) {
-      if (cResult[1] === likelyAtoWarning.id) {
-        let tmp15;
-        if (cResult[2] === senderId) {
-          tmp15 = cResult[3];
-        }
-        tmp10 = tmp15;
-      }
-    }
-    const obj5 = { channelId, warningId: likelyAtoWarning.id, senderId };
-    const tmp18 = metroRequire(LikelyAtoWarningBannerDefault, obj5);
-    cResult[0] = channelId;
-    cResult[1] = likelyAtoWarning.id;
-    cResult[2] = senderId;
-    cResult[3] = tmp18;
-    tmp15 = tmp18;
-  } else if (null != strangerDangerWarning) {
-    if (cResult[4] === channelId) {
-      if (cResult[5] === senderId) {
-        let tmp11;
-        if (cResult[6] === strangerDangerWarning.id) {
-          tmp11 = cResult[7];
-        }
-        tmp10 = tmp11;
-      }
-    }
-    const obj6 = { channelId, warningId: strangerDangerWarning.id, senderId };
-    const tmp14 = metroRequire(StrangerDangerWarningBannerDefault, obj6);
-    cResult[4] = channelId;
-    cResult[5] = senderId;
-    cResult[6] = strangerDangerWarning.id;
-    cResult[7] = tmp14;
-    tmp11 = tmp14;
-  } else {
-    tmp10 = null;
-    if (null != inappropriateConversationBannerForChannel) {
-      if (cResult[8] === channelId) {
-        if (cResult[9] === inappropriateConversationBannerForChannel.id) {
-          let tmp6;
-          if (cResult[10] === senderId) {
-            tmp6 = cResult[11];
-          }
-          tmp10 = tmp6;
-        }
-      }
-      const obj7 = { channelId, warningId: inappropriateConversationBannerForChannel.id, senderId };
-      const tmp9 = metroRequire(InappropriateConversationWarningBannerDefault, obj7);
-      cResult[8] = channelId;
-      cResult[9] = inappropriateConversationBannerForChannel.id;
-      cResult[10] = senderId;
-      cResult[11] = tmp9;
-      tmp6 = tmp9;
-    }
-  }
-  return tmp10;
-}) : (function ChatViewStickyHeaderAccountSafetyWarnings(arg0) {
+function ChatViewStickyHeaderAccountSafetyWarnings(arg0) {
   let channelId;
   let senderId;
   let tmp5;
@@ -120,126 +47,10 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatVie
     }
   }
   return tmp5;
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function StickyHeader(channel) {
-  let clearUnreadsNotice;
-  let closure_129_1;
-  let items;
-  let showUnreadsNotice;
-  let tmp4;
-  let tmp7;
-  const obj = react2;
-  const cResult = obj.c(19);
-  channel = channel.channel;
-  const scrollToNewMessages = channel.scrollToNewMessages;
-  const ref = channel.ref;
-  [tmp4, closure_129_1] = react.useState(false);
-  _slicedToArray(react.useState(false), 2);
-  ({ showUnreadsNotice, clearUnreadsNotice } = useUnreadSettingNoticeDefault(channel));
-  useUnreadSettingNoticeDefault(channel);
-  const obj2 = react;
-  if (cResult[0] !== channel) {
-    const fn = function t() {
-      let forumPost;
-      return {
-        onChatViewScrolled(isFirstMessageVisible) {
-          isFirstMessageVisible = isFirstMessageVisible.isFirstMessageVisible;
-          if (forumPost.isForumPost()) {
-            closure_1_1(!isFirstMessageVisible);
-          }
-        }
-      };
-    };
-    cResult[0] = channel;
-    cResult[1] = fn;
-    tmp7 = fn;
-  } else {
-    tmp7 = cResult[1];
-  }
-  const imperativeHandle = obj2.useImperativeHandle(ref, tmp7);
-  if (cResult[2] === channel) {
-    let tmp9;
-    let tmp12;
-    if (cResult[3] === tmp4) {
-      tmp9 = cResult[4];
-    }
-    if (cResult[5] !== channel) {
-      let tmp13 = null;
-      if (channel.isDM()) {
-        const obj3 = { channelId: channel.id, senderId: channel.getRecipientId() };
-        tmp13 = metroRequire(closure_9, obj3);
-      }
-      cResult[5] = channel;
-      cResult[6] = tmp13;
-      tmp12 = tmp13;
-    } else {
-      tmp12 = cResult[6];
-    }
-    if (cResult[7] === channel) {
-      if (cResult[8] === clearUnreadsNotice) {
-        let tmp16;
-        if (cResult[9] === showUnreadsNotice) {
-          tmp16 = cResult[10];
-        }
-        if (cResult[11] === channel) {
-          let tmp19;
-          if (cResult[12] === scrollToNewMessages) {
-            tmp19 = cResult[13];
-          }
-          if (cResult[14] === tmp9) {
-            if (cResult[15] === tmp12) {
-              if (cResult[16] === tmp16) {
-                let tmp22;
-                if (cResult[17] === tmp19) {
-                  tmp22 = cResult[18];
-                }
-                return tmp22;
-              }
-            }
-          }
-          const obj4 = { children: items };
-          items = [tmp9, tmp12, tmp16, tmp19];
-          const tmp25 = metroImportAll(metroImportDefault, obj4);
-          cResult[14] = tmp9;
-          cResult[15] = tmp12;
-          cResult[16] = tmp16;
-          cResult[17] = tmp19;
-          cResult[18] = tmp25;
-          tmp22 = tmp25;
-        }
-        const obj5 = { channel, handleScrollToNewMessages: scrollToNewMessages };
-        const tmp21 = metroRequire(ChatBannerDefault, obj5);
-        cResult[11] = channel;
-        cResult[12] = scrollToNewMessages;
-        cResult[13] = tmp21;
-        tmp19 = tmp21;
-      }
-    }
-    let tmp17 = null;
-    if (showUnreadsNotice) {
-      const obj6 = { channel, clearUnreadsNotice };
-      tmp17 = metroRequire(tmp5(11050), obj6);
-    }
-    cResult[7] = channel;
-    cResult[8] = clearUnreadsNotice;
-    cResult[9] = showUnreadsNotice;
-    cResult[10] = tmp17;
-    tmp16 = tmp17;
-  }
-  let tmp10 = null;
-  if (channel.isForumPost()) {
-    tmp10 = null;
-    if (tmp4) {
-      const obj7 = { channel };
-      tmp10 = metroRequire(tmp5(11025), obj7);
-    }
-  }
-  cResult[2] = channel;
-  cResult[3] = tmp4;
-  cResult[4] = tmp10;
-  tmp9 = tmp10;
-}) : (function StickyHeader(channel) {
+}
+const LOCATION_CONTEXT_MOBILE = Constants.LOCATION_CONTEXT_MOBILE;
+({ jsx: metroRequire, Fragment: metroImportDefault, jsxs: metroImportAll } = Fragment);
+const memoResult = react.memo(function StickyHeader(channel) {
   let clearUnreadsNotice;
   let closure_1;
   let first;
@@ -252,6 +63,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   [first, closure_1] = react.useState(false);
   ({ showUnreadsNotice, clearUnreadsNotice } = useUnreadSettingNoticeDefault(channel));
   useUnreadSettingNoticeDefault(channel);
+  const obj = PinotLazy;
+  const pinotMemberNotice = obj.usePinotMemberNotice(channel, "mobile_chat_sticky_header");
   const imperativeHandle = react.useImperativeHandle(ref, () => {
     let forumPost;
     return {
@@ -263,33 +76,39 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       }
     };
   });
-  let tmp9 = null;
-  const tmp7 = metroImportAll;
-  const tmp8 = metroImportDefault;
+  let tmp11 = null;
+  const tmp10 = metroImportDefault;
+  const tmp9 = metroImportAll;
+  if (pinotMemberNotice.visible) {
+    const obj2 = { channel, onDismiss: pinotMemberNotice.dismiss };
+    tmp11 = metroRequire(PinotLazy.PinotMemberNoticeBar, obj2);
+  }
+  const items = [tmp11, , , , ];
+  let tmp13 = null;
   if (channel.isForumPost()) {
-    tmp9 = null;
+    tmp13 = null;
     if (first) {
-      const obj = { channel };
-      tmp9 = metroRequire(tmp3(11025), obj);
+      const obj3 = { channel };
+      tmp13 = metroRequire(tmp3(11349), obj3);
     }
   }
-  const items = [tmp9, , , ];
-  let tmp11 = null;
+  items[1] = tmp13;
+  let tmp15 = null;
   if (channel.isDM()) {
-    const obj2 = { channelId: channel.id, senderId: channel.getRecipientId() };
-    tmp11 = metroRequire(closure_9, obj2);
+    const obj4 = { channelId: channel.id, senderId: channel.getRecipientId() };
+    tmp15 = metroRequire(ChatViewStickyHeaderAccountSafetyWarnings, obj4);
   }
-  items[1] = tmp11;
-  let tmp14 = null;
+  items[2] = tmp15;
+  let tmp18 = null;
   if (showUnreadsNotice) {
-    const obj3 = { channel, clearUnreadsNotice };
-    tmp14 = metroRequire(tmp3(11050), obj3);
+    const obj5 = { channel, clearUnreadsNotice };
+    tmp18 = metroRequire(tmp3(11353), obj5);
   }
-  const obj4 = { children: items };
-  items[2] = tmp14;
-  items[3] = metroRequire(ChatBannerDefault, { channel, handleScrollToNewMessages: scrollToNewMessages });
-  return tmp7(tmp8, obj4);
-}));
+  const obj6 = { children: items };
+  items[3] = tmp18;
+  items[4] = metroRequire(ChatBannerDefault, { channel, handleScrollToNewMessages: scrollToNewMessages });
+  return tmp9(tmp10, obj6);
+});
 const result = size.fileFinishedImporting("modules/chat/native/ChatViewStickyHeader.tsx");
 
 export default memoResult;

@@ -1,14 +1,14 @@
-// Module ID: 9631
-// Function ID: 9632
+// Module ID: 9711
+// Function ID: 9712
 // Name: EarnedDecisionRoundtripTracker
-// Dependencies: [5922, 1087, 7601, 1267, 7782, 7604, 2]
+// Dependencies: [5901, 1072, 7639, 1252, 7819, 7642, 2]
 
-// Module 9631 (EarnedDecisionRoundtripTracker)
-import Constants from "Constants" /* 1087 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import NetStats from "NetStats" /* 7601 */;
-import getDeviceMetadataDefault from "getDeviceMetadata" /* 7782 */;
-import NetworkStore from "NetworkStore" /* 5922 */;
+// Module 9711 (EarnedDecisionRoundtripTracker)
+import Constants from "Constants" /* 1072 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import NetStats from "NetStats" /* 7639 */;
+import getDeviceMetadataDefault from "getDeviceMetadata" /* 7819 */;
+import NetworkStore from "NetworkStore" /* 5901 */;
 import size from "module_2" /* 2 */;
 
 function trackRoundtrip(apiResponseTimestamp) {
@@ -34,7 +34,7 @@ function trackRoundtrip(apiResponseTimestamp) {
     }
     const merged1 = Object.assign(tmp11);
     ({ callerSource: obj2.caller_source, requestId: obj2.request_id, fetchedAt: obj2.fetched_at } = apiResponseTimestamp);
-    tmp2Result = tmp2(7604);
+    tmp2Result = tmp2(7642);
     track(EARNED_DECISION_ROUNDTRIP, obj3);
   }
 }
@@ -46,23 +46,33 @@ class EarnedDecisionRoundtripTracker {
     new Map();
     return merged;
   }
-  recordEarnedRequestAttempt(arg0, callerSource) {
+  recordEarnedRequestAttempt(callerSource) {
     const self = this;
-    let closure_0 = arg0;
+    const SymbolResult = Symbol();
+    require = SymbolResult;
     let pendingRequests = this.pendingRequests;
-    const obj = { initialSendTimestamp: Date.now(), endpoint: "/quests/earned-decision", apiResponseTimestamp: null, wasSuccessful: false, callerSource, requestId: null, fetchedAt: null };
-    const result = pendingRequests.set(arg0, obj);
-    const timerId = setTimeout(() => {
-      const pendingRequests = self.pendingRequests;
-      const value = pendingRequests.get(closure_0);
-      const tmp = self;
-      const tmp2 = closure_0;
-      if (null != value) {
-        trackRoundtrip(value);
-        const pendingRequests2 = tmp.pendingRequests;
-        pendingRequests2.delete(tmp2);
-      }
-    }, 30000);
+    const obj = {
+      timeoutId: setTimeout(() => {
+        const pendingRequests = self.pendingRequests;
+        const value = pendingRequests.get(require);
+        const tmp = self;
+        const tmp2 = require;
+        if (null != value) {
+          const pendingRequests2 = tmp.pendingRequests;
+          pendingRequests2.delete(tmp2);
+          trackRoundtrip(value);
+        }
+      }, 30000),
+      initialSendTimestamp: Date.now(),
+      endpoint: "/quests/earned-decision",
+      apiResponseTimestamp: null,
+      wasSuccessful: false,
+      callerSource,
+      requestId: null,
+      fetchedAt: null
+    };
+    const result = pendingRequests.set(SymbolResult, obj);
+    return SymbolResult;
   }
   recordEarnedRequestApiResponse(get, requestId) {
     requestId = requestId.requestId;
@@ -77,12 +87,14 @@ class EarnedDecisionRoundtripTracker {
     const pendingRequests = this.pendingRequests;
     const value = pendingRequests.get(get);
     if (null != value) {
+      const _clearTimeout = clearTimeout;
+      clearTimeout(value.timeoutId);
+      const pendingRequests2 = this.pendingRequests;
+      pendingRequests2.delete(get);
       const obj = { apiResponseTimestamp: Date.now(), wasSuccessful, requestId, fetchedAt };
       const merged = Object.assign(value);
       const _Date = Date;
       trackRoundtrip(obj);
-      const pendingRequests2 = this.pendingRequests;
-      pendingRequests2.delete(get);
     }
   }
 }

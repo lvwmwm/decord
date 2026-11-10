@@ -1,17 +1,17 @@
-// Module ID: 11323
-// Function ID: 11324
+// Module ID: 11626
+// Function ID: 11627
 // Name: openGroupDMAddMembers
-// Dependencies: [4855, 1392, 11324, 11325, 11327, 11328, 5694, 5182, 2]
+// Dependencies: [4863, 1383, 11627, 11628, 11630, 11631, 5711, 5198, 2]
 // Exports: default, showGroupDMAddMembersRoadblock
 
-// Module 11323 (openGroupDMAddMembers)
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5182 */;
-import ToastUtils from "ToastUtils" /* 5694 */;
-import GroupDMNitroUpsellModel from "GroupDMNitroUpsellModel" /* 11324 */;
-import getGroupDMRecipientLimitDefault from "getGroupDMRecipientLimit" /* 11325 */;
-import openGroupDMNitroCapLimitSheetDefault from "openGroupDMNitroCapLimitSheet" /* 11328 */;
-import ChannelStore from "ChannelStore" /* 4855 */;
-import UserStore from "UserStore" /* 1392 */;
+// Module 11626 (openGroupDMAddMembers)
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5198 */;
+import ToastUtils from "ToastUtils" /* 5711 */;
+import GroupDMNitroUpsellModel from "GroupDMNitroUpsellModel" /* 11627 */;
+import getGroupDMRecipientLimitDefault from "getGroupDMRecipientLimit" /* 11628 */;
+import openGroupDMNitroCapLimitSheetDefault from "openGroupDMNitroCapLimitSheet" /* 11631 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import UserStore from "UserStore" /* 1383 */;
 import size from "module_2" /* 2 */;
 
 function getGroupDMAddMembersAction(id, CHANNEL_TEXT_AREA) {
@@ -36,7 +36,7 @@ function getGroupDMAddMembersAction(id, CHANNEL_TEXT_AREA) {
       }
       const obj = { memberCount: num + 1, recipientLimit: getGroupDMRecipientLimitDefault({ useNitroCapExperiment: true }), audience: getGroupDMNitroAudience(premiumType, flag), showUpsell: tmp5Result.getConfig(obj2).enabled };
       premiumType = undefined;
-      getGroupDMNitroAudience = tmp2(11324).getGroupDMNitroAudience;
+      getGroupDMNitroAudience = tmp2(11627).getGroupDMNitroAudience;
       GroupDMNitroUpsellModel;
       const tmp5 = importDefault;
       if (currentUser != null) {
@@ -50,7 +50,7 @@ function getGroupDMAddMembersAction(id, CHANNEL_TEXT_AREA) {
         flag = false;
       }
       obj2 = { location: CHANNEL_TEXT_AREA };
-      tmp5Result = tmp5(11327);
+      tmp5Result = tmp5(11630);
       return getGroupDMAddMembersEntryAction(obj);
     }
   }
@@ -71,11 +71,11 @@ export default function openGroupDMAddMembers(channelId, locationPage) {
   }
 };
 export { getGroupDMAddMembersAction };
-export const showGroupDMAddMembersRoadblock = function showGroupDMAddMembersRoadblock(groupDMAddMembersAction, CHANNEL_TEXT_AREA) {
+export function showGroupDMAddMembersRoadblock(groupDMAddMembersAction, CHANNEL_TEXT_AREA) {
   if ("upsell" === groupDMAddMembersAction) {
     openGroupDMNitroCapLimitSheetDefault(CHANNEL_TEXT_AREA);
   } else {
     const obj = ToastUtils;
     obj.showMaxGroupMembers();
   }
-};
+}

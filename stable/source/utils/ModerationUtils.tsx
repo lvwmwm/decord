@@ -1,16 +1,16 @@
-// Module ID: 16163
-// Function ID: 16164
+// Module ID: 16736
+// Function ID: 16737
 // Name: ModerationUtils
-// Dependencies: [1087, 4833, 586, 16164, 1128, 1211, 2]
+// Dependencies: [1072, 4841, 574, 16737, 1113, 1196, 2]
 // Exports: generateContentFilterHighlightedOptions, generateContentFilterOptions, generateDmSpamOptions, generateExplicitImageOptions, generateVerificationLevelOptions, mapOptionToHighlightedRowOptions
 
-// Module 16163 (ModerationUtils)
-import shims from "shims" /* 586 */;
-import intl11 from "intl" /* 1128 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1211 */;
-import DMSafetyConstants from "DMSafetyConstants" /* 4833 */;
-import HighlightedSettingsTypes from "HighlightedSettingsTypes" /* 16164 */;
-import Constants from "Constants" /* 1087 */;
+// Module 16736 (ModerationUtils)
+import shims from "shims" /* 574 */;
+import intl11 from "intl" /* 1113 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1196 */;
+import DMSafetyConstants from "DMSafetyConstants" /* 4841 */;
+import HighlightedSettingsTypes from "HighlightedSettingsTypes" /* 16737 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 let c2;
@@ -49,13 +49,13 @@ const constants4 = DMSafetyConstants.ExplicitContentFilterTypes;
 const result = size.fileFinishedImporting("utils/ModerationUtils.tsx");
 
 export { mapColorToHighlightColor };
-export const mapOptionToHighlightedRowOptions = function mapOptionToHighlightedRowOptions(arr) {
+export function mapOptionToHighlightedRowOptions(arr) {
   return arr.map((name) => {
     const obj = { title: name.name, description: name.desc, highlightColor: mapColorToHighlightColor(name.color), value: name.value, disabled: name.disabled };
     return obj;
   });
-};
-export const generateVerificationLevelOptions = function generateVerificationLevelOptions(features) {
+}
+export function generateVerificationLevelOptions(features) {
   let intl;
   let intl10;
   let intl3;
@@ -92,8 +92,8 @@ export const generateVerificationLevelOptions = function generateVerificationLev
   }
   const items = [obj, , , , ];
   const obj2 = { name: intl3.string(intl11.t.SsCK8I), desc: intl4.string(intl11.t["8GCOX6"]), value: constants.LOW, color: unsafe_getRawColorResult };
-  intl3 = tmp(1128).intl;
-  intl4 = tmp(1128).intl;
+  intl3 = tmp(1113).intl;
+  intl4 = tmp(1113).intl;
   unsafe_getRawColorResult = undefined;
   if (!flag2) {
     const tmpResult = shims;
@@ -101,8 +101,8 @@ export const generateVerificationLevelOptions = function generateVerificationLev
   }
   items[1] = obj2;
   const obj3 = { name: intl5.string(intl11.t.WwNoR4), desc: intl6.formatToPlainString(intl11.t.VS14ga, obj4), value: constants.MEDIUM, color: unsafe_getRawColorResult1 };
-  intl5 = tmp(1128).intl;
-  intl6 = tmp(1128).intl;
+  intl5 = tmp(1113).intl;
+  intl6 = tmp(1113).intl;
   unsafe_getRawColorResult1 = undefined;
   obj4 = { min: constants2.ACCOUNT_AGE };
   const tmp6 = constants2;
@@ -112,8 +112,8 @@ export const generateVerificationLevelOptions = function generateVerificationLev
   }
   items[2] = obj3;
   const obj5 = { name: intl7.string(intl11.t.I2jMUF), desc: intl8.formatToPlainString(intl11.t["r+b3I4"], obj6), value: constants.HIGH, color: unsafe_getRawColorResult2 };
-  intl7 = tmp(1128).intl;
-  intl8 = tmp(1128).intl;
+  intl7 = tmp(1113).intl;
+  intl8 = tmp(1113).intl;
   unsafe_getRawColorResult2 = undefined;
   obj6 = { min: tmp6.MEMBER_AGE };
   if (!flag2) {
@@ -122,8 +122,8 @@ export const generateVerificationLevelOptions = function generateVerificationLev
   }
   items[3] = obj5;
   const obj7 = { name: intl9.string(intl11.t.cJY8w9), desc: intl10.string(intl11.t.PWaKme), value: constants.VERY_HIGH, color: unsafe_getRawColorResult3 };
-  intl9 = tmp(1128).intl;
-  intl10 = tmp(1128).intl;
+  intl9 = tmp(1113).intl;
+  intl10 = tmp(1113).intl;
   unsafe_getRawColorResult3 = undefined;
   if (!flag2) {
     const tmpResult6 = shims;
@@ -131,8 +131,8 @@ export const generateVerificationLevelOptions = function generateVerificationLev
   }
   items[4] = obj7;
   return items;
-};
-export const generateContentFilterHighlightedOptions = function generateContentFilterHighlightedOptions() {
+}
+export function generateContentFilterHighlightedOptions() {
   let intl;
   let intl2;
   let intl3;
@@ -164,10 +164,10 @@ export const generateContentFilterHighlightedOptions = function generateContentF
   items[1] = obj3;
   tmpResult = shims;
   const obj4 = { name: intl5.string(intl11.t.VbSyAx), desc: string2Result, value: constants3.DISABLED, disabled: flag, color: tmpResult2.unsafe_getRawColor("PRIMARY_400") };
-  intl5 = tmp(1128).intl;
-  const intl6 = tmp(1128).intl;
+  intl5 = tmp(1113).intl;
+  const intl6 = tmp(1113).intl;
   const string2 = intl6.string;
-  const t2 = tmp(1128).t;
+  const t2 = tmp(1113).t;
   if (flag) {
     string2Result = string2(t2.j9WtHx);
   } else {
@@ -176,8 +176,8 @@ export const generateContentFilterHighlightedOptions = function generateContentF
   items[2] = obj4;
   tmpResult2 = shims;
   return items;
-};
-export const generateContentFilterOptions = function generateContentFilterOptions(features) {
+}
+export function generateContentFilterOptions(features) {
   let intl;
   let intl2;
   let intl3;
@@ -204,10 +204,10 @@ export const generateContentFilterOptions = function generateContentFilterOption
   }
   items[1] = obj2;
   const obj3 = { name: intl5.string(intl11.t.VbSyAx), desc: string2Result, value: constants3.DISABLED, disabled: flag };
-  intl5 = tmp(1128).intl;
-  const intl6 = tmp(1128).intl;
+  intl5 = tmp(1113).intl;
+  const intl6 = tmp(1113).intl;
   const string2 = intl6.string;
-  const t2 = tmp(1128).t;
+  const t2 = tmp(1113).t;
   if (flag) {
     string2Result = string2(t2.j9WtHx);
   } else {
@@ -215,8 +215,8 @@ export const generateContentFilterOptions = function generateContentFilterOption
   }
   items[2] = obj3;
   return items;
-};
-export const generateDmSpamOptions = function generateDmSpamOptions() {
+}
+export function generateDmSpamOptions() {
   let intl;
   let intl2;
   let intl3;
@@ -236,8 +236,8 @@ export const generateDmSpamOptions = function generateDmSpamOptions() {
   intl6 = intl11.intl;
   items[2] = obj3;
   return items;
-};
-export const generateExplicitImageOptions = function generateExplicitImageOptions() {
+}
+export function generateExplicitImageOptions() {
   let intl;
   let intl2;
   let intl3;
@@ -263,4 +263,4 @@ export const generateExplicitImageOptions = function generateExplicitImageOption
   items[2] = obj5;
   obj6 = shims;
   return items;
-};
+}

@@ -1,36 +1,36 @@
-// Module ID: 16228
-// Function ID: 16229
+// Module ID: 16801
+// Function ID: 16802
 // Name: FamilyCenterActivityPurchaseRowUtils
-// Dependencies: [7687, 7688, 1394, 1995, 1128, 2536, 1417, 2]
+// Dependencies: [7725, 7726, 1385, 1987, 1113, 2538, 1409, 2]
 // Exports: getAvatarDecorationPreviewUrl, getProfileEffectPreviewUrl, getPurchaseDisplayInfo, isGuildBoostSubscription
 
-// Module 16228 (FamilyCenterActivityPurchaseRowUtils)
-import AvatarUtils from "AvatarUtils" /* 1417 */;
-import CollectiblesItemType from "CollectiblesItemType" /* 1995 */;
-import _modDef2536 from "module_2536" /* 2536 */;
-import AvatarDecorationRecord from "AvatarDecorationRecord" /* 7687 */;
-import ProfileEffectRecord from "ProfileEffectRecord" /* 7688 */;
-import PremiumConstants from "PremiumConstants" /* 1394 */;
+// Module 16801 (FamilyCenterActivityPurchaseRowUtils)
+import AvatarUtils from "AvatarUtils" /* 1409 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 1987 */;
+import _modDef2538 from "module_2538" /* 2538 */;
+import AvatarDecorationRecord from "AvatarDecorationRecord" /* 7725 */;
+import ProfileEffectRecord from "ProfileEffectRecord" /* 7726 */;
+import PremiumConstants from "PremiumConstants" /* 1385 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
 let metroRequire;
 function getCollectibleTypeName(type) {
   if (CollectiblesItemType.CollectiblesItemType.AVATAR_DECORATION === type) {
-    const intl5 = tmp(1128).intl;
-    return intl5.string(_modDef2536.obi47v);
+    const intl5 = tmp(1113).intl;
+    return intl5.string(_modDef2538.obi47v);
   } else if (CollectiblesItemType.CollectiblesItemType.PROFILE_EFFECT === type) {
-    const intl4 = tmp(1128).intl;
-    return intl4.string(_modDef2536.RX8BMR);
+    const intl4 = tmp(1113).intl;
+    return intl4.string(_modDef2538.RX8BMR);
   } else if (CollectiblesItemType.CollectiblesItemType.NAMEPLATE === type) {
-    const intl3 = tmp(1128).intl;
-    return intl3.string(_modDef2536.nNGEHk);
+    const intl3 = tmp(1113).intl;
+    return intl3.string(_modDef2538.nNGEHk);
   } else if (CollectiblesItemType.CollectiblesItemType.BUNDLE === type) {
-    const intl2 = tmp(1128).intl;
-    return intl2.string(_modDef2536.VS1fKo);
+    const intl2 = tmp(1113).intl;
+    return intl2.string(_modDef2538.VS1fKo);
   } else if (CollectiblesItemType.CollectiblesItemType.PROFILE_FRAME === type) {
-    const intl = tmp(1128).intl;
-    return intl.string(_modDef2536.JiIY1l);
+    const intl = tmp(1113).intl;
+    return intl.string(_modDef2538.JiIY1l);
   } else {
     return "";
   }
@@ -43,7 +43,7 @@ const result = size.fileFinishedImporting("modules/parent_tools/FamilyCenterActi
 export const PREVIEW_SIZE = 40;
 export const NAMEPLATE_ASPECT_RATIO = 5.333333333333333;
 export { getCollectibleTypeName };
-export const getAvatarDecorationPreviewUrl = function getAvatarDecorationPreviewUrl(product) {
+export function getAvatarDecorationPreviewUrl(product) {
   let obj3;
   if (0 === product.items.length) {
     return null;
@@ -58,8 +58,8 @@ export const getAvatarDecorationPreviewUrl = function getAvatarDecorationPreview
     }
     return avatarDecorationURL;
   }
-};
-export const getProfileEffectPreviewUrl = function getProfileEffectPreviewUrl(product) {
+}
+export function getProfileEffectPreviewUrl(product) {
   if (0 === product.items.length) {
     return null;
   } else {
@@ -70,8 +70,8 @@ export const getProfileEffectPreviewUrl = function getProfileEffectPreviewUrl(pr
     }
     return thumbnailPreviewSrc;
   }
-};
-export const isGuildBoostSubscription = function isGuildBoostSubscription(subscriptionPlanId) {
+}
+export function isGuildBoostSubscription(subscriptionPlanId) {
   if (null == subscriptionPlanId) {
     return false;
   } else {
@@ -81,8 +81,8 @@ export const isGuildBoostSubscription = function isGuildBoostSubscription(subscr
     }
     return skuId === hasOwnProperty.GUILD;
   }
-};
-export const getPurchaseDisplayInfo = function getPurchaseDisplayInfo(name, subscriptionPlanId) {
+}
+export function getPurchaseDisplayInfo(name, subscriptionPlanId) {
   let displayName;
   let typeName;
   const isSubscription = null != subscriptionPlanId;
@@ -99,4 +99,4 @@ export const getPurchaseDisplayInfo = function getPurchaseDisplayInfo(name, subs
     }
   }
   return { displayName, typeName, isSubscription };
-};
+}

@@ -1,24 +1,22 @@
-// Module ID: 14634
-// Function ID: 14635
+// Module ID: 15174
+// Function ID: 15175
 // Name: EndStageActionSheet
-// Dependencies: [19, 17, 6669, 1087, 21, 5003, 587, 558, 576, 5242, 9185, 7905, 1128, 1202, 5266, 5276, 14215, 2]
+// Dependencies: [19, 17, 6709, 1072, 21, 5014, 575, 5258, 9221, 14743, 1187, 1113, 5624, 5634, 7945, 2]
+// Exports: default
 
-// Module 14634 (EndStageActionSheet)
+// Module 15174 (EndStageActionSheet)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1087 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5242 */;
-import StageChannelsConstants from "StageChannelsConstants" /* 6669 */;
-import StageChannelActionCreators from "StageChannelActionCreators" /* 7905 */;
-import CallsUtils from "CallsUtils" /* 9185 */;
-import ScrollHandlingActionSheetDefault from "ScrollHandlingActionSheet" /* 14215 */;
+import nativeDefault from "native" /* 575 */;
+import Constants from "Constants" /* 1072 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
+import StageChannelsConstants from "StageChannelsConstants" /* 6709 */;
+import StageChannelActionCreators from "StageChannelActionCreators" /* 7945 */;
+import CallsUtils from "CallsUtils" /* 9221 */;
+import ScrollHandlingActionSheetDefault from "ScrollHandlingActionSheet" /* 14743 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5003 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
-
-let importDefault;
 
 let hasOwnProperty;
 let metroRequire;
@@ -30,180 +28,9 @@ const Fonts = Constants.Fonts;
 let obj = { container: { paddingVertical: 24, paddingHorizontal: 16, alignItems: "center" }, title: obj2, subtitle: { marginTop: 8, textAlign: "center" }, cancelButton: { marginTop: 24, alignSelf: "stretch" }, confirmButton: { marginTop: 8, alignSelf: "stretch" } };
 obj2 = { fontSize: 24, fontFamily: Fonts.PRIMARY_BOLD, textAlign: "center", color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY };
 let closure_7 = createStyles.createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EndStageActionSheet(channel) {
-  let closure_1;
-  let container;
-  let items;
-  let obj7;
-  let title;
-  let tmp5;
-  let obj = channel(576);
-  const cResult = obj.c(29);
-  channel = channel.channel;
-  const tmp4 = closure_7();
-  if (cResult[0] !== channel) {
-    function handleClose() {
-      const obj = ActionSheetActionCreatorsDefault;
-      obj.hideActionSheet(closure_4);
-      const obj2 = CallsUtils;
-      obj2.handleDisconnect(channel);
-    }
-    cResult[0] = channel;
-    cResult[1] = handleClose;
-    tmp5 = handleClose;
-  } else {
-    tmp5 = cResult[1];
-  }
-  importDefault = tmp5;
-  if (cResult[2] === channel) {
-    let tmp6;
-    let tmp8;
-    let tmp10;
-    let tmp13;
-    let tmp15;
-    let tmp18;
-    let tmp20;
-    if (cResult[3] === tmp5) {
-      tmp6 = cResult[4];
-    }
-    const _Symbol = Symbol;
-    ({ container, title } = tmp4);
-    if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1128).intl;
-      const stringResult = intl.string(channel(1128).t.pADdJu);
-      cResult[5] = stringResult;
-      tmp8 = stringResult;
-    } else {
-      tmp8 = cResult[5];
-    }
-    if (cResult[6] !== tmp4.title) {
-      let obj2 = { style: title, accessibilityRole: "header", children: tmp8 };
-      const tmp12 = closure_5(channel(1202).LegacyText, obj2);
-      cResult[6] = tmp4.title;
-      cResult[7] = tmp12;
-      tmp10 = tmp12;
-    } else {
-      tmp10 = cResult[7];
-    }
-    const _Symbol2 = Symbol;
-    const subtitle = tmp4.subtitle;
-    if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl2 = tmp(1128).intl;
-      const stringResult1 = intl2.string(channel(1128).t.mT7jwN);
-      cResult[8] = stringResult1;
-      tmp13 = stringResult1;
-    } else {
-      tmp13 = cResult[8];
-    }
-    if (cResult[9] !== tmp4.subtitle) {
-      const obj3 = { style: subtitle, variant: "text-md/medium", color: "text-default", children: tmp13 };
-      const tmp17 = closure_5(channel(5266).Text, obj3);
-      cResult[9] = tmp4.subtitle;
-      cResult[10] = tmp17;
-      tmp15 = tmp17;
-    } else {
-      tmp15 = cResult[10];
-    }
-    const _Symbol3 = Symbol;
-    const cancelButton = tmp4.cancelButton;
-    if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl3 = tmp(1128).intl;
-      const stringResult2 = intl3.string(channel(1128).t.xTwqz2);
-      cResult[11] = stringResult2;
-      tmp18 = stringResult2;
-    } else {
-      tmp18 = cResult[11];
-    }
-    if (cResult[12] !== tmp5) {
-      const obj4 = { variant: "secondary", text: tmp18, onPress: tmp5 };
-      const tmp22 = closure_5(channel(5276).Button, obj4);
-      cResult[12] = tmp5;
-      cResult[13] = tmp22;
-      tmp20 = tmp22;
-    } else {
-      tmp20 = cResult[13];
-    }
-    if (cResult[14] === tmp4.cancelButton) {
-      let tmp23;
-      let tmp27;
-      let tmp29;
-      if (cResult[15] === tmp20) {
-        tmp23 = cResult[16];
-      }
-      const _Symbol4 = Symbol;
-      const confirmButton = tmp4.confirmButton;
-      if (cResult[17] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl4 = tmp(1128).intl;
-        const stringResult3 = intl4.string(channel(1128).t.wnWqGg);
-        cResult[17] = stringResult3;
-        tmp27 = stringResult3;
-      } else {
-        tmp27 = cResult[17];
-      }
-      if (cResult[18] !== tmp6) {
-        const obj5 = { variant: "destructive", text: tmp27, onPress: tmp6 };
-        const tmp31 = closure_5(channel(5276).Button, obj5);
-        cResult[18] = tmp6;
-        cResult[19] = tmp31;
-        tmp29 = tmp31;
-      } else {
-        tmp29 = cResult[19];
-      }
-      if (cResult[20] === tmp4.confirmButton) {
-        let tmp32;
-        if (cResult[21] === tmp29) {
-          tmp32 = cResult[22];
-        }
-        if (cResult[23] === tmp4.container) {
-          if (cResult[24] === tmp23) {
-            if (cResult[25] === tmp32) {
-              if (cResult[26] === tmp10) {
-                let tmp36;
-                if (cResult[27] === tmp15) {
-                  tmp36 = cResult[28];
-                }
-                return tmp36;
-              }
-            }
-          }
-        }
-        const obj6 = { children: closure_6(View, obj7) };
-        obj7 = { style: container, children: items };
-        items = [tmp10, tmp15, tmp23, tmp32];
-        const tmp39 = ScrollHandlingActionSheetDefault;
-        const tmp42 = closure_5(tmp39, obj6);
-        cResult[23] = tmp4.container;
-        cResult[24] = tmp23;
-        cResult[25] = tmp32;
-        cResult[26] = tmp10;
-        cResult[27] = tmp15;
-        cResult[28] = tmp42;
-        tmp36 = tmp42;
-      }
-      const obj8 = { style: confirmButton, children: tmp29 };
-      const tmp35 = closure_5(View, obj8);
-      cResult[20] = tmp4.confirmButton;
-      cResult[21] = tmp29;
-      cResult[22] = tmp35;
-      tmp32 = tmp35;
-    }
-    const obj9 = { style: cancelButton, children: tmp20 };
-    const tmp26 = closure_5(View, obj9);
-    cResult[14] = tmp4.cancelButton;
-    cResult[15] = tmp20;
-    cResult[16] = tmp26;
-    tmp23 = tmp26;
-  }
-  function handleConfirmClick() {
-    const obj = StageChannelActionCreators;
-    obj.endStage(channel);
-    closure_1();
-  }
-  cResult[2] = channel;
-  cResult[3] = tmp5;
-  cResult[4] = handleConfirmClick;
-  tmp6 = handleConfirmClick;
-}) : (function EndStageActionSheet(channel) {
+const result = size.fileFinishedImporting("modules/stage_channels/native/components/EndStageActionSheet.tsx");
+
+export default function EndStageActionSheet(channel) {
   let Button;
   let Button2;
   let intl;
@@ -218,19 +45,19 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EndStageActi
   const tmp = closure_7();
   let obj = { children: closure_6(View, obj2) };
   obj2 = { style: tmp.container, children: items };
-  let obj3 = { style: tmp.title, accessibilityRole: "header", children: intl.string(channel(1128).t.pADdJu) };
+  let obj3 = { style: tmp.title, accessibilityRole: "header", children: intl.string(channel(1113).t.pADdJu) };
   const tmp2 = ScrollHandlingActionSheetDefault;
-  const LegacyText = channel(1202).LegacyText;
-  intl = channel(1128).intl;
+  const LegacyText = channel(1187).LegacyText;
+  intl = channel(1113).intl;
   items = [closure_5(LegacyText, obj3), , , ];
-  const obj4 = { style: tmp.subtitle, variant: "text-md/medium", color: "text-default", children: intl2.string(channel(1128).t.mT7jwN) };
-  const Text = channel(5266).Text;
-  intl2 = channel(1128).intl;
+  const obj4 = { style: tmp.subtitle, variant: "text-md/medium", color: "text-default", children: intl2.string(channel(1113).t.mT7jwN) };
+  const Text = channel(5624).Text;
+  intl2 = channel(1113).intl;
   items[1] = closure_5(Text, obj4);
   const obj5 = { style: tmp.cancelButton, children: closure_5(Button, obj6) };
   obj6 = {
     variant: "secondary",
-    text: intl3.string(channel(1128).t.xTwqz2),
+    text: intl3.string(channel(1113).t.xTwqz2),
     onPress: function handleClose() {
       const obj = ActionSheetActionCreatorsDefault;
       obj.hideActionSheet(closure_4);
@@ -238,13 +65,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EndStageActi
       obj2.handleDisconnect(channel);
     }
   };
-  Button = channel(5276).Button;
-  intl3 = channel(1128).intl;
+  Button = channel(5634).Button;
+  intl3 = channel(1113).intl;
   items[2] = closure_5(View, obj5);
   const obj7 = { style: tmp.confirmButton, children: closure_5(Button2, obj8) };
   obj8 = {
     variant: "destructive",
-    text: intl4.string(channel(1128).t.wnWqGg),
+    text: intl4.string(channel(1113).t.wnWqGg),
     onPress: function handleConfirmClick() {
       const obj = StageChannelActionCreators;
       obj.endStage(channel);
@@ -254,11 +81,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EndStageActi
       obj3.handleDisconnect(channel);
     }
   };
-  Button2 = channel(5276).Button;
-  intl4 = channel(1128).intl;
+  Button2 = channel(5634).Button;
+  intl4 = channel(1113).intl;
   items[3] = closure_5(View, obj7);
   return closure_5(tmp2, obj);
-});
-const result = size.fileFinishedImporting("modules/stage_channels/native/components/EndStageActionSheet.tsx");
-
-export default tmp4;
+};

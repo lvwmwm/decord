@@ -1,12 +1,12 @@
-// Module ID: 10769
-// Function ID: 10770
+// Module ID: 10897
+// Function ID: 10898
 // Name: conjureLiveReloadConnection
-// Dependencies: [584, 10751, 2]
+// Dependencies: [572, 10874, 2]
 // Exports: sendLiveReload
 
-// Module 10769 (conjureLiveReloadConnection)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import conjureProjectSockets from "conjureProjectSockets" /* 10751 */;
+// Module 10897 (conjureLiveReloadConnection)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import conjureProjectSockets from "conjureProjectSockets" /* 10874 */;
 import size from "module_2" /* 2 */;
 
 let obj = {
@@ -36,7 +36,7 @@ let obj = {
 const result = size.fileFinishedImporting("modules/conjure/live_reload/conjureLiveReloadConnection.tsx");
 
 export const liveReloadFrameHandlers = obj;
-export const sendLiveReload = function sendLiveReload(projectId, arg1) {
+export function sendLiveReload(projectId, arg1) {
   const obj = conjureProjectSockets;
   const conjureSocket = obj.getConjureSocket(projectId);
   try {
@@ -53,4 +53,4 @@ export const sendLiveReload = function sendLiveReload(projectId, arg1) {
   } catch (err) {
     return false;
   }
-};
+}

@@ -1,25 +1,25 @@
-// Module ID: 13122
-// Function ID: 13123
+// Module ID: 13755
+// Function ID: 13756
 // Name: ChatInputCommandOptionParser
-// Dependencies: [32, 17, 5004, 6757, 4909, 4935, 1087, 6016, 1395, 12548, 4953, 12131, 2032, 2033, 8107, 8531, 7472, 10144, 4831, 587, 5636, 2]
+// Dependencies: [32, 17, 5015, 6796, 4920, 4946, 1072, 6036, 1386, 12797, 4964, 12436, 2025, 2026, 8144, 8600, 10224, 4839, 575, 5652, 2]
 // Exports: formatTimestampPillText, getChannelHighlightNodes, getCommandOptionValueEnd, getEmojiHighlightNodes, getGameHighlightNodes, getGameMentionInputNodes, getMatchedOptionsWithValue, getRoleHighlightNodes, getSilentHighlightNodes, getTextBeforeFirstOption, getTimestampHighlightNodes, getTimestampMentionInputNodes, getUsernameHighlightNodes, serializeComposerGameMentions, serializeComposerTimestampMentions, uniqueTimestampPillText
 
-// Module 13122 (ChatInputCommandOptionParser)
+// Module 13755 (ChatInputCommandOptionParser)
 import react_native from "react-native" /* 17 */;
-import Constants from "Constants" /* 1087 */;
-import EmojiConstants from "EmojiConstants" /* 1395 */;
-import getGameMediaRefURLDefault from "getGameMediaRefURL" /* 2032 */;
-import StringUtils from "StringUtils" /* 2033 */;
-import EmojiUtilsDefault from "EmojiUtils" /* 4953 */;
-import useChannelName from "useChannelName" /* 5636 */;
-import ApplicationCommandOptionValueParser from "ApplicationCommandOptionValueParser" /* 12131 */;
-import ChatInputParser from "ChatInputParser" /* 12548 */;
+import Constants from "Constants" /* 1072 */;
+import EmojiConstants from "EmojiConstants" /* 1386 */;
+import getGameMediaRefURLDefault from "getGameMediaRefURL" /* 2025 */;
+import StringUtils from "StringUtils" /* 2026 */;
+import EmojiUtilsDefault from "EmojiUtils" /* 4964 */;
+import useChannelName from "useChannelName" /* 5652 */;
+import ApplicationCommandOptionValueParser from "ApplicationCommandOptionValueParser" /* 12436 */;
+import ChatInputParser from "ChatInputParser" /* 12797 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import AccessibilityStore from "AccessibilityStore" /* 5004 */;
-import EmojiStore from "EmojiStore" /* 6757 */;
-import GuildRoleStore from "GuildRoleStore" /* 4909 */;
-import PermissionStore from "PermissionStore" /* 4935 */;
-import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 6016 */;
+import AccessibilityStore from "AccessibilityStore" /* 5015 */;
+import EmojiStore from "EmojiStore" /* 6796 */;
+import GuildRoleStore from "GuildRoleStore" /* 4920 */;
+import PermissionStore from "PermissionStore" /* 4946 */;
+import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 6036 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -30,7 +30,7 @@ let closure_12;
 let map1;
 let tmp;
 let unpackModuleId;
-const AssetRegistryDefault = tmp(8107);
+const AssetRegistryDefault = tmp(8144);
 function findTokenLocations(arr, arg1, fn) {
   const items = [];
   let index = arr.indexOf(arg1);
@@ -293,7 +293,7 @@ export const getMatchedOptionsWithValue = function(length2, activeCommand) {
   return [];
 };
 export { getMatchedOptions };
-export const getCommandOptionValueEnd = function getCommandOptionValueEnd(c22, sum, activeCommand) {
+export function getCommandOptionValueEnd(c22, sum, activeCommand) {
   let length;
   let closure_0 = sum;
   const obj = { activeCommand };
@@ -305,7 +305,7 @@ export const getCommandOptionValueEnd = function getCommandOptionValueEnd(c22, s
     length = c22.length;
   }
   return length;
-};
+}
 export const getTextBeforeFirstOption = (arr) => {
   let substr;
   re15.lastIndex = 0;
@@ -318,7 +318,7 @@ export const getTextBeforeFirstOption = (arr) => {
   }
   return obj;
 };
-export const getEmojiHighlightNodes = function getEmojiHighlightNodes(channel, arg1) {
+export function getEmojiHighlightNodes(channel, arg1) {
   if (0 === arg1.length) {
     return [];
   } else {
@@ -349,34 +349,34 @@ export const getEmojiHighlightNodes = function getEmojiHighlightNodes(channel, a
     }
     return items;
   }
-};
-export const getUsernameHighlightNodes = function getUsernameHighlightNodes(channel, arg1) {
-  const f160656 = (text) => _require(text.text) === closure_0;
+}
+export function getUsernameHighlightNodes(channel, arg1) {
+  const f137181 = (text) => _require(text.text) === closure_0;
   const items = [];
   const obj = ApplicationCommandOptionValueParser;
   const users = obj.getUsers(channel);
-  const f117084 = (arg0) => arg0;
+  const f104889 = (arg0) => arg0;
   let match = re17.exec(arg1);
   const obj2 = re17;
   if (null != match) {
     do {
       let str = match[1];
       let closure_0 = str.trim();
-      if (null != users.find(f160656)) {
+      if (null != users.find(f137181)) {
         let obj3 = { location: match.index, length: match[0].length };
         let arr = items.push(obj3);
       }
       match = obj2.exec(arg1);
     } while (null != match);
   }
-  const f117085 = (arg0) => arg0.split("#")[0];
+  const f104890 = (arg0) => arg0.split("#")[0];
   let match1 = re18.exec(arg1);
   const obj4 = re18;
   if (null != match1) {
     do {
       let str2 = match1[1];
       closure_0 = str2.trim();
-      if (null != users.find(f160656)) {
+      if (null != users.find(f137181)) {
         let obj5 = { location: match1.index, length: match1[0].length };
         let arr2 = items.push(obj5);
       }
@@ -384,9 +384,9 @@ export const getUsernameHighlightNodes = function getUsernameHighlightNodes(chan
     } while (null != match1);
   }
   return items;
-};
+}
 export { findGameMentionTokens };
-export const serializeComposerGameMentions = function serializeComposerGameMentions(text, mentionGames) {
+export function serializeComposerGameMentions(text, mentionGames) {
   let items = [];
   const values = mentionGames.values();
   for (const item10008 of values) {
@@ -430,9 +430,9 @@ export const serializeComposerGameMentions = function serializeComposerGameMenti
     continue;
   }
   return closure_1;
-};
+}
 export { buildGameMentionResult };
-export const getGameHighlightNodes = function getGameHighlightNodes(mentionGames, text) {
+export function getGameHighlightNodes(mentionGames, text) {
   let icon;
   let iconCornerRadius;
   let iconSize;
@@ -463,12 +463,12 @@ export const getGameHighlightNodes = function getGameHighlightNodes(mentionGames
     continue;
   }
   return items1;
-};
+}
 export const TIMESTAMP_PILL_SENTINEL = "\u2060";
-export const formatTimestampPillText = function formatTimestampPillText(formatted) {
+export function formatTimestampPillText(formatted) {
   return "\u2060" + formatted;
-};
-export const uniqueTimestampPillText = function uniqueTimestampPillText(mentionTimestamps, arg1, timestamp) {
+}
+export function uniqueTimestampPillText(mentionTimestamps, arg1, timestamp) {
   const value = mentionTimestamps.get(arg1);
   let tmp2 = arg1;
   if (null != value) {
@@ -496,9 +496,9 @@ export const uniqueTimestampPillText = function uniqueTimestampPillText(mentionT
     }
   }
   return tmp2;
-};
+}
 export { findAllTimestampPillMatches };
-export const serializeComposerTimestampMentions = function serializeComposerTimestampMentions(text, mentionTimestamps) {
+export function serializeComposerTimestampMentions(text, mentionTimestamps) {
   const arr = findAllTimestampPillMatches(mentionTimestamps, text);
   const sorted = arr.sort((location, location2) => location2.location - location.location);
   return arr.reduce((arr, pillText) => {
@@ -511,33 +511,28 @@ export const serializeComposerTimestampMentions = function serializeComposerTime
     const sum = substr + obj.unparseTimestamp(mention.timestamp, mention.format);
     return sum + arr.slice(_location + pillText.length);
   }, text);
-};
-export const getTimestampHighlightNodes = function getTimestampHighlightNodes(mentionTimestamps, text) {
+}
+export function getTimestampHighlightNodes(mentionTimestamps, text) {
   const arr = findAllTimestampPillMatches(mentionTimestamps, text);
   return arr.map((location) => ({ location: location.location, length: location.pillText.length }));
-};
-export const getTimestampMentionInputNodes = function getTimestampMentionInputNodes(arr) {
+}
+export function getTimestampMentionInputNodes(arr) {
   let length;
-  const TimestampAutocompleteMobileExperiment = require("TimestampAutocompleteMobileExperiment").TimestampAutocompleteMobileExperiment;
+  _require = closure_11;
   const items = [];
-  if (TimestampAutocompleteMobileExperiment.getConfig({ location: "timestamp mention input highlight" }).enabled) {
-    _require = closure_11;
-    let index = arr.indexOf(closure_11);
-    if (-1 !== index) {
-      do {
-        let obj = require("autocompleter/AutocompleteUtils");
-        if (obj.isWhitespaceSeparatingBoundary(arr, index)) {
-          arr = items.push(index);
-        }
-        index = arr.indexOf(arr2, index + arr2.length);
-      } while (-1 !== index);
-    }
-    return items.map((location) => ({ location, length: length.length }));
-  } else {
-    return items;
+  let index = arr.indexOf(closure_11);
+  if (-1 !== index) {
+    do {
+      let obj = require("autocompleter/AutocompleteUtils");
+      if (obj.isWhitespaceSeparatingBoundary(arr, index)) {
+        let arr2 = items.push(index);
+      }
+      index = arr.indexOf(arr, index + arr.length);
+    } while (-1 !== index);
   }
-};
-export const getGameMentionInputNodes = function getGameMentionInputNodes(arr) {
+  return items.map((location) => ({ location, length: length.length }));
+}
+export function getGameMentionInputNodes(arr) {
   let length;
   const IncludeGameMentionsInAutocomplete = require("UserSettings").IncludeGameMentionsInAutocomplete;
   const items = [];
@@ -557,7 +552,7 @@ export const getGameMentionInputNodes = function getGameMentionInputNodes(arr) {
   } else {
     return items;
   }
-};
+}
 export const getRoleHighlightNodes = (getGuildId, arg1) => {
   let roleStyle;
   const items = [];
@@ -607,12 +602,12 @@ export const getRoleHighlightNodes = (getGuildId, arg1) => {
         } else if (reversed[reversed.length - 1].startsWith(everyone)) {
           const obj5 = { location: match1.index, length: 9, data: obj6 };
           const push2 = str.push;
-          obj6 = { type: items(obj[9]).ChatInputParseResultDataType.ROLE_HIGHLIGHT, color: match1(obj[19]).unsafe_rawColors.BRAND_500 };
+          obj6 = { type: items(obj[9]).ChatInputParseResultDataType.ROLE_HIGHLIGHT, color: match1(obj[18]).unsafe_rawColors.BRAND_500 };
           push2(obj5);
         } else if (reversed[reversed.length - 1].startsWith(here)) {
           const obj7 = { location: match1.index, length: 5, data: obj8 };
           const push = str.push;
-          obj8 = { type: items(obj[9]).ChatInputParseResultDataType.ROLE_HIGHLIGHT, color: match1(obj[19]).unsafe_rawColors.BRAND_500 };
+          obj8 = { type: items(obj[9]).ChatInputParseResultDataType.ROLE_HIGHLIGHT, color: match1(obj[18]).unsafe_rawColors.BRAND_500 };
           push(obj7);
         }
       }
@@ -630,7 +625,7 @@ export const getRoleHighlightNodes = (getGuildId, arg1) => {
     return items;
   }
 };
-export const getSilentHighlightNodes = function getSilentHighlightNodes(arg0) {
+export function getSilentHighlightNodes(arg0) {
   const items = [];
   const match = re21.exec(arg0);
   if (null != match) {
@@ -638,8 +633,8 @@ export const getSilentHighlightNodes = function getSilentHighlightNodes(arg0) {
     items.push(obj);
   }
   return items;
-};
-export const getChannelHighlightNodes = function getChannelHighlightNodes(channel, arg1) {
+}
+export function getChannelHighlightNodes(channel, arg1) {
   let _loop5Result;
   let closure_2;
   _require = arg1;
@@ -705,4 +700,4 @@ export const getChannelHighlightNodes = function getChannelHighlightNodes(channe
     } while (!_loop5Result);
   }
   return items;
-};
+}

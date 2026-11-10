@@ -1,19 +1,19 @@
-// Module ID: 15682
-// Function ID: 15683
+// Module ID: 16226
+// Function ID: 16227
 // Name: ICYMISessionStore
-// Dependencies: [5222, 1261, 8875, 502, 8855, 1281, 15683, 504, 584, 2]
+// Dependencies: [5238, 1246, 8562, 502, 8906, 1266, 16227, 504, 572, 2]
 // Exports: resetGlobalState
 
-// Module 15682 (ICYMISessionStore)
+// Module 16226 (ICYMISessionStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import v1 from "v1" /* 1281 */;
-import ICYMIAnalytics2 from "ICYMIAnalytics" /* 15683 */;
-import ExperimentStore from "ExperimentStore" /* 5222 */;
-import ApexExperimentStore from "ApexExperimentStore" /* 1261 */;
-import LabFeatureStore from "LabFeatureStore" /* 8875 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import v1 from "v1" /* 1266 */;
+import ICYMIAnalytics2 from "ICYMIAnalytics" /* 16227 */;
+import ExperimentStore from "ExperimentStore" /* 5238 */;
+import ApexExperimentStore from "ApexExperimentStore" /* 1246 */;
+import LabFeatureStore from "LabFeatureStore" /* 8562 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ICYMIStore from "ICYMIStore" /* 8855 */;
+import ICYMIStore from "ICYMIStore" /* 8906 */;
 import size from "module_2" /* 2 */;
 
 let _null, c10, set;
@@ -148,7 +148,7 @@ class ICYMISession {
       }
       ({ interactionActionTypes: obj.interactionActionTypes, interactionCount: obj.interactionCount, uxVariation } = tmp7);
       if (uxVariation == null) {
-        uxVariation = tmp11(15683).DEFAULT_UX_VARIATION;
+        uxVariation = tmp11(16227).DEFAULT_UX_VARIATION;
       }
       let trackFeedItemDwell1sResult = trackFeedItemDwell1s(obj);
       continue;
@@ -344,7 +344,7 @@ class ICYMISession {
       }
       DEFAULT_UX_VARIATION = tmp2.uxVariation;
       if (DEFAULT_UX_VARIATION == null) {
-        DEFAULT_UX_VARIATION = tmp5(15683).DEFAULT_UX_VARIATION;
+        DEFAULT_UX_VARIATION = tmp5(16227).DEFAULT_UX_VARIATION;
       }
       ({ interactionActionTypes: obj.interactionActionTypes, interactionCount: obj.interactionCount, sessionImpressionIndex: obj.sessionImpressionIndex } = this._activeItems[findIndexResult]);
       trackFeedItemDwelled(obj);
@@ -606,7 +606,7 @@ const iCYMISessionStore = new ICYMISessionStore(DispatcherDefault, obj);
 let result = size.fileFinishedImporting("modules/icymi/ICYMISessionStore.tsx");
 
 export default iCYMISessionStore;
-export const resetGlobalState = function resetGlobalState() {
+export function resetGlobalState() {
   if (null != _null) {
     const _clearTimeout = clearTimeout;
     clearTimeout(_null._timeout);
@@ -615,5 +615,5 @@ export const resetGlobalState = function resetGlobalState() {
   closure_9 = [];
   c10 = 0;
   map.clear();
-};
+}
 export { ICYMISession };

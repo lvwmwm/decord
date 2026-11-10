@@ -1,54 +1,30 @@
-// Module ID: 16695
-// Function ID: 16696
+// Module ID: 17290
+// Function ID: 17291
 // Name: SameAsDeviceThemeSetting
-// Dependencies: [1207, 8364, 558, 576, 504, 16415, 11240, 1128, 2]
+// Dependencies: [1192, 8432, 504, 17004, 11540, 1113, 2]
 
-// Module 16695 (SameAsDeviceThemeSetting)
-import react from "react" /* 576 */;
-import intl2 from "intl" /* 1128 */;
-import SettingsConstants from "SettingsConstants" /* 8364 */;
-import UserSettingsAppearanceThemeUtils from "UserSettingsAppearanceThemeUtils" /* 16415 */;
-import ThemeStore from "ThemeStore" /* 1207 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11240 */;
+// Module 17290 (SameAsDeviceThemeSetting)
+import get_initialized from "get initialized" /* 504 */;
+import intl2 from "intl" /* 1113 */;
+import SettingsConstants from "SettingsConstants" /* 8432 */;
+import UserSettingsAppearanceThemeUtils from "UserSettingsAppearanceThemeUtils" /* 17004 */;
+import ThemeStore from "ThemeStore" /* 1192 */;
+import SettingBuilders from "SettingBuilders" /* 11540 */;
 import size from "module_2" /* 2 */;
 
-let tmp;
-const get_initialized = tmp(504);
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSameAsDeviceThemeValue() {
-  let sameAsDeviceThemeEnabled;
-  let tmp4;
-  let tmp5;
-  const obj = react;
-  const cResult = obj.c(2);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [ThemeStore];
-    const fn = function n() {
-      return sameAsDeviceThemeEnabled.isSameAsDeviceThemeEnabled();
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  const tmpResult = get_initialized;
-  return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (function useSameAsDeviceThemeValue() {
-  let sameAsDeviceThemeEnabled;
-  const items = [ThemeStore];
-  const obj = get_initialized;
-  return obj.useStateFromStores(items, () => sameAsDeviceThemeEnabled.isSameAsDeviceThemeEnabled());
-});
 let obj = {
   useTitle() {
     const intl = intl2.intl;
     return intl.string(intl2.t.c445ix);
   },
   parent: MobileUserSettings.APPEARANCE,
-  useValue: tmp2,
+  useValue: function useSameAsDeviceThemeValue() {
+    let sameAsDeviceThemeEnabled;
+    const items = [ThemeStore];
+    const obj = get_initialized;
+    return obj.useStateFromStores(items, () => sameAsDeviceThemeEnabled.isSameAsDeviceThemeEnabled());
+  },
   onValueChange: function onSameAsDeviceThemeValueChange(arg0) {
     const obj = UserSettingsAppearanceThemeUtils;
     const tmp = arg0;

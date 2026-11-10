@@ -1,19 +1,19 @@
-// Module ID: 7796
-// Function ID: 7797
+// Module ID: 7834
+// Function ID: 7835
 // Name: _slicedToArray
 // Dependencies: [32, 2]
 // Exports: makeStorefrontSKUCodedLink, parseStorefrontSkuCodedLink
 
-// Module 7796 (_slicedToArray)
+// Module 7834 (_slicedToArray)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/application_storefront/storefrontMessageEmbedCodedLink.tsx");
 
-export const makeStorefrontSKUCodedLink = function makeStorefrontSKUCodedLink(match7, match72) {
+export function makeStorefrontSKUCodedLink(match7, match72) {
   return "" + match7 + ":" + match72;
-};
-export const parseStorefrontSkuCodedLink = function parseStorefrontSkuCodedLink(code) {
+}
+export function parseStorefrontSkuCodedLink(code) {
   const parts = code.split(":");
   if (2 !== parts.length) {
     return null;
@@ -23,4 +23,4 @@ export const parseStorefrontSkuCodedLink = function parseStorefrontSkuCodedLink(
     _slicedToArray(parts, 2);
     return obj;
   }
-};
+}

@@ -1,18 +1,18 @@
-// Module ID: 17424
-// Function ID: 17425
+// Module ID: 18009
+// Function ID: 18010
 // Name: useUsernameRegistrationStep
-// Dependencies: [32, 19, 16033, 17399, 17400, 17396, 1505, 7082, 16031, 16030, 17398, 1506, 1128, 2]
+// Dependencies: [32, 19, 16604, 17984, 17985, 17981, 1497, 7124, 16602, 16601, 17983, 1498, 1113, 2]
 // Exports: useUsernameRegistrationStep
 
-// Module 17424 (useUsernameRegistrationStep)
-import intl2 from "intl" /* 1128 */;
-import UniqueUsernamesTypes from "UniqueUsernamesTypes" /* 16030 */;
-import RegistrationStepsUtils from "RegistrationStepsUtils" /* 17398 */;
-import RegistrationUIStore from "RegistrationUIStore" /* 17399 */;
+// Module 18009 (useUsernameRegistrationStep)
+import intl2 from "intl" /* 1113 */;
+import UniqueUsernamesTypes from "UniqueUsernamesTypes" /* 16601 */;
+import RegistrationStepsUtils from "RegistrationStepsUtils" /* 17983 */;
+import RegistrationUIStore from "RegistrationUIStore" /* 17984 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UniqueUsernamesStore from "UniqueUsernamesStore" /* 16033 */;
-import RegistrationConstants from "RegistrationConstants" /* 17400 */;
+import UniqueUsernamesStore from "UniqueUsernamesStore" /* 16604 */;
+import RegistrationConstants from "RegistrationConstants" /* 17985 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -24,7 +24,7 @@ const useRegistrationUIStore = RegistrationUIStore.useRegistrationUIStore;
 ({ authStateToRegisterTransitionStep: metroImportDefault, RegistrationTransitionActionTypes: metroImportAll } = RegistrationConstants);
 let result = size.fileFinishedImporting("modules/auth/native/components/utils/useUsernameRegistrationStep.tsx");
 
-export const useUsernameRegistrationStep = function useUsernameRegistrationStep(REGISTER_ACCOUNT_INFORMATION) {
+export function useUsernameRegistrationStep(REGISTER_ACCOUNT_INFORMATION) {
   let username;
   let usernameStatus;
   _require = REGISTER_ACCOUNT_INFORMATION;
@@ -81,7 +81,7 @@ export const useUsernameRegistrationStep = function useUsernameRegistrationStep(
       const tmp3Result4 = RegistrationStepsUtils;
       const nextAuthState = tmp3Result4.getNextAuthState(REGISTER_ACCOUNT_INFORMATION);
       const dispatch = navigation.dispatch;
-      const StackActions = tmp3(1506).StackActions;
+      const StackActions = tmp3(1498).StackActions;
       dispatch(StackActions.push(nextAuthState));
     }
   }, items);
@@ -134,4 +134,4 @@ export const useUsernameRegistrationStep = function useUsernameRegistrationStep(
     }, items2)
   };
   return obj4;
-};
+}

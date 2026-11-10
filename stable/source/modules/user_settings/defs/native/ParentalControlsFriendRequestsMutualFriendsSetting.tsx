@@ -1,62 +1,40 @@
-// Module ID: 17337
-// Function ID: 17338
+// Module ID: 17934
+// Function ID: 17935
 // Name: ParentalControlsFriendRequestsMutualFriendsSetting
-// Dependencies: [19, 7677, 8364, 1087, 558, 576, 8159, 16144, 7123, 1405, 11240, 1128, 2]
+// Dependencies: [19, 7715, 8432, 1072, 8371, 16717, 7165, 1396, 11540, 1113, 2]
 
-// Module 17337 (ParentalControlsFriendRequestsMutualFriendsSetting)
-import react2 from "react" /* 576 */;
-import Constants from "Constants" /* 1087 */;
-import intl2 from "intl" /* 1128 */;
-import FlagUtilsAll from "FlagUtils" /* 1405 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 7123 */;
-import useSelectedTeen from "useSelectedTeen" /* 8159 */;
-import SettingsConstants from "SettingsConstants" /* 8364 */;
-import ParentalControlledUserSettings from "ParentalControlledUserSettings" /* 16144 */;
+// Module 17934 (ParentalControlsFriendRequestsMutualFriendsSetting)
+import Constants from "Constants" /* 1072 */;
+import intl2 from "intl" /* 1113 */;
+import FlagUtilsAll from "FlagUtils" /* 1396 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 7165 */;
+import SettingsConstants from "SettingsConstants" /* 8432 */;
+import ParentalControlledUserSettings from "ParentalControlledUserSettings" /* 16717 */;
 import react from "react" /* 19 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7677 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11240 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7715 */;
+import SettingBuilders from "SettingBuilders" /* 11540 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const FriendSourceFlags = Constants.FriendSourceFlags;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFriendRequestsMutualFriendsSettingValue() {
-  let tmp6;
-  const obj = react2;
-  const cResult = obj.c(2);
-  const obj2 = useSelectedTeen;
-  const selectedTeenId = obj2.useSelectedTeenId();
-  const ParentalControlledFriendSourceFlags = tmp(16144).ParentalControlledFriendSourceFlags;
-  const controlledSetting = ParentalControlledFriendSourceFlags.useControlledSetting(selectedTeenId);
-  if (cResult[0] !== controlledSetting) {
-    const tmpResult = UserSettingsUtils;
-    const flags = tmpResult.computeFlags(controlledSetting);
-    cResult[0] = controlledSetting;
-    cResult[1] = flags;
-    tmp6 = flags;
-  } else {
-    tmp6 = cResult[1];
-  }
-  return tmp6.mutualFriends;
-}) : (function useFriendRequestsMutualFriendsSettingValue() {
-  let controlledSetting;
-  let obj = controlledSetting(8159);
-  const selectedTeenId = obj.useSelectedTeenId();
-  const ParentalControlledFriendSourceFlags = controlledSetting(16144).ParentalControlledFriendSourceFlags;
-  controlledSetting = ParentalControlledFriendSourceFlags.useControlledSetting(selectedTeenId);
-  const items = [controlledSetting];
-  return react.useMemo(() => {
-    const obj = UserSettingsUtils;
-    return obj.computeFlags(controlledSetting);
-  }, items).mutualFriends;
-});
 let obj = {
   useTitle() {
     const intl = intl2.intl;
     return intl.string(intl2.t.IqlCSq);
   },
   parent: MobileUserSettings.FAMILY_CENTER_PARENTAL_CONTROLS_SETTINGS,
-  useValue: tmp2,
+  useValue: function useFriendRequestsMutualFriendsSettingValue() {
+    let controlledSetting;
+    let obj = controlledSetting(8371);
+    const selectedTeenId = obj.useSelectedTeenId();
+    const ParentalControlledFriendSourceFlags = controlledSetting(16717).ParentalControlledFriendSourceFlags;
+    controlledSetting = ParentalControlledFriendSourceFlags.useControlledSetting(selectedTeenId);
+    const items = [controlledSetting];
+    return react.useMemo(() => {
+      const obj = UserSettingsUtils;
+      return obj.computeFlags(controlledSetting);
+    }, items).mutualFriends;
+  },
   onValueChange: function onFriendRequestsMutualFriendsSettingValueChange(arg0) {
     const selectedTeenId = FamilyCenterStore.getSelectedTeenId();
     if (null != selectedTeenId) {

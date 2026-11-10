@@ -1,12 +1,12 @@
-// Module ID: 8975
-// Function ID: 8976
+// Module ID: 9019
+// Function ID: 9020
 // Name: PermissionsConstants
-// Dependencies: [1087, 1099, 4863, 2]
+// Dependencies: [1072, 1084, 4871, 2]
 
-// Module 8975 (PermissionsConstants)
-import Constants from "Constants" /* 1087 */;
-import StageChannelPermissions from "StageChannelPermissions" /* 4863 */;
-import BigFlagUtils_mod from "BigFlagUtils" /* 1099 */;
+// Module 9019 (PermissionsConstants)
+import Constants from "Constants" /* 1072 */;
+import StageChannelPermissions from "StageChannelPermissions" /* 4871 */;
+import BigFlagUtils_mod from "BigFlagUtils" /* 1084 */;
 import size from "module_2" /* 2 */;
 
 const Permissions = Constants.Permissions;

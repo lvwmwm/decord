@@ -1,11 +1,11 @@
-// Module ID: 7746
-// Function ID: 7747
+// Module ID: 7783
+// Function ID: 7784
 // Name: ProfileReadStateUtils
-// Dependencies: [7747, 2]
-// Exports: getWishlistUpdatedAtTimestamp, hasWishlistBeenUpdatedSinceLastViewed, isWishlistItemNew, parseProfileReadState
+// Dependencies: [7784, 2]
+// Exports: getWishlistUpdatedAtTimestamp, hasWishlistBeenUpdatedSinceAcked, isWishlistItemNew, mergeProfileReadState, parseProfileReadState, shouldAckWishlist
 
-// Module 7746 (ProfileReadStateUtils)
-import ProfileReadStateConstants from "ProfileReadStateConstants" /* 7747 */;
+// Module 7783 (ProfileReadStateUtils)
+import ProfileReadStateConstants from "ProfileReadStateConstants" /* 7784 */;
 import size from "module_2" /* 2 */;
 
 function parseTimestamp(arg0) {
@@ -25,15 +25,15 @@ function parseTimestamp(arg0) {
 const ProfileReadStateSection = ProfileReadStateConstants.ProfileReadStateSection;
 const result = size.fileFinishedImporting("modules/user_profile/ProfileReadStateUtils.tsx");
 
-export const parseProfileReadState = function parseProfileReadState(profile_read_state) {
-  if (null != profile_read_state) {
+export function parseProfileReadState(body) {
+  if (null != body) {
     const obj = {};
     const _Object = Object;
     const values = Object.values(ProfileReadStateSection);
     const iter = values[Symbol.iterator]();
     const nextResult = iter.next();
     while (iter !== undefined) {
-      let tmp10 = profile_read_state.sections[nextResult];
+      let tmp10 = body.sections[nextResult];
       let acked_at;
       let tmp8 = nextResult;
       let tmp9 = parseTimestamp;
@@ -48,8 +48,8 @@ export const parseProfileReadState = function parseProfileReadState(profile_read
     }
     return obj;
   }
-};
-export const getWishlistUpdatedAtTimestamp = function getWishlistUpdatedAtTimestamp(updated_at) {
+}
+export function getWishlistUpdatedAtTimestamp(updated_at) {
   updated_at = undefined;
   if (updated_at != null) {
     updated_at = updated_at.updated_at;
@@ -66,12 +66,12 @@ export const getWishlistUpdatedAtTimestamp = function getWishlistUpdatedAtTimest
     tmp2 = tmp5;
   }
   return tmp2;
-};
-export const isWishlistItemNew = function isWishlistItemNew(arg0, arg1) {
+}
+export function isWishlistItemNew(addedAt, profileReadStateSectionAckedAt) {
   let tmp = null;
-  if (null != arg0) {
+  if (null != addedAt) {
     const _Date = Date;
-    const parsed = Date.parse(arg0);
+    const parsed = Date.parse(addedAt);
     const _Number = Number;
     let tmp4 = null;
     if (!Number.isNaN(parsed)) {
@@ -79,15 +79,15 @@ export const isWishlistItemNew = function isWishlistItemNew(arg0, arg1) {
     }
     tmp = tmp4;
   }
-  return null != tmp && null != arg1 && tmp > arg1;
-};
-export const hasWishlistBeenUpdatedSinceLastViewed = function hasWishlistBeenUpdatedSinceLastViewed(updated_at, lastViewedAt) {
-  if (null == lastViewedAt) {
+  return null != tmp && null != profileReadStateSectionAckedAt && tmp > profileReadStateSectionAckedAt;
+}
+export function hasWishlistBeenUpdatedSinceAcked(wishlistSettings, profileReadStateSectionAckedAt) {
+  if (null == profileReadStateSectionAckedAt) {
     return false;
   } else {
-    updated_at = undefined;
-    if (updated_at != null) {
-      updated_at = updated_at.updated_at;
+    let updated_at;
+    if (wishlistSettings != null) {
+      updated_at = wishlistSettings.updated_at;
     }
     let tmp3 = null;
     if (null != updated_at) {
@@ -100,6 +100,62 @@ export const hasWishlistBeenUpdatedSinceLastViewed = function hasWishlistBeenUpd
       }
       tmp3 = tmp6;
     }
-    return null != tmp3 && tmp3 > lastViewedAt.lastViewedAt;
+    return null != tmp3 && tmp3 > profileReadStateSectionAckedAt;
   }
-};
+}
+export function mergeProfileReadState(profileReadState, ackedAt) {
+  let tmp = ackedAt;
+  if (null != profileReadState) {
+    if (null != tmp) {
+      const obj = {};
+      const merged = Object.assign(profileReadState);
+      const _Object = Object;
+      const values = Object.values(ProfileReadStateSection);
+      for (const item10018 of values) {
+        let tmp10 = item10018;
+        let tmp11 = tmp[item10018];
+        let tmp12 = tmp11;
+        let tmp13 = null != tmp11;
+        if (tmp13) {
+          let num = obj[tmp10] ?? 0;
+          tmp13 = tmp12 > num;
+        }
+        if (tmp13) {
+          obj[tmp10] = tmp12;
+        }
+        continue;
+      }
+      return obj;
+    }
+  }
+  if (tmp == null) {
+    tmp = profileReadState;
+  }
+  return tmp;
+}
+export function shouldAckWishlist(wishlistSettings, stateFromStores) {
+  let tmp = null == stateFromStores;
+  if (!tmp) {
+    let flag = false;
+    if (null != stateFromStores) {
+      let updated_at;
+      if (wishlistSettings != null) {
+        updated_at = wishlistSettings.updated_at;
+      }
+      let tmp4 = null;
+      if (null != updated_at) {
+        const _Date = Date;
+        const parsed = Date.parse(updated_at);
+        const _Number = Number;
+        let tmp7 = null;
+        if (!Number.isNaN(parsed)) {
+          tmp7 = parsed;
+        }
+        tmp4 = tmp7;
+      }
+      flag = null != tmp4 && tmp4 > stateFromStores;
+    }
+    tmp = flag;
+  }
+  return tmp;
+}

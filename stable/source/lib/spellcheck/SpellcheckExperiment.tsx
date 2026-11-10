@@ -1,11 +1,11 @@
-// Module ID: 6896
-// Function ID: 6897
+// Module ID: 6937
+// Function ID: 6938
 // Name: SpellcheckExperiment
-// Dependencies: [1455, 2]
+// Dependencies: [1447, 2]
 // Exports: isElectronMultilangSpellcheckEnabled
 
-// Module 6896 (SpellcheckExperiment)
-import ApexExperiment from "ApexExperiment" /* 1455 */;
+// Module 6937 (SpellcheckExperiment)
+import ApexExperiment from "ApexExperiment" /* 1447 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -16,6 +16,6 @@ const apexExperiment = ApexExperiment.createApexExperiment(obj);
 const result = size.fileFinishedImporting("lib/spellcheck/SpellcheckExperiment.tsx");
 
 export const SpellcheckExperiment = apexExperiment;
-export const isElectronMultilangSpellcheckEnabled = function isElectronMultilangSpellcheckEnabled() {
+export function isElectronMultilangSpellcheckEnabled() {
   return apexExperiment.getConfig({ location: "isElectronMultilangSpellcheckEnabled" }).enableElectronMultilangSpellcheck;
-};
+}

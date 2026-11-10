@@ -1,22 +1,25 @@
-// Module ID: 18087
-// Function ID: 18088
+// Module ID: 16364
+// Function ID: 16365
 // Name: conjureBackgroundFramePlatform
-// Dependencies: [5641, 6808, 10799, 11925, 5658, 5739, 2]
+// Dependencies: [6846, 5657, 6847, 16365, 10927, 16366, 12252, 5675, 5756, 2]
 
-// Module 18087 (conjureBackgroundFramePlatform)
-import ActivityPanelConstants from "ActivityPanelConstants" /* 5641 */;
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5658 */;
-import FramesActionCreatorsDefault from "FramesActionCreators" /* 10799 */;
-import FramePoolManagerDefault from "FramePoolManager" /* 11925 */;
-import FramesConstants from "FramesConstants" /* 6808 */;
+// Module 16364 (conjureBackgroundFramePlatform)
+import ActivityPanelConstants from "ActivityPanelConstants" /* 5657 */;
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5675 */;
+import FramesActionCreatorsDefault from "FramesActionCreators" /* 10927 */;
+import FramePoolManagerDefault from "FramePoolManager" /* 12252 */;
+import isConjureAppChannelFrameDefault from "isConjureAppChannelFrame" /* 16365 */;
+import conjureAppPictureInPictureFrames from "conjureAppPictureInPictureFrames" /* 16366 */;
+import FramesStore from "FramesStore" /* 6846 */;
+import FramesConstants from "FramesConstants" /* 6847 */;
 import size from "module_2" /* 2 */;
 
-let closure_4;
 let hasOwnProperty;
+let metroRequire;
 let tmp;
-const transitionToChannel = tmp(5739);
+const transitionToChannel = tmp(5756);
 const ActivityPanelModes = ActivityPanelConstants.ActivityPanelModes;
-({ asLaunched: closure_4, FrameLayoutModes: hasOwnProperty } = FramesConstants);
+({ asLaunched: hasOwnProperty, FrameLayoutModes: metroRequire } = FramesConstants);
 let obj = {
   isInHostWindow() {
     return false;
@@ -24,11 +27,11 @@ let obj = {
   isActivityPopoutOpen() {
     return false;
   },
-  hasOwnPictureInPicture() {
-    return false;
+  hasOwnPictureInPicture(frame) {
+    return isConjureAppChannelFrameDefault(frame);
   },
   isPictureInPicture(surface) {
-    const tmp = React3(surface);
+    const tmp = hasOwnProperty(surface);
     let activityPanelMode;
     if (tmp != null) {
       activityPanelMode = tmp.data.activityPanelMode;
@@ -39,12 +42,21 @@ let obj = {
     const obj = FramesActionCreatorsDefault;
     obj.updateFramePanelMode(frameId, ActivityPanelModes.PIP);
     const obj2 = FramesActionCreatorsDefault;
-    const obj3 = { frameId, layoutMode: hasOwnProperty.PIP };
+    const obj3 = { frameId, layoutMode: metroRequire.PIP };
     const result = obj2.updateFrameLayoutMode(obj3);
   },
   isOnScreen(id) {
-    const obj = FramePoolManagerDefault;
-    return null != obj.getWinningTarget(id);
+    const frame = FramesStore.getFrame(id);
+    let tmp2 = null == frame;
+    if (!tmp2) {
+      const obj = conjureAppPictureInPictureFrames;
+      tmp2 = !obj.isConjureAppPictureInPictureFrame(frame);
+    }
+    if (tmp2) {
+      const obj2 = FramePoolManagerDefault;
+      tmp2 = null != obj2.getWinningTarget(id);
+    }
+    return tmp2;
   },
   openSurfaceChannel(surface, channel) {
     let flag = surface.type === EmbeddedSurfaceType.EmbeddedSurfaceType.APP_CHANNEL;

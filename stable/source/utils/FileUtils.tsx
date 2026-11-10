@@ -1,19 +1,19 @@
-// Module ID: 8182
-// Function ID: 8183
+// Module ID: 8216
+// Function ID: 8217
 // Name: FileUtils
-// Dependencies: [4877, 1392, 1087, 1394, 12, 8183, 2053, 8178, 6411, 1128, 2]
+// Dependencies: [4885, 1383, 1072, 1385, 12, 8217, 2047, 8212, 6451, 1113, 2]
 // Exports: classifyFile, classifyFileName, fileUploadLimitRoadblockDescription, makeFile, maxFileSize, sizeString, transformNativeFile, uploadSumTooLarge
 
-// Module 8182 (FileUtils)
+// Module 8216 (FileUtils)
 import _modDef12 from "module_12" /* 12 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 2053 */;
-import FileSizeUtils from "FileSizeUtils" /* 6411 */;
-import UploadUtils from "UploadUtils" /* 8178 */;
-import _modDef8183 from "module_8183" /* 8183 */;
-import GuildStore from "GuildStore" /* 4877 */;
-import UserStore from "UserStore" /* 1392 */;
-import Constants from "Constants" /* 1087 */;
-import PremiumConstants from "PremiumConstants" /* 1394 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 2047 */;
+import FileSizeUtils from "FileSizeUtils" /* 6451 */;
+import UploadUtils from "UploadUtils" /* 8212 */;
+import _modDef8217 from "module_8217" /* 8217 */;
+import GuildStore from "GuildStore" /* 4885 */;
+import UserStore from "UserStore" /* 1383 */;
+import Constants from "Constants" /* 1072 */;
+import PremiumConstants from "PremiumConstants" /* 1385 */;
 import size from "module_2" /* 2 */;
 
 let reType;
@@ -21,8 +21,8 @@ let reType;
 let GuildFeatures;
 let hasOwnProperty;
 let tmp;
-const intl2 = tmp(1128);
-const PremiumUtils = tmp(2053);
+const intl2 = tmp(1113);
+const PremiumUtils = tmp(2047);
 function getUploadFileSizeSum(arg0) {
   let num = 0;
   const tmp = arg0[Symbol.iterator]();
@@ -42,7 +42,7 @@ const items3 = [GuildFeatures.MAX_FILE_SIZE_50_MB, PremiumConstants.MAX_GUILD_FI
 items2[1] = items3;
 const result = size.fileFinishedImporting("utils/FileUtils.tsx");
 
-export const transformNativeFile = function transformNativeFile(filename, arg1) {
+export function transformNativeFile(filename, arg1) {
   let file = filename;
   if (!(filename instanceof File)) {
     let str = arg1;
@@ -59,14 +59,14 @@ export const transformNativeFile = function transformNativeFile(filename, arg1) 
     file = new File(items, filename, obj);
   }
   return file;
-};
-export const makeFile = function makeFile(arg0, arg1, type) {
+}
+export function makeFile(arg0, arg1, type) {
   items = [arg0];
   const obj = { type };
   const file = new File(items, arg1, obj);
   return file;
-};
-export const classifyFile = function classifyFile(file) {
+}
+export function classifyFile(file) {
   const type = file.type;
   let str2;
   if (file.name != null) {
@@ -96,12 +96,12 @@ export const classifyFile = function classifyFile(file) {
     str3 = found.klass;
   }
   return str3;
-};
-export const classifyFileName = function classifyFileName(fileName, arg1) {
+}
+export function classifyFileName(str, arg1) {
   let closure_1 = arg1;
-  let str;
-  if (fileName != null) {
-    str = fileName.toLowerCase();
+  str = undefined;
+  if (str != null) {
+    str = str.toLowerCase();
   }
   if (str == null) {
     str = "";
@@ -127,12 +127,12 @@ export const classifyFileName = function classifyFileName(fileName, arg1) {
     str2 = found.klass;
   }
   return str2;
-};
-export const sizeString = function sizeString(size) {
-  const obj = _modDef8183;
-  return obj.filesize(size);
-};
-export const maxFileSize = function maxFileSize(guildId) {
+}
+export function sizeString(currentSize) {
+  const obj = _modDef8217;
+  return obj.filesize(currentSize);
+}
+export function maxFileSize(guildId) {
   const currentUser = UserStore.getCurrentUser();
   const obj = PremiumUtilsDefault;
   const userMaxFileSize = obj.getUserMaxFileSize(currentUser);
@@ -162,14 +162,14 @@ export const maxFileSize = function maxFileSize(guildId) {
     const _Math = Math;
     return Math.max(reduced, userMaxFileSize);
   }
-};
+}
 export { getUploadFileSizeSum };
-export const uploadSumTooLarge = function uploadSumTooLarge(arg0) {
+export function uploadSumTooLarge(arg0) {
   const tmp = getUploadFileSizeSum(arg0);
   const obj = UploadUtils;
   return tmp > obj.getMaxTotalAttachmentSize({ location: "uploadSumTooLarge" });
-};
-export const fileUploadLimitRoadblockDescription = function fileUploadLimitRoadblockDescription(arg0) {
+}
+export function fileUploadLimitRoadblockDescription(arg0) {
   let guildId;
   let maxSize;
   ({ guildId, maxSize } = arg0);
@@ -213,4 +213,4 @@ export const fileUploadLimitRoadblockDescription = function fileUploadLimitRoadb
   const premiumMaxSize = tmpResult.getMaxFileSizeForPremiumType(PremiumTypes.TIER_2, { useSpace: false });
   const intl = intl2.intl;
   return intl.format(intl2.t["+R2TzS"], { maxSize: maxSize1, premiumMaxSize });
-};
+}

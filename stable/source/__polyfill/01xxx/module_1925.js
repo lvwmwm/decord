@@ -4,51 +4,53 @@
 
 // Module 1925
 const obj = {
-  locale: "hr",
+  locale: "pl",
   pluralRuleFunction(arg0, arg1) {
-    let str4;
+    let arr;
+    let str6;
+    let tmp2;
     const str = String(arg0);
     const parts = str.split(".");
-    const first = parts[0];
-    const substr = first.slice(-1);
-    const substr1 = first.slice(-2);
-    const substr2 = arr2.slice(-1);
-    const substr3 = arr2.slice(-2);
+    [arr, tmp2] = parts;
+    const substr = arr.slice(-1);
+    const substr1 = arr.slice(-2);
     let str2 = "other";
     if (!arg1) {
       let str3;
-      if (!parts[1]) {
-        if (1 == substr) {
-          str3 = "one";
-        }
-        str2 = str3;
-      }
-      if (1 != substr2) {
-        if (!parts[1]) {
+      if (1 != arg0) {
+        let str5;
+        if (!tmp2) {
           if (substr >= 2) {
             if (substr <= 4) {
+              str5 = "few";
               if (substr1 >= 12) {
-                str3 = str4;
+                str5 = "few";
               }
             }
-            str4 = "few";
+            str3 = str5;
           }
         }
-        str4 = "other";
-        if (substr2 >= 2) {
-          str4 = "other";
-          if (substr2 <= 4) {
-            if (substr3 >= 12) {
-              str4 = "other";
+        if (!tmp2) {
+          if (1 != arr) {
+            if (0 != substr) {
+              str5 = str6;
             }
+          }
+          str6 = "many";
+        }
+        str6 = "other";
+        if (!tmp2) {
+          str6 = "other";
+          if (substr1 >= 12) {
+            str6 = "other";
           }
         }
       } else {
         str3 = "one";
       }
+      str2 = str3;
     }
     return str2;
   }
 };
 globalThis.IntlMessageFormat.__addLocaleData(obj);
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "hr-BA", parentLocale: "hr" });

@@ -1,28 +1,28 @@
-// Module ID: 4933
-// Function ID: 4934
+// Module ID: 4944
+// Function ID: 4945
 // Name: GuildChannelStore
-// Dependencies: [4907, 4858, 4934, 4859, 502, 4855, 4915, 4877, 4935, 4945, 1392, 1087, 4880, 12, 5636, 1099, 4940, 504, 584, 2]
+// Dependencies: [4918, 4866, 4945, 4867, 502, 4863, 4926, 4885, 4946, 4956, 1383, 1072, 4888, 12, 5652, 1084, 4951, 504, 572, 2]
 
-// Module 4933 (GuildChannelStore)
+// Module 4944 (GuildChannelStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import BigFlagUtilsAll from "BigFlagUtils" /* 1099 */;
-import createFavoritesGuildChannelRecord from "createFavoritesGuildChannelRecord" /* 4934 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4940 */;
-import GatedChannelStore from "GatedChannelStore" /* 4907 */;
-import FavoriteStore from "FavoriteStore" /* 4858 */;
-import ChannelRecord from "ChannelRecord" /* 4859 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import BigFlagUtilsAll from "BigFlagUtils" /* 1084 */;
+import createFavoritesGuildChannelRecord from "createFavoritesGuildChannelRecord" /* 4945 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4951 */;
+import GatedChannelStore from "GatedChannelStore" /* 4918 */;
+import FavoriteStore from "FavoriteStore" /* 4866 */;
+import ChannelRecord from "ChannelRecord" /* 4867 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4855 */;
-import GuildMemberStore from "GuildMemberStore" /* 4915 */;
-import GuildStore from "GuildStore" /* 4877 */;
-import PermissionStore from "PermissionStore" /* 4935 */;
-import RelationshipStore from "RelationshipStore" /* 4945 */;
-import UserStore from "UserStore" /* 1392 */;
-import Constants from "Constants" /* 1087 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import GuildMemberStore from "GuildMemberStore" /* 4926 */;
+import GuildStore from "GuildStore" /* 4885 */;
+import PermissionStore from "PermissionStore" /* 4946 */;
+import RelationshipStore from "RelationshipStore" /* 4956 */;
+import UserStore from "UserStore" /* 1383 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
-let closure_26, closure_28, hasOwnProperty;
+let hasOwnProperty;
 
 let ChannelTypes;
 let c9;
@@ -85,7 +85,7 @@ function rebuildGuildChannels(guildId) {
   closure_28[guildId] = [];
   const id = obj.id;
   const tmp2 = guildId;
-  const obj2 = obj(4880);
+  const obj2 = obj(4888);
   obj3 = {};
   if (obj2.isFavoritesGuildId(id)) {
     let tmp9 = FavoriteStore;
@@ -231,9 +231,9 @@ const VOCAL = "VOCAL";
 let c23 = null;
 let closure_24 = {};
 let closure_25 = {};
-const prioritySpeakerDucking = {};
+let closure_26 = {};
 let channelId = null;
-const results = {};
+let closure_28 = {};
 let obj = { comparator: -1, channel: createChannelRecord(obj2) };
 obj2 = { id: Constants.NULL_STRING_CHANNEL_ID, type: ChannelTypes.GUILD_CATEGORY, name: "Uncategorized" };
 const NULL_STRING_GUILD_ID = Constants.NULL_STRING_GUILD_ID;
@@ -265,9 +265,9 @@ class GuildChannelStore extends Store {
     }
     return tmp;
   }
-  getFirstChannelOfType(arg0, cResult, arg2) {
+  getFirstChannelOfType(arg0, arg1, arg2) {
     const arr = this.getChannels(arg0)[arg2];
-    const found = arr.find(cResult);
+    const found = arr.find(arg1);
     let channel = null;
     if (null != found) {
       channel = found.channel;
@@ -313,8 +313,8 @@ class GuildChannelStore extends Store {
       return tmp;
     }, flag);
   }
-  getSelectableChannelIds(id) {
-    const arr = this.getChannels(id)[SELECTABLE];
+  getSelectableChannelIds(guildId) {
+    const arr = this.getChannels(guildId)[SELECTABLE];
     return arr.map((channel) => channel.channel.id);
   }
   getSelectableChannels(id) {
@@ -334,8 +334,8 @@ class GuildChannelStore extends Store {
     }
     return mapped;
   }
-  hasSelectableChannel(id, arg1) {
-    const selectableChannelIds = this.getSelectableChannelIds(id);
+  hasSelectableChannel(guildId, arg1) {
+    const selectableChannelIds = this.getSelectableChannelIds(guildId);
     return selectableChannelIds.includes(arg1);
   }
   hasElevatedPermissions(arg0) {

@@ -1,167 +1,25 @@
-// Module ID: 13498
-// Function ID: 13499
+// Module ID: 14116
+// Function ID: 14117
 // Name: useDeactivateWarningText
-// Dependencies: [19, 5226, 4909, 4877, 558, 576, 504, 7256, 5217, 1128, 2568, 2]
+// Dependencies: [19, 5242, 4920, 4885, 504, 7297, 5233, 1113, 2570, 2]
+// Exports: default
 
-// Module 13498 (useDeactivateWarningText)
-import _modDef2568 from "module_2568" /* 2568 */;
-import Powerups from "Powerups" /* 5217 */;
-import useGuildRoleMemberCountsDefault from "useGuildRoleMemberCounts" /* 7256 */;
+// Module 14116 (useDeactivateWarningText)
+import _modDef2570 from "module_2570" /* 2570 */;
+import Powerups from "Powerups" /* 5233 */;
 import react_mod from "react" /* 19 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 5226 */;
-import GuildRoleStore from "GuildRoleStore" /* 4909 */;
-import GuildStore from "GuildStore" /* 4877 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 5242 */;
+import GuildRoleStore from "GuildRoleStore" /* 4920 */;
+import GuildStore from "GuildStore" /* 4885 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, dependencyMap, importDefault, tmp, tmp3, vanityURLCode;
+let _require, importDefault, vanityURLCode;
 
 let react = react_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDeactivateWarningText(arg0, skuId) {
-  let closure_0;
-  let closure_2;
-  let first;
-  let tmp10;
-  let tmp6;
-  let tmp9;
-  _require = arg0;
-  importDefault = skuId;
-  const obj = require("react");
-  const cResult = obj.c(29);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [GuildMemberCountStore];
-    let num = 0;
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    class S {
-      constructor() {
-        return closure_4.getMemberCount(closure_0);
-      }
-    }
-    cResult[1] = arg0;
-    cResult[2] = S;
-    tmp6 = S;
-  } else {
-    class S {
-      constructor() {
-        return closure_4.getMemberCount(closure_0);
-      }
-    }
-  }
-  const tmpResult = require("get initialized");
-  const stateFromStores = tmpResult.useStateFromStores(first, tmp6);
-  const tmp8 = useGuildRoleMemberCountsDefault(arg0);
-  dependencyMap = tmp8;
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    class S {
-      constructor() {
-        return closure_4.getMemberCount(closure_0);
-      }
-    }
-    const items1 = [GuildStore];
-    cResult[3] = items1;
-    tmp9 = items1;
-  } else {
-    class S {
-      constructor() {
-        return closure_4.getMemberCount(closure_0);
-      }
-    }
-  }
-  if (cResult[4] !== arg0) {
-    class P {
-      constructor() {
-        guild = closure_6.getGuild(closure_0);
-        vanityURLCode = undefined;
-        if (guild != null) {
-          vanityURLCode = guild.vanityURLCode;
-        }
-        return null != vanityURLCode;
-      }
-    }
-    cResult[4] = arg0;
-    cResult[5] = P;
-    tmp10 = P;
-  } else {
-    class P {
-      constructor() {
-        guild = closure_6.getGuild(closure_0);
-        vanityURLCode = undefined;
-        if (guild != null) {
-          vanityURLCode = guild.vanityURLCode;
-        }
-        return null != vanityURLCode;
-      }
-    }
-  }
-  const tmpResult2 = require("get initialized");
-  const stateFromStores1 = tmpResult2.useStateFromStores(tmp9, tmp10);
-  if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    class P {
-      constructor() {
-        guild = closure_6.getGuild(closure_0);
-        vanityURLCode = undefined;
-        if (guild != null) {
-          vanityURLCode = guild.vanityURLCode;
-        }
-        return null != vanityURLCode;
-      }
-    }
-    const items2 = [GuildRoleStore];
-    cResult[6] = items2;
-  } else {
-    class P {
-      constructor() {
-        guild = closure_6.getGuild(closure_0);
-        vanityURLCode = undefined;
-        if (guild != null) {
-          vanityURLCode = guild.vanityURLCode;
-        }
-        return null != vanityURLCode;
-      }
-    }
-  }
-  if (cResult[7] === arg0) {
-    class P {
-      constructor() {
-        guild = closure_6.getGuild(closure_0);
-        vanityURLCode = undefined;
-        if (guild != null) {
-          vanityURLCode = guild.vanityURLCode;
-        }
-        return null != vanityURLCode;
-      }
-    }
-  }
-  class D {
-    constructor() {
-      num = 0;
-      if (closure_1.skuId === closure_0(closure_2[8]).GUILD_POWERUP_ROLE_COLOR_SKU_ID) {
-        tmp = closure_2;
-        tmp2 = null;
-        num = 0;
-        if (null != closure_2) {
-          tmp3 = closure_5;
-          tmp4 = closure_0;
-          sortedRoles = closure_5.getSortedRoles(closure_0);
-          num = sortedRoles.reduce(() => { /* body not rendered: F150521 */ }, 0);
-        }
-      }
-      return num;
-    }
-  }
-  const items3 = [arg0, skuId.skuId, tmp8];
-  cResult[7] = arg0;
-  cResult[8] = skuId.skuId;
-  cResult[9] = tmp8;
-  cResult[10] = D;
-  cResult[11] = items3;
-}) : (function useDeactivateWarningText(arg0, skuId) {
+const result = size.fileFinishedImporting("modules/premium/powerups/hooks/useDeactivateWarningText.tsx");
+
+export default function useDeactivateWarningText(arg0, skuId) {
   let closure_0;
   let closure_3;
   let stateFromStores;
@@ -224,24 +82,24 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDeactivat
       let formatToPlainStringResult;
       let tmp16;
       if (stateFromStores2 > 0) {
-        const intl5 = tmp2(1128).intl;
+        const intl5 = tmp2(1113).intl;
         const obj2 = { perk: skuId.title, memberCount: tmp15 };
-        formatToPlainStringResult = intl5.formatToPlainString(_modDef2568["4jSvr1"], obj2);
+        formatToPlainStringResult = intl5.formatToPlainString(_modDef2570["4jSvr1"], obj2);
         tmp16 = importDefault;
       } else {
-        const intl4 = tmp2(1128).intl;
+        const intl4 = tmp2(1113).intl;
         tmp16 = importDefault;
         const obj3 = { perk: skuId.title };
-        formatToPlainStringResult = intl4.formatToPlainString(_modDef2568.cavtEo, obj3);
+        formatToPlainStringResult = intl4.formatToPlainString(_modDef2570.cavtEo, obj3);
       }
       tmp8 = tmp16;
       formatToPlainStringResult1 = formatToPlainStringResult;
     } else if (Powerups.VANITY_URL_POWERUP_SKU_ID === skuId) {
       let stringResult;
       let tmp14;
-      const intl3 = tmp2(1128).intl;
+      const intl3 = tmp2(1113).intl;
       const string = intl3.string;
-      const tmp12 = _modDef2568;
+      const tmp12 = _modDef2570;
       if (stateFromStores1) {
         stringResult = string(tmp12.hN75yb);
         tmp14 = tmp11;
@@ -256,11 +114,11 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDeactivat
         if (Powerups.GUILD_TAGS_BADGE_PACK_FLEX_POWERUP_SKU_ID !== skuId) {
           if (Powerups.GUILD_TAGS_BADGE_PACK_PLANT_POWERUP_SKU_ID !== skuId) {
             if (Powerups.GUILD_TAGS_BADGE_PACK_CREEPY_CRAWLIES_POWERUP_SKU_ID !== skuId) {
-              const intl = tmp2(1128).intl;
+              const intl = tmp2(1113).intl;
               const formatToPlainString = intl.formatToPlainString;
               const obj = { perk: skuId.title, memberCount: num };
               num = stateFromStores;
-              const v4jSvr1 = _modDef2568["4jSvr1"];
+              const v4jSvr1 = _modDef2570["4jSvr1"];
               const tmp4 = importDefault;
               if (stateFromStores == null) {
                 num = 0;
@@ -271,25 +129,22 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDeactivat
           }
         }
       }
-      const intl2 = tmp2(1128).intl;
-      formatToPlainStringResult1 = intl2.string(_modDef2568.Vf2ZcR);
+      const intl2 = tmp2(1113).intl;
+      formatToPlainStringResult1 = intl2.string(_modDef2570.Vf2ZcR);
       tmp8 = importDefault;
     }
     const items = [{ text: formatToPlainStringResult1, critical: skuId.skuId === Powerups.VANITY_URL_POWERUP_SKU_ID }];
     let tmp19 = stateFromStores1;
     ({ text: formatToPlainStringResult1, critical: skuId.skuId === Powerups.VANITY_URL_POWERUP_SKU_ID });
     if (tmp19) {
-      tmp19 = tmp.skuId === tmp2(5217).GUILD_POWERUP_LEVEL_3_SKU_ID;
+      tmp19 = tmp.skuId === tmp2(5233).GUILD_POWERUP_LEVEL_3_SKU_ID;
     }
     if (tmp19) {
       const push = items.push;
-      const obj5 = { text: intl6.string(tmp8(2568).M4XL5n), critical: true };
-      intl6 = tmp2(1128).intl;
+      const obj5 = { text: intl6.string(tmp8(2570).M4XL5n), critical: true };
+      intl6 = tmp2(1113).intl;
       push(obj5);
     }
     return items;
   }, items4);
-});
-const result = size.fileFinishedImporting("modules/premium/powerups/hooks/useDeactivateWarningText.tsx");
-
-export default tmp2;
+};

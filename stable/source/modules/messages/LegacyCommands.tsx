@@ -1,27 +1,27 @@
-// Module ID: 13125
-// Function ID: 13126
+// Module ID: 13758
+// Function ID: 13759
 // Name: LegacyCommands
-// Dependencies: [32, 6757, 6042, 1087, 4831, 9693, 1951, 8318, 4947, 7598, 5743, 2]
+// Dependencies: [32, 6796, 6061, 1072, 4839, 9774, 1943, 8405, 4958, 7636, 5760, 2]
 // Exports: handleLegacyCommands
 
-// Module 13125 (LegacyCommands)
-import UserSettings from "UserSettings" /* 4831 */;
-import ReactionUtils from "ReactionUtils" /* 4947 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5743 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7598 */;
-import ReactionActionCreators from "ReactionActionCreators" /* 8318 */;
-import ChangeNicknameActionCreatorsDefault from "ChangeNicknameActionCreators" /* 9693 */;
+// Module 13758 (LegacyCommands)
+import UserSettings from "UserSettings" /* 4839 */;
+import ReactionUtils from "ReactionUtils" /* 4958 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5760 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7636 */;
+import ReactionActionCreators from "ReactionActionCreators" /* 8405 */;
+import ChangeNicknameActionCreatorsDefault from "ChangeNicknameActionCreators" /* 9774 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import EmojiStore from "EmojiStore" /* 6757 */;
-import MessageStore from "MessageStore" /* 6042 */;
-import Constants from "Constants" /* 1087 */;
-import module_1951_mod from "module_1951" /* 1951 */;
+import EmojiStore from "EmojiStore" /* 6796 */;
+import MessageStore from "MessageStore" /* 6061 */;
+import Constants from "Constants" /* 1072 */;
+import module_1943_mod from "module_1943" /* 1943 */;
 import size from "module_2" /* 2 */;
 
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
-let module_1951;
+let module_1943;
 let obj2;
 let obj3;
 ({ AnalyticEvents: metroRequire, MARKDOWN_SPOILER_WRAPPER: metroImportDefault, ME: metroImportAll } = Constants);
@@ -87,7 +87,7 @@ const COMMANDS = {
   }
 };
 obj2 = {
-  match: module_1951.anyScopeRegex(/^\+:(.+?): *$/),
+  match: module_1943.anyScopeRegex(/^\+:(.+?): *$/),
   action(str, channel) {
     channel = channel.channel;
     if (!channel.isEdit) {
@@ -116,9 +116,9 @@ obj2 = {
     }
   }
 };
-module_1951 = module_1951_mod;
+module_1943 = module_1943_mod;
 obj3 = {
-  match: module_1951.anyScopeRegex(/^s\/([^\/\\]*(?:\\.[^\/\\]*)*)\/([^\/\\]*(?:\\.[^\/\\]*)*)(?:\/([g]*))?$/),
+  match: module_1943.anyScopeRegex(/^s\/([^\/\\]*(?:\\.[^\/\\]*)*)\/([^\/\\]*(?:\\.[^\/\\]*)*)(?:\/([g]*))?$/),
   action(str, channel) {
     let str2;
     let str3;
@@ -168,12 +168,12 @@ obj3 = {
     }
   }
 };
-module_1951 = module_1951_mod;
+module_1943 = module_1943_mod;
 Object.setPrototypeOf(COMMANDS, null);
 const result = size.fileFinishedImporting("modules/messages/LegacyCommands.tsx");
 
 export { COMMANDS };
-export const handleLegacyCommands = function handleLegacyCommands(text, arg1) {
+export function handleLegacyCommands(text, arg1) {
   for (const key10005 in obj) {
     let obj;
     let str = obj[key10005];
@@ -196,4 +196,4 @@ export const handleLegacyCommands = function handleLegacyCommands(text, arg1) {
     }
     continue;
   }
-};
+}

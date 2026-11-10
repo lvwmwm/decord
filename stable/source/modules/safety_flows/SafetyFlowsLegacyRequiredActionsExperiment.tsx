@@ -1,13 +1,13 @@
-// Module ID: 18935
-// Function ID: 18936
+// Module ID: 19555
+// Function ID: 19556
 // Name: SafetyFlowsLegacyRequiredActionsExperiment
-// Dependencies: [1087, 1455, 18936, 2]
+// Dependencies: [1072, 1447, 19556, 2]
 // Exports: shouldUseSafetyFlowsForRequiredAction
 
-// Module 18935 (SafetyFlowsLegacyRequiredActionsExperiment)
-import Constants from "Constants" /* 1087 */;
-import SafetyFlowsExperiment from "SafetyFlowsExperiment" /* 18936 */;
-import ApexExperiment from "ApexExperiment" /* 1455 */;
+// Module 19555 (SafetyFlowsLegacyRequiredActionsExperiment)
+import Constants from "Constants" /* 1072 */;
+import SafetyFlowsExperiment from "SafetyFlowsExperiment" /* 19556 */;
+import ApexExperiment from "ApexExperiment" /* 1447 */;
 import size from "module_2" /* 2 */;
 
 let REQUIRE_CAPTCHA;
@@ -25,13 +25,13 @@ function config() {
   return obj;
 }
 function union() {
-  const f138330 = (requiredActions) => {
+  const f118084 = (requiredActions) => {
     const items = [...requiredActions.requiredActions];
     return items;
   };
   let items = [...arguments];
-  const obj = { requiredActions: new Set(items.flatMap(f138330)) };
-  new Set(items.flatMap(f138330));
+  const obj = { requiredActions: new Set(items.flatMap(f118084)) };
+  new Set(items.flatMap(f118084));
   return obj;
 }
 ({ REQUIRE_VERIFIED_EMAIL, REQUIRE_VERIFIED_PHONE, REQUIRE_VERIFIED_EMAIL_OR_VERIFIED_PHONE, REQUIRE_REVERIFIED_EMAIL_OR_VERIFIED_PHONE, REQUIRE_CAPTCHA, REQUIRE_REVERIFIED_EMAIL, REQUIRE_REVERIFIED_PHONE, REQUIRE_VERIFIED_EMAIL_OR_REVERIFIED_PHONE, REQUIRE_REVERIFIED_EMAIL_OR_REVERIFIED_PHONE } = Constants.UserRequiredActions);
@@ -49,7 +49,7 @@ const apexExperiment = ApexExperiment.createApexExperiment(obj);
 const result = size.fileFinishedImporting("modules/safety_flows/SafetyFlowsLegacyRequiredActionsExperiment.tsx");
 
 export default apexExperiment;
-export const shouldUseSafetyFlowsForRequiredAction = function shouldUseSafetyFlowsForRequiredAction(arg0) {
+export function shouldUseSafetyFlowsForRequiredAction(arg0) {
   let _location;
   let requiredAction;
   ({ location: _location, requiredAction } = arg0);
@@ -66,4 +66,4 @@ export const shouldUseSafetyFlowsForRequiredAction = function shouldUseSafetyFlo
     hasItem = requiredActions.has(requiredAction);
   }
   return hasItem;
-};
+}

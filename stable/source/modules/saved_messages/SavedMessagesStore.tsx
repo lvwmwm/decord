@@ -1,16 +1,16 @@
-// Module ID: 10109
-// Function ID: 10110
+// Module ID: 10191
+// Function ID: 10192
 // Name: SavedMessagesStore
-// Dependencies: [1392, 4930, 10110, 6044, 504, 584, 2]
+// Dependencies: [1383, 4941, 10192, 6063, 504, 572, 2]
 // Exports: getComparator
 
-// Module 10109 (SavedMessagesStore)
+// Module 10191 (SavedMessagesStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import SecondaryIndexMap from "SecondaryIndexMap" /* 4930 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 6044 */;
-import SavedMessagesTypes from "SavedMessagesTypes" /* 10110 */;
-import UserStore from "UserStore" /* 1392 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import SecondaryIndexMap from "SecondaryIndexMap" /* 4941 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 6063 */;
+import SavedMessagesTypes from "SavedMessagesTypes" /* 10192 */;
+import UserStore from "UserStore" /* 1383 */;
 import size from "module_2" /* 2 */;
 
 function getTimeSafe(dueAt) {
@@ -129,9 +129,9 @@ const secondaryIndexMap = new SecondaryIndexMap.SecondaryIndexMap((saveData) => 
   saveData = saveData.saveData;
   const items = [SavedMessagesTypes.SavedMessageSortTypes.ALL, ];
   if (null != saveData.dueAt) {
-    BOOKMARK = tmp(10110).SavedMessageSortTypes.REMINDER;
+    BOOKMARK = tmp(10192).SavedMessageSortTypes.REMINDER;
   } else {
-    BOOKMARK = tmp(10110).SavedMessageSortTypes.BOOKMARK;
+    BOOKMARK = tmp(10192).SavedMessageSortTypes.BOOKMARK;
   }
   items[1] = BOOKMARK;
   return items;
@@ -218,8 +218,8 @@ class SavedMessagesStore extends Store {
   isMessageBookmarked(id, id2) {
     return set1.has(id2);
   }
-  isMessageReminder(id, id2) {
-    const value = secondaryIndexMap.get("" + id + "-" + id2);
+  isMessageReminder(channelId, id) {
+    const value = secondaryIndexMap.get("" + channelId + "-" + id);
     return null != value && null != value.saveData.dueAt;
   }
 }
@@ -436,7 +436,7 @@ const savedMessagesStore = new SavedMessagesStore(DispatcherDefault, obj);
 let result = size.fileFinishedImporting("modules/saved_messages/SavedMessagesStore.tsx");
 
 export default savedMessagesStore;
-export const getComparator = function getComparator(dueAt) {
+export function getComparator(dueAt) {
   let diff;
   if (null != dueAt.dueAt) {
     diff = getTimeSafe(dueAt.dueAt);
@@ -444,4 +444,4 @@ export const getComparator = function getComparator(dueAt) {
     diff = c3 - getTimeSafe(dueAt.savedAt);
   }
   return diff;
-};
+}

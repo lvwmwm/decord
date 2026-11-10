@@ -1,22 +1,21 @@
-// Module ID: 18591
-// Function ID: 18592
+// Module ID: 19239
+// Function ID: 19240
 // Name: VoicePanelHeaderChatButton
-// Dependencies: [19, 1087, 21, 5003, 587, 558, 576, 1123, 18592, 18513, 8574, 1128, 6918, 2]
+// Dependencies: [19, 1072, 21, 5014, 575, 1108, 19240, 6960, 19145, 8643, 1113, 2]
+// Exports: default
 
-// Module 18591 (VoicePanelHeaderChatButton)
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1087 */;
-import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1123 */;
-import intl2 from "intl" /* 1128 */;
-import NativeViewDefault from "NativeView" /* 6918 */;
-import ChatIcon2 from "ChatIcon" /* 8574 */;
-import VoicePanelIconButtonDefault from "VoicePanelIconButton" /* 18513 */;
-import useChatBadgeDefault from "useChatBadge" /* 18592 */;
+// Module 19239 (VoicePanelHeaderChatButton)
+import nativeDefault from "native" /* 575 */;
+import Constants from "Constants" /* 1072 */;
+import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1108 */;
+import intl2 from "intl" /* 1113 */;
+import NativeViewDefault from "NativeView" /* 6960 */;
+import ChatIcon2 from "ChatIcon" /* 8643 */;
+import VoicePanelIconButtonDefault from "VoicePanelIconButton" /* 19145 */;
+import useChatBadgeDefault from "useChatBadge" /* 19240 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5003 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -31,74 +30,10 @@ size = { width: 8, height: 8, borderRadius: nativeDefault.radii.round };
 createStyles = createStyles.createStyles;
 obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_NOTIFICATION };
 let closure_7 = createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoicePanelHeaderChatButton(channelId) {
-  let ChatIcon;
-  let first;
-  let intl;
-  let items;
-  let items1;
-  let obj3;
-  let obj6;
-  let tmp8;
-  const obj = react2;
-  const cResult = obj.c(7);
-  channelId = channelId.channelId;
-  const tmp4 = closure_7();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function o() {
-      const ComponentDispatch = ComponentDispatchUtils.ComponentDispatch;
-      ComponentDispatch.dispatch(constants.VOICE_PANEL_OPEN_CHAT_TAB);
-    };
-    cResult[0] = fn;
-    first = fn;
-  } else {
-    first = cResult[0];
-  }
-  const tmp7 = useChatBadgeDefault(channelId);
-  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { icon: hasOwnProperty(ChatIcon, obj3), accessibilityLabel: intl.string(intl2.t["5KxXrK"]), onPress: first };
-    obj3 = { color: nativeDefault.colors.ICON_STRONG, size: "sm" };
-    const tmp6Result = VoicePanelIconButtonDefault;
-    ChatIcon = tmp(8574).ChatIcon;
-    intl = tmp(1128).intl;
-    const tmp11 = hasOwnProperty(tmp6Result, obj2);
-    cResult[1] = tmp11;
-    tmp8 = tmp11;
-  } else {
-    tmp8 = cResult[1];
-  }
-  if (cResult[2] === tmp7) {
-    let tmp12;
-    let tmp16;
-    if (cResult[3] === tmp4) {
-      tmp12 = cResult[4];
-    }
-    if (cResult[5] !== tmp12) {
-      const obj4 = { children: items };
-      items = [tmp8, tmp12];
-      const tmp18 = metroRequire(NativeViewDefault, obj4);
-      cResult[5] = tmp12;
-      cResult[6] = tmp18;
-      tmp16 = tmp18;
-    } else {
-      tmp16 = cResult[6];
-    }
-    return tmp16;
-  }
-  let tmp13 = null != tmp7;
-  if (tmp13) {
-    const obj5 = { style: tmp4.badgeContainer, children: hasOwnProperty(NativeViewDefault, obj6) };
-    obj6 = { style: items1 };
-    items1 = [, ];
-    ({ badge: arr[0], notificationBadge: arr[1] } = tmp4);
-    const tmp6Result2 = NativeViewDefault;
-    tmp13 = hasOwnProperty(tmp6Result2, obj5);
-  }
-  cResult[2] = tmp7;
-  cResult[3] = tmp4;
-  cResult[4] = tmp13;
-  tmp12 = tmp13;
-}) : (function VoicePanelHeaderChatButton(channelId) {
+size = size_mod;
+const result = size.fileFinishedImporting("modules/voice_panel/native/header/VoicePanelHeaderChatButton.tsx");
+
+export default function VoicePanelHeaderChatButton(channelId) {
   let ChatIcon;
   let intl;
   let items1;
@@ -130,8 +65,4 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoicePanelHe
   }
   children[1] = tmp8Result;
   return tmp6(tmp7, { children });
-});
-size = size_mod;
-const result = size.fileFinishedImporting("modules/voice_panel/native/header/VoicePanelHeaderChatButton.tsx");
-
-export default tmp4;
+};

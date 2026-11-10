@@ -1,21 +1,21 @@
-// Module ID: 8685
-// Function ID: 8686
+// Module ID: 8735
+// Function ID: 8736
 // Name: UserProfileSettingsActionCreators
-// Dependencies: [4915, 1392, 7735, 5836, 8686, 584, 2]
+// Dependencies: [4926, 1383, 7772, 5854, 8736, 572, 2]
 // Exports: setPendingChanges
 
-// Module 8685 (UserProfileSettingsActionCreators)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import isEqualDefault from "isEqual" /* 5836 */;
-import GuildTagUtils from "GuildTagUtils" /* 8686 */;
-import GuildMemberStore from "GuildMemberStore" /* 4915 */;
-import UserStore from "UserStore" /* 1392 */;
-import UserProfileStore from "UserProfileStore" /* 7735 */;
+// Module 8735 (UserProfileSettingsActionCreators)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import isEqualDefault from "isEqual" /* 5854 */;
+import GuildTagUtils from "GuildTagUtils" /* 8736 */;
+import GuildMemberStore from "GuildMemberStore" /* 4926 */;
+import UserStore from "UserStore" /* 1383 */;
+import UserProfileStore from "UserProfileStore" /* 7772 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/user_profile/UserProfileSettingsActionCreators.tsx");
 
-export const setPendingChanges = function setPendingChanges(guildId) {
+export function setPendingChanges(guildId) {
   guildId = guildId.guildId;
   const merged = Object.assign(guildId, Object.assign({ guildId: 0 }));
   const currentUser = UserStore.getCurrentUser();
@@ -340,4 +340,4 @@ export const setPendingChanges = function setPendingChanges(guildId) {
     const merged1 = Object.assign(obj);
     dispatch(obj3);
   }
-};
+}

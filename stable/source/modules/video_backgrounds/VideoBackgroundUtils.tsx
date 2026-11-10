@@ -1,17 +1,17 @@
-// Module ID: 5899
-// Function ID: 5900
+// Module ID: 5931
+// Function ID: 5932
 // Name: VideoBackgroundUtils
-// Dependencies: [4855, 5746, 5895, 1087, 1417, 5743, 1267, 2]
+// Dependencies: [4863, 5764, 5927, 1072, 1409, 5760, 1252, 2]
 // Exports: getEffectAnalyticsType, getVideoBackgroundOptionFromProto, getVideoBackgroundProtoFromOption, isCustomBackgroundOption, isDefaultBackgroundOption, trackBackgroundOptionAdded, trackBackgroundOptionDeleted, trackBackgroundOptionUpdated
 
-// Module 5899 (VideoBackgroundUtils)
-import Constants from "Constants" /* 1087 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import AvatarUtils from "AvatarUtils" /* 1417 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5743 */;
-import ChannelStore from "ChannelStore" /* 4855 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5746 */;
-import VideoBackgroundConstants from "VideoBackgroundConstants" /* 5895 */;
+// Module 5931 (VideoBackgroundUtils)
+import Constants from "Constants" /* 1072 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import AvatarUtils from "AvatarUtils" /* 1409 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5760 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5764 */;
+import VideoBackgroundConstants from "VideoBackgroundConstants" /* 5927 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -41,7 +41,7 @@ function isAnimatedBackgroundOption(type) {
       let isAnimatedIconHashResult = obj.isAnimatedIconHash(type.asset);
       const tmp6 = require;
       if (!isAnimatedIconHashResult) {
-        const tmp6Result = tmp6(1417);
+        const tmp6Result = tmp6(1409);
         isAnimatedIconHashResult = tmp6Result.isVideoAssetHash(type.asset);
       }
       hasItem = isAnimatedIconHashResult;
@@ -102,7 +102,7 @@ function getEffectDetailAnalyticsName(lastUsedVideoBackgroundOption) {
 const AnalyticEvents = Constants.AnalyticEvents;
 const result = size.fileFinishedImporting("modules/video_backgrounds/VideoBackgroundUtils.tsx");
 
-export const isCustomBackgroundOption = function isCustomBackgroundOption(stateFromStores) {
+export function isCustomBackgroundOption(stateFromStores) {
   let tmp = null != stateFromStores && typeof stateFromStores === "object" && "id" in stateFromStores;
   if (tmp) {
     let flag = stateFromStores.type === metroRequire.BACKGROUND;
@@ -113,24 +113,24 @@ export const isCustomBackgroundOption = function isCustomBackgroundOption(stateF
     tmp = flag;
   }
   return tmp;
-};
-export const isDefaultBackgroundOption = function isDefaultBackgroundOption(stateFromStores) {
+}
+export function isDefaultBackgroundOption(stateFromStores) {
   let tmp = typeof stateFromStores === "number";
   if (typeof stateFromStores === "number") {
     tmp = stateFromStores in hasOwnProperty;
   }
   return tmp;
-};
+}
 export { isAnimatedBackgroundOption };
-export const getEffectAnalyticsType = function getEffectAnalyticsType(lastUsedVideoBackgroundOption) {
+export function getEffectAnalyticsType(lastUsedVideoBackgroundOption) {
   let str = "None";
   if (null != lastUsedVideoBackgroundOption) {
     str = "Video Background";
   }
   return str;
-};
+}
 export { getEffectDetailAnalyticsName };
-export const trackBackgroundOptionUpdated = function trackBackgroundOptionUpdated(type, location, Enabled) {
+export function trackBackgroundOptionUpdated(type, location, Enabled) {
   let str;
   const guildId = RTCConnectionStore.getGuildId();
   const channelId = RTCConnectionStore.getChannelId();
@@ -151,18 +151,18 @@ export const trackBackgroundOptionUpdated = function trackBackgroundOptionUpdate
   }
   ({ voice_state_count: obj3.voice_state_count, video_stream_count: obj3.video_stream_count } = voiceStateMetadata);
   track(VIDEO_EFFECT_UPDATED, obj4);
-};
-export const trackBackgroundOptionAdded = function trackBackgroundOptionAdded(type, is_video, is_from_tenor) {
+}
+export function trackBackgroundOptionAdded(type, is_video, is_from_tenor) {
   const obj = AnalyticsUtilsDefault;
   const obj2 = { is_animated: isAnimatedBackgroundOption(type), is_video, is_from_tenor };
   obj.track(AnalyticEvents.VIDEO_BACKGROUND_ADDED, obj2);
-};
-export const trackBackgroundOptionDeleted = function trackBackgroundOptionDeleted(type) {
+}
+export function trackBackgroundOptionDeleted(type) {
   const obj = AnalyticsUtilsDefault;
   const obj2 = { is_animated: isAnimatedBackgroundOption(type) };
   obj.track(AnalyticEvents.VIDEO_BACKGROUND_DELETED, obj2);
-};
-export const getVideoBackgroundProtoFromOption = function getVideoBackgroundProtoFromOption(type) {
+}
+export function getVideoBackgroundProtoFromOption(type) {
   let obj;
   let obj3;
   if (null == type) {
@@ -190,8 +190,8 @@ export const getVideoBackgroundProtoFromOption = function getVideoBackgroundProt
     }
   }
   return obj;
-};
-export const getVideoBackgroundOptionFromProto = function getVideoBackgroundOptionFromProto(oneofKind, user_id) {
+}
+export function getVideoBackgroundOptionFromProto(oneofKind, user_id) {
   if (null != oneofKind) {
     if (undefined !== oneofKind.oneofKind) {
       oneofKind = oneofKind.oneofKind;
@@ -209,4 +209,4 @@ export const getVideoBackgroundOptionFromProto = function getVideoBackgroundOpti
     }
   }
   return null;
-};
+}

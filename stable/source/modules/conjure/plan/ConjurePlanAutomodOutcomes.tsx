@@ -1,14 +1,14 @@
-// Module ID: 12492
-// Function ID: 12493
+// Module ID: 12745
+// Function ID: 12746
 // Name: ConjurePlanAutomodOutcomes
-// Dependencies: [4917, 1128, 3862, 5737, 2]
+// Dependencies: [4928, 1113, 3868, 5754, 2]
 // Exports: groupPlanAutomodExamples, planAutomodReasonText, renderPlanAutomodExampleContent
 
-// Module 12492 (ConjurePlanAutomodOutcomes)
-import intl7 from "intl" /* 1128 */;
-import _modDef3862 from "module_3862" /* 3862 */;
-import GuildDisableCommunicationConstants from "GuildDisableCommunicationConstants" /* 4917 */;
-import MarkupUtilsDefault from "MarkupUtils" /* 5737 */;
+// Module 12745 (ConjurePlanAutomodOutcomes)
+import intl7 from "intl" /* 1113 */;
+import _modDef3868 from "module_3868" /* 3868 */;
+import GuildDisableCommunicationConstants from "GuildDisableCommunicationConstants" /* 4928 */;
+import MarkupUtilsDefault from "MarkupUtils" /* 5754 */;
 import size from "module_2" /* 2 */;
 
 const getFriendlyDurationString = GuildDisableCommunicationConstants.getFriendlyDurationString;
@@ -16,28 +16,28 @@ let obj = {
   alert: {
     label() {
       const intl = intl7.intl;
-      return intl.string(_modDef3862.Vi4cjL);
+      return intl.string(_modDef3868.Vi4cjL);
     },
     blockedStyle: false
   },
   block: {
     label() {
       const intl = intl7.intl;
-      return intl.string(_modDef3862.YdnZ8q);
+      return intl.string(_modDef3868.YdnZ8q);
     },
     blockedStyle: true
   },
   timeout: {
     label() {
       const intl = intl7.intl;
-      return intl.string(_modDef3862.QGrx9O);
+      return intl.string(_modDef3868.QGrx9O);
     },
     blockedStyle: true
   },
   allow: {
     label() {
       const intl = intl7.intl;
-      return intl.string(_modDef3862.RGzFNK);
+      return intl.string(_modDef3868.RGzFNK);
     },
     blockedStyle: false
   }
@@ -46,21 +46,21 @@ let obj2 = {
   blocked: {
     label() {
       const intl = intl7.intl;
-      return intl.string(_modDef3862.YdnZ8q);
+      return intl.string(_modDef3868.YdnZ8q);
     },
     tone: "red"
   },
   alert: {
     label() {
       const intl = intl7.intl;
-      return intl.string(_modDef3862["8ockl9"]);
+      return intl.string(_modDef3868["8ockl9"]);
     },
     tone: "blurple"
   },
   allowed: {
     label() {
       const intl = intl7.intl;
-      return intl.string(_modDef3862.RGzFNK);
+      return intl.string(_modDef3868.RGzFNK);
     },
     tone: "green"
   }
@@ -72,15 +72,15 @@ const result = size.fileFinishedImporting("modules/conjure/plan/ConjurePlanAutom
 
 export const CONJURE_PLAN_AUTOMOD_OUTCOMES = obj;
 export const CONJURE_PLAN_AUTOMOD_SECTIONS = obj2;
-export const groupPlanAutomodExamples = function groupPlanAutomodExamples(examples) {
+export function groupPlanAutomodExamples(examples) {
   const mapped = closure_4.map((section) => {
     examples = section;
     const obj = { section, examples: examples.filter((item) => closure_2_5[item.outcome] === closure_0) };
     return obj;
   });
   return mapped.filter((examples) => examples.examples.length > 0);
-};
-export const planAutomodReasonText = function planAutomodReasonText(example) {
+}
+export function planAutomodReasonText(example) {
   let formatToPlainStringResult1 = null;
   if ("timeout" === example.outcome) {
     formatToPlainStringResult1 = null;
@@ -93,25 +93,25 @@ export const planAutomodReasonText = function planAutomodReasonText(example) {
       if (null == tmp6) {
         let formatToPlainStringResult;
         if (timeout_seconds % c6 === 0) {
-          const intl6 = tmp2(1128).intl;
+          const intl6 = tmp2(1113).intl;
           const obj2 = { weeks: timeout_seconds / tmp10 };
-          formatToPlainStringResult = intl6.formatToPlainString(tmp2(1128).t.EmoBD2, obj2);
+          formatToPlainStringResult = intl6.formatToPlainString(tmp2(1113).t.EmoBD2, obj2);
         } else if (timeout_seconds % 86400 === 0) {
-          const intl5 = tmp2(1128).intl;
+          const intl5 = tmp2(1113).intl;
           const obj3 = { days: timeout_seconds / 86400 };
-          formatToPlainStringResult = intl5.formatToPlainString(tmp2(1128).t["k2UNz+"], obj3);
+          formatToPlainStringResult = intl5.formatToPlainString(tmp2(1113).t["k2UNz+"], obj3);
         } else if (timeout_seconds % 3600 === 0) {
-          const intl4 = tmp2(1128).intl;
+          const intl4 = tmp2(1113).intl;
           const obj4 = { hours: timeout_seconds / 3600 };
-          formatToPlainStringResult = intl4.formatToPlainString(tmp2(1128).t.xCjYxK, obj4);
+          formatToPlainStringResult = intl4.formatToPlainString(tmp2(1113).t.xCjYxK, obj4);
         } else if (timeout_seconds % 60 === 0) {
-          const intl3 = tmp2(1128).intl;
+          const intl3 = tmp2(1113).intl;
           const obj5 = { mins: timeout_seconds / 60 };
-          formatToPlainStringResult = intl3.formatToPlainString(tmp2(1128).t.opVZ9q, obj5);
+          formatToPlainStringResult = intl3.formatToPlainString(tmp2(1113).t.opVZ9q, obj5);
         } else {
-          const intl2 = tmp2(1128).intl;
+          const intl2 = tmp2(1113).intl;
           const obj = { secs: timeout_seconds };
-          formatToPlainStringResult = intl2.formatToPlainString(tmp2(1128).t["4zv/jq"], obj);
+          formatToPlainStringResult = intl2.formatToPlainString(tmp2(1113).t["4zv/jq"], obj);
         }
         tmp6 = formatToPlainStringResult;
       }
@@ -127,8 +127,8 @@ export const planAutomodReasonText = function planAutomodReasonText(example) {
     tmp9 = joined;
   }
   return tmp9;
-};
-export const renderPlanAutomodExampleContent = function renderPlanAutomodExampleContent(content) {
+}
+export function renderPlanAutomodExampleContent(content) {
   const obj = MarkupUtilsDefault;
   return obj.parseEmbedTitleWithoutLinks(content, true);
-};
+}

@@ -1,15 +1,15 @@
-// Module ID: 15188
-// Function ID: 15189
+// Module ID: 15728
+// Function ID: 15729
 // Name: MobileNativeUpdateUtils
-// Dependencies: [5, 5729, 3, 1297, 5692, 1384, 1107, 2]
+// Dependencies: [5, 5746, 3, 1282, 5709, 1375, 1092, 2]
 // Exports: checkForNewerBuild, openBuildInstaller
 
-// Module 15188 (MobileNativeUpdateUtils)
+// Module 15728 (MobileNativeUpdateUtils)
 import LoggerDefault from "Logger" /* 3 */;
-import HTTPUtils from "HTTPUtils" /* 1297 */;
-import PlatformUtils from "PlatformUtils" /* 1384 */;
-import Linking from "Linking" /* 5692 */;
-import MobileNativeUpdateConstants from "MobileNativeUpdateConstants" /* 5729 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
+import PlatformUtils from "PlatformUtils" /* 1375 */;
+import Linking from "Linking" /* 5709 */;
+import MobileNativeUpdateConstants from "MobileNativeUpdateConstants" /* 5746 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ let obj = function _checkForNewerBuild() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -121,7 +121,7 @@ function openBuildInstallerUrl(install) {
       obj = PlatformUtils;
       const tmp7 = require;
       if (obj.isIOS()) {
-        openURLExternally(uRL.toString(), tmp7(1107).WebBrowserType.SAFARI);
+        openURLExternally(uRL.toString(), tmp7(1092).WebBrowserType.SAFARI);
       } else {
         openURLExternally(uRL.toString());
       }
@@ -134,10 +134,10 @@ const logger = new LoggerDefault("MobileNativeUpdateUtils");
 const tmp2 = new LoggerDefault("MobileNativeUpdateUtils");
 const result = size.fileFinishedImporting("modules/mobile_native_updater/MobileNativeUpdateUtils.tsx");
 
-export const checkForNewerBuild = function checkForNewerBuild() {
+export function checkForNewerBuild() {
   return obj(...arguments);
-};
-export const openBuildInstaller = function openBuildInstaller(newBuild) {
+}
+export function openBuildInstaller(newBuild) {
   openBuildInstallerUrl(newBuild.urls.install);
-};
+}
 export { openBuildInstallerUrl };

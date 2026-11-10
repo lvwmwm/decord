@@ -1,15 +1,15 @@
-// Module ID: 4879
-// Function ID: 4880
+// Module ID: 4887
+// Function ID: 4888
 // Name: DualReadUtils
-// Dependencies: [1087, 4872, 509, 1267, 568, 2]
+// Dependencies: [1072, 4880, 509, 1252, 558, 2]
 // Exports: runDualReadValidation
 
-// Module 4879 (DualReadUtils)
+// Module 4887 (DualReadUtils)
 import LastFewActionsAll from "LastFewActions" /* 509 */;
-import shallowEqual from "shallowEqual" /* 568 */;
-import Constants from "Constants" /* 1087 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import SetUtils from "SetUtils" /* 4872 */;
+import shallowEqual from "shallowEqual" /* 558 */;
+import Constants from "Constants" /* 1072 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import SetUtils from "SetUtils" /* 4880 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty, set2;
@@ -452,7 +452,7 @@ const AnalyticEvents = Constants.AnalyticEvents;
 let map = new Map();
 let result = size.fileFinishedImporting("modules/libdiscore/stores/DualReadUtils.tsx");
 
-export const runDualReadValidation = function runDualReadValidation(store_name, Kkv, fn) {
+export function runDualReadValidation(store_name, Kkv, fn) {
   let items = [];
   const tmp = fn((derived, derived2) => {
     doDualReadValidation(items, derived, derived2);
@@ -580,6 +580,6 @@ export const runDualReadValidation = function runDualReadValidation(store_name, 
     });
   }
   let tmp3 = logErrorsToAnalytics(store_name, items);
-};
+}
 export { doDualReadValidation };
 export { logErrorsToAnalytics };

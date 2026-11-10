@@ -1,11 +1,11 @@
-// Module ID: 6679
-// Function ID: 6680
+// Module ID: 6719
+// Function ID: 6720
 // Name: getTitleFromPickedStreamContent
-// Dependencies: [1128, 2]
+// Dependencies: [1113, 2]
 // Exports: default
 
-// Module 6679 (getTitleFromPickedStreamContent)
-import intl2 from "intl" /* 1128 */;
+// Module 6719 (getTitleFromPickedStreamContent)
+import intl2 from "intl" /* 1113 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/go_live/utils/getTitleFromPickedStreamContent.tsx");

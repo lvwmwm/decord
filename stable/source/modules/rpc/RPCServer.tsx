@@ -1,18 +1,18 @@
-// Module ID: 9293
-// Function ID: 9294
+// Module ID: 9330
+// Function ID: 9331
 // Name: RPCServer
-// Dependencies: [5, 6410, 1087, 12, 9294, 9296, 9298, 1267, 38, 9299, 9301, 4850, 1104, 2]
+// Dependencies: [5, 6450, 1072, 12, 9331, 9333, 9335, 1252, 38, 9336, 9338, 4858, 1089, 2]
 
-// Module 9293 (RPCServer)
+// Module 9330 (RPCServer)
 import _modDef12 from "module_12" /* 12 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import Constants2 from "Constants" /* 6410 */;
-import transformUserDefault from "transformUser" /* 9294 */;
-import RPCErrorDefault from "RPCError" /* 9296 */;
-import validateScopeDefault from "validateScope" /* 9298 */;
-import RpcCommandInterception from "RpcCommandInterception" /* 9301 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import Constants2 from "Constants" /* 6450 */;
+import transformUserDefault from "transformUser" /* 9331 */;
+import RPCErrorDefault from "RPCError" /* 9333 */;
+import validateScopeDefault from "validateScope" /* 9335 */;
+import RpcCommandInterception from "RpcCommandInterception" /* 9338 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import Constants from "Constants" /* 1087 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 let _self, c2, command, dependencyMap, importDefault;
@@ -87,7 +87,7 @@ class RPCServer {
     this.onDisconnect(abortController, arg1);
   }
   handleRequest(socket, arg1) {
-    const f146473 = function() {
+    const f125206 = function() {
       return closure_0(...arguments);
     };
     let closure_2 = arg1;
@@ -148,7 +148,7 @@ class RPCServer {
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "IconComponent", done: "+352" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -221,8 +221,8 @@ class RPCServer {
         }
       })();
     });
-    const then2 = then(f146473).then;
-    then(f146473);
+    const then2 = then(f125206).then;
+    then(f125206);
     let closure_0 = self((command) => {
       let closure_1;
       let c3 = 0;
@@ -464,8 +464,8 @@ class RPCServer {
     });
     const result = this.dispatchIsSubscribedUpdate();
   }
-  removeSubscriptions(abortController) {
-    let closure_0 = abortController;
+  removeSubscriptions(authorization) {
+    let closure_0 = authorization;
     const obj = _modDef12;
     obj.remove(this.subscriptions, (socket) => socket.socket === closure_0);
     const result = this.dispatchIsSubscribedUpdate();

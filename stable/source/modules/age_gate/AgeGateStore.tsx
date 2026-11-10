@@ -1,12 +1,12 @@
-// Module ID: 17402
-// Function ID: 17403
+// Module ID: 17987
+// Function ID: 17988
 // Name: AgeGateStore
-// Dependencies: [1112, 504, 584, 2]
+// Dependencies: [1097, 504, 572, 2]
 
-// Module 17402 (AgeGateStore)
+// Module 17987 (AgeGateStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import AgeGateConstants from "AgeGateConstants" /* 1112 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import AgeGateConstants from "AgeGateConstants" /* 1097 */;
 import size from "module_2" /* 2 */;
 
 const AGE_GATE_REGISTER_TIMEOUT_MS = AgeGateConstants.AGE_GATE_REGISTER_TIMEOUT_MS;

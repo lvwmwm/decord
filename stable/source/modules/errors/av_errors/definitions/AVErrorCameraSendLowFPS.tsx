@@ -1,16 +1,16 @@
-// Module ID: 19444
-// Function ID: 19445
+// Module ID: 20063
+// Function ID: 20064
 // Name: AVErrorCameraSendLowFPS
-// Dependencies: [502, 2014, 5746, 1104, 19430, 5929, 19427, 2]
+// Dependencies: [502, 2006, 5764, 1089, 20049, 5947, 20046, 2]
 
-// Module 19444 (AVErrorCameraSendLowFPS)
-import DurationsDefault from "Durations" /* 1104 */;
-import AVError from "AVError" /* 5929 */;
-import AVErrorContext from "AVErrorContext" /* 19427 */;
-import AVErrorUtils from "AVErrorUtils" /* 19430 */;
+// Module 20063 (AVErrorCameraSendLowFPS)
+import DurationsDefault from "Durations" /* 1089 */;
+import AVError from "AVError" /* 5947 */;
+import AVErrorContext from "AVErrorContext" /* 20046 */;
+import AVErrorUtils from "AVErrorUtils" /* 20049 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import MediaEngineStore from "MediaEngineStore" /* 2014 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5746 */;
+import MediaEngineStore from "MediaEngineStore" /* 2006 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5764 */;
 import size from "module_2" /* 2 */;
 
 let closure_5 = 20 * DurationsDefault.Millis.SECOND;

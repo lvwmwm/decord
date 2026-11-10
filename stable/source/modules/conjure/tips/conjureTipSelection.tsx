@@ -1,15 +1,15 @@
-// Module ID: 12371
-// Function ID: 12372
+// Module ID: 12620
+// Function ID: 12621
 // Name: conjureTipSelection
 // Dependencies: [2]
 // Exports: selectConjureTips
 
-// Module 12371 (conjureTipSelection)
+// Module 12620 (conjureTipSelection)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/tips/conjureTipSelection.tsx");
 
-export const selectConjureTips = function selectConjureTips(arg0, arg1, isDismissed) {
+export function selectConjureTips(arg0, arg1, isDismissed) {
   const obj = { callout: null, hint: null };
   const items = [...arg0];
   const sorted = items.sort((priority, priority2) => priority2.priority - priority.priority);
@@ -41,4 +41,4 @@ export const selectConjureTips = function selectConjureTips(arg0, arg1, isDismis
     }
     continue;
   }
-};
+}

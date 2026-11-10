@@ -1,13 +1,13 @@
-// Module ID: 5010
-// Function ID: 5011
+// Module ID: 5021
+// Function ID: 5022
 // Name: shared
-// Dependencies: [2, 5011, 5024, 5025, 5026]
+// Dependencies: [2, 5022, 5035, 5036, 5037]
 
-// Module 5010 (shared)
-import design_shared from "design/shared" /* 5011 */;
-import StickerTypes from "StickerTypes" /* 5024 */;
-import themes from "themes" /* 5025 */;
-import Colors from "Colors" /* 5026 */;
+// Module 5021 (shared)
+import design_shared from "design/shared" /* 5022 */;
+import StickerTypes from "StickerTypes" /* 5035 */;
+import themes from "themes" /* 5036 */;
+import Colors from "Colors" /* 5037 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("design/shared.tsx");

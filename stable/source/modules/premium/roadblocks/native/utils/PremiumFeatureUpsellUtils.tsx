@@ -1,15 +1,15 @@
-// Module ID: 9715
-// Function ID: 9716
+// Module ID: 9796
+// Function ID: 9797
 // Name: PremiumFeatureUpsellUtils
-// Dependencies: [1087, 7477, 5062, 1257, 1107, 2]
+// Dependencies: [1072, 7518, 5073, 1242, 1092, 2]
 // Exports: getAnalyticsPage, getUpsellType, isEmojiPickerUpsellFeature, isSoundboardSectionNitroLocked
 
-// Module 9715 (PremiumFeatureUpsellUtils)
-import Constants from "Constants" /* 1087 */;
-import ConstantsIOS from "ConstantsIOS" /* 1107 */;
-import SentryUtilsDefault from "SentryUtils" /* 1257 */;
-import EntitlementFeatureNames from "EntitlementFeatureNames" /* 5062 */;
-import SoundboardTypes from "SoundboardTypes" /* 7477 */;
+// Module 9796 (PremiumFeatureUpsellUtils)
+import Constants from "Constants" /* 1072 */;
+import ConstantsIOS from "ConstantsIOS" /* 1092 */;
+import SentryUtilsDefault from "SentryUtils" /* 1242 */;
+import EntitlementFeatureNames from "EntitlementFeatureNames" /* 5073 */;
+import SoundboardTypes from "SoundboardTypes" /* 7518 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticsPages = Constants.AnalyticsPages;
@@ -17,14 +17,14 @@ const items = [EntitlementFeatureNames.EntitlementFeatureNames.EMOJIS_EVERYWHERE
 const set = new Set();
 const result = size.fileFinishedImporting("modules/premium/roadblocks/native/utils/PremiumFeatureUpsellUtils.tsx");
 
-export const isSoundboardSectionNitroLocked = function isSoundboardSectionNitroLocked(guild_id, categoryInfo) {
+export function isSoundboardSectionNitroLocked(guild_id, categoryInfo) {
   const tmp = categoryInfo.type === SoundboardTypes.SoundboardSoundGridSectionType.GUILD && categoryInfo.guild.id !== guild_id;
   return tmp;
-};
-export const isEmojiPickerUpsellFeature = function isEmojiPickerUpsellFeature(featureName) {
+}
+export function isEmojiPickerUpsellFeature(featureName) {
   return items.includes(featureName);
-};
-export const getAnalyticsPage = function getAnalyticsPage(featureName) {
+}
+export function getAnalyticsPage(featureName) {
   let obj3;
   if (EntitlementFeatureNames.EntitlementFeatureNames.ANIMATED_EMOJIS === featureName) {
     return AnalyticsPages.PREMIUM_UPSELL_ANIMATED_EMOJI;
@@ -59,8 +59,8 @@ export const getAnalyticsPage = function getAnalyticsPage(featureName) {
     }
     return null;
   }
-};
-export const getUpsellType = function getUpsellType(EMOJIS_EVERYWHERE) {
+}
+export function getUpsellType(EMOJIS_EVERYWHERE) {
   let obj3;
   if (EntitlementFeatureNames.EntitlementFeatureNames.ANIMATED_EMOJIS === EMOJIS_EVERYWHERE) {
     return ConstantsIOS.UpsellTypes.ANIMATED_EMOJI;
@@ -95,4 +95,4 @@ export const getUpsellType = function getUpsellType(EMOJIS_EVERYWHERE) {
     }
     return null;
   }
-};
+}

@@ -1,19 +1,19 @@
-// Module ID: 8733
-// Function ID: 8734
+// Module ID: 8783
+// Function ID: 8784
 // Name: computeProfileFrameDimensions
-// Dependencies: [8734, 8731, 8732, 2]
+// Dependencies: [8784, 8781, 8782, 2]
 // Exports: computeProfileFrameDimensions
 
-// Module 8733 (computeProfileFrameDimensions)
+// Module 8783 (computeProfileFrameDimensions)
 import size from "module_2" /* 2 */;
 
 let layer;
 
 const result = size.fileFinishedImporting("modules/collectibles/profile_frames/tooling/computeProfileFrameDimensions.tsx");
 
-export const computeProfileFrameDimensions = function computeProfileFrameDimensions(arr) {
+export function computeProfileFrameDimensions(arr) {
   let innerWidth;
-  innerWidth = innerWidth(8734).DefaultProfileFrameDimensions.INNER_WIDTH;
+  innerWidth = innerWidth(8784).DefaultProfileFrameDimensions.INNER_WIDTH;
   const mapped = arr.map((dims) => Math.round(Math.max(0, (dims.dims.width - innerWidth) / 2)));
   let overflowHorizontal = 0;
   if (mapped.length > 0) {
@@ -66,4 +66,4 @@ export const computeProfileFrameDimensions = function computeProfileFrameDimensi
     overflowBottom = HermesBuiltin.apply(max3, items2, Math);
   }
   return { innerWidth, overflowTop, overflowBottom, overflowHorizontal };
-};
+}

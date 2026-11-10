@@ -1,90 +1,20 @@
-// Module ID: 12040
-// Function ID: 12041
+// Module ID: 12206
+// Function ID: 12207
 // Name: useApplicationWidgetRefresh
-// Dependencies: [32, 19, 558, 576, 12041, 12042, 2]
+// Dependencies: [32, 19, 12207, 12208, 2]
+// Exports: default
 
-// Module 12040 (useApplicationWidgetRefresh)
-import refreshApplicationWidget from "refreshApplicationWidget" /* 12041 */;
-import presentApplicationWidgetRefreshOutcomeDefault from "presentApplicationWidgetRefreshOutcome" /* 12042 */;
+// Module 12206 (useApplicationWidgetRefresh)
+import refreshApplicationWidget from "refreshApplicationWidget" /* 12207 */;
+import presentApplicationWidgetRefreshOutcomeDefault from "presentApplicationWidgetRefreshOutcome" /* 12208 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const require = globalThis.__r;
-let _require;
-
 let _slicedToArray = _slicedToArray_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useApplicationWidgetRefresh(arg0) {
-  let closure_0;
-  let closure_2;
-  let closure_3;
-  let pending;
-  let tmp4;
-  let tmp5;
-  _require = arg0;
-  let obj = require("react");
-  const cResult = obj.c(8);
-  [pending, dependencyMap] = react.useState(false);
-  _slicedToArray = react.useRef(true);
-  const obj2 = react;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function s() {
-      closure_3.current = true;
-      return () => {
-        closure_1_3.current = false;
-      };
-    };
-    const items = [];
-    cResult[0] = fn;
-    cResult[1] = items;
-    tmp4 = fn;
-    tmp5 = items;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  const effect = obj2.useEffect(tmp4, tmp5);
-  if (cResult[2] === arg0) {
-    let tmp7;
-    if (cResult[3] === pending) {
-      tmp7 = cResult[4];
-    }
-    if (cResult[5] === pending) {
-      let tmp8;
-      if (cResult[6] === tmp7) {
-        tmp8 = cResult[7];
-      }
-      return tmp8;
-    }
-    const obj3 = { pending, refresh: tmp7 };
-    cResult[5] = pending;
-    cResult[6] = tmp7;
-    cResult[7] = obj3;
-    tmp8 = obj3;
-  }
-  const fn2 = function l() {
-    let ref;
-    let tmp = first;
-    if (!tmp) {
-      tmp = null == closure_0;
-    }
-    if (!tmp) {
-      closure_2(true);
-      const obj = refreshApplicationWidget;
-      const result = obj.refreshApplicationWidget(closure_0);
-      const nextPromise = result.then(presentApplicationWidgetRefreshOutcomeDefault);
-      nextPromise.finally(() => {
-        if (ref.current) {
-          closure_1_2(false);
-        }
-      });
-    }
-  };
-  cResult[2] = arg0;
-  cResult[3] = pending;
-  cResult[4] = fn2;
-  tmp7 = fn2;
-}) : (function useApplicationWidgetRefresh(arg0) {
+let result = size.fileFinishedImporting("modules/application_widget/hooks/useApplicationWidgetRefresh.tsx");
+
+export default function useApplicationWidgetRefresh(arg0) {
   let closure_2;
   let closure_3;
   let pending;
@@ -120,7 +50,4 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useApplica
     }, items)
   };
   return obj;
-});
-let result = size.fileFinishedImporting("modules/application_widget/hooks/useApplicationWidgetRefresh.tsx");
-
-export default tmp2;
+};

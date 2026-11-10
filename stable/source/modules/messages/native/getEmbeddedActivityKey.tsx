@@ -1,10 +1,10 @@
-// Module ID: 9812
-// Function ID: 9813
+// Module ID: 9893
+// Function ID: 9894
 // Name: getEmbeddedActivityKey
 // Dependencies: [2]
 // Exports: default, parseEmbeddedActivityKey
 
-// Module 9812 (getEmbeddedActivityKey)
+// Module 9893 (getEmbeddedActivityKey)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/messages/native/getEmbeddedActivityKey.tsx");
@@ -12,7 +12,7 @@ const result = size.fileFinishedImporting("modules/messages/native/getEmbeddedAc
 export default function getEmbeddedActivityKey(location) {
   return "" + location.location.id + ":" + location.applicationId + ":" + location.launchId;
 };
-export const parseEmbeddedActivityKey = function parseEmbeddedActivityKey(str) {
+export function parseEmbeddedActivityKey(str) {
   const parts = str.split(":");
   let tmp = null;
   if (parts.length >= 3) {
@@ -21,4 +21,4 @@ export const parseEmbeddedActivityKey = function parseEmbeddedActivityKey(str) {
     tmp = obj;
   }
   return tmp;
-};
+}

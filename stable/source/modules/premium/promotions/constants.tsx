@@ -1,9 +1,9 @@
-// Module ID: 9590
-// Function ID: 9591
-// Name: constants
+// Module ID: 9665
+// Function ID: 9666
+// Name: promotions/constants
 // Dependencies: [2]
 
-// Module 9590 (constants)
+// Module 9665 (promotions/constants)
 import size from "module_2" /* 2 */;
 
 const items = ["logitech", "youtube", "best_buy", "call_of_duty"];

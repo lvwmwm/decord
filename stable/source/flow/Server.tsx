@@ -1,18 +1,16 @@
-// Module ID: 2000
-// Function ID: 2001
+// Module ID: 1992
+// Function ID: 1993
 // Name: Server
 // Dependencies: [2]
 
-// Module 2000 (Server)
+// Module 1992 (Server)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("flow/Server.tsx");
 
 export const PermissionOverwriteType = { ROLE: 0, [0]: "ROLE", MEMBER: 1, [1]: "MEMBER" };
-export const GuildBoostUpsellType = { FIRST_BOOSTER: 0, [0]: "FIRST_BOOSTER" };
 export const AgeVerificationStatusUkAndAusOnly = { UNVERIFIED: 1, [1]: "UNVERIFIED", VERIFIED_TEEN: 2, [2]: "VERIFIED_TEEN", VERIFIED_ADULT: 3, [3]: "VERIFIED_ADULT", INFERRED_ADULT: 4, [4]: "INFERRED_ADULT", INFERRED_TEEN: 5, [5]: "INFERRED_TEEN", CLIENT_ONLY_PENDING: 99999, [99999]: "CLIENT_ONLY_PENDING" };
 export const GameCompanyRole = { UNKNOWN: 0, [0]: "UNKNOWN", PUBLISHER: 1, [1]: "PUBLISHER", DEVELOPER: 2, [2]: "DEVELOPER" };
-export const EmbeddedActivitySupportedPlatforms = { IOS: "ios", ANDROID: "android", WEB: "web" };
 export const EmbeddedActivityLabelTypes = { NONE: 0, [0]: "NONE", NEW: 1, [1]: "NEW", UPDATED: 2, [2]: "UPDATED" };
 export const EmbeddedActivitySurfaces = { VOICE_LAUNCHER: "voice_launcher", TEXT_LAUNCHER: "text_launcher" };
 export const GameLinkTypes = { LINKED: 1, [1]: "LINKED", OFFICIAL: 2, [2]: "OFFICIAL", NVIDIA: 3, [3]: "NVIDIA" };
@@ -27,6 +25,6 @@ export const ComponentType = { UNKNOWN: -1, [-1]: "UNKNOWN", ACTION_ROW: 1, [1]:
 export const ButtonStyle = { PRIMARY: 1, [1]: "PRIMARY", SECONDARY: 2, [2]: "SECONDARY", SUCCESS: 3, [3]: "SUCCESS", DESTRUCTIVE: 4, [4]: "DESTRUCTIVE", LINK: 5, [5]: "LINK", PREMIUM: 6, [6]: "PREMIUM" };
 export const TextInputComponentStyle = { SMALL: 1, [1]: "SMALL", PARAGRAPH: 2, [2]: "PARAGRAPH" };
 export const SeparatorSpacingSize = { SMALL: 1, [1]: "SMALL", LARGE: 2, [2]: "LARGE" };
-export const InvoiceDiscountTypes = { SUBSCRIPTION_PLAN: 1, [1]: "SUBSCRIPTION_PLAN", ENTITLEMENT: 2, [2]: "ENTITLEMENT", PREMIUM_LEGACY_UPGRADE_PROMOTION: 3, [3]: "PREMIUM_LEGACY_UPGRADE_PROMOTION", PREMIUM_TRIAL: 4, [4]: "PREMIUM_TRIAL", DEFAULT: 5, [5]: "DEFAULT" };
+export const InvoiceDiscountTypes = { SUBSCRIPTION_PLAN: 1, [1]: "SUBSCRIPTION_PLAN", ENTITLEMENT: 2, [2]: "ENTITLEMENT", PREMIUM_LEGACY_UPGRADE_PROMOTION: 3, [3]: "PREMIUM_LEGACY_UPGRADE_PROMOTION", PREMIUM_TRIAL: 4, [4]: "PREMIUM_TRIAL", DEFAULT: 5, [5]: "DEFAULT", QUANTITY_DISCOUNT: 7, [7]: "QUANTITY_DISCOUNT" };
 export const PurchaseNotificationType = { GUILD_PRODUCT: 0, [0]: "GUILD_PRODUCT" };
 export const AuthenticatorType = { WEBAUTHN: 1, [1]: "WEBAUTHN", TOTP: 2, [2]: "TOTP", SMS: 3, [3]: "SMS" };

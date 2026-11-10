@@ -1,18 +1,18 @@
-// Module ID: 5242
-// Function ID: 5243
+// Module ID: 5258
+// Function ID: 5259
 // Name: ActionSheetActionCreators
-// Dependencies: [109, 19, 5243, 21, 5244, 5245, 1896, 584, 2]
+// Dependencies: [109, 19, 5259, 21, 5260, 5261, 1888, 572, 2]
 // Exports: showActionSheet
 
-// Module 5242 (ActionSheetActionCreators)
+// Module 5258 (ActionSheetActionCreators)
 import Fragment from "Fragment" /* 21 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1896 */;
-import HapticUtils from "HapticUtils" /* 5244 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5245 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1888 */;
+import HapticUtils from "HapticUtils" /* 5260 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5261 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import ActionSheetStore from "ActionSheetStore" /* 5243 */;
+import ActionSheetStore from "ActionSheetStore" /* 5259 */;
 import size from "module_2" /* 2 */;
 
 let closure_3 = ["impressionName", "impressionProperties", "backdropKind", "disableHapticOnOpen", "appEntryKey"];
@@ -28,7 +28,7 @@ let obj = {
     } else {
       nextPromise = promise();
     }
-    nextPromise.then((result) => {
+    return nextPromise.then((result) => {
       let appEntryKey;
       let backdropKind;
       let disableHapticOnOpen;
@@ -82,7 +82,7 @@ let result = size.fileFinishedImporting("modules/action_sheet/native/ActionSheet
 export default obj;
 export const ACTION_SHEET_HEIGHT_HALF = "start";
 export const ACTION_SHEET_HEIGHT_EXPANDED = "expanded";
-export const showActionSheet = function showActionSheet(disableHapticOnOpen) {
+export function showActionSheet(disableHapticOnOpen) {
   let appEntryKey;
   let backdropKind;
   let content;
@@ -99,4 +99,4 @@ export const showActionSheet = function showActionSheet(disableHapticOnOpen) {
   const result1 = obj2.dismissGlobalKeyboard();
   const obj3 = DispatcherDefault;
   obj3.dispatch({ type: "SHOW_ACTION_SHEET", content, key, impressionName, impressionProperties, backdropKind, stackingBehavior, appEntryKey });
-};
+}

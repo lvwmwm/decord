@@ -1,15 +1,15 @@
-// Module ID: 7928
-// Function ID: 7929
+// Module ID: 7968
+// Function ID: 7969
 // Name: AgeVerificationURLActionCreators
-// Dependencies: [5, 502, 6688, 1087, 7929, 1297, 584, 2]
+// Dependencies: [5, 502, 6728, 1072, 7969, 1282, 572, 2]
 // Exports: getAgeVerificationMethods, registerIncodeInterview, requestAgeVerificationV2, requestIncodeMethodSession, requestIncodeSessionBootstrap
 
-// Module 7928 (AgeVerificationURLActionCreators)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1087 */;
-import HTTPUtils from "HTTPUtils" /* 1297 */;
-import AgeVerificationConstants from "AgeVerificationConstants" /* 6688 */;
-import SafetyHubUtils from "SafetyHubUtils" /* 7929 */;
+// Module 7968 (AgeVerificationURLActionCreators)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import Constants from "Constants" /* 1072 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
+import AgeVerificationConstants from "AgeVerificationConstants" /* 6728 */;
+import SafetyHubUtils from "SafetyHubUtils" /* 7969 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import size from "module_2" /* 2 */;
@@ -36,7 +36,7 @@ let obj = function _requestAgeVerification() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -57,7 +57,7 @@ let obj = function _requestAgeVerification() {
               ({ method: c0, classificationId: c1, vendor: c2 } = closure_0);
               c3 = 1;
               c4 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "flexDirection", done: true };
             }
           } else if (1 === c3) {
             if (arg0 === 1) {
@@ -217,7 +217,7 @@ obj = function _requestAgeVerificationV() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -294,7 +294,7 @@ obj = function _initiateSuspendedUserAgeVerification() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -314,7 +314,7 @@ obj = function _initiateSuspendedUserAgeVerification() {
               token = undefined;
               c3 = 1;
               c4 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "flexDirection", done: true };
             }
           } else if (1 === c3) {
             if (arg0 === 1) {
@@ -369,7 +369,7 @@ obj = function _registerIncodeInterview() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -398,7 +398,7 @@ obj = function _registerIncodeInterview() {
             return { value, done: true };
           } else {
             c1 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp8) {
           c1 = 3;
@@ -422,7 +422,7 @@ obj = function _requestIncodeSessionBootstrap() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -445,7 +445,7 @@ obj = function _requestIncodeSessionBootstrap() {
             }
             c3 = 1;
             c4 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "flexDirection", done: true };
           }
         } else if (1 === c3) {
           if (arg0 === 1) {
@@ -535,24 +535,24 @@ const Endpoints = Constants.Endpoints;
 const result = size.fileFinishedImporting("modules/age_assurance/AgeVerificationURLActionCreators.tsx");
 
 export { requestAgeVerification };
-export const requestIncodeMethodSession = function requestIncodeMethodSession() {
+export function requestIncodeMethodSession() {
   return obj(...arguments);
-};
+}
 export { initiateAgeVerification };
 export { initiateAgeVerificationV2 };
 export { initiateSuspendedUserAgeVerificationV2 };
-export const requestAgeVerificationV2 = function requestAgeVerificationV2() {
+export function requestAgeVerificationV2() {
   return obj(...arguments);
-};
+}
 export { initiateSuspendedUserAgeVerification };
-export const registerIncodeInterview = function registerIncodeInterview() {
+export function registerIncodeInterview() {
   return obj(...arguments);
-};
-export const requestIncodeSessionBootstrap = function requestIncodeSessionBootstrap() {
+}
+export function requestIncodeSessionBootstrap() {
   return obj(...arguments);
-};
-export const getAgeVerificationMethods = function getAgeVerificationMethods() {
+}
+export function getAgeVerificationMethods() {
   return obj(...arguments);
-};
+}
 export { fetchAgeVerificationMethods };
 export { fetchAgeVerificationMethodsSuspendedUser };

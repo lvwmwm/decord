@@ -1,17 +1,17 @@
-// Module ID: 12033
-// Function ID: 12034
+// Module ID: 12352
+// Function ID: 12353
 // Name: UserProfileApplicationWidgetBottomStatsLayout
-// Dependencies: [19, 17, 21, 5003, 587, 558, 576, 11942, 12028, 5266, 12029, 2]
+// Dependencies: [19, 17, 21, 5014, 575, 12261, 12347, 5624, 12348, 2]
+// Exports: default
 
-// Module 12033 (UserProfileApplicationWidgetBottomStatsLayout)
+// Module 12352 (UserProfileApplicationWidgetBottomStatsLayout)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 587 */;
-import _mod11942 from "module_11942" /* 11942 */;
-import UserProfileApplicationWidgetFieldUtils from "UserProfileApplicationWidgetFieldUtils" /* 12028 */;
+import nativeDefault from "native" /* 575 */;
+import _mod12261 from "module_12261" /* 12261 */;
+import UserProfileApplicationWidgetFieldUtils from "UserProfileApplicationWidgetFieldUtils" /* 12347 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5003 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -26,97 +26,17 @@ obj2 = { flexDirection: "row", flexWrap: "wrap", rowGap: nativeDefault.space.PX_
 createStyles = createStyles.createStyles;
 obj3 = { width: "47%", gap: nativeDefault.space.PX_4 };
 let closure_5 = createStyles(obj);
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileApplicationWidgetBottomStatsLayout(bottomConfig) {
-  let first;
-  let resolveFieldValue;
-  let obj = bottomConfig(resolveFieldValue[6]);
-  const cResult = obj.c(11);
-  bottomConfig = bottomConfig.bottomConfig;
-  resolveFieldValue = bottomConfig.resolveFieldValue;
-  const numberFormat = bottomConfig.numberFormat;
-  let tmp2 = closure_5();
-  const stat = tmp2;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let items = [1, 2, 3, 4, 5, 6];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] === bottomConfig) {
-    if (cResult[2] === numberFormat) {
-      let arr3;
-      if (cResult[3] === resolveFieldValue) {
-        arr3 = cResult[4];
-      }
-      if (cResult[5] === arr3) {
-        let tmp5;
-        if (cResult[6] === tmp2.stat) {
-          tmp5 = cResult[7];
-        }
-        if (cResult[8] === tmp2.statsGrid) {
-          let tmp7;
-          if (cResult[9] === tmp5) {
-            tmp7 = cResult[10];
-          }
-          return tmp7;
-        }
-        let obj2 = { style: tmp4, children: tmp5 };
-        const tmp10 = stat(numberFormat, obj2);
-        cResult[8] = tmp2.statsGrid;
-        cResult[9] = tmp5;
-        cResult[10] = tmp10;
-        tmp7 = tmp10;
-      }
-      const mapped = arr3.map((value, index) => {
-        let items;
-        let tmp = null != value;
-        if (tmp) {
-          let tmp5Result;
-          const obj = { style: stat.stat, children: items };
-          const obj2 = { field: value.value, variant: "text-sm/medium", color: "text-default", skeletonWidthChars: 8 };
-          items = [_false(UserProfileApplicationWidgetFieldUtils.FieldText, obj2), ];
-          const tmp2 = React3;
-          const tmp3 = View;
-          if ("value" === value.label.status) {
-            const obj3 = { variant: "text-xs/normal", color: "text-muted", children: value.label.text };
-            tmp5Result = tmp5(tmp6(5266).Text, obj3);
-          } else {
-            tmp5Result = null;
-            if ("skeleton" === value.label.status) {
-              tmp5Result = tmp5(tmp6(12029).TextSkeleton, { variant: "text-xs/normal", widthChars: 6 });
-            }
-          }
-          items[1] = tmp5Result;
-          tmp = tmp2(tmp3, obj, index);
-        }
-        return tmp;
-      });
-      cResult[5] = arr3;
-      cResult[6] = tmp2.stat;
-      cResult[7] = mapped;
-      tmp5 = mapped;
-    }
-  }
-  const mapped1 = first.map((item) => {
-    const resolveStatComponentValues = _mod11942.resolveStatComponentValues;
-    _mod11942;
-    return resolveStatComponentValues(bottomConfig.components["stat_" + item], resolveFieldValue, numberFormat, UserProfileApplicationWidgetFieldUtils.formatDurationNarrow, true);
-  });
-  cResult[1] = bottomConfig;
-  cResult[2] = numberFormat;
-  cResult[3] = resolveFieldValue;
-  cResult[4] = mapped1;
-  arr3 = mapped1;
-}) : (function UserProfileApplicationWidgetBottomStatsLayout(arg0) {
+const result = size.fileFinishedImporting("modules/application_widget/native/UserProfileApplicationWidgetBottomStatsLayout.tsx");
+
+export default function UserProfileApplicationWidgetBottomStatsLayout(arg0) {
   let components;
   ({ bottomConfig: require, resolveFieldValue: dependencyMap, numberFormat: View } = arg0);
   let tmp = closure_5();
   const stat = tmp;
   let items = [1, 2, 3, 4, 5, 6];
   const mapped = items.map((item) => {
-    const resolveStatComponentValues = _mod11942.resolveStatComponentValues;
-    _mod11942;
+    const resolveStatComponentValues = _mod12261.resolveStatComponentValues;
+    _mod12261;
     return resolveStatComponentValues(require.components["stat_" + item], dependencyMap, View, UserProfileApplicationWidgetFieldUtils.formatDurationNarrow, true);
   });
   let obj = {
@@ -133,11 +53,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileA
         const tmp3 = View;
         if ("value" === value.label.status) {
           const obj3 = { variant: "text-xs/normal", color: "text-muted", children: value.label.text };
-          tmp5Result = tmp5(tmp6(5266).Text, obj3);
+          tmp5Result = tmp5(tmp6(5624).Text, obj3);
         } else {
           tmp5Result = null;
           if ("skeleton" === value.label.status) {
-            tmp5Result = tmp5(tmp6(12029).TextSkeleton, { variant: "text-xs/normal", widthChars: 6 });
+            tmp5Result = tmp5(tmp6(12348).TextSkeleton, { variant: "text-xs/normal", widthChars: 6 });
           }
         }
         items[1] = tmp5Result;
@@ -147,7 +67,4 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileA
     })
   };
   return stat(View, obj);
-});
-const result = size.fileFinishedImporting("modules/application_widget/native/UserProfileApplicationWidgetBottomStatsLayout.tsx");
-
-export default tmp5;
+};

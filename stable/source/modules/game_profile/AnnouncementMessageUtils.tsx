@@ -1,13 +1,13 @@
-// Module ID: 9377
-// Function ID: 9378
+// Module ID: 9447
+// Function ID: 9448
 // Name: AnnouncementMessageUtils
-// Dependencies: [4946, 2000, 6053, 6031, 1105, 9378, 6044, 9379, 1128, 1386, 2]
+// Dependencies: [4957, 1992, 6072, 6051, 1090, 9448, 6063, 9449, 1113, 1377, 2]
 // Exports: getPollExpiryLabel, getPosterUrl, toAnnouncementMessages
 
-// Module 9377 (AnnouncementMessageUtils)
-import URLUtilsDefault from "URLUtils" /* 1386 */;
-import MessageRecord from "MessageRecord" /* 4946 */;
-import useFormattedExpirationLabel from "useFormattedExpirationLabel" /* 9379 */;
+// Module 9447 (AnnouncementMessageUtils)
+import URLUtilsDefault from "URLUtils" /* 1377 */;
+import MessageRecord from "MessageRecord" /* 4957 */;
+import useFormattedExpirationLabel from "useFormattedExpirationLabel" /* 9449 */;
 import size from "module_2" /* 2 */;
 
 let reactions;
@@ -17,7 +17,7 @@ const re4 = /^#{1,3}\s+(.+)$/;
 const re5 = /^https?:\/\/\S+$/;
 let result = size.fileFinishedImporting("modules/game_profile/AnnouncementMessageUtils.tsx");
 
-export const toAnnouncementMessages = function toAnnouncementMessages(messages) {
+export function toAnnouncementMessages(messages) {
   let regex;
   return messages.map((reactions) => {
     let body;
@@ -253,32 +253,32 @@ export const toAnnouncementMessages = function toAnnouncementMessages(messages) 
       }
     }
   });
-};
-export const getPollExpiryLabel = function getPollExpiryLabel(poll) {
+}
+export function getPollExpiryLabel(poll) {
   const obj = useFormattedExpirationLabel;
   let result = obj.formatExpirationLabel(poll.expiry);
   if (result == null) {
-    const intl = tmp(1128).intl;
-    result = intl.string(tmp(1128).t["e+J3JZ"]);
+    const intl = tmp(1113).intl;
+    result = intl.string(tmp(1113).t["e+J3JZ"]);
   }
   return result;
-};
-export const getPosterUrl = function getPosterUrl(proxyUrl, c11, c10) {
+}
+export function getPosterUrl(proxyUrl, arg1, arg2) {
   const obj = URLUtilsDefault;
   const str = obj.toURLSafe(proxyUrl);
   let str1 = null;
   if (null != str) {
     const searchParams = str.searchParams;
     searchParams.append("format", "webp");
-    if (null != c11) {
+    if (null != arg1) {
       const searchParams2 = str.searchParams;
-      searchParams2.append("width", c11.toString());
+      searchParams2.append("width", arg1.toString());
     }
-    if (null != c10) {
+    if (null != arg2) {
       const searchParams3 = str.searchParams;
-      searchParams3.append("height", c10.toString());
+      searchParams3.append("height", arg2.toString());
     }
     str1 = str.toString();
   }
   return str1;
-};
+}

@@ -1,20 +1,20 @@
-// Module ID: 10905
-// Function ID: 10906
+// Module ID: 10991
+// Function ID: 10992
 // Name: markUnread
-// Dependencies: [5, 4937, 4855, 6042, 6803, 1392, 1087, 3, 11, 8319, 1297, 2]
+// Dependencies: [5, 4948, 4863, 6061, 6842, 1383, 1072, 3, 11, 8202, 1282, 2]
 // Exports: default
 
-// Module 10905 (markUnread)
+// Module 10991 (markUnread)
 import LoggerDefault from "Logger" /* 3 */;
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import Constants from "Constants" /* 1087 */;
-import ReadStateStore from "ReadStateStore" /* 6803 */;
-import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 8319 */;
+import Constants from "Constants" /* 1072 */;
+import ReadStateStore from "ReadStateStore" /* 6842 */;
+import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 8202 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4937 */;
-import ChannelStore from "ChannelStore" /* 4855 */;
-import MessageStore from "MessageStore" /* 6042 */;
-import UserStore from "UserStore" /* 1392 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4948 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import MessageStore from "MessageStore" /* 6061 */;
+import UserStore from "UserStore" /* 1383 */;
 import size from "module_2" /* 2 */;
 
 let channel, closure_2, closure_3, closure_4, currentUser, mention_count, messages;
@@ -37,7 +37,7 @@ let obj = function _markUnread() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -104,7 +104,7 @@ let obj = function _markUnread() {
                 post(request);
               }
               c5 = 3;
-              return { value: "IconComponent", done: "+352" };
+              return { value: "HermesInternal", done: null };
             }
           } else if (1 === mention_count) {
             if (arg0 === 1) {

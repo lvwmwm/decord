@@ -1,14 +1,14 @@
-// Module ID: 7418
-// Function ID: 7419
+// Module ID: 7460
+// Function ID: 7461
 // Name: ReportUtils
-// Dependencies: [4855, 4935, 1392, 1087, 2]
+// Dependencies: [4863, 4946, 1383, 1072, 2]
 // Exports: canDeleteAndReportMessage, canReportAndDeleteInChannel, canReportMessage, canReportUser
 
-// Module 7418 (ReportUtils)
-import ChannelStore from "ChannelStore" /* 4855 */;
-import PermissionStore from "PermissionStore" /* 4935 */;
-import UserStore from "UserStore" /* 1392 */;
-import Constants from "Constants" /* 1087 */;
+// Module 7460 (ReportUtils)
+import ChannelStore from "ChannelStore" /* 4863 */;
+import PermissionStore from "PermissionStore" /* 4946 */;
+import UserStore from "UserStore" /* 1383 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -17,7 +17,7 @@ let hasOwnProperty;
 ({ ChannelTypes: c3, Permissions: closure_4, MessageTypesSets: hasOwnProperty } = Constants);
 let result = size.fileFinishedImporting("utils/ReportUtils.tsx");
 
-export const canReportUser = function canReportUser(user) {
+export function canReportUser(user) {
   if (null == user) {
     return false;
   } else {
@@ -30,8 +30,8 @@ export const canReportUser = function canReportUser(user) {
     }
     return tmp3;
   }
-};
-export const canReportMessage = function canReportMessage(message) {
+}
+export function canReportMessage(message) {
   let tmp = null != message;
   if (tmp) {
     const NON_REPORTABLE = hasOwnProperty.NON_REPORTABLE;
@@ -53,8 +53,8 @@ export const canReportMessage = function canReportMessage(message) {
     tmp = flag;
   }
   return tmp;
-};
-export const canReportAndDeleteInChannel = function canReportAndDeleteInChannel(channelId) {
+}
+export function canReportAndDeleteInChannel(channelId) {
   const channel = ChannelStore.getChannel(channelId);
   let tmp2 = null != channel;
   if (tmp2) {
@@ -66,8 +66,8 @@ export const canReportAndDeleteInChannel = function canReportAndDeleteInChannel(
     tmp2 = result;
   }
   return tmp2;
-};
-export const canDeleteAndReportMessage = function canDeleteAndReportMessage(type) {
+}
+export function canDeleteAndReportMessage(type) {
   let tmp = null != type;
   if (tmp) {
     let tmp2 = null != type;
@@ -107,4 +107,4 @@ export const canDeleteAndReportMessage = function canDeleteAndReportMessage(type
     tmp = tmp11;
   }
   return tmp;
-};
+}

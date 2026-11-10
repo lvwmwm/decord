@@ -1,13 +1,13 @@
-// Module ID: 17921
-// Function ID: 17922
+// Module ID: 18507
+// Function ID: 18508
 // Name: ChannelPressableWrapper
-// Dependencies: [19, 17, 21, 12096, 2]
+// Dependencies: [19, 17, 21, 11049, 2]
 // Exports: renderChannelPressableWrapper
 
-// Module 17921 (ChannelPressableWrapper)
+// Module 18507 (ChannelPressableWrapper)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import ChannelListLayout from "ChannelListLayout" /* 12096 */;
+import ChannelListLayout from "ChannelListLayout" /* 11049 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -15,7 +15,7 @@ const View = react_native.View;
 const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/guild_channels/ChannelPressableWrapper.tsx");
 
-export const renderChannelPressableWrapper = function renderChannelPressableWrapper(children, panelVariant) {
+export function renderChannelPressableWrapper(children, panelVariant) {
   let isThread;
   let items;
   let launchpad;
@@ -38,4 +38,4 @@ export const renderChannelPressableWrapper = function renderChannelPressableWrap
   const obj2 = { style: items, children };
   items = [marginThread, { flex: 1, flexDirection: "row", alignItems: "center" }];
   return tmp(tmp2, obj2);
-};
+}

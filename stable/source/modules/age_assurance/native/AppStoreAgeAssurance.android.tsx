@@ -1,10 +1,10 @@
-// Module ID: 8114
-// Function ID: 8115
+// Module ID: 8151
+// Function ID: 8152
 // Name: AppStoreAgeAssurance
-// Dependencies: [5, 8115, 2]
+// Dependencies: [5, 8152, 2]
 
-// Module 8114 (AppStoreAgeAssurance)
-import PlayAgeSignals from "PlayAgeSignals" /* 8115 */;
+// Module 8151 (AppStoreAgeAssurance)
+import PlayAgeSignals from "PlayAgeSignals" /* 8152 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -28,7 +28,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

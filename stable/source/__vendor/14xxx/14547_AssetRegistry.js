@@ -1,10 +1,10 @@
 // Module ID: 14547
 // Function ID: 14548
 // Name: AssetRegistry
-// Dependencies: [1134]
+// Dependencies: [1119]
 
 // Module 14547 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1134 */;
+import AssetRegistry from "AssetRegistry" /* 1119 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/gifting", width: 120, height: 120, scales: [1, 2, 3], hash: "de24dca6f22cd1565a148efb5c4a88a9", name: "wumpus_box_premium120", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "4ca3f49624db00fa92c0d848adcbd326", name: "StampIcon", type: "png" });

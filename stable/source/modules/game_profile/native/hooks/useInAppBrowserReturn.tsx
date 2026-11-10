@@ -1,92 +1,32 @@
-// Module ID: 9303
-// Function ID: 9304
+// Module ID: 9341
+// Function ID: 9342
 // Name: useInAppBrowserReturn
-// Dependencies: [19, 9285, 558, 576, 1385, 5725, 9283, 9277, 2]
+// Dependencies: [19, 9322, 1376, 5742, 9320, 9340, 2]
+// Exports: default
 
-// Module 9303 (useInAppBrowserReturn)
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9277 */;
-import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 9283 */;
+// Module 9341 (useInAppBrowserReturn)
+import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 9320 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9340 */;
 import react from "react" /* 19 */;
-import GameProfileStore from "GameProfileStore" /* 9285 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import GameProfileStore from "GameProfileStore" /* 9322 */;
 import size from "module_2" /* 2 */;
 
 let c0;
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useInAppBrowserReturn(gameId) {
-  let obj = gameId(576);
-  const cResult = obj.c(4);
-  gameId = gameId.gameId;
-  const scrollY = gameId.scrollY;
-  if (cResult[0] === gameId) {
-    let tmp2;
-    let tmp3;
-    if (cResult[1] === scrollY) {
-      tmp2 = cResult[2];
-      tmp3 = cResult[3];
-    }
-    const effect = react.useEffect(tmp2, tmp3);
-  }
-  const fn = function s() {
-    if (null != c0) {
-      let tmp = gameId;
-      let obj = gameId(dependencyMap[4]);
-      const tmp2 = dependencyMap;
-      if (obj.isIOS()) {
-        c0 = false;
-        const tmpResult = tmp(tmp2[5]);
-        let closure_1 = tmpResult.subscribeToIsInAppBrowserOpen((arg0, arg1) => {
-          const tmp = arg1;
-          if (!tmp) {
-            if (arg0) {
-              c0 = true;
-              const obj = { gameId, initialScrollOffset: scrollY.get() };
-              const setGameProfilePendingReturn = GameProfileActionCreatorsDefault.setGameProfilePendingReturn;
-              const result = setGameProfilePendingReturn(obj);
-            }
-          }
-          if (arg1) {
-            if (!arg0) {
-              closure_1();
-              c0 = false;
-              const pendingReturn = GameProfileStore.getPendingReturn();
-              if (null != pendingReturn) {
-                const obj2 = { gameId: pendingReturn.gameId, source: GameProfileAnalyticUtils.GameProfileSources.InAppBrowserReturn, initialScrollOffset: pendingReturn.initialScrollOffset };
-                const returnToGameProfile = GameProfileActionCreatorsDefault.returnToGameProfile;
-                GameProfileActionCreatorsDefault;
-                returnToGameProfile(obj2);
-              }
-            }
-          }
-        });
-        return () => {
-          const tmp = c0;
-          if (!tmp) {
-            closure_1();
-          }
-        };
-      }
-    }
-  };
-  const items = [gameId, scrollY];
-  cResult[0] = gameId;
-  cResult[1] = scrollY;
-  cResult[2] = fn;
-  cResult[3] = items;
-  tmp3 = items;
-  tmp2 = fn;
-}) : (function useInAppBrowserReturn(gameId) {
+let result = size.fileFinishedImporting("modules/game_profile/native/hooks/useInAppBrowserReturn.tsx");
+
+export default function useInAppBrowserReturn(gameId) {
   gameId = gameId.gameId;
   const scrollY = gameId.scrollY;
   const items = [gameId, scrollY];
   const effect = react.useEffect(() => {
     if (null != c0) {
       let tmp = gameId;
-      let obj = gameId(dependencyMap[4]);
+      let obj = gameId(dependencyMap[2]);
       const tmp2 = dependencyMap;
       if (obj.isIOS()) {
         c0 = false;
-        const tmpResult = tmp(tmp2[5]);
+        const tmpResult = tmp(tmp2[3]);
         let closure_1 = tmpResult.subscribeToIsInAppBrowserOpen((arg0, arg1) => {
           const tmp = arg1;
           if (!tmp) {
@@ -120,7 +60,4 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useInAppBrow
       }
     }
   }, items);
-});
-let result = size.fileFinishedImporting("modules/game_profile/native/hooks/useInAppBrowserReturn.tsx");
-
-export default tmp2;
+};

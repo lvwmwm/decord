@@ -1,13 +1,13 @@
-// Module ID: 11628
-// Function ID: 11629
+// Module ID: 11923
+// Function ID: 11924
 // Name: canStreamWithSettings
-// Dependencies: [5846, 11629, 11630, 2]
+// Dependencies: [5864, 11924, 11925, 2]
 // Exports: default
 
-// Module 11628 (canStreamWithSettings)
-import GoLiveAutoQualityExperiment from "GoLiveAutoQualityExperiment" /* 11629 */;
-import canUseStreamSettingDefault from "canUseStreamSetting" /* 11630 */;
-import StreamSettingsConstants from "StreamSettingsConstants" /* 5846 */;
+// Module 11923 (canStreamWithSettings)
+import GoLiveAutoQualityExperiment from "GoLiveAutoQualityExperiment" /* 11924 */;
+import canUseStreamSettingDefault from "canUseStreamSetting" /* 11925 */;
+import StreamSettingsConstants from "StreamSettingsConstants" /* 5864 */;
 import size from "module_2" /* 2 */;
 
 let c3;

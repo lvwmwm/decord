@@ -1,20 +1,20 @@
-// Module ID: 18877
-// Function ID: 18878
+// Module ID: 19497
+// Function ID: 19498
 // Name: useFileUploadComponentState
-// Dependencies: [19, 7663, 8325, 8627, 38, 2000, 2]
+// Dependencies: [19, 7701, 8208, 8696, 38, 1992, 2]
 // Exports: useFileUploadComponentState
 
-// Module 18877 (useFileUploadComponentState)
-import Server from "Server" /* 2000 */;
-import DraftStore from "DraftStore" /* 7663 */;
+// Module 19497 (useFileUploadComponentState)
+import Server from "Server" /* 1992 */;
+import DraftStore from "DraftStore" /* 7701 */;
 import react from "react" /* 19 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 8325 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 8208 */;
 import size from "module_2" /* 2 */;
 
 const DraftType = DraftStore.DraftType;
 const result = size.fileFinishedImporting("modules/interaction_components/useFileUploadComponentState.tsx");
 
-export const useFileUploadComponentState = function useFileUploadComponentState(maxValues) {
+export function useFileUploadComponentState(maxValues) {
   let currentUploads;
   let executeStateUpdate;
   let setUploadIds;
@@ -63,4 +63,4 @@ export const useFileUploadComponentState = function useFileUploadComponentState(
     }
   }, items3);
   return { uploadIds, setUploadIds, currentUploads, error };
-};
+}

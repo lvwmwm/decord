@@ -1,14 +1,13 @@
-// Module ID: 14321
-// Function ID: 14322
+// Module ID: 14853
+// Function ID: 14854
 // Name: isOnPlayStation
-// Dependencies: [1087, 2]
+// Dependencies: [9738, 2]
 // Exports: default
 
-// Module 14321 (isOnPlayStation)
-import Constants from "Constants" /* 1087 */;
+// Module 14853 (isOnPlayStation)
+import ActivityGamePlatforms from "ActivityGamePlatforms" /* 9738 */;
 import size from "module_2" /* 2 */;
 
-const ActivityGamePlatforms = Constants.ActivityGamePlatforms;
 const result = size.fileFinishedImporting("modules/activities/utils/isOnPlayStation.tsx");
 
 export default function isOnPlayStation(platform) {
@@ -16,13 +15,13 @@ export default function isOnPlayStation(platform) {
   if (platform != null) {
     platform = platform.platform;
   }
-  let tmp3 = platform === ActivityGamePlatforms.PS4;
-  if (!tmp3) {
+  let tmp4 = platform === ActivityGamePlatforms.ActivityGamePlatforms.PLAYSTATION_4;
+  if (!tmp4) {
     let platform1;
     if (platform != null) {
       platform1 = platform.platform;
     }
-    tmp3 = platform1 === tmp2.PS5;
+    tmp4 = platform1 === ActivityGamePlatforms.ActivityGamePlatforms.PLAYSTATION_5;
   }
-  return tmp3;
+  return tmp4;
 };

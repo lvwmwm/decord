@@ -1,15 +1,15 @@
-// Module ID: 19522
-// Function ID: 19523
+// Module ID: 20143
+// Function ID: 20144
 // Name: libDiscoreSmokeTest
-// Dependencies: [5, 1087, 3, 566, 562, 559, 1267, 2]
+// Dependencies: [5, 1072, 3, 1365, 1361, 4889, 1252, 2]
 // Exports: default, formatErrorMessage, libDiscoreSmokeTest
 
-// Module 19522 (libDiscoreSmokeTest)
+// Module 20143 (libDiscoreSmokeTest)
 import LoggerDefault from "Logger" /* 3 */;
-import libdiscoreExperiments from "libdiscoreExperiments" /* 559 */;
-import initLibdiscore from "initLibdiscore" /* 566 */;
-import Constants from "Constants" /* 1087 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
+import Constants from "Constants" /* 1072 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import initLibdiscore from "initLibdiscore" /* 1365 */;
+import libdiscoreExperiments from "libdiscoreExperiments" /* 4889 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ let obj = function _libDiscoreSmokeTest() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -81,7 +81,7 @@ let obj = function _libDiscoreSmokeTest() {
           c6 = true;
         }
         c5 = 3;
-        return { value: "IconComponent", done: "+352" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp23) {
         closure_2 = tmp23;
         if (0 === c3) {
@@ -142,7 +142,7 @@ const result = size.fileFinishedImporting("modules/libdiscore/libDiscoreSmokeTes
 export default libDiscoreSmokeTest;
 export { libDiscoreSmokeTest };
 export { trackLibdiscoreSuccess };
-export const formatErrorMessage = function formatErrorMessage(arg0) {
+export function formatErrorMessage(arg0) {
   let message;
   let name;
   if (arg0 instanceof Error) {
@@ -165,5 +165,5 @@ export const formatErrorMessage = function formatErrorMessage(arg0) {
     combined = "" + name + ": " + text;
   }
   return combined;
-};
+}
 export { trackLibdiscoreFailure };

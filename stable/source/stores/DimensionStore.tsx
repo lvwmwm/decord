@@ -1,12 +1,12 @@
-// Module ID: 6522
-// Function ID: 6523
+// Module ID: 6562
+// Function ID: 6563
 // Name: DimensionStore
-// Dependencies: [568, 504, 584, 2]
+// Dependencies: [558, 504, 572, 2]
 
-// Module 6522 (DimensionStore)
+// Module 6562 (DimensionStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import shallowEqualDefault from "shallowEqual" /* 568 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
+import shallowEqualDefault from "shallowEqual" /* 558 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 
 const React2 = {};

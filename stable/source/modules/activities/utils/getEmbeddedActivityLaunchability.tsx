@@ -1,20 +1,19 @@
-// Module ID: 11447
-// Function ID: 11448
+// Module ID: 11748
+// Function ID: 11749
 // Name: getEmbeddedActivityLaunchability
-// Dependencies: [4855, 4877, 4935, 5662, 2026, 1087, 11418, 6694, 558, 576, 504, 1128, 2]
-// Exports: getEmbeddedActivityLaunchabilityForChannel, getEmbeddedActivityLaunchabilityLabel
+// Dependencies: [4863, 4885, 4946, 5679, 2018, 1072, 11720, 6734, 504, 1113, 2]
+// Exports: getEmbeddedActivityLaunchabilityForChannel, getEmbeddedActivityLaunchabilityLabel, useEmbeddedActivityLaunchability
 
-// Module 11447 (getEmbeddedActivityLaunchability)
-import Constants from "Constants" /* 1087 */;
-import intl5 from "intl" /* 1128 */;
-import Constants2 from "Constants" /* 2026 */;
-import AgeGateUtils from "AgeGateUtils" /* 6694 */;
-import useIsActivitiesEnabledForCurrentPlatform from "useIsActivitiesEnabledForCurrentPlatform" /* 11418 */;
-import ChannelStore from "ChannelStore" /* 4855 */;
-import GuildStore from "GuildStore" /* 4877 */;
-import PermissionStore from "PermissionStore" /* 4935 */;
-import VoiceStateStore from "VoiceStateStore" /* 5662 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 11748 (getEmbeddedActivityLaunchability)
+import Constants from "Constants" /* 1072 */;
+import intl5 from "intl" /* 1113 */;
+import Constants2 from "Constants" /* 2018 */;
+import AgeGateUtils from "AgeGateUtils" /* 6734 */;
+import useIsActivitiesEnabledForCurrentPlatform from "useIsActivitiesEnabledForCurrentPlatform" /* 11720 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import GuildStore from "GuildStore" /* 4885 */;
+import PermissionStore from "PermissionStore" /* 4946 */;
+import VoiceStateStore from "VoiceStateStore" /* 5679 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -74,83 +73,19 @@ function getEmbeddedActivityLaunchability(arg0) {
 let closure_6 = Constants2.SUPPORTED_ACTIVITIES_CHANNEL_TYPES;
 const Permissions = Constants.Permissions;
 const EmbeddedActivityLaunchability = { CAN_LAUNCH: 0, [0]: "CAN_LAUNCH", NO_USE_EMBEDDED_ACTIVITIES_PERMISSION: 1, [1]: "NO_USE_EMBEDDED_ACTIVITIES_PERMISSION", NO_CHANNEL_CONNECT_PERMISSION: 2, [2]: "NO_CHANNEL_CONNECT_PERMISSION", NO_CHANNEL: 3, [3]: "NO_CHANNEL", NO_GUILD: 4, [4]: "NO_GUILD", IS_AFK_CHANNEL: 5, [5]: "IS_AFK_CHANNEL", ACTIVITIES_FEATURE_NOT_ENABLED_FOR_OS: 6, [6]: "ACTIVITIES_FEATURE_NOT_ENABLED_FOR_OS", ACTIVITIES_FEATURE_NOT_ENABLED_FOR_CHANNEL: 7, [7]: "ACTIVITIES_FEATURE_NOT_ENABLED_FOR_CHANNEL", CHANNEL_CONTENT_GATED: 8, [8]: "CHANNEL_CONTENT_GATED" };
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmbeddedActivityLaunchability(channelId) {
-  let first;
-  let fn;
-  let isChannelContentGated;
-  let items3;
-  let tmp10;
-  let tmp6;
-  let tmp7;
-  _require = channelId;
-  let obj = require("react");
-  const cResult = obj.c(9);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [ChannelStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== channelId) {
-    class A {
-      constructor() {
-        return ChannelStore.getChannel(channelId);
-      }
-    }
-    const items1 = [channelId];
-    cResult[1] = channelId;
-    cResult[2] = A;
-    cResult[3] = items1;
-    tmp7 = items1;
-    tmp6 = A;
-  } else {
-    class A {
-      constructor() {
-        return ChannelStore.getChannel(channelId);
-      }
-    }
-    tmp7 = cResult[3];
-  }
-  const tmpResult = require("get initialized");
-  const stateFromStores = tmpResult.useStateFromStores(first, tmp6, tmp7);
-  const tmpResult3 = require("AgeGateUtils");
-  isChannelContentGated = tmpResult3.useIsChannelContentGated(stateFromStores);
-  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    class A {
-      constructor() {
-        return ChannelStore.getChannel(channelId);
-      }
-    }
-    const items2 = [ChannelStore, GuildStore, PermissionStore, VoiceStateStore];
-    cResult[4] = items2;
-    tmp10 = items2;
-  } else {
-    class A {
-      constructor() {
-        return ChannelStore.getChannel(channelId);
-      }
-    }
-  }
-  if (cResult[5] === channelId) {
-    class A {
-      constructor() {
-        return ChannelStore.getChannel(channelId);
-      }
-    }
-    const tmpResult4 = require("get initialized");
-    return tmpResult4.useStateFromStores(tmp10, fn, items3);
-  }
-  fn = function u() {
-    const obj = { channelId, isContentGated: isChannelContentGated, ChannelStore, GuildStore, PermissionStore, VoiceStateStore };
-    return getEmbeddedActivityLaunchability(obj);
-  };
-  items3 = [channelId, isChannelContentGated];
-  cResult[5] = channelId;
-  cResult[6] = isChannelContentGated;
-  cResult[7] = fn;
-  cResult[8] = items3;
-}) : (function useEmbeddedActivityLaunchability(channelId) {
+const result = size.fileFinishedImporting("modules/activities/utils/getEmbeddedActivityLaunchability.tsx");
+
+export { EmbeddedActivityLaunchability };
+export { getEmbeddedActivityLaunchability };
+export function getEmbeddedActivityLaunchabilityForChannel(channelId) {
+  let channel;
+  let obj2;
+  const obj = { channelId, isContentGated: obj2.isChannelContentGated(channel), ChannelStore, GuildStore, PermissionStore, VoiceStateStore };
+  channel = ChannelStore.getChannel(channelId);
+  obj2 = AgeGateUtils;
+  return getEmbeddedActivityLaunchability(obj);
+}
+export function useEmbeddedActivityLaunchability(channelId) {
   let isChannelContentGated;
   _require = channelId;
   let obj = require("get initialized");
@@ -166,21 +101,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmbedde
     const obj = { channelId, isContentGated: isChannelContentGated, ChannelStore, GuildStore, PermissionStore, VoiceStateStore };
     return getEmbeddedActivityLaunchability(obj);
   }, items3);
-});
-const result = size.fileFinishedImporting("modules/activities/utils/getEmbeddedActivityLaunchability.tsx");
-
-export { EmbeddedActivityLaunchability };
-export { getEmbeddedActivityLaunchability };
-export const getEmbeddedActivityLaunchabilityForChannel = function getEmbeddedActivityLaunchabilityForChannel(channelId) {
-  let channel;
-  let obj2;
-  const obj = { channelId, isContentGated: obj2.isChannelContentGated(channel), ChannelStore, GuildStore, PermissionStore, VoiceStateStore };
-  channel = ChannelStore.getChannel(channelId);
-  obj2 = AgeGateUtils;
-  return getEmbeddedActivityLaunchability(obj);
-};
-export const useEmbeddedActivityLaunchability = tmp2;
-export const getEmbeddedActivityLaunchabilityLabel = function getEmbeddedActivityLaunchabilityLabel(arg0) {
+}
+export function getEmbeddedActivityLaunchabilityLabel(arg0) {
   if (obj.CAN_LAUNCH === arg0) {
     const intl4 = intl5.intl;
     return intl4.string(intl5.t.qJvTKQ);
@@ -194,4 +116,4 @@ export const getEmbeddedActivityLaunchabilityLabel = function getEmbeddedActivit
     const intl = intl5.intl;
     return intl.string(intl5.t.j29zCr);
   }
-};
+}

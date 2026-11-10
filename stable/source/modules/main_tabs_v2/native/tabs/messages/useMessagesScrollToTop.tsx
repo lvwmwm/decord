@@ -1,12 +1,12 @@
-// Module ID: 17511
-// Function ID: 17512
+// Module ID: 18100
+// Function ID: 18101
 // Name: useMessagesScrollToTop
-// Dependencies: [19, 5004, 5182, 11204, 1506, 2]
+// Dependencies: [19, 5015, 5198, 11505, 1498, 2]
 // Exports: default
 
-// Module 17511 (useMessagesScrollToTop)
+// Module 18100 (useMessagesScrollToTop)
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5004 */;
+import AccessibilityStore from "AccessibilityStore" /* 5015 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/useMessagesScrollToTop.tsx");
@@ -49,6 +49,6 @@ export default function useMessagesScrollToTop(listRef) {
     };
     return obj;
   }, items));
-  let obj = listRef(1506);
+  let obj = listRef(1498);
   const scrollToTop = obj.useScrollToTop(ref);
 };

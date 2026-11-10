@@ -1,26 +1,19 @@
-// Module ID: 9973
-// Function ID: 9974
+// Module ID: 10055
+// Function ID: 10056
 // Name: useMaybeAddReactionMarketingEasterEggNote
-// Dependencies: [558, 9974, 2]
+// Dependencies: [10056, 2]
+// Exports: default
 
-// Module 9973 (useMaybeAddReactionMarketingEasterEggNote)
-import useMaybeAddPollsMarketingEasterEggNoteDefault from "useMaybeAddPollsMarketingEasterEggNote" /* 9974 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 10055 (useMaybeAddReactionMarketingEasterEggNote)
+import useMaybeAddPollsMarketingEasterEggNoteDefault from "useMaybeAddPollsMarketingEasterEggNote" /* 10056 */;
 import size from "module_2" /* 2 */;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMaybeAddReactionMarketingEasterEggNote(arg0) {
-  let tmp = arg0;
-  if (":pizza:" === arg0) {
-    tmp = useMaybeAddPollsMarketingEasterEggNoteDefault(arg0);
-  }
-  return tmp;
-}) : (function useMaybeAddReactionMarketingEasterEggNote(arg0) {
-  let tmp = arg0;
-  if (":pizza:" === arg0) {
-    tmp = useMaybeAddPollsMarketingEasterEggNoteDefault(arg0);
-  }
-  return tmp;
-});
 const result = size.fileFinishedImporting("modules/messages/useMaybeAddReactionMarketingEasterEggNote.tsx");
 
-export default tmp2;
+export default function useMaybeAddReactionMarketingEasterEggNote(arg0) {
+  let tmp = arg0;
+  if (":pizza:" === arg0) {
+    tmp = useMaybeAddPollsMarketingEasterEggNoteDefault(arg0);
+  }
+  return tmp;
+};

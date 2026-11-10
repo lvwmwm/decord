@@ -1,13 +1,13 @@
-// Module ID: 12149
-// Function ID: 12150
+// Module ID: 12454
+// Function ID: 12455
 // Name: getCollectionItemAssetUrl
-// Dependencies: [1087, 1452, 1417, 2]
+// Dependencies: [1072, 1444, 1409, 2]
 // Exports: getCollectionItemAssetUrl
 
-// Module 12149 (getCollectionItemAssetUrl)
-import Constants from "Constants" /* 1087 */;
-import AvatarUtils from "AvatarUtils" /* 1417 */;
-import ImageLoaderUtils from "ImageLoaderUtils" /* 1452 */;
+// Module 12454 (getCollectionItemAssetUrl)
+import Constants from "Constants" /* 1072 */;
+import AvatarUtils from "AvatarUtils" /* 1409 */;
+import ImageLoaderUtils from "ImageLoaderUtils" /* 1444 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -16,7 +16,7 @@ const Endpoints = Constants.Endpoints;
 ({ API_ENDPOINT: c3, CDN_HOST: closure_4 } = window.GLOBAL_ENV);
 const result = size.fileFinishedImporting("modules/global_discovery_apps/utils/getCollectionItemAssetUrl.tsx");
 
-export const getCollectionItemAssetUrl = function getCollectionItemAssetUrl(arg0) {
+export function getCollectionItemAssetUrl(arg0) {
   let combined;
   let containerWidth;
   let hash;
@@ -45,4 +45,4 @@ export const getCollectionItemAssetUrl = function getCollectionItemAssetUrl(arg0
     combined = "" + protocol + _false + Endpoints.APPLICATION_DIRECTORY_COLLECTION_ITEM_IMAGE(itemId, hash, str3) + "?" + str1;
   }
   return combined;
-};
+}

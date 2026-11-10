@@ -1,11 +1,11 @@
-// Module ID: 9217
-// Function ID: 9218
+// Module ID: 9254
+// Function ID: 9255
 // Name: PairwiseFingerprint
-// Dependencies: [5, 9216, 9218, 2]
+// Dependencies: [5, 9253, 9255, 2]
 // Exports: generatePairwiseFingerprint
 
-// Module 9217 (PairwiseFingerprint)
-import _asyncToGenerator2 from "_asyncToGenerator" /* 9216 */;
+// Module 9254 (PairwiseFingerprint)
+import _asyncToGenerator2 from "_asyncToGenerator" /* 9253 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -44,7 +44,7 @@ let obj = function _generatePairwiseFingerprint() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -126,6 +126,6 @@ let closure_3 = Uint8Array.of(36, 202, 177, 122, 122, 248, 236, 43, 130, 180, 18
 let closure_4 = { N: 16384, r: 8, p: 2, dkLen: 64 };
 let result = size.fileFinishedImporting("../discord_common/js/packages/libdave/package/src/PairwiseFingerprint.ts");
 
-export const generatePairwiseFingerprint = function generatePairwiseFingerprint() {
+export function generatePairwiseFingerprint() {
   return obj(...arguments);
-};
+}

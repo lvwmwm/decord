@@ -1,21 +1,21 @@
-// Module ID: 6532
-// Function ID: 6533
+// Module ID: 6572
+// Function ID: 6573
 // Name: ConnectedAccountsStore
-// Dependencies: [6533, 1087, 6534, 4869, 6663, 6664, 504, 584, 2]
+// Dependencies: [6573, 1072, 6574, 4877, 6703, 6704, 504, 572, 2]
 
-// Module 6532 (ConnectedAccountsStore)
+// Module 6572 (ConnectedAccountsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1087 */;
-import PlatformsDefault from "Platforms" /* 6534 */;
-import fetchConnectedAccounts from "fetchConnectedAccounts" /* 6663 */;
-import postConnectionCallback from "postConnectionCallback" /* 6664 */;
-import ConnectedAccountRecord from "ConnectedAccountRecord" /* 6533 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import Constants from "Constants" /* 1072 */;
+import PlatformsDefault from "Platforms" /* 6574 */;
+import fetchConnectedAccounts from "fetchConnectedAccounts" /* 6703 */;
+import postConnectionCallback from "postConnectionCallback" /* 6704 */;
+import ConnectedAccountRecord from "ConnectedAccountRecord" /* 6573 */;
 import size from "module_2" /* 2 */;
 
 let closure_6, closure_7, integrations;
 
-const f96474 = (type) => {
+const f89107 = (type) => {
   const hasItem = set.has(type.type);
   let isSupportedResult = !hasItem;
   if (isSupportedResult) {
@@ -24,7 +24,7 @@ const f96474 = (type) => {
   }
   return isSupportedResult;
 };
-const f96475 = (type) => set.has(type.type);
+const f89108 = (type) => set.has(type.type);
 const items = [Constants.PlatformTypes.CONTACTS];
 const set = new Set(items);
 let c5 = true;
@@ -51,9 +51,9 @@ class ConnectedAccountsStore extends Store {
   getLocalAccounts() {
     return closure_7;
   }
-  getAccount(accountId, provider_id) {
+  getAccount(accountId, SPOTIFY) {
     let closure_0 = accountId;
-    let closure_1 = provider_id;
+    let closure_1 = SPOTIFY;
     return closure_6.find((id) => (null == closure_0 || id.id === tmp) && id.type === closure_1);
   }
   getLocalAccount(CONTACTS) {
@@ -82,8 +82,8 @@ let obj = {
       const tmp = new ConnectedAccountRecord(item);
       return tmp;
     });
-    closure_6 = mapped.filter(f96474);
-    closure_7 = mapped.filter(f96475);
+    closure_6 = mapped.filter(f89107);
+    closure_7 = mapped.filter(f89108);
     c5 = false;
   },
   USER_CONNECTIONS_UPDATE: function handleConnectionsUpdate(local) {
@@ -109,8 +109,8 @@ let obj = {
           const tmp2 = new ConnectedAccountRecord(obj);
           return tmp2;
         });
-        closure_6 = mapped.filter(f96474);
-        closure_7 = mapped.filter(f96475);
+        closure_6 = mapped.filter(f89107);
+        closure_7 = mapped.filter(f89108);
         c5 = false;
       }
     }

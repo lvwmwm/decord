@@ -1,26 +1,25 @@
-// Module ID: 12131
-// Function ID: 12132
+// Module ID: 12436
+// Function ID: 12437
 // Name: ApplicationCommandOptionValueParser
-// Dependencies: [32, 19, 6802, 4859, 4933, 4915, 4909, 4945, 1392, 6016, 12, 1388, 5636, 6740, 2000, 7787, 558, 576, 2]
-// Exports: getRoles, parseOptionValuesForSend
+// Dependencies: [32, 19, 6841, 4867, 4944, 4926, 4920, 4956, 1383, 6036, 12, 1379, 5652, 6779, 1992, 7824, 2]
+// Exports: getRoles, parseOptionValuesForSend, useApplicationCommandOptionValueParser
 
-// Module 12131 (ApplicationCommandOptionValueParser)
+// Module 12436 (ApplicationCommandOptionValueParser)
 import _modDef12 from "module_12" /* 12 */;
-import GlobalUtils from "GlobalUtils" /* 1388 */;
-import Server from "Server" /* 2000 */;
-import ChannelRecord from "ChannelRecord" /* 4859 */;
-import useChannelName from "useChannelName" /* 5636 */;
-import MessageParser from "MessageParser" /* 7787 */;
+import GlobalUtils from "GlobalUtils" /* 1379 */;
+import Server from "Server" /* 1992 */;
+import ChannelRecord from "ChannelRecord" /* 4867 */;
+import useChannelName from "useChannelName" /* 5652 */;
+import MessageParser from "MessageParser" /* 7824 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 6802 */;
-import GuildChannelStore from "GuildChannelStore" /* 4933 */;
-import GuildMemberStore from "GuildMemberStore" /* 4915 */;
-import GuildRoleStore from "GuildRoleStore" /* 4909 */;
-import RelationshipStore from "RelationshipStore" /* 4945 */;
-import UserStore from "UserStore" /* 1392 */;
-import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 6016 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 6841 */;
+import GuildChannelStore from "GuildChannelStore" /* 4944 */;
+import GuildMemberStore from "GuildMemberStore" /* 4926 */;
+import GuildRoleStore from "GuildRoleStore" /* 4920 */;
+import RelationshipStore from "RelationshipStore" /* 4956 */;
+import UserStore from "UserStore" /* 1383 */;
+import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 6036 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -29,7 +28,7 @@ let _require, dependencyMap;
 
 let closure_12;
 let map1;
-const f113241 = (id) => ({ id: id.id, text: id.name });
+const f102051 = (id) => ({ id: id.id, text: id.name });
 function getUsers(getGuildId) {
   let mapped;
   let user;
@@ -117,7 +116,7 @@ class ApplicationCommandOptionValueParser {
       let tmp17;
       let tmp7;
       let tmp8;
-      const f113246 = (text) => -text.text.length;
+      const f102056 = (text) => -text.text.length;
       const trimmed = text.trim();
       const tmp = obj;
       const arr2 = closure_2_15(obj.channel);
@@ -128,7 +127,7 @@ class ApplicationCommandOptionValueParser {
         sortedRoles = [];
       }
       const arr4 = closure_2_1(closure_2_2[10])(sortedRoles);
-      let closure_2 = arr4.map(f113241);
+      let closure_2 = arr4.map(f102051);
       let closure_3 = arr2.map((text) => {
         obj = { text: str.split("#")[0] };
         const merged = Object.assign(text);
@@ -141,7 +140,7 @@ class ApplicationCommandOptionValueParser {
           let firstResult = null;
           if (trimmed[0] === closure_2_12) {
             let closure_1 = str.substr(arr.length);
-            const sortByResult = obj.sortBy(f113246);
+            const sortByResult = obj.sortBy(f102056);
             const found = sortByResult.filter((text) => {
               const str = text.text;
               const formatted = closure_1.toLowerCase();
@@ -163,7 +162,7 @@ class ApplicationCommandOptionValueParser {
               let firstResult1 = null;
               if (trimmed[0] === closure_2_12) {
                 closure_1 = str.substr(arr.length);
-                const sortByResult1 = obj6.sortBy(f113246);
+                const sortByResult1 = obj6.sortBy(f102056);
                 const found1 = sortByResult1.filter((text) => {
                   const str = text.text;
                   const formatted = closure_1.toLowerCase();
@@ -225,7 +224,7 @@ class ApplicationCommandOptionValueParser {
           let firstResult = null;
           if (str[0] === arr) {
             let closure_1 = str.substr(arr.length);
-            const sortByResult = obj.sortBy(f113246);
+            const sortByResult = obj.sortBy(f102056);
             const found = sortByResult.filter((text) => {
               const str = text.text;
               const formatted = closure_1.toLowerCase();
@@ -261,7 +260,7 @@ class ApplicationCommandOptionValueParser {
           let firstResult = null;
           if (trimmed[0] === closure_2_13) {
             let closure_1 = trimmed.substr(arr7.length);
-            let sortByResult = obj8.sortBy(f113246);
+            let sortByResult = obj8.sortBy(f102056);
             let found = sortByResult.filter((text) => {
               const str = text.text;
               const formatted = closure_1.toLowerCase();
@@ -317,7 +316,10 @@ class ApplicationCommandOptionValueParser {
     return obj;
   }
 }
-function getRoles(guild_id) {
+const result = size.fileFinishedImporting("modules/chat_input/native/ApplicationCommandOptionValueParser.tsx");
+
+export { getUsers };
+export function getRoles(guild_id) {
   let sortedRoles;
   guild_id = guild_id.guild_id;
   if (null != guild_id) {
@@ -326,231 +328,47 @@ function getRoles(guild_id) {
     sortedRoles = [];
   }
   const arr2 = _modDef12(sortedRoles);
-  return arr2.map(f113241);
+  return arr2.map(f102051);
 }
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useApplicationCommandOptionValueParser(channel) {
+export { getChannels };
+export { ApplicationCommandOptionValueParser };
+export function parseOptionValuesForSend(channel, command, current) {
   let obj2;
-  let tmp2;
-  const obj = obj2(576);
-  const cResult = obj.c(2);
-  channel = channel.channel;
-  if (cResult[0] !== channel) {
-    const self = this;
-    if (typeof ApplicationCommandOptionValueParser === "function") {
-      obj2 = Object.create(ApplicationCommandOptionValueParser.prototype);
-      obj2.parse = function parse(text, type) {
-        let tmp16;
-        let tmp17;
-        let tmp7;
-        let tmp8;
-        const f113246 = (text) => -text.text.length;
-        const trimmed = text.trim();
-        const tmp = obj;
-        const arr2 = closure_2_15(obj.channel);
-        const guild_id = obj.channel.guild_id;
-        if (null != guild_id) {
-          sortedRoles = sortedRoles.getSortedRoles(guild_id);
-        } else {
-          sortedRoles = [];
-        }
-        const arr4 = closure_2_1(closure_2_2[10])(sortedRoles);
-        let closure_2 = arr4.map(f113241);
-        let closure_3 = arr2.map((text) => {
-          obj = { text: str.split("#")[0] };
-          const merged = Object.assign(text);
-          return obj;
-        });
-        function matchUser() {
-          obj = arr2;
-          if (typeof closure_2_14 === "function") {
-            let tmp7;
-            let firstResult = null;
-            if (trimmed[0] === closure_2_12) {
-              let closure_1 = str.substr(arr.length);
-              const sortByResult = obj.sortBy(f113246);
-              const found = sortByResult.filter((text) => {
-                const str = text.text;
-                const formatted = closure_1.toLowerCase();
-                return formatted === str.toLowerCase();
-              });
-              const mapped = found.map((id) => ({ text: arr + id.text, id: id.id }));
-              firstResult = mapped.first();
-            }
-            let id;
-            if (firstResult != null) {
-              id = firstResult.id;
-            }
-            if (null != id) {
-              tmp7 = { type: "userMention", userId: firstResult.id };
-              const obj2 = { type: "userMention", userId: firstResult.id };
-            } else {
-              const obj6 = closure_3;
-              if (typeof tmp === "function") {
-                let firstResult1 = null;
-                if (trimmed[0] === closure_2_12) {
-                  closure_1 = str.substr(arr.length);
-                  const sortByResult1 = obj6.sortBy(f113246);
-                  const found1 = sortByResult1.filter((text) => {
-                    const str = text.text;
-                    const formatted = closure_1.toLowerCase();
-                    return formatted === str.toLowerCase();
-                  });
-                  const mapped1 = found1.map((id) => ({ text: arr + id.text, id: id.id }));
-                  firstResult1 = mapped1.first();
-                }
-                let id1;
-                if (firstResult1 != null) {
-                  id1 = firstResult1.id;
-                }
-                if (null != id1) {
-                  tmp7 = { type: "userMention", userId: firstResult1.id };
-                  const obj3 = { type: "userMention", userId: firstResult1.id };
-                }
-              } else {
-                throw new TypeError("Trying to call a non-function");
-              }
-            }
-            return tmp7;
-          } else {
-            throw new TypeError("Trying to call a non-function");
-          }
-        }
-        if (type.type === channel(closure_2_2[14]).ApplicationCommandOptionType.USER) {
-          const matchUserResult = matchUser();
-          if (null != matchUserResult) {
-            return matchUserResult;
-          } else {
-            let str = trimmed;
-            if (trimmed[0] === closure_2_12) {
-              str = trimmed.slice(1);
-            }
-            [tmp7, tmp8] = closure_2_3(str.split("#", 2), 2);
-            closure_2_3(str.split("#", 2), 2);
-            if (null != tmp8) {
-              let findByTagResult;
-              if ("0000" !== tmp8) {
-                obj = /^[0-9]{4}$/;
-                if (obj.test(tmp8)) {
-                  findByTagResult = closure_2_11.findByTag(tmp7, tmp8);
-                }
-              }
-              if (null != findByTagResult) {
-                let obj2 = { type: "userMention", userId: findByTagResult.id };
-                return obj2;
-              }
-            }
-            findByTagResult = closure_2_11.findByTag(tmp7);
-          }
-        }
-        function matchRole() {
-          const arr = closure_2_12;
-          let str = trimmed;
-          obj = closure_2;
-          if (typeof closure_2_14 === "function") {
-            let obj3;
-            let firstResult = null;
-            if (str[0] === arr) {
-              let closure_1 = str.substr(arr.length);
-              const sortByResult = obj.sortBy(f113246);
-              const found = sortByResult.filter((text) => {
-                const str = text.text;
-                const formatted = closure_1.toLowerCase();
-                return formatted === str.toLowerCase();
-              });
-              const mapped = found.map((id) => ({ text: arr + id.text, id: id.id }));
-              firstResult = mapped.first();
-            }
-            let id;
-            if (firstResult != null) {
-              id = firstResult.id;
-            }
-            if (null != id) {
-              obj3 = { type: "roleMention", roleId: firstResult.id };
-              const obj2 = { type: "roleMention", roleId: firstResult.id };
-            } else if ("@everyone" === str) {
-              obj3 = { type: "textMention", text: "@everyone" };
-            }
-            return obj3;
-          } else {
-            throw new TypeError("Trying to call a non-function");
-          }
-        }
-        if (type.type === channel(closure_2_2[14]).ApplicationCommandOptionType.ROLE) {
-          const matchRoleResult = matchRole();
-          if (null != matchRoleResult) {
-            return matchRoleResult;
-          }
-        }
-        if (type.type === channel(closure_2_2[14]).ApplicationCommandOptionType.CHANNEL) {
-          const obj8 = closure_2_16(tmp.channel, type.channelTypes);
-          if (typeof closure_2_14 === "function") {
-            let firstResult = null;
-            if (trimmed[0] === closure_2_13) {
-              let closure_1 = trimmed.substr(arr7.length);
-              let sortByResult = obj8.sortBy(f113246);
-              let found = sortByResult.filter((text) => {
-                const str = text.text;
-                const formatted = closure_1.toLowerCase();
-                return formatted === str.toLowerCase();
-              });
-              let mapped = found.map((id) => ({ text: arr + id.text, id: id.id }));
-              firstResult = mapped.first();
-            }
-            if (null != firstResult) {
-              if (null != firstResult.id) {
-                return { type: "channelMention", channelId: firstResult.id };
-              }
-            }
-          } else {
-            throw new TypeError("Trying to call a non-function");
-          }
-        }
-        if (type.type === channel(closure_2_2[14]).ApplicationCommandOptionType.MENTIONABLE) {
-          const matchRoleResult1 = matchRole();
-          if (null != matchRoleResult1) {
-            return matchRoleResult1;
-          } else {
-            const matchUserResult1 = matchUser();
-            if (null != matchUserResult1) {
-              return matchUserResult1;
-            } else {
-              let str4 = trimmed;
-              if (trimmed[0] === closure_2_12) {
-                str4 = trimmed.slice(1);
-              }
-              [tmp16, tmp17] = closure_2_3(str4.split("#", 2), 2);
-              closure_2_3(str4.split("#", 2), 2);
-              if (null != tmp17) {
-                let findByTagResult1;
-                if ("0000" !== tmp17) {
-                  let obj3 = /^[0-9]{4}$/;
-                  if (obj3.test(tmp17)) {
-                    findByTagResult1 = closure_2_11.findByTag(tmp16, tmp17);
-                  }
-                }
-                if (null != findByTagResult1) {
-                  return { type: "userMention", userId: findByTagResult1.id };
-                }
-              }
-              findByTagResult1 = closure_2_11.findByTag(tmp16);
-            }
-          }
-        }
-        let obj6 = { type: "text", text };
-        return obj6;
-      };
-      obj2.channel = channel;
-      cResult[0] = channel;
-      cResult[1] = obj2;
-      tmp2 = obj2;
-    } else {
-      throw new TypeError("Trying to call a non-function");
-    }
+  if (null == command.options) {
+    return {};
   } else {
-    tmp2 = cResult[1];
+    const obj3 = {};
+    const options = command.options;
+    const obj4 = MessageParser;
+    const parserState = obj4.createParserState(channel);
+    const iter = options[Symbol.iterator]();
+    const nextResult = iter.next();
+    while (iter !== undefined) {
+      let tmp4 = nextResult;
+      let tmp5 = current[nextResult.name];
+      let tmp6 = tmp5;
+      if (null != tmp5) {
+        if ("text" === tmp6[0].type) {
+          if (tmp4.type === Server.ApplicationCommandOptionType.STRING) {
+            if (null == tmp4.choices) {
+              if (!tmp4.autocomplete) {
+                let obj = { type: "text", text: obj2.parse(channel, tmp6[0].text, parserState).content };
+                let name = tmp4.name;
+                obj2 = MessageParserDefault;
+                let items = [obj];
+                obj3[name] = items;
+              }
+            }
+          }
+        }
+        obj3[tmp4.name] = tmp6;
+      }
+      continue;
+    }
+    return obj3;
   }
-  return tmp2;
-}) : (function useApplicationCommandOptionValueParser(channel) {
+}
+export function useApplicationCommandOptionValueParser(channel) {
   channel = channel.channel;
   const items = [channel];
   return react.useMemo(() => {
@@ -562,7 +380,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useApplica
         let tmp17;
         let tmp7;
         let tmp8;
-        const f113246 = (text) => -text.text.length;
+        const f102056 = (text) => -text.text.length;
         const trimmed = text.trim();
         const tmp = obj;
         const arr2 = closure_2_15(obj.channel);
@@ -573,7 +391,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useApplica
           sortedRoles = [];
         }
         const arr4 = closure_2_1(closure_2_2[10])(sortedRoles);
-        let closure_2 = arr4.map(f113241);
+        let closure_2 = arr4.map(f102051);
         let closure_3 = arr2.map((text) => {
           obj = { text: str.split("#")[0] };
           const merged = Object.assign(text);
@@ -586,7 +404,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useApplica
             let firstResult = null;
             if (trimmed[0] === closure_2_12) {
               let closure_1 = str.substr(arr.length);
-              const sortByResult = obj.sortBy(f113246);
+              const sortByResult = obj.sortBy(f102056);
               const found = sortByResult.filter((text) => {
                 const str = text.text;
                 const formatted = closure_1.toLowerCase();
@@ -608,7 +426,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useApplica
                 let firstResult1 = null;
                 if (trimmed[0] === closure_2_12) {
                   closure_1 = str.substr(arr.length);
-                  const sortByResult1 = obj6.sortBy(f113246);
+                  const sortByResult1 = obj6.sortBy(f102056);
                   const found1 = sortByResult1.filter((text) => {
                     const str = text.text;
                     const formatted = closure_1.toLowerCase();
@@ -670,7 +488,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useApplica
             let firstResult = null;
             if (str[0] === arr) {
               let closure_1 = str.substr(arr.length);
-              const sortByResult = obj.sortBy(f113246);
+              const sortByResult = obj.sortBy(f102056);
               const found = sortByResult.filter((text) => {
                 const str = text.text;
                 const formatted = closure_1.toLowerCase();
@@ -706,7 +524,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useApplica
             let firstResult = null;
             if (trimmed[0] === closure_2_13) {
               let closure_1 = trimmed.substr(arr7.length);
-              let sortByResult = obj8.sortBy(f113246);
+              let sortByResult = obj8.sortBy(f102056);
               let found = sortByResult.filter((text) => {
                 const str = text.text;
                 const formatted = closure_1.toLowerCase();
@@ -765,47 +583,4 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useApplica
       throw new TypeError("Trying to call a non-function");
     }
   }, items);
-});
-const result = size.fileFinishedImporting("modules/chat_input/native/ApplicationCommandOptionValueParser.tsx");
-
-export { getUsers };
-export { getRoles };
-export { getChannels };
-export { ApplicationCommandOptionValueParser };
-export const parseOptionValuesForSend = function parseOptionValuesForSend(channel, command, current) {
-  let obj2;
-  if (null == command.options) {
-    return {};
-  } else {
-    const obj3 = {};
-    const options = command.options;
-    const obj4 = MessageParser;
-    const parserState = obj4.createParserState(channel);
-    const iter = options[Symbol.iterator]();
-    const nextResult = iter.next();
-    while (iter !== undefined) {
-      let tmp4 = nextResult;
-      let tmp5 = current[nextResult.name];
-      let tmp6 = tmp5;
-      if (null != tmp5) {
-        if ("text" === tmp6[0].type) {
-          if (tmp4.type === Server.ApplicationCommandOptionType.STRING) {
-            if (null == tmp4.choices) {
-              if (!tmp4.autocomplete) {
-                let obj = { type: "text", text: obj2.parse(channel, tmp6[0].text, parserState).content };
-                let name = tmp4.name;
-                obj2 = MessageParserDefault;
-                let items = [obj];
-                obj3[name] = items;
-              }
-            }
-          }
-        }
-        obj3[tmp4.name] = tmp6;
-      }
-      continue;
-    }
-    return obj3;
-  }
-};
-export const useApplicationCommandOptionValueParser = tmp3;
+}

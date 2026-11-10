@@ -1,12 +1,12 @@
-// Module ID: 10795
-// Function ID: 10796
+// Module ID: 10924
+// Function ID: 10925
 // Name: conjurePreviewNativeSurfaces
-// Dependencies: [1087, 9301, 2]
+// Dependencies: [1072, 9338, 2]
 // Exports: beginNativeSurfaceSessionForFrame
 
-// Module 10795 (conjurePreviewNativeSurfaces)
-import Constants from "Constants" /* 1087 */;
-import RpcCommandInterception from "RpcCommandInterception" /* 9301 */;
+// Module 10924 (conjurePreviewNativeSurfaces)
+import Constants from "Constants" /* 1072 */;
+import RpcCommandInterception from "RpcCommandInterception" /* 9338 */;
 import size from "module_2" /* 2 */;
 
 function asString(str) {
@@ -59,30 +59,29 @@ function answerFor(cmd) {
   } else if (null == obj[cmd.cmd]) {
     return null;
   } else {
-    const tmp11Result = obj[cmd.cmd](cmd);
-    ({ options, subject } = tmp11Result);
-    const result = tmp11Result.result;
+    const tmp10Result = obj[cmd.cmd](cmd);
+    ({ options, subject } = tmp10Result);
+    const result = tmp10Result.result;
     if (found.recorded.length < 20) {
       const recorded = found.recorded;
-      obj = { command: cmd.cmd, answered: tmp13 };
+      const obj2 = { command: cmd.cmd, answered: tmp12 };
       if (null != options) {
         let obj5;
-        let obj4;
         if (options.length > 0) {
-          obj5 = { options };
-          const obj2 = { options };
+          obj = { options };
+          const obj3 = { options };
         }
-        const merged = Object.assign(obj5);
+        const merged = Object.assign(obj);
         if (null != subject) {
-          obj4 = { subject };
-          const obj3 = { subject };
+          obj5 = { subject };
+          const obj4 = { subject };
         } else {
-          obj4 = {};
+          obj5 = {};
         }
-        const merged1 = Object.assign(obj4);
-        tmp2(obj);
+        const merged1 = Object.assign(obj5);
+        tmp13(obj2);
       }
-      obj5 = {};
+      obj = {};
     }
     return { result };
   }
@@ -146,15 +145,15 @@ let obj = {
   },
   [RPCCommands.REQUEST_DEVICE_PERMISSIONS]: (args) => {
     let found;
-    const f108277 = (permission) => ({ permission, state: "denied" });
+    const f98492 = (permission) => ({ permission, state: "denied" });
     if (Array.isArray(args.args.permissions)) {
       const permissions = args.args.permissions;
       found = permissions.filter((item) => typeof item === "string");
     } else {
       found = [];
     }
-    obj = { result: { permissions: found.map(f108277) }, answered: "denied; an agent may not grant device access", options: found };
-    ({ permissions: found.map(f108277) });
+    obj = { result: { permissions: found.map(f98492) }, answered: "denied; an agent may not grant device access", options: found };
+    ({ permissions: found.map(f98492) });
     return obj;
   },
   [RPCCommands.CAPTURE_SCREEN]: () => ({ result: { status: "permission_denied" }, answered: "denied; an agent may not capture the screen" }),
@@ -175,8 +174,8 @@ let obj = {
   [RPCCommands.HIDE_TOOLTIP]: () => ({ result: { hidden: true }, answered: "hidden" }),
   [RPCCommands.OPEN_MEDIA_VIEWER]: () => ({ result: { opened: true }, answered: "opened" }),
   [RPCCommands.SHOW_TOAST]: () => ({ result: { shown: true }, answered: "shown" }),
-  [RPCCommands.OPEN_INVITE_DIALOG]: () => ({ result: "ix", answered: 19865153 }),
-  [RPCCommands.OPEN_SHARE_MOMENT_DIALOG]: () => ({ result: "ix", answered: 19865153 })
+  [RPCCommands.OPEN_INVITE_DIALOG]: () => ({ result: "children", answered: false }),
+  [RPCCommands.OPEN_SHARE_MOMENT_DIALOG]: () => ({ result: "children", answered: false })
 };
 let closure_5 = {
   drain() {
@@ -192,7 +191,7 @@ const keys = Object.keys(obj);
 let result = size.fileFinishedImporting("modules/conjure/preview/conjurePreviewNativeSurfaces.tsx");
 
 export const ANSWERED_NATIVE_COMMANDS = keys;
-export const beginNativeSurfaceSessionForFrame = function beginNativeSurfaceSessionForFrame(iframeId, beneathBatches) {
+export function beginNativeSurfaceSessionForFrame(iframeId, beneathBatches) {
   if (null == iframeId) {
     return closure_5;
   } else {
@@ -210,7 +209,7 @@ export const beginNativeSurfaceSessionForFrame = function beginNativeSurfaceSess
       closure_6.unshift(obj2);
     }
     if (1 === arr.length) {
-      obj = obj2(9301);
+      obj = obj2(9338);
       let result = obj.setRpcCommandInterceptor(answerFor);
     }
     return {
@@ -231,4 +230,4 @@ export const beginNativeSurfaceSessionForFrame = function beginNativeSurfaceSess
         }
     };
   }
-};
+}

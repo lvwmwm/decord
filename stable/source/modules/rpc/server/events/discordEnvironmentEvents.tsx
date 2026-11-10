@@ -1,16 +1,17 @@
-// Module ID: 15818
-// Function ID: 15819
+// Module ID: 16373
+// Function ID: 16374
 // Name: discordEnvironmentEvents
-// Dependencies: [109, 5004, 6410, 1087, 11493, 12, 2]
+// Dependencies: [109, 5015, 6450, 1072, 11796, 12, 2]
 // Exports: createDiscordEnvironmentEvents
 
-// Module 15818 (discordEnvironmentEvents)
-import _modDef12 from "module_12" /* 12 */;
-import Constants2 from "Constants" /* 1087 */;
+// Module 16373 (discordEnvironmentEvents)
+import Constants2 from "Constants" /* 1072 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import AccessibilityStore from "AccessibilityStore" /* 5004 */;
-import Constants from "Constants" /* 6410 */;
+import AccessibilityStore from "AccessibilityStore" /* 5015 */;
+import Constants from "Constants" /* 6450 */;
 import size from "module_2" /* 2 */;
+
+let _null;
 
 let items;
 function handler() {
@@ -24,23 +25,26 @@ function handler() {
     ({ prevState, dispatch } = arg0);
     let obj = _false(closure_1_2[4]);
     let discordEnvironment = obj.getDiscordEnvironment(useReducedMotion.useReducedMotion);
+    if (null != _null) {
+      discordEnvironment.customTheme = _null();
+    }
     let tmp2 = discordEnvironment;
     if (_false) {
       let uiDensity = discordEnvironment.uiDensity;
       tmp2 = closure_1_4(discordEnvironment, closure_1_3);
     }
-    let obj2 = _modDef12;
+    let obj2 = _null(dependencyMap[5]);
     if (obj2.isEqual(tmp2, prevState)) {
       if (prevState == null) {
         prevState = null;
       }
-      let closure_1 = prevState;
+      _null = prevState;
     } else {
-      closure_1 = tmp2;
+      _null = tmp2;
       dispatch(tmp2);
     }
-    const tmp7 = dispatch;
-    if (!tmp7) {
+    const tmp6 = dispatch;
+    if (!tmp6) {
       dispatch = true;
       const _requestAnimationFrame = requestAnimationFrame;
       let animationFrame = requestAnimationFrame(() => {
@@ -48,12 +52,15 @@ function handler() {
           dispatch = false;
           const obj = dispatch(closure_1_2[4]);
           const discordEnvironment = obj.getDiscordEnvironment(useReducedMotion.useReducedMotion);
+          if (null != c1) {
+            discordEnvironment.customTheme = c1();
+          }
           let tmp2 = discordEnvironment;
           if (c0) {
             const uiDensity = discordEnvironment.uiDensity;
             tmp2 = closure_1_4(discordEnvironment, closure_1_3);
           }
-          const obj2 = _modDef12;
+          const obj2 = closure_1(dependencyMap[5]);
           if (!obj2.isEqual(tmp2, closure_1)) {
             closure_1 = tmp2;
             dispatch(tmp2);
@@ -70,18 +77,20 @@ const RPC_EMBEDDED_APP_SCOPE = Constants.RPC_EMBEDDED_APP_SCOPE;
 const RPC_SCOPE_CONFIG = Constants.RPC_SCOPE_CONFIG;
 const RPCEvents = Constants2.RPCEvents;
 let c0 = false;
+let c1;
 let obj = { scope: { [RPC_SCOPE_CONFIG.ANY]: items }, handler };
 items = [RPC_EMBEDDED_APP_SCOPE, RPC_AUTHENTICATED_SCOPE];
 const result = size.fileFinishedImporting("modules/rpc/server/events/discordEnvironmentEvents.tsx");
 
-export const createDiscordEnvironmentEvents = function createDiscordEnvironmentEvents(arg0) {
+export function createDiscordEnvironmentEvents(arg0, arg1) {
   let items;
   let flag = arg0;
   if (arg0 === undefined) {
     flag = false;
   }
+  let closure_1 = arg1;
   let obj = { scope: { [closure_8.ANY]: items }, handler };
   items = [RPC_EMBEDDED_APP_SCOPE, RPC_AUTHENTICATED_SCOPE];
   return { [closure_9.DISCORD_ENV_UPDATE]: obj };
-};
+}
 export const discordEnvironmentEvents = { [RPCEvents.DISCORD_ENV_UPDATE]: obj };

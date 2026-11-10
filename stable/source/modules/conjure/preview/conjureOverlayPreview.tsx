@@ -1,11 +1,11 @@
-// Module ID: 12477
-// Function ID: 12478
+// Module ID: 12727
+// Function ID: 12728
 // Name: conjureOverlayPreview
-// Dependencies: [6806, 2]
-// Exports: latestOverlayWidgetDeclaration, overlayWidgetPreviewScale, overlayWidgetPreviewSize, previewSupportsOverlay
+// Dependencies: [6845, 2]
+// Exports: overlayWidgetPreviewScale, overlayWidgetPreviewSize, previewOverlayWidgetSize, previewSupportsOverlay
 
-// Module 12477 (conjureOverlayPreview)
-import ConjureProjectTypes from "ConjureProjectTypes" /* 6806 */;
+// Module 12727 (conjureOverlayPreview)
+import ConjureProjectTypes from "ConjureProjectTypes" /* 6845 */;
 import size_mod from "module_2" /* 2 */;
 
 let size = { width: 320, height: 240 };
@@ -13,7 +13,7 @@ size = size_mod;
 const result = size.fileFinishedImporting("modules/conjure/preview/conjureOverlayPreview.tsx");
 
 export const CONJURE_OVERLAY_WIDGET_FALLBACK_SIZE = size;
-export const previewSupportsOverlay = function previewSupportsOverlay(preview_supported_surfaces) {
+export function previewSupportsOverlay(preview_supported_surfaces) {
   let hasItem;
   if (preview_supported_surfaces != null) {
     preview_supported_surfaces = preview_supported_surfaces.preview_supported_surfaces;
@@ -22,28 +22,8 @@ export const previewSupportsOverlay = function previewSupportsOverlay(preview_su
     }
   }
   return true === hasItem;
-};
-export const latestOverlayWidgetDeclaration = function latestOverlayWidgetDeclaration(arg0) {
-  let overlay_widget;
-  let diff = arg0.length - 1;
-  if (0 <= diff) {
-    while (true) {
-      let proposal = arg0[diff].proposal;
-      overlay_widget = undefined;
-      if (proposal != null) {
-        overlay_widget = proposal.overlay_widget;
-      }
-      if (null != overlay_widget) {
-        break;
-      } else {
-        diff = diff - 1;
-      }
-    }
-    return overlay_widget;
-  }
-  return null;
-};
-export const overlayWidgetPreviewSize = function overlayWidgetPreviewSize(overlay_widget) {
+}
+export function overlayWidgetPreviewSize(overlay_widget) {
   let default_size;
   if (overlay_widget != null) {
     default_size = overlay_widget.default_size;
@@ -67,8 +47,8 @@ export const overlayWidgetPreviewSize = function overlayWidgetPreviewSize(overla
     default_size = size;
   }
   return default_size;
-};
-export const overlayWidgetPreviewScale = function overlayWidgetPreviewScale(arg0, width) {
+}
+export function overlayWidgetPreviewScale(arg0, width) {
   let height;
   ({ width, height } = arg0);
   let num = 1;
@@ -86,4 +66,36 @@ export const overlayWidgetPreviewScale = function overlayWidgetPreviewScale(arg0
     }
   }
   return num;
-};
+}
+export function previewOverlayWidgetSize(preview_overlay_widget) {
+  let prop;
+  if (preview_overlay_widget != null) {
+    prop = preview_overlay_widget.preview_overlay_widget;
+  }
+  if (prop == null) {
+    prop = null;
+  }
+  let default_size;
+  if (prop != null) {
+    default_size = prop.default_size;
+  }
+  let isFiniteResult = null != default_size;
+  if (isFiniteResult) {
+    const _Number = Number;
+    isFiniteResult = Number.isFinite(default_size.width);
+  }
+  if (isFiniteResult) {
+    const _Number2 = Number;
+    isFiniteResult = Number.isFinite(default_size.height);
+  }
+  if (isFiniteResult) {
+    isFiniteResult = default_size.width > 0;
+  }
+  if (isFiniteResult) {
+    isFiniteResult = default_size.height > 0;
+  }
+  if (!isFiniteResult) {
+    default_size = size;
+  }
+  return default_size;
+}

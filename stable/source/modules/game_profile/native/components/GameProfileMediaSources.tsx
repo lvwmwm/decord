@@ -1,26 +1,27 @@
-// Module ID: 9343
-// Function ID: 9344
+// Module ID: 9381
+// Function ID: 9382
 // Name: GameProfileMediaSources
-// Dependencies: [1452, 6415, 2037, 2]
+// Dependencies: [1444, 6455, 2030, 2]
 // Exports: buildMediaEntries, buildMediaViewerSources, getCarouselPreviewPixelSize
 
-// Module 9343 (GameProfileMediaSources)
-import ImageLoaderUtils from "ImageLoaderUtils" /* 1452 */;
-import ImageProxyUtils from "ImageProxyUtils" /* 2037 */;
-import StoreUtils from "StoreUtils" /* 6415 */;
+// Module 9381 (GameProfileMediaSources)
+import ImageLoaderUtils from "ImageLoaderUtils" /* 1444 */;
+import ImageProxyUtils from "ImageProxyUtils" /* 2030 */;
+import StoreUtils from "StoreUtils" /* 6455 */;
 import size_mod from "module_2" /* 2 */;
 
-let originalUrl;
+let map;
 
 let c2 = 366;
-let closure_3 = { width: 1920, height: 1080 };
-let size = size_mod;
+let size = { width: 1920, height: 1080 };
+size = size_mod;
 const result = size.fileFinishedImporting("modules/game_profile/native/components/GameProfileMediaSources.tsx");
 
 export const MEDIA_ITEM_MAX_WIDTH = 366;
 export const MEDIA_ITEM_MAX_HEIGHT = 200;
 export const MEDIA_ITEM_ASPECT_RATIO = 1.83;
-export const getCarouselPreviewPixelSize = function getCarouselPreviewPixelSize() {
+export const MEDIA_VIEWER_ITEM_SIZE = size;
+export function getCarouselPreviewPixelSize() {
   let devicePixelRatio = arg0;
   if (arg0 === undefined) {
     const obj = ImageLoaderUtils;
@@ -30,8 +31,8 @@ export const getCarouselPreviewPixelSize = function getCarouselPreviewPixelSize(
   const bestMediaProxySize = obj2.getBestMediaProxySize(c2 * devicePixelRatio);
   size = { width: bestMediaProxySize, height: Math.round(bestMediaProxySize / 1.83) };
   return size;
-};
-export const buildMediaEntries = function buildMediaEntries(game) {
+}
+export function buildMediaEntries(game) {
   let items;
   let styles;
   if (null == game) {
@@ -62,19 +63,40 @@ export const buildMediaEntries = function buildMediaEntries(game) {
     }), arraySpreadResult);
   }
   return items;
-};
-export const buildMediaViewerSources = function buildMediaViewerSources(arr2, cResult) {
-  let closure_0 = cResult;
-  return arr2.map((originalUrl, mediaIndex) => {
-    let obj2;
-    const obj = { uri: originalUrl.originalUrl, videoURI: originalUrl, mediaIndex, thumbnail: obj2, accessoryType: "embed", disableDownload: true };
-    originalUrl = undefined;
-    if ("trailer" === originalUrl.type) {
-      originalUrl = originalUrl.originalUrl;
+}
+export function buildMediaViewerSources(memo1, memo, dimensions) {
+  map = dimensions;
+  if (dimensions === undefined) {
+    const _Map = Map;
+    const self = this;
+    const self2 = this;
+    map = new Map();
+  }
+  return memo1.map((uri, mediaIndex) => {
+    let height;
+    let originalUrl;
+    let tmp4;
+    let value;
+    if ("image" === uri.type) {
+      value = map.get(uri.originalUrl);
     }
-    const merged = Object.assign(closure_3);
-    obj2 = { uri: originalUrl.previewUrl };
-    const merged1 = Object.assign(require);
+    if (null == value) {
+      height = memo.height;
+      tmp4 = memo;
+    } else {
+      const _Math = Math;
+      tmp4 = memo;
+      height = Math.round(memo.width * value.height / value.width);
+    }
+    const obj = { uri: uri.originalUrl, videoURI: originalUrl, mediaIndex, thumbnail: { width: tmp4.width, height, uri: uri.previewUrl }, accessoryType: "embed", disableDownload: true };
+    originalUrl = undefined;
+    if ("trailer" === uri.type) {
+      originalUrl = uri.originalUrl;
+    }
+    if (value == null) {
+      value = size;
+    }
+    const merged = Object.assign(value);
     return obj;
   });
-};
+}

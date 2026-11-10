@@ -1,26 +1,24 @@
-// Module ID: 12949
-// Function ID: 12950
+// Module ID: 13396
+// Function ID: 13397
 // Name: useShareSearchResults
-// Dependencies: [32, 19, 6528, 502, 6855, 12938, 12950, 504, 12955, 10169, 12937, 2]
+// Dependencies: [32, 19, 6568, 502, 6895, 13385, 13397, 504, 13402, 10249, 13384, 2]
 // Exports: makeAutocompleterSearchParams, useShareSearchResults
 
-// Module 12949 (useShareSearchResults)
-import formatResultsDefault from "formatResults" /* 12937 */;
-import ShareConstants from "ShareConstants" /* 12938 */;
-import QuickSwitcherActionCreators from "QuickSwitcherActionCreators" /* 12950 */;
+// Module 13396 (useShareSearchResults)
+import formatResultsDefault from "formatResults" /* 13384 */;
+import ShareConstants from "ShareConstants" /* 13385 */;
+import QuickSwitcherActionCreators from "QuickSwitcherActionCreators" /* 13397 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6528 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6568 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import FrecencyStore from "FrecencyStore" /* 6855 */;
+import FrecencyStore from "FrecencyStore" /* 6895 */;
 import size from "module_2" /* 2 */;
-
-let results;
 
 const ALLOWED_TYPES = ShareConstants.ALLOWED_TYPES;
 const result = size.fileFinishedImporting("modules/share/useShareSearchResults.tsx");
 
-export const makeAutocompleterSearchParams = function makeAutocompleterSearchParams(arg0) {
+export function makeAutocompleterSearchParams(arg0) {
   const obj = QuickSwitcherActionCreators;
   const quickSwitcherOptions = obj.getQuickSwitcherOptions(arg0);
   const queryMode = quickSwitcherOptions.queryMode;
@@ -37,8 +35,8 @@ export const makeAutocompleterSearchParams = function makeAutocompleterSearchPar
     resultTypes = items;
   }
   return { query, queryMode: queryMode2, resultTypes };
-};
-export const useShareSearchResults = function useShareSearchResults(targetDestination) {
+}
+export function useShareSearchResults(targetDestination) {
   let items8;
   targetDestination = targetDestination.targetDestination;
   const selectedDestinations = targetDestination.selectedDestinations;
@@ -81,7 +79,7 @@ export const useShareSearchResults = function useShareSearchResults(targetDestin
   const tmp5 = selectedDestinations(originDestination[8])(memo);
   search = tmp5.search;
   let query = tmp5.query;
-  results = tmp5.results;
+  const results = tmp5.results;
   const useState = flag.useState;
   const obj3 = targetDestination(originDestination[6]);
   let quickSwitcherOptions = obj3.getQuickSwitcherOptions("");
@@ -160,4 +158,4 @@ export const useShareSearchResults = function useShareSearchResults(targetDestin
   };
   items8 = [results, "" !== query, queryMode2, targetDestination, stateFromStores1, selectedDestinations, current, originDestination, channelFilter, flag, stateFromStores2];
   return obj5;
-};
+}

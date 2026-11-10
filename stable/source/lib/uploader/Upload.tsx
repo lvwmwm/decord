@@ -1,19 +1,19 @@
-// Module ID: 8176
-// Function ID: 8177
+// Module ID: 8210
+// Function ID: 8211
 // Name: Upload
-// Dependencies: [580, 8177, 8178, 12, 8182, 1281, 2]
+// Dependencies: [568, 8211, 8212, 12, 8216, 1266, 2]
 // Exports: isResolvedUpload
 
-// Module 8176 (Upload)
+// Module 8210 (Upload)
 import _modDef12 from "module_12" /* 12 */;
-import _mod580 from "module_580" /* 580 */;
-import v1 from "v1" /* 1281 */;
-import UploadPlatform from "UploadPlatform" /* 8177 */;
-import UploadUtils from "UploadUtils" /* 8178 */;
-import FileUtilsAll from "FileUtils" /* 8182 */;
+import _mod568 from "module_568" /* 568 */;
+import v1 from "v1" /* 1266 */;
+import UploadPlatform from "UploadPlatform" /* 8211 */;
+import UploadUtils from "UploadUtils" /* 8212 */;
+import FileUtilsAll from "FileUtils" /* 8216 */;
 import size from "module_2" /* 2 */;
 
-const EventEmitter = _mod580.EventEmitter;
+const EventEmitter = _mod568.EventEmitter;
 class Upload extends EventEmitter {
   constructor(item) {
     const tmp4 = new Upload(tmp3, tmp2, tmp);
@@ -64,7 +64,7 @@ const prototype = Upload.prototype;
 const result = size.fileFinishedImporting("lib/uploader/Upload.tsx");
 
 export default Upload;
-export const isResolvedUpload = function isResolvedUpload(file) {
+export function isResolvedUpload(file) {
   return undefined !== file.isVideo && undefined !== file.isImage;
-};
+}
 export const UploadOrigin = { FILE_ATTACHMENT: 0, [0]: "FILE_ATTACHMENT", IMAGE_PICKER: 1, [1]: "IMAGE_PICKER", IMAGE_EDITOR: 2, [2]: "IMAGE_EDITOR" };

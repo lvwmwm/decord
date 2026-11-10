@@ -1,12 +1,12 @@
-// Module ID: 15438
-// Function ID: 15439
+// Module ID: 15982
+// Function ID: 15983
 // Name: Status/StatusUtils
-// Dependencies: [1203, 15439, 2]
+// Dependencies: [1188, 15983, 2]
 // Exports: getAnimatedTypingTranslateX, getMobileStatusContainerRect, getStatusTypingDimensions, getVRStatusContainerRect
 
-// Module 15438 (Status/StatusUtils)
-import getStatusContainerStyleDefault from "getStatusContainerStyle" /* 15439 */;
-import StatusConstants from "StatusConstants" /* 1203 */;
+// Module 15982 (Status/StatusUtils)
+import getStatusContainerStyleDefault from "getStatusContainerStyle" /* 15983 */;
+import StatusConstants from "StatusConstants" /* 1188 */;
 import size_mod from "module_2" /* 2 */;
 
 let c2;
@@ -15,25 +15,25 @@ let c3;
 let size = size_mod;
 const result = size.fileFinishedImporting("design/void/Status/native/StatusUtils.tsx");
 
-export const getAnimatedTypingTranslateX = function getAnimatedTypingTranslateX(width) {
+export function getAnimatedTypingTranslateX(width) {
   return width / 2 - 6;
-};
-export const getMobileStatusContainerRect = function getMobileStatusContainerRect(statusSizeOverride) {
+}
+export function getMobileStatusContainerRect(arg0) {
   let sum;
   size = { width: sum, height: 1.4 * sum, cornerRadius: sum / 4 };
-  sum = statusSizeOverride + 2 * React2;
+  sum = arg0 + 2 * React2;
   return size;
-};
-export const getVRStatusContainerRect = function getVRStatusContainerRect(statusSizeOverride) {
-  size = getStatusContainerStyleDefault(statusSizeOverride, false, true);
+}
+export function getVRStatusContainerRect(arg0) {
+  size = getStatusContainerStyleDefault(arg0, false, true);
   const size1 = { width: size.width, height: size.height, cornerRadius: size.borderRadius };
   return size1;
-};
-export const getStatusTypingDimensions = function getStatusTypingDimensions(statusSizeOverride) {
-  if (constants.SMALL !== statusSizeOverride) {
+}
+export function getStatusTypingDimensions(arg0) {
+  if (constants.SMALL !== arg0) {
     let num;
     let num2;
-    if (constants.XSMALL !== statusSizeOverride) {
+    if (constants.XSMALL !== arg0) {
       num = 6;
       num2 = 28;
     }
@@ -43,4 +43,4 @@ export const getStatusTypingDimensions = function getStatusTypingDimensions(stat
   }
   num = 4;
   num2 = 22;
-};
+}

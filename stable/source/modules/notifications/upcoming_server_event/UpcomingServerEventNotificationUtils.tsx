@@ -1,24 +1,24 @@
-// Module ID: 16905
-// Function ID: 16906
+// Module ID: 17503
+// Function ID: 17504
 // Name: UpcomingServerEventNotificationUtils
-// Dependencies: [4948, 1087, 4831, 1267, 2]
+// Dependencies: [4959, 1072, 4839, 1252, 2]
 // Exports: onUpcomingServerEventNotificationSettingsChanged
 
-// Module 16905 (UpcomingServerEventNotificationUtils)
-import Constants from "Constants" /* 1087 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import UserSettings from "UserSettings" /* 4831 */;
-import NotificationConstants from "NotificationConstants" /* 4948 */;
+// Module 17503 (UpcomingServerEventNotificationUtils)
+import Constants from "Constants" /* 1072 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import UserSettings from "UserSettings" /* 4839 */;
+import NotificationConstants from "NotificationConstants" /* 4959 */;
 import size from "module_2" /* 2 */;
 
 const constants = NotificationConstants.NotificationSettingsUpdateType;
 const AnalyticEvents = Constants.AnalyticEvents;
 const result = size.fileFinishedImporting("modules/notifications/upcoming_server_event/UpcomingServerEventNotificationUtils.tsx");
 
-export const onUpcomingServerEventNotificationSettingsChanged = function onUpcomingServerEventNotificationSettingsChanged(upcoming_server_event_notifications) {
+export function onUpcomingServerEventNotificationSettingsChanged(upcoming_server_event_notifications) {
   const EnableUpcomingServerEventNotifications = UserSettings.EnableUpcomingServerEventNotifications;
   EnableUpcomingServerEventNotifications.updateSetting(upcoming_server_event_notifications);
   const obj = AnalyticsUtilsDefault;
   const obj2 = { update_type: constants.ACCOUNT, upcoming_server_event_notifications };
   obj.track(AnalyticEvents.NOTIFICATION_SETTINGS_UPDATED, obj2);
-};
+}

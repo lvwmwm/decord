@@ -1,23 +1,23 @@
-// Module ID: 17984
-// Function ID: 17985
+// Module ID: 18565
+// Function ID: 18566
 // Name: getIconForChannel
-// Dependencies: [1087, 8597, 8604, 8600, 8583, 8591, 8590, 2]
+// Dependencies: [1072, 8666, 8673, 8669, 8652, 8660, 8659, 2]
 // Exports: getIconForChannel
 
-// Module 17984 (getIconForChannel)
-import Constants from "Constants" /* 1087 */;
-import TextIcon from "TextIcon" /* 8583 */;
-import ImageIcon from "ImageIcon" /* 8590 */;
-import ForumIcon from "ForumIcon" /* 8591 */;
-import AnnouncementsIcon from "AnnouncementsIcon" /* 8597 */;
-import StageIcon from "StageIcon" /* 8600 */;
-import VoiceNormalIcon from "VoiceNormalIcon" /* 8604 */;
+// Module 18565 (getIconForChannel)
+import Constants from "Constants" /* 1072 */;
+import TextIcon from "TextIcon" /* 8652 */;
+import ImageIcon from "ImageIcon" /* 8659 */;
+import ForumIcon from "ForumIcon" /* 8660 */;
+import AnnouncementsIcon from "AnnouncementsIcon" /* 8666 */;
+import StageIcon from "StageIcon" /* 8669 */;
+import VoiceNormalIcon from "VoiceNormalIcon" /* 8673 */;
 import size from "module_2" /* 2 */;
 
 const ChannelTypes = Constants.ChannelTypes;
 const result = size.fileFinishedImporting("modules/icymi/native/util/getIconForChannel.tsx");
 
-export const getIconForChannel = function getIconForChannel(stateFromStores) {
+export function getIconForChannel(stateFromStores) {
   const type = stateFromStores.type;
   if (ChannelTypes.GUILD_ANNOUNCEMENT === type) {
     return AnnouncementsIcon.AnnouncementsIcon;
@@ -34,4 +34,4 @@ export const getIconForChannel = function getIconForChannel(stateFromStores) {
   } else {
     return TextIcon.TextIcon;
   }
-};
+}

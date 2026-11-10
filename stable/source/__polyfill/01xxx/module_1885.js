@@ -1,56 +1,50 @@
 // Module ID: 1885
 // Function ID: 1886
-// Dependencies: [19, 21, 1877, 1878, 1883, 1850, 1876]
+// Dependencies: [19, 17, 21, 1844, 1640]
 // Exports: default
 
 // Module 1885
 import react2 from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import KeyboardController2 from "KeyboardController" /* 1850 */;
-import _modDef1877 from "module_1877" /* 1877 */;
-import _modDef1878 from "module_1878" /* 1878 */;
+import react_native from "react-native" /* 17 */;
 
-const useCallback = react2.useCallback;
+let size;
+
+let Platform;
+let StyleSheet;
+let c3;
+const useMemo = react2.useMemo;
+({ Platform, StyleSheet, View: c3 } = react_native);
 const jsx = Fragment.jsx;
+const styles = StyleSheet.create({ absolute: { position: "absolute" }, stretch: { top: 0, bottom: 0, left: 0, right: 0 } });
 
-export default function _default(icon) {
-  let button;
-  let children;
-  let disabled;
-  let onPress;
-  let rippleRadius;
-  let style;
-  ({ children, onPress } = icon);
-  ({ disabled, button } = icon);
-  ({ rippleRadius, style } = icon);
-  if (button === undefined) {
-    const tmp = importDefault;
-    button = _modDef1877;
+export default function _default(visible) {
+  let height;
+  let width;
+  visible = visible.visible;
+  const children = visible.children;
+  const obj = height(width[3]);
+  size = obj.useWindowDimensions();
+  height = size.height;
+  width = size.width;
+  let items = [height, width];
+  const items1 = [
+    useMemo(() => {
+      size = { height, width };
+      return size;
+    }, items)
+  ];
+  ({
+    collapsable: false,
+    style: useMemo(() => {
+      const items = [closure_1_5.absolute, undefined, closure_1_5.stretch];
+      return items;
+    }, items1),
+    children: visible
+  });
+  const RCTOverKeyboardView = height(width[4]).RCTOverKeyboardView;
+  if (visible) {
+    visible = children;
   }
-  icon = icon.icon;
-  if (icon === undefined) {
-    icon = _modDef1878;
-  }
-  const obj = onPress(1883);
-  const toolbarContext = obj.useToolbarContext();
-  const theme = toolbarContext.theme;
-  const tmp5 = onPress;
-  if (disabled == null) {
-    disabled = toolbarContext.isPrevDisabled;
-  }
-  const items = [onPress];
-  const tmp8 = useCallback((isDefaultPrevented) => {
-    if (onPress != null) {
-      tmp(isDefaultPrevented);
-    }
-    if (!isDefaultPrevented.isDefaultPrevented()) {
-      const KeyboardController = KeyboardController2.KeyboardController;
-      KeyboardController.setFocusTo("prev");
-    }
-  }, items);
-  if (children == null) {
-    const obj3 = { disabled, theme, type: "prev" };
-    children = tmp9(icon, obj3);
-  }
-  return <button accessibilityHint="Moves focus to the previous field" accessibilityLabel="Previous" disabled={disabled} rippleRadius={rippleRadius} style={style} testID={tmp5(1876).TEST_ID_KEYBOARD_TOOLBAR_PREVIOUS} theme={theme} onPress={tmp8}>{children}</button>;
+  return <RCTOverKeyboardView visible={visible}>{null}</RCTOverKeyboardView>;
 };

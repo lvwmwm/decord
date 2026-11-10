@@ -1,14 +1,14 @@
-// Module ID: 2001
-// Function ID: 2002
+// Module ID: 1993
+// Function ID: 1994
 // Name: AppStateStore
-// Dependencies: [17, 1087, 504, 1267, 2002, 584, 2]
+// Dependencies: [17, 1072, 504, 1252, 1994, 572, 2]
 
-// Module 2001 (AppStateStore)
+// Module 1993 (AppStateStore)
 import react_native from "react-native" /* 17 */;
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1087 */;
-import asyncRequire from "asyncRequire" /* 2002 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import Constants from "Constants" /* 1072 */;
+import asyncRequire from "asyncRequire" /* 1994 */;
 import size from "module_2" /* 2 */;
 
 const AppState = react_native.AppState;
@@ -26,7 +26,7 @@ class AppStateStore extends Store {
 }
 const prototype = AppStateStore.prototype;
 AppStateStore.displayName = "AppStateStore";
-const promise = asyncRequire(1267, dependencyMap.paths);
+const promise = asyncRequire(1252, dependencyMap.paths);
 promise.then((addExtraAnalyticsDecorator) => {
   let client_app_state;
   const result = addExtraAnalyticsDecorator.addExtraAnalyticsDecorator((arg0) => {

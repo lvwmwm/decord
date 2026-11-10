@@ -1,19 +1,19 @@
-// Module ID: 6805
-// Function ID: 6806
+// Module ID: 6844
+// Function ID: 6845
 // Name: ConjureProjectStore
-// Dependencies: [32, 1392, 6806, 504, 584, 2]
+// Dependencies: [32, 1383, 6845, 504, 572, 2]
 // Exports: canPublishProject, canRemixProject
 
-// Module 6805 (ConjureProjectStore)
+// Module 6844 (ConjureProjectStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import ConjureProjectTypes from "ConjureProjectTypes" /* 6806 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import ConjureProjectTypes from "ConjureProjectTypes" /* 6845 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import UserStore from "UserStore" /* 1392 */;
+import UserStore from "UserStore" /* 1383 */;
 import size from "module_2" /* 2 */;
 
-function isProjectOwner(stateFromStores) {
-  const owner_user_id = stateFromStores.owner_user_id;
+function isProjectOwner(item10010) {
+  const owner_user_id = item10010.owner_user_id;
   const currentUser = UserStore.getCurrentUser();
   let id;
   if (currentUser != null) {
@@ -21,20 +21,19 @@ function isProjectOwner(stateFromStores) {
   }
   return owner_user_id === id;
 }
-function handleProjectUpsert(project) {
-  project = project.project;
-  const result = map.set(project.id, project);
-}
 const map = new Map();
 const map1 = new Map();
 const map2 = new Map();
-let set = new Set();
-let c9 = false;
-let maxProjects = null;
-let c11 = false;
-let obj = null;
-const set1 = new Set();
+let c8 = null;
 const map3 = new Map();
+let set = new Set();
+const set1 = new Set();
+let c12 = false;
+let maxProjects = null;
+let c14 = false;
+let obj = null;
+const set2 = new Set();
+const map4 = new Map();
 let success = "unattempted";
 const Store = get_initializedDefault.Store;
 class ConjureProjectStore extends Store {
@@ -46,13 +45,13 @@ class ConjureProjectStore extends Store {
     return arr.filter(isProjectOwner);
   }
   hasFetchedOwnedProjects() {
-    return c9;
+    return c12;
   }
   getMaxProjects() {
     return maxProjects;
   }
   hasFetchedProjectLimit() {
-    return c11;
+    return c14;
   }
   getProject(arg0) {
     let value = map.get(arg0);
@@ -69,14 +68,14 @@ class ConjureProjectStore extends Store {
     }
     return null;
   }
-  getSharedProjects(guildId) {
+  getSharedProjects(id) {
     const items = [];
     const values = map.values();
     for (const item10010 of values) {
       let tmp2 = item10010;
       let tmp4 = isProjectOwner(item10010);
       if (!tmp4) {
-        tmp4 = tmp2.guild_id !== guildId;
+        tmp4 = tmp2.guild_id !== id;
       }
       if (!tmp4) {
         let arr = items.push(tmp2);
@@ -84,6 +83,24 @@ class ConjureProjectStore extends Store {
       continue;
     }
     return items;
+  }
+  getSharedWithMeProjects() {
+    const arr = Array.from(map.values());
+    return arr.filter((owner_user_id) => {
+      owner_user_id = owner_user_id.owner_user_id;
+      currentUser = currentUser.getCurrentUser();
+      let id;
+      if (currentUser != null) {
+        id = currentUser.id;
+      }
+      let tmp4 = owner_user_id !== id;
+      if (tmp4) {
+        obj = ConjureProjectTypes;
+        tmp4 = obj.isProjectGuildCollaborationEnabled(owner_user_id) && null != owner_user_id.guild_id;
+        obj.isProjectGuildCollaborationEnabled(owner_user_id) && null != owner_user_id.guild_id;
+      }
+      return tmp4;
+    });
   }
   getIntegrationStatus(arg0) {
     let value = map1.get(arg0);
@@ -102,14 +119,24 @@ class ConjureProjectStore extends Store {
     }
     return value;
   }
+  getGlobalSelectedProjectId() {
+    return c8;
+  }
+  getProjectLoadStatus(projectId) {
+    let value = map3.get(projectId);
+    if (value == null) {
+      value = null;
+    }
+    return value;
+  }
   getProjectsFetchState() {
     return obj;
   }
   hasFetchedGuildProjects(id) {
-    return set1.has(id);
+    return set2.has(id);
   }
   getGuildProjectsFetchState(guildId) {
-    let str = map3.get(guildId);
+    let str = map4.get(guildId);
     if (str == null) {
       str = "unattempted";
     }
@@ -134,13 +161,17 @@ obj = {
     if (0 === map.size) {
       if (0 === map1.size) {
         if (0 === map2.size) {
-          if (0 === set.size) {
-            if (0 === set1.size) {
-              if (null == obj) {
-                if (null == maxProjects) {
-                  const tmp8 = c11;
-                  if (!tmp8) {
-                    return false;
+          if (null == c8) {
+            if (0 === map3.size) {
+              if (0 === set.size) {
+                if (0 === set2.size) {
+                  if (null == obj) {
+                    if (null == maxProjects) {
+                      const tmp10 = c14;
+                      if (!tmp10) {
+                        return false;
+                      }
+                    }
                   }
                 }
               }
@@ -152,28 +183,31 @@ obj = {
     obj.clear();
     map1.clear();
     map2.clear();
+    c8 = null;
+    map3.clear();
     set.clear();
     set1.clear();
-    map3.clear();
+    set2.clear();
+    map4.clear();
     obj = null;
-    c9 = false;
+    c12 = false;
     success = "unattempted";
     maxProjects = null;
-    c11 = false;
+    c14 = false;
   },
   CONJURE_PROJECTS_FETCH_START: function handleProjectsFetchStart(guildId) {
     guildId = guildId.guildId;
     if (null != guildId) {
-      const result = map3.set(guildId, "loading");
+      const result = map4.set(guildId, "loading");
     } else {
       success = "loading";
     }
   },
   CONJURE_PROJECTS_FETCH_SUCCESS: function handleProjectsFetchSuccess(arg0) {
+    let first;
     let guildId;
     let projects;
     let tmp3;
-    let tmp6;
     let tmp8;
     function pruneProjectScopedState() {
       const keys = set2.keys();
@@ -195,50 +229,53 @@ obj = {
       }
     }
     ({ projects, guildId } = arg0);
-    set = new Set(projects.map((id) => id.id));
+    const found = projects.filter((view_only) => true !== view_only.view_only);
+    set = new Set(found.map((id) => id.id));
     let tmp2 = map[Symbol.iterator]();
     while (tmp2 !== undefined) {
       let tmp4 = _slicedToArray;
-      let tmp5 = _slicedToArray(tmp3, 2);
-      [tmp6, tmp8] = tmp5;
-      let tmp7 = tmp6;
-      if (!set.has(tmp6)) {
-        let tmp9 = isProjectOwner;
-        let tmp10 = tmp8;
-        let tmp11 = isProjectOwner(tmp8);
-        if (!tmp11) {
-          let tmp12 = null != guildId;
-          if (tmp12) {
-            let tmp13 = tmp8;
-            tmp12 = tmp8.guild_id === guildId;
+      [first, tmp8] = tmp3;
+      let tmp7 = first;
+      let hasItem = set.has(first);
+      if (!hasItem) {
+        let tmp10 = set1;
+        let tmp11 = first;
+        hasItem = set1.has(tmp7);
+      }
+      if (!hasItem) {
+        let tmp13 = tmp8;
+        let tmp14 = isProjectOwner(tmp8);
+        if (!tmp14) {
+          let tmp15 = null != guildId;
+          if (tmp15) {
+            tmp15 = tmp8.guild_id === guildId;
           }
-          tmp11 = tmp12;
+          tmp14 = tmp15;
         }
-        if (tmp11) {
-          let tmp14 = map;
-          let tmp15 = tmp6;
+        if (tmp14) {
           let deleteResult = map.delete(tmp7);
         }
       }
       continue;
     }
-    for (const item10044 of projects) {
-      let result = map.set(item10044.id, item10044);
+    for (const item10050 of found) {
+      let result = map.set(item10050.id, item10050);
+      let deleteResult1 = set1.delete(item10050.id);
       continue;
     }
     if (null != guildId) {
-      set1.add(guildId);
-      const result1 = map3.set(guildId, "success");
+      set2.add(guildId);
+      const result1 = map4.set(guildId, "success");
     }
     pruneProjectScopedState();
-    c9 = true;
+    c12 = true;
     success = "success";
     ({ type: "success", fetchedAt: Date.now() });
   },
   CONJURE_PROJECTS_FETCH_FAIL: function handleProjectsFetchFail(guildId) {
     guildId = guildId.guildId;
     if (null != guildId) {
-      const result = map3.set(guildId, "error");
+      const result = map4.set(guildId, "error");
     } else {
       success = "error";
     }
@@ -246,10 +283,17 @@ obj = {
   },
   CONJURE_PROJECT_LIMIT_FETCH_SETTLE: function handleProjectLimitFetchSettle(maxProjects) {
     maxProjects = maxProjects.maxProjects;
-    c11 = true;
+    c14 = true;
   },
-  CONJURE_PROJECT_CREATE_SUCCESS: handleProjectUpsert,
-  CONJURE_PROJECT_UPDATE_SUCCESS: handleProjectUpsert,
+  CONJURE_PROJECT_CREATE_SUCCESS: function handleProjectCreateSuccess(project) {
+    project = project.project;
+    const result = map.set(project.id, project);
+    set1.add(project.id);
+  },
+  CONJURE_PROJECT_UPDATE_SUCCESS: function handleProjectUpdateSuccess(project) {
+    project = project.project;
+    const result = map.set(project.id, project);
+  },
   CONJURE_PROJECT_INTEGRATION_STATUS_UPDATE: function handleProjectIntegrationStatusUpdate(projectId) {
     const result = map1.set(projectId.projectId, projectId.integrationStatus);
   },
@@ -260,16 +304,21 @@ obj = {
     projectId = projectId.projectId;
     set.delete(projectId);
     map.delete(projectId);
+    set1.delete(projectId);
     map1.delete(projectId);
-    const tmp5 = map2[Symbol.iterator]();
-    while (tmp5 !== undefined) {
-      let tmp8 = _slicedToArray(tmp6, 2);
-      let first = tmp8[0];
-      if (tmp8[1] === projectId) {
-        let deleteResult3 = map2.delete(first);
+    const tmp6 = map2[Symbol.iterator]();
+    while (tmp6 !== undefined) {
+      let tmp9 = _slicedToArray(tmp7, 2);
+      let first = tmp9[0];
+      if (tmp9[1] === projectId) {
+        let deleteResult4 = map2.delete(first);
       }
       continue;
     }
+    if (c8 === projectId) {
+      c8 = null;
+    }
+    map3.delete(projectId);
   },
   CONJURE_PROJECT_DELETE_FAIL: function handleProjectDeleteFail(projectId) {
     return set.delete(projectId.projectId);
@@ -289,6 +338,37 @@ obj = {
     } else {
       const result = obj.set(guildId, projectId);
     }
+  },
+  CONJURE_PROJECT_GLOBAL_SELECT: function handleProjectGlobalSelect(projectId) {
+    projectId = projectId.projectId;
+    if (c8 === projectId) {
+      return false;
+    } else {
+      c8 = projectId;
+    }
+  },
+  CONJURE_PROJECT_GLOBAL_CLEAR: function handleProjectGlobalClear(projectId) {
+    if (c8 !== projectId.projectId) {
+      return false;
+    } else {
+      c8 = null;
+    }
+  },
+  CONJURE_PROJECT_LOAD_STATUS: function handleProjectLoadStatus(arg0) {
+    let projectId;
+    let status;
+    ({ projectId, status } = arg0);
+    let value = map3.get(projectId);
+    if (value == null) {
+      value = null;
+    }
+    if (value === status) {
+      return false;
+    } else if (null == status) {
+      map3.delete(projectId);
+    } else {
+      const result = obj.set(projectId, status);
+    }
   }
 };
 const conjureProjectStore = new ConjureProjectStore(DispatcherDefault, obj);
@@ -296,7 +376,7 @@ let result = size.fileFinishedImporting("modules/conjure/projects/ConjureProject
 
 export default conjureProjectStore;
 export { isProjectOwner };
-export const canPublishProject = function canPublishProject(project) {
+export function canPublishProject(project) {
   const owner_user_id = project.owner_user_id;
   const currentUser = UserStore.getCurrentUser();
   let id;
@@ -310,8 +390,8 @@ export const canPublishProject = function canPublishProject(project) {
     obj.isProjectGuildCollaborationEnabled(project) && null != project.guild_id;
   }
   return tmp3;
-};
-export const canRemixProject = function canRemixProject(project) {
+}
+export function canRemixProject(project) {
   const owner_user_id = project.owner_user_id;
   const currentUser = UserStore.getCurrentUser();
   let id;
@@ -329,4 +409,4 @@ export const canRemixProject = function canRemixProject(project) {
     isProjectPublicResult = obj2.isProjectPublic(project);
   }
   return isProjectPublicResult;
-};
+}

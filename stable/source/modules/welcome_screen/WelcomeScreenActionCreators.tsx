@@ -1,13 +1,13 @@
-// Module ID: 13763
-// Function ID: 13764
+// Module ID: 14233
+// Function ID: 14234
 // Name: WelcomeScreenActionCreators
-// Dependencies: [5, 1087, 584, 1297, 2]
+// Dependencies: [5, 1072, 572, 1282, 2]
 // Exports: clearWelcomeScreenSettings, fetchWelcomeScreen, resetWelcomeScreen, saveWelcomeScreen, updateSettings, welcomeScreenViewed
 
-// Module 13763 (WelcomeScreenActionCreators)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1087 */;
-import HTTPUtils from "HTTPUtils" /* 1297 */;
+// Module 14233 (WelcomeScreenActionCreators)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import Constants from "Constants" /* 1072 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ let obj = function _fetchWelcomeScreen() {
       await get(obj4);
       const obj5 = closure_130_1(closure_130_2[2]);
       obj5.dispatch({ type: "WELCOME_SCREEN_FETCH_FAIL" });
-      closure_1 = await "IconComponent";
+      closure_1 = await "HermesInternal";
       const obj8 = { type: "WELCOME_SCREEN_FETCH_SUCCESS", guildId, welcomeScreen: closure_1.body };
       obj = closure_130_1(closure_130_2[2]);
       obj.dispatch(obj8);
@@ -55,7 +55,7 @@ obj = function _saveWelcomeScreen() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -104,7 +104,7 @@ obj = function _saveWelcomeScreen() {
               c5 = 0;
             }
             c7 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp17) {
           closure_4 = tmp17;
@@ -123,7 +123,7 @@ obj = function _saveWelcomeScreen() {
 const Endpoints = Constants.Endpoints;
 const result = size.fileFinishedImporting("modules/welcome_screen/WelcomeScreenActionCreators.tsx");
 
-export const welcomeScreenViewed = function welcomeScreenViewed(guildId) {
+export function welcomeScreenViewed(guildId) {
   let flag = arg1;
   if (arg1 === undefined) {
     flag = false;
@@ -131,23 +131,23 @@ export const welcomeScreenViewed = function welcomeScreenViewed(guildId) {
   obj = DispatcherDefault;
   const obj2 = { type: "WELCOME_SCREEN_VIEW", guildId, isLurking: flag };
   obj.dispatch(obj2);
-};
-export const fetchWelcomeScreen = function fetchWelcomeScreen() {
+}
+export function fetchWelcomeScreen() {
   return obj(...arguments);
-};
-export const resetWelcomeScreen = function resetWelcomeScreen() {
+}
+export function resetWelcomeScreen() {
   obj = DispatcherDefault;
   obj.dispatch({ type: "WELCOME_SCREEN_SETTINGS_RESET" });
-};
-export const clearWelcomeScreenSettings = function clearWelcomeScreenSettings() {
+}
+export function clearWelcomeScreenSettings() {
   obj = DispatcherDefault;
   obj.dispatch({ type: "WELCOME_SCREEN_SETTINGS_CLEAR" });
-};
-export const updateSettings = function updateSettings(settings) {
+}
+export function updateSettings(settings) {
   obj = DispatcherDefault;
   const obj2 = { type: "WELCOME_SCREEN_SETTINGS_UPDATE", settings };
   obj.dispatch(obj2);
-};
-export const saveWelcomeScreen = function saveWelcomeScreen() {
+}
+export function saveWelcomeScreen() {
   return obj(...arguments);
-};
+}

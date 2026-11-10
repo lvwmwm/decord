@@ -1,14 +1,14 @@
-// Module ID: 7406
-// Function ID: 7407
+// Module ID: 7448
+// Function ID: 7449
 // Name: GuildMemberSubscriptions
-// Dependencies: [1104, 4850, 11, 3, 12, 2]
+// Dependencies: [1089, 4858, 11, 3, 12, 2]
 
-// Module 7406 (GuildMemberSubscriptions)
+// Module 7448 (GuildMemberSubscriptions)
 import LoggerDefault from "Logger" /* 3 */;
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
-import DurationsDefault from "Durations" /* 1104 */;
-import Timers from "Timers" /* 4850 */;
+import DurationsDefault from "Durations" /* 1089 */;
+import Timers from "Timers" /* 4858 */;
 import size from "module_2" /* 2 */;
 
 const MINUTE = DurationsDefault.Millis.MINUTE;

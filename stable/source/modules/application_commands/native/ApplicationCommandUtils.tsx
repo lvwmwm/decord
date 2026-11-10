@@ -1,20 +1,20 @@
-// Module ID: 13160
-// Function ID: 13161
+// Module ID: 13793
+// Function ID: 13794
 // Name: application_commands/ApplicationCommandUtils
-// Dependencies: [7663, 8325, 6015, 1417, 13161, 13162, 5666, 1990, 10448, 9697, 2]
+// Dependencies: [7701, 8208, 6035, 1409, 13794, 13795, 5683, 1982, 10528, 9778, 2]
 // Exports: getApplicationCommandsIconSource, openCommandAttachmentPreview
 
-// Module 13160 (application_commands/ApplicationCommandUtils)
-import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
-import AssetRegistryDefault from "AssetRegistry" /* 1990 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5666 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6015 */;
-import DraftStore from "DraftStore" /* 7663 */;
-import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 9697 */;
-import showUploadPreviewActionSheetDefault from "showUploadPreviewActionSheet" /* 10448 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 13161 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 13162 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 8325 */;
+// Module 13793 (application_commands/ApplicationCommandUtils)
+import AvatarUtilsDefault from "AvatarUtils" /* 1409 */;
+import AssetRegistryDefault from "AssetRegistry" /* 1982 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5683 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6035 */;
+import DraftStore from "DraftStore" /* 7701 */;
+import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 9778 */;
+import showUploadPreviewActionSheetDefault from "showUploadPreviewActionSheet" /* 10528 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 13794 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 13795 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 8208 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, importDefault;
@@ -23,7 +23,7 @@ const DraftType = DraftStore.DraftType;
 const BuiltInSectionId = ApplicationCommandConstants.BuiltInSectionId;
 let result = size.fileFinishedImporting("modules/application_commands/native/ApplicationCommandUtils.tsx");
 
-export const getApplicationCommandsIconSource = function getApplicationCommandsIconSource(section, stateFromStores) {
+export function getApplicationCommandsIconSource(section, stateFromStores) {
   let application;
   let bot;
   if (null == section) {
@@ -54,8 +54,8 @@ export const getApplicationCommandsIconSource = function getApplicationCommandsI
       return applicationIconSource;
     }
   }
-};
-export const openCommandAttachmentPreview = function openCommandAttachmentPreview(applicationCommandManager, channelId, name, fn) {
+}
+export function openCommandAttachmentPreview(applicationCommandManager, channelId, name, fn) {
   let upload;
   let closure_0 = applicationCommandManager;
   importDefault = channelId;
@@ -89,4 +89,4 @@ export const openCommandAttachmentPreview = function openCommandAttachmentPrevie
     };
     showUploadPreviewActionSheetDefault(obj);
   }
-};
+}

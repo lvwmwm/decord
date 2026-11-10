@@ -1,11 +1,11 @@
-// Module ID: 12907
-// Function ID: 12908
+// Module ID: 13354
+// Function ID: 13355
 // Name: ExplicitMediaFalsePositiveActionCreators
-// Dependencies: [584, 2]
+// Dependencies: [572, 2]
 // Exports: disableFalsePositiveButton
 
-// Module 12907 (ExplicitMediaFalsePositiveActionCreators)
-import DispatcherDefault from "Dispatcher" /* 584 */;
+// Module 13354 (ExplicitMediaFalsePositiveActionCreators)
+import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 
 function disableFalsePositiveButton(channelId, messageId) {

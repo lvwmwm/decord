@@ -1,20 +1,20 @@
-// Module ID: 7420
-// Function ID: 7421
+// Module ID: 7462
+// Function ID: 7463
 // Name: SelfModUtils
-// Dependencies: [1392, 2]
+// Dependencies: [1383, 2]
 // Exports: isCurrentUserTeen
 
-// Module 7420 (SelfModUtils)
-import UserStore from "UserStore" /* 1392 */;
+// Module 7462 (SelfModUtils)
+import UserStore from "UserStore" /* 1383 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/self_mod/SelfModUtils.tsx");
 
-export const isCurrentUserTeen = function isCurrentUserTeen() {
+export function isCurrentUserTeen() {
   const currentUser = UserStore.getCurrentUser();
   let nsfwAllowed;
   if (currentUser != null) {
     nsfwAllowed = currentUser.nsfwAllowed;
   }
   return false === nsfwAllowed;
-};
+}

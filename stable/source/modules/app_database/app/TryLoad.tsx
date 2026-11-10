@@ -1,12 +1,12 @@
-// Module ID: 4901
-// Function ID: 4902
+// Module ID: 4912
+// Function ID: 4913
 // Name: TryLoad
-// Dependencies: [5, 3, 584, 2]
+// Dependencies: [5, 3, 572, 2]
 // Exports: tryLoad, tryLoadAsync, tryLoadOrResetCacheGateway, tryLoadOrResetCacheGatewayAsync
 
-// Module 4901 (TryLoad)
+// Module 4912 (TryLoad)
 import LoggerDefault from "Logger" /* 3 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ let obj = function _tryLoadAsync() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c4;
@@ -99,7 +99,7 @@ obj = function _tryLoadOrResetCacheGatewayAsync() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -169,18 +169,18 @@ const tmp2 = new LoggerDefault("TryLoad");
 const logger = tmp2;
 const result = size.fileFinishedImporting("modules/app_database/app/TryLoad.tsx");
 
-export const tryLoad = function tryLoad(fn) {
+export function tryLoad(fn) {
   try {
     return fn();
   } catch (tmp2) {
     logger.log("database load failed.", tmp2);
     return null;
   }
-};
-export const tryLoadAsync = function tryLoadAsync() {
+}
+export function tryLoadAsync() {
   return obj(...arguments);
-};
-export const tryLoadOrResetCacheGateway = function tryLoadOrResetCacheGateway(arg0, fn, ensureGuildLoaded) {
+}
+export function tryLoadOrResetCacheGateway(arg0, fn, ensureGuildLoaded) {
   try {
     return fn();
   } catch (tmp2) {
@@ -199,7 +199,7 @@ export const tryLoadOrResetCacheGateway = function tryLoadOrResetCacheGateway(ar
     dispatch(obj2);
     return null;
   }
-};
-export const tryLoadOrResetCacheGatewayAsync = function tryLoadOrResetCacheGatewayAsync() {
+}
+export function tryLoadOrResetCacheGatewayAsync() {
   return obj(...arguments);
-};
+}

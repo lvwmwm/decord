@@ -1,11 +1,11 @@
-// Module ID: 5180
-// Function ID: 5181
+// Module ID: 5196
+// Function ID: 5197
 // Name: CustomThemesRandomUtils
-// Dependencies: [683, 2]
+// Dependencies: [671, 2]
 // Exports: generateRandomColorOptions
 
-// Module 5180 (CustomThemesRandomUtils)
-import _modDef683 from "module_683" /* 683 */;
+// Module 5196 (CustomThemesRandomUtils)
+import _modDef671 from "module_671" /* 671 */;
 import size from "module_2" /* 2 */;
 
 let items = ["#94E0CF", "#9AF0B1", "#9A90FF", "#9A53FF", "#FDA6E4", "#FFE6C0", "#EFB4AA", "#56B69F", "#29C566", "#5348CA", "#6D24D4", "#CA48C8", "#F0AE29", "#DF4232"];
@@ -20,7 +20,7 @@ const result = size.fileFinishedImporting("modules/client_themes/CustomThemesRan
 export const COLOR_PALETTE = items;
 export { ColorType };
 export const GradientType = obj2;
-export const generateRandomColorOptions = function generateRandomColorOptions() {
+export function generateRandomColorOptions() {
   let obj;
   function generateColorHarmony(items, items1) {
     function generateAnalogousColors(items, value3, value4, value) {
@@ -66,7 +66,7 @@ export const generateRandomColorOptions = function generateRandomColorOptions() 
       return items;
     }
     try {
-      let obj = _modDef683(items);
+      let obj = _modDef671(items);
       const value = obj.get("hsl.h");
       const value3 = obj.get("hsl.s");
       const value4 = obj.get("hsl.l");
@@ -122,4 +122,4 @@ export const generateRandomColorOptions = function generateRandomColorOptions() 
     obj2 = { type: obj.GRADIENT, colors: generateColorHarmony(tmp10, tmp12), angle: tmp2, intensity: tmp, gradientType: tmp12 };
     return obj2;
   }
-};
+}

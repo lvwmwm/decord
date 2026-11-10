@@ -1,19 +1,19 @@
-// Module ID: 15673
-// Function ID: 15674
+// Module ID: 16217
+// Function ID: 16218
 // Name: installSystrace
-// Dependencies: [17, 1384, 15674, 2]
+// Dependencies: [17, 1375, 16218, 2]
 // Exports: installSystrace
 
-// Module 15673 (installSystrace)
+// Module 16217 (installSystrace)
 import react_native from "react-native" /* 17 */;
-import PlatformUtils from "PlatformUtils" /* 1384 */;
-import react_native2 from "react-native" /* 15674 */;
+import PlatformUtils from "PlatformUtils" /* 1375 */;
+import react_native2 from "react-native" /* 16218 */;
 import size from "module_2" /* 2 */;
 
 const Systrace = react_native.Systrace;
 const result = size.fileFinishedImporting("modules/systrace/native/installSystrace.tsx");
 
-export const installSystrace = function installSystrace() {
+export function installSystrace() {
   const obj = PlatformUtils;
   if (obj.isAndroid()) {
     Systrace.isEnabled = () => {
@@ -83,4 +83,4 @@ export const installSystrace = function installSystrace() {
       }
     };
   }
-};
+}

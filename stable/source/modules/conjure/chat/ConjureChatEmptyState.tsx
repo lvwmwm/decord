@@ -1,15 +1,15 @@
-// Module ID: 12341
-// Function ID: 12342
+// Module ID: 12581
+// Function ID: 12582
 // Name: ConjureChatEmptyState
 // Dependencies: [2]
 // Exports: chatEmptyState
 
-// Module 12341 (ConjureChatEmptyState)
+// Module 12581 (ConjureChatEmptyState)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/chat/ConjureChatEmptyState.tsx");
 
-export const chatEmptyState = function chatEmptyState(connState) {
+export function chatEmptyState(connState) {
   connState = connState.connState;
   let str = "unavailable";
   if (!connState.historyUnavailable) {
@@ -26,4 +26,4 @@ export const chatEmptyState = function chatEmptyState(connState) {
     str = str2;
   }
   return str;
-};
+}

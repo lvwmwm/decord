@@ -1,21 +1,21 @@
-// Module ID: 18555
-// Function ID: 18556
+// Module ID: 19173
+// Function ID: 19174
 // Name: TopSoundboardSoundsActionCreators
-// Dependencies: [1392, 6038, 6039, 1087, 5052, 584, 1297, 2]
+// Dependencies: [1383, 6058, 6059, 1072, 5063, 572, 1282, 2]
 // Exports: fetchTopSoundboardSounds, maybeFetchTopSoundboardSoundsByGuild
 
-// Module 18555 (TopSoundboardSoundsActionCreators)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1087 */;
-import UserStore from "UserStore" /* 1392 */;
-import SoundboardStore from "SoundboardStore" /* 6038 */;
-import TopSoundboardSoundStore from "TopSoundboardSoundStore" /* 6039 */;
+// Module 19173 (TopSoundboardSoundsActionCreators)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import Constants from "Constants" /* 1072 */;
+import UserStore from "UserStore" /* 1383 */;
+import SoundboardStore from "SoundboardStore" /* 6058 */;
+import TopSoundboardSoundStore from "TopSoundboardSoundStore" /* 6059 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const f136341 = (body) => {
+const f116942 = (body) => {
   let mapped;
   const items = body.body.items;
   const obj = { type: "TOP_SOUNDBOARD_SOUNDS_FETCH_SUCCESS", guildId, topSoundsMetadata: mapped.sort((rank, rank2) => rank.rank - rank2.rank) };
@@ -24,7 +24,7 @@ const f136341 = (body) => {
   mapped = items.map((soundId) => ({ soundId: soundId.sound_id, rank: soundId.sound_rank }));
   return dispatch(obj);
 };
-const f136342 = () => {
+const f116943 = () => {
   const obj = DispatcherDefault;
   const obj2 = { type: "TOP_SOUNDBOARD_SOUNDS_FETCH_FAILURE", guildId };
   return obj.dispatch(obj2);
@@ -32,7 +32,7 @@ const f136342 = () => {
 const Endpoints = Constants.Endpoints;
 const result = size.fileFinishedImporting("modules/soundboard/top_sounds/TopSoundboardSoundsActionCreators.tsx");
 
-export const maybeFetchTopSoundboardSoundsByGuild = function maybeFetchTopSoundboardSoundsByGuild(id) {
+export function maybeFetchTopSoundboardSoundsByGuild(id) {
   let guildId;
   if (null != id) {
     if (null != UserStore.getCurrentUser()) {
@@ -51,17 +51,17 @@ export const maybeFetchTopSoundboardSoundsByGuild = function maybeFetchTopSoundb
           let obj2 = DispatcherDefault;
           const obj3 = { type: "TOP_SOUNDBOARD_SOUNDS_FETCH", guildId: id };
           obj2.dispatch(obj3);
-          const HTTP = tmp2(1297).HTTP;
+          const HTTP = tmp2(1282).HTTP;
           const get = HTTP.get;
           const obj4 = { url: Endpoints.TOP_SOUNDBOARD_SOUNDS_FOR_GUILD(id), oldFormErrors: true, rejectWithError: true };
           const value = get(obj4);
-          value.then(f136341, f136342);
+          value.then(f116942, f116943);
         }
       }
     }
   }
-};
-export const fetchTopSoundboardSounds = function fetchTopSoundboardSounds(guildId) {
+}
+export function fetchTopSoundboardSounds(guildId) {
   _require = guildId;
   const obj = require("RouteUtils");
   const tmp = _require;
@@ -69,10 +69,10 @@ export const fetchTopSoundboardSounds = function fetchTopSoundboardSounds(guildI
     const obj3 = { type: "TOP_SOUNDBOARD_SOUNDS_FETCH", guildId };
     const obj2 = DispatcherDefault;
     obj2.dispatch(obj3);
-    const HTTP = tmp(1297).HTTP;
+    const HTTP = tmp(1282).HTTP;
     const get = HTTP.get;
     const obj4 = { url: Endpoints.TOP_SOUNDBOARD_SOUNDS_FOR_GUILD(guildId), oldFormErrors: true, rejectWithError: true };
     const value = get(obj4);
-    value.then(f136341, f136342);
+    value.then(f116942, f116943);
   }
-};
+}

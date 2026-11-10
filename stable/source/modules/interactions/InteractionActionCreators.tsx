@@ -1,13 +1,13 @@
-// Module ID: 8632
-// Function ID: 8633
+// Module ID: 8701
+// Function ID: 8702
 // Name: InteractionActionCreators
-// Dependencies: [5, 1087, 584, 1297, 2]
+// Dependencies: [5, 1072, 572, 1282, 2]
 // Exports: addQueued, fetchMessageInteractionData, queueInteractionComponentState, setFailed
 
-// Module 8632 (InteractionActionCreators)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1087 */;
-import HTTPUtils from "HTTPUtils" /* 1297 */;
+// Module 8701 (InteractionActionCreators)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import Constants from "Constants" /* 1072 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -36,12 +36,12 @@ let obj = function _fetchMessageInteractionData() {
 const Endpoints = Constants.Endpoints;
 const result = size.fileFinishedImporting("modules/interactions/InteractionActionCreators.tsx");
 
-export const queueInteractionComponentState = function queueInteractionComponentState(c1, nonce, c8, c4) {
+export function queueInteractionComponentState(c1, nonce, c8, c4) {
   obj = DispatcherDefault;
   const obj2 = { type: "QUEUE_INTERACTION_COMPONENT_STATE", messageId: c1, nonce, state: c8, componentId: c4 };
   obj.dispatch(obj2);
-};
-export const addQueued = function addQueued(nonce2, arg1) {
+}
+export function addQueued(nonce2, arg1) {
   let data;
   let messageId;
   let onCreate;
@@ -52,12 +52,12 @@ export const addQueued = function addQueued(nonce2, arg1) {
   obj = DispatcherDefault;
   const obj2 = { type: "INTERACTION_QUEUE", data, nonce: nonce2, messageId, preflight, onCreate, onSuccess, onFailure };
   obj.dispatch(obj2);
-};
-export const setFailed = function setFailed(nonce, code, message, status) {
+}
+export function setFailed(nonce, code, message, status) {
   obj = DispatcherDefault;
   const obj2 = { type: "INTERACTION_FAILURE", nonce, errorMessage: message, errorCode: code, status };
   obj.dispatch(obj2);
-};
-export const fetchMessageInteractionData = function fetchMessageInteractionData() {
+}
+export function fetchMessageInteractionData() {
   return obj(...arguments);
-};
+}

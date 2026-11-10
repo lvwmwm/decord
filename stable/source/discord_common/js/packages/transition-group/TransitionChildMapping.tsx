@@ -1,16 +1,16 @@
-// Module ID: 13357
-// Function ID: 13358
+// Module ID: 13988
+// Function ID: 13989
 // Name: react
 // Dependencies: [19, 2]
 // Exports: getChildMapping, mergeChildMappings
 
-// Module 13357 (react)
+// Module 13988 (react)
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/packages/transition-group/TransitionChildMapping.tsx");
 
-export const getChildMapping = function getChildMapping(children) {
+export function getChildMapping(children) {
   const obj = {};
   if (children) {
     const Children = react.Children;
@@ -24,8 +24,8 @@ export const getChildMapping = function getChildMapping(children) {
     }
   }
   return obj;
-};
-export const mergeChildMappings = function mergeChildMappings(children, childMapping) {
+}
+export function mergeChildMappings(children, childMapping) {
   let num2;
   let obj = children;
   if (children === undefined) {
@@ -88,4 +88,4 @@ export const mergeChildMappings = function mergeChildMappings(children, childMap
     obj4[arr2[num2]] = obj2.hasOwnProperty(tmp11) ? obj2[tmp11] : obj[tmp11];
   }
   return obj4;
-};
+}

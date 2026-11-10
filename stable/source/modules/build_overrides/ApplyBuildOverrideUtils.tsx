@@ -1,12 +1,12 @@
-// Module ID: 12750
-// Function ID: 12751
+// Module ID: 13193
+// Function ID: 13194
 // Name: ApplyBuildOverrideUtils
-// Dependencies: [5, 502, 12751, 1297, 1381, 2]
+// Dependencies: [5, 502, 13194, 1282, 1372, 2]
 // Exports: applyPublicBuildOverride, applyStaffBuildOverride, clearBuildOverride, getPublicBuildOverrideLink
 
-// Module 12750 (ApplyBuildOverrideUtils)
-import HTTPUtils from "HTTPUtils" /* 1297 */;
-import BuildOverrideUtils from "BuildOverrideUtils" /* 1381 */;
+// Module 13193 (ApplyBuildOverrideUtils)
+import HTTPUtils from "HTTPUtils" /* 1282 */;
+import BuildOverrideUtils from "BuildOverrideUtils" /* 1372 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import size from "module_2" /* 2 */;
@@ -29,7 +29,7 @@ let obj = function _applyStaffBuildOverride() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -126,7 +126,7 @@ obj = function _applyPublicBuildOverride() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c4;
@@ -231,7 +231,7 @@ let closure_0 = _asyncToGenerator(async (arg0, value) => {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: "+352" };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -260,7 +260,7 @@ let closure_0 = _asyncToGenerator(async (arg0, value) => {
         return obj;
       } else {
         c1 = 3;
-        return { value: "IconComponent", done: "+352" };
+        return { value: "HermesInternal", done: null };
       }
     } catch (tmp7) {
       c1 = 3;
@@ -273,16 +273,16 @@ function persistBuildOverrideCookie() {
 }
 const result = size.fileFinishedImporting("modules/build_overrides/ApplyBuildOverrideUtils.tsx");
 
-export const applyStaffBuildOverride = function applyStaffBuildOverride() {
+export function applyStaffBuildOverride() {
   return obj(...arguments);
-};
-export const applyPublicBuildOverride = function applyPublicBuildOverride() {
+}
+export function applyPublicBuildOverride() {
   return obj(...arguments);
-};
-export const clearBuildOverride = function clearBuildOverride() {
+}
+export function clearBuildOverride() {
   return obj(...arguments);
-};
-export const getPublicBuildOverrideLink = function getPublicBuildOverrideLink(body) {
+}
+export function getPublicBuildOverrideLink(body) {
   let obj2;
   let str;
   const HTTP = HTTPUtils.HTTP;
@@ -304,4 +304,4 @@ export const getPublicBuildOverrideLink = function getPublicBuildOverrideLink(bo
     }
     return obj;
   });
-};
+}

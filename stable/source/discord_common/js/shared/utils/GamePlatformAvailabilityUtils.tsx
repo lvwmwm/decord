@@ -1,11 +1,11 @@
-// Module ID: 13320
-// Function ID: 13321
+// Module ID: 13951
+// Function ID: 13952
 // Name: GamePlatformAvailabilityUtils
-// Dependencies: [13318, 2]
+// Dependencies: [13949, 2]
 // Exports: getOrderedGamePlatforms
 
-// Module 13320 (GamePlatformAvailabilityUtils)
-import GamePlatformAvailability from "GamePlatformAvailability" /* 13318 */;
+// Module 13951 (GamePlatformAvailabilityUtils)
+import GamePlatformAvailability from "GamePlatformAvailability" /* 13949 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -14,7 +14,7 @@ const items = [GamePlatformAvailability.GamePlatformAvailability.DESKTOP, GamePl
 const result = size.fileFinishedImporting("../discord_common/js/shared/utils/GamePlatformAvailabilityUtils.tsx");
 
 export const GAME_PLATFORM_AVAILABILITY_ORDER = items;
-export const getOrderedGamePlatforms = function getOrderedGamePlatforms(items) {
+export function getOrderedGamePlatforms(items) {
   if (null != items) {
     if (0 !== items.length) {
       const _Set = Set;
@@ -25,4 +25,4 @@ export const getOrderedGamePlatforms = function getOrderedGamePlatforms(items) {
     }
   }
   return [];
-};
+}

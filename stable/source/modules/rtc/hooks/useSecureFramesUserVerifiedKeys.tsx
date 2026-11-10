@@ -1,61 +1,26 @@
-// Module ID: 17286
-// Function ID: 17287
+// Module ID: 17885
+// Function ID: 17886
 // Name: useSecureFramesUserVerifiedKeys
-// Dependencies: [32, 9212, 558, 576, 12, 504, 2]
+// Dependencies: [9249, 504, 12, 2]
+// Exports: useSecureFramesUserVerifiedKeys
 
-// Module 17286 (useSecureFramesUserVerifiedKeys)
+// Module 17885 (useSecureFramesUserVerifiedKeys)
 import _modDef12 from "module_12" /* 12 */;
-import _slicedToArray from "_slicedToArray" /* 32 */;
-import VerifiedKeyStore from "VerifiedKeyStore" /* 9212 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import VerifiedKeyStore from "VerifiedKeyStore" /* 9249 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSecureFramesUserVerifiedKeys(arg0) {
-  let closure_0;
-  let first;
-  let tmp6;
-  _require = arg0;
-  let tmp = _require;
-  const obj = require("react");
-  const cResult = obj.c(3);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [VerifiedKeyStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function n() {
-      let tmp = _modDef12;
-      const tmpResult = tmp(VerifiedKeyStore.getUserVerifiedKeys(closure_0));
-      const entries = tmpResult.entries();
-      const mapped = entries.map((item) => {
-        const tmp = closure_1_3(item, 2);
-        return { verifiedKey: tmp[0], timestamp: tmp[1] };
-      });
-      const iter = mapped.sortBy((timestamp) => -1 * timestamp.timestamp);
-      return iter.value();
-    };
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-  }
-  let tmpResult = tmp(504);
-  return tmpResult.useStateFromStoresArray(first, tmp6);
-}) : (function useSecureFramesUserVerifiedKeys(arg0) {
-  let closure_0;
-  _require = arg0;
+const result = size.fileFinishedImporting("modules/rtc/hooks/useSecureFramesUserVerifiedKeys.tsx");
+
+export function useSecureFramesUserVerifiedKeys(userId) {
+  _require = userId;
   const items = [VerifiedKeyStore];
   const obj = require("get initialized");
   return obj.useStateFromStoresArray(items, () => {
     const tmp = _modDef12;
-    const tmpResult = tmp(VerifiedKeyStore.getUserVerifiedKeys(closure_0));
+    const tmpResult = tmp(VerifiedKeyStore.getUserVerifiedKeys(userId));
     const entries = tmpResult.entries();
     const mapped = entries.map((item) => {
       let tmp;
@@ -66,7 +31,4 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSecureF
     const iter = mapped.sortBy((timestamp) => -1 * timestamp.timestamp);
     return iter.value();
   });
-});
-const result = size.fileFinishedImporting("modules/rtc/hooks/useSecureFramesUserVerifiedKeys.tsx");
-
-export const useSecureFramesUserVerifiedKeys = tmp2;
+}

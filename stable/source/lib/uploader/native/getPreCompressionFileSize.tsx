@@ -1,11 +1,11 @@
-// Module ID: 10135
-// Function ID: 10136
+// Module ID: 10215
+// Function ID: 10216
 // Name: getPreCompressionFileSize
-// Dependencies: [5, 8186, 2]
+// Dependencies: [5, 8220, 2]
 // Exports: getPreCompressionFileSize
 
-// Module 10135 (getPreCompressionFileSize)
-import utils_UploadUtils from "utils/UploadUtils" /* 8186 */;
+// Module 10215 (getPreCompressionFileSize)
+import utils_UploadUtils from "utils/UploadUtils" /* 8220 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ let obj = function _getPreCompressionFileSize() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -75,6 +75,6 @@ let obj = function _getPreCompressionFileSize() {
 };
 const result = size.fileFinishedImporting("lib/uploader/native/getPreCompressionFileSize.tsx");
 
-export const getPreCompressionFileSize = function getPreCompressionFileSize() {
+export function getPreCompressionFileSize() {
   return obj(...arguments);
-};
+}

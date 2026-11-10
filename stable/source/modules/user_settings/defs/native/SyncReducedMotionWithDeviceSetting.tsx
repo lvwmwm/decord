@@ -1,52 +1,29 @@
-// Module ID: 16808
-// Function ID: 16809
+// Module ID: 17406
+// Function ID: 17407
 // Name: SyncReducedMotionWithDeviceSetting
-// Dependencies: [5004, 8364, 558, 576, 504, 15721, 11240, 1128, 2]
+// Dependencies: [5015, 8432, 504, 16265, 11540, 1113, 2]
 
-// Module 16808 (SyncReducedMotionWithDeviceSetting)
-import react from "react" /* 576 */;
-import intl2 from "intl" /* 1128 */;
-import SettingsConstants from "SettingsConstants" /* 8364 */;
-import AccessibilityActionCreators from "AccessibilityActionCreators" /* 15721 */;
-import AccessibilityStore from "AccessibilityStore" /* 5004 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11240 */;
+// Module 17406 (SyncReducedMotionWithDeviceSetting)
+import get_initialized from "get initialized" /* 504 */;
+import intl2 from "intl" /* 1113 */;
+import SettingsConstants from "SettingsConstants" /* 8432 */;
+import AccessibilityActionCreators from "AccessibilityActionCreators" /* 16265 */;
+import AccessibilityStore from "AccessibilityStore" /* 5015 */;
+import SettingBuilders from "SettingBuilders" /* 11540 */;
 import size from "module_2" /* 2 */;
 
-let tmp;
-const get_initialized = tmp(504);
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useReducedMotionSyncSettingValue() {
-  let tmp4;
-  let tmp5;
-  const obj = react;
-  const cResult = obj.c(2);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [AccessibilityStore];
-    const fn = function o() {
-      return "auto" === AccessibilityStore.rawPrefersReducedMotion;
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  const tmpResult = get_initialized;
-  return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (function useReducedMotionSyncSettingValue() {
-  const items = [AccessibilityStore];
-  const obj = get_initialized;
-  return obj.useStateFromStores(items, () => "auto" === AccessibilityStore.rawPrefersReducedMotion);
-});
 let obj = {
   useTitle() {
     const intl = intl2.intl;
     return intl.string(intl2.t["St+DJK"]);
   },
   parent: MobileUserSettings.ACCESSIBILITY,
-  useValue: tmp2,
+  useValue: function useReducedMotionSyncSettingValue() {
+    const items = [AccessibilityStore];
+    const obj = get_initialized;
+    return obj.useStateFromStores(items, () => "auto" === AccessibilityStore.rawPrefersReducedMotion);
+  },
   onValueChange: function onReducedMotionSyncSettingValueChange(arg0) {
     const systemPrefersReducedMotion = AccessibilityStore.systemPrefersReducedMotion;
     let str = "auto";

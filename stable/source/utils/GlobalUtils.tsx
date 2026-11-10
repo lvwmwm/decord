@@ -1,10 +1,10 @@
-// Module ID: 1388
-// Function ID: 1389
+// Module ID: 1379
+// Function ID: 1380
 // Name: GlobalUtils
 // Dependencies: [2]
 // Exports: assertNever, getDevTunnelHostname, isDiscordBackendDevelopment, isDiscordFrontendDevelopment, isIn, isInSet, isNotNullish, isObjectEntryNotNullish
 
-// Module 1388 (GlobalUtils)
+// Module 1379 (GlobalUtils)
 import size from "module_2" /* 2 */;
 
 let closure_0 = "development" === window.GLOBAL_ENV.PROJECT_ENV;
@@ -19,19 +19,19 @@ export function isDiscordBackendDevelopment() {
 export function getDevTunnelHostname() {
   return null;
 }
-export const assertNever = function assertNever(arg0) {
+export function assertNever(arg0) {
   const error = new Error("Unhandled value: " + arg0);
   throw error;
-};
-export const isNotNullish = function isNotNullish(channel) {
+}
+export function isNotNullish(channel) {
   return null != channel;
-};
-export const isIn = function isIn(arg0, arr) {
+}
+export function isIn(arg0, arr) {
   return arr.includes(arg0);
-};
-export const isInSet = function isInSet(type, set) {
+}
+export function isInSet(type, set) {
   return set.has(type);
-};
-export const isObjectEntryNotNullish = function isObjectEntryNotNullish(arg0) {
+}
+export function isObjectEntryNotNullish(arg0) {
   return null != arg0[1];
-};
+}

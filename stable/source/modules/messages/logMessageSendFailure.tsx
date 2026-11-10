@@ -1,15 +1,15 @@
-// Module ID: 9701
-// Function ID: 9702
+// Module ID: 9782
+// Function ID: 9783
 // Name: logMessageSendFailure
-// Dependencies: [1087, 5743, 2]
+// Dependencies: [1072, 5760, 2]
 // Exports: getAttachmentMimeTypes, logMessageSendFailure
 
-// Module 9701 (logMessageSendFailure)
-import Constants from "Constants" /* 1087 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5743 */;
+// Module 9782 (logMessageSendFailure)
+import Constants from "Constants" /* 1072 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5760 */;
 import size from "module_2" /* 2 */;
 
-const f104503 = (mimeType) => {
+const f95613 = (mimeType) => {
   let str = mimeType.mimeType;
   if (str == null) {
     str = "unknown";
@@ -19,11 +19,11 @@ const f104503 = (mimeType) => {
 const AnalyticEvents = Constants.AnalyticEvents;
 const result = size.fileFinishedImporting("modules/messages/logMessageSendFailure.tsx");
 
-export const logMessageSendFailure = function logMessageSendFailure(fileItems) {
+export function logMessageSendFailure(fileItems) {
   let mapped;
   if (null != fileItems.fileItems) {
     fileItems = fileItems.fileItems;
-    mapped = fileItems.map(f104503);
+    mapped = fileItems.map(f95613);
   } else {
     mapped = [];
   }
@@ -31,7 +31,7 @@ export const logMessageSendFailure = function logMessageSendFailure(fileItems) {
   const failureCode = fileItems.failureCode;
   const obj = AppAnalyticsUtils;
   obj.trackWithMetadata(AnalyticEvents.SEND_MESSAGE_FAILURE, { failure_code: failureCode, error_message: errorMessage, attachment_mimetypes: mapped });
-};
-export const getAttachmentMimeTypes = function getAttachmentMimeTypes(items) {
-  return items.map(f104503);
-};
+}
+export function getAttachmentMimeTypes(items) {
+  return items.map(f95613);
+}

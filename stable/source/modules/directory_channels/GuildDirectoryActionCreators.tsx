@@ -1,18 +1,18 @@
-// Module ID: 13233
-// Function ID: 13234
+// Module ID: 13864
+// Function ID: 13865
 // Name: GuildDirectoryActionCreators
-// Dependencies: [5, 13220, 13222, 1087, 551, 584, 1297, 6708, 1275, 2]
+// Dependencies: [5, 13851, 13853, 1072, 551, 572, 1282, 6747, 1260, 2]
 // Exports: addDirectoryGuildEntry, clearDirectorySearch, fetchGuildEntriesForIds, removeDirectoryGuildEntry, selectDirectoryCategory, updateDirectoryEntry
 
-// Module 13233 (GuildDirectoryActionCreators)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1087 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1275 */;
-import HTTPUtils from "HTTPUtils" /* 1297 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6708 */;
-import GuildDirectoryConstants from "GuildDirectoryConstants" /* 13222 */;
+// Module 13864 (GuildDirectoryActionCreators)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import Constants from "Constants" /* 1072 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6747 */;
+import GuildDirectoryConstants from "GuildDirectoryConstants" /* 13853 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GuildDirectorySearchStore from "GuildDirectorySearchStore" /* 13220 */;
+import GuildDirectorySearchStore from "GuildDirectorySearchStore" /* 13851 */;
 import debounce_mod from "debounce" /* 551 */;
 import size from "module_2" /* 2 */;
 
@@ -42,13 +42,13 @@ let obj = function _addDirectoryGuildEntry() {
       const obj10 = { type: "GUILD_DIRECTORY_ENTRY_CREATE", channelId, entry: body.body };
       obj = closure_133_1(closure_133_2[5]);
       obj.dispatch(obj10);
-      await "IconComponent";
+      await "HermesInternal";
       body = tmp;
       UNCATEGORIZED = closure_3;
       if (closure_3 === undefined) {
         UNCATEGORIZED = constants.UNCATEGORIZED;
       }
-      return "Reflect";
+      return "flexDirection";
     })();
     iter.next();
     return iter;
@@ -75,13 +75,13 @@ obj = function _updateDirectoryEntry() {
       const obj8 = { type: "GUILD_DIRECTORY_ENTRY_UPDATE", channelId, entry: body.body };
       obj = closure_133_1(closure_133_2[5]);
       obj.dispatch(obj8);
-      await "IconComponent";
+      await "HermesInternal";
       body = tmp;
       UNCATEGORIZED = closure_3;
       if (closure_3 === undefined) {
         UNCATEGORIZED = constants.UNCATEGORIZED;
       }
-      return "Reflect";
+      return "flexDirection";
     })();
     iter.next();
     return iter;
@@ -104,7 +104,7 @@ obj = function _fetchGuildEntriesForIds() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -148,7 +148,7 @@ obj = function _fetchGuildEntriesForIds() {
               c5 = 0;
             }
             c7 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp13) {
           closure_4 = tmp13;
@@ -182,7 +182,7 @@ _asyncToGenerator(async (channelId, category_id) => {
       } else if (arg0 === 2) {
         return { value, done: true };
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -230,7 +230,7 @@ _asyncToGenerator(async (channelId, category_id) => {
             c5 = 0;
           }
           c7 = 3;
-          return { value: "IconComponent", done: "+352" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp17) {
         closure_4 = tmp17;
@@ -262,7 +262,7 @@ _asyncToGenerator(async (channelId) => {
       } else if (arg0 === 2) {
         return { value, done: true };
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -304,7 +304,7 @@ _asyncToGenerator(async (channelId) => {
             c4 = 0;
           }
           c6 = 3;
-          return { value: "IconComponent", done: "+352" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp17) {
         closure_3 = tmp17;
@@ -338,7 +338,7 @@ let closure_0 = _asyncToGenerator(async (channelId, query) => {
       } else if (arg0 === 2) {
         return { value, done: true };
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -391,7 +391,7 @@ let closure_0 = _asyncToGenerator(async (channelId, query) => {
           c5 = 0;
         }
         c7 = 3;
-        return { value: "IconComponent", done: "+352" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp27) {
         if (0 === c5) {
           c7 = 3;
@@ -410,10 +410,10 @@ const result = size.fileFinishedImporting("modules/directory_channels/GuildDirec
 
 export const fetchDirectoryEntries = importDefaultResult1Result;
 export const fetchDirectoryCounts = importDefaultResult2Result;
-export const addDirectoryGuildEntry = function addDirectoryGuildEntry() {
+export function addDirectoryGuildEntry() {
   return obj(...arguments);
-};
-export const removeDirectoryGuildEntry = function removeDirectoryGuildEntry(channelId, guildId) {
+}
+export function removeDirectoryGuildEntry(channelId, guildId) {
   const tmp = TrackedHTTPUtilsDefault;
   const _delete = tmp.delete;
   obj = { url: Endpoints.DIRECTORY_CHANNEL_ENTRY(channelId, guildId), trackedActionData: { event: discord_common_AnalyticsUtils.NetworkActionNames.DIRECTORY_GUILD_ENTRY_DELETE, properties: { directory_channel_id: channelId, guild_id: guildId } }, rejectWithError: true };
@@ -422,21 +422,21 @@ export const removeDirectoryGuildEntry = function removeDirectoryGuildEntry(chan
   const obj3 = DispatcherDefault;
   const obj4 = { type: "GUILD_DIRECTORY_ENTRY_DELETE", channelId, guildId };
   obj3.dispatch(obj4);
-};
+}
 export const searchDirectoryEntries = importDefaultResult3Result;
-export const clearDirectorySearch = function clearDirectorySearch(id) {
+export function clearDirectorySearch(id) {
   obj = DispatcherDefault;
   const obj2 = { type: "GUILD_DIRECTORY_SEARCH_CLEAR", channelId: id };
   obj.dispatch(obj2);
-};
-export const updateDirectoryEntry = function updateDirectoryEntry() {
+}
+export function updateDirectoryEntry() {
   return obj(...arguments);
-};
-export const selectDirectoryCategory = function selectDirectoryCategory(id, value) {
+}
+export function selectDirectoryCategory(id, value) {
   obj = DispatcherDefault;
   const obj2 = { type: "GUILD_DIRECTORY_CATEGORY_SELECT", channelId: id, categoryId: value };
   obj.dispatch(obj2);
-};
-export const fetchGuildEntriesForIds = function fetchGuildEntriesForIds() {
+}
+export function fetchGuildEntriesForIds() {
   return obj(...arguments);
-};
+}

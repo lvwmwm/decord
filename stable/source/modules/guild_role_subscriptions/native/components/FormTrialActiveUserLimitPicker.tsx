@@ -1,14 +1,14 @@
-// Module ID: 19331
-// Function ID: 19332
+// Module ID: 19961
+// Function ID: 19962
 // Name: FormTrialActiveUserLimitPicker
-// Dependencies: [19, 21, 19332, 15178, 1128, 5242, 8957, 2002, 2]
+// Dependencies: [19, 21, 19962, 6975, 1113, 5258, 9002, 1994, 2]
 // Exports: default
 
-// Module 19331 (FormTrialActiveUserLimitPicker)
+// Module 19961 (FormTrialActiveUserLimitPicker)
 import Fragment from "Fragment" /* 21 */;
-import intl2 from "intl" /* 1128 */;
-import asyncRequire from "asyncRequire" /* 2002 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5242 */;
+import intl4 from "intl" /* 1113 */;
+import asyncRequire from "asyncRequire" /* 1994 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -19,6 +19,9 @@ const GuildRoleSubscriptionTrialActiveUserLimitSelect = "GuildRoleSubscriptionTr
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/components/FormTrialActiveUserLimitPicker.tsx");
 
 export default function FormTrialActiveUserLimitPicker(activeTrialUserlimit) {
+  let TrailingText;
+  let intl;
+  let intl2;
   let items;
   let stringResult;
   const str = activeTrialUserlimit.activeTrialUserlimit;
@@ -26,22 +29,18 @@ export default function FormTrialActiveUserLimitPicker(activeTrialUserlimit) {
   dependencyMap = undefined;
   let tmp = dependencyMap;
   const disabled = activeTrialUserlimit.disabled;
-  dependencyMap = onChange(19332)();
+  dependencyMap = onChange(19962)();
   let tmp2 = jsx;
-  const tmp3 = onChange(15178);
-  if (null == str) {
-    let intl = str(1128).intl;
-    stringResult = intl.string(str(1128).t.zHfL6o);
-  } else {
-    stringResult = str.toString();
-  }
   let obj = {
-    label: stringResult,
+    label: intl.string(str(1113).t["/JD9oe"]),
+    subLabel: intl2.string(str(1113).t.Cg5eBm),
+    trailing: tmp2(TrailingText, { text: stringResult }),
+    arrow: true,
     onPress: function handleSelectLimit() {
       let intl;
       const openLazy = ActionSheetActionCreatorsDefault.openLazy;
       let obj = {
-        title: intl.string(intl2.t["/JD9oe"]),
+        title: intl.string(intl4.t["/JD9oe"]),
         items,
         onItemSelect(arg0) {
           closure_1_1(arg0);
@@ -51,11 +50,21 @@ export default function FormTrialActiveUserLimitPicker(activeTrialUserlimit) {
         selectedItem: str,
         hasIcons: false
       };
-      const tmp2 = asyncRequire(8957, dependencyMap.paths);
-      intl = intl2.intl;
+      const tmp2 = asyncRequire(9002, dependencyMap.paths);
+      intl = intl4.intl;
       openLazy(tmp2, GuildRoleSubscriptionTrialActiveUserLimitSelect, obj);
     },
     disabled
   };
-  return tmp2(tmp3, obj);
+  const TableRow = str(6975).TableRow;
+  intl = str(1113).intl;
+  intl2 = str(1113).intl;
+  TrailingText = str(6975).TableRow.TrailingText;
+  if (null == str) {
+    const intl3 = tmp3(1113).intl;
+    stringResult = intl3.string(tmp3(1113).t.GiTC5a);
+  } else {
+    stringResult = str.toString();
+  }
+  return tmp2(TableRow, obj);
 };

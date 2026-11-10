@@ -1,11 +1,11 @@
-// Module ID: 7759
-// Function ID: 7760
+// Module ID: 7796
+// Function ID: 7797
 // Name: KvCacheVersion
-// Dependencies: [5, 499, 3, 4881, 2]
+// Dependencies: [5, 499, 3, 4892, 2]
 
-// Module 7759 (KvCacheVersion)
+// Module 7796 (KvCacheVersion)
 import LoggerDefault from "Logger" /* 3 */;
-import DatabaseDaosDefault from "DatabaseDaos" /* 4881 */;
+import DatabaseDaosDefault from "DatabaseDaos" /* 4892 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import KvCacheVersionConstants from "KvCacheVersionConstants" /* 499 */;
 import size from "module_2" /* 2 */;
@@ -52,7 +52,7 @@ class KvCacheVersion {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

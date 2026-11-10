@@ -1,10 +1,10 @@
-// Module ID: 18392
-// Function ID: 18393
+// Module ID: 18983
+// Function ID: 18984
 // Name: RestrictedMessagePreviewLayout
-// Dependencies: [1202, 2]
+// Dependencies: [1187, 2]
 
-// Module 18392 (RestrictedMessagePreviewLayout)
-import native from "native" /* 1202 */;
+// Module 18983 (RestrictedMessagePreviewLayout)
+import native from "native" /* 1187 */;
 import size from "module_2" /* 2 */;
 
 const tmp2 = native.AVATAR_SIZE_MAP[native.AvatarSizes.NORMAL];

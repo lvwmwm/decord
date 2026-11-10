@@ -1,19 +1,19 @@
-// Module ID: 9068
-// Function ID: 9069
+// Module ID: 9104
+// Function ID: 9105
 // Name: StartEventPlatformUtils
-// Dependencies: [5, 4855, 5746, 5034, 4861, 1087, 38, 7910, 7905, 6666, 1114, 2]
+// Dependencies: [5, 4863, 5764, 5045, 4869, 1072, 38, 7950, 7945, 6706, 1099, 2]
 // Exports: navigateToEvent, postStartActions
 
-// Module 9068 (StartEventPlatformUtils)
+// Module 9104 (StartEventPlatformUtils)
 import _modDef38 from "module_38" /* 38 */;
-import Constants from "Constants" /* 1087 */;
-import router_utils from "router_utils" /* 1114 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4861 */;
-import StageChannelModalActionCreatorsAll from "StageChannelModalActionCreators" /* 7910 */;
+import Constants from "Constants" /* 1072 */;
+import router_utils from "router_utils" /* 1099 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4869 */;
+import StageChannelModalActionCreatorsAll from "StageChannelModalActionCreators" /* 7950 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 4855 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5746 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5034 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5764 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5045 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5;
@@ -38,7 +38,7 @@ let obj = function _navigateToEvent() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -92,7 +92,7 @@ let obj = function _navigateToEvent() {
                 }
               }
               c5 = 3;
-              return { value: "IconComponent", done: "+352" };
+              return { value: "HermesInternal", done: null };
             }
           }
         } else if (1 === c4) {
@@ -147,9 +147,9 @@ let closure_8 = GuildScheduledEventsConstants.GuildScheduledEventEntityTypes;
 const Routes = Constants.Routes;
 const result = size.fileFinishedImporting("modules/guild_scheduled_events/StartEventPlatformUtils.native.tsx");
 
-export const navigateToEvent = function navigateToEvent() {
+export function navigateToEvent() {
   return obj(...arguments);
-};
-export const postStartActions = function postStartActions() {
+}
+export function postStartActions() {
   return Promise.resolve();
-};
+}

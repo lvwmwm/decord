@@ -1,12 +1,12 @@
-// Module ID: 2054
-// Function ID: 2055
+// Module ID: 2048
+// Function ID: 2049
 // Name: BillingInfoStore
-// Dependencies: [1087, 504, 584, 2]
+// Dependencies: [1072, 504, 572, 2]
 
-// Module 2054 (BillingInfoStore)
+// Module 2048 (BillingInfoStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1087 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 let c0, c2, c3, c4;

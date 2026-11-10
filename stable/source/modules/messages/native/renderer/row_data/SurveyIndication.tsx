@@ -1,18 +1,18 @@
-// Module ID: 14542
-// Function ID: 14543
+// Module ID: 15084
+// Function ID: 15085
 // Name: SurveyIndication
-// Dependencies: [6703, 1128, 8309, 5010, 14543, 14544, 2]
+// Dependencies: [6743, 1113, 8396, 5021, 15085, 15086, 2]
 // Exports: createSurveyIndication
 
-// Module 14542 (SurveyIndication)
-import intl2 from "intl" /* 1128 */;
-import PushNotificationConstants from "PushNotificationConstants" /* 6703 */;
+// Module 15084 (SurveyIndication)
+import intl2 from "intl" /* 1113 */;
+import PushNotificationConstants from "PushNotificationConstants" /* 6743 */;
 import size from "module_2" /* 2 */;
 
 const NotificationTypes = PushNotificationConstants.NotificationTypes;
 const result = size.fileFinishedImporting("modules/messages/native/renderer/row_data/SurveyIndication.tsx");
 
-export const createSurveyIndication = function createSurveyIndication(message, forcedTheme, pushFeedbackType) {
+export function createSurveyIndication(message, forcedTheme, pushFeedbackType) {
   let GwWhce;
   let getAssetUriForEmbed;
   let tmp2;
@@ -26,20 +26,20 @@ export const createSurveyIndication = function createSurveyIndication(message, f
     tmp2 = require;
     GwWhce = intl2.t["46+Iqc"];
   }
-  const intl = tmp2(1128).intl;
+  const intl = tmp2(1113).intl;
   const formatToParts = intl.formatToParts;
   const obj = { action: "bindUserSurvey", message, notificationType: TOP_MESSAGE_PUSH };
   if (TOP_MESSAGE_PUSH == null) {
     TOP_MESSAGE_PUSH = tmp.TOP_MESSAGE_PUSH;
   }
   const obj2 = { content: formatToParts(GwWhce, { handleMessage: obj }), feedbackIconUrl: getAssetUriForEmbed(tmp8Result) };
-  getAssetUriForEmbed = tmp2(8309).getAssetUriForEmbed;
-  tmp2(8309);
-  const tmp2Result2 = tmp2(5010);
+  getAssetUriForEmbed = tmp2(8396).getAssetUriForEmbed;
+  tmp2(8396);
+  const tmp2Result2 = tmp2(5021);
   if (tmp2Result2.isThemeDark(forcedTheme)) {
-    tmp8Result = tmp8(14543);
+    tmp8Result = tmp8(15085);
   } else {
-    tmp8Result = tmp8(14544);
+    tmp8Result = tmp8(15086);
   }
   return obj2;
-};
+}

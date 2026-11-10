@@ -1,57 +1,18 @@
-// Module ID: 11152
-// Function ID: 11153
+// Module ID: 11455
+// Function ID: 11456
 // Name: BadgeDirectoryUpdatesExperiment
-// Dependencies: [1455, 558, 576, 2]
+// Dependencies: [1447, 2]
+// Exports: useIsBadgeDirectoryUpdatesEnabled
 
-// Module 11152 (BadgeDirectoryUpdatesExperiment)
-import react from "react" /* 576 */;
-import ApexExperiment from "ApexExperiment" /* 1455 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+// Module 11455 (BadgeDirectoryUpdatesExperiment)
+import ApexExperiment from "ApexExperiment" /* 1447 */;
 import size from "module_2" /* 2 */;
 
-let obj = { name: "2026-10-badge-directory-updates", kind: "user", defaultConfig: { enabled: false, swipeBetweenBadges: false }, variations: { 0: { enabled: false, swipeBetweenBadges: false }, 1: { enabled: true, swipeBetweenBadges: false }, 2: { enabled: true, swipeBetweenBadges: true } } };
-let closure_2 = ApexExperiment.createApexExperiment(obj);
-let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsBadgeDirectoryUpdatesEnabled(location) {
-  let tmp2;
-  const obj = react;
-  const cResult = obj.c(2);
-  const _location = location.location;
-  if (cResult[0] !== _location) {
-    const obj2 = { location: _location };
-    cResult[0] = _location;
-    cResult[1] = obj2;
-    tmp2 = obj2;
-  } else {
-    tmp2 = cResult[1];
-  }
-  return closure_2.useConfig(tmp2).enabled;
-}) : (function useIsBadgeDirectoryUpdatesEnabled(location) {
-  const obj = { location: location.location };
-  return closure_2.useConfig(obj).enabled;
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsBadgeDetailsSwipeEnabled(location) {
-  let tmp2;
-  const obj = react;
-  const cResult = obj.c(2);
-  const _location = location.location;
-  if (cResult[0] !== _location) {
-    const obj2 = { location: _location };
-    cResult[0] = _location;
-    cResult[1] = obj2;
-    tmp2 = obj2;
-  } else {
-    tmp2 = cResult[1];
-  }
-  const config = closure_2.useConfig(tmp2);
-  return config.enabled && config.swipeBetweenBadges;
-}) : (function useIsBadgeDetailsSwipeEnabled(location) {
-  const obj = { location: location.location };
-  const config = closure_2.useConfig(obj);
-  return config.enabled && config.swipeBetweenBadges;
-});
+let obj = { name: "2026-10-badge-directory-updates", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } };
+let closure_0 = ApexExperiment.createApexExperiment(obj);
 const result = size.fileFinishedImporting("modules/badges/BadgeDirectoryUpdatesExperiment.tsx");
 
-export const useIsBadgeDirectoryUpdatesEnabled = tmp2;
-export const useIsBadgeDetailsSwipeEnabled = tmp3;
+export function useIsBadgeDirectoryUpdatesEnabled(location) {
+  const obj = { location: location.location };
+  return closure_0.useConfig(obj).enabled;
+}

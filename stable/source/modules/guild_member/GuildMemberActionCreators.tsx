@@ -1,21 +1,21 @@
-// Module ID: 7248
-// Function ID: 7249
+// Module ID: 7289
+// Function ID: 7290
 // Name: GuildMemberActionCreators
-// Dependencies: [4908, 1087, 6886, 584, 1297, 2]
+// Dependencies: [4919, 1072, 6927, 572, 1282, 2]
 // Exports: updateGuildSelfMember
 
-// Module 7248 (GuildMemberActionCreators)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1087 */;
-import HTTPUtils from "HTTPUtils" /* 1297 */;
-import ImpersonateActionCreators from "ImpersonateActionCreators" /* 6886 */;
-import ImpersonateStore from "ImpersonateStore" /* 4908 */;
+// Module 7289 (GuildMemberActionCreators)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import Constants from "Constants" /* 1072 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
+import ImpersonateActionCreators from "ImpersonateActionCreators" /* 6927 */;
+import ImpersonateStore from "ImpersonateStore" /* 4919 */;
 import size from "module_2" /* 2 */;
 
 const Endpoints = Constants.Endpoints;
 let result = size.fileFinishedImporting("modules/guild_member/GuildMemberActionCreators.tsx");
 
-export const updateGuildSelfMember = function updateGuildSelfMember(guildId, memberOptions) {
+export function updateGuildSelfMember(guildId, memberOptions) {
   let flag = arg2;
   if (arg2 === undefined) {
     flag = false;
@@ -34,4 +34,4 @@ export const updateGuildSelfMember = function updateGuildSelfMember(guildId, mem
     const patch = HTTP.patch;
     return patch(request);
   }
-};
+}

@@ -1,31 +1,31 @@
-// Module ID: 16896
-// Function ID: 16897
+// Module ID: 17494
+// Function ID: 17495
 // Name: FriendOnlineNotificationUtils
-// Dependencies: [4948, 1087, 4831, 1267, 2]
+// Dependencies: [4959, 1072, 4839, 1252, 2]
 // Exports: onFriendOnlineNotificationSettingsChanged, onNotifyFriendsOnComeOnlineSettingsChanged
 
-// Module 16896 (FriendOnlineNotificationUtils)
-import Constants from "Constants" /* 1087 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import UserSettings from "UserSettings" /* 4831 */;
-import NotificationConstants from "NotificationConstants" /* 4948 */;
+// Module 17494 (FriendOnlineNotificationUtils)
+import Constants from "Constants" /* 1072 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import UserSettings from "UserSettings" /* 4839 */;
+import NotificationConstants from "NotificationConstants" /* 4959 */;
 import size from "module_2" /* 2 */;
 
 const constants = NotificationConstants.NotificationSettingsUpdateType;
 const AnalyticEvents = Constants.AnalyticEvents;
 const result = size.fileFinishedImporting("modules/notifications/friend_online/FriendOnlineNotificationUtils.tsx");
 
-export const onFriendOnlineNotificationSettingsChanged = function onFriendOnlineNotificationSettingsChanged(friend_online_notifications) {
+export function onFriendOnlineNotificationSettingsChanged(friend_online_notifications) {
   const EnableFriendOnlineNotifications = UserSettings.EnableFriendOnlineNotifications;
   EnableFriendOnlineNotifications.updateSetting(friend_online_notifications);
   const obj = AnalyticsUtilsDefault;
   const obj2 = { update_type: constants.ACCOUNT, friend_online_notifications };
   obj.track(AnalyticEvents.NOTIFICATION_SETTINGS_UPDATED, obj2);
-};
-export const onNotifyFriendsOnComeOnlineSettingsChanged = function onNotifyFriendsOnComeOnlineSettingsChanged(notify_friends_on_come_online) {
+}
+export function onNotifyFriendsOnComeOnlineSettingsChanged(notify_friends_on_come_online) {
   const NotifyFriendsOnComeOnline = UserSettings.NotifyFriendsOnComeOnline;
   NotifyFriendsOnComeOnline.updateSetting(notify_friends_on_come_online);
   const obj = AnalyticsUtilsDefault;
   const obj2 = { update_type: constants.ACCOUNT, notify_friends_on_come_online };
   obj.track(AnalyticEvents.NOTIFICATION_SETTINGS_UPDATED, obj2);
-};
+}

@@ -1,16 +1,16 @@
-// Module ID: 2057
-// Function ID: 2058
+// Module ID: 2051
+// Function ID: 2052
 // Name: SubscriptionPlanStore
-// Dependencies: [2051, 1087, 1394, 2041, 504, 11, 584, 2]
+// Dependencies: [2044, 1072, 1385, 2034, 504, 11, 572, 2]
 
-// Module 2057 (SubscriptionPlanStore)
+// Module 2051 (SubscriptionPlanStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import FunctionUtils from "FunctionUtils" /* 2041 */;
-import SubscriptionPlanRecord from "SubscriptionPlanRecord" /* 2051 */;
-import Constants from "Constants" /* 1087 */;
-import PremiumConstants from "PremiumConstants" /* 1394 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import FunctionUtils from "FunctionUtils" /* 2034 */;
+import SubscriptionPlanRecord from "SubscriptionPlanRecord" /* 2044 */;
+import Constants from "Constants" /* 1072 */;
+import PremiumConstants from "PremiumConstants" /* 1385 */;
 import size from "module_2" /* 2 */;
 
 let set2, set3;
@@ -21,7 +21,7 @@ let c9;
 let closure_4;
 let hasOwnProperty;
 let metroImportAll;
-const f90626 = (id) => {
+const f83358 = (id) => {
   const obj = { id: id.id, name: id.name, interval: id.interval, interval_count: id.intervalCount, tax_inclusive: true, sku_id: id.skuId, currency: constants.USD, price: 0, price_tier: 0 };
   addSubscriptionPlan(SubscriptionPlanRecord.createFromServer(obj));
 };
@@ -81,7 +81,7 @@ function reset() {
   const obj4 = FunctionUtils;
   obj4.clearObject(closure_15);
   const items = [SubscriptionPlanInfo[SubscriptionPlans.NONE_MONTH], SubscriptionPlanInfo[SubscriptionPlans.NONE_YEAR], SubscriptionPlanInfo[SubscriptionPlans.NONE_3_MONTH], SubscriptionPlanInfo[SubscriptionPlans.NONE_6_MONTH]];
-  const item = items.forEach(f90626);
+  const item = items.forEach(f83358);
 }
 ({ CurrencyCodes: closure_4, PriceSetAssignmentPurchaseTypes: hasOwnProperty } = Constants);
 ({ SubscriptionIntervalTypes, SubscriptionPlanInfo } = PremiumConstants);
@@ -91,10 +91,10 @@ const authStore = {};
 const unpackModuleId = {};
 let set = new Set();
 let set1 = new Set();
-const syncedClientThemes = {};
+const authStore3 = {};
 let closure_15 = {};
 let items = [SubscriptionPlanInfo[SubscriptionPlans.NONE_MONTH], SubscriptionPlanInfo[SubscriptionPlans.NONE_YEAR], SubscriptionPlanInfo[SubscriptionPlans.NONE_3_MONTH], SubscriptionPlanInfo[SubscriptionPlans.NONE_6_MONTH]];
-let item = items.forEach(f90626);
+let item = items.forEach(f83358);
 let items1 = [, , ];
 ({ DAY: arr2[0], MONTH: arr2[1], YEAR: arr2[2] } = SubscriptionIntervalTypes);
 const Store = get_initializedDefault.Store;

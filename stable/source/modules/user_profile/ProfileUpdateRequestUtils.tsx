@@ -1,18 +1,18 @@
-// Module ID: 11217
-// Function ID: 11218
+// Module ID: 11516
+// Function ID: 11517
 // Name: ProfileUpdateRequestUtils
-// Dependencies: [7118, 11218, 1995, 2]
+// Dependencies: [7160, 11517, 1987, 2]
 // Exports: getAccountUpdateForUpdateRequest, getGuildMemberChangesForUpdateRequest, getPrimaryGuildChangesForUpdateRequest, getProfileChangesForUpdateRequest
 
-// Module 11217 (ProfileUpdateRequestUtils)
-import CollectiblesItemType from "CollectiblesItemType" /* 1995 */;
-import ProfilePendingImageTypes from "ProfilePendingImageTypes" /* 7118 */;
-import getCurrentUserProfileDefault from "getCurrentUserProfile" /* 11218 */;
+// Module 11516 (ProfileUpdateRequestUtils)
+import CollectiblesItemType from "CollectiblesItemType" /* 1987 */;
+import ProfilePendingImageTypes from "ProfilePendingImageTypes" /* 7160 */;
+import getCurrentUserProfileDefault from "getCurrentUserProfile" /* 11517 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/user_profile/ProfileUpdateRequestUtils.tsx");
 
-export const getProfileChangesForUpdateRequest = function getProfileChangesForUpdateRequest(pendingBanner, id) {
+export function getProfileChangesForUpdateRequest(pendingBanner, id) {
   let arr3;
   let pendingProfileEffect;
   let pendingProfileFrame;
@@ -87,8 +87,8 @@ export const getProfileChangesForUpdateRequest = function getProfileChangesForUp
     }
   }
   obj2 = { collectibles_sku_ids: arr5.map((skuId) => skuId.skuId) };
-};
-export const getAccountUpdateForUpdateRequest = function getAccountUpdateForUpdateRequest(pendingGlobalName) {
+}
+export function getAccountUpdateForUpdateRequest(pendingGlobalName) {
   const obj = {};
   if (undefined !== pendingGlobalName.pendingGlobalName) {
     obj.globalName = pendingGlobalName.pendingGlobalName;
@@ -116,8 +116,8 @@ export const getAccountUpdateForUpdateRequest = function getAccountUpdateForUpda
     obj.typingIndicatorStyle = pendingGlobalName.pendingCustomTypingIndicatorStyle;
   }
   return obj;
-};
-export const getGuildMemberChangesForUpdateRequest = function getGuildMemberChangesForUpdateRequest(pendingAvatar) {
+}
+export function getGuildMemberChangesForUpdateRequest(pendingAvatar) {
   const obj = {};
   if (undefined !== pendingAvatar.pendingAvatar) {
     pendingAvatar = pendingAvatar.pendingAvatar;
@@ -146,11 +146,11 @@ export const getGuildMemberChangesForUpdateRequest = function getGuildMemberChan
     obj.displayNameStyles = pendingAvatar.pendingDisplayNameStyles;
   }
   return obj;
-};
-export const getPrimaryGuildChangesForUpdateRequest = function getPrimaryGuildChangesForUpdateRequest(pendingPrimaryGuildId) {
+}
+export function getPrimaryGuildChangesForUpdateRequest(pendingPrimaryGuildId) {
   const obj = {};
   if (undefined !== pendingPrimaryGuildId.pendingPrimaryGuildId) {
     obj.primaryGuildId = pendingPrimaryGuildId.pendingPrimaryGuildId;
   }
   return obj;
-};
+}

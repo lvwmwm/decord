@@ -1,17 +1,17 @@
-// Module ID: 9699
-// Function ID: 9700
+// Module ID: 9780
+// Function ID: 9781
 // Name: handleUploadAttachmentErrors
-// Dependencies: [1087, 8182, 9700, 8198, 5940, 1128, 14084, 2]
+// Dependencies: [1072, 8216, 9781, 8231, 5958, 1113, 14609, 2]
 // Exports: handleUploadMessageAttachmentsErrors
 
-// Module 9699 (handleUploadAttachmentErrors)
-import intl7 from "intl" /* 1128 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5940 */;
-import FileUtils from "FileUtils" /* 8182 */;
-import UploadLimits from "UploadLimits" /* 8198 */;
-import showUploadFileSizeErrorDefault from "showUploadFileSizeError" /* 9700 */;
-import getAttachmentUploadAbortAlert from "getAttachmentUploadAbortAlert" /* 14084 */;
-import Constants from "Constants" /* 1087 */;
+// Module 9780 (handleUploadAttachmentErrors)
+import intl7 from "intl" /* 1113 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5958 */;
+import FileUtils from "FileUtils" /* 8216 */;
+import UploadLimits from "UploadLimits" /* 8231 */;
+import showUploadFileSizeErrorDefault from "showUploadFileSizeError" /* 9781 */;
+import getAttachmentUploadAbortAlert from "getAttachmentUploadAbortAlert" /* 14609 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -19,7 +19,7 @@ let closure_4;
 ({ AbortCodes: c3, MAX_UPLOAD_COUNT: closure_4 } = Constants);
 const result = size.fileFinishedImporting("modules/media_uploads/handleUploadAttachmentErrors.native.tsx");
 
-export const handleUploadMessageAttachmentsErrors = function handleUploadMessageAttachmentsErrors(arg0) {
+export function handleUploadMessageAttachmentsErrors(arg0) {
   let code;
   let guildId;
   let intl;
@@ -83,4 +83,4 @@ export const handleUploadMessageAttachmentsErrors = function handleUploadMessage
     }
     return flag;
   }
-};
+}

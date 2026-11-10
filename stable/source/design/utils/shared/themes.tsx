@@ -1,20 +1,20 @@
-// Module ID: 5025
-// Function ID: 5026
+// Module ID: 5036
+// Function ID: 5037
 // Name: themes
-// Dependencies: [1098, 2]
+// Dependencies: [1083, 2]
 // Exports: isThemeDark, isThemeLight
 
-// Module 5025 (themes)
-import Constants from "Constants" /* 1098 */;
+// Module 5036 (themes)
+import Constants from "Constants" /* 1083 */;
 import size from "module_2" /* 2 */;
 
 const ThemeTypes = Constants.ThemeTypes;
 const result = size.fileFinishedImporting("design/utils/shared/themes.tsx");
 
-export const isThemeLight = function isThemeLight(arg0) {
+export function isThemeLight(arg0) {
   return arg0 === ThemeTypes.LIGHT;
-};
-export const isThemeDark = function isThemeDark(arg0) {
+}
+export function isThemeDark(arg0) {
   if (ThemeTypes.ASH !== arg0) {
     if (ThemeTypes.ONYX !== arg0) {
       if (ThemeTypes.DARK !== arg0) {
@@ -23,4 +23,4 @@ export const isThemeDark = function isThemeDark(arg0) {
     }
   }
   return true;
-};
+}

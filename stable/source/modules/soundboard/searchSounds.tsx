@@ -1,17 +1,17 @@
-// Module ID: 7483
-// Function ID: 7484
+// Module ID: 7524
+// Function ID: 7525
 // Name: searchSounds
-// Dependencies: [6757, 1087, 551, 1267, 4949, 6859, 7484, 2]
+// Dependencies: [6796, 1072, 551, 1252, 4960, 6899, 7525, 2]
 // Exports: searchSounds, trackSearchResultViewed, trackSearchStart
 
-// Module 7483 (searchSounds)
+// Module 7524 (searchSounds)
 import debounceDefault from "debounce" /* 551 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4949 */;
-import fuzzysearchDefault from "fuzzysearch" /* 6859 */;
-import SoundboardUtils from "SoundboardUtils" /* 7484 */;
-import EmojiStore from "EmojiStore" /* 6757 */;
-import Constants from "Constants" /* 1087 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4960 */;
+import fuzzysearchDefault from "fuzzysearch" /* 6899 */;
+import SoundboardUtils from "SoundboardUtils" /* 7525 */;
+import EmojiStore from "EmojiStore" /* 6796 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -33,7 +33,7 @@ let result = size.fileFinishedImporting("modules/soundboard/searchSounds.tsx");
 
 export { trackSearchStart };
 export { trackSearchResultViewed };
-export const searchSounds = function searchSounds(arg0, availableSounds, stateFromStores, channel, arg4) {
+export function searchSounds(arg0, availableSounds, stateFromStores, channel, arg4) {
   let closure_0 = arg0;
   let closure_1 = stateFromStores;
   let closure_2 = channel;
@@ -133,4 +133,4 @@ export const searchSounds = function searchSounds(arg0, availableSounds, stateFr
   }
   tmp2(sorted, arg4, id, arg0);
   return sorted;
-};
+}

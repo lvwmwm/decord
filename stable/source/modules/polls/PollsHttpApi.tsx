@@ -1,11 +1,11 @@
-// Module ID: 12267
-// Function ID: 12268
+// Module ID: 12554
+// Function ID: 12555
 // Name: PollsHttpApi
-// Dependencies: [5, 1087, 1297, 6406, 2]
+// Dependencies: [5, 1072, 1282, 6446, 2]
 // Exports: endPollEarly, submitPollVote
 
-// Module 12267 (PollsHttpApi)
-import Constants from "Constants" /* 1087 */;
+// Module 12554 (PollsHttpApi)
+import Constants from "Constants" /* 1072 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -28,7 +28,7 @@ let obj = function _submitPollVote() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c4;
@@ -51,7 +51,7 @@ let obj = function _submitPollVote() {
             ({ channelId: c0, messageId: c1, answerIds: c2 } = closure_0);
             c5 = 1;
             c6 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "flexDirection", done: true };
           }
         } else if (1 === c5) {
           if (arg0 === 1) {
@@ -89,7 +89,7 @@ let obj = function _submitPollVote() {
         } else {
           c4 = 0;
           c6 = 3;
-          return { value: "IconComponent", done: "+352" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp15) {
         closure_3 = tmp15;
@@ -119,7 +119,7 @@ obj = function _endPollEarly() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c4;
@@ -141,7 +141,7 @@ obj = function _endPollEarly() {
             ({ channelId: c0, messageId: c1 } = closure_0);
             c5 = 1;
             c6 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "flexDirection", done: true };
           }
         } else {
           let self;
@@ -182,7 +182,7 @@ obj = function _endPollEarly() {
           } else {
             c4 = 0;
             c6 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "HermesInternal", done: null };
           }
         }
       } catch (tmp22) {
@@ -201,9 +201,9 @@ obj = function _endPollEarly() {
 const Endpoints = Constants.Endpoints;
 const result = size.fileFinishedImporting("modules/polls/PollsHttpApi.tsx");
 
-export const submitPollVote = function submitPollVote() {
+export function submitPollVote() {
   return obj(...arguments);
-};
-export const endPollEarly = function endPollEarly() {
+}
+export function endPollEarly() {
   return obj(...arguments);
-};
+}

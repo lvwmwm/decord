@@ -1,14 +1,14 @@
-// Module ID: 8729
-// Function ID: 8730
+// Module ID: 8779
+// Function ID: 8780
 // Name: ProfileFrameLayerParser
-// Dependencies: [729, 8730, 8731, 8732, 2]
+// Dependencies: [717, 8780, 8781, 8782, 2]
 // Exports: compareLayerFiles, isPreviewFilename, parseLayerFilename
 
-// Module 8729 (ProfileFrameLayerParser)
-import ProfileFrameLayerOrder from "ProfileFrameLayerOrder" /* 8730 */;
-import ProfileFrameLayerType from "ProfileFrameLayerType" /* 8731 */;
-import ProfileFrameLayerAnchor from "ProfileFrameLayerAnchor" /* 8732 */;
-import _toArray from "_toArray" /* 729 */;
+// Module 8779 (ProfileFrameLayerParser)
+import ProfileFrameLayerOrder from "ProfileFrameLayerOrder" /* 8780 */;
+import ProfileFrameLayerType from "ProfileFrameLayerType" /* 8781 */;
+import ProfileFrameLayerAnchor from "ProfileFrameLayerAnchor" /* 8782 */;
+import _toArray from "_toArray" /* 717 */;
 import size from "module_2" /* 2 */;
 
 const preview = "preview";
@@ -34,7 +34,7 @@ export const RESPONSIVE_KEYWORD = "responsive";
 export const FOLDER_ORDER_MAP = obj;
 export const ParseErrorKind = obj2;
 export const PARSE_ERROR_LABELS = obj3;
-export const parseLayerFilename = function parseLayerFilename(filename) {
+export function parseLayerFilename(filename) {
   let obj10;
   let obj6;
   let tmp19;
@@ -101,14 +101,14 @@ export const parseLayerFilename = function parseLayerFilename(filename) {
     }
   }
   return { parsed: null, errorType: obj2.WRONG_PART_COUNT };
-};
-export const compareLayerFiles = function compareLayerFiles(index, index2) {
+}
+export function compareLayerFiles(index, index2) {
   let diff = closure_8[index.order] - closure_8[index2.order];
   if (0 === diff) {
     diff = index.index - index2.index;
   }
   return diff;
-};
-export const isPreviewFilename = function isPreviewFilename(str) {
+}
+export function isPreviewFilename(str) {
   return str.replace(/\.\w+$/, "") === preview;
-};
+}

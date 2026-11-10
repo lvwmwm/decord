@@ -1,17 +1,17 @@
-// Module ID: 9610
-// Function ID: 9611
+// Module ID: 9689
+// Function ID: 9690
 // Name: QuestDecisionRoundtripTracker
-// Dependencies: [7805, 5922, 1087, 6749, 7806, 7601, 1267, 7782, 7604, 2]
+// Dependencies: [7843, 5901, 1072, 6788, 7844, 7639, 1252, 7819, 7642, 2]
 
-// Module 9610 (QuestDecisionRoundtripTracker)
-import Constants from "Constants" /* 1087 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import AdCreativeType from "AdCreativeType" /* 6749 */;
-import NetStats from "NetStats" /* 7601 */;
-import getDeviceMetadataDefault from "getDeviceMetadata" /* 7782 */;
-import AdDecisionUtils from "AdDecisionUtils" /* 7806 */;
-import AdDeliveryStore from "AdDeliveryStore" /* 7805 */;
-import NetworkStore from "NetworkStore" /* 5922 */;
+// Module 9689 (QuestDecisionRoundtripTracker)
+import Constants from "Constants" /* 1072 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import AdCreativeType from "AdCreativeType" /* 6788 */;
+import NetStats from "NetStats" /* 7639 */;
+import getDeviceMetadataDefault from "getDeviceMetadata" /* 7819 */;
+import AdDecisionUtils from "AdDecisionUtils" /* 7844 */;
+import AdDeliveryStore from "AdDeliveryStore" /* 7843 */;
+import NetworkStore from "NetworkStore" /* 5901 */;
 import size from "module_2" /* 2 */;
 
 function trackRoundtrip(apiResponseTimestamp, transition_case, fetched_at) {
@@ -58,7 +58,7 @@ function trackRoundtrip(apiResponseTimestamp, transition_case, fetched_at) {
     if (fetchedAt == null) {
       fetchedAt = null;
     }
-    tmp2Result = tmp2(7604);
+    tmp2Result = tmp2(7642);
     track(QUEST_DECISION_ROUNDTRIP, obj3);
   }
 }
@@ -72,34 +72,45 @@ class QuestDecisionRoundtripTracker {
   }
   recordQuestRequestAttempt(endpoint, callerSource, arg2) {
     const self = this;
-    let closure_0 = endpoint;
     let tmp = arg2;
     if (arg2 === undefined) {
       tmp = null;
     }
-    let tmp2 = null;
+    const SymbolResult = Symbol();
+    let c0 = SymbolResult;
+    let tmp3 = null;
     if (null != tmp) {
       const deliveryAdDecisionByPlacement = AdDeliveryStore.deliveryAdDecisionByPlacement;
       let value = deliveryAdDecisionByPlacement.get(tmp);
       if (value == null) {
         value = null;
       }
-      tmp2 = value;
+      tmp3 = value;
     }
     let pendingRequests = this.pendingRequests;
-    const obj = { initialSendTimestamp: Date.now(), endpoint, apiResponseTimestamp: null, wasSuccessful: false, callerSource, adRequestId: null, previousAdDecision: tmp2, placement: tmp };
-    const result = pendingRequests.set(endpoint, obj);
-    const timerId = setTimeout(() => {
-      const pendingRequests = self.pendingRequests;
-      const value = pendingRequests.get(endpoint);
-      const tmp = self;
-      const tmp2 = endpoint;
-      if (null != value) {
-        trackRoundtrip(value, "timeout", null);
-        const pendingRequests2 = tmp.pendingRequests;
-        pendingRequests2.delete(tmp2);
-      }
-    }, 30000);
+    const obj = {
+      timeoutId: setTimeout(() => {
+        const pendingRequests = self.pendingRequests;
+        const value = pendingRequests.get(c0);
+        const tmp = self;
+        const tmp2 = c0;
+        if (null != value) {
+          const pendingRequests2 = tmp.pendingRequests;
+          pendingRequests2.delete(tmp2);
+          trackRoundtrip(value, "timeout", null);
+        }
+      }, 30000),
+      initialSendTimestamp: Date.now(),
+      endpoint,
+      apiResponseTimestamp: null,
+      wasSuccessful: false,
+      callerSource,
+      adRequestId: null,
+      previousAdDecision: tmp3,
+      placement: tmp
+    };
+    const result = pendingRequests.set(SymbolResult, obj);
+    return SymbolResult;
   }
   recordQuestRequestApiResponse(arg0, adRequestId) {
     let tmp5;
@@ -119,6 +130,10 @@ class QuestDecisionRoundtripTracker {
     const pendingRequests = this.pendingRequests;
     const value = pendingRequests.get(arg0);
     if (null != value) {
+      const _clearTimeout = clearTimeout;
+      clearTimeout(value.timeoutId);
+      const pendingRequests2 = this.pendingRequests;
+      pendingRequests2.delete(arg0);
       let tmp6 = null;
       if (null !== currentFetchedAt) {
         const obj = { creative: currentCreative, fetchedAt: currentFetchedAt, ttlMillis: 0, adDecisionData: tmp5 };
@@ -139,8 +154,11 @@ class QuestDecisionRoundtripTracker {
           if (AdCreativeType.AdCreativeType.QUEST !== type) {
             str4 = "bounty";
             if (AdCreativeType.AdCreativeType.BOUNTY !== type) {
-              if (AdCreativeType.AdCreativeType.QUEST_HOME_HERO === type) {
-                str4 = "quest_home_hero";
+              str4 = "playable";
+              if (AdCreativeType.AdCreativeType.PLAYABLE !== type) {
+                if (AdCreativeType.AdCreativeType.QUEST_HOME_HERO === type) {
+                  str4 = "quest_home_hero";
+                }
               }
             }
           }
@@ -157,8 +175,11 @@ class QuestDecisionRoundtripTracker {
           if (AdCreativeType.AdCreativeType.QUEST !== type2) {
             str7 = "bounty";
             if (AdCreativeType.AdCreativeType.BOUNTY !== type2) {
-              if (AdCreativeType.AdCreativeType.QUEST_HOME_HERO === type2) {
-                str7 = "quest_home_hero";
+              str7 = "playable";
+              if (AdCreativeType.AdCreativeType.PLAYABLE !== type2) {
+                if (AdCreativeType.AdCreativeType.QUEST_HOME_HERO === type2) {
+                  str7 = "quest_home_hero";
+                }
               }
             }
           }
@@ -179,7 +200,7 @@ class QuestDecisionRoundtripTracker {
             }
             const deliveredAdCreativeId = getDeliveredAdCreativeId(creative);
             let creative1;
-            const getDeliveredAdCreativeId2 = tmp13(7806).getDeliveredAdCreativeId;
+            const getDeliveredAdCreativeId2 = tmp12(7844).getDeliveredAdCreativeId;
             AdDecisionUtils;
             if (tmp6 != null) {
               creative1 = tmp6.creative;
@@ -197,8 +218,6 @@ class QuestDecisionRoundtripTracker {
           const merged = Object.assign(value);
           const _Date = Date;
           trackRoundtrip(obj3, combined1, currentFetchedAt);
-          const pendingRequests2 = this.pendingRequests;
-          pendingRequests2.delete(arg0);
         }
       }
       const _HermesInternal = HermesInternal;

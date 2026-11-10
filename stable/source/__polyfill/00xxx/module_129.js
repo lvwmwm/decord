@@ -68,7 +68,7 @@ let closure_4 = tmp2;
 module_126.setPlatformObject(tmp2);
 
 export default tmp2;
-export const createHTMLCollection = function createHTMLCollection(childNodes) {
+export function createHTMLCollection(childNodes) {
   const tmp = new closure_4(childNodes);
   return tmp;
-};
+}

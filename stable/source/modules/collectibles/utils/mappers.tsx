@@ -1,15 +1,15 @@
-// Module ID: 1988
-// Function ID: 1989
+// Module ID: 1980
+// Function ID: 1981
 // Name: mappers
 // Dependencies: [2]
 // Exports: parseServerUserCollectibles, parseSkuIdFromServerData
 
-// Module 1988 (mappers)
+// Module 1980 (mappers)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/collectibles/utils/mappers.tsx");
 
-export const parseSkuIdFromServerData = function parseSkuIdFromServerData(skuId) {
+export function parseSkuIdFromServerData(skuId) {
   if (typeof skuId.skuId !== "string") {
     let StringResult;
     if (typeof skuId.skuId !== "number") {
@@ -23,8 +23,8 @@ export const parseSkuIdFromServerData = function parseSkuIdFromServerData(skuId)
     return StringResult;
   }
   StringResult = String(skuId.skuId);
-};
-export const parseServerUserCollectibles = function parseServerUserCollectibles(collectibles) {
+}
+export function parseServerUserCollectibles(collectibles) {
   let tmp = null;
   if (typeof collectibles === "object") {
     tmp = null;
@@ -92,4 +92,4 @@ export const parseServerUserCollectibles = function parseServerUserCollectibles(
     }
   }
   return tmp;
-};
+}

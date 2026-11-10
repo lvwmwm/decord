@@ -1,12 +1,12 @@
-// Module ID: 7806
-// Function ID: 7807
+// Module ID: 7844
+// Function ID: 7845
 // Name: AdDecisionUtils
-// Dependencies: [1104, 6749, 2]
-// Exports: getDeliveredAdCreativeId, getDeliveredBounty, getDeliveredQuestId, questAdDecisionFromAdDecision, resolveResponseTtl
+// Dependencies: [1089, 6788, 2]
+// Exports: getDeliveredAdCreativeId, getDeliveredBounty, getDeliveredPlayable, getDeliveredQuestId, questAdDecisionFromAdDecision, resolveResponseTtl
 
-// Module 7806 (AdDecisionUtils)
-import DurationsDefault from "Durations" /* 1104 */;
-import AdCreativeType from "AdCreativeType" /* 6749 */;
+// Module 7844 (AdDecisionUtils)
+import DurationsDefault from "Durations" /* 1089 */;
+import AdCreativeType from "AdCreativeType" /* 6788 */;
 import size from "module_2" /* 2 */;
 
 const result = 6 * DurationsDefault.Millis.HOUR;
@@ -14,7 +14,7 @@ let c2 = result;
 const result1 = size.fileFinishedImporting("modules/ads/utils/AdDecisionUtils.tsx");
 
 export const MAX_RESPONSE_TTL_MS = result;
-export const getDeliveredAdCreativeId = function getDeliveredAdCreativeId(creative) {
+export function getDeliveredAdCreativeId(creative) {
   if (null == creative) {
     return null;
   } else {
@@ -23,12 +23,14 @@ export const getDeliveredAdCreativeId = function getDeliveredAdCreativeId(creati
       return creative.questId;
     } else if (AdCreativeType.AdCreativeType.BOUNTY === type) {
       return creative.bounty.id;
+    } else if (AdCreativeType.AdCreativeType.PLAYABLE === type) {
+      return creative.playable.id;
     } else if (AdCreativeType.AdCreativeType.QUEST_HOME_HERO === type) {
       return creative.questHomeHero.id;
     }
   }
-};
-export const getDeliveredQuestId = function getDeliveredQuestId(creative) {
+}
+export function getDeliveredQuestId(creative) {
   let type;
   if (creative != null) {
     type = creative.type;
@@ -38,8 +40,8 @@ export const getDeliveredQuestId = function getDeliveredQuestId(creative) {
     questId = creative.questId;
   }
   return questId;
-};
-export const getDeliveredBounty = function getDeliveredBounty(creative) {
+}
+export function getDeliveredBounty(creative) {
   let type;
   if (creative != null) {
     type = creative.type;
@@ -49,8 +51,19 @@ export const getDeliveredBounty = function getDeliveredBounty(creative) {
     bounty = creative.bounty;
   }
   return bounty;
-};
-export const resolveResponseTtl = function resolveResponseTtl(responseTtlSeconds) {
+}
+export function getDeliveredPlayable(creative) {
+  let type;
+  if (creative != null) {
+    type = creative.type;
+  }
+  let playable = null;
+  if (type === AdCreativeType.AdCreativeType.PLAYABLE) {
+    playable = creative.playable;
+  }
+  return playable;
+}
+export function resolveResponseTtl(responseTtlSeconds) {
   if (null == responseTtlSeconds) {
     return c2;
   } else {
@@ -64,8 +77,8 @@ export const resolveResponseTtl = function resolveResponseTtl(responseTtlSeconds
     }
     return tmp3;
   }
-};
-export const questAdDecisionFromAdDecision = function questAdDecisionFromAdDecision(response_ttl_seconds, creative) {
+}
+export function questAdDecisionFromAdDecision(response_ttl_seconds, creative) {
   let ad_set_id;
   let adset_id;
   let campaign_id;
@@ -121,4 +134,4 @@ export const questAdDecisionFromAdDecision = function questAdDecisionFromAdDecis
   }
   ({ ad_context: obj.adContext, metadata_sealed: obj.metadataSealed, traffic_metadata_sealed: obj.trafficMetadataSealed, provenance_metadata_sealed: obj.provenanceMetadataSealed } = response_ttl_seconds);
   return obj;
-};
+}

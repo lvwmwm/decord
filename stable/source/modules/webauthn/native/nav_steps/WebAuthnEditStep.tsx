@@ -1,20 +1,18 @@
-// Module ID: 16120
-// Function ID: 16121
+// Module ID: 16693
+// Function ID: 16694
 // Name: WebAuthnEditStep
-// Dependencies: [32, 19, 1087, 21, 5003, 587, 558, 576, 7122, 1505, 6709, 5695, 1128, 8983, 1202, 5276, 2]
+// Dependencies: [32, 19, 1072, 21, 5014, 575, 7164, 1497, 8177, 1113, 1187, 5634, 6748, 5712, 2]
+// Exports: default
 
-// Module 16120 (WebAuthnEditStep)
-import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1087 */;
-import WebAuthnActionCreators from "WebAuthnActionCreators" /* 6709 */;
+// Module 16693 (WebAuthnEditStep)
+import nativeDefault from "native" /* 575 */;
+import Constants from "Constants" /* 1072 */;
+import WebAuthnActionCreators from "WebAuthnActionCreators" /* 6748 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5003 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
-
-let navigation;
 
 let metroImportDefault;
 let metroRequire;
@@ -28,148 +26,9 @@ obj2 = { marginBottom: nativeDefault.space.PX_16 };
 createStyles = createStyles.createStyles;
 obj3 = { paddingHorizontal: nativeDefault.space.PX_16 };
 let closure_8 = createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function WebAuthnEditStep() {
-  let credential;
-  let form;
-  let inputField;
-  let items;
-  let tmp12;
-  let tmp7;
-  let value;
-  let tmp = credential;
-  let obj = credential(576);
-  const cResult = obj.c(21);
-  const obj2 = credential(7122);
-  credential = obj2.useSettingNavigationRoute().params.credential;
-  const tmp4 = closure_8();
-  const obj3 = credential(1505);
-  navigation = obj3.useNavigation();
-  [tmp7, dependencyMap] = value(react.useState(false), 2);
-  value(react.useState(false), 2);
-  const tmp8 = value(react.useState(""), 2);
-  value = tmp8[0];
-  const tmp10 = tmp8[1];
-  const tmp11 = value(react.useState(null), 2);
-  [tmp12, react] = tmp11;
-  if (cResult[0] === credential.id) {
-    if (cResult[1] === navigation) {
-      let tmp13;
-      let tmp15;
-      if (cResult[2] === value) {
-        tmp13 = cResult[3];
-      }
-      const _Symbol = Symbol;
-      ({ form, inputField } = tmp4);
-      if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-        let intl = tmp(1128).intl;
-        const stringResult = intl.string(tmp(1128).t["Jzd+z/"]);
-        cResult[4] = stringResult;
-        tmp15 = stringResult;
-      } else {
-        tmp15 = cResult[4];
-      }
-      if (cResult[5] === credential.name) {
-        if (cResult[6] === tmp12) {
-          if (cResult[7] === tmp7) {
-            if (cResult[8] === value) {
-              let tmp17;
-              let tmp20;
-              let tmp24;
-              if (cResult[9] === tmp4.inputField) {
-                tmp17 = cResult[10];
-              }
-              const _Symbol2 = Symbol;
-              if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-                const tmp22 = closure_6(tmp(8983).FormDivider, {});
-                cResult[11] = tmp22;
-                tmp20 = tmp22;
-              } else {
-                tmp20 = cResult[11];
-              }
-              const _Symbol3 = Symbol;
-              if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
-                const intl2 = tmp(1128).intl;
-                const stringResult1 = intl2.string(tmp(1128).t["7asiR3"]);
-                cResult[12] = stringResult1;
-                tmp24 = stringResult1;
-              } else {
-                tmp24 = cResult[12];
-              }
-              if (cResult[13] === tmp7) {
-                if (cResult[14] === tmp13) {
-                  let tmp26;
-                  if (cResult[15] === (tmp7 || "" === value)) {
-                    tmp26 = cResult[16];
-                  }
-                  if (cResult[17] === tmp4.form) {
-                    if (cResult[18] === tmp17) {
-                      let tmp29;
-                      if (cResult[19] === tmp26) {
-                        tmp29 = cResult[20];
-                      }
-                      return tmp29;
-                    }
-                  }
-                  const obj4 = { style: form, children: items };
-                  items = [tmp17, tmp20, tmp26];
-                  const tmp31 = closure_7(tmp(8983).Form, obj4);
-                  cResult[17] = tmp4.form;
-                  cResult[18] = tmp17;
-                  cResult[19] = tmp26;
-                  cResult[20] = tmp31;
-                  tmp29 = tmp31;
-                }
-              }
-              const obj5 = { onPress: tmp13, disabled: tmp7 || "" === value, loading: tmp7, size: "lg", text: tmp24, grow: true };
-              const tmp28 = closure_6(tmp(5276).Button, obj5);
-              cResult[13] = tmp7;
-              cResult[14] = tmp13;
-              cResult[15] = tmp7 || "" === value;
-              cResult[16] = tmp28;
-              tmp26 = tmp28;
-            }
-          }
-        }
-      }
-      const obj6 = { showTopContainer: false, value, onChange: tmp10, style: inputField, error: tmp12, title: tmp15, placeholder: credential.name, disabled: tmp7, clearButtonVisibility: tmp(1202).ClearButtonVisibility.WITH_CONTENT, autoFocus: true, showBorder: true, required: true, large: true };
-      const FormInput = tmp(8983).FormInput;
-      const tmp19 = closure_6(FormInput, obj6);
-      cResult[5] = credential.name;
-      cResult[6] = tmp12;
-      cResult[7] = tmp7;
-      cResult[8] = value;
-      cResult[9] = tmp4.inputField;
-      cResult[10] = tmp19;
-      tmp17 = tmp19;
-    }
-  }
-  function onPress() {
-    const tmp = dependencyMap(true);
-    react(null);
-    let obj = WebAuthnActionCreators;
-    const result = obj.editWebAuthnCredential(credential.id, first);
-    const nextPromise = result.then(() => {
-      let intl;
-      const obj = { text: intl.string(credential(dependencyMap[12]).t.IV13mH), variant: "success" };
-      const open = navigation(dependencyMap[11]).open;
-      navigation(dependencyMap[11]);
-      intl = credential(dependencyMap[12]).intl;
-      open("WEBAUTHN_CREDENTIAL_EDIT_SUCCESS_TOAST_KEY", obj);
-      closure_1_1.popTo(constants.WEBAUTHN_VIEW);
-    });
-    const catchPromise = nextPromise.catch((error) => {
-      closure_1_4(error.body.message);
-    });
-    catchPromise.finally(() => {
-      closure_1_2(false);
-    });
-  }
-  cResult[0] = credential.id;
-  cResult[1] = navigation;
-  cResult[2] = value;
-  cResult[3] = onPress;
-  tmp13 = onPress;
-}) : (function WebAuthnEditStep() {
+let result = size.fileFinishedImporting("modules/webauthn/native/nav_steps/WebAuthnEditStep.tsx");
+
+export default function WebAuthnEditStep() {
   let credential;
   let intl;
   let intl2;
@@ -179,10 +38,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function WebAuthnEdit
   let tmp5;
   let value;
   let tmp = credential;
-  let obj = credential(7122);
+  let obj = credential(7164);
   credential = obj.useSettingNavigationRoute().params.credential;
   const tmp3 = closure_8();
-  const obj2 = credential(1505);
+  const obj2 = credential(1497);
   let closure_1 = obj2.useNavigation();
   [tmp5, dependencyMap] = value(react.useState(false), 2);
   value(react.useState(false), 2);
@@ -192,11 +51,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function WebAuthnEdit
   const tmp9 = value(react.useState(null), 2);
   [tmp10, react] = tmp9;
   const obj3 = { style: tmp3.form, children: items };
-  const Form = credential(8983).Form;
-  const obj4 = { showTopContainer: false, value, onChange: tmp8, style: tmp3.inputField, error: tmp10, title: intl.string(credential(1128).t["Jzd+z/"]), placeholder: credential.name, disabled: tmp5, clearButtonVisibility: credential(1202).ClearButtonVisibility.WITH_CONTENT, autoFocus: true, showBorder: true, required: true, large: true };
-  const FormInput = credential(8983).FormInput;
-  intl = credential(1128).intl;
-  items = [closure_6(FormInput, obj4), closure_6(credential(8983).FormDivider, {}), ];
+  const Form = credential(8177).Form;
+  const obj4 = { showTopContainer: false, value, onChange: tmp8, style: tmp3.inputField, error: tmp10, title: intl.string(credential(1113).t["Jzd+z/"]), placeholder: credential.name, disabled: tmp5, clearButtonVisibility: credential(1187).ClearButtonVisibility.WITH_CONTENT, autoFocus: true, showBorder: true, required: true, large: true };
+  const FormInput = credential(8177).FormInput;
+  intl = credential(1113).intl;
+  items = [closure_6(FormInput, obj4), closure_6(credential(8177).FormDivider, {}), ];
   const obj5 = {
     onPress() {
       const tmp = dependencyMap(true);
@@ -205,10 +64,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function WebAuthnEdit
       const result = obj.editWebAuthnCredential(credential.id, first);
       const nextPromise = result.then(() => {
         let intl;
-        const obj = { text: intl.string(credential(dependencyMap[12]).t.IV13mH), variant: "success" };
-        const open = closure_1(dependencyMap[11]).open;
-        closure_1(dependencyMap[11]);
-        intl = credential(dependencyMap[12]).intl;
+        const obj = { text: intl.string(credential(dependencyMap[9]).t.IV13mH), variant: "success" };
+        const open = closure_1(dependencyMap[13]).open;
+        closure_1(dependencyMap[13]);
+        intl = credential(dependencyMap[9]).intl;
         open("WEBAUTHN_CREDENTIAL_EDIT_SUCCESS_TOAST_KEY", obj);
         closure_1_1.popTo(constants.WEBAUTHN_VIEW);
       });
@@ -222,20 +81,17 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function WebAuthnEdit
     disabled: tmp13,
     loading: tmp5,
     size: "lg",
-    text: intl2.string(tmp(1128).t["7asiR3"]),
+    text: intl2.string(tmp(1113).t["7asiR3"]),
     grow: true
   };
   tmp13 = tmp5;
-  const Button = credential(5276).Button;
+  const Button = credential(5634).Button;
   const tmp11 = closure_7;
   const tmp12 = closure_6;
   if (!tmp5) {
     tmp13 = "" === value;
   }
-  intl2 = tmp(1128).intl;
+  intl2 = tmp(1113).intl;
   items[2] = tmp12(Button, obj5);
   return tmp11(Form, obj3);
-});
-let result = size.fileFinishedImporting("modules/webauthn/native/nav_steps/WebAuthnEditStep.tsx");
-
-export default tmp4;
+};

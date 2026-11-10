@@ -1,17 +1,17 @@
-// Module ID: 10485
-// Function ID: 10486
+// Module ID: 10565
+// Function ID: 10566
 // Name: useGiftStyles
-// Dependencies: [1394, 2]
+// Dependencies: [1385, 2]
 // Exports: useGiftStyles
 
-// Module 10485 (useGiftStyles)
-import PremiumConstants from "PremiumConstants" /* 1394 */;
+// Module 10565 (useGiftStyles)
+import PremiumConstants from "PremiumConstants" /* 1385 */;
 import size from "module_2" /* 2 */;
 
 const PremiumGiftStyles = PremiumConstants.PremiumGiftStyles;
 const result = size.fileFinishedImporting("modules/premium/gifting/hooks/useGiftStyles.tsx");
 
-export const useGiftStyles = function useGiftStyles() {
+export function useGiftStyles() {
   const items = [PremiumGiftStyles.STANDARD_BOX];
   return items;
-};
+}

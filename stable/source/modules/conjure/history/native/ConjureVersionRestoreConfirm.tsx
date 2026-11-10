@@ -1,154 +1,23 @@
-// Module ID: 12306
-// Function ID: 12307
+// Module ID: 12190
+// Function ID: 12191
 // Name: ConjureVersionRestoreConfirm
-// Dependencies: [32, 19, 21, 558, 576, 1128, 3862, 7019, 6932, 5946, 5942, 2]
+// Dependencies: [32, 19, 21, 5964, 1113, 3868, 7060, 6974, 5960, 2]
 // Exports: confirmRestoreVersion
 
-// Module 12306 (ConjureVersionRestoreConfirm)
-import react2 from "react" /* 576 */;
-import _modDef3862 from "module_3862" /* 3862 */;
-import useAlertStore from "useAlertStore" /* 5942 */;
+// Module 12190 (ConjureVersionRestoreConfirm)
+import intl7 from "intl" /* 1113 */;
+import _modDef3868 from "module_3868" /* 3868 */;
+import useAlertStore from "useAlertStore" /* 5960 */;
+import AlertModal2 from "AlertModal" /* 5964 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
 let metroImportDefault;
 let metroRequire;
-let tmp;
-const intl7 = tmp(1128);
-const AlertModal2 = tmp(5946);
-const TableCheckboxRow2 = tmp(6932);
-const TableRowGroup2 = tmp(7019);
-({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: metroImportDefault } = Fragment);
-let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureVersionRestoreAlert(matchingBackup) {
-  let TableCheckboxRow;
-  let first;
-  let intl3;
-  let intl4;
-  let intl6;
-  let items;
-  let obj7;
-  let tmp6;
-  let tmp7;
-  let tmp8;
-  let tmp = require;
-  let tmp2 = dependencyMap;
-  const obj = react2;
-  const cResult = obj.c(16);
-  matchingBackup = matchingBackup.matchingBackup;
-  const onConfirm = matchingBackup.onConfirm;
-  [first, tmp6] = react.useState(false);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = intl7.intl;
-    const stringResult = intl.string(_modDef3862.NDY6Zv);
-    const intl2 = intl7.intl;
-    const stringResult1 = intl2.string(_modDef3862.z2x5zj);
-    cResult[0] = stringResult;
-    cResult[1] = stringResult1;
-    tmp7 = stringResult;
-    tmp8 = stringResult1;
-  } else {
-    [tmp7, tmp8] = cResult;
-  }
-  if (cResult[2] === first) {
-    let tmp12;
-    let tmp16;
-    if (cResult[3] === matchingBackup) {
-      tmp12 = cResult[4];
-    }
-    const _Symbol = Symbol;
-    if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl5 = intl7.intl;
-      const stringResult2 = intl5.string(_modDef3862.K3Q49G);
-      cResult[5] = stringResult2;
-      tmp16 = stringResult2;
-    } else {
-      tmp16 = cResult[5];
-    }
-    if (cResult[6] === first) {
-      if (cResult[7] === matchingBackup) {
-        let tmp19;
-        let tmp22;
-        let tmp25;
-        if (cResult[8] === onConfirm) {
-          tmp19 = cResult[9];
-        }
-        const _Symbol2 = Symbol;
-        if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-          const obj2 = { variant: "secondary", text: intl6.string(intl7.t["ETE/oC"]) };
-          const AlertActionButton = AlertModal2.AlertActionButton;
-          intl6 = intl7.intl;
-          const tmp24 = hasOwnProperty(AlertActionButton, obj2);
-          cResult[10] = tmp24;
-          tmp22 = tmp24;
-        } else {
-          tmp22 = cResult[10];
-        }
-        if (cResult[11] !== tmp19) {
-          const obj3 = { children: items };
-          items = [tmp19, tmp22];
-          const tmp28 = metroImportDefault(metroRequire, obj3);
-          cResult[11] = tmp19;
-          cResult[12] = tmp28;
-          tmp25 = tmp28;
-        } else {
-          tmp25 = cResult[12];
-        }
-        if (cResult[13] === tmp12) {
-          let tmp29;
-          if (cResult[14] === tmp25) {
-            tmp29 = cResult[15];
-          }
-          return tmp29;
-        }
-        const obj4 = { title: tmp7, content: tmp8, extraContent: tmp12, actions: tmp25 };
-        const tmp31 = hasOwnProperty(AlertModal2.AlertModal, obj4);
-        cResult[13] = tmp12;
-        cResult[14] = tmp25;
-        cResult[15] = tmp31;
-        tmp29 = tmp31;
-      }
-    }
-    const obj5 = {
-      variant: "primary",
-      text: tmp16,
-      onPress() {
-          let tmp2 = null;
-          const tmp = onConfirm;
-          if (first) {
-            tmp2 = null;
-            if (null != matchingBackup) {
-              tmp2 = matchingBackup;
-            }
-          }
-          return tmp(tmp2);
-        }
-    };
-    const tmp21 = hasOwnProperty(AlertModal2.AlertActionButton, obj5);
-    cResult[6] = first;
-    cResult[7] = matchingBackup;
-    cResult[8] = onConfirm;
-    cResult[9] = tmp21;
-    tmp19 = tmp21;
-  }
-  let tmp13;
-  if (null != matchingBackup) {
-    const obj6 = { hasIcons: false, children: hasOwnProperty(TableCheckboxRow, obj7) };
-    const TableRowGroup = TableRowGroup2.TableRowGroup;
-    obj7 = { label: intl3.string(_modDef3862["+/pFME"]), subLabel: intl4.string(_modDef3862["+I112y"]), checked: first, onPress: tmp6 };
-    TableCheckboxRow = TableCheckboxRow2.TableCheckboxRow;
-    intl3 = intl7.intl;
-    intl4 = intl7.intl;
-    tmp13 = hasOwnProperty(TableRowGroup, obj6);
-  }
-  cResult[2] = first;
-  cResult[3] = matchingBackup;
-  cResult[4] = tmp13;
-  tmp12 = tmp13;
-}) : (function ConjureVersionRestoreAlert(matchingBackup) {
+function ConjureVersionRestoreAlert(matchingBackup) {
   let TableCheckboxRow;
   let first;
   let intl;
@@ -166,24 +35,24 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjure
   const onConfirm = matchingBackup.onConfirm;
   first = undefined;
   [first, tmp3] = react.useState(false);
-  const obj = { title: intl.string(_modDef3862.NDY6Zv), content: intl2.string(_modDef3862.z2x5zj), extraContent: tmp4Result, actions: metroImportDefault(metroRequire, obj4) };
+  const obj = { title: intl.string(_modDef3868.NDY6Zv), content: intl2.string(_modDef3868.z2x5zj), extraContent: tmp4Result, actions: metroImportDefault(metroRequire, obj4) };
   const AlertModal = AlertModal2.AlertModal;
   intl = intl7.intl;
   intl2 = intl7.intl;
   tmp4Result = undefined;
   if (null != matchingBackup) {
     const obj2 = { hasIcons: false, children: hasOwnProperty(TableCheckboxRow, obj3) };
-    const TableRowGroup = tmp5(7019).TableRowGroup;
-    obj3 = { label: intl3.string(_modDef3862["+/pFME"]), subLabel: intl4.string(_modDef3862["+I112y"]), checked: first, onPress: tmp3 };
-    TableCheckboxRow = tmp5(6932).TableCheckboxRow;
-    intl3 = tmp5(1128).intl;
-    intl4 = tmp5(1128).intl;
+    const TableRowGroup = tmp5(7060).TableRowGroup;
+    obj3 = { label: intl3.string(_modDef3868["+/pFME"]), subLabel: intl4.string(_modDef3868["+I112y"]), checked: first, onPress: tmp3 };
+    TableCheckboxRow = tmp5(6974).TableCheckboxRow;
+    intl3 = tmp5(1113).intl;
+    intl4 = tmp5(1113).intl;
     tmp4Result = tmp4(TableRowGroup, obj2);
   }
   obj4 = { children: items };
   const obj5 = {
     variant: "primary",
-    text: intl5.string(_modDef3862.K3Q49G),
+    text: intl5.string(_modDef3868.K3Q49G),
     onPress() {
       let tmp2 = null;
       const tmp = onConfirm;
@@ -196,21 +65,22 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjure
       return tmp(tmp2);
     }
   };
-  const AlertActionButton = tmp5(5946).AlertActionButton;
-  intl5 = tmp5(1128).intl;
+  const AlertActionButton = tmp5(5964).AlertActionButton;
+  intl5 = tmp5(1113).intl;
   items = [hasOwnProperty(AlertActionButton, obj5), ];
   const obj6 = { variant: "secondary", text: intl6.string(intl7.t["ETE/oC"]) };
-  const AlertActionButton2 = tmp5(5946).AlertActionButton;
-  intl6 = tmp5(1128).intl;
+  const AlertActionButton2 = tmp5(5964).AlertActionButton;
+  intl6 = tmp5(1113).intl;
   items[1] = hasOwnProperty(AlertActionButton2, obj6);
   return hasOwnProperty(AlertModal, obj);
-});
+}
+({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: metroImportDefault } = Fragment);
 const result = size.fileFinishedImporting("modules/conjure/history/native/ConjureVersionRestoreConfirm.tsx");
 
-export const confirmRestoreVersion = function confirmRestoreVersion(arg0) {
+export function confirmRestoreVersion(arg0) {
   const openAlert = useAlertStore.openAlert;
   const obj = {};
   useAlertStore;
   const merged = Object.assign(arg0);
-  openAlert("ConjureVersionRestore", hasOwnProperty(closure_8, obj));
-};
+  openAlert("ConjureVersionRestore", hasOwnProperty(ConjureVersionRestoreAlert, obj));
+}

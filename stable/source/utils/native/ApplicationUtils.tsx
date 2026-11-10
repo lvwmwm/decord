@@ -1,19 +1,19 @@
-// Module ID: 10776
-// Function ID: 10777
+// Module ID: 10909
+// Function ID: 10910
 // Name: ApplicationUtils
-// Dependencies: [1087, 10777, 1267, 8892, 5692, 10778, 1099, 6704, 10781, 2002, 8859, 2]
+// Dependencies: [1072, 10910, 1252, 8940, 5709, 10911, 1084, 6744, 10905, 1994, 8910, 2]
 // Exports: installApplication, installPrivateChannelIntegration, openOAuth2Modal
 
-// Module 10776 (ApplicationUtils)
-import Constants from "Constants" /* 1087 */;
-import BigFlagUtilsAll from "BigFlagUtils" /* 1099 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import asyncRequire from "asyncRequire" /* 2002 */;
-import LinkingDefault from "Linking" /* 5692 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6704 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 8859 */;
-import Constants2 from "Constants" /* 10777 */;
-import authorizeCallbackDefault from "authorizeCallback" /* 10778 */;
+// Module 10909 (ApplicationUtils)
+import Constants from "Constants" /* 1072 */;
+import BigFlagUtilsAll from "BigFlagUtils" /* 1084 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import asyncRequire from "asyncRequire" /* 1994 */;
+import LinkingDefault from "Linking" /* 5709 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6744 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 8910 */;
+import Constants2 from "Constants" /* 10910 */;
+import authorizeCallbackDefault from "authorizeCallback" /* 10911 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -23,7 +23,7 @@ const AnalyticEvents = Constants.AnalyticEvents;
 let closure_5 = Constants2.OAUTH2_AUTHORIZE_MODAL_KEY;
 const result = size.fileFinishedImporting("utils/native/ApplicationUtils.tsx");
 
-export const installApplication = function installApplication(arg0) {
+export function installApplication(arg0) {
   let applicationId;
   let channelId;
   let customInstallUrl;
@@ -47,7 +47,7 @@ export const installApplication = function installApplication(arg0) {
           obj.openURL(customInstallUrl);
         }
     };
-    const obj11 = customInstallUrl(8892);
+    const obj11 = customInstallUrl(8940);
     return obj11.handleClick(obj2);
   } else {
     if (null != integrationTypesConfig) {
@@ -97,7 +97,7 @@ export const installApplication = function installApplication(arg0) {
                 }
         };
         ModalActionCreatorsDefault;
-        const tmp25 = customInstallUrl(2002)(10781, dependencyMap.paths);
+        const tmp25 = customInstallUrl(1994)(10905, dependencyMap.paths);
         const merged = Object.assign(obj5);
         pushLazy2(tmp25, obj6, closure_5);
       }
@@ -153,13 +153,13 @@ export const installApplication = function installApplication(arg0) {
             }
       };
       ModalActionCreatorsDefault;
-      const tmp12 = customInstallUrl(2002)(10781, tmp36.paths);
+      const tmp12 = customInstallUrl(1994)(10905, tmp36.paths);
       const merged1 = Object.assign(obj10);
       pushLazy(tmp12, obj12, closure_5);
     }
   }
-};
-export const openOAuth2Modal = function openOAuth2Modal(arg0) {
+}
+export function openOAuth2Modal(arg0) {
   let closure_0;
   _require = arg0;
   const obj = ModalActionCreatorsDefault;
@@ -176,11 +176,11 @@ export const openOAuth2Modal = function openOAuth2Modal(arg0) {
     }
   };
   ModalActionCreatorsDefault;
-  const tmp3 = require("asyncRequire")(10781, dependencyMap.paths);
+  const tmp3 = require("asyncRequire")(10905, dependencyMap.paths);
   const merged = Object.assign(arg0);
   pushLazy(tmp3, obj2, closure_5);
-};
-export const installPrivateChannelIntegration = function installPrivateChannelIntegration(arg0) {
+}
+export function installPrivateChannelIntegration(arg0) {
   let applicationId;
   let callback;
   let channelId;
@@ -200,7 +200,7 @@ export const installPrivateChannelIntegration = function installPrivateChannelIn
   };
   ModalActionCreatorsDefault;
   items = [];
-  const tmp2 = asyncRequire(10781, dependencyMap.paths);
+  const tmp2 = asyncRequire(10905, dependencyMap.paths);
   items[0] = OAuth2Scopes.OAuth2Scopes.APPLICATIONS_COMMANDS;
   pushLazy(tmp2, obj, closure_5);
-};
+}

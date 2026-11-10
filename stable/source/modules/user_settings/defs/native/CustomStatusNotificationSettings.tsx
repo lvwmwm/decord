@@ -1,19 +1,18 @@
-// Module ID: 16882
-// Function ID: 16883
+// Module ID: 17480
+// Function ID: 17481
 // Name: CustomStatusNotificationSettings
-// Dependencies: [8364, 1087, 4948, 4831, 1211, 1267, 558, 11240, 1128, 2]
+// Dependencies: [8432, 1072, 4959, 4839, 1196, 1252, 11540, 1113, 2]
 // Exports: onChange
 
-// Module 16882 (CustomStatusNotificationSettings)
-import Constants from "Constants" /* 1087 */;
-import intl2 from "intl" /* 1128 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1211 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import UserSettings from "UserSettings" /* 4831 */;
-import NotificationConstants from "NotificationConstants" /* 4948 */;
-import SettingsConstants from "SettingsConstants" /* 8364 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11240 */;
+// Module 17480 (CustomStatusNotificationSettings)
+import Constants from "Constants" /* 1072 */;
+import intl2 from "intl" /* 1113 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1196 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import UserSettings from "UserSettings" /* 4839 */;
+import NotificationConstants from "NotificationConstants" /* 4959 */;
+import SettingsConstants from "SettingsConstants" /* 8432 */;
+import SettingBuilders from "SettingBuilders" /* 11540 */;
 import size from "module_2" /* 2 */;
 
 function onChange(custom_status_push_notifications) {
@@ -28,8 +27,6 @@ function onChange(custom_status_push_notifications) {
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const AnalyticEvents = Constants.AnalyticEvents;
 const constants = NotificationConstants.NotificationSettingsUpdateType;
-let ReactCompilerGating = ReactCompilerGating_mod;
-ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
 let obj = {
   useTitle() {
     const intl = intl2.intl;
@@ -48,7 +45,7 @@ let obj = {
   onValueChange: onChange
 };
 const toggle = SettingBuilders.createToggle(obj);
-const result1 = size.fileFinishedImporting("modules/user_settings/defs/native/CustomStatusNotificationSettings.tsx");
+const result = size.fileFinishedImporting("modules/user_settings/defs/native/CustomStatusNotificationSettings.tsx");
 
 export default toggle;
 export { onChange };

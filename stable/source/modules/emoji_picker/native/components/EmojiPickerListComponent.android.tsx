@@ -1,28 +1,29 @@
-// Module ID: 9958
-// Function ID: 9959
+// Module ID: 10040
+// Function ID: 10041
 // Name: EmojiPickerListComponent
-// Dependencies: [19, 6757, 6760, 9860, 1243, 21, 5003, 5084, 9959, 5301, 1630, 558, 576, 4949, 7197, 9947, 2]
+// Dependencies: [19, 6796, 6799, 9942, 1228, 21, 5014, 5095, 10041, 5275, 1622, 4960, 7238, 10029, 2]
+// Exports: default
 
-// Module 9958 (EmojiPickerListComponent)
-import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1243 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4949 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 5084 */;
-import EmojiPickerConstants from "EmojiPickerConstants" /* 6760 */;
-import PortalToNativeViewDefault from "PortalToNativeView" /* 7197 */;
-import EmojiPickerListConstants from "EmojiPickerListConstants" /* 9860 */;
-import EmojiPickerPremiumSearchUpsell from "EmojiPickerPremiumSearchUpsell" /* 9947 */;
-import EmojiPickerNativeComponent2 from "EmojiPickerNativeComponent" /* 9959 */;
+// Module 10040 (EmojiPickerListComponent)
+import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1228 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4960 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 5095 */;
+import EmojiPickerConstants from "EmojiPickerConstants" /* 6799 */;
+import PortalToNativeViewDefault from "PortalToNativeView" /* 7238 */;
+import EmojiPickerListConstants from "EmojiPickerListConstants" /* 9942 */;
+import EmojiPickerPremiumSearchUpsell from "EmojiPickerPremiumSearchUpsell" /* 10029 */;
+import EmojiPickerNativeComponent2 from "EmojiPickerNativeComponent" /* 10041 */;
 import react from "react" /* 19 */;
-import EmojiStore from "EmojiStore" /* 6757 */;
+import EmojiStore from "EmojiStore" /* 6796 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5003 */;
-import BottomSheetModal from "BottomSheetModal" /* 5301 */;
-import MetaQuestUtils from "MetaQuestUtils" /* 1630 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5014 */;
+import BottomSheetModal from "BottomSheetModal" /* 5275 */;
+import MetaQuestUtils from "MetaQuestUtils" /* 1622 */;
 import size from "module_2" /* 2 */;
 
 const EmojiPickerNativeComponentDefault = EmojiPickerNativeComponent2;
 const ReanimatedRexport = ReanimatedRexport2;
+let emojiId;
 
 let c10;
 let c9;
@@ -34,298 +35,12 @@ const PADDING_VERTICAL = ExpressionPickerConstants.PADDING_VERTICAL;
 let closure_11 = createStyles.createStyles({ container: { flex: 1 } });
 const EmojiPickerNativeComponent = ReanimatedRexport.createAnimatedComponent(EmojiPickerNativeComponentDefault);
 let closure_12 = BottomSheetModal.createBottomSheetScrollableComponent(BottomSheetModal.SCROLLABLE_TYPE.SCROLLVIEW, EmojiPickerNativeComponent);
-const IS_META_QUEST = MetaQuestUtils.isMetaQuest();
+let closure_13 = MetaQuestUtils.isMetaQuest();
 const __initData = { code: "function EmojiPickerListComponentAndroidTsx1(){const{bottomSheetIndex}=this.__closure;return bottomSheetIndex.get();}" };
-const __initData2 = { code: "function EmojiPickerListComponentAndroidTsx2(index){const{inPortalKeyboard,IS_META_QUEST,runOnJS,scrollingEnabled}=this.__closure;if(!inPortalKeyboard||index<0||IS_META_QUEST){return;}if(index===0){runOnJS(scrollingEnabled)(false);}else{if(index===1){runOnJS(scrollingEnabled)(true);}}}" };
-const __initData3 = { code: "function EmojiPickerListComponentAndroidTsx3(){const{bottomSheetIndex}=this.__closure;return bottomSheetIndex.get();}" };
-const __initData4 = { code: "function EmojiPickerListComponentAndroidTsx4(index){const{inPortalKeyboard,IS_META_QUEST,runOnJS,scrollingEnabled}=this.__closure;if(!inPortalKeyboard||index<0||IS_META_QUEST){return;}if(index===0){runOnJS(scrollingEnabled)(false);}else if(index===1){runOnJS(scrollingEnabled)(true);}}" };
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiPickerListComponent(categoryIndexActive) {
-  let analyticsLocations;
-  let animateEmoji;
-  let bottomSheetIndex;
-  let data;
-  let guildId;
-  let onPressEmoji;
-  let paddingBottom;
-  let paddingTop;
-  let tmp6;
-  let tmp7;
-  let tmp = bottomSheetIndex;
-  const tmp2 = data;
-  let obj = bottomSheetIndex(data[12]);
-  const cResult = obj.c(38);
-  ({ analyticsLocations, bottomSheetIndex } = categoryIndexActive);
-  categoryIndexActive = categoryIndexActive.categoryIndexActive;
-  data = categoryIndexActive.data;
-  ({ animateEmoji, guildId } = categoryIndexActive);
-  const inPortalKeyboard = categoryIndexActive.inPortalKeyboard;
-  ({ paddingTop, paddingBottom, onPressEmoji } = categoryIndexActive);
-  const onLongPressEmoji = categoryIndexActive.onLongPressEmoji;
-  const onShowNitroUpsell = categoryIndexActive.onShowNitroUpsell;
-  const useTier0UpsellContent = categoryIndexActive.useTier0UpsellContent;
-  const ref = categoryIndexActive.ref;
-  const tmp4 = closure_11();
-  let obj2 = guildId;
-  const ref1 = guildId.useRef(null);
-  if (cResult[0] !== data.hasGuildData) {
-    const fn = function p() {
-      let hasGuildData = null != ref1.current;
-      const tmp = ref1;
-      if (hasGuildData) {
-        hasGuildData = data.hasGuildData;
-      }
-      if (hasGuildData) {
-        const Commands = EmojiPickerNativeComponent2.Commands;
-        Commands.refreshEmojis(tmp.current);
-      }
-    };
-    cResult[0] = data.hasGuildData;
-    cResult[1] = fn;
-    tmp6 = fn;
-  } else {
-    tmp6 = cResult[1];
-  }
-  if (cResult[2] !== data) {
-    const items = [ref1, data];
-    cResult[2] = data;
-    cResult[3] = items;
-    tmp7 = items;
-  } else {
-    tmp7 = cResult[3];
-  }
-  const effect = obj2.useEffect(tmp6, tmp7);
-  function scrollingEnabled(arg0) {
-    if (null != ref1.current) {
-      const Commands = EmojiPickerNativeComponent2.Commands;
-      Commands.scrollingEnabled(tmp.current, arg0);
-    }
-  }
-  const tmpResult = tmp(tmp2[7]);
-  class B {
-    constructor() {
-      return bottomSheetIndex.get();
-    }
-  }
-  B.__closure = { bottomSheetIndex };
-  B.__workletHash = 10656486632396;
-  B.__initData = __initData;
-  const fn2 = function w(arg0) {
-    let tmp = !inPortalKeyboard;
-    if (inPortalKeyboard) {
-      tmp = arg0 < 0;
-    }
-    if (!tmp) {
-      tmp = IS_META_QUEST;
-    }
-    if (!tmp) {
-      if (0 === arg0) {
-        const obj2 = ReanimatedRexport2;
-        obj2.runOnJS(scrollingEnabled)(false);
-      } else if (1 === arg0) {
-        const obj = ReanimatedRexport2;
-        obj.runOnJS(scrollingEnabled)(true);
-      }
-    }
-  };
-  fn2.__closure = { inPortalKeyboard, IS_META_QUEST, runOnJS: tmp(tmp2[7]).runOnJS, scrollingEnabled };
-  fn2.__workletHash = 11529436039893;
-  fn2.__initData = __initData2;
-  ({ inPortalKeyboard, IS_META_QUEST, runOnJS: tmp(tmp2[7]).runOnJS, scrollingEnabled });
-  const animatedReaction = tmpResult.useAnimatedReaction(B, fn2);
-  if (cResult[4] !== guildId) {
-    class K {
-      constructor(emojiId) {
-        let byId;
-        emojiId = emojiId.emojiId;
-        if (null != emojiId) {
-          const disambiguatedEmojiContext = EmojiStore.getDisambiguatedEmojiContext(guildId);
-          byId = disambiguatedEmojiContext.getById(emojiId);
-        } else {
-          const obj = UnicodeEmojisDefault;
-          byId = obj.getByName(tmp);
-        }
-        return byId;
-      }
-    }
-    cResult[4] = guildId;
-    cResult[5] = K;
-  } else {
-    class K {
-      constructor(emojiId) {
-        let byId;
-        emojiId = emojiId.emojiId;
-        if (null != emojiId) {
-          const disambiguatedEmojiContext = EmojiStore.getDisambiguatedEmojiContext(guildId);
-          byId = disambiguatedEmojiContext.getById(emojiId);
-        } else {
-          const obj = UnicodeEmojisDefault;
-          byId = obj.getByName(tmp);
-        }
-        return byId;
-      }
-    }
-  }
-  K = tmp10;
-  if (cResult[6] === tmp10) {
-    class K {
-      constructor(emojiId) {
-        let byId;
-        emojiId = emojiId.emojiId;
-        if (null != emojiId) {
-          const disambiguatedEmojiContext = EmojiStore.getDisambiguatedEmojiContext(guildId);
-          byId = disambiguatedEmojiContext.getById(emojiId);
-        } else {
-          const obj = UnicodeEmojisDefault;
-          byId = obj.getByName(tmp);
-        }
-        return byId;
-      }
-    }
-    if (cResult[9] === tmp10) {
-      let tmp13;
-      let tmp16;
-      class K {
-        constructor(emojiId) {
-          let byId;
-          emojiId = emojiId.emojiId;
-          if (null != emojiId) {
-            const disambiguatedEmojiContext = EmojiStore.getDisambiguatedEmojiContext(guildId);
-            byId = disambiguatedEmojiContext.getById(emojiId);
-          } else {
-            const obj = UnicodeEmojisDefault;
-            byId = obj.getByName(tmp);
-          }
-          return byId;
-        }
-      }
-      if (cResult[12] !== categoryIndexActive) {
-        class V {
-          constructor(nativeEvent) {
-            const result = categoryIndexActive.set(nativeEvent.nativeEvent.index);
-          }
-        }
-        class G {
-          constructor(nativeEvent) {
-            const tmp = K(nativeEvent.nativeEvent);
-            if (null != tmp) {
-              onLongPressEmoji(tmp);
-            }
-          }
-        }
-        cResult[13] = V;
-        tmp13 = V;
-      } else {
-        class V {
-          constructor(nativeEvent) {
-            const result = categoryIndexActive.set(nativeEvent.nativeEvent.index);
-          }
-        }
-      }
-      class G {
-        constructor(nativeEvent) {
-          const tmp = K(nativeEvent.nativeEvent);
-          if (null != tmp) {
-            onLongPressEmoji(tmp);
-          }
-        }
-      }
-      const _Symbol = Symbol;
-      if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
-        class V {
-          constructor(nativeEvent) {
-            const result = categoryIndexActive.set(nativeEvent.nativeEvent.index);
-          }
-        }
-        class G {
-          constructor(nativeEvent) {
-            const tmp = K(nativeEvent.nativeEvent);
-            if (null != tmp) {
-              onLongPressEmoji(tmp);
-            }
-          }
-        }
-        tmp16 = tmp17;
-      } else {
-        class V {
-          constructor(nativeEvent) {
-            const result = categoryIndexActive.set(nativeEvent.nativeEvent.index);
-          }
-        }
-      }
-      const imperativeHandle = obj2.useImperativeHandle(ref, tmp16);
-      if (cResult[17] !== animateEmoji) {
-        class V {
-          constructor(nativeEvent) {
-            const result = categoryIndexActive.set(nativeEvent.nativeEvent.index);
-          }
-        }
-        tmp20[0] = animateEmoji;
-        class G {
-          constructor(nativeEvent) {
-            const tmp = K(nativeEvent.nativeEvent);
-            if (null != tmp) {
-              onLongPressEmoji(tmp);
-            }
-          }
-        }
-        cResult[17] = animateEmoji;
-        cResult[18] = tmp20;
-      } else {
-        class V {
-          constructor(nativeEvent) {
-            const result = categoryIndexActive.set(nativeEvent.nativeEvent.index);
-          }
-        }
-      }
-      if (cResult[19] === tmp19) {
-        class V {
-          constructor(nativeEvent) {
-            const result = categoryIndexActive.set(nativeEvent.nativeEvent.index);
-          }
-        }
-      }
-      const obj4 = { config: tmp19, emojiData: data, emojiMargin: onShowNitroUpsell, emojiSize: onLongPressEmoji, onPressEmoji: tmp11, onLongPressEmoji: tmp12, onStickyHeaderRender: tmp13, onShowNitroUpsell: tmp14, paddingTop, paddingBottom, useTier0UpsellContent, ref: ref1, style: tmp4.container };
-      cResult[19] = tmp19;
-      cResult[20] = data;
-      cResult[21] = tmp12;
-      cResult[22] = tmp11;
-      cResult[23] = tmp14;
-      const tmp26 = ref1(closure_12, obj4);
-      class B {
-        constructor() {
-          return bottomSheetIndex.get();
-        }
-      }
-      cResult[25] = paddingBottom;
-      cResult[26] = paddingTop;
-      cResult[27] = tmp4.container;
-      cResult[28] = useTier0UpsellContent;
-      cResult[29] = tmp26;
-    }
-    class G {
-      constructor(nativeEvent) {
-        const tmp = K(nativeEvent.nativeEvent);
-        if (null != tmp) {
-          onLongPressEmoji(tmp);
-        }
-      }
-    }
-    cResult[9] = tmp10;
-    cResult[10] = onLongPressEmoji;
-    cResult[11] = G;
-  }
-  class Q {
-    constructor(nativeEvent) {
-      const tmp = K(nativeEvent.nativeEvent);
-      if (null != tmp) {
-        onPressEmoji(tmp);
-      }
-    }
-  }
-  cResult[6] = tmp10;
-  cResult[7] = onPressEmoji;
-  cResult[8] = Q;
-}) : (function EmojiPickerListComponent(analyticsLocations) {
+const __initData2 = { code: "function EmojiPickerListComponentAndroidTsx2(index){const{inPortalKeyboard,IS_META_QUEST,runOnJS,scrollingEnabled}=this.__closure;if(!inPortalKeyboard||index<0||IS_META_QUEST){return;}if(index===0){runOnJS(scrollingEnabled)(false);}else if(index===1){runOnJS(scrollingEnabled)(true);}}" };
+let result = size.fileFinishedImporting("modules/emoji_picker/native/components/EmojiPickerListComponent.android.tsx");
+
+export default function EmojiPickerListComponent(analyticsLocations) {
   let items8;
   let paddingBottom;
   let paddingTop;
@@ -365,22 +80,22 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiPickerL
     }
   }, []);
   let obj = analyticsLocations(categoryIndexActive[7]);
-  class J {
+  class H {
     constructor() {
       return bottomSheetIndex.get();
     }
   }
-  J.__closure = { bottomSheetIndex };
-  J.__workletHash = 5721747051790;
-  J.__initData = __initData3;
-  class H {
+  H.__closure = { bottomSheetIndex };
+  H.__workletHash = 10656486632396;
+  H.__initData = __initData;
+  class D {
     constructor(arg0) {
       let tmp = !inPortalKeyboard;
       if (inPortalKeyboard) {
         tmp = arg0 < 0;
       }
       if (!tmp) {
-        tmp = IS_META_QUEST;
+        tmp = closure_13;
       }
       if (!tmp) {
         if (0 === arg0) {
@@ -394,10 +109,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiPickerL
     }
   }
   let obj2 = { inPortalKeyboard, IS_META_QUEST: callback1, runOnJS: analyticsLocations(categoryIndexActive[7]).runOnJS, scrollingEnabled };
-  H.__closure = obj2;
-  H.__workletHash = 3717292116277;
-  H.__initData = __initData4;
-  const animatedReaction = obj.useAnimatedReaction(J, H);
+  D.__closure = obj2;
+  D.__workletHash = 2460528828147;
+  D.__initData = __initData2;
+  const animatedReaction = obj.useAnimatedReaction(H, D);
   const items1 = [guildId];
   callback1 = data.useCallback((emojiId) => {
     let byId;
@@ -473,7 +188,4 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiPickerL
     return tmp;
   }, items7);
   return useTier0UpsellContent(onShowNitroUpsell, obj4);
-});
-let result = size.fileFinishedImporting("modules/emoji_picker/native/components/EmojiPickerListComponent.android.tsx");
-
-export default tmp4;
+};

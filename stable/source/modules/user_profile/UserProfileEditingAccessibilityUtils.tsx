@@ -1,19 +1,19 @@
-// Module ID: 15983
-// Function ID: 15984
+// Module ID: 16544
+// Function ID: 16545
 // Name: UserProfileEditingAccessibilityUtils
-// Dependencies: [1128, 15903, 10696, 2928, 7118, 2]
+// Dependencies: [1113, 16472, 10775, 2932, 7160, 2]
 // Exports: getAvatarAccessibleValue, getBannerAccessibleValue, getDisplayNameStyleAccessibleValue
 
-// Module 15983 (UserProfileEditingAccessibilityUtils)
-import intl5 from "intl" /* 1128 */;
-import ProfilePendingImageTypes from "ProfilePendingImageTypes" /* 7118 */;
-import useDisplayNameStylesEffectConfigs from "useDisplayNameStylesEffectConfigs" /* 10696 */;
-import getDisplayNameStylesFontNameDefault from "getDisplayNameStylesFontName" /* 15903 */;
+// Module 16544 (UserProfileEditingAccessibilityUtils)
+import intl5 from "intl" /* 1113 */;
+import ProfilePendingImageTypes from "ProfilePendingImageTypes" /* 7160 */;
+import useDisplayNameStylesEffectConfigs from "useDisplayNameStylesEffectConfigs" /* 10775 */;
+import getDisplayNameStylesFontNameDefault from "getDisplayNameStylesFontName" /* 16472 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/user_profile/UserProfileEditingAccessibilityUtils.tsx");
 
-export const getDisplayNameStyleAccessibleValue = function getDisplayNameStyleAccessibleValue(displayNameStyles) {
+export function getDisplayNameStyleAccessibleValue(displayNameStyles) {
   if (null == displayNameStyles) {
     const intl2 = intl5.intl;
     return intl2.string(intl5.t["3Xph0/"]);
@@ -25,7 +25,7 @@ export const getDisplayNameStyleAccessibleValue = function getDisplayNameStyleAc
     let OpWJ3f = useDisplayNameStylesEffectConfigs.DISPLAY_NAME_STYLES_EFFECT_NAMES[displayNameStyles.effectId];
     const tmp7 = importDefault;
     if (OpWJ3f == null) {
-      OpWJ3f = tmp7(2928).OpWJ3f;
+      OpWJ3f = tmp7(2932).OpWJ3f;
     }
     const colors = displayNameStyles.colors;
     const stringResult1 = string(OpWJ3f);
@@ -35,12 +35,12 @@ export const getDisplayNameStyleAccessibleValue = function getDisplayNameStyleAc
     });
     let str = ", ";
     const joined = mapped.join(", ");
-    const intl = tmp5(1128).intl;
+    const intl = tmp5(1113).intl;
     const obj = { fontName: stringResult, effectName: stringResult1, colors: joined };
     return intl.formatToPlainString(intl5.t.Igwax6, obj);
   }
-};
-export const getBannerAccessibleValue = function getBannerAccessibleValue(bannerChange, currentProfileBanner) {
+}
+export function getBannerAccessibleValue(bannerChange, currentProfileBanner) {
   let description;
   if (null !== bannerChange) {
     if (undefined === bannerChange) {
@@ -55,8 +55,8 @@ export const getBannerAccessibleValue = function getBannerAccessibleValue(banner
   }
   const intl2 = intl5.intl;
   description = intl2.string(intl5.t["3Xph0/"]);
-};
-export const getAvatarAccessibleValue = function getAvatarAccessibleValue(avatarChange, avatar) {
+}
+export function getAvatarAccessibleValue(avatarChange, avatar) {
   let description;
   if (null !== avatarChange) {
     if (undefined === avatarChange) {
@@ -72,11 +72,11 @@ export const getAvatarAccessibleValue = function getAvatarAccessibleValue(avatar
         description = avatarChange.description;
       }
       if (description == null) {
-        const intl = tmp2(1128).intl;
-        description = intl.string(tmp2(1128).t.cqdtrR);
+        const intl = tmp2(1113).intl;
+        description = intl.string(tmp2(1113).t.cqdtrR);
       }
     }
   }
   const intl3 = intl5.intl;
   description = intl3.string(intl5.t["3Xph0/"]);
-};
+}

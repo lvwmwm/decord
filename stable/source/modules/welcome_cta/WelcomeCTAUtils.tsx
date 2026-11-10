@@ -1,23 +1,23 @@
-// Module ID: 8393
-// Function ID: 8394
+// Module ID: 8458
+// Function ID: 8459
 // Name: WelcomeCTAUtils
-// Dependencies: [1392, 8394, 1087, 11, 7598, 1267, 2]
+// Dependencies: [1383, 8459, 1072, 11, 7636, 1252, 2]
 // Exports: handleWelcomeCtaClicked, pickHelloSticker, pickWelcomeSticker
 
-// Module 8393 (WelcomeCTAUtils)
+// Module 8458 (WelcomeCTAUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import Constants from "Constants" /* 1087 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7598 */;
-import WelcomeCTAConstants from "WelcomeCTAConstants" /* 8394 */;
-import UserStore from "UserStore" /* 1392 */;
+import Constants from "Constants" /* 1072 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7636 */;
+import WelcomeCTAConstants from "WelcomeCTAConstants" /* 8459 */;
+import UserStore from "UserStore" /* 1383 */;
 import size from "module_2" /* 2 */;
 
 const WELCOME_STICKERS = WelcomeCTAConstants.WELCOME_STICKERS;
 const AnalyticEvents = Constants.AnalyticEvents;
 const result = size.fileFinishedImporting("modules/welcome_cta/WelcomeCTAUtils.tsx");
 
-export const pickHelloSticker = function pickHelloSticker() {
+export function pickHelloSticker() {
   const currentUser = UserStore.getCurrentUser();
   let id;
   if (currentUser != null) {
@@ -29,8 +29,8 @@ export const pickHelloSticker = function pickHelloSticker() {
     num = obj.extractTimestamp(id);
   }
   return WELCOME_STICKERS[num % WELCOME_STICKERS.length];
-};
-export const pickWelcomeSticker = function pickWelcomeSticker(id) {
+}
+export function pickWelcomeSticker(id) {
   const currentUser = UserStore.getCurrentUser();
   id = undefined;
   if (currentUser != null) {
@@ -43,8 +43,8 @@ export const pickWelcomeSticker = function pickWelcomeSticker(id) {
   }
   const obj2 = SnowflakeUtilsDefault;
   return WELCOME_STICKERS[(num + obj2.extractTimestamp(obj2, id)) % WELCOME_STICKERS.length];
-};
-export const handleWelcomeCtaClicked = function handleWelcomeCtaClicked(messageChannel, message, stickerId) {
+}
+export function handleWelcomeCtaClicked(messageChannel, message, stickerId) {
   let id1;
   const sendGreetMessage = MessageActionCreatorsDefault.sendGreetMessage;
   const id = messageChannel.id;
@@ -62,4 +62,4 @@ export const handleWelcomeCtaClicked = function handleWelcomeCtaClicked(messageC
     id1 = currentUser.id;
   }
   track(WELCOME_CTA_CLICKED, obj3);
-};
+}

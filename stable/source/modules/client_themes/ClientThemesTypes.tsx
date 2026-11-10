@@ -1,21 +1,21 @@
-// Module ID: 1256
-// Function ID: 1257
+// Module ID: 1241
+// Function ID: 1242
 // Name: ClientThemesTypes
-// Dependencies: [1210, 1257, 1211, 2, 5011]
+// Dependencies: [1195, 1242, 1196, 2, 5022]
 // Exports: getProtoThemeFromBaseTheme
 
-// Module 1256 (ClientThemesTypes)
-import ThemeConstants from "ThemeConstants" /* 1210 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1211 */;
-import SentryUtilsDefault from "SentryUtils" /* 1257 */;
-import design_shared from "design/shared" /* 5011 */;
+// Module 1241 (ClientThemesTypes)
+import ThemeConstants from "ThemeConstants" /* 1195 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1196 */;
+import SentryUtilsDefault from "SentryUtils" /* 1242 */;
+import design_shared from "design/shared" /* 5022 */;
 import size from "module_2" /* 2 */;
 
 let closure_3 = ThemeConstants.PROTO_THEME_MAP_WEB_REFRESH;
 const result = size.fileFinishedImporting("modules/client_themes/ClientThemesTypes.tsx");
 
 export const ClientThemeType = design_shared.ClientThemeType;
-export const getProtoThemeFromBaseTheme = function getProtoThemeFromBaseTheme(arg0) {
+export function getProtoThemeFromBaseTheme(arg0) {
   let UNSET;
   let closure_0 = arg0;
   const entries = Object.entries(closure_3);
@@ -39,4 +39,4 @@ export const getProtoThemeFromBaseTheme = function getProtoThemeFromBaseTheme(ar
     UNSET = parseInt(found[0]);
   }
   return UNSET;
-};
+}

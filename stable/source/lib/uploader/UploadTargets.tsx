@@ -1,17 +1,17 @@
-// Module ID: 8208
-// Function ID: 8209
+// Module ID: 8241
+// Function ID: 8242
 // Name: UploadTargets
-// Dependencies: [4855, 1087, 8198, 8182, 8178, 8209, 8211, 2]
+// Dependencies: [4863, 1072, 8231, 8216, 8212, 8242, 8244, 2]
 // Exports: getUploadTarget
 
-// Module 8208 (UploadTargets)
-import UploadUtils from "UploadUtils" /* 8178 */;
-import FileUtilsAll from "FileUtils" /* 8182 */;
-import UploadLimits from "UploadLimits" /* 8198 */;
-import GuildProductAttachmentUploadTargetDefault from "GuildProductAttachmentUploadTarget" /* 8209 */;
-import ICYMIAttachmentUploadTargetDefault from "ICYMIAttachmentUploadTarget" /* 8211 */;
-import ChannelStore from "ChannelStore" /* 4855 */;
-import Constants from "Constants" /* 1087 */;
+// Module 8241 (UploadTargets)
+import UploadUtils from "UploadUtils" /* 8212 */;
+import FileUtilsAll from "FileUtils" /* 8216 */;
+import UploadLimits from "UploadLimits" /* 8231 */;
+import GuildProductAttachmentUploadTargetDefault from "GuildProductAttachmentUploadTarget" /* 8242 */;
+import ICYMIAttachmentUploadTargetDefault from "ICYMIAttachmentUploadTarget" /* 8244 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -54,7 +54,7 @@ const UploadTargets = { MESSAGE_ATTACHMENT: 0, [0]: "MESSAGE_ATTACHMENT", GUILD_
 const result = size.fileFinishedImporting("lib/uploader/UploadTargets.tsx");
 
 export { UploadTargets };
-export const getUploadTarget = function getUploadTarget(target) {
+export function getUploadTarget(target) {
   if (obj.GUILD_PRODUCT_ATTACHMENT === target) {
     const self4 = this;
     const self5 = this;
@@ -74,4 +74,4 @@ export const getUploadTarget = function getUploadTarget(target) {
       throw new TypeError("Trying to call a non-function");
     }
   }
-};
+}

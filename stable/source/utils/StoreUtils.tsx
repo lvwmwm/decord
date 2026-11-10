@@ -1,23 +1,23 @@
-// Module ID: 6415
-// Function ID: 6416
+// Module ID: 6455
+// Function ID: 6456
 // Name: StoreUtils
-// Dependencies: [5, 502, 2054, 2055, 2058, 1087, 6416, 5934, 5853, 1452, 6495, 5754, 1297, 1384, 1128, 2]
+// Dependencies: [5, 502, 2048, 2049, 2052, 1072, 6456, 5952, 5871, 1444, 6535, 5772, 1282, 1375, 1113, 2]
 // Exports: getAssetURL, getPrimarySKUForApplication, httpGetWithCountryCodeQuery, nativePlatformTypeToSKUOperatingSystem, skuOperatingSystemToText
 
-// Module 6415 (StoreUtils)
-import intl4 from "intl" /* 1128 */;
-import PlatformUtils from "PlatformUtils" /* 1384 */;
-import ImageLoaderUtils from "ImageLoaderUtils" /* 1452 */;
-import BrowserUtils from "BrowserUtils" /* 5853 */;
-import shared_PlatformUtils from "shared/PlatformUtils" /* 5934 */;
-import actions_BillingActionCreators from "actions/BillingActionCreators" /* 6495 */;
+// Module 6455 (StoreUtils)
+import intl4 from "intl" /* 1113 */;
+import PlatformUtils from "PlatformUtils" /* 1375 */;
+import ImageLoaderUtils from "ImageLoaderUtils" /* 1444 */;
+import BrowserUtils from "BrowserUtils" /* 5871 */;
+import shared_PlatformUtils from "shared/PlatformUtils" /* 5952 */;
+import actions_BillingActionCreators from "actions/BillingActionCreators" /* 6535 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import BillingInfoStore from "BillingInfoStore" /* 2054 */;
-import PaymentSourceStore from "PaymentSourceStore" /* 2055 */;
-import SubscriptionStore from "SubscriptionStore" /* 2058 */;
-import Constants from "Constants" /* 1087 */;
-import allSettled_mod from "allSettled" /* 6416 */;
+import BillingInfoStore from "BillingInfoStore" /* 2048 */;
+import PaymentSourceStore from "PaymentSourceStore" /* 2049 */;
+import SubscriptionStore from "SubscriptionStore" /* 2052 */;
+import Constants from "Constants" /* 1072 */;
+import allSettled_mod from "allSettled" /* 6456 */;
 import size from "module_2" /* 2 */;
 
 let c1, c6, c7;
@@ -38,7 +38,7 @@ let obj = function _waitForSubscriptionsToBeFetched() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -89,7 +89,7 @@ let obj = function _waitForSubscriptionsToBeFetched() {
           return obj;
         }
         c2 = 3;
-        return { value: "IconComponent", done: "+352" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp13) {
         c2 = 3;
         throw tmp13;
@@ -135,7 +135,7 @@ obj = function _httpGetWithCountryCodeQuery() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -167,7 +167,7 @@ obj = function _httpGetWithCountryCodeQuery() {
             closure_5 = undefined;
             c6 = 1;
             c7 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "flexDirection", done: true };
           }
         } else {
           if (1 === c6) {
@@ -273,7 +273,7 @@ let closure_9 = tmp4;
 const result = size.fileFinishedImporting("utils/StoreUtils.tsx");
 
 export const SUPPORTS_WEBP = tmp4;
-export const getAssetURL = function getAssetURL(arg0, mimeType, arg2, mp4) {
+export function getAssetURL(arg0, mimeType, arg2, mp4) {
   let combined;
   let str = mp4;
   if (null == mp4) {
@@ -314,12 +314,12 @@ export const getAssetURL = function getAssetURL(arg0, mimeType, arg2, mp4) {
     sum = combined + "?size=" + getBestMediaProxySize(arg2 * obj.getDevicePixelRatio());
   }
   return sum;
-};
+}
 export { fetchCountryCodeQueryDependencies };
-export const httpGetWithCountryCodeQuery = function httpGetWithCountryCodeQuery() {
+export function httpGetWithCountryCodeQuery() {
   return obj(...arguments);
-};
-export const nativePlatformTypeToSKUOperatingSystem = function nativePlatformTypeToSKUOperatingSystem(platform) {
+}
+export function nativePlatformTypeToSKUOperatingSystem(platform) {
   if (PlatformUtils.PlatformTypes.WINDOWS === platform) {
     return metroImportAll.WINDOWS;
   } else if (PlatformUtils.PlatformTypes.OSX === platform) {
@@ -329,8 +329,8 @@ export const nativePlatformTypeToSKUOperatingSystem = function nativePlatformTyp
   } else {
     return null;
   }
-};
-export const skuOperatingSystemToText = function skuOperatingSystemToText(arg0) {
+}
+export function skuOperatingSystemToText(arg0) {
   if (metroImportAll.WINDOWS === arg0) {
     const intl3 = intl4.intl;
     return intl3.string(intl4.t["0/xHFO"]);
@@ -348,8 +348,8 @@ export const skuOperatingSystemToText = function skuOperatingSystemToText(arg0) 
     const error = new Error("Unknown operating system value: " + arg0);
     throw error;
   }
-};
-export const getPrimarySKUForApplication = function getPrimarySKUForApplication(arg0, getApplication, get) {
+}
+export function getPrimarySKUForApplication(arg0, getApplication, get) {
   const application = getApplication.getApplication(arg0);
   let value = null;
   if (null != application) {
@@ -359,4 +359,4 @@ export const getPrimarySKUForApplication = function getPrimarySKUForApplication(
     }
   }
   return value;
-};
+}

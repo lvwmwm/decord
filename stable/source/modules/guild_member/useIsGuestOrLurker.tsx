@@ -1,73 +1,22 @@
-// Module ID: 11735
-// Function ID: 11736
+// Module ID: 12030
+// Function ID: 12031
 // Name: useIsGuestOrLurker
-// Dependencies: [4915, 4877, 1087, 558, 576, 504, 2]
-// Exports: isGuestOrLurkerInGuild
+// Dependencies: [4926, 4885, 1072, 504, 2]
+// Exports: default, isGuestOrLurkerInGuild
 
-// Module 11735 (useIsGuestOrLurker)
-import Constants from "Constants" /* 1087 */;
-import GuildMemberStore from "GuildMemberStore" /* 4915 */;
-import GuildStore from "GuildStore" /* 4877 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 12030 (useIsGuestOrLurker)
+import Constants from "Constants" /* 1072 */;
+import GuildMemberStore from "GuildMemberStore" /* 4926 */;
+import GuildStore from "GuildStore" /* 4885 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, dependencyMap, tmp5;
+let _require, dependencyMap;
 
 const GuildFeatures = Constants.GuildFeatures;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsGuestOrLurker(arg0, arg1) {
-  let closure_0;
-  let closure_1;
-  let first;
-  _require = arg0;
-  dependencyMap = arg1;
-  let tmp = _require;
-  let tmp2 = dependencyMap;
-  let obj = require("react");
-  const cResult = obj.c(5);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [GuildStore, ];
-    let tmp6 = GuildMemberStore;
-    items[1] = GuildMemberStore;
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] === arg0) {
-    let tmp7;
-    let tmp8;
-    if (cResult[2] === arg1) {
-      tmp7 = cResult[3];
-      tmp8 = cResult[4];
-    }
-    const tmpResult = tmp(504);
-    return tmpResult.useStateFromStores(first, tmp7, tmp8);
-  }
-  class G {
-    constructor() {
-      obj = closure_2;
-      tmp = closure_0;
-      tmp2 = closure_1;
-      guild = closure_3.getGuild(closure_0);
-      hasItem = undefined;
-      if (guild != null) {
-        features = guild.features;
-        tmp5 = GuildFeatures;
-        hasItem = features.has(GuildFeatures.CONFERENCE);
-      }
-      tmp6 = true !== hasItem && obj.isGuestOrLurker(tmp, tmp2);
-      return tmp6;
-    }
-  }
-  const items1 = [arg0, arg1];
-  cResult[1] = arg0;
-  cResult[2] = arg1;
-  cResult[3] = G;
-  cResult[4] = items1;
-  tmp8 = items1;
-  tmp7 = G;
-}) : (function useIsGuestOrLurker(arg0, arg1) {
+const result = size.fileFinishedImporting("modules/guild_member/useIsGuestOrLurker.tsx");
+
+export default function useIsGuestOrLurker(arg0, arg1) {
   let closure_0;
   let closure_1;
   _require = arg0;
@@ -88,11 +37,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsGuestOr
     const tmp6 = true !== hasItem && obj.isGuestOrLurker(tmp, tmp2);
     return tmp6;
   }, items1);
-});
-const result = size.fileFinishedImporting("modules/guild_member/useIsGuestOrLurker.tsx");
-
-export default tmp2;
-export const isGuestOrLurkerInGuild = function isGuestOrLurkerInGuild(guild_id, id) {
+};
+export function isGuestOrLurkerInGuild(guild_id, id) {
   const guild = GuildStore.getGuild(guild_id);
   let hasItem;
   const obj = GuildMemberStore;
@@ -102,4 +48,4 @@ export const isGuestOrLurkerInGuild = function isGuestOrLurkerInGuild(guild_id, 
   }
   const isGuestOrLurkerResult = true !== hasItem && obj.isGuestOrLurker(guild_id, id);
   return isGuestOrLurkerResult;
-};
+}

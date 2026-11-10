@@ -1,15 +1,15 @@
-// Module ID: 9541
-// Function ID: 9542
+// Module ID: 9615
+// Function ID: 9616
 // Name: DiscoverableGuildsActionCreators
-// Dependencies: [5, 9540, 1087, 584, 1297, 2]
+// Dependencies: [5, 9614, 1072, 572, 1282, 2]
 // Exports: fetchDiscoverableGuilds
 
-// Module 9541 (DiscoverableGuildsActionCreators)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1087 */;
-import HTTPUtils from "HTTPUtils" /* 1297 */;
+// Module 9615 (DiscoverableGuildsActionCreators)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import Constants from "Constants" /* 1072 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import DiscoverableGuildsStore from "DiscoverableGuildsStore" /* 9540 */;
+import DiscoverableGuildsStore from "DiscoverableGuildsStore" /* 9614 */;
 import size from "module_2" /* 2 */;
 
 let c6, c7, closure_4, set, staleGuildIds;
@@ -28,7 +28,7 @@ let obj = function _requestGuilds() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c5;
@@ -93,7 +93,7 @@ let obj = function _requestGuilds() {
           obj.dispatch(obj11);
           c5 = 0;
           c7 = 3;
-          return { value: "IconComponent", done: "+352" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp23) {
         closure_4 = tmp23;
@@ -125,7 +125,7 @@ obj = function _fetchDiscoverableGuilds() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       while (true) {
@@ -198,7 +198,7 @@ obj = function _fetchDiscoverableGuilds() {
             return obj;
           } else {
             c5 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           c8 = 0;
@@ -214,6 +214,6 @@ const Endpoints = Constants.Endpoints;
 const map = new Map();
 let result = size.fileFinishedImporting("modules/guild/DiscoverableGuildsActionCreators.tsx");
 
-export const fetchDiscoverableGuilds = function fetchDiscoverableGuilds() {
+export function fetchDiscoverableGuilds() {
   return obj(...arguments);
-};
+}

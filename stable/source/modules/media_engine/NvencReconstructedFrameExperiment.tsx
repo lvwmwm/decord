@@ -1,11 +1,11 @@
-// Module ID: 15412
-// Function ID: 15413
+// Module ID: 15955
+// Function ID: 15956
 // Name: NvencReconstructedFrameExperiment
-// Dependencies: [1456, 2]
+// Dependencies: [1448, 2]
 // Exports: getNvencReconstructedFrameExperimentConfig
 
-// Module 15412 (NvencReconstructedFrameExperiment)
-import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1456 */;
+// Module 15955 (NvencReconstructedFrameExperiment)
+import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1448 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -15,7 +15,7 @@ obj2[1] = { enabled: true };
 let closure_0 = apex_ApexExperimentDefault(obj);
 const result = size.fileFinishedImporting("modules/media_engine/NvencReconstructedFrameExperiment.tsx");
 
-export const getNvencReconstructedFrameExperimentConfig = function getNvencReconstructedFrameExperimentConfig(disable) {
+export function getNvencReconstructedFrameExperimentConfig(disable) {
   let defaultConfig;
   let flag = disable.disable;
   const _location = disable.location;
@@ -29,4 +29,4 @@ export const getNvencReconstructedFrameExperimentConfig = function getNvencRecon
     defaultConfig = obj.getConfig(obj2);
   }
   return defaultConfig;
-};
+}

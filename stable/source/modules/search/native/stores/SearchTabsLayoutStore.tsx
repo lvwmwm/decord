@@ -1,21 +1,21 @@
-// Module ID: 13281
-// Function ID: 13282
+// Module ID: 13912
+// Function ID: 13913
 // Name: SearchTabsLayoutStore
-// Dependencies: [13259, 4855, 6824, 13282, 13283, 13284, 13269, 9746, 568, 13262, 13258, 13260, 504, 584, 2]
+// Dependencies: [13890, 4863, 6863, 13913, 13914, 13915, 13900, 9827, 558, 13893, 13889, 13891, 504, 572, 2]
 
-// Module 13281 (SearchTabsLayoutStore)
+// Module 13912 (SearchTabsLayoutStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import SmartSearchUtils from "SmartSearchUtils" /* 13258 */;
-import SearchUtils from "SearchUtils" /* 13262 */;
-import SmartSearchResultsStore from "SmartSearchResultsStore" /* 13259 */;
-import ChannelStore_mod from "ChannelStore" /* 4855 */;
-import SearchMessageStore from "SearchMessageStore" /* 6824 */;
-import SearchGuildChannelTabStore from "SearchGuildChannelTabStore" /* 13282 */;
-import SearchMemberTabStore from "SearchMemberTabStore" /* 13283 */;
-import SearchPeopleTabStore from "SearchPeopleTabStore" /* 13284 */;
-import SearchQueryStore from "SearchQueryStore" /* 13269 */;
-import SearchConstants from "SearchConstants" /* 9746 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import SmartSearchUtils from "SmartSearchUtils" /* 13889 */;
+import SearchUtils from "SearchUtils" /* 13893 */;
+import SmartSearchResultsStore from "SmartSearchResultsStore" /* 13890 */;
+import ChannelStore_mod from "ChannelStore" /* 4863 */;
+import SearchMessageStore from "SearchMessageStore" /* 6863 */;
+import SearchGuildChannelTabStore from "SearchGuildChannelTabStore" /* 13913 */;
+import SearchMemberTabStore from "SearchMemberTabStore" /* 13914 */;
+import SearchPeopleTabStore from "SearchPeopleTabStore" /* 13915 */;
+import SearchQueryStore from "SearchQueryStore" /* 13900 */;
+import SearchConstants from "SearchConstants" /* 9827 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -117,7 +117,7 @@ function computeLayoutForState(value) {
         const tmp11 = searchResultsQuery;
         const tmp8 = require;
         if (null != totalCount2) {
-          const tmp8Result = tmp8(13258);
+          const tmp8Result = tmp8(13889);
           sum = totalCount2 + tmp8Result.getSmartSearchCitationsCount(tmp10, tmp11, totalCount2 > 0);
         }
         acc[item] = sum;
@@ -154,7 +154,7 @@ function computeLayoutForState(value) {
               if (tmp8) {
                 const tmp4Result = SmartSearchUtils;
                 const smartSearchStatus = tmp4Result.getSmartSearchStatus(smartSearchQuery);
-                tmp8 = smartSearchStatus === tmp4(13260).SmartSearchStatus.LOADING;
+                tmp8 = smartSearchStatus === tmp4(13891).SmartSearchStatus.LOADING;
               }
               flag = tmp8;
             }
@@ -187,8 +187,8 @@ function computeLayoutForState(value) {
     let tmp18 = visibleTabCounts2 === visibleTabCounts;
     const tmp17 = !result1;
     if (!tmp18) {
-      tmp18 = null != visibleTabCounts2 && null != visibleTabCounts && searchContext(568)(visibleTabCounts2, visibleTabCounts);
-      const tmp19 = null != visibleTabCounts2 && null != visibleTabCounts && searchContext(568)(visibleTabCounts2, visibleTabCounts);
+      tmp18 = null != visibleTabCounts2 && null != visibleTabCounts && searchContext(558)(visibleTabCounts2, visibleTabCounts);
+      const tmp19 = null != visibleTabCounts2 && null != visibleTabCounts && searchContext(558)(visibleTabCounts2, visibleTabCounts);
     }
     const tmp21 = !tmp18;
     if (!result) {

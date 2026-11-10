@@ -1,24 +1,24 @@
-// Module ID: 18086
-// Function ID: 18087
+// Module ID: 16363
+// Function ID: 16364
 // Name: VoiceChannelAppStore
-// Dependencies: [504, 584, 2]
+// Dependencies: [504, 572, 2]
 
-// Module 18086 (VoiceChannelAppStore)
+// Module 16363 (VoiceChannelAppStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 
 const React = {};
 const Store = get_initializedDefault.Store;
 class VoiceChannelAppStore extends Store {
-  isAppVisible(id, arg1) {
+  isAppVisible(channelId, arg1) {
     let tmp = arg1;
     if (tmp) {
       let flag = arg1;
       if (arg1 === undefined) {
         flag = true;
       }
-      let tmp4 = closure_0[id];
+      let tmp4 = closure_0[channelId];
       if (tmp4 == null) {
         tmp4 = flag;
       }

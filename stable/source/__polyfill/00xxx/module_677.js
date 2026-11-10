@@ -1,0 +1,26 @@
+// Module ID: 677
+// Function ID: 678
+// Dependencies: []
+// Exports: createSyntheticError, getFramesToPop, isErrorLike
+
+// Module 677
+
+export function createSyntheticError() {
+  let num = arg0;
+  if (arg0 === undefined) {
+    num = 0;
+  }
+  const error = new Error();
+  error.framesToPop = num + 3;
+  return error;
+}
+export function getFramesToPop(syntheticException) {
+  let num = 0;
+  if (undefined !== syntheticException.framesToPop) {
+    num = syntheticException.framesToPop;
+  }
+  return num;
+}
+export function isErrorLike(cause) {
+  return null !== cause && typeof cause === "object" && "stack" in cause && typeof cause.stack === "string";
+}

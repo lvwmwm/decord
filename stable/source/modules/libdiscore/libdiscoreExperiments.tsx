@@ -1,14 +1,14 @@
-// Module ID: 559
-// Function ID: 560
+// Module ID: 4889
+// Function ID: 4890
 // Name: libdiscoreExperiments
-// Dependencies: [560, 3, 562, 38, 2]
+// Dependencies: [4890, 3, 1361, 38, 2]
 // Exports: clearLibdiscoreExperimentCache, isExperimentSyncDisabled
 
-// Module 559 (libdiscoreExperiments)
+// Module 4889 (libdiscoreExperiments)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef38 from "module_38" /* 38 */;
-import BridgedStore from "BridgedStore" /* 560 */;
-import shim from "shim" /* 562 */;
+import shim from "shim" /* 1361 */;
+import BridgedStore from "BridgedStore" /* 4890 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
@@ -46,7 +46,7 @@ class LibdiscoreCachedExperiment {
       const obj = shim;
       const tmp = require;
       if (obj.isLibdiscoreInitialized()) {
-        const tmpResult = tmp(562);
+        const tmpResult = tmp(1361);
         const experimentCacher = tmpResult.getExperimentCacher();
         self.cachedConfig = experimentCacher.getConfig(self.id);
       } else {
@@ -310,7 +310,7 @@ export const WasmBrotliExperiment = libdiscoreCustomTreatmentsExperiment;
 export function isExperimentSyncDisabled() {
   return c7;
 }
-export const clearLibdiscoreExperimentCache = function clearLibdiscoreExperimentCache() {
+export function clearLibdiscoreExperimentCache() {
   const obj = shim;
   if (obj.isLibdiscoreInitialized()) {
     logger.info("Clearing libdiscore experiment cache and disabling sync");
@@ -319,4 +319,4 @@ export const clearLibdiscoreExperimentCache = function clearLibdiscoreExperiment
     const experimentCacher = tmpResult.getExperimentCacher();
     experimentCacher.clearCache();
   }
-};
+}

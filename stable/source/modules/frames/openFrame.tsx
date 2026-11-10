@@ -1,16 +1,16 @@
-// Module ID: 11430
-// Function ID: 11431
+// Module ID: 11731
+// Function ID: 11732
 // Name: openFrame
-// Dependencies: [6807, 6808, 1087, 10799, 5658, 1114, 2]
+// Dependencies: [6846, 6847, 1072, 10927, 5675, 1099, 2]
 // Exports: default, shouldOpenAppChannel
 
-// Module 11430 (openFrame)
-import Constants from "Constants" /* 1087 */;
-import router_utils from "router_utils" /* 1114 */;
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5658 */;
-import FramesActionCreatorsDefault from "FramesActionCreators" /* 10799 */;
-import FramesStore from "FramesStore" /* 6807 */;
-import FramesConstants from "FramesConstants" /* 6808 */;
+// Module 11731 (openFrame)
+import Constants from "Constants" /* 1072 */;
+import router_utils from "router_utils" /* 1099 */;
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5675 */;
+import FramesActionCreatorsDefault from "FramesActionCreators" /* 10927 */;
+import FramesStore from "FramesStore" /* 6846 */;
+import FramesConstants from "FramesConstants" /* 6847 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -47,6 +47,6 @@ export default function openFrame(arg0) {
     return obj8;
   }
 };
-export const shouldOpenAppChannel = function shouldOpenAppChannel(c0) {
+export function shouldOpenAppChannel(c0) {
   return null == FramesStore.getFrame(hasOwnProperty(c0, closure_4));
-};
+}

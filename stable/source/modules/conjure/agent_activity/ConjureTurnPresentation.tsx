@@ -1,16 +1,16 @@
-// Module ID: 12422
-// Function ID: 12423
+// Module ID: 12669
+// Function ID: 12670
 // Name: ConjureTurnPresentation
-// Dependencies: [12344, 2]
+// Dependencies: [12590, 2]
 // Exports: resolveAttachmentHost, resolveTurnPresentation, turnLeadsWithStretch
 
-// Module 12422 (ConjureTurnPresentation)
-import ConjureTimelineTree from "ConjureTimelineTree" /* 12344 */;
+// Module 12669 (ConjureTurnPresentation)
+import ConjureTimelineTree from "ConjureTimelineTree" /* 12590 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/agent_activity/ConjureTurnPresentation.tsx");
 
-export const resolveAttachmentHost = function resolveAttachmentHost(hasAttachments) {
+export function resolveAttachmentHost(hasAttachments) {
   let str = "none";
   if (hasAttachments.hasAttachments) {
     let str2 = "closing";
@@ -24,8 +24,8 @@ export const resolveAttachmentHost = function resolveAttachmentHost(hasAttachmen
     str = str2;
   }
   return str;
-};
-export const resolveTurnPresentation = function resolveTurnPresentation(hasAttachments) {
+}
+export function resolveTurnPresentation(hasAttachments) {
   let content;
   let hasLiveClarification;
   let hasProposal;
@@ -98,12 +98,12 @@ export const resolveTurnPresentation = function resolveTurnPresentation(hasAttac
     str5 = str6;
   }
   return obj2;
-};
-export const turnLeadsWithStretch = function turnLeadsWithStretch(arg0, turnPresentation) {
+}
+export function turnLeadsWithStretch(arg0, turnPresentation) {
   let someResult = arg0;
   if (!someResult) {
     const streamed = turnPresentation.streamed;
     someResult = streamed.some((type) => "message" === type.type);
   }
   return someResult;
-};
+}

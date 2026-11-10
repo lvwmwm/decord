@@ -1,17 +1,17 @@
-// Module ID: 8450
-// Function ID: 8451
+// Module ID: 8515
+// Function ID: 8516
 // Name: PremiumGroupInviteEmbed
-// Dependencies: [2066, 5003, 587, 8309, 8451, 8452, 1128, 3282, 2]
+// Dependencies: [2060, 5014, 575, 8396, 8516, 8517, 1113, 3288, 2]
 // Exports: createPremiumGroupInviteEmbed
 
-// Module 8450 (PremiumGroupInviteEmbed)
-import nativeDefault from "native" /* 587 */;
-import intl3 from "intl" /* 1128 */;
-import createStyles from "createStyles" /* 5003 */;
-import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8309 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8451 */;
-import PremiumGroupUtils from "PremiumGroupUtils" /* 8452 */;
-import PremiumGroupConstants from "PremiumGroupConstants" /* 2066 */;
+// Module 8515 (PremiumGroupInviteEmbed)
+import nativeDefault from "native" /* 575 */;
+import intl3 from "intl" /* 1113 */;
+import createStyles from "createStyles" /* 5014 */;
+import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8396 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8516 */;
+import PremiumGroupUtils from "PremiumGroupUtils" /* 8517 */;
+import PremiumGroupConstants from "PremiumGroupConstants" /* 2060 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -19,7 +19,7 @@ let closure_4;
 ({ HELP_CENTER_LINK: c3, PremiumGroupInviteState: closure_4 } = PremiumGroupConstants);
 const result = size.fileFinishedImporting("modules/messages/native/renderer/row_data/embeds/PremiumGroupInviteEmbed.tsx");
 
-export const createPremiumGroupInviteEmbed = function createPremiumGroupInviteEmbed(message, theme, id, channel) {
+export function createPremiumGroupInviteEmbed(message, theme, id, channel) {
   let backgroundColor;
   let betaPillBackgroundColor;
   let betaPillTextColor;
@@ -47,14 +47,14 @@ export const createPremiumGroupInviteEmbed = function createPremiumGroupInviteEm
     const tmp9 = importDefault;
     if (null != premiumGroupInviteEmbedText) {
       ({ header, body } = premiumGroupInviteEmbedText);
-      const intl = tmp6(1128).intl;
+      const intl = tmp6(1113).intl;
       const obj = { learnMoreLinkOnClick: obj4 };
       obj4 = { action: "bindOpenUrl", url, linkColor: linkTextColor };
       const obj7 = { headerText: header, headerColor: headerTextColor, backgroundColor, borderColor: backgroundColor, headerImageUrl: assetUriForEmbed, betaPillText: str.toUpperCase(), betaPillTextColor, betaPillBackgroundColor, bodyText: body, bodyTextColor, learnMoreLink: formatToPartsResult };
-      formatToPartsResult = intl.formatToParts(tmp9(3282)["9VTnfI"], obj);
-      const intl2 = tmp6(1128).intl;
+      formatToPartsResult = intl.formatToParts(tmp9(3288)["9VTnfI"], obj);
+      const intl2 = tmp6(1113).intl;
       str = intl2.string(intl3.t.oW0eUd);
       return obj7;
     }
   }
-};
+}

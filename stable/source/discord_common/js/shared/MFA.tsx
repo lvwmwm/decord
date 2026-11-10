@@ -1,10 +1,10 @@
-// Module ID: 17075
-// Function ID: 17076
+// Module ID: 17674
+// Function ID: 17675
 // Name: MFA
-// Dependencies: [5, 1297, 2]
+// Dependencies: [5, 1282, 2]
 // Exports: trySubmit
 
-// Module 17075 (MFA)
+// Module 17674 (MFA)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -33,7 +33,7 @@ let obj = function _finishMFACheck() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -58,7 +58,7 @@ let obj = function _finishMFACheck() {
               }
               c6 = 1;
               c7 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "flexDirection", done: true };
             }
           } else if (1 === c6) {
             if (arg0 === 1) {
@@ -171,6 +171,6 @@ export const BACKUP_CODE_MAX_LENGTH = 11;
 export const TOTP_CODE_LENGTH = 6;
 export const SMS_CODE_LENGTH = 6;
 export { finishMFACheck };
-export const trySubmit = function trySubmit() {
+export function trySubmit() {
   return obj(...arguments);
-};
+}

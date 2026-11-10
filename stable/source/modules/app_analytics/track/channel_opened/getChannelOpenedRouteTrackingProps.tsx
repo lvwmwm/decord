@@ -1,19 +1,19 @@
-// Module ID: 18236
-// Function ID: 18237
+// Module ID: 18820
+// Function ID: 18821
 // Name: getChannelOpenedRouteTrackingProps
-// Dependencies: [4855, 8329, 1114, 2]
+// Dependencies: [4863, 8336, 1099, 2]
 // Exports: getChannelOpenedRouteTrackingProps
 
-// Module 18236 (getChannelOpenedRouteTrackingProps)
-import ThreadAnalyticsUtils from "ThreadAnalyticsUtils" /* 8329 */;
-import ChannelStore from "ChannelStore" /* 4855 */;
+// Module 18820 (getChannelOpenedRouteTrackingProps)
+import ThreadAnalyticsUtils from "ThreadAnalyticsUtils" /* 8336 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const router_utils = tmp(1114);
+const router_utils = tmp(1099);
 let result = size.fileFinishedImporting("modules/app_analytics/track/channel_opened/getChannelOpenedRouteTrackingProps.tsx");
 
-export const getChannelOpenedRouteTrackingProps = function getChannelOpenedRouteTrackingProps(selectedChannelId) {
+export function getChannelOpenedRouteTrackingProps(selectedChannelId) {
   let obj5;
   const obj = ThreadAnalyticsUtils;
   const result = obj.collectThreadMetadata(ChannelStore.getChannel(selectedChannelId), true);
@@ -39,4 +39,4 @@ export const getChannelOpenedRouteTrackingProps = function getChannelOpenedRoute
   }
   const merged1 = Object.assign(obj5);
   return obj3;
-};
+}

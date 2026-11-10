@@ -1,11 +1,11 @@
-// Module ID: 14158
-// Function ID: 14159
+// Module ID: 14683
+// Function ID: 14684
 // Name: IosAttributionSignRequest
-// Dependencies: [5, 1087, 1297, 1257, 2]
+// Dependencies: [5, 1072, 1282, 1242, 2]
 // Exports: fetchIosAttributionSignedPayloads
 
-// Module 14158 (IosAttributionSignRequest)
-import Constants from "Constants" /* 1087 */;
+// Module 14683 (IosAttributionSignRequest)
+import Constants from "Constants" /* 1072 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -32,7 +32,7 @@ let obj = function _fetchIosAttributionSignedPayloads() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -54,7 +54,7 @@ let obj = function _fetchIosAttributionSignedPayloads() {
               ({ metadataSealed: c0, impressionId: c1, specs: c2, signal: c3 } = closure_0);
               c6 = 1;
               c7 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "flexDirection", done: true };
             }
           } else if (1 === c6) {
             if (arg0 === 1) {
@@ -118,6 +118,6 @@ let obj = function _fetchIosAttributionSignedPayloads() {
 const Endpoints = Constants.Endpoints;
 const result = size.fileFinishedImporting("modules/ads/ios_attribution/IosAttributionSignRequest.tsx");
 
-export const fetchIosAttributionSignedPayloads = function fetchIosAttributionSignedPayloads() {
+export function fetchIosAttributionSignedPayloads() {
   return obj(...arguments);
-};
+}

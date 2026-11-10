@@ -1,22 +1,22 @@
-// Module ID: 17986
-// Function ID: 17987
+// Module ID: 18572
+// Function ID: 18573
 // Name: GamingLikeEntryRow
-// Dependencies: [19, 17, 1392, 21, 14326, 8649, 14331, 17937, 587, 504, 6399, 9253, 7289, 8647, 9278, 9277, 8645, 17987, 2002, 8873, 12934, 17989, 1128, 17991, 5266, 5057, 6821, 11, 683, 6940, 5701, 17992, 2]
+// Dependencies: [19, 17, 1383, 21, 14858, 8718, 14863, 18523, 575, 504, 6439, 9290, 7330, 8716, 9316, 9340, 8714, 18573, 1994, 8924, 13381, 18575, 1113, 18577, 5624, 5068, 6860, 11, 671, 6980, 5717, 18578, 2]
 // Exports: default
 
-// Module 17986 (GamingLikeEntryRow)
+// Module 18572 (GamingLikeEntryRow)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 587 */;
-import asyncRequire from "asyncRequire" /* 2002 */;
-import ContentInventoryEntryType from "ContentInventoryEntryType" /* 8645 */;
-import utils from "utils" /* 8649 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8873 */;
-import BadgesAll from "Badges" /* 14326 */;
-import TrendingType from "TrendingType" /* 14331 */;
+import nativeDefault from "native" /* 575 */;
+import asyncRequire from "asyncRequire" /* 1994 */;
+import ContentInventoryEntryType from "ContentInventoryEntryType" /* 8714 */;
+import utils from "utils" /* 8718 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8924 */;
+import BadgesAll from "Badges" /* 14858 */;
+import TrendingType from "TrendingType" /* 14863 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1392 */;
+import UserStore from "UserStore" /* 1383 */;
 import Fragment from "Fragment" /* 21 */;
-import createICYMIStyles from "createICYMIStyles" /* 17937 */;
+import createICYMIStyles from "createICYMIStyles" /* 18523 */;
 import size_mod from "module_2" /* 2 */;
 
 let Badge, GameShareModal;
@@ -42,9 +42,9 @@ let obj2 = {
 items[1] = obj2;
 let obj3 = {
   Badge: BadgesAll.TrendingBadge,
-  predicate(traits) {
+  predicate(entry) {
     const obj = utils;
-    const trendingType = obj.getTrendingType(traits);
+    const trendingType = obj.getTrendingType(entry);
     const tmp4 = null != trendingType && trendingType !== TrendingType.TrendingType.TRENDING_TYPE_UNSPECIFIED;
     return tmp4;
   }
@@ -165,7 +165,7 @@ export default function GamingLikeEntryRow(content) {
   }, items2);
   const items3 = [content];
   const callback1 = react.useCallback(() => {
-    const promise = asyncRequire(17987, dependencyMap.paths);
+    const promise = asyncRequire(18573, dependencyMap.paths);
     promise.then((GameShareModal) => {
       GameShareModal = GameShareModal.GameShareModal;
       if (null != GameShareModal) {

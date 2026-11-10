@@ -1,29 +1,25 @@
-// Module ID: 16262
-// Function ID: 16263
+// Module ID: 16836
+// Function ID: 16837
 // Name: ScheduleDowntimeScreen
-// Dependencies: [5, 32, 19, 17, 1392, 1087, 21, 5242, 8965, 2002, 5003, 587, 558, 576, 5266, 1128, 2536, 1202, 6009, 1505, 7122, 13780, 573, 16263, 16264, 5721, 7019, 7327, 6935, 7253, 5276, 2]
+// Dependencies: [5, 32, 19, 17, 1383, 1072, 21, 5258, 9009, 1994, 5014, 575, 8025, 1113, 2538, 1497, 7164, 11013, 563, 16837, 16838, 5711, 5738, 5624, 7060, 7369, 6975, 7292, 5634, 2]
 // Exports: default
 
-// Module 16262 (ScheduleDowntimeScreen)
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1087 */;
-import intl11 from "intl" /* 1128 */;
-import native from "native" /* 1202 */;
-import asyncRequire from "asyncRequire" /* 2002 */;
-import _modDef2536 from "module_2536" /* 2536 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5242 */;
-import Text_Text from "Text/Text" /* 5266 */;
-import Stack_Stack from "Stack/Stack" /* 6009 */;
-import FamilyCenterRestrictedHoursUtils from "FamilyCenterRestrictedHoursUtils" /* 13780 */;
+// Module 16836 (ScheduleDowntimeScreen)
+import nativeDefault from "native" /* 575 */;
+import Constants from "Constants" /* 1072 */;
+import intl11 from "intl" /* 1113 */;
+import asyncRequire from "asyncRequire" /* 1994 */;
+import _modDef2538 from "module_2538" /* 2538 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
+import InlineNotice2 from "InlineNotice" /* 8025 */;
+import FamilyCenterRestrictedHoursUtils from "FamilyCenterRestrictedHoursUtils" /* 11013 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserStore from "UserStore" /* 1392 */;
+import UserStore from "UserStore" /* 1383 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5003 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -41,6 +37,18 @@ let obj6;
 let obj7;
 let obj8;
 let unpackModuleId;
+function OverlappingSchedulesWarning(conflictingEntries) {
+  let intl;
+  conflictingEntries = conflictingEntries.conflictingEntries;
+  let tmp = null;
+  if (0 !== conflictingEntries.length) {
+    const obj = { type: "warning", message: intl.string(_modDef2538["26A0Df"]), messageList: conflictingEntries.map((dayLabel) => "" + dayLabel.dayLabel + "  " + dayLabel.timeRange), role: "status" };
+    const InlineNotice = InlineNotice2.InlineNotice;
+    intl = intl11.intl;
+    tmp = unpackModuleId(InlineNotice, obj);
+  }
+  return tmp;
+}
 let _asyncToGenerator = _asyncToGenerator_mod;
 ({ View: metroRequire, Pressable: metroImportDefault, ScrollView: metroImportAll } = react_native);
 const UserSettingsSections = Constants.UserSettingsSections;
@@ -56,103 +64,6 @@ obj6 = { flex: 1, aspectRatio: 1, borderRadius: nativeDefault.radii.round, align
 obj7 = { marginTop: nativeDefault.space.PX_24 };
 obj8 = { paddingHorizontal: nativeDefault.space.PX_16, paddingVertical: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_8 };
 let closure_13 = createStyles(obj);
-let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function OverlappingSchedulesWarning(conflictingEntries) {
-  let Stack;
-  let intl;
-  let items;
-  let obj4;
-  let obj = react2;
-  const cResult = obj.c(6);
-  conflictingEntries = conflictingEntries.conflictingEntries;
-  if (0 === conflictingEntries.length) {
-    return null;
-  } else {
-    let first;
-    let tmp8;
-    let tmp11;
-    const _Symbol2 = Symbol;
-    if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj2 = { variant: "text-sm/medium", children: intl.string(_modDef2536["26A0Df"]) };
-      let Text = tmp(5266).Text;
-      intl = tmp(1128).intl;
-      const tmp7 = unpackModuleId(Text, obj2);
-      cResult[0] = tmp7;
-      first = tmp7;
-    } else {
-      first = cResult[0];
-    }
-    if (cResult[1] !== conflictingEntries) {
-      let tmp9;
-      const _Symbol = Symbol;
-      if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-        const fn = function l(dayLabel) {
-          dayLabel = dayLabel.dayLabel;
-          const timeRange = dayLabel.timeRange;
-          const obj = { variant: "text-sm/medium", children: "" + dayLabel + "  " + timeRange };
-          const Text = require("Text/Text").Text;
-          return closure_1_11(Text, obj, dayLabel);
-        };
-        cResult[3] = fn;
-        tmp9 = fn;
-      } else {
-        tmp9 = cResult[3];
-      }
-      const mapped = conflictingEntries.map(tmp9);
-      cResult[1] = conflictingEntries;
-      cResult[2] = mapped;
-      tmp8 = mapped;
-    } else {
-      tmp8 = cResult[2];
-    }
-    if (cResult[4] !== tmp8) {
-      const obj3 = { messageType: native.HelpMessageTypes.WARNING, borderRadius: nativeDefault.radii.md, children: authStore2(Stack, obj4) };
-      const HelpMessage = tmp(1202).HelpMessage;
-      obj4 = { spacing: 8, children: items };
-      items = [first, ];
-      Stack = tmp(6009).Stack;
-      const obj5 = { spacing: 4, children: tmp8 };
-      items[1] = unpackModuleId(Stack_Stack.Stack, obj5);
-      const tmp15 = unpackModuleId(HelpMessage, obj3);
-      cResult[4] = tmp8;
-      cResult[5] = tmp15;
-      tmp11 = tmp15;
-    } else {
-      tmp11 = cResult[5];
-    }
-    return tmp11;
-  }
-}) : (function OverlappingSchedulesWarning(conflictingEntries) {
-  let Stack;
-  let intl;
-  let items;
-  let obj2;
-  conflictingEntries = conflictingEntries.conflictingEntries;
-  let tmp = null;
-  if (0 !== conflictingEntries.length) {
-    let obj = { messageType: native.HelpMessageTypes.WARNING, borderRadius: nativeDefault.radii.md, children: authStore2(Stack, obj2) };
-    const HelpMessage = native.HelpMessage;
-    obj2 = { spacing: 8, children: items };
-    Stack = Stack_Stack.Stack;
-    const obj3 = { variant: "text-sm/medium", children: intl.string(_modDef2536["26A0Df"]) };
-    let Text = Text_Text.Text;
-    intl = intl11.intl;
-    items = [unpackModuleId(Text, obj3), ];
-    const obj4 = {
-      spacing: 4,
-      children: conflictingEntries.map((dayLabel) => {
-          dayLabel = dayLabel.dayLabel;
-          const timeRange = dayLabel.timeRange;
-          const obj = { variant: "text-sm/medium", children: "" + dayLabel + "  " + timeRange };
-          const Text = require("Text/Text").Text;
-          return closure_1_11(Text, obj, dayLabel);
-        })
-    };
-    const Stack2 = Stack_Stack.Stack;
-    items[1] = unpackModuleId(Stack2, obj4);
-    tmp = unpackModuleId(HelpMessage, obj);
-  }
-  return tmp;
-});
 let result = size.fileFinishedImporting("modules/parent_tools/native/ScheduleDowntimeScreen.tsx");
 
 export default function ScheduleDowntimeScreen() {
@@ -193,8 +104,9 @@ export default function ScheduleDowntimeScreen() {
     obj = _asyncToGenerator(async (arg0, value) => {
       let obj4;
       let obj5;
-      let tmp24Result;
-      let tmp24Result2;
+      let obj6;
+      let obj8;
+      let v2;
       if (c4 === 2) {
         c4 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
@@ -205,7 +117,7 @@ export default function ScheduleDowntimeScreen() {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c3;
@@ -221,30 +133,30 @@ export default function ScheduleDowntimeScreen() {
               return obj3;
             } else if (null != teenId) {
               closure_2_17(true);
-              c3 = 1;
-              const obj6 = { label: "", start_time: obj4.toTimeProto(first1), end_time: obj5.toTimeProto(first2), days: Array.from(first3), enabled };
-              obj4 = tmp(closure_2[21]);
-              obj5 = tmp(closure_2[21]);
+              c3 = 2;
+              const obj7 = { label: "", start_time: obj4.toTimeProto(first1), end_time: obj5.toTimeProto(first2), days: Array.from(first3), enabled };
+              obj4 = tmp(closure_2[17]);
+              obj5 = tmp(closure_2[17]);
               const _Array = Array;
-              const tmp30 = closure_2_6;
-              if (tmp30) {
+              const tmp41 = closure_2_6;
+              if (tmp41) {
                 let ruleId;
                 if (rule != null) {
-                  ruleId = tmp31.ruleId;
+                  ruleId = tmp42.ruleId;
                 }
                 if (null != ruleId) {
-                  c1 = 3;
+                  c1 = 4;
                   c4 = 1;
-                  const obj7 = { value: tmp24Result.updateRestrictedScheduleRule(teenId, rule.ruleId, obj6), done: false };
-                  tmp24Result = tmp(closure_2[24]);
-                  return obj7;
+                  const obj9 = { value: obj8.updateRestrictedScheduleRule(teenId, rule.ruleId, obj7), done: false };
+                  obj8 = tmp(closure_2[20]);
+                  return obj9;
                 }
               }
-              c1 = 2;
+              c1 = 3;
               c4 = 1;
-              const obj8 = { value: tmp24Result2.addRestrictedScheduleRule(teenId, obj6), done: false };
-              tmp24Result2 = tmp(closure_2[24]);
-              return obj8;
+              const obj10 = { value: obj6.addRestrictedScheduleRule(teenId, obj7), done: false };
+              obj6 = tmp(closure_2[20]);
+              return obj10;
             }
           } else if (1 === c1) {
             c3 = 0;
@@ -252,39 +164,50 @@ export default function ScheduleDowntimeScreen() {
             throw closure_2;
           } else {
             if (2 === c1) {
-              if (arg0 === 1) {
+              c3 = 1;
+              const presentFailedToast = tmp(closure_2[21]).presentFailedToast;
+              const tmp17 = tmp(closure_2[21]);
+              const intl = tmp(closure_2[13]).intl;
+              presentFailedToast(intl.string(c1(closure_2[14]).Wu8BK2));
+            } else {
+              if (3 === c1) {
+                if (arg0 === 1) {
+                  c4 = 3;
+                  throw value;
+                } else if (arg0 === 2) {
+                  c3 = 0;
+                  closure_128_17(false);
+                  c4 = 3;
+                  const obj11 = { value, done: true };
+                  return obj11;
+                }
+              } else if (arg0 === 1) {
                 c4 = 3;
                 throw value;
               } else if (arg0 === 2) {
                 c3 = 0;
                 closure_128_17(false);
                 c4 = 3;
-                const obj9 = { value, done: true };
-                return obj9;
+                obj = { value, done: true };
+                return obj;
               }
-            } else if (arg0 === 1) {
-              c4 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c3 = 0;
-              closure_128_17(false);
-              c4 = 3;
-              obj = { value, done: true };
-              return obj;
+              closure_128_1.goBack();
+              c3 = 1;
             }
-            closure_128_1.goBack();
             c3 = 0;
             closure_128_17(false);
           }
           c4 = 3;
-          return { value: "IconComponent", done: "+352" };
-        } catch (tmp33) {
-          closure_2 = tmp33;
+          return { value: "HermesInternal", done: null };
+        } catch (tmp48) {
+          closure_2 = tmp48;
           if (0 === c3) {
             c4 = 3;
-            throw tmp33;
-          } else {
+            throw tmp48;
+          } else if (1 === tmp50) {
             c1 = 1;
+          } else {
+            c1 = 2;
           }
         }
       }
@@ -305,11 +228,11 @@ export default function ScheduleDowntimeScreen() {
   }
   let obj3 = teenId;
   _asyncToGenerator = teenId.useMemo(() => {
-    obj = closure_0(rule[21]);
+    obj = closure_0(rule[17]);
     return obj.getShortDayLabels("narrow");
   }, []);
   const memo = teenId.useMemo(() => {
-    obj = closure_0(rule[21]);
+    obj = closure_0(rule[17]);
     return obj.getShortDayLabels("short");
   }, []);
   teenId = undefined;
@@ -329,7 +252,7 @@ export default function ScheduleDowntimeScreen() {
   const value = tmp10[0];
   let closure_8 = tmp10[1];
   let items = [stateFromStores];
-  const tmp2Result = tmp2(tmp3[22]);
+  const tmp2Result = tmp2(tmp3[18]);
   stateFromStores = tmp2Result.useStateFromStores(items, () => {
     let items;
     if (null == teenId) {
@@ -350,7 +273,7 @@ export default function ScheduleDowntimeScreen() {
     return items;
   });
   let startTime;
-  const tmp14 = stackNavigation(tmp3[23]);
+  const tmp14 = stackNavigation(tmp3[19]);
   if (rule != null) {
     startTime = rule.startTime;
   }
@@ -367,7 +290,7 @@ export default function ScheduleDowntimeScreen() {
   const first1 = tmp9Result[0];
   let closure_11 = tmp9Result[1];
   let endTime;
-  const tmp13Result = stackNavigation(tmp3[23]);
+  const tmp13Result = stackNavigation(tmp3[19]);
   if (rule != null) {
     endTime = rule.endTime;
   }
@@ -430,6 +353,7 @@ export default function ScheduleDowntimeScreen() {
   let ruleId1;
   const tmp33 = _asyncToGenerator(async (arg0, value) => {
     let c2;
+    let closure_1;
     let user;
     if (c5 === 2) {
       c5 = 3;
@@ -441,7 +365,7 @@ export default function ScheduleDowntimeScreen() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c4;
@@ -455,67 +379,75 @@ export default function ScheduleDowntimeScreen() {
             c5 = 3;
             const obj4 = { value, done: true };
             return obj4;
-          } else {
-            let closure_1 = tmp;
-            if (null != teenId) {
-              let ruleId;
-              if (rule != null) {
-                ruleId = tmp25.ruleId;
-              }
-              if (null != ruleId) {
-                closure_17(true);
-                c4 = 1;
-                const obj2 = closure_0(rule[24]);
-                rule = 2;
-                c5 = 1;
-                const obj5 = { value: obj2.deleteRestrictedScheduleRule(teenId, rule.ruleId), done: false };
-                return obj5;
-              }
+          } else if (null != teenId) {
+            let ruleId;
+            if (rule != null) {
+              ruleId = tmp34.ruleId;
+            }
+            if (null != ruleId) {
+              closure_17(true);
+              c4 = 2;
+              const obj2 = closure_0(rule[20]);
+              rule = 3;
+              c5 = 1;
+              const obj5 = { value: obj2.deleteRestrictedScheduleRule(teenId, rule.ruleId), done: false };
+              return obj5;
             }
           }
-        } else if (1 === tmp4) {
+        } else if (1 === rule) {
           c4 = 0;
           closure_129_17(false);
           throw closure_3;
-        } else if (arg0 === 1) {
-          c5 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c4 = 0;
-          closure_129_17(false);
-          c5 = 3;
-          obj = { value, done: true };
-          return obj;
         } else {
-          user = user.getUser(closure_129_5);
-          let rules;
-          if (user != null) {
-            const restrictedSchedule = user.restrictedSchedule;
-            if (restrictedSchedule != null) {
-              rules = restrictedSchedule.rules;
-            }
-          }
-          closure_0 = rules;
-          if (rules == null) {
-            closure_0 = [];
-          }
-          if (0 === closure_0.length) {
-            closure_129_1.navigate(constants.FAMILY_CENTER);
+          if (2 === rule) {
+            c4 = 1;
+            const presentFailedToast = closure_0(rule[21]).presentFailedToast;
+            const tmp20 = closure_0(rule[21]);
+            const intl = closure_0(rule[13]).intl;
+            presentFailedToast(intl.string(tmp(rule[14]).Wu8BK2));
+          } else if (arg0 === 1) {
+            c5 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c4 = 0;
+            closure_129_17(false);
+            c5 = 3;
+            obj = { value, done: true };
+            return obj;
           } else {
-            closure_129_1.goBack();
+            user = user.getUser(closure_129_5);
+            let rules;
+            if (user != null) {
+              const restrictedSchedule = user.restrictedSchedule;
+              if (restrictedSchedule != null) {
+                rules = restrictedSchedule.rules;
+              }
+            }
+            closure_0 = rules;
+            if (rules == null) {
+              closure_0 = [];
+            }
+            if (0 === closure_0.length) {
+              closure_129_1.navigate(constants.FAMILY_CENTER);
+            } else {
+              closure_129_1.goBack();
+            }
+            c4 = 1;
           }
           c4 = 0;
           closure_129_17(false);
         }
         c5 = 3;
-        return { value: "IconComponent", done: "+352" };
-      } catch (tmp32) {
-        closure_3 = tmp32;
+        return { value: "HermesInternal", done: null };
+      } catch (tmp41) {
+        closure_3 = tmp41;
         if (0 === c4) {
           c5 = 3;
-          throw tmp32;
-        } else {
+          throw tmp41;
+        } else if (1 === tmp43) {
           rule = 1;
+        } else {
+          rule = 2;
         }
       }
     }
@@ -537,84 +469,86 @@ export default function ScheduleDowntimeScreen() {
             let TrashIcon;
             let intl;
             let obj2;
-            obj = { onPress, accessibilityRole: "button", accessibilityLabel: intl.string(closure_0(rule[15]).t.oyYWHE), hitSlop: 8, disabled, children: closure_11(TrashIcon, obj2) };
-            intl = closure_0(rule[15]).intl;
+            obj = { onPress, accessibilityRole: "button", accessibilityLabel: intl.string(closure_0(rule[13]).t.oyYWHE), hitSlop: 8, disabled, children: closure_11(TrashIcon, obj2) };
+            intl = closure_0(rule[13]).intl;
             obj2 = { color: stackNavigation(rule[11]).colors.ICON_FEEDBACK_CRITICAL, size: "md" };
-            TrashIcon = closure_0(rule[25]).TrashIcon;
+            TrashIcon = closure_0(rule[22]).TrashIcon;
             return closure_11(first, obj);
           }
       };
       stackNavigation.setOptions(obj);
     }
   }, items4);
-  const tmp2Result7 = tmp2(tmp3[21]);
+  const tmp2Result7 = tmp2(tmp3[17]);
   const timeToMinutesResult = tmp2Result7.timeToMinutes(first1);
-  const tmp2Result8 = tmp2(tmp3[21]);
+  const tmp2Result8 = tmp2(tmp3[17]);
   const timeToMinutesResult1 = tmp2Result8.timeToMinutes(first2);
   let obj4 = {
     startTime: tmp2Result9.formatTime(first1),
     endTime: tmp2Result10.formatTime(first2),
     timeHook(children, arg1) {
       obj = { variant: "text-sm/medium", color: "text-default", children };
-      return closure_11(closure_0(rule[14]).Text, obj, arg1);
+      return closure_11(closure_0(rule[23]).Text, obj, arg1);
     }
   };
-  tmp2Result9 = tmp2(tmp3[21]);
-  tmp2Result10 = tmp2(tmp3[21]);
+  tmp2Result9 = tmp2(tmp3[17]);
+  tmp2Result10 = tmp2(tmp3[17]);
   if (timeToMinutesResult > timeToMinutesResult1) {
-    const intl2 = tmp2(tmp3[15]).intl;
-    formatResult = intl2.format(tmp13(tmp3[16]).R87Y2K, obj4);
+    const intl2 = tmp2(tmp3[13]).intl;
+    formatResult = intl2.format(tmp13(tmp3[14]).R87Y2K, obj4);
   } else {
-    let intl = tmp2(tmp3[15]).intl;
-    formatResult = intl.format(tmp13(tmp3[16]).vX7xid, obj4);
+    let intl = tmp2(tmp3[13]).intl;
+    formatResult = intl.format(tmp13(tmp3[14]).vX7xid, obj4);
   }
   let tmp42Result = null;
   const tmp40 = first3.size > 0 && timeToMinutesResult !== timeToMinutesResult1 && !first4;
   if (null != teenId) {
+    const tmp42 = first2;
+    const tmp43 = closure_6;
     let obj5 = { style: tmp.container, children: items10 };
     let obj6 = { style: tmp.scrollContent, children: items5 };
-    let obj7 = { variant: "text-md/medium", color: "text-subtle", children: intl3.string(tmp13(tmp3[16]).AcJ4ke) };
-    let Text = tmp2(tmp3[14]).Text;
-    intl3 = tmp2(tmp3[15]).intl;
+    let obj7 = { variant: "text-md/medium", color: "text-subtle", children: intl3.string(tmp13(tmp3[14]).AcJ4ke) };
+    let Text = tmp2(tmp3[23]).Text;
+    intl3 = tmp2(tmp3[13]).intl;
     items5 = [closure_11(Text, obj7), , , ];
     let tmp44Result = tmp8;
     const tmp45 = closure_8;
     if (tmp44Result) {
-      let obj8 = { hasIcons: false, children: closure_11(TableSwitchRow, obj9) };
-      const TableRowGroup = tmp2(tmp3[26]).TableRowGroup;
+      let obj8 = { hasIcons: false, children: tmp44(TableSwitchRow, obj9) };
+      const TableRowGroup = tmp2(tmp3[24]).TableRowGroup;
       obj9 = {
-        label: intl4.string(tmp13(tmp3[16])["30Owsd"]),
+        label: intl4.string(tmp13(tmp3[14])["30Owsd"]),
         value,
         onValueChange: function handleEnabledChange() {
               closure_8((arg0) => !arg0);
             }
       };
-      TableSwitchRow = tmp2(tmp3[27]).TableSwitchRow;
-      intl4 = tmp2(tmp3[15]).intl;
+      TableSwitchRow = tmp2(tmp3[25]).TableSwitchRow;
+      intl4 = tmp2(tmp3[13]).intl;
       tmp44Result = tmp44(TableRowGroup, obj8);
     }
     items5[1] = tmp44Result;
-    const obj10 = { style: tmp.section, children: items6 };
-    const obj11 = { variant: "text-sm/semibold", color: "text-subtle", children: intl5.string(stackNavigation(tmp3[16])["37z4a2"]) };
-    const Text2 = tmp2(tmp3[14]).Text;
-    intl5 = tmp2(tmp3[15]).intl;
-    items6 = [closure_11(Text2, obj11), ];
+    let obj10 = { style: tmp.section, children: items6 };
+    let obj11 = { variant: "text-sm/semibold", color: "text-subtle", children: intl5.string(tmp13(tmp3[14])["37z4a2"]) };
+    const Text2 = tmp2(tmp3[23]).Text;
+    intl5 = tmp2(tmp3[13]).intl;
+    items6 = [tmp44(Text2, obj11), ];
     const obj12 = { hasIcons: false, children: items7 };
-    const TableRowGroup2 = tmp2(tmp3[26]).TableRowGroup;
+    const TableRowGroup2 = tmp2(tmp3[24]).TableRowGroup;
     const obj13 = {
-      label: intl6.string(stackNavigation(tmp3[16]).DsXytO),
+      label: intl6.string(stackNavigation(tmp3[14]).DsXytO),
       trailing: closure_11(Text3, obj14),
       arrow: true,
       onPress: function handleStartTimePress() {
           const intl = intl11.intl;
-          const f152489 = (first1) => {
+          const f130074 = (first1) => {
             closure_1_11(first1);
-            obj = closure_2_0(rule[21]);
+            obj = closure_2_0(rule[17]);
             const result = (obj.timeToMinutes(first1) + 540) % 1440;
             const time = { hours: Math.floor(result / 60), minutes: result % 60 };
             closure_1_13(time);
           };
-          const stringResult = intl.string(_modDef2536["8bLRt0"]);
+          const stringResult = intl.string(_modDef2538["8bLRt0"]);
           const openLazy = ActionSheetActionCreatorsDefault.openLazy;
           obj = {
             title: stringResult,
@@ -626,25 +560,25 @@ export default function ScheduleDowntimeScreen() {
             }
           };
           ActionSheetActionCreatorsDefault;
-          const tmp3 = asyncRequire(8965, dependencyMap.paths);
+          const tmp3 = asyncRequire(9009, dependencyMap.paths);
           new Date(2025, 0, 1, first1.hours, first1.minutes, 0, 0);
           openLazy(tmp3, "ScheduleDowntimeStartTimePicker", obj);
         }
     };
-    const TableRow = tmp2(tmp3[28]).TableRow;
-    intl6 = tmp2(tmp3[15]).intl;
+    const TableRow = tmp2(tmp3[26]).TableRow;
+    intl6 = tmp2(tmp3[13]).intl;
     obj14 = { variant: "text-md/normal", children: tmp2Result11.formatTime(first1) };
-    Text3 = tmp2(tmp3[14]).Text;
-    tmp2Result11 = tmp2(tmp3[21]);
-    items7 = [closure_11(TableRow, obj13), ];
+    Text3 = tmp2(tmp3[23]).Text;
+    tmp2Result11 = tmp2(tmp3[17]);
+    items7 = [tmp44(TableRow, obj13), ];
     const obj15 = {
-      label: intl7.string(stackNavigation(tmp3[16])["5SHDP6"]),
+      label: intl7.string(stackNavigation(tmp3[14])["5SHDP6"]),
       trailing: closure_11(Text4, obj16),
       arrow: true,
       onPress: function handleEndTimePress() {
           const intl = intl11.intl;
           closure_0 = closure_13;
-          const stringResult = intl.string(_modDef2536["+JkWJV"]);
+          const stringResult = intl.string(_modDef2538["+JkWJV"]);
           const openLazy = ActionSheetActionCreatorsDefault.openLazy;
           obj = {
             title: stringResult,
@@ -656,28 +590,28 @@ export default function ScheduleDowntimeScreen() {
             }
           };
           ActionSheetActionCreatorsDefault;
-          const tmp3 = asyncRequire(8965, dependencyMap.paths);
+          const tmp3 = asyncRequire(9009, dependencyMap.paths);
           new Date(2025, 0, 1, first2.hours, first2.minutes, 0, 0);
           openLazy(tmp3, "ScheduleDowntimeEndTimePicker", obj);
         }
     };
-    const TableRow2 = tmp2(tmp3[28]).TableRow;
-    intl7 = tmp2(tmp3[15]).intl;
+    const TableRow2 = tmp2(tmp3[26]).TableRow;
+    intl7 = tmp2(tmp3[13]).intl;
     obj16 = { variant: "text-md/normal", children: tmp2Result12.formatTime(first2) };
-    Text4 = tmp2(tmp3[14]).Text;
-    tmp2Result12 = tmp2(tmp3[21]);
+    Text4 = tmp2(tmp3[23]).Text;
+    tmp2Result12 = tmp2(tmp3[17]);
     items7[1] = closure_11(TableRow2, obj15);
-    items6[1] = first2(TableRowGroup2, obj12);
-    items5[2] = first2(closure_6, obj10);
+    items6[1] = tmp42(TableRowGroup2, obj12);
+    items5[2] = tmp42(tmp43, obj10);
     const obj17 = { style: tmp.section, children: items9 };
     const obj18 = { style: tmp.sectionHeader, children: items8 };
-    const obj19 = { variant: "text-sm/semibold", color: "text-subtle", children: intl8.string(stackNavigation(tmp3[16]).HaV0Sg) };
-    const Text5 = tmp2(tmp3[14]).Text;
-    intl8 = tmp2(tmp3[15]).intl;
-    items8 = [closure_11(Text5, obj19), ];
+    const obj19 = { variant: "text-sm/semibold", color: "text-subtle", children: intl8.string(stackNavigation(tmp3[14]).HaV0Sg) };
+    const Text5 = tmp2(tmp3[23]).Text;
+    intl8 = tmp2(tmp3[13]).intl;
+    items8 = [tmp44(Text5, obj19), ];
     const obj20 = { variant: "text-sm/normal", color: "text-muted", children: formatResult };
-    items8[1] = closure_11(tmp2(tmp3[14]).Text, obj20);
-    items9 = [first2(tmp43, obj18), , ];
+    items8[1] = closure_11(tmp2(tmp3[23]).Text, obj20);
+    items9 = [tmp42(tmp43, obj18), , ];
     const obj21 = {
       style: tmp.daysContainer,
       children: DAYS_ORDERED.map((item, index) => {
@@ -711,7 +645,7 @@ export default function ScheduleDowntimeScreen() {
             accessibilityLabel: closure_3[index],
             children: closure_11(Text, obj2)
           };
-          Text = closure_0(rule[14]).Text;
+          Text = closure_0(rule[23]).Text;
           const tmp4 = closure_3;
           if (hasItem) {
             str = "control-secondary-text-default";
@@ -720,25 +654,26 @@ export default function ScheduleDowntimeScreen() {
           return closure_11(tmp3, obj, item);
         })
     };
-    DAYS_ORDERED = tmp2(tmp3[21]).DAYS_ORDERED;
-    items9[1] = closure_11(closure_6, obj21);
+    DAYS_ORDERED = tmp2(tmp3[17]).DAYS_ORDERED;
+    items9[1] = closure_11(tmp43, obj21);
     let tmp44Result2 = memo2.conflictingEntries.length > 0;
     if (tmp44Result2) {
+      const tmp48 = first3;
       const obj22 = { style: tmp.overlapWarningContent, children: closure_11(first3, obj23) };
       obj23 = { conflictingEntries: memo2.conflictingEntries };
       tmp44Result2 = tmp44(tmp43, obj22);
     }
     items9[2] = tmp44Result2;
-    const obj24 = { children: first2(closure_6, obj6) };
-    items5[3] = first2(closure_6, obj17);
-    items10 = [closure_11(tmp45, obj24), ];
+    const obj24 = { children: tmp42(tmp43, obj6) };
+    items5[3] = tmp42(tmp43, obj17);
+    items10 = [tmp44(tmp45, obj24), ];
     const obj25 = { style: tmp.footer, children: items11 };
-    const SafeAreaPaddingView = tmp2(tmp3[29]).SafeAreaPaddingView;
-    const Button = tmp2(tmp3[30]).Button;
-    const intl9 = tmp2(tmp3[15]).intl;
+    const SafeAreaPaddingView = tmp2(tmp3[27]).SafeAreaPaddingView;
+    const Button = tmp2(tmp3[28]).Button;
+    const intl9 = tmp2(tmp3[13]).intl;
     const string = intl9.string;
-    const tmp13Result2 = stackNavigation(tmp3[16]);
-    const obj26 = { bottom: true, children: first2(closure_6, obj25) };
+    const tmp13Result2 = stackNavigation(tmp3[14]);
+    const obj26 = { bottom: true, children: tmp42(tmp43, obj25) };
     const obj27 = {
       text: string(null != rule ? tmp13Result2.TDc9mW : tmp13Result2.pvcruO),
       onPress: function handleSubmit() {
@@ -749,9 +684,9 @@ export default function ScheduleDowntimeScreen() {
       variant: "primary",
       size: "lg"
     };
-    items11 = [closure_11(Button, obj27), ];
+    items11 = [tmp44(Button, obj27), ];
     const obj28 = {
-      text: intl10.string(tmp2(tmp3[15]).t["ETE/oC"]),
+      text: intl10.string(tmp2(tmp3[13]).t["ETE/oC"]),
       onPress() {
           return stackNavigation.goBack();
         },
@@ -759,8 +694,8 @@ export default function ScheduleDowntimeScreen() {
       variant: "secondary",
       size: "lg"
     };
-    const Button2 = tmp2(tmp3[30]).Button;
-    intl10 = tmp2(tmp3[15]).intl;
+    const Button2 = tmp2(tmp3[28]).Button;
+    intl10 = tmp2(tmp3[13]).intl;
     items11[1] = closure_11(Button2, obj28);
     items10[1] = closure_11(SafeAreaPaddingView, obj26);
     tmp42Result = tmp42(tmp43, obj5);

@@ -1,15 +1,15 @@
-// Module ID: 14139
-// Function ID: 14140
+// Module ID: 14664
+// Function ID: 14665
 // Name: AppStoreMetadataActionCreators
-// Dependencies: [5, 2068, 1087, 1104, 584, 1297, 569, 2]
+// Dependencies: [5, 2062, 1072, 1089, 572, 1282, 559, 2]
 // Exports: fetchAppStoreMetadata, getAppStoreMetadataCacheKey
 
-// Module 14139 (AppStoreMetadataActionCreators)
-import Constants from "Constants" /* 1087 */;
-import DurationsDefault from "Durations" /* 1104 */;
+// Module 14664 (AppStoreMetadataActionCreators)
+import Constants from "Constants" /* 1072 */;
+import DurationsDefault from "Durations" /* 1089 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import LocaleStore from "LocaleStore" /* 2068 */;
-import Dispatcher from "Dispatcher" /* 584 */;
+import LocaleStore from "LocaleStore" /* 2062 */;
+import Dispatcher from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 
 let c5, constants;
@@ -35,10 +35,10 @@ const subscription = Dispatcher.subscribe("LOGOUT", clearMetadataCache);
 LocaleStore.addChangeListener(clearMetadataCache);
 let result = size.fileFinishedImporting("modules/quests/native/AppStoreOverlay/AppStoreMetadataActionCreators.tsx");
 
-export const getAppStoreMetadataCacheKey = function getAppStoreMetadataCacheKey(os) {
+export function getAppStoreMetadataCacheKey(os) {
   return "" + os.os + "#" + os.storeAppId;
-};
-export const fetchAppStoreMetadata = function fetchAppStoreMetadata(os) {
+}
+export function fetchAppStoreMetadata(os) {
   os = os.os;
   const storeAppId = os.storeAppId;
   const combined = "" + os + "#" + storeAppId;
@@ -80,7 +80,7 @@ export const fetchAppStoreMetadata = function fetchAppStoreMetadata(os) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: "+352" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           let c3;
@@ -173,4 +173,4 @@ export const fetchAppStoreMetadata = function fetchAppStoreMetadata(os) {
       return tmp7;
     }
   }
-};
+}

@@ -1,24 +1,24 @@
-// Module ID: 8885
-// Function ID: 8886
+// Module ID: 8933
+// Function ID: 8934
 // Name: ShowShareActionSheetUtils
-// Dependencies: [1087, 8886, 1267, 8887, 1386, 1384, 6902, 2]
+// Dependencies: [1072, 8934, 1252, 8935, 1377, 1375, 6943, 2]
 // Exports: getMediaShareParams, resolveShareFileExtension, trackAppClickInNativeShareSheet
 
-// Module 8885 (ShowShareActionSheetUtils)
-import Constants from "Constants" /* 1087 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import PlatformUtils from "PlatformUtils" /* 1384 */;
-import URLUtilsDefault from "URLUtils" /* 1386 */;
-import FileExtensionUtils from "FileExtensionUtils" /* 6902 */;
-import SharePreparingModalConstants from "SharePreparingModalConstants" /* 8886 */;
-import MobileMediaViewerShareExperiment from "MobileMediaViewerShareExperiment" /* 8887 */;
+// Module 8933 (ShowShareActionSheetUtils)
+import Constants from "Constants" /* 1072 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import PlatformUtils from "PlatformUtils" /* 1375 */;
+import URLUtilsDefault from "URLUtils" /* 1377 */;
+import FileExtensionUtils from "FileExtensionUtils" /* 6943 */;
+import SharePreparingModalConstants from "SharePreparingModalConstants" /* 8934 */;
+import MobileMediaViewerShareExperiment from "MobileMediaViewerShareExperiment" /* 8935 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;
 const presentDelayMs = SharePreparingModalConstants.SHARE_SHEET_PRESENT_DELAY_MS;
 const result = size.fileFinishedImporting("modules/action_sheet/native/ShowShareActionSheetUtils.tsx");
 
-export const trackAppClickInNativeShareSheet = function trackAppClickInNativeShareSheet(app, _location) {
+export function trackAppClickInNativeShareSheet(app, _location) {
   let str = app;
   const track = AnalyticsUtilsDefault.track;
   const NATIVE_SHARE_SHEET_APP_CLICKED = AnalyticEvents.NATIVE_SHARE_SHEET_APP_CLICKED;
@@ -28,8 +28,8 @@ export const trackAppClickInNativeShareSheet = function trackAppClickInNativeSha
   }
   const obj = { package_name: str, location: _location };
   track(NATIVE_SHARE_SHEET_APP_CLICKED, obj);
-};
-export const getMediaShareParams = function getMediaShareParams(source) {
+}
+export function getMediaShareParams(source) {
   let contentType;
   let tmp11;
   let tmp6;
@@ -80,8 +80,8 @@ export const getMediaShareParams = function getMediaShareParams(source) {
     mediaFallbackUrl = source.uri;
   }
   return { mediaFallbackUrl };
-};
-export const resolveShareFileExtension = function resolveShareFileExtension(uri, contentType) {
+}
+export function resolveShareFileExtension(uri, contentType) {
   const obj = FileExtensionUtils;
   return obj.decideFileExtension(uri, contentType, true);
-};
+}

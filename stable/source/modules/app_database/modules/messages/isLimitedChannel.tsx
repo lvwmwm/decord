@@ -1,20 +1,20 @@
-// Module ID: 7626
-// Function ID: 7627
+// Module ID: 7664
+// Function ID: 7665
 // Name: isLimitedChannel
-// Dependencies: [4855, 5226, 1087, 2]
+// Dependencies: [4863, 5242, 1072, 2]
 // Exports: isLimitedChannel, isLimitedChannelId
 
-// Module 7626 (isLimitedChannel)
-import Constants from "Constants" /* 1087 */;
-import ChannelStore from "ChannelStore" /* 4855 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 5226 */;
+// Module 7664 (isLimitedChannel)
+import Constants from "Constants" /* 1072 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 5242 */;
 import size from "module_2" /* 2 */;
 
 const ChannelTypes = Constants.ChannelTypes;
 const result = size.fileFinishedImporting("modules/app_database/modules/messages/isLimitedChannel.tsx");
 
 export const LIMITED_GUILD_MEMBER_THRESHOLD = 10000;
-export const isLimitedChannel = function isLimitedChannel(basicChannel) {
+export function isLimitedChannel(basicChannel) {
   let guild_id;
   const getMemberCount = GuildMemberCountStore.getMemberCount;
   if (basicChannel != null) {
@@ -25,8 +25,8 @@ export const isLimitedChannel = function isLimitedChannel(basicChannel) {
     num = 0;
   }
   return null != basicChannel && basicChannel.type !== ChannelTypes.DM && basicChannel.type !== ChannelTypes.GROUP_DM && num >= 10000;
-};
-export const isLimitedChannelId = function isLimitedChannelId(arg0) {
+}
+export function isLimitedChannelId(arg0) {
   let str = arg0;
   const getBasicChannel = ChannelStore.getBasicChannel;
   if (arg0 == null) {
@@ -43,4 +43,4 @@ export const isLimitedChannelId = function isLimitedChannelId(arg0) {
     num = 0;
   }
   return null != basicChannel && basicChannel.type !== ChannelTypes.DM && basicChannel.type !== ChannelTypes.GROUP_DM && num >= 10000;
-};
+}

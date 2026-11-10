@@ -9,7 +9,7 @@ import _modDef38 from "module_38" /* 38 */;
 
 const __turboModuleProxy = global.__turboModuleProxy;
 
-export const get = function get(arg0) {
+export function get(arg0) {
   let tmpResult;
   if (null == __turboModuleProxy) {
     const tmp5 = _mod31.default[arg0];
@@ -22,8 +22,8 @@ export const get = function get(arg0) {
     tmpResult = tmp(arg0);
   }
   return tmpResult;
-};
-export const getEnforcing = function getEnforcing(RNGestureHandlerModule) {
+}
+export function getEnforcing(RNGestureHandlerModule) {
   let tmpResult;
   if (null == __turboModuleProxy) {
     const tmp5 = _mod31.default[RNGestureHandlerModule];
@@ -39,4 +39,4 @@ export const getEnforcing = function getEnforcing(RNGestureHandlerModule) {
   const tmp8 = null != tmpResult;
   tmp7(tmp8, "TurboModuleRegistry.getEnforcing(...): '" + RNGestureHandlerModule + "' could not be found. Verify that a module by this name is registered in the native binary.");
   return tmpResult;
-};
+}

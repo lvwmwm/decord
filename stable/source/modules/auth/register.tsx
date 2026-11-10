@@ -1,24 +1,24 @@
-// Module ID: 17410
-// Function ID: 17411
+// Module ID: 17995
+// Function ID: 17996
 // Name: register
-// Dependencies: [5, 17411, 502, 1087, 1112, 2049, 1267, 6708, 1275, 6407, 6498, 584, 17412, 17413, 17414, 2]
+// Dependencies: [5, 17996, 502, 1072, 1097, 2042, 1252, 6747, 1260, 6447, 6538, 572, 17997, 17998, 17999, 2]
 // Exports: default, registerPhone, scorePassword
 
-// Module 17410 (register)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1275 */;
-import _modDef2049 from "module_2049" /* 2049 */;
-import APIErrorDefault from "APIError" /* 6407 */;
-import SharedCaptchaUtils from "SharedCaptchaUtils" /* 6498 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6708 */;
-import trackAgeGateSubmittedDefault from "trackAgeGateSubmitted" /* 17412 */;
-import AgeGateActionCreatorsAll from "AgeGateActionCreators" /* 17414 */;
+// Module 17995 (register)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
+import _modDef2042 from "module_2042" /* 2042 */;
+import APIErrorDefault from "APIError" /* 6447 */;
+import SharedCaptchaUtils from "SharedCaptchaUtils" /* 6538 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6747 */;
+import trackAgeGateSubmittedDefault from "trackAgeGateSubmitted" /* 17997 */;
+import AgeGateActionCreatorsAll from "AgeGateActionCreators" /* 17999 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ParentalConsentStore from "ParentalConsentStore" /* 17411 */;
+import ParentalConsentStore from "ParentalConsentStore" /* 17996 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import Constants from "Constants" /* 1087 */;
-import AgeGateConstants from "AgeGateConstants" /* 1112 */;
+import Constants from "Constants" /* 1072 */;
+import AgeGateConstants from "AgeGateConstants" /* 1097 */;
 import size from "module_2" /* 2 */;
 
 let closure_1, closure_2, closure_3;
@@ -45,7 +45,7 @@ let obj = function _scorePassword() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -123,7 +123,7 @@ obj = function _registerPhone() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -142,7 +142,7 @@ obj = function _registerPhone() {
               phone = phone.phone;
               c5 = 1;
               c6 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "flexDirection", done: true };
             }
           } else if (1 === c5) {
             if (arg0 === 1) {
@@ -245,7 +245,7 @@ function registerFull(giftCodeSKUId) {
     let obj2 = { source: constants5.REGISTER, action: constants4.AGE_GATE_SUBMITTED };
     const tmp4Result = AnalyticsUtilsDefault;
     tmp4Result.track(metroRequire.AGE_GATE_ACTION, obj2);
-    const obj10 = _modDef2049();
+    const obj10 = _modDef2042();
     const diffResult = obj10.diff(birthday, "years");
     const tmp15 = metroRequire;
     if (diffResult >= 13) {
@@ -273,7 +273,7 @@ function registerFull(giftCodeSKUId) {
   const post = tmp4Result4.post;
   tmp9 = undefined;
   if (null != birthday) {
-    tmp9 = tmp4(17413)(birthday);
+    tmp9 = tmp4(17998)(birthday);
   }
   checked = undefined;
   if (promoEmailConsent != null) {
@@ -338,10 +338,10 @@ export default function register(invite) {
   const merged = Object.assign(Object.assign(invite, Object.assign({ invite: 0, giftCodeSKUId: 0 })));
   return registerFull(obj);
 };
-export const scorePassword = function scorePassword() {
+export function scorePassword() {
   return obj(...arguments);
-};
-export const registerPhone = function registerPhone() {
+}
+export function registerPhone() {
   return obj(...arguments);
-};
+}
 export { registerFull };

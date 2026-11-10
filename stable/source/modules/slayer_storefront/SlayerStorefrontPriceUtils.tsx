@@ -1,12 +1,12 @@
-// Module ID: 7370
-// Function ID: 7371
+// Module ID: 7412
+// Function ID: 7413
 // Name: SlayerStorefrontPriceUtils
-// Dependencies: [1087, 1098, 2]
+// Dependencies: [1072, 1083, 2]
 // Exports: getCountryPrices, hasPrice, isGiftPriceDifferent
 
-// Module 7370 (SlayerStorefrontPriceUtils)
-import Constants from "Constants" /* 1087 */;
-import Constants2 from "Constants" /* 1098 */;
+// Module 7412 (SlayerStorefrontPriceUtils)
+import Constants from "Constants" /* 1072 */;
+import Constants2 from "Constants" /* 1083 */;
 import size from "module_2" /* 2 */;
 
 function getPrice(price, arg1) {
@@ -38,7 +38,7 @@ const constants = Constants.PriceSetAssignmentPurchaseTypes;
 const CurrencyCodes = Constants2.CurrencyCodes;
 const result = size.fileFinishedImporting("modules/slayer_storefront/SlayerStorefrontPriceUtils.tsx");
 
-export const getCountryPrices = function getCountryPrices(arg0, arg1) {
+export function getCountryPrices(arg0, arg1) {
   let countryPrices;
   if (null != arg0.prices[arg1]) {
     if (arg0.prices[arg1].countryPrices.prices.length > 0) {
@@ -53,12 +53,12 @@ export const getCountryPrices = function getCountryPrices(arg0, arg1) {
       countryPrices = arg0.prices[tmp.DEFAULT].countryPrices;
     }
   }
-};
+}
 export { getPrice };
-export const hasPrice = function hasPrice(price) {
+export function hasPrice(price) {
   return null != price.price || null != price.prices[constants.DEFAULT];
-};
-export const isGiftPriceDifferent = function isGiftPriceDifferent(arg0) {
+}
+export function isGiftPriceDifferent(arg0) {
   let tmp3 = getPrice(arg0, constants.DEFAULT);
   const tmp = getPrice;
   const tmp2 = constants;
@@ -72,4 +72,4 @@ export const isGiftPriceDifferent = function isGiftPriceDifferent(arg0) {
     const obj2 = { amount: 0, currency: CurrencyCodes.USD };
   }
   return tmp3.currency !== tmpResult.currency || tmp3.amount !== tmpResult.amount;
-};
+}

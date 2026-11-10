@@ -1,150 +1,32 @@
-// Module ID: 13530
-// Function ID: 13531
+// Module ID: 14148
+// Function ID: 14149
 // Name: GuildPowerupsGameServerCard
-// Dependencies: [19, 17, 5004, 8404, 21, 5003, 587, 558, 576, 504, 13531, 13532, 13522, 5153, 13527, 2]
+// Dependencies: [19, 17, 5015, 8469, 21, 5014, 575, 504, 14149, 14150, 14141, 14145, 5169, 2]
+// Exports: default
 
-// Module 13530 (GuildPowerupsGameServerCard)
+// Module 14148 (GuildPowerupsGameServerCard)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 587 */;
-import useGuildPowerupOnShowMoreDefault from "useGuildPowerupOnShowMore" /* 13522 */;
-import GuildPowerupsPerkCardDefault from "GuildPowerupsPerkCard" /* 13527 */;
-import useGameServerPowerupStatusDefault from "useGameServerPowerupStatus" /* 13531 */;
-import useGameServerPerkDefault from "useGameServerPerk" /* 13532 */;
+import nativeDefault from "native" /* 575 */;
+import useGameServerPowerupStatusDefault from "useGameServerPowerupStatus" /* 14149 */;
+import useGameServerPerkDefault from "useGameServerPerk" /* 14150 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5004 */;
-import GameServerStore from "GameServerStore" /* 8404 */;
-import createStyles from "createStyles" /* 5003 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import AccessibilityStore from "AccessibilityStore" /* 5015 */;
+import GameServerStore from "GameServerStore" /* 8469 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
+let tmp5;
+const GuildPowerupsPerkCardDefault = tmp5(14145);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let obj = { riveContainer: obj2 };
 obj2 = { flex: 1, paddingVertical: nativeDefault.space.PX_8 };
 let closure_7 = createStyles.createStyles(obj);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPowerupsGameServerCard(guildId) {
-  let first;
-  let tmp12;
-  let tmp13;
-  let tmp7;
-  let useReducedMotion;
-  const obj = guildId(576);
-  const cResult = obj.c(17);
-  guildId = guildId.guildId;
-  const tmp4 = closure_7();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [GameServerStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== guildId) {
-    const fn = function v() {
-      return GameServerStore.getStateForGuild(guildId);
-    };
-    cResult[1] = guildId;
-    cResult[2] = fn;
-    tmp7 = fn;
-  } else {
-    tmp7 = cResult[2];
-  }
-  const tmpResult = guildId(504);
-  const stateFromStores = tmpResult.useStateFromStores(first, tmp7);
-  const tmp10 = useGameServerPowerupStatusDefault(guildId);
-  const tmp11 = useGameServerPerkDefault(guildId);
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const items1 = [AccessibilityStore];
-    class G {
-      constructor() {
-        return useReducedMotion.useReducedMotion;
-      }
-    }
-    cResult[3] = items1;
-    cResult[4] = G;
-    tmp13 = G;
-    tmp12 = items1;
-  } else {
-    tmp12 = cResult[3];
-    tmp13 = cResult[4];
-  }
-  const tmpResult2 = guildId(504);
-  const stateFromStores1 = tmpResult2.useStateFromStores(tmp12, tmp13);
-  const tmp16 = useGuildPowerupOnShowMoreDefault(guildId, tmp11);
-  let tmp17 = null;
-  if (null != stateFromStores) {
-    tmp17 = null;
-    if (null != tmp11) {
-      let tmp18;
-      if (cResult[5] !== stateFromStores1) {
-        const obj3 = { reducedMotion: null };
-        class G {
-          constructor() {
-            return useReducedMotion.useReducedMotion;
-          }
-        }
-        const tmp20 = jsx(guildId(5153).GameServerHostingRive, { stateMachine: "SM_Auto", dataBinding: obj3 });
-        cResult[5] = stateFromStores1;
-        cResult[6] = tmp20;
-        tmp18 = tmp20;
-      } else {
-        tmp18 = cResult[6];
-      }
-      if (cResult[7] === tmp4.riveContainer) {
-        let tmp21;
-        if (cResult[8] === tmp18) {
-          tmp21 = cResult[9];
-        }
-        if (cResult[10] === tmp11.cost) {
-          if (cResult[11] === tmp11.description) {
-            if (cResult[12] === tmp11.title) {
-              if (cResult[13] === tmp16) {
-                if (cResult[14] === tmp10) {
-                  let tmp24;
-                  if (cResult[15] === tmp21) {
-                    tmp24 = cResult[16];
-                  }
-                  tmp17 = tmp24;
-                }
-              }
-            }
-          }
-        }
-        class G {
-          constructor() {
-            return useReducedMotion.useReducedMotion;
-          }
-        }
-        ({ title: tmp26[0], description: tmp26[1], cost: tmp26[2] } = tmp11);
-        tmp26[4] = tmp21;
-        tmp26[6] = tmp10;
-        tmp26[7] = tmp16;
-        const tmp27 = jsx(GuildPowerupsPerkCardDefault, tmp26);
-        cResult[10] = tmp11.cost;
-        cResult[11] = tmp11.description;
-        cResult[12] = tmp11.title;
-        cResult[13] = tmp16;
-        cResult[14] = tmp10;
-        cResult[15] = tmp21;
-        cResult[16] = tmp27;
-        tmp24 = tmp27;
-      }
-      class G {
-        constructor() {
-          return useReducedMotion.useReducedMotion;
-        }
-      }
-      const tmp23 = <View style={tmp4.riveContainer}>{tmp18}</View>;
-      cResult[7] = tmp4.riveContainer;
-      cResult[8] = tmp18;
-      cResult[9] = tmp23;
-      tmp21 = tmp23;
-    }
-  }
-  return tmp17;
-}) : (function GuildPowerupsGameServerCard(guildId) {
+const result = size.fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsGameServerCard.tsx");
+
+export default function GuildPowerupsGameServerCard(guildId) {
   let useReducedMotion;
   guildId = guildId.guildId;
   const items = [GameServerStore];
@@ -167,7 +49,4 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPower
     }
   }
   return tmp10;
-});
-const result = size.fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsGameServerCard.tsx");
-
-export default tmp3;
+};

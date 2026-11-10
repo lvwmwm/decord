@@ -1,11 +1,11 @@
-// Module ID: 19531
-// Function ID: 19532
+// Module ID: 20152
+// Function ID: 20153
 // Name: MarkAsRead
-// Dependencies: [1087, 7238, 2]
+// Dependencies: [1072, 7279, 2]
 
-// Module 19531 (MarkAsRead)
-import ReadStateActionCreators from "ReadStateActionCreators" /* 7238 */;
-import Constants from "Constants" /* 1087 */;
+// Module 20152 (MarkAsRead)
+import ReadStateActionCreators from "ReadStateActionCreators" /* 7279 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 let c2;

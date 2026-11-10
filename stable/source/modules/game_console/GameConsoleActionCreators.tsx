@@ -1,20 +1,20 @@
-// Module ID: 11684
-// Function ID: 11685
+// Module ID: 11979
+// Function ID: 11980
 // Name: GameConsoleActionCreators
-// Dependencies: [5, 5746, 5748, 5747, 1087, 1267, 584, 5940, 1128, 5889, 11685, 1297, 1257, 2]
+// Dependencies: [5, 5764, 5766, 5765, 1072, 1252, 572, 5958, 1113, 5921, 11980, 1282, 1242, 2]
 // Exports: connectToRemote, fetchDevices, getConnectNonce, persistSelectedDeviceId, remoteAudioSettingsUpdate, remoteDisconnect, remoteVoiceStateUpdate, waitForSession
 
-// Module 11684 (GameConsoleActionCreators)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import HTTPUtils from "HTTPUtils" /* 1297 */;
-import AudioSettingsUtils from "AudioSettingsUtils" /* 5889 */;
-import ConsoleHandoffType from "ConsoleHandoffType" /* 11685 */;
+// Module 11979 (GameConsoleActionCreators)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
+import AudioSettingsUtils from "AudioSettingsUtils" /* 5921 */;
+import ConsoleHandoffType from "ConsoleHandoffType" /* 11980 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5746 */;
-import SessionsStore from "SessionsStore" /* 5748 */;
-import GameConsoleStore from "GameConsoleStore" /* 5747 */;
-import Constants from "Constants" /* 1087 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5764 */;
+import SessionsStore from "SessionsStore" /* 5766 */;
+import GameConsoleStore from "GameConsoleStore" /* 5765 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 let awaitingRemoteSessionInfo, body, c1, closure_4, closure_5, error;
@@ -39,7 +39,7 @@ let obj = function _disconnectRemote() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -122,7 +122,7 @@ let obj = function _disconnectRemote() {
             c3 = 0;
           }
           c4 = 3;
-          return { value: "IconComponent", done: "+352" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp30) {
         let closure_2 = tmp30;
@@ -200,7 +200,7 @@ obj = function _fetchDevices() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -284,7 +284,7 @@ obj = function _cancelCommand() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -331,7 +331,7 @@ obj = function _cancelCommand() {
             obj = closure_132_1(closure_132_2[6]);
             obj.dispatch(obj11);
             c8 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp25) {
           closure_5 = tmp25;
@@ -350,18 +350,18 @@ obj = function _cancelCommand() {
 ({ AnalyticEvents: metroImportDefault, Endpoints: metroImportAll, PlatformTypes: c9 } = Constants);
 let result = size.fileFinishedImporting("modules/game_console/GameConsoleActionCreators.tsx");
 
-export const waitForSession = function waitForSession(XBOX, id, nonce) {
+export function waitForSession(XBOX, id, nonce) {
   obj = DispatcherDefault;
   const obj2 = { type: "WAIT_FOR_REMOTE_SESSION", sessionType: XBOX, nonce, channelId: id };
   obj.dispatch(obj2);
-};
+}
 export { disconnectRemote };
-export const connectToRemote = function connectToRemote(sessionId) {
+export function connectToRemote(sessionId) {
   obj = DispatcherDefault;
   const obj2 = { type: "REMOTE_SESSION_CONNECT", sessionId };
   obj.dispatch(obj2);
-};
-export const remoteVoiceStateUpdate = function remoteVoiceStateUpdate(remoteSessionId, arg1) {
+}
+export function remoteVoiceStateUpdate(remoteSessionId, arg1) {
   let selfDeaf;
   let selfMute;
   ({ selfMute, selfDeaf } = arg1);
@@ -380,8 +380,8 @@ export const remoteVoiceStateUpdate = function remoteVoiceStateUpdate(remoteSess
     }
   }
   track(REMOTE_COMMAND_SENT, { command_type: "VOICE_STATE_UPDATE", remote_platform: os });
-};
-export const remoteDisconnect = function remoteDisconnect(remoteSessionId) {
+}
+export function remoteDisconnect(remoteSessionId) {
   const action = { type: "REMOTE_COMMAND", sessionId: remoteSessionId, payload: { type: "DISCONNECT" } };
   obj = DispatcherDefault;
   obj.dispatch(action);
@@ -398,8 +398,8 @@ export const remoteDisconnect = function remoteDisconnect(remoteSessionId) {
   }
   track(REMOTE_COMMAND_SENT, { command_type: "DISCONNECT", remote_platform: os });
   disconnectRemote();
-};
-export const remoteAudioSettingsUpdate = function remoteAudioSettingsUpdate(sessionId, id, arg2, arg3) {
+}
+export function remoteAudioSettingsUpdate(sessionId, id, arg2, arg3) {
   let obj2;
   obj = AudioSettingsUtils;
   const result = obj.coerceAudioContextForProto(arg2);
@@ -424,17 +424,17 @@ export const remoteAudioSettingsUpdate = function remoteAudioSettingsUpdate(sess
     const obj3 = { command_type: "AUDIO_SETTINGS_UPDATE", remote_platform: os };
     track(REMOTE_COMMAND_SENT, obj3);
   }
-};
-export const getConnectNonce = function getConnectNonce() {
+}
+export function getConnectNonce() {
   return obj(...arguments);
-};
+}
 export { cancelConnectRequest };
-export const fetchDevices = function fetchDevices() {
+export function fetchDevices() {
   return obj(...arguments);
-};
-export const persistSelectedDeviceId = function persistSelectedDeviceId(platform, value) {
+}
+export function persistSelectedDeviceId(platform, value) {
   obj = DispatcherDefault;
   const obj2 = { type: "GAME_CONSOLE_SELECT_DEVICE", platform, deviceId: value };
   obj.dispatch(obj2);
-};
+}
 export { cancelCommand };

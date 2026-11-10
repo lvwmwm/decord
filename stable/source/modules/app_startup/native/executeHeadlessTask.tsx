@@ -1,22 +1,22 @@
-// Module ID: 19526
-// Function ID: 19527
+// Module ID: 20147
+// Function ID: 20148
 // Name: executeHeadlessTask
-// Dependencies: [5, 17, 502, 18742, 1087, 3, 1257, 10132, 15, 9, 15015, 1267, 1275, 18829, 4850, 2]
+// Dependencies: [5, 17, 502, 19354, 1072, 3, 1242, 10212, 15, 9, 15555, 1252, 1260, 19449, 4858, 2]
 // Exports: default
 
-// Module 19526 (executeHeadlessTask)
+// Module 20147 (executeHeadlessTask)
 import LoggerDefault from "Logger" /* 3 */;
 import TTITrackerDefault from "TTITracker" /* 9 */;
 import fast_connect from "fast_connect" /* 15 */;
 import react_native from "react-native" /* 17 */;
-import Constants from "Constants" /* 1087 */;
-import SentryUtilsDefault from "SentryUtils" /* 1257 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import RequestGatewaySocketAll from "RequestGatewaySocket" /* 10132 */;
-import PauseGatewaySocketAll from "PauseGatewaySocket" /* 15015 */;
+import Constants from "Constants" /* 1072 */;
+import SentryUtilsDefault from "SentryUtils" /* 1242 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import RequestGatewaySocketAll from "RequestGatewaySocket" /* 10212 */;
+import PauseGatewaySocketAll from "PauseGatewaySocket" /* 15555 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import NativeAppStartup from "NativeAppStartup" /* 18742 */;
+import NativeAppStartup from "NativeAppStartup" /* 19354 */;
 import size from "module_2" /* 2 */;
 
 let closure_10, closure_7, closure_8, duration_ms, value2;
@@ -47,7 +47,7 @@ let obj = function _executeHeadlessTask() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -359,7 +359,7 @@ let obj = function _executeHeadlessTask() {
               closure_8 = closure_10;
               value.warn("Failed to submit analytics", closure_8);
               c12 = 3;
-              return { value: "IconComponent", done: "+352" };
+              return { value: "HermesInternal", done: null };
             }
             case 13:
             {

@@ -27,7 +27,7 @@ export function setWrapperComponentProvider(arg0) {
 export function setRootViewStyleProvider(arg0) {
   let closure_1_4 = arg0;
 }
-export const registerConfig = function registerConfig(arr) {
+export function registerConfig(arr) {
   const item = arr.forEach((run) => {
     let component;
     if (run.run) {
@@ -49,8 +49,8 @@ export const registerConfig = function registerConfig(arr) {
       }
     }
   });
-};
-export const registerComponent = function registerComponent(Discord, arg1, arg2) {
+}
+export function registerComponent(Discord, arg1, arg2) {
   let closure_0 = Discord;
   let closure_1 = arg1;
   closure_5[Discord] = (arg0, displayMode) => {
@@ -66,12 +66,12 @@ export const registerComponent = function registerComponent(Discord, arg1, arg2)
     closure_6[Discord] = tmp[Discord];
   }
   return Discord;
-};
-export const registerRunnable = function registerRunnable(Discord, arg1) {
+}
+export function registerRunnable(Discord, arg1) {
   closure_5[Discord] = arg1;
   return Discord;
-};
-export const registerSection = function registerSection(arg0, arg1) {
+}
+export function registerSection(arg0, arg1) {
   let closure_0 = arg0;
   let closure_1 = arg1;
   closure_5[arg0] = (arg0, displayMode) => {
@@ -83,32 +83,32 @@ export const registerSection = function registerSection(arg0, arg1) {
     _default(obj);
   };
   closure_6[arg0] = closure_5[arg0];
-};
-export const getAppKeys = function getAppKeys() {
+}
+export function getAppKeys() {
   return Object.keys(closure_5);
-};
-export const getSectionKeys = function getSectionKeys() {
+}
+export function getSectionKeys() {
   return Object.keys(closure_6);
-};
-export const getSections = function getSections() {
+}
+export function getSections() {
   const obj = {};
   const merged = Object.assign(closure_6);
   return obj;
-};
-export const getRunnable = function getRunnable(Discord) {
+}
+export function getRunnable(Discord) {
   return closure_5[Discord];
-};
-export const getRegistry = function getRegistry() {
+}
+export function getRegistry() {
   let obj2;
   const obj = { sections: Object.keys(closure_6), runnables: obj2 };
   obj2 = {};
   const merged = Object.assign(closure_5);
   return obj;
-};
+}
 export function setComponentProviderInstrumentationHook(arg0) {
   componentProviderInstrumentationHook = arg0;
 }
-export const runApplication = function runApplication(name, arg1, arg2) {
+export function runApplication(name, arg1, arg2) {
   if ("LogBox" !== name) {
     const _HermesInternal = HermesInternal;
     const _console = console;
@@ -122,8 +122,8 @@ export const runApplication = function runApplication(name, arg1, arg2) {
   const tmp6 = closure_5[name];
   const obj3 = frozen;
   tmp6(arg1, obj3.coerceDisplayMode(arg2));
-};
-export const setSurfaceProps = function setSurfaceProps(arg0, arg1, arg2) {
+}
+export function setSurfaceProps(arg0, arg1, arg2) {
   if ("LogBox" !== arg0) {
     const _JSON = JSON;
     const text = `Updating props for Surface "${arg0}`;
@@ -135,11 +135,11 @@ export const setSurfaceProps = function setSurfaceProps(arg0, arg1, arg2) {
   const tmp6 = closure_5[arg0];
   const obj = frozen;
   tmp6(arg1, obj.coerceDisplayMode(arg2));
-};
-export const unmountApplicationComponentAtRootTag = function unmountApplicationComponentAtRootTag(arg0) {
+}
+export function unmountApplicationComponentAtRootTag(arg0) {
   console.error("Unexpected call to unmountApplicationComponentAtRootTag in Fabric.");
-};
-export const registerHeadlessTask = function registerHeadlessTask(BackgroundSync, arg1) {
+}
+export function registerHeadlessTask(BackgroundSync, arg1) {
   const obj = map;
   if (map.has(BackgroundSync)) {
     const _console = console;
@@ -151,8 +151,8 @@ export const registerHeadlessTask = function registerHeadlessTask(BackgroundSync
   };
   const result = obj.set(BackgroundSync, arg1);
   const result1 = map1.set(BackgroundSync, fn);
-};
-export const registerCancellableHeadlessTask = function registerCancellableHeadlessTask(arg0, arg1, arg2) {
+}
+export function registerCancellableHeadlessTask(arg0, arg1, arg2) {
   const obj = map;
   if (map.has(arg0)) {
     const _console = console;
@@ -161,8 +161,8 @@ export const registerCancellableHeadlessTask = function registerCancellableHeadl
   }
   const result = obj.set(arg0, arg1);
   const result1 = map1.set(arg0, arg2);
-};
-export const startHeadlessTask = function startHeadlessTask(arg0, arg1, arg2) {
+}
+export function startHeadlessTask(arg0, arg1, arg2) {
   let closure_0;
   _require = arg0;
   const _default = require("HeadlessJsTaskSupport").default;
@@ -201,8 +201,8 @@ export const startHeadlessTask = function startHeadlessTask(arg0, arg1, arg2) {
       _default.notifyTaskFinished(arg0);
     }
   }
-};
-export const cancelHeadlessTask = function cancelHeadlessTask(arg0, arg1) {
+}
+export function cancelHeadlessTask(arg0, arg1) {
   const value = map1.get(arg1);
   if (value) {
     value()();
@@ -214,4 +214,4 @@ export const cancelHeadlessTask = function cancelHeadlessTask(arg0, arg1) {
     const error = new Error("No task canceller registered for key '" + arg1 + "'");
     throw error;
   }
-};
+}

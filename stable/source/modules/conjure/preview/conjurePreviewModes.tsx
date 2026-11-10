@@ -1,11 +1,11 @@
-// Module ID: 11903
-// Function ID: 11904
+// Module ID: 12083
+// Function ID: 12084
 // Name: conjurePreviewModes
-// Dependencies: [10761, 6806, 11904, 2]
-// Exports: permissionReviewBlocksMode, previewCapabilitiesFromSurfaces, previewModeAvailability, profileSurfaceAvailability, profileWidgetState, requiresPermissionReview, resolvePreviewMode, showsFramePreview
+// Dependencies: [10884, 6845, 12084, 2]
+// Exports: previewBotInstallBlocksMode, previewCapabilitiesFromSurfaces, previewModeAvailability, profileSurfaceAvailability, profileWidgetState, requiresPermissionReview, resolvePreviewMode, showsFramePreview
 
-// Module 11903 (conjurePreviewModes)
-import conjurePreviewFrameSurfaces from "conjurePreviewFrameSurfaces" /* 10761 */;
+// Module 12083 (conjurePreviewModes)
+import conjurePreviewFrameSurfaces from "conjurePreviewFrameSurfaces" /* 10884 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -27,7 +27,7 @@ let obj = {
 };
 const result = size.fileFinishedImporting("modules/conjure/preview/conjurePreviewModes.tsx");
 
-export const previewCapabilitiesFromSurfaces = function previewCapabilitiesFromSurfaces(previewSupportedSurfaces, arg1) {
+export function previewCapabilitiesFromSurfaces(previewSupportedSurfaces, arg1) {
   let botDmResolvable;
   let legacy;
   let obj2;
@@ -40,18 +40,18 @@ export const previewCapabilitiesFromSurfaces = function previewCapabilitiesFromS
       obj = { hasFrame: obj2.declaresPreviewFrame(previewSupportedSurfaces), hasProfileWidget: widgetResolvable, hasBotDm: botDmResolvable };
       obj2 = conjurePreviewFrameSurfaces;
       if (widgetResolvable) {
-        widgetResolvable = previewSupportedSurfaces.includes(tmp3(6806).ConjureSupportedSurface.PROFILE_WIDGET);
+        widgetResolvable = previewSupportedSurfaces.includes(tmp3(6845).ConjureSupportedSurface.PROFILE_WIDGET);
       }
       if (botDmResolvable) {
-        const hasItem = previewSupportedSurfaces.includes(tmp3(6806).ConjureSupportedSurface.BOT) || previewSupportedSurfaces.includes(tmp3(6806).ConjureSupportedSurface.APPLICATION_COMMANDS);
+        const hasItem = previewSupportedSurfaces.includes(tmp3(6845).ConjureSupportedSurface.BOT) || previewSupportedSurfaces.includes(tmp3(6845).ConjureSupportedSurface.APPLICATION_COMMANDS);
         botDmResolvable = hasItem;
       }
       tmp = obj;
     }
   }
   return tmp;
-};
-export const previewModeAvailability = function previewModeAvailability(installScope) {
+}
+export function previewModeAvailability(installScope) {
   let first;
   let str;
   _require = installScope;
@@ -70,8 +70,8 @@ export const previewModeAvailability = function previewModeAvailability(installS
     }
   }
   return obj;
-};
-export const profileWidgetState = function profileWidgetState(installScope) {
+}
+export function profileWidgetState(installScope) {
   let str = "available";
   if ("user" === installScope.installScope) {
     str = "available";
@@ -80,8 +80,8 @@ export const profileWidgetState = function profileWidgetState(installScope) {
     }
   }
   return str;
-};
-export const resolvePreviewMode = function resolvePreviewMode(arg0, result2) {
+}
+export function resolvePreviewMode(arg0, result2) {
   let defaultMode = arg0;
   if (null == arg0) {
     defaultMode = result2.defaultMode;
@@ -89,8 +89,8 @@ export const resolvePreviewMode = function resolvePreviewMode(arg0, result2) {
     const modes = result2.modes;
   }
   return defaultMode;
-};
-export const showsFramePreview = function showsFramePreview(modes, arg1) {
+}
+export function showsFramePreview(modes, arg1) {
   let hasItem = "frame" === arg1;
   if (hasItem) {
     modes = modes.modes;
@@ -100,8 +100,8 @@ export const showsFramePreview = function showsFramePreview(modes, arg1) {
     hasItem = 0 === modes.modes.length;
   }
   return hasItem;
-};
-export const profileSurfaceAvailability = function profileSurfaceAvailability(widgetTop) {
+}
+export function profileSurfaceAvailability(widgetTop) {
   let tmp = widgetTop.widgetTop && widgetTop.widgetBottom;
   const miniProfile = widgetTop.miniProfile;
   obj = { hasMainCard: tmp, hasPopoutCard: miniProfile, hasAny: tmp };
@@ -109,8 +109,8 @@ export const profileSurfaceAvailability = function profileSurfaceAvailability(wi
     tmp = miniProfile;
   }
   return obj;
-};
-export const requiresPermissionReview = function requiresPermissionReview(arg0) {
+}
+export function requiresPermissionReview(arg0) {
   let botPermissionsChanged;
   let installScope;
   let integrationInstalled;
@@ -130,22 +130,31 @@ export const requiresPermissionReview = function requiresPermissionReview(arg0) 
     tmp3 = tmp4;
   }
   return tmp3;
-};
-export const permissionReviewBlocksMode = function permissionReviewBlocksMode(activeMode, result, arg2) {
-  let flag = arg2;
-  if (arg2 === undefined) {
-    flag = false;
-  }
-  let tmp = result;
+}
+export function previewBotInstallBlocksMode(activeMode, arg1) {
+  let botPermissionsChanged;
+  let installScope;
+  let integrationInstalled;
+  let previewReady;
+  let tmp = "bot" === activeMode;
   if (tmp) {
-    let tmp3 = "bot" === activeMode;
-    if (!tmp3) {
-      if (flag) {
-        flag = "frame" === activeMode;
-      }
-      tmp3 = flag;
+    obj = { botPermissionsChanged: false };
+    const merged = Object.assign(arg1);
+    ({ previewReady, integrationInstalled } = obj);
+    let tmp5 = !previewReady;
+    ({ installScope, botPermissionsChanged } = obj);
+    if (previewReady) {
+      tmp5 = null == integrationInstalled;
     }
-    tmp = tmp3;
+    let tmp7 = !tmp5;
+    if (tmp7) {
+      let tmp8 = botPermissionsChanged;
+      if (!tmp8) {
+        tmp8 = "user" !== installScope && !integrationInstalled;
+      }
+      tmp7 = tmp8;
+    }
+    tmp = tmp7;
   }
   return tmp;
-};
+}

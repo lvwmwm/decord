@@ -1,12 +1,12 @@
-// Module ID: 8824
-// Function ID: 8825
+// Module ID: 8875
+// Function ID: 8876
 // Name: MediaPlaybackExperiment
-// Dependencies: [1455, 8825, 2]
+// Dependencies: [1447, 8876, 2]
 // Exports: initializeMediaPlaybackExperiment, isNativeMediaPlaybackEnabled
 
-// Module 8824 (MediaPlaybackExperiment)
-import react_nativeDefault from "react-native" /* 8825 */;
-import ApexExperiment from "ApexExperiment" /* 1455 */;
+// Module 8875 (MediaPlaybackExperiment)
+import react_nativeDefault from "react-native" /* 8876 */;
+import ApexExperiment from "ApexExperiment" /* 1447 */;
 import size from "module_2" /* 2 */;
 
 let closure_2;
@@ -15,15 +15,15 @@ let obj = { kind: "user", name: "2026-10-mobile-media-playback", defaultConfig: 
 const config = ApexExperiment.createApexExperiment(obj);
 let result = size.fileFinishedImporting("modules/media_playback/native/MediaPlaybackExperiment.tsx");
 
-export const initializeMediaPlaybackExperiment = function initializeMediaPlaybackExperiment() {
+export function initializeMediaPlaybackExperiment() {
   const enabled = config.getConfig({ location: "loaded" }).enabled;
   const obj = react_nativeDefault;
   const result = obj.setEnabledForNextLaunch(enabled);
-};
-export const isNativeMediaPlaybackEnabled = function isNativeMediaPlaybackEnabled() {
+}
+export function isNativeMediaPlaybackEnabled() {
   if (closure_2 == null) {
     const obj = react_nativeDefault;
     closure_2 = obj.isEnabled();
   }
   return closure_2;
-};
+}

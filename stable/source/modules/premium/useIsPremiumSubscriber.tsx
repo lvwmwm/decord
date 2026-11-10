@@ -1,50 +1,20 @@
-// Module ID: 11114
-// Function ID: 11115
+// Module ID: 11417
+// Function ID: 11418
 // Name: useIsPremiumSubscriber
-// Dependencies: [1392, 1394, 558, 576, 1991, 504, 2]
+// Dependencies: [1383, 1385, 504, 1983, 2]
+// Exports: useIsPremiumSubscriber
 
-// Module 11114 (useIsPremiumSubscriber)
-import PremiumConstants from "PremiumConstants" /* 1394 */;
-import PremiumTypeUtils from "PremiumTypeUtils" /* 1991 */;
-import UserStore from "UserStore" /* 1392 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 11417 (useIsPremiumSubscriber)
+import PremiumConstants from "PremiumConstants" /* 1385 */;
+import PremiumTypeUtils from "PremiumTypeUtils" /* 1983 */;
+import UserStore from "UserStore" /* 1383 */;
 import size from "module_2" /* 2 */;
 
 const PremiumTypes = PremiumConstants.PremiumTypes;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsPremiumSubscriber(arg0) {
-  let first;
-  let tmp7;
-  let TIER_2 = arg0;
-  let obj = TIER_2(576);
-  const cResult = obj.c(3);
-  const tmp = TIER_2;
-  if (undefined === arg0) {
-    TIER_2 = PremiumTypes.TIER_2;
-  }
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [UserStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== TIER_2) {
-    const fn = function c() {
-      const currentUser = UserStore.getCurrentUser();
-      const obj = PremiumTypeUtils;
-      return obj.isPremiumExactly(currentUser, TIER_2);
-    };
-    cResult[1] = TIER_2;
-    cResult[2] = fn;
-    tmp7 = fn;
-  } else {
-    tmp7 = cResult[2];
-  }
-  const tmpResult = tmp(504);
-  return tmpResult.useStateFromStores(first, tmp7);
-}) : (function useIsPremiumSubscriber() {
-  let TIER_2 = arg0;
-  if (arg0 === undefined) {
+const result = size.fileFinishedImporting("modules/premium/useIsPremiumSubscriber.tsx");
+
+export function useIsPremiumSubscriber(TIER_2) {
+  if (TIER_2 === undefined) {
     TIER_2 = PremiumTypes.TIER_2;
   }
   let obj = TIER_2(504);
@@ -54,7 +24,4 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsPremi
     const obj = PremiumTypeUtils;
     return obj.isPremiumExactly(currentUser, TIER_2);
   });
-});
-const result = size.fileFinishedImporting("modules/premium/useIsPremiumSubscriber.tsx");
-
-export const useIsPremiumSubscriber = tmp2;
+}

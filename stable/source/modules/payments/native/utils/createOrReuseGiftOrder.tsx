@@ -1,15 +1,15 @@
-// Module ID: 10531
-// Function ID: 10532
+// Module ID: 10613
+// Function ID: 10614
 // Name: createOrReuseGiftOrder
-// Dependencies: [5, 19, 5730, 1394, 1098, 3, 7573, 1384, 2049, 4819, 2]
+// Dependencies: [5, 19, 5747, 1385, 1083, 3, 7614, 1375, 2042, 4827, 2]
 // Exports: useCreateOrReuseGiftOrder
 
-// Module 10531 (createOrReuseGiftOrder)
+// Module 10613 (createOrReuseGiftOrder)
 import LoggerDefault from "Logger" /* 3 */;
-import Constants from "Constants" /* 1098 */;
-import PremiumConstants from "PremiumConstants" /* 1394 */;
-import _modDef2049 from "module_2049" /* 2049 */;
-import PaymentConstants from "PaymentConstants" /* 5730 */;
+import Constants from "Constants" /* 1083 */;
+import PremiumConstants from "PremiumConstants" /* 1385 */;
+import _modDef2042 from "module_2042" /* 2042 */;
+import PaymentConstants from "PaymentConstants" /* 5747 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -23,7 +23,7 @@ let closure_8 = new LoggerDefault("createOrReuseGiftOrder");
 const tmp2 = new LoggerDefault("createOrReuseGiftOrder");
 let result = size.fileFinishedImporting("modules/payments/native/utils/createOrReuseGiftOrder.tsx");
 
-export const useCreateOrReuseGiftOrder = function useCreateOrReuseGiftOrder(GiftPurchaseButton) {
+export function useCreateOrReuseGiftOrder(GiftPurchaseButton) {
   const useCallback = react.useCallback;
   let closure_0 = _asyncToGenerator(async function(arg0, value) {
     let APPLE;
@@ -44,7 +44,7 @@ export const useCreateOrReuseGiftOrder = function useCreateOrReuseGiftOrder(Gift
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c4;
@@ -72,7 +72,7 @@ export const useCreateOrReuseGiftOrder = function useCreateOrReuseGiftOrder(Gift
             skuId = undefined;
             c5 = 1;
             c6 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "flexDirection", done: true };
           }
         } else {
           let error;
@@ -105,7 +105,7 @@ export const useCreateOrReuseGiftOrder = function useCreateOrReuseGiftOrder(Gift
                 } else {
                   APPLE = tmp60.APPLE;
                 }
-                const obj6 = _modDef2049();
+                const obj6 = _modDef2042();
                 const utcResult = obj6.utc();
                 subtractResult = utcResult.subtract(location(dependencyMap[6]).DRAFT_ORDER_LOOKBACK_DAYS, "days");
                 obj7 = { line_items: items };
@@ -159,4 +159,4 @@ export const useCreateOrReuseGiftOrder = function useCreateOrReuseGiftOrder(Gift
   return useCallback(function() {
     return closure_0(...arguments);
   }, items);
-};
+}

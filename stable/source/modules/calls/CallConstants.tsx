@@ -1,10 +1,10 @@
-// Module ID: 5664
-// Function ID: 5665
+// Module ID: 5681
+// Function ID: 5682
 // Name: CallConstants
 // Dependencies: [2]
 // Exports: isActivityParticipant, isStreamParticipant, isUserParticipant
 
-// Module 5664 (CallConstants)
+// Module 5681 (CallConstants)
 import size from "module_2" /* 2 */;
 
 const ParticipantTypes = { STREAM: 0, [0]: "STREAM", HIDDEN_STREAM: 1, [1]: "HIDDEN_STREAM", USER: 2, [2]: "USER", ACTIVITY: 3, [3]: "ACTIVITY" };
@@ -16,35 +16,35 @@ export const ContextMenuTileTypes = { STREAM: "STREAM", USER: "USER", ACTIVITY: 
 export const ParticipantSelectionTypes = { NONE: "NONE", AUTO: "AUTO" };
 export const VoicePlatforms = { DESKTOP: 0, [0]: "DESKTOP", MOBILE: 1, [1]: "MOBILE", XBOX: 2, [2]: "XBOX", PLAYSTATION: 3, [3]: "PLAYSTATION", QUEST: 4, [4]: "QUEST" };
 export const CallMenuEntrypoint = { CONTEXT_MENU: "Context Menu", THREE_DOT: "Three-Dot", CARET: "Caret", OTHER_BUTTON: "Other Button" };
-export const isStreamParticipant = function isStreamParticipant(stateFromStores) {
+export function isStreamParticipant(selectedParticipant) {
   let type;
-  if (stateFromStores != null) {
-    type = stateFromStores.type;
+  if (selectedParticipant != null) {
+    type = selectedParticipant.type;
   }
   let tmp3 = type === obj.STREAM;
   if (!tmp3) {
     let type1;
-    if (stateFromStores != null) {
-      type1 = stateFromStores.type;
+    if (selectedParticipant != null) {
+      type1 = selectedParticipant.type;
     }
     tmp3 = type1 === tmp2.HIDDEN_STREAM;
   }
   return tmp3;
-};
-export const isUserParticipant = function isUserParticipant(type) {
+}
+export function isUserParticipant(type) {
   type = undefined;
   if (type != null) {
     type = type.type;
   }
   return type === obj.USER;
-};
-export const isActivityParticipant = function isActivityParticipant(participant) {
+}
+export function isActivityParticipant(participant) {
   let type;
   if (participant != null) {
     type = participant.type;
   }
   return type === obj.ACTIVITY;
-};
+}
 export const PictureInPictureTypes = obj2;
 export const DEFAULT_PIP_WIDTH = { [obj2.VIDEO]: 320, [obj2.CAMERA_PREVIEW]: 160 };
 export const MAX_PIP_WIDTH = { [obj2.VIDEO]: 960, [obj2.CAMERA_PREVIEW]: 480 };

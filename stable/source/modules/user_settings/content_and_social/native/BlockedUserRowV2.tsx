@@ -1,186 +1,26 @@
-// Module ID: 16129
-// Function ID: 16130
+// Module ID: 16702
+// Function ID: 16703
 // Name: BlockedUserRowV2
-// Dependencies: [19, 1392, 21, 7446, 558, 576, 7285, 1128, 8700, 1202, 16130, 5276, 6935, 504, 2]
+// Dependencies: [19, 1383, 21, 7488, 7326, 1113, 8750, 6975, 1187, 16703, 5634, 504, 2]
+// Exports: default
 
-// Module 16129 (BlockedUserRowV2)
+// Module 16702 (BlockedUserRowV2)
 import Fragment from "Fragment" /* 21 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7446 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8700 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7488 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8750 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1392 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import UserStore from "UserStore" /* 1383 */;
 import size from "module_2" /* 2 */;
 
-let dependencyMap;
-
-const jsx = Fragment.jsx;
-let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BlockedUserRow(userRecord) {
-  let analyticsLocations;
-  let closure_2;
-  let obj = userRecord(576);
-  const cResult = obj.c(29);
-  userRecord = userRecord.userRecord;
-  analyticsLocations = analyticsLocations(7285)().analyticsLocations;
-  if (cResult[0] === userRecord.globalName) {
-    let tmp4;
-    if (cResult[1] === userRecord.username) {
-      tmp4 = cResult[2];
-    }
-    if (cResult[3] === analyticsLocations) {
-      let tmp6;
-      if (cResult[4] === userRecord.id) {
-        tmp6 = cResult[5];
-      }
-      dependencyMap = tmp6;
-      if (cResult[6] === tmp6) {
-        let tmp7;
-        let tmp8;
-        let tmp12;
-        let tmp13;
-        if (cResult[7] === userRecord.id) {
-          tmp7 = cResult[8];
-        }
-        if (cResult[9] !== userRecord) {
-          const Avatar = tmp(1202).Avatar;
-          const tmp10 = <Avatar user={userRecord} guildId="Array" size={userRecord(1202).AvatarSizes.REFRESH_MEDIUM_32} />;
-          cResult[9] = userRecord;
-          cResult[10] = tmp10;
-          tmp8 = tmp10;
-        } else {
-          tmp8 = cResult[10];
-        }
-        const _Symbol = Symbol;
-        if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-          const obj3 = { name: "activate" };
-          cResult[11] = obj3;
-          tmp12 = obj3;
-        } else {
-          tmp12 = cResult[11];
-        }
-        if (cResult[12] !== tmp4) {
-          const items = [tmp12, ];
-          const obj4 = { name: "unblock", label: tmp4 };
-          items[1] = obj4;
-          cResult[12] = tmp4;
-          cResult[13] = items;
-          tmp13 = items;
-        } else {
-          tmp13 = cResult[13];
-        }
-        if (cResult[14] === tmp7) {
-          if (cResult[15] === tmp13) {
-            let tmp14;
-            let tmp17;
-            let tmp19;
-            if (cResult[16] === userRecord) {
-              tmp14 = cResult[17];
-            }
-            const _Symbol2 = Symbol;
-            if (cResult[18] === Symbol.for("react.memo_cache_sentinel")) {
-              const intl2 = tmp(1128).intl;
-              const stringResult = intl2.string(userRecord(1128).t["PR/xUz"]);
-              cResult[18] = stringResult;
-              tmp17 = stringResult;
-            } else {
-              tmp17 = cResult[18];
-            }
-            if (cResult[19] !== userRecord.id) {
-              const fn = function k() {
-                const id = userRecord.id;
-                const obj = RelationshipActionCreatorsDefault;
-                obj.unblockUser(id, { location: "blocked-users-list-mobile-v2" });
-              };
-              cResult[19] = userRecord.id;
-              cResult[20] = fn;
-              tmp19 = fn;
-            } else {
-              tmp19 = cResult[20];
-            }
-            if (cResult[21] === tmp19) {
-              let tmp20;
-              if (cResult[22] === tmp4) {
-                tmp20 = cResult[23];
-              }
-              if (cResult[24] === tmp6) {
-                if (cResult[25] === tmp20) {
-                  if (cResult[26] === tmp8) {
-                    let tmp23;
-                    if (cResult[27] === tmp14) {
-                      tmp23 = cResult[28];
-                    }
-                    return tmp23;
-                  }
-                }
-              }
-              const tmp25 = jsx(userRecord(6935).TableRow, { accessible: false, icon: tmp8, label: tmp14, onPress: tmp6, trailing: tmp20 });
-              cResult[24] = tmp6;
-              cResult[25] = tmp20;
-              cResult[26] = tmp8;
-              cResult[27] = tmp14;
-              cResult[28] = tmp25;
-              tmp23 = tmp25;
-            }
-            const tmp22 = jsx(userRecord(5276).Button, { size: "sm", variant: "secondary", text: tmp17, accessibilityLabel: tmp4, onPress: tmp19 });
-            cResult[21] = tmp19;
-            cResult[22] = tmp4;
-            cResult[23] = tmp22;
-            tmp20 = tmp22;
-          }
-        }
-        const tmp16 = jsx(userRecord(16130).RestrictedUserRowLabel, { userRecord, accessibilityActions: tmp13, onAccessibilityAction: tmp7 });
-        cResult[14] = tmp7;
-        cResult[15] = tmp13;
-        cResult[16] = userRecord;
-        cResult[17] = tmp16;
-        tmp14 = tmp16;
-      }
-      function handleAccessibilityAction(nativeEvent) {
-        const actionName = nativeEvent.nativeEvent.actionName;
-        if ("activate" === actionName) {
-          return closure_2();
-        } else if ("unblock" === actionName) {
-          const id = userRecord.id;
-          const obj = RelationshipActionCreatorsDefault;
-          obj.unblockUser(id, { location: "blocked-users-list-mobile-v2" });
-        }
-      }
-      cResult[6] = tmp6;
-      cResult[7] = userRecord.id;
-      cResult[8] = handleAccessibilityAction;
-      tmp7 = handleAccessibilityAction;
-    }
-    function handleOpenProfile() {
-      const obj = { userId: userRecord.id, sourceAnalyticsLocations: analyticsLocations };
-      showUserProfileActionSheetDefault(obj);
-    }
-    cResult[3] = analyticsLocations;
-    cResult[4] = userRecord.id;
-    cResult[5] = handleOpenProfile;
-    tmp6 = handleOpenProfile;
-  }
-  const intl = tmp(1128).intl;
-  const formatToPlainString = intl.formatToPlainString;
-  let username = userRecord.globalName;
-  const izBDZN = tmp(1128).t.izBDZN;
-  if (username == null) {
-    username = userRecord.username;
-  }
-  const formatToPlainStringResult = formatToPlainString(izBDZN, { name: username });
-  cResult[0] = userRecord.globalName;
-  cResult[1] = userRecord.username;
-  cResult[2] = formatToPlainStringResult;
-  tmp4 = formatToPlainStringResult;
-}) : (function BlockedUserRow(userRecord) {
+function BlockedUserRow(userRecord) {
   let intl2;
   userRecord = userRecord.userRecord;
   let analyticsLocations;
-  analyticsLocations = analyticsLocations(7285)().analyticsLocations;
-  const intl = userRecord(1128).intl;
+  analyticsLocations = analyticsLocations(7326)().analyticsLocations;
+  const intl = userRecord(1113).intl;
   const formatToPlainString = intl.formatToPlainString;
   let username = userRecord.globalName;
-  const izBDZN = userRecord(1128).t.izBDZN;
+  const izBDZN = userRecord(1113).t.izBDZN;
   if (username == null) {
     username = userRecord.username;
   }
@@ -189,14 +29,14 @@ let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Blocked
     showUserProfileActionSheetDefault(obj);
   }
   const formatToPlainStringResult = formatToPlainString(izBDZN, { name: username });
-  const TableRow = tmp2(6935).TableRow;
-  let obj2 = { user: userRecord, guildId: "Array", size: tmp2(1202).AvatarSizes.REFRESH_MEDIUM_32 };
-  const Avatar = tmp2(1202).Avatar;
+  const TableRow = tmp2(6975).TableRow;
+  let obj2 = { user: userRecord, guildId: "Array", size: tmp2(1187).AvatarSizes.REFRESH_MEDIUM_32 };
+  const Avatar = tmp2(1187).Avatar;
   const items = [{ name: "activate" }, { name: "unblock", label: formatToPlainStringResult }];
   ({
     size: "sm",
     variant: "secondary",
-    text: intl2.string(userRecord(1128).t["PR/xUz"]),
+    text: intl2.string(userRecord(1113).t["PR/xUz"]),
     accessibilityLabel: formatToPlainStringResult,
     onPress() {
       const id = userRecord.id;
@@ -204,62 +44,21 @@ let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Blocked
       obj.unblockUser(id, { location: "blocked-users-list-mobile-v2" });
     }
   });
-  const Button = tmp2(5276).Button;
-  intl2 = tmp2(1128).intl;
+  const Button = tmp2(5634).Button;
+  intl2 = tmp2(1113).intl;
   return <TableRow accessible={false} icon={null} label={null} onPress={handleOpenProfile} trailing={null} />;
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedBlockedUserRow(userId) {
-  let first;
-  let tmp6;
-  const obj = userId(576);
-  const cResult = obj.c(5);
-  const tmp = userId;
-  userId = userId.userId;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [UserStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== userId) {
-    const fn = function l() {
-      return UserStore.getUser(userId);
-    };
-    cResult[1] = userId;
-    cResult[2] = fn;
-    tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-  }
-  const tmpResult = tmp(504);
-  const stateFromStores = tmpResult.useStateFromStores(first, tmp6);
-  let tmp8 = null;
-  if (null != stateFromStores) {
-    let tmp9;
-    if (cResult[3] !== stateFromStores) {
-      const tmp12 = <closure_5 userRecord={stateFromStores} />;
-      cResult[3] = stateFromStores;
-      cResult[4] = tmp12;
-      tmp9 = tmp12;
-    } else {
-      tmp9 = cResult[4];
-    }
-    tmp8 = tmp9;
-  }
-  return tmp8;
-}) : (function ConnectedBlockedUserRow(userId) {
+}
+const jsx = Fragment.jsx;
+const result = size.fileFinishedImporting("modules/user_settings/content_and_social/native/BlockedUserRowV2.tsx");
+
+export default function ConnectedBlockedUserRow(userId) {
   userId = userId.userId;
   const items = [UserStore];
   const obj = userId(504);
   const stateFromStores = obj.useStateFromStores(items, () => UserStore.getUser(userId));
   let tmp2 = null;
   if (null != stateFromStores) {
-    tmp2 = <closure_5 userRecord={stateFromStores} />;
+    tmp2 = <BlockedUserRow userRecord={stateFromStores} />;
   }
   return tmp2;
-});
-const result = size.fileFinishedImporting("modules/user_settings/content_and_social/native/BlockedUserRowV2.tsx");
-
-export default tmp3;
+};

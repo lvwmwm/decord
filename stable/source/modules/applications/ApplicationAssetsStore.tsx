@@ -1,12 +1,12 @@
-// Module ID: 8653
-// Function ID: 8654
+// Module ID: 8722
+// Function ID: 8723
 // Name: ApplicationAssetsStore
-// Dependencies: [12, 504, 584, 2]
+// Dependencies: [12, 504, 572, 2]
 
-// Module 8653 (ApplicationAssetsStore)
+// Module 8722 (ApplicationAssetsStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 
 function handleFetchEmbeddedActivityShelfSuccess(assets) {

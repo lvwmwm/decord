@@ -1,13 +1,13 @@
-// Module ID: 7963
-// Function ID: 7964
+// Module ID: 8003
+// Function ID: 8004
 // Name: AppStoreAgeSignalSupport
-// Dependencies: [1630, 4960, 1384, 2]
+// Dependencies: [1622, 4971, 1375, 2]
 // Exports: isAppStoreAgeSignalSupported
 
-// Module 7963 (AppStoreAgeSignalSupport)
-import PlatformUtils from "PlatformUtils" /* 1384 */;
-import MetaQuestUtils from "MetaQuestUtils" /* 1630 */;
-import DeviceUtils from "DeviceUtils" /* 4960 */;
+// Module 8003 (AppStoreAgeSignalSupport)
+import PlatformUtils from "PlatformUtils" /* 1375 */;
+import MetaQuestUtils from "MetaQuestUtils" /* 1622 */;
+import DeviceUtils from "DeviceUtils" /* 4971 */;
 import size from "module_2" /* 2 */;
 
 let c2 = 26;
@@ -16,7 +16,7 @@ const result = size.fileFinishedImporting("modules/age_assurance/native/AppStore
 
 export const MIN_AGE_GATE = 13;
 export const ADULT_AGE_GATE = 18;
-export const isAppStoreAgeSignalSupported = function isAppStoreAgeSignalSupported() {
+export function isAppStoreAgeSignalSupported() {
   const obj = MetaQuestUtils;
   if (obj.isMetaQuest()) {
     return false;
@@ -51,4 +51,4 @@ export const isAppStoreAgeSignalSupported = function isAppStoreAgeSignalSupporte
       return tmp8;
     }
   }
-};
+}

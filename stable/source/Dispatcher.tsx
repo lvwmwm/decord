@@ -1,14 +1,14 @@
-// Module ID: 584
-// Function ID: 585
+// Module ID: 572
+// Function ID: 573
 // Name: Dispatcher
-// Dependencies: [585, 579, 510, 504, 685, 2]
+// Dependencies: [573, 567, 510, 504, 673, 2]
 
-// Module 584 (Dispatcher)
+// Module 572 (Dispatcher)
 import get_initialized from "get initialized" /* 504 */;
 import Storage2 from "Storage" /* 510 */;
-import LoggingUtils from "LoggingUtils" /* 579 */;
-import Constants from "Constants" /* 585 */;
-import addSentryBreadcrumbDefault from "addSentryBreadcrumb" /* 685 */;
+import LoggingUtils from "LoggingUtils" /* 567 */;
+import Constants from "Constants" /* 573 */;
+import addSentryBreadcrumbDefault from "addSentryBreadcrumb" /* 673 */;
 import size from "module_2" /* 2 */;
 
 const STORAGE_KEY_LOG_DISPATCHES = Constants.STORAGE_KEY_LOG_DISPATCHES;

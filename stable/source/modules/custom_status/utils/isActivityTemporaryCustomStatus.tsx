@@ -1,18 +1,17 @@
-// Module ID: 17529
-// Function ID: 17530
+// Module ID: 18120
+// Function ID: 18121
 // Name: isActivityTemporaryCustomStatus
-// Dependencies: [1087, 2]
+// Dependencies: [5762, 2]
 // Exports: isActivityTemporaryCustomStatus
 
-// Module 17529 (isActivityTemporaryCustomStatus)
-import Constants from "Constants" /* 1087 */;
+// Module 18120 (isActivityTemporaryCustomStatus)
+import ActivityTypes from "ActivityTypes" /* 5762 */;
 import size from "module_2" /* 2 */;
 
-const ActivityTypes = Constants.ActivityTypes;
 const result = size.fileFinishedImporting("modules/custom_status/utils/isActivityTemporaryCustomStatus.tsx");
 
-export const isActivityTemporaryCustomStatus = function isActivityTemporaryCustomStatus(type) {
-  let tmp = type.type === ActivityTypes.CUSTOM_STATUS;
+export function isActivityTemporaryCustomStatus(type) {
+  let tmp = type.type === ActivityTypes.ActivityTypes.CUSTOM_STATUS;
   if (tmp) {
     const timestamps = type.timestamps;
     let end;
@@ -30,4 +29,4 @@ export const isActivityTemporaryCustomStatus = function isActivityTemporaryCusto
     tmp = end1 > 0;
   }
   return tmp;
-};
+}

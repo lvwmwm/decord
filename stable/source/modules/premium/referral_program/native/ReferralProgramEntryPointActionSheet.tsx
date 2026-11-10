@@ -1,20 +1,20 @@
-// Module ID: 18456
-// Function ID: 18457
+// Module ID: 19048
+// Function ID: 19049
 // Name: ReferralProgramEntryPointActionSheet
-// Dependencies: [19, 17, 4852, 21, 5003, 587, 5242, 14782, 2002, 5297, 5701, 8457, 5266, 1128, 5276, 2]
+// Dependencies: [19, 17, 4860, 21, 5014, 575, 5258, 15322, 1994, 5272, 5717, 8522, 5624, 1113, 5634, 2]
 // Exports: default
 
-// Module 18456 (ReferralProgramEntryPointActionSheet)
+// Module 19048 (ReferralProgramEntryPointActionSheet)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 587 */;
-import asyncRequire from "asyncRequire" /* 2002 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4852 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5242 */;
-import FastImageDefault from "FastImage" /* 5701 */;
-import _modDef8457 from "module_8457" /* 8457 */;
+import nativeDefault from "native" /* 575 */;
+import asyncRequire from "asyncRequire" /* 1994 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4860 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
+import FastImageDefault from "FastImage" /* 5717 */;
+import _modDef8522 from "module_8522" /* 8522 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5003 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 let BottomSheet;
@@ -55,30 +55,30 @@ export default function ReferralProgramEntryPointActionSheet(markAsDismissed) {
   const callback = react.useCallback(() => {
     markAsDismissed(ContentDismissActionType.PRIMARY);
     const obj = ActionSheetActionCreatorsDefault;
-    obj.openLazy(asyncRequire(14782, dependencyMap.paths), "referral-program-share-action-sheet");
+    obj.openLazy(asyncRequire(15322, dependencyMap.paths), "referral-program-share-action-sheet");
   }, items);
   const callback1 = react.useCallback(() => {
     markAsDismissed(ContentDismissActionType.USER_DISMISS);
   }, items1);
   let obj = { onDismiss: callback1, children: closure_7(View, obj2) };
   obj2 = { style: tmp.container, children: items2 };
-  BottomSheet = markAsDismissed(5297).BottomSheet;
+  BottomSheet = markAsDismissed(5272).BottomSheet;
   const obj3 = { source: obj4, style: tmp.image };
-  obj4 = { uri: _modDef8457 };
+  obj4 = { uri: _modDef8522 };
   const tmp4 = FastImageDefault;
   items2 = [closure_6(tmp4, obj3), , , ];
-  const obj5 = { style: tmp.header, color: "mobile-text-heading-primary", variant: "heading-lg/extrabold", children: intl.string(markAsDismissed(1128).t.u1CFbS) };
-  const Text = markAsDismissed(5266).Text;
-  intl = markAsDismissed(1128).intl;
+  const obj5 = { style: tmp.header, color: "mobile-text-heading-primary", variant: "heading-lg/extrabold", children: intl.string(markAsDismissed(1113).t.u1CFbS) };
+  const Text = markAsDismissed(5624).Text;
+  intl = markAsDismissed(1113).intl;
   items2[1] = closure_6(Text, obj5);
-  const obj6 = { style: tmp.body, color: "text-default", variant: "text-sm/normal", children: intl2.string(markAsDismissed(1128).t.k2ibMz) };
-  const Text2 = markAsDismissed(5266).Text;
-  intl2 = markAsDismissed(1128).intl;
+  const obj6 = { style: tmp.body, color: "text-default", variant: "text-sm/normal", children: intl2.string(markAsDismissed(1113).t.k2ibMz) };
+  const Text2 = markAsDismissed(5624).Text;
+  intl2 = markAsDismissed(1113).intl;
   items2[2] = closure_6(Text2, obj6);
   const obj7 = { style: tmp.buttonContainer, children: closure_6(Button, obj8) };
-  obj8 = { text: intl3.string(markAsDismissed(1128).t.TI8qgg), size: "lg", onPress: callback, variant: "primary" };
-  Button = markAsDismissed(5276).Button;
-  intl3 = markAsDismissed(1128).intl;
+  obj8 = { text: intl3.string(markAsDismissed(1113).t.TI8qgg), size: "lg", onPress: callback, variant: "primary" };
+  Button = markAsDismissed(5634).Button;
+  intl3 = markAsDismissed(1113).intl;
   items2[3] = closure_6(View, obj7);
   return closure_6(BottomSheet, obj);
 };

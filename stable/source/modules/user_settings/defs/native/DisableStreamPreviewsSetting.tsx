@@ -1,19 +1,16 @@
-// Module ID: 17303
-// Function ID: 17304
+// Module ID: 17900
+// Function ID: 17901
 // Name: DisableStreamPreviewsSetting
-// Dependencies: [8364, 558, 4831, 11240, 1128, 2]
+// Dependencies: [8432, 4839, 11540, 1113, 2]
 
-// Module 17303 (DisableStreamPreviewsSetting)
-import intl2 from "intl" /* 1128 */;
-import UserSettings from "UserSettings" /* 4831 */;
-import SettingsConstants from "SettingsConstants" /* 8364 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11240 */;
+// Module 17900 (DisableStreamPreviewsSetting)
+import intl2 from "intl" /* 1113 */;
+import UserSettings from "UserSettings" /* 4839 */;
+import SettingsConstants from "SettingsConstants" /* 8432 */;
+import SettingBuilders from "SettingBuilders" /* 11540 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
-let ReactCompilerGating = ReactCompilerGating_mod;
-ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
 const obj = {
   useTitle() {
     const intl = intl2.intl;
@@ -35,6 +32,6 @@ const obj = {
   onValueChange: UserSettings.DisableStreamPreviews.updateSetting
 };
 const toggle = SettingBuilders.createToggle(obj);
-const result1 = size.fileFinishedImporting("modules/user_settings/defs/native/DisableStreamPreviewsSetting.tsx");
+const result = size.fileFinishedImporting("modules/user_settings/defs/native/DisableStreamPreviewsSetting.tsx");
 
 export default toggle;

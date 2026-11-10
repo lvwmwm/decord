@@ -1,13 +1,13 @@
-// Module ID: 14222
-// Function ID: 14223
+// Module ID: 14750
+// Function ID: 14751
 // Name: generateDynamicLink
-// Dependencies: [109, 32, 1367, 1281, 14223, 2]
+// Dependencies: [109, 32, 1352, 1266, 14751, 2]
 // Exports: default, generateAttemptId, parseDynamicLink
 
-// Module 14222 (generateDynamicLink)
-import v1 from "v1" /* 1281 */;
-import _modDef1367 from "module_1367" /* 1367 */;
-import getDescriptionDefault from "getDescription" /* 14223 */;
+// Module 14750 (generateDynamicLink)
+import v1 from "v1" /* 1266 */;
+import _modDef1352 from "module_1352" /* 1352 */;
+import getDescriptionDefault from "getDescription" /* 14751 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
@@ -39,7 +39,7 @@ export default function generateDynamicLink(arg0, arg1) {
   const encodeURIComponentResult1 = encodeURIComponent("discord://app/open#" + str.toString());
   const encodeURIComponentResult2 = encodeURIComponent(getDescriptionDefault());
   const regExp = new RegExp("(" + items.join("|") + ")", "ig");
-  const tmp9 = _modDef1367;
+  const tmp9 = _modDef1352;
   let match;
   if (tmp9 != null) {
     if (tmp9.ua != null) {
@@ -47,13 +47,13 @@ export default function generateDynamicLink(arg0, arg1) {
     }
   }
   const tmp12 = null != match;
-  const tmp5Result = _modDef1367;
+  const tmp5Result = _modDef1352;
   let name;
   if (tmp5Result != null) {
     name = tmp5Result.name;
   }
   const tmp15 = "Safari" === name && !tmp12;
-  const tmp5Result2 = _modDef1367;
+  const tmp5Result2 = _modDef1352;
   let family;
   if (tmp5Result2 != null) {
     const os = tmp5Result2.os;
@@ -89,11 +89,11 @@ export default function generateDynamicLink(arg0, arg1) {
   }
   return sum1;
 };
-export const generateAttemptId = function generateAttemptId() {
+export function generateAttemptId() {
   const obj = v1;
   return obj.v4();
-};
-export const parseDynamicLink = function parseDynamicLink(str) {
+}
+export function parseDynamicLink(str) {
   if (str.startsWith(c6)) {
     try {
       const _URL = URL;
@@ -129,4 +129,4 @@ export const parseDynamicLink = function parseDynamicLink(str) {
   } else {
     return null;
   }
-};
+}

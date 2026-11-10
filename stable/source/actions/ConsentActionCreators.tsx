@@ -1,14 +1,14 @@
-// Module ID: 16181
-// Function ID: 16182
+// Module ID: 16754
+// Function ID: 16755
 // Name: ConsentActionCreators
-// Dependencies: [1087, 584, 1128, 1297, 2]
+// Dependencies: [1072, 572, 1113, 1282, 2]
 // Exports: fetchConsents, setConsents
 
-// Module 16181 (ConsentActionCreators)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1087 */;
-import intl3 from "intl" /* 1128 */;
-import HTTPUtils from "HTTPUtils" /* 1297 */;
+// Module 16754 (ConsentActionCreators)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import Constants from "Constants" /* 1072 */;
+import intl3 from "intl" /* 1113 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
 import size from "module_2" /* 2 */;
 
 function handleRequestSuccess(body) {
@@ -50,7 +50,7 @@ function handleRequestFailure(status) {
 const Endpoints = Constants.Endpoints;
 const result = size.fileFinishedImporting("actions/ConsentActionCreators.tsx");
 
-export const fetchConsents = function fetchConsents() {
+export function fetchConsents() {
   let obj2;
   const HTTP = HTTPUtils.HTTP;
   const get = HTTP.get;
@@ -61,8 +61,8 @@ export const fetchConsents = function fetchConsents() {
     const error = new Error(body.body.message);
     return reject(error);
   });
-};
-export const setConsents = function setConsents(items, items2) {
+}
+export function setConsents(items, items2) {
   let obj;
   let obj3;
   const HTTP = HTTPUtils.HTTP;
@@ -72,4 +72,4 @@ export const setConsents = function setConsents(items, items2) {
   obj3 = HTTPUtils;
   const postResult = post(request);
   return postResult.then(handleRequestSuccess, handleRequestFailure);
-};
+}

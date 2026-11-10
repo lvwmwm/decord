@@ -1,31 +1,29 @@
-// Module ID: 5002
-// Function ID: 5003
+// Module ID: 5013
+// Function ID: 5014
 // Name: BurstReactionFirstSendActionSheet
-// Dependencies: [19, 17, 21, 5003, 587, 5242, 558, 576, 5255, 1128, 5256, 5257, 1202, 5266, 5276, 5297, 4961, 5033, 4839, 5002, 2002, 584, 2]
-// Exports: openBurstReactionFirstSendActionSheet
+// Dependencies: [19, 17, 21, 5014, 575, 5258, 5271, 1113, 5272, 4972, 5614, 5615, 1187, 5624, 5634, 5044, 4847, 5013, 1994, 572, 2]
+// Exports: default, openBurstReactionFirstSendActionSheet
 
-// Module 5002 (BurstReactionFirstSendActionSheet)
-import react2 from "react" /* 576 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import nativeDefault from "native" /* 587 */;
-import intl3 from "intl" /* 1128 */;
-import native from "native" /* 1202 */;
-import asyncRequire from "asyncRequire" /* 2002 */;
-import dismissible_content from "dismissible_content" /* 4839 */;
-import burst_reactions_BurstReactionEffectUtils from "burst_reactions/BurstReactionEffectUtils" /* 4961 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5033 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5242 */;
-import getDeviceSpecificString2 from "getDeviceSpecificString" /* 5255 */;
-import BurstReactionAnimationPreviewDefault from "BurstReactionAnimationPreview" /* 5256 */;
-import MessageReactionsTypes from "MessageReactionsTypes" /* 5257 */;
-import Text_Text from "Text/Text" /* 5266 */;
-import components_Button_Button from "components/Button/Button" /* 5276 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5297 */;
+// Module 5013 (BurstReactionFirstSendActionSheet)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import nativeDefault from "native" /* 575 */;
+import intl3 from "intl" /* 1113 */;
+import native from "native" /* 1187 */;
+import asyncRequire from "asyncRequire" /* 1994 */;
+import dismissible_content from "dismissible_content" /* 4847 */;
+import burst_reactions_BurstReactionEffectUtils from "burst_reactions/BurstReactionEffectUtils" /* 4972 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5044 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
+import getDeviceSpecificString from "getDeviceSpecificString" /* 5271 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5272 */;
+import BurstReactionAnimationPreviewDefault from "BurstReactionAnimationPreview" /* 5614 */;
+import MessageReactionsTypes from "MessageReactionsTypes" /* 5615 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import components_Button_Button from "components/Button/Button" /* 5634 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5003 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 let BottomSheet;
@@ -49,160 +47,10 @@ createStyles = createStyles.createStyles;
 const merged = Object.assign(StyleSheet.absoluteFillObject);
 size = { tintColor: nativeDefault.colors.TEXT_SUBTLE, width: 37.5, height: 37.5 };
 let closure_6 = createStyles(obj);
-const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function BurstReactionFirstSendActionSheet(arg0) {
-  let channelId;
-  let emoji;
-  let first;
-  let intl;
-  let intl2;
-  let items;
-  let items1;
-  let messageId;
-  const obj = react2;
-  const cResult = obj.c(28);
-  ({ emoji, channelId, messageId } = arg0);
-  const tmp4 = closure_6();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { quest: intl3.t["5TpPli"] };
-    const getDeviceSpecificString = getDeviceSpecificString2.getDeviceSpecificString;
-    getDeviceSpecificString2;
-    const deviceSpecificString = getDeviceSpecificString(obj2, tmp(1128).t["2Yp7dF"]);
-    cResult[0] = deviceSpecificString;
-    first = deviceSpecificString;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] === channelId) {
-    if (cResult[2] === emoji) {
-      let tmp8;
-      if (cResult[3] === messageId) {
-        tmp8 = cResult[4];
-      }
-      if (cResult[5] === tmp4.fill) {
-        let tmp11;
-        let tmp15;
-        let tmp18;
-        if (cResult[6] === tmp8) {
-          tmp11 = cResult[7];
-        }
-        if (cResult[8] !== tmp4.nitroWheel) {
-          const obj3 = { style: tmp4.nitroWheel };
-          const tmp17 = React3(native.NitroWheel, obj3);
-          cResult[8] = tmp4.nitroWheel;
-          cResult[9] = tmp17;
-          tmp15 = tmp17;
-        } else {
-          tmp15 = cResult[9];
-        }
-        const _Symbol = Symbol;
-        if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-          const obj4 = { variant: "heading-xl/bold", children: intl.string(intl3.t.NX7HI7) };
-          const Text = tmp(5266).Text;
-          intl = tmp(1128).intl;
-          const tmp20 = React3(Text, obj4);
-          cResult[10] = tmp20;
-          tmp18 = tmp20;
-        } else {
-          tmp18 = cResult[10];
-        }
-        if (cResult[11] === tmp4.textContainer) {
-          let tmp21;
-          let tmp25;
-          if (cResult[12] === tmp15) {
-            tmp21 = cResult[13];
-          }
-          if (cResult[14] !== tmp4.textContainer) {
-            const obj5 = { style: tmp4.textContainer, variant: "text-md/normal", children: first };
-            const tmp27 = React3(Text_Text.Text, obj5);
-            cResult[14] = tmp4.textContainer;
-            cResult[15] = tmp27;
-            tmp25 = tmp27;
-          } else {
-            tmp25 = cResult[15];
-          }
-          if (cResult[16] === tmp4.body) {
-            let tmp28;
-            let tmp32;
-            if (cResult[17] === tmp25) {
-              tmp28 = cResult[18];
-            }
-            const _Symbol2 = Symbol;
-            if (cResult[19] === Symbol.for("react.memo_cache_sentinel")) {
-              const obj6 = { text: intl2.string(intl3.t["+IrDzN"]), onPress: onDismiss };
-              const Button = tmp(5276).Button;
-              intl2 = tmp(1128).intl;
-              const tmp35 = React3(Button, obj6);
-              cResult[19] = tmp35;
-              tmp32 = tmp35;
-            } else {
-              tmp32 = cResult[19];
-            }
-            if (cResult[20] === tmp4.container) {
-              if (cResult[21] === tmp21) {
-                let tmp36;
-                if (cResult[22] === tmp28) {
-                  tmp36 = cResult[23];
-                }
-                if (cResult[24] === tmp4.content) {
-                  if (cResult[25] === tmp36) {
-                    let tmp40;
-                    if (cResult[26] === tmp11) {
-                      tmp40 = cResult[27];
-                    }
-                    return tmp40;
-                  }
-                }
-                const obj7 = { backdropOpacity: burst_reactions_BurstReactionEffectUtils.BACKDROP_OPACITY, contentStyles: tmp4.content, backdropChildren: tmp11, onDismiss, children: tmp36 };
-                BottomSheet = tmp(5297).BottomSheet;
-                const tmp43 = React3(BottomSheet, obj7);
-                cResult[24] = tmp4.content;
-                cResult[25] = tmp36;
-                cResult[26] = tmp11;
-                cResult[27] = tmp43;
-                tmp40 = tmp43;
-              }
-            }
-            const obj8 = { style: tmp4.container, children: items };
-            items = [tmp21, tmp28, tmp32];
-            const tmp39 = hasOwnProperty(_false, obj8);
-            cResult[20] = tmp4.container;
-            cResult[21] = tmp21;
-            cResult[22] = tmp28;
-            cResult[23] = tmp39;
-            tmp36 = tmp39;
-          }
-          const obj9 = { style: tmp4.body, children: tmp25 };
-          const tmp31 = React3(_false, obj9);
-          cResult[16] = tmp4.body;
-          cResult[17] = tmp25;
-          cResult[18] = tmp31;
-          tmp28 = tmp31;
-        }
-        const obj10 = { style: tmp4.textContainer, children: items1 };
-        items1 = [tmp15, tmp18];
-        const tmp24 = hasOwnProperty(_false, obj10);
-        cResult[11] = tmp4.textContainer;
-        cResult[12] = tmp15;
-        cResult[13] = tmp24;
-        tmp21 = tmp24;
-      }
-      const obj11 = { style: tmp4.fill, children: tmp8 };
-      const tmp14 = React3(_false, obj11);
-      cResult[5] = tmp4.fill;
-      cResult[6] = tmp8;
-      cResult[7] = tmp14;
-      tmp11 = tmp14;
-    }
-  }
-  const obj12 = { channelId, emoji, messageId, reactionType: MessageReactionsTypes.ReactionTypes.BURST };
-  const tmp9 = BurstReactionAnimationPreviewDefault;
-  const tmp10 = React3(tmp9, obj12);
-  cResult[1] = channelId;
-  cResult[2] = emoji;
-  cResult[3] = messageId;
-  cResult[4] = tmp10;
-  tmp8 = tmp10;
-}) : (function BurstReactionFirstSendActionSheet(arg0) {
+size = size_mod;
+let result = size.fileFinishedImporting("components_native/reactions/BurstReactionFirstSendActionSheet.tsx");
+
+export default function BurstReactionFirstSendActionSheet(arg0) {
   let channelId;
   let emoji;
   let intl;
@@ -217,7 +65,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function BurstReact
   let tmp3;
   ({ emoji, channelId, messageId } = arg0);
   const tmp = closure_6();
-  const obj = getDeviceSpecificString2;
+  const obj = getDeviceSpecificString;
   const obj2 = { quest: intl3.t["5TpPli"] };
   const deviceSpecificString = obj.getDeviceSpecificString(obj2, intl3.t["2Yp7dF"]);
   const obj3 = { backdropOpacity: burst_reactions_BurstReactionEffectUtils.BACKDROP_OPACITY, contentStyles: tmp.content, backdropChildren: React3(_false, obj4), onDismiss, children: hasOwnProperty(_false, obj6) };
@@ -243,12 +91,8 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function BurstReact
   intl2 = intl3.intl;
   items1[2] = React3(Button, obj12);
   return React3(BottomSheet, obj3);
-});
-size = size_mod;
-let result = size.fileFinishedImporting("components_native/reactions/BurstReactionFirstSendActionSheet.tsx");
-
-export default tmp7;
-export const openBurstReactionFirstSendActionSheet = function openBurstReactionFirstSendActionSheet(arg0) {
+};
+export function openBurstReactionFirstSendActionSheet(arg0) {
   let channelId;
   let emoji;
   let messageId;
@@ -263,9 +107,9 @@ export const openBurstReactionFirstSendActionSheet = function openBurstReactionF
     tmpResult.dispatch(obj3);
   } else {
     const tmp4Result = DismissibleContentUnsafeUtils;
-    const result = tmp4Result.UNSAFE_markDismissibleContentAsDismissed(tmp4(4839).DismissibleContent.SUPER_REACTIONS_FIRST_SENT);
+    const result = tmp4Result.UNSAFE_markDismissibleContentAsDismissed(tmp4(4847).DismissibleContent.SUPER_REACTIONS_FIRST_SENT);
     const obj4 = { channelId, messageId, emoji };
     const tmpResult2 = ActionSheetActionCreatorsDefault;
-    tmpResult2.openLazy(asyncRequire(5002, tmp2.paths), "BurstReactionFirstSendActionSheet", obj4);
+    tmpResult2.openLazy(asyncRequire(5013, tmp2.paths), "BurstReactionFirstSendActionSheet", obj4);
   }
-};
+}

@@ -1,35 +1,25 @@
-// Module ID: 8689
-// Function ID: 8690
+// Module ID: 8739
+// Function ID: 8740
 // Name: useShouldConvertBioEmoji
-// Dependencies: [558, 4831, 2]
-// Exports: getShouldConvertBioEmoji
+// Dependencies: [4839, 2]
+// Exports: default, getShouldConvertBioEmoji
 
-// Module 8689 (useShouldConvertBioEmoji)
-import UserSettings from "UserSettings" /* 4831 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 8739 (useShouldConvertBioEmoji)
+import UserSettings from "UserSettings" /* 4839 */;
 import size from "module_2" /* 2 */;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldConvertBioEmoji() {
-  const UseLegacyChatInput = UserSettings.UseLegacyChatInput;
-  let setting = UseLegacyChatInput.useSetting();
-  const UseRichChatInput = UserSettings.UseRichChatInput;
-  if (!setting) {
-    setting = !UseRichChatInput.useSetting();
-  }
-  return setting;
-}) : (function useShouldConvertBioEmoji() {
-  const UseLegacyChatInput = UserSettings.UseLegacyChatInput;
-  let setting = UseLegacyChatInput.useSetting();
-  const UseRichChatInput = UserSettings.UseRichChatInput;
-  if (!setting) {
-    setting = !UseRichChatInput.useSetting();
-  }
-  return setting;
-});
 const result = size.fileFinishedImporting("modules/user_profile/hooks/useShouldConvertBioEmoji.tsx");
 
-export default tmp2;
-export const getShouldConvertBioEmoji = function getShouldConvertBioEmoji() {
+export default function useShouldConvertBioEmoji() {
+  const UseLegacyChatInput = UserSettings.UseLegacyChatInput;
+  let setting = UseLegacyChatInput.useSetting();
+  const UseRichChatInput = UserSettings.UseRichChatInput;
+  if (!setting) {
+    setting = !UseRichChatInput.useSetting();
+  }
+  return setting;
+};
+export function getShouldConvertBioEmoji() {
   const UseLegacyChatInput = UserSettings.UseLegacyChatInput;
   let setting = UseLegacyChatInput.getSetting();
   if (!setting) {
@@ -37,4 +27,4 @@ export const getShouldConvertBioEmoji = function getShouldConvertBioEmoji() {
     setting = !UseRichChatInput.getSetting();
   }
   return setting;
-};
+}

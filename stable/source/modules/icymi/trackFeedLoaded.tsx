@@ -1,12 +1,12 @@
-// Module ID: 8881
-// Function ID: 8882
+// Module ID: 8929
+// Function ID: 8930
 // Name: trackFeedLoaded
-// Dependencies: [1087, 1267, 8868, 2]
+// Dependencies: [1072, 1252, 8919, 2]
 // Exports: trackFeedLoaded
 
-// Module 8881 (trackFeedLoaded)
-import ICYMITypes from "ICYMITypes" /* 8868 */;
-import Constants from "Constants" /* 1087 */;
+// Module 8929 (trackFeedLoaded)
+import ICYMITypes from "ICYMITypes" /* 8919 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -14,7 +14,7 @@ let closure_4;
 ({ AnalyticEvents: c3, ChannelTypes: closure_4 } = Constants);
 const result = size.fileFinishedImporting("modules/icymi/trackFeedLoaded.tsx");
 
-export const trackFeedLoaded = function trackFeedLoaded(unreadFeedItems) {
+export function trackFeedLoaded(unreadFeedItems) {
   const items = [];
   const items1 = [];
   const items2 = [];
@@ -82,4 +82,4 @@ export const trackFeedLoaded = function trackFeedLoaded(unreadFeedItems) {
   const merged = Object.assign(unreadFeedItems.newTrackingProps);
   ({ homeSessionId: obj.home_session_id, hasNewContent: obj.tab_badged } = unreadFeedItems);
   track(FEED_LOADED, obj);
-};
+}

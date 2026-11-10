@@ -1,87 +1,41 @@
-// Module ID: 16701
-// Function ID: 16702
+// Module ID: 17296
+// Function ID: 17297
 // Name: SyncThemeSetting
-// Dependencies: [5027, 1208, 1207, 1246, 8364, 1087, 558, 576, 504, 1128, 16702, 5900, 11240, 2]
+// Dependencies: [5038, 1193, 1192, 1231, 8432, 1072, 504, 1113, 17297, 5932, 11540, 2]
 
-// Module 16701 (SyncThemeSetting)
-import react from "react" /* 576 */;
-import Constants from "Constants" /* 1087 */;
-import intl2 from "intl" /* 1128 */;
-import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 5900 */;
-import SettingsConstants from "SettingsConstants" /* 8364 */;
-import actions_AnalyticsTrackingActionCreators from "actions/AnalyticsTrackingActionCreators" /* 16702 */;
-import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 5027 */;
-import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1208 */;
-import ThemeStore from "ThemeStore" /* 1207 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1246 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11240 */;
+// Module 17296 (SyncThemeSetting)
+import get_initialized from "get initialized" /* 504 */;
+import Constants from "Constants" /* 1072 */;
+import intl2 from "intl" /* 1113 */;
+import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 5932 */;
+import SettingsConstants from "SettingsConstants" /* 8432 */;
+import actions_AnalyticsTrackingActionCreators from "actions/AnalyticsTrackingActionCreators" /* 17297 */;
+import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 5038 */;
+import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1193 */;
+import ThemeStore from "ThemeStore" /* 1192 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
+import SettingBuilders from "SettingBuilders" /* 11540 */;
 import size from "module_2" /* 2 */;
 
-let tmp;
-const get_initialized = tmp(504);
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const AnalyticEvents = Constants.AnalyticEvents;
-let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSyncThemeDisabled() {
-  let sameAsDeviceThemeEnabled;
-  let tmp4;
-  let tmp5;
-  const obj = react;
-  const cResult = obj.c(2);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [ThemeStore];
-    const fn = function n() {
-      return sameAsDeviceThemeEnabled.isSameAsDeviceThemeEnabled();
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  const tmpResult = get_initialized;
-  return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (function useSyncThemeDisabled() {
-  let sameAsDeviceThemeEnabled;
-  const items = [ThemeStore];
-  const obj = get_initialized;
-  return obj.useStateFromStores(items, () => sameAsDeviceThemeEnabled.isSameAsDeviceThemeEnabled());
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSyncThemeAcrossClientsValue() {
-  let tmp4;
-  let tmp5;
-  const obj = react;
-  const cResult = obj.c(2);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [SelectivelySyncedUserSettingsStore];
-    const fn = function s() {
-      return false !== SelectivelySyncedUserSettingsStore.shouldSync("appearance");
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  const tmpResult = get_initialized;
-  return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (function useSyncThemeAcrossClientsValue() {
-  const items = [SelectivelySyncedUserSettingsStore];
-  const obj = get_initialized;
-  return obj.useStateFromStores(items, () => false !== SelectivelySyncedUserSettingsStore.shouldSync("appearance"));
-});
 let obj = {
   useTitle() {
     const intl = intl2.intl;
     return intl.string(intl2.t["3340dY"]);
   },
   parent: MobileUserSettings.APPEARANCE,
-  useIsDisabled: tmp2,
-  useValue: tmp3,
+  useIsDisabled: function useSyncThemeDisabled() {
+    let sameAsDeviceThemeEnabled;
+    const items = [ThemeStore];
+    const obj = get_initialized;
+    return obj.useStateFromStores(items, () => sameAsDeviceThemeEnabled.isSameAsDeviceThemeEnabled());
+  },
+  useValue: function useSyncThemeAcrossClientsValue() {
+    const items = [SelectivelySyncedUserSettingsStore];
+    const obj = get_initialized;
+    return obj.useStateFromStores(items, () => false !== SelectivelySyncedUserSettingsStore.shouldSync("appearance"));
+  },
   onValueChange: function onSyncThemeAcrossClientsValueChange(is_sync_enabled) {
     const gradientPreset = ClientThemesBackgroundStore.gradientPreset;
     let id;

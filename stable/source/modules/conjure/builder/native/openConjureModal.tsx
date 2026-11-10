@@ -1,12 +1,12 @@
-// Module ID: 11775
-// Function ID: 11776
+// Module ID: 12070
+// Function ID: 12071
 // Name: openConjureModal
-// Dependencies: [6704, 11776, 2002, 2]
+// Dependencies: [6744, 12071, 1994, 2]
 // Exports: default
 
-// Module 11775 (openConjureModal)
-import asyncRequire from "asyncRequire" /* 2002 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6704 */;
+// Module 12070 (openConjureModal)
+import asyncRequire from "asyncRequire" /* 1994 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6744 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/builder/native/openConjureModal.tsx");
@@ -15,6 +15,6 @@ export default function openConjureModal(guildId) {
   const pushLazy = ModalActionCreatorsDefault.pushLazy;
   const obj = { guildId };
   ModalActionCreatorsDefault;
-  const tmp2 = asyncRequire(11776, dependencyMap.paths);
+  const tmp2 = asyncRequire(12071, dependencyMap.paths);
   pushLazy(tmp2, obj, "conjure_modal_" + guildId);
 };

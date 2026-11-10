@@ -1,16 +1,16 @@
-// Module ID: 13082
-// Function ID: 13083
+// Module ID: 13716
+// Function ID: 13717
 // Name: tryInjectMessage
-// Dependencies: [502, 1087, 10239, 6044, 1405, 13083, 13084, 2]
+// Dependencies: [502, 1072, 10319, 6063, 1396, 13717, 13718, 2]
 // Exports: tryCreateInjectedMessage
 
-// Module 13082 (tryInjectMessage)
-import FlagUtils from "FlagUtils" /* 1405 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 6044 */;
-import createMessageDefault from "createMessage" /* 10239 */;
-import ChannelRecipientPrivateUserDataFlags from "ChannelRecipientPrivateUserDataFlags" /* 13083 */;
+// Module 13716 (tryInjectMessage)
+import FlagUtils from "FlagUtils" /* 1396 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 6063 */;
+import createMessageDefault from "createMessage" /* 10319 */;
+import ChannelRecipientPrivateUserDataFlags from "ChannelRecipientPrivateUserDataFlags" /* 13717 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import Constants from "Constants" /* 1087 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -20,7 +20,7 @@ let metroRequire;
 const map = new Map();
 let result = size.fileFinishedImporting("modules/messages/tryInjectMessage.tsx");
 
-export const tryCreateInjectedMessage = function tryCreateInjectedMessage(id, id2) {
+export function tryCreateInjectedMessage(id, id2) {
   let tmp4;
   if (map.get(id2.id) === id.id) {
     const obj3 = { channelId: id2.id, type: metroRequire.IN_GAME_MESSAGE_NUX, content: "", author: id.author, flags: constants.EPHEMERAL, state: hasOwnProperty.SENT };
@@ -66,7 +66,7 @@ export const tryCreateInjectedMessage = function tryCreateInjectedMessage(id, id
                     num2 = 0;
                   }
                   const setFlagResult = setFlag(num2, ChannelRecipientPrivateUserDataFlags.ChannelRecipientPrivateUserDataFlags.DISMISSED_IN_GAME_MESSAGE_NUX, true);
-                  const tmp7Result = tmp7(13084);
+                  const tmp7Result = tmp7(13718);
                   const result1 = tmp7Result.updatePrivateChannelRecipientFlags(id2.id, setFlagResult);
                   tmp4 = messageRecord1;
                 }
@@ -83,4 +83,4 @@ export const tryCreateInjectedMessage = function tryCreateInjectedMessage(id, id
     const obj5 = { message: tmp4, position: "before" };
   }
   return tmp24;
-};
+}

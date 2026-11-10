@@ -1,11 +1,11 @@
-// Module ID: 10740
-// Function ID: 10741
+// Module ID: 10861
+// Function ID: 10862
 // Name: ConjureSmartContextStore
-// Dependencies: [504, 584, 2]
+// Dependencies: [504, 572, 2]
 
-// Module 10740 (ConjureSmartContextStore)
+// Module 10861 (ConjureSmartContextStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 
 const map = new Map();

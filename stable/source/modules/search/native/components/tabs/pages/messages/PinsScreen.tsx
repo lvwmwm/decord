@@ -1,21 +1,20 @@
-// Module ID: 18211
-// Function ID: 18212
+// Module ID: 18793
+// Function ID: 18794
 // Name: messages/PinsScreen
-// Dependencies: [19, 14014, 6824, 13269, 9746, 9745, 1087, 21, 504, 18124, 14013, 18120, 13276, 18185, 18128, 18127, 558, 576, 18208, 2]
+// Dependencies: [19, 14535, 6863, 13900, 9827, 9826, 1072, 21, 504, 18706, 14534, 18702, 13907, 18767, 18710, 18709, 18790, 2]
 
-// Module 18211 (messages/PinsScreen)
+// Module 18793 (messages/PinsScreen)
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 1087 */;
-import TrackingConstants from "TrackingConstants" /* 9745 */;
-import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 13276 */;
-import ChannelPinActionCreatorsDefault from "ChannelPinActionCreators" /* 14013 */;
-import ChannelPinsStore2 from "ChannelPinsStore" /* 14014 */;
-import MessagesScreenDefault from "MessagesScreen" /* 18208 */;
+import Constants from "Constants" /* 1072 */;
+import TrackingConstants from "TrackingConstants" /* 9826 */;
+import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 13907 */;
+import ChannelPinActionCreatorsDefault from "ChannelPinActionCreators" /* 14534 */;
+import ChannelPinsStore2 from "ChannelPinsStore" /* 14535 */;
+import MessagesScreenDefault from "MessagesScreen" /* 18790 */;
 import react from "react" /* 19 */;
-import SearchMessageStore from "SearchMessageStore" /* 6824 */;
-import SearchQueryStore from "SearchQueryStore" /* 13269 */;
-import SearchConstants from "SearchConstants" /* 9746 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import SearchMessageStore from "SearchMessageStore" /* 6863 */;
+import SearchQueryStore from "SearchQueryStore" /* 13900 */;
+import SearchConstants from "SearchConstants" /* 9827 */;
 import size from "module_2" /* 2 */;
 
 const ChannelPinsStore = ChannelPinsStore2;
@@ -143,76 +142,7 @@ const FetchState = ChannelPinsStore2.FetchState;
 let closure_11 = TrackingConstants.SearchResultContentEntityTypes;
 const SearchTypes = Constants.SearchTypes;
 const jsx = Fragment.jsx;
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function PinsScreen(searchContext) {
-  let first;
-  let isFocused;
-  let tab;
-  let tmp6;
-  let tmp7;
-  let tmp9;
-  const obj = searchContext(576);
-  const cResult = obj.c(12);
-  const tmp = searchContext;
-  searchContext = searchContext.searchContext;
-  ({ tab, isFocused } = searchContext);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [SearchQueryStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== searchContext) {
-    const fn = function n() {
-      return SearchQueryStore.isInitialSearchQuery(searchContext);
-    };
-    const items1 = [searchContext];
-    cResult[1] = searchContext;
-    cResult[2] = fn;
-    cResult[3] = items1;
-    tmp7 = items1;
-    tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-    tmp7 = cResult[3];
-  }
-  const tmpResult = tmp(504);
-  if (tmpResult.useStateFromStores(first, tmp6, tmp7)) {
-    if (searchContext.type !== SearchTypes.CHANNEL) {
-      if (searchContext.type !== SearchTypes.GUILD_CHANNEL) {
-        return tmp9;
-      }
-    }
-    if (cResult[4] === isFocused) {
-      if (cResult[5] === searchContext) {
-        if (cResult[6] === tab) {
-          tmp9 = cResult[7];
-        }
-      }
-    }
-    const tmp12 = <InitialPinsScreen searchContext={searchContext} tab={tab} isFocused={isFocused} />;
-    cResult[4] = isFocused;
-    cResult[5] = searchContext;
-    cResult[6] = tab;
-    cResult[7] = tmp12;
-    tmp9 = tmp12;
-  }
-  if (cResult[8] === isFocused) {
-    if (cResult[9] === searchContext) {
-      let tmp13;
-      if (cResult[10] === tab) {
-        tmp13 = cResult[11];
-      }
-      tmp9 = tmp13;
-    }
-  }
-  const tmp14 = jsx(MessagesScreenDefault, { searchContext, tab, isFocused });
-  cResult[8] = isFocused;
-  cResult[9] = searchContext;
-  cResult[10] = tab;
-  cResult[11] = tmp14;
-  tmp13 = tmp14;
-}) : (function PinsScreen(searchContext) {
+const memoResult = react.memo(function PinsScreen(searchContext) {
   let isFocused;
   let tab;
   let tmp5;
@@ -227,7 +157,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     tmp5 = <InitialPinsScreen searchContext={searchContext} tab={tab} isFocused={isFocused} />;
   }
   return tmp5;
-}));
+});
 let result = size.fileFinishedImporting("modules/search/native/components/tabs/pages/messages/PinsScreen.tsx");
 
 export default memoResult;

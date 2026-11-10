@@ -1,130 +1,178 @@
 // Module ID: 1796
 // Function ID: 1797
-// Dependencies: [41, 42, 93, 95, 98, 19, 21, 1661, 1766, 1702]
+// Dependencies: [1675, 1661]
+// Exports: areDependenciesEqual, buildDependencies, buildWorkletsHash, shallowEqual, validateAnimatedStyles
 
 // Module 1796
-import Fragment from "Fragment" /* 21 */;
-import react_native from "react-native" /* 1766 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
-import _createClass from "_createClass" /* 42 */;
-import c3 from "_possibleConstructorReturn" /* 93 */;
-import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
-import _inherits from "_inherits" /* 98 */;
-import react_mod from "react" /* 19 */;
-import module_1661 from "module_1661" /* 1661 */;
+import ReanimatedError from "ReanimatedError" /* 1661 */;
+import LayoutAnimationType from "LayoutAnimationType" /* 1675 */;
 
-let Component;
-let createContext;
-let hasOwnProperty;
-let metroImportDefault;
-let metroRequire;
-function _isNativeReflectConstruct() {
-  try {
-    const _Boolean = Boolean;
-    const _Reflect = Reflect;
-    const _Boolean2 = Boolean;
-    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-    }));
-    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
-      return closure_0;
-    };
-    return _isNativeReflectConstruct();
-  } catch (err) {
-  }
-}
-function SkipEntering(children) {
-  const tmp = metroImportDefault(children.shouldSkip);
-  let closure_0 = tmp;
-  const tmp2 = metroImportDefault(children.itemKey);
-  if (children.itemKey !== tmp2.current) {
-    ({ shouldSkip: tmp.current, itemKey: tmp2.current } = children);
-  }
-  const items = [tmp, children.itemKey];
-  metroRequire(() => {
-    closure_0.current = false;
-  }, items);
-  return jsx(closure_10 ? context : context.Provider, { value: tmp, children: children.children });
-}
-let react = react_mod;
-({ Children: hasOwnProperty, useEffect: metroRequire, useRef: metroImportDefault, Component, createContext } = react);
-react = react_mod;
-const jsx = Fragment.jsx;
-let closure_10 = module_1661.isReact19();
-const context = createContext(null);
-class LayoutAnimationConfig {
-  constructor() {
-    let constructResult;
-    const self = this;
-    _classCallCheck(this, LayoutAnimationConfig);
-    const obj = _getPrototypeOf(LayoutAnimationConfig);
-    const tmp2 = _getPrototypeOf;
-    const tmp3 = c3;
-    if (_isNativeReflectConstruct()) {
-      const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
-    } else {
-      constructResult = obj(...arguments);
-    }
-    return tmp3(self, constructResult);
-  }
-}
-_inherits(LayoutAnimationConfig, Component);
-const entry = {
-  key: "getMaybeWrappedChildren",
-  value: function getMaybeWrappedChildren() {
-    const self = this;
-    const arr = closure_1_5;
-    if (closure_1_5.count(this.props.children) > 1) {
-      let children;
-      if (self.props.skipExiting) {
-        children = arr.map(self.props.children, (children) => <LayoutAnimationConfig itemKey={self.props.itemKey} skipExiting>{arg0}</LayoutAnimationConfig>);
-      }
-      return children;
-    }
-    children = self.props.children;
-  }
+const f82452 = (acc, __workletHash) => {
+  const str = __workletHash.__workletHash;
+  return acc + str.toString();
 };
-let items = [
-  entry,
-  {
-    key: "setShouldAnimateExiting",
-    value: function setShouldAnimateExiting() {
+function isAnimated(onFrame) {
+  let someResult;
+  if (Array.isArray(onFrame)) {
+    someResult = onFrame.some(isAnimated);
+  } else {
+    someResult = typeof onFrame === "object";
+    if (typeof onFrame === "object") {
+      someResult = null !== onFrame;
+    }
+    if (someResult) {
+      let someResult1 = undefined !== onFrame.onFrame;
+      if (!someResult1) {
+        const _Object = Object;
+        const values = Object.values(onFrame);
+        someResult1 = values.some(isAnimated);
+      }
+      someResult = someResult1;
+    }
+  }
+  return someResult;
+}
+isAnimated.__closure = {};
+isAnimated.__workletHash = 4296700641760;
+isAnimated.__initData = { code: "function isAnimated_Pnpm_utilsTs1(prop){const isAnimated_Pnpm_utilsTs1=this._recur;if(Array.isArray(prop)){return prop.some(isAnimated_Pnpm_utilsTs1);}else if(typeof prop==='object'&&prop!==null){if(prop.onFrame!==undefined){return true;}else{return Object.values(prop).some(isAnimated_Pnpm_utilsTs1);}}return false;}" };
+function shallowEqual(arg0, arg1) {
+  const keys = Object.keys(arg0);
+  if (keys.length !== Object.keys(arg1).length) {
+    return false;
+  } else {
+    let num = 0;
+    if (0 < keys.length) {
+      while (arg0[keys[num]] === arg1[keys[num]]) {
+        num = num + 1;
+      }
+      return false;
+    }
+    return true;
+  }
+}
+shallowEqual.__closure = {};
+shallowEqual.__workletHash = 6945711106539;
+shallowEqual.__initData = { code: "function shallowEqual_Pnpm_utilsTs2(a,b){const aKeys=Object.keys(a);const bKeys=Object.keys(b);if(aKeys.length!==bKeys.length){return false;}for(let i=0;i<aKeys.length;i++){if(a[aKeys[i]]!==b[aKeys[i]]){return false;}}return true;}" };
+function validateAnimatedStyles(obj) {
+  if (typeof obj !== "object") {
+    const _HermesInternal = HermesInternal;
+    const self3 = this;
+    const self4 = this;
+    const reanimatedError = new ReanimatedError.ReanimatedError("`useAnimatedStyle` has to return an object, found " + typeof obj + " instead.");
+    throw reanimatedError;
+  } else {
+    const _Array = Array;
+    if (Array.isArray(obj)) {
       const self = this;
-      if (1 === hasOwnProperty.count(this.props.children)) {
-        const obj = react_native;
-        const findNodeHandleResult = obj.findNodeHandle(self);
-        const tmp = require;
-        if (findNodeHandleResult) {
-          const tmpResult = tmp(1702);
-          const result = tmpResult.setShouldAnimateExitingForTag(findNodeHandleResult, !self.props.skipExiting);
+      const self2 = this;
+      const reanimatedError1 = new ReanimatedError.ReanimatedError("`useAnimatedStyle` has to return an object and cannot return static styles combined with dynamic ones. Please do merging where a component receives props.");
+      throw reanimatedError1;
+    }
+  }
+}
+validateAnimatedStyles.__closure = {};
+validateAnimatedStyles.__workletHash = 9250446401049;
+validateAnimatedStyles.__initData = { code: "function validateAnimatedStyles_Pnpm_utilsTs3(styles){if(typeof styles!=='object'){throw new ReanimatedError(\"`useAnimatedStyle` has to return an object, found \"+typeof styles+\" instead.\");}else if(Array.isArray(styles)){throw new ReanimatedError('`useAnimatedStyle` has to return an object and cannot return static styles combined with dynamic ones. Please do merging where a component receives props.');}}" };
+
+export function buildWorkletsHash(items1) {
+  const values = Object.values(items1);
+  return values.reduce(f82452, "");
+}
+export function buildDependencies(items10, memoizedGestureCallbacks) {
+  const values = Object.values(memoizedGestureCallbacks);
+  const found = values.filter((item) => undefined !== item);
+  let tmp2 = found;
+  if (items10) {
+    const _Object = Object;
+    const push = items10.push;
+    const values2 = Object.values(found);
+    let str = "";
+    push(values2.reduce(f82452, ""));
+    tmp2 = items10;
+  }
+  return tmp2;
+}
+export function areDependenciesEqual(dependencies, savedDependencies) {
+  let is;
+  if (typeof Object.is === "function") {
+    const _Object = Object;
+    is = Object.is;
+  } else {
+    is = function is(dependencies, savedDependencies) {
+      let tmp = dependencies === savedDependencies;
+      if (tmp) {
+        tmp = 0 !== dependencies || 1 / dependencies === 1 / savedDependencies;
+        const tmp2 = 0 !== dependencies || 1 / dependencies === 1 / savedDependencies;
+      }
+      if (!tmp) {
+        const _Number = Number;
+        let isNaNResult = Number.isNaN(dependencies);
+        if (isNaNResult) {
+          const _Number2 = Number;
+          isNaNResult = Number.isNaN(savedDependencies);
+        }
+        tmp = isNaNResult;
+      }
+      return tmp;
+    };
+  }
+  let flag = false;
+  if (dependencies) {
+    let tmp = savedDependencies;
+    flag = false;
+    if (savedDependencies) {
+      flag = false;
+      if (savedDependencies.length === dependencies.length) {
+        let num = 0;
+        flag = true;
+        if (0 < savedDependencies.length) {
+          while (true) {
+            let tmp2 = dependencies[num];
+            let tmp3 = savedDependencies[num];
+            if (is(tmp2, tmp3)) {
+              let sum = num + 1;
+              num = sum;
+              flag = true;
+              if (sum >= savedDependencies.length) {
+                break;
+              }
+            } else {
+              let tmp5 = require;
+              let obj = LayoutAnimationType;
+              flag = false;
+              if (!obj.isWorkletFunction(tmp2)) {
+                break;
+              } else {
+                let tmp5Result = tmp5(1675);
+                flag = false;
+                if (!tmp5Result.isWorkletFunction(tmp3)) {
+                  break;
+                } else {
+                  let closure_0 = tmp2;
+                  let closure_1 = tmp3;
+                  let flag2 = false;
+                  if (tmp2.__workletHash === tmp3.__workletHash) {
+                    let _Object2 = Object;
+                    let keys = Object.keys(tmp2.__closure);
+                    let _Object3 = Object;
+                    let tmp7 = keys.length === Object.keys(tmp3.__closure).length && keys.every((item) => item in __closure2.__closure && __closure.__closure[item] === tmp.__closure[item]);
+                    flag2 = tmp7;
+                  }
+                  flag = false;
+                  if (!flag2) {
+                    break;
+                  }
+                }
+              }
+            }
+            break;
+          }
         }
       }
     }
-  },
-  {
-    key: "componentWillUnmount",
-    value: function componentWillUnmount() {
-      const self = this;
-      if (undefined !== this.props.skipExiting) {
-        const result = self.setShouldAnimateExiting();
-      }
-    }
-  },
-  {
-    key: "render",
-    value: function render() {
-      const self = this;
-      const maybeWrappedChildren = this.getMaybeWrappedChildren();
-      let tmp2 = maybeWrappedChildren;
-      if (undefined !== this.props.skipEntering) {
-        tmp2 = <SkipEntering itemKey={self.props.itemKey} shouldSkip={self.props.skipEntering}>{maybeWrappedChildren}</SkipEntering>;
-      }
-      return tmp2;
-    }
   }
-];
-const LayoutAnimationConfig_export = _createClass(LayoutAnimationConfig, items);
-
-export const SkipEnteringContext = context;
-export { LayoutAnimationConfig_export as LayoutAnimationConfig };
+  return flag;
+}
+export { isAnimated };
+export { shallowEqual };
+export { validateAnimatedStyles };

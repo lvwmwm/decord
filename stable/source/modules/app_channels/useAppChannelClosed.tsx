@@ -1,174 +1,94 @@
-// Module ID: 18092
-// Function ID: 18093
+// Module ID: 18674
+// Function ID: 18675
 // Name: useAppChannelClosed
-// Dependencies: [32, 19, 6808, 558, 576, 11920, 2]
+// Dependencies: [32, 19, 6847, 12204, 2]
+// Exports: default
 
-// Module 18092 (useAppChannelClosed)
-import react2 from "react" /* 576 */;
-import useFrameBySurfaceDefault from "useFrameBySurface" /* 11920 */;
+// Module 18674 (useAppChannelClosed)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import FramesConstants from "FramesConstants" /* 6808 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import FramesConstants from "FramesConstants" /* 6847 */;
 import size from "module_2" /* 2 */;
 
-let _require;
+let dependencyMap;
 
+let closure_4;
 let hasOwnProperty;
-let metroRequire;
-({ isLaunched: hasOwnProperty, makeFrameId: metroRequire } = FramesConstants);
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAppChannelClosed(arg0) {
-  let applicationId;
-  let shouldStartClosed;
-  let surface;
-  let tmp11;
-  let tmp12;
-  let tmp = dependencyMap;
-  let obj = react2;
-  const cResult = obj.c(9);
-  ({ applicationId, surface, shouldStartClosed } = arg0);
-  if (cResult[0] === applicationId) {
-    let tmp3;
-    let tmp25;
-    let tmp28;
-    if (cResult[1] === surface) {
-      tmp3 = cResult[2];
-    }
-    const tmp6 = useFrameBySurfaceDefault(applicationId, surface);
-    [tmp11, tmp12] = react.useState(null);
-    _require = tmp12;
-    let frameId;
-    _slicedToArray(react.useState(null), 2);
-    if (tmp11 != null) {
-      frameId = tmp11.frameId;
-    }
-    if (frameId !== tmp3) {
-      if (cResult[3] === tmp6) {
-        let tmp21;
-        if (cResult[4] === shouldStartClosed) {
-          tmp21 = cResult[5];
-        }
-        const obj2 = { frameId: tmp3, hasLaunched: false, isClosed: tmp21 };
-        tmp12(obj2);
-      }
-      const tmp22 = null == tmp6 && shouldStartClosed();
-      cResult[3] = tmp6;
-      cResult[4] = shouldStartClosed;
-      cResult[5] = tmp22;
-      tmp21 = tmp22;
-    } else {
-      if (hasOwnProperty(tmp6)) {
-        if (!tmp11.hasLaunched) {
-          const obj3 = { hasLaunched: true };
-          let merged = Object.assign(tmp11);
-          tmp12(obj3);
-        }
-      }
-      const tmp19 = null == tmp6 && tmp11.hasLaunched;
-      if (tmp19) {
-        const obj4 = { frameId: tmp3, hasLaunched: false, isClosed: true };
-        tmp12(obj4);
-      }
-    }
-    const _Symbol = Symbol;
-    if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-      class I {
-        constructor() {
-          return closure_0(() => { /* body not rendered: F154495 */ });
-        }
-      }
-      cResult[6] = I;
-      tmp25 = I;
-    } else {
-      class I {
-        constructor() {
-          return closure_0(() => { /* body not rendered: F154495 */ });
-        }
-      }
-    }
-    if (tmp11 != null) {
-      class I {
-        constructor() {
-          return closure_0(() => { /* body not rendered: F154495 */ });
-        }
-      }
-    }
-    if (cResult[7] !== (undefined === tmp3 && tmp11.isClosed)) {
-      class I {
-        constructor() {
-          return closure_0(() => { /* body not rendered: F154495 */ });
-        }
-      }
-      tmp29[0] = undefined === tmp3 && tmp11.isClosed;
-      tmp29[1] = tmp25;
-      cResult[7] = undefined === tmp3 && tmp11.isClosed;
-      cResult[8] = tmp29;
-      tmp28 = tmp29;
-    } else {
-      class I {
-        constructor() {
-          return closure_0(() => { /* body not rendered: F154495 */ });
-        }
-      }
-    }
-    return tmp28;
-  }
-  const tmp4 = metroRequire(applicationId, surface);
-  cResult[0] = applicationId;
-  cResult[1] = surface;
-  cResult[2] = tmp4;
-  tmp3 = tmp4;
-}) : (function useAppChannelClosed(shouldStartClosed) {
-  let applicationId;
-  let surface;
-  let tmp4;
-  let tmp5;
-  ({ applicationId, surface } = shouldStartClosed);
-  shouldStartClosed = shouldStartClosed.shouldStartClosed;
-  let tmp = metroRequire(applicationId, surface);
-  const tmp2 = useFrameBySurfaceDefault(applicationId, surface);
-  let obj = react;
-  [tmp4, tmp5] = _slicedToArray(react.useState(null), 2);
-  let c0 = tmp5;
-  let frameId;
-  const tmp3 = _slicedToArray(react.useState(null), 2);
-  if (tmp4 != null) {
-    frameId = tmp4.frameId;
-  }
-  if (frameId !== tmp) {
-    const obj2 = { frameId: tmp, hasLaunched: false, isClosed: null == tmp2 && shouldStartClosed() };
-    null == tmp2 && shouldStartClosed();
-    tmp5(obj2);
-  } else {
-    if (hasOwnProperty(tmp2)) {
-      if (!tmp4.hasLaunched) {
-        const obj3 = { hasLaunched: true };
-        let merged = Object.assign(tmp4);
-        tmp5(obj3);
-      }
-    }
-    const tmp12 = null == tmp2 && tmp4.hasLaunched;
-    if (tmp12) {
-      const obj4 = { frameId: tmp, hasLaunched: false, isClosed: true };
-      tmp5(obj4);
-    }
-  }
-  let frameId1;
-  const launch = obj.useCallback(() => _undefined((arg0) => {
-    let tmp = arg0;
-    if (null != arg0) {
-      const obj = { isClosed: false };
-      const merged = Object.assign(arg0);
-      tmp = obj;
-    }
-    return tmp;
-  }), []);
-  if (tmp4 != null) {
-    frameId1 = tmp4.frameId;
-  }
-  const isClosed = frameId1 === tmp && tmp4.isClosed;
-  return { isClosed, launch };
-});
+({ isLaunched: closure_4, makeFrameId: hasOwnProperty } = FramesConstants);
+const set = new Set();
 const result = size.fileFinishedImporting("modules/app_channels/useAppChannelClosed.tsx");
 
-export default tmp3;
+export default function useAppChannelClosed(shouldStartClosed) {
+  let applicationId;
+  let closure_1;
+  let surface;
+  let tmp17;
+  ({ applicationId, surface } = shouldStartClosed);
+  let first;
+  shouldStartClosed = shouldStartClosed.shouldStartClosed;
+  let tmp = closure_5(applicationId, surface);
+  const tmp2 = first(12204)(applicationId, surface);
+  let obj = react;
+  const tmp3 = _slicedToArray(react.useState(null), 2);
+  first = tmp3[0];
+  dependencyMap = tmp5;
+  let frameId;
+  if (first != null) {
+    frameId = first.frameId;
+  }
+  if (frameId !== tmp) {
+    const obj2 = { frameId: tmp, hasLaunched: false, isClosed: tmp17 };
+    tmp17 = null == tmp2;
+    if (tmp17) {
+      tmp17 = set.has(tmp) || shouldStartClosed();
+      set.has(tmp) || shouldStartClosed();
+    }
+    tmp3[1](obj2);
+  } else {
+    if (closure_4(tmp2)) {
+      if (!first.hasLaunched) {
+        const obj3 = { hasLaunched: true };
+        let merged = Object.assign(first);
+        tmp3[1](obj3);
+      }
+    }
+    const tmp12 = null == tmp2 && first.hasLaunched && !first.isClosed;
+    if (tmp12) {
+      const obj4 = { isClosed: true };
+      const merged1 = Object.assign(first);
+      tmp3[1](obj4);
+    }
+  }
+  const items = [first];
+  const effect = obj.useEffect(() => {
+    let hasLaunched;
+    if (first != null) {
+      hasLaunched = tmp.hasLaunched;
+    }
+    if (true === hasLaunched) {
+      if (first.isClosed) {
+        set.add(first.frameId);
+      } else {
+        set.delete(first.frameId);
+      }
+    }
+  }, items);
+  let frameId1;
+  if (first != null) {
+    frameId1 = first.frameId;
+  }
+  return {
+    isClosed: frameId1 === tmp && first.isClosed,
+    launch() {
+      let tmp = closure_1((arg0) => {
+        let tmp = arg0;
+        if (null != arg0) {
+          const obj = { hasLaunched: false, isClosed: false };
+          const merged = Object.assign(arg0);
+          tmp = obj;
+        }
+        return tmp;
+      });
+    }
+  };
+};

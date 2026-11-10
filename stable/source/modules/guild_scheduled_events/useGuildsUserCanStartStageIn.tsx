@@ -1,66 +1,23 @@
-// Module ID: 8959
-// Function ID: 8960
+// Module ID: 9004
+// Function ID: 9005
 // Name: useGuildsUserCanStartStageIn
-// Dependencies: [4933, 4935, 4863, 558, 576, 504, 2]
+// Dependencies: [4944, 4946, 4871, 504, 2]
+// Exports: useChannelsUserCanStartStageIn
 
-// Module 8959 (useGuildsUserCanStartStageIn)
-import GuildChannelStore2 from "GuildChannelStore" /* 4933 */;
-import PermissionStore from "PermissionStore" /* 4935 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 9004 (useGuildsUserCanStartStageIn)
+import GuildChannelStore2 from "GuildChannelStore" /* 4944 */;
+import PermissionStore from "PermissionStore" /* 4946 */;
 import size from "module_2" /* 2 */;
 
 const GuildChannelStore = GuildChannelStore2;
 
 const GUILD_VOCAL_CHANNELS_KEY = GuildChannelStore2.GUILD_VOCAL_CHANNELS_KEY;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChannelsUserCanStartStageIn(id) {
-  let first;
-  let tmp8;
-  let tmp9;
-  let obj = id(576);
-  const cResult = obj.c(4);
-  const tmp = id;
-  id = undefined;
-  if (id != null) {
-    id = id.id;
-  }
-  if (id == null) {
-    id = null;
-  }
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [GuildChannelStore, PermissionStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== id) {
-    class S {
-      constructor() {
-        arr = closure_2.getChannels(c0)[GUILD_VOCAL_CHANNELS_KEY];
-        return arr.reduce(() => { /* body not rendered: F146110 */ }, []);
-      }
-    }
-    const items1 = [id];
-    cResult[1] = id;
-    cResult[2] = S;
-    cResult[3] = items1;
-    tmp9 = items1;
-    tmp8 = S;
-  } else {
-    class S {
-      constructor() {
-        arr = closure_2.getChannels(c0)[GUILD_VOCAL_CHANNELS_KEY];
-        return arr.reduce(() => { /* body not rendered: F146110 */ }, []);
-      }
-    }
-    tmp9 = cResult[3];
-  }
-  const tmpResult = tmp(504);
-  return tmpResult.useStateFromStoresArray(first, tmp8, tmp9);
-}) : (function useChannelsUserCanStartStageIn(id) {
-  id = undefined;
-  if (id != null) {
-    id = id.id;
+const result = size.fileFinishedImporting("modules/guild_scheduled_events/useGuildsUserCanStartStageIn.tsx");
+
+export function useChannelsUserCanStartStageIn(guild) {
+  let id;
+  if (guild != null) {
+    id = guild.id;
   }
   if (id == null) {
     id = null;
@@ -85,7 +42,4 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChannel
       return arr;
     }, []);
   }, items1);
-});
-const result = size.fileFinishedImporting("modules/guild_scheduled_events/useGuildsUserCanStartStageIn.tsx");
-
-export const useChannelsUserCanStartStageIn = tmp2;
+}

@@ -1,73 +1,23 @@
-// Module ID: 15920
-// Function ID: 15921
+// Module ID: 16489
+// Function ID: 16490
 // Name: useHasFinishedPresenting
-// Dependencies: [32, 19, 558, 576, 1505, 2]
+// Dependencies: [32, 19, 1497, 2]
+// Exports: default
 
-// Module 15920 (useHasFinishedPresenting)
-import react2 from "react" /* 576 */;
-import useNavigation from "useNavigation" /* 1505 */;
+// Module 16489 (useHasFinishedPresenting)
+import useNavigation from "useNavigation" /* 1497 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let navigation;
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHasFinishedPresenting() {
+const result = size.fileFinishedImporting("modules/user_settings/profiles/native/useHasFinishedPresenting.tsx");
+
+export default function useHasFinishedPresenting() {
   let closure_2;
   let first;
-  const obj = react2;
-  const cResult = obj.c(4);
-  const obj2 = useNavigation;
-  navigation = obj2.useNavigation();
-  [first, closure_2] = react.useState(false);
-  const obj3 = react;
-  if (cResult[0] === first) {
-    let tmp5;
-    let tmp6;
-    if (cResult[1] === navigation) {
-      tmp5 = cResult[2];
-      tmp6 = cResult[3];
-    }
-    const effect = obj3.useEffect(tmp5, tmp6);
-    return first;
-  }
-  const fn = function s() {
-    let closure_1;
-    let timeout;
-    const tmp = timeout;
-    if (!tmp) {
-      const parent = navigation.getParent();
-      let addListenerResult;
-      if (parent != null) {
-        addListenerResult = parent.addListener("transitionEnd", (data) => {
-          if (!data.data.closing) {
-            closure_1_2(true);
-          }
-        });
-      }
-      navigation = addListenerResult;
-      const _setTimeout = setTimeout;
-      timeout = setTimeout(() => closure_1_2(true), 500);
-      return () => {
-        if (navigation != null) {
-          tmp();
-        }
-        clearTimeout(closure_1);
-      };
-    }
-  };
-  const items = [navigation, first];
-  cResult[0] = first;
-  cResult[1] = navigation;
-  cResult[2] = fn;
-  cResult[3] = items;
-  tmp6 = items;
-  tmp5 = fn;
-}) : (function useHasFinishedPresenting() {
-  let closure_2;
-  let first;
-  let obj = useNavigation;
+  const obj = useNavigation;
   navigation = obj.useNavigation();
   [first, closure_2] = react.useState(false);
   const items = [navigation, first];
@@ -97,7 +47,4 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHasFinish
     }
   }, items);
   return first;
-});
-let result = size.fileFinishedImporting("modules/user_settings/profiles/native/useHasFinishedPresenting.tsx");
-
-export default tmp2;
+};

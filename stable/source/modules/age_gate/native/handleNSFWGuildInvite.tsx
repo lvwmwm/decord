@@ -1,19 +1,19 @@
-// Module ID: 10047
-// Function ID: 10048
+// Module ID: 10128
+// Function ID: 10129
 // Name: handleNSFWGuildInvite
-// Dependencies: [4873, 4877, 1087, 6697, 1384, 10048, 5676, 6698, 10049, 2]
+// Dependencies: [4881, 4885, 1072, 6737, 1375, 10129, 5693, 6738, 10130, 2]
 // Exports: handleNSFWGuildInvite, isNSFWInvite
 
-// Module 10047 (handleNSFWGuildInvite)
-import Constants from "Constants" /* 1087 */;
-import PlatformUtils from "PlatformUtils" /* 1384 */;
-import GuildRecord from "GuildRecord" /* 4873 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5676 */;
-import TinyBroncoConstants from "TinyBroncoConstants" /* 6697 */;
-import TinyBroncoExperiment from "TinyBroncoExperiment" /* 6698 */;
-import NsfwGateGuildAlert from "NsfwGateGuildAlert" /* 10048 */;
-import NsfwServerInviteWarningAlert from "NsfwServerInviteWarningAlert" /* 10049 */;
-import GuildStore from "GuildStore" /* 4877 */;
+// Module 10128 (handleNSFWGuildInvite)
+import Constants from "Constants" /* 1072 */;
+import PlatformUtils from "PlatformUtils" /* 1375 */;
+import GuildRecord from "GuildRecord" /* 4881 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5693 */;
+import TinyBroncoConstants from "TinyBroncoConstants" /* 6737 */;
+import TinyBroncoExperiment from "TinyBroncoExperiment" /* 6738 */;
+import NsfwGateGuildAlert from "NsfwGateGuildAlert" /* 10129 */;
+import NsfwServerInviteWarningAlert from "NsfwServerInviteWarningAlert" /* 10130 */;
+import GuildStore from "GuildStore" /* 4885 */;
 import size from "module_2" /* 2 */;
 
 const isGuildLurker = GuildRecord.isGuildLurker;
@@ -24,7 +24,7 @@ const items = [, ];
 const set = new Set(items);
 let result = size.fileFinishedImporting("modules/age_gate/native/handleNSFWGuildInvite.tsx");
 
-export const isNSFWInvite = function isNSFWInvite(guild) {
+export function isNSFWInvite(guild) {
   let nsfw_level;
   const has = set.has;
   if (guild != null) {
@@ -37,8 +37,8 @@ export const isNSFWInvite = function isNSFWInvite(guild) {
     nsfw_level = GuildNSFWContentLevel.DEFAULT;
   }
   return has(nsfw_level);
-};
-export const handleNSFWGuildInvite = function handleNSFWGuildInvite(invite, arg1) {
+}
+export function handleNSFWGuildInvite(invite, arg1) {
   let closure_129_0;
   let id;
   let onCancel;
@@ -113,4 +113,4 @@ export const handleNSFWGuildInvite = function handleNSFWGuildInvite(invite, arg1
   } else {
     return false;
   }
-};
+}

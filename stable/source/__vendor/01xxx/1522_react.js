@@ -2,47 +2,29 @@
 // Function ID: 1523
 // Name: react
 // Dependencies: [19]
+// Exports: useKeyedChildListeners
 
 // Module 1522 (react)
 import react from "react" /* 19 */;
 
-let c0 = "Couldn't find a navigation context. Have you wrapped your app with 'NavigationContainer'? See https://reactnavigation.org/docs/getting-started for setup instructions.";
-const obj = { isDefault: true };
-const createContext = react.createContext;
-Object.defineProperty(obj, "getKey", {
-  get: () => {
-    const error = new Error(c0);
-    throw error;
-  },
-  set: undefined
-});
-Object.defineProperty(obj, "setKey", {
-  get: () => {
-    const error = new Error(c0);
-    throw error;
-  },
-  set: undefined
-});
-Object.defineProperty(obj, "getState", {
-  get: () => {
-    const error = new Error(c0);
-    throw error;
-  },
-  set: undefined
-});
-Object.defineProperty(obj, "setState", {
-  get: () => {
-    const error = new Error(c0);
-    throw error;
-  },
-  set: undefined
-});
-Object.defineProperty(obj, "getIsInitial", {
-  get: () => {
-    const error = new Error(c0);
-    throw error;
-  },
-  set: undefined
-});
 
-export const NavigationStateContext = createContext(obj);
+export function useKeyedChildListeners() {
+  let current = react.useRef(Object.assign(Object.create(null), { getState: {}, beforeRemove: {} })).current;
+  const items = [current];
+  const obj = {
+    keyedListeners: current,
+    addKeyedListener: react.useCallback((arg0, arg1, arg2) => {
+      let closure_0;
+      current = arg0;
+      let closure_1 = arg1;
+      let closure_2 = arg2;
+      current[arg0][arg1] = arg2;
+      return () => {
+        if (current[closure_0][closure_1] === closure_2) {
+          current[closure_0][tmp] = undefined;
+        }
+      };
+    }, items)
+  };
+  return obj;
+}

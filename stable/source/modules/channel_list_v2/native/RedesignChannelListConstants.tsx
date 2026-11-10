@@ -1,13 +1,13 @@
-// Module ID: 12095
-// Function ID: 12096
+// Module ID: 11046
+// Function ID: 11047
 // Name: RedesignChannelListConstants
-// Dependencies: [17, 1385, 11091, 2]
+// Dependencies: [17, 1376, 11047, 2]
 // Exports: getScaledCategoryRowHeight, getScaledChannelRowHeight, getScaledChannelSubtitleHeight, getScaledSearchBarHeight
 
-// Module 12095 (RedesignChannelListConstants)
+// Module 11046 (RedesignChannelListConstants)
 import react_native from "react-native" /* 17 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11091 */;
-import PlatformUtils_mod from "utils/PlatformUtils" /* 1385 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11047 */;
+import PlatformUtils_mod from "utils/PlatformUtils" /* 1376 */;
 import size from "module_2" /* 2 */;
 
 let c2 = "text-xs/medium";
@@ -54,21 +54,21 @@ export const STICKY_BANNER_ASPECT_RATIO = 2.609375;
 export const CATEGORY_MARGIN_TOP = 12;
 export const CATEGORY_MARGIN_BOTTOM = 4;
 export const CATEGORY_VERTICAL_PADDING = 4;
-export const getScaledChannelSubtitleHeight = function getScaledChannelSubtitleHeight(fontScale) {
+export function getScaledChannelSubtitleHeight(fontScale) {
   const obj = useScaledTextLineHeight;
   return obj.scaleTextLineHeight(c2, fontScale);
-};
-export const getScaledCategoryRowHeight = function getScaledCategoryRowHeight(fontScale) {
+}
+export function getScaledCategoryRowHeight(fontScale) {
   const obj = useScaledTextLineHeight;
   return obj.scaleLineHeight(num, fontScale) + 8 + 4;
-};
-export const getScaledChannelRowHeight = function getScaledChannelRowHeight(fontScale) {
+}
+export function getScaledChannelRowHeight(fontScale) {
   const sum = 8 + hairlineWidth;
   const obj = useScaledTextLineHeight;
   return 2 * sum + obj.scaleLineHeight(num2, fontScale);
-};
-export const getScaledSearchBarHeight = function getScaledSearchBarHeight(fontScale) {
+}
+export function getScaledSearchBarHeight(fontScale) {
   const obj = useScaledTextLineHeight;
   return 24 + obj.scaleTextLineHeight(c5, fontScale);
-};
+}
 export const VIEWABILITY_CONFIG = frozen;

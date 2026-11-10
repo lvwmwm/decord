@@ -1,29 +1,28 @@
-// Module ID: 9550
-// Function ID: 9551
+// Module ID: 9624
+// Function ID: 9625
 // Name: YouBannerDecorations
-// Dependencies: [19, 17, 2069, 1392, 4852, 1394, 21, 1385, 587, 5003, 558, 9551, 7591, 5033, 4839, 1128, 504, 8707, 8750, 8761, 5010, 683, 2053, 9595, 9597, 6840, 9598, 9599, 6745, 5242, 14185, 2002, 14186, 12377, 3862, 14189, 14191, 9457, 7520, 14188, 5290, 2]
-// Exports: getFloatingNavBottomMargin
+// Dependencies: [19, 17, 2063, 1383, 4860, 1385, 21, 1376, 575, 5014, 9625, 7629, 5044, 4847, 1113, 504, 8757, 8800, 8811, 5021, 671, 2047, 9670, 9671, 9673, 9674, 9677, 9678, 6784, 14710, 14713, 14718, 14720, 9528, 7561, 14715, 5587, 2]
+// Exports: getFloatingNavBottomMargin, useHasSettingsBadge
 
-// Module 9550 (YouBannerDecorations)
-import nativeDefault from "native" /* 587 */;
-import _modDef683 from "module_683" /* 683 */;
-import utils_PlatformUtils from "utils/PlatformUtils" /* 1385 */;
-import PremiumConstants from "PremiumConstants" /* 1394 */;
-import IntlLoaderStore from "IntlLoaderStore" /* 2069 */;
-import dismissible_content from "dismissible_content" /* 4839 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4852 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5033 */;
-import QuestTypes from "QuestTypes" /* 6745 */;
-import useTrialOffer from "useTrialOffer" /* 7591 */;
-import PromotionsHooks from "PromotionsHooks" /* 9551 */;
-import tracking_Tracking from "tracking/Tracking" /* 9598 */;
-import QuestUtils from "QuestUtils" /* 9599 */;
+// Module 9624 (YouBannerDecorations)
+import nativeDefault from "native" /* 575 */;
+import _modDef671 from "module_671" /* 671 */;
+import utils_PlatformUtils from "utils/PlatformUtils" /* 1376 */;
+import PremiumConstants from "PremiumConstants" /* 1385 */;
+import IntlLoaderStore from "IntlLoaderStore" /* 2063 */;
+import dismissible_content from "dismissible_content" /* 4847 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4860 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5044 */;
+import QuestTypes from "QuestTypes" /* 6784 */;
+import useTrialOffer from "useTrialOffer" /* 7629 */;
+import PromotionsHooks from "PromotionsHooks" /* 9625 */;
+import tracking_Tracking from "tracking/Tracking" /* 9677 */;
+import QuestUtils from "QuestUtils" /* 9678 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserStore from "UserStore" /* 1392 */;
+import UserStore from "UserStore" /* 1383 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5003 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let c10;
@@ -57,51 +56,13 @@ let closure_12 = createStyles.createStyles((arg0, arg1, color, borderColor) => {
   let BACKGROUND_SURFACE_HIGH = arg1;
   obj5 = { marginBottom: PX_24, maxWidth: "100%", paddingVertical: nativeDefault.space.PX_8, paddingHorizontal: nativeDefault.space.PX_8, borderRadius: nativeDefault.radii.lg, backgroundColor: BACKGROUND_SURFACE_HIGH, flexDirection: "row", borderColor, borderWidth: 1 };
   if (arg1 == null) {
-    BACKGROUND_SURFACE_HIGH = tmp2(587).colors.BACKGROUND_SURFACE_HIGH;
+    BACKGROUND_SURFACE_HIGH = tmp2(575).colors.BACKGROUND_SURFACE_HIGH;
   }
-  const merged2 = Object.assign(tmp2(587).shadows.SHADOW_HIGH);
+  const merged2 = Object.assign(tmp2(575).shadows.SHADOW_HIGH);
   ({ width: nativeDefault.space.PX_16, flexShrink: 1 });
   ({ flexDirection: "row", flexShrink: 1, alignItems: "flex-start", gap: nativeDefault.space.PX_8 });
   return obj;
 });
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHasSettingsBadge() {
-  const obj = PromotionsHooks;
-  let tmp = obj.useUnseenOutboundPromotions().length > 0;
-  const obj2 = useTrialOffer;
-  const tmp2 = null != obj2.useTrialOffer(closure_9);
-  const obj3 = DismissibleContentUnsafeUtils;
-  const result = obj3.useIsDismissibleContentDismissed_UNSAFE(dismissible_content.DismissibleContent.TRIAL_FOR_ALL_2026_SETTINGS_BADGE);
-  const tmp4 = !result && tmp2;
-  if (!tmp) {
-    tmp = tmp4;
-  }
-  return tmp;
-}) : (function useHasSettingsBadge() {
-  const obj = PromotionsHooks;
-  let tmp = obj.useUnseenOutboundPromotions().length > 0;
-  const obj2 = useTrialOffer;
-  const tmp2 = null != obj2.useTrialOffer(closure_9);
-  const obj3 = DismissibleContentUnsafeUtils;
-  const result = obj3.useIsDismissibleContentDismissed_UNSAFE(dismissible_content.DismissibleContent.TRIAL_FOR_ALL_2026_SETTINGS_BADGE);
-  const tmp4 = !result && tmp2;
-  if (!tmp) {
-    tmp = tmp4;
-  }
-  return tmp;
-});
-let closure_13 = tmp4;
-function getFloatingNavBottomMargin(bottom) {
-  let PX_24;
-  const obj = utils_PlatformUtils;
-  const isIOSResult = obj.isIOS();
-  const space = nativeDefault.space;
-  if (isIOSResult) {
-    PX_24 = space.PX_24;
-  } else {
-    PX_24 = space.PX_4 + bottom;
-  }
-  return PX_24;
-}
 const memoResult = react.memo(function YouBannerDecorations(navigateToSettings) {
   let c3;
   let containerBorderColor;
@@ -111,7 +72,6 @@ const memoResult = react.memo(function YouBannerDecorations(navigateToSettings) 
   let intl2;
   let intl3;
   let intl4;
-  let intl5;
   let items7;
   let items8;
   let navigateToShop;
@@ -121,6 +81,7 @@ const memoResult = react.memo(function YouBannerDecorations(navigateToSettings) 
   let shopButtonRef;
   let theme;
   let tmp11;
+  let tmp33Result;
   navigateToSettings = navigateToSettings.navigateToSettings;
   const navigateToPremium = navigateToSettings.navigateToPremium;
   let num = navigateToSettings.paddingBottom;
@@ -138,28 +99,28 @@ const memoResult = react.memo(function YouBannerDecorations(navigateToSettings) 
   let tmp = dismissBadge((isLoading) => {
     let currentLocale;
     if (!isLoading.isLoading) {
-      currentLocale = navigateToSettings(gradientSecondaryBackground[15]).intl.currentLocale;
+      currentLocale = navigateToSettings(gradientSecondaryBackground[14]).intl.currentLocale;
     }
     return currentLocale;
   });
-  let obj = navigateToSettings(gradientSecondaryBackground[16]);
+  let obj = navigateToSettings(gradientSecondaryBackground[15]);
   let items = [currentUser];
   const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
   let tmp5 = navigateToPremium;
   let id;
-  const tmp6 = navigateToPremium(gradientSecondaryBackground[17]);
+  const tmp6 = navigateToPremium(gradientSecondaryBackground[16]);
   if (stateFromStores != null) {
     id = stateFromStores.id;
   }
   const tmp6Result = tmp6(id);
-  ({ theme, primaryColor, secondaryColor } = tmp5(gradientSecondaryBackground[18])({ user: stateFromStores, displayProfile: tmp6Result }));
-  const tmp9 = tmp5(gradientSecondaryBackground[18])({ user: stateFromStores, displayProfile: tmp6Result });
-  const tmp2Result = navigateToSettings(gradientSecondaryBackground[19]);
+  ({ theme, primaryColor, secondaryColor } = tmp5(gradientSecondaryBackground[17])({ user: stateFromStores, displayProfile: tmp6Result }));
+  const tmp9 = tmp5(gradientSecondaryBackground[17])({ user: stateFromStores, displayProfile: tmp6Result });
+  const tmp2Result = navigateToSettings(gradientSecondaryBackground[18]);
   const userProfileColors = tmp2Result.useUserProfileColors({ theme, primaryColor, secondaryColor });
   ({ containerBorderColor, gradientSecondaryBackground } = userProfileColors);
   const containerBackground = userProfileColors.containerBackground;
-  const tmp2Result6 = navigateToSettings(gradientSecondaryBackground[20]);
-  if (!tmp2Result6.isThemeLight(theme)) {
+  const tmp2Result9 = navigateToSettings(gradientSecondaryBackground[19]);
+  if (!tmp2Result9.isThemeLight(theme)) {
     tmp11 = containerBackground;
   } else {
     tmp11 = null;
@@ -173,32 +134,47 @@ const memoResult = react.memo(function YouBannerDecorations(navigateToSettings) 
   const tmp12 = closure_12(num, react.useMemo(() => {
     let hexResult1 = null;
     if (null != c3) {
-      const mix = _modDef683.mix;
-      const obj = _modDef683(c3);
+      const mix = _modDef671.mix;
+      const obj = _modDef671(c3);
       const hexResult = obj.hex("rgb");
-      const obj2 = _modDef683(c3);
+      const obj2 = _modDef671(c3);
       const mixResult = mix(gradientSecondaryBackground, hexResult, obj2.alpha(), "rgb");
       hexResult1 = mixResult.hex("rgb");
     }
     return hexResult1;
   }, items1), gradientSecondaryBackground, containerBorderColor);
-  const tmp2Result7 = navigateToSettings(gradientSecondaryBackground[22]);
-  const hasPremiumSubscriptionToDisplay = tmp2Result7.useHasPremiumSubscriptionToDisplay();
-  const tmp14 = closure_13();
-  isBadged = tmp14;
-  const tmp15 = tmp5(gradientSecondaryBackground[23])();
-  showBadge = tmp15.showBadge;
-  dismissBadge = tmp15.dismissBadge;
-  const tmp2Result8 = navigateToSettings(gradientSecondaryBackground[24]);
-  const isEligibleForQuests = tmp2Result8.getIsEligibleForQuests();
-  const tmp2Result9 = navigateToSettings(gradientSecondaryBackground[25]);
-  const hasConjureGuild = tmp2Result9.useHasConjureGuild("YouBannerDecorations");
-  const tmp2Result10 = navigateToSettings(gradientSecondaryBackground[12]);
-  const tmp18 = null != tmp2Result10.useTrialOffer(closure_9);
-  currentUser = tmp18;
-  const items2 = [tmp14, navigateToSettings, tmp18];
+  const tmp2Result10 = navigateToSettings(gradientSecondaryBackground[21]);
+  const hasPremiumSubscriptionToDisplay = tmp2Result10.useHasPremiumSubscriptionToDisplay();
+  const tmp2Result11 = navigateToSettings(gradientSecondaryBackground[22]);
+  const mapleSyrup3Enabled = tmp2Result11.useMapleSyrup3Enabled("YouBannerDecorations");
+  const tmp2Result12 = navigateToSettings(gradientSecondaryBackground[10]);
+  let tmp15 = tmp2Result12.useUnseenOutboundPromotions().length > 0;
+  const tmp2Result13 = navigateToSettings(gradientSecondaryBackground[11]);
+  const tmp17 = null != tmp2Result13.useTrialOffer(closure_9);
+  const tmp2Result14 = navigateToSettings(gradientSecondaryBackground[12]);
+  let result = tmp2Result14.useIsDismissibleContentDismissed_UNSAFE(tmp2(tmp3[13]).DismissibleContent.TRIAL_FOR_ALL_2026_SETTINGS_BADGE);
+  const tmp16 = closure_9;
+  const tmp19 = !result && tmp17;
+  if (!tmp15) {
+    tmp15 = tmp19;
+  }
+  isBadged = tmp15;
+  const tmp20 = tmp5(gradientSecondaryBackground[23])();
+  showBadge = tmp20.showBadge;
+  dismissBadge = tmp20.dismissBadge;
+  const tmp2Result15 = navigateToSettings(gradientSecondaryBackground[24]);
+  const isEligibleForQuests = tmp2Result15.getIsEligibleForQuests();
+  const tmp22 = tmp5(gradientSecondaryBackground[25])("YouBannerDecorations");
+  let placement;
+  if (tmp22 != null) {
+    placement = tmp22.placement;
+  }
+  const tmp2Result16 = navigateToSettings(gradientSecondaryBackground[11]);
+  const tmp24 = null != tmp2Result16.useTrialOffer(tmp16);
+  currentUser = tmp24;
+  const items2 = [tmp15, navigateToSettings, tmp24];
   const items3 = [navigateToPremium];
-  const callback = react.useCallback(() => {
+  const callback = obj4.useCallback(() => {
     const obj = tracking_Tracking;
     const obj2 = { isBadged };
     const result = obj.trackYouTabSettingsIconPress(obj2);
@@ -206,20 +182,21 @@ const memoResult = react.memo(function YouBannerDecorations(navigateToSettings) 
     let tmp5 = currentUser;
     if (tmp5) {
       const tmpResult = DismissibleContentUnsafeUtils;
-      tmp5 = !tmpResult.UNSAFE_isDismissibleContentDismissed(tmp(4839).DismissibleContent.TRIAL_FOR_ALL_2026_SETTINGS_BADGE);
+      tmp5 = !tmpResult.UNSAFE_isDismissibleContentDismissed(tmp(4847).DismissibleContent.TRIAL_FOR_ALL_2026_SETTINGS_BADGE);
     }
     if (tmp5) {
       const tmpResult2 = DismissibleContentUnsafeUtils;
-      const result1 = tmpResult2.UNSAFE_markDismissibleContentAsDismissed(tmp(4839).DismissibleContent.TRIAL_FOR_ALL_2026_SETTINGS_BADGE);
+      const result1 = tmpResult2.UNSAFE_markDismissibleContentAsDismissed(tmp(4847).DismissibleContent.TRIAL_FOR_ALL_2026_SETTINGS_BADGE);
     }
   }, items2);
   const items4 = [showBadge, dismissBadge];
-  const callback1 = react.useCallback(() => {
+  const callback1 = obj4.useCallback(() => {
     const obj = tracking_Tracking;
     const result = obj.trackYouTabNitroIconPress();
     navigateToPremium();
   }, items3);
-  const callback2 = react.useCallback(() => {
+  let tmp28 = null;
+  const callback2 = obj4.useCallback(() => {
     const tmp = showBadge;
     if (tmp) {
       dismissBadge(ContentDismissActionType.TAKE_ACTION);
@@ -228,71 +205,91 @@ const memoResult = react.memo(function YouBannerDecorations(navigateToSettings) 
     const obj2 = { fromContent: QuestTypes.QuestContent.USER_PROFILE_HEADER };
     obj.openQuestHome(obj2);
   }, items4);
-  let tmp23 = null;
-  if (hasConjureGuild) {
-    let obj2 = { IconComponent: tmp2(tmp3[33]).MagicWandIcon, accessibilityLabel: intl.string(tmp5(tmp3[34]).uk6jhJ), onPress: tmp22 };
-    const tmp5Result = tmp5(gradientSecondaryBackground[32]);
-    intl = tmp2(tmp3[15]).intl;
-    tmp23 = closure_10(tmp5Result, obj2, "conjure");
+  if ("you_screen" === placement) {
+    tmp28 = closure_10(tmp5(tmp3[29]), {}, "conjure");
   }
-  const items5 = [tmp23, , , , ];
-  let tmp26 = null;
+  const items5 = [tmp28, , , , ];
+  let tmp30 = null;
   if (isEligibleForQuests) {
-    const obj3 = { IconComponent: navigateToSettings(gradientSecondaryBackground[35]).QuestsIcon, accessibilityLabel: intl2.string(navigateToSettings(gradientSecondaryBackground[15]).t.JALI2K), onPress: callback2, showRedDot: showBadge };
-    const tmp5Result5 = tmp5(gradientSecondaryBackground[32]);
-    intl2 = tmp2(tmp3[15]).intl;
-    tmp26 = closure_10(tmp5Result5, obj3, "quests");
+    let obj2 = { IconComponent: tmp2(tmp3[31]).QuestsIcon, accessibilityLabel: intl.string(tmp2(tmp3[14]).t.JALI2K), onPress: callback2, showRedDot: showBadge };
+    const tmp5Result = tmp5(gradientSecondaryBackground[30]);
+    intl = tmp2(tmp3[14]).intl;
+    tmp30 = closure_10(tmp5Result, obj2, "quests");
   }
-  items5[1] = tmp26;
-  items5[2] = closure_10(tmp5(gradientSecondaryBackground[36]), { shopButtonRef, navigateToShop }, "shop");
-  let tmp29Result = null;
+  items5[1] = tmp30;
+  items5[2] = closure_10(tmp5(gradientSecondaryBackground[32]), { shopButtonRef, navigateToShop }, "shop");
   if (!hasPremiumSubscriptionToDisplay) {
-    const obj5 = { IconComponent: navigateToSettings(gradientSecondaryBackground[37]).NitroWheelIcon, accessibilityLabel: intl3.string(navigateToSettings(gradientSecondaryBackground[15]).t.Ipxkog), label: intl4.string(navigateToSettings(gradientSecondaryBackground[15]).t.Ipxkog), onPress: callback1 };
-    const tmp5Result6 = tmp5(gradientSecondaryBackground[32]);
-    intl3 = tmp2(tmp3[15]).intl;
-    intl4 = tmp2(tmp3[15]).intl;
-    tmp29Result = tmp29(tmp5Result6, obj5, "nitro");
+    const obj3 = { IconComponent: navigateToSettings(gradientSecondaryBackground[33]).NitroWheelIcon, accessibilityLabel: intl2.string(navigateToSettings(gradientSecondaryBackground[14]).t.Ipxkog), label: intl3.string(navigateToSettings(gradientSecondaryBackground[14]).t.Ipxkog), onPress: callback1 };
+    const tmp5Result4 = tmp5(gradientSecondaryBackground[30]);
+    intl2 = tmp2(tmp3[14]).intl;
+    intl3 = tmp2(tmp3[14]).intl;
+    tmp33Result = tmp33(tmp5Result4, obj3, "nitro");
+  } else {
+    tmp33Result = null;
   }
-  items5[3] = tmp29Result;
-  const obj6 = { ref: settingsButtonRef, IconComponent: navigateToSettings(gradientSecondaryBackground[38]).SettingsIcon, accessibilityLabel: intl5.string(navigateToSettings(gradientSecondaryBackground[15]).t["3D5yo/"]), onPress: callback, showRedDot: tmp14, testID: "you_tab_settings_button" };
-  const tmp5Result7 = tmp5(gradientSecondaryBackground[32]);
-  intl5 = tmp2(tmp3[15]).intl;
-  items5[4] = closure_10(tmp5Result7, obj6, "settings");
-  const obj7 = { style: tmp12.buttonsFloating, pointerEvents: "box-none", children: closure_10(navigateToSettings(gradientSecondaryBackground[39]).YouScreenNavIconMeasurer, { children: found }, tmp) };
+  items5[3] = tmp33Result;
+  const obj5 = { ref: settingsButtonRef, IconComponent: navigateToSettings(gradientSecondaryBackground[34]).SettingsIcon, accessibilityLabel: intl4.string(navigateToSettings(gradientSecondaryBackground[14]).t["3D5yo/"]), onPress: callback, showRedDot: tmp15, testID: "you_tab_settings_button" };
+  const tmp5Result5 = tmp5(gradientSecondaryBackground[30]);
+  intl4 = tmp2(tmp3[14]).intl;
+  items5[4] = closure_10(tmp5Result5, obj5, "settings");
+  const obj6 = { style: tmp12.buttonsFloating, pointerEvents: "box-none", children: closure_10(navigateToSettings(gradientSecondaryBackground[35]).YouScreenNavIconMeasurer, { children: found }, tmp) };
   found = items5.filter((item) => null != item);
   color = tmp12.containerFloatingGradient.color;
   const items6 = [color];
-  const obj8 = { style: tmp12.containerFloatingWrap, pointerEvents: "box-none", children: items7 };
-  const tmp29Result2 = closure_10(isBadged, obj7);
+  const obj7 = { style: tmp12.containerFloatingWrap, pointerEvents: "box-none", children: items7 };
+  const tmp33Result2 = closure_10(isBadged, obj6);
   const memo = obj4.useMemo(() => {
     let items;
     const obj = { start: { x: 0, y: 0 }, end: { x: 0, y: 1 }, colors: items };
     items = [, ];
-    const obj2 = _modDef683(color);
+    const obj2 = _modDef671(color);
     const alphaResult = obj2.alpha(0);
     items[0] = alphaResult.hex();
-    const obj4 = _modDef683(color);
+    const obj4 = _modDef671(color);
     const alphaResult1 = obj4.alpha(1);
     items[1] = alphaResult1.hex();
     return obj;
   }, items6);
-  const obj9 = { style: tmp12.containerFloatingGradient, pointerEvents: "none" };
-  const tmp5Result8 = tmp5(gradientSecondaryBackground[40]);
+  const obj8 = { style: tmp12.containerFloatingGradient, pointerEvents: "none" };
+  const tmp5Result6 = tmp5(gradientSecondaryBackground[36]);
   const merged = Object.assign(memo);
-  items7 = [closure_10(tmp5Result8, obj9), ];
-  const obj10 = { style: tmp12.containerFloating, children: items8 };
+  items7 = [closure_10(tmp5Result6, obj8), ];
+  const obj9 = { style: tmp12.containerFloating, children: items8 };
   items8 = [, , ];
-  const obj11 = { style: tmp12.endcap, pointerEvents: "none" };
-  items8[0] = closure_10(isBadged, obj11);
-  const obj12 = { style: tmp12.containerFloatingContent, children: tmp29Result2 };
-  items8[1] = closure_10(isBadged, obj12);
-  const obj13 = { style: tmp12.endcap, pointerEvents: "none" };
-  items8[2] = closure_10(isBadged, obj13);
-  items7[1] = closure_11(isBadged, obj10);
-  return closure_11(isBadged, obj8);
+  const obj10 = { style: tmp12.endcap, pointerEvents: "none" };
+  items8[0] = closure_10(isBadged, obj10);
+  const obj11 = { style: tmp12.containerFloatingContent, children: tmp33Result2 };
+  items8[1] = closure_10(isBadged, obj11);
+  const obj12 = { style: tmp12.endcap, pointerEvents: "none" };
+  items8[2] = closure_10(isBadged, obj12);
+  items7[1] = closure_11(isBadged, obj9);
+  return closure_11(isBadged, obj7);
 });
 let result = size.fileFinishedImporting("modules/main_tabs_v2/native/tabs/you/YouBannerDecorations.tsx");
 
 export default memoResult;
-export { getFloatingNavBottomMargin };
-export const useHasSettingsBadge = tmp4;
+export function getFloatingNavBottomMargin(bottom) {
+  let PX_24;
+  const obj = utils_PlatformUtils;
+  const isIOSResult = obj.isIOS();
+  const space = nativeDefault.space;
+  if (isIOSResult) {
+    PX_24 = space.PX_24;
+  } else {
+    PX_24 = space.PX_4 + bottom;
+  }
+  return PX_24;
+}
+export function useHasSettingsBadge() {
+  const obj = PromotionsHooks;
+  let tmp = obj.useUnseenOutboundPromotions().length > 0;
+  const obj2 = useTrialOffer;
+  const tmp2 = null != obj2.useTrialOffer(closure_9);
+  const obj3 = DismissibleContentUnsafeUtils;
+  const result = obj3.useIsDismissibleContentDismissed_UNSAFE(dismissible_content.DismissibleContent.TRIAL_FOR_ALL_2026_SETTINGS_BADGE);
+  const tmp4 = !result && tmp2;
+  if (!tmp) {
+    tmp = tmp4;
+  }
+  return tmp;
+}

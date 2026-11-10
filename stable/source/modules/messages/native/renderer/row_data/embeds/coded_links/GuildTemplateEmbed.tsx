@@ -1,20 +1,20 @@
-// Module ID: 14576
-// Function ID: 14577
+// Module ID: 15118
+// Function ID: 15119
 // Name: GuildTemplateEmbed
-// Dependencies: [17, 7599, 7459, 7841, 8307, 1128, 8169, 587, 5010, 12786, 12787, 14577, 2]
+// Dependencies: [17, 7637, 7501, 7879, 8394, 1113, 8381, 575, 5021, 13235, 13236, 15119, 2]
 // Exports: createGuildTemplateEmbed
 
-// Module 14576 (GuildTemplateEmbed)
+// Module 15118 (GuildTemplateEmbed)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 587 */;
-import intl7 from "intl" /* 1128 */;
-import shared from "shared" /* 5010 */;
-import GuildTemplatesConstants from "GuildTemplatesConstants" /* 7459 */;
-import Constants from "Constants" /* 7841 */;
-import react_native2 from "react-native" /* 8169 */;
-import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8307 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14577 */;
-import GuildTemplateStore from "GuildTemplateStore" /* 7599 */;
+import nativeDefault from "native" /* 575 */;
+import intl7 from "intl" /* 1113 */;
+import shared from "shared" /* 5021 */;
+import GuildTemplatesConstants from "GuildTemplatesConstants" /* 7501 */;
+import Constants from "Constants" /* 7879 */;
+import react_native2 from "react-native" /* 8381 */;
+import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8394 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15119 */;
+import GuildTemplateStore from "GuildTemplateStore" /* 7637 */;
 import size from "module_2" /* 2 */;
 
 const Image = react_native.Image;
@@ -22,7 +22,7 @@ const GuildTemplateStates = GuildTemplatesConstants.GuildTemplateStates;
 const InviteTypes = Constants.InviteTypes;
 const result = size.fileFinishedImporting("modules/messages/native/renderer/row_data/embeds/coded_links/GuildTemplateEmbed.tsx");
 
-export const createGuildTemplateEmbed = function createGuildTemplateEmbed(code, arg1) {
+export function createGuildTemplateEmbed(code, arg1) {
   let baseColors;
   let colors;
   let formatToPlainStringResult;
@@ -57,9 +57,9 @@ export const createGuildTemplateEmbed = function createGuildTemplateEmbed(code, 
     resolveAssetSource = Image.resolveAssetSource;
     const obj3 = shared;
     if (obj3.isThemeDark(arg1)) {
-      tmpResult = tmp(12786);
+      tmpResult = tmp(13235);
     } else {
-      tmpResult = tmp(12787);
+      tmpResult = tmp(13236);
     }
     return obj;
   } else {
@@ -77,4 +77,4 @@ export const createGuildTemplateEmbed = function createGuildTemplateEmbed(code, 
     intl6 = intl7.intl;
     return obj10;
   }
-};
+}

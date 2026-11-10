@@ -1,26 +1,26 @@
-// Module ID: 6677
-// Function ID: 6678
+// Module ID: 6717
+// Function ID: 6718
 // Name: StreamKeyUtils
-// Dependencies: [32, 6675, 2]
+// Dependencies: [32, 6715, 2]
 // Exports: decodeStreamKey, encodeStreamKey, isStreamKey
 
-// Module 6677 (StreamKeyUtils)
-import Constants from "Constants" /* 6675 */;
+// Module 6717 (StreamKeyUtils)
+import Constants from "Constants" /* 6715 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
 const StreamTypes = Constants.StreamTypes;
 const result = size.fileFinishedImporting("modules/go_live/utils/StreamKeyUtils.tsx");
 
-export const isStreamKey = function isStreamKey(id) {
+export function isStreamKey(id) {
   let tmp = null != id;
   if (tmp) {
     tmp = id.startsWith(StreamTypes.GUILD) || id.startsWith(StreamTypes.CALL);
     id.startsWith(StreamTypes.GUILD) || id.startsWith(StreamTypes.CALL);
   }
   return tmp;
-};
-export const decodeStreamKey = function decodeStreamKey(streamKey) {
+}
+export function decodeStreamKey(streamKey) {
   const parts = streamKey.split(":");
   const first = parts[0];
   if (StreamTypes.GUILD === first) {
@@ -41,8 +41,8 @@ export const decodeStreamKey = function decodeStreamKey(streamKey) {
     const error = new Error("Unknown stream type " + first);
     throw error;
   }
-};
-export const encodeStreamKey = function encodeStreamKey(currentUserActiveStream) {
+}
+export function encodeStreamKey(currentUserActiveStream) {
   let channelId;
   let ownerId;
   let streamType;
@@ -61,4 +61,4 @@ export const encodeStreamKey = function encodeStreamKey(currentUserActiveStream)
     const error = new Error("Unknown stream type " + streamType);
     throw error;
   }
-};
+}

@@ -1,34 +1,128 @@
 // Module ID: 1580
 // Function ID: 1581
-// Dependencies: [32, 19, 1514, 1540]
-// Exports: useRegisterNavigator
+// Dependencies: [19, 1501, 1541, 1502]
+// Exports: useNavigationHelpers
 
 // Module 1580
-import _slicedToArray from "_slicedToArray" /* 32 */;
+import _createClass from "_createClass" /* 1501 */;
 import react from "react" /* 19 */;
 
+let getStateForAction;
 
-export const useRegisterNavigator = function useRegisterNavigator() {
-  let context;
-  let obj = react;
-  const first = _slicedToArray(react.useState(() => {
-    const obj = first(context[2]);
-    return obj.nanoid();
-  }), 1)[0];
-  context = react.useContext(first(context[3]).SingleNavigatorContext);
-  if (undefined === context) {
-    const _Error = Error;
-    const self = this;
-    const self2 = this;
-    const error = new Error("Couldn't register the navigator. Have you wrapped your app with 'NavigationContainer'?\n\nThis can also happen if there are multiple copies of '@react-navigation' packages installed.");
-    throw error;
-  } else {
-    const items = [context, first];
-    const effect = obj.useEffect(() => {
-      const unregister = context.unregister;
-      context.register(unregister);
-      return () => unregister(first);
-    }, items);
-    return first;
-  }
-};
+const PrivateValueStore = _createClass.PrivateValueStore;
+
+export function useNavigationHelpers(id) {
+  id = id.id;
+  const onAction = id.onAction;
+  const onUnhandledAction = id.onUnhandledAction;
+  const getState = id.getState;
+  const emitter = id.emitter;
+  const router = id.router;
+  let state = id.state;
+  const context = onUnhandledAction.useContext(id(onAction[2]).NavigationContext);
+  const ref = onUnhandledAction.useRef(null);
+  let obj = { state, base: getState() };
+  ref.current = obj;
+  const insertionEffect = onUnhandledAction.useInsertionEffect(() => {
+    ref.current = null;
+  });
+  let items = [router, context, emitter.emit, getState, onAction, onUnhandledAction, id, ref];
+  return onUnhandledAction.useMemo(() => {
+    let obj = {};
+    const merged = Object.assign(router.actionCreators);
+    const merged1 = Object.assign(id(onAction[3]).CommonActions);
+    const keys = Object.keys(obj);
+    const reduced = keys.reduce((acc, item) => {
+      let closure_0 = item;
+      acc[item] = () => {
+        const items = [...HermesBuiltin.copyRestArgs()];
+        const applyResult = obj[item].apply(items);
+        let applyResultResult = applyResult;
+        if (typeof applyResult === "function") {
+          applyResultResult = applyResult(closure_1_3());
+        }
+        if (!obj2(applyResultResult)) {
+          if (closure_1_2 != null) {
+            closure_1_2(applyResultResult);
+          }
+        }
+      };
+      return acc;
+    }, {});
+    let obj2 = {
+      dispatch(fn) {
+        let tmp = fn;
+        if (typeof fn === "function") {
+          tmp = fn(getState());
+        }
+        if (!obj2(tmp)) {
+          if (onUnhandledAction != null) {
+            onUnhandledAction(tmp);
+          }
+        }
+      },
+      emit: emitter.emit,
+      isFocused: context ? context.isFocused : (() => true),
+      canGoBack() {
+        const tmp = getState();
+        getStateForAction = getStateForAction.getStateForAction;
+        const CommonActions = id(onAction[3]).CommonActions;
+        obj = { routeNames: tmp.routeNames, routeParamList: {}, routeGetIdList: {} };
+        let flag = null !== getStateForAction(tmp, CommonActions.goBack(), obj);
+        if (!flag) {
+          let canGoBackResult;
+          obj2 = context;
+          if (context != null) {
+            canGoBackResult = obj2.canGoBack();
+          }
+          flag = canGoBackResult;
+        }
+        if (!flag) {
+          flag = false;
+        }
+        return flag;
+      },
+      getId() {
+        return obj;
+      },
+      getParent(arg0) {
+        if (undefined !== arg0) {
+          let tmp2 = obj2;
+          if (tmp2) {
+            obj2 = obj;
+            tmp2 = obj;
+            if (arg0 !== obj2.getId()) {
+              const parent = obj2.getParent();
+              tmp2 = parent;
+              while (parent) {
+                obj2 = parent;
+                tmp2 = parent;
+                if (arg0 === parent.getId()) {
+                  break;
+                }
+              }
+            }
+          }
+          return tmp2;
+        } else {
+          return context;
+        }
+      },
+      getState() {
+        const tmp = getState();
+        const current = ref.current;
+        let state = tmp;
+        if (null != current) {
+          state = tmp;
+          if (current.base === tmp) {
+            state = current.state;
+          }
+        }
+        return state;
+      }
+    };
+    const merged2 = Object.assign(context);
+    const merged3 = Object.assign(reduced);
+    return obj2;
+  }, items);
+}

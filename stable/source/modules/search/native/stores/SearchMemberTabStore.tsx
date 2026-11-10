@@ -1,18 +1,16 @@
-// Module ID: 13283
-// Function ID: 13284
+// Module ID: 13914
+// Function ID: 13915
 // Name: SearchMemberTabStore
-// Dependencies: [4855, 1087, 9099, 4940, 6861, 504, 584, 2]
+// Dependencies: [4863, 1072, 9135, 4951, 6901, 504, 572, 2]
 
-// Module 13283 (SearchMemberTabStore)
+// Module 13914 (SearchMemberTabStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1087 */;
-import GuildUtilsDefault from "GuildUtils" /* 6861 */;
-import _modDef9099 from "module_9099" /* 9099 */;
-import ChannelStore from "ChannelStore" /* 4855 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import Constants from "Constants" /* 1072 */;
+import GuildUtilsDefault from "GuildUtils" /* 6901 */;
+import _modDef9135 from "module_9135" /* 9135 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
 import size from "module_2" /* 2 */;
-
-let results;
 
 const Permissions = Constants.Permissions;
 let closure_6 = [];
@@ -49,8 +47,8 @@ class GuildMemberSearchManager {
       }
     };
     const items = [];
-    const tmp2 = _modDef9099;
-    items[0] = obj(9099).AutocompleterResultTypes.USER;
+    const tmp2 = _modDef9135;
+    items[0] = obj(9135).AutocompleterResultTypes.USER;
     obj.autocompleter = new tmp2(obj.onAutocompleterResultsChange, items, 50);
     const autocompleter = obj.autocompleter;
     new tmp2(obj.onAutocompleterResultsChange, items, 50);
@@ -95,7 +93,7 @@ class SearchGuildMemberTabStoreImpl extends Store {
   }
   getResults(arg0) {
     const value = map.get(arg0);
-    results = undefined;
+    let results;
     if (value != null) {
       results = value.getResults();
     }
@@ -174,8 +172,8 @@ let obj = {
           }
         };
         let tmp2 = importDefault;
-        const tmp4 = _modDef9099;
-        let items = [obj2(9099).AutocompleterResultTypes.USER];
+        const tmp4 = _modDef9135;
+        let items = [obj2(9135).AutocompleterResultTypes.USER];
         const self = this;
         const self2 = this;
         obj2.autocompleter = new tmp4(obj2.onAutocompleterResultsChange, items, 50);

@@ -1,12 +1,12 @@
-// Module ID: 11817
-// Function ID: 11818
+// Module ID: 13000
+// Function ID: 13001
 // Name: conjureTemplateIntakeRequests
-// Dependencies: [5, 10826, 1128, 2]
+// Dependencies: [5, 10948, 1113, 2]
 // Exports: fetchStoredConjureIntake
 
-// Module 11817 (conjureTemplateIntakeRequests)
-import intl from "intl" /* 1128 */;
-import conjureWorkerFetch from "conjureWorkerFetch" /* 10826 */;
+// Module 13000 (conjureTemplateIntakeRequests)
+import intl from "intl" /* 1113 */;
+import conjureWorkerFetch from "conjureWorkerFetch" /* 10948 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -43,6 +43,6 @@ let obj = function _fetchStoredConjureIntake() {
 };
 const result = size.fileFinishedImporting("modules/conjure/templates/conjureTemplateIntakeRequests.tsx");
 
-export const fetchStoredConjureIntake = function fetchStoredConjureIntake() {
+export function fetchStoredConjureIntake() {
   return obj(...arguments);
-};
+}

@@ -1,16 +1,16 @@
-// Module ID: 8740
-// Function ID: 8741
+// Module ID: 8790
+// Function ID: 8791
 // Name: StorefrontProductActionCreators
-// Dependencies: [5, 2068, 8741, 7701, 1087, 8742, 584, 6415, 6407, 2]
+// Dependencies: [5, 2062, 8791, 7739, 1072, 8792, 572, 6455, 6447, 2]
 // Exports: maybeFetchProductsBySkuIds, maybeFetchProductsWithSkus
 
-// Module 8740 (StorefrontProductActionCreators)
-import Constants from "Constants" /* 1087 */;
-import StorefrontCacheUtils from "StorefrontCacheUtils" /* 8742 */;
+// Module 8790 (StorefrontProductActionCreators)
+import Constants from "Constants" /* 1072 */;
+import StorefrontCacheUtils from "StorefrontCacheUtils" /* 8792 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import LocaleStore from "LocaleStore" /* 2068 */;
-import StorefrontProductStore from "StorefrontProductStore" /* 8741 */;
-import StorefrontProductRecord from "StorefrontProductRecord" /* 7701 */;
+import LocaleStore from "LocaleStore" /* 2062 */;
+import StorefrontProductStore from "StorefrontProductStore" /* 8791 */;
+import StorefrontProductRecord from "StorefrontProductRecord" /* 7739 */;
 import size from "module_2" /* 2 */;
 
 let obj = function _maybeFetchProductsWithSkus() {
@@ -85,13 +85,13 @@ let obj = function _maybeFetchProductsWithSkus() {
       dispatch(obj);
       c4 = 0;
     }
-    await "IconComponent";
+    await "HermesInternal";
     length = tmp;
     ({ productIds: c0, ignoreCache } = closure_0);
     if (ignoreCache === undefined) {
       ignoreCache = false;
     }
-    return "Reflect";
+    return "flexDirection";
   });
   return obj(...arguments);
 };
@@ -183,23 +183,23 @@ obj = function _maybeFetchProductsBySkuIds() {
       dispatch(obj);
       c4 = 0;
     }
-    await "IconComponent";
+    await "HermesInternal";
     length = tmp;
     ({ skuIds: c0, ignoreCache } = closure_0);
     if (ignoreCache === undefined) {
       ignoreCache = false;
     }
-    return "Reflect";
+    return "flexDirection";
   });
   return obj(...arguments);
 };
 const Endpoints = Constants.Endpoints;
 const result = size.fileFinishedImporting("modules/storefront/StorefrontProductActionCreators.tsx");
 
-export const maybeFetchProductsWithSkus = function maybeFetchProductsWithSkus() {
+export function maybeFetchProductsWithSkus() {
   return obj(...arguments);
-};
+}
 export { shouldFetchProductBySku };
-export const maybeFetchProductsBySkuIds = function maybeFetchProductsBySkuIds() {
+export function maybeFetchProductsBySkuIds() {
   return obj(...arguments);
-};
+}

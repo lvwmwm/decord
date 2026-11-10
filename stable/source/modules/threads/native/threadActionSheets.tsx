@@ -1,18 +1,18 @@
-// Module ID: 11042
-// Function ID: 11043
+// Module ID: 11141
+// Function ID: 11142
 // Name: threadActionSheets
-// Dependencies: [5242, 11043, 2002, 2]
+// Dependencies: [5258, 11142, 1994, 2]
 // Exports: showThreadNotificationsBottomSheet
 
-// Module 11042 (threadActionSheets)
-import asyncRequire from "asyncRequire" /* 2002 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5242 */;
+// Module 11141 (threadActionSheets)
+import asyncRequire from "asyncRequire" /* 1994 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/threads/native/threadActionSheets.tsx");
 
-export const showThreadNotificationsBottomSheet = function showThreadNotificationsBottomSheet(channel) {
+export function showThreadNotificationsBottomSheet(channel) {
   const obj = ActionSheetActionCreatorsDefault;
   const obj2 = { channel };
-  obj.openLazy(asyncRequire(11043, dependencyMap.paths), "ThreadNotificationsBottomSheet", obj2);
-};
+  obj.openLazy(asyncRequire(11142, dependencyMap.paths), "ThreadNotificationsBottomSheet", obj2);
+}

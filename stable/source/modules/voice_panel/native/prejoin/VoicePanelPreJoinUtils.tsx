@@ -1,16 +1,16 @@
-// Module ID: 18627
-// Function ID: 18628
+// Module ID: 19274
+// Function ID: 19275
 // Name: VoicePanelPreJoinUtils
-// Dependencies: [568, 2]
+// Dependencies: [558, 2]
 // Exports: areVoicePanelPreJoinContentPropsEqual
 
-// Module 18627 (VoicePanelPreJoinUtils)
-import shallowEqualDefault from "shallowEqual" /* 568 */;
+// Module 19274 (VoicePanelPreJoinUtils)
+import shallowEqualDefault from "shallowEqual" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/voice_panel/native/prejoin/VoicePanelPreJoinUtils.tsx");
 
-export const areVoicePanelPreJoinContentPropsEqual = function areVoicePanelPreJoinContentPropsEqual(streamingMembers, arg1) {
+export function areVoicePanelPreJoinContentPropsEqual(streamingMembers, arg1) {
   if (null != streamingMembers) {
     if (null != arg1) {
       if (shallowEqualDefault(streamingMembers, arg1, ["streamingMembers"])) {
@@ -43,4 +43,4 @@ export const areVoicePanelPreJoinContentPropsEqual = function areVoicePanelPreJo
     }
   }
   return streamingMembers === arg1;
-};
+}

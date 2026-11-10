@@ -1,14 +1,14 @@
-// Module ID: 4927
-// Function ID: 4928
+// Module ID: 4938
+// Function ID: 4939
 // Name: CreatorMonetizationRestrictionsUtils
-// Dependencies: [4928, 4877, 4929, 1087, 2]
+// Dependencies: [4939, 4885, 4940, 1072, 2]
 // Exports: isRestrictedFromMonetizationReapplication, isRestrictedFromShowingGuildPurchaseEntryPoints, isRestrictedFromUpdatingCreatorMonetizationSettings, shouldHideGuildPurchaseEntryPoints, shouldRestrictUpdatingCreatorMonetizationSettings
 
-// Module 4927 (CreatorMonetizationRestrictionsUtils)
-import Constants from "Constants" /* 1087 */;
-import GuildRoleSubscriptionsStore2 from "GuildRoleSubscriptionsStore" /* 4928 */;
-import CreatorMonetizationReviewConstants from "CreatorMonetizationReviewConstants" /* 4929 */;
-import GuildStore from "GuildStore" /* 4877 */;
+// Module 4938 (CreatorMonetizationRestrictionsUtils)
+import Constants from "Constants" /* 1072 */;
+import GuildRoleSubscriptionsStore2 from "GuildRoleSubscriptionsStore" /* 4939 */;
+import CreatorMonetizationReviewConstants from "CreatorMonetizationReviewConstants" /* 4940 */;
+import GuildStore from "GuildStore" /* 4885 */;
 import size from "module_2" /* 2 */;
 
 const GuildRoleSubscriptionsStore = GuildRoleSubscriptionsStore2;
@@ -18,11 +18,11 @@ const constants = CreatorMonetizationReviewConstants.CreatorMonetizationRestrict
 const GuildFeatures = Constants.GuildFeatures;
 const result = size.fileFinishedImporting("modules/creator_monetization_review/CreatorMonetizationRestrictionsUtils.tsx");
 
-export const isRestrictedFromShowingGuildPurchaseEntryPoints = function isRestrictedFromShowingGuildPurchaseEntryPoints(restrictions) {
+export function isRestrictedFromShowingGuildPurchaseEntryPoints(restrictions) {
   const hasItem = null != restrictions && restrictions.includes(constants.NEW_PURCHASES_DISABLED);
   return hasItem;
-};
-export const shouldHideGuildPurchaseEntryPoints = function shouldHideGuildPurchaseEntryPoints(guildId) {
+}
+export function shouldHideGuildPurchaseEntryPoints(guildId) {
   if (null == guildId) {
     return false;
   } else {
@@ -45,12 +45,12 @@ export const shouldHideGuildPurchaseEntryPoints = function shouldHideGuildPurcha
     }
     return flag;
   }
-};
-export const isRestrictedFromUpdatingCreatorMonetizationSettings = function isRestrictedFromUpdatingCreatorMonetizationSettings(restrictions) {
-  const hasItem = null != restrictions && restrictions.includes(constants.SETTINGS_READ_ONLY);
+}
+export function isRestrictedFromUpdatingCreatorMonetizationSettings(stateFromStoresArray) {
+  const hasItem = null != stateFromStoresArray && stateFromStoresArray.includes(constants.SETTINGS_READ_ONLY);
   return hasItem;
-};
-export const shouldRestrictUpdatingCreatorMonetizationSettings = function shouldRestrictUpdatingCreatorMonetizationSettings(id) {
+}
+export function shouldRestrictUpdatingCreatorMonetizationSettings(id) {
   if (null == id) {
     return false;
   } else {
@@ -73,8 +73,8 @@ export const shouldRestrictUpdatingCreatorMonetizationSettings = function should
     }
     return flag;
   }
-};
-export const isRestrictedFromMonetizationReapplication = function isRestrictedFromMonetizationReapplication(restrictions) {
-  const hasItem = null != restrictions && restrictions.includes(constants.REAPPLICATION_DISABLED);
+}
+export function isRestrictedFromMonetizationReapplication(stateFromStoresArray) {
+  const hasItem = null != stateFromStoresArray && stateFromStoresArray.includes(constants.REAPPLICATION_DISABLED);
   return hasItem;
-};
+}

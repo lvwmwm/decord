@@ -1,16 +1,16 @@
-// Module ID: 16343
-// Function ID: 16344
+// Module ID: 16931
+// Function ID: 16932
 // Name: QuestCustomAppStoreOverlayUtils
-// Dependencies: [9635, 9639, 14138, 2]
+// Dependencies: [9715, 9719, 14663, 2]
 // Exports: canOpenCustomAppStoreOverlayFromCta, prefetchCustomAppStoreOverlayContent
 
-// Module 16343 (QuestCustomAppStoreOverlayUtils)
-import apexExperiment from "apexExperiment" /* 9635 */;
-import AppStoreOverlayContent from "AppStoreOverlayContent" /* 14138 */;
+// Module 16931 (QuestCustomAppStoreOverlayUtils)
+import apexExperiment from "apexExperiment" /* 9715 */;
+import AppStoreOverlayContent from "AppStoreOverlayContent" /* 14663 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const QuestPlatformUtils = tmp(9639);
+const QuestPlatformUtils = tmp(9719);
 function fetchCustomAppStoreOverlayContent(cta) {
   let resolved;
   const CustomAppStoreOverlayExperiment = apexExperiment.CustomAppStoreOverlayExperiment;
@@ -40,7 +40,7 @@ function fetchCustomAppStoreOverlayContent(cta) {
 }
 const result = size.fileFinishedImporting("modules/quests/utils/QuestCustomAppStoreOverlayUtils.native.tsx");
 
-export const canOpenCustomAppStoreOverlayFromCta = function canOpenCustomAppStoreOverlayFromCta(cta) {
+export function canOpenCustomAppStoreOverlayFromCta(cta) {
   const CustomAppStoreOverlayExperiment = apexExperiment.CustomAppStoreOverlayExperiment;
   let enabled = CustomAppStoreOverlayExperiment.getConfig({ location: "quest_open_game_link" }).enabled;
   if (enabled) {
@@ -48,9 +48,9 @@ export const canOpenCustomAppStoreOverlayFromCta = function canOpenCustomAppStor
     enabled = null != tmpResult.getInlineStoreParamsFromCta(cta);
   }
   return enabled;
-};
+}
 export { fetchCustomAppStoreOverlayContent };
-export const prefetchCustomAppStoreOverlayContent = function prefetchCustomAppStoreOverlayContent(cta) {
+export function prefetchCustomAppStoreOverlayContent(cta) {
   const CustomAppStoreOverlayExperiment = apexExperiment.CustomAppStoreOverlayExperiment;
   let enabled = CustomAppStoreOverlayExperiment.getConfig({ location: "quest_open_game_link" }).enabled;
   if (enabled) {
@@ -63,4 +63,4 @@ export const prefetchCustomAppStoreOverlayContent = function prefetchCustomAppSt
 
     });
   }
-};
+}

@@ -1,13 +1,13 @@
-// Module ID: 11390
-// Function ID: 11391
+// Module ID: 11691
+// Function ID: 11692
 // Name: getShouldShowAppAuthPrompt
-// Dependencies: [7235, 7288, 7291, 2]
+// Dependencies: [7276, 7329, 7332, 2]
 // Exports: getShouldShowAppAuthPrompt
 
-// Module 11390 (getShouldShowAppAuthPrompt)
-import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 7235 */;
-import useAuthorizationApp from "useAuthorizationApp" /* 7288 */;
-import AuthorizedAppsActionCreatorsDefault from "AuthorizedAppsActionCreators" /* 7291 */;
+// Module 11691 (getShouldShowAppAuthPrompt)
+import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 7276 */;
+import useAuthorizationApp from "useAuthorizationApp" /* 7329 */;
+import AuthorizedAppsActionCreatorsDefault from "AuthorizedAppsActionCreators" /* 7332 */;
 import size from "module_2" /* 2 */;
 
 const AuthorizedAppsStore = AuthorizedAppsStore2;
@@ -15,7 +15,7 @@ const AuthorizedAppsStore = AuthorizedAppsStore2;
 const FetchState = AuthorizedAppsStore2.FetchState;
 const result = size.fileFinishedImporting("modules/application_account_linking/native/getShouldShowAppAuthPrompt.tsx");
 
-export const getShouldShowAppAuthPrompt = function getShouldShowAppAuthPrompt(application1) {
+export function getShouldShowAppAuthPrompt(application1) {
   if (null == application1) {
     return false;
   } else {
@@ -60,4 +60,4 @@ export const getShouldShowAppAuthPrompt = function getShouldShowAppAuthPrompt(ap
       }
     }
   }
-};
+}

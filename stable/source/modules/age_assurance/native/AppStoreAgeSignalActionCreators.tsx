@@ -1,18 +1,34 @@
-// Module ID: 8111
-// Function ID: 8112
+// Module ID: 8148
+// Function ID: 8149
 // Name: AppStoreAgeSignalActionCreators
-// Dependencies: [5, 1087, 1297, 2]
-// Exports: registerAgeSignalAttestKey, requestAgeSignalChallenge, submitAgeSignal
+// Dependencies: [5, 1072, 1282, 2]
+// Exports: registerAgeSignalAttestKey, reinstateAppStoreConsent, requestAgeSignalChallenge, submitAgeSignal
 
-// Module 8111 (AppStoreAgeSignalActionCreators)
-import Constants from "Constants" /* 1087 */;
-import HTTPUtils from "HTTPUtils" /* 1297 */;
+// Module 8148 (AppStoreAgeSignalActionCreators)
+import Constants from "Constants" /* 1072 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
-let c2, closure_6, closure_7, platform;
+let closure_6, closure_7, platform;
 
-let obj = function _requestAgeSignalChallenge() {
+let obj = function _reinstateAppStoreConsent() {
+  obj = _asyncToGenerator(async (arg0) => {
+    let c1;
+    let c2;
+    let obj4;
+    let closure_0 = arg0;
+    const HTTP = HTTPUtils.HTTP;
+    const request = { url: constants.APP_STORE_CONSENT_REINSTATE, body: obj4, rejectWithError: true, failImmediatelyWhenRateLimited: true };
+    obj4 = { is_cold_launch: true };
+    const post = HTTP.post;
+    const merged = Object.assign(closure_0);
+    await post(request);
+    return arg1.body.outcome;
+  });
+  return obj(...arguments);
+};
+obj = function _requestAgeSignalChallenge() {
   obj = _asyncToGenerator(async (platform, key_id) => {
     let c3 = 0;
     let c4 = 0;
@@ -28,7 +44,7 @@ let obj = function _requestAgeSignalChallenge() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -79,7 +95,7 @@ let obj = function _requestAgeSignalChallenge() {
               }
             }
             c4 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp11) {
           c4 = 3;
@@ -115,7 +131,7 @@ obj = function _submitAgeSignal() {
   obj = _asyncToGenerator(async (arg0, integrity_token, is_cold_launch) => {
     let closure_0 = arg0;
     let closure_3 = arg3;
-    closure_4 = arg4;
+    let closure_4 = arg4;
     let c8 = 0;
     let c9 = 0;
     const iter = (async (arg0, value, arg2) => {
@@ -131,7 +147,7 @@ obj = function _submitAgeSignal() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -154,7 +170,7 @@ obj = function _submitAgeSignal() {
               }
               c8 = 1;
               c9 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "flexDirection", done: true };
             }
           } else if (1 === c8) {
             if (arg0 === 1) {
@@ -172,7 +188,7 @@ obj = function _submitAgeSignal() {
                 }
                 if ("accepted" !== result) {
                   if ("skipped" !== result) {
-                    obj = closure_1_4;
+                    obj = toSubmitOutcome;
                   }
                   return obj;
                 }
@@ -225,15 +241,18 @@ obj = function _submitAgeSignal() {
   return obj(...arguments);
 };
 const Endpoints = Constants.Endpoints;
-let closure_4 = { result: "skipped", reason: null };
+let closure_5 = { result: "skipped", reason: null };
 let result = size.fileFinishedImporting("modules/age_assurance/native/AppStoreAgeSignalActionCreators.tsx");
 
-export const requestAgeSignalChallenge = function requestAgeSignalChallenge() {
+export function reinstateAppStoreConsent() {
   return obj(...arguments);
-};
-export const registerAgeSignalAttestKey = function registerAgeSignalAttestKey() {
+}
+export function requestAgeSignalChallenge() {
   return obj(...arguments);
-};
-export const submitAgeSignal = function submitAgeSignal() {
+}
+export function registerAgeSignalAttestKey() {
   return obj(...arguments);
-};
+}
+export function submitAgeSignal() {
+  return obj(...arguments);
+}

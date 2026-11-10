@@ -1,21 +1,21 @@
-// Module ID: 12533
-// Function ID: 12534
+// Module ID: 12781
+// Function ID: 12782
 // Name: ConjureFloatingActivity
-// Dependencies: [32, 19, 17, 21, 5003, 587, 558, 576, 5084, 5238, 12473, 1128, 3862, 12377, 5266, 6940, 12534, 6873, 2]
+// Dependencies: [32, 19, 17, 21, 5014, 575, 5095, 5254, 12720, 6980, 1113, 3868, 12123, 5624, 12782, 6914, 2]
+// Exports: default
 
-// Module 12533 (ConjureFloatingActivity)
+// Module 12781 (ConjureFloatingActivity)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 587 */;
-import _modDef3862 from "module_3862" /* 3862 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 5084 */;
-import timing from "timing" /* 5238 */;
-import AssetRegistryDefault from "AssetRegistry" /* 6873 */;
-import ConjureTodoListDefault from "ConjureTodoList" /* 12473 */;
+import nativeDefault from "native" /* 575 */;
+import _modDef3868 from "module_3868" /* 3868 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 5095 */;
+import timing from "timing" /* 5254 */;
+import AssetRegistryDefault from "AssetRegistry" /* 6914 */;
+import ConjureTodoListDefault from "ConjureTodoList" /* 12720 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5003 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let importDefault, set;
@@ -41,100 +41,9 @@ obj5 = { maxWidth: "100%", marginBottom: nativeDefault.space.PX_8, padding: nati
 const merged1 = Object.assign(nativeDefault.shadows.SHADOW_MEDIUM);
 let closure_8 = createStyles(obj);
 const __initData = { code: "function ConjureFloatingActivityTsx1(){const{opacity}=this.__closure;return{opacity:opacity.get()};}" };
-const __initData2 = { code: "function ConjureFloatingActivityTsx2(){const{opacity}=this.__closure;return{opacity:opacity.get()};}" };
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureFloatingActivity(arg0) {
-  let agents;
-  let bottom;
-  let line;
-  let onJumpToActivity;
-  let sharedValue;
-  let tmp6;
-  let tmp7;
-  let todos;
-  let todosLive;
-  let obj = sharedValue(576);
-  const cResult = obj.c(41);
-  ({ line, onJumpToActivity, bottom, todos, todosLive, agents } = arg0);
-  const tmp4 = closure_8();
-  const tmpResult = sharedValue(5084);
-  sharedValue = tmpResult.useSharedValue(0);
-  if (cResult[0] !== sharedValue) {
-    const fn = function y() {
-      set = sharedValue.set;
-      let obj = timing;
-      const result = set(obj.withTiming(1, { duration: 150 }));
-      return () => {
-        const obj = sharedValue(dependencyMap[8]);
-        return obj.cancelAnimation(closure_1_0);
-      };
-    };
-    const items = [sharedValue];
-    cResult[0] = sharedValue;
-    cResult[1] = fn;
-    cResult[2] = items;
-    tmp7 = items;
-    tmp6 = fn;
-  } else {
-    tmp6 = cResult[1];
-    tmp7 = cResult[2];
-  }
-  const effect = react.useEffect(tmp6, tmp7);
-  const tmpResult2 = sharedValue(5084);
-  class B {
-    constructor() {
-      const obj = { opacity: sharedValue.get() };
-      return obj;
-    }
-  }
-  B.__closure = { opacity: sharedValue };
-  B.__workletHash = 451170179306;
-  B.__initData = __initData;
-  const animatedStyle = tmpResult2.useAnimatedStyle(B);
-  [r10047, importDefault] = react.useState(false);
-  _slicedToArray(react.useState(false), 2);
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    class D {
-      constructor() {
-        return importDefault((arg0) => !arg0);
-      }
-    }
-    cResult[3] = D;
-  } else {
-    class D {
-      constructor() {
-        return importDefault((arg0) => !arg0);
-      }
-    }
-  }
-  if (cResult[4] !== bottom) {
-    class D {
-      constructor() {
-        return importDefault((arg0) => !arg0);
-      }
-    }
-    tmp13[0] = bottom;
-    cResult[4] = bottom;
-    cResult[5] = tmp13;
-  } else {
-    class D {
-      constructor() {
-        return importDefault((arg0) => !arg0);
-      }
-    }
-  }
-  if (cResult[6] === animatedStyle) {
-    class D {
-      constructor() {
-        return importDefault((arg0) => !arg0);
-      }
-    }
-  }
-  const items1 = [tmp4.root, tmp12, animatedStyle];
-  cResult[6] = animatedStyle;
-  cResult[7] = tmp4.root;
-  cResult[8] = tmp12;
-  cResult[9] = items1;
-}) : (function ConjureFloatingActivity(agents) {
+let result = size.fileFinishedImporting("modules/conjure/agent_activity/native/ConjureFloatingActivity.tsx");
+
+export default function ConjureFloatingActivity(agents) {
   let ToggleIconButton;
   let _undefined;
   let bottom;
@@ -161,7 +70,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureFloat
   importDefault = undefined;
   agents = agents.agents;
   const tmp = closure_8();
-  let obj = sharedValue(5084);
+  let obj = sharedValue(5095);
   sharedValue = obj.useSharedValue(0);
   const items = [sharedValue];
   const effect = react.useEffect(() => {
@@ -169,21 +78,21 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureFloat
     let obj = timing;
     const result = set(obj.withTiming(1, { duration: 150 }));
     return () => {
-      const obj = sharedValue(dependencyMap[8]);
+      const obj = sharedValue(dependencyMap[6]);
       return obj.cancelAnimation(closure_1_0);
     };
   }, items);
-  const obj2 = sharedValue(5084);
-  class T {
+  const obj2 = sharedValue(5095);
+  class P {
     constructor() {
       const obj = { opacity: sharedValue.get() };
       return obj;
     }
   }
-  T.__closure = { opacity: sharedValue };
-  T.__workletHash = 4327855830857;
-  T.__initData = __initData2;
-  const animatedStyle = obj2.useAnimatedStyle(T);
+  P.__closure = { opacity: sharedValue };
+  P.__workletHash = 451170179306;
+  P.__initData = __initData;
+  const animatedStyle = obj2.useAnimatedStyle(P);
   [tmp8, c1] = react.useState(false);
   _slicedToArray(react.useState(false), 2);
   const callback = react.useCallback(() => _undefined((arg0) => !arg0), []);
@@ -201,27 +110,24 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureFloat
   }
   items2 = [tmp12, ];
   const obj6 = { style: tmp.pill, children: items4 };
-  const obj7 = { style: tmp.pillMain, accessibilityRole: "button", accessibilityLabel: intl.formatToPlainString(_modDef3862.xuQfOT, { activity: line }), hitSlop: 8, onPress: onJumpToActivity, children: items3 };
-  const PressableOpacity = tmp2(6940).PressableOpacity;
-  intl = tmp2(1128).intl;
+  const obj7 = { style: tmp.pillMain, accessibilityRole: "button", accessibilityLabel: intl.formatToPlainString(_modDef3868.xuQfOT, { activity: line }), hitSlop: 8, onPress: onJumpToActivity, children: items3 };
+  const PressableOpacity = tmp2(6980).PressableOpacity;
+  intl = tmp2(1113).intl;
   const obj8 = { size: "xs", color: nativeDefault.colors.TEXT_BRAND };
-  const MagicWandIcon = tmp2(12377).MagicWandIcon;
+  const MagicWandIcon = tmp2(12123).MagicWandIcon;
   items3 = [closure_6(MagicWandIcon, obj8), ];
-  const obj9 = { style: tmp.label, children: closure_6(sharedValue(5266).Text, { variant: "text-sm/medium", color: "text-default", lineClamp: 1, children: line }) };
+  const obj9 = { style: tmp.label, children: closure_6(sharedValue(5624).Text, { variant: "text-sm/medium", color: "text-default", lineClamp: 1, children: line }) };
   items3[1] = closure_6(View, obj9);
   items4 = [closure_7(PressableOpacity, obj7), ];
   let tmp16Result = null;
   if (null != todos) {
     const obj10 = { style: tmp.checklistButton, children: closure_6(ToggleIconButton, obj11) };
-    obj11 = { variant: "default", size: "sm", icon: AssetRegistryDefault, pressed: tmp8, accessibilityLabel: intl2.string(_modDef3862.Qp2isI), onPress: callback };
-    ToggleIconButton = tmp2(12534).ToggleIconButton;
-    intl2 = tmp2(1128).intl;
+    obj11 = { variant: "default", size: "sm", icon: AssetRegistryDefault, pressed: tmp8, accessibilityLabel: intl2.string(_modDef3868.Qp2isI), onPress: callback };
+    ToggleIconButton = tmp2(12782).ToggleIconButton;
+    intl2 = tmp2(1113).intl;
     tmp16Result = tmp16(tmp15, obj10);
   }
   items4[1] = tmp16Result;
   items2[1] = closure_7(View, obj6);
   return closure_7(View, obj3);
-});
-let result = size.fileFinishedImporting("modules/conjure/agent_activity/native/ConjureFloatingActivity.tsx");
-
-export default tmp6;
+};

@@ -1,12 +1,12 @@
-// Module ID: 11423
-// Function ID: 11424
+// Module ID: 11724
+// Function ID: 11725
 // Name: openIgnoreThermalStateAlert
-// Dependencies: [5, 19, 21, 5941, 11424, 2002, 2]
+// Dependencies: [5, 19, 21, 5959, 11725, 1994, 2]
 // Exports: openIgnoreThermalStateAlert
 
-// Module 11423 (openIgnoreThermalStateAlert)
+// Module 11724 (openIgnoreThermalStateAlert)
 import Fragment from "Fragment" /* 21 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5941 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5959 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -16,7 +16,7 @@ let importDefault;
 const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/activities/native/openIgnoreThermalStateAlert.tsx");
 
-export const openIgnoreThermalStateAlert = function openIgnoreThermalStateAlert(arg0) {
+export function openIgnoreThermalStateAlert(arg0) {
   let closure_1;
   let paths;
   let closure_0 = arg0;
@@ -38,4 +38,4 @@ export const openIgnoreThermalStateAlert = function openIgnoreThermalStateAlert(
     };
   });
   openLazy(obj);
-};
+}

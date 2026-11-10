@@ -1,17 +1,17 @@
-// Module ID: 13294
-// Function ID: 13295
+// Module ID: 13925
+// Function ID: 13926
 // Name: SmartSearchActionCreators
-// Dependencies: [5, 4945, 13259, 13256, 1087, 13258, 13295, 13296, 13279, 584, 1297, 13260, 6044, 2]
+// Dependencies: [5, 4956, 13890, 13887, 1072, 13889, 13926, 13927, 13910, 572, 1282, 13891, 6063, 2]
 // Exports: fetchAnswer, setResultFeedback
 
-// Module 13294 (SmartSearchActionCreators)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1087 */;
-import SmartSearchResultsStoreDefault from "SmartSearchResultsStore" /* 13259 */;
-import SmartSearchAnalyticsManagerDefault from "SmartSearchAnalyticsManager" /* 13279 */;
+// Module 13925 (SmartSearchActionCreators)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import Constants from "Constants" /* 1072 */;
+import SmartSearchResultsStoreDefault from "SmartSearchResultsStore" /* 13890 */;
+import SmartSearchAnalyticsManagerDefault from "SmartSearchAnalyticsManager" /* 13910 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import RelationshipStore from "RelationshipStore" /* 4945 */;
-import SuggestedSearchStore from "SuggestedSearchStore" /* 13256 */;
+import RelationshipStore from "RelationshipStore" /* 4956 */;
+import SuggestedSearchStore from "SuggestedSearchStore" /* 13887 */;
 import size from "module_2" /* 2 */;
 
 let obj = function _fetchAnswer() {
@@ -145,10 +145,10 @@ let obj = function _fetchAnswer() {
       const result1 = trackSmartSearchAnswerReturned2(obj15);
       c4 = 0;
     }
-    await "IconComponent";
+    await "HermesInternal";
     let closure_2 = tmp;
     ({ searchContext: c0, searchQueryString: c1, SearchSessionAnalyticsManager: c2 } = closure_0);
-    return "Reflect";
+    return "flexDirection";
   });
   return obj(...arguments);
 };
@@ -156,10 +156,10 @@ SmartSearchResultsStoreDefault;
 const Endpoints = Constants.Endpoints;
 let result = size.fileFinishedImporting("modules/intelligence_layer/search/SmartSearchActionCreators.tsx");
 
-export const fetchAnswer = function fetchAnswer() {
+export function fetchAnswer() {
   return obj(...arguments);
-};
-export const setResultFeedback = function setResultFeedback(SearchSessionAnalyticsManager) {
+}
+export function setResultFeedback(SearchSessionAnalyticsManager) {
   let hasPositiveFeedback;
   let smartSearchQuery;
   ({ smartSearchQuery, hasPositiveFeedback } = SearchSessionAnalyticsManager);
@@ -168,4 +168,4 @@ export const setResultFeedback = function setResultFeedback(SearchSessionAnalyti
   obj.dispatch({ type: "SMART_SEARCH_SET_RESULT_FEEDBACK", smartSearchQuery, hasPositiveFeedback });
   const obj2 = SmartSearchAnalyticsManagerDefault;
   const result = obj2.trackSmartSearchFeedbackGiven({ smartSearchQuery, hasPositiveFeedback }, SearchSessionAnalyticsManager);
-};
+}

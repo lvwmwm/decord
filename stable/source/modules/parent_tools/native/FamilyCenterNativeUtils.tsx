@@ -1,17 +1,17 @@
-// Module ID: 12909
-// Function ID: 12910
+// Module ID: 13356
+// Function ID: 13357
 // Name: FamilyCenterNativeUtils
-// Dependencies: [11064, 7678, 1087, 1267, 7679, 6704, 12910, 2002, 2]
+// Dependencies: [11367, 7716, 1072, 1252, 7717, 6744, 13357, 1994, 2]
 // Exports: handleFamilyCenterQRCodeScan, resumeFamilyCenterConnection
 
-// Module 12909 (FamilyCenterNativeUtils)
-import Constants from "Constants" /* 1087 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import asyncRequire from "asyncRequire" /* 2002 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6704 */;
-import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7679 */;
-import FamilyCenterPendingConnectionStore from "FamilyCenterPendingConnectionStore" /* 11064 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 7678 */;
+// Module 13356 (FamilyCenterNativeUtils)
+import Constants from "Constants" /* 1072 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import asyncRequire from "asyncRequire" /* 1994 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6744 */;
+import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7717 */;
+import FamilyCenterPendingConnectionStore from "FamilyCenterPendingConnectionStore" /* 11367 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 7716 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -22,7 +22,7 @@ let c7 = "family-center-request-modal";
 const result = size.fileFinishedImporting("modules/parent_tools/native/FamilyCenterNativeUtils.tsx");
 
 export const FAMILY_CENTER_REQUEST_MODAL_KEY = "family-center-request-modal";
-export const handleFamilyCenterQRCodeScan = function handleFamilyCenterQRCodeScan(pathname, FamilyCenterQRCodeScan) {
+export function handleFamilyCenterQRCodeScan(pathname, FamilyCenterQRCodeScan) {
   const match = pathname.match(React3);
   if (null === match) {
     return null;
@@ -34,10 +34,10 @@ export const handleFamilyCenterQRCodeScan = function handleFamilyCenterQRCodeSca
     obj3.setPendingConnection(match[1], match[2]);
     const obj5 = { userId: match[1], linkCode: match[2] };
     const obj4 = ModalActionCreatorsDefault;
-    obj4.pushLazy(asyncRequire(12910, dependencyMap.paths), obj5, c7);
+    obj4.pushLazy(asyncRequire(13357, dependencyMap.paths), obj5, c7);
   }
-};
-export const resumeFamilyCenterConnection = function resumeFamilyCenterConnection() {
+}
+export function resumeFamilyCenterConnection() {
   const pendingConnection = FamilyCenterPendingConnectionStore.getPendingConnection();
   let flag = null != pendingConnection;
   if (flag) {
@@ -46,8 +46,8 @@ export const resumeFamilyCenterConnection = function resumeFamilyCenterConnectio
     const obj4 = { userId: null, linkCode: null };
     ({ teenId: obj3.userId, linkCode: obj3.linkCode } = pendingConnection);
     const obj2 = ModalActionCreatorsDefault;
-    obj2.pushLazy(asyncRequire(12910, dependencyMap.paths), obj4, c7);
+    obj2.pushLazy(asyncRequire(13357, dependencyMap.paths), obj4, c7);
     flag = true;
   }
   return flag;
-};
+}

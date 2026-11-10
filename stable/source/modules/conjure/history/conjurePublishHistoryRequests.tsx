@@ -1,11 +1,11 @@
-// Module ID: 12312
-// Function ID: 12313
+// Module ID: 12196
+// Function ID: 12197
 // Name: conjurePublishHistoryRequests
-// Dependencies: [5, 10826, 2]
+// Dependencies: [5, 10948, 2]
 // Exports: fetchPublishHistory, fetchPublishHistoryNotes
 
-// Module 12312 (conjurePublishHistoryRequests)
-import conjureWorkerFetch from "conjureWorkerFetch" /* 10826 */;
+// Module 12196 (conjurePublishHistoryRequests)
+import conjureWorkerFetch from "conjureWorkerFetch" /* 10948 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -54,7 +54,7 @@ obj = function _fetchPublishHistoryNotes() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -124,9 +124,9 @@ obj = function _fetchPublishHistoryNotes() {
 };
 const result = size.fileFinishedImporting("modules/conjure/history/conjurePublishHistoryRequests.tsx");
 
-export const fetchPublishHistory = function fetchPublishHistory() {
+export function fetchPublishHistory() {
   return obj(...arguments);
-};
-export const fetchPublishHistoryNotes = function fetchPublishHistoryNotes() {
+}
+export function fetchPublishHistoryNotes() {
   return obj(...arguments);
-};
+}

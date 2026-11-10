@@ -1,236 +1,318 @@
 // Module ID: 1067
 // Function ID: 1068
-// Dependencies: [1037, 1043, 693, 1035, 1038, 999]
-// Exports: reactNativeNavigationIntegration
+// Dependencies: [41, 42, 93, 95, 98, 19, 17, 1060, 866, 1061, 1062, 1064, 1065, 1066]
+// Exports: getCapturedScreenshot
 
 // Module 1067
-import _mod693 from "module_693" /* 693 */;
-import _mod999 from "module_999" /* 999 */;
-import DEFAULT_NAVIGATION_SPAN_NAME from "DEFAULT_NAVIGATION_SPAN_NAME" /* 1037 */;
-import _mod1043 from "module_1043" /* 1043 */;
+import PULL_DOWN_CLOSE_THRESHOLD from "PULL_DOWN_CLOSE_THRESHOLD" /* 1060 */;
+import lazyLoadFeedbackIntegration from "lazyLoadFeedbackIntegration" /* 1061 */;
+import _mod1062 from "module_1062" /* 1062 */;
+import defaultConfiguration from "defaultConfiguration" /* 1064 */;
+import defaultButtonStyles from "defaultButtonStyles" /* 1065 */;
+import feedbackIcon from "feedbackIcon" /* 1066 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
+import c3_mod from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
 
-let _null, _undefined, componentId;
+let c0, c11, c2;
 
-const self = this;
-const ReactNativeNavigation = "ReactNativeNavigation";
+let c9;
+let metroImportAll;
+let metroImportDefault;
+let metroRequire;
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
-export const INTEGRATION_NAME = "ReactNativeNavigation";
-export const reactNativeNavigationIntegration = (enableTabsInstrumentation) => {
-  let routeChangeTimeoutMs;
-  ({ navigation, routeChangeTimeoutMs } = enableTabsInstrumentation);
-  if (routeChangeTimeoutMs === undefined) {
-    routeChangeTimeoutMs = 1000;
+    }));
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
+    };
+    return _isNativeReflectConstruct();
+  } catch (err) {
   }
-  let flag = enableTabsInstrumentation.enableTabsInstrumentation;
-  if (flag === undefined) {
-    flag = false;
+}
+let c3 = c3_mod;
+({ Appearance: metroRequire, Image: metroImportDefault, Text: metroImportAll, TouchableOpacity: c9 } = react_native);
+let closure_12 = this && this.__awaiter || ((arg0, arg1, arg2, arg3) => {
+  let closure_0 = arg0;
+  let closure_1 = arg1;
+  let _Promise = arg2;
+  const Promise = arg2;
+  let closure_3 = arg3;
+  if (!arg2) {
+    let tmp = globalThis;
+    _Promise = Promise;
   }
-  let flag2 = enableTabsInstrumentation.ignoreEmptyBackNavigationTransactions;
-  if (flag2 === undefined) {
-    flag2 = true;
-  }
-  let reactNativeTracingIntegration;
-  let c3;
-  let c4;
-  let pushRecentComponentId;
-  let discardLatestNavigationSpan;
-  let clearStateChangeTimeout;
-  let closure_5 = [];
-  let obj2 = flag2(reactNativeTracingIntegration[0]).defaultIdleOptions;
-  let c7 = null;
-  function startIdleNavigationSpan() {
-    let beforeStartSpanResult;
-    let c4;
-    let closure_3;
-    let timeout;
-    if (_undefined) {
-      if (typeof discardLatestNavigationSpan === "function") {
-        if (tmp) {
-          const obj = flag2(reactNativeTracingIntegration[5]);
-          if (obj.isSentrySpan(_undefined)) {
-            _undefined._sampled = false;
-          }
-          _undefined.end();
-          _undefined = undefined;
-        }
-        if (typeof clearStateChangeTimeout === "function") {
-          if (undefined !== timeout) {
-            const _clearTimeout = clearTimeout;
-            clearTimeout(timeout);
-            timeout = undefined;
-          }
-        } else {
-          throw new TypeError("Trying to call a non-function");
-        }
-      } else {
-        throw new TypeError("Trying to call a non-function");
+  const _Promise1 = new _Promise(function(fn, arg1) {
+    closure_0 = fn;
+    closure_1 = arg1;
+    function fulfilled(result) {
+      try {
+        step(iter.next(result));
+      } catch (tmp5) {
+        closure_1(tmp5);
       }
     }
-    let beforeStartSpan1;
-    const startIdleNavigationSpan = flag2(reactNativeTracingIntegration[0]).startIdleNavigationSpan;
-    flag2(reactNativeTracingIntegration[0]);
-    if (null != reactNativeTracingIntegration) {
-      beforeStartSpan1 = reactNativeTracingIntegration.options.beforeStartSpan;
+    function rejected(arg0) {
+      try {
+        step(iter.throw(arg0));
+      } catch (tmp5) {
+        closure_1(tmp5);
+      }
     }
-    if (beforeStartSpan1) {
-      const options = reactNativeTracingIntegration.options;
-      const beforeStartSpan = options.beforeStartSpan;
-      const obj3 = flag2(reactNativeTracingIntegration[0]);
-      beforeStartSpanResult = beforeStartSpan(obj3.getDefaultIdleNavigationSpanOptions());
+    let iter = rejected;
+    function step(done) {
+      if (done.done) {
+        fn(done.value);
+      } else {
+        let tmp1 = done.value;
+        const value = tmp1;
+        if (!(tmp1 instanceof Promise)) {
+          const self = this;
+          const self2 = this;
+          tmp1 = new tmp((fn) => {
+            fn(value);
+          });
+        }
+        tmp1.then(fulfilled, iter);
+      }
+    }
+    let items = closure_1;
+    const tmp = iter;
+    const apply = iter.apply;
+    const tmp2 = closure_0;
+    if (!closure_1) {
+      items = [];
+    }
+    iter = apply(tmp2, items);
+    const iter2 = iter.next();
+    let value = iter2.value;
+    if (iter2.done) {
+      const tmp5 = fn(value);
     } else {
-      obj2 = flag2(reactNativeTracingIntegration[0]);
-      beforeStartSpanResult = obj2.getDefaultIdleNavigationSpanOptions();
+      let tmp32 = value;
+      if (!(value instanceof fulfilled)) {
+        let self = this;
+        let self2 = this;
+        tmp32 = new tmp3((fn) => {
+          fn(value);
+        });
+      }
+      tmp32.then(fulfilled, rejected);
     }
-    const result = startIdleNavigationSpan(beforeStartSpanResult, obj2);
-    _undefined = result;
-    if (null != result) {
-      const setAttribute = _undefined.setAttribute;
-      const attr = setAttribute(flag2(reactNativeTracingIntegration[2]).SEMANTIC_ATTRIBUTE_SENTRY_ORIGIN, flag2(reactNativeTracingIntegration[3]).SPAN_ORIGIN_AUTO_NAVIGATION_REACT_NATIVE_NAVIGATION);
-    }
-    const tmp30 = flag2;
-    if (tmp30) {
-      const ignoreEmptyBackNavigation = flag2(reactNativeTracingIntegration[4]).ignoreEmptyBackNavigation;
-      flag2(reactNativeTracingIntegration[4]);
-      const obj4 = flag2(reactNativeTracingIntegration[2]);
-      const result1 = ignoreEmptyBackNavigation(obj4.getClient(), _undefined);
-    }
-    let closure_0 = _undefined;
-    const ignoreEmptyRouteChangeTransactions = flag2(reactNativeTracingIntegration[4]).ignoreEmptyRouteChangeTransactions;
-    flag2(reactNativeTracingIntegration[4]);
-    const obj5 = flag2(reactNativeTracingIntegration[2]);
-    const client = obj5.getClient();
-    const result2 = ignoreEmptyRouteChangeTransactions(client, _undefined, flag2(reactNativeTracingIntegration[0]).DEFAULT_NAVIGATION_SPAN_NAME, () => c4 === closure_0);
-    timeout = setTimeout(discardLatestNavigationSpan.bind(c3), closure_0);
-  }
-  const eventsResult = navigation.events();
-  let result = eventsResult.registerCommandListener(startIdleNavigationSpan);
-  if (flag) {
-    const eventsResult1 = navigation.events();
-    let result1 = eventsResult1.registerBottomTabPressedListener(startIdleNavigationSpan);
-  }
-  const eventsResult2 = navigation.events();
-  let result2 = eventsResult2.registerComponentWillAppearListener((componentId) => {
-    let componentName;
-    let componentType;
-    let obj8;
-    const tmp = _undefined;
-    if (tmp) {
-      const tmp3 = _null;
-      if (tmp3) {
-        if (componentId.componentId === _null.componentId) {
-          if (typeof discardLatestNavigationSpan === "function") {
-            const tmp54 = _undefined;
-            if (tmp54) {
-              const obj5 = _mod999;
-              if (obj5.isSentrySpan(_undefined)) {
-                _undefined._sampled = false;
-              }
-              _undefined.end();
-              _undefined = undefined;
-            }
-            if (typeof clearStateChangeTimeout === "function") {
-              if (undefined !== c3) {
-                const _clearTimeout2 = clearTimeout;
-                clearTimeout(c3);
-                c3 = undefined;
+  });
+  return _Promise1;
+});
+function takeScreenshot() {
+  return closure_12(undefined, undefined, undefined, function*(arg0, value) {
+    if (c0 === 2) {
+      c0 = 3;
+      const str = "Generator functions may not be called on executing generators";
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp2 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        let obj2 = { value, done: true };
+        return obj2;
+      } else {
+        return { value: "HermesInternal", done: null };
+      }
+    } else {
+      try {
+        c0 = 2;
+        if (arg0 === 1) {
+          c0 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c0 = 3;
+          let obj3 = { value, done: true };
+          return obj3;
+        } else {
+          const tmp4 = dependencyMap;
+          let obj = PULL_DOWN_CLOSE_THRESHOLD;
+          obj.hideScreenshotButton();
+          const tmp6 = globalThis;
+          const _setTimeout = setTimeout;
+          const timerId = setTimeout(() => closure_1_12(undefined, undefined, undefined, function*(arg0, value) {
+            if (c3 === 2) {
+              c3 = 3;
+              throw new TypeError("Generator functions may not be called on executing generators");
+            } else if (tmp4 === 3) {
+              if (arg0 === 1) {
+                throw value;
+              } else if (arg0 === 2) {
+                const obj2 = { value, done: true };
+                return obj2;
+              } else {
+                return { value: "HermesInternal", done: null };
               }
             } else {
-              throw new TypeError("Trying to call a non-function");
+              try {
+                let length;
+                c3 = 2;
+                if (0 === c2) {
+                  if (arg0 === 1) {
+                    c3 = 3;
+                    throw value;
+                  } else if (arg0 === 2) {
+                    c3 = 3;
+                    const obj3 = { value, done: true };
+                    return obj3;
+                  } else {
+                    let closure_1 = tmp;
+                    length = undefined;
+                    const NATIVE = closure_2_0(closure_2_1[8]).NATIVE;
+                    c2 = 1;
+                    c3 = 1;
+                    const obj4 = { value: NATIVE.captureScreenshot(), done: false };
+                    return obj4;
+                  }
+                } else if (arg0 === 1) {
+                  c3 = 3;
+                  throw value;
+                } else if (arg0 === 2) {
+                  c3 = 3;
+                  const obj5 = { value, done: true };
+                  return obj5;
+                } else {
+                  length = value;
+                  let str2 = "ErrorCapturingScreenshot";
+                  if (length) {
+                    str2 = "ErrorCapturingScreenshot";
+                  }
+                  const obj = closure_129_0(closure_129_1[7]);
+                  obj.showFeedbackWidget();
+                  c3 = 3;
+                  return { value: "HermesInternal", done: null };
+                }
+              } catch (tmp17) {
+                c3 = 3;
+                throw tmp17;
+              }
             }
-          } else {
-            throw new TypeError("Trying to call a non-function");
-          }
+          }), 100);
+          c0 = 3;
+          return { value: "HermesInternal", done: null };
         }
-      }
-      if (typeof clearStateChangeTimeout === "function") {
-        if (undefined !== c3) {
-          const _clearTimeout = clearTimeout;
-          clearTimeout(c3);
-          c3 = undefined;
-        }
-        const hasItem = closure_5.includes(componentId.componentId);
-        const obj = _mod693;
-        if (obj.spanToJSON(_undefined).description === DEFAULT_NAVIGATION_SPAN_NAME.DEFAULT_NAVIGATION_SPAN_NAME) {
-          _undefined.updateName(componentId.componentName);
-        }
-        const obj3 = { "route.name": null, "route.component_id": null, "route.component_type": null, "route.has_been_seen": hasItem, "previous_route.name": componentName, "previous_route.component_id": componentId, "previous_route.component_type": componentType };
-        ({ componentName: obj2["route.name"], componentId: obj2["route.component_id"], componentType: obj2["route.component_type"] } = componentId);
-        componentName = undefined;
-        const setAttributes = _undefined.setAttributes;
-        if (null != _null) {
-          componentName = _null.componentName;
-        }
-        componentId = undefined;
-        if (null != _null) {
-          componentId = _null.componentId;
-        }
-        componentType = undefined;
-        if (null != _null) {
-          componentType = _null.componentType;
-        }
-        obj3[_mod693.SEMANTIC_ATTRIBUTE_SENTRY_SOURCE] = "component";
-        obj3[_mod693.SEMANTIC_ATTRIBUTE_SENTRY_OP] = "navigation";
-        setAttributes(obj3);
-        if (null != reactNativeTracingIntegration) {
-          reactNativeTracingIntegration.setCurrentRoute(componentId.componentName);
-        }
-        const _HermesInternal = HermesInternal;
-        const obj4 = { category: "navigation", type: "navigation", message: "Navigation to " + componentId.componentName, data: obj8 };
-        const addBreadcrumb = _mod693.addBreadcrumb;
-        _mod693;
-        let componentName1;
-        if (null != _null) {
-          componentName1 = _null.componentName;
-        }
-        obj8 = { from: componentName1, to: componentId.componentName };
-        addBreadcrumb(obj4);
-        if (typeof pushRecentComponentId === "function") {
-          closure_5.push(tmp47);
-          if (closure_5.length > 200) {
-            closure_5 = closure_5.slice(closure_5.length - 200);
-          }
-          _null = componentId;
-          _undefined = undefined;
-        } else {
-          throw new TypeError("Trying to call a non-function");
-        }
-      } else {
-        throw new TypeError("Trying to call a non-function");
+      } catch (tmp8) {
+        c0 = 3;
+        throw tmp8;
       }
     }
   });
-  pushRecentComponentId = function pushRecentComponentId(arg0) {
-
-  };
-  discardLatestNavigationSpan = function discardLatestNavigationSpan() {
-    const tmp = _undefined;
-    if (tmp) {
-      const obj = _mod999;
-      if (obj.isSentrySpan(_undefined)) {
-        _undefined._sampled = false;
-      }
-      _undefined.end();
-      _undefined = undefined;
-    }
-    if (typeof clearStateChangeTimeout === "function") {
-      if (undefined !== c3) {
-        const _clearTimeout = clearTimeout;
-        clearTimeout(c3);
-        c3 = undefined;
-      }
+}
+class ScreenshotButton {
+  constructor(arg0) {
+    let constructResult;
+    const self = this;
+    _classCallCheck(this, ScreenshotButton);
+    const items = [arg0];
+    const obj = _getPrototypeOf(ScreenshotButton);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = c3;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, items, tmp2(self).constructor);
     } else {
-      throw new TypeError("Trying to call a non-function");
+      constructResult = obj.apply(self, items);
     }
-  };
-  clearStateChangeTimeout = function clearStateChangeTimeout() {
-
-  };
-  let obj = {
-    name: routeChangeTimeoutMs,
-    afterAllSetup(getIntegrationByName) {
-      const obj = _mod1043;
-      reactNativeTracingIntegration = obj.getReactNativeTracingIntegration(getIntegrationByName);
-    }
-  };
-  return obj;
+    const tmp3Result = tmp3(self, constructResult);
+    const obj2 = lazyLoadFeedbackIntegration;
+    const result = obj2.lazyLoadFeedbackIntegration();
+    return tmp3Result;
+  }
+}
+_inherits(ScreenshotButton, react.Component);
+const entry = {
+  key: "componentDidMount",
+  value: function componentDidMount() {
+    const self = this;
+    this._themeListener = metroRequire.addChangeListener(() => {
+      self.forceUpdate();
+    });
+  }
 };
+let items = [
+  entry,
+  {
+    key: "componentWillUnmount",
+    value: function componentWillUnmount() {
+      if (this._themeListener) {
+        const _themeListener = this._themeListener;
+        _themeListener.remove();
+      }
+    }
+  },
+  {
+    key: "render",
+    value: function render() {
+      let assign5Result;
+      let createElement;
+      let createElement2;
+      let obj6;
+      const self = this;
+      const obj = _mod1062;
+      const theme = obj.getTheme();
+      const merged = Object.assign(Object.assign({}, defaultConfiguration.defaultScreenshotButtonConfiguration), this.props);
+      const _Object = Object;
+      const assign2 = Object.assign;
+      const styles = this.props.styles;
+      let triggerButton;
+      const obj2 = defaultButtonStyles;
+      const assign2Result = assign2({}, obj2.defaultScreenshotButtonStyles(theme).triggerButton);
+      if (null !== styles) {
+        if (undefined !== styles) {
+          triggerButton = styles.triggerButton;
+        }
+      }
+      const _Object2 = Object;
+      const assign3 = Object.assign;
+      const assign4 = Object.assign;
+      const styles2 = self.props.styles;
+      let triggerText;
+      const obj3 = assign(assign2Result, triggerButton);
+      const tmpResult = defaultButtonStyles;
+      const assign4Result = assign4({}, tmpResult.defaultScreenshotButtonStyles(theme).triggerText);
+      if (null !== styles2) {
+        if (undefined !== styles2) {
+          triggerText = styles2.triggerText;
+        }
+      }
+      const style = assign3(assign4Result, triggerText);
+      const _Object3 = Object;
+      const assign5 = Object.assign;
+      const assign6 = Object.assign;
+      const styles3 = self.props.styles;
+      let triggerIcon;
+      const tmpResult2 = defaultButtonStyles;
+      const assign6Result = assign6({}, tmpResult2.defaultScreenshotButtonStyles(theme).triggerIcon);
+      if (null !== styles3) {
+        if (undefined !== styles3) {
+          triggerIcon = styles3.triggerIcon;
+        }
+      }
+      const obj5 = { source: obj6, style: assign5Result };
+      ({ createElement, createElement: createElement2 } = react);
+      obj6 = { uri: feedbackIcon.screenshotIcon };
+      assign5Result = assign5(assign6Result, triggerIcon);
+      const element2 = createElement2(metroImportDefault, obj5);
+      return <React4 style={obj3} onPress={takeScreenshot} accessibilityLabel={merged.triggerAriaLabel}>{element2}<metroImportAll style={style} testID="sentry-feedback-screenshot-button">{merged.triggerLabel}</metroImportAll></React4>;
+    }
+  }
+];
+const ScreenshotButton_export = _createClass(ScreenshotButton, items);
+
+export const getCapturedScreenshot = () => {
+  c11 = undefined;
+  return c11;
+};
+export { ScreenshotButton_export as ScreenshotButton };

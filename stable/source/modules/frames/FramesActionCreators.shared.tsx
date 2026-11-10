@@ -1,20 +1,20 @@
-// Module ID: 10801
-// Function ID: 10802
+// Module ID: 10929
+// Function ID: 10930
 // Name: launchFrame
-// Dependencies: [32, 5, 6807, 6808, 5641, 10802, 584, 10762, 6810, 10804, 10810, 10815, 10798, 2]
-// Exports: attachFrameHostWindow, attachFrameIframe, detachFrameHostWindow, detachFrameIframe, launchFrame, refreshProxyTicket, resetFrameLayoutModes, setFrameRunsInBackground, setFrameUserMuted, updateFramePanelMode
+// Dependencies: [32, 5, 6846, 6847, 5657, 10930, 572, 10885, 6849, 10886, 10932, 10937, 10938, 2]
+// Exports: attachFrameHostWindow, attachFrameIframe, detachFrameHostWindow, detachFrameIframe, launchFrame, refreshProxyTicket, resetFrameGuestClaims, resetFrameLayoutModes, setFramePictureInPictureInteractive, setFrameRunsInBackground, setFrameUserMuted, updateFramePanelMode
 
-// Module 10801 (launchFrame)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 5641 */;
-import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 6810 */;
-import createProxyTicket from "createProxyTicket" /* 10762 */;
-import leaveFrame from "leaveFrame" /* 10798 */;
-import leaveCurrentEmbeddedActivity from "leaveCurrentEmbeddedActivity" /* 10802 */;
+// Module 10929 (launchFrame)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 5657 */;
+import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 6849 */;
+import createProxyTicket from "createProxyTicket" /* 10885 */;
+import leaveCurrentEmbeddedActivity from "leaveCurrentEmbeddedActivity" /* 10930 */;
+import leaveFrame from "leaveFrame" /* 10938 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import FramesStore from "FramesStore" /* 6807 */;
-import FramesConstants from "FramesConstants" /* 6808 */;
+import FramesStore from "FramesStore" /* 6846 */;
+import FramesConstants from "FramesConstants" /* 6847 */;
 import size from "module_2" /* 2 */;
 
 let analyticsContext, closure_1, error, hostWindowKey, intent, launch, launchRequestId, message, proxyTicket, type;
@@ -47,7 +47,7 @@ let obj = function _launchFrame() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -86,7 +86,7 @@ let obj = function _launchFrame() {
               message = undefined;
               c6 = 1;
               c7 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "flexDirection", done: true };
             }
           } else if (1 === c6) {
             if (arg0 === 1) {
@@ -244,7 +244,7 @@ function promoteFrame(frameId) {
     const tmp4 = require;
     if (null != mainFrame1) {
       if (mainFrame1.intent === metroRequire.MAIN) {
-        const tmp4Result = tmp4(10798);
+        const tmp4Result = tmp4(10938);
         tmp4Result.leaveFrame(mainFrame1.id);
       } else {
         demoteMainFrame(mainFrame1.id);
@@ -281,7 +281,7 @@ obj = function _refreshProxyTicket() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -402,29 +402,39 @@ const ActivityPanelModes = ActivityPanelConstants.ActivityPanelModes;
 let c12 = 0;
 let result = size.fileFinishedImporting("modules/frames/FramesActionCreators.shared.tsx");
 
-export const launchFrame = function launchFrame() {
+export function launchFrame() {
   return obj(...arguments);
-};
+}
 export { clearMainFrameSlot };
 export { demoteMainFrame };
 export { promoteFrame };
 export { updateFrameLayoutMode };
-export const setFrameRunsInBackground = function setFrameRunsInBackground(id, enabled) {
+export function setFrameRunsInBackground(id, enabled) {
   obj = DispatcherDefault;
   const obj2 = { type: "FRAME_SET_RUNS_IN_BACKGROUND", frameId: id, enabled };
   obj.dispatch(obj2);
-};
-export const setFrameUserMuted = function setFrameUserMuted(frameId, muted) {
+}
+export function setFramePictureInPictureInteractive(id, enabled) {
   obj = DispatcherDefault;
-  const obj2 = { type: "FRAME_SET_USER_MUTED", frameId, muted };
+  const obj2 = { type: "FRAME_SET_PICTURE_IN_PICTURE_INTERACTIVE", frameId: id, enabled };
   obj.dispatch(obj2);
-};
-export const updateFramePanelMode = function updateFramePanelMode(id, PIP) {
+}
+export function resetFrameGuestClaims(frameId) {
+  obj = DispatcherDefault;
+  const obj2 = { type: "FRAME_SET_PICTURE_IN_PICTURE_INTERACTIVE", frameId, enabled: false };
+  obj.dispatch(obj2);
+}
+export function setFrameUserMuted(id, muted) {
+  obj = DispatcherDefault;
+  const obj2 = { type: "FRAME_SET_USER_MUTED", frameId: id, muted };
+  obj.dispatch(obj2);
+}
+export function updateFramePanelMode(id, PIP) {
   obj = DispatcherDefault;
   const obj2 = { type: "FRAME_SET_PANEL_MODE", frameId: id, activityPanelMode: PIP };
   obj.dispatch(obj2);
-};
-export const resetFrameLayoutModes = function resetFrameLayoutModes(frameId) {
+}
+export function resetFrameLayoutModes(frameId) {
   const FOCUSED = metroImportDefault.FOCUSED;
   const frame = FramesStore.getFrame(frameId);
   if (null != frame) {
@@ -436,27 +446,27 @@ export const resetFrameLayoutModes = function resetFrameLayoutModes(frameId) {
   const obj3 = DispatcherDefault;
   const obj4 = { type: "FRAME_SET_PANEL_MODE", frameId, activityPanelMode: PANEL };
   obj3.dispatch(obj4);
-};
-export const attachFrameIframe = function attachFrameIframe(id, first1) {
+}
+export function attachFrameIframe(id, iframeId) {
   obj = DispatcherDefault;
-  const obj2 = { type: "FRAME_IFRAME_MOUNT", frameId: id, iframeId: first1 };
+  const obj2 = { type: "FRAME_IFRAME_MOUNT", frameId: id, iframeId };
   obj.dispatch(obj2);
-};
-export const detachFrameIframe = function detachFrameIframe(frameId, iframeId) {
+}
+export function detachFrameIframe(frameId, iframeId) {
   obj = DispatcherDefault;
   const obj2 = { type: "FRAME_IFRAME_UNMOUNT", frameId, iframeId };
   obj.dispatch(obj2);
-};
-export const attachFrameHostWindow = function attachFrameHostWindow(frameId, windowKey) {
+}
+export function attachFrameHostWindow(frameId, windowKey) {
   obj = DispatcherDefault;
   const obj2 = { type: "FRAME_HOST_WINDOW_MOUNT", frameId, windowKey };
   obj.dispatch(obj2);
-};
-export const detachFrameHostWindow = function detachFrameHostWindow(frameId, windowKey) {
+}
+export function detachFrameHostWindow(frameId, windowKey) {
   obj = DispatcherDefault;
   const obj2 = { type: "FRAME_HOST_WINDOW_UNMOUNT", frameId, windowKey };
   obj.dispatch(obj2);
-};
-export const refreshProxyTicket = function refreshProxyTicket() {
+}
+export function refreshProxyTicket() {
   return obj(...arguments);
-};
+}

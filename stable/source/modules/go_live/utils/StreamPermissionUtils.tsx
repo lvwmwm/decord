@@ -1,21 +1,20 @@
-// Module ID: 6684
-// Function ID: 6685
+// Module ID: 6724
+// Function ID: 6725
 // Name: StreamPermissionUtils
-// Dependencies: [5747, 4859, 4933, 4877, 4935, 5662, 1087, 6671, 6026, 6685, 6694, 558, 576, 504, 2]
-// Exports: getStreamEligibleChannels
+// Dependencies: [5765, 4867, 4944, 4885, 4946, 5679, 1072, 6711, 6046, 6725, 6734, 504, 2]
+// Exports: getStreamEligibleChannels, useCanWatchStream
 
-// Module 6684 (StreamPermissionUtils)
-import Constants from "Constants" /* 1087 */;
-import ChannelRecord from "ChannelRecord" /* 4859 */;
-import GuildChannelStore from "GuildChannelStore" /* 4933 */;
-import ChannelUtils from "ChannelUtils" /* 6026 */;
-import canJoinVoiceChannelDefault from "canJoinVoiceChannel" /* 6671 */;
-import shouldAgeVerifyForAgeGate from "shouldAgeVerifyForAgeGate" /* 6685 */;
-import GameConsoleStore from "GameConsoleStore" /* 5747 */;
-import GuildStore from "GuildStore" /* 4877 */;
-import PermissionStore from "PermissionStore" /* 4935 */;
-import VoiceStateStore from "VoiceStateStore" /* 5662 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 6724 (StreamPermissionUtils)
+import Constants from "Constants" /* 1072 */;
+import ChannelRecord from "ChannelRecord" /* 4867 */;
+import GuildChannelStore from "GuildChannelStore" /* 4944 */;
+import ChannelUtils from "ChannelUtils" /* 6046 */;
+import canJoinVoiceChannelDefault from "canJoinVoiceChannel" /* 6711 */;
+import shouldAgeVerifyForAgeGate from "shouldAgeVerifyForAgeGate" /* 6725 */;
+import GameConsoleStore from "GameConsoleStore" /* 5765 */;
+import GuildStore from "GuildStore" /* 4885 */;
+import PermissionStore from "PermissionStore" /* 4946 */;
+import VoiceStateStore from "VoiceStateStore" /* 5679 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -75,7 +74,7 @@ function canWatchStream(basicChannel1, VoiceStateStore, GuildStore, PermissionSt
     let result = obj2.shouldAgeVerifyForAgeGate();
     const tmp11 = require;
     if (result) {
-      const tmp11Result = tmp11(6694);
+      const tmp11Result = tmp11(6734);
       result = tmp11Result.shouldShowAgeGateForChannelId(basicChannel1.id);
     }
     if (tmp10) {
@@ -111,47 +110,18 @@ const ChannelRecordBase = ChannelRecord.ChannelRecordBase;
 const GUILD_VOCAL_CHANNELS_KEY = GuildChannelStore.GUILD_VOCAL_CHANNELS_KEY;
 const Permissions = Constants.Permissions;
 const StreamUnavailableReasons = { REMOTE_MODE: 0, [0]: "REMOTE_MODE", CHANNEL_FULL: 1, [1]: "CHANNEL_FULL", NO_PERMISSION: 2, [2]: "NO_PERMISSION", AGE_RESTRICTED: 3, [3]: "AGE_RESTRICTED" };
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanWatchStream(arg0) {
-  let closure_0;
-  let first;
-  let tmp9;
-  _require = arg0;
-  const obj = require("react");
-  const cResult = obj.c(3);
-  const tmp = _require;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [VoiceStateStore, GuildStore, PermissionStore, GameConsoleStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function c() {
-      return canWatchStream(closure_0, VoiceStateStore, GuildStore, PermissionStore, GameConsoleStore);
-    };
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    tmp9 = fn;
-  } else {
-    tmp9 = cResult[2];
-  }
-  const tmpResult = tmp(504);
-  return tmpResult.useStateFromStoresArray(first, tmp9);
-}) : (function useCanWatchStream(arg0) {
-  let closure_0;
-  _require = arg0;
-  const items = [VoiceStateStore, GuildStore, PermissionStore, GameConsoleStore];
-  const obj = require("get initialized");
-  return obj.useStateFromStoresArray(items, () => canWatchStream(closure_0, VoiceStateStore, GuildStore, PermissionStore, GameConsoleStore));
-});
 let result = size.fileFinishedImporting("modules/go_live/utils/StreamPermissionUtils.tsx");
 
 export { canStreamInChannel };
 export { StreamUnavailableReasons };
 export { canWatchStream };
-export const useCanWatchStream = tmp2;
-export const getStreamEligibleChannels = function getStreamEligibleChannels(arg0, GuildStore, PermissionStore) {
+export function useCanWatchStream(stateFromStores) {
+  _require = stateFromStores;
+  const items = [VoiceStateStore, GuildStore, PermissionStore, GameConsoleStore];
+  const obj = require("get initialized");
+  return obj.useStateFromStoresArray(items, () => canWatchStream(stateFromStores, VoiceStateStore, GuildStore, PermissionStore, GameConsoleStore));
+}
+export function getStreamEligibleChannels(arg0, GuildStore, PermissionStore) {
   const items = [];
   const tmp = arg0[GUILD_VOCAL_CHANNELS_KEY];
   for (const item10011 of tmp) {
@@ -163,4 +133,4 @@ export const getStreamEligibleChannels = function getStreamEligibleChannels(arg0
     continue;
   }
   return items;
-};
+}

@@ -1,20 +1,20 @@
-// Module ID: 9114
-// Function ID: 9115
+// Module ID: 9150
+// Function ID: 9151
 // Name: InviteSuggestionsActionCreators
-// Dependencies: [9097, 9115, 584, 2]
+// Dependencies: [9133, 9151, 572, 2]
 // Exports: loadInviteSuggestions, searchInviteSuggestions
 
-// Module 9114 (InviteSuggestionsActionCreators)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import UserAffinitiesActionCreators from "UserAffinitiesActionCreators" /* 9115 */;
-import InviteSuggestionsStore from "InviteSuggestionsStore" /* 9097 */;
+// Module 9150 (InviteSuggestionsActionCreators)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import UserAffinitiesActionCreators from "UserAffinitiesActionCreators" /* 9151 */;
+import InviteSuggestionsStore from "InviteSuggestionsStore" /* 9133 */;
 import size from "module_2" /* 2 */;
 
 let set;
 
 const result = size.fileFinishedImporting("actions/InviteSuggestionsActionCreators.tsx");
 
-export const loadInviteSuggestions = function loadInviteSuggestions(arg0) {
+export function loadInviteSuggestions(arg0) {
   let applicationId;
   let channel;
   let closure_3;
@@ -37,9 +37,9 @@ export const loadInviteSuggestions = function loadInviteSuggestions(arg0) {
     const obj = { type: "LOAD_INVITE_SUGGESTIONS", omitUserIds: set, guild: importDefault, channel: dependencyMap, applicationId, inviteTargetType };
     dispatch(obj);
   });
-};
-export const searchInviteSuggestions = function searchInviteSuggestions(current) {
+}
+export function searchInviteSuggestions(current) {
   const obj = DispatcherDefault;
   const obj2 = { type: "INVITE_SUGGESTIONS_SEARCH", query: current };
   obj.dispatch(obj2);
-};
+}

@@ -1,19 +1,19 @@
-// Module ID: 7307
-// Function ID: 7308
+// Module ID: 7348
+// Function ID: 7349
 // Name: ConnectionsUtils
-// Dependencies: [4909, 4877, 7308, 1087, 1386, 38, 1128, 12, 7309, 2]
+// Dependencies: [4920, 4885, 7349, 1072, 1377, 38, 1113, 12, 7350, 2]
 // Exports: getCallbackParamsFromURL, getConnectionsCheckText, getCreatedAtDate, getVisibleConnectionsRole, isVerifiedRolesChannelVisible
 
-// Module 7307 (ConnectionsUtils)
+// Module 7348 (ConnectionsUtils)
 import _modDef12 from "module_12" /* 12 */;
 import _modDef38 from "module_38" /* 38 */;
-import Constants2 from "Constants" /* 1087 */;
-import intl29 from "intl" /* 1128 */;
-import URLUtilsDefault from "URLUtils" /* 1386 */;
-import getConnectionsRolesDefault from "getConnectionsRoles" /* 7309 */;
-import GuildRoleStore from "GuildRoleStore" /* 4909 */;
-import GuildStore from "GuildStore" /* 4877 */;
-import Constants from "Constants" /* 7308 */;
+import Constants2 from "Constants" /* 1072 */;
+import intl29 from "intl" /* 1113 */;
+import URLUtilsDefault from "URLUtils" /* 1377 */;
+import getConnectionsRolesDefault from "getConnectionsRoles" /* 7350 */;
+import GuildRoleStore from "GuildRoleStore" /* 4920 */;
+import GuildStore from "GuildStore" /* 4885 */;
+import Constants from "Constants" /* 7349 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -27,7 +27,7 @@ const result = size.fileFinishedImporting("modules/connections/ConnectionsUtils.
 
 export const officialApplicationIds = ["426537812993638400", "1042836142560645130", "296023718839451649", "979802510766268446", "1031611223235637258", "512333785338216465"];
 export const ConnectionConfigurationRuleOperator = { AND: 0, [0]: "AND", OR: 1, [1]: "OR" };
-export const getCallbackParamsFromURL = function getCallbackParamsFromURL(c0) {
+export function getCallbackParamsFromURL(c0) {
   let code;
   let error;
   let error_description;
@@ -54,8 +54,8 @@ export const getCallbackParamsFromURL = function getCallbackParamsFromURL(c0) {
   const tmpResult6 = _modDef38;
   tmpResult6(!Array.isArray(errorDescription), "Received multiple query param values for error_description");
   return { code, state, error, errorDescription };
-};
-export const getConnectionsCheckText = function getConnectionsCheckText(value) {
+}
+export function getConnectionsCheckText(value) {
   let closure_0;
   let connectionMetadataField;
   let connectionType;
@@ -74,7 +74,7 @@ export const getConnectionsCheckText = function getConnectionsCheckText(value) {
     }
     prop = H97H4S;
     if (tmp14) {
-      prop = tmp11(1128).t["N95b+f"];
+      prop = tmp11(1113).t["N95b+f"];
     }
   } else if (constants2.NOT_EQUAL === operator) {
     prop = require("intl").t["D9B/q2"];
@@ -411,11 +411,11 @@ export const getConnectionsCheckText = function getConnectionsCheckText(value) {
     }
   }
   return formatResult;
-};
-export const isVerifiedRolesChannelVisible = function isVerifiedRolesChannelVisible(sortedRoles) {
+}
+export function isVerifiedRolesChannelVisible(sortedRoles) {
   return sortedRoles.some((tags) => null === tags.tags.guild_connections);
-};
-export const getVisibleConnectionsRole = function getVisibleConnectionsRole(guildMember) {
+}
+export function getVisibleConnectionsRole(guildMember) {
   let channel;
   let guild;
   let onlyChannelConnectionRoles;
@@ -468,8 +468,8 @@ export const getVisibleConnectionsRole = function getVisibleConnectionsRole(guil
       return tmp7;
     }
   }
-};
-export const getCreatedAtDate = function getCreatedAtDate(metadata, locale) {
+}
+export function getCreatedAtDate(metadata, locale) {
   if (null != metadata) {
     if ("" !== metadata) {
       const _Date = Date;
@@ -489,4 +489,4 @@ export const getCreatedAtDate = function getCreatedAtDate(metadata, locale) {
     }
   }
   return null;
-};
+}

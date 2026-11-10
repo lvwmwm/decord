@@ -1,25 +1,25 @@
-// Module ID: 9890
-// Function ID: 9891
+// Module ID: 9972
+// Function ID: 9973
 // Name: age_gate/AgeGateUtils
-// Dependencies: [4877, 4935, 1392, 1087, 1384, 7348, 2]
+// Dependencies: [4885, 4946, 1383, 1072, 1375, 7389, 2]
 // Exports: shouldNSFWGateGuild
 
-// Module 9890 (age_gate/AgeGateUtils)
-import PlatformUtils from "PlatformUtils" /* 1384 */;
-import GuildStore from "GuildStore" /* 4877 */;
-import PermissionStore from "PermissionStore" /* 4935 */;
-import UserStore from "UserStore" /* 1392 */;
-import Constants from "Constants" /* 1087 */;
+// Module 9972 (age_gate/AgeGateUtils)
+import PlatformUtils from "PlatformUtils" /* 1375 */;
+import GuildStore from "GuildStore" /* 4885 */;
+import PermissionStore from "PermissionStore" /* 4946 */;
+import UserStore from "UserStore" /* 1383 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
 let metroRequire;
 let tmp;
-const AgeRestrictedContentSettingsUtils = tmp(7348);
+const AgeRestrictedContentSettingsUtils = tmp(7389);
 ({ GuildNSFWContentLevel: hasOwnProperty, Permissions: metroRequire } = Constants);
 const result = size.fileFinishedImporting("modules/age_gate/native/AgeGateUtils.tsx");
 
-export const shouldNSFWGateGuild = function shouldNSFWGateGuild(guildId) {
+export function shouldNSFWGateGuild(guildId) {
   const obj = PlatformUtils;
   if (obj.isIOS()) {
     const guild = GuildStore.getGuild(guildId);
@@ -51,4 +51,4 @@ export const shouldNSFWGateGuild = function shouldNSFWGateGuild(guildId) {
   } else {
     return false;
   }
-};
+}

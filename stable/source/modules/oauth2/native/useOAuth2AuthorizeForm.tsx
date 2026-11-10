@@ -1,33 +1,33 @@
-// Module ID: 9660
-// Function ID: 9661
+// Module ID: 9740
+// Function ID: 9741
 // Name: useOAuth2AuthorizeForm
-// Dependencies: [5, 32, 19, 17, 4950, 5004, 2024, 6532, 1392, 9661, 1087, 21, 5003, 4940, 504, 5299, 5084, 5238, 6841, 9662, 9663, 1099, 9664, 1297, 1281, 9665, 9667, 9669, 5635, 7291, 1257, 9670, 9671, 5743, 9672, 6004, 9673, 5276, 1128, 6912, 6534, 9675, 9677, 8859, 9668, 14088, 14092, 14091, 14093, 14094, 14095, 14097, 14100, 7259, 2]
+// Dependencies: [5, 32, 19, 17, 4961, 5015, 2016, 6572, 1383, 9741, 1072, 21, 5014, 4951, 504, 5274, 5095, 5254, 6881, 9742, 9743, 1084, 9744, 1282, 1266, 9745, 9747, 9749, 5651, 7332, 1242, 9750, 9751, 5760, 9752, 6022, 9753, 5634, 1113, 6953, 6574, 9755, 9757, 8910, 9748, 14613, 14617, 14616, 14618, 14619, 14620, 14622, 14625, 7300, 2]
 // Exports: default
 
-// Module 9660 (useOAuth2AuthorizeForm)
+// Module 9740 (useOAuth2AuthorizeForm)
 import react_native from "react-native" /* 17 */;
-import BigFlagUtilsAll from "BigFlagUtils" /* 1099 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4940 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5084 */;
-import timing from "timing" /* 5238 */;
-import ApplicationIntegrationType from "ApplicationIntegrationType" /* 5635 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5743 */;
-import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6841 */;
-import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 6912 */;
-import Authorize from "Authorize" /* 9662 */;
-import react_nativeDefault from "react-native" /* 9664 */;
+import BigFlagUtilsAll from "BigFlagUtils" /* 1084 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4951 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
+import timing from "timing" /* 5254 */;
+import ApplicationIntegrationType from "ApplicationIntegrationType" /* 5651 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5760 */;
+import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6881 */;
+import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 6953 */;
+import Authorize from "Authorize" /* 9742 */;
+import react_nativeDefault from "react-native" /* 9744 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import module_4950 from "module_4950" /* 4950 */;
-import AccessibilityStore from "AccessibilityStore" /* 5004 */;
-import ApplicationRecord from "ApplicationRecord" /* 2024 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6532 */;
-import UserStore from "UserStore" /* 1392 */;
-import Constants_mod from "Constants" /* 9661 */;
-import Constants_mod2 from "Constants" /* 1087 */;
+import module_4961 from "module_4961" /* 4961 */;
+import AccessibilityStore from "AccessibilityStore" /* 5015 */;
+import ApplicationRecord from "ApplicationRecord" /* 2016 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6572 */;
+import UserStore from "UserStore" /* 1383 */;
+import Constants_mod from "Constants" /* 9741 */;
+import Constants_mod2 from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5003 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let _require, c5, c6, isAuthorized;
@@ -40,7 +40,7 @@ let closure_18;
 let closure_19;
 let map1;
 let tmp4;
-const scopes2 = tmp4(9663);
+const scopes2 = tmp4(9743);
 let View = react_native.View;
 let Constants = Constants_mod2;
 ({ EMOJI_POINTING_DOWN_CODE_POINT: map1, OAuth2Steps: closure_14 } = Constants);
@@ -459,7 +459,7 @@ export default function useOAuth2AuthorizeForm(clientId) {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "IconComponent", done: "+352" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           let c3;
@@ -533,7 +533,7 @@ export default function useOAuth2AuthorizeForm(clientId) {
               c3 = 0;
               closure_1_49.current = false;
               c5 = 3;
-              return { value: "IconComponent", done: "+352" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp42) {
             body = tmp42;
@@ -727,10 +727,10 @@ export default function useOAuth2AuthorizeForm(clientId) {
       codeChallengeMethod = 0;
       closure_1_24(false);
     }
-    yield "IconComponent";
+    yield "HermesInternal";
     responseType = tmp4;
     ({ isAuthorized: c0, overrideSuccessCallback: c1, canceled: c2 } = clientId);
-    return "Reflect";
+    return "flexDirection";
   });
   const items13 = [first7, callbackWithoutPost, clientId, requestedScopes, responseType, redirectUri, codeChallenge, codeChallengeMethod, tmp52, nonce, memo4, first6, first4, first5, first12, dismissOAuthModal, callback, flag5, , , ];
   let application;
@@ -822,7 +822,7 @@ export default function useOAuth2AuthorizeForm(clientId) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c4;
@@ -912,7 +912,7 @@ export default function useOAuth2AuthorizeForm(clientId) {
           closure_130_57.current = false;
         }
         c6 = 3;
-        return { value: "IconComponent", done: "+352" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp57) {
         body = tmp57;
         if (0 === c4) {
@@ -1036,7 +1036,7 @@ export default function useOAuth2AuthorizeForm(clientId) {
             const error1 = new Error("Invalid scope: " + found[0]);
             closure_23(error1);
           } else {
-            const tmp27Result = tmp27(9672);
+            const tmp27Result = tmp27(9752);
             if (tmp27Result.containsDisallowedPermission(memo4)) {
               const _Error = Error;
               const self = this;

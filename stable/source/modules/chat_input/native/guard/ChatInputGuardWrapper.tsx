@@ -1,35 +1,35 @@
-// Module ID: 13373
-// Function ID: 13374
+// Module ID: 14006
+// Function ID: 14007
 // Name: ChatInputGuardWrapper
-// Dependencies: [19, 4936, 4859, 4915, 4877, 6668, 4945, 1392, 12562, 1087, 7170, 21, 504, 6926, 4922, 4941, 13374, 13375, 10961, 10960, 13376, 13377, 5743, 7446, 6704, 7169, 2002, 7172, 6953, 11295, 13379, 13380, 13389, 13388, 5718, 1128, 13391, 13394, 13395, 13409, 13413, 13414, 13417, 13418, 9079, 13420, 2]
+// Dependencies: [19, 4947, 4867, 4926, 4885, 6708, 4956, 1383, 12809, 1072, 7211, 21, 504, 6968, 4933, 4952, 14007, 14008, 11259, 11258, 14009, 14010, 5760, 7488, 6744, 7210, 1994, 7213, 6995, 11598, 14012, 14013, 14022, 14021, 5735, 1113, 14024, 14027, 14028, 14029, 14033, 14034, 14037, 14038, 9115, 14040, 2]
 // Exports: default
 
-// Module 13373 (ChatInputGuardWrapper)
+// Module 14006 (ChatInputGuardWrapper)
 import Fragment from "Fragment" /* 21 */;
-import ChannelRecord from "ChannelRecord" /* 4859 */;
-import CommunicationDisabledUtils from "CommunicationDisabledUtils" /* 4922 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5743 */;
-import MemberVerificationUtils from "MemberVerificationUtils" /* 6926 */;
-import PhoneConstants from "PhoneConstants" /* 7170 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7446 */;
-import GuildRoleConnectionsModalActionCreators from "GuildRoleConnectionsModalActionCreators" /* 11295 */;
-import ChatInputConstants from "ChatInputConstants" /* 12562 */;
-import navigateToThreadCreation from "navigateToThreadCreation" /* 13379 */;
+import ChannelRecord from "ChannelRecord" /* 4867 */;
+import CommunicationDisabledUtils from "CommunicationDisabledUtils" /* 4933 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5760 */;
+import MemberVerificationUtils from "MemberVerificationUtils" /* 6968 */;
+import PhoneConstants from "PhoneConstants" /* 7211 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7488 */;
+import GuildRoleConnectionsModalActionCreators from "GuildRoleConnectionsModalActionCreators" /* 11598 */;
+import ChatInputConstants from "ChatInputConstants" /* 12809 */;
+import navigateToThreadCreation from "navigateToThreadCreation" /* 14012 */;
 import react from "react" /* 19 */;
-import LurkingStore from "LurkingStore" /* 4936 */;
-import GuildMemberStore from "GuildMemberStore" /* 4915 */;
-import GuildStore from "GuildStore" /* 4877 */;
-import GuildVerificationStore from "GuildVerificationStore" /* 6668 */;
-import RelationshipStore from "RelationshipStore" /* 4945 */;
-import UserStore from "UserStore" /* 1392 */;
-import Constants from "Constants" /* 1087 */;
+import LurkingStore from "LurkingStore" /* 4947 */;
+import GuildMemberStore from "GuildMemberStore" /* 4926 */;
+import GuildStore from "GuildStore" /* 4885 */;
+import GuildVerificationStore from "GuildVerificationStore" /* 6708 */;
+import RelationshipStore from "RelationshipStore" /* 4956 */;
+import UserStore from "UserStore" /* 1383 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 let closure_12;
 let map1;
 let tmp6;
 let unpackModuleId;
-const AutomodPermissionUtils = tmp6(4941);
+const AutomodPermissionUtils = tmp6(4952);
 const isThread = ChannelRecord.isThread;
 const TextAreaCta = ChatInputConstants.TextAreaCta;
 ({ AnalyticEvents: unpackModuleId, ChannelTypes: closure_12, VerificationCriteria: map1 } = Constants);

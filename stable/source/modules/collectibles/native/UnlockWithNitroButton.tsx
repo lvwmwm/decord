@@ -1,150 +1,32 @@
-// Module ID: 14515
-// Function ID: 14516
+// Module ID: 15057
+// Function ID: 15058
 // Name: UnlockWithNitroButton
-// Dependencies: [19, 7556, 7697, 1089, 21, 558, 576, 7551, 504, 14501, 1128, 5266, 9457, 5277, 2]
+// Dependencies: [19, 7597, 7735, 1074, 21, 504, 7593, 15042, 1113, 5635, 5624, 9528, 2]
+// Exports: UnlockWithNitroButton
 
-// Module 14515 (UnlockWithNitroButton)
+// Module 15057 (UnlockWithNitroButton)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
-import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1089 */;
-import ProductIds from "ProductIds" /* 7551 */;
-import useOpenNitroSubscribeActionSheetDefault from "useOpenNitroSubscribeActionSheet" /* 14501 */;
+import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
+import ProductIds from "ProductIds" /* 7593 */;
+import useOpenNitroSubscribeActionSheetDefault from "useOpenNitroSubscribeActionSheet" /* 15042 */;
 import react from "react" /* 19 */;
-import IAPStore from "IAPStore" /* 7556 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7697 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import IAPStore from "IAPStore" /* 7597 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7735 */;
 import size from "module_2" /* 2 */;
 
 let importDefault;
 
 let tmp;
-const intl2 = tmp(1128);
-const Text_Text = tmp(5266);
-const BaseTextButton2 = tmp(5277);
-const NitroWheelIcon = tmp(9457);
+const intl2 = tmp(1113);
+const Text_Text = tmp(5624);
+const BaseTextButton2 = tmp(5635);
+const NitroWheelIcon = tmp(9528);
 const ShopCtaEnum = CollectiblesShopConstants.ShopCtaEnum;
 const jsx = Fragment.jsx;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UnlockWithNitroButton(text) {
-  let closure_1;
-  let isClaiming;
-  let onTrackPress;
-  let purchasingProduct;
-  let shouldShrink;
-  let tmp11;
-  let tmp5;
-  let tmp6;
-  const tmp = onTrackPress;
-  const obj = onTrackPress(576);
-  const cResult = obj.c(18);
-  ({ shouldShrink, onTrackPress } = text);
-  text = text.text;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [CollectiblesPurchaseStore, IAPStore];
-    const fn = function u() {
-      const isPurchasingProductResult = null != isClaiming.isClaiming || purchasingProduct.isPurchasingProduct(onTrackPress(dependencyMap[7]).ProductIds.GENERIC_CONSUMABLE);
-      return isPurchasingProductResult;
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp5 = items;
-    tmp6 = fn;
-  } else {
-    [tmp5, tmp6] = cResult;
-  }
-  const tmpResult = tmp(504);
-  const stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
-  const tmp10 = useOpenNitroSubscribeActionSheetDefault();
-  importDefault = tmp10;
-  if (cResult[2] !== text) {
-    let stringResult = text;
-    if (text == null) {
-      const intl = tmp(1128).intl;
-      stringResult = intl.string(tmp(1128).t.sEAnVH);
-    }
-    cResult[2] = text;
-    cResult[3] = stringResult;
-    tmp11 = stringResult;
-  } else {
-    tmp11 = cResult[3];
-  }
-  if (cResult[4] === tmp11) {
-    let tmp14;
-    let tmp18;
-    if (cResult[5] === (undefined !== shouldShrink && shouldShrink)) {
-      tmp14 = cResult[6];
-    }
-    let str = "md";
-    if (undefined !== shouldShrink && shouldShrink) {
-      str = "sm";
-    }
-    const _Symbol = Symbol;
-    if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp20 = jsx(tmp(9457).NitroWheelIcon, { size: "sm", color: "white" });
-      cResult[7] = tmp20;
-      tmp18 = tmp20;
-    } else {
-      tmp18 = cResult[7];
-    }
-    if (cResult[8] === tmp10) {
-      let tmp21;
-      if (cResult[9] === onTrackPress) {
-        tmp21 = cResult[10];
-      }
-      if (cResult[11] === tmp11) {
-        if (cResult[12] === stateFromStores) {
-          if (cResult[13] === tmp14) {
-            if (cResult[14] === tmp17) {
-              if (cResult[15] === str) {
-                let tmp22;
-                if (cResult[16] === tmp21) {
-                  tmp22 = cResult[17];
-                }
-                return tmp22;
-              }
-            }
-          }
-        }
-      }
-      class C {
-        constructor() {
-          if (onTrackPress != null) {
-            tmp(ShopCtaEnum.UNLOCK_WITH_NITRO);
-          }
-          closure_1();
-        }
-      }
-      const tmp24 = jsx(tmp(5277).BaseTextButton, { textElement: tmp14, text: tmp17, accessibilityLabel: tmp11, variant: "primary", size: str, grow: true, icon: tmp18, onPress: null, disabled: stateFromStores });
-      cResult[11] = tmp11;
-      cResult[12] = stateFromStores;
-      cResult[13] = tmp14;
-      cResult[14] = tmp17;
-      cResult[15] = str;
-      cResult[16] = tmp21;
-      cResult[17] = tmp24;
-      tmp22 = tmp24;
-    }
-    class C {
-      constructor() {
-        if (onTrackPress != null) {
-          tmp(ShopCtaEnum.UNLOCK_WITH_NITRO);
-        }
-        closure_1();
-      }
-    }
-    cResult[8] = tmp10;
-    cResult[9] = onTrackPress;
-    cResult[10] = C;
-    tmp21 = C;
-  }
-  let tmp15;
-  if (undefined !== shouldShrink && shouldShrink) {
-    tmp15 = jsx(tmp(5266).Text, { variant: "text-xs/semibold", color: "text-overlay-light", allowFontScaling: false, children: tmp11 });
-  }
-  cResult[4] = tmp11;
-  cResult[5] = undefined !== shouldShrink && shouldShrink;
-  cResult[6] = tmp15;
-  tmp14 = tmp15;
-}) : (function UnlockWithNitroButton(shouldShrink) {
+const result = size.fileFinishedImporting("modules/collectibles/native/UnlockWithNitroButton.tsx");
+
+export function UnlockWithNitroButton(shouldShrink) {
   let closure_1;
   let isClaiming;
   let purchasingProduct;
@@ -199,7 +81,4 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UnlockWith
     str = "sm";
   }
   return jsx(BaseTextButton, obj3);
-});
-const result = size.fileFinishedImporting("modules/collectibles/native/UnlockWithNitroButton.tsx");
-
-export const UnlockWithNitroButton = tmp3;
+}

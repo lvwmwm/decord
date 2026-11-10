@@ -1,23 +1,23 @@
-// Module ID: 19123
-// Function ID: 19124
+// Module ID: 19751
+// Function ID: 19752
 // Name: GuildSettingsModalServerTagCustomize
-// Dependencies: [32, 19, 17, 9017, 9038, 8306, 21, 587, 5003, 9040, 1499, 9018, 504, 9019, 9037, 5242, 19124, 2002, 7166, 14207, 8983, 6009, 7040, 1128, 5718, 5266, 19125, 19129, 2]
+// Dependencies: [32, 19, 17, 9046, 9075, 8393, 21, 575, 5014, 9077, 1491, 9047, 504, 9048, 9074, 5258, 19752, 1994, 7208, 14736, 8177, 6027, 7082, 1113, 5735, 5624, 19753, 19757, 2]
 // Exports: default
 
-// Module 19123 (GuildSettingsModalServerTagCustomize)
+// Module 19751 (GuildSettingsModalServerTagCustomize)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 587 */;
-import asyncRequire from "asyncRequire" /* 2002 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5242 */;
-import GuildTagConstants from "GuildTagConstants" /* 8306 */;
-import GuildProfileStore from "GuildProfileStore" /* 9017 */;
-import GuildProfileActionCreators from "GuildProfileActionCreators" /* 9019 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9037 */;
+import nativeDefault from "native" /* 575 */;
+import asyncRequire from "asyncRequire" /* 1994 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
+import GuildTagConstants from "GuildTagConstants" /* 8393 */;
+import GuildProfileStore from "GuildProfileStore" /* 9046 */;
+import GuildProfileActionCreators from "GuildProfileActionCreators" /* 9048 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9074 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 9038 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 9075 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5003 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let c10;

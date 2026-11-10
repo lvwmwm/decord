@@ -1,10 +1,10 @@
 // Module ID: 16782
 // Function ID: 16783
 // Name: AssetRegistry
-// Dependencies: [1134]
+// Dependencies: [1119]
 
 // Module 16782 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1134 */;
+import AssetRegistry from "AssetRegistry" /* 1119 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "64819f390c3fa24ca76c3246977f2a01", name: "EmojiSmilingFaceWithHornsIcon", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/parent_tools/images", width: 185, height: 125, scales: [1, 2, 3], hash: "fa358a5ff3d1f49a00fc1180e0e601e5", name: "family_center_activity_banner_image_parent", type: "png" });

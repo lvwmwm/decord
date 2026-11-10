@@ -1,58 +1,50 @@
-// Module ID: 15771
-// Function ID: 15772
+// Module ID: 16317
+// Function ID: 16318
 // Name: getEmbeddedActivityPopoutWindowKey
-// Dependencies: [2045, 7862, 4854, 5641, 1087, 2031, 5658, 4924, 558, 576, 504, 2]
-// Exports: default, getEmbeddedActivityPopoutWindowKeyForApplication, getEmbeddedActivityPopoutWindowKeyForChannel
+// Dependencies: [2038, 7902, 4862, 5657, 1072, 2024, 5675, 4935, 504, 2]
+// Exports: default, getEmbeddedActivityPopoutWindowKeyForApplication, getEmbeddedActivityPopoutWindowKeyForChannel, usePopoutWindowForActivity
 
-// Module 15771 (getEmbeddedActivityPopoutWindowKey)
-import Constants from "Constants" /* 1087 */;
-import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4924 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 5641 */;
-import ApplicationStore from "ApplicationStore" /* 2045 */;
-import PopoutWindowStore from "PopoutWindowStore" /* 7862 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4854 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 16317 (getEmbeddedActivityPopoutWindowKey)
+import Constants from "Constants" /* 1072 */;
+import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4935 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 5657 */;
+import ApplicationStore from "ApplicationStore" /* 2038 */;
+import PopoutWindowStore from "PopoutWindowStore" /* 7902 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4862 */;
 import size from "module_2" /* 2 */;
 
 const ActivityPanelModes = ActivityPanelConstants.ActivityPanelModes;
 const PopoutWindowKeys = Constants.PopoutWindowKeys;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePopoutWindowForActivity(channelId) {
-  let first;
-  let tmp8;
-  const obj = channelId(576);
-  const cResult = obj.c(3);
-  const tmp = channelId;
-  channelId = channelId.channelId;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [PopoutWindowStore, EmbeddedActivitiesStore, ApplicationStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
+const result = size.fileFinishedImporting("modules/activities/getEmbeddedActivityPopoutWindowKey.tsx");
+
+export default function getEmbeddedActivityPopoutWindowKey(arg0) {
+  let application;
+  let channelId;
+  ({ application, channelId } = arg0);
+};
+export function getEmbeddedActivityPopoutWindowKeyForChannel(channelId) {
+  ({ EmbeddedActivitiesStore, ApplicationStore } = channelId);
+  const selfEmbeddedActivityForChannel = EmbeddedActivitiesStore.getSelfEmbeddedActivityForChannel(channelId.channelId);
+  let applicationId;
+  const getApplication = ApplicationStore.getApplication;
+  if (selfEmbeddedActivityForChannel != null) {
+    applicationId = selfEmbeddedActivityForChannel.applicationId;
   }
-  if (cResult[1] !== channelId) {
-    const fn = function p() {
-      let connectedActivityChannelId = channelId;
-      if (channelId == null) {
-        connectedActivityChannelId = EmbeddedActivitiesStore.getConnectedActivityChannelId();
+  const application = getApplication(applicationId);
+}
+export function getEmbeddedActivityPopoutWindowKeyForApplication(applicationId) {
+  applicationId = applicationId.applicationId;
+  const currentEmbeddedActivity = EmbeddedActivitiesStore.getCurrentEmbeddedActivity();
+  if (null != currentEmbeddedActivity) {
+    if (currentEmbeddedActivity.applicationId === applicationId) {
+      if (null != ApplicationStore.getApplication(applicationId)) {
+        const obj = embeddedActivityLocationUtils;
+        const embeddedActivityLocationChannelId = obj.getEmbeddedActivityLocationChannelId(currentEmbeddedActivity.location);
       }
-      const selfEmbeddedActivityForChannel = EmbeddedActivitiesStore.getSelfEmbeddedActivityForChannel(connectedActivityChannelId);
-      let applicationId;
-      const getApplication = ApplicationStore.getApplication;
-      if (selfEmbeddedActivityForChannel != null) {
-        applicationId = selfEmbeddedActivityForChannel.applicationId;
-      }
-      const application = getApplication(applicationId);
-    };
-    cResult[1] = channelId;
-    cResult[2] = fn;
-    tmp8 = fn;
-  } else {
-    tmp8 = cResult[2];
+    }
   }
-  const tmpResult = tmp(504);
-  return tmpResult.useStateFromStores(first, tmp8);
-}) : (function usePopoutWindowForActivity(channelId) {
+}
+export function usePopoutWindowForActivity(channelId) {
   channelId = channelId.channelId;
   const items = [PopoutWindowStore, EmbeddedActivitiesStore, ApplicationStore];
   const obj = channelId(504);
@@ -69,36 +61,4 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePopoutW
     }
     const application = getApplication(applicationId);
   });
-});
-function getEmbeddedActivityPopoutWindowKey(arg0) {
-  let application;
-  let channelId;
-  ({ application, channelId } = arg0);
 }
-function getEmbeddedActivityPopoutWindowKeyForChannel(channelId) {
-  ({ EmbeddedActivitiesStore, ApplicationStore } = channelId);
-  const selfEmbeddedActivityForChannel = EmbeddedActivitiesStore.getSelfEmbeddedActivityForChannel(channelId.channelId);
-  let applicationId;
-  const getApplication = ApplicationStore.getApplication;
-  if (selfEmbeddedActivityForChannel != null) {
-    applicationId = selfEmbeddedActivityForChannel.applicationId;
-  }
-  const application = getApplication(applicationId);
-}
-const result = size.fileFinishedImporting("modules/activities/getEmbeddedActivityPopoutWindowKey.tsx");
-
-export default getEmbeddedActivityPopoutWindowKey;
-export { getEmbeddedActivityPopoutWindowKeyForChannel };
-export const getEmbeddedActivityPopoutWindowKeyForApplication = function getEmbeddedActivityPopoutWindowKeyForApplication(applicationId) {
-  applicationId = applicationId.applicationId;
-  const currentEmbeddedActivity = EmbeddedActivitiesStore.getCurrentEmbeddedActivity();
-  if (null != currentEmbeddedActivity) {
-    if (currentEmbeddedActivity.applicationId === applicationId) {
-      if (null != ApplicationStore.getApplication(applicationId)) {
-        const obj = embeddedActivityLocationUtils;
-        const embeddedActivityLocationChannelId = obj.getEmbeddedActivityLocationChannelId(currentEmbeddedActivity.location);
-      }
-    }
-  }
-};
-export const usePopoutWindowForActivity = tmp2;

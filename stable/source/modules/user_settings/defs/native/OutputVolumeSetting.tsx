@@ -1,48 +1,19 @@
-// Module ID: 16642
-// Function ID: 16643
+// Module ID: 17237
+// Function ID: 17238
 // Name: OutputVolumeSetting
-// Dependencies: [2014, 8364, 558, 576, 504, 11240, 1128, 5883, 11648, 2]
+// Dependencies: [2006, 8432, 504, 11540, 1113, 5915, 11943, 2]
 
-// Module 16642 (OutputVolumeSetting)
-import react from "react" /* 576 */;
-import intl3 from "intl" /* 1128 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 5883 */;
-import SettingsConstants from "SettingsConstants" /* 8364 */;
-import MobileAudioOutputExperimentDefault from "MobileAudioOutputExperiment" /* 11648 */;
-import MediaEngineStore from "MediaEngineStore" /* 2014 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11240 */;
+// Module 17237 (OutputVolumeSetting)
+import get_initialized from "get initialized" /* 504 */;
+import intl3 from "intl" /* 1113 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 5915 */;
+import SettingsConstants from "SettingsConstants" /* 8432 */;
+import MobileAudioOutputExperimentDefault from "MobileAudioOutputExperiment" /* 11943 */;
+import MediaEngineStore from "MediaEngineStore" /* 2006 */;
+import SettingBuilders from "SettingBuilders" /* 11540 */;
 import size from "module_2" /* 2 */;
 
-let tmp;
-const get_initialized = tmp(504);
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOutputVolumeSettingValue() {
-  let outputVolume;
-  let tmp4;
-  let tmp5;
-  const obj = react;
-  const cResult = obj.c(2);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [MediaEngineStore];
-    const fn = function n() {
-      return outputVolume.getOutputVolume();
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  const tmpResult = get_initialized;
-  return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (function useOutputVolumeSettingValue() {
-  let outputVolume;
-  const items = [MediaEngineStore];
-  const obj = get_initialized;
-  return obj.useStateFromStores(items, () => outputVolume.getOutputVolume());
-});
 let obj = {
   useTitle() {
     const intl = intl3.intl;
@@ -50,7 +21,12 @@ let obj = {
   },
   parent: MobileUserSettings.VOICE,
   maximum: 200,
-  useValue: tmp2,
+  useValue: function useOutputVolumeSettingValue() {
+    let outputVolume;
+    const items = [MediaEngineStore];
+    const obj = get_initialized;
+    return obj.useStateFromStores(items, () => outputVolume.getOutputVolume());
+  },
   onValueChange: AudioActionCreatorsDefault.setOutputVolume,
   useSearchTerms() {
     const intl = intl3.intl;

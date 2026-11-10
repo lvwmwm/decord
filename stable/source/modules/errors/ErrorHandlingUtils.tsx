@@ -1,12 +1,12 @@
-// Module ID: 7478
-// Function ID: 7479
+// Module ID: 7519
+// Function ID: 7520
 // Name: ErrorHandlingUtils
-// Dependencies: [1087, 1257, 2]
+// Dependencies: [1072, 1242, 2]
 // Exports: captureOrIgnoreApiError
 
-// Module 7478 (ErrorHandlingUtils)
-import Constants from "Constants" /* 1087 */;
-import SentryUtilsDefault from "SentryUtils" /* 1257 */;
+// Module 7519 (ErrorHandlingUtils)
+import Constants from "Constants" /* 1072 */;
+import SentryUtilsDefault from "SentryUtils" /* 1242 */;
 import size from "module_2" /* 2 */;
 
 const items = [, , ];
@@ -15,7 +15,7 @@ const set = new Set([500, 502, 503, 504]);
 const set1 = new Set([401, 403, 405, 409, 429]);
 const result = size.fileFinishedImporting("modules/errors/ErrorHandlingUtils.tsx");
 
-export const captureOrIgnoreApiError = function captureOrIgnoreApiError(aPIError) {
+export function captureOrIgnoreApiError(aPIError) {
   let tmp = null == aPIError;
   if (!tmp) {
     let flag = false;
@@ -66,4 +66,4 @@ export const captureOrIgnoreApiError = function captureOrIgnoreApiError(aPIError
     const obj = SentryUtilsDefault;
     obj.captureException(aPIError);
   }
-};
+}

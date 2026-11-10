@@ -1,19 +1,19 @@
-// Module ID: 11231
-// Function ID: 11232
+// Module ID: 11531
+// Function ID: 11532
 // Name: ExternalStreamingStore
-// Dependencies: [5, 6532, 5058, 1087, 1104, 1297, 7306, 584, 8652, 6534, 1357, 504, 2]
+// Dependencies: [5, 6572, 5069, 1072, 1089, 1282, 7347, 572, 8721, 6574, 1342, 504, 2]
 
-// Module 11231 (ExternalStreamingStore)
+// Module 11531 (ExternalStreamingStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1087 */;
-import DurationsDefault from "Durations" /* 1104 */;
-import HTTPUtils from "HTTPUtils" /* 1297 */;
-import _modDef1357 from "module_1357" /* 1357 */;
-import ConnectedAccountsActionCreatorsDefault from "ConnectedAccountsActionCreators" /* 7306 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import Constants from "Constants" /* 1072 */;
+import DurationsDefault from "Durations" /* 1089 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
+import _modDef1342 from "module_1342" /* 1342 */;
+import ConnectedAccountsActionCreatorsDefault from "ConnectedAccountsActionCreators" /* 7347 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6532 */;
-import StreamerModeStore from "StreamerModeStore" /* 5058 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6572 */;
+import StreamerModeStore from "StreamerModeStore" /* 5069 */;
 import size from "module_2" /* 2 */;
 
 let _null, c7, c8, closure_11, constants;
@@ -126,7 +126,7 @@ class StreamingPoller {
           obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c6;
@@ -315,7 +315,7 @@ class StreamingPoller {
           obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c4;
@@ -528,7 +528,7 @@ const prototype2 = ExternalStreamingStore.prototype;
 ExternalStreamingStore.displayName = "ExternalStreamingStore";
 obj = {
   STREAMING_UPDATE: function streamUpdate(stream) {
-    if (_modDef1357(stream.stream, stream)) {
+    if (_modDef1342(stream.stream, stream)) {
       return false;
     } else {
       stream = stream.stream;

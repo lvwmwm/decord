@@ -1,24 +1,24 @@
-// Module ID: 13363
-// Function ID: 13364
+// Module ID: 13996
+// Function ID: 13997
 // Name: EmojiSuggestionChatButton
-// Dependencies: [32, 19, 17, 1207, 4852, 1243, 21, 5003, 587, 1384, 5284, 13359, 13364, 5084, 5279, 11919, 13365, 5329, 12201, 6940, 1128, 5701, 5010, 7260, 7261, 9944, 1202, 2]
+// Dependencies: [32, 19, 17, 1192, 4860, 1228, 21, 5014, 575, 1375, 5596, 13990, 13997, 5095, 5637, 11243, 13998, 5303, 12506, 6980, 1113, 5717, 5021, 7301, 7302, 10026, 1187, 2]
 // Exports: EmojiSuggestionChatButton
 
-// Module 13363 (EmojiSuggestionChatButton)
-import nativeDefault from "native" /* 587 */;
-import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1243 */;
-import PlatformUtils from "PlatformUtils" /* 1384 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4852 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5084 */;
-import spring from "spring" /* 5279 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5329 */;
-import EmojiSuggestionBarUtils from "EmojiSuggestionBarUtils" /* 13359 */;
+// Module 13996 (EmojiSuggestionChatButton)
+import nativeDefault from "native" /* 575 */;
+import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1228 */;
+import PlatformUtils from "PlatformUtils" /* 1375 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4860 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5303 */;
+import spring from "spring" /* 5637 */;
+import EmojiSuggestionBarUtils from "EmojiSuggestionBarUtils" /* 13990 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ThemeStore from "ThemeStore" /* 1207 */;
+import ThemeStore from "ThemeStore" /* 1192 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5003 */;
+import createStyles from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 let set, set2;
@@ -55,7 +55,7 @@ let closure_16 = { code: "function EmojiSuggestionChatButtonTsx4(){const{runOnJS
 let size = size_mod;
 let result = size.fileFinishedImporting("modules/chat_input/native/EmojiSuggestionChatButton.tsx");
 
-export const EmojiSuggestionChatButton = function EmojiSuggestionChatButton(arg0) {
+export function EmojiSuggestionChatButton(arg0) {
   let PressableOpacity;
   let active;
   let c5;
@@ -269,4 +269,4 @@ export const EmojiSuggestionChatButton = function EmojiSuggestionChatButton(arg0
   }
   items6[1] = tmp27Result2;
   return gesture1(GestureDetector, obj5);
-};
+}

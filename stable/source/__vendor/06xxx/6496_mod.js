@@ -1,0 +1,18 @@
+// Module ID: 6496
+// Function ID: 6497
+// Name: mod
+// Dependencies: [1318]
+
+// Module 6496 (mod)
+import _mod1318 from "module_1318" /* 1318 */;
+
+
+export default function mod(arg0, arg1) {
+  const result = arg0 % arg1;
+  let sum = result;
+  const tmp2 = _mod1318;
+  if (result < 0) {
+    sum = result + arg1;
+  }
+  return tmp2(sum);
+};

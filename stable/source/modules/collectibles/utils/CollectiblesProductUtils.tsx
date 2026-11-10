@@ -1,27 +1,27 @@
-// Module ID: 7693
-// Function ID: 7694
+// Module ID: 7731
+// Function ID: 7732
 // Name: CollectiblesProductUtils
-// Dependencies: [32, 7688, 1087, 1995, 2]
+// Dependencies: [32, 7726, 1072, 1987, 2]
 // Exports: getHasNonOrbPrice, getHasOrbPrice, getIsVariantProduct, getProductFiatPrice, getProductOrbPrice, getProductSkuIds, getProductType, getProductsWithOrbsPrice, getSelectedProduct, isDynamicProduct, isOrbsExclusiveProduct
 
-// Module 7693 (CollectiblesProductUtils)
-import CollectiblesItemType from "CollectiblesItemType" /* 1995 */;
-import ProfileEffectRecord from "ProfileEffectRecord" /* 7688 */;
+// Module 7731 (CollectiblesProductUtils)
+import CollectiblesItemType from "CollectiblesItemType" /* 1987 */;
+import ProfileEffectRecord from "ProfileEffectRecord" /* 7726 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import Constants from "Constants" /* 1087 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 let effects;
 
 let closure_4;
 let hasOwnProperty;
-const f99461 = (currency) => currency.currency === constants.DISCORD_ORB;
-const f99462 = (currency) => currency.currency !== constants.DISCORD_ORB;
+const f91538 = (currency) => currency.currency === constants.DISCORD_ORB;
+const f91539 = (currency) => currency.currency !== constants.DISCORD_ORB;
 const isProfileEffectRecord = ProfileEffectRecord.isProfileEffectRecord;
 ({ CurrencyCodes: closure_4, PriceSetAssignmentPurchaseTypes: hasOwnProperty } = Constants);
 const result = size.fileFinishedImporting("modules/collectibles/utils/CollectiblesProductUtils.tsx");
 
-export const getProductOrbPrice = function getProductOrbPrice(arg0) {
+export function getProductOrbPrice(arg0) {
   const tmp2 = arg0.product.prices[arg0.hasShopDiscount ? hasOwnProperty.PREMIUM_TIER_2 : hasOwnProperty.DEFAULT];
   let prices;
   if (tmp2 != null) {
@@ -33,13 +33,13 @@ export const getProductOrbPrice = function getProductOrbPrice(arg0) {
   if (prices == null) {
     prices = [];
   }
-  let found = prices.find(f99461);
+  let found = prices.find(f91538);
   if (found == null) {
     found = null;
   }
   return found;
-};
-export const getProductFiatPrice = function getProductFiatPrice(arg0) {
+}
+export function getProductFiatPrice(arg0) {
   const tmp2 = arg0.product.prices[arg0.hasShopDiscount ? hasOwnProperty.MOBILE_PREMIUM_TIER_2 : hasOwnProperty.MOBILE];
   let prices;
   if (tmp2 != null) {
@@ -51,13 +51,13 @@ export const getProductFiatPrice = function getProductFiatPrice(arg0) {
   if (prices == null) {
     prices = [];
   }
-  let found = prices.find(f99462);
+  let found = prices.find(f91539);
   if (found == null) {
     found = null;
   }
   return found;
-};
-export const getHasOrbPrice = function getHasOrbPrice(arg0) {
+}
+export function getHasOrbPrice(arg0) {
   let prices;
   if (arg0.prices[hasOwnProperty.DEFAULT] != null) {
     const countryPrices = tmp.countryPrices;
@@ -68,13 +68,13 @@ export const getHasOrbPrice = function getHasOrbPrice(arg0) {
   if (prices == null) {
     prices = [];
   }
-  let found = prices.find(f99461);
+  let found = prices.find(f91538);
   if (found == null) {
     found = null;
   }
   return null != found;
-};
-export const getHasNonOrbPrice = function getHasNonOrbPrice(arg0) {
+}
+export function getHasNonOrbPrice(arg0) {
   let prices;
   if (arg0.prices[hasOwnProperty.MOBILE] != null) {
     const countryPrices = tmp.countryPrices;
@@ -85,13 +85,13 @@ export const getHasNonOrbPrice = function getHasNonOrbPrice(arg0) {
   if (prices == null) {
     prices = [];
   }
-  let found = prices.find(f99462);
+  let found = prices.find(f91539);
   if (found == null) {
     found = null;
   }
   return null != found;
-};
-export const isOrbsExclusiveProduct = function isOrbsExclusiveProduct(product) {
+}
+export function isOrbsExclusiveProduct(product) {
   if (null == product) {
     return false;
   } else {
@@ -106,7 +106,7 @@ export const isOrbsExclusiveProduct = function isOrbsExclusiveProduct(product) {
     if (prices == null) {
       prices = [];
     }
-    let found = prices.find(f99461);
+    let found = prices.find(f91538);
     if (found == null) {
       found = null;
     }
@@ -121,7 +121,7 @@ export const isOrbsExclusiveProduct = function isOrbsExclusiveProduct(product) {
     if (prices1 == null) {
       prices1 = [];
     }
-    let found1 = prices1.find(f99462);
+    let found1 = prices1.find(f91539);
     if (found1 == null) {
       found1 = null;
     }
@@ -130,8 +130,8 @@ export const isOrbsExclusiveProduct = function isOrbsExclusiveProduct(product) {
     }
     return tmp2;
   }
-};
-export const isDynamicProduct = function isDynamicProduct(selectedProduct) {
+}
+export function isDynamicProduct(selectedProduct) {
   let tmp = null != selectedProduct;
   if (tmp) {
     let type1 = null;
@@ -168,8 +168,8 @@ export const isDynamicProduct = function isDynamicProduct(selectedProduct) {
     tmp = someResult;
   }
   return tmp;
-};
-export const getProductsWithOrbsPrice = function getProductsWithOrbsPrice(arr) {
+}
+export function getProductsWithOrbsPrice(arr) {
   return arr.filter((item) => {
     let prices;
     const tmp = constants;
@@ -182,7 +182,7 @@ export const getProductsWithOrbsPrice = function getProductsWithOrbsPrice(arr) {
     if (prices == null) {
       prices = [];
     }
-    let found = prices.find(f99461);
+    let found = prices.find(f91538);
     if (found == null) {
       found = null;
     }
@@ -197,7 +197,7 @@ export const getProductsWithOrbsPrice = function getProductsWithOrbsPrice(arr) {
     if (prices1 == null) {
       prices1 = [];
     }
-    let found1 = prices1.find(f99462);
+    let found1 = prices1.find(f91539);
     if (found1 == null) {
       found1 = null;
     }
@@ -206,12 +206,12 @@ export const getProductsWithOrbsPrice = function getProductsWithOrbsPrice(arr) {
     }
     return tmp4;
   });
-};
-export const getIsVariantProduct = function getIsVariantProduct(product) {
+}
+export function getIsVariantProduct(product) {
   const tmp = product.type === CollectiblesItemType.CollectiblesItemType.VARIANTS_GROUP && null != product.variants && 0 !== product.variants.length;
   return tmp;
-};
-export const getProductSkuIds = function getProductSkuIds(product) {
+}
+export function getProductSkuIds(product) {
   let mapped;
   const tmp = product.type === CollectiblesItemType.CollectiblesItemType.VARIANTS_GROUP && null != product.variants && 0 !== product.variants.length;
   if (tmp) {
@@ -221,8 +221,8 @@ export const getProductSkuIds = function getProductSkuIds(product) {
     mapped = [product.skuId];
   }
   return mapped;
-};
-export const getSelectedProduct = function getSelectedProduct(product, defaultVariantIndex) {
+}
+export function getSelectedProduct(product, defaultVariantIndex) {
   let tmp3 = product;
   const tmp = product.type === CollectiblesItemType.CollectiblesItemType.VARIANTS_GROUP && null != product.variants && 0 !== product.variants.length;
   if (tmp) {
@@ -236,8 +236,8 @@ export const getSelectedProduct = function getSelectedProduct(product, defaultVa
     }
   }
   return tmp3;
-};
-export const getProductType = function getProductType(product) {
+}
+export function getProductType(product) {
   if (null == product) {
     return null;
   } else if (product.type === CollectiblesItemType.CollectiblesItemType.VARIANTS_GROUP) {
@@ -255,4 +255,4 @@ export const getProductType = function getProductType(product) {
   } else {
     return product.type;
   }
-};
+}

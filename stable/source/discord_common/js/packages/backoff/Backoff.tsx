@@ -1,9 +1,9 @@
-// Module ID: 569
-// Function ID: 570
+// Module ID: 559
+// Function ID: 560
 // Name: Backoff
 // Dependencies: [2]
 
-// Module 569 (Backoff)
+// Module 559 (Backoff)
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("../discord_common/js/packages/backoff/Backoff.tsx");
@@ -84,6 +84,15 @@ class Backoff {
       }, _current);
     }
     return _current;
+  }
+  failAsync(arg0) {
+    const self = this;
+    let closure_0 = arg0;
+    const promise = new Promise((arg0) => {
+      closure_0 = arg0;
+      self.fail(() => closure_0(), closure_0);
+    });
+    return promise;
   }
   cancel() {
     const self = this;

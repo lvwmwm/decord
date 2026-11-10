@@ -1,27 +1,31 @@
-// Module ID: 16736
-// Function ID: 16737
+// Module ID: 17331
+// Function ID: 17332
 // Name: DisplayNameStylesGummyColorPickerSheet
-// Dependencies: [32, 19, 17, 1410, 1087, 21, 1409, 5003, 587, 558, 576, 10696, 1411, 568, 16737, 5244, 16738, 1267, 5242, 1128, 5276, 16733, 15905, 10152, 5297, 2]
+// Dependencies: [32, 19, 17, 1401, 17332, 1072, 21, 1400, 5014, 575, 10775, 1402, 17333, 558, 5260, 17334, 1252, 5258, 5272, 17328, 5634, 1113, 17337, 16474, 2]
+// Exports: default
 
-// Module 16736 (DisplayNameStylesGummyColorPickerSheet)
-import shallowEqual from "shallowEqual" /* 568 */;
-import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1087 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1410 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5242 */;
-import HapticUtils from "HapticUtils" /* 5244 */;
-import showGummyCustomColorSheetDefault from "showGummyCustomColorSheet" /* 16738 */;
-import _slicedToArray_mod from "_slicedToArray" /* 32 */;
+// Module 17331 (DisplayNameStylesGummyColorPickerSheet)
+import shallowEqual from "shallowEqual" /* 558 */;
+import nativeDefault from "native" /* 575 */;
+import Constants from "Constants" /* 1072 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1401 */;
+import DisplayNameEffect from "DisplayNameEffect" /* 1402 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
+import HapticUtils from "HapticUtils" /* 5260 */;
+import useDisplayNameStylesEffectConfigs from "useDisplayNameStylesEffectConfigs" /* 10775 */;
+import DisplayNameStylesColorPickerConstants from "DisplayNameStylesColorPickerConstants" /* 17332 */;
+import showGummyCustomColorSheetDefault from "showGummyCustomColorSheet" /* 17334 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import DisplayNameStylesUtils from "DisplayNameStylesUtils" /* 1409 */;
-import createStyles_mod from "createStyles" /* 5003 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import DisplayNameStylesUtils from "DisplayNameStylesUtils" /* 1400 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
-let BottomSheet, dependencyMap, initialColor, obj1;
+const require = globalThis.__r;
+let BottomSheet, dependencyMap;
 
 let StyleSheet;
 let c10;
@@ -32,612 +36,170 @@ let obj2;
 let obj3;
 let obj4;
 let obj5;
-let obj6;
-let obj7;
 let size;
-let _slicedToArray = _slicedToArray_mod;
+let tmp2;
+const intl3 = tmp2(1113);
+const Sheet_BottomSheet = tmp2(5272);
+const components_Button_Button = tmp2(5634);
 ({ View: hasOwnProperty, Pressable: metroRequire, StyleSheet } = react_native);
 let closure_7 = DisplayNameStylesConstants.DISPLAY_NAME_STYLES_GUMMY_PRESETS;
-let AnalyticEvents = Constants.AnalyticEvents;
+const SHEET_CONTENT_MAX_WIDTH = DisplayNameStylesColorPickerConstants.SHEET_CONTENT_MAX_WIDTH;
+const AnalyticEvents = Constants.AnalyticEvents;
 ({ jsx: c9, jsxs: c10 } = Fragment);
 let closure_11 = DisplayNameStylesUtils.hueToGummyColor(0);
 let createStyles = createStyles_mod;
-let obj = { body: obj2, colorRowInset: obj3, optionContainer: { flexDirection: "row", flexWrap: "wrap" }, swatchWrapper: { width: "25%", padding: 2 }, swatch: obj4, swatchSelected: obj5, customSwatchEmpty: obj6, customIconOverlay: obj7, customIconScrim: size };
-obj2 = { paddingHorizontal: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_12, paddingBottom: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_16, alignItems: "center" };
+let obj = { sheetBackground: obj2, body: obj3, sheetContentColumn: { width: "100%", maxWidth: SHEET_CONTENT_MAX_WIDTH }, optionContainer: obj4, swatch: size, selectionRing: obj5 };
+obj2 = { borderTopLeftRadius: nativeDefault.radii.lg, borderTopRightRadius: nativeDefault.radii.lg };
 createStyles = createStyles.createStyles;
-obj3 = { paddingHorizontal: nativeDefault.space.PX_4, alignSelf: "stretch" };
-obj4 = { height: 40, flexDirection: "row", borderRadius: nativeDefault.radii.sm, overflow: "hidden", borderWidth: 2, borderColor: "transparent" };
-obj5 = { borderColor: nativeDefault.colors.BACKGROUND_BRAND };
-obj6 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_NORMAL };
-obj7 = { alignItems: "center", justifyContent: "center" };
+obj3 = { paddingHorizontal: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_4, paddingBottom: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_16, alignItems: "center" };
+obj4 = { flexDirection: "row", flexWrap: "wrap", justifyContent: "center", columnGap: nativeDefault.space.PX_24, rowGap: nativeDefault.space.PX_24 };
+size = { width: 40, height: 40, flexDirection: "row", borderRadius: nativeDefault.radii.sm, overflow: "hidden" };
+obj5 = { borderWidth: 2, borderRadius: nativeDefault.radii.sm, borderColor: nativeDefault.colors.BACKGROUND_BRAND };
 const merged = Object.assign(StyleSheet.absoluteFillObject);
-size = { width: 28, height: 28, borderRadius: nativeDefault.radii.round, backgroundColor: "transparent", alignItems: "center", justifyContent: "center" };
 let closure_12 = createStyles(obj);
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNameStylesGummyColorPickerSheet(selectedColors) {
-  let closure_2;
-  let closure_3;
-  let closure_5;
-  let closure_9;
-  let findIndexResult;
-  let tmp24;
-  let tmp6;
-  let tmp = selectedColors;
-  let obj = selectedColors(576);
-  const cResult = obj.c(72);
-  selectedColors = selectedColors.selectedColors;
-  const onSelectColors = selectedColors.onSelectColors;
-  let tmp4 = closure_12();
-  dependencyMap = tmp4;
-  let obj2 = selectedColors(10696);
-  const displayNameStylesEffectConfig = obj2.useDisplayNameStylesEffectConfig(selectedColors(1411).DisplayNameEffect.GUMMY);
-  if (cResult[0] !== selectedColors) {
-    const tmp7 = selectedColors.length > 0 && !closure_7.some((item) => {
-      const obj = shallowEqual;
-      return obj.areArraysShallowEqual(item, selectedColors);
-    });
-    cResult[0] = selectedColors;
-    cResult[1] = tmp7;
-    tmp6 = tmp7;
-  } else {
-    tmp6 = cResult[1];
-  }
-  _slicedToArray = tmp6;
-  if (cResult[2] === tmp6) {
-    let tmp9;
-    let tmp13;
-    let tmp23;
-    if (cResult[3] === selectedColors) {
-      tmp9 = cResult[4];
-    }
-    let obj3 = initialColor;
-    [initialColor, closure_5] = initialColor.useState(tmp9);
-    const tmp10 = _slicedToArray;
-    if (cResult[5] !== selectedColors) {
-      class M {
-        constructor() {
-          let gummyColors = selectedColors;
-          if (selectedColors.length <= 0) {
-            const obj = DisplayNameStylesUtils;
-            gummyColors = obj.buildGummyColors(closure_11);
-          }
-          return gummyColors;
-        }
-      }
-      cResult[5] = selectedColors;
-      cResult[6] = M;
-      tmp13 = M;
-    } else {
-      class M {
-        constructor() {
-          let gummyColors = selectedColors;
-          if (selectedColors.length <= 0) {
-            const obj = DisplayNameStylesUtils;
-            gummyColors = obj.buildGummyColors(closure_11);
-          }
-          return gummyColors;
-        }
-      }
-    }
-    const tmp10Result = tmp10(obj3.useState(tmp13), 2);
-    const first1 = tmp10Result[0];
-    closure_7 = tmp10Result[1];
-    const tmp17 = onSelectColors(16737);
-    const tmp17Result = tmp17(tmp(1411).DisplayNameEffect.GUMMY);
-    if (cResult[7] !== first1) {
-      class L {
-        constructor(colors) {
-          colors = colors.colors;
-          const obj = shallowEqual;
-          return obj.areArraysShallowEqual(colors, first1);
-        }
-      }
-      cResult[7] = first1;
-      cResult[8] = L;
-    } else {
-      class L {
-        constructor(colors) {
-          colors = colors.colors;
-          const obj = shallowEqual;
-          return obj.areArraysShallowEqual(colors, first1);
-        }
-      }
-    }
-    AnalyticEvents = tmp17Result.findIndex(tmp18);
-    tmp17Result.findIndex(tmp18);
-    class I {
-      constructor() {
-        let result;
-        const tmp = closure_3;
-        if (tmp) {
-          const obj = DisplayNameStylesUtils;
-          result = obj.rebuildGummySourceColor(selectedColors);
-        } else {
-          result = closure_11;
-        }
-        return result;
-      }
-    }
-    if (cResult[9] !== initialColor) {
-      class O {
-        constructor() {
-          obj = closure_0(closure_2[15]);
-          result = obj.triggerHapticFeedback(closure_0(closure_2[15]).HapticFeedbackTypes.IMPACT_LIGHT);
-          obj1 = {
-            initialColor: closure_4,
-            onSelect(color) {
-                      closure_1_5(color);
-                      const obj = selectedColors(closure_2[6]);
-                      closure_1_7(obj.buildGummyColors(color));
-                    }
-          };
-          tmp2 = closure_1(closure_2[16])(obj1);
-          return;
-        }
-      }
-      cResult[9] = initialColor;
-      cResult[10] = O;
-    } else {
-      class O {
-        constructor() {
-          obj = closure_0(closure_2[15]);
-          result = obj.triggerHapticFeedback(closure_0(closure_2[15]).HapticFeedbackTypes.IMPACT_LIGHT);
-          obj1 = {
-            initialColor: closure_4,
-            onSelect(color) {
-                      closure_1_5(color);
-                      const obj = selectedColors(closure_2[6]);
-                      closure_1_7(obj.buildGummyColors(color));
-                    }
-          };
-          tmp2 = closure_1(closure_2[16])(obj1);
-          return;
-        }
-      }
-    }
-    const _Symbol = Symbol;
-    if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-      class O {
-        constructor() {
-          obj = closure_0(closure_2[15]);
-          result = obj.triggerHapticFeedback(closure_0(closure_2[15]).HapticFeedbackTypes.IMPACT_LIGHT);
-          obj1 = {
-            initialColor: closure_4,
-            onSelect(color) {
-                      closure_1_5(color);
-                      const obj = selectedColors(closure_2[6]);
-                      closure_1_7(obj.buildGummyColors(color));
-                    }
-          };
-          tmp2 = closure_1(closure_2[16])(obj1);
-          return;
-        }
-      }
-      cResult[11] = tmp24;
-      tmp23 = tmp24;
-    } else {
-      class O {
-        constructor() {
-          obj = closure_0(closure_2[15]);
-          result = obj.triggerHapticFeedback(closure_0(closure_2[15]).HapticFeedbackTypes.IMPACT_LIGHT);
-          obj1 = {
-            initialColor: closure_4,
-            onSelect(color) {
-                      closure_1_5(color);
-                      const obj = selectedColors(closure_2[6]);
-                      closure_1_7(obj.buildGummyColors(color));
-                    }
-          };
-          tmp2 = closure_1(closure_2[16])(obj1);
-          return;
-        }
-      }
-    }
-    tmp24 = tmp23;
-    const _Symbol2 = Symbol;
-    if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
-      class Y {
-        constructor() {
-          const items = [...closure_7[0]];
-          closure_7(items);
-          closure_5(closure_11);
-        }
-      }
-      cResult[12] = Y;
-    } else {
-      class Y {
-        constructor() {
-          const items = [...closure_7[0]];
-          closure_7(items);
-          closure_5(closure_11);
-        }
-      }
-    }
-    if (cResult[13] === first1) {
-      let tmp27;
-      class Y {
-        constructor() {
-          const items = [...closure_7[0]];
-          closure_7(items);
-          closure_5(closure_11);
-        }
-      }
-      const _Symbol3 = Symbol;
-      const name = displayNameStylesEffectConfig.name;
-      if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
-        class Y {
-          constructor() {
-            const items = [...closure_7[0]];
-            closure_7(items);
-            closure_5(closure_11);
-          }
-        }
-        const stringResult = obj5.string(tmp(1128).t.XqMe3N);
-        cResult[16] = stringResult;
-        tmp27 = stringResult;
-      } else {
-        class Y {
-          constructor() {
-            const items = [...closure_7[0]];
-            closure_7(items);
-            closure_5(closure_11);
-          }
-        }
-      }
-      if (cResult[17] !== tmp26) {
-        class Y {
-          constructor() {
-            const items = [...closure_7[0]];
-            closure_7(items);
-            closure_5(closure_11);
-          }
-        }
-        let obj4 = { variant: "primary", size: "sm", text: tmp27, onPress: tmp26 };
-        cResult[17] = tmp26;
-        cResult[18] = tmp24(tmp(5276).Button, obj4);
-        const tmp30 = tmp24(tmp(5276).Button, obj4);
-      } else {
-        class Y {
-          constructor() {
-            const items = [...closure_7[0]];
-            closure_7(items);
-            closure_5(closure_11);
-          }
-        }
-      }
-      if (cResult[19] === displayNameStylesEffectConfig.name) {
-        class Y {
-          constructor() {
-            const items = [...closure_7[0]];
-            closure_7(items);
-            closure_5(closure_11);
-          }
-        }
-        if (cResult[22] === tmp4.colorRowInset) {
-          class Y {
-            constructor() {
-              const items = [...closure_7[0]];
-              closure_7(items);
-              closure_5(closure_11);
-            }
-          }
-          if (!tmp20) {
-            class Y {
-              constructor() {
-                const items = [...closure_7[0]];
-                closure_7(items);
-                closure_5(closure_11);
-              }
-            }
-          }
-          if (cResult[25] === tmp4.swatch) {
-            let tmp43Result;
-            class Y {
-              constructor() {
-                const items = [...closure_7[0]];
-                closure_7(items);
-                closure_5(closure_11);
-              }
-            }
-            if (cResult[28] !== !tmp20) {
-              class Y {
-                constructor() {
-                  const items = [...closure_7[0]];
-                  closure_7(items);
-                  closure_5(closure_11);
-                }
-              }
-              tmp39[0] = !tmp20;
-              cResult[28] = !tmp20;
-              cResult[29] = tmp39;
-            } else {
-              class Y {
-                constructor() {
-                  const items = [...closure_7[0]];
-                  closure_7(items);
-                  closure_5(closure_11);
-                }
-              }
-            }
-            const _Symbol4 = Symbol;
-            if (cResult[30] === Symbol.for("react.memo_cache_sentinel")) {
-              class Y {
-                constructor() {
-                  const items = [...closure_7[0]];
-                  closure_7(items);
-                  closure_5(closure_11);
-                }
-              }
-              cResult[30] = obj8.string(tmp(1128).t["FHBa/1"]);
-              const stringResult1 = obj8.string(tmp(1128).t["FHBa/1"]);
-            } else {
-              class Y {
-                constructor() {
-                  const items = [...closure_7[0]];
-                  closure_7(items);
-                  closure_5(closure_11);
-                }
-              }
-            }
-            if (cResult[31] === first1) {
-              class Y {
-                constructor() {
-                  const items = [...closure_7[0]];
-                  closure_7(items);
-                  closure_5(closure_11);
-                }
-              }
-            }
-            if (tmp20) {
-              class Y {
-                constructor() {
-                  const items = [...closure_7[0]];
-                  closure_7(items);
-                  closure_5(closure_11);
-                }
-              }
-              const obj6 = { style: tmp4.customSwatchEmpty };
-              tmp43Result = tmp43(closure_5, obj6);
-            } else {
-              class Y {
-                constructor() {
-                  const items = [...closure_7[0]];
-                  closure_7(items);
-                  closure_5(closure_11);
-                }
-              }
-              tmp44[0] = first1;
-              tmp43Result = tmp43(tmp16(15905), tmp44);
-            }
-            cResult[31] = first1;
-            cResult[32] = tmp20;
-            cResult[33] = tmp4.customSwatchEmpty;
-            cResult[34] = tmp43Result;
-          }
-          let items = [tmp4.swatch, !tmp20];
-          cResult[25] = tmp4.swatch;
-          cResult[26] = !tmp20;
-          cResult[27] = items;
-        }
-        const items1 = [, ];
-        ({ colorRowInset: arr2[0], optionContainer: arr2[1] } = tmp4);
-        cResult[22] = tmp4.colorRowInset;
-        cResult[23] = tmp4.optionContainer;
-        cResult[24] = items1;
-      }
-      const obj7 = { title: name, trailing: tmp29 };
-      cResult[19] = displayNameStylesEffectConfig.name;
-      cResult[20] = tmp29;
-      cResult[21] = tmp24(onSelectColors(16733), obj7);
-      const tmp33 = tmp24(onSelectColors(16733), obj7);
-    }
-    class X {
-      constructor() {
-        const obj = HapticUtils;
-        const result = obj.triggerHapticFeedback(HapticUtils.HapticFeedbackTypes.IMPACT_MEDIUM);
-        onSelectColors(first1);
-        const obj2 = AnalyticsUtilsDefault;
-        const obj3 = { default: false, colors: first1 };
-        obj2.track(AnalyticEvents.DISPLAY_NAME_STYLES_COLOR_SELECTED, obj3);
-        const obj4 = ActionSheetActionCreatorsDefault;
-        obj4.hideActionSheet();
-      }
-    }
-    cResult[13] = first1;
-    cResult[14] = onSelectColors;
-    cResult[15] = X;
-  }
-  class I {
-    constructor() {
-      let result;
-      const tmp = closure_3;
-      if (tmp) {
-        const obj = DisplayNameStylesUtils;
-        result = obj.rebuildGummySourceColor(selectedColors);
-      } else {
-        result = closure_11;
-      }
-      return result;
-    }
-  }
-  cResult[2] = tmp6;
-  cResult[3] = selectedColors;
-  cResult[4] = I;
-  tmp9 = I;
-}) : (function DisplayNameStylesGummyColorPickerSheet(selectedColors) {
+size = size_mod;
+let result = size.fileFinishedImporting("modules/display_name_styles/native/DisplayNameStylesGummyColorPickerSheet.tsx");
+
+export default function DisplayNameStylesGummyColorPickerSheet(arg0) {
   let Button;
-  let closure_2;
-  let closure_3;
-  let closure_5;
-  let first1;
+  let Button2;
   let intl;
   let intl2;
-  let intl3;
   let items2;
+  let items3;
   let items4;
-  let items5;
-  let items6;
-  let obj12;
-  let obj3;
   let obj4;
   let obj5;
-  let obj8;
-  let tmp18Result;
-  let tmp19;
-  let tmp22;
-  selectedColors = selectedColors.selectedColors;
-  const onSelectColors = selectedColors.onSelectColors;
-  _slicedToArray = undefined;
-  initialColor = undefined;
-  closure_5 = undefined;
-  first1 = undefined;
-  closure_7 = undefined;
-  let c8;
-  let closure_9;
+  let obj6;
+  let obj9;
+  let onSelectColors;
+  let swatch;
+  let tmp7Result;
+  ({ selectedColors: require, onSelectColors } = arg0);
+  let colors;
   let tmp = closure_12();
   dependencyMap = tmp;
-  const tmp2 = selectedColors;
+  let tmp2 = require;
   let tmp3 = dependencyMap;
-  let obj = selectedColors(10696);
-  let tmp5 = selectedColors.length > 0;
-  const displayNameStylesEffectConfig = obj.useDisplayNameStylesEffectConfig(selectedColors(1411).DisplayNameEffect.GUMMY);
-  if (tmp5) {
-    tmp5 = !closure_7.some((item) => {
-      const obj = shallowEqual;
-      return obj.areArraysShallowEqual(item, selectedColors);
-    });
-  }
-  _slicedToArray = tmp5;
-  [initialColor, closure_5] = initialColor.useState(() => {
+  let obj = useDisplayNameStylesEffectConfigs;
+  const displayNameStylesEffectConfig = obj.useDisplayNameStylesEffectConfig(DisplayNameEffect.DisplayNameEffect.GUMMY);
+  let obj2 = colors;
+  let tmp5 = displayNameStylesEffectConfig;
+  const tmp6 = displayNameStylesEffectConfig(colors.useState(() => {
+    let defaultColors = require;
+    if (require.length <= 0) {
+      defaultColors = displayNameStylesEffectConfig.defaultColors;
+    }
+    return defaultColors;
+  }), 2);
+  colors = tmp6[0];
+  let closure_5 = tmp6[1];
+  const tmp8 = onSelectColors(17333);
+  const tmp8Result = tmp8(DisplayNameEffect.DisplayNameEffect.GUMMY);
+  const findIndexResult = tmp8Result.findIndex((colors) => {
+    colors = colors.colors;
+    const obj = shallowEqual;
+    return obj.areArraysShallowEqual(colors, first);
+  });
+  let c6 = findIndexResult;
+  closure_7 = tmp10;
+  const tmp5Result = tmp5(obj2.useState(() => {
     let result;
-    const tmp = closure_3;
+    const tmp = closure_7;
     if (tmp) {
       const obj = DisplayNameStylesUtils;
-      result = obj.rebuildGummySourceColor(selectedColors);
+      result = obj.rebuildGummySourceColor(first);
     } else {
       result = closure_11;
     }
     return result;
-  });
-  [first1, closure_7] = initialColor.useState(() => {
-    let gummyColors = selectedColors;
-    if (selectedColors.length <= 0) {
-      const obj = DisplayNameStylesUtils;
-      gummyColors = obj.buildGummyColors(closure_11);
-    }
-    return gummyColors;
-  });
-  const tmp12 = onSelectColors(16737);
-  const tmp12Result = tmp12(tmp2(1411).DisplayNameEffect.GUMMY);
-  const findIndexResult = tmp12Result.findIndex((colors) => {
-    colors = colors.colors;
-    const obj = shallowEqual;
-    return obj.areArraysShallowEqual(colors, first1);
-  });
-  c8 = findIndexResult;
-  let items = [initialColor];
-  const callback = initialColor.useCallback(() => {
+  }), 2);
+  const first1 = tmp5Result[0];
+  let closure_9 = tmp5Result[1];
+  let items = [first1];
+  const callback = obj2.useCallback(() => {
     let obj = HapticUtils;
     const result = obj.triggerHapticFeedback(HapticUtils.HapticFeedbackTypes.IMPACT_LIGHT);
     const obj2 = {
-      initialColor,
+      initialColor: first1,
       onSelect(color) {
-        closure_1_5(color);
-        const obj = selectedColors(closure_2[6]);
-        closure_1_7(obj.buildGummyColors(color));
+        closure_1_9(color);
+        const obj = require("DisplayNameStylesUtils");
+        closure_1_5(obj.buildGummyColors(color));
       }
     };
     showGummyCustomColorSheetDefault(obj2);
   }, items);
-  closure_9 = initialColor.useCallback((arg0) => {
+  let closure_10 = obj2.useCallback((arg0) => {
     const items = [...arg0];
-    closure_7(items);
+    closure_5(items);
   }, []);
-  const items1 = [first1, onSelectColors];
-  const callback1 = initialColor.useCallback(() => {
+  const items1 = [colors, onSelectColors];
+  const callback1 = obj2.useCallback(() => {
     const items = [...closure_7[0]];
-    closure_7(items);
-    closure_5(closure_11);
+    closure_5(items);
+    closure_9(closure_11);
   }, []);
-  const callback2 = initialColor.useCallback(() => {
+  const callback2 = obj2.useCallback(() => {
     const obj = HapticUtils;
     const result = obj.triggerHapticFeedback(HapticUtils.HapticFeedbackTypes.IMPACT_MEDIUM);
-    onSelectColors(first1);
+    onSelectColors(colors);
     const obj2 = AnalyticsUtilsDefault;
-    const obj3 = { default: false, colors: first1 };
+    const obj3 = { default: false, colors };
     obj2.track(AnalyticEvents.DISPLAY_NAME_STYLES_COLOR_SELECTED, obj3);
     const obj4 = ActionSheetActionCreatorsDefault;
     obj4.hideActionSheet();
   }, items1);
-  let obj2 = { header: closure_9(tmp19, obj3), children: closure_10(closure_5, obj5) };
-  BottomSheet = tmp2(5297).BottomSheet;
-  obj3 = { title: displayNameStylesEffectConfig.name, trailing: closure_9(Button, obj4) };
-  obj4 = { variant: "primary", size: "sm", text: intl.string(tmp2(1128).t.XqMe3N), onPress: callback2 };
-  tmp19 = onSelectColors(16733);
-  Button = tmp2(5276).Button;
-  intl = tmp2(1128).intl;
-  const obj6 = { style: items2, children: items5 };
+  let obj3 = { backgroundStyles: tmp.sheetBackground, header: closure_9(tmp7Result, obj4), children: closure_10(closure_5, obj6) };
+  BottomSheet = Sheet_BottomSheet.BottomSheet;
+  obj4 = { title: displayNameStylesEffectConfig.name, trailing: closure_9(Button, obj5) };
+  obj5 = { variant: "primary", size: "sm", text: intl.string(intl3.t.XqMe3N), onPress: callback2 };
+  tmp7Result = onSelectColors(17328);
+  Button = components_Button_Button.Button;
+  intl = intl3.intl;
+  const obj7 = { style: items2, children: items3 };
   items2 = [, ];
-  obj5 = { style: tmp.body, children: items6 };
-  ({ colorRowInset: arr5[0], optionContainer: arr5[1] } = tmp);
-  const items3 = [tmp.swatch, ];
-  let swatchSelected = tmp23;
-  const obj7 = { style: tmp.swatchWrapper, children: closure_10(tmp22, obj8) };
-  const tmp11 = onSelectColors;
-  tmp22 = first1;
-  if (findIndexResult < 0) {
-    swatchSelected = tmp.swatchSelected;
+  obj6 = { style: tmp.body, children: items4 };
+  ({ sheetContentColumn: arr5[0], optionContainer: arr5[1] } = tmp);
+  let tmp21;
+  const tmp7Result2 = onSelectColors(17337);
+  if (colors.length > 0 && findIndexResult < 0) {
+    tmp21 = colors;
   }
-  items3[1] = swatchSelected;
-  obj8 = { style: items3, onPress: callback, accessibilityRole: "button", accessibilityState: { selected: findIndexResult < 0 }, accessibilityLabel: intl2.string(tmp2(1128).t["FHBa/1"]), children: items4 };
-  intl2 = tmp2(1128).intl;
-  if (findIndexResult >= 0) {
-    const obj9 = { style: tmp.customSwatchEmpty };
-    tmp18Result = tmp18(tmp21, obj9);
-  } else {
-    const obj10 = { colors: first1 };
-    tmp18Result = tmp18(tmp11(15905), obj10);
-  }
-  items4 = [tmp18Result, ];
-  const obj11 = { style: tmp.customIconOverlay, pointerEvents: "none", children: closure_9(closure_5, obj12) };
-  obj12 = { style: tmp.customIconScrim, children: closure_9(tmp2(10152).PencilIcon, { color: "white", size: "sm" }) };
-  items4[1] = closure_9(closure_5, obj11);
-  items5 = [
-    closure_9(closure_5, obj7),
-    tmp12Result.map((colors, index) => {
-      let obj2;
-      let tmp4;
-      colors = colors.colors;
-      const items = [closure_2.swatch, ];
-      let swatchSelected = tmp;
-      const a11yLabel = colors.a11yLabel;
-      const obj = { style: closure_2.swatchWrapper, children: closure_9(tmp4, obj2) };
-      const tmp3 = closure_5;
-      tmp4 = first1;
-      if (c8 === index) {
-        swatchSelected = closure_2.swatchSelected;
-      }
-      items[1] = swatchSelected;
-      obj2 = {
-        style: items,
+  items3 = [
+    closure_9(tmp7Result2, { activeColors: tmp21, isSelected: colors.length > 0 && findIndexResult < 0, onPress: callback, showGummyStripes: true }),
+    tmp8Result.map((accessibilityLabel, index) => {
+      let items;
+      colors = accessibilityLabel.colors;
+      let tmp = c6 === index;
+      const obj = {
+        style: swatch.swatch,
         onPress() {
-          return closure_9(colors);
+          return closure_10(colors);
         },
         accessibilityRole: "button",
-        accessibilityState: { selected: c8 === index },
-        accessibilityLabel: a11yLabel,
-        children: closure_9(onSelectColors(closure_2[22]), { colors })
+        accessibilityState: { selected: tmp },
+        accessibilityLabel: accessibilityLabel.a11yLabel,
+        children: items
       };
-      return closure_9(tmp3, obj, index);
+      items = [closure_9(onSelectColors(swatch[23]), { colors }), ];
+      const tmp2 = closure_10;
+      const tmp3 = c6;
+      const tmp4 = swatch;
+      const tmp5 = closure_9;
+      if (tmp) {
+        const obj2 = { style: tmp4.selectionRing, pointerEvents: "none" };
+        tmp = tmp5(closure_5, obj2);
+      }
+      items[1] = tmp;
+      return tmp2(tmp3, obj, index);
     })
   ];
-  items6 = [closure_10(closure_5, obj6), ];
-  const obj13 = { text: intl3.string(tmp2(1128).t.yBZMsQ), onPress: callback1, variant: "secondary" };
-  const Button2 = tmp2(5276).Button;
-  intl3 = tmp2(1128).intl;
-  items6[1] = closure_9(Button2, obj13);
-  return closure_9(BottomSheet, obj2);
-});
-size = size_mod;
-let result = size.fileFinishedImporting("modules/display_name_styles/native/DisplayNameStylesGummyColorPickerSheet.tsx");
-
-export default tmp6;
+  items4 = [closure_10(closure_5, obj7), ];
+  const obj8 = { style: tmp.sheetContentColumn, children: closure_9(Button2, obj9) };
+  obj9 = { text: intl2.string(intl3.t.yBZMsQ), onPress: callback1, variant: "secondary", size: "md", grow: true };
+  Button2 = components_Button_Button.Button;
+  intl2 = intl3.intl;
+  items4[1] = closure_9(closure_5, obj8);
+  return closure_9(BottomSheet, obj3);
+};

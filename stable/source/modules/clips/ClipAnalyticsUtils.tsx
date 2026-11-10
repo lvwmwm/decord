@@ -1,21 +1,21 @@
-// Module ID: 7845
-// Function ID: 7846
+// Module ID: 7884
+// Function ID: 7885
 // Name: ClipAnalyticsUtils
-// Dependencies: [5911, 6674, 5746, 7846, 2020, 8180, 1087, 6677, 5932, 5836, 1267, 2]
+// Dependencies: [5943, 6714, 5764, 7885, 2012, 8214, 1072, 6717, 5950, 5854, 1252, 2]
 // Exports: getClipBaseProperties, getClipContextProperties, getClipSaveFailureAnalytics, getClipSavedAnalytics, getClipType, getPreSaveClipAnalytics, trackClipEdited
 
-// Module 7845 (ClipAnalyticsUtils)
-import Constants from "Constants" /* 1087 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import isEqualDefault from "isEqual" /* 5836 */;
-import VideoQualityStats from "VideoQualityStats" /* 5932 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 6677 */;
-import ApplicationStreamingSettingsStore from "ApplicationStreamingSettingsStore" /* 5911 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6674 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5746 */;
-import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 7846 */;
-import ClipsStore from "ClipsStore" /* 2020 */;
-import ClipsConstants from "ClipsConstants" /* 8180 */;
+// Module 7884 (ClipAnalyticsUtils)
+import Constants from "Constants" /* 1072 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import isEqualDefault from "isEqual" /* 5854 */;
+import VideoQualityStats from "VideoQualityStats" /* 5950 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 6717 */;
+import ApplicationStreamingSettingsStore from "ApplicationStreamingSettingsStore" /* 5943 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6714 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5764 */;
+import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 7885 */;
+import ClipsStore from "ClipsStore" /* 2012 */;
+import ClipsConstants from "ClipsConstants" /* 8214 */;
 import size from "module_2" /* 2 */;
 
 let map;
@@ -76,69 +76,69 @@ function getPostSaveClipAnalytics(arg0, framesEncodedByEncoder) {
   if (num2 == null) {
     num2 = 0;
   }
-  num3 = map.get(tmp3(5932).Encoders.NVIDIA_DIRECT_3D);
+  num3 = map.get(tmp3(5950).Encoders.NVIDIA_DIRECT_3D);
   if (num3 == null) {
     num3 = 0;
   }
-  num4 = map.get(tmp3(5932).Encoders.OPENH264);
+  num4 = map.get(tmp3(5950).Encoders.OPENH264);
   if (num4 == null) {
     num4 = 0;
   }
-  num5 = map.get(tmp3(5932).Encoders.VIDEOTOOLBOX);
+  num5 = map.get(tmp3(5950).Encoders.VIDEOTOOLBOX);
   if (num5 == null) {
     num5 = 0;
   }
-  num6 = map.get(tmp3(5932).Encoders.AMD_DIRECT_3D);
+  num6 = map.get(tmp3(5950).Encoders.AMD_DIRECT_3D);
   if (num6 == null) {
     num6 = 0;
   }
-  num7 = map.get(tmp3(5932).Encoders.AMD_VAAPI);
+  num7 = map.get(tmp3(5950).Encoders.AMD_VAAPI);
   if (num7 == null) {
     num7 = 0;
   }
-  num8 = map.get(tmp3(5932).Encoders.INTEL);
+  num8 = map.get(tmp3(5950).Encoders.INTEL);
   if (num8 == null) {
     num8 = 0;
   }
-  num9 = map.get(tmp3(5932).Encoders.INTEL_DIRECT_3D);
+  num9 = map.get(tmp3(5950).Encoders.INTEL_DIRECT_3D);
   if (num9 == null) {
     num9 = 0;
   }
-  num10 = map.get(tmp3(5932).Encoders.WMF_DIRECT_3D_INTEL);
+  num10 = map.get(tmp3(5950).Encoders.WMF_DIRECT_3D_INTEL);
   if (num10 == null) {
     num10 = 0;
   }
-  num11 = map.get(tmp3(5932).Encoders.WMF_DIRECT_3D_NVIDIA);
+  num11 = map.get(tmp3(5950).Encoders.WMF_DIRECT_3D_NVIDIA);
   if (num11 == null) {
     num11 = 0;
   }
-  num12 = map.get(tmp3(5932).Encoders.WMF_DIRECT_3D_AMD);
+  num12 = map.get(tmp3(5950).Encoders.WMF_DIRECT_3D_AMD);
   if (num12 == null) {
     num12 = 0;
   }
-  let num13 = map.get(tmp3(5932).Encoders.WMF_DIRECT_3D);
+  let num13 = map.get(tmp3(5950).Encoders.WMF_DIRECT_3D);
   if (num13 == null) {
     num13 = 0;
   }
-  let num14 = map.get(tmp3(5932).Encoders.WMF_DIRECT_3D_INTEL);
+  let num14 = map.get(tmp3(5950).Encoders.WMF_DIRECT_3D_INTEL);
   if (num14 == null) {
     num14 = 0;
   }
   const sum = num13 + num14;
-  let num15 = map.get(tmp3(5932).Encoders.WMF_DIRECT_3D_NVIDIA);
+  let num15 = map.get(tmp3(5950).Encoders.WMF_DIRECT_3D_NVIDIA);
   if (num15 == null) {
     num15 = 0;
   }
   sum1 = sum + num15;
-  num16 = map.get(tmp3(5932).Encoders.WMF_DIRECT_3D_AMD);
+  num16 = map.get(tmp3(5950).Encoders.WMF_DIRECT_3D_AMD);
   if (num16 == null) {
     num16 = 0;
   }
-  num17 = map.get(tmp3(5932).Encoders.UNCATEGORIZED);
+  num17 = map.get(tmp3(5950).Encoders.UNCATEGORIZED);
   if (num17 == null) {
     num17 = 0;
   }
-  num18 = map.get(tmp3(5932).Encoders.UNKNOWN);
+  num18 = map.get(tmp3(5950).Encoders.UNKNOWN);
   if (num18 == null) {
     num18 = 0;
   }
@@ -151,7 +151,7 @@ function getPostSaveClipAnalytics(arg0, framesEncodedByEncoder) {
 const AnalyticEvents = Constants.AnalyticEvents;
 let result = size.fileFinishedImporting("modules/clips/ClipAnalyticsUtils.tsx");
 
-export const getClipType = function getClipType(decision) {
+export function getClipType(decision) {
   decision = decision.decision;
   let type;
   if (decision != null) {
@@ -174,8 +174,8 @@ export const getClipType = function getClipType(decision) {
     }
     return "auto_ml";
   }
-};
-export const getClipBaseProperties = function getClipBaseProperties(clip) {
+}
+export function getClipBaseProperties(clip) {
   const decision = clip.decision;
   let type;
   if (decision != null) {
@@ -197,8 +197,8 @@ export const getClipBaseProperties = function getClipBaseProperties(clip) {
     }
   }
   return { clip_type: str, num_clip_participants: clip.users.length, clip_session_id: clip.gameSessionId, is_candidate: clip.isCandidate };
-};
-export const getClipContextProperties = function getClipContextProperties() {
+}
+export function getClipContextProperties() {
   let id;
   const obj = { clip_runtime, current_clip_session_id: id };
   const activeClipsSession = ClipsStore.getActiveClipsSession();
@@ -207,9 +207,9 @@ export const getClipContextProperties = function getClipContextProperties() {
     id = activeClipsSession.id;
   }
   return obj;
-};
+}
 export { getClipSignalTypes };
-export const getPreSaveClipAnalytics = function getPreSaveClipAnalytics(decision) {
+export function getPreSaveClipAnalytics(decision) {
   let id;
   let mediaSessionId;
   let rTCConnectionId;
@@ -260,9 +260,9 @@ export const getPreSaveClipAnalytics = function getPreSaveClipAnalytics(decision
   }
   ({ guildId: obj2.guild_id, channelId: obj2.channel_id, applicationId: obj2.application_id, applicationName: obj2.application_name, id: obj2.clip_uuid } = decision);
   return obj3;
-};
+}
 export { getPostSaveClipAnalytics };
-export const getClipSavedAnalytics = function getClipSavedAnalytics(arg0, framesEncodedByEncoder, arg2, arg3) {
+export function getClipSavedAnalytics(arg0, framesEncodedByEncoder, arg2, arg3) {
   const tmp = getPostSaveClipAnalytics(arg0, framesEncodedByEncoder);
   ({ clipSaveTimeMs: tmp.clip_save_time_ms, clipSizeBytes: tmp.clip_size_bytes } = framesEncodedByEncoder);
   tmp.clip_signal_types = getClipSignalTypes(arg2);
@@ -271,13 +271,13 @@ export const getClipSavedAnalytics = function getClipSavedAnalytics(arg0, frames
     const merged = Object.assign(tmp, arg3);
   }
   return tmp;
-};
-export const getClipSaveFailureAnalytics = function getClipSaveFailureAnalytics(arg0, framesEncodedByEncoder) {
+}
+export function getClipSaveFailureAnalytics(arg0, framesEncodedByEncoder) {
   const tmp = getPostSaveClipAnalytics(arg0, framesEncodedByEncoder);
   ({ errorAt: tmp.error_at, errorMessage: tmp.error_message } = framesEncodedByEncoder);
   return tmp;
-};
-export const trackClipEdited = function trackClipEdited(editMetadata, isFavorite) {
+}
+export function trackClipEdited(editMetadata, isFavorite) {
   let applicationAudio;
   let end;
   let id;
@@ -423,4 +423,4 @@ export const trackClipEdited = function trackClipEdited(editMetadata, isFavorite
     const merged1 = Object.assign(obj);
     track(CLIP_EDITED, obj3);
   }
-};
+}

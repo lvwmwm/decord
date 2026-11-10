@@ -1,10 +1,10 @@
 // Module ID: 2407
 // Function ID: 2408
 // Name: AssetRegistry
-// Dependencies: [1134]
+// Dependencies: [1119]
 
 // Module 2407 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1134 */;
+import AssetRegistry from "AssetRegistry" /* 1119 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/game_organization_invites", scales: [1], hash: "5a9c65c01927a1b376bc364e5a2fde8e", name: "GameOrganizationInvitesUntranslated.compiled.messages", type: "jsona" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/game_organizations", scales: [1], hash: "8a1d9bc2bec66a7398952036eadfb1be", name: "GameOrganizations.compiled.messages", type: "jsona" });

@@ -1,9 +1,9 @@
-// Module ID: 15910
-// Function ID: 15911
-// Name: hexagon_campaign/HexagonCampaignPromoGradient
+// Module ID: 16479
+// Function ID: 16480
+// Name: HexagonCampaignPromoGradient
 // Dependencies: [2]
 
-// Module 15910 (hexagon_campaign/HexagonCampaignPromoGradient)
+// Module 16479 (HexagonCampaignPromoGradient)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/hexagon_campaign/HexagonCampaignPromoGradient.tsx");

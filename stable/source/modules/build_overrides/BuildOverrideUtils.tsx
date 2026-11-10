@@ -1,18 +1,18 @@
-// Module ID: 1381
-// Function ID: 1382
+// Module ID: 1372
+// Function ID: 1373
 // Name: BuildOverrideUtils
-// Dependencies: [1382, 1087, 1383, 1384, 1386, 1297, 1389, 1391, 2]
+// Dependencies: [1373, 1072, 1374, 1375, 1377, 1282, 1380, 1382, 2]
 // Exports: getAPIEndpoint, getBuildOverride, getBuildOverrideExperiments, getBuildOverrideMeta, isBuildOverrideLink, isManualBuildOverrideLink, manualOverrideLinkMeta, probablyHasBuildOverride, validateURL
 
-// Module 1381 (BuildOverrideUtils)
-import Constants from "Constants" /* 1087 */;
-import HTTPUtils from "HTTPUtils" /* 1297 */;
-import BuildOverrideConstants from "BuildOverrideConstants" /* 1382 */;
-import URLUtilsDefault from "URLUtils" /* 1386 */;
-import urlParseAll from "urlParse" /* 1389 */;
-import _modDef1391 from "module_1391" /* 1391 */;
-import react_native_mod from "react-native" /* 1383 */;
-import PlatformUtils from "PlatformUtils" /* 1384 */;
+// Module 1372 (BuildOverrideUtils)
+import Constants from "Constants" /* 1072 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
+import BuildOverrideConstants from "BuildOverrideConstants" /* 1373 */;
+import URLUtilsDefault from "URLUtils" /* 1377 */;
+import urlParseAll from "urlParse" /* 1380 */;
+import _modDef1382 from "module_1382" /* 1382 */;
+import react_native_mod from "react-native" /* 1374 */;
+import PlatformUtils from "PlatformUtils" /* 1375 */;
 import size from "module_2" /* 2 */;
 
 let Version;
@@ -60,7 +60,7 @@ const result = size.fileFinishedImporting("modules/build_overrides/BuildOverride
 
 export const APP_VERSION = Version;
 export { getAPIEndpoint };
-export const getBuildOverride = function getBuildOverride() {
+export function getBuildOverride() {
   let obj3;
   let resolved;
   const obj = URLUtilsDefault;
@@ -80,8 +80,8 @@ export const getBuildOverride = function getBuildOverride() {
     resolved = value.then((body) => body.body || null, () => null);
   }
   return resolved;
-};
-export const getBuildOverrideMeta = function getBuildOverrideMeta(url) {
+}
+export function getBuildOverrideMeta(url) {
   let obj3;
   let obj5;
   const isMatch = null != url && regExp1.test(url);
@@ -124,15 +124,15 @@ export const getBuildOverrideMeta = function getBuildOverrideMeta(url) {
     }
     return resolved;
   }
-};
-export const probablyHasBuildOverride = function probablyHasBuildOverride() {
+}
+export function probablyHasBuildOverride() {
   return -1 !== cookie.indexOf("" + closure_4 + "=");
-};
-export const getBuildOverrideExperiments = function getBuildOverrideExperiments() {
+}
+export function getBuildOverrideExperiments() {
   try {
     let obj2;
     const _window = window;
-    const obj = _modDef1391;
+    const obj = _modDef1382;
     const tmp5 = obj.parse(window.document.cookie)[closure_4];
     if (null == tmp5) {
       obj2 = {};
@@ -145,14 +145,14 @@ export const getBuildOverrideExperiments = function getBuildOverrideExperiments(
   } catch (err) {
     return {};
   }
-};
-export const isBuildOverrideLink = function isBuildOverrideLink(target) {
+}
+export function isBuildOverrideLink(target) {
   const isMatch = null != target && regExp.test(target);
   return isMatch;
-};
+}
 export { isManualBuildOverrideLink };
 export { manualOverrideLinkMeta };
-export const validateURL = function validateURL(url) {
+export function validateURL(url) {
   let obj3;
   const isMatch = null != url && regExp1.test(url);
   if (isMatch) {
@@ -184,4 +184,4 @@ export const validateURL = function validateURL(url) {
       return null;
     }
   }
-};
+}

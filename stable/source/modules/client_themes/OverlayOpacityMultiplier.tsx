@@ -1,15 +1,15 @@
-// Module ID: 5177
-// Function ID: 5178
+// Module ID: 5193
+// Function ID: 5194
 // Name: OverlayOpacityMultiplier
 // Dependencies: [2]
 // Exports: normalizeOverlayOpacityMultiplier
 
-// Module 5177 (OverlayOpacityMultiplier)
+// Module 5193 (OverlayOpacityMultiplier)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/client_themes/OverlayOpacityMultiplier.tsx");
 
-export const normalizeOverlayOpacityMultiplier = function normalizeOverlayOpacityMultiplier(unsupported_overlayOpacityMultiplier) {
+export function normalizeOverlayOpacityMultiplier(unsupported_overlayOpacityMultiplier) {
   let num = unsupported_overlayOpacityMultiplier.unsupported_overlayOpacityMultiplier;
   if (num == null) {
     num = 1;
@@ -21,4 +21,4 @@ export const normalizeOverlayOpacityMultiplier = function normalizeOverlayOpacit
     num2 = Math.min(1, Math.max(0, num));
   }
   return num2;
-};
+}

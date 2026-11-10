@@ -1,21 +1,21 @@
-// Module ID: 14885
-// Function ID: 14886
+// Module ID: 15425
+// Function ID: 15426
 // Name: PremiumPlanSelectStore
-// Dependencies: [570, 1274, 2]
+// Dependencies: [560, 1259, 2]
 // Exports: setIsPurchasing
 
-// Module 14885 (PremiumPlanSelectStore)
-import module_570 from "module_570" /* 570 */;
+// Module 15425 (PremiumPlanSelectStore)
+import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, dependencyMap;
 
-const usePremiumPlanSelectStore = module_570.create(() => ({ isPurchasing: false, purchasingProductId: null }));
+const usePremiumPlanSelectStore = module_560.create(() => ({ isPurchasing: false, purchasingProductId: null }));
 const result = size.fileFinishedImporting("modules/premium/native/PremiumPlanSelectStore.tsx");
 
 export { usePremiumPlanSelectStore };
-export const setIsPurchasing = function setIsPurchasing(isPurchasing) {
+export function setIsPurchasing(isPurchasing) {
   let purchasingProductId;
   _require = isPurchasing;
   let tmp = arg1;
@@ -28,4 +28,4 @@ export const setIsPurchasing = function setIsPurchasing(isPurchasing) {
     const obj = { isPurchasing, purchasingProductId };
     return obj.setState(obj);
   });
-};
+}

@@ -1,10 +1,10 @@
-// Module ID: 4962
-// Function ID: 4963
+// Module ID: 4973
+// Function ID: 4974
 // Name: getBurstAnimation
-// Dependencies: [5, 4963, 4964, 4965, 4966, 4967, 4968, 4969, 4970, 4971, 4972, 4973, 4974, 4975, 4976, 4977, 4978, 4979, 4980, 4981, 4982, 4983, 4984, 4985, 4986, 4987, 4988, 4989, 4990, 4991, 4992, 4993, 4994, 4995, 4996, 4997, 4998, 4999, 2]
+// Dependencies: [5, 4974, 4975, 4976, 4977, 4978, 4979, 4980, 4981, 4982, 4983, 4984, 4985, 4986, 4987, 4988, 4989, 4990, 4991, 4992, 4993, 4994, 4995, 4996, 4997, 4998, 4999, 5000, 5001, 5002, 5003, 5004, 5005, 5006, 5007, 5008, 5009, 5010, 2]
 // Exports: getBurstAnimation
 
-// Module 4962 (getBurstAnimation)
+// Module 4973 (getBurstAnimation)
 import _asyncToGeneratorDefault from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -13,66 +13,11 @@ let closure_5;
 
 const obj = {
   load() {
-    return require("module_4963");
+    return require("module_4974");
   }
 };
 const items = [
   obj,
-  {
-    load() {
-      return require("module_4964");
-    }
-  },
-  {
-    load() {
-      return require("module_4965");
-    }
-  },
-  {
-    load() {
-      return require("module_4966");
-    }
-  },
-  {
-    load() {
-      return require("module_4967");
-    }
-  },
-  {
-    load() {
-      return require("module_4968");
-    }
-  },
-  {
-    load() {
-      return require("module_4969");
-    }
-  },
-  {
-    load() {
-      return require("module_4970");
-    }
-  },
-  {
-    load() {
-      return require("module_4971");
-    }
-  },
-  {
-    load() {
-      return require("module_4972");
-    }
-  },
-  {
-    load() {
-      return require("module_4973");
-    }
-  },
-  {
-    load() {
-      return require("module_4974");
-    }
-  },
   {
     load() {
       return require("module_4975");
@@ -102,15 +47,12 @@ const items = [
     load() {
       return require("module_4980");
     }
-  }
-];
-const obj2 = {
-  load() {
-    return require("module_4981");
-  }
-};
-const items1 = [
-  obj2,
+  },
+  {
+    load() {
+      return require("module_4981");
+    }
+  },
   {
     load() {
       return require("module_4982");
@@ -160,12 +102,15 @@ const items1 = [
     load() {
       return require("module_4991");
     }
-  },
-  {
-    load() {
-      return require("module_4992");
-    }
-  },
+  }
+];
+const obj2 = {
+  load() {
+    return require("module_4992");
+  }
+};
+const items1 = [
+  obj2,
   {
     load() {
       return require("module_4993");
@@ -195,6 +140,61 @@ const items1 = [
     load() {
       return require("module_4998");
     }
+  },
+  {
+    load() {
+      return require("module_4999");
+    }
+  },
+  {
+    load() {
+      return require("module_5000");
+    }
+  },
+  {
+    load() {
+      return require("module_5001");
+    }
+  },
+  {
+    load() {
+      return require("module_5002");
+    }
+  },
+  {
+    load() {
+      return require("module_5003");
+    }
+  },
+  {
+    load() {
+      return require("module_5004");
+    }
+  },
+  {
+    load() {
+      return require("module_5005");
+    }
+  },
+  {
+    load() {
+      return require("module_5006");
+    }
+  },
+  {
+    load() {
+      return require("module_5007");
+    }
+  },
+  {
+    load() {
+      return require("module_5008");
+    }
+  },
+  {
+    load() {
+      return require("module_5009");
+    }
   }
 ];
 let closure_0 = _asyncToGeneratorDefault((arg0, arg1, arg2) => {
@@ -215,7 +215,7 @@ let closure_0 = _asyncToGeneratorDefault((arg0, arg1, arg2) => {
       } else if (arg0 === 2) {
         return { value, done: true };
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -238,7 +238,7 @@ let closure_0 = _asyncToGeneratorDefault((arg0, arg1, arg2) => {
             burstAnimationHash = undefined;
             c6 = 1;
             c7 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "flexDirection", done: true };
           }
         } else if (arg0 === 1) {
           c7 = 3;
@@ -265,6 +265,6 @@ let closure_0 = _asyncToGeneratorDefault((arg0, arg1, arg2) => {
 });
 const result = size.fileFinishedImporting("modules/messages/getBurstAnimation.native.tsx");
 
-export const getBurstAnimation = function getBurstAnimation() {
+export function getBurstAnimation() {
   return closure_0(...arguments);
-};
+}

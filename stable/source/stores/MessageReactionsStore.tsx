@@ -1,16 +1,16 @@
-// Module ID: 8317
-// Function ID: 8318
+// Module ID: 8404
+// Function ID: 8405
 // Name: MessageReactionsStore
-// Dependencies: [4936, 1406, 4855, 1392, 504, 8318, 584, 2]
+// Dependencies: [4947, 1397, 4863, 1383, 504, 8405, 572, 2]
 
-// Module 8317 (MessageReactionsStore)
+// Module 8404 (MessageReactionsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import ReactionActionCreatorsAll from "ReactionActionCreators" /* 8318 */;
-import LurkingStore from "LurkingStore" /* 4936 */;
-import UserRecord from "UserRecord" /* 1406 */;
-import ChannelStore from "ChannelStore" /* 4855 */;
-import UserStore from "UserStore" /* 1392 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import ReactionActionCreatorsAll from "ReactionActionCreators" /* 8405 */;
+import LurkingStore from "LurkingStore" /* 4947 */;
+import UserRecord from "UserRecord" /* 1397 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import UserStore from "UserStore" /* 1383 */;
 import size from "module_2" /* 2 */;
 
 let closure_6, map, set;

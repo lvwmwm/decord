@@ -1,16 +1,16 @@
-// Module ID: 18762
-// Function ID: 18763
+// Module ID: 19374
+// Function ID: 19375
 // Name: GuildLimitedAccessUtils
-// Dependencies: [1087, 2]
+// Dependencies: [1072, 2]
 // Exports: isLimitedAccessErrorCode
 
-// Module 18762 (GuildLimitedAccessUtils)
-import Constants from "Constants" /* 1087 */;
+// Module 19374 (GuildLimitedAccessUtils)
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 const AbortCodes = Constants.AbortCodes;
 const result = size.fileFinishedImporting("modules/guild_limited_access/GuildLimitedAccessUtils.tsx");
 
-export const isLimitedAccessErrorCode = function isLimitedAccessErrorCode(arg0, arg1) {
+export function isLimitedAccessErrorCode(arg0, arg1) {
   return 403 === arg0 && null != arg1 && arg1 >= AbortCodes.GUILD_LIMITED_ACCESS_DEFAULT && arg1 <= AbortCodes.GUILD_LIMITED_ACCESS_MAX;
-};
+}

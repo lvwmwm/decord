@@ -1,53 +1,19 @@
-// Module ID: 12171
-// Function ID: 12172
+// Module ID: 12476
+// Function ID: 12477
 // Name: useIsAppDM
-// Dependencies: [1392, 558, 576, 573, 2]
+// Dependencies: [1383, 563, 2]
+// Exports: default
 
-// Module 12171 (useIsAppDM)
-import UserStore from "UserStore" /* 1392 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 12476 (useIsAppDM)
+import UserStore from "UserStore" /* 1383 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsAppDM(arg0) {
-  let closure_0;
-  let first;
-  let tmp6;
-  _require = arg0;
-  let tmp = _require;
-  const obj = require("react");
-  const cResult = obj.c(3);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [UserStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function o() {
-      let tmp = null != closure_0 && obj.isDM() && 1 === obj.recipients.length;
-      if (tmp) {
-        const user = UserStore.getUser(obj.recipients[0]);
-        let bot;
-        if (user != null) {
-          bot = user.bot;
-        }
-        tmp = true === bot;
-      }
-      return tmp;
-    };
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-  }
-  const tmpResult = tmp(573);
-  return tmpResult.useStateFromStores(first, tmp6);
-}) : (function useIsAppDM(arg0) {
+const result = size.fileFinishedImporting("modules/app_dms/useIsAppDM.tsx");
+
+export default function useIsAppDM(arg0) {
   let closure_0;
   _require = arg0;
   const obj = require("useStateFromStores");
@@ -64,7 +30,4 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsAppDM
     }
     return tmp;
   });
-});
-const result = size.fileFinishedImporting("modules/app_dms/useIsAppDM.tsx");
-
-export default tmp2;
+};

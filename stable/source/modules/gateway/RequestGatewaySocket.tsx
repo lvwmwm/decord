@@ -1,12 +1,12 @@
-// Module ID: 10132
-// Function ID: 10133
+// Module ID: 10212
+// Function ID: 10213
 // Name: RequestGatewaySocket
-// Dependencies: [5, 1087, 7614, 1267, 2]
+// Dependencies: [5, 1072, 7652, 1252, 2]
 // Exports: describeConnectionReasons, isRequested, recordStartHeadlessTask, startBridgeTo, withRequest
 
-// Module 10132 (RequestGatewaySocket)
-import Constants from "Constants" /* 1087 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
+// Module 10212 (RequestGatewaySocket)
+import Constants from "Constants" /* 1072 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -58,7 +58,7 @@ let obj = function _withRequest() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c5;
@@ -121,13 +121,13 @@ let c6 = true;
 const map = new Map();
 let result = size.fileFinishedImporting("modules/gateway/RequestGatewaySocket.tsx");
 
-export const isRequested = function isRequested() {
+export function isRequested() {
   return map.size > 0 || c6;
-};
+}
 export function recordStartHeadlessTask() {
   c6 = false;
 }
-export const describeConnectionReasons = function describeConnectionReasons() {
+export function describeConnectionReasons() {
   const tmp = c6 ? closure_5 : [];
   const items = [...tmp, ...map.keys()];
   const sorted = items.sort();
@@ -136,9 +136,9 @@ export const describeConnectionReasons = function describeConnectionReasons() {
     str = sorted.join(",");
   }
   return str;
-};
+}
 export { setRequestedBy };
-export const startBridgeTo = function startBridgeTo(arg0) {
+export function startBridgeTo(arg0) {
   const combined = "BRIDGE:" + arg0;
   let closure_1 = performance.now();
   obj = map;
@@ -148,7 +148,7 @@ export const startBridgeTo = function startBridgeTo(arg0) {
     num = 0;
   }
   let result = obj.set(combined, num + 1);
-  let obj2 = combined(7614);
+  let obj2 = combined(7652);
   obj2.requestSafeIdleCallback(() => {
     if (map.has(combined)) {
       const _performance = performance;
@@ -170,8 +170,8 @@ export const startBridgeTo = function startBridgeTo(arg0) {
       const result = obj.set(tmp, diff);
     }
   }, { timeout: 5000 });
-};
+}
 export { stopRequest };
-export const withRequest = function withRequest() {
+export function withRequest() {
   return obj(...arguments);
-};
+}

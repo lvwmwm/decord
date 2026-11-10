@@ -1,16 +1,16 @@
-// Module ID: 6916
-// Function ID: 6917
+// Module ID: 6958
+// Function ID: 6959
 // Name: ExpressionSourceRecord
-// Dependencies: [5, 1407, 1087, 1297, 1417, 4872, 4869, 2]
+// Dependencies: [5, 1398, 1072, 1282, 1409, 4880, 4877, 2]
 
-// Module 6916 (ExpressionSourceRecord)
-import HTTPUtils from "HTTPUtils" /* 1297 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
-import GuildRecordUtils from "GuildRecordUtils" /* 4869 */;
-import SetUtils from "SetUtils" /* 4872 */;
+// Module 6958 (ExpressionSourceRecord)
+import HTTPUtils from "HTTPUtils" /* 1282 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1409 */;
+import GuildRecordUtils from "GuildRecordUtils" /* 4877 */;
+import SetUtils from "SetUtils" /* 4880 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import Record from "Record" /* 1407 */;
-import Constants from "Constants" /* 1087 */;
+import Record from "Record" /* 1398 */;
+import Constants from "Constants" /* 1072 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_4;
@@ -96,13 +96,12 @@ class ExpressionSourceGuildRecord extends Record {
     const obj2 = { id: this.id, size, icon: this.icon, canAnimate: flag };
     return obj.getGuildIconURL(obj2);
   }
-  getIconSource(size, hasItem) {
+  getIconSource(size, flag) {
     const self = this;
-    let flag = hasItem;
-    if (hasItem === undefined) {
+    if (flag === undefined) {
       flag = false;
     }
-    obj = self(1417);
+    obj = self(1409);
     return obj.getAnimatableSourceWithFallback(flag, (canAnimate) => {
       obj = AvatarUtilsDefault;
       const obj2 = { id: self.id, size, icon: self.icon, canAnimate };

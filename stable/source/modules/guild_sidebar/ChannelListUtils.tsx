@@ -1,15 +1,15 @@
-// Module ID: 6027
-// Function ID: 6028
+// Module ID: 6047
+// Function ID: 6048
 // Name: ChannelListUtils
 // Dependencies: [2]
 // Exports: hasStream
 
-// Module 6027 (ChannelListUtils)
+// Module 6047 (ChannelListUtils)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_sidebar/ChannelListUtils.tsx");
 
-export const hasStream = function hasStream(voiceStates) {
+export function hasStream(voiceStates) {
   if (null == voiceStates) {
     return false;
   } else {
@@ -22,4 +22,4 @@ export const hasStream = function hasStream(voiceStates) {
     }
     return false;
   }
-};
+}

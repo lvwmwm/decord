@@ -1,23 +1,23 @@
-// Module ID: 8446
-// Function ID: 8447
+// Module ID: 8511
+// Function ID: 8512
 // Name: ChannelLinkedToLobbySystemMessage
-// Dependencies: [2045, 1087, 8343, 8350, 8352, 2067, 1128, 8354, 2]
+// Dependencies: [2038, 1072, 8411, 8418, 8420, 2061, 1113, 8422, 2]
 // Exports: createChannelLinkedToLobbySystemMessage
 
-// Module 8446 (ChannelLinkedToLobbySystemMessage)
-import Constants from "Constants" /* 1087 */;
-import intl2 from "intl" /* 1128 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2067 */;
-import resolveMessageContentColorsDefault from "resolveMessageContentColors" /* 8343 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8350 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8352 */;
-import ApplicationStore from "ApplicationStore" /* 2045 */;
+// Module 8511 (ChannelLinkedToLobbySystemMessage)
+import Constants from "Constants" /* 1072 */;
+import intl2 from "intl" /* 1113 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2061 */;
+import resolveMessageContentColorsDefault from "resolveMessageContentColors" /* 8411 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8418 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8420 */;
+import ApplicationStore from "ApplicationStore" /* 2038 */;
 import size from "module_2" /* 2 */;
 
 const HelpdeskArticles = Constants.HelpdeskArticles;
 const result = size.fileFinishedImporting("modules/messages/native/renderer/system_messages/ChannelLinkedToLobbySystemMessage.tsx");
 
-export const createChannelLinkedToLobbySystemMessage = function createChannelLinkedToLobbySystemMessage(message) {
+export function createChannelLinkedToLobbySystemMessage(message) {
   let intl;
   let obj3;
   let obj4;
@@ -46,7 +46,7 @@ export const createChannelLinkedToLobbySystemMessage = function createChannelLin
     tmpResult = HelpdeskUtilsDefault;
     const obj6 = { content: intl.formatToParts(intl2.t.gZfhOw, obj2) };
     intl = intl2.intl;
-    const merged = Object.assign(tmp(8354)(message));
+    const merged = Object.assign(tmp(8422)(message));
     return obj6;
   }
-};
+}

@@ -1,18 +1,18 @@
-// Module ID: 10618
-// Function ID: 10619
+// Module ID: 10697
+// Function ID: 10698
 // Name: PremiumGiftBackgroundAnimation
-// Dependencies: [32, 19, 17, 5004, 21, 5003, 504, 8483, 10619, 5260, 2]
+// Dependencies: [32, 19, 17, 5015, 21, 5014, 504, 8548, 10698, 5618, 2]
 // Exports: default
 
-// Module 10618 (PremiumGiftBackgroundAnimation)
+// Module 10697 (PremiumGiftBackgroundAnimation)
 import react_native from "react-native" /* 17 */;
-import PremiumGiftingUtils from "PremiumGiftingUtils" /* 8483 */;
-import GiftAnimationData from "GiftAnimationData" /* 10619 */;
+import PremiumGiftingUtils from "PremiumGiftingUtils" /* 8548 */;
+import GiftAnimationData from "GiftAnimationData" /* 10698 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5004 */;
+import AccessibilityStore from "AccessibilityStore" /* 5015 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5003 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let metroImportAll;
@@ -71,7 +71,7 @@ export default function PremiumGiftBackgroundAnimation(giftStyle) {
         tmp8 = null != first2;
       }
       tmp4(tmp8);
-      closure_5(tmp6(8483).AnimationState.ACTION);
+      closure_5(tmp6(8548).AnimationState.ACTION);
     }
   }, items3);
   const items4 = [first, first3];

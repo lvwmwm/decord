@@ -1,21 +1,21 @@
-// Module ID: 2065
-// Function ID: 2066
+// Module ID: 2059
+// Function ID: 2060
 // Name: BillingPlatformUtils
-// Dependencies: [1630, 1384, 2]
+// Dependencies: [1622, 1375, 2]
 // Exports: isCollectibleGiftingSupported, isGooglePlayBillingSupported, isPremiumGiftingSupported, isSocialLayerStorefrontGiftingSupported, isSocialLayerStorefrontPurchaseSupported
 
-// Module 2065 (BillingPlatformUtils)
-import PlatformUtils from "PlatformUtils" /* 1384 */;
-import MetaQuestUtils from "MetaQuestUtils" /* 1630 */;
+// Module 2059 (BillingPlatformUtils)
+import PlatformUtils from "PlatformUtils" /* 1375 */;
+import MetaQuestUtils from "MetaQuestUtils" /* 1622 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/device/BillingPlatformUtils.tsx");
 
-export const isPremiumGiftingSupported = function isPremiumGiftingSupported() {
+export function isPremiumGiftingSupported() {
   const obj = MetaQuestUtils;
   return !obj.isMetaQuest();
-};
-export const isGooglePlayBillingSupported = function isGooglePlayBillingSupported() {
+}
+export function isGooglePlayBillingSupported() {
   const obj = PlatformUtils;
   let isAndroidResult = obj.isAndroid();
   if (isAndroidResult) {
@@ -23,16 +23,16 @@ export const isGooglePlayBillingSupported = function isGooglePlayBillingSupporte
     isAndroidResult = !tmpResult.isMetaQuest();
   }
   return isAndroidResult;
-};
-export const isCollectibleGiftingSupported = function isCollectibleGiftingSupported() {
+}
+export function isCollectibleGiftingSupported() {
   const obj = MetaQuestUtils;
   return !obj.isMetaQuest();
-};
-export const isSocialLayerStorefrontGiftingSupported = function isSocialLayerStorefrontGiftingSupported() {
+}
+export function isSocialLayerStorefrontGiftingSupported() {
   const obj = MetaQuestUtils;
   return !obj.isMetaQuest();
-};
-export const isSocialLayerStorefrontPurchaseSupported = function isSocialLayerStorefrontPurchaseSupported() {
+}
+export function isSocialLayerStorefrontPurchaseSupported() {
   const obj = MetaQuestUtils;
   return !obj.isMetaQuest();
-};
+}

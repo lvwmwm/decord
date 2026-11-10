@@ -1,17 +1,17 @@
-// Module ID: 1248
-// Function ID: 1249
+// Module ID: 1233
+// Function ID: 1234
 // Name: user_settings/UserSettingsUtils
-// Dependencies: [32, 1097, 1087, 1211, 1247, 1249, 1240, 12, 2]
+// Dependencies: [32, 1082, 1072, 1196, 1232, 1234, 1225, 12, 2]
 // Exports: b64ToPreloadedUserSettingsProto, b64ToProtoWithType, mergeTopLevelFields, mutateUserChannelSettings, mutateUserChannelSettingsInternal, mutateUserGuildSettings, mutateUserGuildSettingsInternal, protoToB64, protoToB64WithType, runMigrations, serializeUsageHistory
 
-// Module 1248 (user_settings/UserSettingsUtils)
+// Module 1233 (user_settings/UserSettingsUtils)
 import _modDef12 from "module_12" /* 12 */;
-import Constants from "Constants" /* 1087 */;
-import UserSettingsConstants from "UserSettingsConstants" /* 1097 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1211 */;
-import user_settings_shared from "user_settings_shared" /* 1240 */;
-import frecency_user_settings from "frecency_user_settings" /* 1247 */;
-import ProtoUtils from "ProtoUtils" /* 1249 */;
+import Constants from "Constants" /* 1072 */;
+import UserSettingsConstants from "UserSettingsConstants" /* 1082 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1196 */;
+import user_settings_shared from "user_settings_shared" /* 1225 */;
+import frecency_user_settings from "frecency_user_settings" /* 1232 */;
+import ProtoUtils from "ProtoUtils" /* 1234 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -40,7 +40,7 @@ let obj = { [PRELOADED_USER_SETTINGS]: preloaded_user_settings.PreloadedUserSett
 ({ PRELOADED_USER_SETTINGS, FRECENCY_AND_FAVORITES_SETTINGS } = UserSettingsTypes);
 const result = size.fileFinishedImporting("modules/user_settings/UserSettingsUtils.tsx");
 
-export const b64ToProtoWithType = function b64ToProtoWithType(type, proto) {
+export function b64ToProtoWithType(type, proto) {
   let tmp = null;
   if (null != proto) {
     let tmp4 = null;
@@ -50,21 +50,21 @@ export const b64ToProtoWithType = function b64ToProtoWithType(type, proto) {
     tmp = tmp4;
   }
   return tmp;
-};
+}
 export { b64ToProto };
-export const b64ToPreloadedUserSettingsProto = function b64ToPreloadedUserSettingsProto(settings) {
+export function b64ToPreloadedUserSettingsProto(settings) {
   return b64ToProto(preloaded_user_settings.PreloadedUserSettings, settings);
-};
-export const protoToB64WithType = function protoToB64WithType(arg0, arg1) {
+}
+export function protoToB64WithType(arg0, arg1) {
   const tmp = obj[arg0];
   obj = ProtoUtils;
   return obj.protoToB64(tmp, arg1);
-};
-export const protoToB64 = function protoToB64(arg0, arg1) {
+}
+export function protoToB64(arg0, arg1) {
   obj = ProtoUtils;
   return obj.protoToB64(arg0, arg1);
-};
-export const mergeTopLevelFields = function mergeTopLevelFields(ProtoClass, proto, proto2) {
+}
+export function mergeTopLevelFields(ProtoClass, proto, proto2) {
   obj = {};
   const merged = Object.assign(proto);
   for (const key10007 in proto2) {
@@ -73,8 +73,8 @@ export const mergeTopLevelFields = function mergeTopLevelFields(ProtoClass, prot
   }
   ProtoClass.mergePartial(obj, proto2);
   return obj;
-};
-export const mutateUserGuildSettings = function mutateUserGuildSettings(guilds, arg1, fn) {
+}
+export function mutateUserGuildSettings(guilds, arg1, fn) {
   if (null == guilds.guilds) {
     const AllGuildSettings = preloaded_user_settings.AllGuildSettings;
     guilds.guilds = AllGuildSettings.create();
@@ -91,8 +91,8 @@ export const mutateUserGuildSettings = function mutateUserGuildSettings(guilds, 
     guilds2[tmp3] = GuildSettings.create();
   }
   return fn(guilds.guilds[tmp3]);
-};
-export const mutateUserGuildSettingsInternal = function mutateUserGuildSettingsInternal(guilds, arg1, f93723) {
+}
+export function mutateUserGuildSettingsInternal(guilds, arg1, f86519) {
   let tmp = arg1;
   const tmp2 = null != arg1 && "null" !== tmp;
   if (!tmp2) {
@@ -103,9 +103,9 @@ export const mutateUserGuildSettingsInternal = function mutateUserGuildSettingsI
     const GuildSettings = preloaded_user_settings.GuildSettings;
     guilds[tmp] = GuildSettings.create();
   }
-  return f93723(guilds.guilds[tmp]);
-};
-export const mutateUserChannelSettings = function mutateUserChannelSettings(guilds, arg1, id, fn) {
+  return f86519(guilds.guilds[tmp]);
+}
+export function mutateUserChannelSettings(guilds, arg1, id, fn) {
   if (null == guilds.guilds) {
     const AllGuildSettings = preloaded_user_settings.AllGuildSettings;
     guilds.guilds = AllGuildSettings.create();
@@ -127,16 +127,16 @@ export const mutateUserChannelSettings = function mutateUserChannelSettings(guil
     channels[id] = ChannelSettings.create();
   }
   return fn(guilds.guilds[tmp3].channels[id]);
-};
-export const mutateUserChannelSettingsInternal = function mutateUserChannelSettingsInternal(channels, arg1, f93723) {
+}
+export function mutateUserChannelSettingsInternal(channels, arg1, f86519) {
   if (!(arg1 in channels.channels)) {
     channels = channels.channels;
     const ChannelSettings = preloaded_user_settings.ChannelSettings;
     channels[arg1] = ChannelSettings.create();
   }
-  return f93723(channels.channels[arg1]);
-};
-export const runMigrations = function runMigrations(proto, arg1) {
+  return f86519(channels.channels[arg1]);
+}
+export function runMigrations(proto, arg1) {
   if (null == proto.versions) {
     const Versions = user_settings_shared.Versions;
     proto.versions = Versions.create();
@@ -186,8 +186,8 @@ export const runMigrations = function runMigrations(proto, arg1) {
     continue;
   }
   return { proto, isDirty: flag, cleanupFuncs: items };
-};
-export const serializeUsageHistory = function serializeUsageHistory(usageHistory, arg1) {
+}
+export function serializeUsageHistory(usageHistory, arg1) {
   let first;
   let length;
   let recentUses;
@@ -228,4 +228,4 @@ export const serializeUsageHistory = function serializeUsageHistory(usageHistory
     continue;
   }
   return obj2;
-};
+}

@@ -1,15 +1,15 @@
-// Module ID: 13444
-// Function ID: 13445
+// Module ID: 14064
+// Function ID: 14065
 // Name: GuildPowerupsActionCreators
-// Dependencies: [5214, 1087, 584, 13445, 6415, 1297, 13446, 1388, 2]
+// Dependencies: [5230, 1072, 572, 14065, 6455, 1282, 14066, 1379, 2]
 // Exports: disablePowerupForGuild, enablePowerupForGuild, fetchGuildBoostEntitlements, fetchPowerupCatalogForGuild, guildPowerupsAckNotification, guildPowerupsResetNotifications
 
-// Module 13444 (GuildPowerupsActionCreators)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1087 */;
-import HTTPUtils from "HTTPUtils" /* 1297 */;
-import GlobalUtils from "GlobalUtils" /* 1388 */;
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5214 */;
+// Module 14064 (GuildPowerupsActionCreators)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import Constants from "Constants" /* 1072 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
+import GlobalUtils from "GlobalUtils" /* 1379 */;
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5230 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -21,16 +21,16 @@ let closure_4;
 const Endpoints = Constants.Endpoints;
 let result = size.fileFinishedImporting("modules/premium/powerups/GuildPowerupsActionCreators.tsx");
 
-export const guildPowerupsAckNotification = function guildPowerupsAckNotification(guildId) {
+export function guildPowerupsAckNotification(guildId) {
   const obj = DispatcherDefault;
   const obj2 = { type: "GUILD_POWERUPS_ACK_NOTIFICATION", guildId };
   obj.dispatch(obj2);
-};
-export const guildPowerupsResetNotifications = function guildPowerupsResetNotifications() {
+}
+export function guildPowerupsResetNotifications() {
   const obj = DispatcherDefault;
   obj.dispatch({ type: "GUILD_POWERUPS_RESET_NOTIFICATIONS" });
-};
-export const fetchPowerupCatalogForGuild = function fetchPowerupCatalogForGuild(guildId, arg1) {
+}
+export function fetchPowerupCatalogForGuild(guildId, arg1) {
   let obj3;
   let obj6;
   let sorted;
@@ -102,8 +102,8 @@ export const fetchPowerupCatalogForGuild = function fetchPowerupCatalogForGuild(
       return body.body;
     });
   }
-};
-export const fetchGuildBoostEntitlements = function fetchGuildBoostEntitlements(guildId, arg1) {
+}
+export function fetchGuildBoostEntitlements(guildId, arg1) {
   let obj2;
   _require = guildId;
   let flag = arg1;
@@ -162,14 +162,14 @@ export const fetchGuildBoostEntitlements = function fetchGuildBoostEntitlements(
     const obj4 = { type: "GUILD_BOOST_ENTITLEMENTS_FETCH_SUCCESS", guildId, unlockedPowerups: obj, unlockedGameServers: obj2 };
     obj3.dispatch(obj4);
   });
-};
-export const enablePowerupForGuild = function enablePowerupForGuild(arg0, arg1) {
+}
+export function enablePowerupForGuild(arg0, arg1) {
   const HTTP = HTTPUtils.HTTP;
   const obj = { url: Endpoints.GUILD_POWERUP_TOGGLE(arg0, arg1), rejectWithError: true };
   return HTTP.post(obj);
-};
-export const disablePowerupForGuild = function disablePowerupForGuild(arg0, arg1) {
+}
+export function disablePowerupForGuild(arg0, arg1) {
   const HTTP = HTTPUtils.HTTP;
   const obj = { url: Endpoints.GUILD_POWERUP_TOGGLE(arg0, arg1), rejectWithError: true };
   return HTTP.del(obj);
-};
+}

@@ -1,13 +1,13 @@
-// Module ID: 2045
-// Function ID: 2046
+// Module ID: 2038
+// Function ID: 2039
 // Name: ApplicationStore
-// Dependencies: [32, 2024, 504, 584, 2]
+// Dependencies: [32, 2016, 504, 572, 2]
 
-// Module 2045 (ApplicationStore)
+// Module 2038 (ApplicationStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ApplicationRecord from "ApplicationRecord" /* 2024 */;
+import ApplicationRecord from "ApplicationRecord" /* 2016 */;
 import size from "module_2" /* 2 */;
 
 let attachments;
@@ -140,7 +140,7 @@ const map2 = new Map();
 const map3 = new Map();
 const map4 = new Map();
 const map5 = new Map();
-let set = new Set();
+const set = new Set();
 const authStore = { botUserIdToAppUsage: {} };
 const PersistedStore = get_initializedDefault.PersistedStore;
 class ApplicationStore extends PersistedStore {
@@ -231,8 +231,8 @@ class ApplicationStore extends PersistedStore {
   isHydrated(applicationId) {
     return set.has(applicationId);
   }
-  didFetchingApplicationFail(application_id) {
-    return false === map5.get(application_id);
+  didFetchingApplicationFail(applicationId) {
+    return false === map5.get(applicationId);
   }
   getFetchingOrFailedFetchingIds() {
     return Array.from(map5.keys());
@@ -375,28 +375,6 @@ let obj = {
   INTEGRATION_CREATE: handleIntegrationsChanged,
   INTEGRATION_UPDATE: handleIntegrationsChanged,
   INTEGRATION_DELETE: handleIntegrationsChanged,
-  BILLING_PAYMENTS_FETCH_SUCCESS: function handleFetchPayments(payments) {
-    payments = payments.payments;
-    set = new Set();
-    const iter = payments[Symbol.iterator]();
-    while (iter !== undefined) {
-      let sku = iter.next().sku;
-      let application;
-      if (sku != null) {
-        application = sku.application;
-      }
-      let tmp2 = application;
-      let hasItem = null == application;
-      if (!hasItem) {
-        hasItem = set.has(tmp2.id);
-      }
-      if (!hasItem) {
-        let tmp8 = addApplication(ApplicationRecord.createFromServer(tmp2));
-      }
-      continue;
-    }
-    return set.size > 0;
-  },
   PAYMENT_UPDATE: function handleUpdatePayment(payment) {
     payment = payment.payment;
     const sku = payment.sku;

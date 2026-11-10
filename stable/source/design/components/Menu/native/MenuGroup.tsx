@@ -1,15 +1,15 @@
-// Module ID: 15276
-// Function ID: 15277
+// Module ID: 15816
+// Function ID: 15817
 // Name: MenuGroup
-// Dependencies: [19, 17, 21, 5003, 587, 2]
+// Dependencies: [19, 17, 21, 5014, 575, 2]
 // Exports: MenuGroup
 
-// Module 15276 (MenuGroup)
-import nativeDefault from "native" /* 587 */;
+// Module 15816 (MenuGroup)
+import nativeDefault from "native" /* 575 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5003 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let StyleSheet;
@@ -24,7 +24,7 @@ obj2 = { marginLeft: 0, height: StyleSheet.hairlineWidth, backgroundColor: nativ
 let closure_4 = createStyles.createStyles(obj);
 const result = size.fileFinishedImporting("design/components/Menu/native/MenuGroup.tsx");
 
-export const MenuGroup = function MenuGroup(ref) {
+export function MenuGroup(ref) {
   let children;
   let items;
   let style;
@@ -39,17 +39,17 @@ export const MenuGroup = function MenuGroup(ref) {
   }
   items = [tmp4, ];
   const Children = ref.Children;
-  items[1] = Children.map(children, (label, arg1) => {
-    let cloneElementResult = label;
+  items[1] = Children.map(children, (icon, arg1) => {
+    let cloneElementResult = icon;
     if (0 === arg1) {
-      cloneElementResult = label;
+      cloneElementResult = icon;
       const obj = react;
-      if (react.isValidElement(label)) {
+      if (react.isValidElement(icon)) {
         const obj2 = { ref };
-        cloneElementResult = obj.cloneElement(label, obj2);
+        cloneElementResult = obj.cloneElement(icon, obj2);
       }
     }
     return cloneElementResult;
   });
   return tmp2(closure_1, obj);
-};
+}

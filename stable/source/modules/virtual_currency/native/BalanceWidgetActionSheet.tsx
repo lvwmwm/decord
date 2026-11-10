@@ -1,25 +1,25 @@
-// Module ID: 13992
-// Function ID: 13993
+// Module ID: 14512
+// Function ID: 14513
 // Name: BalanceWidgetActionSheet
-// Dependencies: [19, 17, 1087, 4852, 21, 13993, 13994, 13995, 1128, 5688, 2067, 5017, 5284, 587, 1267, 5033, 4839, 5069, 5297, 5701, 8822, 5614, 13996, 9461, 5266, 5276, 5003, 1384, 2]
+// Dependencies: [19, 17, 1072, 4860, 21, 14513, 14514, 14515, 1113, 5705, 2061, 5028, 5596, 575, 1252, 5044, 4847, 5080, 5272, 5717, 8873, 5595, 14516, 9532, 5624, 5634, 5014, 1375, 2]
 // Exports: default
 
-// Module 13992 (BalanceWidgetActionSheet)
-import nativeDefault from "native" /* 587 */;
-import intl3 from "intl" /* 1128 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import PlatformUtils from "PlatformUtils" /* 1384 */;
-import dismissible_content from "dismissible_content" /* 4839 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4852 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5033 */;
-import _mod13993 from "module_13993" /* 13993 */;
-import _mod13994 from "module_13994" /* 13994 */;
-import _mod13995 from "module_13995" /* 13995 */;
+// Module 14512 (BalanceWidgetActionSheet)
+import nativeDefault from "native" /* 575 */;
+import intl3 from "intl" /* 1113 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import PlatformUtils from "PlatformUtils" /* 1375 */;
+import dismissible_content from "dismissible_content" /* 4847 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4860 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5044 */;
+import _mod14513 from "module_14513" /* 14513 */;
+import _mod14514 from "module_14514" /* 14514 */;
+import _mod14515 from "module_14515" /* 14515 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import Constants from "Constants" /* 1087 */;
+import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5003 */;
+import createStyles from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -53,12 +53,12 @@ let closure_13 = createStyles.createStyles((color) => {
   if (obj5.isAndroid()) {
     num = 36;
   }
-  size = { width: "100%", height: "100%", alignItems: "center", flex: 1, marginBottom: tmp(587).space.PX_16 };
+  size = { width: "100%", height: "100%", alignItems: "center", flex: 1, marginBottom: tmp(575).space.PX_16 };
   ({ width: "100%", paddingTop: nativeDefault.space.PX_12, paddingBottom: nativeDefault.space.PX_16, alignItems: "center", position: "relative", flexDirection: "column" });
-  size1 = { width: 32, height: 32, backgroundColor: tmp(587).colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND, borderRadius: tmp(587).radii.round, justifyContent: "center", alignItems: "center" };
-  rect = { position: "absolute", left: tmp(587).space.PX_16, top: tmp(587).space.PX_16, zIndex: 10 };
-  rect1 = { position: "absolute", top: 0, left: 0, right: 0, borderRadius: tmp(587).radii.xl, bottom: -100 };
-  size2 = { width: "100%", height: 144, gap: tmp(587).space.PX_12, marginBottom: tmp(587).space.PX_64 };
+  size1 = { width: 32, height: 32, backgroundColor: tmp(575).colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND, borderRadius: tmp(575).radii.round, justifyContent: "center", alignItems: "center" };
+  rect = { position: "absolute", left: tmp(575).space.PX_16, top: tmp(575).space.PX_16, zIndex: 10 };
+  rect1 = { position: "absolute", top: 0, left: 0, right: 0, borderRadius: tmp(575).radii.xl, bottom: -100 };
+  size2 = { width: "100%", height: 144, gap: tmp(575).space.PX_12, marginBottom: tmp(575).space.PX_64 };
   return obj;
 });
 let size = size_mod;
@@ -103,7 +103,7 @@ export default function _default(balance) {
     let intl;
     let tmp = null;
     if (num > 4100) {
-      const obj = { backgroundVideo: _mod13993.default, backgroundImage: _mod13994.default, bannerImage: _mod13995.default, bannerText: intl.string(intl3.t.LaMEFL) };
+      const obj = { backgroundVideo: _mod14513.default, backgroundImage: _mod14514.default, bannerImage: _mod14515.default, bannerText: intl.string(intl3.t.LaMEFL) };
       intl = intl3.intl;
       tmp = obj;
     }
@@ -124,7 +124,7 @@ export default function _default(balance) {
     if (!obj3.UNSAFE_isDismissibleContentDismissed(dismissible_content.DismissibleContent.VIRTUAL_CURRENCY_MOBILE_ONBOARDING_PILL)) {
       const obj4 = { dismissAction: ContentDismissActionType.AUTO_DISMISS };
       const tmp3Result = DismissibleContentUnsafeUtils;
-      const result = tmp3Result.UNSAFE_markDismissibleContentAsDismissed(tmp3(4839).DismissibleContent.VIRTUAL_CURRENCY_MOBILE_ONBOARDING_PILL, obj4);
+      const result = tmp3Result.UNSAFE_markDismissibleContentAsDismissed(tmp3(4847).DismissibleContent.VIRTUAL_CURRENCY_MOBILE_ONBOARDING_PILL, obj4);
     }
   }, []);
   let obj2 = { theme: themeOverride, children: closure_11(BottomSheet, obj3) };

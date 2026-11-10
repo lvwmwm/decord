@@ -1,24 +1,24 @@
-// Module ID: 10166
-// Function ID: 10167
+// Module ID: 10246
+// Function ID: 10247
 // Name: GIFPickerUtils
-// Dependencies: [1087, 10165, 2]
+// Dependencies: [1072, 10245, 2]
 // Exports: calculateAnalyticsMetadata, getGIFThumbnailForFavorite, isKlipyProvider, shouldUseAnimatedWebPThumbnail
 
-// Module 10166 (GIFPickerUtils)
-import Constants from "Constants" /* 1087 */;
-import GifProvider from "GifProvider" /* 10165 */;
+// Module 10246 (GIFPickerUtils)
+import Constants from "Constants" /* 1072 */;
+import GifProvider from "GifProvider" /* 10245 */;
 import size from "module_2" /* 2 */;
 
 const SearchTypes = Constants.SearchTypes;
 const result = size.fileFinishedImporting("utils/GIFPickerUtils.tsx");
 
-export const isKlipyProvider = function isKlipyProvider(arg0) {
+export function isKlipyProvider(arg0) {
   return arg0 === GifProvider.GIF_PROVIDER_EMBED_NAME;
-};
-export const shouldUseAnimatedWebPThumbnail = function shouldUseAnimatedWebPThumbnail(arg0) {
+}
+export function shouldUseAnimatedWebPThumbnail(arg0) {
   return arg0 === GifProvider.GIF_PROVIDER_EMBED_NAME;
-};
-export const getGIFThumbnailForFavorite = function getGIFThumbnailForFavorite(providerName) {
+}
+export function getGIFThumbnailForFavorite(providerName) {
   if (providerName.providerName === GifProvider.GIF_PROVIDER_EMBED_NAME) {
     const thumbnail = providerName.thumbnail;
     if (null != thumbnail) {
@@ -32,12 +32,13 @@ export const getGIFThumbnailForFavorite = function getGIFThumbnailForFavorite(pr
       return uri;
     }
   }
-};
-export const calculateAnalyticsMetadata = function calculateAnalyticsMetadata(analyticsID, TRENDING_GIFS, arg2) {
+}
+export function calculateAnalyticsMetadata(analyticsID, TRENDING_GIFS, arg2) {
   let limit;
   let num2;
   let obj;
   let offset;
+  let results;
   let tmp2;
   let totalResults;
   if (null != TRENDING_GIFS) {
@@ -67,4 +68,4 @@ export const calculateAnalyticsMetadata = function calculateAnalyticsMetadata(an
     tmp2 = results;
   }
   return obj4;
-};
+}

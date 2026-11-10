@@ -1,26 +1,26 @@
-// Module ID: 14539
-// Function ID: 14540
+// Module ID: 15081
+// Function ID: 15082
 // Name: VoiceChannelBadge
-// Dependencies: [17, 4855, 4935, 5662, 1087, 14540, 8534, 6685, 6694, 2]
+// Dependencies: [17, 4863, 4946, 5679, 1072, 15082, 8603, 6725, 6734, 2]
 // Exports: createVoiceChannelBadge
 
-// Module 14539 (VoiceChannelBadge)
+// Module 15081 (VoiceChannelBadge)
 import react_native from "react-native" /* 17 */;
-import Constants from "Constants" /* 1087 */;
-import shouldAgeVerifyForAgeGate from "shouldAgeVerifyForAgeGate" /* 6685 */;
-import AgeGateUtils from "AgeGateUtils" /* 6694 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 8534 */;
-import VoiceChannelBadgeExperiment from "VoiceChannelBadgeExperiment" /* 14540 */;
-import ChannelStore from "ChannelStore" /* 4855 */;
-import PermissionStore from "PermissionStore" /* 4935 */;
-import VoiceStateStore from "VoiceStateStore" /* 5662 */;
+import Constants from "Constants" /* 1072 */;
+import shouldAgeVerifyForAgeGate from "shouldAgeVerifyForAgeGate" /* 6725 */;
+import AgeGateUtils from "AgeGateUtils" /* 6734 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8603 */;
+import VoiceChannelBadgeExperiment from "VoiceChannelBadgeExperiment" /* 15082 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import PermissionStore from "PermissionStore" /* 4946 */;
+import VoiceStateStore from "VoiceStateStore" /* 5679 */;
 import size from "module_2" /* 2 */;
 
 const Image = react_native.Image;
 const Permissions = Constants.Permissions;
 let result = size.fileFinishedImporting("modules/messages/native/renderer/row_data/VoiceChannelBadge.tsx");
 
-export const createVoiceChannelBadge = function createVoiceChannelBadge(id, guildId1) {
+export function createVoiceChannelBadge(id, guildId1) {
   const guildId = guildId1;
   const getVoiceChannelBadgeExperiment = VoiceChannelBadgeExperiment.getVoiceChannelBadgeExperiment;
   VoiceChannelBadgeExperiment;
@@ -64,4 +64,4 @@ export const createVoiceChannelBadge = function createVoiceChannelBadge(id, guil
       }
     }
   }
-};
+}

@@ -1,11 +1,11 @@
-// Module ID: 7659
-// Function ID: 7660
+// Module ID: 7697
+// Function ID: 7698
 // Name: AutomodFeedback
-// Dependencies: [1128, 2]
+// Dependencies: [1113, 2]
 // Exports: generateFeedbackOptions, getMostImportantRaidResolutionType
 
-// Module 7659 (AutomodFeedback)
-import intl3 from "intl" /* 1128 */;
+// Module 7697 (AutomodFeedback)
+import intl3 from "intl" /* 1113 */;
 import size from "module_2" /* 2 */;
 
 const Feedback = { BUG: "BUG", ALLOWED: "ALLOWED", MENTION_RAID_REMOVE_RESTRICTION: "MENTION_RAID_REMOVE_RESTRICTION" };
@@ -13,7 +13,7 @@ let obj2 = { LEGITIMATE_ACTIVITY: "LEGITIMATE_ACTIVITY", LEGITIMATE_ACCOUNTS: "L
 const result = size.fileFinishedImporting("modules/guild_automod/AutomodFeedback.tsx");
 
 export { Feedback };
-export const generateFeedbackOptions = function generateFeedbackOptions() {
+export function generateFeedbackOptions() {
   let intl;
   let intl2;
   let obj;
@@ -24,18 +24,18 @@ export const generateFeedbackOptions = function generateFeedbackOptions() {
   intl2 = intl3.intl;
   items[1] = obj2;
   return items;
-};
+}
 export const RaidAlertType = { JOIN_RAID: "JOIN_RAID", MENTION_RAID: "MENTION_RAID" };
 export const RaidResolutionType = obj2;
-export const getMostImportantRaidResolutionType = function getMostImportantRaidResolutionType(c3) {
+export function getMostImportantRaidResolutionType(arr) {
   let DM_SPAM;
-  if (c3.includes(obj2.LEGITIMATE_ACTIVITY)) {
+  if (arr.includes(obj2.LEGITIMATE_ACTIVITY)) {
     DM_SPAM = tmp.LEGITIMATE_ACTIVITY;
-  } else if (c3.includes(obj2.DM_SPAM)) {
+  } else if (arr.includes(obj2.DM_SPAM)) {
     DM_SPAM = tmp.DM_SPAM;
   } else {
-    DM_SPAM = c3.includes(tmp.JOIN_RAID) ? tmp.JOIN_RAID : tmp.OTHER;
+    DM_SPAM = arr.includes(tmp.JOIN_RAID) ? tmp.JOIN_RAID : tmp.OTHER;
   }
   return DM_SPAM;
-};
+}
 export const RaidLockdownFeedbackType = { DM_SPAM: "DM_SPAM", MENTION_SPAM: "MENTION_SPAM", CHANNEL_SPAM: "CHANNEL_SPAM", SUS_NEW_MEMBERS: "SUS_NEW_MEMBERS", CHANGING_SETTINGS: "CHANGING_SETTINGS", OTHER: "OTHER" };

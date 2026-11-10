@@ -1,21 +1,18 @@
-// Module ID: 17334
-// Function ID: 17335
+// Module ID: 17931
+// Function ID: 17932
 // Name: ParentalControlsDirectMessages
-// Dependencies: [7677, 8364, 558, 16143, 16144, 11240, 1128, 2]
+// Dependencies: [7715, 8432, 16716, 16717, 11540, 1113, 2]
 
-// Module 17334 (ParentalControlsDirectMessages)
-import intl2 from "intl" /* 1128 */;
-import SettingsConstants from "SettingsConstants" /* 8364 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 16143 */;
-import ParentalControlledUserSettings from "ParentalControlledUserSettings" /* 16144 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7677 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11240 */;
+// Module 17931 (ParentalControlsDirectMessages)
+import intl2 from "intl" /* 1113 */;
+import SettingsConstants from "SettingsConstants" /* 8432 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 16716 */;
+import ParentalControlledUserSettings from "ParentalControlledUserSettings" /* 16717 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7715 */;
+import SettingBuilders from "SettingBuilders" /* 11540 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
-let ReactCompilerGating = ReactCompilerGating_mod;
-ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
 let obj = {
   useTitle() {
     const intl = intl2.intl;
@@ -40,7 +37,7 @@ let obj = {
   unsearchable: true
 };
 const toggle = SettingBuilders.createToggle(obj);
-const result1 = size.fileFinishedImporting("modules/user_settings/defs/native/ParentalControlsDirectMessages.tsx");
+let result = size.fileFinishedImporting("modules/user_settings/defs/native/ParentalControlsDirectMessages.tsx");
 
 export default toggle;
 export const ParentalControlsDirectMessages = toggle;

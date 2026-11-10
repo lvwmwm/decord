@@ -1,12 +1,12 @@
-// Module ID: 5282
-// Function ID: 5283
+// Module ID: 5640
+// Function ID: 5641
 // Name: ButtonConstants
-// Dependencies: [5278, 587, 2]
+// Dependencies: [5636, 575, 2]
 // Exports: getButtonBorderRadius, getButtonDefaultTextVariant, getButtonPadding
 
-// Module 5282 (ButtonConstants)
-import nativeDefault from "native" /* 587 */;
-import Icon_mod from "Icon" /* 5278 */;
+// Module 5640 (ButtonConstants)
+import nativeDefault from "native" /* 575 */;
+import Icon_mod from "Icon" /* 5636 */;
 import size from "module_2" /* 2 */;
 
 let Icon;
@@ -47,11 +47,11 @@ export function getButtonDefaultTextVariant(size) {
   }
   return str;
 }
-export const getButtonPadding = function getButtonPadding(FAB_BUTTON_SIZE, FAB_BUTTON_ICON_SIZE) {
+export function getButtonPadding(FAB_BUTTON_SIZE, FAB_BUTTON_ICON_SIZE) {
   const obj = Icon;
   return (FAB_BUTTON_SIZE - obj.getIconSize(FAB_BUTTON_ICON_SIZE) - 2) / 2;
-};
-export const getButtonBorderRadius = function getButtonBorderRadius(arg0) {
+}
+export function getButtonBorderRadius(arg0) {
   let BORDER_RADIUS;
   if ("lg" === arg0) {
     BORDER_RADIUS = nativeDefault.modules.button.BORDER_RADIUS_LG;
@@ -59,4 +59,4 @@ export const getButtonBorderRadius = function getButtonBorderRadius(arg0) {
     BORDER_RADIUS = nativeDefault.modules.button.BORDER_RADIUS;
   }
   return BORDER_RADIUS;
-};
+}

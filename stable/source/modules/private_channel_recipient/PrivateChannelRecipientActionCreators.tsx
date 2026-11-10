@@ -1,11 +1,11 @@
-// Module ID: 13084
-// Function ID: 13085
+// Module ID: 13718
+// Function ID: 13719
 // Name: PrivateChannelRecipientActionCreators
-// Dependencies: [1087, 1297, 2]
+// Dependencies: [1072, 1282, 2]
 
-// Module 13084 (PrivateChannelRecipientActionCreators)
-import Constants from "Constants" /* 1087 */;
-import HTTPUtils from "HTTPUtils" /* 1297 */;
+// Module 13718 (PrivateChannelRecipientActionCreators)
+import Constants from "Constants" /* 1072 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
 import size from "module_2" /* 2 */;
 
 const Endpoints = Constants.Endpoints;

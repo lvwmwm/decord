@@ -1,15 +1,15 @@
-// Module ID: 8437
-// Function ID: 8438
+// Module ID: 8502
+// Function ID: 8503
 // Name: PublicGuildsUtils
-// Dependencies: [8438, 1087, 8439, 8440, 1267, 5743, 2]
+// Dependencies: [8503, 1072, 8504, 8505, 1252, 5760, 2]
 // Exports: getPublicSystemMessageAvatar, isPublicSystemMessage, trackEnableCommunityFlow
 
-// Module 8437 (PublicGuildsUtils)
-import Constants from "Constants" /* 1087 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5743 */;
-import isCrosspostDefault from "isCrosspost" /* 8439 */;
-import PublicGuildsConstants from "PublicGuildsConstants" /* 8438 */;
+// Module 8502 (PublicGuildsUtils)
+import Constants from "Constants" /* 1072 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5760 */;
+import isCrosspostDefault from "isCrosspost" /* 8504 */;
+import PublicGuildsConstants from "PublicGuildsConstants" /* 8503 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -21,18 +21,18 @@ let hasOwnProperty;
 const AnalyticEvents = Constants.AnalyticEvents;
 const result = size.fileFinishedImporting("modules/public_guilds/PublicGuildsUtils.tsx");
 
-export const isPublicSystemMessage = function isPublicSystemMessage(message) {
+export function isPublicSystemMessage(message) {
   let tmp = isCrosspostDefault(message) && message.messageReference.guild_id === _false;
   if (!tmp) {
     tmp = null != message.author && message.author.id === React3;
     const tmp4 = null != message.author && message.author.id === React3;
   }
   return tmp;
-};
-export const getPublicSystemMessageAvatar = function getPublicSystemMessageAvatar() {
+}
+export function getPublicSystemMessageAvatar() {
   return require("AssetRegistry");
-};
-export const trackEnableCommunityFlow = function trackEnableCommunityFlow(fromStep) {
+}
+export function trackEnableCommunityFlow(fromStep) {
   const track = AnalyticsUtilsDefault.track;
   const USER_FLOW_TRANSITION = AnalyticEvents.USER_FLOW_TRANSITION;
   const obj = { flow_type: hasOwnProperty, from_step: fromStep.fromStep, to_step: fromStep.toStep };
@@ -40,4 +40,4 @@ export const trackEnableCommunityFlow = function trackEnableCommunityFlow(fromSt
   const obj2 = AppAnalyticsUtils;
   const merged = Object.assign(obj2.collectGuildAnalyticsMetadata(fromStep.guildId));
   track(USER_FLOW_TRANSITION, obj);
-};
+}

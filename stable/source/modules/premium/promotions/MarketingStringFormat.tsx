@@ -1,13 +1,13 @@
-// Module ID: 16312
-// Function ID: 16313
+// Module ID: 16881
+// Function ID: 16882
 // Name: MarketingStringFormat
-// Dependencies: [3, 1130, 1128, 2]
+// Dependencies: [3, 1115, 1113, 2]
 // Exports: formatMarketingPlainString, formatMarketingString
 
-// Module 16312 (MarketingStringFormat)
+// Module 16881 (MarketingStringFormat)
 import LoggerDefault from "Logger" /* 3 */;
-import intl2 from "intl" /* 1128 */;
-import intl_util from "intl/util" /* 1130 */;
+import intl2 from "intl" /* 1113 */;
+import intl_util from "intl/util" /* 1115 */;
 import size from "module_2" /* 2 */;
 
 function formatWith(acknowledgedBadgeLabel, arg1, fn) {
@@ -31,19 +31,19 @@ const logger = new LoggerDefault("MarketingStringFormat.tsx");
 const tmp2 = new LoggerDefault("MarketingStringFormat.tsx");
 const result = size.fileFinishedImporting("modules/premium/promotions/MarketingStringFormat.tsx");
 
-export const formatMarketingString = function formatMarketingString(acknowledgedBadgeLabel, arg1) {
+export function formatMarketingString(acknowledgedBadgeLabel, arg1) {
   let closure_0 = arg1;
   return formatWith(acknowledgedBadgeLabel, "", (arg0) => {
     closure_0 = arg0;
     const intl = intl2.intl;
     return intl.format(() => closure_0, closure_0);
   });
-};
-export const formatMarketingPlainString = function formatMarketingPlainString(acknowledgedBadgeLabel, formatVariableValues) {
+}
+export function formatMarketingPlainString(acknowledgedBadgeLabel, formatVariableValues) {
   let closure_0 = formatVariableValues;
   return formatWith(acknowledgedBadgeLabel, "", (time) => {
     let closure_0 = time;
     const intl = intl2.intl;
     return intl.formatToPlainString(() => closure_0, closure_0);
   });
-};
+}

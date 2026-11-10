@@ -1,14 +1,19 @@
-// Module ID: 18769
-// Function ID: 18770
+// Module ID: 19381
+// Function ID: 19382
 // Name: ManagerRegistry
-// Dependencies: [18770, 18773, 18780, 18781, 18782, 18783, 14137, 18786, 18787, 18790, 18791, 18793, 13830, 18794, 18795, 18796, 18800, 18801, 18802, 18804, 13416, 18809, 18810, 13617, 18811, 18812, 18813, 18814, 18819, 18820, 18824, 18825, 18828, 18830, 18848, 10151, 8328, 15833, 18849, 18850, 18852, 18854, 18855, 18856, 8919, 18857, 18858, 18859, 18860, 18868, 18869, 18885, 16964, 18887, 18888, 18892, 18894, 18896, 18897, 9749, 18910, 16712, 18911, 18912, 18917, 18919, 18933, 18950, 18953, 14637, 18954, 18955, 18964, 18965, 18967, 18968, 18970, 18971, 18974, 18976, 18977, 18979, 18980, 18981, 18982, 18983, 18984, 18988, 18989, 11556, 18991, 18994, 18995, 18997, 18998, 19002, 7244, 9102, 19003, 19004, 8773, 19005, 18788, 19006, 19007, 19394, 19395, 19396, 19398, 19399, 19400, 19402, 19403, 19405, 19406, 19408, 19409, 19410, 19414, 19415, 19416, 19417, 17083, 19419, 19420, 19423, 19424, 19446, 19450, 19451, 19454, 19455, 19482, 19483, 19484, 19485, 19486, 19487, 19490, 2]
+// Dependencies: [19382, 19385, 19394, 19395, 19396, 19397, 14662, 1375, 19400, 19401, 19404, 19405, 19407, 11127, 19408, 19410, 19411, 19415, 19416, 19417, 19419, 14036, 19424, 19425, 14252, 19426, 19427, 19428, 19430, 19431, 19436, 19437, 19444, 19445, 19448, 19450, 19468, 10231, 8335, 16389, 19469, 19470, 19472, 19474, 19475, 19476, 8966, 19477, 19478, 19479, 19480, 19488, 19489, 19505, 17563, 19507, 19508, 19512, 19514, 19516, 19517, 9830, 19530, 17307, 19531, 19532, 19537, 19539, 19553, 19578, 19581, 15177, 19582, 19583, 19592, 19593, 19595, 19596, 19598, 19599, 19602, 19604, 19605, 19607, 19608, 19609, 19610, 19611, 19612, 19616, 19617, 11877, 19619, 19622, 19623, 19625, 19626, 19630, 7285, 9138, 19631, 19632, 8823, 19633, 19402, 19634, 19635, 20012, 20013, 20014, 20018, 20019, 20020, 20022, 20023, 20025, 20026, 20028, 20029, 20030, 20033, 20034, 20035, 20036, 17682, 20038, 20039, 20042, 20043, 20065, 20068, 20069, 20070, 20073, 20074, 20102, 20103, 20104, 20105, 20106, 20108, 20109, 20112, 2]
 
-// Module 18769 (ManagerRegistry)
-import ManagerRegistryShared from "ManagerRegistryShared" /* 19490 */;
+// Module 19381 (ManagerRegistry)
+import PlatformUtils_mod from "PlatformUtils" /* 1375 */;
+import ManagerRegistryShared from "ManagerRegistryShared" /* 20112 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
+let PlatformUtils;
+function inlineRequire() {
+  return require("ATTManager").default;
+}
 const obj = {
   AcceptInviteManager: {
     actions: ["DISPLAYED_INVITE_SHOW", "DISPLAYED_INVITE_CLEAR", "DEFERRED_INVITE_SHOW", "REGISTER_SUCCESS"],
@@ -55,13 +60,7 @@ const obj = {
       return require("AppStoreOverlayTelemetryManager").default;
     }
   },
-  ATTManager: {
-    actions: ["POST_CONNECTION_OPEN"],
-    inlineRequire() {
-      return require("ATTManager").default;
-    },
-    neverLoadBeforeConnectionOpen: true
-  },
+  ATTManager: { actions: PlatformUtils.isIOS() ? ["POST_CONNECTION_OPEN", "APP_STATE_UPDATE", "PUSH_NOTIFICATION_AUTHORIZATION_STATUS_UPDATE"] : ["POST_CONNECTION_OPEN"], inlineRequire, neverLoadBeforeConnectionOpen: true },
   AudioSessionModeManager: {
     inlineRequire() {
       return require("AudioSessionModeManager").default;
@@ -173,6 +172,13 @@ const obj = {
     inlineRequire() {
       return require("DeclarativeSystemNotifPermissionManager").default;
     }
+  },
+  DeviceSilentModeManager: {
+    actions: ["FRAME_LAUNCH"],
+    inlineRequire() {
+      return require("DeviceSilentModeManager").default;
+    },
+    hasStoreChangeListeners: true
   },
   DiceRollLifecycleManager: {
     actions: ["CHANNEL_SELECT", "DICE_ROLL_START"],
@@ -754,7 +760,7 @@ const obj = {
     neverLoadBeforeConnectionOpen: true
   },
   QuestFetchManager: {
-    actions: ["QUESTS_FETCH_CURRENT_QUESTS_BEGIN", "POST_CONNECTION_OPEN", "RUNNING_GAMES_CHANGE", "RUNNING_NON_GAMES_CHANGE", "USER_SETTINGS_PROTO_UPDATE", "START_SESSION", "LOGOUT"],
+    actions: ["QUESTS_FETCH_CURRENT_QUESTS_BEGIN", "QUESTS_FETCH_QUEST_HOME_HERO_BEGIN", "POST_CONNECTION_OPEN", "RUNNING_GAMES_CHANGE", "RUNNING_NON_GAMES_CHANGE", "USER_SETTINGS_PROTO_UPDATE", "START_SESSION", "LOGOUT"],
     inlineRequire() {
       return require("QuestFetchManager").default;
     },
@@ -846,6 +852,13 @@ const obj = {
     },
     neverLoadBeforeConnectionOpen: true
   },
+  RequestToStreamManager: {
+    actions: ["VOICE_STATE_UPDATES"],
+    inlineRequire() {
+      return require("RequestToStreamManager").default;
+    },
+    neverLoadBeforeConnectionOpen: true
+  },
   LibdiscoreExperimentManager: {
     actions: [],
     inlineRequire() {
@@ -902,6 +915,13 @@ const obj = {
     hasStoreChangeListeners: true,
     loadRightBeforeConnectionOpen: true
   },
+  PlayableProgressManager: {
+    actions: [],
+    inlineRequire() {
+      return require("PlayableProgressManager").default;
+    },
+    hasStoreChangeListeners: true
+  },
   QuestProgressManager: {
     actions: ["QUESTS_SEND_HEARTBEAT_SUCCESS", "QUESTS_SEND_HEARTBEAT_FAILURE", "QUESTS_ENROLL_SUCCESS", "RUNNING_GAMES_CHANGE", "RUNNING_NON_GAMES_CHANGE", "LOCAL_ACTIVITY_UPDATE", "RPC_APP_DISCONNECTED", "QUESTS_FETCH_CURRENT_QUESTS_SUCCESS", "STREAM_START", "STREAM_CREATE", "STREAM_CLOSE", "PASSIVE_UPDATE_V2", "VOICE_STATE_UPDATES", "EMBEDDED_ACTIVITY_LAUNCH_SUCCESS", "FRAME_LAUNCH", "FRAME_STOP", "EMBEDDED_ACTIVITY_UPDATE_V2", "QUESTS_PREVIEW_UPDATE_SUCCESS", "QUEST_APPLICATION_START_TIMER", "GAME_FETCH_SUCCESS", "APPLICATIONS_FETCH_SUCCESS"],
     inlineRequire() {
@@ -917,6 +937,8 @@ const obj = {
     loadRightBeforeConnectionOpen: true
   }
 };
+PlatformUtils = PlatformUtils_mod;
+({ actions: PlatformUtils.isIOS() ? ["POST_CONNECTION_OPEN", "APP_STATE_UPDATE", "PUSH_NOTIFICATION_AUTHORIZATION_STATUS_UPDATE"] : ["POST_CONNECTION_OPEN"], inlineRequire, neverLoadBeforeConnectionOpen: true });
 ManagerRegistryShared.initialize(obj);
 const result = size.fileFinishedImporting("modules/app_startup/ManagerRegistry.native.tsx");
 

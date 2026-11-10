@@ -1,57 +1,29 @@
-// Module ID: 11469
-// Function ID: 11470
+// Module ID: 11770
+// Function ID: 11771
 // Name: MessageLoadingSpinner
-// Dependencies: [19, 17, 21, 1384, 558, 576, 5284, 587, 6912, 2]
+// Dependencies: [19, 17, 21, 1375, 5596, 575, 6953, 2]
+// Exports: default
 
-// Module 11469 (MessageLoadingSpinner)
+// Module 11770 (MessageLoadingSpinner)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import useToken2 from "useToken" /* 5284 */;
+import nativeDefault from "native" /* 575 */;
+import useToken2 from "useToken" /* 5596 */;
 import react from "react" /* 19 */;
-import PlatformUtils from "PlatformUtils" /* 1384 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import PlatformUtils from "PlatformUtils" /* 1375 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const ActivityIndicator_ActivityIndicator = tmp(6912);
+const ActivityIndicator_ActivityIndicator = tmp(6953);
 const requireNativeComponent = react_native.requireNativeComponent;
 const jsx = Fragment.jsx;
 let result = null;
 if (!PlatformUtils.isAndroid()) {
   result = requireNativeComponent("DCDMessageLoadingSpinner");
 }
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageLoadingSpinner(color) {
-  let tmp11;
-  const obj = react2;
-  const cResult = obj.c(3);
-  const useToken = useToken2.useToken;
-  color = color.color;
-  useToken2;
-  if (color == null) {
-    color = useToken(nativeDefault.colors.BACKGROUND_BRAND);
-  }
-  if (cResult[0] === color) {
-    let tmp5;
-    if (cResult[1] === color) {
-      tmp5 = cResult[2];
-    }
-    return tmp5;
-  }
-  if (null != result) {
-    const merged = Object.assign(color);
-    tmp11 = <tmp6 color={color} />;
-  } else {
-    const ActivityIndicator = ActivityIndicator_ActivityIndicator.ActivityIndicator;
-    const merged1 = Object.assign(color);
-    tmp11 = <ActivityIndicator animating={arg0.animate} />;
-  }
-  cResult[0] = color;
-  cResult[1] = color;
-  cResult[2] = tmp11;
-  tmp5 = tmp11;
-}) : (function MessageLoadingSpinner(color) {
+const result1 = size.fileFinishedImporting("components_native/common/MessageLoadingSpinner.tsx");
+
+export default function MessageLoadingSpinner(color) {
   let tmp9;
   const useToken = useToken2.useToken;
   color = color.color;
@@ -68,7 +40,4 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageLoa
     tmp9 = <ActivityIndicator animating={arg0.animate} />;
   }
   return tmp9;
-});
-const result1 = size.fileFinishedImporting("components_native/common/MessageLoadingSpinner.tsx");
-
-export default tmp4;
+};

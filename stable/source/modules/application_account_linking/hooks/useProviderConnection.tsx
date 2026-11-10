@@ -1,14 +1,14 @@
-// Module ID: 7305
-// Function ID: 7306
+// Module ID: 7346
+// Function ID: 7347
 // Name: useProviderConnection
-// Dependencies: [5, 19, 6532, 504, 7306, 2]
+// Dependencies: [5, 19, 6572, 504, 7347, 2]
 // Exports: useProviderConnection
 
-// Module 7305 (useProviderConnection)
-import ConnectedAccountsActionCreatorsDefault from "ConnectedAccountsActionCreators" /* 7306 */;
+// Module 7346 (useProviderConnection)
+import ConnectedAccountsActionCreatorsDefault from "ConnectedAccountsActionCreators" /* 7347 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6532 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6572 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -16,14 +16,14 @@ let _require, c3, c6, closure_0;
 
 const result = size.fileFinishedImporting("modules/application_account_linking/hooks/useProviderConnection.tsx");
 
-export const useProviderConnection = function useProviderConnection(arg0) {
+export function useProviderConnection(provider_id) {
   let fetching;
-  _require = arg0;
+  _require = provider_id;
   let obj = require("get initialized");
   const items = [ConnectedAccountsStore];
   const stateFromStores = obj.useStateFromStores(items, () => {
     let account = null;
-    if (null != closure_0) {
+    if (null != provider_id) {
       account = ConnectedAccountsStore.getAccount(null, tmp);
     }
     return account;
@@ -48,7 +48,7 @@ export const useProviderConnection = function useProviderConnection(arg0) {
         const obj = { value, done: true };
         return obj;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c5;
@@ -126,15 +126,15 @@ export const useProviderConnection = function useProviderConnection(arg0) {
       }
     }
   });
-  const items2 = [arg0];
+  const items2 = [provider_id];
   let obj3 = {
     loading: stateFromStores1,
     hasConnection: tmp3,
-    canConnect: null != arg0,
+    canConnect: null != provider_id,
     startConnection: useCallback(function() {
       return closure_0(...arguments);
     }, items2),
     account: stateFromStores
   };
   return obj3;
-};
+}

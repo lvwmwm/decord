@@ -1,26 +1,26 @@
-// Module ID: 19476
-// Function ID: 19477
+// Module ID: 20096
+// Function ID: 20097
 // Name: pendingRequestTimestamp
-// Dependencies: [1128, 2832, 8160, 2]
+// Dependencies: [1113, 2836, 8372, 2]
 // Exports: formatPendingRequestSentText
 
-// Module 19476 (pendingRequestTimestamp)
-import intl3 from "intl" /* 1128 */;
-import _modDef2832 from "module_2832" /* 2832 */;
-import FamilyCenterUtils from "FamilyCenterUtils" /* 8160 */;
+// Module 20096 (pendingRequestTimestamp)
+import intl3 from "intl" /* 1113 */;
+import _modDef2836 from "module_2836" /* 2836 */;
+import FamilyCenterUtils from "FamilyCenterUtils" /* 8372 */;
 import size from "module_2" /* 2 */;
 
 function SENT_TIMESTAMP_FORMATTER() {
   let intl;
   let intl2;
-  const time = { seconds: intl.string(_modDef2832.M4NOO3), minutes: _modDef2832["9nem85"], hours: _modDef2832.sJjWRY, yesterday: intl2.string(_modDef2832["7SxW32"]), days: _modDef2832.tVHevX, date: _modDef2832.q6jzya };
+  const time = { seconds: intl.string(_modDef2836.M4NOO3), minutes: _modDef2836["9nem85"], hours: _modDef2836.sJjWRY, yesterday: intl2.string(_modDef2836["7SxW32"]), days: _modDef2836.tVHevX, date: _modDef2836.q6jzya };
   intl = intl3.intl;
   intl2 = intl3.intl;
   return time;
 }
 const result = size.fileFinishedImporting("modules/safety_flows/pendingRequestTimestamp.tsx");
 
-export const formatPendingRequestSentText = function formatPendingRequestSentText(created_at) {
+export function formatPendingRequestSentText(created_at) {
   const obj = FamilyCenterUtils;
   return obj.formatLinkTimestamp(Date.parse(created_at), SENT_TIMESTAMP_FORMATTER);
-};
+}

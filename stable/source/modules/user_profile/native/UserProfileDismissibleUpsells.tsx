@@ -1,25 +1,25 @@
-// Module ID: 14446
-// Function ID: 14447
+// Module ID: 14985
+// Function ID: 14986
 // Name: UserProfileDismissibleUpsells
-// Dependencies: [19, 17, 1392, 8704, 7576, 4852, 21, 5003, 587, 558, 576, 14447, 8711, 504, 2053, 4839, 10440, 1202, 5266, 1128, 6940, 6963, 5276, 9457, 12163, 2]
+// Dependencies: [19, 17, 1383, 8754, 7617, 4860, 21, 5014, 575, 14986, 8761, 504, 2047, 10520, 4847, 1187, 5624, 1113, 6980, 7054, 5634, 9528, 12468, 2]
+// Exports: default
 
-// Module 14446 (UserProfileDismissibleUpsells)
+// Module 14985 (UserProfileDismissibleUpsells)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 587 */;
-import intl5 from "intl" /* 1128 */;
-import native from "native" /* 1202 */;
-import dismissible_content from "dismissible_content" /* 4839 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4852 */;
-import XSmallIcon from "XSmallIcon" /* 6963 */;
-import ColorConstants from "ColorConstants" /* 7576 */;
-import Constants from "Constants" /* 8704 */;
-import NitroWheelIcon from "NitroWheelIcon" /* 9457 */;
-import ShopIcon from "ShopIcon" /* 12163 */;
+import nativeDefault from "native" /* 575 */;
+import intl5 from "intl" /* 1113 */;
+import native from "native" /* 1187 */;
+import dismissible_content from "dismissible_content" /* 4847 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4860 */;
+import XSmallIcon from "XSmallIcon" /* 7054 */;
+import ColorConstants from "ColorConstants" /* 7617 */;
+import Constants from "Constants" /* 8754 */;
+import NitroWheelIcon from "NitroWheelIcon" /* 9528 */;
+import ShopIcon from "ShopIcon" /* 12468 */;
 import react_mod from "react" /* 19 */;
-import UserStore from "UserStore" /* 1392 */;
+import UserStore from "UserStore" /* 1383 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5003 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let c9;
@@ -40,227 +40,9 @@ obj2 = { paddingVertical: 16, paddingHorizontal: 12, borderRadius: nativeDefault
 createStyles = createStyles.createStyles;
 obj3 = { backgroundColor: nativeDefault.colors.PROFILE_GRADIENT_OVERLAY_SYNCED_WITH_USER_THEME };
 let closure_11 = createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileDismissibleUpsells(navigateToShop) {
-  let colors;
-  let currentUser;
-  let hasCustomProfileTheme;
-  let tmp10;
-  let tmp6;
-  let tmp7;
-  const tmp = navigateToShop;
-  let obj = navigateToShop(hasCustomProfileTheme[10]);
-  const cResult = obj.c(22);
-  navigateToShop = navigateToShop.navigateToShop;
-  const navigateToPremium = navigateToShop.navigateToPremium;
-  hasCustomProfileTheme = navigateToShop.hasCustomProfileTheme;
-  let tmp4 = closure_11();
-  const upsellContainer = tmp4;
-  let obj2 = navigateToShop(hasCustomProfileTheme[11]);
-  const isPrivacyNoticeVisible = obj2.useIsPrivacyNoticeVisible();
-  let obj3 = navigateToShop(hasCustomProfileTheme[12]);
-  const trackUserProfileAction = obj3.useUserProfileAnalyticsContext().trackUserProfileAction;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let items = [currentUser];
-    const fn = function u() {
-      return currentUser.getCurrentUser();
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp6 = items;
-    tmp7 = fn;
-  } else {
-    [tmp6, tmp7] = cResult;
-  }
-  const tmpResult = tmp(hasCustomProfileTheme[13]);
-  const stateFromStores = tmpResult.useStateFromStores(tmp6, tmp7);
-  if (cResult[2] !== stateFromStores) {
-    const tmpResult2 = tmp(hasCustomProfileTheme[14]);
-    const isPremiumResult = tmpResult2.isPremium(stateFromStores);
-    cResult[2] = stateFromStores;
-    cResult[3] = isPremiumResult;
-    tmp10 = isPremiumResult;
-  } else {
-    tmp10 = cResult[3];
-  }
-  currentUser = tmp10;
-  if (cResult[4] === navigateToShop) {
-    let tmp12;
-    if (cResult[5] === trackUserProfileAction) {
-      tmp12 = cResult[6];
-    }
-    const onPress = tmp12;
-    if (cResult[7] === navigateToPremium) {
-      let tmp13;
-      if (cResult[8] === trackUserProfileAction) {
-        tmp13 = cResult[9];
-      }
-      let closure_7 = tmp13;
-      if (cResult[10] === navigateToPremium) {
-        let tmp14;
-        if (cResult[11] === trackUserProfileAction) {
-          tmp14 = cResult[12];
-        }
-        let closure_8 = tmp14;
-        if (isPrivacyNoticeVisible) {
-          const _Symbol2 = Symbol;
-          if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
-            const tmp24 = closure_8(navigateToPremium(hasCustomProfileTheme[11]), {});
-            class D {
-              constructor() {
-                const obj = { action: TrackUserProfileActions.GET_PREMIUM };
-                trackUserProfileAction(obj);
-                navigateToPremium();
-              }
-            }
-            cResult[13] = tmp24;
-          }
-          class D {
-            constructor() {
-              const obj = { action: TrackUserProfileActions.GET_PREMIUM };
-              trackUserProfileAction(obj);
-              navigateToPremium();
-            }
-          }
-        } else {
-          let tmp16;
-          const _Symbol = Symbol;
-          if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
-            let items1 = [tmp(tmp2[15]).DismissibleContent.USER_PROFILE_PREMIUM_AND_SHOP_ENTRY_POINTS];
-            class D {
-              constructor() {
-                const obj = { action: TrackUserProfileActions.GET_PREMIUM };
-                trackUserProfileAction(obj);
-                navigateToPremium();
-              }
-            }
-            tmp16 = items1;
-          } else {
-            tmp16 = cResult[14];
-          }
-          class D {
-            constructor() {
-              const obj = { action: TrackUserProfileActions.GET_PREMIUM };
-              trackUserProfileAction(obj);
-              navigateToPremium();
-            }
-          }
-          let obj4 = {
-            contentTypes: tmp16,
-            children(markAsDismissed) {
-                      let Button;
-                      let Button2;
-                      let intl;
-                      let intl2;
-                      let intl4;
-                      let items;
-                      let items1;
-                      let items2;
-                      let obj;
-                      let obj11;
-                      let obj9;
-                      markAsDismissed = markAsDismissed.markAsDismissed;
-                      let tmp11Result = null;
-                      if (markAsDismissed.visibleContent === dismissible_content.DismissibleContent.USER_PROFILE_PREMIUM_AND_SHOP_ENTRY_POINTS) {
-                        let stringResult;
-                        const obj2 = { borderWidth: 2, direction: native.GradientBorder.Direction.VERTICAL, colors, borderRadius: nativeDefault.radii.lg, children: React4(View, obj) };
-                        const GradientBorder = tmp(1202).GradientBorder;
-                        const obj3 = {};
-                        const merged = Object.assign(upsellContainer.upsellContainer);
-                        obj = { style: obj3, children: items1 };
-                        const tmp4 = hasCustomProfileTheme ? upsellContainer.customProfileThemeUpsellContainer : {};
-                        const merged1 = Object.assign(tmp4);
-                        const obj4 = { style: upsellContainer.header, children: items };
-                        const obj5 = { accessibilityRole: "header", variant: "text-sm/semibold", children: intl.string(intl5.t.EIYbj6) };
-                        const Text = tmp(5266).Text;
-                        intl = tmp(1128).intl;
-                        items = [metroImportAll(Text, obj5), ];
-                        const obj6 = {
-                          accessibilityRole: "button",
-                          accessibilityLabel: intl2.string(intl5.t["6Xcq+Y"]),
-                          onPress() {
-                              return markAsDismissed(constants.USER_DISMISS);
-                            },
-                          children: metroImportAll(XSmallIcon.XSmallIcon, { size: "sm" })
-                        };
-                        const PressableOpacity = tmp(6940).PressableOpacity;
-                        intl2 = tmp(1128).intl;
-                        items[1] = metroImportAll(PressableOpacity, obj6);
-                        items1 = [React4(View, obj4), ];
-                        const obj7 = { style: upsellContainer.upsellButtonsContainer, children: items2 };
-                        const obj8 = { style: upsellContainer.upsellButton, children: metroImportAll(Button, obj9) };
-                        Button = tmp(5276).Button;
-                        const intl3 = tmp(1128).intl;
-                        const string = intl3.string;
-                        const t = tmp(1128).t;
-                        if (currentUser) {
-                          stringResult = string(t["0Q61kF"]);
-                        } else {
-                          stringResult = string(t.x6rkDp);
-                        }
-                        obj9 = { text: stringResult, onPress: currentUser ? metroImportAll : constants, icon: metroImportAll(NitroWheelIcon.NitroWheelIcon, { size: "sm" }), iconPosition: "start", variant: "secondary", shiny: true };
-                        items2 = [metroImportAll(View, obj8), ];
-                        const obj10 = { style: upsellContainer.upsellButton, children: metroImportAll(Button2, obj11) };
-                        obj11 = { text: intl4.string(intl5.t.pWG4ze), onPress, icon: metroImportAll(ShopIcon.ShopIcon, { size: "sm" }), iconPosition: "start", variant: "secondary" };
-                        Button2 = tmp(5276).Button;
-                        intl4 = tmp(1128).intl;
-                        items2[1] = metroImportAll(View, obj10);
-                        items1[1] = React4(View, obj7);
-                        tmp11Result = tmp11(GradientBorder, obj2);
-                      }
-                      return tmp11Result;
-                    }
-          };
-          const tmp20 = closure_8(navigateToPremium(hasCustomProfileTheme[16]), obj4);
-          cResult[15] = tmp13;
-          cResult[16] = tmp12;
-          cResult[17] = tmp14;
-          cResult[18] = hasCustomProfileTheme;
-          cResult[19] = tmp10;
-          cResult[20] = tmp4;
-          cResult[21] = tmp20;
-        }
-        class D {
-          constructor() {
-            const obj = { action: TrackUserProfileActions.GET_PREMIUM };
-            trackUserProfileAction(obj);
-            navigateToPremium();
-          }
-        }
-      }
-      class D {
-        constructor() {
-          const obj = { action: TrackUserProfileActions.GET_PREMIUM };
-          trackUserProfileAction(obj);
-          navigateToPremium();
-        }
-      }
-      cResult[10] = navigateToPremium;
-      cResult[11] = trackUserProfileAction;
-      cResult[12] = tmp15;
-      tmp14 = tmp15;
-    }
-    class D {
-      constructor() {
-        const obj = { action: TrackUserProfileActions.GET_PREMIUM };
-        trackUserProfileAction(obj);
-        navigateToPremium();
-      }
-    }
-    cResult[7] = navigateToPremium;
-    cResult[8] = trackUserProfileAction;
-    cResult[9] = D;
-    tmp13 = D;
-  }
-  const fn2 = function f() {
-    const obj = { action: TrackUserProfileActions.VISIT_SHOP };
-    trackUserProfileAction(obj);
-    navigateToShop();
-  };
-  cResult[4] = navigateToShop;
-  cResult[5] = trackUserProfileAction;
-  cResult[6] = fn2;
-  tmp12 = fn2;
-}) : (function UserProfileDismissibleUpsells(navigateToShop) {
+const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileDismissibleUpsells.tsx");
+
+export default function UserProfileDismissibleUpsells(navigateToShop) {
   let colors;
   let items4;
   let tmp5Result;
@@ -271,14 +53,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileD
   let currentUser;
   react = closure_11();
   const tmp = navigateToShop;
-  let obj = navigateToShop(hasCustomProfileTheme[11]);
+  let obj = navigateToShop(hasCustomProfileTheme[9]);
   const isPrivacyNoticeVisible = obj.useIsPrivacyNoticeVisible();
-  let obj2 = navigateToShop(hasCustomProfileTheme[12]);
+  let obj2 = navigateToShop(hasCustomProfileTheme[10]);
   const trackUserProfileAction = obj2.useUserProfileAnalyticsContext().trackUserProfileAction;
-  let obj3 = navigateToShop(hasCustomProfileTheme[13]);
+  let obj3 = navigateToShop(hasCustomProfileTheme[11]);
   let items = [currentUser];
   const stateFromStores = obj3.useStateFromStores(items, () => currentUser.getCurrentUser());
-  let obj4 = navigateToShop(hasCustomProfileTheme[14]);
+  let obj4 = navigateToShop(hasCustomProfileTheme[12]);
   currentUser = obj4.isPremium(stateFromStores);
   let items1 = [navigateToShop, trackUserProfileAction];
   const onPress = react.useCallback(() => {
@@ -299,7 +81,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileD
     navigateToPremium();
   }, items3);
   if (isPrivacyNoticeVisible) {
-    tmp5Result = tmp5(tmp6(tmp2[11]), {});
+    tmp5Result = tmp5(tmp6(tmp2[9]), {});
   } else {
     let obj5 = {
       contentTypes: items4,
@@ -320,7 +102,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileD
           if (markAsDismissed.visibleContent === dismissible_content.DismissibleContent.USER_PROFILE_PREMIUM_AND_SHOP_ENTRY_POINTS) {
             let stringResult;
             const obj2 = { borderWidth: 2, direction: native.GradientBorder.Direction.VERTICAL, colors, borderRadius: nativeDefault.radii.lg, children: React4(View, obj) };
-            const GradientBorder = tmp(1202).GradientBorder;
+            const GradientBorder = tmp(1187).GradientBorder;
             const obj3 = {};
             const merged = Object.assign(upsellContainer.upsellContainer);
             obj = { style: obj3, children: items1 };
@@ -328,8 +110,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileD
             const merged1 = Object.assign(tmp4);
             const obj4 = { style: upsellContainer.header, children: items };
             const obj5 = { accessibilityRole: "header", variant: "text-sm/semibold", children: intl.string(intl5.t.EIYbj6) };
-            const Text = tmp(5266).Text;
-            intl = tmp(1128).intl;
+            const Text = tmp(5624).Text;
+            intl = tmp(1113).intl;
             items = [metroImportAll(Text, obj5), ];
             const obj6 = {
               accessibilityRole: "button",
@@ -339,16 +121,16 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileD
                 },
               children: metroImportAll(XSmallIcon.XSmallIcon, { size: "sm" })
             };
-            const PressableOpacity = tmp(6940).PressableOpacity;
-            intl2 = tmp(1128).intl;
+            const PressableOpacity = tmp(6980).PressableOpacity;
+            intl2 = tmp(1113).intl;
             items[1] = metroImportAll(PressableOpacity, obj6);
             items1 = [React4(View, obj4), ];
             const obj7 = { style: upsellContainer.upsellButtonsContainer, children: items2 };
             const obj8 = { style: upsellContainer.upsellButton, children: metroImportAll(Button, obj9) };
-            Button = tmp(5276).Button;
-            const intl3 = tmp(1128).intl;
+            Button = tmp(5634).Button;
+            const intl3 = tmp(1113).intl;
             const string = intl3.string;
-            const t = tmp(1128).t;
+            const t = tmp(1113).t;
             if (currentUser) {
               stringResult = string(t["0Q61kF"]);
             } else {
@@ -358,8 +140,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileD
             items2 = [metroImportAll(View, obj8), ];
             const obj10 = { style: upsellContainer.upsellButton, children: metroImportAll(Button2, obj11) };
             obj11 = { text: intl4.string(intl5.t.pWG4ze), onPress, icon: metroImportAll(ShopIcon.ShopIcon, { size: "sm" }), iconPosition: "start", variant: "secondary" };
-            Button2 = tmp(5276).Button;
-            intl4 = tmp(1128).intl;
+            Button2 = tmp(5634).Button;
+            intl4 = tmp(1113).intl;
             items2[1] = metroImportAll(View, obj10);
             items1[1] = React4(View, obj7);
             tmp11Result = tmp11(GradientBorder, obj2);
@@ -368,12 +150,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileD
         }
     };
     items4 = [];
-    const tmp6Result = navigateToPremium(hasCustomProfileTheme[16]);
-    items4[0] = tmp(hasCustomProfileTheme[15]).DismissibleContent.USER_PROFILE_PREMIUM_AND_SHOP_ENTRY_POINTS;
+    const tmp6Result = navigateToPremium(hasCustomProfileTheme[13]);
+    items4[0] = tmp(hasCustomProfileTheme[14]).DismissibleContent.USER_PROFILE_PREMIUM_AND_SHOP_ENTRY_POINTS;
     tmp5Result = tmp5(tmp6Result, obj5);
   }
   return tmp5Result;
-});
-const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileDismissibleUpsells.tsx");
-
-export default tmp4;
+};

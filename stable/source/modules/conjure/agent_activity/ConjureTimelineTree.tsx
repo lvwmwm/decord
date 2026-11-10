@@ -1,12 +1,12 @@
-// Module ID: 12344
-// Function ID: 12345
+// Module ID: 12590
+// Function ID: 12591
 // Name: ConjureTimelineTree
-// Dependencies: [32, 3862, 1128, 2]
+// Dependencies: [32, 3868, 1113, 2]
 // Exports: currentStep, describeNode, endsWithStreamedMessage, latestTodos, streamedContent, streamedMessages, turnLifecycle, turnSegments
 
-// Module 12344 (ConjureTimelineTree)
-import intl2 from "intl" /* 1128 */;
-import _modDef3862 from "module_3862" /* 3862 */;
+// Module 12590 (ConjureTimelineTree)
+import intl2 from "intl" /* 1113 */;
+import _modDef3868 from "module_3868" /* 3868 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -234,6 +234,12 @@ function buildTimelineTree(steps, arg1) {
           if (null != node.todo_id) {
             tmp13Result.todoId = node.todo_id;
           }
+          if (null != node.current_action) {
+            tmp13Result.currentAction = node.current_action;
+          }
+          if (null != node.result_text) {
+            tmp13Result.resultText = node.result_text;
+          }
           if (null != node.tier) {
             tmp13Result.tier = node.tier;
           }
@@ -267,10 +273,10 @@ function buildTimelineTree(steps, arg1) {
             }
             const result2 = obj2.set(tmp13Result, value2);
             const lines = node.lines;
-            for (const item10116 of lines) {
+            for (const item10120 of lines) {
               let tmp42;
-              let tmp38 = item10116;
-              let set1 = item10116.set;
+              let tmp38 = item10120;
+              let set1 = item10120.set;
               if (set1 == null) {
                 set1 = value2.get(tmp38.key);
               }
@@ -593,12 +599,19 @@ function isTurnWorkFrame(task_id) {
   }
   return tmp;
 }
-let obj = { healthcheck_failed: _modDef3862.iwOTgo, preview_ready: _modDef3862.okkgSB, working: _modDef3862.t8skVB, error: _modDef3862.avt0ax, error_service_unavailable: _modDef3862.yreXyD, error_rate_limited: _modDef3862.d8lNBq, error_timeout: _modDef3862.t1R7Rt };
+let obj = { healthcheck_failed: _modDef3868.iwOTgo, preview_ready: _modDef3868.okkgSB, working: _modDef3868.t8skVB, error: _modDef3868.avt0ax, error_service_unavailable: _modDef3868.yreXyD, error_rate_limited: _modDef3868.d8lNBq, error_timeout: _modDef3868.t1R7Rt, error_usage_limit: _modDef3868["9zBM8L"], error_internal_error: _modDef3868.ZnbiGS };
 const weakMap = new WeakMap();
 const weakMap1 = new WeakMap();
 let result = size.fileFinishedImporting("modules/conjure/agent_activity/ConjureTimelineTree.tsx");
 
-export const describeNode = function describeNode(currentStepResult) {
+export function describeNode(currentStepResult) {
+  if ("running" === currentStepResult.status) {
+    if (null != currentStepResult.currentAction) {
+      if ("" !== currentStepResult.currentAction) {
+        return currentStepResult.currentAction;
+      }
+    }
+  }
   if (null != currentStepResult.labelText) {
     if ("" !== currentStepResult.labelText) {
       return currentStepResult.labelText;
@@ -611,14 +624,14 @@ export const describeNode = function describeNode(currentStepResult) {
   const intl = intl2.intl;
   const string = intl.string;
   if (t8skVB == null) {
-    t8skVB = _modDef3862.t8skVB;
+    t8skVB = _modDef3868.t8skVB;
   }
   return string(t8skVB);
-};
+}
 export { buildTimelineTree };
-export const currentStep = function currentStep(productId) {
+export function currentStep(steps) {
   let tmp;
-  const iter = productId[Symbol.iterator]();
+  const iter = steps[Symbol.iterator]();
   const nextResult = iter.next();
   while (iter !== undefined) {
     let tmp5 = null == tmp;
@@ -631,13 +644,13 @@ export const currentStep = function currentStep(productId) {
     continue;
   }
   return tmp;
-};
-export const streamedContent = function streamedContent(steps) {
+}
+export function streamedContent(steps) {
   return scanTurnColumn(steps).items;
-};
+}
 export { segmentDurations };
 export { sharedTimelineTree };
-export const turnSegments = function turnSegments(steps, arg1) {
+export function turnSegments(steps, arg1) {
   let items4;
   let num2;
   function sharedScan(steps) {
@@ -750,19 +763,19 @@ export const turnSegments = function turnSegments(steps, arg1) {
     }
   }
   return items5;
-};
-export const turnLifecycle = function turnLifecycle(arr, turnActive) {
+}
+export function turnLifecycle(memo1, turnActive) {
   let index;
   let obj2;
   let obj5;
   turnActive = turnActive.turnActive;
-  const found = arr.filter((hasWork) => hasWork.hasWork || hasWork.hasTodos);
+  const found = memo1.filter((hasWork) => hasWork.hasWork || hasWork.hasTodos);
   const atResult = found.at(-1);
   let index1;
   if (atResult != null) {
     index1 = atResult.index;
   }
-  const atResult1 = arr.at(-1);
+  const atResult1 = memo1.at(-1);
   if (atResult1 != null) {
     index = atResult1.index;
   }
@@ -790,8 +803,8 @@ export const turnLifecycle = function turnLifecycle(arr, turnActive) {
   }
   const merged1 = Object.assign(obj5);
   return obj3;
-};
-export const streamedMessages = function streamedMessages(arr) {
+}
+export function streamedMessages(arr) {
   let items = scanTurnColumn(arr).items;
   return items.flatMap((type) => {
     let items1;
@@ -805,8 +818,8 @@ export const streamedMessages = function streamedMessages(arr) {
     }
     return items1;
   });
-};
-export const endsWithStreamedMessage = function endsWithStreamedMessage(arg0) {
+}
+export function endsWithStreamedMessage(arg0) {
   let diff = arg0.length - 1;
   if (0 <= diff) {
     while (true) {
@@ -842,8 +855,8 @@ export const endsWithStreamedMessage = function endsWithStreamedMessage(arg0) {
     return true;
   }
   return false;
-};
-export const latestTodos = function latestTodos(steps) {
+}
+export function latestTodos(steps) {
   let tmp2;
   let diff = steps.length - 1;
   if (0 <= diff) {
@@ -867,4 +880,4 @@ export const latestTodos = function latestTodos(steps) {
     return tmp2.items;
   }
   return null;
-};
+}

@@ -1,16 +1,16 @@
-// Module ID: 13618
-// Function ID: 13619
+// Module ID: 14253
+// Function ID: 14254
 // Name: ContactSyncAnalyticsUtils
-// Dependencies: [1392, 13613, 13614, 1087, 13616, 1267, 13619, 2]
+// Dependencies: [1383, 14248, 14249, 1072, 14251, 1252, 14254, 2]
 // Exports: trackFlowEnd, trackFlowStart, trackFlowStep
 
-// Module 13618 (ContactSyncAnalyticsUtils)
-import Constants from "Constants" /* 1087 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import ContactSyncModalStore from "ContactSyncModalStore" /* 13613 */;
-import ContactSyncConstants from "ContactSyncConstants" /* 13614 */;
-import NewUserAnalyticsUtils from "NewUserAnalyticsUtils" /* 13619 */;
-import UserStore from "UserStore" /* 1392 */;
+// Module 14253 (ContactSyncAnalyticsUtils)
+import Constants from "Constants" /* 1072 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import ContactSyncModalStore from "ContactSyncModalStore" /* 14248 */;
+import ContactSyncConstants from "ContactSyncConstants" /* 14249 */;
+import NewUserAnalyticsUtils from "NewUserAnalyticsUtils" /* 14254 */;
+import UserStore from "UserStore" /* 1383 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -27,7 +27,7 @@ let result = size.fileFinishedImporting("modules/contact_sync/native/ContactSync
 
 export { Steps };
 export const CONTACT_SYNC_ONBOARDING_LOCATION = "Onboarding";
-export const trackFlowStart = function trackFlowStart(arg0) {
+export function trackFlowStart(arg0) {
   let closure_0;
   let obj;
   _require = arg0;
@@ -58,8 +58,8 @@ export const trackFlowStart = function trackFlowStart(arg0) {
     ({ INITIALIZED: obj.from_step, LANDING: obj.to_step } = obj);
     track(CONTACT_SYNC_FLOW_KEY, obj);
   });
-};
-export const trackFlowStep = function trackFlowStep(LANDING, skip, back, location) {
+}
+export function trackFlowStep(LANDING, skip, back, location) {
   let _location;
   const tmp = getIsOnboarding();
   timestamp = Date.now();
@@ -81,8 +81,8 @@ export const trackFlowStep = function trackFlowStep(LANDING, skip, back, locatio
     obj2.trackNUFStep(from_step, LANDING, obj3);
   }
   from_step = LANDING;
-};
-export const trackFlowEnd = function trackFlowEnd(flag, location) {
+}
+export function trackFlowEnd(flag, location) {
   let _location;
   let obj;
   const tmp = getIsOnboarding();
@@ -99,4 +99,4 @@ export const trackFlowEnd = function trackFlowEnd(flag, location) {
   }
   track(CONTACT_SYNC_FLOW_KEY, obj);
   from_step = null;
-};
+}

@@ -1,108 +1,25 @@
-// Module ID: 18586
-// Function ID: 18587
+// Module ID: 19234
+// Function ID: 19235
 // Name: useCanConnect
-// Dependencies: [4855, 4877, 4935, 5662, 1098, 558, 576, 6026, 504, 2]
+// Dependencies: [4863, 4885, 4946, 5679, 1083, 504, 6046, 2]
+// Exports: default
 
-// Module 18586 (useCanConnect)
-import Constants from "Constants" /* 1098 */;
-import ChannelUtils from "ChannelUtils" /* 6026 */;
-import ChannelStore from "ChannelStore" /* 4855 */;
-import GuildStore from "GuildStore" /* 4877 */;
-import PermissionStore from "PermissionStore" /* 4935 */;
-import VoiceStateStore from "VoiceStateStore" /* 5662 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 19234 (useCanConnect)
+import Constants from "Constants" /* 1083 */;
+import ChannelUtils from "ChannelUtils" /* 6046 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import GuildStore from "GuildStore" /* 4885 */;
+import PermissionStore from "PermissionStore" /* 4946 */;
+import VoiceStateStore from "VoiceStateStore" /* 5679 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, obj1, tmp3, tmp4, tmp6, tmp7, tmp8;
+let _require;
 
 const Permissions = Constants.Permissions;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanConnect(arg0) {
-  let closure_0;
-  let first;
-  let tmp10;
-  let tmp9;
-  _require = arg0;
-  let tmp = _require;
-  let obj = require("react");
-  const cResult = obj.c(4);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [ChannelStore, , , ];
-    items[1] = PermissionStore;
-    items[2] = GuildStore;
-    items[3] = VoiceStateStore;
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    class C {
-      constructor() {
-        channel = closure_2.getChannel(closure_0);
-        tmp = null != channel;
-        if (tmp) {
-          isPrivateResult = channel.isPrivate();
-          if (!isPrivateResult) {
-            tmp3 = closure_4;
-            tmp4 = Permissions;
-            isPrivateResult = closure_4.can(Permissions.CONNECT, channel);
-          }
-          tmp = isPrivateResult;
-        }
-        obj1 = { canConnect: tmp, isAtMaxCapacity: null };
-        isChannelFullResult = null == channel;
-        if (!isChannelFullResult) {
-          tmp6 = closure_0;
-          tmp7 = closure_1;
-          obj3 = closure_0(closure_1[7]);
-          tmp8 = closure_5;
-          tmp9 = closure_3;
-          isChannelFullResult = obj3.isChannelFull(channel, closure_5, closure_3);
-        }
-        obj1.isAtMaxCapacity = isChannelFullResult;
-        return obj1;
-      }
-    }
-    const items1 = [arg0];
-    cResult[1] = arg0;
-    cResult[2] = C;
-    cResult[3] = items1;
-    tmp10 = items1;
-    tmp9 = C;
-  } else {
-    class C {
-      constructor() {
-        channel = closure_2.getChannel(closure_0);
-        tmp = null != channel;
-        if (tmp) {
-          isPrivateResult = channel.isPrivate();
-          if (!isPrivateResult) {
-            tmp3 = closure_4;
-            tmp4 = Permissions;
-            isPrivateResult = closure_4.can(Permissions.CONNECT, channel);
-          }
-          tmp = isPrivateResult;
-        }
-        obj1 = { canConnect: tmp, isAtMaxCapacity: null };
-        isChannelFullResult = null == channel;
-        if (!isChannelFullResult) {
-          tmp6 = closure_0;
-          tmp7 = closure_1;
-          obj3 = closure_0(closure_1[7]);
-          tmp8 = closure_5;
-          tmp9 = closure_3;
-          isChannelFullResult = obj3.isChannelFull(channel, closure_5, closure_3);
-        }
-        obj1.isAtMaxCapacity = isChannelFullResult;
-        return obj1;
-      }
-    }
-    tmp10 = cResult[3];
-  }
-  const tmpResult = tmp(504);
-  return tmpResult.useStateFromStoresObject(first, tmp9, tmp10);
-}) : (function useCanConnect(arg0) {
+const result = size.fileFinishedImporting("modules/voice_panel/native/hooks/useCanConnect.tsx");
+
+export default function useCanConnect(arg0) {
   let closure_0;
   _require = arg0;
   let obj = require("get initialized");
@@ -124,7 +41,4 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanConn
     }
     return obj;
   }, items1);
-});
-const result = size.fileFinishedImporting("modules/voice_panel/native/hooks/useCanConnect.tsx");
-
-export default tmp2;
+};

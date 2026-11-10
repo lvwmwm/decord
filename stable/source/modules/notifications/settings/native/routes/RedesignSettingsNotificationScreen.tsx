@@ -1,122 +1,28 @@
-// Module ID: 17360
-// Function ID: 17361
+// Module ID: 17957
+// Function ID: 17958
 // Name: RedesignSettingsNotificationScreen
-// Dependencies: [19, 16873, 8364, 21, 17361, 1128, 2864, 558, 576, 16874, 11240, 16876, 17362, 5295, 16012, 2]
+// Dependencies: [19, 17471, 8432, 21, 17958, 1113, 2868, 17472, 11540, 17474, 5593, 17959, 16583, 2]
 
-// Module 17360 (RedesignSettingsNotificationScreen)
+// Module 17957 (RedesignSettingsNotificationScreen)
 import Fragment from "Fragment" /* 21 */;
-import react2 from "react" /* 576 */;
-import intl2 from "intl" /* 1128 */;
-import _modDef2864 from "module_2864" /* 2864 */;
-import useMountEffectDefault from "useMountEffect" /* 5295 */;
-import SettingsConstants from "SettingsConstants" /* 8364 */;
-import SettingBuilders from "SettingBuilders" /* 11240 */;
-import SettingLayoutDefault from "SettingLayout" /* 16012 */;
-import AndroidNotificationSettingsStore from "AndroidNotificationSettingsStore" /* 16873 */;
-import ContextualOptInNudgeHoldoutExperimentDefault from "ContextualOptInNudgeHoldoutExperiment" /* 16874 */;
-import MobileNotifSettingsRouteBuilders from "MobileNotifSettingsRouteBuilders" /* 17361 */;
+import intl2 from "intl" /* 1113 */;
+import _modDef2868 from "module_2868" /* 2868 */;
+import useMountEffectDefault from "useMountEffect" /* 5593 */;
+import SettingsConstants from "SettingsConstants" /* 8432 */;
+import SettingBuilders from "SettingBuilders" /* 11540 */;
+import SettingLayoutDefault from "SettingLayout" /* 16583 */;
+import AndroidNotificationSettingsStore from "AndroidNotificationSettingsStore" /* 17471 */;
+import ContextualOptInNudgeHoldoutExperimentDefault from "ContextualOptInNudgeHoldoutExperiment" /* 17472 */;
+import MobileNotifSettingsRouteBuilders from "MobileNotifSettingsRouteBuilders" /* 17958 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let tmp2;
-
 let tmp3;
-const NotificationPermissionSettingsHeaderDefault = tmp3(16876);
+const NotificationPermissionSettingsHeaderDefault = tmp3(17474);
 let closure_4 = AndroidNotificationSettingsStore.initializeAndroidNotificationSettingsStore;
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const jsx = Fragment.jsx;
-const memo = react.memo;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function RedesignSettingsNotificationsScreen() {
-  let first;
-  let intl;
-  let items;
-  let items1;
-  let tmp12;
-  let tmp14;
-  let tmp5Result;
-  let tmp7;
-  let obj = react2;
-  const cResult = obj.c(6);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { location: "SettingsNotificationsScreen" };
-    cResult[0] = obj2;
-    first = obj2;
-  } else {
-    first = cResult[0];
-  }
-  const obj3 = ContextualOptInNudgeHoldoutExperimentDefault;
-  const inHoldout = obj3.useConfig(first).inHoldout;
-  if (cResult[1] !== !inHoldout) {
-    const obj4 = { sections: items, ListHeaderComponent: tmp5Result };
-    const createList = SettingBuilders.createList;
-    SettingBuilders;
-    items = [, ];
-    const tmpResult2 = MobileNotifSettingsRouteBuilders;
-    items[0] = tmpResult2.buildOverviewCategoriesSection();
-    const obj5 = { label: intl.string(_modDef2864.nvBHcD), settings: items1 };
-    intl = tmp(1128).intl;
-    items1 = [, , , , , , ];
-    ({ REDESIGN_IN_APP_NOTIFICATIONS: arr2[0], REDESIGN_IN_APP_MESSAGE_SOUNDS: arr2[1], REDESIGN_ANDROID_MESSAGE_NOTIFICATIONS: arr2[2], REDESIGN_IOS_NATIVE_PHONE_INTEGRATION: arr2[3], REDESIGN_ANDROID_NOTIFICATION_LIGHTS: arr2[4], REDESIGN_ANDROID_NOTIFICATION_VIBRATIONS: arr2[5], REDESIGN_ANDROID_NOTIFICATION_SOUNDS: arr2[6] } = MobileUserSettings);
-    items[1] = obj5;
-    tmp5Result = undefined;
-    if (!inHoldout) {
-      tmp5Result = tmp5(16876);
-    }
-    const list = createList(obj4);
-    cResult[1] = !inHoldout;
-    cResult[2] = list;
-    tmp7 = list;
-  } else {
-    tmp7 = cResult[2];
-  }
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    class S {
-      constructor() {
-        obj = closure_1_0(closure_1_2[12]);
-        result = obj.refreshSystemNotifPermissionsAsync("notification_settings_screen");
-        tmp2 = closure_1_4();
-        return;
-      }
-    }
-    cResult[3] = S;
-    tmp12 = S;
-  } else {
-    class S {
-      constructor() {
-        obj = closure_1_0(closure_1_2[12]);
-        result = obj.refreshSystemNotifPermissionsAsync("notification_settings_screen");
-        tmp2 = closure_1_4();
-        return;
-      }
-    }
-  }
-  useMountEffectDefault(tmp12);
-  if (cResult[4] !== tmp7) {
-    class S {
-      constructor() {
-        obj = closure_1_0(closure_1_2[12]);
-        result = obj.refreshSystemNotifPermissionsAsync("notification_settings_screen");
-        tmp2 = closure_1_4();
-        return;
-      }
-    }
-    const tmp15 = jsx(SettingLayoutDefault, { node: tmp7 });
-    cResult[4] = tmp7;
-    cResult[5] = tmp15;
-    tmp14 = tmp15;
-  } else {
-    class S {
-      constructor() {
-        obj = closure_1_0(closure_1_2[12]);
-        result = obj.refreshSystemNotifPermissionsAsync("notification_settings_screen");
-        tmp2 = closure_1_4();
-        return;
-      }
-    }
-  }
-  return tmp14;
-}) : (function RedesignSettingsNotificationsScreen() {
+const memoResult = react.memo(function RedesignSettingsNotificationsScreen() {
   let obj = ContextualOptInNudgeHoldoutExperimentDefault;
   const tmp = !obj.useConfig({ location: "SettingsNotificationsScreen" }).inHoldout;
   let closure_0 = tmp;
@@ -132,7 +38,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     items = [, ];
     const obj2 = MobileNotifSettingsRouteBuilders;
     items[0] = obj2.buildOverviewCategoriesSection();
-    const obj3 = { label: intl.string(_modDef2864.nvBHcD), settings: items1 };
+    const obj3 = { label: intl.string(_modDef2868.nvBHcD), settings: items1 };
     intl = intl2.intl;
     items1 = [, , , , , , ];
     ({ REDESIGN_IN_APP_NOTIFICATIONS: arr2[0], REDESIGN_IN_APP_MESSAGE_SOUNDS: arr2[1], REDESIGN_ANDROID_MESSAGE_NOTIFICATIONS: arr2[2], REDESIGN_IOS_NATIVE_PHONE_INTEGRATION: arr2[3], REDESIGN_ANDROID_NOTIFICATION_LIGHTS: arr2[4], REDESIGN_ANDROID_NOTIFICATION_VIBRATIONS: arr2[5], REDESIGN_ANDROID_NOTIFICATION_SOUNDS: arr2[6] } = MobileUserSettings);
@@ -144,12 +50,12 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     return createList(obj);
   }, items);
   let tmp3 = useMountEffectDefault(() => {
-    const obj = closure_0(dependencyMap[12]);
+    const obj = closure_0(dependencyMap[11]);
     const result = obj.refreshSystemNotifPermissionsAsync("notification_settings_screen");
     closure_1_4();
   });
   return jsx(SettingLayoutDefault, { node });
-}));
+});
 let result = size.fileFinishedImporting("modules/notifications/settings/native/routes/RedesignSettingsNotificationScreen.tsx");
 
 export default memoResult;

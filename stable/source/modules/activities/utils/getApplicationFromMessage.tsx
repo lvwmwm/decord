@@ -1,20 +1,20 @@
-// Module ID: 14590
-// Function ID: 14591
+// Module ID: 15132
+// Function ID: 15133
 // Name: getApplicationFromMessage
-// Dependencies: [2024, 14587, 8860, 2]
+// Dependencies: [2016, 15129, 8911, 2]
 // Exports: getApplicationFromMessage
 
-// Module 14590 (getApplicationFromMessage)
-import SpotifyConstants from "SpotifyConstants" /* 8860 */;
-import SpotifyApplicationRecord from "SpotifyApplicationRecord" /* 14587 */;
-import ApplicationRecord from "ApplicationRecord" /* 2024 */;
+// Module 15132 (getApplicationFromMessage)
+import SpotifyConstants from "SpotifyConstants" /* 8911 */;
+import SpotifyApplicationRecord from "SpotifyApplicationRecord" /* 15129 */;
+import ApplicationRecord from "ApplicationRecord" /* 2016 */;
 import size from "module_2" /* 2 */;
 
 const SpotifyApplication = SpotifyApplicationRecord.SpotifyApplication;
 const isSpotifyParty = SpotifyConstants.isSpotifyParty;
 const result = size.fileFinishedImporting("modules/activities/utils/getApplicationFromMessage.tsx");
 
-export const getApplicationFromMessage = function getApplicationFromMessage(application) {
+export function getApplicationFromMessage(application) {
   let fromServer;
   if (null != application.application) {
     fromServer = ApplicationRecord.createFromServer(application.application);
@@ -26,4 +26,4 @@ export const getApplicationFromMessage = function getApplicationFromMessage(appl
     }
   }
   return fromServer;
-};
+}

@@ -1,163 +1,33 @@
-// Module ID: 7591
-// Function ID: 7592
+// Module ID: 7629
+// Function ID: 7630
 // Name: useTrialOffer
-// Dependencies: [32, 19, 1392, 7592, 558, 576, 504, 2053, 4850, 2]
-// Exports: hasUserTrialOfferExpired
+// Dependencies: [32, 19, 1383, 7630, 504, 2047, 4858, 2]
+// Exports: hasUserTrialOfferExpired, useTrialOffer
 
-// Module 7591 (useTrialOffer)
+// Module 7629 (useTrialOffer)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import UserStore from "UserStore" /* 1392 */;
-import UserOfferStore from "UserOfferStore" /* 7592 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import UserStore from "UserStore" /* 1383 */;
+import UserOfferStore from "UserOfferStore" /* 7630 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, startResult, tmp3;
+let _require;
 
 let react = react_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTrialOffer(arg0) {
-  let closure_0;
-  let closure_3;
-  let currentUser;
-  let first;
-  let first1;
-  let stateFromStores;
-  let tmp10;
-  let tmp11;
-  let tmp6;
-  _require = arg0;
-  let tmp = _require;
-  const tmp2 = stateFromStores;
-  let obj = require("react");
-  const cResult = obj.c(9);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp5 = UserOfferStore;
-    const items = [UserOfferStore];
-    let num = 0;
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function o() {
-      return UserOfferStore.getUserTrialOffer(closure_0);
-    };
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-  }
-  const tmpResult = tmp(tmp2[6]);
-  stateFromStores = tmpResult.useStateFromStores(first, tmp6);
+let result = size.fileFinishedImporting("modules/premium/useTrialOffer.tsx");
+
+export function hasUserTrialOfferExpired(hasExpired) {
   let flag;
-  const useState = react.useState;
-  const obj3 = react;
-  if (stateFromStores != null) {
-    flag = stateFromStores.hasExpired;
+  if (hasExpired != null) {
+    flag = hasExpired.hasExpired;
   }
   if (flag == null) {
     flag = false;
   }
-  const tmp8 = first1(useState(flag), 2);
-  first1 = tmp8[0];
-  react = tmp8[1];
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const items1 = [UserStore];
-    const fn2 = function p() {
-      const obj = closure_0(stateFromStores[7]);
-      return obj.isPremium(currentUser.getCurrentUser());
-    };
-    cResult[3] = items1;
-    cResult[4] = fn2;
-    tmp11 = fn2;
-    tmp10 = items1;
-  } else {
-    tmp10 = cResult[3];
-    tmp11 = cResult[4];
-  }
-  const tmpResult2 = tmp(tmp2[6]);
-  const stateFromStores1 = tmpResult2.useStateFromStores(tmp10, tmp11);
-  let result = !stateFromStores1;
-  if (stateFromStores1) {
-    result = UserOfferStore.canFractionalPremiumUserUseOffer();
-  }
-  if (cResult[5] === first1) {
-    let tmp16;
-    let tmp17;
-    if (cResult[6] === stateFromStores) {
-      tmp16 = cResult[7];
-      tmp17 = cResult[8];
-    }
-    const effect = obj3.useEffect(tmp16, tmp17);
-    let tmp19 = null;
-    if (!first1) {
-      tmp19 = null;
-      if (result) {
-        tmp19 = stateFromStores;
-      }
-    }
-    return tmp19;
-  }
-  class E {
-    constructor() {
-      tmp = closure_1;
-      if (null != closure_1) {
-        if (tmp.hasAcknowledged) {
-          tmp2 = closure_0;
-          tmp3 = closure_1;
-          self = this;
-          self2 = this;
-          timeout = new closure_0(closure_1[8]).Timeout();
-          tmp4 = timeout;
-          closure_0 = timeout;
-          if (null != tmp) {
-            num = 0;
-            if (null != tmp.expiresAt) {
-              expiresAt = tmp.expiresAt;
-              tmp6 = globalThis;
-              _Date = Date;
-              time = expiresAt.getTime();
-              num = time - Date.now();
-            }
-            startResult = timeout.start(num, () => {
-              const tmp = first1;
-              if (!tmp) {
-                if (stateFromStores.hasExpired) {
-                  closure_3(true);
-                }
-              }
-              if (null != stateFromStores) {
-                let num = 0;
-                if (null != stateFromStores.expiresAt) {
-                  const expiresAt = tmp5.expiresAt;
-                  const _Date = Date;
-                  const time = expiresAt.getTime();
-                  num = time - Date.now();
-                }
-                const obj = timeout;
-                if (timeout != null) {
-                  obj.start(num, f159047);
-                }
-              }
-            });
-          }
-          return () => timeout.stop();
-        }
-      }
-      return;
-    }
-  }
-  const items2 = [first1, stateFromStores];
-  cResult[5] = first1;
-  cResult[6] = stateFromStores;
-  cResult[7] = E;
-  cResult[8] = items2;
-  tmp17 = items2;
-  tmp16 = E;
-}) : (function useTrialOffer(arg0) {
+  return flag;
+}
+export function useTrialOffer(arg0) {
   let closure_0;
   let closure_3;
   let currentUser;
@@ -183,9 +53,9 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTrialOffe
   first = tmp4[0];
   react = tmp4[1];
   const items1 = [UserStore];
-  const tmpResult = tmp(tmp2[6]);
+  const tmpResult = tmp(tmp2[4]);
   const stateFromStores1 = tmpResult.useStateFromStores(items1, () => {
-    const obj = closure_0(stateFromStores[7]);
+    const obj = closure_0(stateFromStores[5]);
     return obj.isPremium(currentUser.getCurrentUser());
   });
   let result = !stateFromStores1;
@@ -194,7 +64,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTrialOffe
   }
   const items2 = [first, stateFromStores];
   const effect = obj3.useEffect(function() {
-    const f159048 = () => {
+    const f135500 = () => {
       const tmp = first;
       if (!tmp) {
         if (stateFromStores.hasExpired) {
@@ -211,7 +81,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTrialOffe
         }
         const obj = timeout;
         if (timeout != null) {
-          obj.start(num, f159048);
+          obj.start(num, f135500);
         }
       }
     };
@@ -220,7 +90,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTrialOffe
       if (tmp.hasAcknowledged) {
         const self = this;
         const self2 = this;
-        const timeout = new closure_0(stateFromStores[8]).Timeout();
+        const timeout = new closure_0(stateFromStores[6]).Timeout();
         if (null != tmp) {
           let num = 0;
           if (null != tmp.expiresAt) {
@@ -229,7 +99,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTrialOffe
             let time = expiresAt.getTime();
             num = time - Date.now();
           }
-          timeout.start(num, f159048);
+          timeout.start(num, f135500);
         }
         return () => timeout.stop();
       }
@@ -243,17 +113,4 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTrialOffe
     }
   }
   return tmp9;
-});
-let result = size.fileFinishedImporting("modules/premium/useTrialOffer.tsx");
-
-export const hasUserTrialOfferExpired = function hasUserTrialOfferExpired(hasExpired) {
-  let flag;
-  if (hasExpired != null) {
-    flag = hasExpired.hasExpired;
-  }
-  if (flag == null) {
-    flag = false;
-  }
-  return flag;
-};
-export const useTrialOffer = tmp2;
+}

@@ -1,30 +1,30 @@
-// Module ID: 9681
-// Function ID: 9682
+// Module ID: 9761
+// Function ID: 9762
 // Name: AppLauncherUtils
-// Dependencies: [109, 5, 9682, 2024, 12111, 1087, 6015, 5008, 1128, 2031, 5658, 6843, 5665, 1384, 2000, 5666, 10230, 7787, 7598, 5940, 1417, 11201, 12147, 7662, 11437, 2]
-// Exports: appLauncherShowsRecommendations, ensureRecommendationSectionsOnlyContainActivities, executeAppLauncherCommand, formatPrimaryEntryPointCommandName, getApplicationDetails, getEmbeddedActivityConfig, getInstallAppProps, getInstallAppPropsFromProfileApplication, getSectionDescription, getSectionName, getShelfBadgeNameIfActive, isActivityApp, isAppAvailableInAppLauncher, isApplicationAdSupported, isApplicationMonetizedWithIAP, isPartnerApplication, isPromotedApplication, isRealApplication
+// Dependencies: [109, 5, 9762, 2016, 12416, 1072, 6035, 5019, 1113, 2024, 5675, 6883, 5682, 1375, 1992, 5683, 10310, 7824, 7636, 5958, 1409, 11502, 12452, 7700, 11738, 2]
+// Exports: appLauncherShowsRecommendations, ensureRecommendationSectionsOnlyContainActivities, executeAppLauncherCommand, formatPrimaryEntryPointCommandName, getApplicationDetails, getEmbeddedActivityConfig, getInstallAppProps, getInstallAppPropsFromProfileApplication, getSectionDescription, getSectionName, getShelfBadgeNameIfActive, isActivityApp, isAppAvailableInAppLauncher, isApplicationAdSupported, isApplicationMonetizedWithIAP, isConjureAppWithoutIcon, isPartnerApplication, isPromotedApplication, isRealApplication
 
-// Module 9681 (AppLauncherUtils)
-import Constants from "Constants" /* 1087 */;
-import intl4 from "intl" /* 1128 */;
-import PlatformUtils from "PlatformUtils" /* 1384 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
-import Server from "Server" /* 2000 */;
-import EmbeddedSurfaceUtils from "EmbeddedSurfaceUtils" /* 2031 */;
-import MessageConstants from "MessageConstants" /* 5008 */;
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5658 */;
-import getPlatformDefault from "getPlatform" /* 5665 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6015 */;
-import ApplicationFlagUtils from "ApplicationFlagUtils" /* 6843 */;
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7662 */;
-import AppLauncherTypes from "AppLauncherTypes" /* 11201 */;
-import ApplicationInstallUtils from "ApplicationInstallUtils" /* 11437 */;
-import ApplicationDirectoryCollectionItemType from "ApplicationDirectoryCollectionItemType" /* 12147 */;
+// Module 9761 (AppLauncherUtils)
+import Constants from "Constants" /* 1072 */;
+import intl4 from "intl" /* 1113 */;
+import PlatformUtils from "PlatformUtils" /* 1375 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1409 */;
+import Server from "Server" /* 1992 */;
+import EmbeddedSurfaceUtils from "EmbeddedSurfaceUtils" /* 2024 */;
+import MessageConstants from "MessageConstants" /* 5019 */;
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5675 */;
+import getPlatformDefault from "getPlatform" /* 5682 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6035 */;
+import ApplicationFlagUtils from "ApplicationFlagUtils" /* 6883 */;
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7700 */;
+import AppLauncherTypes from "AppLauncherTypes" /* 11502 */;
+import ApplicationInstallUtils from "ApplicationInstallUtils" /* 11738 */;
+import ApplicationDirectoryCollectionItemType from "ApplicationDirectoryCollectionItemType" /* 12452 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9682 */;
-import ApplicationRecord from "ApplicationRecord" /* 2024 */;
-import AppLauncherStore from "AppLauncherStore" /* 12111 */;
+import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9762 */;
+import ApplicationRecord from "ApplicationRecord" /* 2016 */;
+import AppLauncherStore from "AppLauncherStore" /* 12416 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -89,10 +89,21 @@ let obj = { id: BuiltInSectionId.BUILT_IN };
 let result = size.fileFinishedImporting("modules/app_launcher/utils/AppLauncherUtils.tsx");
 
 export const FAKE_BUILT_IN_APP = obj;
-export const isRealApplication = function isRealApplication(application) {
+export function isRealApplication(application) {
   return application.id !== BuiltInSectionId.BUILT_IN;
-};
-export const getSectionName = function getSectionName(FAKE_BUILT_IN_APP) {
+}
+export function isConjureAppWithoutIcon(icon, arg1) {
+  let tmp = null == icon.icon;
+  if (tmp) {
+    let tmp3 = icon instanceof ApplicationRecord ? icon.conjureProjectId : icon.conjure_project_id;
+    if (tmp3 == null) {
+      tmp3 = arg1;
+    }
+    tmp = null != tmp3;
+  }
+  return tmp;
+}
+export function getSectionName(FAKE_BUILT_IN_APP) {
   let name;
   if (FAKE_BUILT_IN_APP.id !== BuiltInSectionId.BUILT_IN) {
     name = FAKE_BUILT_IN_APP.name;
@@ -101,43 +112,43 @@ export const getSectionName = function getSectionName(FAKE_BUILT_IN_APP) {
     name = intl.string(intl4.t.UB2gG2);
   }
   return name;
-};
-export const getSectionDescription = function getSectionDescription(application) {
+}
+export function getSectionDescription(FAKE_BUILT_IN_APP) {
   let description;
-  if (application.id !== BuiltInSectionId.BUILT_IN) {
-    description = application.description;
+  if (FAKE_BUILT_IN_APP.id !== BuiltInSectionId.BUILT_IN) {
+    description = FAKE_BUILT_IN_APP.description;
   } else {
     const intl = intl4.intl;
     description = intl.string(intl4.t.X9fusn);
   }
   return description;
-};
-export const isActivityApp = function isActivityApp(application) {
+}
+export function isActivityApp(application) {
   let result = application.id !== BuiltInSectionId.BUILT_IN;
   if (result) {
     const obj = EmbeddedSurfaceUtils;
     result = obj.supportsEmbeddedSurface(application, EmbeddedSurfaceType.EmbeddedSurfaceType.MAIN);
   }
   return result;
-};
-export const isPartnerApplication = function isPartnerApplication(application) {
+}
+export function isPartnerApplication(application) {
   let hasApplicationFlagResult = application.id !== BuiltInSectionId.BUILT_IN;
   if (hasApplicationFlagResult) {
     const obj = ApplicationFlagUtils;
     hasApplicationFlagResult = obj.hasApplicationFlag(application, ApplicationFlags.PARTNER);
   }
   return hasApplicationFlagResult;
-};
-export const isPromotedApplication = function isPromotedApplication(FAKE_BUILT_IN_APP2) {
+}
+export function isPromotedApplication(FAKE_BUILT_IN_APP2) {
   let hasApplicationFlagResult = FAKE_BUILT_IN_APP2.id !== BuiltInSectionId.BUILT_IN;
   if (hasApplicationFlagResult) {
     const obj = ApplicationFlagUtils;
     hasApplicationFlagResult = obj.hasApplicationFlag(FAKE_BUILT_IN_APP2, ApplicationFlags.PROMOTED);
   }
   return hasApplicationFlagResult;
-};
+}
 export { getShelfBadgeTypeIfActive };
-export const getShelfBadgeNameIfActive = function getShelfBadgeNameIfActive(application) {
+export function getShelfBadgeNameIfActive(application) {
   const tmp = getShelfBadgeTypeIfActive(application);
   if (Server.EmbeddedActivityLabelTypes.NEW === tmp) {
     return "New";
@@ -146,8 +157,8 @@ export const getShelfBadgeNameIfActive = function getShelfBadgeNameIfActive(appl
   } else {
     return "";
   }
-};
-export const getEmbeddedActivityConfig = function getEmbeddedActivityConfig(id) {
+}
+export function getEmbeddedActivityConfig(id) {
   let tmp2 = null;
   if (id.id !== BuiltInSectionId.BUILT_IN) {
     let result = id.id !== tmp.BUILT_IN;
@@ -161,8 +172,8 @@ export const getEmbeddedActivityConfig = function getEmbeddedActivityConfig(id) 
     }
   }
   return tmp2;
-};
-export const executeAppLauncherCommand = function executeAppLauncherCommand(arg0) {
+}
+export function executeAppLauncherCommand(arg0) {
   let commandOrigin;
   let context;
   ({ command: require, optionValues: importDefault, context } = arg0);
@@ -187,7 +198,7 @@ export const executeAppLauncherCommand = function executeAppLauncherCommand(arg0
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -263,7 +274,7 @@ export const executeAppLauncherCommand = function executeAppLauncherCommand(arg0
           }
           maxSizeCallback = 0;
           commandOrigin = 3;
-          return { value: "IconComponent", done: "+352" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp37) {
         commandTargetId = tmp37;
@@ -280,8 +291,8 @@ export const executeAppLauncherCommand = function executeAppLauncherCommand(arg0
     return closure_0(...arguments);
   }
   return submitCommand();
-};
-export const getApplicationDetails = function getApplicationDetails(id) {
+}
+export function getApplicationDetails(id) {
   let getApplicationIconURL;
   let intl;
   let intl2;
@@ -311,11 +322,11 @@ export const getApplicationDetails = function getApplicationDetails(id) {
     intl2 = intl4.intl;
   }
   return obj8;
-};
-export const isApplicationMonetizedWithIAP = function isApplicationMonetizedWithIAP(application) {
+}
+export function isApplicationMonetizedWithIAP(application) {
   return application.id !== BuiltInSectionId.BUILT_IN && (application instanceof ApplicationRecord ? application.isMonetized : application.is_monetized);
-};
-export const isApplicationAdSupported = function isApplicationAdSupported(application) {
+}
+export function isApplicationAdSupported(application) {
   let tmp2 = null;
   if (application.id !== BuiltInSectionId.BUILT_IN) {
     let result = application.id !== tmp.BUILT_IN;
@@ -329,11 +340,11 @@ export const isApplicationAdSupported = function isApplicationAdSupported(applic
     }
   }
   return null != tmp2 && tmp2.displays_advertisements;
-};
-export const appLauncherShowsRecommendations = function appLauncherShowsRecommendations(entrypoint) {
+}
+export function appLauncherShowsRecommendations(entrypoint) {
   return entrypoint === AppLauncherTypes.AppLauncherEntrypoint.TEXT;
-};
-export const formatPrimaryEntryPointCommandName = function formatPrimaryEntryPointCommandName(displayName) {
+}
+export function formatPrimaryEntryPointCommandName(displayName) {
   let str = "";
   if (null != displayName) {
     const charAtResult = displayName.charAt(0);
@@ -342,11 +353,11 @@ export const formatPrimaryEntryPointCommandName = function formatPrimaryEntryPoi
     str = sum.replaceAll("_", " ");
   }
   return str;
-};
-export const ensureRecommendationSectionsOnlyContainActivities = function ensureRecommendationSectionsOnlyContainActivities(stateFromStores) {
+}
+export function ensureRecommendationSectionsOnlyContainActivities(stateFromStores1) {
   let tmp3;
   const items = [];
-  const iter = stateFromStores[Symbol.iterator]();
+  const iter = stateFromStores1[Symbol.iterator]();
   const nextResult = iter.next();
   while (iter !== undefined) {
     let prop = nextResult.application_directory_collection_items;
@@ -373,11 +384,11 @@ export const ensureRecommendationSectionsOnlyContainActivities = function ensure
     continue;
   }
   return items;
-};
-export const getInstallAppPropsFromProfileApplication = function getInstallAppPropsFromProfileApplication(application) {
+}
+export function getInstallAppPropsFromProfileApplication(application) {
   return { applicationId: application.id, customInstallUrl: application.customInstallUrl, installParams: application.installParams, integrationTypesConfig: application.integrationTypesConfig };
-};
-export const getInstallAppProps = function getInstallAppProps(application) {
+}
+export function getInstallAppProps(application) {
   let tmp;
   const obj = { applicationId: application.id, customInstallUrl: null, installParams: null, integrationTypesConfig: null };
   if (application instanceof ApplicationRecord) {
@@ -388,8 +399,8 @@ export const getInstallAppProps = function getInstallAppProps(application) {
     tmp = obj;
   }
   return tmp;
-};
-export const isAppAvailableInAppLauncher = function isAppAvailableInAppLauncher(id, arg1) {
+}
+export function isAppAvailableInAppLauncher(id, arg1) {
   let guildState = null;
   if (null != arg1) {
     guildState = ApplicationCommandIndexStore.getGuildState(arg1);
@@ -402,4 +413,4 @@ export const isAppAvailableInAppLauncher = function isAppAvailableInAppLauncher(
   const obj2 = ApplicationInstallUtils;
   const tmp6 = obj2.isAppUserInstallable(id) || result;
   return tmp6;
-};
+}

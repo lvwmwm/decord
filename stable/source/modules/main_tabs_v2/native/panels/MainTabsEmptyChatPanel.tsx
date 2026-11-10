@@ -1,25 +1,24 @@
-// Module ID: 18230
-// Function ID: 18231
+// Module ID: 18814
+// Function ID: 18815
 // Name: MainTabsEmptyChatPanel
-// Dependencies: [19, 17, 21, 5003, 587, 558, 576, 11256, 1633, 10877, 18231, 2]
+// Dependencies: [19, 17, 21, 5014, 575, 11557, 1625, 10832, 18815, 2]
+// Exports: default
 
-// Module 18230 (MainTabsEmptyChatPanel)
+// Module 18814 (MainTabsEmptyChatPanel)
 import Fragment from "Fragment" /* 21 */;
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
-import FavoritesHooks from "FavoritesHooks" /* 10877 */;
-import useDrawerWidth from "useDrawerWidth" /* 11256 */;
+import nativeDefault from "native" /* 575 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1625 */;
+import FavoritesHooks from "FavoritesHooks" /* 10832 */;
+import useDrawerWidth from "useDrawerWidth" /* 11557 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles from "createStyles" /* 5003 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let c3;
 let closure_4;
-let tmp4;
-const FavoritesEmptyStateDefault = tmp4(18231);
+let tmp3;
+const FavoritesEmptyStateDefault = tmp3(18815);
 ({ StyleSheet: c3, View: closure_4 } = react_native);
 const jsx = Fragment.jsx;
 let closure_6 = createStyles.createStyles((left, marginTop) => {
@@ -29,37 +28,9 @@ let closure_6 = createStyles.createStyles((left, marginTop) => {
   const merged = Object.assign(absoluteFillObject.absoluteFillObject);
   return obj;
 });
-tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MainTabsEmptyChatPanel() {
-  const obj = react2;
-  const cResult = obj.c(3);
-  const obj2 = useDrawerWidth;
-  const drawerWidth = obj2.useDrawerWidth();
-  const tmp5 = closure_6(drawerWidth, useSafeAreaInsetsDefault().top);
-  let tmp6 = null;
-  const obj3 = FavoritesHooks;
-  if (obj3.useIsFavoritesGuildSelected()) {
-    let first;
-    let tmp11;
-    const _Symbol = Symbol;
-    if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp10 = jsx(FavoritesEmptyStateDefault, {});
-      cResult[0] = tmp10;
-      first = tmp10;
-    } else {
-      first = cResult[0];
-    }
-    if (cResult[1] !== tmp5.container) {
-      const tmp14 = <React3 style={tmp5.container} pointerEvents="box-none">{first}</React3>;
-      cResult[1] = tmp5.container;
-      cResult[2] = tmp14;
-      tmp11 = tmp14;
-    } else {
-      tmp11 = cResult[2];
-    }
-    tmp6 = tmp11;
-  }
-  return tmp6;
-}) : (function MainTabsEmptyChatPanel() {
+const result = size.fileFinishedImporting("modules/main_tabs_v2/native/panels/MainTabsEmptyChatPanel.tsx");
+
+export default function MainTabsEmptyChatPanel() {
   const obj = useDrawerWidth;
   const drawerWidth = obj.useDrawerWidth();
   let tmp5 = null;
@@ -69,7 +40,4 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MainTabsEmptyCha
     tmp5 = <React3 style={tmp4.container} pointerEvents="box-none">{jsx(FavoritesEmptyStateDefault, {})}</React3>;
   }
   return tmp5;
-});
-const result = size.fileFinishedImporting("modules/main_tabs_v2/native/panels/MainTabsEmptyChatPanel.tsx");
-
-export default tmp4;
+};

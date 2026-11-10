@@ -1,13 +1,13 @@
-// Module ID: 11627
-// Function ID: 11628
+// Module ID: 11922
+// Function ID: 11923
 // Name: getStreamSettingsForPreset
-// Dependencies: [5846, 11628, 1384, 5877, 2]
+// Dependencies: [5864, 11923, 1375, 5909, 2]
 // Exports: canStreamWithPreset, getMaxSettingsForPreset
 
-// Module 11627 (getStreamSettingsForPreset)
-import PlatformUtils from "PlatformUtils" /* 1384 */;
-import canStreamWithSettingsDefault from "canStreamWithSettings" /* 11628 */;
-import StreamSettingsConstants from "StreamSettingsConstants" /* 5846 */;
+// Module 11922 (getStreamSettingsForPreset)
+import PlatformUtils from "PlatformUtils" /* 1375 */;
+import canStreamWithSettingsDefault from "canStreamWithSettings" /* 11923 */;
+import StreamSettingsConstants from "StreamSettingsConstants" /* 5864 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -47,10 +47,10 @@ function getStreamSettingsForPreset(arg0, user, guildPremiumTier, arg3) {
         if (arg0 === constants.PRESET_VIDEO) {
           let tmp26 = require;
           if (PlatformUtils.isPlatformEmbedded) {
-            let tmp26Result = tmp26(1384);
+            let tmp26Result = tmp26(1375);
             if (tmp26Result.isDesktop()) {
               let str = "getStreamSettingsForPreset";
-              let tmp11 = tmp4(5877)("getStreamSettingsForPreset", user, arg3);
+              let tmp11 = tmp4(5909)("getStreamSettingsForPreset", user, arg3);
               let tmp12 = tmp11;
               let maxResolution;
               if (tmp11 != null) {
@@ -87,7 +87,7 @@ const result = size.fileFinishedImporting("modules/go_live/utils/getStreamSettin
 
 export default getStreamSettingsForPreset;
 export { getApplicationStreamPresetValues };
-export const getMaxSettingsForPreset = function getMaxSettingsForPreset(PRESET_MOBILE_DEFAULT) {
+export function getMaxSettingsForPreset(PRESET_MOBILE_DEFAULT) {
   const tmp = getApplicationStreamPresetValues()[PRESET_MOBILE_DEFAULT];
   let first;
   if (tmp != null) {
@@ -97,7 +97,7 @@ export const getMaxSettingsForPreset = function getMaxSettingsForPreset(PRESET_M
     first = null;
   }
   return first;
-};
-export const canStreamWithPreset = function canStreamWithPreset(arg0, user, guildPremiumTier, arg3) {
+}
+export function canStreamWithPreset(arg0, user, guildPremiumTier, arg3) {
   return null != getStreamSettingsForPreset(arg0, user, guildPremiumTier, arg3);
-};
+}

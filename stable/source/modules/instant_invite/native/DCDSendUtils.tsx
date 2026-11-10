@@ -1,12 +1,12 @@
-// Module ID: 7855
-// Function ID: 7856
+// Module ID: 7895
+// Function ID: 7896
 // Name: DCDSendUtils
-// Dependencies: [17, 1384, 7856, 2]
+// Dependencies: [17, 1375, 7896, 2]
 // Exports: canOpenUrlScheme, canSendMail, canSendSMS, sendMail, sendSMS
 
-// Module 7855 (DCDSendUtils)
-import PlatformUtils from "PlatformUtils" /* 1384 */;
-import react_nativeDefault from "react-native" /* 7856 */;
+// Module 7895 (DCDSendUtils)
+import PlatformUtils from "PlatformUtils" /* 1375 */;
+import react_nativeDefault from "react-native" /* 7896 */;
 import react_native from "react-native" /* 17 */;
 import size from "module_2" /* 2 */;
 
@@ -18,7 +18,7 @@ let closure_4;
 ({ Linking: c3, NativeModules: closure_4 } = react_native);
 const result = size.fileFinishedImporting("modules/instant_invite/native/DCDSendUtils.tsx");
 
-export const sendSMS = function sendSMS(body, recipients) {
+export function sendSMS(body, recipients) {
   const obj = PlatformUtils;
   if (obj.isAndroid()) {
     let str = body.body;
@@ -36,8 +36,8 @@ export const sendSMS = function sendSMS(body, recipients) {
     const DCDSend = React3.DCDSend;
     DCDSend.sendSMS(body, recipients);
   }
-};
-export const sendMail = function sendMail(subject, subject2) {
+}
+export function sendMail(subject, subject2) {
   const obj = PlatformUtils;
   if (obj.isAndroid()) {
     let str = subject.subject;
@@ -59,8 +59,8 @@ export const sendMail = function sendMail(subject, subject2) {
     const DCDSend = React3.DCDSend;
     DCDSend.sendMail(subject, subject);
   }
-};
-export const canSendSMS = function canSendSMS() {
+}
+export function canSendSMS() {
   let resolveResult;
   const obj = PlatformUtils;
   if (obj.isAndroid()) {
@@ -71,8 +71,8 @@ export const canSendSMS = function canSendSMS() {
     resolveResult = DCDSend.canSendSMS();
   }
   return resolveResult;
-};
-export const canSendMail = function canSendMail() {
+}
+export function canSendMail() {
   let resolveResult;
   const obj = PlatformUtils;
   if (obj.isAndroid()) {
@@ -83,8 +83,8 @@ export const canSendMail = function canSendMail() {
     resolveResult = DCDSend.canSendMail();
   }
   return resolveResult;
-};
-export const canOpenUrlScheme = function canOpenUrlScheme(roblox) {
+}
+export function canOpenUrlScheme(roblox) {
   _require = roblox;
   const obj = require("PlatformUtils");
   if (obj.isAndroid()) {
@@ -109,4 +109,4 @@ export const canOpenUrlScheme = function canOpenUrlScheme(roblox) {
     });
     return promise;
   }
-};
+}

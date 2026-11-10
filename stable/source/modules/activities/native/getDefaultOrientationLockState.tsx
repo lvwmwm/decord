@@ -1,25 +1,25 @@
-// Module ID: 11489
-// Function ID: 11490
+// Module ID: 11792
+// Function ID: 11793
 // Name: getDefaultOrientationLockState
-// Dependencies: [1499, 5186, 584, 2]
+// Dependencies: [1491, 5202, 572, 2]
 // Exports: getDefaultOrientationLockState, getIsTabletActivitySurface, setOrientationLockState
 
-// Module 11489 (getDefaultOrientationLockState)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import useWindowDimensions from "useWindowDimensions" /* 1499 */;
-import useWindowSizeClassifier from "useWindowSizeClassifier" /* 5186 */;
+// Module 11792 (getDefaultOrientationLockState)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import useWindowDimensions from "useWindowDimensions" /* 1491 */;
+import useWindowSizeClassifier from "useWindowSizeClassifier" /* 5202 */;
 import size_mod from "module_2" /* 2 */;
 
 let size = size_mod;
 const result = size.fileFinishedImporting("modules/activities/native/getDefaultOrientationLockState.tsx");
 
-export const getIsTabletActivitySurface = function getIsTabletActivitySurface() {
+export function getIsTabletActivitySurface() {
   const obj = useWindowDimensions;
   size = obj.getWindowDimensions({ ignoreKeyboard: true });
   const bound = Math.min(size.width, size.height);
   return bound > useWindowSizeClassifier.WINDOW_SIZE_THRESHOLD_LARGE;
-};
-export const setOrientationLockState = function setOrientationLockState(embeddedActivityConfig, arg1) {
+}
+export function setOrientationLockState(embeddedActivityConfig, arg1) {
   let tmp = arg1;
   if (arg1 == null) {
     let tmp7;
@@ -51,8 +51,8 @@ export const setOrientationLockState = function setOrientationLockState(embedded
     const obj2 = DispatcherDefault;
     obj2.dispatch(obj3);
   }
-};
-export const getDefaultOrientationLockState = function getDefaultOrientationLockState(application) {
+}
+export function getDefaultOrientationLockState(application) {
   if (null != application) {
     let default_orientation_lock_state;
     const obj = useWindowDimensions;
@@ -74,4 +74,4 @@ export const getDefaultOrientationLockState = function getDefaultOrientationLock
     }
     return default_orientation_lock_state;
   }
-};
+}

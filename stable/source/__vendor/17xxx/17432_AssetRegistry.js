@@ -1,10 +1,10 @@
 // Module ID: 17432
 // Function ID: 17433
 // Name: AssetRegistry
-// Dependencies: [1134]
+// Dependencies: [1119]
 
 // Module 17432 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1134 */;
+import AssetRegistry from "AssetRegistry" /* 1119 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native", width: 182, height: 128, scales: [2, 3], hash: "d91cbec9959285a2fc129da0bb393a90", name: "img_wump_trash_dark", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/../discord_common/js/shared/images/flags", width: 70, height: 47, scales: [1], hash: "fcdf14841cd468de3f43704be16fa303", name: "no", type: "png" });

@@ -1,97 +1,47 @@
-// Module ID: 16175
-// Function ID: 16176
+// Module ID: 16748
+// Function ID: 16749
 // Name: IOSConversationSuggestionsSetting
-// Dependencies: [19, 17, 8364, 1269, 1274, 558, 576, 4918, 1384, 3, 11240, 1128, 2]
+// Dependencies: [19, 17, 8432, 1254, 1259, 4929, 1375, 3, 11540, 1113, 2]
 
-// Module 16175 (IOSConversationSuggestionsSetting)
+// Module 16748 (IOSConversationSuggestionsSetting)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
-import react2 from "react" /* 576 */;
-import intl2 from "intl" /* 1128 */;
-import PlatformUtils from "PlatformUtils" /* 1384 */;
-import SettingsConstants from "SettingsConstants" /* 8364 */;
+import intl2 from "intl" /* 1113 */;
+import PlatformUtils from "PlatformUtils" /* 1375 */;
+import _slicedToArray from "_slicedToArray" /* 4929 */;
+import SettingsConstants from "SettingsConstants" /* 8432 */;
 import react from "react" /* 19 */;
-import module_1269 from "module_1269" /* 1269 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11240 */;
+import module_1254 from "module_1254" /* 1254 */;
+import SettingBuilders from "SettingBuilders" /* 11540 */;
 import size from "module_2" /* 2 */;
 
 let conversationSuggestionsEnabled;
 
-let tmp;
-const _slicedToArray = tmp(4918);
 const NativeModules = react_native.NativeModules;
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
-let closure_4 = module_1269.createWithEqualityFn(() => ({ isEnabled: true }));
-let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConversationSuggestionsEnabled() {
-  let first;
-  const obj = react2;
-  const cResult = obj.c(1);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function n(isEnabled) {
-      return isEnabled.isEnabled;
-    };
-    cResult[0] = fn;
-    first = fn;
-  } else {
-    first = cResult[0];
-  }
-  return closure_4(first, _slicedToArray.shallow);
-}) : (function useConversationSuggestionsEnabled() {
-  return closure_4((isEnabled) => isEnabled.isEnabled, _slicedToArray.shallow);
-});
+let closure_4 = module_1254.createWithEqualityFn(() => ({ isEnabled: true }));
 const IntentsHandler = NativeModules.IntentsHandler;
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIOSConversationSuggestionsSettingValue() {
-  let tmp2;
-  let tmp3;
-  let obj = react2;
-  const cResult = obj.c(2);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function t() {
-      conversationSuggestionsEnabled = conversationSuggestionsEnabled.getConversationSuggestionsEnabled();
-      conversationSuggestionsEnabled.then((result) => {
-        let closure_0 = result;
-        const obj = closure_0(closure_2[4]);
-        obj.batchUpdates(() => {
-          const obj = { isEnabled };
-          return state.setState(obj);
-        });
-      });
-    };
-    const items = [];
-    cResult[0] = fn;
-    cResult[1] = items;
-    tmp2 = fn;
-    tmp3 = items;
-  } else {
-    [tmp2, tmp3] = cResult;
-  }
-  const effect = react.useEffect(tmp2, tmp3);
-  return closure_5();
-}) : (function useIOSConversationSuggestionsSettingValue() {
-  const effect = react.useEffect(() => {
-    let state;
-    conversationSuggestionsEnabled = conversationSuggestionsEnabled.getConversationSuggestionsEnabled();
-    conversationSuggestionsEnabled.then((result) => {
-      const isEnabled = result;
-      let obj = isEnabled(closure_2[4]);
-      obj.batchUpdates(() => {
-        const obj = { isEnabled };
-        return state.setState(obj);
-      });
-    });
-  }, []);
-  return closure_5();
-});
 let obj = {
   useTitle() {
     const intl = intl2.intl;
     return intl.string(intl2.t.J8foZq);
   },
   parent: MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
-  useValue: tmp2,
+  useValue: function useIOSConversationSuggestionsSettingValue() {
+    const effect = react.useEffect(() => {
+      let state;
+      conversationSuggestionsEnabled = conversationSuggestionsEnabled.getConversationSuggestionsEnabled();
+      conversationSuggestionsEnabled.then((result) => {
+        const isEnabled = result;
+        let obj = isEnabled(closure_2[4]);
+        obj.batchUpdates(() => {
+          const obj = { isEnabled };
+          return state.setState(obj);
+        });
+      });
+    }, []);
+    return closure_4((isEnabled) => isEnabled.isEnabled, _slicedToArray.shallow);
+  },
   onValueChange: function onIOSConversationSuggestionsSettingValueChange(arg0) {
     const result = IntentsHandler.setConversationSuggestionsEnabled(arg0);
     const nextPromise = result.then((result) => {

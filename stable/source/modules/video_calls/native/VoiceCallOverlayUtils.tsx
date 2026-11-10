@@ -1,12 +1,12 @@
-// Module ID: 11422
-// Function ID: 11423
+// Module ID: 11723
+// Function ID: 11724
 // Name: VoiceCallOverlayUtils
-// Dependencies: [10915, 584, 2]
+// Dependencies: [11001, 572, 2]
 // Exports: doesTargetPositionIntersectOtherOverlaysWorklet, setPipEnabledWhileFocusedOnActivityOrStream, updateVoiceCallOverlayLayoutState
 
-// Module 11422 (VoiceCallOverlayUtils)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import ChannelCallConstants from "ChannelCallConstants" /* 10915 */;
+// Module 11723 (VoiceCallOverlayUtils)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import ChannelCallConstants from "ChannelCallConstants" /* 11001 */;
 import size from "module_2" /* 2 */;
 
 const MIN_MARGIN_BETWEEN_OVERLAYS = ChannelCallConstants.MIN_MARGIN_BETWEEN_OVERLAYS;
@@ -78,13 +78,13 @@ doesTargetPositionIntersectOtherOverlaysWorklet.__initData = { code: "function d
 const result = size.fileFinishedImporting("modules/video_calls/native/VoiceCallOverlayUtils.tsx");
 
 export { doesTargetPositionIntersectOtherOverlaysWorklet };
-export const updateVoiceCallOverlayLayoutState = function updateVoiceCallOverlayLayoutState(voiceCallOverlayType, voiceCallOverlayLayoutState) {
+export function updateVoiceCallOverlayLayoutState(voiceCallOverlayType, voiceCallOverlayLayoutState) {
   const obj = DispatcherDefault;
   const obj2 = { type: "VOICE_CALL_OVERLAY_LAYOUT_STATE_UPDATE", voiceCallOverlayType, voiceCallOverlayLayoutState };
   obj.dispatch(obj2);
-};
-export const setPipEnabledWhileFocusedOnActivityOrStream = function setPipEnabledWhileFocusedOnActivityOrStream(pipEnabledWhileFocusedOnActivityOrStream) {
+}
+export function setPipEnabledWhileFocusedOnActivityOrStream(pipEnabledWhileFocusedOnActivityOrStream) {
   const obj = DispatcherDefault;
   const obj2 = { type: "VOICE_CALL_SET_PIP_ENABLED_FOR_ACTIVITY_OR_STREAM", pipEnabledWhileFocusedOnActivityOrStream };
   obj.dispatch(obj2);
-};
+}

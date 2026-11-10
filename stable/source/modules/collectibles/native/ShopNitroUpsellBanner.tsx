@@ -1,19 +1,19 @@
-// Module ID: 17239
-// Function ID: 17240
+// Module ID: 17838
+// Function ID: 17839
 // Name: ShopNitroUpsellBanner
-// Dependencies: [19, 21, 5003, 587, 683, 5284, 5242, 14496, 2002, 7310, 1128, 6937, 5290, 1107, 1202, 6963, 6009, 5266, 17235, 5276, 10210, 2]
+// Dependencies: [19, 21, 5014, 575, 671, 5596, 5258, 15037, 1994, 7351, 1113, 6977, 5587, 1092, 1187, 7054, 6027, 5624, 17834, 5634, 10290, 2]
 
-// Module 17239 (ShopNitroUpsellBanner)
-import nativeDefault from "native" /* 587 */;
-import _modDef683 from "module_683" /* 683 */;
-import ConstantsIOS from "ConstantsIOS" /* 1107 */;
-import intl5 from "intl" /* 1128 */;
-import useToken from "useToken" /* 5284 */;
-import Card_Card from "Card/Card" /* 6937 */;
-import MobileNitroUpsellInShopFeedExperiment from "MobileNitroUpsellInShopFeedExperiment" /* 17235 */;
+// Module 17838 (ShopNitroUpsellBanner)
+import nativeDefault from "native" /* 575 */;
+import _modDef671 from "module_671" /* 671 */;
+import ConstantsIOS from "ConstantsIOS" /* 1092 */;
+import intl5 from "intl" /* 1113 */;
+import useToken from "useToken" /* 5596 */;
+import Card_Card from "Card/Card" /* 6977 */;
+import MobileNitroUpsellInShopFeedExperiment from "MobileNitroUpsellInShopFeedExperiment" /* 17834 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5003 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -24,8 +24,8 @@ let obj2;
 let obj3;
 let obj4;
 let tmp2;
-const LinearGradientDefault = tmp2(5290);
-const NitroUpsellButtonDefault = tmp2(10210);
+const LinearGradientDefault = tmp2(5587);
+const NitroUpsellButtonDefault = tmp2(10290);
 class ShopNitroUpsellBanner {
   constructor(arg0) {
     let XSmallIcon;
@@ -44,12 +44,12 @@ class ShopNitroUpsellBanner {
     ({ isDarkTheme, dismiss, buttonVariant } = arg0);
     const tmp = closure_6();
     let tmp2 = importDefault;
-    const tmp4 = _modDef683;
+    const tmp4 = _modDef671;
     let obj = useToken;
     const tmp4Result = tmp4(obj.useToken(nativeDefault.colors.EXPRESSIVE_GRADIENT_NITRO_PINK_START));
     const alphaResult = tmp4Result.alpha(0.3);
     const hexResult = alphaResult.hex();
-    const tmp7 = _modDef683;
+    const tmp7 = _modDef671;
     const obj4 = useToken;
     const tmp7Result = tmp7(obj4.useToken(nativeDefault.colors.EXPRESSIVE_GRADIENT_NITRO_PINK_END));
     const alphaResult1 = tmp7Result.alpha(0.3);
@@ -77,25 +77,25 @@ class ShopNitroUpsellBanner {
     const tmp2Result = LinearGradientDefault;
     items2 = [React3(tmp2Result, obj3), , ];
     const obj5 = { accessibilityRole: "button", accessibilityLabel: intl.string(intl5.t.WAI6xu), onPress: dismiss, style: tmp.closeButton, children: React3(XSmallIcon, obj6) };
-    const PressableOpacity = tmp5(1202).PressableOpacity;
-    intl = tmp5(1128).intl;
+    const PressableOpacity = tmp5(1187).PressableOpacity;
+    intl = tmp5(1113).intl;
     obj6 = { size: "md", color: nativeDefault.colors.ICON_DEFAULT };
-    XSmallIcon = tmp5(6963).XSmallIcon;
+    XSmallIcon = tmp5(7054).XSmallIcon;
     items2[1] = React3(PressableOpacity, obj5);
-    const Stack = tmp5(6009).Stack;
+    const Stack = tmp5(6027).Stack;
     const obj7 = { variant: "text-sm/medium", color: "mobile-text-heading-primary", style: tmp.text, children: intl2.string(intl5.t.WjOclf) };
-    const Text = tmp5(5266).Text;
-    intl2 = tmp5(1128).intl;
+    const Text = tmp5(5624).Text;
+    intl2 = tmp5(1113).intl;
     const items3 = [React3(Text, obj7), ];
     if (buttonVariant === MobileNitroUpsellInShopFeedExperiment.NitroUpsellBannerButtonVariant.LEARN_MORE) {
       const obj8 = { variant: "primary", size: "sm", text: intl4.string(intl5.t.hvVgAZ), onPress: callback };
-      const Button = tmp5(5276).Button;
-      intl4 = tmp5(1128).intl;
+      const Button = tmp5(5634).Button;
+      intl4 = tmp5(1113).intl;
       tmp11Result = tmp11(Button, obj8);
     } else {
       const obj9 = { text: intl3.string(intl5.t.pj0XBN), onPress: callback, size: "sm", shiny: false };
       const tmp2Result2 = NitroUpsellButtonDefault;
-      intl3 = tmp5(1128).intl;
+      intl3 = tmp5(1113).intl;
       tmp11Result = tmp11(tmp2Result2, obj9);
     }
     items3[1] = tmp11Result;

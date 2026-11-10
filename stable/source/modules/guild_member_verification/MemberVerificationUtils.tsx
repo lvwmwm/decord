@@ -1,14 +1,14 @@
-// Module ID: 6926
-// Function ID: 6927
+// Module ID: 6968
+// Function ID: 6969
 // Name: MemberVerificationUtils
-// Dependencies: [6905, 1087, 5037, 1388, 2]
+// Dependencies: [6946, 1072, 5048, 1379, 2]
 // Exports: guildHasVerificationGate, isAutomaticApprovalFormField, isManualApprovalFormField, isValidFormResponse, removeInternalFields
 
-// Module 6926 (MemberVerificationUtils)
-import Constants from "Constants" /* 1087 */;
-import GlobalUtils from "GlobalUtils" /* 1388 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 5037 */;
-import MemberVerificationConstants from "MemberVerificationConstants" /* 6905 */;
+// Module 6968 (MemberVerificationUtils)
+import Constants from "Constants" /* 1072 */;
+import GlobalUtils from "GlobalUtils" /* 1379 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 5048 */;
+import MemberVerificationConstants from "MemberVerificationConstants" /* 6946 */;
 import size from "module_2" /* 2 */;
 
 let has;
@@ -19,7 +19,7 @@ let c3;
 const GuildFeatures = Constants.GuildFeatures;
 const result = size.fileFinishedImporting("modules/guild_member_verification/MemberVerificationUtils.tsx");
 
-export const isValidFormResponse = function isValidFormResponse(required) {
+export function isValidFormResponse(required) {
   let field_type;
   let response;
   ({ response, field_type } = required);
@@ -52,31 +52,31 @@ export const isValidFormResponse = function isValidFormResponse(required) {
   } else {
     return true;
   }
-};
-export const removeInternalFields = function removeInternalFields(arr) {
+}
+export function removeInternalFields(arr) {
   return arr.filter((field_type) => field_type.field_type !== MemberVerificationTypes.VerificationFormFieldTypes.VERIFICATION);
-};
-export const isAutomaticApprovalFormField = function isAutomaticApprovalFormField(field_type) {
+}
+export function isAutomaticApprovalFormField(field_type) {
   field_type = undefined;
   has = has.has;
   if (field_type != null) {
     field_type = field_type.field_type;
   }
   return has(field_type);
-};
-export const isManualApprovalFormField = function isManualApprovalFormField(field_type) {
+}
+export function isManualApprovalFormField(field_type) {
   field_type = undefined;
   has = has2.has;
   if (field_type != null) {
     field_type = field_type.field_type;
   }
   return has(field_type);
-};
-export const guildHasVerificationGate = function guildHasVerificationGate(guild) {
+}
+export function guildHasVerificationGate(guild) {
   let hasItem = null != guild;
   if (hasItem) {
     const features = guild.features;
     hasItem = features.has(GuildFeatures.MEMBER_VERIFICATION_GATE_ENABLED);
   }
   return hasItem;
-};
+}

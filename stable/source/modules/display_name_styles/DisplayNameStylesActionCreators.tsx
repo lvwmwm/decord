@@ -1,30 +1,30 @@
-// Module ID: 15902
-// Function ID: 15903
+// Module ID: 16471
+// Function ID: 16472
 // Name: DisplayNameStylesActionCreators
-// Dependencies: [584, 2]
+// Dependencies: [572, 2]
 // Exports: markDisplayNameStyleEffectSeen, markDisplayNameStyleFontSeen, markDisplayNameStyleNewEffectsBadgeDismissed, markDisplayNameStyleNewFontsBadgeDismissed
 
-// Module 15902 (DisplayNameStylesActionCreators)
-import DispatcherDefault from "Dispatcher" /* 584 */;
+// Module 16471 (DisplayNameStylesActionCreators)
+import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/display_name_styles/DisplayNameStylesActionCreators.tsx");
 
-export const markDisplayNameStyleFontSeen = function markDisplayNameStyleFontSeen(fontId) {
+export function markDisplayNameStyleFontSeen(fontId) {
   const obj = DispatcherDefault;
   const obj2 = { type: "DISPLAY_NAME_STYLES_MARK_FONT_SEEN", fontId };
   obj.dispatch(obj2);
-};
-export const markDisplayNameStyleEffectSeen = function markDisplayNameStyleEffectSeen(effectId) {
+}
+export function markDisplayNameStyleEffectSeen(effectId) {
   const obj = DispatcherDefault;
   const obj2 = { type: "DISPLAY_NAME_STYLES_MARK_EFFECT_SEEN", effectId };
   obj.dispatch(obj2);
-};
-export const markDisplayNameStyleNewFontsBadgeDismissed = function markDisplayNameStyleNewFontsBadgeDismissed() {
+}
+export function markDisplayNameStyleNewFontsBadgeDismissed() {
   const obj = DispatcherDefault;
   obj.dispatch({ type: "DISPLAY_NAME_STYLES_MARK_NEW_FONTS_BADGE_DISMISSED" });
-};
-export const markDisplayNameStyleNewEffectsBadgeDismissed = function markDisplayNameStyleNewEffectsBadgeDismissed() {
+}
+export function markDisplayNameStyleNewEffectsBadgeDismissed() {
   const obj = DispatcherDefault;
   obj.dispatch({ type: "DISPLAY_NAME_STYLES_MARK_NEW_EFFECTS_BADGE_DISMISSED" });
-};
+}

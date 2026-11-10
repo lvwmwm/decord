@@ -1,29 +1,29 @@
-// Module ID: 18294
-// Function ID: 18295
+// Module ID: 18882
+// Function ID: 18883
 // Name: ChannelSettingsModal
-// Dependencies: [19, 17, 1087, 9746, 21, 5003, 587, 18295, 1128, 13808, 18211, 18310, 18311, 18313, 18320, 18321, 18330, 18333, 18342, 18344, 18345, 18346, 18347, 18348, 2]
+// Dependencies: [19, 17, 1072, 9827, 21, 5014, 575, 18883, 1113, 11068, 18793, 18901, 18902, 18904, 18911, 18912, 18921, 18924, 18933, 18935, 18936, 18937, 18938, 18939, 2]
 // Exports: getChannelSettingsScreens
 
-// Module 18294 (ChannelSettingsModal)
+// Module 18882 (ChannelSettingsModal)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 587 */;
-import SearchConstants from "SearchConstants" /* 9746 */;
-import ChannelSettingsNotificationsDefault from "ChannelSettingsNotifications" /* 13808 */;
-import ChannelSettingsOverviewDefault from "ChannelSettingsOverview" /* 18295 */;
-import MessagePreviewDefault from "MessagePreview" /* 18310 */;
-import EasyChannelPermissionSettingsDefault from "EasyChannelPermissionSettings" /* 18313 */;
-import ChannelSettingsPermissionsListDefault from "ChannelSettingsPermissionsList" /* 18320 */;
-import ChannelSettingsPermissionsOverridesDefault from "ChannelSettingsPermissionsOverrides" /* 18321 */;
-import ChannelSettingsIntegrationsOverviewDefault from "ChannelSettingsIntegrationsOverview" /* 18330 */;
-import IntegrationsSettingsWebhooksOverviewDefault from "IntegrationsSettingsWebhooksOverview" /* 18333 */;
-import ChannelSettingsChangeCategoryDefault from "ChannelSettingsChangeCategory" /* 18345 */;
-import ChannelSettingsChangeRTCRegionDefault from "ChannelSettingsChangeRTCRegion" /* 18346 */;
-import ChannelSettingsEditForumTagDefault from "ChannelSettingsEditForumTag" /* 18347 */;
-import ChannelSettingsChangeDefaultForumLayoutDefault from "ChannelSettingsChangeDefaultForumLayout" /* 18348 */;
+import nativeDefault from "native" /* 575 */;
+import SearchConstants from "SearchConstants" /* 9827 */;
+import ChannelSettingsNotificationsDefault from "ChannelSettingsNotifications" /* 11068 */;
+import ChannelSettingsOverviewDefault from "ChannelSettingsOverview" /* 18883 */;
+import MessagePreviewDefault from "MessagePreview" /* 18901 */;
+import EasyChannelPermissionSettingsDefault from "EasyChannelPermissionSettings" /* 18904 */;
+import ChannelSettingsPermissionsListDefault from "ChannelSettingsPermissionsList" /* 18911 */;
+import ChannelSettingsPermissionsOverridesDefault from "ChannelSettingsPermissionsOverrides" /* 18912 */;
+import ChannelSettingsIntegrationsOverviewDefault from "ChannelSettingsIntegrationsOverview" /* 18921 */;
+import IntegrationsSettingsWebhooksOverviewDefault from "IntegrationsSettingsWebhooksOverview" /* 18924 */;
+import ChannelSettingsChangeCategoryDefault from "ChannelSettingsChangeCategory" /* 18936 */;
+import ChannelSettingsChangeRTCRegionDefault from "ChannelSettingsChangeRTCRegion" /* 18937 */;
+import ChannelSettingsEditForumTagDefault from "ChannelSettingsEditForumTag" /* 18938 */;
+import ChannelSettingsChangeDefaultForumLayoutDefault from "ChannelSettingsChangeDefaultForumLayout" /* 18939 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 1087 */;
-import createStyles_mod from "createStyles" /* 5003 */;
+import Constants from "Constants" /* 1072 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -47,7 +47,7 @@ const styles = createStyles(obj);
 const result = size.fileFinishedImporting("components_native/channel_settings/ChannelSettingsModal.tsx");
 
 export const useChannelSettingsScreensStyles = styles;
-export const getChannelSettingsScreens = function getChannelSettingsScreens(channelId, guildId, channelSettingsScreensStyles) {
+export function getChannelSettingsScreens(channelId, guildId, channelSettingsScreensStyles) {
   let intl;
   let intl10;
   let intl11;
@@ -232,4 +232,4 @@ export const getChannelSettingsScreens = function getChannelSettingsScreens(chan
   intl14 = require("intl").intl;
   obj[DEFAULT_FORUM_LAYOUT] = obj16;
   return obj;
-};
+}

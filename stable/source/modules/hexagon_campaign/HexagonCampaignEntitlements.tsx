@@ -1,21 +1,21 @@
-// Module ID: 14083
-// Function ID: 14084
+// Module ID: 14608
+// Function ID: 14609
 // Name: HexagonCampaignEntitlements
-// Dependencies: [5028, 5030, 5060, 2053, 2]
+// Dependencies: [5039, 5041, 5071, 2047, 2]
 // Exports: canUseAllAppIcons
 
-// Module 14083 (HexagonCampaignEntitlements)
-import PremiumUtilsDefault from "PremiumUtils" /* 2053 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5028 */;
-import HexagonCampaignUtils from "HexagonCampaignUtils" /* 5030 */;
+// Module 14608 (HexagonCampaignEntitlements)
+import PremiumUtilsDefault from "PremiumUtils" /* 2047 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5039 */;
+import HexagonCampaignUtils from "HexagonCampaignUtils" /* 5041 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const ProductCatalog = tmp(5060);
+const ProductCatalog = tmp(5071);
 const HexagonCampaignPerk = HexagonCampaignConstants.HexagonCampaignPerk;
 const result = size.fileFinishedImporting("modules/hexagon_campaign/HexagonCampaignEntitlements.tsx");
 
-export const canUseAllAppIcons = function canUseAllAppIcons(currentUser) {
+export function canUseAllAppIcons(currentUser) {
   let featureValue;
   const obj = HexagonCampaignUtils;
   if (obj.hasPerkOnlyFromHexagonCampaign(currentUser, HexagonCampaignPerk.APP_ICON)) {
@@ -26,4 +26,4 @@ export const canUseAllAppIcons = function canUseAllAppIcons(currentUser) {
     featureValue = obj2.canUsePremiumAppIcons(currentUser);
   }
   return featureValue;
-};
+}

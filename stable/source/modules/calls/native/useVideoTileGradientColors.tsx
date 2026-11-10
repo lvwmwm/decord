@@ -1,15 +1,14 @@
-// Module ID: 8776
-// Function ID: 8777
+// Module ID: 8826
+// Function ID: 8827
 // Name: useVideoTileGradientColors
-// Dependencies: [19, 1087, 8752, 1105, 558, 576, 2]
+// Dependencies: [19, 1072, 8802, 1090, 2]
+// Exports: useVideoTileGradientColors
 
-// Module 8776 (useVideoTileGradientColors)
-import react2 from "react" /* 576 */;
-import Constants from "Constants" /* 1087 */;
-import utils_ColorUtils from "utils/ColorUtils" /* 1105 */;
-import UserProfileGradientUtils from "UserProfileGradientUtils" /* 8752 */;
+// Module 8826 (useVideoTileGradientColors)
+import Constants from "Constants" /* 1072 */;
+import utils_ColorUtils from "utils/ColorUtils" /* 1090 */;
+import UserProfileGradientUtils from "UserProfileGradientUtils" /* 8802 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 function rgbToHex(arg0) {
@@ -62,28 +61,12 @@ function computeVideoTileGradientStops(modalV2BackgroundColor, modalV2Background
   return null;
 }
 const ThemeTypes = Constants.ThemeTypes;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVideoTileGradientColors(modalV2BackgroundColor, modalV2BackgroundColor2) {
-  const obj = react2;
-  const cResult = obj.c(3);
-  if (cResult[0] === modalV2BackgroundColor) {
-    let tmp2;
-    if (cResult[1] === modalV2BackgroundColor) {
-      tmp2 = cResult[2];
-    }
-    return tmp2;
-  }
-  const tmp3 = computeVideoTileGradientStops(modalV2BackgroundColor, modalV2BackgroundColor);
-  cResult[0] = modalV2BackgroundColor;
-  cResult[1] = modalV2BackgroundColor;
-  cResult[2] = tmp3;
-  tmp2 = tmp3;
-}) : (function useVideoTileGradientColors(arg0, arg1) {
+const result = size.fileFinishedImporting("modules/calls/native/useVideoTileGradientColors.tsx");
+
+export { computeVideoTileGradientStops };
+export function useVideoTileGradientColors(arg0, arg1) {
   let closure_0 = arg0;
   let closure_1 = arg1;
   const items = [arg0, arg1];
   return react.useMemo(() => computeVideoTileGradientStops(closure_0, closure_1), items);
-});
-const result = size.fileFinishedImporting("modules/calls/native/useVideoTileGradientColors.tsx");
-
-export { computeVideoTileGradientStops };
-export const useVideoTileGradientColors = tmp2;
+}

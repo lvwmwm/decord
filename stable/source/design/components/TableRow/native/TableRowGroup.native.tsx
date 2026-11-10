@@ -1,20 +1,19 @@
-// Module ID: 7019
-// Function ID: 7020
+// Module ID: 7060
+// Function ID: 7061
 // Name: TableRowGroup
-// Dependencies: [19, 17, 21, 5003, 587, 558, 576, 5266, 5284, 6930, 6936, 2]
+// Dependencies: [19, 17, 21, 5014, 575, 5624, 5596, 6972, 6976, 2]
 // Exports: TableRowGroup
 
-// Module 7019 (TableRowGroup)
+// Module 7060 (TableRowGroup)
 import react_native from "react-native" /* 17 */;
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import useToken from "useToken" /* 5284 */;
-import TableRowDivider from "TableRowDivider" /* 6930 */;
-import react3 from "react" /* 6936 */;
+import nativeDefault from "native" /* 575 */;
+import useToken from "useToken" /* 5596 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import TableRowDivider from "TableRowDivider" /* 6972 */;
+import react2 from "react" /* 6976 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5003 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let c1, importDefault;
@@ -24,8 +23,19 @@ let metroImportDefault;
 let metroRequire;
 let obj2;
 let obj3;
-let tmp;
-const Text_Text = tmp(5266);
+class TableRowGroupTitle {
+  constructor(arg0) {
+    let items;
+    let lineClamp;
+    let style;
+    let title;
+    ({ title, style, lineClamp } = arg0);
+    const obj = { accessibilityRole: "header", variant: "text-md/medium", color: "text-subtle", style: items, lineClamp, children: title };
+    items = [closure_8().title, style];
+    closure_8();
+    return hasOwnProperty(Text_Text.Text, obj);
+  }
+}
 const View = react_native.View;
 ({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: metroImportDefault } = Fragment);
 let createStyles = createStyles_mod;
@@ -33,58 +43,11 @@ let obj = { container: { flexShrink: 0 }, content: obj2, title: { marginBottom: 
 obj2 = { borderRadius: nativeDefault.modules.mobile.TABLE_ROW_BORDER_RADIUS, overflow: "hidden", flexGrow: 1, flexShrink: 0, padding: 0 };
 createStyles = createStyles.createStyles;
 obj3 = { borderBottomLeftRadius: nativeDefault.radii.none, borderBottomRightRadius: nativeDefault.radii.none };
-let closure_8 = createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TableRowGroupTitle(arg0) {
-  let lineClamp;
-  let style;
-  let title;
-  const obj = react2;
-  const cResult = obj.c(7);
-  ({ title, style, lineClamp } = arg0);
-  const tmp4 = closure_8();
-  if (cResult[0] === style) {
-    let tmp5;
-    if (cResult[1] === tmp4.title) {
-      tmp5 = cResult[2];
-    }
-    if (cResult[3] === lineClamp) {
-      if (cResult[4] === tmp5) {
-        let tmp6;
-        if (cResult[5] === title) {
-          tmp6 = cResult[6];
-        }
-        return tmp6;
-      }
-    }
-    const obj2 = { accessibilityRole: "header", variant: "text-md/medium", color: "text-subtle", style: tmp5, lineClamp, children: title };
-    const tmp8 = hasOwnProperty(Text_Text.Text, obj2);
-    cResult[3] = lineClamp;
-    cResult[4] = tmp5;
-    cResult[5] = title;
-    cResult[6] = tmp8;
-    tmp6 = tmp8;
-  }
-  const items = [tmp4.title, style];
-  cResult[0] = style;
-  cResult[1] = tmp4.title;
-  cResult[2] = items;
-  tmp5 = items;
-}) : (function TableRowGroupTitle(arg0) {
-  let items;
-  let lineClamp;
-  let style;
-  let title;
-  ({ title, style, lineClamp } = arg0);
-  const obj = { accessibilityRole: "header", variant: "text-md/medium", color: "text-subtle", style: items, lineClamp, children: title };
-  items = [closure_8().title, style];
-  closure_8();
-  return hasOwnProperty(Text_Text.Text, obj);
-});
-let closure_9 = tmp4;
+const metroImportAll = createStyles(obj);
 const result = size.fileFinishedImporting("design/components/TableRow/native/TableRowGroup.native.tsx");
 
-export const TableRowGroupTitle = tmp4;
-export const TableRowGroup = function TableRowGroup(children) {
+export { TableRowGroupTitle };
+export function TableRowGroup(children) {
   let adjustSpacingForIcon;
   let description;
   let hasTrailingText;
@@ -129,11 +92,11 @@ export const TableRowGroup = function TableRowGroup(children) {
   });
   let obj2 = { style: tmp.container, children: items };
   let tmp6Result = null != title;
-  const Provider = react3.TableRowGroupContext.Provider;
+  const Provider = react2.TableRowGroupContext.Provider;
   const tmp7 = closure_7;
   if (tmp6Result) {
     const obj3 = { title };
-    tmp6Result = tmp6(closure_9, obj3);
+    tmp6Result = tmp6(TableRowGroupTitle, obj3);
   }
   items = [tmp6Result, , , ];
   let tmp6Result3 = null != description;
@@ -157,4 +120,4 @@ export const TableRowGroup = function TableRowGroup(children) {
   items[3] = tmp6Result4;
   const obj6 = { value: true, children: tmp7(View, obj2) };
   return closure_5(Provider, obj6);
-};
+}

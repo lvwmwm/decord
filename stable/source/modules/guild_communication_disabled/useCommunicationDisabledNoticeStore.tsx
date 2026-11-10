@@ -1,25 +1,23 @@
-// Module ID: 4916
-// Function ID: 4917
+// Module ID: 4927
+// Function ID: 4928
 // Name: useCommunicationDisabledNoticeStore
-// Dependencies: [32, 4917, 510, 571, 1274, 558, 576, 1269, 4918, 2]
-// Exports: clearCommunicationDisabledNotice
+// Dependencies: [32, 4928, 510, 561, 1259, 1254, 4929, 2]
+// Exports: clearCommunicationDisabledNotice, useCommunicationDisabledNoticeStore
 
-// Module 4916 (useCommunicationDisabledNoticeStore)
+// Module 4927 (useCommunicationDisabledNoticeStore)
 import Storage2 from "Storage" /* 510 */;
-import react from "react" /* 576 */;
-import _mod1269 from "module_1269" /* 1269 */;
-import GuildDisableCommunicationConstants from "GuildDisableCommunicationConstants" /* 4917 */;
-import _slicedToArray2 from "_slicedToArray" /* 4918 */;
+import _mod1254 from "module_1254" /* 1254 */;
+import GuildDisableCommunicationConstants from "GuildDisableCommunicationConstants" /* 4928 */;
+import _slicedToArray2 from "_slicedToArray" /* 4929 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import module_571 from "module_571" /* 571 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import module_561 from "module_561" /* 561 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, dependencyMap, setState;
 
 const DISMISSED_COMMUNICATION_DISABLED_NOTIFICATION_GUILDS_KEY = GuildDisableCommunicationConstants.DISMISSED_COMMUNICATION_DISABLED_NOTIFICATION_GUILDS_KEY;
-let state = module_571.createStore((arg0, arg1) => {
+let state = module_561.createStore((arg0, arg1) => {
   let closure_0;
   let closure_1;
   _require = arg0;
@@ -71,53 +69,12 @@ Storage.asyncGet(DISMISSED_COMMUNICATION_DISABLED_NOTIFICATION_GUILDS_KEY, async
     return setState(obj);
   });
 });
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCommunicationDisabledNoticeStore(arg0) {
-  let first;
-  let obj3;
-  let tmp6;
-  const obj = react;
-  const cResult = obj.c(7);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function n(arg0) {
-      const items = [, ];
-      ({ notificationDismissedInGuilds: arr[0], dismissNotification: arr[1] } = arg0);
-      return items;
-    };
-    cResult[0] = fn;
-    first = fn;
-  } else {
-    first = cResult[0];
-  }
-  const tmpResult = _mod1269;
-  [obj3, tmp6] = tmpResult.useStoreWithEqualityFn(state, first, _slicedToArray2.shallow);
-  _slicedToArray(tmpResult.useStoreWithEqualityFn(state, first, _slicedToArray2.shallow), 2);
-  if (cResult[1] === arg0) {
-    let tmp7;
-    if (cResult[2] === obj3) {
-      tmp7 = cResult[3];
-    }
-    if (cResult[4] === tmp6) {
-      let tmp10;
-      if (cResult[5] === !tmp7) {
-        tmp10 = cResult[6];
-      }
-      return tmp10;
-    }
-    let items = [!tmp7, tmp6];
-    cResult[4] = tmp6;
-    cResult[5] = !tmp7;
-    cResult[6] = items;
-    tmp10 = items;
-  }
-  const hasItem = obj3.has(arg0);
-  cResult[1] = arg0;
-  cResult[2] = obj3;
-  cResult[3] = hasItem;
-  tmp7 = hasItem;
-}) : (function useCommunicationDisabledNoticeStore(arg0) {
+let result = size.fileFinishedImporting("modules/guild_communication_disabled/useCommunicationDisabledNoticeStore.tsx");
+
+export function useCommunicationDisabledNoticeStore(arg0) {
   let first;
   let tmp2;
-  const obj = _mod1269;
+  const obj = _mod1254;
   [first, tmp2] = obj.useStoreWithEqualityFn(state, (arg0) => {
     const items = [, ];
     ({ notificationDismissedInGuilds: arr[0], dismissNotification: arr[1] } = arg0);
@@ -127,11 +84,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCommuni
   items[0] = !first.has(arg0);
   items[1] = tmp2;
   return items;
-});
-let result = size.fileFinishedImporting("modules/guild_communication_disabled/useCommunicationDisabledNoticeStore.tsx");
-
-export const useCommunicationDisabledNoticeStore = tmp3;
-export const clearCommunicationDisabledNotice = function clearCommunicationDisabledNotice(arg0) {
+}
+export function clearCommunicationDisabledNotice(arg0) {
   state = state.getState();
   return state.resetNotification(arg0);
-};
+}

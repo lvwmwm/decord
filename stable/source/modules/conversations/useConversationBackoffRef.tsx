@@ -1,13 +1,13 @@
-// Module ID: 9767
-// Function ID: 9768
+// Module ID: 9848
+// Function ID: 9849
 // Name: useConversationBackoffRef
-// Dependencies: [19, 5639, 569, 2]
+// Dependencies: [19, 5655, 559, 2]
 // Exports: useConversationBackoffRef
 
-// Module 9767 (useConversationBackoffRef)
-import BackoffDefault from "Backoff" /* 569 */;
+// Module 9848 (useConversationBackoffRef)
+import BackoffDefault from "Backoff" /* 559 */;
 import react from "react" /* 19 */;
-import ConversationConstants from "ConversationConstants" /* 5639 */;
+import ConversationConstants from "ConversationConstants" /* 5655 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -15,7 +15,7 @@ let closure_4;
 ({ FETCH_BACKOFF_MAX_MS: c3, FETCH_BACKOFF_MIN_MS: closure_4 } = ConversationConstants);
 const result = size.fileFinishedImporting("modules/conversations/useConversationBackoffRef.tsx");
 
-export const useConversationBackoffRef = function useConversationBackoffRef(items) {
+export function useConversationBackoffRef(items) {
   if (items === undefined) {
     items = [];
   }
@@ -29,4 +29,4 @@ export const useConversationBackoffRef = function useConversationBackoffRef(item
     };
   }, items);
   return ref;
-};
+}

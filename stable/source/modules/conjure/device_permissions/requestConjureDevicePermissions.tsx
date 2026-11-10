@@ -1,17 +1,17 @@
-// Module ID: 10829
-// Function ID: 10830
+// Module ID: 10951
+// Function ID: 10952
 // Name: requestConjureDevicePermissions
-// Dependencies: [5, 2045, 6807, 10830, 6808, 1104, 10831, 5754, 10832, 584, 2]
+// Dependencies: [5, 2038, 6846, 10952, 6847, 1089, 10953, 5772, 10954, 572, 2]
 // Exports: default, getConjureDevicePermissionStatus
 
-// Module 10829 (requestConjureDevicePermissions)
-import DurationsDefault from "Durations" /* 1104 */;
-import FramesConstants from "FramesConstants" /* 6808 */;
-import conjureDevicePermissions from "conjureDevicePermissions" /* 10831 */;
+// Module 10951 (requestConjureDevicePermissions)
+import DurationsDefault from "Durations" /* 1089 */;
+import FramesConstants from "FramesConstants" /* 6847 */;
+import conjureDevicePermissions from "conjureDevicePermissions" /* 10953 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationStore from "ApplicationStore" /* 2045 */;
-import FramesStore from "FramesStore" /* 6807 */;
-import ConjureDevicePermissionStore from "ConjureDevicePermissionStore" /* 10830 */;
+import ApplicationStore from "ApplicationStore" /* 2038 */;
+import FramesStore from "FramesStore" /* 6846 */;
+import ConjureDevicePermissionStore from "ConjureDevicePermissionStore" /* 10952 */;
 import size from "module_2" /* 2 */;
 
 let application, c1, c5, c6, closure_3, frameByIframeId;
@@ -47,7 +47,7 @@ let obj = function _requestConjureDevicePermissions() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -118,7 +118,7 @@ let obj = function _requestConjureDevicePermissions() {
                     const obj2 = { value, done: true };
                     return obj2;
                   } else {
-                    return { value: "IconComponent", done: "+352" };
+                    return { value: "HermesInternal", done: null };
                   }
                 } else {
                   try {
@@ -162,7 +162,7 @@ let obj = function _requestConjureDevicePermissions() {
             };
             c5 = 1;
             c6 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "flexDirection", done: true };
           }
         } else if (1 === tmp4) {
           if (arg0 === 1) {
@@ -263,7 +263,7 @@ export default function requestConjureDevicePermissions() {
   return obj(...arguments);
 };
 export const UNANSWERED_REQUEST_DELAY_MS = SECOND;
-export const getConjureDevicePermissionStatus = function getConjureDevicePermissionStatus(applicationId, permission) {
+export function getConjureDevicePermissionStatus(applicationId, permission) {
   let obj3;
   let str;
   obj = conjureDevicePermissions;
@@ -278,4 +278,4 @@ export const getConjureDevicePermissionStatus = function getConjureDevicePermiss
     obj3 = { permission, state: "unsupported" };
   }
   return obj3;
-};
+}

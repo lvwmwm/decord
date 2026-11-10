@@ -1,10 +1,10 @@
-// Module ID: 12585
-// Function ID: 12586
+// Module ID: 13028
+// Function ID: 13029
 // Name: ConjureDebugFormat
 // Dependencies: [2]
 // Exports: debugLogEnv, formatBytes, formatCount, formatMs, formatObservedAt, shortBuildLabel
 
-// Module 12585 (ConjureDebugFormat)
+// Module 13028 (ConjureDebugFormat)
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/conjure/debug/ConjureDebugFormat.tsx");
@@ -19,15 +19,15 @@ export function debugLogEnv(source) {
   }
   str2 = source;
 }
-export const formatBytes = function formatBytes(r2_bytes) {
-  if (Number.isFinite(r2_bytes)) {
-    if (r2_bytes >= 0) {
-      if (r2_bytes < 1024) {
+export function formatBytes(looseBytes) {
+  if (Number.isFinite(looseBytes)) {
+    if (looseBytes >= 0) {
+      if (looseBytes < 1024) {
         const _Math4 = Math;
         const _HermesInternal4 = HermesInternal;
-        return "" + Math.round(r2_bytes) + " B";
+        return "" + Math.round(looseBytes) + " B";
       } else {
-        const result = r2_bytes / 1024;
+        const result = looseBytes / 1024;
         if (result < 1024) {
           let rounded;
           if (100 <= result) {
@@ -67,8 +67,8 @@ export const formatBytes = function formatBytes(r2_bytes) {
     }
   }
   return "\u2014";
-};
-export const formatMs = function formatMs(cpu_ms) {
+}
+export function formatMs(cpu_ms) {
   if (Number.isFinite(cpu_ms)) {
     if (cpu_ms >= 0) {
       if (cpu_ms < 1) {
@@ -109,15 +109,15 @@ export const formatMs = function formatMs(cpu_ms) {
     }
   }
   return "\u2014";
-};
-export const formatCount = function formatCount(cache_read_input_tokens) {
+}
+export function formatCount(cache_read_input_tokens) {
   let str = "\u2014";
   if (Number.isFinite(cache_read_input_tokens)) {
     str = cache_read_input_tokens.toLocaleString();
   }
   return str;
-};
-export const formatObservedAt = function formatObservedAt(observedAt) {
+}
+export function formatObservedAt(observedAt) {
   const date = new Date(observedAt);
   if (Number.isNaN(date.getTime())) {
     return observedAt;
@@ -140,8 +140,8 @@ export const formatObservedAt = function formatObservedAt(observedAt) {
     }
     toLocaleTimeStringResult = date.toLocaleString();
   }
-};
-export const shortBuildLabel = function shortBuildLabel(build) {
+}
+export function shortBuildLabel(build) {
   const parts = build.split("/");
   const found = parts.filter((item) => "" !== item);
   let arr3 = found[found.length - 1];
@@ -153,4 +153,4 @@ export const shortBuildLabel = function shortBuildLabel(build) {
     substr = arr3.slice(0, 12);
   }
   return substr;
-};
+}

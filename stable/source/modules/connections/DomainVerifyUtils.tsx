@@ -1,18 +1,18 @@
-// Module ID: 14134
-// Function ID: 14135
+// Module ID: 14659
+// Function ID: 14660
 // Name: DomainVerifyUtils
 // Dependencies: [2]
 // Exports: getDnsName, getHttpName
 
-// Module 14134 (DomainVerifyUtils)
+// Module 14659 (DomainVerifyUtils)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/connections/DomainVerifyUtils.tsx");
 
 export const EXAMPLE_DOMAIN = "example.com";
-export const getDnsName = function getDnsName(domain) {
+export function getDnsName(domain) {
   return "_discord." + domain;
-};
-export const getHttpName = function getHttpName(domain) {
+}
+export function getHttpName(domain) {
   return "https://" + domain + "/.well-known/discord";
-};
+}

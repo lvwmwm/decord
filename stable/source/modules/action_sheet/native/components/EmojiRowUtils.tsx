@@ -1,12 +1,12 @@
-// Module ID: 14019
-// Function ID: 14020
+// Module ID: 14539
+// Function ID: 14540
 // Name: EmojiRowUtils
-// Dependencies: [1087, 1405, 2]
+// Dependencies: [1072, 1396, 2]
 // Exports: shouldShowEmojiRow
 
-// Module 14019 (EmojiRowUtils)
-import FlagUtils from "FlagUtils" /* 1405 */;
-import Constants from "Constants" /* 1087 */;
+// Module 14539 (EmojiRowUtils)
+import FlagUtils from "FlagUtils" /* 1396 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 let c2;
@@ -15,11 +15,11 @@ let closure_4;
 ({ MessageFlags: c2, MessageStates: c3, MessageTypes: closure_4 } = Constants);
 const result = size.fileFinishedImporting("modules/action_sheet/native/components/EmojiRowUtils.tsx");
 
-export const shouldShowEmojiRow = function shouldShowEmojiRow(arg0, message, isActiveChannelOrUnarchivableThread) {
-  let tmp = arg0 && isActiveChannelOrUnarchivableThread && message.state !== constants2.SEND_FAILED && message.state !== constants2.SENDING && message.type !== constants3.THREAD_STARTER_MESSAGE;
+export function shouldShowEmojiRow(arg0, message, arg2) {
+  let tmp = arg0 && arg2 && message.state !== constants2.SEND_FAILED && message.state !== constants2.SENDING && message.type !== constants3.THREAD_STARTER_MESSAGE;
   if (tmp) {
     const obj = FlagUtils;
     tmp = !obj.hasFlag(message.flags, constants.EPHEMERAL);
   }
   return tmp;
-};
+}

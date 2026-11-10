@@ -1,14 +1,14 @@
-// Module ID: 10899
-// Function ID: 10900
+// Module ID: 10985
+// Function ID: 10986
 // Name: MessageRequestActionCreators
-// Dependencies: [5, 1087, 1297, 10900, 584, 6700, 2]
+// Dependencies: [5, 1072, 1282, 10986, 572, 6740, 2]
 // Exports: acceptMessageRequest, clearMessageRequestState, fetchUserCountryCode, markAsMessageRequest, rejectMessageRequest, rejectMessageRequestBatch
 
-// Module 10899 (MessageRequestActionCreators)
-import Constants from "Constants" /* 1087 */;
-import HTTPUtils from "HTTPUtils" /* 1297 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6700 */;
-import MessageRequestTypes from "MessageRequestTypes" /* 10900 */;
+// Module 10985 (MessageRequestActionCreators)
+import Constants from "Constants" /* 1072 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6740 */;
+import MessageRequestTypes from "MessageRequestTypes" /* 10986 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ let body = function _acceptMessageRequest() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -66,7 +66,7 @@ let body = function _acceptMessageRequest() {
             const obj = closure_130_1(closure_130_2[4]);
             obj.dispatch(obj7);
             c4 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp11) {
           c4 = 3;
@@ -80,10 +80,10 @@ let body = function _acceptMessageRequest() {
 const Endpoints = Constants.Endpoints;
 const result = size.fileFinishedImporting("modules/message_request/MessageRequestActionCreators.tsx");
 
-export const acceptMessageRequest = function acceptMessageRequest() {
+export function acceptMessageRequest() {
   return obj(...arguments);
-};
-export const clearMessageRequestState = function clearMessageRequestState(id) {
+}
+export function clearMessageRequestState(id) {
   let obj3;
   const HTTP = HTTPUtils.HTTP;
   const request = { url: Endpoints.CHANNEL_RECIPIENT_ME(id), body, rejectWithError: obj3.rejectWithMigratedError() };
@@ -91,8 +91,8 @@ export const clearMessageRequestState = function clearMessageRequestState(id) {
   body = { consent_status: MessageRequestTypes.MessageRequestConsentStatusTypes.UNSPECIFIED };
   obj3 = HTTPUtils;
   return put(request);
-};
-export const markAsMessageRequest = function markAsMessageRequest(id) {
+}
+export function markAsMessageRequest(id) {
   let obj3;
   const HTTP = HTTPUtils.HTTP;
   const request = { url: Endpoints.CHANNEL_RECIPIENT_ME(id), body, rejectWithError: obj3.rejectWithMigratedError() };
@@ -100,16 +100,16 @@ export const markAsMessageRequest = function markAsMessageRequest(id) {
   body = { consent_status: MessageRequestTypes.MessageRequestConsentStatusTypes.PENDING };
   obj3 = HTTPUtils;
   return put(request);
-};
-export const rejectMessageRequest = function rejectMessageRequest(id) {
+}
+export function rejectMessageRequest(id) {
   let obj2;
   const HTTP = HTTPUtils.HTTP;
   const del = HTTP.del;
   const obj = { url: Endpoints.CHANNEL_RECIPIENT_ME(id), rejectWithError: obj2.rejectWithMigratedError() };
   obj2 = HTTPUtils;
   return del(obj);
-};
-export const rejectMessageRequestBatch = function rejectMessageRequestBatch(c0) {
+}
+export function rejectMessageRequestBatch(c0) {
   let obj3;
   const HTTP = HTTPUtils.HTTP;
   const request = { url: Endpoints.CHANNEL_RECIPIENT_REJECT_BATCH(), body, rejectWithError: obj3.rejectWithMigratedError() };
@@ -117,8 +117,8 @@ export const rejectMessageRequestBatch = function rejectMessageRequestBatch(c0) 
   body = { channel_ids: c0 };
   obj3 = HTTPUtils;
   return put(request);
-};
-export const fetchUserCountryCode = function fetchUserCountryCode() {
+}
+export function fetchUserCountryCode() {
   const obj = AuthenticationActionCreatorsDefault;
   const locationMetadata = obj.getLocationMetadata();
-};
+}

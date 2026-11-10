@@ -1,18 +1,18 @@
-// Module ID: 2022
-// Function ID: 2023
+// Module ID: 2014
+// Function ID: 2015
 // Name: GameStore
-// Dependencies: [2023, 504, 1386, 584, 2]
+// Dependencies: [2015, 504, 1377, 572, 2]
 
-// Module 2022 (GameStore)
+// Module 2014 (GameStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import URLUtilsDefault from "URLUtils" /* 1386 */;
-import GameRecord from "GameRecord" /* 2023 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import URLUtilsDefault from "URLUtils" /* 1377 */;
+import GameRecord from "GameRecord" /* 2015 */;
 import size from "module_2" /* 2 */;
 
 let message_preview;
 
-const f90269 = function(third_party_skus) {
+const f83004 = function(third_party_skus) {
   let isArray = "third_party_skus" in third_party_skus;
   if (isArray) {
     const _Array = Array;
@@ -31,19 +31,19 @@ const f90269 = function(third_party_skus) {
     }
   }
 };
-const f90270 = (message) => {
+const f83005 = (message) => {
   message = message.message;
   closure_0 = false;
   const mention_games = message.mention_games;
   if (mention_games != null) {
-    const item = mention_games.forEach(f90269);
+    const item = mention_games.forEach(f83004);
   }
   if (null != message.referenced_message) {
     const referenced_message = message.referenced_message;
     closure_0 = false;
     const mention_games1 = referenced_message.mention_games;
     if (mention_games1 != null) {
-      const item1 = mention_games1.forEach(f90269);
+      const item1 = mention_games1.forEach(f83004);
     }
     if (null != referenced_message.referenced_message) {
       const tmp4 = closure_2_7(referenced_message.referenced_message) || closure_0;
@@ -51,13 +51,13 @@ const f90270 = (message) => {
     }
     const message_snapshots = referenced_message.message_snapshots;
     if (message_snapshots != null) {
-      const item2 = message_snapshots.forEach(f90270);
+      const item2 = message_snapshots.forEach(f83005);
     }
     closure_0 = closure_0 || closure_0;
   }
   const message_snapshots1 = message.message_snapshots;
   if (message_snapshots1 != null) {
-    const item3 = message_snapshots1.forEach(f90270);
+    const item3 = message_snapshots1.forEach(f83005);
   }
   closure_0 = closure_0 || closure_0;
 };
@@ -65,7 +65,7 @@ function createGamesFromMessage(referenced_message) {
   let closure_0 = false;
   const mention_games = referenced_message.mention_games;
   if (mention_games != null) {
-    const item = mention_games.forEach(f90269);
+    const item = mention_games.forEach(f83004);
   }
   if (null != referenced_message.referenced_message) {
     const tmp3 = createGamesFromMessage(referenced_message.referenced_message) || closure_0;
@@ -73,7 +73,7 @@ function createGamesFromMessage(referenced_message) {
   }
   const message_snapshots = referenced_message.message_snapshots;
   if (message_snapshots != null) {
-    const item1 = message_snapshots.forEach(f90270);
+    const item1 = message_snapshots.forEach(f83005);
   }
   return closure_0;
 }
@@ -83,14 +83,14 @@ function handleLoadMessages(messages) {
     let closure_0 = false;
     mention_games = mention_games.mention_games;
     if (mention_games != null) {
-      const item = mention_games.forEach(f90269);
+      const item = mention_games.forEach(f83004);
     }
     if (null != mention_games.referenced_message) {
       const referenced_message = mention_games.referenced_message;
       closure_0 = false;
       const mention_games1 = referenced_message.mention_games;
       if (mention_games1 != null) {
-        const item1 = mention_games1.forEach(f90269);
+        const item1 = mention_games1.forEach(f83004);
       }
       if (null != referenced_message.referenced_message) {
         const tmp4 = closure_7(referenced_message.referenced_message) || closure_0;
@@ -98,13 +98,13 @@ function handleLoadMessages(messages) {
       }
       const message_snapshots = referenced_message.message_snapshots;
       if (message_snapshots != null) {
-        const item2 = message_snapshots.forEach(f90270);
+        const item2 = message_snapshots.forEach(f83005);
       }
       closure_0 = closure_0 || closure_0;
     }
     const message_snapshots1 = mention_games.message_snapshots;
     if (message_snapshots1 != null) {
-      const item3 = message_snapshots1.forEach(f90270);
+      const item3 = message_snapshots1.forEach(f83005);
     }
     return closure_0 || acc;
   }, false);
@@ -119,14 +119,14 @@ function handleLoadSearchResults(data) {
         closure_0 = false;
         mention_games = mention_games.mention_games;
         if (mention_games != null) {
-          let item = mention_games.forEach(f90269);
+          let item = mention_games.forEach(f83004);
         }
         if (null != mention_games.referenced_message) {
           let referenced_message = mention_games.referenced_message;
           c0 = false;
           let mention_games1 = referenced_message.mention_games;
           if (mention_games1 != null) {
-            let item1 = mention_games1.forEach(f90269);
+            let item1 = mention_games1.forEach(f83004);
           }
           if (null != referenced_message.referenced_message) {
             let tmp4 = closure_2_7(referenced_message.referenced_message) || c0;
@@ -134,13 +134,13 @@ function handleLoadSearchResults(data) {
           }
           let message_snapshots = referenced_message.message_snapshots;
           if (message_snapshots != null) {
-            let item2 = message_snapshots.forEach(f90270);
+            let item2 = message_snapshots.forEach(f83005);
           }
           closure_0 = c0 || closure_0;
         }
         let message_snapshots1 = mention_games.message_snapshots;
         if (message_snapshots1 != null) {
-          let item3 = message_snapshots1.forEach(f90270);
+          let item3 = message_snapshots1.forEach(f83005);
         }
         closure_0 = closure_0 || closure_0;
       });
@@ -153,14 +153,14 @@ function handleIncomingMessage(message) {
   let closure_0 = false;
   const mention_games = message.mention_games;
   if (mention_games != null) {
-    const item = mention_games.forEach(f90269);
+    const item = mention_games.forEach(f83004);
   }
   if (null != message.referenced_message) {
     const referenced_message = message.referenced_message;
     closure_0 = false;
     const mention_games1 = referenced_message.mention_games;
     if (mention_games1 != null) {
-      const item1 = mention_games1.forEach(f90269);
+      const item1 = mention_games1.forEach(f83004);
     }
     if (null != referenced_message.referenced_message) {
       const tmp4 = createGamesFromMessage(referenced_message.referenced_message) || closure_0;
@@ -168,13 +168,13 @@ function handleIncomingMessage(message) {
     }
     const message_snapshots = referenced_message.message_snapshots;
     if (message_snapshots != null) {
-      const item2 = message_snapshots.forEach(f90270);
+      const item2 = message_snapshots.forEach(f83005);
     }
     closure_0 = closure_0 || closure_0;
   }
   const message_snapshots1 = message.message_snapshots;
   if (message_snapshots1 != null) {
-    const item3 = message_snapshots1.forEach(f90270);
+    const item3 = message_snapshots1.forEach(f83005);
   }
   return closure_0;
 }
@@ -203,7 +203,7 @@ class GameStore extends Store {
     const hasItem = null != item && set2.has(item);
     return hasItem;
   }
-  getCoverImageUrl(id, arg1) {
+  getCoverImageUrl(id, size) {
     let tmp = null;
     if (null != id) {
       const value = map.get(id);
@@ -215,7 +215,7 @@ class GameStore extends Store {
     }
     if (null == tmp) {
       return null;
-    } else if (null == arg1) {
+    } else if (null == size) {
       return tmp;
     } else {
       const obj2 = URLUtilsDefault;
@@ -223,7 +223,7 @@ class GameStore extends Store {
       let str1 = tmp;
       if (null != str) {
         const searchParams = str.searchParams;
-        const str2 = arg1.size;
+        const str2 = size.size;
         const result = searchParams.set("size", str2.toString());
         str1 = str.toString();
       }
@@ -286,14 +286,14 @@ const obj = {
       let closure_0 = false;
       mention_games = mention_games.mention_games;
       if (mention_games != null) {
-        const item = mention_games.forEach(f90269);
+        const item = mention_games.forEach(f83004);
       }
       if (null != mention_games.referenced_message) {
         const referenced_message = mention_games.referenced_message;
         closure_0 = false;
         const mention_games1 = referenced_message.mention_games;
         if (mention_games1 != null) {
-          const item1 = mention_games1.forEach(f90269);
+          const item1 = mention_games1.forEach(f83004);
         }
         if (null != referenced_message.referenced_message) {
           const tmp4 = closure_7(referenced_message.referenced_message) || closure_0;
@@ -301,13 +301,13 @@ const obj = {
         }
         const message_snapshots = referenced_message.message_snapshots;
         if (message_snapshots != null) {
-          const item2 = message_snapshots.forEach(f90270);
+          const item2 = message_snapshots.forEach(f83005);
         }
         closure_0 = closure_0 || closure_0;
       }
       const message_snapshots1 = mention_games.message_snapshots;
       if (message_snapshots1 != null) {
-        const item3 = message_snapshots1.forEach(f90270);
+        const item3 = message_snapshots1.forEach(f83005);
       }
       return closure_0 || acc;
     }, false);
@@ -323,14 +323,14 @@ const obj = {
       let closure_0 = false;
       mention_games = mention_games.mention_games;
       if (mention_games != null) {
-        const item = mention_games.forEach(f90269);
+        const item = mention_games.forEach(f83004);
       }
       if (null != mention_games.referenced_message) {
         const referenced_message = mention_games.referenced_message;
         closure_0 = false;
         const mention_games1 = referenced_message.mention_games;
         if (mention_games1 != null) {
-          const item1 = mention_games1.forEach(f90269);
+          const item1 = mention_games1.forEach(f83004);
         }
         if (null != referenced_message.referenced_message) {
           const tmp4 = closure_7(referenced_message.referenced_message) || closure_0;
@@ -338,13 +338,13 @@ const obj = {
         }
         const message_snapshots = referenced_message.message_snapshots;
         if (message_snapshots != null) {
-          const item2 = message_snapshots.forEach(f90270);
+          const item2 = message_snapshots.forEach(f83005);
         }
         closure_0 = closure_0 || closure_0;
       }
       const message_snapshots1 = mention_games.message_snapshots;
       if (message_snapshots1 != null) {
-        const item3 = message_snapshots1.forEach(f90270);
+        const item3 = message_snapshots1.forEach(f83005);
       }
       return closure_0 || acc;
     }, false);
@@ -359,14 +359,14 @@ const obj = {
           closure_0 = false;
           mention_games = mention_games.mention_games;
           if (mention_games != null) {
-            const item = mention_games.forEach(f90269);
+            const item = mention_games.forEach(f83004);
           }
           if (null != mention_games.referenced_message) {
             const referenced_message = mention_games.referenced_message;
             closure_0 = false;
             const mention_games1 = referenced_message.mention_games;
             if (mention_games1 != null) {
-              const item1 = mention_games1.forEach(f90269);
+              const item1 = mention_games1.forEach(f83004);
             }
             if (null != referenced_message.referenced_message) {
               const tmp4 = createGamesFromMessage(referenced_message.referenced_message) || closure_0;
@@ -374,13 +374,13 @@ const obj = {
             }
             const message_snapshots = referenced_message.message_snapshots;
             if (message_snapshots != null) {
-              const item2 = message_snapshots.forEach(f90270);
+              const item2 = message_snapshots.forEach(f83005);
             }
             closure_0 = closure_0 || closure_0;
           }
           const message_snapshots1 = mention_games.message_snapshots;
           if (message_snapshots1 != null) {
-            const item3 = message_snapshots1.forEach(f90270);
+            const item3 = message_snapshots1.forEach(f83005);
           }
           closure_0 = closure_0 || closure_0;
         });
@@ -395,14 +395,14 @@ const obj = {
       let closure_0 = false;
       const mention_games = message.mention_games;
       if (mention_games != null) {
-        const item = mention_games.forEach(f90269);
+        const item = mention_games.forEach(f83004);
       }
       if (null != message.referenced_message) {
         const referenced_message = message.referenced_message;
         closure_0 = false;
         const mention_games1 = referenced_message.mention_games;
         if (mention_games1 != null) {
-          const item1 = mention_games1.forEach(f90269);
+          const item1 = mention_games1.forEach(f83004);
         }
         if (null != referenced_message.referenced_message) {
           const tmp4 = closure_7(referenced_message.referenced_message) || closure_0;
@@ -410,13 +410,13 @@ const obj = {
         }
         const message_snapshots = referenced_message.message_snapshots;
         if (message_snapshots != null) {
-          const item2 = message_snapshots.forEach(f90270);
+          const item2 = message_snapshots.forEach(f83005);
         }
         closure_0 = closure_0 || closure_0;
       }
       const message_snapshots1 = message.message_snapshots;
       if (message_snapshots1 != null) {
-        const item3 = message_snapshots1.forEach(f90270);
+        const item3 = message_snapshots1.forEach(f83005);
       }
       return closure_0 || acc;
     }, false);
@@ -430,14 +430,14 @@ const obj = {
       let closure_0 = false;
       mention_games = mention_games.mention_games;
       if (mention_games != null) {
-        const item = mention_games.forEach(f90269);
+        const item = mention_games.forEach(f83004);
       }
       if (null != mention_games.referenced_message) {
         const referenced_message = mention_games.referenced_message;
         closure_0 = false;
         const mention_games1 = referenced_message.mention_games;
         if (mention_games1 != null) {
-          const item1 = mention_games1.forEach(f90269);
+          const item1 = mention_games1.forEach(f83004);
         }
         if (null != referenced_message.referenced_message) {
           const tmp4 = closure_7(referenced_message.referenced_message) || closure_0;
@@ -445,13 +445,13 @@ const obj = {
         }
         const message_snapshots = referenced_message.message_snapshots;
         if (message_snapshots != null) {
-          const item2 = message_snapshots.forEach(f90270);
+          const item2 = message_snapshots.forEach(f83005);
         }
         closure_0 = closure_0 || closure_0;
       }
       const message_snapshots1 = mention_games.message_snapshots;
       if (message_snapshots1 != null) {
-        const item3 = message_snapshots1.forEach(f90270);
+        const item3 = message_snapshots1.forEach(f83005);
       }
       return closure_0 || acc;
     }, false);
@@ -469,14 +469,14 @@ const obj = {
         closure_0 = false;
         const mention_games = first_message.mention_games;
         if (mention_games != null) {
-          item = mention_games.forEach(f90269);
+          item = mention_games.forEach(f83004);
         }
         if (null != first_message.referenced_message) {
           const referenced_message = first_message.referenced_message;
           closure_0 = false;
           const mention_games1 = referenced_message.mention_games;
           if (mention_games1 != null) {
-            const item1 = mention_games1.forEach(f90269);
+            const item1 = mention_games1.forEach(f83004);
           }
           if (null != referenced_message.referenced_message) {
             const tmp4 = createGamesFromMessage(referenced_message.referenced_message) || closure_0;
@@ -484,13 +484,13 @@ const obj = {
           }
           const message_snapshots = referenced_message.message_snapshots;
           if (message_snapshots != null) {
-            const item2 = message_snapshots.forEach(f90270);
+            const item2 = message_snapshots.forEach(f83005);
           }
           closure_0 = closure_0 || closure_0;
         }
         const message_snapshots1 = first_message.message_snapshots;
         if (message_snapshots1 != null) {
-          const item3 = message_snapshots1.forEach(f90270);
+          const item3 = message_snapshots1.forEach(f83005);
         }
         closure_0 = closure_0 || closure_0;
       }
@@ -498,14 +498,14 @@ const obj = {
         closure_0 = false;
         const mention_games2 = most_recent_message.mention_games;
         if (mention_games2 != null) {
-          const item4 = mention_games2.forEach(f90269);
+          const item4 = mention_games2.forEach(f83004);
         }
         if (null != most_recent_message.referenced_message) {
           const referenced_message2 = most_recent_message.referenced_message;
           closure_0 = false;
           const mention_games3 = referenced_message2.mention_games;
           if (mention_games3 != null) {
-            const item5 = mention_games3.forEach(f90269);
+            const item5 = mention_games3.forEach(f83004);
           }
           if (null != referenced_message2.referenced_message) {
             const tmp10 = createGamesFromMessage(referenced_message2.referenced_message) || closure_0;
@@ -513,13 +513,13 @@ const obj = {
           }
           const message_snapshots2 = referenced_message2.message_snapshots;
           if (message_snapshots2 != null) {
-            const item6 = message_snapshots2.forEach(f90270);
+            const item6 = message_snapshots2.forEach(f83005);
           }
           closure_0 = closure_0 || closure_0;
         }
         const message_snapshots3 = most_recent_message.message_snapshots;
         if (message_snapshots3 != null) {
-          const item7 = message_snapshots3.forEach(f90270);
+          const item7 = message_snapshots3.forEach(f83005);
         }
         closure_0 = closure_0 || closure_0;
       }
@@ -535,14 +535,14 @@ const obj = {
         closure_0 = false;
         const mention_games = message_preview.mention_games;
         if (mention_games != null) {
-          const item = mention_games.forEach(f90269);
+          const item = mention_games.forEach(f83004);
         }
         if (null != message_preview.referenced_message) {
           const referenced_message = message_preview.referenced_message;
           closure_0 = false;
           const mention_games1 = referenced_message.mention_games;
           if (mention_games1 != null) {
-            const item1 = mention_games1.forEach(f90269);
+            const item1 = mention_games1.forEach(f83004);
           }
           if (null != referenced_message.referenced_message) {
             const tmp4 = createGamesFromMessage(referenced_message.referenced_message) || closure_0;
@@ -550,13 +550,13 @@ const obj = {
           }
           const message_snapshots = referenced_message.message_snapshots;
           if (message_snapshots != null) {
-            const item2 = message_snapshots.forEach(f90270);
+            const item2 = message_snapshots.forEach(f83005);
           }
           closure_0 = closure_0 || closure_0;
         }
         const message_snapshots1 = message_preview.message_snapshots;
         if (message_snapshots1 != null) {
-          const item3 = message_snapshots1.forEach(f90270);
+          const item3 = message_snapshots1.forEach(f83005);
         }
         closure_0 = closure_0 || closure_0;
       }
@@ -572,14 +572,14 @@ const obj = {
         closure_0 = false;
         const mention_games = message.mention_games;
         if (mention_games != null) {
-          const item = mention_games.forEach(f90269);
+          const item = mention_games.forEach(f83004);
         }
         if (null != message.referenced_message) {
           const referenced_message = message.referenced_message;
           closure_0 = false;
           const mention_games1 = referenced_message.mention_games;
           if (mention_games1 != null) {
-            const item1 = mention_games1.forEach(f90269);
+            const item1 = mention_games1.forEach(f83004);
           }
           if (null != referenced_message.referenced_message) {
             const tmp4 = createGamesFromMessage(referenced_message.referenced_message) || closure_0;
@@ -587,13 +587,13 @@ const obj = {
           }
           const message_snapshots = referenced_message.message_snapshots;
           if (message_snapshots != null) {
-            const item2 = message_snapshots.forEach(f90270);
+            const item2 = message_snapshots.forEach(f83005);
           }
           closure_0 = closure_0 || closure_0;
         }
         const message_snapshots1 = message.message_snapshots;
         if (message_snapshots1 != null) {
-          const item3 = message_snapshots1.forEach(f90270);
+          const item3 = message_snapshots1.forEach(f83005);
         }
         closure_0 = closure_0 || closure_0;
       }

@@ -1,14 +1,14 @@
-// Module ID: 15184
-// Function ID: 15185
+// Module ID: 15724
+// Function ID: 15725
 // Name: ShareUtils
-// Dependencies: [5, 7663, 5008, 5695, 5718, 9697, 8336, 8177, 8175, 7787, 9685, 7598, 2]
+// Dependencies: [5, 7701, 5019, 5712, 5735, 9778, 8343, 8211, 8209, 7824, 9765, 7636, 2]
 // Exports: sendShareMessage, showInformationToast
 
-// Module 15184 (ShareUtils)
-import MessageConstants from "MessageConstants" /* 5008 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5695 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 5718 */;
-import DraftStore from "DraftStore" /* 7663 */;
+// Module 15724 (ShareUtils)
+import MessageConstants from "MessageConstants" /* 5019 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5712 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 5735 */;
+import DraftStore from "DraftStore" /* 7701 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ let obj = function _sendShareMessage() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -61,7 +61,7 @@ let obj = function _sendShareMessage() {
             future = undefined;
             c4 = 1;
             c5 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "flexDirection", done: true };
           }
         } else if (1 === c4) {
           if (arg0 === 1) {
@@ -140,13 +140,13 @@ const MessageSendLocation = MessageConstants.MessageSendLocation;
 let size = size_mod;
 const result = size.fileFinishedImporting("modules/share/native/ShareUtils.tsx");
 
-export const showInformationToast = function showInformationToast(intl3) {
+export function showInformationToast(intl3) {
   const open = ToastActionCreatorsDefault.open;
   obj = { text: intl3, icon: CircleInformationIcon.CircleInformationIcon };
   ToastActionCreatorsDefault;
   const combined = "INFORMATION_TOAST-" + intl3;
   open(combined, obj);
-};
-export const sendShareMessage = function sendShareMessage() {
+}
+export function sendShareMessage() {
   return obj(...arguments);
-};
+}

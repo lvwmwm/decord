@@ -1,216 +1,227 @@
 // Module ID: 1864
 // Function ID: 1865
-// Dependencies: [19, 17, 21, 1658, 1865, 1852, 1848, 1648, 1866]
+// Dependencies: [19, 17, 21, 1650, 1640, 1865]
 
 // Module 1864
 import react_native from "react-native" /* 17 */;
+import react2 from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import _mod1658 from "module_1658" /* 1658 */;
-import react_mod from "react" /* 19 */;
+import KeyboardControllerNative from "KeyboardControllerNative" /* 1640 */;
+import _mod1650 from "module_1650" /* 1650 */;
 
-let c3;
-let closure_4;
-let forwardRef;
-let react = react_mod;
-({ useCallback: c3, useMemo: closure_4, forwardRef } = react);
-react = react_mod;
-let View = react_native.View;
+const cancelAnimation = _mod1650;
+
+const forwardRef = react2.forwardRef;
+const Platform = react_native.Platform;
 const jsx = Fragment.jsx;
-let closure_8 = { x: 0, y: 0, width: 0, height: 0 };
-let closure_9 = { code: "function pnpm_indexTsx1(){const{initialFrame,defaultLayout}=this.__closure;return initialFrame.value||defaultLayout;}" };
-let closure_10 = { code: "function pnpm_indexTsx2(){const{screenHeight,keyboard,keyboardVerticalOffset,frame}=this.__closure;const keyboardY=screenHeight-keyboard.heightWhenOpened.value-keyboardVerticalOffset;return Math.max(frame.value.y+frame.value.height-keyboardY,0);}" };
-let closure_11 = { code: "function pnpm_indexTsx3(value){const{interpolate,relativeKeyboardHeight}=this.__closure;return interpolate(value,[0,1],[0,relativeKeyboardHeight()]);}" };
-let __initData = { code: "function pnpm_indexTsx4(layout){const{keyboard,initialFrame,behavior}=this.__closure;if(keyboard.isClosed.value||initialFrame.value===null||behavior!==\"height\"){initialFrame.value=layout;}}" };
-let __initData2 = { code: "function pnpm_indexTsx5(){const{enabled,interpolateToRelativeKeyboardHeight,keyboard,translate,padding,frame,behavior}=this.__closure;if(!enabled){return{};}const bottom=interpolateToRelativeKeyboardHeight(keyboard.progress.value);const translateY=interpolateToRelativeKeyboardHeight(translate.value);const paddingBottom=interpolateToRelativeKeyboardHeight(padding.value);const height=frame.value.height-bottom;switch(behavior){case\"height\":if(!keyboard.isClosed.value&&height>0){return{height:height,flex:0};}return{};case\"position\":return{bottom:bottom};case\"padding\":return{paddingBottom:bottom};case\"translate-with-padding\":return{paddingTop:paddingBottom,transform:[{translateY:-translateY}]};default:return{};}}" };
+let closure_4 = cancelAnimation.createAnimatedComponent(KeyboardControllerNative.ClippingScrollView);
+let closure_5 = { code: "function pnpm_indexTsx1(){const{inverted,bottomPadding,contentInset}=this.__closure;var _contentInset,_contentInset2,_contentInset3,_contentInset4;const dynamicTop=inverted?bottomPadding.value:0;const dynamicBottom=!inverted?bottomPadding.value:0;return{dynamic:{top:dynamicTop,bottom:dynamicBottom},effective:{top:dynamicTop+(((_contentInset=contentInset)===null||_contentInset===void 0?void 0:_contentInset.top)||0),bottom:dynamicBottom+(((_contentInset2=contentInset)===null||_contentInset2===void 0?void 0:_contentInset2.bottom)||0),left:((_contentInset3=contentInset)===null||_contentInset3===void 0?void 0:_contentInset3.left)||0,right:((_contentInset4=contentInset)===null||_contentInset4===void 0?void 0:_contentInset4.right)||0}};}" };
+let closure_6 = { code: "function pnpm_indexTsx2(){const{insets}=this.__closure;return insets.value.effective;}" };
+let closure_7 = { code: "function pnpm_indexTsx3(current,previous){const{onContentInsetChange,runOnJS}=this.__closure;if(!onContentInsetChange){return;}if(previous&&current.top===previous.top&&current.bottom===previous.bottom&&current.left===previous.left&&current.right===previous.right){return;}runOnJS(onContentInsetChange)(current);}" };
+let value = { code: "function pnpm_indexTsx4(){const{insets,scrollIndicatorPadding,bottomPadding,inverted,scrollIndicatorInsets,contentOffsetY,prevContentOffsetY}=this.__closure;var _scrollIndicatorPaddi,_scrollIndicatorInset,_scrollIndicatorInset2,_scrollIndicatorInset3,_scrollIndicatorInset4;const{dynamic:dynamic,effective:effective}=insets.value;const indicatorPadding=(_scrollIndicatorPaddi=scrollIndicatorPadding)!==null&&_scrollIndicatorPaddi!==void 0?_scrollIndicatorPaddi:bottomPadding;const indicatorTop=(inverted?indicatorPadding.value:0)+(((_scrollIndicatorInset=scrollIndicatorInsets)===null||_scrollIndicatorInset===void 0?void 0:_scrollIndicatorInset.top)||0);const indicatorBottom=(!inverted?indicatorPadding.value:0)+(((_scrollIndicatorInset2=scrollIndicatorInsets)===null||_scrollIndicatorInset2===void 0?void 0:_scrollIndicatorInset2.bottom)||0);const result={contentInset:effective,scrollIndicatorInsets:{bottom:indicatorBottom,top:indicatorTop,right:(_scrollIndicatorInset3=scrollIndicatorInsets)===null||_scrollIndicatorInset3===void 0?void 0:_scrollIndicatorInset3.right,left:(_scrollIndicatorInset4=scrollIndicatorInsets)===null||_scrollIndicatorInset4===void 0?void 0:_scrollIndicatorInset4.left},contentInsetBottom:dynamic.bottom,contentInsetTop:dynamic.top};if(contentOffsetY){const curr=contentOffsetY.value;if(curr!==prevContentOffsetY.value){prevContentOffsetY.value=curr;result.contentOffset={x:0,y:curr};}}return result;}" };
 
-export default forwardRef((behavior, arg1) => {
+export default forwardRef((bottomPadding, ref) => {
+  let ScrollViewComponent;
+  let applyWorkaroundForContentInsetHitTestBug;
   let children;
-  let closure_12;
-  let closure_13;
-  let enabled;
-  let obj10;
-  let onLayout;
-  let style;
-  let tmp17Result;
-  behavior = behavior.behavior;
-  ({ children, enabled } = behavior);
-  let contentContainerStyle = behavior.contentContainerStyle;
-  if (enabled === undefined) {
-    enabled = true;
-  }
-  let num = behavior.keyboardVerticalOffset;
-  if (num === undefined) {
-    num = 0;
-  }
-  let flag = behavior.automaticOffset;
-  if (flag === undefined) {
-    flag = false;
-  }
-  ({ style, onLayout } = behavior);
-  let merged = Object.assign(behavior, Object.assign({ behavior: 0, children: 0, contentContainerStyle: 0, enabled: 0, keyboardVerticalOffset: 0, automaticOffset: 0, style: 0, onLayout: 0 }));
+  let obj4;
+  bottomPadding = bottomPadding.bottomPadding;
+  const scrollIndicatorPadding = bottomPadding.scrollIndicatorPadding;
+  const contentInset = bottomPadding.contentInset;
+  const scrollIndicatorInsets = bottomPadding.scrollIndicatorInsets;
+  const inverted = bottomPadding.inverted;
+  const contentOffsetY = bottomPadding.contentOffsetY;
+  const onContentInsetChange = bottomPadding.onContentInsetChange;
+  ({ ScrollViewComponent, applyWorkaroundForContentInsetHitTestBug, children } = bottomPadding);
+  const merged = Object.assign(bottomPadding, Object.assign({ ScrollViewComponent: 0, bottomPadding: 0, scrollIndicatorPadding: 0, contentInset: 0, scrollIndicatorInsets: 0, inverted: 0, contentOffsetY: 0, applyWorkaroundForContentInsetHitTestBug: 0, onContentInsetChange: 0, children: 0 }));
   let derivedValue;
-  let translate;
-  let padding;
-  let keyboardAnimation;
-  let height;
-  __initData = undefined;
-  __initData2 = undefined;
-  let closure_14;
-  let animatedStyle;
-  contentContainerStyle = undefined;
-  let obj = behavior(num[3]);
+  let obj = bottomPadding(contentInset[3]);
   const sharedValue = obj.useSharedValue(null);
-  const ref = sharedValue.useRef(null);
-  let obj2 = behavior(num[3]);
-  class K {
+  const tmp5 = bottomPadding(contentInset[3]);
+  class T {
     constructor() {
-      return sharedValue.value || closure_8;
+      let num4;
+      let num5;
+      let num6;
+      let rect1;
+      let num = 0;
+      if (inverted) {
+        num = bottomPadding.value;
+      }
+      let num2 = 0;
+      if (!inverted) {
+        num2 = bottomPadding.value;
+      }
+      const rect = contentInset;
+      let num3;
+      const obj = { dynamic: { top: num, bottom: num2 }, effective: rect1 };
+      if (contentInset != null) {
+        num3 = rect.top;
+      }
+      if (!num3) {
+        num3 = 0;
+      }
+      rect1 = { top: num + num3, bottom: num2 + num4, left: num5, right: num6 };
+      num4 = undefined;
+      if (rect != null) {
+        num4 = rect.bottom;
+      }
+      if (!num4) {
+        num4 = 0;
+      }
+      num5 = undefined;
+      if (rect != null) {
+        num5 = rect.left;
+      }
+      if (!num5) {
+        num5 = 0;
+      }
+      num6 = undefined;
+      if (rect != null) {
+        num6 = rect.right;
+      }
+      if (!num6) {
+        num6 = 0;
+      }
+      return obj;
     }
   }
-  let obj3 = { initialFrame: sharedValue, defaultLayout: translate };
-  K.__closure = obj3;
-  K.__workletHash = 4703969179658;
-  K.__initData = padding;
-  derivedValue = obj2.useDerivedValue(K);
-  const obj4 = behavior(num[4]);
-  const translateAnimation = obj4.useTranslateAnimation();
-  translate = translateAnimation.translate;
-  padding = translateAnimation.padding;
-  const obj5 = behavior(num[4]);
-  keyboardAnimation = obj5.useKeyboardAnimation();
-  const obj6 = behavior(num[5]);
-  height = obj6.useWindowDimensions().height;
-  class V {
+  T.__closure = { inverted, bottomPadding, contentInset };
+  T.__workletHash = 788035152099;
+  T.__initData = contentOffsetY;
+  const items = [inverted, , , , ];
+  let top;
+  const useDerivedValue = tmp5.useDerivedValue;
+  if (contentInset != null) {
+    top = contentInset.top;
+  }
+  items[1] = top;
+  let bottom;
+  if (contentInset != null) {
+    bottom = contentInset.bottom;
+  }
+  items[2] = bottom;
+  let left;
+  if (contentInset != null) {
+    left = contentInset.left;
+  }
+  items[3] = left;
+  let right;
+  if (contentInset != null) {
+    right = contentInset.right;
+  }
+  items[4] = right;
+  derivedValue = useDerivedValue(T, items);
+  const tmp2Result = bottomPadding(contentInset[3]);
+  class B {
     constructor() {
-      return Math.max(derivedValue.value.y + derivedValue.value.height - (height - keyboardAnimation.heightWhenOpened.value - num), 0);
+      return derivedValue.value.effective;
     }
   }
-  V.__closure = { screenHeight: height, keyboard: keyboardAnimation, keyboardVerticalOffset: num, frame: derivedValue };
-  V.__workletHash = 10539040422992;
-  V.__initData = keyboardAnimation;
-  let items = [height, num];
-  const tmp8 = flag(V, items);
-  __initData = tmp8;
-  class C {
-    constructor(arg0) {
-      const interpolate = _mod1658.interpolate;
-      const items = [0];
-      _mod1658;
-      items[1] = closure_12();
-      return interpolate(arg0, [0, 1], items);
-    }
-  }
-  C.__closure = { interpolate: behavior(num[3]).interpolate, relativeKeyboardHeight: tmp8 };
-  C.__workletHash = 11482114301276;
-  C.__initData = height;
-  const items1 = [tmp8];
-  ({ interpolate: behavior(num[3]).interpolate, relativeKeyboardHeight: tmp8 });
-  const tmp9 = flag(C, items1);
-  __initData2 = tmp9;
-  class D {
-    constructor(value) {
-      value = keyboardAnimation.isClosed.value || null === sharedValue.value || "height" !== behavior;
-      if (value) {
-        sharedValue.value = value;
+  B.__closure = { insets: derivedValue };
+  B.__workletHash = 3359315898790;
+  B.__initData = onContentInsetChange;
+  const fn = function x(top, top2) {
+    if (onContentInsetChange) {
+      const tmp4 = top2 && top.top === top2.top && top.bottom === top2.bottom && top.left === top2.left && top.right === top2.right;
+      if (!tmp4) {
+        const obj = _mod1650;
+        obj.runOnJS(tmp)(top);
       }
     }
-  }
-  D.__closure = { keyboard: keyboardAnimation, initialFrame: sharedValue, behavior };
-  D.__workletHash = 12256944793057;
-  D.__initData = __initData;
-  const items2 = [behavior];
-  closure_14 = flag(D, items2);
-  const items3 = [onLayout, flag];
-  const tmp10 = flag((nativeEvent) => {
-    if (onLayout != null) {
-      tmp(nativeEvent);
+  };
+  fn.__closure = { onContentInsetChange, runOnJS: bottomPadding(contentInset[3]).runOnJS };
+  fn.__workletHash = 12461544130657;
+  fn.__initData = sharedValue;
+  const items1 = [onContentInsetChange];
+  ({ onContentInsetChange, runOnJS: bottomPadding(contentInset[3]).runOnJS });
+  const animatedReaction = tmp2Result.useAnimatedReaction(B, fn, items1);
+  const fn2 = function w() {
+    let left;
+    let rect1;
+    let right;
+    value = derivedValue.value;
+    const dynamic = value.dynamic;
+    let iter = scrollIndicatorPadding;
+    const effective = value.effective;
+    if (scrollIndicatorPadding == null) {
+      iter = bottomPadding;
     }
-    const layout = nativeEvent.nativeEvent.layout;
-    const tmp3 = flag;
-    if (tmp3) {
-      let obj = behavior(num[6]);
-      const findNodeHandleResult = obj.findNodeHandle(ref.current);
-      if (null !== findNodeHandleResult) {
-        const KeyboardControllerNative = behavior(num[7]).KeyboardControllerNative;
-        const viewPositionInWindowResult = KeyboardControllerNative.viewPositionInWindow(findNodeHandleResult);
-        const nextPromise = viewPositionInWindowResult.then((result) => {
-          const obj = _mod1658;
-          const obj3 = {};
-          const runOnUIResult = obj.runOnUI(closure_14);
-          const merged = Object.assign(layout);
-          ({ x: obj2.x, y: obj2.y } = result);
-          runOnUIResult(obj3);
-        });
-        return nextPromise.catch(() => {
-          const obj = _mod1658;
-          obj.runOnUI(closure_14)(layout);
-        });
+    let num = 0;
+    if (inverted) {
+      num = iter.value;
+    }
+    const rect = scrollIndicatorInsets;
+    let num2;
+    if (scrollIndicatorInsets != null) {
+      num2 = rect.top;
+    }
+    if (!num2) {
+      num2 = 0;
+    }
+    const obj = { contentInset: effective, scrollIndicatorInsets: rect1, contentInsetBottom: null, contentInsetTop: null };
+    let num3 = 0;
+    const sum = num + num2;
+    if (!inverted) {
+      num3 = iter.value;
+    }
+    let num4;
+    if (rect != null) {
+      num4 = rect.bottom;
+    }
+    if (!num4) {
+      num4 = 0;
+    }
+    rect1 = { bottom: num3 + num4, top: sum, right, left };
+    right = undefined;
+    if (rect != null) {
+      right = rect.right;
+    }
+    left = undefined;
+    if (rect != null) {
+      left = rect.left;
+    }
+    ({ bottom: obj.contentInsetBottom, top: obj.contentInsetTop } = dynamic);
+    if (contentOffsetY) {
+      const value2 = contentOffsetY.value;
+      if (value2 !== sharedValue.value) {
+        sharedValue.value = value2;
+        const point = { x: 0, y: value2 };
+        obj.contentOffset = point;
       }
     }
-    const obj2 = behavior(num[3]);
-    return obj2.runOnUI(closure_14)(layout);
-  }, items3);
-  const obj8 = behavior(num[3]);
-  class F {
-    constructor() {
-      let items;
-      const tmp = enabled;
-      if (tmp) {
-        const tmp4 = closure_13(keyboardAnimation.progress.value);
-        const diff = derivedValue.value.height - tmp4;
-        const tmp3 = keyboardAnimation;
-        const tmp6 = closure_13(translate.value);
-        if ("height" === behavior) {
-          if (!tmp3.isClosed.value) {
-            let obj2;
-            if (diff > 0) {
-              obj2 = { height: diff, flex: 0 };
-            }
-            return obj2;
-          }
-          obj2 = {};
-        } else if ("position" === behavior) {
-          return { bottom: tmp4 };
-        } else if ("padding" === behavior) {
-          return { paddingBottom: tmp4 };
-        } else if ("translate-with-padding" === behavior) {
-          const obj = { paddingTop: tmp8, transform: items };
-          items = [{ translateY: -tmp6 }];
-          return obj;
-        } else {
-          return {};
-        }
-      } else {
-        return {};
-      }
-    }
+    return obj;
+  };
+  fn2.__closure = { insets: derivedValue, scrollIndicatorPadding, bottomPadding, inverted, scrollIndicatorInsets, contentOffsetY, prevContentOffsetY: sharedValue };
+  fn2.__workletHash = 909305568735;
+  fn2.__initData = derivedValue;
+  let bottom1;
+  const useAnimatedProps = tmp2(tmp3[3]).useAnimatedProps;
+  bottomPadding(contentInset[3]);
+  if (scrollIndicatorInsets != null) {
+    bottom1 = scrollIndicatorInsets.bottom;
   }
-  F.__closure = { enabled, interpolateToRelativeKeyboardHeight: tmp9, keyboard: keyboardAnimation, translate, padding, frame: derivedValue, behavior };
-  F.__workletHash = 6440002265153;
-  F.__initData = __initData2;
-  const items4 = [behavior, enabled, tmp9];
-  animatedStyle = obj8.useAnimatedStyle(F, items4);
-  const tmp13 = enabled(num[8])(ref, arg1);
-  let tmp15 = style;
-  if ("position" === behavior) {
-    tmp15 = contentContainerStyle;
+  const items2 = [bottom1, , , , , ];
+  let top1;
+  if (scrollIndicatorInsets != null) {
+    top1 = scrollIndicatorInsets.top;
   }
-  contentContainerStyle = tmp15;
-  const items5 = [tmp15, animatedStyle];
-  const tmp16 = onLayout(() => {
-    const items = [contentContainerStyle, animatedStyle];
-    return items;
-  }, items5);
-  if ("position" === behavior) {
-    const obj9 = { ref: tmp13, style, onLayout: tmp10, children: derivedValue(enabled(num[3]).View, obj10) };
-    const merged1 = Object.assign(merged);
-    obj10 = { style: tmp16, children };
-    tmp17Result = tmp17(ref, obj9);
-  } else {
-    const obj11 = { ref: tmp13, style: tmp16, onLayout: tmp10, children };
-    View = tmp12(tmp2[3]).View;
-    const merged2 = Object.assign(merged);
-    tmp17Result = tmp17(View, obj11);
+  items2[1] = top1;
+  let right1;
+  if (scrollIndicatorInsets != null) {
+    right1 = scrollIndicatorInsets.right;
   }
-  return tmp17Result;
+  items2[2] = right1;
+  let left1;
+  if (scrollIndicatorInsets != null) {
+    left1 = scrollIndicatorInsets.left;
+  }
+  items2[3] = left1;
+  items2[4] = inverted;
+  items2[5] = contentOffsetY;
+  const animatedProps = useAnimatedProps(fn2, items2);
+  const obj3 = { animatedProps, applyWorkaroundForContentInsetHitTestBug, style: scrollIndicatorPadding(contentInset[5]).container, children: scrollIndicatorInsets(ScrollViewComponent, obj4) };
+  obj4 = { ref, animatedProps, children };
+  const merged1 = Object.assign(merged);
+  return scrollIndicatorInsets(inverted, obj3);
 });

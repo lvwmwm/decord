@@ -1,10 +1,10 @@
 // Module ID: 18276
 // Function ID: 18277
 // Name: AssetRegistry
-// Dependencies: [1134]
+// Dependencies: [1119]
 
 // Module 18276 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1134 */;
+import AssetRegistry from "AssetRegistry" /* 1119 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/premium/referral_program/native/images", width: 200.5, height: 114, scales: [2, 3], hash: "fbbee3b1c0716eaa554a8f9a94badc67", name: "asset_nitro_ticket", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "01ba5b6e261b3f78c312695fe4f7b0d7", name: "BoostTier2Icon", type: "png" });

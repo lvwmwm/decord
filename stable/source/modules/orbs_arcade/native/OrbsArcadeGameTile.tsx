@@ -1,47 +1,253 @@
-// Module ID: 16436
-// Function ID: 16437
+// Module ID: 17026
+// Function ID: 17027
 // Name: OrbsArcadeGameTile
-// Dependencies: [19, 17, 16429, 16431, 1087, 21, 5003, 587, 5000, 558, 576, 504, 5701, 5290, 5266, 16437, 16452, 7991, 16466, 1128, 16445, 5276, 6728, 16467, 6937, 5069, 2]
+// Dependencies: [32, 19, 17, 5015, 17018, 17021, 1072, 21, 5014, 575, 5011, 504, 9695, 16994, 1498, 6977, 8873, 5717, 5587, 5624, 17027, 6767, 17043, 8028, 17058, 1113, 17036, 5634, 17059, 5080, 2]
+// Exports: default
 
-// Module 16436 (OrbsArcadeGameTile)
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1087 */;
-import ColorUtils from "ColorUtils" /* 5000 */;
-import LinearGradientDefault from "LinearGradient" /* 5290 */;
-import FastImageDefault from "FastImage" /* 5701 */;
-import OrbsArcadeNativeConstants from "OrbsArcadeNativeConstants" /* 16431 */;
-import OrbsArcadeRewardShelfDefault from "OrbsArcadeRewardShelf" /* 16437 */;
-import openOrbsArcadeSheets from "openOrbsArcadeSheets" /* 16445 */;
-import OrbsArcadePlayButtonDefault from "OrbsArcadePlayButton" /* 16452 */;
-import AssetRegistryDefault from "AssetRegistry" /* 16466 */;
-import OrbsArcadeGameContextMenuDefault from "OrbsArcadeGameContextMenu" /* 16467 */;
+// Module 17026 (OrbsArcadeGameTile)
+import nativeDefault from "native" /* 575 */;
+import Constants from "Constants" /* 1072 */;
+import ColorUtils from "ColorUtils" /* 5011 */;
+import native from "native" /* 5080 */;
+import AssetUtils from "AssetUtils" /* 9695 */;
+import openOrbsArcadeSheets from "openOrbsArcadeSheets" /* 17036 */;
+import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import OrbsArcadeStore from "OrbsArcadeStore" /* 16429 */;
+import AccessibilityStore from "AccessibilityStore" /* 5015 */;
+import OrbsArcadeStore from "OrbsArcadeStore" /* 17018 */;
+import OrbsArcadeNativeConstants from "OrbsArcadeNativeConstants" /* 17021 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5003 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import size from "module_2" /* 2 */;
+import createStyles_mod from "createStyles" /* 5014 */;
+import size_mod from "module_2" /* 2 */;
 
-let theme;
+let dependencyMap, theme;
 
-let StyleSheet;
-let c3;
-let metroImportDefault;
+let c10;
+let c9;
+let closure_12;
+let hasOwnProperty;
+let map1;
 let metroRequire;
-let obj2;
-let obj3;
-let obj4;
-let rect;
-let tmp;
-const native = tmp(5069);
-({ View: c3, StyleSheet } = react_native);
-const ORBS_ARCADE_GAME_TILE_MIN_HEIGHT = OrbsArcadeNativeConstants.ORBS_ARCADE_GAME_TILE_MIN_HEIGHT;
+function OrbsArcadeGameTileContent(game) {
+  let _undefined;
+  let _undefined2;
+  let asset;
+  let c2;
+  let c3;
+  let containerRef;
+  let gradientEnd;
+  let gradientStart;
+  let heroVideoAsset;
+  let intl;
+  let intl2;
+  let isInView;
+  let items5;
+  let items6;
+  let items7;
+  let obj19;
+  let obj22;
+  let obj8;
+  let tmp5;
+  let useReducedMotion;
+  game = game.game;
+  heroVideoAsset = undefined;
+  dependencyMap = undefined;
+  _slicedToArray = undefined;
+  const tmp = closure_14();
+  ({ asset, heroVideoAsset } = game);
+  const instructions = game.instructions;
+  let result = null;
+  ({ gradientStart, gradientEnd } = tmp);
+  const name = game.name;
+  if (null != heroVideoAsset) {
+    result = null;
+    if (heroVideoAsset.width > 0) {
+      result = null;
+      if (heroVideoAsset.height > 0) {
+        result = heroVideoAsset.width / heroVideoAsset.height;
+      }
+    }
+  }
+  const tmp3 = closure_15(result);
+  let obj = react;
+  [tmp5, c2] = _slicedToArray(react.useState(null), 2);
+  const tmp4 = _slicedToArray(react.useState(null), 2);
+  [size, c3] = react.useState(null);
+  let num2 = 0.52;
+  _slicedToArray(react.useState(null), 2);
+  const callback = react.useCallback((nativeEvent) => {
+    const layout = nativeEvent.nativeEvent.layout;
+    size = { width: layout.width, height: layout.height };
+    _undefined2(size);
+  }, []);
+  if (null != result) {
+    num2 = 0.52;
+    if (null != size) {
+      num2 = 0.52;
+      if (size.height > 0) {
+        const _Math = Math;
+        num2 = Math.min(0.52, size.width / result / size.height);
+      }
+    }
+  }
+  let tmp9 = null;
+  if (null != instructions) {
+    tmp9 = null;
+    if ("" !== instructions) {
+      tmp9 = instructions;
+    }
+  }
+  const obj2 = game(504);
+  const items = [OrbsArcadeStore];
+  const items1 = [game.id];
+  const stateFromStores = obj2.useStateFromStores(items, () => {
+    const gameStateForGame = OrbsArcadeStore.getGameStateForGame(game.id);
+    let currentRun;
+    if (gameStateForGame != null) {
+      currentRun = gameStateForGame.currentRun;
+    }
+    return null != currentRun;
+  }, items1);
+  const items2 = [AccessibilityStore];
+  const obj3 = game(504);
+  const stateFromStores1 = obj3.useStateFromStores(items2, () => useReducedMotion.useReducedMotion);
+  const items3 = [heroVideoAsset];
+  const memo = obj.useMemo(() => {
+    let result = null;
+    if (null != heroVideoAsset) {
+      size = { width: null, height: null };
+      ({ width: obj2.width, height: obj2.height } = heroVideoAsset);
+      const obj = AssetUtils;
+      result = obj.convertVideoToFirstFrameImageWithMediaProxy(tmp.url, size);
+    }
+    return result;
+  }, items3);
+  if (asset == null) {
+    asset = memo;
+  }
+  ({ isInView, containerRef } = heroVideoAsset(16994)());
+  heroVideoAsset(16994)();
+  let tmp17 = !isInView;
+  const tmp10Result = game(1498);
+  if (isInView) {
+    tmp17 = !tmp10Result.useIsFocused();
+  }
+  const obj4 = { style: tmp3.card, radius: 12, border: "faint", children: null };
+  const obj5 = { ref: containerRef, style: tmp3.hero, onLayout: callback, children: null };
+  const obj6 = { style: tmp3.heroMediaFrame, children: null };
+  if (null != heroVideoAsset) {
+    if (!stateFromStores1) {
+      let tmp21Result;
+      let tmp21Result5;
+      if (tmp5 !== heroVideoAsset.url) {
+        const obj7 = {
+          style: tmp3.heroMedia,
+          source: obj8,
+          poster: memo,
+          posterResizeMode: "cover",
+          resizeMode: "cover",
+          paused: tmp17,
+          onError() {
+                  return _undefined(heroVideoAsset.url);
+                },
+          muted: true,
+          disableFocus: true,
+          preventsDisplaySleepDuringVideoPlayback: false,
+          importantForAccessibility: "no-hide-descendants"
+        };
+        obj8 = { uri: heroVideoAsset.url };
+        const VideoComponent = tmp10(8873).VideoComponent;
+        tmp21Result = tmp21(VideoComponent, obj7);
+      }
+      obj6.children = tmp21Result;
+      const items4 = [closure_12(closure_6, obj6), , ];
+      const obj9 = { style: tmp3.heroGradient, start: { x: 0, y: 0 }, end: { x: 0, y: 1 }, locations: items5, colors: items6 };
+      items5 = [0, num2];
+      items6 = [gradientStart, gradientEnd];
+      items4[1] = closure_12(heroVideoAsset(5587), obj9);
+      const obj10 = { style: tmp3.content, children: null };
+      const obj11 = { style: tmp3.copy, children: items7 };
+      const obj12 = { variant: "heading-lg/semibold", color: "text-default", children: name };
+      items7 = [closure_12(game(5624).Heading, obj12), ];
+      let tmp21Result4 = null;
+      if (null != tmp9) {
+        const obj13 = { variant: "text-xs/medium", color: "text-default", style: tmp3.description, children: tmp9 };
+        tmp21Result4 = tmp21(tmp10(5624).Text, obj13);
+      }
+      items7[1] = tmp21Result4;
+      const items8 = [closure_13(closure_6, obj11), , ];
+      const obj14 = { game };
+      items8[1] = closure_12(heroVideoAsset(17027), obj14);
+      let str2 = "vertical";
+      const ButtonGroup = tmp10(6767).ButtonGroup;
+      if (stateFromStores) {
+        str2 = "horizontal";
+      }
+      const obj15 = { direction: str2, size: "md", style: tmp3.buttonGroup, children: null };
+      const obj16 = { game, size: "md" };
+      const items9 = [closure_12(heroVideoAsset(17043), obj16), ];
+      if (null != tmp9) {
+        if (stateFromStores) {
+          const obj17 = {
+            variant: "secondary",
+            size: "md",
+            icon: heroVideoAsset(17058),
+            accessibilityLabel: intl2.string(game(1113).t["uz4M/z"]),
+            onPress() {
+                      const obj = openOrbsArcadeSheets;
+                      return obj.openOrbsArcadeHowToPlaySheet(game.id);
+                    }
+          };
+          const IconButton = tmp10(8028).IconButton;
+          intl2 = tmp10(1113).intl;
+          tmp21Result5 = tmp21(IconButton, obj17);
+        }
+        items9[1] = tmp21Result5;
+        obj15.children = items9;
+        items8[2] = closure_13(ButtonGroup, obj15);
+        obj10.children = items8;
+        items4[2] = closure_13(closure_6, obj10);
+        obj5.children = items4;
+        const items10 = [closure_13(closure_6, obj5), ];
+        const obj18 = { style: tmp3.overflowButton, children: closure_12(heroVideoAsset(17059), obj19) };
+        obj19 = { game };
+        items10[1] = closure_12(closure_6, obj18);
+        obj4.children = items10;
+        return closure_13(tmp19, obj4);
+      }
+      tmp21Result5 = null;
+      if (null != tmp9) {
+        const obj20 = {
+          grow: true,
+          variant: "secondary",
+          text: intl.string(game(1113).t["uz4M/z"]),
+          onPress() {
+                  const obj = openOrbsArcadeSheets;
+                  return obj.openOrbsArcadeHowToPlaySheet(game.id);
+                }
+        };
+        const Button = tmp10(5634).Button;
+        intl = tmp10(1113).intl;
+        tmp21Result5 = tmp21(Button, obj20);
+      }
+    }
+  }
+  let tmp21Result6 = null;
+  if (null != asset) {
+    const obj21 = { source: obj22, style: tmp3.heroMedia, resizeMode: "cover", enableAnimation: !stateFromStores1, paused: tmp17, accessible: false };
+    obj22 = { uri: asset };
+    tmp21Result6 = tmp21(tmp15(5717), obj21);
+  }
+  tmp21Result = tmp21Result6;
+}
+let _slicedToArray = _slicedToArray_mod;
+({ StyleSheet: hasOwnProperty, View: metroRequire } = react_native);
+({ ORBS_ARCADE_GAME_TILE_MAX_WIDTH: c9, ORBS_ARCADE_GAME_TILE_MIN_HEIGHT: c10 } = OrbsArcadeNativeConstants);
 const ThemeTypes = Constants.ThemeTypes;
-({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
+({ jsx: closure_12, jsxs: map1 } = Fragment);
 let createStyles = createStyles_mod;
-const result = createStyles.experimental_createToken((theme) => {
+let result = createStyles.experimental_createToken((theme) => {
   theme = theme.theme;
   const internal = nativeDefault.internal;
   const semanticColor = internal.resolveSemanticColor(theme, nativeDefault.colors.BACKGROUND_SURFACE_HIGH);
@@ -55,474 +261,41 @@ const result1 = createStyles.experimental_createToken((theme) => {
   return internal.resolveSemanticColor(theme, nativeDefault.colors.BACKGROUND_SURFACE_HIGH);
 });
 createStyles = createStyles_mod;
-let closure_8 = createStyles.createStyleProperties({ gradientStart: result, gradientEnd: result1 });
+let closure_14 = createStyles.createStyleProperties({ gradientStart: result, gradientEnd: result1 });
 createStyles = createStyles_mod;
-let obj = { card: obj2, heroImage: { position: "absolute", top: 0, left: 0, right: 0, height: "79.567%", resizeMode: "cover" }, heroGradient: StyleSheet.absoluteFillObject, hero: { minHeight: ORBS_ARCADE_GAME_TILE_MIN_HEIGHT, justifyContent: "flex-end" }, overflowButton: rect, content: obj3, copy: obj4, buttonGroup: { paddingVertical: 0 } };
-obj2 = { padding: 0, overflow: "hidden", backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
-createStyles = createStyles.createStyles;
-rect = { position: "absolute", top: nativeDefault.space.PX_16, right: nativeDefault.space.PX_16 };
-obj3 = { gap: nativeDefault.space.PX_12, padding: nativeDefault.space.PX_16 };
-obj4 = { gap: nativeDefault.space.PX_4 };
-let closure_9 = createStyles(obj);
-let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcadeGameTileContent(game) {
-  let asset;
-  let first;
-  let gradientEnd;
-  let gradientStart;
-  let instructions;
-  let intl;
-  let intl2;
-  let items3;
-  let items4;
-  let items5;
-  let items6;
-  let items7;
-  let name;
-  let obj17;
-  let tmp10;
-  let tmp9;
-  let obj = game(576);
-  const cResult = obj.c(56);
-  game = game.game;
-  const tmp4 = closure_9();
-  ({ gradientStart, gradientEnd } = closure_8());
-  ({ name, asset, instructions } = game);
-  let tmp6 = null;
-  closure_8();
-  if (null != instructions) {
-    tmp6 = null;
-    if ("" !== instructions) {
-      tmp6 = instructions;
-    }
+let closure_15 = createStyles.createStyles((aspectRatio) => {
+  let min;
+  let rect;
+  let rect1;
+  let result;
+  let str;
+  let tmp;
+  const obj = { minHeight, width: "100%", maxWidth: min(tmp, result), alignSelf: "center", padding: 0, overflow: "hidden", backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
+  result = React4;
+  const _Math = Math;
+  min = Math.min;
+  tmp = React4;
+  if (null != aspectRatio) {
+    result = minHeight * aspectRatio;
   }
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [OrbsArcadeStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
+  const obj3 = { card: obj, heroMediaFrame: rect, heroMedia: null, heroGradient: null, hero: { flexGrow: 1, justifyContent: "flex-end" }, overflowButton: rect1, content: { gap: nativeDefault.space.PX_12, padding: nativeDefault.space.PX_16 }, copy: { gap: nativeDefault.space.PX_4 }, description: { opacity: 0.8 }, buttonGroup: { paddingVertical: 0 } };
+  rect = { position: "absolute", top: 0, left: 0, right: 0, aspectRatio, height: str, overflow: "hidden" };
+  str = undefined;
+  if (null == aspectRatio) {
+    str = "79.567%";
   }
-  if (cResult[1] !== game.id) {
-    const fn = function s() {
-      const gameStateForGame = OrbsArcadeStore.getGameStateForGame(game.id);
-      let currentRun;
-      if (gameStateForGame != null) {
-        currentRun = gameStateForGame.currentRun;
-      }
-      return null != currentRun;
-    };
-    const items1 = [game.id];
-    cResult[1] = game.id;
-    cResult[2] = fn;
-    cResult[3] = items1;
-    tmp10 = items1;
-    tmp9 = fn;
-  } else {
-    tmp9 = cResult[2];
-    tmp10 = cResult[3];
-  }
-  const tmpResult = game(504);
-  const stateFromStores = tmpResult.useStateFromStores(first, tmp9, tmp10);
-  if (cResult[4] === asset) {
-    let tmp12;
-    let tmp18;
-    let tmp17;
-    let tmp16;
-    if (cResult[5] === tmp4.heroImage) {
-      tmp12 = cResult[6];
-    }
-    const _Symbol = Symbol;
-    if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-      const point = { x: 0, y: 0 };
-      const point1 = { x: 0, y: 1 };
-      const items2 = [0, 0.55];
-      cResult[7] = point;
-      cResult[8] = point1;
-      cResult[9] = items2;
-      tmp18 = items2;
-      tmp17 = point1;
-      tmp16 = point;
-    } else {
-      tmp16 = cResult[7];
-      tmp17 = cResult[8];
-      tmp18 = cResult[9];
-    }
-    if (cResult[10] === gradientEnd) {
-      let tmp19;
-      if (cResult[11] === gradientStart) {
-        tmp19 = cResult[12];
-      }
-      if (cResult[13] === tmp4.heroGradient) {
-        let tmp20;
-        let tmp24;
-        let tmp27;
-        if (cResult[14] === tmp19) {
-          tmp20 = cResult[15];
-        }
-        if (cResult[16] !== name) {
-          const obj2 = { variant: "heading-lg/semibold", color: "text-strong", children: name };
-          const tmp26 = closure_6(game(5266).Heading, obj2);
-          cResult[16] = name;
-          cResult[17] = tmp26;
-          tmp24 = tmp26;
-        } else {
-          tmp24 = cResult[17];
-        }
-        if (cResult[18] !== tmp6) {
-          let tmp28 = null;
-          if (null != tmp6) {
-            const obj3 = { variant: "text-xs/medium", color: "text-subtle", children: tmp6 };
-            tmp28 = closure_6(tmp(5266).Text, obj3);
-          }
-          cResult[18] = tmp6;
-          cResult[19] = tmp28;
-          tmp27 = tmp28;
-        } else {
-          tmp27 = cResult[19];
-        }
-        if (cResult[20] === tmp4.copy) {
-          if (cResult[21] === tmp24) {
-            let tmp30;
-            let tmp34;
-            let tmp38;
-            let tmp42;
-            let tmp43;
-            if (cResult[22] === tmp27) {
-              tmp30 = cResult[23];
-            }
-            if (cResult[24] !== game) {
-              const obj4 = { game };
-              const tmp37 = closure_6(OrbsArcadeRewardShelfDefault, obj4);
-              cResult[24] = game;
-              cResult[25] = tmp37;
-              tmp34 = tmp37;
-            } else {
-              tmp34 = cResult[25];
-            }
-            let str2 = "vertical";
-            if (stateFromStores) {
-              str2 = "horizontal";
-            }
-            if (cResult[26] !== game) {
-              const obj5 = { game, size: "md" };
-              const tmp41 = closure_6(OrbsArcadePlayButtonDefault, obj5);
-              cResult[26] = game;
-              cResult[27] = tmp41;
-              tmp38 = tmp41;
-            } else {
-              tmp38 = cResult[27];
-            }
-            if (cResult[28] === game.id) {
-              if (cResult[29] === stateFromStores) {
-                if (cResult[30] === tmp6) {
-                  tmp42 = cResult[31];
-                }
-                if (cResult[32] === tmp4.buttonGroup) {
-                  if (cResult[33] === str2) {
-                    if (cResult[34] === tmp38) {
-                      let tmp47;
-                      if (cResult[35] === tmp42) {
-                        tmp47 = cResult[36];
-                      }
-                      if (cResult[37] === tmp4.content) {
-                        if (cResult[38] === tmp30) {
-                          if (cResult[39] === tmp34) {
-                            let tmp50;
-                            if (cResult[40] === tmp47) {
-                              tmp50 = cResult[41];
-                            }
-                            if (cResult[42] === tmp4.hero) {
-                              if (cResult[43] === tmp50) {
-                                if (cResult[44] === tmp12) {
-                                  let tmp54;
-                                  let tmp58;
-                                  if (cResult[45] === tmp20) {
-                                    tmp54 = cResult[46];
-                                  }
-                                  if (cResult[47] !== game) {
-                                    const obj6 = { game };
-                                    const tmp61 = closure_6(OrbsArcadeGameContextMenuDefault, obj6);
-                                    cResult[47] = game;
-                                    cResult[48] = tmp61;
-                                    tmp58 = tmp61;
-                                  } else {
-                                    tmp58 = cResult[48];
-                                  }
-                                  if (cResult[49] === tmp4.overflowButton) {
-                                    let tmp62;
-                                    if (cResult[50] === tmp58) {
-                                      tmp62 = cResult[51];
-                                    }
-                                    if (cResult[52] === tmp4.card) {
-                                      if (cResult[53] === tmp54) {
-                                        let tmp66;
-                                        if (cResult[54] === tmp62) {
-                                          tmp66 = cResult[55];
-                                        }
-                                        return tmp66;
-                                      }
-                                    }
-                                    const obj7 = { style: tmp4.card, radius: 12, border: "subtle", children: items3 };
-                                    items3 = [tmp54, tmp62];
-                                    const tmp68 = closure_7(game(6937).Card, obj7);
-                                    cResult[52] = tmp4.card;
-                                    cResult[53] = tmp54;
-                                    cResult[54] = tmp62;
-                                    cResult[55] = tmp68;
-                                    tmp66 = tmp68;
-                                  }
-                                  const obj8 = { style: tmp4.overflowButton, children: tmp58 };
-                                  const tmp65 = closure_6(closure_3, obj8);
-                                  cResult[49] = tmp4.overflowButton;
-                                  cResult[50] = tmp58;
-                                  cResult[51] = tmp65;
-                                  tmp62 = tmp65;
-                                }
-                              }
-                            }
-                            const obj9 = { style: tmp4.hero, children: items4 };
-                            items4 = [tmp12, tmp20, tmp50];
-                            const tmp57 = closure_7(closure_3, obj9);
-                            cResult[42] = tmp4.hero;
-                            cResult[43] = tmp50;
-                            cResult[44] = tmp12;
-                            cResult[45] = tmp20;
-                            cResult[46] = tmp57;
-                            tmp54 = tmp57;
-                          }
-                        }
-                      }
-                      const obj10 = { style: tmp4.content, children: items5 };
-                      items5 = [tmp30, tmp34, tmp47];
-                      const tmp53 = closure_7(closure_3, obj10);
-                      cResult[37] = tmp4.content;
-                      cResult[38] = tmp30;
-                      cResult[39] = tmp34;
-                      cResult[40] = tmp47;
-                      cResult[41] = tmp53;
-                      tmp50 = tmp53;
-                    }
-                  }
-                }
-                const obj11 = { direction: str2, size: "md", style: tmp4.buttonGroup, children: items6 };
-                items6 = [tmp38, tmp42];
-                const tmp49 = closure_7(game(6728).ButtonGroup, obj11);
-                cResult[32] = tmp4.buttonGroup;
-                cResult[33] = str2;
-                cResult[34] = tmp38;
-                cResult[35] = tmp42;
-                cResult[36] = tmp49;
-                tmp47 = tmp49;
-              }
-            }
-            if (null != tmp6) {
-              if (stateFromStores) {
-                const obj12 = {
-                  variant: "secondary",
-                  size: "md",
-                  icon: AssetRegistryDefault,
-                  accessibilityLabel: intl2.string(game(1128).t["uz4M/z"]),
-                  onPress() {
-                                  const obj = openOrbsArcadeSheets;
-                                  return obj.openOrbsArcadeHowToPlaySheet(game.id);
-                                }
-                };
-                const IconButton = tmp(7991).IconButton;
-                intl2 = tmp(1128).intl;
-                tmp43 = closure_6(IconButton, obj12);
-              }
-              cResult[28] = game.id;
-              cResult[29] = stateFromStores;
-              cResult[30] = tmp6;
-              cResult[31] = tmp43;
-              tmp42 = tmp43;
-            }
-            tmp43 = null;
-            if (null != tmp6) {
-              const obj13 = {
-                grow: true,
-                variant: "secondary",
-                text: intl.string(game(1128).t["uz4M/z"]),
-                onPress() {
-                              const obj = openOrbsArcadeSheets;
-                              return obj.openOrbsArcadeHowToPlaySheet(game.id);
-                            }
-              };
-              const Button = tmp(5276).Button;
-              intl = tmp(1128).intl;
-              tmp43 = closure_6(Button, obj13);
-            }
-          }
-        }
-        const obj14 = { style: tmp4.copy, children: items7 };
-        items7 = [tmp24, tmp27];
-        const tmp33 = closure_7(closure_3, obj14);
-        cResult[20] = tmp4.copy;
-        cResult[21] = tmp24;
-        cResult[22] = tmp27;
-        cResult[23] = tmp33;
-        tmp30 = tmp33;
-      }
-      const obj15 = { style: tmp4.heroGradient, start: tmp16, end: tmp17, locations: tmp18, colors: tmp19 };
-      const tmp23 = closure_6(LinearGradientDefault, obj15);
-      cResult[13] = tmp4.heroGradient;
-      cResult[14] = tmp19;
-      cResult[15] = tmp23;
-      tmp20 = tmp23;
-    }
-    const items8 = [gradientStart, gradientEnd];
-    cResult[10] = gradientEnd;
-    cResult[11] = gradientStart;
-    cResult[12] = items8;
-    tmp19 = items8;
-  }
-  let tmp13 = null;
-  if (null != asset) {
-    const obj16 = { source: obj17, style: tmp4.heroImage, accessible: false };
-    obj17 = { uri: asset };
-    tmp13 = closure_6(FastImageDefault, obj16);
-  }
-  cResult[4] = asset;
-  cResult[5] = tmp4.heroImage;
-  cResult[6] = tmp13;
-  tmp12 = tmp13;
-}) : (function OrbsArcadeGameTileContent(game) {
-  let asset;
-  let gradientEnd;
-  let gradientStart;
-  let instructions;
-  let intl;
-  let intl2;
-  let items3;
-  let items4;
-  let obj13;
-  let obj5;
-  let tmp12Result2;
-  game = game.game;
-  const tmp = closure_9();
-  ({ asset, instructions } = game);
-  let tmp3 = null;
-  ({ gradientStart, gradientEnd } = closure_8());
-  const name = game.name;
-  closure_8();
-  if (null != instructions) {
-    tmp3 = null;
-    if ("" !== instructions) {
-      tmp3 = instructions;
-    }
-  }
-  let obj = game(504);
-  const items = [OrbsArcadeStore];
-  const items1 = [game.id];
-  const stateFromStores = obj.useStateFromStores(items, () => {
-    const gameStateForGame = OrbsArcadeStore.getGameStateForGame(game.id);
-    let currentRun;
-    if (gameStateForGame != null) {
-      currentRun = gameStateForGame.currentRun;
-    }
-    return null != currentRun;
-  }, items1);
-  const obj2 = { style: tmp.card, radius: 12, border: "subtle", children: null };
-  const obj3 = { style: tmp.hero, children: null };
-  let tmp9 = null;
-  const Card = game(6937).Card;
-  if (null != asset) {
-    const obj4 = { source: obj5, style: tmp.heroImage, accessible: false };
-    obj5 = { uri: asset };
-    tmp9 = closure_6(FastImageDefault, obj4);
-  }
-  const items2 = [tmp9, , ];
-  const obj6 = { style: tmp.heroGradient, start: { x: 0, y: 0 }, end: { x: 0, y: 1 }, locations: [0, 0.55], colors: items3 };
-  items3 = [gradientStart, gradientEnd];
-  items2[1] = closure_6(LinearGradientDefault, obj6);
-  const obj7 = { style: tmp.content, children: null };
-  const obj8 = { style: tmp.copy, children: items4 };
-  items4 = [closure_6(game(5266).Heading, { variant: "heading-lg/semibold", color: "text-strong", children: name }), ];
-  let tmp12Result = null;
-  if (null != tmp3) {
-    const obj9 = { variant: "text-xs/medium", color: "text-subtle", children: tmp3 };
-    tmp12Result = tmp12(tmp4(5266).Text, obj9);
-  }
-  items4[1] = tmp12Result;
-  const items5 = [closure_7(closure_3, obj8), closure_6(OrbsArcadeRewardShelfDefault, { game }), ];
-  let str2 = "vertical";
-  const ButtonGroup = tmp4(6728).ButtonGroup;
-  if (stateFromStores) {
-    str2 = "horizontal";
-  }
-  const obj10 = { direction: str2, size: "md", style: tmp.buttonGroup, children: null };
-  const items6 = [closure_6(OrbsArcadePlayButtonDefault, { game, size: "md" }), ];
-  if (null != tmp3) {
-    if (stateFromStores) {
-      const obj11 = {
-        variant: "secondary",
-        size: "md",
-        icon: AssetRegistryDefault,
-        accessibilityLabel: intl2.string(game(1128).t["uz4M/z"]),
-        onPress() {
-              const obj = openOrbsArcadeSheets;
-              return obj.openOrbsArcadeHowToPlaySheet(game.id);
-            }
-      };
-      const IconButton = tmp4(7991).IconButton;
-      intl2 = tmp4(1128).intl;
-      tmp12Result2 = tmp12(IconButton, obj11);
-    }
-    items6[1] = tmp12Result2;
-    obj10.children = items6;
-    items5[2] = closure_7(ButtonGroup, obj10);
-    obj7.children = items5;
-    items2[2] = closure_7(closure_3, obj7);
-    obj3.children = items2;
-    const items7 = [closure_7(closure_3, obj3), ];
-    const obj12 = { style: tmp.overflowButton, children: closure_6(OrbsArcadeGameContextMenuDefault, obj13) };
-    obj13 = { game };
-    items7[1] = closure_6(closure_3, obj12);
-    obj2.children = items7;
-    return closure_7(Card, obj2);
-  }
-  tmp12Result2 = null;
-  if (null != tmp3) {
-    const obj14 = {
-      grow: true,
-      variant: "secondary",
-      text: intl.string(game(1128).t["uz4M/z"]),
-      onPress() {
-          const obj = openOrbsArcadeSheets;
-          return obj.openOrbsArcadeHowToPlaySheet(game.id);
-        }
-    };
-    const Button = tmp4(5276).Button;
-    intl = tmp4(1128).intl;
-    tmp12Result2 = tmp12(Button, obj14);
-  }
+  ({ absoluteFillObject: obj2.heroMedia, absoluteFillObject: obj2.heroGradient } = hasOwnProperty);
+  rect1 = { position: "absolute", top: tmp3(575).space.PX_16, right: tmp3(575).space.PX_16 };
+  ({ gap: nativeDefault.space.PX_12, padding: nativeDefault.space.PX_16 });
+  ({ gap: nativeDefault.space.PX_4 });
+  return obj3;
 });
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcadeGameTile(game) {
-  let obj3;
-  let tmp4;
-  const obj = react2;
-  const cResult = obj.c(2);
-  game = game.game;
-  if (cResult[0] !== game) {
-    const obj2 = { theme: ThemeTypes.ONYX, children: metroRequire(closure_10, obj3) };
-    obj3 = { game };
-    const ThemeContextProvider = native.ThemeContextProvider;
-    const tmp8 = metroRequire(ThemeContextProvider, obj2);
-    cResult[0] = game;
-    cResult[1] = tmp8;
-    tmp4 = tmp8;
-  } else {
-    tmp4 = cResult[1];
-  }
-  return tmp4;
-}) : (function OrbsArcadeGameTile(game) {
-  game = game.game;
-  const obj = { theme: ThemeTypes.ONYX, children: metroRequire(closure_10, { game }) };
-  const ThemeContextProvider = native.ThemeContextProvider;
-  return metroRequire(ThemeContextProvider, obj);
-});
+let size = size_mod;
 const result2 = size.fileFinishedImporting("modules/orbs_arcade/native/OrbsArcadeGameTile.tsx");
 
-export default tmp8;
+export default function OrbsArcadeGameTile(game) {
+  game = game.game;
+  const obj = { theme: ThemeTypes.ONYX, children: authStore2(OrbsArcadeGameTileContent, { game }) };
+  const ThemeContextProvider = native.ThemeContextProvider;
+  return authStore2(ThemeContextProvider, obj);
+};

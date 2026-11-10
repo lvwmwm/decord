@@ -1,144 +1,28 @@
-// Module ID: 14650
-// Function ID: 14651
+// Module ID: 15190
+// Function ID: 15191
 // Name: JoinVoiceChannelButton
-// Dependencies: [19, 17, 4935, 1087, 21, 5003, 558, 576, 11593, 504, 1128, 1896, 6666, 5276, 2]
+// Dependencies: [19, 17, 4946, 1072, 21, 5014, 11909, 504, 1113, 1888, 6706, 5634, 2]
+// Exports: default
 
-// Module 14650 (JoinVoiceChannelButton)
+// Module 15190 (JoinVoiceChannelButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 1087 */;
-import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 1896 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6666 */;
-import useIsVoiceChannelFullDefault from "useIsVoiceChannelFull" /* 11593 */;
+import Constants from "Constants" /* 1072 */;
+import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 1888 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6706 */;
+import useIsVoiceChannelFullDefault from "useIsVoiceChannelFull" /* 11909 */;
 import react from "react" /* 19 */;
-import PermissionStore from "PermissionStore" /* 4935 */;
-import createStyles from "createStyles" /* 5003 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import PermissionStore from "PermissionStore" /* 4946 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const View = react_native.View;
 const Permissions = Constants.Permissions;
 const jsx = Fragment.jsx;
 let closure_9 = createStyles.createStyles({ container: { flexDirection: "row" } });
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function JoinVoiceChannelButton(channel) {
-  let first;
-  let flag;
-  let tmp10;
-  let tmp8;
-  let obj = channel(576);
-  const cResult = obj.c(18);
-  channel = channel.channel;
-  const style = channel.style;
-  const tmp4 = closure_9();
-  const tmp5 = useIsVoiceChannelFullDefault(channel);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [PermissionStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== channel) {
-    const fn = function h() {
-      return !PermissionStore.can(Permissions.CONNECT, channel);
-    };
-    cResult[1] = channel;
-    cResult[2] = fn;
-    tmp8 = fn;
-  } else {
-    tmp8 = cResult[2];
-  }
-  const tmpResult = channel(504);
-  const stateFromStores = tmpResult.useStateFromStores(first, tmp8);
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1128).intl;
-    const stringResult = intl.string(channel(1128).t.eIi3Om);
-    cResult[3] = stringResult;
-    tmp10 = stringResult;
-  } else {
-    tmp10 = cResult[3];
-  }
-  if (tmp5) {
-    let tmp14;
-    const _Symbol2 = Symbol;
-    if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl3 = tmp(1128).intl;
-      const stringResult1 = intl3.string(channel(1128).t.rZfiNq);
-      cResult[4] = stringResult1;
-      tmp14 = stringResult1;
-    } else {
-      tmp14 = cResult[4];
-    }
-    flag = true;
-    tmp10 = tmp14;
-  } else {
-    flag = false;
-    if (stateFromStores) {
-      let tmp12;
-      const _Symbol = Symbol;
-      if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl2 = tmp(1128).intl;
-        const stringResult2 = intl2.string(channel(1128).t.TVBCKZ);
-        cResult[5] = stringResult2;
-        tmp12 = stringResult2;
-      } else {
-        tmp12 = cResult[5];
-      }
-      flag = true;
-      tmp10 = tmp12;
-    }
-  }
-  if (cResult[6] !== channel.id) {
-    class N {
-      constructor() {
-        const obj = KeyboardManagerUtilsAll;
-        const result = obj.dismissGlobalKeyboard();
-        const obj2 = SelectedChannelActionCreatorsDefault;
-        const voiceChannel = obj2.selectVoiceChannel(channel.id);
-      }
-    }
-    cResult[6] = channel.id;
-    cResult[7] = N;
-  } else {
-    class N {
-      constructor() {
-        const obj = KeyboardManagerUtilsAll;
-        const result = obj.dismissGlobalKeyboard();
-        const obj2 = SelectedChannelActionCreatorsDefault;
-        const voiceChannel = obj2.selectVoiceChannel(channel.id);
-      }
-    }
-  }
-  if (cResult[8] === style) {
-    class N {
-      constructor() {
-        const obj = KeyboardManagerUtilsAll;
-        const result = obj.dismissGlobalKeyboard();
-        const obj2 = SelectedChannelActionCreatorsDefault;
-        const voiceChannel = obj2.selectVoiceChannel(channel.id);
-      }
-    }
-    if (cResult[11] === tmp10) {
-      class N {
-        constructor() {
-          const obj = KeyboardManagerUtilsAll;
-          const result = obj.dismissGlobalKeyboard();
-          const obj2 = SelectedChannelActionCreatorsDefault;
-          const voiceChannel = obj2.selectVoiceChannel(channel.id);
-        }
-      }
-    }
-    cResult[11] = tmp10;
-    cResult[12] = flag;
-    cResult[13] = tmp16;
-    cResult[14] = jsx(channel(5276).Button, { disabled: flag, text: tmp10, onPress: tmp16 });
-    const tmp19 = jsx(channel(5276).Button, { disabled: flag, text: tmp10, onPress: tmp16 });
-  }
-  const items1 = [tmp4.container, style];
-  cResult[8] = style;
-  cResult[9] = tmp4.container;
-  cResult[10] = items1;
-}) : (function JoinVoiceChannelButton(channel) {
+let result = size.fileFinishedImporting("modules/voice_calls/native/action_sheet/JoinVoiceChannelButton.tsx");
+
+export default function JoinVoiceChannelButton(channel) {
   channel = channel.channel;
   const style = channel.style;
   const tmp = closure_9();
@@ -146,14 +30,14 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function JoinVoiceC
   let obj = channel(504);
   const items = [PermissionStore];
   const stateFromStores = obj.useStateFromStores(items, () => !PermissionStore.can(Permissions.CONNECT, channel));
-  const intl = channel(1128).intl;
-  intl.string(channel(1128).t.eIi3Om);
+  const intl = channel(1113).intl;
+  intl.string(channel(1113).t.eIi3Om);
   if (tmp3) {
-    const intl3 = tmp4(1128).intl;
-    intl3.string(tmp4(1128).t.rZfiNq);
+    const intl3 = tmp4(1113).intl;
+    intl3.string(tmp4(1113).t.rZfiNq);
   } else if (stateFromStores) {
-    const intl2 = tmp4(1128).intl;
-    intl2.string(tmp4(1128).t.TVBCKZ);
+    const intl2 = tmp4(1113).intl;
+    intl2.string(tmp4(1113).t.TVBCKZ);
   }
   const items1 = [channel.id];
   const items2 = [tmp.container, style];
@@ -164,7 +48,4 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function JoinVoiceC
     const voiceChannel = obj2.selectVoiceChannel(channel.id);
   }, items1);
   return <View style={items2}>{null}</View>;
-});
-let result = size.fileFinishedImporting("modules/voice_calls/native/action_sheet/JoinVoiceChannelButton.tsx");
-
-export default tmp2;
+};

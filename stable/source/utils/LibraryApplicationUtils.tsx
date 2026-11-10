@@ -1,15 +1,15 @@
-// Module ID: 7539
-// Function ID: 7540
+// Module ID: 7580
+// Function ID: 7581
 // Name: LibraryApplicationUtils
-// Dependencies: [32, 1392, 6856, 1087, 4831, 2]
+// Dependencies: [32, 1383, 6896, 1072, 4839, 2]
 // Exports: calculateProgressPercentage, convertComboId, convertToTransitionState, getCombinedProgress, getComboId, isUserEntitledToLibraryApplication, shouldShareApplicationActivity, shouldShowGameInLibrary
 
-// Module 7539 (LibraryApplicationUtils)
-import UserSettings from "UserSettings" /* 4831 */;
+// Module 7580 (LibraryApplicationUtils)
+import UserSettings from "UserSettings" /* 4839 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import UserStore from "UserStore" /* 1392 */;
-import SKUStore from "SKUStore" /* 6856 */;
-import Constants from "Constants" /* 1087 */;
+import UserStore from "UserStore" /* 1383 */;
+import SKUStore from "SKUStore" /* 6896 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -18,14 +18,14 @@ let metroRequire;
 ({ LibraryApplicationFlags: hasOwnProperty, LocalDispatchApplicationStates: metroRequire, StatusTypes: metroImportDefault } = Constants);
 const result = size.fileFinishedImporting("utils/LibraryApplicationUtils.tsx");
 
-export const getComboId = function getComboId(arg0, arg1) {
+export function getComboId(arg0, arg1) {
   return "" + arg0 + ":" + arg1;
-};
-export const convertComboId = function convertComboId(str) {
+}
+export function convertComboId(str) {
   const tmp = _slicedToArray(str.split(":"), 2);
   return { applicationId: tmp[0], branchId: tmp[1] };
-};
-export const shouldShareApplicationActivity = function shouldShareApplicationActivity(applicationId, LibraryApplicationStore) {
+}
+export function shouldShareApplicationActivity(applicationId, LibraryApplicationStore) {
   const ShowCurrentGame = UserSettings.ShowCurrentGame;
   if (ShowCurrentGame.getSetting()) {
     const StatusSetting = UserSettings.StatusSetting;
@@ -36,15 +36,15 @@ export const shouldShareApplicationActivity = function shouldShareApplicationAct
     }
   }
   return false;
-};
-export const calculateProgressPercentage = function calculateProgressPercentage(arg0, arg1) {
+}
+export function calculateProgressPercentage(arg0, arg1) {
   let num = 100;
   if (0 !== arg1) {
     num = arg0 / arg1 * 100;
   }
   return num;
-};
-export const shouldShowGameInLibrary = function shouldShowGameInLibrary(arg0, hasFlag, enabled) {
+}
+export function shouldShowGameInLibrary(arg0, hasFlag, enabled) {
   let tmp = null != hasFlag;
   if (tmp) {
     enabled = enabled.enabled;
@@ -58,8 +58,8 @@ export const shouldShowGameInLibrary = function shouldShowGameInLibrary(arg0, ha
     tmp = tmp3;
   }
   return tmp;
-};
-export const convertToTransitionState = function convertToTransitionState(type) {
+}
+export function convertToTransitionState(type) {
   let tmp = null;
   if (null != type) {
     if (type.type !== metroRequire.INSTALLING) {
@@ -72,8 +72,8 @@ export const convertToTransitionState = function convertToTransitionState(type) 
     tmp3 = type;
   }
   return tmp;
-};
-export const getCombinedProgress = function getCombinedProgress(arr) {
+}
+export function getCombinedProgress(arr) {
   return arr.reduce((total, type) => {
     let tmp = null;
     if (null != type) {
@@ -98,8 +98,8 @@ export const getCombinedProgress = function getCombinedProgress(arr) {
     }
     return tmp4;
   }, { total: 0, progress: 0 });
-};
-export const isUserEntitledToLibraryApplication = function isUserEntitledToLibraryApplication(libraryApplication) {
+}
+export function isUserEntitledToLibraryApplication(libraryApplication) {
   const isEntitledResult = libraryApplication.isDiscordApplication() && libraryApplication.isEntitled(UserStore.getCurrentUser(), SKUStore);
   return isEntitledResult;
-};
+}

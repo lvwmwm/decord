@@ -1,11 +1,11 @@
-// Module ID: 15350
-// Function ID: 15351
+// Module ID: 15938
+// Function ID: 15939
 // Name: LowLatencyRateControlExperiment
-// Dependencies: [1456, 2]
+// Dependencies: [1448, 2]
 // Exports: getLowLatencyRateControlExperimentConfig
 
-// Module 15350 (LowLatencyRateControlExperiment)
-import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1456 */;
+// Module 15938 (LowLatencyRateControlExperiment)
+import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1448 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -15,7 +15,7 @@ obj2[1] = { enabled: true };
 let closure_0 = apex_ApexExperimentDefault(obj);
 const result = size.fileFinishedImporting("modules/media_engine/LowLatencyRateControlExperiment.tsx");
 
-export const getLowLatencyRateControlExperimentConfig = function getLowLatencyRateControlExperimentConfig(disable) {
+export function getLowLatencyRateControlExperimentConfig(disable) {
   let defaultConfig;
   let flag = disable.disable;
   const _location = disable.location;
@@ -29,4 +29,4 @@ export const getLowLatencyRateControlExperimentConfig = function getLowLatencyRa
     defaultConfig = obj.getConfig(obj2);
   }
   return defaultConfig;
-};
+}

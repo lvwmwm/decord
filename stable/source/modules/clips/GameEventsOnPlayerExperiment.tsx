@@ -1,11 +1,11 @@
-// Module ID: 8181
-// Function ID: 8182
+// Module ID: 8215
+// Function ID: 8216
 // Name: GameEventsOnPlayerExperiment
-// Dependencies: [1455, 2]
+// Dependencies: [1447, 2]
 // Exports: isGameEventsOnPlayerEnabled
 
-// Module 8181 (GameEventsOnPlayerExperiment)
-import ApexExperiment from "ApexExperiment" /* 1455 */;
+// Module 8215 (GameEventsOnPlayerExperiment)
+import ApexExperiment from "ApexExperiment" /* 1447 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -16,7 +16,7 @@ const apexExperiment = ApexExperiment.createApexExperiment(obj);
 const result = size.fileFinishedImporting("modules/clips/GameEventsOnPlayerExperiment.tsx");
 
 export default apexExperiment;
-export const isGameEventsOnPlayerEnabled = function isGameEventsOnPlayerEnabled(getClipEventsTimeline) {
+export function isGameEventsOnPlayerEnabled(getClipEventsTimeline) {
   const obj = { location: getClipEventsTimeline };
   return apexExperiment.getConfig(obj).enableGameEventsOnPlayer;
-};
+}

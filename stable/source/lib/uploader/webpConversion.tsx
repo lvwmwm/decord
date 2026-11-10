@@ -1,12 +1,12 @@
-// Module ID: 8214
-// Function ID: 8215
+// Module ID: 8247
+// Function ID: 8248
 // Name: webpConversion
-// Dependencies: [5, 3, 8215, 1266, 2]
+// Dependencies: [5, 3, 8248, 1251, 2]
 // Exports: maybeConvertToWebP
 
-// Module 8214 (webpConversion)
+// Module 8247 (webpConversion)
 import LoggerDefault from "Logger" /* 3 */;
-import _modDef1266 from "module_1266" /* 1266 */;
+import _modDef1251 from "module_1251" /* 1251 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ let obj = function _shouldConvertToWebP2() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -195,7 +195,7 @@ let obj = function _shouldConvertToWebP2() {
 };
 function hashImageData(data) {
   const uint8Array = new Uint8Array(data.data.buffer);
-  const str = _modDef1266(uint8Array);
+  const str = _modDef1251(uint8Array);
   return str.toString(16);
 }
 obj = function _performWebPConversion() {
@@ -213,7 +213,7 @@ obj = function _performWebPConversion() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c4;
@@ -472,7 +472,7 @@ obj = function _maybeConvertToWebP() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -634,6 +634,6 @@ const result = size.fileFinishedImporting("lib/uploader/webpConversion.tsx");
 
 export const ConversionFailureReason = obj;
 export { _shouldConvertToWebP };
-export const maybeConvertToWebP = function maybeConvertToWebP() {
+export function maybeConvertToWebP() {
   return obj(...arguments);
-};
+}

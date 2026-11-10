@@ -1,8 +1,8 @@
-// Module ID: 14179
-// Function ID: 14180
+// Module ID: 14704
+// Function ID: 14705
 // Dependencies: [2]
 
-// Module 14179
+// Module 14704
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/orbs/quest_reward_mobile_entry_dark.png.js");

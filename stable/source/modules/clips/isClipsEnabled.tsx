@@ -1,44 +1,23 @@
-// Module ID: 14669
-// Function ID: 14670
+// Module ID: 15209
+// Function ID: 15210
 // Name: isClipsEnabled
-// Dependencies: [2020, 14670, 558, 576, 504, 2]
-// Exports: isClipsEnabled
+// Dependencies: [2012, 15210, 504, 2]
+// Exports: isClipsEnabled, useIsClipsEnabled
 
-// Module 14669 (isClipsEnabled)
-import react from "react" /* 576 */;
-import ClipsExperiment from "ClipsExperiment" /* 14670 */;
-import ClipsStore from "ClipsStore" /* 2020 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 15209 (isClipsEnabled)
+import get_initialized from "get initialized" /* 504 */;
+import ClipsExperiment from "ClipsExperiment" /* 15210 */;
+import ClipsStore from "ClipsStore" /* 2012 */;
 import size from "module_2" /* 2 */;
 
-let tmp;
-const get_initialized = tmp(504);
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsClipsEnabled() {
-  let state;
-  let tmp5;
-  let tmp6;
-  const obj = react;
-  const cResult = obj.c(2);
-  const obj2 = ClipsExperiment;
-  let isClipsAvailable = obj2.useIsClipsAvailable();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [ClipsStore];
-    const fn = function t() {
-      return state.getState().clipsSettings.clipsEnabled;
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp5 = items;
-    tmp6 = fn;
-  } else {
-    [tmp5, tmp6] = cResult;
-  }
-  const tmpResult = get_initialized;
-  if (isClipsAvailable) {
-    isClipsAvailable = tmpResult.useStateFromStores(tmp5, tmp6);
-  }
-  return isClipsAvailable;
-}) : (function useIsClipsEnabled() {
+const result = size.fileFinishedImporting("modules/clips/isClipsEnabled.tsx");
+
+export function isClipsEnabled() {
+  const obj = ClipsExperiment;
+  const clipsEnabled = obj.areClipsAvailable() && ClipsStore.getState().clipsSettings.clipsEnabled;
+  return clipsEnabled;
+}
+export function useIsClipsEnabled() {
   let state;
   const obj = ClipsExperiment;
   let isClipsAvailable = obj.useIsClipsAvailable();
@@ -48,12 +27,4 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsClips
     isClipsAvailable = obj2.useStateFromStores(items, () => state.getState().clipsSettings.clipsEnabled);
   }
   return isClipsAvailable;
-});
-const result = size.fileFinishedImporting("modules/clips/isClipsEnabled.tsx");
-
-export const isClipsEnabled = function isClipsEnabled() {
-  const obj = ClipsExperiment;
-  const clipsEnabled = obj.areClipsAvailable() && ClipsStore.getState().clipsSettings.clipsEnabled;
-  return clipsEnabled;
-};
-export const useIsClipsEnabled = tmp2;
+}

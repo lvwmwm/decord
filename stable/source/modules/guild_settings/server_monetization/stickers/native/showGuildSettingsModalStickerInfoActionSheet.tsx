@@ -1,18 +1,18 @@
-// Module ID: 19119
-// Function ID: 19120
+// Module ID: 19747
+// Function ID: 19748
 // Name: showGuildSettingsModalStickerInfoActionSheet
-// Dependencies: [5242, 19120, 2002, 2]
+// Dependencies: [5258, 19748, 1994, 2]
 // Exports: showGuildSettingsModalStickerInfoActionSheet
 
-// Module 19119 (showGuildSettingsModalStickerInfoActionSheet)
-import asyncRequire from "asyncRequire" /* 2002 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5242 */;
+// Module 19747 (showGuildSettingsModalStickerInfoActionSheet)
+import asyncRequire from "asyncRequire" /* 1994 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
 import size from "module_2" /* 2 */;
 
 const GuildSettingsModalStickerInfoActionSheet = "GuildSettingsModalStickerInfoActionSheet";
 const result = size.fileFinishedImporting("modules/guild_settings/server_monetization/stickers/native/showGuildSettingsModalStickerInfoActionSheet.tsx");
 
-export const showGuildSettingsModalStickerInfoActionSheet = function showGuildSettingsModalStickerInfoActionSheet(arg0) {
+export function showGuildSettingsModalStickerInfoActionSheet(arg0) {
   let guildId;
   let stickerId;
   ({ guildId, stickerId } = arg0);
@@ -25,5 +25,5 @@ export const showGuildSettingsModalStickerInfoActionSheet = function showGuildSe
       obj.hideActionSheet(GuildSettingsModalStickerInfoActionSheet);
     }
   };
-  obj.openLazy(asyncRequire(19120, dependencyMap.paths), GuildSettingsModalStickerInfoActionSheet, obj2);
-};
+  obj.openLazy(asyncRequire(19748, dependencyMap.paths), GuildSettingsModalStickerInfoActionSheet, obj2);
+}

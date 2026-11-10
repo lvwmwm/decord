@@ -1,23 +1,22 @@
-// Module ID: 11073
-// Function ID: 11074
+// Module ID: 11376
+// Function ID: 11377
 // Name: BlockedPaymentsCountryDisplay
-// Dependencies: [19, 17, 1087, 21, 5003, 587, 558, 576, 5237, 1128, 1202, 2067, 5010, 11074, 11075, 5701, 2]
+// Dependencies: [19, 17, 1072, 21, 5014, 575, 5253, 1187, 1113, 2061, 5717, 5021, 11377, 11378, 2]
+// Exports: default
 
-// Module 11073 (BlockedPaymentsCountryDisplay)
+// Module 11376 (BlockedPaymentsCountryDisplay)
 import react_native from "react-native" /* 17 */;
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1087 */;
-import intl3 from "intl" /* 1128 */;
-import native from "native" /* 1202 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2067 */;
-import shared from "shared" /* 5010 */;
-import useThemeDefault from "useTheme" /* 5237 */;
-import FastImageDefault from "FastImage" /* 5701 */;
+import nativeDefault from "native" /* 575 */;
+import Constants from "Constants" /* 1072 */;
+import intl3 from "intl" /* 1113 */;
+import native from "native" /* 1187 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2061 */;
+import shared from "shared" /* 5021 */;
+import useThemeDefault from "useTheme" /* 5253 */;
+import FastImageDefault from "FastImage" /* 5717 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5003 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -29,90 +28,9 @@ const HelpdeskArticles = Constants.HelpdeskArticles;
 let obj = { container: { alignItems: "center" }, header: obj2, image: { marginTop: 38 } };
 obj2 = { fontSize: 20, fontWeight: "700", color: nativeDefault.colors.TEXT_SUBTLE, marginBottom: 16 };
 let closure_7 = createStyles.createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function BlockedPaymentsCountryDisplay() {
-  let IHxEJU;
-  let container;
-  let first;
-  let format;
-  let header;
-  let items;
-  let obj4;
-  let tmp12;
-  let tmp5Result;
-  let tmp5Result2;
-  let tmp9;
-  const obj = react2;
-  const cResult = obj.c(11);
-  const tmp4 = closure_7();
-  ({ container, header } = tmp4);
-  const tmp6 = useThemeDefault();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1128).intl;
-    const stringResult = intl.string(intl3.t.vwMEHS);
-    cResult[0] = stringResult;
-    first = stringResult;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== tmp4.header) {
-    const obj2 = { style: header, children: first };
-    const tmp11 = hasOwnProperty(native.LegacyText, obj2);
-    cResult[1] = tmp4.header;
-    cResult[2] = tmp11;
-    tmp9 = tmp11;
-  } else {
-    tmp9 = cResult[2];
-  }
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj3 = { children: format(IHxEJU, obj4) };
-    const LegacyText = tmp(1202).LegacyText;
-    const intl2 = tmp(1128).intl;
-    format = intl2.format;
-    obj4 = { helpdeskArticle: tmp5Result.getArticleURL(HelpdeskArticles.BLOCKED_PAYMENTS) };
-    IHxEJU = tmp(1128).t.IHxEJU;
-    tmp5Result = HelpdeskUtilsDefault;
-    const tmp15 = hasOwnProperty(LegacyText, obj3);
-    cResult[3] = tmp15;
-    tmp12 = tmp15;
-  } else {
-    tmp12 = cResult[3];
-  }
-  const tmpResult = shared;
-  if (tmpResult.isThemeDark(tmp6)) {
-    tmp5Result2 = tmp5(11074);
-  } else {
-    tmp5Result2 = tmp5(11075);
-  }
-  if (cResult[4] === tmp4.image) {
-    let tmp17;
-    if (cResult[5] === tmp5Result2) {
-      tmp17 = cResult[6];
-    }
-    if (cResult[7] === tmp4.container) {
-      if (cResult[8] === tmp9) {
-        let tmp19;
-        if (cResult[9] === tmp17) {
-          tmp19 = cResult[10];
-        }
-        return tmp19;
-      }
-    }
-    const obj5 = { style: container, children: items };
-    items = [tmp9, tmp12, tmp17];
-    const tmp22 = metroRequire(View, obj5);
-    cResult[7] = tmp4.container;
-    cResult[8] = tmp9;
-    cResult[9] = tmp17;
-    cResult[10] = tmp22;
-    tmp19 = tmp22;
-  }
-  const obj6 = { style: tmp4.image, source: tmp5Result2 };
-  const tmp18 = hasOwnProperty(FastImageDefault, obj6);
-  cResult[4] = tmp4.image;
-  cResult[5] = tmp5Result2;
-  cResult[6] = tmp18;
-  tmp17 = tmp18;
-}) : (function BlockedPaymentsCountryDisplay() {
+const result = size.fileFinishedImporting("modules/billing/native/BlockedPaymentsCountryDisplay.tsx");
+
+export default function BlockedPaymentsCountryDisplay() {
   let IHxEJU;
   let format;
   let intl;
@@ -142,13 +60,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function BlockedPayme
   const tmp6 = View;
   const tmp7 = hasOwnProperty;
   if (obj7.isThemeDark(tmp4)) {
-    tmp2Result = tmp2(11074);
+    tmp2Result = tmp2(11377);
   } else {
-    tmp2Result = tmp2(11075);
+    tmp2Result = tmp2(11378);
   }
   items[2] = tmp7(tmp8, obj6);
   return tmp5(tmp6, obj);
-});
-const result = size.fileFinishedImporting("modules/billing/native/BlockedPaymentsCountryDisplay.tsx");
-
-export default tmp4;
+};

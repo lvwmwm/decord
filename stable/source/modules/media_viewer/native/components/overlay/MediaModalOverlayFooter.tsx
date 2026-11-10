@@ -1,21 +1,21 @@
-// Module ID: 14253
-// Function ID: 14254
+// Module ID: 14781
+// Function ID: 14782
 // Name: MediaModalOverlayFooter
-// Dependencies: [32, 19, 17, 21, 5003, 587, 5084, 11265, 5238, 1202, 14254, 5329, 5085, 7253, 5614, 14255, 14245, 2]
+// Dependencies: [32, 19, 17, 21, 5014, 575, 5095, 11567, 5254, 1187, 14782, 5303, 5096, 7292, 5595, 14783, 14773, 2]
 // Exports: MediaModalOverlayFooter
 
-// Module 14253 (MediaModalOverlayFooter)
+// Module 14781 (MediaModalOverlayFooter)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1202 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5084 */;
-import timing from "timing" /* 5238 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5329 */;
-import useMessagePreviewHeight from "useMessagePreviewHeight" /* 11265 */;
+import nativeDefault from "native" /* 575 */;
+import native from "native" /* 1187 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
+import timing from "timing" /* 5254 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5303 */;
+import useMessagePreviewHeight from "useMessagePreviewHeight" /* 11567 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5003 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let __initData4, __initData5, set, set2, set3;
@@ -25,7 +25,7 @@ let metroRequire;
 let obj2;
 const View = react_native.View;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
-let obj = { drawerContainer: { overflow: "hidden", backgroundColor: "__packager_asset" }, drawerHeaderTab: obj2, drawerHeader: { backgroundColor: "r" }, messagePreviewContainer: { marginLeft: 6 }, thumbnailsContainer: { paddingTop: 8 } };
+let obj = { drawerContainer: { overflow: "hidden", backgroundColor: "unicodeVersion" }, drawerHeaderTab: obj2, drawerHeader: { backgroundColor: "r" }, messagePreviewContainer: { marginLeft: 6 }, thumbnailsContainer: { paddingTop: 8 } };
 obj2 = { width: 40, backgroundColor: nativeDefault.unsafe_rawColors.PRIMARY_600 };
 let closure_8 = createStyles.createStyles(obj);
 let c9 = -1;
@@ -52,7 +52,7 @@ let closure_24 = { code: "function MediaModalOverlayFooterTsx15(){const{overlayE
 let closure_25 = { code: "function MediaModalOverlayFooterTsx16([overlayEnabledValue,animationDriverValue]){const{DISMISSED_HIDE_OVERLAY,overlayEnabled}=this.__closure;if(overlayEnabledValue&&animationDriverValue<DISMISSED_HIDE_OVERLAY){overlayEnabled.set(false);}}" };
 let result = size.fileFinishedImporting("modules/media_viewer/native/components/overlay/MediaModalOverlayFooter.tsx");
 
-export const MediaModalOverlayFooter = function MediaModalOverlayFooter(channelId) {
+export function MediaModalOverlayFooter(channelId) {
   let NONE;
   let closure_13;
   let first1;
@@ -448,7 +448,7 @@ export const MediaModalOverlayFooter = function MediaModalOverlayFooter(channelI
   const items14 = [full(tmp45, obj15), sliderElement, ];
   const obj17 = { onLayout: callback5, style: animatedStyle, children: items15 };
   const obj18 = { style: tmp.messagePreviewContainer, children: full(overlayEnabled(num[15]), obj19) };
-  obj19 = { channelId: channelId.channelId, messageId: channelId.messageId, onClose: channelId.onClose, onTapMessage: callback2, onMeasureFullHeight: callback3, onMeasureCollapsedHeight: callback4, full, canExpand: first2 > first1, setScrollViewIsAtTop: tmp36, flingUpRef: ref, flingDownRef: ref1, animationDriver: sharedValue2 };
+  obj19 = { channelId: channelId.channelId, messageId: channelId.messageId, onClose: channelId.onClose, onTapMessage: callback2, onMeasureFullHeight: callback3, onMeasureCollapsedHeight: callback4, full, canExpand: first2 > first1, setScrollViewIsAtTop: tmp36, flingUpRef: ref, flingDownRef: ref1, animationDriver: sharedValue2, entranceAnimationDriver: channelId.entranceAnimationDriver };
   const tmp46 = overlayEnabled(num[12]);
   items15 = [full(sharedValue1, obj18), ];
   if (tmp42Result) {
@@ -463,4 +463,4 @@ export const MediaModalOverlayFooter = function MediaModalOverlayFooter(channelI
   items14[2] = setFull(tmp46, obj17);
   items12[1] = setFull(SafeAreaPaddingView, rect);
   return full(GestureDetector, obj13);
-};
+}

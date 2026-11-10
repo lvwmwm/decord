@@ -1,15 +1,15 @@
-// Module ID: 19405
-// Function ID: 19406
+// Module ID: 20025
+// Function ID: 20026
 // Name: OrbsArcadeFetchManager
-// Dependencies: [16429, 1104, 7246, 16434, 16435, 16430, 2]
+// Dependencies: [17018, 1089, 7287, 17024, 17025, 17019, 2]
 
-// Module 19405 (OrbsArcadeFetchManager)
-import DurationsDefault from "Durations" /* 1104 */;
-import OrbsArcadeTypes from "OrbsArcadeTypes" /* 16430 */;
-import OrbsArcadeActionCreators from "OrbsArcadeActionCreators" /* 16434 */;
-import OrbsArcadeRewardUtils from "OrbsArcadeRewardUtils" /* 16435 */;
-import OrbsArcadeStore from "OrbsArcadeStore" /* 16429 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7246 */;
+// Module 20025 (OrbsArcadeFetchManager)
+import DurationsDefault from "Durations" /* 1089 */;
+import OrbsArcadeTypes from "OrbsArcadeTypes" /* 17019 */;
+import OrbsArcadeActionCreators from "OrbsArcadeActionCreators" /* 17024 */;
+import OrbsArcadeRewardUtils from "OrbsArcadeRewardUtils" /* 17025 */;
+import OrbsArcadeStore from "OrbsArcadeStore" /* 17018 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7287 */;
 import size from "module_2" /* 2 */;
 
 let game, gameStateForGame;
@@ -101,14 +101,14 @@ class OrbsArcadeFetchManager extends AutomaticLifecycleManager {
         let orbsArcadeGames = OrbsArcadeStore.orbsArcadeGames;
         let items = [];
         HermesBuiltin.arraySpread(items, orbsArcadeGames.flatMap((id) => {
-          const items = [, , ];
-          ({ startsAt: arr[0], endsAt: arr[1] } = id);
+          const items = [, , , ];
+          ({ startsAt: arr[0], endsAt: arr[1], windowEndsAt: arr[2] } = id);
           gameStateForGame = gameStateForGame.getGameStateForGame(id.id);
           let expiresAt;
           if (gameStateForGame != null) {
             expiresAt = gameStateForGame.expiresAt;
           }
-          items[2] = expiresAt;
+          items[3] = expiresAt;
           return items;
         }), 0);
         const found = items.filter((item) => null != item);

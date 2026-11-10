@@ -1,13 +1,13 @@
-// Module ID: 14730
-// Function ID: 14731
+// Module ID: 15270
+// Function ID: 15271
 // Name: ApplePurchasesActionCreators
-// Dependencies: [584, 13947, 4819, 2]
+// Dependencies: [572, 14467, 4827, 2]
 // Exports: fetchApplePurchases
 
-// Module 14730 (ApplePurchasesActionCreators)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import BillingUtils from "BillingUtils" /* 4819 */;
-import _mod13947 from "module_13947" /* 13947 */;
+// Module 15270 (ApplePurchasesActionCreators)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import BillingUtils from "BillingUtils" /* 4827 */;
+import _mod14467 from "module_14467" /* 14467 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -15,11 +15,11 @@ let c3;
 let cleanupPromise = null;
 let result = size.fileFinishedImporting("modules/billing/native/ApplePurchasesActionCreators.tsx");
 
-export const fetchApplePurchases = function fetchApplePurchases() {
+export function fetchApplePurchases() {
   if (null == cleanupPromise) {
     let obj = DispatcherDefault;
     obj.dispatch({ type: "APPLE_PURCHASES_FETCH_START" });
-    let obj2 = _mod13947;
+    let obj2 = _mod14467;
     const availablePurchases = obj2.getAvailablePurchases({ onlyIncludeActiveItems: false });
     const nextPromise = availablePurchases.then((purchases) => {
       const obj = DispatcherDefault;
@@ -39,4 +39,4 @@ export const fetchApplePurchases = function fetchApplePurchases() {
     });
   }
   return cleanupPromise;
-};
+}

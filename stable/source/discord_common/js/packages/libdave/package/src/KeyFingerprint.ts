@@ -1,10 +1,10 @@
-// Module ID: 9216
-// Function ID: 9217
+// Module ID: 9253
+// Function ID: 9254
 // Name: _asyncToGenerator
 // Dependencies: [5, 2]
 // Exports: generateKeyFingerprint
 
-// Module 9216 (_asyncToGenerator)
+// Module 9253 (_asyncToGenerator)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ let obj = function _generateKeyFingerprint() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -96,6 +96,6 @@ let obj = function _generateKeyFingerprint() {
 };
 let result = size.fileFinishedImporting("../discord_common/js/packages/libdave/package/src/KeyFingerprint.ts");
 
-export const generateKeyFingerprint = function generateKeyFingerprint() {
+export function generateKeyFingerprint() {
   return obj(...arguments);
-};
+}

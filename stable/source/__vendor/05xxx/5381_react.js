@@ -2,29 +2,16 @@
 // Function ID: 5382
 // Name: react
 // Dependencies: [19]
+// Exports: useInterceptingDetectorContext
 
 // Module 5381 (react)
 import react from "react" /* 19 */;
 
-let tmp3 = typeof window === "undefined";
-if (!tmp3) {
-  const _window2 = window;
-  tmp3 = undefined === window.document;
+const use = react.use;
+const context = react.createContext(null);
+
+export const InterceptingDetectorMode = { DEFAULT: 0, [0]: "DEFAULT", ANIMATED: 1, [1]: "ANIMATED", REANIMATED: 2, [2]: "REANIMATED" };
+export const InterceptingDetectorContext = context;
+export function useInterceptingDetectorContext() {
+  return use(context);
 }
-if (!tmp3) {
-  const _window = window;
-  tmp3 = undefined === window.document.createElement;
-}
-let tmp4 = typeof navigator !== "undefined";
-if (typeof navigator !== "undefined") {
-  const _navigator = navigator;
-  tmp4 = "ReactNative" === navigator.product;
-}
-if (tmp3) {
-  let useLayoutEffect;
-  if (!tmp4) {
-    useLayoutEffect = react.useEffect;
-  }
-  exports.useIsomorphicLayoutEffect = useLayoutEffect;
-}
-useLayoutEffect = react.useLayoutEffect;

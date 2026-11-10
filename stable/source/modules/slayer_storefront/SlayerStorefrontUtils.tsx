@@ -1,26 +1,25 @@
-// Module ID: 7362
-// Function ID: 7363
+// Module ID: 7404
+// Function ID: 7405
 // Name: SlayerStorefrontUtils
-// Dependencies: [2045, 7363, 2024, 4877, 5034, 7364, 7365, 1087, 1089, 6415, 7366, 12, 7367, 1386, 6754, 558, 576, 504, 7289, 2]
-// Exports: canSeeGameShop, getCardBackgroundImageURL, getCardImageURL, getForwardedSKUShareURL, getForwardedStorefrontEmbedShareURL, getGameItemThumbnailUrl, getHasWishlistOrPopularRecommendations, getMarketingGuildId, getOrderedStorefrontSkuIds, getPrimaryCarouselItemInfo, getRequiredSubscriptionPlanIds, getRewardRequirementPlanTargetingParams, getSocialLayerStorefrontApplicationId, getSocialLayerStorefrontGuildId, getStorefrontEmbedShareURL, isGameItemSKU, isOnCollectiblesShopGameShopPage, isOnSocialLayerStorefrontPage, isOnSocialLayerStorefrontSkuPage, isOwnsMinSkusRewardRequirement, transformSlayerApplicationStorefrontServer, transformSlayerApplicationStorefrontSummaryServer, transformStorefrontMetadataServer
+// Dependencies: [2038, 7405, 2016, 4885, 5045, 7406, 7407, 1072, 1074, 6455, 7408, 12, 7409, 1377, 6793, 504, 7330, 2]
+// Exports: canSeeGameShop, getCardBackgroundImageURL, getCardImageURL, getForwardedSKUShareURL, getForwardedStorefrontEmbedShareURL, getGameItemThumbnailUrl, getHasWishlistOrPopularRecommendations, getMarketingGuildId, getOrderedStorefrontSkuIds, getPrimaryCarouselItemInfo, getRequiredSubscriptionPlanIds, getRewardRequirementPlanTargetingParams, getSocialLayerStorefrontApplicationId, getSocialLayerStorefrontGuildId, getStorefrontEmbedShareURL, isGameItemSKU, isOnCollectiblesShopGameShopPage, isOnSocialLayerStorefrontPage, isOnSocialLayerStorefrontSkuPage, isOwnsMinSkusRewardRequirement, transformSlayerApplicationStorefrontServer, transformSlayerApplicationStorefrontSummaryServer, transformStorefrontMetadataServer, useGetSocialLayerStorefrontApplicationId, useGetSocialLayerStorefrontGuildIdAndApplication
 
-// Module 7362 (SlayerStorefrontUtils)
+// Module 7404 (SlayerStorefrontUtils)
 import _modDef12 from "module_12" /* 12 */;
-import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1089 */;
-import URLUtilsDefault from "URLUtils" /* 1386 */;
-import StoreUtils from "StoreUtils" /* 6415 */;
-import _mod6754 from "module_6754" /* 6754 */;
-import WishlistRecommendationRecord from "WishlistRecommendationRecord" /* 7363 */;
-import SocialLayerStorefrontTypes from "SocialLayerStorefrontTypes" /* 7366 */;
-import StorefrontUtils from "StorefrontUtils" /* 7367 */;
-import ApplicationStore from "ApplicationStore" /* 2045 */;
-import ApplicationRecord from "ApplicationRecord" /* 2024 */;
-import GuildStore from "GuildStore" /* 4877 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5034 */;
-import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 7364 */;
-import SocialLayerStorefrontConstants from "SocialLayerStorefrontConstants" /* 7365 */;
-import Constants from "Constants" /* 1087 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
+import URLUtilsDefault from "URLUtils" /* 1377 */;
+import StoreUtils from "StoreUtils" /* 6455 */;
+import _mod6793 from "module_6793" /* 6793 */;
+import WishlistRecommendationRecord from "WishlistRecommendationRecord" /* 7405 */;
+import SocialLayerStorefrontTypes from "SocialLayerStorefrontTypes" /* 7408 */;
+import StorefrontUtils from "StorefrontUtils" /* 7409 */;
+import ApplicationStore from "ApplicationStore" /* 2038 */;
+import ApplicationRecord from "ApplicationRecord" /* 2016 */;
+import GuildStore from "GuildStore" /* 4885 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5045 */;
+import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 7406 */;
+import SocialLayerStorefrontConstants from "SocialLayerStorefrontConstants" /* 7407 */;
+import Constants from "Constants" /* 1072 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -30,6 +29,7 @@ let c10;
 let c9;
 let closure_12;
 let closure_14;
+let closure_15;
 let map1;
 let unpackModuleId;
 function hasSocialLayerStorefront(guild) {
@@ -59,7 +59,7 @@ function hasSocialLayerStorefront(guild) {
       const features = guild.features;
       let flag;
       if (features != null) {
-        flag = features.has(constants.SOCIAL_LAYER_STOREFRONT);
+        flag = features.has(map1.SOCIAL_LAYER_STOREFRONT);
       }
       if (flag == null) {
         flag = false;
@@ -93,20 +93,25 @@ function transformRewardRequirementServer(type) {
 }
 function transformSlayerStorefrontPromotionServer(id) {
   let ends_at;
+  let flavor;
   let mapped;
   let reward_status;
   let tmp2;
   let tmp3;
   let tmp4;
   let tmp5;
-  const obj = { id: id.id, endsAt: ends_at, flavor: str, pdp: tmp2, storefront: tmp3, checkout: tmp4, vcStream: tmp5, rewardStatus: reward_status, rewardRequirements: mapped.filter((item) => null != item) };
+  str = "default";
+  if (id.id === React4) {
+    str = "nitro";
+  }
+  const obj = { id: id.id, endsAt: ends_at, flavor, pdp: tmp2, storefront: tmp3, checkout: tmp4, vcStream: tmp5, rewardStatus: reward_status, rewardRequirements: mapped.filter((item) => null != item) };
   ends_at = id.ends_at;
   if (ends_at == null) {
     ends_at = null;
   }
-  str = id.flavor;
-  if (str == null) {
-    str = "default";
+  flavor = id.flavor;
+  if (flavor == null) {
+    flavor = str;
   }
   const pdp = id.pdp;
   tmp2 = null;
@@ -156,12 +161,12 @@ function getSKUShareURL(guildId, applicationId) {
     const _location2 = location;
     const _location3 = location;
     applicationId = applicationId.applicationId;
-    const obj = _mod6754;
+    const obj = _mod6793;
     const parsed = obj.parse(search);
     const skuId = parsed.skuId;
     ({ tab, applicationId: applicationId2 } = parsed);
-    let tmp3 = pathname.indexOf(map1.COLLECTIBLES_SHOP) >= 0;
-    const obj2 = map1;
+    let tmp3 = pathname.indexOf(authStore3.COLLECTIBLES_SHOP) >= 0;
+    const obj2 = authStore3;
     if (tmp3) {
       tmp3 = tab === CollectibleShopTab.GAME_SHOPS && applicationId2 === applicationId && true;
     }
@@ -173,188 +178,16 @@ function getSKUShareURL(guildId, applicationId) {
     }
     return combined;
   }
-  combined = "" + location.protocol + window.GLOBAL_ENV.WEBAPP_ENDPOINT + map1.COLLECTIBLES_SHOP_GAME_SHOP(applicationId.applicationId, undefined, applicationId.id, applicationId.slug);
+  combined = "" + location.protocol + window.GLOBAL_ENV.WEBAPP_ENDPOINT + authStore3.COLLECTIBLES_SHOP_GAME_SHOP(applicationId.applicationId, undefined, applicationId.id, applicationId.slug);
 }
 let closure_4 = WishlistRecommendationRecord.WishlistRecommendationReason;
-({ getChannelsGameShopPrefix: c9, STOREFRONT_MARKETING_GUILD_ID: c10, STOREFRONT_MARKETING_GUILD_ID_TEST: unpackModuleId } = SocialLayerStorefrontConstants);
-({ GuildFeatures: closure_12, Routes: map1, SKUProductLines: closure_14 } = Constants);
+({ BLOONS_TD6_SPLIT_TENDER_PROMOTION_ID: c9, getChannelsGameShopPrefix: c10, STOREFRONT_MARKETING_GUILD_ID: unpackModuleId, STOREFRONT_MARKETING_GUILD_ID_TEST: closure_12 } = SocialLayerStorefrontConstants);
+({ GuildFeatures: map1, Routes: closure_14, SKUProductLines: closure_15 } = Constants);
 const CollectibleShopTab = CollectiblesShopConstants.CollectibleShopTab;
 let str = "jpg";
 if (StoreUtils.SUPPORTS_WEBP) {
   str = "webp";
 }
-let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGetSocialLayerStorefrontGuildIdAndApplication(arg0) {
-  let closure_0;
-  let first;
-  let tmp6;
-  _require = arg0;
-  const obj = require("react");
-  const cResult = obj.c(6);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [SocialLayerStorefrontStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function n() {
-      return SocialLayerStorefrontStore.getGuildIdFromApplicationId(closure_0);
-    };
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-  }
-  const tmpResult = require("get initialized");
-  const stateFromStores = tmpResult.useStateFromStores(first, tmp6);
-  const tmpResult2 = require("useGetOrFetchApplications");
-  const getOrFetchApplication = tmpResult2.useGetOrFetchApplication(arg0);
-  let tmp9 = stateFromStores;
-  if (stateFromStores == null) {
-    let guildId;
-    if (getOrFetchApplication != null) {
-      guildId = getOrFetchApplication.guildId;
-    }
-    tmp9 = guildId;
-  }
-  if (cResult[3] === getOrFetchApplication) {
-    let tmp11;
-    if (cResult[4] === tmp9) {
-      tmp11 = cResult[5];
-    }
-    return tmp11;
-  }
-  const obj2 = { guildId: tmp9, application: getOrFetchApplication };
-  cResult[3] = getOrFetchApplication;
-  cResult[4] = tmp9;
-  cResult[5] = obj2;
-  tmp11 = obj2;
-}) : (function useGetSocialLayerStorefrontGuildIdAndApplication(arg0) {
-  let closure_0;
-  _require = arg0;
-  const items = [SocialLayerStorefrontStore];
-  const obj = require("get initialized");
-  const stateFromStores = obj.useStateFromStores(items, () => SocialLayerStorefrontStore.getGuildIdFromApplicationId(closure_0));
-  const obj2 = require("useGetOrFetchApplications");
-  const application = obj2.useGetOrFetchApplication(arg0);
-  let guildId2 = stateFromStores;
-  if (stateFromStores == null) {
-    let guildId;
-    if (application != null) {
-      guildId = application.guildId;
-    }
-    guildId2 = guildId;
-  }
-  return { guildId: guildId2, application };
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGetSocialLayerStorefrontApplicationId(arg0) {
-  let closure_0;
-  let first;
-  let tmp10;
-  let tmp11;
-  let tmp6;
-  let tmp8;
-  _require = arg0;
-  const obj = require("react");
-  const cResult = obj.c(10);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [SocialLayerStorefrontStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function n() {
-      return SocialLayerStorefrontStore.getApplicationIdFromGuildId(closure_0);
-    };
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-  }
-  const tmpResult = require("get initialized");
-  const stateFromStores = tmpResult.useStateFromStores(first, tmp6);
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const items1 = [GuildStore];
-    cResult[3] = items1;
-    tmp8 = items1;
-  } else {
-    tmp8 = cResult[3];
-  }
-  if (cResult[4] !== arg0) {
-    const fn2 = function c() {
-      return GuildStore.getGuild(closure_0);
-    };
-    const items2 = [arg0];
-    cResult[4] = arg0;
-    cResult[5] = fn2;
-    cResult[6] = items2;
-    tmp11 = items2;
-    tmp10 = fn2;
-  } else {
-    tmp10 = cResult[5];
-    tmp11 = cResult[6];
-  }
-  const tmpResult2 = require("get initialized");
-  const stateFromStores1 = tmpResult2.useStateFromStores(tmp8, tmp10, tmp11);
-  if (cResult[7] === stateFromStores) {
-    let tmp13;
-    if (cResult[8] === stateFromStores1) {
-      tmp13 = cResult[9];
-    }
-    return tmp13;
-  }
-  let tmp14 = stateFromStores;
-  if (stateFromStores == null) {
-    let length;
-    if (stateFromStores1 != null) {
-      const gameApplicationIds = stateFromStores1.gameApplicationIds;
-      if (gameApplicationIds != null) {
-        length = gameApplicationIds.length;
-      }
-    }
-    let first1;
-    if (1 === length) {
-      first1 = stateFromStores1.gameApplicationIds[0];
-    }
-    tmp14 = first1;
-  }
-  cResult[7] = stateFromStores;
-  cResult[8] = stateFromStores1;
-  cResult[9] = tmp14;
-  tmp13 = tmp14;
-}) : (function useGetSocialLayerStorefrontApplicationId(arg0) {
-  let closure_0;
-  _require = arg0;
-  const items = [SocialLayerStorefrontStore];
-  const obj = require("get initialized");
-  let stateFromStores = obj.useStateFromStores(items, () => SocialLayerStorefrontStore.getApplicationIdFromGuildId(closure_0));
-  const items1 = [GuildStore];
-  const items2 = [arg0];
-  const obj2 = require("get initialized");
-  const stateFromStores1 = obj2.useStateFromStores(items1, () => GuildStore.getGuild(closure_0), items2);
-  if (stateFromStores == null) {
-    let length;
-    if (stateFromStores1 != null) {
-      const gameApplicationIds = stateFromStores1.gameApplicationIds;
-      if (gameApplicationIds != null) {
-        length = gameApplicationIds.length;
-      }
-    }
-    let first;
-    if (1 === length) {
-      first = stateFromStores1.gameApplicationIds[0];
-    }
-    stateFromStores = first;
-  }
-  return stateFromStores;
-});
 function getRequiredSubscriptionPlanIds(arr) {
   const found = arr.find(isSubscriptionRewardRequirement);
   let planIds = null;
@@ -370,10 +203,10 @@ function isOnCollectiblesShopGameShopPage(arr, arg1, arg2, arg3) {
   let applicationId;
   let skuId;
   let tab;
-  const obj = _mod6754;
+  const obj = _mod6793;
   const parsed = obj.parse(arg1);
   ({ tab, applicationId, skuId } = parsed);
-  let tmp2 = arr.indexOf(map1.COLLECTIBLES_SHOP) >= 0;
+  let tmp2 = arr.indexOf(authStore3.COLLECTIBLES_SHOP) >= 0;
   if (tmp2) {
     let tmp4 = tab === CollectibleShopTab.GAME_SHOPS && applicationId === arg2;
     if (tmp4) {
@@ -388,8 +221,8 @@ function getStorefrontEmbedShareURL(applicationId, join) {
   if (null != guildId) {
     let GAME_SHOPResult;
     const _location = location;
-    if (pathname.indexOf(React4(guildId)) >= 0) {
-      GAME_SHOPResult = map1.GAME_SHOP(guildId);
+    if (pathname.indexOf(authStore(guildId)) >= 0) {
+      GAME_SHOPResult = authStore3.GAME_SHOP(guildId);
     }
     const _URL = URL;
     const _location2 = location;
@@ -402,13 +235,13 @@ function getStorefrontEmbedShareURL(applicationId, join) {
     const result = searchParams.set("skuIds", join.join(","));
     return str2.toString();
   }
-  GAME_SHOPResult = map1.COLLECTIBLES_SHOP_GAME_SHOP(applicationId);
+  GAME_SHOPResult = authStore3.COLLECTIBLES_SHOP_GAME_SHOP(applicationId);
 }
 let size = size_mod;
 let result = size.fileFinishedImporting("modules/slayer_storefront/SlayerStorefrontUtils.tsx");
 
 export const LARGE_ASSET_FORMAT = str;
-export const getOrderedStorefrontSkuIds = function getOrderedStorefrontSkuIds(arg0) {
+export function getOrderedStorefrontSkuIds(arg0) {
   set = new Set();
   const items = [];
   const iter = arg0.pages[Symbol.iterator]();
@@ -443,24 +276,24 @@ export const getOrderedStorefrontSkuIds = function getOrderedStorefrontSkuIds(ar
     continue;
   }
   return items;
-};
-export const isGameItemSKU = function isGameItemSKU(stateFromStores1) {
+}
+export function isGameItemSKU(stateFromStores1) {
   return null != stateFromStores1 && stateFromStores1.productLine === constants2.SOCIAL_LAYER_GAME_ITEM;
-};
-export const getMarketingGuildId = function getMarketingGuildId() {
-  const guild = GuildStore.getGuild(unpackModuleId);
+}
+export function getMarketingGuildId() {
+  const guild = GuildStore.getGuild(authStore2);
   if (null != guild) {
     let id;
     const features = guild.features;
-    if (features.has(constants.SOCIAL_LAYER_STOREFRONT)) {
+    if (features.has(map1.SOCIAL_LAYER_STOREFRONT)) {
       id = guild.id;
     }
     return id;
   }
-  id = authStore;
-};
+  id = unpackModuleId;
+}
 export { hasSocialLayerStorefront };
-export const transformStorefrontMetadataServer = function transformStorefrontMetadataServer(body) {
+export function transformStorefrontMetadataServer(body) {
   let prop;
   let logo_asset_id = body.logo_asset_id;
   if (logo_asset_id == null) {
@@ -472,12 +305,12 @@ export const transformStorefrontMetadataServer = function transformStorefrontMet
     prop = null;
   }
   return obj;
-};
+}
 export { getRequiredSubscriptionPlanIds };
-export const isOwnsMinSkusRewardRequirement = function isOwnsMinSkusRewardRequirement(type) {
+export function isOwnsMinSkusRewardRequirement(type) {
   return type.type === SocialLayerStorefrontTypes.RewardRequirementType.OWNS_MIN_SKUS;
-};
-export const getRewardRequirementPlanTargetingParams = function getRewardRequirementPlanTargetingParams(arr) {
+}
+export function getRewardRequirementPlanTargetingParams(arr) {
   const found = arr.find(isSubscriptionRewardRequirement);
   let planIds = null;
   if (null != found) {
@@ -494,8 +327,8 @@ export const getRewardRequirementPlanTargetingParams = function getRewardRequire
     return obj;
   }
   obj = {};
-};
-export const transformSlayerApplicationStorefrontSummaryServer = function transformSlayerApplicationStorefrontSummaryServer(id) {
+}
+export function transformSlayerApplicationStorefrontSummaryServer(id) {
   let logo_asset_id;
   let prop;
   let tmp;
@@ -523,8 +356,8 @@ export const transformSlayerApplicationStorefrontSummaryServer = function transf
     prop = null;
   }
   return obj;
-};
-export const transformSlayerApplicationStorefrontServer = function transformSlayerApplicationStorefrontServer(body) {
+}
+export function transformSlayerApplicationStorefrontServer(body) {
   let fromServer;
   let mapValues;
   let obj3;
@@ -592,8 +425,8 @@ export const transformSlayerApplicationStorefrontServer = function transformSlay
     promotions = {};
   }
   return obj;
-};
-export const getPrimaryCarouselItemInfo = function getPrimaryCarouselItemInfo(tenantMetadata, arg1) {
+}
+export function getPrimaryCarouselItemInfo(tenantMetadata, arg1) {
   let obj = arg2;
   if (arg2 === undefined) {
     obj = {};
@@ -619,7 +452,7 @@ export const getPrimaryCarouselItemInfo = function getPrimaryCarouselItemInfo(te
         let obj3;
         const first = tenantMetadata.tenantMetadata.socialLayer.carouselItems[0];
         if (null == first.labelIconAssetId) {
-          obj3 = { primaryIconAsset: "Array", primaryIconLabel: "Reflect" };
+          obj3 = { primaryIconAsset: "paths", primaryIconLabel: "apply" };
         } else {
           const toURLSafe = URLUtilsDefault.toURLSafe;
           URLUtilsDefault;
@@ -631,9 +464,9 @@ export const getPrimaryCarouselItemInfo = function getPrimaryCarouselItemInfo(te
       }
     }
   }
-  return { primaryIconAsset: "Array", primaryIconLabel: "Reflect" };
-};
-export const getGameItemThumbnailUrl = function getGameItemThumbnailUrl(value2) {
+  return { primaryIconAsset: "paths", primaryIconLabel: "apply" };
+}
+export function getGameItemThumbnailUrl(value2) {
   let obj = arg1;
   if (arg1 === undefined) {
     obj = {};
@@ -651,8 +484,8 @@ export const getGameItemThumbnailUrl = function getGameItemThumbnailUrl(value2) 
       return toURLSafe(obj2.getAssetURL(value2.applicationId, value2.thumbnailAssetId, num, "webp"));
     }
   }
-};
-export const getCardImageURL = function getCardImageURL(sku, arg1) {
+}
+export function getCardImageURL(sku, arg1) {
   let applicationId;
   let obj = arg1;
   if (arg1 === undefined) {
@@ -691,8 +524,8 @@ export const getCardImageURL = function getCardImageURL(sku, arg1) {
       return toURLSafe(obj2.getAssetURL(applicationId, cardImageAssetId, num, "webp"));
     }
   }
-};
-export const getCardBackgroundImageURL = function getCardBackgroundImageURL(sku, arg1) {
+}
+export function getCardBackgroundImageURL(sku, arg1) {
   let obj = arg1;
   if (arg1 === undefined) {
     obj = {};
@@ -724,20 +557,20 @@ export const getCardBackgroundImageURL = function getCardBackgroundImageURL(sku,
       return toURLSafe(obj2.getAssetURL(sku.applicationId, sku.tenantMetadata.socialLayer.cardBackgroundImageAssetId, num, str));
     }
   }
-};
+}
 export { isOnCollectiblesShopGameShopPage };
 export { getSKUShareURL };
-export const getForwardedSKUShareURL = function getForwardedSKUShareURL(guildId, applicationId) {
+export function getForwardedSKUShareURL(guildId, applicationId) {
   return "" + getSKUShareURL(guildId, applicationId) + "\n\n";
-};
+}
 export { getStorefrontEmbedShareURL };
-export const getForwardedStorefrontEmbedShareURL = function getForwardedStorefrontEmbedShareURL(applicationId, join) {
+export function getForwardedStorefrontEmbedShareURL(applicationId, join) {
   const guildId = SelectedGuildStore.getGuildId();
   if (null != guildId) {
     let GAME_SHOPResult;
     const _location = location;
-    if (pathname.indexOf(React4(guildId)) >= 0) {
-      GAME_SHOPResult = map1.GAME_SHOP(guildId);
+    if (pathname.indexOf(authStore(guildId)) >= 0) {
+      GAME_SHOPResult = authStore3.GAME_SHOP(guildId);
     }
     const _URL = URL;
     const _location2 = location;
@@ -751,14 +584,14 @@ export const getForwardedStorefrontEmbedShareURL = function getForwardedStorefro
     const _HermesInternal2 = HermesInternal;
     return "" + str2.toString() + "\n\n";
   }
-  GAME_SHOPResult = map1.COLLECTIBLES_SHOP_GAME_SHOP(applicationId);
-};
-export const canSeeGameShop = function canSeeGameShop(id) {
+  GAME_SHOPResult = authStore3.COLLECTIBLES_SHOP_GAME_SHOP(applicationId);
+}
+export function canSeeGameShop(id) {
   const guild = GuildStore.getGuild(id);
   const tmp2 = null != guild && hasSocialLayerStorefront(guild);
   return tmp2;
-};
-export const getHasWishlistOrPopularRecommendations = function getHasWishlistOrPopularRecommendations(arr, arg1, arg2) {
+}
+export function getHasWishlistOrPopularRecommendations(arr, arg1, arg2) {
   let obj;
   let closure_0 = arg1;
   let closure_1 = arg2;
@@ -799,25 +632,25 @@ export const getHasWishlistOrPopularRecommendations = function getHasWishlistOrP
     };
   }
   return obj;
-};
-export const isOnSocialLayerStorefrontPage = function isOnSocialLayerStorefrontPage(arr, arg1, arg2, arg3) {
+}
+export function isOnSocialLayerStorefrontPage(arr, arg1, arg2, arg3) {
   let applicationId;
   let tab;
-  const obj = _mod6754;
+  const obj = _mod6793;
   const parsed = obj.parse(arg1);
   ({ tab, applicationId } = parsed);
-  let tmp2 = arr.indexOf(map1.COLLECTIBLES_SHOP) >= 0;
+  let tmp2 = arr.indexOf(authStore3.COLLECTIBLES_SHOP) >= 0;
   if (tmp2) {
     tmp2 = tab === CollectibleShopTab.GAME_SHOPS && applicationId === arg2 && true;
     const flag = tab === CollectibleShopTab.GAME_SHOPS && applicationId === arg2 && true;
   }
   if (!tmp2) {
-    tmp2 = null != arg3 && arr.indexOf(React4(arg3)) >= 0;
-    const tmp7 = null != arg3 && arr.indexOf(React4(arg3)) >= 0;
+    tmp2 = null != arg3 && arr.indexOf(authStore(arg3)) >= 0;
+    const tmp7 = null != arg3 && arr.indexOf(authStore(arg3)) >= 0;
   }
   return tmp2;
-};
-export const isOnSocialLayerStorefrontSkuPage = function isOnSocialLayerStorefrontSkuPage(applicationId) {
+}
+export function isOnSocialLayerStorefrontSkuPage(applicationId) {
   let applicationId2;
   let guildId;
   let pageIndex;
@@ -832,11 +665,11 @@ export const isOnSocialLayerStorefrontSkuPage = function isOnSocialLayerStorefro
   }
   ({ guildId, skuId } = applicationId);
   applicationId = applicationId.applicationId;
-  const obj = _mod6754;
+  const obj = _mod6793;
   const parsed = obj.parse(search);
   ({ tab, applicationId: applicationId2, skuId: skuId2 } = parsed);
-  let tmp2 = pathname.indexOf(map1.COLLECTIBLES_SHOP) >= 0;
-  const obj2 = map1;
+  let tmp2 = pathname.indexOf(authStore3.COLLECTIBLES_SHOP) >= 0;
+  const obj2 = authStore3;
   if (tmp2) {
     let tmp4 = tab === CollectibleShopTab.GAME_SHOPS && applicationId2 === applicationId;
     if (tmp4) {
@@ -849,9 +682,25 @@ export const isOnSocialLayerStorefrontSkuPage = function isOnSocialLayerStorefro
     tmp2 = hasItem;
   }
   return tmp2;
-};
-export const useGetSocialLayerStorefrontGuildIdAndApplication = tmp4;
-export const getSocialLayerStorefrontApplicationId = function getSocialLayerStorefrontApplicationId(guildId) {
+}
+export function useGetSocialLayerStorefrontGuildIdAndApplication(applicationId) {
+  _require = applicationId;
+  const items = [SocialLayerStorefrontStore];
+  const obj = require("get initialized");
+  const stateFromStores = obj.useStateFromStores(items, () => SocialLayerStorefrontStore.getGuildIdFromApplicationId(applicationId));
+  const obj2 = require("useGetOrFetchApplications");
+  const application = obj2.useGetOrFetchApplication(applicationId);
+  let guildId2 = stateFromStores;
+  if (stateFromStores == null) {
+    let guildId;
+    if (application != null) {
+      guildId = application.guildId;
+    }
+    guildId2 = guildId;
+  }
+  return { guildId: guildId2, application };
+}
+export function getSocialLayerStorefrontApplicationId(guildId) {
   let applicationIdFromGuildId = SocialLayerStorefrontStore.getApplicationIdFromGuildId(guildId);
   const guild = GuildStore.getGuild(guildId);
   if (applicationIdFromGuildId == null) {
@@ -869,9 +718,34 @@ export const getSocialLayerStorefrontApplicationId = function getSocialLayerStor
     applicationIdFromGuildId = first;
   }
   return applicationIdFromGuildId;
-};
-export const useGetSocialLayerStorefrontApplicationId = tmp5;
-export const getSocialLayerStorefrontGuildId = function getSocialLayerStorefrontGuildId(applicationId) {
+}
+export function useGetSocialLayerStorefrontApplicationId(arg0) {
+  let closure_0;
+  _require = arg0;
+  const items = [SocialLayerStorefrontStore];
+  const obj = require("get initialized");
+  let stateFromStores = obj.useStateFromStores(items, () => SocialLayerStorefrontStore.getApplicationIdFromGuildId(closure_0));
+  const items1 = [GuildStore];
+  const items2 = [arg0];
+  const obj2 = require("get initialized");
+  const stateFromStores1 = obj2.useStateFromStores(items1, () => GuildStore.getGuild(closure_0), items2);
+  if (stateFromStores == null) {
+    let length;
+    if (stateFromStores1 != null) {
+      const gameApplicationIds = stateFromStores1.gameApplicationIds;
+      if (gameApplicationIds != null) {
+        length = gameApplicationIds.length;
+      }
+    }
+    let first;
+    if (1 === length) {
+      first = stateFromStores1.gameApplicationIds[0];
+    }
+    stateFromStores = first;
+  }
+  return stateFromStores;
+}
+export function getSocialLayerStorefrontGuildId(applicationId) {
   if (null != applicationId) {
     let guildIdFromApplicationId = SocialLayerStorefrontStore.getGuildIdFromApplicationId(applicationId);
     if (guildIdFromApplicationId == null) {
@@ -884,4 +758,4 @@ export const getSocialLayerStorefrontGuildId = function getSocialLayerStorefront
     }
     return guildIdFromApplicationId;
   }
-};
+}

@@ -1,20 +1,20 @@
-// Module ID: 8678
-// Function ID: 8679
+// Module ID: 8728
+// Function ID: 8729
 // Name: avatar_decorations/AvatarDecorationUtils
-// Dependencies: [1418, 1202, 5242, 8679, 2002, 2]
+// Dependencies: [1410, 1187, 5258, 8729, 1994, 2]
 // Exports: getDecorationCutoutForAvatarCutout, getDecorationSizeForAvatarSize, openAvatarDecorationActionSheet
 
-// Module 8678 (avatar_decorations/AvatarDecorationUtils)
-import native from "native" /* 1202 */;
-import AvatarDecorationConstants from "AvatarDecorationConstants" /* 1418 */;
-import asyncRequire from "asyncRequire" /* 2002 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5242 */;
+// Module 8728 (avatar_decorations/AvatarDecorationUtils)
+import native from "native" /* 1187 */;
+import AvatarDecorationConstants from "AvatarDecorationConstants" /* 1410 */;
+import asyncRequire from "asyncRequire" /* 1994 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
 import size from "module_2" /* 2 */;
 
 let closure_3 = AvatarDecorationConstants.DECORATION_TO_AVATAR_RATIO;
 let result = size.fileFinishedImporting("modules/collectibles/avatar_decorations/native/AvatarDecorationUtils.tsx");
 
-export const getDecorationSizeForAvatarSize = function getDecorationSizeForAvatarSize(NORMAL) {
+export function getDecorationSizeForAvatarSize(NORMAL) {
   let result;
   if (typeof NORMAL !== "number") {
     result = native.AVATAR_SIZE_MAP[NORMAL] * closure_3;
@@ -22,8 +22,8 @@ export const getDecorationSizeForAvatarSize = function getDecorationSizeForAvata
     result = NORMAL * closure_3;
   }
   return result;
-};
-export const getDecorationCutoutForAvatarCutout = function getDecorationCutoutForAvatarCutout(cutout, arg1) {
+}
+export function getDecorationCutoutForAvatarCutout(cutout, arg1) {
   let inset;
   let mapped;
   let closure_0 = arg1;
@@ -46,8 +46,8 @@ export const getDecorationCutoutForAvatarCutout = function getDecorationCutoutFo
     tmp = obj;
   }
   return tmp;
-};
-export const openAvatarDecorationActionSheet = function openAvatarDecorationActionSheet(arg0) {
+}
+export function openAvatarDecorationActionSheet(arg0) {
   let analyticsLocations;
   let currentAvatarDecoration;
   let guildId;
@@ -57,5 +57,5 @@ export const openAvatarDecorationActionSheet = function openAvatarDecorationActi
   const obj = ActionSheetActionCreatorsDefault;
   obj.hideActionSheet();
   const obj2 = ActionSheetActionCreatorsDefault;
-  obj2.openLazy(asyncRequire(8679, dependencyMap.paths), "Edit Avatar Decoration", { user, guildId, currentAvatarDecoration, isTryItOut, analyticsLocations });
-};
+  obj2.openLazy(asyncRequire(8729, dependencyMap.paths), "Edit Avatar Decoration", { user, guildId, currentAvatarDecoration, isTryItOut, analyticsLocations });
+}

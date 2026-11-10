@@ -1,146 +1,24 @@
-// Module ID: 13051
-// Function ID: 13052
+// Module ID: 13685
+// Function ID: 13686
 // Name: useCanDM
-// Dependencies: [7763, 4936, 502, 4915, 4945, 4831, 558, 576, 504, 2]
-// Exports: canDm
+// Dependencies: [7800, 4947, 502, 4926, 4956, 4839, 504, 2]
+// Exports: canDm, default
 
-// Module 13051 (useCanDM)
-import UserSettings from "UserSettings" /* 4831 */;
-import GameRelationshipStore from "GameRelationshipStore" /* 7763 */;
-import LurkingStore from "LurkingStore" /* 4936 */;
+// Module 13685 (useCanDM)
+import UserSettings from "UserSettings" /* 4839 */;
+import GameRelationshipStore from "GameRelationshipStore" /* 7800 */;
+import LurkingStore from "LurkingStore" /* 4947 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildMemberStore from "GuildMemberStore" /* 4915 */;
-import RelationshipStore from "RelationshipStore" /* 4945 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import GuildMemberStore from "GuildMemberStore" /* 4926 */;
+import RelationshipStore from "RelationshipStore" /* 4956 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, closure_3, closure_4, dependencyMap;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanDM(arg0, arg1) {
-  let closure_0;
-  let closure_1;
-  let first;
-  let setting;
-  let stateFromStores1;
-  let tmp6;
-  let tmp8;
-  let tmp9;
-  _require = arg0;
-  dependencyMap = arg1;
-  let tmp = _require;
-  const obj = require("react");
-  const cResult = obj.c(12);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [setting];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    class F {
-      constructor() {
-        return AuthenticationStore.getId() === closure_0;
-      }
-    }
-    cResult[1] = arg0;
-    cResult[2] = F;
-    tmp6 = F;
-  } else {
-    class F {
-      constructor() {
-        return AuthenticationStore.getId() === closure_0;
-      }
-    }
-  }
-  const tmpResult = tmp(504);
-  const stateFromStores = tmpResult.useStateFromStores(first, tmp6);
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    class F {
-      constructor() {
-        return AuthenticationStore.getId() === closure_0;
-      }
-    }
-    const items1 = [stateFromStores1];
-    cResult[3] = items1;
-    tmp8 = items1;
-  } else {
-    class F {
-      constructor() {
-        return AuthenticationStore.getId() === closure_0;
-      }
-    }
-  }
-  if (cResult[4] !== arg1) {
-    class F {
-      constructor() {
-        return AuthenticationStore.getId() === closure_0;
-      }
-    }
-    cResult[4] = arg1;
-    cResult[5] = tmp10;
-    tmp9 = tmp10;
-  } else {
-    class F {
-      constructor() {
-        return AuthenticationStore.getId() === closure_0;
-      }
-    }
-  }
-  const tmpResult2 = tmp(504);
-  stateFromStores1 = tmpResult2.useStateFromStores(tmp8, tmp9);
-  const RestrictedGuildIds = tmp(4831).RestrictedGuildIds;
-  setting = RestrictedGuildIds.useSetting();
-  if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    class F {
-      constructor() {
-        return AuthenticationStore.getId() === closure_0;
-      }
-    }
-    const items2 = [RelationshipStore, GuildMemberStore, stateFromStores];
-    cResult[6] = items2;
-  } else {
-    class F {
-      constructor() {
-        return AuthenticationStore.getId() === closure_0;
-      }
-    }
-  }
-  if (cResult[7] === stateFromStores1) {
-    class F {
-      constructor() {
-        return AuthenticationStore.getId() === closure_0;
-      }
-    }
-  }
-  const fn = function b() {
-    let tmp = !stateFromStores && !stateFromStores1;
-    if (tmp) {
-      let isFriendResult = RelationshipStore.isFriend(closure_0);
-      const tmp4 = closure_0;
-      if (!isFriendResult) {
-        const memberOfResult = GuildMemberStore.memberOf(tmp4);
-        isFriendResult = null != memberOfResult.find((item) => !setting.includes(item));
-      }
-      tmp = isFriendResult;
-    }
-    if (!tmp) {
-      setting = GameRelationshipStore.getGameFriendsForUser(closure_0).length > 0;
-      if (setting) {
-        const AllowGameFriendDmsInDiscord = UserSettings.AllowGameFriendDmsInDiscord;
-        setting = AllowGameFriendDmsInDiscord.getSetting();
-      }
-      tmp = setting;
-    }
-    return tmp;
-  };
-  cResult[7] = stateFromStores1;
-  cResult[8] = stateFromStores;
-  cResult[9] = setting;
-  cResult[10] = arg0;
-  cResult[11] = fn;
-}) : (function useCanDM(arg0, arg1) {
+const result = size.fileFinishedImporting("modules/user_profile/hooks/useCanDM.tsx");
+
+export default function useCanDM(arg0, arg1) {
   let closure_0;
   let closure_1;
   _require = arg0;
@@ -179,11 +57,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanDM(a
     }
     return tmp;
   });
-});
-const result = size.fileFinishedImporting("modules/user_profile/hooks/useCanDM.tsx");
-
-export default tmp2;
-export const canDm = function canDm(userId, guildId) {
+};
+export function canDm(userId, guildId) {
   let isLurkingResult = null != guildId;
   const id = AuthenticationStore.getId();
   if (isLurkingResult) {
@@ -210,4 +85,4 @@ export const canDm = function canDm(userId, guildId) {
     tmp8 = setting;
   }
   return tmp8;
-};
+}

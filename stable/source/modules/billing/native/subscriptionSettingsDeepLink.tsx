@@ -1,16 +1,16 @@
-// Module ID: 15268
-// Function ID: 15269
+// Module ID: 15808
+// Function ID: 15809
 // Name: subscriptionSettingsDeepLink
-// Dependencies: [5, 2058, 1087, 7522, 15269, 5242, 1128, 1267, 6495, 2]
+// Dependencies: [5, 2052, 1072, 7563, 15809, 5258, 1113, 1252, 6535, 2]
 // Exports: openSubscriptionSettingsFromDeepLink
 
-// Module 15268 (subscriptionSettingsDeepLink)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import actions_BillingActionCreators from "actions/BillingActionCreators" /* 6495 */;
-import openUserSettings from "openUserSettings" /* 7522 */;
+// Module 15808 (subscriptionSettingsDeepLink)
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import actions_BillingActionCreators from "actions/BillingActionCreators" /* 6535 */;
+import openUserSettings from "openUserSettings" /* 7563 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SubscriptionStore from "SubscriptionStore" /* 2058 */;
-import Constants from "Constants" /* 1087 */;
+import SubscriptionStore from "SubscriptionStore" /* 2052 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5, closure_0;
@@ -80,7 +80,7 @@ let obj = function _openSubscriptionSettingsFromDeepLink() {
         let obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -114,7 +114,7 @@ let obj = function _openSubscriptionSettingsFromDeepLink() {
           closure_130_11();
           closure_130_8();
           c5 = 3;
-          return { value: "IconComponent", done: "+352" };
+          return { value: "HermesInternal", done: null };
         } else if (arg0 === 1) {
           c5 = 3;
           throw value;
@@ -142,7 +142,7 @@ let obj = function _openSubscriptionSettingsFromDeepLink() {
             showSubscriptionPicker();
           }
           c5 = 3;
-          return { value: "IconComponent", done: "+352" };
+          return { value: "HermesInternal", done: null };
         }
         const tmp28 = hasGuild;
         if (tmp28) {
@@ -168,6 +168,6 @@ let obj = function _openSubscriptionSettingsFromDeepLink() {
 let c7 = "subscription-settings-deep-link";
 let result = size.fileFinishedImporting("modules/billing/native/subscriptionSettingsDeepLink.tsx");
 
-export const openSubscriptionSettingsFromDeepLink = function openSubscriptionSettingsFromDeepLink() {
+export function openSubscriptionSettingsFromDeepLink() {
   return obj(...arguments);
-};
+}

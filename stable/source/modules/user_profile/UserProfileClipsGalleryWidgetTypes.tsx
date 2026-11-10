@@ -1,11 +1,11 @@
-// Module ID: 7743
-// Function ID: 7744
+// Module ID: 7780
+// Function ID: 7781
 // Name: UserProfileClipsGalleryWidgetTypes
-// Dependencies: [7736, 1357, 2]
+// Dependencies: [7773, 1342, 2]
 
-// Module 7743 (UserProfileClipsGalleryWidgetTypes)
-import _modDef1357 from "module_1357" /* 1357 */;
-import WidgetType from "WidgetType" /* 7736 */;
+// Module 7780 (UserProfileClipsGalleryWidgetTypes)
+import _modDef1342 from "module_1342" /* 1342 */;
+import WidgetType from "WidgetType" /* 7773 */;
 import size from "module_2" /* 2 */;
 
 function isUploadedWidgetClip(status) {
@@ -13,7 +13,7 @@ function isUploadedWidgetClip(status) {
 }
 function convertClip(gameId) {
   let obj6;
-  const obj = { game_id: gameId.gameId, title: gameId.title, tags: gameId.tags };
+  const obj = { game_id: gameId.gameId, title: gameId.title, tags: gameId.tags, clip_events_timeline: gameId.clipEventsTimeline };
   if ("saved" === gameId.status) {
     const obj5 = {};
     const merged = Object.assign(obj);
@@ -68,7 +68,7 @@ class ClipsGalleryWidget {
     let tmp = getUploadedClips instanceof ClipsGalleryWidget;
     if (tmp) {
       const self = this;
-      const tmp4 = _modDef1357;
+      const tmp4 = _modDef1342;
       const uploadedClips = this.getUploadedClips();
       tmp = tmp4(uploadedClips, getUploadedClips.getUploadedClips());
     }

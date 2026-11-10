@@ -1,16 +1,16 @@
-// Module ID: 9485
-// Function ID: 9486
+// Module ID: 9556
+// Function ID: 9557
 // Name: VirtualCurrencyActionCreators
-// Dependencies: [5, 6856, 1087, 3, 584, 1297, 6406, 9486, 1257, 2]
+// Dependencies: [5, 6896, 1072, 3, 572, 1282, 6446, 9557, 1242, 2]
 // Exports: fetchVirtualCurrencyTotalRedeemed, redeemVirtualCurrencyForSKU, setBalancePillOverlay
 
-// Module 9485 (VirtualCurrencyActionCreators)
+// Module 9556 (VirtualCurrencyActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1087 */;
-import HTTPUtils from "HTTPUtils" /* 1297 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import Constants from "Constants" /* 1072 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SKUStore from "SKUStore" /* 6856 */;
+import SKUStore from "SKUStore" /* 6896 */;
 import size from "module_2" /* 2 */;
 
 let applicationId, checkout_session_id, closure_2, skuId;
@@ -42,7 +42,7 @@ let obj = function _fetchVirtualCurrencyBalance() {
     const obj7 = { type: "VIRTUAL_CURRENCY_BALANCE_FETCH_FAIL", error: billingError };
     const obj5 = closure_129_1(closure_129_2[4]);
     obj5.dispatch(obj7);
-    closure_0 = await "IconComponent";
+    closure_0 = await "HermesInternal";
     const balance = closure_0.body.balance;
     const obj9 = { type: "VIRTUAL_CURRENCY_BALANCE_FETCH_SUCCESS", balance };
     obj = closure_129_1(closure_129_2[4]);
@@ -75,7 +75,7 @@ obj = function _fetchVirtualCurrencyTotalRedeemed() {
     const obj7 = { type: "VIRTUAL_CURRENCY_TOTAL_REDEEMED_FETCH_FAIL", error: billingError };
     const obj5 = closure_129_1(closure_129_2[4]);
     obj5.dispatch(obj7);
-    closure_0 = await "IconComponent";
+    closure_0 = await "HermesInternal";
     const total_redeemed = closure_0.body.total_redeemed;
     const obj9 = { type: "VIRTUAL_CURRENCY_TOTAL_REDEEMED_FETCH_SUCCESS", totalRedeemed: total_redeemed };
     obj = closure_129_1(closure_129_2[4]);
@@ -104,7 +104,7 @@ obj = function _redeemVirtualCurrencyForSKU() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -143,7 +143,7 @@ obj = function _redeemVirtualCurrencyForSKU() {
               billingError = undefined;
               c5 = 1;
               c6 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "flexDirection", done: true };
             }
           } else if (1 === c5) {
             if (arg0 === 1) {
@@ -205,7 +205,7 @@ obj = function _redeemVirtualCurrencyForSKU() {
               tmp62(billingError);
             }
             c6 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "HermesInternal", done: null };
           } else if (arg0 === 1) {
             c6 = 3;
             throw value;
@@ -266,14 +266,14 @@ const tmp2 = new LoggerDefault("VirtualCurrencyActionCreators");
 let result = size.fileFinishedImporting("modules/virtual_currency/VirtualCurrencyActionCreators.tsx");
 
 export { fetchVirtualCurrencyBalance };
-export const fetchVirtualCurrencyTotalRedeemed = function fetchVirtualCurrencyTotalRedeemed() {
+export function fetchVirtualCurrencyTotalRedeemed() {
   return obj(...arguments);
-};
-export const redeemVirtualCurrencyForSKU = function redeemVirtualCurrencyForSKU() {
+}
+export function redeemVirtualCurrencyForSKU() {
   return obj(...arguments);
-};
-export const setBalancePillOverlay = function setBalancePillOverlay(balancePillOverlay) {
+}
+export function setBalancePillOverlay(balancePillOverlay) {
   obj = DispatcherDefault;
   const obj2 = { type: "VIRTUAL_CURRENCY_SET_BALANCE_PILL_OVERLAY", balancePillOverlay };
   return obj.dispatch(obj2);
-};
+}

@@ -1,47 +1,19 @@
-// Module ID: 8468
-// Function ID: 8469
+// Module ID: 8533
+// Function ID: 8534
 // Name: ReverseTrialUtils
-// Dependencies: [1392, 558, 576, 504, 2]
-// Exports: maybeShowReverseTrialFollowupUpsellModal, maybeShowReverseTrialInitialUpsellModal, useReverseTrialDaysRemaining
+// Dependencies: [1383, 504, 2]
+// Exports: maybeShowReverseTrialFollowupUpsellModal, maybeShowReverseTrialInitialUpsellModal, useIsInReverseTrial, useReverseTrialDaysRemaining
 
-// Module 8468 (ReverseTrialUtils)
-import react from "react" /* 576 */;
-import UserStore from "UserStore" /* 1392 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 8533 (ReverseTrialUtils)
+import get_initialized from "get initialized" /* 504 */;
+import UserStore from "UserStore" /* 1383 */;
 import size from "module_2" /* 2 */;
 
 let currentUser;
 
-let tmp;
-const get_initialized = tmp(504);
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsInReverseTrial() {
-  let tmp4;
-  let tmp5;
-  const obj = react;
-  const cResult = obj.c(2);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [UserStore];
-    const fn = function n() {
-      currentUser = currentUser.getCurrentUser();
-      let flag;
-      if (currentUser != null) {
-        flag = currentUser.isOnReverseTrial();
-      }
-      if (flag == null) {
-        flag = false;
-      }
-      return flag;
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  const tmpResult = get_initialized;
-  return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (function useIsInReverseTrial() {
+const result = size.fileFinishedImporting("modules/premium/ReverseTrialUtils.native.tsx");
+
+export function useIsInReverseTrial() {
   const items = [UserStore];
   const obj = get_initialized;
   return obj.useStateFromStores(items, () => {
@@ -55,10 +27,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsInRev
     }
     return flag;
   });
-});
-const result = size.fileFinishedImporting("modules/premium/ReverseTrialUtils.native.tsx");
-
-export const useIsInReverseTrial = tmp2;
+}
 export function useReverseTrialDaysRemaining() {
   return 0;
 }

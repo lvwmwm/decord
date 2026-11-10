@@ -1,25 +1,25 @@
-// Module ID: 18770
-// Function ID: 18771
+// Module ID: 19382
+// Function ID: 19383
 // Name: AcceptInviteManager
-// Dependencies: [502, 4855, 4915, 4877, 5732, 4935, 7776, 1087, 7840, 1114, 5242, 6704, 18771, 2002, 7246, 18772, 9374, 2]
+// Dependencies: [502, 4863, 4926, 4885, 5749, 4946, 7813, 1072, 7878, 1099, 5258, 6744, 19383, 1994, 7287, 19384, 9444, 2]
 
-// Module 18770 (AcceptInviteManager)
-import router_utils from "router_utils" /* 1114 */;
-import asyncRequire from "asyncRequire" /* 2002 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5242 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6704 */;
-import AcceptInviteConstants from "AcceptInviteConstants" /* 7776 */;
-import InviteTypeUtils from "InviteTypeUtils" /* 7840 */;
-import DisplayedInviteActionCreators from "DisplayedInviteActionCreators" /* 9374 */;
-import FriendInviteUtils from "FriendInviteUtils" /* 18772 */;
+// Module 19382 (AcceptInviteManager)
+import router_utils from "router_utils" /* 1099 */;
+import asyncRequire from "asyncRequire" /* 1994 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6744 */;
+import AcceptInviteConstants from "AcceptInviteConstants" /* 7813 */;
+import InviteTypeUtils from "InviteTypeUtils" /* 7878 */;
+import DisplayedInviteActionCreators from "DisplayedInviteActionCreators" /* 9444 */;
+import FriendInviteUtils from "FriendInviteUtils" /* 19384 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4855 */;
-import GuildMemberStore from "GuildMemberStore" /* 4915 */;
-import GuildStore from "GuildStore" /* 4877 */;
-import InviteStore from "InviteStore" /* 5732 */;
-import PermissionStore from "PermissionStore" /* 4935 */;
-import Constants from "Constants" /* 1087 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7246 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import GuildMemberStore from "GuildMemberStore" /* 4926 */;
+import GuildStore from "GuildStore" /* 4885 */;
+import InviteStore from "InviteStore" /* 5749 */;
+import PermissionStore from "PermissionStore" /* 4946 */;
+import Constants from "Constants" /* 1072 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7287 */;
 import size from "module_2" /* 2 */;
 
 let c10;
@@ -92,7 +92,7 @@ class AcceptInviteManager extends AutomaticLifecycleManager {
                 }
                 const obj3 = { location: str };
                 acceptFriendInvite(invite, obj3);
-                const tmp32Result = tmp32(9374);
+                const tmp32Result = tmp32(9444);
                 tmp32Result.clearDisplayedInvite();
                 flag = false;
               }
@@ -136,7 +136,7 @@ class AcceptInviteManager extends AutomaticLifecycleManager {
                     let flag3 = PermissionStore.can(unpackModuleId.VIEW_CHANNEL, ChannelStore.getChannel(target_channel_id));
                     if (flag3) {
                       const target_message_id = invite.target_message_id;
-                      const transitionTo = tmp38(1114).transitionTo;
+                      const transitionTo = tmp38(1099).transitionTo;
                       const CHANNEL = constants2.CHANNEL;
                       router_utils;
                       transitionTo(CHANNEL(id, target_channel_id, target_message_id), { navigationReplace: true, openChannel: true });
@@ -158,7 +158,7 @@ class AcceptInviteManager extends AutomaticLifecycleManager {
             obj.hideActionSheet();
             const obj5 = { code: tmp, isRegistration: _isRegistration, deeplinkAttemptId, inviteInstanceId };
             const obj2 = ModalActionCreatorsDefault;
-            obj2.pushLazy(asyncRequire(18771, dependencyMap.paths), obj5, ACCEPT_INVITE_MODAL_KEY);
+            obj2.pushLazy(asyncRequire(19383, dependencyMap.paths), obj5, ACCEPT_INVITE_MODAL_KEY);
             flag = false;
           }
         }

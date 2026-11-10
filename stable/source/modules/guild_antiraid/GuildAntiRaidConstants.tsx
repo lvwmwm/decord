@@ -1,13 +1,13 @@
-// Module ID: 8418
-// Function ID: 8419
+// Module ID: 8483
+// Function ID: 8484
 // Name: GuildAntiRaidConstants
-// Dependencies: [1098, 1128, 1099, 2]
+// Dependencies: [1083, 1113, 1084, 2]
 // Exports: getTimeframes
 
-// Module 8418 (GuildAntiRaidConstants)
-import Constants from "Constants" /* 1098 */;
-import intl7 from "intl" /* 1128 */;
-import BigFlagUtils from "BigFlagUtils" /* 1099 */;
+// Module 8483 (GuildAntiRaidConstants)
+import Constants from "Constants" /* 1083 */;
+import intl7 from "intl" /* 1113 */;
+import BigFlagUtils from "BigFlagUtils" /* 1084 */;
 import size from "module_2" /* 2 */;
 
 const Permissions = Constants.Permissions;

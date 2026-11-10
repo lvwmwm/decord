@@ -1,10 +1,10 @@
 // Module ID: 18620
 // Function ID: 18621
 // Name: AssetRegistry
-// Dependencies: [1134]
+// Dependencies: [1119]
 
 // Module 18620 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1134 */;
+import AssetRegistry from "AssetRegistry" /* 1119 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/main_tabs_v2/native/sidebar/images", width: 24, height: 24, scales: [2, 3, 4], hash: "5be7f14768f9acc824d9e93779c75d9c", name: "icon-call", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/guild_role_subscriptions/native/images", width: 24, height: 24, scales: [2, 3], hash: "e831387e9387034c87c9b5bc784cf6eb", name: "partner_icon", type: "png" });

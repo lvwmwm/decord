@@ -1,23 +1,23 @@
-// Module ID: 8413
-// Function ID: 8414
+// Module ID: 8478
+// Function ID: 8479
 // Name: NewThreadSystemMessage
-// Dependencies: [4855, 4945, 1392, 8350, 1128, 8352, 5636, 8354, 2]
+// Dependencies: [4863, 4956, 1383, 8418, 1113, 8420, 5652, 8422, 2]
 // Exports: createNewThreadSystemMessage
 
-// Module 8413 (NewThreadSystemMessage)
-import useChannelName from "useChannelName" /* 5636 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8350 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8352 */;
-import ChannelStore from "ChannelStore" /* 4855 */;
-import RelationshipStore from "RelationshipStore" /* 4945 */;
-import UserStore from "UserStore" /* 1392 */;
+// Module 8478 (NewThreadSystemMessage)
+import useChannelName from "useChannelName" /* 5652 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8418 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8420 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import RelationshipStore from "RelationshipStore" /* 4956 */;
+import UserStore from "UserStore" /* 1383 */;
 import size from "module_2" /* 2 */;
 
 let tmp7;
-const createCommonMessageDefault = tmp7(8354);
+const createCommonMessageDefault = tmp7(8422);
 const result = size.fileFinishedImporting("modules/messages/native/renderer/system_messages/NewThreadSystemMessage.tsx");
 
-export const createNewThreadSystemMessage = function createNewThreadSystemMessage(message) {
+export function createNewThreadSystemMessage(message) {
   let channel_id1;
   let content;
   message = message.message;
@@ -31,10 +31,10 @@ export const createNewThreadSystemMessage = function createNewThreadSystemMessag
     channel_id = messageReference.channel_id;
   }
   const channel = getChannel(channel_id);
-  const intl = tmp(1128).intl;
+  const intl = tmp(1113).intl;
   const formatToParts = intl.formatToParts;
   const obj2 = { actorName: messageAuthorWithProcessedColor.nick, actorHook: formatUsernameOnClickDefault({ message, author: messageAuthorWithProcessedColor, roleStyle }), threadName: content, threadOnClick: { action: "bindOpenThreadChannel", threadId: channel_id1, medium: true } };
-  const veX9jq = tmp(1128).t.veX9jq;
+  const veX9jq = tmp(1113).t.veX9jq;
   if (null != channel) {
     const tmpResult = useChannelName;
     content = tmpResult.computeChannelName(channel, UserStore, RelationshipStore);
@@ -49,4 +49,4 @@ export const createNewThreadSystemMessage = function createNewThreadSystemMessag
   const obj3 = { content: formatToParts(veX9jq, obj2) };
   const merged = Object.assign(createCommonMessageDefault(message));
   return obj3;
-};
+}

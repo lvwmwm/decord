@@ -1,154 +1,30 @@
-// Module ID: 18844
-// Function ID: 18845
+// Module ID: 19464
+// Function ID: 19465
 // Name: InAppReportsFeedbackActionSheet
-// Dependencies: [19, 1087, 10077, 21, 558, 576, 18845, 1267, 18846, 10080, 5694, 18847, 1128, 10098, 2]
+// Dependencies: [19, 1072, 10158, 21, 19465, 19466, 10179, 1113, 1252, 19467, 10161, 5711, 2]
+// Exports: default
 
-// Module 18844 (InAppReportsFeedbackActionSheet)
+// Module 19464 (InAppReportsFeedbackActionSheet)
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 1087 */;
-import intl4 from "intl" /* 1128 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import ToastUtils from "ToastUtils" /* 5694 */;
-import Constants2 from "Constants" /* 10077 */;
-import FeedbackUtils from "FeedbackUtils" /* 10080 */;
-import FeedbackActionSheetDefault from "FeedbackActionSheet" /* 10098 */;
-import getInAppReportsFeedbackOptionsDefault from "getInAppReportsFeedbackOptions" /* 18845 */;
-import trackInAppReportsFeedbackDefault from "trackInAppReportsFeedback" /* 18846 */;
-import improperGetEnglishIntlMessageText from "improperGetEnglishIntlMessageText" /* 18847 */;
+import Constants from "Constants" /* 1072 */;
+import intl4 from "intl" /* 1113 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import ToastUtils from "ToastUtils" /* 5711 */;
+import Constants2 from "Constants" /* 10158 */;
+import FeedbackUtils from "FeedbackUtils" /* 10161 */;
+import FeedbackActionSheetDefault from "FeedbackActionSheet" /* 10179 */;
+import getInAppReportsFeedbackOptionsDefault from "getInAppReportsFeedbackOptions" /* 19465 */;
+import improperGetEnglishIntlMessageText from "improperGetEnglishIntlMessageText" /* 19466 */;
+import trackInAppReportsFeedbackDefault from "trackInAppReportsFeedback" /* 19467 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;
 const FeedbackType = Constants2.FeedbackType;
 const jsx = Fragment.jsx;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function InAppReportsFeedbackActionSheet(reportId) {
-  let first;
-  let obj = reportId(576);
-  const cResult = obj.c(15);
-  reportId = reportId.reportId;
-  const reportType = reportId.reportType;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp6 = reportType(18845)();
-    cResult[0] = tmp6;
-    first = tmp6;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] === reportId) {
-    let tmp7;
-    if (cResult[2] === reportType) {
-      tmp7 = cResult[3];
-    }
-    if (cResult[4] === reportId) {
-      let tmp8;
-      let tmp9;
-      let tmp11;
-      let tmp14;
-      let tmp13;
-      let tmp17;
-      if (cResult[5] === reportType) {
-        tmp8 = cResult[6];
-      }
-      const _Symbol = Symbol;
-      if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-        const tmpResult = reportId(18847);
-        const result = tmpResult.improperGetEnglishIntlMessageText("CALL_FEEDBACK_OPTION_OTHER");
-        cResult[7] = result;
-        tmp9 = result;
-      } else {
-        tmp9 = cResult[7];
-      }
-      const _Symbol2 = Symbol;
-      if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl = tmp(1128).intl;
-        const stringResult = intl.string(reportId(1128).t.MP5lDj);
-        cResult[8] = stringResult;
-        tmp11 = stringResult;
-      } else {
-        tmp11 = cResult[8];
-      }
-      const _Symbol3 = Symbol;
-      if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl2 = tmp(1128).intl;
-        const stringResult1 = intl2.string(reportId(1128).t["7Ct0Dj"]);
-        const intl3 = tmp(1128).intl;
-        const stringResult2 = intl3.string(reportId(1128).t.FJmoxF);
-        cResult[9] = stringResult1;
-        cResult[10] = stringResult2;
-        tmp14 = stringResult2;
-        tmp13 = stringResult1;
-      } else {
-        tmp13 = cResult[9];
-        tmp14 = cResult[10];
-      }
-      const _Symbol4 = Symbol;
-      if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-        const items = [tmp9];
-        cResult[11] = items;
-        tmp17 = items;
-      } else {
-        tmp17 = cResult[11];
-      }
-      if (cResult[12] === tmp7) {
-        let tmp18;
-        if (cResult[13] === tmp8) {
-          tmp18 = cResult[14];
-        }
-        return tmp18;
-      }
-      const tmp21 = jsx(reportType(10098), { headerLabel: tmp11, showHeaderCloseButton: true, hideDontShowAgainCheckbox: true, ratingsBodyLabel: tmp13, reasonsHeaderLabel: tmp14, reasons: first, feedbackReasons: tmp17, otherKey: tmp9, trackOpen: tmp7, trackReport: tmp8 });
-      cResult[12] = tmp7;
-      cResult[13] = tmp8;
-      cResult[14] = tmp21;
-      tmp18 = tmp21;
-    }
-    function trackReport(arg0) {
-      let dontShowAgain;
-      let feedback;
-      let flag;
-      let rating;
-      let reason;
-      ({ rating, reason, feedback, dontShowAgain } = arg0);
-      let value = null;
-      if (null != reason) {
-        value = reason.value;
-      }
-      const obj = { rating, problem: value, feedback, reportId, reportType, dontShowAgain: flag };
-      const tmp3 = trackInAppReportsFeedbackDefault;
-      if (feedback == null) {
-        feedback = "";
-      }
-      flag = dontShowAgain;
-      if (dontShowAgain == null) {
-        flag = false;
-      }
-      tmp3(obj);
-      if (dontShowAgain) {
-        const obj3 = { feedbackType: FeedbackType.IN_APP_REPORTS, location: "InAppReportsFeedbackActionSheet" };
-        const obj2 = FeedbackUtils;
-        obj2.processOptOut(obj3);
-      }
-      if (null != rating) {
-        const obj4 = ToastUtils;
-        obj4.presentFeedbackSent();
-      }
-    }
-    cResult[4] = reportId;
-    cResult[5] = reportType;
-    cResult[6] = trackReport;
-    tmp8 = trackReport;
-  }
-  function trackOpen() {
-    const obj = AnalyticsUtilsDefault;
-    const obj2 = { report_id: reportId, report_type: reportType };
-    obj.track(AnalyticEvents.IAR_FEEDBACK_MODAL_VIEWED, obj2);
-  }
-  cResult[1] = reportId;
-  cResult[2] = reportType;
-  cResult[3] = trackOpen;
-  tmp7 = trackOpen;
-}) : (function InAppReportsFeedbackActionSheet(arg0) {
+let result = size.fileFinishedImporting("modules/in_app_reports/native/components/feedback/InAppReportsFeedbackActionSheet.tsx");
+
+export default function InAppReportsFeedbackActionSheet(arg0) {
   ({ reportId: require, reportType: importDefault } = arg0);
   const tmp = getInAppReportsFeedbackOptionsDefault();
   let obj = improperGetEnglishIntlMessageText;
@@ -193,7 +69,4 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function InAppReports
       obj4.presentFeedbackSent();
     }
   }} />;
-});
-let result = size.fileFinishedImporting("modules/in_app_reports/native/components/feedback/InAppReportsFeedbackActionSheet.tsx");
-
-export default tmp3;
+};

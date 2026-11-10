@@ -1,21 +1,18 @@
-// Module ID: 16906
-// Function ID: 16907
+// Module ID: 17504
+// Function ID: 17505
 // Name: SummaryReminderNotificationSetting
-// Dependencies: [8364, 558, 16907, 11240, 1128, 4831, 16908, 2]
+// Dependencies: [8432, 17505, 11540, 1113, 4839, 17506, 2]
 
-// Module 16906 (SummaryReminderNotificationSetting)
-import intl2 from "intl" /* 1128 */;
-import UserSettings from "UserSettings" /* 4831 */;
-import SettingsConstants from "SettingsConstants" /* 8364 */;
-import SummaryReminderNotificationExperiment from "SummaryReminderNotificationExperiment" /* 16907 */;
-import SummaryReminderNotificationUtils from "SummaryReminderNotificationUtils" /* 16908 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11240 */;
+// Module 17504 (SummaryReminderNotificationSetting)
+import intl2 from "intl" /* 1113 */;
+import UserSettings from "UserSettings" /* 4839 */;
+import SettingsConstants from "SettingsConstants" /* 8432 */;
+import SummaryReminderNotificationExperiment from "SummaryReminderNotificationExperiment" /* 17505 */;
+import SummaryReminderNotificationUtils from "SummaryReminderNotificationUtils" /* 17506 */;
+import SettingBuilders from "SettingBuilders" /* 11540 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
-let ReactCompilerGating = ReactCompilerGating_mod;
-ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
 let obj = {
   useTitle() {
     const intl = intl2.intl;
@@ -34,6 +31,6 @@ let obj = {
   }
 };
 const toggle = SettingBuilders.createToggle(obj);
-const result1 = size.fileFinishedImporting("modules/user_settings/defs/native/SummaryReminderNotificationSetting.tsx");
+const result = size.fileFinishedImporting("modules/user_settings/defs/native/SummaryReminderNotificationSetting.tsx");
 
 export default toggle;

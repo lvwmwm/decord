@@ -1,11 +1,11 @@
-// Module ID: 18886
-// Function ID: 18887
+// Module ID: 19506
+// Function ID: 19507
 // Name: IOSAppTransactionIdExperiment
-// Dependencies: [1455, 2]
+// Dependencies: [1447, 2]
 // Exports: isIOSAppTransactionIdTrackingEnabled
 
-// Module 18886 (IOSAppTransactionIdExperiment)
-import ApexExperiment from "ApexExperiment" /* 1455 */;
+// Module 19506 (IOSAppTransactionIdExperiment)
+import ApexExperiment from "ApexExperiment" /* 1447 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -15,7 +15,7 @@ obj2[1] = { enabled: true };
 const config = ApexExperiment.createApexExperiment(obj);
 const result = size.fileFinishedImporting("modules/user_identifiers/native/IOSAppTransactionIdExperiment.tsx");
 
-export const isIOSAppTransactionIdTrackingEnabled = function isIOSAppTransactionIdTrackingEnabled(IOSUserIdentifiersManager) {
+export function isIOSAppTransactionIdTrackingEnabled(IOSUserIdentifiersManager) {
   const obj = { location: IOSUserIdentifiersManager };
   return config.getConfig(obj).enabled;
-};
+}

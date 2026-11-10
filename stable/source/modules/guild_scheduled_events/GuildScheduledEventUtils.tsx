@@ -1,13 +1,13 @@
-// Module ID: 9056
-// Function ID: 9057
+// Module ID: 9092
+// Function ID: 9093
 // Name: GuildScheduledEventUtils
-// Dependencies: [4861, 2049, 11, 2]
+// Dependencies: [4869, 2042, 11, 2]
 // Exports: getNextShownUpcomingEventNoticeType
 
-// Module 9056 (GuildScheduledEventUtils)
+// Module 9092 (GuildScheduledEventUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import _modDef2049 from "module_2049" /* 2049 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4861 */;
+import _modDef2042 from "module_2042" /* 2042 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4869 */;
 import size from "module_2" /* 2 */;
 
 let c2;
@@ -17,18 +17,18 @@ let hasOwnProperty;
 ({ UpcomingGuildEventNoticeTypes: c2, NEW_EVENT_WINDOW_MILLISECONDS: c3, EVENT_STARTING_SOON_WINDOW_MILLISECONDS: closure_4, ACKED_RECENTLY_WINDOW_DAYS: hasOwnProperty } = GuildScheduledEventsConstants);
 const result = size.fileFinishedImporting("modules/guild_scheduled_events/GuildScheduledEventUtils.tsx");
 
-export const getNextShownUpcomingEventNoticeType = function getNextShownUpcomingEventNoticeType(guildScheduledEvent, arg1, arg2, flag) {
-  const obj = _modDef2049();
+export function getNextShownUpcomingEventNoticeType(guildScheduledEvent, arg1, arg2, flag) {
+  const obj = _modDef2042();
   const date = new Date(guildScheduledEvent.scheduled_start_time);
   const time = date.getTime();
   const diff = time - React3;
   if (obj.isBetween(diff, time)) {
     if (null != arg1) {
-      const obj4 = _modDef2049(arg1);
+      const obj4 = _modDef2042(arg1);
       const isBetween = obj4.isBetween;
       let EVENT_STARTING_SOON;
       const isBetweenResult = obj4.isBetween(diff, time);
-      const obj5 = _modDef2049(time);
+      const obj5 = _modDef2042(time);
       if (!isBetweenResult) {
         if (!isBetween(obj5.subtract(hasOwnProperty, "days"), time)) {
           EVENT_STARTING_SOON = constants.EVENT_STARTING_SOON;
@@ -54,4 +54,4 @@ export const getNextShownUpcomingEventNoticeType = function getNextShownUpcoming
       }
     }
   }
-};
+}

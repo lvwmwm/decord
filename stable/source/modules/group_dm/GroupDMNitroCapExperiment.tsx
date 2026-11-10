@@ -1,11 +1,11 @@
-// Module ID: 11327
-// Function ID: 11328
+// Module ID: 11630
+// Function ID: 11631
 // Name: GroupDMNitroCapExperiment
-// Dependencies: [1456, 2]
+// Dependencies: [1448, 2]
 // Exports: getGroupDMNitroCapConfig
 
-// Module 11327 (GroupDMNitroCapExperiment)
-import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1456 */;
+// Module 11630 (GroupDMNitroCapExperiment)
+import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1448 */;
 import size from "module_2" /* 2 */;
 
 let obj = { kind: "user", name: "2026-06-nitro-gdm-cap-increase", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } };
@@ -14,7 +14,7 @@ const config = tmp2;
 const result = size.fileFinishedImporting("modules/group_dm/GroupDMNitroCapExperiment.tsx");
 
 export default tmp2;
-export const getGroupDMNitroCapConfig = function getGroupDMNitroCapConfig(getGroupDMRecipientLimit) {
+export function getGroupDMNitroCapConfig(getGroupDMRecipientLimit) {
   const obj = { location: getGroupDMRecipientLimit };
   return config.getConfig(obj);
-};
+}

@@ -1,25 +1,25 @@
-// Module ID: 11495
-// Function ID: 11496
+// Module ID: 11798
+// Function ID: 11799
 // Name: activityWebViewController
-// Dependencies: [4854, 11496, 11497, 6809, 11519, 10803, 5941, 1128, 2]
+// Dependencies: [4862, 11799, 11800, 6848, 11820, 10931, 5959, 1113, 2]
 // Exports: getOrCreateActivityWebViewController, releaseActivityWebView
 
-// Module 11495 (activityWebViewController)
-import intl3 from "intl" /* 1128 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5941 */;
-import EmbeddedAppTypes from "EmbeddedAppTypes" /* 6809 */;
-import leaveEmbeddedActivity from "leaveEmbeddedActivity" /* 10803 */;
-import makeIframeIdDefault from "makeIframeId" /* 11496 */;
-import createWebViewControllerDefault from "createWebViewController" /* 11497 */;
-import makeShellBridgeSecretDefault from "makeShellBridgeSecret" /* 11519 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4854 */;
+// Module 11798 (activityWebViewController)
+import intl3 from "intl" /* 1113 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5959 */;
+import EmbeddedAppTypes from "EmbeddedAppTypes" /* 6848 */;
+import leaveEmbeddedActivity from "leaveEmbeddedActivity" /* 10931 */;
+import makeIframeIdDefault from "makeIframeId" /* 11799 */;
+import createWebViewControllerDefault from "createWebViewController" /* 11800 */;
+import makeShellBridgeSecretDefault from "makeShellBridgeSecret" /* 11820 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4862 */;
 import size from "module_2" /* 2 */;
 
 let _undefined;
 
 let result = size.fileFinishedImporting("modules/activities/native/activityWebViewController.tsx");
 
-export const getOrCreateActivityWebViewController = function getOrCreateActivityWebViewController(applicationId) {
+export function getOrCreateActivityWebViewController(applicationId) {
   let obj4;
   let tmp7Result;
   if (null != _undefined) {
@@ -81,8 +81,8 @@ export const getOrCreateActivityWebViewController = function getOrCreateActivity
     _undefined = tmp7Result;
     return obj2;
   }
-};
-export const releaseActivityWebView = function releaseActivityWebView() {
+}
+export function releaseActivityWebView() {
   let iframeId;
   if (_undefined != null) {
     iframeId = _undefined.iframeId;
@@ -93,4 +93,4 @@ export const releaseActivityWebView = function releaseActivityWebView() {
   }
   _undefined = undefined;
   return iframeId;
-};
+}

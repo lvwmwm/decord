@@ -1,15 +1,15 @@
-// Module ID: 9696
-// Function ID: 9697
+// Module ID: 9777
+// Function ID: 9778
 // Name: ThreadAutoArchive
-// Dependencies: [1127, 1104, 1128, 606, 2049, 2]
+// Dependencies: [1112, 1089, 1113, 594, 2042, 2]
 // Exports: getAutoArchiveDuration, getAutoArchiveDurationText
 
-// Module 9696 (ThreadAutoArchive)
-import memoizeDefault from "memoize" /* 606 */;
-import DurationsDefault from "Durations" /* 1104 */;
-import ThreadConstants from "ThreadConstants" /* 1127 */;
-import intl5 from "intl" /* 1128 */;
-import _modDef2049 from "module_2049" /* 2049 */;
+// Module 9777 (ThreadAutoArchive)
+import memoizeDefault from "memoize" /* 594 */;
+import DurationsDefault from "Durations" /* 1089 */;
+import ThreadConstants from "ThreadConstants" /* 1112 */;
+import intl5 from "intl" /* 1113 */;
+import _modDef2042 from "module_2042" /* 2042 */;
 import size from "module_2" /* 2 */;
 
 function getAutoArchiveOptions() {
@@ -42,7 +42,7 @@ const result = size.fileFinishedImporting("modules/threads/ThreadAutoArchive.tsx
 export const AUTO_ARCHIVE_OPTION_VALUES = items;
 export { getAutoArchiveOptions };
 export const getAutoArchiveDurations = tmp2;
-export const getAutoArchiveDurationText = function getAutoArchiveDurationText(arg0) {
+export function getAutoArchiveDurationText(arg0) {
   let closure_0 = arg0;
   const arr = getAutoArchiveOptions();
   const found = arr.find((value) => value.value === closure_0);
@@ -51,13 +51,13 @@ export const getAutoArchiveDurationText = function getAutoArchiveDurationText(ar
     label = found.label;
   }
   if (label == null) {
-    const obj = _modDef2049;
+    const obj = _modDef2042;
     const durationResult = obj.duration(arg0, "minutes");
     label = durationResult.humanize();
   }
   return label;
-};
-export const getAutoArchiveDuration = function getAutoArchiveDuration(channel, arg1) {
+}
+export function getAutoArchiveDuration(channel, arg1) {
   let tmp = arg1;
   if (arg1 == null) {
     let prop;
@@ -70,4 +70,4 @@ export const getAutoArchiveDuration = function getAutoArchiveDuration(channel, a
     tmp = closure_3;
   }
   return tmp;
-};
+}

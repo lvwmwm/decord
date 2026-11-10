@@ -1,11 +1,11 @@
-// Module ID: 17525
-// Function ID: 17526
+// Module ID: 18116
+// Function ID: 18117
 // Name: ActiveChannelsActionCreators
-// Dependencies: [5, 1087, 584, 1297, 6407, 2]
+// Dependencies: [5, 1072, 572, 1282, 6447, 2]
 // Exports: fetchActiveChannels
 
-// Module 17525 (ActiveChannelsActionCreators)
-import Constants from "Constants" /* 1087 */;
+// Module 18116 (ActiveChannelsActionCreators)
+import Constants from "Constants" /* 1072 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ let obj = function _fetchActiveChannels() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -53,7 +53,7 @@ let obj = function _fetchActiveChannels() {
               channels = undefined;
               c7 = 1;
               c8 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "flexDirection", done: true };
             }
           } else if (1 === c7) {
             if (arg0 === 1) {
@@ -131,6 +131,6 @@ let obj = function _fetchActiveChannels() {
 const Endpoints = Constants.Endpoints;
 const result = size.fileFinishedImporting("modules/active_channels/ActiveChannelsActionCreators.tsx");
 
-export const fetchActiveChannels = function fetchActiveChannels() {
+export function fetchActiveChannels() {
   return obj(...arguments);
-};
+}

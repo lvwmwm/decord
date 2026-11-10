@@ -1,12 +1,12 @@
-// Module ID: 9864
-// Function ID: 9865
+// Module ID: 9946
+// Function ID: 9947
 // Name: TopEmojisActionCreators
-// Dependencies: [1087, 5052, 584, 1297, 2]
+// Dependencies: [1072, 5063, 572, 1282, 2]
 // Exports: fetchTopEmojis, updateNewlyAddedEmojiSeenAcknowledged, updateNewlyAddedLastSeen
 
-// Module 9864 (TopEmojisActionCreators)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1087 */;
+// Module 9946 (TopEmojisActionCreators)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -15,7 +15,7 @@ let _require;
 const Endpoints = Constants.Endpoints;
 const result = size.fileFinishedImporting("modules/emojis/top_emojis/TopEmojisActionCreators.tsx");
 
-export const fetchTopEmojis = function fetchTopEmojis(guildId) {
+export function fetchTopEmojis(guildId) {
   _require = guildId;
   const tmp = _require;
   let obj = require("RouteUtils");
@@ -23,7 +23,7 @@ export const fetchTopEmojis = function fetchTopEmojis(guildId) {
     let obj2 = DispatcherDefault;
     const obj3 = { type: "TOP_EMOJIS_FETCH", guildId };
     obj2.dispatch(obj3);
-    const HTTP = tmp(1297).HTTP;
+    const HTTP = tmp(1282).HTTP;
     const get = HTTP.get;
     const obj4 = { url: Endpoints.TOP_EMOJIS_FOR_GUILD(guildId), oldFormErrors: true, rejectWithError: true };
     const value = get(obj4);
@@ -41,8 +41,8 @@ export const fetchTopEmojis = function fetchTopEmojis(guildId) {
       return obj.dispatch(obj2);
     });
   }
-};
-export const updateNewlyAddedLastSeen = function updateNewlyAddedLastSeen(guildId, id) {
+}
+export function updateNewlyAddedLastSeen(guildId, id) {
   const obj = DispatcherDefault;
   obj.dispatch({ type: "NEWLY_ADDED_EMOJI_SEEN_UPDATED" });
   const tmp4 = null != guildId && null != id;
@@ -51,12 +51,12 @@ export const updateNewlyAddedLastSeen = function updateNewlyAddedLastSeen(guildI
     const tmpResult = DispatcherDefault;
     tmpResult.dispatch(obj2);
   }
-};
-export const updateNewlyAddedEmojiSeenAcknowledged = function updateNewlyAddedEmojiSeenAcknowledged(guildId, emojiId) {
+}
+export function updateNewlyAddedEmojiSeenAcknowledged(guildId, emojiId) {
   const tmp = null != guildId && null != emojiId;
   if (tmp) {
     const obj2 = { type: "NEWLY_ADDED_EMOJI_SEEN_ACKNOWLEDGED", guildId, emojiId };
     const obj = DispatcherDefault;
     obj.dispatch(obj2);
   }
-};
+}

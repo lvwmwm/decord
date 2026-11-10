@@ -1,178 +1,251 @@
 // Module ID: 1804
 // Function ID: 1805
-// Dependencies: [1683, 1669]
-// Exports: areDependenciesEqual, buildDependencies, buildWorkletsHash, shallowEqual, validateAnimatedStyles
+// Dependencies: [32, 19, 1653, 1758, 1687, 1678, 1681, 1680]
 
 // Module 1804
-import ReanimatedError from "ReanimatedError" /* 1669 */;
-import LayoutAnimationType from "LayoutAnimationType" /* 1683 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import module_1653_mod from "module_1653" /* 1653 */;
 
-const f89718 = (acc, __workletHash) => {
-  const str = __workletHash.__workletHash;
-  return acc + str.toString();
-};
-function isAnimated(onFrame) {
-  let someResult;
-  if (Array.isArray(onFrame)) {
-    someResult = onFrame.some(isAnimated);
-  } else {
-    someResult = typeof onFrame === "object";
-    if (typeof onFrame === "object") {
-      someResult = null !== onFrame;
-    }
-    if (someResult) {
-      let someResult1 = undefined !== onFrame.onFrame;
-      if (!someResult1) {
-        const _Object = Object;
-        const values = Object.values(onFrame);
-        someResult1 = values.some(isAnimated);
-      }
-      someResult = someResult1;
-    }
-  }
-  return someResult;
+let c3;
+let closure_4;
+({ useRef: c3, useState: closure_4 } = react);
+let module_1653 = module_1653_mod;
+module_1653.shouldBeUseWeb();
+module_1653 = module_1653_mod;
+module_1653 = module_1653.isIOS();
+if (!module_1653) {
+  const _module3 = module_1653;
+  module_1653 = _module3.isMacOS();
 }
-isAnimated.__closure = {};
-isAnimated.__workletHash = 4296700641760;
-isAnimated.__initData = { code: "function isAnimated_Pnpm_utilsTs1(prop){const isAnimated_Pnpm_utilsTs1=this._recur;if(Array.isArray(prop)){return prop.some(isAnimated_Pnpm_utilsTs1);}else if(typeof prop==='object'&&prop!==null){if(prop.onFrame!==undefined){return true;}else{return Object.values(prop).some(isAnimated_Pnpm_utilsTs1);}}return false;}" };
-function shallowEqual(arg0, arg1) {
-  const keys = Object.keys(arg0);
-  if (keys.length !== Object.keys(arg1).length) {
-    return false;
-  } else {
-    let num = 0;
-    if (0 < keys.length) {
-      while (arg0[keys[num]] === arg1[keys[num]]) {
-        num = num + 1;
-      }
-      return false;
-    }
-    return true;
-  }
-}
-shallowEqual.__closure = {};
-shallowEqual.__workletHash = 6945711106539;
-shallowEqual.__initData = { code: "function shallowEqual_Pnpm_utilsTs2(a,b){const aKeys=Object.keys(a);const bKeys=Object.keys(b);if(aKeys.length!==bKeys.length){return false;}for(let i=0;i<aKeys.length;i++){if(a[aKeys[i]]!==b[aKeys[i]]){return false;}}return true;}" };
-function validateAnimatedStyles(obj) {
-  if (typeof obj !== "object") {
-    const _HermesInternal = HermesInternal;
-    const self3 = this;
-    const self4 = this;
-    const reanimatedError = new ReanimatedError.ReanimatedError("`useAnimatedStyle` has to return an object, found " + typeof obj + " instead.");
-    throw reanimatedError;
-  } else {
-    const _Array = Array;
-    if (Array.isArray(obj)) {
-      const self = this;
-      const self2 = this;
-      const reanimatedError1 = new ReanimatedError.ReanimatedError("`useAnimatedStyle` has to return an object and cannot return static styles combined with dynamic ones. Please do merging where a component receives props.");
-      throw reanimatedError1;
-    }
-  }
-}
-validateAnimatedStyles.__closure = {};
-validateAnimatedStyles.__workletHash = 9250446401049;
-validateAnimatedStyles.__initData = { code: "function validateAnimatedStyles_Pnpm_utilsTs3(styles){if(typeof styles!=='object'){throw new ReanimatedError(\"`useAnimatedStyle` has to return an object, found \"+typeof styles+\" instead.\");}else if(Array.isArray(styles)){throw new ReanimatedError('`useAnimatedStyle` has to return an object and cannot return static styles combined with dynamic ones. Please do merging where a component receives props.');}}" };
+const __initData = { code: "function pnpm_useAnimatedRefTs1(){const{tagOrWrapper,viewName}=this.__closure;const f=function(){return tagOrWrapper.value;};if(viewName){f.viewName=viewName;}return f;}" };
 
-export const buildWorkletsHash = function buildWorkletsHash(items1) {
-  const values = Object.values(items1);
-  return values.reduce(f89718, "");
-};
-export const buildDependencies = function buildDependencies(items10, memoizedGestureCallbacks) {
-  const values = Object.values(memoizedGestureCallbacks);
-  const found = values.filter((item) => undefined !== item);
-  let tmp2 = found;
-  if (items10) {
-    const _Object = Object;
-    const push = items10.push;
-    const values2 = Object.values(found);
-    let str = "";
-    push(values2.reduce(f89718, ""));
-    tmp2 = items10;
-  }
-  return tmp2;
-};
-export const areDependenciesEqual = function areDependenciesEqual(dependencies, savedDependencies) {
-  let is;
-  if (typeof Object.is === "function") {
-    const _Object = Object;
-    is = Object.is;
-  } else {
-    is = function is(dependencies, savedDependencies) {
-      let tmp = dependencies === savedDependencies;
-      if (tmp) {
-        tmp = 0 !== dependencies || 1 / dependencies === 1 / savedDependencies;
-        const tmp2 = 0 !== dependencies || 1 / dependencies === 1 / savedDependencies;
+export const useAnimatedRef = module_1653 ? (function useAnimatedRefWeb() {
+  let fun;
+  const f82475 = (getScrollableNode) => {
+    let scrollableNode;
+    if (getScrollableNode.getScrollableNode) {
+      scrollableNode = getScrollableNode.getScrollableNode();
+    } else {
+      scrollableNode = getScrollableNode;
+      if (getScrollableNode.getNativeScrollRef) {
+        scrollableNode = getScrollableNode.getNativeScrollRef();
       }
-      if (!tmp) {
-        const _Number = Number;
-        let isNaNResult = Number.isNaN(dependencies);
-        if (isNaNResult) {
-          const _Number2 = Number;
-          isNaNResult = Number.isNaN(savedDependencies);
-        }
-        tmp = isNaNResult;
-      }
-      return tmp;
-    };
-  }
-  let flag = false;
-  if (dependencies) {
-    let tmp = savedDependencies;
-    flag = false;
-    if (savedDependencies) {
-      flag = false;
-      if (savedDependencies.length === dependencies.length) {
-        let num = 0;
-        flag = true;
-        if (0 < savedDependencies.length) {
-          while (true) {
-            let tmp2 = dependencies[num];
-            let tmp3 = savedDependencies[num];
-            if (is(tmp2, tmp3)) {
-              let sum = num + 1;
-              num = sum;
-              flag = true;
-              if (sum >= savedDependencies.length) {
-                break;
-              }
-            } else {
-              let tmp5 = require;
-              let obj = LayoutAnimationType;
-              flag = false;
-              if (!obj.isWorkletFunction(tmp2)) {
-                break;
-              } else {
-                let tmp5Result = tmp5(1683);
-                flag = false;
-                if (!tmp5Result.isWorkletFunction(tmp3)) {
-                  break;
-                } else {
-                  let closure_0 = tmp2;
-                  let closure_1 = tmp3;
-                  let flag2 = false;
-                  if (tmp2.__workletHash === tmp3.__workletHash) {
-                    let _Object2 = Object;
-                    let keys = Object.keys(tmp2.__closure);
-                    let _Object3 = Object;
-                    let tmp7 = keys.length === Object.keys(tmp3.__closure).length && keys.every((item) => item in __closure2.__closure && __closure.__closure[item] === tmp.__closure[item]);
-                    flag2 = tmp7;
-                  }
-                  flag = false;
-                  if (!flag2) {
-                    break;
-                  }
-                }
-              }
+    }
+    return scrollableNode;
+  };
+  map = new Map();
+  const current = fun(map).current;
+  let closure_2 = fun(-1);
+  const tmp2 = fun(null);
+  if (!tmp2.current) {
+    fun = function fun(map) {
+      let tag;
+      let closure_0 = map;
+      if (closure_0) {
+        ref.current = closure_0(map);
+        fun.getTag = () => {
+          const obj = first(first1[3]);
+          return obj.findNodeHandle(map);
+        };
+        fun.current = map;
+        const arr = tag;
+        if (tag.size) {
+          tag = undefined;
+          if (fun != null) {
+            const getTag = tmp3.getTag;
+            if (getTag != null) {
+              tag = getTag();
             }
-            break;
+          }
+          if (tag == null) {
+            tag = null;
+          }
+          const item = arr.forEach((fn, fn2) => {
+            if (fn != null) {
+              fn();
+            }
+            const result = current.set(fn2, fn2(tag));
+          });
+        }
+      }
+      return ref.current;
+    };
+    fun.observe = (fn) => {
+      let closure_0 = fn;
+      let tmp = fun;
+      let tag;
+      if (fun != null) {
+        const getTag = tmp.getTag;
+        if (getTag != null) {
+          tag = getTag();
+        }
+      }
+      if (tag == null) {
+        tag = null;
+      }
+      const result = current.set(fn, fn(tag));
+      return () => {
+        const value = current.get(fn);
+        const obj = current;
+        const tmp = fn;
+        if (value != null) {
+          value();
+        }
+        obj.delete(tmp);
+      };
+    };
+    fun.current = null;
+    tmp2.current = fun;
+  }
+  return tmp2.current;
+}) : (function useAnimatedRefNative() {
+  let fn;
+  const viewName = _slicedToArray(closure_4(() => {
+    let mutable = null;
+    const obj = first(first1[2]);
+    const tmp = first;
+    const tmp2 = first1;
+    if (!obj.isFabric()) {
+      mutable = null;
+      if (module_1653) {
+        const tmpResult = tmp(tmp2[4]);
+        mutable = tmpResult.makeMutable(null);
+      }
+    }
+    return mutable;
+  }), 1)[0];
+  const first1 = _slicedToArray(closure_4(() => {
+    const obj = first(first1[4]);
+    return obj.makeMutable(null);
+  }), 1)[0];
+  const f82478 = (viewConfig) => {
+    let fn;
+    const tmp = first;
+    const obj = first(first1[2]);
+    const tmp2 = first1;
+    if (obj.isFabric()) {
+      fn = tmp(tmp2[5]).getShadowNodeWrapperFromRef;
+    } else {
+      fn = (getScrollableNode) => {
+        let scrollableNode;
+        const findNodeHandle = closure_1_0(current[3]).findNodeHandle;
+        closure_1_0(current[3]);
+        if (getScrollableNode.getScrollableNode) {
+          scrollableNode = getScrollableNode.getScrollableNode();
+        } else {
+          scrollableNode = getScrollableNode;
+          if (getScrollableNode.getNativeScrollRef) {
+            scrollableNode = getScrollableNode.getNativeScrollRef();
           }
         }
-      }
+        return findNodeHandle(scrollableNode);
+      };
     }
+    current.value = fn(viewConfig);
+    const iter = current;
+    if (f82478) {
+      let str;
+      if (viewConfig != null) {
+        viewConfig = viewConfig.viewConfig;
+        if (viewConfig != null) {
+          str = viewConfig.uiViewClassName;
+        }
+      }
+      if (!str) {
+        str = "RCTView";
+      }
+      tmp3.value = str;
+    }
+    return iter.value;
+  };
+  let fun;
+  map = new Map();
+  let current = closure_3(map).current;
+  let closure_2 = closure_3(-1);
+  const tmp4 = closure_3(null);
+  if (!tmp4.current) {
+    fun = function fun(map) {
+      let tag;
+      let closure_0 = map;
+      if (closure_0) {
+        ref.current = closure_0(map);
+        fun.getTag = () => {
+          const obj = first(first1[3]);
+          return obj.findNodeHandle(map);
+        };
+        fun.current = map;
+        const arr = tag;
+        if (tag.size) {
+          tag = undefined;
+          if (fun != null) {
+            const getTag = tmp3.getTag;
+            if (getTag != null) {
+              tag = getTag();
+            }
+          }
+          if (tag == null) {
+            tag = null;
+          }
+          const item = arr.forEach((fn, fn2) => {
+            if (fn != null) {
+              fn();
+            }
+            const result = current.set(fn2, fn2(tag));
+          });
+        }
+      }
+      return ref.current;
+    };
+    fun.observe = (fn) => {
+      let closure_0 = fn;
+      let tmp = fun;
+      let tag;
+      if (fun != null) {
+        const getTag = tmp.getTag;
+        if (getTag != null) {
+          tag = getTag();
+        }
+      }
+      if (tag == null) {
+        tag = null;
+      }
+      const result = current.set(fn, fn(tag));
+      return () => {
+        const value = current.get(fn);
+        const obj = current;
+        const tmp = fn;
+        if (value != null) {
+          value();
+        }
+        obj.delete(tmp);
+      };
+    };
+    fun.current = null;
+    tmp4.current = fun;
   }
-  return flag;
-};
-export { isAnimated };
-export { shallowEqual };
-export { validateAnimatedStyles };
+  current = tmp4.current;
+  const shareableMappingCache = viewName(first1[6]).shareableMappingCache;
+  if (!shareableMappingCache.get(current)) {
+    let obj = { __init: fn };
+    fn = function n() {
+      let value;
+      const fn = function f() {
+        return value.value;
+      };
+      if (viewName) {
+        fn.viewName = viewName;
+      }
+      return fn;
+    };
+    const obj2 = { tagOrWrapper: first1, viewName };
+    fn.__closure = obj2;
+    fn.__workletHash = 5138727370224;
+    fn.__initData = __initData;
+    const tmp5Result = viewName(first1[7]);
+    const shareableCloneRecursive = tmp5Result.makeShareableCloneRecursive(obj);
+    const shareableMappingCache2 = tmp5(tmp6[6]).shareableMappingCache;
+    let result = shareableMappingCache2.set(current, shareableCloneRecursive);
+  }
+  return current;
+});

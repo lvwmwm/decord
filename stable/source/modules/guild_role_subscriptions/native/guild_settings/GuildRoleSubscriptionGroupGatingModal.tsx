@@ -1,70 +1,25 @@
-// Module ID: 19327
-// Function ID: 19328
+// Module ID: 19957
+// Function ID: 19958
 // Name: GuildRoleSubscriptionGroupGatingModal
-// Dependencies: [32, 19, 19316, 16596, 21, 558, 576, 1128, 19311, 19318, 2]
+// Dependencies: [32, 19, 19944, 17191, 21, 19947, 1113, 19939, 2]
+// Exports: default
 
-// Module 19327 (GuildRoleSubscriptionGroupGatingModal)
+// Module 19957 (GuildRoleSubscriptionGroupGatingModal)
 import Fragment from "Fragment" /* 21 */;
-import react2 from "react" /* 576 */;
-import intl3 from "intl" /* 1128 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 16596 */;
-import FormGuildGatingModeSelectorDefault from "FormGuildGatingModeSelector" /* 19311 */;
-import GuildRoleSubscriptionTierEditStepDefault from "GuildRoleSubscriptionTierEditStep" /* 19318 */;
+import intl3 from "intl" /* 1113 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 17191 */;
+import FormGuildGatingModeSelectorDefault from "FormGuildGatingModeSelector" /* 19939 */;
+import GuildRoleSubscriptionTierEditStepDefault from "GuildRoleSubscriptionTierEditStep" /* 19947 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import RoleTierEditStore from "RoleTierEditStore" /* 19316 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import RoleTierEditStore from "RoleTierEditStore" /* 19944 */;
 import size from "module_2" /* 2 */;
 
 const constants = GuildRoleSubscriptionsConstants.GuildRoleSubscriptionsTierScenes;
 const jsx = Fragment.jsx;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSubscriptionGroupGatingModal(arg0) {
-  let tmp5;
-  let tmp6;
-  let tmp7;
-  let tmp8;
-  const obj = react2;
-  const cResult = obj.c(8);
-  [tmp5, tmp6] = RoleTierEditStore.useGroupIsFullGateState();
-  _slicedToArray(RoleTierEditStore.useGroupIsFullGateState(), 2);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1128).intl;
-    const stringResult = intl.string(intl3.t.N38nNP);
-    const intl2 = tmp(1128).intl;
-    const stringResult1 = intl2.string(intl3.t.csJWVI);
-    cResult[0] = stringResult;
-    cResult[1] = stringResult1;
-    tmp7 = stringResult;
-    tmp8 = stringResult1;
-  } else {
-    [tmp7, tmp8] = cResult;
-  }
-  if (cResult[2] === tmp5) {
-    let tmp11;
-    if (cResult[3] === tmp6) {
-      tmp11 = cResult[4];
-    }
-    if (cResult[5] === arg0) {
-      let tmp14;
-      if (cResult[6] === tmp11) {
-        tmp14 = cResult[7];
-      }
-      return tmp14;
-    }
-    GuildRoleSubscriptionTierEditStepDefault;
-    const merged = Object.assign(arg0);
-    const tmp22 = <tmp17 title={tmp7} description={tmp8} canProceedToNextStep nextStep={constants.GROUP}>{tmp11}</tmp17>;
-    cResult[5] = arg0;
-    cResult[6] = tmp11;
-    cResult[7] = tmp22;
-    tmp14 = tmp22;
-  }
-  const tmp12 = jsx(FormGuildGatingModeSelectorDefault, { isFullServerGating: tmp5, onChange: tmp6 });
-  cResult[2] = tmp5;
-  cResult[3] = tmp6;
-  cResult[4] = tmp12;
-  tmp11 = tmp12;
-}) : (function GuildRoleSubscriptionGroupGatingModal(arg0) {
+const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/guild_settings/GuildRoleSubscriptionGroupGatingModal.tsx");
+
+export default function GuildRoleSubscriptionGroupGatingModal(arg0) {
   let tmp2;
   let tmp3;
   [tmp2, tmp3] = RoleTierEditStore.useGroupIsFullGateState();
@@ -74,7 +29,4 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleS
   const intl2 = intl3.intl;
   const merged = Object.assign(arg0);
   return <tmp4 title={intl.string(intl3.t.N38nNP)} description={intl2.string(intl3.t.csJWVI)} canProceedToNextStep nextStep={constants.GROUP}>{jsx(FormGuildGatingModeSelectorDefault, { isFullServerGating: tmp2, onChange: tmp3 })}</tmp4>;
-});
-const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/guild_settings/GuildRoleSubscriptionGroupGatingModal.tsx");
-
-export default tmp3;
+};

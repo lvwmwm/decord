@@ -1,32 +1,32 @@
-// Module ID: 7352
-// Function ID: 7353
+// Module ID: 7392
+// Function ID: 7393
 // Name: getGuildTransitionRoute
-// Dependencies: [7353, 4858, 7223, 4855, 4933, 4877, 4906, 7354, 1087, 4862, 7356, 7360, 7362, 4880, 7377, 2]
+// Dependencies: [7393, 4866, 7264, 4863, 4944, 4885, 4917, 7395, 1072, 4870, 7397, 7402, 7404, 4888, 7419, 2]
 // Exports: getGuildTransitionRoute
 
-// Module 7352 (getGuildTransitionRoute)
-import Constants from "Constants" /* 1087 */;
-import ChannelConstants from "ChannelConstants" /* 4862 */;
-import FavoritesUtils from "FavoritesUtils" /* 4880 */;
-import OnboardingHomeUtils from "OnboardingHomeUtils" /* 7356 */;
-import canUseGuildSpace from "canUseGuildSpace" /* 7360 */;
-import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 7362 */;
-import ConjureUtils from "ConjureUtils" /* 7377 */;
-import ConjureBuilderRouteStore from "ConjureBuilderRouteStore" /* 7353 */;
-import FavoriteStore from "FavoriteStore" /* 4858 */;
-import GuildOnboardingStore from "GuildOnboardingStore" /* 7223 */;
-import ChannelStore from "ChannelStore" /* 4855 */;
-import GuildChannelStore from "GuildChannelStore" /* 4933 */;
-import GuildStore from "GuildStore" /* 4877 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4906 */;
-import PrivateChannelSortStore from "PrivateChannelSortStore" /* 7354 */;
+// Module 7392 (getGuildTransitionRoute)
+import Constants from "Constants" /* 1072 */;
+import ChannelConstants from "ChannelConstants" /* 4870 */;
+import FavoritesUtils from "FavoritesUtils" /* 4888 */;
+import OnboardingHomeUtils from "OnboardingHomeUtils" /* 7397 */;
+import canUseGuildSpace from "canUseGuildSpace" /* 7402 */;
+import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 7404 */;
+import ConjureUtils from "ConjureUtils" /* 7419 */;
+import ConjureBuilderRouteStore from "ConjureBuilderRouteStore" /* 7393 */;
+import FavoriteStore from "FavoriteStore" /* 4866 */;
+import GuildOnboardingStore from "GuildOnboardingStore" /* 7264 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import GuildChannelStore from "GuildChannelStore" /* 4944 */;
+import GuildStore from "GuildStore" /* 4885 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4917 */;
+import PrivateChannelSortStore from "PrivateChannelSortStore" /* 7395 */;
 import size from "module_2" /* 2 */;
 
 const ME = Constants.ME;
 const StaticChannelRoute = ChannelConstants.StaticChannelRoute;
 const result = size.fileFinishedImporting("modules/routing/getGuildTransitionRoute.tsx");
 
-export const getGuildTransitionRoute = function getGuildTransitionRoute(id) {
+export function getGuildTransitionRoute(id) {
   const lastProjectId = ConjureBuilderRouteStore.getLastProjectId(id);
   if (null != lastProjectId) {
     const guild = GuildStore.getGuild(id);
@@ -126,4 +126,4 @@ export const getGuildTransitionRoute = function getGuildTransitionRoute(id) {
       items6 = items7;
     }
   }
-};
+}

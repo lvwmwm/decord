@@ -1,44 +1,18 @@
-// Module ID: 1899
-// Function ID: 1900
+// Module ID: 1891
+// Function ID: 1892
 // Name: useSystemKeyboardHeight
-// Dependencies: [1502, 1503, 558, 576, 2]
-// Exports: getSystemKeyboardHeight
+// Dependencies: [1494, 1495, 2]
+// Exports: default, getSystemKeyboardHeight
 
-// Module 1899 (useSystemKeyboardHeight)
-import react from "react" /* 576 */;
-import KeyboardUIStoreDefault from "KeyboardUIStore" /* 1503 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 1891 (useSystemKeyboardHeight)
+import AppEntryKeyContext from "AppEntryKeyContext" /* 1494 */;
+import KeyboardUIStoreDefault from "KeyboardUIStore" /* 1495 */;
 import size from "module_2" /* 2 */;
 
-let tmp2;
-const AppEntryKeyContext = tmp2(1502);
 let closure_3 = { excludeSafeAreaInsets: false };
-tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSystemKeyboardHeight(arg0) {
-  let tmp = arg0;
-  const obj = react;
-  const cResult = obj.c(3);
-  if (undefined === arg0) {
-    tmp = closure_3;
-  }
-  const excludeSafeAreaInsets = tmp.excludeSafeAreaInsets;
-  let closure_0 = tmp5;
-  const tmp2Result = AppEntryKeyContext;
-  const appEntryKey = tmp2Result.useAppEntryKey();
-  if (cResult[0] === appEntryKey) {
-    let tmp7;
-    if (cResult[1] === (undefined !== excludeSafeAreaInsets && excludeSafeAreaInsets)) {
-      tmp7 = cResult[2];
-    }
-    return KeyboardUIStoreDefault(tmp7);
-  }
-  const fn = function s(arg0) {
-    return closure_0 ? arg0.byAppEntry[appEntryKey].keyboardHeightExcludingSafeAreaInsets : arg0.byAppEntry[appEntryKey].keyboardHeight;
-  };
-  cResult[0] = appEntryKey;
-  cResult[1] = undefined !== excludeSafeAreaInsets && excludeSafeAreaInsets;
-  cResult[2] = fn;
-  tmp7 = fn;
-}) : (function useSystemKeyboardHeight() {
+const result = size.fileFinishedImporting("modules/keyboard/native/useSystemKeyboardHeight.native.tsx");
+
+export default function useSystemKeyboardHeight() {
   let tmp = arg0;
   if (arg0 === undefined) {
     tmp = closure_3;
@@ -50,11 +24,8 @@ tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSystemKeyboar
   const obj = AppEntryKeyContext;
   let closure_1 = obj.useAppEntryKey();
   return KeyboardUIStoreDefault((arg0) => flag ? arg0.byAppEntry[closure_1].keyboardHeightExcludingSafeAreaInsets : arg0.byAppEntry[closure_1].keyboardHeight);
-});
-const result = size.fileFinishedImporting("modules/keyboard/native/useSystemKeyboardHeight.native.tsx");
-
-export default tmp2;
-export const getSystemKeyboardHeight = function getSystemKeyboardHeight(arg0) {
+};
+export function getSystemKeyboardHeight(arg0) {
   let tmp = arg0;
   if (arg0 === undefined) {
     tmp = closure_3;
@@ -70,4 +41,4 @@ export const getSystemKeyboardHeight = function getSystemKeyboardHeight(arg0) {
   const obj = KeyboardUIStoreDefault;
   const tmp4 = obj.getState().byAppEntry[DEFAULT_APP_ENTRY_KEY];
   return flag ? tmp4.keyboardHeightExcludingSafeAreaInsets : tmp4.keyboardHeight;
-};
+}

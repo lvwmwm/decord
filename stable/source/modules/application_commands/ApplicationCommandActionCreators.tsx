@@ -1,26 +1,26 @@
-// Module ID: 8337
-// Function ID: 8338
+// Module ID: 8344
+// Function ID: 8345
 // Name: ApplicationCommandActionCreators
-// Dependencies: [502, 8338, 1087, 38, 5666, 584, 1297, 7662, 11, 6051, 2]
+// Dependencies: [502, 8345, 1072, 38, 5683, 572, 1282, 7700, 11, 6070, 2]
 // Exports: fetchCommand, fetchCommands, fetchCommandsForApplication, performAutocomplete, setActiveCommand, setAppLauncherActiveCommand, setPreferredCommandId, updateApplicationGuildCommandPermissions, updateChannelState, updateOptionStates, updateOptionValidationStates, updateRegistry
 
-// Module 8337 (ApplicationCommandActionCreators)
+// Module 8344 (ApplicationCommandActionCreators)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef38 from "module_38" /* 38 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1087 */;
-import HTTPUtils from "HTTPUtils" /* 1297 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5666 */;
-import InteractionTypes from "InteractionTypes" /* 6051 */;
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7662 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import Constants from "Constants" /* 1072 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5683 */;
+import InteractionTypes from "InteractionTypes" /* 6070 */;
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7700 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ApplicationCommandAutocompleteStore from "ApplicationCommandAutocompleteStore" /* 8338 */;
+import ApplicationCommandAutocompleteStore from "ApplicationCommandAutocompleteStore" /* 8345 */;
 import size from "module_2" /* 2 */;
 
 const Endpoints = Constants.Endpoints;
 const result = size.fileFinishedImporting("modules/application_commands/ApplicationCommandActionCreators.tsx");
 
-export const setActiveCommand = function setActiveCommand(command) {
+export function setActiveCommand(command) {
   let _location;
   let channelId;
   let commandOrigin;
@@ -40,18 +40,18 @@ export const setActiveCommand = function setActiveCommand(command) {
   }
   const obj = DispatcherDefault;
   obj.dispatch({ type: "APPLICATION_COMMAND_SET_ACTIVE_COMMAND", channelId, command, section, initialValues, location: _location, triggerSection, queryLength, sectionName, query, searchResultsPosition, source, commandOrigin });
-};
-export const setPreferredCommandId = function setPreferredCommandId(channelId, commandId) {
+}
+export function setPreferredCommandId(channelId, commandId) {
   const obj = DispatcherDefault;
   const obj2 = { type: "APPLICATION_COMMAND_SET_PREFERRED_COMMAND", channelId, commandId };
   obj.dispatch(obj2);
-};
-export const updateOptionStates = function updateOptionStates(id, changedOptionStates) {
+}
+export function updateOptionStates(id, changedOptionStates) {
   const obj = DispatcherDefault;
   const obj2 = { type: "APPLICATION_COMMAND_UPDATE_OPTIONS", channelId: id, changedOptionStates };
   obj.dispatch(obj2);
-};
-export const updateOptionValidationStates = function updateOptionValidationStates(channelId, arg1) {
+}
+export function updateOptionValidationStates(channelId, arg1) {
   const entries = Object.entries(arg1);
   const fromEntriesResult = fromEntries(entries.map((item) => {
     let tmp;
@@ -63,8 +63,8 @@ export const updateOptionValidationStates = function updateOptionValidationState
   const obj = DispatcherDefault;
   const obj2 = { type: "APPLICATION_COMMAND_UPDATE_OPTIONS", channelId, changedOptionStates: fromEntriesResult };
   obj.dispatch(obj2);
-};
-export const updateChannelState = function updateChannelState(arg0) {
+}
+export function updateChannelState(arg0) {
   let _location;
   let changedOptionStates;
   let channelId;
@@ -74,15 +74,15 @@ export const updateChannelState = function updateChannelState(arg0) {
   ({ channelId, command, section, preferredCommandId, location: _location, changedOptionStates } = arg0);
   const obj = DispatcherDefault;
   obj.dispatch({ type: "APPLICATION_COMMAND_UPDATE_CHANNEL_STATE", channelId, command, section, preferredCommandId, location: _location, changedOptionStates });
-};
-export const updateApplicationGuildCommandPermissions = function updateApplicationGuildCommandPermissions(arg0, arg1, arg2, permissions) {
+}
+export function updateApplicationGuildCommandPermissions(arg0, arg1, arg2, permissions) {
   let obj;
   const HTTP = HTTPUtils.HTTP;
   const request = { body: obj, url: Endpoints.APPLICATION_BOT_GUILD_COMMAND_PERMISSIONS(arg0, arg1, arg2), rejectWithError: false };
   obj = { permissions };
   return HTTP.put(request);
-};
-export const performAutocomplete = function performAutocomplete(c0, c2, data) {
+}
+export function performAutocomplete(c0, c2, data) {
   let id;
   let name;
   let obj4;
@@ -139,31 +139,31 @@ export const performAutocomplete = function performAutocomplete(c0, c2, data) {
       });
     }
   }
-};
-export const fetchCommand = function fetchCommand(guildId, channelId, commandId) {
+}
+export function fetchCommand(guildId, channelId, commandId) {
   const obj = DispatcherDefault;
   const obj2 = { type: "APPLICATION_COMMAND_FETCH", channelId, commandId, guildId };
   obj.dispatch(obj2);
-};
-export const fetchCommands = function fetchCommands(guildId, channelId, commandIds) {
+}
+export function fetchCommands(guildId, channelId, commandIds) {
   const obj = DispatcherDefault;
   const obj2 = { type: "APPLICATION_COMMANDS_FETCH", channelId, commandIds, guildId };
   obj.dispatch(obj2);
-};
-export const fetchCommandsForApplication = function fetchCommandsForApplication(arg0) {
+}
+export function fetchCommandsForApplication(arg0) {
   let applicationId;
   let channelId;
   let guildId;
   ({ guildId, channelId, applicationId } = arg0);
   const obj = DispatcherDefault;
   obj.dispatch({ type: "APPLICATION_COMMANDS_FETCH_FOR_APPLICATION", channelId, guildId, applicationId });
-};
-export const updateRegistry = function updateRegistry(commands, applications, channelId) {
+}
+export function updateRegistry(commands, applications, channelId) {
   const obj = DispatcherDefault;
   const obj2 = { type: "APPLICATION_COMMAND_REGISTRY_UPDATE", applications, commands, channelId };
   obj.dispatch(obj2);
-};
-export const setAppLauncherActiveCommand = function setAppLauncherActiveCommand(id, command) {
+}
+export function setAppLauncherActiveCommand(id, command) {
   if (null != command) {
     const tmp3 = _modDef38;
     tmp3(command.inputType !== ApplicationCommandTypes.ApplicationCommandInputType.PLACEHOLDER, "command should not be placeholder");
@@ -171,4 +171,4 @@ export const setAppLauncherActiveCommand = function setAppLauncherActiveCommand(
   const obj = DispatcherDefault;
   const obj2 = { type: "APP_LAUNCHER_SET_ACTIVE_COMMAND", channelId: id, command };
   obj.dispatch(obj2);
-};
+}

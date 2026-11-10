@@ -1,13 +1,11 @@
-// Module ID: 11321
-// Function ID: 11322
+// Module ID: 11624
+// Function ID: 11625
 // Name: LinkedGameOrgInvitesExperiment
-// Dependencies: [1455, 558, 576, 2]
-// Exports: getLinkedGameOrgInvitesEnabled
+// Dependencies: [1447, 2]
+// Exports: getLinkedGameOrgInvitesEnabled, useLinkedGameOrgInvitesEnabled
 
-// Module 11321 (LinkedGameOrgInvitesExperiment)
-import react from "react" /* 576 */;
-import ApexExperiment from "ApexExperiment" /* 1455 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 11624 (LinkedGameOrgInvitesExperiment)
+import ApexExperiment from "ApexExperiment" /* 1447 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -15,28 +13,14 @@ let obj = { kind: "user", name: "2026-09-linked-game-org-invites-dev", defaultCo
 obj2 = { 1: null };
 obj2[1] = { enabled: true };
 const apexExperiment = ApexExperiment.createApexExperiment(obj);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLinkedGameOrgInvitesEnabled(location) {
-  let tmp2;
-  const obj = react;
-  const cResult = obj.c(2);
-  if (cResult[0] !== location) {
-    const obj2 = { location };
-    cResult[0] = location;
-    cResult[1] = obj2;
-    tmp2 = obj2;
-  } else {
-    tmp2 = cResult[1];
-  }
-  return apexExperiment.useConfig(tmp2).enabled;
-}) : (function useLinkedGameOrgInvitesEnabled(location) {
-  const obj = { location };
-  return apexExperiment.useConfig(obj).enabled;
-});
 const result = size.fileFinishedImporting("modules/game_organization_invites/LinkedGameOrgInvitesExperiment.tsx");
 
 export const LinkedGameOrgInvitesExperiment = apexExperiment;
-export const useLinkedGameOrgInvitesEnabled = tmp3;
-export const getLinkedGameOrgInvitesEnabled = function getLinkedGameOrgInvitesEnabled(MessageCodedLinkManager) {
+export function useLinkedGameOrgInvitesEnabled(location) {
+  const obj = { location };
+  return apexExperiment.useConfig(obj).enabled;
+}
+export function getLinkedGameOrgInvitesEnabled(MessageCodedLinkManager) {
   const obj = { location: MessageCodedLinkManager };
   return apexExperiment.getConfig(obj).enabled;
-};
+}

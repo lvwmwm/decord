@@ -1,12 +1,12 @@
-// Module ID: 11316
-// Function ID: 11317
+// Module ID: 11619
+// Function ID: 11620
 // Name: useDownloadedFile
-// Dependencies: [5, 32, 19, 1128, 6411, 6018, 2]
+// Dependencies: [5, 32, 19, 1113, 6451, 6038, 2]
 // Exports: getBytesLeftNotice, useDownloadedFile
 
-// Module 11316 (useDownloadedFile)
-import intl2 from "intl" /* 1128 */;
-import FileSizeUtils from "FileSizeUtils" /* 6411 */;
+// Module 11619 (useDownloadedFile)
+import intl2 from "intl" /* 1113 */;
+import FileSizeUtils from "FileSizeUtils" /* 6451 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -17,21 +17,21 @@ let c0, c8, c9, closure_3, closure_4;
 let c5 = "utf-8";
 const result = size.fileFinishedImporting("modules/media/useDownloadedFile.tsx");
 
-export const getBytesLeftNotice = function getBytesLeftNotice(bytesLeft) {
+export function getBytesLeftNotice(MAX_STICKER_FILE_SIZE) {
   let obj2;
   let str = "";
-  if (bytesLeft > 0) {
+  if (MAX_STICKER_FILE_SIZE > 0) {
     const intl = intl2.intl;
     const formatToPlainString = intl.formatToPlainString;
-    const obj = { formattedBytes: obj2.formatKbSize(bytesLeft) };
+    const obj = { formattedBytes: obj2.formatKbSize(MAX_STICKER_FILE_SIZE) };
     const prop = intl2.t["1+gGcK"];
     const _HermesInternal = HermesInternal;
     obj2 = FileSizeUtils;
     str = "... " + formatToPlainString(prop, obj);
   }
   return str;
-};
-export const useDownloadedFile = function useDownloadedFile(url, arg1) {
+}
+export function useDownloadedFile(url, arg1) {
   let bytesLeft;
   let closure_2;
   let fileContents;
@@ -95,7 +95,7 @@ export const useDownloadedFile = function useDownloadedFile(url, arg1) {
               const obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "IconComponent", done: "+352" };
+              return { value: "HermesInternal", done: null };
             }
           } else {
             let c6;
@@ -201,7 +201,7 @@ export const useDownloadedFile = function useDownloadedFile(url, arg1) {
                   c6 = 0;
                 }
                 c9 = 3;
-                return { value: "IconComponent", done: "+352" };
+                return { value: "HermesInternal", done: null };
               }
             } catch (tmp44) {
               let closure_7 = tmp44;
@@ -220,4 +220,4 @@ export const useDownloadedFile = function useDownloadedFile(url, arg1) {
     const tmp = !download();
   }, items);
   return { fileContents, bytesLeft, hadError };
-};
+}

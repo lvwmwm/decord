@@ -1,27 +1,27 @@
-// Module ID: 9768
-// Function ID: 9769
+// Module ID: 9849
+// Function ID: 9850
 // Name: ConversationsActionCreators
-// Dependencies: [5, 7729, 7733, 9769, 9770, 5639, 1087, 9766, 584, 1297, 7598, 9771, 7888, 7895, 2]
+// Dependencies: [5, 7767, 7770, 9850, 9851, 5655, 1072, 9847, 572, 1282, 7636, 9852, 7928, 7935, 2]
 // Exports: clearConversationSelection, fetchChannelConversations, requestConversationFocus, setConversationFeedbackRating, setSelectedConversation, toggleConversationHighlighting, trackTopicalNavigationEntrypointImpression
 
-// Module 9768 (ConversationsActionCreators)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1087 */;
-import HTTPUtils from "HTTPUtils" /* 1297 */;
-import ConversationConstants from "ConversationConstants" /* 5639 */;
-import QualtricsActionCreatorsDefault from "QualtricsActionCreators" /* 7888 */;
-import ConversationsAnalytics2 from "ConversationsAnalytics" /* 9771 */;
+// Module 9849 (ConversationsActionCreators)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import Constants from "Constants" /* 1072 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
+import ConversationConstants from "ConversationConstants" /* 5655 */;
+import QualtricsActionCreatorsDefault from "QualtricsActionCreators" /* 7928 */;
+import ConversationsAnalytics2 from "ConversationsAnalytics" /* 9852 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelConversationsStore from "ChannelConversationsStore" /* 7729 */;
-import ConversationPreviewStore from "ConversationPreviewStore" /* 7733 */;
-import SelectedConversationStore from "SelectedConversationStore" /* 9769 */;
-import TopicalNavigationSurveyStore from "TopicalNavigationSurveyStore" /* 9770 */;
+import ChannelConversationsStore from "ChannelConversationsStore" /* 7767 */;
+import ConversationPreviewStore from "ConversationPreviewStore" /* 7770 */;
+import SelectedConversationStore from "SelectedConversationStore" /* 9850 */;
+import TopicalNavigationSurveyStore from "TopicalNavigationSurveyStore" /* 9851 */;
 import size from "module_2" /* 2 */;
 
 let _false, _undefined, isJump, requestKey;
 
 let tmp;
-const SurveyActionTypes = tmp(7895);
+const SurveyActionTypes = tmp(7935);
 let obj = function _fetchChannelConversations() {
   obj = _asyncToGenerator(async (channelId) => {
     let closure_4;
@@ -129,7 +129,7 @@ let obj = function _fetchChannelConversations() {
         c8 = 3;
         return { value: conversations, done: true };
       }
-      await "IconComponent";
+      await "HermesInternal";
       ({ channelId: c0, guildId: c1, direction: c2, anchor: c3, limit: limit2 } = closure_0);
       if (limit2 === undefined) {
         limit2 = FETCH_LIMIT;
@@ -139,7 +139,7 @@ let obj = function _fetchChannelConversations() {
         throwOnError = false;
       }
       hydrateMessages = tmp92.hydrateMessages;
-      return "Reflect";
+      return "flexDirection";
     })();
     iter.next();
     return iter;
@@ -165,7 +165,7 @@ obj = function _fetchConversation() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -211,7 +211,7 @@ obj = function _fetchConversation() {
             c4 = 0;
           }
           c6 = 3;
-          return { value: "IconComponent", done: "+352" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp15) {
           if (0 === c4) {
             c6 = 3;
@@ -241,7 +241,7 @@ obj = function _hydrateSelectedConversation() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -273,7 +273,7 @@ obj = function _hydrateSelectedConversation() {
           const obj5 = { includeReactions: true, includeMessageReferences: true, cacheType };
           closure_132_14(closure_0, closure_1, obj5);
           c6 = 3;
-          return { value: "IconComponent", done: "+352" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp13) {
           c6 = 3;
           throw tmp13;
@@ -309,7 +309,7 @@ obj = function _fetchConversationMessages() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -339,7 +339,7 @@ obj = function _fetchConversationMessages() {
                 }
                 if (isFullyHydratedResult) {
                   c7 = 3;
-                  return { value: "IconComponent", done: "+352" };
+                  return { value: "HermesInternal", done: null };
                 }
               } else {
                 let hydratedMessages;
@@ -350,7 +350,7 @@ obj = function _fetchConversationMessages() {
                 }
                 if (null != hydratedMessages) {
                   c7 = 3;
-                  return { value: "IconComponent", done: "+352" };
+                  return { value: "HermesInternal", done: null };
                 }
               }
               if ("preview" === cacheType) {
@@ -393,7 +393,7 @@ obj = function _fetchConversationMessages() {
             c5 = 0;
           }
           c7 = 3;
-          return { value: "IconComponent", done: "+352" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp29) {
           if (0 === c5) {
             c7 = 3;
@@ -411,15 +411,15 @@ const FETCH_LIMIT = ConversationConstants.FETCH_LIMIT;
 const Endpoints = Constants.Endpoints;
 let result = size.fileFinishedImporting("modules/conversations/ConversationsActionCreators.tsx");
 
-export const fetchChannelConversations = function fetchChannelConversations() {
+export function fetchChannelConversations() {
   return obj(...arguments);
-};
+}
 export { fetchConversation };
-export const toggleConversationHighlighting = function toggleConversationHighlighting() {
+export function toggleConversationHighlighting() {
   obj = DispatcherDefault;
   obj.dispatch({ type: "CONVERSATIONS_TOGGLE_HIGHLIGHTING" });
-};
-export const setSelectedConversation = function setSelectedConversation(channelId, id, arg2) {
+}
+export function setSelectedConversation(channelId, id, arg2) {
   let cacheType;
   let shouldJump;
   function hydrateSelectedConversation() {
@@ -443,28 +443,28 @@ export const setSelectedConversation = function setSelectedConversation(channelI
       }
       if (null != startMessageId) {
         const obj2 = { channelId, messageId: startMessageId, flash: false };
-        const tmp6Result = tmp6(7598);
+        const tmp6Result = tmp6(7636);
         tmp6Result.jumpToMessage(obj2);
       }
     }
   }
-};
-export const clearConversationSelection = function clearConversationSelection(channelId, conversationId) {
+}
+export function clearConversationSelection(channelId, conversationId) {
   obj = DispatcherDefault;
   const obj2 = { type: "CLEAR_CONVERSATION_SELECTION", channelId, conversationId };
   obj.dispatch(obj2);
-};
-export const requestConversationFocus = function requestConversationFocus() {
+}
+export function requestConversationFocus() {
   obj = DispatcherDefault;
   obj.dispatch({ type: "CONVERSATION_FOCUS_REQUEST" });
-};
-export const setConversationFeedbackRating = function setConversationFeedbackRating(channelId, conversationId, down) {
+}
+export function setConversationFeedbackRating(channelId, conversationId, down) {
   obj = DispatcherDefault;
   const obj2 = { type: "SET_CONVERSATION_FEEDBACK_RATING", channelId, conversationId, rating: down };
   obj.dispatch(obj2);
-};
+}
 export { fetchConversationMessages };
-export const trackTopicalNavigationEntrypointImpression = function trackTopicalNavigationEntrypointImpression(id, stateFromStores1) {
+export function trackTopicalNavigationEntrypointImpression(id, stateFromStores1) {
   const ConversationsAnalytics = ConversationsAnalytics2.ConversationsAnalytics;
   obj = { channelId: id, conversationCount: stateFromStores1 };
   const result = ConversationsAnalytics.trackEntrypointImpression(obj);
@@ -474,4 +474,4 @@ export const trackTopicalNavigationEntrypointImpression = function trackTopicalN
   }
   const obj3 = DispatcherDefault;
   obj3.dispatch({ type: "TOPICAL_NAVIGATION_ENTRYPOINT_IMPRESSION" });
-};
+}

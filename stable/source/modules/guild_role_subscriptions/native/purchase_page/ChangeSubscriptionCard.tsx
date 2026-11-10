@@ -1,24 +1,24 @@
-// Module ID: 18038
-// Function ID: 18039
+// Module ID: 18625
+// Function ID: 18626
 // Name: ChangeSubscriptionCard
-// Dependencies: [32, 19, 17, 1087, 21, 5003, 587, 5266, 1633, 16618, 2049, 5297, 1128, 1202, 18031, 6704, 18039, 2002, 5242, 2]
+// Dependencies: [32, 19, 17, 1072, 21, 5014, 575, 5624, 1625, 17211, 2042, 5272, 1113, 1187, 18618, 6744, 18626, 1994, 5258, 2]
 // Exports: default
 
-// Module 18038 (ChangeSubscriptionCard)
+// Module 18625 (ChangeSubscriptionCard)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1087 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
-import asyncRequire from "asyncRequire" /* 2002 */;
-import _modDef2049 from "module_2049" /* 2049 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5242 */;
-import Text_Text from "Text/Text" /* 5266 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6704 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 16618 */;
+import nativeDefault from "native" /* 575 */;
+import Constants from "Constants" /* 1072 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1625 */;
+import asyncRequire from "asyncRequire" /* 1994 */;
+import _modDef2042 from "module_2042" /* 2042 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6744 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 17211 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5003 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let BottomSheet;
@@ -56,7 +56,7 @@ export default function ChangeSubscriptionCard(activeSubscription) {
   const first = _slicedToArray(obj.useName(activeListingId), 1)[0];
   let obj2 = GuildRoleSubscriptionListingEditStateUtilsAll;
   const first1 = _slicedToArray(obj2.useName(changeToListingId), 1)[0];
-  let obj3 = _modDef2049(activeSubscription.currentPeriodEnd);
+  let obj3 = _modDef2042(activeSubscription.currentPeriodEnd);
   const status = activeSubscription.status;
   const CANCELED = SubscriptionStatusTypes.CANCELED;
   const obj4 = { style: items, children: items1 };
@@ -64,39 +64,39 @@ export default function ChangeSubscriptionCard(activeSubscription) {
   const obj5 = { paddingBottom: 16 + bottom };
   items[1] = obj5;
   const formatResult = obj3.format("MMMM Do");
-  BottomSheet = activeSubscription(5297).BottomSheet;
-  const obj6 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: intl.format(activeSubscription(1128).t.l3uCCX, { activeListingName: first }) };
-  const Text = activeSubscription(5266).Text;
-  intl = activeSubscription(1128).intl;
-  items1 = [closure_7(Text, obj6), closure_7(activeSubscription(1202).Spacer, { size: 16 }), , ];
+  BottomSheet = activeSubscription(5272).BottomSheet;
+  const obj6 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: intl.format(activeSubscription(1113).t.l3uCCX, { activeListingName: first }) };
+  const Text = activeSubscription(5624).Text;
+  intl = activeSubscription(1113).intl;
+  items1 = [closure_7(Text, obj6), closure_7(activeSubscription(1187).Spacer, { size: 16 }), , ];
   const obj7 = { variant: "text-sm/normal", color: "text-default", children: items2 };
-  const Text2 = activeSubscription(5266).Text;
-  const intl2 = activeSubscription(1128).intl;
+  const Text2 = activeSubscription(5624).Text;
+  const intl2 = activeSubscription(1113).intl;
   items2 = [, , ];
   const obj8 = { activeListingName: first, changeToListingName: first1, billingEndDate: formatResult, emphasisHook };
-  items2[0] = intl2.format(activeSubscription(1128).t.Zmtrs2, obj8);
+  items2[0] = intl2.format(activeSubscription(1113).t.Zmtrs2, obj8);
   items2[1] = "\n\n";
-  const intl3 = activeSubscription(1128).intl;
+  const intl3 = activeSubscription(1113).intl;
   const obj9 = { emphasisHook };
-  items2[2] = intl3.format(activeSubscription(1128).t.KIiWca, obj9);
+  items2[2] = intl3.format(activeSubscription(1113).t.KIiWca, obj9);
   items1[2] = closure_8(Text2, obj7);
   let tmp8Result = null;
   const tmp9 = View;
   if (status !== CANCELED) {
     const obj10 = { children: items3 };
-    items3 = [closure_7(activeSubscription(1202).Spacer, { size: 16 }), ];
+    items3 = [closure_7(activeSubscription(1187).Spacer, { size: 16 }), ];
     const obj11 = {
-      text: intl4.string(activeSubscription(1128).t.UwHVxr),
+      text: intl4.string(activeSubscription(1113).t.UwHVxr),
       onPress: function handleCancelSubscription() {
           const obj = ModalActionCreatorsDefault;
           const obj2 = { subscriptionId: activeSubscription.id };
-          obj.pushLazy(asyncRequire(18039, dependencyMap.paths), obj2);
+          obj.pushLazy(asyncRequire(18626, dependencyMap.paths), obj2);
           const obj3 = ActionSheetActionCreatorsDefault;
           obj3.hideActionSheet();
         }
     };
-    const ArrowButton = tmp7(18031).ArrowButton;
-    intl4 = tmp7(1128).intl;
+    const ArrowButton = tmp7(18618).ArrowButton;
+    intl4 = tmp7(1113).intl;
     items3[1] = closure_7(ArrowButton, obj11);
     tmp8Result = tmp8(closure_9, obj10);
   }

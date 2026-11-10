@@ -1,10 +1,10 @@
 // Module ID: 2641
 // Function ID: 2642
 // Name: AssetRegistry
-// Dependencies: [1134]
+// Dependencies: [1119]
 
 // Module 2641 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1134 */;
+import AssetRegistry from "AssetRegistry" /* 1119 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9wcmVtaXVtL2ZpbGVfdXBsb2Fk", scales: [1], hash: "f371bbd87ed5742fe36922da4e5af949", name: "da.messages.f371bbd87ed5742fe36922da4e5af949.compiled.messages", type: "jsona" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/premium/gifting", scales: [1], hash: "9828da678219fed549e6986d671ca2e3", name: "DiscordAnniversary.compiled.messages", type: "jsona" });

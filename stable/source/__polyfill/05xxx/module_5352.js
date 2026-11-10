@@ -1,106 +1,87 @@
 // Module ID: 5352
 // Function ID: 5353
-// Dependencies: [19, 21, 5353, 5374, 5379, 5375, 5380, 5381, 5364, 5377, 5376, 5382, 5383]
-// Exports: GestureDetector
+// Dependencies: [5327, 5335, 5332, 5334, 5307]
+// Exports: updateHandlers
 
 // Module 5352
-import Fragment from "Fragment" /* 21 */;
-import react_nativeDefault from "react-native" /* 5364 */;
-import attachHandlers from "attachHandlers" /* 5377 */;
-import react_mod from "react" /* 19 */;
+import handlerIDToTag from "handlerIDToTag" /* 5307 */;
+import ALLOWED_PROPS from "ALLOWED_PROPS" /* 5327 */;
+import react_nativeDefault from "react-native" /* 5332 */;
+import selectProperties from "selectProperties" /* 5334 */;
 
-let c3;
-let closure_4;
-let hasOwnProperty;
-let react = react_mod;
-({ useEffect: c3, useMemo: closure_4, useRef: hasOwnProperty } = react);
-react = react_mod;
-const jsx = Fragment.jsx;
+const require = globalThis.__r;
+let _require;
 
-export const GestureDetector = function(gesture) {
-  let current2;
-  let detectorUpdater;
-  let webEventHandlers;
-  function propagateDetectorConfig(gesture, gesture2) {
-    const items = ["userSelect", "enableContextMenu", "touchAction"];
-    for (const item10008 of items) {
-      let tmp2 = gesture[item10008];
-      if (undefined !== tmp2) {
-        let toGestureArrayResult = gesture.toGestureArray();
-        for (const item10018 of toGestureArrayResult) {
-          item10018.config[tmp] = tmp3;
-          continue;
+
+export function updateHandlers(attachedGestures, prepare, arg2) {
+  let num;
+  _require = attachedGestures;
+  let closure_1 = arg2;
+  prepare.prepare();
+  for (let num = 0; num < arg2.length; num = num + 1) {
+    let tmp2 = attachedGestures.attachedGestures[num];
+    let tmp3 = _require;
+    let tmp4 = attachedGestures;
+    let obj = require("ALLOWED_PROPS");
+    let result = obj.checkGestureCallbacksForWorklets(tmp2);
+    let tmp6 = num;
+    if (arg2[num].handlerTag !== tmp2.handlerTag) {
+      ({ handlerTag: arg2[num].handlerTag, handlerTag: arg2[num].handlers.handlerTag } = tmp2);
+    }
+  }
+  attachedGestures = attachedGestures.attachedGestures;
+  let obj2 = require("ghQueueMicrotask");
+  obj2.ghQueueMicrotask(() => {
+    let arr2;
+    if (attachedGestures.isMounted) {
+      let arr = attachedGestures;
+      if (attachedGestures === tmp.attachedGestures) {
+        let tmp23 = arr.length !== closure_1.length;
+        let num = 0;
+        let tmp24 = tmp23;
+        if (0 < closure_1.length) {
+          do {
+            let tmp3 = attachedGestures[num];
+            arr2 = closure_1;
+            let tmp4 = tmp3.handlers.gestureId !== closure_1[num].handlers.gestureId;
+            let flag = tmp23;
+            let tmp2 = attachedGestures;
+            if (tmp4) {
+              let tmp6 = arr2[num].shouldUseReanimated || tmp3.shouldUseReanimated;
+              tmp4 = tmp6;
+            }
+            if (tmp4) {
+              flag = true;
+            }
+            tmp3.config = arr2[num].config;
+            tmp3.handlers = arr2[num].handlers;
+            let tmp9 = react_nativeDefault;
+            let setGestureHandlerConfig = tmp9.setGestureHandlerConfig;
+            let handlerTag = tmp3.handlerTag;
+            let obj = selectProperties;
+            let result = setGestureHandlerConfig(handlerTag, obj.filterConfig(tmp3.config, ALLOWED_PROPS.ALLOWED_PROPS));
+            let tmp16 = react_nativeDefault;
+            let configureRelations = tmp16.configureRelations;
+            let handlerTag2 = tmp3.handlerTag;
+            let obj2 = ALLOWED_PROPS;
+            let configureRelationsResult = configureRelations(handlerTag2, obj2.extractGestureRelations(tmp3));
+            let obj3 = handlerIDToTag;
+            let registerHandlerResult = obj3.registerHandler(tmp3.handlerTag, tmp3, tmp3.config.testId);
+            num = num + 1;
+            tmp23 = flag;
+            tmp24 = flag;
+            arr = tmp2;
+          } while (num < arr2.length);
         }
+        if (attachedGestures.animatedHandlers) {
+          if (tmp24) {
+            const found = arr.filter((shouldUseReanimated) => shouldUseReanimated.shouldUseReanimated);
+            tmp25.animatedHandlers.value = found.map((handlers) => handlers.handlers);
+          }
+        }
+        const obj4 = selectProperties;
+        const result1 = obj4.scheduleFlushOperations();
       }
-      continue;
     }
-  }
-  if (gesture.gesture) {
-    let tmp26Result;
-    gesture = gesture.gesture;
-    propagateDetectorConfig(gesture, gesture);
-    let tmp5 = current2;
-    let items = [gesture];
-    let gesturesToAttach = current2(() => gesture.toGestureArray(), items);
-    const someResult = gesturesToAttach.some((shouldUseReanimated) => shouldUseReanimated.shouldUseReanimated);
-    let tmp7 = gesture;
-    let tmp8 = webEventHandlers;
-    let obj2 = gesture(webEventHandlers[2]);
-    webEventHandlers = obj2.useWebEventHandlers();
-    const current = detectorUpdater({ firstRender: true, viewRef: null, previousViewTag: -1, forceRebuildReanimatedEvent: false }).current;
-    const obj3 = { attachedGestures: [], animatedEventHandler: null, animatedHandlers: null, shouldUseReanimated: someResult, isMounted: false };
-    current2 = react.useRef(obj3).current;
-    const obj4 = gesture(webEventHandlers[3]);
-    detectorUpdater = obj4.useDetectorUpdater(current, current2, gesturesToAttach, gesture, webEventHandlers);
-    const obj5 = gesture(webEventHandlers[4]);
-    const viewRefHandler = obj5.useViewRefHandler(current, detectorUpdater);
-    let needsToReattachResult = current.firstRender || current.forceRebuildReanimatedEvent;
-    if (!needsToReattachResult) {
-      const tmp7Result = tmp7(tmp8[5]);
-      needsToReattachResult = tmp7Result.needsToReattach(current2, gesturesToAttach);
-    }
-    current.forceRebuildReanimatedEvent = false;
-    const tmp7Result5 = tmp7(tmp8[6]);
-    const animatedGesture = tmp7Result5.useAnimatedGesture(current2, needsToReattachResult);
-    const tmp7Result6 = tmp7(tmp8[7]);
-    const isomorphicLayoutEffect = tmp7Result6.useIsomorphicLayoutEffect(() => {
-      current2.isMounted = true;
-      const tmp = react_nativeDefault(current.viewRef);
-      gesturesToAttach = attachHandlers;
-      const obj2 = { preparedGesture: current2, gestureConfig: gesture, gesturesToAttach, webEventHandlersRef: webEventHandlers, viewTag: tmp };
-      gesturesToAttach.attachHandlers(obj2);
-      return () => {
-        current2.isMounted = false;
-        const obj = gesture(webEventHandlers[10]);
-        obj.dropHandlers(current2);
-      };
-    }, []);
-    const items1 = [gesture];
-    current(() => {
-      if (current.firstRender) {
-        tmp.firstRender = false;
-      } else {
-        detectorUpdater();
-      }
-    }, items1);
-    const tmp7Result7 = tmp7(tmp8[11]);
-    const mountReactions = tmp7Result7.useMountReactions(detectorUpdater, current2);
-    const tmp7Result8 = tmp7(tmp8[12]);
-    if (someResult) {
-      const obj6 = { ref: viewRefHandler, onGestureHandlerEvent: current2.animatedEventHandler, children: gesture.children };
-      tmp26Result = tmp26(tmp7Result8.AnimatedWrap, obj6);
-    } else {
-      const obj7 = { ref: viewRefHandler, children: gesture.children };
-      tmp26Result = tmp26(tmp7Result8.Wrap, obj7);
-    }
-    return tmp26Result;
-  } else {
-    let tmp = globalThis;
-    const _Error = Error;
-    const self = this;
-    const self2 = this;
-    const error = new Error("GestureDetector must have a gesture prop provided.");
-    const tmp3 = error;
-    throw error;
-  }
-};
+  });
+}

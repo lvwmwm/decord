@@ -1,22 +1,22 @@
-// Module ID: 15743
-// Function ID: 15744
+// Module ID: 16287
+// Function ID: 16288
 // Name: validateConjureAppFrame
-// Dependencies: [2045, 6805, 4855, 1087, 5635, 5658, 15744, 6815, 9296, 2]
+// Dependencies: [2038, 6844, 4863, 1072, 5651, 5675, 16288, 6854, 9333, 2]
 // Exports: default, isUserScopedConjureApplication, isVoiceChannelInFrameGuild
 
-// Module 15743 (validateConjureAppFrame)
-import Constants from "Constants" /* 1087 */;
-import ApplicationIntegrationType from "ApplicationIntegrationType" /* 5635 */;
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5658 */;
-import isConjureApplicationDefault from "isConjureApplication" /* 6815 */;
-import validateEmbeddedAppFrameDefault from "validateEmbeddedAppFrame" /* 15744 */;
-import ApplicationStore from "ApplicationStore" /* 2045 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6805 */;
-import ChannelStore from "ChannelStore" /* 4855 */;
+// Module 16287 (validateConjureAppFrame)
+import Constants from "Constants" /* 1072 */;
+import ApplicationIntegrationType from "ApplicationIntegrationType" /* 5651 */;
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5675 */;
+import isConjureApplicationDefault from "isConjureApplication" /* 6854 */;
+import validateEmbeddedAppFrameDefault from "validateEmbeddedAppFrame" /* 16288 */;
+import ApplicationStore from "ApplicationStore" /* 2038 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6844 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const RPCErrorDefault = tmp(9296);
+const RPCErrorDefault = tmp(9333);
 const RPCErrors = Constants.RPCErrors;
 let result = size.fileFinishedImporting("modules/rpc/helpers/validateConjureAppFrame.tsx");
 
@@ -33,7 +33,7 @@ export default function validateConjureAppFrame(arg0) {
   }
 };
 export const isConjureApplication = isConjureApplicationDefault;
-export const isUserScopedConjureApplication = function isUserScopedConjureApplication(applicationId) {
+export function isUserScopedConjureApplication(applicationId) {
   const result = ConjureProjectStore.findProjectByApplicationId(applicationId);
   if (null != result) {
     return "user" === result.install_scope;
@@ -46,8 +46,8 @@ export const isUserScopedConjureApplication = function isUserScopedConjureApplic
     const result1 = null != prop && application.supportsIntegrationTypes(ApplicationIntegrationType.ApplicationIntegrationType.USER_INSTALL) && !application.supportsIntegrationTypes(ApplicationIntegrationType.ApplicationIntegrationType.GUILD_INSTALL);
     return result1;
   }
-};
-export const isVoiceChannelInFrameGuild = function isVoiceChannelInFrameGuild(frame, channelId) {
+}
+export function isVoiceChannelInFrameGuild(frame, channelId) {
   let guildId;
   if (frame.surface.type !== EmbeddedSurfaceType.EmbeddedSurfaceType.OVERLAY) {
     guildId = frame.surface.guildId;
@@ -55,4 +55,4 @@ export const isVoiceChannelInFrameGuild = function isVoiceChannelInFrameGuild(fr
   const channel = ChannelStore.getChannel(channelId);
   const tmp2 = null != guildId && null != channel && channel.isGuildVocal() && channel.getGuildId() === guildId;
   return tmp2;
-};
+}

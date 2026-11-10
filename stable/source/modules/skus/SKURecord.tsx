@@ -1,15 +1,15 @@
-// Module ID: 2047
-// Function ID: 2048
+// Module ID: 2040
+// Function ID: 2041
 // Name: SKURecord
-// Dependencies: [1407, 2024, 2048, 1087, 2049, 2050, 2052, 1405, 2]
+// Dependencies: [1398, 2016, 2041, 1072, 2042, 2043, 2045, 1396, 2]
 
-// Module 2047 (SKURecord)
-import SKUConstants from "SKUConstants" /* 2048 */;
-import _modDef2049 from "module_2049" /* 2049 */;
-import getPricesFromServerDefault from "getPricesFromServer" /* 2050 */;
-import Record from "Record" /* 1407 */;
-import ApplicationRecord from "ApplicationRecord" /* 2024 */;
-import Constants from "Constants" /* 1087 */;
+// Module 2040 (SKURecord)
+import SKUConstants from "SKUConstants" /* 2041 */;
+import _modDef2042 from "module_2042" /* 2042 */;
+import getPricesFromServerDefault from "getPricesFromServer" /* 2043 */;
+import Record from "Record" /* 1398 */;
+import ApplicationRecord from "ApplicationRecord" /* 2016 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -19,7 +19,7 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let tmp15;
-const transformSKUTenantMetadataDefault = tmp15(2052);
+const transformSKUTenantMetadataDefault = tmp15(2045);
 const set = SKUConstants.THE_GAME_AWARD_WINNER_SKUS;
 ({ GIFTABLE_CURRENCIES: hasOwnProperty, OperatingSystems: metroRequire, SKUFlags: metroImportDefault, SKUTypes: metroImportAll } = Constants);
 class SKURecord extends Record {
@@ -68,11 +68,11 @@ class SKURecord extends Record {
     }
     tmp6 = null;
     if (null != id.release_date) {
-      tmp6 = _modDef2049(id.release_date);
+      tmp6 = _modDef2042(id.release_date);
     }
     tmp9 = null;
     if (null != id.preorder_release_at) {
-      tmp9 = _modDef2049(id.preorder_release_at);
+      tmp9 = _modDef2042(id.preorder_release_at);
     }
     ({ preorder_approximate_release_date: obj.preorderApproximateReleaseDate, summary: obj.summary } = id);
     new Set(id.features);
@@ -126,8 +126,8 @@ class SKURecord extends Record {
     }
     tmp17 = null;
     if (null != id.preview_asset_paths) {
-      tmp17 = { fgStatic: id.preview_asset_paths.fg_static, fgAnimated: id.preview_asset_paths.fg_animated, bgStatic: id.preview_asset_paths.bg_static, bgAnimated: id.preview_asset_paths.bg_animated };
-      const obj5 = { fgStatic: id.preview_asset_paths.fg_static, fgAnimated: id.preview_asset_paths.fg_animated, bgStatic: id.preview_asset_paths.bg_static, bgAnimated: id.preview_asset_paths.bg_animated };
+      tmp17 = { fgStatic: id.preview_asset_paths.fg_static, fgVideo: id.preview_asset_paths.fg_video, fgAnimated: id.preview_asset_paths.fg_animated, bgStatic: id.preview_asset_paths.bg_static, bgAnimated: id.preview_asset_paths.bg_animated };
+      const obj5 = { fgStatic: id.preview_asset_paths.fg_static, fgVideo: id.preview_asset_paths.fg_video, fgAnimated: id.preview_asset_paths.fg_animated, bgStatic: id.preview_asset_paths.bg_static, bgAnimated: id.preview_asset_paths.bg_animated };
     }
     return new tmp(obj);
   }
@@ -215,7 +215,7 @@ class SKURecord extends Record {
       const tmp = require;
       const tmp3 = metroImportDefault;
       if (!hasFlagResult) {
-        const tmpResult = tmp(1405);
+        const tmpResult = tmp(1396);
         hasFlagResult = tmpResult.hasFlag(self.flags, tmp3.PREMIUM_AND_DISTRIBUTION);
       }
       premium = hasFlagResult;

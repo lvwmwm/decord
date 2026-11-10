@@ -1,70 +1,35 @@
-// Module ID: 16123
-// Function ID: 16124
+// Module ID: 16696
+// Function ID: 16697
 // Name: AccountBlockedUsersSetting
-// Dependencies: [4945, 8364, 1087, 558, 576, 504, 1128, 11240, 9802, 16124, 2]
+// Dependencies: [4956, 8432, 1072, 504, 1113, 11540, 9883, 16697, 2]
 
-// Module 16123 (AccountBlockedUsersSetting)
+// Module 16696 (AccountBlockedUsersSetting)
 import get_initialized from "get initialized" /* 504 */;
-import react from "react" /* 576 */;
-import Constants from "Constants" /* 1087 */;
-import intl2 from "intl" /* 1128 */;
-import SettingsConstants from "SettingsConstants" /* 8364 */;
-import DenyIcon from "DenyIcon" /* 9802 */;
-import RelationshipStore from "RelationshipStore" /* 4945 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11240 */;
+import Constants from "Constants" /* 1072 */;
+import intl2 from "intl" /* 1113 */;
+import SettingsConstants from "SettingsConstants" /* 8432 */;
+import DenyIcon from "DenyIcon" /* 9883 */;
+import RelationshipStore from "RelationshipStore" /* 4956 */;
+import SettingBuilders from "SettingBuilders" /* 11540 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const UserSettingsSections = Constants.UserSettingsSections;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAccountBlockedUsersSettingDescription() {
-  let blockedIDs;
-  let tmp4;
-  let tmp5;
-  let tmp8;
-  const obj = react;
-  const cResult = obj.c(4);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [RelationshipStore];
-    const fn = function s() {
-      return "" + blockedIDs.getBlockedIDs().length;
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  const tmpResult = get_initialized;
-  const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
-  if (cResult[2] !== stateFromStores) {
-    const intl = tmp(1128).intl;
-    const obj2 = { numberOfBlockedUsers: stateFromStores };
-    const formatResult = intl.format(intl2.t["r91W/h"], obj2);
-    cResult[2] = stateFromStores;
-    cResult[3] = formatResult;
-    tmp8 = formatResult;
-  } else {
-    tmp8 = cResult[3];
-  }
-  return tmp8;
-}) : (function useAccountBlockedUsersSettingDescription() {
-  let blockedIDs;
-  const items = [RelationshipStore];
-  const obj = get_initialized;
-  const numberOfBlockedUsers = obj.useStateFromStores(items, () => "" + blockedIDs.getBlockedIDs().length);
-  const intl = intl2.intl;
-  return intl.format(intl2.t["r91W/h"], { numberOfBlockedUsers });
-});
 let obj = {
   useTitle() {
     const intl = intl2.intl;
     return intl.string(intl2.t.PFOUKW);
   },
-  useDescription: tmp2,
+  useDescription: function useAccountBlockedUsersSettingDescription() {
+    let blockedIDs;
+    const items = [RelationshipStore];
+    const obj = get_initialized;
+    const numberOfBlockedUsers = obj.useStateFromStores(items, () => "" + blockedIDs.getBlockedIDs().length);
+    const intl = intl2.intl;
+    return intl.format(intl2.t["r91W/h"], { numberOfBlockedUsers });
+  },
   IconComponent: DenyIcon.DenyIcon,
   parent: MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
   screen: {

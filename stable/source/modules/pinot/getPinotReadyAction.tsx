@@ -1,16 +1,16 @@
-// Module ID: 15103
-// Function ID: 15104
+// Module ID: 15646
+// Function ID: 15647
 // Name: getPinotReadyAction
-// Dependencies: [15104, 2]
+// Dependencies: [11328, 2]
 // Exports: getPinotReadyAction
 
-// Module 15103 (getPinotReadyAction)
-import PinotMemberSettingStore from "PinotMemberSettingStore" /* 15104 */;
+// Module 15646 (getPinotReadyAction)
+import PinotMemberSettingStore from "PinotMemberSettingStore" /* 11328 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/pinot/getPinotReadyAction.tsx");
 
-export const getPinotReadyAction = function getPinotReadyAction(swp_message_promotion_locked) {
+export function getPinotReadyAction(swp_message_promotion_locked) {
   let prop;
   let flag = swp_message_promotion_locked.swp_message_promotion_locked;
   if (flag == null) {
@@ -22,4 +22,4 @@ export const getPinotReadyAction = function getPinotReadyAction(swp_message_prom
     prop = null;
   }
   return obj;
-};
+}

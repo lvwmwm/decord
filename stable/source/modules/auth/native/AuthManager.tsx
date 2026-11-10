@@ -1,23 +1,24 @@
-// Module ID: 17452
-// Function ID: 17453
+// Module ID: 18037
+// Function ID: 18038
 // Name: AuthManager
-// Dependencies: [5, 17, 13342, 1087, 7900, 13642, 2004, 584, 4851, 7923, 17453, 1384, 13345, 9082, 13726, 13641, 7481, 14672, 2]
+// Dependencies: [5, 17, 13973, 1072, 7940, 14277, 1996, 572, 4859, 7963, 18038, 1375, 13976, 9118, 14360, 18044, 14276, 7522, 15212, 2]
 
-// Module 17452 (AuthManager)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1087 */;
-import PlatformUtils from "PlatformUtils" /* 1384 */;
-import transitionToGuild from "transitionToGuild" /* 7481 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 7900 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9082 */;
-import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 13342 */;
-import NUFActionCreators from "NUFActionCreators" /* 13641 */;
-import NUFConstants from "NUFConstants" /* 13642 */;
-import nuf_NUFActionCreators from "nuf/NUFActionCreators" /* 13726 */;
-import SentMessageIntentsHandlerDefault from "SentMessageIntentsHandler" /* 14672 */;
+// Module 18037 (AuthManager)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import Constants from "Constants" /* 1072 */;
+import PlatformUtils from "PlatformUtils" /* 1375 */;
+import transitionToGuild from "transitionToGuild" /* 7522 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 7940 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9118 */;
+import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 13973 */;
+import NUFActionCreators from "NUFActionCreators" /* 14276 */;
+import NUFConstants from "NUFConstants" /* 14277 */;
+import nuf_NUFActionCreators from "nuf/NUFActionCreators" /* 14360 */;
+import SentMessageIntentsHandlerDefault from "SentMessageIntentsHandler" /* 15212 */;
+import MobileOnboardingFrictionExperimentDefault from "MobileOnboardingFrictionExperiment" /* 18044 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_native from "react-native" /* 17 */;
-import LifecycleManager from "LifecycleManager" /* 2004 */;
+import LifecycleManager from "LifecycleManager" /* 1996 */;
 import size from "module_2" /* 2 */;
 
 let DCDShortcutManager, LOGIN, c2;
@@ -25,7 +26,7 @@ let DCDShortcutManager, LOGIN, c2;
 let closure_4;
 let hasOwnProperty;
 let tmp;
-const PushNotificationActionCreators = tmp(13345);
+const PushNotificationActionCreators = tmp(13976);
 ({ NativeModules: closure_4, Keyboard: hasOwnProperty } = react_native);
 const PermissionStateType = PushNotificationPermissionStore.PermissionStateType;
 const ME = Constants.ME;
@@ -59,7 +60,7 @@ class AuthManager extends LifecycleManager {
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "IconComponent", done: "+352" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -100,7 +101,7 @@ class AuthManager extends LifecycleManager {
               onComplete();
             }
             c4 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "HermesInternal", done: null };
           } catch (tmp18) {
             c4 = 3;
             throw tmp18;
@@ -125,12 +126,14 @@ class AuthManager extends LifecycleManager {
         const tmpResult = nuf_NUFActionCreators;
         tmpResult.setNewUser(constants.ORGANIC_REGISTERED);
       }
+      const obj3 = MobileOnboardingFrictionExperimentDefault;
+      const result = obj3.trackMobileOnboardingFrictionExposure("AuthManager");
       const tmpResult2 = NUFActionCreators;
       tmpResult2.startOnboarding();
     };
     applyArgumentsResult.handleLoginWithConnection = function handleLoginWithConnection() {
       const result = require.handlePushNotificationOptIn(() => {
-        const obj = closure_1_0(closure_1_2[16]);
+        const obj = closure_1_0(closure_1_2[17]);
         obj.transitionToGuild(closure_1_7);
         const obj2 = closure_1_1(closure_1_2[7]);
         obj2.dispatch({ type: "DEFERRED_INVITE_SHOW" });

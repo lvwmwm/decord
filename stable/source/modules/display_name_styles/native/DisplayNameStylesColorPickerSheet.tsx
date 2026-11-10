@@ -1,362 +1,180 @@
-// Module ID: 16745
-// Function ID: 16746
+// Module ID: 17343
+// Function ID: 17344
 // Name: DisplayNameStylesColorPickerSheet
-// Dependencies: [32, 19, 17, 1410, 1087, 21, 1105, 16742, 5003, 587, 558, 576, 8691, 10697, 1409, 5244, 5242, 15876, 1267, 1128, 2928, 16733, 5276, 6951, 12, 16743, 5297, 2]
+// Dependencies: [32, 19, 17, 17332, 1072, 21, 5014, 575, 8741, 10776, 17333, 1113, 1090, 5260, 5258, 16444, 1252, 5272, 17328, 2932, 5634, 17337, 2]
+// Exports: default
 
-// Module 16745 (DisplayNameStylesColorPickerSheet)
-import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1087 */;
-import utils_ColorUtils from "utils/ColorUtils" /* 1105 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import DisplayNameStylesUtils from "DisplayNameStylesUtils" /* 1409 */;
-import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1410 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5242 */;
-import HapticUtils from "HapticUtils" /* 5244 */;
-import showCustomColorPickerActionSheetDefault from "showCustomColorPickerActionSheet" /* 15876 */;
-import ColorPickerConsts from "ColorPickerConsts" /* 16742 */;
-import _slicedToArray_mod from "_slicedToArray" /* 32 */;
+// Module 17343 (DisplayNameStylesColorPickerSheet)
+import nativeDefault from "native" /* 575 */;
+import Constants from "Constants" /* 1072 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import _modDef2932 from "module_2932" /* 2932 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
+import HapticUtils from "HapticUtils" /* 5260 */;
+import useDisplayNameStylesEffectDefaultColorsDefault from "useDisplayNameStylesEffectDefaultColors" /* 10776 */;
+import showCustomColorPickerActionSheetDefault from "showCustomColorPickerActionSheet" /* 16444 */;
+import DisplayNameStylesSheetHeaderDefault from "DisplayNameStylesSheetHeader" /* 17328 */;
+import DisplayNameStylesColorPickerConstants from "DisplayNameStylesColorPickerConstants" /* 17332 */;
+import useColorPresetsWithA11yLabelsDefault from "useColorPresetsWithA11yLabels" /* 17333 */;
+import DisplayNameStylesCustomColorButtonDefault from "DisplayNameStylesCustomColorButton" /* 17337 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5003 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
-let BottomSheet;
+let BottomSheet, dependencyMap, importDefault;
 
-let StyleSheet;
-let c10;
 let c9;
 let hasOwnProperty;
+let metroImportAll;
 let metroRequire;
 let obj2;
 let obj3;
 let obj4;
 let obj5;
-let obj6;
-let obj7;
 let size;
-let size1;
-let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
-({ View: hasOwnProperty, Pressable: metroRequire, StyleSheet } = react_native);
-let getColorPresetsForEffect = DisplayNameStylesConstants.getColorPresetsForEffect;
+({ View: hasOwnProperty, Pressable: metroRequire } = react_native);
+const SHEET_CONTENT_MAX_WIDTH = DisplayNameStylesColorPickerConstants.SHEET_CONTENT_MAX_WIDTH;
 const AnalyticEvents = Constants.AnalyticEvents;
-({ jsx: c9, jsxs: c10 } = Fragment);
+({ jsx: metroImportAll, jsxs: c9 } = Fragment);
 let createStyles = createStyles_mod;
-let obj = { container: { flex: 1 }, contentContainer: obj2, presetGrid: obj3, presetRow: obj4, presetColor: size, presetColorSelected: obj5, checkmarkOverlay: obj6, checkmark: size1, buttonsContainer: obj7, button: { flex: 1 } };
-obj2 = { alignSelf: "center", paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_16 };
+let obj = { sheetBackground: obj2, container: obj3, contentContainer: { alignSelf: "center", width: "100%", maxWidth: SHEET_CONTENT_MAX_WIDTH }, presetGrid: obj4, presetColor: size, presetColorSelected: obj5 };
+obj2 = { borderTopLeftRadius: nativeDefault.radii.lg, borderTopRightRadius: nativeDefault.radii.lg };
 createStyles = createStyles.createStyles;
-obj3 = { gap: nativeDefault.space.PX_16, marginBottom: nativeDefault.space.PX_16 };
-obj4 = { gap: nativeDefault.space.PX_16, flexDirection: "row", justifyContent: "center" };
-size = { width: 42, height: 42, borderRadius: nativeDefault.radii.sm, borderWidth: 2, borderColor: "transparent" };
-obj5 = { borderColor: nativeDefault.colors.CONTROL_BRAND_FOREGROUND };
-obj6 = { alignItems: "center", justifyContent: "center" };
-const merged = Object.assign(StyleSheet.absoluteFillObject);
-size1 = { width: ColorPickerConsts.CHECKMARK_SIZE, height: ColorPickerConsts.CHECKMARK_SIZE };
-obj7 = { alignSelf: "stretch", flexDirection: "row", gap: nativeDefault.space.PX_16 };
-let closure_11 = createStyles(obj);
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNameStylesColorPickerSheet(selectedColor) {
-  let closure_4;
-  let closure_6;
-  let closure_7;
-  let color;
-  let onSelectColor;
-  let presetRow;
-  let obj = selectedColor(onSelectColor[11]);
-  const cResult = obj.c(68);
-  selectedColor = selectedColor.selectedColor;
-  const selectedEffectId = selectedColor.selectedEffectId;
-  onSelectColor = selectedColor.onSelectColor;
-  const tmp2 = closure_11();
-  _slicedToArray = tmp2;
-  let obj2 = selectedColor(onSelectColor[12]);
-  const bottomSheetRef = obj2.useBottomSheetRef().bottomSheetRef;
-  let tmp3 = selectedEffectId(onSelectColor[13])()[selectedEffectId];
-  react = tmp3;
-  if (cResult[0] !== selectedEffectId) {
-    let tmp6;
-    const tmp5 = globalThis;
-    const _Symbol = Symbol;
-    let str = "react.memo_cache_sentinel";
-    if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-      const fn = function y(arg0) {
-        return arg0[0];
-      };
-      cResult[2] = fn;
-      tmp6 = fn;
-    } else {
-      tmp6 = cResult[2];
-    }
-    let tmp7 = getColorPresetsForEffect;
-    const arr = getColorPresetsForEffect(selectedEffectId);
-    const mapped = arr.map(tmp6);
-    cResult[0] = selectedEffectId;
-    cResult[1] = mapped;
-  }
-  if (cResult[3] === selectedColor) {
-    let tmp9;
-    let tmp16;
-    if (cResult[4] === selectedEffectId) {
-      tmp9 = cResult[5];
-    }
-    [color, closure_6] = react.useState(tmp9);
-    getColorPresetsForEffect = tmp14;
-    const _Symbol2 = Symbol;
-    if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-      class M {
-        constructor(arg0) {
-          closure_6(arg0);
-        }
-      }
-      cResult[6] = M;
-      tmp16 = M;
-    } else {
-      class M {
-        constructor(arg0) {
-          closure_6(arg0);
-        }
-      }
-    }
-    M = tmp16;
-    if (cResult[7] === tmp3[0]) {
-      class M {
-        constructor(arg0) {
-          closure_6(arg0);
-        }
-      }
-      if (cResult[10] === color) {
-        class M {
-          constructor(arg0) {
-            closure_6(arg0);
-          }
-        }
-        if (cResult[13] === tmp3[0]) {
-          class M {
-            constructor(arg0) {
-              closure_6(arg0);
-            }
-          }
-        }
-        class L {
-          constructor() {
-            let items;
-            const obj = HapticUtils;
-            const result = obj.triggerHapticFeedback(HapticUtils.HapticFeedbackTypes.IMPACT_MEDIUM);
-            const tmp3 = closure_7;
-            if (tmp3) {
-              onSelectColor(first);
-              const obj3 = { default: first === closure_4[0], colors: items };
-              items = [first];
-              const obj2 = AnalyticsUtilsDefault;
-              obj2.track(AnalyticEvents.DISPLAY_NAME_STYLES_COLOR_SELECTED, obj3);
-            }
-            const obj4 = ActionSheetActionCreatorsDefault;
-            obj4.hideActionSheet();
-          }
-        }
-        cResult[13] = tmp3[0];
-        cResult[14] = color !== selectedColor;
-        cResult[15] = color;
-        cResult[16] = onSelectColor;
-        cResult[17] = L;
-      }
-      cResult[10] = color;
-      cResult[11] = onSelectColor;
-      cResult[12] = tmp19;
-    }
-    const fn2 = function x() {
-      const obj = HapticUtils;
-      const result = obj.triggerHapticFeedback(HapticUtils.HapticFeedbackTypes.IMPACT_LIGHT);
-      onSelectColor(closure_4[0]);
-      const obj2 = ActionSheetActionCreatorsDefault;
-      obj2.hideActionSheet();
-    };
-    cResult[7] = tmp3[0];
-    cResult[8] = onSelectColor;
-    class I {
-      constructor() {
-        const obj = DisplayNameStylesUtils;
-        return obj.resolveSolidPresetSeed(selectedColor, selectedEffectId);
-      }
-    }
-  }
-  class I {
-    constructor() {
-      const obj = DisplayNameStylesUtils;
-      return obj.resolveSolidPresetSeed(selectedColor, selectedEffectId);
-    }
-  }
-  cResult[3] = selectedColor;
-  cResult[4] = selectedEffectId;
-  cResult[5] = I;
-  tmp9 = I;
-}) : (function DisplayNameStylesColorPickerSheet(selectedColor) {
+obj3 = { flex: 1, paddingTop: nativeDefault.space.PX_4, paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_16 };
+obj4 = { flexDirection: "row", flexWrap: "wrap", justifyContent: "center", columnGap: nativeDefault.space.PX_24, rowGap: nativeDefault.space.PX_20, marginBottom: nativeDefault.space.PX_20 };
+size = { width: 40, height: 40, borderRadius: nativeDefault.radii.sm, borderWidth: 2, borderColor: "transparent" };
+obj5 = { borderColor: nativeDefault.colors.BACKGROUND_BRAND };
+let closure_10 = createStyles(obj);
+size = size_mod;
+let result = size.fileFinishedImporting("modules/display_name_styles/native/DisplayNameStylesColorPickerSheet.tsx");
+
+export default function DisplayNameStylesColorPickerSheet(arg0) {
   let Button;
-  let Button2;
-  let Button3;
-  let chunkResult;
+  let closure_2;
   let closure_4;
-  let closure_6;
-  let color;
-  let intl;
   let intl2;
   let intl3;
   let intl4;
   let items5;
   let items6;
-  let obj11;
-  let obj13;
-  let obj3;
-  let obj4;
   let obj5;
   let obj6;
-  let presetRow;
-  let tmp10;
-  selectedColor = selectedColor.selectedColor;
-  const selectedEffectId = selectedColor.selectedEffectId;
-  const onSelectColor = selectedColor.onSelectColor;
-  color = undefined;
-  closure_6 = undefined;
-  let tmp = closure_11();
-  _slicedToArray = tmp;
-  let obj = selectedColor(onSelectColor[12]);
+  let obj7;
+  let obj8;
+  let onSelectColor;
+  let presetColor;
+  let selectedColor;
+  let selectedEffectId;
+  let stringResult;
+  let tmp2Result;
+  let tmp4Result;
+  ({ selectedColor, selectedEffectId, onSelectColor } = arg0);
+  dependencyMap = undefined;
+  let color;
+  react = undefined;
+  const tmp = closure_10();
+  importDefault = tmp;
+  let tmp3 = dependencyMap;
+  let obj = onSelectColor(8741);
   const bottomSheetRef = obj.useBottomSheetRef().bottomSheetRef;
-  const tmp2 = selectedEffectId(onSelectColor[13])()[selectedEffectId];
-  react = tmp2;
-  let items = [selectedEffectId];
-  const memo = react.useMemo(() => {
-    const arr = getColorPresetsForEffect(selectedEffectId);
-    return arr.map((item) => item[0]);
-  }, items);
-  [color, closure_6] = react.useState(() => {
-    const obj = DisplayNameStylesUtils;
-    return obj.resolveSolidPresetSeed(selectedColor, selectedEffectId);
-  });
-  const items1 = [color, selectedColor];
-  const memo1 = react.useMemo(() => first !== selectedColor, items1);
-  let closure_8 = react.useCallback((arg0) => {
-    closure_6(arg0);
+  const tmp5 = useDisplayNameStylesEffectDefaultColorsDefault()[selectedEffectId];
+  dependencyMap = tmp5;
+  let obj2 = react;
+  let tmp6 = color(react.useState(selectedColor), 2);
+  color = tmp6[0];
+  react = tmp6[1];
+  const arr = useColorPresetsWithA11yLabelsDefault(selectedEffectId);
+  const tmp8 = color !== tmp5[0] && !arr.some((item) => item.colors[0] === first);
+  let obj3 = { colors: tmp5, a11yLabel: "" + stringResult + ", " + tmp2Result.int2hex(tmp5[0]) };
+  const intl = tmp2(1113).intl;
+  stringResult = intl.string(onSelectColor(1113).t.bBvAEH);
+  let items = [obj3, ...arr.filter((item) => item.colors[0] !== closure_2[0])];
+  let closure_5 = tmp10;
+  tmp2Result = onSelectColor(1090);
+  let closure_6 = obj2.useCallback((arg0) => {
+    closure_4(arg0);
   }, []);
-  const items2 = [tmp2, onSelectColor];
-  const items3 = [color, onSelectColor];
-  const callback = react.useCallback(() => {
+  const items1 = [tmp5, onSelectColor];
+  const onPress = obj2.useCallback(() => {
     const obj = HapticUtils;
     const result = obj.triggerHapticFeedback(HapticUtils.HapticFeedbackTypes.IMPACT_LIGHT);
-    onSelectColor(closure_4[0]);
+    onSelectColor(closure_2[0]);
     const obj2 = ActionSheetActionCreatorsDefault;
     obj2.hideActionSheet();
-  }, items2);
-  const items4 = [memo1, color, onSelectColor, tmp2];
-  const callback1 = react.useCallback(() => {
+  }, items1);
+  const items2 = [color];
+  const items3 = [color !== selectedColor, color, onSelectColor, tmp5];
+  const callback1 = obj2.useCallback(() => {
     let obj = {
       color,
       onSelect(arg0) {
-        const obj = selectedColor(onSelectColor[15]);
-        const result = obj.triggerHapticFeedback(selectedColor(onSelectColor[15]).HapticFeedbackTypes.IMPACT_MEDIUM);
-        closure_1_2(arg0);
-        const obj2 = selectedEffectId(onSelectColor[16]);
-        obj2.hideActionSheet();
+        const obj = onSelectColor(closure_2[13]);
+        const result = obj.triggerHapticFeedback(onSelectColor(closure_2[13]).HapticFeedbackTypes.IMPACT_MEDIUM);
+        closure_1_4(arg0);
       },
       actionButtonVariant: "primary"
     };
-    showCustomColorPickerActionSheetDefault(obj);
-  }, items3);
-  const callback2 = react.useCallback(() => {
+    showCustomColorPickerActionSheetDefault(obj, "stack");
+  }, items2);
+  const callback2 = obj2.useCallback(() => {
     let items;
     const obj = HapticUtils;
     const result = obj.triggerHapticFeedback(HapticUtils.HapticFeedbackTypes.IMPACT_MEDIUM);
-    const tmp3 = memo1;
+    const tmp3 = closure_5;
     if (tmp3) {
       onSelectColor(first);
-      const obj3 = { default: first === closure_4[0], colors: items };
+      const obj3 = { default: first === closure_2[0], colors: items };
       items = [first];
       const obj2 = AnalyticsUtilsDefault;
       obj2.track(AnalyticEvents.DISPLAY_NAME_STYLES_COLOR_SELECTED, obj3);
     }
     const obj4 = ActionSheetActionCreatorsDefault;
     obj4.hideActionSheet();
-  }, items4);
-  let obj2 = { ref: bottomSheetRef, header: closure_9(tmp10, obj3), children: closure_9(color, obj5) };
-  BottomSheet = selectedColor(onSelectColor[26]).BottomSheet;
-  obj3 = { title: intl.string(selectedEffectId(onSelectColor[20])["6OxgN7"]), trailing: closure_9(Button, obj4) };
-  tmp10 = selectedEffectId(onSelectColor[21]);
-  intl = selectedColor(onSelectColor[19]).intl;
-  obj4 = { text: intl2.string(selectedColor(onSelectColor[19]).t.XqMe3N), onPress: callback2, variant: "primary", size: "sm" };
-  Button = selectedColor(onSelectColor[22]).Button;
-  intl2 = selectedColor(onSelectColor[19]).intl;
-  obj5 = { style: tmp.container, children: closure_10(color, obj6) };
-  obj6 = { style: tmp.contentContainer, children: items5 };
-  const obj7 = {
-    style: tmp.presetGrid,
-    children: chunkResult.map((arr, index) => {
-      let presetColor;
-      let closure_0 = index;
-      let obj = {
-        style: presetRow.presetRow,
-        children: arr.map((item, index) => {
-          let CheckmarkLargeIcon;
-          let items;
-          let obj3;
-          let obj5;
-          let str;
-          let tmp5Result;
-          let closure_0 = item;
-          let tmp = item === first;
-          const obj = {
-            onPress() {
-              return closure_2_8(closure_0);
-            },
-            style: items,
-            accessibilityRole: "button",
-            accessibilityState: { selected: tmp },
-            accessibilityLabel: tmp5Result.int2hex(item),
-            children: tmp
-          };
-          items = [presetColor.presetColor, , ];
-          const obj2 = { backgroundColor: obj3.int2hex(item) };
-          items[1] = obj2;
-          items[2] = tmp && presetColor.presetColorSelected;
-          obj3 = utils_ColorUtils;
-          const tmp3 = metroRequire;
-          tmp5Result = utils_ColorUtils;
-          if (tmp) {
-            const obj4 = { style: presetColor.checkmarkOverlay, pointerEvents: "none", children: React4(CheckmarkLargeIcon, obj5) };
-            obj5 = { size: "custom", style: presetColor.checkmark, color: str };
-            CheckmarkLargeIcon = tmp5(6951).CheckmarkLargeIcon;
-            const tmp5Result2 = utils_ColorUtils;
-            const darkness = tmp5Result2.getDarkness(item);
-            str = "black";
-            const tmp7 = hasOwnProperty;
-            if (darkness > ColorPickerConsts.DARK_SWATCH_THRESHOLD) {
-              str = "white";
-            }
-            tmp = tmp2(tmp7, obj4);
-          }
-          return React4(tmp3, obj, 6 * closure_0 + index);
-        })
-      };
-      return closure_1_9(first, obj, index);
+  }, items3);
+  let obj4 = { backgroundStyles: tmp.sheetBackground, ref: bottomSheetRef, header: closure_8(tmp4Result, obj5), children: closure_8(closure_5, obj7) };
+  BottomSheet = tmp2(5272).BottomSheet;
+  obj5 = { title: intl2.string(_modDef2932["6OxgN7"]), trailing: closure_8(Button, obj6) };
+  tmp4Result = DisplayNameStylesSheetHeaderDefault;
+  intl2 = tmp2(1113).intl;
+  obj6 = { text: intl3.string(onSelectColor(1113).t.XqMe3N), onPress: callback2, variant: "primary", size: "sm" };
+  Button = tmp2(5634).Button;
+  intl3 = tmp2(1113).intl;
+  obj7 = { style: tmp.container, children: closure_9(closure_5, obj8) };
+  let tmp19;
+  obj8 = { style: tmp.contentContainer, children: items6 };
+  const obj9 = { style: tmp.presetGrid, children: items5 };
+  const tmp4Result2 = DisplayNameStylesCustomColorButtonDefault;
+  if (tmp8) {
+    const items4 = [color];
+    tmp19 = items4;
+  }
+  items5 = [
+    closure_8(tmp4Result2, { activeColors: tmp19, isSelected: tmp8, onPress: callback1 }),
+    items.map((colors, index) => {
+      let a11yLabel;
+      let items;
+      let obj3;
+      let tmp;
+      [tmp] = colors.colors;
+      const obj = { onPress: tmp === closure_2[0] ? callback : (() => closure_6(onSelectColor)), style: items, accessibilityRole: "button", accessibilityState: { selected: tmp === first }, accessibilityLabel: a11yLabel };
+      items = [presetColor.presetColor, , ];
+      a11yLabel = colors.a11yLabel;
+      const obj2 = { backgroundColor: obj3.int2hex(tmp) };
+      items[1] = obj2;
+      const tmp6 = tmp === first && presetColor.presetColorSelected;
+      items[2] = tmp6;
+      obj3 = onSelectColor(closure_2[12]);
+      return closure_1_8(closure_6, obj, index);
     })
-  };
-  const obj8 = selectedEffectId(onSelectColor[24]);
-  chunkResult = obj8.chunk(memo, 6);
-  items5 = [closure_9(color, obj7), ];
-  const obj9 = { style: tmp.buttonsContainer, children: items6 };
-  const obj10 = { style: tmp.button, children: closure_9(Button2, obj11) };
-  obj11 = { text: intl3.string(selectedEffectId(onSelectColor[20]).gIeJTK), onPress: callback, variant: "secondary", size: "md", grow: true };
-  Button2 = selectedColor(onSelectColor[22]).Button;
-  intl3 = selectedColor(onSelectColor[19]).intl;
-  items6 = [closure_9(color, obj10), ];
-  const obj12 = { style: tmp.button, children: closure_9(Button3, obj13) };
-  obj13 = { text: intl4.string(selectedColor(onSelectColor[19]).t["FHBa/1"]), onPress: callback1, variant: "secondary", size: "md", icon: closure_9(selectedColor(onSelectColor[25]).EyeDropperIcon, { size: "sm" }), grow: true };
-  Button3 = selectedColor(onSelectColor[22]).Button;
-  intl4 = selectedColor(onSelectColor[19]).intl;
-  items6[1] = closure_9(color, obj12);
-  items5[1] = closure_10(color, obj9);
-  return closure_9(BottomSheet, obj2);
-});
-size = size_mod;
-let result = size.fileFinishedImporting("modules/display_name_styles/native/DisplayNameStylesColorPickerSheet.tsx");
-
-export default tmp6;
+  ];
+  items6 = [closure_9(closure_5, obj9), ];
+  const obj10 = { text: intl4.string(onSelectColor(1113).t.yBZMsQ), onPress, variant: "secondary", size: "md", grow: true };
+  const Button2 = tmp2(5634).Button;
+  intl4 = tmp2(1113).intl;
+  items6[1] = closure_8(Button2, obj10);
+  return closure_8(BottomSheet, obj4);
+};

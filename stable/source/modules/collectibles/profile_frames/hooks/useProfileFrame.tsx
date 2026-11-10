@@ -1,68 +1,22 @@
-// Module ID: 8735
-// Function ID: 8736
+// Module ID: 8785
+// Function ID: 8786
 // Name: useProfileFrame
-// Dependencies: [7682, 7697, 7689, 558, 576, 504, 2]
+// Dependencies: [7720, 7735, 7727, 504, 2]
+// Exports: default
 
-// Module 8735 (useProfileFrame)
-import ProfileFrameRecord from "ProfileFrameRecord" /* 7689 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7682 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7697 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 8785 (useProfileFrame)
+import ProfileFrameRecord from "ProfileFrameRecord" /* 7727 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7720 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7735 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
 const isProfileFrameRecord = ProfileFrameRecord.isProfileFrameRecord;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useProfileFrame(arg0) {
-  let closure_0;
-  let first;
-  let tmp7;
-  _require = arg0;
-  const tmp = _require;
-  const obj = require("react");
-  const cResult = obj.c(3);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [CollectiblesCategoryStore, ];
-    items[1] = CollectiblesPurchaseStore;
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function n() {
-      if (null != closure_0) {
-        const product = CollectiblesCategoryStore.getProduct(tmp);
-        let first;
-        if (product != null) {
-          first = product.items[0];
-        }
-        if (isProfileFrameRecord(first)) {
-          return product.items[0];
-        } else {
-          const purchase = CollectiblesPurchaseStore.getPurchase(tmp);
-          let first1;
-          if (purchase != null) {
-            first1 = purchase.items[0];
-          }
-          let first2;
-          if (isProfileFrameRecord(first1)) {
-            first2 = purchase.items[0];
-          }
-          return first2;
-        }
-      }
-    };
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    tmp7 = fn;
-  } else {
-    tmp7 = cResult[2];
-  }
-  const tmpResult = tmp(504);
-  return tmpResult.useStateFromStores(first, tmp7);
-}) : (function useProfileFrame(arg0) {
+const result = size.fileFinishedImporting("modules/collectibles/profile_frames/hooks/useProfileFrame.tsx");
+
+export default function useProfileFrame(arg0) {
   let closure_0;
   _require = arg0;
   const items = [CollectiblesCategoryStore, CollectiblesPurchaseStore];
@@ -90,7 +44,4 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useProfile
       }
     }
   });
-});
-const result = size.fileFinishedImporting("modules/collectibles/profile_frames/hooks/useProfileFrame.tsx");
-
-export default tmp2;
+};

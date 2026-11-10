@@ -1,12 +1,12 @@
-// Module ID: 16394
-// Function ID: 16395
+// Module ID: 16983
+// Function ID: 16984
 // Name: usePopularOrbShopProducts
-// Dependencies: [5, 32, 19, 1089, 1104, 1092, 16395, 16396, 1093, 9508, 16397, 2]
+// Dependencies: [5, 32, 19, 1074, 1089, 1077, 16984, 16985, 1078, 9580, 16986, 2]
 // Exports: usePopularOrbShopProducts
 
-// Module 16394 (usePopularOrbShopProducts)
-import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1089 */;
-import DurationsDefault from "Durations" /* 1104 */;
+// Module 16983 (usePopularOrbShopProducts)
+import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
+import DurationsDefault from "Durations" /* 1089 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -21,7 +21,7 @@ let closure_7 = 10 * DurationsDefault.Millis.SECOND;
 const result = size.fileFinishedImporting("modules/collectibles/native/hooks/usePopularOrbShopProducts.tsx");
 
 export const MIN_PRODUCTS_FOR_ORB_SHOP_CAROUSEL = 3;
-export const usePopularOrbShopProducts = function usePopularOrbShopProducts(enabled) {
+export function usePopularOrbShopProducts(enabled) {
   let closure_4;
   let closure_5;
   let tmp18;
@@ -73,7 +73,7 @@ export const usePopularOrbShopProducts = function usePopularOrbShopProducts(enab
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: "+352" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           let c4;
@@ -146,7 +146,7 @@ export const usePopularOrbShopProducts = function usePopularOrbShopProducts(enab
                 c4(true);
               }
               sort_type = 3;
-              return { value: "IconComponent", done: "+352" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp30) {
             closure_3 = tmp30;
@@ -241,4 +241,4 @@ export const usePopularOrbShopProducts = function usePopularOrbShopProducts(enab
     enabled = !first2;
   }
   return obj3;
-};
+}

@@ -1,27 +1,27 @@
-// Module ID: 11511
-// Function ID: 11512
+// Module ID: 11814
+// Function ID: 11815
 // Name: transformMessage
-// Dependencies: [1406, 4855, 4945, 1392, 1087, 11512, 2000, 1388, 5737, 6398, 9294, 2]
+// Dependencies: [1397, 4863, 4956, 1383, 1072, 11815, 1992, 1379, 5754, 6438, 9331, 2]
 // Exports: transformMessageRecord, transformServerMessage
 
-// Module 11511 (transformMessage)
-import Constants from "Constants" /* 1087 */;
-import Server from "Server" /* 2000 */;
-import MarkupUtilsDefault from "MarkupUtils" /* 5737 */;
-import useMessageAuthor from "useMessageAuthor" /* 6398 */;
-import transformUserDefault from "transformUser" /* 9294 */;
-import getRemoteIconURLDefault from "getRemoteIconURL" /* 11512 */;
-import UserRecord from "UserRecord" /* 1406 */;
-import ChannelStore from "ChannelStore" /* 4855 */;
-import RelationshipStore from "RelationshipStore" /* 4945 */;
-import UserStore from "UserStore" /* 1392 */;
+// Module 11814 (transformMessage)
+import Constants from "Constants" /* 1072 */;
+import Server from "Server" /* 1992 */;
+import MarkupUtilsDefault from "MarkupUtils" /* 5754 */;
+import useMessageAuthor from "useMessageAuthor" /* 6438 */;
+import transformUserDefault from "transformUser" /* 9331 */;
+import getRemoteIconURLDefault from "getRemoteIconURL" /* 11815 */;
+import UserRecord from "UserRecord" /* 1397 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import RelationshipStore from "RelationshipStore" /* 4956 */;
+import UserStore from "UserStore" /* 1383 */;
 import size_mod from "module_2" /* 2 */;
 
-let images, results;
+let images;
 
 let tmp;
-const GlobalUtils = tmp(1388);
-const f110625 = (emoji) => {
+const GlobalUtils = tmp(1379);
+const f100222 = (emoji) => {
   let id;
   let obj2;
   const obj = { emoji: obj2 };
@@ -306,7 +306,7 @@ const MessageEmbedTypes = Constants.MessageEmbedTypes;
 let size = size_mod;
 const result = size.fileFinishedImporting("modules/rpc/helpers/transformMessage.tsx");
 
-export const transformMessageRecord = function transformMessageRecord(id) {
+export function transformMessageRecord(id) {
   let applicationId;
   let author;
   let channel1;
@@ -369,7 +369,7 @@ export const transformMessageRecord = function transformMessageRecord(id) {
       return items;
     }),
     components: found1,
-    reactions: mapped2.map(f110625),
+    reactions: mapped2.map(f100222),
     nonce: null,
     pinned: null,
     webhook_id: null,
@@ -408,7 +408,7 @@ export const transformMessageRecord = function transformMessageRecord(id) {
   found1 = undefined;
   if (components != null) {
     const mapped1 = components.map(transformComponent);
-    found1 = mapped1.filter(tmp6(1388).isNotNullish);
+    found1 = mapped1.filter(tmp6(1379).isNotNullish);
   }
   const reactions1 = id.reactions;
   const found2 = reactions1.filter((count_details) => {
@@ -445,7 +445,7 @@ export const transformMessageRecord = function transformMessageRecord(id) {
     ({ question: obj3.question, answers: obj3.answers, expiry } = poll);
     ({ allow_multiselect: obj3.allow_multiselect, layout_type: obj3.layout_type } = poll);
     if (null != poll.results) {
-      results = poll.results;
+      const results = poll.results;
       let flag;
       if (results != null) {
         flag = results.is_finalized;
@@ -555,8 +555,8 @@ export const transformMessageRecord = function transformMessageRecord(id) {
   }
   const merged2 = Object.assign(obj9);
   return obj;
-};
-export const transformServerMessage = function transformServerMessage(message) {
+}
+export function transformServerMessage(message) {
   let channel1;
   let channel_id;
   let colorString;
@@ -612,7 +612,7 @@ export const transformServerMessage = function transformServerMessage(message) {
   mapped1 = undefined;
   if (null != message.reactions) {
     const reactions = message.reactions;
-    mapped1 = reactions.map(f110625);
+    mapped1 = reactions.map(f100222);
   }
   ({ nonce: obj.nonce, pinned: obj.pinned, webhook_id: obj.webhook_id, type: obj.type, activity: obj.activity, application: obj.application, application_id: obj.application_id, message_reference: obj.message_reference, flags: obj.flags, sticker_items: obj.sticker_items, poll: obj.poll } = message);
   tmp12 = undefined;
@@ -697,4 +697,4 @@ export const transformServerMessage = function transformServerMessage(message) {
   }
   const merged2 = Object.assign(obj7);
   return obj;
-};
+}

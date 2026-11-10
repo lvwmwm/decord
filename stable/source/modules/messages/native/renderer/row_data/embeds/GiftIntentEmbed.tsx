@@ -1,22 +1,22 @@
-// Module ID: 8479
-// Function ID: 8480
+// Module ID: 8544
+// Function ID: 8545
 // Name: GiftIntentEmbed
-// Dependencies: [8480, 1392, 1394, 5003, 587, 1128, 8483, 5057, 8309, 5699, 8484, 8485, 2]
+// Dependencies: [8545, 1383, 1385, 5014, 575, 1113, 8548, 5068, 8396, 5720, 8549, 8550, 2]
 // Exports: createGiftIntentEmbed
 
-// Module 8479 (GiftIntentEmbed)
-import nativeDefault from "native" /* 587 */;
-import intl5 from "intl" /* 1128 */;
-import PremiumConstants from "PremiumConstants" /* 1394 */;
-import UserUtilsDefault from "UserUtils" /* 5057 */;
-import AssetRegistryDefault from "AssetRegistry" /* 5699 */;
-import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8309 */;
-import PremiumGiftingUtils from "PremiumGiftingUtils" /* 8483 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 8484 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 8485 */;
-import PremiumGiftingIntentStore from "PremiumGiftingIntentStore" /* 8480 */;
-import UserStore from "UserStore" /* 1392 */;
-import createStyles from "createStyles" /* 5003 */;
+// Module 8544 (GiftIntentEmbed)
+import nativeDefault from "native" /* 575 */;
+import intl5 from "intl" /* 1113 */;
+import PremiumConstants from "PremiumConstants" /* 1385 */;
+import UserUtilsDefault from "UserUtils" /* 5068 */;
+import AssetRegistryDefault from "AssetRegistry" /* 5720 */;
+import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8396 */;
+import PremiumGiftingUtils from "PremiumGiftingUtils" /* 8548 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 8549 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 8550 */;
+import PremiumGiftingIntentStore from "PremiumGiftingIntentStore" /* 8545 */;
+import UserStore from "UserStore" /* 1383 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const GiftIntentType = PremiumConstants.GiftIntentType;
@@ -24,7 +24,7 @@ let obj = { headerTextColor: nativeDefault.colors.TEXT_STRONG, subHeaderTextColo
 let closure_6 = createStyles.createNativeStyleProperties(obj);
 const result = size.fileFinishedImporting("modules/messages/native/renderer/row_data/embeds/GiftIntentEmbed.tsx");
 
-export const createGiftIntentEmbed = function createGiftIntentEmbed(message, theme) {
+export function createGiftIntentEmbed(message, theme) {
   let giftIntentType;
   let intl;
   let intl2;
@@ -89,4 +89,4 @@ export const createGiftIntentEmbed = function createGiftIntentEmbed(message, the
       }
     }
   }
-};
+}

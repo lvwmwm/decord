@@ -1,13 +1,13 @@
-// Module ID: 8623
-// Function ID: 8624
+// Module ID: 8692
+// Function ID: 8693
 // Name: NativeChatCapabilities
-// Dependencies: [17, 1384, 8624, 2]
+// Dependencies: [17, 1375, 8693, 2]
 // Exports: nativeChatSupportsAudioEmbeds
 
-// Module 8623 (NativeChatCapabilities)
+// Module 8692 (NativeChatCapabilities)
 import react_native from "react-native" /* 17 */;
-import PlatformUtils from "PlatformUtils" /* 1384 */;
-import react_nativeDefault from "react-native" /* 8624 */;
+import PlatformUtils from "PlatformUtils" /* 1375 */;
+import react_nativeDefault from "react-native" /* 8693 */;
 import size from "module_2" /* 2 */;
 
 let closure_3, constants;
@@ -15,7 +15,7 @@ let closure_3, constants;
 const NativeModules = react_native.NativeModules;
 const result = size.fileFinishedImporting("modules/chat/native/NativeChatCapabilities.tsx");
 
-export const nativeChatSupportsAudioEmbeds = function nativeChatSupportsAudioEmbeds() {
+export function nativeChatSupportsAudioEmbeds() {
   let tmp = closure_3;
   if (null == closure_3) {
     let tmp4;
@@ -43,4 +43,4 @@ export const nativeChatSupportsAudioEmbeds = function nativeChatSupportsAudioEmb
     tmp = tmp4;
   }
   return tmp;
-};
+}

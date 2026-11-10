@@ -1,11 +1,11 @@
-// Module ID: 14993
-// Function ID: 14994
+// Module ID: 15533
+// Function ID: 15534
 // Name: VoiceServerUpdateImmediateExperiment
-// Dependencies: [1455, 2]
+// Dependencies: [1447, 2]
 // Exports: isVoiceServerUpdateImmediateEnabled
 
-// Module 14993 (VoiceServerUpdateImmediateExperiment)
-import ApexExperiment from "ApexExperiment" /* 1455 */;
+// Module 15533 (VoiceServerUpdateImmediateExperiment)
+import ApexExperiment from "ApexExperiment" /* 1447 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -15,7 +15,7 @@ obj2[1] = { enabled: true };
 let closure_0 = ApexExperiment.createApexExperiment(obj);
 const result = size.fileFinishedImporting("modules/gateway/VoiceServerUpdateImmediateExperiment.tsx");
 
-export const isVoiceServerUpdateImmediateEnabled = function isVoiceServerUpdateImmediateEnabled(GatewaySocketDispatcher) {
+export function isVoiceServerUpdateImmediateEnabled(GatewaySocketDispatcher) {
   let flag;
   const obj = closure_0;
   if (closure_0 != null) {
@@ -26,4 +26,4 @@ export const isVoiceServerUpdateImmediateEnabled = function isVoiceServerUpdateI
     flag = false;
   }
   return flag;
-};
+}

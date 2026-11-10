@@ -1,14 +1,14 @@
-// Module ID: 16657
-// Function ID: 16658
+// Module ID: 17252
+// Function ID: 17253
 // Name: SavedCustomThemeActionCreators
-// Dependencies: [5235, 1087, 584, 1297, 2]
+// Dependencies: [5251, 1072, 572, 1282, 2]
 // Exports: fetchUserCustomThemes
 
-// Module 16657 (SavedCustomThemeActionCreators)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1087 */;
-import HTTPUtils from "HTTPUtils" /* 1297 */;
-import SavedCustomThemeStore from "SavedCustomThemeStore" /* 5235 */;
+// Module 17252 (SavedCustomThemeActionCreators)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import Constants from "Constants" /* 1072 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
+import SavedCustomThemeStore from "SavedCustomThemeStore" /* 5251 */;
 import size from "module_2" /* 2 */;
 
 let body;
@@ -16,7 +16,7 @@ let body;
 const Endpoints = Constants.Endpoints;
 const result = size.fileFinishedImporting("modules/client_themes/SavedCustomThemeActionCreators.tsx");
 
-export const fetchUserCustomThemes = function fetchUserCustomThemes() {
+export function fetchUserCustomThemes() {
   if (!SavedCustomThemeStore.isFetching()) {
     let obj = DispatcherDefault;
     obj.dispatch({ type: "SAVED_CUSTOM_THEMES_FETCH_START" });
@@ -42,4 +42,4 @@ export const fetchUserCustomThemes = function fetchUserCustomThemes() {
       obj.dispatch(obj2);
     });
   }
-};
+}

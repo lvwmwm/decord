@@ -1,13 +1,13 @@
-// Module ID: 8531
-// Function ID: 8532
+// Module ID: 8600
+// Function ID: 8601
 // Name: TimestampUtils
-// Dependencies: [4828, 2049, 1104, 2]
+// Dependencies: [4836, 2042, 1089, 2]
 // Exports: formatTimestampMention, parseTimestamp, unparseTimestamp
 
-// Module 8531 (TimestampUtils)
-import DurationsDefault from "Durations" /* 1104 */;
-import _modDef2049 from "module_2049" /* 2049 */;
-import DateUtils from "DateUtils" /* 4828 */;
+// Module 8600 (TimestampUtils)
+import DurationsDefault from "Durations" /* 1089 */;
+import _modDef2042 from "module_2042" /* 2042 */;
+import DateUtils from "DateUtils" /* 4836 */;
 import size from "module_2" /* 2 */;
 
 const TIMESTAMP_FORMATS = {
@@ -44,33 +44,33 @@ const TIMESTAMP_FORMATS = {
     return obj.dateFormat(date, "L LTS");
   },
   R(toDate) {
-    const obj = _modDef2049;
+    const obj = _modDef2042;
     const result = obj.relativeTimeThreshold("s");
-    const obj2 = _modDef2049;
+    const obj2 = _modDef2042;
     const result1 = obj2.relativeTimeThreshold("s", 60);
-    const obj3 = _modDef2049;
+    const obj3 = _modDef2042;
     const result2 = obj3.relativeTimeThreshold("ss");
-    const obj4 = _modDef2049;
+    const obj4 = _modDef2042;
     const result3 = obj4.relativeTimeThreshold("ss", -1);
-    const obj5 = _modDef2049;
+    const obj5 = _modDef2042;
     const result4 = obj5.relativeTimeThreshold("m");
-    const obj6 = _modDef2049;
+    const obj6 = _modDef2042;
     const result5 = obj6.relativeTimeThreshold("m", 60);
     let fromNowResult = null;
     try {
-      const tmpResult = _modDef2049;
+      const tmpResult = _modDef2042;
       const tmpResultResult = tmpResult(toDate.toDate());
       fromNowResult = tmpResultResult.fromNow();
     } catch (err) {
     }
-    const tmpResult5 = _modDef2049;
+    const tmpResult5 = _modDef2042;
     const result6 = tmpResult5.relativeTimeThreshold("s", result);
-    const tmpResult6 = _modDef2049;
+    const tmpResult6 = _modDef2042;
     const result7 = tmpResult6.relativeTimeThreshold("ss", result2);
-    const tmpResult7 = _modDef2049;
+    const tmpResult7 = _modDef2042;
     const result8 = tmpResult7.relativeTimeThreshold("m", result4);
     if (fromNowResult == null) {
-      const tmpResult8 = _modDef2049;
+      const tmpResult8 = _modDef2042;
       const tmpResult4Result = tmpResult8(toDate.toDate());
       fromNowResult = tmpResult4Result.fromNow();
     }
@@ -85,12 +85,12 @@ let result = size.fileFinishedImporting("modules/markup/TimestampUtils.tsx");
 export { TIMESTAMP_FORMATS };
 export const DEFAULT_TIMESTAMP_FORMAT = "f";
 export const TIMESTAMP_REGEX = regExp;
-export const formatTimestampMention = function formatTimestampMention(mention) {
+export function formatTimestampMention(mention) {
   let format;
   let obj;
   let timestamp;
   ({ timestamp, format } = mention);
-  const tmp = _modDef2049;
+  const tmp = _modDef2042;
   const NumberResult = Number(timestamp);
   const tmpResult = tmp(NumberResult * DurationsDefault.Millis.SECOND);
   if (tmpResult.isValid()) {
@@ -106,10 +106,10 @@ export const formatTimestampMention = function formatTimestampMention(mention) {
   } else {
     return null;
   }
-};
-export const parseTimestamp = function parseTimestamp(timestamp, format) {
+}
+export function parseTimestamp(timestamp, format) {
   let obj;
-  const tmp = _modDef2049;
+  const tmp = _modDef2042;
   const NumberResult = Number(timestamp);
   const tmpResult = tmp(NumberResult * DurationsDefault.Millis.SECOND);
   let tmp3 = null;
@@ -125,8 +125,8 @@ export const parseTimestamp = function parseTimestamp(timestamp, format) {
     tmp3 = obj;
   }
   return tmp3;
-};
-export const unparseTimestamp = function unparseTimestamp(timestamp, format) {
+}
+export function unparseTimestamp(timestamp, format) {
   let combined;
   if (null != format) {
     const _HermesInternal2 = HermesInternal;
@@ -136,4 +136,4 @@ export const unparseTimestamp = function unparseTimestamp(timestamp, format) {
     combined = "<t:" + timestamp + ">";
   }
   return combined;
-};
+}

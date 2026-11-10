@@ -1,11 +1,11 @@
-// Module ID: 14833
-// Function ID: 14834
+// Module ID: 15373
+// Function ID: 15374
 // Name: SubscriptionGroupMemberRecord
-// Dependencies: [1407, 1406, 2]
+// Dependencies: [1398, 1397, 2]
 
-// Module 14833 (SubscriptionGroupMemberRecord)
-import Record from "Record" /* 1407 */;
-import UserRecord from "UserRecord" /* 1406 */;
+// Module 15373 (SubscriptionGroupMemberRecord)
+import Record from "Record" /* 1398 */;
+import UserRecord from "UserRecord" /* 1397 */;
 import size from "module_2" /* 2 */;
 
 const SubscriptionMemberTypes = { PRIMARY: 1, [1]: "PRIMARY", MEMBER: 2, [2]: "MEMBER" };

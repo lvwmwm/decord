@@ -1,15 +1,15 @@
-// Module ID: 7869
-// Function ID: 7870
+// Module ID: 7909
+// Function ID: 7910
 // Name: GuildRoomUtils
-// Dependencies: [7866, 7870, 7871, 7868, 7867, 2]
+// Dependencies: [7906, 7910, 7911, 7908, 7907, 2]
 // Exports: findSeat, serverGuildRoomToClient
 
-// Module 7869 (GuildRoomUtils)
-import GuildRoomTypes from "GuildRoomTypes" /* 7867 */;
-import GuildRoomSeats from "GuildRoomSeats" /* 7868 */;
-import GuildRoomConstants from "GuildRoomConstants" /* 7870 */;
-import GuildRoomBackgrounds from "GuildRoomBackgrounds" /* 7871 */;
-import GuildRoomStore from "GuildRoomStore" /* 7866 */;
+// Module 7909 (GuildRoomUtils)
+import GuildRoomTypes from "GuildRoomTypes" /* 7907 */;
+import GuildRoomSeats from "GuildRoomSeats" /* 7908 */;
+import GuildRoomConstants from "GuildRoomConstants" /* 7910 */;
+import GuildRoomBackgrounds from "GuildRoomBackgrounds" /* 7911 */;
+import GuildRoomStore from "GuildRoomStore" /* 7906 */;
 import size from "module_2" /* 2 */;
 
 let map, map1;
@@ -50,7 +50,7 @@ function serverGuildRoomObjectToClient(object_type) {
 let closure_3 = GuildRoomConstants.GUILD_ROOM_BACKGROUND_CONFIG;
 let result = size.fileFinishedImporting("modules/guild_rooms/GuildRoomUtils.tsx");
 
-export const findSeat = function findSeat(seat, position, channelId) {
+export function findSeat(seat, position, channelId) {
   let closure_0 = position;
   const room = GuildRoomStore.getRoom(channelId);
   let background;
@@ -70,8 +70,8 @@ export const findSeat = function findSeat(seat, position, channelId) {
   }
   const values = Object.values(seats);
   found = values.find((position) => position.position.x === x.x && position.position.y === tmp.y);
-};
-export const serverGuildRoomToClient = function serverGuildRoomToClient(body) {
+}
+export function serverGuildRoomToClient(body) {
   let reduce;
   let reduce2;
   let obj = {
@@ -98,4 +98,4 @@ export const serverGuildRoomToClient = function serverGuildRoomToClient(body) {
   reduce2 = entries.reduce;
   map1 = new Map();
   return obj;
-};
+}

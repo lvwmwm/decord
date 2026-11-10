@@ -1,20 +1,20 @@
-// Module ID: 12486
-// Function ID: 12487
+// Module ID: 12737
+// Function ID: 12738
 // Name: conjurePlanBot
-// Dependencies: [2000, 12487, 6806, 2]
+// Dependencies: [1992, 12726, 6845, 2]
 // Exports: getConjurePlanBotExchanges, getConjurePlanBotInteraction, getConjurePlanExperienceBotExchanges, getConjurePlanSectionBotExchanges, mergeConjurePlanBotExchanges
 
-// Module 12486 (conjurePlanBot)
-import Server from "Server" /* 2000 */;
-import ConjureProjectTypes from "ConjureProjectTypes" /* 6806 */;
-import conjurePlanTags from "conjurePlanTags" /* 12487 */;
+// Module 12737 (conjurePlanBot)
+import Server from "Server" /* 1992 */;
+import ConjureProjectTypes from "ConjureProjectTypes" /* 6845 */;
+import conjurePlanTags from "conjurePlanTags" /* 12726 */;
 import size from "module_2" /* 2 */;
 
-const f114725 = (bot) => {
+const f102880 = (bot) => {
   const str = bot.bot;
   return "" !== str.trim();
 };
-const f114726 = (item) => {
+const f102881 = (item) => {
   let bot;
   let obj2;
   let user;
@@ -32,7 +32,7 @@ const f114726 = (item) => {
   }
   return obj2;
 };
-const f114727 = (kind) => {
+const f102882 = (kind) => {
   let tmp = "command" === kind.kind;
   if (!tmp) {
     tmp = "user_command" === kind.kind || "message_command" === kind.kind;
@@ -101,7 +101,7 @@ const set = new Set(items);
 const result = size.fileFinishedImporting("modules/conjure/plan/conjurePlanBot.tsx");
 
 export { isAppCommand };
-export const getConjurePlanBotInteraction = function getConjurePlanBotInteraction(bot) {
+export function getConjurePlanBotInteraction(bot) {
   let tmp2;
   const obj = conjurePlanTags;
   const planDeclaresSurfaceResult = obj.planDeclaresSurface(bot, ConjureProjectTypes.ConjureSupportedSurface.APPLICATION_COMMANDS);
@@ -125,51 +125,51 @@ export const getConjurePlanBotInteraction = function getConjurePlanBotInteractio
     tmp2 = null;
   }
   return tmp2;
-};
-export const getConjurePlanExperienceBotExchanges = function getConjurePlanExperienceBotExchanges(arr) {
-  const found = arr.filter(f114725);
+}
+export function getConjurePlanExperienceBotExchanges(arr) {
+  const found = arr.filter(f102880);
   const substr = found.slice(0, 3);
-  return substr.map(f114726);
-};
-export const mergeConjurePlanBotExchanges = function mergeConjurePlanBotExchanges(arr, arg1) {
+  return substr.map(f102881);
+}
+export function mergeConjurePlanBotExchanges(arr, arg1) {
   if (0 !== arg1.length) {
     let items;
-    if (!arr.some(f114727)) {
+    if (!arr.some(f102882)) {
       items = [];
       items[HermesBuiltin.arraySpread(items, arr.slice(0, 2), 0)] = arg1[0];
     }
     return items;
   }
   items = arr.slice(0, 3);
-};
-export const getConjurePlanSectionBotExchanges = function getConjurePlanSectionBotExchanges(kind, botExchanges, conjurePlanCommandExchanges) {
+}
+export function getConjurePlanSectionBotExchanges(kind, arg1, arg2) {
   if ("commands" === kind.kind) {
-    return conjurePlanCommandExchanges;
+    return arg2;
   } else {
     let example_exchanges = kind.example_exchanges;
     if (example_exchanges == null) {
       example_exchanges = [];
     }
-    let arr2 = botExchanges;
-    const found = example_exchanges.filter(f114725);
+    let arr2 = arg1;
+    const found = example_exchanges.filter(f102880);
     const substr = found.slice(0, 3);
-    const mapped = substr.map(f114726);
+    const mapped = substr.map(f102881);
     if (mapped.length > 0) {
       arr2 = mapped;
     }
-    if (0 !== conjurePlanCommandExchanges.length) {
+    if (0 !== arg2.length) {
       let items;
-      if (!arr2.some(f114727)) {
+      if (!arr2.some(f102882)) {
         items = [];
         let tmp2 = items;
-        items[HermesBuiltin.arraySpread(items, arr2.slice(0, 2), 0)] = conjurePlanCommandExchanges[0];
+        items[HermesBuiltin.arraySpread(items, arr2.slice(0, 2), 0)] = arg2[0];
       }
       return items;
     }
     items = arr2.slice(0, 3);
   }
-};
-export const getConjurePlanBotExchanges = function getConjurePlanBotExchanges(bot, commands, bot2) {
+}
+export function getConjurePlanBotExchanges(bot, commands, bot2) {
   let closure_0 = commands;
   let closure_1 = bot2;
   bot = bot.bot;
@@ -288,4 +288,4 @@ export const getConjurePlanBotExchanges = function getConjurePlanBotExchanges(bo
     }
     return tmp4Result;
   }
-};
+}

@@ -1,9 +1,9 @@
-// Module ID: 10847
-// Function ID: 10848
+// Module ID: 10971
+// Function ID: 10972
 // Name: ConjureWebSocket
 // Dependencies: [2]
 
-// Module 10847 (ConjureWebSocket)
+// Module 10971 (ConjureWebSocket)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/connection/ConjureWebSocket.tsx");
@@ -15,11 +15,12 @@ class ConjureWebSocket {
     let closure_1;
     let closure_2;
     let closure_3;
+    let closure_4;
     let obj3;
     let templateId;
     let url;
     const self = this;
-    ({ url, templateId, onEvent: closure_1, onClose: closure_2, onError: closure_3 } = ticket);
+    ({ url, templateId, onEvent: closure_1, onPong: closure_2, onClose: closure_3, onError: closure_4 } = ticket);
     let webSocket;
     ticket = ticket.ticket;
     this.close();
@@ -39,27 +40,31 @@ class ConjureWebSocket {
     this.socket = webSocket;
     const listener = webSocket.addEventListener("message", (event) => {
       if (self.socket === webSocket) {
-        try {
-          const _JSON = JSON;
-          const parsed = JSON.parse(event.data);
-          if ("hello" === parsed.type) {
-            tmp.supportsPublishOptions = true === parsed.publish_options;
+        if ("pong" !== event.data) {
+          try {
+            const _JSON = JSON;
+            const parsed = JSON.parse(event.data);
+            if ("hello" === parsed.type) {
+              tmp.supportsPublishOptions = true === parsed.publish_options;
+            }
+            closure_1(parsed);
+          } catch (err) {
           }
-          closure_1(parsed);
-        } catch (err) {
+        } else if (closure_2 != null) {
+          closure_2();
         }
       }
     });
     const listener1 = webSocket.addEventListener("error", (event) => {
       if (self.socket === webSocket) {
-        if (closure_3 != null) {
+        if (closure_4 != null) {
           tmp(event);
         }
       }
     });
     const listener2 = webSocket.addEventListener("close", () => {
       if (self.socket === webSocket) {
-        if (closure_2 != null) {
+        if (closure_3 != null) {
           tmp();
         }
       }
@@ -175,15 +180,21 @@ class ConjureWebSocket {
     const error = new Error("Not connected");
     throw error;
   }
-  sendPublish(destination_id) {
+  sendPublish(destination_id, flag) {
+    if (flag === undefined) {
+      flag = false;
+    }
     const self = this;
     if (null != this.socket) {
       const _WebSocket = WebSocket;
       if (self.socket.readyState === WebSocket.OPEN) {
         const socket = self.socket;
+        const send = socket.send;
         const _JSON = JSON;
         const obj = { type: "publish", destination_id };
-        socket.send(JSON.stringify(obj));
+        const tmp3 = flag ? { app_channels_private: true } : {};
+        const merged = Object.assign(tmp3);
+        send(stringify(obj));
       }
     }
     const error = new Error("WebSocket not open");
@@ -211,6 +222,29 @@ class ConjureWebSocket {
         const _JSON = JSON;
         const obj = { type: "draft_patch_notes", nonce: combined };
         socket.send(JSON.stringify(obj));
+      }
+    }
+    const error = new Error("WebSocket not open");
+    throw error;
+  }
+  sendVoiceChannelPinOutcome(status) {
+    const self = this;
+    if (null != this.socket) {
+      const _WebSocket = WebSocket;
+      if (self.socket.readyState === WebSocket.OPEN) {
+        let obj3;
+        const socket = self.socket;
+        const send = socket.send;
+        const _JSON = JSON;
+        const obj = { type: "voice_channel_pin_outcome", status: status.status };
+        if ("pinned" === status.status) {
+          obj3 = { channel_id: status.channelId };
+          const obj2 = { channel_id: status.channelId };
+        } else {
+          obj3 = {};
+        }
+        const merged = Object.assign(obj3);
+        send(stringify(obj));
       }
     }
     const error = new Error("WebSocket not open");
@@ -295,6 +329,19 @@ class ConjureWebSocket {
     }
     const error = new Error("WebSocket not open");
     throw error;
+  }
+  sendPing() {
+    const self = this;
+    if (null != this.socket) {
+      const _WebSocket = WebSocket;
+      if (self.socket.readyState === WebSocket.OPEN) {
+        try {
+          const socket = self.socket;
+          socket.send("ping");
+        } catch (err) {
+        }
+      }
+    }
   }
   sendLoadHistory(olderHistoryCursor) {
     const self = this;

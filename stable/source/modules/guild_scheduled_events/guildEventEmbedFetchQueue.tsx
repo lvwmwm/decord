@@ -1,10 +1,10 @@
-// Module ID: 8927
-// Function ID: 8928
+// Module ID: 8974
+// Function ID: 8975
 // Name: guildEventEmbedFetchQueue
 // Dependencies: [2]
 // Exports: resetGuildEventEmbedFetchQueueForTest
 
-// Module 8927 (guildEventEmbedFetchQueue)
+// Module 8974 (guildEventEmbedFetchQueue)
 import size from "module_2" /* 2 */;
 
 let closure_8;
@@ -153,7 +153,7 @@ export { GuildEventEmbedFetchQueueError };
 export const scheduleGuildEventFetch = schedule;
 export const onGuildEventFetchCapacity = onCapacity;
 export const scheduleGuildEventEmbedFetch = schedule2;
-export const resetGuildEventEmbedFetchQueueForTest = function resetGuildEventEmbedFetchQueueForTest() {
+export function resetGuildEventEmbedFetchQueueForTest() {
   obj.reset();
   obj2.reset();
-};
+}

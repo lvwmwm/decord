@@ -1,13 +1,13 @@
-// Module ID: 16021
-// Function ID: 16022
+// Module ID: 16592
+// Function ID: 16593
 // Name: useAutoScrollToSetting
-// Dependencies: [19, 16014, 11241, 15865, 16016, 1505, 2]
+// Dependencies: [19, 16585, 11541, 16433, 16587, 1497, 2]
 // Exports: useAutoScrollToSearchResultSetting
 
-// Module 16021 (useAutoScrollToSetting)
-import SettingRendererConstants from "SettingRendererConstants" /* 11241 */;
+// Module 16592 (useAutoScrollToSetting)
+import SettingRendererConstants from "SettingRendererConstants" /* 11541 */;
 import react from "react" /* 19 */;
-import UserSettingSearchStore from "UserSettingSearchStore" /* 16014 */;
+import UserSettingSearchStore from "UserSettingSearchStore" /* 16585 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -16,7 +16,7 @@ let _require, dependencyMap, navigation;
 const NodeType = SettingRendererConstants.NodeType;
 const result = size.fileFinishedImporting("modules/settings/native/renderer/hooks/useAutoScrollToSetting.tsx");
 
-export const useAutoScrollToSearchResultSetting = function useAutoScrollToSearchResultSetting(ref, memo, scrollTarget) {
+export function useAutoScrollToSearchResultSetting(ref, memo, scrollTarget) {
   _require = ref;
   dependencyMap = memo;
   let current = ref.useField("selected");
@@ -31,8 +31,8 @@ export const useAutoScrollToSearchResultSetting = function useAutoScrollToSearch
   let flag = false;
   if (null != current) {
     flag = false;
-    if (tmp(15865).SETTING_RENDERER_CONFIG[current].type !== current.ROUTE) {
-      const tmpResult = tmp(16016);
+    if (tmp(16433).SETTING_RENDERER_CONFIG[current].type !== current.ROUTE) {
+      const tmpResult = tmp(16587);
       let initialScrollIndex = tmpResult.getInitialScrollIndex(current, memo);
       flag = 0 !== initialScrollIndex && 1 !== initialScrollIndex;
       const tmp7 = 0 !== initialScrollIndex && 1 !== initialScrollIndex;
@@ -63,4 +63,4 @@ export const useAutoScrollToSearchResultSetting = function useAutoScrollToSearch
       ref.current = undefined;
     };
   }, items);
-};
+}

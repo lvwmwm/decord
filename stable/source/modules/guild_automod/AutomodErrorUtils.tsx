@@ -1,14 +1,14 @@
-// Module ID: 8300
-// Function ID: 8301
+// Module ID: 8387
+// Function ID: 8388
 // Name: AutomodErrorUtils
-// Dependencies: [4855, 1087, 1128, 8172, 2]
+// Dependencies: [4863, 1072, 1113, 8384, 2]
 // Exports: getAutomodErrorMessage
 
-// Module 8300 (AutomodErrorUtils)
-import Constants from "Constants" /* 1087 */;
-import intl5 from "intl" /* 1128 */;
-import MessageQueue from "MessageQueue" /* 8172 */;
-import ChannelStore from "ChannelStore" /* 4855 */;
+// Module 8387 (AutomodErrorUtils)
+import Constants from "Constants" /* 1072 */;
+import intl5 from "intl" /* 1113 */;
+import MessageQueue from "MessageQueue" /* 8384 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
 import size from "module_2" /* 2 */;
 
 function getAutomodErrorMessageFromErrorResponse(errorResponseBody, id) {
@@ -61,16 +61,16 @@ function getAutomodErrorMessageFromMessageData(message) {
   const channel = ChannelStore.getChannel(message.message.channelId);
   const obj2 = MessageQueue;
   if (obj2.isMessageDataEdit(message)) {
-    const intl4 = tmp(1128).intl;
-    stringResult = intl4.string(tmp(1128).t.bU6o0z);
+    const intl4 = tmp(1113).intl;
+    stringResult = intl4.string(tmp(1113).t.bU6o0z);
   } else {
     let isThreadResult;
     if (channel != null) {
       isThreadResult = channel.isThread();
     }
     if (isThreadResult) {
-      const intl3 = tmp(1128).intl;
-      stringResult = intl3.string(tmp(1128).t.DVdG9E);
+      const intl3 = tmp(1113).intl;
+      stringResult = intl3.string(tmp(1113).t.DVdG9E);
     } else {
       let isForumPostResult;
       if (channel != null) {
@@ -82,12 +82,12 @@ function getAutomodErrorMessageFromMessageData(message) {
           isForumLikeChannelResult = channel.isForumLikeChannel();
         }
         if (!isForumLikeChannelResult) {
-          const intl = tmp(1128).intl;
-          stringResult = intl.string(tmp(1128).t.zQ69pv);
+          const intl = tmp(1113).intl;
+          stringResult = intl.string(tmp(1113).t.zQ69pv);
         }
       }
-      const intl2 = tmp(1128).intl;
-      stringResult = intl2.string(tmp(1128).t.ipgKDg);
+      const intl2 = tmp(1113).intl;
+      stringResult = intl2.string(tmp(1113).t.ipgKDg);
     }
   }
   return stringResult;
@@ -107,7 +107,7 @@ export { InvalidRegexPatternError };
 export const AUTOMOD_ERROR_CODES = set;
 export { getAutomodErrorMessageFromErrorResponse };
 export { getAutomodErrorMessageFromMessageData };
-export const getAutomodErrorMessage = function getAutomodErrorMessage(messageData, errorResponseBody) {
+export function getAutomodErrorMessage(messageData, errorResponseBody) {
   let tmp = getAutomodErrorMessageFromErrorResponse(errorResponseBody);
   if (null == tmp) {
     let stringResult;
@@ -120,4 +120,4 @@ export const getAutomodErrorMessage = function getAutomodErrorMessage(messageDat
     tmp = stringResult;
   }
   return tmp;
-};
+}

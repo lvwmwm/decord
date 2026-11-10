@@ -1,17 +1,17 @@
-// Module ID: 13296
-// Function ID: 13297
+// Module ID: 13927
+// Function ID: 13928
 // Name: SuggestedSearchActionCreators
-// Dependencies: [5, 13256, 13257, 1087, 569, 13295, 13279, 584, 1297, 2]
+// Dependencies: [5, 13887, 13888, 1072, 559, 13926, 13910, 572, 1282, 2]
 // Exports: advanceSuggestedSearches, fetchInitialSuggestedSearches
 
-// Module 13296 (SuggestedSearchActionCreators)
-import BackoffDefault from "Backoff" /* 569 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import SmartSearchExperiments from "SmartSearchExperiments" /* 13295 */;
+// Module 13927 (SuggestedSearchActionCreators)
+import BackoffDefault from "Backoff" /* 559 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import SmartSearchExperiments from "SmartSearchExperiments" /* 13926 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SuggestedSearchStore from "SuggestedSearchStore" /* 13256 */;
-import SmartSearchConstants from "SmartSearchConstants" /* 13257 */;
-import Constants from "Constants" /* 1087 */;
+import SuggestedSearchStore from "SuggestedSearchStore" /* 13887 */;
+import SmartSearchConstants from "SmartSearchConstants" /* 13888 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3, closure_6, contextualProperties, responseStatusCode, status, suggestedSearches;
@@ -96,14 +96,14 @@ let obj = function _performSuggestedSearchesFetch() {
         const result1 = trackSuggestedSearchesReturned2(obj15);
         c7 = 0;
       }
-      await "IconComponent";
+      await "HermesInternal";
       contextualProperties = tmp;
       let tmp28 = closure_2;
       if (closure_2 === undefined) {
         tmp28 = null;
       }
       windowSize = tmp28;
-      return "Reflect";
+      return "flexDirection";
     })();
     iter.next();
     return iter;
@@ -124,7 +124,7 @@ obj = function _fetchInitialSuggestedSearches() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -157,7 +157,7 @@ obj = function _fetchInitialSuggestedSearches() {
           return obj;
         }
         c2 = 3;
-        return { value: "IconComponent", done: "+352" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp9) {
         c2 = 3;
         throw tmp9;
@@ -172,10 +172,10 @@ let tmp4 = new BackoffDefault(SUGGESTED_SEARCHES_RETRY_MIN_MS, SUGGESTED_SEARCHE
 let closure_8 = tmp4;
 let result = size.fileFinishedImporting("modules/intelligence_layer/search/SuggestedSearchActionCreators.tsx");
 
-export const fetchInitialSuggestedSearches = function fetchInitialSuggestedSearches() {
+export function fetchInitialSuggestedSearches() {
   return obj(...arguments);
-};
-export const advanceSuggestedSearches = function advanceSuggestedSearches(smartSearchQuery, arg1, windowSize) {
+}
+export function advanceSuggestedSearches(smartSearchQuery, arg1, windowSize) {
   if (!SuggestedSearchStore.isLoadingSuggestedSearches(smartSearchQuery)) {
     if (SuggestedSearchStore.willExhaustSuggestedSearches(smartSearchQuery, windowSize)) {
       const obj2 = SmartSearchExperiments;
@@ -193,4 +193,4 @@ export const advanceSuggestedSearches = function advanceSuggestedSearches(smartS
     const obj3 = DispatcherDefault;
     obj3.dispatch(obj4);
   }
-};
+}

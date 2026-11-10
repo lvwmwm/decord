@@ -1,19 +1,19 @@
-// Module ID: 14441
-// Function ID: 14442
+// Module ID: 14917
+// Function ID: 14918
 // Name: WishlistUtils
-// Dependencies: [32, 2047, 9405, 9406, 9407, 1087, 1394, 1128, 7367, 2]
+// Dependencies: [32, 2040, 9474, 9475, 9476, 1072, 1385, 1113, 7409, 2]
 // Exports: buildReorderedWishlistData, createNitroSuggestedSku, isEligibleWishlistItemOnMobile
 
-// Module 14441 (WishlistUtils)
-import Constants from "Constants" /* 1087 */;
-import intl2 from "intl" /* 1128 */;
-import PremiumConstants from "PremiumConstants" /* 1394 */;
-import StorefrontUtils from "StorefrontUtils" /* 7367 */;
-import CollectiblesWishlistItemRecord from "CollectiblesWishlistItemRecord" /* 9405 */;
-import PremiumWishlistItemRecord from "PremiumWishlistItemRecord" /* 9406 */;
-import SKUWishlistItemRecord from "SKUWishlistItemRecord" /* 9407 */;
+// Module 14917 (WishlistUtils)
+import Constants from "Constants" /* 1072 */;
+import intl2 from "intl" /* 1113 */;
+import PremiumConstants from "PremiumConstants" /* 1385 */;
+import StorefrontUtils from "StorefrontUtils" /* 7409 */;
+import CollectiblesWishlistItemRecord from "CollectiblesWishlistItemRecord" /* 9474 */;
+import PremiumWishlistItemRecord from "PremiumWishlistItemRecord" /* 9475 */;
+import SKUWishlistItemRecord from "SKUWishlistItemRecord" /* 9476 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import SKURecord from "SKURecord" /* 2047 */;
+import SKURecord from "SKURecord" /* 2040 */;
 import size from "module_2" /* 2 */;
 
 let closure_4 = CollectiblesWishlistItemRecord.isCollectiblesWishlistItemRecord;
@@ -23,7 +23,7 @@ const SKUProductLines = Constants.SKUProductLines;
 const PremiumSubscriptionSKUs = PremiumConstants.PremiumSubscriptionSKUs;
 const result = size.fileFinishedImporting("modules/wishlists/WishlistUtils.tsx");
 
-export const createNitroSuggestedSku = function createNitroSuggestedSku() {
+export function createNitroSuggestedSku() {
   let intl;
   const obj = { id: PremiumSubscriptionSKUs.TIER_2, productLine: SKUProductLines.PREMIUM, name: intl.string(intl2.t.lG6a5x), features: new Set(), genres: new Set(), manifests: [], availableRegions: [], locales: [], bundledSkuIds: [], selectedOptions: [], eligibleOffers: [], prices: {} };
   intl = intl2.intl;
@@ -31,8 +31,8 @@ export const createNitroSuggestedSku = function createNitroSuggestedSku() {
   new Set();
   const tmp3 = new SKURecord(obj);
   return tmp3;
-};
-export const isEligibleWishlistItemOnMobile = function isEligibleWishlistItemOnMobile(sku, isWishlistOwner) {
+}
+export function isEligibleWishlistItemOnMobile(sku, isWishlistOwner) {
   isWishlistOwner = isWishlistOwner.isWishlistOwner;
   if (isSKUWishlistItemRecord(sku)) {
     let tmp2;
@@ -46,8 +46,8 @@ export const isEligibleWishlistItemOnMobile = function isEligibleWishlistItemOnM
     return tmp2;
   }
   tmp2 = closure_4(sku) || closure_5(sku);
-};
-export const buildReorderedWishlistData = function buildReorderedWishlistData(set, arg1, arg2, arg3) {
+}
+export function buildReorderedWishlistData(set, arg1, arg2, arg3) {
   let skuId2;
   let skuId3;
   if (arg2 < arg3) {
@@ -87,4 +87,4 @@ export const buildReorderedWishlistData = function buildReorderedWishlistData(se
   items.splice(arg3, 0, _slicedToArray(items.splice(arg2, 1), 1)[0]);
   const obj = { newWishlistData: set.set("items", items), previousSkuId: skuId2, nextSkuId: skuId3 };
   return obj;
-};
+}

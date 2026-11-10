@@ -1,13 +1,13 @@
-// Module ID: 12359
-// Function ID: 12360
+// Module ID: 12606
+// Function ID: 12607
 // Name: ConjureStatusLabels
-// Dependencies: [3862, 1128, 10738, 2]
+// Dependencies: [3868, 1113, 10859, 2]
 // Exports: connectionLabel, isPublishLineSwitch, isRecallingLine, recallingLine, runesUsedLabels, thinkingLine
 
-// Module 12359 (ConjureStatusLabels)
-import intl5 from "intl" /* 1128 */;
-import _modDef3862 from "module_3862" /* 3862 */;
-import ConjureUsageTypes from "ConjureUsageTypes" /* 10738 */;
+// Module 12606 (ConjureStatusLabels)
+import intl5 from "intl" /* 1113 */;
+import _modDef3868 from "module_3868" /* 3868 */;
+import ConjureUsageTypes from "ConjureUsageTypes" /* 10859 */;
 import size from "module_2" /* 2 */;
 
 function thinkingLabel(saving) {
@@ -48,19 +48,19 @@ function thinkingLabel(saving) {
   }
   const tmp = null != activity && "end" !== activity.phase;
   if (flag5) {
-    xnCAaP = _modDef3862["1jqaAc"];
+    xnCAaP = _modDef3868["1jqaAc"];
   } else if (flag6) {
-    xnCAaP = _modDef3862.xCdlEF;
+    xnCAaP = _modDef3868.xCdlEF;
   } else if (flag7) {
-    xnCAaP = _modDef3862.Rhx0rn;
+    xnCAaP = _modDef3868.Rhx0rn;
   } else if (flag2) {
-    xnCAaP = _modDef3862.M4KI5F;
+    xnCAaP = _modDef3868.M4KI5F;
   } else if (flag3) {
-    xnCAaP = _modDef3862.j8tmjK;
+    xnCAaP = _modDef3868.j8tmjK;
   } else if (flag4) {
     xnCAaP = items[0];
   } else {
-    const tmp4 = _modDef3862;
+    const tmp4 = _modDef3868;
     if (flag) {
       xnCAaP = tmp4.mKK6wB;
     } else if (compacting) {
@@ -71,67 +71,67 @@ function thinkingLabel(saving) {
   }
   return xnCAaP;
 }
-const items = [_modDef3862["AX+5lk"], _modDef3862.VAU6A7, _modDef3862["1emysd"], _modDef3862.EXHX3L, _modDef3862.ChslmX];
+const items = [_modDef3868["AX+5lk"], _modDef3868.VAU6A7, _modDef3868["1emysd"], _modDef3868.EXHX3L, _modDef3868.ChslmX];
 const result = size.fileFinishedImporting("modules/conjure/agent_activity/ConjureStatusLabels.tsx");
 
 export const INDICATOR_PASS_MS = 1000;
 export const INDICATOR_PASS_STAGGER_MS = 1800;
 export const RECALLING_LINES = items;
-export const isPublishLineSwitch = function isPublishLineSwitch(line, arg1) {
+export function isPublishLineSwitch(line, arg1) {
   const intl = intl5.intl;
-  let tmp4 = line === intl.string(_modDef3862.xCdlEF);
+  let tmp4 = line === intl.string(_modDef3868.xCdlEF);
   if (!tmp4) {
-    const intl2 = tmp(1128).intl;
-    tmp4 = line === intl2.string(tmp3(3862).Rhx0rn);
+    const intl2 = tmp(1113).intl;
+    tmp4 = line === intl2.string(tmp3(3868).Rhx0rn);
   }
-  const intl3 = tmp(1128).intl;
-  let tmp5 = arg1 === intl3.string(tmp3(3862).xCdlEF);
+  const intl3 = tmp(1113).intl;
+  let tmp5 = arg1 === intl3.string(tmp3(3868).xCdlEF);
   if (!tmp5) {
-    const intl4 = tmp(1128).intl;
-    tmp5 = arg1 === intl4.string(tmp3(3862).Rhx0rn);
+    const intl4 = tmp(1113).intl;
+    tmp5 = arg1 === intl4.string(tmp3(3868).Rhx0rn);
   }
   return tmp4 !== tmp5;
-};
-export const recallingLine = function recallingLine(current) {
+}
+export function recallingLine(current) {
   const intl = intl5.intl;
   return intl.string(items[current % items.length]);
-};
-export const isRecallingLine = function isRecallingLine(current) {
+}
+export function isRecallingLine(current) {
   let closure_0 = current;
   return items.some((item) => {
     const intl = intl5.intl;
     return intl.string(item) === current;
   });
-};
-export const connectionLabel = function connectionLabel(stateFromStores8) {
+}
+export function connectionLabel(stateFromStores8) {
   if ("connecting" === stateFromStores8) {
     const intl3 = intl5.intl;
-    return intl3.string(_modDef3862["ECl+Dx"]);
+    return intl3.string(_modDef3868["ECl+Dx"]);
   } else if ("closed" === stateFromStores8) {
     const intl2 = intl5.intl;
-    return intl2.string(_modDef3862.mQZSp1);
+    return intl2.string(_modDef3868.mQZSp1);
   } else if ("failed" === stateFromStores8) {
     const intl = intl5.intl;
-    return intl.string(_modDef3862.xzJSZ6);
+    return intl.string(_modDef3868.xzJSZ6);
   }
-};
+}
 export { thinkingLabel };
-export const thinkingLine = function thinkingLine(saving) {
+export function thinkingLine(saving) {
   const intl = intl5.intl;
   return intl.string(thinkingLabel(saving));
-};
-export const runesUsedLabels = function runesUsedLabels(projectUsage) {
+}
+export function runesUsedLabels(projectUsage) {
   let formatToPlainString;
   let gMuw5d;
   let intl2;
   let obj3;
   const obj = ConjureUsageTypes;
   const runesFromUsdResult = obj.runesFromUsd(projectUsage.cost_usd);
-  const obj2 = { text: formatToPlainString(gMuw5d, obj3), aria: intl2.formatToPlainString(_modDef3862.Z4LvGa, obj4) };
+  const obj2 = { text: formatToPlainString(gMuw5d, obj3), aria: intl2.formatToPlainString(_modDef3868.Z4LvGa, obj4) };
   const intl = intl5.intl;
   formatToPlainString = intl.formatToPlainString;
   obj3 = { runes: runesFromUsdResult.toLocaleString() };
-  gMuw5d = _modDef3862.gMuw5d;
+  gMuw5d = _modDef3868.gMuw5d;
   intl2 = intl5.intl;
   return obj2;
-};
+}

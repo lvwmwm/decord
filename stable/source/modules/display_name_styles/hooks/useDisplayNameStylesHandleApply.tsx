@@ -1,16 +1,16 @@
-// Module ID: 16728
-// Function ID: 16729
+// Module ID: 17323
+// Function ID: 17324
 // Name: useDisplayNameStylesHandleApply
-// Dependencies: [5, 32, 19, 1392, 1087, 5028, 1409, 15890, 7110, 8688, 8685, 1267, 1412, 1411, 5030, 2]
+// Dependencies: [5, 32, 19, 1383, 1072, 5039, 1400, 16460, 7152, 8738, 8735, 1252, 1403, 1402, 5041, 2]
 // Exports: useDisplayNameStylesHandleApply
 
-// Module 16728 (useDisplayNameStylesHandleApply)
-import Constants from "Constants" /* 1087 */;
+// Module 17323 (useDisplayNameStylesHandleApply)
+import Constants from "Constants" /* 1072 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1392 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5028 */;
+import UserStore from "UserStore" /* 1383 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5039 */;
 import size from "module_2" /* 2 */;
 
 let c3, c4, c5, colors;
@@ -22,7 +22,7 @@ const AnalyticEvents = Constants.AnalyticEvents;
 let result = size.fileFinishedImporting("modules/display_name_styles/hooks/useDisplayNameStylesHandleApply.tsx");
 
 export const DisplayNameStylesEntryPoints = { TRY_THIS_STYLE: "try_this_style", PROFILE_EDITOR: "profile_editor" };
-export const useDisplayNameStylesHandleApply = function useDisplayNameStylesHandleApply(hasChanges) {
+export function useDisplayNameStylesHandleApply(hasChanges) {
   hasChanges = hasChanges.hasChanges;
   const entryPoint = hasChanges.entryPoint;
   let selectedFontId = hasChanges.selectedFontId;
@@ -62,7 +62,7 @@ export const useDisplayNameStylesHandleApply = function useDisplayNameStylesHand
             let obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: "+352" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -100,7 +100,7 @@ export const useDisplayNameStylesHandleApply = function useDisplayNameStylesHand
                         const obj2 = { value, done: true };
                         return obj2;
                       } else {
-                        return { value: "IconComponent", done: "+352" };
+                        return { value: "HermesInternal", done: null };
                       }
                     } else {
                       try {
@@ -198,7 +198,7 @@ export const useDisplayNameStylesHandleApply = function useDisplayNameStylesHand
                           closure_1_8();
                         }
                         c5 = 3;
-                        return { value: "IconComponent", done: "+352" };
+                        return { value: "HermesInternal", done: null };
                       } catch (tmp60) {
                         closure_2 = tmp60;
                         if (0 === c3) {
@@ -295,7 +295,7 @@ export const useDisplayNameStylesHandleApply = function useDisplayNameStylesHand
               return obj;
             }
             c4 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "HermesInternal", done: null };
           } catch (tmp34) {
             if (0 === selectedFontId) {
               c4 = 3;
@@ -310,4 +310,4 @@ export const useDisplayNameStylesHandleApply = function useDisplayNameStylesHand
     isApplying: tmp[0]
   };
   return obj;
-};
+}

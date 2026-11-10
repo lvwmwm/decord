@@ -1,18 +1,18 @@
-// Module ID: 15183
-// Function ID: 15184
+// Module ID: 15723
+// Function ID: 15724
 // Name: resolveShareSendOutcome
-// Dependencies: [12937, 2]
+// Dependencies: [13384, 2]
 // Exports: getShareUploadError, pairDestinationsWithChannels, resolveShareSendOutcome, withoutSentDestinations
 
-// Module 15183 (resolveShareSendOutcome)
-import formatResults from "formatResults" /* 12937 */;
+// Module 15723 (resolveShareSendOutcome)
+import formatResults from "formatResults" /* 13384 */;
 import size from "module_2" /* 2 */;
 
 let set;
 
 const result = size.fileFinishedImporting("modules/share/native/resolveShareSendOutcome.tsx");
 
-export const getShareUploadError = function getShareUploadError(uploadError) {
+export function getShareUploadError(uploadError) {
   uploadError = undefined;
   if (uploadError != null) {
     uploadError = uploadError.uploadError;
@@ -21,8 +21,8 @@ export const getShareUploadError = function getShareUploadError(uploadError) {
     uploadError = null;
   }
   return uploadError;
-};
-export const pairDestinationsWithChannels = function pairDestinationsWithChannels(arr, value) {
+}
+export function pairDestinationsWithChannels(arr, value) {
   const items = [];
   const item = arr.forEach((destination, index) => {
     if (null != value[index]) {
@@ -31,8 +31,8 @@ export const pairDestinationsWithChannels = function pairDestinationsWithChannel
     }
   });
   return items;
-};
-export const withoutSentDestinations = function withoutSentDestinations(arr, arr2) {
+}
+export function withoutSentDestinations(arr, arr2) {
   if (0 === arr2.length) {
     const items = [];
     HermesBuiltin.arraySpread(items, arr, 0);
@@ -41,15 +41,15 @@ export const withoutSentDestinations = function withoutSentDestinations(arr, arr
     const _Set = Set;
     const self = this;
     const self2 = this;
-    set = new Set(arr2.map(set(12937).destinationKey));
+    set = new Set(arr2.map(set(13384).destinationKey));
     return arr.filter((item) => {
       const has = set.has;
       const obj = formatResults;
       return !has(obj.destinationKey(item));
     });
   }
-};
-export const resolveShareSendOutcome = function resolveShareSendOutcome(arr) {
+}
+export function resolveShareSendOutcome(arr) {
   let tmp3;
   const found = arr.filter((status) => "sent" === status.status);
   const found1 = arr.filter((status) => "failed" === status.status);
@@ -76,4 +76,4 @@ export const resolveShareSendOutcome = function resolveShareSendOutcome(arr) {
     tmp3 = channelId;
   }
   return obj;
-};
+}

@@ -1,10 +1,10 @@
 // Module ID: 2673
 // Function ID: 2674
 // Name: AssetRegistry
-// Dependencies: [1134]
+// Dependencies: [1119]
 
 // Module 2673 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1134 */;
+import AssetRegistry from "AssetRegistry" /* 1119 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9vdmVybGF5L3dlYi92Mw==", scales: [1], hash: "62c8f7c5e7a7a97c547b6719787dd699", name: "bg.messages.62c8f7c5e7a7a97c547b6719787dd699.compiled.messages", type: "jsona" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/premium/file_upload", scales: [1], hash: "b21c62c69f9c9a32bba1f84b5cff136f", name: "NitroFileUpload.compiled.messages", type: "jsona" });

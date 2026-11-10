@@ -1,18 +1,18 @@
-// Module ID: 15325
-// Function ID: 15326
+// Module ID: 15865
+// Function ID: 15866
 // Name: useAccessibilityNativeStackFocusTracking
-// Dependencies: [19, 5945, 5943, 2]
+// Dependencies: [19, 5963, 5961, 2]
 // Exports: useAccessibilityNativeStackFocusTracking
 
-// Module 15325 (useAccessibilityNativeStackFocusTracking)
-import react_nativeDefault from "react-native" /* 5943 */;
-import react_nativeDefault2 from "react-native" /* 5945 */;
+// Module 15865 (useAccessibilityNativeStackFocusTracking)
+import react_nativeDefault from "react-native" /* 5961 */;
+import react_nativeDefault2 from "react-native" /* 5963 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("design/components/Navigator/native/useAccessibilityNativeStackFocusTracking.tsx");
 
-export const useAccessibilityNativeStackFocusTracking = function useAccessibilityNativeStackFocusTracking() {
+export function useAccessibilityNativeStackFocusTracking() {
   return react.useMemo(() => {
     let c0 = false;
     return {
@@ -32,4 +32,4 @@ export const useAccessibilityNativeStackFocusTracking = function useAccessibilit
       }
     };
   }, []);
-};
+}

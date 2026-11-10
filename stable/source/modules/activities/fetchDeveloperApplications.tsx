@@ -1,15 +1,15 @@
-// Module ID: 10812
-// Function ID: 10813
+// Module ID: 10934
+// Function ID: 10935
 // Name: fetchDeveloperApplications
-// Dependencies: [5, 2024, 1087, 584, 1297, 2]
+// Dependencies: [5, 2016, 1072, 572, 1282, 2]
 // Exports: fetchDeveloperApplications
 
-// Module 10812 (fetchDeveloperApplications)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1087 */;
-import HTTPUtils from "HTTPUtils" /* 1297 */;
+// Module 10934 (fetchDeveloperApplications)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import Constants from "Constants" /* 1072 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationRecord from "ApplicationRecord" /* 2024 */;
+import ApplicationRecord from "ApplicationRecord" /* 2016 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5;
@@ -26,7 +26,7 @@ let obj = function _fetchDeveloperApplications() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -82,7 +82,7 @@ let obj = function _fetchDeveloperApplications() {
             c3 = 0;
           }
           c5 = 3;
-          return { value: "IconComponent", done: "+352" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp10) {
         applications = tmp10;
@@ -100,6 +100,6 @@ let obj = function _fetchDeveloperApplications() {
 const Endpoints = Constants.Endpoints;
 const result = size.fileFinishedImporting("modules/activities/fetchDeveloperApplications.tsx");
 
-export const fetchDeveloperApplications = function fetchDeveloperApplications() {
+export function fetchDeveloperApplications() {
   return obj(...arguments);
-};
+}

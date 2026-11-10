@@ -1,17 +1,17 @@
-// Module ID: 7332
-// Function ID: 7333
+// Module ID: 7373
+// Function ID: 7374
 // Name: getHigherContrastColor
-// Dependencies: [32, 1105, 2]
+// Dependencies: [32, 1090, 2]
 // Exports: getHigherContrastColor
 
-// Module 7332 (getHigherContrastColor)
-import utils_ColorUtils from "utils/ColorUtils" /* 1105 */;
+// Module 7373 (getHigherContrastColor)
+import utils_ColorUtils from "utils/ColorUtils" /* 1090 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/user_profile/utils/getHigherContrastColor.tsx");
 
-export const getHigherContrastColor = function getHigherContrastColor(backgroundColor) {
+export function getHigherContrastColor(backgroundColor) {
   let tmp2;
   let tmp3;
   backgroundColor = backgroundColor.backgroundColor;
@@ -35,4 +35,4 @@ export const getHigherContrastColor = function getHigherContrastColor(background
   const contrast = obj.getContrast(hex2intResult, hex2intResult1);
   utils_ColorUtils;
   return tmp3;
-};
+}

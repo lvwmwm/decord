@@ -1,15 +1,15 @@
-// Module ID: 7546
-// Function ID: 7547
+// Module ID: 7588
+// Function ID: 7589
 // Name: BillingStandaloneNativeUtils
-// Dependencies: [5730, 1087, 3, 7547, 7548, 1630, 1107, 5692, 2]
+// Dependencies: [5747, 1072, 3, 7589, 7590, 1622, 1092, 5709, 2]
 // Exports: goToStandaloneGuildBoostCheckoutFromMobileApp, goToStandaloneNitroManagementFromMobileApp, goToStandalonePremiumCheckoutFromMobileApp
 
-// Module 7546 (BillingStandaloneNativeUtils)
+// Module 7588 (BillingStandaloneNativeUtils)
 import LoggerDefault from "Logger" /* 3 */;
-import Constants from "Constants" /* 1087 */;
-import LinkingDefault from "Linking" /* 5692 */;
-import PaymentConstants from "PaymentConstants" /* 5730 */;
-import MobileWebRedirectCheckoutUtils from "MobileWebRedirectCheckoutUtils" /* 7547 */;
+import Constants from "Constants" /* 1072 */;
+import LinkingDefault from "Linking" /* 5709 */;
+import PaymentConstants from "PaymentConstants" /* 5747 */;
+import MobileWebRedirectCheckoutUtils from "MobileWebRedirectCheckoutUtils" /* 7589 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -51,7 +51,7 @@ const tmp2 = new LoggerDefault("BillingStandaloneNativeUtils");
 const logger = tmp2;
 let result = size.fileFinishedImporting("modules/payments/native/utils/BillingStandaloneNativeUtils.tsx");
 
-export const goToStandalonePremiumCheckoutFromMobileApp = function goToStandalonePremiumCheckoutFromMobileApp(premium_plan_selection_action_sheet, arg1, arg2, arg3) {
+export function goToStandalonePremiumCheckoutFromMobileApp(premium_plan_selection_action_sheet, arg1, arg2, arg3) {
   let closure_2;
   let closure_3;
   let tmp6;
@@ -70,7 +70,7 @@ export const goToStandalonePremiumCheckoutFromMobileApp = function goToStandalon
     obj2.flowType = CustomCheckoutFlow.META_QUEST_WEB_REDIRECT_CHECKOUT;
     tmp6 = obj2;
   } else {
-    obj2.deepLinkType = tmp(1107).LinkingTypes.MOBILE_WEB_REDIRECT_CHECKOUT;
+    obj2.deepLinkType = tmp(1092).LinkingTypes.MOBILE_WEB_REDIRECT_CHECKOUT;
     tmp6 = obj2;
   }
   return goToStandalonePremiumCheckout(tmp6, (body, searchParams) => {
@@ -84,8 +84,8 @@ export const goToStandalonePremiumCheckoutFromMobileApp = function goToStandalon
     emitMWRCSentryErrorOnFailure(items, premium_plan_selection_action_sheet, loadId.loadId);
     closure_3(...items);
   });
-};
-export const goToStandaloneNitroManagementFromMobileApp = function goToStandaloneNitroManagementFromMobileApp(premium_external_management, loadId, arg2, arg3) {
+}
+export function goToStandaloneNitroManagementFromMobileApp(premium_external_management, loadId, arg2, arg3) {
   let closure_2;
   let closure_3;
   let result;
@@ -100,7 +100,7 @@ export const goToStandaloneNitroManagementFromMobileApp = function goToStandalon
   if (obj.isMetaQuest()) {
     result = obj2.BILLING_MANAGE_SUBSCRIPTION_WITH_FLOW_TYPE(CustomCheckoutFlow.META_QUEST_WEB_REDIRECT_CHECKOUT, loadId);
   } else {
-    result = obj2.BILLING_MANAGE_SUBSCRIPTION_WITH_DEEP_LINK(tmp(1107).LinkingTypes.MOBILE_WEB_REDIRECT_CHECKOUT, loadId);
+    result = obj2.BILLING_MANAGE_SUBSCRIPTION_WITH_DEEP_LINK(tmp(1092).LinkingTypes.MOBILE_WEB_REDIRECT_CHECKOUT, loadId);
   }
   return goToBillingStandalonePageWithHandoff(result, (body, searchParams) => {
     searchParams = searchParams.searchParams;
@@ -113,8 +113,8 @@ export const goToStandaloneNitroManagementFromMobileApp = function goToStandalon
     emitMWRCSentryErrorOnFailure(items, premium_external_management, loadId);
     closure_3(...items);
   });
-};
-export const goToStandaloneGuildBoostCheckoutFromMobileApp = function goToStandaloneGuildBoostCheckoutFromMobileApp(arg0, arg1, newAnalyticsLoadId, arg3, arg4) {
+}
+export function goToStandaloneGuildBoostCheckoutFromMobileApp(arg0, arg1, newAnalyticsLoadId, arg3, arg4) {
   let closure_0;
   let closure_2;
   let closure_3;
@@ -125,7 +125,7 @@ export const goToStandaloneGuildBoostCheckoutFromMobileApp = function goToStanda
   let obj = require("MetaQuestUtils");
   let prop;
   if (!obj.isMetaQuest()) {
-    prop = tmp(1107).LinkingTypes.MOBILE_WEB_REDIRECT_CHECKOUT;
+    prop = tmp(1092).LinkingTypes.MOBILE_WEB_REDIRECT_CHECKOUT;
   }
   let prop1;
   const tmpResult = require("MetaQuestUtils");
@@ -144,4 +144,4 @@ export const goToStandaloneGuildBoostCheckoutFromMobileApp = function goToStanda
     emitMWRCSentryErrorOnFailure(items, closure_0, newAnalyticsLoadId);
     closure_3(...items);
   });
-};
+}

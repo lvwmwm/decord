@@ -1,17 +1,17 @@
-// Module ID: 15418
-// Function ID: 15419
+// Module ID: 15962
+// Function ID: 15963
 // Name: ErrorCommonUtils
-// Dependencies: [584, 509, 2]
+// Dependencies: [572, 509, 2]
 // Exports: getUpdatedOptions
 
-// Module 15418 (ErrorCommonUtils)
+// Module 15962 (ErrorCommonUtils)
 import LastFewActions from "LastFewActions" /* 509 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("utils/ErrorCommonUtils.tsx");
 
-export const getUpdatedOptions = function getUpdatedOptions(extra) {
+export function getUpdatedOptions(extra) {
   let obj2;
   let obj4;
   let serializer;
@@ -34,4 +34,4 @@ export const getUpdatedOptions = function getUpdatedOptions(extra) {
   serializer = LastFewActions;
   const merged3 = Object.assign(obj5);
   return obj;
-};
+}

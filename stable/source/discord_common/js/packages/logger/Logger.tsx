@@ -62,16 +62,16 @@ class Logger {
         }
       }
     };
-    obj.verbose = function verbose(handleBackPress) {
+    obj.verbose = function verbose(combined) {
       const substr = [...arguments].slice();
-      const items = [handleBackPress, ...substr];
+      const items = [combined, ...substr];
       const tmp3 = LoggerPIIRestrictedObjects;
       tmp3.checkLogForPII.apply(items);
-      log("debug", handleBackPress, ...substr);
+      log("debug", combined, ...substr);
       const tmp5 = obj;
       if (obj.nativeLoggerEnabled) {
         if (nativeLog != null) {
-          const items1 = [tmp5.name, "debug", handleBackPress];
+          const items1 = [tmp5.name, "debug", combined];
           HermesBuiltin.arraySpread(items1, substr, 3);
           HermesBuiltin.apply(nativeLog, items1, undefined);
         }
@@ -183,7 +183,7 @@ export function setLogFn(arg0) {
 export function setNativeLogFn(arg0) {
   nativeLog = arg0;
 }
-export const defaultLogFn = function defaultLogFn(arg0, arg1, arg2) {
+export function defaultLogFn(arg0, arg1, arg2) {
   const substr = [...arguments].slice();
-};
+}
 export { Logger };

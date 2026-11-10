@@ -1,12 +1,12 @@
-// Module ID: 12260
-// Function ID: 12261
+// Module ID: 12547
+// Function ID: 12548
 // Name: PollStyles
-// Dependencies: [6516, 12261, 12262, 2]
+// Dependencies: [6556, 12548, 12549, 2]
 
-// Module 12260 (PollStyles)
-import merged5 from "merged5" /* 6516 */;
-import PollLayoutTypes from "PollLayoutTypes" /* 12261 */;
-import PollMessageChatDataTypes from "PollMessageChatDataTypes" /* 12262 */;
+// Module 12547 (PollStyles)
+import merged5 from "merged5" /* 6556 */;
+import PollLayoutTypes from "PollLayoutTypes" /* 12548 */;
+import PollMessageChatDataTypes from "PollMessageChatDataTypes" /* 12549 */;
 import size from "module_2" /* 2 */;
 
 function normal(border, arg1) {
@@ -57,9 +57,9 @@ let obj = {
   },
   normal,
   notVoted,
-  selected(iconBackground, arg1) {
-    const obj = { border: iconBackground.colors.BACKGROUND_BRAND, borderWidth: 1, radioStyle: PollMessageChatDataTypes.PollRadioStyle.FILLED, radioBackground: iconBackground.colors.REDESIGN_INPUT_CONTROL_SELECTED, radioForeground: iconBackground.colors.STATUS_POSITIVE_TEXT };
-    const merged = Object.assign(normalVote(iconBackground, arg1));
+  selected(unselected, arg1) {
+    const obj = { border: unselected.colors.BACKGROUND_BRAND, borderWidth: 1, radioStyle: PollMessageChatDataTypes.PollRadioStyle.FILLED, radioBackground: unselected.colors.REDESIGN_INPUT_CONTROL_SELECTED, radioForeground: unselected.colors.STATUS_POSITIVE_TEXT };
+    const merged = Object.assign(normalVote(unselected, arg1));
     return obj;
   },
   victorNotSelected,

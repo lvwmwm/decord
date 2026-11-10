@@ -1,83 +1,22 @@
-// Module ID: 15136
-// Function ID: 15137
+// Module ID: 15677
+// Function ID: 15678
 // Name: MidjourneyOnboardingUtils
-// Dependencies: [4877, 5034, 15137, 558, 576, 504, 2]
-// Exports: hasRedirectedToGuild, isEligibleForMidjourneyRedirect, isMidjourneyOnboardingFlow
+// Dependencies: [4885, 5045, 15678, 504, 2]
+// Exports: hasRedirectedToGuild, isEligibleForMidjourneyRedirect, isMidjourneyOnboardingFlow, useIsMidjourneyOnboardingFlow
 
-// Module 15136 (MidjourneyOnboardingUtils)
-import react from "react" /* 576 */;
-import GuildStore from "GuildStore" /* 4877 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5034 */;
-import MidjourneyOnboardingConstants from "MidjourneyOnboardingConstants" /* 15137 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 15677 (MidjourneyOnboardingUtils)
+import get_initialized from "get initialized" /* 504 */;
+import GuildStore from "GuildStore" /* 4885 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5045 */;
+import MidjourneyOnboardingConstants from "MidjourneyOnboardingConstants" /* 15678 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
 let hasOwnProperty;
-let tmp;
-const get_initialized = tmp(504);
 ({ MIDJOURNEY_BOT_ID: closure_4, MIDJOURNEY_GUILD_ID: hasOwnProperty } = MidjourneyOnboardingConstants);
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsMidjourneyOnboardingFlow() {
-  let tmp4;
-  let tmp5;
-  let tmp6;
-  let obj = react;
-  const cResult = obj.c(3);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [GuildStore];
-    const fn = function t() {
-      const obj = { guildStore };
-      guildStore = obj.guildStore;
-      const guild = guildStore.getGuild(closure_1_5);
-      let joinedAt1;
-      if (guild != null) {
-        joinedAt1 = guild.joinedAt;
-      }
-      let tmp3 = joinedAt1 instanceof Date;
-      if (tmp3) {
-        const _Date = Date;
-        const joinedAt = guild.joinedAt;
-        const timestamp = Date.now();
-        tmp3 = timestamp - joinedAt.getTime() <= 3600000;
-      }
-      const tmp5 = 1 === guildStore.getGuildCount() && tmp3;
-      return tmp5;
-    };
-    const items1 = [];
-    cResult[0] = items;
-    cResult[1] = fn;
-    cResult[2] = items1;
-    tmp5 = fn;
-    tmp4 = items;
-    tmp6 = items1;
-  } else {
-    [tmp4, tmp5, tmp6] = cResult;
-  }
-  const tmpResult = get_initialized;
-  return tmpResult.useStateFromStores(tmp4, tmp5, tmp6);
-}) : (function useIsMidjourneyOnboardingFlow() {
-  let obj = get_initialized;
-  const items = [GuildStore];
-  return obj.useStateFromStores(items, () => {
-    const obj = { guildStore };
-    guildStore = obj.guildStore;
-    const guild = guildStore.getGuild(closure_1_5);
-    let joinedAt1;
-    if (guild != null) {
-      joinedAt1 = guild.joinedAt;
-    }
-    let tmp3 = joinedAt1 instanceof Date;
-    if (tmp3) {
-      const _Date = Date;
-      const joinedAt = guild.joinedAt;
-      const timestamp = Date.now();
-      tmp3 = timestamp - joinedAt.getTime() <= 3600000;
-    }
-    const tmp5 = 1 === guildStore.getGuildCount() && tmp3;
-    return tmp5;
-  }, []);
-});
-function isMidjourneyOnboardingFlow() {
+const result = size.fileFinishedImporting("modules/midjourney_onboarding/MidjourneyOnboardingUtils.tsx");
+
+export function isMidjourneyOnboardingFlow() {
   let obj = arg0;
   if (arg0 === undefined) {
     obj = {};
@@ -101,11 +40,29 @@ function isMidjourneyOnboardingFlow() {
   const tmp5 = 1 === guildStore.getGuildCount() && tmp3;
   return tmp5;
 }
-const result = size.fileFinishedImporting("modules/midjourney_onboarding/MidjourneyOnboardingUtils.tsx");
-
-export { isMidjourneyOnboardingFlow };
-export const useIsMidjourneyOnboardingFlow = tmp3;
-export const isEligibleForMidjourneyRedirect = function isEligibleForMidjourneyRedirect(channel) {
+export function useIsMidjourneyOnboardingFlow() {
+  let obj = get_initialized;
+  const items = [GuildStore];
+  return obj.useStateFromStores(items, () => {
+    const obj = { guildStore };
+    guildStore = obj.guildStore;
+    const guild = guildStore.getGuild(closure_1_5);
+    let joinedAt1;
+    if (guild != null) {
+      joinedAt1 = guild.joinedAt;
+    }
+    let tmp3 = joinedAt1 instanceof Date;
+    if (tmp3) {
+      const _Date = Date;
+      const joinedAt = guild.joinedAt;
+      const timestamp = Date.now();
+      tmp3 = timestamp - joinedAt.getTime() <= 3600000;
+    }
+    const tmp5 = 1 === guildStore.getGuildCount() && tmp3;
+    return tmp5;
+  }, []);
+}
+export function isEligibleForMidjourneyRedirect(channel) {
   let isDMResult = channel.isDM() && 1 === channel.rawRecipients.length && channel.rawRecipients[0].id === React3;
   if (isDMResult) {
     let guildStore = {}.guildStore;
@@ -129,8 +86,8 @@ export const isEligibleForMidjourneyRedirect = function isEligibleForMidjourneyR
     1 === guildStore.getGuildCount() && tmp8;
   }
   return isDMResult;
-};
-export const hasRedirectedToGuild = function hasRedirectedToGuild(arg0) {
+}
+export function hasRedirectedToGuild(arg0) {
   let guildId;
   let closure_0 = arg0;
   const promise = new Promise((fn, arg1) => {
@@ -160,4 +117,4 @@ export const hasRedirectedToGuild = function hasRedirectedToGuild(arg0) {
     }
   });
   return promise;
-};
+}

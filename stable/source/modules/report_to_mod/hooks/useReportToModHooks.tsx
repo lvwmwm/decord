@@ -1,64 +1,27 @@
-// Module ID: 10116
-// Function ID: 10117
+// Module ID: 10198
+// Function ID: 10199
 // Name: useReportToModHooks
-// Dependencies: [19, 4877, 6042, 558, 576, 7398, 7419, 504, 7415, 7598, 8702, 2]
-// Exports: loadOriginalAuthorFromSnapshot, useIsModeratorReportOrPostChannel, useIsModeratorReportPostChannel
+// Dependencies: [19, 4885, 6061, 504, 7440, 7461, 7457, 7636, 8752, 2]
+// Exports: loadOriginalAuthorFromSnapshot, useIsModeratorReportOrPostChannel, useIsModeratorReportPostChannel, useIsReportToModEnabled, useLoadReportedMessage, useReportToModChannelId
 
-// Module 10116 (useReportToModHooks)
+// Module 10198 (useReportToModHooks)
 import react from "react" /* 19 */;
-import getGuildModeratorReportingEnabledDefault from "getGuildModeratorReportingEnabled" /* 7398 */;
-import ReportToModUtils from "ReportToModUtils" /* 7415 */;
-import getGuildModeratorReportChannelIdDefault from "getGuildModeratorReportChannelId" /* 7419 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7598 */;
-import UserActionCreators from "UserActionCreators" /* 8702 */;
-import GuildStore from "GuildStore" /* 4877 */;
-import MessageStore from "MessageStore" /* 6042 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import getGuildModeratorReportingEnabledDefault from "getGuildModeratorReportingEnabled" /* 7440 */;
+import ReportToModUtils from "ReportToModUtils" /* 7457 */;
+import getGuildModeratorReportChannelIdDefault from "getGuildModeratorReportChannelId" /* 7461 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7636 */;
+import UserActionCreators from "UserActionCreators" /* 8752 */;
+import GuildStore from "GuildStore" /* 4885 */;
+import MessageStore from "MessageStore" /* 6061 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
 const useEffect = react.useEffect;
-let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsReportToModEnabled(arg0) {
-  let closure_0;
-  let first;
-  let tmp6;
-  _require = arg0;
-  const tmp = _require;
-  const obj = require("react");
-  const cResult = obj.c(3);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [GuildStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function s() {
-      if (null == closure_0) {
-        return false;
-      } else {
-        const guild = GuildStore.getGuild(tmp);
-        let tmp4 = null != guild;
-        if (tmp4) {
-          tmp4 = getGuildModeratorReportingEnabledDefault(guild) && null != getGuildModeratorReportChannelIdDefault(guild);
-          getGuildModeratorReportingEnabledDefault(guild) && null != getGuildModeratorReportChannelIdDefault(guild);
-        }
-        return tmp4;
-      }
-    };
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-  }
-  const tmpResult = tmp(504);
-  return tmpResult.useStateFromStores(first, tmp6);
-}) : (function useIsReportToModEnabled(arg0) {
+const result = size.fileFinishedImporting("modules/report_to_mod/hooks/useReportToModHooks.tsx");
+
+export function useIsReportToModEnabled(arg0) {
   let closure_0;
   _require = arg0;
   const items = [GuildStore];
@@ -76,48 +39,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsRepor
       return tmp4;
     }
   });
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useReportToModChannelId(arg0) {
-  let closure_0;
-  let first;
-  let tmp6;
-  _require = arg0;
-  const tmp = _require;
-  const obj = require("react");
-  const cResult = obj.c(3);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [GuildStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function s() {
-      let guild = null;
-      if (null != closure_0) {
-        guild = GuildStore.getGuild(tmp);
-      }
-      let tmp4 = null;
-      if (null != guild) {
-        let tmp7 = getGuildModeratorReportChannelIdDefault(guild);
-        if (tmp7 == null) {
-          tmp7 = null;
-        }
-        tmp4 = tmp7;
-      }
-      return tmp4;
-    };
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-  }
-  const tmpResult = tmp(504);
-  return tmpResult.useStateFromStores(first, tmp6);
-}) : (function useReportToModChannelId(arg0) {
+}
+export function useReportToModChannelId(arg0) {
   let closure_0;
   _require = arg0;
   const items = [GuildStore];
@@ -137,65 +60,16 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useReportT
     }
     return tmp4;
   });
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLoadReportedMessage(messageReference) {
-  let first;
-  let tmp6;
-  let tmp = messageReference;
-  let obj = messageReference(576);
-  const cResult = obj.c(7);
-  messageReference = messageReference.messageReference;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [MessageStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== messageReference) {
-    const fn = function l() {
-      let message = null;
-      if (null != messageReference) {
-        message = MessageStore.getMessage(tmp.channel_id, tmp.message_id);
-      }
-      return message;
-    };
-    cResult[1] = messageReference;
-    cResult[2] = fn;
-    tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-  }
-  const tmpResult = tmp(504);
-  const stateFromStores = tmpResult.useStateFromStores(first, tmp6);
-  if (cResult[3] === messageReference) {
-    let tmp8;
-    let tmp9;
-    if (cResult[4] === stateFromStores) {
-      tmp8 = cResult[5];
-      tmp9 = cResult[6];
-    }
-    useEffect(tmp8, tmp9);
-  }
-  const fn2 = function p() {
-    let obj3;
-    const tmp = null == stateFromStores && null != messageReference;
-    if (tmp) {
-      const obj2 = { channelId: messageReference.channel_id, jump: obj3, limit: 10 };
-      obj3 = { messageId: messageReference.message_id };
-      const obj = MessageActionCreatorsDefault;
-      const messages = obj.fetchMessages(obj2);
-    }
-  };
-  const items1 = [stateFromStores, messageReference];
-  cResult[3] = messageReference;
-  cResult[4] = stateFromStores;
-  cResult[5] = fn2;
-  cResult[6] = items1;
-  tmp9 = items1;
-  tmp8 = fn2;
-}) : (function useLoadReportedMessage(messageReference) {
+}
+export function useIsModeratorReportOrPostChannel(isModeratorReportChannel) {
+  const obj = ReportToModUtils;
+  return obj.isModeratorReportOrPostChannel(isModeratorReportChannel);
+}
+export function useIsModeratorReportPostChannel(isModeratorReportChannel) {
+  const obj = ReportToModUtils;
+  return obj.isModeratorReportPostChannel(isModeratorReportChannel);
+}
+export function useLoadReportedMessage(messageReference) {
   messageReference = messageReference.messageReference;
   let obj = messageReference(504);
   const items = [MessageStore];
@@ -217,21 +91,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLoadRepor
       const messages = obj.fetchMessages(obj2);
     }
   }, items1);
-});
-const result = size.fileFinishedImporting("modules/report_to_mod/hooks/useReportToModHooks.tsx");
-
-export const useIsReportToModEnabled = tmp2;
-export const useReportToModChannelId = tmp3;
-export const useIsModeratorReportOrPostChannel = function useIsModeratorReportOrPostChannel(isModeratorReportChannel) {
-  const obj = ReportToModUtils;
-  return obj.isModeratorReportOrPostChannel(isModeratorReportChannel);
-};
-export const useIsModeratorReportPostChannel = function useIsModeratorReportPostChannel(isModeratorReportChannel) {
-  const obj = ReportToModUtils;
-  return obj.isModeratorReportPostChannel(isModeratorReportChannel);
-};
-export const useLoadReportedMessage = tmp4;
-export const loadOriginalAuthorFromSnapshot = function loadOriginalAuthorFromSnapshot(arg0) {
+}
+export function loadOriginalAuthorFromSnapshot(arg0) {
   let reported_user_id;
   if (arg0 != null) {
     const first = arg0.messageSnapshots[0];
@@ -246,4 +107,4 @@ export const loadOriginalAuthorFromSnapshot = function loadOriginalAuthorFromSna
     const obj = UserActionCreators;
     const user = obj.getUser(reported_user_id);
   }
-};
+}

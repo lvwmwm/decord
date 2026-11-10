@@ -1,16 +1,16 @@
-// Module ID: 9175
-// Function ID: 9176
+// Module ID: 9211
+// Function ID: 9212
 // Name: GuildScheduledEventHeaderUtils
-// Dependencies: [6816, 4861, 8922, 587, 9176, 1128, 8964, 9177, 2]
+// Dependencies: [6855, 4869, 8969, 575, 9212, 1113, 8196, 9213, 2]
 // Exports: getGuildScheduledEventHeaderProps
 
-// Module 9175 (GuildScheduledEventHeaderUtils)
-import nativeDefault from "native" /* 587 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4861 */;
-import ScheduleUtils from "ScheduleUtils" /* 8922 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9176 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 9177 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6816 */;
+// Module 9211 (GuildScheduledEventHeaderUtils)
+import nativeDefault from "native" /* 575 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4869 */;
+import ScheduleUtils from "ScheduleUtils" /* 8969 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9212 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 9213 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6855 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -19,7 +19,7 @@ let closure_4;
 const constants = GuildScheduledEventsConstants.GuildScheduledEventEntityTypes;
 const result = size.fileFinishedImporting("modules/guild_scheduled_events/native/GuildScheduledEventHeaderUtils.tsx");
 
-export const getGuildScheduledEventHeaderProps = function getGuildScheduledEventHeaderProps(eventTimeData) {
+export function getGuildScheduledEventHeaderProps(eventTimeData) {
   let ICON_FEEDBACK_CRITICAL;
   let currentOrPastEvent;
   let diffMinutes;
@@ -49,30 +49,30 @@ export const getGuildScheduledEventHeaderProps = function getGuildScheduledEvent
   const ICON_SUBTLE = nativeDefault.colors.ICON_SUBTLE;
   let tmp8Result = AssetRegistryDefault;
   if (tmp4) {
-    const intl4 = tmp(1128).intl;
-    let stringResult = intl4.string(tmp(1128).t["X2K3/4"]);
+    const intl4 = tmp(1113).intl;
+    let stringResult = intl4.string(tmp(1113).t["X2K3/4"]);
     if (isStage) {
-      tmp8Result = tmp8(8964);
+      tmp8Result = tmp8(8196);
     }
     let entity_type;
     if (event != null) {
       entity_type = event.entity_type;
     }
     if (entity_type === constants.EXTERNAL) {
-      const intl5 = tmp(1128).intl;
-      stringResult = intl5.string(tmp(1128).t.TxqPQR);
+      const intl5 = tmp(1113).intl;
+      stringResult = intl5.string(tmp(1113).t.TxqPQR);
     }
-    ICON_FEEDBACK_CRITICAL = tmp8(587).colors.ICON_FEEDBACK_POSITIVE;
+    ICON_FEEDBACK_CRITICAL = tmp8(575).colors.ICON_FEEDBACK_POSITIVE;
     stringResult1 = stringResult;
     tmp8Result3 = tmp8Result;
   } else if (tmp7) {
-    tmp8Result3 = tmp8(9177);
+    tmp8Result3 = tmp8(9213);
     stringResult1 = startDateTimeString;
     ICON_FEEDBACK_CRITICAL = ICON_SUBTLE;
   } else if (currentOrPastEvent) {
-    tmp8Result3 = tmp8(9177);
-    const intl3 = tmp(1128).intl;
-    stringResult1 = intl3.string(tmp(1128).t.WINqKV);
+    tmp8Result3 = tmp8(9213);
+    const intl3 = tmp(1113).intl;
+    stringResult1 = intl3.string(tmp(1113).t.WINqKV);
     ICON_FEEDBACK_CRITICAL = ICON_SUBTLE;
   } else {
     tmp8Result3 = tmp8Result;
@@ -82,12 +82,12 @@ export const getGuildScheduledEventHeaderProps = function getGuildScheduledEvent
       let formatToPlainStringResult;
       const tmp8Result4 = AssetRegistryDefault2;
       if (diffMinutes > 0) {
-        const intl2 = tmp(1128).intl;
+        const intl2 = tmp(1113).intl;
         const obj2 = { minutes: diffMinutes };
-        formatToPlainStringResult = intl2.formatToPlainString(tmp(1128).t.PQlCWk, obj2);
+        formatToPlainStringResult = intl2.formatToPlainString(tmp(1113).t.PQlCWk, obj2);
       } else {
-        const intl = tmp(1128).intl;
-        formatToPlainStringResult = intl.string(tmp(1128).t.WINqKV);
+        const intl = tmp(1113).intl;
+        formatToPlainStringResult = intl.string(tmp(1113).t.WINqKV);
       }
       stringResult1 = formatToPlainStringResult;
       tmp8Result3 = tmp8Result4;
@@ -95,10 +95,10 @@ export const getGuildScheduledEventHeaderProps = function getGuildScheduledEvent
     }
   }
   if (isCanceled) {
-    ICON_FEEDBACK_CRITICAL = tmp8(587).colors.ICON_FEEDBACK_CRITICAL;
+    ICON_FEEDBACK_CRITICAL = tmp8(575).colors.ICON_FEEDBACK_CRITICAL;
   }
   const obj3 = { icon: tmp8Result3, text: stringResult1, color: internal.resolveSemanticColor(theme, ICON_FEEDBACK_CRITICAL), shouldChangeTextColor: tmp17 };
-  internal = tmp8(587).internal;
+  internal = tmp8(575).internal;
   tmp17 = !tmp7;
   if (tmp17) {
     if (!tmp4) {
@@ -110,4 +110,4 @@ export const getGuildScheduledEventHeaderProps = function getGuildScheduledEvent
     tmp17 = tmp4;
   }
   return obj3;
-};
+}

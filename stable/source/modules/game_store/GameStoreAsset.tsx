@@ -1,16 +1,16 @@
-// Module ID: 15791
-// Function ID: 15792
+// Module ID: 16337
+// Function ID: 16338
 // Name: GameStoreAsset
 // Dependencies: [2]
 // Exports: transformStoreAssetFromServer
 
-// Module 15791 (GameStoreAsset)
+// Module 16337 (GameStoreAsset)
 import size_mod from "module_2" /* 2 */;
 
 let size = size_mod;
 const result = size.fileFinishedImporting("modules/game_store/GameStoreAsset.tsx");
 
-export const transformStoreAssetFromServer = function transformStoreAssetFromServer(box_art) {
+export function transformStoreAssetFromServer(box_art) {
   size = { id: box_art.id, filename: box_art.filename, size: box_art.size, width: box_art.width, height: box_art.height, mimeType: box_art.mime_type };
   return size;
-};
+}

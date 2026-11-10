@@ -1,51 +1,77 @@
 // Module ID: 1870
 // Function ID: 1871
-// Dependencies: []
-// Exports: debounce, scrollDistanceWithRespectToSnapPoints
+// Dependencies: [19, 17, 21, 1844]
+// Exports: default
 
 // Module 1870
-let __initData = { code: "function pnpm_utilsTs2(...args){const{value,wait,worklet}=this.__closure;const t=Date.now();const now=t-value.time;if(now<wait){value.time=t;return;}value.time=t;return worklet(...args);}" };
-let fn = function t(worklet) {
-  __initData = worklet;
-  let num = arg1;
-  if (arg1 === undefined) {
-    num = 0;
-  }
-  const obj = { time: 0 };
-  const fn = function o() {
-    const items = [...arguments];
-    const timestamp = Date.now();
-    if (timestamp - obj.time < num) {
-      obj.time = timestamp;
-    } else {
-      obj.time = timestamp;
-      const items1 = [];
-      HermesBuiltin.arraySpread(items1, items, 0);
-      return HermesBuiltin.apply(closure_0, items1, undefined);
-    }
-  };
-  fn.__closure = { value: obj, wait: num, worklet };
-  fn.__workletHash = 8768898864142;
-  fn.__initData = __initData;
-  return fn;
-};
-fn.__closure = {};
-fn.__workletHash = 1678132827161;
-fn.__initData = { code: "function pnpm_utilsTs1(worklet,wait=0){const value={time:0};return function(...args){\"worklet\";const t=Date.now();const now=t-value.time;if(now<wait){value.time=t;return;}value.time=t;return worklet(...args);};}" };
-const fn2 = function n(arg0, arr) {
-  let closure_0 = arg0;
-  let found;
-  if (arr) {
-    found = arr.find((item) => item >= closure_0);
-  }
-  if (found == null) {
-    found = arg0;
-  }
-  return found;
-};
-fn2.__closure = {};
-fn2.__workletHash = 10680474034033;
-fn2.__initData = { code: "function pnpm_utilsTs3(defaultScrollValue,snapPoints){let snapPoint;if(snapPoints){snapPoint=snapPoints.find(function(offset){return offset>=defaultScrollValue;});}return snapPoint!==null&&snapPoint!==void 0?snapPoint:defaultScrollValue;}" };
+import react2 from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
 
-export const debounce = fn;
-export const scrollDistanceWithRespectToSnapPoints = fn2;
+let RN;
+
+let StyleSheet;
+let c3;
+let closure_4;
+let hasOwnProperty;
+let items;
+let items1;
+let items2;
+let metroRequire;
+let obj2;
+let obj3;
+let obj4;
+const useMemo = react2.useMemo;
+({ Animated: c3, StyleSheet, View: closure_4 } = react_native);
+({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
+const size = { width: 13, height: 2, borderRadius: 1 };
+const size1 = { marginHorizontal: 5, width: 30, height: 30, justifyContent: "center", alignItems: "center" };
+let obj = { arrowUpContainer: size1, arrowDownContainer: obj2, arrow: { width: 20, height: 20, flexDirection: "row", alignItems: "center", justifyContent: "space-between" }, arrowLeftLine: obj3, arrowRightLine: obj4 };
+obj2 = { transform: items };
+const create = StyleSheet.create;
+const merged = Object.assign(size1);
+items = [{ rotate: "180deg" }];
+obj3 = { transform: items1, left: -0.5 };
+const merged1 = Object.assign(size);
+items1 = [{ rotate: "-45deg" }];
+obj4 = { transform: items2, left: -5.5 };
+const merged2 = Object.assign(size);
+items2 = [{ rotate: "45deg" }];
+let closure_7 = create(obj);
+
+export default function _default(disabled) {
+  let arrowUpContainer;
+  let closure_3;
+  let items3;
+  let obj3;
+  let tmp7;
+  disabled = disabled.disabled;
+  const theme = disabled.theme;
+  const type = disabled.type;
+  const obj = disabled(theme[3]);
+  const keyboardState = obj.useKeyboardState((appearance) => appearance.appearance);
+  let items = [disabled, theme, keyboardState];
+  const tmp2 = keyboardState(() => ({ backgroundColor: disabled ? theme[keyboardState].disabled : theme[keyboardState].primary }), items);
+  RN = tmp2;
+  const items1 = [tmp2];
+  const items2 = [tmp2];
+  const tmp3 = keyboardState(() => {
+    const items = [closure_7.arrowLeftLine, closure_3];
+    return items;
+  }, items1);
+  const tmp4 = keyboardState(() => {
+    const items = [closure_7.arrowRightLine, closure_3];
+    return items;
+  }, items2);
+  if ("next" === type) {
+    arrowUpContainer = closure_7.arrowDownContainer;
+    tmp7 = closure_7;
+  } else {
+    tmp7 = closure_7;
+    arrowUpContainer = closure_7.arrowUpContainer;
+  }
+  const obj2 = { style: arrowUpContainer, children: closure_6(closure_4, obj3) };
+  obj3 = { style: tmp7.arrow, children: items3 };
+  items3 = [closure_5(RN.View, { style: tmp3 }), closure_5(RN.View, { style: tmp4 })];
+  return closure_5(closure_4, obj2);
+};

@@ -1,11 +1,11 @@
-// Module ID: 10796
-// Function ID: 10797
+// Module ID: 10925
+// Function ID: 10926
 // Name: conjurePreviewOperationSurfaces
-// Dependencies: [10794, 2]
+// Dependencies: [10923, 2]
 // Exports: createPreviewOperationSurfaces
 
-// Module 10796 (conjurePreviewOperationSurfaces)
-import conjurePreviewControlLease from "conjurePreviewControlLease" /* 10794 */;
+// Module 10925 (conjurePreviewOperationSurfaces)
+import conjurePreviewControlLease from "conjurePreviewControlLease" /* 10923 */;
 import size from "module_2" /* 2 */;
 
 let closure_1, map;
@@ -18,7 +18,7 @@ function bestEffort(arg0, fn) {
 }
 let result = size.fileFinishedImporting("modules/conjure/preview/conjurePreviewOperationSurfaces.tsx");
 
-export const createPreviewOperationSurfaces = function createPreviewOperationSurfaces(arg0) {
+export function createPreviewOperationSurfaces(arg0) {
   let closure_0 = arg0;
   map = new Map();
   let obj = {
@@ -89,4 +89,4 @@ export const createPreviewOperationSurfaces = function createPreviewOperationSur
     }
   };
   return obj;
-};
+}

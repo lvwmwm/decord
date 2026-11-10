@@ -1,13 +1,13 @@
-// Module ID: 10746
-// Function ID: 10747
+// Module ID: 10867
+// Function ID: 10868
 // Name: ConjurePublishStatusStore
-// Dependencies: [6805, 504, 568, 584, 2]
+// Dependencies: [6844, 504, 558, 572, 2]
 
-// Module 10746 (ConjurePublishStatusStore)
+// Module 10867 (ConjurePublishStatusStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import shallowEqual from "shallowEqual" /* 568 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6805 */;
+import shallowEqual from "shallowEqual" /* 558 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6844 */;
 import size from "module_2" /* 2 */;
 
 const map = new Map();
@@ -22,8 +22,8 @@ class ConjurePublishStatusStore extends Store {
   initialize() {
     this.waitFor(ConjureProjectStore);
   }
-  getPublishStatus(projectId) {
-    let value = map.get(projectId);
+  getPublishStatus(id) {
+    let value = map.get(id);
     if (value == null) {
       value = null;
     }
@@ -39,8 +39,8 @@ class ConjurePublishStatusStore extends Store {
     }
     return value;
   }
-  getPublishProgress(arg0) {
-    let value = map2.get(arg0);
+  getPublishProgress(projectId) {
+    let value = map2.get(projectId);
     if (value == null) {
       value = null;
     }
@@ -53,8 +53,8 @@ class ConjurePublishStatusStore extends Store {
     }
     return value;
   }
-  isAppChannelPending(projectId) {
-    return set1.has(projectId);
+  isAppChannelPending(arg0) {
+    return set1.has(arg0);
   }
 }
 const prototype = ConjurePublishStatusStore.prototype;
@@ -194,7 +194,7 @@ let obj = {
               const obj2 = shallowEqual;
               if (obj2.areArraysShallowEqual(value.previewAppChannels, previewAppChannels)) {
                 let previewDevicePermissions2 = value.previewDevicePermissions;
-                const areArraysShallowEqual = tmp18(568).areArraysShallowEqual;
+                const areArraysShallowEqual = tmp18(558).areArraysShallowEqual;
                 shallowEqual;
                 if (previewDevicePermissions2 == null) {
                   previewDevicePermissions2 = closure_10;
@@ -312,7 +312,7 @@ let obj = {
         patchNotesSent = closure_9;
       }
       items = [];
-      items[HermesBuiltin.arraySpread(items, patchNotesSent.filter((publishedRevision) => publishedRevision.publishedRevision !== asks.publishedRevision), 0)] = sent;
+      items[HermesBuiltin.arraySpread(items, patchNotesSent.filter((publishedRevision) => publishedRevision.publishedRevision !== publishedRevision.publishedRevision), 0)] = sent;
       const result = set(projectId, obj);
     }
   },

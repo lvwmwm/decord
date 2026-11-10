@@ -1,13 +1,13 @@
-// Module ID: 10756
-// Function ID: 10757
+// Module ID: 10879
+// Function ID: 10880
 // Name: ConjureCreateErrors
-// Dependencies: [1087, 1128, 3862, 2]
+// Dependencies: [1072, 1113, 3868, 2]
 // Exports: classifyCreateFailure, createFailureStatus, getConjureCreateErrorMessage
 
-// Module 10756 (ConjureCreateErrors)
-import Constants from "Constants" /* 1087 */;
-import intl4 from "intl" /* 1128 */;
-import _modDef3862 from "module_3862" /* 3862 */;
+// Module 10879 (ConjureCreateErrors)
+import Constants from "Constants" /* 1072 */;
+import intl4 from "intl" /* 1113 */;
+import _modDef3868 from "module_3868" /* 3868 */;
 import size from "module_2" /* 2 */;
 
 const AbortCodes = Constants.AbortCodes;
@@ -23,7 +23,7 @@ class ConjureCreateError extends Error {
 const result = size.fileFinishedImporting("modules/conjure/create/ConjureCreateErrors.tsx");
 
 export { ConjureCreateError };
-export const classifyCreateFailure = function classifyCreateFailure(error) {
+export function classifyCreateFailure(error) {
   let body;
   let status;
   if (typeof error === "object") {
@@ -50,8 +50,8 @@ export const classifyCreateFailure = function classifyCreateFailure(error) {
     }
   }
   return "unknown";
-};
-export const createFailureStatus = function createFailureStatus(status) {
+}
+export function createFailureStatus(status) {
   status = undefined;
   if (status != null) {
     status = status.status;
@@ -61,20 +61,20 @@ export const createFailureStatus = function createFailureStatus(status) {
     num = status;
   }
   return num;
-};
-export const getConjureCreateErrorMessage = function getConjureCreateErrorMessage(reason) {
+}
+export function getConjureCreateErrorMessage(reason) {
   let str = "unknown";
   if (reason instanceof ConjureCreateError) {
     str = reason.reason;
   }
   if ("project_limit" === str) {
     const intl3 = intl4.intl;
-    return intl3.string(_modDef3862["lh+h/p"]);
+    return intl3.string(_modDef3868["lh+h/p"]);
   } else if ("rate_limited" === str) {
     const intl2 = intl4.intl;
-    return intl2.string(_modDef3862.zBENJU);
+    return intl2.string(_modDef3868.zBENJU);
   } else {
     const intl = intl4.intl;
-    return intl.string(_modDef3862["9m86fn"]);
+    return intl.string(_modDef3868["9m86fn"]);
   }
-};
+}

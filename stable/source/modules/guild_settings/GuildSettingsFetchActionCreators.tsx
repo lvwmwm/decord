@@ -1,16 +1,16 @@
-// Module ID: 9044
-// Function ID: 9045
+// Module ID: 9080
+// Function ID: 9081
 // Name: GuildSettingsFetchActionCreators
-// Dependencies: [5, 2024, 1406, 1087, 1297, 584, 2]
+// Dependencies: [5, 2016, 1397, 1072, 1282, 572, 2]
 // Exports: fetchGuildEmbed, fetchGuildIntegrationsApplications
 
-// Module 9044 (GuildSettingsFetchActionCreators)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1087 */;
-import HTTPUtils from "HTTPUtils" /* 1297 */;
-import ApplicationRecord from "ApplicationRecord" /* 2024 */;
+// Module 9080 (GuildSettingsFetchActionCreators)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import Constants from "Constants" /* 1072 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
+import ApplicationRecord from "ApplicationRecord" /* 2016 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserRecord from "UserRecord" /* 1406 */;
+import UserRecord from "UserRecord" /* 1397 */;
 import size from "module_2" /* 2 */;
 
 let obj = function _fetchGuildIntegrationsApplications() {
@@ -60,10 +60,10 @@ const BasicApplicationRecord = ApplicationRecord.BasicApplicationRecord;
 const Endpoints = Constants.Endpoints;
 const result = size.fileFinishedImporting("modules/guild_settings/GuildSettingsFetchActionCreators.tsx");
 
-export const fetchGuildIntegrationsApplications = function fetchGuildIntegrationsApplications() {
+export function fetchGuildIntegrationsApplications() {
   return obj(...arguments);
-};
-export const fetchGuildEmbed = function fetchGuildEmbed(arg0) {
+}
+export function fetchGuildEmbed(arg0) {
   const HTTP = HTTPUtils.HTTP;
   obj = { url: Endpoints.GUILD_WIDGET(arg0), oldFormErrors: true, rejectWithError: true };
   const value = HTTP.get(obj);
@@ -72,4 +72,4 @@ export const fetchGuildEmbed = function fetchGuildEmbed(arg0) {
     const obj2 = { type: "GUILD_SETTINGS_SET_WIDGET", enabled: body.body.enabled, channelId: body.body.channel_id };
     obj.dispatch(obj2);
   });
-};
+}

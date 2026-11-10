@@ -1,21 +1,21 @@
-// Module ID: 13725
-// Function ID: 13726
+// Module ID: 14359
+// Function ID: 14360
 // Name: ChannelPrompt
-// Dependencies: [5, 32, 19, 17, 4933, 4877, 21, 5003, 5300, 504, 1505, 6956, 1128, 7443, 6406, 7253, 6915, 1417, 5266, 7039, 5276, 7065, 2]
+// Dependencies: [5, 32, 19, 17, 4944, 4885, 21, 5014, 5586, 504, 1497, 6998, 1113, 7485, 6446, 7292, 6957, 1409, 5624, 7081, 5634, 7107, 2]
 // Exports: default
 
-// Module 13725 (ChannelPrompt)
-import intl5 from "intl" /* 1128 */;
-import NavigatorConstants from "NavigatorConstants" /* 5300 */;
-import NavigatorHeader from "NavigatorHeader" /* 6956 */;
+// Module 14359 (ChannelPrompt)
+import intl5 from "intl" /* 1113 */;
+import NavigatorConstants from "NavigatorConstants" /* 5586 */;
+import NavigatorHeader from "NavigatorHeader" /* 6998 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildChannelStore from "GuildChannelStore" /* 4933 */;
-import GuildStore from "GuildStore" /* 4877 */;
+import GuildChannelStore from "GuildChannelStore" /* 4944 */;
+import GuildStore from "GuildStore" /* 4885 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5003 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5, navigation;
@@ -114,7 +114,7 @@ export default function ChannelPrompt(guildId) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -170,7 +170,7 @@ export default function ChannelPrompt(guildId) {
           }
           closure_129_6(false);
           c5 = 3;
-          return { value: "IconComponent", done: "+352" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp28) {
         hasSkip = tmp28;

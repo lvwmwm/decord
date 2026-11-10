@@ -1,10 +1,10 @@
-// Module ID: 18172
-// Function ID: 18173
+// Module ID: 18754
+// Function ID: 18755
 // Name: CachedSearchResultParser
 // Dependencies: [2]
 // Exports: CachedSearchResultParser
 
-// Module 18172 (CachedSearchResultParser)
+// Module 18754 (CachedSearchResultParser)
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/search/native/message_parsers/CachedSearchResultParser.tsx");

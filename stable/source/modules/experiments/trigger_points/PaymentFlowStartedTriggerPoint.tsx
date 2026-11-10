@@ -1,14 +1,14 @@
-// Module ID: 10595
-// Function ID: 10596
+// Module ID: 10677
+// Function ID: 10678
 // Name: PaymentFlowStartedTriggerPoint
-// Dependencies: [5223, 1087, 10596, 1267, 2]
+// Dependencies: [5239, 1072, 10678, 1252, 2]
 // Exports: trackPaymentFlowStartedAnalyticsAndCTP
 
-// Module 10595 (PaymentFlowStartedTriggerPoint)
-import Constants from "Constants" /* 1087 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import ExperimentConstants from "ExperimentConstants" /* 5223 */;
-import Helpers from "Helpers" /* 10596 */;
+// Module 10677 (PaymentFlowStartedTriggerPoint)
+import Constants from "Constants" /* 1072 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import ExperimentConstants from "ExperimentConstants" /* 5239 */;
+import Helpers from "Helpers" /* 10678 */;
 import size from "module_2" /* 2 */;
 
 const CommonTriggerPoints = ExperimentConstants.CommonTriggerPoints;
@@ -17,7 +17,7 @@ const commonTriggerPointConfiguration = new Helpers.CommonTriggerPointConfigurat
 const result = size.fileFinishedImporting("modules/experiments/trigger_points/PaymentFlowStartedTriggerPoint.tsx");
 
 export const PaymentFlowStartedTriggerPoint = commonTriggerPointConfiguration;
-export const trackPaymentFlowStartedAnalyticsAndCTP = function trackPaymentFlowStartedAnalyticsAndCTP(basePurchaseAnalytics) {
+export function trackPaymentFlowStartedAnalyticsAndCTP(basePurchaseAnalytics) {
   let obj = arg1;
   if (arg1 === undefined) {
     obj = {};
@@ -25,4 +25,4 @@ export const trackPaymentFlowStartedAnalyticsAndCTP = function trackPaymentFlowS
   const obj2 = AnalyticsUtilsDefault;
   obj2.track(AnalyticEvents.PAYMENT_FLOW_STARTED, basePurchaseAnalytics, obj);
   commonTriggerPointConfiguration.trigger();
-};
+}

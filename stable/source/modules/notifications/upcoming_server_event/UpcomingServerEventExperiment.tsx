@@ -1,13 +1,11 @@
-// Module ID: 16904
-// Function ID: 16905
+// Module ID: 17502
+// Function ID: 17503
 // Name: UpcomingServerEventExperiment
-// Dependencies: [1455, 558, 576, 2]
-// Exports: isEligibleForUpcomingServerEventNotifications
+// Dependencies: [1447, 2]
+// Exports: isEligibleForUpcomingServerEventNotifications, useUpcomingServerEventExperiment
 
-// Module 16904 (UpcomingServerEventExperiment)
-import react from "react" /* 576 */;
-import ApexExperiment from "ApexExperiment" /* 1455 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 17502 (UpcomingServerEventExperiment)
+import ApexExperiment from "ApexExperiment" /* 1447 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -15,28 +13,14 @@ let obj = { kind: "user", name: "2026-04-upcoming-server-event", defaultConfig: 
 obj2 = { 1: null, 2: { showSettingsToggle: true }, 3: { showSettingsToggle: true } };
 obj2[3] = { showSettingsToggle: true };
 const apexExperiment = ApexExperiment.createApexExperiment(obj);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUpcomingServerEventExperiment(location) {
-  let tmp2;
-  const obj = react;
-  const cResult = obj.c(2);
-  if (cResult[0] !== location) {
-    const obj2 = { location };
-    cResult[0] = location;
-    cResult[1] = obj2;
-    tmp2 = obj2;
-  } else {
-    tmp2 = cResult[1];
-  }
-  return apexExperiment.useConfig(tmp2);
-}) : (function useUpcomingServerEventExperiment(location) {
-  const obj = { location };
-  return apexExperiment.useConfig(obj);
-});
 const result = size.fileFinishedImporting("modules/notifications/upcoming_server_event/UpcomingServerEventExperiment.tsx");
 
 export default apexExperiment;
-export const useUpcomingServerEventExperiment = tmp3;
-export const isEligibleForUpcomingServerEventNotifications = function isEligibleForUpcomingServerEventNotifications(location) {
+export function useUpcomingServerEventExperiment(tabsV2Settings) {
+  const obj = { location: tabsV2Settings };
+  return apexExperiment.useConfig(obj);
+}
+export function isEligibleForUpcomingServerEventNotifications(location) {
   const obj = { location };
   return apexExperiment.getConfig(obj).showSettingsToggle;
-};
+}

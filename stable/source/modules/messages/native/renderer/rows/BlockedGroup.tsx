@@ -1,16 +1,16 @@
-// Module ID: 8168
-// Function ID: 8169
+// Module ID: 8380
+// Function ID: 8381
 // Name: BlockedGroup
-// Dependencies: [8166, 1098, 12, 5010, 587, 5000, 8169, 2]
+// Dependencies: [8378, 1083, 12, 5021, 575, 5011, 8381, 2]
 // Exports: generateBlockedGroupRowData
 
-// Module 8168 (BlockedGroup)
-import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1098 */;
-import ColorUtils from "ColorUtils" /* 5000 */;
-import shared from "shared" /* 5010 */;
-import RowGeneratorConstants from "RowGeneratorConstants" /* 8166 */;
-import react_native from "react-native" /* 8169 */;
+// Module 8380 (BlockedGroup)
+import nativeDefault from "native" /* 575 */;
+import Constants from "Constants" /* 1083 */;
+import ColorUtils from "ColorUtils" /* 5011 */;
+import shared from "shared" /* 5021 */;
+import RowGeneratorConstants from "RowGeneratorConstants" /* 8378 */;
+import react_native from "react-native" /* 8381 */;
 import module_12 from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 
@@ -46,7 +46,7 @@ let closure_5 = module_12.memoize((arg0) => {
 });
 const result = size.fileFinishedImporting("modules/messages/native/renderer/rows/BlockedGroup.tsx");
 
-export const generateBlockedGroupRowData = function generateBlockedGroupRowData(canUncollapse, theme, self) {
+export function generateBlockedGroupRowData(canUncollapse, theme, self) {
   let changeType;
   let content;
   let context;
@@ -69,4 +69,4 @@ export const generateBlockedGroupRowData = function generateBlockedGroupRowData(
     context = message.id;
   }
   return obj;
-};
+}

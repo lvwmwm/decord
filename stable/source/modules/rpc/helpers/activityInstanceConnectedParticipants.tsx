@@ -1,22 +1,28 @@
-// Module ID: 15749
-// Function ID: 15750
+// Module ID: 16295
+// Function ID: 16296
 // Name: activityInstanceConnectedParticipants
-// Dependencies: [4854, 1392, 6410, 4924, 6021, 9294, 1388, 12, 2]
+// Dependencies: [4862, 1383, 6450, 1072, 4935, 6041, 9331, 1379, 16296, 12, 2]
 // Exports: activityInstanceConnectedParticipants
 
-// Module 15749 (activityInstanceConnectedParticipants)
-import transformUserDefault from "transformUser" /* 9294 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4854 */;
-import UserStore from "UserStore" /* 1392 */;
-import Constants from "Constants" /* 6410 */;
+// Module 16295 (activityInstanceConnectedParticipants)
+import Constants2 from "Constants" /* 1072 */;
+import transformUserDefault from "transformUser" /* 9331 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4862 */;
+import UserStore from "UserStore" /* 1383 */;
+import Constants from "Constants" /* 6450 */;
+import CONTEXT_MENU_ICON_NAMES from "CONTEXT_MENU_ICON_NAMES" /* 16296 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, user;
 
+let RPC_AUTHENTICATED_SCOPE;
+let RPC_SCOPE_CONFIG;
 let items;
-let obj = { [Constants.RPC_SCOPE_CONFIG.ANY]: items };
-items = [Constants.RPC_AUTHENTICATED_SCOPE];
+({ RPC_AUTHENTICATED_SCOPE, RPC_SCOPE_CONFIG } = Constants);
+let obj = { [RPC_SCOPE_CONFIG.ANY]: items };
+items = [RPC_AUTHENTICATED_SCOPE];
+const RPCEvents = Constants2.RPCEvents;
 let obj2 = {
   scope: obj,
   handler() {
@@ -35,11 +41,11 @@ let obj2 = {
         let obj = { participants: [] };
         obj2 = obj;
       } else {
-        const obj4 = embeddedActivityLocationGuildId(closure_2[3]);
+        const obj4 = embeddedActivityLocationGuildId(closure_2[4]);
         embeddedActivityLocationGuildId = obj4.getEmbeddedActivityLocationGuildId(currentEmbeddedActivity.location);
-        const obj5 = embeddedActivityLocationGuildId(closure_2[3]);
+        const obj5 = embeddedActivityLocationGuildId(closure_2[4]);
         embeddedActivityLocationChannelId = obj5.getEmbeddedActivityLocationChannelId(currentEmbeddedActivity.location);
-        obj2 = { participants: arr.filter(embeddedActivityLocationGuildId(closure_2[6]).isNotNullish) };
+        obj2 = { participants: arr.filter(embeddedActivityLocationGuildId(closure_2[7]).isNotNullish) };
         const _Array = Array;
         arr = Array.from(currentEmbeddedActivity.userIds, (arg0) => {
           user = user.getUser(arg0);
@@ -52,7 +58,7 @@ let obj2 = {
           }
         });
       }
-      const obj3 = embeddedActivityLocationChannelId(closure_2[7]);
+      const obj3 = embeddedActivityLocationChannelId(closure_2[9]);
       if (!obj3.isEqual(obj2, prevState)) {
         dispatch(obj2);
       }
@@ -60,9 +66,10 @@ let obj2 = {
     };
   }
 };
+const rPCEvent = CONTEXT_MENU_ICON_NAMES.createRPCEvent(RPCEvents.ACTIVITY_INSTANCE_PARTICIPANTS_UPDATE, obj2);
 const result = size.fileFinishedImporting("modules/rpc/helpers/activityInstanceConnectedParticipants.tsx");
 
-export const activityInstanceConnectedParticipants = function activityInstanceConnectedParticipants() {
+export function activityInstanceConnectedParticipants() {
   let arr;
   let closure_0;
   let closure_1;
@@ -88,6 +95,6 @@ export const activityInstanceConnectedParticipants = function activityInstanceCo
     });
     return obj4;
   }
-};
+}
 export const activityInstanceConnectedParticipantsScope = obj;
-export const activityInstanceConnectedParticipantsUpdateEvent = obj2;
+export const activityInstanceConnectedParticipantsUpdateEvent = rPCEvent;

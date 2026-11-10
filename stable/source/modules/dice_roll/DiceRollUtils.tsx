@@ -1,16 +1,16 @@
-// Module ID: 13312
-// Function ID: 13313
+// Module ID: 13943
+// Function ID: 13944
 // Name: DiceRollUtils
-// Dependencies: [1128, 2]
+// Dependencies: [1113, 2]
 // Exports: getBarText
 
-// Module 13312 (DiceRollUtils)
-import intl3 from "intl" /* 1128 */;
+// Module 13943 (DiceRollUtils)
+import intl3 from "intl" /* 1113 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/dice_roll/DiceRollUtils.tsx");
 
-export const getBarText = function getBarText(flag, results) {
+export function getBarText(flag, results) {
   let str;
   const tmp = flag;
   if (tmp) {
@@ -27,4 +27,4 @@ export const getBarText = function getBarText(flag, results) {
     }
   }
   return str;
-};
+}

@@ -1,13 +1,13 @@
-// Module ID: 10757
-// Function ID: 10758
+// Module ID: 10880
+// Function ID: 10881
 // Name: ConjureWorkerTickets
-// Dependencies: [5, 1087, 1297, 10758, 2]
+// Dependencies: [5, 1072, 1282, 10881, 2]
 // Exports: forgetEarlyTicket, forgetEarlyTickets, mintRemixTicket, mintWorkerTicket, prefetchWorkerTicket, rememberCreatedProjectTicket
 
-// Module 10757 (ConjureWorkerTickets)
-import Constants from "Constants" /* 1087 */;
-import HTTPUtils from "HTTPUtils" /* 1297 */;
-import conjureLocalDev from "conjureLocalDev" /* 10758 */;
+// Module 10880 (ConjureWorkerTickets)
+import Constants from "Constants" /* 1072 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
+import conjureLocalDev from "conjureLocalDev" /* 10881 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -46,7 +46,7 @@ const map = new Map();
 let closure_5 = [];
 let result = size.fileFinishedImporting("modules/conjure/connection/ConjureWorkerTickets.tsx");
 
-export const rememberCreatedProjectTicket = function rememberCreatedProjectTicket(id, ws_ticket) {
+export function rememberCreatedProjectTicket(id, ws_ticket) {
   let conjureTunnelWorkerOrigin;
   const url = ws_ticket.url;
   obj = { ticket: ws_ticket.ticket, baseUrl: conjureTunnelWorkerOrigin };
@@ -58,8 +58,8 @@ export const rememberCreatedProjectTicket = function rememberCreatedProjectTicke
   }
   const obj3 = { ticket: resolve(obj), until: Date.now() + 30000 };
   const result = set(id, obj3);
-};
-export const prefetchWorkerTicket = function prefetchWorkerTicket(projectId) {
+}
+export function prefetchWorkerTicket(projectId) {
   let closure_0 = projectId;
   const timestamp = Date.now();
   const value = map.get(projectId);
@@ -92,14 +92,14 @@ export const prefetchWorkerTicket = function prefetchWorkerTicket(projectId) {
       });
     }
   }
-};
-export const forgetEarlyTicket = function forgetEarlyTicket(id) {
-  map.delete(id);
-};
-export const forgetEarlyTickets = function forgetEarlyTickets() {
+}
+export function forgetEarlyTicket(arg0) {
+  map.delete(arg0);
+}
+export function forgetEarlyTickets() {
   map.clear();
-};
-export const mintWorkerTicket = function mintWorkerTicket(projectId) {
+}
+export function mintWorkerTicket(projectId) {
   const value = map.get(projectId);
   obj = map;
   if (null != value) {
@@ -112,7 +112,7 @@ export const mintWorkerTicket = function mintWorkerTicket(projectId) {
   }
   obj.delete(projectId);
   ticket = mintTicket(Endpoints.CONJURE_PROJECT_WS_TICKET(projectId));
-};
-export const mintRemixTicket = function mintRemixTicket(id) {
+}
+export function mintRemixTicket(id) {
   return mintTicket(Endpoints.CONJURE_PROJECT_REMIX_TICKET(id));
-};
+}

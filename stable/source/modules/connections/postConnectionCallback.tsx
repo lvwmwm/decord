@@ -1,12 +1,12 @@
-// Module ID: 6664
-// Function ID: 6665
+// Module ID: 6704
+// Function ID: 6705
 // Name: postConnectionCallback
-// Dependencies: [1087, 1297, 2]
+// Dependencies: [1072, 1282, 2]
 // Exports: postConnectionCallback
 
-// Module 6664 (postConnectionCallback)
-import HTTPUtils from "HTTPUtils" /* 1297 */;
-import Constants from "Constants" /* 1087 */;
+// Module 6704 (postConnectionCallback)
+import HTTPUtils from "HTTPUtils" /* 1282 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 let c2;
@@ -14,7 +14,7 @@ let c3;
 ({ Endpoints: c2, FRIEND_SYNC_PLATFORM_TYPES: c3 } = Constants);
 const result = size.fileFinishedImporting("modules/connections/postConnectionCallback.tsx");
 
-export const postConnectionCallback = function postConnectionCallback(provider, arg1) {
+export function postConnectionCallback(provider, arg1) {
   let obj;
   let obj3;
   let flag = arg2;
@@ -28,4 +28,4 @@ export const postConnectionCallback = function postConnectionCallback(provider, 
   const merged = Object.assign(arg1);
   obj3 = HTTPUtils;
   return post(request);
-};
+}

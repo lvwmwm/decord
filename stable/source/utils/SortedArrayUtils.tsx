@@ -1,15 +1,15 @@
-// Module ID: 6525
-// Function ID: 6526
+// Module ID: 6565
+// Function ID: 6566
 // Name: SortedArrayUtils
 // Dependencies: [2]
 // Exports: insert, insertionIndex, remove
 
-// Module 6525 (SortedArrayUtils)
+// Module 6565 (SortedArrayUtils)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("utils/SortedArrayUtils.tsx");
 
-export const insertionIndex = function insertionIndex(arg0, arg1, fn) {
+export function insertionIndex(arg0, arg1, fn) {
   let sum;
   let tmp4;
   let length = arg0.length;
@@ -30,8 +30,8 @@ export const insertionIndex = function insertionIndex(arg0, arg1, fn) {
     } while (sum < tmp4);
   }
   return num2;
-};
-export const insert = function insert(arr, arg1, fn) {
+}
+export function insert(arr, arg1, fn) {
   let sum;
   let tmp4;
   let length = arr.length;
@@ -52,8 +52,8 @@ export const insert = function insert(arr, arg1, fn) {
     } while (sum < tmp4);
   }
   arr.splice(num2, 0, arg1);
-};
-export const remove = function remove(arr, arg1, fn) {
+}
+export function remove(arr, arg1, fn) {
   let sum;
   let tmp4;
   let length = arr.length;
@@ -80,4 +80,4 @@ export const remove = function remove(arr, arg1, fn) {
     flag = true;
   }
   return flag;
-};
+}

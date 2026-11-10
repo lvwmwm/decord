@@ -1,11 +1,11 @@
-// Module ID: 10830
-// Function ID: 10831
+// Module ID: 10952
+// Function ID: 10953
 // Name: ConjureDevicePermissionStore
-// Dependencies: [502, 504, 584, 2]
+// Dependencies: [502, 504, 572, 2]
 
-// Module 10830 (ConjureDevicePermissionStore)
+// Module 10952 (ConjureDevicePermissionStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import size from "module_2" /* 2 */;
 
@@ -22,14 +22,14 @@ class ConjureDevicePermissionStore extends DeviceSettingsStore {
       users = {};
     }
   }
-  getDecision(applicationId, permission) {
+  getDecision(applicationId, item10006) {
     const id = AuthenticationStore.getId();
     let tmp2 = null;
     if (null != id) {
       let tmp5;
       if (obj.users[id] != null) {
         if (obj.users[id][applicationId] != null) {
-          tmp5 = tmp7[permission];
+          tmp5 = tmp7[item10006];
         }
       }
       if (tmp5 == null) {

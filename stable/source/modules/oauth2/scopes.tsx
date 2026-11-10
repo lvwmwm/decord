@@ -1,12 +1,12 @@
-// Module ID: 9663
-// Function ID: 9664
+// Module ID: 9743
+// Function ID: 9744
 // Name: scopes
-// Dependencies: [1128, 8859, 2]
+// Dependencies: [1113, 8910, 2]
 // Exports: getScopeNames, getSecurityMessage, isSocialLayerUmbrellaScope
 
-// Module 9663 (scopes)
-import intl66 from "intl" /* 1128 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 8859 */;
+// Module 9743 (scopes)
+import intl66 from "intl" /* 1113 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 8910 */;
 import size from "module_2" /* 2 */;
 
 let items = [
@@ -53,7 +53,7 @@ export const FAKE_SCOPES = items;
 export const OrderedAccountScopes = items1;
 export const ValidScopes = combined;
 export const RemovedScopes = ["rpc.api"];
-export const getScopeNames = function getScopeNames(nextResult, c2) {
+export function getScopeNames(nextResult, c2) {
   if (OAuth2Scopes.OAuth2Scopes.IDENTIFY === nextResult) {
     const intl65 = intl66.intl;
     const items = [intl65.string(intl66.t.DD9KQh)];
@@ -315,12 +315,12 @@ export const getScopeNames = function getScopeNames(nextResult, c2) {
     const items57 = [nextResult];
     return items57;
   }
-};
-export const isSocialLayerUmbrellaScope = function isSocialLayerUmbrellaScope(item) {
+}
+export function isSocialLayerUmbrellaScope(item) {
   const tmp3 = item === OAuth2Scopes.OAuth2Scopes.SDK_SOCIAL_LAYER_PRESENCE || item === OAuth2Scopes.OAuth2Scopes.SDK_SOCIAL_LAYER;
   return tmp3;
-};
-export const getSecurityMessage = function getSecurityMessage(scopes) {
+}
+export function getSecurityMessage(scopes) {
   if (!scopes.includes(OAuth2Scopes.OAuth2Scopes.DM_CHANNELS_MESSAGES_WRITE)) {
     let formatResult;
     if (!scopes.includes(OAuth2Scopes.OAuth2Scopes.SDK_SOCIAL_LAYER)) {
@@ -328,9 +328,9 @@ export const getSecurityMessage = function getSecurityMessage(scopes) {
         const SCOPES_CAN_READ_MESSAGES = OAuth2Scopes.OAuth2ScopesSets.SCOPES_CAN_READ_MESSAGES;
         return SCOPES_CAN_READ_MESSAGES.has(item);
       });
-      const intl = tmp(1128).intl;
+      const intl = tmp(1113).intl;
       const format = intl.format;
-      const t = tmp(1128).t;
+      const t = tmp(1113).t;
       if (someResult) {
         formatResult = format(t.Soy7jJ, {});
       } else {
@@ -339,6 +339,6 @@ export const getSecurityMessage = function getSecurityMessage(scopes) {
     }
     return formatResult;
   }
-  const intl2 = tmp(1128).intl;
-  formatResult = intl2.format(tmp(1128).t.o0GMBD, {});
-};
+  const intl2 = tmp(1113).intl;
+  formatResult = intl2.format(tmp(1113).t.o0GMBD, {});
+}

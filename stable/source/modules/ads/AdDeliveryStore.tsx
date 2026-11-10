@@ -1,21 +1,21 @@
-// Module ID: 7805
-// Function ID: 7806
+// Module ID: 7843
+// Function ID: 7844
 // Name: AdDeliveryStore
-// Dependencies: [1104, 7806, 569, 6749, 504, 6748, 584, 2]
+// Dependencies: [1089, 7844, 559, 6788, 504, 6787, 572, 2]
 
-// Module 7805 (AdDeliveryStore)
+// Module 7843 (AdDeliveryStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import BackoffDefault from "Backoff" /* 569 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import DurationsDefault from "Durations" /* 1104 */;
-import AdPlacement from "AdPlacement" /* 6748 */;
-import AdDecisionUtils from "AdDecisionUtils" /* 7806 */;
+import BackoffDefault from "Backoff" /* 559 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import DurationsDefault from "Durations" /* 1089 */;
+import AdPlacement from "AdPlacement" /* 6787 */;
+import AdDecisionUtils from "AdDecisionUtils" /* 7844 */;
 import size from "module_2" /* 2 */;
 
 let set;
 
 let tmp;
-const AdCreativeType = tmp(6749);
+const AdCreativeType = tmp(6788);
 let closure_9 = 30 * DurationsDefault.Millis.SECOND;
 let closure_10 = 10 * DurationsDefault.Millis.MINUTE;
 new Map();
@@ -215,28 +215,44 @@ let obj = {
     const result = map.set(placement, true);
   },
   QUESTS_FETCH_QUEST_HOME_HERO_SUCCESS: function handleFetchQuestHomeHeroSuccess(fetchedAt) {
-    let obj4;
+    let obj5;
     c12 = false;
     closure_11 = Date.now();
     const placement = fetchedAt.placement;
     map = new Map(map);
     const result = map.set(placement, false);
-    let tmp2 = null;
+    const value = map3.get(fetchedAt.placement);
+    if (value != null) {
+      value.succeed();
+    }
+    map4.delete(fetchedAt.placement);
+    let tmp4 = null;
     if (null != fetchedAt.questHomeHero) {
-      tmp2 = { type: AdCreativeType.AdCreativeType.QUEST_HOME_HERO, questHomeHero: fetchedAt.questHomeHero };
+      tmp4 = { type: AdCreativeType.AdCreativeType.QUEST_HOME_HERO, questHomeHero: fetchedAt.questHomeHero };
       const obj = { type: AdCreativeType.AdCreativeType.QUEST_HOME_HERO, questHomeHero: fetchedAt.questHomeHero };
     }
-    const obj2 = { creative: tmp2, fetchedAt: fetchedAt.fetchedAt, ttlMillis: obj4.resolveResponseTtl(fetchedAt.responseTtlSeconds), adDecisionData: null, adContext: null, metadataSealed: null, trafficMetadataSealed: null, provenanceMetadataSealed: null };
-    ({ adDecisionData: obj3.adDecisionData, adContext: obj3.adContext, metadataSealed: obj3.metadataSealed, trafficMetadataSealed: obj3.trafficMetadataSealed, provenanceMetadataSealed: obj3.provenanceMetadataSealed } = fetchedAt);
-    obj4 = AdDecisionUtils;
+    const obj2 = { creative: tmp4, fetchedAt: fetchedAt.fetchedAt, ttlMillis: obj5.resolveResponseTtl(fetchedAt.responseTtlSeconds), adDecisionData: null, adContext: null, metadataSealed: null, trafficMetadataSealed: null, provenanceMetadataSealed: null };
+    ({ adDecisionData: obj4.adDecisionData, adContext: obj4.adContext, metadataSealed: obj4.metadataSealed, trafficMetadataSealed: obj4.trafficMetadataSealed, provenanceMetadataSealed: obj4.provenanceMetadataSealed } = fetchedAt);
+    obj5 = AdDecisionUtils;
     map1 = new Map(map1);
     const result1 = map1.set(fetchedAt.placement, obj2);
   },
   QUESTS_FETCH_QUEST_HOME_HERO_FAILURE: function handleFetchQuestHomeHeroFailure(placement) {
-    c12 = false;
     placement = placement.placement;
+    c12 = false;
     map = new Map(map);
     const result = map.set(placement, false);
+    let value = map3.get(placement);
+    if (null == value) {
+      const self = this;
+      const self2 = this;
+      const tmp6 = new BackoffDefault(closure_9, closure_10);
+      const result1 = map3.set(placement, tmp6);
+      value = tmp6;
+    }
+    set = map4.set;
+    const timestamp = Date.now();
+    const result2 = set(placement, timestamp + value.fail());
   }
 };
 const adDeliveryStore = new AdDeliveryStore(DispatcherDefault, obj);

@@ -1,10 +1,10 @@
-// Module ID: 14228
-// Function ID: 14229
+// Module ID: 14756
+// Function ID: 14757
 // Name: utils/CustomActivityLinkUtils
 // Dependencies: [32, 2]
 // Exports: decodeCustomActivityLink
 
-// Module 14228 (utils/CustomActivityLinkUtils)
+// Module 14756 (utils/CustomActivityLinkUtils)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -12,7 +12,7 @@ const CustomLinkType = { MANAGED: 0, [0]: "MANAGED", QUICK: 1, [1]: "QUICK" };
 const result = size.fileFinishedImporting("../discord_common/js/shared/activities/utils/CustomActivityLinkUtils.tsx");
 
 export { CustomLinkType };
-export const decodeCustomActivityLink = function decodeCustomActivityLink(link_id) {
+export function decodeCustomActivityLink(link_id) {
   let first;
   let obj;
   let tmp4;
@@ -36,4 +36,4 @@ export const decodeCustomActivityLink = function decodeCustomActivityLink(link_i
     }
     return tmp8;
   }
-};
+}

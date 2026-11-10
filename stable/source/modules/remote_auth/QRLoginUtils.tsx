@@ -1,17 +1,17 @@
-// Module ID: 15125
-// Function ID: 15126
+// Module ID: 15667
+// Function ID: 15668
 // Name: QRLoginUtils
-// Dependencies: [1386, 2]
+// Dependencies: [1377, 2]
 // Exports: findRemoteAuthFingerprint
 
-// Module 15125 (QRLoginUtils)
-import URLUtilsDefault from "URLUtils" /* 1386 */;
+// Module 15667 (QRLoginUtils)
+import URLUtilsDefault from "URLUtils" /* 1377 */;
 import size from "module_2" /* 2 */;
 
 const re2 = /^\/ra\/([\w-]+)$/;
 const result = size.fileFinishedImporting("modules/remote_auth/QRLoginUtils.tsx");
 
-export const findRemoteAuthFingerprint = function findRemoteAuthFingerprint(host, pathname) {
+export function findRemoteAuthFingerprint(host, pathname) {
   if (null != host) {
     if (null != pathname) {
       const obj = URLUtilsDefault;
@@ -26,4 +26,4 @@ export const findRemoteAuthFingerprint = function findRemoteAuthFingerprint(host
     }
   }
   return null;
-};
+}

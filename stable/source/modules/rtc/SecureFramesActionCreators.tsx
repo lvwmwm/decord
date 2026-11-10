@@ -1,10 +1,10 @@
-// Module ID: 9230
-// Function ID: 9231
+// Module ID: 9267
+// Function ID: 9268
 // Name: SecureFramesActionCreators
-// Dependencies: [584, 2]
+// Dependencies: [572, 2]
 
-// Module 9230 (SecureFramesActionCreators)
-import DispatcherDefault from "Dispatcher" /* 584 */;
+// Module 9267 (SecureFramesActionCreators)
+import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 
 let obj = {

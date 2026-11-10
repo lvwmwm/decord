@@ -1,15 +1,15 @@
-// Module ID: 8752
-// Function ID: 8753
+// Module ID: 8802
+// Function ID: 8803
 // Name: UserProfileGradientUtils
-// Dependencies: [32, 1087, 1105, 5001, 12, 5010, 683, 2]
+// Dependencies: [32, 1072, 1090, 5012, 12, 5021, 671, 2]
 // Exports: calculateGradientSplitColors, calculateOverlayedColor, getGradientPercentageColorInRgb, getProfileTheme, getUserProfileGradientContainerColors, getValueInColorGradientByPercentage
 
-// Module 8752 (UserProfileGradientUtils)
-import _modDef683 from "module_683" /* 683 */;
-import Constants from "Constants" /* 1087 */;
-import utils_ColorUtils from "utils/ColorUtils" /* 1105 */;
-import utils_ColorDefault from "utils/Color" /* 5001 */;
-import shared from "shared" /* 5010 */;
+// Module 8802 (UserProfileGradientUtils)
+import _modDef671 from "module_671" /* 671 */;
+import Constants from "Constants" /* 1072 */;
+import utils_ColorUtils from "utils/ColorUtils" /* 1090 */;
+import utils_ColorDefault from "utils/Color" /* 5012 */;
+import shared from "shared" /* 5021 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import module_12_mod from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
@@ -42,10 +42,10 @@ const memoizeResult1 = module_12.memoize((hex2intResult, arg1, arg2) => {
     tmp = tmp2;
   }
   const LIGHT2 = ThemeTypes.LIGHT;
-  const mix = _modDef683.mix;
-  _modDef683;
-  const tmp10 = _modDef683(hex2intResult);
-  const mixResult = mix(tmp10, _modDef683(arg1), 0.5, "lab");
+  const mix = _modDef671.mix;
+  _modDef671;
+  const tmp10 = _modDef671(hex2intResult);
+  const mixResult = mix(tmp10, _modDef671(arg1), 0.5, "lab");
   const result = Math.round(100 * mixResult.get("hsl.l")) / 100;
   if (tmp !== LIGHT2) {
     const obj4 = module_12;
@@ -54,18 +54,18 @@ const memoizeResult1 = module_12.memoize((hex2intResult, arg1, arg2) => {
     const obj3 = module_12;
     clampResult = obj3.clamp(result, 0.8, 1);
   }
-  const obj5 = _modDef683(mixResult);
+  const obj5 = _modDef671(mixResult);
   const result1 = obj5.set("hsl.l", clampResult);
   return result1.num();
 }, (arg0, arg1, arg2) => "" + arg0 + "-" + arg1 + "-" + arg2);
 let result = size.fileFinishedImporting("modules/user_profile/UserProfileGradientUtils.tsx");
 
-export const getProfileTheme = function getProfileTheme(first1) {
+export function getProfileTheme(tmp4Result8) {
   let tmp = null;
-  if (null != first1) {
+  if (null != tmp4Result8) {
     let LIGHT;
     const obj = utils_ColorUtils;
-    if (obj.getDarkness(first1) > 0.5) {
+    if (obj.getDarkness(tmp4Result8) > 0.5) {
       LIGHT = ThemeTypes.DARK;
     } else {
       LIGHT = ThemeTypes.LIGHT;
@@ -73,18 +73,18 @@ export const getProfileTheme = function getProfileTheme(first1) {
     tmp = LIGHT;
   }
   return tmp;
-};
-export const getValueInColorGradientByPercentage = function getValueInColorGradientByPercentage(items, items1, arg2) {
+}
+export function getValueInColorGradientByPercentage(items, items1, arg2) {
   const result = arg2 / 100;
   const diff = 1 - result;
   items = [Math.round(items[0] * diff + items1[0] * result), Math.round(items[1] * diff + items1[1] * result), Math.round(items[2] * diff + items1[2] * result)];
   return items;
-};
-export const calculateOverlayedColor = function calculateOverlayedColor(secondaryColor, overlay) {
+}
+export function calculateOverlayedColor(secondaryColor, overlay) {
   let tmp10;
   let tmp8;
   let tmp9;
-  const f101590 = (item, index) => Math.floor(alpha * item + (1 - alpha) * items1[index]);
+  const f93357 = (item, index) => Math.floor(alpha * item + (1 - alpha) * items1[index]);
   const obj = utils_ColorUtils;
   const int2rgbArrayResult = obj.int2rgbArray(secondaryColor);
   if (null == overlay) {
@@ -100,23 +100,23 @@ export const calculateOverlayedColor = function calculateOverlayedColor(secondar
       const items1 = [, , ];
       [arr2[0], arr2[1], arr2[2]] = int2rgbArrayResult;
       const alpha = parseStringResult.alpha;
-      [tmp8, tmp9, tmp10] = items.map(f101590);
-      _slicedToArray(items.map(f101590), 3);
+      [tmp8, tmp9, tmp10] = items.map(f93357);
+      _slicedToArray(items.map(f93357), 3);
       const _HermesInternal = HermesInternal;
       const tmpResult = utils_ColorUtils;
       return tmpResult.rgb2int("rgba(" + tmp8 + ", " + tmp9 + ", " + tmp10 + ")");
     }
   }
-};
+}
 export const calculateButtonColor = memoizeResult;
 export const calculateModalV2BackgroundColor = memoizeResult1;
-export const getGradientPercentageColorInRgb = function getGradientPercentageColorInRgb(arg0, arg1, arg2) {
+export function getGradientPercentageColorInRgb(arg0, arg1, arg2) {
   const result = arg2 / 100;
   const diff = 1 - result;
   const items = [Math.round(arg0[0] * diff + arg1[0] * result), Math.round(arg0[1] * diff + arg1[1] * result), Math.round(arg0[2] * diff + arg1[2] * result)];
   return "rgba(" + items[0] + ", " + items[1] + ", " + items[2] + ", 1)";
-};
-export const calculateGradientSplitColors = function calculateGradientSplitColors(modalV2BackgroundColor, modalV2BackgroundColor2, arg2, arg3, arg4) {
+}
+export function calculateGradientSplitColors(modalV2BackgroundColor, modalV2BackgroundColor2, arg2, arg3, arg4) {
   if (0 === arg2) {
     return [];
   } else {
@@ -146,8 +146,8 @@ export const calculateGradientSplitColors = function calculateGradientSplitColor
     items1[1] = "rgba(" + items2[0] + ", " + items2[1] + ", " + items2[2] + ", 1)";
     return items1;
   }
-};
-export const getUserProfileGradientContainerColors = function getUserProfileGradientContainerColors(result, result1, str) {
+}
+export function getUserProfileGradientContainerColors(result, result1, str) {
   let items1;
   let int2rgbaResult1 = str;
   if (typeof str === "string") {
@@ -182,4 +182,4 @@ export const getUserProfileGradientContainerColors = function getUserProfileGrad
     items1[1] = int2rgbaResult3;
   }
   return items1;
-};
+}

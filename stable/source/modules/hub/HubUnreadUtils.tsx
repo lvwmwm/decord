@@ -1,74 +1,21 @@
-// Module ID: 17678
-// Function ID: 17679
+// Module ID: 18267
+// Function ID: 18268
 // Name: HubUnreadUtils
-// Dependencies: [13229, 6803, 558, 576, 11, 13221, 504, 2]
+// Dependencies: [13860, 6842, 504, 11, 13852, 2]
+// Exports: useHubUnreadCount
 
-// Module 17678 (HubUnreadUtils)
-import GuildDirectoryUtils from "GuildDirectoryUtils" /* 13221 */;
-import GuildDirectoryStore from "GuildDirectoryStore" /* 13229 */;
-import ReadStateStore from "ReadStateStore" /* 6803 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 18267 (HubUnreadUtils)
+import GuildDirectoryUtils from "GuildDirectoryUtils" /* 13852 */;
+import GuildDirectoryStore from "GuildDirectoryStore" /* 13860 */;
+import ReadStateStore from "ReadStateStore" /* 6842 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHubUnreadCount(arg0) {
-  let closure_0;
-  let first;
-  let tmp7;
-  let tmp8;
-  _require = arg0;
-  const tmp = _require;
-  const obj = require("react");
-  const cResult = obj.c(4);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [GuildDirectoryStore, ];
-    items[1] = ReadStateStore;
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function l() {
-      if (null == closure_0) {
-        return 0;
-      } else {
-        const ackMessageIdResult = ReadStateStore.ackMessageId(tmp.id);
-        if (null == ackMessageIdResult) {
-          return 0;
-        } else {
-          const _Object = Object;
-          let directoryEntries = GuildDirectoryStore.getDirectoryEntries(tmp.id);
-          if (directoryEntries == null) {
-            directoryEntries = {};
-          }
-          const values2 = values(directoryEntries);
-          const _Math = Math;
-          const found = values2.filter((createdAt) => {
-            const date = new Date(createdAt.createdAt);
-            const time = date.getTime();
-            const obj2 = closure_2_1(closure_2_2[4]);
-            return time > obj2.extractTimestamp(ackMessageIdResult);
-          });
-          return Math.min(GuildDirectoryUtils.MAX_CATEGORY_SERVERS, found.length);
-        }
-      }
-    };
-    const items1 = [arg0];
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    cResult[3] = items1;
-    tmp8 = items1;
-    tmp7 = fn;
-  } else {
-    tmp7 = cResult[2];
-    tmp8 = cResult[3];
-  }
-  const tmpResult = tmp(504);
-  return tmpResult.useStateFromStores(first, tmp7, tmp8);
-}) : (function useHubUnreadCount(arg0) {
+const result = size.fileFinishedImporting("modules/hub/HubUnreadUtils.tsx");
+
+export function useHubUnreadCount(arg0) {
   let closure_0;
   _require = arg0;
   const items = [GuildDirectoryStore, ReadStateStore];
@@ -92,14 +39,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHubUnre
         const found = values2.filter((createdAt) => {
           const date = new Date(createdAt.createdAt);
           const time = date.getTime();
-          const obj2 = closure_2_1(closure_2_2[4]);
+          const obj2 = closure_2_1(closure_2_2[3]);
           return time > obj2.extractTimestamp(ackMessageIdResult);
         });
         return Math.min(GuildDirectoryUtils.MAX_CATEGORY_SERVERS, found.length);
       }
     }
   }, items1);
-});
-const result = size.fileFinishedImporting("modules/hub/HubUnreadUtils.tsx");
-
-export const useHubUnreadCount = tmp2;
+}

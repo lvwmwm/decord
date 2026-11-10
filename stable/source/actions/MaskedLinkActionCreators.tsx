@@ -1,22 +1,22 @@
-// Module ID: 14238
-// Function ID: 14239
+// Module ID: 14766
+// Function ID: 14767
 // Name: MaskedLinkActionCreators
-// Dependencies: [584, 2]
+// Dependencies: [572, 2]
 // Exports: trustDomain, trustProtocol
 
-// Module 14238 (MaskedLinkActionCreators)
-import DispatcherDefault from "Dispatcher" /* 584 */;
+// Module 14766 (MaskedLinkActionCreators)
+import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("actions/MaskedLinkActionCreators.tsx");
 
-export const trustDomain = function trustDomain(url) {
+export function trustDomain(url) {
   const obj = DispatcherDefault;
   const obj2 = { type: "MASKED_LINK_ADD_TRUSTED_DOMAIN", url };
   obj.dispatch(obj2);
-};
-export const trustProtocol = function trustProtocol(url) {
+}
+export function trustProtocol(url) {
   const obj = DispatcherDefault;
   const obj2 = { type: "MASKED_LINK_ADD_TRUSTED_PROTOCOL", url };
   obj.dispatch(obj2);
-};
+}

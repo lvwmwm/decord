@@ -1,99 +1,71 @@
-// Module ID: 11923
-// Function ID: 11924
+// Module ID: 12250
+// Function ID: 12251
 // Name: FrameRenderTarget
-// Dependencies: [19, 21, 5003, 558, 576, 11924, 7939, 2]
+// Dependencies: [19, 17, 21, 5014, 12251, 12252, 7979, 2]
+// Exports: default
 
-// Module 11923 (FrameRenderTarget)
-import Fragment from "Fragment" /* 21 */;
-import react2 from "react" /* 576 */;
-import useFramePoolBorrowDefault from "useFramePoolBorrow" /* 11924 */;
+// Module 12250 (FrameRenderTarget)
+import FramePoolManagerDefault from "FramePoolManager" /* 12252 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5003 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
-let tmp;
-const WebView = tmp(7939);
-const jsx = Fragment.jsx;
-let closure_5 = createStyles.createStyles({ target: { flex: 1 } });
-let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMemoizedPresentation(arg0) {
-  let landscapeSafeAreasConfig;
-  let layoutMode;
-  let portraitSafeAreasConfig;
-  const obj = react2;
-  const cResult = obj.c(4);
-  ({ layoutMode, portraitSafeAreasConfig, landscapeSafeAreasConfig } = arg0);
-  if (cResult[0] === landscapeSafeAreasConfig) {
-    if (cResult[1] === layoutMode) {
-      let tmp2;
-      if (cResult[2] === portraitSafeAreasConfig) {
-        tmp2 = cResult[3];
-      }
-      return tmp2;
-    }
-  }
-  const obj2 = { layoutMode, portraitSafeAreasConfig, landscapeSafeAreasConfig };
-  cResult[0] = landscapeSafeAreasConfig;
-  cResult[1] = layoutMode;
-  cResult[2] = portraitSafeAreasConfig;
-  cResult[3] = obj2;
-  tmp2 = obj2;
-}) : (function useMemoizedPresentation(layoutMode) {
-  layoutMode = layoutMode.layoutMode;
-  const portraitSafeAreasConfig = layoutMode.portraitSafeAreasConfig;
-  const landscapeSafeAreasConfig = layoutMode.landscapeSafeAreasConfig;
-  const items = [layoutMode, portraitSafeAreasConfig, landscapeSafeAreasConfig];
-  return react.useMemo(() => ({ layoutMode, portraitSafeAreasConfig, landscapeSafeAreasConfig }), items);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function FrameRenderTarget(arg0) {
-  let frameId;
-  let level;
-  let presentation;
-  let temporaryParentNodeTag;
-  let webViewKey;
-  const obj = react2;
-  const cResult = obj.c(4);
-  ({ frameId, level, presentation } = arg0);
-  const tmp4 = closure_5();
-  const tmp5 = closure_6(presentation);
-  ({ webViewKey, temporaryParentNodeTag } = useFramePoolBorrowDefault(frameId, level, tmp5));
-  let tmp7 = null;
-  useFramePoolBorrowDefault(frameId, level, tmp5);
-  if (null != webViewKey) {
-    if (cResult[0] === tmp4.target) {
-      if (cResult[1] === temporaryParentNodeTag) {
-        let tmp8;
-        if (cResult[2] === webViewKey) {
-          tmp8 = cResult[3];
-        }
-        tmp7 = tmp8;
-      }
-    }
-    const tmp10 = jsx(WebView.WebViewTarget, { webViewKey, temporaryParentNodeTag, style: tmp4.target });
-    cResult[0] = tmp4.target;
-    cResult[1] = temporaryParentNodeTag;
-    cResult[2] = webViewKey;
-    cResult[3] = tmp10;
-    tmp8 = tmp10;
-  }
-  return tmp7;
-}) : (function FrameRenderTarget(arg0) {
-  let frameId;
-  let level;
-  let presentation;
-  ({ frameId, level, presentation } = arg0);
-  const tmp = closure_5();
-  const tmp2 = closure_6(presentation);
-  const webViewKey = useFramePoolBorrowDefault(frameId, level, tmp2).webViewKey;
-  let tmp6 = null;
-  useFramePoolBorrowDefault(frameId, level, tmp2);
-  if (null != webViewKey) {
-    tmp6 = jsx(WebView.WebViewTarget, { webViewKey, temporaryParentNodeTag: tmp5, style: tmp.target });
-  }
-  return tmp6;
-});
+let StyleSheet;
+let closure_4;
+let hasOwnProperty;
+let metroImportDefault;
+let metroRequire;
+let obj2;
+({ ActivityIndicator: closure_4, View: hasOwnProperty, StyleSheet } = react_native);
+({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { target: { flex: 1 }, loading: obj2 };
+obj2 = { alignItems: "center", justifyContent: "center" };
+createStyles = createStyles.createStyles;
+const merged = Object.assign(StyleSheet.absoluteFillObject);
+let closure_8 = createStyles(obj);
 const result = size.fileFinishedImporting("modules/frames/native/FrameRenderTarget.tsx");
 
-export default tmp2;
+export default function FrameRenderTarget(frameId) {
+  let items1;
+  let presentation;
+  let spinnerWhileLoading;
+  frameId = frameId.frameId;
+  ({ presentation, spinnerWhileLoading } = frameId);
+  const level = frameId.level;
+  if (spinnerWhileLoading === undefined) {
+    spinnerWhileLoading = false;
+  }
+  let webViewKey;
+  const tmp = closure_8();
+  const layoutMode = presentation.layoutMode;
+  const portraitSafeAreasConfig = presentation.portraitSafeAreasConfig;
+  const landscapeSafeAreasConfig = presentation.landscapeSafeAreasConfig;
+  const items = [layoutMode, portraitSafeAreasConfig, landscapeSafeAreasConfig];
+  const memo = react.useMemo(() => ({ layoutMode, portraitSafeAreasConfig, landscapeSafeAreasConfig }), items);
+  const tmp4 = webViewKey(12251)(frameId, level, memo);
+  webViewKey = tmp4.webViewKey;
+  const temporaryParentNodeTag = tmp4.temporaryParentNodeTag;
+  if (null == webViewKey) {
+    return null;
+  } else {
+    const obj2 = { webViewKey, temporaryParentNodeTag, style: tmp.target };
+    const tmp13 = closure_6(frameId(7979).WebViewTarget, obj2);
+    let tmp6Result = tmp13;
+    if (spinnerWhileLoading) {
+      let obj = { style: tmp.target, children: items1 };
+      items1 = [tmp13, ];
+      let tmp11Result = null;
+      const tmp6 = closure_7;
+      if (!tmp5) {
+        const obj3 = { style: tmp.loading, pointerEvents: "none", children: closure_6(closure_4, { size: "large" }) };
+        tmp11Result = tmp11(tmp7, obj3);
+      }
+      items1[1] = tmp11Result;
+      tmp6Result = tmp6(tmp7, obj);
+    }
+    return tmp6Result;
+  }
+};

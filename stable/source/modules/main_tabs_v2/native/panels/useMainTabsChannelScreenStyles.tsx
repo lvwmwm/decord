@@ -1,16 +1,15 @@
-// Module ID: 18016
-// Function ID: 18017
+// Module ID: 18603
+// Function ID: 18604
 // Name: useMainTabsChannelScreenStyles
-// Dependencies: [19, 17, 5003, 587, 558, 576, 5084, 2]
+// Dependencies: [19, 17, 5014, 575, 5095, 2]
+// Exports: useMainTabsChannelScreenStyles
 
-// Module 18016 (useMainTabsChannelScreenStyles)
+// Module 18603 (useMainTabsChannelScreenStyles)
 import react_native from "react-native" /* 17 */;
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5084 */;
+import nativeDefault from "native" /* 575 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5003 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -23,82 +22,16 @@ const merged = Object.assign(StyleSheet.absoluteFillObject);
 const merged1 = Object.assign(nativeDefault.shadows.SHADOW_LOW);
 let closure_3 = createStyles(obj);
 let __initData = { code: "function useMainTabsChannelScreenStylesTsx1(){const{freezeValue,isDragging,translateX,maxWidth,elevationStyle,isCompletelyCovered}=this.__closure;var _freezeValue,_isCompletelyCovered;(_freezeValue=freezeValue)===null||_freezeValue===void 0||_freezeValue.get();const showBorder=isDragging.get()||translateX.get()!==0&&translateX.get()!==maxWidth;return{transform:[{translateX:translateX.get()}],shadowOpacity:showBorder?elevationStyle.shadowOpacity:0,elevation:showBorder?elevationStyle.elevation:0,opacity:(_isCompletelyCovered=isCompletelyCovered)!==null&&_isCompletelyCovered!==void 0&&_isCompletelyCovered.get()?0:1};}" };
-let __initData2 = { code: "function useMainTabsChannelScreenStylesTsx2(){const{freezeValue,isDragging,translateX,maxWidth,elevationStyle,isCompletelyCovered}=this.__closure;var _freezeValue,_isCompletelyCovered;(_freezeValue=freezeValue)===null||_freezeValue===void 0||_freezeValue.get();const showBorder=isDragging.get()||translateX.get()!==0&&translateX.get()!==maxWidth;return{transform:[{translateX:translateX.get()}],shadowOpacity:showBorder?elevationStyle.shadowOpacity:0,elevation:showBorder?elevationStyle.elevation:0,opacity:(_isCompletelyCovered=isCompletelyCovered)!==null&&_isCompletelyCovered!==void 0&&_isCompletelyCovered.get()?0:1};}" };
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMainTabsChannelScreenStyles(isDragging, translateX, maxWidth, isCompletelyCovered, freezeValue) {
+const result = size.fileFinishedImporting("modules/main_tabs_v2/native/panels/useMainTabsChannelScreenStyles.tsx");
+
+export function useMainTabsChannelScreenStyles(isDragging, translateX, maxWidth, derivedValue, parentFreezeValue) {
   let closure_0 = isDragging;
   let closure_1 = translateX;
   let closure_2 = maxWidth;
-  closure_3 = isCompletelyCovered;
-  __initData = freezeValue;
-  let obj = react2;
-  const cResult = obj.c(3);
-  const tmp2 = closure_3();
-  const elevation = tmp2.elevation;
-  let obj2 = ReanimatedRexport;
-  const fn = function y() {
-    let items;
-    let num2;
-    let num3;
-    let num4;
-    const obj = closure_4;
-    if (closure_4 != null) {
-      const value = obj.get();
-    }
-    let value3 = closure_0.get();
-    if (!value3) {
-      let tmp3 = 0 !== closure_1.get();
-      const obj2 = closure_1;
-      if (tmp3) {
-        tmp3 = obj2.get() !== closure_2;
-      }
-      value3 = tmp3;
-    }
-    const obj3 = { transform: items, shadowOpacity: num2, elevation: num3, opacity: num4 };
-    items = [{ translateX: closure_1.get() }];
-    num2 = 0;
-    ({ translateX: closure_1.get() });
-    if (value3) {
-      num2 = elevation.shadowOpacity;
-    }
-    num3 = 0;
-    if (value3) {
-      num3 = elevation.elevation;
-    }
-    let value4;
-    const obj5 = closure_3;
-    if (closure_3 != null) {
-      value4 = obj5.get();
-    }
-    num4 = 1;
-    if (value4) {
-      num4 = 0;
-    }
-    return obj3;
-  };
-  fn.__closure = { freezeValue, isDragging, translateX, maxWidth, elevationStyle: elevation, isCompletelyCovered };
-  fn.__workletHash = 16765484569296;
-  fn.__initData = __initData;
-  const animatedStyle = obj2.useAnimatedStyle(fn);
-  if (cResult[0] === animatedStyle) {
-    let tmp4;
-    if (cResult[1] === tmp2.elevation) {
-      tmp4 = cResult[2];
-    }
-    return tmp4;
-  }
-  let items = [tmp2.elevation, animatedStyle];
-  cResult[0] = animatedStyle;
-  cResult[1] = tmp2.elevation;
-  cResult[2] = items;
-  tmp4 = items;
-}) : (function useMainTabsChannelScreenStyles(isDragging, translateX, maxWidth, isCompletelyCovered, freezeValue) {
-  let closure_0 = isDragging;
-  let closure_1 = translateX;
-  let closure_2 = maxWidth;
-  closure_3 = isCompletelyCovered;
-  let closure_4 = freezeValue;
+  closure_3 = derivedValue;
+  __initData = parentFreezeValue;
   const tmp = closure_3();
-  __initData2 = tmp;
+  let closure_5 = tmp;
   const elevation = tmp.elevation;
   let obj = ReanimatedRexport;
   const fn = function c() {
@@ -141,16 +74,13 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMainTab
     }
     return obj3;
   };
-  fn.__closure = { freezeValue, isDragging, translateX, maxWidth, elevationStyle: elevation, isCompletelyCovered };
-  fn.__workletHash = 2313603447059;
-  fn.__initData = __initData2;
+  fn.__closure = { freezeValue: parentFreezeValue, isDragging, translateX, maxWidth, elevationStyle: elevation, isCompletelyCovered: derivedValue };
+  fn.__workletHash = 16765484569296;
+  fn.__initData = __initData;
   const animatedStyle = obj.useAnimatedStyle(fn);
   let items = [tmp, animatedStyle];
   return react.useMemo(() => {
     const items = [elevation.elevation, animatedStyle];
     return items;
   }, items);
-});
-const result = size.fileFinishedImporting("modules/main_tabs_v2/native/panels/useMainTabsChannelScreenStyles.tsx");
-
-export const useMainTabsChannelScreenStyles = tmp5;
+}

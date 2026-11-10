@@ -1,21 +1,21 @@
-// Module ID: 7226
-// Function ID: 7227
+// Module ID: 7267
+// Function ID: 7268
 // Name: GuildOnboardingPromptsActionCreators
-// Dependencies: [5, 502, 4915, 4877, 7227, 7228, 1087, 4921, 1267, 5743, 584, 1297, 1405, 2]
+// Dependencies: [5, 502, 4926, 4885, 7268, 7269, 1072, 4932, 1252, 5760, 572, 1282, 1396, 2]
 // Exports: loadOnboardingPrompts, maybeFetchOnboardingPrompts
 
-// Module 7226 (GuildOnboardingPromptsActionCreators)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import GuildMemberConstants from "GuildMemberConstants" /* 4921 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5743 */;
-import GuildOnboardingPromptsConstants from "GuildOnboardingPromptsConstants" /* 7228 */;
+// Module 7267 (GuildOnboardingPromptsActionCreators)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import GuildMemberConstants from "GuildMemberConstants" /* 4932 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5760 */;
+import GuildOnboardingPromptsConstants from "GuildOnboardingPromptsConstants" /* 7269 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildMemberStore from "GuildMemberStore" /* 4915 */;
-import GuildStore from "GuildStore" /* 4877 */;
-import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7227 */;
-import Constants from "Constants" /* 1087 */;
+import GuildMemberStore from "GuildMemberStore" /* 4926 */;
+import GuildStore from "GuildStore" /* 4885 */;
+import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7268 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -63,7 +63,7 @@ let obj = function _maybeFetchOnboardingPrompts() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -190,7 +190,7 @@ const GuildMemberFlags = GuildMemberConstants.GuildMemberFlags;
 let c16 = -2;
 const result = size.fileFinishedImporting("modules/guild_onboarding/GuildOnboardingPromptsActionCreators.tsx");
 
-export const loadOnboardingPrompts = function loadOnboardingPrompts(guildId) {
+export function loadOnboardingPrompts(guildId) {
   obj = { has_new_prompts: false, number_of_prompts: 0 };
   const track = AnalyticsUtilsDefault.track;
   const GUILD_ONBOARDING_LOADED = constants.GUILD_ONBOARDING_LOADED;
@@ -198,10 +198,10 @@ export const loadOnboardingPrompts = function loadOnboardingPrompts(guildId) {
   const obj2 = AppAnalyticsUtils;
   const merged = Object.assign(obj2.collectGuildAnalyticsMetadata(guildId));
   track(GUILD_ONBOARDING_LOADED, obj);
-};
+}
 export { fetchOnboardingPrompts };
-export const maybeFetchOnboardingPrompts = function maybeFetchOnboardingPrompts() {
+export function maybeFetchOnboardingPrompts() {
   return obj(...arguments);
-};
+}
 export { startOnboarding };
 export const CONNECTIONS_STEP = -3;

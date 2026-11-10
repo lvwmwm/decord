@@ -1,13 +1,13 @@
-// Module ID: 2032
-// Function ID: 2033
+// Module ID: 2025
+// Function ID: 2026
 // Name: getGameMediaRefURL
-// Dependencies: [2033, 1417, 2037, 2]
+// Dependencies: [2026, 1409, 2030, 2]
 // Exports: default, hasGameMediaRef
 
-// Module 2032 (getGameMediaRefURL)
-import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
-import StringUtils from "StringUtils" /* 2033 */;
-import ImageProxyUtils from "ImageProxyUtils" /* 2037 */;
+// Module 2025 (getGameMediaRefURL)
+import AvatarUtilsDefault from "AvatarUtils" /* 1409 */;
+import StringUtils from "StringUtils" /* 2026 */;
+import ImageProxyUtils from "ImageProxyUtils" /* 2030 */;
 import size_mod from "module_2" /* 2 */;
 
 let size = size_mod;
@@ -58,11 +58,11 @@ export default function getGameMediaRefURL(id, value, size) {
     return null;
   }
 };
-export const hasGameMediaRef = function hasGameMediaRef(cover) {
+export function hasGameMediaRef(cover) {
   let tmp = null != cover;
   if (tmp) {
     const obj = StringUtils;
     tmp = !obj.isNullOrEmpty(cover.value);
   }
   return tmp;
-};
+}

@@ -1,11 +1,11 @@
-// Module ID: 2006
-// Function ID: 2007
+// Module ID: 1998
+// Function ID: 1999
 // Name: ZoomedInAnalyticsExperiment
-// Dependencies: [1455, 2]
+// Dependencies: [1447, 2]
 // Exports: isZoomedExperimentEnabled
 
-// Module 2006 (ZoomedInAnalyticsExperiment)
-import ApexExperiment from "ApexExperiment" /* 1455 */;
+// Module 1998 (ZoomedInAnalyticsExperiment)
+import ApexExperiment from "ApexExperiment" /* 1447 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -16,6 +16,6 @@ const apexExperiment = ApexExperiment.createApexExperiment(obj);
 const result = size.fileFinishedImporting("modules/telemetry_ring/native/ZoomedInAnalyticsExperiment.tsx");
 
 export default apexExperiment;
-export const isZoomedExperimentEnabled = function isZoomedExperimentEnabled() {
+export function isZoomedExperimentEnabled() {
   return apexExperiment.getConfig({ location: "zoomed_in_telemetry_consumer" }).enabled;
-};
+}

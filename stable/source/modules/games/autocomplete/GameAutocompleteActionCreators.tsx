@@ -1,15 +1,15 @@
-// Module ID: 9106
-// Function ID: 9107
+// Module ID: 9142
+// Function ID: 9143
 // Name: GameAutocompleteActionCreators
-// Dependencies: [5, 8611, 1087, 8612, 584, 1297, 2]
+// Dependencies: [5, 8680, 1072, 8681, 572, 1282, 2]
 // Exports: fetchGameAutocomplete
 
-// Module 9106 (GameAutocompleteActionCreators)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1087 */;
-import GameAutocompleteUtils from "GameAutocompleteUtils" /* 8612 */;
+// Module 9142 (GameAutocompleteActionCreators)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import Constants from "Constants" /* 1072 */;
+import GameAutocompleteUtils from "GameAutocompleteUtils" /* 8681 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GameAutocompleteStore from "GameAutocompleteStore" /* 8611 */;
+import GameAutocompleteStore from "GameAutocompleteStore" /* 8680 */;
 import size from "module_2" /* 2 */;
 
 let closure_3, closure_4, closure_5, filterGroup, results;
@@ -30,7 +30,7 @@ let obj = function _fetchGameAutocomplete() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -102,7 +102,7 @@ let obj = function _fetchGameAutocomplete() {
             c6 = 0;
           }
           c8 = 3;
-          return { value: "IconComponent", done: "+352" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp28) {
           closure_5 = tmp28;
           if (0 === c6) {
@@ -120,6 +120,6 @@ let obj = function _fetchGameAutocomplete() {
 const Endpoints = Constants.Endpoints;
 let result = size.fileFinishedImporting("modules/games/autocomplete/GameAutocompleteActionCreators.tsx");
 
-export const fetchGameAutocomplete = function fetchGameAutocomplete() {
+export function fetchGameAutocomplete() {
   return obj(...arguments);
-};
+}

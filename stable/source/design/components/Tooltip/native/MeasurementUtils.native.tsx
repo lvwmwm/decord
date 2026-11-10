@@ -1,10 +1,10 @@
-// Module ID: 9879
-// Function ID: 9880
+// Module ID: 9961
+// Function ID: 9962
 // Name: MeasurementUtils
 // Dependencies: [5, 12, 2]
 // Exports: getMeasurements
 
-// Module 9879 (MeasurementUtils)
+// Module 9961 (MeasurementUtils)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -78,19 +78,19 @@ let obj = function _retryMeasurements() {
       const obj8 = { value: closure_1(closure_5), done: true };
       return obj8;
     }
-    await "IconComponent";
+    await "HermesInternal";
     num10 = closure_4;
     if (closure_4 === undefined) {
       num10 = 0;
     }
-    return "Reflect";
+    return "flexDirection";
   });
   return obj(...arguments);
 };
 let size = size_mod;
 const result = size.fileFinishedImporting("design/components/Tooltip/native/MeasurementUtils.native.tsx");
 
-export const getMeasurements = function getMeasurements(surfaceRef, arg1) {
+export function getMeasurements(surfaceRef, arg1) {
   let closure_0 = surfaceRef;
   let flag = arg1;
   if (arg1 === undefined) {
@@ -106,4 +106,4 @@ export const getMeasurements = function getMeasurements(surfaceRef, arg1) {
     tmp(tmp2, arg0, arg1, size);
   });
   return promise;
-};
+}

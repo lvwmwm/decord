@@ -1,23 +1,22 @@
-// Module ID: 16069
-// Function ID: 16070
+// Module ID: 16640
+// Function ID: 16641
 // Name: SafetyHubErrorActionSheet
-// Dependencies: [19, 17, 21, 5003, 587, 558, 576, 16068, 7050, 5266, 1128, 12867, 5276, 5297, 2]
+// Dependencies: [19, 17, 21, 5014, 575, 16639, 5272, 7092, 5624, 1113, 5634, 13314, 2]
+// Exports: default
 
-// Module 16069 (SafetyHubErrorActionSheet)
+// Module 16640 (SafetyHubErrorActionSheet)
 import react_native from "react-native" /* 17 */;
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import intl3 from "intl" /* 1128 */;
-import Text_Text from "Text/Text" /* 5266 */;
-import components_Button_Button from "components/Button/Button" /* 5276 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5297 */;
-import CircleXIcon2 from "CircleXIcon" /* 7050 */;
-import SafetyHubActionCreatorsAll from "SafetyHubActionCreators" /* 12867 */;
-import useSafetyHubLoadingDefault from "useSafetyHubLoading" /* 16068 */;
+import nativeDefault from "native" /* 575 */;
+import intl3 from "intl" /* 1113 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5272 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import components_Button_Button from "components/Button/Button" /* 5634 */;
+import CircleXIcon2 from "CircleXIcon" /* 7092 */;
+import SafetyHubActionCreatorsAll from "SafetyHubActionCreators" /* 13314 */;
+import useSafetyHubLoadingDefault from "useSafetyHubLoading" /* 16639 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5003 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 let BottomSheet;
@@ -34,124 +33,10 @@ obj2 = { display: "flex", alignItems: "center", justifyContent: "center", paddin
 createStyles = createStyles.createStyles;
 size = { display: "flex", justifyContent: "center", alignItems: "center", height: 40, width: 40, borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.colors.WHITE };
 let closure_7 = createStyles(obj);
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function SafetyHubErrorActionSheet() {
-  let intl;
-  let items;
-  let items1;
-  let tmp25;
-  let tmp7;
-  let obj = react2;
-  const cResult = obj.c(16);
-  const tmp4 = closure_7();
-  const tmp6 = useSafetyHubLoadingDefault();
-  if (cResult[0] !== tmp4.redesignErrorIcon) {
-    const obj2 = { size: "custom", color: nativeDefault.colors.CONTROL_CRITICAL_PRIMARY_BACKGROUND_DEFAULT, style: tmp4.redesignErrorIcon };
-    const CircleXIcon = tmp(7050).CircleXIcon;
-    const tmp9 = hasOwnProperty(CircleXIcon, obj2);
-    cResult[0] = tmp4.redesignErrorIcon;
-    cResult[1] = tmp9;
-    tmp7 = tmp9;
-  } else {
-    tmp7 = cResult[1];
-  }
-  if (cResult[2] === tmp4.redesignErrorIconContainer) {
-    let tmp10;
-    let tmp13;
-    if (cResult[3] === tmp7) {
-      tmp10 = cResult[4];
-    }
-    const _Symbol = Symbol;
-    if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj3 = { variant: "heading-lg/normal", children: intl.string(intl3.t.TDRvqs) };
-      const Text = tmp(5266).Text;
-      intl = tmp(1128).intl;
-      const tmp15 = hasOwnProperty(Text, obj3);
-      cResult[5] = tmp15;
-      tmp13 = tmp15;
-    } else {
-      tmp13 = cResult[5];
-    }
-    if (cResult[6] === tmp4.errorContainer) {
-      let tmp16;
-      let tmp21;
-      let tmp20;
-      if (cResult[7] === tmp10) {
-        tmp16 = cResult[8];
-      }
-      const _Symbol2 = Symbol;
-      if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-        class C {
-          constructor() {
-            obj = closure_1_2(closure_1_3[11]);
-            return obj.getSafetyHubData();
-          }
-        }
-        const intl2 = tmp(1128).intl;
-        const stringResult = intl2.string(intl3.t.R1AN4F);
-        cResult[9] = C;
-        cResult[10] = stringResult;
-        tmp21 = stringResult;
-        tmp20 = C;
-      } else {
-        class C {
-          constructor() {
-            obj = closure_1_2(closure_1_3[11]);
-            return obj.getSafetyHubData();
-          }
-        }
-        tmp21 = cResult[10];
-      }
-      if (cResult[11] !== tmp6) {
-        class C {
-          constructor() {
-            obj = closure_1_2(closure_1_3[11]);
-            return obj.getSafetyHubData();
-          }
-        }
-        const obj4 = { onPress: tmp20, text: tmp21, loading: tmp6, disabled: tmp6 };
-        cResult[11] = tmp6;
-        cResult[12] = hasOwnProperty(components_Button_Button.Button, obj4);
-        const tmp24 = hasOwnProperty(components_Button_Button.Button, obj4);
-      } else {
-        class C {
-          constructor() {
-            obj = closure_1_2(closure_1_3[11]);
-            return obj.getSafetyHubData();
-          }
-        }
-      }
-      if (cResult[13] === tmp16) {
-        class C {
-          constructor() {
-            obj = closure_1_2(closure_1_3[11]);
-            return obj.getSafetyHubData();
-          }
-        }
-        return tmp25;
-      }
-      const obj5 = { children: items };
-      items = [tmp16, tmp23];
-      const tmp27 = metroRequire(Sheet_BottomSheet.BottomSheet, obj5);
-      cResult[13] = tmp16;
-      cResult[14] = tmp23;
-      cResult[15] = tmp27;
-      tmp25 = tmp27;
-    }
-    const obj6 = { style: tmp4.errorContainer, children: items1 };
-    items1 = [tmp10, tmp13];
-    const tmp19 = metroRequire(View, obj6);
-    cResult[6] = tmp4.errorContainer;
-    cResult[7] = tmp10;
-    cResult[8] = tmp19;
-    tmp16 = tmp19;
-  }
-  const obj7 = { style: tmp4.redesignErrorIconContainer, children: tmp7 };
-  const tmp11 = hasOwnProperty(View, obj7);
-  cResult[2] = tmp4.redesignErrorIconContainer;
-  cResult[3] = tmp7;
-  cResult[4] = tmp11;
-  tmp10 = tmp11;
-}) : (function SafetyHubErrorActionSheet(arg0) {
+size = size_mod;
+const result = size.fileFinishedImporting("modules/safety_hub/native/SafetyHubErrorActionSheet.tsx");
+
+export default function SafetyHubErrorActionSheet(arg0) {
   let CircleXIcon;
   let intl;
   let intl2;
@@ -189,8 +74,4 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function SafetyHubErr
     items1[1] = hasOwnProperty(Button, obj6);
     return metroRequire(BottomSheet, obj);
   }
-});
-size = size_mod;
-const result = size.fileFinishedImporting("modules/safety_hub/native/SafetyHubErrorActionSheet.tsx");
-
-export default tmp5;
+};

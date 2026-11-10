@@ -1,23 +1,23 @@
-// Module ID: 11396
-// Function ID: 11397
+// Module ID: 11698
+// Function ID: 11699
 // Name: transitionToActivity
-// Dependencies: [10914, 4854, 5641, 10915, 4924, 5182, 11397, 5661, 12741, 5742, 6812, 5242, 11425, 2]
+// Dependencies: [11000, 4862, 5657, 11001, 4935, 5198, 11699, 5678, 13184, 5759, 6851, 5258, 11726, 2]
 // Exports: default
 
-// Module 11396 (transitionToActivity)
-import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4924 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5182 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5242 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 5641 */;
-import isVoiceEmbeddedActivityDefault from "isVoiceEmbeddedActivity" /* 5661 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5742 */;
-import ChannelRTCParticipants from "ChannelRTCParticipants" /* 6812 */;
-import ChannelCallStore from "ChannelCallStore" /* 10914 */;
-import ChannelCallConstants from "ChannelCallConstants" /* 10915 */;
-import ChannelCallModalDefault from "ChannelCallModal" /* 11397 */;
-import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 11425 */;
-import openChannelCallModalForChannelIdDefault from "openChannelCallModalForChannelId" /* 12741 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4854 */;
+// Module 11698 (transitionToActivity)
+import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4935 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5198 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 5657 */;
+import isVoiceEmbeddedActivityDefault from "isVoiceEmbeddedActivity" /* 5678 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5759 */;
+import ChannelRTCParticipants from "ChannelRTCParticipants" /* 6851 */;
+import ChannelCallStore from "ChannelCallStore" /* 11000 */;
+import ChannelCallConstants from "ChannelCallConstants" /* 11001 */;
+import ChannelCallModalDefault from "ChannelCallModal" /* 11699 */;
+import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 11726 */;
+import openChannelCallModalForChannelIdDefault from "openChannelCallModalForChannelId" /* 13184 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4862 */;
 import size from "module_2" /* 2 */;
 
 const setVoiceChatDrawerState = ChannelCallStore.setVoiceChatDrawerState;
@@ -25,9 +25,9 @@ const ActivityPanelModes = ActivityPanelConstants.ActivityPanelModes;
 const VoiceChatDrawerState = ChannelCallConstants.VoiceChatDrawerState;
 let result = size.fileFinishedImporting("modules/activities/utils/transitionToActivity.native.tsx");
 
-export default function transitionToActivity(arg0, connectedActivityLocation) {
+export default function transitionToActivity(arg0, _location) {
   const obj = embeddedActivityLocationUtils;
-  const embeddedActivityLocationChannelId = obj.getEmbeddedActivityLocationChannelId(connectedActivityLocation);
+  const embeddedActivityLocationChannelId = obj.getEmbeddedActivityLocationChannelId(_location);
   if (null != embeddedActivityLocationChannelId) {
     const tmpResult = NavigationRouteUtils;
     const isModalOpenResult = tmpResult.isModalOpen(ChannelCallModalDefault);
@@ -35,7 +35,7 @@ export default function transitionToActivity(arg0, connectedActivityLocation) {
     if (tmp4) {
       openChannelCallModalForChannelIdDefault(embeddedActivityLocationChannelId);
     }
-    const selfEmbeddedActivityForLocation = EmbeddedActivitiesStore.getSelfEmbeddedActivityForLocation(connectedActivityLocation);
+    const selfEmbeddedActivityForLocation = EmbeddedActivitiesStore.getSelfEmbeddedActivityForLocation(_location);
     if (null != selfEmbeddedActivityForLocation) {
       if (isVoiceEmbeddedActivityDefault(embeddedActivityLocationChannelId)) {
         const selectParticipant = ChannelRTCActionCreatorsDefault.selectParticipant;

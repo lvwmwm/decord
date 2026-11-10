@@ -1,20 +1,20 @@
-// Module ID: 14162
-// Function ID: 14163
+// Module ID: 14687
+// Function ID: 14688
 // Name: QuestMatchingUtils
-// Dependencies: [32, 2045, 11227, 6742, 1087, 2026, 7830, 7814, 7828, 13753, 2]
+// Dependencies: [32, 2038, 11526, 6781, 2018, 9738, 7868, 7852, 7866, 14385, 2]
 // Exports: allPlayOnDesktopQuestsByApplicationId, getEligibleQuestsForApplicationId, getQuestApplicationIdsForRunningGame, getQuestByApplicationId, getQuestsFromActivities
 
-// Module 14162 (QuestMatchingUtils)
-import Constants from "Constants" /* 1087 */;
-import Constants2 from "Constants" /* 2026 */;
-import QuestExpirationUtils from "QuestExpirationUtils" /* 7814 */;
-import utils_QuestUtils from "utils/QuestUtils" /* 7828 */;
-import QuestTaskUtils from "QuestTaskUtils" /* 7830 */;
-import getApplicationIdsForGameDefault from "getApplicationIdsForGame" /* 13753 */;
+// Module 14687 (QuestMatchingUtils)
+import Constants from "Constants" /* 2018 */;
+import QuestExpirationUtils from "QuestExpirationUtils" /* 7852 */;
+import utils_QuestUtils from "utils/QuestUtils" /* 7866 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 7868 */;
+import ActivityGamePlatforms from "ActivityGamePlatforms" /* 9738 */;
+import getApplicationIdsForGameDefault from "getApplicationIdsForGame" /* 14385 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ApplicationStore from "ApplicationStore" /* 2045 */;
-import SocialSdkApplicationStore from "SocialSdkApplicationStore" /* 11227 */;
-import QuestConstants from "QuestConstants" /* 6742 */;
+import ApplicationStore from "ApplicationStore" /* 2038 */;
+import SocialSdkApplicationStore from "SocialSdkApplicationStore" /* 11526 */;
+import QuestConstants from "QuestConstants" /* 6781 */;
 import size from "module_2" /* 2 */;
 
 let userStatus;
@@ -25,25 +25,25 @@ let metroRequire;
 function questMatchesActivity(application_id, id) {
   let tmp = null != application_id;
   if (tmp) {
-    const tmp3 = application_id.application_id === closure_10 || application_id.platform === ActivityGamePlatforms.XBOX;
+    const tmp3 = application_id.application_id === closure_9 || application_id.platform === ActivityGamePlatforms.ActivityGamePlatforms.XBOX;
     if (!tmp3) {
-      let tmp8;
-      const tmp7 = application_id.platform === ActivityGamePlatforms.PS4 || application_id.platform === tmp6.PS5;
-      if (!tmp7) {
-        tmp8 = null != id && id.id === metroImportDefault && application_id.application_id === metroImportAll;
-        if (!tmp8) {
-          let tmp11 = null != application_id.application_id;
-          if (tmp11) {
+      let tmp10;
+      const tmp9 = application_id.platform === ActivityGamePlatforms.ActivityGamePlatforms.PLAYSTATION_4 || application_id.platform === tmp7(9738).ActivityGamePlatforms.PLAYSTATION_5;
+      if (!tmp9) {
+        tmp10 = null != id && id.id === metroImportDefault && application_id.application_id === metroImportAll;
+        if (!tmp10) {
+          let tmp13 = null != application_id.application_id;
+          if (tmp13) {
             application_id = application_id.application_id;
-            const obj = QuestTaskUtils;
-            const allApplicationIds = obj.getAllApplicationIds(id);
-            tmp11 = null != allApplicationIds && allApplicationIds.some((item) => item === closure_0);
+            const tmp7Result = QuestTaskUtils;
+            const allApplicationIds = tmp7Result.getAllApplicationIds(id);
+            tmp13 = null != allApplicationIds && allApplicationIds.some((item) => item === closure_0);
             null != allApplicationIds && allApplicationIds.some((item) => item === closure_0);
           }
-          tmp8 = tmp11;
+          tmp10 = tmp13;
         }
       }
-      tmp = tmp8;
+      tmp = tmp10;
     }
     const str = application_id.name;
     const formatted = str.toLowerCase();
@@ -59,7 +59,7 @@ function questMatchesActivity(application_id, id) {
       }
       flag = tmp21;
     }
-    tmp8 = flag;
+    tmp10 = flag;
   }
   return tmp;
 }
@@ -88,13 +88,12 @@ function questMatchesApplicationId(arg0, quest) {
   return tmp;
 }
 ({ DISCORD_APPLICATION_ID: metroRequire, PLAY_ACTIVITY_CLOUD_GAMING_QUEST_ID: metroImportDefault, PLAY_ACTIVITY_SOCIAL_ENTRY_APPLICATION_ID: metroImportAll } = QuestConstants);
-const ActivityGamePlatforms = Constants.ActivityGamePlatforms;
-let closure_10 = Constants2.XBOX_ACTIVITY_APPLICATION_ID;
+let closure_9 = Constants.XBOX_ACTIVITY_APPLICATION_ID;
 const result = size.fileFinishedImporting("modules/quests/utils/QuestMatchingUtils.tsx");
 
 export { questMatchesActivity };
 export { getQuestByActivity };
-export const getQuestByApplicationId = function getQuestByApplicationId(arg0, arg1) {
+export function getQuestByApplicationId(arg0, arg1) {
   let tmp5;
   const obj = arg0[Symbol.iterator]();
   while (obj !== undefined) {
@@ -113,8 +112,8 @@ export const getQuestByApplicationId = function getQuestByApplicationId(arg0, ar
     }
     continue;
   }
-};
-export const allPlayOnDesktopQuestsByApplicationId = function allPlayOnDesktopQuestsByApplicationId(arr, arg1) {
+}
+export function allPlayOnDesktopQuestsByApplicationId(arr, arg1) {
   let closure_0 = arg1;
   arr = Array.from(arr.values());
   return arr.filter((quest) => {
@@ -132,8 +131,8 @@ export const allPlayOnDesktopQuestsByApplicationId = function allPlayOnDesktopQu
     }
     return hasPlayOnDesktopTaskResult;
   });
-};
-export const getQuestsFromActivities = function getQuestsFromActivities(result, arg1) {
+}
+export function getQuestsFromActivities(result, arg1) {
   if (null != arg1) {
     if (null != result) {
       const obj = arg1[Symbol.iterator]();
@@ -148,8 +147,8 @@ export const getQuestsFromActivities = function getQuestsFromActivities(result, 
     }
   }
   return null;
-};
-export const getEligibleQuestsForApplicationId = function getEligibleQuestsForApplicationId(quests, applicationId, arg2) {
+}
+export function getEligibleQuestsForApplicationId(quests, applicationId, arg2) {
   let items;
   let closure_0 = applicationId;
   let flag = arg2;
@@ -199,8 +198,8 @@ export const getEligibleQuestsForApplicationId = function getEligibleQuestsForAp
     });
   }
   return items;
-};
-export const getQuestApplicationIdsForRunningGame = function getQuestApplicationIdsForRunningGame(pid, arg1) {
+}
+export function getQuestApplicationIdsForRunningGame(pid, arg1) {
   const obj = getApplicationIdsForGameDefault(arg1);
   const applicationIdForPID = SocialSdkApplicationStore.getApplicationIdForPID(pid.pid);
   if (null != applicationIdForPID) {
@@ -211,4 +210,4 @@ export const getQuestApplicationIdsForRunningGame = function getQuestApplication
     }
   }
   return obj;
-};
+}

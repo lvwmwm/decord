@@ -1,11 +1,11 @@
-// Module ID: 15399
-// Function ID: 15400
+// Module ID: 15942
+// Function ID: 15943
 // Name: WindowsMediaFoundationGpuEncodeIntel
-// Dependencies: [1455, 2]
+// Dependencies: [1447, 2]
 // Exports: getWmfGpuEncodeIntel
 
-// Module 15399 (WindowsMediaFoundationGpuEncodeIntel)
-import ApexExperiment from "ApexExperiment" /* 1455 */;
+// Module 15942 (WindowsMediaFoundationGpuEncodeIntel)
+import ApexExperiment from "ApexExperiment" /* 1447 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -15,7 +15,7 @@ obj2[1] = { enabled: true };
 const config = ApexExperiment.createApexExperiment(obj);
 const result = size.fileFinishedImporting("modules/media_engine/WindowsMediaFoundationGpuEncodeIntel.tsx");
 
-export const getWmfGpuEncodeIntel = function getWmfGpuEncodeIntel(MediaEngineStore) {
+export function getWmfGpuEncodeIntel(MediaEngineStore) {
   const obj = { location: MediaEngineStore };
   return config.getConfig(obj);
-};
+}

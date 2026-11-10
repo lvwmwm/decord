@@ -1,51 +1,20 @@
-// Module ID: 11839
-// Function ID: 11840
+// Module ID: 12131
+// Function ID: 12132
 // Name: useIsPreviewlessProject
-// Dependencies: [6805, 558, 576, 6806, 504, 2]
+// Dependencies: [6844, 504, 6845, 2]
+// Exports: default
 
-// Module 11839 (useIsPreviewlessProject)
-import ConjureProjectTypes from "ConjureProjectTypes" /* 6806 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6805 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 12131 (useIsPreviewlessProject)
+import ConjureProjectTypes from "ConjureProjectTypes" /* 6845 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6844 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsPreviewlessProject(arg0) {
-  let closure_0;
-  let first;
-  let tmp6;
-  _require = arg0;
-  let obj = require("react");
-  const cResult = obj.c(3);
-  const tmp = _require;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [ConjureProjectStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function u() {
-      const project = ConjureProjectStore.getProject(closure_0);
-      let isPreviewlessProjectResult = null != project;
-      if (isPreviewlessProjectResult) {
-        const obj = ConjureProjectTypes;
-        isPreviewlessProjectResult = obj.isPreviewlessProject(project);
-      }
-      return isPreviewlessProjectResult;
-    };
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-  }
-  const tmpResult = tmp(504);
-  return tmpResult.useStateFromStores(first, tmp6);
-}) : (function useIsPreviewlessProject(arg0) {
+const result = size.fileFinishedImporting("modules/conjure/projects/useIsPreviewlessProject.tsx");
+
+export default function useIsPreviewlessProject(arg0) {
   let closure_0;
   _require = arg0;
   let obj = require("get initialized");
@@ -59,7 +28,4 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsPrevi
     }
     return isPreviewlessProjectResult;
   });
-});
-const result = size.fileFinishedImporting("modules/conjure/projects/useIsPreviewlessProject.tsx");
-
-export default tmp2;
+};

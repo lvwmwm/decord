@@ -1,18 +1,18 @@
-// Module ID: 10110
-// Function ID: 10111
+// Module ID: 10192
+// Function ID: 10193
 // Name: SavedMessagesTypes
-// Dependencies: [6044, 2]
+// Dependencies: [6063, 2]
 // Exports: savedMessageCreateObjectToClient, savedMessageDataToClient, savedMessageDeleteObjectToClient
 
-// Module 10110 (SavedMessagesTypes)
-import MessageRecordUtils from "MessageRecordUtils" /* 6044 */;
+// Module 10192 (SavedMessagesTypes)
+import MessageRecordUtils from "MessageRecordUtils" /* 6063 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/saved_messages/SavedMessagesTypes.tsx");
 
 export const SavedMessageSortTypes = { ALL: "ALL", REMINDER: "REMINDER", BOOKMARK: "BOOKMARK" };
 export const BookmarksFetchState = { LOADING: "LOADING", LOADED_HAS_MORE: "LOADED_HAS_MORE", LOADED_FINISHED: "LOADED_FINISHED", FAILED: "FAILED" };
-export const savedMessageDataToClient = function savedMessageDataToClient(channelId) {
+export function savedMessageDataToClient(channelId) {
   let author_id;
   let date1;
   let guild_id;
@@ -35,8 +35,8 @@ export const savedMessageDataToClient = function savedMessageDataToClient(channe
     date1 = new Date(channelId.due_at);
   }
   return obj;
-};
-export const savedMessageCreateObjectToClient = function savedMessageCreateObjectToClient(body) {
+}
+export function savedMessageCreateObjectToClient(body) {
   let author_id;
   let date1;
   let guild_id;
@@ -67,7 +67,7 @@ export const savedMessageCreateObjectToClient = function savedMessageCreateObjec
     date1 = new Date(save_data.due_at);
   }
   return obj2;
-};
-export const savedMessageDeleteObjectToClient = function savedMessageDeleteObjectToClient(channelId) {
+}
+export function savedMessageDeleteObjectToClient(channelId) {
   return { channelId: channelId.channel_id, messageId: channelId.message_id };
-};
+}

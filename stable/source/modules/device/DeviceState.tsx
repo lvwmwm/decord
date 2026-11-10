@@ -1,12 +1,12 @@
-// Module ID: 5924
-// Function ID: 5925
+// Module ID: 5903
+// Function ID: 5904
 // Name: DeviceState
-// Dependencies: [5925, 2, 5926]
+// Dependencies: [5904, 2, 5905]
 // Exports: logDeviceState
 
-// Module 5924 (DeviceState)
-import device_DeviceState from "device/DeviceState" /* 5925 */;
-import constants_DeviceState from "constants/DeviceState" /* 5926 */;
+// Module 5903 (DeviceState)
+import device_DeviceState from "device/DeviceState" /* 5904 */;
+import constants_DeviceState from "constants/DeviceState" /* 5905 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/device/DeviceState.tsx");
@@ -14,7 +14,7 @@ const result = size.fileFinishedImporting("modules/device/DeviceState.tsx");
 export const DeviceState = constants_DeviceState.DeviceState;
 export const ThermalState = constants_DeviceState.ThermalState;
 export const getDeviceState = device_DeviceState.getDeviceState;
-export const logDeviceState = function logDeviceState(thermalState) {
+export function logDeviceState(thermalState) {
   if (null !== thermalState) {
     const logger2 = device_DeviceState.logger;
     logger2.info("Device State Information:");
@@ -35,4 +35,4 @@ export const logDeviceState = function logDeviceState(thermalState) {
     const logger = device_DeviceState.logger;
     logger.info("Device state not available");
   }
-};
+}

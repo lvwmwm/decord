@@ -1,13 +1,13 @@
-// Module ID: 11260
-// Function ID: 11261
+// Module ID: 11561
+// Function ID: 11562
 // Name: isSocialLayerApplication
-// Dependencies: [1087, 6843, 9663, 2]
+// Dependencies: [1072, 6883, 9743, 2]
 // Exports: default, isSocialLayerSDKAuthorization
 
-// Module 11260 (isSocialLayerApplication)
-import Constants from "Constants" /* 1087 */;
-import ApplicationFlagUtils from "ApplicationFlagUtils" /* 6843 */;
-import scopes2 from "scopes" /* 9663 */;
+// Module 11561 (isSocialLayerApplication)
+import Constants from "Constants" /* 1072 */;
+import ApplicationFlagUtils from "ApplicationFlagUtils" /* 6883 */;
+import scopes2 from "scopes" /* 9743 */;
 import size from "module_2" /* 2 */;
 
 const ApplicationFlags = Constants.ApplicationFlags;
@@ -23,7 +23,7 @@ export default function isSocialLayerApplication(application) {
   }
   return hasApplicationFlagResult;
 };
-export const isSocialLayerSDKAuthorization = function isSocialLayerSDKAuthorization(application, scopes) {
+export function isSocialLayerSDKAuthorization(application, scopes) {
   let obj = ApplicationFlagUtils;
   let hasApplicationFlagResult = obj.hasApplicationFlag(application, ApplicationFlags.SOCIAL_LAYER_INTEGRATION_LIMITED);
   const tmp3 = ApplicationFlags;
@@ -38,4 +38,4 @@ export const isSocialLayerSDKAuthorization = function isSocialLayerSDKAuthorizat
     });
   }
   return hasApplicationFlagResult;
-};
+}

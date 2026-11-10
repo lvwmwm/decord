@@ -1,17 +1,17 @@
-// Module ID: 6807
-// Function ID: 6808
+// Module ID: 6846
+// Function ID: 6847
 // Name: FramesStore
-// Dependencies: [6808, 5641, 1098, 5655, 504, 6809, 6810, 584, 2]
+// Dependencies: [6847, 5657, 1083, 5672, 1377, 504, 6848, 6849, 572, 2]
 
-// Module 6807 (FramesStore)
+// Module 6846 (FramesStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1098 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 5641 */;
-import getURLForApplicationDefault from "getURLForApplication" /* 5655 */;
-import EmbeddedAppTypes from "EmbeddedAppTypes" /* 6809 */;
-import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 6810 */;
-import FramesConstants from "FramesConstants" /* 6808 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import Constants from "Constants" /* 1083 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 5657 */;
+import getURLForApplicationDefault from "getURLForApplication" /* 5672 */;
+import EmbeddedAppTypes from "EmbeddedAppTypes" /* 6848 */;
+import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 6849 */;
+import FramesConstants from "FramesConstants" /* 6847 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -22,6 +22,9 @@ let hasOwnProperty;
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
+function computeMuted(poolVisibility, userMuted) {
+  return "hidden" === poolVisibility || userMuted || muted;
+}
 function findFrameByIframeId(iframeId) {
   const values = map.values();
   for (const item10009 of values) {
@@ -41,6 +44,7 @@ const NOOP_TRUE = Constants.NOOP_TRUE;
 const map = new Map();
 let closure_12 = { audible: false };
 let frameId = null;
+let muted = false;
 const Store = get_initializedDefault.Store;
 class FramesStoreClass extends Store {
   getFrame(frameId) {
@@ -64,6 +68,9 @@ class FramesStoreClass extends Store {
   }
   getFrameByIframeId(iframeId) {
     return findFrameByIframeId(iframeId);
+  }
+  isDeviceMuted() {
+    return muted;
   }
   getMainFrame() {
     let tmp = null;
@@ -92,10 +99,10 @@ class FramesStoreClass extends Store {
   getFrameBySurface(arg0, arg1) {
     return map.get(metroImportAll(arg0, arg1));
   }
-  getFramesForSurface(frameSurfaceForChannel) {
-    let closure_0 = frameSurfaceForChannel;
+  getFramesForSurface(arg0) {
+    let closure_0 = arg0;
     const arr = Array.from(map.values());
-    return arr.filter((applicationId) => metroImportAll(applicationId.applicationId, frameSurfaceForChannel) === applicationId.id);
+    return arr.filter((applicationId) => metroImportAll(applicationId.applicationId, closure_0) === applicationId.id);
   }
   getFramesForChannel(id) {
     let closure_0 = id;
@@ -127,31 +134,45 @@ let obj = {
     let invite;
     let launch;
     let launchRequestId;
-    let obj5;
+    let obj4;
     let proxyTicket;
-    ({ frameId, hostWindowKey, launchRequestId } = arg0);
-    ({ proxyTicket, launch, invite } = arg0);
+    ({ frameId, launch, hostWindowKey, launchRequestId } = arg0);
+    ({ proxyTicket, invite } = arg0);
     const value = map.get(frameId);
     if (null != value) {
       const tmp2 = null != launchRequestId && value.launchRequestId !== launchRequestId;
       if (!tmp2) {
         const tmp5 = getURLForApplicationDefault(value.applicationId);
-        if (null == tmp5) {
+        let tmp6 = tmp5;
+        const tmp3 = importDefault;
+        if (null != tmp5) {
+          tmp6 = tmp5;
+          if (null != launch.path) {
+            const tmp3Result = tmp3(1377);
+            const str = tmp3Result.toURLSafe(launch.path, tmp5);
+            let str1;
+            if (str != null) {
+              str1 = str.toString();
+            }
+            tmp6 = str1;
+          }
+        }
+        if (null == tmp6) {
           map.delete(frameId);
           if (frameId === frameId) {
             frameId = null;
           }
         } else {
-          const obj3 = { id: null, applicationId: null, intent: null, surface: null, launchRequestId: null, state: "launched", data: obj5 };
-          ({ id: obj2.id, applicationId: obj2.applicationId, intent: obj2.intent, surface: obj2.surface, launchRequestId: obj2.launchRequestId } = value);
+          const obj2 = { id: null, applicationId: null, intent: null, surface: null, launchRequestId: null, state: "launched", data: obj4 };
+          ({ id: obj3.id, applicationId: obj3.applicationId, intent: obj3.intent, surface: obj3.surface, launchRequestId: obj3.launchRequestId } = value);
           const _Date = Date;
-          obj5 = { url: tmp5, connectedSince: Date.now(), layoutMode: hasOwnProperty.FOCUSED, activityPanelMode: ActivityPanelModes.PANEL, proxyTicket, proxyTicketRefreshing: false, orientationLock: null, pipOrientationLock: null, runsInBackground: false, poolVisibility: "unpooled", muted: false, userMuted: false, iframeId: null, hostWindowKey, launch, invite };
+          obj4 = { url: tmp6, connectedSince: Date.now(), layoutMode: hasOwnProperty.FOCUSED, activityPanelMode: ActivityPanelModes.PANEL, proxyTicket, proxyTicketRefreshing: false, orientationLock: null, pipOrientationLock: null, runsInBackground: false, pictureInPictureInteractive: false, poolVisibility: "unpooled", muted, userMuted: false, iframeId: null, hostWindowKey, launch, invite };
           set = map.set;
           const merged = Object.assign(closure_12);
           if (hostWindowKey == null) {
             hostWindowKey = null;
           }
-          const result = set(frameId, obj3);
+          const result = set(frameId, obj2);
         }
       }
     }
@@ -176,8 +197,13 @@ let obj = {
   FRAME_STOP: function handleFrameStop(frameId) {
     frameId = frameId.frameId;
     map.delete(frameId);
+    const obj = map;
     if (frameId === frameId) {
       frameId = null;
+    }
+    const arr = Array.from(obj.values());
+    if (!arr.some(metroImportDefault)) {
+      muted = false;
     }
   },
   FRAME_CLEAR_MAIN_SLOT: function handleFrameClearMainSlot(frameId) {
@@ -302,6 +328,31 @@ let obj = {
     }
     return flag;
   },
+  FRAME_SET_PICTURE_IN_PICTURE_INTERACTIVE: function handleSetPictureInPictureInteractive(frameId) {
+    let obj2;
+    frameId = frameId.frameId;
+    let flag = false;
+    if (null != frameId) {
+      const value = map.get(frameId);
+      let tmp6 = metroImportDefault(value);
+      const tmp3 = map;
+      if (tmp6) {
+        let flag2 = tmp2(value.data);
+        if (flag2) {
+          const obj = { data: obj2 };
+          set = tmp3.set;
+          const merged = Object.assign(value);
+          obj2 = { pictureInPictureInteractive: tmp };
+          const merged1 = Object.assign(value.data);
+          const result = set(frameId, obj);
+          flag2 = true;
+        }
+        tmp6 = flag2;
+      }
+      flag = tmp6;
+    }
+    return flag;
+  },
   FRAME_SET_PROXY_TICKET_REFRESHING: function handleSetProxyTicketRefreshing(frameId) {
     let obj2;
     frameId = frameId.frameId;
@@ -368,7 +419,7 @@ let obj = {
           set = tmp2.set;
           const merged = Object.assign(value);
           const data = value.data;
-          obj2 = { poolVisibility, muted: "hidden" === poolVisibility || data.userMuted };
+          obj2 = { poolVisibility, muted: "hidden" === poolVisibility || data.userMuted || muted };
           const merged1 = Object.assign(data);
           const result = set(frameId, obj);
           flag2 = true;
@@ -380,7 +431,6 @@ let obj = {
     return flag;
   },
   FRAME_SET_USER_MUTED: function handleSetUserMuted(arg0) {
-    let muted;
     let obj2;
     ({ frameId, muted } = arg0);
     let flag = false;
@@ -395,7 +445,7 @@ let obj = {
           set = tmp.set;
           const merged = Object.assign(value);
           const data = value.data;
-          obj2 = { userMuted: muted, muted: "hidden" === data.poolVisibility || muted };
+          obj2 = { userMuted: muted, muted: "hidden" === data.poolVisibility || muted || muted };
           const merged1 = Object.assign(data);
           const result = set(frameId, obj);
           flag2 = true;
@@ -405,6 +455,30 @@ let obj = {
       flag = tmp4;
     }
     return flag;
+  },
+  FRAME_SET_DEVICE_MUTED: function handleSetDeviceMuted(muted) {
+    let obj2;
+    muted = muted.muted;
+    if (muted === muted) {
+      return false;
+    } else {
+      const values = map.values();
+      const iter = values[Symbol.iterator]();
+      const nextResult = iter.next();
+      while (iter !== undefined) {
+        let tmp4 = nextResult;
+        if (metroImportDefault(nextResult)) {
+          let obj = { data: obj2 };
+          set = map.set;
+          let id = tmp4.id;
+          let merged = Object.assign(nextResult);
+          obj2 = { muted: computeMuted(tmp4.data.poolVisibility, tmp4.data.userMuted) };
+          let merged1 = Object.assign(tmp4.data);
+          let result = set(id, obj);
+        }
+        continue;
+      }
+    }
   },
   EMBEDDED_APP_SHIM_STATE_UPDATE: function handleEmbeddedAppShimStateUpdate(state) {
     let obj2;
@@ -483,7 +557,7 @@ let obj = {
           const obj = { data: obj2 };
           set = tmp.set;
           const merged = Object.assign(value);
-          obj2 = { iframeId, runsInBackground: false };
+          obj2 = { iframeId, pictureInPictureInteractive: false };
           const merged1 = Object.assign(value.data);
           const merged2 = Object.assign(closure_12);
           const result = set(frameId, obj);
@@ -509,7 +583,7 @@ let obj = {
           const obj = { data: obj2 };
           set = tmp2.set;
           const merged = Object.assign(value);
-          obj2 = { iframeId: null, runsInBackground: false };
+          obj2 = { iframeId: null, pictureInPictureInteractive: false };
           const merged1 = Object.assign(value.data);
           const merged2 = Object.assign(closure_12);
           const result = set(frameId, obj);

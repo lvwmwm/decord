@@ -1,15 +1,15 @@
-// Module ID: 2023
-// Function ID: 2024
+// Module ID: 2015
+// Function ID: 2016
 // Name: GameRecord
-// Dependencies: [1407, 2024, 2000, 2032, 1417, 1388, 2]
+// Dependencies: [1398, 2016, 1992, 2025, 1409, 1379, 2]
 
-// Module 2023 (GameRecord)
-import GlobalUtils from "GlobalUtils" /* 1388 */;
-import AvatarUtils from "AvatarUtils" /* 1417 */;
-import Server from "Server" /* 2000 */;
-import ApplicationRecord2 from "ApplicationRecord" /* 2024 */;
-import getGameMediaRefURLDefault from "getGameMediaRefURL" /* 2032 */;
-import Record from "Record" /* 1407 */;
+// Module 2015 (GameRecord)
+import GlobalUtils from "GlobalUtils" /* 1379 */;
+import AvatarUtils from "AvatarUtils" /* 1409 */;
+import Server from "Server" /* 1992 */;
+import ApplicationRecord2 from "ApplicationRecord" /* 2016 */;
+import getGameMediaRefURLDefault from "getGameMediaRefURL" /* 2025 */;
+import Record from "Record" /* 1398 */;
 import size_mod from "module_2" /* 2 */;
 
 const ApplicationRecord = ApplicationRecord2;
@@ -19,7 +19,7 @@ const createExecutable = ApplicationRecord2.createExecutable;
 let size = size_mod;
 const result = size.fileFinishedImporting("modules/games/GameRecord.tsx");
 class GameRecord extends Record {
-  constructor(item10012) {
+  constructor(executables) {
     let aliases;
     let game_flags;
     let genres;
@@ -31,68 +31,68 @@ class GameRecord extends Record {
     let tmp15;
     let tmp16;
     const tmp7 = new GameRecord(tmp6, tmp5, tmp4, tmp3, tmp2, tmp);
-    ({ id: tmp7.id, name: tmp7.name, description: tmp7.description, aliases } = item10012);
+    ({ id: tmp7.id, name: tmp7.name, description: tmp7.description, aliases } = executables);
     if (aliases == null) {
       aliases = [];
     }
     tmp7.aliases = aliases;
-    let executables = item10012.executables;
+    executables = executables.executables;
     if (executables == null) {
       executables = [];
     }
     tmp7.executables = executables.map(createExecutable);
-    let flag = item10012.overlay;
+    let flag = executables.overlay;
     if (flag == null) {
       flag = false;
     }
     tmp7.overlay = flag;
-    let flag2 = item10012.overlay_warn;
+    let flag2 = executables.overlay_warn;
     if (flag2 == null) {
       flag2 = false;
     }
     tmp7.overlayWarn = flag2;
-    let flag3 = item10012.overlay_compatibility_hook;
+    let flag3 = executables.overlay_compatibility_hook;
     if (flag3 == null) {
       flag3 = false;
     }
     tmp7.overlayCompatibilityHook = flag3;
-    let flag4 = item10012.hook;
+    let flag4 = executables.hook;
     if (flag4 == null) {
       flag4 = true;
     }
     tmp7.hook = flag4;
-    tmp7.supportsOutOfProcessOverlay = ApplicationRecord.supportsOutOfProcessOverlay(item10012.overlay_methods);
-    let third_party_skus = item10012.third_party_skus;
+    tmp7.supportsOutOfProcessOverlay = ApplicationRecord.supportsOutOfProcessOverlay(executables.overlay_methods);
+    let third_party_skus = executables.third_party_skus;
     if (third_party_skus == null) {
       third_party_skus = [];
     }
     tmp7.thirdPartySkus = third_party_skus;
-    let themes = item10012.themes;
+    let themes = executables.themes;
     if (themes == null) {
       themes = [];
     }
     tmp7.themes = themes;
-    ({ linked_applications: tmp7.linkedApplications, genres } = item10012);
+    ({ linked_applications: tmp7.linkedApplications, genres } = executables);
     if (genres == null) {
       genres = [];
     }
     tmp7.genres = genres;
-    let platforms = item10012.platforms;
+    let platforms = executables.platforms;
     if (platforms == null) {
       platforms = [];
     }
     tmp7.platforms = platforms;
-    let prop = item10012.platform_availability;
+    let prop = executables.platform_availability;
     if (prop == null) {
       prop = [];
     }
     tmp7.platformAvailability = prop;
-    let websites = item10012.websites;
+    let websites = executables.websites;
     if (websites == null) {
       websites = [];
     }
     tmp7.websites = websites;
-    ({ companies: tmp7.companies, screenshot_hashes: tmp7.screenshotHashes, screenshot_urls: tmp7.screenshotUrls, trailers: tmp7.trailers, l30_rank: tmp7.l30Rank, summary_localized: tmp7.summaryLocalized, media: tmp7.media, first_release_date: tmp7.firstReleaseDate, shop_collection_ids: tmp7.shopCollectionIds, community_guild_ids: tmp7.communityGuildIds, steam_release_status: tmp7.steamReleaseStatus, reviews } = item10012);
+    ({ companies: tmp7.companies, screenshot_hashes: tmp7.screenshotHashes, screenshot_urls: tmp7.screenshotUrls, trailers: tmp7.trailers, l30_rank: tmp7.l30Rank, summary_localized: tmp7.summaryLocalized, media: tmp7.media, first_release_date: tmp7.firstReleaseDate, shop_collection_ids: tmp7.shopCollectionIds, community_guild_ids: tmp7.communityGuildIds, steam_release_status: tmp7.steamReleaseStatus, reviews } = executables);
     let steam;
     if (reviews != null) {
       steam = reviews.steam;
@@ -114,12 +114,12 @@ class GameRecord extends Record {
           }
         }
         tmp7.reviews = obj2;
-        ({ opencritic_url: tmp7.opencriticUrl, game_flags } = item10012);
+        ({ opencritic_url: tmp7.opencriticUrl, game_flags } = executables);
         if (game_flags == null) {
           game_flags = 0;
         }
         tmp7.gameFlags = game_flags;
-        tmp7.contentClassification = item10012.content_classification;
+        tmp7.contentClassification = executables.content_classification;
         return tmp7;
       }
     }
@@ -188,7 +188,7 @@ class GameRecord extends Record {
     const obj = { keepAspectRatio: true, size };
     return tmp(id, banner, obj);
   }
-  getCoverURL(coverImageSize) {
+  getCoverURL(imageSize) {
     const media = this.media;
     let cover;
     const id = this.id;
@@ -200,7 +200,7 @@ class GameRecord extends Record {
     if (AvatarUtils.SUPPORTS_WEBP) {
       str = "webp";
     }
-    const obj = { keepAspectRatio: true, format: str, size: coverImageSize };
+    const obj = { keepAspectRatio: true, format: str, size: imageSize };
     return tmp2(id, cover, obj);
   }
   getArtworkURLs(size) {
@@ -257,14 +257,14 @@ class GameRecord extends Record {
     const mapped = screenshotUrls.map((item, index) => self.getScreenshotURL(index, closure_0));
     return mapped.filter(GlobalUtils.isNotNullish);
   }
-  getCompanyByRole(PUBLISHER) {
-    let closure_0 = PUBLISHER;
+  getCompanyByRole(DEVELOPER) {
+    let closure_0 = DEVELOPER;
     const companies = this.companies;
     let found;
     if (companies != null) {
       found = companies.filter((roles) => {
         roles = roles.roles;
-        return roles.includes(PUBLISHER);
+        return roles.includes(DEVELOPER);
       });
     }
     if (found == null) {

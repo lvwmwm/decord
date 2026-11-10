@@ -1,100 +1,18 @@
-// Module ID: 14829
-// Function ID: 14830
+// Module ID: 15369
+// Function ID: 15370
 // Name: usePremiumGroupPrimaryName
-// Dependencies: [558, 576, 14830, 14834, 5057, 2]
+// Dependencies: [15370, 15374, 5068, 2]
+// Exports: default
 
-// Module 14829 (usePremiumGroupPrimaryName)
-import react from "react" /* 576 */;
-import UserUtils from "UserUtils" /* 5057 */;
-import usePremiumGroupMembershipDefault from "usePremiumGroupMembership" /* 14830 */;
-import usePremiumGroupMembersDefault from "usePremiumGroupMembers" /* 14834 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 15369 (usePremiumGroupPrimaryName)
+import UserUtils from "UserUtils" /* 5068 */;
+import usePremiumGroupMembershipDefault from "usePremiumGroupMembership" /* 15370 */;
+import usePremiumGroupMembersDefault from "usePremiumGroupMembers" /* 15374 */;
 import size from "module_2" /* 2 */;
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePremiumGroupPrimaryName(arg0) {
-  let _fetch;
-  let tmp4;
-  let useCachedData;
-  const obj = react;
-  const cResult = obj.c(10);
-  if (cResult[0] !== arg0) {
-    let obj2 = arg0;
-    if (undefined === arg0) {
-      obj2 = {};
-    }
-    cResult[0] = arg0;
-    cResult[1] = obj2;
-    tmp4 = obj2;
-  } else {
-    tmp4 = cResult[1];
-  }
-  ({ useCachedData, fetch: _fetch } = tmp4);
-  if (cResult[2] === (undefined === _fetch || _fetch)) {
-    let tmp7;
-    if (cResult[3] === (undefined === useCachedData || useCachedData)) {
-      tmp7 = cResult[4];
-    }
-    const premiumGroupMembership = usePremiumGroupMembershipDefault(tmp7).premiumGroupMembership;
-    const tmp8 = importDefault;
-    if (cResult[5] === (undefined === _fetch || _fetch)) {
-      let tmp9;
-      let tmp15;
-      if (cResult[6] === (undefined === useCachedData || useCachedData)) {
-        tmp9 = cResult[7];
-      }
-      let subscriptionId;
-      const tmp8Result = tmp8(14834);
-      if (premiumGroupMembership != null) {
-        subscriptionId = premiumGroupMembership.subscriptionId;
-      }
-      if (subscriptionId == null) {
-        subscriptionId = null;
-      }
-      const premiumGroupMembers = tmp8Result(subscriptionId, tmp9).premiumGroupMembers;
-      let primary;
-      const tmp13 = cResult[8];
-      if (premiumGroupMembers != null) {
-        primary = premiumGroupMembers.primary;
-      }
-      if (tmp13 !== primary) {
-        let primary1;
-        if (premiumGroupMembers != null) {
-          primary1 = premiumGroupMembers.primary;
-        }
-        let nameFromUserResult = null;
-        if (null != primary1) {
-          let primary2;
-          const nameFromUser = tmp(5057).nameFromUser;
-          UserUtils;
-          if (premiumGroupMembers != null) {
-            primary2 = premiumGroupMembers.primary;
-          }
-          nameFromUserResult = nameFromUser(primary2);
-        }
-        let primary3;
-        if (premiumGroupMembers != null) {
-          primary3 = premiumGroupMembers.primary;
-        }
-        cResult[8] = primary3;
-        cResult[9] = nameFromUserResult;
-        tmp15 = nameFromUserResult;
-      } else {
-        tmp15 = cResult[9];
-      }
-      return tmp15;
-    }
-    const obj3 = { useCachedData: undefined === useCachedData || useCachedData, fetch: undefined === _fetch || _fetch };
-    cResult[5] = undefined === _fetch || _fetch;
-    cResult[6] = undefined === useCachedData || useCachedData;
-    cResult[7] = obj3;
-    tmp9 = obj3;
-  }
-  const obj4 = { useCachedData: undefined === useCachedData || useCachedData, fetch: undefined === _fetch || _fetch };
-  cResult[2] = undefined === _fetch || _fetch;
-  cResult[3] = undefined === useCachedData || useCachedData;
-  cResult[4] = obj4;
-  tmp7 = obj4;
-}) : (function usePremiumGroupPrimaryName() {
+const result = size.fileFinishedImporting("modules/premium/premium_group/hooks/usePremiumGroupPrimaryName.tsx");
+
+export default function usePremiumGroupPrimaryName() {
   let obj = arg0;
   if (arg0 === undefined) {
     obj = {};
@@ -132,7 +50,4 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePremiumGr
     nameFromUserResult = nameFromUser(primary1);
   }
   return nameFromUserResult;
-});
-const result = size.fileFinishedImporting("modules/premium/premium_group/hooks/usePremiumGroupPrimaryName.tsx");
-
-export default tmp2;
+};

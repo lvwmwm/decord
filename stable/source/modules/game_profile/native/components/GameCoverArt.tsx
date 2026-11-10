@@ -1,251 +1,201 @@
-// Module ID: 9337
-// Function ID: 9338
+// Module ID: 9375
+// Function ID: 9376
 // Name: GameCoverArt
-// Dependencies: [19, 17, 21, 5003, 587, 558, 576, 9338, 5266, 5701, 2]
+// Dependencies: [19, 17, 21, 5014, 575, 9376, 1113, 5717, 5624, 2]
+// Exports: default
 
-// Module 9337 (GameCoverArt)
-import react_native from "react-native" /* 17 */;
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import useGameArtworkDefault from "useGameArtwork" /* 9338 */;
+// Module 9375 (GameCoverArt)
+import nativeDefault from "native" /* 575 */;
+import intl2 from "intl" /* 1113 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import FastImageDefault from "FastImage" /* 5717 */;
+import useGameArtworkDefault from "useGameArtwork" /* 9376 */;
 import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5003 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import size from "module_2" /* 2 */;
+import createStyles_mod from "createStyles" /* 5014 */;
+import size_mod from "module_2" /* 2 */;
 
+let StyleSheet;
+let c3;
 let closure_4;
 let hasOwnProperty;
-let obj2;
+let items;
+let obj10;
 let obj3;
-let tmp;
-let tmp4;
-const Text_Text = tmp(5266);
-const FastImageDefault = tmp4(5701);
-const View = react_native.View;
-({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
-let createStyles = createStyles_mod;
-let obj = { image: { width: "100%", height: "100%" }, iconContainer: { justifyContent: "center", alignItems: "center" }, icon: obj2, fallback: obj3, placeholder: { position: "absolute", top: 0, right: 0, bottom: 0, left: 0 } };
-obj2 = { width: "100%", aspectRatio: 1, borderRadius: nativeDefault.radii.sm };
-createStyles = createStyles.createStyles;
-obj3 = { justifyContent: "center", alignItems: "center", padding: nativeDefault.space.PX_8, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
-let closure_6 = createStyles(obj);
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameCoverArt(arg0) {
-  let coverContainerStyle;
-  let coverImageSize;
-  let game;
-  let handleError;
-  let handleLoad;
-  let iconContainerStyle;
-  let iconImageSize;
-  let imageUrl;
-  let isCover;
-  let isLoading;
-  let items1;
-  let loadingPlaceholder;
-  const obj = react2;
-  const cResult = obj.c(35);
-  ({ game, coverImageSize, iconImageSize, coverContainerStyle, iconContainerStyle, loadingPlaceholder } = arg0);
-  const tmp4 = closure_6();
-  if (cResult[0] === coverImageSize) {
-    let tmp5;
-    if (cResult[1] === game) {
-      tmp5 = cResult[2];
+let obj4;
+let obj5;
+let obj6;
+let obj7;
+let obj8;
+let obj9;
+let size;
+class GameCoverArtFromURLs {
+  constructor(loadingPlaceholder) {
+    let accessible;
+    let coverUrl;
+    let firstReleaseDate;
+    let gameName;
+    let iconUrl;
+    let imageUrl;
+    let isCover;
+    let isLoading;
+    let items1;
+    let obj;
+    let obj5;
+    let obj6;
+    let obj8;
+    let str;
+    let style;
+    ({ gameName, size, style, accessible } = loadingPlaceholder);
+    ({ coverUrl, iconUrl, firstReleaseDate } = loadingPlaceholder);
+    if (accessible === undefined) {
+      accessible = true;
     }
-    if (cResult[3] === game) {
-      let tmp7;
-      if (cResult[4] === iconImageSize) {
-        tmp7 = cResult[5];
+    loadingPlaceholder = loadingPlaceholder.loadingPlaceholder;
+    const tmp = closure_8();
+    ({ imageUrl, isCover, isLoading } = useGameArtworkDefault(coverUrl, iconUrl));
+    useGameArtworkDefault(coverUrl, iconUrl);
+    if (null == imageUrl) {
+      const obj2 = { gameName, firstReleaseDate, size, style, accessible };
+      return React3(GameCoverArtFallback, obj2);
+    } else {
+      let formatToPlainStringResult = gameName;
+      if (size !== obj.COMPACT) {
+        const intl = intl2.intl;
+        obj = { game: gameName };
+        formatToPlainStringResult = intl.formatToPlainString(intl2.t["3ev90U"], obj);
       }
-      ({ imageUrl, isCover, isLoading, handleLoad, handleError } = useGameArtworkDefault(tmp5, tmp7));
-      useGameArtworkDefault(tmp5, tmp7);
-      const tmp9 = importDefault;
-      if (null == imageUrl) {
-        if (cResult[6] === coverContainerStyle) {
-          let tmp27;
-          let tmp28;
-          if (cResult[7] === tmp4.fallback) {
-            tmp27 = cResult[8];
-          }
-          if (cResult[9] !== game.name) {
-            const obj2 = { variant: "text-xs/medium", color: "text-default", lineClamp: 3, children: game.name };
-            const tmp30 = React3(Text_Text.Text, obj2);
-            cResult[9] = game.name;
-            cResult[10] = tmp30;
-            tmp28 = tmp30;
-          } else {
-            tmp28 = cResult[10];
-          }
-          if (cResult[11] === tmp27) {
-            let tmp31;
-            if (cResult[12] === tmp28) {
-              tmp31 = cResult[13];
-            }
-            return tmp31;
-          }
-          const obj3 = { style: tmp27, children: tmp28 };
-          const tmp34 = React3(View, obj3);
-          cResult[11] = tmp27;
-          cResult[12] = tmp28;
-          cResult[13] = tmp34;
-          tmp31 = tmp34;
-        }
-        const items = [coverContainerStyle, tmp4.fallback];
-        cResult[6] = coverContainerStyle;
-        cResult[7] = tmp4.fallback;
-        cResult[8] = items;
-        tmp27 = items;
-      } else {
-        if (cResult[14] === coverContainerStyle) {
-          if (cResult[15] === iconContainerStyle) {
-            if (cResult[16] === isCover) {
-              let tmp12;
-              let tmp14;
-              if (cResult[17] === tmp4.iconContainer) {
-                tmp12 = cResult[18];
-              }
-              if (cResult[19] !== imageUrl) {
-                const obj4 = { uri: imageUrl };
-                cResult[19] = imageUrl;
-                cResult[20] = obj4;
-                tmp14 = obj4;
-              } else {
-                tmp14 = cResult[20];
-              }
-              const tmp15 = isCover ? tmp4.image : tmp4.icon;
-              if (cResult[21] === handleError) {
-                if (cResult[22] === handleLoad) {
-                  if (cResult[23] === imageUrl) {
-                    if (cResult[24] === tmp14) {
-                      let tmp16;
-                      if (cResult[25] === tmp15) {
-                        tmp16 = cResult[26];
-                      }
-                      if (cResult[27] === isLoading) {
-                        if (cResult[28] === loadingPlaceholder) {
-                          let tmp19;
-                          if (cResult[29] === tmp4.placeholder) {
-                            tmp19 = cResult[30];
-                          }
-                          if (cResult[31] === tmp12) {
-                            if (cResult[32] === tmp16) {
-                              let tmp23;
-                              if (cResult[33] === tmp19) {
-                                tmp23 = cResult[34];
-                              }
-                              return tmp23;
-                            }
-                          }
-                          const obj5 = { style: tmp12, children: items1 };
-                          items1 = [tmp16, tmp19];
-                          const tmp26 = hasOwnProperty(View, obj5);
-                          cResult[31] = tmp12;
-                          cResult[32] = tmp16;
-                          cResult[33] = tmp19;
-                          cResult[34] = tmp26;
-                          tmp23 = tmp26;
-                        }
-                      }
-                      let tmp20 = isLoading && null != loadingPlaceholder;
-                      if (tmp20) {
-                        const obj6 = { style: tmp4.placeholder, children: loadingPlaceholder };
-                        tmp20 = React3(View, obj6);
-                      }
-                      cResult[27] = isLoading;
-                      cResult[28] = loadingPlaceholder;
-                      cResult[29] = tmp4.placeholder;
-                      cResult[30] = tmp20;
-                      tmp19 = tmp20;
-                    }
-                  }
-                }
-              }
-              const obj7 = { source: tmp14, accessible: false, style: tmp15, onError: handleError, onLoad: handleLoad };
-              const tmp18 = React3(tmp9(5701), obj7, imageUrl);
-              cResult[21] = handleError;
-              cResult[22] = handleLoad;
-              cResult[23] = imageUrl;
-              cResult[24] = tmp14;
-              cResult[25] = tmp15;
-              cResult[26] = tmp18;
-              tmp16 = tmp18;
-            }
-          }
-        }
-        let tmp13 = coverContainerStyle;
-        if (!isCover) {
-          const items2 = [iconContainerStyle, tmp4.iconContainer];
-          tmp13 = items2;
-        }
-        cResult[14] = coverContainerStyle;
-        cResult[15] = iconContainerStyle;
-        cResult[16] = isCover;
-        cResult[17] = tmp4.iconContainer;
-        cResult[18] = tmp13;
-        tmp12 = tmp13;
+      const items = [tmp.container, , ];
+      let iconContainer = !isCover;
+      const tmp9 = hasOwnProperty;
+      if (!isCover) {
+        iconContainer = tmp.iconContainer;
       }
+      const obj3 = { style: items, accessible, accessibilityRole: "image", accessibilityLabel: formatToPlainStringResult, children: items1 };
+      items[1] = iconContainer;
+      items[2] = style;
+      let tmp11 = !isCover;
+      if (tmp11) {
+        const obj4 = { style: tmp.backdropContainer, pointerEvents: "none", children: React3(FastImageDefault, obj5) };
+        obj5 = { source: obj6, style: tmp.backdrop, resizeMode: "cover", blurRadius: 24, accessible: false, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants" };
+        obj6 = { uri: imageUrl };
+        tmp11 = React3(tmp10, obj4);
+      }
+      items1 = [tmp11, , ];
+      const obj7 = { source: obj8, accessible: false, style: isCover ? tmp.image : tmp.icon, resizeMode: str, onError: tmp6, onLoad: tmp5 };
+      str = "cover";
+      obj8 = { uri: imageUrl };
+      const tmp2Result = FastImageDefault;
+      if (isCover) {
+        str = "stretch";
+      }
+      items1[1] = React3(tmp2Result, obj7, imageUrl);
+      if (isLoading) {
+        isLoading = null != loadingPlaceholder;
+      }
+      if (isLoading) {
+        const obj9 = { style: tmp.placeholder, children: loadingPlaceholder };
+        isLoading = tmp13(tmp10, obj9);
+      }
+      items1[2] = isLoading;
+      return tmp9(_false, obj3);
     }
-    const iconURL = game.getIconURL(iconImageSize);
-    cResult[3] = game;
-    cResult[4] = iconImageSize;
-    cResult[5] = iconURL;
-    tmp7 = iconURL;
   }
-  const coverURL = game.getCoverURL(coverImageSize);
-  cResult[0] = coverImageSize;
-  cResult[1] = game;
-  cResult[2] = coverURL;
-  tmp5 = coverURL;
-}) : (function GameCoverArt(arg0) {
-  let coverContainerStyle;
-  let coverImageSize;
-  let game;
-  let iconContainerStyle;
-  let iconImageSize;
-  let imageUrl;
-  let isCover;
-  let isLoading;
+}
+function GameCoverArtFallback(arg0) {
+  let accessible;
+  let combined1;
+  let firstReleaseDate;
+  let gameName;
   let items;
+  let items1;
   let items2;
-  let loadingPlaceholder;
+  let nameLineClamp;
+  let nameVariant;
+  let obj;
   let obj3;
-  let obj5;
-  let tmp15Result;
-  ({ game, coverContainerStyle, loadingPlaceholder } = arg0);
-  ({ coverImageSize, iconImageSize, iconContainerStyle } = arg0);
-  const tmp = closure_6();
-  const coverURL = game.getCoverURL(coverImageSize);
-  const iconURL = game.getIconURL(iconImageSize);
-  ({ imageUrl, isCover, isLoading } = useGameArtworkDefault(coverURL, iconURL));
-  useGameArtworkDefault(coverURL, iconURL);
-  if (null == imageUrl) {
-    const obj2 = { style: items, children: React3(Text_Text.Text, obj3) };
-    items = [coverContainerStyle, tmp.fallback];
-    obj3 = { variant: "text-xs/medium", color: "text-default", lineClamp: 3, children: game.name };
-    tmp15Result = React3(View, obj2);
+  let releaseYearVariant;
+  let style;
+  ({ gameName, firstReleaseDate, size, style, accessible } = arg0);
+  const tmp = closure_8();
+  if (size === obj.COMPACT) {
+    const obj2 = { style: items, accessible, accessibilityRole: "image", accessibilityLabel: gameName, children: React3(Text_Text.Text, obj3) };
+    items = [tmp.container, style, tmp.compactFallback];
+    obj3 = { variant: "text-xxs/medium", lineClamp: 3, style: tmp.fallbackText, accessible: false, children: gameName };
+    return React3(_false, obj2);
   } else {
-    let tmp9 = coverContainerStyle;
-    const tmp15 = hasOwnProperty;
-    if (!isCover) {
-      const items1 = [iconContainerStyle, tmp.iconContainer];
-      tmp9 = items1;
+    let date = null;
+    ({ nameVariant, nameLineClamp, releaseYearVariant } = closure_7[size]);
+    if (null != firstReleaseDate) {
+      const _Date = Date;
+      const self = this;
+      const self2 = this;
+      date = new Date(firstReleaseDate);
     }
-    const obj4 = { source: obj5, accessible: false, style: isCover ? tmp.image : tmp.icon, onError: tmp8, onLoad: tmp7 };
-    const obj = { style: tmp9, children: items2 };
-    obj5 = { uri: imageUrl };
-    items2 = [React3(FastImageDefault, obj4, imageUrl), ];
-    if (isLoading) {
-      isLoading = null != loadingPlaceholder;
+    let combined = null;
+    if (null != date) {
+      const _HermesInternal = HermesInternal;
+      combined = "(" + date.getFullYear() + ")";
     }
-    if (isLoading) {
-      const obj6 = { style: tmp.placeholder, children: loadingPlaceholder };
-      isLoading = tmp10(tmp16, obj6);
+    obj = { style: items1, accessible, accessibilityRole: "image", accessibilityLabel: combined1, children: items2 };
+    items1 = [tmp.container, style, tmp.fallback];
+    combined1 = gameName;
+    const tmp7 = hasOwnProperty;
+    if (null != combined) {
+      const _HermesInternal2 = HermesInternal;
+      combined1 = "" + gameName + " " + combined;
     }
-    items2[1] = isLoading;
-    tmp15Result = tmp15(tmp16, obj);
+    const obj4 = { style: tmp.spacer };
+    items2 = [React3(_false, obj4), , , ];
+    const obj5 = { variant: nameVariant, color: "text-default", lineClamp: nameLineClamp, style: tmp.fallbackText, accessible: false, children: gameName };
+    items2[1] = React3(Text_Text.Text, obj5);
+    const obj6 = { style: tmp.spacer };
+    items2[2] = React3(_false, obj6);
+    const obj7 = { variant: releaseYearVariant, color: "text-default", accessible: false, children: combined };
+    items2[3] = React3(Text_Text.Text, obj7);
+    return tmp7(_false, obj);
   }
-  return tmp15Result;
-});
+}
+({ StyleSheet, View: c3 } = react_native);
+({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
+const GameCoverArtSize = { SMALL: 0, [0]: "SMALL", LARGE: 1, [1]: "LARGE", COMPACT: 2, [2]: "COMPACT" };
+let closure_7 = { [GameCoverArtSize.SMALL]: { nameVariant: "text-xs/medium", nameLineClamp: 3, releaseYearVariant: "text-xxs/normal" }, [GameCoverArtSize.LARGE]: { nameVariant: "text-md/medium", nameLineClamp: 4, releaseYearVariant: "text-sm/normal" } };
+let createStyles = createStyles_mod;
+let obj2 = { container: obj3, image: size, iconContainer: obj4, backdropContainer: obj5, backdrop: obj6, icon: obj7, fallback: obj8, compactFallback: obj9, fallbackText: { textAlign: "center" }, spacer: { flex: 1 }, placeholder: obj10 };
+obj3 = { borderRadius: nativeDefault.radii.sm };
+createStyles = createStyles.createStyles;
+size = { width: "100%", height: "100%", borderRadius: nativeDefault.radii.sm };
+obj4 = { justifyContent: "center", alignItems: "center", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
+obj5 = { borderRadius: nativeDefault.radii.sm, overflow: "hidden" };
+let merged = Object.assign(StyleSheet.absoluteFillObject);
+obj6 = { transform: items };
+const merged1 = Object.assign(StyleSheet.absoluteFillObject);
+items = [{ scale: 1.2 }];
+obj7 = { width: "85%", aspectRatio: 1, borderRadius: nativeDefault.radii.sm };
+obj8 = { alignItems: "center", padding: nativeDefault.space.PX_12, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
+obj9 = { justifyContent: "center", alignItems: "center", padding: nativeDefault.space.PX_4, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED };
+obj10 = {};
+const merged2 = Object.assign(StyleSheet.absoluteFillObject);
+const metroImportAll = createStyles(obj2);
+size = size_mod;
 const result = size.fileFinishedImporting("modules/game_profile/native/components/GameCoverArt.tsx");
 
-export default tmp5;
+export default function GameCoverArt(arg0) {
+  let game;
+  let getIconURL;
+  let imageSize;
+  ({ game, imageSize } = arg0);
+  const obj = { coverUrl: game.getCoverURL(imageSize), iconUrl: getIconURL(imageSize) };
+  const merged = Object.assign(Object.assign(arg0, Object.assign({ game: 0, imageSize: 0 })));
+  getIconURL = game.getIconURL;
+  const tmp = React3;
+  const tmp2 = GameCoverArtFromURLs;
+  if (imageSize == null) {
+    imageSize = 256;
+  }
+  ({ name: obj.gameName, firstReleaseDate: obj.firstReleaseDate } = game);
+  return tmp(tmp2, obj);
+};
+export { GameCoverArtSize };
+export { GameCoverArtFromURLs };

@@ -1,12 +1,12 @@
-// Module ID: 11434
-// Function ID: 11435
+// Module ID: 11735
+// Function ID: 11736
 // Name: trackApplicationOpen
-// Dependencies: [1087, 1267, 2]
+// Dependencies: [1072, 1252, 2]
 // Exports: default
 
-// Module 11434 (trackApplicationOpen)
-import Constants from "Constants" /* 1087 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
+// Module 11735 (trackApplicationOpen)
+import Constants from "Constants" /* 1072 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;

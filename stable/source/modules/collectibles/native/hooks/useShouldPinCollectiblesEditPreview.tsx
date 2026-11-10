@@ -1,30 +1,22 @@
-// Module ID: 14525
-// Function ID: 14526
+// Module ID: 15067
+// Function ID: 15068
 // Name: useShouldPinCollectiblesEditPreview
-// Dependencies: [558, 1499, 1633, 5300, 2]
+// Dependencies: [1491, 1625, 5586, 2]
+// Exports: useShouldPinCollectiblesEditPreview
 
-// Module 14525 (useShouldPinCollectiblesEditPreview)
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1499 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
-import NavigatorConstants from "NavigatorConstants" /* 5300 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 15067 (useShouldPinCollectiblesEditPreview)
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1491 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1625 */;
+import NavigatorConstants from "NavigatorConstants" /* 5586 */;
 import size from "module_2" /* 2 */;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldPinCollectiblesEditPreview() {
-  let bottom;
-  let top;
-  const height = useWindowDimensionsDefault().height;
-  ({ top, bottom } = useSafeAreaInsetsDefault());
-  useSafeAreaInsetsDefault();
-  return height - NavigatorConstants.NAV_BAR_HEIGHT_MULTILINE - top - bottom >= 618;
-}) : (function useShouldPinCollectiblesEditPreview() {
-  let bottom;
-  let top;
-  const height = useWindowDimensionsDefault().height;
-  ({ top, bottom } = useSafeAreaInsetsDefault());
-  useSafeAreaInsetsDefault();
-  return height - NavigatorConstants.NAV_BAR_HEIGHT_MULTILINE - top - bottom >= 618;
-});
 const result = size.fileFinishedImporting("modules/collectibles/native/hooks/useShouldPinCollectiblesEditPreview.tsx");
 
-export const useShouldPinCollectiblesEditPreview = tmp2;
+export function useShouldPinCollectiblesEditPreview() {
+  let bottom;
+  let top;
+  const height = useWindowDimensionsDefault().height;
+  ({ top, bottom } = useSafeAreaInsetsDefault());
+  useSafeAreaInsetsDefault();
+  return height - NavigatorConstants.NAV_BAR_HEIGHT_MULTILINE - top - bottom >= 618;
+}

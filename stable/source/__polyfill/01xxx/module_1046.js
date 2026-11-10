@@ -1,52 +1,43 @@
 // Module ID: 1046
 // Function ID: 1047
-// Dependencies: [1040]
-// Exports: addTimeToInitialDisplayFallback, getTimeToInitialDisplayFallback
+// Dependencies: [680, 867]
+// Exports: createReleaseFromGlobalReleaseConstants, getDefaultRelease
 
 // Module 1046
-import AsyncExpiringMap from "AsyncExpiringMap" /* 1040 */;
+import RN_GLOBAL_OBJ from "RN_GLOBAL_OBJ" /* 680 */;
+import _mod867 from "module_867" /* 867 */;
 
-let c0;
 
-const asyncExpiringMap = new AsyncExpiringMap.AsyncExpiringMap({ ttl: 60000 });
-
-export const addTimeToInitialDisplayFallback = (arg0, arg1) => {
-  const result = asyncExpiringMap.set(arg0, arg1);
-};
-export const getTimeToInitialDisplayFallback = (arg0) => {
-  let closure_0 = arg0;
-  return closure_0(undefined, undefined, undefined, function*(arg0, value) {
-    if (c0 === 2) {
-      c0 = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp2 === 3) {
-      if (arg0 === 1) {
-        throw value;
-      } else if (arg0 === 2) {
-        const obj2 = { value, done: true };
-        return obj2;
-      } else {
-        return { value: "IconComponent", done: "+352" };
-      }
-    } else {
-      try {
-        c0 = 2;
-        if (arg0 === 1) {
-          c0 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c0 = 3;
-          const obj3 = { value, done: true };
-          return obj3;
-        } else {
-          c0 = 3;
-          const obj = { value: asyncExpiringMap.get(closure_0), done: true };
-          return obj;
-        }
-      } catch (tmp5) {
-        c0 = 3;
-        throw tmp5;
+export function createReleaseFromGlobalReleaseConstants() {
+  let name;
+  let version;
+  const SENTRY_RELEASE = RN_GLOBAL_OBJ.RN_GLOBAL_OBJ.SENTRY_RELEASE;
+  if (SENTRY_RELEASE) {
+    ({ name, version } = SENTRY_RELEASE);
+    if (name) {
+      if (version) {
+        const _HermesInternal = HermesInternal;
+        return "" + name + "@" + version;
       }
     }
-  });
-};
+  }
+}
+export function getDefaultRelease() {
+  let name;
+  let version;
+  const obj = _mod867;
+  if (!obj.notWeb()) {
+    const SENTRY_RELEASE = RN_GLOBAL_OBJ.RN_GLOBAL_OBJ.SENTRY_RELEASE;
+    let combined;
+    if (SENTRY_RELEASE) {
+      ({ name, version } = SENTRY_RELEASE);
+      if (name) {
+        if (version) {
+          const _HermesInternal = HermesInternal;
+          combined = "" + name + "@" + version;
+        }
+      }
+    }
+    return combined;
+  }
+}

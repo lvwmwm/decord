@@ -1,16 +1,16 @@
-// Module ID: 9535
-// Function ID: 9536
+// Module ID: 9609
+// Function ID: 9610
 // Name: GameProfileReportButton
-// Dependencies: [19, 21, 5242, 9277, 6704, 9536, 2002, 9536, 5276, 1128, 2]
+// Dependencies: [19, 21, 5258, 9340, 6744, 9610, 1994, 9610, 5634, 1113, 2]
 // Exports: default
 
-// Module 9535 (GameProfileReportButton)
+// Module 9609 (GameProfileReportButton)
 import Fragment from "Fragment" /* 21 */;
-import asyncRequire from "asyncRequire" /* 2002 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5242 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6704 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9277 */;
-import GameDetectionReportModal from "GameDetectionReportModal" /* 9536 */;
+import asyncRequire from "asyncRequire" /* 1994 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6744 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9340 */;
+import GameDetectionReportModal from "GameDetectionReportModal" /* 9610 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -28,10 +28,10 @@ export default function GameProfileReportButton(applicationId) {
     const pushLazy = ModalActionCreatorsDefault.pushLazy;
     const obj2 = { applicationId };
     ModalActionCreatorsDefault;
-    const tmp4 = asyncRequire(9536, dependencyMap.paths);
+    const tmp4 = asyncRequire(9610, dependencyMap.paths);
     pushLazy(tmp4, obj2, GameDetectionReportModal.MODAL_KEY);
   }, items);
-  const Button = applicationId(5276).Button;
-  const intl = applicationId(1128).intl;
-  return <Button variant="secondary" size="md" text={intl.string(applicationId(1128).t.qP2cXd)} onPress={callback} />;
+  const Button = applicationId(5634).Button;
+  const intl = applicationId(1113).intl;
+  return <Button variant="secondary" size="md" text={intl.string(applicationId(1113).t.qP2cXd)} onPress={callback} />;
 };

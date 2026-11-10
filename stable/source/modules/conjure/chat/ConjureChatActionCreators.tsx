@@ -1,17 +1,17 @@
-// Module ID: 11789
-// Function ID: 11790
+// Module ID: 12585
+// Function ID: 12586
 // Name: ConjureChatActionCreators
-// Dependencies: [584, 2]
+// Dependencies: [572, 2]
 // Exports: setComposerDraft
 
-// Module 11789 (ConjureChatActionCreators)
-import DispatcherDefault from "Dispatcher" /* 584 */;
+// Module 12585 (ConjureChatActionCreators)
+import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/chat/ConjureChatActionCreators.tsx");
 
-export const setComposerDraft = function setComposerDraft(projectId, message) {
+export function setComposerDraft(projectId, message) {
   const obj = DispatcherDefault;
   const obj2 = { type: "CONJURE_COMPOSER_DRAFT_SET", projectId, draft: message };
   obj.dispatch(obj2);
-};
+}

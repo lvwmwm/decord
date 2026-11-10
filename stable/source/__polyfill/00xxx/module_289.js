@@ -32,16 +32,16 @@ function getExtendedError(value, componentStack) {
   return tmp;
 }
 
-export const onUncaughtError = function onUncaughtError(value, componentStack) {
+export function onUncaughtError(value, componentStack) {
   const tmp = getExtendedError(value, componentStack);
   const obj = SyntheticErrorDefault;
   obj.handleException(tmp, true);
-};
-export const onCaughtError = function onCaughtError(value, componentStack) {
+}
+export function onCaughtError(value, componentStack) {
   const tmp = getExtendedError(value, componentStack);
   const obj = SyntheticErrorDefault;
   obj.handleException(tmp, false);
-};
-export const onRecoverableError = function onRecoverableError(value, componentStack) {
+}
+export function onRecoverableError(value, componentStack) {
   console.warn(getExtendedError(value, componentStack));
-};
+}

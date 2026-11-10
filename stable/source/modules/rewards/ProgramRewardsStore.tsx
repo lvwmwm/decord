@@ -1,18 +1,18 @@
-// Module ID: 15070
-// Function ID: 15071
+// Module ID: 15610
+// Function ID: 15611
 // Name: ProgramRewardsStore
-// Dependencies: [32, 1392, 15068, 4451, 4479, 4434, 504, 1104, 15071, 15073, 584, 2]
+// Dependencies: [32, 1383, 15608, 4459, 4487, 4442, 504, 1089, 15611, 15613, 572, 2]
 
-// Module 15070 (ProgramRewardsStore)
+// Module 15610 (ProgramRewardsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import DurationsDefault from "Durations" /* 1104 */;
-import addMinutesDefault from "addMinutes" /* 4451 */;
-import NetworkTtlCache from "NetworkTtlCache" /* 15068 */;
-import ProgramRewardsUtils from "ProgramRewardsUtils" /* 15071 */;
-import ProgramRewardsTypes from "ProgramRewardsTypes" /* 15073 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import DurationsDefault from "Durations" /* 1089 */;
+import addMinutesDefault from "addMinutes" /* 4459 */;
+import NetworkTtlCache from "NetworkTtlCache" /* 15608 */;
+import ProgramRewardsUtils from "ProgramRewardsUtils" /* 15611 */;
+import ProgramRewardsTypes from "ProgramRewardsTypes" /* 15613 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import UserStore from "UserStore" /* 1392 */;
+import UserStore from "UserStore" /* 1383 */;
 import size from "module_2" /* 2 */;
 
 let map;
@@ -222,8 +222,8 @@ class ProgramRewardsStore extends PersistedStore {
     }
     return { cache };
   }
-  getTotalDaysInDuration(arg0) {
-    const rewardForProgram = this.getRewardForProgram(arg0);
+  getTotalDaysInDuration(NITRO) {
+    const rewardForProgram = this.getRewardForProgram(NITRO);
     if (null == rewardForProgram) {
       return null;
     } else {
@@ -287,11 +287,11 @@ class ProgramRewardsStore extends PersistedStore {
   getStatus() {
     return networkTtlCache.getStatus();
   }
-  getRewardForProgram(arg0) {
+  getRewardForProgram(NITRO) {
     const value = networkTtlCache.getValue();
     let value2;
     if (value != null) {
-      value2 = value.get(arg0);
+      value2 = value.get(NITRO);
     }
     return value2;
   }

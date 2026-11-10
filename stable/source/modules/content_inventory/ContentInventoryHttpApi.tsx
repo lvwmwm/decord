@@ -1,14 +1,14 @@
-// Module ID: 14435
-// Function ID: 14436
+// Module ID: 14971
+// Function ID: 14972
 // Name: ContentInventoryHttpApi
-// Dependencies: [5, 8871, 1087, 1297, 6406, 584, 1128, 2]
+// Dependencies: [5, 8922, 1072, 1282, 6446, 572, 1113, 2]
 // Exports: deleteContentInventoryEntryHistory, getContentInventoryOutbox, getMyContentInventory, postTrackToContentInventory
 
-// Module 14435 (ContentInventoryHttpApi)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1087 */;
-import HTTPUtils from "HTTPUtils" /* 1297 */;
-import ContentInventoryConstants from "ContentInventoryConstants" /* 8871 */;
+// Module 14971 (ContentInventoryHttpApi)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import Constants from "Constants" /* 1072 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
+import ContentInventoryConstants from "ContentInventoryConstants" /* 8922 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -32,7 +32,7 @@ let obj = function _getMyContentInventory() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c4;
@@ -62,7 +62,7 @@ let obj = function _getMyContentInventory() {
             date = undefined;
             c5 = 1;
             c6 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "flexDirection", done: true };
           }
         } else if (1 === c5) {
           if (arg0 === 1) {
@@ -144,7 +144,7 @@ obj = function _getContentInventoryOutbox() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -231,7 +231,7 @@ obj = function _deleteContentInventoryEntryHistory() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -294,7 +294,7 @@ obj = function _deleteContentInventoryEntryHistory() {
               c7 = 0;
             }
             c9 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp27) {
           body = tmp27;
@@ -329,7 +329,7 @@ obj = function _postTrackToContentInventory() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -373,7 +373,7 @@ obj = function _postTrackToContentInventory() {
           } else {
             c5 = 0;
             c7 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp14) {
           closure_4 = tmp14;
@@ -393,15 +393,15 @@ const ContentInventoryFeedKey = ContentInventoryConstants.ContentInventoryFeedKe
 const Endpoints = Constants.Endpoints;
 const result = size.fileFinishedImporting("modules/content_inventory/ContentInventoryHttpApi.tsx");
 
-export const getMyContentInventory = function getMyContentInventory() {
+export function getMyContentInventory() {
   return obj(...arguments);
-};
-export const getContentInventoryOutbox = function getContentInventoryOutbox() {
+}
+export function getContentInventoryOutbox() {
   return obj(...arguments);
-};
-export const deleteContentInventoryEntryHistory = function deleteContentInventoryEntryHistory() {
+}
+export function deleteContentInventoryEntryHistory() {
   return obj(...arguments);
-};
-export const postTrackToContentInventory = function postTrackToContentInventory() {
+}
+export function postTrackToContentInventory() {
   return obj(...arguments);
-};
+}

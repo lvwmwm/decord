@@ -1,11 +1,11 @@
-// Module ID: 4999
-// Function ID: 5000
+// Module ID: 5010
+// Function ID: 5011
 // Name: BurstReactionEffectUtils
-// Dependencies: [5000, 12, 2]
+// Dependencies: [5011, 12, 2]
 // Exports: replaceAnimationColors
 
-// Module 4999 (BurstReactionEffectUtils)
-import ColorUtils from "ColorUtils" /* 5000 */;
+// Module 5010 (BurstReactionEffectUtils)
+import ColorUtils from "ColorUtils" /* 5011 */;
 import module_12 from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 
@@ -26,12 +26,12 @@ const memoizeResult = module_12.memoize((str) => {
 });
 const result = size.fileFinishedImporting("modules/messages/BurstReactionEffectUtils.tsx");
 
-export const replaceAnimationColors = function replaceAnimationColors(str, arg1) {
+export function replaceAnimationColors(str, arg1) {
   const items = [, , ];
   ({ r: arr[0], g: arr[1], b: arr[2] } = arg1);
   const obj = ColorUtils;
   const complimentaryPaletteForColor = obj.getComplimentaryPaletteForColor(items, 2);
   str = str.replace(/(\[1,0,0,)/g, "[" + complimentaryPaletteForColor[0][0] / 255 + "," + complimentaryPaletteForColor[0][1] / 255 + "," + complimentaryPaletteForColor[0][2] / 255 + ",");
   return str.replace(/\[0,0,1,/g, "[" + complimentaryPaletteForColor[1][0] / 255 + "," + complimentaryPaletteForColor[1][1] / 255 + "," + complimentaryPaletteForColor[1][2] / 255 + ",");
-};
+}
 export const getBurstAnimationHash = memoizeResult;

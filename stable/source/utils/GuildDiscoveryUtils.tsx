@@ -1,18 +1,18 @@
-// Module ID: 7480
-// Function ID: 7481
+// Module ID: 7521
+// Function ID: 7522
 // Name: GuildDiscoveryUtils
-// Dependencies: [5, 4936, 5226, 4877, 1087, 1114, 7481, 7379, 6862, 1267, 1297, 1493, 2]
+// Dependencies: [5, 4947, 5242, 4885, 1072, 1099, 7522, 7421, 6902, 1252, 1282, 1485, 2]
 // Exports: fetchPublicDiscoveryGuild, getDiscoverableGuild, startLurking, trackDiscoveryExited, trackGuildDiscoveryGetFeaturedGuildsFailed, trackGuildDiscoverySearchStart, trackGuildJoinClicked, trackSearchClosed, trackSearchFailed, trackSearchResultsViewed, trackSearchStarted
 
-// Module 7480 (GuildDiscoveryUtils)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import HTTPUtils from "HTTPUtils" /* 1297 */;
-import _modDef1493 from "module_1493" /* 1493 */;
+// Module 7521 (GuildDiscoveryUtils)
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
+import _modDef1485 from "module_1485" /* 1485 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import LurkingStore from "LurkingStore" /* 4936 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 5226 */;
-import GuildStore from "GuildStore" /* 4877 */;
-import Constants from "Constants" /* 1087 */;
+import LurkingStore from "LurkingStore" /* 4947 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 5242 */;
+import GuildStore from "GuildStore" /* 4885 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 let guild_ids, joinedAt, lurkLocation, openChannel, page;
@@ -157,12 +157,12 @@ let obj = function _startLurking() {
       if (onSuccess != null) {
         tmp118();
       }
-      await "IconComponent";
+      await "HermesInternal";
       obj4 = closure_2;
       if (closure_2 === undefined) {
         obj4 = {};
       }
-      return "Reflect";
+      return "flexDirection";
     })();
     iter.next();
     return iter;
@@ -192,7 +192,7 @@ obj = function _getDiscoverableGuild() {
       const request = { url: constants.GUILD_DISCOVERY, query: obj7.stringify(obj4), oldFormErrors: true, rejectWithError: true };
       const get = HTTP.get;
       obj4 = { guild_ids };
-      obj7 = _modDef1493;
+      obj7 = _modDef1485;
       guild_ids = await get(request);
       const body = guild_ids.body;
       if (body != null) {
@@ -260,11 +260,11 @@ const result = size.fileFinishedImporting("utils/GuildDiscoveryUtils.tsx");
 export const AnalyticsContexts = { SEARCH: "Search", RECOMMENDED: "Recommended", POPULAR: "Popular", RECOMMENDED_E3: "Recommended - E3", HEADER: "Header", GLOBAL_DISCOVERY: "Global Discovery", FORWARD_BREADCRUMB: "Forward Breadcrumb" };
 export const IOS_MINIMUM_MEMBER_COUNT = ">1000";
 export const MINIMUM_MEMBER_COUNT = ">200";
-export const startLurking = function startLurking() {
+export function startLurking() {
   return obj(...arguments);
-};
+}
 export { makeDiscoverableGuild };
-export const trackDiscoveryExited = function trackDiscoveryExited(load_id, guild_ids_viewed) {
+export function trackDiscoveryExited(load_id, guild_ids_viewed) {
   let tmp = arg2;
   if (arg2 === undefined) {
     tmp = null;
@@ -272,13 +272,13 @@ export const trackDiscoveryExited = function trackDiscoveryExited(load_id, guild
   obj = AnalyticsUtilsDefault;
   const obj2 = { load_id, guild_ids_viewed, recommendations_source: tmp };
   obj.track(metroImportDefault.GUILD_DISCOVERY_EXITED, obj2);
-};
-export const trackSearchClosed = function trackSearchClosed(load_id) {
+}
+export function trackSearchClosed(load_id) {
   obj = AnalyticsUtilsDefault;
   const obj2 = { load_id };
   obj.track(metroImportDefault.SEARCH_CLOSED, obj2);
-};
-export const trackSearchStarted = function trackSearchStarted(load_id, category_id) {
+}
+export function trackSearchStarted(load_id, category_id) {
   obj = arg2;
   if (arg2 === undefined) {
     obj = {};
@@ -286,15 +286,15 @@ export const trackSearchStarted = function trackSearchStarted(load_id, category_
   const obj2 = AnalyticsUtilsDefault;
   const obj3 = { search_type: metroImportAll.GUILD_DISCOVERY, load_id, location: obj.location, category_id };
   obj2.track(metroImportDefault.SEARCH_STARTED, obj3);
-};
-export const trackGuildDiscoverySearchStart = function trackGuildDiscoverySearchStart(arg0) {
+}
+export function trackGuildDiscoverySearchStart(arg0) {
   let offset;
   let withCounts;
   ({ withCounts, offset } = arg0);
   obj = AnalyticsUtilsDefault;
   obj.track(metroImportDefault.GUILD_DISCOVERY_SEARCH_START, { with_counts: withCounts, offset });
-};
-export const trackSearchFailed = function trackSearchFailed(error) {
+}
+export function trackSearchFailed(error) {
   let categoryId;
   let isRequestRetry;
   let willRequestRetry;
@@ -303,13 +303,13 @@ export const trackSearchFailed = function trackSearchFailed(error) {
   obj = AnalyticsUtilsDefault;
   const obj2 = { category_id: categoryId, request_status: error.status, request_error_code: error.code, will_request_retry: willRequestRetry, is_request_retry: isRequestRetry };
   obj.track(metroImportDefault.GUILD_DISCOVERY_SEARCH_FAILED, obj2);
-};
-export const trackGuildDiscoveryGetFeaturedGuildsFailed = function trackGuildDiscoveryGetFeaturedGuildsFailed(categoryId) {
+}
+export function trackGuildDiscoveryGetFeaturedGuildsFailed(categoryId) {
   categoryId = categoryId.categoryId;
   obj = AnalyticsUtilsDefault;
   obj.track(metroImportDefault.GUILD_DISCOVERY_GET_FEATURED_GUILDS_FAILED, { category_id: categoryId });
-};
-export const trackSearchResultsViewed = function trackSearchResultsViewed(guildResults) {
+}
+export function trackSearchResultsViewed(guildResults) {
   let analyticsContext;
   let categoryId;
   let isTagSearch;
@@ -332,16 +332,16 @@ export const trackSearchResultsViewed = function trackSearchResultsViewed(guildR
     mapped = guildResults.map((id) => id.id);
   }
   track(SEARCH_RESULT_VIEWED, obj);
-};
-export const trackGuildJoinClicked = function trackGuildJoinClicked(guildId) {
+}
+export function trackGuildJoinClicked(guildId) {
   const loadId = LurkingStore.getLoadId(guildId);
   obj = AnalyticsUtilsDefault;
   const obj2 = { guild_id: guildId, load_id: loadId, guild_size: GuildMemberCountStore.getMemberCount(guildId) };
   obj.track(metroImportDefault.GUILD_DISCOVERY_GUILD_JOIN_CLICKED, obj2);
-};
-export const getDiscoverableGuild = function getDiscoverableGuild() {
+}
+export function getDiscoverableGuild() {
   return obj(...arguments);
-};
-export const fetchPublicDiscoveryGuild = function fetchPublicDiscoveryGuild() {
+}
+export function fetchPublicDiscoveryGuild() {
   return obj(...arguments);
-};
+}

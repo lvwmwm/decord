@@ -1,13 +1,13 @@
-// Module ID: 7035
-// Function ID: 7036
+// Module ID: 7077
+// Function ID: 7078
 // Name: ChangeEmailActionCreators
-// Dependencies: [5, 1087, 6708, 1275, 2]
+// Dependencies: [5, 1072, 6747, 1260, 2]
 // Exports: confirmEmailChange, sendConfirmationCode
 
-// Module 7035 (ChangeEmailActionCreators)
-import Constants from "Constants" /* 1087 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1275 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6708 */;
+// Module 7077 (ChangeEmailActionCreators)
+import Constants from "Constants" /* 1072 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6747 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -32,7 +32,7 @@ let obj = function _confirmEmailChange() {
 const Endpoints = Constants.Endpoints;
 const result = size.fileFinishedImporting("modules/verification/ChangeEmailActionCreators.tsx");
 
-export const sendConfirmationCode = function sendConfirmationCode() {
+export function sendConfirmationCode() {
   let flag = arg0;
   if (arg0 === undefined) {
     flag = false;
@@ -41,7 +41,7 @@ export const sendConfirmationCode = function sendConfirmationCode() {
   obj = TrackedHTTPUtilsDefault;
   ({ event: discord_common_AnalyticsUtils.NetworkActionNames.USER_ACCOUNT_EMAIL_CHANGE_SEND_CODE, properties: { is_resend: flag } });
   return obj.put(obj2);
-};
-export const confirmEmailChange = function confirmEmailChange() {
+}
+export function confirmEmailChange() {
   return obj(...arguments);
-};
+}

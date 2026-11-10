@@ -1,74 +1,7 @@
 // Module ID: 15553
 // Function ID: 15554
-// Dependencies: [15554, 15555, 1174, 15556, 15557]
-// Exports: getCalendarPreferenceDataForRegion, getHourCyclesPreferenceDataForLocaleOrRegion, getTimeZonePreferenceForRegion, getWeekDataForRegion
+// Dependencies: []
 
 // Module 15553
-import _mod1174 from "module_1174" /* 1174 */;
-import calendars2 from "calendars" /* 15554 */;
-import hourCycles from "hourCycles" /* 15555 */;
-import timezones from "timezones" /* 15556 */;
-import weekData2 from "weekData" /* 15557 */;
 
-
-export const getCalendarPreferenceDataForRegion = function getCalendarPreferenceDataForRegion(region) {
-  let str = null;
-  if (region) {
-    str = region.toUpperCase();
-  }
-  const calendars = calendars2.calendars;
-  if (!str) {
-    str = "";
-  }
-  const arr = calendars[str] || calendars2.calendars["001"];
-  return arr.map((item) => {
-    let str = "gregory";
-    if ("gregorian" !== item) {
-      let str2 = "islamicc";
-      if ("islamic-civil" !== item) {
-        str2 = item;
-      }
-      str = str2;
-    }
-    return str;
-  });
-};
-export const getHourCyclesPreferenceDataForLocaleOrRegion = function getHourCyclesPreferenceDataForLocaleOrRegion(locale, region) {
-  const formatted = locale.toLowerCase();
-  let str = "";
-  if (region) {
-    str = region.toUpperCase();
-  }
-  let v001 = hourCycles.hourCycles[formatted] || tmp2(15555).hourCycles[str];
-  if (!v001) {
-    const concat = "".concat;
-    v001 = tmp2(15555).hourCycles["".concat("", formatted, "-001")];
-  }
-  if (!v001) {
-    v001 = tmp2(15555).hourCycles["001"];
-  }
-  const tmp2Result = _mod1174;
-  return tmp2Result.__spreadArray([], v001, true);
-};
-export const getTimeZonePreferenceForRegion = function getTimeZonePreferenceForRegion(region) {
-  const formatted = region.toLowerCase();
-  const items = [];
-  if (timezones.timezones[formatted]) {
-    const tmp2Result = _mod1174;
-    return tmp2Result.__spreadArray(items, timezones.timezones[formatted], true);
-  } else {
-    return items;
-  }
-};
-export const getWeekDataForRegion = function getWeekDataForRegion(region) {
-  let str = "";
-  if (region) {
-    str = region.toUpperCase();
-  }
-  const weekData = weekData2.weekData;
-  if (!str) {
-    str = "001";
-  }
-  const tmp3 = weekData[str] || weekData2.weekData["001"];
-  return tmp3;
-};
+export default { Z_NO_FLUSH: 0, Z_PARTIAL_FLUSH: 1, Z_SYNC_FLUSH: 2, Z_FULL_FLUSH: 3, Z_FINISH: 4, Z_BLOCK: 5, Z_TREES: 6, Z_OK: 0, Z_STREAM_END: 1, Z_NEED_DICT: 2, Z_ERRNO: -1, Z_STREAM_ERROR: -2, Z_DATA_ERROR: -3, Z_BUF_ERROR: -5, Z_NO_COMPRESSION: 0, Z_BEST_SPEED: 1, Z_BEST_COMPRESSION: 9, Z_DEFAULT_COMPRESSION: -1, Z_FILTERED: 1, Z_HUFFMAN_ONLY: 2, Z_RLE: 3, Z_FIXED: 4, Z_DEFAULT_STRATEGY: 0, Z_BINARY: 0, Z_TEXT: 1, Z_UNKNOWN: 2, Z_DEFLATED: 8 };

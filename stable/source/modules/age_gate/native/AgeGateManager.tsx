@@ -1,26 +1,29 @@
-// Module ID: 18773
-// Function ID: 18774
+// Module ID: 19385
+// Function ID: 19386
 // Name: AgeGateManager
-// Dependencies: [5, 4855, 4906, 5034, 1112, 1087, 7246, 6694, 6704, 18774, 2002, 1107, 2]
+// Dependencies: [5, 4863, 4917, 5045, 1097, 1072, 7287, 6734, 6744, 19386, 1994, 19390, 1092, 2]
 
-// Module 18773 (AgeGateManager)
-import AgeGateUtils from "AgeGateUtils" /* 6694 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6704 */;
+// Module 19385 (AgeGateManager)
+import AgeGateUtils from "AgeGateUtils" /* 6734 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6744 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 4855 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4906 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5034 */;
-import AgeGateConstants from "AgeGateConstants" /* 1112 */;
-import Constants from "Constants" /* 1087 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7246 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4917 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5045 */;
+import AgeGateConstants from "AgeGateConstants" /* 1097 */;
+import Constants from "Constants" /* 1072 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7287 */;
 import size from "module_2" /* 2 */;
+
+let c2, c3, closure_1, importDefault;
 
 let c10;
 let c9;
 let metroImportAll;
 let metroImportDefault;
-({ EXISTING_USER_AGE_GATE_MODAL_KEY: metroImportDefault, AgeGateSource: metroImportAll } = AgeGateConstants);
-({ ChannelTypes: c9, GuildNSFWContentLevel: c10 } = Constants);
+let unpackModuleId;
+({ EXISTING_USER_AGE_GATE_MODAL_KEY: metroImportDefault, AgeGateSource: metroImportAll, AgeGateType: c9 } = AgeGateConstants);
+({ ChannelTypes: c10, GuildNSFWContentLevel: unpackModuleId } = Constants);
 class AgeGateManager extends AutomaticLifecycleManager {
   constructor() {
     const applyArgumentsResult = HermesBuiltin.applyArguments(this, new.target);
@@ -52,21 +55,82 @@ class AgeGateManager extends AutomaticLifecycleManager {
     }
   }
   handleAgeGateModalOpen(source) {
-    let paths;
     source = source.source;
     const channelId = source.channelId;
-    let obj = ModalActionCreatorsDefault;
-    obj.pushLazy(_asyncToGenerator(async () => {
-      let c3;
-      let closure_1;
-      let value = tmp;
-      await value(c2[10])(c2[9], c2.paths);
-      value = arg1.default;
-      if (closure_129_0 === constants.AUTH) {
-        const obj = { animation: value(paths[11]).ModalAnimation.SLIDE_IN_OUT };
-        value.modalConfig = obj;
+    let obj = source(6734);
+    importDefault = obj.getAgeGateType(source);
+    let obj2 = ModalActionCreatorsDefault;
+    obj2.pushLazy(_asyncToGenerator(async (arg0, value) => {
+      if (c3 === 2) {
+        c3 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          const obj2 = { value, done: true };
+          return obj2;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c3 = 2;
+          if (0 === c2) {
+            if (arg0 === 1) {
+              c3 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c3 = 3;
+              const obj3 = { value, done: true };
+              return obj3;
+            } else {
+              closure_1 = tmp4;
+              value = undefined;
+              if (closure_1 === constants2.AGE_ASSURANCE) {
+                c2 = 2;
+                c3 = 1;
+                const obj4 = { value: value(c2[10])(c2[9], c2.paths), done: false };
+                return obj4;
+              } else {
+                c2 = 1;
+                c3 = 1;
+                const obj5 = { value: value(c2[10])(c2[11], c2.paths), done: false };
+                return obj5;
+              }
+            }
+          } else {
+            if (1 === c2) {
+              if (arg0 === 1) {
+                c3 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c3 = 3;
+                const obj6 = { value, done: true };
+                return obj6;
+              }
+            } else if (arg0 === 1) {
+              c3 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c3 = 3;
+              const obj = { value, done: true };
+              return obj;
+            }
+            value = value.default;
+            if (closure_129_0 === constants.AUTH) {
+              const obj7 = { animation: value(c2[12]).ModalAnimation.SLIDE_IN_OUT };
+              value.modalConfig = obj7;
+            }
+            c3 = 3;
+            const obj8 = { value, done: true };
+            return obj8;
+          }
+        } catch (tmp23) {
+          c3 = 3;
+          throw tmp23;
+        }
       }
-      return value;
     }), { source, channelId }, closure_7);
   }
   handleAgeGateModalClose() {
@@ -76,7 +140,7 @@ class AgeGateManager extends AutomaticLifecycleManager {
   handleGuildUpdate(guild) {
     guild = guild.guild;
     const guildId = SelectedGuildStore.getGuildId();
-    const tmp2 = null != guildId && guild.id === guildId && guild.owner_configured_content_level === constants2.AGE_RESTRICTED;
+    const tmp2 = null != guildId && guild.id === guildId && guild.owner_configured_content_level === unpackModuleId.AGE_RESTRICTED;
     if (tmp2) {
       const obj = AgeGateUtils;
       obj.maybeShowAgeGate(guild.id, null);

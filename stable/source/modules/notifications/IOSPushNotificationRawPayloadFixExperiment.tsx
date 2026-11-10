@@ -1,11 +1,11 @@
-// Module ID: 6526
-// Function ID: 6527
+// Module ID: 6566
+// Function ID: 6567
 // Name: IOSPushNotificationRawPayloadFixExperiment
-// Dependencies: [1455, 2]
+// Dependencies: [1447, 2]
 // Exports: isIOSPushNotificationRawPayloadFixExperimentEnabled
 
-// Module 6526 (IOSPushNotificationRawPayloadFixExperiment)
-import ApexExperiment from "ApexExperiment" /* 1455 */;
+// Module 6566 (IOSPushNotificationRawPayloadFixExperiment)
+import ApexExperiment from "ApexExperiment" /* 1447 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -16,9 +16,9 @@ const config = ApexExperiment.createApexExperiment(obj);
 let enabled = null;
 const result = size.fileFinishedImporting("modules/notifications/IOSPushNotificationRawPayloadFixExperiment.tsx");
 
-export const isIOSPushNotificationRawPayloadFixExperimentEnabled = function isIOSPushNotificationRawPayloadFixExperimentEnabled() {
+export function isIOSPushNotificationRawPayloadFixExperimentEnabled() {
   if (null == enabled) {
     enabled = config.getConfig({ location: "isIOSPushNotificationRawPayloadFixExperiment" }).enabled;
   }
   return enabled;
-};
+}

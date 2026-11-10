@@ -1,17 +1,17 @@
-// Module ID: 9335
-// Function ID: 9336
+// Module ID: 9373
+// Function ID: 9374
 // Name: SKUUtils
-// Dependencies: [32, 1087, 5039, 1128, 6415, 1384, 2049, 2]
+// Dependencies: [32, 1072, 5050, 1113, 6455, 1375, 2042, 2]
 // Exports: canUserInstall, getGenreIdFromURLSlug, getGenreText, getGenreURLSlugFromId, getReadablePreorderReleaseDate, getSKUIdFromURL, isThirdPartySKU
 
-// Module 9335 (SKUUtils)
-import intl71 from "intl" /* 1128 */;
-import PlatformUtils from "PlatformUtils" /* 1384 */;
-import _modDef2049 from "module_2049" /* 2049 */;
-import matchPathCompat from "matchPathCompat" /* 5039 */;
-import StoreUtils from "StoreUtils" /* 6415 */;
+// Module 9373 (SKUUtils)
+import intl71 from "intl" /* 1113 */;
+import PlatformUtils from "PlatformUtils" /* 1375 */;
+import _modDef2042 from "module_2042" /* 2042 */;
+import matchPathCompat from "matchPathCompat" /* 5050 */;
+import StoreUtils from "StoreUtils" /* 6455 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import Constants from "Constants" /* 1087 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -36,7 +36,7 @@ const item = entries.forEach((item) => {
 const items = [["YYYY-MM-DD", "MMMM DD, Y"], ["YYYY-MM", "MMMM Y"], ["MM-DD", "MMMM DD"], ["MM", "MMMM"], ["YYYY", "Y"]];
 let result = size.fileFinishedImporting("utils/SKUUtils.tsx");
 
-export const getSKUIdFromURL = function getSKUIdFromURL(pathname) {
+export function getSKUIdFromURL(pathname) {
   const obj = matchPathCompat;
   const obj2 = { path: metroRequire.APPLICATION_STORE_LISTING_SKU(":skuId", ":slug") };
   const matchPathResult = obj.matchPath(pathname, obj2);
@@ -45,14 +45,14 @@ export const getSKUIdFromURL = function getSKUIdFromURL(pathname) {
     skuId = matchPathResult.params.skuId;
   }
   return skuId;
-};
-export const getGenreURLSlugFromId = function getGenreURLSlugFromId(arg0) {
+}
+export function getGenreURLSlugFromId(arg0) {
   return closure_9[arg0];
-};
-export const getGenreIdFromURLSlug = function getGenreIdFromURLSlug(arg0) {
+}
+export function getGenreIdFromURLSlug(arg0) {
   return closure_8[arg0];
-};
-export const getGenreText = function getGenreText(arg0) {
+}
+export function getGenreText(arg0) {
   const tmp = GameGenres;
   if (GameGenres.ACTION === arg0) {
     const intl70 = intl71.intl;
@@ -265,8 +265,8 @@ export const getGenreText = function getGenreText(arg0) {
     const intl = intl71.intl;
     return intl.string(intl71.t["9b4eUr"]);
   }
-};
-export const canUserInstall = function canUserInstall(type) {
+}
+export function canUserInstall(type) {
   const nativePlatformTypeToSKUOperatingSystem = StoreUtils.nativePlatformTypeToSKUOperatingSystem;
   StoreUtils;
   const obj = PlatformUtils;
@@ -277,8 +277,8 @@ export const canUserInstall = function canUserInstall(type) {
     hasItem = supportedOperatingSystems.includes(result);
   }
   return hasItem;
-};
-export const getReadablePreorderReleaseDate = function getReadablePreorderReleaseDate(arg0) {
+}
+export function getReadablePreorderReleaseDate(arg0) {
   let preorderApproximateReleaseDate;
   let preorderReleaseAt;
   let tmp3;
@@ -293,7 +293,7 @@ export const getReadablePreorderReleaseDate = function getReadablePreorderReleas
     if (0 < items.length) {
       [tmp3, tmp4] = items[num];
       _slicedToArray(items[num], 2);
-      const obj = _modDef2049(preorderApproximateReleaseDate, tmp3, true);
+      const obj = _modDef2042(preorderApproximateReleaseDate, tmp3, true);
       while (!obj.isValid()) {
         num = num + 1;
       }
@@ -301,7 +301,7 @@ export const getReadablePreorderReleaseDate = function getReadablePreorderReleas
     }
     return preorderApproximateReleaseDate;
   }
-};
-export const isThirdPartySKU = function isThirdPartySKU(arg0) {
+}
+export function isThirdPartySKU(arg0) {
   return arg0 === metroImportDefault.SOCIAL_LAYER_GAME_ITEM;
-};
+}

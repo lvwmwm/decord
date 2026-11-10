@@ -1,17 +1,17 @@
-// Module ID: 19050
-// Function ID: 19051
+// Module ID: 19678
+// Function ID: 19679
 // Name: BaseActionInfo
-// Dependencies: [4855, 4945, 1392, 12844, 4917, 1128, 5636, 2]
+// Dependencies: [4863, 4956, 1383, 13292, 4928, 1113, 5652, 2]
 // Exports: getBaseActionInfo
 
-// Module 19050 (BaseActionInfo)
-import intl13 from "intl" /* 1128 */;
-import GuildDisableCommunicationConstants from "GuildDisableCommunicationConstants" /* 4917 */;
-import useChannelName from "useChannelName" /* 5636 */;
-import ChannelStore from "ChannelStore" /* 4855 */;
-import RelationshipStore from "RelationshipStore" /* 4945 */;
-import UserStore from "UserStore" /* 1392 */;
-import Constants from "Constants" /* 12844 */;
+// Module 19678 (BaseActionInfo)
+import intl13 from "intl" /* 1113 */;
+import GuildDisableCommunicationConstants from "GuildDisableCommunicationConstants" /* 4928 */;
+import useChannelName from "useChannelName" /* 5652 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import RelationshipStore from "RelationshipStore" /* 4956 */;
+import UserStore from "UserStore" /* 1383 */;
+import Constants from "Constants" /* 13292 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -20,7 +20,7 @@ let metroRequire;
 const getFriendlyDurationString = GuildDisableCommunicationConstants.getFriendlyDurationString;
 const result = size.fileFinishedImporting("modules/guild_automod/BaseActionInfo.tsx");
 
-export const getBaseActionInfo = function getBaseActionInfo(actionType, metadata, triggerType) {
+export function getBaseActionInfo(actionType, metadata, triggerType) {
   let formatResult;
   let str2;
   if (hasOwnProperty.BLOCK_MESSAGE !== actionType) {
@@ -133,4 +133,4 @@ export const getBaseActionInfo = function getBaseActionInfo(actionType, metadata
     }
   }
   flag = true;
-};
+}

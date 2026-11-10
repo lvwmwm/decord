@@ -1,18 +1,18 @@
-// Module ID: 6893
-// Function ID: 6894
+// Module ID: 6934
+// Function ID: 6935
 // Name: Spellchecker
-// Dependencies: [5, 32, 2068, 3, 4817, 6894, 6895, 6896, 6897, 1388, 12, 2036, 2]
+// Dependencies: [5, 32, 2062, 3, 4825, 6935, 6936, 6937, 6938, 1379, 12, 2029, 2]
 // Exports: install
 
-// Module 6893 (Spellchecker)
+// Module 6934 (Spellchecker)
 import LoggerDefault from "Logger" /* 3 */;
-import DOMUtils from "DOMUtils" /* 2036 */;
-import fallbackLocalesDefault from "fallbackLocales" /* 6894 */;
-import _mod6895 from "module_6895" /* 6895 */;
+import DOMUtils from "DOMUtils" /* 2029 */;
+import fallbackLocalesDefault from "fallbackLocales" /* 6935 */;
+import _mod6936 from "module_6936" /* 6936 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import LocaleStore from "LocaleStore" /* 2068 */;
-import DiscordNative from "DiscordNative" /* 4817 */;
+import LocaleStore from "LocaleStore" /* 2062 */;
+import DiscordNative from "DiscordNative" /* 4825 */;
 import module_12 from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 
@@ -71,7 +71,7 @@ class Spellchecker {
       if (str2 == null) {
         str2 = str;
       }
-      obj = _mod6895;
+      obj = _mod6936;
       const parsed = obj.parse(str2.replace(/[_-]/g, "-"));
       if (null != parsed) {
         if (null != parsed.langtag.language) {
@@ -203,7 +203,7 @@ class Spellchecker {
       if (str2 == null) {
         str2 = str;
       }
-      obj = _mod6895;
+      obj = _mod6936;
       const parsed = obj.parse(str2.replace(/[_-]/g, "-"));
       if (null != parsed) {
         if (null != parsed.langtag.language) {
@@ -233,7 +233,7 @@ class Spellchecker {
       }
       logger.error("" + str2 + " is not a valid locale.");
     });
-    set = new Set(mapped.filter(mapped1(1388).isNotNullish));
+    set = new Set(mapped.filter(mapped1(1379).isNotNullish));
     const fromResult = from(set);
     if (0 !== fromResult.length) {
       mapped1 = fromResult.map((item) => {
@@ -331,6 +331,6 @@ let closure_9 = module_12.debounce((detectLanguage, hasAttribute) => {
 let result = size.fileFinishedImporting("lib/spellcheck/Spellchecker.tsx");
 
 export { Spellchecker };
-export const install = function install() {
+export function install() {
   return obj(...arguments);
-};
+}

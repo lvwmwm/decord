@@ -1,21 +1,20 @@
-// Module ID: 9442
-// Function ID: 9443
+// Module ID: 9513
+// Function ID: 9514
 // Name: NameplateDummyUserPreview
-// Dependencies: [19, 17, 1207, 21, 1202, 587, 5003, 558, 576, 5025, 504, 9443, 9445, 9446, 2]
+// Dependencies: [19, 17, 1192, 21, 1187, 575, 5014, 504, 5036, 9514, 9516, 9517, 2]
+// Exports: NameplateDummyUserPreview
 
-// Module 9442 (NameplateDummyUserPreview)
+// Module 9513 (NameplateDummyUserPreview)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1202 */;
-import themes from "themes" /* 5025 */;
-import NameplateDefault from "Nameplate" /* 9443 */;
+import nativeDefault from "native" /* 575 */;
+import native from "native" /* 1187 */;
+import themes from "themes" /* 5036 */;
+import NameplateDefault from "Nameplate" /* 9514 */;
 import react from "react" /* 19 */;
-import ThemeStore from "ThemeStore" /* 1207 */;
+import ThemeStore from "ThemeStore" /* 1192 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5003 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -40,7 +39,7 @@ let closure_8 = createStyles.createStyles((arg0, arg1) => {
   obj3 = { borderRadius: nativeDefault.radii.round, marginRight: obj[arg0].avatarMarginRight, backgroundColor: str };
   str = "transparent";
   if (arg1) {
-    str = tmp2(587).colors.BORDER_STRONG;
+    str = tmp2(575).colors.BORDER_STRONG;
   }
   num = 0.5;
   if (arg1) {
@@ -50,135 +49,10 @@ let closure_8 = createStyles.createStyles((arg0, arg1) => {
   ({ borderRadius: nativeDefault.radii.sm });
   return obj;
 });
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function NameplateDummyUserPreview(arg0) {
-  let animate;
-  let avatarSize;
-  let hideAvatar;
-  let items1;
-  let items2;
-  let nameplate;
-  let style;
-  let theme;
-  let tmp7;
-  let tmp8;
-  let width;
-  let obj = react2;
-  const cResult = obj.c(26);
-  ({ width, hideAvatar, avatarSize, nameplate, style, animate } = arg0);
-  const tmp4 = undefined !== hideAvatar && hideAvatar;
-  if (undefined === avatarSize) {
-    avatarSize = tmp(1202).AvatarSizes.NORMAL;
-  }
-  const tmp6 = closure_8(avatarSize, tmp4);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [ThemeStore];
-    const fn = function p() {
-      const obj = themes;
-      return obj.isThemeDark(theme.theme);
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-  } else {
-    [tmp7, tmp8] = cResult;
-  }
-  get_initialized;
-  if (cResult[2] === style) {
-    let tmp12;
-    if (cResult[3] === tmp6.container) {
-      tmp12 = cResult[4];
-    }
-    if (cResult[5] === (undefined !== animate && animate)) {
-      if (cResult[6] === nameplate) {
-        let tmp13;
-        if (cResult[7] === tmp6.nameplate) {
-          tmp13 = cResult[8];
-        }
-        const tmp17 = importDefault(tmp11 ? 9445 : 9446);
-        if (cResult[9] === avatarSize) {
-          if (cResult[10] === tmp6.avatar) {
-            let tmp18;
-            if (cResult[11] === tmp17) {
-              tmp18 = cResult[12];
-            }
-            if (cResult[13] === tmp6.avatarContainer) {
-              let tmp21;
-              let tmp25;
-              if (cResult[14] === tmp18) {
-                tmp21 = cResult[15];
-              }
-              if (cResult[16] !== width) {
-                const obj2 = { width };
-                cResult[16] = width;
-                cResult[17] = obj2;
-                tmp25 = obj2;
-              } else {
-                tmp25 = cResult[17];
-              }
-              if (cResult[18] === tmp6.placeholderBar) {
-                let tmp26;
-                if (cResult[19] === tmp25) {
-                  tmp26 = cResult[20];
-                }
-                if (cResult[21] === tmp21) {
-                  if (cResult[22] === tmp26) {
-                    if (cResult[23] === tmp12) {
-                      let tmp30;
-                      if (cResult[24] === tmp13) {
-                        tmp30 = cResult[25];
-                      }
-                      return tmp30;
-                    }
-                  }
-                }
-                const obj3 = { style: tmp12, children: items1 };
-                items1 = [tmp13, tmp21, tmp26];
-                const tmp33 = metroRequire(View, obj3);
-                cResult[21] = tmp21;
-                cResult[22] = tmp26;
-                cResult[23] = tmp12;
-                cResult[24] = tmp13;
-                cResult[25] = tmp33;
-                tmp30 = tmp33;
-              }
-              const obj4 = { style: items2 };
-              items2 = [tmp6.placeholderBar, tmp25];
-              const tmp29 = hasOwnProperty(View, obj4);
-              cResult[18] = tmp6.placeholderBar;
-              cResult[19] = tmp25;
-              cResult[20] = tmp29;
-              tmp26 = tmp29;
-            }
-            const obj5 = { style: tmp6.avatarContainer, children: tmp18 };
-            const tmp24 = hasOwnProperty(View, obj5);
-            cResult[13] = tmp6.avatarContainer;
-            cResult[14] = tmp18;
-            cResult[15] = tmp24;
-            tmp21 = tmp24;
-          }
-        }
-        const obj6 = { source: tmp17, size: avatarSize, "aria-hidden": true, style: tmp6.avatar };
-        const tmp20 = hasOwnProperty(native.Avatar, obj6);
-        cResult[9] = avatarSize;
-        cResult[10] = tmp6.avatar;
-        cResult[11] = tmp17;
-        cResult[12] = tmp20;
-        tmp18 = tmp20;
-      }
-    }
-    const obj7 = { nameplate, fullOpacity: true, style: tmp6.nameplate, animate: undefined !== animate && animate };
-    const tmp16 = hasOwnProperty(NameplateDefault, obj7);
-    cResult[5] = undefined !== animate && animate;
-    cResult[6] = nameplate;
-    cResult[7] = tmp6.nameplate;
-    cResult[8] = tmp16;
-    tmp13 = tmp16;
-  }
-  const items3 = [tmp6.container, style];
-  cResult[2] = style;
-  cResult[3] = tmp6.container;
-  cResult[4] = items3;
-  tmp12 = items3;
-}) : (function NameplateDummyUserPreview(hideAvatar) {
+const result = size.fileFinishedImporting("modules/collectibles/nameplates/native/NameplateDummyUserPreview.tsx");
+
+export { NAMEPLATE_DUMMY_USER_PREVIEW_CONFIG };
+export function NameplateDummyUserPreview(hideAvatar) {
   let Avatar;
   let animate;
   let items1;
@@ -214,15 +88,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function NameplateDum
   const obj3 = { nameplate, fullOpacity: true, style: tmp3.nameplate, animate };
   items2[0] = hasOwnProperty(NameplateDefault, obj3);
   const obj4 = { style: tmp3.avatarContainer, children: hasOwnProperty(Avatar, obj5) };
-  obj5 = { source: importDefault(stateFromStores ? 9445 : 9446), size: NORMAL, "aria-hidden": true, style: tmp3.avatar };
+  obj5 = { source: importDefault(stateFromStores ? 9516 : 9517), size: NORMAL, "aria-hidden": true, style: tmp3.avatar };
   Avatar = native.Avatar;
   items2[1] = hasOwnProperty(View, obj4);
   const obj6 = { style: items3 };
   items3 = [tmp3.placeholderBar, { width }];
   items2[2] = hasOwnProperty(View, obj6);
   return metroRequire(View, obj2);
-});
-const result = size.fileFinishedImporting("modules/collectibles/nameplates/native/NameplateDummyUserPreview.tsx");
-
-export { NAMEPLATE_DUMMY_USER_PREVIEW_CONFIG };
-export const NameplateDummyUserPreview = tmp4;
+}

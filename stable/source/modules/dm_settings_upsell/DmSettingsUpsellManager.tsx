@@ -1,14 +1,14 @@
-// Module ID: 18814
-// Function ID: 18815
+// Module ID: 19431
+// Function ID: 19432
 // Name: DmSettingsUpsellManager
-// Dependencies: [1087, 7246, 18815, 1297, 2]
+// Dependencies: [1072, 7287, 19432, 1282, 2]
 // Exports: acknowledgeDmSettingsUpsell
 
-// Module 18814 (DmSettingsUpsellManager)
-import Constants from "Constants" /* 1087 */;
-import HTTPUtils from "HTTPUtils" /* 1297 */;
-import DmSettingsUpsellActionCreatorsDefault from "DmSettingsUpsellActionCreators" /* 18815 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7246 */;
+// Module 19431 (DmSettingsUpsellManager)
+import Constants from "Constants" /* 1072 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
+import DmSettingsUpsellActionCreatorsDefault from "DmSettingsUpsellActionCreators" /* 19432 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7287 */;
 import size from "module_2" /* 2 */;
 
 const Endpoints = Constants.Endpoints;
@@ -28,8 +28,8 @@ const dmSettingsUpsellManager = new DmSettingsUpsellManager();
 let result = size.fileFinishedImporting("modules/dm_settings_upsell/DmSettingsUpsellManager.tsx");
 
 export default dmSettingsUpsellManager;
-export const acknowledgeDmSettingsUpsell = function acknowledgeDmSettingsUpsell(guildId) {
+export function acknowledgeDmSettingsUpsell(guildId) {
   const HTTP = HTTPUtils.HTTP;
   const obj = { url: Endpoints.DM_SETTINGS_UPSELL_ACK(guildId), rejectWithError: false };
   return HTTP.post(obj);
-};
+}

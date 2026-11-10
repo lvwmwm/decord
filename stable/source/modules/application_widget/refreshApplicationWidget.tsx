@@ -1,12 +1,12 @@
-// Module ID: 12041
-// Function ID: 12042
+// Module ID: 12207
+// Function ID: 12208
 // Name: refreshApplicationWidget
-// Dependencies: [5, 1087, 10821, 1297, 2]
+// Dependencies: [5, 1072, 5144, 1282, 2]
 // Exports: refreshApplicationWidget
 
-// Module 12041 (refreshApplicationWidget)
-import Constants from "Constants" /* 1087 */;
-import utils_FunctionUtils from "utils/FunctionUtils" /* 10821 */;
+// Module 12207 (refreshApplicationWidget)
+import Constants from "Constants" /* 1072 */;
+import utils_FunctionUtils from "utils/FunctionUtils" /* 5144 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -16,7 +16,7 @@ const Endpoints = Constants.Endpoints;
 const promiseDeduper = new utils_FunctionUtils.PromiseDeduper();
 const result = size.fileFinishedImporting("modules/application_widget/refreshApplicationWidget.tsx");
 
-export const refreshApplicationWidget = function refreshApplicationWidget(play) {
+export function refreshApplicationWidget(play) {
   let closure_0 = play;
   return promiseDeduper.one(play, _asyncToGenerator(async (arg0, value) => {
     let closure_0;
@@ -60,7 +60,7 @@ export const refreshApplicationWidget = function refreshApplicationWidget(play) 
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -113,4 +113,4 @@ export const refreshApplicationWidget = function refreshApplicationWidget(play) 
       }
     }
   }));
-};
+}

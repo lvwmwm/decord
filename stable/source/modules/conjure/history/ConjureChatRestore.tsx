@@ -1,15 +1,15 @@
-// Module ID: 12398
-// Function ID: 12399
+// Module ID: 12645
+// Function ID: 12646
 // Name: ConjureChatRestore
 // Dependencies: [2]
 // Exports: proposalRestoreEntry, turnRestoreEntry
 
-// Module 12398 (ConjureChatRestore)
+// Module 12645 (ConjureChatRestore)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/history/ConjureChatRestore.tsx");
 
-export const turnRestoreEntry = function turnRestoreEntry(message) {
+export function turnRestoreEntry(message) {
   let date;
   let tmp = null;
   if ("assistant" === message.role) {
@@ -24,7 +24,7 @@ export const turnRestoreEntry = function turnRestoreEntry(message) {
     }
   }
   return tmp;
-};
-export const proposalRestoreEntry = function proposalRestoreEntry(sha) {
+}
+export function proposalRestoreEntry(sha) {
   return { sha: sha.sha, authorName: "", authorEmail: "", authoredAt: sha.authored_at, subject: sha.subject };
-};
+}

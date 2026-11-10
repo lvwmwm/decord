@@ -1,37 +1,36 @@
-// Module ID: 5743
-// Function ID: 5744
+// Module ID: 5760
+// Function ID: 5761
 // Name: AppAnalyticsUtils
-// Dependencies: [4859, 502, 4855, 4933, 5226, 4915, 4909, 4877, 2014, 4935, 5744, 5746, 4945, 4906, 5034, 5662, 1087, 4862, 4940, 1099, 15115, 1267, 12, 2]
+// Dependencies: [4867, 502, 4863, 4944, 5242, 4926, 4920, 4885, 2006, 4946, 5761, 5764, 4956, 4917, 5045, 5679, 1072, 4870, 4951, 1084, 15657, 1252, 12, 5762, 2]
 // Exports: collectChannelAnalyticsMetadataFromId, collectStaticChannelRouteAnalyticsMetadata, collectVoiceAnalyticsMetadata, getCustomStatusMetadata, getRecipientFriendCounts, getVoiceStateMetadata, trackWithMetadata
 
-// Module 5743 (AppAnalyticsUtils)
-import BigFlagUtilsAll from "BigFlagUtils" /* 1099 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import ChannelRecord from "ChannelRecord" /* 4859 */;
-import ChannelConstants from "ChannelConstants" /* 4862 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4940 */;
+// Module 5760 (AppAnalyticsUtils)
+import BigFlagUtilsAll from "BigFlagUtils" /* 1084 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import ChannelRecord from "ChannelRecord" /* 4867 */;
+import ChannelConstants from "ChannelConstants" /* 4870 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4951 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4855 */;
-import GuildChannelStore_mod from "GuildChannelStore" /* 4933 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 5226 */;
-import GuildMemberStore from "GuildMemberStore" /* 4915 */;
-import GuildRoleStore from "GuildRoleStore" /* 4909 */;
-import GuildStore from "GuildStore" /* 4877 */;
-import MediaEngineStore from "MediaEngineStore" /* 2014 */;
-import PermissionStore from "PermissionStore" /* 4935 */;
-import PresenceStore from "PresenceStore" /* 5744 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5746 */;
-import RelationshipStore from "RelationshipStore" /* 4945 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4906 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5034 */;
-import VoiceStateStore from "VoiceStateStore" /* 5662 */;
-import Constants from "Constants" /* 1087 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import GuildChannelStore_mod from "GuildChannelStore" /* 4944 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 5242 */;
+import GuildMemberStore from "GuildMemberStore" /* 4926 */;
+import GuildRoleStore from "GuildRoleStore" /* 4920 */;
+import GuildStore from "GuildStore" /* 4885 */;
+import MediaEngineStore from "MediaEngineStore" /* 2006 */;
+import PermissionStore from "PermissionStore" /* 4946 */;
+import PresenceStore from "PresenceStore" /* 5761 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5764 */;
+import RelationshipStore from "RelationshipStore" /* 4956 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4917 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5045 */;
+import VoiceStateStore from "VoiceStateStore" /* 5679 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 let closure_22;
 let closure_23;
 let closure_24;
-let closure_25;
 let metroImportAll;
 let metroImportDefault;
 function collectGuildAnalyticsMetadata(guildId) {
@@ -138,7 +137,7 @@ function collectChannelAnalyticsMetadata(channel) {
     return obj4;
   }
 }
-function trackWithMetadata(TEXT_AREA_CTA_CLICKED, fileSizeLimitEventProperties, hasItem) {
+function trackWithMetadata(IAR_MODAL_OPEN, fileSizeLimitEventProperties, hasItem) {
   let obj = fileSizeLimitEventProperties;
   if (fileSizeLimitEventProperties === undefined) {
     obj = {};
@@ -148,7 +147,7 @@ function trackWithMetadata(TEXT_AREA_CTA_CLICKED, fileSizeLimitEventProperties, 
     flag = false;
   }
   const obj2 = AnalyticsUtilsDefault;
-  if (!obj2.isThrottled(TEXT_AREA_CTA_CLICKED)) {
+  if (!obj2.isThrottled(IAR_MODAL_OPEN)) {
     let guild_id;
     let channel_id;
     let tmp12;
@@ -201,7 +200,7 @@ function trackWithMetadata(TEXT_AREA_CTA_CLICKED, fileSizeLimitEventProperties, 
         const merged2 = Object.assign(tmp23);
         const obj5 = { flush: flag };
         const tmpResult = AnalyticsUtilsDefault;
-        tmpResult.track(TEXT_AREA_CTA_CLICKED, obj3, obj5);
+        tmpResult.track(IAR_MODAL_OPEN, obj3, obj5);
       }
     }
     tmp23 = collectChannelAnalyticsMetadata(channel);
@@ -227,7 +226,7 @@ const THREAD_CHANNEL_TYPES = ChannelRecord.THREAD_CHANNEL_TYPES;
 let GuildChannelStore = GuildChannelStore_mod;
 ({ GUILD_SELECTABLE_CHANNELS_KEY: metroImportDefault, GUILD_VOCAL_CHANNELS_KEY: metroImportAll } = GuildChannelStore);
 GuildChannelStore = GuildChannelStore_mod;
-({ GuildFeatures: closure_22, AnalyticsLocations: closure_23, Permissions: closure_24, ActivityTypes: closure_25 } = Constants);
+({ GuildFeatures: closure_22, AnalyticsLocations: closure_23, Permissions: closure_24 } = Constants);
 const isStaticChannelRoute = ChannelConstants.isStaticChannelRoute;
 const result = size.fileFinishedImporting("modules/app_analytics/AppAnalyticsUtils.tsx");
 
@@ -236,7 +235,7 @@ export { collectGuildAnalyticsMetadata };
 export function collectStaticChannelRouteAnalyticsMetadata(arg0, channel_static_route) {
   return { channel_static_route, channel_hidden: false };
 }
-export const collectChannelAnalyticsMetadataFromId = function collectChannelAnalyticsMetadataFromId(channelId) {
+export function collectChannelAnalyticsMetadataFromId(channelId) {
   if (null == channelId) {
     return null;
   } else {
@@ -247,9 +246,9 @@ export const collectChannelAnalyticsMetadataFromId = function collectChannelAnal
     }
     return tmp3;
   }
-};
+}
 export { collectChannelAnalyticsMetadata };
-export const collectVoiceAnalyticsMetadata = function collectVoiceAnalyticsMetadata(id) {
+export function collectVoiceAnalyticsMetadata(id) {
   let mediaSessionId;
   if (null == id) {
     return null;
@@ -278,14 +277,14 @@ export const collectVoiceAnalyticsMetadata = function collectVoiceAnalyticsMetad
         }
       });
       const merged = Object.assign(obj3);
-      const obj4 = id(15115);
+      const obj4 = id(15657);
       const merged1 = Object.assign(obj4.getVoiceAnalyticsMetadataAdditional());
       return obj;
     }
   }
-};
+}
 export { trackWithMetadata };
-export const getRecipientFriendCounts = function getRecipientFriendCounts(recipients) {
+export function getRecipientFriendCounts(recipients) {
   let num = 0;
   const tmp = recipients[Symbol.iterator]();
   while (tmp !== undefined) {
@@ -295,18 +294,18 @@ export const getRecipientFriendCounts = function getRecipientFriendCounts(recipi
     continue;
   }
   return { friendCount: num, nonFriendCount: recipients.length - num };
-};
+}
 export { getVoiceStateMetadata };
-export const getCustomStatusMetadata = function getCustomStatusMetadata(arg0, arg1) {
+export function getCustomStatusMetadata(arg0, arg1) {
   let closure_0 = arg1;
   const obj = { custom_status_count: 0 };
   let tmp = obj(12);
   const tmpResult = tmp(VoiceStateStore.getVoiceStates(arg0));
   const item = tmpResult.forEach((channelId) => {
-    const tmp = channelId.channelId === closure_0 && null != PresenceStore.findActivity(channelId.userId, (type) => type.type === constants.CUSTOM_STATUS);
+    const tmp = channelId.channelId === closure_0 && null != PresenceStore.findActivity(channelId.userId, (type) => type.type === closure_1_0(closure_1_3[23]).ActivityTypes.CUSTOM_STATUS);
     if (tmp) {
       obj.custom_status_count = obj.custom_status_count + 1;
     }
   });
   return obj;
-};
+}

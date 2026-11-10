@@ -1,11 +1,11 @@
-// Module ID: 13556
-// Function ID: 13557
+// Module ID: 14173
+// Function ID: 14174
 // Name: shouldWarnAuthorizedAppTwoWay
-// Dependencies: [13557, 2]
+// Dependencies: [14174, 2]
 // Exports: default, useShouldWarnAuthorizedAppTwoWay
 
-// Module 13556 (shouldWarnAuthorizedAppTwoWay)
-import ConsoleOAuthApplications from "ConsoleOAuthApplications" /* 13557 */;
+// Module 14173 (shouldWarnAuthorizedAppTwoWay)
+import ConsoleOAuthApplications from "ConsoleOAuthApplications" /* 14174 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/user_settings/authorized_apps/shouldWarnAuthorizedAppTwoWay.tsx");
@@ -18,11 +18,11 @@ export default function isAuthorizedAppTwoWay(arg0) {
   }
   return hasItem;
 };
-export const useShouldWarnAuthorizedAppTwoWay = function useShouldWarnAuthorizedAppTwoWay(id) {
+export function useShouldWarnAuthorizedAppTwoWay(id) {
   let hasItem = ConsoleOAuthApplications.ConsoleOAuthApplications.XBOX_APPLICATION_ID === id;
   if (!hasItem) {
     const PLAYSTATION_APPLICATION_IDS = ConsoleOAuthApplications.ConsoleOAuthApplicationsSets.PLAYSTATION_APPLICATION_IDS;
     hasItem = PLAYSTATION_APPLICATION_IDS.has(id);
   }
   return hasItem;
-};
+}

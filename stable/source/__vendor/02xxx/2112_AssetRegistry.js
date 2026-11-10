@@ -1,10 +1,10 @@
 // Module ID: 2112
 // Function ID: 2113
 // Name: AssetRegistry
-// Dependencies: [1134]
+// Dependencies: [1119]
 
 // Module 2112 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1134 */;
+import AssetRegistry from "AssetRegistry" /* 1119 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/intl", scales: [1], hash: "0297621b6c1eb75f292426d8c066df33", name: "Mana.compiled.messages", type: "jsona" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9hZHM=", scales: [1], hash: "81fffec8326ca22f17b5fe385c960c0d", name: "el.messages.81fffec8326ca22f17b5fe385c960c0d.compiled.messages", type: "jsona" });

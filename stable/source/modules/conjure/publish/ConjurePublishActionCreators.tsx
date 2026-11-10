@@ -1,21 +1,21 @@
-// Module ID: 10818
-// Function ID: 10819
+// Module ID: 10941
+// Function ID: 10942
 // Name: ConjurePublishActionCreators
-// Dependencies: [5, 1392, 6805, 10746, 1087, 10750, 1297, 10752, 584, 8702, 10819, 10772, 10822, 2]
+// Dependencies: [5, 1383, 6844, 10867, 1072, 10873, 1282, 10875, 572, 8752, 10942, 10900, 10944, 2]
 // Exports: refreshPreviewApplication, refreshPublishedProject, trackPublishFailed, unpublishUserApp
 
-// Module 10818 (ConjurePublishActionCreators)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1087 */;
-import ConjureAnalytics from "ConjureAnalytics" /* 10750 */;
-import ConjureActionCreators from "ConjureActionCreators" /* 10752 */;
-import ConjurePreviewActionCreators from "ConjurePreviewActionCreators" /* 10772 */;
-import ApplicationWidgetConfigActions from "ApplicationWidgetConfigActions" /* 10819 */;
-import conjureLiveRelaunch from "conjureLiveRelaunch" /* 10822 */;
+// Module 10941 (ConjurePublishActionCreators)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import Constants from "Constants" /* 1072 */;
+import ConjureAnalytics from "ConjureAnalytics" /* 10873 */;
+import ConjureActionCreators from "ConjureActionCreators" /* 10875 */;
+import ConjurePreviewActionCreators from "ConjurePreviewActionCreators" /* 10900 */;
+import ApplicationWidgetConfigActions from "ApplicationWidgetConfigActions" /* 10942 */;
+import conjureLiveRelaunch from "conjureLiveRelaunch" /* 10944 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserStore from "UserStore" /* 1392 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6805 */;
-import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 10746 */;
+import UserStore from "UserStore" /* 1383 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6844 */;
+import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 10867 */;
 import size from "module_2" /* 2 */;
 
 let also_remove_preview_bot, closure_4, ok;
@@ -42,7 +42,7 @@ let obj = function _unpublishProject() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -61,7 +61,7 @@ let obj = function _unpublishProject() {
               ({ guildId: c1, alsoRemovePreviewBot: c2 } = closure_1);
               c6 = 1;
               c7 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "flexDirection", done: true };
             }
           } else if (1 === c6) {
             if (arg0 === 1) {
@@ -134,7 +134,7 @@ obj = function _unpublishUserApp() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -222,7 +222,7 @@ obj = function _refreshPublishedProject() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -260,7 +260,7 @@ obj = function _refreshPublishedProject() {
             obj8 = undefined;
             c4 = 1;
             c5 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "flexDirection", done: true };
           }
         } else if (1 === c4) {
           if (arg0 === 1) {
@@ -360,7 +360,7 @@ obj = function _refreshPublishedProject() {
             return obj;
           }
           c5 = 3;
-          return { value: "IconComponent", done: "+352" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp53) {
         c5 = 3;
@@ -389,7 +389,7 @@ obj = function _refreshPublishedApplication() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -431,7 +431,7 @@ obj = function _refreshPublishedApplication() {
               closure_132_14(applicationId, closure_1, closure_2);
             }
             c6 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp15) {
           c6 = 3;
@@ -462,7 +462,7 @@ function reloadAfterPublish(application_id, arg1, integrationInstalled) {
 const Endpoints = Constants.Endpoints;
 let result = size.fileFinishedImporting("modules/conjure/publish/ConjurePublishActionCreators.tsx");
 
-export const trackPublishFailed = function trackPublishFailed(projectId, message, isPreview) {
+export function trackPublishFailed(projectId, message, isPreview) {
   let str;
   const tmp = ConjureAnalytics;
   const trackConjureErrored = tmp.trackConjureErrored;
@@ -472,14 +472,14 @@ export const trackPublishFailed = function trackPublishFailed(projectId, message
     str = "-preview";
   }
   trackConjureErrored(projectId, obj);
-};
+}
 export { unpublishProject };
-export const unpublishUserApp = function unpublishUserApp() {
+export function unpublishUserApp() {
   return obj(...arguments);
-};
-export const refreshPublishedProject = function refreshPublishedProject() {
+}
+export function refreshPublishedProject() {
   return obj(...arguments);
-};
-export const refreshPreviewApplication = function refreshPreviewApplication(arg0) {
+}
+export function refreshPreviewApplication(arg0) {
   return refreshPublishedApplication(arg0, true, null);
-};
+}

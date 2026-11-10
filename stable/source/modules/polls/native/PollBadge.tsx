@@ -1,20 +1,19 @@
-// Module ID: 18153
-// Function ID: 18154
+// Module ID: 18735
+// Function ID: 18736
 // Name: PollBadge
-// Dependencies: [19, 17, 21, 5003, 587, 558, 576, 1202, 18154, 1128, 5266, 2]
+// Dependencies: [19, 17, 21, 5014, 575, 1187, 18736, 5624, 1113, 2]
+// Exports: default
 
-// Module 18153 (PollBadge)
+// Module 18735 (PollBadge)
 import react_native from "react-native" /* 17 */;
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import intl2 from "intl" /* 1128 */;
-import native from "native" /* 1202 */;
-import Text_Text from "Text/Text" /* 5266 */;
-import AssetRegistryDefault from "AssetRegistry" /* 18154 */;
+import nativeDefault from "native" /* 575 */;
+import intl2 from "intl" /* 1113 */;
+import native from "native" /* 1187 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import AssetRegistryDefault from "AssetRegistry" /* 18736 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5003 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -25,70 +24,9 @@ const View = react_native.View;
 let obj = { container: obj2, text: { marginLeft: 4, textTransform: "uppercase" } };
 obj2 = { borderRadius: nativeDefault.radii.round, paddingHorizontal: 8, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, color: nativeDefault.colors.TEXT_MUTED, flexDirection: "row", alignItems: "center" };
 let closure_6 = createStyles.createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PollBadge(style) {
-  let items;
-  const obj = react2;
-  const cResult = obj.c(10);
-  style = style.style;
-  const tmp4 = closure_6();
-  if (cResult[0] === style) {
-    let tmp5;
-    let tmp7;
-    let tmp11;
-    let tmp13;
-    if (cResult[1] === tmp4.container) {
-      tmp5 = cResult[2];
-    }
-    const _Symbol = Symbol;
-    if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj2 = { size: native.IconSizes.EXTRA_SMALL_10, source: AssetRegistryDefault };
-      const Icon = tmp(1202).Icon;
-      const tmp10 = React3(Icon, obj2);
-      cResult[3] = tmp10;
-      tmp7 = tmp10;
-    } else {
-      tmp7 = cResult[3];
-    }
-    const _Symbol2 = Symbol;
-    const text = tmp4.text;
-    if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1128).intl;
-      const stringResult = intl.string(intl2.t.RgIi2B);
-      cResult[4] = stringResult;
-      tmp11 = stringResult;
-    } else {
-      tmp11 = cResult[4];
-    }
-    if (cResult[5] !== tmp4.text) {
-      const obj3 = { style: text, variant: "text-xs/semibold", children: tmp11 };
-      const tmp15 = React3(Text_Text.Text, obj3);
-      cResult[5] = tmp4.text;
-      cResult[6] = tmp15;
-      tmp13 = tmp15;
-    } else {
-      tmp13 = cResult[6];
-    }
-    if (cResult[7] === tmp5) {
-      let tmp16;
-      if (cResult[8] === tmp13) {
-        tmp16 = cResult[9];
-      }
-      return tmp16;
-    }
-    const obj4 = { style: tmp5, children: items };
-    items = [tmp7, tmp13];
-    const tmp19 = hasOwnProperty(View, obj4);
-    cResult[7] = tmp5;
-    cResult[8] = tmp13;
-    cResult[9] = tmp19;
-    tmp16 = tmp19;
-  }
-  const items1 = [tmp4.container, style];
-  cResult[0] = style;
-  cResult[1] = tmp4.container;
-  cResult[2] = items1;
-  tmp5 = items1;
-}) : (function PollBadge(style) {
+const result = size.fileFinishedImporting("modules/polls/native/PollBadge.tsx");
+
+export default function PollBadge(style) {
   let intl;
   let items;
   let items1;
@@ -104,7 +42,4 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PollBadge(st
   intl = intl2.intl;
   items1[1] = React3(Text, obj3);
   return hasOwnProperty(View, obj);
-});
-const result = size.fileFinishedImporting("modules/polls/native/PollBadge.tsx");
-
-export default tmp4;
+};

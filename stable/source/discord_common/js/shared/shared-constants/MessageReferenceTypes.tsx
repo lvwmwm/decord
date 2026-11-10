@@ -1,9 +1,9 @@
-// Module ID: 1110
-// Function ID: 1111
+// Module ID: 1095
+// Function ID: 1096
 // Name: MessageReferenceTypes
 // Dependencies: [2]
 
-// Module 1110 (MessageReferenceTypes)
+// Module 1095 (MessageReferenceTypes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/MessageReferenceTypes.tsx");

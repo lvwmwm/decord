@@ -1,12 +1,12 @@
-// Module ID: 12302
-// Function ID: 12303
+// Module ID: 12186
+// Function ID: 12187
 // Name: TagGroupTypes
-// Dependencies: [12303, 587, 2]
+// Dependencies: [12187, 575, 2]
 // Exports: getTagBorderRadius, getTagGap, getTagGraphicDimension, getTagHorizontalPadding, getTagIconSize, getTagMinHeight, getTagTextVariant, getTagVerticalPadding
 
-// Module 12302 (TagGroupTypes)
-import nativeDefault from "native" /* 587 */;
-import TagGroupShared from "TagGroupShared" /* 12303 */;
+// Module 12186 (TagGroupTypes)
+import nativeDefault from "native" /* 575 */;
+import TagGroupShared from "TagGroupShared" /* 12187 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("design/components/TagGroup/native/TagGroupTypes.native.tsx");
@@ -27,14 +27,14 @@ export function getTagMinHeight(arg0) {
     return 40;
   }
 }
-export const getTagTextVariant = function getTagTextVariant(arg0) {
+export function getTagTextVariant(arg0) {
   const obj = TagGroupShared;
   return obj.getTagTextVariant(arg0);
-};
-export const getTagIconSize = function getTagIconSize(arg0) {
+}
+export function getTagIconSize(arg0) {
   const obj = TagGroupShared;
   return obj.getTagIconSize(arg0);
-};
+}
 export function getTagGraphicDimension(size) {
   let num = 12;
   if ("md" === size) {
@@ -42,7 +42,7 @@ export function getTagGraphicDimension(size) {
   }
   return num;
 }
-export const getTagBorderRadius = function getTagBorderRadius(arg0, arg1) {
+export function getTagBorderRadius(arg0, arg1) {
   let xs;
   if ("filter" === arg1) {
     xs = nativeDefault.radii.round;
@@ -52,8 +52,8 @@ export const getTagBorderRadius = function getTagBorderRadius(arg0, arg1) {
     xs = nativeDefault.radii.xs;
   }
   return xs;
-};
-export const getTagHorizontalPadding = function getTagHorizontalPadding(arg0) {
+}
+export function getTagHorizontalPadding(arg0) {
   let PX_8;
   if ("md" === arg0) {
     PX_8 = nativeDefault.space.PX_12;
@@ -61,8 +61,8 @@ export const getTagHorizontalPadding = function getTagHorizontalPadding(arg0) {
     PX_8 = nativeDefault.space.PX_8;
   }
   return PX_8;
-};
-export const getTagGap = function getTagGap(arg0) {
+}
+export function getTagGap(arg0) {
   let PX_4;
   if ("md" === arg0) {
     PX_4 = nativeDefault.space.PX_8;
@@ -70,11 +70,11 @@ export const getTagGap = function getTagGap(arg0) {
     PX_4 = nativeDefault.space.PX_4;
   }
   return PX_4;
-};
-export const getTagVerticalPadding = function getTagVerticalPadding(arg0) {
+}
+export function getTagVerticalPadding(arg0) {
   let num = 0;
   if ("xs" !== arg0) {
     num = nativeDefault.space.PX_4;
   }
   return num;
-};
+}

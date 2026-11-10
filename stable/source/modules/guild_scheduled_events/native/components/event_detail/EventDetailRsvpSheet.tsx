@@ -1,30 +1,28 @@
-// Module ID: 9181
-// Function ID: 9182
+// Module ID: 9217
+// Function ID: 9218
 // Name: EventDetailRsvpSheet
-// Dependencies: [19, 17, 5744, 1392, 1098, 21, 5003, 587, 6683, 558, 576, 9070, 9182, 1128, 5266, 5701, 8983, 7285, 504, 1202, 5057, 9165, 8700, 9183, 5301, 6912, 7252, 2]
+// Dependencies: [19, 17, 5761, 1383, 1083, 21, 5014, 575, 6723, 9106, 9218, 5624, 1113, 8177, 5717, 7326, 504, 1187, 9201, 5068, 8750, 9219, 5275, 6953, 7294, 2]
 // Exports: default
 
-// Module 9181 (EventDetailRsvpSheet)
+// Module 9217 (EventDetailRsvpSheet)
 import react_native from "react-native" /* 17 */;
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1098 */;
-import intl2 from "intl" /* 1128 */;
-import Text_Text from "Text/Text" /* 5266 */;
-import BottomSheetModal from "BottomSheetModal" /* 5301 */;
-import FastImageDefault from "FastImage" /* 5701 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8700 */;
-import Form from "Form" /* 8983 */;
-import StageSparkleDefault from "StageSparkle" /* 9070 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9182 */;
-import EventDetailTypes from "EventDetailTypes" /* 9183 */;
+import nativeDefault from "native" /* 575 */;
+import Constants from "Constants" /* 1083 */;
+import intl2 from "intl" /* 1113 */;
+import BottomSheetModal from "BottomSheetModal" /* 5275 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import FastImageDefault from "FastImage" /* 5717 */;
+import _mod8177 from "module_8177" /* 8177 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8750 */;
+import StageSparkleDefault from "StageSparkle" /* 9106 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9218 */;
+import EventDetailTypes from "EventDetailTypes" /* 9219 */;
 import react from "react" /* 19 */;
-import PresenceStore from "PresenceStore" /* 5744 */;
-import UserStore from "UserStore" /* 1392 */;
+import PresenceStore from "PresenceStore" /* 5761 */;
+import UserStore from "UserStore" /* 1383 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5003 */;
-import TextStyles from "TextStyles" /* 6683 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5014 */;
+import TextStyles from "TextStyles" /* 6723 */;
 import size_mod from "module_2" /* 2 */;
 
 let item;
@@ -35,6 +33,56 @@ let obj2;
 let obj3;
 let size;
 let size1;
+function EmptyDisplay(arg0) {
+  let children;
+  let items;
+  let items1;
+  let style;
+  ({ children, style } = arg0);
+  const obj = { style: items, children: items1 };
+  items = [closure_9().emptyDisplayContainer, style];
+  const obj2 = { icon: AssetRegistryDefault };
+  const tmp = StageSparkleDefault;
+  items1 = [metroImportDefault(tmp, obj2), children];
+  return metroImportAll(View, obj);
+}
+function FetchErrorDisplay(style) {
+  let Text;
+  let intl;
+  let obj2;
+  const obj = { style: style.style, children: metroImportDefault(Text, obj2) };
+  obj2 = { style: closure_9().emptyDisplayTitle, variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: intl.string(intl2.t.obChXk) };
+  Text = Text_Text.Text;
+  intl = intl2.intl;
+  return metroImportDefault(EmptyDisplay, obj);
+}
+function NoUsersDisplay(style) {
+  let Text;
+  let intl;
+  let obj2;
+  const obj = { style: style.style, children: metroImportDefault(Text, obj2) };
+  obj2 = { style: closure_9().emptyDisplayTitle, variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: intl.string(intl2.t.hW0mBR) };
+  Text = Text_Text.Text;
+  intl = intl2.intl;
+  return metroImportDefault(EmptyDisplay, obj);
+}
+function RemainingUsersRow(remainingUsersGroup) {
+  let intl;
+  let obj2;
+  let obj3;
+  let obj4;
+  let tmp2;
+  remainingUsersGroup = remainingUsersGroup.remainingUsersGroup;
+  const tmp = closure_9();
+  const obj = { DEPRECATED_style: tmp.userListRow, leading: metroImportDefault(View, obj2), label: intl.formatToPlainString(intl2.t.BdQTfR, obj4) };
+  obj2 = { style: tmp.remainingUsersIconContainer, children: metroImportDefault(tmp2, obj3) };
+  const FormRow = _mod8177.FormRow;
+  obj3 = { source: AssetRegistryDefault, style: tmp.remainingUsersIcon };
+  tmp2 = FastImageDefault;
+  intl = intl2.intl;
+  obj4 = { userRemainCount: remainingUsersGroup.count };
+  return metroImportDefault(FormRow, obj, "userRemaining");
+}
 function keyExtractor(count) {
   let user_id;
   const obj = EventDetailTypes;
@@ -59,330 +107,7 @@ const merged = Object.assign(TextStyles(DISPLAY_EXTRABOLD, nativeDefault.colors.
 size = { tintColor: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, height: 18, width: 18 };
 size1 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderRadius: 16, height: 32, width: 32, alignItems: "center", justifyContent: "center" };
 let closure_9 = createStyles(obj);
-let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmptyDisplay(arg0) {
-  let children;
-  let items;
-  let style;
-  const obj = react2;
-  const cResult = obj.c(7);
-  ({ children, style } = arg0);
-  const tmp3 = closure_9();
-  if (cResult[0] === style) {
-    let tmp4;
-    let tmp6;
-    if (cResult[1] === tmp3.emptyDisplayContainer) {
-      tmp4 = cResult[2];
-    }
-    const _Symbol = Symbol;
-    if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj2 = { icon: AssetRegistryDefault };
-      const tmp9 = StageSparkleDefault;
-      const tmp10 = metroImportDefault(tmp9, obj2);
-      cResult[3] = tmp10;
-      tmp6 = tmp10;
-    } else {
-      tmp6 = cResult[3];
-    }
-    if (cResult[4] === children) {
-      let tmp11;
-      if (cResult[5] === tmp4) {
-        tmp11 = cResult[6];
-      }
-      return tmp11;
-    }
-    const obj3 = { style: tmp4, children: items };
-    items = [tmp6, children];
-    const tmp14 = metroImportAll(View, obj3);
-    cResult[4] = children;
-    cResult[5] = tmp4;
-    cResult[6] = tmp14;
-    tmp11 = tmp14;
-  }
-  const items1 = [tmp3.emptyDisplayContainer, style];
-  cResult[0] = style;
-  cResult[1] = tmp3.emptyDisplayContainer;
-  cResult[2] = items1;
-  tmp4 = items1;
-}) : (function EmptyDisplay(arg0) {
-  let children;
-  let items;
-  let items1;
-  let style;
-  ({ children, style } = arg0);
-  const obj = { style: items, children: items1 };
-  items = [closure_9().emptyDisplayContainer, style];
-  const obj2 = { icon: AssetRegistryDefault };
-  const tmp = StageSparkleDefault;
-  items1 = [metroImportDefault(tmp, obj2), children];
-  return metroImportAll(View, obj);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function FetchErrorDisplay(style) {
-  let first;
-  let tmp7;
-  const obj = react2;
-  const cResult = obj.c(6);
-  style = style.style;
-  const tmp4 = closure_9();
-  const emptyDisplayTitle = tmp4.emptyDisplayTitle;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1128).intl;
-    const stringResult = intl.string(intl2.t.obChXk);
-    cResult[0] = stringResult;
-    first = stringResult;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== tmp4.emptyDisplayTitle) {
-    const obj2 = { style: emptyDisplayTitle, variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: first };
-    const tmp9 = metroImportDefault(Text_Text.Text, obj2);
-    cResult[1] = tmp4.emptyDisplayTitle;
-    cResult[2] = tmp9;
-    tmp7 = tmp9;
-  } else {
-    tmp7 = cResult[2];
-  }
-  if (cResult[3] === style) {
-    let tmp10;
-    if (cResult[4] === tmp7) {
-      tmp10 = cResult[5];
-    }
-    return tmp10;
-  }
-  const tmp11 = metroImportDefault(closure_10, { style, children: tmp7 });
-  cResult[3] = style;
-  cResult[4] = tmp7;
-  cResult[5] = tmp11;
-  tmp10 = tmp11;
-}) : (function FetchErrorDisplay(style) {
-  let Text;
-  let intl;
-  let obj2;
-  const obj = { style: style.style, children: metroImportDefault(Text, obj2) };
-  obj2 = { style: closure_9().emptyDisplayTitle, variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: intl.string(intl2.t.obChXk) };
-  Text = Text_Text.Text;
-  intl = intl2.intl;
-  return metroImportDefault(closure_10, obj);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function NoUsersDisplay(style) {
-  let first;
-  let tmp7;
-  const obj = react2;
-  const cResult = obj.c(6);
-  style = style.style;
-  const tmp4 = closure_9();
-  const emptyDisplayTitle = tmp4.emptyDisplayTitle;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1128).intl;
-    const stringResult = intl.string(intl2.t.hW0mBR);
-    cResult[0] = stringResult;
-    first = stringResult;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== tmp4.emptyDisplayTitle) {
-    const obj2 = { style: emptyDisplayTitle, variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: first };
-    const tmp9 = metroImportDefault(Text_Text.Text, obj2);
-    cResult[1] = tmp4.emptyDisplayTitle;
-    cResult[2] = tmp9;
-    tmp7 = tmp9;
-  } else {
-    tmp7 = cResult[2];
-  }
-  if (cResult[3] === style) {
-    let tmp10;
-    if (cResult[4] === tmp7) {
-      tmp10 = cResult[5];
-    }
-    return tmp10;
-  }
-  const tmp11 = metroImportDefault(closure_10, { style, children: tmp7 });
-  cResult[3] = style;
-  cResult[4] = tmp7;
-  cResult[5] = tmp11;
-  tmp10 = tmp11;
-}) : (function NoUsersDisplay(style) {
-  let Text;
-  let intl;
-  let obj2;
-  const obj = { style: style.style, children: metroImportDefault(Text, obj2) };
-  obj2 = { style: closure_9().emptyDisplayTitle, variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: intl.string(intl2.t.hW0mBR) };
-  Text = Text_Text.Text;
-  intl = intl2.intl;
-  return metroImportDefault(closure_10, obj);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function RemainingUsersRow(remainingUsersGroup) {
-  let tmp5;
-  const obj = react2;
-  const cResult = obj.c(11);
-  remainingUsersGroup = remainingUsersGroup.remainingUsersGroup;
-  const tmp4 = closure_9();
-  const userListRow = tmp4.userListRow;
-  if (cResult[0] !== tmp4.remainingUsersIcon) {
-    const obj2 = { source: AssetRegistryDefault, style: tmp4.remainingUsersIcon };
-    const tmp8 = FastImageDefault;
-    const tmp9 = metroImportDefault(tmp8, obj2);
-    cResult[0] = tmp4.remainingUsersIcon;
-    cResult[1] = tmp9;
-    tmp5 = tmp9;
-  } else {
-    tmp5 = cResult[1];
-  }
-  if (cResult[2] === tmp4.remainingUsersIconContainer) {
-    let tmp10;
-    let tmp12;
-    if (cResult[3] === tmp5) {
-      tmp10 = cResult[4];
-    }
-    if (cResult[5] !== remainingUsersGroup.count) {
-      const intl = tmp(1128).intl;
-      const obj3 = { userRemainCount: remainingUsersGroup.count };
-      const formatToPlainStringResult = intl.formatToPlainString(intl2.t.BdQTfR, obj3);
-      cResult[5] = remainingUsersGroup.count;
-      cResult[6] = formatToPlainStringResult;
-      tmp12 = formatToPlainStringResult;
-    } else {
-      tmp12 = cResult[6];
-    }
-    if (cResult[7] === tmp4.userListRow) {
-      if (cResult[8] === tmp10) {
-        let tmp14;
-        if (cResult[9] === tmp12) {
-          tmp14 = cResult[10];
-        }
-        return tmp14;
-      }
-    }
-    const obj4 = { DEPRECATED_style: userListRow, leading: tmp10, label: tmp12 };
-    const tmp16 = metroImportDefault(Form.FormRow, obj4, "userRemaining");
-    cResult[7] = tmp4.userListRow;
-    cResult[8] = tmp10;
-    cResult[9] = tmp12;
-    cResult[10] = tmp16;
-    tmp14 = tmp16;
-  }
-  const obj5 = { style: tmp4.remainingUsersIconContainer, children: tmp5 };
-  const tmp11 = metroImportDefault(View, obj5);
-  cResult[2] = tmp4.remainingUsersIconContainer;
-  cResult[3] = tmp5;
-  cResult[4] = tmp11;
-  tmp10 = tmp11;
-}) : (function RemainingUsersRow(remainingUsersGroup) {
-  let intl;
-  let obj2;
-  let obj3;
-  let obj4;
-  let tmp2;
-  remainingUsersGroup = remainingUsersGroup.remainingUsersGroup;
-  const tmp = closure_9();
-  const obj = { DEPRECATED_style: tmp.userListRow, leading: metroImportDefault(View, obj2), label: intl.formatToPlainString(intl2.t.BdQTfR, obj4) };
-  obj2 = { style: tmp.remainingUsersIconContainer, children: metroImportDefault(tmp2, obj3) };
-  const FormRow = Form.FormRow;
-  obj3 = { source: AssetRegistryDefault, style: tmp.remainingUsersIcon };
-  tmp2 = FastImageDefault;
-  intl = intl2.intl;
-  obj4 = { userRemainCount: remainingUsersGroup.count };
-  return metroImportDefault(FormRow, obj, "userRemaining");
-});
-const memo = react.memo;
-ReactCompilerGating = ReactCompilerGating_mod;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function UserRow(eventUser) {
-  let analyticsLocations;
-  let first;
-  let isMobileOnline;
-  let isVROnline;
-  let status;
-  let tmp11;
-  let tmp12;
-  let tmp7;
-  let tmp9;
-  let obj = eventUser(576);
-  const cResult = obj.c(29);
-  eventUser = eventUser.eventUser;
-  const guildId = eventUser.guildId;
-  closure_9();
-  analyticsLocations = analyticsLocations(7285)().analyticsLocations;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [UserStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== eventUser.user_id) {
-    const fn = function l() {
-      return UserStore.getUser(eventUser.user_id);
-    };
-    cResult[1] = eventUser.user_id;
-    cResult[2] = fn;
-    tmp7 = fn;
-  } else {
-    tmp7 = cResult[2];
-  }
-  const tmpResult = eventUser(504);
-  const stateFromStores = tmpResult.useStateFromStores(first, tmp7);
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const items1 = [PresenceStore];
-    cResult[3] = items1;
-    tmp9 = items1;
-  } else {
-    tmp9 = cResult[3];
-  }
-  if (cResult[4] !== eventUser.user_id) {
-    class E {
-      constructor() {
-        const obj = { isMobileOnline: PresenceStore.isMobileOnline(eventUser.user_id), isVROnline: PresenceStore.isVROnline(eventUser.user_id), status: PresenceStore.getStatus(eventUser.user_id) };
-        return obj;
-      }
-    }
-    const items2 = [eventUser.user_id];
-    cResult[4] = eventUser.user_id;
-    cResult[5] = E;
-    cResult[6] = items2;
-    tmp12 = items2;
-    tmp11 = E;
-  } else {
-    class E {
-      constructor() {
-        const obj = { isMobileOnline: PresenceStore.isMobileOnline(eventUser.user_id), isVROnline: PresenceStore.isVROnline(eventUser.user_id), status: PresenceStore.getStatus(eventUser.user_id) };
-        return obj;
-      }
-    }
-    tmp12 = cResult[6];
-  }
-  const tmpResult2 = eventUser(504);
-  const stateFromStoresObject = tmpResult2.useStateFromStoresObject(tmp9, tmp11, tmp12);
-  ({ isMobileOnline, isVROnline, status } = stateFromStoresObject);
-  if (cResult[7] === guildId) {
-    class E {
-      constructor() {
-        const obj = { isMobileOnline: PresenceStore.isMobileOnline(eventUser.user_id), isVROnline: PresenceStore.isVROnline(eventUser.user_id), status: PresenceStore.getStatus(eventUser.user_id) };
-        return obj;
-      }
-    }
-  }
-  let tmp14 = null;
-  if (null != stateFromStores) {
-    class E {
-      constructor() {
-        const obj = { isMobileOnline: PresenceStore.isMobileOnline(eventUser.user_id), isVROnline: PresenceStore.isVROnline(eventUser.user_id), status: PresenceStore.getStatus(eventUser.user_id) };
-        return obj;
-      }
-    }
-    const obj2 = { user: stateFromStores, guildId, isMobileOnline, isVROnline, status, size: eventUser(1202).AvatarSizes.REFRESH_MEDIUM_32, autoStatusCutout: true };
-    const Avatar = tmp(1202).Avatar;
-    tmp14 = closure_7(Avatar, obj2);
-  }
-  cResult[7] = guildId;
-  cResult[8] = isMobileOnline;
-  cResult[9] = isVROnline;
-  cResult[10] = status;
-  cResult[11] = stateFromStores;
-  cResult[12] = tmp14;
-}) : (function UserRow(eventUser) {
+const memoResult = react.memo(function UserRow(eventUser) {
   let isMobileOnline;
   let isVROnline;
   let nick;
@@ -394,7 +119,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   let analyticsLocations;
   const guildId = eventUser.guildId;
   const tmp = closure_9();
-  analyticsLocations = analyticsLocations(7285)().analyticsLocations;
+  analyticsLocations = analyticsLocations(7326)().analyticsLocations;
   let obj = eventUser(504);
   const items = [UserStore];
   const stateFromStores = obj.useStateFromStores(items, () => UserStore.getUser(eventUser.user_id));
@@ -416,26 +141,26 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     }
   };
   tmp7Result = null;
-  const FormRow = eventUser(8983).FormRow;
+  const FormRow = eventUser(8177).FormRow;
   if (null != stateFromStores) {
-    const obj4 = { user: stateFromStores, guildId, isMobileOnline, isVROnline, status, size: eventUser(1202).AvatarSizes.REFRESH_MEDIUM_32, autoStatusCutout: true };
-    const Avatar = tmp4(1202).Avatar;
+    const obj4 = { user: stateFromStores, guildId, isMobileOnline, isVROnline, status, size: eventUser(1187).AvatarSizes.REFRESH_MEDIUM_32, autoStatusCutout: true };
+    const Avatar = tmp4(1187).Avatar;
     tmp7Result = tmp7(Avatar, obj4);
   }
   const member = eventUser.member;
   obj6 = { user: stateFromStores, nick, usernameStyle: null, nicknameStyle: null };
   nick = undefined;
-  tmp2Result = analyticsLocations(9165);
+  tmp2Result = analyticsLocations(9201);
   if (member != null) {
     nick = member.nick;
   }
   if (nick == null) {
-    const tmp2Result2 = analyticsLocations(5057);
+    const tmp2Result2 = analyticsLocations(5068);
     nick = tmp2Result2.getName(eventUser.user);
   }
   ({ userName: obj5.usernameStyle, userName: obj5.nicknameStyle } = tmp);
   return closure_7(FormRow, obj3, eventUser.user_id);
-}));
+});
 size = size_mod;
 const result = size.fileFinishedImporting("modules/guild_scheduled_events/native/components/event_detail/EventDetailRsvpSheet.tsx");
 
@@ -480,7 +205,7 @@ export default function EventDetailRsvpSheet(arg0) {
     const obj = EventDetailTypes;
     if (obj.isRemainingUsersGroup(item)) {
       const obj2 = { remainingUsersGroup: item };
-      tmpResult = tmp(closure_13, obj2);
+      tmpResult = tmp(RemainingUsersRow, obj2);
     } else {
       const obj3 = { eventUser: item, guildId };
       tmpResult = tmp(memoResult, obj3);
@@ -489,7 +214,7 @@ export default function EventDetailRsvpSheet(arg0) {
   }, items);
   if (loading) {
     if (0 === userListItems.length) {
-      let obj2 = { children: closure_7(guildId(6912).ActivityIndicator, obj3) };
+      let obj2 = { children: closure_7(guildId(6953).ActivityIndicator, obj3) };
       obj3 = { style: items1 };
       items1 = [, ];
       class StaticMessageContainer {
@@ -513,7 +238,7 @@ export default function EventDetailRsvpSheet(arg0) {
     return tmp8;
   }
   if (null != error) {
-    const obj4 = { children: closure_7(closure_11, obj5) };
+    const obj4 = { children: closure_7(FetchErrorDisplay, obj5) };
     obj5 = { style: items2 };
     items2 = [tmp.staticMessageContent, ];
     class StaticMessageContainer {
@@ -533,7 +258,7 @@ export default function EventDetailRsvpSheet(arg0) {
     }
     tmp8 = closure_7(StaticMessageContainer, obj4);
   } else if (0 === userListItems.length) {
-    const obj6 = { children: closure_7(closure_12, obj7) };
+    const obj6 = { children: closure_7(NoUsersDisplay, obj7) };
     obj7 = { style: items3 };
     items3 = [tmp.staticMessageContent, ];
     class StaticMessageContainer {
@@ -553,7 +278,7 @@ export default function EventDetailRsvpSheet(arg0) {
     }
     tmp8 = closure_7(StaticMessageContainer, obj6);
   } else {
-    let obj = { contentContainerStyle: items4, data: userListItems, renderItem: callback, ItemSeparatorComponent: guildId(8983).FormDivider, keyExtractor };
+    let obj = { contentContainerStyle: items4, data: userListItems, renderItem: callback, ItemSeparatorComponent: guildId(8177).FormDivider, keyExtractor };
     items4 = [tmp.userList, ];
     class StaticMessageContainer {
       constructor(children) {
@@ -572,7 +297,7 @@ export default function EventDetailRsvpSheet(arg0) {
     }
     tmp6[0] = safeBottomPadding;
     items4[1] = tmp6;
-    const BottomSheetFlashList = guildId(7252).BottomSheetFlashList;
+    const BottomSheetFlashList = guildId(7294).BottomSheetFlashList;
     tmp8 = closure_7(BottomSheetFlashList, obj);
   }
 };

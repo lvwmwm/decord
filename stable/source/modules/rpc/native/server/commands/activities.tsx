@@ -1,18 +1,18 @@
-// Module ID: 15805
-// Function ID: 15806
+// Module ID: 16353
+// Function ID: 16354
 // Name: commands/activities
-// Dependencies: [5, 6410, 1087, 7900, 15759, 8859, 15769, 9296, 9082, 9290, 6810, 10760, 8187, 7917, 11425, 6407, 2]
+// Dependencies: [5, 6450, 1072, 7940, 16296, 8910, 16315, 9333, 9118, 9327, 6849, 10883, 8221, 7957, 11726, 6447, 2]
 
-// Module 15805 (commands/activities)
-import NativePermissionConstants from "NativePermissionConstants" /* 7900 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 8859 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9082 */;
-import RPCErrorDefault from "RPCError" /* 9296 */;
-import validateOpenInviteDialog from "validateOpenInviteDialog" /* 15769 */;
+// Module 16353 (commands/activities)
+import NativePermissionConstants from "NativePermissionConstants" /* 7940 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 8910 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9118 */;
+import RPCErrorDefault from "RPCError" /* 9333 */;
+import validateOpenInviteDialog from "validateOpenInviteDialog" /* 16315 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import Constants_mod from "Constants" /* 6410 */;
-import Constants_mod2 from "Constants" /* 1087 */;
-import CONTEXT_MENU_ICON_NAMES_mod from "CONTEXT_MENU_ICON_NAMES" /* 15759 */;
+import Constants_mod from "Constants" /* 6450 */;
+import Constants_mod2 from "Constants" /* 1072 */;
+import CONTEXT_MENU_ICON_NAMES_mod from "CONTEXT_MENU_ICON_NAMES" /* 16296 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3, c4;
@@ -49,7 +49,7 @@ let obj2 = {
     } else {
       const obj3 = { source: constants.ACTIVITY_INVITE, targetApplicationId: id };
       id = socket.application.id;
-      const showInstantInviteActionSheet = tmp(9082).showInstantInviteActionSheet;
+      const showInstantInviteActionSheet = tmp(9118).showInstantInviteActionSheet;
       instant_invite_InstantInviteUtils;
       const result1 = showInstantInviteActionSheet(tmp4, obj3);
     }
@@ -84,7 +84,7 @@ let obj4 = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

@@ -1,16 +1,16 @@
-// Module ID: 16491
-// Function ID: 16492
+// Module ID: 17083
+// Function ID: 17084
 // Name: QuestDisclosureModalActionCreators
-// Dependencies: [6749, 7830, 9605, 9608, 16482, 6704, 16492, 2002, 2]
+// Dependencies: [6788, 7868, 9684, 9687, 17074, 6744, 17084, 1994, 2]
 
-// Module 16491 (QuestDisclosureModalActionCreators)
-import asyncRequire from "asyncRequire" /* 2002 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6704 */;
-import AdCreativeType from "AdCreativeType" /* 6749 */;
-import QuestTaskUtils from "QuestTaskUtils" /* 7830 */;
-import captureAdUserAction2 from "captureAdUserAction" /* 9605 */;
-import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9608 */;
-import AdCreativeUtils from "AdCreativeUtils" /* 16482 */;
+// Module 17083 (QuestDisclosureModalActionCreators)
+import asyncRequire from "asyncRequire" /* 1994 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6744 */;
+import AdCreativeType from "AdCreativeType" /* 6788 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 7868 */;
+import captureAdUserAction2 from "captureAdUserAction" /* 9684 */;
+import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9687 */;
+import AdCreativeUtils from "AdCreativeUtils" /* 17074 */;
 import size from "module_2" /* 2 */;
 
 const QUEST_DISCLOSURE_MODAL = "QUEST_DISCLOSURE_MODAL";
@@ -35,7 +35,7 @@ let obj = {
     const pushLazy = ModalActionCreatorsDefault.pushLazy;
     const type = creative.type;
     ModalActionCreatorsDefault;
-    const tmp7 = asyncRequire(16492, dependencyMap.paths);
+    const tmp7 = asyncRequire(17084, dependencyMap.paths);
     if (AdCreativeType.AdCreativeType.QUEST === type) {
       const obj3 = { adCreativeType: AdCreativeType.AdCreativeType.QUEST, gamePublisher, gameTitle, cosponsorName: name, isVideoQuest: tmpResult.hasWatchVideoTasks(creative.quest) };
       ({ gamePublisher, gameTitle } = creative.quest.config.messages);
@@ -49,10 +49,13 @@ let obj = {
     } else if (AdCreativeType.AdCreativeType.BOUNTY === type) {
       tmp8 = { adCreativeType: AdCreativeType.AdCreativeType.BOUNTY, gamePublisher: creative.bounty.advertiserName };
       const obj4 = { adCreativeType: AdCreativeType.AdCreativeType.BOUNTY, gamePublisher: creative.bounty.advertiserName };
+    } else if (AdCreativeType.AdCreativeType.PLAYABLE === type) {
+      tmp8 = { adCreativeType: AdCreativeType.AdCreativeType.PLAYABLE, gamePublisher: creative.playable.advertiserName };
+      const obj5 = { adCreativeType: AdCreativeType.AdCreativeType.PLAYABLE, gamePublisher: creative.playable.advertiserName };
     }
-    const obj5 = { isTargetedDisclosure };
+    const obj6 = { isTargetedDisclosure };
     const merged1 = Object.assign(tmp8);
-    pushLazy(tmp7, obj5, QUEST_DISCLOSURE_MODAL);
+    pushLazy(tmp7, obj6, QUEST_DISCLOSURE_MODAL);
   },
   hideModal() {
     const obj = ModalActionCreatorsDefault;

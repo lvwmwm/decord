@@ -1,23 +1,23 @@
-// Module ID: 18388
-// Function ID: 18389
+// Module ID: 18979
+// Function ID: 18980
 // Name: RestrictedMessageRequestPreview
-// Dependencies: [32, 19, 17, 4855, 6042, 1392, 21, 5003, 587, 558, 576, 1633, 13562, 504, 18389, 18391, 13588, 13380, 2]
+// Dependencies: [32, 19, 17, 4863, 6061, 1383, 21, 5014, 575, 1625, 504, 14178, 18980, 18982, 14206, 14013, 2]
+// Exports: default
 
-// Module 18388 (RestrictedMessageRequestPreview)
-import nativeDefault from "native" /* 587 */;
-import useIsEmptyMessageRequestChat from "useIsEmptyMessageRequestChat" /* 13562 */;
+// Module 18979 (RestrictedMessageRequestPreview)
+import nativeDefault from "native" /* 575 */;
+import useIsEmptyMessageRequestChat from "useIsEmptyMessageRequestChat" /* 14178 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelStore from "ChannelStore" /* 4855 */;
-import MessageStore from "MessageStore" /* 6042 */;
-import UserStore from "UserStore" /* 1392 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import MessageStore from "MessageStore" /* 6061 */;
+import UserStore from "UserStore" /* 1383 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5003 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
-let c7, dependencyMap, num, tmp3;
+let dependencyMap;
 
 let c10;
 let hasOwnProperty;
@@ -36,259 +36,9 @@ createStyles = createStyles.createStyles;
 obj3 = { paddingHorizontal: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_8, paddingBottom: nativeDefault.space.PX_8 };
 obj4 = { paddingHorizontal: nativeDefault.space.PX_12 };
 let closure_12 = createStyles(obj);
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function RestrictedMessageRequestPreview(channelId) {
-  let closure_4;
-  let first;
-  let first1;
-  let ref;
-  let tmp10;
-  let tmp11;
-  let tmp13;
-  let tmp14;
-  let tmp15;
-  let tmp20;
-  let tmp21;
-  let tmp22;
-  let tmp24;
-  let tmp25;
-  const tmp = channelId;
-  let obj = channelId(576);
-  const cResult = obj.c(55);
-  channelId = channelId.channelId;
-  let tmp4 = closure_12();
-  let obj2 = react;
-  const bottom = ref(1633)().bottom;
-  ref = react.useRef(null);
-  dependencyMap = react.useRef(false);
-  let tmp6 = first(react.useState(false), 2);
-  first = tmp6[0];
-  react = tmp6[1];
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [MessageStore];
-    cResult[0] = items;
-    first1 = items;
-  } else {
-    first1 = cResult[0];
-  }
-  if (cResult[1] !== channelId) {
-    class S {
-      constructor() {
-        messages = closure_8.getMessages(channelId);
-        obj = { hasMessages: messages.length > 0, isEmpty: null };
-        obj2 = closure_0(closure_2[12]);
-        obj.isEmpty = obj2.isEmptyLoadedChat(messages);
-        return obj;
-      }
-    }
-    const items1 = [channelId];
-    cResult[1] = channelId;
-    cResult[2] = S;
-    cResult[3] = items1;
-    tmp11 = items1;
-    tmp10 = S;
-  } else {
-    class S {
-      constructor() {
-        messages = closure_8.getMessages(channelId);
-        obj = { hasMessages: messages.length > 0, isEmpty: null };
-        obj2 = closure_0(closure_2[12]);
-        obj.isEmpty = obj2.isEmptyLoadedChat(messages);
-        return obj;
-      }
-    }
-    tmp11 = cResult[3];
-  }
-  const tmpResult = tmp(504);
-  const stateFromStoresObject = tmpResult.useStateFromStoresObject(first1, tmp10, tmp11);
-  const hasMessages = stateFromStoresObject.hasMessages;
-  const isEmpty = stateFromStoresObject.isEmpty;
-  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    class S {
-      constructor() {
-        messages = closure_8.getMessages(channelId);
-        obj = { hasMessages: messages.length > 0, isEmpty: null };
-        obj2 = closure_0(closure_2[12]);
-        obj.isEmpty = obj2.isEmptyLoadedChat(messages);
-        return obj;
-      }
-    }
-    const items2 = [c7];
-    cResult[4] = items2;
-    tmp13 = items2;
-  } else {
-    class S {
-      constructor() {
-        messages = closure_8.getMessages(channelId);
-        obj = { hasMessages: messages.length > 0, isEmpty: null };
-        obj2 = closure_0(closure_2[12]);
-        obj.isEmpty = obj2.isEmptyLoadedChat(messages);
-        return obj;
-      }
-    }
-  }
-  if (cResult[5] !== channelId) {
-    class S {
-      constructor() {
-        messages = closure_8.getMessages(channelId);
-        obj = { hasMessages: messages.length > 0, isEmpty: null };
-        obj2 = closure_0(closure_2[12]);
-        obj.isEmpty = obj2.isEmptyLoadedChat(messages);
-        return obj;
-      }
-    }
-    const items3 = [channelId];
-    cResult[5] = channelId;
-    cResult[6] = tmp16;
-    cResult[7] = items3;
-    tmp15 = items3;
-    tmp14 = tmp16;
-  } else {
-    class S {
-      constructor() {
-        messages = closure_8.getMessages(channelId);
-        obj = { hasMessages: messages.length > 0, isEmpty: null };
-        obj2 = closure_0(closure_2[12]);
-        obj.isEmpty = obj2.isEmptyLoadedChat(messages);
-        return obj;
-      }
-    }
-    tmp15 = cResult[7];
-  }
-  const tmpResult3 = tmp(504);
-  const stateFromStores = tmpResult3.useStateFromStores(tmp13, tmp14, tmp15);
-  if (stateFromStores != null) {
-    class S {
-      constructor() {
-        messages = closure_8.getMessages(channelId);
-        obj = { hasMessages: messages.length > 0, isEmpty: null };
-        obj2 = closure_0(closure_2[12]);
-        obj.isEmpty = obj2.isEmptyLoadedChat(messages);
-        return obj;
-      }
-    }
-    if (tmp19 != null) {
-      class S {
-        constructor() {
-          messages = closure_8.getMessages(channelId);
-          obj = { hasMessages: messages.length > 0, isEmpty: null };
-          obj2 = closure_0(closure_2[12]);
-          obj.isEmpty = obj2.isEmptyLoadedChat(messages);
-          return obj;
-        }
-      }
-    }
-  }
-  c7 = tmp18;
-  if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-    class S {
-      constructor() {
-        messages = closure_8.getMessages(channelId);
-        obj = { hasMessages: messages.length > 0, isEmpty: null };
-        obj2 = closure_0(closure_2[12]);
-        obj.isEmpty = obj2.isEmptyLoadedChat(messages);
-        return obj;
-      }
-    }
-    const items4 = [UserStore];
-    cResult[8] = items4;
-    tmp20 = items4;
-  } else {
-    class S {
-      constructor() {
-        messages = closure_8.getMessages(channelId);
-        obj = { hasMessages: messages.length > 0, isEmpty: null };
-        obj2 = closure_0(closure_2[12]);
-        obj.isEmpty = obj2.isEmptyLoadedChat(messages);
-        return obj;
-      }
-    }
-  }
-  if (cResult[9] !== undefined) {
-    class A {
-      constructor() {
-        user = undefined;
-        if (null != closure_7) {
-          tmp3 = closure_9;
-          user = closure_9.getUser(tmp);
-        }
-        return user;
-      }
-    }
-    const items5 = [undefined];
-    cResult[9] = undefined;
-    cResult[10] = A;
-    cResult[11] = items5;
-    tmp22 = items5;
-    tmp21 = A;
-  } else {
-    class A {
-      constructor() {
-        user = undefined;
-        if (null != closure_7) {
-          tmp3 = closure_9;
-          user = closure_9.getUser(tmp);
-        }
-        return user;
-      }
-    }
-    tmp22 = cResult[11];
-  }
-  const tmpResult4 = tmp(504);
-  const stateFromStores1 = tmpResult4.useStateFromStores(tmp20, tmp21, tmp22);
-  if (cResult[12] !== first) {
-    class G {
-      constructor() {
-        if (closure_3) {
-          return;
-        } else {
-          tmp = globalThis;
-          _setTimeout = setTimeout;
-          num = 1000;
-          closure_0 = setTimeout(() => { /* body not rendered: F155871 */ }, 1000);
-          return () => { /* body not rendered: F155872 */ };
-        }
-      }
-    }
-    const items6 = [first];
-    cResult[12] = first;
-    cResult[13] = G;
-    cResult[14] = items6;
-    tmp25 = items6;
-    tmp24 = G;
-  } else {
-    class G {
-      constructor() {
-        if (closure_3) {
-          return;
-        } else {
-          tmp = globalThis;
-          _setTimeout = setTimeout;
-          num = 1000;
-          closure_0 = setTimeout(() => { /* body not rendered: F155871 */ }, 1000);
-          return () => { /* body not rendered: F155872 */ };
-        }
-      }
-    }
-    tmp25 = cResult[14];
-  }
-  const effect = obj2.useEffect(tmp24, tmp25);
-  if (null != stateFromStores) {
-    class G {
-      constructor() {
-        if (closure_3) {
-          return;
-        } else {
-          tmp = globalThis;
-          _setTimeout = setTimeout;
-          num = 1000;
-          closure_0 = setTimeout(() => { /* body not rendered: F155871 */ }, 1000);
-          return () => { /* body not rendered: F155872 */ };
-        }
-      }
-    }
-  }
-  return null;
-}) : (function RestrictedMessageRequestPreview(channelId) {
+const result = size.fileFinishedImporting("modules/message_request/native/RestrictedMessageRequestPreview.tsx");
+
+export default function RestrictedMessageRequestPreview(channelId) {
   let c5;
   let closure_4;
   let isEmpty;
@@ -307,7 +57,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function RestrictedMe
   let first1;
   const tmp = closure_12();
   let obj = react;
-  const bottom = ref(1633)().bottom;
+  const bottom = ref(1625)().bottom;
   ref = react.useRef(null);
   dependencyMap = react.useRef(false);
   const tmp5 = first(react.useState(false), 2);
@@ -403,27 +153,24 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function RestrictedMe
       }
       items8[1] = scrollContentEmpty;
       const obj6 = { channel: stateFromStores, user: stateFromStores1 };
-      items9 = [closure_10(tmp2(18389), obj6), , ];
+      items9 = [closure_10(tmp2(18980), obj6), , ];
       const obj7 = { channelId };
-      items9[1] = closure_10(ref(18391), obj7);
+      items9[1] = closure_10(ref(18982), obj7);
       let tmp19Result = null;
       if (isEmpty) {
         const obj8 = { style: tmp.emptyChat };
-        tmp19Result = tmp19(tmp2(13588), obj8);
+        tmp19Result = tmp19(tmp2(14206), obj8);
       }
       items9[2] = tmp19Result;
       items10 = [closure_11(tmp16, obj5), ];
-      const obj9 = { style: items11, children: closure_10(ref(13380), obj11) };
+      const obj9 = { style: items11, children: closure_10(ref(14013), obj11) };
       items11 = [tmp.footer, ];
-      items11[1] = { paddingBottom: ref(587).space.PX_8 + bottom };
-      const obj10 = { paddingBottom: ref(587).space.PX_8 + bottom };
+      items11[1] = { paddingBottom: ref(575).space.PX_8 + bottom };
+      const obj10 = { paddingBottom: ref(575).space.PX_8 + bottom };
       obj11 = { channel: stateFromStores };
       items10[1] = closure_10(isEmpty, obj9);
       tmp14Result = tmp14(tmp15, obj4);
     }
   }
   return tmp14Result;
-});
-const result = size.fileFinishedImporting("modules/message_request/native/RestrictedMessageRequestPreview.tsx");
-
-export default tmp5;
+};

@@ -1,10 +1,10 @@
-// Module ID: 2029
-// Function ID: 2030
+// Module ID: 2022
+// Function ID: 2023
 // Name: UserApplicationIdentityConstants
 // Dependencies: [2]
 // Exports: getMigratedApplicationIdentityConnectionsScreenApplications
 
-// Module 2029 (UserApplicationIdentityConstants)
+// Module 2022 (UserApplicationIdentityConstants)
 import size from "module_2" /* 2 */;
 
 let obj3;
@@ -30,6 +30,6 @@ export const ApplicationIdentityAppIds = obj;
 export const APPLICATION_IDENTITY_CONNECTIONS_ALLOWED_APPLICATIONS = items;
 export const APPLICATION_IDENTITY_CONNECTIONS_INCENTIVIZED_APPLICATIONS = items1;
 export const APPLICATION_IDENTITY_CONNECTIONS_WITH_OVERRIDE_ENTRYPOINT_URLS = obj8;
-export const getMigratedApplicationIdentityConnectionsScreenApplications = function getMigratedApplicationIdentityConnectionsScreenApplications() {
+export function getMigratedApplicationIdentityConnectionsScreenApplications() {
   return items.map((applicationId) => applicationId.applicationId);
-};
+}

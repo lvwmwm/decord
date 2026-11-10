@@ -1,29 +1,32 @@
-// Module ID: 16265
-// Function ID: 16266
+// Module ID: 16839
+// Function ID: 16840
 // Name: AuthorizedAppsSetting
-// Dependencies: [1087, 11240, 1128, 7083, 16266, 2]
+// Dependencies: [8432, 1072, 11540, 1113, 7125, 16840, 2]
 
-// Module 16265 (AuthorizedAppsSetting)
-import Constants from "Constants" /* 1087 */;
-import intl2 from "intl" /* 1128 */;
-import KeyIcon from "KeyIcon" /* 7083 */;
-import SettingBuilders from "SettingBuilders" /* 11240 */;
+// Module 16839 (AuthorizedAppsSetting)
+import Constants from "Constants" /* 1072 */;
+import intl2 from "intl" /* 1113 */;
+import KeyIcon from "KeyIcon" /* 7125 */;
+import SettingsConstants from "SettingsConstants" /* 8432 */;
+import SettingBuilders from "SettingBuilders" /* 11540 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const UserSettingsSections = Constants.UserSettingsSections;
 const obj = {
   useTitle() {
     const intl = intl2.intl;
     return intl.string(intl2.t["f6kk+r"]);
   },
-  parent: null,
+  parent: MobileUserSettings.CONNECTIONS,
   IconComponent: KeyIcon.KeyIcon,
+  unsearchable: true,
   screen: {
     route: UserSettingsSections.AUTHORIZED_APPS,
     getComponent() {
-      return require("UserSettingsAuthedApps").default;
+      return require("ConnectedAppsScreen").default;
     }
   }
 };

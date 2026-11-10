@@ -1,28 +1,24 @@
-// Module ID: 4835
-// Function ID: 4836
+// Module ID: 4843
+// Function ID: 4844
 // Name: UserSettingDefinitions
-// Dependencies: [1208, 1246, 1097, 558, 576, 504, 4836, 584, 2]
+// Dependencies: [1193, 1231, 1082, 4844, 504, 572, 2]
 // Exports: defineProtoSetting, wrapSettingWithExperimentDefaults, wrapSettingWithOverride, wrapSettingWithSelectiveSyncing
 
-// Module 4835 (UserSettingDefinitions)
+// Module 4843 (UserSettingDefinitions)
 import get_initialized from "get initialized" /* 504 */;
-import react from "react" /* 576 */;
-import UserSettingsConstants from "UserSettingsConstants" /* 1097 */;
-import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1208 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1246 */;
+import UserSettingsConstants from "UserSettingsConstants" /* 1082 */;
+import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1193 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
 import size from "module_2" /* 2 */;
-
-const require = globalThis.__r;
-let _require, dependencyMap;
 
 const UserSettingsDelay = UserSettingsConstants.UserSettingsDelay;
 const result = size.fileFinishedImporting("modules/user_settings/UserSettingDefinitions.tsx");
 
-export const defineProtoSetting = function defineProtoSetting(textAndImages, activityRestrictedGuildIds, explicitContentFromProto, explicitContentToProto, arg4) {
+export function defineProtoSetting(textAndImages, activityRestrictedGuildIds, explicitContentFromProto, explicitContentToProto, arg4) {
   let fn;
-  _require = textAndImages;
+  let closure_0 = textAndImages;
   let closure_1 = activityRestrictedGuildIds;
-  dependencyMap = explicitContentFromProto;
+  let closure_2 = explicitContentFromProto;
   let closure_3 = explicitContentToProto;
   let obj = arg4;
   if (arg4 === undefined) {
@@ -35,7 +31,7 @@ export const defineProtoSetting = function defineProtoSetting(textAndImages, act
   }
   fn = obj.comparator;
   if (fn === undefined) {
-    fn = function c(arg0, arg1) {
+    fn = function p(arg0, arg1) {
       return arg0 === arg1;
     };
   }
@@ -47,45 +43,30 @@ export const defineProtoSetting = function defineProtoSetting(textAndImages, act
     }
     return tmp(tmp3);
   }
-  const obj2 = require("ReactCompilerGating");
-  const f93703 = (favorites) => {
+  const f86498 = (favorites) => {
     let closure_0 = favorites;
-    const PreloadedUserSettingsActionCreators = getSetting(explicitContentFromProto[6]).PreloadedUserSettingsActionCreators;
+    const PreloadedUserSettingsActionCreators = getSetting(explicitContentFromProto[3]).PreloadedUserSettingsActionCreators;
     return PreloadedUserSettingsActionCreators.updateAsync(closure_0, async (arg0) => {
-      arg0[f93703] = explicitContentToProto(favorites, arg0[f93703]);
+      arg0[f86498] = explicitContentToProto(favorites, arg0[f86498]);
     }, closure_4);
   };
-  const obj3 = {
+  return {
     getSetting,
     updateSetting: (fn) => {
       let tmp2 = fn;
-      const tmp = f93709;
+      const tmp = f86505;
       if (typeof fn === "function") {
         tmp2 = fn(getSetting());
       }
       return tmp(tmp2);
     },
-    useSetting: obj2.isReactCompilerEnabled() ? (() => {
-      let first;
-      const obj = react;
-      const cResult = obj.c(1);
-      if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-        const items = [UserSettingsProtoStore];
-        cResult[0] = items;
-        first = items;
-      } else {
-        first = cResult[0];
-      }
-      const tmpResult = get_initialized;
-      return tmpResult.useStateFromStores(first, getSetting, undefined, fn);
-    }) : (() => {
+    useSetting() {
       const items = [UserSettingsProtoStore];
       const obj = get_initialized;
       return obj.useStateFromStores(items, getSetting, undefined, fn);
-    })
+    }
   };
-  return obj3;
-};
+}
 export function wrapSettingWithSelectiveSyncing(UserSettingDefinitions, text, inlineAttachmentMedia) {
   let closure_1 = text;
   let closure_2 = inlineAttachmentMedia;
@@ -121,7 +102,7 @@ export function wrapSettingWithSelectiveSyncing(UserSettingDefinitions, text, in
     },
     updateSetting: (fn) => {
       let tmp2 = fn;
-      const tmp = f93709;
+      const tmp = f86505;
       if (typeof fn === "function") {
         tmp2 = fn(getSetting());
       }
@@ -142,7 +123,7 @@ export function wrapSettingWithSelectiveSyncing(UserSettingDefinitions, text, in
       obj5 = {};
       obj5[closure_1_2] = arg0;
       obj3[tmp] = obj4;
-      const obj = updateSetting(closure_2[7]);
+      const obj = updateSetting(closure_2[5]);
       obj.dispatch(obj2);
       updateSettingResult = Promise.resolve();
     }
@@ -174,29 +155,28 @@ export function wrapSettingWithOverride(arg0, gifAutoPlay, arg2, arg3) {
     },
     updateSetting: (fn) => {
       let tmp2 = fn;
-      const tmp = f93709;
+      const tmp = f86505;
       if (typeof fn === "function") {
         tmp2 = fn(getSetting());
       }
       return tmp(tmp2);
     }
   };
-  const f93709 = (arg0) => {
+  const f86505 = (arg0) => {
     let items;
     const obj2 = { type: "USER_SETTINGS_OVERRIDE_CLEAR", settings: items };
-    items = [f93709];
-    const obj = gifAutoPlay(closure_2[7]);
+    items = [f86505];
+    const obj = gifAutoPlay(closure_2[5]);
     obj.dispatch(obj2);
     return getSetting.updateSetting(arg0);
   };
   return obj;
 }
-export const wrapSettingWithExperimentDefaults = function wrapSettingWithExperimentDefaults(arg0) {
-  let require;
+export function wrapSettingWithExperimentDefaults(arg0) {
   ({ baseSetting: require, isEligible: importDefault, useIsEligible: dependencyMap, eligibleDefault: SelectivelySyncedUserSettingsStore, ineligibleDefault: UserSettingsProtoStore, onUseDefault: UserSettingsDelay } = arg0);
   return {
     getSetting() {
-      let setting = _require.getSetting();
+      let setting = require.getSetting();
       if (null == setting) {
         let tmp5;
         if (UserSettingsDelay != null) {
@@ -212,7 +192,7 @@ export const wrapSettingWithExperimentDefaults = function wrapSettingWithExperim
       return setting;
     },
     useSetting() {
-      let setting = _require.useSetting();
+      let setting = require.useSetting();
       if (null == setting) {
         let tmp4;
         if (UserSettingsDelay != null) {
@@ -228,7 +208,7 @@ export const wrapSettingWithExperimentDefaults = function wrapSettingWithExperim
       return setting;
     },
     updateSetting(arg0) {
-      return _require.updateSetting(arg0);
+      return require.updateSetting(arg0);
     }
   };
-};
+}

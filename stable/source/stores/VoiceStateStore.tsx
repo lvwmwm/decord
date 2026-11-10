@@ -1,17 +1,17 @@
-// Module ID: 5662
-// Function ID: 5663
+// Module ID: 5679
+// Function ID: 5680
 // Name: VoiceStateStore
-// Dependencies: [32, 5663, 1087, 5664, 12, 504, 1630, 584, 2]
+// Dependencies: [32, 5680, 1072, 5681, 12, 504, 1622, 572, 2]
 
-// Module 5662 (VoiceStateStore)
+// Module 5679 (VoiceStateStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1087 */;
-import MetaQuestUtils from "MetaQuestUtils" /* 1630 */;
-import CallConstants from "CallConstants" /* 5664 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import Constants from "Constants" /* 1072 */;
+import MetaQuestUtils from "MetaQuestUtils" /* 1622 */;
+import CallConstants from "CallConstants" /* 5681 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import VoiceStateRecord from "VoiceStateRecord" /* 5663 */;
+import VoiceStateRecord from "VoiceStateRecord" /* 5680 */;
 import size from "module_2" /* 2 */;
 
 let closure_14, closure_16, closure_9, sessionId, set2, set3;
@@ -179,9 +179,9 @@ let closure_10 = 0;
 let closure_11 = {};
 let set = new Set();
 const map = new Map();
-const syncedClientThemes = {};
-let closure_15 = {};
 const authStore3 = {};
+let closure_15 = {};
+const authStore4 = {};
 let closure_17 = {};
 const Store = get_initializedDefault.Store;
 class VoiceStateStore extends Store {
@@ -363,10 +363,10 @@ class VoiceStateStore extends Store {
     }
     return values(tmp2).length > 0;
   }
-  getVoicePlatformForChannel(id, id2) {
+  getVoicePlatformForChannel(channelId, id) {
     let tmp = null != sessionId;
     if (tmp) {
-      let channelId;
+      channelId = undefined;
       if (closure_16[id] != null) {
         if (closure_16[id][sessionId] != null) {
           channelId = tmp7.channelId;
@@ -374,15 +374,15 @@ class VoiceStateStore extends Store {
       }
       tmp = channelId;
     }
-    if (id2 === id) {
+    if (id === id) {
       let tmp8;
-      if (id === tmp) {
+      if (channelId === tmp) {
         const obj = MetaQuestUtils;
         tmp8 = obj.isMetaQuest() ? tmp11.QUEST : tmp11.MOBILE;
       }
       return tmp8;
     }
-    tmp8 = closure_17["" + id2 + ":" + id];
+    tmp8 = closure_17["" + id + ":" + channelId];
   }
 }
 Object.defineProperty(VoiceStateStore.prototype, "userHasBeenMovedVersion", {

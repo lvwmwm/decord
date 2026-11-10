@@ -1,18 +1,18 @@
-// Module ID: 6742
-// Function ID: 6743
+// Module ID: 6781
+// Function ID: 6782
 // Name: QuestConstants
-// Dependencies: [6743, 1104, 6744, 1297, 6745, 6749, 6750, 12, 2, 6751]
+// Dependencies: [6782, 1089, 6783, 1282, 6784, 6788, 6789, 12, 2, 6790]
 // Exports: getQuestCdnUrlBase, getQuestHomeFilterOptionItem
 
-// Module 6742 (QuestConstants)
-import DurationsDefault from "Durations" /* 1104 */;
-import QuestVariants from "QuestVariants" /* 6743 */;
-import Quests from "Quests" /* 6744 */;
-import QuestTypes from "QuestTypes" /* 6745 */;
-import AdCreativeType from "AdCreativeType" /* 6749 */;
-import FirstPartyQuestTaskTypes from "FirstPartyQuestTaskTypes" /* 6750 */;
-import DismissibleQuestContentFlags from "DismissibleQuestContentFlags" /* 6751 */;
-import HTTPUtils_mod from "HTTPUtils" /* 1297 */;
+// Module 6781 (QuestConstants)
+import DurationsDefault from "Durations" /* 1089 */;
+import QuestVariants from "QuestVariants" /* 6782 */;
+import Quests from "Quests" /* 6783 */;
+import QuestTypes from "QuestTypes" /* 6784 */;
+import AdCreativeType from "AdCreativeType" /* 6788 */;
+import FirstPartyQuestTaskTypes from "FirstPartyQuestTaskTypes" /* 6789 */;
+import DismissibleQuestContentFlags from "DismissibleQuestContentFlags" /* 6790 */;
+import HTTPUtils_mod from "HTTPUtils" /* 1282 */;
 import module_12 from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 
@@ -148,7 +148,7 @@ export const EMPTY_AD_DECISION_DATA = { is_targeted: false };
 export const QuestHomeSortMethods = { SUGGESTED: "suggested", MOST_RECENT: "most_recent", EXPIRING_SOON: "expiring_soon", RECENTLY_ENROLLED: "recently_enrolled" };
 export { TaskFilterTypes };
 export const RewardFilterTypes = obj2;
-export const getQuestHomeFilterOptionItem = function getQuestHomeFilterOptionItem(filter) {
+export function getQuestHomeFilterOptionItem(filter) {
   let obj;
   let tmp2;
   const values = Object.values(obj);
@@ -165,5 +165,5 @@ export const getQuestHomeFilterOptionItem = function getQuestHomeFilterOptionIte
     }
   }
   return tmp2;
-};
+}
 export const SORTED_QUEST_HOME_FILTER_GROUPS = sorted;

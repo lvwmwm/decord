@@ -1,24 +1,23 @@
-// Module ID: 15975
-// Function ID: 15976
+// Module ID: 16548
+// Function ID: 16549
 // Name: UserProfileFloatingUpsell
-// Dependencies: [32, 19, 7336, 21, 5003, 15976, 558, 576, 1633, 2]
+// Dependencies: [32, 19, 7377, 21, 5014, 16536, 1625, 2]
+// Exports: default, useFloatingUpsellHeight
 
-// Module 15975 (UserProfileFloatingUpsell)
+// Module 16548 (UserProfileFloatingUpsell)
 import Fragment from "Fragment" /* 21 */;
-import react2 from "react" /* 576 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
-import UserProfileUpsellCardV2 from "UserProfileUpsellCardV2" /* 15976 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1625 */;
+import UserProfileUpsellCardV2 from "UserProfileUpsellCardV2" /* 16536 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 7336 */;
-import createStyles from "createStyles" /* 5003 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import Constants from "Constants" /* 7377 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
+
+const UserProfileUpsellCardV2Default = UserProfileUpsellCardV2;
 
 let hasOwnProperty;
 let metroRequire;
-let tmp3;
-const UserProfileUpsellCardV2Default = tmp3(15976);
 ({ FLOATING_UPSELL_HEIGHT: hasOwnProperty, PROFILE_SIDE_PADDING: metroRequire } = Constants);
 const jsx = Fragment.jsx;
 let closure_8 = createStyles.createStyles((bottom) => {
@@ -26,65 +25,16 @@ let closure_8 = createStyles.createStyles((bottom) => {
   ({ position: "absolute", bottom, start: 0, end: 0, marginHorizontal: metroRequire - UserProfileUpsellCardV2.GRADIENT_BORDER_WIDTH });
   return obj;
 });
-let ReactCompilerGating = ReactCompilerGating_mod;
-tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFloatingUpsellHeight() {
-  let closure_129_0;
-  let first;
-  let tmp3;
-  let tmp5;
-  const obj = react2;
-  const cResult = obj.c(3);
-  [tmp3, closure_129_0] = react.useState(hasOwnProperty);
-  _slicedToArray(react.useState(hasOwnProperty), 2);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function n(nativeEvent) {
-      return closure_1_0(nativeEvent.nativeEvent.layout.height);
-    };
-    cResult[0] = fn;
-    first = fn;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== tmp3) {
-    const obj2 = { height: tmp3, onLayout: first };
-    cResult[1] = tmp3;
-    cResult[2] = obj2;
-    tmp5 = obj2;
-  } else {
-    tmp5 = cResult[2];
-  }
-  return tmp5;
-}) : (function useFloatingUpsellHeight() {
+const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileFloatingUpsell.tsx");
+
+export default function UserProfileFloatingUpsell(arg0) {
+  UserProfileUpsellCardV2Default;
+  const merged = Object.assign(arg0);
+  return <tmp2 style={closure_8(useSafeAreaInsetsDefault().bottom).container} />;
+};
+export function useFloatingUpsellHeight() {
   const tmp = _slicedToArray(react.useState(hasOwnProperty), 2);
   let closure_0 = tmp[1];
   const obj = { height: tmp[0], onLayout: react.useCallback((nativeEvent) => closure_0(nativeEvent.nativeEvent.layout.height), []) };
   return obj;
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileFloatingUpsell(arg0) {
-  const obj = react2;
-  const cResult = obj.c(3);
-  const tmp4 = closure_8(useSafeAreaInsetsDefault().bottom);
-  if (cResult[0] === arg0) {
-    let tmp5;
-    if (cResult[1] === tmp4.container) {
-      tmp5 = cResult[2];
-    }
-    return tmp5;
-  }
-  UserProfileUpsellCardV2Default;
-  const merged = Object.assign(arg0);
-  const tmp8 = <tmp3Result style={tmp4.container} />;
-  cResult[0] = arg0;
-  cResult[1] = tmp4.container;
-  cResult[2] = tmp8;
-  tmp5 = tmp8;
-}) : (function UserProfileFloatingUpsell(arg0) {
-  UserProfileUpsellCardV2Default;
-  const merged = Object.assign(arg0);
-  return <tmp2 style={closure_8(useSafeAreaInsetsDefault().bottom).container} />;
-});
-const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileFloatingUpsell.tsx");
-
-export default tmp4;
-export const useFloatingUpsellHeight = tmp3;
+}

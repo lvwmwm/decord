@@ -1,13 +1,13 @@
-// Module ID: 9698
-// Function ID: 9699
+// Module ID: 9779
+// Function ID: 9780
 // Name: imagePreConvert
-// Dependencies: [32, 5, 8177, 8206, 8299, 2002, 7112, 2]
+// Dependencies: [32, 5, 8211, 8239, 8332, 1994, 7154, 2]
 // Exports: itemNeedsImagePreConversion, maybePreConvertImageItem
 
-// Module 9698 (imagePreConvert)
-import asyncRequire from "asyncRequire" /* 2002 */;
-import UploadPlatform from "UploadPlatform" /* 8177 */;
-import imageFilename from "imageFilename" /* 8206 */;
+// Module 9779 (imagePreConvert)
+import asyncRequire from "asyncRequire" /* 1994 */;
+import UploadPlatform from "UploadPlatform" /* 8211 */;
+import imageFilename from "imageFilename" /* 8239 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size_mod from "module_2" /* 2 */;
@@ -53,7 +53,7 @@ let value = function _maybePreConvertImageItem() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -217,7 +217,7 @@ let value = function _maybePreConvertImageItem() {
 let size = size_mod;
 const result = size.fileFinishedImporting("lib/uploader/imagePreConvert.tsx");
 
-export const itemNeedsImagePreConversion = function itemNeedsImagePreConversion(file) {
+export function itemNeedsImagePreConversion(file) {
   let tmp3 = null;
   if (file.platform === UploadPlatform.UploadPlatform.WEB) {
     tmp3 = null;
@@ -239,7 +239,7 @@ export const itemNeedsImagePreConversion = function itemNeedsImagePreConversion(
     }
   }
   return null != tmp3;
-};
-export const maybePreConvertImageItem = function maybePreConvertImageItem() {
+}
+export function maybePreConvertImageItem() {
   return obj(...arguments);
-};
+}

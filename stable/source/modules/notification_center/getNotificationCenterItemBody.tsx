@@ -1,20 +1,20 @@
-// Module ID: 17905
-// Function ID: 17906
+// Module ID: 18491
+// Function ID: 18492
 // Name: getNotificationCenterItemBody
-// Dependencies: [6816, 4877, 4945, 1392, 1087, 1128, 5057, 6820, 2033, 38, 2]
+// Dependencies: [6855, 4885, 4956, 1383, 1072, 1113, 5068, 6859, 2026, 38, 2]
 // Exports: default, getFriendRequestSentBody
 
-// Module 17905 (getNotificationCenterItemBody)
+// Module 18491 (getNotificationCenterItemBody)
 import _modDef38 from "module_38" /* 38 */;
-import intl13 from "intl" /* 1128 */;
-import StringUtils from "StringUtils" /* 2033 */;
-import UserUtilsDefault from "UserUtils" /* 5057 */;
-import GuildScheduledEventStore2 from "GuildScheduledEventStore" /* 6816 */;
-import NotificationCenterItemsTypes from "NotificationCenterItemsTypes" /* 6820 */;
-import GuildStore from "GuildStore" /* 4877 */;
-import RelationshipStore from "RelationshipStore" /* 4945 */;
-import UserStore from "UserStore" /* 1392 */;
-import Constants from "Constants" /* 1087 */;
+import intl13 from "intl" /* 1113 */;
+import StringUtils from "StringUtils" /* 2026 */;
+import UserUtilsDefault from "UserUtils" /* 5068 */;
+import GuildScheduledEventStore2 from "GuildScheduledEventStore" /* 6855 */;
+import NotificationCenterItemsTypes from "NotificationCenterItemsTypes" /* 6859 */;
+import GuildStore from "GuildStore" /* 4885 */;
+import RelationshipStore from "RelationshipStore" /* 4956 */;
+import UserStore from "UserStore" /* 1383 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 const GuildScheduledEventStore = GuildScheduledEventStore2;
@@ -86,7 +86,7 @@ export default function getNotificationCenterItemBody(arg0) {
       num = 0;
     }
     const maxResult = max(num - 2, 0);
-    const intl12 = tmp8(1128).intl;
+    const intl12 = tmp8(1113).intl;
     const obj2 = { user: name2, user2: name3, count: maxResult };
     return intl12.format(intl13.t.g5xyIC, obj2);
   } else if (NotificationCenterItemsTypes.NotificationCenterLocalItems.MOBILE_NATIVE_UPDATE_AVAILABLE === type) {
@@ -103,9 +103,9 @@ export default function getNotificationCenterItemBody(arg0) {
   } else if (NotificationCenterItemsTypes.NotificationCenterItems.FRIEND_SUGGESTION_CREATED === type) {
     let str5;
     if (RelationshipStore.getRelationshipType(id) === constants.PENDING_OUTGOING) {
-      const intl11 = tmp8(1128).intl;
+      const intl11 = tmp8(1113).intl;
       const obj3 = { user: name1 };
-      str5 = intl11.format(tmp8(1128).t.gZVTy2, obj3);
+      str5 = intl11.format(tmp8(1113).t.gZVTy2, obj3);
     } else {
       str5 = item.body;
       if (str5 == null) {
@@ -140,9 +140,9 @@ export default function getNotificationCenterItemBody(arg0) {
       if (!tmp8Result2.isNullOrEmpty(name)) {
         let formatResult;
         if (tmp30Result) {
-          const intl10 = tmp8(1128).intl;
+          const intl10 = tmp8(1113).intl;
           const obj4 = { event_name: name, guild_name: name4 };
-          formatResult = intl10.format(tmp8(1128).t.AyvfXR, obj4);
+          formatResult = intl10.format(tmp8(1113).t.AyvfXR, obj4);
         }
         return formatResult;
       }
@@ -154,39 +154,39 @@ export default function getNotificationCenterItemBody(arg0) {
     formatResult = str4;
   } else if (NotificationCenterItemsTypes.NotificationCenterLocalItems.INCOMING_FRIEND_REQUESTS === type) {
     let formatResult1;
-    const v9Dgf1L = tmp8(1128).t["9Dgf1L"];
+    const v9Dgf1L = tmp8(1113).t["9Dgf1L"];
     if (null != applicationId) {
-      const intl9 = tmp8(1128).intl;
+      const intl9 = tmp8(1113).intl;
       const obj5 = { username: name1, applicationName };
       formatResult1 = intl9.format(v9Dgf1L, obj5);
     } else {
-      const intl8 = tmp8(1128).intl;
+      const intl8 = tmp8(1113).intl;
       const obj6 = { username: name1 };
       formatResult1 = intl8.format(tmp22, obj6);
     }
     return formatResult1;
   } else if (NotificationCenterItemsTypes.NotificationCenterLocalItems.INCOMING_FRIEND_REQUESTS_ACCEPTED === type) {
     let formatResult2;
-    const nnC1q9 = tmp8(1128).t.nnC1q9;
+    const nnC1q9 = tmp8(1113).t.nnC1q9;
     if (null != applicationId) {
-      const intl7 = tmp8(1128).intl;
+      const intl7 = tmp8(1113).intl;
       const obj7 = { username: name1, applicationName };
       formatResult2 = intl7.format(nnC1q9, obj7);
     } else {
-      const intl6 = tmp8(1128).intl;
+      const intl6 = tmp8(1113).intl;
       const obj8 = { username: name1 };
       formatResult2 = intl6.format(tmp19, obj8);
     }
     return formatResult2;
   } else if (NotificationCenterItemsTypes.NotificationCenterItems.FRIEND_REQUEST_ACCEPTED === type) {
     let formatResult3;
-    const jXlYiF = tmp8(1128).t.jXlYiF;
+    const jXlYiF = tmp8(1113).t.jXlYiF;
     if (null != applicationId) {
-      const intl5 = tmp8(1128).intl;
+      const intl5 = tmp8(1113).intl;
       const obj9 = { username: name1, applicationName };
       formatResult3 = intl5.format(jXlYiF, obj9);
     } else {
-      const intl4 = tmp8(1128).intl;
+      const intl4 = tmp8(1113).intl;
       const obj10 = { username: name1 };
       formatResult3 = intl4.format(tmp17, obj10);
     }
@@ -196,7 +196,7 @@ export default function getNotificationCenterItemBody(arg0) {
     const tmp14 = null != applicationId;
     const tmp2Result5 = _modDef38;
     tmp2Result5(tmp14, "Expected application id for " + item.type);
-    const intl3 = tmp8(1128).intl;
+    const intl3 = tmp8(1113).intl;
     const obj11 = {
       username: name1,
       applicationName() {
@@ -209,7 +209,7 @@ export default function getNotificationCenterItemBody(arg0) {
     const tmp10 = null != applicationId;
     const tmp2Result6 = _modDef38;
     tmp2Result6(tmp10, "Expected application id for " + item.type);
-    const intl2 = tmp8(1128).intl;
+    const intl2 = tmp8(1113).intl;
     const obj12 = {
       username: name1,
       applicationName() {
@@ -222,14 +222,14 @@ export default function getNotificationCenterItemBody(arg0) {
     if (null == applicationId) {
       body = item.body;
     } else {
-      const intl = tmp8(1128).intl;
+      const intl = tmp8(1113).intl;
       const obj = {
         username: name1,
         applicationName() {
               return renderApplication(applicationId);
             }
       };
-      body = intl.format(tmp8(1128).t.Wi64vN, obj);
+      body = intl.format(tmp8(1113).t.Wi64vN, obj);
     }
     return body;
   } else {
@@ -240,8 +240,8 @@ export default function getNotificationCenterItemBody(arg0) {
     return str;
   }
 };
-export const getFriendRequestSentBody = function getFriendRequestSentBody(user) {
+export function getFriendRequestSentBody(user) {
   const intl = intl13.intl;
   const obj = { user };
   return intl.format(intl13.t.gZVTy2, obj);
-};
+}

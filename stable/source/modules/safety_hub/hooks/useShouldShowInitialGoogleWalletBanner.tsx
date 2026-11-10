@@ -1,15 +1,15 @@
-// Module ID: 16067
-// Function ID: 16068
+// Module ID: 16638
+// Function ID: 16639
 // Name: useShouldShowInitialGoogleWalletBanner
-// Dependencies: [5, 32, 19, 7954, 7930, 504, 1384, 7929, 7961, 1400, 7964, 2]
+// Dependencies: [5, 32, 19, 7994, 7970, 504, 1375, 7969, 8001, 1391, 8004, 2]
 // Exports: useShouldShowInitialGoogleWalletBanner
 
-// Module 16067 (useShouldShowInitialGoogleWalletBanner)
-import SafetyHubConstants from "SafetyHubConstants" /* 7930 */;
+// Module 16638 (useShouldShowInitialGoogleWalletBanner)
+import SafetyHubConstants from "SafetyHubConstants" /* 7970 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import SafetyHubStore from "SafetyHubStore" /* 7954 */;
+import SafetyHubStore from "SafetyHubStore" /* 7994 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -18,7 +18,7 @@ let c3, c4;
 const AgeCheckStatus = SafetyHubConstants.AgeCheckStatus;
 const result = size.fileFinishedImporting("modules/safety_hub/hooks/useShouldShowInitialGoogleWalletBanner.tsx");
 
-export const useShouldShowInitialGoogleWalletBanner = function useShouldShowInitialGoogleWalletBanner() {
+export function useShouldShowInitialGoogleWalletBanner() {
   let stateFromStores;
   let tmp6;
   let tmp = require;
@@ -62,7 +62,7 @@ export const useShouldShowInitialGoogleWalletBanner = function useShouldShowInit
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "IconComponent", done: "+352" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           let c2;
@@ -140,7 +140,7 @@ export const useShouldShowInitialGoogleWalletBanner = function useShouldShowInit
                 c2 = 0;
               }
               c4 = 3;
-              return { value: "IconComponent", done: "+352" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp24) {
             if (0 === c2) {
@@ -166,4 +166,4 @@ export const useShouldShowInitialGoogleWalletBanner = function useShouldShowInit
     stateFromStores = tmp6;
   }
   return stateFromStores;
-};
+}

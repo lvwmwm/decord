@@ -1,18 +1,18 @@
-// Module ID: 11344
-// Function ID: 11345
+// Module ID: 11647
+// Function ID: 11648
 // Name: ChannelDetailsUtils
-// Dependencies: [10056, 1108, 2]
+// Dependencies: [10137, 1093, 2]
 // Exports: getChannelDetailsButtons, navigateToChannelDetailsScreen
 
-// Module 11344 (ChannelDetailsUtils)
-import ChannelTypes from "ChannelTypes" /* 1108 */;
-import ChannelDetailsConstants from "ChannelDetailsConstants" /* 10056 */;
+// Module 11647 (ChannelDetailsUtils)
+import ChannelTypes from "ChannelTypes" /* 1093 */;
+import ChannelDetailsConstants from "ChannelDetailsConstants" /* 10137 */;
 import size from "module_2" /* 2 */;
 
 const ChannelDetailsButtonTypes = ChannelDetailsConstants.ChannelDetailsButtonTypes;
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/sidebar/details/ChannelDetailsUtils.tsx");
 
-export const getChannelDetailsButtons = function getChannelDetailsButtons(channel, stateFromStores) {
+export function getChannelDetailsButtons(channel, stateFromStores) {
   let items;
   let flag = stateFromStores;
   if (stateFromStores === undefined) {
@@ -29,8 +29,8 @@ export const getChannelDetailsButtons = function getChannelDetailsButtons(channe
     found = items.filter((item) => item !== constants.MUTE);
   }
   return found;
-};
-export const navigateToChannelDetailsScreen = function navigateToChannelDetailsScreen(navigation, PERMISSIONS, channelId, source) {
+}
+export function navigateToChannelDetailsScreen(navigate, PERMISSIONS, channelId, source) {
   const obj = { screen: PERMISSIONS, channelId, source };
-  navigation.navigate("sidebar", obj);
-};
+  navigate.navigate("sidebar", obj);
+}

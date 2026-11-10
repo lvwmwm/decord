@@ -1,18 +1,15 @@
-// Module ID: 13385
-// Function ID: 13386
+// Module ID: 14018
+// Function ID: 14019
 // Name: useIsStricterMessageRequests
-// Dependencies: [558, 13352, 2]
+// Dependencies: [13983, 2]
 // Exports: default
 
-// Module 13385 (useIsStricterMessageRequests)
-import RegionalTeenUtils from "RegionalTeenUtils" /* 13352 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+// Module 14018 (useIsStricterMessageRequests)
+import RegionalTeenUtils from "RegionalTeenUtils" /* 13983 */;
 import size from "module_2" /* 2 */;
 
 const set = new Set(["GB"]);
-let ReactCompilerGating = ReactCompilerGating_mod;
-ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
-const result1 = size.fileFinishedImporting("modules/message_request/hooks/useIsStricterMessageRequests.tsx");
+const result = size.fileFinishedImporting("modules/message_request/hooks/useIsStricterMessageRequests.tsx");
 
 export default function useIsStricterMessageRequests() {
   const obj = RegionalTeenUtils;

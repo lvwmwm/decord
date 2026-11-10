@@ -1,22 +1,22 @@
-// Module ID: 11490
-// Function ID: 11491
+// Module ID: 11793
+// Function ID: 11794
 // Name: handlePressJoinActivity
-// Dependencies: [5, 2024, 4855, 4877, 4935, 1392, 5662, 4854, 11487, 11448, 5940, 1128, 6841, 6694, 11418, 11395, 2]
+// Dependencies: [5, 2016, 4863, 4885, 4946, 1383, 5679, 4862, 11790, 11749, 5958, 1113, 6881, 6734, 11720, 11697, 2]
 // Exports: maybeJoinEmbeddedActivity
 
-// Module 11490 (handlePressJoinActivity)
-import intl11 from "intl" /* 1128 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5940 */;
-import showActivitiesInvalidPermissionsAlert from "showActivitiesInvalidPermissionsAlert" /* 11448 */;
-import getEmbeddedActivityJoinability from "getEmbeddedActivityJoinability" /* 11487 */;
+// Module 11793 (handlePressJoinActivity)
+import intl11 from "intl" /* 1113 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5958 */;
+import showActivitiesInvalidPermissionsAlert from "showActivitiesInvalidPermissionsAlert" /* 11749 */;
+import getEmbeddedActivityJoinability from "getEmbeddedActivityJoinability" /* 11790 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationRecord from "ApplicationRecord" /* 2024 */;
-import ChannelStore from "ChannelStore" /* 4855 */;
-import GuildStore from "GuildStore" /* 4877 */;
-import PermissionStore from "PermissionStore" /* 4935 */;
-import UserStore from "UserStore" /* 1392 */;
-import VoiceStateStore from "VoiceStateStore" /* 5662 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4854 */;
+import ApplicationRecord from "ApplicationRecord" /* 2016 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import GuildStore from "GuildStore" /* 4885 */;
+import PermissionStore from "PermissionStore" /* 4946 */;
+import UserStore from "UserStore" /* 1383 */;
+import VoiceStateStore from "VoiceStateStore" /* 5679 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4862 */;
 import size from "module_2" /* 2 */;
 
 let application, currentUser;
@@ -46,36 +46,36 @@ function handlePressJoinActivity(arg0) {
     const obj2 = { title: intl9.string(intl11.t.PtobXW), body: intl10.string(intl11.t.UXoQTp), hideActionSheet: false };
     const show5 = AlertActionCreatorsDefault.show;
     AlertActionCreatorsDefault;
-    intl9 = tmp(1128).intl;
-    intl10 = tmp(1128).intl;
+    intl9 = tmp(1113).intl;
+    intl10 = tmp(1113).intl;
     show5(obj2);
   } else if (getEmbeddedActivityJoinability.EmbeddedActivityJoinability.ACTIVITY_NOT_SUPPORTED_ON_OS === embeddedActivityJoinability) {
     const obj3 = { title: intl7.string(intl11.t.PtobXW), body: intl8.string(intl11.t.uGDCcw), hideActionSheet: false };
     const show4 = AlertActionCreatorsDefault.show;
     AlertActionCreatorsDefault;
-    intl7 = tmp(1128).intl;
-    intl8 = tmp(1128).intl;
+    intl7 = tmp(1113).intl;
+    intl8 = tmp(1113).intl;
     show4(obj3);
   } else if (getEmbeddedActivityJoinability.EmbeddedActivityJoinability.ACTIVITY_AGE_GATED === embeddedActivityJoinability) {
     const obj4 = { title: intl5.string(intl11.t.PtobXW), body: intl6.string(intl11.t["4WuFRE"]), hideActionSheet: false };
     const show3 = AlertActionCreatorsDefault.show;
     AlertActionCreatorsDefault;
-    intl5 = tmp(1128).intl;
-    intl6 = tmp(1128).intl;
+    intl5 = tmp(1113).intl;
+    intl6 = tmp(1113).intl;
     show3(obj4);
   } else if (getEmbeddedActivityJoinability.EmbeddedActivityJoinability.CHANNEL_CONTENT_GATED === embeddedActivityJoinability) {
     const obj5 = { title: intl3.string(intl11.t.PtobXW), body: intl4.string(intl11.t.pKLV22), hideActionSheet: false };
     const show2 = AlertActionCreatorsDefault.show;
     AlertActionCreatorsDefault;
-    intl3 = tmp(1128).intl;
-    intl4 = tmp(1128).intl;
+    intl3 = tmp(1113).intl;
+    intl4 = tmp(1113).intl;
     show2(obj5);
   } else {
     obj = { title: intl.string(intl11.t.PtobXW), body: intl2.string(intl11.t.FUCQco), hideActionSheet: false };
     const show = AlertActionCreatorsDefault.show;
     AlertActionCreatorsDefault;
-    intl = tmp(1128).intl;
-    intl2 = tmp(1128).intl;
+    intl = tmp(1113).intl;
+    intl2 = tmp(1113).intl;
     show(obj);
   }
 }
@@ -155,7 +155,7 @@ let obj = function _maybeJoinEmbeddedActivity() {
           tmp50(obj9);
         }
       }
-      await "IconComponent";
+      await "HermesInternal";
       if (arg0 === 1) {
         throw value;
       }
@@ -182,7 +182,7 @@ let obj = function _maybeJoinEmbeddedActivity() {
               const obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "IconComponent", done: "+352" };
+              return { value: "HermesInternal", done: null };
             }
           } else {
             try {
@@ -211,7 +211,7 @@ let obj = function _maybeJoinEmbeddedActivity() {
                 return obj;
               }
               c0 = 3;
-              return { value: "IconComponent", done: "+352" };
+              return { value: "HermesInternal", done: null };
             } catch (tmp12) {
               c0 = 3;
               throw tmp12;
@@ -220,7 +220,7 @@ let obj = function _maybeJoinEmbeddedActivity() {
         });
         return obj(...arguments);
       };
-      return "Reflect";
+      return "flexDirection";
     })();
     iter.next();
     return iter;
@@ -230,6 +230,6 @@ let obj = function _maybeJoinEmbeddedActivity() {
 let result = size.fileFinishedImporting("modules/activities/handlePressJoinActivity.tsx");
 
 export default handlePressJoinActivity;
-export const maybeJoinEmbeddedActivity = function maybeJoinEmbeddedActivity() {
+export function maybeJoinEmbeddedActivity() {
   return obj(...arguments);
-};
+}

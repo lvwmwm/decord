@@ -1,93 +1,27 @@
-// Module ID: 12248
-// Function ID: 12249
+// Module ID: 12535
+// Function ID: 12536
 // Name: useUploadDisabled
-// Dependencies: [7663, 4935, 8325, 1087, 558, 576, 7355, 504, 2]
+// Dependencies: [7701, 4946, 8208, 1072, 504, 7396, 2]
+// Exports: default
 
-// Module 12248 (useUploadDisabled)
-import FakePlaceholderPrivateChannel from "FakePlaceholderPrivateChannel" /* 7355 */;
-import DraftStore from "DraftStore" /* 7663 */;
-import PermissionStore from "PermissionStore" /* 4935 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 8325 */;
-import Constants from "Constants" /* 1087 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 12535 (useUploadDisabled)
+import FakePlaceholderPrivateChannel from "FakePlaceholderPrivateChannel" /* 7396 */;
+import DraftStore from "DraftStore" /* 7701 */;
+import PermissionStore from "PermissionStore" /* 4946 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 8208 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, tmp2, tmp6;
+let _require;
 
 let hasOwnProperty;
 let metroRequire;
 const DraftType = DraftStore.DraftType;
 ({ MAX_UPLOAD_COUNT: hasOwnProperty, Permissions: metroRequire } = Constants);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUploadDisabled(arg0) {
-  let first;
-  let id;
-  let tmp7;
-  _require = arg0;
-  let tmp = _require;
-  const obj = require("react");
-  const cResult = obj.c(3);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [PermissionStore, ];
-    items[1] = UploadAttachmentStore;
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    class A {
-      constructor() {
-        obj = closure_0;
-        tmp = closure_4.getUploads(closure_0.id, DraftType.ChannelMessage).length >= MAX_UPLOAD_COUNT;
-        if (!tmp) {
-          tmp2 = closure_0;
-          tmp3 = closure_1;
-          tmp4 = obj.id === closure_0(closure_1[6]).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID;
-          if (!tmp4) {
-            isPrivateResult = obj.isPrivate();
-            if (!isPrivateResult) {
-              tmp6 = closure_3;
-              tmp7 = Permissions;
-              isPrivateResult = closure_3.can(Permissions.ATTACH_FILES, obj);
-            }
-            tmp4 = !isPrivateResult;
-          }
-          tmp = tmp4;
-        }
-        return tmp;
-      }
-    }
-    cResult[1] = arg0;
-    cResult[2] = A;
-    tmp7 = A;
-  } else {
-    class A {
-      constructor() {
-        obj = closure_0;
-        tmp = closure_4.getUploads(closure_0.id, DraftType.ChannelMessage).length >= MAX_UPLOAD_COUNT;
-        if (!tmp) {
-          tmp2 = closure_0;
-          tmp3 = closure_1;
-          tmp4 = obj.id === closure_0(closure_1[6]).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID;
-          if (!tmp4) {
-            isPrivateResult = obj.isPrivate();
-            if (!isPrivateResult) {
-              tmp6 = closure_3;
-              tmp7 = Permissions;
-              isPrivateResult = closure_3.can(Permissions.ATTACH_FILES, obj);
-            }
-            tmp4 = !isPrivateResult;
-          }
-          tmp = tmp4;
-        }
-        return tmp;
-      }
-    }
-  }
-  const tmpResult = tmp(504);
-  return tmpResult.useStateFromStores(first, tmp7);
-}) : (function useUploadDisabled(arg0) {
+const result = size.fileFinishedImporting("modules/media_keyboard/native/useUploadDisabled.tsx");
+
+export default function useUploadDisabled(arg0) {
   let id;
   _require = arg0;
   const obj = require("get initialized");
@@ -104,7 +38,4 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUploadD
     }
     return tmp;
   });
-});
-const result = size.fileFinishedImporting("modules/media_keyboard/native/useUploadDisabled.tsx");
-
-export default tmp3;
+};

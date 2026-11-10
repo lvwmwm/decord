@@ -1,12 +1,12 @@
-// Module ID: 7807
-// Function ID: 7808
+// Module ID: 7845
+// Function ID: 7846
 // Name: BountyStore
-// Dependencies: [6749, 504, 584, 2]
+// Dependencies: [6788, 504, 572, 2]
 
-// Module 7807 (BountyStore)
+// Module 7845 (BountyStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import AdCreativeType from "AdCreativeType" /* 6749 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import AdCreativeType from "AdCreativeType" /* 6788 */;
 import size from "module_2" /* 2 */;
 
 function resetStateForDeliveredBounties(items) {
@@ -35,9 +35,9 @@ class BountyStore extends Store {
   isBountyCompleted(id) {
     return set.has(id);
   }
-  getCompletedBountyCount(first1) {
+  getCompletedBountyCount(arg0) {
     let num = 0;
-    const tmp = first1[Symbol.iterator]();
+    const tmp = arg0[Symbol.iterator]();
     while (tmp !== undefined) {
       if (set.has(tmp2.id)) {
         num = num + 1;

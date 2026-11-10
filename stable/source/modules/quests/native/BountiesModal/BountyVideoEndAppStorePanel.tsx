@@ -1,28 +1,27 @@
-// Module ID: 16381
-// Function ID: 16382
+// Module ID: 16970
+// Function ID: 16971
 // Name: BountyVideoEndAppStorePanel
-// Dependencies: [19, 17, 1207, 5298, 21, 5003, 587, 14142, 5295, 5084, 7824, 5688, 14138, 5329, 5238, 5241, 5614, 558, 576, 504, 5069, 2]
+// Dependencies: [19, 17, 1192, 5273, 21, 5014, 575, 14667, 5593, 5095, 7862, 5705, 14663, 5303, 5254, 5257, 5595, 504, 5080, 2]
+// Exports: default
 
-// Module 16381 (BountyVideoEndAppStorePanel)
+// Module 16970 (BountyVideoEndAppStorePanel)
 import get_initialized from "get initialized" /* 504 */;
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import native from "native" /* 5069 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5084 */;
-import timing from "timing" /* 5238 */;
-import timingPresets from "timingPresets" /* 5241 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 5298 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5329 */;
-import openURLDefault from "openURL" /* 5688 */;
-import AnalyticsActions from "AnalyticsActions" /* 7824 */;
-import AppStoreOverlayContent from "AppStoreOverlayContent" /* 14138 */;
-import AppStoreOverlayBody from "AppStoreOverlayBody" /* 14142 */;
+import nativeDefault from "native" /* 575 */;
+import native from "native" /* 5080 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
+import timing from "timing" /* 5254 */;
+import timingPresets from "timingPresets" /* 5257 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 5273 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5303 */;
+import openURLDefault from "openURL" /* 5705 */;
+import AnalyticsActions from "AnalyticsActions" /* 7862 */;
+import AppStoreOverlayContent from "AppStoreOverlayContent" /* 14663 */;
+import AppStoreOverlayBody from "AppStoreOverlayBody" /* 14667 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ThemeStore from "ThemeStore" /* 1207 */;
+import ThemeStore from "ThemeStore" /* 1192 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5003 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -63,7 +62,7 @@ function BountyVideoEndAppStorePanelInner(metadata) {
   let obj = metadata(revealProgress[8]);
   const unmountEffect = obj.useUnmountEffect(onPress);
   let obj2 = metadata(revealProgress[9]);
-  class H {
+  class A {
     constructor() {
       let interpolate;
       let items;
@@ -80,11 +79,11 @@ function BountyVideoEndAppStorePanelInner(metadata) {
     }
   }
   const obj3 = { interpolate: metadata(revealProgress[9]).interpolate, revealProgress, sheetHeight, Extrapolation: metadata(revealProgress[9]).Extrapolation };
-  H.__closure = obj3;
-  H.__workletHash = 2597568517005;
-  H.__initData = __initData;
+  A.__closure = obj3;
+  A.__workletHash = 2597568517005;
+  A.__initData = __initData;
   let items1 = [metadata.storeUrl, onInstallPress];
-  const animatedStyle = obj2.useAnimatedStyle(H);
+  const animatedStyle = obj2.useAnimatedStyle(A);
   const callback1 = onDismiss.useCallback(() => {
     onInstallPress(AnalyticsActions.AppStoreOverlaySurfaces.MAIN_CTA);
     openURLDefault(metadata.storeUrl);
@@ -135,7 +134,7 @@ function BountyVideoEndAppStorePanelInner(metadata) {
     const onBeginResult = failOffsetXResult.onBegin(fn);
     const onUpdateResult = onBeginResult.onUpdate(fn2);
     fn3.__closure = { revealProgress, DISMISS_PROGRESS_THRESHOLD: 0.5, DISMISS_VELOCITY_THRESHOLD: 800, runOnJS: ReanimatedRexport.runOnJS, handleDismiss, withTiming: timing.withTiming, timingStandard: timingPresets.timingStandard };
-    fn3.__workletHash = 1930356737433;
+    fn3.__workletHash = 11043554169049;
     fn3.__initData = __initData;
     ({ revealProgress, DISMISS_PROGRESS_THRESHOLD: 0.5, DISMISS_VELOCITY_THRESHOLD: 800, runOnJS: ReanimatedRexport.runOnJS, handleDismiss, withTiming: timing.withTiming, timingStandard: timingPresets.timingStandard });
     return onUpdateResult.onEnd(fn3);
@@ -179,53 +178,12 @@ createStyles = createStyles.createStyles;
 obj3 = { paddingBottom: AppStoreOverlayBody.APP_STORE_OVERLAY_FOOTER_GRADIENT_HEIGHT };
 let closure_9 = createStyles(obj);
 const __initData = { code: "function BountyVideoEndAppStorePanelTsx1(){const{interpolate,revealProgress,sheetHeight,Extrapolation}=this.__closure;return{transform:[{translateY:interpolate(revealProgress.get(),[0,1],[sheetHeight,0],Extrapolation.CLAMP)}]};}" };
-let closure_11 = { code: "function BountyVideoEndAppStorePanelTsx2(event_0){const{revealProgress,DISMISS_PROGRESS_THRESHOLD,DISMISS_VELOCITY_THRESHOLD,runOnJS,handleDismiss,withTiming,timingStandard}=this.__closure;if(revealProgress.get()<DISMISS_PROGRESS_THRESHOLD||event_0.velocityY>DISMISS_VELOCITY_THRESHOLD){runOnJS(handleDismiss)();return;}revealProgress.set(withTiming(1,timingStandard));}" };
+let closure_11 = { code: "function BountyVideoEndAppStorePanelTsx2(event){const{revealProgress,DISMISS_PROGRESS_THRESHOLD,DISMISS_VELOCITY_THRESHOLD,runOnJS,handleDismiss,withTiming,timingStandard}=this.__closure;if(revealProgress.get()<DISMISS_PROGRESS_THRESHOLD||event.velocityY>DISMISS_VELOCITY_THRESHOLD){runOnJS(handleDismiss)();return;}revealProgress.set(withTiming(1,timingStandard));}" };
 let closure_12 = { code: "function BountyVideoEndAppStorePanelTsx3(event){const{revealProgress,dragStartProgress,sheetHeight}=this.__closure;revealProgress.set(Math.max(0,Math.min(1,dragStartProgress.get()-event.translationY/sheetHeight)));}" };
 let closure_13 = { code: "function BountyVideoEndAppStorePanelTsx4(){const{dragStartProgress,revealProgress}=this.__closure;dragStartProgress.set(revealProgress.get());}" };
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BountyVideoEndAppStorePanel(arg0) {
-  let theme;
-  let tmp4;
-  let tmp5;
-  let tmp8;
-  const obj = react2;
-  const cResult = obj.c(7);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [ThemeStore];
-    const fn = function n() {
-      return theme.theme;
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  const tmpResult = get_initialized;
-  const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
-  if (cResult[2] !== arg0) {
-    const obj2 = {};
-    const merged = Object.assign(arg0);
-    const tmp14 = metroImportDefault(BountyVideoEndAppStorePanelInner, obj2);
-    cResult[2] = arg0;
-    cResult[3] = tmp14;
-    tmp8 = tmp14;
-  } else {
-    tmp8 = cResult[3];
-  }
-  if (cResult[4] === stateFromStores) {
-    let tmp15;
-    if (cResult[5] === tmp8) {
-      tmp15 = cResult[6];
-    }
-    return tmp15;
-  }
-  const tmp16 = metroImportDefault(native.ThemeContextProvider, { theme: stateFromStores, children: tmp8 });
-  cResult[4] = stateFromStores;
-  cResult[5] = tmp8;
-  cResult[6] = tmp16;
-  tmp15 = tmp16;
-}) : (function BountyVideoEndAppStorePanel(arg0) {
+let result = size.fileFinishedImporting("modules/quests/native/BountiesModal/BountyVideoEndAppStorePanel.tsx");
+
+export default function BountyVideoEndAppStorePanel(arg0) {
   let obj3;
   let theme;
   const items = [ThemeStore];
@@ -236,7 +194,4 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BountyVideoE
   const ThemeContextProvider = native.ThemeContextProvider;
   const merged = Object.assign(arg0);
   return metroImportDefault(ThemeContextProvider, obj2);
-});
-let result = size.fileFinishedImporting("modules/quests/native/BountiesModal/BountyVideoEndAppStorePanel.tsx");
-
-export default tmp5;
+};

@@ -1,11 +1,11 @@
-// Module ID: 18492
-// Function ID: 18493
+// Module ID: 19124
+// Function ID: 19125
 // Name: useActivityWebViewLockManager
-// Dependencies: [32, 19, 5084, 5069, 2]
+// Dependencies: [32, 19, 5095, 5080, 2]
 // Exports: default, useLockedWebView
 
-// Module 18492 (useActivityWebViewLockManager)
-import native from "native" /* 5069 */;
+// Module 19124 (useActivityWebViewLockManager)
+import native from "native" /* 5080 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -76,7 +76,7 @@ export default function useActivityWebViewLockManager() {
       }, items);
       const items1 = [id, tmp4];
       const layoutEffect = getCanRender.useLayoutEffect(() => {
-        const f161705 = () => {
+        const f138145 = () => {
           let tmp6;
           let tmp8;
           const tmp2 = closure_1_2[Symbol.iterator]();
@@ -100,12 +100,12 @@ export default function useActivityWebViewLockManager() {
         if (null == id) {
           const tmp = globalThis;
           let resolved = Promise.resolve();
-          id = resolved.then(f161705);
+          id = resolved.then(f138145);
         }
         return () => {
           if (null == closure_0) {
             const resolved = Promise.resolve();
-            closure_0 = resolved.then(f161705);
+            closure_0 = resolved.then(f138145);
           }
         };
       }, items1);
@@ -113,7 +113,7 @@ export default function useActivityWebViewLockManager() {
     };
   })[0];
 };
-export const useLockedWebView = function useLockedWebView(transitionState) {
+export function useLockedWebView(transitionState) {
   transitionState = transitionState.transitionState;
   const hasActivity = transitionState.hasActivity;
   let renderWebView;
@@ -135,4 +135,4 @@ export const useLockedWebView = function useLockedWebView(transitionState) {
     const result1 = shown.set(false);
   }, items);
   return { shown, renderWebView };
-};
+}

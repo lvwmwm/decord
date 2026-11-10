@@ -1,14 +1,14 @@
-// Module ID: 15786
-// Function ID: 15787
+// Module ID: 16332
+// Function ID: 16333
 // Name: ApplicationSubscriptionsActionCreators
-// Dependencies: [5, 1087, 584, 11441, 7389, 2]
+// Dependencies: [5, 1072, 572, 11742, 7431, 2]
 // Exports: dismissApplicationSubscriptionExpirationNotice, fetchAllSubscriptionListingsDataForApplication, fetchEntitlementsForGuild
 
-// Module 15786 (ApplicationSubscriptionsActionCreators)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import ApplicationSubscriptionsHttpApiAll from "ApplicationSubscriptionsHttpApi" /* 11441 */;
+// Module 16332 (ApplicationSubscriptionsActionCreators)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import ApplicationSubscriptionsHttpApiAll from "ApplicationSubscriptionsHttpApi" /* 11742 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import Constants from "Constants" /* 1087 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 let closure_2, closure_3, closure_5, entitlements, groupListing, status;
@@ -64,7 +64,7 @@ let obj = function _fetchAllSubscriptionListingsDataForApplication() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -96,7 +96,7 @@ let obj = function _fetchAllSubscriptionListingsDataForApplication() {
             const obj3 = closure_132_0(closure_132_2[2]);
             obj3.dispatch(obj7);
             c8 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "HermesInternal", done: null };
           } else if (arg0 === 1) {
             c8 = 3;
             throw value;
@@ -149,7 +149,7 @@ obj = function _fetchEntitlementsForGuild() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -195,7 +195,7 @@ obj = function _fetchEntitlementsForGuild() {
               c4 = 0;
             }
             c6 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp19) {
           closure_3 = tmp19;
@@ -231,7 +231,7 @@ obj = function _fetchSubscriptionListingForPlan() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -255,7 +255,7 @@ obj = function _fetchSubscriptionListingForPlan() {
               closure_3 = undefined;
               c7 = 1;
               c8 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "flexDirection", done: true };
             }
           } else if (1 === c7) {
             if (arg0 === 1) {
@@ -345,7 +345,7 @@ obj = function _fetchSubscriptionListingForPlan() {
               return obj;
             }
             c8 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp30) {
           closure_5 = tmp30;
@@ -366,15 +366,15 @@ obj = function _fetchSubscriptionListingForPlan() {
 ({ SKUProductLines: closure_4, SKUTypes: hasOwnProperty } = Constants);
 const result = size.fileFinishedImporting("modules/premium_apps/ApplicationSubscriptionsActionCreators.tsx");
 
-export const fetchAllSubscriptionListingsDataForApplication = function fetchAllSubscriptionListingsDataForApplication() {
+export function fetchAllSubscriptionListingsDataForApplication() {
   return obj(...arguments);
-};
-export const fetchEntitlementsForGuild = function fetchEntitlementsForGuild() {
+}
+export function fetchEntitlementsForGuild() {
   return obj(...arguments);
-};
-export const dismissApplicationSubscriptionExpirationNotice = function dismissApplicationSubscriptionExpirationNotice(guildId) {
+}
+export function dismissApplicationSubscriptionExpirationNotice(guildId) {
   obj = DispatcherDefault;
   const obj2 = { type: "APPLICATION_SUBSCRIPTIONS_CHANNEL_NOTICE_DISMISSED", guildId };
   obj.dispatch(obj2);
-};
+}
 export { fetchSubscriptionListingForPlan };

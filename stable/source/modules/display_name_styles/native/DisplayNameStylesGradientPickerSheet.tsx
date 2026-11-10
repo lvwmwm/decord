@@ -1,433 +1,65 @@
-// Module ID: 16741
-// Function ID: 16742
+// Module ID: 17341
+// Function ID: 17342
 // Name: DisplayNameStylesGradientPickerSheet
-// Dependencies: [32, 19, 17, 1087, 21, 5003, 587, 16742, 558, 576, 10696, 1409, 16737, 5244, 1267, 5242, 15876, 5297, 1128, 5276, 16733, 1105, 5290, 16743, 12, 6940, 6951, 2]
+// Dependencies: [32, 19, 17, 17332, 1072, 21, 5014, 575, 1402, 10775, 1400, 17333, 5260, 1252, 5258, 16444, 5272, 17328, 5634, 1113, 5587, 1090, 17342, 12, 6980, 2]
+// Exports: default
 
-// Module 16741 (DisplayNameStylesGradientPickerSheet)
-import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1087 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5242 */;
-import HapticUtils from "HapticUtils" /* 5244 */;
-import ColorPickerConsts from "ColorPickerConsts" /* 16742 */;
-import _slicedToArray from "_slicedToArray" /* 32 */;
+// Module 17341 (DisplayNameStylesGradientPickerSheet)
+import nativeDefault from "native" /* 575 */;
+import Constants from "Constants" /* 1072 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
+import HapticUtils from "HapticUtils" /* 5260 */;
+import DisplayNameStylesColorPickerConstants from "DisplayNameStylesColorPickerConstants" /* 17332 */;
+import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5003 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
-const require = globalThis.__r;
-let BottomSheet, importDefault, tmpResult;
+let BottomSheet;
 
-let StyleSheet;
 let c10;
-let c9;
 let hasOwnProperty;
-let metroImportAll;
+let metroImportDefault;
 let metroRequire;
-let obj10;
-let obj2;
-let obj3;
-let obj4;
-let obj5;
-let obj6;
-let obj7;
-let obj8;
-let obj9;
-let rect;
-let size;
-let size1;
-({ View: hasOwnProperty, Pressable: metroRequire, StyleSheet } = react_native);
+let unpackModuleId;
+let _slicedToArray = _slicedToArray_mod;
+({ View: hasOwnProperty, Pressable: metroRequire, StyleSheet: metroImportDefault } = react_native);
+const SHEET_CONTENT_MAX_WIDTH = DisplayNameStylesColorPickerConstants.SHEET_CONTENT_MAX_WIDTH;
 const AnalyticEvents = Constants.AnalyticEvents;
-({ jsx: metroImportAll, jsxs: c9, Fragment: c10 } = Fragment);
-let createStyles = createStyles_mod;
-let obj = { body: obj2, gradientContainer: obj3, dropperContainer: rect, dropper: obj4, gradient: size, optionContainer: obj5, swatchWrapper: obj6, pressable: obj7, selectedRing: obj8, option: { flex: 1 }, checkmarkOverlay: obj9, checkmark: size1, resetButtonContainer: obj10 };
-obj2 = { paddingVertical: nativeDefault.space.PX_12, paddingHorizontal: nativeDefault.space.PX_12, flexGrow: 1, justifyContent: "center", alignItems: "center", gap: nativeDefault.space.PX_16 };
-createStyles = createStyles.createStyles;
-obj3 = { flexDirection: "row", justifyContent: "center", alignItems: "center", paddingHorizontal: nativeDefault.space.PX_8 };
-rect = { left: nativeDefault.space.PX_24, right: nativeDefault.space.PX_24, position: "absolute", flexDirection: "row", justifyContent: "space-between" };
-obj4 = { borderColor: "white", padding: nativeDefault.space.PX_8, borderRadius: nativeDefault.radii.round, borderWidth: 1 };
-size = { height: 50, width: "100%", borderRadius: nativeDefault.radii.sm };
-obj5 = { flexDirection: "row", flexWrap: "wrap", paddingHorizontal: nativeDefault.space.PX_4, rowGap: nativeDefault.space.PX_16 };
-obj6 = { width: "33.333%", paddingHorizontal: nativeDefault.space.PX_4 };
-obj7 = { height: 40, borderRadius: nativeDefault.radii.sm, overflow: "hidden" };
-obj8 = { borderRadius: nativeDefault.radii.sm, borderWidth: 2, borderColor: nativeDefault.colors.BACKGROUND_BRAND };
-const merged = Object.assign(StyleSheet.absoluteFillObject);
-obj9 = { alignItems: "center", justifyContent: "center" };
-const merged1 = Object.assign(StyleSheet.absoluteFillObject);
-size1 = { width: ColorPickerConsts.CHECKMARK_SIZE, height: ColorPickerConsts.CHECKMARK_SIZE };
-obj10 = { alignSelf: "stretch", flexDirection: "row", marginHorizontal: nativeDefault.space.PX_8 };
-let closure_11 = createStyles(obj);
-let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNameStylesColorPickerSheet(selectedColors) {
-  let body;
-  let closure_1;
-  let colors;
-  let displayNameStylesEffectConfig;
-  let gradient;
-  let gradientContainer;
-  let obj4;
-  let onSelectColors;
-  let selectedEffectId;
-  let tmp = onSelectColors;
-  let obj = onSelectColors(displayNameStylesEffectConfig[9]);
-  const cResult = obj.c(74);
-  ({ selectedEffectId, onSelectColors } = selectedColors);
-  selectedColors = selectedColors.selectedColors;
-  const tmp4 = closure_11();
-  importDefault = tmp4;
-  let obj2 = onSelectColors(displayNameStylesEffectConfig[10]);
-  displayNameStylesEffectConfig = obj2.useDisplayNameStylesEffectConfig(selectedEffectId);
-  let obj3 = onSelectColors(displayNameStylesEffectConfig[11]);
-  let tmp7 = importDefault;
-  const effectColorCount = obj3.getEffectColorCount(selectedEffectId);
-  let tmp8 = require("useColorPresetsWithA11yLabels")(selectedEffectId);
-  let closure_3 = tmp8;
-  const tmp9 = closure_3(colors.useState(selectedColors), 2);
-  colors = tmp9[0];
-  let closure_5 = tmp9[1];
-  if (cResult[0] === colors) {
-    let tmp10;
-    if (cResult[1] === onSelectColors) {
-      tmp10 = cResult[2];
-    }
-    if (cResult[3] === displayNameStylesEffectConfig.defaultColors) {
-      let tmp19;
-      let tmp20;
-      const first1 = tmp8[0];
-      colors = undefined;
-      if (first1 != null) {
-        colors = first1.colors;
-      }
-      if (cResult[6] !== colors) {
-        class M {
-          constructor(arg0) {
-            closure_0 = selectedColors;
-            num = closure_4[selectedColors];
-            tmp = closure_1(closure_2[16]);
-            if (num == null) {
-              num = 0;
-            }
-            obj = {
-              color: num,
-              onSelect(arg0) {
-                          closure_0 = arg0;
-                          const obj = onSelectColors(displayNameStylesEffectConfig[13]);
-                          const result = obj.triggerHapticFeedback(onSelectColors(displayNameStylesEffectConfig[13]).HapticFeedbackTypes.IMPACT_MEDIUM);
-                          closure_1_5((arr) => arr.map(function() { /* body not rendered: F163125 */ }));
-                        },
-              actionButtonVariant: "primary"
-            };
-            tmpResult = tmp(obj, "stack");
-            return;
-          }
-        }
-        cResult[6] = colors;
-        cResult[7] = M;
-      } else {
-        class M {
-          constructor(arg0) {
-            closure_0 = selectedColors;
-            num = closure_4[selectedColors];
-            tmp = closure_1(closure_2[16]);
-            if (num == null) {
-              num = 0;
-            }
-            obj = {
-              color: num,
-              onSelect(arg0) {
-                          closure_0 = arg0;
-                          const obj = onSelectColors(displayNameStylesEffectConfig[13]);
-                          const result = obj.triggerHapticFeedback(onSelectColors(displayNameStylesEffectConfig[13]).HapticFeedbackTypes.IMPACT_MEDIUM);
-                          closure_1_5((arr) => arr.map(function() { /* body not rendered: F163125 */ }));
-                        },
-              actionButtonVariant: "primary"
-            };
-            tmpResult = tmp(obj, "stack");
-            return;
-          }
-        }
-      }
-      M = tmp18;
-      class R {
-        constructor() {
-          const first = closure_3[0];
-          colors = undefined;
-          const tmp = closure_5;
-          if (first != null) {
-            colors = first.colors;
-          }
-          if (colors == null) {
-            colors = displayNameStylesEffectConfig.defaultColors;
-          }
-          const items = [...colors];
-          tmp(items);
-        }
-      }
-      const _Symbol = Symbol;
-      if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-        class A {
-          constructor(arg0) {
-            const items = [...arg0];
-            closure_5(items);
-          }
-        }
-        cResult[8] = A;
-        tmp19 = A;
-      } else {
-        class A {
-          constructor(arg0) {
-            const items = [...arg0];
-            closure_5(items);
-          }
-        }
-      }
-      A = tmp19;
-      BottomSheet = tmp(tmp2[17]).BottomSheet;
-      const _Symbol2 = Symbol;
-      const name = displayNameStylesEffectConfig.name;
-      if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-        class A {
-          constructor(arg0) {
-            const items = [...arg0];
-            closure_5(items);
-          }
-        }
-        const stringResult = obj4.string(tmp(displayNameStylesEffectConfig[18]).t.XqMe3N);
-        cResult[9] = stringResult;
-        tmp20 = stringResult;
-      } else {
-        class A {
-          constructor(arg0) {
-            const items = [...arg0];
-            closure_5(items);
-          }
-        }
-      }
-      if (cResult[10] !== tmp10) {
-        class A {
-          constructor(arg0) {
-            const items = [...arg0];
-            closure_5(items);
-          }
-        }
-        let obj5 = { variant: "primary", size: "sm", text: tmp20, onPress: tmp10 };
-        cResult[10] = tmp10;
-        closure_8(tmp(displayNameStylesEffectConfig[19]).Button, obj5);
-        class R {
-          constructor() {
-            const first = closure_3[0];
-            colors = undefined;
-            const tmp = closure_5;
-            if (first != null) {
-              colors = first.colors;
-            }
-            if (colors == null) {
-              colors = displayNameStylesEffectConfig.defaultColors;
-            }
-            const items = [...colors];
-            tmp(items);
-          }
-        }
-      } else {
-        class A {
-          constructor(arg0) {
-            const items = [...arg0];
-            closure_5(items);
-          }
-        }
-      }
-      if (cResult[12] === displayNameStylesEffectConfig.name) {
-        class A {
-          constructor(arg0) {
-            const items = [...arg0];
-            closure_5(items);
-          }
-        }
-        ({ body, gradientContainer, gradient } = tmp4);
-        if (cResult[15] !== colors) {
-          let tmp29;
-          class A {
-            constructor(arg0) {
-              const items = [...arg0];
-              closure_5(items);
-            }
-          }
-          if (cResult[17] === Symbol.for("react.memo_cache_sentinel")) {
-            class W {
-              constructor(color) {
-                const obj = onSelectColors(displayNameStylesEffectConfig[21]);
-                return obj.int2hex(color);
-              }
-            }
-            cResult[17] = W;
-            tmp29 = W;
-          } else {
-            class W {
-              constructor(color) {
-                const obj = onSelectColors(displayNameStylesEffectConfig[21]);
-                return obj.int2hex(color);
-              }
-            }
-          }
-          const mapped = colors.map(tmp29);
-          cResult[15] = colors;
-          cResult[16] = mapped;
-          class R {
-            constructor() {
-              const first = closure_3[0];
-              colors = undefined;
-              const tmp = closure_5;
-              if (first != null) {
-                colors = first.colors;
-              }
-              if (colors == null) {
-                colors = displayNameStylesEffectConfig.defaultColors;
-              }
-              const items = [...colors];
-              tmp(items);
-            }
-          }
-        } else {
-          class W {
-            constructor(color) {
-              const obj = onSelectColors(displayNameStylesEffectConfig[21]);
-              return obj.int2hex(color);
-            }
-          }
-        }
-        const _Symbol3 = Symbol;
-        class R {
-          constructor() {
-            const first = closure_3[0];
-            colors = undefined;
-            const tmp = closure_5;
-            if (first != null) {
-              colors = first.colors;
-            }
-            if (colors == null) {
-              colors = displayNameStylesEffectConfig.defaultColors;
-            }
-            const items = [...colors];
-            tmp(items);
-          }
-        }
-        if (cResult[20] === tmp4.gradient) {
-          class W {
-            constructor(color) {
-              const obj = onSelectColors(displayNameStylesEffectConfig[21]);
-              return obj.int2hex(color);
-            }
-          }
-          const _Array = Array;
-          let obj6 = { length: effectColorCount };
-          const dropperContainer = tmp4.dropperContainer;
-          const arr = Array.from(obj6);
-          if (cResult[23] === tmp18) {
-            class W {
-              constructor(color) {
-                const obj = onSelectColors(displayNameStylesEffectConfig[21]);
-                return obj.int2hex(color);
-              }
-            }
-          }
-          const mapped1 = arr.map((item, index) => {
-            let intl;
-            let obj2;
-            let closure_0 = index;
-            const obj = {
-              style: closure_1.dropper,
-              onPress() {
-                return M(index);
-              },
-              accessibilityLabel: intl.formatToPlainString(onSelectColors(displayNameStylesEffectConfig[18]).t.n5Ve0L, obj2),
-              accessibilityRole: "button",
-              children: closure_1_8(onSelectColors(displayNameStylesEffectConfig[23]).EyeDropperIcon, { color: "white", size: "sm" })
-            };
-            intl = onSelectColors(displayNameStylesEffectConfig[18]).intl;
-            obj2 = { number: index + 1 };
-            return closure_1_8(M, obj, index);
-          });
-          class R {
-            constructor() {
-              const first = closure_3[0];
-              colors = undefined;
-              const tmp = closure_5;
-              if (first != null) {
-                colors = first.colors;
-              }
-              if (colors == null) {
-                colors = displayNameStylesEffectConfig.defaultColors;
-              }
-              const items = [...colors];
-              tmp(items);
-            }
-          }
-          cResult[23] = tmp18;
-          cResult[24] = tmp4.dropper;
-          cResult[25] = arr;
-          cResult[26] = mapped1;
-        }
-        let obj7 = { style: gradient, colors: tmp28, start: tmp32, end: tmp33 };
-        cResult[20] = tmp4.gradient;
-        cResult[21] = tmp28;
-        cResult[22] = closure_8(tmp7(displayNameStylesEffectConfig[22]), obj7);
-        const tmp36 = closure_8(tmp7(displayNameStylesEffectConfig[22]), obj7);
-      }
-      let obj8 = { title: name, trailing: tmp22 };
-      cResult[12] = displayNameStylesEffectConfig.name;
-      cResult[13] = tmp22;
-      cResult[14] = closure_8(tmp7(displayNameStylesEffectConfig[20]), obj8);
-      const tmp26 = closure_8(tmp7(displayNameStylesEffectConfig[20]), obj8);
-    }
-    let num = 3;
-    cResult[3] = displayNameStylesEffectConfig.defaultColors;
-    if (tmp8[0] != null) {
-      class W {
-        constructor(color) {
-          const obj = onSelectColors(displayNameStylesEffectConfig[21]);
-          return obj.int2hex(color);
-        }
-      }
-    }
-    class R {
-      constructor() {
-        const first = closure_3[0];
-        colors = undefined;
-        const tmp = closure_5;
-        if (first != null) {
-          colors = first.colors;
-        }
-        if (colors == null) {
-          colors = displayNameStylesEffectConfig.defaultColors;
-        }
-        const items = [...colors];
-        tmp(items);
-      }
-    }
-    cResult[4] = undefined;
-    cResult[5] = R;
-  }
-  const fn = function l() {
-    const obj = HapticUtils;
-    const result = obj.triggerHapticFeedback(HapticUtils.HapticFeedbackTypes.IMPACT_MEDIUM);
-    onSelectColors(colors);
-    const obj2 = AnalyticsUtilsDefault;
-    const obj3 = { default: false, colors };
-    obj2.track(AnalyticEvents.DISPLAY_NAME_STYLES_COLOR_SELECTED, obj3);
-    const obj4 = ActionSheetActionCreatorsDefault;
-    obj4.hideActionSheet();
-  };
-  cResult[0] = colors;
-  cResult[1] = onSelectColors;
-  cResult[2] = fn;
-  tmp10 = fn;
-}) : (function DisplayNameStylesColorPickerSheet(selectedColors) {
+({ jsx: c10, jsxs: unpackModuleId } = Fragment);
+let closure_12 = createStyles.createStyles((arg0) => {
+  let obj6;
+  let rect;
+  let size1;
+  let size2;
+  let space;
+  const obj = { sheetBackground: { borderTopLeftRadius: nativeDefault.radii.lg, borderTopRightRadius: nativeDefault.radii.lg }, body: { paddingTop: nativeDefault.space.PX_4, paddingBottom: nativeDefault.space.PX_12, paddingHorizontal: nativeDefault.space.PX_16, flexGrow: 1, justifyContent: "center", alignItems: "center" }, gradientContainer: { marginBottom: nativeDefault.space.PX_24, flexDirection: "row", justifyContent: "center", alignItems: "center", width: "100%", maxWidth: SHEET_CONTENT_MAX_WIDTH }, colorStopRow: rect, colorStop: size, gradient: size1, optionContainer: { marginBottom: arg0 ? space.PX_24 : space.PX_20, justifyContent: "center", flexDirection: "row", width: "100%", maxWidth: SHEET_CONTENT_MAX_WIDTH, flexWrap: "wrap", columnGap: nativeDefault.space.PX_24, rowGap: nativeDefault.space.PX_16 }, pressable: size2, selectedRing: obj6, option: { flex: 1 }, resetButtonContainer: { width: "100%", maxWidth: SHEET_CONTENT_MAX_WIDTH, flexDirection: "row" } };
+  ({ borderTopLeftRadius: nativeDefault.radii.lg, borderTopRightRadius: nativeDefault.radii.lg });
+  ({ paddingTop: nativeDefault.space.PX_4, paddingBottom: nativeDefault.space.PX_12, paddingHorizontal: nativeDefault.space.PX_16, flexGrow: 1, justifyContent: "center", alignItems: "center" });
+  ({ marginBottom: nativeDefault.space.PX_24, flexDirection: "row", justifyContent: "center", alignItems: "center", width: "100%", maxWidth: SHEET_CONTENT_MAX_WIDTH });
+  rect = { left: nativeDefault.space.PX_8, right: nativeDefault.space.PX_8, position: "absolute", flexDirection: "row", justifyContent: "space-between" };
+  size = { borderColor: "white", width: 28, height: 28, borderRadius: nativeDefault.radii.sm, borderWidth: 1 };
+  size1 = { height: 50, width: "100%", borderRadius: nativeDefault.radii.sm };
+  space = nativeDefault.space;
+  ({ marginBottom: arg0 ? space.PX_24 : space.PX_20, justifyContent: "center", flexDirection: "row", width: "100%", maxWidth: SHEET_CONTENT_MAX_WIDTH, flexWrap: "wrap", columnGap: nativeDefault.space.PX_24, rowGap: nativeDefault.space.PX_16 });
+  size2 = { width: 40, height: 40, borderRadius: tmp(575).radii.sm, overflow: "hidden" };
+  obj6 = { borderRadius: nativeDefault.radii.sm, borderWidth: 2, borderColor: nativeDefault.colors.BACKGROUND_BRAND };
+  const merged = Object.assign(metroImportDefault.absoluteFillObject);
+  return obj;
+});
+let size = size_mod;
+let result = size.fileFinishedImporting("modules/display_name_styles/native/DisplayNameStylesGradientPickerSheet.tsx");
+
+export default function DisplayNameStylesGradientPickerSheet(onSelectColors) {
   let Button;
   let Button2;
-  let arr2;
-  let closure_1;
+  let arr;
+  let closure_3;
+  let closure_6;
+  let colors;
   let intl;
   let intl2;
   let items3;
@@ -436,26 +68,29 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNameS
   let obj4;
   let obj5;
   let obj6;
-  let onSelectColors;
   let selectedEffectId;
   let tmp7;
-  ({ selectedEffectId, onSelectColors } = selectedColors);
-  let displayNameStylesEffectConfig;
-  let colors;
-  selectedColors = selectedColors.selectedColors;
-  let tmp = closure_11();
-  importDefault = tmp;
-  let obj = onSelectColors(displayNameStylesEffectConfig[10]);
-  displayNameStylesEffectConfig = obj.useDisplayNameStylesEffectConfig(selectedEffectId);
-  let obj2 = onSelectColors(displayNameStylesEffectConfig[11]);
+  ({ selectedColors: require, selectedEffectId } = onSelectColors);
+  onSelectColors = onSelectColors.onSelectColors;
+  colors = undefined;
+  closure_6 = undefined;
+  let tmp = closure_12(selectedEffectId === require("DisplayNameEffect").DisplayNameEffect.PRISM);
+  _slicedToArray = tmp;
+  let obj = require("useDisplayNameStylesEffectConfigs");
+  const displayNameStylesEffectConfig = obj.useDisplayNameStylesEffectConfig(selectedEffectId);
+  let obj2 = require("DisplayNameStylesUtils");
   const effectColorCount = obj2.getEffectColorCount(selectedEffectId);
-  const arr = require("useColorPresetsWithA11yLabels")(selectedEffectId);
-  const tmp4 = arr(colors.useState(selectedColors), 2);
-  colors = tmp4[0];
-  let closure_5 = tmp4[1];
+  [colors, closure_6] = displayNameStylesEffectConfig.useState(() => {
+    let defaultColors = require;
+    if (require.length <= 0) {
+      defaultColors = displayNameStylesEffectConfig.defaultColors;
+    }
+    return defaultColors;
+  });
+  const arr2 = selectedEffectId(onSelectColors[11])(selectedEffectId);
   let items = [colors, onSelectColors];
-  let items1 = [arr, displayNameStylesEffectConfig.defaultColors];
-  const callback = colors.useCallback(() => {
+  const items1 = [arr2, displayNameStylesEffectConfig.defaultColors];
+  const callback = displayNameStylesEffectConfig.useCallback(() => {
     const obj = HapticUtils;
     const result = obj.triggerHapticFeedback(HapticUtils.HapticFeedbackTypes.IMPACT_MEDIUM);
     onSelectColors(colors);
@@ -466,10 +101,10 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNameS
     obj4.hideActionSheet();
   }, items);
   const items2 = [colors];
-  const callback1 = colors.useCallback(() => {
-    const first = arr[0];
+  const callback1 = displayNameStylesEffectConfig.useCallback(() => {
+    const first = arr2[0];
     colors = undefined;
-    const tmp = closure_5;
+    const tmp = closure_6;
     if (first != null) {
       colors = first.colors;
     }
@@ -479,20 +114,20 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNameS
     const items = [...colors];
     tmp(items);
   }, items1);
-  let closure_6 = colors.useCallback((arg0) => {
+  let closure_8 = displayNameStylesEffectConfig.useCallback((arg0) => {
     let closure_0 = arg0;
     let num = first[arg0];
-    let tmp = closure_1(displayNameStylesEffectConfig[16]);
+    let tmp = selectedEffectId(onSelectColors[15]);
     if (num == null) {
       num = 0;
     }
     let obj = {
       color: num,
       onSelect(arg0) {
-        closure_0 = arg0;
-        const obj = onSelectColors(displayNameStylesEffectConfig[13]);
-        const result = obj.triggerHapticFeedback(onSelectColors(displayNameStylesEffectConfig[13]).HapticFeedbackTypes.IMPACT_MEDIUM);
-        closure_1_5((arr) => arr.map((item, index) => {
+        require = arg0;
+        const obj = require("HapticUtils");
+        const result = obj.triggerHapticFeedback(require("HapticUtils").HapticFeedbackTypes.IMPACT_MEDIUM);
+        closure_1_6((arr) => arr.map((item, index) => {
           let tmp = item;
           if (index === closure_0) {
             tmp = closure_1_0;
@@ -504,112 +139,120 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNameS
     };
     tmp(obj, "stack");
   }, items2);
-  let closure_7 = colors.useCallback((arg0) => {
+  let closure_9 = displayNameStylesEffectConfig.useCallback((arg0) => {
     const items = [...arg0];
-    closure_5(items);
+    closure_6(items);
   }, []);
-  let obj3 = { header: closure_8(tmp7, obj4), children: closure_9(closure_5, obj6) };
-  BottomSheet = onSelectColors(displayNameStylesEffectConfig[17]).BottomSheet;
-  obj4 = { title: displayNameStylesEffectConfig.name, trailing: closure_8(Button, obj5) };
-  tmp7 = require("DisplayNameStylesSheetHeader");
-  obj5 = { variant: "primary", size: "sm", text: intl.string(onSelectColors(displayNameStylesEffectConfig[18]).t.XqMe3N), onPress: callback };
-  Button = onSelectColors(displayNameStylesEffectConfig[19]).Button;
-  intl = onSelectColors(displayNameStylesEffectConfig[18]).intl;
+  let obj3 = { backgroundStyles: tmp.sheetBackground, header: closure_10(tmp7, obj4), children: closure_11(colors, obj6) };
+  BottomSheet = require("Sheet/BottomSheet").BottomSheet;
+  obj4 = { title: displayNameStylesEffectConfig.name, trailing: closure_10(Button, obj5) };
+  obj5 = { variant: "primary", size: "sm", text: intl.string(require("intl").t.XqMe3N), onPress: callback };
+  tmp7 = selectedEffectId(onSelectColors[17]);
+  Button = require("components/Button/Button").Button;
+  intl = require("intl").intl;
   obj6 = { style: tmp.body, children: items4 };
-  let obj7 = { style: tmp.gradientContainer, children: items3 };
-  let obj8 = {
+  const obj7 = { style: tmp.gradientContainer, children: items3 };
+  const obj8 = {
     style: tmp.gradient,
     colors: colors.map((item) => {
-      const obj = onSelectColors(displayNameStylesEffectConfig[21]);
+      const obj = require("utils/ColorUtils");
       return obj.int2hex(item);
     }),
+    locations: selectedEffectId(onSelectColors[22])(selectedEffectId, colors, true),
     start: { x: 0, y: 0 },
     end: { x: 1, y: 0 }
   };
-  let tmp8 = require("LinearGradient");
-  items3 = [closure_8(tmp8, obj8), ];
+  const tmp8 = selectedEffectId(onSelectColors[20]);
+  items3 = [closure_10(tmp8, obj8), ];
   const obj9 = {
-    style: tmp.dropperContainer,
-    children: arr2.map((item, index) => {
-      let intl;
-      let obj2;
-      let closure_0 = index;
+    style: tmp.colorStopRow,
+    children: arr.map((item, index) => {
+      let formatToPlainStringResult;
+      let int2hex2;
+      let num2;
+      require = index;
+      const items = [closure_3.colorStop, ];
+      let num = first[index];
+      const int2hex = require("utils/ColorUtils").int2hex;
+      require("utils/ColorUtils");
+      const tmp = closure_1_10;
+      const tmp2 = closure_6;
+      const tmp6 = first;
+      if (num == null) {
+        num = 0;
+      }
       const obj = {
-        style: closure_1.dropper,
+        style: items,
         onPress() {
-          return closure_6(index);
+          return closure_8(index);
         },
-        accessibilityLabel: intl.formatToPlainString(onSelectColors(displayNameStylesEffectConfig[18]).t.n5Ve0L, obj2),
-        accessibilityRole: "button",
-        children: closure_1_8(onSelectColors(displayNameStylesEffectConfig[23]).EyeDropperIcon, { color: "white", size: "sm" })
+        accessibilityLabel: "" + formatToPlainStringResult + ", " + int2hex2(num2),
+        accessibilityRole: "button"
       };
-      intl = onSelectColors(displayNameStylesEffectConfig[18]).intl;
-      obj2 = { number: index + 1 };
-      return closure_1_8(closure_6, obj, index);
+      items[1] = { backgroundColor: int2hex(num) };
+      ({ backgroundColor: int2hex(num) });
+      const intl = tmp3(tmp4[19]).intl;
+      const obj3 = { number: index + 1 };
+      num2 = tmp6[index];
+      formatToPlainStringResult = intl.formatToPlainString(require("intl").t.n5Ve0L, obj3);
+      int2hex2 = require("utils/ColorUtils").int2hex;
+      require("utils/ColorUtils");
+      if (num2 == null) {
+        num2 = 0;
+      }
+      return tmp(tmp2, obj, index);
     })
   };
-  arr2 = Array.from({ length: effectColorCount });
-  items3[1] = closure_8(closure_5, obj9);
-  items4 = [closure_9(closure_5, obj7), , ];
+  arr = Array.from({ length: effectColorCount });
+  items3[1] = closure_10(colors, obj9);
+  items4 = [closure_11(colors, obj7), , ];
   const obj10 = {
     style: tmp.optionContainer,
-    children: arr.map((colors, index) => {
-      let PressableOpacity;
+    children: arr2.map((colors, index) => {
       let items;
-      let items1;
-      let obj3;
-      let obj8;
       colors = colors.colors;
       const a11yLabel = colors.a11yLabel;
-      let obj = closure_1(displayNameStylesEffectConfig[24]);
+      let obj = selectedEffectId(onSelectColors[23]);
       let isEqualResult = obj.isEqual(colors, first);
-      const obj2 = { style: closure_1.swatchWrapper, children: closure_1_9(PressableOpacity, obj3) };
-      obj3 = {
-        style: closure_1.pressable,
+      const obj2 = {
+        style: closure_3.pressable,
         onPress() {
-          return closure_7(colors);
+          return closure_9(colors);
         },
         accessibilityRole: "button",
         accessibilityState: { selected: isEqualResult },
         accessibilityLabel: a11yLabel,
         children: items
       };
-      PressableOpacity = onSelectColors(displayNameStylesEffectConfig[25]).PressableOpacity;
-      const obj4 = {
-        style: closure_1.option,
+      const PressableOpacity = require("Pressables").PressableOpacity;
+      const obj3 = {
+        style: closure_3.option,
         colors: colors.map((item) => {
-          const obj = colors(displayNameStylesEffectConfig[21]);
+          const obj = colors(onSelectColors[21]);
           return obj.int2hex(item);
         }),
+        locations: selectedEffectId(onSelectColors[22])(selectedEffectId, colors),
         start: { x: 0, y: 0 },
         end: { x: 1, y: 0 }
       };
-      const tmp8 = closure_1(displayNameStylesEffectConfig[22]);
-      items = [closure_1_8(tmp8, obj4), ];
-      const tmp = displayNameStylesEffectConfig;
-      const tmp7 = onSelectColors;
+      const tmp5 = selectedEffectId(onSelectColors[20]);
+      items = [closure_1_10(tmp5, obj3), ];
+      const tmp2 = closure_1_11;
+      const tmp3 = closure_3;
+      const tmp4 = closure_1_10;
       if (isEqualResult) {
-        const obj5 = { children: items1 };
-        const obj6 = { style: closure_1.selectedRing, pointerEvents: "none" };
-        items1 = [closure_1_8(closure_5, obj6), ];
-        const obj7 = { style: closure_1.checkmarkOverlay, pointerEvents: "none", children: closure_1_8(tmp7(tmp[26]).CheckmarkLargeIcon, obj8) };
-        obj8 = { size: "custom", style: closure_1.checkmark, color: "white" };
-        items1[1] = closure_1_8(closure_5, obj7);
-        isEqualResult = tmp6(closure_1_10, obj5);
+        const obj4 = { style: tmp3.selectedRing, pointerEvents: "none" };
+        isEqualResult = tmp4(first, obj4);
       }
       items[1] = isEqualResult;
-      return closure_1_8(closure_5, obj2, index);
+      return tmp2(PressableOpacity, obj2, index);
     })
   };
-  items4[1] = closure_8(closure_5, obj10);
-  const obj11 = { style: tmp.resetButtonContainer, children: closure_8(Button2, obj12) };
-  obj12 = { text: intl2.string(onSelectColors(displayNameStylesEffectConfig[18]).t.yBZMsQ), onPress: callback1, variant: "secondary", size: "md", grow: true };
-  Button2 = onSelectColors(displayNameStylesEffectConfig[19]).Button;
-  intl2 = onSelectColors(displayNameStylesEffectConfig[18]).intl;
-  items4[2] = closure_8(closure_5, obj11);
-  return closure_8(BottomSheet, obj3);
-});
-size = size_mod;
-let result = size.fileFinishedImporting("modules/display_name_styles/native/DisplayNameStylesGradientPickerSheet.tsx");
-
-export default tmp7;
+  items4[1] = closure_10(colors, obj10);
+  const obj11 = { style: tmp.resetButtonContainer, children: closure_10(Button2, obj12) };
+  obj12 = { text: intl2.string(require("intl").t.yBZMsQ), onPress: callback1, variant: "secondary", size: "md", grow: true };
+  Button2 = require("components/Button/Button").Button;
+  intl2 = require("intl").intl;
+  items4[2] = closure_10(colors, obj11);
+  return closure_10(BottomSheet, obj3);
+};

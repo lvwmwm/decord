@@ -1,20 +1,20 @@
-// Module ID: 18823
-// Function ID: 18824
+// Module ID: 19443
+// Function ID: 19444
 // Name: connection
-// Dependencies: [18822, 11531, 2]
+// Dependencies: [19438, 19439, 2]
 // Exports: createChildConnector, offerOverWindow
 
-// Module 18823 (connection)
-import Safe4 from "Safe" /* 11531 */;
-import protocol from "protocol" /* 18822 */;
+// Module 19443 (connection)
+import protocol from "protocol" /* 19438 */;
+import Safe4 from "Safe" /* 19439 */;
 import size from "module_2" /* 2 */;
 
 let closure_3;
 
 const result = size.fileFinishedImporting("../discord_common/js/packages/embedded-app-shims/src/shared/connection.tsx");
 
-export function createChildConnector(arg0, arg1) {
-  let closure_0 = arg0;
+export function createChildConnector(onMessage, arg1) {
+  let closure_0 = onMessage;
   let closure_1 = arg1;
   let c2 = null;
   let c3 = null;
@@ -62,10 +62,10 @@ export function createChildConnector(arg0, arg1) {
   };
   return obj;
 }
-export const offerOverWindow = function offerOverWindow(arg0, arg1, nonce, fn) {
+export function offerOverWindow(arg0, arg1, nonce, fn) {
   let port1;
-  const messageChannel = new port1(11531).Safe.Constructor.MessageChannel();
-  let Safe = port1(11531).Safe;
+  const messageChannel = new port1(19439).Safe.Constructor.MessageChannel();
+  let Safe = port1(19439).Safe;
   const MessageChannelResult = Safe.MessageChannel(messageChannel);
   port1 = MessageChannelResult.port1;
   const port2 = MessageChannelResult.port2;
@@ -90,11 +90,11 @@ export const offerOverWindow = function offerOverWindow(arg0, arg1, nonce, fn) {
     }
   };
   fn(obj);
-  const Safe2 = port1(11531).Safe;
+  const Safe2 = port1(19439).Safe;
   const postMessage = Safe2.Window(arg0).postMessage;
   const WindowResult = Safe2.Window(arg0);
   const obj2 = { [closure_0(closure_1[0]).SHIM_MESSAGE_KEY]: "connection_open", nonce };
-  const Safe3 = port1(11531).Safe;
+  const Safe3 = port1(19439).Safe;
   const items = [port2];
   postMessage(obj2, arg1, Safe3.asIterable(items));
-};
+}

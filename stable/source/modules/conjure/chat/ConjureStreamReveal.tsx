@@ -1,10 +1,10 @@
-// Module ID: 12316
-// Function ID: 12317
+// Module ID: 12200
+// Function ID: 12201
 // Name: ConjureStreamReveal
 // Dependencies: [2]
 // Exports: nextRevealLength, reconcileRevealedLength, safeRevealBoundary, wholeCharacterBoundary
 
-// Module 12316 (ConjureStreamReveal)
+// Module 12200 (ConjureStreamReveal)
 import size from "module_2" /* 2 */;
 
 function splitsCharacter(target, sum) {
@@ -157,7 +157,7 @@ export const REVEAL_CATCHUP_MS = 280;
 export const REVEAL_MAX_CHARS_PER_FRAME = 120;
 export const REVEAL_SNAP_CHARS = 900;
 export const REVEAL_FRAME_MS = 32;
-export const wholeCharacterBoundary = function wholeCharacterBoundary(target, sum) {
+export function wholeCharacterBoundary(target, sum) {
   let tmp = sum;
   if (sum < target.length) {
     tmp = sum;
@@ -183,8 +183,8 @@ export const wholeCharacterBoundary = function wholeCharacterBoundary(target, su
     }
   }
   return tmp;
-};
-export const safeRevealBoundary = function safeRevealBoundary(str, arg1, arg2) {
+}
+export function safeRevealBoundary(str, arg1, arg2) {
   if (arg2 >= str.length) {
     return arg2;
   } else {
@@ -217,32 +217,32 @@ export const safeRevealBoundary = function safeRevealBoundary(str, arg1, arg2) {
     }
     return tmp;
   }
-};
-export const reconcileRevealedLength = function reconcileRevealedLength(target, target2, length) {
+}
+export function reconcileRevealedLength(target, source, length) {
   const bound = Math.min(Math.max(length, 0), target.length);
   if (0 === bound) {
     return 0;
   } else {
-    if (target.length >= bound) {
-      if (target.startsWith(target.slice(0, bound))) {
+    if (source.length >= bound) {
+      if (source.startsWith(target.slice(0, bound))) {
         return bound;
       }
     }
     const _Math = Math;
-    const bound1 = Math.min(bound, target.length);
+    const bound1 = Math.min(bound, source.length);
     let num = 0;
     if (0 < bound1) {
       let num3 = 0;
       num = 0;
       const charCodeAtResult = target.charCodeAt(0);
-      if (charCodeAtResult === target.charCodeAt(0)) {
+      if (charCodeAtResult === source.charCodeAt(0)) {
         const sum = num3 + 1;
         num = sum;
         while (sum < bound1) {
           let charCodeAtResult1 = target.charCodeAt(sum);
           num3 = sum;
           num = sum;
-          if (charCodeAtResult1 !== target.charCodeAt(sum)) {
+          if (charCodeAtResult1 !== source.charCodeAt(sum)) {
             break;
           }
         }
@@ -252,13 +252,13 @@ export const reconcileRevealedLength = function reconcileRevealedLength(target, 
     if (0 < num) {
       let tmp8 = num;
       tmp6 = num;
-      if (splitsCharacter(target, num)) {
+      if (splitsCharacter(source, num)) {
         const diff = tmp8 - 1;
         tmp6 = diff;
         while (0 < diff) {
           tmp8 = diff;
           tmp6 = diff;
-          if (!splitsCharacter(target, diff)) {
+          if (!splitsCharacter(source, diff)) {
             break;
           }
         }
@@ -266,8 +266,8 @@ export const reconcileRevealedLength = function reconcileRevealedLength(target, 
     }
     return tmp6;
   }
-};
-export const nextRevealLength = function nextRevealLength(target) {
+}
+export function nextRevealLength(target) {
   target = target.target;
   const elapsedMs = target.elapsedMs;
   const bound = Math.min(Math.max(target.revealed, 0), target.length);
@@ -342,4 +342,4 @@ export const nextRevealLength = function nextRevealLength(target) {
     }
     return tmp10;
   }
-};
+}

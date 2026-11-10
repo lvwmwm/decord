@@ -1,28 +1,26 @@
-// Module ID: 13721
-// Function ID: 13722
+// Module ID: 14355
+// Function ID: 14356
 // Name: HubEmailConnectionGuildSelectSearch
-// Dependencies: [5, 32, 19, 17, 13694, 21, 5003, 587, 558, 576, 5701, 13722, 1128, 5266, 1505, 6859, 1633, 13708, 6406, 6956, 7516, 7252, 1202, 13717, 2]
+// Dependencies: [5, 32, 19, 17, 14329, 21, 5014, 575, 5717, 14356, 5624, 1113, 1497, 6899, 1625, 14342, 6446, 6998, 7557, 7294, 1187, 14351, 2]
 // Exports: default
 
-// Module 13721 (HubEmailConnectionGuildSelectSearch)
+// Module 14355 (HubEmailConnectionGuildSelectSearch)
 import react_native from "react-native" /* 17 */;
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import intl2 from "intl" /* 1128 */;
-import native from "native" /* 1202 */;
-import useNavigation from "useNavigation" /* 1505 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
-import Text_Text from "Text/Text" /* 5266 */;
-import FastImageDefault from "FastImage" /* 5701 */;
-import fuzzysearchDefault from "fuzzysearch" /* 6859 */;
-import HubConstants from "HubConstants" /* 13694 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13722 */;
+import nativeDefault from "native" /* 575 */;
+import intl2 from "intl" /* 1113 */;
+import native from "native" /* 1187 */;
+import useNavigation from "useNavigation" /* 1497 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1625 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import FastImageDefault from "FastImage" /* 5717 */;
+import fuzzysearchDefault from "fuzzysearch" /* 6899 */;
+import HubConstants from "HubConstants" /* 14329 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14356 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5003 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -35,75 +33,10 @@ let obj2;
 let obj3;
 let tmp2;
 let tmp9;
-const NavigatorHeader = tmp2(6956);
-const defaultMVCPConfig = tmp2(7252);
-const SearchBarNavDefault = tmp9(7516);
-let _slicedToArray = _slicedToArray_mod;
-let react = react_mod;
-const View = react_native.View;
-const HubEmailConnectionSteps = HubConstants.HubEmailConnectionSteps;
-({ jsx: metroImportAll, jsxs: c9, Fragment: c10 } = Fragment);
-let createStyles = createStyles_mod;
-let obj = { scrollContainer: obj2, fauxHeader: { paddingHorizontal: 0 }, emptyWrapper: { flex: 1, alignItems: "center", justifyContent: "center", marginTop: 64, paddingHorizontal: 16 }, emptyStateImage: { marginBottom: 24 }, emptyStateTitle: { marginBottom: 4, textAlign: "center" }, error: obj3 };
-obj2 = { flex: 1, width: "100%", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
-createStyles = createStyles.createStyles;
-obj3 = { color: nativeDefault.unsafe_rawColors.RED_400, alignSelf: "center", fontSize: 14, marginBottom: 8 };
-let closure_11 = createStyles(obj);
-let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmptyState() {
-  let items;
-  let tmp10;
-  let tmp12;
-  let tmp5;
-  const obj = react2;
-  const cResult = obj.c(9);
-  const tmp4 = closure_11();
-  const emptyWrapper = tmp4.emptyWrapper;
-  if (cResult[0] !== tmp4.emptyStateImage) {
-    const obj2 = { style: tmp4.emptyStateImage, source: AssetRegistryDefault };
-    const tmp8 = FastImageDefault;
-    const tmp9 = metroImportAll(tmp8, obj2);
-    cResult[0] = tmp4.emptyStateImage;
-    cResult[1] = tmp9;
-    tmp5 = tmp9;
-  } else {
-    tmp5 = cResult[1];
-  }
-  const emptyStateTitle = tmp4.emptyStateTitle;
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1128).intl;
-    const stringResult = intl.string(intl2.t["6HXiuE"]);
-    cResult[2] = stringResult;
-    tmp10 = stringResult;
-  } else {
-    tmp10 = cResult[2];
-  }
-  if (cResult[3] !== tmp4.emptyStateTitle) {
-    const obj3 = { style: emptyStateTitle, variant: "text-sm/semibold", color: "mobile-text-heading-primary", children: tmp10 };
-    const tmp14 = metroImportAll(Text_Text.Text, obj3);
-    cResult[3] = tmp4.emptyStateTitle;
-    cResult[4] = tmp14;
-    tmp12 = tmp14;
-  } else {
-    tmp12 = cResult[4];
-  }
-  if (cResult[5] === tmp4.emptyWrapper) {
-    if (cResult[6] === tmp5) {
-      let tmp15;
-      if (cResult[7] === tmp12) {
-        tmp15 = cResult[8];
-      }
-      return tmp15;
-    }
-  }
-  const obj4 = { style: emptyWrapper, children: items };
-  items = [tmp5, tmp12];
-  const tmp16 = React4(View, obj4);
-  cResult[5] = tmp4.emptyWrapper;
-  cResult[6] = tmp5;
-  cResult[7] = tmp12;
-  cResult[8] = tmp16;
-  tmp15 = tmp16;
-}) : (function EmptyState() {
+const NavigatorHeader = tmp2(6998);
+const defaultMVCPConfig = tmp2(7294);
+const SearchBarNavDefault = tmp9(7557);
+function EmptyState() {
   let intl;
   let items;
   const tmp = closure_11();
@@ -116,7 +49,18 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmptyS
   intl = intl2.intl;
   items[1] = metroImportAll(Text, obj3);
   return React4(View, obj);
-});
+}
+let _slicedToArray = _slicedToArray_mod;
+let react = react_mod;
+const View = react_native.View;
+const HubEmailConnectionSteps = HubConstants.HubEmailConnectionSteps;
+({ jsx: metroImportAll, jsxs: c9, Fragment: c10 } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { scrollContainer: obj2, fauxHeader: { paddingHorizontal: 0 }, emptyWrapper: { flex: 1, alignItems: "center", justifyContent: "center", marginTop: 64, paddingHorizontal: 16 }, emptyStateImage: { marginBottom: 24 }, emptyStateTitle: { marginBottom: 4, textAlign: "center" }, error: obj3 };
+obj2 = { flex: 1, width: "100%", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
+createStyles = createStyles.createStyles;
+obj3 = { color: nativeDefault.unsafe_rawColors.RED_400, alignSelf: "center", fontSize: 14, marginBottom: 8 };
+let closure_11 = createStyles(obj);
 const result = size.fileFinishedImporting("modules/hub/native/components/HubEmailConnectionGuildSelectSearch.tsx");
 
 export default function HubEmailConnectionGuildSelectSearch(arg0) {
@@ -204,7 +148,7 @@ export default function HubEmailConnectionGuildSelectSearch(arg0) {
               const obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "IconComponent", done: "+352" };
+              return { value: "HermesInternal", done: null };
             }
           } else {
             let c3;
@@ -242,7 +186,7 @@ export default function HubEmailConnectionGuildSelectSearch(arg0) {
                   email = closure_2;
                   const self = this;
                   const self2 = this;
-                  const aPIError = new id(error[18]).APIError(email);
+                  const aPIError = new id(error[16]).APIError(email);
                   c5(aPIError);
                 } else if (arg0 === 1) {
                   c5 = 3;
@@ -261,7 +205,7 @@ export default function HubEmailConnectionGuildSelectSearch(arg0) {
                 c3 = 0;
                 constants(false);
                 c5 = 3;
-                return { value: "IconComponent", done: "+352" };
+                return { value: "HermesInternal", done: null };
               }
             } catch (tmp42) {
               closure_2 = tmp42;
@@ -287,7 +231,7 @@ export default function HubEmailConnectionGuildSelectSearch(arg0) {
       return id.id;
     },
     ListEmptyComponent() {
-      return anyErrorMessage(closure_1_12, {});
+      return anyErrorMessage(EmptyState, {});
     },
     ItemSeparatorComponent() {
       return anyErrorMessage(c6, { style: { height: 8 } });

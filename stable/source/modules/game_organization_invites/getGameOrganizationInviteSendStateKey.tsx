@@ -1,10 +1,10 @@
-// Module ID: 11348
-// Function ID: 11349
+// Module ID: 11651
+// Function ID: 11652
 // Name: getGameOrganizationInviteSendStateKey
 // Dependencies: [2]
 // Exports: default, toLinkedGameOrganization
 
-// Module 11348 (getGameOrganizationInviteSendStateKey)
+// Module 11651 (getGameOrganizationInviteSendStateKey)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/game_organization_invites/getGameOrganizationInviteSendStateKey.tsx");
@@ -12,6 +12,6 @@ const result = size.fileFinishedImporting("modules/game_organization_invites/get
 export default function getGameOrganizationInviteSendStateKey(applicationId) {
   return "game-organization-invite:" + applicationId.applicationId + ":" + applicationId.gameOrganizationId;
 };
-export const toLinkedGameOrganization = function toLinkedGameOrganization(organization) {
+export function toLinkedGameOrganization(organization) {
   return { applicationId: organization.applicationId, gameOrganizationId: organization.id };
-};
+}

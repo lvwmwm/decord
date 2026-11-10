@@ -1,76 +1,19 @@
-// Module ID: 15156
-// Function ID: 15157
+// Module ID: 15697
+// Function ID: 15698
 // Name: ActivateDeviceModal
-// Dependencies: [19, 21, 15155, 7517, 8147, 1128, 15157, 558, 576, 7127, 2]
+// Dependencies: [19, 21, 15696, 7558, 8359, 1113, 15698, 7169, 2]
+// Exports: default
 
-// Module 15156 (ActivateDeviceModal)
+// Module 15697 (ActivateDeviceModal)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-function headerTitle() {
-  return null;
-}
-function headerRight() {
-  return null;
-}
 const jsx = Fragment.jsx;
 const constants = { ACTIVATE_DEVICE: "activate-device" };
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivateDeviceModal(userCode) {
-  let tmp4;
-  let tmp6;
-  let tmp8;
-  const obj = userCode(576);
-  const cResult = obj.c(5);
-  userCode = userCode.userCode;
-  if (cResult[0] !== userCode) {
-    function onClose() {
-      const obj = onClose(closure_1_2[2]);
-      return obj.hideModal();
-    }
-    const obj2 = {};
-    const obj3 = {
-      fullscreen: true,
-      headerTitle,
-      headerLeft() {
-          let intl;
-          const obj = { source: closure_2_1(closure_2_2[4]), onPress: onClose, accessibilityLabel: intl.string(userCode(closure_2_2[5]).t.cpT0Cq) };
-          const HeaderActionButton = userCode(closure_2_2[3]).HeaderActionButton;
-          intl = userCode(closure_2_2[5]).intl;
-          return closure_2_4(HeaderActionButton, obj);
-        },
-      headerRight,
-      render() {
-          const obj = { onClose, prefilledUserCode };
-          return closure_2_4(userCode(closure_2_2[6]).ActivateDevice, obj);
-        }
-    };
-    obj2[constants.ACTIVATE_DEVICE] = obj3;
-    cResult[0] = userCode;
-    cResult[1] = obj2;
-    tmp4 = obj2;
-  } else {
-    tmp4 = cResult[1];
-  }
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1128).intl;
-    const stringResult = intl.string(userCode(1128).t["13/7kX"]);
-    cResult[2] = stringResult;
-    tmp6 = stringResult;
-  } else {
-    tmp6 = cResult[2];
-  }
-  if (cResult[3] !== tmp4) {
-    const tmp11 = jsx(userCode(7127).Navigator, { screens: tmp4, initialRouteName: constants.ACTIVATE_DEVICE, headerBackTitle: tmp6 });
-    cResult[3] = tmp4;
-    cResult[4] = tmp11;
-    tmp8 = tmp11;
-  } else {
-    tmp8 = cResult[4];
-  }
-  return tmp8;
-}) : (function ActivateDeviceModal(userCode) {
+const result = size.fileFinishedImporting("modules/activate_device/native/ActivateDeviceModal.tsx");
+
+export default function ActivateDeviceModal(userCode) {
   userCode = userCode.userCode;
   const items = [userCode];
   const memo = react.useMemo(() => {
@@ -80,7 +23,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivateDe
     }
     let obj = {
       fullscreen: true,
-      headerTitle,
+      headerTitle() {
+        return null;
+      },
       headerLeft() {
         let intl;
         const obj = { source: closure_2_1(closure_2_2[4]), onPress: onClose, accessibilityLabel: intl.string(userCode(closure_2_2[5]).t.cpT0Cq) };
@@ -88,7 +33,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivateDe
         intl = userCode(closure_2_2[5]).intl;
         return closure_2_4(HeaderActionButton, obj);
       },
-      headerRight,
+      headerRight() {
+        return null;
+      },
       render() {
         const obj = { onClose, prefilledUserCode };
         return closure_2_4(userCode(closure_2_2[6]).ActivateDevice, obj);
@@ -96,10 +43,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivateDe
     };
     return { [closure_2_5.ACTIVATE_DEVICE]: obj };
   }, items);
-  const Navigator = userCode(7127).Navigator;
-  let intl = userCode(1128).intl;
-  return <Navigator screens={memo} initialRouteName={constants.ACTIVATE_DEVICE} headerBackTitle={intl.string(userCode(1128).t["13/7kX"])} />;
-});
-const result = size.fileFinishedImporting("modules/activate_device/native/ActivateDeviceModal.tsx");
-
-export default tmp2;
+  const Navigator = userCode(7169).Navigator;
+  let intl = userCode(1113).intl;
+  return <Navigator screens={memo} initialRouteName={constants.ACTIVATE_DEVICE} headerBackTitle={intl.string(userCode(1113).t["13/7kX"])} />;
+};

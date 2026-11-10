@@ -1,42 +1,21 @@
-// Module ID: 10813
-// Function ID: 10814
+// Module ID: 10935
+// Function ID: 10936
 // Name: ActivityLaunchErrorLink
-// Dependencies: [19, 21, 558, 576, 10814, 2]
+// Dependencies: [19, 21, 10936, 2]
+// Exports: default
 
-// Module 10813 (ActivityLaunchErrorLink)
+// Module 10935 (ActivityLaunchErrorLink)
 import Fragment from "Fragment" /* 21 */;
-import react2 from "react" /* 576 */;
+import IntlLink from "IntlLink" /* 10936 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let tmp;
-const IntlLink = tmp(10814);
 const jsx = Fragment.jsx;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivityLaunchErrorLink(arg0) {
-  let children;
-  let href;
-  const obj = react2;
-  const cResult = obj.c(3);
-  ({ href, children } = arg0);
-  if (cResult[0] === children) {
-    let tmp4;
-    if (cResult[1] === href) {
-      tmp4 = cResult[2];
-    }
-    return tmp4;
-  }
-  const tmp5 = jsx(IntlLink.IntlLink, { target: href, children });
-  cResult[0] = children;
-  cResult[1] = href;
-  cResult[2] = tmp5;
-  tmp4 = tmp5;
-}) : (function ActivityLaunchErrorLink(arg0) {
+const result = size.fileFinishedImporting("modules/activities/utils/ActivityLaunchErrorLink.native.tsx");
+
+export default function ActivityLaunchErrorLink(arg0) {
   let children;
   let href;
   ({ href, children } = arg0);
   return jsx(IntlLink.IntlLink, { target, children });
-});
-const result = size.fileFinishedImporting("modules/activities/utils/ActivityLaunchErrorLink.native.tsx");
-
-export default tmp3;
+};

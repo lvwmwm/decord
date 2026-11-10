@@ -1,121 +1,20 @@
-// Module ID: 16041
-// Function ID: 16042
+// Module ID: 16612
+// Function ID: 16613
 // Name: TinyBroncoNoticeVisibility
-// Dependencies: [1392, 2000, 5676, 6691, 558, 576, 504, 2]
-// Exports: shouldShowAgeNotice
+// Dependencies: [1383, 1992, 5693, 6731, 504, 2]
+// Exports: shouldShowAgeNotice, useShouldShowAgeNotice, useShouldShowAgeNoticePromo
 
-// Module 16041 (TinyBroncoNoticeVisibility)
-import react from "react" /* 576 */;
-import Server from "Server" /* 2000 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5676 */;
-import AgeGatedFeature from "AgeGatedFeature" /* 6691 */;
-import UserStore from "UserStore" /* 1392 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+// Module 16612 (TinyBroncoNoticeVisibility)
+import get_initialized from "get initialized" /* 504 */;
+import Server from "Server" /* 1992 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5693 */;
+import AgeGatedFeature from "AgeGatedFeature" /* 6731 */;
+import UserStore from "UserStore" /* 1383 */;
 import size from "module_2" /* 2 */;
 
-let tmp;
-const get_initialized = tmp(504);
-let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldShowAgeNotice() {
-  let tmp5;
-  let tmp6;
-  const obj = react;
-  const cResult = obj.c(2);
-  const obj2 = RegionalFeatureConfigUtils;
-  let isFeatureAgeGated = obj2.useIsFeatureAgeGated(AgeGatedFeature.AgeGatedFeature.NOTICE);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [UserStore];
-    const fn = function o() {
-      currentUser = currentUser.getCurrentUser();
-      let prop;
-      if (currentUser != null) {
-        prop = currentUser.ageVerificationStatus;
-      }
-      const tmp3 = null != prop && prop !== Server.AgeVerificationStatusUkAndAusOnly.VERIFIED_ADULT && prop !== Server.AgeVerificationStatusUkAndAusOnly.VERIFIED_TEEN;
-      return tmp3;
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp5 = items;
-    tmp6 = fn;
-  } else {
-    [tmp5, tmp6] = cResult;
-  }
-  const tmpResult = get_initialized;
-  if (isFeatureAgeGated) {
-    isFeatureAgeGated = tmpResult.useStateFromStores(tmp5, tmp6);
-  }
-  return isFeatureAgeGated;
-}) : (function useShouldShowAgeNotice() {
-  const obj = RegionalFeatureConfigUtils;
-  let isFeatureAgeGated = obj.useIsFeatureAgeGated(AgeGatedFeature.AgeGatedFeature.NOTICE);
-  const items = [UserStore];
-  const obj2 = get_initialized;
-  if (isFeatureAgeGated) {
-    isFeatureAgeGated = obj2.useStateFromStores(items, () => {
-      currentUser = currentUser.getCurrentUser();
-      let prop;
-      if (currentUser != null) {
-        prop = currentUser.ageVerificationStatus;
-      }
-      const tmp3 = null != prop && prop !== Server.AgeVerificationStatusUkAndAusOnly.VERIFIED_ADULT && prop !== Server.AgeVerificationStatusUkAndAusOnly.VERIFIED_TEEN;
-      return tmp3;
-    });
-  }
-  return isFeatureAgeGated;
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldShowAgeNoticePromo() {
-  let tmp5;
-  let tmp6;
-  const obj = react;
-  const cResult = obj.c(2);
-  const obj2 = RegionalFeatureConfigUtils;
-  let isFeatureAgeGated = obj2.useIsFeatureAgeGated(AgeGatedFeature.AgeGatedFeature.NOTICE);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [UserStore];
-    const fn = function o() {
-      currentUser = currentUser.getCurrentUser();
-      let prop;
-      if (currentUser != null) {
-        prop = currentUser.ageVerificationStatus;
-      }
-      const tmp3 = null != prop && prop !== Server.AgeVerificationStatusUkAndAusOnly.VERIFIED_ADULT && prop !== Server.AgeVerificationStatusUkAndAusOnly.VERIFIED_TEEN && prop !== Server.AgeVerificationStatusUkAndAusOnly.INFERRED_ADULT;
-      return tmp3;
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp5 = items;
-    tmp6 = fn;
-  } else {
-    [tmp5, tmp6] = cResult;
-  }
-  const tmpResult = get_initialized;
-  if (isFeatureAgeGated) {
-    isFeatureAgeGated = tmpResult.useStateFromStores(tmp5, tmp6);
-  }
-  return isFeatureAgeGated;
-}) : (function useShouldShowAgeNoticePromo() {
-  const obj = RegionalFeatureConfigUtils;
-  let isFeatureAgeGated = obj.useIsFeatureAgeGated(AgeGatedFeature.AgeGatedFeature.NOTICE);
-  const items = [UserStore];
-  const obj2 = get_initialized;
-  if (isFeatureAgeGated) {
-    isFeatureAgeGated = obj2.useStateFromStores(items, () => {
-      currentUser = currentUser.getCurrentUser();
-      let prop;
-      if (currentUser != null) {
-        prop = currentUser.ageVerificationStatus;
-      }
-      const tmp3 = null != prop && prop !== Server.AgeVerificationStatusUkAndAusOnly.VERIFIED_ADULT && prop !== Server.AgeVerificationStatusUkAndAusOnly.VERIFIED_TEEN && prop !== Server.AgeVerificationStatusUkAndAusOnly.INFERRED_ADULT;
-      return tmp3;
-    });
-  }
-  return isFeatureAgeGated;
-});
 const result = size.fileFinishedImporting("modules/tiny_bronco/TinyBroncoNoticeVisibility.tsx");
 
-export const shouldShowAgeNotice = function shouldShowAgeNotice() {
+export function shouldShowAgeNotice() {
   const obj = RegionalFeatureConfigUtils;
   let isFeatureAgeGatedResult = obj.isFeatureAgeGated(AgeGatedFeature.AgeGatedFeature.NOTICE);
   if (isFeatureAgeGatedResult) {
@@ -128,6 +27,40 @@ export const shouldShowAgeNotice = function shouldShowAgeNotice() {
     null != prop && prop !== Server.AgeVerificationStatusUkAndAusOnly.VERIFIED_ADULT && prop !== Server.AgeVerificationStatusUkAndAusOnly.VERIFIED_TEEN;
   }
   return isFeatureAgeGatedResult;
-};
-export const useShouldShowAgeNotice = tmp2;
-export const useShouldShowAgeNoticePromo = tmp3;
+}
+export function useShouldShowAgeNotice() {
+  const obj = RegionalFeatureConfigUtils;
+  let isFeatureAgeGated = obj.useIsFeatureAgeGated(AgeGatedFeature.AgeGatedFeature.NOTICE);
+  const items = [UserStore];
+  const obj2 = get_initialized;
+  if (isFeatureAgeGated) {
+    isFeatureAgeGated = obj2.useStateFromStores(items, () => {
+      currentUser = currentUser.getCurrentUser();
+      let prop;
+      if (currentUser != null) {
+        prop = currentUser.ageVerificationStatus;
+      }
+      const tmp3 = null != prop && prop !== Server.AgeVerificationStatusUkAndAusOnly.VERIFIED_ADULT && prop !== Server.AgeVerificationStatusUkAndAusOnly.VERIFIED_TEEN;
+      return tmp3;
+    });
+  }
+  return isFeatureAgeGated;
+}
+export function useShouldShowAgeNoticePromo() {
+  const obj = RegionalFeatureConfigUtils;
+  let isFeatureAgeGated = obj.useIsFeatureAgeGated(AgeGatedFeature.AgeGatedFeature.NOTICE);
+  const items = [UserStore];
+  const obj2 = get_initialized;
+  if (isFeatureAgeGated) {
+    isFeatureAgeGated = obj2.useStateFromStores(items, () => {
+      currentUser = currentUser.getCurrentUser();
+      let prop;
+      if (currentUser != null) {
+        prop = currentUser.ageVerificationStatus;
+      }
+      const tmp3 = null != prop && prop !== Server.AgeVerificationStatusUkAndAusOnly.VERIFIED_ADULT && prop !== Server.AgeVerificationStatusUkAndAusOnly.VERIFIED_TEEN && prop !== Server.AgeVerificationStatusUkAndAusOnly.INFERRED_ADULT;
+      return tmp3;
+    });
+  }
+  return isFeatureAgeGated;
+}

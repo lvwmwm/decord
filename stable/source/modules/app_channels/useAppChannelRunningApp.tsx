@@ -1,109 +1,39 @@
-// Module ID: 13895
-// Function ID: 13896
+// Module ID: 14413
+// Function ID: 14414
 // Name: useAppChannelRunningApp
-// Dependencies: [6807, 1087, 6808, 558, 576, 504, 13896, 1128, 2]
+// Dependencies: [6846, 1072, 6847, 504, 14414, 1113, 2]
+// Exports: default
 
-// Module 13895 (useAppChannelRunningApp)
-import Constants from "Constants" /* 1087 */;
-import FramesConstants from "FramesConstants" /* 6808 */;
-import useFrameRunsInBackgroundDefault from "useFrameRunsInBackground" /* 13896 */;
-import FramesStore from "FramesStore" /* 6807 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 14413 (useAppChannelRunningApp)
+import Constants from "Constants" /* 1072 */;
+import FramesStore from "FramesStore" /* 6846 */;
+import FramesConstants from "FramesConstants" /* 6847 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
+let hasOwnProperty;
+let metroRequire;
 const ChannelTypes = Constants.ChannelTypes;
-const getFrameSurfaceForChannel = FramesConstants.getFrameSurfaceForChannel;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAppChannelRunningApp(arg0) {
-  let first;
-  let tmp10;
-  let tmp6;
-  let tmp7;
-  let type;
-  _require = arg0;
-  const tmp = _require;
-  let tmp2 = dependencyMap;
-  const obj = require("react");
-  const cResult = obj.c(9);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [FramesStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function o() {
-      let tmp2 = null;
-      if (type.type === ChannelTypes.GUILD_APP) {
-        tmp2 = getFrameSurfaceForChannel(tmp);
-      }
-      let tmp4;
-      if (null != tmp2) {
-        const first = FramesStore.getFramesForSurface(tmp2)[0];
-        let id;
-        if (first != null) {
-          id = first.id;
-        }
-        tmp4 = id;
-      }
-      if (tmp4 == null) {
-        tmp4 = null;
-      }
-      return tmp4;
-    };
-    const items1 = [arg0];
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    cResult[3] = items1;
-    tmp7 = items1;
-    tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-    tmp7 = cResult[3];
-  }
-  const tmpResult = tmp(504);
-  const stateFromStores = tmpResult.useStateFromStores(first, tmp6, tmp7);
-  const tmp9 = useFrameRunsInBackgroundDefault(stateFromStores);
-  if (cResult[4] !== tmp9) {
-    let stringResult = null;
-    if (tmp9) {
-      const intl = tmp(1128).intl;
-      stringResult = intl.string(tmp(1128).t["1yCkJY"]);
-    }
-    cResult[4] = tmp9;
-    cResult[5] = stringResult;
-    tmp10 = stringResult;
-  } else {
-    tmp10 = cResult[5];
-  }
-  if (cResult[6] === stateFromStores) {
-    let tmp12;
-    if (cResult[7] === tmp10) {
-      tmp12 = cResult[8];
-    }
-    return tmp12;
-  }
-  const obj2 = { frameId: stateFromStores, runningLabel: tmp10 };
-  cResult[6] = stateFromStores;
-  cResult[7] = tmp10;
-  cResult[8] = obj2;
-  tmp12 = obj2;
-}) : (function useAppChannelRunningApp(arg0) {
+({ asLaunched: hasOwnProperty, getFrameSurfaceForChannel: metroRequire } = FramesConstants);
+const result = size.fileFinishedImporting("modules/app_channels/useAppChannelRunningApp.tsx");
+
+export default function useAppChannelRunningApp(arg0) {
+  let audible;
   let stringResult;
   let type;
+  let userMuted;
   _require = arg0;
-  const tmp = _require;
+  let tmp = _require;
   let tmp2 = dependencyMap;
+  let obj = require("get initialized");
   const items = [FramesStore];
   const items1 = [arg0];
-  const obj = require("get initialized");
   const stateFromStores = obj.useStateFromStores(items, () => {
     let tmp2 = null;
     if (type.type === ChannelTypes.GUILD_APP) {
-      tmp2 = getFrameSurfaceForChannel(tmp);
+      tmp2 = metroRequire(tmp);
     }
     let tmp4;
     if (null != tmp2) {
@@ -119,14 +49,34 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAppChanne
     }
     return tmp4;
   }, items1);
-  const obj2 = { frameId: stateFromStores, runningLabel: stringResult };
+  let tmp4 = stateFromStores(14414)(stateFromStores);
+  const items2 = [FramesStore];
+  const items3 = [stateFromStores];
+  const obj2 = require("get initialized");
+  const stateFromStoresObject = obj2.useStateFromStoresObject(items2, () => {
+    let userMuted;
+    const tmp = hasOwnProperty(FramesStore.getFrame(stateFromStores));
+    let data;
+    if (tmp != null) {
+      data = tmp.data;
+    }
+    let audible;
+    if (data != null) {
+      audible = data.audible;
+    }
+    const obj = { audible: true === audible, userMuted: true === userMuted };
+    userMuted = undefined;
+    if (data != null) {
+      userMuted = data.userMuted;
+    }
+    return obj;
+  }, items3);
+  const obj3 = { frameId: stateFromStores, runningLabel: stringResult, audible, userMuted };
   stringResult = null;
-  if (useFrameRunsInBackgroundDefault(stateFromStores)) {
-    const intl = tmp(1128).intl;
-    stringResult = intl.string(tmp(1128).t["1yCkJY"]);
+  ({ audible, userMuted } = stateFromStoresObject);
+  if (tmp4) {
+    const intl = tmp(1113).intl;
+    stringResult = intl.string(tmp(1113).t["1yCkJY"]);
   }
-  return obj2;
-});
-const result = size.fileFinishedImporting("modules/app_channels/useAppChannelRunningApp.tsx");
-
-export default tmp2;
+  return obj3;
+};

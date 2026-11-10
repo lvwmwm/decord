@@ -1,41 +1,41 @@
-// Module ID: 1420
-// Function ID: 1421
+// Module ID: 1412
+// Function ID: 1413
 // Name: utils/AvatarUtils
-// Dependencies: [17, 1421, 1422, 1423, 1424, 1425, 1426, 1427, 1428, 1429, 1430, 1431, 1432, 1433, 1434, 1435, 1436, 1437, 1438, 1439, 1440, 1441, 1442, 1443, 1444, 1445, 1446, 1447, 1448, 1449, 1450, 1451, 2]
+// Dependencies: [17, 1413, 1414, 1415, 1416, 1417, 1418, 1419, 1420, 1421, 1422, 1423, 1424, 1425, 1426, 1427, 1428, 1429, 1430, 1431, 1432, 1433, 1434, 1435, 1436, 1437, 1438, 1439, 1440, 1441, 1442, 1443, 2]
 // Exports: ensureAvatarSource, getAutomodAvatarURL
 
-// Module 1420 (utils/AvatarUtils)
+// Module 1412 (utils/AvatarUtils)
 import react_native from "react-native" /* 17 */;
-import AssetRegistryDefault from "AssetRegistry" /* 1421 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 1422 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 1423 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 1424 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 1425 */;
-import AssetRegistryDefault6 from "AssetRegistry" /* 1426 */;
-import AssetRegistryDefault7 from "AssetRegistry" /* 1427 */;
-import AssetRegistryDefault8 from "AssetRegistry" /* 1428 */;
-import AssetRegistryDefault9 from "AssetRegistry" /* 1429 */;
-import AssetRegistryDefault10 from "AssetRegistry" /* 1430 */;
-import AssetRegistryDefault11 from "AssetRegistry" /* 1431 */;
-import AssetRegistryDefault12 from "AssetRegistry" /* 1432 */;
-import AssetRegistryDefault13 from "AssetRegistry" /* 1433 */;
-import AssetRegistryDefault14 from "AssetRegistry" /* 1434 */;
-import AssetRegistryDefault15 from "AssetRegistry" /* 1435 */;
-import AssetRegistryDefault16 from "AssetRegistry" /* 1436 */;
-import AssetRegistryDefault17 from "AssetRegistry" /* 1437 */;
-import AssetRegistryDefault18 from "AssetRegistry" /* 1438 */;
-import AssetRegistryDefault19 from "AssetRegistry" /* 1439 */;
-import AssetRegistryDefault20 from "AssetRegistry" /* 1440 */;
-import AssetRegistryDefault21 from "AssetRegistry" /* 1441 */;
-import AssetRegistryDefault22 from "AssetRegistry" /* 1442 */;
-import AssetRegistryDefault23 from "AssetRegistry" /* 1443 */;
-import AssetRegistryDefault24 from "AssetRegistry" /* 1444 */;
-import AssetRegistryDefault25 from "AssetRegistry" /* 1445 */;
-import AssetRegistryDefault26 from "AssetRegistry" /* 1446 */;
-import AssetRegistryDefault27 from "AssetRegistry" /* 1448 */;
-import AssetRegistryDefault28 from "AssetRegistry" /* 1449 */;
-import AssetRegistryDefault29 from "AssetRegistry" /* 1451 */;
-import react_native2 from "react-native" /* 1447 */;
+import AssetRegistryDefault from "AssetRegistry" /* 1413 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 1414 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 1415 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 1416 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 1417 */;
+import AssetRegistryDefault6 from "AssetRegistry" /* 1418 */;
+import AssetRegistryDefault7 from "AssetRegistry" /* 1419 */;
+import AssetRegistryDefault8 from "AssetRegistry" /* 1420 */;
+import AssetRegistryDefault9 from "AssetRegistry" /* 1421 */;
+import AssetRegistryDefault10 from "AssetRegistry" /* 1422 */;
+import AssetRegistryDefault11 from "AssetRegistry" /* 1423 */;
+import AssetRegistryDefault12 from "AssetRegistry" /* 1424 */;
+import AssetRegistryDefault13 from "AssetRegistry" /* 1425 */;
+import AssetRegistryDefault14 from "AssetRegistry" /* 1426 */;
+import AssetRegistryDefault15 from "AssetRegistry" /* 1427 */;
+import AssetRegistryDefault16 from "AssetRegistry" /* 1428 */;
+import AssetRegistryDefault17 from "AssetRegistry" /* 1429 */;
+import AssetRegistryDefault18 from "AssetRegistry" /* 1430 */;
+import AssetRegistryDefault19 from "AssetRegistry" /* 1431 */;
+import AssetRegistryDefault20 from "AssetRegistry" /* 1432 */;
+import AssetRegistryDefault21 from "AssetRegistry" /* 1433 */;
+import AssetRegistryDefault22 from "AssetRegistry" /* 1434 */;
+import AssetRegistryDefault23 from "AssetRegistry" /* 1435 */;
+import AssetRegistryDefault24 from "AssetRegistry" /* 1436 */;
+import AssetRegistryDefault25 from "AssetRegistry" /* 1437 */;
+import AssetRegistryDefault26 from "AssetRegistry" /* 1438 */;
+import AssetRegistryDefault27 from "AssetRegistry" /* 1440 */;
+import AssetRegistryDefault28 from "AssetRegistry" /* 1441 */;
+import AssetRegistryDefault29 from "AssetRegistry" /* 1443 */;
+import react_native2 from "react-native" /* 1439 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -78,6 +78,6 @@ export const DEFAULT_AVATARS_SMALL = items1;
 export const DEFAULT_AVATARS_SMALL_MAX_SIZE = 24;
 export const DEFAULT_PROVISIONAL_AVATARS = items2;
 export { ensureAvatarSource };
-export const getAutomodAvatarURL = function getAutomodAvatarURL() {
+export function getAutomodAvatarURL() {
   return require("AssetRegistry");
-};
+}

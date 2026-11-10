@@ -1,37 +1,36 @@
-// Module ID: 8781
-// Function ID: 8782
+// Module ID: 8831
+// Function ID: 8832
 // Name: isStreaming
-// Dependencies: [2026, 1087, 2]
+// Dependencies: [2018, 5762, 2]
 // Exports: default
 
-// Module 8781 (isStreaming)
-import Constants from "Constants" /* 1087 */;
-import Constants2 from "Constants" /* 2026 */;
+// Module 8831 (isStreaming)
+import Constants from "Constants" /* 2018 */;
+import ActivityTypes from "ActivityTypes" /* 5762 */;
 import size from "module_2" /* 2 */;
 
 function _isStreaming(type) {
-  let tmp = type.type === ActivityTypes.STREAMING;
+  let tmp = type.type === ActivityTypes.ActivityTypes.STREAMING;
   if (tmp) {
     const isMatch = null != type.url && validStreamURL.test(type.url);
     tmp = isMatch;
   }
   return tmp;
 }
-const validStreamURL = Constants2.validStreamURL;
-const ActivityTypes = Constants.ActivityTypes;
+const validStreamURL = Constants.validStreamURL;
 const result = size.fileFinishedImporting("modules/activities/utils/isStreaming.tsx");
 
-export default function isStreaming(react) {
-  let tmp = null != react;
+export default function isStreaming(type) {
+  let tmp = null != type;
   if (tmp) {
     let someResult;
     const _Array = Array;
-    if (Array.isArray(react)) {
-      someResult = react.some(_isStreaming);
+    if (Array.isArray(type)) {
+      someResult = type.some(_isStreaming);
     } else {
-      someResult = react.type === ActivityTypes.STREAMING;
+      someResult = type.type === ActivityTypes.ActivityTypes.STREAMING;
       if (someResult) {
-        const isMatch = null != react.url && validStreamURL.test(react.url);
+        const isMatch = null != type.url && validStreamURL.test(type.url);
         someResult = isMatch;
       }
     }

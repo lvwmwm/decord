@@ -1,44 +1,22 @@
-// Module ID: 9694
-// Function ID: 9695
+// Module ID: 9775
+// Function ID: 9776
 // Name: useMessageMaxLength
-// Dependencies: [1392, 1087, 2053, 558, 576, 504, 2]
-// Exports: getMaxMessageLength
+// Dependencies: [1383, 1072, 2047, 504, 2]
+// Exports: default, getMaxMessageLength
 
-// Module 9694 (useMessageMaxLength)
-import react from "react" /* 576 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 2053 */;
-import UserStore from "UserStore" /* 1392 */;
-import Constants from "Constants" /* 1087 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 9775 (useMessageMaxLength)
+import get_initialized from "get initialized" /* 504 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 2047 */;
+import UserStore from "UserStore" /* 1383 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
 let hasOwnProperty;
-let tmp;
-const get_initialized = tmp(504);
 ({ MAX_MESSAGE_LENGTH_PREMIUM: closure_4, MAX_MESSAGE_LENGTH: hasOwnProperty } = Constants);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMessageMaxLength() {
-  let currentUser;
-  let tmp4;
-  let tmp5;
-  let obj = react;
-  const cResult = obj.c(2);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [UserStore];
-    const fn = function n() {
-      const obj = PremiumUtilsDefault;
-      return obj.canUseIncreasedMessageLength(currentUser.getCurrentUser()) ? closure_1_4 : closure_1_5;
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  const tmpResult = get_initialized;
-  return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (function useMessageMaxLength() {
+const result = size.fileFinishedImporting("modules/messages/useMessageMaxLength.tsx");
+
+export default function useMessageMaxLength() {
   let currentUser;
   let obj = get_initialized;
   const items = [UserStore];
@@ -46,11 +24,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMessage
     const obj = PremiumUtilsDefault;
     return obj.canUseIncreasedMessageLength(currentUser.getCurrentUser()) ? closure_1_4 : closure_1_5;
   });
-});
-const result = size.fileFinishedImporting("modules/messages/useMessageMaxLength.tsx");
-
-export default tmp3;
-export const getMaxMessageLength = function getMaxMessageLength() {
+};
+export function getMaxMessageLength() {
   const obj = PremiumUtilsDefault;
   return obj.canUseIncreasedMessageLength(UserStore.getCurrentUser()) ? React3 : hasOwnProperty;
-};
+}

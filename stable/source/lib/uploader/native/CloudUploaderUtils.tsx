@@ -1,28 +1,28 @@
-// Module ID: 8207
-// Function ID: 8208
+// Module ID: 8240
+// Function ID: 8241
 // Name: CloudUploaderUtils
-// Dependencies: [2068, 502, 1372, 8178, 12, 1267, 2]
+// Dependencies: [2062, 502, 1357, 8212, 12, 1252, 2]
 // Exports: getUploadPayload, prepareMessagePayload
 
-// Module 8207 (CloudUploaderUtils)
+// Module 8240 (CloudUploaderUtils)
 import _modDef12 from "module_12" /* 12 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import UploadUtils from "UploadUtils" /* 8178 */;
-import LocaleStore from "LocaleStore" /* 2068 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import UploadUtils from "UploadUtils" /* 8212 */;
+import LocaleStore from "LocaleStore" /* 2062 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1372 */;
+import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1357 */;
 import size from "module_2" /* 2 */;
 
 function getUploadPayload(self) {
   let obj2;
-  const obj = { filename: self.filename, file_size: self.currentSize, id: obj2.uniqueId(), original_content_type: "a" };
+  const obj = { filename: self.filename, file_size: self.currentSize, id: obj2.uniqueId(), original_content_type: "Array" };
   obj2 = _modDef12;
   return obj;
 }
 let result = size.fileFinishedImporting("lib/uploader/native/CloudUploaderUtils.tsx");
 
 export default { getUploadPayload };
-export const prepareMessagePayload = function prepareMessagePayload(Authorization, arr, arg2, arg3) {
+export function prepareMessagePayload(Authorization, arr, arg2, arg3) {
   const items = [];
   const item = arr.forEach((item, index) => {
     const push = items.push;
@@ -56,5 +56,5 @@ export const prepareMessagePayload = function prepareMessagePayload(Authorizatio
   }
   result = { attachments: items };
   const merged1 = Object.assign(arg2);
-};
+}
 export { getUploadPayload };

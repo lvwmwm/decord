@@ -1,106 +1,24 @@
-// Module ID: 17608
-// Function ID: 17609
+// Module ID: 18197
+// Function ID: 18198
 // Name: useFavoritesCleanupActivity
-// Dependencies: [32, 19, 6803, 558, 576, 6854, 504, 1128, 3444, 1104, 2]
+// Dependencies: [32, 19, 6842, 504, 6894, 1113, 3450, 1089, 2]
+// Exports: default
 
-// Module 17608 (useFavoritesCleanupActivity)
-import DurationsDefault from "Durations" /* 1104 */;
-import _modDef3444 from "module_3444" /* 3444 */;
-import getThreadAutoArchiveTimeOnce from "getThreadAutoArchiveTimeOnce" /* 6854 */;
+// Module 18197 (useFavoritesCleanupActivity)
+import DurationsDefault from "Durations" /* 1089 */;
+import _modDef3450 from "module_3450" /* 3450 */;
+import getThreadAutoArchiveTimeOnce from "getThreadAutoArchiveTimeOnce" /* 6894 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ReadStateStore from "ReadStateStore" /* 6803 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import ReadStateStore from "ReadStateStore" /* 6842 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavoritesCleanupActivity(threadMetadata) {
-  let diff;
-  let first1;
-  let tmp12;
-  let tmp7;
-  let tmp8;
-  _require = threadMetadata;
-  let obj = require("react");
-  const cResult = obj.c(8);
-  const first = _slicedToArray(react.useState(Date.now), 1)[0];
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [ReadStateStore];
-    cResult[0] = items;
-    first1 = items;
-  } else {
-    first1 = cResult[0];
-  }
-  if (cResult[1] !== threadMetadata) {
-    const fn = function u() {
-      const obj = getThreadAutoArchiveTimeOnce;
-      return obj.getThreadLastActivityTime(threadMetadata);
-    };
-    const items1 = [threadMetadata];
-    cResult[1] = threadMetadata;
-    cResult[2] = fn;
-    cResult[3] = items1;
-    tmp8 = items1;
-    tmp7 = fn;
-  } else {
-    tmp7 = cResult[2];
-    tmp8 = cResult[3];
-  }
-  const tmpResult = require("get initialized");
-  const stateFromStores = tmpResult.useStateFromStores(first1, tmp7, tmp8);
-  threadMetadata = threadMetadata.threadMetadata;
-  let archived;
-  const tmp10 = cResult[4];
-  if (threadMetadata != null) {
-    archived = threadMetadata.archived;
-  }
-  if (tmp10 === archived) {
-    if (cResult[5] === stateFromStores) {
-      if (cResult[6] === first) {
-        tmp12 = cResult[7];
-      }
-      return tmp12;
-    }
-  }
-  if (Number.isFinite(stateFromStores)) {
-    let formatToPlainStringResult;
-    if (stateFromStores > 0) {
-      const intl2 = tmp(1128).intl;
-      const formatToPlainString = intl2.formatToPlainString;
-      const _Math = Math;
-      const _Math2 = Math;
-      const obj2 = { days: Math.max(0, Math.floor(diff / DurationsDefault.Millis.DAY)) };
-      const IzxPdG = _modDef3444.IzxPdG;
-      diff = first - stateFromStores;
-      formatToPlainStringResult = formatToPlainString(IzxPdG, obj2);
-    }
-    const threadMetadata2 = threadMetadata.threadMetadata;
-    let archived1;
-    if (threadMetadata2 != null) {
-      archived1 = threadMetadata2.archived;
-    }
-    let formatToPlainStringResult1 = formatToPlainStringResult;
-    if (archived1) {
-      const intl3 = tmp(1128).intl;
-      const obj3 = { activity: formatToPlainStringResult };
-      formatToPlainStringResult1 = intl3.formatToPlainString(_modDef3444.Dr1FWM, obj3);
-    }
-    const threadMetadata3 = threadMetadata.threadMetadata;
-    let archived2;
-    if (threadMetadata3 != null) {
-      archived2 = threadMetadata3.archived;
-    }
-    cResult[4] = archived2;
-    cResult[5] = stateFromStores;
-    cResult[6] = first;
-    cResult[7] = formatToPlainStringResult1;
-    tmp12 = formatToPlainStringResult1;
-  }
-  const intl = tmp(1128).intl;
-  formatToPlainStringResult = intl.string(_modDef3444.rYws6y);
-}) : (function useFavoritesCleanupActivity(threadMetadata) {
+const result = size.fileFinishedImporting("modules/favorites/hooks/useFavoritesCleanupActivity.tsx");
+
+export default function useFavoritesCleanupActivity(threadMetadata) {
   let diff;
   _require = threadMetadata;
   const first = _slicedToArray(react.useState(Date.now), 1)[0];
@@ -114,12 +32,12 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavorit
   if (Number.isFinite(stateFromStores)) {
     let formatToPlainStringResult;
     if (stateFromStores > 0) {
-      const intl2 = tmp2(1128).intl;
+      const intl2 = tmp2(1113).intl;
       const formatToPlainString = intl2.formatToPlainString;
       const _Math = Math;
       const _Math2 = Math;
       const obj2 = { days: Math.max(0, Math.floor(diff / DurationsDefault.Millis.DAY)) };
-      const IzxPdG = _modDef3444.IzxPdG;
+      const IzxPdG = _modDef3450.IzxPdG;
       diff = first - stateFromStores;
       formatToPlainStringResult = formatToPlainString(IzxPdG, obj2);
     }
@@ -130,15 +48,12 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavorit
     }
     let formatToPlainStringResult1 = formatToPlainStringResult;
     if (archived) {
-      const intl3 = tmp2(1128).intl;
+      const intl3 = tmp2(1113).intl;
       const obj3 = { activity: formatToPlainStringResult };
-      formatToPlainStringResult1 = intl3.formatToPlainString(_modDef3444.Dr1FWM, obj3);
+      formatToPlainStringResult1 = intl3.formatToPlainString(_modDef3450.Dr1FWM, obj3);
     }
     return formatToPlainStringResult1;
   }
-  const intl = tmp2(1128).intl;
-  formatToPlainStringResult = intl.string(_modDef3444.rYws6y);
-});
-const result = size.fileFinishedImporting("modules/favorites/hooks/useFavoritesCleanupActivity.tsx");
-
-export default tmp2;
+  const intl = tmp2(1113).intl;
+  formatToPlainStringResult = intl.string(_modDef3450.rYws6y);
+};

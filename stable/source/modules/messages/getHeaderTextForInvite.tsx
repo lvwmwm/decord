@@ -1,16 +1,16 @@
-// Module ID: 14567
-// Function ID: 14568
+// Module ID: 15109
+// Function ID: 15110
 // Name: getHeaderTextForInvite
-// Dependencies: [1128, 2]
+// Dependencies: [1113, 2]
 // Exports: getHeaderTextForInvite
 
-// Module 14567 (getHeaderTextForInvite)
-import intl2 from "intl" /* 1128 */;
+// Module 15109 (getHeaderTextForInvite)
+import intl2 from "intl" /* 1113 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/messages/getHeaderTextForInvite.tsx");
 
-export const getHeaderTextForInvite = function getHeaderTextForInvite(arg0) {
+export function getHeaderTextForInvite(arg0) {
   let isGuest;
   let isHubGuild;
   let isOwnInvite;
@@ -61,4 +61,4 @@ export const getHeaderTextForInvite = function getHeaderTextForInvite(arg0) {
     stringResult3 = string(t.BoQUFf);
   }
   return stringResult3;
-};
+}

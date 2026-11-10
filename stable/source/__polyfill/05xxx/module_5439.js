@@ -1,17 +1,26 @@
 // Module ID: 5439
 // Function ID: 5440
-// Dependencies: [5437, 5388]
-// Exports: useSimultaneousGestures
+// Dependencies: [19, 21, 5436]
+// Exports: default
 
 // Module 5439
-import ComposedGestureName from "ComposedGestureName" /* 5388 */;
-import _mod5437 from "module_5437" /* 5437 */;
+import Fragment from "Fragment" /* 21 */;
+import TOUCHABLE_STATEDefault from "TOUCHABLE_STATE" /* 5436 */;
+import react from "react" /* 19 */;
 
+const jsx = Fragment.jsx;
 
-export const useSimultaneousGestures = function useSimultaneousGestures() {
-  const items = [...arguments];
-  const useComposedGesture = _mod5437.useComposedGesture;
-  _mod5437;
-  const items1 = [ComposedGestureName.ComposedGestureName.Simultaneous, ...items];
-  return useComposedGesture.apply(items1);
+export default function _default(delayLongPress) {
+  let num = delayLongPress.delayLongPress;
+  if (num === undefined) {
+    num = 600;
+  }
+  let extraButtonProps = delayLongPress.extraButtonProps;
+  if (extraButtonProps === undefined) {
+    extraButtonProps = { rippleColor: "transparent", exclusive: true };
+  }
+  const merged = Object.assign(delayLongPress, Object.assign({ delayLongPress: 0, extraButtonProps: 0 }));
+  TOUCHABLE_STATEDefault;
+  const merged1 = Object.assign(merged);
+  return <tmp2 delayLongPress={num} extraButtonProps={extraButtonProps} />;
 };

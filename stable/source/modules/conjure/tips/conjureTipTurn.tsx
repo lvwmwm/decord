@@ -1,16 +1,16 @@
-// Module ID: 12368
-// Function ID: 12369
+// Module ID: 12615
+// Function ID: 12616
 // Name: conjureTipTurn
-// Dependencies: [10732, 2]
-// Exports: entryActivityAt, hasNoTurns, hasOpenAsk, newestPublish, newestSettledTurn
+// Dependencies: [10852, 2]
+// Exports: entryActivityAt, hasNoTurns, hasOpenAsk, hasRunningTurn, newestPublish, newestSettledTurn
 
-// Module 12368 (conjureTipTurn)
-import conjureChatTurns from "conjureChatTurns" /* 10732 */;
+// Module 12615 (conjureTipTurn)
+import conjureChatTurns from "conjureChatTurns" /* 10852 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/tips/conjureTipTurn.tsx");
 
-export const newestSettledTurn = function newestSettledTurn(arr) {
+export function newestSettledTurn(arr) {
   let diff = arr.length - 1;
   if (0 <= diff) {
     while (true) {
@@ -26,7 +26,7 @@ export const newestSettledTurn = function newestSettledTurn(arr) {
               if (obj.turnSettled(tmp2)) {
                 return tmp2;
               } else {
-                let tmp4Result = tmp4(10732);
+                let tmp4Result = tmp4(10852);
                 if (!tmp4Result.isStrandedSegment(arr, diff)) {
                   return null;
                 }
@@ -40,8 +40,18 @@ export const newestSettledTurn = function newestSettledTurn(arr) {
     return null;
   }
   return null;
-};
-export const newestPublish = function newestPublish(arr) {
+}
+export function hasRunningTurn(arr) {
+  const obj = conjureChatTurns;
+  const findOpenTurnResult = obj.findOpenTurn(arr);
+  let tmp4 = null != findOpenTurnResult;
+  if (tmp4) {
+    const tmpResult = conjureChatTurns;
+    tmp4 = !tmpResult.isStrandedSegment(arr, arr.lastIndexOf(findOpenTurnResult));
+  }
+  return tmp4;
+}
+export function newestPublish(arr) {
   let tmp2;
   let diff = arr.length - 1;
   if (0 <= diff) {
@@ -62,11 +72,11 @@ export const newestPublish = function newestPublish(arr) {
     return tmp2;
   }
   return null;
-};
-export const hasNoTurns = function hasNoTurns(arr) {
+}
+export function hasNoTurns(arr) {
   return arr.every((kind) => "publish_notice" === kind.kind || "project_event" === kind.kind || "context_boundary" === kind.kind);
-};
-export const hasOpenAsk = function hasOpenAsk(newestSettledTurnResult) {
+}
+export function hasOpenAsk(newestSettledTurnResult) {
   let tmp = null != newestSettledTurnResult.awaitingUser || null != newestSettledTurnResult.secretRequest || null != newestSettledTurnResult.settingsRequest;
   if (!tmp) {
     const intake = newestSettledTurnResult.intake;
@@ -79,9 +89,21 @@ export const hasOpenAsk = function hasOpenAsk(newestSettledTurnResult) {
     }
     tmp = num > 0;
   }
+  if (!tmp) {
+    tmp = null != newestSettledTurnResult.clarification;
+  }
+  if (!tmp) {
+    tmp = null != newestSettledTurnResult.appBuildRequest;
+  }
+  if (!tmp) {
+    tmp = null != newestSettledTurnResult.restoreProposal;
+  }
+  if (!tmp) {
+    tmp = null != newestSettledTurnResult.publishScheduleProposal;
+  }
   return tmp;
-};
-export const entryActivityAt = function entryActivityAt(atResult) {
+}
+export function entryActivityAt(atResult) {
   let num = atResult.finished_at;
   const _Math = Math;
   const created_at = atResult.created_at;
@@ -93,4 +115,4 @@ export const entryActivityAt = function entryActivityAt(atResult) {
     num2 = 0;
   }
   return max(created_at, num, num2);
-};
+}

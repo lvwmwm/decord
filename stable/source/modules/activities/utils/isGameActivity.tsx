@@ -1,16 +1,16 @@
-// Module ID: 10676
-// Function ID: 10677
+// Module ID: 10755
+// Function ID: 10756
 // Name: isGameActivity
-// Dependencies: [1087, 2]
+// Dependencies: [5762, 2]
 // Exports: default
 
-// Module 10676 (isGameActivity)
-import Constants from "Constants" /* 1087 */;
+// Module 10755 (isGameActivity)
+import ActivityTypes from "ActivityTypes" /* 5762 */;
 import size from "module_2" /* 2 */;
 
-const ActivityTypes = Constants.ActivityTypes;
 const result = size.fileFinishedImporting("modules/activities/utils/isGameActivity.tsx");
 
 export default function isGameActivity(type) {
-  return null != type && type.type === ActivityTypes.PLAYING;
+  const tmp = null != type && type.type === ActivityTypes.ActivityTypes.PLAYING;
+  return tmp;
 };

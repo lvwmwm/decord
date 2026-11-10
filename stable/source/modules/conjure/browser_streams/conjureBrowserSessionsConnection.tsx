@@ -1,12 +1,12 @@
-// Module ID: 10764
-// Function ID: 10765
+// Module ID: 10892
+// Function ID: 10893
 // Name: conjureBrowserSessionsConnection
-// Dependencies: [584, 10751, 2]
+// Dependencies: [572, 10874, 2]
 // Exports: refreshBrowserSessions
 
-// Module 10764 (conjureBrowserSessionsConnection)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import conjureProjectSockets from "conjureProjectSockets" /* 10751 */;
+// Module 10892 (conjureBrowserSessionsConnection)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import conjureProjectSockets from "conjureProjectSockets" /* 10874 */;
 import size from "module_2" /* 2 */;
 
 let obj = {
@@ -20,10 +20,10 @@ let obj = {
 let result = size.fileFinishedImporting("modules/conjure/browser_streams/conjureBrowserSessionsConnection.tsx");
 
 export const browserSessionsFrameHandlers = obj;
-export const refreshBrowserSessions = function refreshBrowserSessions(projectId) {
+export function refreshBrowserSessions(projectId) {
   const obj = conjureProjectSockets;
   const conjureSocket = obj.getConjureSocket(projectId);
   if (conjureSocket != null) {
     const result = conjureSocket.sendRefreshBrowserSessions();
   }
-};
+}

@@ -10,7 +10,7 @@ import Appearance from "Appearance" /* 454 */;
 let appearance, obj;
 
 
-export const getColorScheme = function getColorScheme() {
+export function getColorScheme() {
   if (null == obj) {
     const self3 = this;
     const self4 = this;
@@ -42,8 +42,8 @@ export const getColorScheme = function getColorScheme() {
     colorScheme = obj.appearance.colorScheme;
   }
   return colorScheme;
-};
-export const setColorScheme = function setColorScheme(arg0) {
+}
+export function setColorScheme(arg0) {
   if (null == obj) {
     const self3 = this;
     const self4 = this;
@@ -79,8 +79,8 @@ export const setColorScheme = function setColorScheme(arg0) {
     const obj4 = { colorScheme: tmp6 };
     obj.appearance = obj4;
   }
-};
-export const addChangeListener = function addChangeListener(onChange) {
+}
+export function addChangeListener(onChange) {
   if (null == obj) {
     const self3 = this;
     const self4 = this;
@@ -104,4 +104,4 @@ export const addChangeListener = function addChangeListener(onChange) {
   }
   const eventEmitter = obj.eventEmitter;
   return eventEmitter.addListener("change", onChange);
-};
+}

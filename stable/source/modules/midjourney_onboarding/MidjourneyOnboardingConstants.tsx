@@ -1,9 +1,9 @@
-// Module ID: 15137
-// Function ID: 15138
+// Module ID: 15678
+// Function ID: 15679
 // Name: MidjourneyOnboardingConstants
 // Dependencies: [2]
 
-// Module 15137 (MidjourneyOnboardingConstants)
+// Module 15678 (MidjourneyOnboardingConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/midjourney_onboarding/MidjourneyOnboardingConstants.tsx");

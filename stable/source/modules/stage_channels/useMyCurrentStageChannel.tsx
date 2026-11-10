@@ -1,50 +1,20 @@
-// Module ID: 11604
-// Function ID: 11605
+// Module ID: 11862
+// Function ID: 11863
 // Name: useMyCurrentStageChannel
-// Dependencies: [4855, 4906, 558, 576, 504, 2]
+// Dependencies: [4863, 4917, 504, 2]
+// Exports: default
 
-// Module 11604 (useMyCurrentStageChannel)
-import react from "react" /* 576 */;
-import ChannelStore from "ChannelStore" /* 4855 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4906 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 11862 (useMyCurrentStageChannel)
+import get_initialized from "get initialized" /* 504 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4917 */;
 import size from "module_2" /* 2 */;
 
 let channel, voiceChannelId;
 
-let tmp;
-const get_initialized = tmp(504);
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMyCurrentStageChannel() {
-  let tmp4;
-  let tmp5;
-  const obj = react;
-  const cResult = obj.c(2);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [SelectedChannelStore, ChannelStore];
-    const fn = function l() {
-      voiceChannelId = voiceChannelId.getVoiceChannelId();
-      if (null != voiceChannelId) {
-        channel = channel.getChannel(voiceChannelId);
-        let isGuildStageVoiceResult;
-        if (channel != null) {
-          isGuildStageVoiceResult = channel.isGuildStageVoice();
-        }
-        if (isGuildStageVoiceResult) {
-          return channel;
-        }
-      }
-      return null;
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  const tmpResult = get_initialized;
-  return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (function useMyCurrentStageChannel() {
+const result = size.fileFinishedImporting("modules/stage_channels/useMyCurrentStageChannel.tsx");
+
+export default function useMyCurrentStageChannel() {
   const items = [SelectedChannelStore, ChannelStore];
   const obj = get_initialized;
   return obj.useStateFromStores(items, () => {
@@ -61,7 +31,4 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMyCurre
     }
     return null;
   });
-});
-const result = size.fileFinishedImporting("modules/stage_channels/useMyCurrentStageChannel.tsx");
-
-export default tmp2;
+};

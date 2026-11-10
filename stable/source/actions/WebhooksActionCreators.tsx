@@ -1,13 +1,13 @@
-// Module ID: 18335
-// Function ID: 18336
+// Module ID: 18926
+// Function ID: 18927
 // Name: WebhooksActionCreators
-// Dependencies: [1087, 584, 1297, 12, 5940, 1128, 2]
+// Dependencies: [1072, 572, 1282, 12, 5958, 1113, 2]
 
-// Module 18335 (WebhooksActionCreators)
+// Module 18926 (WebhooksActionCreators)
 import _modDef12 from "module_12" /* 12 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5940 */;
-import Constants from "Constants" /* 1087 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5958 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -43,12 +43,11 @@ let obj = {
       obj.dispatch(obj2);
     });
   },
-  fetchForChannel(id, channelId) {
-    let guildId;
-    _require = id;
+  fetchForChannel(guildId, channelId) {
+    _require = guildId;
     importDefault = channelId;
     let obj = DispatcherDefault;
-    let obj2 = { type: "WEBHOOKS_FETCHING", guildId: id, channelId };
+    let obj2 = { type: "WEBHOOKS_FETCHING", guildId, channelId };
     obj.dispatch(obj2);
     const HTTP = require("HTTPUtils").HTTP;
     const obj3 = { url: closure_4.CHANNEL_WEBHOOKS(channelId), oldFormErrors: true, rejectWithError: true };

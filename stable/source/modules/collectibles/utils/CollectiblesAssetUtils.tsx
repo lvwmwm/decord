@@ -1,11 +1,11 @@
-// Module ID: 1989
-// Function ID: 1990
+// Module ID: 1981
+// Function ID: 1982
 // Name: CollectiblesAssetUtils
-// Dependencies: [2, 1988]
+// Dependencies: [2, 1980]
 // Exports: getCollectiblesItemAssetUrl
 
-// Module 1989 (CollectiblesAssetUtils)
-import mappers from "mappers" /* 1988 */;
+// Module 1981 (CollectiblesAssetUtils)
+import mappers from "mappers" /* 1980 */;
 import size from "module_2" /* 2 */;
 
 let str = "https://cdn.discordapp.com";
@@ -22,7 +22,7 @@ const result = size.fileFinishedImporting("modules/collectibles/utils/Collectibl
 export const parseSkuIdFromServerData = mappers.parseSkuIdFromServerData;
 export const CollectiblesItemAssetFormat = { ANIMATED: "animated", STATIC: "static", VIDEO: "video" };
 export const BASE_URL_BY_RELEASE_CHANNEL = str;
-export const getCollectiblesItemAssetUrl = function getCollectiblesItemAssetUrl(arg0) {
+export function getCollectiblesItemAssetUrl(arg0) {
   let assetFormat;
   let assetId;
   let skuId;
@@ -39,4 +39,4 @@ export const getCollectiblesItemAssetUrl = function getCollectiblesItemAssetUrl(
     combined = "" + tmp2 + "/media/v1/collectibles-shop/" + skuId + "/" + str2 + assetFormat;
   }
   return combined;
-};
+}

@@ -1,11 +1,11 @@
-// Module ID: 14384
-// Function ID: 14385
+// Module ID: 14923
+// Function ID: 14924
 // Name: BadgeDirectoryNuxGraphicUtils
-// Dependencies: [32, 8705, 2]
+// Dependencies: [32, 8755, 2]
 // Exports: getBadgeDirectoryNuxGraphicIconUrls, getBadgeDirectoryNuxGraphicLayout
 
-// Module 14384 (BadgeDirectoryNuxGraphicUtils)
-import BadgeId from "BadgeId" /* 8705 */;
+// Module 14923 (BadgeDirectoryNuxGraphicUtils)
+import BadgeId from "BadgeId" /* 8755 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -14,7 +14,7 @@ let map;
 let items = [BadgeId.BadgeId.STREAMING, BadgeId.BadgeId.GAME_VARIETY, BadgeId.BadgeId.GAME_TIME, BadgeId.BadgeId.ACCOUNT_AGE];
 const result = size.fileFinishedImporting("modules/badges/BadgeDirectoryNuxGraphicUtils.tsx");
 
-export const getBadgeDirectoryNuxGraphicIconUrls = function getBadgeDirectoryNuxGraphicIconUrls(badges) {
+export function getBadgeDirectoryNuxGraphicIconUrls(badges) {
   map = new Map(badges.map((badge_id) => {
     items = [badge_id.badge_id, badge_id];
     return items;
@@ -33,21 +33,14 @@ export const getBadgeDirectoryNuxGraphicIconUrls = function getBadgeDirectoryNux
         if (-1 === findIndexResult) {
           return 0;
         } else {
-          let prop;
+          let simple_icon_url;
           if (value.tiers[findIndexResult] != null) {
-            prop = tmp3.complex_icon_static_url;
+            simple_icon_url = tmp4.simple_icon_url;
           }
-          if (prop == null) {
-            let simple_icon_url;
-            if (value.tiers[findIndexResult] != null) {
-              simple_icon_url = tmp3.simple_icon_url;
-            }
-            prop = simple_icon_url;
-          }
-          if (null == prop) {
+          if (null == simple_icon_url) {
             return 0;
           } else {
-            const obj = { iconUrl: prop, tierIndex: findIndexResult };
+            const obj = { iconUrl: simple_icon_url, tierIndex: findIndexResult };
             items.push(obj);
           }
         }
@@ -64,8 +57,8 @@ export const getBadgeDirectoryNuxGraphicIconUrls = function getBadgeDirectoryNux
   const sorted = items.sort((tierIndex, tierIndex2) => tierIndex2.tierIndex - tierIndex.tierIndex);
   const substr = sorted.slice(0, 3);
   return substr.map((iconUrl) => iconUrl.iconUrl);
-};
-export const getBadgeDirectoryNuxGraphicLayout = function getBadgeDirectoryNuxGraphicLayout(badgeIconUrls) {
+}
+export function getBadgeDirectoryNuxGraphicLayout(badgeIconUrls) {
   let items1;
   let items2;
   let obj;
@@ -89,4 +82,4 @@ export const getBadgeDirectoryNuxGraphicLayout = function getBadgeDirectoryNuxGr
     items2 = [tmp3, tmp2, tmp4];
   }
   return obj;
-};
+}

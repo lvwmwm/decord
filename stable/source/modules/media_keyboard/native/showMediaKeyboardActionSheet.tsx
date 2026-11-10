@@ -1,27 +1,27 @@
-// Module ID: 10451
-// Function ID: 10452
+// Module ID: 10531
+// Function ID: 10532
 // Name: showMediaKeyboardActionSheet
-// Dependencies: [5242, 10452, 2002, 7923, 2]
+// Dependencies: [5258, 10532, 1994, 7963, 2]
 // Exports: hideMediaKeyboardActionSheet, presentLimitedLibraryPicker, showMediaKeyboardActionSheet
 
-// Module 10451 (showMediaKeyboardActionSheet)
-import asyncRequire from "asyncRequire" /* 2002 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5242 */;
-import react_nativeDefault from "react-native" /* 7923 */;
+// Module 10531 (showMediaKeyboardActionSheet)
+import asyncRequire from "asyncRequire" /* 1994 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
+import react_nativeDefault from "react-native" /* 7963 */;
 import size from "module_2" /* 2 */;
 
 const MEDIA_KEYBOARD_ACTION_SHEET = "MEDIA_KEYBOARD_ACTION_SHEET";
 const result = size.fileFinishedImporting("modules/media_keyboard/native/showMediaKeyboardActionSheet.tsx");
 
-export const hideMediaKeyboardActionSheet = function hideMediaKeyboardActionSheet() {
+export function hideMediaKeyboardActionSheet() {
   const obj = ActionSheetActionCreatorsDefault;
   obj.hideActionSheet(MEDIA_KEYBOARD_ACTION_SHEET);
-};
-export const showMediaKeyboardActionSheet = function showMediaKeyboardActionSheet(arg0) {
+}
+export function showMediaKeyboardActionSheet(arg0) {
   const obj = ActionSheetActionCreatorsDefault;
-  obj.openLazy(asyncRequire(10452, dependencyMap.paths), MEDIA_KEYBOARD_ACTION_SHEET, arg0);
-};
-export const presentLimitedLibraryPicker = function presentLimitedLibraryPicker() {
+  obj.openLazy(asyncRequire(10532, dependencyMap.paths), MEDIA_KEYBOARD_ACTION_SHEET, arg0);
+}
+export function presentLimitedLibraryPicker() {
   const obj = react_nativeDefault;
   return obj.presentLimitedLibraryPicker();
-};
+}

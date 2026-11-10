@@ -1,11 +1,11 @@
-// Module ID: 567
-// Function ID: 568
+// Module ID: 1366
+// Function ID: 1367
 // Name: timers
-// Dependencies: [564, 2]
+// Dependencies: [1363, 2]
 // Exports: keepAliveWorkaround, registerTimerPolyfills, setTimersMonitorCallback
 
-// Module 567 (timers)
-import global_types from "global_types" /* 564 */;
+// Module 1366 (timers)
+import global_types from "global_types" /* 1363 */;
 import size from "module_2" /* 2 */;
 
 function setTimeout(arg0, arg1) {
@@ -78,7 +78,7 @@ export { setTimeout };
 export { setInterval };
 export { clearTimeout };
 export const clearInterval = clearTimeout;
-export const registerTimerPolyfills = function registerTimerPolyfills() {
+export function registerTimerPolyfills() {
   if (null == clearTimeout) {
     const _globalThis = globalThis;
     clearTimeout = clearTimeout;
@@ -87,7 +87,7 @@ export const registerTimerPolyfills = function registerTimerPolyfills() {
   window.setInterval = setInterval;
   window.clearTimeout = clearTimeout;
   window.clearInterval = clearTimeout;
-};
-export const keepAliveWorkaround = function keepAliveWorkaround() {
+}
+export function keepAliveWorkaround() {
   LIBDISCORE_JSI.runtimeExecutorDemo(5000);
-};
+}

@@ -1,16 +1,16 @@
-// Module ID: 560
-// Function ID: 561
+// Module ID: 4890
+// Function ID: 4891
 // Name: BridgedStore
-// Dependencies: [561, 2]
+// Dependencies: [4891, 2]
 // Exports: ensureValidMode
 
-// Module 560 (BridgedStore)
-import FluxApi from "FluxApi" /* 561 */;
+// Module 4890 (BridgedStore)
+import FluxApi from "FluxApi" /* 4891 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/libdiscore/stores/BridgedStore.tsx");
 
-export const ensureValidMode = function ensureValidMode(typescript) {
+export function ensureValidMode(typescript) {
   let str = "typescript";
   if ("typescript" === typescript) {
     str = typescript;
@@ -18,4 +18,4 @@ export const ensureValidMode = function ensureValidMode(typescript) {
     FluxApi;
   }
   return str;
-};
+}

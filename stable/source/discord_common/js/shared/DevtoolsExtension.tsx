@@ -1,15 +1,15 @@
-// Module ID: 1124
-// Function ID: 1125
+// Module ID: 1109
+// Function ID: 1110
 // Name: DevtoolsExtension
 // Dependencies: [2]
 // Exports: logFluxAction, notifyStoreChange, notifyStoreCreated, reportEvent
 
-// Module 1124 (DevtoolsExtension)
+// Module 1109 (DevtoolsExtension)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/DevtoolsExtension.tsx");
 
-export const logFluxAction = function logFluxAction(description, durationMs) {
+export function logFluxAction(description, durationMs) {
   let __DISCORD_DEVTOOLS = null;
   const obj = { type: "Flux-Dispatch", description: description.type, data: description, durationMs };
   if (typeof window !== "undefined") {
@@ -22,8 +22,8 @@ export const logFluxAction = function logFluxAction(description, durationMs) {
       reportEvent(obj);
     }
   }
-};
-export const reportEvent = function reportEvent(arg0) {
+}
+export function reportEvent(arg0) {
   let __DISCORD_DEVTOOLS = null;
   if (typeof window !== "undefined") {
     const _window = window;
@@ -35,8 +35,8 @@ export const reportEvent = function reportEvent(arg0) {
       reportEvent(arg0);
     }
   }
-};
-export const notifyStoreCreated = function notifyStoreCreated(storeName) {
+}
+export function notifyStoreCreated(storeName) {
   let __DISCORD_DEVTOOLS = null;
   if (typeof window !== "undefined") {
     const _window = window;
@@ -49,8 +49,8 @@ export const notifyStoreCreated = function notifyStoreCreated(storeName) {
       notifyStoreCreated(obj);
     }
   }
-};
-export const notifyStoreChange = function notifyStoreChange(storeName) {
+}
+export function notifyStoreChange(storeName) {
   let __DISCORD_DEVTOOLS = null;
   if (typeof window !== "undefined") {
     const _window = window;
@@ -63,4 +63,4 @@ export const notifyStoreChange = function notifyStoreChange(storeName) {
       notifyStoreChange(obj);
     }
   }
-};
+}

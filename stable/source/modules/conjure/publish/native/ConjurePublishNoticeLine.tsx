@@ -1,202 +1,31 @@
-// Module ID: 12413
-// Function ID: 12414
+// Module ID: 12659
+// Function ID: 12660
 // Name: ConjurePublishNoticeLine
-// Dependencies: [19, 21, 558, 576, 12407, 12414, 1128, 12340, 5266, 12415, 3862, 5242, 12416, 2]
+// Dependencies: [19, 21, 12653, 12660, 12661, 5624, 1113, 12579, 7522, 12662, 3868, 5258, 12663, 2]
+// Exports: default
 
-// Module 12413 (ConjurePublishNoticeLine)
-import react2 from "react" /* 576 */;
-import intl3 from "intl" /* 1128 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5242 */;
-import Text_Text from "Text/Text" /* 5266 */;
-import conjurePublishCard from "conjurePublishCard" /* 12340 */;
-import useConjurePublishedAppNameDefault from "useConjurePublishedAppName" /* 12407 */;
-import useConjurePublishedServerNameDefault from "useConjurePublishedServerName" /* 12414 */;
-import useConjurePatchNotesLink from "useConjurePatchNotesLink" /* 12415 */;
-import ConjurePublishNotesSheet from "ConjurePublishNotesSheet" /* 12416 */;
+// Module 12659 (ConjurePublishNoticeLine)
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5258 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import transitionToGuild from "transitionToGuild" /* 7522 */;
+import useConjurePublishedAppNameDefault from "useConjurePublishedAppName" /* 12653 */;
+import useConjurePublishedServerNameDefault from "useConjurePublishedServerName" /* 12660 */;
+import useConjureAutomodSettingsLinkDefault from "useConjureAutomodSettingsLink" /* 12661 */;
+import useConjurePatchNotesLink from "useConjurePatchNotesLink" /* 12662 */;
+import ConjurePublishNotesSheet from "ConjurePublishNotesSheet" /* 12663 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
+const require = globalThis.__r;
 const useConjurePatchNotesLinkDefault = useConjurePatchNotesLink;
 const ConjurePublishNotesSheetDefault = ConjurePublishNotesSheet;
-let importDefault;
+let _require, importDefault;
 
 let c3;
 let closure_4;
 let hasOwnProperty;
-({ jsx: c3, jsxs: closure_4, Fragment: hasOwnProperty } = Fragment);
-let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePublishNoticeLine(arg0) {
-  let items;
-  let notice;
-  let projectId;
-  let str;
-  const obj = react2;
-  const cResult = obj.c(10);
-  ({ projectId, notice } = arg0);
-  const tmp4 = useConjurePublishedAppNameDefault(projectId);
-  const tmp5 = useConjurePublishedServerNameDefault(projectId);
-  if (cResult[0] === tmp4) {
-    if (cResult[1] === notice) {
-      let tmp6;
-      if (cResult[2] === tmp5) {
-        tmp6 = cResult[3];
-      }
-      if (cResult[4] === notice) {
-        let tmp9;
-        if (cResult[5] === projectId) {
-          tmp9 = cResult[6];
-        }
-        if (cResult[7] === tmp6) {
-          let tmp14;
-          if (cResult[8] === tmp9) {
-            tmp14 = cResult[9];
-          }
-          return tmp14;
-        }
-        const obj2 = { variant: "text-md/normal", color: "text-default", children: items };
-        items = [tmp6, tmp9];
-        const tmp16 = React3(Text_Text.Text, obj2);
-        cResult[7] = tmp6;
-        cResult[8] = tmp9;
-        cResult[9] = tmp16;
-        tmp14 = tmp16;
-      }
-      let tmp11 = null;
-      if (notice.update) {
-        tmp11 = null;
-        if (null != notice.published_revision) {
-          const obj3 = { projectId, notice };
-          tmp11 = _false(closure_6, obj3);
-        }
-      }
-      cResult[4] = notice;
-      cResult[5] = projectId;
-      cResult[6] = tmp11;
-      tmp9 = tmp11;
-    }
-  }
-  const intl = tmp(1128).intl;
-  const format = intl.format;
-  const obj4 = { name: tmp4, server: str };
-  str = tmp5;
-  const tmpResult = conjurePublishCard;
-  const publishNoticeMessageResult = tmpResult.publishNoticeMessage(notice, tmp5);
-  if (tmp5 == null) {
-    str = "";
-  }
-  const formatResult = format(publishNoticeMessageResult, obj4);
-  cResult[0] = tmp4;
-  cResult[1] = notice;
-  cResult[2] = tmp5;
-  cResult[3] = formatResult;
-  tmp6 = formatResult;
-}) : (function ConjurePublishNoticeLine(arg0) {
-  let notice;
-  let projectId;
-  ({ projectId, notice } = arg0);
-  const tmp = useConjurePublishedAppNameDefault(projectId);
-  let str = useConjurePublishedServerNameDefault(projectId);
-  const Text = Text_Text.Text;
-  const intl = intl3.intl;
-  const format = intl.format;
-  const obj2 = { name: tmp, server: str };
-  const obj = conjurePublishCard;
-  const publishNoticeMessageResult = obj.publishNoticeMessage(notice, str);
-  const tmp2 = React3;
-  if (str == null) {
-    str = "";
-  }
-  const children = [format(publishNoticeMessageResult, obj2), ];
-  let tmp4 = null;
-  if (notice.update) {
-    tmp4 = null;
-    if (null != notice.published_revision) {
-      const obj3 = { projectId, notice };
-      tmp4 = _false(closure_6, obj3);
-    }
-  }
-  children[1] = tmp4;
-  return tmp2(Text, { variant: "text-md/normal", color: "text-default", children });
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PatchNotesLink(projectId) {
-  let closure_1;
-  let items;
-  let obj = projectId(576);
-  const cResult = obj.c(5);
-  projectId = projectId.projectId;
-  const tmp5 = useConjurePatchNotesLinkDefault(projectId, projectId.notice);
-  importDefault = tmp5;
-  let tmp6 = null;
-  if (null != tmp5) {
-    let formatResult;
-    if (cResult[0] === tmp5) {
-      let tmp7;
-      let tmp9;
-      if (cResult[1] === projectId) {
-        tmp7 = cResult[2];
-      }
-      if (cResult[3] !== tmp7) {
-        let obj2 = { children: items };
-        items = [" ", tmp7];
-        const tmp12 = closure_4(closure_5, obj2);
-        cResult[3] = tmp7;
-        cResult[4] = tmp12;
-        tmp9 = tmp12;
-      } else {
-        tmp9 = cResult[4];
-      }
-      tmp6 = tmp9;
-    }
-    if ("sent" === tmp5.state) {
-      const intl2 = tmp(1128).intl;
-      let obj3 = {
-        sentHook(children, arg1) {
-              let sent;
-              let obj = {
-                variant: "text-md/normal",
-                color: "text-muted",
-                accessibilityRole: "link",
-                onPress() {
-                  const obj = projectId(dependencyMap[9]);
-                  return obj.openConjureSentPatchNotes(sent.sent);
-                },
-                children
-              };
-              return _false(Text_Text.Text, obj, arg1);
-            }
-      };
-      formatResult = intl2.format(tmp4(3862)["35VEu5"], obj3);
-    } else {
-      const intl = tmp(1128).intl;
-      const obj4 = {
-        onSend() {
-              let obj3;
-              let tmp7;
-              const obj = useConjurePatchNotesLink;
-              const result = obj.conjurePatchNotesEditorProps(projectId, closure_1);
-              if (null != result) {
-                const obj2 = { content: _false(tmp7, obj3), key: ConjurePublishNotesSheet.CONJURE_PUBLISH_NOTES_SHEET_KEY };
-                const showActionSheet = ActionSheetActionCreators.showActionSheet;
-                obj3 = {};
-                ActionSheetActionCreators;
-                tmp7 = ConjurePublishNotesSheetDefault;
-                const merged = Object.assign(result);
-                showActionSheet(obj2);
-              }
-            }
-      };
-      formatResult = intl.format(tmp4(3862)["6/zJpD"], obj4);
-    }
-    cResult[0] = tmp5;
-    cResult[1] = projectId;
-    cResult[2] = formatResult;
-    tmp7 = formatResult;
-  }
-  return tmp6;
-}) : (function PatchNotesLink(projectId) {
+function PatchNotesLink(projectId) {
   let closure_1;
   let items;
   projectId = projectId.projectId;
@@ -208,7 +37,7 @@ let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PatchNo
     const tmp5 = closure_4;
     const tmp6 = closure_5;
     if ("sent" === tmp3.state) {
-      const intl2 = projectId(1128).intl;
+      const intl2 = projectId(1113).intl;
       let obj2 = {
         sentHook(children, arg1) {
               let sent;
@@ -225,10 +54,10 @@ let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PatchNo
               return _false(Text_Text.Text, obj, arg1);
             }
       };
-      formatResult = intl2.format(tmp(3862)["35VEu5"], obj2);
+      formatResult = intl2.format(tmp(3868)["35VEu5"], obj2);
     } else {
       let tmp7 = projectId;
-      const intl = projectId(1128).intl;
+      const intl = projectId(1113).intl;
       let obj = {
         onSend() {
               let obj3;
@@ -246,14 +75,78 @@ let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PatchNo
               }
             }
       };
-      formatResult = intl.format(tmp(3862)["6/zJpD"], obj);
+      formatResult = intl.format(tmp(3868)["6/zJpD"], obj);
     }
     let obj3 = { children: items };
     items = [" ", formatResult];
     tmp5Result = tmp5(tmp6, obj3);
   }
   return tmp5Result;
-});
+}
+({ jsx: c3, jsxs: closure_4, Fragment: hasOwnProperty } = Fragment);
 let result = size.fileFinishedImporting("modules/conjure/publish/native/ConjurePublishNoticeLine.tsx");
 
-export default tmp4;
+export default function ConjurePublishNoticeLine(arg0) {
+  let closure_0;
+  let notice;
+  let projectId;
+  let str;
+  let tmp10;
+  ({ projectId, notice } = arg0);
+  const tmp = dependencyMap;
+  const tmp2 = useConjurePublishedAppNameDefault(projectId);
+  const tmp3 = useConjurePublishedServerNameDefault(projectId);
+  _require = tmp3;
+  const tmp4 = useConjureAutomodSettingsLinkDefault(projectId);
+  const Text = require("Text/Text").Text;
+  const intl = require("intl").intl;
+  const format = intl.format;
+  let name;
+  const publishNoticeMessage = require("conjurePublishCard").publishNoticeMessage;
+  require("conjurePublishCard");
+  const tmp5 = closure_4;
+  const tmp6 = _require;
+  if (tmp3 != null) {
+    name = tmp3.name;
+  }
+  if (name == null) {
+    name = null;
+  }
+  let obj = {
+    name: tmp2,
+    server: str,
+    onOpenServer() {
+      if (null != closure_0) {
+        const obj = transitionToGuild;
+        obj.transitionToGuild(tmp.guildId);
+      }
+    }
+  };
+  str = undefined;
+  const publishNoticeMessageResult = publishNoticeMessage(notice, name, tmp4.automod);
+  if (tmp3 != null) {
+    str = tmp3.name;
+  }
+  if (str == null) {
+    str = "";
+  }
+  const children = [format(publishNoticeMessageResult, obj), ];
+  if (null != tmp4.guildId) {
+    const obj2 = { guildId: tmp4.guildId, update: notice.update };
+    tmp10 = closure_3(tmp6(12661).ConjureAutomodSettingsLink, obj2);
+  } else {
+    tmp10 = null;
+    if (!tmp4.automod) {
+      tmp10 = null;
+      if (notice.update) {
+        tmp10 = null;
+        if (null != notice.published_revision) {
+          const obj3 = { projectId, notice };
+          tmp10 = closure_3(PatchNotesLink, obj3);
+        }
+      }
+    }
+  }
+  children[1] = tmp10;
+  return tmp5(Text, { variant: "text-md/normal", color: "text-default", children });
+};

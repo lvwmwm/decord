@@ -1,17 +1,16 @@
-// Module ID: 11629
-// Function ID: 11630
+// Module ID: 11924
+// Function ID: 11925
 // Name: GoLiveAutoQualityExperiment
-// Dependencies: [1261, 5911, 5846, 1456, 558, 576, 504, 510, 7861, 2]
-// Exports: getGoLiveAutoQualityExperimentConfig, maybeMigrateToAutoQuality
+// Dependencies: [1246, 5943, 5864, 1448, 504, 510, 7901, 2]
+// Exports: getGoLiveAutoQualityExperimentConfig, maybeMigrateToAutoQuality, useGoLiveAutoQualityExperimentConfig
 
-// Module 11629 (GoLiveAutoQualityExperiment)
+// Module 11924 (GoLiveAutoQualityExperiment)
 import Storage3 from "Storage" /* 510 */;
-import StreamSettingsConstants from "StreamSettingsConstants" /* 5846 */;
-import StreamActionCreators from "StreamActionCreators" /* 7861 */;
-import ApexExperimentStore from "ApexExperimentStore" /* 1261 */;
-import ApplicationStreamingSettingsStore from "ApplicationStreamingSettingsStore" /* 5911 */;
-import ApexExperiment from "apex/ApexExperiment" /* 1456 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import StreamSettingsConstants from "StreamSettingsConstants" /* 5864 */;
+import StreamActionCreators from "StreamActionCreators" /* 7901 */;
+import ApexExperimentStore from "ApexExperimentStore" /* 1246 */;
+import ApplicationStreamingSettingsStore from "ApplicationStreamingSettingsStore" /* 5943 */;
+import ApexExperiment from "apex/ApexExperiment" /* 1448 */;
 import size from "module_2" /* 2 */;
 
 let obj3;
@@ -27,40 +26,13 @@ const obj5 = { allowAutoQuality: true, defaultAutoQuality: true };
 const merged1 = Object.assign(obj);
 obj3[2] = obj5;
 let closure_6 = ApexExperiment(obj2);
-function getGoLiveAutoQualityExperimentConfig(location) {
+let result = size.fileFinishedImporting("modules/go_live/GoLiveAutoQualityExperiment.tsx");
+
+export function getGoLiveAutoQualityExperimentConfig(location) {
   const obj = { location: location.location };
   return closure_6.getConfig(obj);
 }
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGoLiveAutoQualityExperimentConfig(location) {
-  let _location;
-  let config;
-  let first;
-  let tmp6;
-  let obj = _location(576);
-  const cResult = obj.c(3);
-  const tmp = _location;
-  _location = location.location;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [ApexExperimentStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== _location) {
-    const fn = function n() {
-      const obj = { location: _location };
-      return config.getConfig(obj);
-    };
-    cResult[1] = _location;
-    cResult[2] = fn;
-    tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-  }
-  const tmpResult = tmp(504);
-  return tmpResult.useStateFromStores(first, tmp6);
-}) : (function useGoLiveAutoQualityExperimentConfig(location) {
+export function useGoLiveAutoQualityExperimentConfig(location) {
   let config;
   location = location.location;
   let obj = location(504);
@@ -69,12 +41,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGoLiveA
     const obj = { location };
     return config.getConfig(obj);
   });
-});
-let result = size.fileFinishedImporting("modules/go_live/GoLiveAutoQualityExperiment.tsx");
-
-export { getGoLiveAutoQualityExperimentConfig };
-export const useGoLiveAutoQualityExperimentConfig = tmp5;
-export const maybeMigrateToAutoQuality = function maybeMigrateToAutoQuality() {
+}
+export function maybeMigrateToAutoQuality() {
   const migrateAutoQuality = closure_6.getConfig({ location: "maybeMigrateToAutoQuality" }).migrateAutoQuality;
   const Storage = Storage3.Storage;
   let num = Storage.get(GoLiveAutoQualityMigrationVersion);
@@ -95,4 +63,4 @@ export const maybeMigrateToAutoQuality = function maybeMigrateToAutoQuality() {
       }
     }
   }
-};
+}

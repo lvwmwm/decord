@@ -1,21 +1,19 @@
-// Module ID: 16931
-// Function ID: 16932
+// Module ID: 17530
+// Function ID: 17531
 // Name: UploadDebugLogsSetting
-// Dependencies: [5, 17, 1087, 21, 570, 1274, 558, 576, 1384, 13821, 5695, 1128, 5718, 11240, 2]
+// Dependencies: [5, 17, 1072, 21, 560, 1259, 1375, 11091, 5712, 1113, 5735, 11540, 2]
 
-// Module 16931 (UploadDebugLogsSetting)
+// Module 17530 (UploadDebugLogsSetting)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import react from "react" /* 576 */;
-import Constants from "Constants" /* 1087 */;
-import intl3 from "intl" /* 1128 */;
-import PlatformUtils from "PlatformUtils" /* 1384 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 5718 */;
-import DebugUploadManager from "DebugUploadManager" /* 13821 */;
+import Constants from "Constants" /* 1072 */;
+import intl3 from "intl" /* 1113 */;
+import PlatformUtils from "PlatformUtils" /* 1375 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 5735 */;
+import DebugUploadManager from "DebugUploadManager" /* 11091 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import module_570 from "module_570" /* 570 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11240 */;
+import module_560 from "module_560" /* 560 */;
+import SettingBuilders from "SettingBuilders" /* 11540 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5, closure_2;
@@ -49,7 +47,7 @@ let obj = function _handleUploadDebugLogSettingPress() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -88,10 +86,10 @@ let obj = function _handleUploadDebugLogSettingPress() {
         } else {
           if (2 === c4) {
             c3 = 1;
-            const obj6 = { text: intl.string(closure_129_0(closure_129_2[11]).t.VzHcSm), icon: closure_129_0(closure_129_2[12]).CircleInformationIcon };
-            const open = closure_129_1(closure_129_2[10]).open;
-            const tmp10 = closure_129_1(closure_129_2[10]);
-            intl = closure_129_0(closure_129_2[11]).intl;
+            const obj6 = { text: intl.string(closure_129_0(closure_129_2[9]).t.VzHcSm), icon: closure_129_0(closure_129_2[10]).CircleInformationIcon };
+            const open = closure_129_1(closure_129_2[8]).open;
+            const tmp10 = closure_129_1(closure_129_2[8]);
+            intl = closure_129_0(closure_129_2[9]).intl;
             open("USER_SETTINGS_CACHES_CLEARED", obj6);
           } else if (arg0 === 1) {
             c5 = 3;
@@ -103,17 +101,17 @@ let obj = function _handleUploadDebugLogSettingPress() {
             obj = { value, done: true };
             return obj;
           } else {
-            const obj7 = { text: intl2.string(closure_129_0(closure_129_2[11]).t.BvyxE7), icon: closure_129_0(closure_129_2[12]).CircleInformationIcon };
-            const open2 = closure_129_1(closure_129_2[10]).open;
-            const tmp35 = closure_129_1(closure_129_2[10]);
-            intl2 = closure_129_0(closure_129_2[11]).intl;
+            const obj7 = { text: intl2.string(closure_129_0(closure_129_2[9]).t.BvyxE7), icon: closure_129_0(closure_129_2[10]).CircleInformationIcon };
+            const open2 = closure_129_1(closure_129_2[8]).open;
+            const tmp35 = closure_129_1(closure_129_2[8]);
+            intl2 = closure_129_0(closure_129_2[9]).intl;
             open2("USER_SETTINGS_CACHES_CLEARED", obj7);
             c3 = 1;
           }
           c3 = 0;
           onUploadDebugLogsRequestFinish();
           c5 = 3;
-          return { value: "IconComponent", done: "+352" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp26) {
         closure_2 = tmp26;
@@ -133,50 +131,7 @@ let obj = function _handleUploadDebugLogSettingPress() {
 const ActivityIndicator = react_native.ActivityIndicator;
 const DebugLogCategory = Constants.DebugLogCategory;
 const jsx = Fragment.jsx;
-let closure_7 = module_570.create(() => ({ isDisabled: false, isUploading: false }));
-let ReactCompilerGating = ReactCompilerGating_mod;
-ReactCompilerGating.isReactCompilerEnabled();
-function useIsUploadingDebugLogs() {
-
-}
-ReactCompilerGating = ReactCompilerGating_mod;
-ReactCompilerGating.isReactCompilerEnabled();
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUploadDebugLogsTrailing() {
-  obj = react;
-  const cResult = obj.c(2);
-  if (typeof useIsUploadingDebugLogs === "function") {
-    let tmp3;
-    const isUploading = closure_7().isUploading;
-    if (cResult[0] !== isUploading) {
-      let tmp4 = null;
-      if (isUploading) {
-        tmp4 = <ActivityIndicator />;
-      }
-      cResult[0] = isUploading;
-      cResult[1] = tmp4;
-      tmp3 = tmp4;
-    } else {
-      tmp3 = cResult[1];
-    }
-    return tmp3;
-  } else {
-    throw new TypeError("Trying to call a non-function");
-  }
-}) : (function useUploadDebugLogsTrailing() {
-  if (typeof useIsUploadingDebugLogs === "function") {
-    let tmp2 = null;
-    if (closure_7().isUploading) {
-      tmp2 = <ActivityIndicator />;
-    }
-    return tmp2;
-  } else {
-    throw new TypeError("Trying to call a non-function");
-  }
-});
-function useIsUploadDebugLogsDisabled() {
-  return closure_7().isDisabled;
-}
+let closure_7 = module_560.create(() => ({ isDisabled: false, isUploading: false }));
 obj = {
   useTitle() {
     const intl = intl3.intl;
@@ -187,10 +142,18 @@ obj = {
   onPress: function handleUploadDebugLogSettingPress() {
     return obj(...arguments);
   },
-  useTrailing: tmp4,
-  useIsDisabled: useIsUploadDebugLogsDisabled
+  useTrailing: function useUploadDebugLogsTrailing() {
+    let tmp = null;
+    if (closure_7().isUploading) {
+      tmp = <ActivityIndicator />;
+    }
+    return tmp;
+  },
+  useIsDisabled: function useIsUploadDebugLogsDisabled() {
+    return closure_7().isDisabled;
+  }
 };
 const pressable = SettingBuilders.createPressable(obj);
-const result2 = size.fileFinishedImporting("modules/user_settings/defs/native/UploadDebugLogsSetting.tsx");
+const result = size.fileFinishedImporting("modules/user_settings/defs/native/UploadDebugLogsSetting.tsx");
 
 export default pressable;

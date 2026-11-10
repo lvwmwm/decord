@@ -1,20 +1,20 @@
-// Module ID: 17008
-// Function ID: 17009
+// Module ID: 17607
+// Function ID: 17608
 // Name: GeneratedTestUserActionCreators
-// Dependencies: [5, 1406, 16985, 1087, 7448, 6700, 7454, 6708, 1275, 584, 17009, 2]
+// Dependencies: [5, 1397, 17584, 1072, 7490, 6740, 7496, 6747, 1260, 572, 17608, 2]
 // Exports: getGeneratedPoolById, loginAsGeneratedUser, removeGeneratedPoolFromList
 
-// Module 17008 (GeneratedTestUserActionCreators)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1087 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1275 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6700 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6708 */;
-import Constants2 from "Constants" /* 7448 */;
-import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 7454 */;
+// Module 17607 (GeneratedTestUserActionCreators)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import Constants from "Constants" /* 1072 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6740 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6747 */;
+import Constants2 from "Constants" /* 7490 */;
+import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 7496 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserRecord from "UserRecord" /* 1406 */;
-import GeneratedTestUsersStore from "GeneratedTestUsersStore" /* 16985 */;
+import UserRecord from "UserRecord" /* 1397 */;
+import GeneratedTestUsersStore from "GeneratedTestUsersStore" /* 17584 */;
 import size from "module_2" /* 2 */;
 
 let body, c2, c3;
@@ -35,7 +35,7 @@ let obj = function _getGeneratedPoolById() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -115,7 +115,7 @@ const Endpoints = Constants.Endpoints;
 const SafetyToastType = Constants2.SafetyToastType;
 const result = size.fileFinishedImporting("modules/generated_test_users/GeneratedTestUserActionCreators.tsx");
 
-export const loginAsGeneratedUser = function loginAsGeneratedUser(id, arg1) {
+export function loginAsGeneratedUser(id, arg1) {
   obj = GeneratedTestUsersStore;
   const user = GeneratedTestUsersStore.getUser(arg1);
   if (null == user) {
@@ -153,12 +153,12 @@ export const loginAsGeneratedUser = function loginAsGeneratedUser(id, arg1) {
       });
     }
   }
-};
-export const getGeneratedPoolById = function getGeneratedPoolById() {
+}
+export function getGeneratedPoolById() {
   return obj(...arguments);
-};
-export const removeGeneratedPoolFromList = function removeGeneratedPoolFromList(poolId) {
+}
+export function removeGeneratedPoolFromList(poolId) {
   obj = DispatcherDefault;
   const obj2 = { type: "GENERATED_POOL_REMOVE_FROM_LIST", poolId };
   obj.dispatch(obj2);
-};
+}

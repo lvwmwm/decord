@@ -1,13 +1,13 @@
-// Module ID: 12506
-// Function ID: 12507
+// Module ID: 12759
+// Function ID: 12760
 // Name: ConjureImageOptions
-// Dependencies: [32, 1128, 3862, 8895, 2]
+// Dependencies: [32, 1113, 3868, 8943, 2]
 // Exports: answeredOptionIds, imageOptionCaption, imageOptionViewerSize, imageOptionsLayout, isImageQuestion, ownImageOption, ownImageUploadText, registrableDomain, viewableImageOptions
 
-// Module 12506 (ConjureImageOptions)
-import intl2 from "intl" /* 1128 */;
-import _modDef3862 from "module_3862" /* 3862 */;
-import MaskedLinkStoreMethodsAdditional from "MaskedLinkStoreMethodsAdditional" /* 8895 */;
+// Module 12759 (ConjureImageOptions)
+import intl2 from "intl" /* 1113 */;
+import _modDef3868 from "module_3868" /* 3868 */;
+import MaskedLinkStoreMethodsAdditional from "MaskedLinkStoreMethodsAdditional" /* 8943 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -15,19 +15,19 @@ let closure_4 = [];
 let size = size_mod;
 const result = size.fileFinishedImporting("modules/conjure/clarification/ConjureImageOptions.tsx");
 
-export const isImageQuestion = function isImageQuestion(options) {
+export function isImageQuestion(options) {
   options = options.options;
   return options.some((image) => null != image.image);
-};
-export const imageOptionsLayout = function imageOptionsLayout(options) {
+}
+export function imageOptionsLayout(options) {
   let str = "row";
   if (options.length > 4) {
     str = "gallery";
   }
   return str;
-};
-export const viewableImageOptions = function viewableImageOptions(options) {
-  return options.flatMap((image) => {
+}
+export function viewableImageOptions(items) {
+  return items.flatMap((image) => {
     let items1;
     if (null != image.image) {
       const obj = { image: image.image };
@@ -39,33 +39,33 @@ export const viewableImageOptions = function viewableImageOptions(options) {
     }
     return items1;
   });
-};
-export const answeredOptionIds = function answeredOptionIds(first1) {
+}
+export function answeredOptionIds(kind) {
   let tmp2;
-  let kind;
-  if (first1 != null) {
-    kind = first1.kind;
+  kind = undefined;
+  if (kind != null) {
+    kind = kind.kind;
   }
   if ("option" === kind) {
-    const items = [first1.optionId];
+    const items = [kind.optionId];
     tmp2 = items;
   } else {
     tmp2 = closure_4;
   }
   return tmp2;
-};
-export const imageOptionViewerSize = function imageOptionViewerSize(value) {
+}
+export function imageOptionViewerSize(value) {
   const bound = Math.max(1, 480 / Math.max(value.width, value.height));
   size = { width: Math.round(value.width * bound), height: Math.round(value.height * bound) };
   return size;
-};
-export const ownImageOption = function ownImageOption(image) {
+}
+export function ownImageOption(image) {
   let intl;
-  const obj = { id: "own:" + image.attachment.id, label: intl.string(_modDef3862.SUdqCQ), image: { attachment_id: image.attachment.id } };
+  const obj = { id: "own:" + image.attachment.id, label: intl.string(_modDef3868.SUdqCQ), image: { attachment_id: image.attachment.id } };
   intl = intl2.intl;
   return obj;
-};
-export const registrableDomain = function registrableDomain(str) {
+}
+export function registrableDomain(str) {
   str = str.toLowerCase();
   const parts = str.split(".");
   if (parts.length >= 2) {
@@ -92,8 +92,8 @@ export const registrableDomain = function registrableDomain(str) {
     }
   }
   return str;
-};
-export const imageOptionCaption = function imageOptionCaption(option) {
+}
+export function imageOptionCaption(option) {
   let label;
   const image = option.image;
   let page_url;
@@ -147,12 +147,12 @@ export const imageOptionCaption = function imageOptionCaption(option) {
     label = option.label;
   }
   return label;
-};
-export const ownImageUploadText = function ownImageUploadText(question) {
+}
+export function ownImageUploadText(question) {
   const intl = intl2.intl;
   const string = intl.string;
   const obj = /\bicons?\b/i;
   const isMatch = obj.test(question.question);
-  const tmp2 = _modDef3862;
+  const tmp2 = _modDef3868;
   return string(isMatch ? tmp2.qU4WN6 : tmp2.cbMDDB);
-};
+}

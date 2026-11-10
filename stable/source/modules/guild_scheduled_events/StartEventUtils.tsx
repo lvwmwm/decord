@@ -1,16 +1,16 @@
-// Module ID: 9067
-// Function ID: 9068
+// Module ID: 9103
+// Function ID: 9104
 // Name: StartEventUtils
-// Dependencies: [5, 4859, 4855, 4877, 4861, 1087, 9003, 38, 7913, 8920, 2]
+// Dependencies: [5, 4867, 4863, 4885, 4869, 1072, 9030, 38, 7953, 8967, 2]
 // Exports: preStartEventActions, setEventAsActive
 
-// Module 9067 (StartEventUtils)
-import Constants from "Constants" /* 1087 */;
-import ChannelRecord from "ChannelRecord" /* 4859 */;
+// Module 9103 (StartEventUtils)
+import Constants from "Constants" /* 1072 */;
+import ChannelRecord from "ChannelRecord" /* 4867 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 4855 */;
-import GuildStore from "GuildStore" /* 4877 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4861 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import GuildStore from "GuildStore" /* 4885 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4869 */;
 import size from "module_2" /* 2 */;
 
 let permissionOverwrites;
@@ -37,7 +37,7 @@ let obj = function _createStageChannelForEvent() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -61,7 +61,7 @@ let obj = function _createStageChannelForEvent() {
               closure_4 = undefined;
               c5 = 1;
               c6 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "flexDirection", done: true };
             }
           } else if (1 === c5) {
             if (arg0 === 1) {
@@ -148,7 +148,7 @@ obj = function _preStartEventActions() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -182,7 +182,7 @@ obj = function _preStartEventActions() {
             closure_131_1(closure_131_2[7])(null != entity_type, "could not find or create channel");
           }
           c5 = 3;
-          return { value: "IconComponent", done: "+352" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp16) {
           c5 = 3;
           throw tmp16;
@@ -262,12 +262,12 @@ obj = function _setEventAsActive() {
         c5 = 3;
         return { value, done: true };
       }
-      await "IconComponent";
+      await "HermesInternal";
       flag = closure_1;
       if (closure_1 === undefined) {
         flag = false;
       }
-      return "Reflect";
+      return "flexDirection";
     })();
     iter.next();
     return iter;
@@ -281,9 +281,9 @@ const result = size.fileFinishedImporting("modules/guild_scheduled_events/StartE
 
 export { createStageChannelForEvent };
 export { findOrCreateEventChannel };
-export const preStartEventActions = function preStartEventActions() {
+export function preStartEventActions() {
   return obj(...arguments);
-};
-export const setEventAsActive = function setEventAsActive() {
+}
+export function setEventAsActive() {
   return obj(...arguments);
-};
+}

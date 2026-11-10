@@ -1,11 +1,11 @@
-// Module ID: 3796
-// Function ID: 3797
-// Dependencies: [1132, 3797, 1167, 2]
+// Module ID: 3802
+// Function ID: 3803
+// Dependencies: [1117, 3803, 1152, 2]
 
-// Module 3796
-import AssetJsonUtils from "AssetJsonUtils" /* 1132 */;
-import AssetRegistry from "AssetRegistry" /* 3797 */;
-import module_1167_mod from "module_1167" /* 1167 */;
+// Module 3802
+import AssetJsonUtils from "AssetJsonUtils" /* 1117 */;
+import AssetRegistry from "AssetRegistry" /* 3803 */;
+import module_1152_mod from "module_1152" /* 1152 */;
 import size from "module_2" /* 2 */;
 
 let obj = {
@@ -15,10 +15,10 @@ let obj = {
     return jsonAsset.then((result) => ({ default: result }));
   }
 };
-let module_1167 = module_1167_mod;
-const loader = module_1167.createLoader(obj, "en-US");
-module_1167 = module_1167_mod;
-const messagesProxy = module_1167.makeMessagesProxy(loader);
+let module_1152 = module_1152_mod;
+const loader = module_1152.createLoader(obj, "en-US");
+module_1152 = module_1152_mod;
+const messagesProxy = module_1152.makeMessagesProxy(loader);
 const result = size.fileFinishedImporting("modules/spatial_audio/SpatialAudio.messages.js");
 
 export default messagesProxy;

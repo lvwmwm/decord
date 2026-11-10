@@ -1,19 +1,19 @@
-// Module ID: 8433
-// Function ID: 8434
+// Module ID: 8498
+// Function ID: 8499
 // Name: ApplicationSubscriptionPurchaseSystemMessage
-// Dependencies: [8350, 8384, 8352, 8354, 2]
+// Dependencies: [8418, 8452, 8420, 8422, 2]
 // Exports: createApplicationSubscriptionPurchaseSystemMessage
 
-// Module 8433 (ApplicationSubscriptionPurchaseSystemMessage)
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8350 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8352 */;
-import createCommonMessageDefault from "createCommonMessage" /* 8354 */;
-import ApplicationSubscriptionSystemMessageUtils from "ApplicationSubscriptionSystemMessageUtils" /* 8384 */;
+// Module 8498 (ApplicationSubscriptionPurchaseSystemMessage)
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8418 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8420 */;
+import createCommonMessageDefault from "createCommonMessage" /* 8422 */;
+import ApplicationSubscriptionSystemMessageUtils from "ApplicationSubscriptionSystemMessageUtils" /* 8452 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/messages/native/renderer/system_messages/ApplicationSubscriptionPurchaseSystemMessage.tsx");
 
-export const createApplicationSubscriptionPurchaseSystemMessage = function createApplicationSubscriptionPurchaseSystemMessage(message) {
+export function createApplicationSubscriptionPurchaseSystemMessage(message) {
   let getApplicationSubscriptionSystemMessageASTContent;
   let obj3;
   message = message.message;
@@ -25,4 +25,4 @@ export const createApplicationSubscriptionPurchaseSystemMessage = function creat
   obj3 = { application: message.application, username: messageAuthorWithProcessedColor.nick, usernameOnClick: formatUsernameOnClickDefault({ message, author: messageAuthorWithProcessedColor, roleStyle }) };
   const merged = Object.assign(createCommonMessageDefault(message));
   return obj2;
-};
+}

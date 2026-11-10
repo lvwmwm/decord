@@ -1,22 +1,22 @@
-// Module ID: 12849
-// Function ID: 12850
+// Module ID: 13297
+// Function ID: 13298
 // Name: GuildAutomodActionCreators
-// Dependencies: [5, 4909, 4877, 4935, 1087, 12850, 1388, 11, 1297, 12843, 5743, 7659, 584, 2]
+// Dependencies: [5, 4920, 4885, 4946, 1072, 13298, 1379, 11, 1282, 13291, 5760, 7697, 572, 2]
 // Exports: clearMentionRaidDetected, createAutomodRule, deleteAutomodRule, executeAlertAction, fetchAutomodRules, removeMentionRaidRestrictionWithFeedback, updateAutomodRule, validateAutomodRule
 
-// Module 12849 (GuildAutomodActionCreators)
+// Module 13297 (GuildAutomodActionCreators)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import HTTPUtils from "HTTPUtils" /* 1297 */;
-import GlobalUtils from "GlobalUtils" /* 1388 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5743 */;
-import AutomodFeedback from "AutomodFeedback" /* 7659 */;
-import DataUtils from "DataUtils" /* 12850 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
+import GlobalUtils from "GlobalUtils" /* 1379 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5760 */;
+import AutomodFeedback from "AutomodFeedback" /* 7697 */;
+import DataUtils from "DataUtils" /* 13298 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GuildRoleStore from "GuildRoleStore" /* 4909 */;
-import GuildStore from "GuildStore" /* 4877 */;
-import PermissionStore from "PermissionStore" /* 4935 */;
-import Constants from "Constants" /* 1087 */;
+import GuildRoleStore from "GuildRoleStore" /* 4920 */;
+import GuildStore from "GuildStore" /* 4885 */;
+import PermissionStore from "PermissionStore" /* 4946 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -46,7 +46,7 @@ function _transformClientRuleToApiRule(id) {
   }
   const actions = id.actions;
   const obj3 = { id: id.id, name: id.name, guild_id: id.guildId, event_type: id.eventType, trigger_type: id.triggerType, trigger_metadata: result, actions: found.map(_transformClientActionToApiAction), enabled: null, creator_id: null, position: null, exempt_channels: from(exemptChannels), exempt_roles: from2Result.filter((item) => null != GuildRoleStore.getRole(guildId.guildId, item)) };
-  found = actions.filter(tmp(1388).isNotNullish);
+  found = actions.filter(tmp(1379).isNotNullish);
   ({ enabled: obj2.enabled, creatorId: obj2.creator_id, position: obj2.position } = id);
   exemptChannels = id.exemptChannels;
   const _Array = Array;
@@ -116,7 +116,7 @@ let obj = function _validateAutomodRule() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -260,7 +260,7 @@ obj = function _executeAlertAction() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -297,7 +297,7 @@ obj = function _executeAlertAction() {
           return obj;
         }
         c3 = 3;
-        return { value: "IconComponent", done: "+352" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp7) {
         c3 = 3;
         throw tmp7;
@@ -309,25 +309,25 @@ obj = function _executeAlertAction() {
 ({ AnalyticEvents: metroImportDefault, Endpoints: metroImportAll, Permissions: c9 } = Constants);
 let result = size.fileFinishedImporting("modules/guild_automod/GuildAutomodActionCreators.tsx");
 
-export const validateAutomodRule = function validateAutomodRule() {
+export function validateAutomodRule() {
   return obj(...arguments);
-};
-export const createAutomodRule = function createAutomodRule() {
+}
+export function createAutomodRule() {
   return obj(...arguments);
-};
-export const updateAutomodRule = function updateAutomodRule() {
+}
+export function updateAutomodRule() {
   return obj(...arguments);
-};
-export const deleteAutomodRule = function deleteAutomodRule() {
+}
+export function deleteAutomodRule() {
   return obj(...arguments);
-};
-export const fetchAutomodRules = function fetchAutomodRules() {
+}
+export function fetchAutomodRules() {
   return obj(...arguments);
-};
-export const executeAlertAction = function executeAlertAction() {
+}
+export function executeAlertAction() {
   return obj(...arguments);
-};
-export const removeMentionRaidRestrictionWithFeedback = function removeMentionRaidRestrictionWithFeedback(arg0, decision_id, arg2) {
+}
+export function removeMentionRaidRestrictionWithFeedback(arg0, decision_id, arg2) {
   let closure_0;
   let closure_2;
   _require = arg0;
@@ -349,9 +349,9 @@ export const removeMentionRaidRestrictionWithFeedback = function removeMentionRa
       closure_2();
     });
   }
-};
-export const clearMentionRaidDetected = function clearMentionRaidDetected(guildId) {
+}
+export function clearMentionRaidDetected(guildId) {
   obj = DispatcherDefault;
   const obj2 = { type: "AUTO_MODERATION_MENTION_RAID_NOTICE_DISMISS", guildId };
   obj.dispatch(obj2);
-};
+}

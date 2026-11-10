@@ -1,39 +1,39 @@
-// Module ID: 8319
-// Function ID: 8320
+// Module ID: 8202
+// Function ID: 8203
 // Name: ThreadActionCreators
-// Dependencies: [5, 4859, 502, 4855, 4935, 8320, 4937, 8335, 1087, 4862, 1297, 584, 5940, 1128, 5743, 8336, 8337, 8340, 8341, 1388, 4866, 2]
+// Dependencies: [5, 4867, 502, 4863, 4946, 8203, 4948, 8342, 1072, 4870, 1282, 572, 5958, 1113, 5760, 8343, 8344, 8347, 8348, 8349, 1379, 4874, 2]
 
-// Module 8319 (ThreadActionCreators)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import intl11 from "intl" /* 1128 */;
-import HTTPUtils from "HTTPUtils" /* 1297 */;
-import GlobalUtils from "GlobalUtils" /* 1388 */;
-import ChannelRecord from "ChannelRecord" /* 4859 */;
-import ChannelConstants from "ChannelConstants" /* 4862 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5743 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5940 */;
-import ArchivedThreadsStore2 from "ArchivedThreadsStore" /* 8320 */;
-import DraftActionCreatorsDefault from "DraftActionCreators" /* 8336 */;
+// Module 8202 (ThreadActionCreators)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import intl11 from "intl" /* 1113 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
+import GlobalUtils from "GlobalUtils" /* 1379 */;
+import ChannelRecord from "ChannelRecord" /* 4867 */;
+import ChannelConstants from "ChannelConstants" /* 4870 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5760 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5958 */;
+import ArchivedThreadsStore2 from "ArchivedThreadsStore" /* 8203 */;
+import DraftActionCreatorsDefault from "DraftActionCreators" /* 8343 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4855 */;
-import PermissionStore from "PermissionStore" /* 4935 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4937 */;
-import ThreadSummaryStore from "ThreadSummaryStore" /* 8335 */;
-import Constants from "Constants" /* 1087 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import PermissionStore from "PermissionStore" /* 4946 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4948 */;
+import ThreadSummaryStore from "ThreadSummaryStore" /* 8342 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 const ArchivedThreadsStore = ArchivedThreadsStore2;
-let _require, c0, c1, c2, dependencyMap;
+let _require, c0, c1, c2;
 
 let closure_12;
 let closure_14;
 let closure_15;
 let map1;
 let tmp;
-const ApplicationCommandActionCreators = tmp(8337);
-const f100804 = (body) => {
+const ApplicationCommandActionCreators = tmp(8344);
+const f92488 = (body) => {
   const obj = DispatcherDefault;
   const obj2 = { type: "THREAD_UPDATE", channel: closure_4(body.body) };
   obj.dispatch(obj2);
@@ -56,7 +56,7 @@ function patchThread(id, body) {
   const patch = HTTP.patch;
   obj2 = require("HTTPUtils");
   const patchResult = patch(request);
-  return patchResult.then(f100804);
+  return patchResult.then(f92488);
 }
 function dispatchThreadMemberLocalUpdate(id, isJoining) {
   const obj = DispatcherDefault;
@@ -82,7 +82,7 @@ let obj = {
     const patch = HTTP.patch;
     obj3 = require("HTTPUtils");
     const patchResult = patch(request);
-    return patchResult.then(f100804);
+    return patchResult.then(f92488);
   },
   lockThread(channel) {
     let closure_0 = channel;
@@ -98,7 +98,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -157,7 +157,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -219,7 +219,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c3;
@@ -383,7 +383,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -427,7 +427,7 @@ let obj = {
             return obj;
           }
           c0 = 3;
-          return { value: "IconComponent", done: "+352" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp8) {
           c0 = 3;
           throw tmp8;
@@ -445,7 +445,7 @@ let obj = {
     const patch = HTTP.patch;
     obj3 = require("HTTPUtils");
     const patchResult = patch(request);
-    return patchResult.then(f100804);
+    return patchResult.then(f92488);
   },
   joinThread(channel, arg1) {
     let closure_0 = channel;
@@ -510,7 +510,7 @@ let obj = {
       if (closure_129_0.isForumPost()) {
         dispatchThreadMemberLocalUpdate(closure_129_0, false);
       }
-      await "IconComponent";
+      await "HermesInternal";
       return arg1;
     })();
   },
@@ -570,7 +570,7 @@ let obj = {
         intl4 = closure_0(_location[13]).intl;
         show2(obj7);
       }
-      await "IconComponent";
+      await "HermesInternal";
       return arg1;
     })();
   },
@@ -608,9 +608,9 @@ let obj = {
     obj3 = HTTPUtils;
     return patch(request);
   },
-  pin(thread) {
-    const tmp = thread.flags | ChannelFlags.PINNED;
-    this.updateFlags(thread, tmp, thread.isArchivedThread());
+  pin(dependencyMap) {
+    const tmp = dependencyMap.flags | ChannelFlags.PINNED;
+    this.updateFlags(dependencyMap, tmp, dependencyMap.isArchivedThread());
   },
   unpin(thread) {
     this.updateFlags(thread, thread.flags & ~ChannelFlags.PINNED);
@@ -634,7 +634,7 @@ let obj = {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -684,7 +684,7 @@ let obj = {
               c2 = 0;
             }
             c3 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp14) {
           if (0 === c2) {
@@ -758,7 +758,7 @@ let obj = {
       } else {
         c2 = 0;
       }
-      await "IconComponent";
+      await "HermesInternal";
       const obj17 = { type: "THREAD_UPDATE", channel: closure_128_0 };
       const obj6 = c1(c2[11]);
       obj6.dispatch(obj17);
@@ -781,63 +781,101 @@ let obj = {
     }
   },
   setNotificationSettings(channel, muteSettings) {
-    let closure_0 = channel;
     let closure_1 = muteSettings;
     const self = this;
     return (async (arg0, value) => {
       let closure_0;
-      let obj4;
-      if (c2 === 2) {
-        c2 = 3;
+      let closure_1;
+      let obj7;
+      if (c5 === 2) {
+        c5 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp2 === 3) {
+      } else if (tmp3 === 3) {
         if (arg0 === 1) {
           throw value;
         } else if (arg0 === 2) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
+        let c3;
         try {
-          c2 = 2;
-          if (0 === c1) {
+          c5 = 2;
+          if (0 === c4) {
             if (arg0 === 1) {
-              c2 = 3;
+              c5 = 3;
               throw value;
             } else if (arg0 === 2) {
-              c2 = 3;
+              c5 = 3;
               const obj3 = { value, done: true };
               return obj3;
             } else {
-              const obj8 = tmp3(c2[17]);
-              const result = obj8.trackThreadNotificationSettingsUpdated(tmp3, closure_1);
-              if (!JoinedThreadsStore.hasJoined(tmp3.id)) {
-                c1 = 1;
-                c2 = 1;
-                const obj5 = { value: self.joinThread(tmp3, "Change Notification Settings"), done: false };
-                return obj5;
+              channel = tmp4;
+              const obj11 = channel(closure_2[17]);
+              const result = obj11.trackThreadNotificationSettingsUpdated(channel, tmp);
+              if (!JoinedThreadsStore.hasJoined(channel.id)) {
+                c4 = 1;
+                c5 = 1;
+                const obj4 = { value: self.joinThread(channel, "Change Notification Settings"), done: false };
+                return obj4;
               }
             }
+          } else if (1 === c4) {
+            if (arg0 === 1) {
+              c5 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c5 = 3;
+              const obj5 = { value, done: true };
+              return obj5;
+            }
+          } else if (2 === c4) {
+            c3 = 0;
+            channel = closure_2;
+            if (429 === channel.status) {
+              const showError = tmp(closure_2[18]).showError;
+              const tmp14 = tmp(closure_2[18]);
+              const intl = channel(closure_2[13]).intl;
+              showError(intl.string(channel(closure_2[13]).t.T15lqn));
+              c5 = 3;
+              const obj6 = { value: undefined, done: true };
+              return obj6;
+            } else {
+              throw channel;
+            }
           } else if (arg0 === 1) {
-            c2 = 3;
+            c5 = 3;
             throw value;
           } else if (arg0 === 2) {
-            c2 = 3;
+            c3 = 0;
+            c5 = 3;
+            const obj8 = { value, done: true };
+            return obj8;
+          } else {
+            c3 = 0;
+            c5 = 3;
             const obj = { value, done: true };
             return obj;
           }
-          const HTTP = tmp3(c2[10]).HTTP;
-          const request = { url: closure_1_12.THREAD_MEMBER_SETTINGS(closure_128_0.id), body: closure_128_1, rejectWithError: obj4.rejectWithMigratedError() };
+          c3 = 1;
+          const HTTP = channel(closure_2[10]).HTTP;
+          const request = { url: closure_1_12.THREAD_MEMBER_SETTINGS(closure_129_0.id), body: closure_129_1, rejectWithError: obj7.rejectWithMigratedError(), failImmediatelyWhenRateLimited: true };
           const patch = HTTP.patch;
-          obj4 = tmp3(c2[10]);
-          c2 = 3;
-          const obj6 = { value: patch(request), done: true };
-          return obj6;
-        } catch (tmp14) {
-          c2 = 3;
-          throw tmp14;
+          obj7 = channel(closure_2[10]);
+          c4 = 3;
+          c5 = 1;
+          const obj9 = { value: patch(request), done: false };
+          return obj9;
+        } catch (tmp30) {
+          closure_2 = tmp30;
+          if (0 === c3) {
+            c5 = 3;
+            throw tmp30;
+          } else {
+            c4 = 2;
+          }
         }
       }
     })();
@@ -880,7 +918,7 @@ let obj = {
           const obj = DispatcherDefault;
           obj.dispatch(obj2);
         } else {
-          const obj3 = { type: "LOAD_ARCHIVED_THREADS_SUCCESS", guildId: require, channelId, offset, sortOrder, tagFilter, tagSetting, threads, firstMessages: tmp2, mostRecentMessages: tmp3, members: members.map((item) => channelId(sortOrder[18])(item)), owners: mapped.filter(GlobalUtils.isNotNullish), hasMore: tmp };
+          const obj3 = { type: "LOAD_ARCHIVED_THREADS_SUCCESS", guildId: require, channelId, offset, sortOrder, tagFilter, tagSetting, threads, firstMessages: tmp2, mostRecentMessages: tmp3, members: members.map((item) => channelId(sortOrder[19])(item)), owners: mapped.filter(GlobalUtils.isNotNullish), hasMore: tmp };
           const dispatch = DispatcherDefault.dispatch;
           DispatcherDefault;
           if (members == null) {
@@ -954,7 +992,7 @@ let obj = {
           flag = true;
         }
         obj2 = { ephemeral: flag };
-        tmp5Result = tmp5(1297);
+        tmp5Result = tmp5(1282);
         const postResult = post(request);
         const nextPromise = postResult.then(() => {
           const obj = DispatcherDefault;

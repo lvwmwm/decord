@@ -1,112 +1,80 @@
-// Module ID: 5064
-// Function ID: 5065
+// Module ID: 5075
+// Function ID: 5076
 // Name: NitroFileUploadExperiments
-// Dependencies: [1394, 1455, 558, 576, 2]
-// Exports: getNitroFileUploadLimitBytes, getNitroFileUploadRolloutConfig, getNitroFileUploadRolloutCopy
+// Dependencies: [1385, 1447, 2]
+// Exports: getNitroFileUploadLimitBytes, getNitroFileUploadRolloutConfig, getNitroFileUploadRolloutCopy, useNitroFileUploadRolloutEnabled, useNonNitroFileUploadMarketingEnabled
 
-// Module 5064 (NitroFileUploadExperiments)
-import react from "react" /* 576 */;
-import PremiumConstants from "PremiumConstants" /* 1394 */;
-import ApexExperiment_mod from "ApexExperiment" /* 1455 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+// Module 5075 (NitroFileUploadExperiments)
+import PremiumConstants from "PremiumConstants" /* 1385 */;
+import ApexExperiment_mod from "ApexExperiment" /* 1447 */;
 import size from "module_2" /* 2 */;
 
-let c2;
-let c3;
+let _window;
+let map;
 let obj2;
-({ MAX_PREMIUM_TIER_2_ATTACHMENT_SIZE: c2, MAX_PREMIUM_TIER_2_ATTACHMENT_SIZE_1GB: c3 } = PremiumConstants);
+({ MAX_PREMIUM_TIER_2_ATTACHMENT_SIZE: _window, MAX_PREMIUM_TIER_2_ATTACHMENT_SIZE_1GB: map } = PremiumConstants);
 const NitroFileUploadRollout = "NitroFileUploadRollout";
 let ApexExperiment = ApexExperiment_mod;
 let obj = { name: "2026-09-nitro-file-upload-rollout", kind: "user", defaultConfig: { enabled: false }, variations: obj2 };
 obj2 = { 1: null };
 obj2[1] = { enabled: true };
-let closure_5 = ApexExperiment.createApexExperiment(obj);
+let closure_3 = ApexExperiment.createApexExperiment(obj);
 ApexExperiment = ApexExperiment_mod;
 const obj3 = { name: "2026-09-non-nitro-file-upload-marketing", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } };
-let closure_6 = ApexExperiment.createApexExperiment(obj3);
-let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useNitroFileUploadRolloutEnabled(arg0) {
-  let tmp3;
-  let tmp = arg0;
-  const obj = react;
-  const cResult = obj.c(2);
-  if (arg0 == null) {
-    tmp = NitroFileUploadRollout;
+let closure_4 = ApexExperiment.createApexExperiment(obj3);
+const result = size.fileFinishedImporting("modules/premium/experiments/NitroFileUploadExperiments.tsx");
+
+export function getNitroFileUploadLimitBytes(arg0) {
+  let obj = arg0;
+  if (arg0 === undefined) {
+    obj = {};
   }
-  if (cResult[0] !== tmp) {
-    const obj2 = { location: tmp };
-    cResult[0] = tmp;
-    cResult[1] = obj2;
-    tmp3 = obj2;
-  } else {
-    tmp3 = cResult[1];
-  }
-  return closure_5.useConfig(tmp3).enabled;
-}) : (function useNitroFileUploadRolloutEnabled(arg0) {
-  let _location = arg0;
-  const useConfig = closure_5.useConfig;
-  if (arg0 == null) {
+  const obj2 = { location: obj.location, autoTrackExposure: obj.autoTrackExposure };
+  let _location = obj2.location;
+  const autoTrackExposure = obj2.autoTrackExposure;
+  const getConfig = closure_3.getConfig;
+  if (_location == null) {
     _location = NitroFileUploadRollout;
   }
-  return useConfig({ location: _location }).enabled;
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-function getNitroFileUploadRolloutConfig(arg0) {
+  return getConfig({ location: _location }, { autoTrackExposure }).enabled ? map : React;
+}
+export function getNitroFileUploadRolloutConfig(arg0) {
   let obj = arg0;
   if (arg0 === undefined) {
     obj = {};
   }
   let _location = obj.location;
-  const getConfig = closure_5.getConfig;
+  const autoTrackExposure = obj.autoTrackExposure;
+  const getConfig = closure_3.getConfig;
   if (_location == null) {
     _location = NitroFileUploadRollout;
   }
-  return getConfig({ location: _location });
+  return getConfig({ location: _location }, { autoTrackExposure });
 }
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useNonNitroFileUploadMarketingEnabled(location) {
-  let tmp2;
-  const obj = react;
-  const cResult = obj.c(2);
-  if (cResult[0] !== location) {
-    const obj2 = { location };
-    cResult[0] = location;
-    cResult[1] = obj2;
-    tmp2 = obj2;
-  } else {
-    tmp2 = cResult[1];
-  }
-  return closure_6.useConfig(tmp2).enabled;
-}) : (function useNonNitroFileUploadMarketingEnabled(location) {
-  const obj = { location };
-  return closure_6.useConfig(obj).enabled;
-});
-const result = size.fileFinishedImporting("modules/premium/experiments/NitroFileUploadExperiments.tsx");
-
-export const getNitroFileUploadLimitBytes = function getNitroFileUploadLimitBytes(arg0) {
-  let obj = arg0;
-  if (arg0 === undefined) {
-    obj = {};
-  }
-  let _location = { location: obj.location }.location;
-  const getConfig = closure_5.getConfig;
-  if (_location == null) {
-    _location = NitroFileUploadRollout;
-  }
-  return getConfig({ location: _location }).enabled ? _false : React2;
-};
-export { getNitroFileUploadRolloutConfig };
-export const getNitroFileUploadRolloutCopy = function getNitroFileUploadRolloutCopy(legacyCopy) {
+export function getNitroFileUploadRolloutCopy(legacyCopy) {
   legacyCopy = legacyCopy.legacyCopy;
-  let _location = {}.location;
+  const obj = {};
+  let _location = obj.location;
   const rolloutCopy = legacyCopy.rolloutCopy;
-  const getConfig = closure_5.getConfig;
+  const autoTrackExposure = obj.autoTrackExposure;
+  const getConfig = closure_3.getConfig;
   if (_location == null) {
     _location = NitroFileUploadRollout;
   }
-  if (getConfig({ location: _location }).enabled) {
+  if (getConfig({ location: _location }, { autoTrackExposure }).enabled) {
     legacyCopy = rolloutCopy;
   }
   return legacyCopy;
-};
-export const useNitroFileUploadRolloutEnabled = tmp3;
-export const useNonNitroFileUploadMarketingEnabled = tmp4;
+}
+export function useNitroFileUploadRolloutEnabled(MainViewTooltipActionSheets) {
+  let _location = MainViewTooltipActionSheets;
+  const useConfig = closure_3.useConfig;
+  if (MainViewTooltipActionSheets == null) {
+    _location = NitroFileUploadRollout;
+  }
+  return useConfig({ location: _location }).enabled;
+}
+export function useNonNitroFileUploadMarketingEnabled(location) {
+  const obj = { location };
+  return closure_4.useConfig(obj).enabled;
+}

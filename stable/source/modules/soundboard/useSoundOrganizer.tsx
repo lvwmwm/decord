@@ -1,14 +1,14 @@
-// Module ID: 18553
-// Function ID: 18554
+// Module ID: 19171
+// Function ID: 19172
 // Name: useSoundOrganizer
 // Dependencies: [11, 2]
 // Exports: sortSoundsOldestToNewestFavoriteDate, useSoundOrganizer
 
-// Module 18553 (useSoundOrganizer)
+// Module 19171 (useSoundOrganizer)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import size from "module_2" /* 2 */;
 
-const f136331 = (available, available2) => {
+const f116936 = (available, available2) => {
   let num;
   if (!available.available) {
     let num2 = 0;
@@ -24,12 +24,12 @@ const f136331 = (available, available2) => {
   }
   return num;
 };
-function sortSoundsOldestToNewestCreationDate(arg0) {
+function sortSoundsOldestToNewestCreationDate(value7) {
   let flag = arg1;
   if (arg1 === undefined) {
     flag = true;
   }
-  const items = [...arg0];
+  const items = [...value7];
   const sorted = items.sort((soundId, soundId2) => {
     const obj = SnowflakeUtilsDefault;
     return obj.compare(soundId.soundId, soundId2.soundId);
@@ -38,14 +38,14 @@ function sortSoundsOldestToNewestCreationDate(arg0) {
   if (flag) {
     const items1 = [];
     HermesBuiltin.arraySpread(items1, sorted, 0);
-    sorted1 = items1.sort(f136331);
+    sorted1 = items1.sort(f116936);
   }
   return sorted1;
 }
 const result = size.fileFinishedImporting("modules/soundboard/useSoundOrganizer.tsx");
 
 export { sortSoundsOldestToNewestCreationDate };
-export const sortSoundsOldestToNewestFavoriteDate = function sortSoundsOldestToNewestFavoriteDate(arg0) {
+export function sortSoundsOldestToNewestFavoriteDate(arg0) {
   let flag = arg1;
   if (arg1 === undefined) {
     flag = true;
@@ -55,10 +55,10 @@ export const sortSoundsOldestToNewestFavoriteDate = function sortSoundsOldestToN
     const items = [];
     let num = 0;
     HermesBuiltin.arraySpread(items, arg0, 0);
-    sorted = items.sort(f136331);
+    sorted = items.sort(f116936);
   }
   return sorted;
-};
+}
 export function useSoundOrganizer() {
   return sortSoundsOldestToNewestCreationDate;
 }

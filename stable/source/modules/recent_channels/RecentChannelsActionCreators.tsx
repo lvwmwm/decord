@@ -1,12 +1,12 @@
-// Module ID: 11285
-// Function ID: 11286
+// Module ID: 11588
+// Function ID: 11589
 // Name: RecentChannelsActionCreators
-// Dependencies: [5, 1087, 4836, 1241, 584, 1267, 2]
+// Dependencies: [5, 1072, 4844, 1226, 572, 1252, 2]
 // Exports: bulkClearRecents
 
-// Module 11285 (RecentChannelsActionCreators)
-import Constants from "Constants" /* 1087 */;
-import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 4836 */;
+// Module 11588 (RecentChannelsActionCreators)
+import Constants from "Constants" /* 1072 */;
+import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 4844 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -27,7 +27,7 @@ let obj = function _bulkClearRecents() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -70,7 +70,7 @@ let obj = function _bulkClearRecents() {
             const obj7 = closure_131_1(closure_131_2[5]);
             obj7.track(closure_131_4.CHANNEL_LIST_UPDATED, { action_type: "recents_dismissed" });
             c5 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp5) {
           c5 = 3;
@@ -84,6 +84,6 @@ let obj = function _bulkClearRecents() {
 const AnalyticEvents = Constants.AnalyticEvents;
 const result = size.fileFinishedImporting("modules/recent_channels/RecentChannelsActionCreators.tsx");
 
-export const bulkClearRecents = function bulkClearRecents() {
+export function bulkClearRecents() {
   return obj(...arguments);
-};
+}

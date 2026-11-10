@@ -1,23 +1,23 @@
-// Module ID: 12808
-// Function ID: 12809
+// Module ID: 13257
+// Function ID: 13258
 // Name: GuildAntiRaidActionCreators
-// Dependencies: [5, 4877, 8418, 1087, 1267, 5743, 9037, 2049, 1297, 12809, 2]
+// Dependencies: [5, 4885, 8483, 1072, 1252, 5760, 9074, 2042, 1282, 11027, 2]
 // Exports: handleReportRaid, handleResolveRaid, setGuildIncidentActions, setGuildRaidAlerts, trackReportRaidViewed
 
-// Module 12808 (GuildAntiRaidActionCreators)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import HTTPUtils from "HTTPUtils" /* 1297 */;
-import _modDef2049 from "module_2049" /* 2049 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5743 */;
-import GuildAntiRaidConstants from "GuildAntiRaidConstants" /* 8418 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9037 */;
-import getGuildSafetyAlertsChannelIdDefault from "getGuildSafetyAlertsChannelId" /* 12809 */;
+// Module 13257 (GuildAntiRaidActionCreators)
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
+import _modDef2042 from "module_2042" /* 2042 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5760 */;
+import GuildAntiRaidConstants from "GuildAntiRaidConstants" /* 8483 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9074 */;
+import getGuildSafetyAlertsChannelIdDefault from "getGuildSafetyAlertsChannelId" /* 11027 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GuildStore from "GuildStore" /* 4877 */;
-import Constants from "Constants" /* 1087 */;
+import GuildStore from "GuildStore" /* 4885 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
-let c4, guild, set;
+let c1, guild, set;
 
 let metroImportAll;
 let metroImportDefault;
@@ -39,7 +39,7 @@ let obj = function _setGuildRaidAlerts() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -83,7 +83,7 @@ let obj = function _setGuildRaidAlerts() {
             return { value, done: true };
           } else {
             c2 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp10) {
           c2 = 3;
@@ -116,7 +116,7 @@ obj = function _setGuildIncidentActions() {
     }
     let toISOStringResult = null;
     if (tmp4) {
-      const obj3 = _modDef2049();
+      const obj3 = _modDef2042();
       const addResult = obj3.add(closure_4, "hours");
       toISOStringResult = addResult.toISOString();
     }
@@ -143,77 +143,21 @@ obj = function _setGuildIncidentActions() {
   return obj(...arguments);
 };
 obj = function _handleResolveRaid() {
-  obj = _asyncToGenerator(async (arg0, value, arg2) => {
-    let obj4;
-    let obj5;
+  obj = _asyncToGenerator(async (arg0, alert_message_id, reason) => {
     let closure_0 = arg0;
-    let closure_1 = value;
-    let closure_2 = arg2;
-    if (c3 === 2) {
-      c3 = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp2 === 3) {
-      if (arg0 === 1) {
-        throw value;
-      } else if (arg0 === 2) {
-        const obj2 = { value, done: true };
-        return obj2;
-      } else {
-        return { value: "IconComponent", done: "+352" };
-      }
-    } else {
-      try {
-        let tmp4;
-        c3 = 2;
-        if (0 === c4) {
-          if (arg0 === 1) {
-            c3 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c3 = 3;
-            const obj3 = { value, done: true };
-            return obj3;
-          } else {
-            guild = guild.getGuild(closure_0);
-            let tmp7 = null;
-            const tmp15 = closure_0;
-            const tmp16 = closure_1;
-            const tmp17 = closure_2;
-            if (null != guild) {
-              tmp7 = getGuildSafetyAlertsChannelIdDefault(guild);
-            }
-            tmp4 = null;
-            if (null != tmp7) {
-              const HTTP = HTTPUtils.HTTP;
-              const request = { url: metroImportDefault.GUILD_INCIDENT_REPORT_FALSE_ALARM(tmp15), body: obj5, rejectWithError: obj4.rejectWithMigratedError() };
-              const post = HTTP.post;
-              obj5 = { alert_message_id: tmp16, reason: tmp17 };
-              obj4 = HTTPUtils;
-              c4 = 1;
-              c3 = 1;
-              const obj6 = { value: post(request), done: false };
-              return obj6;
-            }
-          }
-        } else if (arg0 === 1) {
-          c3 = 3;
-          throw value;
-        } else {
-          tmp4 = value;
-          if (arg0 === 2) {
-            c3 = 3;
-            obj = { value, done: true };
-            return obj;
-          }
-        }
-        c3 = 3;
-        const obj7 = { value: tmp4, done: true };
-        return obj7;
-      } catch (tmp11) {
-        c3 = 3;
-        throw tmp11;
-      }
-    }
+    let c4 = 0;
+    let c3 = 0;
+    return (async (arg0, value, arg2) => {
+      let obj4;
+      let obj8;
+      const HTTP = HTTPUtils.HTTP;
+      const request = { url: closure_2_7.GUILD_INCIDENT_REPORT_FALSE_ALARM(closure_0), body: obj4, rejectWithError: obj8.rejectWithMigratedError() };
+      const post = HTTP.post;
+      obj4 = { alert_message_id, reason };
+      obj8 = HTTPUtils;
+      await post(request);
+      return value;
+    })();
   });
   return obj(...arguments);
 };
@@ -231,7 +175,7 @@ obj = function _handleReportRaid() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -290,30 +234,30 @@ const DEFAULT_LOCKDOWN_DURATION = GuildAntiRaidConstants.DEFAULT_LOCKDOWN_DURATI
 ({ AnalyticEvents: metroRequire, Endpoints: metroImportDefault, GuildFeatures: metroImportAll } = Constants);
 const result = size.fileFinishedImporting("modules/guild_antiraid/GuildAntiRaidActionCreators.tsx");
 
-export const trackReportRaidViewed = function trackReportRaidViewed(c1, c2) {
-  let items = c2;
-  if (c2 === undefined) {
+export function trackReportRaidViewed(guildId, arg1) {
+  let items = arg1;
+  if (arg1 === undefined) {
     items = [];
   }
   if (0 !== items.length) {
-    obj = { guild_id: c1, raid_types: items };
+    obj = { guild_id: guildId, raid_types: items };
     const track = AnalyticsUtilsDefault.track;
     const GUILD_RAID_REPORTED = metroRequire.GUILD_RAID_REPORTED;
     AnalyticsUtilsDefault;
     const obj2 = AppAnalyticsUtils;
-    const merged = Object.assign(obj2.collectGuildAnalyticsMetadata(c1));
+    const merged = Object.assign(obj2.collectGuildAnalyticsMetadata(guildId));
     track(GUILD_RAID_REPORTED, obj);
   }
-};
-export const setGuildRaidAlerts = function setGuildRaidAlerts() {
+}
+export function setGuildRaidAlerts() {
   return obj(...arguments);
-};
-export const setGuildIncidentActions = function setGuildIncidentActions() {
+}
+export function setGuildIncidentActions() {
   return obj(...arguments);
-};
-export const handleResolveRaid = function handleResolveRaid() {
+}
+export function handleResolveRaid() {
   return obj(...arguments);
-};
-export const handleReportRaid = function handleReportRaid() {
+}
+export function handleReportRaid() {
   return obj(...arguments);
-};
+}

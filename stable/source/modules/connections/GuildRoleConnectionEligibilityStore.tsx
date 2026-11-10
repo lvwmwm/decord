@@ -1,11 +1,11 @@
-// Module ID: 12800
-// Function ID: 12801
+// Module ID: 13249
+// Function ID: 13250
 // Name: GuildRoleConnectionEligibilityStore
-// Dependencies: [504, 584, 2]
+// Dependencies: [504, 572, 2]
 
-// Module 12800 (GuildRoleConnectionEligibilityStore)
+// Module 13249 (GuildRoleConnectionEligibilityStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 
 const map = new Map();

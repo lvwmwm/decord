@@ -1,25 +1,25 @@
-// Module ID: 12870
-// Function ID: 12871
+// Module ID: 13317
+// Function ID: 13318
 // Name: AutomatedUnderageAppealActionSheet
-// Dependencies: [19, 17, 7954, 7930, 21, 5003, 587, 1128, 558, 576, 504, 1633, 12869, 7915, 6689, 5242, 5692, 5266, 6935, 7019, 12867, 5276, 5301, 5297, 2]
+// Dependencies: [19, 17, 7994, 7970, 21, 5014, 575, 1113, 504, 1625, 13316, 7955, 6729, 5258, 5272, 5275, 5624, 7060, 6975, 5709, 5634, 13314, 2]
+// Exports: default
 
-// Module 12870 (AutomatedUnderageAppealActionSheet)
+// Module 13317 (AutomatedUnderageAppealActionSheet)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 587 */;
-import intl8 from "intl" /* 1128 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5242 */;
-import Text_Text from "Text/Text" /* 5266 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6689 */;
-import TableRow2 from "TableRow" /* 6935 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7915 */;
-import SafetyHubActionCreators from "SafetyHubActionCreators" /* 12867 */;
-import AutomatedUnderageAppealModalActionCreatorsDefault from "AutomatedUnderageAppealModalActionCreators" /* 12869 */;
+import nativeDefault from "native" /* 575 */;
+import intl8 from "intl" /* 1113 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6729 */;
+import TableRow2 from "TableRow" /* 6975 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7955 */;
+import SafetyHubActionCreators from "SafetyHubActionCreators" /* 13314 */;
+import AutomatedUnderageAppealModalActionCreatorsDefault from "AutomatedUnderageAppealModalActionCreators" /* 13316 */;
 import react from "react" /* 19 */;
-import SafetyHubStore from "SafetyHubStore" /* 7954 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 7930 */;
+import SafetyHubStore from "SafetyHubStore" /* 7994 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 7970 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5003 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 let BottomSheet, dependencyMap;
@@ -65,579 +65,10 @@ let obj9 = { title: intl5.string(intl8.t["oY/z1Q"]), description: intl6.string(i
 intl5 = intl8.intl;
 intl6 = intl8.intl;
 items[2] = obj9;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AutomatedUnderageAppealActionSheet(onClose) {
-  let TableRow;
-  let intl;
-  let intl2;
-  let items2;
-  let items3;
-  let items4;
-  let number;
-  let obj7;
-  let tmp10;
-  let tmp5;
-  let tmp6;
-  let tmp9;
-  const tmp = onClose;
-  let obj = onClose(576);
-  const cResult = obj.c(53);
-  onClose = onClose.onClose;
-  const classificationId = onClose.classificationId;
-  const tmp4 = closure_10();
-  dependencyMap = tmp4;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    items = [L];
-    const fn = function p() {
-      return L.getAgeVerificationWebviewUrl();
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp5 = items;
-    tmp6 = fn;
-  } else {
-    [tmp5, tmp6] = cResult;
-  }
-  const tmpResult = tmp(504);
-  const stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const items1 = [L];
-    class E {
-      constructor() {
-        return L.getIsLoadingAgeVerification();
-      }
-    }
-    cResult[2] = items1;
-    cResult[3] = E;
-    tmp10 = E;
-    tmp9 = items1;
-  } else {
-    tmp9 = cResult[2];
-    tmp10 = cResult[3];
-  }
-  const tmpResult2 = tmp(504);
-  const stateFromStores1 = tmpResult2.useStateFromStores(tmp9, tmp10);
-  const bottom = classificationId(1633)().bottom;
-  if (cResult[4] !== onClose) {
-    class T {
-      constructor() {
-        if (onClose != null) {
-          tmp();
-        }
-        const obj = AutomatedUnderageAppealModalActionCreatorsDefault;
-        obj.close();
-      }
-    }
-    cResult[4] = onClose;
-    class E {
-      constructor() {
-        return L.getIsLoadingAgeVerification();
-      }
-    }
-    cResult[5] = T;
-  } else {
-    class T {
-      constructor() {
-        if (onClose != null) {
-          tmp();
-        }
-        const obj = AutomatedUnderageAppealModalActionCreatorsDefault;
-        obj.close();
-      }
-    }
-  }
-  T = tmp14;
-  if (cResult[6] !== tmp14) {
-    class L {
-      constructor() {
-        const obj = AutomatedUnderageAppealModalActionCreatorsDefault;
-        obj.success();
-        T();
-        const obj2 = AutomatedUnderageAppealModalActionCreatorsDefault;
-        const result = obj2.start_verification_check();
-      }
-    }
-    cResult[6] = tmp14;
-    class E {
-      constructor() {
-        return L.getIsLoadingAgeVerification();
-      }
-    }
-    cResult[7] = L;
-  } else {
-    class L {
-      constructor() {
-        const obj = AutomatedUnderageAppealModalActionCreatorsDefault;
-        obj.success();
-        T();
-        const obj2 = AutomatedUnderageAppealModalActionCreatorsDefault;
-        const result = obj2.start_verification_check();
-      }
-    }
-  }
-  L = tmp15;
-  if (cResult[8] === tmp15) {
-    class L {
-      constructor() {
-        const obj = AutomatedUnderageAppealModalActionCreatorsDefault;
-        obj.success();
-        T();
-        const obj2 = AutomatedUnderageAppealModalActionCreatorsDefault;
-        const result = obj2.start_verification_check();
-      }
-    }
-    const effect = stateFromStores.useEffect(R, items4);
-    class E {
-      constructor() {
-        return L.getIsLoadingAgeVerification();
-      }
-    }
-    if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
-      class L {
-        constructor() {
-          const obj = AutomatedUnderageAppealModalActionCreatorsDefault;
-          obj.success();
-          T();
-          const obj2 = AutomatedUnderageAppealModalActionCreatorsDefault;
-          const result = obj2.start_verification_check();
-        }
-      }
-      cResult[12] = tmp19;
-      class E {
-        constructor() {
-          return L.getIsLoadingAgeVerification();
-        }
-      }
-    } else {
-      class L {
-        constructor() {
-          const obj = AutomatedUnderageAppealModalActionCreatorsDefault;
-          obj.success();
-          T();
-          const obj2 = AutomatedUnderageAppealModalActionCreatorsDefault;
-          const result = obj2.start_verification_check();
-        }
-      }
-    }
-    const sum = 425 + bottom;
-    const sum1 = sum + tmp13(587).space.PX_16;
-    const sum2 = sum1 + tmp13(587).space.PX_32;
-    if (cResult[13] === bottom) {
-      let tmp28;
-      let tmp39;
-      let tmp41;
-      let tmp47;
-      let tmp48;
-      class L {
-        constructor() {
-          const obj = AutomatedUnderageAppealModalActionCreatorsDefault;
-          obj.success();
-          T();
-          const obj2 = AutomatedUnderageAppealModalActionCreatorsDefault;
-          const result = obj2.start_verification_check();
-        }
-      }
-      const _Symbol = Symbol;
-      class E {
-        constructor() {
-          return L.getIsLoadingAgeVerification();
-        }
-      }
-      const _Symbol2 = Symbol;
-      if (cResult[17] === Symbol.for("react.memo_cache_sentinel")) {
-        class L {
-          constructor() {
-            const obj = AutomatedUnderageAppealModalActionCreatorsDefault;
-            obj.success();
-            T();
-            const obj2 = AutomatedUnderageAppealModalActionCreatorsDefault;
-            const result = obj2.start_verification_check();
-          }
-        }
-        let obj2 = { variant: "heading-md/medium", color: "text-default", children: obj6.string(tmp(1128).t["yvx//1"]) };
-        const Text = tmp(5266).Text;
-        class E {
-          constructor() {
-            return L.getIsLoadingAgeVerification();
-          }
-        }
-        const tmp29 = closure_8(Text, obj2);
-        cResult[17] = tmp29;
-        tmp28 = tmp29;
-      } else {
-        class L {
-          constructor() {
-            const obj = AutomatedUnderageAppealModalActionCreatorsDefault;
-            obj.success();
-            T();
-            const obj2 = AutomatedUnderageAppealModalActionCreatorsDefault;
-            const result = obj2.start_verification_check();
-          }
-        }
-      }
-      if (cResult[18] !== tmp4.header) {
-        class L {
-          constructor() {
-            const obj = AutomatedUnderageAppealModalActionCreatorsDefault;
-            obj.success();
-            T();
-            const obj2 = AutomatedUnderageAppealModalActionCreatorsDefault;
-            const result = obj2.start_verification_check();
-          }
-        }
-        let obj3 = { style: null, children: items2 };
-        class E {
-          constructor() {
-            return L.getIsLoadingAgeVerification();
-          }
-        }
-        items2 = [tmp27, tmp28];
-        cResult[18] = tmp4.header;
-        cResult[19] = closure_9(T, obj3);
-        const tmp32 = closure_9(T, obj3);
-      } else {
-        class L {
-          constructor() {
-            const obj = AutomatedUnderageAppealModalActionCreatorsDefault;
-            obj.success();
-            T();
-            const obj2 = AutomatedUnderageAppealModalActionCreatorsDefault;
-            const result = obj2.start_verification_check();
-          }
-        }
-      }
-      if (cResult[20] !== tmp4.number) {
-        class L {
-          constructor() {
-            const obj = AutomatedUnderageAppealModalActionCreatorsDefault;
-            obj.success();
-            T();
-            const obj2 = AutomatedUnderageAppealModalActionCreatorsDefault;
-            const result = obj2.start_verification_check();
-          }
-        }
-        const mapped = items.map((item, index) => {
-          let description;
-          let obj2;
-          let obj3;
-          let title;
-          ({ title, description } = item);
-          const obj = { label: title, subLabel: description, icon: metroImportAll(View, obj2) };
-          obj2 = { style: number.number, children: metroImportAll(Text_Text.Text, obj3) };
-          const TableRow = TableRow2.TableRow;
-          obj3 = { variant: "heading-md/semibold", color: "text-brand", children: index + 1 };
-          return metroImportAll(TableRow, obj, index);
-        });
-        class E {
-          constructor() {
-            return L.getIsLoadingAgeVerification();
-          }
-        }
-        cResult[21] = mapped;
-      } else {
-        class L {
-          constructor() {
-            const obj = AutomatedUnderageAppealModalActionCreatorsDefault;
-            obj.success();
-            T();
-            const obj2 = AutomatedUnderageAppealModalActionCreatorsDefault;
-            const result = obj2.start_verification_check();
-          }
-        }
-      }
-      if (cResult[22] !== tmp33) {
-        class L {
-          constructor() {
-            const obj = AutomatedUnderageAppealModalActionCreatorsDefault;
-            obj.success();
-            T();
-            const obj2 = AutomatedUnderageAppealModalActionCreatorsDefault;
-            const result = obj2.start_verification_check();
-          }
-        }
-        const obj4 = { children: closure_8(tmp(7019).TableRowGroup, tmp37) };
-        class E {
-          constructor() {
-            return L.getIsLoadingAgeVerification();
-          }
-        }
-        tmp37[1] = tmp33;
-        cResult[22] = tmp33;
-        cResult[23] = closure_8(T, obj4);
-        const tmp38 = closure_8(T, obj4);
-      } else {
-        class L {
-          constructor() {
-            const obj = AutomatedUnderageAppealModalActionCreatorsDefault;
-            obj.success();
-            T();
-            const obj2 = AutomatedUnderageAppealModalActionCreatorsDefault;
-            const result = obj2.start_verification_check();
-          }
-        }
-      }
-      const _Symbol3 = Symbol;
-      const moreInfo = tmp4.moreInfo;
-      if (cResult[24] === Symbol.for("react.memo_cache_sentinel")) {
-        class L {
-          constructor() {
-            const obj = AutomatedUnderageAppealModalActionCreatorsDefault;
-            obj.success();
-            T();
-            const obj2 = AutomatedUnderageAppealModalActionCreatorsDefault;
-            const result = obj2.start_verification_check();
-          }
-        }
-        const stringResult = obj9.string(tmp(1128).t.WPwp1b);
-        class E {
-          constructor() {
-            return L.getIsLoadingAgeVerification();
-          }
-        }
-        cResult[24] = stringResult;
-        tmp39 = stringResult;
-      } else {
-        class L {
-          constructor() {
-            const obj = AutomatedUnderageAppealModalActionCreatorsDefault;
-            obj.success();
-            T();
-            const obj2 = AutomatedUnderageAppealModalActionCreatorsDefault;
-            const result = obj2.start_verification_check();
-          }
-        }
-      }
-      const _Symbol4 = Symbol;
-      if (cResult[25] === Symbol.for("react.memo_cache_sentinel")) {
-        class L {
-          constructor() {
-            const obj = AutomatedUnderageAppealModalActionCreatorsDefault;
-            obj.success();
-            T();
-            const obj2 = AutomatedUnderageAppealModalActionCreatorsDefault;
-            const result = obj2.start_verification_check();
-          }
-        }
-        const obj5 = { title: tmp39, hasIcons: false, children: closure_8(TableRow, obj7) };
-        class E {
-          constructor() {
-            return L.getIsLoadingAgeVerification();
-          }
-        }
-        obj7 = { label: intl.string(tmp(1128).t.N9WJMM), subLabel: intl2.string(tmp(1128).t.NHq382), onPress: tmp18, arrow: true, start: true, end: true };
-        TableRow = tmp(6935).TableRow;
-        intl = tmp(1128).intl;
-        intl2 = tmp(1128).intl;
-        const tmp43 = closure_8(tmp42, obj5);
-        cResult[25] = tmp43;
-        tmp41 = tmp43;
-      } else {
-        class L {
-          constructor() {
-            const obj = AutomatedUnderageAppealModalActionCreatorsDefault;
-            obj.success();
-            T();
-            const obj2 = AutomatedUnderageAppealModalActionCreatorsDefault;
-            const result = obj2.start_verification_check();
-          }
-        }
-      }
-      if (cResult[26] !== tmp4.moreInfo) {
-        class L {
-          constructor() {
-            const obj = AutomatedUnderageAppealModalActionCreatorsDefault;
-            obj.success();
-            T();
-            const obj2 = AutomatedUnderageAppealModalActionCreatorsDefault;
-            const result = obj2.start_verification_check();
-          }
-        }
-        const obj8 = { style: null, children: tmp41 };
-        class E {
-          constructor() {
-            return L.getIsLoadingAgeVerification();
-          }
-        }
-        cResult[26] = tmp4.moreInfo;
-        cResult[27] = closure_8(T, obj8);
-        const tmp46 = closure_8(T, obj8);
-      } else {
-        class L {
-          constructor() {
-            const obj = AutomatedUnderageAppealModalActionCreatorsDefault;
-            obj.success();
-            T();
-            const obj2 = AutomatedUnderageAppealModalActionCreatorsDefault;
-            const result = obj2.start_verification_check();
-          }
-        }
-      }
-      const footer = tmp4.footer;
-      if (cResult[28] !== classificationId) {
-        class Q {
-          constructor() {
-            const obj = SafetyHubActionCreators;
-            return obj.requestSuspendedUserAgeVerification(classificationId);
-          }
-        }
-        cResult[28] = classificationId;
-        class E {
-          constructor() {
-            return L.getIsLoadingAgeVerification();
-          }
-        }
-        cResult[29] = Q;
-        tmp47 = Q;
-      } else {
-        class Q {
-          constructor() {
-            const obj = SafetyHubActionCreators;
-            return obj.requestSuspendedUserAgeVerification(classificationId);
-          }
-        }
-      }
-      const _Symbol5 = Symbol;
-      if (cResult[30] === Symbol.for("react.memo_cache_sentinel")) {
-        class Q {
-          constructor() {
-            const obj = SafetyHubActionCreators;
-            return obj.requestSuspendedUserAgeVerification(classificationId);
-          }
-        }
-        const stringResult1 = obj13.string(tmp(1128).t["54b8V0"]);
-        class E {
-          constructor() {
-            return L.getIsLoadingAgeVerification();
-          }
-        }
-        cResult[30] = stringResult1;
-        tmp48 = stringResult1;
-      } else {
-        class Q {
-          constructor() {
-            const obj = SafetyHubActionCreators;
-            return obj.requestSuspendedUserAgeVerification(classificationId);
-          }
-        }
-      }
-      if (cResult[31] === stateFromStores1) {
-        class Q {
-          constructor() {
-            const obj = SafetyHubActionCreators;
-            return obj.requestSuspendedUserAgeVerification(classificationId);
-          }
-        }
-        const _Symbol6 = Symbol;
-        const learnMore = tmp4.learnMore;
-        class E {
-          constructor() {
-            return L.getIsLoadingAgeVerification();
-          }
-        }
-        if (tmp53 === Symbol.for("react.memo_cache_sentinel")) {
-          class Q {
-            constructor() {
-              const obj = SafetyHubActionCreators;
-              return obj.requestSuspendedUserAgeVerification(classificationId);
-            }
-          }
-          const format = tmp55.format;
-          const obj10 = { learnMoreLink: constants.LEARN_MORE_UU_APPEAL_LINK };
-          class E {
-            constructor() {
-              return L.getIsLoadingAgeVerification();
-            }
-          }
-          cResult[34] = format(tmp(1128).t.ZbWsOF, obj10);
-          const formatResult = format(tmp(1128).t.ZbWsOF, obj10);
-        } else {
-          class Q {
-            constructor() {
-              const obj = SafetyHubActionCreators;
-              return obj.requestSuspendedUserAgeVerification(classificationId);
-            }
-          }
-        }
-        if (cResult[35] !== tmp4.learnMore) {
-          class Q {
-            constructor() {
-              const obj = SafetyHubActionCreators;
-              return obj.requestSuspendedUserAgeVerification(classificationId);
-            }
-          }
-          const obj11 = { variant: "heading-sm/medium", color: "text-subtle", style: learnMore, children: null };
-          class E {
-            constructor() {
-              return L.getIsLoadingAgeVerification();
-            }
-          }
-          cResult[35] = tmp4.learnMore;
-          cResult[36] = closure_8(tmp(5266).Text, obj11);
-          const tmp58 = closure_8(tmp(5266).Text, obj11);
-        } else {
-          class Q {
-            constructor() {
-              const obj = SafetyHubActionCreators;
-              return obj.requestSuspendedUserAgeVerification(classificationId);
-            }
-          }
-        }
-        if (cResult[37] === tmp4.footer) {
-          class Q {
-            constructor() {
-              const obj = SafetyHubActionCreators;
-              return obj.requestSuspendedUserAgeVerification(classificationId);
-            }
-          }
-        }
-        const obj12 = { style: footer, children: items3 };
-        items3 = [tmp50, tmp57];
-        cResult[37] = tmp4.footer;
-        cResult[38] = tmp50;
-        cResult[39] = tmp57;
-        cResult[40] = closure_9(T, obj12);
-        const tmp62 = closure_9(T, obj12);
-      }
-      const obj14 = { onPress: tmp47, loading: stateFromStores1, disabled: stateFromStores1, text: tmp48 };
-      cResult[31] = stateFromStores1;
-      const tmp52 = closure_8(tmp(5276).Button, obj14);
-      class R {
-        constructor() {
-          if ("" !== stateFromStores) {
-            const obj = { webviewUrl: tmp, onComplete: L, entryPoint: AgeVerificationAnalyticsUtils.AgeVerificationModalEntryPoint.AUTOMATED_UNDERAGE_APPEALS };
-            const showAgeVerification = AgeVerificationActionCreatorsDefault.showAgeVerification;
-            AgeVerificationActionCreatorsDefault;
-            showAgeVerification(obj);
-            const obj2 = ActionSheetActionCreatorsDefault;
-            obj2.hideActionSheet(metroRequire);
-          }
-        }
-      }
-      cResult[33] = tmp52;
-    }
-    const obj15 = { paddingBottom: bottom };
-    const merged = Object.assign(tmp4.content);
-    cResult[13] = bottom;
-    cResult[14] = tmp4.content;
-    cResult[15] = obj15;
-  }
-  class R {
-    constructor() {
-      if ("" !== stateFromStores) {
-        const obj = { webviewUrl: tmp, onComplete: L, entryPoint: AgeVerificationAnalyticsUtils.AgeVerificationModalEntryPoint.AUTOMATED_UNDERAGE_APPEALS };
-        const showAgeVerification = AgeVerificationActionCreatorsDefault.showAgeVerification;
-        AgeVerificationActionCreatorsDefault;
-        showAgeVerification(obj);
-        const obj2 = ActionSheetActionCreatorsDefault;
-        obj2.hideActionSheet(metroRequire);
-      }
-    }
-  }
-  items4 = [stateFromStores, tmp15];
-  cResult[8] = tmp15;
-  cResult[9] = stateFromStores;
-  cResult[10] = R;
-  cResult[11] = items4;
-}) : (function AutomatedUnderageAppealActionSheet(onClose) {
+size = size_mod;
+let result = size.fileFinishedImporting("modules/safety_hub/native/AutomatedUnderageAppealActionSheet.tsx");
+
+export default function AutomatedUnderageAppealActionSheet(onClose) {
   let BottomSheetScrollView;
   let TableRow;
   let TableRowGroup;
@@ -672,7 +103,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AutomatedUnd
   let obj2 = onClose(504);
   const items1 = [callback1];
   const stateFromStores1 = obj2.useStateFromStores(items1, () => callback1.getIsLoadingAgeVerification());
-  const bottom = classificationId(1633)().bottom;
+  const bottom = classificationId(1625)().bottom;
   const items2 = [onClose];
   const callback = stateFromStores.useCallback(() => {
     if (onClose != null) {
@@ -700,23 +131,23 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AutomatedUnd
       obj2.hideActionSheet(metroRequire);
     }
   }, items4);
-  let obj3 = { scrollable: true, startHeight: sum1 + classificationId(587).space.PX_32, children: closure_8(BottomSheetScrollView, obj4) };
-  BottomSheet = onClose(5297).BottomSheet;
+  let obj3 = { scrollable: true, startHeight: sum1 + classificationId(575).space.PX_32, children: closure_8(BottomSheetScrollView, obj4) };
+  BottomSheet = onClose(5272).BottomSheet;
   const sum = 425 + bottom;
-  sum1 = sum + classificationId(587).space.PX_16;
+  sum1 = sum + classificationId(575).space.PX_16;
   obj4 = { style: tmp.container, children: closure_9(callback, obj5) };
   obj5 = { style: obj6, children: items6 };
   obj6 = { paddingBottom: bottom };
-  BottomSheetScrollView = onClose(5301).BottomSheetScrollView;
+  BottomSheetScrollView = onClose(5275).BottomSheetScrollView;
   const merged = Object.assign(tmp.content);
   const obj7 = { style: tmp.header, children: items5 };
-  const obj8 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", children: intl.string(onClose(1128).t["9SDLnj"]) };
-  const Text = onClose(5266).Text;
-  intl = onClose(1128).intl;
+  const obj8 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", children: intl.string(onClose(1113).t["9SDLnj"]) };
+  const Text = onClose(5624).Text;
+  intl = onClose(1113).intl;
   items5 = [closure_8(Text, obj8), ];
-  const obj9 = { variant: "heading-md/medium", color: "text-default", children: intl2.string(onClose(1128).t["yvx//1"]) };
-  const Text2 = onClose(5266).Text;
-  intl2 = onClose(1128).intl;
+  const obj9 = { variant: "heading-md/medium", color: "text-default", children: intl2.string(onClose(1113).t["yvx//1"]) };
+  const Text2 = onClose(5624).Text;
+  intl2 = onClose(1113).intl;
   items5[1] = closure_8(Text2, obj9);
   items6 = [closure_9(callback, obj7), , , ];
   const obj10 = { children: closure_8(TableRowGroup, obj11) };
@@ -735,26 +166,26 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AutomatedUnd
       return metroImportAll(TableRow, obj, index);
     })
   };
-  TableRowGroup = onClose(7019).TableRowGroup;
+  TableRowGroup = onClose(7060).TableRowGroup;
   items6[1] = closure_8(callback, obj10);
   const obj12 = { style: tmp.moreInfo, children: closure_8(TableRowGroup2, obj13) };
-  obj13 = { title: intl3.string(onClose(1128).t.WPwp1b), hasIcons: false, children: closure_8(TableRow, obj14) };
-  TableRowGroup2 = onClose(7019).TableRowGroup;
-  intl3 = onClose(1128).intl;
+  obj13 = { title: intl3.string(onClose(1113).t.WPwp1b), hasIcons: false, children: closure_8(TableRow, obj14) };
+  TableRowGroup2 = onClose(7060).TableRowGroup;
+  intl3 = onClose(1113).intl;
   obj14 = {
-    label: intl4.string(onClose(1128).t.N9WJMM),
-    subLabel: intl5.string(onClose(1128).t.NHq382),
+    label: intl4.string(onClose(1113).t.N9WJMM),
+    subLabel: intl5.string(onClose(1113).t.NHq382),
     onPress: function openForm() {
-      const obj = classificationId(number[16]);
+      const obj = classificationId(number[19]);
       return obj.openURL(constants.AGE_VERIFICATION_LINK);
     },
     arrow: true,
     start: true,
     end: true
   };
-  TableRow = onClose(6935).TableRow;
-  intl4 = onClose(1128).intl;
-  intl5 = onClose(1128).intl;
+  TableRow = onClose(6975).TableRow;
+  intl4 = onClose(1113).intl;
+  intl5 = onClose(1113).intl;
   items6[2] = closure_8(callback, obj12);
   const obj15 = { style: tmp.footer, children: items7 };
   const obj16 = {
@@ -764,20 +195,16 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AutomatedUnd
     },
     loading: stateFromStores1,
     disabled: stateFromStores1,
-    text: intl6.string(onClose(1128).t["54b8V0"])
+    text: intl6.string(onClose(1113).t["54b8V0"])
   };
-  const Button = onClose(5276).Button;
-  intl6 = onClose(1128).intl;
+  const Button = onClose(5634).Button;
+  intl6 = onClose(1113).intl;
   items7 = [closure_8(Button, obj16), ];
-  const obj17 = { variant: "heading-sm/medium", color: "text-subtle", style: tmp.learnMore, children: intl7.format(onClose(1128).t.ZbWsOF, obj18) };
-  const Text3 = onClose(5266).Text;
-  intl7 = onClose(1128).intl;
+  const obj17 = { variant: "heading-sm/medium", color: "text-subtle", style: tmp.learnMore, children: intl7.format(onClose(1113).t.ZbWsOF, obj18) };
+  const Text3 = onClose(5624).Text;
+  intl7 = onClose(1113).intl;
   obj18 = { learnMoreLink: constants.LEARN_MORE_UU_APPEAL_LINK };
   items7[1] = closure_8(Text3, obj17);
   items6[3] = closure_9(callback, obj15);
   return closure_8(BottomSheet, obj3);
-});
-size = size_mod;
-let result = size.fileFinishedImporting("modules/safety_hub/native/AutomatedUnderageAppealActionSheet.tsx");
-
-export default tmp5;
+};

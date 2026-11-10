@@ -1,27 +1,26 @@
-// Module ID: 10683
-// Function ID: 10684
+// Module ID: 10762
+// Function ID: 10763
 // Name: isListeningOnSpotify
-// Dependencies: [1087, 8860, 6534, 2]
+// Dependencies: [1072, 8911, 5762, 6574, 2]
 // Exports: default
 
-// Module 10683 (isListeningOnSpotify)
-import PlatformsDefault from "Platforms" /* 6534 */;
-import SpotifyConstants from "SpotifyConstants" /* 8860 */;
-import Constants from "Constants" /* 1087 */;
+// Module 10762 (isListeningOnSpotify)
+import Constants from "Constants" /* 1072 */;
+import ActivityTypes from "ActivityTypes" /* 5762 */;
+import PlatformsDefault from "Platforms" /* 6574 */;
+import SpotifyConstants from "SpotifyConstants" /* 8911 */;
 import size from "module_2" /* 2 */;
 
-let c2;
-let c3;
-({ ActivityTypes: c2, PlatformTypes: c3 } = Constants);
+const PlatformTypes = Constants.PlatformTypes;
 const isSpotifyParty = SpotifyConstants.isSpotifyParty;
 const result = size.fileFinishedImporting("modules/activities/utils/isListeningOnSpotify.tsx");
 
 export default function isListeningOnSpotify(type) {
-  let tmp = null != type && type.type === constants.LISTENING;
+  let tmp = null != type && type.type === ActivityTypes.ActivityTypes.LISTENING;
   if (tmp) {
     const name = type.name;
     const obj = PlatformsDefault;
-    tmp = name === obj.get(constants2.SPOTIFY).name;
+    tmp = name === obj.get(PlatformTypes.SPOTIFY).name;
   }
   if (tmp) {
     tmp = null != type.party;

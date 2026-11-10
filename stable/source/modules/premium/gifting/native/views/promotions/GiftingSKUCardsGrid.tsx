@@ -1,349 +1,258 @@
-// Module ID: 13940
-// Function ID: 13941
+// Module ID: 14460
+// Function ID: 14461
 // Name: GiftingSKUCardsGrid
-// Dependencies: [19, 17, 7687, 1993, 21, 587, 5003, 558, 576, 8699, 5071, 11083, 9449, 9435, 9248, 5266, 1128, 6940, 1499, 12, 2]
+// Dependencies: [19, 17, 7725, 1985, 7726, 7727, 1072, 9494, 21, 575, 5014, 8749, 9520, 9506, 5717, 9519, 9497, 9518, 5596, 5011, 5587, 9285, 5082, 11386, 6980, 5624, 1113, 1491, 12, 2]
+// Exports: default
 
-// Module 13940 (GiftingSKUCardsGrid)
+// Module 14460 (GiftingSKUCardsGrid)
 import _modDef12 from "module_12" /* 12 */;
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1499 */;
-import NameplateRecord from "NameplateRecord" /* 1993 */;
-import react_native from "react-native" /* 5071 */;
-import AvatarDecorationRecord from "AvatarDecorationRecord" /* 7687 */;
-import useCurrentUser from "useCurrentUser" /* 8699 */;
-import useFetchCollectiblesProduct from "useFetchCollectiblesProduct" /* 11083 */;
-import react_mod from "react" /* 19 */;
+import nativeDefault from "native" /* 575 */;
+import Constants from "Constants" /* 1072 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1491 */;
+import NameplateRecord from "NameplateRecord" /* 1985 */;
+import ColorUtils from "ColorUtils" /* 5011 */;
+import react_native from "react-native" /* 5082 */;
+import LinearGradientDefault from "LinearGradient" /* 5587 */;
+import useToken from "useToken" /* 5596 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import AvatarDecorationRecord from "AvatarDecorationRecord" /* 7725 */;
+import ProfileEffectRecord from "ProfileEffectRecord" /* 7726 */;
+import ProfileFrameRecord from "ProfileFrameRecord" /* 7727 */;
+import CheckmarkLargeBoldIcon from "CheckmarkLargeBoldIcon" /* 9285 */;
+import CollectiblesPreviewConstants from "CollectiblesPreviewConstants" /* 9494 */;
+import useFetchCollectiblesProduct from "useFetchCollectiblesProduct" /* 11386 */;
+import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5003 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
-const require = globalThis.__r;
-
 let StyleSheet;
+let c10;
+let closure_12;
 let closure_4;
-let metroImportAll;
-let metroImportDefault;
 let obj2;
 let obj3;
 let obj4;
 let obj5;
-let react = react_mod;
+let rect;
+let rect1;
+let unpackModuleId;
+function GiftingSKUCardItemPreview(arg0) {
+  let isSelected;
+  let item;
+  let items1;
+  let obj6;
+  let obj9;
+  let tmp12;
+  let tmp8;
+  ({ item, isSelected } = arg0);
+  const tmp = closure_18();
+  const obj = isSelected(8749);
+  const currentUser = obj.useCurrentUser();
+  const items = [isSelected, currentUser];
+  const memo = react.useMemo(() => {
+    let avatarSource;
+    if (isSelected) {
+      avatarSource = currentUser.getAvatarSource(null, true, c13);
+    }
+    return avatarSource;
+  }, items);
+  if (isNameplateRecord(item)) {
+    const obj2 = { item, animate: isSelected };
+    tmp8 = closure_10(currentUser(9520), obj2);
+  } else if (isAvatarDecorationRecord(item)) {
+    const obj3 = { item, size, animate: isSelected, avatarSource: memo };
+    tmp8 = closure_10(currentUser(9506), obj3);
+  } else if (isProfileEffectRecord(item)) {
+    const obj4 = { style: tmp.profileEffect, children: items1 };
+    const obj5 = { source: obj6, style: tmp.sampleProfile, resizeMode: "cover" };
+    obj6 = { uri: currentUser(9519) };
+    const tmp19 = currentUser(5717);
+    items1 = [closure_10(tmp19, obj5), ];
+    const obj7 = { skuId: item.skuId, useThumbnail: !isSelected };
+    items1[1] = closure_10(currentUser(9497), obj7);
+    tmp8 = closure_11(closure_4, obj4);
+  } else {
+    tmp8 = null;
+    if (isProfileFrameRecord(item)) {
+      const obj8 = { style: tmp.profileFrame, children: closure_10(tmp12, obj9) };
+      obj9 = { profileFrame: item, previewWidth, previewHeight, profileBackgroundColor: currentUser(575).colors.BACKGROUND_BASE_LOW };
+      tmp12 = currentUser(9518);
+      tmp8 = closure_10(closure_4, obj8);
+    }
+  }
+  return tmp8;
+}
+function CollectibleTextFade() {
+  let items;
+  const tmp = closure_18();
+  const obj = useToken;
+  const token = obj.useToken(nativeDefault.colors.BACKGROUND_BASE_LOW);
+  const hexToRgbaString = ColorUtils.hexToRgbaString;
+  ColorUtils;
+  const obj2 = ColorUtils;
+  const hexToRgbaStringResult = hexToRgbaString(obj2.hexWithOpacity(token, 0.9));
+  const hexToRgbaString2 = ColorUtils.hexToRgbaString;
+  ColorUtils;
+  const obj3 = ColorUtils;
+  const obj4 = { style: tmp.collectibleTextFade, colors: items, locations: [0, 0.4, 1], start: VerticalGradient.START, end: VerticalGradient.END };
+  items = [hexToRgbaString2(obj3.hexWithOpacity(token, 0)), hexToRgbaStringResult, token];
+  hexToRgbaString2(obj3.hexWithOpacity(token, 0));
+  return authStore(LinearGradientDefault, obj4);
+}
+function GiftingSKUCardPreview(isSelected) {
+  let claimed;
+  let item;
+  let items2;
+  ({ item, claimed } = isSelected);
+  isSelected = isSelected.isSelected;
+  const tmp = closure_18();
+  let tmp7Result = isProfileEffectRecord(item);
+  const tmp3 = isProfileFrameRecord(item);
+  const items = [tmp.previewContainer, ];
+  let expandedPreviewContainer = tmp7Result;
+  const tmp5 = authStore2;
+  if (!tmp7Result) {
+    expandedPreviewContainer = tmp3;
+  }
+  if (expandedPreviewContainer) {
+    expandedPreviewContainer = tmp.expandedPreviewContainer;
+  }
+  const obj = { style: items, children: items2 };
+  items[1] = expandedPreviewContainer;
+  const items1 = [tmp.preview, ];
+  const tmp8 = claimed && tmp.claimed;
+  items1[1] = tmp8;
+  items2 = [, ];
+  const obj2 = { style: items1, children: authStore(GiftingSKUCardItemPreview, { item, isSelected }) };
+  items2[0] = authStore(React3, obj2);
+  if (claimed) {
+    const obj3 = { size: "lg", style: tmp.checkmark };
+    claimed = tmp7(CheckmarkLargeBoldIcon.CheckmarkLargeBoldIcon, obj3);
+  }
+  items2[1] = claimed;
+  const children = [unpackModuleId(React3, obj), ];
+  if (!tmp7Result) {
+    tmp7Result = tmp3;
+  }
+  if (tmp7Result) {
+    tmp7Result = tmp7(CollectibleTextFade, {});
+  }
+  children[1] = tmp7Result;
+  return unpackModuleId(tmp5, { children });
+}
 ({ View: closure_4, StyleSheet } = react_native2);
 const isAvatarDecorationRecord = AvatarDecorationRecord.isAvatarDecorationRecord;
 const isNameplateRecord = NameplateRecord.isNameplateRecord;
-({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
-let c9 = 100;
-let c10 = 150;
+const isProfileEffectRecord = ProfileEffectRecord.isProfileEffectRecord;
+const isProfileFrameRecord = ProfileFrameRecord.isProfileFrameRecord;
+const VerticalGradient = Constants.VerticalGradient;
+const SAMPLE_PROFILE_ASPECT_RATIO = CollectiblesPreviewConstants.SAMPLE_PROFILE_ASPECT_RATIO;
+({ jsx: c10, jsxs: unpackModuleId, Fragment: closure_12 } = Fragment);
+let c13 = 100;
 const PX_12 = nativeDefault.space.PX_12;
-let closure_12 = 2 * nativeDefault.space.PX_24;
+const previewWidth = 150 - nativeDefault.space.PX_32;
+const sum = 100 + nativeDefault.space.PX_40;
+const PX_122 = nativeDefault.space.PX_12;
+let closure_17 = 2 * nativeDefault.space.PX_24;
 let createStyles = createStyles_mod;
-let obj = { card: obj2, previewContainer: { display: "flex", justifyContent: "center", alignItems: "center", width: "100%", height: 100, overflow: "hidden" }, preview: obj3, selected: obj4, claimed: { opacity: 0.4 }, checkmark: { position: "absolute", opacity: 1, fontWeight: "bold" }, textContainer: obj5 };
-obj2 = { width: 150, display: "flex", flexDirection: "column", alignItems: "center", gap: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_12, paddingBottom: nativeDefault.space.PX_16, borderWidth: 1, borderRadius: nativeDefault.radii.sm, overflow: "hidden", borderColor: nativeDefault.colors.BORDER_SUBTLE };
+let obj = { card: obj2, previewContainer: { display: "flex", justifyContent: "center", alignItems: "center", width: "100%", height: 100, overflow: "hidden" }, expandedPreviewContainer: { overflow: "visible" }, preview: obj3, selected: obj4, claimed: { opacity: 0.4 }, checkmark: { position: "absolute", opacity: 1, fontWeight: "bold" }, profileEffect: rect, sampleProfile: { aspectRatio: SAMPLE_PROFILE_ASPECT_RATIO, width: "100%" }, profileFrame: { position: "absolute", top: 0, left: 0, right: 0, height: sum, alignItems: "center" }, collectibleTextFade: rect1, textContainer: obj5 };
+obj2 = { width: 150, display: "flex", flexDirection: "column", alignItems: "center", gap: nativeDefault.space.PX_16, paddingTop: PX_12, paddingBottom: nativeDefault.space.PX_16, borderWidth: 1, borderRadius: nativeDefault.radii.sm, overflow: "hidden", borderColor: nativeDefault.colors.BORDER_SUBTLE };
 createStyles = createStyles.createStyles;
 obj3 = { display: "flex", justifyContent: "center", alignItems: "center" };
 const merged = Object.assign(StyleSheet.absoluteFillObject);
 obj4 = { borderColor: nativeDefault.colors.BACKGROUND_BRAND };
+rect = { position: "absolute", top: -PX_12, left: 0, right: 0, overflow: "hidden", height: sum + PX_12, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
+rect1 = { position: "absolute", left: 0, right: 0, bottom: 0, height: "45%", borderBottomLeftRadius: nativeDefault.radii.sm, borderBottomRightRadius: nativeDefault.radii.sm };
 obj5 = { alignSelf: "stretch", paddingHorizontal: nativeDefault.space.PX_16, alignItems: "flex-start" };
-let closure_13 = createStyles(obj);
-let memo = react.memo;
-let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_14 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function GiftingSKUCard(rewardSkuId) {
+let closure_18 = createStyles(obj);
+let closure_22 = react.memo(function GiftingSKUCard(rewardSkuId) {
   let accessibilityRole;
   let accessibilityState;
   let claimed;
-  let onSelect;
-  let tmp5;
-  const obj = react2;
-  const cResult = obj.c(46);
-  rewardSkuId = rewardSkuId.rewardSkuId;
-  ({ claimed, onSelect } = rewardSkuId);
-  const isSelected = rewardSkuId.isSelected;
-  const tmp4 = closure_13();
-  const obj2 = useCurrentUser;
-  const currentUser = obj2.useCurrentUser();
-  if (cResult[0] !== isSelected) {
-    const obj3 = { selected: isSelected };
-    cResult[0] = isSelected;
-    cResult[1] = obj3;
-    tmp5 = obj3;
-  } else {
-    tmp5 = cResult[1];
-  }
-  const tmpResult = react_native;
-  const radioA11yNative = tmpResult.useRadioA11yNative(tmp5);
-  ({ accessibilityRole, accessibilityState } = radioA11yNative);
-  const tmpResult2 = useFetchCollectiblesProduct;
-  const product = tmpResult2.useFetchCollectiblesProduct(rewardSkuId).product;
-  if (cResult[2] === currentUser) {
-    if (null == product) {
-      return null;
-    } else {
-      const first = product.items[0];
-      if (cResult[5] === tmp4.card) {
-        if (cResult[8] === onSelect) {
-          class G {
-            constructor() {
-              return onSelect(rewardSkuId);
-            }
-          }
-          const items = [tmp4.preview, claimed && tmp4.claimed];
-          cResult[11] = tmp4.preview;
-          cResult[12] = claimed && tmp4.claimed;
-          cResult[13] = items;
-        }
-        class G {
-          constructor() {
-            return onSelect(rewardSkuId);
-          }
-        }
-        cResult[8] = onSelect;
-        cResult[9] = rewardSkuId;
-        cResult[10] = G;
-      }
-      const items1 = [tmp4.card, isSelected && tmp4.selected];
-      cResult[5] = tmp4.card;
-      cResult[6] = isSelected && tmp4.selected;
-      cResult[7] = items1;
-    }
-  }
-  let avatarSource;
-  if (isSelected) {
-    class G {
-      constructor() {
-        return onSelect(rewardSkuId);
-      }
-    }
-    avatarSource = currentUser.getAvatarSource(null, true, c9);
-  }
-  cResult[2] = currentUser;
-  cResult[3] = isSelected;
-  cResult[4] = avatarSource;
-}) : (function GiftingSKUCard(rewardSkuId) {
-  let accessibilityRole;
-  let accessibilityState;
-  let claimed;
+  let closure_129_1;
   let isSelected;
-  let items3;
-  let items4;
-  let items5;
-  let tmp8Result;
+  let items1;
+  let items2;
   rewardSkuId = rewardSkuId.rewardSkuId;
-  ({ claimed, onSelect: importDefault, isSelected } = rewardSkuId);
-  const tmp = closure_13();
-  const obj = rewardSkuId(isSelected[9]);
-  const currentUser = obj.useCurrentUser();
-  const obj2 = rewardSkuId(isSelected[10]);
-  const radioA11yNative = obj2.useRadioA11yNative({ selected: isSelected });
+  ({ claimed, onSelect: closure_129_1, isSelected } = rewardSkuId);
+  const tmp = closure_18();
+  const obj = react_native;
+  const radioA11yNative = obj.useRadioA11yNative({ selected: isSelected });
   ({ accessibilityRole, accessibilityState } = radioA11yNative);
-  const obj3 = rewardSkuId(isSelected[11]);
-  const product = obj3.useFetchCollectiblesProduct(rewardSkuId).product;
-  const items = [isSelected, currentUser];
+  const obj2 = useFetchCollectiblesProduct;
+  const product = obj2.useFetchCollectiblesProduct(rewardSkuId).product;
   if (null == product) {
     return null;
   } else {
     let stringResult;
     const first = product.items[0];
-    const items1 = [tmp.card, ];
+    const items = [tmp.card, ];
     let selected = isSelected;
-    const PressableOpacity = tmp2(tmp3[17]).PressableOpacity;
+    const PressableOpacity = tmp2(6980).PressableOpacity;
     if (isSelected) {
       selected = tmp.selected;
     }
-    const obj4 = {
-      style: items1,
+    const obj3 = {
+      style: items,
       onPress() {
-          return importDefault(rewardSkuId);
+          return closure_1_1(rewardSkuId);
         },
       activeOpacity: 0.8,
       disabled: claimed,
       accessibilityRole,
       accessibilityState,
-      children: items4
+      children: items1
     };
-    items1[1] = selected;
-    const items2 = [tmp.preview, ];
-    const obj5 = { style: tmp.previewContainer, children: items3 };
-    const obj6 = { style: items2, children: tmp8Result };
-    const tmp9 = claimed && tmp.claimed;
-    items2[1] = tmp9;
-    if (isNameplateRecord(first)) {
-      const obj7 = { item: first, animate: isSelected };
-      tmp8Result = tmp8(require("NameplateCardPreview"), obj7);
-    } else if (isAvatarDecorationRecord(first)) {
-      const obj8 = { item: first, size, animate: isSelected, avatarSource: tmp6 };
-      tmp8Result = tmp8(require("AvatarDecorationSampleV2"), obj8);
+    items[1] = selected;
+    let tmp5 = null != first;
+    if (tmp5) {
+      const obj4 = { item: first, isSelected, claimed };
+      tmp5 = authStore(GiftingSKUCardPreview, obj4);
     }
-    items3 = [closure_7(closure_4, obj6), ];
-    let tmp8Result2 = claimed;
-    if (tmp8Result2) {
-      const obj9 = { size: "lg", style: tmp.checkmark };
-      tmp8Result2 = tmp8(tmp2(tmp3[14]).CheckmarkLargeBoldIcon, obj9);
-    }
-    items3[1] = tmp8Result2;
-    items4 = [closure_8(closure_4, obj5), ];
-    const obj10 = { style: tmp.textContainer, children: items5 };
-    const obj11 = { variant: "heading-sm/bold", color: "mobile-text-heading-primary", lineClamp: 1, accessibilityRole: "header", children: product.name };
-    items5 = [closure_7(tmp2(tmp3[15]).Text, obj11), ];
-    const Text = tmp2(tmp3[15]).Text;
-    const intl = tmp2(tmp3[16]).intl;
+    items1 = [tmp5, ];
+    const obj5 = { style: tmp.textContainer, children: items2 };
+    const obj6 = { variant: "heading-sm/bold", color: "mobile-text-heading-primary", lineClamp: 1, accessibilityRole: "header", children: product.name };
+    items2 = [authStore(Text_Text.Text, obj6), ];
+    const Text = tmp2(5624).Text;
+    const intl = tmp2(1113).intl;
     const string = intl.string;
-    const t = tmp2(tmp3[16]).t;
+    const t = tmp2(1113).t;
+    const tmp8 = React3;
+    const tmp9 = authStore;
     if (claimed) {
       stringResult = string(t["6cfuDj"]);
     } else {
       stringResult = string(t.QQsaCc);
     }
-    const obj12 = { variant: "text-xs/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: stringResult };
-    items5[1] = closure_7(Text, obj12);
-    items4[1] = closure_8(closure_4, obj10);
-    return closure_8(PressableOpacity, obj4);
+    const obj7 = { variant: "text-xs/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: stringResult };
+    items2[1] = tmp9(Text, obj7);
+    items1[1] = unpackModuleId(tmp8, obj5);
+    return unpackModuleId(PressableOpacity, obj3);
   }
-}));
+});
 createStyles = createStyles_mod;
-let obj6 = { grid: { flexDirection: "column", alignSelf: "center", gap: PX_12 }, row: { flexDirection: "row", gap: PX_12 } };
-let closure_15 = createStyles.createStyles(obj6);
-ReactCompilerGating = ReactCompilerGating_mod;
-const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftingSKUCardsGrid(onSelect) {
-  let claimableRewards;
-  let highlightedSkuId;
-  let rewardsToDisplay;
-  let row;
-  let obj = claimableRewards(highlightedSkuId[8]);
-  const cResult = obj.c(22);
-  ({ rewardsToDisplay, claimableRewards } = onSelect);
-  onSelect = onSelect.onSelect;
-  const tmp = highlightedSkuId;
-  highlightedSkuId = onSelect.highlightedSkuId;
-  const tmp3 = closure_15();
-  react = tmp3;
-  let length = Math.max(1, Math.floor((onSelect(highlightedSkuId[18])().width - closure_12 + PX_12) / (c10 + PX_12)));
-  const tmp4 = onSelect;
-  const tmp5 = PX_12;
-  const tmp6 = c10;
-  if (cResult[0] === length) {
-    let arr;
-    let tmp10;
-    if (cResult[1] === rewardsToDisplay) {
-      arr = cResult[2];
-    }
-    if (arr.length <= 1) {
-      length = rewardsToDisplay.length;
-    }
-    const _Math = Math;
-    const result = length * tmp6;
-    const sum = result + Math.max(0, length - 1) * tmp5;
-    if (cResult[3] !== sum) {
-      const obj2 = { width: sum };
-      cResult[3] = sum;
-      cResult[4] = obj2;
-      tmp10 = obj2;
-    } else {
-      tmp10 = cResult[4];
-    }
-    if (cResult[5] === tmp3.grid) {
-      let tmp11;
-      let tmp12;
-      if (cResult[6] === tmp10) {
-        tmp11 = cResult[7];
-      }
-      if (cResult[8] === claimableRewards) {
-        if (cResult[9] === highlightedSkuId) {
-          if (cResult[10] === onSelect) {
-            if (cResult[11] === arr) {
-              if (cResult[12] === tmp3.row) {
-                tmp12 = cResult[13];
-              }
-              if (cResult[19] === tmp11) {
-                let tmp15;
-                if (cResult[20] === tmp12) {
-                  tmp15 = cResult[21];
-                }
-                return tmp15;
-              }
-              class P {
-                constructor(arg0, arg1) {
-                  obj = { style: closure_3.row, children: onSelect.map(() => { /* body not rendered: F150960 */ }) };
-                  return jsx(View, obj, arg1);
-                }
-              }
-              const obj3 = { style: tmp11, children: tmp12 };
-              const tmp17 = closure_7(closure_4, obj3);
-              cResult[19] = tmp11;
-              cResult[20] = tmp12;
-              cResult[21] = tmp17;
-              tmp15 = tmp17;
-            }
-          }
-        }
-      }
-      if (cResult[14] === claimableRewards) {
-        if (cResult[15] === highlightedSkuId) {
-          if (cResult[16] === onSelect) {
-            let tmp13;
-            if (cResult[17] === tmp3.row) {
-              tmp13 = cResult[18];
-            }
-            const mapped = arr.map(tmp13);
-            class P {
-              constructor(arg0, arg1) {
-                obj = { style: closure_3.row, children: onSelect.map(() => { /* body not rendered: F150960 */ }) };
-                return jsx(View, obj, arg1);
-              }
-            }
-            cResult[9] = highlightedSkuId;
-            cResult[10] = onSelect;
-            cResult[11] = arr;
-            cResult[12] = tmp3.row;
-            cResult[13] = mapped;
-            tmp12 = mapped;
-          }
-        }
-      }
-      class P {
-        constructor(arg0, arg1) {
-          obj = { style: closure_3.row, children: onSelect.map(() => { /* body not rendered: F150960 */ }) };
-          return jsx(View, obj, arg1);
-        }
-      }
-      cResult[14] = claimableRewards;
-      cResult[15] = highlightedSkuId;
-      cResult[16] = onSelect;
-      cResult[17] = tmp3.row;
-      cResult[18] = P;
-      tmp13 = P;
-    }
-    const items = [tmp3.grid, tmp10];
-    cResult[5] = tmp3.grid;
-    cResult[6] = tmp10;
-    cResult[7] = items;
-    tmp11 = items;
-  }
-  const tmp4Result = tmp4(tmp[19]);
-  const chunkResult = tmp4Result.chunk(rewardsToDisplay, length);
-  cResult[0] = length;
-  cResult[1] = rewardsToDisplay;
-  cResult[2] = chunkResult;
-  arr = chunkResult;
-}) : (function GiftingSKUCardsGrid(rewardsToDisplay) {
+let obj6 = { grid: { flexDirection: "column", alignSelf: "center", gap: PX_122 }, row: { flexDirection: "row", gap: PX_122 } };
+let closure_23 = createStyles.createStyles(obj6);
+let result = size.fileFinishedImporting("modules/premium/gifting/native/views/promotions/GiftingSKUCardsGrid.tsx");
+
+export default function GiftingSKUCardsGrid(rewardsToDisplay) {
   let items1;
   rewardsToDisplay = rewardsToDisplay.rewardsToDisplay;
   ({ claimableRewards: importDefault, onSelect: dependencyMap, highlightedSkuId: react } = rewardsToDisplay);
-  const tmp = closure_15();
+  const tmp = closure_23();
   const row = tmp;
-  let length = Math.max(1, Math.floor((useWindowDimensionsDefault().width - closure_12 + PX_12) / (c10 + PX_12)));
+  let length = Math.max(1, Math.floor((useWindowDimensionsDefault().width - closure_17 + PX_122) / (150 + PX_122)));
   const items = [rewardsToDisplay, length];
   const memo = react.useMemo(() => {
     const obj = _modDef12;
     return obj.chunk(rewardsToDisplay, length);
   }, items);
-  const tmp3 = c10;
   if (memo.length <= 1) {
     length = rewardsToDisplay.length;
   }
-  const result = length * tmp3;
+  const result = 150 * length;
   let obj = {
     style: items1,
     children: memo.map((arr, index) => {
@@ -353,16 +262,13 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftingSKU
         children: arr.map((rewardSkuId) => {
           let closure_0 = rewardSkuId;
           const obj = { rewardSkuId, claimed: !closure_1_1.some((item) => item === closure_0), isSelected: closure_1_3 === rewardSkuId, onSelect };
-          return closure_2_7(closure_2_14, obj, rewardSkuId);
+          return closure_2_10(closure_2_22, obj, rewardSkuId);
         })
       };
-      return metroImportDefault(React3, obj, index);
+      return authStore(React3, obj, index);
     })
   };
   items1 = [tmp.grid, { width: result + Math.max(0, length - 1) * tmp2 }];
-  ({ width: result + Math.max(0, length - 1) * PX_12 });
-  return closure_7(row, obj);
-});
-let result = size.fileFinishedImporting("modules/premium/gifting/native/views/promotions/GiftingSKUCardsGrid.tsx");
-
-export default tmp7;
+  ({ width: result + Math.max(0, length - 1) * PX_122 });
+  return closure_10(row, obj);
+};

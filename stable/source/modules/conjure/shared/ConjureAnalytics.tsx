@@ -1,16 +1,19 @@
-// Module ID: 10750
-// Function ID: 10751
+// Module ID: 10873
+// Function ID: 10874
 // Name: ConjureAnalytics
-// Dependencies: [6805, 1087, 7377, 5743, 1384, 2]
-// Exports: trackConjureErrored, trackConjurePublishActionClicked, trackConjureRatingFeedbackSubmitted, trackConjureRatingSubmitted, trackConjureTurnResulted
+// Dependencies: [6844, 1072, 7419, 5760, 1375, 1252, 2]
+// Exports: trackConjureBuilderOpened, trackConjureErrored, trackConjurePublishActionClicked, trackConjureRatingFeedbackSubmitted, trackConjureRatingSubmitted, trackConjureTurnResulted
 
-// Module 10750 (ConjureAnalytics)
-import Constants from "Constants" /* 1087 */;
-import PlatformUtils from "PlatformUtils" /* 1384 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5743 */;
-import ConjureUtils from "ConjureUtils" /* 7377 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6805 */;
+// Module 10873 (ConjureAnalytics)
+import Constants from "Constants" /* 1072 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import PlatformUtils from "PlatformUtils" /* 1375 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5760 */;
+import ConjureProjectStore2 from "ConjureProjectStore" /* 6844 */;
+import ConjureUtils from "ConjureUtils" /* 7419 */;
 import size from "module_2" /* 2 */;
+
+const ConjureProjectStore = ConjureProjectStore2;
 
 function projectFields(projectId) {
   let application_id;
@@ -93,11 +96,12 @@ function conjureLocation(projectId, isPreview) {
   }
   return obj;
 }
+const isProjectOwner = ConjureProjectStore2.isProjectOwner;
 const AnalyticEvents = Constants.AnalyticEvents;
 let result = size.fileFinishedImporting("modules/conjure/shared/ConjureAnalytics.tsx");
 
 export const ConjureErrorCodes = { BUILD_FAILED: "BUILD_FAILED", HEALTHCHECK_FAILED: "HEALTHCHECK_FAILED", AGENT_ERROR: "AGENT_ERROR", PUBLISH_FAILED: "PUBLISH_FAILED", WS_OPEN_FAILED: "WS_OPEN_FAILED", SEND_FAILED: "SEND_FAILED", RUNTIME_FRAME_ERROR: "RUNTIME_FRAME_ERROR", RUNTIME_WORKER_ERROR: "RUNTIME_WORKER_ERROR" };
-export const trackConjureTurnResulted = function trackConjureTurnResulted(projectId, turn_id) {
+export function trackConjureTurnResulted(projectId, turn_id) {
   let cost_usd;
   let duration_ms;
   let model_tier;
@@ -150,8 +154,8 @@ export const trackConjureTurnResulted = function trackConjureTurnResulted(projec
   }
   const merged2 = Object.assign(obj3);
   trackWithMetadata(CONJURE_TURN_RESULTED, obj);
-};
-export const trackConjureErrored = function trackConjureErrored(projectId, turnId) {
+}
+export function trackConjureErrored(projectId, turnId) {
   let _location;
   let code;
   let details;
@@ -189,8 +193,8 @@ export const trackConjureErrored = function trackConjureErrored(projectId, turnI
     }
   }
   trackWithMetadata(CONJURE_ERRORED, obj);
-};
-export const trackConjurePublishActionClicked = function trackConjurePublishActionClicked(project_id, arg1) {
+}
+export function trackConjurePublishActionClicked(project_id, arg1) {
   let action;
   let application_id;
   let entryPoint;
@@ -235,8 +239,8 @@ export const trackConjurePublishActionClicked = function trackConjurePublishActi
     tmp6 = str3;
   }
   trackWithMetadata(CONJURE_PUBLISH_ACTION_CLICKED, obj);
-};
-export const trackConjureRatingSubmitted = function trackConjureRatingSubmitted(projectId) {
+}
+export function trackConjureRatingSubmitted(projectId) {
   let publishReason;
   let rating;
   let str;
@@ -266,8 +270,8 @@ export const trackConjureRatingSubmitted = function trackConjureRatingSubmitted(
     str = str2;
   }
   trackWithMetadata(CONJURE_RATING_SUBMITTED, obj);
-};
-export const trackConjureRatingFeedbackSubmitted = function trackConjureRatingFeedbackSubmitted(projectId, substr) {
+}
+export function trackConjureRatingFeedbackSubmitted(projectId, substr) {
   let publishReason;
   let rating;
   let str;
@@ -299,4 +303,41 @@ export const trackConjureRatingFeedbackSubmitted = function trackConjureRatingFe
   const obj3 = { feedback_text: substr };
   const merged2 = Object.assign(obj);
   trackWithMetadata(CONJURE_RATING_FEEDBACK_SUBMITTED, obj3);
-};
+}
+export function trackConjureBuilderOpened(project_id, entry_point) {
+  let install_scope;
+  let str;
+  let tmp4;
+  const project = ConjureProjectStore.getProject(project_id);
+  const obj = { project_id, entry_point, is_owner: tmp4, install_scope, client_platform: str };
+  tmp4 = null;
+  const track = AnalyticsUtilsDefault.track;
+  const CONJURE_BUILDER_OPENED = AnalyticEvents.CONJURE_BUILDER_OPENED;
+  AnalyticsUtilsDefault;
+  if (null != project) {
+    tmp4 = isProjectOwner(project);
+  }
+  install_scope = undefined;
+  if (project != null) {
+    install_scope = project.install_scope;
+  }
+  if (install_scope == null) {
+    install_scope = null;
+  }
+  str = "android";
+  const obj2 = PlatformUtils;
+  if (!obj2.isAndroid()) {
+    let str2 = "ios";
+    const tmp7Result = PlatformUtils;
+    if (!tmp7Result.isIOS()) {
+      let str3 = "web";
+      const tmp7Result2 = PlatformUtils;
+      if (tmp7Result2.isDesktop()) {
+        str3 = "desktop";
+      }
+      str2 = str3;
+    }
+    str = str2;
+  }
+  track(CONJURE_BUILDER_OPENED, obj);
+}

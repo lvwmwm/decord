@@ -1,17 +1,17 @@
-// Module ID: 18869
-// Function ID: 18870
+// Module ID: 19489
+// Function ID: 19490
 // Name: InteractionModalManager
-// Dependencies: [5, 2045, 8302, 1087, 6051, 18870, 2002, 1267, 559, 1257, 18881, 15835, 5658, 18884, 7246, 2]
+// Dependencies: [5, 2038, 8389, 1072, 6070, 19490, 1994, 1252, 4889, 1242, 19501, 16391, 5675, 19504, 7287, 2]
 
-// Module 18869 (InteractionModalManager)
-import Constants from "Constants" /* 1087 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import isPostMessageDisconnectDefault from "isPostMessageDisconnect" /* 15835 */;
-import openInteractionIframeModalDefault from "openInteractionIframeModal" /* 18881 */;
+// Module 19489 (InteractionModalManager)
+import Constants from "Constants" /* 1072 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import isPostMessageDisconnectDefault from "isPostMessageDisconnect" /* 16391 */;
+import openInteractionIframeModalDefault from "openInteractionIframeModal" /* 19501 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationStore from "ApplicationStore" /* 2045 */;
-import InteractionStore from "InteractionStore" /* 8302 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7246 */;
+import ApplicationStore from "ApplicationStore" /* 2038 */;
+import InteractionStore from "InteractionStore" /* 8389 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7287 */;
 import size from "module_2" /* 2 */;
 
 let closure_2, data, iFrameModal, interactionDebugContext;
@@ -78,7 +78,7 @@ let obj = function _handleInteractionModalCreate() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -121,7 +121,7 @@ let obj = function _handleInteractionModalCreate() {
               obj.addBreadcrumb(obj8);
             }
             c4 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp18) {
           c4 = 3;

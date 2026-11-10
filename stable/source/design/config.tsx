@@ -1,10 +1,10 @@
-// Module ID: 7163
-// Function ID: 7164
+// Module ID: 7205
+// Function ID: 7206
 // Name: config
 // Dependencies: [2]
 // Exports: setDesignConfig
 
-// Module 7163 (config)
+// Module 7205 (config)
 import size from "module_2" /* 2 */;
 
 const designConfig = {
@@ -15,6 +15,6 @@ const designConfig = {
 const result = size.fileFinishedImporting("design/config.tsx");
 
 export { designConfig };
-export const setDesignConfig = function setDesignConfig(arg0) {
+export function setDesignConfig(arg0) {
   const merged = Object.assign(obj, arg0);
-};
+}

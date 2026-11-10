@@ -1,21 +1,21 @@
-// Module ID: 18788
-// Function ID: 18789
+// Module ID: 19402
+// Function ID: 19403
 // Name: VoicePermissionManager
-// Dependencies: [6718, 5663, 502, 4855, 2014, 5746, 1087, 7900, 7917, 18789, 6028, 7246, 2]
+// Dependencies: [6757, 5680, 502, 4863, 2006, 5764, 1072, 7940, 7957, 19403, 6048, 7287, 2]
 // Exports: shouldImmediatelyRequestVoicePermissions
 
-// Module 18788 (VoicePermissionManager)
-import Constants from "Constants" /* 1087 */;
-import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 6028 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 7900 */;
-import NativePermissionUtilsDefault from "NativePermissionUtils" /* 7917 */;
-import StageChannelRoleStore from "StageChannelRoleStore" /* 6718 */;
-import VoiceStateRecord from "VoiceStateRecord" /* 5663 */;
+// Module 19402 (VoicePermissionManager)
+import Constants from "Constants" /* 1072 */;
+import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 6048 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 7940 */;
+import NativePermissionUtilsDefault from "NativePermissionUtils" /* 7957 */;
+import StageChannelRoleStore from "StageChannelRoleStore" /* 6757 */;
+import VoiceStateRecord from "VoiceStateRecord" /* 5680 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4855 */;
-import MediaEngineStore from "MediaEngineStore" /* 2014 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5746 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7246 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import MediaEngineStore from "MediaEngineStore" /* 2006 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5764 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7287 */;
 import size from "module_2" /* 2 */;
 
 const InputModes = Constants.InputModes;
@@ -41,7 +41,7 @@ class VoicePermissionManager extends AutomaticLifecycleManager {
     voiceStates = voiceStates.voiceStates;
     const item = voiceStates.forEach(function(item) {
       let userId;
-      const f137931 = (result) => {
+      const f117730 = (result) => {
         const tmp = result;
         if (tmp) {
           closure_1_1(closure_1_2[9])(true);
@@ -64,7 +64,7 @@ class VoicePermissionManager extends AutomaticLifecycleManager {
               if (isSpeakerResult) {
                 const obj4 = NativePermissionUtilsDefault;
                 const permission = obj4.requestPermission(constants2.AUDIO);
-                permission.then(f137931);
+                permission.then(f117730);
                 const tmp17 = importDefault;
                 const tmp18 = dependencyMap;
                 const tmp19 = constants2;
@@ -81,7 +81,7 @@ class VoicePermissionManager extends AutomaticLifecycleManager {
                 if (audienceRequestToSpeakState === useAudienceRequestToSpeakState.RequestToSpeakStates.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK) {
                   const obj2 = NativePermissionUtilsDefault;
                   const permission2 = obj2.requestPermission(constants2.AUDIO);
-                  permission2.then(f137931);
+                  permission2.then(f117730);
                   const tmp11 = importDefault;
                   const tmp12 = constants2;
                   if (MediaEngineStore.getMode() === constants.PUSH_TO_TALK) {
@@ -102,7 +102,7 @@ const voicePermissionManager = new VoicePermissionManager();
 const result = size.fileFinishedImporting("modules/voice_calls/VoicePermissionManager.tsx");
 
 export default voicePermissionManager;
-export const shouldImmediatelyRequestVoicePermissions = function shouldImmediatelyRequestVoicePermissions(id, id2) {
+export function shouldImmediatelyRequestVoicePermissions(id, id2) {
   const channel = ChannelStore.getChannel(id2);
   let isListenModeCapableResult;
   if (channel != null) {
@@ -113,4 +113,4 @@ export const shouldImmediatelyRequestVoicePermissions = function shouldImmediate
     isSpeakerResult = StageChannelRoleStore.isSpeaker(id, id2);
   }
   return isSpeakerResult;
-};
+}

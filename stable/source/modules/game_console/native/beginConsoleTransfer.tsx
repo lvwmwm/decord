@@ -1,13 +1,13 @@
-// Module ID: 11683
-// Function ID: 11684
+// Module ID: 11978
+// Function ID: 11979
 // Name: beginConsoleTransfer
-// Dependencies: [5, 1087, 11684, 11686, 5242, 11693, 2002, 1275, 11696, 2]
+// Dependencies: [5, 1072, 11979, 11981, 5258, 11988, 1994, 1260, 11991, 2]
 // Exports: beginConsoleTransfer
 
-// Module 11683 (beginConsoleTransfer)
-import Constants from "Constants" /* 1087 */;
-import GameConsoleActionCreators from "GameConsoleActionCreators" /* 11684 */;
-import transferToXboxDefault from "transferToXbox" /* 11696 */;
+// Module 11978 (beginConsoleTransfer)
+import Constants from "Constants" /* 1072 */;
+import GameConsoleActionCreators from "GameConsoleActionCreators" /* 11979 */;
+import transferToXboxDefault from "transferToXbox" /* 11991 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ let obj = function _beginConsoleTransfer() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -92,7 +92,7 @@ let obj = function _beginConsoleTransfer() {
             return { value, done: true };
           }
           c5 = 3;
-          return { value: "IconComponent", done: "+352" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp35) {
           c5 = 3;
           throw tmp35;
@@ -107,6 +107,6 @@ const items = [, ];
 const set = new Set(items);
 const result = size.fileFinishedImporting("modules/game_console/native/beginConsoleTransfer.tsx");
 
-export const beginConsoleTransfer = function beginConsoleTransfer() {
+export function beginConsoleTransfer() {
   return obj(...arguments);
-};
+}

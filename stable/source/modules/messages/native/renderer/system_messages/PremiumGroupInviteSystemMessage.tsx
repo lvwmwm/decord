@@ -1,26 +1,26 @@
-// Module ID: 8449
-// Function ID: 8450
+// Module ID: 8514
+// Function ID: 8515
 // Name: PremiumGroupInviteSystemMessage
-// Dependencies: [502, 4855, 5003, 587, 8450, 8354, 8309, 8454, 2]
+// Dependencies: [502, 4863, 5014, 575, 8515, 8422, 8396, 8519, 2]
 // Exports: createPremiumGroupInviteSystemMessage
 
-// Module 8449 (PremiumGroupInviteSystemMessage)
-import nativeDefault from "native" /* 587 */;
-import createCommonMessageDefault from "createCommonMessage" /* 8354 */;
-import PremiumGroupInviteEmbed from "PremiumGroupInviteEmbed" /* 8450 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8454 */;
+// Module 8514 (PremiumGroupInviteSystemMessage)
+import nativeDefault from "native" /* 575 */;
+import createCommonMessageDefault from "createCommonMessage" /* 8422 */;
+import PremiumGroupInviteEmbed from "PremiumGroupInviteEmbed" /* 8515 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8519 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4855 */;
-import createStyles from "createStyles" /* 5003 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let tmp3;
-const renderer_EmbedUtils = tmp3(8309);
+const renderer_EmbedUtils = tmp3(8396);
 let obj = { iconTintColor: nativeDefault.colors.ICON_STRONG, iconDividerColor: nativeDefault.colors.ICON_STRONG };
 let closure_5 = createStyles.createNativeStyleProperties(obj);
 const result = size.fileFinishedImporting("modules/messages/native/renderer/system_messages/PremiumGroupInviteSystemMessage.tsx");
 
-export const createPremiumGroupInviteSystemMessage = function createPremiumGroupInviteSystemMessage(message) {
+export function createPremiumGroupInviteSystemMessage(message) {
   let theme;
   let tmp3Result;
   ({ message, theme } = message);
@@ -38,4 +38,4 @@ export const createPremiumGroupInviteSystemMessage = function createPremiumGroup
     tmp3Result = renderer_EmbedUtils;
     return obj3;
   }
-};
+}

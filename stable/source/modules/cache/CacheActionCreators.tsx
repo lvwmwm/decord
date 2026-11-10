@@ -1,14 +1,14 @@
-// Module ID: 16967
-// Function ID: 16968
+// Module ID: 17566
+// Function ID: 17567
 // Name: CacheActionCreators
-// Dependencies: [5, 4855, 7617, 584, 2]
+// Dependencies: [5, 4863, 7655, 572, 2]
 // Exports: clearCaches, writeCaches
 
-// Module 16967 (CacheActionCreators)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import ChannelStore from "ChannelStore" /* 4855 */;
+// Module 17566 (CacheActionCreators)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import CacheStore from "CacheStore" /* 7617 */;
+import CacheStore from "CacheStore" /* 7655 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -58,23 +58,23 @@ let obj = function _writeCaches() {
       obj = { value, done: true };
       return obj;
     }
-    await "IconComponent";
+    await "HermesInternal";
     promisesToWaitOn = tmp;
     flag = closure_0;
     if (closure_0 === undefined) {
       flag = false;
     }
-    return "Reflect";
+    return "flexDirection";
   });
   return obj(...arguments);
 };
 const ChannelLoader = ChannelStore.ChannelLoader;
 const result = size.fileFinishedImporting("modules/cache/CacheActionCreators.tsx");
 
-export const writeCaches = function writeCaches() {
+export function writeCaches() {
   return obj(...arguments);
-};
-export const clearCaches = function clearCaches() {
+}
+export function clearCaches() {
   obj = DispatcherDefault;
   obj.dispatch({ type: "CLEAR_CACHES", reason: "Requested by user", preventWritingCachesAgainThisSession: true, resetSocket: true });
-};
+}

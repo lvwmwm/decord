@@ -1,19 +1,19 @@
-// Module ID: 19299
-// Function ID: 19300
+// Module ID: 19927
+// Function ID: 19928
 // Name: CreatorMonetizationAcceptTermCheckboxText
-// Dependencies: [1087, 1128, 2067, 2]
+// Dependencies: [1072, 1113, 2061, 2]
 // Exports: getCreatorMonetizationAcceptTermsCheckboxText
 
-// Module 19299 (CreatorMonetizationAcceptTermCheckboxText)
-import Constants from "Constants" /* 1087 */;
-import intl2 from "intl" /* 1128 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2067 */;
+// Module 19927 (CreatorMonetizationAcceptTermCheckboxText)
+import Constants from "Constants" /* 1072 */;
+import intl2 from "intl" /* 1113 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2061 */;
 import size from "module_2" /* 2 */;
 
 const HelpdeskArticles = Constants.HelpdeskArticles;
 const result = size.fileFinishedImporting("modules/creator_monetization_eligibility/guild_settings/CreatorMonetizationAcceptTermCheckboxText.tsx");
 
-export const getCreatorMonetizationAcceptTermsCheckboxText = function getCreatorMonetizationAcceptTermsCheckboxText() {
+export function getCreatorMonetizationAcceptTermsCheckboxText() {
   let obj2;
   let obj3;
   const intl = intl2.intl;
@@ -23,4 +23,4 @@ export const getCreatorMonetizationAcceptTermsCheckboxText = function getCreator
   obj2 = HelpdeskUtilsDefault;
   obj3 = HelpdeskUtilsDefault;
   return format(prop, obj);
-};
+}
