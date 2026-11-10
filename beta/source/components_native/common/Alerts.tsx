@@ -300,7 +300,7 @@ function renderAlertItem(arg0, item, transitionState, cleanUp) {
   const obj = { item, transitionState, cleanUp };
   return authStore2(AlertWrapper, obj, arg0);
 }
-let closure_23 = Object.freeze({ renderAlert: "Array", renderKey: "channel", props: "c" });
+let closure_23 = Object.freeze({ renderAlert: "Array", renderKey: "channel", props: "keys" });
 const memoResult = react.memo(function Alerts() {
   let alertDismissable;
   let ref;
@@ -336,7 +336,7 @@ const memoResult = react.memo(function Alerts() {
           return <component />;
         };
       } else {
-        return { renderAlert: "Array", renderKey: "channel", props: "c" };
+        return { renderAlert: "Array", renderKey: "channel", props: "keys" };
       }
     }
   });

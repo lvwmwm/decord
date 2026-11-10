@@ -10,85 +10,27 @@ import _mod14706 from "module_14706" /* 14706 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_native from "react-native" /* 17 */;
 
-let c5, c6;
-
 let NativeModules;
 let RNIapModule;
 let c2;
 let c3;
 ({ Linking: c2, NativeModules } = react_native);
 ({ RNIapModule: c3, RNIapModule } = NativeModules);
-_asyncToGenerator(async (arg0, value) => {
+_asyncToGenerator(async (arg0) => {
+  let c5;
+  let c6;
+  let closure_4;
   let openURL;
   closure_0 = arg0;
-  if (c6 === 2) {
-    c6 = 3;
-    throw new TypeError("Generator functions may not be called on executing generators");
-  } else if (tmp3 === 3) {
-    if (arg0 === 1) {
-      throw value;
-    } else if (arg0 === 2) {
-      const obj2 = { value, done: true };
-      return obj2;
-    } else {
-      return { value: "HermesInternal", done: null };
-    }
-  } else {
-    try {
-      let packageName;
-      let sku;
-      c6 = 2;
-      if (0 === c5) {
-        if (arg0 === 1) {
-          c6 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c6 = 3;
-          const obj4 = { value, done: true };
-          return obj4;
-        } else {
-          packageName = tmp4;
-          let closure_4 = tmp;
-          sku = closure_0.sku;
-          c5 = 1;
-          c6 = 1;
-          return { value: "flexDirection", done: true };
-        }
-      } else if (1 === c5) {
-        if (arg0 === 1) {
-          c6 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c6 = 3;
-          const obj5 = { value, done: true };
-          return obj5;
-        } else {
-          const obj3 = closure_0(openURL[3]);
-          const result = obj3.checkNativeAndroidAvailable();
-          openURL = openURL.openURL;
-          c5 = 2;
-          c6 = 1;
-          const obj6 = { value: packageName.getPackageName(), done: false };
-          return obj6;
-        }
-      } else if (arg0 === 1) {
-        c6 = 3;
-        throw value;
-      } else if (arg0 === 2) {
-        c6 = 3;
-        const obj7 = { value, done: true };
-        return obj7;
-      } else {
-        const _HermesInternal = HermesInternal;
-        c6 = 3;
-        const obj = { value: openURL("https://play.google.com/store/account/subscriptions?package=" + value + "&sku=" + sku), done: true };
-        return obj;
-      }
-    } catch (tmp17) {
-      c6 = 3;
-      throw tmp17;
-    }
-  }
+  const packageName = tmp4;
+  const sku = closure_0.sku;
+  await "flexDirection";
+  const obj3 = closure_0(openURL[3]);
+  const result = obj3.checkNativeAndroidAvailable();
+  openURL = openURL.openURL;
+  await packageName.getPackageName();
+  const _HermesInternal = HermesInternal;
+  return openURL("https://play.google.com/store/account/subscriptions?package=" + arg1 + "&sku=" + sku);
 });
 let closure_0 = _asyncToGenerator(async function(arg0, value) {
   let c0;
@@ -132,7 +74,7 @@ let closure_0 = _asyncToGenerator(async function(arg0, value) {
           closure_6 = undefined;
           c2 = 1;
           c3 = 1;
-          return { value: "flexDirection", done: true };
+          return { value: "flexDirection", done: null };
         }
       } else if (1 === tmp4) {
         if (arg0 === 1) {

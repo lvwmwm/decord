@@ -34,12 +34,10 @@ import PlatformUtils from "PlatformUtils" /* 1377 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, activeAudioDevice, importDefault;
+let _require, activeAudioDevice, c4, c5, importDefault;
 
 let obj = function _handleToggleVideo() {
   obj = _asyncToGenerator(async (arg0, value) => {
-    let c3;
-    let flag3;
     let formatToPlainString;
     let intl;
     let obj6;
@@ -47,62 +45,107 @@ let obj = function _handleToggleVideo() {
     let x9mtl4;
     let closure_0 = arg0;
     let closure_1 = value;
-    if (1 === tmp4) {
+    if (c5 === 2) {
+      c5 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp3 === 3) {
       if (arg0 === 1) {
-        let c5 = 3;
         throw value;
       } else if (arg0 === 2) {
-        c5 = 3;
-        const obj4 = { value, done: true };
-        return obj4;
+        const obj2 = { value, done: true };
+        return obj2;
       } else {
-        let closure_2 = closure_131_10.isVideoEnabled();
-        const obj11 = closure_131_0(closure_131_3[12]);
-        const channelVideoLimit = obj11.getChannelVideoLimit(closure_0);
-        const reachedLimit = channelVideoLimit.reachedLimit;
-        const limit = channelVideoLimit.limit;
-        if (reachedLimit) {
-          const tmp15 = flag3;
-          if (tmp15) {
-            const obj5 = { title: intl.string(closure_131_0(closure_131_3[14]).t["3ffmE+"]), body: formatToPlainString(x9mtl4, obj6) };
-            const show = closure_131_1(closure_131_3[13]).show;
-            const tmp19 = closure_131_1(closure_131_3[13]);
-            intl = closure_131_0(closure_131_3[14]).intl;
-            const intl2 = closure_131_0(closure_131_3[14]).intl;
-            formatToPlainString = intl2.formatToPlainString;
-            obj6 = { limit: limit.toString() };
-            x9mtl4 = closure_131_0(closure_131_3[14]).t.x9mtl4;
-            show(obj5);
-          }
-        } else if (closure_2) {
-          const tmp11Result = closure_131_1(closure_131_3[16]);
-          tmp11Result.setVideoEnabled(false);
-        } else {
-          let c4 = 2;
-          c5 = 1;
-          const obj7 = { value: tmp11Result2.requestPermission(closure_131_15.CAMERA), done: false };
-          tmp11Result2 = closure_131_1(closure_131_3[15]);
-          return obj7;
-        }
+        return { value: "HermesInternal", done: null };
       }
-    } else if (arg0 === 1) {
-      c5 = 3;
-      throw value;
-    } else if (arg0 === 2) {
-      c5 = 3;
-      const obj8 = { value, done: true };
-      return obj8;
-    } else if (value) {
-      obj = closure_131_1(closure_131_3[16]);
-      obj.setVideoEnabled(true);
+    } else {
+      try {
+        let closure_2;
+        let flag3;
+        let channelVideoLimit;
+        let reachedLimit;
+        let limit;
+        c5 = 2;
+        if (0 === c4) {
+          if (arg0 === 1) {
+            c5 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c5 = 3;
+            const obj3 = { value, done: true };
+            return obj3;
+          } else {
+            let c3 = 0;
+            closure_2 = tmp;
+            flag3 = closure_1;
+            if (closure_1 === undefined) {
+              flag3 = true;
+            }
+            closure_2 = undefined;
+            channelVideoLimit = undefined;
+            reachedLimit = undefined;
+            limit = undefined;
+            c4 = 1;
+            c5 = 1;
+            return { value: "flexDirection", done: null };
+          }
+        } else {
+          if (1 === tmp4) {
+            if (arg0 === 1) {
+              c5 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c5 = 3;
+              const obj4 = { value, done: true };
+              return obj4;
+            } else {
+              closure_2 = closure_131_10.isVideoEnabled();
+              const obj11 = closure_131_0(closure_131_3[12]);
+              channelVideoLimit = obj11.getChannelVideoLimit(closure_0);
+              reachedLimit = channelVideoLimit.reachedLimit;
+              limit = channelVideoLimit.limit;
+              if (reachedLimit) {
+                const tmp15 = flag3;
+                if (tmp15) {
+                  const obj5 = { title: intl.string(closure_131_0(closure_131_3[14]).t["3ffmE+"]), body: formatToPlainString(x9mtl4, obj6) };
+                  const show = closure_131_1(closure_131_3[13]).show;
+                  const tmp19 = closure_131_1(closure_131_3[13]);
+                  intl = closure_131_0(closure_131_3[14]).intl;
+                  const intl2 = closure_131_0(closure_131_3[14]).intl;
+                  formatToPlainString = intl2.formatToPlainString;
+                  obj6 = { limit: limit.toString() };
+                  x9mtl4 = closure_131_0(closure_131_3[14]).t.x9mtl4;
+                  show(obj5);
+                }
+              } else if (closure_2) {
+                const tmp11Result = closure_131_1(closure_131_3[16]);
+                tmp11Result.setVideoEnabled(false);
+              } else {
+                c4 = 2;
+                c5 = 1;
+                const obj7 = { value: tmp11Result2.requestPermission(closure_131_15.CAMERA), done: false };
+                tmp11Result2 = closure_131_1(closure_131_3[15]);
+                return obj7;
+              }
+            }
+          } else if (arg0 === 1) {
+            c5 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c5 = 3;
+            const obj8 = { value, done: true };
+            return obj8;
+          } else if (value) {
+            obj = closure_131_1(closure_131_3[16]);
+            obj.setVideoEnabled(true);
+          }
+          c5 = 3;
+          return { value: "HermesInternal", done: null };
+        }
+      } catch (tmp31) {
+        c5 = 3;
+        throw tmp31;
+      }
     }
-    await "HermesInternal";
-    closure_2 = tmp;
-    flag3 = closure_1;
-    if (closure_1 === undefined) {
-      flag3 = true;
-    }
-    return "flexDirection";
   });
   return obj(...arguments);
 };

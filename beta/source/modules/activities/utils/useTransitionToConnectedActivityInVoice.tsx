@@ -61,7 +61,7 @@ export default function useTransitionToConnectedActivityInVoice(onTransition) {
                   guild_id = undefined;
                   c3 = 1;
                   c4 = 1;
-                  return { value: "flexDirection", done: true };
+                  return { value: "flexDirection", done: null };
                 }
               } else {
                 if (1 === c3) {

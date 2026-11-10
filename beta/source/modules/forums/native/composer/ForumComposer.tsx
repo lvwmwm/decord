@@ -52,7 +52,7 @@ import size_mod from "module_2" /* 2 */;
 const require = globalThis.__r;
 const DraftStore = DraftStore2;
 const SlowmodeStore = SlowmodeStore2;
-let _require, c2, c3, c5, closure_1, errors, maxLength, set;
+let _require, c2, c3, c5, c6, closure_3, errors, maxLength, set;
 
 let Fonts;
 let StyleSheet;
@@ -759,142 +759,188 @@ export default function ForumComposer(parentChannel) {
   const useCallback2 = obj.useCallback;
   _require = tmp44(function*(arg0, value) {
     let closure_2;
-    let stickerId;
     closure_0 = arg0;
-    if (1 === c5) {
+    if (c6 === 2) {
+      c6 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp3 === 3) {
       if (arg0 === 1) {
-        let c6 = 3;
         throw value;
       } else if (arg0 === 2) {
-        c6 = 3;
-        const obj7 = { value, done: true };
-        return obj7;
+        const obj2 = { value, done: true };
+        return obj2;
       } else {
-        let tmp71;
-        if (closure_0.hasFlag(constants2.REQUIRE_TAG)) {
-          if (0 === length.length) {
-            const obj8 = closure_0(threadSettingsDraft[41]);
-            closure_1_22(obj8.makeEmptyTagsError());
-          }
-        }
-        closure_1_13(true);
-        const parse = thread(threadSettingsDraft[29]).parse;
-        const tmp68 = thread(threadSettingsDraft[29]);
-        if (c5) {
-          tmp71 = closure_1;
-        } else {
-          tmp71 = closure_0;
-        }
-        const content = parse(tmp71, str4).content;
-        let c4 = 2;
-        constants(null);
-        closure_1_22(null);
-        if (c5) {
-          c5 = 4;
-          c6 = 1;
-          const obj9 = { value: callback4(content), done: false };
-          return obj9;
-        } else {
-          let tmp87;
-          const tmp84 = onPressSticker;
-          const tmp85 = content;
-          if (null != stickerId) {
-            const items = [stickerId];
-            tmp87 = items;
-          }
-          c5 = 5;
-          c6 = 1;
-          const obj10 = { value: tmp84(tmp85, tmp87, stateFromStores5), done: false };
-          return obj10;
-        }
+        return { value: "HermesInternal", done: null };
       }
-    } else if (2 === c5) {
-      c4 = 0;
-      closure_1_13(false);
-      throw closure_3;
     } else {
-      if (3 === c5) {
-        c4 = 1;
-        const tmp = closure_3;
-        const body = tmp.body;
-        let code;
-        if (body != null) {
-          code = body.code;
-        }
-        if (null != code) {
-          const body3 = tmp.body;
-          let code1;
-          if (body3 != null) {
-            code1 = body3.code;
-          }
-          if (code1 === constants.AUTOMOD_TITLE_BLOCKED) {
-            const obj5 = closure_0(threadSettingsDraft[41]);
-            constants(obj5.makeAutomodViolationError(tmp.body, closure_0));
-          } else {
-            const body4 = tmp.body;
-            let code2;
-            if (body4 != null) {
-              code2 = body4.code;
-            }
-            if (code2 === constants.AUTOMOD_MESSAGE_BLOCKED) {
-              const obj4 = closure_0(threadSettingsDraft[41]);
-              closure_1_22(obj4.makeAutomodViolationError(tmp.body, closure_0));
-            } else {
-              const body5 = tmp.body;
-              let code3;
-              if (body5 != null) {
-                code3 = body5.code;
-              }
-              let tmp25 = code3 === constants.INVALID_FORM_BODY;
-              if (tmp25) {
-                const body2 = tmp.body;
-                let name;
-                if (body2 != null) {
-                  errors = body2.errors;
-                  if (errors != null) {
-                    name = errors.name;
-                  }
-                }
-                tmp25 = null != name;
-              }
-              if (tmp25) {
-                const obj3 = closure_0(threadSettingsDraft[41]);
-                constants(obj3.makeApiNameValidationError());
-              }
-            }
-          }
-        }
-      } else {
-        if (4 === c5) {
+      let c4;
+      try {
+        let closure_1;
+        let stickerId;
+        let content;
+        c6 = 2;
+        if (0 === c5) {
           if (arg0 === 1) {
             c6 = 3;
             throw value;
           } else if (arg0 === 2) {
+            c6 = 3;
+            const obj6 = { value, done: true };
+            return obj6;
+          } else {
+            closure_1 = tmp4;
+            stickerId = closure_0.stickerId;
+            content = undefined;
+            c5 = 1;
+            c6 = 1;
+            return { value: "flexDirection", done: null };
+          }
+        } else {
+          if (1 === c5) {
+            if (arg0 === 1) {
+              c6 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c6 = 3;
+              const obj7 = { value, done: true };
+              return obj7;
+            } else {
+              let tmp71;
+              if (closure_0.hasFlag(constants2.REQUIRE_TAG)) {
+                if (0 === length.length) {
+                  const obj8 = closure_0(threadSettingsDraft[41]);
+                  closure_1_22(obj8.makeEmptyTagsError());
+                }
+              }
+              closure_1_13(true);
+              const parse = thread(threadSettingsDraft[29]).parse;
+              const tmp68 = thread(threadSettingsDraft[29]);
+              if (c5) {
+                tmp71 = closure_1;
+              } else {
+                tmp71 = closure_0;
+              }
+              content = parse(tmp71, str4).content;
+              c4 = 2;
+              constants(null);
+              closure_1_22(null);
+              if (c5) {
+                c5 = 4;
+                c6 = 1;
+                const obj9 = { value: callback4(content), done: false };
+                return obj9;
+              } else {
+                let tmp87;
+                const tmp84 = onPressSticker;
+                const tmp85 = content;
+                if (null != stickerId) {
+                  const items = [stickerId];
+                  tmp87 = items;
+                }
+                c5 = 5;
+                c6 = 1;
+                const obj10 = { value: tmp84(tmp85, tmp87, stateFromStores5), done: false };
+                return obj10;
+              }
+            }
+          } else if (2 === c5) {
             c4 = 0;
             closure_1_13(false);
-            c6 = 3;
-            const obj11 = { value, done: true };
-            return obj11;
+            throw closure_3;
+          } else {
+            if (3 === c5) {
+              c4 = 1;
+              const tmp = closure_3;
+              const body = tmp.body;
+              let code;
+              if (body != null) {
+                code = body.code;
+              }
+              if (null != code) {
+                const body3 = tmp.body;
+                let code1;
+                if (body3 != null) {
+                  code1 = body3.code;
+                }
+                if (code1 === constants.AUTOMOD_TITLE_BLOCKED) {
+                  const obj5 = closure_0(threadSettingsDraft[41]);
+                  constants(obj5.makeAutomodViolationError(tmp.body, closure_0));
+                } else {
+                  const body4 = tmp.body;
+                  let code2;
+                  if (body4 != null) {
+                    code2 = body4.code;
+                  }
+                  if (code2 === constants.AUTOMOD_MESSAGE_BLOCKED) {
+                    const obj4 = closure_0(threadSettingsDraft[41]);
+                    closure_1_22(obj4.makeAutomodViolationError(tmp.body, closure_0));
+                  } else {
+                    const body5 = tmp.body;
+                    let code3;
+                    if (body5 != null) {
+                      code3 = body5.code;
+                    }
+                    let tmp25 = code3 === constants.INVALID_FORM_BODY;
+                    if (tmp25) {
+                      const body2 = tmp.body;
+                      let name;
+                      if (body2 != null) {
+                        errors = body2.errors;
+                        if (errors != null) {
+                          name = errors.name;
+                        }
+                      }
+                      tmp25 = null != name;
+                    }
+                    if (tmp25) {
+                      const obj3 = closure_0(threadSettingsDraft[41]);
+                      constants(obj3.makeApiNameValidationError());
+                    }
+                  }
+                }
+              }
+            } else {
+              if (4 === c5) {
+                if (arg0 === 1) {
+                  c6 = 3;
+                  throw value;
+                } else if (arg0 === 2) {
+                  c4 = 0;
+                  closure_1_13(false);
+                  c6 = 3;
+                  const obj11 = { value, done: true };
+                  return obj11;
+                }
+              } else if (arg0 === 1) {
+                c6 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c4 = 0;
+                closure_1_13(false);
+                c6 = 3;
+                const obj = { value, done: true };
+                return obj;
+              }
+              c4 = 1;
+            }
+            c4 = 0;
+            closure_1_13(false);
           }
-        } else if (arg0 === 1) {
           c6 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c4 = 0;
-          closure_1_13(false);
-          c6 = 3;
-          const obj = { value, done: true };
-          return obj;
+          return { value: "HermesInternal", done: null };
         }
-        c4 = 1;
+      } catch (tmp100) {
+        closure_3 = tmp100;
+        if (0 === c4) {
+          c6 = 3;
+          throw tmp100;
+        } else if (1 === tmp102) {
+          c5 = 2;
+        } else {
+          c5 = 3;
+        }
       }
-      c4 = 0;
-      closure_1_13(false);
     }
-    yield "HermesInternal";
-    closure_1 = tmp4;
-    stickerId = closure_0.stickerId;
-    return "flexDirection";
   });
   const items15 = [parentChannel, first1.length, isEdit, thread, str4, callback4, createForumPost, stateFromStores5];
   callback21 = useCallback2(function() {

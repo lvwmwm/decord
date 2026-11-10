@@ -22,6 +22,8 @@ import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
+let c5, c6;
+
 let metroImportAll;
 let metroImportDefault;
 let obj2;
@@ -59,40 +61,98 @@ export default function TwoFASetupSuccess() {
   const callback = react.useCallback(() => {
     let setRegistering = function _onRegisterSuccess() {
       let obj = _asyncToGenerator(async (arg0, value) => {
+        let body;
         let c0;
         let c1;
-        let closure_2;
         let obj;
         let closure_0 = arg0;
-        const finishRegisterWebAuthnCredential = setRegistering(closure_2_2[7]).finishRegisterWebAuthnCredential;
-        const tmp24 = setRegistering(closure_2_2[7]);
-        const intl = setRegistering(closure_2_2[8]).intl;
-        await finishRegisterWebAuthnCredential(intl.string(setRegistering(closure_2_2[8]).t["8H5RmH"]), c0, c1);
-        if (2 === c5) {
-          let c4 = 0;
-          obj(body.body.message);
-        } else if (arg0 === 1) {
-          let c6 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c4 = 0;
+        if (c6 === 2) {
           c6 = 3;
-          const obj6 = { value, done: true };
-          return obj6;
+          throw new TypeError("Generator functions may not be called on executing generators");
+        } else if (tmp3 === 3) {
+          if (arg0 === 1) {
+            throw value;
+          } else if (arg0 === 2) {
+            const obj2 = { value, done: true };
+            return obj2;
+          } else {
+            return { value: "HermesInternal", done: null };
+          }
         } else {
-          obj = setError(closure_2_2[9]);
-          obj.close();
-          c4 = 0;
+          let c4;
+          try {
+            c6 = 2;
+            if (0 === c5) {
+              if (arg0 === 1) {
+                c6 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c6 = 3;
+                const obj3 = { value, done: true };
+                return obj3;
+              } else {
+                let closure_2 = tmp;
+                c0 = undefined;
+                c1 = undefined;
+                ({ ticket: c0, credential: c1 } = closure_0);
+                c5 = 1;
+                c6 = 1;
+                return { value: "flexDirection", done: null };
+              }
+            } else if (1 === c5) {
+              if (arg0 === 1) {
+                c6 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c6 = 3;
+                const obj4 = { value, done: true };
+                return obj4;
+              } else {
+                c4 = 1;
+                const finishRegisterWebAuthnCredential = setRegistering(closure_2_2[7]).finishRegisterWebAuthnCredential;
+                const tmp24 = setRegistering(closure_2_2[7]);
+                const intl = setRegistering(closure_2_2[8]).intl;
+                c5 = 3;
+                c6 = 1;
+                const obj5 = { value: finishRegisterWebAuthnCredential(intl.string(setRegistering(closure_2_2[8]).t["8H5RmH"]), c0, c1), done: false };
+                return obj5;
+              }
+            } else {
+              if (2 === c5) {
+                c4 = 0;
+                obj(body.body.message);
+              } else if (arg0 === 1) {
+                c6 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c4 = 0;
+                c6 = 3;
+                const obj6 = { value, done: true };
+                return obj6;
+              } else {
+                obj = setError(closure_2_2[9]);
+                obj.close();
+                c4 = 0;
+              }
+              c6 = 3;
+              return { value: "HermesInternal", done: null };
+            }
+          } catch (tmp14) {
+            body = tmp14;
+            if (0 === c4) {
+              c6 = 3;
+              throw tmp14;
+            } else {
+              c5 = 2;
+            }
+          }
         }
-        await "HermesInternal";
-        ({ ticket: c0, credential: c1 } = closure_0);
-        return "flexDirection";
       });
       return obj(...arguments);
     };
     const tmp = importDefault("");
     setRegistering = NativeCeremoniesDefault;
-    const obj2 = {
+    let obj2 = {
       setRegistering,
       setError: importDefault,
       onRegisterSuccess(arg0) {
@@ -105,14 +165,14 @@ export default function TwoFASetupSuccess() {
   let obj2 = { style: tmp.flex };
   const TwoFASetupModalScreen = TwoFASetupModal.TwoFASetupModalScreen;
   items = [closure_7(View, obj2), , , , , , , ];
-  const obj3 = { source: AssetRegistry, style: tmp.image };
+  let obj3 = { source: AssetRegistry, style: tmp.image };
   const tmp12 = FastImageDefault;
   items[1] = closure_7(tmp12, obj3);
-  const obj4 = { style: tmp.success, variant: "body-lg/semibold", color: "mobile-text-heading-primary", children: intl.string(intl5.t.Awk3Gw) };
+  let obj4 = { style: tmp.success, variant: "body-lg/semibold", color: "mobile-text-heading-primary", children: intl.string(intl5.t.Awk3Gw) };
   const Text = Text_Text.Text;
   intl = intl5.intl;
   items[2] = closure_7(Text, obj4);
-  const obj5 = { style: tmp.successBody, children: intl2.string(intl5.t["0d1bXM"]) };
+  let obj5 = { style: tmp.successBody, children: intl2.string(intl5.t["0d1bXM"]) };
   const LegacyText = native.LegacyText;
   intl2 = intl5.intl;
   items[3] = closure_7(LegacyText, obj5);

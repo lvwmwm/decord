@@ -42,7 +42,7 @@ const ConjureSettingsSheetDefault = ConjureSettingsSheet;
 const ConjureConnectToolSheetDefault = ConjureConnectToolSheet;
 const ConjureHistorySheetDefault = ConjureHistorySheet;
 const ConjureChatMoreSheetDefault = ConjureChatMoreSheet;
-let _require, c3, c4, c6, closure_0, navigation;
+let _require, c3, c4, c6, c7, closure_0, closure_3, closure_4, navigation;
 
 let closure_15;
 let closure_16;
@@ -84,7 +84,6 @@ export default function ConjureChatScene(guildId) {
   let Provider2;
   let _undefined;
   let _undefined2;
-  let closure_3;
   let entryPoint;
   let frameLaunchParams;
   let has_activity;
@@ -807,99 +806,147 @@ export default function ConjureChatScene(guildId) {
     let obj7;
     closure_0 = arg0;
     let closure_1 = value;
-    if (1 === c6) {
-      if (arg0 === 1) {
-        let c7 = 3;
-        throw value;
-      } else if (arg0 === 2) {
-        c7 = 3;
-        const obj5 = { value, done: true };
-        return obj5;
-      } else if (!ref.current) {
-        ref.current = true;
-        const obj6 = { text: intl2.string(projectId(navigation[35]).qqlUiW), icon: closure_0(navigation[52]).UndoIcon };
-        const open = projectId(navigation[51]).open;
-        const tmp40 = projectId(navigation[51]);
-        intl2 = closure_0(navigation[34]).intl;
-        open("CONJURE_VERSION_RESTORING", obj6);
-        let c5 = 2;
-        c6 = 4;
-        c7 = 1;
-        const obj8 = { value: obj7.restoreSourceHistoryEntry(closure_1, closure_0.sha), done: false };
-        obj7 = closure_0(navigation[53]);
-        return obj8;
-      }
-    } else if (2 === c6) {
-      c5 = 0;
-      ref.current = false;
-      throw closure_4;
-    } else if (3 === c6) {
-      const presentError = closure_0(navigation[54]).presentError;
-      const tmp23 = closure_0(navigation[54]);
-      const intl = closure_0(navigation[34]).intl;
-      presentError(intl.string(projectId(navigation[35])["PSdo+w"]));
-      c5 = 0;
-      ref.current = false;
+    if (c7 === 2) {
       c7 = 3;
-      const obj9 = { value: undefined, done: true };
-      return obj9;
-    } else {
-      if (4 === c6) {
-        if (arg0 === 1) {
-          c7 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c5 = 0;
-          ref.current = false;
-          c7 = 3;
-          const obj10 = { value, done: true };
-          return obj10;
-        } else {
-          c5 = 1;
-          const obj11 = { text: formatToPlainString(Z4n6LX, obj13), icon: closure_0(navigation[52]).UndoIcon };
-          const open2 = projectId(navigation[51]).open;
-          const tmp73 = projectId(navigation[51]);
-          const intl3 = closure_0(navigation[34]).intl;
-          formatToPlainString = intl3.formatToPlainString;
-          obj13 = { title: obj15.versionTitle(closure_0.subject).short };
-          Z4n6LX = projectId(navigation[35]).Z4n6LX;
-          obj15 = closure_0(navigation[55]);
-          open2("CONJURE_VERSION_RESTORED", obj11);
-          if (null != c1) {
-            c6 = 5;
-            c7 = 1;
-            const obj14 = { value: obj2.rewindDataAfterVersionRestore(closure_1, c1), done: false };
-            obj2 = closure_0(navigation[56]);
-            return obj14;
-          }
-        }
-      } else if (arg0 === 1) {
-        c7 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp3 === 3) {
+      if (arg0 === 1) {
         throw value;
       } else if (arg0 === 2) {
-        c5 = 0;
-        ref.current = false;
-        c7 = 3;
-        const obj = { value, done: true };
-        return obj;
+        const obj3 = { value, done: true };
+        return obj3;
       } else {
-        let closure_2 = value;
-        if (null != closure_2) {
-          const obj12 = closure_0(navigation[54]);
-          obj12.presentError(closure_2);
+        return { value: "HermesInternal", done: null };
+      }
+    } else {
+      let c5;
+      try {
+        let closure_2;
+        let c1;
+        c7 = 2;
+        if (0 === c6) {
+          if (arg0 === 1) {
+            c7 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c7 = 3;
+            const obj4 = { value, done: true };
+            return obj4;
+          } else {
+            closure_3 = tmp;
+            closure_2 = tmp4;
+            c1 = undefined;
+            let tmp55 = closure_1;
+            if (closure_1 === undefined) {
+              tmp55 = null;
+            }
+            c1 = tmp55;
+            closure_2 = undefined;
+            c6 = 1;
+            c7 = 1;
+            return { value: "flexDirection", done: null };
+          }
+        } else {
+          if (1 === c6) {
+            if (arg0 === 1) {
+              c7 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c7 = 3;
+              const obj5 = { value, done: true };
+              return obj5;
+            } else if (!ref.current) {
+              ref.current = true;
+              const obj6 = { text: intl2.string(projectId(navigation[35]).qqlUiW), icon: closure_0(navigation[52]).UndoIcon };
+              const open = projectId(navigation[51]).open;
+              const tmp40 = projectId(navigation[51]);
+              intl2 = closure_0(navigation[34]).intl;
+              open("CONJURE_VERSION_RESTORING", obj6);
+              c5 = 2;
+              c6 = 4;
+              c7 = 1;
+              const obj8 = { value: obj7.restoreSourceHistoryEntry(closure_1, closure_0.sha), done: false };
+              obj7 = closure_0(navigation[53]);
+              return obj8;
+            }
+          } else if (2 === c6) {
+            c5 = 0;
+            ref.current = false;
+            throw closure_4;
+          } else if (3 === c6) {
+            const presentError = closure_0(navigation[54]).presentError;
+            const tmp23 = closure_0(navigation[54]);
+            const intl = closure_0(navigation[34]).intl;
+            presentError(intl.string(projectId(navigation[35])["PSdo+w"]));
+            c5 = 0;
+            ref.current = false;
+            c7 = 3;
+            const obj9 = { value: undefined, done: true };
+            return obj9;
+          } else {
+            if (4 === c6) {
+              if (arg0 === 1) {
+                c7 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c5 = 0;
+                ref.current = false;
+                c7 = 3;
+                const obj10 = { value, done: true };
+                return obj10;
+              } else {
+                c5 = 1;
+                const obj11 = { text: formatToPlainString(Z4n6LX, obj13), icon: closure_0(navigation[52]).UndoIcon };
+                const open2 = projectId(navigation[51]).open;
+                const tmp73 = projectId(navigation[51]);
+                const intl3 = closure_0(navigation[34]).intl;
+                formatToPlainString = intl3.formatToPlainString;
+                obj13 = { title: obj15.versionTitle(closure_0.subject).short };
+                Z4n6LX = projectId(navigation[35]).Z4n6LX;
+                obj15 = closure_0(navigation[55]);
+                open2("CONJURE_VERSION_RESTORED", obj11);
+                if (null != c1) {
+                  c6 = 5;
+                  c7 = 1;
+                  const obj14 = { value: obj2.rewindDataAfterVersionRestore(closure_1, c1), done: false };
+                  obj2 = closure_0(navigation[56]);
+                  return obj14;
+                }
+              }
+            } else if (arg0 === 1) {
+              c7 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c5 = 0;
+              ref.current = false;
+              c7 = 3;
+              const obj = { value, done: true };
+              return obj;
+            } else {
+              closure_2 = value;
+              if (null != closure_2) {
+                const obj12 = closure_0(navigation[54]);
+                obj12.presentError(closure_2);
+              }
+            }
+            c5 = 0;
+            ref.current = false;
+          }
+          c7 = 3;
+          return { value: "HermesInternal", done: null };
+        }
+      } catch (tmp56) {
+        closure_4 = tmp56;
+        if (0 === c5) {
+          c7 = 3;
+          throw tmp56;
+        } else if (1 === tmp58) {
+          c6 = 2;
+        } else {
+          c6 = 3;
         }
       }
-      c5 = 0;
-      ref.current = false;
     }
-    yield "HermesInternal";
-    closure_2 = tmp4;
-    let tmp55 = closure_1;
-    if (closure_1 === undefined) {
-      tmp55 = null;
-    }
-    c1 = tmp55;
-    return "flexDirection";
   });
   const items30 = [projectId];
   callback5 = useCallback(function() {

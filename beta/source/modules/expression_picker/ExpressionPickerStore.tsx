@@ -198,7 +198,7 @@ export function setShowEmojiPacks(showEmojiPacks) {
   _require = showEmojiPacks;
   let obj = require("react-native");
   obj.batchUpdates(() => {
-    const obj = { showEmojiPacks, showSelectedEmojiPackId: "r" };
+    const obj = { showEmojiPacks, showSelectedEmojiPackId: "Array" };
     return withEqualityFnResult.setState(obj);
   });
 }

@@ -95,7 +95,7 @@ export function useCreateOrReuseGiftOrder(GiftPurchaseButton) {
             country = undefined;
             c5 = 1;
             c6 = 1;
-            return { value: "flexDirection", done: true };
+            return { value: "flexDirection", done: null };
           }
         } else {
           let error;

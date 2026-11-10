@@ -56,7 +56,7 @@ let obj = function _addOrUpdateSavedMessage() {
               BookmarkIcon = undefined;
               text = 1;
               c4 = 1;
-              return { value: "flexDirection", done: true };
+              return { value: "flexDirection", done: null };
             }
           } else if (1 === text) {
             if (arg0 === 1) {
@@ -234,7 +234,7 @@ obj = function _removeSavedMessage() {
             ClockIcon = undefined;
             text = 1;
             c4 = 1;
-            return { value: "flexDirection", done: true };
+            return { value: "flexDirection", done: null };
           }
         } else if (1 === tmp4) {
           if (arg0 === 1) {

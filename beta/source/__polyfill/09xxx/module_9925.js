@@ -2880,7 +2880,7 @@ let fn2 = function v() {
   _classCallCheck(this, fn2);
   this._cursor = 0;
   this._size = 0;
-  this._front = { _elements: [], _next: "r" };
+  this._front = { _elements: [], _next: "Array" };
   this._back = this._front;
   this._cursor = 0;
   this._size = 0;
@@ -2900,8 +2900,8 @@ let items = [
       const _back = this._back;
       let tmp = _back;
       if (16383 === _back._elements.length) {
-        tmp = { _elements: [], _next: "r" };
-        const obj = { _elements: [], _next: "r" };
+        tmp = { _elements: [], _next: "Array" };
+        const obj = { _elements: [], _next: "Array" };
       }
       const _elements = _back._elements;
       _elements.push(arg0);

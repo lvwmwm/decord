@@ -262,7 +262,7 @@ HappeningNowScrollView.displayName = "HappeningNowScrollView";
 const memoResult = react.memo(function HappeningNow(listRef) {
   let intl;
   let loading;
-  let obj6;
+  let obj5;
   let tmp21;
   let tmp31Result;
   listRef = listRef.listRef;
@@ -277,16 +277,16 @@ const memoResult = react.memo(function HappeningNow(listRef) {
   let tmp3 = data;
   let obj = listRef(data[14]);
   const isFocused1 = obj.useIsFocused();
-  let obj2 = { withoutUserCards: "HermesInternal", guildId: "Array", showMultipleActivitiesPerChannel: "r", isFocused: isFocused1 };
-  const tmp7 = _slicedToArray(isFocused1(data[15])(cards, obj2), 2);
+  const tmp7 = _slicedToArray(isFocused1(data[15])(cards, { withoutUserCards: "HermesInternal", guildId: "Array", showMultipleActivitiesPerChannel: "enum", isFocused: isFocused1 }), 2);
   data = tmp7[0];
   const tmp6 = _slicedToArray;
+  let obj2 = ref;
   const tmp9 = isFocused1(data[16]);
   const analyticsLocations = tmp9(isFocused1(data[17]).ACTIVITIES_HAPPENING_NOW).analyticsLocations;
   ref = ref.useRef(0);
-  const obj4 = { data, isFocused: isFocused1, loading: tmp8 };
-  const isFocused = obj4.isFocused;
-  _slicedToArray = ref.useRef(obj4);
+  const obj3 = { data, isFocused: isFocused1, loading: tmp8 };
+  const isFocused = obj3.isFocused;
+  _slicedToArray = ref.useRef(obj3);
   const tmp11 = isFocused1(data[10])(() => {
     const obj = { context: "messages", num_cards: closure_3.current.data.length, max_viewed_card_index: Math.min(ref.current, closure_3.current.data.length), card_types: data.map((item) => closure_1_9[item.kind]) };
     data = closure_3.current.data;
@@ -296,7 +296,7 @@ const memoResult = react.memo(function HappeningNow(listRef) {
   });
   let closure_4 = tmp11;
   const effect = ref.useEffect(() => {
-    closure_3.current = obj4;
+    closure_3.current = obj3;
   });
   const items = [isFocused, tmp11];
   const effect1 = ref.useEffect(() => {
@@ -341,7 +341,7 @@ const memoResult = react.memo(function HappeningNow(listRef) {
     num = sharedValue * findIndexResult;
   }
   const items2 = [findIndexResult, num];
-  const callback = obj3.useCallback((arg0, arg1) => {
+  const callback = obj2.useCallback((arg0, arg1) => {
     let sum1;
     const sum = arg1 + arg0;
     if (sum < num) {
@@ -359,7 +359,7 @@ const memoResult = react.memo(function HappeningNow(listRef) {
     tmp21 = sharedValue;
   }
   const items3 = [data];
-  const memo = obj3.useMemo(() => {
+  const memo = obj2.useMemo(() => {
     const obj = happeningNowRankingUtils;
     const result = obj.filterHappeningNowCards(first);
     const obj2 = happeningNowRankingUtils;
@@ -368,20 +368,20 @@ const memoResult = react.memo(function HappeningNow(listRef) {
   const items4 = [tmp7[1]];
   const tmp2Result = tmp2(tmp3[19]);
   const happeningNowScrollSnapping = tmp2Result.useHappeningNowScrollSnapping(listRef);
-  const callback1 = obj3.useCallback((index) => {
+  const callback1 = obj2.useCallback((index) => {
     const obj = { index: index.index, loading, panelVariant: true };
     return renderCard(index.item, obj);
   }, items4);
   const tmp2Result2 = tmp2(tmp3[20]);
   sharedValue = tmp2Result2.useSharedValue([]);
   const items5 = [sharedValue];
-  callback2 = obj3.useCallback((viewableItems) => {
+  callback2 = obj2.useCallback((viewableItems) => {
     viewableItems = viewableItems.viewableItems;
     const obj = updateSharedValueIfChanged;
     const result = obj.updateSharedValueArrayIfChanged(sharedValue, viewableItems.map((item) => closure_1_18(item.item)));
   }, items5);
   const items6 = [callback2];
-  const memo1 = obj3.useMemo(() => {
+  const memo1 = obj2.useMemo(() => {
     const obj = _mod12;
     return obj.debounce(callback2, 130);
   }, items6);
@@ -393,17 +393,17 @@ const memoResult = react.memo(function HappeningNow(listRef) {
     return tmp30;
   }
   if (tmp7[1]) {
-    const obj5 = { style: tmp.loading, children: renderCard(data.length > 0 ? data[0] : { kind: "placeholder", index: 0 }, obj6) };
-    obj6 = { index: 0, loading: tmp7[1], fullwidth: true, panelVariant: true };
-    tmp31Result = tmp31(num, obj5);
+    const obj4 = { style: tmp.loading, children: renderCard(data.length > 0 ? data[0] : { kind: "placeholder", index: 0 }, obj5) };
+    obj5 = { index: 0, loading: tmp7[1], fullwidth: true, panelVariant: true };
+    tmp31Result = tmp31(num, obj4);
   } else {
     const Provider = context.Provider;
-    const obj7 = { value: sharedValue, children: null };
+    const obj6 = { value: sharedValue, children: null };
     const AnalyticsLocationProvider = tmp2(tmp3[16]).AnalyticsLocationProvider;
     ({ ref: listRef, horizontal: true, renderScrollComponent: HappeningNowScrollView, decelerationRate: "fast", onScroll: first1, maintainVisibleContentPosition, snapToInterval: tmp21, snapToOffsets: happeningNowScrollSnapping, showsHorizontalScrollIndicator: false, accessibilityLabel: intl.string(tmp2(tmp3[24]).t["1+boPi"]), contentContainerStyle: tmp.containerInner, data: memo, renderItem: callback1, onViewableItemsChanged: memo1, keyExtractor, getItemType });
     const FlashList = tmp2(tmp3[23]).FlashList;
     intl = tmp2(tmp3[24]).intl;
-    tmp31Result = tmp31(Provider, obj7);
+    tmp31Result = tmp31(Provider, obj6);
   }
   tmp30 = tmp31Result;
 });

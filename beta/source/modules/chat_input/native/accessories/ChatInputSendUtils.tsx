@@ -343,7 +343,7 @@ let obj = function _chatInputSendApplicationCommand() {
               closure_5 = undefined;
               c3 = 1;
               c4 = 1;
-              return { value: "flexDirection", done: true };
+              return { value: "flexDirection", done: null };
             }
           } else if (1 === c3) {
             if (arg0 === 1) {
@@ -447,7 +447,7 @@ export function chatInputHandleSendText(text) {
               body: checkResult.body,
               confirmText: intl2.string(intl4.t.KJnHq3),
               onConfirm() {
-                          obj = { text: require, parsedMessage, tts: "add", source: 163991.78955268866, params };
+                          obj = { text: require, parsedMessage, tts: "add", source: 18988966404083257000000000000000000000000000000000000000000000000000000000000000000, params };
                           chatInputSendMessage(obj);
                         },
               cancelText: intl3.string(intl4.t.fsBWmS)
@@ -478,7 +478,7 @@ export function chatInputHandleSendText(text) {
             obj5.openLazy(tmp20(2118)(13993, tmp21.paths), "add-media-to-original-forum-post", obj4);
           }
         }
-        const obj6 = { text, parsedMessage: tmp2, tts: "add", source: null, params };
+        const obj6 = { text, parsedMessage: tmp2, tts: "add", source: "isArrayBuffer", params };
         chatInputSendMessage(obj6);
       }
     }

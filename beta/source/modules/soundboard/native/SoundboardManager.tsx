@@ -15,7 +15,7 @@ import SoundboardStore from "SoundboardStore" /* 6191 */;
 import BaseSoundboardManager from "BaseSoundboardManager" /* 16716 */;
 import size from "module_2" /* 2 */;
 
-let closure_2;
+let c5, c6, closure_3;
 
 let map = new Map();
 const tmp3 = new LoggerDefault("SoundboardManagerNative");
@@ -64,38 +64,100 @@ class SoundboardManager extends BaseSoundboardManager {
       let c1;
       let c2;
       let c3;
-      let closure_1;
       closure_0 = arg0;
-      let closure_4 = false;
-      await c0.playWithListener();
-      if (2 === c5) {
-        let c4 = 0;
-        const error = closure_3;
-        const obj7 = { error };
-        logger.error("Failed to play sound", obj7);
-        closure_4 = true;
-      } else if (arg0 === 1) {
-        let c6 = 3;
-        throw value;
-      } else if (arg0 === 2) {
-        c4 = 0;
+      if (c6 === 2) {
         c6 = 3;
-        const obj = { value, done: true };
-        return obj;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          const obj2 = { value, done: true };
+          return obj2;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
       } else {
-        closure_4 = value;
-        c4 = 0;
+        let c4;
+        try {
+          let closure_2;
+          let closure_4;
+          c6 = 2;
+          if (0 === c5) {
+            if (arg0 === 1) {
+              c6 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c6 = 3;
+              const obj4 = { value, done: true };
+              return obj4;
+            } else {
+              closure_2 = tmp;
+              let closure_1 = tmp4;
+              c0 = undefined;
+              c1 = undefined;
+              c2 = undefined;
+              c3 = undefined;
+              ({ sound: c0, soundKey: c1, soundId: c2, userId: c3 } = closure_0);
+              closure_4 = undefined;
+              c5 = 1;
+              c6 = 1;
+              return { value: "flexDirection", done: null };
+            }
+          } else if (1 === c5) {
+            if (arg0 === 1) {
+              c6 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c6 = 3;
+              const obj5 = { value, done: true };
+              return obj5;
+            } else {
+              closure_4 = false;
+              c4 = 1;
+              c5 = 3;
+              c6 = 1;
+              const obj6 = { value: c0.playWithListener(), done: false };
+              return obj6;
+            }
+          } else {
+            if (2 === c5) {
+              c4 = 0;
+              const error = closure_3;
+              const obj7 = { error };
+              logger.error("Failed to play sound", obj7);
+              closure_4 = true;
+            } else if (arg0 === 1) {
+              c6 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c4 = 0;
+              c6 = 3;
+              const obj = { value, done: true };
+              return obj;
+            } else {
+              closure_4 = value;
+              c4 = 0;
+            }
+            const tmp14 = closure_4;
+            if (tmp14) {
+              set.delete(c1);
+              const obj3 = closure_0(closure_2[9]);
+              const result = obj3.reportSoundFinishedPlaying(c2, c3);
+            }
+            c6 = 3;
+            return { value: "HermesInternal", done: null };
+          }
+        } catch (tmp27) {
+          closure_3 = tmp27;
+          if (0 === c4) {
+            c6 = 3;
+            throw tmp27;
+          } else {
+            c5 = 2;
+          }
+        }
       }
-      const tmp14 = closure_4;
-      if (tmp14) {
-        set.delete(c1);
-        const obj3 = closure_0(closure_2[9]);
-        const result = obj3.reportSoundFinishedPlaying(c2, c3);
-      }
-      await "HermesInternal";
-      closure_2 = tmp;
-      ({ sound: c0, soundKey: c1, soundId: c2, userId: c3 } = closure_0);
-      return "flexDirection";
     });
     applyArgumentsResult._playSoundWithListener = function() {
       return closure_0(...arguments);

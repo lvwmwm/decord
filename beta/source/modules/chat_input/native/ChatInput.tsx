@@ -34,7 +34,7 @@ import createStyles from "createStyles" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 const DraftStore = DraftStore2;
-let dependencyMap, set;
+let c4, dependencyMap, set;
 
 let closure_19;
 let closure_20;
@@ -924,48 +924,89 @@ class ChatInput {
         let c1;
         let c2;
         let c3;
-        let closure_1;
-        let closure_2;
         let mimeType;
         let obj2;
         let obj9;
         closure_0 = arg0;
-        if (1 === mimeType) {
+        if (c4 === 2) {
+          c4 = 3;
+          throw new TypeError("Generator functions may not be called on executing generators");
+        } else if (tmp3 === 3) {
           if (arg0 === 1) {
-            let c4 = 3;
             throw value;
           } else if (arg0 === 2) {
-            c4 = 3;
-            const obj5 = { value, done: true };
-            return obj5;
-          } else if (closure_1_20.state.current.focused) {
-            if (closure_1_20.props.current.canUpload) {
-              mimeType = 2;
-              c4 = 1;
-              const obj6 = { value: obj2.getImageDimensionsIfMissing(originalUri, c1, c2), done: false };
-              obj2 = closure_0(closure_2_3[47]);
-              return obj6;
-            }
+            const obj3 = { value, done: true };
+            return obj3;
+          } else {
+            return { value: "HermesInternal", done: null };
           }
-        } else if (arg0 === 1) {
-          c4 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c4 = 3;
-          const obj = { value, done: true };
-          return obj;
         } else {
-          const styles = value;
-          const obj7 = { channelId: closure_1_20.props.current.channel.id, file: size, draftType: ChannelMessage.ChannelMessage };
-          size = { uri: originalUri, originalUri, width: styles.width, height: styles.height, mimeType, platform: closure_0(closure_2_3[49]).UploadPlatform.REACT_NATIVE, id: obj9.v4() };
-          const addFile = screenIndex(closure_2_3[48]).addFile;
-          const tmp23 = screenIndex(closure_2_3[48]);
-          obj9 = closure_0(closure_2_3[50]);
-          addFile(obj7);
+          try {
+            let originalUri;
+            let styles;
+            c4 = 2;
+            if (0 === mimeType) {
+              if (arg0 === 1) {
+                c4 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c4 = 3;
+                const obj4 = { value, done: true };
+                return obj4;
+              } else {
+                let closure_2 = tmp4;
+                let closure_1 = tmp;
+                originalUri = undefined;
+                c1 = undefined;
+                c2 = undefined;
+                ({ url: c0, width: c1, height: c2, type: c3 } = closure_0.nativeEvent);
+                styles = undefined;
+                mimeType = 1;
+                c4 = 1;
+                return { value: "flexDirection", done: null };
+              }
+            } else {
+              if (1 === mimeType) {
+                if (arg0 === 1) {
+                  c4 = 3;
+                  throw value;
+                } else if (arg0 === 2) {
+                  c4 = 3;
+                  const obj5 = { value, done: true };
+                  return obj5;
+                } else if (closure_1_20.state.current.focused) {
+                  if (closure_1_20.props.current.canUpload) {
+                    mimeType = 2;
+                    c4 = 1;
+                    const obj6 = { value: obj2.getImageDimensionsIfMissing(originalUri, c1, c2), done: false };
+                    obj2 = closure_0(closure_2_3[47]);
+                    return obj6;
+                  }
+                }
+              } else if (arg0 === 1) {
+                c4 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c4 = 3;
+                const obj = { value, done: true };
+                return obj;
+              } else {
+                styles = value;
+                const obj7 = { channelId: closure_1_20.props.current.channel.id, file: size, draftType: ChannelMessage.ChannelMessage };
+                size = { uri: originalUri, originalUri, width: styles.width, height: styles.height, mimeType, platform: closure_0(closure_2_3[49]).UploadPlatform.REACT_NATIVE, id: obj9.v4() };
+                const addFile = screenIndex(closure_2_3[48]).addFile;
+                const tmp23 = screenIndex(closure_2_3[48]);
+                obj9 = closure_0(closure_2_3[50]);
+                addFile(obj7);
+              }
+              c4 = 3;
+              return { value: "HermesInternal", done: null };
+            }
+          } catch (tmp15) {
+            c4 = 3;
+            throw tmp15;
+          }
         }
-        yield "HermesInternal";
-        ({ url: c0, width: c1, height: c2, type: c3 } = closure_0.nativeEvent);
-        return "flexDirection";
       });
       return obj;
     }, items17);

@@ -238,7 +238,7 @@ let closure_0 = _asyncToGeneratorDefault((arg0, arg1, arg2) => {
             burstAnimationHash = undefined;
             c6 = 1;
             c7 = 1;
-            return { value: "flexDirection", done: true };
+            return { value: "flexDirection", done: null };
           }
         } else if (arg0 === 1) {
           c7 = 3;

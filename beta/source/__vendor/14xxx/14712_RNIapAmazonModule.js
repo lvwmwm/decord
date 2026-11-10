@@ -55,7 +55,7 @@ _asyncToGenerator(async (arg0, value) => {
           closure_4 = undefined;
           c3 = 1;
           c4 = 1;
-          return { value: "flexDirection", done: true };
+          return { value: "flexDirection", done: null };
         }
       } else if (1 === c3) {
         if (arg0 === 1) {
@@ -131,56 +131,15 @@ _asyncToGenerator(async (arg0, value) => {
   }
 });
 let closure_0 = _asyncToGenerator(async (arg0) => {
+  let closure_1;
   let closure_2;
   let isAmazonDevice = arg0;
   let c3 = 0;
   let c4 = 0;
-  const iter = (async (arg0, value) => {
-    if (c4 === 2) {
-      c4 = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp3 === 3) {
-      if (arg0 === 1) {
-        throw value;
-      } else if (arg0 === 2) {
-        return { value, done: true };
-      } else {
-        return { value: "HermesInternal", done: null };
-      }
-    } else {
-      try {
-        c4 = 2;
-        if (0 === c3) {
-          if (arg0 === 1) {
-            c4 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c4 = 3;
-            return { value, done: true };
-          } else {
-            closure_1 = tmp;
-            isAmazonDevice = undefined;
-            isAmazonDevice = isAmazonDevice.isAmazonDevice;
-            c3 = 1;
-            c4 = 1;
-            return { value: "flexDirection", done: true };
-          }
-        } else if (arg0 === 1) {
-          c4 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c4 = 3;
-          return { value, done: true };
-        } else {
-          c4 = 3;
-          const obj = { value: tmp4.deepLinkToSubscriptions(isAmazonDevice), done: true };
-          return obj;
-        }
-      } catch (tmp10) {
-        c4 = 3;
-        throw tmp10;
-      }
-    }
+  const iter = (async (arg0) => {
+    isAmazonDevice = isAmazonDevice.isAmazonDevice;
+    await "flexDirection";
+    return tmp4.deepLinkToSubscriptions(isAmazonDevice);
   })();
   iter.next();
   return iter;

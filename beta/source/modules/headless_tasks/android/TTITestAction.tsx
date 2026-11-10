@@ -433,7 +433,7 @@ obj = function _setupTTITest() {
               error2 = undefined;
               c6 = 1;
               c7 = 1;
-              return { value: "flexDirection", done: true };
+              return { value: "flexDirection", done: null };
             }
             break;
           }

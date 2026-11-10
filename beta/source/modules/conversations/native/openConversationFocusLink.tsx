@@ -50,7 +50,7 @@ let obj = function _openConversationFocusLink() {
               ({ guildId: c0, channelId: c1, conversationId: c2, messageId: c3 } = closure_0);
               messageId = 1;
               c4 = 1;
-              return { value: "flexDirection", done: true };
+              return { value: "flexDirection", done: null };
             }
           } else if (1 === messageId) {
             if (arg0 === 1) {

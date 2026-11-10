@@ -87,7 +87,7 @@ let obj = function _handleLimitedPickerDialog() {
             ({ onDismissKeyboard: c0, onRestoreKeyboard: c1 } = closure_0);
             c3 = 1;
             c4 = 1;
-            return { value: "flexDirection", done: true };
+            return { value: "flexDirection", done: null };
           }
         } else if (1 === c3) {
           if (arg0 === 1) {
@@ -181,7 +181,7 @@ obj = function _handleAttachFile() {
             closure_7 = undefined;
             v3 = 1;
             v32 = 1;
-            return { value: "flexDirection", done: true };
+            return { value: "flexDirection", done: null };
           }
         } else if (1 === tmp4) {
           if (arg0 === 1) {

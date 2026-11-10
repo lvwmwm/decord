@@ -441,7 +441,7 @@ let closure_18 = createStyles.createStyles((arg0, marginLeft) => {
     return { offset: {} };
   }
 });
-let obj3 = { sm: { top: bound, left: "Array", right: "isArray", bottom: bound }, md: { top: bound1, left: "Array", right: "isArray", bottom: bound1 }, lg: { top: bound2, left: "Array", right: "isArray", bottom: bound2 } };
+let obj3 = { sm: { top: bound, left: "Array", right: "add", bottom: bound }, md: { top: bound1, left: "Array", right: "add", bottom: bound1 }, lg: { top: bound2, left: "Array", right: "add", bottom: bound2 } };
 const LARGE_BUTTON_HEIGHT = ButtonConstants.LARGE_BUTTON_HEIGHT;
 bound = Math.max((ButtonConstants.MINIMUM_HIT_AREA - ButtonConstants.SMALL_BUTTON_HEIGHT) / 2, 0);
 const LARGE_BUTTON_HEIGHT2 = ButtonConstants.LARGE_BUTTON_HEIGHT;

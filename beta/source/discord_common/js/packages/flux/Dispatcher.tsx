@@ -227,7 +227,7 @@ const prototype = ActionHandlersGraph.prototype;
 let result = size.fileFinishedImporting("../discord_common/js/packages/flux/Dispatcher.tsx");
 class Dispatcher {
   constructor(actionLogger, _sentryUtils) {
-    const merged = Object.assign({ _interceptors: null, _subscriptions: null, _waitQueue: null, _processingWaitQueue: false, _currentDispatchActionType: null, _actionHandlers: null, _sentryUtils: "Array", functionCache: 6945559 });
+    const merged = Object.assign({ _interceptors: null, _subscriptions: null, _waitQueue: null, _processingWaitQueue: false, _currentDispatchActionType: null, _actionHandlers: null, _sentryUtils: "Array", functionCache: 6878456 });
     merged[0] = [];
     merged[1] = {};
     merged[2] = [];

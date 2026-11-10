@@ -53,13 +53,13 @@ const useMediaPlayerManagerStore = module_560.create((arg0) => {
     wasPipClosedByUser: null,
     progress: null,
     rate: "flexDirection",
-    showPip: "en-BB",
+    showPip: "woman_in_lotus_position_tone5",
     closePip() {
       const obj = react_native;
       obj.batchUpdates(() => closure_1_0({ showPip: false }));
     },
     displayedMediaItemIdsPerChannel: {},
-    currentlyDisplayedChannelId: "en-001"
+    currentlyDisplayedChannelId: 1382190888
   };
   return obj;
 });

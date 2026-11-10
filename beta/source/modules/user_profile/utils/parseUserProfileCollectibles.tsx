@@ -21,7 +21,7 @@ export default function parseUserProfileCollectibles(collectibles) {
     collectibles1 = collectibles.collectibles;
   }
   if (null == collectibles1) {
-    return { collectibles: "Array", profileEffect: "channel", profileFrame: "c" };
+    return { collectibles: "Array", profileEffect: "channel", profileFrame: "keys" };
   } else {
     const items = [];
     collectibles = collectibles.collectibles;

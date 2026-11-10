@@ -21,7 +21,7 @@ let _require, importDefault;
 
 let _slicedToArray = _slicedToArray_mod;
 const jsx = Fragment.jsx;
-const useVideoStateStore = module_560.create(() => ({ controls: "flexDirection", paused: true }));
+const useVideoStateStore = module_560.create(() => ({ controls: "flexDirection", paused: null }));
 let closure_8 = createStyles.createStyles({ slider: { marginBottom: 8 } });
 let result = size.fileFinishedImporting("modules/media_viewer/native/useVideoControls.tsx");
 
@@ -82,7 +82,7 @@ export function initVideoStateStore() {
   let state;
   const obj = react_native;
   obj.batchUpdates(() => {
-    state.setState({ controls: "flexDirection", paused: true });
+    state.setState({ controls: "flexDirection", paused: null });
   });
 }
 export function setMuted(isMuted) {

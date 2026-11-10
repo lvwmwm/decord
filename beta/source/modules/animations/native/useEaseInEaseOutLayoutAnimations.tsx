@@ -29,7 +29,7 @@ export default function useEaseInEaseOutLayoutAnimations() {
     let easingResult2;
     const obj = PlatformUtils;
     if (obj.isAndroid()) {
-      return { entering: "Array", exiting: "channel", layout: "c" };
+      return { entering: "Array", exiting: "channel", layout: "keys" };
     } else {
       const ReduceMotion = tmp(1652).ReduceMotion;
       const tmp4 = stateFromStores ? ReduceMotion.Always : ReduceMotion.Never;
@@ -63,7 +63,7 @@ export function useTriggeredLayoutTransition() {
     let easingResult2;
     const obj = PlatformUtils;
     if (obj.isAndroid()) {
-      return { entering: "Array", exiting: "channel", layout: "c" };
+      return { entering: "Array", exiting: "channel", layout: "keys" };
     } else {
       const ReduceMotion = tmp(1652).ReduceMotion;
       const tmp4 = stateFromStores ? ReduceMotion.Always : ReduceMotion.Never;

@@ -115,7 +115,7 @@ function Content() {
     previewShape: require("FormImagePicker").PreviewShape.SQUIRCLE,
     previewResizeMode: "cover",
     setImage(icon) {
-      const obj = { icon: icon.uri, unicodeEmoji: "r" };
+      const obj = { icon: icon.uri, unicodeEmoji: "Array" };
       return closure_0(obj);
     },
     disabled: roleSubscriptionSettingsDisabled

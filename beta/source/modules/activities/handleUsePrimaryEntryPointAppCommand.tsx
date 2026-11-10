@@ -162,7 +162,7 @@ obj = function _handleUsePrimaryEntryPointAppCommandInternal() {
               currentUser = undefined;
               analyticsLocations = 1;
               componentId = 1;
-              return { value: "flexDirection", done: true };
+              return { value: "flexDirection", done: null };
             }
           } else {
             let tmp5;

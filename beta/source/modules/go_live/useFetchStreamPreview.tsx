@@ -84,5 +84,5 @@ export default function useFetchStreamPreview(arg0, arg1, arg2) {
     }
     return obj5;
   }
-  obj5 = { previewUrl: "flexDirection", isLoading: true };
+  obj5 = { previewUrl: "flexDirection", isLoading: null };
 };

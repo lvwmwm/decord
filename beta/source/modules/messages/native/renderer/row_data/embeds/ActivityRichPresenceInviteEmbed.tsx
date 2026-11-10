@@ -510,7 +510,7 @@ export function createActivityRichPresenceInviteEmbed(message, channel, forcedTh
                   intl11 = tmp4(1113).intl;
                   obj16 = obj11;
                 } else if (isInParty) {
-                  const obj12 = { label: intl10.string(tmp4(1113).t.KC26NR), disabled: true, footerLabel: "Boolean" };
+                  const obj12 = { label: intl10.string(tmp4(1113).t.KC26NR), disabled: true, footerLabel: "Array" };
                   intl10 = tmp4(1113).intl;
                   obj16 = obj12;
                 } else if (isAskToJoin) {
@@ -643,7 +643,7 @@ export function createActivityRichPresenceInviteEmbed(message, channel, forcedTh
               return null;
             }
           }
-          obj = { displayType: obj.BLOCKED, headerText: intl.string(tmp4(1113).t.pkq6Vq), subtitle: stringResult5, ctaButtonEnabled: false, ctaButtonText: "flexDirection", ctaButtonIsLoading: "Array", footerLabel: "PX_8", gradientColors: [], iconSrc: null, isPlatformSupported: "Array", isSpotifyParty: "channel", maxPartySize: "name", partyMemberAvatarURIs: "get", partySizeText: -4, platformIconKeys: [], coverImageUrl: "flex", detailsText: "center", title: "center" };
+          obj = { displayType: obj.BLOCKED, headerText: intl.string(tmp4(1113).t.pkq6Vq), subtitle: stringResult5, ctaButtonEnabled: false, ctaButtonText: "flexDirection", ctaButtonIsLoading: "Array", footerLabel: "PX_8", gradientColors: [], iconSrc: null, isPlatformSupported: "Array", isSpotifyParty: "match", maxPartySize: "padding", partyMemberAvatarURIs: "__esModule", partySizeText: "FEED_PAGE_ACTIONED", platformIconKeys: [], coverImageUrl: "isCritical", detailsText: "cancelChanges", title: "FEED_PAGE_ACTIONED" };
           intl = tmp4(1113).intl;
           if (contentClassificationVisibility === tmp4(13938).ContentClassificationVisibility.BLOCK_UNDERAGE) {
             const intl3 = tmp4(1113).intl;

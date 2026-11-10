@@ -2793,8 +2793,8 @@ export const $ZodOptional = NEVER.$constructor("$ZodOptional", (_zod, arg1) => {
           if (issues.issues.length) {
             tmp2 = issues;
             if (undefined === tmp) {
-              tmp2 = { issues: [], value: "r" };
-              const obj = { issues: [], value: "r" };
+              tmp2 = { issues: [], value: "Array" };
+              const obj = { issues: [], value: "Array" };
             }
           }
           return tmp2;
@@ -2804,7 +2804,7 @@ export const $ZodOptional = NEVER.$constructor("$ZodOptional", (_zod, arg1) => {
         if (runResult.issues.length) {
           nextPromise = runResult;
           if (undefined === tmp4) {
-            let obj = { issues: [], value: "r" };
+            let obj = { issues: [], value: "Array" };
             nextPromise = obj;
           }
         }
@@ -3354,6 +3354,7 @@ export const $ZodFunction = NEVER.$constructor("$ZodFunction", (_zod, _def) => {
       let self = this;
       const self2 = this;
       const error = new Error("implementAsync() must be called with a function");
+      const tmp3 = error;
       throw error;
     } else {
       return _asyncToGenerator(async function() {
@@ -3362,74 +3363,110 @@ export const $ZodFunction = NEVER.$constructor("$ZodFunction", (_zod, _def) => {
         let c5 = 0;
         let c6 = 0;
         const iter = (async (arg0, value) => {
-          let tmp11;
-          if (1 === c5) {
+          if (c6 === 2) {
+            c6 = 3;
+            throw new TypeError("Generator functions may not be called on executing generators");
+          } else if (tmp3 === 3) {
             if (arg0 === 1) {
-              c6 = 3;
               throw value;
             } else if (arg0 === 2) {
-              c6 = 3;
               return { value, done: true };
-            } else if (self._def.input) {
-              c5 = 2;
-              c6 = 1;
-              const obj5 = { value: _self(closure_2_2[7]).parseAsync(self._def.input, _self), done: false };
-              return obj5;
             } else {
-              tmp11 = _self;
-            }
-          } else if (2 === c5) {
-            if (arg0 === 1) {
-              c6 = 3;
-              throw value;
-            } else {
-              tmp11 = value;
-              if (arg0 === 2) {
-                c6 = 3;
-                return { value, done: true };
-              }
+              return { value: "HermesInternal", done: null };
             }
           } else {
-            let tmp5;
-            if (3 === c5) {
-              if (arg0 === 1) {
-                c6 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c6 = 3;
-                return { value, done: true };
-              } else {
-                closure_2 = value;
-                if (self._def.output) {
-                  c5 = 4;
-                  c6 = 1;
-                  const obj8 = { value: _self(closure_2_2[7]).parseAsync(self._def.output, closure_2), done: false };
-                  return obj8;
+            try {
+              c6 = 2;
+              if (0 === c5) {
+                if (arg0 === 1) {
+                  c6 = 3;
+                  throw value;
+                } else if (arg0 === 2) {
+                  c6 = 3;
+                  return { value, done: true };
                 } else {
-                  tmp5 = closure_2;
+                  closure_4 = self;
+                  closure_3 = self;
+                  _self = closure_1;
+                  closure_1 = undefined;
+                  closure_2 = undefined;
+                  c5 = 1;
+                  c6 = 1;
+                  return { value: "flexDirection", done: null };
                 }
+              } else {
+                let tmp11;
+                if (1 === c5) {
+                  if (arg0 === 1) {
+                    c6 = 3;
+                    throw value;
+                  } else if (arg0 === 2) {
+                    c6 = 3;
+                    return { value, done: true };
+                  } else if (self._def.input) {
+                    c5 = 2;
+                    c6 = 1;
+                    const obj5 = { value: _self(closure_2_2[7]).parseAsync(self._def.input, _self), done: false };
+                    return obj5;
+                  } else {
+                    tmp11 = _self;
+                  }
+                } else if (2 === c5) {
+                  if (arg0 === 1) {
+                    c6 = 3;
+                    throw value;
+                  } else {
+                    tmp11 = value;
+                    if (arg0 === 2) {
+                      c6 = 3;
+                      return { value, done: true };
+                    }
+                  }
+                } else {
+                  let tmp5;
+                  if (3 === c5) {
+                    if (arg0 === 1) {
+                      c6 = 3;
+                      throw value;
+                    } else if (arg0 === 2) {
+                      c6 = 3;
+                      return { value, done: true };
+                    } else {
+                      closure_2 = value;
+                      if (self._def.output) {
+                        c5 = 4;
+                        c6 = 1;
+                        const obj8 = { value: _self(closure_2_2[7]).parseAsync(self._def.output, closure_2), done: false };
+                        return obj8;
+                      } else {
+                        tmp5 = closure_2;
+                      }
+                    }
+                  } else if (arg0 === 1) {
+                    c6 = 3;
+                    throw value;
+                  } else {
+                    tmp5 = value;
+                    if (arg0 === 2) {
+                      c6 = 3;
+                      return { value, done: true };
+                    }
+                  }
+                  c6 = 3;
+                  return { value: tmp5, done: true };
+                }
+                closure_1 = tmp11;
+                const _Reflect = Reflect;
+                c5 = 3;
+                c6 = 1;
+                const obj10 = { value: Reflect.apply(closure_131_0, closure_4, closure_1), done: false };
+                return obj10;
               }
-            } else if (arg0 === 1) {
+            } catch (tmp25) {
               c6 = 3;
-              throw value;
-            } else {
-              tmp5 = value;
-              if (arg0 === 2) {
-                c6 = 3;
-                return { value, done: true };
-              }
+              throw tmp25;
             }
-            c6 = 3;
-            return { value: tmp5, done: true };
           }
-          closure_1 = tmp11;
-          const _Reflect = Reflect;
-          await Reflect.apply(closure_131_0, closure_4, closure_1);
-          closure_4 = self;
-          closure_3 = self;
-          closure_2 = tmp;
-          _self = closure_1;
-          return "flexDirection";
         })();
         iter.next();
         return iter;

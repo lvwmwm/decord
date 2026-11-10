@@ -136,7 +136,7 @@ let obj = function _authorizeWithPrompt() {
               map = undefined;
               _prompt = 1;
               disableGuildSelect = 1;
-              return { value: "flexDirection", done: true };
+              return { value: "flexDirection", done: null };
             }
           } else {
             let createFromServer;

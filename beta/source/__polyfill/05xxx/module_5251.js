@@ -143,7 +143,7 @@ export function useViewModelInstance(arg0, instanceName) {
         }
       }
     } else {
-      obj11 = { instance: "flexDirection", needsDispose: true };
+      obj11 = { instance: "flexDirection", needsDispose: null };
     }
     const current = obj11.instance && ref.current;
     if (current) {

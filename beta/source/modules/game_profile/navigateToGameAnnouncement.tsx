@@ -64,7 +64,7 @@ let obj = function _navigateToGameAnnouncement() {
             joinedAt = undefined;
             messageId = 1;
             sourceLocationStack = 1;
-            return { value: "flexDirection", done: true };
+            return { value: "flexDirection", done: null };
           }
         } else {
           if (1 === messageId) {

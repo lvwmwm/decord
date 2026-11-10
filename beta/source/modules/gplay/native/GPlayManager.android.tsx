@@ -26,7 +26,7 @@ import Constants_mod from "Constants" /* 7674 */;
 import Constants_mod2 from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
-let c2, createdAfter, key, length, pendingDowngrade, purchases, succeededOnlyFields;
+let c1, c2, createdAfter, key, length, pendingDowngrade, purchases, succeededOnlyFields;
 
 let NativeEventEmitter;
 let NativeModules;
@@ -126,7 +126,7 @@ let obj = function _handlePurchaseUpdated() {
                 closure_11 = undefined;
                 c6 = 1;
                 c7 = 1;
-                return { value: "flexDirection", done: true };
+                return { value: "flexDirection", done: null };
               }
               break;
             }
@@ -435,8 +435,6 @@ function handleDowngradeCommand() {
 }
 obj = function _handleDowngradeCommand() {
   obj = _asyncToGenerator(async (arg0) => {
-    let c1;
-    let closure_2;
     let downgradeCommand = arg0;
     let c3 = 0;
     let c4 = 0;
@@ -444,38 +442,74 @@ obj = function _handleDowngradeCommand() {
       function executePendingDowngrade() {
         return closure_1_38(...arguments);
       }
-      if (1 === c3) {
+      if (c4 === 2) {
+        c4 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp2 === 3) {
         if (arg0 === 1) {
-          c4 = 3;
           throw value;
         } else if (arg0 === 2) {
-          c4 = 3;
           return { value, done: true };
-        } else if (closure_130_14.EXECUTE === downgradeCommand) {
-          c3 = 2;
-          c4 = 1;
-          const obj5 = { value: executePendingDowngrade(), done: false };
-          return obj5;
-        } else if (closure_130_14.CLEAR === tmp22) {
-          closure_130_39();
         } else {
-          const _Error = Error;
-          const _HermesInternal = HermesInternal;
-          const self = this;
-          const self2 = this;
-          const error = new Error("Invalid downgrade state " + downgradeCommand);
-          throw error;
+          return { value: "HermesInternal", done: null };
         }
-      } else if (arg0 === 1) {
-        c4 = 3;
-        throw value;
-      } else if (arg0 === 2) {
-        c4 = 3;
-        return { value, done: true };
+      } else {
+        try {
+          c4 = 2;
+          if (0 === c3) {
+            if (arg0 === 1) {
+              c4 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c4 = 3;
+              return { value, done: true };
+            } else {
+              closure_2 = tmp3;
+              c1 = 0;
+              downgradeCommand = undefined;
+              downgradeCommand = downgradeCommand.downgradeCommand;
+              c3 = 1;
+              c4 = 1;
+              return { value: "flexDirection", done: null };
+            }
+          } else {
+            if (1 === c3) {
+              if (arg0 === 1) {
+                c4 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c4 = 3;
+                return { value, done: true };
+              } else if (closure_130_14.EXECUTE === downgradeCommand) {
+                c3 = 2;
+                c4 = 1;
+                const obj5 = { value: executePendingDowngrade(), done: false };
+                return obj5;
+              } else if (closure_130_14.CLEAR === tmp22) {
+                closure_130_39();
+              } else {
+                const _Error = Error;
+                const _HermesInternal = HermesInternal;
+                const self = this;
+                const self2 = this;
+                const error = new Error("Invalid downgrade state " + downgradeCommand);
+                throw error;
+              }
+            } else if (arg0 === 1) {
+              c4 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c4 = 3;
+              return { value, done: true };
+            }
+            c4 = 3;
+            return { value: "HermesInternal", done: null };
+          }
+        } catch (tmp16) {
+          c4 = 3;
+          throw tmp16;
+        }
       }
-      await "HermesInternal";
-      downgradeCommand = downgradeCommand.downgradeCommand;
-      return "flexDirection";
     })();
     iter.next();
     return iter;
@@ -715,54 +749,93 @@ function handleAppStateUpdated() {
 }
 obj = function _handleAppStateUpdated() {
   obj = _asyncToGenerator(async (arg0) => {
-    let closure_2;
     let state = arg0;
     let c5 = 0;
     let c6 = 0;
     let c4 = 0;
     const iter = (async (arg0, value) => {
-      if (1 === c5) {
+      if (c6 === 2) {
+        c6 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
         if (arg0 === 1) {
-          c6 = 3;
           throw value;
         } else if (arg0 === 2) {
-          c6 = 3;
           return { value, done: true };
         } else {
-          purchases = closure_130_11;
-          if (closure_130_11.isReady()) {
-            purchases = closure_130_9;
-            if (closure_130_9.isAuthenticated()) {
-              purchases = state;
-              if (state === closure_130_17.ACTIVE) {
-                const obj2 = closure_130_0(closure_130_2[18]);
-                obj2.ensureSkusLoaded(closure_130_30);
-                c4 = 1;
-                purchases = closure_130_23.loadPurchases();
-                c5 = 3;
-                c6 = 1;
-                return { value: purchases, done: false };
-              }
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c6 = 2;
+          if (0 === c5) {
+            if (arg0 === 1) {
+              c6 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c6 = 3;
+              return { value, done: true };
+            } else {
+              closure_2 = tmp;
+              state = undefined;
+              state = state.state;
+              c5 = 1;
+              c6 = 1;
+              return { value: "flexDirection", done: null };
             }
+          } else {
+            if (1 === c5) {
+              if (arg0 === 1) {
+                c6 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c6 = 3;
+                return { value, done: true };
+              } else {
+                purchases = closure_130_11;
+                if (closure_130_11.isReady()) {
+                  purchases = closure_130_9;
+                  if (closure_130_9.isAuthenticated()) {
+                    purchases = state;
+                    if (state === closure_130_17.ACTIVE) {
+                      const obj2 = closure_130_0(closure_130_2[18]);
+                      obj2.ensureSkusLoaded(closure_130_30);
+                      c4 = 1;
+                      purchases = closure_130_23.loadPurchases();
+                      c5 = 3;
+                      c6 = 1;
+                      return { value: purchases, done: false };
+                    }
+                  }
+                }
+              }
+            } else if (2 === c5) {
+              c4 = 0;
+              purchases = closure_130_23;
+              closure_130_23.open();
+            } else if (arg0 === 1) {
+              c6 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c4 = 0;
+              c6 = 3;
+              return { value, done: true };
+            } else {
+              c4 = 0;
+            }
+            c6 = 3;
+            return { value: "HermesInternal", done: null };
+          }
+        } catch (tmp21) {
+          closure_3 = tmp21;
+          if (0 === c4) {
+            c6 = 3;
+            throw tmp21;
+          } else {
+            c5 = 2;
           }
         }
-      } else if (2 === c5) {
-        c4 = 0;
-        purchases = closure_130_23;
-        closure_130_23.open();
-      } else if (arg0 === 1) {
-        c6 = 3;
-        throw value;
-      } else if (arg0 === 2) {
-        c4 = 0;
-        c6 = 3;
-        return { value, done: true };
-      } else {
-        c4 = 0;
       }
-      await "HermesInternal";
-      state = state.state;
-      return "flexDirection";
     })();
     iter.next();
     return iter;

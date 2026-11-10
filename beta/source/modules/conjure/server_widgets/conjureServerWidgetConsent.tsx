@@ -13,7 +13,7 @@ import ConjureProjectStore from "ConjureProjectStore" /* 6899 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, c8, c9, closure_6, project_id;
+let _require, c8, closure_6, project_id;
 
 let obj = function _exchangeConsentCode() {
   obj = _asyncToGenerator(async (project_id, code) => {
@@ -170,136 +170,66 @@ obj = function _exchangeAndAdd() {
     let closure_1 = value;
     let closure_2 = arg2;
     let closure_3 = arg3;
-    if (c9 === 2) {
-      c9 = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp3 === 3) {
+    let closure_5 = tmp;
+    ({ onTurnedOn: c3, showToast: c4 } = closure_3);
+    await "flexDirection";
+    let result = exchangeConsentCode(closure_0, closure_2);
+    await result;
+    if (3 === c8) {
+      let c7 = 0;
+      closure_5 = closure_6;
+      const obj5 = closure_133_1(closure_133_2[9]);
+      obj5.captureException(closure_5);
+    } else if (4 === c8) {
       if (arg0 === 1) {
+        let c9 = 3;
         throw value;
       } else if (arg0 === 2) {
-        const obj2 = { value, done: true };
-        return obj2;
+        c7 = 0;
+        c9 = 3;
+        const obj10 = { value, done: true };
+        return obj10;
       } else {
-        return { value: "HermesInternal", done: null };
+        result = addWidget(closure_1);
+        c8 = 5;
+        c9 = 1;
+        const obj11 = { value: result, done: false };
+        return obj11;
       }
+    } else if (5 === c8) {
+      if (arg0 === 1) {
+        c9 = 3;
+        throw value;
+      } else if (arg0 === 2) {
+        c7 = 0;
+        c9 = 3;
+        const obj12 = { value, done: true };
+        return obj12;
+      } else {
+        c7 = 2;
+        if (c3 != null) {
+          c3();
+        }
+        c7 = 0;
+      }
+    } else if (arg0 === 1) {
+      c9 = 3;
+      throw value;
+    } else if (arg0 === 2) {
+      c9 = 3;
+      obj = { value, done: true };
+      return obj;
     } else {
-      let c7;
-      try {
-        let closure_5;
-        c9 = 2;
-        if (0 === c8) {
-          if (arg0 === 1) {
-            c9 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c9 = 3;
-            const obj3 = { value, done: true };
-            return obj3;
-          } else {
-            closure_5 = tmp;
-            c3 = undefined;
-            c4 = undefined;
-            ({ onTurnedOn: c3, showToast: c4 } = closure_3);
-            c8 = 1;
-            c9 = 1;
-            return { value: "flexDirection", done: true };
-          }
-        } else {
-          let result;
-          if (1 === c8) {
-            if (arg0 === 1) {
-              c9 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c9 = 3;
-              const obj4 = { value, done: true };
-              return obj4;
-            } else {
-              c7 = 1;
-              result = exchangeConsentCode(closure_0, closure_2);
-              c8 = 4;
-              c9 = 1;
-              const obj7 = { value: result, done: false };
-              return obj7;
-            }
-          } else if (2 === c8) {
-            c7 = 0;
-            result = c4;
-            const obj8 = { text: intl.string(closure_133_1(closure_133_2[8]).to9Sp4), variant: "critical" };
-            intl = closure_133_0(closure_133_2[7]).intl;
-            c4(obj8);
-            c9 = 3;
-            const obj9 = { value: undefined, done: true };
-            return obj9;
-          } else {
-            if (3 === c8) {
-              c7 = 0;
-              closure_5 = closure_6;
-              const obj5 = closure_133_1(closure_133_2[9]);
-              obj5.captureException(closure_5);
-            } else if (4 === c8) {
-              if (arg0 === 1) {
-                c9 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c7 = 0;
-                c9 = 3;
-                const obj10 = { value, done: true };
-                return obj10;
-              } else {
-                result = addWidget(closure_1);
-                c8 = 5;
-                c9 = 1;
-                const obj11 = { value: result, done: false };
-                return obj11;
-              }
-            } else if (5 === c8) {
-              if (arg0 === 1) {
-                c9 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c7 = 0;
-                c9 = 3;
-                const obj12 = { value, done: true };
-                return obj12;
-              } else {
-                c7 = 2;
-                if (c3 != null) {
-                  c3();
-                }
-                c7 = 0;
-              }
-            } else if (arg0 === 1) {
-              c9 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c9 = 3;
-              obj = { value, done: true };
-              return obj;
-            } else {
-              c9 = 3;
-              return { value: "HermesInternal", done: null };
-            }
-            const obj6 = closure_133_0(closure_133_2[10]);
-            result = obj6.refreshApplicationWidget(closure_1);
-            c8 = 6;
-            c9 = 1;
-            const obj13 = { value: result, done: false };
-            return obj13;
-          }
-        }
-      } catch (tmp37) {
-        closure_6 = tmp37;
-        if (0 === c7) {
-          c9 = 3;
-          throw tmp37;
-        } else if (1 === tmp39) {
-          c8 = 2;
-        } else {
-          c8 = 3;
-        }
-      }
+      c9 = 3;
+      return { value: "HermesInternal", done: null };
     }
+    const obj6 = closure_133_0(closure_133_2[10]);
+    result = obj6.refreshApplicationWidget(closure_1);
+    await result;
+    result = c4;
+    const obj8 = { text: intl.string(closure_133_1(closure_133_2[8]).to9Sp4), variant: "critical" };
+    intl = closure_133_0(closure_133_2[7]).intl;
+    c4(obj8);
   });
   return obj(...arguments);
 };

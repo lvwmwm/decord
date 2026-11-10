@@ -184,7 +184,7 @@ let obj = function _saveChannel() {
               channel = undefined;
               topic = 1;
               bitrate = 1;
-              return { value: "flexDirection", done: true };
+              return { value: "flexDirection", done: null };
             }
           } else if (1 === topic) {
             if (arg0 === 1) {

@@ -69,10 +69,10 @@ function useComputedImagesForActivity(activity, activityApplication) {
         tmp17 = { src: guildIconURL };
         const obj3 = { src: guildIconURL };
       }
-      obj14 = { largeImage: tmp17, smallImage: "r" };
-      const obj4 = { largeImage: tmp17, smallImage: "r" };
+      obj14 = { largeImage: tmp17, smallImage: "Array" };
+      const obj4 = { largeImage: tmp17, smallImage: "Array" };
     } else if (isOnXboxDefault(activity)) {
-      const obj5 = { largeImage: obj6, smallImage: "r" };
+      const obj5 = { largeImage: obj6, smallImage: "Array" };
       obj6 = { src: tmp2Result3.get(metroRequire.XBOX).icon.customPNG, alt: intl4.string(intl5.t.Nfvo72) };
       tmp2Result3 = PlatformsDefault;
       intl4 = tmp18(1113).intl;
@@ -80,7 +80,7 @@ function useComputedImagesForActivity(activity, activityApplication) {
     } else {
       if (null == smallImage) {
         if (isOnPlayStationDefault(activity)) {
-          const obj7 = { largeImage: obj8, smallImage: "r" };
+          const obj7 = { largeImage: obj8, smallImage: "Array" };
           obj8 = { src: tmp2Result4.get(metroRequire.PLAYSTATION).icon.lightPNG, alt: intl3.string(intl5.t.fFl4jo) };
           tmp2Result4 = PlatformsDefault;
           intl3 = tmp18(1113).intl;
@@ -94,8 +94,8 @@ function useComputedImagesForActivity(activity, activityApplication) {
         if (activity != null) {
           name1 = activity.name;
         }
-        obj14 = { largeImage: obj9, smallImage: "r" };
-        const obj10 = { largeImage: obj9, smallImage: "r" };
+        obj14 = { largeImage: obj9, smallImage: "Array" };
+        const obj10 = { largeImage: obj9, smallImage: "Array" };
       } else {
         let name;
         let iconURL;
@@ -122,7 +122,7 @@ function useComputedImagesForActivity(activity, activityApplication) {
           obj14 = { largeImage: tmp7, smallImage };
           const obj13 = { largeImage: tmp7, smallImage };
         } else {
-          obj14 = { largeImage: smallImage, smallImage: "r" };
+          obj14 = { largeImage: smallImage, smallImage: "Array" };
         }
       }
     }
@@ -416,17 +416,17 @@ export function useImageForContentEntry(trackingSource) {
       obj8 = { largeImage, smallImage };
       const obj4 = { largeImage, smallImage };
     } else if (null != tmp7) {
-      obj8 = { largeImage: tmp7, smallImage: "r" };
-      const obj5 = { largeImage: tmp7, smallImage: "r" };
+      obj8 = { largeImage: tmp7, smallImage: "Array" };
+      const obj5 = { largeImage: tmp7, smallImage: "Array" };
     } else {
       if (null != coverURL) {
         if (showCoverImage) {
-          const obj6 = { largeImage: obj7, smallImage: "r" };
+          const obj6 = { largeImage: obj7, smallImage: "Array" };
           obj8 = obj6;
           obj7 = { src: coverURL };
         }
       }
-      obj8 = { largeImage: largeImage2, smallImage: "r" };
+      obj8 = { largeImage: largeImage2, smallImage: "Array" };
     }
     const obj9 = { activity, application: fallbackApplication, largeImageSrc: src, trackingSource };
     const tmp9 = useTrackActivityDefaultIcon;

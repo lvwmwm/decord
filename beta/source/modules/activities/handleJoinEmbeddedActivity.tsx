@@ -80,7 +80,7 @@ let obj = function _handleJoinEmbeddedActivityInternal() {
               let closure_17;
               analyticsLocations = 1;
               componentId = 1;
-              return { value: "flexDirection", done: true };
+              return { value: "flexDirection", done: null };
             }
           } else if (1 === analyticsLocations) {
             if (arg0 === 1) {

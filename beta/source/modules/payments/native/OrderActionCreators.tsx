@@ -12,7 +12,7 @@ import PaymentConstants from "PaymentConstants" /* 5872 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
-let closure_3, closure_4, expected_revision, external_gateway_facet, orderLineItemId, order_line_items, request_gateway_country_code, subscription_facet;
+let closure_3, closure_4, expected_revision, external_gateway_facet, giftInfo, orderLineItemId, order_line_items, request_gateway_country_code, subscription_facet;
 
 function getOrders() {
   return obj(...arguments);
@@ -202,7 +202,7 @@ obj = function _createOrder() {
               body = undefined;
               external_gateway_facet = 1;
               request_gateway_country_code = 1;
-              return { value: "flexDirection", done: true };
+              return { value: "flexDirection", done: null };
             }
           } else if (1 === external_gateway_facet) {
             if (arg0 === 1) {
@@ -386,160 +386,90 @@ obj = function _getOrCreateOrder() {
     let isGift;
     let items;
     let purchase_type;
-    let tmp3;
+    let tmp4;
+    let tmp5;
     let closure_0 = arg0;
-    if (isGift === 2) {
-      isGift = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp3 === 3) {
+    let closure_1 = tmp;
+    ({ skuId: c0, paymentGateway: c1, recipientUserId: c2, purchaseType: c3, isGift: c4, giftInfo: c5, createdAfter: c6, subscriptionPlanId: c7, externalGatewayFacet: c8, countryCode: c9 } = closure_0);
+    await "flexDirection";
+    const obj5 = { isGift, status: closure_130_4.DRAFT, skuId: sku_id, createdAfter, recipientUserId, paymentGateway };
+    await closure_130_7(obj5);
+    if (2 === tmp4) {
       if (arg0 === 1) {
+        isGift = 3;
         throw value;
       } else if (arg0 === 2) {
-        const obj2 = { value, done: true };
-        return obj2;
+        isGift = 3;
+        const obj7 = { value, done: true };
+        return obj7;
       } else {
-        return { value: "HermesInternal", done: null };
-      }
-    } else {
-      try {
-        let closure_1;
-        let sku_id;
-        let paymentGateway;
-        let recipientUserId;
-        let giftInfo;
-        let createdAfter;
-        let subscription_plan_id;
-        let externalGatewayFacet;
-        let countryCode;
-        let id;
-        isGift = 2;
-        let tmp4 = purchase_type;
-        if (0 === purchase_type) {
-          if (arg0 === 1) {
-            isGift = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            isGift = 3;
-            const obj3 = { value, done: true };
-            return obj3;
-          } else {
-            let closure_2 = tmp4;
-            closure_1 = tmp;
-            sku_id = undefined;
-            paymentGateway = undefined;
-            recipientUserId = undefined;
-            giftInfo = undefined;
-            createdAfter = undefined;
-            subscription_plan_id = undefined;
-            externalGatewayFacet = undefined;
-            countryCode = undefined;
-            ({ skuId: c0, paymentGateway: c1, recipientUserId: c2, purchaseType: c3, isGift: c4, giftInfo: c5, createdAfter: c6, subscriptionPlanId: c7, externalGatewayFacet: c8, countryCode: c9 } = closure_0);
-            id = undefined;
-            purchase_type = 1;
-            isGift = 1;
-            return { value: "flexDirection", done: true };
+        const id = value.find((order_line_items) => {
+          closure_0 = closure_1_0;
+          let closure_1 = subscription_plan_id;
+          let someResult = null == subscription_plan_id;
+          if (!someResult) {
+            order_line_items = order_line_items.order_line_items;
+            someResult = order_line_items.some((sku_id) => sku_id.sku_id === closure_0 && sku_id.subscription_plan_id === closure_1);
           }
-        } else if (1 === tmp4) {
-          if (arg0 === 1) {
-            isGift = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            isGift = 3;
-            const obj4 = { value, done: true };
-            return obj4;
-          } else {
-            const obj5 = { isGift, status: closure_130_4.DRAFT, skuId: sku_id, createdAfter, recipientUserId, paymentGateway };
-            purchase_type = 2;
-            isGift = 1;
-            const obj6 = { value: closure_130_7(obj5), done: false };
-            return obj6;
-          }
-        } else {
-          let tmp5;
-          if (2 === tmp4) {
-            if (arg0 === 1) {
-              isGift = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              isGift = 3;
-              const obj7 = { value, done: true };
-              return obj7;
-            } else {
-              id = value.find((order_line_items) => {
-                closure_0 = closure_1_0;
-                let closure_1 = subscription_plan_id;
-                let someResult = null == subscription_plan_id;
-                if (!someResult) {
-                  order_line_items = order_line_items.order_line_items;
-                  someResult = order_line_items.some((sku_id) => sku_id.sku_id === closure_0 && sku_id.subscription_plan_id === closure_1);
-                }
-                if (someResult) {
-                  let recipient_id;
-                  let tmp3;
-                  const gifting_facet = order_line_items.gifting_facet;
-                  if (gifting_facet != null) {
-                    const gift_customization = gifting_facet.gift_customization;
-                    if (gift_customization != null) {
-                      recipient_id = gift_customization.recipient_id;
-                    }
-                  }
-                  if (null == recipientUserId) {
-                    tmp3 = null == recipient_id || 0 === recipient_id.length;
-                    const tmp4 = null == recipient_id || 0 === recipient_id.length;
-                  } else {
-                    tmp3 = recipient_id === tmp2;
-                  }
-                  someResult = tmp3;
-                }
-                if (someResult) {
-                  let tmp6 = null == countryCode;
-                  if (!tmp6) {
-                    const location_facet = order_line_items.location_facet;
-                    let prop;
-                    if (location_facet != null) {
-                      prop = location_facet.determined_country_code;
-                    }
-                    tmp6 = prop === tmp5;
-                  }
-                  someResult = tmp6;
-                }
-                return someResult;
-              });
-              if (null != id) {
-                let tmp6 = closure_1;
-                const obj8 = { orderId: id.id, skuId: sku_id, isGift, paymentGateway };
-                closure_130_6.info("reusing existing draft order", obj8);
-                tmp5 = id;
-              } else {
-                const obj9 = { paymentGateway, recipientUserId, isGift, giftInfo, orderLineItems: items, externalGatewayFacet, countryCode };
-                const obj10 = { sku_id, quantity: 1, purchase_type, subscription_plan_id };
-                items = [obj10];
-                purchase_type = 3;
-                isGift = 1;
-                const obj11 = { value: closure_130_9(obj9), done: false };
-                return obj11;
+          if (someResult) {
+            let recipient_id;
+            let tmp3;
+            const gifting_facet = order_line_items.gifting_facet;
+            if (gifting_facet != null) {
+              const gift_customization = gifting_facet.gift_customization;
+              if (gift_customization != null) {
+                recipient_id = gift_customization.recipient_id;
               }
             }
-          } else if (arg0 === 1) {
-            isGift = 3;
-            throw value;
-          } else {
-            tmp5 = value;
-            if (arg0 === 2) {
-              isGift = 3;
-              obj = { value, done: true };
-              return obj;
+            if (null == recipientUserId) {
+              tmp3 = null == recipient_id || 0 === recipient_id.length;
+              const tmp4 = null == recipient_id || 0 === recipient_id.length;
+            } else {
+              tmp3 = recipient_id === tmp2;
             }
+            someResult = tmp3;
           }
-          isGift = 3;
-          const obj12 = { value: tmp5, done: true };
-          return obj12;
+          if (someResult) {
+            let tmp6 = null == countryCode;
+            if (!tmp6) {
+              const location_facet = order_line_items.location_facet;
+              let prop;
+              if (location_facet != null) {
+                prop = location_facet.determined_country_code;
+              }
+              tmp6 = prop === tmp5;
+            }
+            someResult = tmp6;
+          }
+          return someResult;
+        });
+        if (null != id) {
+          let tmp6 = closure_1;
+          const obj8 = { orderId: id.id, skuId: sku_id, isGift, paymentGateway };
+          closure_130_6.info("reusing existing draft order", obj8);
+          tmp5 = id;
+        } else {
+          const obj9 = { paymentGateway, recipientUserId, isGift, giftInfo, orderLineItems: items, externalGatewayFacet, countryCode };
+          const obj10 = { sku_id, quantity: 1, purchase_type, subscription_plan_id };
+          items = [obj10];
+          purchase_type = 3;
+          isGift = 1;
+          const obj11 = { value: closure_130_9(obj9), done: false };
+          return obj11;
         }
-      } catch (tmp23) {
+      }
+    } else if (arg0 === 1) {
+      isGift = 3;
+      throw value;
+    } else {
+      tmp5 = value;
+      if (arg0 === 2) {
         isGift = 3;
-        throw tmp23;
+        obj = { value, done: true };
+        return obj;
       }
     }
+    return tmp5;
   });
   return obj(...arguments);
 };
@@ -589,7 +519,7 @@ obj = function _patchOrderLineItem() {
               body = undefined;
               c5 = 1;
               c6 = 1;
-              return { value: "flexDirection", done: true };
+              return { value: "flexDirection", done: null };
             }
           } else if (1 === c5) {
             if (arg0 === 1) {
@@ -731,7 +661,7 @@ obj = function _patchOrder() {
               body = undefined;
               c5 = 1;
               c6 = 1;
-              return { value: "flexDirection", done: true };
+              return { value: "flexDirection", done: null };
             }
           } else if (1 === c5) {
             if (arg0 === 1) {
@@ -880,7 +810,7 @@ obj = function _updateOrder() {
               body = undefined;
               c5 = 1;
               c6 = 1;
-              return { value: "flexDirection", done: true };
+              return { value: "flexDirection", done: null };
             }
           } else if (1 === c5) {
             if (arg0 === 1) {

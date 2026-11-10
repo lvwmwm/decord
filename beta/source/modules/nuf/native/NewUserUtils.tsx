@@ -28,7 +28,7 @@ import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, c0, c1, c2, c4, c5, closure_5, registration;
+let _require, c0, c1, c2, c4, c5, registration;
 
 let c10;
 let c9;
@@ -119,142 +119,74 @@ function getNextOnboardingStep() {
 obj = function _getNextOnboardingStep() {
   obj = _asyncToGenerator(async (arg0, lastShownStepIndex) => {
     let closure_4;
+    let closure_5;
     let closure_0 = arg0;
     let closure_2 = arg2;
     let c6 = 0;
     let c7 = 0;
     const iter = (async (arg0, value) => {
-      if (c7 === 2) {
-        c7 = 3;
-        throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp3 === 3) {
+      let tmp5;
+      let flag = closure_0;
+      if (closure_0 === undefined) {
+        flag = false;
+      }
+      let sum = closure_2;
+      await "flexDirection";
+      registration = key;
+      if (key == null) {
+        registration = "registration";
+      }
+      let closure_3 = registration;
+      sum = sum + 1;
+      if (sum >= closure_133_18.length) {
+        closure_133_19(closure_3);
+        return { lastShownStepIndex, onboardingStepIndex: sum, continueNavigation: false };
+      }
+      const shouldShowStep = tmp.shouldShowStep;
+      let transitionStep = tmp.transitionStep;
+      await shouldShowStep();
+      if (2 === c6) {
         if (arg0 === 1) {
+          c7 = 3;
           throw value;
         } else if (arg0 === 2) {
-          return { value, done: true };
-        } else {
-          return { value: "HermesInternal", done: null };
-        }
-      } else {
-        try {
-          let sum;
-          let flag;
-          let closure_3;
-          let tmp;
-          let key2;
-          let shouldShowStep;
-          let transitionStep;
-          c7 = 2;
-          if (0 === c6) {
-            if (arg0 === 1) {
-              c7 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c7 = 3;
-              return { value, done: true };
-            } else {
-              closure_5 = tmp4;
-              lastShownStepIndex = undefined;
-              sum = undefined;
-              flag = closure_0;
-              if (closure_0 === undefined) {
-                flag = false;
-              }
-              sum = closure_2;
-              closure_3 = undefined;
-              tmp = undefined;
-              key2 = undefined;
-              shouldShowStep = undefined;
-              transitionStep = undefined;
-              c6 = 1;
-              c7 = 1;
-              return { value: "flexDirection", done: true };
-            }
-          } else if (1 === c6) {
-            if (arg0 === 1) {
-              c7 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c7 = 3;
-              return { value, done: true };
-            } else {
-              let key;
-              if (closure_133_18[lastShownStepIndex] != null) {
-                key = tmp70.key;
-              }
-              registration = key;
-              if (key == null) {
-                registration = "registration";
-              }
-              closure_3 = registration;
-              sum = sum + 1;
-              if (sum >= closure_133_18.length) {
-                closure_133_19(closure_3);
-                c7 = 3;
-                return { value: { lastShownStepIndex, onboardingStepIndex: sum, continueNavigation: false }, done: true };
-              } else {
-                tmp = closure_133_18[sum];
-                key2 = tmp.key;
-                shouldShowStep = tmp.shouldShowStep;
-                transitionStep = tmp.transitionStep;
-                c6 = 2;
-                c7 = 1;
-                const obj8 = { value: shouldShowStep(), done: false };
-                return obj8;
-              }
-            }
-          } else {
-            let tmp5;
-            if (2 === c6) {
-              if (arg0 === 1) {
-                c7 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c7 = 3;
-                return { value, done: true };
-              } else if (value) {
-                let obj12;
-                lastShownStepIndex = sum;
-                const obj10 = { skip: flag };
-                const obj3 = closure_133_0(closure_133_2[19]);
-                obj3.trackNUFStep(closure_3, key2, obj10);
-                if (null != transitionStep) {
-                  closure_133_19(key2);
-                  transitionStep();
-                  obj12 = { lastShownStepIndex, onboardingStepIndex: sum, continueNavigation: false };
-                  const obj11 = { lastShownStepIndex, onboardingStepIndex: sum, continueNavigation: false };
-                } else {
-                  obj12 = { lastShownStepIndex, onboardingStepIndex: sum, continueNavigation: null == transitionStep };
-                  transitionStep = undefined;
-                  if (closure_133_18[sum] != null) {
-                    transitionStep = tmp25.transitionStep;
-                  }
-                }
-                tmp5 = obj12;
-              } else {
-                c6 = 3;
-                c7 = 1;
-                const obj13 = { value: closure_133_20(flag, lastShownStepIndex, sum), done: false };
-                return obj13;
-              }
-            } else if (arg0 === 1) {
-              c7 = 3;
-              throw value;
-            } else {
-              tmp5 = value;
-              if (arg0 === 2) {
-                c7 = 3;
-                return { value, done: true };
-              }
-            }
-            c7 = 3;
-            return { value: tmp5, done: true };
-          }
-        } catch (tmp60) {
           c7 = 3;
-          throw tmp60;
+          return { value, done: true };
+        } else if (value) {
+          let obj12;
+          lastShownStepIndex = sum;
+          const obj10 = { skip: flag };
+          const obj3 = closure_133_0(closure_133_2[19]);
+          obj3.trackNUFStep(closure_3, closure_133_18[sum].key, obj10);
+          if (null != transitionStep) {
+            closure_133_19(closure_133_18[sum].key);
+            transitionStep();
+            obj12 = { lastShownStepIndex, onboardingStepIndex: sum, continueNavigation: false };
+          } else {
+            obj12 = { lastShownStepIndex, onboardingStepIndex: sum, continueNavigation: null == transitionStep };
+            transitionStep = undefined;
+            if (closure_133_18[sum] != null) {
+              transitionStep = tmp25.transitionStep;
+            }
+          }
+          tmp5 = obj12;
+        } else {
+          c6 = 3;
+          c7 = 1;
+          const obj13 = { value: closure_133_20(flag, lastShownStepIndex, sum), done: false };
+          return obj13;
+        }
+      } else if (arg0 === 1) {
+        c7 = 3;
+        throw value;
+      } else {
+        tmp5 = value;
+        if (arg0 === 2) {
+          c7 = 3;
+          return { value, done: true };
         }
       }
+      return tmp5;
     })();
     iter.next();
     return iter;

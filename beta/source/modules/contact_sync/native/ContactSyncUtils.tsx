@@ -24,8 +24,6 @@ import ContactSyncConstants from "ContactSyncConstants" /* 14485 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
-let c4, c5;
-
 let c10;
 let c9;
 let closure_12;
@@ -37,92 +35,33 @@ let metroImportDefault;
 let metroRequire;
 let unpackModuleId;
 let obj = function _uploadContacts() {
-  obj = _asyncToGenerator(async (arg0, value) => {
+  obj = _asyncToGenerator(async (arg0) => {
+    let c4;
+    let c5;
+    let closure_3;
     let obj5;
     let obj6;
     let closure_0 = arg0;
-    let closure_1 = value;
-    if (c5 === 2) {
-      c5 = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp3 === 3) {
-      if (arg0 === 1) {
-        throw value;
-      } else if (arg0 === 2) {
-        const obj2 = { value, done: true };
-        return obj2;
-      } else {
-        return { value: "HermesInternal", done: null };
-      }
-    } else {
-      try {
-        let friend_list_entries;
-        let flag;
-        let body;
-        c5 = 2;
-        if (0 === c4) {
-          if (arg0 === 1) {
-            c5 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c5 = 3;
-            const obj3 = { value, done: true };
-            return obj3;
-          } else {
-            let closure_3 = tmp4;
-            friend_list_entries = tmp;
-            flag = closure_1;
-            if (closure_1 === undefined) {
-              flag = false;
-            }
-            friend_list_entries = undefined;
-            body = undefined;
-            c4 = 1;
-            c5 = 1;
-            return { value: "flexDirection", done: true };
-          }
-        } else if (1 === c4) {
-          if (arg0 === 1) {
-            c5 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c5 = 3;
-            const obj4 = { value, done: true };
-            return obj4;
-          } else {
-            const _JSON = JSON;
-            friend_list_entries = JSON.parse(closure_0);
-            const request = { url: closure_131_12.CONNECTION_SYNC_CONTACTS, body: obj5, trackedActionData: obj6, rejectWithError: false };
-            obj5 = { friend_list_entries, background: flag, allowed_in_suggestions: closure_131_11.ANYONE_WITH_CONTACT_INFO, include_mutual_friends_count: false };
-            obj6 = { event: closure_131_0(closure_131_2[8]).NetworkActionNames.USER_CONTACTS_SYNC };
-            const put = closure_131_1(closure_131_2[7]).put;
-            const tmp22 = closure_131_1(closure_131_2[7]);
-            c4 = 2;
-            c5 = 1;
-            const obj7 = { value: put(request), done: false };
-            return obj7;
-          }
-        } else if (arg0 === 1) {
-          c5 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c5 = 3;
-          const obj8 = { value, done: true };
-          return obj8;
-        } else {
-          body = value.body;
-          const obj9 = { type: "LOAD_FRIEND_SUGGESTIONS_SUCCESS", suggestions: body.friend_suggestions };
-          obj = closure_131_1(closure_131_2[9]);
-          obj.dispatch(obj9);
-          c5 = 3;
-          const obj10 = { value: body, done: true };
-          return obj10;
-        }
-      } catch (tmp12) {
-        c5 = 3;
-        throw tmp12;
-      }
+    let closure_1 = arg1;
+    let friend_list_entries = tmp;
+    let flag = closure_1;
+    if (closure_1 === undefined) {
+      flag = false;
     }
+    await "flexDirection";
+    const _JSON = JSON;
+    friend_list_entries = JSON.parse(closure_0);
+    const request = { url: closure_131_12.CONNECTION_SYNC_CONTACTS, body: obj5, trackedActionData: obj6, rejectWithError: false };
+    obj5 = { friend_list_entries, background: flag, allowed_in_suggestions: closure_131_11.ANYONE_WITH_CONTACT_INFO, include_mutual_friends_count: false };
+    obj6 = { event: closure_131_0(closure_131_2[8]).NetworkActionNames.USER_CONTACTS_SYNC };
+    const put = closure_131_1(closure_131_2[7]).put;
+    const tmp22 = closure_131_1(closure_131_2[7]);
+    await put(request);
+    const body = arg1.body;
+    const obj9 = { type: "LOAD_FRIEND_SUGGESTIONS_SUCCESS", suggestions: body.friend_suggestions };
+    obj = closure_131_1(closure_131_2[9]);
+    obj.dispatch(obj9);
+    return body;
   });
   return obj(...arguments);
 };

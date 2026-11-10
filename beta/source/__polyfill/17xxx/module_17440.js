@@ -5261,7 +5261,7 @@ let fn2 = function r() {
     if (tmp2) {
       if ("_listeners" in self) {
         const _Object = Object;
-        Object.defineProperty(self, "_listeners", { value: "IconComponent", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
+        Object.defineProperty(self, "_listeners", { value: "IconComponent", enumerable: "clipboard", configurable: "do", writable: "list" });
       } else {
         self._listeners = undefined;
       }
@@ -5399,19 +5399,19 @@ let fn3 = function r(pm) {
     if (tmp2) {
       if ("_playbackHeartbeatInterval" in self) {
         const _Object = Object;
-        Object.defineProperty(self, "_playbackHeartbeatInterval", { value: "IconComponent", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
+        Object.defineProperty(self, "_playbackHeartbeatInterval", { value: "IconComponent", enumerable: "clipboard", configurable: "do", writable: "list" });
       } else {
         self._playbackHeartbeatInterval = undefined;
       }
       if ("_playheadShouldBeProgressing" in self) {
         const _Object2 = Object;
-        Object.defineProperty(self, "_playheadShouldBeProgressing", { value: "IconComponent", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
+        Object.defineProperty(self, "_playheadShouldBeProgressing", { value: "IconComponent", enumerable: "clipboard", configurable: "do", writable: "list" });
       } else {
         self._playheadShouldBeProgressing = undefined;
       }
       if ("pm" in self) {
         const _Object3 = Object;
-        Object.defineProperty(self, "pm", { value: "IconComponent", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
+        Object.defineProperty(self, "pm", { value: "IconComponent", enumerable: "clipboard", configurable: "do", writable: "list" });
       } else {
         self.pm = undefined;
       }
@@ -5538,7 +5538,7 @@ let fn4 = function r(on) {
     if (tmp2) {
       if ("viewErrored" in self) {
         const _Object = Object;
-        Object.defineProperty(self, "viewErrored", { value: "IconComponent", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
+        Object.defineProperty(self, "viewErrored", { value: "IconComponent", enumerable: "clipboard", configurable: "do", writable: "list" });
       } else {
         self.viewErrored = undefined;
       }
@@ -5646,13 +5646,13 @@ let fn5 = function r(pm) {
     if (tmp2) {
       if ("_watchTimeTrackerLastCheckedTime" in self) {
         const _Object = Object;
-        Object.defineProperty(self, "_watchTimeTrackerLastCheckedTime", { value: "IconComponent", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
+        Object.defineProperty(self, "_watchTimeTrackerLastCheckedTime", { value: "IconComponent", enumerable: "clipboard", configurable: "do", writable: "list" });
       } else {
         self._watchTimeTrackerLastCheckedTime = undefined;
       }
       if ("pm" in self) {
         const _Object2 = Object;
-        Object.defineProperty(self, "pm", { value: "IconComponent", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
+        Object.defineProperty(self, "pm", { value: "IconComponent", enumerable: "clipboard", configurable: "do", writable: "list" });
       } else {
         self.pm = undefined;
       }
@@ -5720,31 +5720,31 @@ let fn6 = function r(pm) {
     if (tmp2) {
       if ("_playbackTimeTrackerLastPlayheadPosition" in self) {
         const _Object = Object;
-        Object.defineProperty(self, "_playbackTimeTrackerLastPlayheadPosition", { value: "IconComponent", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
+        Object.defineProperty(self, "_playbackTimeTrackerLastPlayheadPosition", { value: "IconComponent", enumerable: "clipboard", configurable: "do", writable: "list" });
       } else {
         self._playbackTimeTrackerLastPlayheadPosition = undefined;
       }
       if ("_lastTime" in self) {
         const _Object2 = Object;
-        Object.defineProperty(self, "_lastTime", { value: "IconComponent", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
+        Object.defineProperty(self, "_lastTime", { value: "IconComponent", enumerable: "clipboard", configurable: "do", writable: "list" });
       } else {
         self._lastTime = undefined;
       }
       if ("_isAdPlaying" in self) {
         const _Object3 = Object;
-        Object.defineProperty(self, "_isAdPlaying", { value: "IconComponent", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
+        Object.defineProperty(self, "_isAdPlaying", { value: "IconComponent", enumerable: "clipboard", configurable: "do", writable: "list" });
       } else {
         self._isAdPlaying = undefined;
       }
       if ("_callbackUpdatePlaybackTime" in self) {
         const _Object4 = Object;
-        Object.defineProperty(self, "_callbackUpdatePlaybackTime", { value: "IconComponent", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
+        Object.defineProperty(self, "_callbackUpdatePlaybackTime", { value: "IconComponent", enumerable: "clipboard", configurable: "do", writable: "list" });
       } else {
         self._callbackUpdatePlaybackTime = undefined;
       }
       if ("pm" in self) {
         const _Object5 = Object;
-        Object.defineProperty(self, "pm", { value: "IconComponent", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
+        Object.defineProperty(self, "pm", { value: "IconComponent", enumerable: "clipboard", configurable: "do", writable: "list" });
       } else {
         self.pm = undefined;
       }
@@ -5889,7 +5889,7 @@ let fn7 = function r(pm) {
     if (tmp2) {
       if ("pm" in self) {
         const _Object = Object;
-        Object.defineProperty(self, "pm", { value: "IconComponent", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
+        Object.defineProperty(self, "pm", { value: "IconComponent", enumerable: "clipboard", configurable: "do", writable: "list" });
       } else {
         self.pm = undefined;
       }
@@ -6058,31 +6058,31 @@ const fn9 = function r(pm) {
     if (tmp2) {
       if ("_lastCheckedTime" in self) {
         const _Object = Object;
-        Object.defineProperty(self, "_lastCheckedTime", { value: "IconComponent", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
+        Object.defineProperty(self, "_lastCheckedTime", { value: "IconComponent", enumerable: "clipboard", configurable: "do", writable: "list" });
       } else {
         self._lastCheckedTime = undefined;
       }
       if ("_lastPlayheadTime" in self) {
         const _Object2 = Object;
-        Object.defineProperty(self, "_lastPlayheadTime", { value: "IconComponent", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
+        Object.defineProperty(self, "_lastPlayheadTime", { value: "IconComponent", enumerable: "clipboard", configurable: "do", writable: "list" });
       } else {
         self._lastPlayheadTime = undefined;
       }
       if ("_lastPlayheadTimeUpdatedTime" in self) {
         const _Object3 = Object;
-        Object.defineProperty(self, "_lastPlayheadTimeUpdatedTime", { value: "IconComponent", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
+        Object.defineProperty(self, "_lastPlayheadTimeUpdatedTime", { value: "IconComponent", enumerable: "clipboard", configurable: "do", writable: "list" });
       } else {
         self._lastPlayheadTimeUpdatedTime = undefined;
       }
       if ("_rebuffering" in self) {
         const _Object4 = Object;
-        Object.defineProperty(self, "_rebuffering", { value: "IconComponent", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
+        Object.defineProperty(self, "_rebuffering", { value: "IconComponent", enumerable: "clipboard", configurable: "do", writable: "list" });
       } else {
         self._rebuffering = undefined;
       }
       if ("pm" in self) {
         const _Object5 = Object;
-        Object.defineProperty(self, "pm", { value: "IconComponent", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
+        Object.defineProperty(self, "pm", { value: "IconComponent", enumerable: "clipboard", configurable: "do", writable: "list" });
       } else {
         self.pm = undefined;
       }
@@ -6223,7 +6223,7 @@ const fn10 = function r(pm) {
     if (tmp2) {
       if ("pm" in self) {
         const _Object = Object;
-        Object.defineProperty(self, "pm", { value: "IconComponent", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
+        Object.defineProperty(self, "pm", { value: "IconComponent", enumerable: "clipboard", configurable: "do", writable: "list" });
       } else {
         self.pm = undefined;
       }
@@ -6318,31 +6318,31 @@ const fn11 = function r(on) {
     if (tmp2) {
       if ("_lastPlayerHeight" in self) {
         const _Object = Object;
-        Object.defineProperty(self, "_lastPlayerHeight", { value: "IconComponent", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
+        Object.defineProperty(self, "_lastPlayerHeight", { value: "IconComponent", enumerable: "clipboard", configurable: "do", writable: "list" });
       } else {
         self._lastPlayerHeight = undefined;
       }
       if ("_lastPlayerWidth" in self) {
         const _Object2 = Object;
-        Object.defineProperty(self, "_lastPlayerWidth", { value: "IconComponent", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
+        Object.defineProperty(self, "_lastPlayerWidth", { value: "IconComponent", enumerable: "clipboard", configurable: "do", writable: "list" });
       } else {
         self._lastPlayerWidth = undefined;
       }
       if ("_lastPlayheadPosition" in self) {
         const _Object3 = Object;
-        Object.defineProperty(self, "_lastPlayheadPosition", { value: "IconComponent", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
+        Object.defineProperty(self, "_lastPlayheadPosition", { value: "IconComponent", enumerable: "clipboard", configurable: "do", writable: "list" });
       } else {
         self._lastPlayheadPosition = undefined;
       }
       if ("_lastSourceHeight" in self) {
         const _Object4 = Object;
-        Object.defineProperty(self, "_lastSourceHeight", { value: "IconComponent", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
+        Object.defineProperty(self, "_lastSourceHeight", { value: "IconComponent", enumerable: "clipboard", configurable: "do", writable: "list" });
       } else {
         self._lastSourceHeight = undefined;
       }
       if ("_lastSourceWidth" in self) {
         const _Object5 = Object;
-        Object.defineProperty(self, "_lastSourceWidth", { value: "IconComponent", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
+        Object.defineProperty(self, "_lastSourceWidth", { value: "IconComponent", enumerable: "clipboard", configurable: "do", writable: "list" });
       } else {
         self._lastSourceWidth = undefined;
       }
@@ -6453,7 +6453,7 @@ const fn12 = function r(on) {
     if (tmp2) {
       if ("isSeeking" in self) {
         const _Object = Object;
-        Object.defineProperty(self, "isSeeking", { value: "IconComponent", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
+        Object.defineProperty(self, "isSeeking", { value: "IconComponent", enumerable: "clipboard", configurable: "do", writable: "list" });
       } else {
         self.isSeeking = undefined;
       }
@@ -6578,55 +6578,55 @@ const fn13 = function r(pm) {
     if (tmp2) {
       if ("_adHasPlayed" in self) {
         const _Object = Object;
-        Object.defineProperty(self, "_adHasPlayed", { value: "IconComponent", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
+        Object.defineProperty(self, "_adHasPlayed", { value: "IconComponent", enumerable: "clipboard", configurable: "do", writable: "list" });
       } else {
         self._adHasPlayed = undefined;
       }
       if ("_adRequests" in self) {
         const _Object2 = Object;
-        Object.defineProperty(self, "_adRequests", { value: "IconComponent", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
+        Object.defineProperty(self, "_adRequests", { value: "IconComponent", enumerable: "clipboard", configurable: "do", writable: "list" });
       } else {
         self._adRequests = undefined;
       }
       if ("_adResponses" in self) {
         const _Object3 = Object;
-        Object.defineProperty(self, "_adResponses", { value: "IconComponent", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
+        Object.defineProperty(self, "_adResponses", { value: "IconComponent", enumerable: "clipboard", configurable: "do", writable: "list" });
       } else {
         self._adResponses = undefined;
       }
       if ("_currentAdRequestNumber" in self) {
         const _Object4 = Object;
-        Object.defineProperty(self, "_currentAdRequestNumber", { value: "IconComponent", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
+        Object.defineProperty(self, "_currentAdRequestNumber", { value: "IconComponent", enumerable: "clipboard", configurable: "do", writable: "list" });
       } else {
         self._currentAdRequestNumber = undefined;
       }
       if ("_currentAdResponseNumber" in self) {
         const _Object5 = Object;
-        Object.defineProperty(self, "_currentAdResponseNumber", { value: "IconComponent", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
+        Object.defineProperty(self, "_currentAdResponseNumber", { value: "IconComponent", enumerable: "clipboard", configurable: "do", writable: "list" });
       } else {
         self._currentAdResponseNumber = undefined;
       }
       if ("_prerollPlayTime" in self) {
         const _Object6 = Object;
-        Object.defineProperty(self, "_prerollPlayTime", { value: "IconComponent", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
+        Object.defineProperty(self, "_prerollPlayTime", { value: "IconComponent", enumerable: "clipboard", configurable: "do", writable: "list" });
       } else {
         self._prerollPlayTime = undefined;
       }
       if ("_wouldBeNewAdPlay" in self) {
         const _Object7 = Object;
-        Object.defineProperty(self, "_wouldBeNewAdPlay", { value: "IconComponent", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
+        Object.defineProperty(self, "_wouldBeNewAdPlay", { value: "IconComponent", enumerable: "clipboard", configurable: "do", writable: "list" });
       } else {
         self._wouldBeNewAdPlay = undefined;
       }
       if ("isAdBreak" in self) {
         const _Object8 = Object;
-        Object.defineProperty(self, "isAdBreak", { value: "IconComponent", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
+        Object.defineProperty(self, "isAdBreak", { value: "IconComponent", enumerable: "clipboard", configurable: "do", writable: "list" });
       } else {
         self.isAdBreak = undefined;
       }
       if ("pm" in self) {
         const _Object9 = Object;
-        Object.defineProperty(self, "pm", { value: "IconComponent", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
+        Object.defineProperty(self, "pm", { value: "IconComponent", enumerable: "clipboard", configurable: "do", writable: "list" });
       } else {
         self.pm = undefined;
       }
@@ -6931,7 +6931,7 @@ const fn14 = function r(one) {
     if (tmp2) {
       if ("lastWallClockTime" in self) {
         let _Object = Object;
-        Object.defineProperty(self, "lastWallClockTime", { value: "IconComponent", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
+        Object.defineProperty(self, "lastWallClockTime", { value: "IconComponent", enumerable: "clipboard", configurable: "do", writable: "list" });
       } else {
         self.lastWallClockTime = undefined;
       }
@@ -7768,73 +7768,73 @@ const fn18 = function r(mux, envKey) {
         let str14;
         if ("mux" in self) {
           const _Object = Object;
-          Object.defineProperty(self, "mux", { value: "IconComponent", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
+          Object.defineProperty(self, "mux", { value: "IconComponent", enumerable: "clipboard", configurable: "do", writable: "list" });
         } else {
           self.mux = undefined;
         }
         if ("envKey" in self) {
           const _Object2 = Object;
-          Object.defineProperty(self, "envKey", { value: "IconComponent", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
+          Object.defineProperty(self, "envKey", { value: "IconComponent", enumerable: "clipboard", configurable: "do", writable: "list" });
         } else {
           self.envKey = undefined;
         }
         if ("options" in self) {
           const _Object3 = Object;
-          Object.defineProperty(self, "options", { value: "IconComponent", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
+          Object.defineProperty(self, "options", { value: "IconComponent", enumerable: "clipboard", configurable: "do", writable: "list" });
         } else {
           self.options = undefined;
         }
         if ("eventQueue" in self) {
           const _Object4 = Object;
-          Object.defineProperty(self, "eventQueue", { value: "IconComponent", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
+          Object.defineProperty(self, "eventQueue", { value: "IconComponent", enumerable: "clipboard", configurable: "do", writable: "list" });
         } else {
           self.eventQueue = undefined;
         }
         if ("sampleRate" in self) {
           const _Object5 = Object;
-          Object.defineProperty(self, "sampleRate", { value: "IconComponent", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
+          Object.defineProperty(self, "sampleRate", { value: "IconComponent", enumerable: "clipboard", configurable: "do", writable: "list" });
         } else {
           self.sampleRate = undefined;
         }
         if ("disableCookies" in self) {
           const _Object6 = Object;
-          Object.defineProperty(self, "disableCookies", { value: "IconComponent", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
+          Object.defineProperty(self, "disableCookies", { value: "IconComponent", enumerable: "clipboard", configurable: "do", writable: "list" });
         } else {
           self.disableCookies = undefined;
         }
         if ("respectDoNotTrack" in self) {
           const _Object7 = Object;
-          Object.defineProperty(self, "respectDoNotTrack", { value: "IconComponent", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
+          Object.defineProperty(self, "respectDoNotTrack", { value: "IconComponent", enumerable: "clipboard", configurable: "do", writable: "list" });
         } else {
           self.respectDoNotTrack = undefined;
         }
         if ("previousBeaconData" in self) {
           const _Object8 = Object;
-          Object.defineProperty(self, "previousBeaconData", { value: "IconComponent", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
+          Object.defineProperty(self, "previousBeaconData", { value: "IconComponent", enumerable: "clipboard", configurable: "do", writable: "list" });
         } else {
           self.previousBeaconData = undefined;
         }
         if ("lastEventTime" in self) {
           const _Object9 = Object;
-          Object.defineProperty(self, "lastEventTime", { value: "IconComponent", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
+          Object.defineProperty(self, "lastEventTime", { value: "IconComponent", enumerable: "clipboard", configurable: "do", writable: "list" });
         } else {
           self.lastEventTime = undefined;
         }
         if ("rateLimited" in self) {
           const _Object10 = Object;
-          Object.defineProperty(self, "rateLimited", { value: "IconComponent", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
+          Object.defineProperty(self, "rateLimited", { value: "IconComponent", enumerable: "clipboard", configurable: "do", writable: "list" });
         } else {
           self.rateLimited = undefined;
         }
         if ("pageLevelData" in self) {
           const _Object11 = Object;
-          Object.defineProperty(self, "pageLevelData", { value: "IconComponent", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
+          Object.defineProperty(self, "pageLevelData", { value: "IconComponent", enumerable: "clipboard", configurable: "do", writable: "list" });
         } else {
           self.pageLevelData = undefined;
         }
         if ("viewerData" in self) {
           const _Object12 = Object;
-          Object.defineProperty(self, "viewerData", { value: "IconComponent", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
+          Object.defineProperty(self, "viewerData", { value: "IconComponent", enumerable: "clipboard", configurable: "do", writable: "list" });
         } else {
           self.viewerData = undefined;
         }
@@ -8504,7 +8504,7 @@ const fn20 = function r(on) {
     if (tmp2) {
       if ("_lastEventTime" in self) {
         let _Object = Object;
-        Object.defineProperty(self, "_lastEventTime", { value: "IconComponent", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
+        Object.defineProperty(self, "_lastEventTime", { value: "IconComponent", enumerable: "clipboard", configurable: "do", writable: "list" });
       } else {
         self._lastEventTime = undefined;
       }
@@ -8802,7 +8802,7 @@ class t {
         } else {
           if ("pageLoadEndTime" in callResult) {
             const _Object = Object;
-            Object.defineProperty(callResult, "pageLoadEndTime", { value: "IconComponent", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
+            Object.defineProperty(callResult, "pageLoadEndTime", { value: "IconComponent", enumerable: "clipboard", configurable: "do", writable: "list" });
           } else {
             callResult.pageLoadEndTime = undefined;
           }
@@ -8815,7 +8815,7 @@ class t {
           } else {
             if ("pageLoadInitTime" in callResult) {
               const _Object2 = Object;
-              Object.defineProperty(callResult, "pageLoadInitTime", { value: "IconComponent", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
+              Object.defineProperty(callResult, "pageLoadInitTime", { value: "IconComponent", enumerable: "clipboard", configurable: "do", writable: "list" });
             } else {
               callResult.pageLoadInitTime = undefined;
             }
@@ -8828,7 +8828,7 @@ class t {
             } else {
               if ("_destroyed" in callResult) {
                 const _Object3 = Object;
-                Object.defineProperty(callResult, "_destroyed", { value: "IconComponent", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
+                Object.defineProperty(callResult, "_destroyed", { value: "IconComponent", enumerable: "clipboard", configurable: "do", writable: "list" });
               } else {
                 callResult._destroyed = undefined;
               }
@@ -8841,7 +8841,7 @@ class t {
               } else {
                 if ("_heartBeatTimeout" in callResult) {
                   const _Object4 = Object;
-                  Object.defineProperty(callResult, "_heartBeatTimeout", { value: "IconComponent", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
+                  Object.defineProperty(callResult, "_heartBeatTimeout", { value: "IconComponent", enumerable: "clipboard", configurable: "do", writable: "list" });
                 } else {
                   callResult._heartBeatTimeout = undefined;
                 }
@@ -8854,7 +8854,7 @@ class t {
                 } else {
                   if ("adTracker" in callResult) {
                     const _Object5 = Object;
-                    Object.defineProperty(callResult, "adTracker", { value: "IconComponent", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
+                    Object.defineProperty(callResult, "adTracker", { value: "IconComponent", enumerable: "clipboard", configurable: "do", writable: "list" });
                   } else {
                     callResult.adTracker = undefined;
                   }
@@ -8867,7 +8867,7 @@ class t {
                   } else {
                     if ("dashjs" in callResult) {
                       const _Object6 = Object;
-                      Object.defineProperty(callResult, "dashjs", { value: "IconComponent", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
+                      Object.defineProperty(callResult, "dashjs", { value: "IconComponent", enumerable: "clipboard", configurable: "do", writable: "list" });
                     } else {
                       callResult.dashjs = undefined;
                     }
@@ -8880,7 +8880,7 @@ class t {
                     } else {
                       if ("data" in callResult) {
                         const _Object7 = Object;
-                        Object.defineProperty(callResult, "data", { value: "IconComponent", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
+                        Object.defineProperty(callResult, "data", { value: "IconComponent", enumerable: "clipboard", configurable: "do", writable: "list" });
                       } else {
                         callResult.data = undefined;
                       }
@@ -8893,7 +8893,7 @@ class t {
                       } else {
                         if ("disablePlayheadRebufferTracking" in callResult) {
                           const _Object8 = Object;
-                          Object.defineProperty(callResult, "disablePlayheadRebufferTracking", { value: "IconComponent", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
+                          Object.defineProperty(callResult, "disablePlayheadRebufferTracking", { value: "IconComponent", enumerable: "clipboard", configurable: "do", writable: "list" });
                         } else {
                           callResult.disablePlayheadRebufferTracking = undefined;
                         }
@@ -8906,7 +8906,7 @@ class t {
                         } else {
                           if ("disableRebufferTracking" in callResult) {
                             const _Object9 = Object;
-                            Object.defineProperty(callResult, "disableRebufferTracking", { value: "IconComponent", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
+                            Object.defineProperty(callResult, "disableRebufferTracking", { value: "IconComponent", enumerable: "clipboard", configurable: "do", writable: "list" });
                           } else {
                             callResult.disableRebufferTracking = undefined;
                           }
@@ -8919,7 +8919,7 @@ class t {
                           } else {
                             if ("errorTracker" in callResult) {
                               const _Object10 = Object;
-                              Object.defineProperty(callResult, "errorTracker", { value: "IconComponent", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
+                              Object.defineProperty(callResult, "errorTracker", { value: "IconComponent", enumerable: "clipboard", configurable: "do", writable: "list" });
                             } else {
                               callResult.errorTracker = undefined;
                             }
@@ -8932,7 +8932,7 @@ class t {
                             } else {
                               if ("errorTranslator" in callResult) {
                                 const _Object11 = Object;
-                                Object.defineProperty(callResult, "errorTranslator", { value: "IconComponent", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
+                                Object.defineProperty(callResult, "errorTranslator", { value: "IconComponent", enumerable: "clipboard", configurable: "do", writable: "list" });
                               } else {
                                 callResult.errorTranslator = undefined;
                               }
@@ -8945,7 +8945,7 @@ class t {
                               } else {
                                 if ("emitTranslator" in callResult) {
                                   const _Object12 = Object;
-                                  Object.defineProperty(callResult, "emitTranslator", { value: "IconComponent", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
+                                  Object.defineProperty(callResult, "emitTranslator", { value: "IconComponent", enumerable: "clipboard", configurable: "do", writable: "list" });
                                 } else {
                                   callResult.emitTranslator = undefined;
                                 }
@@ -8958,7 +8958,7 @@ class t {
                                 } else {
                                   if ("getAdData" in callResult) {
                                     const _Object13 = Object;
-                                    Object.defineProperty(callResult, "getAdData", { value: "IconComponent", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
+                                    Object.defineProperty(callResult, "getAdData", { value: "IconComponent", enumerable: "clipboard", configurable: "do", writable: "list" });
                                   } else {
                                     callResult.getAdData = undefined;
                                   }
@@ -8971,7 +8971,7 @@ class t {
                                   } else {
                                     if ("getPlayheadTime" in callResult) {
                                       const _Object14 = Object;
-                                      Object.defineProperty(callResult, "getPlayheadTime", { value: "IconComponent", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
+                                      Object.defineProperty(callResult, "getPlayheadTime", { value: "IconComponent", enumerable: "clipboard", configurable: "do", writable: "list" });
                                     } else {
                                       callResult.getPlayheadTime = undefined;
                                     }
@@ -8984,7 +8984,7 @@ class t {
                                     } else {
                                       if ("getStateData" in callResult) {
                                         const _Object15 = Object;
-                                        Object.defineProperty(callResult, "getStateData", { value: "IconComponent", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
+                                        Object.defineProperty(callResult, "getStateData", { value: "IconComponent", enumerable: "clipboard", configurable: "do", writable: "list" });
                                       } else {
                                         callResult.getStateData = undefined;
                                       }
@@ -8997,7 +8997,7 @@ class t {
                                       } else {
                                         if ("stateDataTranslator" in callResult) {
                                           const _Object16 = Object;
-                                          Object.defineProperty(callResult, "stateDataTranslator", { value: "IconComponent", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
+                                          Object.defineProperty(callResult, "stateDataTranslator", { value: "IconComponent", enumerable: "clipboard", configurable: "do", writable: "list" });
                                         } else {
                                           callResult.stateDataTranslator = undefined;
                                         }
@@ -9010,7 +9010,7 @@ class t {
                                         } else {
                                           if ("hlsjs" in callResult) {
                                             const _Object17 = Object;
-                                            Object.defineProperty(callResult, "hlsjs", { value: "IconComponent", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
+                                            Object.defineProperty(callResult, "hlsjs", { value: "IconComponent", enumerable: "clipboard", configurable: "do", writable: "list" });
                                           } else {
                                             callResult.hlsjs = undefined;
                                           }
@@ -9023,7 +9023,7 @@ class t {
                                           } else {
                                             if ("id" in callResult) {
                                               const _Object18 = Object;
-                                              Object.defineProperty(callResult, "id", { value: "IconComponent", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
+                                              Object.defineProperty(callResult, "id", { value: "IconComponent", enumerable: "clipboard", configurable: "do", writable: "list" });
                                             } else {
                                               callResult.id = undefined;
                                             }
@@ -9036,7 +9036,7 @@ class t {
                                             } else {
                                               if ("longResumeTracker" in callResult) {
                                                 const _Object19 = Object;
-                                                Object.defineProperty(callResult, "longResumeTracker", { value: "IconComponent", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
+                                                Object.defineProperty(callResult, "longResumeTracker", { value: "IconComponent", enumerable: "clipboard", configurable: "do", writable: "list" });
                                               } else {
                                                 callResult.longResumeTracker = undefined;
                                               }
@@ -9049,7 +9049,7 @@ class t {
                                               } else {
                                                 if ("minimumRebufferDuration" in callResult) {
                                                   const _Object20 = Object;
-                                                  Object.defineProperty(callResult, "minimumRebufferDuration", { value: "IconComponent", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
+                                                  Object.defineProperty(callResult, "minimumRebufferDuration", { value: "IconComponent", enumerable: "clipboard", configurable: "do", writable: "list" });
                                                 } else {
                                                   callResult.minimumRebufferDuration = undefined;
                                                 }
@@ -9062,7 +9062,7 @@ class t {
                                                 } else {
                                                   if ("mux" in callResult) {
                                                     const _Object21 = Object;
-                                                    Object.defineProperty(callResult, "mux", { value: "IconComponent", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
+                                                    Object.defineProperty(callResult, "mux", { value: "IconComponent", enumerable: "clipboard", configurable: "do", writable: "list" });
                                                   } else {
                                                     callResult.mux = undefined;
                                                   }
@@ -9075,7 +9075,7 @@ class t {
                                                   } else {
                                                     if ("playbackEventDispatcher" in callResult) {
                                                       const _Object22 = Object;
-                                                      Object.defineProperty(callResult, "playbackEventDispatcher", { value: "IconComponent", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
+                                                      Object.defineProperty(callResult, "playbackEventDispatcher", { value: "IconComponent", enumerable: "clipboard", configurable: "do", writable: "list" });
                                                     } else {
                                                       callResult.playbackEventDispatcher = undefined;
                                                     }
@@ -9088,7 +9088,7 @@ class t {
                                                     } else {
                                                       if ("playbackHeartbeat" in callResult) {
                                                         const _Object23 = Object;
-                                                        Object.defineProperty(callResult, "playbackHeartbeat", { value: "IconComponent", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
+                                                        Object.defineProperty(callResult, "playbackHeartbeat", { value: "IconComponent", enumerable: "clipboard", configurable: "do", writable: "list" });
                                                       } else {
                                                         callResult.playbackHeartbeat = undefined;
                                                       }
@@ -9101,7 +9101,7 @@ class t {
                                                       } else {
                                                         if ("playbackHeartbeatTime" in callResult) {
                                                           const _Object24 = Object;
-                                                          Object.defineProperty(callResult, "playbackHeartbeatTime", { value: "IconComponent", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
+                                                          Object.defineProperty(callResult, "playbackHeartbeatTime", { value: "IconComponent", enumerable: "clipboard", configurable: "do", writable: "list" });
                                                         } else {
                                                           callResult.playbackHeartbeatTime = undefined;
                                                         }
@@ -9114,7 +9114,7 @@ class t {
                                                         } else {
                                                           if ("playheadTime" in callResult) {
                                                             const _Object25 = Object;
-                                                            Object.defineProperty(callResult, "playheadTime", { value: "IconComponent", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
+                                                            Object.defineProperty(callResult, "playheadTime", { value: "IconComponent", enumerable: "clipboard", configurable: "do", writable: "list" });
                                                           } else {
                                                             callResult.playheadTime = undefined;
                                                           }
@@ -9127,7 +9127,7 @@ class t {
                                                           } else {
                                                             if ("seekingTracker" in callResult) {
                                                               const _Object26 = Object;
-                                                              Object.defineProperty(callResult, "seekingTracker", { value: "IconComponent", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
+                                                              Object.defineProperty(callResult, "seekingTracker", { value: "IconComponent", enumerable: "clipboard", configurable: "do", writable: "list" });
                                                             } else {
                                                               callResult.seekingTracker = undefined;
                                                             }
@@ -9140,7 +9140,7 @@ class t {
                                                             } else {
                                                               if ("sustainedRebufferThreshold" in callResult) {
                                                                 const _Object27 = Object;
-                                                                Object.defineProperty(callResult, "sustainedRebufferThreshold", { value: "IconComponent", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
+                                                                Object.defineProperty(callResult, "sustainedRebufferThreshold", { value: "IconComponent", enumerable: "clipboard", configurable: "do", writable: "list" });
                                                               } else {
                                                                 callResult.sustainedRebufferThreshold = undefined;
                                                               }
@@ -9153,7 +9153,7 @@ class t {
                                                               } else {
                                                                 if ("watchTimeTracker" in callResult) {
                                                                   const _Object28 = Object;
-                                                                  Object.defineProperty(callResult, "watchTimeTracker", { value: "IconComponent", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
+                                                                  Object.defineProperty(callResult, "watchTimeTracker", { value: "IconComponent", enumerable: "clipboard", configurable: "do", writable: "list" });
                                                                 } else {
                                                                   callResult.watchTimeTracker = undefined;
                                                                 }
@@ -9166,7 +9166,7 @@ class t {
                                                                 } else {
                                                                   if ("currentFragmentPDT" in callResult) {
                                                                     const _Object29 = Object;
-                                                                    Object.defineProperty(callResult, "currentFragmentPDT", { value: "IconComponent", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
+                                                                    Object.defineProperty(callResult, "currentFragmentPDT", { value: "IconComponent", enumerable: "clipboard", configurable: "do", writable: "list" });
                                                                   } else {
                                                                     callResult.currentFragmentPDT = undefined;
                                                                   }
@@ -9179,7 +9179,7 @@ class t {
                                                                   } else {
                                                                     if ("currentFragmentStart" in callResult) {
                                                                       const _Object30 = Object;
-                                                                      Object.defineProperty(callResult, "currentFragmentStart", { value: "IconComponent", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
+                                                                      Object.defineProperty(callResult, "currentFragmentStart", { value: "IconComponent", enumerable: "clipboard", configurable: "do", writable: "list" });
                                                                     } else {
                                                                       callResult.currentFragmentStart = undefined;
                                                                     }
@@ -11009,7 +11009,7 @@ const items11 = [
                     }
                   });
                 }
-                let closure_10 = { video: "Array", audio: "channel", totalBitrate: "c" };
+                let closure_10 = { video: "Array", audio: "channel", totalBitrate: "keys" };
                 fn4 = function x(newQuality, arg1, arg2) {
                   let closure_0 = newQuality;
                   if (typeof newQuality.newQuality === "number") {

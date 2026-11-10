@@ -249,7 +249,7 @@ export function makeOfflineTransport(arg0) {
                 c3 = undefined;
                 c6 = 1;
                 c7 = 1;
-                return { value: "flexDirection", done: true };
+                return { value: "flexDirection", done: null };
               }
             } else if (1 === tmp4) {
               if (arg0 === 1) {

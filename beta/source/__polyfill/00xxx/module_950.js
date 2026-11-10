@@ -7233,7 +7233,7 @@ obj = function _getResponseInfo2() {
               closure_10 = undefined;
               c6 = 1;
               c7 = 1;
-              return { value: "flexDirection", done: true };
+              return { value: "flexDirection", done: null };
             }
           } else if (1 === c6) {
             if (arg0 === 1) {
@@ -8157,7 +8157,7 @@ obj = function _prepareReplayEvent() {
             settings = undefined;
             c3 = 1;
             c4 = 1;
-            return { value: "flexDirection", done: true };
+            return { value: "flexDirection", done: null };
           }
         } else if (1 === c3) {
           if (arg0 === 1) {
@@ -8359,7 +8359,7 @@ obj = function _sendReplayRequest() {
               closure_20 = undefined;
               c5 = 1;
               c6 = 1;
-              return { value: "flexDirection", done: true };
+              return { value: "flexDirection", done: null };
             }
           } else if (1 === c5) {
             if (arg0 === 1) {
@@ -8553,7 +8553,7 @@ obj = function _sendReplay() {
             error = undefined;
             c6 = 1;
             c7 = 1;
-            return { value: "flexDirection", done: true };
+            return { value: "flexDirection", done: null };
           }
         } else if (1 === tmp4) {
           if (arg0 === 1) {
@@ -12507,7 +12507,6 @@ try {
       }
     };
     let closure_4 = _asyncToGenerator(async function() {
-      let closure_6;
       let log;
       const self = this;
       closure_1 = arg0;
@@ -12515,70 +12514,113 @@ try {
       let c8 = 0;
       let c5 = 0;
       const iter = (async (arg0, value) => {
-        let reason;
-        if (1 === c7) {
+        if (c8 === 2) {
+          c8 = 3;
+          throw new TypeError("Generator functions may not be called on executing generators");
+        } else if (tmp3 === 3) {
           if (arg0 === 1) {
-            c8 = 3;
             throw value;
           } else if (arg0 === 2) {
-            c8 = 3;
             return { value, done: true };
-          } else if (closure_4._isEnabled) {
-            closure_4._isEnabled = false;
-            closure_4.recordingMode = "buffer";
-            c5 = 1;
-            const tmp13 = closure_1_130;
-            if (tmp13) {
-              eventBuffer = log.log;
-              let str = "";
-              if (reason) {
-                const _HermesInternal = HermesInternal;
-                str = " triggered by " + reason;
+          } else {
+            return { value: "HermesInternal", done: null };
+          }
+        } else {
+          try {
+            let flag;
+            let reason;
+            c8 = 2;
+            if (0 === c7) {
+              if (arg0 === 1) {
+                c8 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c8 = 3;
+                return { value, done: true };
+              } else {
+                closure_4 = self;
+                closure_3 = tmp;
+                flag = undefined;
+                reason = undefined;
+                obj4 = closure_1;
+                if (closure_1 === undefined) {
+                  obj4 = {};
+                }
+                flag = obj4.forceFlush ?? false;
+                reason = obj4.reason;
+                c7 = 1;
+                c8 = 1;
+                return { value: "flexDirection", done: null };
               }
-              eventBuffer("Stopping Replay" + str);
-            }
-            closure_1_149();
-            closure_4._removeListeners();
-            closure_4.stopRecording();
-            const _debouncedFlush = closure_4._debouncedFlush;
-            eventBuffer = _debouncedFlush.cancel();
-            const tmp27 = flag;
-            if (tmp27) {
-              eventBuffer = closure_4._flush({ force: true });
-              c7 = 3;
-              c8 = 1;
-              return { value: eventBuffer, done: false };
             } else {
-              eventBuffer = closure_4.eventBuffer;
-              if (eventBuffer != null) {
-                eventBuffer.destroy();
+              if (1 === c7) {
+                if (arg0 === 1) {
+                  c8 = 3;
+                  throw value;
+                } else if (arg0 === 2) {
+                  c8 = 3;
+                  return { value, done: true };
+                } else if (closure_4._isEnabled) {
+                  closure_4._isEnabled = false;
+                  closure_4.recordingMode = "buffer";
+                  c5 = 1;
+                  const tmp13 = closure_1_130;
+                  if (tmp13) {
+                    eventBuffer = log.log;
+                    let str = "";
+                    if (reason) {
+                      const _HermesInternal = HermesInternal;
+                      str = " triggered by " + reason;
+                    }
+                    eventBuffer("Stopping Replay" + str);
+                  }
+                  closure_1_149();
+                  closure_4._removeListeners();
+                  closure_4.stopRecording();
+                  const _debouncedFlush = closure_4._debouncedFlush;
+                  eventBuffer = _debouncedFlush.cancel();
+                  const tmp27 = flag;
+                  if (tmp27) {
+                    eventBuffer = closure_4._flush({ force: true });
+                    c7 = 3;
+                    c8 = 1;
+                    return { value: eventBuffer, done: false };
+                  } else {
+                    eventBuffer = closure_4.eventBuffer;
+                    if (eventBuffer != null) {
+                      eventBuffer.destroy();
+                    }
+                    eventBuffer = closure_4;
+                    closure_4.eventBuffer = null;
+                    closure_1_140(closure_4);
+                    c5 = 0;
+                  }
+                }
+              } else if (2 === c7) {
+                c5 = 0;
+                closure_2 = closure_6;
+                closure_4.handleException(closure_2);
+              } else if (arg0 === 1) {
+                c8 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c5 = 0;
+                c8 = 3;
+                return { value, done: true };
               }
-              eventBuffer = closure_4;
-              closure_4.eventBuffer = null;
-              closure_1_140(closure_4);
-              c5 = 0;
+              c8 = 3;
+              return { value: "HermesInternal", done: null };
+            }
+          } catch (tmp35) {
+            closure_6 = tmp35;
+            if (0 === c5) {
+              c8 = 3;
+              throw tmp35;
+            } else {
+              c7 = 2;
             }
           }
-        } else if (2 === c7) {
-          c5 = 0;
-          closure_2 = closure_6;
-          closure_4.handleException(closure_2);
-        } else if (arg0 === 1) {
-          c8 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c5 = 0;
-          c8 = 3;
-          return { value, done: true };
         }
-        await "HermesInternal";
-        closure_4 = self;
-        obj4 = closure_1;
-        if (closure_1 === undefined) {
-          obj4 = {};
-        }
-        reason = obj4.reason;
-        return "flexDirection";
       })();
       iter.next();
       return iter;
@@ -12625,37 +12667,95 @@ try {
       closure_1 = arg0;
       let c5 = 0;
       let c6 = 0;
-      const iter = (async () => {
-        if ("session" === closure_4.recordingMode) {
-          return closure_4.flushImmediate();
-        }
-        const _Date = Date;
-        closure_1 = Date.now();
-        const tmp21 = closure_1_130;
-        if (tmp21) {
-          logger.log("Converting buffer to session");
-        }
-        await closure_4.flushImmediate();
-        closure_2 = closure_4.stopRecording();
-        const tmp6 = flag2 && closure_2 && "session" !== closure_4.recordingMode;
-        if (tmp6) {
-          closure_4.recordingMode = "session";
-          if (closure_4.session) {
-            closure_4.session.dirty = false;
-            closure_4._updateUserActivity(closure_1);
-            const result = closure_4._updateSessionActivity(closure_1);
-            closure_4._maybeSaveSession();
+      const iter = (async (arg0, value) => {
+        if (c6 === 2) {
+          c6 = 3;
+          throw new TypeError("Generator functions may not be called on executing generators");
+        } else if (tmp3 === 3) {
+          if (arg0 === 1) {
+            throw value;
+          } else if (arg0 === 2) {
+            return { value, done: true };
+          } else {
+            return { value: "HermesInternal", done: null };
           }
-          closure_4.startRecording();
+        } else {
+          try {
+            let flag2;
+            c6 = 2;
+            if (0 === c5) {
+              if (arg0 === 1) {
+                c6 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c6 = 3;
+                return { value, done: true };
+              } else {
+                closure_4 = self;
+                closure_3 = self;
+                closure_2 = tmp;
+                flag2 = undefined;
+                obj4 = closure_1;
+                if (closure_1 === undefined) {
+                  obj4 = {};
+                }
+                flag2 = obj4.continueRecording ?? true;
+                closure_1 = undefined;
+                closure_2 = undefined;
+                c5 = 1;
+                c6 = 1;
+                return { value: "flexDirection", done: null };
+              }
+            } else if (1 === tmp4) {
+              if (arg0 === 1) {
+                c6 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c6 = 3;
+                return { value, done: true };
+              } else if ("session" === closure_4.recordingMode) {
+                c6 = 3;
+                obj6 = { value: closure_4.flushImmediate(), done: true };
+                return obj6;
+              } else {
+                const _Date = Date;
+                closure_1 = Date.now();
+                const tmp21 = closure_1_130;
+                if (tmp21) {
+                  logger.log("Converting buffer to session");
+                }
+                c5 = 2;
+                c6 = 1;
+                obj7 = { value: closure_4.flushImmediate(), done: false };
+                return obj7;
+              }
+            } else if (arg0 === 1) {
+              c6 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c6 = 3;
+              return { value, done: true };
+            } else {
+              closure_2 = closure_4.stopRecording();
+              const tmp6 = flag2 && closure_2 && "session" !== closure_4.recordingMode;
+              if (tmp6) {
+                closure_4.recordingMode = "session";
+                if (closure_4.session) {
+                  closure_4.session.dirty = false;
+                  closure_4._updateUserActivity(closure_1);
+                  const result = closure_4._updateSessionActivity(closure_1);
+                  closure_4._maybeSaveSession();
+                }
+                closure_4.startRecording();
+              }
+              c6 = 3;
+              return { value: "HermesInternal", done: null };
+            }
+          } catch (tmp28) {
+            c6 = 3;
+            throw tmp28;
+          }
         }
-        await "HermesInternal";
-        closure_4 = self;
-        closure_3 = self;
-        closure_2 = tmp;
-        if (closure_1 === undefined) {
-          obj4 = {};
-        }
-        return "flexDirection";
       })();
       iter.next();
       return iter;
@@ -14208,7 +14308,6 @@ try {
       }
     };
     _require = _asyncToGenerator(async function() {
-      let closure_6;
       let logger;
       const self = this;
       closure_1 = arg0;
@@ -14216,112 +14315,163 @@ try {
       let c8 = 0;
       let c5 = 0;
       const iter = (async (arg0, value) => {
-        let _flushLock;
-        if (1 === c7) {
+        if (c8 === 2) {
+          c8 = 3;
+          throw new TypeError("Generator functions may not be called on executing generators");
+        } else if (tmp3 === 3) {
           if (arg0 === 1) {
-            c8 = 3;
             throw value;
           } else if (arg0 === 2) {
-            c8 = 3;
-            return { value, done: true };
-          } else if (closure_4._isEnabled) {
-            if (closure_4.checkAndHandleExpiredSession()) {
-              if (closure_4.session) {
-                const started = closure_4.session.started;
-                const _Date = Date;
-                closure_2 = Date.now() - started;
-                const _debouncedFlush = closure_4._debouncedFlush;
-                _debouncedFlush.cancel();
-                closure_3 = closure_2 < closure_4._options.minReplayDuration;
-                closure_4 = closure_2 > closure_4._options.maxReplayDuration + 5000;
-                const tmp42 = closure_3;
-                if (!tmp42) {
-                  const tmp44 = closure_4;
-                  if (!tmp44) {
-                    const eventBuffer = closure_4.eventBuffer;
-                    const tmp46 = eventBuffer && 0 === closure_4.session.segmentId && !eventBuffer.hasCheckout && closure_1_130;
-                    if (tmp46) {
-                      logger.log("Flushing initial segment without checkout.");
-                    }
-                    _flushLock = closure_4._flushLock;
-                    if (!_flushLock) {
-                      closure_4._flushLock = closure_4._runFlush();
-                    }
-                    c5 = 2;
-                    c7 = 4;
-                    c8 = 1;
-                    return { value: closure_4._flushLock, done: false };
-                  }
-                }
-                const tmp59 = closure_1_130;
-                if (tmp59) {
-                  const _Math = Math;
-                  const log = logger.log;
-                  const rounded = Math.floor(closure_2 / 1000);
-                  let str = "long";
-                  if (closure_3) {
-                    str = "short";
-                  }
-                  const _HermesInternal = HermesInternal;
-                  log("Session duration (" + rounded + "s) is too " + str + ", not sending replay.");
-                }
-                const tmp69 = closure_3;
-                if (tmp69) {
-                  closure_4._debouncedFlush();
-                }
-                c8 = 3;
-                return { value: undefined, done: true };
-              }
-            } else {
-              const tmp32 = closure_1_130;
-              if (tmp32) {
-                logger.error("Attempting to finish replay event after session expired.");
-              }
-            }
-          }
-        } else if (2 === c7) {
-          c5 = 0;
-          closure_4._flushLock = undefined;
-          const tmp23 = closure_6;
-          if (_flushLock) {
-            closure_4._debouncedFlush();
-          }
-          throw tmp23;
-        } else {
-          if (3 === c7) {
-            c5 = 1;
-            let closure_7 = closure_6;
-            closure_4.handleException(closure_7);
-          } else if (arg0 === 1) {
-            c8 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c5 = 0;
-            closure_4._flushLock = undefined;
-            const tmp7 = _flushLock;
-            if (tmp7) {
-              closure_4._debouncedFlush();
-            }
-            c8 = 3;
             return { value, done: true };
           } else {
-            c5 = 1;
+            return { value: "HermesInternal", done: null };
           }
-          c5 = 0;
-          closure_4._flushLock = undefined;
-          const tmp18 = _flushLock;
-          if (tmp18) {
-            closure_4._debouncedFlush();
+        } else {
+          try {
+            let started;
+            let eventBuffer;
+            let _flushLock;
+            c8 = 2;
+            if (0 === c7) {
+              if (arg0 === 1) {
+                c8 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c8 = 3;
+                return { value, done: true };
+              } else {
+                closure_4 = self;
+                closure_3 = tmp;
+                closure_2 = self;
+                let flag;
+                obj4 = closure_1;
+                if (closure_1 === undefined) {
+                  obj4 = {};
+                }
+                flag = obj4.force ?? false;
+                started = undefined;
+                closure_2 = undefined;
+                closure_3 = undefined;
+                closure_4 = undefined;
+                eventBuffer = undefined;
+                _flushLock = undefined;
+                c7 = 1;
+                c8 = 1;
+                return { value: "flexDirection", done: null };
+              }
+            } else {
+              if (1 === c7) {
+                if (arg0 === 1) {
+                  c8 = 3;
+                  throw value;
+                } else if (arg0 === 2) {
+                  c8 = 3;
+                  return { value, done: true };
+                } else if (closure_4._isEnabled) {
+                  if (closure_4.checkAndHandleExpiredSession()) {
+                    if (closure_4.session) {
+                      started = closure_4.session.started;
+                      const _Date = Date;
+                      closure_2 = Date.now() - started;
+                      const _debouncedFlush = closure_4._debouncedFlush;
+                      _debouncedFlush.cancel();
+                      closure_3 = closure_2 < closure_4._options.minReplayDuration;
+                      closure_4 = closure_2 > closure_4._options.maxReplayDuration + 5000;
+                      const tmp42 = closure_3;
+                      if (!tmp42) {
+                        const tmp44 = closure_4;
+                        if (!tmp44) {
+                          eventBuffer = closure_4.eventBuffer;
+                          const tmp46 = eventBuffer && 0 === closure_4.session.segmentId && !eventBuffer.hasCheckout && closure_1_130;
+                          if (tmp46) {
+                            logger.log("Flushing initial segment without checkout.");
+                          }
+                          _flushLock = closure_4._flushLock;
+                          if (!_flushLock) {
+                            closure_4._flushLock = closure_4._runFlush();
+                          }
+                          c5 = 2;
+                          c7 = 4;
+                          c8 = 1;
+                          return { value: closure_4._flushLock, done: false };
+                        }
+                      }
+                      const tmp59 = closure_1_130;
+                      if (tmp59) {
+                        const _Math = Math;
+                        const log = logger.log;
+                        const rounded = Math.floor(closure_2 / 1000);
+                        let str = "long";
+                        if (closure_3) {
+                          str = "short";
+                        }
+                        const _HermesInternal = HermesInternal;
+                        log("Session duration (" + rounded + "s) is too " + str + ", not sending replay.");
+                      }
+                      const tmp69 = closure_3;
+                      if (tmp69) {
+                        closure_4._debouncedFlush();
+                      }
+                      c8 = 3;
+                      return { value: undefined, done: true };
+                    }
+                  } else {
+                    const tmp32 = closure_1_130;
+                    if (tmp32) {
+                      logger.error("Attempting to finish replay event after session expired.");
+                    }
+                  }
+                }
+              } else if (2 === c7) {
+                c5 = 0;
+                closure_4._flushLock = undefined;
+                const tmp23 = closure_6;
+                if (_flushLock) {
+                  closure_4._debouncedFlush();
+                }
+                throw tmp23;
+              } else {
+                if (3 === c7) {
+                  c5 = 1;
+                  let closure_7 = closure_6;
+                  closure_4.handleException(closure_7);
+                } else if (arg0 === 1) {
+                  c8 = 3;
+                  throw value;
+                } else if (arg0 === 2) {
+                  c5 = 0;
+                  closure_4._flushLock = undefined;
+                  const tmp7 = _flushLock;
+                  if (tmp7) {
+                    closure_4._debouncedFlush();
+                  }
+                  c8 = 3;
+                  return { value, done: true };
+                } else {
+                  c5 = 1;
+                }
+                c5 = 0;
+                closure_4._flushLock = undefined;
+                const tmp18 = _flushLock;
+                if (tmp18) {
+                  closure_4._debouncedFlush();
+                }
+              }
+              c8 = 3;
+              return { value: "HermesInternal", done: null };
+            }
+          } catch (tmp73) {
+            closure_6 = tmp73;
+            if (0 === c5) {
+              c8 = 3;
+              throw tmp73;
+            } else if (1 === tmp75) {
+              c7 = 2;
+            } else {
+              c7 = 3;
+            }
           }
         }
-        await "HermesInternal";
-        closure_4 = self;
-        closure_3 = tmp;
-        closure_2 = self;
-        if (closure_1 === undefined) {
-          obj4 = {};
-        }
-        return "flexDirection";
       })();
       iter.next();
       return iter;

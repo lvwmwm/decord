@@ -33,7 +33,7 @@ import getQuestLogger from "getQuestLogger" /* 7930 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7350 */;
 import size from "module_2" /* 2 */;
 
-let map, set;
+let c3, c4, map, set;
 
 let QuestsExperimentLocations;
 let closure_12;
@@ -375,26 +375,80 @@ class QuestProgressManager extends AutomaticLifecycleManager {
       }
     };
     new Map();
-    applyArgumentsResult = _asyncToGenerator(async (arg0) => {
-      let c3;
-      let c4;
-      let closure_1;
+    applyArgumentsResult = _asyncToGenerator(async (arg0, value) => {
       closure_0 = arg0;
-      await closure_1_18(applicationId);
-      const syncHeartbeats = closure_130_1.syncHeartbeats;
-      const items = [closure_0(closure_2[23]).FirstPartyQuestTaskTypes.PLAY_ACTIVITY];
-      syncHeartbeats(items, "FRAME_LAUNCH", (config) => {
-        let hasItem = null != config;
-        if (hasItem) {
-          const features = config.config.features;
-          hasItem = features.includes(closure_1_0(closure_1_2[16]).QuestVariants.MANUAL_HEARTBEAT_INITIALIZATION);
+      if (c4 === 2) {
+        c4 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          const obj2 = { value, done: true };
+          return obj2;
+        } else {
+          return { value: "HermesInternal", done: null };
         }
-        return !hasItem;
-      });
-      await "HermesInternal";
-      closure_2 = tmp4;
-      applicationId = closure_0.applicationId;
-      return "flexDirection";
+      } else {
+        try {
+          let closure_2;
+          c4 = 2;
+          if (0 === c3) {
+            if (arg0 === 1) {
+              c4 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c4 = 3;
+              const obj3 = { value, done: true };
+              return obj3;
+            } else {
+              closure_2 = tmp4;
+              let closure_1 = tmp;
+              applicationId = closure_0.applicationId;
+              c3 = 1;
+              c4 = 1;
+              return { value: "flexDirection", done: null };
+            }
+          } else if (1 === c3) {
+            if (arg0 === 1) {
+              c4 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c4 = 3;
+              const obj4 = { value, done: true };
+              return obj4;
+            } else {
+              c3 = 2;
+              c4 = 1;
+              const obj5 = { value: closure_1_18(applicationId), done: false };
+              return obj5;
+            }
+          } else if (arg0 === 1) {
+            c4 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c4 = 3;
+            const obj = { value, done: true };
+            return obj;
+          } else {
+            const syncHeartbeats = closure_130_1.syncHeartbeats;
+            const items = [closure_0(closure_2[23]).FirstPartyQuestTaskTypes.PLAY_ACTIVITY];
+            syncHeartbeats(items, "FRAME_LAUNCH", (config) => {
+              let hasItem = null != config;
+              if (hasItem) {
+                const features = config.config.features;
+                hasItem = features.includes(closure_1_0(closure_1_2[16]).QuestVariants.MANUAL_HEARTBEAT_INITIALIZATION);
+              }
+              return !hasItem;
+            });
+            c4 = 3;
+            return { value: "HermesInternal", done: null };
+          }
+        } catch (tmp16) {
+          c4 = 3;
+          throw tmp16;
+        }
+      }
     });
     applyArgumentsResult.actions = obj2;
     return applyArgumentsResult;

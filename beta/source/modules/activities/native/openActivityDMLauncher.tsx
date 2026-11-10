@@ -67,7 +67,7 @@ let obj = function _openActivityDMLauncher() {
               id = undefined;
               c3 = 1;
               linkChannelId = 1;
-              return { value: "flexDirection", done: true };
+              return { value: "flexDirection", done: null };
             }
           } else if (1 === c3) {
             if (arg0 === 1) {

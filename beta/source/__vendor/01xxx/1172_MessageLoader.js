@@ -10,7 +10,7 @@ import _slicedToArray from "_slicedToArray" /* 32 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 
-let c0, c1, closure_2, closure_4, messages;
+let c0, c1, closure_4, messages;
 
 let fn = this;
 if (this) {
@@ -455,65 +455,14 @@ let items = [
     key: "waitForLocaleLoaded",
     value: function waitForLocaleLoaded(defaultLocale) {
       return fn(this, arguments, undefined, function(arg0) {
-        let closure_3;
         const self = this;
         let closure_1 = arg0;
-        const ref = arg1;
+        let ref = arg1;
         let c5 = 0;
         let c6 = 0;
         const iter = (function*(arg0, value) {
-          let flag;
-          if (1 === tmp4) {
-            if (arg0 === 1) {
-              c6 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c6 = 3;
-              return { value, done: true };
-            } else if (null == closure_4._localeLoadingPromises[closure_0]) {
-              c6 = 3;
-              const obj5 = { value: closure_4._loadLocale(closure_0), done: true };
-              return obj5;
-            } else {
-              const initialized = ref.initialized && !flag;
-              if (!initialized) {
-                c5 = 2;
-                c6 = 1;
-                return { value: closure_4._localeLoadingPromises[closure_0].current, done: false };
-              }
-            }
-          } else if (arg0 === 1) {
+          if (c6 === 2) {
             c6 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c6 = 3;
-            return { value, done: true };
-          }
-          yield "HermesInternal";
-          closure_4 = self;
-          closure_0 = closure_1;
-          flag = ref;
-          if (ref === undefined) {
-            flag = false;
-          }
-          return "flexDirection";
-        })();
-        iter.next();
-        return iter;
-      });
-    }
-  },
-  {
-    key: "waitForDefaultLocale",
-    value: function waitForDefaultLocale() {
-      return fn(this, arguments, undefined, function() {
-        const self = this;
-        let closure_1 = arg0;
-        let c4 = 0;
-        let c5 = 0;
-        const iter = (function*(arg0, value) {
-          if (c5 === 2) {
-            c5 = 3;
             throw new TypeError("Generator functions may not be called on executing generators");
           } else if (tmp3 === 3) {
             if (arg0 === 1) {
@@ -525,42 +474,90 @@ let items = [
             }
           } else {
             try {
+              let closure_0;
               let flag;
-              c5 = 2;
-              if (0 === c4) {
+              c6 = 2;
+              if (0 === c5) {
                 if (arg0 === 1) {
-                  c5 = 3;
+                  c6 = 3;
                   throw value;
                 } else if (arg0 === 2) {
-                  c5 = 3;
+                  c6 = 3;
                   return { value, done: true };
                 } else {
-                  closure_3 = self;
-                  closure_2 = tmp;
-                  flag = closure_1;
-                  if (closure_1 === undefined) {
+                  closure_4 = self;
+                  closure_3 = tmp;
+                  closure_0 = closure_1;
+                  flag = ref;
+                  if (ref === undefined) {
                     flag = false;
                   }
-                  c4 = 1;
+                  ref = undefined;
                   c5 = 1;
-                  return { value: "flexDirection", done: true };
+                  c6 = 1;
+                  return { value: "flexDirection", done: null };
                 }
-              } else if (arg0 === 1) {
-                c5 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c5 = 3;
-                return { value, done: true };
               } else {
-                c5 = 3;
-                const obj = { value: closure_3.waitForLocaleLoaded(closure_3.defaultLocale, flag), done: true };
-                return obj;
+                if (1 === tmp4) {
+                  if (arg0 === 1) {
+                    c6 = 3;
+                    throw value;
+                  } else if (arg0 === 2) {
+                    c6 = 3;
+                    return { value, done: true };
+                  } else {
+                    ref = closure_4._localeLoadingPromises[closure_0];
+                    if (null == ref) {
+                      c6 = 3;
+                      const obj5 = { value: closure_4._loadLocale(closure_0), done: true };
+                      return obj5;
+                    } else {
+                      const initialized = ref.initialized && !flag;
+                      if (!initialized) {
+                        c5 = 2;
+                        c6 = 1;
+                        return { value: ref.current, done: false };
+                      }
+                    }
+                  }
+                } else if (arg0 === 1) {
+                  c6 = 3;
+                  throw value;
+                } else if (arg0 === 2) {
+                  c6 = 3;
+                  return { value, done: true };
+                }
+                c6 = 3;
+                return { value: "HermesInternal", done: null };
               }
-            } catch (tmp9) {
-              c5 = 3;
-              throw tmp9;
+            } catch (tmp16) {
+              c6 = 3;
+              throw tmp16;
             }
           }
+        })();
+        iter.next();
+        return iter;
+      });
+    }
+  },
+  {
+    key: "waitForDefaultLocale",
+    value: function waitForDefaultLocale() {
+      return fn(this, arguments, undefined, function() {
+        let closure_2;
+        const self = this;
+        let closure_1 = arg0;
+        let c4 = 0;
+        let c5 = 0;
+        const iter = (function*() {
+          closure_3 = self;
+          let flag = closure_1;
+          if (closure_1 === undefined) {
+            flag = false;
+          }
+          yield "flexDirection";
+          return closure_3.waitForLocaleLoaded(closure_3.defaultLocale, flag);
         })();
         iter.next();
         return iter;

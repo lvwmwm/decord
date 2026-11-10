@@ -229,7 +229,7 @@ class PersistedStore extends Store {
       if (PersistedStore.shouldClear(c7, EmojiStore)) {
         const Storage2 = Storage3.Storage;
         Storage2.remove(EmojiStore);
-        return { state: "flexDirection", requiresPersist: true };
+        return { state: "flexDirection", requiresPersist: null };
       }
     }
     let value = null;

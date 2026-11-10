@@ -241,7 +241,7 @@ obj = function _startFrame() {
               frameParticipantId = undefined;
               referrerId = 1;
               source = 1;
-              return { value: "flexDirection", done: true };
+              return { value: "flexDirection", done: null };
             }
           } else if (1 === referrerId) {
             if (arg0 === 1) {

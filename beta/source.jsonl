@@ -24,7 +24,7 @@
 { "file": "__helpers/00xxx/727__enhanceEventWithSdkInfo.js", "size": 6464 }
 { "file": "__helpers/00xxx/744__INTERNAL_captureLog.js", "size": 9837 }
 { "file": "__helpers/00xxx/745__getTraceInfoFromScope.js", "size": 1676 }
-{ "file": "__helpers/00xxx/747__slicedToArray.js", "size": 2910 }
+{ "file": "__helpers/00xxx/747__slicedToArray.js", "size": 2914 }
 { "file": "__helpers/00xxx/749__INTERNAL_captureMetric.js", "size": 8814 }
 { "file": "__helpers/00xxx/757__enhanceErrorWithSentryInfo.js", "size": 7798 }
 { "file": "__helpers/00xxx/762__INTERNAL_clearAiProviderSkips.js", "size": 1122 }
@@ -45,7 +45,7 @@
 { "file": "__helpers/00xxx/932__onInp.js", "size": 7244 }
 { "file": "__helpers/00xxx/94__assertThisInitialized.js", "size": 471 }
 { "file": "__helpers/00xxx/940__eventFromRejectionWithPrimitive.js", "size": 7654 }
-{ "file": "__helpers/00xxx/949__getGraphQLOperation.js", "size": 13500 }
+{ "file": "__helpers/00xxx/949__getGraphQLOperation.js", "size": 13516 }
 { "file": "__helpers/00xxx/95__getPrototypeOf.js", "size": 577 }
 { "file": "__helpers/00xxx/96__get.js", "size": 989 }
 { "file": "__helpers/00xxx/97__superPropBase.js", "size": 763 }
@@ -436,7 +436,7 @@
 { "file": "__polyfill/00xxx/module_820.js", "size": 15193 }
 { "file": "__polyfill/00xxx/module_83.js", "size": 351 }
 { "file": "__polyfill/00xxx/module_841.js", "size": 40195 }
-{ "file": "__polyfill/00xxx/module_842.js", "size": 11479 }
+{ "file": "__polyfill/00xxx/module_842.js", "size": 11475 }
 { "file": "__polyfill/00xxx/module_848.js", "size": 505 }
 { "file": "__polyfill/00xxx/module_85.js", "size": 6561 }
 { "file": "__polyfill/00xxx/module_850.js", "size": 17512 }
@@ -481,7 +481,7 @@
 { "file": "__polyfill/00xxx/module_936.js", "size": 1072 }
 { "file": "__polyfill/00xxx/module_941.js", "size": 867 }
 { "file": "__polyfill/00xxx/module_944.js", "size": 1593 }
-{ "file": "__polyfill/00xxx/module_950.js", "size": 516701 }
+{ "file": "__polyfill/00xxx/module_950.js", "size": 522490 }
 { "file": "__polyfill/00xxx/module_951.js", "size": 54291 }
 { "file": "__polyfill/00xxx/module_956.js", "size": 3469 }
 { "file": "__polyfill/00xxx/module_959.js", "size": 1019 }
@@ -609,7 +609,7 @@
 { "file": "__polyfill/01xxx/module_1541.js", "size": 1077 }
 { "file": "__polyfill/01xxx/module_1542.js", "size": 764 }
 { "file": "__polyfill/01xxx/module_1545.js", "size": 17977 }
-{ "file": "__polyfill/01xxx/module_1549.js", "size": 6552 }
+{ "file": "__polyfill/01xxx/module_1549.js", "size": 6533 }
 { "file": "__polyfill/01xxx/module_1551.js", "size": 1471 }
 { "file": "__polyfill/01xxx/module_1552.js", "size": 465 }
 { "file": "__polyfill/01xxx/module_1553.js", "size": 12357 }
@@ -1144,7 +1144,7 @@
 { "file": "__polyfill/05xxx/module_5598.js", "size": 531 }
 { "file": "__polyfill/05xxx/module_5603.js", "size": 2286 }
 { "file": "__polyfill/05xxx/module_5607.js", "size": 160 }
-{ "file": "__polyfill/05xxx/module_5608.js", "size": 11593 }
+{ "file": "__polyfill/05xxx/module_5608.js", "size": 11595 }
 { "file": "__polyfill/05xxx/module_5611.js", "size": 160 }
 { "file": "__polyfill/05xxx/module_5612.js", "size": 5842 }
 { "file": "__polyfill/05xxx/module_5613.js", "size": 176 }
@@ -1156,7 +1156,7 @@
 { "file": "__polyfill/05xxx/module_5653.js", "size": 1282 }
 { "file": "__polyfill/05xxx/module_5658.js", "size": 6587 }
 { "file": "__polyfill/05xxx/module_5659.js", "size": 6458 }
-{ "file": "__polyfill/05xxx/module_5675.js", "size": 20801 }
+{ "file": "__polyfill/05xxx/module_5675.js", "size": 22198 }
 { "file": "__polyfill/05xxx/module_5680.js", "size": 2148 }
 { "file": "__polyfill/05xxx/module_5682.js", "size": 5729 }
 { "file": "__polyfill/05xxx/module_5690.js", "size": 76 }
@@ -1457,7 +1457,7 @@
 { "file": "__polyfill/09xxx/module_9507.js", "size": 4315 }
 { "file": "__polyfill/09xxx/module_9510.js", "size": 8900 }
 { "file": "__polyfill/09xxx/module_9923.js", "size": 2060 }
-{ "file": "__polyfill/09xxx/module_9925.js", "size": 349747 }
+{ "file": "__polyfill/09xxx/module_9925.js", "size": 349759 }
 { "file": "__polyfill/09xxx/module_9926.js", "size": 6181 }
 { "file": "__polyfill/09xxx/module_9932.js", "size": 29639 }
 { "file": "__polyfill/09xxx/module_9933.js", "size": 891 }
@@ -1468,7 +1468,7 @@
 { "file": "__polyfill/09xxx/module_9977.js", "size": 3060 }
 { "file": "__polyfill/09xxx/module_9978.js", "size": 19344 }
 { "file": "__polyfill/09xxx/module_9979.js", "size": 419 }
-{ "file": "__polyfill/09xxx/module_9980.js", "size": 19609 }
+{ "file": "__polyfill/09xxx/module_9980.js", "size": 19602 }
 { "file": "__polyfill/09xxx/module_9985.js", "size": 783 }
 { "file": "__polyfill/10xxx/module_10224.js", "size": 144 }
 { "file": "__polyfill/10xxx/module_10441.js", "size": 1788 }
@@ -1786,7 +1786,7 @@
 { "file": "__polyfill/13xxx/module_13296.js", "size": 1012 }
 { "file": "__polyfill/13xxx/module_13297.js", "size": 735 }
 { "file": "__polyfill/13xxx/module_13298.js", "size": 8418 }
-{ "file": "__polyfill/13xxx/module_13299.js", "size": 16521 }
+{ "file": "__polyfill/13xxx/module_13299.js", "size": 16502 }
 { "file": "__polyfill/13xxx/module_13300.js", "size": 518 }
 { "file": "__polyfill/13xxx/module_13301.js", "size": 4277 }
 { "file": "__polyfill/13xxx/module_13302.js", "size": 4858 }
@@ -1872,7 +1872,7 @@
 { "file": "__polyfill/14xxx/module_14703.js", "size": 1244 }
 { "file": "__polyfill/14xxx/module_14706.js", "size": 589 }
 { "file": "__polyfill/14xxx/module_14709.js", "size": 5206 }
-{ "file": "__polyfill/14xxx/module_14714.js", "size": 10643 }
+{ "file": "__polyfill/14xxx/module_14714.js", "size": 9478 }
 { "file": "__polyfill/14xxx/module_14718.js", "size": 14518 }
 { "file": "__polyfill/14xxx/module_14719.js", "size": 9071 }
 { "file": "__polyfill/14xxx/module_14720.js", "size": 712 }
@@ -1937,7 +1937,7 @@
 { "file": "__polyfill/16xxx/module_16252.js", "size": 296 }
 { "file": "__polyfill/16xxx/module_16253.js", "size": 2042 }
 { "file": "__polyfill/16xxx/module_16254.js", "size": 10172 }
-{ "file": "__polyfill/16xxx/module_16342.js", "size": 30072 }
+{ "file": "__polyfill/16xxx/module_16342.js", "size": 30064 }
 { "file": "__polyfill/16xxx/module_16344.js", "size": 8013 }
 { "file": "__polyfill/16xxx/module_16349.js", "size": 176780 }
 { "file": "__polyfill/16xxx/module_16385.js", "size": 7480 }
@@ -2041,7 +2041,7 @@
 { "file": "__polyfill/16xxx/module_16522.js", "size": 26683 }
 { "file": "__polyfill/16xxx/module_16523.js", "size": 5769 }
 { "file": "__polyfill/16xxx/module_16525.js", "size": 194 }
-{ "file": "__polyfill/16xxx/module_16529.js", "size": 19665 }
+{ "file": "__polyfill/16xxx/module_16529.js", "size": 19669 }
 { "file": "__polyfill/16xxx/module_16530.js", "size": 53371 }
 { "file": "__polyfill/16xxx/module_16531.js", "size": 2631 }
 { "file": "__polyfill/16xxx/module_16532.js", "size": 4658 }
@@ -2065,7 +2065,7 @@
 { "file": "__polyfill/16xxx/module_16579.js", "size": 525 }
 { "file": "__polyfill/16xxx/module_16736.js", "size": 603 }
 { "file": "__polyfill/17xxx/module_17369.js", "size": 42126 }
-{ "file": "__polyfill/17xxx/module_17440.js", "size": 494424 }
+{ "file": "__polyfill/17xxx/module_17440.js", "size": 492165 }
 { "file": "__polyfill/17xxx/module_17867.js", "size": 497 }
 { "file": "__polyfill/17xxx/module_17868.js", "size": 1147 }
 { "file": "__polyfill/17xxx/module_17872.js", "size": 11056 }
@@ -2075,7 +2075,7 @@
 { "file": "__polyfill/19xxx/module_19755.js", "size": 8145 }
 { "file": "__polyfill/19xxx/module_19756.js", "size": 4991 }
 { "file": "__polyfill/19xxx/module_19776.js", "size": 6472 }
-{ "file": "__polyfill/19xxx/module_19924.js", "size": 21891 }
+{ "file": "__polyfill/19xxx/module_19924.js", "size": 20256 }
 { "file": "__polyfill/19xxx/module_19926.js", "size": 506 }
 { "file": "__polyfill/19xxx/module_19927.js", "size": 1576 }
 { "file": "__polyfill/19xxx/module_19929.js", "size": 11014 }
@@ -2180,7 +2180,7 @@
 { "file": "__vendor/00xxx/323_clamp.js", "size": 311 }
 { "file": "__vendor/00xxx/324_CellRenderMask.js", "size": 4942 }
 { "file": "__vendor/00xxx/327_memoizeOne.js", "size": 1470 }
-{ "file": "__vendor/00xxx/328_Image.js", "size": 11247 }
+{ "file": "__vendor/00xxx/328_Image.js", "size": 11250 }
 { "file": "__vendor/00xxx/329_ImageLoader.js", "size": 302 }
 { "file": "__vendor/00xxx/332_convertObjectFitToResizeMode.js", "size": 444 }
 { "file": "__vendor/00xxx/333_unstable_setImageComponentDecorator.js", "size": 1576 }
@@ -2317,7 +2317,7 @@
 { "file": "__vendor/00xxx/597_Hash.js", "size": 819 }
 { "file": "__vendor/00xxx/598_hashClear.js", "size": 276 }
 { "file": "__vendor/00xxx/599_getNative.js", "size": 198 }
-{ "file": "__vendor/00xxx/60_processTransform.js", "size": 3158 }
+{ "file": "__vendor/00xxx/60_processTransform.js", "size": 3162 }
 { "file": "__vendor/00xxx/600_getNative.js", "size": 369 }
 { "file": "__vendor/00xxx/601_getValue.js", "size": 226 }
 { "file": "__vendor/00xxx/602_baseIsNative.js", "size": 815 }
@@ -2407,7 +2407,7 @@
 { "file": "__vendor/00xxx/703_GEN_AI_CONVERSATION_ID_ATTRIBUTE.js", "size": 1545 }
 { "file": "__vendor/00xxx/704_SPAN_STATUS_ERROR.js", "size": 3010 }
 { "file": "__vendor/00xxx/706_AsyncContextStack.js", "size": 8427 }
-{ "file": "__vendor/00xxx/707_Scope.js", "size": 17742 }
+{ "file": "__vendor/00xxx/707_Scope.js", "size": 17723 }
 { "file": "__vendor/00xxx/709_closeSession.js", "size": 3967 }
 { "file": "__vendor/00xxx/71_defineLazyObjectProperty.js", "size": 1524 }
 { "file": "__vendor/00xxx/710_merge.js", "size": 1042 }
@@ -2435,7 +2435,7 @@
 { "file": "__vendor/00xxx/746_SEVERITY_TEXT_TO_SEVERITY_NUMBER.js", "size": 337 }
 { "file": "__vendor/00xxx/754_convertSpanJsonToTransactionEvent.js", "size": 2908 }
 { "file": "__vendor/00xxx/755_ServerRuntimeClient.js", "size": 9719 }
-{ "file": "__vendor/00xxx/760_MIN_DELAY.js", "size": 18867 }
+{ "file": "__vendor/00xxx/760_MIN_DELAY.js", "size": 21227 }
 { "file": "__vendor/00xxx/761_MULTIPLEXED_TRANSPORT_EXTRA_KEY.js", "size": 7680 }
 { "file": "__vendor/00xxx/765_parameterize.js", "size": 633 }
 { "file": "__vendor/00xxx/767_applySdkMetadata.js", "size": 910 }
@@ -2454,7 +2454,7 @@
 { "file": "__vendor/00xxx/787_generateIteratee.js", "size": 5444 }
 { "file": "__vendor/00xxx/788_basename.js", "size": 6840 }
 { "file": "__vendor/00xxx/789_DB_OPERATIONS_TO_INSTRUMENT.js", "size": 20902 }
-{ "file": "__vendor/00xxx/79_insetsDiffer.js", "size": 523 }
+{ "file": "__vendor/00xxx/79_insetsDiffer.js", "size": 504 }
 { "file": "__vendor/00xxx/790_applyZodErrorsToEvent.js", "size": 5461 }
 { "file": "__vendor/00xxx/791_thirdPartyErrorFilterIntegration.js", "size": 5690 }
 { "file": "__vendor/00xxx/793_featureFlagsIntegration.js", "size": 925 }
@@ -2464,7 +2464,7 @@
 { "file": "__vendor/00xxx/799_trpcMiddleware.js", "size": 9121 }
 { "file": "__vendor/00xxx/8_Deque.js", "size": 7667 }
 { "file": "__vendor/00xxx/80_processColorArray.js", "size": 574 }
-{ "file": "__vendor/00xxx/800_wrapMcpServerWithSentry.js", "size": 4837 }
+{ "file": "__vendor/00xxx/800_wrapMcpServerWithSentry.js", "size": 2908 }
 { "file": "__vendor/00xxx/801_validateMcpServerInstance.js", "size": 2261 }
 { "file": "__vendor/00xxx/802_wrapTransportError.js", "size": 10661 }
 { "file": "__vendor/00xxx/804_cleanupSessionDataForTransport.js", "size": 1487 }
@@ -2489,7 +2489,7 @@
 { "file": "__vendor/00xxx/827_instrumentOpenAiClient.js", "size": 23493 }
 { "file": "__vendor/00xxx/828_extractRequestParameters.js", "size": 15377 }
 { "file": "__vendor/00xxx/829_INSTRUMENTED_METHODS.js", "size": 819 }
-{ "file": "__vendor/00xxx/830_instrumentStream.js", "size": 45249 }
+{ "file": "__vendor/00xxx/830_instrumentStream.js", "size": 45237 }
 { "file": "__vendor/00xxx/834_instrumentAnthropicAiClient.js", "size": 23343 }
 { "file": "__vendor/00xxx/835_messagesFromParams.js", "size": 3353 }
 { "file": "__vendor/00xxx/836_ANTHROPIC_AI_INSTRUMENTED_METHODS.js", "size": 479 }
@@ -2510,7 +2510,7 @@
 { "file": "__vendor/00xxx/858_LRUMap.js", "size": 2118 }
 { "file": "__vendor/00xxx/859_vercelWaitUntil.js", "size": 746 }
 { "file": "__vendor/00xxx/86_pickScale.js", "size": 723 }
-{ "file": "__vendor/00xxx/860_flushIfServerless.js", "size": 5577 }
+{ "file": "__vendor/00xxx/860_flushIfServerless.js", "size": 7115 }
 { "file": "__vendor/00xxx/861_escapeStringForRegex.js", "size": 368 }
 { "file": "__vendor/00xxx/862_ReactNativeLibraries.js", "size": 2190 }
 { "file": "__vendor/00xxx/863_symbolicateStackTrace.js", "size": 1485 }
@@ -2640,7 +2640,7 @@
 { "file": "__vendor/01xxx/1064_defaultConfiguration.js", "size": 1582 }
 { "file": "__vendor/01xxx/1065_defaultButtonStyles.js", "size": 3064 }
 { "file": "__vendor/01xxx/1066_feedbackIcon.js", "size": 15284 }
-{ "file": "__vendor/01xxx/1068_FeedbackWidget.js", "size": 31369 }
+{ "file": "__vendor/01xxx/1068_FeedbackWidget.js", "size": 31372 }
 { "file": "__vendor/01xxx/1069_sentryLogo.js", "size": 1570 }
 { "file": "__vendor/01xxx/1101_locationsAreEqual.js", "size": 43400 }
 { "file": "__vendor/01xxx/1102_resolvePathname.js", "size": 215 }
@@ -2696,7 +2696,7 @@
 { "file": "__vendor/01xxx/1169_XXH64.js", "size": 22795 }
 { "file": "__vendor/01xxx/1170_DEFAULT_LOCALE.js", "size": 4648 }
 { "file": "__vendor/01xxx/1171_InternalIntlMessage.js", "size": 4878 }
-{ "file": "__vendor/01xxx/1172_MessageLoader.js", "size": 21418 }
+{ "file": "__vendor/01xxx/1172_MessageLoader.js", "size": 21429 }
 { "file": "__vendor/01xxx/1173_chainMessagesObjects.js", "size": 2311 }
 { "file": "__vendor/01xxx/1176_TYPE.js", "size": 2056 }
 { "file": "__vendor/01xxx/1177_Parser.js", "size": 100488 }
@@ -2749,7 +2749,7 @@
 { "file": "__vendor/01xxx/1283_Request.js", "size": 26636 }
 { "file": "__vendor/01xxx/1284_type.js", "size": 6846 }
 { "file": "__vendor/01xxx/1290_getSideChannel.js", "size": 1398 }
-{ "file": "__vendor/01xxx/1292_GetIntrinsic.js", "size": 24925 }
+{ "file": "__vendor/01xxx/1292_GetIntrinsic.js", "size": 25150 }
 { "file": "__vendor/01xxx/1296_hasNativeSymbols.js", "size": 953 }
 { "file": "__vendor/01xxx/1297_hasSymbols.js", "size": 2645 }
 { "file": "__vendor/01xxx/1303_callBindBasic.js", "size": 608 }
@@ -3026,7 +3026,7 @@
 { "file": "__vendor/01xxx/1840_clamp.js", "size": 8882 }
 { "file": "__vendor/01xxx/1841_utilNative.js", "size": 5902 }
 { "file": "__vendor/01xxx/1842_IN_STYLE_UPDATER.js", "size": 25233 }
-{ "file": "__vendor/01xxx/1847_decay.js", "size": 8193 }
+{ "file": "__vendor/01xxx/1847_decay.js", "size": 8198 }
 { "file": "__vendor/01xxx/1848_SLOPE_FACTOR.js", "size": 321 }
 { "file": "__vendor/01xxx/1850_rubberBandDecay.js", "size": 2682 }
 { "file": "__vendor/01xxx/1851_rigidDecay.js", "size": 2327 }
@@ -5679,7 +5679,7 @@
 { "file": "__vendor/05xxx/5232_callDispose.js", "size": 1602 }
 { "file": "__vendor/05xxx/5233_Fit.js", "size": 335 }
 { "file": "__vendor/05xxx/5234_Alignment.js", "size": 359 }
-{ "file": "__vendor/05xxx/5235_RiveFileFactory.js", "size": 12811 }
+{ "file": "__vendor/05xxx/5235_RiveFileFactory.js", "size": 7756 }
 { "file": "__vendor/05xxx/5236_RiveImages.js", "size": 285 }
 { "file": "__vendor/05xxx/5237_RiveFonts.js", "size": 7454 }
 { "file": "__vendor/05xxx/5238_RiveColor.js", "size": 2549 }
@@ -6028,7 +6028,7 @@
 { "file": "__vendor/06xxx/6148_useTransitionProgress.js", "size": 620 }
 { "file": "__vendor/06xxx/6161_uniqueId.js", "size": 254 }
 { "file": "__vendor/06xxx/6602_react.js", "size": 76015 }
-{ "file": "__vendor/06xxx/6611_merged5.js", "size": 115829 }
+{ "file": "__vendor/06xxx/6611_merged5.js", "size": 115831 }
 { "file": "__vendor/06xxx/6630_AssetRegistry.js", "size": 436 }
 { "file": "__vendor/06xxx/6631_AssetRegistry.js", "size": 427 }
 { "file": "__vendor/06xxx/6632_AssetRegistry.js", "size": 434 }
@@ -6375,7 +6375,7 @@
 { "file": "__vendor/08xxx/8332_VideoTypes.js", "size": 4292 }
 { "file": "__vendor/08xxx/8333_CompressedTypes.js", "size": 3097 }
 { "file": "__vendor/08xxx/8334_OtherTypes.js", "size": 5181 }
-{ "file": "__vendor/08xxx/8347_errors.js", "size": 27762 }
+{ "file": "__vendor/08xxx/8347_errors.js", "size": 27764 }
 { "file": "__vendor/08xxx/8356_PNG_CHUNK_TYPE_SIZE.js", "size": 6238 }
 { "file": "__vendor/08xxx/8357_ITEM_INFO_TYPE_EXIF.js", "size": 816 }
 { "file": "__vendor/08xxx/8359_get64BitValue.js", "size": 5569 }
@@ -6820,7 +6820,7 @@
 { "file": "__vendor/10xxx/10768_dealWithAnimation.js", "size": 3125 }
 { "file": "__vendor/10xxx/10769_react.js", "size": 1911 }
 { "file": "__vendor/10xxx/10770_ScrollViewGesture.js", "size": 31770 }
-{ "file": "__vendor/10xxx/10771_usePanGestureProxy.js", "size": 6270 }
+{ "file": "__vendor/10xxx/10771_usePanGestureProxy.js", "size": 6295 }
 { "file": "__vendor/10xxx/10772_react.js", "size": 474 }
 { "file": "__vendor/10xxx/10773_ItemRenderer.js", "size": 3974 }
 { "file": "__vendor/10xxx/10774_useVisibleRanges.js", "size": 5096 }
@@ -7042,7 +7042,7 @@
 { "file": "__vendor/12xxx/12458_NEVER.js", "size": 5844 }
 { "file": "__vendor/12xxx/12460_$ZodError.js", "size": 10447 }
 { "file": "__vendor/12xxx/12461_captureStackTrace.js", "size": 35866 }
-{ "file": "__vendor/12xxx/12462_$ZodType.js", "size": 119970 }
+{ "file": "__vendor/12xxx/12462_$ZodType.js", "size": 121554 }
 { "file": "__vendor/12xxx/12463_$ZodCheck.js", "size": 26489 }
 { "file": "__vendor/12xxx/12464_cuid.js", "size": 11472 }
 { "file": "__vendor/12xxx/12466_Doc.js", "size": 2100 }
@@ -7341,7 +7341,7 @@
 { "file": "__vendor/14xxx/14627_AssetRegistry.js", "size": 415 }
 { "file": "__vendor/14xxx/14628_AssetRegistry.js", "size": 456 }
 { "file": "__vendor/14xxx/14657_AnimatedLegendList.js", "size": 20338 }
-{ "file": "__vendor/14xxx/14658_LegendList.js", "size": 1025254 }
+{ "file": "__vendor/14xxx/14658_LegendList.js", "size": 1025448 }
 { "file": "__vendor/14xxx/14674_AssetRegistry.js", "size": 422 }
 { "file": "__vendor/14xxx/14675_AssetRegistry.js", "size": 423 }
 { "file": "__vendor/14xxx/14676_AssetRegistry.js", "size": 424 }
@@ -7350,8 +7350,8 @@
 { "file": "__vendor/14xxx/14704_IapAndroid.js", "size": 22409 }
 { "file": "__vendor/14xxx/14705_ReplacementModesAndroid.js", "size": 1066 }
 { "file": "__vendor/14xxx/14711_AndroidPurchaseState.js", "size": 2191 }
-{ "file": "__vendor/14xxx/14712_RNIapAmazonModule.js", "size": 5268 }
-{ "file": "__vendor/14xxx/14713_RNIapModule.js", "size": 6411 }
+{ "file": "__vendor/14xxx/14712_RNIapAmazonModule.js", "size": 4174 }
+{ "file": "__vendor/14xxx/14713_RNIapModule.js", "size": 4955 }
 { "file": "__vendor/14xxx/14715_react-native.js", "size": 1023 }
 { "file": "__vendor/14xxx/14716_purchaseUpdatedListener.js", "size": 2651 }
 { "file": "__vendor/14xxx/14717_productSk2Map.js", "size": 4391 }
@@ -7674,7 +7674,7 @@
 { "file": "__vendor/16xxx/16393_CanonicalizeUnicodeLocaleId.js", "size": 287 }
 { "file": "__vendor/16xxx/16396_SetNumberFormatUnitOptions.js", "size": 2498 }
 { "file": "__vendor/16xxx/16397_SetNumberFormatDigitOptions.js", "size": 6191 }
-{ "file": "__vendor/16xxx/16398_PartitionPattern.js", "size": 1516 }
+{ "file": "__vendor/16xxx/16398_PartitionPattern.js", "size": 1520 }
 { "file": "__vendor/16xxx/16399_SupportedLocales.js", "size": 872 }
 { "file": "__vendor/16xxx/16401_RangePatternType.js", "size": 244 }
 { "file": "__vendor/16xxx/16407_ToIntlMathematicalValue.js", "size": 1701 }
@@ -8120,16 +8120,16 @@
 { "file": "actions/AlertActionCreators.tsx", "size": 385 }
 { "file": "actions/AnalyticsTrackingActionCreators.tsx", "size": 530 }
 { "file": "actions/AudioActionCreators.tsx", "size": 32713 }
-{ "file": "actions/AuditLogActionCreators.tsx", "size": 6936 }
+{ "file": "actions/AuditLogActionCreators.tsx", "size": 6932 }
 { "file": "actions/AuthenticationActionCreators.tsx", "size": 38942 }
-{ "file": "actions/BoostingActionCreators.tsx", "size": 18940 }
+{ "file": "actions/BoostingActionCreators.tsx", "size": 15628 }
 { "file": "actions/CallActionCreators.tsx", "size": 4722 }
 { "file": "actions/CategoryCollapseActionCreators.tsx", "size": 1035 }
 { "file": "actions/CertifiedDeviceActionCreators.tsx", "size": 555 }
 { "file": "actions/ChangeLogActionCreators.tsx", "size": 4286 }
 { "file": "actions/ChangeNicknameActionCreators.tsx", "size": 2010 }
 { "file": "actions/ChangeVanityURLActionCreators.tsx", "size": 2868 }
-{ "file": "actions/ChannelActionCreators.tsx", "size": 34945 }
+{ "file": "actions/ChannelActionCreators.tsx", "size": 34941 }
 { "file": "actions/ChannelCollapseActionCreators.tsx", "size": 1038 }
 { "file": "actions/ChannelFollowerActionCreators.tsx", "size": 3929 }
 { "file": "actions/ChannelPinActionCreators.tsx", "size": 11662 }
@@ -8147,7 +8147,7 @@
 { "file": "actions/DimensionActionCreators.tsx", "size": 1710 }
 { "file": "actions/DraftActionCreators.tsx", "size": 1546 }
 { "file": "actions/EmojiActionCreators.tsx", "size": 11613 }
-{ "file": "actions/EntitlementActionCreators.tsx", "size": 5508 }
+{ "file": "actions/EntitlementActionCreators.tsx", "size": 7335 }
 { "file": "actions/FriendsActionCreators.tsx", "size": 1491 }
 { "file": "actions/GamesActionCreators.native.tsx", "size": 9498 }
 { "file": "actions/GamesActionCreators.shared.tsx", "size": 17018 }
@@ -8174,7 +8174,7 @@
 { "file": "actions/native/DisplayedInviteActionCreators.tsx", "size": 1161 }
 { "file": "actions/native/EmailVerificationModalActionCreators.tsx", "size": 1215 }
 { "file": "actions/native/GiftCodeActionCreators.tsx", "size": 6470 }
-{ "file": "actions/native/GPlayActionCreators.tsx", "size": 53322 }
+{ "file": "actions/native/GPlayActionCreators.tsx", "size": 51617 }
 { "file": "actions/native/GuildActionCreators.tsx", "size": 1726 }
 { "file": "actions/native/InAppNotificationActionCreators.tsx", "size": 691 }
 { "file": "actions/native/MessagePreviewActionCreators.tsx", "size": 1212 }
@@ -8194,7 +8194,7 @@
 { "file": "actions/RTCLatencyTestActionCreators.tsx", "size": 976 }
 { "file": "actions/SelectedChannelActionCreators.tsx", "size": 3131 }
 { "file": "actions/SelectedChannelActionCreatorsAdditional.native.tsx", "size": 3853 }
-{ "file": "actions/SKUActionCreators.tsx", "size": 40611 }
+{ "file": "actions/SKUActionCreators.tsx", "size": 38880 }
 { "file": "actions/StoreListingActionCreators.tsx", "size": 4371 }
 { "file": "actions/StreamActionCreators.tsx", "size": 16165 }
 { "file": "actions/SubscriptionPlanActionCreators.tsx", "size": 6640 }
@@ -8204,7 +8204,7 @@
 { "file": "actions/UploadAttachmentActionCreators.tsx", "size": 4026 }
 { "file": "actions/UserActionCreators.tsx", "size": 13625 }
 { "file": "actions/UserActivityActionCreators.tsx", "size": 2953 }
-{ "file": "actions/UserSettingsAccountActionCreators.tsx", "size": 14463 }
+{ "file": "actions/UserSettingsAccountActionCreators.tsx", "size": 12635 }
 { "file": "actions/UserSettingsActionCreators.tsx", "size": 15887 }
 { "file": "actions/UserSettingsModalActionCreators.tsx", "size": 642 }
 { "file": "actions/WebhooksActionCreators.tsx", "size": 5759 }
@@ -8238,16 +8238,16 @@
 { "file": "components_native/ChannelContainer.tsx", "size": 5099 }
 { "file": "components_native/chat/ChatBeginningRow.tsx", "size": 64703 }
 { "file": "components_native/chat/ChatItem.tsx", "size": 8399 }
-{ "file": "components_native/chat/contentHandlers.tsx", "size": 8468 }
+{ "file": "components_native/chat/contentHandlers.tsx", "size": 11698 }
 { "file": "components_native/chat/getMessageJumpData.tsx", "size": 4375 }
 { "file": "components_native/chat/ImageCarousel.tsx", "size": 17299 }
 { "file": "components_native/chat/isAlertOrActionSheetOpen.tsx", "size": 987 }
 { "file": "components_native/chat/JumpToPresentButton.tsx", "size": 4306 }
 { "file": "components_native/common/ActionButton.tsx", "size": 1039 }
 { "file": "components_native/common/Alert.tsx", "size": 13274 }
-{ "file": "components_native/common/Alerts.tsx", "size": 13497 }
+{ "file": "components_native/common/Alerts.tsx", "size": 13503 }
 { "file": "components_native/common/Carousel.tsx", "size": 4938 }
-{ "file": "components_native/common/ChatPreview.tsx", "size": 26901 }
+{ "file": "components_native/common/ChatPreview.tsx", "size": 26890 }
 { "file": "components_native/common/color_picker/ColorBlock.tsx", "size": 3296 }
 { "file": "components_native/common/color_picker/RoleColorPickerActionSheet.tsx", "size": 5117 }
 { "file": "components_native/common/CountDown.tsx", "size": 4155 }
@@ -8344,7 +8344,7 @@
 { "file": "design/components/Badge/native/Badge.native.tsx", "size": 7423 }
 { "file": "design/components/Button/native/BaseButton.native.tsx", "size": 5962 }
 { "file": "design/components/Button/native/BaseIconButton.native.tsx", "size": 4104 }
-{ "file": "design/components/Button/native/BaseTextButton.native.tsx", "size": 17014 }
+{ "file": "design/components/Button/native/BaseTextButton.native.tsx", "size": 17002 }
 { "file": "design/components/Button/native/Button.native.tsx", "size": 388 }
 { "file": "design/components/Button/native/ButtonConstants.native.tsx", "size": 2208 }
 { "file": "design/components/Button/native/ButtonEllipsis.native.tsx", "size": 5239 }
@@ -9053,7 +9053,7 @@
 { "file": "design/components/ThemeContextProvider/native/getGradientThemeFromFlags.tsx", "size": 747 }
 { "file": "design/components/ThemeContextProvider/native/RootThemeContextProvider.native.tsx", "size": 2785 }
 { "file": "design/components/Tooltip/native/AnimatedTooltip.native.tsx", "size": 2084 }
-{ "file": "design/components/Tooltip/native/MeasurementUtils.native.tsx", "size": 2963 }
+{ "file": "design/components/Tooltip/native/MeasurementUtils.native.tsx", "size": 4764 }
 { "file": "design/components/Tooltip/native/Tooltip.native.tsx", "size": 9466 }
 { "file": "design/components/Tooltip/native/TooltipConstants.native.tsx", "size": 2230 }
 { "file": "design/components/Tooltip/native/useTooltip.native.tsx", "size": 9831 }
@@ -10152,7 +10152,7 @@
 { "file": "discord_common/js/packages/application-widget-renderer/src/types.tsx", "size": 259 }
 { "file": "discord_common/js/packages/backoff/Backoff.tsx", "size": 3060 }
 { "file": "discord_common/js/packages/code-splitting/CodeSplittingUtils.tsx", "size": 6108 }
-{ "file": "discord_common/js/packages/code-splitting/importWithRetry.tsx", "size": 2876 }
+{ "file": "discord_common/js/packages/code-splitting/importWithRetry.tsx", "size": 4652 }
 { "file": "discord_common/js/packages/design/animation/MotionTypes.tsx", "size": 259 }
 { "file": "discord_common/js/packages/design/components/AccessibilityAnnouncer/AccessibilityAnnouncer.android.tsx", "size": 921 }
 { "file": "discord_common/js/packages/design/components/AccessibilityAnnouncer/AccessibilityAnnouncerLiveRegion.native.tsx", "size": 1403 }
@@ -10226,7 +10226,7 @@
 { "file": "discord_common/js/packages/flux/BatchedStoreListener.tsx", "size": 1783 }
 { "file": "discord_common/js/packages/flux/ChangeListeners.tsx", "size": 2040 }
 { "file": "discord_common/js/packages/flux/connectStores.tsx", "size": 5392 }
-{ "file": "discord_common/js/packages/flux/createFetchStore.tsx", "size": 17344 }
+{ "file": "discord_common/js/packages/flux/createFetchStore.tsx", "size": 25213 }
 { "file": "discord_common/js/packages/flux/Dispatcher.tsx", "size": 17154 }
 { "file": "discord_common/js/packages/flux/Emitter.tsx", "size": 7520 }
 { "file": "discord_common/js/packages/flux/index.tsx", "size": 2229 }
@@ -10369,7 +10369,7 @@
 { "file": "discord_common/js/packages/protos/google/protobuf/timestamp.tsx", "size": 8177 }
 { "file": "discord_common/js/packages/protos/google/protobuf/wrappers.tsx", "size": 29036 }
 { "file": "discord_common/js/packages/rpc-schema/contextMenuIcons.tsx", "size": 943 }
-{ "file": "discord_common/js/packages/rpc-schema/definitions.tsx", "size": 127121 }
+{ "file": "discord_common/js/packages/rpc-schema/definitions.tsx", "size": 127129 }
 { "file": "discord_common/js/packages/rpc-schema/helpers.tsx", "size": 622 }
 { "file": "discord_common/js/packages/rpc-schema/rpc-schema.tsx", "size": 1914 }
 { "file": "discord_common/js/packages/rtn-codegen/js/AccessibilityFocusNativeComponent.tsx", "size": 1040 }
@@ -10819,7 +10819,7 @@
 { "file": "lib/DiscordNative.tsx", "size": 253 }
 { "file": "lib/EnsureReceivedMessagesAddedInOrderExperiment.tsx", "size": 673 }
 { "file": "lib/Frecency.tsx", "size": 8415 }
-{ "file": "lib/getOnClick.tsx", "size": 23360 }
+{ "file": "lib/getOnClick.tsx", "size": 23364 }
 { "file": "lib/getTimeZone.native.tsx", "size": 401 }
 { "file": "lib/guild/GuildChannelSubscriptions.tsx", "size": 2049 }
 { "file": "lib/guild/GuildMemberRequester.tsx", "size": 6892 }
@@ -10879,7 +10879,7 @@
 { "file": "lib/uploader/native/CloudUploader.tsx", "size": 18318 }
 { "file": "lib/uploader/native/CloudUploaderUtils.tsx", "size": 2250 }
 { "file": "lib/uploader/native/getPreCompressionFileSize.tsx", "size": 2215 }
-{ "file": "lib/uploader/stageAttachmentFiles.tsx", "size": 2799 }
+{ "file": "lib/uploader/stageAttachmentFiles.tsx", "size": 4813 }
 { "file": "lib/uploader/Upload.tsx", "size": 2450 }
 { "file": "lib/uploader/UploaderBase.tsx", "size": 17199 }
 { "file": "lib/uploader/UploaderQueue.tsx", "size": 4157 }
@@ -10968,19 +10968,19 @@
 { "file": "modules/activities/DeveloperActivityShelfActionCreators.tsx", "size": 1303 }
 { "file": "modules/activities/DeveloperActivityShelfStore.tsx", "size": 4552 }
 { "file": "modules/activities/DiscordEnvironment.tsx", "size": 6859 }
-{ "file": "modules/activities/EmbeddedActivitiesActionCreators.tsx", "size": 65996 }
-{ "file": "modules/activities/EmbeddedActivitiesManager.tsx", "size": 44161 }
+{ "file": "modules/activities/EmbeddedActivitiesActionCreators.tsx", "size": 67758 }
+{ "file": "modules/activities/EmbeddedActivitiesManager.tsx", "size": 49008 }
 { "file": "modules/activities/EmbeddedActivitiesStore.tsx", "size": 37536 }
 { "file": "modules/activities/experiments/EmbeddedAppShimExperiment.tsx", "size": 1158 }
 { "file": "modules/activities/fetchDeveloperApplications.tsx", "size": 3487 }
-{ "file": "modules/activities/fetchShelf.tsx", "size": 8988 }
+{ "file": "modules/activities/fetchShelf.tsx", "size": 6519 }
 { "file": "modules/activities/getActivitiesModalContextKey.native.tsx", "size": 464 }
 { "file": "modules/activities/getActivityReportOptions.tsx", "size": 2483 }
 { "file": "modules/activities/getEmbeddedActivityPopoutWindowKey.tsx", "size": 3092 }
 { "file": "modules/activities/getShelfItemData.tsx", "size": 1073 }
 { "file": "modules/activities/getURLForApplication.tsx", "size": 4709 }
 { "file": "modules/activities/handleJoinEmbeddedActivity.tsx", "size": 10463 }
-{ "file": "modules/activities/handlePressJoinActivity.tsx", "size": 8962 }
+{ "file": "modules/activities/handlePressJoinActivity.tsx", "size": 11156 }
 { "file": "modules/activities/handleUsePrimaryEntryPointAppCommand.tsx", "size": 8030 }
 { "file": "modules/activities/hooks/usePlayingGameActivities.tsx", "size": 1566 }
 { "file": "modules/activities/isActivityParticipantCurrentUserCurrentSession.tsx", "size": 816 }
@@ -11052,7 +11052,7 @@
 { "file": "modules/activities/utils/activityShareLink.tsx", "size": 1303 }
 { "file": "modules/activities/utils/allowPopups.tsx", "size": 1283 }
 { "file": "modules/activities/utils/closeCustomKeyboard.native.tsx", "size": 619 }
-{ "file": "modules/activities/utils/confirmActivityLaunchChecks.tsx", "size": 18429 }
+{ "file": "modules/activities/utils/confirmActivityLaunchChecks.tsx", "size": 13514 }
 { "file": "modules/activities/utils/CustomActivityLinkUtils.tsx", "size": 8007 }
 { "file": "modules/activities/utils/deferJoinActivityInChannel.tsx", "size": 823 }
 { "file": "modules/activities/utils/distributorStoreUrls.tsx", "size": 904 }
@@ -11149,7 +11149,7 @@
 { "file": "modules/ads/BountyTypes.tsx", "size": 3252 }
 { "file": "modules/ads/hooks/useAdPersonalizationTogglesDisabled.tsx", "size": 733 }
 { "file": "modules/ads/ios_attribution/IosAttributionEligibility.tsx", "size": 2270 }
-{ "file": "modules/ads/ios_attribution/IosAttributionImpressionRegistry.tsx", "size": 14519 }
+{ "file": "modules/ads/ios_attribution/IosAttributionImpressionRegistry.tsx", "size": 12809 }
 { "file": "modules/ads/ios_attribution/IosAttributionMetrics.tsx", "size": 2516 }
 { "file": "modules/ads/ios_attribution/IosAttributionNativeModule.tsx", "size": 570 }
 { "file": "modules/ads/ios_attribution/IosAttributionSignRequest.tsx", "size": 3874 }
@@ -11189,7 +11189,7 @@
 { "file": "modules/age_assurance/AgeVerificationMethodsV2.tsx", "size": 3201 }
 { "file": "modules/age_assurance/AgeVerificationStore.tsx", "size": 5905 }
 { "file": "modules/age_assurance/AgeVerificationSystemNotificationUtils.tsx", "size": 5480 }
-{ "file": "modules/age_assurance/AgeVerificationURLActionCreators.tsx", "size": 17232 }
+{ "file": "modules/age_assurance/AgeVerificationURLActionCreators.tsx", "size": 13988 }
 { "file": "modules/age_assurance/AgeVerificationUtils.tsx", "size": 14917 }
 { "file": "modules/age_assurance/ExpressiveModalV2Experiment.tsx", "size": 1789 }
 { "file": "modules/age_assurance/getAgeVerificationGetStartedSteps.tsx", "size": 2211 }
@@ -11218,7 +11218,7 @@
 { "file": "modules/age_assurance/native/AgeVerificationRetryScreen.tsx", "size": 7613 }
 { "file": "modules/age_assurance/native/AgeVerificationWebViewScreen.tsx", "size": 8784 }
 { "file": "modules/age_assurance/native/AppStoreAgeAssurance.android.tsx", "size": 3685 }
-{ "file": "modules/age_assurance/native/AppStoreAgeSignalActionCreators.tsx", "size": 8473 }
+{ "file": "modules/age_assurance/native/AppStoreAgeSignalActionCreators.tsx", "size": 6563 }
 { "file": "modules/age_assurance/native/AppStoreAgeSignalAttestation.tsx", "size": 23844 }
 { "file": "modules/age_assurance/native/AppStoreAgeSignalReport.tsx", "size": 23771 }
 { "file": "modules/age_assurance/native/AppStoreAgeSignalSupport.tsx", "size": 1590 }
@@ -11272,13 +11272,13 @@
 { "file": "modules/analytics_sessions/SessionAdGenerator.tsx", "size": 2844 }
 { "file": "modules/analytics_sessions/SessionAdManager.tsx", "size": 7724 }
 { "file": "modules/analytics_sessions/SessionForegroundUtils.native.tsx", "size": 463 }
-{ "file": "modules/analytics_sessions/SessionHeartbeatScheduler.tsx", "size": 20916 }
+{ "file": "modules/analytics_sessions/SessionHeartbeatScheduler.tsx", "size": 19087 }
 { "file": "modules/analytics_sessions/SessionRouteUtils.native.tsx", "size": 428 }
 { "file": "modules/analytics_sessions/SessionUtils.tsx", "size": 823 }
 { "file": "modules/analytics_sessions/SkippedClientHeartbeatUtil.tsx", "size": 823 }
 { "file": "modules/analytics/sendUnloadRequest.tsx", "size": 335 }
 { "file": "modules/analytics/updateDynamicSuperProperties.tsx", "size": 1526 }
-{ "file": "modules/animations/native/useEaseInEaseOutLayoutAnimations.tsx", "size": 3956 }
+{ "file": "modules/animations/native/useEaseInEaseOutLayoutAnimations.tsx", "size": 3962 }
 { "file": "modules/api_request_config/native/ApiRequestConfigManager.tsx", "size": 1948 }
 { "file": "modules/app_analytics/AnalyticsLocation.tsx", "size": 38206 }
 { "file": "modules/app_analytics/AnalyticsLocationsProvider.tsx", "size": 824 }
@@ -11322,7 +11322,7 @@
 { "file": "modules/app_channels/useAppChannelRunningApp.tsx", "size": 2404 }
 { "file": "modules/app_database/app/reportMalformedStorageValues.tsx", "size": 1227 }
 { "file": "modules/app_database/app/TryLoad.tsx", "size": 6051 }
-{ "file": "modules/app_database/background_sync/native/BackgroundSync.tsx", "size": 39503 }
+{ "file": "modules/app_database/background_sync/native/BackgroundSync.tsx", "size": 42196 }
 { "file": "modules/app_database/background_sync/native/BackgroundSyncManager.tsx", "size": 1912 }
 { "file": "modules/app_database/DatabaseDaos.tsx", "size": 10572 }
 { "file": "modules/app_database/managers/MobileAppDatabaseManager.tsx", "size": 4491 }
@@ -11505,7 +11505,7 @@
 { "file": "modules/app_state/DiscordAppState.native.tsx", "size": 752 }
 { "file": "modules/application_account_linking/AccountLinking.messages.js", "size": 7740 }
 { "file": "modules/application_account_linking/AccountLinkingActionCreators.tsx", "size": 1138 }
-{ "file": "modules/application_account_linking/AccountLinkManager.tsx", "size": 5288 }
+{ "file": "modules/application_account_linking/AccountLinkManager.tsx", "size": 6943 }
 { "file": "modules/application_account_linking/AccountLinkStore.tsx", "size": 1742 }
 { "file": "modules/application_account_linking/ApplicationAccountLinking.messages.js", "size": 7751 }
 { "file": "modules/application_account_linking/ApplicationAccountLinkingConstants.tsx", "size": 576 }
@@ -11533,7 +11533,7 @@
 { "file": "modules/application_commands/ApplicationCommandIndexActionCreators.tsx", "size": 9530 }
 { "file": "modules/application_commands/ApplicationCommandIndexStore.tsx", "size": 83148 }
 { "file": "modules/application_commands/ApplicationCommandOptionUtils.tsx", "size": 11236 }
-{ "file": "modules/application_commands/ApplicationCommandQueryApi.tsx", "size": 23636 }
+{ "file": "modules/application_commands/ApplicationCommandQueryApi.tsx", "size": 23642 }
 { "file": "modules/application_commands/ApplicationCommandQueryTypes.tsx", "size": 550 }
 { "file": "modules/application_commands/ApplicationCommandStore.tsx", "size": 14043 }
 { "file": "modules/application_commands/ApplicationCommandTypes.tsx", "size": 2917 }
@@ -11596,7 +11596,7 @@
 { "file": "modules/applications/getApplicationInstallURL.tsx", "size": 2950 }
 { "file": "modules/applications/getBotTagFromUser.tsx", "size": 608 }
 { "file": "modules/applications/getOrFetchApplication.tsx", "size": 2428 }
-{ "file": "modules/applications/installApplicationOnDemandIfNeeded.native.tsx", "size": 6178 }
+{ "file": "modules/applications/installApplicationOnDemandIfNeeded.native.tsx", "size": 4255 }
 { "file": "modules/applications/isSocialLayerApplication.tsx", "size": 1694 }
 { "file": "modules/applications/message_embed/MessageEmbedConstants.tsx", "size": 736 }
 { "file": "modules/applications/message_embed/native/createActivityMessageEmbed.tsx", "size": 1607 }
@@ -11651,7 +11651,7 @@
 { "file": "modules/auth/native/components/RegisterAccountInformation.tsx", "size": 11189 }
 { "file": "modules/auth/native/components/RegisterAgeGate.tsx", "size": 8270 }
 { "file": "modules/auth/native/components/RegisterDisplayName.tsx", "size": 8605 }
-{ "file": "modules/auth/native/components/RegisterIdentity.tsx", "size": 11700 }
+{ "file": "modules/auth/native/components/RegisterIdentity.tsx", "size": 11704 }
 { "file": "modules/auth/native/components/RegisterPasswordInput.tsx", "size": 7400 }
 { "file": "modules/auth/native/components/RegisterPhoneOrEmailInput.tsx", "size": 4748 }
 { "file": "modules/auth/native/components/RegisterUsernameInput.tsx", "size": 6425 }
@@ -11667,7 +11667,7 @@
 { "file": "modules/auth/native/components/utils/useUsernameRegistrationStep.tsx", "size": 4962 }
 { "file": "modules/auth/native/components/utils/useWithPostLoginRouting.tsx", "size": 6159 }
 { "file": "modules/auth/native/components/VerifyPhone.tsx", "size": 7611 }
-{ "file": "modules/auth/native/components/Welcome.tsx", "size": 14382 }
+{ "file": "modules/auth/native/components/Welcome.tsx", "size": 14390 }
 { "file": "modules/auth/native/components/WideAuthScrollContext.tsx", "size": 377 }
 { "file": "modules/auth/native/experiment/isDateValidDateOfBirth.tsx", "size": 541 }
 { "file": "modules/auth/native/getError.tsx", "size": 490 }
@@ -11720,7 +11720,7 @@
 { "file": "modules/avatar/native/components/TouchableUploadAvatar.tsx", "size": 3628 }
 { "file": "modules/avatar/useAvatarColor.tsx", "size": 9067 }
 { "file": "modules/badges/BadgeDetailsUtils.tsx", "size": 8892 }
-{ "file": "modules/badges/BadgeDirectoryActionCreators.tsx", "size": 15444 }
+{ "file": "modules/badges/BadgeDirectoryActionCreators.tsx", "size": 17355 }
 { "file": "modules/badges/BadgeDirectoryNuxGraphicUtils.tsx", "size": 2560 }
 { "file": "modules/badges/BadgeDirectorySeenStore.tsx", "size": 1981 }
 { "file": "modules/badges/BadgeDirectoryStore.tsx", "size": 14568 }
@@ -11730,11 +11730,11 @@
 { "file": "modules/badges/BadgeSettingsActionCreators.tsx", "size": 4057 }
 { "file": "modules/badges/BadgeUnlockColorUtils.tsx", "size": 1512 }
 { "file": "modules/badges/BadgeUnreadStateExperiment.tsx", "size": 1192 }
-{ "file": "modules/badges/BadgeUtils.tsx", "size": 6565 }
+{ "file": "modules/badges/BadgeUtils.tsx", "size": 6557 }
 { "file": "modules/badges/native/BadgeArtImage.tsx", "size": 9782 }
 { "file": "modules/badges/native/BadgeCatalogIcon.tsx", "size": 2117 }
 { "file": "modules/badges/native/badgeDetailsCtas.tsx", "size": 5517 }
-{ "file": "modules/badges/native/BadgeDetailsSheet.tsx", "size": 37850 }
+{ "file": "modules/badges/native/BadgeDetailsSheet.tsx", "size": 36921 }
 { "file": "modules/badges/native/BadgeDirectoryNuxCoachmark.tsx", "size": 5713 }
 { "file": "modules/badges/native/BadgeDirectoryScreen.tsx", "size": 3721 }
 { "file": "modules/badges/native/BadgeDirectoryView.tsx", "size": 15209 }
@@ -11752,7 +11752,7 @@
 { "file": "modules/badges/native/useBadgeDirectoryNuxCoachmarkVariant.tsx", "size": 1817 }
 { "file": "modules/badges/native/useBadgeDirectoryNuxEntryPoint.tsx", "size": 988 }
 { "file": "modules/badges/native/useCanOpenBadgeDirectoryFromProfile.tsx", "size": 996 }
-{ "file": "modules/badges/PendingBadgeSettings.tsx", "size": 12694 }
+{ "file": "modules/badges/PendingBadgeSettings.tsx", "size": 12686 }
 { "file": "modules/badges/trackBadgeDirectoryAction.tsx", "size": 2768 }
 { "file": "modules/badges/useBadgeDirectoryBadgeIndicators.tsx", "size": 2820 }
 { "file": "modules/badges/useBadgeDirectoryNuxPopoverVariant.tsx", "size": 5165 }
@@ -11763,10 +11763,10 @@
 { "file": "modules/badges/useShowBadgeProgress.tsx", "size": 1255 }
 { "file": "modules/bidi/IsolateString.tsx", "size": 536 }
 { "file": "modules/billing/actions/BillingActionCreators.tsx", "size": 73914 }
-{ "file": "modules/billing/actions/BillingPaymentGatewayActionCreators.tsx", "size": 63912 }
+{ "file": "modules/billing/actions/BillingPaymentGatewayActionCreators.tsx", "size": 63920 }
 { "file": "modules/billing/actions/BillingSharedActionCreators.tsx", "size": 15811 }
 { "file": "modules/billing/actions/HandleConfirmPaymentRegistry.tsx", "size": 19032 }
-{ "file": "modules/billing/actions/StripeActionCreators.tsx", "size": 5098 }
+{ "file": "modules/billing/actions/StripeActionCreators.tsx", "size": 1945 }
 { "file": "modules/billing/Constants.tsx", "size": 418 }
 { "file": "modules/billing/errors/InvalidGooglePlayPurchase.tsx", "size": 438 }
 { "file": "modules/billing/experiments/BlockedPaymentsCountryExperiment.tsx", "size": 1054 }
@@ -11822,7 +11822,7 @@
 { "file": "modules/build_overrides/native/BuildOverrideUtils.tsx", "size": 11578 }
 { "file": "modules/build_overrides/native/RecentBuildOverrides.tsx", "size": 1134 }
 { "file": "modules/build_overrides/validateBuildOverride.tsx", "size": 4767 }
-{ "file": "modules/cache/CacheActionCreators.tsx", "size": 2287 }
+{ "file": "modules/cache/CacheActionCreators.tsx", "size": 3547 }
 { "file": "modules/cache/CacheManager.native.tsx", "size": 2896 }
 { "file": "modules/cache/CacheStore.tsx", "size": 50590 }
 { "file": "modules/cache/ClientStateStoreStorage.native.tsx", "size": 568 }
@@ -11840,7 +11840,7 @@
 { "file": "modules/calls/mediaEngineContextFromParticipantType.tsx", "size": 960 }
 { "file": "modules/calls/mobile/useIsCallActive.tsx", "size": 2208 }
 { "file": "modules/calls/native/getPrivateChannelCall.tsx", "size": 2766 }
-{ "file": "modules/calls/native/SystemTelecomManager.tsx", "size": 35867 }
+{ "file": "modules/calls/native/SystemTelecomManager.tsx", "size": 37675 }
 { "file": "modules/calls/native/SystemTelecomPlatform.android.tsx", "size": 434 }
 { "file": "modules/calls/native/SystemTelecomUtils.android.tsx", "size": 1193 }
 { "file": "modules/calls/native/TelecomManager.android.tsx", "size": 40292 }
@@ -11996,19 +11996,19 @@
 { "file": "modules/chat_input/native/accessories/ChatInputImageCarousel.tsx", "size": 1870 }
 { "file": "modules/chat_input/native/accessories/ChatInputNotificationNudge.tsx", "size": 10575 }
 { "file": "modules/chat_input/native/accessories/ChatInputSendButton.tsx", "size": 8843 }
-{ "file": "modules/chat_input/native/accessories/ChatInputSendUtils.tsx", "size": 18941 }
+{ "file": "modules/chat_input/native/accessories/ChatInputSendUtils.tsx", "size": 19017 }
 { "file": "modules/chat_input/native/action_buttons/ChatInputActionButton.tsx", "size": 3898 }
 { "file": "modules/chat_input/native/action_buttons/ChatInputActionButtonApps.tsx", "size": 5867 }
 { "file": "modules/chat_input/native/action_buttons/ChatInputActionButtonGift.tsx", "size": 8791 }
 { "file": "modules/chat_input/native/action_buttons/ChatInputActionButtonGiftOrThread.tsx", "size": 3080 }
 { "file": "modules/chat_input/native/action_buttons/ChatInputActionButtonTransitionItem.tsx", "size": 6499 }
 { "file": "modules/chat_input/native/action_buttons/ChatInputActions.tsx", "size": 15128 }
-{ "file": "modules/chat_input/native/action_buttons/ChatInputRightActions.tsx", "size": 5551 }
+{ "file": "modules/chat_input/native/action_buttons/ChatInputRightActions.tsx", "size": 5575 }
 { "file": "modules/chat_input/native/action_buttons/useChatInputFloatingBounce.tsx", "size": 6528 }
 { "file": "modules/chat_input/native/action_buttons/useChatInputFloatingWidth.tsx", "size": 2653 }
 { "file": "modules/chat_input/native/ApplicationCommandOptionValueParser.tsx", "size": 21936 }
 { "file": "modules/chat_input/native/ChatFloatingNavButton.tsx", "size": 3993 }
-{ "file": "modules/chat_input/native/ChatInput.tsx", "size": 60315 }
+{ "file": "modules/chat_input/native/ChatInput.tsx", "size": 61783 }
 { "file": "modules/chat_input/native/ChatInputAppCommandManager.tsx", "size": 13590 }
 { "file": "modules/chat_input/native/ChatInputCommandOptionParser.tsx", "size": 34012 }
 { "file": "modules/chat_input/native/ChatInputConstants.tsx", "size": 2219 }
@@ -12094,10 +12094,10 @@
 { "file": "modules/checkout/native/gifting/UnifiedGiftModalTypes.tsx", "size": 384 }
 { "file": "modules/checkout/native/NativeCheckoutStore.tsx", "size": 25421 }
 { "file": "modules/checkout/native/showCheckoutOrderErrorModal.tsx", "size": 7006 }
-{ "file": "modules/checkout/native/stores/NativeCheckoutStoreProvider.tsx", "size": 13058 }
+{ "file": "modules/checkout/native/stores/NativeCheckoutStoreProvider.tsx", "size": 14741 }
 { "file": "modules/checkout/native/useGiftCardMobileConsumptionHalfsheet.tsx", "size": 6389 }
 { "file": "modules/checkout/native/useSyncGiftOptionsToOrder.tsx", "size": 6113 }
-{ "file": "modules/checkout/utils/OrderUtils.native.tsx", "size": 1887 }
+{ "file": "modules/checkout/utils/OrderUtils.native.tsx", "size": 3225 }
 { "file": "modules/checkpoint/2025/CheckpointColors.native.tsx", "size": 5680 }
 { "file": "modules/checkpoint/2025/CheckpointConstants.tsx", "size": 544 }
 { "file": "modules/checkpoint/2025/CheckpointMessageComponentUtils.tsx", "size": 4607 }
@@ -12110,7 +12110,7 @@
 { "file": "modules/checkpoint/character/useCheckpointCharacterLoadedTextureNames.tsx", "size": 1584 }
 { "file": "modules/checkpoint/character/useCheckpointCharacterOutfitPreload.tsx", "size": 2998 }
 { "file": "modules/checkpoint/character/useCheckpointCharacterReferencedAssets.tsx", "size": 4410 }
-{ "file": "modules/checkpoint/character/useCheckpointCharacterTextureSwaps.tsx", "size": 8792 }
+{ "file": "modules/checkpoint/character/useCheckpointCharacterTextureSwaps.tsx", "size": 10934 }
 { "file": "modules/checkpoint/Checkpoint.messages.js", "size": 7719 }
 { "file": "modules/checkpoint/Checkpoint2026.messages.js", "size": 7723 }
 { "file": "modules/checkpoint/CheckpointActionCreators.tsx", "size": 16678 }
@@ -12154,7 +12154,7 @@
 { "file": "modules/checkpoint/native/components/CheckpointGuildStats.tsx", "size": 3009 }
 { "file": "modules/checkpoint/native/components/CheckpointHeaderButton.tsx", "size": 1544 }
 { "file": "modules/checkpoint/native/components/CheckpointKnickKnacks.tsx", "size": 1526 }
-{ "file": "modules/checkpoint/native/components/CheckpointModal.tsx", "size": 23962 }
+{ "file": "modules/checkpoint/native/components/CheckpointModal.tsx", "size": 21833 }
 { "file": "modules/checkpoint/native/components/CheckpointNavigationControls.tsx", "size": 9765 }
 { "file": "modules/checkpoint/native/components/CheckpointOverlay.tsx", "size": 5569 }
 { "file": "modules/checkpoint/native/components/CheckpointPressable.tsx", "size": 3343 }
@@ -12274,7 +12274,7 @@
 { "file": "modules/collectibles/avatar_decorations/useAvatarDecoration.tsx", "size": 2025 }
 { "file": "modules/collectibles/avatar_decorations/useAvatarDecorationIfNotExpired.tsx", "size": 2461 }
 { "file": "modules/collectibles/avatar_decorations/useAvatarDecorationSections.tsx", "size": 3371 }
-{ "file": "modules/collectibles/CollectiblesActionCreators.tsx", "size": 44791 }
+{ "file": "modules/collectibles/CollectiblesActionCreators.tsx", "size": 46464 }
 { "file": "modules/collectibles/CollectiblesAnalyticsContext.tsx", "size": 1258 }
 { "file": "modules/collectibles/CollectiblesCategoryStore.tsx", "size": 11810 }
 { "file": "modules/collectibles/CollectiblesDebugStore.tsx", "size": 1170 }
@@ -12341,7 +12341,7 @@
 { "file": "modules/collectibles/nameplates/native/NameplateCardPreview.tsx", "size": 3482 }
 { "file": "modules/collectibles/nameplates/native/NameplateDummyUserPreview.tsx", "size": 4273 }
 { "file": "modules/collectibles/nameplates/native/NameplatePreview.tsx", "size": 6412 }
-{ "file": "modules/collectibles/nameplates/native/NameplateProductPreview.tsx", "size": 7488 }
+{ "file": "modules/collectibles/nameplates/native/NameplateProductPreview.tsx", "size": 7467 }
 { "file": "modules/collectibles/nameplates/native/NameplateUtils.tsx", "size": 899 }
 { "file": "modules/collectibles/nameplates/types.tsx", "size": 710 }
 { "file": "modules/collectibles/nameplates/useNameplateSections.tsx", "size": 3502 }
@@ -12351,7 +12351,7 @@
 { "file": "modules/collectibles/native/BundleProductDetailsActionSheetPreview.tsx", "size": 8902 }
 { "file": "modules/collectibles/native/BundleSampleV2.tsx", "size": 10151 }
 { "file": "modules/collectibles/native/CollectiblesBadges.tsx", "size": 7961 }
-{ "file": "modules/collectibles/native/CollectiblesCoachmarkScrollDismissContext.tsx", "size": 1977 }
+{ "file": "modules/collectibles/native/CollectiblesCoachmarkScrollDismissContext.tsx", "size": 1981 }
 { "file": "modules/collectibles/native/CollectiblesEditUserProfileListItems.tsx", "size": 8244 }
 { "file": "modules/collectibles/native/CollectiblesItemMiniPreview.tsx", "size": 4901 }
 { "file": "modules/collectibles/native/CollectiblesMobileAnnouncementActionSheet.tsx", "size": 8682 }
@@ -12391,7 +12391,7 @@
 { "file": "modules/collectibles/native/HeroBlock.tsx", "size": 8458 }
 { "file": "modules/collectibles/native/HeroBlockHeader.tsx", "size": 9657 }
 { "file": "modules/collectibles/native/HeroBlockOrbsArcadeHeader.tsx", "size": 12998 }
-{ "file": "modules/collectibles/native/hooks/useCardLayout.tsx", "size": 4101 }
+{ "file": "modules/collectibles/native/hooks/useCardLayout.tsx", "size": 4118 }
 { "file": "modules/collectibles/native/hooks/useCollectiblesExternalGatewayFacet.android.tsx", "size": 1334 }
 { "file": "modules/collectibles/native/hooks/useFeedBlockSkuIds.tsx", "size": 1901 }
 { "file": "modules/collectibles/native/hooks/useFilteredAndSortedProducts.tsx", "size": 2772 }
@@ -12490,7 +12490,7 @@
 { "file": "modules/collectibles/records/CollectiblesMarketingCoachmarkRecord.tsx", "size": 3636 }
 { "file": "modules/collectibles/records/CollectiblesMarketingRecord.tsx", "size": 2258 }
 { "file": "modules/collectibles/records/CollectiblesMarketingTabTooltipRecord.tsx", "size": 3406 }
-{ "file": "modules/collectibles/records/CollectiblesProductRecord.tsx", "size": 16539 }
+{ "file": "modules/collectibles/records/CollectiblesProductRecord.tsx", "size": 16522 }
 { "file": "modules/collectibles/records/CollectiblesPurchaseRecord.tsx", "size": 4587 }
 { "file": "modules/collectibles/records/CollectiblesShopHomeRecord.tsx", "size": 3944 }
 { "file": "modules/collectibles/records/CollectiblesStoreListingRecord.tsx", "size": 2848 }
@@ -12590,7 +12590,7 @@
 { "file": "modules/conjure/background_frames/conjureBackgroundFramePlatform.native.tsx", "size": 2594 }
 { "file": "modules/conjure/background_frames/conjureBackgroundFrameRules.tsx", "size": 2975 }
 { "file": "modules/conjure/background_frames/conjureBackgroundFrames.tsx", "size": 6793 }
-{ "file": "modules/conjure/background_frames/ConjureBackgroundFramesManager.tsx", "size": 2052 }
+{ "file": "modules/conjure/background_frames/ConjureBackgroundFramesManager.tsx", "size": 3249 }
 { "file": "modules/conjure/background_frames/conjureFrameSound.tsx", "size": 404 }
 { "file": "modules/conjure/background_frames/isConjureAppChannelFrame.tsx", "size": 897 }
 { "file": "modules/conjure/background_frames/isLeftBuilderPreviewFrame.tsx", "size": 881 }
@@ -12611,7 +12611,7 @@
 { "file": "modules/conjure/builder/native/ConjureChatHeader.tsx", "size": 3176 }
 { "file": "modules/conjure/builder/native/conjureChatMoreSections.tsx", "size": 8461 }
 { "file": "modules/conjure/builder/native/ConjureChatMoreSheet.tsx", "size": 3510 }
-{ "file": "modules/conjure/builder/native/ConjureChatScene.tsx", "size": 46181 }
+{ "file": "modules/conjure/builder/native/ConjureChatScene.tsx", "size": 47926 }
 { "file": "modules/conjure/builder/native/ConjureGlobalScreenContext.tsx", "size": 357 }
 { "file": "modules/conjure/builder/native/ConjureModeTabBar.tsx", "size": 16765 }
 { "file": "modules/conjure/builder/native/ConjureStaffAccessNotice.tsx", "size": 1361 }
@@ -12714,7 +12714,7 @@
 { "file": "modules/conjure/create/conjureCreateForm.tsx", "size": 1136 }
 { "file": "modules/conjure/create/ConjureLandingModelChoices.tsx", "size": 681 }
 { "file": "modules/conjure/create/conjureTarget.tsx", "size": 288 }
-{ "file": "modules/conjure/create/createConjureProject.tsx", "size": 3836 }
+{ "file": "modules/conjure/create/createConjureProject.tsx", "size": 1928 }
 { "file": "modules/conjure/create/native/ConjureCreateSheet.tsx", "size": 27927 }
 { "file": "modules/conjure/create/useConjureAppSlotsLeft.tsx", "size": 1183 }
 { "file": "modules/conjure/custom_widget/ConjureCustomWidget.tsx", "size": 1682 }
@@ -12770,7 +12770,7 @@
 { "file": "modules/conjure/experiments/ConjureMcpUiExperiment.tsx", "size": 781 }
 { "file": "modules/conjure/experiments/ConjureMobileExperiment.tsx", "size": 1676 }
 { "file": "modules/conjure/experiments/ConjureUserExperiment.tsx", "size": 1122 }
-{ "file": "modules/conjure/external_connections/conjureExternalConnectionRequests.tsx", "size": 9314 }
+{ "file": "modules/conjure/external_connections/conjureExternalConnectionRequests.tsx", "size": 6942 }
 { "file": "modules/conjure/external_connections/conjureExternalConnections.tsx", "size": 3614 }
 { "file": "modules/conjure/external_connections/ConjureMcpConnectionPanel.tsx", "size": 7389 }
 { "file": "modules/conjure/external_connections/native/ConjureConnectToolSheet.tsx", "size": 6674 }
@@ -12889,7 +12889,7 @@
 { "file": "modules/conjure/preview/ConjurePreviewMode.tsx", "size": 924 }
 { "file": "modules/conjure/preview/conjurePreviewModeRequests.tsx", "size": 1228 }
 { "file": "modules/conjure/preview/conjurePreviewModes.tsx", "size": 4746 }
-{ "file": "modules/conjure/preview/conjurePreviewNativeSurfaces.tsx", "size": 10746 }
+{ "file": "modules/conjure/preview/conjurePreviewNativeSurfaces.tsx", "size": 10766 }
 { "file": "modules/conjure/preview/conjurePreviewOperationSurfaces.tsx", "size": 2641 }
 { "file": "modules/conjure/preview/ConjurePreviewPauseStore.tsx", "size": 1258 }
 { "file": "modules/conjure/preview/conjurePreviewSurface.tsx", "size": 4669 }
@@ -12986,7 +12986,7 @@
 { "file": "modules/conjure/publish/useConjurePatchNotesComposer.tsx", "size": 11802 }
 { "file": "modules/conjure/publish/useConjurePatchNotesLink.tsx", "size": 4500 }
 { "file": "modules/conjure/publish/useConjurePreviewDevicePermissions.tsx", "size": 991 }
-{ "file": "modules/conjure/publish/useConjurePublishAction.tsx", "size": 45440 }
+{ "file": "modules/conjure/publish/useConjurePublishAction.tsx", "size": 47395 }
 { "file": "modules/conjure/publish/useConjurePublishButton.tsx", "size": 3444 }
 { "file": "modules/conjure/publish/useConjurePublishedAppName.tsx", "size": 1129 }
 { "file": "modules/conjure/publish/useConjurePublishedServerName.tsx", "size": 1388 }
@@ -13014,7 +13014,7 @@
 { "file": "modules/conjure/secrets/native/ConjureSecretsSheet.tsx", "size": 12965 }
 { "file": "modules/conjure/server_share/native/showConjureShareToServerSheet.tsx", "size": 11133 }
 { "file": "modules/conjure/server_share/useConjureShareToServer.tsx", "size": 13177 }
-{ "file": "modules/conjure/server_widgets/conjureServerWidgetConsent.tsx", "size": 13321 }
+{ "file": "modules/conjure/server_widgets/conjureServerWidgetConsent.tsx", "size": 11058 }
 { "file": "modules/conjure/server_widgets/native/ConjureServerWidgetUpsell.tsx", "size": 5858 }
 { "file": "modules/conjure/server_widgets/native/turnOnConjureServerWidget.tsx", "size": 1711 }
 { "file": "modules/conjure/server_widgets/useConjureServerWidgetOffers.tsx", "size": 16897 }
@@ -13187,17 +13187,17 @@
 { "file": "modules/contact_sync/native/ContactSyncModalActionCreators.tsx", "size": 28356 }
 { "file": "modules/contact_sync/native/ContactSyncModalStore.tsx", "size": 5456 }
 { "file": "modules/contact_sync/native/ContactSyncPersistedStore.tsx", "size": 5227 }
-{ "file": "modules/contact_sync/native/ContactSyncUtils.tsx", "size": 11488 }
+{ "file": "modules/contact_sync/native/ContactSyncUtils.tsx", "size": 9740 }
 { "file": "modules/content_classification/ContentClassificationReference.tsx", "size": 743 }
 { "file": "modules/content_classification/ContentClassificationVisibility.tsx", "size": 2687 }
 { "file": "modules/content_classification/utils.tsx", "size": 1043 }
 { "file": "modules/content_inventory/ContentInventoryActionCreators.tsx", "size": 2822 }
-{ "file": "modules/content_inventory/ContentInventoryActivityImageUtils.tsx", "size": 15690 }
+{ "file": "modules/content_inventory/ContentInventoryActivityImageUtils.tsx", "size": 15734 }
 { "file": "modules/content_inventory/ContentInventoryActivityStore.tsx", "size": 6384 }
 { "file": "modules/content_inventory/ContentInventoryConstants.tsx", "size": 1442 }
 { "file": "modules/content_inventory/ContentInventoryExperiments.tsx", "size": 2065 }
 { "file": "modules/content_inventory/ContentInventoryHttpApi.tsx", "size": 12859 }
-{ "file": "modules/content_inventory/ContentInventoryManager.tsx", "size": 12867 }
+{ "file": "modules/content_inventory/ContentInventoryManager.tsx", "size": 14662 }
 { "file": "modules/content_inventory/ContentInventoryOutboxStore.tsx", "size": 3475 }
 { "file": "modules/content_inventory/ContentInventoryPersistedStore.tsx", "size": 4634 }
 { "file": "modules/content_inventory/ContentInventoryPlatformActionCreators.native.tsx", "size": 536 }
@@ -13232,7 +13232,7 @@
 { "file": "modules/conversations/ConversationMessageCacheUtils.tsx", "size": 3796 }
 { "file": "modules/conversations/ConversationPreviewStore.tsx", "size": 16541 }
 { "file": "modules/conversations/Conversations.messages.js", "size": 7725 }
-{ "file": "modules/conversations/ConversationsActionCreators.tsx", "size": 17190 }
+{ "file": "modules/conversations/ConversationsActionCreators.tsx", "size": 19258 }
 { "file": "modules/conversations/ConversationsAnalytics.tsx", "size": 7724 }
 { "file": "modules/conversations/ConversationsUtils.tsx", "size": 3436 }
 { "file": "modules/conversations/native/createConversationHeader.tsx", "size": 1851 }
@@ -13422,7 +13422,7 @@
 { "file": "modules/dice_roll/DiceRollStore.tsx", "size": 756 }
 { "file": "modules/dice_roll/DiceRollUtils.tsx", "size": 794 }
 { "file": "modules/dice_roll/native/DiceRollBar.tsx", "size": 6348 }
-{ "file": "modules/directory_channels/GuildDirectoryActionCreators.tsx", "size": 14651 }
+{ "file": "modules/directory_channels/GuildDirectoryActionCreators.tsx", "size": 17890 }
 { "file": "modules/directory_channels/GuildDirectoryConstants.tsx", "size": 16812 }
 { "file": "modules/directory_channels/GuildDirectorySearchStore.tsx", "size": 3998 }
 { "file": "modules/directory_channels/GuildDirectoryStore.tsx", "size": 9177 }
@@ -13450,7 +13450,7 @@
 { "file": "modules/directory_channels/native/GuildDirectoryConstants.tsx", "size": 668 }
 { "file": "modules/directory_channels/native/GuildDirectoryRowGenerator.tsx", "size": 2369 }
 { "file": "modules/directory_channels/native/GuildDirectoryTemplatesIcons.tsx", "size": 1087 }
-{ "file": "modules/directory_channels/native/GuildDirectoryUtils.tsx", "size": 1716 }
+{ "file": "modules/directory_channels/native/GuildDirectoryUtils.tsx", "size": 3555 }
 { "file": "modules/directory_channels/useAvailableAndAddedGuilds.tsx", "size": 4245 }
 { "file": "modules/directory_channels/useCanManageGuildDirectoryEntry.tsx", "size": 2047 }
 { "file": "modules/discord_md5/DiscordMd5.tsx", "size": 2027 }
@@ -13465,8 +13465,8 @@
 { "file": "modules/dismissible_content/DismissibleContentScope.tsx", "size": 11886 }
 { "file": "modules/dismissible_content/DismissibleContentShownStateStore.tsx", "size": 31045 }
 { "file": "modules/dismissible_content/DismissibleContentTypes.tsx", "size": 8500 }
-{ "file": "modules/dismissible_content/DismissibleContentUnsafeUtils.tsx", "size": 15532 }
-{ "file": "modules/dismissible_content/DismissibleContentUtils.tsx", "size": 31736 }
+{ "file": "modules/dismissible_content/DismissibleContentUnsafeUtils.tsx", "size": 16658 }
+{ "file": "modules/dismissible_content/DismissibleContentUtils.tsx", "size": 31738 }
 { "file": "modules/dismissible_content/hooks/useSelectedDismissibleContent.tsx", "size": 8617 }
 { "file": "modules/dismissible_content/markScopedDismissibleContentAsDismissed.tsx", "size": 2344 }
 { "file": "modules/dismissible_content/native/DismissibleActionSheet.tsx", "size": 1595 }
@@ -13517,7 +13517,7 @@
 { "file": "modules/display_name_styles/native/getDisplayNameStylesGradientLocations.tsx", "size": 1882 }
 { "file": "modules/display_name_styles/native/showGummyCustomColorSheet.tsx", "size": 886 }
 { "file": "modules/display_name_styles/native/useDisplayNameStylesFont.tsx", "size": 1820 }
-{ "file": "modules/display_name_styles/native/UsernameWithEffects.tsx", "size": 14799 }
+{ "file": "modules/display_name_styles/native/UsernameWithEffects.tsx", "size": 14807 }
 { "file": "modules/display_name_styles/types.tsx", "size": 498 }
 { "file": "modules/dm_settings_upsell/DmSettingsUpsellActionCreators.native.tsx", "size": 1556 }
 { "file": "modules/dm_settings_upsell/DmSettingsUpsellConstants.tsx", "size": 431 }
@@ -13607,7 +13607,7 @@
 { "file": "modules/emojis/hooks/useEmojiAndSource.tsx", "size": 6859 }
 { "file": "modules/emojis/hooks/useEmojiColorPalette.tsx", "size": 1152 }
 { "file": "modules/emojis/native/Emoji.tsx", "size": 2032 }
-{ "file": "modules/emojis/native/utils/EmojiColorUtils.tsx", "size": 5864 }
+{ "file": "modules/emojis/native/utils/EmojiColorUtils.tsx", "size": 2081 }
 { "file": "modules/emojis/native/utils/EmojiSourceUtils.tsx", "size": 3916 }
 { "file": "modules/emojis/RawGuildEmojiStore.tsx", "size": 5025 }
 { "file": "modules/emojis/records/ExpressionSourceRecord.tsx", "size": 8877 }
@@ -13725,7 +13725,7 @@
 { "file": "modules/explicit_media_redaction/SensitiveMediaRedactionSettingUtils.tsx", "size": 840 }
 { "file": "modules/expression_picker/ExpressionPickerConstants.tsx", "size": 836 }
 { "file": "modules/expression_picker/ExpressionPickerGridStores.tsx", "size": 9432 }
-{ "file": "modules/expression_picker/ExpressionPickerStore.tsx", "size": 7624 }
+{ "file": "modules/expression_picker/ExpressionPickerStore.tsx", "size": 7628 }
 { "file": "modules/expression_picker/native/categories/ExpressionPickerCategories.tsx", "size": 1553 }
 { "file": "modules/expression_picker/native/categories/useExpressionPickerCategoriesPlaceholderConfig.tsx", "size": 1460 }
 { "file": "modules/expression_picker/native/ExpressionPicker.tsx", "size": 6762 }
@@ -13752,7 +13752,7 @@
 { "file": "modules/fastest_list/placeholders/useFastestListTableRowPlaceholderConfig.native.tsx", "size": 3662 }
 { "file": "modules/fastest_list/props/FastestListPropsPlaceholder.tsx", "size": 417 }
 { "file": "modules/fastest_list/props/useFastestListPropsEstimatedListSize.native.tsx", "size": 970 }
-{ "file": "modules/fastest_list/props/useFastestListPropsPlaceholder.android.tsx", "size": 7323 }
+{ "file": "modules/fastest_list/props/useFastestListPropsPlaceholder.android.tsx", "size": 7308 }
 { "file": "modules/fastest_list/props/useFastestListPropsScrollReporting.native.tsx", "size": 2085 }
 { "file": "modules/fastest_list/useFastestListComputedStyles.android.tsx", "size": 4344 }
 { "file": "modules/fastest_list/useFastestListSections.android.tsx", "size": 4992 }
@@ -13765,7 +13765,7 @@
 { "file": "modules/favorites/analytics/useTrackFavoritesGuildAddModalOpened.tsx", "size": 841 }
 { "file": "modules/favorites/analytics/useTrackFavoritesGuildUpsellModalOpened.tsx", "size": 1153 }
 { "file": "modules/favorites/FavoriteManager.tsx", "size": 4825 }
-{ "file": "modules/favorites/FavoritesActionCreators.tsx", "size": 50077 }
+{ "file": "modules/favorites/FavoritesActionCreators.tsx", "size": 56731 }
 { "file": "modules/favorites/FavoritesCleanup.tsx", "size": 7373 }
 { "file": "modules/favorites/FavoritesConstants.tsx", "size": 1415 }
 { "file": "modules/favorites/FavoritesGuildChannelList.tsx", "size": 25250 }
@@ -13855,7 +13855,7 @@
 { "file": "modules/forums/native/AppliedForumTag.tsx", "size": 4875 }
 { "file": "modules/forums/native/AvailableForumTag.tsx", "size": 4536 }
 { "file": "modules/forums/native/ChannelSettingsEditForumTag.tsx", "size": 13722 }
-{ "file": "modules/forums/native/composer/ForumComposer.tsx", "size": 47115 }
+{ "file": "modules/forums/native/composer/ForumComposer.tsx", "size": 49045 }
 { "file": "modules/forums/native/composer/ForumComposerHeader.tsx", "size": 3971 }
 { "file": "modules/forums/native/composer/ForumComposerModal.tsx", "size": 8456 }
 { "file": "modules/forums/native/composer/ForumComposerModalActionCreators.tsx", "size": 1586 }
@@ -13959,7 +13959,7 @@
 { "file": "modules/frames/native/useFramePoolBorrow.tsx", "size": 2124 }
 { "file": "modules/frames/native/useInlineFrameOAuthNavigation.tsx", "size": 4634 }
 { "file": "modules/frames/openFrame.tsx", "size": 2081 }
-{ "file": "modules/frames/openFrameInAppChannel.tsx", "size": 1925 }
+{ "file": "modules/frames/openFrameInAppChannel.tsx", "size": 3266 }
 { "file": "modules/frames/panel/native/FramePanelContainer.tsx", "size": 1588 }
 { "file": "modules/frames/panel/native/FramePanelController.tsx", "size": 3304 }
 { "file": "modules/frames/panel/native/FramePanelFocusedView.tsx", "size": 3712 }
@@ -13974,7 +13974,7 @@
 { "file": "modules/frames/preloadChannelAppFrame.tsx", "size": 2680 }
 { "file": "modules/frames/resolveAppChannel.tsx", "size": 4789 }
 { "file": "modules/frames/useChannelAppFrameTeardown.tsx", "size": 1998 }
-{ "file": "modules/frames/useFrameLifecycle.tsx", "size": 5354 }
+{ "file": "modules/frames/useFrameLifecycle.tsx", "size": 5362 }
 { "file": "modules/frames/useFrameRunsInBackground.tsx", "size": 971 }
 { "file": "modules/frames/useIsFrameRenderingElsewhere.native.tsx", "size": 385 }
 { "file": "modules/frames/utils/canLaunchContextlessFrame.tsx", "size": 681 }
@@ -14041,7 +14041,7 @@
 { "file": "modules/game_detection/calculateSteamReviewScoreDescription.tsx", "size": 2312 }
 { "file": "modules/game_detection/Constants.tsx", "size": 1583 }
 { "file": "modules/game_detection/fetchDetectableGames.tsx", "size": 4620 }
-{ "file": "modules/game_detection/GameAnalyticsUtils.tsx", "size": 3708 }
+{ "file": "modules/game_detection/GameAnalyticsUtils.tsx", "size": 3695 }
 { "file": "modules/game_detection/GameDetectionDebugLevel.tsx", "size": 397 }
 { "file": "modules/game_detection/GameDetectionTypes.tsx", "size": 2554 }
 { "file": "modules/game_detection/native/GameIcon.tsx", "size": 3647 }
@@ -14171,7 +14171,7 @@
 { "file": "modules/game_profile/native/components/GameProfileNavigationHeader.tsx", "size": 7097 }
 { "file": "modules/game_profile/native/components/GameProfileRankPill.tsx", "size": 2354 }
 { "file": "modules/game_profile/native/components/GameProfileReportButton.tsx", "size": 1708 }
-{ "file": "modules/game_profile/native/components/GameProfileReviews.tsx", "size": 16258 }
+{ "file": "modules/game_profile/native/components/GameProfileReviews.tsx", "size": 16261 }
 { "file": "modules/game_profile/native/components/GameProfileScreen.tsx", "size": 17875 }
 { "file": "modules/game_profile/native/components/GameProfileSection.tsx", "size": 4101 }
 { "file": "modules/game_profile/native/components/GameProfileShopCarousel.tsx", "size": 5520 }
@@ -14192,7 +14192,7 @@
 { "file": "modules/game_profile/native/utils/getGameProfileStoreWebsiteData.tsx", "size": 4041 }
 { "file": "modules/game_profile/native/utils/getGameProfileWebsiteData.tsx", "size": 5486 }
 { "file": "modules/game_profile/navigateToGameAnnouncement.tsx", "size": 5955 }
-{ "file": "modules/game_relationships/GameRelationshipActionCreators.tsx", "size": 5339 }
+{ "file": "modules/game_relationships/GameRelationshipActionCreators.tsx", "size": 10414 }
 { "file": "modules/game_relationships/GameRelationshipManager.tsx", "size": 1890 }
 { "file": "modules/game_relationships/GameRelationshipStore.tsx", "size": 7709 }
 { "file": "modules/game_relationships/GameRelationshipStoreHooks.tsx", "size": 3531 }
@@ -14224,14 +14224,14 @@
 { "file": "modules/games/autocomplete/GameSearchSurfaces.tsx", "size": 514 }
 { "file": "modules/games/autocomplete/queryGamesAutocomplete.tsx", "size": 2115 }
 { "file": "modules/games/autocomplete/useGameAutocomplete.tsx", "size": 5414 }
-{ "file": "modules/games/GameActionCreators.tsx", "size": 6087 }
+{ "file": "modules/games/GameActionCreators.tsx", "size": 7218 }
 { "file": "modules/games/GamePlatformBadges.tsx", "size": 1415 }
 { "file": "modules/games/GameRecord.tsx", "size": 9089 }
 { "file": "modules/games/GameSearchRowExperiment.tsx", "size": 616 }
 { "file": "modules/games/GameStore.tsx", "size": 23102 }
 { "file": "modules/games/getGameMediaRefURL.tsx", "size": 1901 }
 { "file": "modules/games/hooks/useAreGamesLoading.tsx", "size": 808 }
-{ "file": "modules/games/hooks/useGame.tsx", "size": 2955 }
+{ "file": "modules/games/hooks/useGame.tsx", "size": 4000 }
 { "file": "modules/games/hooks/useGameNameAndCoverImage.tsx", "size": 1291 }
 { "file": "modules/games/hooks/useGameRecords.tsx", "size": 859 }
 { "file": "modules/games/hooks/useGetGameForAppId.tsx", "size": 3833 }
@@ -14294,7 +14294,7 @@
 { "file": "modules/gif_picker/native/GIFPickerSearchSuggestions.tsx", "size": 2733 }
 { "file": "modules/gif_picker/native/GIFPickerUtils.tsx", "size": 3156 }
 { "file": "modules/gift_cards/messages/GiftCards.messages.js", "size": 7727 }
-{ "file": "modules/global_discovery_apps/ApplicationDirectoryActionCreators.tsx", "size": 26466 }
+{ "file": "modules/global_discovery_apps/ApplicationDirectoryActionCreators.tsx", "size": 34151 }
 { "file": "modules/global_discovery_apps/applicationDirectoryAnalytics.tsx", "size": 1032 }
 { "file": "modules/global_discovery_apps/GlobalDiscoveryAppsConstants.tsx", "size": 884 }
 { "file": "modules/global_discovery_apps/stores/ApplicationDirectoryApplicationsStore.tsx", "size": 3348 }
@@ -14305,11 +14305,11 @@
 { "file": "modules/global_discovery_apps/stores/MyGuildApplicationsStore.tsx", "size": 5978 }
 { "file": "modules/global_discovery_apps/utils/getCollectionItemAssetUrl.tsx", "size": 1706 }
 { "file": "modules/global_discovery_servers/GlobalDiscoveryServersConstants.tsx", "size": 2501 }
-{ "file": "modules/global_discovery_servers/GlobalDiscoveryServersFeaturedSearchManager.tsx", "size": 9350 }
+{ "file": "modules/global_discovery_servers/GlobalDiscoveryServersFeaturedSearchManager.tsx", "size": 11060 }
 { "file": "modules/global_discovery_servers/GlobalDiscoveryServersSearchCountsStore.tsx", "size": 4403 }
 { "file": "modules/global_discovery_servers/GlobalDiscoveryServersSearchLayoutStore.tsx", "size": 1702 }
 { "file": "modules/global_discovery_servers/GlobalDiscoveryServersSearchResultsStore.tsx", "size": 9086 }
-{ "file": "modules/global_discovery_servers/GlobalDiscoveryServersUtils.tsx", "size": 10728 }
+{ "file": "modules/global_discovery_servers/GlobalDiscoveryServersUtils.tsx", "size": 10716 }
 { "file": "modules/global_discovery_servers/GuildDiscoveryCategoryActionCreators.tsx", "size": 15978 }
 { "file": "modules/global_discovery_servers/GuildDiscoveryCategoryStore.tsx", "size": 4069 }
 { "file": "modules/global_discovery/games/GlobalDiscoveryGames.messages.js", "size": 846 }
@@ -14353,7 +14353,7 @@
 { "file": "modules/go_live/web/modal/GoLiveModal.messages.js", "size": 7727 }
 { "file": "modules/gplay/native/Constants.tsx", "size": 1378 }
 { "file": "modules/gplay/native/GPlayAnalyticsStore.tsx", "size": 1490 }
-{ "file": "modules/gplay/native/GPlayManager.android.tsx", "size": 31188 }
+{ "file": "modules/gplay/native/GPlayManager.android.tsx", "size": 33640 }
 { "file": "modules/group_dm/getGroupDMRecipientLimit.tsx", "size": 1651 }
 { "file": "modules/group_dm/GroupDMConstants.tsx", "size": 299 }
 { "file": "modules/group_dm/GroupDMNitroCapExperiment.tsx", "size": 800 }
@@ -14386,7 +14386,7 @@
 { "file": "modules/guild_action_sheet/native/components/GuildActionSheetTabItems.tsx", "size": 5689 }
 { "file": "modules/guild_action_sheet/native/components/LeaveServerAlert.tsx", "size": 2057 }
 { "file": "modules/guild_action_sheet/native/GuildActionSheetUtils.tsx", "size": 1360 }
-{ "file": "modules/guild_action_sheet/native/GuildHeaderCountsStore.tsx", "size": 3051 }
+{ "file": "modules/guild_action_sheet/native/GuildHeaderCountsStore.tsx", "size": 3060 }
 { "file": "modules/guild_action_sheet/native/openGuildActionSheet.tsx", "size": 2241 }
 { "file": "modules/guild_action_sheet/native/useGuildHeaderCounts.tsx", "size": 2987 }
 { "file": "modules/guild_antiraid/getGuildSafetyAlertsChannelId.tsx", "size": 623 }
@@ -14522,7 +14522,7 @@
 { "file": "modules/guild_limited_access/native/GuildLimitedAccessInfoAlert.tsx", "size": 2542 }
 { "file": "modules/guild_limited_access/openGuildLimitedAccessInfoModal.native.tsx", "size": 1471 }
 { "file": "modules/guild_member_verification/canReviewGuildMemberApplications.tsx", "size": 1781 }
-{ "file": "modules/guild_member_verification/GuildJoinRequestActionCreators.tsx", "size": 24782 }
+{ "file": "modules/guild_member_verification/GuildJoinRequestActionCreators.tsx", "size": 23054 }
 { "file": "modules/guild_member_verification/GuildJoinRequestAnalyticUtils.tsx", "size": 2606 }
 { "file": "modules/guild_member_verification/GuildJoinRequestStore.tsx", "size": 11866 }
 { "file": "modules/guild_member_verification/GuildJoinRequestUtils.tsx", "size": 1532 }
@@ -14616,7 +14616,7 @@
 { "file": "modules/guild_onboarding_home/isSelectedFromHomeChannel.native.tsx", "size": 2606 }
 { "file": "modules/guild_onboarding_home/MemberActionUtils.tsx", "size": 3587 }
 { "file": "modules/guild_onboarding_home/native/GuildHomeResources.tsx", "size": 9320 }
-{ "file": "modules/guild_onboarding_home/native/GuildOnboardingHomeManager.tsx", "size": 19292 }
+{ "file": "modules/guild_onboarding_home/native/GuildOnboardingHomeManager.tsx", "size": 20819 }
 { "file": "modules/guild_onboarding_home/native/GuildOnboardingHomePage.tsx", "size": 5808 }
 { "file": "modules/guild_onboarding_home/native/GuildOnboardingNewMemberActions.tsx", "size": 11492 }
 { "file": "modules/guild_onboarding_home/native/HomeWelcomeMessage.tsx", "size": 9164 }
@@ -14718,7 +14718,7 @@
 { "file": "modules/guild_role_subscriptions/getMaxRoleSubscriptionEmojiSlots.tsx", "size": 409 }
 { "file": "modules/guild_role_subscriptions/GroupListingsFetchContext.tsx", "size": 3804 }
 { "file": "modules/guild_role_subscriptions/GuildRoleSubscriptionsActionCreatorExtras.native.tsx", "size": 2111 }
-{ "file": "modules/guild_role_subscriptions/GuildRoleSubscriptionsActionCreators.tsx", "size": 40481 }
+{ "file": "modules/guild_role_subscriptions/GuildRoleSubscriptionsActionCreators.tsx", "size": 38477 }
 { "file": "modules/guild_role_subscriptions/GuildRoleSubscriptionsConstants.tsx", "size": 2587 }
 { "file": "modules/guild_role_subscriptions/GuildRoleSubscriptionsExperimentUtils.tsx", "size": 1780 }
 { "file": "modules/guild_role_subscriptions/GuildRoleSubscriptionsHooks.tsx", "size": 36409 }
@@ -14753,7 +14753,7 @@
 { "file": "modules/guild_role_subscriptions/native/components/FormTrialIntervalPicker.tsx", "size": 2565 }
 { "file": "modules/guild_role_subscriptions/native/components/GuildPremiumRoleSubscribeButton.tsx", "size": 1079 }
 { "file": "modules/guild_role_subscriptions/native/components/GuildRoleSubscriptionBenefitEditorModal.tsx", "size": 12263 }
-{ "file": "modules/guild_role_subscriptions/native/components/GuildRoleSubscriptionBenefitEditorModalStateStore.tsx", "size": 3678 }
+{ "file": "modules/guild_role_subscriptions/native/components/GuildRoleSubscriptionBenefitEditorModalStateStore.tsx", "size": 3675 }
 { "file": "modules/guild_role_subscriptions/native/components/GuildRoleSubscriptionBenefitModalHeader.tsx", "size": 3596 }
 { "file": "modules/guild_role_subscriptions/native/components/GuildRoleSubscriptionBenefitPreview.tsx", "size": 6735 }
 { "file": "modules/guild_role_subscriptions/native/components/GuildRoleSubscriptionBenefitTableRow.tsx", "size": 3581 }
@@ -14765,7 +14765,7 @@
 { "file": "modules/guild_role_subscriptions/native/components/GuildRoleSubscriptionTierBenefitsModal.tsx", "size": 17487 }
 { "file": "modules/guild_role_subscriptions/native/components/GuildRoleSubscriptionTierConfirmationModal.tsx", "size": 5957 }
 { "file": "modules/guild_role_subscriptions/native/components/GuildRoleSubscriptionTierCreationModal.tsx", "size": 4951 }
-{ "file": "modules/guild_role_subscriptions/native/components/GuildRoleSubscriptionTierDesignModal.tsx", "size": 6807 }
+{ "file": "modules/guild_role_subscriptions/native/components/GuildRoleSubscriptionTierDesignModal.tsx", "size": 6811 }
 { "file": "modules/guild_role_subscriptions/native/components/GuildRoleSubscriptionTierDetailsModal.tsx", "size": 7107 }
 { "file": "modules/guild_role_subscriptions/native/components/GuildRoleSubscriptionTierEditStep.tsx", "size": 5363 }
 { "file": "modules/guild_role_subscriptions/native/components/LabeledDataBlock.tsx", "size": 2276 }
@@ -14901,7 +14901,7 @@
 { "file": "modules/guild_scheduled_events/native/components/EditGuildEventRecurrenceModal.tsx", "size": 7561 }
 { "file": "modules/guild_scheduled_events/native/components/EditGuildEventStepContainer.tsx", "size": 2473 }
 { "file": "modules/guild_scheduled_events/native/components/EditGuildEventStepHeader.tsx", "size": 1694 }
-{ "file": "modules/guild_scheduled_events/native/components/EditGuildEventWhere.tsx", "size": 8623 }
+{ "file": "modules/guild_scheduled_events/native/components/EditGuildEventWhere.tsx", "size": 8627 }
 { "file": "modules/guild_scheduled_events/native/components/EditGuildScheduledEventResetWarningAlert.tsx", "size": 1111 }
 { "file": "modules/guild_scheduled_events/native/components/EndEventActionSheet.tsx", "size": 3958 }
 { "file": "modules/guild_scheduled_events/native/components/event_detail/EventDetailInfoSheet.tsx", "size": 11770 }
@@ -14935,7 +14935,7 @@
 { "file": "modules/guild_scheduled_events/saveGuildEventRecurrence.tsx", "size": 3285 }
 { "file": "modules/guild_scheduled_events/StageChannelUpsellCardStore.tsx", "size": 1461 }
 { "file": "modules/guild_scheduled_events/StartEventPlatformUtils.native.tsx", "size": 5253 }
-{ "file": "modules/guild_scheduled_events/StartEventUtils.tsx", "size": 9173 }
+{ "file": "modules/guild_scheduled_events/StartEventUtils.tsx", "size": 10754 }
 { "file": "modules/guild_scheduled_events/UpcomingEventNoticesStore.tsx", "size": 4417 }
 { "file": "modules/guild_scheduled_events/useActiveEventOrStageInstanceChannel.tsx", "size": 1029 }
 { "file": "modules/guild_scheduled_events/useCanCreateAnEvent.tsx", "size": 2105 }
@@ -14956,7 +14956,7 @@
 { "file": "modules/guild_scheduled_events/utils/EntityUtils.tsx", "size": 1660 }
 { "file": "modules/guild_scheduled_events/utils/getGuildEventImage.tsx", "size": 1387 }
 { "file": "modules/guild_scheduled_events/utils/GuildEventRsvpUtils.tsx", "size": 3979 }
-{ "file": "modules/guild_scheduled_events/utils/ScheduleUtils.tsx", "size": 23821 }
+{ "file": "modules/guild_scheduled_events/utils/ScheduleUtils.tsx", "size": 23833 }
 { "file": "modules/guild_scheduled_events/utils/ShareEventUtils.tsx", "size": 544 }
 { "file": "modules/guild_settings_picker/GuildSettingsPickerActionCreators.native.tsx", "size": 717 }
 { "file": "modules/guild_settings_picker/GuildSettingsPickerFeatures.tsx", "size": 3091 }
@@ -15028,7 +15028,7 @@
 { "file": "modules/guild_settings/native/showEmojiOverflowActionSheet.tsx", "size": 936 }
 { "file": "modules/guild_settings/native/showMembersManagementActionSheet.tsx", "size": 3111 }
 { "file": "modules/guild_settings/native/StandaloneMembersView.tsx", "size": 5649 }
-{ "file": "modules/guild_settings/roles/GuildSettingsModalRolesActionCreators.tsx", "size": 5815 }
+{ "file": "modules/guild_settings/roles/GuildSettingsModalRolesActionCreators.tsx", "size": 3851 }
 { "file": "modules/guild_settings/roles/GuildSettingsModalRolesStore.tsx", "size": 7457 }
 { "file": "modules/guild_settings/roles/GuildSettingsRoleConstants.tsx", "size": 6278 }
 { "file": "modules/guild_settings/roles/GuildSettingsRolesActionCreators.tsx", "size": 25142 }
@@ -15043,7 +15043,7 @@
 { "file": "modules/guild_settings/roles/native/GuildSettingsRoleCreateModalActionCreators.tsx", "size": 896 }
 { "file": "modules/guild_settings/roles/native/GuildSettingsRoleEdit.tsx", "size": 29561 }
 { "file": "modules/guild_settings/roles/native/GuildSettingsRoleEditConnectionConfiguration.tsx", "size": 33650 }
-{ "file": "modules/guild_settings/roles/native/GuildSettingsRoleEditConnectionsControls.tsx", "size": 18667 }
+{ "file": "modules/guild_settings/roles/native/GuildSettingsRoleEditConnectionsControls.tsx", "size": 18663 }
 { "file": "modules/guild_settings/roles/native/GuildSettingsRoleEditDisplay.tsx", "size": 13140 }
 { "file": "modules/guild_settings/roles/native/GuildSettingsRoleEditPermissions.tsx", "size": 9837 }
 { "file": "modules/guild_settings/roles/native/GuildSettingsRoleItem.tsx", "size": 13357 }
@@ -15076,7 +15076,7 @@
 { "file": "modules/guild_settings/server_monetization/tags/web/GuildSettingsTags.messages.js", "size": 7759 }
 { "file": "modules/guild_settings/urlPartToSettingsEnum.tsx", "size": 598 }
 { "file": "modules/guild_settings/utils/getDefaultGuildSettingsSection.tsx", "size": 550 }
-{ "file": "modules/guild_sidebar/ChannelListState.tsx", "size": 77968 }
+{ "file": "modules/guild_sidebar/ChannelListState.tsx", "size": 77952 }
 { "file": "modules/guild_sidebar/ChannelListStore.tsx", "size": 15017 }
 { "file": "modules/guild_sidebar/ChannelListUtils.tsx", "size": 558 }
 { "file": "modules/guild_sidebar/ChannelListVoiceCategoryStore.tsx", "size": 1480 }
@@ -15198,9 +15198,9 @@
 { "file": "modules/guild_templates/useTrackCreateGuildViewed.tsx", "size": 1555 }
 { "file": "modules/guild_themes/GuildThemeAnalyticsUtils.tsx", "size": 1413 }
 { "file": "modules/guild_themes/GuildThemeNuxUtils.tsx", "size": 3424 }
-{ "file": "modules/guild_themes/GuildThemePresets.tsx", "size": 9260 }
+{ "file": "modules/guild_themes/GuildThemePresets.tsx", "size": 9264 }
 { "file": "modules/guild_themes/GuildThemePreviewConstants.tsx", "size": 490 }
-{ "file": "modules/guild_themes/GuildThemePreviewStore.tsx", "size": 12759 }
+{ "file": "modules/guild_themes/GuildThemePreviewStore.tsx", "size": 12763 }
 { "file": "modules/guild_themes/GuildThemeResolver.tsx", "size": 12439 }
 { "file": "modules/guild_themes/GuildThemeRuntimeStore.tsx", "size": 9967 }
 { "file": "modules/guild_themes/guildThemeSerialization.tsx", "size": 6336 }
@@ -15243,17 +15243,17 @@
 { "file": "modules/guilds_bar/native/GuildsBarActivityIndicator.tsx", "size": 6812 }
 { "file": "modules/guilds_bar/native/GuildsBarAnimatedItemWrapper.tsx", "size": 19777 }
 { "file": "modules/guilds_bar/native/GuildsBarConstants.tsx", "size": 1460 }
-{ "file": "modules/guilds_bar/native/GuildsBarCreateJoinButton.tsx", "size": 6035 }
+{ "file": "modules/guilds_bar/native/GuildsBarCreateJoinButton.tsx", "size": 6056 }
 { "file": "modules/guilds_bar/native/GuildsBarDirectMessage.tsx", "size": 5479 }
-{ "file": "modules/guilds_bar/native/GuildsBarDnDStore.tsx", "size": 8424 }
-{ "file": "modules/guilds_bar/native/GuildsBarDragPreview.tsx", "size": 18891 }
+{ "file": "modules/guilds_bar/native/GuildsBarDnDStore.tsx", "size": 8420 }
+{ "file": "modules/guilds_bar/native/GuildsBarDragPreview.tsx", "size": 18874 }
 { "file": "modules/guilds_bar/native/GuildsBarFavorites.tsx", "size": 3287 }
 { "file": "modules/guilds_bar/native/GuildsBarFolderMenuItems.tsx", "size": 4573 }
 { "file": "modules/guilds_bar/native/GuildsBarFolderSettingsModal.tsx", "size": 7750 }
 { "file": "modules/guilds_bar/native/GuildsBarFolderSettingsModalActionCreators.tsx", "size": 980 }
 { "file": "modules/guilds_bar/native/GuildsBarFooterWrapper.tsx", "size": 1732 }
 { "file": "modules/guilds_bar/native/GuildsBarGeoRestrictedBadge.tsx", "size": 1775 }
-{ "file": "modules/guilds_bar/native/GuildsBarGeoRestrictedGuild.tsx", "size": 4210 }
+{ "file": "modules/guilds_bar/native/GuildsBarGeoRestrictedGuild.tsx", "size": 4213 }
 { "file": "modules/guilds_bar/native/GuildsBarGuild.tsx", "size": 14059 }
 { "file": "modules/guilds_bar/native/GuildsBarGuildFolder.tsx", "size": 27993 }
 { "file": "modules/guilds_bar/native/GuildsBarGuildJoinRequestBadge.tsx", "size": 2563 }
@@ -15261,12 +15261,12 @@
 { "file": "modules/guilds_bar/native/GuildsBarItemUnavailableGuilds.tsx", "size": 2570 }
 { "file": "modules/guilds_bar/native/GuildsBarMessages.tsx", "size": 2375 }
 { "file": "modules/guilds_bar/native/GuildsBarPendingGuild.tsx", "size": 7197 }
-{ "file": "modules/guilds_bar/native/GuildsBarPendingGuildFolder.tsx", "size": 3615 }
+{ "file": "modules/guilds_bar/native/GuildsBarPendingGuildFolder.tsx", "size": 3593 }
 { "file": "modules/guilds_bar/native/GuildsBarSeparator.tsx", "size": 2957 }
-{ "file": "modules/guilds_bar/native/GuildsBarUnreadBars.tsx", "size": 13120 }
+{ "file": "modules/guilds_bar/native/GuildsBarUnreadBars.tsx", "size": 13128 }
 { "file": "modules/guilds_bar/native/GuildsBarWaterwheelsButton.tsx", "size": 4259 }
 { "file": "modules/guilds_bar/native/hooks/useGuildsBarBadges.tsx", "size": 7166 }
-{ "file": "modules/guilds_bar/native/hooks/useGuildsBarBottomRightBadge.tsx", "size": 3467 }
+{ "file": "modules/guilds_bar/native/hooks/useGuildsBarBottomRightBadge.tsx", "size": 3463 }
 { "file": "modules/guilds_bar/native/hooks/useGuildsBarCreatePendingFolderNode.tsx", "size": 2475 }
 { "file": "modules/guilds_bar/native/hooks/useGuildsBarGesture.tsx", "size": 57451 }
 { "file": "modules/guilds_bar/native/hooks/useGuildsBarProps.tsx", "size": 29646 }
@@ -15543,7 +15543,7 @@
 { "file": "modules/in_app_reports/native/components/InAppReportsWidgetPreviewElement.tsx", "size": 2669 }
 { "file": "modules/in_app_reports/native/components/NodeView.tsx", "size": 26906 }
 { "file": "modules/in_app_reports/ReportModals.tsx", "size": 18786 }
-{ "file": "modules/in_app_reports/ReportUtils.tsx", "size": 30065 }
+{ "file": "modules/in_app_reports/ReportUtils.tsx", "size": 30063 }
 { "file": "modules/in_app_reports/SafetyExperienceIarUserReportingExperiment.tsx", "size": 1115 }
 { "file": "modules/in_app_reports/showReportModal.native.tsx", "size": 4355 }
 { "file": "modules/in_app_reports/trackInAppReportsFeedback.tsx", "size": 1063 }
@@ -15607,14 +15607,14 @@
 { "file": "modules/intelligence_layer/search/native/useSmartSearchStatus.tsx", "size": 1106 }
 { "file": "modules/intelligence_layer/search/native/useSuggestedSearches.tsx", "size": 3052 }
 { "file": "modules/intelligence_layer/search/SmartSearch.messages.js", "size": 7735 }
-{ "file": "modules/intelligence_layer/search/SmartSearchActionCreators.tsx", "size": 7856 }
+{ "file": "modules/intelligence_layer/search/SmartSearchActionCreators.tsx", "size": 10245 }
 { "file": "modules/intelligence_layer/search/SmartSearchAnalyticsManager.tsx", "size": 14245 }
 { "file": "modules/intelligence_layer/search/SmartSearchConstants.tsx", "size": 1004 }
 { "file": "modules/intelligence_layer/search/SmartSearchExperiments.tsx", "size": 3420 }
 { "file": "modules/intelligence_layer/search/SmartSearchResultsStore.tsx", "size": 7698 }
 { "file": "modules/intelligence_layer/search/SmartSearchTypes.tsx", "size": 404 }
 { "file": "modules/intelligence_layer/search/SmartSearchUtils.tsx", "size": 4835 }
-{ "file": "modules/intelligence_layer/search/SuggestedSearchActionCreators.tsx", "size": 7774 }
+{ "file": "modules/intelligence_layer/search/SuggestedSearchActionCreators.tsx", "size": 9909 }
 { "file": "modules/intelligence_layer/search/SuggestedSearchStore.tsx", "size": 11826 }
 { "file": "modules/interaction_components/closeIFrameModal.native.tsx", "size": 851 }
 { "file": "modules/interaction_components/ComponentStateContext.tsx", "size": 15920 }
@@ -15660,7 +15660,7 @@
 { "file": "modules/interactions/interactionCallbackErrorReason.tsx", "size": 3908 }
 { "file": "modules/interactions/InteractionStore.tsx", "size": 12962 }
 { "file": "modules/interactions/InteractionTypes.tsx", "size": 391 }
-{ "file": "modules/interactions/InteractionUtils.tsx", "size": 13843 }
+{ "file": "modules/interactions/InteractionUtils.tsx", "size": 15985 }
 { "file": "modules/interactions/SkemaUtils.tsx", "size": 1213 }
 { "file": "modules/intl/messages/SecondTest.messages.js", "size": 7787 }
 { "file": "modules/intl/messages/Test.messages.js", "size": 7781 }
@@ -15720,7 +15720,7 @@
 { "file": "modules/launchpad/native/LaunchPadConstants.tsx", "size": 1719 }
 { "file": "modules/launchpad/native/LaunchPadContainer.tsx", "size": 7439 }
 { "file": "modules/launchpad/native/LaunchPadGestureRefContext.tsx", "size": 365 }
-{ "file": "modules/launchpad/native/LaunchPadMembers.tsx", "size": 3094 }
+{ "file": "modules/launchpad/native/LaunchPadMembers.tsx", "size": 3051 }
 { "file": "modules/launchpad/native/LaunchPadNotificationCenter.tsx", "size": 792 }
 { "file": "modules/launchpad/native/LaunchPadPullTab.tsx", "size": 13694 }
 { "file": "modules/launchpad/native/LaunchPadPullTabCache.tsx", "size": 3573 }
@@ -15764,7 +15764,7 @@
 { "file": "modules/libdiscore/stores/LibdiscoreStore.tsx", "size": 28873 }
 { "file": "modules/libdiscore/timerUtils.tsx", "size": 2144 }
 { "file": "modules/links/getLocalizedLink.tsx", "size": 495 }
-{ "file": "modules/links/isAccessibleChannelOrThreadPath.tsx", "size": 11404 }
+{ "file": "modules/links/isAccessibleChannelOrThreadPath.tsx", "size": 9258 }
 { "file": "modules/links/isAccessibleNonStaticChannelPath.tsx", "size": 697 }
 { "file": "modules/links/LinkAnalyticsUtils.tsx", "size": 5129 }
 { "file": "modules/links/LinkUtils.tsx", "size": 6073 }
@@ -15774,7 +15774,7 @@
 { "file": "modules/links/native/handleContentLinking.tsx", "size": 6493 }
 { "file": "modules/links/native/handleIncomingURL.tsx", "size": 14270 }
 { "file": "modules/links/native/handleSupportedURL.tsx", "size": 52940 }
-{ "file": "modules/links/native/handleURL.tsx", "size": 13290 }
+{ "file": "modules/links/native/handleURL.tsx", "size": 15950 }
 { "file": "modules/links/native/LinkingSchemas.tsx", "size": 475 }
 { "file": "modules/links/native/LinkingWhitelist.tsx", "size": 1569 }
 { "file": "modules/links/native/normalizeURLScheme.tsx", "size": 532 }
@@ -15783,7 +15783,7 @@
 { "file": "modules/lobbies/hooks/useChannelsAllowedToUnlink.tsx", "size": 2039 }
 { "file": "modules/lobbies/LobbyUtils.tsx", "size": 1747 }
 { "file": "modules/local_app_detection/LocalAppDetectionTypes.tsx", "size": 935 }
-{ "file": "modules/local_app_detection/native/LocalAppDetectionStore.tsx", "size": 3888 }
+{ "file": "modules/local_app_detection/native/LocalAppDetectionStore.tsx", "size": 3890 }
 { "file": "modules/local_app_detection/native/LocalAppDetectionUtils.tsx", "size": 6402 }
 { "file": "modules/local_app_detection/native/RobloxConnectionCoachmark.tsx", "size": 11464 }
 { "file": "modules/local_message_caching/LocalMessageCacheManager.native.tsx", "size": 40020 }
@@ -15793,7 +15793,7 @@
 { "file": "modules/local_push_notification/native/LocalPushNotificationActionCreators.tsx", "size": 3230 }
 { "file": "modules/local_push_notification/native/LocalPushNotificationStore.tsx", "size": 4289 }
 { "file": "modules/location_metadata/stores/LocationMetadataStore.tsx", "size": 2012 }
-{ "file": "modules/lurker_mode/LurkerActionCreators.tsx", "size": 8674 }
+{ "file": "modules/lurker_mode/LurkerActionCreators.tsx", "size": 9915 }
 { "file": "modules/lurker_mode/lurkGuildFromRoute.tsx", "size": 4316 }
 { "file": "modules/lurker_mode/LurkingStore.tsx", "size": 6772 }
 { "file": "modules/lurker_mode/native/LurkerServerPreviewJoinButton.tsx", "size": 5052 }
@@ -15831,7 +15831,7 @@
 { "file": "modules/main_tabs_v2/native/ConnectionIndicatorExperiment.tsx", "size": 800 }
 { "file": "modules/main_tabs_v2/native/friends/components/ActionStatusSubLabel.tsx", "size": 10971 }
 { "file": "modules/main_tabs_v2/native/friends/components/AddFriendsContactSyncEmptyState.tsx", "size": 3664 }
-{ "file": "modules/main_tabs_v2/native/friends/components/AddFriendsScreenUtils.tsx", "size": 4902 }
+{ "file": "modules/main_tabs_v2/native/friends/components/AddFriendsScreenUtils.tsx", "size": 6543 }
 { "file": "modules/main_tabs_v2/native/friends/components/ClearAllIncomingRequestsAlertModal.tsx", "size": 3316 }
 { "file": "modules/main_tabs_v2/native/friends/components/ContactSuggestionActions.tsx", "size": 15553 }
 { "file": "modules/main_tabs_v2/native/friends/components/ContactSuggestionRow.tsx", "size": 5779 }
@@ -15849,8 +15849,8 @@
 { "file": "modules/main_tabs_v2/native/friends/screens/FriendsScreen.tsx", "size": 8247 }
 { "file": "modules/main_tabs_v2/native/friends/screens/FriendsScreenConstants.tsx", "size": 660 }
 { "file": "modules/main_tabs_v2/native/friends/screens/IgnoredUserRequestsScreen.tsx", "size": 2579 }
-{ "file": "modules/main_tabs_v2/native/friends/screens/NewGroupDMScreen.tsx", "size": 32003 }
-{ "file": "modules/main_tabs_v2/native/friends/screens/NewMessageScreen.tsx", "size": 29140 }
+{ "file": "modules/main_tabs_v2/native/friends/screens/NewGroupDMScreen.tsx", "size": 29967 }
+{ "file": "modules/main_tabs_v2/native/friends/screens/NewMessageScreen.tsx", "size": 29132 }
 { "file": "modules/main_tabs_v2/native/friends/screens/SpamRequestsScreen.tsx", "size": 2820 }
 { "file": "modules/main_tabs_v2/native/friends/screens/SuggestedFriendsScreen.tsx", "size": 5734 }
 { "file": "modules/main_tabs_v2/native/friends/screens/UsernameSearchScreen.tsx", "size": 3937 }
@@ -15906,7 +15906,7 @@
 { "file": "modules/main_tabs_v2/native/shared_components/guild_channels/useFlashListAnimationDisabler.tsx", "size": 2899 }
 { "file": "modules/main_tabs_v2/native/shared_components/guild_channels/useTextChannelPressEvents.tsx", "size": 2064 }
 { "file": "modules/main_tabs_v2/native/shared_components/guild_channels/VoiceOrStageSummaryRow.tsx", "size": 5169 }
-{ "file": "modules/main_tabs_v2/native/shared_components/happening_now/HappeningNow.tsx", "size": 15133 }
+{ "file": "modules/main_tabs_v2/native/shared_components/happening_now/HappeningNow.tsx", "size": 15135 }
 { "file": "modules/main_tabs_v2/native/shared_components/happening_now/HappeningNowActions.tsx", "size": 7806 }
 { "file": "modules/main_tabs_v2/native/shared_components/happening_now/HappeningNowAnalytics.tsx", "size": 3040 }
 { "file": "modules/main_tabs_v2/native/shared_components/happening_now/HappeningNowAvatarStack.tsx", "size": 11937 }
@@ -15930,7 +15930,7 @@
 { "file": "modules/main_tabs_v2/native/shared_components/HeaderShared.tsx", "size": 14333 }
 { "file": "modules/main_tabs_v2/native/shared_components/IconActionButton.tsx", "size": 5435 }
 { "file": "modules/main_tabs_v2/native/shared_components/MainTabsV2Constants.tsx", "size": 460 }
-{ "file": "modules/main_tabs_v2/native/shared_components/MaskedBadge.tsx", "size": 2036 }
+{ "file": "modules/main_tabs_v2/native/shared_components/MaskedBadge.tsx", "size": 2037 }
 { "file": "modules/main_tabs_v2/native/shared_components/MessageRequestsButton.tsx", "size": 4568 }
 { "file": "modules/main_tabs_v2/native/shared_components/navigator/PressableNavigatorBackIcon.tsx", "size": 5346 }
 { "file": "modules/main_tabs_v2/native/shared_components/navigator/PressableNavigatorButtonWrapper.tsx", "size": 1406 }
@@ -15951,7 +15951,7 @@
 { "file": "modules/main_tabs_v2/native/shared_components/user_list/useMemberListAction.tsx", "size": 12367 }
 { "file": "modules/main_tabs_v2/native/shared_components/user_list/UserNameplateRow.tsx", "size": 4186 }
 { "file": "modules/main_tabs_v2/native/shared_components/user_list/UserPlaceholderRow.tsx", "size": 4654 }
-{ "file": "modules/main_tabs_v2/native/shared_components/user_list/UserRow.tsx", "size": 33122 }
+{ "file": "modules/main_tabs_v2/native/shared_components/user_list/UserRow.tsx", "size": 33126 }
 { "file": "modules/main_tabs_v2/native/shared_components/user_list/UserRowConstants.tsx", "size": 371 }
 { "file": "modules/main_tabs_v2/native/shared_components/user_list/UsersFastList.tsx", "size": 15728 }
 { "file": "modules/main_tabs_v2/native/shared_components/user_list/UsersFastListConstants.tsx", "size": 676 }
@@ -16048,7 +16048,7 @@
 { "file": "modules/main_tabs_v2/native/you_bar/YouBarAvatar.tsx", "size": 24999 }
 { "file": "modules/main_tabs_v2/native/you_bar/YouBarAvatarDefault.tsx", "size": 6010 }
 { "file": "modules/main_tabs_v2/native/you_bar/YouBarBackground.tsx", "size": 7295 }
-{ "file": "modules/main_tabs_v2/native/you_bar/YouBarButton.tsx", "size": 4653 }
+{ "file": "modules/main_tabs_v2/native/you_bar/YouBarButton.tsx", "size": 4648 }
 { "file": "modules/main_tabs_v2/native/you_bar/YouBarConstants.tsx", "size": 2421 }
 { "file": "modules/main_tabs_v2/native/you_bar/YouBarFloatingShade.tsx", "size": 3963 }
 { "file": "modules/main_tabs_v2/native/you_bar/YouBarICYMIButton.tsx", "size": 2088 }
@@ -16069,7 +16069,7 @@
 { "file": "modules/markup_v2/native/parseNativeMarkup.tsx", "size": 873 }
 { "file": "modules/markup_v2/native/transformNativeMarkupEmoji.tsx", "size": 1670 }
 { "file": "modules/markup_v2/native/transformNativeMarkupLink.tsx", "size": 3826 }
-{ "file": "modules/markup_v2/native/transformNativeMarkupMention.tsx", "size": 4367 }
+{ "file": "modules/markup_v2/native/transformNativeMarkupMention.tsx", "size": 4356 }
 { "file": "modules/markup_v2/native/transformNativeMarkupNode.tsx", "size": 7738 }
 { "file": "modules/markup_v2/native/transformNativeMarkupTimestamp.tsx", "size": 1043 }
 { "file": "modules/markup_v2/NativeMarkdownExperiment.tsx", "size": 2057 }
@@ -16087,7 +16087,7 @@
 { "file": "modules/markup/MarkupListRule.tsx", "size": 4621 }
 { "file": "modules/markup/MarkupLiteralImageRule.tsx", "size": 671 }
 { "file": "modules/markup/MarkupReactLinkUtils.tsx", "size": 753 }
-{ "file": "modules/markup/MarkupReactRules.native.tsx", "size": 50383 }
+{ "file": "modules/markup/MarkupReactRules.native.tsx", "size": 50390 }
 { "file": "modules/markup/MarkupRules.tsx", "size": 58271 }
 { "file": "modules/markup/MarkupRulesUtils.tsx", "size": 813 }
 { "file": "modules/markup/MarkupSubtextRule.tsx", "size": 1201 }
@@ -16222,7 +16222,7 @@
 { "file": "modules/media_uploads/UploadLimits.tsx", "size": 447 }
 { "file": "modules/media_uploads/uploadMessageAttachments.native.tsx", "size": 5989 }
 { "file": "modules/media_uploads/UploadPlatform.tsx", "size": 336 }
-{ "file": "modules/media_viewer/MediaViewerAnalyticsManager.tsx", "size": 6002 }
+{ "file": "modules/media_viewer/MediaViewerAnalyticsManager.tsx", "size": 6003 }
 { "file": "modules/media_viewer/native/components/MediaModal.tsx", "size": 13695 }
 { "file": "modules/media_viewer/native/components/MediaModalLoadingOverlay.tsx", "size": 2658 }
 { "file": "modules/media_viewer/native/components/MediaModalSheetWrapper.tsx", "size": 1514 }
@@ -16238,7 +16238,7 @@
 { "file": "modules/media_viewer/native/components/message_preview/MediaMessagePreview.tsx", "size": 16640 }
 { "file": "modules/media_viewer/native/components/message_preview/MediaMessagePreviewActionSheet.tsx", "size": 4113 }
 { "file": "modules/media_viewer/native/components/message_preview/showMediaMessagePreviewActionSheet.tsx", "size": 1218 }
-{ "file": "modules/media_viewer/native/components/openMediaModal.tsx", "size": 4380 }
+{ "file": "modules/media_viewer/native/components/openMediaModal.tsx", "size": 7018 }
 { "file": "modules/media_viewer/native/components/overlay/MediaModalOverlay.tsx", "size": 10484 }
 { "file": "modules/media_viewer/native/components/overlay/MediaModalOverlayAltText.tsx", "size": 2542 }
 { "file": "modules/media_viewer/native/components/overlay/MediaModalOverlayAltTextSheet.tsx", "size": 1639 }
@@ -16249,7 +16249,7 @@
 { "file": "modules/media_viewer/native/components/overlay/MediaViewerOverlayButton.tsx", "size": 785 }
 { "file": "modules/media_viewer/native/components/overlay/MediaViewerOverlayButtonFavoriteGIF.tsx", "size": 3924 }
 { "file": "modules/media_viewer/native/components/overlay/openMediaModalOverlayAltTextSheet.tsx", "size": 778 }
-{ "file": "modules/media_viewer/native/components/overlay/useMediaModalFooterBackground.android.tsx", "size": 940 }
+{ "file": "modules/media_viewer/native/components/overlay/useMediaModalFooterBackground.android.tsx", "size": 944 }
 { "file": "modules/media_viewer/native/components/renderers/MediaModalImage.tsx", "size": 3298 }
 { "file": "modules/media_viewer/native/components/renderers/MediaModalPortal.tsx", "size": 4850 }
 { "file": "modules/media_viewer/native/components/renderers/MediaModalTiktok.tsx", "size": 10810 }
@@ -16290,7 +16290,7 @@
 { "file": "modules/media/native/AttachmentPreview.tsx", "size": 9113 }
 { "file": "modules/media/native/Caption.tsx", "size": 1498 }
 { "file": "modules/media/native/IosImageTypesManager.tsx", "size": 3699 }
-{ "file": "modules/media/native/MediaPlayerManager.tsx", "size": 22073 }
+{ "file": "modules/media/native/MediaPlayerManager.tsx", "size": 22099 }
 { "file": "modules/media/native/openPlaintextFilePreview.tsx", "size": 772 }
 { "file": "modules/media/native/PlaintextFilePreviewModal.tsx", "size": 6225 }
 { "file": "modules/media/useDownloadedFile.tsx", "size": 7458 }
@@ -16340,7 +16340,7 @@
 { "file": "modules/message_request/native/MessageRequestPreview.tsx", "size": 5177 }
 { "file": "modules/message_request/native/MessageRequestRowSenderDetails.tsx", "size": 5827 }
 { "file": "modules/message_request/native/RestrictedBlockedMessageGroup.tsx", "size": 2444 }
-{ "file": "modules/message_request/native/RestrictedMessagePreviewActions.tsx", "size": 8451 }
+{ "file": "modules/message_request/native/RestrictedMessagePreviewActions.tsx", "size": 8445 }
 { "file": "modules/message_request/native/RestrictedMessagePreviewHeader.tsx", "size": 5723 }
 { "file": "modules/message_request/native/RestrictedMessagePreviewLayout.tsx", "size": 526 }
 { "file": "modules/message_request/native/RestrictedMessagePreviewList.tsx", "size": 10007 }
@@ -16458,7 +16458,7 @@
 { "file": "modules/messages/native/renderer/resolveMessageContentColors.tsx", "size": 2963 }
 { "file": "modules/messages/native/renderer/row_data/ConnectionsRoleTag.tsx", "size": 1320 }
 { "file": "modules/messages/native/renderer/row_data/CtaButton.tsx", "size": 3335 }
-{ "file": "modules/messages/native/renderer/row_data/embeds/ActivityRichPresenceInviteEmbed.tsx", "size": 30725 }
+{ "file": "modules/messages/native/renderer/row_data/embeds/ActivityRichPresenceInviteEmbed.tsx", "size": 30774 }
 { "file": "modules/messages/native/renderer/row_data/embeds/coded_links/BuildOverrideEmbed.tsx", "size": 6149 }
 { "file": "modules/messages/native/renderer/row_data/embeds/coded_links/CodedLinks.tsx", "size": 13192 }
 { "file": "modules/messages/native/renderer/row_data/embeds/coded_links/CodedLinksConstants.tsx", "size": 1008 }
@@ -16592,7 +16592,7 @@
 { "file": "modules/mfa/native/components/button.tsx", "size": 609 }
 { "file": "modules/mfa/native/components/ClipboardCopyInput.tsx", "size": 5711 }
 { "file": "modules/mfa/native/components/KeyImage.tsx", "size": 943 }
-{ "file": "modules/mfa/native/MFAModal.tsx", "size": 10864 }
+{ "file": "modules/mfa/native/MFAModal.tsx", "size": 12523 }
 { "file": "modules/mfa/native/MfaScreenUtils.tsx", "size": 2356 }
 { "file": "modules/mfa/native/MfaStepsTypes.tsx", "size": 377 }
 { "file": "modules/mfa/native/screens/BackupScreen.tsx", "size": 6922 }
@@ -16609,18 +16609,18 @@
 { "file": "modules/mobile_native_updater/MobileNativeUpdateStore.tsx", "size": 3220 }
 { "file": "modules/mobile_native_updater/MobileNativeUpdateUtils.tsx", "size": 4711 }
 { "file": "modules/mobile_web_handoff/MobileWebHandoffUtils.tsx", "size": 2705 }
-{ "file": "modules/mobile_web_handoff/native/MobileWebHandoffLinking.tsx", "size": 7266 }
+{ "file": "modules/mobile_web_handoff/native/MobileWebHandoffLinking.tsx", "size": 9202 }
 { "file": "modules/mobile_web_handoff/native/SimpleLoadingModal.tsx", "size": 1037 }
 { "file": "modules/mobile_web_handoff/native/SimpleLoadingModalUI.tsx", "size": 2650 }
 { "file": "modules/monitoring/MonitoringAgent.tsx", "size": 4340 }
 { "file": "modules/monitoring/MonitoringAgentUtils.tsx", "size": 616 }
 { "file": "modules/monotonic_clock/MonotonicClock.native.tsx", "size": 590 }
 { "file": "modules/multi_account/Constants.tsx", "size": 943 }
-{ "file": "modules/multi_account/MultiAccountActionCreators.tsx", "size": 6790 }
+{ "file": "modules/multi_account/MultiAccountActionCreators.tsx", "size": 8621 }
 { "file": "modules/multi_account/MultiAccountManager.tsx", "size": 2464 }
 { "file": "modules/multi_account/MultiAccountStore.tsx", "size": 6594 }
 { "file": "modules/multi_account/MultiAccountSwitchStore.tsx", "size": 8680 }
-{ "file": "modules/multi_account/native/AccountSwitcherListItem.tsx", "size": 6562 }
+{ "file": "modules/multi_account/native/AccountSwitcherListItem.tsx", "size": 6566 }
 { "file": "modules/multi_account/native/AccountSwitcherRail.tsx", "size": 14584 }
 { "file": "modules/multi_account/native/AccountSwitchingSpinnerModal.tsx", "size": 1253 }
 { "file": "modules/multi_account/native/ChooseAccount.tsx", "size": 9905 }
@@ -16629,7 +16629,7 @@
 { "file": "modules/multi_account/native/ManageAccountsModal.tsx", "size": 17826 }
 { "file": "modules/multi_account/native/MultiAccountManagerNative.tsx", "size": 5007 }
 { "file": "modules/multi_account/native/openManageAccountsModal.tsx", "size": 977 }
-{ "file": "modules/multi_account/setUserStatus.tsx", "size": 4855 }
+{ "file": "modules/multi_account/setUserStatus.tsx", "size": 7274 }
 { "file": "modules/multi_account/StatusUtils.tsx", "size": 1780 }
 { "file": "modules/multi_account/useMultiAccount.tsx", "size": 1939 }
 { "file": "modules/multi_account/useShouldShowChooseAccount.tsx", "size": 787 }
@@ -16655,7 +16655,7 @@
 { "file": "modules/navbars/native/NavigationPathUtils.tsx", "size": 920 }
 { "file": "modules/navigation/native/getChannelDetailsFromRoute.tsx", "size": 1526 }
 { "file": "modules/network/NetStats.android.tsx", "size": 18091 }
-{ "file": "modules/network/networkAwareRetry.tsx", "size": 2915 }
+{ "file": "modules/network/networkAwareRetry.tsx", "size": 4576 }
 { "file": "modules/network/NitroFetchExperiment.tsx", "size": 2571 }
 { "file": "modules/noise_cancellation/getEffectiveNoiseCancellation.tsx", "size": 1519 }
 { "file": "modules/noise_cancellation/KrispUtils.tsx", "size": 375 }
@@ -16722,7 +16722,7 @@
 { "file": "modules/notifications/NotificationSettingsConstants.tsx", "size": 28617 }
 { "file": "modules/notifications/NotificationSettingsExperiments.tsx", "size": 843 }
 { "file": "modules/notifications/NotificationSettingsUtils.tsx", "size": 6515 }
-{ "file": "modules/notifications/NotificationsManager.native.tsx", "size": 27081 }
+{ "file": "modules/notifications/NotificationsManager.native.tsx", "size": 28399 }
 { "file": "modules/notifications/NotificationTextUtils.tsx", "size": 29222 }
 { "file": "modules/notifications/NotificationUtils.tsx", "size": 3784 }
 { "file": "modules/notifications/profile_updates/ProfileUpdatesNotificationUtils.tsx", "size": 1199 }
@@ -16794,8 +16794,8 @@
 { "file": "modules/nuf/native/MobileOnboardingFrictionExperiment.android.tsx", "size": 2829 }
 { "file": "modules/nuf/native/MobileOnboardingFrictionShared.tsx", "size": 687 }
 { "file": "modules/nuf/native/NewUserAnalyticsUtils.tsx", "size": 941 }
-{ "file": "modules/nuf/native/NewUserManager.tsx", "size": 7107 }
-{ "file": "modules/nuf/native/NewUserUtils.tsx", "size": 18427 }
+{ "file": "modules/nuf/native/NewUserManager.tsx", "size": 9784 }
+{ "file": "modules/nuf/native/NewUserUtils.tsx", "size": 15988 }
 { "file": "modules/nuf/native/NotificationPermissionUtil.tsx", "size": 12568 }
 { "file": "modules/nuf/native/NUFActionCreators.tsx", "size": 7425 }
 { "file": "modules/nuf/native/PostReactionPermissionNudgeExperiment.tsx", "size": 656 }
@@ -16805,7 +16805,7 @@
 { "file": "modules/nuf/NewUserStore.tsx", "size": 1153 }
 { "file": "modules/nuf/NUFActionCreators.tsx", "size": 662 }
 { "file": "modules/nuf/NUFConstants.tsx", "size": 641 }
-{ "file": "modules/oauth2/actions.tsx", "size": 14361 }
+{ "file": "modules/oauth2/actions.tsx", "size": 10305 }
 { "file": "modules/oauth2/Authorize.tsx", "size": 3358 }
 { "file": "modules/oauth2/AuthorizedAppsActionCreators.tsx", "size": 5588 }
 { "file": "modules/oauth2/AuthorizedAppsStore.tsx", "size": 5692 }
@@ -16826,7 +16826,7 @@
 { "file": "modules/oauth2/native/OAuth2AuthorizeContent.tsx", "size": 6705 }
 { "file": "modules/oauth2/native/OAuth2AuthorizeModal.tsx", "size": 5352 }
 { "file": "modules/oauth2/native/SuccessResult.tsx", "size": 10466 }
-{ "file": "modules/oauth2/native/useOAuth2AuthorizeForm.tsx", "size": 54464 }
+{ "file": "modules/oauth2/native/useOAuth2AuthorizeForm.tsx", "size": 56627 }
 { "file": "modules/oauth2/native/WebhookGuildChannelSelector.tsx", "size": 8251 }
 { "file": "modules/oauth2/permissions.tsx", "size": 11044 }
 { "file": "modules/oauth2/scopes.tsx", "size": 16736 }
@@ -16859,7 +16859,7 @@
 { "file": "modules/orbs_arcade/native/OrbsArcadeHowToPlaySheet.tsx", "size": 1902 }
 { "file": "modules/orbs_arcade/native/OrbsArcadeInfoSheet.tsx", "size": 1784 }
 { "file": "modules/orbs_arcade/native/OrbsArcadeNativeConstants.tsx", "size": 390 }
-{ "file": "modules/orbs_arcade/native/OrbsArcadePlayButton.tsx", "size": 6451 }
+{ "file": "modules/orbs_arcade/native/OrbsArcadePlayButton.tsx", "size": 6447 }
 { "file": "modules/orbs_arcade/native/OrbsArcadeQuestHomeSection.tsx", "size": 4247 }
 { "file": "modules/orbs_arcade/native/OrbsArcadeRewardChain.tsx", "size": 8901 }
 { "file": "modules/orbs_arcade/native/OrbsArcadeRewardChainCell.tsx", "size": 20006 }
@@ -16929,7 +16929,7 @@
 { "file": "modules/parent_tools/hooks/useParentalControlSettings.tsx", "size": 9472 }
 { "file": "modules/parent_tools/hooks/useRefetchWhenSelectedTeenMissing.tsx", "size": 4227 }
 { "file": "modules/parent_tools/hooks/useRefreshLinkCodeOnExpiry.tsx", "size": 980 }
-{ "file": "modules/parent_tools/hooks/useScheduleTimeControlsRowProps.tsx", "size": 1469 }
+{ "file": "modules/parent_tools/hooks/useScheduleTimeControlsRowProps.tsx", "size": 1473 }
 { "file": "modules/parent_tools/hooks/useSelectedTab.tsx", "size": 1935 }
 { "file": "modules/parent_tools/hooks/useSelectedTeen.tsx", "size": 1229 }
 { "file": "modules/parent_tools/hooks/useSelectedTeenUser.tsx", "size": 2676 }
@@ -17011,7 +17011,7 @@
 { "file": "modules/payments/native/hooks/useOrderContext.tsx", "size": 1492 }
 { "file": "modules/payments/native/NativeGiftContext.tsx", "size": 44447 }
 { "file": "modules/payments/native/NativePaymentContext.tsx", "size": 2905 }
-{ "file": "modules/payments/native/OrderActionCreators.tsx", "size": 53841 }
+{ "file": "modules/payments/native/OrderActionCreators.tsx", "size": 51344 }
 { "file": "modules/payments/native/utils/BillingStandaloneNativeUtils.tsx", "size": 6105 }
 { "file": "modules/payments/native/utils/createOrReuseGiftOrder.tsx", "size": 7091 }
 { "file": "modules/payments/OrderActionCreators.tsx", "size": 18414 }
@@ -17022,7 +17022,7 @@
 { "file": "modules/payments/records/CheckoutContextRecord.tsx", "size": 8640 }
 { "file": "modules/payments/records/OrderRecord.tsx", "size": 6940 }
 { "file": "modules/payments/records/SubscriptionFacetRecord.tsx", "size": 3933 }
-{ "file": "modules/payments/Stripe3DSChallenge.tsx", "size": 6837 }
+{ "file": "modules/payments/Stripe3DSChallenge.tsx", "size": 9027 }
 { "file": "modules/payments/utils/BillingStandaloneUtils.tsx", "size": 2651 }
 { "file": "modules/payments/utils/MobileWebRedirectCheckoutUtils.tsx", "size": 3451 }
 { "file": "modules/people/Constants.tsx", "size": 639 }
@@ -17094,7 +17094,7 @@
 { "file": "modules/polls/native/EditPollCreationImageAltTextModal.tsx", "size": 5546 }
 { "file": "modules/polls/native/EditPollCreationImageAltTextModalActionCreators.tsx", "size": 934 }
 { "file": "modules/polls/native/ImageInputActionSheet.tsx", "size": 4710 }
-{ "file": "modules/polls/native/PollAnswerInput.tsx", "size": 11110 }
+{ "file": "modules/polls/native/PollAnswerInput.tsx", "size": 11181 }
 { "file": "modules/polls/native/PollBadge.tsx", "size": 1791 }
 { "file": "modules/polls/native/PollCreation.tsx", "size": 18447 }
 { "file": "modules/polls/native/PollCreationInputError.tsx", "size": 1838 }
@@ -17106,7 +17106,7 @@
 { "file": "modules/polls/parsePollResultSystemMessageEmbed.tsx", "size": 1854 }
 { "file": "modules/polls/PollAttachmentUtils.tsx", "size": 1728 }
 { "file": "modules/polls/PollInteractionUtils.native.tsx", "size": 805 }
-{ "file": "modules/polls/PollsActionCreators.tsx", "size": 34455 }
+{ "file": "modules/polls/PollsActionCreators.tsx", "size": 39363 }
 { "file": "modules/polls/PollsConstants.tsx", "size": 1381 }
 { "file": "modules/polls/PollsHttpApi.tsx", "size": 5796 }
 { "file": "modules/polls/PollsInteractionStore.tsx", "size": 4574 }
@@ -17114,7 +17114,7 @@
 { "file": "modules/polls/PollTypes.tsx", "size": 351 }
 { "file": "modules/polls/PollUploadAttachmentActionCreators.native.tsx", "size": 9708 }
 { "file": "modules/polls/transformMessagPoll.tsx", "size": 493 }
-{ "file": "modules/polls/useCreatePollFormData.tsx", "size": 14779 }
+{ "file": "modules/polls/useCreatePollFormData.tsx", "size": 14763 }
 { "file": "modules/polls/useMaybeAddPollsMarketingEasterEggNote.tsx", "size": 915 }
 { "file": "modules/polls/usePollDurationOptions.tsx", "size": 1523 }
 { "file": "modules/polls/useTrackPollEvents.tsx", "size": 1732 }
@@ -17236,7 +17236,7 @@
 { "file": "modules/premium/native/google_play_price_changes/GooglePlayPriceChangeRecord.tsx", "size": 3060 }
 { "file": "modules/premium/native/google_play_price_changes/GooglePlayPriceChangeStore.tsx", "size": 2127 }
 { "file": "modules/premium/native/GuildBoostSlotsInventory.tsx", "size": 16913 }
-{ "file": "modules/premium/native/handlePremiumPurchase.android.tsx", "size": 17292 }
+{ "file": "modules/premium/native/handlePremiumPurchase.android.tsx", "size": 20941 }
 { "file": "modules/premium/native/hooks/useAppleSubscriptionOwnership.tsx", "size": 2944 }
 { "file": "modules/premium/native/hooks/useCheckoutPlanPriceString.tsx", "size": 5271 }
 { "file": "modules/premium/native/hooks/useDiscountedPremiumPlan.tsx", "size": 1439 }
@@ -17258,9 +17258,9 @@
 { "file": "modules/premium/native/PremiumPerkCard.tsx", "size": 17425 }
 { "file": "modules/premium/native/PremiumPerkCarousel.tsx", "size": 3487 }
 { "file": "modules/premium/native/PremiumPlanActionSheetHeader.tsx", "size": 5570 }
-{ "file": "modules/premium/native/PremiumPlanPurchasedStore.tsx", "size": 4468 }
+{ "file": "modules/premium/native/PremiumPlanPurchasedStore.tsx", "size": 4467 }
 { "file": "modules/premium/native/PremiumPlanSelect.tsx", "size": 66114 }
-{ "file": "modules/premium/native/PremiumPlanSelectionActionSheet.tsx", "size": 58415 }
+{ "file": "modules/premium/native/PremiumPlanSelectionActionSheet.tsx", "size": 60316 }
 { "file": "modules/premium/native/PremiumPlanSelectStore.tsx", "size": 919 }
 { "file": "modules/premium/native/PremiumPlanSelectYearlyUpsellModal.tsx", "size": 6659 }
 { "file": "modules/premium/native/PremiumPlanWhatYouLoseActionSheet.tsx", "size": 8741 }
@@ -17334,7 +17334,7 @@
 { "file": "modules/premium/powerups/hooks/useMarketablePowerupPerks.tsx", "size": 2417 }
 { "file": "modules/premium/powerups/hooks/useMaybeGetSortedBoosts.tsx", "size": 5947 }
 { "file": "modules/premium/powerups/hooks/useMultiPerkStatusValues.tsx", "size": 3548 }
-{ "file": "modules/premium/powerups/hooks/usePowerupActiveStatus.tsx", "size": 10411 }
+{ "file": "modules/premium/powerups/hooks/usePowerupActiveStatus.tsx", "size": 10365 }
 { "file": "modules/premium/powerups/hooks/useShouldShowGuildThemeMemberCoachmark.tsx", "size": 2183 }
 { "file": "modules/premium/powerups/hooks/useTotalPossibleBoostCount.tsx", "size": 2035 }
 { "file": "modules/premium/powerups/mocks/GuildPowerupMocks.tsx", "size": 2301 }
@@ -17426,7 +17426,7 @@
 { "file": "modules/premium/PremiumGiftingUtils.tsx", "size": 4438 }
 { "file": "modules/premium/PremiumMarketingUtil.tsx", "size": 992 }
 { "file": "modules/premium/PremiumSubscription.tsx", "size": 2454 }
-{ "file": "modules/premium/PremiumSubscriptionInvoice.tsx", "size": 34780 }
+{ "file": "modules/premium/PremiumSubscriptionInvoice.tsx", "size": 33064 }
 { "file": "modules/premium/PremiumSubscriptionInvoiceItem.tsx", "size": 2216 }
 { "file": "modules/premium/PremiumSubscriptionOfferUtil.tsx", "size": 10654 }
 { "file": "modules/premium/PremiumSubscriptionTrialUtil.tsx", "size": 3245 }
@@ -17445,7 +17445,7 @@
 { "file": "modules/premium/promotions/PromotionsManager.tsx", "size": 5738 }
 { "file": "modules/premium/promotions/PromotionsStore.tsx", "size": 16754 }
 { "file": "modules/premium/promotions/PromotionStringUtils.tsx", "size": 2385 }
-{ "file": "modules/premium/promotions/PromotionUtils.tsx", "size": 11458 }
+{ "file": "modules/premium/promotions/PromotionUtils.tsx", "size": 9503 }
 { "file": "modules/premium/promotions/selectActiveMarketingComponent.tsx", "size": 3289 }
 { "file": "modules/premium/promotions/third_party/code_blurple/blueprint/CodeBlurpleBlueprints.messages.js", "size": 7773 }
 { "file": "modules/premium/promotions/third_party/code_blurple/CodeBlurple.messages.js", "size": 7753 }
@@ -17589,7 +17589,7 @@
 { "file": "modules/quests/hooks/RewardCodeClaimHooks.tsx", "size": 10359 }
 { "file": "modules/quests/hooks/useHasNewAdContent.tsx", "size": 2157 }
 { "file": "modules/quests/hooks/useNoFillDecision.tsx", "size": 2206 }
-{ "file": "modules/quests/lib/analytics/AnalyticsActions.tsx", "size": 34148 }
+{ "file": "modules/quests/lib/analytics/AnalyticsActions.tsx", "size": 38902 }
 { "file": "modules/quests/lib/analytics/AnalyticsHooks.tsx", "size": 12467 }
 { "file": "modules/quests/lib/analytics/AnalyticsTypes.tsx", "size": 5160 }
 { "file": "modules/quests/lib/analytics/BrandSafetyContext.tsx", "size": 5453 }
@@ -17606,7 +17606,7 @@
 { "file": "modules/quests/lib/QuestsEligibility.tsx", "size": 451 }
 { "file": "modules/quests/managers/QuestFetchManager.tsx", "size": 7903 }
 { "file": "modules/quests/managers/QuestMobileEmbedVisibilityManager.native.tsx", "size": 25495 }
-{ "file": "modules/quests/managers/QuestProgressManager.tsx", "size": 27222 }
+{ "file": "modules/quests/managers/QuestProgressManager.tsx", "size": 28886 }
 { "file": "modules/quests/native/AdsVideoTypes.tsx", "size": 520 }
 { "file": "modules/quests/native/AdsVideoUtils.tsx", "size": 1032 }
 { "file": "modules/quests/native/AdVideoPlayer.tsx", "size": 33628 }
@@ -17623,7 +17623,7 @@
 { "file": "modules/quests/native/AppStoreOverlay/AppStoreOverlayStatCardUtils.tsx", "size": 1255 }
 { "file": "modules/quests/native/AppStoreOverlay/AppStoreOverlayStatsCarousel.tsx", "size": 10340 }
 { "file": "modules/quests/native/AppStoreOverlay/openAppStoreOverlayBottomSheet.tsx", "size": 2247 }
-{ "file": "modules/quests/native/AppStoreOverlay/openAppStoreOverlayMediaModal.tsx", "size": 4632 }
+{ "file": "modules/quests/native/AppStoreOverlay/openAppStoreOverlayMediaModal.tsx", "size": 7005 }
 { "file": "modules/quests/native/AppStoreOverlayTelemetryManager.tsx", "size": 2200 }
 { "file": "modules/quests/native/ATTModal/ATTManager.android.tsx", "size": 1442 }
 { "file": "modules/quests/native/BountiesBannerBackground.tsx", "size": 1850 }
@@ -17772,7 +17772,7 @@
 { "file": "modules/quests/native/VideoQuestModal/VideoQuestPlayerControlButton.tsx", "size": 1980 }
 { "file": "modules/quests/native/VideoQuestModal/VideoQuestTranscriptActionSheet.tsx", "size": 4263 }
 { "file": "modules/quests/PlayableActionCreators.tsx", "size": 4851 }
-{ "file": "modules/quests/QuestActionCreators.tsx", "size": 104375 }
+{ "file": "modules/quests/QuestActionCreators.tsx", "size": 109561 }
 { "file": "modules/quests/QuestBarRenderDelayTracker.tsx", "size": 3455 }
 { "file": "modules/quests/QuestConstants.tsx", "size": 10837 }
 { "file": "modules/quests/QuestDecisionRoundtripTracker.tsx", "size": 8554 }
@@ -17810,7 +17810,7 @@
 { "file": "modules/quests/utils/VideoQuestUtils.tsx", "size": 7640 }
 { "file": "modules/quests/VideoQuestUIStore.tsx", "size": 4732 }
 { "file": "modules/quickswitcher/QuickSwitcherActionCreators.tsx", "size": 23641 }
-{ "file": "modules/quickswitcher/QuickSwitcherStore.tsx", "size": 28458 }
+{ "file": "modules/quickswitcher/QuickSwitcherStore.tsx", "size": 28462 }
 { "file": "modules/react_asset/native/native_required_assets_icons.tsx", "size": 8258 }
 { "file": "modules/react_asset/native/native_required_assets_misc.tsx", "size": 2661 }
 { "file": "modules/react_asset/native/native_required_assets.tsx", "size": 694 }
@@ -17827,7 +17827,7 @@
 { "file": "modules/reactions/native/ReactionUtils.tsx", "size": 8698 }
 { "file": "modules/reactions/native/useBurstToggleCoachmark.tsx", "size": 2934 }
 { "file": "modules/reactions/native/useEmojisForReactionRow.tsx", "size": 1493 }
-{ "file": "modules/reactions/ReactionActionCreators.tsx", "size": 32033 }
+{ "file": "modules/reactions/ReactionActionCreators.tsx", "size": 32825 }
 { "file": "modules/reactions/ReactionUtils.tsx", "size": 5034 }
 { "file": "modules/reactions/useCanRemoveAllReactions.tsx", "size": 1144 }
 { "file": "modules/read_states/ReadStateConstants.tsx", "size": 731 }
@@ -17972,7 +17972,7 @@
 { "file": "modules/rpc/server/commands/application.tsx", "size": 4291 }
 { "file": "modules/rpc/server/commands/AuthCommandsFactory.tsx", "size": 35303 }
 { "file": "modules/rpc/server/commands/certifiedDevices.tsx", "size": 4218 }
-{ "file": "modules/rpc/server/commands/channels.tsx", "size": 33201 }
+{ "file": "modules/rpc/server/commands/channels.tsx", "size": 33153 }
 { "file": "modules/rpc/server/commands/config.tsx", "size": 2094 }
 { "file": "modules/rpc/server/commands/conjureDevicePermissions.tsx", "size": 2544 }
 { "file": "modules/rpc/server/commands/conjureLivePreview.tsx", "size": 1444 }
@@ -18078,7 +18078,7 @@
 { "file": "modules/safety_flows/native/tasks/ResendVerificationCodeButton.tsx", "size": 4839 }
 { "file": "modules/safety_flows/native/tasks/VerifyEmailScreen.tsx", "size": 5517 }
 { "file": "modules/safety_flows/native/UpdateAppScreen.tsx", "size": 2344 }
-{ "file": "modules/safety_flows/openSafetyFlow.native.tsx", "size": 6009 }
+{ "file": "modules/safety_flows/openSafetyFlow.native.tsx", "size": 7925 }
 { "file": "modules/safety_flows/pendingRequestTimestamp.tsx", "size": 1002 }
 { "file": "modules/safety_flows/SafetyFlows.messages.js", "size": 7722 }
 { "file": "modules/safety_flows/SafetyFlowsActionCreators.tsx", "size": 4259 }
@@ -18151,7 +18151,7 @@
 { "file": "modules/saved_messages/native/showForLaterModal.tsx", "size": 1018 }
 { "file": "modules/saved_messages/native/useForLaterCoachmark.tsx", "size": 1866 }
 { "file": "modules/saved_messages/SavedMessageHelpers.native.tsx", "size": 12834 }
-{ "file": "modules/saved_messages/SavedMessagesActions.tsx", "size": 10847 }
+{ "file": "modules/saved_messages/SavedMessagesActions.tsx", "size": 12909 }
 { "file": "modules/saved_messages/SavedMessagesManager.tsx", "size": 2712 }
 { "file": "modules/saved_messages/SavedMessageSources.tsx", "size": 498 }
 { "file": "modules/saved_messages/SavedMessagesStore.tsx", "size": 12623 }
@@ -18374,7 +18374,7 @@
 { "file": "modules/settings/tracking/Tracking.tsx", "size": 1308 }
 { "file": "modules/share/formatResults.tsx", "size": 13379 }
 { "file": "modules/share/native/AppShare.tsx", "size": 5741 }
-{ "file": "modules/share/native/DestinationFailedAlertModal.tsx", "size": 7786 }
+{ "file": "modules/share/native/DestinationFailedAlertModal.tsx", "size": 7785 }
 { "file": "modules/share/native/resolveShareSendOutcome.tsx", "size": 2339 }
 { "file": "modules/share/native/SearchableDestinationList.tsx", "size": 13579 }
 { "file": "modules/share/native/SearchableDestinationListHeader.tsx", "size": 3168 }
@@ -18389,7 +18389,7 @@
 { "file": "modules/share/native/ShareScreenConstants.tsx", "size": 324 }
 { "file": "modules/share/native/ShareScreenFooter.tsx", "size": 1633 }
 { "file": "modules/share/native/ShareScreenModal.tsx", "size": 8029 }
-{ "file": "modules/share/native/ShareUtils.tsx", "size": 5393 }
+{ "file": "modules/share/native/ShareUtils.tsx", "size": 3206 }
 { "file": "modules/share/native/showSearchableDestinationListModal.tsx", "size": 990 }
 { "file": "modules/share/native/showSharePreparingModal.tsx", "size": 1791 }
 { "file": "modules/share/native/useShareChatInputActions.tsx", "size": 3150 }
@@ -18441,14 +18441,14 @@
 { "file": "modules/slayer_storefront/native/SocialLayerStorefrontGiftPurchaseSection.tsx", "size": 8878 }
 { "file": "modules/slayer_storefront/native/SocialLayerStorefrontNativeActionCreators.tsx", "size": 7806 }
 { "file": "modules/slayer_storefront/native/SocialLayerStorefrontPoductPurchaseSuccessModal.tsx", "size": 28256 }
-{ "file": "modules/slayer_storefront/native/SocialLayerStorefrontProductDetailsModal.tsx", "size": 34388 }
+{ "file": "modules/slayer_storefront/native/SocialLayerStorefrontProductDetailsModal.tsx", "size": 34380 }
 { "file": "modules/slayer_storefront/native/useFetchSocialLayerStorefrontEmbedWishlist.tsx", "size": 5112 }
 { "file": "modules/slayer_storefront/native/useSocialLayerStorefrontEmbedData.tsx", "size": 17950 }
 { "file": "modules/slayer_storefront/navigateToSocialLayerStorefront.tsx", "size": 7502 }
 { "file": "modules/slayer_storefront/resolveStorefrontCodedLink.tsx", "size": 9120 }
 { "file": "modules/slayer_storefront/SlayerStorefrontPriceUtils.tsx", "size": 2432 }
 { "file": "modules/slayer_storefront/SlayerStorefrontUtils.tsx", "size": 26066 }
-{ "file": "modules/slayer_storefront/SocialLayerStorefrontActionCreators.tsx", "size": 38053 }
+{ "file": "modules/slayer_storefront/SocialLayerStorefrontActionCreators.tsx", "size": 43054 }
 { "file": "modules/slayer_storefront/SocialLayerStorefrontAnalyticsConstants.tsx", "size": 1258 }
 { "file": "modules/slayer_storefront/SocialLayerStorefrontConfigManager.tsx", "size": 1311 }
 { "file": "modules/slayer_storefront/SocialLayerStorefrontConstants.tsx", "size": 2817 }
@@ -18469,7 +18469,7 @@
 { "file": "modules/soundboard/muteCustomJoinSound.tsx", "size": 519 }
 { "file": "modules/soundboard/native/SoundboardActionCreators.tsx", "size": 2020 }
 { "file": "modules/soundboard/native/SoundboardHooks.tsx", "size": 3810 }
-{ "file": "modules/soundboard/native/SoundboardManager.tsx", "size": 3838 }
+{ "file": "modules/soundboard/native/SoundboardManager.tsx", "size": 5728 }
 { "file": "modules/soundboard/native/SoundboardSoundPicker.tsx", "size": 7878 }
 { "file": "modules/soundboard/native/SoundboardSoundPickerCategories.tsx", "size": 10802 }
 { "file": "modules/soundboard/native/SoundboardSoundPickerList.tsx", "size": 15118 }
@@ -18634,7 +18634,7 @@
 { "file": "modules/stickers/native/StickerDetailActionSheet.tsx", "size": 27102 }
 { "file": "modules/stickers/native/StickerOptionsActionSheet.tsx", "size": 1446 }
 { "file": "modules/stickers/native/StickerPackBanner.tsx", "size": 1007 }
-{ "file": "modules/stickers/native/StickerPackDetailActionSheet.tsx", "size": 5727 }
+{ "file": "modules/stickers/native/StickerPackDetailActionSheet.tsx", "size": 5722 }
 { "file": "modules/stickers/native/StickerPackHeader.tsx", "size": 5315 }
 { "file": "modules/stickers/native/StickerPackInformationPopout.tsx", "size": 4279 }
 { "file": "modules/stickers/native/StickerPicker.tsx", "size": 10537 }
@@ -18649,7 +18649,7 @@
 { "file": "modules/stickers/native/StickersUtils.tsx", "size": 4293 }
 { "file": "modules/stickers/native/useStickerPickerListData.tsx", "size": 5779 }
 { "file": "modules/stickers/StickerCategoryUtils.tsx", "size": 3626 }
-{ "file": "modules/stickers/StickersActionCreators.tsx", "size": 16214 }
+{ "file": "modules/stickers/StickersActionCreators.tsx", "size": 17476 }
 { "file": "modules/stickers/StickersConstants.tsx", "size": 1081 }
 { "file": "modules/stickers/StickerSendability.tsx", "size": 3053 }
 { "file": "modules/stickers/StickersHooks.tsx", "size": 23283 }
@@ -18670,11 +18670,11 @@
 { "file": "modules/storefront/records/StorefrontProductRecord.tsx", "size": 4731 }
 { "file": "modules/storefront/records/StorefrontPromotionRecord.tsx", "size": 17736 }
 { "file": "modules/storefront/SKUPricesStore.tsx", "size": 7649 }
-{ "file": "modules/storefront/StorefrontActionCreators.tsx", "size": 13303 }
+{ "file": "modules/storefront/StorefrontActionCreators.tsx", "size": 16361 }
 { "file": "modules/storefront/StorefrontCacheUtils.tsx", "size": 1499 }
-{ "file": "modules/storefront/StorefrontCollectionActionCreators.tsx", "size": 24273 }
+{ "file": "modules/storefront/StorefrontCollectionActionCreators.tsx", "size": 31504 }
 { "file": "modules/storefront/StorefrontCollectionStore.tsx", "size": 12267 }
-{ "file": "modules/storefront/StorefrontProductActionCreators.tsx", "size": 9315 }
+{ "file": "modules/storefront/StorefrontProductActionCreators.tsx", "size": 13141 }
 { "file": "modules/storefront/StorefrontProductStore.tsx", "size": 10551 }
 { "file": "modules/storefront/StorefrontPromotionOverrideStore.tsx", "size": 1159 }
 { "file": "modules/storefront/StorefrontPromotionStore.tsx", "size": 3541 }
@@ -18683,7 +18683,7 @@
 { "file": "modules/summaries/native/SummaryActionSheet.tsx", "size": 10274 }
 { "file": "modules/summaries/native/SummaryActionSheetButton.tsx", "size": 2241 }
 { "file": "modules/summaries/Summary.tsx", "size": 937 }
-{ "file": "modules/summaries/SummaryActionCreators.tsx", "size": 25179 }
+{ "file": "modules/summaries/SummaryActionCreators.tsx", "size": 27592 }
 { "file": "modules/summaries/SummaryConstants.tsx", "size": 1850 }
 { "file": "modules/summaries/SummaryStore.tsx", "size": 21125 }
 { "file": "modules/suppress_notifications/parseContentForSuppressNotifications.tsx", "size": 834 }
@@ -18703,7 +18703,7 @@
 { "file": "modules/telemetry_ring/native/channels/BaseTelemetryExportChannel.tsx", "size": 13143 }
 { "file": "modules/telemetry_ring/native/channels/NormalTelemetry.tsx", "size": 1007 }
 { "file": "modules/telemetry_ring/native/channels/SentryTelemetry.tsx", "size": 1160 }
-{ "file": "modules/telemetry_ring/native/channels/ZoomedInAnalyticBuilder.tsx", "size": 24227 }
+{ "file": "modules/telemetry_ring/native/channels/ZoomedInAnalyticBuilder.tsx", "size": 24231 }
 { "file": "modules/telemetry_ring/native/channels/ZoomedInTelemetry.tsx", "size": 4799 }
 { "file": "modules/telemetry_ring/native/index.tsx", "size": 1174 }
 { "file": "modules/telemetry_ring/native/TelemetryRingLifecycle.tsx", "size": 3725 }
@@ -18824,7 +18824,7 @@
 { "file": "modules/user_affinities/UserAffinitiesConstants.tsx", "size": 423 }
 { "file": "modules/user_affinities/UserAffinitiesTypes.tsx", "size": 366 }
 { "file": "modules/user_affinities/UserAffinitiesV2Store.tsx", "size": 6058 }
-{ "file": "modules/user_affinities/VoiceUserAffinityExperiment.tsx", "size": 1085 }
+{ "file": "modules/user_affinities/VoiceUserAffinityExperiment.tsx", "size": 1087 }
 { "file": "modules/user_application_identity/hooks/useConnectionFilteredAppIdentities.tsx", "size": 1763 }
 { "file": "modules/user_application_identity/UserApplicationIdentityActionCreators.tsx", "size": 5601 }
 { "file": "modules/user_application_identity/UserApplicationIdentityConstants.tsx", "size": 2173 }
@@ -19105,7 +19105,7 @@
 { "file": "modules/user_profile/utils/getMutualGuildsLabel.tsx", "size": 788 }
 { "file": "modules/user_profile/utils/native/openEditNoteModal.tsx", "size": 633 }
 { "file": "modules/user_profile/utils/parseProviderRouteHeadlessSessionId.tsx", "size": 1116 }
-{ "file": "modules/user_profile/utils/parseUserProfileCollectibles.tsx", "size": 2369 }
+{ "file": "modules/user_profile/utils/parseUserProfileCollectibles.tsx", "size": 2372 }
 { "file": "modules/user_profile/utils/shouldShowActivityTimeBar.tsx", "size": 814 }
 { "file": "modules/user_profile/utils/trackUserAvatarUpdated.tsx", "size": 1635 }
 { "file": "modules/user_profile/utils/UserProfileStackedActivityCardUtils.tsx", "size": 2069 }
@@ -19127,7 +19127,7 @@
 { "file": "modules/user_settings/account/native/mfa_modal_flow/TwoFASetupModalHeader.tsx", "size": 2358 }
 { "file": "modules/user_settings/account/native/mfa_modal_flow/TwoFASetupScan.tsx", "size": 3204 }
 { "file": "modules/user_settings/account/native/mfa_modal_flow/TwoFASetupStyles.tsx", "size": 1061 }
-{ "file": "modules/user_settings/account/native/mfa_modal_flow/TwoFASetupSuccess.tsx", "size": 6065 }
+{ "file": "modules/user_settings/account/native/mfa_modal_flow/TwoFASetupSuccess.tsx", "size": 7895 }
 { "file": "modules/user_settings/account/native/SettingsAccountHeader.tsx", "size": 3872 }
 { "file": "modules/user_settings/account/native/SettingsAccountScreen.tsx", "size": 7820 }
 { "file": "modules/user_settings/account/native/SettingsAccountUtils.tsx", "size": 1463 }
@@ -19590,7 +19590,7 @@
 { "file": "modules/user_settings/notifications/native/SettingsEmailNotificationsScreen.tsx", "size": 2962 }
 { "file": "modules/user_settings/notifications/native/SettingsNotificationScreen.tsx", "size": 8357 }
 { "file": "modules/user_settings/notifications/native/SettingsNotificationUtils.tsx", "size": 767 }
-{ "file": "modules/user_settings/notifications/native/stores/AndroidNotificationSettingsStore.tsx", "size": 7045 }
+{ "file": "modules/user_settings/notifications/native/stores/AndroidNotificationSettingsStore.tsx", "size": 7026 }
 { "file": "modules/user_settings/notifications/native/UserSettingsCommunityNotifications.tsx", "size": 3439 }
 { "file": "modules/user_settings/notifications/native/UserSettingsHighlightNotifications.tsx", "size": 3229 }
 { "file": "modules/user_settings/notifications/native/UserSettingsPushNotificationLogs.tsx", "size": 9603 }
@@ -19681,7 +19681,7 @@
 { "file": "modules/user_settings/UserGuildSettingsManager.tsx", "size": 9818 }
 { "file": "modules/user_settings/UserSettingDefinitions.tsx", "size": 6543 }
 { "file": "modules/user_settings/UserSettings.tsx", "size": 66061 }
-{ "file": "modules/user_settings/UserSettingsConstants.tsx", "size": 4343 }
+{ "file": "modules/user_settings/UserSettingsConstants.tsx", "size": 4323 }
 { "file": "modules/user_settings/UserSettingSearchManager.tsx", "size": 4185 }
 { "file": "modules/user_settings/UserSettingSearchStore.tsx", "size": 486 }
 { "file": "modules/user_settings/UserSettingsKeys.tsx", "size": 29347 }
@@ -19736,7 +19736,7 @@
 { "file": "modules/verification/native/isFullScreenVerificationModalRequired.tsx", "size": 1050 }
 { "file": "modules/verification/VerificationConstants.tsx", "size": 1341 }
 { "file": "modules/verification/VerificationUtils.tsx", "size": 3731 }
-{ "file": "modules/video_backgrounds/applyBackgroundOption.tsx", "size": 10292 }
+{ "file": "modules/video_backgrounds/applyBackgroundOption.tsx", "size": 13510 }
 { "file": "modules/video_backgrounds/getDefaultBackgroundData.native.tsx", "size": 2006 }
 { "file": "modules/video_backgrounds/getFilterImage.native.tsx", "size": 1157 }
 { "file": "modules/video_backgrounds/isVideoBackgroundEnabled.tsx", "size": 968 }
@@ -19754,8 +19754,8 @@
 { "file": "modules/video_backgrounds/VirtualBackgroundsIosExperiment.tsx", "size": 640 }
 { "file": "modules/video_calls/getParticipantTitle.tsx", "size": 1421 }
 { "file": "modules/video_calls/native/ChannelCallConstants.tsx", "size": 1228 }
-{ "file": "modules/video_calls/native/ChannelCallLifecycleStore.tsx", "size": 4792 }
-{ "file": "modules/video_calls/native/ChannelCallStore.tsx", "size": 8539 }
+{ "file": "modules/video_calls/native/ChannelCallLifecycleStore.tsx", "size": 4790 }
+{ "file": "modules/video_calls/native/ChannelCallStore.tsx", "size": 8537 }
 { "file": "modules/video_calls/native/ChannelCallUtils.tsx", "size": 7301 }
 { "file": "modules/video_calls/native/components/ActivityTile.tsx", "size": 12089 }
 { "file": "modules/video_calls/native/components/CallBarAction.tsx", "size": 8934 }
@@ -19875,7 +19875,7 @@
 { "file": "modules/virtual_currency/OrbChallengeTypes.tsx", "size": 482 }
 { "file": "modules/virtual_currency/shared/AnimationUtils.tsx", "size": 1009 }
 { "file": "modules/virtual_currency/stores/OrbChallengeActionCreators.tsx", "size": 5075 }
-{ "file": "modules/virtual_currency/stores/OrbChallengesStore.tsx", "size": 13417 }
+{ "file": "modules/virtual_currency/stores/OrbChallengesStore.tsx", "size": 13509 }
 { "file": "modules/virtual_currency/stores/VirtualCurrencyStore.tsx", "size": 7680 }
 { "file": "modules/virtual_currency/types.tsx", "size": 396 }
 { "file": "modules/virtual_currency/VirtualCurrencyActionCreators.tsx", "size": 10043 }
@@ -19912,15 +19912,15 @@
 { "file": "modules/voice_calls/native/AudioManagerStore.android.tsx", "size": 8568 }
 { "file": "modules/voice_calls/native/AudioRouteSwitchingStore.tsx", "size": 3293 }
 { "file": "modules/voice_calls/native/AudioSessionModeManager.tsx", "size": 3630 }
-{ "file": "modules/voice_calls/native/CallStateHooks.tsx", "size": 4134 }
-{ "file": "modules/voice_calls/native/CallsUtils.tsx", "size": 15038 }
+{ "file": "modules/voice_calls/native/CallStateHooks.tsx", "size": 4136 }
+{ "file": "modules/voice_calls/native/CallsUtils.tsx", "size": 16505 }
 { "file": "modules/voice_calls/native/components/OngoingCallStatusLabel.tsx", "size": 2544 }
 { "file": "modules/voice_calls/native/components/OngoingCallTimer.tsx", "size": 1224 }
 { "file": "modules/voice_calls/native/components/Timer.tsx", "size": 4885 }
 { "file": "modules/voice_calls/native/ConfirmStartCall.tsx", "size": 1714 }
 { "file": "modules/voice_calls/native/ProximitySensorManager.tsx", "size": 2063 }
 { "file": "modules/voice_calls/native/VoiceActionSheetManager.tsx", "size": 1858 }
-{ "file": "modules/voice_calls/native/VoiceNotificationManager.android.tsx", "size": 18182 }
+{ "file": "modules/voice_calls/native/VoiceNotificationManager.android.tsx", "size": 18170 }
 { "file": "modules/voice_calls/PastVcActivityMessagesExperiment.tsx", "size": 1418 }
 { "file": "modules/voice_calls/RTCConnectionDesyncHooks.tsx", "size": 7808 }
 { "file": "modules/voice_calls/showActivitiesInvalidPermissionsAlert.tsx", "size": 822 }
@@ -19961,7 +19961,7 @@
 { "file": "modules/voice_messages/native/components/VoiceMessageOverlay.tsx", "size": 42910 }
 { "file": "modules/voice_messages/native/useVoiceMessageTooltip.tsx", "size": 2160 }
 { "file": "modules/voice_messages/native/VoiceMessagesPlaybackManager.tsx", "size": 4432 }
-{ "file": "modules/voice_messages/native/VoiceMessagesUIStore.tsx", "size": 5135 }
+{ "file": "modules/voice_messages/native/VoiceMessagesUIStore.tsx", "size": 5142 }
 { "file": "modules/voice_messages/native/VoiceMessageUtils.tsx", "size": 12448 }
 { "file": "modules/voice_messages/VoiceMessageAnalytics.tsx", "size": 2331 }
 { "file": "modules/voice_messages/VoiceMessageConstants.tsx", "size": 951 }
@@ -20066,7 +20066,7 @@
 { "file": "modules/voice_panel/native/header/VoicePanelHeader.tsx", "size": 42976 }
 { "file": "modules/voice_panel/native/header/VoicePanelHeaderChatButton.tsx", "size": 2776 }
 { "file": "modules/voice_panel/native/header/VoicePanelHeaderConstants.tsx", "size": 459 }
-{ "file": "modules/voice_panel/native/header/VoicePanelHeaderSpeaker.tsx", "size": 12613 }
+{ "file": "modules/voice_panel/native/header/VoicePanelHeaderSpeaker.tsx", "size": 12621 }
 { "file": "modules/voice_panel/native/header/VoicePanelHeaderUserState.tsx", "size": 5649 }
 { "file": "modules/voice_panel/native/header/VoicePanelSettingsActionCreators.tsx", "size": 1123 }
 { "file": "modules/voice_panel/native/header/VoicePanelSettingsActionSheet.tsx", "size": 1223 }
@@ -20334,7 +20334,7 @@
 { "file": "stores/GuildMemberCountStore.tsx", "size": 2879 }
 { "file": "stores/GuildMemberRequesterStore.tsx", "size": 10153 }
 { "file": "stores/GuildMembershipStore.tsx", "size": 2758 }
-{ "file": "stores/GuildMemberStore.tsx", "size": 70006 }
+{ "file": "stores/GuildMemberStore.tsx", "size": 70001 }
 { "file": "stores/GuildNSFWAgreeStore.tsx", "size": 1491 }
 { "file": "stores/GuildReadStateStore.tsx", "size": 43062 }
 { "file": "stores/GuildRoleStore.tsx", "size": 9821 }
@@ -20353,7 +20353,7 @@
 { "file": "stores/LocalActivityStore.tsx", "size": 13160 }
 { "file": "stores/MaskedLinkStore.tsx", "size": 5475 }
 { "file": "stores/MaskedLinkStoreMethodsAdditional.native.tsx", "size": 741 }
-{ "file": "stores/MediaEngineStore.tsx", "size": 248029 }
+{ "file": "stores/MediaEngineStore.tsx", "size": 248024 }
 { "file": "stores/MessageReactionsStore.tsx", "size": 3776 }
 { "file": "stores/MessageStore.tsx", "size": 47523 }
 { "file": "stores/MFAStore.tsx", "size": 2187 }
@@ -20383,7 +20383,7 @@
 { "file": "stores/PrivateChannelRecipientsInviteStore.tsx", "size": 11737 }
 { "file": "stores/ReadStateStore.tsx", "size": 148170 }
 { "file": "stores/RegionStore.tsx", "size": 2600 }
-{ "file": "stores/RelationshipStore.tsx", "size": 20826 }
+{ "file": "stores/RelationshipStore.tsx", "size": 20807 }
 { "file": "stores/RTCConnectionDesyncStore.tsx", "size": 7644 }
 { "file": "stores/RTCConnectionStore.tsx", "size": 20439 }
 { "file": "stores/RTCDebugStore.tsx", "size": 21061 }
@@ -20398,7 +20398,7 @@
 { "file": "stores/SpeakingStore.tsx", "size": 11882 }
 { "file": "stores/StatusPageStore.tsx", "size": 2364 }
 { "file": "stores/StreamerModeStore.tsx", "size": 6996 }
-{ "file": "stores/StreamRTCConnectionStore.tsx", "size": 17366 }
+{ "file": "stores/StreamRTCConnectionStore.tsx", "size": 17370 }
 { "file": "stores/SurveyStore.tsx", "size": 19112 }
 { "file": "stores/TypingStore.tsx", "size": 10436 }
 { "file": "stores/UploadAttachmentStore.tsx", "size": 12431 }
@@ -20421,7 +20421,7 @@
 { "file": "utils/AnalyticsFeedItemSeenManager.tsx", "size": 12404 }
 { "file": "utils/AnalyticsSchema.tsx", "size": 343 }
 { "file": "utils/AnalyticsUtils.tsx", "size": 22356 }
-{ "file": "utils/ApplicationAssetUtils.tsx", "size": 17844 }
+{ "file": "utils/ApplicationAssetUtils.tsx", "size": 19445 }
 { "file": "utils/AttachmentFile.native.tsx", "size": 5991 }
 { "file": "utils/AuthenticationUtils.tsx", "size": 812 }
 { "file": "utils/AutocompleteUtils.tsx", "size": 82970 }
@@ -20433,7 +20433,7 @@
 { "file": "utils/callOnce.tsx", "size": 608 }
 { "file": "utils/ChangeLogUtils.tsx", "size": 7274 }
 { "file": "utils/ChannelUtils.tsx", "size": 20806 }
-{ "file": "utils/ChatRestrictions.tsx", "size": 2694 }
+{ "file": "utils/ChatRestrictions.tsx", "size": 2695 }
 { "file": "utils/checkEnv.tsx", "size": 5152 }
 { "file": "utils/ClipboardUtils.native.tsx", "size": 2088 }
 { "file": "utils/Color.tsx", "size": 9215 }
@@ -20464,7 +20464,7 @@
 { "file": "utils/GiftCodeUtils.tsx", "size": 26347 }
 { "file": "utils/GlobalUtils.tsx", "size": 1018 }
 { "file": "utils/GuildBoostingUtils.tsx", "size": 31773 }
-{ "file": "utils/GuildDiscoveryUtils.tsx", "size": 13077 }
+{ "file": "utils/GuildDiscoveryUtils.tsx", "size": 15326 }
 { "file": "utils/GuildRecordUtils.tsx", "size": 28935 }
 { "file": "utils/GuildRoleRecordUtils.tsx", "size": 5199 }
 { "file": "utils/GuildRoleUtils.tsx", "size": 3703 }
@@ -20473,7 +20473,7 @@
 { "file": "utils/ImageUtils.tsx", "size": 11018 }
 { "file": "utils/InstantInviteUtils.tsx", "size": 23311 }
 { "file": "utils/InviteErrorUtils.tsx", "size": 4102 }
-{ "file": "utils/LayoutUtils.tsx", "size": 12292 }
+{ "file": "utils/LayoutUtils.tsx", "size": 12262 }
 { "file": "utils/LazyAPIPromise.tsx", "size": 3149 }
 { "file": "utils/LibraryApplicationUtils.tsx", "size": 3535 }
 { "file": "utils/ListUtils.tsx", "size": 1478 }
@@ -20512,8 +20512,8 @@
 { "file": "utils/native/StyleSheetUtils.tsx", "size": 866 }
 { "file": "utils/native/SupportUtils.tsx", "size": 2815 }
 { "file": "utils/native/TimeUtils.tsx", "size": 1068 }
-{ "file": "utils/native/UploadUtils.tsx", "size": 103304 }
-{ "file": "utils/native/WelcomeScreenUtils.tsx", "size": 3453 }
+{ "file": "utils/native/UploadUtils.tsx", "size": 94828 }
+{ "file": "utils/native/WelcomeScreenUtils.tsx", "size": 3455 }
 { "file": "utils/NetworkUtils.tsx", "size": 1213 }
 { "file": "utils/NicknameUtils.tsx", "size": 2397 }
 { "file": "utils/NotificationSettingsUtils.tsx", "size": 21743 }
@@ -20541,12 +20541,12 @@
 { "file": "utils/RTCConnectionUtils.tsx", "size": 2954 }
 { "file": "utils/SecondaryIndexMapUtils.tsx", "size": 545 }
 { "file": "utils/SecondsSliderUtils.tsx", "size": 1987 }
-{ "file": "utils/SentryUtils.native.tsx", "size": 12062 }
+{ "file": "utils/SentryUtils.native.tsx", "size": 12029 }
 { "file": "utils/SKUUtils.tsx", "size": 11418 }
 { "file": "utils/SnowflakeUtils.tsx", "size": 2348 }
 { "file": "utils/SortedArrayUtils.tsx", "size": 1720 }
-{ "file": "utils/SpellcheckUtils.tsx", "size": 14635 }
-{ "file": "utils/StoreUtils.tsx", "size": 11619 }
+{ "file": "utils/SpellcheckUtils.tsx", "size": 9425 }
+{ "file": "utils/StoreUtils.tsx", "size": 9927 }
 { "file": "utils/StreamQualityUtils.tsx", "size": 7459 }
 { "file": "utils/StringUtils.tsx", "size": 803 }
 { "file": "utils/StripeUtils.tsx", "size": 17684 }

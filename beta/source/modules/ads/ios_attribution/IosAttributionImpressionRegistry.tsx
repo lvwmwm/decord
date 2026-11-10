@@ -94,7 +94,7 @@ let obj = function _startNativeImpression() {
               token = undefined;
               signAbort = 1;
               c4 = 1;
-              return { value: "flexDirection", done: true };
+              return { value: "flexDirection", done: null };
             }
           } else if (1 === signAbort) {
             if (arg0 === 1) {
@@ -282,83 +282,29 @@ obj = function _getStoreKitCredential() {
     let impressionId = arg0;
     let c3 = 0;
     let c4 = 0;
-    const iter = (async (arg0, value) => {
+    const iter = (async (arg0) => {
+      let tmp8;
       function getImpressionToken() {
         return closure_1_10(...arguments);
       }
-      if (c4 === 2) {
-        c4 = 3;
-        throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp3 === 3) {
-        if (arg0 === 1) {
-          throw value;
-        } else if (arg0 === 2) {
-          return { value, done: true };
-        } else {
-          return { value: "HermesInternal", done: null };
-        }
-      } else {
-        try {
-          let activeIosAttributionFramework;
-          c4 = 2;
-          if (0 === c3) {
-            if (arg0 === 1) {
-              c4 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c4 = 3;
-              return { value, done: true };
-            } else {
-              impressionId = undefined;
-              impressionId = impressionId.impressionId;
-              activeIosAttributionFramework = undefined;
-              impressionToken = undefined;
-              c3 = 1;
-              c4 = 1;
-              return { value: "flexDirection", done: true };
-            }
-          } else if (1 === c3) {
-            if (arg0 === 1) {
-              c4 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c4 = 3;
-              return { value, done: true };
-            } else {
-              const obj8 = closure_130_0(closure_130_1[3]);
-              activeIosAttributionFramework = obj8.getActiveIosAttributionFramework();
-              if (null != activeIosAttributionFramework) {
-                if (null != closure_130_3[activeIosAttributionFramework]) {
-                  c3 = 2;
-                  c4 = 1;
-                  const obj5 = { value: getImpressionToken(impressionId), done: false };
-                  return obj5;
-                }
-              }
-              c4 = 3;
-              return { value: "HermesInternal", done: null };
-            }
-          } else if (arg0 === 1) {
-            c4 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c4 = 3;
-            return { value, done: true };
-          } else {
-            impressionToken = value;
-            let tmp8;
-            if (null != impressionToken) {
-              tmp8 = { impressionToken };
-              obj = { impressionToken };
-            }
-            c4 = 3;
-            return { value: tmp8, done: true };
-          }
-        } catch (tmp18) {
-          c4 = 3;
-          throw tmp18;
+      impressionToken = tmp4;
+      impressionId = impressionId.impressionId;
+      await "flexDirection";
+      const obj8 = closure_130_0(closure_130_1[3]);
+      const activeIosAttributionFramework = obj8.getActiveIosAttributionFramework();
+      if (null != activeIosAttributionFramework) {
+        if (null != closure_130_3[activeIosAttributionFramework]) {
+          c3 = 2;
+          c4 = 1;
+          const obj5 = { value: getImpressionToken(impressionId), done: false };
+          return obj5;
         }
       }
+      impressionToken = await "HermesInternal";
+      if (null != impressionToken) {
+        tmp8 = { impressionToken };
+      }
+      return tmp8;
     })();
     iter.next();
     return iter;

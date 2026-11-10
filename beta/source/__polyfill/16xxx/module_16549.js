@@ -211,7 +211,7 @@ let closure_14 = _asyncToGenerator(async (arg0, value) => {
           closure_6 = undefined;
           c3 = 1;
           c4 = 1;
-          return { value: "flexDirection", done: true };
+          return { value: "flexDirection", done: null };
         }
       } else if (arg0 === 1) {
         c4 = 3;

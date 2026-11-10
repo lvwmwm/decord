@@ -141,7 +141,7 @@ obj = function _applyHexagonCampaignPerks() {
             closure_11 = undefined;
             c4 = 1;
             c5 = 1;
-            return { value: "flexDirection", done: true };
+            return { value: "flexDirection", done: null };
           }
         } else if (1 === tmp5) {
           if (arg0 === 1) {

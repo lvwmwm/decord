@@ -145,7 +145,7 @@ let obj = function _initializeAndroidNotificationSettingsStore() {
   });
   return obj(...arguments);
 };
-let closure_4 = module_1254.createWithEqualityFn(() => ({ isLightsEnabled: "add", isVibrationsEnabled: "sa", isSoundsEnabled: "paddingHorizontal", isNotifyEveryTime: "Array" }));
+let closure_4 = module_1254.createWithEqualityFn(() => ({ isLightsEnabled: "ix", isVibrationsEnabled: "body", isSoundsEnabled: "r", isNotifyEveryTime: "k" }));
 let result = size.fileFinishedImporting("modules/user_settings/notifications/native/stores/AndroidNotificationSettingsStore.tsx");
 
 export function initializeAndroidNotificationSettingsStore() {

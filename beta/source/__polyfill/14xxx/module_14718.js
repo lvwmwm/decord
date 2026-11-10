@@ -71,7 +71,7 @@ export const useIAP = () => {
             skus = closure_0.skus;
             c4 = 1;
             c5 = 1;
-            return { value: "flexDirection", done: true };
+            return { value: "flexDirection", done: null };
           }
         } else {
           let closure_1;
@@ -148,7 +148,7 @@ export const useIAP = () => {
             skus = closure_0.skus;
             c4 = 1;
             c5 = 1;
-            return { value: "flexDirection", done: true };
+            return { value: "flexDirection", done: null };
           }
         } else {
           let closure_1;
@@ -335,7 +335,7 @@ export const useIAP = () => {
               ({ purchase: c0, isConsumable: c1, developerPayloadAndroid: c2 } = purchase);
               c5 = 1;
               c6 = 1;
-              return { value: "flexDirection", done: true };
+              return { value: "flexDirection", done: null };
             }
           } else {
             let finishTransactionResult;

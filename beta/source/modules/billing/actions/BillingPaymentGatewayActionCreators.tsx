@@ -517,7 +517,7 @@ obj = function _createExpressCheckoutPaymentMethod() {
             billingAddressToken = undefined;
             c3 = 1;
             c4 = 1;
-            return { value: "flexDirection", done: true };
+            return { value: "flexDirection", done: null };
           }
         } else if (1 === c3) {
           if (arg0 === 1) {
@@ -679,7 +679,7 @@ obj = function _confirmPaymentElementSource() {
                 billing_details = undefined;
                 c12 = 3;
                 c13 = 1;
-                return { value: "flexDirection", done: true };
+                return { value: "flexDirection", done: null };
               }
               break;
             }
@@ -752,8 +752,8 @@ obj = function _confirmPaymentElementSource() {
                         if (closure_11 == null) {
                           _undefined = undefined;
                         }
-                        tmp121 = { setupIntent: _undefined, error: "r" };
-                        const obj8 = { setupIntent: _undefined, error: "r" };
+                        tmp121 = { setupIntent: _undefined, error: "Array" };
+                        const obj8 = { setupIntent: _undefined, error: "Array" };
                         if (shouldRecreateSetupIntentForPaymentElement(tmp121.error)) {
                           if (c3 !== closure_137_10.PAYMENT_REQUEST) {
                             c12 = 7;
@@ -1305,7 +1305,7 @@ obj = function _createAdyenVaultablePaymentSource() {
               adyen_redirect_url = undefined;
               c12 = 1;
               c13 = 1;
-              return { value: "flexDirection", done: true };
+              return { value: "flexDirection", done: null };
             }
           } else if (1 === c12) {
             if (arg0 === 1) {

@@ -235,7 +235,7 @@ function StateProvider(children) {
     if (typeof createAnimatedValue === "function") {
       const self = this;
       const self2 = this;
-      const obj = { animatedScrollY: value, columnWrapperStyle: "Button", containerLayoutTriggers: map, contextNum: +closure_18, listeners: map1, mapViewabilityAmountCallbacks: map2, mapViewabilityAmountValues: map3, mapViewabilityCallbacks: map4, mapViewabilityConfigStates: map5, mapViewabilityValues: map6, pendingContainerIds: 150, positionListeners: map7, scrollAxisGap: "body-sm/normal", state: "text-default", values: map8, viewRefs: map9 };
+      const obj = { animatedScrollY: value, columnWrapperStyle: "Button", containerLayoutTriggers: map, contextNum: +closure_18, listeners: map1, mapViewabilityAmountCallbacks: map2, mapViewabilityAmountValues: map3, mapViewabilityCallbacks: map4, mapViewabilityConfigStates: map5, mapViewabilityValues: map6, pendingContainerIds: "envelope", positionListeners: map7, scrollAxisGap: "mail", state: "outgoing", values: map8, viewRefs: map9 };
       value = new Animated.Animated.Value(0);
       const _Map = Map;
       const self3 = this;
@@ -6914,7 +6914,7 @@ function flushItemSizeUpdates(state, needsRecalculate) {
                   num17 = bound;
                 } while (num15 < tmp14);
               }
-              let obj2 = { endNoBuffer: null, firstFullyOnScreenIndex: "Array", startNoBuffer: true };
+              let obj2 = { endNoBuffer: null, firstFullyOnScreenIndex: "Array", startNoBuffer: 2 };
               const length = data.length;
               let _Math4 = Math;
               const bound1 = Math.max(0, tmp141);
@@ -8540,7 +8540,7 @@ function flushItemSizeUpdates(state, needsRecalculate) {
                   num17 = bound;
                 } while (num15 < tmp14);
               }
-              let obj2 = { endNoBuffer: null, firstFullyOnScreenIndex: "Array", startNoBuffer: true };
+              let obj2 = { endNoBuffer: null, firstFullyOnScreenIndex: "Array", startNoBuffer: 2 };
               const length = data.length;
               let _Math4 = Math;
               const bound1 = Math.max(0, tmp141);
@@ -11048,7 +11048,7 @@ function doInitialAllocateContainers(context) {
                           num17 = bound;
                         } while (num15 < tmp14);
                       }
-                      let obj2 = { endNoBuffer: null, firstFullyOnScreenIndex: "Array", startNoBuffer: true };
+                      let obj2 = { endNoBuffer: null, firstFullyOnScreenIndex: "Array", startNoBuffer: 2 };
                       const length = data.length;
                       let _Math4 = Math;
                       const bound1 = Math.max(0, tmp141);
@@ -12666,7 +12666,7 @@ function doInitialAllocateContainers(context) {
                         num17 = bound;
                       } while (num15 < tmp14);
                     }
-                    let obj2 = { endNoBuffer: null, firstFullyOnScreenIndex: "Array", startNoBuffer: true };
+                    let obj2 = { endNoBuffer: null, firstFullyOnScreenIndex: "Array", startNoBuffer: 2 };
                     const length = data.length;
                     let _Math4 = Math;
                     const bound1 = Math.max(0, tmp141);
@@ -16362,7 +16362,7 @@ let items = [
                     num17 = bound;
                   } while (num15 < tmp14);
                 }
-                let obj2 = { endNoBuffer: null, firstFullyOnScreenIndex: "Array", startNoBuffer: true };
+                let obj2 = { endNoBuffer: null, firstFullyOnScreenIndex: "Array", startNoBuffer: 2 };
                 const length = data.length;
                 let _Math4 = Math;
                 const bound1 = Math.max(0, tmp141);
@@ -17685,7 +17685,7 @@ let closure_141 = forwardRef(function LegendListInner2(recycleItems, ref) {
         const _Map = Map;
         let self = this;
         let self2 = this;
-        const obj17 = { averageSizes: {}, columnSpans: [], columns: [], containerItemGenerations: [], containerItemKeys: map, containerItemMetadata: map1, contentInsetOverride: "description", dataChangeEpoch: false, dataChangeNeedsScrollUpdate: false, didColumnsChange: false, didDataChange: false, didLoad: true, enableScrollForNextCalculateItemsInView: -1, endBuffered: -1, endNoBuffer: "description", endReachedSnapshot: 285736959, firstFullyOnScreenIndex: 7430402, hasHadNonEmptyData: data.length > 0, idCache: [], idsInView: [], indexByKey: map2, initialScroll: tmp58, initialScrollSession: tmp98, isEndReached: 113, isFirst: 39911680, isStartReached: 115, lastBatchingAction: Date.now(), lastLayout: 0, lastScrollDelta: 7409920, loadStartTime: Date.now(), minIndexSizeChanged: -142, nativeContentInset: -1, nativeMarginTop: 1627546111, pendingDataComparison: 28929, pendingNativeMVCPAdjust: 1096876032, positions: [], props: {}, queuedCalculateItemsInView: 1107558404, queuedFullDrawDistancePrewarm: 139390, refScroller: { current: null }, scroll: 1090658577, scrollAdjustHandler: tmp101, scrollForNextCalculateItemsInView: 20386897, scrollHistory: [], scrollLength: tmp88, scrollPending: 1090846724, scrollPrev: 296907, scrollPrevTime: -1712766717, scrollProcessingEnabled: 302252036, scrollTime: -2147008223, sizes: map3, sizesKnown: map4, startBuffered: -1784921853, startNoBuffer: 1090715652, startReachedSnapshot: 325443, stickyContainerPool: set1, stickyContainers: map5, timeoutAdaptiveRender: 290866, timeouts: set2, totalSize: 1090715652, viewabilityConfigCallbackPairs: 305151 };
+        const obj17 = { averageSizes: {}, columnSpans: [], columns: [], containerItemGenerations: [], containerItemKeys: map, containerItemMetadata: map1, contentInsetOverride: "description", dataChangeEpoch: false, dataChangeNeedsScrollUpdate: false, didColumnsChange: false, didDataChange: false, didLoad: true, enableScrollForNextCalculateItemsInView: -1, endBuffered: -1, endNoBuffer: "description", endReachedSnapshot: 285736959, firstFullyOnScreenIndex: 7430402, hasHadNonEmptyData: data.length > 0, idCache: [], idsInView: [], indexByKey: map2, initialScroll: tmp58, initialScrollSession: tmp98, isEndReached: 113, isFirst: 39911680, isStartReached: 115, lastBatchingAction: Date.now(), lastLayout: 0, lastScrollDelta: 7409920, loadStartTime: Date.now(), minIndexSizeChanged: -142, nativeContentInset: -1, nativeMarginTop: 1627546111, pendingDataComparison: 28929, pendingNativeMVCPAdjust: 1096876032, positions: [], props: {}, queuedCalculateItemsInView: 553910276, queuedFullDrawDistancePrewarm: 923685129, refScroller: { current: null }, scroll: 1933639681, scrollAdjustHandler: tmp101, scrollForNextCalculateItemsInView: 85614145, scrollHistory: [], scrollLength: tmp88, scrollPending: 296894, scrollPrev: -1713291005, scrollPrevTime: 553910276, scrollProcessingEnabled: 553984257, scrollTime: 553722115, sizes: map3, sizesKnown: map4, startBuffered: 75496001, startNoBuffer: 172033536, startReachedSnapshot: 50332788, stickyContainerPool: set1, stickyContainers: map5, timeoutAdaptiveRender: 50332919, timeouts: set2, totalSize: 675349248, viewabilityConfigCallbackPairs: 50332784 };
         map = new Map();
         const _Map2 = Map;
         let self3 = this;
@@ -18846,7 +18846,7 @@ let closure_141 = forwardRef(function LegendListInner2(recycleItems, ref) {
                       num17 = bound;
                     } while (num15 < tmp14);
                   }
-                  let obj2 = { endNoBuffer: null, firstFullyOnScreenIndex: "Array", startNoBuffer: true };
+                  let obj2 = { endNoBuffer: null, firstFullyOnScreenIndex: "Array", startNoBuffer: 2 };
                   const length = data.length;
                   let _Math4 = Math;
                   const bound1 = Math.max(0, tmp141);
@@ -19654,7 +19654,7 @@ let closure_141 = forwardRef(function LegendListInner2(recycleItems, ref) {
       stylePaddingLeft: tmp37,
       stylePaddingRight: tmp38,
       stylePaddingTop: tmp35,
-      useWindowScroll: null
+      useWindowScroll: 260703800552805560000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
     };
     items3 = [getFixedItemSize];
     items4 = [getItemType];
@@ -21717,7 +21717,7 @@ let closure_141 = forwardRef(function LegendListInner2(recycleItems, ref) {
                           num17 = bound;
                         } while (num15 < tmp14);
                       }
-                      let obj2 = { endNoBuffer: null, firstFullyOnScreenIndex: "Array", startNoBuffer: true };
+                      let obj2 = { endNoBuffer: null, firstFullyOnScreenIndex: "Array", startNoBuffer: 2 };
                       const length = data.length;
                       let _Math4 = Math;
                       const bound1 = Math.max(0, tmp141);
@@ -23625,7 +23625,7 @@ let closure_141 = forwardRef(function LegendListInner2(recycleItems, ref) {
                     num17 = bound;
                   } while (num15 < tmp14);
                 }
-                let obj2 = { endNoBuffer: null, firstFullyOnScreenIndex: "Array", startNoBuffer: true };
+                let obj2 = { endNoBuffer: null, firstFullyOnScreenIndex: "Array", startNoBuffer: 2 };
                 const length = data.length;
                 let _Math4 = Math;
                 const bound1 = Math.max(0, tmp141);
@@ -25752,7 +25752,7 @@ export function useRecyclingState(fn) {
         let tmpResult;
         const tmp6 = hasItemInfo;
         if (tmp6) {
-          const obj = { index: itemIndex, item, prevIndex: "r", prevItem: "HermesInternal" };
+          const obj = { index: itemIndex, item, prevIndex: "r", prevItem: "isArray" };
           tmpResult = tmp(obj);
         } else {
           tmpResult = tmp();
@@ -25778,7 +25778,7 @@ export function useRecyclingState(fn) {
     if (typeof fn === "function") {
       let tmp10;
       if (hasItemInfo) {
-        const obj2 = { index: itemIndex, item, prevIndex: "r", prevItem: "HermesInternal" };
+        const obj2 = { index: itemIndex, item, prevIndex: "r", prevItem: "isArray" };
         tmp10 = fn(obj2);
       } else {
         tmp10 = fn();

@@ -189,7 +189,7 @@ obj = function _createPaymentSource() {
               billingError = undefined;
               c9 = 1;
               c10 = 1;
-              return { value: "flexDirection", done: true };
+              return { value: "flexDirection", done: null };
             }
           } else if (1 === c9) {
             if (arg0 === 1) {

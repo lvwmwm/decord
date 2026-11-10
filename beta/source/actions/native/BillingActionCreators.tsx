@@ -1136,7 +1136,7 @@ obj = function _createGenericSubscription() {
             originalPurchase = undefined;
             c5 = 1;
             c6 = 1;
-            return { value: "flexDirection", done: true };
+            return { value: "flexDirection", done: null };
           }
         } else if (1 === c5) {
           if (arg0 === 1) {
@@ -1371,7 +1371,7 @@ obj = function _modifyGenericSubscription() {
               originalPurchase = undefined;
               c5 = 1;
               c6 = 1;
-              return { value: "flexDirection", done: true };
+              return { value: "flexDirection", done: null };
             }
             break;
           }
@@ -1690,7 +1690,7 @@ obj = function _resubscribeGenericSubscription() {
               originalPurchase = undefined;
               c6 = 1;
               c7 = 1;
-              return { value: "flexDirection", done: true };
+              return { value: "flexDirection", done: null };
             }
           } else if (1 === c6) {
             if (arg0 === 1) {
@@ -2125,7 +2125,7 @@ obj = function _mobilePurchaseSKU() {
               closure_24 = undefined;
               c8 = 1;
               orderId = 1;
-              return { value: "flexDirection", done: true };
+              return { value: "flexDirection", done: null };
             }
             break;
           }
@@ -2770,7 +2770,7 @@ obj = {
   loadProducts(arg0) {
     let closure_0 = arg0;
     return (async (arg0, value) => {
-      let obj15;
+      let obj18;
       let obj8;
       if (c6 === 2) {
         c6 = 3;
@@ -2804,12 +2804,12 @@ obj = {
               products = undefined;
               products2 = undefined;
               c4 = 1;
-              const obj14 = products(closure_3[21]);
-              obj14.dispatch({ type: "IAP_LOAD_PRODUCTS_START" });
+              const obj17 = products(closure_3[21]);
+              obj17.dispatch({ type: "IAP_LOAD_PRODUCTS_START" });
               c5 = 2;
               c6 = 1;
-              const obj7 = { value: obj15.loadProducts(), done: false };
-              obj15 = products(closure_3[17]);
+              const obj7 = { value: obj18.loadProducts(), done: false };
+              obj18 = products(closure_3[17]);
               return obj7;
             }
           } else {
@@ -2864,28 +2864,28 @@ obj = {
                 tmp5 = storeFront;
               }
               storeFront = tmp5;
-              const obj16 = { type: "IAP_LOAD_PRODUCTS", products };
+              const obj14 = { type: "IAP_LOAD_PRODUCTS", products };
               obj2 = products(closure_3[21]);
-              obj2.dispatch(obj16);
+              obj2.dispatch(obj14);
               if (products2.length === storeFront(closure_3[18]).GenericProductIds.length) {
-                const obj17 = { type: "IAP_LOAD_GENERIC_PRODUCTS", products: products2, storeFront };
+                const obj15 = { type: "IAP_LOAD_GENERIC_PRODUCTS", products: products2, storeFront };
                 const obj6 = products(closure_3[21]);
-                obj6.dispatch(obj17);
+                obj6.dispatch(obj15);
               } else {
-                const obj18 = { type: "GENERIC_IAP_SET_STORE_FRONT", storeFront };
+                const obj16 = { type: "GENERIC_IAP_SET_STORE_FRONT", storeFront };
                 const obj4 = products(closure_3[21]);
-                obj4.dispatch(obj18);
+                obj4.dispatch(obj16);
               }
               c4 = 0;
             }
             c6 = 3;
             return { value: "HermesInternal", done: null };
           }
-        } catch (tmp47) {
-          closure_3 = tmp47;
+        } catch (tmp42) {
+          closure_3 = tmp42;
           if (0 === c4) {
             c6 = 3;
-            throw tmp47;
+            throw tmp42;
           } else {
             c5 = 1;
           }

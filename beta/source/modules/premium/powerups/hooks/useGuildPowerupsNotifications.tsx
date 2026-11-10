@@ -180,7 +180,7 @@ function useGuildPowerupsNotificationIndicator(arg0, arg1, lastBoostCount) {
     let obj2;
     let obj5;
     if (null == closure_1) {
-      return { indicator: "flexDirection", showUnread: true };
+      return { indicator: "flexDirection", showUnread: null };
     } else {
       const unlockedPowerups = tmp2.unlockedPowerups;
       const _Object = Object;
@@ -235,7 +235,7 @@ function useGuildPowerupsNotificationIndicator(arg0, arg1, lastBoostCount) {
               obj2 = { type: GuildPowerupsNotification.GuildPowerupNotificationIndicatorType.UNREAD, count: diff };
             }
           }
-          obj3 = { indicator: "flexDirection", showUnread: true };
+          obj3 = { indicator: "flexDirection", showUnread: null };
         }
         return obj3;
       }

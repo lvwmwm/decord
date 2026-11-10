@@ -55,7 +55,7 @@ export default function useRequest(arg0) {
                 closure_2 = tmp;
                 c5 = 1;
                 c6 = 1;
-                return { value: "flexDirection", done: true };
+                return { value: "flexDirection", done: null };
               }
             } else if (1 === c5) {
               if (arg0 === 1) {

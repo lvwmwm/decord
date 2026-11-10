@@ -251,7 +251,7 @@ obj = function _saveGuildMetadata() {
               about = undefined;
               partner_application_timestamp = 1;
               is_published = 1;
-              return { value: "flexDirection", done: true };
+              return { value: "flexDirection", done: null };
             }
           } else if (1 === partner_application_timestamp) {
             if (arg0 === 1) {

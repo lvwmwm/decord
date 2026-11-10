@@ -819,52 +819,104 @@ obj = function _validateCollectiblesRecipientsBatch() {
 };
 obj = function _fetchCollectiblesMarketings() {
   obj = _asyncToGenerator(async (arg0) => {
-    let closure_1;
-    let closure_3;
     const release = arg0;
     let c5 = 0;
     let c6 = 0;
     let c4 = 0;
     const iter = (async function(arg0, value) {
-      let PROD;
-      const obj9 = closure_130_1(closure_130_2[17]);
-      obj9.dispatch({ type: "COLLECTIBLES_MARKETING_FETCH" });
-      const obj6 = { platform: closure_130_0(closure_130_2[27]).CollectiblesMarketingPlatform.MOBILE };
-      if (PROD !== closure_130_0(closure_130_2[26]).CollectiblesMarketingReleaseType.PROD) {
-        obj6.release = PROD;
-      }
-      const HTTP = closure_130_0(closure_130_2[21]).HTTP;
-      const request = { url: closure_130_17.COLLECTIBLES_MARKETING, query: obj6, rejectWithError: true };
-      await HTTP.get(request);
-      if (2 === c5) {
-        c4 = 0;
-        const captureOrIgnoreApiError = closure_130_0(closure_130_2[23]).captureOrIgnoreApiError;
-        const self = this;
-        const self2 = this;
-        closure_130_0(closure_130_2[23]);
-        const aPIError = new closure_130_0(closure_130_2[22]).APIError(closure_3);
-        const result = captureOrIgnoreApiError(aPIError);
-        const obj3 = closure_130_1(closure_130_2[17]);
-        obj3.dispatch({ type: "COLLECTIBLES_MARKETING_FETCH_FAILURE" });
-      } else if (arg0 === 1) {
+      if (c6 === 2) {
         c6 = 3;
-        throw value;
-      } else if (arg0 === 2) {
-        c4 = 0;
-        c6 = 3;
-        return { value, done: true };
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          return { value, done: true };
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
       } else {
-        body = value;
-        obj = { type: "COLLECTIBLES_MARKETING_FETCH_SUCCESS", marketings: closure_130_11.fromServer(body.body) };
-        const dispatch = closure_130_1(closure_130_2[17]).dispatch;
-        closure_130_1(closure_130_2[17]);
-        dispatch(obj);
-        c4 = 0;
+        try {
+          let PROD;
+          let obj6;
+          c6 = 2;
+          if (0 === c5) {
+            if (arg0 === 1) {
+              c6 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c6 = 3;
+              return { value, done: true };
+            } else {
+              closure_1 = tmp4;
+              PROD = release.release ?? CollectiblesMarketingReleaseType.CollectiblesMarketingReleaseType.PROD;
+              obj6 = undefined;
+              body = undefined;
+              c5 = 1;
+              c6 = 1;
+              return { value: "flexDirection", done: null };
+            }
+          } else if (1 === c5) {
+            if (arg0 === 1) {
+              c6 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c6 = 3;
+              return { value, done: true };
+            } else {
+              const obj9 = closure_130_1(closure_130_2[17]);
+              obj9.dispatch({ type: "COLLECTIBLES_MARKETING_FETCH" });
+              obj6 = { platform: closure_130_0(closure_130_2[27]).CollectiblesMarketingPlatform.MOBILE };
+              if (PROD !== closure_130_0(closure_130_2[26]).CollectiblesMarketingReleaseType.PROD) {
+                obj6.release = PROD;
+              }
+              c4 = 1;
+              const HTTP = closure_130_0(closure_130_2[21]).HTTP;
+              const request = { url: closure_130_17.COLLECTIBLES_MARKETING, query: obj6, rejectWithError: true };
+              c5 = 3;
+              c6 = 1;
+              const obj7 = { value: HTTP.get(request), done: false };
+              return obj7;
+            }
+          } else {
+            if (2 === c5) {
+              c4 = 0;
+              const captureOrIgnoreApiError = closure_130_0(closure_130_2[23]).captureOrIgnoreApiError;
+              const self = this;
+              const self2 = this;
+              closure_130_0(closure_130_2[23]);
+              const aPIError = new closure_130_0(closure_130_2[22]).APIError(closure_3);
+              const result = captureOrIgnoreApiError(aPIError);
+              const obj3 = closure_130_1(closure_130_2[17]);
+              obj3.dispatch({ type: "COLLECTIBLES_MARKETING_FETCH_FAILURE" });
+            } else if (arg0 === 1) {
+              c6 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c4 = 0;
+              c6 = 3;
+              return { value, done: true };
+            } else {
+              body = value;
+              obj = { type: "COLLECTIBLES_MARKETING_FETCH_SUCCESS", marketings: closure_130_11.fromServer(body.body) };
+              const dispatch = closure_130_1(closure_130_2[17]).dispatch;
+              closure_130_1(closure_130_2[17]);
+              dispatch(obj);
+              c4 = 0;
+            }
+            c6 = 3;
+            return { value: "HermesInternal", done: null };
+          }
+        } catch (tmp41) {
+          closure_3 = tmp41;
+          if (0 === c4) {
+            c6 = 3;
+            throw tmp41;
+          } else {
+            c5 = 2;
+          }
+        }
       }
-      await "HermesInternal";
-      body = tmp;
-      PROD = release.release ?? CollectiblesMarketingReleaseType.CollectiblesMarketingReleaseType.PROD;
-      return "flexDirection";
     })();
     iter.next();
     return iter;

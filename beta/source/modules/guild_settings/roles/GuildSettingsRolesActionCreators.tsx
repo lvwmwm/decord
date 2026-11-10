@@ -198,7 +198,7 @@ let obj = function _saveRoleSettings() {
                 closure_14 = undefined;
                 c20 = 1;
                 c21 = 1;
-                return { value: "flexDirection", done: true };
+                return { value: "flexDirection", done: null };
               }
               break;
             }

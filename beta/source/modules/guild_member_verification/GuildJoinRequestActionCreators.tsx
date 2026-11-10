@@ -80,7 +80,7 @@ let obj = function _fetchGuildJoinRequests() {
               requests = undefined;
               c6 = 1;
               c7 = 1;
-              return { value: "flexDirection", done: true };
+              return { value: "flexDirection", done: null };
             }
           } else if (1 === c6) {
             if (arg0 === 1) {
@@ -387,7 +387,7 @@ obj = function _updateGuildJoinRequest() {
               tmp = undefined;
               c7 = 1;
               c8 = 1;
-              return { value: "flexDirection", done: true };
+              return { value: "flexDirection", done: null };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {
@@ -612,94 +612,34 @@ obj = function _fetchJoinRequestForInterview() {
   return obj(...arguments);
 };
 obj = function _createOrEnterJoinRequestInterview() {
-  obj = _asyncToGenerator(async (arg0, value) => {
+  obj = _asyncToGenerator(async (arg0) => {
+    let c4;
+    let c5;
     let obj11;
     let closure_0 = arg0;
-    let closure_1 = value;
-    if (c5 === 2) {
-      c5 = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp3 === 3) {
-      if (arg0 === 1) {
-        throw value;
-      } else if (arg0 === 2) {
-        const obj2 = { value, done: true };
-        return obj2;
-      } else {
-        return { value: "HermesInternal", done: null };
-      }
-    } else {
-      try {
-        let channel;
-        let body;
-        let flag;
-        c5 = 2;
-        if (0 === c4) {
-          if (arg0 === 1) {
-            c5 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c5 = 3;
-            const obj3 = { value, done: true };
-            return obj3;
-          } else {
-            channel = tmp4;
-            body = tmp;
-            flag = closure_1;
-            if (closure_1 === undefined) {
-              flag = true;
-            }
-            body = undefined;
-            channel = undefined;
-            c4 = 1;
-            c5 = 1;
-            return { value: "flexDirection", done: true };
-          }
-        } else if (1 === c4) {
-          if (arg0 === 1) {
-            c5 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c5 = 3;
-            const obj4 = { value, done: true };
-            return obj4;
-          } else {
-            const HTTP = closure_131_0(closure_131_2[7]).HTTP;
-            const obj5 = { url: closure_131_8.JOIN_REQUEST_INTERVIEW(closure_0), rejectWithError: obj11.rejectWithMigratedError() };
-            const post = HTTP.post;
-            obj11 = closure_131_0(closure_131_2[7]);
-            c4 = 2;
-            c5 = 1;
-            const obj6 = { value: post(obj5), done: false };
-            return obj6;
-          }
-        } else if (arg0 === 1) {
-          c5 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c5 = 3;
-          const obj7 = { value, done: true };
-          return obj7;
-        } else {
-          body = value;
-          channel = closure_131_4(body.body);
-          const obj9 = { type: "CHANNEL_CREATE", channel };
-          const obj8 = closure_131_1(closure_131_2[6]);
-          obj8.dispatch(obj9);
-          const tmp26 = flag;
-          if (tmp26) {
-            obj = closure_131_1(closure_131_2[11]);
-            const privateChannel = obj.selectPrivateChannel(channel.id);
-          }
-          c5 = 3;
-          const obj10 = { value: channel.id, done: true };
-          return obj10;
-        }
-      } catch (tmp14) {
-        c5 = 3;
-        throw tmp14;
-      }
+    let closure_1 = arg1;
+    let channel = tmp4;
+    let body = tmp;
+    let flag = closure_1;
+    if (closure_1 === undefined) {
+      flag = true;
     }
+    await "flexDirection";
+    const HTTP = closure_131_0(closure_131_2[7]).HTTP;
+    const obj5 = { url: closure_131_8.JOIN_REQUEST_INTERVIEW(closure_0), rejectWithError: obj11.rejectWithMigratedError() };
+    const post = HTTP.post;
+    obj11 = closure_131_0(closure_131_2[7]);
+    body = await post(obj5);
+    channel = closure_131_4(body.body);
+    const obj9 = { type: "CHANNEL_CREATE", channel };
+    const obj8 = closure_131_1(closure_131_2[6]);
+    obj8.dispatch(obj9);
+    const tmp26 = flag;
+    if (tmp26) {
+      obj = closure_131_1(closure_131_2[11]);
+      const privateChannel = obj.selectPrivateChannel(channel.id);
+    }
+    return channel.id;
   });
   return obj(...arguments);
 };

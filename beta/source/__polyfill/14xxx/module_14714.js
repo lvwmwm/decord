@@ -8,7 +8,7 @@ import _mod14706 from "module_14706" /* 14706 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_native from "react-native" /* 17 */;
 
-let c3, c4, c5;
+let c3;
 
 const Linking = react_native.Linking;
 const RNIapIos = react_native.NativeModules.RNIapIos;
@@ -49,71 +49,28 @@ _asyncToGenerator(async (arg0, value) => {
     }
   }
 });
-_asyncToGenerator(async (arg0, value) => {
+_asyncToGenerator(async (arg0) => {
   let _false;
+  let c4;
+  let c5;
+  let closure_2;
+  let rejectResult;
   closure_0 = arg0;
-  if (c5 === 2) {
-    c5 = 3;
-    throw new TypeError("Generator functions may not be called on executing generators");
-  } else if (tmp3 === 3) {
-    if (arg0 === 1) {
-      throw value;
-    } else if (arg0 === 2) {
-      const obj2 = { value, done: true };
-      return obj2;
-    } else {
-      return { value: "HermesInternal", done: null };
-    }
+  let requestReceipt = tmp4;
+  const forceRefresh = closure_0.forceRefresh;
+  await "flexDirection";
+  const obj5 = closure_0(_false[2]);
+  if (obj5.isIosStorekit2()) {
+    rejectResult = Promise.reject("Only available on Sk1");
   } else {
-    try {
-      let requestReceipt;
-      let forceRefresh;
-      c5 = 2;
-      if (0 === c4) {
-        if (arg0 === 1) {
-          c5 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c5 = 3;
-          const obj3 = { value, done: true };
-          return obj3;
-        } else {
-          requestReceipt = tmp4;
-          let closure_2 = tmp;
-          forceRefresh = closure_0.forceRefresh;
-          c4 = 1;
-          c5 = 1;
-          return { value: "flexDirection", done: true };
-        }
-      } else if (arg0 === 1) {
-        c5 = 3;
-        throw value;
-      } else if (arg0 === 2) {
-        c5 = 3;
-        const obj4 = { value, done: true };
-        return obj4;
-      } else {
-        let rejectResult;
-        const obj5 = closure_0(_false[2]);
-        if (obj5.isIosStorekit2()) {
-          rejectResult = Promise.reject("Only available on Sk1");
-        } else {
-          _false = forceRefresh;
-          requestReceipt = requestReceipt.requestReceipt;
-          if (forceRefresh == null) {
-            _false = false;
-          }
-          rejectResult = requestReceipt(_false);
-        }
-        c5 = 3;
-        const obj = { value: rejectResult, done: true };
-        return obj;
-      }
-    } catch (tmp14) {
-      c5 = 3;
-      throw tmp14;
+    _false = forceRefresh;
+    requestReceipt = requestReceipt.requestReceipt;
+    if (forceRefresh == null) {
+      _false = false;
     }
+    rejectResult = requestReceipt(_false);
   }
+  return rejectResult;
 });
 _asyncToGenerator(async (arg0, value) => {
   let v3;
@@ -303,7 +260,7 @@ let closure_0 = _asyncToGenerator(async (arg0, value) => {
           str = undefined;
           c3 = 1;
           c4 = 1;
-          return { value: "flexDirection", done: true };
+          return { value: "flexDirection", done: null };
         }
       } else if (1 === c3) {
         if (arg0 === 1) {

@@ -17,7 +17,7 @@ import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import size from "module_2" /* 2 */;
 
-let data;
+let closure_2, data, mfaType;
 
 let LogBox;
 let hasOwnProperty;
@@ -48,21 +48,73 @@ class MFAModal {
     }, items);
     const useCallback = flag.useCallback;
     let closure_0 = handleOnClose((mfaType) => {
-      let closure_2;
       let ticket;
       let c3 = 0;
       let c4 = 0;
-      const iter = (function*(arg0) {
+      const iter = (function*(arg0, value) {
         let c0;
         let c1;
-        const obj5 = { mfaType, data, ticket: ticket.ticket };
-        yield data(obj5);
-        const obj = finish(cancel[5]);
-        obj.popWithKey(callback1);
-        yield "HermesInternal";
-        data = tmp;
-        ({ mfaType: c0, data: c1 } = closure_0);
-        return "flexDirection";
+        if (c4 === 2) {
+          c4 = 3;
+          throw new TypeError("Generator functions may not be called on executing generators");
+        } else if (tmp3 === 3) {
+          if (arg0 === 1) {
+            throw value;
+          } else if (arg0 === 2) {
+            return { value, done: true };
+          } else {
+            return { value: "HermesInternal", done: null };
+          }
+        } else {
+          try {
+            c4 = 2;
+            if (0 === c3) {
+              if (arg0 === 1) {
+                c4 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c4 = 3;
+                return { value, done: true };
+              } else {
+                closure_2 = tmp4;
+                mfaType = undefined;
+                data = undefined;
+                ({ mfaType: c0, data: c1 } = closure_0);
+                c3 = 1;
+                c4 = 1;
+                return { value: "flexDirection", done: null };
+              }
+            } else if (1 === c3) {
+              if (arg0 === 1) {
+                c4 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c4 = 3;
+                return { value, done: true };
+              } else {
+                c3 = 2;
+                c4 = 1;
+                const obj5 = { mfaType, data, ticket: ticket.ticket };
+                const obj6 = { value: data(obj5), done: false };
+                return obj6;
+              }
+            } else if (arg0 === 1) {
+              c4 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c4 = 3;
+              return { value, done: true };
+            } else {
+              const obj = finish(cancel[5]);
+              obj.popWithKey(callback1);
+              c4 = 3;
+              return { value: "HermesInternal", done: null };
+            }
+          } catch (tmp17) {
+            c4 = 3;
+            throw tmp17;
+          }
+        }
       })();
       iter.next();
       return iter;

@@ -105,7 +105,7 @@ let obj = function _joinFrameActivity() {
                 };
                 preferredChannelId = 1;
                 c10 = 1;
-                return { value: "flexDirection", done: true };
+                return { value: "flexDirection", done: null };
               }
               break;
             }
